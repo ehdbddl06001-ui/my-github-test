@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3737,
+  "total": 3747,
   "byType": {
    "anatomy": 845,
+   "imaging": 359,
    "paper": 786,
    "kmle": 1440,
    "concept": 102,
    "usmle": 198,
-   "imaging": 349,
    "ailab": 14,
    "basic": 3
   },
@@ -38,33 +38,33 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 92,
    "Hematology": 87,
    "Laboratory Medicine": 79,
-   "산부인과": 53,
-   "순환기": 30,
-   "호흡기": 23,
+   "산부인과": 54,
+   "순환기": 31,
+   "호흡기": 24,
    "Physiology": 22,
    "소화기": 22,
    "소아과": 19,
+   "병리·조직학": 18,
    "Pharmacology": 17,
    "내분비": 17,
    "응급·중환자": 17,
    "혈액·종양": 17,
    "Biochemistry": 16,
    "감염": 16,
-   "병리·조직학": 16,
    "신경": 16,
    "신장·비뇨기": 16,
    "Microbiology": 15,
    "피부과": 15,
-   "예방의학·역학": 13,
+   "예방의학·역학": 14,
    "외과": 13,
    "Internal Medicine": 12,
    "Immunology": 11,
    "근골격·류마티스": 10,
-   "약리": 9,
-   "정신과": 9,
+   "약리": 10,
+   "정신과": 10,
+   "영상의학": 7,
+   "이비인후과": 7,
    "안과": 6,
-   "영상의학": 6,
-   "이비인후과": 6,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2594,
+   "high": 2604,
    "medium": 1093,
    "low": 50
   },
@@ -128,6 +128,180 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0774-t2-eve.md",
    "snippet": "0. 오늘은 넣는 날이 아니라 꺼내는 날이다 Tagging 2 가 ==내일(2026 10 19)== 이다. 범위는 ==9–15회차==(팔·가슴안·배·골반·샅·척주·머리·관절)다. 지난 일주일의 복습은 회차 서브노트 7장으로 닫혔다. 오늘 새 구조 이름을 처음 외우기 시작하면 ==이미 잡아 둔 관계까지 흔들린다==. 그래서 이 카드에는 새 내용이 없다 . Tagging 1 D 1 카드( anatomy 2026 0467 )와 같은",
    "text": "Anatomy Tagging 2 전날(D-1) 최종 점검 — 9–15회차 인출 드릴 · 순서 문항 · 신경지배 예외 · 시험장 운영 15회차 · 머리·목·다리 태깅2 D-1 최종점검 인출드릴 답안표기 시험운영 순서문항 신경지배예외 9회차 10회차 11회차 12회차 13회차 14회차 15회차 회차 서브노트 9–15(0484 · 0509 · 0558 · 0610 · 0657 · 0698 · 0761) · Tagging 1 D-1 카드(0467) 형식 · 문항 은행 content/anatomy/questions/tagging-2/ — 새 사실 생성 없음, 인출 형태로 재배열만 0. 오늘은 넣는 날이 아니라 꺼내는 날이다 Tagging 2 가 ==내일(2026 10 19)== 이다. 범위는 ==9–15회차==(팔·가슴안·배·골반·샅·척주·머리·관절)다. 지난 일주일의 복습은 회차 서브노트 7장으로 닫혔다. 오늘 새 구조 이름을 처음 외우기 시작하면 ==이미 잡아 둔 관계까지 흔들린다==. 그래서 이 카드에는 새 내용이 없다 . Tagging 1 D 1 카드( anatomy 2026 0467 )와 같은 형태로, 읽는 표를 ==보지 않고 말하는 드릴==로 바꿨고, 아는 것을 답안에서 잃지 않기 위한 표기를 다시 붙였다. [!TIP] 오늘의 판단 기준 :: 한 항목을 ==10초 안에 소리 내어== 말하지 못하면 그건 '아는 것'이 아니라 '읽은 것'이다. 막히면 그 회차 서브노트의 해당 표만 30초 보고 다시 말한다. ==다시 읽기로 시간을 쓰지 않는다.== 1. 답안 표기 — Tagging 1 에서 배운 것 그대로 허용 약자는 ==a. v. n. m. lig. sup. inf. ant. post. med. lat.== 이 전부고 ==마침표가 필수==다. 이번 범위는 관절 회차(14 · 15)가 있어 ==인대(lig.)== 답이 많다. 이렇게 쓰면 위험 이렇게 쓴다 ant cruciate lig == 앞십자인대 또는 anterior cruciate lig. == coracoclav lig == 부리빗장인대 또는 coracoclavicular lig. == recurrent laryngeal == 아래후두신경(되돌이후두신경) 또는 recurrent laryngeal n. == supraspinatus == 가시위근 또는 supraspinatus m. == 근육은 한글 == ○○근 ==, 원어 == ○○ muscle 또는 ○○ m. == — 접미사를 떨어뜨리면 근육인지 힘줄인지가 답안에서 사라진다. 관계를 묻는 문항은 ==방향어(ant. post. med. lat. sup. inf.)까지==가 답이다. 2. 인출 드릴 A — 팔오금 · 손목굴 · 고샅관 (10회차) !fig docs/assets/anatomy/tree s10 bundle quiz.svg 10회차 신경혈관다발 퀴즈판 — 보고 말한 뒤 오른쪽 답과 맞춘다 묻는 것 답 팔오금 가쪽→안쪽 ==위팔두갈래근 힘줄 → 위팔동맥 → 정중신경 (TAN)== 손목굴을 지나는 것 ==얕은손가락굽힘근 4 + 깊은손가락굽힘근 4 + 긴엄지굽힘근 1 + 정중신경 = 10== 손목굴을 지나지 않는 것 ==자신경 · 자동맥 · 노동맥 · 긴손바닥근 힘줄== 자신경이 지나는 굴 ==자신경굴 (Guyon canal) — 콩알뼈와 갈고리뼈갈고리 사이, 굽힘근지지띠 위== 정중신경이 맡는 손 근육 ==LOAF — 벌레근 1·2 · 엄지맞섬근 · 짧은엄지벌림근 · 짧은엄지굽힘근 얕은갈래== 얕은 / 깊은 손바닥동맥활의 주인 ==얕은활 = 자동맥 · 깊은활 = 노동맥== 3. 인출 드릴 B — 폄근 여섯 칸 · 간세동이 (11회차) !fig docs/assets/anatomy/tree s11 bundle quiz.svg 11회차 퀴즈판 — 손등의 여섯 칸과 간샘창자인대 속 세 구조 묻는 것 답 폄근지지띠 1칸 → 6칸 ==1 APL·EPB / 2 ECRL·ECRB / 3 EPL / 4 ED·EI / 5 EDM / 6 ECU== 리스터결절을 도는 칸 ==3칸 — 긴엄지폄근 (extensor pollicis longus m.)== 해부코담배갑 앞벽 · 뒤벽 · 바닥 ==앞 APL+EPB(1칸) · 뒤 EPL(3칸) · 바닥 손배뼈+큰마름뼈, 그 위를 노동맥== 간샘창자인대 속 뒤 · 앞왼 · 앞오른 ==간문맥 · 고유간동맥 · 온쓸개관== 그 인대가 앞벽인 구멍 ==그물막구멍 (omental foramen) — 집으면 Pringle법== 복강동맥의 세 가지 ==왼위동맥 · 지라동맥 · 온간동맥== 4. 인출 드릴 C — 척주관과 샅 (12회차) !fig docs/assets/anatomy/tree s12 bundle quiz.svg 12회차 퀴즈판 — 바늘이 지나는 층, 음부신경관, 샅의 두 주머니 묻는 것 답 허리천자 바늘 순서 ==가시끝인대 → 가시사이인대 → 황색인대 → 경막바깥공간 → 경막·거미막 → 거미막밑공간== 저항이 툭 사라지는 층 ==황색인대 (ligamentum flavum) — 그 다음이 경막바깥공간== 척수 끝 · 거미막밑공간 끝 ==척수 L1–L2 · 거미막밑공간 S2 — 그래서 L3–L4 · L4–L5 에서 찌른다== 음부신경 가지 뒤→앞 ==아래곧창자신경 → 샅신경 → 음경(음핵)등신경== 음부신경 차단의 표지 ==궁둥뼈가시 — 큰궁둥구멍으로 나가 작은궁둥구멍으로 되들어온다== 샅막 위 / 아래 주머니 ==위 = 깊은샅주머니 · 아래 = 얕은샅주머니 (망울요도샘은 몸은 깊은, 관은 얕은)== 5. 인출 드릴 D — 머리덮개 · 해면정맥굴 · 가로막 · 콩팥문 (13회차) !fig docs/assets/anatomy/tree s13 bundle quiz.svg 13회차 퀴즈판 — 다섯 자리 묻는 것 답 머리덮개 겉→속 ==피부 → 치밀결합조직 → 머리덮개널힘줄 → 성긴결합조직 → 머리뼈막 (SCALP)== 위험층 ==성긴결합조직 — 도출정맥이 감염을 머리뼈 안으로== 해면정맥굴 가쪽벽 / 굴 속 ==벽 = III · IV · V1 · V2 / 속 = 속목동맥 + 갓돌림신경(VI)== 가장 먼저 마비되는 신경 ==갓돌림신경 — 굴 속에 떠 있다== 가로막 구멍 높이 ==T8 대정맥 · T10 식도 · T12 대동맥== 콩팥문 앞→뒤 ==콩팥정맥 → 콩팥동맥 → 콩팥깔때기 (VAP)== 6. 인출 드릴 E — 골반가로막 (14회차) !fig docs/assets/anatomy/diag pelvic diaphragm quiz.svg 골반가로막 퀴즈판 — 앞에서 뒤로 세는 순서 묻는 것 답 골반가로막 근육 앞→뒤 ==두덩곧창자근 → 두덩꼬리근 → 엉덩꼬리근 → 꼬리근== U자 고리로 항문곧창자각을 만드는 근육 ==두덩곧창자근 (puborectalis m.)== 속엉덩동맥 뒤줄기 셋 ==엉덩허리동맥 · 가쪽엉치동맥 · 위볼기동맥 (I Love Sex)== — 내장 가지는 전부 앞줄기 요관과 자궁동맥 ==요관이 자궁동맥 밑 (water under the bridge)== 빗살선 위 / 아래 ==위 = 내장(통증 없음, 문맥) · 아래 = 몸(음부신경, 아프다, 대정맥)== 7. 순서 문항 표 — 이름을 다 맞혀도 순서가 틀리면 오답 Tagging 2 범위는 순서를 묻는 자리가 Tagging 1 보다 많다. 쓰기 전에 ==어느 방향으로 세는지를 먼저 정하고== 시작한다. 문항 자리 방향 답 0481 갈비사이고랑 위 → 아래 ==정맥 → 동맥 → 신경 (VAN)== 0517 앞가쪽 배벽 얕은 → 깊은 ==배바깥빗근 → 배속빗근 → 배가로근== 0519 정삭의 막 바깥 → 안 ==바깥정삭근막(배바깥빗근) → 고환올림근·근막(배속빗근) → 속정삭근막(가로근막)== 0643 허리천자 피부 → 뇌척수액 ==가시끝인대 → 가시사이인대 → 황색인대 → 경막바깥공간 → 경막 → 거미막 → 거미막밑공간== 0644 척수막 겉 → 속 ==경막바깥공간 → 경막 → 경막밑공간 → 거미막 → 거미막밑공간 → 연질막== 0654 음경 등쪽 정중 → 가쪽 ==깊은음경등정맥(하나) → 음경등동맥(둘) → 음경등신경(둘)== 0658 머리덮개 겉 → 속 ==피부 → 치밀결합조직 → 머리덮개널힘줄 → 성긴결합조직 → 머리뼈막== 0669 콩팥문 앞 → 뒤 ==콩팥정맥 → 콩팥동맥 → 콩팥깔때기== 0709 골반가로막 앞 → 뒤 ==두덩곧창자근 → 두덩꼬리근 → 엉덩꼬리근 → 꼬리근== 0772 후두안 위 → 아래 ==안뜰주름 → 후두실 → 성대주름 → 성대문아래공간== [!주의] 같은 '앞→뒤'라도 :: 허파뿌리(9회차) 앞→뒤는 ==허파정맥 → 허파동맥 → 기관지==, 콩팥문(13회차) 앞→뒤는 ==콩팥정맥 → 콩팥동맥 → 깔때기==. 둘 다 ==정맥이 맨 앞==이다 — 위→아래만 허파뿌리가 좌우로 다르다(오른쪽 기관지가 위, 왼쪽 동맥이 위). 8. 신경지배 — 규칙보다 예외가 출제된다 부위 규칙 ==예외== 손의 근육 자신경 깊은가지 ==LOAF 넷 = 정중신경== 위팔·아래팔 뒤칸 · 손등 노신경 ==없음 — 함정은 '어느 가지'(깊은 = 운동, 얕은 = 감각)== 인두근 · 입천장근 미주신경(인두신경얼기) ==붓인두근 = IX · 입천장긴장근 = V3== 혀 근육 혀밑신경 ==입천장혀근 = X== 후두근 아래후두신경(되돌이) ==반지방패근 = 바깥후두신경== 눈근육 눈돌림신경 (III) ==가쪽곧은근 = VI · 위빗근 = IV (LR6 · SO4)== 성대를 여는 근육 — ==뒤반지모뿔근 하나뿐== 돌림근띠 닿는 곳 큰결절 (가시위 · 가시아래 · 작은원) ==어깨밑근만 작은결절 — 그래서 혼자 안쪽돌림== 9. 좌우 · 앞뒤가 답을 가르는 자리 구조 차이 허파뿌리 위→아래 ==오른쪽 기관지가 맨 위(eparterial), 왼쪽은 동맥이 맨 위== 주기관지 ==오른쪽이 짧고 굵고 곧다 — 이물질은 오른아래엽== 콩팥 혈관 ==오른콩팥동맥은 아래대정맥 뒤, 왼콩팥정맥은 대동맥 앞== 부리빗장인대 ==마름인대 = 가쪽 · 원뿔인대 = 안쪽== 십자인대 ==앞십자 = 정강뼈가 앞으로 빠지는 것을 막음 · 뒤십자 = 뒤로== 무릎 곁인대 ==안쪽곁인대는 안쪽반달과 붙고, 가쪽곁인대는 떨어진다== 손바닥동맥활 ==얕은활이 먼쪽, 깊은활이 몸쪽== 10. 시험장 운영 — 카데바와 장기 테이블 3Q 개요 기준 2차는 ==36문항 · 카데바 5구 + 장기 테이블==이다. Tagging 1 에 없던 ==장기 테이블==이 있으므로 허파(9회차) · 위·간·지라·창자(11회차) · 콩팥·부신(13회차) · 골반장기(14회차) · 후두(15회차)는 ==떼어 낸 장기 하나만 보고도== 자리를 말할 수 있어야 한다. 핀을 보기 전에 부위와 층을 먼저 말한다 부위가 정해지면 후보가 몇 개로 줄고, 그 몇 개 중 ==자리로== 고르면 된다. 태깅은 생김새가 아니라 ==무엇이 무엇 사이를 지나는가==를 묻는 시험이다. 막히면 표시하고 넘어간다 한 핀에서 오래 서 있으면 뒤 문항을 통째로 잃는다. ==한 바퀴 돌고 돌아온다.== 방향어와 접미사는 쓰는 순간에 붙인다 나중에 고쳐 쓸 시간이 없다. ==한글용어 + 원어==, 순서 문항이면 ==방향부터== 적는다. 11. 막혔을 때 — 부분점수를 얻는 답안 빈칸은 확실한 0점이다. 이름이 끝내 안 나오면 ==한 단계씩 올라간다==: 1. 정확한 이름 → 2. ==상위 계보==( 노신경의 가지 , 복강동맥의 가지 , 속엉덩동맥 앞줄기의 가지 ) → 3. ==기능·지배 영역==( 성대를 여는 근육 ) → 4. ==자리==( 폄근지지띠 3칸을 지나는 힘줄 ). 12. 오늘 밤 30분 · 내일 아침 15분 오늘 밤 30분 [ ] §1 표기 — ==lig. 마침표 · 근육 접미사== 소리 내어 한 번 [ ] §2–§6 퀴즈판 5장 — ==답을 가린 채== 말하기, 막힌 것만 표시 [ ] §7 순서 문항 10개 — ==방향을 먼저 정하고== 순서까지 말하기 [ ] 막힌 항목이 ==셋 이상 몰린 회차==가 있으면 그 서브노트 1장만 정독 [ ] 표시한 항목만 다시 한 번 — ==새 자료를 열지 않는다== 내일 아침 15분 [ ] §8 예외 표 — ==예외만== 훑기 [ ] §9 좌우·앞뒤 표 한 번 [ ] §10 운영 — ==부위 먼저 · 막히면 넘김 · 쓰는 순간에 방향어== [ ] ==새 내용 금지.== 아침에 처음 보는 구조는 시험장에서 기억을 밀어낸다"
+  },
+  {
+   "id": "imaging-2026-0360",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사·영상의학 판독 — 뇌 MRI 강조 영상의 판별과 뇌척수액 곁 병변을 위한 추가 영상",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0360.md",
+   "snippet": "68세 여자가 3주 전부터 기억력이 떨어지고 아침에 심해지는 두통이 있어 왔다. 고혈압으로 암로디핀을 먹고 있다. 혈압 134/82 mmHg, 맥박 74회/분, 체온 36.5℃이다. 신경학적 진찰에서 지남력은 정상이고 간이정신상태검사는 26점이며, 운동·감각 기능과 뇌신경 진찰은 정상이다. 혈액검사에서 혈당, 전해질, 갑상샘자극호르몬, 비타민 B12 는 정상이다. 뇌 MRI 에서 중뇌 높이의 축상 영상 하나는 그림과 같다. 이",
+   "text": "영상의학 진단검사·영상의학 판독 — 뇌 MRI 강조 영상의 판별과 뇌척수액 곁 병변을 위한 추가 영상 opendata kmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f 68세 여자가 3주 전부터 기억력이 떨어지고 아침에 심해지는 두통이 있어 왔다. 고혈압으로 암로디핀을 먹고 있다. 혈압 134/82 mmHg, 맥박 74회/분, 체온 36.5℃이다. 신경학적 진찰에서 지남력은 정상이고 간이정신상태검사는 26점이며, 운동·감각 기능과 뇌신경 진찰은 정상이다. 혈액검사에서 혈당, 전해질, 갑상샘자극호르몬, 비타민 B12 는 정상이다. 뇌 MRI 에서 중뇌 높이의 축상 영상 하나는 그림과 같다. 이 영상만으로는 뇌실 벽과 피질 고랑에 붙은 작은 병변이 뇌척수액과 잘 구별되지 않아 영상을 하나 더 얻으려 한다. 추가할 영상으로 가장 적절한 것은? A. 자기공명혈관조영 B. 액체감쇠역전회복(FLAIR) 영상 C. 조영제 주사 전 T1 강조영상 D. 확산강조영상 E. 경사에코(T2 ) 영상"
+  },
+  {
+   "id": "imaging-2026-0359",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 흡연으로 층화하자 사라진 커피와 폐암의 연관",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0359.md",
+   "snippet": "A 58 year old man asks his physician whether he should stop drinking coffee after reading about a cohort study of 6,000 adults followed for 10 years. In the study, the crude relative risk of lung cancer among daily coffee drinkers compared ",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 흡연으로 층화하자 사라진 커피와 폐암의 연관 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f A 58 year old man asks his physician whether he should stop drinking coffee after reading about a cohort study of 6,000 adults followed for 10 years. In the study, the crude relative risk of lung cancer among daily coffee drinkers compared with non drinkers was 2.1 (95% CI, 1.6 2.8). Daily coffee drinkers were three times more likely than non drinkers to smoke cigarettes. When the analysis was stratified by smoking status, the relative risk for coffee drinking was 1.0 (95% CI, 0.7 1.4) among smokers and 1.0 (95% CI, 0.5 1.9) among nonsmokers. Losses to follow up were less than 3% in both groups. He has smoked 1 pack of cigarettes daily for 30 years. Which of the following best explains the crude association between coffee drinking and lung cancer? A. Selection bias from loss to follow up B. Reverse causation C. Confounding by smoking D. Effect modification by smoking E. Recall bias"
+  },
+  {
+   "id": "imaging-2026-0358",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 와파린 복용 중 방광염 치료 뒤 INR 상승",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0358.md",
+   "snippet": "A 68 year old woman comes to the physician because of easy bruising and bleeding gums for 3 days. She has atrial fibrillation treated with warfarin, and her INR has been stable between 2.0 and 3.0 for the past year. Eight days ago, she bega",
+   "text": "약리 약리 — 와파린 복용 중 방광염 치료 뒤 INR 상승 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f A 68 year old woman comes to the physician because of easy bruising and bleeding gums for 3 days. She has atrial fibrillation treated with warfarin, and her INR has been stable between 2.0 and 3.0 for the past year. Eight days ago, she began a 10 day course of trimethoprim sulfamethoxazole for acute cystitis. She has not changed her diet or other medications. Pulse is 84/min and irregularly irregular, and blood pressure is 132/80 mm Hg. Several ecchymoses are present on the forearms. INR is 6.8, hemoglobin concentration is 12.4 g/dL, platelet count is 230,000/mm3, and serum creatinine concentration is 0.9 mg/dL. Which of the following is the most likely mechanism of the change in her INR? A. Inhibition of hepatic CYP2C9 B. Displacement of warfarin from albumin binding sites C. Induction of hepatic CYP3A4 D. Decreased renal excretion of warfarin E. Inhibition of platelet cyclooxygenase"
+  },
+  {
+   "id": "imaging-2026-0357",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 감기 뒤 누우면 심해지는 날카로운 흉통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0357.md",
+   "snippet": "A 29 year old man comes to the emergency department because of sharp chest pain for 2 days. The pain is worse when he lies down or takes a deep breath and improves when he sits forward. He had a sore throat and runny nose 10 days ago. He ta",
+   "text": "순환기 순환기 — 감기 뒤 누우면 심해지는 날카로운 흉통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f A 29 year old man comes to the emergency department because of sharp chest pain for 2 days. The pain is worse when he lies down or takes a deep breath and improves when he sits forward. He had a sore throat and runny nose 10 days ago. He takes no medications. Temperature is 37.9°C (100.2°F), pulse is 96/min, and blood pressure is 124/78 mm Hg. A high pitched scratching sound is heard at the left lower sternal border with the patient leaning forward. Jugular venous pressure is normal, and there is no pulsus paradoxus. An ECG shows diffuse concave ST segment elevation with PR segment depression. Serum troponin I concentration is within the reference range. Echocardiography shows a trivial pericardial effusion and normal ventricular function. Which of the following is the most appropriate pharmacotherapy? A. Intravenous heparin infusion B. Intravenous ceftriaxone and vancomycin C. Metoprolol and sublingual nitroglycerin D. High dose aspirin plus colchicine E. Oral prednisone"
+  },
+  {
+   "id": "imaging-2026-0356",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 골절 입원 사흘째 밤의 환시와 자율신경 항진",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0356.md",
+   "snippet": "52세 남자가 넙다리뼈 골절로 정형외과에 입원한 지 3일째 밤부터 안절부절못하고 벽에 벌레가 기어 다닌다고 소리친다. 20년 동안 매일 소주 2병을 마셨고 입원 전날까지 마셨다. 혈압 168/98 mmHg, 맥박 124회/분, 호흡수 22회/분, 체온 38.0℃이다. 땀을 많이 흘리고 손을 떨며, 날짜와 장소를 대지 못한다. 혈당 112 mg/dL, 나트륨 138 mEq/L, AST 96 U/L, ALT 48 U/L이다. 입원",
+   "text": "정신과 정신 — 골절 입원 사흘째 밤의 환시와 자율신경 항진 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f 52세 남자가 넙다리뼈 골절로 정형외과에 입원한 지 3일째 밤부터 안절부절못하고 벽에 벌레가 기어 다닌다고 소리친다. 20년 동안 매일 소주 2병을 마셨고 입원 전날까지 마셨다. 혈압 168/98 mmHg, 맥박 124회/분, 호흡수 22회/분, 체온 38.0℃이다. 땀을 많이 흘리고 손을 떨며, 날짜와 장소를 대지 못한다. 혈당 112 mg/dL, 나트륨 138 mEq/L, AST 96 U/L, ALT 48 U/L이다. 입원 때부터 티아민을 맞고 있다. 가장 적절한 약물 치료는? A. 근육 할로페리돌 B. 경구 날트렉손 C. 경구 아캄프로세이트 D. 경구 디설피람 E. 정맥 로라제팜"
+  },
+  {
+   "id": "imaging-2026-0355",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 아침에 갑자기 한쪽 귀가 들리지 않는 성인",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0355.md",
+   "snippet": "45세 남자가 오늘 아침 일어났을 때 갑자기 오른쪽 귀가 먹먹하고 잘 들리지 않아 왔다. 오른쪽 귀에 이명이 있으나 어지럼, 귀 통증, 귀 분비물은 없다. 최근 감기 증상은 없었다. 혈압 128/80 mmHg, 맥박 76회/분, 체온 36.6℃이다. 이경검사에서 양쪽 고막은 정상이다. 512 Hz 소리굽쇠 검사에서 웨버 검사는 왼쪽으로 편위되고, 린네 검사는 양쪽 모두 기도전도가 골전도보다 길다. 순음청력검사에서 오른쪽 귀에 ",
+   "text": "이비인후과 이비인후과 — 아침에 갑자기 한쪽 귀가 들리지 않는 성인 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f 45세 남자가 오늘 아침 일어났을 때 갑자기 오른쪽 귀가 먹먹하고 잘 들리지 않아 왔다. 오른쪽 귀에 이명이 있으나 어지럼, 귀 통증, 귀 분비물은 없다. 최근 감기 증상은 없었다. 혈압 128/80 mmHg, 맥박 76회/분, 체온 36.6℃이다. 이경검사에서 양쪽 고막은 정상이다. 512 Hz 소리굽쇠 검사에서 웨버 검사는 왼쪽으로 편위되고, 린네 검사는 양쪽 모두 기도전도가 골전도보다 길다. 순음청력검사에서 오른쪽 귀에 연속된 세 주파수에서 40 dB 감각신경성 난청이 있다. 다른 뇌신경 진찰은 정상이다. 가장 적절한 치료는? A. 고막 절개와 환기관 삽입 B. 3개월 뒤 청력검사를 다시 하며 경과 관찰 C. 경구 고용량 글루코코르티코이드 D. 경구 발라시클로비르 단독 E. 경구 항히스타민제와 비충혈제거제"
+  },
+  {
+   "id": "imaging-2026-0354",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 이미 감작된 Rh(D) 음성 임신부의 항체 역가 상승",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0354.md",
+   "snippet": "32세 여자(임신 2회, 출산 1회)가 임신 24주에 산전 진찰을 받으러 왔다. 3년 전 첫째 아이를 외국에서 분만하였고 분만 뒤 아무 주사도 맞지 않았다. 혈압 112/70 mmHg, 맥박 82회/분이다. 자궁저부 높이는 24 cm이고 태아심박수는 148회/분이다. 혈액형은 O형 Rh(D) 음성이며, 간접항글로불린 검사 양성으로 항 D 항체 역가는 1:32이다(임신 16주에는 1:8). 남편은 Rh(D) 양성 동형접합이다. ",
+   "text": "산부인과 산과 — 이미 감작된 Rh(D) 음성 임신부의 항체 역가 상승 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f 32세 여자(임신 2회, 출산 1회)가 임신 24주에 산전 진찰을 받으러 왔다. 3년 전 첫째 아이를 외국에서 분만하였고 분만 뒤 아무 주사도 맞지 않았다. 혈압 112/70 mmHg, 맥박 82회/분이다. 자궁저부 높이는 24 cm이고 태아심박수는 148회/분이다. 혈액형은 O형 Rh(D) 음성이며, 간접항글로불린 검사 양성으로 항 D 항체 역가는 1:32이다(임신 16주에는 1:8). 남편은 Rh(D) 양성 동형접합이다. 초음파에서 태아 부종이나 복수는 없다. 다음 처치로 가장 적절한 것은? A. 태아 중대뇌동맥 최고수축기 혈류속도 도플러 검사 B. 항 D 면역글로불린 근육주사 C. 4주 뒤 항 D 항체 역가 재검 D. 제대천자로 태아 혈색소 측정 E. 즉시 제왕절개 분만"
+  },
+  {
+   "id": "imaging-2026-0353",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 가족 접촉 뒤 열·후각 소실과 양쪽 아래 폐야 음영",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0353.md",
+   "snippet": "34세 여자가 5일 전부터 열, 마른기침, 근육통이 있고 2일 전부터 냄새를 맡지 못해 왔다. 함께 사는 남편이 1주 전 같은 증상을 앓았다. 흡연하지 않고 기저질환은 없다. 혈압 118/74 mmHg, 맥박 96회/분, 호흡수 22회/분, 체온 38.2℃, 실내 공기에서 산소포화도 95%이다. 양쪽 아래 폐야에서 흡기 말 수포음이 들린다. 혈액검사에서 백혈구 4,800/mm³(림프구 12%), C 반응단백질 3.1 mg/dL",
+   "text": "호흡기 호흡기 — 가족 접촉 뒤 열·후각 소실과 양쪽 아래 폐야 음영 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f 34세 여자가 5일 전부터 열, 마른기침, 근육통이 있고 2일 전부터 냄새를 맡지 못해 왔다. 함께 사는 남편이 1주 전 같은 증상을 앓았다. 흡연하지 않고 기저질환은 없다. 혈압 118/74 mmHg, 맥박 96회/분, 호흡수 22회/분, 체온 38.2℃, 실내 공기에서 산소포화도 95%이다. 양쪽 아래 폐야에서 흡기 말 수포음이 들린다. 혈액검사에서 백혈구 4,800/mm³(림프구 12%), C 반응단백질 3.1 mg/dL, 프로칼시토닌 0.08 ng/mL이다. 흉부 X선 사진은 그림과 같다. 진단을 위해 가장 먼저 시행할 검사로 가장 적절한 것은? A. 객담 그람염색과 세균 배양 B. 소변 레지오넬라 항원검사 C. 객담 항산균 도말과 배양 D. 기관지내시경 폐포세척액 검사 E. 비인두 도말 검체의 SARS CoV 2 역전사 중합효소연쇄반응"
+  },
+  {
+   "id": "imaging-2026-0352",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 외상 신장절제 검체의 세관 분절과 이뇨제 작용 부위",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0352.md",
+   "snippet": "A 16 year old boy is brought to the emergency department 40 minutes after a motorcycle collision. He has left flank pain and gross hematuria. Pulse is 128/min, and blood pressure is 82/50 mm Hg despite 2 L of intravenous crystalloid. CT of ",
+   "text": "병리·조직학 병리·조직 — 외상 신장절제 검체의 세관 분절과 이뇨제 작용 부위 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f A 16 year old boy is brought to the emergency department 40 minutes after a motorcycle collision. He has left flank pain and gross hematuria. Pulse is 128/min, and blood pressure is 82/50 mm Hg despite 2 L of intravenous crystalloid. CT of the abdomen shows a shattered left kidney with active contrast extravasation, and an emergency left nephrectomy is performed. A section of uninjured renal cortex from the specimen is stained by immunohistochemistry with an antibody against a membrane protein expressed by one epithelial cell type of the distal nephron; the result is shown. Which of the following diuretics acts primarily on the epithelial cells lining the stained tubules? A. Mannitol B. Amiloride C. Hydrochlorothiazide D. Furosemide E. Acetazolamide"
+  },
+  {
+   "id": "imaging-2026-0351",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 간 전이 선암의 원발 부위 면역조직화학",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+   "confidence": "high",
+   "date": "2026-10-17",
+   "path": "content/imaging/2026/imaging-2026-0351.md",
+   "snippet": "61세 여자가 2개월 전부터 계속된 오른쪽 윗배 불편감과 4 kg 체중 감소로 왔다. 3년 전 상행결장암으로 오른쪽 반결장절제술을 받았다. 혈압 124/76 mmHg, 맥박 80회/분, 체온 36.7℃이다. 간이 오른쪽 갈비뼈 아래 2 cm 만져진다. 혈액검사에서 알칼리인산분해효소 210 U/L, 암배아항원 48 ng/mL이다. 복부 CT에서 간에 여러 개의 저음영 결절이 있고, 초음파 유도 간 생검에서 선암이 나왔다. 원발 ",
+   "text": "병리·조직학 병리·조직 — 간 전이 선암의 원발 부위 면역조직화학 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f 61세 여자가 2개월 전부터 계속된 오른쪽 윗배 불편감과 4 kg 체중 감소로 왔다. 3년 전 상행결장암으로 오른쪽 반결장절제술을 받았다. 혈압 124/76 mmHg, 맥박 80회/분, 체온 36.7℃이다. 간이 오른쪽 갈비뼈 아래 2 cm 만져진다. 혈액검사에서 알칼리인산분해효소 210 U/L, 암배아항원 48 ng/mL이다. 복부 CT에서 간에 여러 개의 저음영 결절이 있고, 초음파 유도 간 생검에서 선암이 나왔다. 원발 부위를 가리기 위한 면역조직화학 패널의 대조로, 같은 항체로 이전 수술 검체의 정상 대장 점막 조직을 염색한 결과는 그림과 같다. 이 항체가 인식하는 항원으로 가장 적절한 것은? A. MUC2 점액단백 B. E 카드헤린 C. 암배아항원(CEA) D. CDX2 E. 사이토케라틴 20(CK20)"
   },
   {
    "id": "anatomy-daily-2026-10-17",

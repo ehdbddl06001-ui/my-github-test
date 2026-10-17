@@ -2,6 +2,1301 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0360",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "진단검사·영상의학 판독 — 뇌 MRI 강조 영상의 판별과 뇌척수액 곁 병변을 위한 추가 영상",
+  "type": "진단검사·영상의학 판독 — 뇌 MRI 강조 영상의 판별과 뇌척수액 곁 병변을 위한 추가 영상",
+  "modality": "MR",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-17",
+  "vignette": "68세 여자가 3주 전부터 기억력이 떨어지고 아침에 심해지는 두통이 있어 왔다. 고혈압으로 암로디핀을 먹고 있다. 혈압 134/82 mmHg, 맥박 74회/분, 체온 36.5℃이다. 신경학적 진찰에서 지남력은 정상이고 간이정신상태검사는 26점이며, 운동·감각 기능과 뇌신경 진찰은 정상이다. 혈액검사에서 혈당, 전해질, 갑상샘자극호르몬, 비타민 B12 는 정상이다. 뇌 MRI 에서 중뇌 높이의 축상 영상 하나는 그림과 같다. 이 영상만으로는 뇌실 벽과 피질 고랑에 붙은 작은 병변이 뇌척수액과 잘 구별되지 않아 영상을 하나 더 얻으려 한다.",
+  "question": "추가할 영상으로 가장 적절한 것은?",
+  "options": [
+   "자기공명혈관조영",
+   "액체감쇠역전회복(FLAIR) 영상",
+   "조영제 주사 전 T1 강조영상",
+   "확산강조영상",
+   "경사에코(T2*) 영상"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 그림에서 안구 유리체와 중뇌 주위 수조·뇌고랑의 뇌척수액이 밝고, 백질이 회색질보다 어두우므로 T2 강조영상이다. T2 에서는 대부분의 병변(부종·탈수초·종양)도 밝아 같은 밝기의 뇌척수액에 붙어 있으면 경계가 묻힌다. FLAIR 는 T2 대비를 유지하면서 반전 펄스로 자유수인 뇌척수액 신호만 지워, 뇌실 곁·피질 고랑 곁 병변을 가장 잘 드러낸다.\n- 원리: <b>그림을 T2 로 읽는 근거</b>: T2 강조영상은 가로 이완이 느린 물이 밝다. 그래서 자유수가 많은 <b>뇌척수액과 유리체가 가장 밝고</b>, 수분이 적고 미엘린이 많은 백질이 회색질보다 어둡다. T1 강조영상은 반대로 뇌척수액이 어둡고 백질이 회색질보다 밝다.<br> <b>T2 의 한계</b>: 부종·탈수초·종양·경색 같은 대부분의 병변은 물이 늘어 T2 에서 밝다. 이 병변이 같은 밝기의 뇌척수액에 붙어 있으면(뇌실 주위, 피질 고랑 가장자리) 경계가 사라져 작게 보이거나 보이지 않는다.<br> <b>FLAIR 가 해결하는 방식</b>: FLAIR 는 T2 강조에 앞서 반전 펄스를 주고 뇌척수액의 세로 자화가 0 을 지나는 시점(긴 반전시간)에 신호를 얻는다. 그러면 자유수인 뇌척수액만 어두워지고, 조직에 묶인 물을 가진 병변은 여전히 밝게 남는다. 그래서 다발경화증의 뇌실 주위 병변, 종양 주위 부종, 지주막하 출혈·수막염의 고랑 신호를 찾는 데 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">FLAIR(정답)</th><th>조영 전 T1 강조영상(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>뇌척수액</td><td><b>어둡다</b>(신호 억제)</td><td>어둡다</td></tr> <tr><td>대부분의 병변</td><td><b>밝다</b> — 어두운 뇌척수액과 대비가 큼</td><td>약간 어둡다 — 주변 뇌와 대비가 작음</td></tr> <tr><td>잘 보이는 것</td><td>뇌실·고랑 곁 부종·탈수초·종양</td><td>해부 구조, 지방·아급성 출혈·멜라닌(밝음)</td></tr> <tr><td>쓰임</td><td>T2 로 가려진 뇌척수액 곁 병변 찾기</td><td>조영 후 T1 과 짝지어 증강 여부 판정</td></tr> </tbody></table> 둘 다 뇌척수액이 어둡지만, 병변을 밝게 남기는 것은 T2 대비를 지닌 FLAIR 다.\n- 오답 이유:\n  - ① 자기공명혈관조영은 동맥류·혈관 협착·동정맥 기형처럼 혈관 자체를 평가해야 할 때 정답이 된다.\n  - ③ 조영 전 T1 은 뒤이은 조영 후 T1 과 비교해 혈뇌장벽 파괴(증강)를 판정하거나 지방·아급성 출혈을 볼 때 정답이 되지만 병변 대비는 낮다.\n  - ④ 확산강조영상은 발병 몇 분~시간 안의 급성 뇌경색이나 고름집·표피낭종처럼 확산이 제한되는 병변을 찾을 때 정답이 된다.\n  - ⑤ 경사에코(T2*) 영상은 미세출혈·헤모시데린·석회화의 자화율 효과로 생긴 신호 소실을 찾을 때 정답이 된다.\n- 함정: 「뇌척수액이 어둡다」만 보고 T1 을 고르는 것 — 병변까지 밝게 남겨 대비를 만드는 것은 T2 대비를 유지한 FLAIR 다.\n- 학습목표: 뇌척수액과 유리체가 밝은 영상을 T2 강조영상으로 읽고, 뇌척수액에 붙은 병변이 가려지는 한계 때문에 뇌척수액 신호를 억제한 FLAIR 를 추가함을 안다\n- 근거·출처: Osborn AG, Hedlund GL, Salzman KL. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. Ch. Approach to brain MR — sequences · De Coene B, et al. MR of the brain using fluid-attenuated inversion recovery (FLAIR) pulse sequences. AJNR Am J Neuroradiol 1992;13:1555-1564 · TCIA UPENN-GBM collection (CC BY 4.0) — DICOM 시리즈 설명 T2 AXIAL (교사용) · 작성자 판독(2026-10-18): 유리체와 중뇌 주위 수조의 뇌척수액이 밝고 백질이 회색질보다 어두운 T2 대비, 이 단면에 뚜렷한 종괴 없음\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …13203111 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 안구 유리체와 중뇌 주위 수조·뇌고랑의 뇌척수액이 밝고, 백질이 회색질보다 어두우므로 T2 강조영상이다. T2 에서는 대부분의 병변(부종·탈수초·종양)도 밝아 같은 밝기의 뇌척수액에 붙어 있으면 경계가 묻힌다. FLAIR 는 T2 대비를 유지하면서 반전 펄스로 자유수인 뇌척수액 신호만 지워, 뇌실 곁·피질 고랑 곁 병변을 가장 잘 드러낸다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>그림을 T2 로 읽는 근거</b>: T2 강조영상은 가로 이완이 느린 물이 밝다. 그래서 자유수가 많은 <b>뇌척수액과 유리체가 가장 밝고</b>, 수분이 적고 미엘린이 많은 백질이 회색질보다 어둡다. T1 강조영상은 반대로 뇌척수액이 어둡고 백질이 회색질보다 밝다.<br> <b>T2 의 한계</b>: 부종·탈수초·종양·경색 같은 대부분의 병변은 물이 늘어 T2 에서 밝다. 이 병변이 같은 밝기의 뇌척수액에 붙어 있으면(뇌실 주위, 피질 고랑 가장자리) 경계가 사라져 작게 보이거나 보이지 않는다.<br> <b>FLAIR 가 해결하는 방식</b>: FLAIR 는 T2 강조에 앞서 반전 펄스를 주고 뇌척수액의 세로 자화가 0 을 지나는 시점(긴 반전시간)에 신호를 얻는다. 그러면 자유수인 뇌척수액만 어두워지고, 조직에 묶인 물을 가진 병변은 여전히 밝게 남는다. 그래서 다발경화증의 뇌실 주위 병변, 종양 주위 부종, 지주막하 출혈·수막염의 고랑 신호를 찾는 데 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">FLAIR(정답)</th><th>조영 전 T1 강조영상(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>뇌척수액</td><td><b>어둡다</b>(신호 억제)</td><td>어둡다</td></tr> <tr><td>대부분의 병변</td><td><b>밝다</b> — 어두운 뇌척수액과 대비가 큼</td><td>약간 어둡다 — 주변 뇌와 대비가 작음</td></tr> <tr><td>잘 보이는 것</td><td>뇌실·고랑 곁 부종·탈수초·종양</td><td>해부 구조, 지방·아급성 출혈·멜라닌(밝음)</td></tr> <tr><td>쓰임</td><td>T2 로 가려진 뇌척수액 곁 병변 찾기</td><td>조영 후 T1 과 짝지어 증강 여부 판정</td></tr> </tbody></table> 둘 다 뇌척수액이 어둡지만, 병변을 밝게 남기는 것은 T2 대비를 지닌 FLAIR 다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 자기공명혈관조영은 동맥류·혈관 협착·동정맥 기형처럼 혈관 자체를 평가해야 할 때 정답이 된다.\n③ 조영 전 T1 은 뒤이은 조영 후 T1 과 비교해 혈뇌장벽 파괴(증강)를 판정하거나 지방·아급성 출혈을 볼 때 정답이 되지만 병변 대비는 낮다.\n④ 확산강조영상은 발병 몇 분~시간 안의 급성 뇌경색이나 고름집·표피낭종처럼 확산이 제한되는 병변을 찾을 때 정답이 된다.\n⑤ 경사에코(T2*) 영상은 미세출혈·헤모시데린·석회화의 자화율 효과로 생긴 신호 소실을 찾을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「뇌척수액이 어둡다」만 보고 T1 을 고르는 것 — 병변까지 밝게 남겨 대비를 만드는 것은 T2 대비를 유지한 FLAIR 다."
+   },
+   {
+    "k": "학습목표",
+    "v": "뇌척수액과 유리체가 밝은 영상을 T2 강조영상으로 읽고, 뇌척수액에 붙은 병변이 가려지는 한계 때문에 뇌척수액 신호를 억제한 FLAIR 를 추가함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Osborn AG, Hedlund GL, Salzman KL. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. Ch. Approach to brain MR — sequences · De Coene B, et al. MR of the brain using fluid-attenuated inversion recovery (FLAIR) pulse sequences. AJNR Am J Neuroradiol 1992;13:1555-1564 · TCIA UPENN-GBM collection (CC BY 4.0) — DICOM 시리즈 설명 T2 AXIAL (교사용) · 작성자 판독(2026-10-18): 유리체와 중뇌 주위 수조의 뇌척수액이 밝고 백질이 회색질보다 어두운 T2 대비, 이 단면에 뚜렷한 종괴 없음 ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …13203111 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "뇌척수액과 유리체가 밝은 T2 강조영상에서는 뇌척수액 곁 병변이 묻히므로 뇌척수액 신호만 지우는 FLAIR 를 추가한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "뇌척수액을 어둡게 하면서 병변은 밝게 남기는가 — FLAIR 는 그렇고 T1 은 병변 대비가 낮다",
+   "steps": 2,
+   "chain": [
+    "영상: 유리체·수조의 뇌척수액이 밝고 백질이 회색질보다 어둡다 → T2 강조영상",
+    "T2 에서 밝은 병변이 밝은 뇌척수액에 묻힘 → 뇌척수액 신호를 억제한 FLAIR 추가"
+   ],
+   "key": [
+    {
+     "item": "영상: 안구 유리체와 중뇌 주위 수조·뇌고랑의 뇌척수액이 밝고 백질이 회색질보다 어둡다",
+     "why": "T2 강조영상임을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "뇌실 벽과 피질 고랑에 붙은 작은 병변이 뇌척수액과 잘 구별되지 않아",
+     "why": "T2 의 한계 — FLAIR 가 필요한 이유",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "비타민 B12 는 정상",
+     "why": "가역적 기억 저하 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "아침에 심해지는 두통",
+     "why": "두개내압 상승을 의심해 MRI 를 찍은 이유 — 영상 선택에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "운동·감각 기능과 뇌신경 진찰은 정상",
+     "why": "국소 신경학적 결손이 없다 — 영상 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "그림은 뇌척수액과 유리체가 밝고 백질이 회색질보다 어두운 T2 강조영상이다. T2 에서 밝은 병변이 뇌척수액에 묻히므로, T2 대비를 유지하면서 뇌척수액 신호만 지우는 FLAIR 를 추가한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "갑자기 생긴 한쪽 마비로 급성 뇌경색을 찾는 상황이었다면 확산강조영상이 가장 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0360.png",
+   "caption": "뇌 MRI 축상 영상, 표준 표시 방향(환자 오른쪽이 보는 사람 왼쪽) (The Cancer Imaging Archive, CC BY 4.0 — DICOM 변환, 크롭 없음)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.159726640958288333855119953778013203111",
+   "asset_id": "TCIA-UPENN_GBM-11112207746776",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …13203111"
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0353",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "호흡기 — 가족 접촉 뒤 열·후각 소실과 양쪽 아래 폐야 음영",
+  "type": "호흡기 — 가족 접촉 뒤 열·후각 소실과 양쪽 아래 폐야 음영",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-17",
+  "vignette": "34세 여자가 5일 전부터 열, 마른기침, 근육통이 있고 2일 전부터 냄새를 맡지 못해 왔다. 함께 사는 남편이 1주 전 같은 증상을 앓았다. 흡연하지 않고 기저질환은 없다. 혈압 118/74 mmHg, 맥박 96회/분, 호흡수 22회/분, 체온 38.2℃, 실내 공기에서 산소포화도 95%이다. 양쪽 아래 폐야에서 흡기 말 수포음이 들린다. 혈액검사에서 백혈구 4,800/mm³(림프구 12%), C-반응단백질 3.1 mg/dL, 프로칼시토닌 0.08 ng/mL이다. 흉부 X선 사진은 그림과 같다.",
+  "question": "진단을 위해 가장 먼저 시행할 검사로 가장 적절한 것은?",
+  "options": [
+   "객담 그람염색과 세균 배양",
+   "소변 레지오넬라 항원검사",
+   "객담 항산균 도말과 배양",
+   "기관지내시경 폐포세척액 검사",
+   "비인두 도말 검체의 SARS-CoV-2 역전사 중합효소연쇄반응"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 폐용적이 작고 양쪽 하폐야 말초에 흐린 간유리·망상 음영이 있으며, 한 엽을 채우는 경화나 상엽 공동은 없다. 가족 내 접촉, 후각 소실, 림프구감소, 낮은 프로칼시토닌과 함께 이 분포는 SARS-CoV-2 바이러스 폐렴을 가장 먼저 의심하게 하므로, 비인두 도말 검체의 핵산증폭검사(RT-PCR)를 먼저 한다.\n- 원리: <b>왜 분포가 원인을 가르는가</b>: 바이러스 폐렴은 폐포 벽과 간질에 염증이 생겨 공기가 남아 있는 채로 흐려지는 간유리 음영을 만들고, 코로나바이러스감염증-19 는 특히 <b>양쪽·말초·하폐야</b>에 분포한다. 폐렴알균 같은 세균 폐렴은 폐포 안이 삼출물로 차서 한 엽이나 구역을 빽빽하게 채우는 <b>대엽성 경화</b>와 공기기관지조영을 만든다. 재활성 결핵은 산소분압이 높은 <b>상엽 첨후구역</b>의 공동을 만든다.<br> <b>혈액검사가 더하는 근거</b>: 림프구감소는 코로나바이러스감염증-19 의 흔한 소견이고, 프로칼시토닌은 세균 감염에서 주로 오르므로 0.1 ng/mL 아래면 세균 폐렴 가능성을 낮춘다.<br> <b>왜 비인두 도말 RT-PCR 인가</b>: 바이러스 RNA 를 직접 증폭해 민감도·특이도가 가장 높은 확진 검사이고, 결과에 따라 격리·항바이러스제·접촉자 관리가 정해진다. 침습적인 기관지내시경은 비인두 검사가 음성인데 의심이 계속될 때 고려한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">바이러스 폐렴 — SARS-CoV-2 RT-PCR(정답)</th><th>세균 폐렴 — 객담 그람염색·배양(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>흉부 X선</td><td>양쪽 하폐야 말초의 <b>흐린 간유리</b> 음영</td><td>한 엽을 채우는 경화 + 공기기관지조영</td></tr> <tr><td>기침</td><td>마른기침</td><td>화농성 객담</td></tr> <tr><td>백혈구</td><td>정상~감소, <b>림프구감소</b></td><td>호중구 증가</td></tr> <tr><td>프로칼시토닌</td><td>&lt; 0.1 ng/mL(세균 가능성 낮음)</td><td>대개 0.25 ng/mL 이상</td></tr> <tr><td>역학 단서</td><td>가족 접촉, 후각 소실</td><td>오한·흉막성 흉통의 급성 발병</td></tr> </tbody></table> 간유리 음영이 한 엽을 채우는 경화로 바뀌고 화농성 객담·호중구 증가가 있으면 세균 폐렴 검사가 먼저다.\n- 오답 이유:\n  - ① 객담 그람염색과 배양은 화농성 객담, 호중구 증가, 한 엽을 채우는 경화가 보이는 세균 폐렴을 의심할 때 정답이 된다.\n  - ② 소변 레지오넬라 항원검사는 고열·설사·저나트륨혈증·간효소 상승이 있고 냉각탑·온수 노출력이 있는 중증 폐렴에서 정답이 된다.\n  - ③ 객담 항산균 도말·배양은 수주 이상의 기침·체중 감소·야간 발한과 상엽 공동이 있을 때 정답이 된다.\n  - ④ 기관지내시경 폐포세척은 비인두 검사가 음성인데 진행하거나 면역저하 환자에서 폐포자충 등을 찾아야 할 때 정답이 된다.\n- 함정: 양쪽 수포음과 열만 보고 습관적으로 세균 폐렴 검사부터 고르는 것 — 접촉력·후각 소실·림프구감소·낮은 프로칼시토닌과 말초 간유리 음영이 바이러스를 가리킨다.\n- 학습목표: 가족 접촉·후각 소실·림프구감소와 양쪽 하폐야 말초의 흐린 음영에서 바이러스 폐렴을 의심하고, 대엽성 세균 폐렴·결핵 검사보다 먼저 SARS-CoV-2 핵산증폭검사를 고른다\n- 근거·출처: Jameson JL, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Coronaviruses including SARS-CoV-2 — diagnosis · Rubin GD, et al. The role of chest imaging in patient management during the COVID-19 pandemic: a multinational consensus statement from the Fleischner Society. Chest 2020;158:106-116 · TCIA COVID-19-AR collection (CC BY 4.0) (교사용) · 작성자 판독(2026-10-18): 작은 폐용적과 양쪽 하폐야 말초의 흐린 간유리·망상 음영, 대엽성 경화·공동 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …59876973 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 폐용적이 작고 양쪽 하폐야 말초에 흐린 간유리·망상 음영이 있으며, 한 엽을 채우는 경화나 상엽 공동은 없다. 가족 내 접촉, 후각 소실, 림프구감소, 낮은 프로칼시토닌과 함께 이 분포는 SARS-CoV-2 바이러스 폐렴을 가장 먼저 의심하게 하므로, 비인두 도말 검체의 핵산증폭검사(RT-PCR)를 먼저 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 분포가 원인을 가르는가</b>: 바이러스 폐렴은 폐포 벽과 간질에 염증이 생겨 공기가 남아 있는 채로 흐려지는 간유리 음영을 만들고, 코로나바이러스감염증-19 는 특히 <b>양쪽·말초·하폐야</b>에 분포한다. 폐렴알균 같은 세균 폐렴은 폐포 안이 삼출물로 차서 한 엽이나 구역을 빽빽하게 채우는 <b>대엽성 경화</b>와 공기기관지조영을 만든다. 재활성 결핵은 산소분압이 높은 <b>상엽 첨후구역</b>의 공동을 만든다.<br> <b>혈액검사가 더하는 근거</b>: 림프구감소는 코로나바이러스감염증-19 의 흔한 소견이고, 프로칼시토닌은 세균 감염에서 주로 오르므로 0.1 ng/mL 아래면 세균 폐렴 가능성을 낮춘다.<br> <b>왜 비인두 도말 RT-PCR 인가</b>: 바이러스 RNA 를 직접 증폭해 민감도·특이도가 가장 높은 확진 검사이고, 결과에 따라 격리·항바이러스제·접촉자 관리가 정해진다. 침습적인 기관지내시경은 비인두 검사가 음성인데 의심이 계속될 때 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">바이러스 폐렴 — SARS-CoV-2 RT-PCR(정답)</th><th>세균 폐렴 — 객담 그람염색·배양(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>흉부 X선</td><td>양쪽 하폐야 말초의 <b>흐린 간유리</b> 음영</td><td>한 엽을 채우는 경화 + 공기기관지조영</td></tr> <tr><td>기침</td><td>마른기침</td><td>화농성 객담</td></tr> <tr><td>백혈구</td><td>정상~감소, <b>림프구감소</b></td><td>호중구 증가</td></tr> <tr><td>프로칼시토닌</td><td>&lt; 0.1 ng/mL(세균 가능성 낮음)</td><td>대개 0.25 ng/mL 이상</td></tr> <tr><td>역학 단서</td><td>가족 접촉, 후각 소실</td><td>오한·흉막성 흉통의 급성 발병</td></tr> </tbody></table> 간유리 음영이 한 엽을 채우는 경화로 바뀌고 화농성 객담·호중구 증가가 있으면 세균 폐렴 검사가 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 객담 그람염색과 배양은 화농성 객담, 호중구 증가, 한 엽을 채우는 경화가 보이는 세균 폐렴을 의심할 때 정답이 된다.\n② 소변 레지오넬라 항원검사는 고열·설사·저나트륨혈증·간효소 상승이 있고 냉각탑·온수 노출력이 있는 중증 폐렴에서 정답이 된다.\n③ 객담 항산균 도말·배양은 수주 이상의 기침·체중 감소·야간 발한과 상엽 공동이 있을 때 정답이 된다.\n④ 기관지내시경 폐포세척은 비인두 검사가 음성인데 진행하거나 면역저하 환자에서 폐포자충 등을 찾아야 할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "양쪽 수포음과 열만 보고 습관적으로 세균 폐렴 검사부터 고르는 것 — 접촉력·후각 소실·림프구감소·낮은 프로칼시토닌과 말초 간유리 음영이 바이러스를 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "가족 접촉·후각 소실·림프구감소와 양쪽 하폐야 말초의 흐린 음영에서 바이러스 폐렴을 의심하고, 대엽성 세균 폐렴·결핵 검사보다 먼저 SARS-CoV-2 핵산증폭검사를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Jameson JL, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Coronaviruses including SARS-CoV-2 — diagnosis · Rubin GD, et al. The role of chest imaging in patient management during the COVID-19 pandemic: a multinational consensus statement from the Fleischner Society. Chest 2020;158:106-116 · TCIA COVID-19-AR collection (CC BY 4.0) (교사용) · 작성자 판독(2026-10-18): 작은 폐용적과 양쪽 하폐야 말초의 흐린 간유리·망상 음영, 대엽성 경화·공동 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …59876973 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "가족 접촉·후각 소실·림프구감소·낮은 프로칼시토닌과 양쪽 하폐야 말초 간유리 음영은 SARS-CoV-2 폐렴을 가리키므로 비인두 RT-PCR 을 먼저 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "영상 분포(말초 간유리 대 대엽성 경화)와 낮은 프로칼시토닌·림프구감소",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 하폐야 말초의 흐린 간유리 음영, 대엽성 경화·공동 없음 + 림프구감소·낮은 프로칼시토닌 → 바이러스 폐렴",
+    "가족 접촉·후각 소실 → SARS-CoV-2 의심 → 비인두 RT-PCR"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 하폐야 말초의 흐린 간유리·망상 음영, 대엽성 경화·공동 없음",
+     "why": "바이러스 폐렴 분포 — 세균·결핵 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "함께 사는 남편이 1주 전 같은 증상",
+     "why": "전파성 호흡기 바이러스 단서",
+     "also": []
+    },
+    {
+     "item": "냄새를 맡지 못해",
+     "why": "후각 소실 — SARS-CoV-2 를 시사",
+     "also": []
+    },
+    {
+     "item": "림프구 12%",
+     "why": "림프구감소",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로칼시토닌 0.08 ng/mL",
+     "why": "세균 폐렴 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "산소포화도 95%",
+     "why": "저산소혈증이 없어 외래·격리 관리가 가능한 중증도",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "흡연하지 않고",
+     "why": "판단에 영향이 적은 배경",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 하폐야 말초의 흐린 간유리 음영에 가족 접촉·후각 소실·림프구감소·낮은 프로칼시토닌이 더해져 SARS-CoV-2 폐렴이 가장 의심되므로, 비인두 도말 RT-PCR 을 먼저 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "화농성 객담·호중구 증가·높은 프로칼시토닌과 한 엽을 채우는 경화가 보였다면 객담 그람염색과 배양이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0353.png",
+   "caption": "앉은 자세 전후 흉부 X선 사진 (TCIA, CC BY 4.0 — DICOM 을 표준 창으로 변환, 크롭 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1517842355458134403618559876973",
+   "asset_id": "TCIA-COVID19_AR-85384339889113",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …59876973"
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0352",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "병리·조직 — 외상 신장절제 검체의 세관 분절과 이뇨제 작용 부위",
+  "type": "병리·조직 — 외상 신장절제 검체의 세관 분절과 이뇨제 작용 부위",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-17",
+  "vignette": "A 16-year-old boy is brought to the emergency department 40 minutes after a motorcycle collision. He has left flank pain and gross hematuria. Pulse is 128/min, and blood pressure is 82/50 mm Hg despite 2 L of intravenous crystalloid. CT of the abdomen shows a shattered left kidney with active contrast extravasation, and an emergency left nephrectomy is performed. A section of uninjured renal cortex from the specimen is stained by immunohistochemistry with an antibody against a membrane protein expressed by one epithelial cell type of the distal nephron; the result is shown.",
+  "question": "Which of the following diuretics acts primarily on the epithelial cells lining the stained tubules?",
+  "options": [
+   "Mannitol",
+   "Amiloride",
+   "Hydrochlorothiazide",
+   "Furosemide",
+   "Acetazolamide"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Only the long, straight tubules lined by pale cuboidal cells with distinct cell borders show brown staining along the luminal surface; the proximal tubules with eosinophilic cytoplasm and brush borders, the glomerulus, and the interstitium are unstained. Straight, pale-celled tubules running through the cortex are cortical collecting ducts in a medullary ray, and the stained cells are principal cells. Principal cells reabsorb sodium through the epithelial sodium channel (ENaC), which amiloride blocks.\n- 원리: <b>How to recognize the collecting duct</b>: in the cortex, collecting ducts run straight in medullary rays. Their cells are cuboidal, pale (few mitochondria), with sharp lateral borders and a wide, clean lumen. Proximal tubules have tall eosinophilic cells with a brush border and a fuzzy lumen; distal convoluted tubules are short convoluted profiles near the glomerulus with eosinophilic cells and no brush border.<br> <b>What the principal cell does</b>: the principal cell takes up sodium through apical ENaC and pumps it out with basolateral Na-K-ATPase; the resulting lumen-negative potential drives potassium secretion through ROMK. Vasopressin, through V2-Gs-cAMP, inserts aquaporin-2 water channels into the same apical membrane, which is why an apical-membrane water channel stain marks these cells.<br> <b>Why amiloride acts here</b>: amiloride and triamterene block ENaC directly, so they cause mild natriuresis and potassium retention. Spironolactone acts on the same cells indirectly by blocking the aldosterone receptor that up-regulates ENaC.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Collecting duct — amiloride (answer)</th><th>Distal convoluted tubule — thiazide (closest distractor)</th></tr></thead><tbody> <tr><td>Shape in cortex</td><td><b>Long, straight</b> profiles in medullary rays</td><td>Short convoluted profiles beside the glomerulus</td></tr> <tr><td>Cells</td><td>Pale cuboidal, sharp lateral borders</td><td>Eosinophilic cuboidal, no brush border</td></tr> <tr><td>Apical sodium entry</td><td>ENaC (aldosterone-regulated)</td><td>Na-Cl cotransporter (NCC)</td></tr> <tr><td>Diuretic</td><td>Amiloride, triamterene (spironolactone indirectly)</td><td>Hydrochlorothiazide, chlorthalidone</td></tr> <tr><td>Potassium effect</td><td>Retained</td><td>Lost</td></tr> </tbody></table> Both segments are \"distal nephron\"; the straight course and pale cells place the stain in the collecting duct.\n- 오답 이유:\n  - (A) Mannitol acts osmotically mainly in the proximal tubule and descending limb, which are water-permeable segments, not on a specific transporter of the stained cells.\n  - (C) Hydrochlorothiazide would be correct if the stained profiles were short convoluted tubules of eosinophilic cells next to the glomerulus, as with a stain for the Na-Cl cotransporter.\n  - (D) Furosemide would be correct for a stain of the thick ascending limb, whose cells carry the Na-K-2Cl cotransporter and run in the medulla and medullary rays as straight eosinophilic tubules.\n  - (E) Acetazolamide would be correct if the stained cells were proximal tubule cells with brush borders, where carbonic anhydrase drives bicarbonate reabsorption.\n- 함정: Reading 'distal nephron' and choosing the thiazide — the stained tubules are straight and pale-celled, which places them in the collecting duct, not the distal convoluted tubule.\n- 학습목표: 신장 피질 면역조직화학에서 염색된 세관이 길고 곧은 밝은 입방상피의 집합관임을 근위세관·원위곡세관과 구별해 읽고, 그 주세포에 작용하는 이뇨제를 연결한다\n- 근거·출처: Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed. Ch. Urinary system — cortical collecting ducts and medullary rays · Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 15th ed. Ch. Diuretic agents — potassium-sparing diuretics · Human Protein Atlas — AQP2, kidney tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-18): 길고 곧은 관의 밝은 입방상피 내강면만 약한 갈색, 근위세관·사구체 음성\n\n## 출처\n- Human Protein Atlas, AQP2 / Kidney (CC BY 4.0), https://images.proteinatlas.org/46834/147521_A_9_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Only the long, straight tubules lined by pale cuboidal cells with distinct cell borders show brown staining along the luminal surface; the proximal tubules with eosinophilic cytoplasm and brush borders, the glomerulus, and the interstitium are unstained. Straight, pale-celled tubules running through the cortex are cortical collecting ducts in a medullary ray, and the stained cells are principal cells. Principal cells reabsorb sodium through the epithelial sodium channel (ENaC), which amiloride blocks."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How to recognize the collecting duct</b>: in the cortex, collecting ducts run straight in medullary rays. Their cells are cuboidal, pale (few mitochondria), with sharp lateral borders and a wide, clean lumen. Proximal tubules have tall eosinophilic cells with a brush border and a fuzzy lumen; distal convoluted tubules are short convoluted profiles near the glomerulus with eosinophilic cells and no brush border.<br> <b>What the principal cell does</b>: the principal cell takes up sodium through apical ENaC and pumps it out with basolateral Na-K-ATPase; the resulting lumen-negative potential drives potassium secretion through ROMK. Vasopressin, through V2-Gs-cAMP, inserts aquaporin-2 water channels into the same apical membrane, which is why an apical-membrane water channel stain marks these cells.<br> <b>Why amiloride acts here</b>: amiloride and triamterene block ENaC directly, so they cause mild natriuresis and potassium retention. Spironolactone acts on the same cells indirectly by blocking the aldosterone receptor that up-regulates ENaC."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Collecting duct — amiloride (answer)</th><th>Distal convoluted tubule — thiazide (closest distractor)</th></tr></thead><tbody> <tr><td>Shape in cortex</td><td><b>Long, straight</b> profiles in medullary rays</td><td>Short convoluted profiles beside the glomerulus</td></tr> <tr><td>Cells</td><td>Pale cuboidal, sharp lateral borders</td><td>Eosinophilic cuboidal, no brush border</td></tr> <tr><td>Apical sodium entry</td><td>ENaC (aldosterone-regulated)</td><td>Na-Cl cotransporter (NCC)</td></tr> <tr><td>Diuretic</td><td>Amiloride, triamterene (spironolactone indirectly)</td><td>Hydrochlorothiazide, chlorthalidone</td></tr> <tr><td>Potassium effect</td><td>Retained</td><td>Lost</td></tr> </tbody></table> Both segments are \"distal nephron\"; the straight course and pale cells place the stain in the collecting duct."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Mannitol acts osmotically mainly in the proximal tubule and descending limb, which are water-permeable segments, not on a specific transporter of the stained cells.\n(C) Hydrochlorothiazide would be correct if the stained profiles were short convoluted tubules of eosinophilic cells next to the glomerulus, as with a stain for the Na-Cl cotransporter.\n(D) Furosemide would be correct for a stain of the thick ascending limb, whose cells carry the Na-K-2Cl cotransporter and run in the medulla and medullary rays as straight eosinophilic tubules.\n(E) Acetazolamide would be correct if the stained cells were proximal tubule cells with brush borders, where carbonic anhydrase drives bicarbonate reabsorption."
+   },
+   {
+    "k": "함정",
+    "v": "Reading 'distal nephron' and choosing the thiazide — the stained tubules are straight and pale-celled, which places them in the collecting duct, not the distal convoluted tubule."
+   },
+   {
+    "k": "학습목표",
+    "v": "신장 피질 면역조직화학에서 염색된 세관이 길고 곧은 밝은 입방상피의 집합관임을 근위세관·원위곡세관과 구별해 읽고, 그 주세포에 작용하는 이뇨제를 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed. Ch. Urinary system — cortical collecting ducts and medullary rays · Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 15th ed. Ch. Diuretic agents — potassium-sparing diuretics · Human Protein Atlas — AQP2, kidney tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-18): 길고 곧은 관의 밝은 입방상피 내강면만 약한 갈색, 근위세관·사구체 음성 ## 출처 Human Protein Atlas, AQP2 / Kidney (CC BY 4.0), https://images.proteinatlas.org/46834/147521_A_9_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "염색된 세관은 길고 곧은 밝은 입방상피의 피질 집합관이므로 그 주세포의 ENaC 를 막는 아밀로라이드가 작용한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "세관 모양과 세포 — 곧고 밝은 세포면 집합관, 사구체 곁의 짧은 굽은 호산성 세관이면 원위곡세관",
+   "steps": 3,
+   "chain": [
+    "영상: 길고 곧은 관의 밝은 입방상피 내강면만 갈색, 솔가장자리 근위세관·사구체 음성 → 근위세관 아님",
+    "곧은 주행 + 밝은 세포 + 원위 신원의 한 세포 종류 → 피질 집합관 주세포",
+    "주세포의 나트륨 흡수 = ENaC → 아밀로라이드"
+   ],
+   "key": [
+    {
+     "item": "영상: 길고 곧은 관의 밝은 입방상피 내강면만 갈색, 근위세관·사구체는 음성",
+     "why": "염색 세관이 집합관임을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "one epithelial cell type of the distal nephron",
+     "why": "근위세관·헨레고리를 빼고 원위곡세관과 집합관 사이로 좁힌다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "shattered left kidney with active contrast extravasation",
+     "why": "검체를 얻은 이유 — 염색은 손상되지 않은 피질이다",
+     "also": []
+    },
+    {
+     "item": "gross hematuria",
+     "why": "외상의 결과 — 세관 판정과 무관",
+     "also": []
+    }
+   ],
+   "summary": "염색된 세관은 길고 곧게 달리는 밝은 입방상피의 관으로, 근위세관과 사구체는 음성이다. 원위 신원 중 곧은 주행과 밝은 세포는 피질 집합관 주세포를 가리키며, 그 ENaC 를 막는 아밀로라이드가 작용한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "염색이 사구체 곁의 짧고 굽은 호산성 세관에만 있었다면(Na-Cl 공동수송체 염색) 하이드로클로로티아자이드가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0352.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000167580-AQP2/tissue/Kidney",
+   "asset_id": "HPA-AQP2_147521_A_9_5",
+   "text": "Human Protein Atlas, AQP2 / Kidney (CC BY 4.0), https://images.proteinatlas.org/46834/147521_A_9_5.jpg"
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0351",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "병리·조직 — 간 전이 선암의 원발 부위 면역조직화학",
+  "type": "병리·조직 — 간 전이 선암의 원발 부위 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-17",
+  "vignette": "61세 여자가 2개월 전부터 계속된 오른쪽 윗배 불편감과 4 kg 체중 감소로 왔다. 3년 전 상행결장암으로 오른쪽 반결장절제술을 받았다. 혈압 124/76 mmHg, 맥박 80회/분, 체온 36.7℃이다. 간이 오른쪽 갈비뼈 아래 2 cm 만져진다. 혈액검사에서 알칼리인산분해효소 210 U/L, 암배아항원 48 ng/mL이다. 복부 CT에서 간에 여러 개의 저음영 결절이 있고, 초음파 유도 간 생검에서 선암이 나왔다. 원발 부위를 가리기 위한 면역조직화학 패널의 대조로, 같은 항체로 이전 수술 검체의 정상 대장 점막 조직을 염색한 결과는 그림과 같다.",
+  "question": "이 항체가 인식하는 항원으로 가장 적절한 것은?",
+  "options": [
+   "MUC2 점액단백",
+   "E-카드헤린",
+   "암배아항원(CEA)",
+   "CDX2",
+   "사이토케라틴 20(CK20)"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 갈색 신호가 가로로 잘린 음와를 이루는 상피세포의 핵에만 점처럼 모여 있고, 술잔세포의 점액 공포·세포질과 고유판의 간질세포는 음성이다. 핵에 국재하는 장 상피 표지자는 장 분화를 지시하는 호메오박스 전사인자 CDX2 다. 전이성 선암에서 CDX2 양성은 CK7 음성·CK20 양성과 함께 대장 원발을 강하게 시사한다.\n- 원리: <b>왜 염색 위치가 항원을 알려 주는가</b>: 면역조직화학의 갈색 침착은 항원이 세포 안 어디에 있는지를 그대로 보여 준다. 전사인자는 DNA 에 붙어 일하므로 <b>핵</b>, 중간섬유인 사이토케라틴은 <b>세포질</b>, 세포 부착 단백인 E-카드헤린은 세포 사이 <b>막</b>, 분비 점액은 술잔세포의 <b>점액 공포</b>, CEA 는 <b>내강 쪽 꼭대기막</b>에 나타난다.<br> <b>CDX2 는 무엇인가</b>: CDX2 는 장 상피의 분화를 지시하는 호메오박스 전사인자로, 십이지장에서 직장까지 거의 모든 장 상피세포(흡수세포·술잔세포)의 핵에서 발현된다. 그래서 정상 대장에서는 음와마다 핵이 고리 모양으로 갈색이 된다.<br> <b>임상에서 쓰는 이유</b>: 원발 부위를 모르는 전이성 선암에서 CK7 음성·CK20 양성·CDX2 양성이면 대장 원발을 강하게 시사한다. 다만 위·췌장·장형 점액성 종양에서도 일부 양성일 수 있어 다른 표지자와 함께 판단한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">CDX2(정답)</th><th>CK20(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>단백 종류</td><td>호메오박스 전사인자</td><td>중간섬유(사이토케라틴)</td></tr> <tr><td>염색 위치</td><td><b>핵</b> — 음와 상피 전체의 핵이 점처럼</td><td>세포질 — 표면 상피와 음와 위쪽에 강함</td></tr> <tr><td>정상 대장 분포</td><td>음와 깊이와 관계없이 거의 모든 상피</td><td>표면 쪽으로 갈수록 강하고 음와 바닥은 약함</td></tr> <tr><td>전이암 패널</td><td>대장 원발을 시사(장 분화)</td><td>CK7−/CK20+ 조합이 대장을 시사</td></tr> </tbody></table> 둘 다 대장 원발 패널에 들어가지만, 갈색이 <b>핵</b>에 있으면 CDX2, <b>세포질</b>을 채우면 CK20 이다.\n- 오답 이유:\n  - ① MUC2 는 술잔세포 점액 공포 안이 갈색으로 차고 핵과 흡수세포는 음성인 양상일 때 정답이 된다.\n  - ② E-카드헤린은 이웃 상피세포 사이의 옆쪽 막이 벌집처럼 갈색 선으로 그려질 때 정답이 되며, 소엽암에서 소실된다.\n  - ③ CEA 는 음와 내강을 향한 꼭대기막과 내강 속 분비물이 갈색일 때 정답이 되며, 혈청 수치는 추적 지표로 쓰인다.\n  - ⑤ CK20 은 같은 대장 원발 패널에 들어가지만 갈색이 핵이 아니라 표면 상피 세포질을 채우는 양상일 때 정답이 된다.\n- 함정: 혈청 CEA 가 높다는 정보와 「대장암 표지자」라는 연상으로 CEA 나 CK20 을 고르는 것 — 그림의 갈색은 핵에 있다.\n- 학습목표: 대장 점막 면역조직화학에서 갈색 신호가 음와 상피세포의 핵에만 있음을 읽고, 장 분화 전사인자 CDX2 를 세포질·막·점액 표지자와 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. Neoplasia — immunohistochemistry in tumors of unknown origin · Werling RW, et al. CDX2, a highly sensitive and specific marker of adenocarcinomas of intestinal origin. Am J Surg Pathol 2003;27:303-310 · Human Protein Atlas — CDX2, colon tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-18): 가로로 잘린 음와 상피세포의 핵이 갈색, 점액 공포·고유판은 음성\n\n## 출처\n- Human Protein Atlas, CDX2 / Colon (CC BY 4.0), https://images.proteinatlas.org/2221/5840_A_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "갈색 신호가 가로로 잘린 음와를 이루는 상피세포의 핵에만 점처럼 모여 있고, 술잔세포의 점액 공포·세포질과 고유판의 간질세포는 음성이다. 핵에 국재하는 장 상피 표지자는 장 분화를 지시하는 호메오박스 전사인자 CDX2 다. 전이성 선암에서 CDX2 양성은 CK7 음성·CK20 양성과 함께 대장 원발을 강하게 시사한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 염색 위치가 항원을 알려 주는가</b>: 면역조직화학의 갈색 침착은 항원이 세포 안 어디에 있는지를 그대로 보여 준다. 전사인자는 DNA 에 붙어 일하므로 <b>핵</b>, 중간섬유인 사이토케라틴은 <b>세포질</b>, 세포 부착 단백인 E-카드헤린은 세포 사이 <b>막</b>, 분비 점액은 술잔세포의 <b>점액 공포</b>, CEA 는 <b>내강 쪽 꼭대기막</b>에 나타난다.<br> <b>CDX2 는 무엇인가</b>: CDX2 는 장 상피의 분화를 지시하는 호메오박스 전사인자로, 십이지장에서 직장까지 거의 모든 장 상피세포(흡수세포·술잔세포)의 핵에서 발현된다. 그래서 정상 대장에서는 음와마다 핵이 고리 모양으로 갈색이 된다.<br> <b>임상에서 쓰는 이유</b>: 원발 부위를 모르는 전이성 선암에서 CK7 음성·CK20 양성·CDX2 양성이면 대장 원발을 강하게 시사한다. 다만 위·췌장·장형 점액성 종양에서도 일부 양성일 수 있어 다른 표지자와 함께 판단한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">CDX2(정답)</th><th>CK20(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>단백 종류</td><td>호메오박스 전사인자</td><td>중간섬유(사이토케라틴)</td></tr> <tr><td>염색 위치</td><td><b>핵</b> — 음와 상피 전체의 핵이 점처럼</td><td>세포질 — 표면 상피와 음와 위쪽에 강함</td></tr> <tr><td>정상 대장 분포</td><td>음와 깊이와 관계없이 거의 모든 상피</td><td>표면 쪽으로 갈수록 강하고 음와 바닥은 약함</td></tr> <tr><td>전이암 패널</td><td>대장 원발을 시사(장 분화)</td><td>CK7−/CK20+ 조합이 대장을 시사</td></tr> </tbody></table> 둘 다 대장 원발 패널에 들어가지만, 갈색이 <b>핵</b>에 있으면 CDX2, <b>세포질</b>을 채우면 CK20 이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① MUC2 는 술잔세포 점액 공포 안이 갈색으로 차고 핵과 흡수세포는 음성인 양상일 때 정답이 된다.\n② E-카드헤린은 이웃 상피세포 사이의 옆쪽 막이 벌집처럼 갈색 선으로 그려질 때 정답이 되며, 소엽암에서 소실된다.\n③ CEA 는 음와 내강을 향한 꼭대기막과 내강 속 분비물이 갈색일 때 정답이 되며, 혈청 수치는 추적 지표로 쓰인다.\n⑤ CK20 은 같은 대장 원발 패널에 들어가지만 갈색이 핵이 아니라 표면 상피 세포질을 채우는 양상일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈청 CEA 가 높다는 정보와 「대장암 표지자」라는 연상으로 CEA 나 CK20 을 고르는 것 — 그림의 갈색은 핵에 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "대장 점막 면역조직화학에서 갈색 신호가 음와 상피세포의 핵에만 있음을 읽고, 장 분화 전사인자 CDX2 를 세포질·막·점액 표지자와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. Neoplasia — immunohistochemistry in tumors of unknown origin · Werling RW, et al. CDX2, a highly sensitive and specific marker of adenocarcinomas of intestinal origin. Am J Surg Pathol 2003;27:303-310 · Human Protein Atlas — CDX2, colon tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-18): 가로로 잘린 음와 상피세포의 핵이 갈색, 점액 공포·고유판은 음성 ## 출처 Human Protein Atlas, CDX2 / Colon (CC BY 4.0), https://images.proteinatlas.org/2221/5840_A_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "갈색 신호가 음와 상피세포의 핵에만 있으므로 항원은 장 분화 전사인자 CDX2 다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "염색 위치 — CK20 은 세포질, CDX2 는 핵",
+   "steps": 2,
+   "chain": [
+    "영상: 음와 상피세포의 핵만 갈색, 점액 공포·세포질·고유판 음성 → 핵 단백(전사인자)",
+    "장 상피의 핵 전사인자 → CDX2(대장 원발 표지)"
+   ],
+   "key": [
+    {
+     "item": "영상: 가로로 잘린 음와 상피세포의 핵이 갈색, 점액 공포와 고유판은 음성",
+     "why": "염색이 핵에 국재 — 전사인자를 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "상행결장암",
+     "why": "대장 원발을 의심하게 하지만 항원 종류를 정하지는 못한다",
+     "also": []
+    },
+    {
+     "item": "암배아항원 48 ng/mL",
+     "why": "혈청 CEA 는 재발 추적 지표 — CEA 보기로 끌려가기 쉽다",
+     "also": []
+    },
+    {
+     "item": "간 생검에서 선암",
+     "why": "원발 부위 패널을 시행하는 이유",
+     "also": []
+    }
+   ],
+   "summary": "갈색 신호가 음와 상피세포의 핵에만 있고 점액 공포·세포질·고유판은 음성이다. 핵에 있는 장 상피 표지자는 전사인자 CDX2 이며, 세포질의 CK20·막의 E-카드헤린·점액의 MUC2·꼭대기막의 CEA 와 위치로 구별한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "갈색이 핵이 아니라 표면 상피 세포질을 채웠다면 CK20 이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0351.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색 발색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000165556-CDX2/tissue/Colon",
+   "asset_id": "HPA-CDX2_5840_A_9_3",
+   "text": "Human Protein Atlas, CDX2 / Colon (CC BY 4.0), https://images.proteinatlas.org/2221/5840_A_9_3.jpg"
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0359",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "예방의학·역학·보건통계 — 흡연으로 층화하자 사라진 커피와 폐암의 연관",
+  "type": "예방의학·역학·보건통계 — 흡연으로 층화하자 사라진 커피와 폐암의 연관",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-17",
+  "vignette": "A 58-year-old man asks his physician whether he should stop drinking coffee after reading about a cohort study of 6,000 adults followed for 10 years. In the study, the crude relative risk of lung cancer among daily coffee drinkers compared with non-drinkers was 2.1 (95% CI, 1.6-2.8). Daily coffee drinkers were three times more likely than non-drinkers to smoke cigarettes. When the analysis was stratified by smoking status, the relative risk for coffee drinking was 1.0 (95% CI, 0.7-1.4) among smokers and 1.0 (95% CI, 0.5-1.9) among nonsmokers. Losses to follow-up were less than 3% in both groups. He has smoked 1 pack of cigarettes daily for 30 years.",
+  "question": "Which of the following best explains the crude association between coffee drinking and lung cancer?",
+  "options": [
+   "Selection bias from loss to follow-up",
+   "Reverse causation",
+   "Confounding by smoking",
+   "Effect modification by smoking",
+   "Recall bias"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Smoking is associated with coffee drinking and is an independent cause of lung cancer, and it is not on the causal path from coffee to cancer. After stratifying by smoking, the relative risks in both strata are the same (1.0) and differ from the crude estimate (2.1). Equal stratum-specific estimates that differ from the crude estimate are the signature of confounding; the apparent association of coffee with lung cancer is explained by smoking.\n- 원리: <b>Three conditions for confounding</b>: a confounder is (1) associated with the exposure, (2) an independent risk factor for the outcome, and (3) not an intermediate step between exposure and outcome. Smoking meets all three here: coffee drinkers smoke more, smoking causes lung cancer, and coffee does not cause smoking-induced cancer through smoking.<br> <b>How stratification shows it</b>: stratifying holds the third variable constant. If the stratum-specific relative risks are similar to each other but different from the crude relative risk, the crude estimate was distorted by the third variable — confounding. The appropriate summary is an adjusted (Mantel-Haenszel) estimate, here about 1.0.<br> <b>Contrast with effect modification</b>: if the stratum-specific estimates differ from each other (for example 3.0 in smokers and 1.0 in nonsmokers), the effect of the exposure truly depends on the third variable. That is a real biologic finding to report separately for each stratum, not a bias to remove.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Confounding (answer)</th><th>Effect modification (closest distractor)</th></tr></thead><tbody> <tr><td>Stratum-specific RRs</td><td><b>Similar to each other</b> (1.0 and 1.0)</td><td>Different from each other (e.g., 3.0 vs 1.0)</td></tr> <tr><td>Versus crude RR</td><td>Differ from crude (2.1)</td><td>Crude lies between them</td></tr> <tr><td>Nature</td><td>Bias — a distortion to be removed</td><td>Real interaction — to be described</td></tr> <tr><td>Reporting</td><td>Adjusted (Mantel-Haenszel) estimate</td><td>Separate estimate for each stratum</td></tr> </tbody></table> Compare the strata with each other first: same → confounding; different → effect modification.\n- 오답 이유:\n  - (A) Selection bias from loss to follow-up would be correct if many participants were lost and the losses differed by both exposure and outcome; losses here were under 3%.\n  - (B) Reverse causation would be correct if early, undiagnosed disease changed the exposure, such as patients with preclinical cancer drinking less coffee.\n  - (D) Effect modification would be correct if the relative risks differed between strata, for example 3.0 among smokers and 1.0 among nonsmokers.\n  - (E) Recall bias would be correct in a case-control study in which cases remember past exposures differently from controls; this cohort measured exposure before the outcome.\n- 함정: Seeing results that change across smoking strata and calling it effect modification — the two strata agree with each other and differ only from the crude estimate.\n- 학습목표: 층화 분석에서 층별 상대위험도가 서로 같고 조(粗) 상대위험도와 다르면 교란, 층별 상대위험도가 서로 다르면 효과변경임을 구별한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. (Celentano DD, Szklo M). Ch. More on causal inference: bias, confounding, and interaction · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Ch. Stratified analysis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Smoking is associated with coffee drinking and is an independent cause of lung cancer, and it is not on the causal path from coffee to cancer. After stratifying by smoking, the relative risks in both strata are the same (1.0) and differ from the crude estimate (2.1). Equal stratum-specific estimates that differ from the crude estimate are the signature of confounding; the apparent association of coffee with lung cancer is explained by smoking."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Three conditions for confounding</b>: a confounder is (1) associated with the exposure, (2) an independent risk factor for the outcome, and (3) not an intermediate step between exposure and outcome. Smoking meets all three here: coffee drinkers smoke more, smoking causes lung cancer, and coffee does not cause smoking-induced cancer through smoking.<br> <b>How stratification shows it</b>: stratifying holds the third variable constant. If the stratum-specific relative risks are similar to each other but different from the crude relative risk, the crude estimate was distorted by the third variable — confounding. The appropriate summary is an adjusted (Mantel-Haenszel) estimate, here about 1.0.<br> <b>Contrast with effect modification</b>: if the stratum-specific estimates differ from each other (for example 3.0 in smokers and 1.0 in nonsmokers), the effect of the exposure truly depends on the third variable. That is a real biologic finding to report separately for each stratum, not a bias to remove."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Confounding (answer)</th><th>Effect modification (closest distractor)</th></tr></thead><tbody> <tr><td>Stratum-specific RRs</td><td><b>Similar to each other</b> (1.0 and 1.0)</td><td>Different from each other (e.g., 3.0 vs 1.0)</td></tr> <tr><td>Versus crude RR</td><td>Differ from crude (2.1)</td><td>Crude lies between them</td></tr> <tr><td>Nature</td><td>Bias — a distortion to be removed</td><td>Real interaction — to be described</td></tr> <tr><td>Reporting</td><td>Adjusted (Mantel-Haenszel) estimate</td><td>Separate estimate for each stratum</td></tr> </tbody></table> Compare the strata with each other first: same → confounding; different → effect modification."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Selection bias from loss to follow-up would be correct if many participants were lost and the losses differed by both exposure and outcome; losses here were under 3%.\n(B) Reverse causation would be correct if early, undiagnosed disease changed the exposure, such as patients with preclinical cancer drinking less coffee.\n(D) Effect modification would be correct if the relative risks differed between strata, for example 3.0 among smokers and 1.0 among nonsmokers.\n(E) Recall bias would be correct in a case-control study in which cases remember past exposures differently from controls; this cohort measured exposure before the outcome."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing results that change across smoking strata and calling it effect modification — the two strata agree with each other and differ only from the crude estimate."
+   },
+   {
+    "k": "학습목표",
+    "v": "층화 분석에서 층별 상대위험도가 서로 같고 조(粗) 상대위험도와 다르면 교란, 층별 상대위험도가 서로 다르면 효과변경임을 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. (Celentano DD, Szklo M). Ch. More on causal inference: bias, confounding, and interaction · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Ch. Stratified analysis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "층별 상대위험도가 1.0 으로 서로 같고 조 상대위험도 2.1 과 다르므로 흡연에 의한 교란이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "층끼리 비교 — 같으면 교란, 다르면 효과변경",
+   "steps": 3,
+   "chain": [
+    "흡연이 커피와 연관되고 폐암의 독립 원인이며 중간 단계가 아님 → 교란 후보",
+    "흡연으로 층화한 상대위험도 1.0·1.0 → 층끼리 같음",
+    "층별 값(1.0)이 조 상대위험도(2.1)와 다름 → 교란(효과변경 아님)"
+   ],
+   "key": [
+    {
+     "item": "crude relative risk of lung cancer among daily coffee drinkers compared with non-drinkers was 2.1",
+     "why": "비교 기준인 조 상대위험도",
+     "also": []
+    },
+    {
+     "item": "three times more likely than non-drinkers to smoke cigarettes",
+     "why": "노출과 제3변수의 연관",
+     "also": []
+    },
+    {
+     "item": "1.0 (95% CI, 0.7-1.4) among smokers and 1.0 (95% CI, 0.5-1.9) among nonsmokers",
+     "why": "층별 값이 같고 조 값과 다르다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Losses to follow-up were less than 3%",
+     "why": "추적 소실 선택 비뚤림 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "cohort study",
+     "why": "노출을 결과 전에 측정 — 회상 비뚤림 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "smoked 1 pack of cigarettes daily for 30 years",
+     "why": "상담 맥락 — 해석에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "흡연은 커피 섭취와 연관되고 폐암의 독립 원인이다. 흡연으로 층화하자 두 층의 상대위험도가 모두 1.0 으로 같고 조 상대위험도 2.1 과 달라졌으므로, 커피와 폐암의 조 연관은 흡연에 의한 교란이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "층별 상대위험도가 흡연자 3.0, 비흡연자 1.0 처럼 서로 달랐다면 효과변경이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0358",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "약리 — 와파린 복용 중 방광염 치료 뒤 INR 상승",
+  "type": "약리 — 와파린 복용 중 방광염 치료 뒤 INR 상승",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-17",
+  "vignette": "A 68-year-old woman comes to the physician because of easy bruising and bleeding gums for 3 days. She has atrial fibrillation treated with warfarin, and her INR has been stable between 2.0 and 3.0 for the past year. Eight days ago, she began a 10-day course of trimethoprim-sulfamethoxazole for acute cystitis. She has not changed her diet or other medications. Pulse is 84/min and irregularly irregular, and blood pressure is 132/80 mm Hg. Several ecchymoses are present on the forearms. INR is 6.8, hemoglobin concentration is 12.4 g/dL, platelet count is 230,000/mm3, and serum creatinine concentration is 0.9 mg/dL.",
+  "question": "Which of the following is the most likely mechanism of the change in her INR?",
+  "options": [
+   "Inhibition of hepatic CYP2C9",
+   "Displacement of warfarin from albumin binding sites",
+   "Induction of hepatic CYP3A4",
+   "Decreased renal excretion of warfarin",
+   "Inhibition of platelet cyclooxygenase"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Sulfamethoxazole inhibits CYP2C9, the enzyme that metabolizes S-warfarin, the more potent enantiomer. Its clearance falls, the free S-warfarin concentration rises, and the INR climbs within several days of starting the antibiotic. Normal platelet count and renal function and the unchanged diet point to a pharmacokinetic interaction rather than another cause of bleeding.\n- 원리: <b>Why CYP2C9 matters most</b>: warfarin is a racemic mixture. S-warfarin is 3-5 times more potent as a vitamin K epoxide reductase inhibitor and is cleared almost entirely by CYP2C9; R-warfarin is cleared by CYP3A4 and CYP1A2. A drug that inhibits CYP2C9 (sulfamethoxazole, metronidazole, fluconazole, amiodarone) therefore raises the INR much more than one that affects only R-warfarin.<br> <b>Why protein-binding displacement is not the main answer</b>: displacement transiently raises the free fraction, but free drug is then cleared faster, so the free concentration returns to baseline within a few half-lives. Sustained INR rise over a week requires reduced clearance.<br> <b>Time course</b>: the INR reflects depletion of clotting factors (factor VII first, prothrombin last), so it rises over 3-5 days after the interacting drug is started — matching this case.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CYP2C9 inhibition (answer)</th><th>Albumin displacement (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on clearance</td><td><b>Decreased</b> — S-warfarin accumulates</td><td>Unchanged or increased</td></tr> <tr><td>Free drug level</td><td>Stays high while the inhibitor is given</td><td>Transient rise, returns to baseline</td></tr> <tr><td>Clinical importance</td><td>Major, predictable — reduce warfarin dose</td><td>Minor, short-lived</td></tr> </tbody></table> A sustained INR rise over days means reduced metabolism, not displacement.\n- 오답 이유:\n  - (B) Displacement from albumin contributes briefly, but it would be the main explanation only if the INR rose transiently and fell back despite continuing both drugs.\n  - (C) Induction of CYP3A4 would be correct for a falling INR after starting rifampin or carbamazepine, which speed warfarin clearance.\n  - (D) Decreased renal excretion is not relevant because warfarin is cleared by hepatic metabolism; it would matter for dabigatran in kidney failure.\n  - (E) Platelet cyclooxygenase inhibition explains bleeding with aspirin or NSAIDs, but it does not prolong the INR.\n- 함정: Recalling sulfonamides as albumin-displacing drugs — displacement is transient; the sustained INR rise comes from CYP2C9 inhibition.\n- 학습목표: 와파린 복용 중 설파메톡사졸 추가 뒤 INR 이 오른 주된 기전이 S-와파린을 대사하는 CYP2C9 억제임을 안다\n- 근거·출처: Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. Blood coagulation and anticoagulant drugs — warfarin interactions · Holbrook AM, et al. Systematic overview of warfarin and its drug and food interactions. Arch Intern Med 2005;165:1095-1106",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sulfamethoxazole inhibits CYP2C9, the enzyme that metabolizes S-warfarin, the more potent enantiomer. Its clearance falls, the free S-warfarin concentration rises, and the INR climbs within several days of starting the antibiotic. Normal platelet count and renal function and the unchanged diet point to a pharmacokinetic interaction rather than another cause of bleeding."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why CYP2C9 matters most</b>: warfarin is a racemic mixture. S-warfarin is 3-5 times more potent as a vitamin K epoxide reductase inhibitor and is cleared almost entirely by CYP2C9; R-warfarin is cleared by CYP3A4 and CYP1A2. A drug that inhibits CYP2C9 (sulfamethoxazole, metronidazole, fluconazole, amiodarone) therefore raises the INR much more than one that affects only R-warfarin.<br> <b>Why protein-binding displacement is not the main answer</b>: displacement transiently raises the free fraction, but free drug is then cleared faster, so the free concentration returns to baseline within a few half-lives. Sustained INR rise over a week requires reduced clearance.<br> <b>Time course</b>: the INR reflects depletion of clotting factors (factor VII first, prothrombin last), so it rises over 3-5 days after the interacting drug is started — matching this case."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CYP2C9 inhibition (answer)</th><th>Albumin displacement (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on clearance</td><td><b>Decreased</b> — S-warfarin accumulates</td><td>Unchanged or increased</td></tr> <tr><td>Free drug level</td><td>Stays high while the inhibitor is given</td><td>Transient rise, returns to baseline</td></tr> <tr><td>Clinical importance</td><td>Major, predictable — reduce warfarin dose</td><td>Minor, short-lived</td></tr> </tbody></table> A sustained INR rise over days means reduced metabolism, not displacement."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Displacement from albumin contributes briefly, but it would be the main explanation only if the INR rose transiently and fell back despite continuing both drugs.\n(C) Induction of CYP3A4 would be correct for a falling INR after starting rifampin or carbamazepine, which speed warfarin clearance.\n(D) Decreased renal excretion is not relevant because warfarin is cleared by hepatic metabolism; it would matter for dabigatran in kidney failure.\n(E) Platelet cyclooxygenase inhibition explains bleeding with aspirin or NSAIDs, but it does not prolong the INR."
+   },
+   {
+    "k": "함정",
+    "v": "Recalling sulfonamides as albumin-displacing drugs — displacement is transient; the sustained INR rise comes from CYP2C9 inhibition."
+   },
+   {
+    "k": "학습목표",
+    "v": "와파린 복용 중 설파메톡사졸 추가 뒤 INR 이 오른 주된 기전이 S-와파린을 대사하는 CYP2C9 억제임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. Blood coagulation and anticoagulant drugs — warfarin interactions · Holbrook AM, et al. Systematic overview of warfarin and its drug and food interactions. Arch Intern Med 2005;165:1095-1106"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "설파메톡사졸이 S-와파린을 대사하는 CYP2C9 를 억제해 와파린 청소율이 떨어지고 INR 이 올랐다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "며칠에 걸친 지속 상승은 대사 감소 — 알부민 치환은 일시적이다",
+   "steps": 2,
+   "chain": [
+    "안정된 INR + 식이·다른 약 변화 없음 + TMP-SMX 시작 8일 뒤 INR 6.8 → 약물 상호작용",
+    "설파메톡사졸 → CYP2C9 억제 → S-와파린 청소율 감소"
+   ],
+   "key": [
+    {
+     "item": "INR has been stable between 2.0 and 3.0",
+     "why": "새 원인이 생겼음을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "trimethoprim-sulfamethoxazole",
+     "why": "CYP2C9 억제 약물",
+     "also": []
+    },
+    {
+     "item": "INR is 6.8",
+     "why": "와파린 효과 증강",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has not changed her diet",
+     "why": "비타민 K 섭취 변화 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "platelet count is 230,000",
+     "why": "혈소판 원인 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "serum creatinine concentration is 0.9 mg/dL",
+     "why": "와파린은 간 대사 — 콩팥 기능은 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "INR 이 1년간 안정적이던 와파린 복용자가 TMP-SMX 를 시작한 뒤 INR 6.8 로 올랐다. 설파메톡사졸이 S-와파린을 대사하는 CYP2C9 를 억제해 청소율이 떨어진 것이 주된 기전이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "항생제가 리팜핀이었고 INR 이 1.3 으로 떨어졌다면 간 효소 유도(CYP3A4·2C9)가 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0357",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "순환기 — 감기 뒤 누우면 심해지는 날카로운 흉통",
+  "type": "순환기 — 감기 뒤 누우면 심해지는 날카로운 흉통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-17",
+  "vignette": "A 29-year-old man comes to the emergency department because of sharp chest pain for 2 days. The pain is worse when he lies down or takes a deep breath and improves when he sits forward. He had a sore throat and runny nose 10 days ago. He takes no medications. Temperature is 37.9°C (100.2°F), pulse is 96/min, and blood pressure is 124/78 mm Hg. A high-pitched scratching sound is heard at the left lower sternal border with the patient leaning forward. Jugular venous pressure is normal, and there is no pulsus paradoxus. An ECG shows diffuse concave ST-segment elevation with PR-segment depression. Serum troponin I concentration is within the reference range. Echocardiography shows a trivial pericardial effusion and normal ventricular function.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Intravenous heparin infusion",
+   "Intravenous ceftriaxone and vancomycin",
+   "Metoprolol and sublingual nitroglycerin",
+   "High-dose aspirin plus colchicine",
+   "Oral prednisone"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Positional pleuritic chest pain after a viral illness, a pericardial friction rub, and diffuse concave ST elevation with PR depression establish acute pericarditis. Normal troponin, normal ventricular function, normal jugular venous pressure, and no pulsus paradoxus exclude myocarditis and tamponade. First-line therapy is a high-dose NSAID or aspirin plus colchicine for 3 months, which shortens symptoms and halves the recurrence rate.\n- 원리: <b>Why the pain and ECG look this way</b>: inflamed visceral and parietal pericardium rub against each other and irritate the phrenic nerve territory, so the pain is sharp, worse supine or with inspiration, and relieved by leaning forward. Inflammation of the subepicardial myocardium produces ST elevation in many leads that is concave and does not follow one coronary territory; atrial injury produces PR depression.<br> <b>Why aspirin plus colchicine</b>: NSAIDs (or high-dose aspirin) treat the pain and inflammation. Colchicine inhibits microtubule polymerization in neutrophils and blocks NLRP3 inflammasome activation; added for 3 months it reduces incessant and recurrent pericarditis by about half.<br> <b>Why not glucocorticoids first</b>: steroids relieve symptoms quickly but increase recurrence, probably by allowing viral persistence and causing rebound on taper. They are reserved for contraindication to NSAIDs, autoimmune or uremic causes, or pregnancy.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Aspirin/NSAID + colchicine (answer)</th><th>Prednisone (closest distractor)</th></tr></thead><tbody> <tr><td>Use</td><td>First line for viral/idiopathic pericarditis</td><td>Second line — NSAID contraindication, autoimmune disease, pregnancy</td></tr> <tr><td>Recurrence</td><td><b>Reduced</b> (colchicine halves it)</td><td>Increased, especially at high dose</td></tr> <tr><td>Duration</td><td>NSAID 1-2 weeks with taper; colchicine 3 months</td><td>Slow taper over weeks to months</td></tr> </tbody></table> If the patient had lupus or could not take NSAIDs, low-dose prednisone plus colchicine would be chosen.\n- 오답 이유:\n  - (A) Heparin would be correct for an acute coronary syndrome with ischemic ST elevation in one territory and rising troponin; in pericarditis it risks hemopericardium.\n  - (B) Ceftriaxone and vancomycin would be correct for purulent bacterial pericarditis with high fever, sepsis, and a large effusion showing pus on pericardiocentesis.\n  - (C) Metoprolol and nitroglycerin would be correct for ischemic chest pain from coronary disease, which is pressure-like and does not change with position.\n  - (E) Prednisone would be correct for pericarditis due to systemic lupus erythematosus or when NSAIDs are contraindicated, such as in severe renal disease or active peptic ulcer.\n- 함정: Seeing ST elevation and treating a myocardial infarction — the elevation is diffuse and concave with PR depression, and troponin is normal.\n- 학습목표: 자세에 따라 변하는 흉막성 흉통·마찰음·광범위 ST 상승과 PR 하강으로 급성 특발성 심낭염을 진단하고, 아스피린(NSAID)과 콜히친을 1차로 쓴다\n- 근거·출처: Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964 · Imazio M, et al. A randomized trial of colchicine for acute pericarditis (ICAP). N Engl J Med 2013;369:1522-1528",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Positional pleuritic chest pain after a viral illness, a pericardial friction rub, and diffuse concave ST elevation with PR depression establish acute pericarditis. Normal troponin, normal ventricular function, normal jugular venous pressure, and no pulsus paradoxus exclude myocarditis and tamponade. First-line therapy is a high-dose NSAID or aspirin plus colchicine for 3 months, which shortens symptoms and halves the recurrence rate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the pain and ECG look this way</b>: inflamed visceral and parietal pericardium rub against each other and irritate the phrenic nerve territory, so the pain is sharp, worse supine or with inspiration, and relieved by leaning forward. Inflammation of the subepicardial myocardium produces ST elevation in many leads that is concave and does not follow one coronary territory; atrial injury produces PR depression.<br> <b>Why aspirin plus colchicine</b>: NSAIDs (or high-dose aspirin) treat the pain and inflammation. Colchicine inhibits microtubule polymerization in neutrophils and blocks NLRP3 inflammasome activation; added for 3 months it reduces incessant and recurrent pericarditis by about half.<br> <b>Why not glucocorticoids first</b>: steroids relieve symptoms quickly but increase recurrence, probably by allowing viral persistence and causing rebound on taper. They are reserved for contraindication to NSAIDs, autoimmune or uremic causes, or pregnancy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Aspirin/NSAID + colchicine (answer)</th><th>Prednisone (closest distractor)</th></tr></thead><tbody> <tr><td>Use</td><td>First line for viral/idiopathic pericarditis</td><td>Second line — NSAID contraindication, autoimmune disease, pregnancy</td></tr> <tr><td>Recurrence</td><td><b>Reduced</b> (colchicine halves it)</td><td>Increased, especially at high dose</td></tr> <tr><td>Duration</td><td>NSAID 1-2 weeks with taper; colchicine 3 months</td><td>Slow taper over weeks to months</td></tr> </tbody></table> If the patient had lupus or could not take NSAIDs, low-dose prednisone plus colchicine would be chosen."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Heparin would be correct for an acute coronary syndrome with ischemic ST elevation in one territory and rising troponin; in pericarditis it risks hemopericardium.\n(B) Ceftriaxone and vancomycin would be correct for purulent bacterial pericarditis with high fever, sepsis, and a large effusion showing pus on pericardiocentesis.\n(C) Metoprolol and nitroglycerin would be correct for ischemic chest pain from coronary disease, which is pressure-like and does not change with position.\n(E) Prednisone would be correct for pericarditis due to systemic lupus erythematosus or when NSAIDs are contraindicated, such as in severe renal disease or active peptic ulcer."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing ST elevation and treating a myocardial infarction — the elevation is diffuse and concave with PR depression, and troponin is normal."
+   },
+   {
+    "k": "학습목표",
+    "v": "자세에 따라 변하는 흉막성 흉통·마찰음·광범위 ST 상승과 PR 하강으로 급성 특발성 심낭염을 진단하고, 아스피린(NSAID)과 콜히친을 1차로 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964 · Imazio M, et al. A randomized trial of colchicine for acute pericarditis (ICAP). N Engl J Med 2013;369:1522-1528"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "자세성 흉막성 흉통·마찰음·광범위 오목 ST 상승과 PR 하강에 정상 트로포닌이면 급성 특발성 심낭염이므로 아스피린과 콜히친을 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "합병증·자가면역 원인이 없는 1차 치료에서는 재발을 늘리는 스테로이드를 쓰지 않는다",
+   "steps": 2,
+   "chain": [
+    "감기 뒤 자세성 흉통 + 마찰음 + 광범위 오목 ST 상승·PR 하강 + 정상 트로포닌 → 급성 바이러스성(특발성) 심낭염",
+    "합병증·자가면역 원인 없음 → 고용량 아스피린(NSAID) + 콜히친"
+   ],
+   "key": [
+    {
+     "item": "worse when he lies down or takes a deep breath",
+     "why": "심낭염의 자세성 흉통",
+     "also": []
+    },
+    {
+     "item": "high-pitched scratching sound",
+     "why": "심낭 마찰음",
+     "also": []
+    },
+    {
+     "item": "diffuse concave ST-segment elevation with PR-segment depression",
+     "why": "심낭염 심전도",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "troponin I concentration is within the reference range",
+     "why": "심근경색·심근염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no pulsus paradoxus",
+     "why": "심장눌림증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He takes no medications",
+     "why": "NSAID 금기 약물 없음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "sore throat and runny nose 10 days ago",
+     "why": "바이러스 원인 시사 — 치료 선택에는 영향 적음",
+     "also": []
+    }
+   ],
+   "summary": "감기 뒤 자세에 따라 변하는 흉막성 흉통, 심낭 마찰음, 광범위 오목 ST 상승과 PR 하강, 정상 트로포닌은 합병증 없는 급성 심낭염이다. 1차 치료는 고용량 아스피린(NSAID)과 3개월 콜히친이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "루푸스 같은 자가면역 원인이 있거나 NSAID 를 쓸 수 없다면 저용량 프레드니손(콜히친과 함께)이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0356",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "정신 — 골절 입원 사흘째 밤의 환시와 자율신경 항진",
+  "type": "정신 — 골절 입원 사흘째 밤의 환시와 자율신경 항진",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-17",
+  "vignette": "52세 남자가 넙다리뼈 골절로 정형외과에 입원한 지 3일째 밤부터 안절부절못하고 벽에 벌레가 기어 다닌다고 소리친다. 20년 동안 매일 소주 2병을 마셨고 입원 전날까지 마셨다. 혈압 168/98 mmHg, 맥박 124회/분, 호흡수 22회/분, 체온 38.0℃이다. 땀을 많이 흘리고 손을 떨며, 날짜와 장소를 대지 못한다. 혈당 112 mg/dL, 나트륨 138 mEq/L, AST 96 U/L, ALT 48 U/L이다. 입원 때부터 티아민을 맞고 있다.",
+  "question": "가장 적절한 약물 치료는?",
+  "options": [
+   "근육 할로페리돌",
+   "경구 날트렉손",
+   "경구 아캄프로세이트",
+   "경구 디설피람",
+   "정맥 로라제팜"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 마지막 음주 뒤 48~96시간에 지남력 장애·환시와 함께 빈맥·고혈압·발열·발한·떨림이 나타났으므로 알코올 금단 섬망이다. 치료의 중심은 GABA-A 수용체에서 알코올을 대신하는 벤조디아제핀이며, AST 가 오른 간 손상 환자에서는 활성 대사물이 없는 로라제팜을 정맥으로 준다.\n- 원리: <b>왜 금단 증상이 생기는가</b>: 오래 마신 알코올은 억제성 GABA-A 수용체를 계속 자극하고 흥분성 NMDA 수용체를 억제한다. 뇌는 이에 적응해 GABA-A 반응을 낮추고 NMDA 수용체를 늘린다. 술을 끊으면 억제는 사라지고 늘어난 흥분만 남아 떨림·발한·빈맥·고혈압·경련, 심하면 섬망이 생긴다.<br> <b>시간 순서</b>: 떨림·불안은 6~24시간, 금단 경련은 12~48시간, 섬망(진전섬망)은 48~96시간에 정점을 이룬다. 입원 사흘째 밤은 섬망의 전형적 시점이다.<br> <b>왜 벤조디아제핀인가</b>: 같은 GABA-A 수용체를 자극해 알코올이 하던 억제를 대신하므로 자율신경 항진과 경련을 함께 막고 사망률을 낮춘다. 간 기능이 나쁘면 간 산화가 필요 없이 포합만 받는 로라제팜이 안전하다. 티아민은 베르니케 뇌병증 예방이지 금단 치료가 아니다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">로라제팜(정답)</th><th>할로페리돌(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>GABA-A 양성 조절 — 알코올을 대신함</td><td>도파민 D2 차단</td></tr> <tr><td>자율신경 항진</td><td><b>가라앉힘</b></td><td>가라앉히지 못함</td></tr> <tr><td>경련</td><td>예방</td><td>경련 역치를 낮춤</td></tr> <tr><td>쓰는 자리</td><td>금단 섬망의 1차 치료</td><td>벤조디아제핀 충분량에도 남는 환각·초조의 보조</td></tr> </tbody></table> 환각만 보고 항정신병약을 고르면 금단 자체는 치료되지 않는다 — 원인이 GABA 결핍이다.\n- 오답 이유:\n  - ① 할로페리돌은 벤조디아제핀을 충분히 준 뒤에도 환각·초조가 남을 때 보조로 쓰며, 금단이 아닌 섬망에서는 1차 약이 될 수 있다.\n  - ② 날트렉손은 금단이 끝나고 금주를 유지하며 갈망을 줄이려 할 때 쓰며, 간효소가 크게 오른 경우는 피한다.\n  - ③ 아캄프로세이트는 해독이 끝난 뒤 금주 유지용이며, 간 질환이 있어도 쓸 수 있으나 콩팥 기능에 따라 용량을 줄인다.\n  - ④ 디설피람은 해독 뒤 동기가 강한 환자의 금주 유지용이며, 섬망 중이거나 술을 마신 직후에 주면 위험하다.\n- 함정: 환시와 초조만 보고 항정신병약을 고르는 것 — 빈맥·고혈압·발열·떨림이 함께 있으면 GABA 결핍인 금단 섬망이다.\n- 학습목표: 입원 2~4일째 생긴 환시·자율신경 항진·지남력 장애를 알코올 금단 섬망으로 진단하고 벤조디아제핀으로 치료한다\n- 근거·출처: Schuckit MA. Recognition and management of withdrawal delirium (delirium tremens). N Engl J Med 2014;371:2109-2113 · American Society of Addiction Medicine. The ASAM Clinical Practice Guideline on Alcohol Withdrawal Management. J Addict Med 2020;14(3S Suppl 1):1-72",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "마지막 음주 뒤 48~96시간에 지남력 장애·환시와 함께 빈맥·고혈압·발열·발한·떨림이 나타났으므로 알코올 금단 섬망이다. 치료의 중심은 GABA-A 수용체에서 알코올을 대신하는 벤조디아제핀이며, AST 가 오른 간 손상 환자에서는 활성 대사물이 없는 로라제팜을 정맥으로 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 금단 증상이 생기는가</b>: 오래 마신 알코올은 억제성 GABA-A 수용체를 계속 자극하고 흥분성 NMDA 수용체를 억제한다. 뇌는 이에 적응해 GABA-A 반응을 낮추고 NMDA 수용체를 늘린다. 술을 끊으면 억제는 사라지고 늘어난 흥분만 남아 떨림·발한·빈맥·고혈압·경련, 심하면 섬망이 생긴다.<br> <b>시간 순서</b>: 떨림·불안은 6~24시간, 금단 경련은 12~48시간, 섬망(진전섬망)은 48~96시간에 정점을 이룬다. 입원 사흘째 밤은 섬망의 전형적 시점이다.<br> <b>왜 벤조디아제핀인가</b>: 같은 GABA-A 수용체를 자극해 알코올이 하던 억제를 대신하므로 자율신경 항진과 경련을 함께 막고 사망률을 낮춘다. 간 기능이 나쁘면 간 산화가 필요 없이 포합만 받는 로라제팜이 안전하다. 티아민은 베르니케 뇌병증 예방이지 금단 치료가 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">로라제팜(정답)</th><th>할로페리돌(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>GABA-A 양성 조절 — 알코올을 대신함</td><td>도파민 D2 차단</td></tr> <tr><td>자율신경 항진</td><td><b>가라앉힘</b></td><td>가라앉히지 못함</td></tr> <tr><td>경련</td><td>예방</td><td>경련 역치를 낮춤</td></tr> <tr><td>쓰는 자리</td><td>금단 섬망의 1차 치료</td><td>벤조디아제핀 충분량에도 남는 환각·초조의 보조</td></tr> </tbody></table> 환각만 보고 항정신병약을 고르면 금단 자체는 치료되지 않는다 — 원인이 GABA 결핍이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 할로페리돌은 벤조디아제핀을 충분히 준 뒤에도 환각·초조가 남을 때 보조로 쓰며, 금단이 아닌 섬망에서는 1차 약이 될 수 있다.\n② 날트렉손은 금단이 끝나고 금주를 유지하며 갈망을 줄이려 할 때 쓰며, 간효소가 크게 오른 경우는 피한다.\n③ 아캄프로세이트는 해독이 끝난 뒤 금주 유지용이며, 간 질환이 있어도 쓸 수 있으나 콩팥 기능에 따라 용량을 줄인다.\n④ 디설피람은 해독 뒤 동기가 강한 환자의 금주 유지용이며, 섬망 중이거나 술을 마신 직후에 주면 위험하다."
+   },
+   {
+    "k": "함정",
+    "v": "환시와 초조만 보고 항정신병약을 고르는 것 — 빈맥·고혈압·발열·떨림이 함께 있으면 GABA 결핍인 금단 섬망이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "입원 2~4일째 생긴 환시·자율신경 항진·지남력 장애를 알코올 금단 섬망으로 진단하고 벤조디아제핀으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Schuckit MA. Recognition and management of withdrawal delirium (delirium tremens). N Engl J Med 2014;371:2109-2113 · American Society of Addiction Medicine. The ASAM Clinical Practice Guideline on Alcohol Withdrawal Management. J Addict Med 2020;14(3S Suppl 1):1-72"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "마지막 음주 3일 뒤의 지남력 장애·환시와 자율신경 항진은 알코올 금단 섬망이므로 벤조디아제핀(간 손상이 있어 로라제팜)을 준다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "빈맥·고혈압·발열·발한·떨림 — 단순 섬망이 아니라 GABA 결핍 금단",
+   "steps": 2,
+   "chain": [
+    "매일 과음 + 입원으로 중단 3일째 + 환시·지남력 장애 + 자율신경 항진 → 알코올 금단 섬망",
+    "금단 섬망 → 벤조디아제핀, AST 상승한 간 손상 → 로라제팜"
+   ],
+   "key": [
+    {
+     "item": "입원 전날까지 마셨다",
+     "why": "중단 시점 — 사흘째가 섬망 정점",
+     "also": []
+    },
+    {
+     "item": "벽에 벌레가 기어 다닌다",
+     "why": "환시",
+     "also": []
+    },
+    {
+     "item": "날짜와 장소를 대지 못한다",
+     "why": "지남력 장애 — 섬망",
+     "also": []
+    },
+    {
+     "item": "맥박 124회/분",
+     "why": "자율신경 항진",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈당 112 mg/dL",
+     "why": "저혈당 섬망 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "나트륨 138 mEq/L",
+     "why": "저나트륨 섬망 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "AST 96 U/L",
+     "why": "간 손상 — 로라제팜 선택 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "티아민을 맞고 있다",
+     "why": "베르니케 예방 — 금단 치료는 아니다",
+     "also": []
+    }
+   ],
+   "summary": "입원으로 술을 끊은 지 사흘째 밤에 환시·지남력 장애와 빈맥·고혈압·발열·떨림이 생겼다. 알코올 금단 섬망이므로 벤조디아제핀을 주며, 간 손상이 있어 로라제팜을 고른다.",
+   "switch": {
+    "choice": "A",
+    "condition": "충분한 벤조디아제핀으로 자율신경 항진이 가라앉았는데도 환각·초조가 남는다면 할로페리돌을 보조로 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0355",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "이비인후과 — 아침에 갑자기 한쪽 귀가 들리지 않는 성인",
+  "type": "이비인후과 — 아침에 갑자기 한쪽 귀가 들리지 않는 성인",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-17",
+  "vignette": "45세 남자가 오늘 아침 일어났을 때 갑자기 오른쪽 귀가 먹먹하고 잘 들리지 않아 왔다. 오른쪽 귀에 이명이 있으나 어지럼, 귀 통증, 귀 분비물은 없다. 최근 감기 증상은 없었다. 혈압 128/80 mmHg, 맥박 76회/분, 체온 36.6℃이다. 이경검사에서 양쪽 고막은 정상이다. 512 Hz 소리굽쇠 검사에서 웨버 검사는 왼쪽으로 편위되고, 린네 검사는 양쪽 모두 기도전도가 골전도보다 길다. 순음청력검사에서 오른쪽 귀에 연속된 세 주파수에서 40 dB 감각신경성 난청이 있다. 다른 뇌신경 진찰은 정상이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "고막 절개와 환기관 삽입",
+   "3개월 뒤 청력검사를 다시 하며 경과 관찰",
+   "경구 고용량 글루코코르티코이드",
+   "경구 발라시클로비르 단독",
+   "경구 항히스타민제와 비충혈제거제"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 72시간 안에 생긴 연속 세 주파수 30 dB 이상의 감각신경성 난청이므로 돌발성 감각신경성 난청이다. 웨버 검사가 건강한 왼쪽으로 편위되고 린네 검사가 양쪽 양성이어서 전음성이 아닌 감각신경성이 확인된다. 발병 2주 안, 특히 빠를수록 고용량 글루코코르티코이드를 준다.\n- 원리: <b>소리굽쇠 두 검사로 종류를 가르는 원리</b>: 전음성 난청에서는 바깥 소음이 가려져 골전도가 상대적으로 잘 들리므로 웨버 검사가 <b>나쁜 귀</b>로 편위되고 린네 검사에서 골전도가 기도전도보다 길다(음성). 감각신경성 난청에서는 달팽이관·청신경 자체가 약해 웨버 검사가 <b>좋은 귀</b>로 편위되고 린네 검사는 양성으로 남는다.<br> <b>왜 스테로이드인가</b>: 돌발성 감각신경성 난청의 원인은 대부분 밝혀지지 않으며 바이러스 염증·미세순환 장애·면역 기전이 제시된다. 글루코코르티코이드는 달팽이관의 염증과 부종을 줄일 것으로 보고, 발병 뒤 빨리 시작할수록 회복 가능성이 높아 진료지침이 2주 안 투여를 권한다. 경구 투여가 어렵거나 반응이 부족하면 고실 내 주입을 쓴다.<br> <b>함께 할 일</b>: 한쪽 비대칭 감각신경성 난청이므로 전정신경집종 같은 후미로 병변을 찾기 위해 MRI 를 시행한다. 항바이러스제 단독은 효과가 입증되지 않았다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">돌발성 감각신경성 난청(정답 — 스테로이드)</th><th>귀관 기능장애·중이 삼출(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>웨버 검사</td><td><b>좋은 귀</b>(왼쪽)로 편위</td><td>나쁜 귀로 편위</td></tr> <tr><td>린네 검사(병측)</td><td>양성(기도 &gt; 골)</td><td>음성(골 &gt; 기도)</td></tr> <tr><td>고막</td><td>정상</td><td>함몰·혼탁·기포·액체선</td></tr> <tr><td>처치</td><td>2주 안 고용량 스테로이드 + MRI</td><td>경과 관찰, 지속 시 환기관</td></tr> </tbody></table> 「먹먹하다」는 호소는 둘 다 같다 — 소리굽쇠 결과와 고막 소견이 가른다.\n- 오답 이유:\n  - ① 환기관 삽입은 3개월 이상 지속하는 중이 삼출로 전음성 난청이 있고 웨버가 나쁜 귀로 편위될 때 정답이 된다.\n  - ② 경과 관찰은 청력 손실이 30 dB 미만이거나 발병 6주가 지나 치료 이득이 거의 없을 때 고려한다.\n  - ④ 발라시클로비르는 대상포진이 귓바퀴 물집과 안면마비를 동반할 때(람세이 헌트 증후군) 스테로이드와 함께 쓸 때 정답이 된다.\n  - ⑤ 항히스타민제와 비충혈제거제는 감기 뒤 귀관 기능장애로 고막이 함몰되고 전음성 난청이 있을 때 흔히 쓰지만 효과 근거는 약하다.\n- 함정: 「귀가 먹먹하다」는 말에 중이 삼출을 떠올려 비충혈제거제나 환기관을 고르는 것 — 웨버가 좋은 귀로 가고 린네가 양성이면 감각신경성이다.\n- 학습목표: 갑자기 생긴 한쪽 난청에서 소리굽쇠 검사로 감각신경성을 확인하고, 돌발성 감각신경성 난청에 조기 글루코코르티코이드를 준다\n- 근거·출처: Chandrasekhar SS, et al. Clinical Practice Guideline: Sudden Hearing Loss (Update). Otolaryngol Head Neck Surg 2019;161(1 Suppl):S1-S45 · Flint PW, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Sudden sensorineural hearing loss",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "72시간 안에 생긴 연속 세 주파수 30 dB 이상의 감각신경성 난청이므로 돌발성 감각신경성 난청이다. 웨버 검사가 건강한 왼쪽으로 편위되고 린네 검사가 양쪽 양성이어서 전음성이 아닌 감각신경성이 확인된다. 발병 2주 안, 특히 빠를수록 고용량 글루코코르티코이드를 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>소리굽쇠 두 검사로 종류를 가르는 원리</b>: 전음성 난청에서는 바깥 소음이 가려져 골전도가 상대적으로 잘 들리므로 웨버 검사가 <b>나쁜 귀</b>로 편위되고 린네 검사에서 골전도가 기도전도보다 길다(음성). 감각신경성 난청에서는 달팽이관·청신경 자체가 약해 웨버 검사가 <b>좋은 귀</b>로 편위되고 린네 검사는 양성으로 남는다.<br> <b>왜 스테로이드인가</b>: 돌발성 감각신경성 난청의 원인은 대부분 밝혀지지 않으며 바이러스 염증·미세순환 장애·면역 기전이 제시된다. 글루코코르티코이드는 달팽이관의 염증과 부종을 줄일 것으로 보고, 발병 뒤 빨리 시작할수록 회복 가능성이 높아 진료지침이 2주 안 투여를 권한다. 경구 투여가 어렵거나 반응이 부족하면 고실 내 주입을 쓴다.<br> <b>함께 할 일</b>: 한쪽 비대칭 감각신경성 난청이므로 전정신경집종 같은 후미로 병변을 찾기 위해 MRI 를 시행한다. 항바이러스제 단독은 효과가 입증되지 않았다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">돌발성 감각신경성 난청(정답 — 스테로이드)</th><th>귀관 기능장애·중이 삼출(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>웨버 검사</td><td><b>좋은 귀</b>(왼쪽)로 편위</td><td>나쁜 귀로 편위</td></tr> <tr><td>린네 검사(병측)</td><td>양성(기도 &gt; 골)</td><td>음성(골 &gt; 기도)</td></tr> <tr><td>고막</td><td>정상</td><td>함몰·혼탁·기포·액체선</td></tr> <tr><td>처치</td><td>2주 안 고용량 스테로이드 + MRI</td><td>경과 관찰, 지속 시 환기관</td></tr> </tbody></table> 「먹먹하다」는 호소는 둘 다 같다 — 소리굽쇠 결과와 고막 소견이 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 환기관 삽입은 3개월 이상 지속하는 중이 삼출로 전음성 난청이 있고 웨버가 나쁜 귀로 편위될 때 정답이 된다.\n② 경과 관찰은 청력 손실이 30 dB 미만이거나 발병 6주가 지나 치료 이득이 거의 없을 때 고려한다.\n④ 발라시클로비르는 대상포진이 귓바퀴 물집과 안면마비를 동반할 때(람세이 헌트 증후군) 스테로이드와 함께 쓸 때 정답이 된다.\n⑤ 항히스타민제와 비충혈제거제는 감기 뒤 귀관 기능장애로 고막이 함몰되고 전음성 난청이 있을 때 흔히 쓰지만 효과 근거는 약하다."
+   },
+   {
+    "k": "함정",
+    "v": "「귀가 먹먹하다」는 말에 중이 삼출을 떠올려 비충혈제거제나 환기관을 고르는 것 — 웨버가 좋은 귀로 가고 린네가 양성이면 감각신경성이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑자기 생긴 한쪽 난청에서 소리굽쇠 검사로 감각신경성을 확인하고, 돌발성 감각신경성 난청에 조기 글루코코르티코이드를 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Chandrasekhar SS, et al. Clinical Practice Guideline: Sudden Hearing Loss (Update). Otolaryngol Head Neck Surg 2019;161(1 Suppl):S1-S45 · Flint PW, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Sudden sensorineural hearing loss"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "소리굽쇠 검사와 순음청력검사로 확인한 갑작스러운 한쪽 감각신경성 난청이므로 고용량 글루코코르티코이드를 바로 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "웨버가 좋은 귀로 편위되고 린네가 양성 — 전음성이 아니다",
+   "steps": 2,
+   "chain": [
+    "웨버 왼쪽(좋은 귀) 편위 + 린네 양측 양성 + 정상 고막 → 오른쪽 감각신경성 난청",
+    "하루 안에 생긴 연속 세 주파수 40 dB 손실 → 돌발성 감각신경성 난청 → 고용량 글루코코르티코이드"
+   ],
+   "key": [
+    {
+     "item": "웨버 검사는 왼쪽으로 편위",
+     "why": "좋은 귀로 편위 — 감각신경성",
+     "also": []
+    },
+    {
+     "item": "기도전도가 골전도보다 길다",
+     "why": "린네 양성 — 전음성 난청 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "연속된 세 주파수에서 40 dB 감각신경성 난청",
+     "why": "돌발성 난청 정의 충족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 고막은 정상",
+     "why": "중이 삼출·중이염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "어지럼, 귀 통증, 귀 분비물은 없다",
+     "why": "미로염·중이염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "다른 뇌신경 진찰은 정상",
+     "why": "중추 병변 징후 없음 — 그래도 MRI 는 시행",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "정상 고막, 웨버의 좋은 귀 편위와 양측 린네 양성은 오른쪽 감각신경성 난청을 뜻하고, 하루 안에 생긴 연속 세 주파수 40 dB 손실이라 돌발성 감각신경성 난청이다. 빨리 고용량 글루코코르티코이드를 준다.",
+   "switch": {
+    "choice": "A",
+    "condition": "고막이 혼탁하고 액체선이 보이며 웨버가 나쁜 귀로 편위되는 전음성 난청이 3개월 넘게 지속되었다면 환기관 삽입이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0354",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·이비인후·정신·순환기·약리·예방의학·영상판독)",
+  "subtopic": "산과 — 이미 감작된 Rh(D) 음성 임신부의 항체 역가 상승",
+  "type": "산과 — 이미 감작된 Rh(D) 음성 임신부의 항체 역가 상승",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-17",
+  "vignette": "32세 여자(임신 2회, 출산 1회)가 임신 24주에 산전 진찰을 받으러 왔다. 3년 전 첫째 아이를 외국에서 분만하였고 분만 뒤 아무 주사도 맞지 않았다. 혈압 112/70 mmHg, 맥박 82회/분이다. 자궁저부 높이는 24 cm이고 태아심박수는 148회/분이다. 혈액형은 O형 Rh(D) 음성이며, 간접항글로불린 검사 양성으로 항-D 항체 역가는 1:32이다(임신 16주에는 1:8). 남편은 Rh(D) 양성 동형접합이다. 초음파에서 태아 부종이나 복수는 없다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "태아 중대뇌동맥 최고수축기 혈류속도 도플러 검사",
+   "항-D 면역글로불린 근육주사",
+   "4주 뒤 항-D 항체 역가 재검",
+   "제대천자로 태아 혈색소 측정",
+   "즉시 제왕절개 분만"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 첫 분만 뒤 예방 주사를 맞지 않아 이미 항-D 에 감작되었고, 역가가 1:8 에서 1:32 로 올라 임계값(대개 1:16~1:32)에 이르렀다. 남편이 동형접합이라 태아는 반드시 Rh(D) 양성이다. 이때는 태아 빈혈을 비침습적으로 감시하는 중대뇌동맥 최고수축기 혈류속도 도플러 검사를 1~2주 간격으로 시작한다.\n- 원리: <b>왜 감작된 뒤에는 면역글로불린이 소용없는가</b>: 항-D 면역글로불린은 모체 순환에 들어온 태아 Rh(D) 양성 적혈구를 모체 면역계가 알아보기 전에 덮어 제거해 <b>첫 감작을 막는</b> 약이다. 이미 기억 B 세포가 만들어져 IgG 항-D 가 나오는 여자에게는 효과가 없다.<br> <b>왜 역가가 임계값을 넘으면 도플러인가</b>: IgG 항-D 는 태반을 넘어 태아 적혈구를 용혈시킨다. 빈혈이 생기면 혈액 점도가 낮아지고 심박출량이 늘어 중대뇌동맥 혈류가 빨라진다. 그래서 최고수축기 혈류속도가 임신 주수 중앙값의 <b>1.5배(1.5 MoM)</b>를 넘으면 중등도 이상 빈혈을 시사한다. 역가는 임계값 아래일 때만 4주마다 추적하고, 임계값에 이르면 역가는 더 이상 빈혈 정도를 알려 주지 못한다.<br> <b>다음 단계</b>: 1.5 MoM 을 넘으면 제대천자로 태아 혈색소를 재고 필요하면 자궁 내 수혈을 한다. 제대천자는 태아 손실 위험이 있어 선별 검사로 쓰지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">상황</th><th style=\"width:39%\">감작됨, 역가 ≥ 임계값(정답)</th><th>감작 안 됨(가장 가까운 오답 — 면역글로불린)</th></tr></thead><tbody> <tr><td>간접항글로불린 검사</td><td>양성, 항-D 역가 1:16~1:32 이상</td><td>음성</td></tr> <tr><td>항-D 면역글로불린</td><td><b>효과 없음</b> — 이미 기억 반응</td><td>28주 무렵과 분만 72시간 안에 투여</td></tr> <tr><td>감시</td><td>중대뇌동맥 최고수축기 혈류속도 1~2주마다</td><td>정기 산전 진찰</td></tr> <tr><td>다음 처치 기준</td><td>&gt; 1.5 MoM → 제대천자·자궁 내 수혈</td><td>해당 없음</td></tr> </tbody></table> 역가가 임계값 아래(예: 1:8)라면 도플러 대신 4주마다 역가를 재검한다.\n- 오답 이유:\n  - ② 항-D 면역글로불린은 간접항글로불린 검사가 음성인 감작 전 Rh(D) 음성 임신부에게 28주 무렵과 분만 72시간 안에 줄 때 정답이 된다.\n  - ③ 4주 뒤 역가 재검은 역가가 임계값 아래(예: 1:4~1:8)에 머물러 있을 때의 처치이고, 1:32 에서는 빈혈 정도를 알려 주지 못한다.\n  - ④ 제대천자는 중대뇌동맥 최고수축기 혈류속도가 1.5 MoM 을 넘거나 태아 부종이 보여 수혈을 준비할 때 정답이 된다.\n  - ⑤ 즉시 분만은 만삭에 가깝거나 태아 상태가 나빠 자궁 내 수혈보다 분만이 안전한 주수(대개 34주 이후)일 때 고려한다.\n- 함정: Rh(D) 음성이라는 말만 보고 항-D 면역글로불린을 고르는 것 — 간접항글로불린 검사 양성은 이미 감작되었다는 뜻이다.\n- 학습목표: 이미 감작된 Rh(D) 음성 임신부에서 항-D 역가가 임계값에 이르면 면역글로불린이 소용없고, 태아 빈혈을 중대뇌동맥 최고수축기 혈류속도로 감시해야 함을 안다\n- 근거·출처: ACOG Practice Bulletin No. 192: Management of Alloimmunization During Pregnancy. Obstet Gynecol 2018;131:e82-e90 · Mari G, et al. Noninvasive diagnosis by Doppler ultrasonography of fetal anemia due to maternal red-cell alloimmunization. N Engl J Med 2000;342:9-14 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Fetal disorders — red cell alloimmunization",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "첫 분만 뒤 예방 주사를 맞지 않아 이미 항-D 에 감작되었고, 역가가 1:8 에서 1:32 로 올라 임계값(대개 1:16~1:32)에 이르렀다. 남편이 동형접합이라 태아는 반드시 Rh(D) 양성이다. 이때는 태아 빈혈을 비침습적으로 감시하는 중대뇌동맥 최고수축기 혈류속도 도플러 검사를 1~2주 간격으로 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 감작된 뒤에는 면역글로불린이 소용없는가</b>: 항-D 면역글로불린은 모체 순환에 들어온 태아 Rh(D) 양성 적혈구를 모체 면역계가 알아보기 전에 덮어 제거해 <b>첫 감작을 막는</b> 약이다. 이미 기억 B 세포가 만들어져 IgG 항-D 가 나오는 여자에게는 효과가 없다.<br> <b>왜 역가가 임계값을 넘으면 도플러인가</b>: IgG 항-D 는 태반을 넘어 태아 적혈구를 용혈시킨다. 빈혈이 생기면 혈액 점도가 낮아지고 심박출량이 늘어 중대뇌동맥 혈류가 빨라진다. 그래서 최고수축기 혈류속도가 임신 주수 중앙값의 <b>1.5배(1.5 MoM)</b>를 넘으면 중등도 이상 빈혈을 시사한다. 역가는 임계값 아래일 때만 4주마다 추적하고, 임계값에 이르면 역가는 더 이상 빈혈 정도를 알려 주지 못한다.<br> <b>다음 단계</b>: 1.5 MoM 을 넘으면 제대천자로 태아 혈색소를 재고 필요하면 자궁 내 수혈을 한다. 제대천자는 태아 손실 위험이 있어 선별 검사로 쓰지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">상황</th><th style=\"width:39%\">감작됨, 역가 ≥ 임계값(정답)</th><th>감작 안 됨(가장 가까운 오답 — 면역글로불린)</th></tr></thead><tbody> <tr><td>간접항글로불린 검사</td><td>양성, 항-D 역가 1:16~1:32 이상</td><td>음성</td></tr> <tr><td>항-D 면역글로불린</td><td><b>효과 없음</b> — 이미 기억 반응</td><td>28주 무렵과 분만 72시간 안에 투여</td></tr> <tr><td>감시</td><td>중대뇌동맥 최고수축기 혈류속도 1~2주마다</td><td>정기 산전 진찰</td></tr> <tr><td>다음 처치 기준</td><td>&gt; 1.5 MoM → 제대천자·자궁 내 수혈</td><td>해당 없음</td></tr> </tbody></table> 역가가 임계값 아래(예: 1:8)라면 도플러 대신 4주마다 역가를 재검한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 항-D 면역글로불린은 간접항글로불린 검사가 음성인 감작 전 Rh(D) 음성 임신부에게 28주 무렵과 분만 72시간 안에 줄 때 정답이 된다.\n③ 4주 뒤 역가 재검은 역가가 임계값 아래(예: 1:4~1:8)에 머물러 있을 때의 처치이고, 1:32 에서는 빈혈 정도를 알려 주지 못한다.\n④ 제대천자는 중대뇌동맥 최고수축기 혈류속도가 1.5 MoM 을 넘거나 태아 부종이 보여 수혈을 준비할 때 정답이 된다.\n⑤ 즉시 분만은 만삭에 가깝거나 태아 상태가 나빠 자궁 내 수혈보다 분만이 안전한 주수(대개 34주 이후)일 때 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "Rh(D) 음성이라는 말만 보고 항-D 면역글로불린을 고르는 것 — 간접항글로불린 검사 양성은 이미 감작되었다는 뜻이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "이미 감작된 Rh(D) 음성 임신부에서 항-D 역가가 임계값에 이르면 면역글로불린이 소용없고, 태아 빈혈을 중대뇌동맥 최고수축기 혈류속도로 감시해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 192: Management of Alloimmunization During Pregnancy. Obstet Gynecol 2018;131:e82-e90 · Mari G, et al. Noninvasive diagnosis by Doppler ultrasonography of fetal anemia due to maternal red-cell alloimmunization. N Engl J Med 2000;342:9-14 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Fetal disorders — red cell alloimmunization"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "간접항글로불린 검사 양성으로 이미 감작되었고 항-D 역가가 1:32 로 임계값에 이르렀으므로 태아 빈혈을 중대뇌동맥 도플러로 감시한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "간접항글로불린 검사 양성 — 감작된 뒤에는 면역글로불린이 효과가 없다",
+   "steps": 3,
+   "chain": [
+    "분만 뒤 예방 주사 없음 + 간접항글로불린 검사 양성 → 이미 감작",
+    "항-D 역가 1:8 → 1:32, 남편 동형접합 → 태아 Rh(D) 양성, 용혈 위험 임계값",
+    "임계값 이상 → 역가 대신 중대뇌동맥 최고수축기 혈류속도로 태아 빈혈 감시"
+   ],
+   "key": [
+    {
+     "item": "간접항글로불린 검사 양성",
+     "why": "이미 감작 — 면역글로불린을 배제한다",
+     "also": []
+    },
+    {
+     "item": "항-D 항체 역가는 1:32",
+     "why": "임계값 도달 — 도플러 감시 시작",
+     "also": []
+    },
+    {
+     "item": "분만 뒤 아무 주사도 맞지 않았다",
+     "why": "감작의 원인",
+     "also": []
+    },
+    {
+     "item": "Rh(D) 양성 동형접합",
+     "why": "태아가 반드시 항원 양성",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "태아 부종이나 복수는 없다",
+     "why": "중증 빈혈 징후가 없어 바로 제대천자·분만할 단계는 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "자궁저부 높이는 24 cm",
+     "why": "주수에 맞는 성장 — 판단 영향 적음",
+     "also": []
+    }
+   ],
+   "summary": "첫 분만 뒤 예방을 받지 않아 간접항글로불린 검사가 양성이고 항-D 역가가 1:32 로 올랐다. 이미 감작되어 면역글로불린은 소용없고 임계값을 넘었으므로 중대뇌동맥 최고수축기 혈류속도 도플러로 태아 빈혈을 감시한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "간접항글로불린 검사가 음성인 감작 전 Rh(D) 음성 임신부라면 28주 무렵 항-D 면역글로불린 투여가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261017T202229Z_일일영상_2026-10-18_10units_10q_867d1a8f",
+  "qid": "Q0004"
+ },
+ {
   "id": "imaging-2026-0344",
   "exam": "imaging",
   "style": "usmle_style",
