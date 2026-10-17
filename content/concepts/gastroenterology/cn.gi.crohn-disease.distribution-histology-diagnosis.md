@@ -4,8 +4,8 @@ type: concept
 topic: Gastroenterology
 see_also: [Infectious Disease, Pathology]
 date: 2026-09-23
-updated: 2026-10-04
-version: 2
+updated: 2026-10-17
+version: 3
 outline: h326           # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -128,13 +128,6 @@ sources:
     checked_at: 2026-09-23
     checked: "본문 대조(드라이브 326장 문서) — p.2474 궤양성대장염은 직장을 침범하고 근위로 확장하는 점막 질환, 치료 뒤 겉보기 건너뜀이 있어 정상 점막도 생검 · 소장 침범의 90% 에서 말단회장, 크론병은 직장 흔히 보존·건너뛰는 분절 병변, 항문 주위 병변 1/3, 경벽성 과정 · p.2475 조약돌 모양은 크론병의 특징, 장벽 전층의 비건락성 육아종은 특징적이나 점막 생검보다 절제 표본에서 흔함, 궤양성대장염의 주 증상은 설사·직장 출혈·뒤무직·점액 · p.2476 회결장염은 우하복부 통증·설사, 체중감소 흔함 · p.2477 내시경 소견 직장 보존·아프타 궤양·누공·건너뛰는 병변 · p.2479 표 326-6 IBD 모방 감염에 결핵·아메바·예르시니아 · p.2487 항TNF 전 결핵 검사. 장결핵의 건락성 육아종 서술은 이 장에서 찾지 못했다"
     verified: text
-figures_wanted:
-- source: PMC_OA
-  shows: 크론병 — 비건락성 육아종
-  query: '"Crohn" AND granuloma AND (histology OR biopsy) AND "case report"'
-  caption_terms:
-  - granuloma
-  modality: HISTOLOGY_HE
 figures_rejected:
 - asset: PMC-PMC13197015_Figure2
   reason: 입술 피부 생검(장 밖 크론병)이고 육아종 패널이 약 200 픽셀로 작다
@@ -146,6 +139,25 @@ figures_rejected:
   reason: 부신·장간막 석회화 CT 그림이다 — 요청한 비건락성 육아종 조직 소견이 그림에 없다
 - asset: PMC-PMC11102623_Fig3
   reason: 피부 누공 생검(전이성 크론병)이라 장 조직이 아니고, 캡션은 granuloma 만 말해 '비건락성'이 라벨 범위 밖. 저배율(500 µm)이라 다핵거대세포도 육안으로 가려지지 않음 — 장 점막 생검의 non-caseating granuloma 그림이 필요
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc11032506_figure1.jpg
+  kind: histology
+  at: 가르는 소견 — 분포·깊이·조직
+  shows: 크론병 대장 점막 생검 — 움(crypt) 구조 왜곡·중등도 염증세포 침윤·상피모양 세포 육아종
+  look_for:
+  - 가운데 오른쪽 — 움 사이 고유판의 상피모양 세포가 뭉친 둥근 무리(육아종)
+  - 움의 크기·간격이 고르지 않고 모양이 뒤틀림
+  label: '「Photomicrograph showing a colic mucosa containing distorted crypts and a moderate inflammatory infiltrate, with the presence of an epithelioid granuloma」 — Enterovesical Fistula Revealing Crohn’s Disease: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Enterovesical Fistula Revealing Crohn’s Disease: A Case Report. Cureus'
+  doi: 10.7759/cureus.56690
+  credit: 'Enterovesical Fistula Revealing Crohn’s Disease: A Case Report. Cureus. 2024 Mar 22;16(3):e56690. doi: 10.7759/cureus.56690 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11032506/
+  asset: PMC-PMC11032506_Figure1
+  privacy_check: 조직 현미경 사진 한 패널 — 얼굴·문신·이름·병원 표지·글자 없음을 직접 봄
 ---
 
 ## 판단 — 왜 궤양성대장염이 아니라 크론병인가

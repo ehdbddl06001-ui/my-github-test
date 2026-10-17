@@ -21706,10 +21706,10 @@ window.MEDKOS_CONCEPTS = {
    "Infectious Disease",
    "Pathology"
   ],
-  "version": 2,
-  "updated": "2026-10-04",
+  "version": 3,
+  "updated": "2026-10-17",
   "reviewStatus": "unreviewed",
-  "hash": "d2ed57caaa2de525",
+  "hash": "a67f4264279f99dd",
   "summary": [
    "결론: 건너뛰는 병변·말단회장 침범·조약돌 점막·비건락성 육아종이면 궤양성대장염이 아니라 크론병이다.",
    "시험 단서: 젊은 성인의 우하복부 통증·비혈성 설사·체중감소, 항문 주위 병변 = 크론병(Crohn disease).",
@@ -21902,7 +21902,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc11032506_figure1.jpg",
+    "kind": "histology",
+    "at": "가르는 소견 — 분포·깊이·조직",
+    "shows": "크론병 대장 점막 생검 — 움(crypt) 구조 왜곡·중등도 염증세포 침윤·상피모양 세포 육아종",
+    "look": [
+     "가운데 오른쪽 — 움 사이 고유판의 상피모양 세포가 뭉친 둥근 무리(육아종)",
+     "움의 크기·간격이 고르지 않고 모양이 뒤틀림"
+    ],
+    "label": "「Photomicrograph showing a colic mucosa containing distorted crypts and a moderate inflammatory infiltrate, with the presence of an epithelioid granuloma」 — Enterovesical Fistula Revealing Crohn’s Disease: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Enterovesical Fistula Revealing Crohn’s Disease: A Case Report. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.56690",
+    "citedBy": null,
+    "credit": "Enterovesical Fistula Revealing Crohn’s Disease: A Case Report. Cureus. 2024 Mar 22;16(3):e56690. doi: 10.7759/cureus.56690 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11032506/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "크론병 — 감염 배제 뒤 분포·깊이로 가르기",
   "geo": {
    "title": "크론병 — 감염 배제 뒤 분포·깊이로 가르기",
@@ -73874,7 +73896,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-28",
   "reviewStatus": "unreviewed",
-  "hash": "3e9459e8db6ede90",
+  "hash": "6295d1fb01e16a3b",
   "summary": [
    "결론: 마름모·막대 모양의 약한 양성(또는 무) 복굴절 결정 = 칼슘피로인산(CPP) 결정 관절염(pseudogout).",
    "시험 단서: 고령자 + 수술·중병 뒤 급성 무릎 단관절염 + X선 반달연골 선형 석회화(chondrocalcinosis).",
