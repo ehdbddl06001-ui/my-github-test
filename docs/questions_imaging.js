@@ -1416,6 +1416,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.id.covid19-pneumonia.tocilizumab-add-on",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0344.png",
    "caption": "Portable anteroposterior chest radiograph, ECG leads as in the original (TCIA, CC BY 4.0; DICOM converted with standard windowing, no cropping)",
@@ -1682,6 +1683,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0342.jpg",
    "caption": "헤마톡실린-에오신 염색 저배율 현미경 사진, 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",

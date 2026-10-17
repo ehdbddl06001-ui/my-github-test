@@ -121,6 +121,13 @@ drugs:
   레플루노마이드: leflunomide
   트리암시놀론: triamcinolone
   아바타셉트: abatacept
+  덱사메타손: dexamethasone
+  렘데시비르: remdesivir
+  바리시티닙: baricitinib
+  아지트로마이신: azithromycin
+  이버멕틴: ivermectin
+  도세탁셀: docetaxel
+  젬시타빈: gemcitabine
 
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}

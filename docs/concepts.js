@@ -27298,6 +27298,708 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.id.covid19-pneumonia.tocilizumab-add-on": {
+  "id": "cn.id.covid19-pneumonia.tocilizumab-add-on",
+  "title": "COVID-19 폐렴 악화 — 스테로이드 증량 아닌 IL-6 차단",
+  "objective": "덱사메타손 중에도 산소 요구량이 빠르게 늘고 CRP 가 높은 COVID-19 폐렴에 토실리주맙을 더하는 것을 고른다",
+  "objectiveKind": "치료",
+  "condition": "입원한 중증·진행성 COVID-19 폐렴(severe or progressive COVID-19 pneumonia)의 면역조절 치료",
+  "topic": "Infectious Disease",
+  "seeAlso": [
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-10-18",
+  "reviewStatus": "unreviewed",
+  "hash": "9731fa4463b5dd0a",
+  "summary": [
+   "결론: 덱사메타손 중에도 빠르게 악화하는 COVID-19 폐렴에는 토실리주맙(tocilizumab)을 더한다.",
+   "시험 단서: SARS-CoV-2 양성 + 양측 폐렴 + 덱사메타손 중 하루 새 고유량 산소로 악화 + CRP 높음 + 프로칼시토닌 낮음.",
+   "왜: 2주째 저산소증은 숙주 염증(IL-6)이 몰고 간다 — 같은 약 증량이 아니라 다른 경로를 막아야 사망률이 준다.",
+   "고용량 스테로이드 증량·이버멕틴은 쓰지 않는다. 회복기 혈장은 고역가·병 초기·체액면역 결핍 환자에 한정된다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 토실리주맙이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>이 환자는 이미 덱사메타손을 맞고 있는데도 하루 만에 저유량 → 고유량 산소로 올라갔고 CRP 가 높다 — <strong>진행성 중증 COVID-19</strong> 이다.</li>\n<li>그 단계의 악화는 바이러스 증식보다 <strong>숙주 염증</strong>이 몰고 가며, IL-6 는 그 중심 매개체다. IL-6 수용체를 막는 토실리주맙을 덱사메타손에 더하는 근거가 가장 강하다 <sup>[1 199장 p.1510]</sup> <sup>[2†]</sup>.</li>\n<li>같은 경로를 더 세게 누르는 고용량 스테로이드는 이득 없이 고혈당·동반 감염만 늘린다 <sup>[1 199장 p.1510]</sup> <sup>[3†]</sup>.</li>\n<li>낮은 프로칼시토닌·정상 간효소는 「세균 동반 감염 아님」과 「토실리주맙 금기 아님」 두 역할을 한다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 바이러스 단계에서 염증 단계로",
+    "deep": false,
+    "html": "<p>SARS-CoV-2 는 첫 주에 기도·폐포 상피에서 증식하고, 이때는 항바이러스제와 중화항체가 의미가 크다. 둘째 주에 접어들며 일부 환자에서 숙주 면역 반응이 커져 D-이합체·페리틴·CRP·IL-6 가 오르고, 이 수치가 높을수록 중증이다 <sup>[1 199장 p.1510]</sup>. IL-6 는 간에서 CRP 를 만들게 하고 열을 내며 모세혈관 누출을 키워 폐포를 물로 채운다 — 그래서 산소 요구가 갑자기 늘어난다. 덱사메타손은 염증을 넓게 누르지만, 그 위에서도 진행하면 IL-6 신호 자체(수용체)를 막거나 여러 사이토카인 신호가 모이는 JAK 를 막아야 한다. 이미 염증 단계에 들어선 환자에게 바이러스 항체(회복기 혈장)를 주는 것은 원인이 바뀐 뒤의 치료다.</p>"
+   },
+   {
+    "title": "선택 — 무엇을 더하고 무엇을 쓰지 않나",
+    "deep": false,
+    "html": "<ul>\n<li>덱사메타손은 유지하고 그 위에 <strong>면역조절제 하나</strong>를 더한다(표). 해리슨 21판은 토실리주맙 근거가 가장 강하다고 서술한다 <sup>[1 199장 p.1510]</sup>.</li>\n<li>회복기 혈장은 중화항체 역가가 대개 낮고, 허가도 고역가 혈장 · 입원 초기 · 체액면역 손상 환자로 좁혀졌다 <sup>[1 199장 p.1510]</sup>.</li>\n<li>세균 동반 감염의 빈도는 불확실하고, 다른 적응 없이 경험적 광범위 항생제를 쓸 근거는 부족하다 — 시작했다면 근거가 없을 때 줄이거나 끊는다 <sup>[1 199장 p.1510~1511]</sup>.</li>\n<li>투여 뒤에는 IL-6 차단이 열·CRP 를 누르므로 새 감염을 증상·영상·배양으로 감시한다 <sup>[3†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>저산소증(실내 공기 산소포화도 ≤ 94 %)이 있으면 산소를 주고, 호흡부전이면 삽관·기계환기로 간다 <sup>[1 199장 p.1510]</sup>.</li>\n<li>활동성 세균·진균 감염, 심한 호중구감소, 크게 오른 간효소가 있으면 토실리주맙을 미룬다 <sup>[3†]</sup>.</li>\n<li>이버멕틴은 COVID-19 치료 근거가 없다 — 분선충증 같은 기생충 감염(면역억제 전 선제 치료 등)에 쓰는 약이다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 바리시티닙의 병용 약</strong> — 시험 기준: 덱사메타손에 토실리주맙 또는 바리시티닙을 더한다 <sup>[3†]</sup> / 다른 기준: 바리시티닙은 렘데시비르와 병용으로 산소·기계환기 환자에 긴급사용 허가(2021년 5월 기준) <sup>[1 199장 p.1510]</sup> / 왜 다른가: 해리슨 21판 원고 시점 이후 바리시티닙을 덱사메타손과 함께 쓴 자료가 쌓였다(원문 미대조) / 시험에서는: KMLE · USMLE 모두 보기에 있으면 토실리주맙이 가장 안전한 답, 바리시티닙은 대안으로 알아 둔다.</li>\n<li><strong>Z2 맥락 · 회복기 혈장의 허가 범위</strong> — 시험 기준: 입원한 진행성 환자에게는 쓰지 않는다 / 다른 기준: 2020년 8월 역가와 무관하게 입원 환자 EUA → 2021년 2월 고역가 · 입원 초기 · 체액면역 손상 환자로 축소 <sup>[1 199장 p.1510]</sup> / 왜 다른가: 시점별 허가 변화 / 시험에서는: KMLE · USMLE 모두 「체액면역 결핍 + 병 초기」일 때만 답이 된다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "입원 COVID-19 — 덱사메타손 위에 더할 것",
+    "columns": [
+     "약",
+     "작용",
+     "쓰는 때",
+     "주의"
+    ],
+    "rows": [
+     [
+      "토실리주맙",
+      "IL-6 수용체 단클론항체",
+      "덱사메타손 중 중증·진행 <sup>[1 199장 p.1510]</sup>",
+      "활동성 세균·진균 감염 <sup>[3†]</sup>"
+     ],
+     [
+      "바리시티닙",
+      "JAK1/2 억제",
+      "산소·기계환기 필요 <sup>[1 199장 p.1510]</sup>",
+      "해리슨 21판은 렘데시비르 병용 허가만 서술"
+     ],
+     [
+      "고용량 스테로이드",
+      "같은 경로 증량",
+      "근거 없음 <sup>[3†]</sup>",
+      "고혈당·동반 감염 <sup>[1 199장 p.1510]</sup>"
+     ],
+     [
+      "회복기 혈장",
+      "다클론 중화항체",
+      "고역가 · 입원 초기 · 체액면역 결핍 <sup>[1 199장 p.1510]</sup>",
+      "역가가 낮아 효과 제한"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "회복기 혈장 — 항체를 주면 바이러스가 줄 것?",
+    "point": "회복기 혈장의 중화항체 역가는 대개 낮아 효과가 제한적이고, 허가도 고역가 혈장을 입원 초기 또는 체액면역이 손상된 환자에만 쓰도록 좁혀졌다 <sup>[1 199장 p.1510]</sup>. 발병 7일 넘게 지나 염증으로 악화하는 단계에서는 항바이러스·항체보다 면역조절이 답이다.",
+    "exception": "B세포 고갈 치료(리툭시맙 등)로 항체를 못 만드는 환자의 병 초기라면 고역가 회복기 혈장을 고려한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "덱사메타손으로 안 되면 스테로이드를 더 세게?",
+    "point": "고용량 글루코코르티코이드는 고혈당·동반 감염 위험을 늘리고 <sup>[1 199장 p.1510]</sup>, 표준 용량보다 사망률을 낮추지 못했다 <sup>[3†]</sup>. 덱사메타손은 유지하고 다른 경로(IL-6 수용체·JAK)를 막는 약을 더한다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "열·CRP 상승 = 세균 동반 감염?",
+    "point": "COVID-19 의 염증 자체가 열과 CRP 를 올린다. 프로칼시토닌이 낮고 엽성 경화·화농성 객담이 없으면 경험적 광범위 항생제 근거는 부족하다 <sup>[1 199장 p.1510~1511]</sup>.",
+    "exception": "엽성 경화·화농성 객담·높은 프로칼시토닌이면 세균 동반 감염 치료가 먼저다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "「빠른 악화」 — 고유량 산소·비침습 환기·기계환기로 올라가는 산소 요구. 시험에서 흔히 CRP ≥ 7.5 mg/dL 를 함께 준다 <sup>[2†]</sup>.",
+   "덱사메타손은 끊지 않는다 — 토실리주맙은 덱사메타손에 <b>더하는</b> 약이다 <sup>[1 199장 p.1510]</sup>.",
+   "토실리주맙 전 확인: 활동성 세균·진균 감염, 심한 호중구감소, 크게 오른 간효소. IL-6 차단 뒤에는 열·CRP 가 눌려 이후 감염을 알아보기 어렵다 <sup>[3†]</sup>.",
+   "저산소증의 기준은 실내 공기 산소포화도 ≤ 94 % 다 <sup>[1 199장 p.1510]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 199: Common Viral Respiratory Infections, Including COVID-19",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 199장 Common Viral Respiratory Infections, Including COVID-19, 인쇄쪽 1510–1511",
+    "checked": "드라이브 장 문서로 본문 대조. p.1510 근거가 가장 강한 치료(덱사메타손·렘데시비르±바리시티닙·토실리주맙·단클론항체), 중증 = 실내 공기 산소포화도 ≤94 % 저산소증, 바리시티닙은 렘데시비르 병용으로 산소·기계환기 환자에 EUA(2021년 5월 기준), 글루코코르티코이드 중 덱사메타손 근거가 가장 많고 고용량 시 고혈당·동반 감염 감시, IL-6 억제제 중 토실리주맙 근거가 가장 강하고 중증·진행성 COVID-19 에 덱사메타손에 더하기를 권함, 회복기 혈장은 역가가 낮아 효과 제한·2021년 2월 EUA 를 고역가·입원 초기·체액면역 손상 환자로 축소. p.1510–1511 세균 동반 감염 빈도 불확실, 다른 적응 없이 경험적 광범위 항생제 권고 근거 부족, 시작했다면 근거 없으면 줄이거나 중단",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-10-18",
+    "url": ""
+   },
+   {
+    "id": "recovery-toci-2021",
+    "org": "RECOVERY Collaborative Group",
+    "title": "Tocilizumab in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial",
+    "kind": "trial",
+    "citation": "Lancet 2021;397(10285):1637-1645",
+    "checked": "서지만(문항 imaging-2026-0344 해설 근거 목록에서 옮김, 원문·초록 미대조 — 컨테이너가 PubMed 를 막음). PMID 는 기억으로 적었다(학습서 워크플로가 확인 — 검토 항목). 저산소증·CRP ≥7.5 mg/dL 환자의 사망률 감소 서술에 쓴다",
+    "doi": "",
+    "pmid": "33933206",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-10-18",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33933206/"
+   },
+   {
+    "id": "nih-covid",
+    "org": "NIH COVID-19 Treatment Guidelines Panel",
+    "title": "Coronavirus Disease 2019 (COVID-19) Treatment Guidelines — Therapeutic management of hospitalized adults (final version)",
+    "kind": "guideline",
+    "citation": "National Institutes of Health. COVID-19 Treatment Guidelines (archived final version)",
+    "checked": "서지만(문항 해설 근거 목록에서 옮김, 원문 미대조 — 판·연도는 검토 항목). 고용량 스테로이드 무익, 토실리주맙 투여 전 확인 사항, 덱사메타손과 바리시티닙 병용 서술에 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-10-18",
+    "url": "https://www.covid19treatmentguidelines.nih.gov/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "덱사메타손 중에도 산소 요구가 빠르게 늘고 CRP 가 높은 COVID-19 폐렴에서 다음 약물 치료는?",
+    "a": "덱사메타손을 유지하고 토실리주맙(IL-6 수용체 차단, 또는 바리시티닙)을 더한다."
+   },
+   {
+    "q": "회복기 혈장을 고려할 수 있는 환자는?",
+    "a": "고역가 혈장을 입원 초기 또는 체액면역이 손상된 환자에게."
+   },
+   {
+    "q": "토실리주맙을 더하기 전에 확인할 것은?",
+    "a": "세균·진균 동반 감염이 없는지(프로칼시토닌·영상), 심한 호중구감소·간효소 상승이 없는지."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.id.covid19-pneumonia.tocilizumab-add-on#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — COVID-19 입원 중 세균 동반 감염",
+    "stem": "A 46-year-old man is admitted to the hospital because of fever, cough, and shortness of breath for 6 days. A nasopharyngeal swab is positive for SARS-CoV-2 by RT-PCR. He is treated with dexamethasone and 2 L/min of oxygen by nasal cannula. Over the next 36 hours, his oxygen requirement increases to 6 L/min, and he begins coughing up rust-colored purulent sputum. Temperature is 39.2°C (102.6°F), pulse is 112/min, and respirations are 26/min. Bronchial breath sounds are heard over the right lower lung field. Leukocyte count is 18,500/mm3 with 88% neutrophils. Serum procalcitonin concentration is 6.2 ng/mL. A chest x-ray shows dense consolidation of the right lower lobe with air bronchograms. Sputum Gram stain shows many neutrophils and gram-positive diplococci. In addition to continuing dexamethasone, which of the following is the most appropriate next step in pharmacotherapy?",
+    "options": [
+     "Tocilizumab",
+     "Ceftriaxone and azithromycin",
+     "High-dose intravenous methylprednisolone",
+     "COVID-19 convalescent plasma",
+     "Ivermectin"
+    ],
+    "answer": 2,
+    "explanation": "Lobar consolidation with purulent sputum, neutrophilic leukocytosis, a high procalcitonin, and gram-positive diplococci point to a bacterial (pneumococcal) superinfection, so antibiotics come first. Tocilizumab is avoided while an active bacterial infection is untreated. In the original item, both lower zones were hazy, procalcitonin was low, and the worsening was driven by inflammation — so tocilizumab was added instead.",
+    "of": "imaging-2026-0344",
+    "changed": "양쪽 하폐야 간유리 음영·프로칼시토닌 0.1 → 오른쪽 아래엽 엽성 경화·녹슨 화농성 객담·백혈구 18,500·프로칼시토닌 6.2 → 답이 토실리주맙에서 세균 동반 폐렴 치료(세프트리악손+아지트로마이신)로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.id.covid19-pneumonia.tocilizumab-add-on#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 고령 남성, 비침습 환기",
+    "stem": "A 63-year-old man with hypertension is hospitalized on day 8 of a SARS-CoV-2 infection with fever and dyspnea. Dexamethasone and supplemental oxygen were started on admission 2 days ago. Since then his oxygen needs have escalated, and he now requires noninvasive positive-pressure ventilation with an FiO2 of 0.7 to maintain oxygen saturation at 92%. Temperature is 38.4°C (101.1°F), pulse is 104/min, and blood pressure is 138/82 mm Hg. Diffuse crackles are heard bilaterally. Leukocyte count is 6800/mm3, absolute neutrophil count is 5100/mm3, and serum C-reactive protein concentration is 19 mg/dL (N <0.5). Serum procalcitonin concentration is 0.08 ng/mL, and serum ALT activity is 41 U/L. Chest x-ray shows bilateral peripheral hazy opacities. Blood and sputum cultures show no growth to date. In addition to continuing dexamethasone, which of the following is the most appropriate next step in pharmacotherapy?",
+    "options": [
+     "Pulse-dose intravenous methylprednisolone",
+     "Hydroxychloroquine",
+     "Tocilizumab",
+     "Piperacillin-tazobactam and vancomycin",
+     "COVID-19 convalescent plasma"
+    ],
+    "answer": 3,
+    "explanation": "Age, sex, the level of respiratory support, and the CRP value changed, but the decisive clues did not: rapid worsening despite dexamethasone, a markedly high CRP, and no sign of bacterial infection (low procalcitonin, negative cultures, normal neutrophils and ALT). Adding the IL-6 receptor blocker tocilizumab to dexamethasone is the step with mortality benefit; pulse steroids add no benefit, and convalescent plasma is limited to early disease or impaired humoral immunity.",
+    "of": "imaging-2026-0344",
+    "changed": "40세 여자 → 63세 남자, 고유량 산소 → 비침습 환기, CRP 14 → 19 mg/dL, 렘데시비르 언급 삭제 — 「덱사메타손 중 빠른 악화 + 높은 CRP + 세균 감염 징후 없음」은 그대로 → 답은 여전히 토실리주맙",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "입원 COVID-19 폐렴 — 덱사메타손 중 악화",
+  "geo": {
+   "title": "입원 COVID-19 폐렴 — 덱사메타손 중 악화",
+   "w": 567.0,
+   "h": 592.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "SARS-CoV-2 폐렴 입원 —",
+      "산소 투여 중"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "dexa",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "덱사메타손 시작(±",
+      "렘데시비르)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "prog",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "덱사메타손 중에도 빠르게",
+      "악화하는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 188.0
+    },
+    {
+     "id": "ask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "산소 요구 변화·CRP·감염",
+      "징후 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 315.0
+    },
+    {
+     "id": "stable",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "안정 → 덱사메타손 유지"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 422.0
+    },
+    {
+     "id": "infx",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "세균·진균 동반 감염 징후?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 422.0
+    },
+    {
+     "id": "abx",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "있음 → 동반 감염부터 치료"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 512.0
+    },
+    {
+     "id": "toci",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "없음 → 토실리주맙(또는",
+      "바리시티닙) 추가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 512.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "dexa",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "dexa",
+     "to": "prog",
+     "points": [
+      [
+       340.0,
+       166.0
+      ],
+      [
+       340.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "prog",
+     "to": "infx",
+     "points": [
+      [
+       291.0,
+       252.0
+      ],
+      [
+       291.0,
+       301.0
+      ],
+      [
+       226.0,
+       301.0
+      ],
+      [
+       226.0,
+       408.0
+      ],
+      [
+       194.3,
+       408.0
+      ],
+      [
+       194.3,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "급속 악화"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 263.1,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "prog",
+     "to": "stable",
+     "points": [
+      [
+       389.0,
+       252.0
+      ],
+      [
+       389.0,
+       301.0
+      ],
+      [
+       454.0,
+       301.0
+      ],
+      [
+       454.0,
+       408.0
+      ],
+      [
+       485.7,
+       408.0
+      ],
+      [
+       485.7,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안정"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 374.0,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "prog",
+     "to": "ask",
+     "points": [
+      [
+       340.0,
+       252.0
+      ],
+      [
+       340.0,
+       315.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정보 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 276.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "infx",
+     "points": [
+      [
+       307.3,
+       379.0
+      ],
+      [
+       307.3,
+       408.0
+      ],
+      [
+       259.7,
+       408.0
+      ],
+      [
+       259.7,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "악화·CRP 높음"
+      ],
+      "w": 81.3,
+      "h": 17,
+      "x": 266.7,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "stable",
+     "points": [
+      [
+       372.7,
+       379.0
+      ],
+      [
+       372.7,
+       408.0
+      ],
+      [
+       420.3,
+       408.0
+      ],
+      [
+       420.3,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안정"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "infx",
+     "to": "abx",
+     "points": [
+      [
+       194.3,
+       469.0
+      ],
+      [
+       194.3,
+       498.0
+      ],
+      [
+       114.0,
+       498.0
+      ],
+      [
+       114.0,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 473.0
+     }
+    },
+    {
+     "from": "infx",
+     "to": "toci",
+     "points": [
+      [
+       259.7,
+       469.0
+      ],
+      [
+       259.7,
+       498.0
+      ],
+      [
+       340.0,
+       498.0
+      ],
+      [
+       340.0,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 473.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "SARS-CoV-2 폐렴 입원 — 산소 투여 중",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "덱사메타손 시작(± 렘데시비르)"
+     }
+    ]
+   },
+   {
+    "id": "dexa",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "덱사메타손 시작(± 렘데시비르)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "덱사메타손 중에도 빠르게 악화하는가?"
+     }
+    ]
+   },
+   {
+    "id": "prog",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "덱사메타손 중에도 빠르게 악화하는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "급속 악화",
+      "to": 5,
+      "toText": "세균·진균 동반 감염 징후?"
+     },
+     {
+      "label": "안정",
+      "to": 6,
+      "toText": "안정 → 덱사메타손 유지"
+     },
+     {
+      "label": "정보 없음",
+      "to": 4,
+      "toText": "산소 요구 변화·CRP·감염 징후 확인"
+     }
+    ]
+   },
+   {
+    "id": "ask",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "산소 요구 변화·CRP·감염 징후 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "악화·CRP 높음",
+      "to": 5,
+      "toText": "세균·진균 동반 감염 징후?"
+     },
+     {
+      "label": "안정",
+      "to": 6,
+      "toText": "안정 → 덱사메타손 유지"
+     }
+    ]
+   },
+   {
+    "id": "infx",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "세균·진균 동반 감염 징후?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 7,
+      "toText": "있음 → 동반 감염부터 치료"
+     },
+     {
+      "label": "없음",
+      "to": 8,
+      "toText": "없음 → 토실리주맙(또는 바리시티닙) 추가"
+     }
+    ]
+   },
+   {
+    "id": "stable",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "안정 → 덱사메타손 유지",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "abx",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "있음 → 동반 감염부터 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "toci",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "없음 → 토실리주맙(또는 바리시티닙) 추가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0344"
+  ],
+  "hasErrors": false
+ },
  "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
   "id": "cn.id.invasive-aspergillosis.angioinvasion-mechanism",
   "title": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
@@ -52753,6 +53455,728 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "imaging-2026-0112"
+  ],
+  "hasErrors": false
+ },
+ "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
+  "id": "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria",
+  "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
+  "objective": "자궁 방추형 세포 종양에서 종양세포 괴사·핵 이형성·유사분열 세 기준으로 평활근육종을 판정하고 세포성·적색변성 평활근종과 가른다",
+  "objectiveKind": "진단",
+  "condition": "자궁 평활근육종(uterine leiomyosarcoma)과 평활근종 변이형의 조직 감별",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Pathology"
+  ],
+  "version": 2,
+  "updated": "2026-10-18",
+  "reviewStatus": "unreviewed",
+  "hash": "55af692609810631",
+  "summary": [
+   "결론: 종양세포 괴사·중등도 이상 핵 이형성·유사분열 ≥ 10/10 HPF 중 둘 이상이면 평활근육종(leiomyosarcoma)이다.",
+   "시험 단서: 빠르게 커진 자궁 근층 종괴 + 다발 배열 방추형 세포 + 「핵 이형성 뚜렷」「유사분열 18/10 HPF」.",
+   "왜: 모양·크기·세포 밀도는 양성과 겹친다 — 악성을 가르는 것은 세포 밀도가 아니라 세 기준의 조합이다.",
+   "세포 밀도만 높으면 세포성 평활근종, 이형성 없이 경색형 괴사면 적색변성(임신 중 흔함)이다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 평활근육종이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>먼저 계열을 정한다: 엇갈리는 <strong>다발</strong>로 배열한 방추형 세포 = 평활근 종양(평활근 분화). 작은 둥근 세포가 소동맥 주위로 소용돌이치면 자궁내막 간질 종양 쪽이다.</li>\n<li>평활근 종양의 양성·악성은 <strong>세 기준</strong>으로 가른다 — 종양세포 괴사, 미만성 중등도 이상 핵 이형성, 유사분열 ≥ 10/10 HPF. 둘 이상이면 평활근육종이다 <sup>[1†]</sup> <sup>[2†]</sup>.</li>\n<li>세포 밀도·크기·빠른 성장은 기준이 아니다 — 세포성 평활근종도 세포가 빽빽하고, 임신 중 평활근종도 빨리 자란다.</li>\n<li>괴사는 <strong>종류</strong>를 본다. 경색형(유리질화) 괴사만 있고 이형성이 없으면 적색변성 같은 양성 변성이다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 양성 평활근에서 악성 기준으로",
+    "deep": false,
+    "html": "<p>자궁 근층의 평활근 세포는 에스트로겐·프로게스테론에 반응해 자라므로, 양성 평활근종도 임신 중에는 유사분열이 늘고 크기가 빨리 커진다. 그래서 「분열이 많다」 하나로는 악성을 말하지 못한다. 악성 종양은 유전체 불안정으로 핵이 커지고 모양·염색이 제각각인 <strong>이형성</strong>을 보이며, 혈관 공급을 앞질러 자라 살아 있는 종양 한가운데가 갑자기 죽는 <strong>종양세포 괴사</strong>를 만든다. 반면 양성 종양이 크게 자라 혈류가 모자라면 허혈성 경색이 생기는데, 이때는 시간이 흘러 괴사와 생존 조직 사이에 육아조직·유리질화 띠가 생기고 세포 이형성은 없다. 임신 중 적색변성(출혈성 경색)이 그 예다. 세 기준을 함께 보는 이유는 각각이 양성 종양에서도 홀로 나타날 수 있기 때문이다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 괴사의 종류와 핵",
+    "deep": false,
+    "html": "<ul>\n<li>종양세포 괴사: 살아 있는 종양에서 괴사로 <strong>갑작스러운 경계</strong>, 괴사 안에 이형 핵의 유령 윤곽.</li>\n<li>경색형 괴사: 사이에 육아조직·유리질화 띠, 이형성 없음 — 적색변성의 모양이다.</li>\n<li>유사분열은 이형성과 함께 볼 때 의미가 크다. 이형성이 없는 「분열 많은 평활근종」은 임신·호르몬 노출에서 생길 수 있다 <sup>[1†]</sup>.</li>\n<li>혈청 β-hCG 가 음성이면 태반부위 영양막종양 가능성은 낮지만, 조직 소견(중간형 영양막세포·hPL)으로 확인한다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>임상에서 평활근육종은 대개 증상 있는 큰 골반 종괴로 발견되며 기능성 출혈이 있을 수도 없을 수도 있다 <sup>[3 89장 p.700]</sup>. 평활근종과 평활근육종은 같은 평활근에서 생기지만 임상 경과가 매우 다르다 <sup>[3 89장 p.699]</sup>.</li>\n<li>재발한 평활근육종에는 도세탁셀/젬시타빈을 쓰며, 보조요법의 이득은 뚜렷하지 않다 <sup>[3 89장 p.700]</sup>.</li>\n<li>기준이 하나뿐이거나 경계 값이면 STUMP 로 보고하고 경과를 본다 <sup>[1†]</sup>.</li>\n<li>조직 기준의 근거는 원문 미대조(†)다 — 수치는 사람 검토가 필요하다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 89장 p.699~700 — 임상 양상·치료만 대조, 조직 기준은 해리슨에 없음)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "자궁 근층 종양 — 조직으로 가르기",
+    "columns": [
+     "진단",
+     "세포·배열",
+     "괴사",
+     "이형성·분열"
+    ],
+    "rows": [
+     [
+      "평활근육종",
+      "다발 배열 방추형",
+      "종양세포 괴사(갑작스러운 경계)",
+      "중등도 이상 · 흔히 ≥ 10/10 HPF <sup>[1†]</sup>"
+     ],
+     [
+      "세포성 평활근종",
+      "다발 배열, 세포만 빽빽",
+      "없음",
+      "없음 · 적음 <sup>[1†]</sup>"
+     ],
+     [
+      "적색변성 평활근종",
+      "다발 배열 방추형",
+      "출혈성 경색(유리질화 띠)",
+      "없음 · 임신 중 다소 늘 수 있음 <sup>[1†]</sup>"
+     ],
+     [
+      "저등급 자궁내막 간질육종",
+      "작은 둥근 세포, 소동맥 주위 소용돌이",
+      "드묾",
+      "경미 · 근층에 혀 모양 침윤 <sup>[1†]</sup>"
+     ],
+     [
+      "태반부위 영양막종양",
+      "중간형 영양막세포가 근섬유 사이로",
+      "흔함",
+      "β-hCG 낮게 양성 · hPL 양성 <sup>[1†]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "세포성 평활근종 vs 평활근육종",
+    "point": "세포성 평활근종도 세포가 빽빽하지만 핵 이형성·종양세포 괴사가 없고 유사분열이 적다. 세포 밀도는 악성 기준이 아니다 — 이형성과 분열 수가 함께 있으면 세포가 많든 적든 평활근육종이다 <sup>[1†]</sup> <sup>[2†]</sup>.",
+    "exception": "이형성·괴사가 없고 유사분열도 적은데 세포만 빽빽하면 세포성 평활근종이 맞다.",
+    "cites": ""
+   },
+   {
+    "contrast": "적색변성 평활근종 — 임신 중이니 괴사는 변성?",
+    "point": "임신 중 평활근종은 출혈성 경색(적색변성)이 흔하다. 경색형 괴사는 살아 있는 종양과의 사이에 육아조직·유리질화 띠가 끼고 핵 이형성이 없다. 종양세포 괴사는 살아 있는 종양에서 괴사로 갑자기 넘어가고 괴사 안에 이형 핵의 윤곽이 남는다 <sup>[1†]</sup>.",
+    "exception": "이형성이 없고 괴사가 경색형이며 분만 뒤 종괴가 줄면 적색변성이 맞다.",
+    "cites": ""
+   },
+   {
+    "contrast": "임신 중 빠른 성장 = 악성?",
+    "point": "임신 중에는 평활근종도 빨리 자란다. 빠른 성장은 악성의 근거가 아니며, 진단은 조직의 세 기준으로 정한다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "세 기준 — ① 종양세포(응고) 괴사 ② 미만성 중등도 이상 핵 이형성 ③ 유사분열 ≥ 10/10 HPF. 둘 이상이면 평활근육종이다 <sup>[1†]</sup> <sup>[2†]</sup>.",
+   "기준이 하나만 있거나 경계 값이라 판정이 어려우면 악성 잠재성 불명 평활근 종양(STUMP)으로 보고한다 <sup>[1†]</sup>.",
+   "점액성·상피양 평활근 종양은 기준 수치가 더 낮다 — 이 정리본은 방추형(통상형)만 다룬다(검토 항목)."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "who-fgt-5",
+    "org": "WHO Classification of Tumours Editorial Board / IARC",
+    "title": "WHO Classification of Tumours: Female Genital Tumours, 5th ed. — Uterine smooth muscle tumours (leiomyoma variants, STUMP, leiomyosarcoma)",
+    "kind": "textbook",
+    "citation": "WHO Classification of Tumours Editorial Board. Female Genital Tumours. Lyon: IARC; 2020. 5th ed. — uterine leiomyosarcoma, diagnostic criteria",
+    "checked": "서지만(문항 imaging-2026-0342 해설 근거 목록에서 옮김, 원문 미대조 — 검토 항목). 세 악성 기준과 판정 규칙, 괴사 종류, 세포성·적색변성 평활근종, STUMP, 감별 진단 표의 서술에 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-10-18",
+    "url": ""
+   },
+   {
+    "id": "bell-1994",
+    "org": "Bell SW, Kempson RL, Hendrickson MR",
+    "title": "Problematic uterine smooth muscle neoplasms: a clinicopathologic study of 213 cases",
+    "kind": "other",
+    "citation": "Am J Surg Pathol 1994;18(6):535-558",
+    "checked": "서지만(문항 해설 근거 목록에서 옮김, 원문·초록 미대조 — 컨테이너가 PubMed 를 막음). PMID 는 기억으로 적었다(학습서 워크플로가 확인 — 검토 항목). 괴사·이형성·유사분열 조합 기준(스탠퍼드 기준)의 근거로 쓴다",
+    "doi": "",
+    "pmid": "8179071",
+    "verified": "citation",
+    "year": "1994",
+    "checkedAt": "2026-10-18",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8179071/"
+   },
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 89: Gynecologic Malignancies",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 89장 Gynecologic Malignancies, 인쇄쪽 699–700",
+    "checked": "드라이브 장 문서로 본문 대조. p.699 자궁 평활근에서 양성(평활근종)·악성(평활근육종) 종양이 생기며 임상 양상이 매우 다름. p.700 자궁 육종(암육종·평활근육종)은 흔히 증상 있는 큰 골반 종괴로 발견되고 기능성 출혈이 있을 수도 없을 수도, 골반통으로 오기도 함; 암육종 외 자궁 육종 중 평활근육종이 가장 흔하고 재발 시 도세탁셀/젬시타빈, 보조요법 이득은 뚜렷하지 않음. 조직 진단 기준은 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-10-18",
+    "url": ""
+   },
+   {
+    "id": "pmc-lms-pregnancy-2026",
+    "org": "Medicine (Baltimore) (증례 보고, PMC Open Access)",
+    "title": "Leiomyosarcoma of uterus in pregnancy: A case report",
+    "kind": "other",
+    "citation": "Medicine (Baltimore) 2026;105(19):e48608",
+    "checked": "문항 imaging-2026-0342 의 그림(Figure 7)과 그 출처 기록만 확인(exam-builder 풀 기록). 본문은 열지 않았다",
+    "doi": "10.1097/MD.0000000000048608",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-10-18",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13166545/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "자궁 평활근 종양에서 평활근육종을 정하는 세 기준과 판정 규칙은?",
+    "a": "종양세포 괴사, 미만성 중등도 이상 핵 이형성, 유사분열 ≥ 10/10 HPF — 이 중 둘 이상이면 평활근육종."
+   },
+   {
+    "q": "종양세포 괴사와 경색형(유리질화) 괴사를 가르는 소견은?",
+    "a": "종양세포 괴사는 살아 있는 종양에서 갑자기 넘어가고 이형 핵 윤곽이 남는다. 경색형은 사이에 육아조직·유리질화 띠가 끼고 이형성이 없다."
+   },
+   {
+    "q": "세포성 평활근종이 평활근육종과 다른 점은?",
+    "a": "세포 밀도만 높고 핵 이형성·종양세포 괴사가 없으며 유사분열이 적다 — 세포 밀도는 악성 기준이 아니다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 임신 중 아픈 자궁 종괴",
+    "stem": "31세 임신부가 임신 20주에 시작된 하복부 통증과 미열로 왔다. 체온 37.8 °C 이다. 초음파에서 자궁 근층에 7 cm 종괴가 있고 내부에 낭성 변화가 있다. 진통제로 증상이 가라앉았고, 분만 뒤 6주에 잰 종괴는 5 cm 로 줄었다. 증상이 되풀이되어 종괴절제술을 하였다. 엇갈리는 다발로 배열한 방추형 세포 종양이며, 넓은 출혈·괴사 구역과 살아 있는 종양 사이에 육아조직과 유리질화 띠가 끼어 있다. 핵 이형성은 없고 유사분열은 고배율 10시야당 3개다. 진단은?",
+    "options": [
+     "평활근육종",
+     "세포성 평활근종",
+     "적색변성을 동반한 평활근종",
+     "저등급 자궁내막 간질육종",
+     "악성 잠재성 불명 평활근 종양"
+    ],
+    "answer": 3,
+    "explanation": "괴사가 있어도 그 사이에 육아조직·유리질화 띠가 낀 경색형이고, 핵 이형성이 없으며 유사분열도 적다 — 악성 기준을 하나도 충족하지 않는다. 임신 중 통증·미열과 분만 뒤 크기 감소는 적색변성(출혈성 경색)에 맞는다. 원래 문항은 핵 이형성이 뚜렷하고 유사분열이 18/10 HPF 에 종양세포 괴사까지 있어 기준 셋을 모두 충족한 평활근육종이었다.",
+    "of": "imaging-2026-0342",
+    "changed": "핵 이형성 뚜렷·유사분열 18/10 HPF·분만 뒤 재성장 → 핵 이형성 없음·유사분열 3/10 HPF·괴사와 종양 사이 유리질화 띠·분만 뒤 크기 감소 → 답이 평활근육종에서 적색변성 평활근종으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 임신과 무관한 자궁 종괴",
+    "stem": "49세 여자가 6개월 동안 늘어난 월경량과 하복부 팽만으로 왔다. 1년 전 건강검진 초음파에서 4 cm 였던 자궁 근층 종괴가 이번에는 10 cm 다. 혈색소 9.8 g/dL 이다. 자궁절제술을 하였다. 종괴는 엇갈리는 다발로 배열한 세포 밀도 높은 방추형 세포로 되어 있고, 살아 있는 종양에서 괴사 구역으로 갑자기 넘어가며 괴사 안에 이형 핵의 윤곽이 남아 있다. 핵 이형성이 미만성으로 뚜렷하고 유사분열은 고배율 10시야당 14개다. 진단은?",
+    "options": [
+     "세포성 평활근종",
+     "평활근육종",
+     "적색변성을 동반한 평활근종",
+     "저등급 자궁내막 간질육종",
+     "지방평활근종"
+    ],
+    "answer": 2,
+    "explanation": "나이·증상·임신 여부·제시 방식이 바뀌었지만 결정적 단서는 같다 — 종양세포 괴사, 미만성 뚜렷한 핵 이형성, 유사분열 ≥ 10/10 HPF 로 세 기준을 모두 충족하므로 평활근육종이다. 세포 밀도가 높다는 점에 끌려 세포성 평활근종을 고르면 안 된다 — 세포성 평활근종에는 이형성·종양세포 괴사가 없다.",
+    "of": "imaging-2026-0342",
+    "changed": "임신 중 성장 → 폐경 전후 과다 월경과 6개월 새 커진 종괴, 나이 35 → 49세, 그림 대신 조직 소견을 글로 — 「종양세포 괴사·핵 이형성 뚜렷·유사분열 ≥ 10/10 HPF」는 그대로 → 답은 여전히 평활근육종",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13166545_figure7.jpg",
+    "kind": "histology",
+    "at": "가르는 소견 — 괴사의 종류와 핵",
+    "shows": "임신 중 자궁 평활근육종 증례의 재수술 조직(H&E 저배율)",
+    "look": [
+     "오른쪽 — 세포가 빽빽한 방추형 세포 종양",
+     "왼쪽 — 호산성 출혈·무구조 구역과 종양 사이의 경계"
+    ],
+    "label": "「Pathological image after the second surgery.」 — Leiomyosarcoma of uterus in pregnancy: A case report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Leiomyosarcoma of uterus in pregnancy: A case report",
+    "doiUrl": "https://doi.org/10.1097/MD.0000000000048608",
+    "citedBy": null,
+    "credit": "Leiomyosarcoma of uterus in pregnancy: A case report. Medicine (Baltimore). 2026 May 8;105(19):e48608. doi: 10.1097/MD.0000000000048608 (CC BY) — Figure 7.",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13166545/",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "자궁 근층 방추형 세포 종양 — 양성·악성 가르기",
+  "geo": {
+   "title": "자궁 근층 방추형 세포 종양 — 양성·악성 가르기",
+   "w": 567.0,
+   "h": 572.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "자궁 근층 종괴 — 방추형",
+      "세포 종양"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "pattern",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "엇갈리는 다발인가, 둥근",
+      "세포인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "ess",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "소동맥 주위 둥근 세포 →",
+      "자궁내막 간질 종양"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 209.0
+    },
+    {
+     "id": "ask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "괴사 종류·핵 이형성·",
+      "유사분열 수를 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 209.0
+    },
+    {
+     "id": "crit",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "악성 기준 셋 중 몇 개인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 295.0
+    },
+    {
+     "id": "lms",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "둘 이상 → 평활근육종"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 385.0
+    },
+    {
+     "id": "benign",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "괴사가 있다면 어떤",
+      "괴사인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 385.0
+    },
+    {
+     "id": "red",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "경색형 괴사·이형성 없음 →",
+      "적색변성"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 492.0
+    },
+    {
+     "id": "cell",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "괴사 없음·세포만 빽빽 →",
+      "세포성 평활근종"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 492.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "pattern",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "pattern",
+     "to": "ask",
+     "points": [
+      [
+       307.3,
+       166.0
+      ],
+      [
+       307.3,
+       195.0
+      ],
+      [
+       227.0,
+       195.0
+      ],
+      [
+       227.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "평활근 다발"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 274.0,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "pattern",
+     "to": "ess",
+     "points": [
+      [
+       372.7,
+       166.0
+      ],
+      [
+       372.7,
+       195.0
+      ],
+      [
+       453.0,
+       195.0
+      ],
+      [
+       453.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "둥근 세포"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 344.8,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "crit",
+     "points": [
+      [
+       227.0,
+       273.0
+      ],
+      [
+       227.0,
+       295.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "crit",
+     "to": "lms",
+     "points": [
+      [
+       194.3,
+       342.0
+      ],
+      [
+       194.3,
+       371.0
+      ],
+      [
+       114.0,
+       371.0
+      ],
+      [
+       114.0,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "둘 이상"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 172.0,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "crit",
+     "to": "benign",
+     "points": [
+      [
+       259.7,
+       342.0
+      ],
+      [
+       259.7,
+       371.0
+      ],
+      [
+       340.0,
+       371.0
+      ],
+      [
+       340.0,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나 이하"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "benign",
+     "to": "red",
+     "points": [
+      [
+       307.3,
+       449.0
+      ],
+      [
+       307.3,
+       478.0
+      ],
+      [
+       227.0,
+       478.0
+      ],
+      [
+       227.0,
+       492.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "경색형"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 453.0
+     }
+    },
+    {
+     "from": "benign",
+     "to": "cell",
+     "points": [
+      [
+       372.7,
+       449.0
+      ],
+      [
+       372.7,
+       478.0
+      ],
+      [
+       453.0,
+       478.0
+      ],
+      [
+       453.0,
+       492.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "괴사 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 344.8,
+      "y": 453.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "자궁 근층 종괴 — 방추형 세포 종양",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "엇갈리는 다발인가, 둥근 세포인가?"
+     }
+    ]
+   },
+   {
+    "id": "pattern",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "엇갈리는 다발인가, 둥근 세포인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "평활근 다발",
+      "to": 3,
+      "toText": "괴사 종류·핵 이형성·유사분열 수를 확인"
+     },
+     {
+      "label": "둥근 세포",
+      "to": 4,
+      "toText": "소동맥 주위 둥근 세포 → 자궁내막 간질 종양"
+     }
+    ]
+   },
+   {
+    "id": "ask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "괴사 종류·핵 이형성·유사분열 수를 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "악성 기준 셋 중 몇 개인가?"
+     }
+    ]
+   },
+   {
+    "id": "ess",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "소동맥 주위 둥근 세포 → 자궁내막 간질 종양",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "crit",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "악성 기준 셋 중 몇 개인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "둘 이상",
+      "to": 6,
+      "toText": "둘 이상 → 평활근육종"
+     },
+     {
+      "label": "하나 이하",
+      "to": 7,
+      "toText": "괴사가 있다면 어떤 괴사인가?"
+     }
+    ]
+   },
+   {
+    "id": "lms",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "둘 이상 → 평활근육종",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "benign",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "괴사가 있다면 어떤 괴사인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "경색형",
+      "to": 8,
+      "toText": "경색형 괴사·이형성 없음 → 적색변성"
+     },
+     {
+      "label": "괴사 없음",
+      "to": 9,
+      "toText": "괴사 없음·세포만 빽빽 → 세포성 평활근종"
+     }
+    ]
+   },
+   {
+    "id": "red",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "경색형 괴사·이형성 없음 → 적색변성",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cell",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "괴사 없음·세포만 빽빽 → 세포성 평활근종",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0342"
   ],
   "hasErrors": false
  },
