@@ -1,20 +1,18 @@
 {
- "started": "2026-10-16T08:47:48+09:00",
+ "started": "2026-10-17T08:47:20+09:00",
  "built": [
-  "피부과",
-  "류마티스내과",
-  "신장내과",
-  "비뇨의학과"
+  "소아청소년과",
+  "류마티스내과"
  ],
  "skipped": [
   "응급의학과",
   "정형외과",
+  "피부과",
   "순환기내과",
   "내분비내과",
   "안과",
   "외과",
   "산부인과",
-  "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
   "호흡기내과",
@@ -22,29 +20,25 @@
   "소화기내과",
   "알레르기내과",
   "기초의학",
-  "신경과"
+  "신장내과",
+  "신경과",
+  "비뇨의학과"
  ],
  "failed": {},
  "retry": [],
  "previews": [],
  "validation": {
-  "피부과": [],
-  "류마티스내과": [],
-  "신장내과": [],
-  "비뇨의학과": []
+  "소아청소년과": [],
+  "류마티스내과": []
  },
  "notes": {
-  "피부과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 35%)"
-  ],
+  "소아청소년과": [],
   "류마티스내과": [
    "배치 탐색 뒤에도 남은 빈 공간: 15쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)",
    "배치 탐색 뒤에도 남은 빈 공간: 15쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)",
    "배치 탐색 뒤에도 남은 빈 공간: 34쪽 왼쪽 단 아래가 비어 있다(빈 공간 46%)",
    "배치 탐색 뒤에도 남은 빈 공간: 34쪽 오른쪽 단 아래가 비어 있다(빈 공간 46%)"
-  ],
-  "신장내과": [],
-  "비뇨의학과": []
+  ]
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -58,21 +52,30 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "피부과": {
-   "tried": 133,
+  "소아청소년과": {
+   "tried": 117,
    "diagram_after_section": {
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 12,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 17,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup": 17,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#shrink": 1.0,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#pad": 0,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#col": true
+    "u-cn-peds-biliary-atresia-cholestasis-workup": 16,
+    "u-cn-peds-biliary-atresia-cholestasis-workup#shrink": 1.0,
+    "u-cn-peds-biliary-atresia-cholestasis-workup#pad": 0,
+    "u-cn-peds-biliary-atresia-cholestasis-workup#col": true,
+    "u-cn-peds-pertussis-infant-macrolide-choice": 10,
+    "u-cn-peds-pertussis-infant-macrolide-choice#shrink": 1.0,
+    "u-cn-peds-pertussis-infant-macrolide-choice#pad": 0,
+    "u-cn-peds-pertussis-infant-macrolide-choice#col": false,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis": 14,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#shrink": 1.0,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#pad": 0,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#col": true,
+    "u-cn-peds-rheumatic-fever-acute-eradication": 19,
+    "u-cn-peds-rheumatic-fever-acute-eradication#shrink": 1.0,
+    "u-cn-peds-rheumatic-fever-acute-eradication#pad": 0,
+    "u-cn-peds-rheumatic-fever-acute-eradication#col": true,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#figscale:f1": 0.85,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation": 15,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#shrink": 1.0,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#pad": 0,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#col": true
    }
   },
   "류마티스내과": {
@@ -108,71 +111,37 @@
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 14,
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
    }
-  },
-  "신장내과": {
-   "tried": 9,
-   "diagram_after_section": {
-    "u-cn-neph-siadh-chronic-mild-fluid-restriction": 18,
-    "u-cn-neph-siadh-chronic-mild-fluid-restriction#shrink": 1.0,
-    "u-cn-neph-siadh-chronic-mild-fluid-restriction#pad": 0,
-    "u-cn-neph-siadh-chronic-mild-fluid-restriction#col": true
-   }
-  },
-  "비뇨의학과": {
-   "tried": 5,
-   "diagram_after_section": {
-    "u-cn-uro-testis-histology-leydig-lh-target": 15,
-    "u-cn-uro-testis-histology-leydig-lh-target#shrink": 1.0,
-    "u-cn-uro-testis-histology-leydig-lh-target#pad": 28,
-    "u-cn-uro-testis-histology-leydig-lh-target#col": false
-   }
   }
  },
  "result": "ok",
- "finished": "2026-10-16T09:33:29+09:00",
+ "finished": "2026-10-17T09:33:49+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "피부과": {
-    "file": "MedKOS_학습서_피부과.pdf",
+   "소아청소년과": {
+    "file": "MedKOS_학습서_소아청소년과.pdf",
     "status": "uploaded",
-    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
     "kept_id": true,
-    "md5": "730fdd1e4021133c3fa446d2c7aaf01d",
-    "archive": "MedKOS_학습서_피부과_v13_2026-10-16.pdf"
+    "md5": "a4b2eda22e99a1ed6578401267906934",
+    "archive": "MedKOS_학습서_소아청소년과_v16_2026-10-17.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "ad586ecabb9e42e58f8b92883eb3cc21",
-    "archive": "MedKOS_학습서_류마티스내과_v22_2026-10-16.pdf"
-   },
-   "신장내과": {
-    "file": "MedKOS_학습서_신장내과.pdf",
-    "status": "uploaded",
-    "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "kept_id": true,
-    "md5": "ea72f6311ee28eed0e3a25b5e46ebc3a",
-    "archive": "MedKOS_학습서_신장내과_v10_2026-10-16.pdf"
-   },
-   "비뇨의학과": {
-    "file": "MedKOS_학습서_비뇨의학과.pdf",
-    "status": "uploaded",
-    "id": "1RV2zyMBw8OO3rtrSfsIgW0Fm1Whmiu6T",
-    "kept_id": true,
-    "md5": "fe7059869a1ac4541def7bfcb2a32f82",
-    "archive": "MedKOS_학습서_비뇨의학과_v5_2026-10-16.pdf"
+    "md5": "037c3592435f98c1408fd0414119927f",
+    "archive": "MedKOS_학습서_류마티스내과_v23_2026-10-17.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "82f879775d05a3bdd57c2a17abf99d81"
+    "md5": "94dc32704e3d0861905584accb592511"
    }
   },
-  "at": "2026-10-16T09:33:29+09:00"
+  "at": "2026-10-17T09:33:49+09:00"
  }
 }

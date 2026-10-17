@@ -211,9 +211,9 @@
    ]
   },
   "소아청소년과": {
-   "hash": "637354cc7129cfecef79",
-   "version": 15,
-   "date": "2026-10-11",
+   "hash": "c061a278dab2f615dc86",
+   "version": 16,
+   "date": "2026-10-17",
    "file": "MedKOS_학습서_소아청소년과.pdf",
    "pages": 18,
    "template_version": 11,
@@ -250,7 +250,7 @@
     },
     "cn.peds.pyloric-stenosis.preop-resuscitation": {
      "title": "비대유문협착증 — 수술보다 수액·전해질 교정이 먼저",
-     "page": 11,
+     "page": 10,
      "concept_hash": "a0799e91e4f8b1bf",
      "concept_version": 3
     },
@@ -267,17 +267,17 @@
      "concept_version": 3
     },
     "cn.peds.febrile-seizure.workup": {
-     "title": "열성경련 뒤 — 추가 검사가 필요한 경우와 필요 없는 경우",
+     "title": "열성경련 — 단순형이면 추가 검사 없이 귀가",
      "page": 17,
-     "concept_hash": "9c95a903eea48716",
-     "concept_version": 1
+     "concept_hash": "695da3294d55bcd1",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "ca37dcd6f95fe806c1d705f2c135c70b",
-    "version": 15,
-    "uploaded": "2026-10-11T09:45:59+09:00"
+    "md5": "a4b2eda22e99a1ed6578401267906934",
+    "version": 16,
+    "uploaded": "2026-10-17T09:33:49+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -294,13 +294,11 @@
     "MedKOS_학습서_소아청소년과_v12_2026-10-05.pdf",
     "MedKOS_학습서_소아청소년과_v13_2026-10-06.pdf",
     "MedKOS_학습서_소아청소년과_v14_2026-10-10.pdf",
-    "MedKOS_학습서_소아청소년과_v15_2026-10-11.pdf"
+    "MedKOS_학습서_소아청소년과_v15_2026-10-11.pdf",
+    "MedKOS_학습서_소아청소년과_v16_2026-10-17.pdf"
    ],
    "changes": [
-    "내용 갱신: 급성 류마티스열 — 급성기 뒤엔 벤자틴 4주마다 재발 예방 (정리본 v2 → v3)",
-    "내용 갱신: 급성 류마티스열 — 확진되면 모두 페니실린 제균 (정리본 v1 → v2)",
-    "내용 갱신: 비대유문협착증 — 수술보다 수액·전해질 교정이 먼저 (정리본 v2 → v3)",
-    "내용 갱신: STEC 용혈요독증후군 — 지지치료, 항생제·혈장교환은 안 한다 (정리본 v2 → v3)"
+    "내용 갱신: 열성경련 — 단순형이면 추가 검사 없이 귀가 (정리본 v1 → v2)"
    ]
   },
   "안과": {
@@ -600,9 +598,9 @@
    ]
   },
   "류마티스내과": {
-   "hash": "19747304edeec87e87eb",
-   "version": 22,
-   "date": "2026-10-16",
+   "hash": "a6674dff475571727317",
+   "version": 23,
+   "date": "2026-10-17",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 41,
    "template_version": 11,
@@ -706,7 +704,7 @@
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
      "page": 32,
-     "concept_hash": "ed897495b227bc60",
+     "concept_hash": "3e9459e8db6ede90",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
@@ -736,9 +734,9 @@
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "ad586ecabb9e42e58f8b92883eb3cc21",
-    "version": 22,
-    "uploaded": "2026-10-16T09:33:29+09:00"
+    "md5": "037c3592435f98c1408fd0414119927f",
+    "version": 23,
+    "uploaded": "2026-10-17T09:33:49+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -762,11 +760,10 @@
     "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf",
     "MedKOS_학습서_류마티스내과_v20_2026-10-14.pdf",
     "MedKOS_학습서_류마티스내과_v21_2026-10-15.pdf",
-    "MedKOS_학습서_류마티스내과_v22_2026-10-16.pdf"
+    "MedKOS_학습서_류마티스내과_v22_2026-10-16.pdf",
+    "MedKOS_학습서_류마티스내과_v23_2026-10-17.pdf"
    ],
    "changes": [
-    "내용 갱신: 전신홍반루푸스 — 치료 강도는 장기 침범이 정한다 (정리본 v1 → v2)",
-    "새 단원: 재발성 다발연골염 — 귓불을 남기는 귀 연골염",
     "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정"
    ]
   },
@@ -1256,13 +1253,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "82f879775d05a3bdd57c2a17abf99d81",
+   "md5": "94dc32704e3d0861905584accb592511",
    "version": null,
-   "uploaded": "2026-10-16T09:33:29+09:00"
+   "uploaded": "2026-10-17T09:33:49+09:00"
   }
  },
- "updated": "2026-10-16"
+ "updated": "2026-10-17"
 }
