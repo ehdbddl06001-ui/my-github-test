@@ -15411,9 +15411,266 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0774",
+   "session": 15,
+   "title": "Tagging 2 D-1 최종 점검",
+   "subtitle": "새 내용 없음 · 퀴즈판 인출 드릴 5 · 순서 문항 표 · 신경지배 예외 · 답안 표기",
+   "sections": [
+    "1. 답안 표기 — Tagging 1 에서 배운 것 그대로",
+    "2. 인출 드릴 A — 팔오금 · 손목굴 · 고샅관 (10회차)",
+    "3. 인출 드릴 B — 폄근 여섯 칸 · 간세동이 (11회차)",
+    "4. 인출 드릴 C — 척주관과 샅 (12회차)",
+    "5. 인출 드릴 D — 머리덮개 · 해면정맥굴 · 가로막 · 콩팥문 (13회차)",
+    "6. 인출 드릴 E — 골반가로막 (14회차)",
+    "7. 순서 문항 표 — 이름을 다 맞혀도 순서가 틀리면 오답",
+    "8. 신경지배 — 규칙보다 예외가 출제된다",
+    "9. 좌우 · 앞뒤가 답을 가르는 자리",
+    "10. 시험장 운영 — 카데바와 장기 테이블",
+    "11. 막혔을 때 — 부분점수를 얻는 답안",
+    "12. 오늘 밤 30분 · 내일 아침 15분"
+   ],
+   "figs": [
+    "diag-pelvic-diaphragm-quiz.svg",
+    "tree-s10-bundle-quiz.svg",
+    "tree-s11-bundle-quiz.svg",
+    "tree-s12-bundle-quiz.svg",
+    "tree-s13-bundle-quiz.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "약자는 마침표까지가 한 단어",
+     "full": "a. v. n. m. lig. sup. inf. ant. post. med. lat. — 마침표를 빼면 인정되지 않을 수 있다",
+     "note": "Tagging 2 범위는 인대(lig.)가 많다 — 관절 두 회차(14 · 15)에서 lig. 마침표를 빠뜨리지 않는다"
+    },
+    {
+     "key": "작은가슴근이 겨드랑의 좌표계",
+     "full": "겨드랑동맥 1·2·3부 = 가지 1·2·3개 · 다발 이름(가쪽·안쪽·뒤)도 작은가슴근 기준",
+     "note": "부 번호 = 가지 수 — 세는 순서가 곧 답"
+    },
+    {
+     "key": "팔오금 TAN · 손목굴 9+1",
+     "full": "가쪽→안쪽 힘줄(위팔두갈래근)–위팔동맥–정중신경 / 손목굴 = 굽힘근 힘줄 9 + 정중신경 1",
+     "note": "자신경·자동맥은 손목굴이 아니라 자신경굴(굽힘근지지띠 위)"
+    },
+    {
+     "key": "뒤칸은 노신경 하나",
+     "full": "위팔 뒤칸·아래팔 뒤칸·손등 = 노신경 계열 — 함정은 '어느 가지냐'",
+     "note": "깊은가지(뒤뼈사이신경) = 운동, 얕은가지 = 감각"
+    },
+    {
+     "key": "예외는 언제나 하나 둘",
+     "full": "후두근 = 아래후두신경, 예외 반지방패근 / 인두근 = 미주신경, 예외 붓인두근(IX)·입천장긴장근(V3) / 눈근육 = III, 예외 LR6·SO4",
+     "note": "규칙보다 예외가 출제된다 — 예외를 먼저 말하고 '나머지는'으로 닫는다"
+    },
+    {
+     "key": "앞→뒤 VAP, 앞→뒤 VAB",
+     "full": "콩팥문 앞→뒤 = 정맥 · 동맥 · 깔때기 / 허파뿌리 앞→뒤 = 정맥 · 동맥 · 기관지",
+     "note": "둘 다 '정맥이 앞' — 뒤의 한 글자만 다르다"
+    },
+    {
+     "key": "가로막 8 · 10 · 12",
+     "full": "T8 대정맥구멍 · T10 식도구멍 · T12 대동맥구멍",
+     "note": "I ate(8) 10 eggs at 12"
+    },
+    {
+     "key": "S2·3·4",
+     "full": "음부신경 · 골반내장신경(부교감, 배뇨근 수축) 모두 S2–S4",
+     "note": "keeps the floor off the floor"
+    },
+    {
+     "key": "모르면 한 단계 위로",
+     "full": "이름이 안 나오면 '노신경의 가지'·'복강동맥의 가지'처럼 상위 계보라도 쓴다",
+     "note": "빈칸은 0점이다 — 절대 비우고 나오지 않는다"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-10-18",
+   "phase": "t2-mock",
+   "examPhase": "tagging-2",
+   "regions": [],
+   "concepts": {
+    "layer": [
+     "anatomy-2026-0001"
+    ],
+    "branch": [
+     "anatomy-2026-0003"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0030"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0471",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0013",
+    "anatomy-2026-0469",
+    "anatomy-2026-0480",
+    "anatomy-2026-0474",
+    "anatomy-2026-0472",
+    "anatomy-2026-0481"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
+   "date": "2026-10-17",
+   "phase": "t2-mock",
+   "examPhase": "tagging-2",
+   "regions": [],
+   "concepts": {
+    "layer": [
+     "anatomy-2026-0001"
+    ],
+    "branch": [
+     "anatomy-2026-0003"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0030"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0471",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0013",
+    "anatomy-2026-0469",
+    "anatomy-2026-0480",
+    "anatomy-2026-0474",
+    "anatomy-2026-0472",
+    "anatomy-2026-0481"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-10-16",
    "phase": "t2-mock",
@@ -18072,194 +18329,6 @@ window.MEDKOS_ANATOMY = {
      "anatomy-2026-0476",
      "anatomy-2026-0477",
      "anatomy-2026-0159"
-    ],
-    "d-14": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-09-18",
-   "phase": "t2-new",
-   "examPhase": "tagging-2",
-   "regions": [
-    "upper-limb",
-    "abdomen"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0032"
-    ],
-    "layer": [
-     "anatomy-2026-0035"
-    ],
-    "branch": [
-     "anatomy-2026-0002"
-    ],
-    "relation": [
-     "anatomy-2026-0001",
-     "anatomy-2026-0003"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0469",
-    "anatomy-2026-0471",
-    "anatomy-2026-0476",
-    "anatomy-2026-0512",
-    "anatomy-2026-0515",
-    "anatomy-2026-0468",
-    "anatomy-2026-0497",
-    "anatomy-2026-0470",
-    "anatomy-2026-0480",
-    "anatomy-2026-0516",
-    "anatomy-2026-0514",
-    "anatomy-2026-0517"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0476",
-     "anatomy-2026-0512",
-     "anatomy-2026-0515",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0516",
-     "anatomy-2026-0514",
-     "anatomy-2026-0517"
-    ],
-    "d-3": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0476",
-     "anatomy-2026-0512",
-     "anatomy-2026-0515",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0516",
-     "anatomy-2026-0514",
-     "anatomy-2026-0517"
-    ],
-    "d-7": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0474",
-     "anatomy-2026-0472",
-     "anatomy-2026-0159",
-     "anatomy-2026-0468",
-     "anatomy-2026-0031",
-     "anatomy-2026-0470",
-     "anatomy-2026-0378",
-     "anatomy-2026-0476",
-     "anatomy-2026-0154",
-     "anatomy-2026-0377"
-    ],
-    "d-14": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-09-17",
-   "phase": "t2-new",
-   "examPhase": "tagging-2",
-   "regions": [
-    "upper-limb",
-    "abdomen"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0032"
-    ],
-    "layer": [
-     "anatomy-2026-0035"
-    ],
-    "branch": [
-     "anatomy-2026-0002"
-    ],
-    "relation": [
-     "anatomy-2026-0001",
-     "anatomy-2026-0003"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0469",
-    "anatomy-2026-0471",
-    "anatomy-2026-0476",
-    "anatomy-2026-0512",
-    "anatomy-2026-0515",
-    "anatomy-2026-0468",
-    "anatomy-2026-0497",
-    "anatomy-2026-0470",
-    "anatomy-2026-0480",
-    "anatomy-2026-0516",
-    "anatomy-2026-0514",
-    "anatomy-2026-0517"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0476",
-     "anatomy-2026-0512",
-     "anatomy-2026-0515",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0516",
-     "anatomy-2026-0514",
-     "anatomy-2026-0517"
-    ],
-    "d-3": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0474",
-     "anatomy-2026-0472",
-     "anatomy-2026-0481",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0476",
-     "anatomy-2026-0477",
-     "anatomy-2026-0159"
-    ],
-    "d-7": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043"
     ],
     "d-14": [
      "anatomy-2026-0372",
