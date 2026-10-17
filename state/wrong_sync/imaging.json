@@ -454,8 +454,29 @@
    "date": "2026-10-17",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0342": {
+   "id": "imaging-2026-0342",
+   "exam": "imaging",
+   "subject": "병리·조직학",
+   "step": "",
+   "type": "병리·조직 — 임신 중 빠르게 커진 자궁 종괴의 조직",
+   "style": "kmle_style",
+   "modality": "HISTOLOGY",
+   "question": "진단은?",
+   "chosen": 4,
+   "chosenText": "세포성 평활근종",
+   "answer": 2,
+   "answerText": "평활근육종",
+   "coreNote": "",
+   "differ": "",
+   "decision": "방추형 세포 다발의 평활근 종양에 종양세포 괴사, 뚜렷한 핵 이형성, 유사분열 18/10 HPF 가 함께 있어 평활근육종이다. 임신 중 적색변성은 경색형 괴사이고 핵 이형성이 없다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "date": "2026-10-17",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-17T14:12:40.463Z"
+ "updated": "2026-10-17T14:14:56.509Z"
 }
