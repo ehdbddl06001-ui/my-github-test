@@ -433,8 +433,29 @@
    "date": "2026-10-08",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0344": {
+   "id": "imaging-2026-0344",
+   "exam": "imaging",
+   "subject": "호흡기",
+   "step": "Step 2",
+   "type": "호흡기 — 덱사메타손 중에도 산소 요구량이 빠르게 느는 바이러스 폐렴",
+   "style": "usmle_style",
+   "modality": "DX",
+   "question": "In addition to continuing dexamethasone, which of the following is the most appropriate next step in pharmacotherapy?",
+   "chosen": 3,
+   "chosenText": "COVID-19 convalescent plasma",
+   "answer": 0,
+   "answerText": "Tocilizumab",
+   "coreNote": "",
+   "differ": "",
+   "decision": "양쪽 하폐야 음영의 SARS-CoV-2 폐렴이 덱사메타손 중에도 하루 만에 고유량 산소로 악화하고 CRP 가 높다. 세균 감염 징후가 없으므로 덱사메타손에 토실리주맙(또는 바리시티닙)을 더한다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "date": "2026-10-17",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-08T13:41:31.229Z"
+ "updated": "2026-10-17T14:12:40.463Z"
 }
