@@ -15490,6 +15490,80 @@ window.MEDKOS_ANATOMY = {
  ],
  "daily": [
   {
+   "date": "2026-10-19",
+   "phase": "final-review",
+   "examPhase": "tagging-2",
+   "regions": [],
+   "concepts": {},
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0471",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0481"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ]
+   },
+   "estMinutes": 20
+  },
+  {
    "date": "2026-10-18",
    "phase": "t2-mock",
    "examPhase": "tagging-2",
@@ -18155,103 +18229,6 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "date": "2026-09-20",
-   "phase": "t2-new",
-   "examPhase": "tagging-2",
-   "regions": [
-    "upper-limb",
-    "abdomen"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0032"
-    ],
-    "layer": [
-     "anatomy-2026-0035"
-    ],
-    "branch": [
-     "anatomy-2026-0002"
-    ],
-    "relation": [
-     "anatomy-2026-0001",
-     "anatomy-2026-0003"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0469",
-    "anatomy-2026-0471",
-    "anatomy-2026-0476",
-    "anatomy-2026-0512",
-    "anatomy-2026-0515",
-    "anatomy-2026-0468",
-    "anatomy-2026-0497",
-    "anatomy-2026-0470",
-    "anatomy-2026-0480",
-    "anatomy-2026-0516",
-    "anatomy-2026-0514",
-    "anatomy-2026-0517"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0476",
-     "anatomy-2026-0512",
-     "anatomy-2026-0515",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0516",
-     "anatomy-2026-0514",
-     "anatomy-2026-0517"
-    ],
-    "d-3": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0476",
-     "anatomy-2026-0512",
-     "anatomy-2026-0515",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0516",
-     "anatomy-2026-0514",
-     "anatomy-2026-0517"
-    ],
-    "d-7": [
-     "anatomy-2026-0469",
-     "anatomy-2026-0471",
-     "anatomy-2026-0474",
-     "anatomy-2026-0472",
-     "anatomy-2026-0481",
-     "anatomy-2026-0468",
-     "anatomy-2026-0497",
-     "anatomy-2026-0470",
-     "anatomy-2026-0480",
-     "anatomy-2026-0476",
-     "anatomy-2026-0477",
-     "anatomy-2026-0159"
-    ],
-    "d-14": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-09-19",
    "phase": "t2-new",
    "examPhase": "tagging-2",
    "regions": [
