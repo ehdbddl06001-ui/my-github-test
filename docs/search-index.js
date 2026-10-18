@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3755,
+  "total": 3765,
   "byType": {
    "anatomy": 846,
+   "imaging": 369,
    "concept": 104,
    "paper": 791,
-   "imaging": 359,
    "kmle": 1440,
    "usmle": 198,
    "ailab": 14,
@@ -38,20 +38,20 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 92,
    "Hematology": 87,
    "Laboratory Medicine": 80,
-   "산부인과": 54,
-   "순환기": 31,
-   "호흡기": 24,
+   "산부인과": 56,
+   "순환기": 32,
+   "호흡기": 25,
+   "소화기": 23,
    "Physiology": 22,
-   "소화기": 22,
-   "소아과": 19,
-   "병리·조직학": 18,
+   "소아과": 20,
+   "병리·조직학": 19,
    "Pharmacology": 17,
+   "감염": 17,
    "내분비": 17,
+   "신경": 17,
    "응급·중환자": 17,
    "혈액·종양": 17,
    "Biochemistry": 16,
-   "감염": 16,
-   "신경": 16,
    "신장·비뇨기": 16,
    "Microbiology": 15,
    "피부과": 15,
@@ -62,9 +62,9 @@ window.MEDKOS_INDEX = {
    "근골격·류마티스": 10,
    "약리": 10,
    "정신과": 10,
+   "안과": 7,
    "영상의학": 7,
    "이비인후과": 7,
-   "안과": 6,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2605,
+   "high": 2615,
    "medium": 1100,
    "low": 50
   },
@@ -98,6 +98,180 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-19.md",
    "snippet": "오늘의 학습 (2026 10 19 · final review) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 39일 · Tagging 2까지 0일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-19 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 19 · final review) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 39일 · Tagging 2까지 0일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0370",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 비정형 편평세포와 HPV 16형 양성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0370.md",
+   "snippet": "35세 여자가 정기 자궁경부암 검진 결과를 들으러 왔다. 증상은 없고 출산 2회이며, 3년 전 세포검사는 정상이었다. 흡연하지 않는다. 혈압 118/72 mmHg, 맥박 72회/분이다. 질경 검사에서 자궁경부는 육안으로 정상이고 분비물은 없다. 이번 자궁경부 세포검사 결과는 비정형 편평세포 의미 미결정(ASC US)이고, 함께 시행한 HPV 유전형 검사에서 16형 양성이다. 다음 처치로 가장 적절한 것은? A. 1년 뒤 HPV",
+   "text": "산부인과 부인과 — 비정형 편평세포와 HPV 16형 양성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 35세 여자가 정기 자궁경부암 검진 결과를 들으러 왔다. 증상은 없고 출산 2회이며, 3년 전 세포검사는 정상이었다. 흡연하지 않는다. 혈압 118/72 mmHg, 맥박 72회/분이다. 질경 검사에서 자궁경부는 육안으로 정상이고 분비물은 없다. 이번 자궁경부 세포검사 결과는 비정형 편평세포 의미 미결정(ASC US)이고, 함께 시행한 HPV 유전형 검사에서 16형 양성이다. 다음 처치로 가장 적절한 것은? A. 1년 뒤 HPV 검사와 세포검사 병합 시행 B. 곧바로 원추절제술 C. 단순 자궁절제술 D. 3년 뒤 세포검사 반복 E. 질확대경검사"
+  },
+  {
+   "id": "imaging-2026-0369",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 페니실린 알레르기가 있는 임신부의 매독",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0369.md",
+   "snippet": "A 26 year old woman, gravida 1, para 0, at 14 weeks' gestation comes to the physician for her first prenatal visit. She feels well. She had an urticarial rash and wheezing within 30 minutes of taking amoxicillin at the age of 15 years. Temp",
+   "text": "감염 감염 — 페니실린 알레르기가 있는 임신부의 매독 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 A 26 year old woman, gravida 1, para 0, at 14 weeks' gestation comes to the physician for her first prenatal visit. She feels well. She had an urticarial rash and wheezing within 30 minutes of taking amoxicillin at the age of 15 years. Temperature is 36.9°C (98.4°F), pulse is 80/min, and blood pressure is 112/68 mm Hg. There are no genital ulcers, skin rash, mucous patches, or lymphadenopathy, and the neurologic examination shows no abnormalities. Serum rapid plasma reagin titer is 1:32, and a Treponema pallidum particle agglutination assay is positive. She has never been tested for syphilis before. Which of the following is the most appropriate management? A. Oral azithromycin as a single dose followed by repeat titers B. Repeat rapid plasma reagin titer in 4 weeks before deciding on treatment C. Penicillin desensitization followed by intramuscular benzathine penicillin G D. Oral doxycycline for 28 days without penicillin desensitization E. Intramuscular ceftriaxone daily for 10 days instead of penicillin"
+  },
+  {
+   "id": "imaging-2026-0368",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 리툭시맙 항암 전 HBsAg 음성·anti-HBc 양성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0368.md",
+   "snippet": "58세 남자가 미만성 거대B세포림프종으로 진단되어 리툭시맙·사이클로포스파마이드·독소루비신·빈크리스틴·프레드니솔론 항암치료를 앞두고 왔다. 간질환 병력과 수혈 받은 적은 없고, 술은 한 달에 한두 번 마신다. 혈압 126/78 mmHg, 맥박 76회/분이다. 황달과 간비종대는 없다. 혈액검사에서 AST 24 U/L, ALT 20 U/L, 총빌리루빈 0.6 mg/dL, 알부민 4.1 g/dL이다. B형간염 표면항원(HBsAg) 음",
+   "text": "소화기 소화기·간담췌 — 리툭시맙 항암 전 HBsAg 음성·anti-HBc 양성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 58세 남자가 미만성 거대B세포림프종으로 진단되어 리툭시맙·사이클로포스파마이드·독소루비신·빈크리스틴·프레드니솔론 항암치료를 앞두고 왔다. 간질환 병력과 수혈 받은 적은 없고, 술은 한 달에 한두 번 마신다. 혈압 126/78 mmHg, 맥박 76회/분이다. 황달과 간비종대는 없다. 혈액검사에서 AST 24 U/L, ALT 20 U/L, 총빌리루빈 0.6 mg/dL, 알부민 4.1 g/dL이다. B형간염 표면항원(HBsAg) 음성, 표면항체(anti HBs) 음성, 핵심항체(anti HBc, IgG) 양성이고, HBV DNA는 검출되지 않는다. C형간염 항체는 음성이다. 다음 처치로 가장 적절한 것은? A. 엔테카비르 예방 투여를 시작하고 항암치료를 진행 B. HBV DNA를 1~3개월마다 감시하고 상승하면 항바이러스제 시작 C. B형간염 백신 3회 접종을 마친 뒤 항암치료 시작 D. B형간염 면역글로불린을 투여하고 항암치료 진행 E. HBsAg 음성이므로 추가 조치 없이 항암치료 진행"
+  },
+  {
+   "id": "imaging-2026-0367",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 전자간증·천식 산모의 자궁이완 산후출혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0367.md",
+   "snippet": "33세 여자(임신 1회, 출산 0회)가 임신 39주에 질식분만을 한 지 20분 뒤 질출혈이 계속되어 측정한 출혈량이 1,200 mL에 이르렀다. 임신 35주에 전자간증으로 진단되었고 분만 중 혈압은 158/104 mmHg였다. 어릴 때부터 천식이 있어 흡입 스테로이드를 쓰고 있다. 현재 혈압 102/64 mmHg, 맥박 118회/분이다. 태반은 완전히 배출되었고, 자궁저부는 배꼽 위에서 물렁하게 만져지며 마사지하면 잠시 단단해",
+   "text": "산부인과 산과 — 전자간증·천식 산모의 자궁이완 산후출혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 33세 여자(임신 1회, 출산 0회)가 임신 39주에 질식분만을 한 지 20분 뒤 질출혈이 계속되어 측정한 출혈량이 1,200 mL에 이르렀다. 임신 35주에 전자간증으로 진단되었고 분만 중 혈압은 158/104 mmHg였다. 어릴 때부터 천식이 있어 흡입 스테로이드를 쓰고 있다. 현재 혈압 102/64 mmHg, 맥박 118회/분이다. 태반은 완전히 배출되었고, 자궁저부는 배꼽 위에서 물렁하게 만져지며 마사지하면 잠시 단단해졌다가 다시 물렁해진다. 산도 열상은 없다. 정맥로 2개를 확보해 수액을 주고 있고 옥시토신 정맥 지속 주입 중이다. 다음에 투여할 자궁수축제로 가장 적절한 것은? A. 카보프로스트 근육 주사 B. 테르부탈린 피하 주사 C. 니페디핀 경구 투여 D. 미소프로스톨 직장 투여 E. 메틸에르고노빈 근육 주사"
+  },
+  {
+   "id": "imaging-2026-0366",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 숨참과 발살바 수기에 커지는 수축기 잡음",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0366.md",
+   "snippet": "A 24 year old man comes to the physician because of shortness of breath and chest tightness when climbing stairs or running for 6 months. He has never fainted, and no family member has died suddenly. Pulse is 68/min, and blood pressure is 1",
+   "text": "순환기 순환기 — 운동 중 숨참과 발살바 수기에 커지는 수축기 잡음 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 A 24 year old man comes to the physician because of shortness of breath and chest tightness when climbing stairs or running for 6 months. He has never fainted, and no family member has died suddenly. Pulse is 68/min, and blood pressure is 122/72 mm Hg. A grade 3/6 systolic ejection murmur is heard at the left lower sternal border; it becomes louder with the Valsalva maneuver and on standing and softer with squatting. Jugular venous pressure is normal, and the lungs are clear. An ECG shows left ventricular hypertrophy. Echocardiography shows an interventricular septal thickness of 19 mm, a posterior wall thickness of 10 mm, systolic anterior motion of the anterior mitral leaflet, a resting left ventricular outflow tract gradient of 55 mm Hg, and an ejection fraction of 70%. Which of the following is the most appropriate initial pharmacotherapy for his symptoms? A. Digoxin B. Metoprolol C. Nitroglycerin D. Furosemide E. Amlodipine"
+  },
+  {
+   "id": "imaging-2026-0365",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 어두운 곳에서 시작된 한쪽 눈 통증과 무지개 무리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0365.md",
+   "snippet": "62세 여자가 2시간 전 어두운 영화관에서 나온 뒤 시작된 오른쪽 눈의 심한 통증, 두통, 구역으로 응급실에 왔다. 불빛 주위로 무지개 같은 무리가 보인다고 한다. 원시로 볼록렌즈 안경을 쓴다. 혈압 148/88 mmHg, 맥박 92회/분이다. 시력은 오른쪽 0.1, 왼쪽 0.8이다. 오른쪽 눈은 각막 주위 충혈과 각막 부종이 있고 동공은 5 mm로 빛반사가 없다. 안압은 오른쪽 58 mmHg, 왼쪽 16 mmHg이다. 세극등",
+   "text": "안과 안과 — 어두운 곳에서 시작된 한쪽 눈 통증과 무지개 무리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 62세 여자가 2시간 전 어두운 영화관에서 나온 뒤 시작된 오른쪽 눈의 심한 통증, 두통, 구역으로 응급실에 왔다. 불빛 주위로 무지개 같은 무리가 보인다고 한다. 원시로 볼록렌즈 안경을 쓴다. 혈압 148/88 mmHg, 맥박 92회/분이다. 시력은 오른쪽 0.1, 왼쪽 0.8이다. 오른쪽 눈은 각막 주위 충혈과 각막 부종이 있고 동공은 5 mm로 빛반사가 없다. 안압은 오른쪽 58 mmHg, 왼쪽 16 mmHg이다. 세극등 검사에서 양쪽 눈 모두 앞방이 얕다. 아세타졸아미드 정맥 주사와 티몰롤·필로카르핀 점안 후 오른쪽 안압이 18 mmHg로 내려가고 각막이 맑아졌다. 다음 치료로 가장 적절한 것은? A. 양쪽 눈 아트로핀 점안 B. 양쪽 눈 라타노프로스트 점안 유지 C. 양쪽 눈 레이저 주변부 홍채절개술 D. 오른쪽 눈만 레이저 주변부 홍채절개술 E. 오른쪽 눈 섬유주절제술"
+  },
+  {
+   "id": "imaging-2026-0364",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 조영 MRI 에서 뇌실질이 증강되지 않는 이유",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0364.md",
+   "snippet": "A 73 year old man comes to the physician because of headaches and difficulty finding words for 3 weeks. He has hypertension treated with amlodipine. Temperature is 36.8°C (98.2°F), pulse is 78/min, and blood pressure is 138/84 mm Hg. He has",
+   "text": "신경 신경 — 조영 MRI 에서 뇌실질이 증강되지 않는 이유 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 A 73 year old man comes to the physician because of headaches and difficulty finding words for 3 weeks. He has hypertension treated with amlodipine. Temperature is 36.8°C (98.2°F), pulse is 78/min, and blood pressure is 138/84 mm Hg. He has mild expressive aphasia; the rest of the neurologic examination shows no abnormalities. MRI of the brain with gadolinium shows an enhancing intra axial mass on higher sections. An axial T1 weighted MRI of the brain obtained after gadolinium administration at the level of the midbrain is shown. The normal brain parenchyma on this image does not enhance, whereas the dural venous sinus does. Which of the following structures is primarily responsible for this difference? A. Arachnoid barrier cells beneath the dura mater B. Tight junctions between capillary endothelial cells C. Foot processes of astrocytes surrounding the capillaries D. Pericytes embedded in the capillary basement membrane E. Ependymal cells lining the cerebral ventricles"
+  },
+  {
+   "id": "imaging-2026-0363",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 철봉에서 떨어진 아이의 손목 전후면 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0363.md",
+   "snippet": "7세 여아가 2시간 전 놀이터 구름사다리에서 떨어지며 오른손을 짚은 뒤 손목이 아파 움직이지 않으려 해 응급실에 왔다. 이전에 골절된 적은 없다. 활력징후는 정상이다. 손목 주름에서 약 3 cm 근위부의 원위 전완에 부종과 국소 압통이 있으나 눈에 보이는 변형은 없다. 요골동맥 맥박, 모세혈관 재충혈과 손의 감각은 정상이고 모든 손가락을 굽히고 펼 수 있다. 오른쪽 손목 전후면 X선 사진은 그림과 같다. 이 손상을 가장 잘 설",
+   "text": "소아과 소아청소년 — 철봉에서 떨어진 아이의 손목 전후면 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 7세 여아가 2시간 전 놀이터 구름사다리에서 떨어지며 오른손을 짚은 뒤 손목이 아파 움직이지 않으려 해 응급실에 왔다. 이전에 골절된 적은 없다. 활력징후는 정상이다. 손목 주름에서 약 3 cm 근위부의 원위 전완에 부종과 국소 압통이 있으나 눈에 보이는 변형은 없다. 요골동맥 맥박, 모세혈관 재충혈과 손의 감각은 정상이고 모든 손가락을 굽히고 펼 수 있다. 오른쪽 손목 전후면 X선 사진은 그림과 같다. 이 손상을 가장 잘 설명하는 것은? A. 골편 없이 원위 요골 성장판이 벌어진 Salter Harris 1형 골절 B. 원위 요골·척골은 정상이고 주상골 허리에 전위 없는 골절 C. 원위 요골 몸통 골절과 원위 요척관절의 탈구가 함께 있는 손상 D. 성장판을 침범하지 않은 원위 요골 골간단 골절과 원위 척골 골간단 융기 골절 E. 원위 요골 성장판을 지나 골간단 골편을 남긴 Salter Harris 2형 골절"
+  },
+  {
+   "id": "imaging-2026-0362",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 기관삽관한 바이러스 폐렴 환자의 첫 일회호흡량",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0362.md",
+   "snippet": "A 64 year old man is admitted to the intensive care unit because of worsening shortness of breath 9 days after the onset of fever and cough. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. He is 175 cm (5 ft 9 in) tall and weigh",
+   "text": "호흡기 호흡기 — 기관삽관한 바이러스 폐렴 환자의 첫 일회호흡량 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 A 64 year old man is admitted to the intensive care unit because of worsening shortness of breath 9 days after the onset of fever and cough. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. He is 175 cm (5 ft 9 in) tall and weighs 98 kg (216 lb). Despite high flow nasal oxygen, he becomes exhausted and is intubated. On assist control ventilation with an FIO2 of 0.6 and positive end expiratory pressure of 10 cm H2O, arterial PO2 is 68 mm Hg. Echocardiography shows normal left ventricular size and function. A portable chest x ray obtained after intubation is shown. Which of the following is the most appropriate initial tidal volume setting? A. 420 mL B. 280 mL C. 590 mL D. 700 mL E. 840 mL"
+  },
+  {
+   "id": "imaging-2026-0361",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 만성 췌장염 절제 검체의 남은 섬 세포 면역조직화학",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+   "confidence": "high",
+   "date": "2026-10-18",
+   "path": "content/imaging/2026/imaging-2026-0361.md",
+   "snippet": "73세 남자가 등으로 뻗치는 명치 통증이 약으로 조절되지 않아 췌장 부분절제술을 받았다. 25년 동안 술을 많이 마셨고 췌장염이 여러 번 재발하였으며, 기름지고 악취 나는 대변을 본다. 4년 전 당뇨병으로 진단되어 인슐린을 쓰는데, 적은 용량에도 심한 저혈당이 여러 번 있었다. 복부 CT에서 췌장 전체에 석회화가 있고 췌관이 늘어나 있었다. 절제 검체에서 샘꽈리 조직은 대부분 섬유 조직으로 바뀌어 있다. 절제한 췌장 조직 절편",
+   "text": "병리·조직학 병리·조직 — 만성 췌장염 절제 검체의 남은 섬 세포 면역조직화학 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522 73세 남자가 등으로 뻗치는 명치 통증이 약으로 조절되지 않아 췌장 부분절제술을 받았다. 25년 동안 술을 많이 마셨고 췌장염이 여러 번 재발하였으며, 기름지고 악취 나는 대변을 본다. 4년 전 당뇨병으로 진단되어 인슐린을 쓰는데, 적은 용량에도 심한 저혈당이 여러 번 있었다. 복부 CT에서 췌장 전체에 석회화가 있고 췌관이 늘어나 있었다. 절제 검체에서 샘꽈리 조직은 대부분 섬유 조직으로 바뀌어 있다. 절제한 췌장 조직 절편에 면역조직화학염색을 한 결과는 그림과 같다. 이 항체가 인식하는 항원으로 가장 적절한 것은? A. 인슐린 B. 크로모그라닌 A C. 트립시노겐 D. 사이토케라틴 19 E. 글루카곤"
   },
   {
    "id": "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria",

@@ -2,6 +2,1287 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0364",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "신경 — 조영 MRI 에서 뇌실질이 증강되지 않는 이유",
+  "type": "신경 — 조영 MRI 에서 뇌실질이 증강되지 않는 이유",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-18",
+  "vignette": "A 73-year-old man comes to the physician because of headaches and difficulty finding words for 3 weeks. He has hypertension treated with amlodipine. Temperature is 36.8°C (98.2°F), pulse is 78/min, and blood pressure is 138/84 mm Hg. He has mild expressive aphasia; the rest of the neurologic examination shows no abnormalities. MRI of the brain with gadolinium shows an enhancing intra-axial mass on higher sections. An axial T1-weighted MRI of the brain obtained after gadolinium administration at the level of the midbrain is shown. The normal brain parenchyma on this image does not enhance, whereas the dural venous sinus does.",
+  "question": "Which of the following structures is primarily responsible for this difference?",
+  "options": [
+   "Arachnoid barrier cells beneath the dura mater",
+   "Tight junctions between capillary endothelial cells",
+   "Foot processes of astrocytes surrounding the capillaries",
+   "Pericytes embedded in the capillary basement membrane",
+   "Ependymal cells lining the cerebral ventricles"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: On this postcontrast T1-weighted image, cerebrospinal fluid is dark, scalp fat is bright, and the dural venous sinus is bright because gadolinium stays in the blood there, but the brain parenchyma does not enhance. Gadolinium cannot leave brain capillaries because continuous endothelial cells are sealed by tight junctions (claudin-5, occludin) and have few transcytotic vesicles — the blood-brain barrier. Tumors such as high-grade glioma make leaky vessels without these junctions, so they enhance.\n- 원리: <b>What contrast enhancement means</b>: gadolinium shortens T1 and makes tissue bright only where it reaches. Inside blood vessels and venous sinuses it is always bright; in tissue it is bright only where it can leak out of capillaries into the extracellular space.<br> <b>What forms the barrier</b>: brain capillary endothelial cells are joined by continuous tight junctions (claudin-5, occludin, ZO-1), lack fenestrations, and have little pinocytosis, so even small molecules such as gadolinium chelates cannot pass. Astrocyte end-feet and pericytes surround the capillary and induce and maintain these endothelial properties, but the seal itself is the endothelial tight junction.<br> <b>Where enhancement is normal</b>: structures outside the barrier — dural sinuses and dura, choroid plexus, pituitary, and circumventricular organs such as the area postrema — enhance normally. In tumors, abscesses, demyelination, and subacute infarcts the barrier breaks down and parenchyma enhances.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Endothelial tight junctions (answer)</th><th>Astrocyte foot processes (closest distractor)</th></tr></thead><tbody> <tr><td>Role</td><td><b>Physically seal</b> the gap between endothelial cells</td><td>Induce and maintain the endothelial barrier phenotype</td></tr> <tr><td>Proteins</td><td>Claudin-5, occludin, ZO-1</td><td>Aquaporin-4 water channels, glucose transport support</td></tr> <tr><td>Small molecule passage</td><td>Blocked</td><td>Gaps between end-feet allow passage</td></tr> <tr><td>Loss leads to</td><td>Contrast leakage and vasogenic edema</td><td>Barrier weakens indirectly over time</td></tr> </tbody></table> Astrocytes tell endothelial cells to form the barrier, but the structure that actually stops gadolinium is the tight junction between endothelial cells.\n- 오답 이유:\n  - (A) Arachnoid barrier cells would be the answer if the question concerned separation of dural blood from subarachnoid cerebrospinal fluid, not from brain parenchyma.\n  - (C) Astrocyte foot processes would be the answer if the question asked which cells induce the barrier or regulate water through aquaporin-4; they do not form the seal.\n  - (D) Pericytes would be the answer if the question asked which contractile cells regulate capillary blood flow and support barrier development, not which structure blocks leakage.\n  - (E) Ependymal cells would be the answer if the question concerned exchange between cerebrospinal fluid and brain interstitium, which they do not block because they lack tight junctions.\n- 함정: Choosing astrocyte foot processes because they wrap the capillaries — they induce the barrier, but the seal is the endothelial tight junction.\n- 학습목표: 조영 후 T1 MRI 에서 경막 정맥동은 증강되고 뇌실질은 증강되지 않음을 읽고, 혈액뇌장벽을 이루는 구조가 모세혈관 내피세포 사이의 치밀연접임을 안다\n- 근거·출처: Kandel ER, et al. Principles of Neural Science, 6th ed. Ch. The blood-brain barrier · Abbott NJ, et al. Structure and function of the blood-brain barrier. Neurobiol Dis 2010;37:13-25 · TCIA UPENN-GBM collection (CC BY 4.0) (교사용) · 작성자 판독(2026-10-19): 조영 후 T1, 오른쪽 가로정맥동 증강·뇌실질 증강 없음, 이 단면에 종괴 없음\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …32629006 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On this postcontrast T1-weighted image, cerebrospinal fluid is dark, scalp fat is bright, and the dural venous sinus is bright because gadolinium stays in the blood there, but the brain parenchyma does not enhance. Gadolinium cannot leave brain capillaries because continuous endothelial cells are sealed by tight junctions (claudin-5, occludin) and have few transcytotic vesicles — the blood-brain barrier. Tumors such as high-grade glioma make leaky vessels without these junctions, so they enhance."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What contrast enhancement means</b>: gadolinium shortens T1 and makes tissue bright only where it reaches. Inside blood vessels and venous sinuses it is always bright; in tissue it is bright only where it can leak out of capillaries into the extracellular space.<br> <b>What forms the barrier</b>: brain capillary endothelial cells are joined by continuous tight junctions (claudin-5, occludin, ZO-1), lack fenestrations, and have little pinocytosis, so even small molecules such as gadolinium chelates cannot pass. Astrocyte end-feet and pericytes surround the capillary and induce and maintain these endothelial properties, but the seal itself is the endothelial tight junction.<br> <b>Where enhancement is normal</b>: structures outside the barrier — dural sinuses and dura, choroid plexus, pituitary, and circumventricular organs such as the area postrema — enhance normally. In tumors, abscesses, demyelination, and subacute infarcts the barrier breaks down and parenchyma enhances."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Endothelial tight junctions (answer)</th><th>Astrocyte foot processes (closest distractor)</th></tr></thead><tbody> <tr><td>Role</td><td><b>Physically seal</b> the gap between endothelial cells</td><td>Induce and maintain the endothelial barrier phenotype</td></tr> <tr><td>Proteins</td><td>Claudin-5, occludin, ZO-1</td><td>Aquaporin-4 water channels, glucose transport support</td></tr> <tr><td>Small molecule passage</td><td>Blocked</td><td>Gaps between end-feet allow passage</td></tr> <tr><td>Loss leads to</td><td>Contrast leakage and vasogenic edema</td><td>Barrier weakens indirectly over time</td></tr> </tbody></table> Astrocytes tell endothelial cells to form the barrier, but the structure that actually stops gadolinium is the tight junction between endothelial cells."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Arachnoid barrier cells would be the answer if the question concerned separation of dural blood from subarachnoid cerebrospinal fluid, not from brain parenchyma.\n(C) Astrocyte foot processes would be the answer if the question asked which cells induce the barrier or regulate water through aquaporin-4; they do not form the seal.\n(D) Pericytes would be the answer if the question asked which contractile cells regulate capillary blood flow and support barrier development, not which structure blocks leakage.\n(E) Ependymal cells would be the answer if the question concerned exchange between cerebrospinal fluid and brain interstitium, which they do not block because they lack tight junctions."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing astrocyte foot processes because they wrap the capillaries — they induce the barrier, but the seal is the endothelial tight junction."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영 후 T1 MRI 에서 경막 정맥동은 증강되고 뇌실질은 증강되지 않음을 읽고, 혈액뇌장벽을 이루는 구조가 모세혈관 내피세포 사이의 치밀연접임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kandel ER, et al. Principles of Neural Science, 6th ed. Ch. The blood-brain barrier · Abbott NJ, et al. Structure and function of the blood-brain barrier. Neurobiol Dis 2010;37:13-25 · TCIA UPENN-GBM collection (CC BY 4.0) (교사용) · 작성자 판독(2026-10-19): 조영 후 T1, 오른쪽 가로정맥동 증강·뇌실질 증강 없음, 이 단면에 종괴 없음 ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …32629006 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "조영 후 T1 에서 정맥동은 밝고 뇌실질은 증강되지 않는 것은 모세혈관 내피세포 사이 치밀연접이 가돌리늄의 누출을 막기 때문이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "장벽을 물리적으로 막는 구조(내피 치밀연접)와 그것을 유도하는 세포(성상세포)의 구분",
+   "steps": 2,
+   "chain": [
+    "영상: 뇌척수액 어둡고 지방·정맥동 밝음 → 조영 후 T1, 정맥동 안 가돌리늄은 보이지만 뇌실질로 새지 않음",
+    "뇌실질로의 누출을 막는 구조 → 연속 모세혈관 내피세포 사이의 치밀연접(혈액뇌장벽)"
+   ],
+   "key": [
+    {
+     "item": "영상: 뇌척수액은 어둡고 피하지방과 정맥동은 밝으며 뇌실질은 증강되지 않음",
+     "why": "조영 후 T1 과 혈액뇌장벽의 존재",
+     "also": []
+    },
+    {
+     "item": "enhancing intra-axial mass on higher sections",
+     "why": "장벽이 깨진 곳만 증강된다는 대조",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "difficulty finding words for 3 weeks",
+     "why": "종괴의 위치 단서 — 기전 판단에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "hypertension treated with amlodipine",
+     "why": "판단에 영향이 적은 배경",
+     "also": []
+    }
+   ],
+   "summary": "조영 후 T1 영상에서 정맥동은 밝지만 정상 뇌실질은 증강되지 않는다. 가돌리늄이 뇌 모세혈관 밖으로 새지 못하는 것은 내피세포 사이의 치밀연접 때문이며, 종양처럼 장벽이 깨진 곳만 증강된다.",
+   "switch": {
+    "choice": "C",
+    "condition": "뇌 모세혈관 내피가 장벽 성질을 갖도록 유도하고 수분을 조절하는 세포를 물었다면 성상세포 발돌기가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0364.png",
+   "caption": "Axial brain MRI, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; DICOM converted, no cropping)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.2543529179878026467492023476532629006",
+   "asset_id": "TCIA-UPENN_GBM-13157605075379",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …32629006"
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0363",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "소아청소년 — 철봉에서 떨어진 아이의 손목 전후면 X선",
+  "type": "소아청소년 — 철봉에서 떨어진 아이의 손목 전후면 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-18",
+  "vignette": "7세 여아가 2시간 전 놀이터 구름사다리에서 떨어지며 오른손을 짚은 뒤 손목이 아파 움직이지 않으려 해 응급실에 왔다. 이전에 골절된 적은 없다. 활력징후는 정상이다. 손목 주름에서 약 3 cm 근위부의 원위 전완에 부종과 국소 압통이 있으나 눈에 보이는 변형은 없다. 요골동맥 맥박, 모세혈관 재충혈과 손의 감각은 정상이고 모든 손가락을 굽히고 펼 수 있다. 오른쪽 손목 전후면 X선 사진은 그림과 같다.",
+  "question": "이 손상을 가장 잘 설명하는 것은?",
+  "options": [
+   "골편 없이 원위 요골 성장판이 벌어진 Salter-Harris 1형 골절",
+   "원위 요골·척골은 정상이고 주상골 허리에 전위 없는 골절",
+   "원위 요골 몸통 골절과 원위 요척관절의 탈구가 함께 있는 손상",
+   "성장판을 침범하지 않은 원위 요골 골간단 골절과 원위 척골 골간단 융기 골절",
+   "원위 요골 성장판을 지나 골간단 골편을 남긴 Salter-Harris 2형 골절"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 원위 요골 골간단을 성장판에서 약 3 cm 근위부에서 가로지르는 골절선과 요측 피질의 작은 단차가 있고, 원위 척골 골간단 피질이 살짝 부풀어 있다(융기 골절). 두 성장판은 열려 있고 골절선이 닿지 않으므로 Salter-Harris 손상이 아니라 골간단 골절이다. 손목 주름 3 cm 근위부의 압통 위치도 골간단과 맞는다.\n- 원리: <b>왜 소아의 원위 전완 골절은 모양이 다른가</b>: 소아의 골간단은 구멍이 많고 골막이 두껍고 느슨하게 붙어 있다. 압박 힘을 받으면 얇은 피질이 부러지지 않고 구겨져 융기(torus) 골절이 되고, 힘이 더 크면 한쪽 골막이 남은 채 골간단을 가로지르는 완전 골절이 된다.<br> <b>왜 성장판 침범 여부가 중요한가</b>: 성장판은 비대층이 가장 약하다. Salter-Harris 골절은 이 연골을 지나므로 길이 성장을 방해할 수 있어 더 가까이 추적한다. 골간단 골절은 성장 연골을 피하고, 빨리 자라는 원위 요골 성장판 가까이에 있어 재형성이 잘 된다.<br> <b>영상 읽는 법</b>: 요측에서 척측까지 투명한 성장판 선을 따라가 골절선이 한 번도 닿지 않으면 골간단 골절이다. 그다음 척골을 본다 — 양쪽 뼈 손상에서 척골 쪽은 미세한 융기인 경우가 많다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">성장판을 피한 골간단 골절(정답)</th><th>Salter-Harris 2형(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>골절선</td><td>골간단을 가로지르고 성장판에 <b>닿지 않는다</b></td><td>성장판을 따라가다 골간단으로 빠진다</td></tr> <tr><td>골편</td><td>골단에 붙은 골편 없음</td><td>삼각형 골간단 골편(Thurston-Holland)</td></tr> <tr><td>성장 장애 위험</td><td>매우 낮다</td><td>낮지만 있다 — 추적 필요</td></tr> <tr><td>압통 위치</td><td>손목 주름보다 근위부</td><td>성장판 높이</td></tr> </tbody></table> 골절선이 열린 성장판을 따라가다 골간단 모서리로 빠졌다면 Salter-Harris 2형이 정답이다.\n- 오답 이유:\n  - ① Salter-Harris 1형은 골간단 골절선 없이 골단이 밀리거나 성장판이 벌어지고 압통이 정확히 성장판 높이에 있을 때 정답이 된다.\n  - ② 주상골 허리 골절은 압통이 해부학적 코담뱃갑에 있고 주상골을 가로지르는 선이 보일 때 정답이 되며, 골격이 성숙하기 전에는 드물다.\n  - ③ 갈레아치 손상은 요골 몸통이 부러지고 원위 척골이 원위 요척관절에서 요골과 어긋나 있을 때 정답이 된다.\n  - ⑤ Salter-Harris 2형은 골절선이 성장판을 따라가다 골간단으로 빠져 삼각형 골간단 골편을 남길 때 정답이 된다.\n- 함정: 소아의 원위 요골 골절을 모두 Salter-Harris 손상으로 부르는 것 — 이 골절선은 골간단에 머물고 성장판은 온전하다.\n- 학습목표: 소아 손목 전후면 X선에서 원위 요골 골간단을 가로지르는 골절선이 열린 성장판에 닿지 않고 원위 척골 골간단 피질이 융기한 것을 읽어, 성장판 골절(Salter-Harris)과 구별한다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Common fractures — distal forearm fractures · Nagy E, et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 · GRAZPEDWRI-DX (figshare, CC BY 4.0) — 소아영상의학 전문의 주석 AO 23r-M/3.1, 23u-M/2.1 (교사용) · 작성자 판독(2026-10-19): 원위 요골 골간단 가로 골절선, 요측 피질 단차, 원위 척골 골간단 피질 융기, 성장판 침범 없음\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "원위 요골 골간단을 성장판에서 약 3 cm 근위부에서 가로지르는 골절선과 요측 피질의 작은 단차가 있고, 원위 척골 골간단 피질이 살짝 부풀어 있다(융기 골절). 두 성장판은 열려 있고 골절선이 닿지 않으므로 Salter-Harris 손상이 아니라 골간단 골절이다. 손목 주름 3 cm 근위부의 압통 위치도 골간단과 맞는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 소아의 원위 전완 골절은 모양이 다른가</b>: 소아의 골간단은 구멍이 많고 골막이 두껍고 느슨하게 붙어 있다. 압박 힘을 받으면 얇은 피질이 부러지지 않고 구겨져 융기(torus) 골절이 되고, 힘이 더 크면 한쪽 골막이 남은 채 골간단을 가로지르는 완전 골절이 된다.<br> <b>왜 성장판 침범 여부가 중요한가</b>: 성장판은 비대층이 가장 약하다. Salter-Harris 골절은 이 연골을 지나므로 길이 성장을 방해할 수 있어 더 가까이 추적한다. 골간단 골절은 성장 연골을 피하고, 빨리 자라는 원위 요골 성장판 가까이에 있어 재형성이 잘 된다.<br> <b>영상 읽는 법</b>: 요측에서 척측까지 투명한 성장판 선을 따라가 골절선이 한 번도 닿지 않으면 골간단 골절이다. 그다음 척골을 본다 — 양쪽 뼈 손상에서 척골 쪽은 미세한 융기인 경우가 많다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">성장판을 피한 골간단 골절(정답)</th><th>Salter-Harris 2형(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>골절선</td><td>골간단을 가로지르고 성장판에 <b>닿지 않는다</b></td><td>성장판을 따라가다 골간단으로 빠진다</td></tr> <tr><td>골편</td><td>골단에 붙은 골편 없음</td><td>삼각형 골간단 골편(Thurston-Holland)</td></tr> <tr><td>성장 장애 위험</td><td>매우 낮다</td><td>낮지만 있다 — 추적 필요</td></tr> <tr><td>압통 위치</td><td>손목 주름보다 근위부</td><td>성장판 높이</td></tr> </tbody></table> 골절선이 열린 성장판을 따라가다 골간단 모서리로 빠졌다면 Salter-Harris 2형이 정답이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① Salter-Harris 1형은 골간단 골절선 없이 골단이 밀리거나 성장판이 벌어지고 압통이 정확히 성장판 높이에 있을 때 정답이 된다.\n② 주상골 허리 골절은 압통이 해부학적 코담뱃갑에 있고 주상골을 가로지르는 선이 보일 때 정답이 되며, 골격이 성숙하기 전에는 드물다.\n③ 갈레아치 손상은 요골 몸통이 부러지고 원위 척골이 원위 요척관절에서 요골과 어긋나 있을 때 정답이 된다.\n⑤ Salter-Harris 2형은 골절선이 성장판을 따라가다 골간단으로 빠져 삼각형 골간단 골편을 남길 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "소아의 원위 요골 골절을 모두 Salter-Harris 손상으로 부르는 것 — 이 골절선은 골간단에 머물고 성장판은 온전하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 손목 전후면 X선에서 원위 요골 골간단을 가로지르는 골절선이 열린 성장판에 닿지 않고 원위 척골 골간단 피질이 융기한 것을 읽어, 성장판 골절(Salter-Harris)과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Common fractures — distal forearm fractures · Nagy E, et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 · GRAZPEDWRI-DX (figshare, CC BY 4.0) — 소아영상의학 전문의 주석 AO 23r-M/3.1, 23u-M/2.1 (교사용) · 작성자 판독(2026-10-19): 원위 요골 골간단 가로 골절선, 요측 피질 단차, 원위 척골 골간단 피질 융기, 성장판 침범 없음 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "골절선이 원위 요골 골간단을 가로지르되 열린 성장판에 닿지 않고 척골 골간단 피질이 융기했으므로 성장판을 피한 골간단 골절이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "골절선이 성장판을 따라가는지 — 이 영상에서는 성장판 몇 cm 위에서 끝난다",
+   "steps": 2,
+   "chain": [
+    "영상: 원위 요골 골간단 가로 골절선 + 성장판은 열려 있고 골절선이 닿지 않음 → 성장판 골절이 아님",
+    "영상: 원위 척골 골간단 피질 융기 + 손목 주름 3 cm 근위부 압통 → 양쪽 원위 골간단 골절(요골 완전·척골 융기)"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단 가로 골절선과 요측 피질 단차, 성장판에 닿지 않음",
+     "why": "성장판 골절과 가른다",
+     "also": []
+    },
+    {
+     "item": "영상: 원위 척골 골간단 피질의 작은 융기",
+     "why": "함께 있는 척골 융기 골절",
+     "also": []
+    },
+    {
+     "item": "손목 주름에서 약 3 cm 근위부",
+     "why": "압통 위치가 골간단과 맞는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "요골동맥 맥박, 모세혈관 재충혈과 손의 감각은 정상",
+     "why": "신경혈관 손상 없음 — 응급 정복 필요성 낮음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "눈에 보이는 변형은 없다",
+     "why": "전위가 적음 — 골절 형태 판정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "원위 요골 골간단을 가로지르는 골절선은 열린 성장판에 닿지 않고, 원위 척골 골간단 피질이 융기했다. 성장판을 피한 원위 전완 골간단 골절이며 Salter-Harris 손상이 아니다.",
+   "switch": {
+    "choice": "E",
+    "condition": "골절선이 성장판을 따라가다 골간단 모서리로 빠져 삼각 골편을 남겼다면 Salter-Harris 2형이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0363.png",
+   "caption": "오른쪽 손목·원위 전완 전후면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0998_0349819720_01_WRI-R1_F007",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0362",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "호흡기 — 기관삽관한 바이러스 폐렴 환자의 첫 일회호흡량",
+  "type": "호흡기 — 기관삽관한 바이러스 폐렴 환자의 첫 일회호흡량",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-18",
+  "vignette": "A 64-year-old man is admitted to the intensive care unit because of worsening shortness of breath 9 days after the onset of fever and cough. A nasopharyngeal swab is positive for SARS-CoV-2 by RT-PCR. He is 175 cm (5 ft 9 in) tall and weighs 98 kg (216 lb). Despite high-flow nasal oxygen, he becomes exhausted and is intubated. On assist-control ventilation with an FIO2 of 0.6 and positive end-expiratory pressure of 10 cm H2O, arterial PO2 is 68 mm Hg. Echocardiography shows normal left ventricular size and function. A portable chest x-ray obtained after intubation is shown.",
+  "question": "Which of the following is the most appropriate initial tidal volume setting?",
+  "options": [
+   "420 mL",
+   "280 mL",
+   "590 mL",
+   "700 mL",
+   "840 mL"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The portable chest x-ray shows patchy bilateral opacities around both hila, in the right mid and lower zones, and at the left base. With a PaO2/FIO2 ratio of 68/0.6 = 113 on PEEP 10 and normal left ventricular function, this is moderate ARDS. Tidal volume is set from predicted body weight, which depends on height and sex: 50 + 0.91 × (175 − 152.4) ≈ 71 kg. The initial target is 6 mL/kg PBW ≈ 420 mL, keeping plateau pressure at or below 30 cm H2O.\n- 원리: <b>Why predicted body weight, not actual weight</b>: lung size is determined by height and sex, not by body fat. A 98-kg man who is 175 cm tall has the lungs of a 71-kg man; scaling tidal volume to actual weight would overinflate the small amount of aerated lung that remains in ARDS (the \"baby lung\").<br> <b>Why 6 mL/kg</b>: in ARDS much of the lung is flooded or collapsed, so a normal tidal volume is delivered to a fraction of the alveoli and overstretches them (volutrauma), releasing inflammatory mediators (biotrauma). The ARDSNet trial showed that 6 mL/kg PBW with plateau pressure ≤ 30 cm H2O reduced mortality from about 40 % to 31 % compared with 12 mL/kg.<br> <b>How the image contributes</b>: bilateral opacities not fully explained by effusion, collapse, or nodules are one of the Berlin criteria; with acute onset, hypoxemia on PEEP ≥ 5, and no cardiac failure (normal echocardiogram), the diagnosis of ARDS is established.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">420 mL (answer)</th><th>590 mL (closest distractor)</th></tr></thead><tbody> <tr><td>Basis</td><td>6 mL/kg × <b>predicted</b> body weight (71 kg)</td><td>6 mL/kg × actual body weight (98 kg)</td></tr> <tr><td>Why that weight</td><td>Lung volume scales with height and sex</td><td>Fat does not add lung tissue</td></tr> <tr><td>Effect in ARDS</td><td>Protects the remaining aerated lung</td><td>Equals about 8.3 mL/kg PBW, overdistending alveoli</td></tr> </tbody></table> If plateau pressure stays above 30 cm H2O at 420 mL, the next step is to lower tidal volume toward 4 mL/kg PBW (about 280 mL), not to start there.\n- 오답 이유:\n  - (B) 280 mL is 4 mL/kg PBW and would be correct only after 6 mL/kg yields a plateau pressure above 30 cm H2O; it is the lower limit, not the starting point.\n  - (C) 590 mL would be correct only if the patient's actual weight equaled his predicted weight; using actual weight in an obese patient overdistends the lungs.\n  - (D) 700 mL is about 10 mL/kg PBW and would be acceptable only in a patient without lung injury, such as during short elective anesthesia, not in ARDS.\n  - (E) 840 mL is about 12 mL/kg PBW, the traditional volume used in the control arm of the ARDSNet trial, which had higher mortality.\n- 함정: Multiplying 6 mL/kg by the actual weight of 98 kg — tidal volume is based on predicted body weight from height and sex.\n- 학습목표: 바이러스 폐렴 뒤 양쪽 폐 음영·PaO2/FiO2 약 110·정상 좌심실 기능으로 중등도 급성호흡곤란증후군을 판정하고, 첫 일회호흡량을 실제 체중이 아니라 예측 체중 6 mL/kg 으로 정한다\n- 근거·출처: Acute Respiratory Distress Syndrome Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and ARDS. N Engl J Med 2000;342:1301-1308 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526-2533 · TCIA COVID-19-AR collection (CC BY 4.0) (교사용) · 작성자 판독(2026-10-19): 양쪽 폐문 주위·오른쪽 중하폐야·왼쪽 폐저부의 반점상 음영\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …42942232 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The portable chest x-ray shows patchy bilateral opacities around both hila, in the right mid and lower zones, and at the left base. With a PaO2/FIO2 ratio of 68/0.6 = 113 on PEEP 10 and normal left ventricular function, this is moderate ARDS. Tidal volume is set from predicted body weight, which depends on height and sex: 50 + 0.91 × (175 − 152.4) ≈ 71 kg. The initial target is 6 mL/kg PBW ≈ 420 mL, keeping plateau pressure at or below 30 cm H2O."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why predicted body weight, not actual weight</b>: lung size is determined by height and sex, not by body fat. A 98-kg man who is 175 cm tall has the lungs of a 71-kg man; scaling tidal volume to actual weight would overinflate the small amount of aerated lung that remains in ARDS (the \"baby lung\").<br> <b>Why 6 mL/kg</b>: in ARDS much of the lung is flooded or collapsed, so a normal tidal volume is delivered to a fraction of the alveoli and overstretches them (volutrauma), releasing inflammatory mediators (biotrauma). The ARDSNet trial showed that 6 mL/kg PBW with plateau pressure ≤ 30 cm H2O reduced mortality from about 40 % to 31 % compared with 12 mL/kg.<br> <b>How the image contributes</b>: bilateral opacities not fully explained by effusion, collapse, or nodules are one of the Berlin criteria; with acute onset, hypoxemia on PEEP ≥ 5, and no cardiac failure (normal echocardiogram), the diagnosis of ARDS is established."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">420 mL (answer)</th><th>590 mL (closest distractor)</th></tr></thead><tbody> <tr><td>Basis</td><td>6 mL/kg × <b>predicted</b> body weight (71 kg)</td><td>6 mL/kg × actual body weight (98 kg)</td></tr> <tr><td>Why that weight</td><td>Lung volume scales with height and sex</td><td>Fat does not add lung tissue</td></tr> <tr><td>Effect in ARDS</td><td>Protects the remaining aerated lung</td><td>Equals about 8.3 mL/kg PBW, overdistending alveoli</td></tr> </tbody></table> If plateau pressure stays above 30 cm H2O at 420 mL, the next step is to lower tidal volume toward 4 mL/kg PBW (about 280 mL), not to start there."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) 280 mL is 4 mL/kg PBW and would be correct only after 6 mL/kg yields a plateau pressure above 30 cm H2O; it is the lower limit, not the starting point.\n(C) 590 mL would be correct only if the patient's actual weight equaled his predicted weight; using actual weight in an obese patient overdistends the lungs.\n(D) 700 mL is about 10 mL/kg PBW and would be acceptable only in a patient without lung injury, such as during short elective anesthesia, not in ARDS.\n(E) 840 mL is about 12 mL/kg PBW, the traditional volume used in the control arm of the ARDSNet trial, which had higher mortality."
+   },
+   {
+    "k": "함정",
+    "v": "Multiplying 6 mL/kg by the actual weight of 98 kg — tidal volume is based on predicted body weight from height and sex."
+   },
+   {
+    "k": "학습목표",
+    "v": "바이러스 폐렴 뒤 양쪽 폐 음영·PaO2/FiO2 약 110·정상 좌심실 기능으로 중등도 급성호흡곤란증후군을 판정하고, 첫 일회호흡량을 실제 체중이 아니라 예측 체중 6 mL/kg 으로 정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Acute Respiratory Distress Syndrome Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and ARDS. N Engl J Med 2000;342:1301-1308 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526-2533 · TCIA COVID-19-AR collection (CC BY 4.0) (교사용) · 작성자 판독(2026-10-19): 양쪽 폐문 주위·오른쪽 중하폐야·왼쪽 폐저부의 반점상 음영 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …42942232 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "양쪽 폐 음영·PaO2/FiO2 약 113·정상 좌심실 기능은 중등도 ARDS 이므로 첫 일회호흡량은 예측 체중 71 kg × 6 mL/kg ≈ 420 mL 다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "체중 기준 — 실제 체중(98 kg)이 아니라 키·성별로 계산한 예측 체중",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 폐 반점상 음영 + PEEP 10 에서 PaO2/FiO2 113 + 정상 좌심실 기능 → 중등도 ARDS",
+    "ARDS → 폐 보호 환기, 일회호흡량 6 mL/kg 예측 체중",
+    "키 175 cm 남자 → 예측 체중 약 71 kg → 약 420 mL"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐문 주위·오른쪽 중하폐야·왼쪽 폐저부의 반점상 음영",
+     "why": "베를린 기준의 양쪽 폐 음영",
+     "also": []
+    },
+    {
+     "item": "arterial PO2 is 68 mm Hg",
+     "why": "FiO2 0.6 에서 비 113 — 중등도",
+     "also": []
+    },
+    {
+     "item": "175 cm (5 ft 9 in) tall",
+     "why": "예측 체중 계산의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "normal left ventricular size and function",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "weighs 98 kg (216 lb)",
+     "why": "실제 체중 — 일회호흡량 계산에 쓰지 않는다(함정)",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "positive for SARS-CoV-2 by RT-PCR",
+     "why": "ARDS 의 원인 — 환기 설정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "SARS-CoV-2 폐렴 뒤 양쪽 폐 음영, PEEP 10 에서 PaO2/FiO2 113, 정상 좌심실 기능으로 중등도 ARDS 다. 첫 일회호흡량은 키로 계산한 예측 체중 약 71 kg 의 6 mL/kg, 약 420 mL 다.",
+   "switch": {
+    "choice": "B",
+    "condition": "420 mL 에서 고원압이 30 cm H2O 를 넘으면 4 mL/kg 예측 체중(약 280 mL)까지 줄인다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0362.png",
+   "caption": "Portable anteroposterior chest radiograph; position labels as in the original (TCIA, CC BY 4.0; DICOM converted with a standard window, no cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1201676310585973039601042942232",
+   "asset_id": "TCIA-COVID19_AR-97668617064210",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …42942232"
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0361",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "병리·조직 — 만성 췌장염 절제 검체의 남은 섬 세포 면역조직화학",
+  "type": "병리·조직 — 만성 췌장염 절제 검체의 남은 섬 세포 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-18",
+  "vignette": "73세 남자가 등으로 뻗치는 명치 통증이 약으로 조절되지 않아 췌장 부분절제술을 받았다. 25년 동안 술을 많이 마셨고 췌장염이 여러 번 재발하였으며, 기름지고 악취 나는 대변을 본다. 4년 전 당뇨병으로 진단되어 인슐린을 쓰는데, 적은 용량에도 심한 저혈당이 여러 번 있었다. 복부 CT에서 췌장 전체에 석회화가 있고 췌관이 늘어나 있었다. 절제 검체에서 샘꽈리 조직은 대부분 섬유 조직으로 바뀌어 있다. 절제한 췌장 조직 절편에 면역조직화학염색을 한 결과는 그림과 같다.",
+  "question": "이 항체가 인식하는 항원으로 가장 적절한 것은?",
+  "options": [
+   "인슐린",
+   "크로모그라닌 A",
+   "트립시노겐",
+   "사이토케라틴 19",
+   "글루카곤"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 코어는 섬유화가 심해 샘꽈리가 거의 없고, 흉터 속에 작은 내분비 세포 둥지가 남아 있다. 각 둥지에서 소수의 세포만 세포질이 진한 갈색이고 나머지 둥지 세포와 간질은 음성이다. 섬 세포의 소수에서 세포질에 나타나는 호르몬은 알파세포의 글루카곤이다. 인슐린이면 둥지 세포 대부분이, 크로모그라닌 A 면 전부가 갈색이어야 한다. 글루카곤 반대조절 반응의 소실은 만성 췌장염에 의한 당뇨병(3c 형)에서 심한 저혈당이 잘 생기는 이유다.\n- 원리: <b>왜 염색된 세포의 비율이 호르몬을 알려 주는가</b>: 섬은 여러 세포가 섞인 집단이다. 베타세포(인슐린)가 약 60~70 %, 알파세포(글루카곤)가 약 15~20 %, 델타세포(소마토스타틴)가 5~10 %, PP 세포가 그보다 적다. 한 호르몬에 대한 항체는 그 세포의 몫만큼만 둥지를 물들이고, 크로모그라닌 A 같은 범신경내분비 표지자는 거의 모든 섬 세포를 물들인다.<br> <b>왜 섬유화된 췌장에 섬이 남는가</b>: 만성 췌장염에서는 반복 손상이 샘꽈리를 먼저 없애고 섬유화로 바꾼다. 섬은 초기에 비교적 보존되어 흉터 속에 몰려 남고, 시간이 지나면 베타세포와 알파세포가 함께 줄어든다.<br> <b>임상적 의미</b>: 췌장성(3c 형) 당뇨병에서는 인슐린과 함께 저혈당에 대한 글루카곤 분비도 사라져, 적은 인슐린 용량에도 심한 저혈당이 생긴다. 흡수장애와 음주로 인한 섭취 부족이 위험을 더한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">글루카곤(정답)</th><th>인슐린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포</td><td>알파세포</td><td>베타세포</td></tr> <tr><td>섬 세포 중 비율</td><td><b>소수</b>(약 15~20 %)</td><td>다수(약 60~70 %)</td></tr> <tr><td>둥지의 염색 양상</td><td>흩어진 몇 개 세포, 많은 세포는 음성</td><td>둥지 세포 대부분이 갈색</td></tr> <tr><td>저혈당에서 역할</td><td>첫 반대조절 호르몬</td><td>저혈당에서 분비 억제</td></tr> </tbody></table> 둥지마다 대부분의 세포가 갈색이면 인슐린, 모든 내분비 세포가 갈색이면 크로모그라닌 A 같은 범신경내분비 표지자다.\n- 오답 이유:\n  - ① 인슐린은 둥지 세포의 소수가 아니라 대부분이 세포질 갈색일 때 정답이 되며, 베타세포가 섬 세포의 다수를 이루기 때문이다.\n  - ② 크로모그라닌 A 는 내분비 세포 둥지의 모든 세포가 갈색일 때 정답이 되며, 모든 신경내분비 세포의 분비 과립에 있다.\n  - ③ 트립시노겐은 꼭대기 쪽 효소원 과립을 가진 샘꽈리세포가 갈색일 때 정답이 되며, 이 코어에서는 샘꽈리가 대부분 섬유화로 바뀌었다.\n  - ④ CK19 는 작은 내강을 둘러싼 췌관·세관 상피가 갈색일 때 정답이 되며, 흉터 속 세관 증식에서 볼 수 있다.\n- 함정: 췌장 섬의 항체면 인슐린이라고 단정하는 것 — 둥지 세포의 소수만 물들어 베타세포가 아니라 알파세포에 맞는다.\n- 학습목표: 섬유화된 췌장에서 남은 내분비 세포 둥지의 소수 세포만 세포질이 갈색인 양상을 읽고, 섬 세포의 소수를 이루는 알파세포의 글루카곤을 다수인 베타세포의 인슐린·범내분비 표지자·외분비 표지자와 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Pancreas — chronic pancreatitis; Ch. The Endocrine System — islets · Hart PA, et al. Type 3c (pancreatogenic) diabetes mellitus secondary to chronic pancreatitis and pancreatic cancer. Lancet Gastroenterol Hepatol 2016;1:226-237 · Human Protein Atlas — GCG, pancreas tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-19): 섬유화 속 내분비 세포 둥지, 소수 세포의 세포질만 갈색\n\n## 출처\n- Human Protein Atlas, GCG / Pancreas (CC BY 4.0), https://images.proteinatlas.org/40/255_A_1_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "코어는 섬유화가 심해 샘꽈리가 거의 없고, 흉터 속에 작은 내분비 세포 둥지가 남아 있다. 각 둥지에서 소수의 세포만 세포질이 진한 갈색이고 나머지 둥지 세포와 간질은 음성이다. 섬 세포의 소수에서 세포질에 나타나는 호르몬은 알파세포의 글루카곤이다. 인슐린이면 둥지 세포 대부분이, 크로모그라닌 A 면 전부가 갈색이어야 한다. 글루카곤 반대조절 반응의 소실은 만성 췌장염에 의한 당뇨병(3c 형)에서 심한 저혈당이 잘 생기는 이유다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 염색된 세포의 비율이 호르몬을 알려 주는가</b>: 섬은 여러 세포가 섞인 집단이다. 베타세포(인슐린)가 약 60~70 %, 알파세포(글루카곤)가 약 15~20 %, 델타세포(소마토스타틴)가 5~10 %, PP 세포가 그보다 적다. 한 호르몬에 대한 항체는 그 세포의 몫만큼만 둥지를 물들이고, 크로모그라닌 A 같은 범신경내분비 표지자는 거의 모든 섬 세포를 물들인다.<br> <b>왜 섬유화된 췌장에 섬이 남는가</b>: 만성 췌장염에서는 반복 손상이 샘꽈리를 먼저 없애고 섬유화로 바꾼다. 섬은 초기에 비교적 보존되어 흉터 속에 몰려 남고, 시간이 지나면 베타세포와 알파세포가 함께 줄어든다.<br> <b>임상적 의미</b>: 췌장성(3c 형) 당뇨병에서는 인슐린과 함께 저혈당에 대한 글루카곤 분비도 사라져, 적은 인슐린 용량에도 심한 저혈당이 생긴다. 흡수장애와 음주로 인한 섭취 부족이 위험을 더한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">글루카곤(정답)</th><th>인슐린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포</td><td>알파세포</td><td>베타세포</td></tr> <tr><td>섬 세포 중 비율</td><td><b>소수</b>(약 15~20 %)</td><td>다수(약 60~70 %)</td></tr> <tr><td>둥지의 염색 양상</td><td>흩어진 몇 개 세포, 많은 세포는 음성</td><td>둥지 세포 대부분이 갈색</td></tr> <tr><td>저혈당에서 역할</td><td>첫 반대조절 호르몬</td><td>저혈당에서 분비 억제</td></tr> </tbody></table> 둥지마다 대부분의 세포가 갈색이면 인슐린, 모든 내분비 세포가 갈색이면 크로모그라닌 A 같은 범신경내분비 표지자다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 인슐린은 둥지 세포의 소수가 아니라 대부분이 세포질 갈색일 때 정답이 되며, 베타세포가 섬 세포의 다수를 이루기 때문이다.\n② 크로모그라닌 A 는 내분비 세포 둥지의 모든 세포가 갈색일 때 정답이 되며, 모든 신경내분비 세포의 분비 과립에 있다.\n③ 트립시노겐은 꼭대기 쪽 효소원 과립을 가진 샘꽈리세포가 갈색일 때 정답이 되며, 이 코어에서는 샘꽈리가 대부분 섬유화로 바뀌었다.\n④ CK19 는 작은 내강을 둘러싼 췌관·세관 상피가 갈색일 때 정답이 되며, 흉터 속 세관 증식에서 볼 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "췌장 섬의 항체면 인슐린이라고 단정하는 것 — 둥지 세포의 소수만 물들어 베타세포가 아니라 알파세포에 맞는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "섬유화된 췌장에서 남은 내분비 세포 둥지의 소수 세포만 세포질이 갈색인 양상을 읽고, 섬 세포의 소수를 이루는 알파세포의 글루카곤을 다수인 베타세포의 인슐린·범내분비 표지자·외분비 표지자와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Pancreas — chronic pancreatitis; Ch. The Endocrine System — islets · Hart PA, et al. Type 3c (pancreatogenic) diabetes mellitus secondary to chronic pancreatitis and pancreatic cancer. Lancet Gastroenterol Hepatol 2016;1:226-237 · Human Protein Atlas — GCG, pancreas tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-19): 섬유화 속 내분비 세포 둥지, 소수 세포의 세포질만 갈색 ## 출처 Human Protein Atlas, GCG / Pancreas (CC BY 4.0), https://images.proteinatlas.org/40/255_A_1_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "남은 내분비 세포 둥지에서 소수 세포만 세포질이 갈색이면 섬 세포의 소수인 알파세포의 글루카곤을 인식하는 항체다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "양성 세포가 둥지의 소수인지(글루카곤) 다수인지(인슐린) 전부인지(크로모그라닌)",
+   "steps": 2,
+   "chain": [
+    "영상: 섬유화로 샘꽈리가 사라지고 남은 내분비 세포 둥지 + 둥지의 소수 세포만 세포질 갈색 → 섬 세포의 한 소수 집단",
+    "섬 세포의 소수 집단 + 적은 인슐린 용량에도 심한 저혈당 → 알파세포 글루카곤"
+   ],
+   "key": [
+    {
+     "item": "영상: 섬유성 간질 속 내분비 세포 둥지, 둥지의 소수 세포만 세포질이 갈색",
+     "why": "양성 세포의 비율이 항원을 가린다",
+     "also": []
+    },
+    {
+     "item": "적은 용량에도 심한 저혈당이 여러 번 있었다",
+     "why": "글루카곤 반응 소실 — 3c 형 당뇨",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "샘꽈리 조직은 대부분 섬유 조직으로 바뀌어 있다",
+     "why": "샘꽈리 표지자(트립시노겐) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "췌장 전체에 석회화가 있고 췌관이 늘어나 있었다",
+     "why": "만성 췌장염 확인 — 항원 판정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "기름지고 악취 나는 대변",
+     "why": "외분비 기능 부전 — 항원 판정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "만성 췌장염으로 샘꽈리가 섬유화된 자리에 남은 내분비 세포 둥지에서 소수 세포만 세포질이 갈색이다. 섬 세포의 소수인 알파세포의 글루카곤이고, 그 소실이 3c 형 당뇨의 심한 저혈당을 설명한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "둥지 세포의 대부분이 갈색이었다면 다수를 이루는 베타세포의 인슐린이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0361.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색 발색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000115263-GCG/tissue/Pancreas",
+   "asset_id": "HPA-GCG_255_A_1_3",
+   "text": "Human Protein Atlas, GCG / Pancreas (CC BY 4.0), https://images.proteinatlas.org/40/255_A_1_3.jpg"
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0370",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "부인과 — 비정형 편평세포와 HPV 16형 양성",
+  "type": "부인과 — 비정형 편평세포와 HPV 16형 양성",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-18",
+  "vignette": "35세 여자가 정기 자궁경부암 검진 결과를 들으러 왔다. 증상은 없고 출산 2회이며, 3년 전 세포검사는 정상이었다. 흡연하지 않는다. 혈압 118/72 mmHg, 맥박 72회/분이다. 질경 검사에서 자궁경부는 육안으로 정상이고 분비물은 없다. 이번 자궁경부 세포검사 결과는 비정형 편평세포-의미 미결정(ASC-US)이고, 함께 시행한 HPV 유전형 검사에서 16형 양성이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "1년 뒤 HPV 검사와 세포검사 병합 시행",
+   "곧바로 원추절제술",
+   "단순 자궁절제술",
+   "3년 뒤 세포검사 반복",
+   "질확대경검사"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: ASC-US 는 경계성 세포 이상이지만, HPV 16형 양성이 함께 있으면 즉시 CIN3 이상이 있을 위험이 질확대경검사 기준(4 %)을 넘는다. 그래서 1년 뒤 반복 검사가 아니라 바로 질확대경검사를 하고 이상 부위를 조직검사한다. 조직검사 없이 원추절제술로 바로 가는 것은 HSIL 세포검사에 HPV 16형이 함께 있을 때 고려한다.\n- 원리: <b>왜 HPV 16형이 판단을 바꾸는가</b>: 고위험 HPV 가운데 16형은 E6·E7 단백이 p53·Rb 를 가장 강하게 무력화해, 감염이 지속되면 CIN3·침윤암으로 진행하는 비율이 가장 높다. 그래서 같은 ASC-US 라도 HPV 16형이 있으면 그 자리에 이미 고등급 병변이 있을 확률이 크게 오른다.<br> <b>위험 기반 관리</b>: 현재 미국 질확대경·자궁경부병리학회(ASCCP 2019) 지침은 검사 결과 조합마다 「지금 CIN3 이상이 있을 위험」을 계산해, 4 % 이상이면 질확대경검사, 그보다 낮으면 1년 또는 3년 뒤 재검을 권한다. HPV 16형 양성 ASC-US 는 이 기준을 넘는다.<br> <b>질확대경검사가 하는 일</b>: 아세트산을 바른 뒤 확대해 하얗게 변하는 상피·이상 혈관을 찾아 그 부위를 조직검사한다. 진단은 세포가 아니라 조직으로 내리고, 치료(원추절제술 등)는 조직 결과에 따라 정한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">질확대경검사(정답)</th><th>1년 뒤 병합검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적합한 결과</td><td>ASC-US + HPV 16/18 양성, 또는 HPV 양성 ASC-US</td><td>HPV 양성(16/18 아님)·세포검사 정상(NILM)</td></tr> <tr><td>즉시 CIN3+ 위험</td><td><b>4 % 이상</b></td><td>4 % 미만</td></tr> <tr><td>목적</td><td>지금 있는 고등급 병변의 조직 확인</td><td>일시적 감염이 사라지는지 관찰</td></tr> </tbody></table> 세포검사가 정상이고 16·18형이 아닌 고위험 HPV 만 양성이었다면 1년 뒤 병합검사가 정답이다.\n- 오답 이유:\n  - ① 1년 뒤 병합검사는 세포검사가 정상이고 16·18형이 아닌 고위험 HPV 만 양성이어서 즉시 위험이 4 % 미만일 때 정답이 된다.\n  - ② 곧바로 원추절제술은 세포검사가 HSIL 이고 HPV 16형 양성이어서 즉시 CIN3 이상 위험이 60 % 이상일 때 조직검사 없이 고려하는 처치다.\n  - ③ 단순 자궁절제술은 CIN 의 1차 치료가 아니며, 다른 부인과 적응증이 있거나 원추절제 뒤 재발한 고등급 병변에서 출산을 마쳤을 때 고려한다.\n  - ④ 3년 뒤 세포검사는 HPV 음성 ASC-US 처럼 즉시 위험이 매우 낮을 때 정답이 되며, HPV 16형 양성에서는 고등급 병변을 놓친다.\n- 함정: ASC-US 를 「가벼운 이상」으로 보고 1년 뒤 재검을 고르는 것 — HPV 16형 양성이 즉시 위험을 질확대경 기준 이상으로 올린다.\n- 학습목표: 자궁경부 세포검사 ASC-US 에 HPV 16형 양성이면 즉시 CIN3 이상 위험이 높아 반복 검사가 아니라 질확대경검사를 한다\n- 근거·출처: Perkins RB, et al. 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors. J Low Genit Tract Dis 2020;24:102-131 · Berek JS. Berek & Novak's Gynecology, 16th ed. Ch. Intraepithelial Disease of the Cervix, Vagina, and Vulva",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "ASC-US 는 경계성 세포 이상이지만, HPV 16형 양성이 함께 있으면 즉시 CIN3 이상이 있을 위험이 질확대경검사 기준(4 %)을 넘는다. 그래서 1년 뒤 반복 검사가 아니라 바로 질확대경검사를 하고 이상 부위를 조직검사한다. 조직검사 없이 원추절제술로 바로 가는 것은 HSIL 세포검사에 HPV 16형이 함께 있을 때 고려한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 HPV 16형이 판단을 바꾸는가</b>: 고위험 HPV 가운데 16형은 E6·E7 단백이 p53·Rb 를 가장 강하게 무력화해, 감염이 지속되면 CIN3·침윤암으로 진행하는 비율이 가장 높다. 그래서 같은 ASC-US 라도 HPV 16형이 있으면 그 자리에 이미 고등급 병변이 있을 확률이 크게 오른다.<br> <b>위험 기반 관리</b>: 현재 미국 질확대경·자궁경부병리학회(ASCCP 2019) 지침은 검사 결과 조합마다 「지금 CIN3 이상이 있을 위험」을 계산해, 4 % 이상이면 질확대경검사, 그보다 낮으면 1년 또는 3년 뒤 재검을 권한다. HPV 16형 양성 ASC-US 는 이 기준을 넘는다.<br> <b>질확대경검사가 하는 일</b>: 아세트산을 바른 뒤 확대해 하얗게 변하는 상피·이상 혈관을 찾아 그 부위를 조직검사한다. 진단은 세포가 아니라 조직으로 내리고, 치료(원추절제술 등)는 조직 결과에 따라 정한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">질확대경검사(정답)</th><th>1년 뒤 병합검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적합한 결과</td><td>ASC-US + HPV 16/18 양성, 또는 HPV 양성 ASC-US</td><td>HPV 양성(16/18 아님)·세포검사 정상(NILM)</td></tr> <tr><td>즉시 CIN3+ 위험</td><td><b>4 % 이상</b></td><td>4 % 미만</td></tr> <tr><td>목적</td><td>지금 있는 고등급 병변의 조직 확인</td><td>일시적 감염이 사라지는지 관찰</td></tr> </tbody></table> 세포검사가 정상이고 16·18형이 아닌 고위험 HPV 만 양성이었다면 1년 뒤 병합검사가 정답이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 1년 뒤 병합검사는 세포검사가 정상이고 16·18형이 아닌 고위험 HPV 만 양성이어서 즉시 위험이 4 % 미만일 때 정답이 된다.\n② 곧바로 원추절제술은 세포검사가 HSIL 이고 HPV 16형 양성이어서 즉시 CIN3 이상 위험이 60 % 이상일 때 조직검사 없이 고려하는 처치다.\n③ 단순 자궁절제술은 CIN 의 1차 치료가 아니며, 다른 부인과 적응증이 있거나 원추절제 뒤 재발한 고등급 병변에서 출산을 마쳤을 때 고려한다.\n④ 3년 뒤 세포검사는 HPV 음성 ASC-US 처럼 즉시 위험이 매우 낮을 때 정답이 되며, HPV 16형 양성에서는 고등급 병변을 놓친다."
+   },
+   {
+    "k": "함정",
+    "v": "ASC-US 를 「가벼운 이상」으로 보고 1년 뒤 재검을 고르는 것 — HPV 16형 양성이 즉시 위험을 질확대경 기준 이상으로 올린다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁경부 세포검사 ASC-US 에 HPV 16형 양성이면 즉시 CIN3 이상 위험이 높아 반복 검사가 아니라 질확대경검사를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Perkins RB, et al. 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors. J Low Genit Tract Dis 2020;24:102-131 · Berek JS. Berek & Novak's Gynecology, 16th ed. Ch. Intraepithelial Disease of the Cervix, Vagina, and Vulva"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "ASC-US 에 HPV 16형 양성이면 즉시 CIN3 이상 위험이 4 % 를 넘으므로 질확대경검사를 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "HPV 16형 양성 — 같은 ASC-US 라도 위험을 질확대경 기준 이상으로 올린다",
+   "steps": 2,
+   "chain": [
+    "ASC-US + HPV 16형 양성 → 즉시 CIN3 이상 위험 4 % 이상",
+    "위험 4 % 이상 + 아직 조직 진단 없음 → 질확대경검사와 조직검사"
+   ],
+   "key": [
+    {
+     "item": "비정형 편평세포-의미 미결정(ASC-US)",
+     "why": "경계성 세포 이상",
+     "also": []
+    },
+    {
+     "item": "16형 양성",
+     "why": "위험을 올리는 결정적 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "자궁경부는 육안으로 정상",
+     "why": "육안 종괴(침윤암) 가능성을 낮춘다 — 조직검사 필요성은 남는다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "3년 전 세포검사는 정상",
+     "why": "이전 정상 — 이번 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "출산 2회",
+     "why": "원추절제술·자궁절제술 판단에는 아직 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "ASC-US 에 HPV 16형 양성이 함께 있으면 즉시 CIN3 이상 위험이 질확대경 기준 4 % 를 넘는다. 반복 검사가 아니라 질확대경검사로 조직 진단을 먼저 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "세포검사가 HSIL 이고 HPV 16형 양성이었다면 조직검사 없이 곧바로 원추절제술을 고려할 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0369",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "감염 — 페니실린 알레르기가 있는 임신부의 매독",
+  "type": "감염 — 페니실린 알레르기가 있는 임신부의 매독",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-18",
+  "vignette": "A 26-year-old woman, gravida 1, para 0, at 14 weeks' gestation comes to the physician for her first prenatal visit. She feels well. She had an urticarial rash and wheezing within 30 minutes of taking amoxicillin at the age of 15 years. Temperature is 36.9°C (98.4°F), pulse is 80/min, and blood pressure is 112/68 mm Hg. There are no genital ulcers, skin rash, mucous patches, or lymphadenopathy, and the neurologic examination shows no abnormalities. Serum rapid plasma reagin titer is 1:32, and a Treponema pallidum particle agglutination assay is positive. She has never been tested for syphilis before.",
+  "question": "Which of the following is the most appropriate management?",
+  "options": [
+   "Oral azithromycin as a single dose followed by repeat titers",
+   "Repeat rapid plasma reagin titer in 4 weeks before deciding on treatment",
+   "Penicillin desensitization followed by intramuscular benzathine penicillin G",
+   "Oral doxycycline for 28 days without penicillin desensitization",
+   "Intramuscular ceftriaxone daily for 10 days instead of penicillin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: A reactive RPR at 1:32 confirmed by a positive treponemal test with no signs of primary or secondary disease and no prior testing is latent syphilis of unknown duration. In pregnancy, penicillin is the only treatment proven to cure maternal infection and prevent congenital syphilis. Because she had an IgE-mediated reaction (urticaria and wheezing), she should undergo penicillin desensitization and then receive benzathine penicillin G 2.4 million units intramuscularly weekly for 3 weeks.\n- 원리: <b>Why penicillin is irreplaceable in pregnancy</b>: Treponema pallidum crosses the placenta at any stage of pregnancy and causes stillbirth, hydrops, and congenital syphilis. Only penicillin has been shown to treat the fetus reliably; benzathine penicillin G maintains low but treponemicidal levels for weeks, matching the slow 30-hour division time of the organism.<br> <b>Why the alternatives fail</b>: tetracyclines (doxycycline) bind calcium in developing teeth and bone and are avoided after the first trimester; macrolides (azithromycin) have widespread resistance from a 23S rRNA mutation and do not reliably cross the placenta; ceftriaxone has limited data for preventing congenital infection.<br> <b>Why desensitization works</b>: giving gradually increasing doses over hours lets mast cells release mediators in small amounts and become temporarily unresponsive to penicillin. The tolerance lasts only while the drug remains in the body, so treatment must follow immediately and lapses of more than about 48 hours require repeating the procedure.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Desensitization + benzathine penicillin (answer)</th><th>Doxycycline 28 days (closest distractor)</th></tr></thead><tbody> <tr><td>Use</td><td>Pregnant patients with penicillin allergy</td><td>Nonpregnant patients with penicillin allergy</td></tr> <tr><td>Fetal effect</td><td><b>Prevents</b> congenital syphilis</td><td>Does not reliably treat the fetus; tooth and bone deposition</td></tr> <tr><td>Latent of unknown duration</td><td>2.4 million units IM weekly × 3</td><td>100 mg twice daily × 28 days</td></tr> </tbody></table> If the same patient were not pregnant, doxycycline for 28 days would be an acceptable alternative to penicillin.\n- 오답 이유:\n  - (A) Azithromycin would be correct for chlamydial infection in pregnancy; for syphilis, macrolide resistance is common and placental transfer is poor.\n  - (B) Repeating the titer before treatment would be correct only if the treponemal test were negative and the RPR result were suspected to be a biologic false positive.\n  - (D) Doxycycline would be correct for latent syphilis in a nonpregnant patient with penicillin allergy; in pregnancy it does not reliably prevent congenital infection.\n  - (E) Ceftriaxone would be an option for neurosyphilis or early syphilis in a nonpregnant patient with non-IgE penicillin allergy, but it is not proven to protect the fetus.\n- 함정: Avoiding penicillin because of the allergy and choosing an alternative antibiotic — in pregnancy the answer is to desensitize, not to substitute.\n- 학습목표: 임신 중 매독은 페니실린만이 태아 감염을 확실히 막으므로, 페니실린 알레르기 임신부는 탈감작 뒤 벤자틴 페니실린 G 로 치료한다\n- 근거·출처: Workowski KA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Sexually Transmitted Infections — syphilis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A reactive RPR at 1:32 confirmed by a positive treponemal test with no signs of primary or secondary disease and no prior testing is latent syphilis of unknown duration. In pregnancy, penicillin is the only treatment proven to cure maternal infection and prevent congenital syphilis. Because she had an IgE-mediated reaction (urticaria and wheezing), she should undergo penicillin desensitization and then receive benzathine penicillin G 2.4 million units intramuscularly weekly for 3 weeks."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why penicillin is irreplaceable in pregnancy</b>: Treponema pallidum crosses the placenta at any stage of pregnancy and causes stillbirth, hydrops, and congenital syphilis. Only penicillin has been shown to treat the fetus reliably; benzathine penicillin G maintains low but treponemicidal levels for weeks, matching the slow 30-hour division time of the organism.<br> <b>Why the alternatives fail</b>: tetracyclines (doxycycline) bind calcium in developing teeth and bone and are avoided after the first trimester; macrolides (azithromycin) have widespread resistance from a 23S rRNA mutation and do not reliably cross the placenta; ceftriaxone has limited data for preventing congenital infection.<br> <b>Why desensitization works</b>: giving gradually increasing doses over hours lets mast cells release mediators in small amounts and become temporarily unresponsive to penicillin. The tolerance lasts only while the drug remains in the body, so treatment must follow immediately and lapses of more than about 48 hours require repeating the procedure."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Desensitization + benzathine penicillin (answer)</th><th>Doxycycline 28 days (closest distractor)</th></tr></thead><tbody> <tr><td>Use</td><td>Pregnant patients with penicillin allergy</td><td>Nonpregnant patients with penicillin allergy</td></tr> <tr><td>Fetal effect</td><td><b>Prevents</b> congenital syphilis</td><td>Does not reliably treat the fetus; tooth and bone deposition</td></tr> <tr><td>Latent of unknown duration</td><td>2.4 million units IM weekly × 3</td><td>100 mg twice daily × 28 days</td></tr> </tbody></table> If the same patient were not pregnant, doxycycline for 28 days would be an acceptable alternative to penicillin."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Azithromycin would be correct for chlamydial infection in pregnancy; for syphilis, macrolide resistance is common and placental transfer is poor.\n(B) Repeating the titer before treatment would be correct only if the treponemal test were negative and the RPR result were suspected to be a biologic false positive.\n(D) Doxycycline would be correct for latent syphilis in a nonpregnant patient with penicillin allergy; in pregnancy it does not reliably prevent congenital infection.\n(E) Ceftriaxone would be an option for neurosyphilis or early syphilis in a nonpregnant patient with non-IgE penicillin allergy, but it is not proven to protect the fetus."
+   },
+   {
+    "k": "함정",
+    "v": "Avoiding penicillin because of the allergy and choosing an alternative antibiotic — in pregnancy the answer is to desensitize, not to substitute."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 중 매독은 페니실린만이 태아 감염을 확실히 막으므로, 페니실린 알레르기 임신부는 탈감작 뒤 벤자틴 페니실린 G 로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Sexually Transmitted Infections — syphilis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "임신 중 잠복 매독은 페니실린만 태아 감염을 막으므로, IgE 매개 페니실린 알레르기가 있으면 탈감작 뒤 벤자틴 페니실린 G 를 준다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "임신 — 비임신이면 허용되는 독시사이클린 대안이 불가",
+   "steps": 3,
+   "chain": [
+    "RPR 1:32 + 트레포네마 검사 양성 + 증상·병변 없음 + 이전 검사 없음 → 기간 미상 잠복 매독",
+    "임신 → 페니실린만 선천 매독 예방이 입증됨",
+    "두드러기·쌕쌕거림(IgE 매개) 알레르기 → 탈감작 뒤 벤자틴 페니실린 G 주 1회 3회"
+   ],
+   "key": [
+    {
+     "item": "at 14 weeks' gestation",
+     "why": "임신 — 대체 항생제 불가",
+     "also": []
+    },
+    {
+     "item": "urticarial rash and wheezing within 30 minutes of taking amoxicillin",
+     "why": "IgE 매개 알레르기 — 탈감작 필요",
+     "also": []
+    },
+    {
+     "item": "rapid plasma reagin titer is 1:32",
+     "why": "활동성 매독",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Treponema pallidum particle agglutination assay is positive",
+     "why": "생물학적 위양성 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no genital ulcers, skin rash, mucous patches, or lymphadenopathy",
+     "why": "잠복기 — 3회 투여",
+     "also": []
+    },
+    {
+     "item": "She has never been tested for syphilis before",
+     "why": "감염 기간 미상 — 후기 잠복으로 취급",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "RPR 1:32 와 트레포네마 검사 양성, 증상 없음은 기간 미상 잠복 매독이다. 임신에서는 페니실린만 선천 매독을 막으므로, IgE 매개 알레르기가 있으면 탈감작 뒤 벤자틴 페니실린 G 를 주 1회 3회 준다.",
+   "switch": {
+    "choice": "D",
+    "condition": "임신하지 않은 환자였다면 독시사이클린 28일이 페니실린 대안이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0368",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "소화기·간담췌 — 리툭시맙 항암 전 HBsAg 음성·anti-HBc 양성",
+  "type": "소화기·간담췌 — 리툭시맙 항암 전 HBsAg 음성·anti-HBc 양성",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-18",
+  "vignette": "58세 남자가 미만성 거대B세포림프종으로 진단되어 리툭시맙·사이클로포스파마이드·독소루비신·빈크리스틴·프레드니솔론 항암치료를 앞두고 왔다. 간질환 병력과 수혈 받은 적은 없고, 술은 한 달에 한두 번 마신다. 혈압 126/78 mmHg, 맥박 76회/분이다. 황달과 간비종대는 없다. 혈액검사에서 AST 24 U/L, ALT 20 U/L, 총빌리루빈 0.6 mg/dL, 알부민 4.1 g/dL이다. B형간염 표면항원(HBsAg) 음성, 표면항체(anti-HBs) 음성, 핵심항체(anti-HBc, IgG) 양성이고, HBV DNA는 검출되지 않는다. C형간염 항체는 음성이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "엔테카비르 예방 투여를 시작하고 항암치료를 진행",
+   "HBV DNA를 1~3개월마다 감시하고 상승하면 항바이러스제 시작",
+   "B형간염 백신 3회 접종을 마친 뒤 항암치료 시작",
+   "B형간염 면역글로불린을 투여하고 항암치료 진행",
+   "HBsAg 음성이므로 추가 조치 없이 항암치료 진행"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: HBsAg 음성, anti-HBc 양성, HBV DNA 미검출은 과거 B형간염 감염(해소)이다. 그러나 간세포핵 안에는 cccDNA가 평생 남아 있어, B세포를 없애는 항CD20 항체(리툭시맙)를 쓰면 재활성화 위험이 10 % 이상인 고위험군이 된다. 그래서 항암치료 시작 전 또는 동시에 내성 장벽이 높은 엔테카비르(또는 테노포비르) 예방 투여를 시작하고, 치료 종료 뒤 적어도 12~18개월 유지한다.\n- 원리: <b>왜 「해소된」 감염이 다시 살아나는가</b>: B형간염 바이러스는 간세포핵 안에 공유결합 폐쇄 고리 DNA(cccDNA)를 남긴다. HBsAg 이 사라진 뒤에도 이 cccDNA 는 지워지지 않고, 면역계가 바이러스 복제를 억누르고 있을 뿐이다.<br> <b>왜 리툭시맙이 특히 위험한가</b>: 리툭시맙은 CD20 양성 B세포를 없애 항체 생성과 B세포의 항원 제시를 함께 무너뜨린다. 바이러스를 묶어 두던 체액·세포 면역이 풀리면서 복제가 다시 시작되고(HBsAg 역전환), 면역이 회복되는 시기에 감염 간세포가 공격받아 전격성 간염이 생길 수 있다. 스테로이드는 HBV 유전체의 글루코코르티코이드 반응 요소를 통해 복제를 직접 늘린다.<br> <b>위험도에 따른 처치</b>: 항CD20 치료·조혈모세포이식은 HBsAg 음성/anti-HBc 양성에서도 고위험(> 10 %)이라 예방 투여를 권고한다. 위험도가 낮은 약에서는 HBV DNA·HBsAg 감시 뒤 선제 치료를 고를 수 있다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">엔테카비르 예방 투여(정답)</th><th>HBV DNA 감시 후 선제 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적합한 상황</td><td>항CD20 항체·조혈모세포이식 — <b>재활성화 위험 &gt; 10 %</b></td><td>위험 1~10 % 약물(예: 일부 표적치료, 중간 용량 스테로이드)</td></tr> <tr><td>시작 시점</td><td>항암 전 또는 동시</td><td>HBV DNA 가 검출될 때</td></tr> <tr><td>위험</td><td>약값·드문 부작용</td><td>감시 사이 간격에 급격한 간염 가능</td></tr> <tr><td>기간</td><td>치료 종료 뒤 12~18개월</td><td>감시를 치료 종료 뒤까지 지속</td></tr> </tbody></table> 같은 혈청 결과라도 리툭시맙이 빠진 저위험 항암이었다면 감시 후 선제 치료가 정답이다.\n- 오답 이유:\n  - ② HBV DNA 감시 후 선제 치료는 같은 혈청 결과에서 재활성화 위험이 1~10 %로 낮은 약물을 쓸 때 정답이 되며, 리툭시맙에서는 감시 간격 사이에 간부전이 생길 수 있다.\n  - ③ B형간염 백신은 anti-HBc 와 HBsAg 이 모두 음성인 감염 경험이 없는 사람에서 정답이 되며, 이미 감염된 사람의 cccDNA 재활성화는 막지 못한다.\n  - ④ B형간염 면역글로불린은 HBsAg 양성 산모의 신생아나 노출 직후 예방에서 정답이 되며, 세포 안에서 일어나는 재활성화는 막지 못한다.\n  - ⑤ 추가 조치 없이 진행하는 것은 anti-HBc 까지 음성인 경우에만 정답이 되며, HBsAg 음성이라도 anti-HBc 양성이면 재활성화가 생길 수 있다.\n- 함정: HBsAg 음성·HBV DNA 미검출을 보고 「감염 없음」으로 판단하는 것 — anti-HBc 양성은 간세포 안에 cccDNA 가 남아 있다는 뜻이고, 리툭시맙이 고위험을 만든다.\n- 학습목표: HBsAg 음성·anti-HBc 양성(과거 감염)인 환자가 리툭시맙을 포함한 항암치료를 받을 때 B형간염 재활성화 고위험군임을 알고 예방적 항바이러스제를 시작한다\n- 근거·출처: Terrault NA, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. Hepatology 2018;67:1560-1599 · European Association for the Study of the Liver. EASL 2017 Clinical Practice Guidelines on the management of hepatitis B virus infection. J Hepatol 2017;67:370-398 · 대한간학회. 2022 대한간학회 만성 B형간염 진료 가이드라인 — 면역억제·항암치료 시 재활성화 예방",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "HBsAg 음성, anti-HBc 양성, HBV DNA 미검출은 과거 B형간염 감염(해소)이다. 그러나 간세포핵 안에는 cccDNA가 평생 남아 있어, B세포를 없애는 항CD20 항체(리툭시맙)를 쓰면 재활성화 위험이 10 % 이상인 고위험군이 된다. 그래서 항암치료 시작 전 또는 동시에 내성 장벽이 높은 엔테카비르(또는 테노포비르) 예방 투여를 시작하고, 치료 종료 뒤 적어도 12~18개월 유지한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「해소된」 감염이 다시 살아나는가</b>: B형간염 바이러스는 간세포핵 안에 공유결합 폐쇄 고리 DNA(cccDNA)를 남긴다. HBsAg 이 사라진 뒤에도 이 cccDNA 는 지워지지 않고, 면역계가 바이러스 복제를 억누르고 있을 뿐이다.<br> <b>왜 리툭시맙이 특히 위험한가</b>: 리툭시맙은 CD20 양성 B세포를 없애 항체 생성과 B세포의 항원 제시를 함께 무너뜨린다. 바이러스를 묶어 두던 체액·세포 면역이 풀리면서 복제가 다시 시작되고(HBsAg 역전환), 면역이 회복되는 시기에 감염 간세포가 공격받아 전격성 간염이 생길 수 있다. 스테로이드는 HBV 유전체의 글루코코르티코이드 반응 요소를 통해 복제를 직접 늘린다.<br> <b>위험도에 따른 처치</b>: 항CD20 치료·조혈모세포이식은 HBsAg 음성/anti-HBc 양성에서도 고위험(> 10 %)이라 예방 투여를 권고한다. 위험도가 낮은 약에서는 HBV DNA·HBsAg 감시 뒤 선제 치료를 고를 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">엔테카비르 예방 투여(정답)</th><th>HBV DNA 감시 후 선제 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적합한 상황</td><td>항CD20 항체·조혈모세포이식 — <b>재활성화 위험 &gt; 10 %</b></td><td>위험 1~10 % 약물(예: 일부 표적치료, 중간 용량 스테로이드)</td></tr> <tr><td>시작 시점</td><td>항암 전 또는 동시</td><td>HBV DNA 가 검출될 때</td></tr> <tr><td>위험</td><td>약값·드문 부작용</td><td>감시 사이 간격에 급격한 간염 가능</td></tr> <tr><td>기간</td><td>치료 종료 뒤 12~18개월</td><td>감시를 치료 종료 뒤까지 지속</td></tr> </tbody></table> 같은 혈청 결과라도 리툭시맙이 빠진 저위험 항암이었다면 감시 후 선제 치료가 정답이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② HBV DNA 감시 후 선제 치료는 같은 혈청 결과에서 재활성화 위험이 1~10 %로 낮은 약물을 쓸 때 정답이 되며, 리툭시맙에서는 감시 간격 사이에 간부전이 생길 수 있다.\n③ B형간염 백신은 anti-HBc 와 HBsAg 이 모두 음성인 감염 경험이 없는 사람에서 정답이 되며, 이미 감염된 사람의 cccDNA 재활성화는 막지 못한다.\n④ B형간염 면역글로불린은 HBsAg 양성 산모의 신생아나 노출 직후 예방에서 정답이 되며, 세포 안에서 일어나는 재활성화는 막지 못한다.\n⑤ 추가 조치 없이 진행하는 것은 anti-HBc 까지 음성인 경우에만 정답이 되며, HBsAg 음성이라도 anti-HBc 양성이면 재활성화가 생길 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "HBsAg 음성·HBV DNA 미검출을 보고 「감염 없음」으로 판단하는 것 — anti-HBc 양성은 간세포 안에 cccDNA 가 남아 있다는 뜻이고, 리툭시맙이 고위험을 만든다."
+   },
+   {
+    "k": "학습목표",
+    "v": "HBsAg 음성·anti-HBc 양성(과거 감염)인 환자가 리툭시맙을 포함한 항암치료를 받을 때 B형간염 재활성화 고위험군임을 알고 예방적 항바이러스제를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Terrault NA, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. Hepatology 2018;67:1560-1599 · European Association for the Study of the Liver. EASL 2017 Clinical Practice Guidelines on the management of hepatitis B virus infection. J Hepatol 2017;67:370-398 · 대한간학회. 2022 대한간학회 만성 B형간염 진료 가이드라인 — 면역억제·항암치료 시 재활성화 예방"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "HBsAg 음성·anti-HBc 양성의 과거 감염자가 리툭시맙을 받으면 재활성화 고위험이므로 엔테카비르 예방 투여를 시작한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "리툭시맙(항CD20) — 재활성화 위험을 고위험(> 10 %)으로 올려 감시가 아니라 예방이 필요하다",
+   "steps": 3,
+   "chain": [
+    "HBsAg 음성 + anti-HBc 양성 + HBV DNA 미검출 → 과거 감염(간세포 cccDNA 잔존)",
+    "리툭시맙(항CD20) + 프레드니솔론 → 재활성화 고위험",
+    "고위험 → 감시가 아니라 예방적 엔테카비르"
+   ],
+   "key": [
+    {
+     "item": "핵심항체(anti-HBc, IgG) 양성",
+     "why": "과거 감염 — cccDNA 잔존",
+     "also": []
+    },
+    {
+     "item": "리툭시맙",
+     "why": "재활성화 고위험 약물",
+     "also": []
+    },
+    {
+     "item": "B형간염 표면항원(HBsAg) 음성",
+     "why": "함정 — 음성이어도 위험이 남는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "AST 24 U/L, ALT 20 U/L",
+     "why": "현재 활동성 간염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "HBV DNA는 검출되지 않는다",
+     "why": "현재 활동성 감염이 아니라 예방 투여 대상",
+     "also": []
+    },
+    {
+     "item": "표면항체(anti-HBs) 음성",
+     "why": "중화항체가 없어 재활성화 위험이 더 높다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "C형간염 항체는 음성이다",
+     "why": "판단에 영향이 적은 배경",
+     "also": []
+    }
+   ],
+   "summary": "HBsAg 음성·anti-HBc 양성·HBV DNA 미검출은 과거 B형간염이지만, 리툭시맙을 포함한 항암치료는 재활성화 고위험이다. 항암 전후로 엔테카비르 예방 투여를 시작해 치료 종료 뒤 12~18개월 유지한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "리툭시맙이 없는 저위험 항암치료였다면 HBV DNA 감시 후 선제 치료로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0367",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "산과 — 전자간증·천식 산모의 자궁이완 산후출혈",
+  "type": "산과 — 전자간증·천식 산모의 자궁이완 산후출혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-18",
+  "vignette": "33세 여자(임신 1회, 출산 0회)가 임신 39주에 질식분만을 한 지 20분 뒤 질출혈이 계속되어 측정한 출혈량이 1,200 mL에 이르렀다. 임신 35주에 전자간증으로 진단되었고 분만 중 혈압은 158/104 mmHg였다. 어릴 때부터 천식이 있어 흡입 스테로이드를 쓰고 있다. 현재 혈압 102/64 mmHg, 맥박 118회/분이다. 태반은 완전히 배출되었고, 자궁저부는 배꼽 위에서 물렁하게 만져지며 마사지하면 잠시 단단해졌다가 다시 물렁해진다. 산도 열상은 없다. 정맥로 2개를 확보해 수액을 주고 있고 옥시토신 정맥 지속 주입 중이다.",
+  "question": "다음에 투여할 자궁수축제로 가장 적절한 것은?",
+  "options": [
+   "카보프로스트 근육 주사",
+   "테르부탈린 피하 주사",
+   "니페디핀 경구 투여",
+   "미소프로스톨 직장 투여",
+   "메틸에르고노빈 근육 주사"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 태반이 완전히 배출되었고 열상이 없는데 자궁저부가 물렁하고 마사지에 일시적으로만 단단해지므로 자궁이완에 의한 산후출혈이다. 옥시토신에 반응하지 않으면 2차 자궁수축제를 쓰는데, 전자간증(고혈압)이 있어 혈관을 수축시키는 메틸에르고노빈은 금기이고, 천식이 있어 기관지를 수축시키는 카보프로스트(PGF2α 유사체)도 금기다. 남는 것은 PGE1 유사체 미소프로스톨이다.\n- 원리: <b>왜 자궁이완인가</b>: 분만 뒤 출혈을 멈추는 주된 기전은 자궁근이 수축해 태반 부착 부위의 나선동맥을 조이는 「살아 있는 결찰」이다. 자궁저부가 물렁하고 마사지에 반응했다가 다시 풀리는 것은 수축이 유지되지 않는다는 뜻이며, 태반 잔류·열상·응고장애보다 훨씬 흔하다(산후출혈의 약 70~80 %).<br> <b>2차 약의 금기는 수용체에서 나온다</b>: 메틸에르고노빈은 맥각 알칼로이드로 자궁근뿐 아니라 혈관 평활근의 α 아드레날린·세로토닌 수용체를 자극해 혈압을 올리므로 고혈압·전자간증에서 뇌출혈·경련 위험이 있다. 카보프로스트(15-메틸 PGF2α)는 FP 수용체를 통해 기관지 평활근도 수축시켜 천식 발작을 일으킨다. 미소프로스톨(PGE1 유사체)은 기관지 수축·혈압 상승이 적어 두 금기를 모두 피한다.<br> <b>함께 하는 처치</b>: 약물과 동시에 수혈 준비, 트라넥삼산, 자궁 내 풍선 압박을 준비하고, 반응이 없으면 동맥 색전술이나 수술로 넘어간다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">미소프로스톨(정답)</th><th>메틸에르고노빈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>약물 계열</td><td>PGE1 유사체</td><td>맥각 알칼로이드</td></tr> <tr><td>혈압</td><td>거의 영향 없음</td><td><b>상승</b> — 고혈압·전자간증에서 금기</td></tr> <tr><td>기관지</td><td>수축 작음 — 천식에서 쓸 수 있음</td><td>영향 적음</td></tr> <tr><td>흔한 부작용</td><td>발열·오한</td><td>구역·고혈압</td></tr> </tbody></table> 혈압이 정상이고 천식만 있었다면 메틸에르고노빈, 천식 없이 고혈압만 있었다면 카보프로스트도 쓸 수 있다 — 이 환자는 둘 다 있어 미소프로스톨이 남는다.\n- 오답 이유:\n  - ① 카보프로스트는 천식이 없는 산모의 자궁이완에서 정답이 되며, 기관지 평활근을 수축시켜 천식 환자에게는 금기다.\n  - ② 테르부탈린은 베타2 작용제로 자궁을 이완시키므로 조기진통이나 자궁 과자극으로 태아 서맥이 생겼을 때 정답이 되고 산후출혈에는 해롭다.\n  - ③ 니페디핀은 조기진통의 자궁수축 억제나 중증 고혈압의 강압에서 정답이 되며, 자궁을 이완시켜 산후출혈을 악화시킬 수 있다.\n  - ⑤ 메틸에르고노빈은 고혈압·전자간증이 없는 산모의 자궁이완에서 옥시토신 다음 약으로 정답이 되며, 혈관 수축으로 혈압을 올리므로 이 환자에게는 금기다.\n- 함정: 옥시토신 다음은 메틸에르고노빈이라는 순서만 외워 고르는 것 — 전자간증(고혈압)이 금기이고, 천식이 카보프로스트까지 막는다.\n- 학습목표: 옥시토신에 반응하지 않는 자궁이완 산후출혈에서 전자간증(고혈압)으로 메틸에르고노빈, 천식으로 카보프로스트가 금기임을 가려 미소프로스톨을 고른다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum Hemorrhage. Obstet Gynecol 2017;130:e168-e186 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Obstetrical Hemorrhage — uterine atony",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "태반이 완전히 배출되었고 열상이 없는데 자궁저부가 물렁하고 마사지에 일시적으로만 단단해지므로 자궁이완에 의한 산후출혈이다. 옥시토신에 반응하지 않으면 2차 자궁수축제를 쓰는데, 전자간증(고혈압)이 있어 혈관을 수축시키는 메틸에르고노빈은 금기이고, 천식이 있어 기관지를 수축시키는 카보프로스트(PGF2α 유사체)도 금기다. 남는 것은 PGE1 유사체 미소프로스톨이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 자궁이완인가</b>: 분만 뒤 출혈을 멈추는 주된 기전은 자궁근이 수축해 태반 부착 부위의 나선동맥을 조이는 「살아 있는 결찰」이다. 자궁저부가 물렁하고 마사지에 반응했다가 다시 풀리는 것은 수축이 유지되지 않는다는 뜻이며, 태반 잔류·열상·응고장애보다 훨씬 흔하다(산후출혈의 약 70~80 %).<br> <b>2차 약의 금기는 수용체에서 나온다</b>: 메틸에르고노빈은 맥각 알칼로이드로 자궁근뿐 아니라 혈관 평활근의 α 아드레날린·세로토닌 수용체를 자극해 혈압을 올리므로 고혈압·전자간증에서 뇌출혈·경련 위험이 있다. 카보프로스트(15-메틸 PGF2α)는 FP 수용체를 통해 기관지 평활근도 수축시켜 천식 발작을 일으킨다. 미소프로스톨(PGE1 유사체)은 기관지 수축·혈압 상승이 적어 두 금기를 모두 피한다.<br> <b>함께 하는 처치</b>: 약물과 동시에 수혈 준비, 트라넥삼산, 자궁 내 풍선 압박을 준비하고, 반응이 없으면 동맥 색전술이나 수술로 넘어간다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">미소프로스톨(정답)</th><th>메틸에르고노빈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>약물 계열</td><td>PGE1 유사체</td><td>맥각 알칼로이드</td></tr> <tr><td>혈압</td><td>거의 영향 없음</td><td><b>상승</b> — 고혈압·전자간증에서 금기</td></tr> <tr><td>기관지</td><td>수축 작음 — 천식에서 쓸 수 있음</td><td>영향 적음</td></tr> <tr><td>흔한 부작용</td><td>발열·오한</td><td>구역·고혈압</td></tr> </tbody></table> 혈압이 정상이고 천식만 있었다면 메틸에르고노빈, 천식 없이 고혈압만 있었다면 카보프로스트도 쓸 수 있다 — 이 환자는 둘 다 있어 미소프로스톨이 남는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 카보프로스트는 천식이 없는 산모의 자궁이완에서 정답이 되며, 기관지 평활근을 수축시켜 천식 환자에게는 금기다.\n② 테르부탈린은 베타2 작용제로 자궁을 이완시키므로 조기진통이나 자궁 과자극으로 태아 서맥이 생겼을 때 정답이 되고 산후출혈에는 해롭다.\n③ 니페디핀은 조기진통의 자궁수축 억제나 중증 고혈압의 강압에서 정답이 되며, 자궁을 이완시켜 산후출혈을 악화시킬 수 있다.\n⑤ 메틸에르고노빈은 고혈압·전자간증이 없는 산모의 자궁이완에서 옥시토신 다음 약으로 정답이 되며, 혈관 수축으로 혈압을 올리므로 이 환자에게는 금기다."
+   },
+   {
+    "k": "함정",
+    "v": "옥시토신 다음은 메틸에르고노빈이라는 순서만 외워 고르는 것 — 전자간증(고혈압)이 금기이고, 천식이 카보프로스트까지 막는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "옥시토신에 반응하지 않는 자궁이완 산후출혈에서 전자간증(고혈압)으로 메틸에르고노빈, 천식으로 카보프로스트가 금기임을 가려 미소프로스톨을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum Hemorrhage. Obstet Gynecol 2017;130:e168-e186 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Obstetrical Hemorrhage — uterine atony"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "옥시토신에 반응하지 않는 자궁이완 산후출혈에서 전자간증으로 메틸에르고노빈, 천식으로 카보프로스트가 금기이므로 미소프로스톨을 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "전자간증(분만 중 혈압 158/104 mmHg) — 맥각 알칼로이드 금기",
+   "steps": 3,
+   "chain": [
+    "태반 완전 배출·열상 없음 + 물렁한 자궁저부가 마사지에 일시적으로만 단단 → 자궁이완 산후출혈",
+    "옥시토신 지속 주입에도 출혈 → 2차 자궁수축제",
+    "전자간증 → 메틸에르고노빈 금기, 천식 → 카보프로스트 금기 → 미소프로스톨"
+   ],
+   "key": [
+    {
+     "item": "마사지하면 잠시 단단해졌다가 다시 물렁해진다",
+     "why": "자궁이완",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "태반은 완전히 배출되었고",
+     "why": "태반 잔류 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "산도 열상은 없다",
+     "why": "열상 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "임신 35주에 전자간증으로 진단되었고",
+     "why": "메틸에르고노빈 금기",
+     "also": []
+    },
+    {
+     "item": "천식이 있어 흡입 스테로이드를 쓰고 있다",
+     "why": "카보프로스트 금기",
+     "also": []
+    },
+    {
+     "item": "맥박 118회/분",
+     "why": "출혈성 쇼크 진행 — 수혈 준비가 함께 필요",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "태반 배출·열상 없음과 마사지에 일시적으로만 단단해지는 자궁은 자궁이완 산후출혈이다. 옥시토신 다음 약으로 전자간증 때문에 메틸에르고노빈, 천식 때문에 카보프로스트가 금기이므로 미소프로스톨을 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "천식이 없었다면 고혈압 산모에서도 카보프로스트 근육 주사를 쓸 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0366",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "순환기 — 운동 중 숨참과 발살바 수기에 커지는 수축기 잡음",
+  "type": "순환기 — 운동 중 숨참과 발살바 수기에 커지는 수축기 잡음",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-18",
+  "vignette": "A 24-year-old man comes to the physician because of shortness of breath and chest tightness when climbing stairs or running for 6 months. He has never fainted, and no family member has died suddenly. Pulse is 68/min, and blood pressure is 122/72 mm Hg. A grade 3/6 systolic ejection murmur is heard at the left lower sternal border; it becomes louder with the Valsalva maneuver and on standing and softer with squatting. Jugular venous pressure is normal, and the lungs are clear. An ECG shows left ventricular hypertrophy. Echocardiography shows an interventricular septal thickness of 19 mm, a posterior wall thickness of 10 mm, systolic anterior motion of the anterior mitral leaflet, a resting left ventricular outflow tract gradient of 55 mm Hg, and an ejection fraction of 70%.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy for his symptoms?",
+  "options": [
+   "Digoxin",
+   "Metoprolol",
+   "Nitroglycerin",
+   "Furosemide",
+   "Amlodipine"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Exertional dyspnea and chest tightness in a young man, a systolic murmur that increases with Valsalva and standing and decreases with squatting, asymmetric septal hypertrophy (19 vs 10 mm), systolic anterior motion of the mitral valve, and an outflow gradient of 55 mm Hg establish obstructive hypertrophic cardiomyopathy. First-line therapy is a beta-blocker, which slows the heart rate to lengthen diastolic filling and reduces contractility, relieving outflow obstruction.\n- 원리: <b>Why the murmur changes with maneuvers</b>: obstruction in hypertrophic cardiomyopathy occurs between the thick septum and the anterior mitral leaflet that is pulled forward in systole (systolic anterior motion). The <b>smaller the left ventricular cavity</b>, the closer they come and the worse the obstruction. Valsalva and standing reduce venous return and shrink the cavity, so the murmur gets louder; squatting increases venous return and afterload, enlarging the cavity and softening the murmur.<br> <b>Why a beta-blocker first</b>: slowing the heart lengthens diastole so the ventricle fills more (larger cavity), and reduced contractility lowers outflow velocity and the drag on the mitral leaflet, decreasing the exercise gradient and symptoms. If insufficient, verapamil, disopyramide, or the cardiac myosin inhibitor mavacamten is added.<br> <b>Drugs to avoid</b>: vasodilators, nitrates, diuretics, and digoxin reduce preload or afterload or increase contractility and worsen obstruction.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Metoprolol (answer)</th><th>Nitroglycerin (closest distractor)</th></tr></thead><tbody> <tr><td>Left ventricular cavity</td><td><b>Enlarges</b> with longer diastolic filling</td><td>Shrinks as preload falls</td></tr> <tr><td>Outflow gradient</td><td>Decreases</td><td>Increases — risk of syncope</td></tr> <tr><td>Chest pain it treats</td><td>Obstructive hypertrophic cardiomyopathy</td><td>Angina from coronary stenosis</td></tr> </tbody></table> For exertional chest pain with a dynamic murmur and systolic anterior motion, nitrates are contraindicated; for chest pain from coronary stenosis, nitroglycerin would be correct.\n- 오답 이유:\n  - (A) Digoxin would be correct for rate control of atrial fibrillation in heart failure with reduced ejection fraction; it increases contractility and worsens obstruction.\n  - (C) Nitroglycerin would be correct for stable angina from coronary stenosis; here it lowers preload and worsens the outflow obstruction.\n  - (D) Furosemide would be correct for heart failure with reduced ejection fraction and pulmonary congestion; in this disease it shrinks the cavity and worsens obstruction.\n  - (E) Amlodipine would be correct for hypertension or vasospastic angina; as a peripheral vasodilator it lowers afterload and increases the outflow gradient.\n- 함정: Treating exertional chest pain with antianginal vasodilators — a murmur that changes with maneuvers and systolic anterior motion point to outflow obstruction.\n- 학습목표: 발살바 수기·선 자세에서 커지고 쪼그려 앉으면 작아지는 수축기 잡음과 비대칭 중격 비대·승모판 수축기 전방운동으로 폐쇄성 비후성 심근병증을 진단하고, 증상 조절의 1차 약으로 베타차단제를 고른다\n- 근거·출처: Ommen SR, et al. 2020 AHA/ACC Guideline for the Diagnosis and Treatment of Patients With Hypertrophic Cardiomyopathy. Circulation 2020;142:e558-e631 · Jameson JL, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Cardiomyopathy and Myocarditis — hypertrophic cardiomyopathy",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Exertional dyspnea and chest tightness in a young man, a systolic murmur that increases with Valsalva and standing and decreases with squatting, asymmetric septal hypertrophy (19 vs 10 mm), systolic anterior motion of the mitral valve, and an outflow gradient of 55 mm Hg establish obstructive hypertrophic cardiomyopathy. First-line therapy is a beta-blocker, which slows the heart rate to lengthen diastolic filling and reduces contractility, relieving outflow obstruction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the murmur changes with maneuvers</b>: obstruction in hypertrophic cardiomyopathy occurs between the thick septum and the anterior mitral leaflet that is pulled forward in systole (systolic anterior motion). The <b>smaller the left ventricular cavity</b>, the closer they come and the worse the obstruction. Valsalva and standing reduce venous return and shrink the cavity, so the murmur gets louder; squatting increases venous return and afterload, enlarging the cavity and softening the murmur.<br> <b>Why a beta-blocker first</b>: slowing the heart lengthens diastole so the ventricle fills more (larger cavity), and reduced contractility lowers outflow velocity and the drag on the mitral leaflet, decreasing the exercise gradient and symptoms. If insufficient, verapamil, disopyramide, or the cardiac myosin inhibitor mavacamten is added.<br> <b>Drugs to avoid</b>: vasodilators, nitrates, diuretics, and digoxin reduce preload or afterload or increase contractility and worsen obstruction."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Metoprolol (answer)</th><th>Nitroglycerin (closest distractor)</th></tr></thead><tbody> <tr><td>Left ventricular cavity</td><td><b>Enlarges</b> with longer diastolic filling</td><td>Shrinks as preload falls</td></tr> <tr><td>Outflow gradient</td><td>Decreases</td><td>Increases — risk of syncope</td></tr> <tr><td>Chest pain it treats</td><td>Obstructive hypertrophic cardiomyopathy</td><td>Angina from coronary stenosis</td></tr> </tbody></table> For exertional chest pain with a dynamic murmur and systolic anterior motion, nitrates are contraindicated; for chest pain from coronary stenosis, nitroglycerin would be correct."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Digoxin would be correct for rate control of atrial fibrillation in heart failure with reduced ejection fraction; it increases contractility and worsens obstruction.\n(C) Nitroglycerin would be correct for stable angina from coronary stenosis; here it lowers preload and worsens the outflow obstruction.\n(D) Furosemide would be correct for heart failure with reduced ejection fraction and pulmonary congestion; in this disease it shrinks the cavity and worsens obstruction.\n(E) Amlodipine would be correct for hypertension or vasospastic angina; as a peripheral vasodilator it lowers afterload and increases the outflow gradient."
+   },
+   {
+    "k": "함정",
+    "v": "Treating exertional chest pain with antianginal vasodilators — a murmur that changes with maneuvers and systolic anterior motion point to outflow obstruction."
+   },
+   {
+    "k": "학습목표",
+    "v": "발살바 수기·선 자세에서 커지고 쪼그려 앉으면 작아지는 수축기 잡음과 비대칭 중격 비대·승모판 수축기 전방운동으로 폐쇄성 비후성 심근병증을 진단하고, 증상 조절의 1차 약으로 베타차단제를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ommen SR, et al. 2020 AHA/ACC Guideline for the Diagnosis and Treatment of Patients With Hypertrophic Cardiomyopathy. Circulation 2020;142:e558-e631 · Jameson JL, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Cardiomyopathy and Myocarditis — hypertrophic cardiomyopathy"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "수기에 따라 변하는 수축기 잡음·비대칭 중격 비대·수축기 전방운동·유출로 압력차는 폐쇄성 비후성 심근병증이므로 베타차단제로 증상을 조절한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "발살바 수기에 커지고 쪼그려 앉으면 작아지는 잡음 — 전부하를 줄이는 약이 폐쇄를 악화시킨다",
+   "steps": 2,
+   "chain": [
+    "발살바·선 자세에 커지고 쪼그려 앉으면 작아지는 잡음 + 중격 19 mm·수축기 전방운동·압력차 55 mmHg → 폐쇄성 비후성 심근병증",
+    "폐쇄를 줄이려면 내강을 키우고 수축력을 낮춘다 → 베타차단제(질산염·이뇨제·혈관확장제 금기)"
+   ],
+   "key": [
+    {
+     "item": "louder with the Valsalva maneuver and on standing and softer with squatting",
+     "why": "동적 유출로 폐쇄",
+     "also": []
+    },
+    {
+     "item": "systolic anterior motion of the anterior mitral leaflet",
+     "why": "폐쇄의 기전",
+     "also": []
+    },
+    {
+     "item": "interventricular septal thickness of 19 mm",
+     "why": "비대칭 중격 비대(후벽 10 mm)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Jugular venous pressure is normal, and the lungs are clear",
+     "why": "울혈성 심부전 가능성을 낮춘다 — 이뇨제 근거 없음",
+     "also": []
+    },
+    {
+     "item": "ejection fraction of 70%",
+     "why": "박출률 감소 심부전 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has never fainted, and no family member has died suddenly",
+     "why": "급사 위험 인자가 적어 이번 판단은 약물 증상 조절",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "수기에 따라 변하는 수축기 잡음, 비대칭 중격 비대, 승모판 수축기 전방운동과 유출로 압력차는 폐쇄성 비후성 심근병증이다. 증상 조절의 1차 약은 베타차단제이며 질산염·이뇨제·혈관확장제는 폐쇄를 악화시킨다.",
+   "switch": {
+    "choice": "C",
+    "condition": "수기에 변하지 않는 잡음 없이 관상동맥 협착에 의한 운동 시 흉통이었다면 니트로글리세린이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0365",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·소아·신경·안과·순환기·산과·소화기·감염·부인과)",
+  "subtopic": "안과 — 어두운 곳에서 시작된 한쪽 눈 통증과 무지개 무리",
+  "type": "안과 — 어두운 곳에서 시작된 한쪽 눈 통증과 무지개 무리",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-18",
+  "vignette": "62세 여자가 2시간 전 어두운 영화관에서 나온 뒤 시작된 오른쪽 눈의 심한 통증, 두통, 구역으로 응급실에 왔다. 불빛 주위로 무지개 같은 무리가 보인다고 한다. 원시로 볼록렌즈 안경을 쓴다. 혈압 148/88 mmHg, 맥박 92회/분이다. 시력은 오른쪽 0.1, 왼쪽 0.8이다. 오른쪽 눈은 각막 주위 충혈과 각막 부종이 있고 동공은 5 mm로 빛반사가 없다. 안압은 오른쪽 58 mmHg, 왼쪽 16 mmHg이다. 세극등 검사에서 양쪽 눈 모두 앞방이 얕다. 아세타졸아미드 정맥 주사와 티몰롤·필로카르핀 점안 후 오른쪽 안압이 18 mmHg로 내려가고 각막이 맑아졌다.",
+  "question": "다음 치료로 가장 적절한 것은?",
+  "options": [
+   "양쪽 눈 아트로핀 점안",
+   "양쪽 눈 라타노프로스트 점안 유지",
+   "양쪽 눈 레이저 주변부 홍채절개술",
+   "오른쪽 눈만 레이저 주변부 홍채절개술",
+   "오른쪽 눈 섬유주절제술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 어두운 곳에서 동공이 중간 산대되며 시작된 한쪽 눈 통증, 무지개 무리, 각막 부종, 중간 산대 고정 동공과 안압 58 mmHg는 급성 폐쇄각녹내장 발작이다. 약물로 안압을 내린 뒤에는 동공 차단을 근본적으로 풀기 위해 레이저 주변부 홍채절개술을 한다. 반대쪽 눈도 앞방이 얕아 발작 위험이 높으므로 예방적으로 함께 시행한다.\n- 원리: <b>왜 발작이 생기는가</b>: 원시안은 안구가 짧고 수정체가 상대적으로 커서 앞방이 얕다. 어두운 곳에서 동공이 중간 정도로 커지면 홍채와 수정체가 가장 넓게 맞닿아 방수가 뒷방에서 앞방으로 넘어가지 못한다(<b>동공 차단</b>). 뒷방 압력이 홍채 주변부를 앞으로 밀어 섬유주를 덮으면 방수 유출이 막혀 안압이 급격히 오른다.<br> <b>약물은 시간을 버는 것</b>: 아세타졸아미드·티몰롤은 방수 생성을 줄이고, 필로카르핀은 동공을 줄여 홍채를 섬유주에서 떼어 낸다. 그러나 동공 차단의 구조는 그대로 남는다.<br> <b>홍채절개술이 근본 치료인 이유</b>: 홍채 주변부에 작은 구멍을 내면 방수가 동공을 거치지 않고 앞방으로 넘어가 앞뒤 압력이 같아지고 홍채가 평평해진다. 반대쪽 눈은 해부학적 조건이 같아 5년 안에 절반 가까이 발작하므로 예방적으로 함께 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">양쪽 눈 홍채절개술(정답)</th><th>오른쪽 눈만 홍채절개술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>발작 눈</td><td>동공 차단 해소</td><td>동공 차단 해소</td></tr> <tr><td>반대쪽 눈</td><td><b>예방</b> — 같은 얕은 앞방</td><td>방치 — 수년 안에 발작 위험 높음</td></tr> <tr><td>근거</td><td>반대쪽 눈 발작 위험 약 40~80 %</td><td>반대쪽 눈 앞방이 깊을 때만 타당</td></tr> </tbody></table> 반대쪽 눈 앞방이 깊고 우각이 열려 있었다면 발작 눈만 시술해도 된다.\n- 오답 이유:\n  - ① 아트로핀 점안은 동공을 키워 동공 차단을 악화시키므로 금기이며, 앞포도막염에서 유착을 막을 때 정답이 된다.\n  - ② 라타노프로스트 점안만 유지하는 것은 우각이 열린 원발개방각녹내장에서 정답이 되며, 동공 차단 구조를 풀지 못한다.\n  - ④ 오른쪽 눈만 시술하는 것은 반대쪽 눈의 앞방이 깊고 우각경검사에서 우각이 열려 있어 발작 위험이 낮을 때 정답이 된다.\n  - ⑤ 섬유주절제술은 홍채절개술 뒤에도 주변부 앞유착이 넓게 남아 안압이 약물로 조절되지 않을 때 정답이 된다.\n- 함정: 안압이 내려갔으니 점안약을 유지하면 된다고 보거나, 발작 눈만 시술하는 것 — 동공 차단의 구조는 양쪽 눈에 남아 있다.\n- 학습목표: 급성 폐쇄각녹내장 발작을 약물로 가라앉힌 뒤, 반대쪽 눈의 얕은 앞방까지 고려해 양쪽 눈에 레이저 주변부 홍채절개술을 시행한다\n- 근거·출처: American Academy of Ophthalmology. Primary Angle-Closure Disease Preferred Practice Pattern 2020. Ophthalmology 2021;128:P30-P70 · Riordan-Eva P, Augsburger JJ. Vaughan & Asbury's General Ophthalmology, 19th ed. Ch. Glaucoma — acute angle-closure",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "어두운 곳에서 동공이 중간 산대되며 시작된 한쪽 눈 통증, 무지개 무리, 각막 부종, 중간 산대 고정 동공과 안압 58 mmHg는 급성 폐쇄각녹내장 발작이다. 약물로 안압을 내린 뒤에는 동공 차단을 근본적으로 풀기 위해 레이저 주변부 홍채절개술을 한다. 반대쪽 눈도 앞방이 얕아 발작 위험이 높으므로 예방적으로 함께 시행한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 발작이 생기는가</b>: 원시안은 안구가 짧고 수정체가 상대적으로 커서 앞방이 얕다. 어두운 곳에서 동공이 중간 정도로 커지면 홍채와 수정체가 가장 넓게 맞닿아 방수가 뒷방에서 앞방으로 넘어가지 못한다(<b>동공 차단</b>). 뒷방 압력이 홍채 주변부를 앞으로 밀어 섬유주를 덮으면 방수 유출이 막혀 안압이 급격히 오른다.<br> <b>약물은 시간을 버는 것</b>: 아세타졸아미드·티몰롤은 방수 생성을 줄이고, 필로카르핀은 동공을 줄여 홍채를 섬유주에서 떼어 낸다. 그러나 동공 차단의 구조는 그대로 남는다.<br> <b>홍채절개술이 근본 치료인 이유</b>: 홍채 주변부에 작은 구멍을 내면 방수가 동공을 거치지 않고 앞방으로 넘어가 앞뒤 압력이 같아지고 홍채가 평평해진다. 반대쪽 눈은 해부학적 조건이 같아 5년 안에 절반 가까이 발작하므로 예방적으로 함께 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">양쪽 눈 홍채절개술(정답)</th><th>오른쪽 눈만 홍채절개술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>발작 눈</td><td>동공 차단 해소</td><td>동공 차단 해소</td></tr> <tr><td>반대쪽 눈</td><td><b>예방</b> — 같은 얕은 앞방</td><td>방치 — 수년 안에 발작 위험 높음</td></tr> <tr><td>근거</td><td>반대쪽 눈 발작 위험 약 40~80 %</td><td>반대쪽 눈 앞방이 깊을 때만 타당</td></tr> </tbody></table> 반대쪽 눈 앞방이 깊고 우각이 열려 있었다면 발작 눈만 시술해도 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아트로핀 점안은 동공을 키워 동공 차단을 악화시키므로 금기이며, 앞포도막염에서 유착을 막을 때 정답이 된다.\n② 라타노프로스트 점안만 유지하는 것은 우각이 열린 원발개방각녹내장에서 정답이 되며, 동공 차단 구조를 풀지 못한다.\n④ 오른쪽 눈만 시술하는 것은 반대쪽 눈의 앞방이 깊고 우각경검사에서 우각이 열려 있어 발작 위험이 낮을 때 정답이 된다.\n⑤ 섬유주절제술은 홍채절개술 뒤에도 주변부 앞유착이 넓게 남아 안압이 약물로 조절되지 않을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "안압이 내려갔으니 점안약을 유지하면 된다고 보거나, 발작 눈만 시술하는 것 — 동공 차단의 구조는 양쪽 눈에 남아 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 폐쇄각녹내장 발작을 약물로 가라앉힌 뒤, 반대쪽 눈의 얕은 앞방까지 고려해 양쪽 눈에 레이저 주변부 홍채절개술을 시행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American Academy of Ophthalmology. Primary Angle-Closure Disease Preferred Practice Pattern 2020. Ophthalmology 2021;128:P30-P70 · Riordan-Eva P, Augsburger JJ. Vaughan & Asbury's General Ophthalmology, 19th ed. Ch. Glaucoma — acute angle-closure"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "약물로 가라앉힌 급성 폐쇄각녹내장은 동공 차단을 푸는 레이저 주변부 홍채절개술이 근본 치료이고, 앞방이 얕은 반대쪽 눈도 예방적으로 시술한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "반대쪽 눈도 앞방이 얕다는 세극등 소견",
+   "steps": 2,
+   "chain": [
+    "어두운 곳에서 시작된 통증·무지개 무리·각막 부종·중간 산대 고정 동공·안압 58 mmHg → 급성 폐쇄각녹내장 발작",
+    "약물로 안압 하강 뒤 + 양쪽 눈 모두 앞방이 얕다 → 양쪽 눈 레이저 주변부 홍채절개술"
+   ],
+   "key": [
+    {
+     "item": "어두운 영화관에서 나온 뒤",
+     "why": "동공 중간 산대가 발작을 유발",
+     "also": []
+    },
+    {
+     "item": "안압은 오른쪽 58 mmHg",
+     "why": "급성 폐쇄각 발작",
+     "also": []
+    },
+    {
+     "item": "양쪽 눈 모두 앞방이 얕다",
+     "why": "반대쪽 눈 예방 시술의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "오른쪽 안압이 18 mmHg로 내려가고 각막이 맑아졌다",
+     "why": "레이저 시술을 할 수 있는 상태",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "원시로 볼록렌즈 안경",
+     "why": "얕은 앞방의 해부학적 배경",
+     "also": []
+    },
+    {
+     "item": "혈압 148/88 mmHg",
+     "why": "통증에 따른 반응 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "어두운 곳에서 시작된 통증·무지개 무리·각막 부종·안압 58 mmHg는 급성 폐쇄각녹내장이다. 약물로 안압을 내린 뒤 동공 차단을 푸는 레이저 주변부 홍채절개술을 하고, 앞방이 얕은 반대쪽 눈도 함께 시술한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "홍채절개술 뒤에도 넓은 주변부 앞유착으로 안압이 조절되지 않으면 섬유주절제술을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261018T202516Z_일일영상_2026-10-19_10units_10q_7129e522",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0360",
   "exam": "imaging",
   "style": "kmle_style",
