@@ -467,11 +467,11 @@
    ]
   },
   "산부인과": {
-   "hash": "e9c6d4c649d4a2bc49d1",
-   "version": 11,
-   "date": "2026-10-14",
+   "hash": "8001a19d6aa7f2ae7136",
+   "version": 12,
+   "date": "2026-10-18",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 20,
+   "pages": 22,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -500,7 +500,7 @@
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 11,
+     "page": 12,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
@@ -510,24 +510,30 @@
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
+    "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
+     "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
+     "page": 16,
+     "concept_hash": "55af692609810631",
+     "concept_version": 2
+    },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 16,
+     "page": 18,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 18,
+     "page": 20,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "4d0095d831278b5be3de09c73523b85a",
-    "version": 11,
-    "uploaded": "2026-10-14T10:32:03+09:00"
+    "md5": "8d295f9516b4ee2fa4892cb459cf07e6",
+    "version": 12,
+    "uploaded": "2026-10-18T09:13:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -540,9 +546,12 @@
     "MedKOS_학습서_산부인과_v8_2026-10-03.pdf",
     "MedKOS_학습서_산부인과_v9_2026-10-06.pdf",
     "MedKOS_학습서_산부인과_v10_2026-10-07.pdf",
-    "MedKOS_학습서_산부인과_v11_2026-10-14.pdf"
+    "MedKOS_학습서_산부인과_v11_2026-10-14.pdf",
+    "MedKOS_학습서_산부인과_v12_2026-10-18.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 자궁 평활근 종양 — 악성은 괴사·이형성·분열로"
+   ]
   },
   "정신건강의학과": {
    "hash": "4d5f6427dd4678b06a03",
@@ -598,9 +607,9 @@
    ]
   },
   "류마티스내과": {
-   "hash": "a6674dff475571727317",
-   "version": 23,
-   "date": "2026-10-17",
+   "hash": "4a2829d083351d7656ca",
+   "version": 24,
+   "date": "2026-10-18",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 41,
    "template_version": 11,
@@ -704,7 +713,7 @@
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
      "page": 32,
-     "concept_hash": "3e9459e8db6ede90",
+     "concept_hash": "6295d1fb01e16a3b",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
@@ -734,9 +743,9 @@
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "037c3592435f98c1408fd0414119927f",
-    "version": 23,
-    "uploaded": "2026-10-17T09:33:49+09:00"
+    "md5": "35ce26d06469b9b7ca2e929edc42e680",
+    "version": 24,
+    "uploaded": "2026-10-18T09:13:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -761,7 +770,8 @@
     "MedKOS_학습서_류마티스내과_v20_2026-10-14.pdf",
     "MedKOS_학습서_류마티스내과_v21_2026-10-15.pdf",
     "MedKOS_학습서_류마티스내과_v22_2026-10-16.pdf",
-    "MedKOS_학습서_류마티스내과_v23_2026-10-17.pdf"
+    "MedKOS_학습서_류마티스내과_v23_2026-10-17.pdf",
+    "MedKOS_학습서_류마티스내과_v24_2026-10-18.pdf"
    ],
    "changes": [
     "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정"
@@ -1058,11 +1068,11 @@
    ]
   },
   "감염내과": {
-   "hash": "d3784e512116bf554ec8",
-   "version": 12,
-   "date": "2026-10-13",
+   "hash": "94a6cf5328dd161a72ba",
+   "version": 13,
+   "date": "2026-10-18",
    "file": "MedKOS_학습서_감염내과.pdf",
-   "pages": 10,
+   "pages": 12,
    "template_version": 11,
    "units": {
     "cn.pulm.community-acquired-pneumonia.curb65-site-of-care": {
@@ -1079,28 +1089,34 @@
     },
     "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": {
      "title": "레지오넬라 폐렴 — 급성 단서가 모이면 소변 항원",
-     "page": 5,
+     "page": 6,
      "concept_hash": "eb9d3f84037f6d39",
      "concept_version": 2
     },
     "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
      "title": "세균성 혈관종증 — 카포시육종과 조직으로 가른다",
-     "page": 7,
+     "page": 8,
      "concept_hash": "83e52451270220ab",
+     "concept_version": 1
+    },
+    "cn.id.covid19-pneumonia.tocilizumab-add-on": {
+     "title": "COVID-19 폐렴 악화 — 스테로이드 증량 아닌 IL-6 차단",
+     "page": 9,
+     "concept_hash": "9731fa4463b5dd0a",
      "concept_version": 1
     },
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
      "title": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
-     "page": 9,
+     "page": 11,
      "concept_hash": "8d2774be6329d172",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "0ee7e17fa08420fb74f4cae53c0eb4aa",
-    "version": 12,
-    "uploaded": "2026-10-13T12:08:38+09:00"
+    "md5": "77835c2c3139ffae5c10425a338a273c",
+    "version": 13,
+    "uploaded": "2026-10-18T09:13:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -1114,16 +1130,17 @@
     "MedKOS_학습서_감염내과_v9_2026-10-01.pdf",
     "MedKOS_학습서_감염내과_v10_2026-10-05.pdf",
     "MedKOS_학습서_감염내과_v11_2026-10-06.pdf",
-    "MedKOS_학습서_감염내과_v12_2026-10-13.pdf"
+    "MedKOS_학습서_감염내과_v12_2026-10-13.pdf",
+    "MedKOS_학습서_감염내과_v13_2026-10-18.pdf"
    ],
    "changes": [
-    "내용 갱신: 지역사회획득폐렴 — CURB-65 를 다 세어 치료 장소를 정한다 (정리본 v1 → v2)"
+    "새 단원: COVID-19 폐렴 악화 — 스테로이드 증량 아닌 IL-6 차단"
    ]
   },
   "소화기내과": {
-   "hash": "c60e7fcdda763caa87f3",
-   "version": 13,
-   "date": "2026-10-10",
+   "hash": "d9a1189e1b644121ead7",
+   "version": 14,
+   "date": "2026-10-18",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -1131,8 +1148,8 @@
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
-     "concept_hash": "d2ed57caaa2de525",
-     "concept_version": 2
+     "concept_hash": "a67f4264279f99dd",
+     "concept_version": 3
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
      "title": "게실 농양 — 큰 농양·안정이면 경피 배농",
@@ -1155,9 +1172,9 @@
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "6880b0df7ac07cba5fbaaf02dd9c3357",
-    "version": 13,
-    "uploaded": "2026-10-10T10:18:43+09:00"
+    "md5": "1bc3eac2494a9b1d7e68a37b6d53cccd",
+    "version": 14,
+    "uploaded": "2026-10-18T09:13:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1172,10 +1189,11 @@
     "MedKOS_학습서_소화기내과_v10_2026-10-05.pdf",
     "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf",
     "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf",
-    "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf"
+    "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf",
+    "MedKOS_학습서_소화기내과_v14_2026-10-18.pdf"
    ],
    "changes": [
-    "내용 수정: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기"
+    "내용 갱신: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기 (정리본 v2 → v3)"
    ]
   },
   "신경과": {
@@ -1253,13 +1271,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "94dc32704e3d0861905584accb592511",
+   "md5": "83aad9a9550f0c6fd1eb205c1a479bbd",
    "version": null,
-   "uploaded": "2026-10-17T09:33:49+09:00"
+   "uploaded": "2026-10-18T09:13:15+09:00"
   }
  },
- "updated": "2026-10-17"
+ "updated": "2026-10-18"
 }

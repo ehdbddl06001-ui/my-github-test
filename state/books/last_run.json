@@ -1,8 +1,10 @@
 {
- "started": "2026-10-17T08:47:20+09:00",
+ "started": "2026-10-18T08:18:28+09:00",
  "built": [
-  "소아청소년과",
-  "류마티스내과"
+  "산부인과",
+  "류마티스내과",
+  "감염내과",
+  "소화기내과"
  ],
  "skipped": [
   "응급의학과",
@@ -12,12 +14,10 @@
   "내분비내과",
   "안과",
   "외과",
-  "산부인과",
+  "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
   "호흡기내과",
-  "감염내과",
-  "소화기내과",
   "알레르기내과",
   "기초의학",
   "신장내과",
@@ -28,17 +28,23 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "소아청소년과": [],
-  "류마티스내과": []
+  "산부인과": [],
+  "류마티스내과": [],
+  "감염내과": [],
+  "소화기내과": []
  },
  "notes": {
-  "소아청소년과": [],
+  "산부인과": [],
   "류마티스내과": [
    "배치 탐색 뒤에도 남은 빈 공간: 15쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)",
    "배치 탐색 뒤에도 남은 빈 공간: 15쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)",
    "배치 탐색 뒤에도 남은 빈 공간: 34쪽 왼쪽 단 아래가 비어 있다(빈 공간 46%)",
    "배치 탐색 뒤에도 남은 빈 공간: 34쪽 오른쪽 단 아래가 비어 있다(빈 공간 46%)"
-  ]
+  ],
+  "감염내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 왼쪽 단 아래가 비어 있다(빈 공간 44%)"
+  ],
+  "소화기내과": []
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -52,30 +58,26 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "소아청소년과": {
-   "tried": 117,
+  "산부인과": {
+   "tried": 173,
    "diagram_after_section": {
-    "u-cn-peds-biliary-atresia-cholestasis-workup": 16,
-    "u-cn-peds-biliary-atresia-cholestasis-workup#shrink": 1.0,
-    "u-cn-peds-biliary-atresia-cholestasis-workup#pad": 0,
-    "u-cn-peds-biliary-atresia-cholestasis-workup#col": true,
-    "u-cn-peds-pertussis-infant-macrolide-choice": 10,
-    "u-cn-peds-pertussis-infant-macrolide-choice#shrink": 1.0,
-    "u-cn-peds-pertussis-infant-macrolide-choice#pad": 0,
-    "u-cn-peds-pertussis-infant-macrolide-choice#col": false,
-    "u-cn-peds-rheumatic-fever-secondary-prophylaxis": 14,
-    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#shrink": 1.0,
-    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#pad": 0,
-    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#col": true,
-    "u-cn-peds-rheumatic-fever-acute-eradication": 19,
-    "u-cn-peds-rheumatic-fever-acute-eradication#shrink": 1.0,
-    "u-cn-peds-rheumatic-fever-acute-eradication#pad": 0,
-    "u-cn-peds-rheumatic-fever-acute-eradication#col": true,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#figscale:f1": 0.85,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation": 15,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#shrink": 1.0,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#pad": 0,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#col": true
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 21,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 1.0,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 0,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication": 18,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#shrink": 1.0,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#pad": 0,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#col": false,
+    "u-cn-obgyn-intrapartum-fhr-nichd-category": 23,
+    "u-cn-obgyn-intrapartum-fhr-nichd-category#shrink": 1.0,
+    "u-cn-obgyn-intrapartum-fhr-nichd-category#pad": 0,
+    "u-cn-obgyn-intrapartum-fhr-nichd-category#col": false,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type": 4,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#shrink": 1.0,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#pad": 0,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#col": false,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis#figscale:f2": 0.85
    }
   },
   "류마티스내과": {
@@ -111,37 +113,79 @@
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 14,
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
    }
+  },
+  "감염내과": {
+   "tried": 123,
+   "diagram_after_section": {
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care": 17,
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#shrink": 1.0,
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#pad": 14,
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#col": false,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis": 17,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#shrink": 1.0,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#pad": 42,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#col": false
+   }
+  },
+  "소화기내과": {
+   "tried": 44,
+   "diagram_after_section": {
+    "u-cn-gi-crohn-disease-distribution-histology-diagnosis": 15,
+    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#shrink": 1.0,
+    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#pad": 0,
+    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#col": true,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage": 4,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage#shrink": 1.0,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage#pad": 0,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage#col": false
+   }
   }
  },
  "result": "ok",
- "finished": "2026-10-17T09:33:49+09:00",
+ "finished": "2026-10-18T09:13:15+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "소아청소년과": {
-    "file": "MedKOS_학습서_소아청소년과.pdf",
+   "산부인과": {
+    "file": "MedKOS_학습서_산부인과.pdf",
     "status": "uploaded",
-    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
+    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
     "kept_id": true,
-    "md5": "a4b2eda22e99a1ed6578401267906934",
-    "archive": "MedKOS_학습서_소아청소년과_v16_2026-10-17.pdf"
+    "md5": "8d295f9516b4ee2fa4892cb459cf07e6",
+    "archive": "MedKOS_학습서_산부인과_v12_2026-10-18.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "037c3592435f98c1408fd0414119927f",
-    "archive": "MedKOS_학습서_류마티스내과_v23_2026-10-17.pdf"
+    "md5": "35ce26d06469b9b7ca2e929edc42e680",
+    "archive": "MedKOS_학습서_류마티스내과_v24_2026-10-18.pdf"
+   },
+   "감염내과": {
+    "file": "MedKOS_학습서_감염내과.pdf",
+    "status": "uploaded",
+    "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
+    "kept_id": true,
+    "md5": "77835c2c3139ffae5c10425a338a273c",
+    "archive": "MedKOS_학습서_감염내과_v13_2026-10-18.pdf"
+   },
+   "소화기내과": {
+    "file": "MedKOS_학습서_소화기내과.pdf",
+    "status": "uploaded",
+    "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
+    "kept_id": true,
+    "md5": "1bc3eac2494a9b1d7e68a37b6d53cccd",
+    "archive": "MedKOS_학습서_소화기내과_v14_2026-10-18.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "94dc32704e3d0861905584accb592511"
+    "md5": "83aad9a9550f0c6fd1eb205c1a479bbd"
    }
   },
-  "at": "2026-10-17T09:33:49+09:00"
+  "at": "2026-10-18T09:13:15+09:00"
  }
 }
