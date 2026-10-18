@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-17",
+ "generated": "2026-10-18",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3749,
+  "total": 3755,
   "byType": {
+   "anatomy": 846,
    "concept": 104,
-   "anatomy": 845,
+   "paper": 791,
    "imaging": 359,
-   "paper": 786,
    "kmle": 1440,
    "usmle": 198,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 845,
-   "Cardiology": 259,
-   "Nephrology": 207,
+   "Anatomy": 846,
+   "Cardiology": 260,
+   "Nephrology": 208,
    "Infectious Disease": 189,
    "Pediatrics": 174,
    "Obstetrics & Gynecology": 126,
-   "Pathology": 115,
+   "Pathology": 116,
    "Hematology-Oncology": 114,
    "Rheumatology": 109,
    "Psychiatry": 108,
    "Neurology": 107,
    "General Surgery": 98,
    "Endocrinology": 95,
+   "Surgery": 95,
    "Dermatology": 94,
    "Orthopedics": 94,
-   "Surgery": 94,
    "Gastroenterology": 93,
    "Ophthalmology": 92,
    "Pulmonology": 92,
    "Hematology": 87,
-   "Laboratory Medicine": 79,
+   "Laboratory Medicine": 80,
    "산부인과": 54,
    "순환기": 31,
    "호흡기": 24,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1095,
-   "high": 2604,
+   "high": 2605,
+   "medium": 1100,
    "low": 50
   },
   "tagCount": 4837
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-10-19",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-19",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/anatomy/daily/2026-10-19.md",
+   "snippet": "오늘의 학습 (2026 10 19 · final review) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 39일 · Tagging 2까지 0일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-19 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 19 · final review) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 39일 · Tagging 2까지 0일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria",
    "type": "concept",
@@ -156,6 +170,91 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0774-t2-eve.md",
    "snippet": "0. 오늘은 넣는 날이 아니라 꺼내는 날이다 Tagging 2 가 ==내일(2026 10 19)== 이다. 범위는 ==9–15회차==(팔·가슴안·배·골반·샅·척주·머리·관절)다. 지난 일주일의 복습은 회차 서브노트 7장으로 닫혔다. 오늘 새 구조 이름을 처음 외우기 시작하면 ==이미 잡아 둔 관계까지 흔들린다==. 그래서 이 카드에는 새 내용이 없다 . Tagging 1 D 1 카드( anatomy 2026 0467 )와 같은",
    "text": "Anatomy Tagging 2 전날(D-1) 최종 점검 — 9–15회차 인출 드릴 · 순서 문항 · 신경지배 예외 · 시험장 운영 15회차 · 머리·목·다리 태깅2 D-1 최종점검 인출드릴 답안표기 시험운영 순서문항 신경지배예외 9회차 10회차 11회차 12회차 13회차 14회차 15회차 회차 서브노트 9–15(0484 · 0509 · 0558 · 0610 · 0657 · 0698 · 0761) · Tagging 1 D-1 카드(0467) 형식 · 문항 은행 content/anatomy/questions/tagging-2/ — 새 사실 생성 없음, 인출 형태로 재배열만 0. 오늘은 넣는 날이 아니라 꺼내는 날이다 Tagging 2 가 ==내일(2026 10 19)== 이다. 범위는 ==9–15회차==(팔·가슴안·배·골반·샅·척주·머리·관절)다. 지난 일주일의 복습은 회차 서브노트 7장으로 닫혔다. 오늘 새 구조 이름을 처음 외우기 시작하면 ==이미 잡아 둔 관계까지 흔들린다==. 그래서 이 카드에는 새 내용이 없다 . Tagging 1 D 1 카드( anatomy 2026 0467 )와 같은 형태로, 읽는 표를 ==보지 않고 말하는 드릴==로 바꿨고, 아는 것을 답안에서 잃지 않기 위한 표기를 다시 붙였다. [!TIP] 오늘의 판단 기준 :: 한 항목을 ==10초 안에 소리 내어== 말하지 못하면 그건 '아는 것'이 아니라 '읽은 것'이다. 막히면 그 회차 서브노트의 해당 표만 30초 보고 다시 말한다. ==다시 읽기로 시간을 쓰지 않는다.== 1. 답안 표기 — Tagging 1 에서 배운 것 그대로 허용 약자는 ==a. v. n. m. lig. sup. inf. ant. post. med. lat.== 이 전부고 ==마침표가 필수==다. 이번 범위는 관절 회차(14 · 15)가 있어 ==인대(lig.)== 답이 많다. 이렇게 쓰면 위험 이렇게 쓴다 ant cruciate lig == 앞십자인대 또는 anterior cruciate lig. == coracoclav lig == 부리빗장인대 또는 coracoclavicular lig. == recurrent laryngeal == 아래후두신경(되돌이후두신경) 또는 recurrent laryngeal n. == supraspinatus == 가시위근 또는 supraspinatus m. == 근육은 한글 == ○○근 ==, 원어 == ○○ muscle 또는 ○○ m. == — 접미사를 떨어뜨리면 근육인지 힘줄인지가 답안에서 사라진다. 관계를 묻는 문항은 ==방향어(ant. post. med. lat. sup. inf.)까지==가 답이다. 2. 인출 드릴 A — 팔오금 · 손목굴 · 고샅관 (10회차) !fig docs/assets/anatomy/tree s10 bundle quiz.svg 10회차 신경혈관다발 퀴즈판 — 보고 말한 뒤 오른쪽 답과 맞춘다 묻는 것 답 팔오금 가쪽→안쪽 ==위팔두갈래근 힘줄 → 위팔동맥 → 정중신경 (TAN)== 손목굴을 지나는 것 ==얕은손가락굽힘근 4 + 깊은손가락굽힘근 4 + 긴엄지굽힘근 1 + 정중신경 = 10== 손목굴을 지나지 않는 것 ==자신경 · 자동맥 · 노동맥 · 긴손바닥근 힘줄== 자신경이 지나는 굴 ==자신경굴 (Guyon canal) — 콩알뼈와 갈고리뼈갈고리 사이, 굽힘근지지띠 위== 정중신경이 맡는 손 근육 ==LOAF — 벌레근 1·2 · 엄지맞섬근 · 짧은엄지벌림근 · 짧은엄지굽힘근 얕은갈래== 얕은 / 깊은 손바닥동맥활의 주인 ==얕은활 = 자동맥 · 깊은활 = 노동맥== 3. 인출 드릴 B — 폄근 여섯 칸 · 간세동이 (11회차) !fig docs/assets/anatomy/tree s11 bundle quiz.svg 11회차 퀴즈판 — 손등의 여섯 칸과 간샘창자인대 속 세 구조 묻는 것 답 폄근지지띠 1칸 → 6칸 ==1 APL·EPB / 2 ECRL·ECRB / 3 EPL / 4 ED·EI / 5 EDM / 6 ECU== 리스터결절을 도는 칸 ==3칸 — 긴엄지폄근 (extensor pollicis longus m.)== 해부코담배갑 앞벽 · 뒤벽 · 바닥 ==앞 APL+EPB(1칸) · 뒤 EPL(3칸) · 바닥 손배뼈+큰마름뼈, 그 위를 노동맥== 간샘창자인대 속 뒤 · 앞왼 · 앞오른 ==간문맥 · 고유간동맥 · 온쓸개관== 그 인대가 앞벽인 구멍 ==그물막구멍 (omental foramen) — 집으면 Pringle법== 복강동맥의 세 가지 ==왼위동맥 · 지라동맥 · 온간동맥== 4. 인출 드릴 C — 척주관과 샅 (12회차) !fig docs/assets/anatomy/tree s12 bundle quiz.svg 12회차 퀴즈판 — 바늘이 지나는 층, 음부신경관, 샅의 두 주머니 묻는 것 답 허리천자 바늘 순서 ==가시끝인대 → 가시사이인대 → 황색인대 → 경막바깥공간 → 경막·거미막 → 거미막밑공간== 저항이 툭 사라지는 층 ==황색인대 (ligamentum flavum) — 그 다음이 경막바깥공간== 척수 끝 · 거미막밑공간 끝 ==척수 L1–L2 · 거미막밑공간 S2 — 그래서 L3–L4 · L4–L5 에서 찌른다== 음부신경 가지 뒤→앞 ==아래곧창자신경 → 샅신경 → 음경(음핵)등신경== 음부신경 차단의 표지 ==궁둥뼈가시 — 큰궁둥구멍으로 나가 작은궁둥구멍으로 되들어온다== 샅막 위 / 아래 주머니 ==위 = 깊은샅주머니 · 아래 = 얕은샅주머니 (망울요도샘은 몸은 깊은, 관은 얕은)== 5. 인출 드릴 D — 머리덮개 · 해면정맥굴 · 가로막 · 콩팥문 (13회차) !fig docs/assets/anatomy/tree s13 bundle quiz.svg 13회차 퀴즈판 — 다섯 자리 묻는 것 답 머리덮개 겉→속 ==피부 → 치밀결합조직 → 머리덮개널힘줄 → 성긴결합조직 → 머리뼈막 (SCALP)== 위험층 ==성긴결합조직 — 도출정맥이 감염을 머리뼈 안으로== 해면정맥굴 가쪽벽 / 굴 속 ==벽 = III · IV · V1 · V2 / 속 = 속목동맥 + 갓돌림신경(VI)== 가장 먼저 마비되는 신경 ==갓돌림신경 — 굴 속에 떠 있다== 가로막 구멍 높이 ==T8 대정맥 · T10 식도 · T12 대동맥== 콩팥문 앞→뒤 ==콩팥정맥 → 콩팥동맥 → 콩팥깔때기 (VAP)== 6. 인출 드릴 E — 골반가로막 (14회차) !fig docs/assets/anatomy/diag pelvic diaphragm quiz.svg 골반가로막 퀴즈판 — 앞에서 뒤로 세는 순서 묻는 것 답 골반가로막 근육 앞→뒤 ==두덩곧창자근 → 두덩꼬리근 → 엉덩꼬리근 → 꼬리근== U자 고리로 항문곧창자각을 만드는 근육 ==두덩곧창자근 (puborectalis m.)== 속엉덩동맥 뒤줄기 셋 ==엉덩허리동맥 · 가쪽엉치동맥 · 위볼기동맥 (I Love Sex)== — 내장 가지는 전부 앞줄기 요관과 자궁동맥 ==요관이 자궁동맥 밑 (water under the bridge)== 빗살선 위 / 아래 ==위 = 내장(통증 없음, 문맥) · 아래 = 몸(음부신경, 아프다, 대정맥)== 7. 순서 문항 표 — 이름을 다 맞혀도 순서가 틀리면 오답 Tagging 2 범위는 순서를 묻는 자리가 Tagging 1 보다 많다. 쓰기 전에 ==어느 방향으로 세는지를 먼저 정하고== 시작한다. 문항 자리 방향 답 0481 갈비사이고랑 위 → 아래 ==정맥 → 동맥 → 신경 (VAN)== 0517 앞가쪽 배벽 얕은 → 깊은 ==배바깥빗근 → 배속빗근 → 배가로근== 0519 정삭의 막 바깥 → 안 ==바깥정삭근막(배바깥빗근) → 고환올림근·근막(배속빗근) → 속정삭근막(가로근막)== 0643 허리천자 피부 → 뇌척수액 ==가시끝인대 → 가시사이인대 → 황색인대 → 경막바깥공간 → 경막 → 거미막 → 거미막밑공간== 0644 척수막 겉 → 속 ==경막바깥공간 → 경막 → 경막밑공간 → 거미막 → 거미막밑공간 → 연질막== 0654 음경 등쪽 정중 → 가쪽 ==깊은음경등정맥(하나) → 음경등동맥(둘) → 음경등신경(둘)== 0658 머리덮개 겉 → 속 ==피부 → 치밀결합조직 → 머리덮개널힘줄 → 성긴결합조직 → 머리뼈막== 0669 콩팥문 앞 → 뒤 ==콩팥정맥 → 콩팥동맥 → 콩팥깔때기== 0709 골반가로막 앞 → 뒤 ==두덩곧창자근 → 두덩꼬리근 → 엉덩꼬리근 → 꼬리근== 0772 후두안 위 → 아래 ==안뜰주름 → 후두실 → 성대주름 → 성대문아래공간== [!주의] 같은 '앞→뒤'라도 :: 허파뿌리(9회차) 앞→뒤는 ==허파정맥 → 허파동맥 → 기관지==, 콩팥문(13회차) 앞→뒤는 ==콩팥정맥 → 콩팥동맥 → 깔때기==. 둘 다 ==정맥이 맨 앞==이다 — 위→아래만 허파뿌리가 좌우로 다르다(오른쪽 기관지가 위, 왼쪽 동맥이 위). 8. 신경지배 — 규칙보다 예외가 출제된다 부위 규칙 ==예외== 손의 근육 자신경 깊은가지 ==LOAF 넷 = 정중신경== 위팔·아래팔 뒤칸 · 손등 노신경 ==없음 — 함정은 '어느 가지'(깊은 = 운동, 얕은 = 감각)== 인두근 · 입천장근 미주신경(인두신경얼기) ==붓인두근 = IX · 입천장긴장근 = V3== 혀 근육 혀밑신경 ==입천장혀근 = X== 후두근 아래후두신경(되돌이) ==반지방패근 = 바깥후두신경== 눈근육 눈돌림신경 (III) ==가쪽곧은근 = VI · 위빗근 = IV (LR6 · SO4)== 성대를 여는 근육 — ==뒤반지모뿔근 하나뿐== 돌림근띠 닿는 곳 큰결절 (가시위 · 가시아래 · 작은원) ==어깨밑근만 작은결절 — 그래서 혼자 안쪽돌림== 9. 좌우 · 앞뒤가 답을 가르는 자리 구조 차이 허파뿌리 위→아래 ==오른쪽 기관지가 맨 위(eparterial), 왼쪽은 동맥이 맨 위== 주기관지 ==오른쪽이 짧고 굵고 곧다 — 이물질은 오른아래엽== 콩팥 혈관 ==오른콩팥동맥은 아래대정맥 뒤, 왼콩팥정맥은 대동맥 앞== 부리빗장인대 ==마름인대 = 가쪽 · 원뿔인대 = 안쪽== 십자인대 ==앞십자 = 정강뼈가 앞으로 빠지는 것을 막음 · 뒤십자 = 뒤로== 무릎 곁인대 ==안쪽곁인대는 안쪽반달과 붙고, 가쪽곁인대는 떨어진다== 손바닥동맥활 ==얕은활이 먼쪽, 깊은활이 몸쪽== 10. 시험장 운영 — 카데바와 장기 테이블 3Q 개요 기준 2차는 ==36문항 · 카데바 5구 + 장기 테이블==이다. Tagging 1 에 없던 ==장기 테이블==이 있으므로 허파(9회차) · 위·간·지라·창자(11회차) · 콩팥·부신(13회차) · 골반장기(14회차) · 후두(15회차)는 ==떼어 낸 장기 하나만 보고도== 자리를 말할 수 있어야 한다. 핀을 보기 전에 부위와 층을 먼저 말한다 부위가 정해지면 후보가 몇 개로 줄고, 그 몇 개 중 ==자리로== 고르면 된다. 태깅은 생김새가 아니라 ==무엇이 무엇 사이를 지나는가==를 묻는 시험이다. 막히면 표시하고 넘어간다 한 핀에서 오래 서 있으면 뒤 문항을 통째로 잃는다. ==한 바퀴 돌고 돌아온다.== 방향어와 접미사는 쓰는 순간에 붙인다 나중에 고쳐 쓸 시간이 없다. ==한글용어 + 원어==, 순서 문항이면 ==방향부터== 적는다. 11. 막혔을 때 — 부분점수를 얻는 답안 빈칸은 확실한 0점이다. 이름이 끝내 안 나오면 ==한 단계씩 올라간다==: 1. 정확한 이름 → 2. ==상위 계보==( 노신경의 가지 , 복강동맥의 가지 , 속엉덩동맥 앞줄기의 가지 ) → 3. ==기능·지배 영역==( 성대를 여는 근육 ) → 4. ==자리==( 폄근지지띠 3칸을 지나는 힘줄 ). 12. 오늘 밤 30분 · 내일 아침 15분 오늘 밤 30분 [ ] §1 표기 — ==lig. 마침표 · 근육 접미사== 소리 내어 한 번 [ ] §2–§6 퀴즈판 5장 — ==답을 가린 채== 말하기, 막힌 것만 표시 [ ] §7 순서 문항 10개 — ==방향을 먼저 정하고== 순서까지 말하기 [ ] 막힌 항목이 ==셋 이상 몰린 회차==가 있으면 그 서브노트 1장만 정독 [ ] 표시한 항목만 다시 한 번 — ==새 자료를 열지 않는다== 내일 아침 15분 [ ] §8 예외 표 — ==예외만== 훑기 [ ] §9 좌우·앞뒤 표 한 번 [ ] §10 운영 — ==부위 먼저 · 막히면 넘김 · 쓰는 순간에 방향어== [ ] ==새 내용 금지.== 아침에 처음 보는 구조는 시험장에서 기억을 밀어낸다"
+  },
+  {
+   "id": "paper-2026-0791",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Foot & ankle specialist",
+   "confidence": "medium",
+   "date": "2026-10-17",
+   "path": "content/papers/2026/2026-10-17_paper-2026-0791_impact_of_insurance_type_on_timing_of_diagnosis_and_surgical.md",
+   "snippet": "Title Impact of Insurance Type on Timing of Diagnosis and Surgical Treatment of Acute Achilles Tendon Ruptures: A 2 Center Retrospective Cohort Study Authors Samara Omar, Herzog Isabel, Kim Hyewon, Yedikian Teren, Stewart Tyler, Galdi Balaz",
+   "text": "Surgery scraped pubmed PubMed / Foot & ankle specialist Title Impact of Insurance Type on Timing of Diagnosis and Surgical Treatment of Acute Achilles Tendon Ruptures: A 2 Center Retrospective Cohort Study Authors Samara Omar, Herzog Isabel, Kim Hyewon, Yedikian Teren, Stewart Tyler, Galdi Balazs, Lin Sheldon S Journal / DOI Foot & ankle specialist · DOI: 10.1177/19386400261495193 · PMID: 42888944 https://pubmed.ncbi.nlm.nih.gov/42888944/ Abstract Introduction/PurposeDelayed treatment of acute Achilles tendon rupture is associated with worse outcomes and higher complication rates. Prior studies suggest reduced access to care among Medicaid and uninsured patients. This study examines the effect of insurance status on the timing of diagnosis and surgical treatment among patients undergoing surgical repair of acute Achilles tendon rupture.MethodsA retrospective chart review was conducted of patients aged ≥18 years with acute traumatic Achilles tendon ruptures identified by Current Procedural Terminology codes 27650 and 27654 at 2 hospitals between January 2017 and December 2023. Dates of injury, emergency department presentation, initial outpatient orthopaedic evaluation, and surgical intervention were recorded. Only patients who ultimately underwent operative repair were eligible for inclusion; because case ascertainment relied on surgical procedure codes, the cohort does not capture patients managed nonoperatively or those who never reached surgical care. Insurance status was categorized as private or Medicaid/uninsured. Postoperative complications, including re rupture, infection, venous thromboembolism, wound dehiscence, return to the operating room, and mortality, were documented. Between group comparisons of continuous variables were performed using the Mann Whitney U test, given non normal distribution of the underlying data; independent 2 tailed t tests were performed as a secondary, confirmatory analysis. Significance was set at P < .05.ResultsThirty eight surgically treated patients met the inclusion criteria, including 23 with private insurance and 15 who were Medicaid or uninsured. Median age was 35.2 years, and 89.5% were male. All time intervals are reported as medians. Time from injury to emergency department presentation was longer in the Medicaid/uninsured group but not statistically significant (1.0 vs 0.0 days; Mann Whitney U P = .079). Medicaid/uninsured patients experienced significantly longer delays from injury to initial outpatient orthopaedic evaluation (17.0 vs 4.0 days; Mann Whitney U P = .024) and from injury to surgery (30.0 vs 10.0 days; Mann Whitney U P = .045). Time from orthopaedic evaluation to surgery did not differ significantly between groups (11.0 vs 6.0 days; Mann Whitney U P = .206). Postoperative complications were infrequent in both groups; the study was not powered for comparison of complication rates and none was performed.ConclusionAmong surgically treated patients, those with Medicaid or no insurance experienced significantly longer delays to initial orthopaedic evaluation and to surgical repair compared with privately insured patients, highlighting disparities in access to timely orthopaedic care within this surgically treated population.Level of Evidence:III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0790",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-17",
+   "path": "content/papers/2026/2026-10-17_paper-2026-0790_diagnosis_of_prostate_cancer_by_multi_modal_ultrasound_imagi.md",
+   "snippet": "Title Diagnosis of prostate cancer by multi modal ultrasound imaging Authors Li Jin, He Kang, Zhang Hao, Hu Dejun, Wei Xin, Luo Le Journal / DOI Medicine · DOI: 10.1097/MD.0000000000051135 · PMID: 42888615 https://pubmed.ncbi.nlm.nih.gov/42",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Medicine Title Diagnosis of prostate cancer by multi modal ultrasound imaging Authors Li Jin, He Kang, Zhang Hao, Hu Dejun, Wei Xin, Luo Le Journal / DOI Medicine · DOI: 10.1097/MD.0000000000051135 · PMID: 42888615 https://pubmed.ncbi.nlm.nih.gov/42888615/ Abstract To evaluate the diagnostic performance of multi modal ultrasound imaging, combining transrectal ultrasound (TRUS), shear wave elastography (SWE), and contrast enhanced ultrasound (CEUS), for differentiating benign and malignant prostate lesions, and to provide new evidence for the early diagnosis of prostate cancer. A total of 85 patients who prospectively underwent multi modal ultrasound examination, ultrasound guided prostate biopsy, and pathological and immunohistochemical marker detection at our hospital between September 2022 and June 2023 were included. All ultrasound examinations and biopsies were performed within a 2 week interval. The diagnostic performance of TRUS, SWE, CEUS, and multi modal ultrasound imaging was compared, with 95% confidence intervals (CIs) calculated for all accuracy measures. The sensitivity, specificity, accuracy, positive predictive value, and negative predictive value were 89.80% (95% CI: 77.81 to 95.83), 86.11% (95% CI: 70.98 93.91), 88.24%, 89.80%, and 86.11% for TRUS; 85.71% (95% CI: 72.87 92.96), 72.22% (95% CI: 55.72 84.09), 80.00%, 80.77%, and 78.79% for SWE; 93.88% (95% CI: 83.13 97.97), 91.67% (95% CI: 77.46 97.20), 92.94%, 93.88%, and 91.67% for CEUS; and 97.96% (95% CI: 89.21 99.65), 94.44% (95% CI: 81.34 98.48), 96.47%, 96.00%, and 97.14% for multi modal ultrasound imaging, respectively. The areas under the receiver operating characteristic curves (AUCs) were 0.880 (95% CI: 0.808 0.952), 0.790 (95% CI: 0.694 0.886), 0.928 (95% CI: 0.872 0.984), and 0.962 (95% CI: 0.924 1.000) for TRUS, SWE, CEUS, and multi modal ultrasound imaging, respectively. The diagnostic performance of multi modal ultrasound was significantly superior to that of TRUS and SWE (P < .05). Multi modal ultrasound imaging demonstrates complementary diagnostic advantages, particularly for prostate tumors with atypical ultrasound features that are difficult to diagnose by a single modality. For these tumors, multi modal ultrasound imaging improves diagnostic accuracy and provides a reliable basis for the differential diagnosis of prostate tumors, warranting further clinical application. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0789",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-17",
+   "path": "content/papers/2026/2026-10-17_paper-2026-0789_malignant_transformation_in_diabetic_foot_ulcers_a_cross_sec.md",
+   "snippet": "Title Malignant transformation in diabetic foot ulcers: A cross sectional analysis of the impact of pathology results on patient management after diabetic foot surgery Authors Akyüz Simay, Bayram Duygu, Gülap Yasin, Güven Hikmet Erhan, Akin",
+   "text": "Pathology scraped pubmed PubMed / Medicine Title Malignant transformation in diabetic foot ulcers: A cross sectional analysis of the impact of pathology results on patient management after diabetic foot surgery Authors Akyüz Simay, Bayram Duygu, Gülap Yasin, Güven Hikmet Erhan, Akinci Melih, Yalçi Aysun, Başak Ali Murat, Gülçelik Neşe Ersöz, et al. Journal / DOI Medicine · DOI: 10.1097/MD.0000000000051242 · PMID: 42888623 https://pubmed.ncbi.nlm.nih.gov/42888623/ Abstract Diabetic foot ulcers (DFUs) are a major cause of lower extremity amputation, hospitalization, and mortality. Although management focuses on wound care, infection control, and limb preservation, malignancies may develop in chronic, nonhealing wounds, and tumors may mimic DFUs. Evidence on malignancy in DFUs is limited, and the diagnostic contribution of routine histopathological examination in surgically treated cases remains unclear. This study aimed to determine the frequency of histopathologically confirmed malignancy in patients undergoing surgery for chronic DFUs and assess its impact on management and care. This retrospective, cross sectional, single center study was conducted at a Training and Research Hospital. We included 678 consecutive patients admitted with chronic DFUs between January 2019 and June 2021 who underwent surgical treatment and histopathological examination. Patients managed conservatively and those without a pathology specimen were excluded. Demographic characteristics, ulcer features, surgical procedures, histopathological findings, and changes in treatment and care were obtained from medical records. Statistical analyses were performed using SPSS version 25.0. The malignancy rate and its 95% confidence interval (CI) were calculated using the Clopper Pearson method. A total of 678 patients were included. Of these, 74% were male, and the mean age was 64.69 ± 10.92 years. Wagner grade 4 ulcers accounted for 61.7% of cases, while 65.0% were classified as PEDIS grade 3. Histopathological examination identified malignancy in 4 patients (0.6%; 95% CI, 0.16 1.50); two of these patients had metastatic involvement. The treatment and care plan was modified for all patients in whom malignancy was detected. Overall, 95.6% of patients healed with wound care after surgery, without further changes to their treatment or care plan. However, 1.9% required amputation at a more proximal level, 1.3% experienced limb loss, and 1.2% died from other diabetes related complications. Although uncommon, malignancy and metastatic involvement may occur in chronic DFUs. The possibility of malignancy should therefore be considered, particularly in nonhealing, atypical, or clinically suspicious ulcers. Ensuring appropriate histopathological evaluation of such ulcers may help healthcare professionals and wound care nurses identify primary or metastatic malignancies at an earlier stage. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0788",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-17",
+   "path": "content/papers/2026/2026-10-17_paper-2026-0788_persistent_hyperparathyroidism_and_its_predictive_factors_in.md",
+   "snippet": "Title Persistent hyperparathyroidism and its predictive factors in end stage renal disease patients after kidney transplantation: A prospective study Authors Lam Kim Ngan Huynh, Phan Hen Huu, Thai Sam Minh, Do Minh Duc Journal / DOI Medicin",
+   "text": "Nephrology scraped pubmed PubMed / Medicine Title Persistent hyperparathyroidism and its predictive factors in end stage renal disease patients after kidney transplantation: A prospective study Authors Lam Kim Ngan Huynh, Phan Hen Huu, Thai Sam Minh, Do Minh Duc Journal / DOI Medicine · DOI: 10.1097/MD.0000000000051216 · PMID: 42888627 https://pubmed.ncbi.nlm.nih.gov/42888627/ Abstract Hyperparathyroidism (HPT) may persist in patients after kidney transplantation (KT). A better understanding of which patients are likely to have persistent HPT after KT would help in the development of optimal management strategies. Our aim was to examine the prevalence of persistent HPT after KT in a contemporary cohort and to identify risk factors associated with persistent HPT at 6 months. We followed 104 KT subjects in a longitudinal prospective cohort at Cho Ray Hospital, Vietnam, from October 2023 to May 2025. Persistent HPT was defined as a parathyroid hormone (PTH) level of 150 pg/mL at 6 months after KT. Among the 104 patients, the prevalence of persistent HPT at 6 months was 58.65%. The average PTH levels pretransplant and at 6 months posttransplant were 375.70 (IQR = 259.00 603.25) pg/mL and 167.95 (IQR = 112.53 227.30) pg/mL, respectively. Patients with persistent HPT had significantly higher baseline PTH (median 489 vs 273, P < .001) and alkaline phosphatase levels (median 102.0 vs 89.5, P = .025), and also experienced longer durations of chronic kidney disease (median 5.0 vs 2.0, P = .007) and dialysis therapy (2.0 vs 1.0, P < .001). Higher pretransplant intact PTH was independently associated with persistent HPT across both multivariable models, whereas the association with dialysis duration was significant only when categorized as ≥1 year. Our findings suggest that high pretransplant intact PTH independently predicts persistent HPT at 6 months, whereas dialysis duration is only significant when it reaches 1 year or longer. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0787",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal. Cardiovascular pharmacotherapy",
+   "confidence": "medium",
+   "date": "2026-10-17",
+   "path": "content/papers/2026/2026-10-17_paper-2026-0787_dapagliflozin_in_phenotypically_stratified_hfpef_without_myo.md",
+   "snippet": "Title Dapagliflozin in phenotypically stratified HFpEF without myocardial fibrosis: the STADIA HFpEF randomized crossover trial Authors Scheffer Mariëlle, van Maarschalkerwaart Willemijn, Dong Chaohui, Landzaat Jochem W D, Nedenyi Fanni, De",
+   "text": "Cardiology scraped pubmed PubMed / European heart journal. Cardiovascular pharmacotherapy Title Dapagliflozin in phenotypically stratified HFpEF without myocardial fibrosis: the STADIA HFpEF randomized crossover trial Authors Scheffer Mariëlle, van Maarschalkerwaart Willemijn, Dong Chaohui, Landzaat Jochem W D, Nedenyi Fanni, Delalat Simin, Sultana Innas, Jarkas Oliver, et al. Journal / DOI European heart journal. Cardiovascular pharmacotherapy · DOI: 10.1093/ehjcvp/pvag091 · PMID: 42888932 https://pubmed.ncbi.nlm.nih.gov/42888932/ Abstract AIMS: Heart failure with preserved ejection fraction(HFpEF) is characterized by increased diastolic left ventricular(LV) stiffness resulting from variable contributions of myocardial extracellular matrix(ECM) remodeling and titin based cardiomyocyte stiffness. Sodium glucose cotransporter 2 inhibitors(SGLT2i) improved cardiomyocyte distensibility, inflammation, and oxidative stress in experimental and human HFpEF myocardium. We investigated whether dapagliflozin improves LV distensibility in phenotypically stratified HFpEF patients without significant myocardial fibrosis. METHODS: STADIA HFpEF was a 34 week, randomized, double blind, placebo controlled crossover trial. HFpEF patients underwent multi level phenotypic stratification including cardiac magnetic resonance imaging to exclude structural cardiomyopathies and significant myocardial ECM remodeling. Participants were randomized to dapagliflozin 10 mg or placebo for two 13 week treatment periods separated by an 8 week washout.The co primary endpoints were changes in E/e'/LV end diastolic volume index(LVEDVi) and mean LV e', reflecting LV distensibility and relaxation. Secondary endpoints included echocardiographic variables, quality of life, 6 minute walk distance, and inflammatory biomarkers. RESULTS: Between February 2020 and October 2022, 32 patients were randomized and 29 completed the study protocol. Median age was 73(68 76) years including 28 women(88%). Dapagliflozin did not significantly modify E/e'/LVEDVi compared with placebo 0.24 (0.20 0.32) to 0.26 (0.22 0.34) vs. 0.23 (0.22 0.29) to 0.25 (0.21 0.31); p=0.370 nor did it change mean LV e' 6.2 (5.6 7.5) to 6.2 (5.7 7.1) vs. 6.6 (5.6 7.4) to 6.7 (5.4 7.5); p=0.448. Most secondary outcomes were neutral. However, an isolated improvement in LA conduit strain and numerical reductions in inflammatory biomarkers were observed during dapagliflozin treatment. CONCLUSIONS: In phenotypically stratified HFpEF patients without significant myocardial fibrosis, dapagliflozin did not improve LV distensibility or relaxation. An isolated improvement in LA conduit strain and numerical reductions in inflammatory biomarkers were observed; however, these exploratory findings require confirmation in larger studies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0360",
