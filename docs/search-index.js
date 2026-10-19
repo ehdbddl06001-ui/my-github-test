@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3810,
+  "total": 3821,
   "byType": {
    "usmle": 204,
    "kmle": 1472,
+   "imaging": 380,
    "concept": 105,
    "anatomy": 846,
    "paper": 797,
-   "imaging": 369,
    "ailab": 14,
    "basic": 3
   },
@@ -38,29 +38,29 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 94,
    "Hematology": 89,
    "Laboratory Medicine": 80,
-   "산부인과": 56,
-   "순환기": 32,
-   "호흡기": 25,
+   "산부인과": 58,
+   "순환기": 33,
+   "호흡기": 26,
+   "소화기": 24,
    "Physiology": 23,
-   "소화기": 23,
-   "소아과": 20,
+   "소아과": 21,
    "병리·조직학": 19,
+   "신경": 18,
+   "혈액·종양": 18,
    "Pharmacology": 17,
    "감염": 17,
    "내분비": 17,
-   "신경": 17,
+   "신장·비뇨기": 17,
    "응급·중환자": 17,
-   "혈액·종양": 17,
    "Biochemistry": 16,
-   "신장·비뇨기": 16,
    "Microbiology": 15,
    "피부과": 15,
    "예방의학·역학": 14,
-   "외과": 13,
+   "외과": 14,
    "Immunology": 12,
    "Internal Medicine": 12,
+   "약리": 11,
    "근골격·류마티스": 10,
-   "약리": 10,
    "정신과": 10,
    "안과": 7,
    "영상의학": 7,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2653,
+   "high": 2664,
    "medium": 1107,
    "low": 50
   },
@@ -822,6 +822,197 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1474.md",
    "snippet": "61세 여자가 사흘 전부터 가슴이 불규칙하게 두근거린다며 왔다. 8년 전 류마티스 승모판협착으로 기계 판막 치환술을 받았고 그 뒤 항응고제를 먹어 왔으나 반년 전 스스로 끊었다. 고혈압·당뇨병·뇌졸중 병력은 없다. 청진에서 판막 닫히는 금속성 소리가 들리고 폐 소리는 깨끗하다. 활력징후, 심전도와 검사 결과는 자료와 같다. 심박수 조절과 함께 시작할 가장 적절한 항혈전 치료는? A. 아픽사반 B. 다비가트란 C. 와파린 D. ",
    "text": "Cardiology Irregular Palpitations in a Woman with a Prior Valve Replacement atrial-fibrillation mechanical-valve anticoagulation warfarin ecg KMLE 2026 / Claude 61세 여자가 사흘 전부터 가슴이 불규칙하게 두근거린다며 왔다. 8년 전 류마티스 승모판협착으로 기계 판막 치환술을 받았고 그 뒤 항응고제를 먹어 왔으나 반년 전 스스로 끊었다. 고혈압·당뇨병·뇌졸중 병력은 없다. 청진에서 판막 닫히는 금속성 소리가 들리고 폐 소리는 깨끗하다. 활력징후, 심전도와 검사 결과는 자료와 같다. 심박수 조절과 함께 시작할 가장 적절한 항혈전 치료는? A. 아픽사반 B. 다비가트란 C. 와파린 D. 이중 항혈소판제 E. 리바록사반 불규칙하게 불규칙한 RR과 P파 소실은 심방세동이다. 기계 판막이 있으면 CHA₂DS₂ VASc 점수와 상관없이 항응고가 필요하고, 직접 경구 항응고제(DOAC)는 기계 판막에서 혈전·출혈이 늘어 금기라 와파린을 쓴다."
+  },
+  {
+   "id": "imaging-2026-0381",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 세르트랄린 복용자의 리네졸리드 투여 뒤 증상",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0381.md",
+   "snippet": "A 58 year old woman who was hospitalized for a diabetic foot infection develops agitation, sweating, tremor, and diarrhea. Cultures from the wound grew vancomycin resistant Enterococcus faecium, and she was started on a new intravenous anti",
+   "text": "약리 약리 — 세르트랄린 복용자의 리네졸리드 투여 뒤 증상 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e A 58 year old woman who was hospitalized for a diabetic foot infection develops agitation, sweating, tremor, and diarrhea. Cultures from the wound grew vancomycin resistant Enterococcus faecium, and she was started on a new intravenous antibiotic 2 days ago. She has major depressive disorder treated with sertraline for 3 years and takes metformin and atorvastatin. Her temperature is 39.1°C (102.4°F), pulse is 124/min, and blood pressure is 168/94 mm Hg. Pupils are dilated. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus, and there is no muscle rigidity in the upper extremities. Bowel sounds are hyperactive. Serum creatine kinase is 410 U/L. Which of the following mechanisms best explains this reaction? A. Blockade of dopamine D2 receptors B. Blockade of muscarinic acetylcholine receptors C. Abnormal activation of ryanodine receptors in skeletal muscle D. Inhibition of monoamine oxidase E. Inhibition of cytochrome P450 2D6"
+  },
+  {
+   "id": "imaging-2026-0380",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 생후 2주 남아의 구토·저나트륨·고칼륨",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0380.md",
+   "snippet": "생후 15일 남아가 4일 전부터 먹은 뒤 토하고 잘 먹지 않아 왔다. 재태 39주에 3.3 kg으로 태어났고 지금 체중은 2.9 kg이다. 구토물에 담즙은 섞여 있지 않다. 맥박 178회/분, 혈압 58/32 mmHg이며 대천문이 함몰되어 있고 피부 긴장도가 떨어져 있다. 복부는 부드럽고 상복부에 만져지는 덩이는 없다. 음경과 고환은 정상으로 보이며 음낭에 색소침착이 있다. 혈청 나트륨 124 mEq/L, 칼륨 7.1 mEq/",
+   "text": "소아과 소아청소년 — 생후 2주 남아의 구토·저나트륨·고칼륨 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e 생후 15일 남아가 4일 전부터 먹은 뒤 토하고 잘 먹지 않아 왔다. 재태 39주에 3.3 kg으로 태어났고 지금 체중은 2.9 kg이다. 구토물에 담즙은 섞여 있지 않다. 맥박 178회/분, 혈압 58/32 mmHg이며 대천문이 함몰되어 있고 피부 긴장도가 떨어져 있다. 복부는 부드럽고 상복부에 만져지는 덩이는 없다. 음경과 고환은 정상으로 보이며 음낭에 색소침착이 있다. 혈청 나트륨 124 mEq/L, 칼륨 7.1 mEq/L, 염소 92 mEq/L, 총 이산화탄소 15 mEq/L, 포도당 52 mg/dL이다. 진단을 위해 가장 적절한 검사는? A. 땀 염소 검사 B. 상부위장관 조영술 C. 혈청 17 수산화프로게스테론 D. 복부 초음파로 날문 근육 두께 측정 E. 혈청 알도스테론"
+  },
+  {
+   "id": "imaging-2026-0379",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — ACE 억제제·스피로놀락톤 복용자의 고칼륨혈증과 넓은 QRS",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0379.md",
+   "snippet": "A 71 year old man is brought to the emergency department because of generalized weakness for 2 days. He has type 2 diabetes mellitus, heart failure with reduced ejection fraction, and chronic kidney disease. Two weeks ago, spironolactone wa",
+   "text": "신장·비뇨기 신장·비뇨 — ACE 억제제·스피로놀락톤 복용자의 고칼륨혈증과 넓은 QRS opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e A 71 year old man is brought to the emergency department because of generalized weakness for 2 days. He has type 2 diabetes mellitus, heart failure with reduced ejection fraction, and chronic kidney disease. Two weeks ago, spironolactone was added to his regimen of lisinopril, metoprolol, and furosemide. His pulse is 52/min and blood pressure is 108/64 mm Hg. Muscle strength is 4/5 in all extremities. Serum studies show a potassium concentration of 7.6 mEq/L, sodium 134 mEq/L, bicarbonate 19 mEq/L, glucose 142 mg/dL, and creatinine 2.9 mg/dL (baseline 1.8 mg/dL). The sample is not hemolyzed. An ECG shows peaked T waves, absent P waves, and a QRS duration of 160 msec. Which of the following is the most appropriate immediate treatment? A. Intravenous sodium bicarbonate B. Intravenous calcium gluconate C. Intravenous regular insulin with dextrose D. Nebulized albuterol E. Oral sodium zirconium cyclosilicate"
+  },
+  {
+   "id": "imaging-2026-0378",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 범혈구감소·DIC·막대 모양 봉입체",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0378.md",
+   "snippet": "A 41 year old man comes to the emergency department because of a 1 week history of fatigue, gum bleeding when brushing his teeth, and bruising on his arms and legs. His temperature is 37.4°C (99.3°F), pulse is 104/min, and blood pressure is",
+   "text": "혈액·종양 혈액·종양 — 범혈구감소·DIC·막대 모양 봉입체 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e A 41 year old man comes to the emergency department because of a 1 week history of fatigue, gum bleeding when brushing his teeth, and bruising on his arms and legs. His temperature is 37.4°C (99.3°F), pulse is 104/min, and blood pressure is 118/70 mm Hg. Examination shows pallor, gingival oozing, and scattered ecchymoses; there is no lymphadenopathy or splenomegaly. Laboratory studies show a hemoglobin concentration of 8.2 g/dL, leukocyte count of 1800/mm3, platelet count of 22,000/mm3, prothrombin time of 19 seconds (INR 1.7), fibrinogen of 85 mg/dL, and markedly elevated D dimer. A peripheral blood smear shows occasional large abnormal cells with bilobed nuclei, heavy cytoplasmic granules, and bundles of Auer rods. Bone marrow aspiration has been performed, and cytogenetic and molecular studies are pending. In addition to transfusion of platelets and cryoprecipitate, which of the following is the most appropriate next step in management? A. Wait for PML RARA confirmation before starting treatment B. Start continuous intravenous unfractionated heparin C. Start induction with cytarabine and daunorubicin alone D. Start hydroxyurea to lower the leukocyte count E. Start all trans retinoic acid immediately"
+  },
+  {
+   "id": "imaging-2026-0377",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — IgA 결핍 환자의 셀리악병 혈청검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0377.md",
+   "snippet": "A 26 year old woman comes to the physician because of a 6 month history of bloating, intermittent loose stools, and fatigue. She has had three episodes of sinusitis in the past year. She eats a regular diet that includes bread and pasta dai",
+   "text": "소화기 소화기·간담췌 — IgA 결핍 환자의 셀리악병 혈청검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e A 26 year old woman comes to the physician because of a 6 month history of bloating, intermittent loose stools, and fatigue. She has had three episodes of sinusitis in the past year. She eats a regular diet that includes bread and pasta daily. She has autoimmune thyroiditis treated with levothyroxine. BMI is 19 kg/m2. Abdominal examination shows mild distention without tenderness. Laboratory studies show a hemoglobin concentration of 10.1 g/dL, mean corpuscular volume of 71 fL, and ferritin of 6 ng/mL. Serum tissue transglutaminase IgA antibody is negative. Total serum IgA concentration is less than 5 mg/dL (N = 70 400). Which of the following is the most appropriate next step in diagnosis? A. Deamidated gliadin peptide IgG and tissue transglutaminase IgG testing B. HLA DQ2 and HLA DQ8 genotyping C. Trial of a gluten free diet for 3 months D. Fecal calprotectin measurement E. Repeat tissue transglutaminase IgA testing in 6 months"
+  },
+  {
+   "id": "imaging-2026-0376",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 3분기의 통증 없는 질출혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0376.md",
+   "snippet": "32세 여자(임신 3회, 출산 2회)가 임신 33주에 갑자기 생긴 질출혈로 왔다. 배는 아프지 않았고 선홍색 피가 생리대 두 개를 적셨다. 두 번 모두 제왕절개로 분만하였다. 이번 임신 중 산전 진찰은 받지 않았다. 혈압 116/72 mmHg, 맥박 92회/분이다. 자궁은 부드럽고 압통이 없으며 자궁수축은 없다. 태아는 횡위로 만져진다. 태아 심박동은 분당 145회이고 변이도는 정상이다. 혈색소 10.8 g/dL이다. 가장 먼",
+   "text": "산부인과 산과 — 임신 3분기의 통증 없는 질출혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e 32세 여자(임신 3회, 출산 2회)가 임신 33주에 갑자기 생긴 질출혈로 왔다. 배는 아프지 않았고 선홍색 피가 생리대 두 개를 적셨다. 두 번 모두 제왕절개로 분만하였다. 이번 임신 중 산전 진찰은 받지 않았다. 혈압 116/72 mmHg, 맥박 92회/분이다. 자궁은 부드럽고 압통이 없으며 자궁수축은 없다. 태아는 횡위로 만져진다. 태아 심박동은 분당 145회이고 변이도는 정상이다. 혈색소 10.8 g/dL이다. 가장 먼저 시행할 것은? A. 손가락 내진으로 자궁경부 개대 확인 B. 옥시토신 정주로 분만 유도 C. 양수천자로 태아 폐 성숙도 확인 D. 응급 제왕절개술 E. 경복부 초음파로 태반 위치 확인"
+  },
+  {
+   "id": "imaging-2026-0375",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 실신과 중증 대동맥판협착",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0375.md",
+   "snippet": "78세 남자가 2개월 전부터 계단을 오를 때 가슴이 조이고, 1주 전 산책하다 잠깐 정신을 잃은 적이 있어 왔다. 혈압 118/88 mmHg, 맥박 72회/분이다. 오른쪽 둘째 갈비사이에서 경동맥으로 퍼지는 거친 수축기 박출성 잡음이 들리고 둘째 심음이 약하다. 경동맥 맥박은 늦게 천천히 오른다. 심전도는 좌심실 비대 소견이다. 심초음파에서 대동맥판막은 석회화되어 있고 판막 면적 0.7 cm², 평균 압력차 48 mmHg, 좌",
+   "text": "순환기 순환기 — 운동 중 실신과 중증 대동맥판협착 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e 78세 남자가 2개월 전부터 계단을 오를 때 가슴이 조이고, 1주 전 산책하다 잠깐 정신을 잃은 적이 있어 왔다. 혈압 118/88 mmHg, 맥박 72회/분이다. 오른쪽 둘째 갈비사이에서 경동맥으로 퍼지는 거친 수축기 박출성 잡음이 들리고 둘째 심음이 약하다. 경동맥 맥박은 늦게 천천히 오른다. 심전도는 좌심실 비대 소견이다. 심초음파에서 대동맥판막은 석회화되어 있고 판막 면적 0.7 cm², 평균 압력차 48 mmHg, 좌심실 박출률 60 %이다. 관상동맥조영술에서 의미 있는 협착은 없다. 가장 적절한 치료는? A. 베타차단제 투여 B. 설하 니트로글리세린 투여 C. 풍선 대동맥판막 성형술 단독 D. 대동맥판막 치환술 E. 6개월 뒤 심초음파 추적"
+  },
+  {
+   "id": "imaging-2026-0374",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 폐경 후 출혈과 두꺼운 자궁내막",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0374.md",
+   "snippet": "65세 여자가 2주 전부터 생긴 질출혈로 왔다. 13년 전 폐경되었고 그 뒤 호르몬제를 먹은 적은 없다. 출산 3회이며 당뇨병과 고혈압으로 약을 먹는다. 키 155 cm, 체중 72 kg이다. 질경 검사에서 자궁경부는 육안으로 정상이고 자궁 안에서 적은 양의 피가 흘러나온다. 1년 전 자궁경부 세포검사는 정상이었다. 혈색소 12.4 g/dL이다. 경질 초음파 자궁 시상면 영상은 그림과 같으며 자궁내막 두께는 14 mm이다. 다",
+   "text": "산부인과 부인과 — 폐경 후 출혈과 두꺼운 자궁내막 opendata kmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e 65세 여자가 2주 전부터 생긴 질출혈로 왔다. 13년 전 폐경되었고 그 뒤 호르몬제를 먹은 적은 없다. 출산 3회이며 당뇨병과 고혈압으로 약을 먹는다. 키 155 cm, 체중 72 kg이다. 질경 검사에서 자궁경부는 육안으로 정상이고 자궁 안에서 적은 양의 피가 흘러나온다. 1년 전 자궁경부 세포검사는 정상이었다. 혈색소 12.4 g/dL이다. 경질 초음파 자궁 시상면 영상은 그림과 같으며 자궁내막 두께는 14 mm이다. 다음 단계로 가장 적절한 것은? A. 복강경 자궁절제술 B. 자궁경부 세포검사 반복 C. 자궁내막 조직검사 D. 3개월 뒤 경질 초음파 재검 E. 프로게스틴 3개월 투여 후 재평가"
+  },
+  {
+   "id": "imaging-2026-0373",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 고속 충돌 뒤 두개-경추 이음부 CT",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0373.md",
+   "snippet": "42세 남자가 고속도로에서 오토바이를 타다 앞차와 충돌하여 응급실에 실려 왔다. 현장에서 경추 보호대를 하였다. 기관삽관 뒤 혈압 112/70 mmHg, 맥박 96회/분이다. 진정 전 진찰에서 양쪽 팔다리의 근력이 4등급으로 약했고, 오른쪽 외전신경 마비가 있었다. 흉부·복부·골반 CT에서 출혈은 없었다. 경추 정중시상 CT 재구성 영상은 그림과 같다. 이 환자에게 가장 적절한 치료는? A. 할로 조끼 단독 고정 12주 B. ",
+   "text": "외과 외과계 — 고속 충돌 뒤 두개-경추 이음부 CT opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e 42세 남자가 고속도로에서 오토바이를 타다 앞차와 충돌하여 응급실에 실려 왔다. 현장에서 경추 보호대를 하였다. 기관삽관 뒤 혈압 112/70 mmHg, 맥박 96회/분이다. 진정 전 진찰에서 양쪽 팔다리의 근력이 4등급으로 약했고, 오른쪽 외전신경 마비가 있었다. 흉부·복부·골반 CT에서 출혈은 없었다. 경추 정중시상 CT 재구성 영상은 그림과 같다. 이 환자에게 가장 적절한 치료는? A. 할로 조끼 단독 고정 12주 B. 후두 경추 고정술 C. 두개골 집게 견인 D. 연성 경추 보조기 착용 후 6주 뒤 추적 CT E. 고용량 메틸프레드니솔론 24시간 정주"
+  },
+  {
+   "id": "imaging-2026-0372",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 수막종 절제 때 함께 떼어 낸 대뇌 피질의 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0372.md",
+   "snippet": "A 62 year old man is brought to the physician by his wife because of a 2 month history of progressive weakness of the left leg and episodes of left foot twitching. He has hypertension treated with amlodipine. Strength is 4/5 in the left low",
+   "text": "신경 신경 — 수막종 절제 때 함께 떼어 낸 대뇌 피질의 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e A 62 year old man is brought to the physician by his wife because of a 2 month history of progressive weakness of the left leg and episodes of left foot twitching. He has hypertension treated with amlodipine. Strength is 4/5 in the left lower extremity, and the Babinski sign is present on the left. MRI of the brain shows a 4 cm dural based, homogeneously enhancing mass over the right parasagittal frontal convexity. The mass is resected together with a thin rim of the adjacent cerebral cortex. A photomicrograph of a section of the adjacent cortex stained by immunohistochemistry is shown. The antibody most likely recognizes which of the following antigens? A. Glial fibrillary acidic protein B. Neuronal nuclear antigen (NeuN) C. Macrosialin (CD68) D. Myelin basic protein E. Neurofilament light chain protein"
+  },
+  {
+   "id": "imaging-2026-0371",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 자연기흉 절제 검체의 폐포 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+   "confidence": "high",
+   "date": "2026-10-19",
+   "path": "content/imaging/2026/imaging-2026-0371.md",
+   "snippet": "A 21 year old man comes to the emergency department because of sudden right sided chest pain and shortness of breath that began while he was sitting at his desk 3 hours ago. He has had a similar episode on the same side 6 months ago that re",
+   "text": "호흡기 호흡기 — 자연기흉 절제 검체의 폐포 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e A 21 year old man comes to the emergency department because of sudden right sided chest pain and shortness of breath that began while he was sitting at his desk 3 hours ago. He has had a similar episode on the same side 6 months ago that resolved with needle aspiration. He is 188 cm (6 ft 2 in) tall and weighs 64 kg (141 lb), and he smokes half a pack of cigarettes daily. Breath sounds are decreased over the right hemithorax. A chest x ray shows a right apical pneumothorax. Because of recurrence, he undergoes video assisted thoracoscopic resection of an apical bleb. A photomicrograph of a section of the resected lung tissue stained by immunohistochemistry is shown. The antibody most likely recognizes which of the following antigens? A. Surfactant protein C B. Macrosialin (CD68) C. CD31 (PECAM 1) D. Podoplanin (D2 40) E. Smooth muscle actin"
   },
   {
    "id": "cn.rheum.sarcoidosis.treat-or-observe",

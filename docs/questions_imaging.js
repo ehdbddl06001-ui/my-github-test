@@ -2,6 +2,1406 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0374",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "부인과 — 폐경 후 출혈과 두꺼운 자궁내막",
+  "type": "부인과 — 폐경 후 출혈과 두꺼운 자궁내막",
+  "modality": "ULTRASOUND",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-19",
+  "vignette": "65세 여자가 2주 전부터 생긴 질출혈로 왔다. 13년 전 폐경되었고 그 뒤 호르몬제를 먹은 적은 없다. 출산 3회이며 당뇨병과 고혈압으로 약을 먹는다. 키 155 cm, 체중 72 kg이다. 질경 검사에서 자궁경부는 육안으로 정상이고 자궁 안에서 적은 양의 피가 흘러나온다. 1년 전 자궁경부 세포검사는 정상이었다. 혈색소 12.4 g/dL이다. 경질 초음파 자궁 시상면 영상은 그림과 같으며 자궁내막 두께는 14 mm이다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "복강경 자궁절제술",
+   "자궁경부 세포검사 반복",
+   "자궁내막 조직검사",
+   "3개월 뒤 경질 초음파 재검",
+   "프로게스틴 3개월 투여 후 재평가"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 경질 초음파에서 자궁내막이 고에코로 두껍고(계측 막대) 14 mm 로 측정된다. 폐경 후 출혈에서 자궁내막 두께가 4 mm 이하이면 자궁내막암 가능성이 매우 낮지만, 4 mm 를 넘으면 암·증식증을 배제할 수 없으므로 조직을 얻어야 한다. 비만·당뇨병·고혈압은 길항되지 않는 에스트로겐 노출로 위험을 더 높인다. 진단 없이 관찰·호르몬 치료·수술로 넘어가지 않는다.\n- 원리: <b>왜 내막 두께가 기준이 되는가</b>: 폐경 뒤에는 난소 에스트로겐이 거의 없어 자궁내막이 얇게(대개 4 mm 이하) 위축된다. 위축 내막에서 생기는 출혈은 대부분 양성(위축성 자궁내막염)이고, 두께가 4 mm 이하이면 자궁내막암의 음성예측도가 99 % 를 넘는다.<br> <b>왜 두꺼우면 조직이 필요한가</b>: 폐경 후에도 내막이 두껍다는 것은 지방조직의 방향화효소가 만든 에스트로겐, 에스트로겐을 내는 난소 종양 같은 <b>길항되지 않는 에스트로겐</b> 자극이 있다는 뜻이고, 이것이 자궁내막 증식증→자궁내막모양 선암의 경로를 만든다. 초음파는 두께만 보여 줄 뿐 세포의 비정형성을 말해 주지 못하므로, 외래 흡인 조직검사(또는 자궁경 하 생검·소파술)로 진단한다.<br> <b>순서</b>: 진단(조직) → 병기(영상) → 치료(수술). 조직 없이 호르몬을 쓰면 암을 가리고 치료를 늦춘다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">자궁내막 조직검사(정답)</th><th>3개월 뒤 초음파 재검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>폐경 후 출혈 + 내막 <b>4 mm 초과</b></td><td>폐경 후 출혈 + 내막 4 mm 이하이고 출혈이 멈춤</td></tr> <tr><td>왜 그 기준인가</td><td>4 mm 초과에서는 암을 배제할 수 없다</td><td>4 mm 이하이면 암의 음성예측도 99 % 이상</td></tr> <tr><td>목적</td><td>세포의 비정형성·암을 조직으로 확인</td><td>위축 내막에서 출혈 재발 여부 관찰</td></tr> </tbody></table> 내막이 얇아도 출혈이 계속되면 조직검사로 넘어간다 — 지속 출혈은 두께와 무관하게 조직검사의 적응증이다.\n- 오답 이유:\n  - ① 복강경 자궁절제술은 조직검사로 비정형 증식증이나 자궁내막암이 확인된 뒤의 치료이며, 진단 없이 먼저 하지 않는다.\n  - ② 자궁경부 세포검사는 자궁경부에서 피가 나거나 경부암 선별 간격이 되었을 때 맞고, 자궁 안에서 나오는 출혈의 원인을 밝히지 못한다.\n  - ④ 3개월 뒤 초음파 재검은 자궁내막이 4 mm 이하이고 출혈이 한 번으로 멈춘 경우에 맞으며, 14 mm 에서는 암 진단을 늦춘다.\n  - ⑤ 프로게스틴 투여는 조직검사로 비정형성이 없는 증식증이 확인된 뒤에 쓰며, 진단 전에 쓰면 암을 가리고 병기를 놓친다.\n- 함정: 폐경 후 소량 출혈을 위축 때문으로 보고 경과 관찰하는 것 — 내막 두께 14 mm 는 4 mm 기준을 넘어 조직검사가 필요하다.\n- 학습목표: 폐경 후 출혈 여성의 경질 초음파에서 4 mm 를 넘는 두꺼운 자궁내막을 읽고, 다음 단계로 자궁내막 조직검사를 선택한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Committee Opinion No. 734: The role of transvaginal ultrasonography in evaluating the endometrium of women with postmenopausal bleeding. Obstet Gynecol 2018;131:e124-e129 · Berek JS. Berek & Novak's Gynecology, 16th ed. Ch. Uterine Cancer · PMC Open Access Subset — 증례 보고 Figure 1 (CC BY) (교사용) · 작성자 판독(2026-10-20): 고에코로 두꺼운 자궁내막, 근층과 경계 뚜렷\n\n## 출처\n- A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "경질 초음파에서 자궁내막이 고에코로 두껍고(계측 막대) 14 mm 로 측정된다. 폐경 후 출혈에서 자궁내막 두께가 4 mm 이하이면 자궁내막암 가능성이 매우 낮지만, 4 mm 를 넘으면 암·증식증을 배제할 수 없으므로 조직을 얻어야 한다. 비만·당뇨병·고혈압은 길항되지 않는 에스트로겐 노출로 위험을 더 높인다. 진단 없이 관찰·호르몬 치료·수술로 넘어가지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 내막 두께가 기준이 되는가</b>: 폐경 뒤에는 난소 에스트로겐이 거의 없어 자궁내막이 얇게(대개 4 mm 이하) 위축된다. 위축 내막에서 생기는 출혈은 대부분 양성(위축성 자궁내막염)이고, 두께가 4 mm 이하이면 자궁내막암의 음성예측도가 99 % 를 넘는다.<br> <b>왜 두꺼우면 조직이 필요한가</b>: 폐경 후에도 내막이 두껍다는 것은 지방조직의 방향화효소가 만든 에스트로겐, 에스트로겐을 내는 난소 종양 같은 <b>길항되지 않는 에스트로겐</b> 자극이 있다는 뜻이고, 이것이 자궁내막 증식증→자궁내막모양 선암의 경로를 만든다. 초음파는 두께만 보여 줄 뿐 세포의 비정형성을 말해 주지 못하므로, 외래 흡인 조직검사(또는 자궁경 하 생검·소파술)로 진단한다.<br> <b>순서</b>: 진단(조직) → 병기(영상) → 치료(수술). 조직 없이 호르몬을 쓰면 암을 가리고 치료를 늦춘다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">자궁내막 조직검사(정답)</th><th>3개월 뒤 초음파 재검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>폐경 후 출혈 + 내막 <b>4 mm 초과</b></td><td>폐경 후 출혈 + 내막 4 mm 이하이고 출혈이 멈춤</td></tr> <tr><td>왜 그 기준인가</td><td>4 mm 초과에서는 암을 배제할 수 없다</td><td>4 mm 이하이면 암의 음성예측도 99 % 이상</td></tr> <tr><td>목적</td><td>세포의 비정형성·암을 조직으로 확인</td><td>위축 내막에서 출혈 재발 여부 관찰</td></tr> </tbody></table> 내막이 얇아도 출혈이 계속되면 조직검사로 넘어간다 — 지속 출혈은 두께와 무관하게 조직검사의 적응증이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 복강경 자궁절제술은 조직검사로 비정형 증식증이나 자궁내막암이 확인된 뒤의 치료이며, 진단 없이 먼저 하지 않는다.\n② 자궁경부 세포검사는 자궁경부에서 피가 나거나 경부암 선별 간격이 되었을 때 맞고, 자궁 안에서 나오는 출혈의 원인을 밝히지 못한다.\n④ 3개월 뒤 초음파 재검은 자궁내막이 4 mm 이하이고 출혈이 한 번으로 멈춘 경우에 맞으며, 14 mm 에서는 암 진단을 늦춘다.\n⑤ 프로게스틴 투여는 조직검사로 비정형성이 없는 증식증이 확인된 뒤에 쓰며, 진단 전에 쓰면 암을 가리고 병기를 놓친다."
+   },
+   {
+    "k": "함정",
+    "v": "폐경 후 소량 출혈을 위축 때문으로 보고 경과 관찰하는 것 — 내막 두께 14 mm 는 4 mm 기준을 넘어 조직검사가 필요하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐경 후 출혈 여성의 경질 초음파에서 4 mm 를 넘는 두꺼운 자궁내막을 읽고, 다음 단계로 자궁내막 조직검사를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Committee Opinion No. 734: The role of transvaginal ultrasonography in evaluating the endometrium of women with postmenopausal bleeding. Obstet Gynecol 2018;131:e124-e129 · Berek JS. Berek & Novak's Gynecology, 16th ed. Ch. Uterine Cancer · PMC Open Access Subset — 증례 보고 Figure 1 (CC BY) (교사용) · 작성자 판독(2026-10-20): 고에코로 두꺼운 자궁내막, 근층과 경계 뚜렷 ## 출처 A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "폐경 후 출혈에서 자궁내막이 4 mm 를 넘으면 암을 배제할 수 없으므로 자궁내막 조직검사로 진단한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "자궁내막 두께 14 mm — 4 mm 기준을 넘는다",
+   "steps": 2,
+   "chain": [
+    "영상: 고에코로 두꺼운 자궁내막 + 자궁내막 두께는 14 mm → 4 mm 기준 초과",
+    "폐경 후 출혈 + 내막 4 mm 초과 → 자궁내막 조직검사"
+   ],
+   "key": [
+    {
+     "item": "영상: 고에코로 두꺼운 자궁내막(계측 막대)",
+     "why": "두꺼운 내막",
+     "also": []
+    },
+    {
+     "item": "자궁내막 두께는 14 mm",
+     "why": "4 mm 기준 초과",
+     "also": []
+    },
+    {
+     "item": "13년 전 폐경",
+     "why": "폐경 후 출혈 — 기준이 적용되는 상황",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "자궁경부는 육안으로 정상",
+     "why": "경부 병변이 출혈원일 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈색소 12.4 g/dL",
+     "why": "출혈이 적어 응급 처치가 필요하지 않다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "당뇨병과 고혈압",
+     "why": "위험인자 — 두께만으로도 조직검사가 필요해 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "폐경 후 출혈에서 경질 초음파의 자궁내막이 14 mm 로 4 mm 기준을 넘는다. 관찰·호르몬·수술 전에 자궁내막 조직검사로 진단한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "자궁내막이 4 mm 이하이고 출혈이 멈추었다면 경과 관찰과 재평가가 가능하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0374.jpg",
+   "caption": "경질 초음파 자궁 시상면, 흰 계측 막대는 원 그림의 것 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "ULTRASOUND 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9721141/",
+   "asset_id": "PMC-PMC9721141_Figure1",
+   "text": "A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 1"
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0373",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "외과계 — 고속 충돌 뒤 두개-경추 이음부 CT",
+  "type": "외과계 — 고속 충돌 뒤 두개-경추 이음부 CT",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-19",
+  "vignette": "42세 남자가 고속도로에서 오토바이를 타다 앞차와 충돌하여 응급실에 실려 왔다. 현장에서 경추 보호대를 하였다. 기관삽관 뒤 혈압 112/70 mmHg, 맥박 96회/분이다. 진정 전 진찰에서 양쪽 팔다리의 근력이 4등급으로 약했고, 오른쪽 외전신경 마비가 있었다. 흉부·복부·골반 CT에서 출혈은 없었다. 경추 정중시상 CT 재구성 영상은 그림과 같다.",
+  "question": "이 환자에게 가장 적절한 치료는?",
+  "options": [
+   "할로 조끼 단독 고정 12주",
+   "후두-경추 고정술",
+   "두개골 집게 견인",
+   "연성 경추 보조기 착용 후 6주 뒤 추적 CT",
+   "고용량 메틸프레드니솔론 24시간 정주"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 정중시상 CT에서 기저골(basion)과 치아돌기 끝·환추 앞고리 사이가 크게 벌어져 있고 그 사이 연부조직이 넓다. 아래 경추의 정렬은 보존되어 있다. 고속 충돌 뒤 사지 근력 약화와 외전신경 마비가 함께 있으면 후두골과 환추를 잇는 인대(덮개막·날개인대)가 끊어진 환추-후두 탈구다. 인대성 손상이라 저절로 붙지 않으므로 견인을 피하고 내고정(후두-경추 고정술)으로 안정화한다.\n- 원리: <b>왜 두개-경추 이음부는 인대가 버티는가</b>: 후두과와 환추 외측괴 사이 관절은 얕아서, 머리를 척추에 붙들어 두는 것은 덮개막(tectorial membrane)·날개인대·첨인대 같은 인대다. 고속 감속 손상에서 머리가 앞뒤로 크게 흔들리면 이 인대가 끊어지고 머리가 척추에서 떨어진다.<br> <b>영상에서 무엇을 재는가</b>: 기저골-치아돌기 간격(BDI)이 성인에서 약 8.5~10 mm 를 넘거나 후두과-환추 관절 간격이 넓으면 환추-후두 탈구를 의심한다. 이 그림은 그 간격이 눈에 띄게 벌어져 있다.<br> <b>왜 견인이 위험한가</b>: 이미 인대가 끊어져 벌어진 이음부를 잡아당기면 간격이 더 벌어져 숨뇌·척수와 척추동맥이 늘어나 손상이 악화된다. 인대는 뼈처럼 유합되지 않으므로 외고정만으로는 실패가 많고, 후두골과 상부 경추를 나사·막대로 고정하는 수술이 표준 치료다. 그 전까지는 모래주머니·경추 보호대로 움직임을 막는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">후두-경추 고정술(정답)</th><th>두개골 집게 견인(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 손상</td><td>인대성 환추-후두 탈구</td><td>아래 경추의 탈구·골절 정복</td></tr> <tr><td>작용</td><td>벌어진 이음부를 그 자리에 고정</td><td>세로 방향으로 잡아당겨 정렬</td></tr> <tr><td>이 환자에게</td><td>인대가 붙지 않으므로 내고정이 필요</td><td><b>간격을 더 벌려</b> 숨뇌·척수 손상 악화</td></tr> </tbody></table> 같은 고속 충돌이라도 아래 경추의 면관절 탈구라면 견인 정복이 쓰이지만, 두개-경추 이음부의 인대 손상에서는 견인이 금기다.\n- 오답 이유:\n  - ① 할로 조끼 단독 고정은 일부 치아돌기·환추 골절처럼 뼈가 붙을 손상에 쓰며, 인대성 탈구에서는 실패가 많아 수술 전 임시로만 쓴다.\n  - ③ 두개골 집게 견인은 아래 경추의 면관절 탈구를 정복할 때 쓰며, 이 손상에서는 벌어진 이음부를 더 벌려 신경 손상을 악화시킨다.\n  - ④ 연성 보조기 후 추적은 인대 손상 없이 근육 염좌만 있을 때 맞는 처치이고, 불안정한 인대 손상에서는 신경 손상을 막지 못한다.\n  - ⑤ 고용량 메틸프레드니솔론은 감염·위장관출혈 위험 때문에 급성 척수손상에서 일상적으로 권하지 않으며, 불안정성을 고치지 못한다.\n- 함정: 고속 충돌 뒤 경추 손상이면 견인으로 정렬부터 맞춘다고 생각하는 것 — 두개-경추 이음부의 인대 손상은 견인이 간격을 더 벌린다.\n- 학습목표: 경추 정중시상 CT 에서 기저골과 치아돌기 끝·환추 사이가 크게 벌어진 것을 환추-후두 탈구로 읽고, 견인을 피하고 후두-경추 고정술로 치료함을 안다\n- 근거·출처: Theodore N, et al. The diagnosis and management of traumatic atlanto-occipital dislocation injuries. Neurosurgery 2013;72 Suppl 2:114-126 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Spine trauma · PMC Open Access Subset — 증례 보고 Figure 2 (CC BY) (교사용) · 작성자 판독(2026-10-20): 기저골과 치아돌기 끝·환추 사이 간격이 크게 벌어지고 연부조직이 넓음, 아래 경추 정렬 보존\n\n## 출처\n- Atlanto-Occipital Dissociation With Catastrophic Neurological Injury: Ethical Challenges in the Intensive Care Setting. Cureus. 2025 Dec 13;17(12):e99105. doi: 10.7759/cureus.99105 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "정중시상 CT에서 기저골(basion)과 치아돌기 끝·환추 앞고리 사이가 크게 벌어져 있고 그 사이 연부조직이 넓다. 아래 경추의 정렬은 보존되어 있다. 고속 충돌 뒤 사지 근력 약화와 외전신경 마비가 함께 있으면 후두골과 환추를 잇는 인대(덮개막·날개인대)가 끊어진 환추-후두 탈구다. 인대성 손상이라 저절로 붙지 않으므로 견인을 피하고 내고정(후두-경추 고정술)으로 안정화한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 두개-경추 이음부는 인대가 버티는가</b>: 후두과와 환추 외측괴 사이 관절은 얕아서, 머리를 척추에 붙들어 두는 것은 덮개막(tectorial membrane)·날개인대·첨인대 같은 인대다. 고속 감속 손상에서 머리가 앞뒤로 크게 흔들리면 이 인대가 끊어지고 머리가 척추에서 떨어진다.<br> <b>영상에서 무엇을 재는가</b>: 기저골-치아돌기 간격(BDI)이 성인에서 약 8.5~10 mm 를 넘거나 후두과-환추 관절 간격이 넓으면 환추-후두 탈구를 의심한다. 이 그림은 그 간격이 눈에 띄게 벌어져 있다.<br> <b>왜 견인이 위험한가</b>: 이미 인대가 끊어져 벌어진 이음부를 잡아당기면 간격이 더 벌어져 숨뇌·척수와 척추동맥이 늘어나 손상이 악화된다. 인대는 뼈처럼 유합되지 않으므로 외고정만으로는 실패가 많고, 후두골과 상부 경추를 나사·막대로 고정하는 수술이 표준 치료다. 그 전까지는 모래주머니·경추 보호대로 움직임을 막는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">후두-경추 고정술(정답)</th><th>두개골 집게 견인(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 손상</td><td>인대성 환추-후두 탈구</td><td>아래 경추의 탈구·골절 정복</td></tr> <tr><td>작용</td><td>벌어진 이음부를 그 자리에 고정</td><td>세로 방향으로 잡아당겨 정렬</td></tr> <tr><td>이 환자에게</td><td>인대가 붙지 않으므로 내고정이 필요</td><td><b>간격을 더 벌려</b> 숨뇌·척수 손상 악화</td></tr> </tbody></table> 같은 고속 충돌이라도 아래 경추의 면관절 탈구라면 견인 정복이 쓰이지만, 두개-경추 이음부의 인대 손상에서는 견인이 금기다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 할로 조끼 단독 고정은 일부 치아돌기·환추 골절처럼 뼈가 붙을 손상에 쓰며, 인대성 탈구에서는 실패가 많아 수술 전 임시로만 쓴다.\n③ 두개골 집게 견인은 아래 경추의 면관절 탈구를 정복할 때 쓰며, 이 손상에서는 벌어진 이음부를 더 벌려 신경 손상을 악화시킨다.\n④ 연성 보조기 후 추적은 인대 손상 없이 근육 염좌만 있을 때 맞는 처치이고, 불안정한 인대 손상에서는 신경 손상을 막지 못한다.\n⑤ 고용량 메틸프레드니솔론은 감염·위장관출혈 위험 때문에 급성 척수손상에서 일상적으로 권하지 않으며, 불안정성을 고치지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "고속 충돌 뒤 경추 손상이면 견인으로 정렬부터 맞춘다고 생각하는 것 — 두개-경추 이음부의 인대 손상은 견인이 간격을 더 벌린다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경추 정중시상 CT 에서 기저골과 치아돌기 끝·환추 사이가 크게 벌어진 것을 환추-후두 탈구로 읽고, 견인을 피하고 후두-경추 고정술로 치료함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Theodore N, et al. The diagnosis and management of traumatic atlanto-occipital dislocation injuries. Neurosurgery 2013;72 Suppl 2:114-126 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Spine trauma · PMC Open Access Subset — 증례 보고 Figure 2 (CC BY) (교사용) · 작성자 판독(2026-10-20): 기저골과 치아돌기 끝·환추 사이 간격이 크게 벌어지고 연부조직이 넓음, 아래 경추 정렬 보존 ## 출처 Atlanto-Occipital Dissociation With Catastrophic Neurological Injury: Ethical Challenges in the Intensive Care Setting. Cureus. 2025 Dec 13;17(12):e99105. doi: 10.7759/cureus.99105 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "기저골과 치아돌기 사이가 벌어진 인대성 환추-후두 탈구이므로 견인을 피하고 후두-경추 고정술로 안정화한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "손상이 인대성 두개-경추 이음부 탈구라는 점 — 견인은 간격을 더 벌린다",
+   "steps": 3,
+   "chain": [
+    "영상: 기저골과 치아돌기 끝·환추 사이 간격이 크게 벌어짐 + 아래 경추 정렬 보존 → 두개-경추 이음부 손상",
+    "고속 충돌 + 사지 근력 약화·외전신경 마비 → 인대가 끊어진 환추-후두 탈구",
+    "인대성 불안정 + 견인은 간격을 벌림 → 후두-경추 고정술"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저골과 치아돌기 끝·환추 사이 간격이 크게 벌어지고 그 사이 연부조직이 넓다",
+     "why": "환추-후두 탈구",
+     "also": []
+    },
+    {
+     "item": "오른쪽 외전신경 마비",
+     "why": "두개-경추 이음부 견인 손상에서 잘 생기는 뇌신경 마비",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉부·복부·골반 CT에서 출혈은 없었다",
+     "why": "다른 출혈원 가능성을 낮춘다 — 척추 수술을 미룰 이유가 적다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "양쪽 팔다리의 근력이 4등급으로 약했고",
+     "why": "불완전 신경 손상 — 더 악화시키지 않도록 견인을 피한다",
+     "also": []
+    },
+    {
+     "item": "혈압 112/70 mmHg",
+     "why": "혈역학적으로 안정되어 수술적 고정이 가능하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "정중시상 CT에서 기저골과 치아돌기 사이가 벌어진 인대성 환추-후두 탈구다. 견인은 간격을 더 벌려 금기이고, 후두-경추 고정술로 안정화한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "손상이 아래 경추의 면관절 탈구였다면 두개골 집게 견인으로 정복할 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0373.jpg",
+   "caption": "경추 정중시상 CT 재구성 뼈창, 화살표와 아래 방향 표지는 원 그림의 것 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12794498/",
+   "asset_id": "PMC-PMC12794498_Figure2",
+   "text": "Atlanto-Occipital Dissociation With Catastrophic Neurological Injury: Ethical Challenges in the Intensive Care Setting. Cureus. 2025 Dec 13;17(12):e99105. doi: 10.7759/cureus.99105 (CC BY) — Figure 2"
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0372",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "신경 — 수막종 절제 때 함께 떼어 낸 대뇌 피질의 면역조직화학",
+  "type": "신경 — 수막종 절제 때 함께 떼어 낸 대뇌 피질의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-19",
+  "vignette": "A 62-year-old man is brought to the physician by his wife because of a 2-month history of progressive weakness of the left leg and episodes of left foot twitching. He has hypertension treated with amlodipine. Strength is 4/5 in the left lower extremity, and the Babinski sign is present on the left. MRI of the brain shows a 4-cm dural-based, homogeneously enhancing mass over the right parasagittal frontal convexity. The mass is resected together with a thin rim of the adjacent cerebral cortex. A photomicrograph of a section of the adjacent cortex stained by immunohistochemistry is shown.",
+  "question": "The antibody most likely recognizes which of the following antigens?",
+  "options": [
+   "Glial fibrillary acidic protein",
+   "Neuronal nuclear antigen (NeuN)",
+   "Macrosialin (CD68)",
+   "Myelin basic protein",
+   "Neurofilament light chain protein"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Throughout the neuropil, scattered star-shaped cells have brown cell bodies with many fine radiating processes, some ending on small vessels, and there is a dense brown band beneath the pial surface. The large neuronal cell bodies are pale blue and negative. Star-shaped cells whose processes form perivascular end-feet and the subpial glia limitans are astrocytes, and their intermediate filament is glial fibrillary acidic protein.\n- 원리: <b>Why the shape of the stained cell identifies the filament</b>: intermediate filaments are cell-type specific. Astrocytes are filled with GFAP, which runs from the cell body out into every process, so a GFAP stain draws the whole star: the soma, radiating processes, end-feet wrapping capillaries, and the glia limitans under the pia.<br> <b>What the negative cells tell you</b>: neurons contain neurofilaments and nuclear NeuN, not GFAP, so their large cell bodies stay blue. Microglia (CD68, Iba1) are small, elongated cells with few processes, and oligodendrocytes are small round cells with a perinuclear halo that make myelin rather than filaments.<br> <b>Clinical use</b>: GFAP marks reactive gliosis (astrocytes swell and become more strongly positive next to a lesion such as this meningioma) and confirms glial origin in tumors such as astrocytoma and glioblastoma.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">GFAP (answer)</th><th>Neurofilament (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Astrocyte</td><td>Neuron</td></tr> <tr><td>Pattern</td><td>Small soma with many short radiating processes (star)</td><td>Large soma with long axons and dendrites</td></tr> <tr><td>Subpial band</td><td><b>Present</b> (glia limitans)</td><td>Absent</td></tr> <tr><td>Perivascular end-feet</td><td>Present</td><td>Absent</td></tr> </tbody></table> If the large pyramidal cell bodies and their long processes were brown and the small star-shaped cells were blue, the antigen would be a neuronal filament.\n- 오답 이유:\n  - (B) NeuN would be correct if the nuclei of the large neuronal cell bodies were brown, whereas here the neurons are the negative pale cells.\n  - (C) CD68 would be correct if small elongated microglia or foamy macrophages were stained, rather than star-shaped cells with long processes.\n  - (D) Myelin basic protein would be correct if the stain followed myelinated fiber tracts, which are sparse in the cortex and densest in white matter.\n  - (E) Neurofilament protein would be correct if large neuronal cell bodies with long axons and dendrites were brown instead of small star-shaped cells.\n- 함정: Choosing a neuronal marker because the tissue is cerebral cortex — the stained cells are small star-shaped cells, and the neurons are negative.\n- 학습목표: 대뇌 피질에서 별 모양 세포의 세포체·돌기와 연막 아래 띠가 갈색이고 신경세포는 음성인 양상을 성상세포의 중간섬유 GFAP 로 읽고, 신경세포·미세아교세포·희소돌기아교세포 표지자와 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Central Nervous System — cellular pathology · Louis DN, et al. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro Oncol 2021;23:1231-1251 · Human Protein Atlas — GFAP, cerebral cortex (CC BY 4.0) (교사용) · 작성자 판독(2026-10-20): 별 모양 세포의 세포체·돌기와 연막 아래 띠가 갈색, 신경세포 음성\n\n## 출처\n- Human Protein Atlas, GFAP / Cerebral cortex (CC BY 4.0), https://images.proteinatlas.org/39/98649_B_9_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Throughout the neuropil, scattered star-shaped cells have brown cell bodies with many fine radiating processes, some ending on small vessels, and there is a dense brown band beneath the pial surface. The large neuronal cell bodies are pale blue and negative. Star-shaped cells whose processes form perivascular end-feet and the subpial glia limitans are astrocytes, and their intermediate filament is glial fibrillary acidic protein."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the shape of the stained cell identifies the filament</b>: intermediate filaments are cell-type specific. Astrocytes are filled with GFAP, which runs from the cell body out into every process, so a GFAP stain draws the whole star: the soma, radiating processes, end-feet wrapping capillaries, and the glia limitans under the pia.<br> <b>What the negative cells tell you</b>: neurons contain neurofilaments and nuclear NeuN, not GFAP, so their large cell bodies stay blue. Microglia (CD68, Iba1) are small, elongated cells with few processes, and oligodendrocytes are small round cells with a perinuclear halo that make myelin rather than filaments.<br> <b>Clinical use</b>: GFAP marks reactive gliosis (astrocytes swell and become more strongly positive next to a lesion such as this meningioma) and confirms glial origin in tumors such as astrocytoma and glioblastoma."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">GFAP (answer)</th><th>Neurofilament (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Astrocyte</td><td>Neuron</td></tr> <tr><td>Pattern</td><td>Small soma with many short radiating processes (star)</td><td>Large soma with long axons and dendrites</td></tr> <tr><td>Subpial band</td><td><b>Present</b> (glia limitans)</td><td>Absent</td></tr> <tr><td>Perivascular end-feet</td><td>Present</td><td>Absent</td></tr> </tbody></table> If the large pyramidal cell bodies and their long processes were brown and the small star-shaped cells were blue, the antigen would be a neuronal filament."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) NeuN would be correct if the nuclei of the large neuronal cell bodies were brown, whereas here the neurons are the negative pale cells.\n(C) CD68 would be correct if small elongated microglia or foamy macrophages were stained, rather than star-shaped cells with long processes.\n(D) Myelin basic protein would be correct if the stain followed myelinated fiber tracts, which are sparse in the cortex and densest in white matter.\n(E) Neurofilament protein would be correct if large neuronal cell bodies with long axons and dendrites were brown instead of small star-shaped cells."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a neuronal marker because the tissue is cerebral cortex — the stained cells are small star-shaped cells, and the neurons are negative."
+   },
+   {
+    "k": "학습목표",
+    "v": "대뇌 피질에서 별 모양 세포의 세포체·돌기와 연막 아래 띠가 갈색이고 신경세포는 음성인 양상을 성상세포의 중간섬유 GFAP 로 읽고, 신경세포·미세아교세포·희소돌기아교세포 표지자와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Central Nervous System — cellular pathology · Louis DN, et al. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro Oncol 2021;23:1231-1251 · Human Protein Atlas — GFAP, cerebral cortex (CC BY 4.0) (교사용) · 작성자 판독(2026-10-20): 별 모양 세포의 세포체·돌기와 연막 아래 띠가 갈색, 신경세포 음성 ## 출처 Human Protein Atlas, GFAP / Cerebral cortex (CC BY 4.0), https://images.proteinatlas.org/39/98649_B_9_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "별 모양 세포의 세포체와 돌기, 혈관 주위 끝발, 연막 아래 띠가 갈색이고 신경세포는 음성이면 성상세포의 GFAP 다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "양성 세포가 작은 별 모양 세포(성상세포)인가 큰 신경세포와 긴 축삭인가",
+   "steps": 2,
+   "chain": [
+    "영상: 별 모양 세포의 세포체·돌기·연막 아래 띠 갈색 + 큰 신경세포 음성 → 성상세포",
+    "성상세포 + 그 세포의 중간섬유 → GFAP"
+   ],
+   "key": [
+    {
+     "item": "영상: 신경망 속 별 모양 세포의 세포체와 가는 돌기가 갈색, 연막 아래 띠 모양 염색",
+     "why": "성상세포와 아교 경계막",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 큰 신경세포 세포체는 음성",
+     "why": "신경세포 표지자(NeuN·신경미세섬유) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "dural-based, homogeneously enhancing mass",
+     "why": "수막종을 절제하며 함께 떼어 낸 피질 — 항원 판정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "the Babinski sign is present on the left",
+     "why": "오른쪽 운동피질 압박 — 항원 판정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "대뇌 피질에서 작은 별 모양 세포의 세포체·돌기와 연막 아래 띠가 갈색이고 신경세포는 음성이다. 성상세포이고, 그 중간섬유인 GFAP 가 답이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "큰 신경세포의 핵만 갈색이었다면 신경세포 핵 표지자 NeuN 이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0372.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000131095-GFAP/tissue/Cerebral+cortex",
+   "asset_id": "HPA-GFAP_98649_B_9_5",
+   "text": "Human Protein Atlas, GFAP / Cerebral cortex (CC BY 4.0), https://images.proteinatlas.org/39/98649_B_9_5.jpg"
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0371",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "호흡기 — 자연기흉 절제 검체의 폐포 면역조직화학",
+  "type": "호흡기 — 자연기흉 절제 검체의 폐포 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-19",
+  "vignette": "A 21-year-old man comes to the emergency department because of sudden right-sided chest pain and shortness of breath that began while he was sitting at his desk 3 hours ago. He has had a similar episode on the same side 6 months ago that resolved with needle aspiration. He is 188 cm (6 ft 2 in) tall and weighs 64 kg (141 lb), and he smokes half a pack of cigarettes daily. Breath sounds are decreased over the right hemithorax. A chest x-ray shows a right apical pneumothorax. Because of recurrence, he undergoes video-assisted thoracoscopic resection of an apical bleb. A photomicrograph of a section of the resected lung tissue stained by immunohistochemistry is shown.",
+  "question": "The antibody most likely recognizes which of the following antigens?",
+  "options": [
+   "Surfactant protein C",
+   "Macrosialin (CD68)",
+   "CD31 (PECAM-1)",
+   "Podoplanin (D2-40)",
+   "Smooth muscle actin"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The core shows alveolar walls in which scattered small round cells, often clustered, have brown cytoplasm, while the thin flat cells lining most of the alveolar surface, the capillary endothelium, the walls of the large vessels, and free cells in the alveolar spaces are negative. Scattered cuboidal cells set into the alveolar wall are type II pneumocytes, and the protein made only by them is surfactant protein C.\n- 원리: <b>Why a type II pneumocyte marker stains only scattered cells</b>: type I pneumocytes cover about 95 % of the alveolar surface but are thin squamous cells, whereas type II pneumocytes are more numerous but small and cuboidal, sitting at the corners of the alveolar walls. A cytoplasmic marker of type II cells therefore lights up dots along the septa rather than a continuous line.<br> <b>Why SP-C is specific</b>: surfactant proteins A, B, and D are also made by club cells, but SP-C is synthesized only by type II pneumocytes; its precursor (pro-SP-C) is stored with lipids in lamellar bodies, so the stain is cytoplasmic and granular.<br> <b>Clinical connection</b>: type II cells are the progenitors that regenerate type I cells after injury, and mutations in SFTPC cause familial interstitial lung disease. In this patient, the lung away from the bleb is normal; the tall, thin smoking man with recurrent apical pneumothorax is the background, not the answer.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Surfactant protein C (answer)</th><th>CD68 (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Type II pneumocyte</td><td>Alveolar macrophage</td></tr> <tr><td>Location</td><td><b>Within</b> the alveolar wall, at septal corners</td><td>Free in the alveolar space or loosely attached</td></tr> <tr><td>Shape</td><td>Small, cuboidal, evenly scattered along septa</td><td>Larger, round, with abundant (often pigmented) cytoplasm</td></tr> <tr><td>Staining</td><td>Granular cytoplasm (lamellar bodies)</td><td>Granular cytoplasm (lysosomes)</td></tr> </tbody></table> Both are cytoplasmic and granular, so location is the discriminator: cells built into the septa favor SP-C, cells floating in the lumen favor CD68.\n- 오답 이유:\n  - (B) CD68 would be correct if the brown cells were large round cells floating free within the alveolar spaces, the position of alveolar macrophages.\n  - (C) CD31 would be correct if a continuous thin brown line outlined every septal capillary and the endothelium of the large vessels, which are negative here.\n  - (D) Podoplanin would be correct if the thin flat cells lining most of the alveolar surface (type I pneumocytes) and lymphatics were stained.\n  - (E) Smooth muscle actin would be correct if the media of the large vessels and the bronchiolar walls were brown, but the vessel walls here are negative.\n- 함정: Choosing CD68 because the stained cells are small, round, and granular — their position inside the alveolar wall, not in the lumen, marks type II pneumocytes.\n- 학습목표: 폐포벽을 따라 흩어진 작고 둥근 세포만 세포질이 갈색인 양상을 제2형 폐포세포의 표면활성 단백질 C 로 읽고, 제1형 폐포세포·내피·대식세포 표지자와 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Lung — normal structure · Whitsett JA, Weaver TE. Hydrophobic surfactant proteins in lung function and disease. N Engl J Med 2002;347:2141-2148 · Human Protein Atlas — SFTPC, lung tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-20): 폐포벽 속 작고 둥근 세포의 세포질만 갈색, 피복세포·내피·폐포 내 세포 음성\n\n## 출처\n- Human Protein Atlas, SFTPC / Lung (CC BY 4.0), https://images.proteinatlas.org/10928/51559_A_1_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The core shows alveolar walls in which scattered small round cells, often clustered, have brown cytoplasm, while the thin flat cells lining most of the alveolar surface, the capillary endothelium, the walls of the large vessels, and free cells in the alveolar spaces are negative. Scattered cuboidal cells set into the alveolar wall are type II pneumocytes, and the protein made only by them is surfactant protein C."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a type II pneumocyte marker stains only scattered cells</b>: type I pneumocytes cover about 95 % of the alveolar surface but are thin squamous cells, whereas type II pneumocytes are more numerous but small and cuboidal, sitting at the corners of the alveolar walls. A cytoplasmic marker of type II cells therefore lights up dots along the septa rather than a continuous line.<br> <b>Why SP-C is specific</b>: surfactant proteins A, B, and D are also made by club cells, but SP-C is synthesized only by type II pneumocytes; its precursor (pro-SP-C) is stored with lipids in lamellar bodies, so the stain is cytoplasmic and granular.<br> <b>Clinical connection</b>: type II cells are the progenitors that regenerate type I cells after injury, and mutations in SFTPC cause familial interstitial lung disease. In this patient, the lung away from the bleb is normal; the tall, thin smoking man with recurrent apical pneumothorax is the background, not the answer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Surfactant protein C (answer)</th><th>CD68 (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Type II pneumocyte</td><td>Alveolar macrophage</td></tr> <tr><td>Location</td><td><b>Within</b> the alveolar wall, at septal corners</td><td>Free in the alveolar space or loosely attached</td></tr> <tr><td>Shape</td><td>Small, cuboidal, evenly scattered along septa</td><td>Larger, round, with abundant (often pigmented) cytoplasm</td></tr> <tr><td>Staining</td><td>Granular cytoplasm (lamellar bodies)</td><td>Granular cytoplasm (lysosomes)</td></tr> </tbody></table> Both are cytoplasmic and granular, so location is the discriminator: cells built into the septa favor SP-C, cells floating in the lumen favor CD68."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) CD68 would be correct if the brown cells were large round cells floating free within the alveolar spaces, the position of alveolar macrophages.\n(C) CD31 would be correct if a continuous thin brown line outlined every septal capillary and the endothelium of the large vessels, which are negative here.\n(D) Podoplanin would be correct if the thin flat cells lining most of the alveolar surface (type I pneumocytes) and lymphatics were stained.\n(E) Smooth muscle actin would be correct if the media of the large vessels and the bronchiolar walls were brown, but the vessel walls here are negative."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing CD68 because the stained cells are small, round, and granular — their position inside the alveolar wall, not in the lumen, marks type II pneumocytes."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐포벽을 따라 흩어진 작고 둥근 세포만 세포질이 갈색인 양상을 제2형 폐포세포의 표면활성 단백질 C 로 읽고, 제1형 폐포세포·내피·대식세포 표지자와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Lung — normal structure · Whitsett JA, Weaver TE. Hydrophobic surfactant proteins in lung function and disease. N Engl J Med 2002;347:2141-2148 · Human Protein Atlas — SFTPC, lung tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-20): 폐포벽 속 작고 둥근 세포의 세포질만 갈색, 피복세포·내피·폐포 내 세포 음성 ## 출처 Human Protein Atlas, SFTPC / Lung (CC BY 4.0), https://images.proteinatlas.org/10928/51559_A_1_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "폐포벽 속에 흩어진 작고 둥근 세포만 세포질이 갈색이면 제2형 폐포세포이고, 그 세포만 만드는 단백질은 표면활성 단백질 C 다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "양성 세포의 위치 — 폐포벽 안(제2형 폐포세포)인가 폐포 공간 속(대식세포)인가",
+   "steps": 2,
+   "chain": [
+    "영상: 폐포벽 속 작고 둥근 세포만 세포질 갈색 + 얇은 피복세포·내피 음성 → 제2형 폐포세포",
+    "제2형 폐포세포 + 그 세포만 만드는 단백질 → 표면활성 단백질 C"
+   ],
+   "key": [
+    {
+     "item": "영상: 폐포벽을 따라 흩어진 작고 둥근 세포의 세포질이 갈색",
+     "why": "제2형 폐포세포의 위치와 모양",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 얇은 폐포 피복세포와 혈관 내피는 음성",
+     "why": "제1형 폐포세포(podoplanin)·내피(CD31) 표지자 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "recurrence",
+     "why": "절제 이유 — 항원 판정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "188 cm (6 ft 2 in) tall and weighs 64 kg",
+     "why": "원발 자연기흉의 전형적 체형 — 항원 판정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "폐포벽 속에 흩어진 작고 둥근 세포만 세포질이 갈색이고 피복세포·내피는 음성이다. 제2형 폐포세포이고, 그 세포만 만드는 표면활성 단백질 C 가 답이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "갈색 세포가 폐포 공간 속에 떠 있는 큰 둥근 세포였다면 대식세포의 CD68 이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0371.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000168484-SFTPC/tissue/Lung",
+   "asset_id": "HPA-SFTPC_51559_A_1_4",
+   "text": "Human Protein Atlas, SFTPC / Lung (CC BY 4.0), https://images.proteinatlas.org/10928/51559_A_1_4.jpg"
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0381",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "약리 — 세르트랄린 복용자의 리네졸리드 투여 뒤 증상",
+  "type": "약리 — 세르트랄린 복용자의 리네졸리드 투여 뒤 증상",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-19",
+  "vignette": "A 58-year-old woman who was hospitalized for a diabetic foot infection develops agitation, sweating, tremor, and diarrhea. Cultures from the wound grew vancomycin-resistant Enterococcus faecium, and she was started on a new intravenous antibiotic 2 days ago. She has major depressive disorder treated with sertraline for 3 years and takes metformin and atorvastatin. Her temperature is 39.1°C (102.4°F), pulse is 124/min, and blood pressure is 168/94 mm Hg. Pupils are dilated. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus, and there is no muscle rigidity in the upper extremities. Bowel sounds are hyperactive. Serum creatine kinase is 410 U/L.",
+  "question": "Which of the following mechanisms best explains this reaction?",
+  "options": [
+   "Blockade of dopamine D2 receptors",
+   "Blockade of muscarinic acetylcholine receptors",
+   "Abnormal activation of ryanodine receptors in skeletal muscle",
+   "Inhibition of monoamine oxidase",
+   "Inhibition of cytochrome P450 2D6"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The antibiotic used for vancomycin-resistant Enterococcus faecium is linezolid. Within 2 days of adding it to sertraline, she has agitation, hyperthermia, tachycardia, hypertension, mydriasis, diarrhea, hyperreflexia, and sustained clonus most marked in the legs, which meets the Hunter criteria for serotonin syndrome. Linezolid is a weak, reversible, nonselective inhibitor of monoamine oxidase, so serotonin released by the SSRI-treated neurons is not degraded and accumulates in the synapse.\n- 원리: <b>Why an antibiotic acts on neurotransmitters</b>: linezolid is an oxazolidinone that inhibits bacterial protein synthesis at the 50S ribosome, but its chemical structure also resembles MAO inhibitors, and it reversibly inhibits both MAO-A and MAO-B. MAO-A is the main enzyme that breaks down serotonin in presynaptic neurons.<br> <b>Why the combination is dangerous</b>: an SSRI blocks serotonin reuptake, raising synaptic serotonin; MAO inhibition removes the main degradation pathway for the serotonin that is taken back up. Together they over-stimulate 5-HT2A and 5-HT1A receptors, producing the triad of altered mental status, autonomic hyperactivity, and neuromuscular hyperexcitability.<br> <b>Why clonus points to serotonin</b>: the neuromuscular signs of serotonin syndrome are hyperreflexia and inducible or spontaneous clonus, greater in the lower limbs, and they appear within 24 hours. This distinguishes it from neuroleptic malignant syndrome, which develops over days with lead-pipe rigidity and bradyreflexia.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">MAO inhibition → serotonin syndrome (answer)</th><th>CYP2D6 inhibition (closest distractor)</th></tr></thead><tbody> <tr><td>Drug</td><td>Linezolid (also methylene blue)</td><td>Fluoxetine, paroxetine, bupropion, quinidine</td></tr> <tr><td>What changes</td><td>Pharmacodynamic: serotonin breakdown in the synapse</td><td>Pharmacokinetic: plasma level of a substrate drug</td></tr> <tr><td>Onset with sertraline</td><td><b>Within 1 to 2 days</b> of adding the drug</td><td>Gradual as levels accumulate</td></tr> <tr><td>Linezolid's role</td><td>Nonselective reversible MAO inhibitor</td><td>Linezolid is not a CYP substrate or inhibitor</td></tr> </tbody></table> Linezolid is cleared mainly by nonenzymatic oxidation, so its interactions are pharmacodynamic; the same reaction occurs with methylene blue, another MAO inhibitor.\n- 오답 이유:\n  - (A) Dopamine D2 blockade causes neuroleptic malignant syndrome, which would be correct with an antipsychotic, slow onset over days, lead-pipe rigidity, and decreased reflexes.\n  - (B) Muscarinic blockade would be correct with dry, flushed skin, urinary retention, and decreased bowel sounds, whereas she is sweating with hyperactive bowel sounds.\n  - (C) Ryanodine receptor activation causes malignant hyperthermia, which would be correct during volatile anesthesia or succinylcholine with rigidity and a rising end-tidal CO2.\n  - (E) CYP2D6 inhibition would be correct if the new drug were fluoxetine, paroxetine, or bupropion raising levels of a substrate; linezolid does not use the CYP system.\n- 함정: Attributing the reaction to a pharmacokinetic interaction that raises sertraline levels — linezolid is not a CYP inhibitor; it inhibits MAO.\n- 학습목표: SSRI 복용자에게 리네졸리드를 추가한 뒤 생긴 클로누스·과다반사·고열·자율신경 항진을 세로토닌 증후군으로 판단하고, 리네졸리드의 비선택적 MAO 억제가 기전임을 안다\n- 근거·출처: Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120 · Dunkley EJ, et al. The Hunter Serotonin Toxicity Criteria. QJM 2003;96:635-642 · Brunton LL, et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. Protein Synthesis Inhibitors — oxazolidinones",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The antibiotic used for vancomycin-resistant Enterococcus faecium is linezolid. Within 2 days of adding it to sertraline, she has agitation, hyperthermia, tachycardia, hypertension, mydriasis, diarrhea, hyperreflexia, and sustained clonus most marked in the legs, which meets the Hunter criteria for serotonin syndrome. Linezolid is a weak, reversible, nonselective inhibitor of monoamine oxidase, so serotonin released by the SSRI-treated neurons is not degraded and accumulates in the synapse."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why an antibiotic acts on neurotransmitters</b>: linezolid is an oxazolidinone that inhibits bacterial protein synthesis at the 50S ribosome, but its chemical structure also resembles MAO inhibitors, and it reversibly inhibits both MAO-A and MAO-B. MAO-A is the main enzyme that breaks down serotonin in presynaptic neurons.<br> <b>Why the combination is dangerous</b>: an SSRI blocks serotonin reuptake, raising synaptic serotonin; MAO inhibition removes the main degradation pathway for the serotonin that is taken back up. Together they over-stimulate 5-HT2A and 5-HT1A receptors, producing the triad of altered mental status, autonomic hyperactivity, and neuromuscular hyperexcitability.<br> <b>Why clonus points to serotonin</b>: the neuromuscular signs of serotonin syndrome are hyperreflexia and inducible or spontaneous clonus, greater in the lower limbs, and they appear within 24 hours. This distinguishes it from neuroleptic malignant syndrome, which develops over days with lead-pipe rigidity and bradyreflexia."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">MAO inhibition → serotonin syndrome (answer)</th><th>CYP2D6 inhibition (closest distractor)</th></tr></thead><tbody> <tr><td>Drug</td><td>Linezolid (also methylene blue)</td><td>Fluoxetine, paroxetine, bupropion, quinidine</td></tr> <tr><td>What changes</td><td>Pharmacodynamic: serotonin breakdown in the synapse</td><td>Pharmacokinetic: plasma level of a substrate drug</td></tr> <tr><td>Onset with sertraline</td><td><b>Within 1 to 2 days</b> of adding the drug</td><td>Gradual as levels accumulate</td></tr> <tr><td>Linezolid's role</td><td>Nonselective reversible MAO inhibitor</td><td>Linezolid is not a CYP substrate or inhibitor</td></tr> </tbody></table> Linezolid is cleared mainly by nonenzymatic oxidation, so its interactions are pharmacodynamic; the same reaction occurs with methylene blue, another MAO inhibitor."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Dopamine D2 blockade causes neuroleptic malignant syndrome, which would be correct with an antipsychotic, slow onset over days, lead-pipe rigidity, and decreased reflexes.\n(B) Muscarinic blockade would be correct with dry, flushed skin, urinary retention, and decreased bowel sounds, whereas she is sweating with hyperactive bowel sounds.\n(C) Ryanodine receptor activation causes malignant hyperthermia, which would be correct during volatile anesthesia or succinylcholine with rigidity and a rising end-tidal CO2.\n(E) CYP2D6 inhibition would be correct if the new drug were fluoxetine, paroxetine, or bupropion raising levels of a substrate; linezolid does not use the CYP system."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing the reaction to a pharmacokinetic interaction that raises sertraline levels — linezolid is not a CYP inhibitor; it inhibits MAO."
+   },
+   {
+    "k": "학습목표",
+    "v": "SSRI 복용자에게 리네졸리드를 추가한 뒤 생긴 클로누스·과다반사·고열·자율신경 항진을 세로토닌 증후군으로 판단하고, 리네졸리드의 비선택적 MAO 억제가 기전임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120 · Dunkley EJ, et al. The Hunter Serotonin Toxicity Criteria. QJM 2003;96:635-642 · Brunton LL, et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. Protein Synthesis Inhibitors — oxazolidinones"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "SSRI 복용자에게 VRE 치료제 리네졸리드를 더한 뒤 클로누스·고열·자율신경 항진이 생겼으므로 세로토닌 증후군이고, 리네졸리드의 MAO 억제가 기전이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "리네졸리드는 CYP 를 억제하지 않고 MAO 를 억제한다 — 약동학이 아니라 약력학 상호작용",
+   "steps": 3,
+   "chain": [
+    "vancomycin-resistant Enterococcus faecium 치료제 → 리네졸리드",
+    "SSRI + 새 약 2일 뒤 클로누스·과다반사·고열·설사·산동 → 세로토닌 증후군",
+    "리네졸리드 + 세로토닌 증후군 → 비선택적 MAO 억제"
+   ],
+   "key": [
+    {
+     "item": "vancomycin-resistant Enterococcus faecium",
+     "why": "리네졸리드를 가리키는 단서",
+     "also": []
+    },
+    {
+     "item": "sertraline",
+     "why": "세로토닌 재흡수 억제",
+     "also": []
+    },
+    {
+     "item": "sustained ankle clonus",
+     "why": "세로토닌 증후군의 신경근 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no muscle rigidity in the upper extremities",
+     "why": "신경이완제 악성증후군·악성고열 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Bowel sounds are hyperactive",
+     "why": "항콜린 중독 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Serum creatine kinase is 410 U/L",
+     "why": "경한 상승 — 감별에 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "SSRI 를 먹던 환자가 VRE 치료제 리네졸리드를 시작한 지 2일 만에 클로누스·고열·자율신경 항진을 보인다. 세로토닌 증후군이고 리네졸리드의 비선택적 MAO 억제가 기전이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "항정신병약을 쓰고 며칠에 걸쳐 납관 경직과 반사 감소가 왔다면 D2 차단에 의한 신경이완제 악성증후군이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0380",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "소아청소년 — 생후 2주 남아의 구토·저나트륨·고칼륨",
+  "type": "소아청소년 — 생후 2주 남아의 구토·저나트륨·고칼륨",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-19",
+  "vignette": "생후 15일 남아가 4일 전부터 먹은 뒤 토하고 잘 먹지 않아 왔다. 재태 39주에 3.3 kg으로 태어났고 지금 체중은 2.9 kg이다. 구토물에 담즙은 섞여 있지 않다. 맥박 178회/분, 혈압 58/32 mmHg이며 대천문이 함몰되어 있고 피부 긴장도가 떨어져 있다. 복부는 부드럽고 상복부에 만져지는 덩이는 없다. 음경과 고환은 정상으로 보이며 음낭에 색소침착이 있다. 혈청 나트륨 124 mEq/L, 칼륨 7.1 mEq/L, 염소 92 mEq/L, 총 이산화탄소 15 mEq/L, 포도당 52 mg/dL이다.",
+  "question": "진단을 위해 가장 적절한 검사는?",
+  "options": [
+   "땀 염소 검사",
+   "상부위장관 조영술",
+   "혈청 17-수산화프로게스테론",
+   "복부 초음파로 날문 근육 두께 측정",
+   "혈청 알도스테론"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 생후 2주에 구토·체중 감소·탈수가 있고 저나트륨(124)·고칼륨(7.1)·대사산증(총 CO2 15)·저혈당이 함께 있으면 알도스테론과 코르티솔이 모두 부족한 염분소실 위기다. 이 나이 남아에서 가장 흔한 원인은 21-수산화효소 결핍 선천부신과다형성이고, 음낭 색소침착은 ACTH 과다를 뜻한다. 남아는 외부생식기가 정상이라 출생 때 놓치기 쉽다. 차단 앞의 물질인 혈청 17-수산화프로게스테론이 크게 올라 있으면 확진한다.\n- 원리: <b>왜 전해질이 이렇게 되는가</b>: 21-수산화효소는 프로게스테론→11-데옥시코르티코스테론(알도스테론 경로)과 17-수산화프로게스테론→11-데옥시코르티솔(코르티솔 경로)을 모두 맡는다. 효소가 없으면 알도스테론이 부족해 콩팥에서 나트륨을 잃고 칼륨·수소이온을 내보내지 못해 저나트륨·고칼륨·대사산증이 생기고, 코르티솔 부족은 저혈당과 저혈압을 만든다.<br> <b>왜 2주 무렵에 나타나는가</b>: 출생 직후에는 모체 호르몬의 영향과 신생아 콩팥의 적응으로 버티다가, 생후 1~3주에 염분 손실이 누적되어 위기가 온다.<br> <b>왜 17-OHP 인가</b>: 막힌 단계 바로 앞의 기질이 쌓이고, 코르티솔 부족으로 ACTH 가 올라 기질 생산이 더 늘어난다. 쌓인 전구물질은 안드로겐 경로로 흘러, 여아는 출생 때 외부생식기 남성화로 발견되지만 남아는 이 위기에서 처음 발견된다. ACTH 과다는 피부·음낭 색소침착을 만든다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">염분소실형 선천부신과다형성(정답)</th><th>비대 날문협착증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이·구토</td><td>생후 1~3주, 비담즙성 구토</td><td>생후 3~6주, 분출성 비담즙성 구토</td></tr> <tr><td>칼륨</td><td><b>높다</b>(알도스테론 부족)</td><td>낮다(구토 + 이차 알도스테론증)</td></tr> <tr><td>산염기</td><td>대사<b>산</b>증</td><td>저염소성 대사<b>알칼리</b>증</td></tr> <tr><td>진단 검사</td><td>혈청 17-OHP</td><td>복부 초음파(날문 근육 두께 ≥ 3 mm)</td></tr> </tbody></table> 둘 다 비담즙성 구토로 오지만, 칼륨과 산염기가 정반대로 움직인다 — 구토인데 칼륨이 높고 산증이면 부신을 먼저 생각한다.\n- 오답 이유:\n  - ① 땀 염소 검사는 낭성섬유증을 진단하며, 영아 염분소실과 저나트륨을 만들 수 있으나 칼륨이 낮고 대사알칼리증이 동반될 때 의심한다.\n  - ② 상부위장관 조영술은 담즙성 구토로 장회전이상·중장염전을 의심할 때 하며, 이 아기의 구토물에는 담즙이 없다.\n  - ④ 복부 초음파는 생후 3~6주의 분출성 구토에 저염소성 저칼륨성 대사알칼리증이 있어 날문협착증이 의심될 때 맞는 검사다.\n  - ⑤ 혈청 알도스테론은 낮게 나오겠지만 원인을 가리지 못하며, 21-수산화효소 결핍과 일차 부신 저형성 같은 다른 원인을 구별하려면 17-OHP 가 필요하다.\n- 함정: 생후 2주 남아의 비담즙성 구토를 날문협착증으로 보는 것 — 고칼륨과 대사산증은 반대 방향이라 부신 위기를 가리킨다.\n- 학습목표: 생후 1~3주 남아의 구토·체중 감소·저나트륨·고칼륨·대사산증을 염분소실형 21-수산화효소 결핍으로 판단하고 혈청 17-수산화프로게스테론으로 확인한다\n- 근거·출처: Speiser PW, et al. Congenital adrenal hyperplasia due to steroid 21-hydroxylase deficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2018;103:4043-4088 · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Congenital Adrenal Hyperplasia and Related Disorders",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "생후 2주에 구토·체중 감소·탈수가 있고 저나트륨(124)·고칼륨(7.1)·대사산증(총 CO2 15)·저혈당이 함께 있으면 알도스테론과 코르티솔이 모두 부족한 염분소실 위기다. 이 나이 남아에서 가장 흔한 원인은 21-수산화효소 결핍 선천부신과다형성이고, 음낭 색소침착은 ACTH 과다를 뜻한다. 남아는 외부생식기가 정상이라 출생 때 놓치기 쉽다. 차단 앞의 물질인 혈청 17-수산화프로게스테론이 크게 올라 있으면 확진한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전해질이 이렇게 되는가</b>: 21-수산화효소는 프로게스테론→11-데옥시코르티코스테론(알도스테론 경로)과 17-수산화프로게스테론→11-데옥시코르티솔(코르티솔 경로)을 모두 맡는다. 효소가 없으면 알도스테론이 부족해 콩팥에서 나트륨을 잃고 칼륨·수소이온을 내보내지 못해 저나트륨·고칼륨·대사산증이 생기고, 코르티솔 부족은 저혈당과 저혈압을 만든다.<br> <b>왜 2주 무렵에 나타나는가</b>: 출생 직후에는 모체 호르몬의 영향과 신생아 콩팥의 적응으로 버티다가, 생후 1~3주에 염분 손실이 누적되어 위기가 온다.<br> <b>왜 17-OHP 인가</b>: 막힌 단계 바로 앞의 기질이 쌓이고, 코르티솔 부족으로 ACTH 가 올라 기질 생산이 더 늘어난다. 쌓인 전구물질은 안드로겐 경로로 흘러, 여아는 출생 때 외부생식기 남성화로 발견되지만 남아는 이 위기에서 처음 발견된다. ACTH 과다는 피부·음낭 색소침착을 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">염분소실형 선천부신과다형성(정답)</th><th>비대 날문협착증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이·구토</td><td>생후 1~3주, 비담즙성 구토</td><td>생후 3~6주, 분출성 비담즙성 구토</td></tr> <tr><td>칼륨</td><td><b>높다</b>(알도스테론 부족)</td><td>낮다(구토 + 이차 알도스테론증)</td></tr> <tr><td>산염기</td><td>대사<b>산</b>증</td><td>저염소성 대사<b>알칼리</b>증</td></tr> <tr><td>진단 검사</td><td>혈청 17-OHP</td><td>복부 초음파(날문 근육 두께 ≥ 3 mm)</td></tr> </tbody></table> 둘 다 비담즙성 구토로 오지만, 칼륨과 산염기가 정반대로 움직인다 — 구토인데 칼륨이 높고 산증이면 부신을 먼저 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 땀 염소 검사는 낭성섬유증을 진단하며, 영아 염분소실과 저나트륨을 만들 수 있으나 칼륨이 낮고 대사알칼리증이 동반될 때 의심한다.\n② 상부위장관 조영술은 담즙성 구토로 장회전이상·중장염전을 의심할 때 하며, 이 아기의 구토물에는 담즙이 없다.\n④ 복부 초음파는 생후 3~6주의 분출성 구토에 저염소성 저칼륨성 대사알칼리증이 있어 날문협착증이 의심될 때 맞는 검사다.\n⑤ 혈청 알도스테론은 낮게 나오겠지만 원인을 가리지 못하며, 21-수산화효소 결핍과 일차 부신 저형성 같은 다른 원인을 구별하려면 17-OHP 가 필요하다."
+   },
+   {
+    "k": "함정",
+    "v": "생후 2주 남아의 비담즙성 구토를 날문협착증으로 보는 것 — 고칼륨과 대사산증은 반대 방향이라 부신 위기를 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "생후 1~3주 남아의 구토·체중 감소·저나트륨·고칼륨·대사산증을 염분소실형 21-수산화효소 결핍으로 판단하고 혈청 17-수산화프로게스테론으로 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Speiser PW, et al. Congenital adrenal hyperplasia due to steroid 21-hydroxylase deficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2018;103:4043-4088 · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Congenital Adrenal Hyperplasia and Related Disorders"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "생후 2주 남아의 구토에 저나트륨·고칼륨·대사산증·저혈당이 있으면 염분소실형 21-수산화효소 결핍이므로 혈청 17-OHP 로 확인한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "칼륨과 산염기 — 고칼륨·대사산증(부신)인가 저칼륨·대사알칼리증(날문협착)인가",
+   "steps": 3,
+   "chain": [
+    "구토·체중 감소 + 나트륨 124·칼륨 7.1·총 CO2 15 → 알도스테론 부족(염분소실)",
+    "생후 15일 남아 + 저혈당 + 음낭 색소침착 → 21-수산화효소 결핍 선천부신과다형성",
+    "21-수산화효소 결핍 → 막힌 단계 앞 기질인 혈청 17-OHP 로 확진"
+   ],
+   "key": [
+    {
+     "item": "칼륨 7.1 mEq/L",
+     "why": "구토인데 고칼륨 — 알도스테론 부족",
+     "also": []
+    },
+    {
+     "item": "총 이산화탄소 15 mEq/L",
+     "why": "대사산증 — 날문협착증과 반대",
+     "also": []
+    },
+    {
+     "item": "음낭에 색소침착",
+     "why": "ACTH 과다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "구토물에 담즙은 섞여 있지 않다",
+     "why": "장회전이상·중장염전 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "상복부에 만져지는 덩이는 없다",
+     "why": "날문협착증의 올리브 덩이가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 58/32 mmHg",
+     "why": "쇼크 — 수액과 히드로코르티손을 검사와 함께 시작한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "음경과 고환은 정상으로 보이며",
+     "why": "남아는 외부생식기가 정상이라 출생 때 놓친다 — 진단을 배제하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "생후 2주 남아의 비담즙성 구토에 저나트륨·고칼륨·대사산증·저혈당과 음낭 색소침착이 있다. 염분소실형 21-수산화효소 결핍이고 혈청 17-OHP 로 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "저염소성 저칼륨성 대사알칼리증과 상복부 올리브 덩이가 있었다면 복부 초음파로 날문협착증을 확인한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0379",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "신장·비뇨 — ACE 억제제·스피로놀락톤 복용자의 고칼륨혈증과 넓은 QRS",
+  "type": "신장·비뇨 — ACE 억제제·스피로놀락톤 복용자의 고칼륨혈증과 넓은 QRS",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-19",
+  "vignette": "A 71-year-old man is brought to the emergency department because of generalized weakness for 2 days. He has type 2 diabetes mellitus, heart failure with reduced ejection fraction, and chronic kidney disease. Two weeks ago, spironolactone was added to his regimen of lisinopril, metoprolol, and furosemide. His pulse is 52/min and blood pressure is 108/64 mm Hg. Muscle strength is 4/5 in all extremities. Serum studies show a potassium concentration of 7.6 mEq/L, sodium 134 mEq/L, bicarbonate 19 mEq/L, glucose 142 mg/dL, and creatinine 2.9 mg/dL (baseline 1.8 mg/dL). The sample is not hemolyzed. An ECG shows peaked T waves, absent P waves, and a QRS duration of 160 msec.",
+  "question": "Which of the following is the most appropriate immediate treatment?",
+  "options": [
+   "Intravenous sodium bicarbonate",
+   "Intravenous calcium gluconate",
+   "Intravenous regular insulin with dextrose",
+   "Nebulized albuterol",
+   "Oral sodium zirconium cyclosilicate"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Potassium of 7.6 mEq/L in a nonhemolyzed sample after spironolactone was added to an ACE inhibitor in a patient with worsening chronic kidney disease, with peaked T waves, loss of P waves, and a QRS of 160 msec, is hyperkalemia with cardiotoxicity. The first step is intravenous calcium, which stabilizes the myocardial membrane within minutes. It does not lower potassium, so insulin with dextrose, albuterol, and potassium removal follow immediately.\n- 원리: <b>Why calcium comes first</b>: hyperkalemia raises the resting membrane potential (less negative), which inactivates fast sodium channels and slows conduction — hence the loss of P waves and the widening QRS that can progress to a sine wave, ventricular fibrillation, or asystole. Calcium raises the threshold potential, restoring the gap between resting and threshold potentials so the myocardium can conduct normally again. It acts in 1 to 3 minutes but lasts only 30 to 60 minutes.<br> <b>Why the others come second</b>: insulin (with dextrose) and β2 agonists drive potassium into cells through Na+/K+-ATPase, lowering serum potassium by about 0.5 to 1.2 mEq/L over 15 to 30 minutes. Binders and diuretics or dialysis remove potassium from the body over hours. When the ECG already shows conduction changes, minutes matter, so the fastest protector comes first.<br> <b>Cause here</b>: ACE inhibitor plus mineralocorticoid antagonist reduces aldosterone effect, and declining kidney function reduces excretion.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">IV calcium gluconate (answer)</th><th>IV insulin with dextrose (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Stabilizes membrane (raises threshold)</td><td>Shifts K+ into cells (Na+/K+-ATPase)</td></tr> <tr><td>Onset</td><td><b>1 to 3 minutes</b></td><td>15 to 30 minutes</td></tr> <tr><td>Effect on serum K+</td><td>None</td><td>Falls by about 0.6 to 1.2 mEq/L</td></tr> <tr><td>Role</td><td>First when ECG shows conduction changes</td><td>First when hyperkalemia has no ECG changes</td></tr> </tbody></table> Without ECG changes, insulin with dextrose is the first treatment; with a widened QRS, calcium is given first and insulin immediately after.\n- 오답 이유:\n  - (A) Sodium bicarbonate would be most useful if severe metabolic acidosis were driving the hyperkalemia; with bicarbonate of 19 mEq/L its potassium-lowering effect is small and slow.\n  - (C) Insulin with dextrose would be the first treatment if the ECG showed no conduction changes; here it is given right after calcium because it takes 15 to 30 minutes to act.\n  - (D) Nebulized albuterol is an adjunct that shifts potassium into cells and works best with insulin; it does not protect the heart within minutes and may cause tachycardia.\n  - (E) Sodium zirconium cyclosilicate removes potassium in the gut over hours and would be correct for chronic or mild hyperkalemia without ECG changes.\n- 함정: Choosing insulin with dextrose because it lowers potassium fastest — with a widened QRS, calcium is needed first to protect the myocardium.\n- 학습목표: 심전도 변화(뾰족한 T·넓은 QRS)가 있는 심한 고칼륨혈증에서 첫 처치가 칼슘 정주로 심근막을 안정시키는 것임을 알고, 칼륨을 세포 안으로 옮기는 처치와 순서를 구별한다\n- 근거·출처: Palmer BF, Clegg DJ. Physiology and pathophysiology of potassium homeostasis: core curriculum 2019. Am J Kidney Dis 2019;74:682-695 · Lindner G, et al. Acute hyperkalemia in the emergency department: a summary from a Kidney Disease: Improving Global Outcomes conference. Eur J Emerg Med 2020;27:329-337",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Potassium of 7.6 mEq/L in a nonhemolyzed sample after spironolactone was added to an ACE inhibitor in a patient with worsening chronic kidney disease, with peaked T waves, loss of P waves, and a QRS of 160 msec, is hyperkalemia with cardiotoxicity. The first step is intravenous calcium, which stabilizes the myocardial membrane within minutes. It does not lower potassium, so insulin with dextrose, albuterol, and potassium removal follow immediately."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why calcium comes first</b>: hyperkalemia raises the resting membrane potential (less negative), which inactivates fast sodium channels and slows conduction — hence the loss of P waves and the widening QRS that can progress to a sine wave, ventricular fibrillation, or asystole. Calcium raises the threshold potential, restoring the gap between resting and threshold potentials so the myocardium can conduct normally again. It acts in 1 to 3 minutes but lasts only 30 to 60 minutes.<br> <b>Why the others come second</b>: insulin (with dextrose) and β2 agonists drive potassium into cells through Na+/K+-ATPase, lowering serum potassium by about 0.5 to 1.2 mEq/L over 15 to 30 minutes. Binders and diuretics or dialysis remove potassium from the body over hours. When the ECG already shows conduction changes, minutes matter, so the fastest protector comes first.<br> <b>Cause here</b>: ACE inhibitor plus mineralocorticoid antagonist reduces aldosterone effect, and declining kidney function reduces excretion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">IV calcium gluconate (answer)</th><th>IV insulin with dextrose (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Stabilizes membrane (raises threshold)</td><td>Shifts K+ into cells (Na+/K+-ATPase)</td></tr> <tr><td>Onset</td><td><b>1 to 3 minutes</b></td><td>15 to 30 minutes</td></tr> <tr><td>Effect on serum K+</td><td>None</td><td>Falls by about 0.6 to 1.2 mEq/L</td></tr> <tr><td>Role</td><td>First when ECG shows conduction changes</td><td>First when hyperkalemia has no ECG changes</td></tr> </tbody></table> Without ECG changes, insulin with dextrose is the first treatment; with a widened QRS, calcium is given first and insulin immediately after."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Sodium bicarbonate would be most useful if severe metabolic acidosis were driving the hyperkalemia; with bicarbonate of 19 mEq/L its potassium-lowering effect is small and slow.\n(C) Insulin with dextrose would be the first treatment if the ECG showed no conduction changes; here it is given right after calcium because it takes 15 to 30 minutes to act.\n(D) Nebulized albuterol is an adjunct that shifts potassium into cells and works best with insulin; it does not protect the heart within minutes and may cause tachycardia.\n(E) Sodium zirconium cyclosilicate removes potassium in the gut over hours and would be correct for chronic or mild hyperkalemia without ECG changes."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing insulin with dextrose because it lowers potassium fastest — with a widened QRS, calcium is needed first to protect the myocardium."
+   },
+   {
+    "k": "학습목표",
+    "v": "심전도 변화(뾰족한 T·넓은 QRS)가 있는 심한 고칼륨혈증에서 첫 처치가 칼슘 정주로 심근막을 안정시키는 것임을 알고, 칼륨을 세포 안으로 옮기는 처치와 순서를 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Palmer BF, Clegg DJ. Physiology and pathophysiology of potassium homeostasis: core curriculum 2019. Am J Kidney Dis 2019;74:682-695 · Lindner G, et al. Acute hyperkalemia in the emergency department: a summary from a Kidney Disease: Improving Global Outcomes conference. Eur J Emerg Med 2020;27:329-337"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "심전도에 P 파 소실·넓은 QRS 가 있는 고칼륨혈증이므로 칼륨을 낮추기 전에 칼슘 정주로 심근막을 먼저 안정시킨다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "심전도 전도 장애(QRS 160 msec) — 몇 분 안에 작용하는 처치가 먼저다",
+   "steps": 3,
+   "chain": [
+    "칼륨 7.6 mEq/L + 용혈 없음 → 진짜 고칼륨혈증",
+    "P 파 소실·QRS 160 msec → 심장 독성",
+    "심장 독성 + 칼슘이 몇 분 안에 막을 안정 → 칼슘 정주 먼저"
+   ],
+   "key": [
+    {
+     "item": "potassium concentration of 7.6 mEq/L",
+     "why": "심한 고칼륨혈증",
+     "also": []
+    },
+    {
+     "item": "a QRS duration of 160 msec",
+     "why": "전도 장애 — 칼슘이 먼저",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The sample is not hemolyzed",
+     "why": "가성 고칼륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "bicarbonate 19 mEq/L",
+     "why": "산증이 가벼워 중탄산나트륨의 이점이 작다",
+     "also": []
+    },
+    {
+     "item": "glucose 142 mg/dL",
+     "why": "인슐린 투여 시 포도당을 함께 준다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "spironolactone was added to his regimen of lisinopril",
+     "why": "원인 — 즉시 처치 순서에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "용혈 없는 칼륨 7.6 mEq/L 에 P 파 소실과 QRS 160 msec 가 있다. 칼륨을 옮기는 처치는 15~30분이 걸리므로 몇 분 안에 심근막을 안정시키는 칼슘 정주가 먼저다.",
+   "switch": {
+    "choice": "C",
+    "condition": "심전도 변화가 없었다면 인슐린과 포도당이 첫 처치다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0378",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "혈액·종양 — 범혈구감소·DIC·막대 모양 봉입체",
+  "type": "혈액·종양 — 범혈구감소·DIC·막대 모양 봉입체",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-19",
+  "vignette": "A 41-year-old man comes to the emergency department because of a 1-week history of fatigue, gum bleeding when brushing his teeth, and bruising on his arms and legs. His temperature is 37.4°C (99.3°F), pulse is 104/min, and blood pressure is 118/70 mm Hg. Examination shows pallor, gingival oozing, and scattered ecchymoses; there is no lymphadenopathy or splenomegaly. Laboratory studies show a hemoglobin concentration of 8.2 g/dL, leukocyte count of 1800/mm3, platelet count of 22,000/mm3, prothrombin time of 19 seconds (INR 1.7), fibrinogen of 85 mg/dL, and markedly elevated D-dimer. A peripheral blood smear shows occasional large abnormal cells with bilobed nuclei, heavy cytoplasmic granules, and bundles of Auer rods. Bone marrow aspiration has been performed, and cytogenetic and molecular studies are pending.",
+  "question": "In addition to transfusion of platelets and cryoprecipitate, which of the following is the most appropriate next step in management?",
+  "options": [
+   "Wait for PML-RARA confirmation before starting treatment",
+   "Start continuous intravenous unfractionated heparin",
+   "Start induction with cytarabine and daunorubicin alone",
+   "Start hydroxyurea to lower the leukocyte count",
+   "Start all-trans retinoic acid immediately"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Pancytopenia with disseminated intravascular coagulation (prolonged PT, fibrinogen 85 mg/dL, high D-dimer) and abnormal promyelocytes with heavy granules and bundles of Auer rods (faggot cells) indicate acute promyelocytic leukemia. Early hemorrhagic death from the coagulopathy is the main threat, so all-trans retinoic acid is started as soon as APL is suspected, without waiting for genetic confirmation, together with aggressive blood product support.\n- 원리: <b>Why APL bleeds</b>: the granules of leukemic promyelocytes are full of tissue factor and annexin II. When the cells release them, tissue factor triggers DIC and annexin II amplifies plasmin generation, producing hyperfibrinolysis. Fibrinogen falls rapidly, and intracranial or pulmonary hemorrhage can kill within days of presentation.<br> <b>Why ATRA works immediately</b>: the t(15;17) fusion protein PML-RARA blocks retinoic acid–dependent transcription and freezes cells at the promyelocyte stage. Pharmacologic doses of ATRA overcome this block, so the cells mature into neutrophils and stop releasing procoagulant granules; the coagulopathy improves within days.<br> <b>Why not wait</b>: confirming PML-RARA by FISH or PCR can take one to several days, and most early deaths occur in that window. Because ATRA is safe if the diagnosis turns out to be another leukemia, suspicion from the smear and coagulation profile is enough to start it. Watch for differentiation syndrome (fever, dyspnea, edema, pulmonary infiltrates), treated with dexamethasone.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">ATRA immediately (answer)</th><th>Wait for PML-RARA (closest distractor)</th></tr></thead><tbody> <tr><td>Basis</td><td>Clinical suspicion: smear + DIC</td><td>Genetic confirmation</td></tr> <tr><td>Timing</td><td>Hours</td><td>One to several days</td></tr> <tr><td>Effect on coagulopathy</td><td>Matures promyelocytes, <b>stops granule release</b></td><td>DIC and fibrinolysis continue</td></tr> <tr><td>Risk if diagnosis is wrong</td><td>Low — ATRA is stopped</td><td>Early hemorrhagic death during the wait</td></tr> </tbody></table> Confirmation still matters for the full regimen (ATRA plus arsenic trioxide, with or without chemotherapy), but it never delays the first dose of ATRA.\n- 오답 이유:\n  - (A) Waiting for PML-RARA confirmation would be appropriate for treatment choices in other acute myeloid leukemias, but in suspected APL it allows fatal hemorrhage.\n  - (B) Heparin would be considered only for DIC dominated by thrombosis, such as large-vessel clots; in APL the bleeding is driven by consumption and fibrinolysis.\n  - (C) Cytarabine and daunorubicin alone is standard induction for non-APL acute myeloid leukemia; in APL, chemotherapy without ATRA worsens DIC from cell lysis.\n  - (D) Hydroxyurea would be correct for cytoreduction in hyperleukocytosis from other leukemias; this patient's leukocyte count is low, not high.\n- 함정: Waiting for the genetic test before treating — APL is treated on suspicion because early death comes from the coagulopathy, not the leukemia burden.\n- 학습목표: 범혈구감소·DIC·다발 Auer 막대를 가진 미성숙 과립구로 급성 전골수구백혈병을 의심하고, 유전자 확인을 기다리지 않고 바로 ATRA 를 시작한다\n- 근거·출처: Sanz MA, et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. Blood 2019;133:1630-1643 · Lo-Coco F, et al. Retinoic acid and arsenic trioxide for acute promyelocytic leukemia. N Engl J Med 2013;369:111-121",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Pancytopenia with disseminated intravascular coagulation (prolonged PT, fibrinogen 85 mg/dL, high D-dimer) and abnormal promyelocytes with heavy granules and bundles of Auer rods (faggot cells) indicate acute promyelocytic leukemia. Early hemorrhagic death from the coagulopathy is the main threat, so all-trans retinoic acid is started as soon as APL is suspected, without waiting for genetic confirmation, together with aggressive blood product support."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why APL bleeds</b>: the granules of leukemic promyelocytes are full of tissue factor and annexin II. When the cells release them, tissue factor triggers DIC and annexin II amplifies plasmin generation, producing hyperfibrinolysis. Fibrinogen falls rapidly, and intracranial or pulmonary hemorrhage can kill within days of presentation.<br> <b>Why ATRA works immediately</b>: the t(15;17) fusion protein PML-RARA blocks retinoic acid–dependent transcription and freezes cells at the promyelocyte stage. Pharmacologic doses of ATRA overcome this block, so the cells mature into neutrophils and stop releasing procoagulant granules; the coagulopathy improves within days.<br> <b>Why not wait</b>: confirming PML-RARA by FISH or PCR can take one to several days, and most early deaths occur in that window. Because ATRA is safe if the diagnosis turns out to be another leukemia, suspicion from the smear and coagulation profile is enough to start it. Watch for differentiation syndrome (fever, dyspnea, edema, pulmonary infiltrates), treated with dexamethasone."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">ATRA immediately (answer)</th><th>Wait for PML-RARA (closest distractor)</th></tr></thead><tbody> <tr><td>Basis</td><td>Clinical suspicion: smear + DIC</td><td>Genetic confirmation</td></tr> <tr><td>Timing</td><td>Hours</td><td>One to several days</td></tr> <tr><td>Effect on coagulopathy</td><td>Matures promyelocytes, <b>stops granule release</b></td><td>DIC and fibrinolysis continue</td></tr> <tr><td>Risk if diagnosis is wrong</td><td>Low — ATRA is stopped</td><td>Early hemorrhagic death during the wait</td></tr> </tbody></table> Confirmation still matters for the full regimen (ATRA plus arsenic trioxide, with or without chemotherapy), but it never delays the first dose of ATRA."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Waiting for PML-RARA confirmation would be appropriate for treatment choices in other acute myeloid leukemias, but in suspected APL it allows fatal hemorrhage.\n(B) Heparin would be considered only for DIC dominated by thrombosis, such as large-vessel clots; in APL the bleeding is driven by consumption and fibrinolysis.\n(C) Cytarabine and daunorubicin alone is standard induction for non-APL acute myeloid leukemia; in APL, chemotherapy without ATRA worsens DIC from cell lysis.\n(D) Hydroxyurea would be correct for cytoreduction in hyperleukocytosis from other leukemias; this patient's leukocyte count is low, not high."
+   },
+   {
+    "k": "함정",
+    "v": "Waiting for the genetic test before treating — APL is treated on suspicion because early death comes from the coagulopathy, not the leukemia burden."
+   },
+   {
+    "k": "학습목표",
+    "v": "범혈구감소·DIC·다발 Auer 막대를 가진 미성숙 과립구로 급성 전골수구백혈병을 의심하고, 유전자 확인을 기다리지 않고 바로 ATRA 를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sanz MA, et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. Blood 2019;133:1630-1643 · Lo-Coco F, et al. Retinoic acid and arsenic trioxide for acute promyelocytic leukemia. N Engl J Med 2013;369:111-121"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "범혈구감소·DIC·다발 Auer 막대는 급성 전골수구백혈병을 시사하므로 유전자 확인을 기다리지 않고 ATRA 를 즉시 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "초기 사망 원인이 응고장애라는 점 — 확인을 기다리는 동안 출혈 사망이 생긴다",
+   "steps": 3,
+   "chain": [
+    "범혈구감소 + 무거운 과립·다발 Auer 막대 세포 → 급성 전골수구백혈병 의심",
+    "피브리노겐 85 mg/dL·D-이합체 상승·PT 연장 → DIC 동반, 조기 출혈 사망 위험",
+    "의심 단계 + 응고장애 → 확인을 기다리지 않고 ATRA 시작"
+   ],
+   "key": [
+    {
+     "item": "bundles of Auer rods",
+     "why": "급성 전골수구백혈병의 특징 세포",
+     "also": []
+    },
+    {
+     "item": "fibrinogen of 85 mg/dL",
+     "why": "DIC — 즉시 치료가 필요한 이유",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "leukocyte count of 1800/mm3",
+     "why": "백혈구 과다(세포 감량이 필요한 상황) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "cytogenetic and molecular studies are pending",
+     "why": "확인 전이라도 ATRA 를 시작한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "there is no lymphadenopathy or splenomegaly",
+     "why": "APL 에서 흔한 소견 — 결정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "범혈구감소, DIC, 다발 Auer 막대를 가진 이상 전골수구는 급성 전골수구백혈병이다. 조기 사망은 응고장애에서 오므로 PML-RARA 확인을 기다리지 않고 ATRA 를 즉시 시작한다.",
+   "switch": null
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0377",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "소화기·간담췌 — IgA 결핍 환자의 셀리악병 혈청검사",
+  "type": "소화기·간담췌 — IgA 결핍 환자의 셀리악병 혈청검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-19",
+  "vignette": "A 26-year-old woman comes to the physician because of a 6-month history of bloating, intermittent loose stools, and fatigue. She has had three episodes of sinusitis in the past year. She eats a regular diet that includes bread and pasta daily. She has autoimmune thyroiditis treated with levothyroxine. BMI is 19 kg/m2. Abdominal examination shows mild distention without tenderness. Laboratory studies show a hemoglobin concentration of 10.1 g/dL, mean corpuscular volume of 71 fL, and ferritin of 6 ng/mL. Serum tissue transglutaminase IgA antibody is negative. Total serum IgA concentration is less than 5 mg/dL (N = 70-400).",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Deamidated gliadin peptide IgG and tissue transglutaminase IgG testing",
+   "HLA-DQ2 and HLA-DQ8 genotyping",
+   "Trial of a gluten-free diet for 3 months",
+   "Fecal calprotectin measurement",
+   "Repeat tissue transglutaminase IgA testing in 6 months"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Bloating, loose stools, and iron deficiency anemia in a young woman with autoimmune thyroiditis suggest celiac disease. Her tissue transglutaminase IgA is negative, but she has selective IgA deficiency (total IgA < 5 mg/dL), which is 10 to 15 times more common in celiac disease and makes every IgA-based test falsely negative. The next step is IgG-based serology (deamidated gliadin peptide IgG and/or tTG-IgG) while she is still eating gluten; if positive, duodenal biopsy confirms the diagnosis.\n- 원리: <b>Why total IgA must be checked</b>: the standard screening test, tTG-IgA, measures an IgA antibody. A patient who cannot make IgA cannot produce a positive result, no matter how active the disease. Selective IgA deficiency affects about 2 % to 3 % of patients with celiac disease, so guidelines recommend measuring total IgA with tTG-IgA or reflexing to IgG tests when IgA is low.<br> <b>Why IgG tests work here</b>: the autoimmune response to gluten still produces IgG against tissue transglutaminase and deamidated gliadin peptides. These IgG tests are less specific in IgA-sufficient patients, but in IgA deficiency they are the screening tests of choice.<br> <b>Why keep gluten in the diet</b>: both serology and the small-bowel biopsy (villous atrophy, crypt hyperplasia, intraepithelial lymphocytes) normalize on a gluten-free diet, so starting the diet before testing can make the diagnosis impossible to confirm. The recurrent sinusitis is a clue to the IgA deficiency itself.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">DGP-IgG / tTG-IgG (answer)</th><th>HLA-DQ2/DQ8 genotyping (closest distractor)</th></tr></thead><tbody> <tr><td>What it shows</td><td>Active immune response to gluten</td><td>Genetic susceptibility only</td></tr> <tr><td>Positive result</td><td>Supports celiac disease → biopsy</td><td>Present in about 30 % to 40 % of the general population</td></tr> <tr><td>Best use</td><td>Screening when IgA is deficient</td><td>To <b>exclude</b> celiac disease when serology and biopsy disagree or the patient is already gluten-free</td></tr> </tbody></table> A negative HLA test makes celiac disease very unlikely, but a positive one cannot diagnose it — the IgG serology is the step that moves the work-up forward.\n- 오답 이유:\n  - (B) HLA-DQ2/DQ8 genotyping is useful to rule out celiac disease when serology and biopsy disagree or the patient already avoids gluten; a positive result is common in healthy people.\n  - (C) A gluten-free diet trial is not diagnostic and would be appropriate only after the diagnosis is confirmed, because it normalizes serology and histology.\n  - (D) Fecal calprotectin would be correct if inflammatory bowel disease were the main concern, with bloody diarrhea or nocturnal symptoms, rather than iron deficiency and bloating.\n  - (E) Repeating tTG-IgA would be reasonable only if total IgA were normal and suspicion were low; with IgA deficiency it will remain falsely negative.\n- 함정: Concluding that celiac disease is excluded because tTG-IgA is negative — with total IgA below 5 mg/dL, any IgA-based test is falsely negative.\n- 학습목표: 셀리악병이 의심되는데 tTG-IgA 가 음성이고 총 IgA 가 결핍이면 IgA 검사를 믿을 수 없으므로 IgG 기반 혈청검사(DGP-IgG·tTG-IgG)를 한다\n- 근거·출처: Rubio-Tapia A, et al. ACG Clinical Guidelines: Diagnosis and Management of Celiac Disease. Am J Gastroenterol 2023;118:59-76 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Disorders of Absorption — celiac disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Bloating, loose stools, and iron deficiency anemia in a young woman with autoimmune thyroiditis suggest celiac disease. Her tissue transglutaminase IgA is negative, but she has selective IgA deficiency (total IgA < 5 mg/dL), which is 10 to 15 times more common in celiac disease and makes every IgA-based test falsely negative. The next step is IgG-based serology (deamidated gliadin peptide IgG and/or tTG-IgG) while she is still eating gluten; if positive, duodenal biopsy confirms the diagnosis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why total IgA must be checked</b>: the standard screening test, tTG-IgA, measures an IgA antibody. A patient who cannot make IgA cannot produce a positive result, no matter how active the disease. Selective IgA deficiency affects about 2 % to 3 % of patients with celiac disease, so guidelines recommend measuring total IgA with tTG-IgA or reflexing to IgG tests when IgA is low.<br> <b>Why IgG tests work here</b>: the autoimmune response to gluten still produces IgG against tissue transglutaminase and deamidated gliadin peptides. These IgG tests are less specific in IgA-sufficient patients, but in IgA deficiency they are the screening tests of choice.<br> <b>Why keep gluten in the diet</b>: both serology and the small-bowel biopsy (villous atrophy, crypt hyperplasia, intraepithelial lymphocytes) normalize on a gluten-free diet, so starting the diet before testing can make the diagnosis impossible to confirm. The recurrent sinusitis is a clue to the IgA deficiency itself."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">DGP-IgG / tTG-IgG (answer)</th><th>HLA-DQ2/DQ8 genotyping (closest distractor)</th></tr></thead><tbody> <tr><td>What it shows</td><td>Active immune response to gluten</td><td>Genetic susceptibility only</td></tr> <tr><td>Positive result</td><td>Supports celiac disease → biopsy</td><td>Present in about 30 % to 40 % of the general population</td></tr> <tr><td>Best use</td><td>Screening when IgA is deficient</td><td>To <b>exclude</b> celiac disease when serology and biopsy disagree or the patient is already gluten-free</td></tr> </tbody></table> A negative HLA test makes celiac disease very unlikely, but a positive one cannot diagnose it — the IgG serology is the step that moves the work-up forward."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) HLA-DQ2/DQ8 genotyping is useful to rule out celiac disease when serology and biopsy disagree or the patient already avoids gluten; a positive result is common in healthy people.\n(C) A gluten-free diet trial is not diagnostic and would be appropriate only after the diagnosis is confirmed, because it normalizes serology and histology.\n(D) Fecal calprotectin would be correct if inflammatory bowel disease were the main concern, with bloody diarrhea or nocturnal symptoms, rather than iron deficiency and bloating.\n(E) Repeating tTG-IgA would be reasonable only if total IgA were normal and suspicion were low; with IgA deficiency it will remain falsely negative."
+   },
+   {
+    "k": "함정",
+    "v": "Concluding that celiac disease is excluded because tTG-IgA is negative — with total IgA below 5 mg/dL, any IgA-based test is falsely negative."
+   },
+   {
+    "k": "학습목표",
+    "v": "셀리악병이 의심되는데 tTG-IgA 가 음성이고 총 IgA 가 결핍이면 IgA 검사를 믿을 수 없으므로 IgG 기반 혈청검사(DGP-IgG·tTG-IgG)를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rubio-Tapia A, et al. ACG Clinical Guidelines: Diagnosis and Management of Celiac Disease. Am J Gastroenterol 2023;118:59-76 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Disorders of Absorption — celiac disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "셀리악병이 의심되는데 총 IgA 가 결핍이면 tTG-IgA 음성을 믿을 수 없으므로 IgG 기반 혈청검사를 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "총 IgA 5 mg/dL 미만 — IgA 검사가 위음성",
+   "steps": 2,
+   "chain": [
+    "복부 팽만·설사 + 철결핍빈혈 + 자가면역 갑상샘염 → 셀리악병 의심",
+    "tTG-IgA 음성 + 총 IgA 결핍 → 위음성 가능, IgG 기반 혈청검사"
+   ],
+   "key": [
+    {
+     "item": "Total serum IgA concentration is less than 5 mg/dL",
+     "why": "IgA 결핍 — IgA 검사가 위음성",
+     "also": []
+    },
+    {
+     "item": "ferritin of 6 ng/mL",
+     "why": "철 흡수 장애 — 셀리악병의 흔한 표현",
+     "also": []
+    },
+    {
+     "item": "autoimmune thyroiditis",
+     "why": "셀리악병과 함께 오는 자가면역 질환",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "eats a regular diet that includes bread and pasta daily",
+     "why": "글루텐을 먹고 있어 혈청검사가 유효하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "three episodes of sinusitis",
+     "why": "IgA 결핍의 단서 — 검사 선택은 IgA 수치가 정한다",
+     "also": []
+    }
+   ],
+   "summary": "셀리악병이 의심되는데 tTG-IgA 가 음성이고 총 IgA 가 5 mg/dL 미만이다. IgA 검사는 위음성이므로 DGP-IgG·tTG-IgG 로 선별하고 양성이면 생검한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "환자가 이미 글루텐을 끊어 혈청검사·생검이 모두 의미가 없다면 HLA-DQ2/DQ8 음성으로 셀리악병을 배제할 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0376",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "산과 — 임신 3분기의 통증 없는 질출혈",
+  "type": "산과 — 임신 3분기의 통증 없는 질출혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-19",
+  "vignette": "32세 여자(임신 3회, 출산 2회)가 임신 33주에 갑자기 생긴 질출혈로 왔다. 배는 아프지 않았고 선홍색 피가 생리대 두 개를 적셨다. 두 번 모두 제왕절개로 분만하였다. 이번 임신 중 산전 진찰은 받지 않았다. 혈압 116/72 mmHg, 맥박 92회/분이다. 자궁은 부드럽고 압통이 없으며 자궁수축은 없다. 태아는 횡위로 만져진다. 태아 심박동은 분당 145회이고 변이도는 정상이다. 혈색소 10.8 g/dL이다.",
+  "question": "가장 먼저 시행할 것은?",
+  "options": [
+   "손가락 내진으로 자궁경부 개대 확인",
+   "옥시토신 정주로 분만 유도",
+   "양수천자로 태아 폐 성숙도 확인",
+   "응급 제왕절개술",
+   "경복부 초음파로 태반 위치 확인"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 임신 3분기에 통증 없는 선홍색 질출혈, 부드럽고 압통 없는 자궁, 비정상 태위(횡위), 두 번의 제왕절개 과거력은 전치태반을 시사한다. 태반이 자궁경부 위를 덮고 있으면 손가락 내진이 태반을 찔러 대량 출혈을 일으키므로, 내진 전에 초음파로 태반 위치를 먼저 확인한다. 산모와 태아가 안정되어 있어 즉시 분만할 근거는 아직 없다.\n- 원리: <b>왜 통증이 없는가</b>: 전치태반의 출혈은 자궁 아래 분절이 늘어나면서 그 위에 붙은 태반이 떨어져 나와 모체 혈관이 열리는 것이다. 자궁근육의 수축이나 자궁벽 안의 혈종이 아니므로 통증과 자궁 압통이 없다. 반대로 태반조기박리는 태반 뒤 혈종이 자궁근육을 자극해 통증·압통·잦은 수축을 만든다.<br> <b>왜 내진이 먼저가 아닌가</b>: 손가락이 자궁경부를 지나 태반을 직접 건드리면 태반이 더 떨어져 짧은 시간에 대량 출혈이 날 수 있다. 그래서 3분기 출혈에서는 진단이 확정되기 전까지 손가락 내진을 하지 않고 초음파(경복부 → 필요하면 조심스러운 경질 초음파)로 태반 위치를 본다.<br> <b>위험인자</b>: 이전 제왕절개 흉터는 전치태반과 유착태반의 위험을 함께 높인다. 그래서 전치태반이 확인되면 유착태반 여부도 영상으로 평가한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">경복부 초음파(정답)</th><th>손가락 내진(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>태반 위치를 모르는 <b>3분기 출혈</b></td><td>태반이 경부를 덮지 않음이 확인된 진통 평가</td></tr> <tr><td>얻는 정보</td><td>태반 위치·태위·태아 상태</td><td>경부 개대·소실·하강</td></tr> <tr><td>전치태반에서</td><td>안전하게 진단</td><td><b>대량 출혈</b>을 유발할 수 있음</td></tr> </tbody></table> 초음파로 태반이 경부에서 멀리 있음을 확인하면 그때 질경·내진으로 다른 출혈원과 진통을 평가한다.\n- 오답 이유:\n  - ① 손가락 내진은 초음파로 태반이 경부를 덮지 않음을 확인한 뒤 진통 진행을 볼 때 맞으며, 전치태반에서는 대량 출혈을 일으킬 수 있다.\n  - ② 옥시토신 분만 유도는 태반이 경부에서 떨어져 있고 질식분만이 가능한 만삭 임신에서 쓰며, 전치태반·횡위에서는 질식분만이 금기다.\n  - ③ 양수천자로 폐 성숙도를 보는 것은 예전에 계획 분만 시점을 정할 때 쓰던 검사이며, 출혈의 원인을 진단하는 첫 단계가 아니다.\n  - ④ 응급 제왕절개술은 출혈이 멈추지 않아 산모가 불안정하거나 태아 심박동이 비정상일 때 맞으며, 지금은 산모와 태아가 안정되어 있다.\n- 함정: 질출혈의 원인을 찾으려고 바로 내진하는 것 — 통증 없는 3분기 출혈은 전치태반을 먼저 배제할 때까지 손가락 내진을 하지 않는다.\n- 학습목표: 임신 3분기의 통증 없는 선홍색 질출혈에서 전치태반을 의심해 손가락 내진 전에 초음파로 태반 위치를 먼저 확인한다\n- 근거·출처: Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Obstetrical Hemorrhage — placenta previa · Jauniaux E, et al. Placenta praevia and placenta accreta: diagnosis and management. Green-top Guideline No. 27a. BJOG 2019;126:e1-e48",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "임신 3분기에 통증 없는 선홍색 질출혈, 부드럽고 압통 없는 자궁, 비정상 태위(횡위), 두 번의 제왕절개 과거력은 전치태반을 시사한다. 태반이 자궁경부 위를 덮고 있으면 손가락 내진이 태반을 찔러 대량 출혈을 일으키므로, 내진 전에 초음파로 태반 위치를 먼저 확인한다. 산모와 태아가 안정되어 있어 즉시 분만할 근거는 아직 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 통증이 없는가</b>: 전치태반의 출혈은 자궁 아래 분절이 늘어나면서 그 위에 붙은 태반이 떨어져 나와 모체 혈관이 열리는 것이다. 자궁근육의 수축이나 자궁벽 안의 혈종이 아니므로 통증과 자궁 압통이 없다. 반대로 태반조기박리는 태반 뒤 혈종이 자궁근육을 자극해 통증·압통·잦은 수축을 만든다.<br> <b>왜 내진이 먼저가 아닌가</b>: 손가락이 자궁경부를 지나 태반을 직접 건드리면 태반이 더 떨어져 짧은 시간에 대량 출혈이 날 수 있다. 그래서 3분기 출혈에서는 진단이 확정되기 전까지 손가락 내진을 하지 않고 초음파(경복부 → 필요하면 조심스러운 경질 초음파)로 태반 위치를 본다.<br> <b>위험인자</b>: 이전 제왕절개 흉터는 전치태반과 유착태반의 위험을 함께 높인다. 그래서 전치태반이 확인되면 유착태반 여부도 영상으로 평가한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">경복부 초음파(정답)</th><th>손가락 내진(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>태반 위치를 모르는 <b>3분기 출혈</b></td><td>태반이 경부를 덮지 않음이 확인된 진통 평가</td></tr> <tr><td>얻는 정보</td><td>태반 위치·태위·태아 상태</td><td>경부 개대·소실·하강</td></tr> <tr><td>전치태반에서</td><td>안전하게 진단</td><td><b>대량 출혈</b>을 유발할 수 있음</td></tr> </tbody></table> 초음파로 태반이 경부에서 멀리 있음을 확인하면 그때 질경·내진으로 다른 출혈원과 진통을 평가한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 손가락 내진은 초음파로 태반이 경부를 덮지 않음을 확인한 뒤 진통 진행을 볼 때 맞으며, 전치태반에서는 대량 출혈을 일으킬 수 있다.\n② 옥시토신 분만 유도는 태반이 경부에서 떨어져 있고 질식분만이 가능한 만삭 임신에서 쓰며, 전치태반·횡위에서는 질식분만이 금기다.\n③ 양수천자로 폐 성숙도를 보는 것은 예전에 계획 분만 시점을 정할 때 쓰던 검사이며, 출혈의 원인을 진단하는 첫 단계가 아니다.\n④ 응급 제왕절개술은 출혈이 멈추지 않아 산모가 불안정하거나 태아 심박동이 비정상일 때 맞으며, 지금은 산모와 태아가 안정되어 있다."
+   },
+   {
+    "k": "함정",
+    "v": "질출혈의 원인을 찾으려고 바로 내진하는 것 — 통증 없는 3분기 출혈은 전치태반을 먼저 배제할 때까지 손가락 내진을 하지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 3분기의 통증 없는 선홍색 질출혈에서 전치태반을 의심해 손가락 내진 전에 초음파로 태반 위치를 먼저 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Obstetrical Hemorrhage — placenta previa · Jauniaux E, et al. Placenta praevia and placenta accreta: diagnosis and management. Green-top Guideline No. 27a. BJOG 2019;126:e1-e48"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "통증 없는 3분기 선홍색 출혈은 전치태반을 의심해 손가락 내진 전에 초음파로 태반 위치를 먼저 확인한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "태반 위치를 모르는 상태 — 내진은 전치태반에서 대량 출혈을 일으킨다",
+   "steps": 2,
+   "chain": [
+    "통증 없는 선홍색 출혈 + 부드러운 자궁 + 횡위 + 제왕절개 2회 → 전치태반 의심",
+    "전치태반 의심 + 태반 위치 모름 → 내진 전에 초음파로 태반 위치 확인"
+   ],
+   "key": [
+    {
+     "item": "배는 아프지 않았고 선홍색 피",
+     "why": "통증 없는 출혈 — 전치태반",
+     "also": []
+    },
+    {
+     "item": "태아는 횡위로 만져진다",
+     "why": "태반이 아래 분절을 차지하면 태위 이상이 흔하다",
+     "also": []
+    },
+    {
+     "item": "두 번 모두 제왕절개로 분만",
+     "why": "전치태반·유착태반 위험인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "자궁은 부드럽고 압통이 없으며",
+     "why": "태반조기박리 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "태아 심박동은 분당 145회이고 변이도는 정상",
+     "why": "태아가 안정되어 응급 분만할 근거가 없다",
+     "also": []
+    },
+    {
+     "item": "혈압 116/72 mmHg",
+     "why": "산모가 안정되어 진단을 먼저 할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "통증 없는 3분기 선홍색 출혈, 부드러운 자궁, 횡위, 제왕절개 과거력은 전치태반을 시사한다. 손가락 내진은 대량 출혈 위험이 있어 초음파로 태반 위치를 먼저 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "출혈이 계속되어 산모 혈압이 떨어지거나 태아 심박동이 비정상이었다면 응급 제왕절개술이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0375",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·외과·부인과·순환기·산과·소화기·혈액종양·신장비뇨·소아·약리)",
+  "subtopic": "순환기 — 운동 중 실신과 중증 대동맥판협착",
+  "type": "순환기 — 운동 중 실신과 중증 대동맥판협착",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-19",
+  "vignette": "78세 남자가 2개월 전부터 계단을 오를 때 가슴이 조이고, 1주 전 산책하다 잠깐 정신을 잃은 적이 있어 왔다. 혈압 118/88 mmHg, 맥박 72회/분이다. 오른쪽 둘째 갈비사이에서 경동맥으로 퍼지는 거친 수축기 박출성 잡음이 들리고 둘째 심음이 약하다. 경동맥 맥박은 늦게 천천히 오른다. 심전도는 좌심실 비대 소견이다. 심초음파에서 대동맥판막은 석회화되어 있고 판막 면적 0.7 cm², 평균 압력차 48 mmHg, 좌심실 박출률 60 %이다. 관상동맥조영술에서 의미 있는 협착은 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "베타차단제 투여",
+   "설하 니트로글리세린 투여",
+   "풍선 대동맥판막 성형술 단독",
+   "대동맥판막 치환술",
+   "6개월 뒤 심초음파 추적"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 경동맥으로 퍼지는 수축기 박출성 잡음, 약한 둘째 심음, 늦고 느린 경동맥 맥박은 대동맥판협착이다. 판막 면적 0.7 cm²(1.0 미만)·평균 압력차 48 mmHg(40 이상)는 중증이고, 운동 중 협심증과 실신이 있으므로 증상 있는 중증 대동맥판협착이다. 증상이 생기면 평균 생존이 2~3년으로 짧아지므로 판막을 바꾼다(78세에서는 경피적 치환이 흔히 선택된다).\n- 원리: <b>왜 증상이 수술 시점을 정하는가</b>: 판막이 좁아지는 동안 좌심실은 벽을 두껍게 해 압력 부하를 견디고, 이 시기에는 증상이 없고 급사 위험도 낮다(연 1 % 미만). 그러나 협심증·실신·심부전이 나타나면 보상이 한계에 이른 것이고, 수술하지 않으면 평균 생존이 협심증 5년·실신 3년·심부전 2년으로 짧아진다.<br> <b>증상의 기전</b>: 두꺼운 심근은 산소 요구량이 크고 관상동맥 관류압은 낮아 관상동맥이 정상이어도 협심증이 생긴다. 운동하면 말초혈관은 넓어지는데 좁은 판막 때문에 심박출량이 늘지 못해 혈압이 떨어지며 실신한다.<br> <b>약물의 한계</b>: 판막 협착은 기계적 폐쇄라 약으로 넓힐 수 없다. 전부하를 떨어뜨리는 약(니트로글리세린)이나 심박출을 줄이는 약은 고정된 박출 장애에서 저혈압을 일으킬 수 있다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">대동맥판막 치환술(정답)</th><th>심초음파 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>중증 + <b>증상 있음</b>(협심증·실신·호흡곤란)</td><td>중증이지만 증상 없음, 박출률 50 % 이상</td></tr> <tr><td>중증 기준</td><td colspan=\"2\">판막 면적 &lt; 1.0 cm², 평균 압력차 ≥ 40 mmHg, 최고 속도 ≥ 4 m/s</td></tr> <tr><td>왜 그 시점인가</td><td>증상 뒤 수술하지 않으면 생존이 2~3년</td><td>무증상 기간은 급사 위험이 낮아 6~12개월 간격으로 추적</td></tr> </tbody></table> 무증상이라도 박출률이 50 % 미만으로 떨어지거나 운동부하검사에서 증상이 나오면 치환술로 넘어간다.\n- 오답 이유:\n  - ① 베타차단제는 고혈압·심방세동 같은 동반 질환이 있을 때 조심해서 쓸 수 있으나, 판막 폐쇄를 풀지 못하고 운동 시 박출을 더 줄인다.\n  - ② 설하 니트로글리세린은 관상동맥 협착에 의한 협심증에 맞지만, 고정된 판막 폐쇄에서는 전부하를 떨어뜨려 실신을 유발할 수 있다.\n  - ③ 풍선 성형술 단독은 수술이 불가능한 환자에서 치환 전 다리 역할이나 소아 선천성 협착에 쓰며, 성인 석회화 판막은 곧 다시 좁아진다.\n  - ⑤ 6개월 뒤 심초음파 추적은 같은 중증이라도 증상이 없고 박출률이 보존된 경우에 맞으며, 실신이 있으면 생존이 크게 줄어든다.\n- 함정: 관상동맥이 정상이니 협심증을 니트로글리세린으로 조절하려는 것 — 중증 대동맥판협착의 협심증·실신은 판막 치환의 적응증이다.\n- 학습목표: 운동 중 실신·협심증과 판막 면적 1.0 cm² 미만의 중증 대동맥판협착을 증상 있는 중증으로 판단하고 대동맥판막 치환을 선택한다\n- 근거·출처: Otto CM, et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Aortic Stenosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "경동맥으로 퍼지는 수축기 박출성 잡음, 약한 둘째 심음, 늦고 느린 경동맥 맥박은 대동맥판협착이다. 판막 면적 0.7 cm²(1.0 미만)·평균 압력차 48 mmHg(40 이상)는 중증이고, 운동 중 협심증과 실신이 있으므로 증상 있는 중증 대동맥판협착이다. 증상이 생기면 평균 생존이 2~3년으로 짧아지므로 판막을 바꾼다(78세에서는 경피적 치환이 흔히 선택된다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 증상이 수술 시점을 정하는가</b>: 판막이 좁아지는 동안 좌심실은 벽을 두껍게 해 압력 부하를 견디고, 이 시기에는 증상이 없고 급사 위험도 낮다(연 1 % 미만). 그러나 협심증·실신·심부전이 나타나면 보상이 한계에 이른 것이고, 수술하지 않으면 평균 생존이 협심증 5년·실신 3년·심부전 2년으로 짧아진다.<br> <b>증상의 기전</b>: 두꺼운 심근은 산소 요구량이 크고 관상동맥 관류압은 낮아 관상동맥이 정상이어도 협심증이 생긴다. 운동하면 말초혈관은 넓어지는데 좁은 판막 때문에 심박출량이 늘지 못해 혈압이 떨어지며 실신한다.<br> <b>약물의 한계</b>: 판막 협착은 기계적 폐쇄라 약으로 넓힐 수 없다. 전부하를 떨어뜨리는 약(니트로글리세린)이나 심박출을 줄이는 약은 고정된 박출 장애에서 저혈압을 일으킬 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">대동맥판막 치환술(정답)</th><th>심초음파 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>중증 + <b>증상 있음</b>(협심증·실신·호흡곤란)</td><td>중증이지만 증상 없음, 박출률 50 % 이상</td></tr> <tr><td>중증 기준</td><td colspan=\"2\">판막 면적 &lt; 1.0 cm², 평균 압력차 ≥ 40 mmHg, 최고 속도 ≥ 4 m/s</td></tr> <tr><td>왜 그 시점인가</td><td>증상 뒤 수술하지 않으면 생존이 2~3년</td><td>무증상 기간은 급사 위험이 낮아 6~12개월 간격으로 추적</td></tr> </tbody></table> 무증상이라도 박출률이 50 % 미만으로 떨어지거나 운동부하검사에서 증상이 나오면 치환술로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 베타차단제는 고혈압·심방세동 같은 동반 질환이 있을 때 조심해서 쓸 수 있으나, 판막 폐쇄를 풀지 못하고 운동 시 박출을 더 줄인다.\n② 설하 니트로글리세린은 관상동맥 협착에 의한 협심증에 맞지만, 고정된 판막 폐쇄에서는 전부하를 떨어뜨려 실신을 유발할 수 있다.\n③ 풍선 성형술 단독은 수술이 불가능한 환자에서 치환 전 다리 역할이나 소아 선천성 협착에 쓰며, 성인 석회화 판막은 곧 다시 좁아진다.\n⑤ 6개월 뒤 심초음파 추적은 같은 중증이라도 증상이 없고 박출률이 보존된 경우에 맞으며, 실신이 있으면 생존이 크게 줄어든다."
+   },
+   {
+    "k": "함정",
+    "v": "관상동맥이 정상이니 협심증을 니트로글리세린으로 조절하려는 것 — 중증 대동맥판협착의 협심증·실신은 판막 치환의 적응증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "운동 중 실신·협심증과 판막 면적 1.0 cm² 미만의 중증 대동맥판협착을 증상 있는 중증으로 판단하고 대동맥판막 치환을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Otto CM, et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Aortic Stenosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "판막 면적 0.7 cm²·평균 압력차 48 mmHg 의 중증 대동맥판협착에 협심증과 실신이 있으므로 판막을 치환한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "증상 유무 — 운동 중 협심증과 실신이 있다",
+   "steps": 2,
+   "chain": [
+    "경동맥으로 퍼지는 수축기 잡음 + 판막 면적 0.7 cm²·평균 압력차 48 mmHg → 중증 대동맥판협착",
+    "중증 + 운동 중 협심증·실신 → 대동맥판막 치환술"
+   ],
+   "key": [
+    {
+     "item": "판막 면적 0.7 cm², 평균 압력차 48 mmHg",
+     "why": "중증 기준",
+     "also": []
+    },
+    {
+     "item": "산책하다 잠깐 정신을 잃은 적이 있어",
+     "why": "증상 — 수술 적응증",
+     "also": []
+    },
+    {
+     "item": "계단을 오를 때 가슴이 조이고",
+     "why": "협심증 — 증상 있는 중증",
+     "also": []
+    },
+    {
+     "item": "경동맥 맥박은 늦게 천천히 오른다",
+     "why": "고정된 박출 장애의 진찰 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "관상동맥조영술에서 의미 있는 협착은 없다",
+     "why": "관상동맥 질환에 의한 협심증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "좌심실 박출률 60 %",
+     "why": "보존된 박출률 — 증상이 있어 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "판막 면적 0.7 cm²·평균 압력차 48 mmHg 로 중증 대동맥판협착이고 운동 중 협심증과 실신이 있다. 증상 있는 중증이므로 추적이 아니라 판막 치환이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 중증이라도 증상이 없고 박출률이 보존되어 있었다면 6~12개월 간격 추적이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261019T203549Z_일일영상_2026-10-20_11units_11q_3119ae9e",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0364",
   "exam": "imaging",
   "style": "usmle_style",
