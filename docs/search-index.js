@@ -1,39 +1,39 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-18",
+ "generated": "2026-10-19",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3798,
+  "total": 3810,
   "byType": {
+   "usmle": 204,
    "kmle": 1472,
    "concept": 105,
    "anatomy": 846,
+   "paper": 797,
    "imaging": 369,
-   "paper": 791,
-   "usmle": 198,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 262,
-   "Nephrology": 210,
-   "Infectious Disease": 191,
-   "Pediatrics": 176,
-   "Obstetrics & Gynecology": 128,
-   "Pathology": 116,
-   "Hematology-Oncology": 114,
+   "Cardiology": 263,
+   "Nephrology": 211,
+   "Infectious Disease": 192,
+   "Pediatrics": 177,
+   "Obstetrics & Gynecology": 129,
+   "Pathology": 117,
+   "Hematology-Oncology": 115,
    "Rheumatology": 112,
-   "Psychiatry": 110,
+   "Psychiatry": 111,
    "Neurology": 109,
    "General Surgery": 100,
    "Endocrinology": 97,
+   "Surgery": 97,
    "Dermatology": 96,
    "Orthopedics": 96,
    "Gastroenterology": 95,
-   "Surgery": 95,
    "Ophthalmology": 94,
    "Pulmonology": 94,
    "Hematology": 89,
@@ -41,8 +41,8 @@ window.MEDKOS_INDEX = {
    "산부인과": 56,
    "순환기": 32,
    "호흡기": 25,
+   "Physiology": 23,
    "소화기": 23,
-   "Physiology": 22,
    "소아과": 20,
    "병리·조직학": 19,
    "Pharmacology": 17,
@@ -57,8 +57,8 @@ window.MEDKOS_INDEX = {
    "피부과": 15,
    "예방의학·역학": 14,
    "외과": 13,
+   "Immunology": 12,
    "Internal Medicine": 12,
-   "Immunology": 11,
    "근골격·류마티스": 10,
    "약리": 10,
    "정신과": 10,
@@ -78,13 +78,144 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2647,
-   "medium": 1101,
+   "high": 2653,
+   "medium": 1107,
    "low": 50
   },
-  "tagCount": 4877
+  "tagCount": 4897
  },
  "docs": [
+  {
+   "id": "usmle-2026-0217",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Five Weeks of Sleeping Most of the Day and Feeling Worthless in a 27-Year-Old Hospitalized Two Years Ago After Eight Nearly Sleepless Days",
+   "tags": [
+    "bipolar-i-disorder",
+    "bipolar-depression",
+    "antidepressant-induced-mania",
+    "quetiapine",
+    "valproate-teratogenicity",
+    "pharmacotherapy"
+   ],
+   "source": "USMLE-style / MedKOS (Yatham LN, et al. Canadian Network for Mood and Anxiety Treatments (CANMAT) and International Society for Bipolar Disorders (ISBD) 2018 guidelines for the management of patients with bipolar disorder. Bipolar Disord. 2018;20:97-170; American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders. 5th ed, text revision (DSM-5-TR). 2022 — Bipolar I disorder)",
+   "confidence": "high",
+   "date": "2026-10-20",
+   "path": "content/usmle/usmle-2026-0217.md",
+   "snippet": "A 27 year old woman comes to the physician because of low mood for 5 weeks. She sleeps 12 hours a day, has stopped going to her pottery class, feels worthless and has trouble concentrating at work. She sometimes thinks it would be better no",
+   "text": "Psychiatry Five Weeks of Sleeping Most of the Day and Feeling Worthless in a 27-Year-Old Hospitalized Two Years Ago After Eight Nearly Sleepless Days bipolar-i-disorder bipolar-depression antidepressant-induced-mania quetiapine valproate-teratogenicity pharmacotherapy USMLE-style / MedKOS (Yatham LN, et al. Canadian Network for Mood and Anxiety Treatments (CANMAT) and International Society for Bipolar Disorders (ISBD) 2018 guidelines for the management of patients with bipolar disorder. Bipolar Disord. 2018;20:97-170; American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders. 5th ed, text revision (DSM-5-TR). 2022 — Bipolar I disorder) A 27 year old woman comes to the physician because of low mood for 5 weeks. She sleeps 12 hours a day, has stopped going to her pottery class, feels worthless and has trouble concentrating at work. She sometimes thinks it would be better not to wake up but has no plan or intent to harm herself. Two years ago, she was hospitalized after 8 days during which she slept 2 to 3 hours a night without feeling tired, spoke so rapidly that others could not interrupt her, charged $9,000 to credit cards for a business she said would make her famous, and was brought in by her sister. She took a medication for 3 months after discharge and then stopped it on her own; she has had no mood episodes since then until now. She drinks alcohol rarely and does not use other substances. She is sexually active with a male partner and uses condoms inconsistently. Her vital signs are shown. BMI is 23 kg/m2. Mental status examination shows psychomotor slowing and a constricted, sad affect. Her thought process is linear, and she has no delusions or hallucinations. Laboratory results are shown. Which of the following is the most appropriate pharmacotherapy? A. Sertraline B. Bupropion C. Haloperidol D. Quetiapine E. Valproate 2년 전 8일 동안 수면 욕구 감소·말이 빨라짐·과대 사고·무모한 소비로 입원했다 — 조증 삽화이므로 진단은 제1형 양극성 장애다. 지금은 5주간의 주요 우울 삽화(과다 수면·흥미 상실·무가치감·집중 곤란·수동적 죽음 사고)이고 정신병적 증상은 없다 — 제1형 양극성 장애의 우울 삽화. 항우울제 단독 투여는 양극성 우울에 효과가 뚜렷하지 않고 조증 전환·급속 순환 위험이 있어 권하지 않는다. 미국 FDA 승인과 CANMAT/ISBD 지침의 1차 약은 퀘티아핀(또는 루라시돈·카리프라진·루메이트페론 등)이다. 발프로산은 양극성 우울에 대한 근거가 약하고, 피임이 불확실한 가임기 여성에게는 기형 유발 위험 때문에 피한다. 할로페리돌은 조증·정신병 증상에 쓰고 우울 삽화에는 쓰지 않는다."
+  },
+  {
+   "id": "usmle-2026-0216",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "A Rising Antibody Titer at 24 Weeks in an Rh-Negative Woman Whose First Child Was Born at Home Abroad",
+   "tags": [
+    "rh-alloimmunization",
+    "anti-d",
+    "critical-titer",
+    "fetal-anemia",
+    "mca-doppler",
+    "prenatal-care",
+    "test-selection"
+   ],
+   "source": "USMLE-style / MedKOS (American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 192: Management of Alloimmunization During Pregnancy. Obstet Gynecol. 2018;131:e82-e90; Williams Obstetrics 26e — Fetal disorders: red cell alloimmunization)",
+   "confidence": "high",
+   "date": "2026-10-20",
+   "path": "content/usmle/usmle-2026-0216.md",
+   "snippet": "A 29 year old woman, gravida 2, para 1, at 24 weeks' gestation comes to the physician for a prenatal visit. Her first child was born 3 years ago at home in another country; she did not receive any injection during or after that pregnancy. S",
+   "text": "Obstetrics & Gynecology A Rising Antibody Titer at 24 Weeks in an Rh-Negative Woman Whose First Child Was Born at Home Abroad rh-alloimmunization anti-d critical-titer fetal-anemia mca-doppler prenatal-care test-selection USMLE-style / MedKOS (American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 192: Management of Alloimmunization During Pregnancy. Obstet Gynecol. 2018;131:e82-e90; Williams Obstetrics 26e — Fetal disorders: red cell alloimmunization) A 29 year old woman, gravida 2, para 1, at 24 weeks' gestation comes to the physician for a prenatal visit. Her first child was born 3 years ago at home in another country; she did not receive any injection during or after that pregnancy. She feels well and reports normal fetal movements. Her vital signs are shown. Fundal height is 24 cm. Fetal heart tones are 145/min. Ultrasonography today shows a single fetus with biometry appropriate for gestational age, normal anatomy, a normal amount of amniotic fluid, and no ascites, pleural or pericardial effusion, or skin edema. Laboratory results are shown. Which of the following is the most appropriate next step in management? A. Administration of Rh(D) immune globulin B. Doppler measurement of fetal middle cerebral artery peak systolic velocity C. Repeat maternal anti D titer in 4 weeks D. Amniocentesis for spectrophotometric analysis of amniotic fluid bilirubin E. Percutaneous umbilical blood sampling with intrauterine transfusion Rh(D) 음성 산모의 항체 선별 검사에서 항 D 가 확인되었다 — 첫 출산 뒤 Rh(D) 면역글로불린을 받지 못해 이미 감작(동종면역)되었다. 감작된 산모에게 면역글로불린은 소용이 없다. 항 D 역가가 1:4 에서 1:64 로 올라 임계 역가(대개 1:8~1:32, 많은 기관에서 1:16)를 넘었고, 배우자가 RHD 동형접합이라 태아는 Rh(D) 양성이다. 임계 역가를 넘으면 역가를 더 재는 것은 태아 상태를 반영하지 못하므로, 태아 빈혈을 비침습적으로 감시하는 중대뇌동맥 최고 수축기 속도(MCA PSV) 도플러를 1~2주 간격으로 시작한다. 양수천자로 빌리루빈을 재는 방법은 이것으로 대체되었고, 제대혈 채취·자궁 내 수혈은 MCA PSV 가 1.5 MoM 을 넘거나 태아수종이 있을 때 한다."
+  },
+  {
+   "id": "usmle-2026-0215",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "A Blood Pressure of 84/52 After a Motorcycle Crash With Clear Lungs, a Negative FAST and a Painful Pubic Symphysis",
+   "tags": [
+    "trauma",
+    "hemorrhagic-shock",
+    "pelvic-fracture",
+    "open-book",
+    "pelvic-binder",
+    "fast",
+    "atls"
+   ],
+   "source": "USMLE-style / MedKOS (American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. 2018 — Shock; Abdominal and pelvic trauma; Coccolini F, et al. Pelvic trauma: WSES classification and guidelines. World J Emerg Surg. 2017;12:5)",
+   "confidence": "high",
+   "date": "2026-10-20",
+   "path": "content/usmle/usmle-2026-0215.md",
+   "snippet": "A 34 year old man is brought to the emergency department 25 minutes after he was thrown from his motorcycle at high speed. He is alert and speaking in full sentences. His vital signs are shown. Breath sounds are equal bilaterally, and the t",
+   "text": "Surgery A Blood Pressure of 84/52 After a Motorcycle Crash With Clear Lungs, a Negative FAST and a Painful Pubic Symphysis trauma hemorrhagic-shock pelvic-fracture open-book pelvic-binder fast atls USMLE-style / MedKOS (American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. 2018 — Shock; Abdominal and pelvic trauma; Coccolini F, et al. Pelvic trauma: WSES classification and guidelines. World J Emerg Surg. 2017;12:5) A 34 year old man is brought to the emergency department 25 minutes after he was thrown from his motorcycle at high speed. He is alert and speaking in full sentences. His vital signs are shown. Breath sounds are equal bilaterally, and the trachea is midline. Two large bore intravenous catheters are placed; 1 L of warmed crystalloid is infused, the massive transfusion protocol is activated, and transfusion of uncrossmatched type O red blood cells is started. A chest x ray shows no pneumothorax, hemothorax or mediastinal widening. Focused assessment with sonography for trauma (FAST) shows no fluid in the pericardium, the hepatorenal or splenorenal spaces, or the pelvis. The abdomen is mildly tender without distention or guarding. There is marked tenderness over the pubic symphysis, and there is bruising of the perineum. Neurologic examination shows no deficits. An anteroposterior radiograph of the pelvis shows 4 cm of widening of the pubic symphysis and widening of both sacroiliac joints. After the crystalloid and the first unit of blood, his blood pressure is 86/54 mm Hg and his pulse is 126/min. Laboratory results are shown. Which of the following is the most appropriate next step in management? A. Emergency exploratory laparotomy B. CT of the abdomen and pelvis with contrast C. Pelvic angiography with embolization D. Additional 2 L crystalloid bolus E. Circumferential pelvic binder 고속 오토바이 사고 뒤 저혈압·빈맥이 수액 1 L 와 적혈구 1단위에도 회복되지 않고 젖산·염기 결손이 올라 있다 — 진행 중인 출혈에 의한 출혈성 쇼크다. 흉부 X선이 깨끗하고 FAST 가 음성이라 흉강·복강 출혈 가능성은 낮고, 치골결합 4 cm 벌어짐과 양쪽 천장관절 벌어짐(open book, 전후 압박형 골반 골절)이 골반 뒤 정맥총·골절면 출혈의 근원이다. 혈역학적으로 불안정하므로 CT 실로 옮기지 않고, 소생실에서 바로 할 수 있는 원형 골반 고정대(대전자 높이)로 골반 용적을 줄이고 골절을 맞춰 출혈을 줄이는 것이 다음 처치다. 그 뒤에도 불안정하면 골반 전복막 패킹이나 혈관색전술, 외고정으로 넘어간다."
+  },
+  {
+   "id": "usmle-2026-0214",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Iron Deficiency and a Mucinous Ascending Colon Mass in a 42-Year-Old Whose Mother Had Endometrial Cancer",
+   "tags": [
+    "colorectal-cancer",
+    "lynch-syndrome",
+    "mismatch-repair",
+    "microsatellite-instability",
+    "mlh1",
+    "braf",
+    "hereditary-cancer"
+   ],
+   "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — The gastrointestinal tract: colonic neoplasms, hereditary nonpolyposis colorectal cancer and the microsatellite instability pathway; NCCN Clinical Practice Guidelines in Oncology: Genetic/Familial High-Risk Assessment — Colorectal, Endometrial, and Gastric)",
+   "confidence": "high",
+   "date": "2026-10-20",
+   "path": "content/usmle/usmle-2026-0214.md",
+   "snippet": "A 42 year old woman comes to the physician because of fatigue and exertional dyspnea for 3 months. She has regular, light menstrual periods. She does not smoke. Her mother was diagnosed with endometrial cancer at the age of 49 years, her ma",
+   "text": "Pathology Iron Deficiency and a Mucinous Ascending Colon Mass in a 42-Year-Old Whose Mother Had Endometrial Cancer colorectal-cancer lynch-syndrome mismatch-repair microsatellite-instability mlh1 braf hereditary-cancer USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — The gastrointestinal tract: colonic neoplasms, hereditary nonpolyposis colorectal cancer and the microsatellite instability pathway; NCCN Clinical Practice Guidelines in Oncology: Genetic/Familial High-Risk Assessment — Colorectal, Endometrial, and Gastric) A 42 year old woman comes to the physician because of fatigue and exertional dyspnea for 3 months. She has regular, light menstrual periods. She does not smoke. Her mother was diagnosed with endometrial cancer at the age of 49 years, her maternal uncle with colon cancer at 51 years, and her maternal grandfather with colon cancer at 63 years. Her vital signs are shown. She has conjunctival pallor. There are no pigmented macules on the lips or buccal mucosa. The abdomen is soft and nontender. Colonoscopy shows an ulcerated mass in the ascending colon and two small tubular adenomas in the sigmoid colon; the rest of the colon is free of polyps. Biopsy of the mass shows a poorly differentiated adenocarcinoma with abundant extracellular mucin and numerous tumor infiltrating lymphocytes. Laboratory results are shown. Which of the following is the most likely underlying cause of this patient's cancer? A. Germline mutation in APC B. Somatic hypermethylation of the MLH1 promoter C. Germline mutation in a DNA mismatch repair gene D. Biallelic germline mutations in MUTYH E. Germline mutation in STK11 우측 결장의 점액성·저분화 선암 + 종양 침윤 림프구 + MLH1·PMS2 핵 염색 소실은 불일치 복구(mismatch repair) 결손, 즉 미세위성 불안정성(MSI high) 종양이다. MLH1 소실의 원인은 두 갈래다 — 노인의 산발성 종양에서 흔한 MLH1 프로모터 체세포 과메틸화(대개 BRAF V600E 동반)와, 생식세포 불일치 복구 유전자 돌연변이(린치 증후군). 이 환자는 42세로 젊고 BRAF V600E 가 없으며, 두 세대에 걸친 세 친척이 린치 관련 암(자궁내막암 49세·대장암 51세·63세)을 앓았으므로 생식세포 돌연변이가 가장 가능성이 높다. 선종은 2개뿐이라 APC·MUTYH 용종증 증후군이 아니고, 점막 색소반이 없어 Peutz Jeghers 증후군 가능성도 낮다."
+  },
+  {
+   "id": "usmle-2026-0213",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Recurrent Skin Abscesses That Are Barely Warm, an Itchy Rash Since Infancy and Lung Cysts After Pneumonia in a 9-Year-Old",
+   "tags": [
+    "primary-immunodeficiency",
+    "hyper-ige-syndrome",
+    "stat3",
+    "th17",
+    "il-17",
+    "staphylococcus-aureus",
+    "pneumatocele",
+    "mechanism"
+   ],
+   "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Primary (inherited) immune deficiencies; Janeway's Immunobiology 9e — Inherited immunodeficiency diseases: defects in Th17 responses; Harrison's Principles of Internal Medicine 21e — Primary immune deficiency diseases)",
+   "confidence": "high",
+   "date": "2026-10-20",
+   "path": "content/usmle/usmle-2026-0213.md",
+   "snippet": "A 9 year old boy is brought to the physician because of another skin abscess on his neck. Since infancy he has had more than 10 abscesses on the scalp, neck and axillae; his parents say they were swollen and full of pus but barely warm and ",
+   "text": "Immunology Recurrent Skin Abscesses That Are Barely Warm, an Itchy Rash Since Infancy and Lung Cysts After Pneumonia in a 9-Year-Old primary-immunodeficiency hyper-ige-syndrome stat3 th17 il-17 staphylococcus-aureus pneumatocele mechanism USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Primary (inherited) immune deficiencies; Janeway's Immunobiology 9e — Inherited immunodeficiency diseases: defects in Th17 responses; Harrison's Principles of Internal Medicine 21e — Primary immune deficiency diseases) A 9 year old boy is brought to the physician because of another skin abscess on his neck. Since infancy he has had more than 10 abscesses on the scalp, neck and axillae; his parents say they were swollen and full of pus but barely warm and not very painful. Incision and drainage has repeatedly yielded pus that grew Staphylococcus aureus. He has had an itchy, scaly rash on his face and trunk since the age of 2 weeks. He has had pneumonia twice; after the second episode, CT of the chest showed thin walled, air filled cysts in the right lung that persist 6 months later. There was no delay in separation of the umbilical cord. Examination shows a 2 cm fluctuant, nontender mass on the posterior neck with little surrounding redness, lichenified eczematous plaques, and a broad nasal bridge. Two primary incisors are still in place, with the permanent incisors erupting behind them. There are no petechiae, and his hair and skin are normally pigmented. Laboratory results are shown. A defect in which of the following is most likely responsible for this patient's susceptibility to infection? A. STAT3 dependent differentiation of IL 17–producing helper T cells B. NADPH oxidase–dependent oxidative burst in phagocytes C. CD18 dependent adhesion of neutrophils to vascular endothelium D. WASP dependent actin reorganization in lymphocytes and platelets E. LYST dependent trafficking of lysosomes in phagocytes 영아기부터 이어진 습진 + 열감·통증이 적은 황색포도알균 피부 농양(cold abscess) + 폐렴 뒤 남은 공기 낭(pneumatocele) + 젖니가 빠지지 않음 + 넓은 코뿌리 + IgE 극단적 상승·호산구 증가는 상염색체 우성 고IgE 증후군(Job 증후군)이다. 원인은 STAT3 기능 소실 돌연변이로, IL 6·IL 23 신호가 전달되지 않아 Th17 세포 분화가 막힌다. IL 17·IL 22 가 부족하면 피부·기도 상피에서 호중구를 불러오는 케모카인과 항균 펩타이드가 줄어 황색포도알균·칸디다 감염이 반복되고, 염증 반응이 약해 농양이 차갑다. 혈소판 수와 크기가 정상이라 Wiskott Aldrich 증후군, DHR 검사가 정상이라 만성 육아종병, 고름이 나오고 탯줄 탈락 지연이 없어 백혈구 부착 결손증의 가능성은 낮다."
+  },
+  {
+   "id": "usmle-2026-0212",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Two Spells of Lightheadedness, a Pulse of 38 and Neck Pulsations That Come Only With Some Beats in a 76-Year-Old",
+   "tags": [
+    "jugular-venous-pulse",
+    "cannon-a-wave",
+    "av-dissociation",
+    "complete-heart-block",
+    "cardiac-cycle",
+    "ecg"
+   ],
+   "source": "USMLE-style / MedKOS (Guyton and Hall Textbook of Medical Physiology 14e — The heart as a pump: atrial pressure waves (a, c, v); Harrison's Principles of Internal Medicine 21e — Physical examination of the cardiovascular system: jugular venous pulse; Bradyarrhythmias: atrioventricular conduction disturbances)",
+   "confidence": "high",
+   "date": "2026-10-20",
+   "path": "content/usmle/usmle-2026-0212.md",
+   "snippet": "A 76 year old woman comes to the emergency department because of fatigue for 2 weeks and two episodes of lightheadedness while standing in her kitchen. She did not lose consciousness. She has hypertension treated with amlodipine and takes n",
+   "text": "Physiology Two Spells of Lightheadedness, a Pulse of 38 and Neck Pulsations That Come Only With Some Beats in a 76-Year-Old jugular-venous-pulse cannon-a-wave av-dissociation complete-heart-block cardiac-cycle ecg USMLE-style / MedKOS (Guyton and Hall Textbook of Medical Physiology 14e — The heart as a pump: atrial pressure waves (a, c, v); Harrison's Principles of Internal Medicine 21e — Physical examination of the cardiovascular system: jugular venous pulse; Bradyarrhythmias: atrioventricular conduction disturbances) A 76 year old woman comes to the emergency department because of fatigue for 2 weeks and two episodes of lightheadedness while standing in her kitchen. She did not lose consciousness. She has hypertension treated with amlodipine and takes no other medications. Her vital signs are shown. While she sits at 45 degrees, the jugular venous pulse shows intermittent, abrupt, very large outward pulsations that occur with some heartbeats but not with others. The intensity of the first heart sound varies from beat to beat. There is no murmur, and the lungs are clear. There is no peripheral edema. Laboratory results are shown. A rhythm strip is shown. Which of the following best explains the neck vein finding? A. Backflow of blood through an incompetent tricuspid valve during ventricular systole B. Forceful right atrial emptying into a hypertrophied, stiff right ventricle C. Rapid early diastolic filling of a right ventricle restricted by the pericardium D. Right atrial contraction against a closed tricuspid valve E. Increased venous return generated by the large stroke volume of each slow beat 리듬 스트립에서 P 파는 빠르고 규칙적으로, 넓은 QRS 는 느리고 규칙적으로 서로 관계없이 진행한다 — 완전 방실차단(방실 해리)이다. 심방과 심실이 따로 수축하므로 어떤 박동에서는 심방 수축이 심실 수축 중(삼첨판이 닫혀 있을 때)에 떨어진다. 그러면 우심방 혈액이 심실로 가지 못하고 경정맥으로 역류해 거대한 a 파(cannon a wave)가 생긴다. 두 리듬의 시점 관계가 박동마다 바뀌므로 거대 파는 일부 박동에서만 보이고, 같은 이유로 제1심음 세기도 박동마다 달라진다. 삼첨판 역류·우심실 비대·심막 수축은 구조 이상이라 매 박동 같은 모양으로 나타난다."
+  },
   {
    "id": "kmle-2026-1505",
    "type": "kmle",
@@ -719,6 +850,108 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-19.md",
    "snippet": "오늘의 학습 (2026 10 19 · final review) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 39일 · Tagging 2까지 0일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-19 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 19 · final review) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 39일 · Tagging 2까지 0일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0797",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of clinical oncology",
+   "confidence": "medium",
+   "date": "2026-10-18",
+   "path": "content/papers/2026/2026-10-18_paper-2026-0797_sex_differences_in_postoperative_outcomes_for_men_and_women_.md",
+   "snippet": "Title Sex Differences in Postoperative Outcomes for Men and Women With Colon Cancer in the US Military Health System Authors Eaglehouse Yvonne L, Gage Michele M, Darmon Sarah, Krell Robert W, Vicente Diego A, Shriver Craig D, Zhu Kangmin Jo",
+   "text": "Surgery scraped pubmed PubMed / American journal of clinical oncology Title Sex Differences in Postoperative Outcomes for Men and Women With Colon Cancer in the US Military Health System Authors Eaglehouse Yvonne L, Gage Michele M, Darmon Sarah, Krell Robert W, Vicente Diego A, Shriver Craig D, Zhu Kangmin Journal / DOI American journal of clinical oncology · DOI: 10.1097/COC.0000000000001390 · PMID: 42893597 https://pubmed.ncbi.nlm.nih.gov/42893597/ Abstract OBJECTIVES: Biological, behavioral, and health care access differences between men and women may contribute to differences in colon cancer diagnosis and treatment. We compared postoperative outcomes between men and women with colon cancer in the universal access Military Health System (MHS) to better understand sex based differences in surgery. METHODS: We identified patients with stage I to III colon adenocarcinoma receiving surgery in the Military Cancer Epidemiology (MilCanEpi) database between 2001 and 2014. Thirty day postoperative outcomes included general cardiovascular and respiratory complications; infections (surgical site [SSI], urinary tract [UTI], and systemic); gastrointestinal (GI) complications (hemorrhage, bowel obstruction, ileus, intra abdominal abscess, and anastomotic leakage); and hospital readmissions. Modified Poisson regression estimated adjusted rate ratios (ARRs) and 95% CIs in association with biological sex for the outcomes. RESULTS: The study included 1073 male (mean age=59.5±13.5 y) and 794 female (mean age=59.6±13.5 y) patients. In the 30 day postoperative period, general complication rates were not different by sex (ARR=1.03, 95% CI: 0.76 1.40 for women vs. men). Female sex was associated with higher rates of UTI (ARR=2.44, 95% CI: 1.63 3.65) and lower rates of GI complications (ARR=0.79, 95% CI: 0.69 0.90) relative to men. There were no sex differences in 30 day hospital readmissions (ARR=0.90, 95% CI: 0.76 1.08 for women vs. men). CONCLUSIONS: In the MHS, female sex was associated with higher rates of UTI and lower rates of GI complications relative to men undergoing colon cancer surgery. Factors other than health care access, such as biological differences in pelvic anatomy, physiology, or immune responses, may contribute to observed differences. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0796",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical oral investigations",
+   "confidence": "medium",
+   "date": "2026-10-18",
+   "path": "content/papers/2026/2026-10-18_paper-2026-0796_pulpotomy_of_deciduous_molars_with_deep_caries_using_three_d.md",
+   "snippet": "Title Pulpotomy of deciduous molars with deep caries using three different hydraulic calcium silicate cements: a short term pilot randomized controlled split mouth study Authors Urmann Ulrike, Schenke Isabelle M, Hiller Karl Anton, Buchalla",
+   "text": "Pediatrics scraped pubmed PubMed / Clinical oral investigations Title Pulpotomy of deciduous molars with deep caries using three different hydraulic calcium silicate cements: a short term pilot randomized controlled split mouth study Authors Urmann Ulrike, Schenke Isabelle M, Hiller Karl Anton, Buchalla Wolfgang, Bekes Katrin, Widbiller Matthias, Schenke Frederike, Cieplik Fabian, et al. Journal / DOI Clinical oral investigations · DOI: 10.1007/s00784 026 07116 y · PMID: 42891840 https://pubmed.ncbi.nlm.nih.gov/42891840/ Abstract OBJECTIVES: This randomized, controlled split mouth study evaluated the short term clinical survival of three hydraulic calcium silicate cements for pulp capping after pulpotomy in primary molars under general anesthesia. MATERIALS AND METHODS: Thirty three children aged 2 to 6 years, each with three carious primary molars (ICDAS 4 6), were recruited for treatment under general anesthesia. Following pulpotomy, the pulp was randomly covered with one of the materials: ProRoot MTA (Dentsply Sirona), Biodentine (Septodont), or TotalFill BC RRM Putty (FKG). The teeth were restored with steel crowns. Clinical survival rate at 5 and 10 months, application time, treatment costs and oral health related quality of life (OHRQoL) were evaluated using the ECOHIS G questionnaire. Data analysis was performed using non parametric methods (α = 0.05). RESULTS: All 84 treated teeth remained in situ for up to 10 months without clinical symptoms. TotalFill BC RRM Putty had the significantly shortest application time (median 75.5 s; p ≤ 0.001) compared to Biodentine (259 s) and ProRoot MTA (200.5 s). Biodentine resulted in the significantly lowest treatment cost (median €42.45; p ≤ 0.001), ProRoot MTA in the highest (€74.37; TotalFill BC RRM Putty: €60.01). The treatments generally led to improved OHRQoL (Median ECOHIS G score: initial 5, after 5 months 4, after 10 months 2.5). CONCLUSIONS: All investigated hydraulic calcium silicate cements showed no differences in short term clinical outcomes after pulpotomy in primary molars. CLINICAL RELEVANCE: Material selection may therefore be guided by practical factors such as handling time and treatment costs, while long term outcomes, which require further investigations, should be considered. German Clinical Trials Registry: Ref. DRKS00030041. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0795",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Small (Weinheim an der Bergstrasse, Germany)",
+   "confidence": "medium",
+   "date": "2026-10-18",
+   "path": "content/papers/2026/2026-10-18_paper-2026-0795_dual_metabolic_inhibition_via_vanadium_no_synergistic_nanopl.md",
+   "snippet": "Title Dual Metabolic Inhibition Via Vanadium NO Synergistic Nanoplatform Potentiates Cancer Immunotherapy Authors Tian Ruizhi, Song Ze, Lan Zhengyi, Liu Qing, Cheng Ziyi, Han Bicheng, Ma Ming, Chen Hangrong Journal / DOI Small (Weinheim an ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Small (Weinheim an der Bergstrasse, Germany) Title Dual Metabolic Inhibition Via Vanadium NO Synergistic Nanoplatform Potentiates Cancer Immunotherapy Authors Tian Ruizhi, Song Ze, Lan Zhengyi, Liu Qing, Cheng Ziyi, Han Bicheng, Ma Ming, Chen Hangrong Journal / DOI Small (Weinheim an der Bergstrasse, Germany) · DOI: 10.1002/smll.76361 · PMID: 42893571 https://pubmed.ncbi.nlm.nih.gov/42893571/ Abstract Immunotherapy has emerged as a pivotal strategy in cancer treatment. However, tumor metabolic reprogramming not only promotes cancer cell survival but also fosters an immunosuppressive tumor microenvironment (TME), thereby hindering immune activation. To address these challenges, we developed a novel multifunctional hybrid nanoplatform, termed VTLM, via microfluidics assisted self assembly of bioactive vanadium species and an arginine based nitric oxide (NO) donor. This nanoplatform synergistically modulates tumor metabolism to potentiate antitumor immunity. Specifically, we observed that vanadium species in VTLM reduce pyruvate kinase M2 (PKM2) expression and enzymatic activity, which may contribute to the suppression of tumor glycolysis, while tumor cell targeted NO release induces mitochondrial damage, ultimately enforcing a dual metabolic blockade. This strategy overcomes the metabolic plasticity of tumor cells, a major obstacle in single pathway metabolic targeting. Importantly, VTLM induced metabolic collapse not only drives lactate depletion within the TME but also promotes immunogenic cell death, thereby reversing immunosuppression and amplifying antitumor responses. Furthermore, VTLM exhibited marked therapeutic efficacy in a 4T1 subcutaneous tumor model, achieving an 80.7% tumor weight based inhibition rate alongside robust intratumoral immune activation. Collectively, this study establishes a nanoplatform centered on multi metabolic regulation, which may hold potential for further preclinical evaluation as a strategy to enhance cancer immunotherapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0794",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of investigative medicine high impact case reports",
+   "confidence": "medium",
+   "date": "2026-10-18",
+   "path": "content/papers/2026/2026-10-18_paper-2026-0794_fulminant_seronegative_systemic_lupus_erythematosus_with_cla.md",
+   "snippet": "Title Fulminant Seronegative Systemic Lupus Erythematosus With Class IV/V Lupus Nephritis and Multisystem Involvement Authors Montoya Luisa, Martinez Abdel, Simono Krystal, Alvarez Luis, Cabrera Jean Luis, Cantazaro Brandon, Bello Fatimah J",
+   "text": "Nephrology scraped pubmed PubMed / Journal of investigative medicine high impact case reports Title Fulminant Seronegative Systemic Lupus Erythematosus With Class IV/V Lupus Nephritis and Multisystem Involvement Authors Montoya Luisa, Martinez Abdel, Simono Krystal, Alvarez Luis, Cabrera Jean Luis, Cantazaro Brandon, Bello Fatimah Journal / DOI Journal of investigative medicine high impact case reports · DOI: 10.1177/23247096261501840 · PMID: 42893514 https://pubmed.ncbi.nlm.nih.gov/42893514/ Abstract Seronegative systemic lupus erythematosus (SLE) poses a diagnostic challenge, particularly when patients develop organ threatening disease despite negative traditional serologies. We report a fulminant case in a 24 year old woman with congenital atrioventricular (AV) block, chronic pancytopenia, chronic kidney disease (CKD), and morbid obesity, who presented with progressive anasarca, dyspnea, dizziness, and cough. Laboratory evaluation revealed severe pancytopenia, nephrotic range proteinuria 11 13 g/day (reference range: 0 150 mg/24 hours), and acute kidney injury. Renal biopsy demonstrated Class IV proliferative and Class V membranous lupus nephritis, despite negative antinuclear antibodies (ANA), anti double stranded DNA (anti dsDNA) antibodies, anti Smith (anti Sm) antibodies, anti Sjögren's syndrome related antigen A (SSA) and antigen B (SSB) antibodies, and normal complement levels. Within 24 hours, she developed hypoxia, hemoglobin drop, and a right subcapsular renal hematoma. Echocardiography revealed dilated cardiomyopathy, severe aortic insufficiency with valvular vegetation, and suspected pacing induced cardiomyopathy, progressing to cardiogenic shock requiring inotropes. She developed necrotizing mucocutaneous lesions, vasculitic purpura, pseudomembranous colitis secondary to Clostridioides difficile (C. difficile), and microangiopathic hemolysis. Despite high dose steroids and mycophenolate, her condition deteriorated, necessitating transfer for plasmapheresis and rituximab. Seronegative SLE represents up to 5% of cases and is often associated with severe, multisystem involvement. Seronegativity may reflect low antibody titers, immune complex sequestration, or assay variability. This case underscores that negative serologies do not exclude SLE, and early recognition through clinical suspicion and tissue biopsy is critical. Aggressive immunosuppression and multidisciplinary care are essential in managing fulminant seronegative lupus with severe nephritis, vasculopathy, and systemic complications. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0793",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of reproductive immunology (New York, N.Y. : 1989)",
+   "confidence": "medium",
+   "date": "2026-10-18",
+   "path": "content/papers/2026/2026-10-18_paper-2026-0793_beyond_the_silent_endometrium_dysbiosis_immune_subversion_an.md",
+   "snippet": "Title Beyond the Silent Endometrium: Dysbiosis, Immune Subversion and Antimicrobial Resistance in Chronic Endometritis: A Narrative Review Authors Moftah Ahmed Wael Journal / DOI American journal of reproductive immunology (New York, N.Y. :",
+   "text": "Infectious Disease scraped pubmed PubMed / American journal of reproductive immunology (New York, N.Y. : 1989) Title Beyond the Silent Endometrium: Dysbiosis, Immune Subversion and Antimicrobial Resistance in Chronic Endometritis: A Narrative Review Authors Moftah Ahmed Wael Journal / DOI American journal of reproductive immunology (New York, N.Y. : 1989) · DOI: 10.1111/aji.70337 · PMID: 42893528 https://pubmed.ncbi.nlm.nih.gov/42893528/ Abstract Chronic endometritis (CE) represents an insidious and frequently underdiagnosed inflammatory condition of the endometrial stroma, increasingly recognized as a principal contributor to unexplained infertility, recurrent implantation failure and recurrent pregnancy loss. Historically relegated to a histological curiosity, CE has been reframed as a biologically complex disorder characterized by the convergence of endometrial microbial dysbiosis, immunological subversion, and, increasingly, antimicrobial resistance (AMR). This narrative review synthesizes contemporary evidence examining the mechanistic interplay between aberrant endometrial microbiota composition, disrupted innate and adaptive immune responses, and the emergence of antibiotic resistant endometrial pathogens, collectively undermining endometrial receptivity and embryo implantation. We critically appraise the diagnostic limitations inherent to current histological and microbiological standards, and examine the translational implications of next generation sequencing for the characterization of the endometrial microbiome. Furthermore, we interrogate the therapeutic paradox posed by AMR in clinical CE management, and delineate future research trajectories encompassing microbiome targeted therapeutics, immunomodulatory strategies, and the ethical dimensions of emerging diagnostic and treatment frameworks. A convergent pathophysiological model is proposed in which microbial dysbiosis, immune dysregulation, and AMR form a self reinforcing axis of reproductive failure, demanding integrated diagnostic and therapeutic paradigms. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0792",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BioMed research international",
+   "confidence": "medium",
+   "date": "2026-10-18",
+   "path": "content/papers/2026/2026-10-18_paper-2026-0792_compound_astragalus_oral_liquid_attenuates_ventricular_remod.md",
+   "snippet": "Title Compound Astragalus Oral Liquid Attenuates Ventricular Remodeling in Heart Failure After Myocardial Infarction via the AMPK/TGF β/Smad Signaling Pathway Authors Yang Zhijun, Huang Fengfan, Xu Ji, Gu Ning, Liu Fuming Journal / DOI BioM",
+   "text": "Cardiology scraped pubmed PubMed / BioMed research international Title Compound Astragalus Oral Liquid Attenuates Ventricular Remodeling in Heart Failure After Myocardial Infarction via the AMPK/TGF β/Smad Signaling Pathway Authors Yang Zhijun, Huang Fengfan, Xu Ji, Gu Ning, Liu Fuming Journal / DOI BioMed research international · DOI: 10.1155/bmri/1276968 · PMID: 42893564 https://pubmed.ncbi.nlm.nih.gov/42893564/ Abstract BACKGROUND: Ventricular remodeling following acute myocardial infarction (AMI) is a critical cause of heart failure (HF). Compound Astragalus Oral Liquid (CAOL) is a traditional Chinese medicine formulation with anti inflammatory, antioxidant, and tonifying properties. However, its effects and underlying mechanisms in post acute myocardial infarction heart failure (AMI HF) remain unclear. OBJECTIVE: To evaluate the cardioprotective efficacy of CAOL in a rat model of AMI HF and elucidate the associated molecular mechanisms. METHODS: CAOL constituents were identified by UPLC Q TOF/MS, and network pharmacology predicted potential targets. A rat model of AMI induced HF was established by left anterior descending (LAD) coronary ligation. Animals received CAOL at low, medium, and high doses, or perindopril. Cardiac function, histopathology, serum oxidative and inflammatory markers, and myocardial molecular expression were assessed by echocardiography, staining, ELISA, Western blotting, and RT qPCR. RESULTS: CAOL treatment improved cardiac performance in a dose dependent manner, as evidenced by increased LVEF and improvements in LVIDd and LVIDs. Histological analyses demonstrated that CAOL reduced myocardial necrosis, inflammatory cell infiltration, and collagen deposition in a dose dependent fashion. CAOL also ameliorated serum markers of inflammation and oxidative stress. Mechanistically, CAOL modulated AMPK activity and inhibited TGF β1/Smad mediated profibrotic signaling, consistent with its antifibrotic and cytoprotective effects. CONCLUSIONS: CAOL ameliorates postinfarction ventricular remodeling and preserves cardiac function in a manner associated with AMPK activation and suppression of TGF β/Smad mediated fibrosis. These findings provide experimental evidence supporting CAOL as a potential therapeutic agent for AMI HF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0370",
