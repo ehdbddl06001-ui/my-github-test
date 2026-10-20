@@ -607,11 +607,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "28262f5f3e1168077723",
-   "version": 25,
-   "date": "2026-10-19",
+   "hash": "9bd76984220acd0596a5",
+   "version": 26,
+   "date": "2026-10-20",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 42,
+   "pages": 44,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -716,42 +716,48 @@
      "concept_hash": "642023f4a90db935",
      "concept_version": 1
     },
+    "cn.rheum.igg4-related-disease.diagnosis": {
+     "title": "IgG4 관련 질환 — 진단은 혈청값이 아니라 종합 판단",
+     "page": 34,
+     "concept_hash": "c4520c7b1f52acfe",
+     "concept_version": 1
+    },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 34,
+     "page": 36,
      "concept_hash": "6295d1fb01e16a3b",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 35,
+     "page": 37,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 37,
+     "page": 39,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 39,
+     "page": 41,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 41,
+     "page": 43,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "17c5fbc8efd1fbd805ed345a1afc0ea2",
-    "version": 25,
-    "uploaded": "2026-10-19T09:14:42+09:00"
+    "md5": "bc19c1c8134cf6170c1e619b6a2e091a",
+    "version": 26,
+    "uploaded": "2026-10-20T10:11:21+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -778,10 +784,11 @@
     "MedKOS_학습서_류마티스내과_v22_2026-10-16.pdf",
     "MedKOS_학습서_류마티스내과_v23_2026-10-17.pdf",
     "MedKOS_학습서_류마티스내과_v24_2026-10-18.pdf",
-    "MedKOS_학습서_류마티스내과_v25_2026-10-19.pdf"
+    "MedKOS_학습서_류마티스내과_v25_2026-10-19.pdf",
+    "MedKOS_학습서_류마티스내과_v26_2026-10-20.pdf"
    ],
    "changes": [
-    "새 단원: 사르코이드증 — 치료는 위험 장기·증상이 정한다"
+    "새 단원: IgG4 관련 질환 — 진단은 혈청값이 아니라 종합 판단"
    ]
   },
   "호흡기내과": {
@@ -1278,13 +1285,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "79874832ba6e462c2360dc105edd7de8",
+   "md5": "7f1c7f1832bb88c1db36ba40872f57ec",
    "version": null,
-   "uploaded": "2026-10-19T09:14:42+09:00"
+   "uploaded": "2026-10-20T10:11:21+09:00"
   }
  },
- "updated": "2026-10-19"
+ "updated": "2026-10-20"
 }

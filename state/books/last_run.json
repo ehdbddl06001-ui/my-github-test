@@ -1,5 +1,5 @@
 {
- "started": "2026-10-19T08:28:30+09:00",
+ "started": "2026-10-20T09:32:27+09:00",
  "built": [
   "류마티스내과"
  ],
@@ -49,7 +49,7 @@
  ],
  "layout_trials": {
   "류마티스내과": {
-   "tried": 450,
+   "tried": 470,
    "diagram_after_section": {
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
@@ -80,10 +80,14 @@
     "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#shrink": 1.0,
     "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#pad": 0,
     "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#col": false,
-    "u-cn-rheum-sarcoidosis-treat-or-observe": 17,
+    "u-cn-rheum-sarcoidosis-treat-or-observe": 15,
     "u-cn-rheum-sarcoidosis-treat-or-observe#shrink": 1.0,
     "u-cn-rheum-sarcoidosis-treat-or-observe#pad": 0,
     "u-cn-rheum-sarcoidosis-treat-or-observe#col": true,
+    "u-cn-rheum-igg4-related-disease-diagnosis": 12,
+    "u-cn-rheum-igg4-related-disease-diagnosis#shrink": 1.0,
+    "u-cn-rheum-igg4-related-disease-diagnosis#pad": 14,
+    "u-cn-rheum-igg4-related-disease-diagnosis#col": false,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 9,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
@@ -96,7 +100,7 @@
   }
  },
  "result": "ok",
- "finished": "2026-10-19T09:14:42+09:00",
+ "finished": "2026-10-20T10:11:21+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -105,17 +109,17 @@
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "17c5fbc8efd1fbd805ed345a1afc0ea2",
-    "archive": "MedKOS_학습서_류마티스내과_v25_2026-10-19.pdf"
+    "md5": "bc19c1c8134cf6170c1e619b6a2e091a",
+    "archive": "MedKOS_학습서_류마티스내과_v26_2026-10-20.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "79874832ba6e462c2360dc105edd7de8"
+    "md5": "7f1c7f1832bb88c1db36ba40872f57ec"
    }
   },
-  "at": "2026-10-19T09:14:42+09:00"
+  "at": "2026-10-20T10:11:21+09:00"
  }
 }
