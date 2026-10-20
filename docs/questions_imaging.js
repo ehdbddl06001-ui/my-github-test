@@ -2,6 +2,1532 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0385",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "영상 판독 — 유방암 수술 전 동적 조영증강 MRI 의 감산 영상",
+  "type": "영상 판독 — 유방암 수술 전 동적 조영증강 MRI 의 감산 영상",
+  "modality": "MR",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-20",
+  "vignette": "49세 여자가 2개월 전부터 한쪽 유방에 단단한 멍울이 만져져 왔다. 어머니가 50대에 유방암을 앓았다. 진찰에서 경계가 불분명한 3 cm 종괴가 만져지고 겨드랑 림프절은 만져지지 않는다. 유방촬영술은 치밀유방이고, 초음파 유도 중심부 바늘생검에서 침윤성 유방암으로 확진되었다. 수술 범위를 정하려고 유방 동적 조영증강 MRI 를 시행하였다. 조영 전 영상을 뺀 감산 최대강도투사 영상은 그림과 같다.",
+  "question": "이 영상에서 종괴가 주변 유방 조직보다 일찍 강하게 밝아지는 이유로 가장 적절한 것은?",
+  "options": [
+   "종괴 안의 높은 지방 함량",
+   "종괴 안 낭성 변화로 늘어난 자유수",
+   "종양 신생혈관의 증가와 높은 혈관 투과성",
+   "종양 세포 밀도가 높아 생긴 물 분자 확산 제한",
+   "종괴 안의 미세석회화"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 영상에서 유방 안에 불규칙한 종괴가 밝게 증강되고, 굵어진 혈관이 여러 갈래로 종괴 쪽에 모여든다. 감산 영상은 조영 전 신호를 뺀 것이므로 밝은 부분은 조영제가 들어간 곳이다. 유방암은 VEGF 로 새 혈관을 많이 만들고 그 혈관은 내피 사이가 성기어 조영제가 빨리 들어가고 빨리 빠지므로 일찍 강하게 밝아진다.\n- 원리: <b>왜 암이 일찍 밝아지는가</b>: 지름 1~2 mm 를 넘는 종양은 산소 공급을 위해 VEGF 를 분비해 새 혈관을 만든다(혈관신생). 이 신생혈관은 수가 많고 벽이 미숙해 내피 사이 틈이 넓으므로, 가돌리늄 조영제가 혈관 밖 세포외 공간으로 빠르게 새어 나간다. 그래서 조영 직후 1~2분 안에 강하게 증강되고, 늦은 시기에는 다시 빠져나가 신호가 떨어지는 <b>세척(washout)</b> 곡선을 보인다.<br> <b>감산 영상의 뜻</b>: 조영 후 영상에서 조영 전 영상을 빼면 원래 밝던 지방·물·출혈 신호는 사라지고 <b>조영제가 들어간 곳만</b> 남는다. 이것을 한 방향으로 겹쳐 보인 것이 최대강도투사(MIP)이며, 종괴와 그 종괴로 모여드는 혈관이 함께 보인다.<br> <b>수술 전 MRI 의 쓰임</b>: 치밀유방이나 소엽암에서 같은 쪽의 다른 병소·반대쪽 병소를 찾아 수술 범위를 정한다. 다만 위양성이 있어 새 병소는 생검으로 확인한 뒤 계획을 바꾼다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">신생혈관·투과성(정답)</th><th>확산 제한(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>보는 영상</td><td>동적 조영증강 T1 감산·MIP</td><td>확산강조영상(DWI)과 ADC 지도</td></tr> <tr><td>조영제</td><td><b>필요</b> — 조영제가 들어간 곳이 밝다</td><td>필요 없음 — 물 분자 움직임을 본다</td></tr> <tr><td>암에서 보이는 모양</td><td>일찍 강한 증강과 세척, 주변 혈관 증가</td><td>DWI 밝고 ADC 어두움</td></tr> </tbody></table> 두 소견 모두 암을 시사하지만, 그림이 조영 전 영상을 뺀 감산 영상이므로 밝기는 조영제 흡수, 곧 혈관 상태를 반영한다.\n- 오답 이유:\n  - ① 높은 지방 함량은 지방억제 없는 T1 영상에서 과오종·지방 괴사가 밝을 때 설명이 되지만, 감산 영상에서는 지방 신호가 빠진다.\n  - ② 자유수 증가는 T2 강조영상에서 낭종·점액성 병변이 밝을 때 설명이 되며, 조영 전 신호를 뺀 감산 영상에서는 남지 않는다.\n  - ④ 확산 제한은 조영제 없이 얻는 확산강조영상과 ADC 지도에서 종괴가 밝고 ADC 가 낮게 보일 때 설명이 되며, 감산 영상의 밝기와는 다르다.\n  - ⑤ 미세석회화는 유방촬영술에서 가늘고 갈래진 석회로 보일 때 의미가 있고, MRI 에서는 신호가 거의 없어 밝게 보이지 않는다.\n- 함정: 암이면 세포가 빽빽해 밝다고 생각해 확산 제한을 고르는 것 — 그림은 조영 전 신호를 뺀 감산 영상이라 밝기는 조영제가 들어간 혈관 상태를 뜻한다.\n- 학습목표: 유방 동적 조영증강 MRI 감산 영상에서 종괴가 일찍 강하게 증강되고 주변 혈관이 늘어난 소견을 종양 신생혈관의 증가와 높은 투과성으로 설명하고, 확산 제한·석회·지방·물 신호와 구별한다\n- 근거·출처: Morris EA, et al. ACR BI-RADS Atlas, 5th ed. Magnetic Resonance Imaging — kinetic curve assessment · Kuhl CK, et al. Dynamic breast MR imaging: are signal intensity time course data useful for differential diagnosis of enhancing lesions? Radiology 1999;211:101-110 · TCIA TCGA-BRCA — 조직 확진 침윤성 유방암 코호트(교사용) · 작성자 판독(2026-10-21): 감산 MIP 에서 불규칙 조영증강 종괴와 주변으로 모여드는 굵어진 혈관\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · TCGA-BH-A0E2 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "영상에서 유방 안에 불규칙한 종괴가 밝게 증강되고, 굵어진 혈관이 여러 갈래로 종괴 쪽에 모여든다. 감산 영상은 조영 전 신호를 뺀 것이므로 밝은 부분은 조영제가 들어간 곳이다. 유방암은 VEGF 로 새 혈관을 많이 만들고 그 혈관은 내피 사이가 성기어 조영제가 빨리 들어가고 빨리 빠지므로 일찍 강하게 밝아진다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 암이 일찍 밝아지는가</b>: 지름 1~2 mm 를 넘는 종양은 산소 공급을 위해 VEGF 를 분비해 새 혈관을 만든다(혈관신생). 이 신생혈관은 수가 많고 벽이 미숙해 내피 사이 틈이 넓으므로, 가돌리늄 조영제가 혈관 밖 세포외 공간으로 빠르게 새어 나간다. 그래서 조영 직후 1~2분 안에 강하게 증강되고, 늦은 시기에는 다시 빠져나가 신호가 떨어지는 <b>세척(washout)</b> 곡선을 보인다.<br> <b>감산 영상의 뜻</b>: 조영 후 영상에서 조영 전 영상을 빼면 원래 밝던 지방·물·출혈 신호는 사라지고 <b>조영제가 들어간 곳만</b> 남는다. 이것을 한 방향으로 겹쳐 보인 것이 최대강도투사(MIP)이며, 종괴와 그 종괴로 모여드는 혈관이 함께 보인다.<br> <b>수술 전 MRI 의 쓰임</b>: 치밀유방이나 소엽암에서 같은 쪽의 다른 병소·반대쪽 병소를 찾아 수술 범위를 정한다. 다만 위양성이 있어 새 병소는 생검으로 확인한 뒤 계획을 바꾼다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">신생혈관·투과성(정답)</th><th>확산 제한(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>보는 영상</td><td>동적 조영증강 T1 감산·MIP</td><td>확산강조영상(DWI)과 ADC 지도</td></tr> <tr><td>조영제</td><td><b>필요</b> — 조영제가 들어간 곳이 밝다</td><td>필요 없음 — 물 분자 움직임을 본다</td></tr> <tr><td>암에서 보이는 모양</td><td>일찍 강한 증강과 세척, 주변 혈관 증가</td><td>DWI 밝고 ADC 어두움</td></tr> </tbody></table> 두 소견 모두 암을 시사하지만, 그림이 조영 전 영상을 뺀 감산 영상이므로 밝기는 조영제 흡수, 곧 혈관 상태를 반영한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 높은 지방 함량은 지방억제 없는 T1 영상에서 과오종·지방 괴사가 밝을 때 설명이 되지만, 감산 영상에서는 지방 신호가 빠진다.\n② 자유수 증가는 T2 강조영상에서 낭종·점액성 병변이 밝을 때 설명이 되며, 조영 전 신호를 뺀 감산 영상에서는 남지 않는다.\n④ 확산 제한은 조영제 없이 얻는 확산강조영상과 ADC 지도에서 종괴가 밝고 ADC 가 낮게 보일 때 설명이 되며, 감산 영상의 밝기와는 다르다.\n⑤ 미세석회화는 유방촬영술에서 가늘고 갈래진 석회로 보일 때 의미가 있고, MRI 에서는 신호가 거의 없어 밝게 보이지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "암이면 세포가 빽빽해 밝다고 생각해 확산 제한을 고르는 것 — 그림은 조영 전 신호를 뺀 감산 영상이라 밝기는 조영제가 들어간 혈관 상태를 뜻한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "유방 동적 조영증강 MRI 감산 영상에서 종괴가 일찍 강하게 증강되고 주변 혈관이 늘어난 소견을 종양 신생혈관의 증가와 높은 투과성으로 설명하고, 확산 제한·석회·지방·물 신호와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Morris EA, et al. ACR BI-RADS Atlas, 5th ed. Magnetic Resonance Imaging — kinetic curve assessment · Kuhl CK, et al. Dynamic breast MR imaging: are signal intensity time course data useful for differential diagnosis of enhancing lesions? Radiology 1999;211:101-110 · TCIA TCGA-BRCA — 조직 확진 침윤성 유방암 코호트(교사용) · 작성자 판독(2026-10-21): 감산 MIP 에서 불규칙 조영증강 종괴와 주변으로 모여드는 굵어진 혈관 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · TCGA-BH-A0E2 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "조영 전 신호를 뺀 감산 영상에서 종괴가 일찍 강하게 밝은 것은 종양 신생혈관이 많고 투과성이 높아 조영제가 빨리 들어가기 때문이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "그림이 조영제 흡수만 남긴 감산 영상인가(혈관) — 확산 제한은 조영제 없이 DWI·ADC 로 본다",
+   "steps": 2,
+   "chain": [
+    "감산 최대강도투사 영상 → 밝은 곳은 조영제가 들어간 곳",
+    "영상: 불규칙 종괴의 강한 증강 + 모여드는 굵은 혈관 → 종양 신생혈관 증가와 높은 투과성"
+   ],
+   "key": [
+    {
+     "item": "조영 전 영상을 뺀 감산 최대강도투사 영상",
+     "why": "밝기가 조영제 흡수를 뜻함 — 지방·물·확산 신호 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "영상: 불규칙한 조영증강 종괴와 주변으로 모여드는 굵어진 혈관",
+     "why": "신생혈관이 많은 종양",
+     "also": []
+    },
+    {
+     "item": "침윤성 유방암으로 확진되었다",
+     "why": "혈관신생을 일으키는 악성 종양",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "유방촬영술은 치밀유방이고",
+     "why": "수술 전 MRI 를 하는 이유 — 기전 판단에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "어머니가 50대에 유방암을 앓았다",
+     "why": "위험 인자 — 기전 판단에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "조영 전 신호를 뺀 감산 MIP 에서 불규칙 종괴가 강하게 증강되고 혈관이 모여든다. 밝기는 조영제 흡수이며, 종양 신생혈관이 많고 새기 쉬워 일찍 강하게 밝아진다. 확산 제한은 다른 영상(DWI)의 소견이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "그림이 조영제 없이 얻은 확산강조영상이고 같은 종괴의 ADC 가 낮았다면 높은 세포 밀도에 의한 확산 제한이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0385.png",
+   "caption": "유방 동적 조영증강 MRI 감산 최대강도투사(MIP) 영상, 원본 그대로 (TCIA, CC BY — 자르기·보정 없음)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA TCGA-BRCA (The Cancer Genome Atlas 유방암 — 수술 전 MRI · 유방촬영)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6450.4002.155537552001506889957140934551",
+   "asset_id": "TCIA-TCGA-BRCA-A0E2-MIP",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · TCGA-BH-A0E2"
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0384",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "외과계 — 한 유관에서 나오는 피 섞인 유두 분비물과 유방 초음파",
+  "type": "외과계 — 한 유관에서 나오는 피 섞인 유두 분비물과 유방 초음파",
+  "modality": "US",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-20",
+  "vignette": "63세 여자가 3주 전부터 오른쪽 유두에서 피 섞인 분비물이 저절로 묻어 나와 왔다. 분비물은 유두의 한 구멍에서만 나오고, 유두를 누르면 같은 구멍에서 다시 나온다. 유방에 만져지는 종괴는 없고 피부 변화나 유두 함몰도 없다. 겨드랑 림프절은 만져지지 않는다. 체온 36.7 ℃ 이다. 유방촬영술에서 종괴나 미세석회화는 없다. 유륜 아래 유방 초음파는 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "유방 농양",
+   "관내유두종",
+   "유관확장증",
+   "섬유샘종",
+   "단순 낭종"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 영상에서 무에코로 확장된 관 속을 등~고에코의 고형 성분이 채우고 있다. 한 유관에서 저절로 나오는 피 섞인 분비물과 관 안의 고형 종괴가 함께 있으면 가장 흔한 원인은 관내유두종이다. 다만 같은 양상을 관상피내암도 보일 수 있어 중심부 바늘생검이나 해당 유관 절제로 조직을 확인한다.\n- 원리: <b>왜 피 섞인 분비물이 나오는가</b>: 관내유두종은 큰 유관 안에서 섬유혈관 줄기를 가진 상피가 손가락처럼 자라는 양성 종양이다. 가는 혈관 줄기가 꼬이거나 끊어지면 관 안으로 피가 새어 유두로 나온다. 종괴가 관을 막으면 그 앞쪽 관이 늘어나 초음파에서 무에코 관 속의 고형 성분으로 보인다.<br> <b>병적 분비물과 생리적 분비물</b>: 병적 분비물은 <b>한쪽·한 구멍·저절로·피 섞임(또는 맑은 물)</b>의 특징을 가진다. 양쪽·여러 구멍·짜야 나오는 초록·갈색 분비물은 유관확장증이나 섬유낭성 변화 같은 생리적·양성 원인이 많다.<br> <b>처치</b>: 병적 분비물에서 악성은 약 5~15 % 이므로 유방촬영술·초음파 뒤 영상 유도 생검이나 원인 유관 절제로 확인한다. 이 환자는 63세로 나이가 많을수록 악성 비율이 올라가므로 조직 확인을 미루지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">관내유두종(정답)</th><th>유관확장증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>분비물</td><td><b>한쪽·한 구멍·저절로</b>, 피 섞이거나 맑음</td><td>양쪽·여러 구멍, 끈적한 초록·갈색</td></tr> <tr><td>초음파</td><td>확장된 관 <b>속에 고형 성분</b></td><td>여러 관이 늘어났으나 속은 무에코(또는 찌꺼기)</td></tr> <tr><td>나이</td><td>40~60대</td><td>폐경 전후, 흡연자에 흔함</td></tr> <tr><td>처치</td><td>생검 또는 원인 유관 절제</td><td>증상 조절, 감염되면 항생제</td></tr> </tbody></table> 두 질환 모두 관이 늘어나므로, 관 안에 고형 성분이 있는지와 분비물이 한 구멍에서 나오는지가 가른다.\n- 오답 이유:\n  - ① 유방 농양은 수유 중이거나 흡연자에서 열·발적·압통과 함께 고름 같은 분비물, 초음파의 액체 고임이 있을 때 정답이 된다.\n  - ③ 유관확장증은 폐경 전후 여성에서 여러 구멍의 끈적한 초록·갈색 분비물과 속이 빈 확장 유관이 보일 때 정답이 된다.\n  - ④ 섬유샘종은 젊은 여성에게서 잘 움직이는 고무 같은 종괴가 만져지고 초음파에서 관 밖의 타원형 저에코 종괴일 때 정답이 된다.\n  - ⑤ 단순 낭종은 초음파에서 둥글고 벽이 얇은 무에코 구조에 뒤쪽 증강이 있고 속에 고형 성분이 없을 때 정답이 된다.\n- 함정: 관이 늘어난 것만 보고 유관확장증으로 답하는 것 — 관 속에 고형 성분이 있고 분비물이 한 구멍에서 저절로 나오면 관내유두종을 먼저 생각한다.\n- 학습목표: 한 유관에서 저절로 나오는 피 섞인 유두 분비물과 유방 초음파의 확장된 관 속 고형 성분을 관내유두종으로 판단하고 유관확장증·낭종·섬유샘종과 구별한다\n- 근거·출처: Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — nipple discharge · ACR Appropriateness Criteria: Evaluation of Nipple Discharge. J Am Coll Radiol 2017;14:S138-S153 · TCIA Breast-Lesions-USG — 생검 확인 관내유두종(교사용) · 작성자 판독(2026-10-21): 무에코로 확장된 관 속을 채운 등~고에코 고형 성분, 뒤쪽 음향 변화 없음\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case036 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "영상에서 무에코로 확장된 관 속을 등~고에코의 고형 성분이 채우고 있다. 한 유관에서 저절로 나오는 피 섞인 분비물과 관 안의 고형 종괴가 함께 있으면 가장 흔한 원인은 관내유두종이다. 다만 같은 양상을 관상피내암도 보일 수 있어 중심부 바늘생검이나 해당 유관 절제로 조직을 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 피 섞인 분비물이 나오는가</b>: 관내유두종은 큰 유관 안에서 섬유혈관 줄기를 가진 상피가 손가락처럼 자라는 양성 종양이다. 가는 혈관 줄기가 꼬이거나 끊어지면 관 안으로 피가 새어 유두로 나온다. 종괴가 관을 막으면 그 앞쪽 관이 늘어나 초음파에서 무에코 관 속의 고형 성분으로 보인다.<br> <b>병적 분비물과 생리적 분비물</b>: 병적 분비물은 <b>한쪽·한 구멍·저절로·피 섞임(또는 맑은 물)</b>의 특징을 가진다. 양쪽·여러 구멍·짜야 나오는 초록·갈색 분비물은 유관확장증이나 섬유낭성 변화 같은 생리적·양성 원인이 많다.<br> <b>처치</b>: 병적 분비물에서 악성은 약 5~15 % 이므로 유방촬영술·초음파 뒤 영상 유도 생검이나 원인 유관 절제로 확인한다. 이 환자는 63세로 나이가 많을수록 악성 비율이 올라가므로 조직 확인을 미루지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">관내유두종(정답)</th><th>유관확장증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>분비물</td><td><b>한쪽·한 구멍·저절로</b>, 피 섞이거나 맑음</td><td>양쪽·여러 구멍, 끈적한 초록·갈색</td></tr> <tr><td>초음파</td><td>확장된 관 <b>속에 고형 성분</b></td><td>여러 관이 늘어났으나 속은 무에코(또는 찌꺼기)</td></tr> <tr><td>나이</td><td>40~60대</td><td>폐경 전후, 흡연자에 흔함</td></tr> <tr><td>처치</td><td>생검 또는 원인 유관 절제</td><td>증상 조절, 감염되면 항생제</td></tr> </tbody></table> 두 질환 모두 관이 늘어나므로, 관 안에 고형 성분이 있는지와 분비물이 한 구멍에서 나오는지가 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 유방 농양은 수유 중이거나 흡연자에서 열·발적·압통과 함께 고름 같은 분비물, 초음파의 액체 고임이 있을 때 정답이 된다.\n③ 유관확장증은 폐경 전후 여성에서 여러 구멍의 끈적한 초록·갈색 분비물과 속이 빈 확장 유관이 보일 때 정답이 된다.\n④ 섬유샘종은 젊은 여성에게서 잘 움직이는 고무 같은 종괴가 만져지고 초음파에서 관 밖의 타원형 저에코 종괴일 때 정답이 된다.\n⑤ 단순 낭종은 초음파에서 둥글고 벽이 얇은 무에코 구조에 뒤쪽 증강이 있고 속에 고형 성분이 없을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "관이 늘어난 것만 보고 유관확장증으로 답하는 것 — 관 속에 고형 성분이 있고 분비물이 한 구멍에서 저절로 나오면 관내유두종을 먼저 생각한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "한 유관에서 저절로 나오는 피 섞인 유두 분비물과 유방 초음파의 확장된 관 속 고형 성분을 관내유두종으로 판단하고 유관확장증·낭종·섬유샘종과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — nipple discharge · ACR Appropriateness Criteria: Evaluation of Nipple Discharge. J Am Coll Radiol 2017;14:S138-S153 · TCIA Breast-Lesions-USG — 생검 확인 관내유두종(교사용) · 작성자 판독(2026-10-21): 무에코로 확장된 관 속을 채운 등~고에코 고형 성분, 뒤쪽 음향 변화 없음 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case036 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "한 유관에서 저절로 나오는 피 섞인 분비물과 확장된 관 속의 고형 성분은 관내유두종이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "확장된 관 속에 고형 성분이 있는가 — 유관확장증은 관만 늘어나고 속이 비어 있다",
+   "steps": 2,
+   "chain": [
+    "한 구멍에서 저절로 나오는 피 섞인 분비물 → 병적 유두 분비물(관 안 병변)",
+    "영상: 확장된 관 속 고형 성분 + 병적 분비물 → 관내유두종"
+   ],
+   "key": [
+    {
+     "item": "피 섞인 분비물이 저절로 묻어 나와",
+     "why": "병적 분비물",
+     "also": []
+    },
+    {
+     "item": "유두의 한 구멍에서만 나오고",
+     "why": "한 유관의 병변",
+     "also": []
+    },
+    {
+     "item": "영상: 무에코로 확장된 관 속을 등~고에코 고형 성분이 채움",
+     "why": "관내 종괴",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "유방에 만져지는 종괴는 없고",
+     "why": "섬유샘종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "체온 36.7 ℃",
+     "why": "유방 농양 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "유방촬영술에서 종괴나 미세석회화는 없다",
+     "why": "관내유두종은 유방촬영술에서 흔히 안 보인다 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "한 유관에서 저절로 나오는 피 섞인 분비물이 있고 초음파에서 확장된 관 속을 고형 성분이 채운다. 관내유두종이며, 속이 빈 관만 늘어나는 유관확장증과 구별한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "양쪽 여러 구멍에서 끈적한 초록 분비물이 나오고 초음파에서 확장된 관 속이 비어 있었다면 유관확장증이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0384.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case036",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case036"
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0383",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "병리·조직 — 외상성 비장 파열로 떼어 낸 비장의 면역조직화학",
+  "type": "병리·조직 — 외상성 비장 파열로 떼어 낸 비장의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-20",
+  "vignette": "An 18-year-old man is brought to the emergency department 40 minutes after his motorcycle collided with a car. He has left upper quadrant abdominal pain and pain in the left shoulder. His pulse is 128/min, and blood pressure is 84/50 mm Hg. There is tenderness of the left upper quadrant with guarding. Focused abdominal ultrasonography shows free fluid in the left upper quadrant and pelvis. Hemodynamic instability persists despite transfusion, and a shattered spleen is removed at laparotomy. A photomicrograph of a section of the spleen stained by immunohistochemistry is shown.",
+  "question": "The brown-stained cells line channels that are the principal site of which of the following functions?",
+  "options": [
+   "Filtration of lymph arriving through afferent lymphatics",
+   "Removal of aged and poorly deformable erythrocytes",
+   "Trapping of encapsulated bacteria by marginal-zone B cells",
+   "Antigen presentation to T cells in the periarteriolar sheath",
+   "Affinity maturation of B cells in germinal centers"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The brown cells outline a dense network of anastomosing, blood-filled channels with negative cells packed in the cords between them, while trabeculae and arterial walls are negative. Channels of this kind are the venous sinuses of the red pulp, lined by elongated littoral cells, and the red pulp is where aged or rigid erythrocytes are held back and removed.\n- 원리: <b>How the red pulp filters red cells</b>: arterial blood in the spleen opens into the cords of Billroth, a meshwork rich in macrophages, and must re-enter the circulation by squeezing through narrow slits between the littoral cells that line the venous sinuses. A normal erythrocyte (8 µm) deforms enough to pass a 1–3 µm slit; an aged, spherocytic, sickled, or antibody-coated cell cannot, stays in the cords, and is phagocytosed (culling). Inclusions such as Howell-Jolly bodies are pinched out at the same slits (pitting).<br> <b>Why this stain outlines the sinuses</b>: the antibody here is CD8. Besides cytotoxic T cells, splenic littoral cells are unusual in expressing CD8, so a CD8 stain draws the whole sinus network of the red pulp — an anatomic, not an immunologic, clue.<br> <b>Clinical connection</b>: after this splenectomy, Howell-Jolly bodies, target cells, and thrombocytosis appear in the blood, and the loss of marginal-zone B cells leaves the patient at risk of overwhelming infection with encapsulated bacteria — so vaccination against pneumococcus, meningococcus, and Haemophilus influenzae type b is required.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Red pulp sinuses (answer)</th><th>Marginal zone (closest distractor)</th></tr></thead><tbody> <tr><td>Position</td><td>Throughout the red pulp, between cords</td><td>A rim around each white-pulp nodule</td></tr> <tr><td>Appearance</td><td><b>Anastomosing, blood-filled channels</b> lined by elongated cells</td><td>A band of medium-sized B lymphocytes and macrophages</td></tr> <tr><td>Main function</td><td>Culling and pitting of red cells</td><td>Capture of blood-borne encapsulated bacteria (T-independent IgM)</td></tr> <tr><td>Loss after splenectomy</td><td>Howell-Jolly bodies, target cells</td><td>Overwhelming pneumococcal sepsis</td></tr> </tbody></table> Both functions are lost with splenectomy, so the question turns on which structure is stained: a branching channel network is the red pulp, a cuff around lymphoid nodules would be the marginal zone.\n- 오답 이유:\n  - (A) Lymph filtration through afferent lymphatics describes the subcapsular and medullary sinuses of a lymph node; the spleen has no afferent lymphatics.\n  - (C) Marginal-zone trapping would be correct if the stain formed a band of lymphocytes around the white-pulp nodules rather than a network of blood-filled channels.\n  - (D) T-cell antigen presentation would be correct if the stained cells were lymphocytes packed around a central arteriole in the periarteriolar lymphoid sheath.\n  - (E) Germinal center affinity maturation would be correct if a rounded follicle center with large B cells and tingible-body macrophages were highlighted.\n- 함정: Answering with the immunologic loss after splenectomy (encapsulated bacteria) — the stained network is the red pulp, whose job is red-cell filtering, not the marginal zone.\n- 학습목표: 비장 면역조직화학에서 서로 이어진 통로의 내벽 세포가 그물 모양으로 물든 양상을 적색속질 정맥굴로 읽고, 그곳에서 일어나는 노화·변형 적혈구 걸러내기를 백색속질·변연부의 기능과 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. Diseases of White Blood Cells, Lymph Nodes, Spleen, and Thymus — spleen · Mebius RE, Kraal G. Structure and function of the spleen. Nat Rev Immunol 2005;5:606-616 · Human Protein Atlas — CD8A, spleen (CC BY 4.0) (교사용) · 작성자 판독(2026-10-21): 적색속질의 서로 이어진 정맥굴 내벽 세포가 그물 모양으로 갈색, 삭·소주·동맥벽 음성\n\n## 출처\n- Human Protein Atlas, CD8A / Spleen (CC BY 4.0), https://images.proteinatlas.org/12/98_B_8_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown cells outline a dense network of anastomosing, blood-filled channels with negative cells packed in the cords between them, while trabeculae and arterial walls are negative. Channels of this kind are the venous sinuses of the red pulp, lined by elongated littoral cells, and the red pulp is where aged or rigid erythrocytes are held back and removed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How the red pulp filters red cells</b>: arterial blood in the spleen opens into the cords of Billroth, a meshwork rich in macrophages, and must re-enter the circulation by squeezing through narrow slits between the littoral cells that line the venous sinuses. A normal erythrocyte (8 µm) deforms enough to pass a 1–3 µm slit; an aged, spherocytic, sickled, or antibody-coated cell cannot, stays in the cords, and is phagocytosed (culling). Inclusions such as Howell-Jolly bodies are pinched out at the same slits (pitting).<br> <b>Why this stain outlines the sinuses</b>: the antibody here is CD8. Besides cytotoxic T cells, splenic littoral cells are unusual in expressing CD8, so a CD8 stain draws the whole sinus network of the red pulp — an anatomic, not an immunologic, clue.<br> <b>Clinical connection</b>: after this splenectomy, Howell-Jolly bodies, target cells, and thrombocytosis appear in the blood, and the loss of marginal-zone B cells leaves the patient at risk of overwhelming infection with encapsulated bacteria — so vaccination against pneumococcus, meningococcus, and Haemophilus influenzae type b is required."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Red pulp sinuses (answer)</th><th>Marginal zone (closest distractor)</th></tr></thead><tbody> <tr><td>Position</td><td>Throughout the red pulp, between cords</td><td>A rim around each white-pulp nodule</td></tr> <tr><td>Appearance</td><td><b>Anastomosing, blood-filled channels</b> lined by elongated cells</td><td>A band of medium-sized B lymphocytes and macrophages</td></tr> <tr><td>Main function</td><td>Culling and pitting of red cells</td><td>Capture of blood-borne encapsulated bacteria (T-independent IgM)</td></tr> <tr><td>Loss after splenectomy</td><td>Howell-Jolly bodies, target cells</td><td>Overwhelming pneumococcal sepsis</td></tr> </tbody></table> Both functions are lost with splenectomy, so the question turns on which structure is stained: a branching channel network is the red pulp, a cuff around lymphoid nodules would be the marginal zone."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Lymph filtration through afferent lymphatics describes the subcapsular and medullary sinuses of a lymph node; the spleen has no afferent lymphatics.\n(C) Marginal-zone trapping would be correct if the stain formed a band of lymphocytes around the white-pulp nodules rather than a network of blood-filled channels.\n(D) T-cell antigen presentation would be correct if the stained cells were lymphocytes packed around a central arteriole in the periarteriolar lymphoid sheath.\n(E) Germinal center affinity maturation would be correct if a rounded follicle center with large B cells and tingible-body macrophages were highlighted."
+   },
+   {
+    "k": "함정",
+    "v": "Answering with the immunologic loss after splenectomy (encapsulated bacteria) — the stained network is the red pulp, whose job is red-cell filtering, not the marginal zone."
+   },
+   {
+    "k": "학습목표",
+    "v": "비장 면역조직화학에서 서로 이어진 통로의 내벽 세포가 그물 모양으로 물든 양상을 적색속질 정맥굴로 읽고, 그곳에서 일어나는 노화·변형 적혈구 걸러내기를 백색속질·변연부의 기능과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. Diseases of White Blood Cells, Lymph Nodes, Spleen, and Thymus — spleen · Mebius RE, Kraal G. Structure and function of the spleen. Nat Rev Immunol 2005;5:606-616 · Human Protein Atlas — CD8A, spleen (CC BY 4.0) (교사용) · 작성자 판독(2026-10-21): 적색속질의 서로 이어진 정맥굴 내벽 세포가 그물 모양으로 갈색, 삭·소주·동맥벽 음성 ## 출처 Human Protein Atlas, CD8A / Spleen (CC BY 4.0), https://images.proteinatlas.org/12/98_B_8_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "서로 이어진 피 찬 통로의 내벽 세포가 그물 모양으로 물들었으므로 적색속질 정맥굴이고, 그곳의 주된 기능은 노화·변형 적혈구 걸러내기다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "물든 구조가 적색속질 전체에 퍼진 통로망인가, 백색속질 결절을 두른 림프구 띠(변연부)인가",
+   "steps": 3,
+   "chain": [
+    "영상: 서로 이어진 피 찬 통로를 따라 내벽 세포 갈색 + 통로 사이 삭 음성 → 정맥굴",
+    "정맥굴 + 삭(Billroth) → 적색속질",
+    "적색속질의 좁은 틈 → 노화·변형 적혈구를 걸러 제거"
+   ],
+   "key": [
+    {
+     "item": "영상: 서로 이어진 통로를 따라 내벽 세포가 그물 모양으로 갈색",
+     "why": "적색속질 정맥굴의 내벽(littoral) 세포",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 통로 사이 삭의 세포와 소주·동맥벽은 음성",
+     "why": "백색속질 결절·동맥주위 림프초가 물든 것일 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "a shattered spleen is removed at laparotomy",
+     "why": "검체를 얻은 경위 — 구조 판정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 84/50 mm Hg",
+     "why": "출혈 쇼크 — 구조 판정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "비장에서 서로 이어진 피 찬 통로의 내벽 세포가 그물 모양으로 물들었다. 적색속질 정맥굴이며, 좁은 틈을 못 지나는 노화·변형 적혈구를 걸러 제거한다. 피막세균 포획은 변연부의 기능이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "물든 세포가 백색속질 결절을 띠처럼 두른 중간 크기 B 림프구였다면 피막세균 포획(변연부)이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0383.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000153563-CD8A/tissue/Spleen",
+   "asset_id": "HPA-CD8A_98_B_8_4",
+   "text": "Human Protein Atlas, CD8A / Spleen (CC BY 4.0), https://images.proteinatlas.org/12/98_B_8_4.jpg"
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0382",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "소화기·간담췌 — 만성 설사 환자의 대장 무작위 생검 면역조직화학",
+  "type": "소화기·간담췌 — 만성 설사 환자의 대장 무작위 생검 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-20",
+  "vignette": "A 56-year-old woman comes to the physician because of a 4-month history of nonbloody watery diarrhea, three to four times daily, without weight loss or nocturnal symptoms. She takes no medications and does not drink alcohol. Abdominal examination shows no abnormalities. Stool cultures, ova and parasite examination, serum tissue transglutaminase IgA, and thyroid-stimulating hormone are normal. A colonoscopy shows normal-appearing mucosa, and random biopsy specimens are obtained from the colon. A photomicrograph of a section of the colonic mucosa stained by immunohistochemistry is shown.",
+  "question": "The antibody most likely recognizes which of the following antigens?",
+  "options": [
+   "Chromogranin A",
+   "Caudal-type homeobox 2 (CDX2)",
+   "Carcinoembryonic antigen",
+   "Mucin 5AC (MUC5AC)",
+   "Mucin 2 (MUC2)"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The brown chromogen fills the large mucin vacuoles of the goblet cells that line every crypt, and small compressed goblet cells at the crypt base and surface are darkly stained, while the nuclei, the intervening absorptive cells, and the lamina propria are negative. A secretory product stored in colonic goblet-cell mucin vacuoles is the gel-forming mucin MUC2. [핵심 판단] 대장 음와의 술잔세포 점액 공포 안만 갈색이고 핵·흡수세포·고유판은 음성이다. 대장 술잔세포가 저장하는 점액 단백 MUC2 이며, 드문드문 한 세포만 물드는 chromogranin A 와 위치·빈도로 가른다.\n- 원리: <b>Why the stain sits inside the vacuoles</b>: goblet cells synthesize the large glycoprotein MUC2 in the endoplasmic reticulum and Golgi apparatus and store it in apical granules that coalesce into a single \"theca\". Because the protein itself is the stored product, an antibody against it fills the vacuole with brown granules and also stains the mucus released into the lumen, leaving the nuclei blue.<br> <b>Why location answers the question</b>: every marker of colonic epithelium is found in the same crypts, so the compartment decides — nuclear (CDX2), apical brush border (CEA), scattered basal granules of single cells (chromogranin A), or stored mucin (MUC2).<br> <b>Clinical connection</b>: MUC2 forms the inner mucus layer that keeps bacteria away from the epithelium; MUC2-rich tumors are mucinous adenocarcinoma and the appendiceal neoplasms of pseudomyxoma peritonei, and MUC2-positive goblet cells in the stomach or esophagus define intestinal metaplasia (Barrett esophagus). Here the biopsy is normal; the diarrhea work-up is the setting, not the answer.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">MUC2 (answer)</th><th>Chromogranin A (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Goblet cell (most crypt cells)</td><td>Enteroendocrine cell (about 1 % of crypt cells)</td></tr> <tr><td>Site in the cell</td><td><b>Apical mucin vacuole</b> and luminal mucus</td><td>Basal neurosecretory granules, below the nucleus</td></tr> <tr><td>Distribution</td><td>Almost every crypt lined by brown vacuoles</td><td>Isolated single cells scattered along the crypts</td></tr> </tbody></table> Both are granular, so number and position decide: brown vacuoles in nearly every cell of every crypt mean stored mucin; an occasional triangular cell with granules toward the basement membrane means an endocrine marker.\n- 오답 이유:\n  - (A) Chromogranin A would be correct if only scattered single cells with brown granules beneath the nucleus were stained, which is the enteroendocrine pattern.\n  - (B) CDX2 would be correct if the brown signal were confined to the nuclei of all crypt cells, since it is an intestinal transcription factor.\n  - (C) Carcinoembryonic antigen would be correct if a thin brown line traced the apical brush border and luminal surface rather than filling the vacuoles.\n  - (D) MUC5AC would be correct if the tissue were gastric foveolar epithelium or a colonic polyp with gastric-type mucin; normal colonic goblet cells do not make it.\n- 함정: Choosing MUC5AC because the stained material is mucin — the tissue is normal colon, and colonic goblet cells store MUC2; MUC5AC is the gastric surface mucin.\n- 학습목표: 대장 점막에서 술잔세포의 점액 공포 안만 갈색이고 흡수세포·핵·고유판이 음성인 양상을 술잔세포 점액 단백 MUC2 로 읽고, 핵·막·내분비세포 표지자와 위치로 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Gastrointestinal Tract — normal colon · Johansson ME, Hansson GC. Immunological aspects of intestinal mucus and mucins. Nat Rev Immunol 2016;16:639-649 · Human Protein Atlas — MUC2, colon (CC BY 4.0) (교사용) · 작성자 판독(2026-10-21): 음와 술잔세포 점액 공포 안이 갈색 과립, 흡수세포·핵·고유판 음성, 내강 점액 갈색\n\n## 출처\n- Human Protein Atlas, MUC2 / Colon (CC BY 4.0), https://images.proteinatlas.org/16275/35623_A_7_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown chromogen fills the large mucin vacuoles of the goblet cells that line every crypt, and small compressed goblet cells at the crypt base and surface are darkly stained, while the nuclei, the intervening absorptive cells, and the lamina propria are negative. A secretory product stored in colonic goblet-cell mucin vacuoles is the gel-forming mucin MUC2. [핵심 판단] 대장 음와의 술잔세포 점액 공포 안만 갈색이고 핵·흡수세포·고유판은 음성이다. 대장 술잔세포가 저장하는 점액 단백 MUC2 이며, 드문드문 한 세포만 물드는 chromogranin A 와 위치·빈도로 가른다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the stain sits inside the vacuoles</b>: goblet cells synthesize the large glycoprotein MUC2 in the endoplasmic reticulum and Golgi apparatus and store it in apical granules that coalesce into a single \"theca\". Because the protein itself is the stored product, an antibody against it fills the vacuole with brown granules and also stains the mucus released into the lumen, leaving the nuclei blue.<br> <b>Why location answers the question</b>: every marker of colonic epithelium is found in the same crypts, so the compartment decides — nuclear (CDX2), apical brush border (CEA), scattered basal granules of single cells (chromogranin A), or stored mucin (MUC2).<br> <b>Clinical connection</b>: MUC2 forms the inner mucus layer that keeps bacteria away from the epithelium; MUC2-rich tumors are mucinous adenocarcinoma and the appendiceal neoplasms of pseudomyxoma peritonei, and MUC2-positive goblet cells in the stomach or esophagus define intestinal metaplasia (Barrett esophagus). Here the biopsy is normal; the diarrhea work-up is the setting, not the answer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">MUC2 (answer)</th><th>Chromogranin A (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Goblet cell (most crypt cells)</td><td>Enteroendocrine cell (about 1 % of crypt cells)</td></tr> <tr><td>Site in the cell</td><td><b>Apical mucin vacuole</b> and luminal mucus</td><td>Basal neurosecretory granules, below the nucleus</td></tr> <tr><td>Distribution</td><td>Almost every crypt lined by brown vacuoles</td><td>Isolated single cells scattered along the crypts</td></tr> </tbody></table> Both are granular, so number and position decide: brown vacuoles in nearly every cell of every crypt mean stored mucin; an occasional triangular cell with granules toward the basement membrane means an endocrine marker."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Chromogranin A would be correct if only scattered single cells with brown granules beneath the nucleus were stained, which is the enteroendocrine pattern.\n(B) CDX2 would be correct if the brown signal were confined to the nuclei of all crypt cells, since it is an intestinal transcription factor.\n(C) Carcinoembryonic antigen would be correct if a thin brown line traced the apical brush border and luminal surface rather than filling the vacuoles.\n(D) MUC5AC would be correct if the tissue were gastric foveolar epithelium or a colonic polyp with gastric-type mucin; normal colonic goblet cells do not make it."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing MUC5AC because the stained material is mucin — the tissue is normal colon, and colonic goblet cells store MUC2; MUC5AC is the gastric surface mucin."
+   },
+   {
+    "k": "학습목표",
+    "v": "대장 점막에서 술잔세포의 점액 공포 안만 갈색이고 흡수세포·핵·고유판이 음성인 양상을 술잔세포 점액 단백 MUC2 로 읽고, 핵·막·내분비세포 표지자와 위치로 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Gastrointestinal Tract — normal colon · Johansson ME, Hansson GC. Immunological aspects of intestinal mucus and mucins. Nat Rev Immunol 2016;16:639-649 · Human Protein Atlas — MUC2, colon (CC BY 4.0) (교사용) · 작성자 판독(2026-10-21): 음와 술잔세포 점액 공포 안이 갈색 과립, 흡수세포·핵·고유판 음성, 내강 점액 갈색 ## 출처 Human Protein Atlas, MUC2 / Colon (CC BY 4.0), https://images.proteinatlas.org/16275/35623_A_7_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "대장 음와의 거의 모든 세포에서 점액 공포 안이 갈색이고 핵·흡수세포·고유판이 음성이면 술잔세포가 저장한 점액 단백 MUC2 다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "갈색 신호가 거의 모든 음와 세포의 꼭대기 점액 공포(MUC2)인가, 드문드문 흩어진 한 세포의 핵 아래 과립(chromogranin A)인가",
+   "steps": 2,
+   "chain": [
+    "영상: 음와 세포의 점액 공포 안 갈색 + 핵·흡수세포·고유판 음성 → 술잔세포의 저장 점액",
+    "대장 술잔세포의 저장 점액 → MUC2 (MUC5AC 는 위 표면 점액)"
+   ],
+   "key": [
+    {
+     "item": "영상: 음와를 따라 술잔세포 점액 공포 안이 갈색 과립으로 차 있다",
+     "why": "술잔세포의 저장 점액",
+     "also": []
+    },
+    {
+     "item": "random biopsy specimens are obtained from the colon",
+     "why": "검체가 대장 — 위형 점액 MUC5AC 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 핵과 흡수세포, 고유판은 음성",
+     "why": "핵 표지자(CDX2)·꼭대기막 표지자(CEA) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "serum tissue transglutaminase IgA",
+     "why": "설사 감별 검사 — 항원 판정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "nonbloody watery diarrhea",
+     "why": "무작위 생검을 한 이유 — 항원 판정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "대장 음와의 술잔세포 점액 공포 안만 갈색이고 핵·흡수세포·고유판은 음성이다. 대장 술잔세포가 저장하는 점액 단백 MUC2 이며, 드문드문 한 세포만 물드는 chromogranin A 와 위치·빈도로 가른다.",
+   "switch": {
+    "choice": "A",
+    "condition": "갈색 세포가 음와에 드문드문 하나씩 있고 과립이 핵 아래쪽에 모여 있었다면 내분비세포 표지자 chromogranin A 다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0382.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000198788-MUC2/tissue/Colon",
+   "asset_id": "HPA-MUC2_35623_A_7_3",
+   "text": "Human Protein Atlas, MUC2 / Colon (CC BY 4.0), https://images.proteinatlas.org/16275/35623_A_7_3.jpg"
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0393",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "내분비·대사 — 갑상샘 수질암 수술 전 확인할 것",
+  "type": "내분비·대사 — 갑상샘 수질암 수술 전 확인할 것",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-20",
+  "vignette": "A 34-year-old man comes to the physician because of a painless lump in his neck that he noticed 1 month ago. He has had episodes of pounding headache with sweating several times a month for the past year. His father died of a stroke during surgery at the age of 45 years and was found to have an adrenal tumor at autopsy. His pulse is 88/min, and blood pressure is 152/96 mm Hg. Examination shows a 2.5-cm firm nodule in the right lobe of the thyroid gland and no cervical lymphadenopathy. Serum TSH is normal, serum calcium is 9.4 mg/dL, and serum calcitonin is markedly increased. Fine-needle aspiration of the nodule shows spindle-shaped cells with amyloid that stain for calcitonin. Germline RET mutation testing has been sent.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Radioactive iodine uptake scan",
+   "Measurement of serum thyroglobulin",
+   "Levothyroxine suppression therapy",
+   "Measurement of plasma free metanephrines",
+   "Total thyroidectomy with central neck dissection"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Calcitonin-staining spindle cells with amyloid identify medullary thyroid carcinoma. With episodic headache and sweating, hypertension, and a father who died during surgery with an adrenal tumor, multiple endocrine neoplasia type 2 with pheochromocytoma is likely. A pheochromocytoma must be excluded with plasma free metanephrines before thyroidectomy, because anesthesia and surgery can provoke a fatal hypertensive crisis; if present, it is removed first after alpha blockade.\n- 원리: <b>Why MEN2 links these organs</b>: activating germline mutations of the RET proto-oncogene, a receptor tyrosine kinase expressed in neural crest-derived cells, drive hyperplasia and then neoplasia of thyroid C cells (medullary carcinoma, nearly 100 %), adrenal chromaffin cells (pheochromocytoma, about 50 %), and in type 2A the parathyroid glands.<br> <b>Why the order of surgery matters</b>: a pheochromocytoma releases catecholamines unpredictably; intubation, anesthetic induction, and surgical manipulation can trigger a surge that causes hypertensive crisis, arrhythmia, stroke, or death — the likely story of the father. So in every patient with medullary thyroid carcinoma, plasma free (or urine fractionated) metanephrines are measured before neck surgery; a pheochromocytoma is removed first after 1–2 weeks of alpha blockade.<br> <b>Why thyroid follicular-cell tests do not help</b>: C cells do not trap iodine or make thyroglobulin, so radioiodine and thyroglobulin are useless for medullary carcinoma; calcitonin and CEA are its tumor markers.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Plasma metanephrines (answer)</th><th>Total thyroidectomy now (closest distractor)</th></tr></thead><tbody> <tr><td>Role</td><td>Screen for pheochromocytoma <b>before</b> any surgery</td><td>Definitive treatment of medullary carcinoma</td></tr> <tr><td>Why first</td><td>Unrecognized pheochromocytoma can cause intraoperative crisis</td><td>Proceeds once metanephrines are normal or the adrenal tumor is removed</td></tr> <tr><td>Clues here</td><td>Episodic headache and sweating, hypertension, father with adrenal tumor</td><td>Calcitonin-positive nodule</td></tr> </tbody></table> Thyroidectomy is the right operation for this nodule; the question is timing, and the adrenal comes first.\n- 오답 이유:\n  - (A) A radioiodine uptake scan would be correct for a nodule in a patient with low TSH; medullary carcinoma arises from C cells that do not trap iodine.\n  - (B) Serum thyroglobulin would be correct for following papillary or follicular carcinoma after thyroidectomy; calcitonin and CEA are the markers here.\n  - (C) Levothyroxine suppression would be considered after surgery for differentiated follicular-cell cancer; C cells are not TSH dependent.\n  - (E) Total thyroidectomy with central neck dissection would be correct once plasma metanephrines are normal or after any pheochromocytoma has been removed.\n- 함정: Going straight to thyroidectomy because the nodule is cancer — in medullary thyroid carcinoma, pheochromocytoma must be excluded first.\n- 학습목표: 갑상샘 수질암과 부신 종양 가족력·발작성 고혈압에서 다발성 내분비샘종양 2형을 의심하고, 갑상샘 수술 전에 혈장 메타네프린으로 갈색세포종을 먼저 배제한다\n- 근거·출처: Wells SA Jr, et al. Revised American Thyroid Association guidelines for the management of medullary thyroid carcinoma. Thyroid 2015;25:567-610 · Lenders JW, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915-1942 · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. Multiple Endocrine Neoplasia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Calcitonin-staining spindle cells with amyloid identify medullary thyroid carcinoma. With episodic headache and sweating, hypertension, and a father who died during surgery with an adrenal tumor, multiple endocrine neoplasia type 2 with pheochromocytoma is likely. A pheochromocytoma must be excluded with plasma free metanephrines before thyroidectomy, because anesthesia and surgery can provoke a fatal hypertensive crisis; if present, it is removed first after alpha blockade."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why MEN2 links these organs</b>: activating germline mutations of the RET proto-oncogene, a receptor tyrosine kinase expressed in neural crest-derived cells, drive hyperplasia and then neoplasia of thyroid C cells (medullary carcinoma, nearly 100 %), adrenal chromaffin cells (pheochromocytoma, about 50 %), and in type 2A the parathyroid glands.<br> <b>Why the order of surgery matters</b>: a pheochromocytoma releases catecholamines unpredictably; intubation, anesthetic induction, and surgical manipulation can trigger a surge that causes hypertensive crisis, arrhythmia, stroke, or death — the likely story of the father. So in every patient with medullary thyroid carcinoma, plasma free (or urine fractionated) metanephrines are measured before neck surgery; a pheochromocytoma is removed first after 1–2 weeks of alpha blockade.<br> <b>Why thyroid follicular-cell tests do not help</b>: C cells do not trap iodine or make thyroglobulin, so radioiodine and thyroglobulin are useless for medullary carcinoma; calcitonin and CEA are its tumor markers."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Plasma metanephrines (answer)</th><th>Total thyroidectomy now (closest distractor)</th></tr></thead><tbody> <tr><td>Role</td><td>Screen for pheochromocytoma <b>before</b> any surgery</td><td>Definitive treatment of medullary carcinoma</td></tr> <tr><td>Why first</td><td>Unrecognized pheochromocytoma can cause intraoperative crisis</td><td>Proceeds once metanephrines are normal or the adrenal tumor is removed</td></tr> <tr><td>Clues here</td><td>Episodic headache and sweating, hypertension, father with adrenal tumor</td><td>Calcitonin-positive nodule</td></tr> </tbody></table> Thyroidectomy is the right operation for this nodule; the question is timing, and the adrenal comes first."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A radioiodine uptake scan would be correct for a nodule in a patient with low TSH; medullary carcinoma arises from C cells that do not trap iodine.\n(B) Serum thyroglobulin would be correct for following papillary or follicular carcinoma after thyroidectomy; calcitonin and CEA are the markers here.\n(C) Levothyroxine suppression would be considered after surgery for differentiated follicular-cell cancer; C cells are not TSH dependent.\n(E) Total thyroidectomy with central neck dissection would be correct once plasma metanephrines are normal or after any pheochromocytoma has been removed."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to thyroidectomy because the nodule is cancer — in medullary thyroid carcinoma, pheochromocytoma must be excluded first."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑상샘 수질암과 부신 종양 가족력·발작성 고혈압에서 다발성 내분비샘종양 2형을 의심하고, 갑상샘 수술 전에 혈장 메타네프린으로 갈색세포종을 먼저 배제한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Wells SA Jr, et al. Revised American Thyroid Association guidelines for the management of medullary thyroid carcinoma. Thyroid 2015;25:567-610 · Lenders JW, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915-1942 · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. Multiple Endocrine Neoplasia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "갑상샘 수질암에 발작성 두통·발한·고혈압과 부신 종양 가족력이 있어 다발성 내분비샘종양 2형이 의심되므로 수술 전에 혈장 메타네프린으로 갈색세포종을 배제한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "수술 순서 — 숨은 갈색세포종은 갑상샘 수술 중 고혈압 위기를 일으킨다",
+   "steps": 3,
+   "chain": [
+    "칼시토닌 염색되는 방추세포와 아밀로이드 + 칼시토닌 증가 → 갑상샘 수질암",
+    "수질암 + 발작성 두통·발한·고혈압 + 수술 중 사망한 아버지의 부신 종양 → 다발성 내분비샘종양 2형(갈색세포종 의심)",
+    "갈색세포종 의심 + 갑상샘 수술 예정 → 먼저 혈장 메타네프린 측정"
+   ],
+   "key": [
+    {
+     "item": "spindle-shaped cells with amyloid that stain for calcitonin",
+     "why": "갑상샘 수질암",
+     "also": []
+    },
+    {
+     "item": "pounding headache with sweating",
+     "why": "카테콜아민 발작",
+     "also": []
+    },
+    {
+     "item": "was found to have an adrenal tumor at autopsy",
+     "why": "가족성 갈색세포종 — MEN2",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 152/96 mm Hg",
+     "why": "고혈압",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum calcium is 9.4 mg/dL",
+     "why": "동반 부갑상샘기능항진증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Germline RET mutation testing has been sent",
+     "why": "이미 진행 중 — 수술 전 다음 단계를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "칼시토닌 양성 방추세포와 아밀로이드로 갑상샘 수질암이고, 발작성 두통·발한·고혈압과 아버지의 부신 종양으로 MEN2 의 갈색세포종이 의심된다. 갑상샘 수술 전에 혈장 메타네프린으로 갈색세포종을 먼저 배제한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈장 메타네프린이 정상으로 나왔다면 갑상샘 전절제와 중심 림프절 절제가 다음 단계다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0392",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "소아청소년 — 발작성으로 보채는 걸음마 아기의 젤리 같은 혈변",
+  "type": "소아청소년 — 발작성으로 보채는 걸음마 아기의 젤리 같은 혈변",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-20",
+  "vignette": "14개월 남아가 하루 전부터 갑자기 심하게 울며 다리를 배 쪽으로 끌어당기다가 15~20분 지나면 잠잠해지는 일이 되풀이되어 왔다. 두 번 토했고 몇 시간 전 붉은 젤리 같은 변을 보았다. 1주 전 감기를 앓았다. 체온 37.4 ℃, 맥박 132회/분, 혈압 92/58 mmHg 이다. 보채지 않을 때는 처져 보이나 피부 탄력은 괜찮다. 오른쪽 위배에 소시지 모양의 종괴가 만져지고 압통은 있으나 반발통이나 근육 경직은 없다. 복부 단순 X선에서 유리 공기는 없다. 복부 초음파에서 오른쪽 위배에 과녁 모양의 종괴가 보인다. 정맥 수액을 시작하였다.",
+  "question": "가장 적절한 다음 처치는?",
+  "options": [
+   "정맥 항생제 투여 후 경과 관찰",
+   "대장내시경",
+   "공기 관장 정복술",
+   "응급 개복 수술",
+   "비위관 감압과 12시간 경과 관찰"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 6개월~3세 아이의 발작성 복통(보채며 다리를 당김)·구토·젤리 같은 혈변·오른쪽 위배의 소시지 모양 종괴와 초음파 표적징후는 회결장 장중첩증이다. 복막자극징후·유리 공기·쇼크가 없으므로 수술보다 먼저 투시나 초음파 유도 공기(또는 조영제) 관장으로 정복한다(성공률 약 80~90 %).\n- 원리: <b>왜 생기고 왜 피가 나는가</b>: 이 나이의 장중첩증은 대부분 감기·위장염 뒤 커진 회장 끝의 림프조직(Peyer 판)이 선두가 되어 회장이 맹장·결장 안으로 말려 들어간다. 장간막이 함께 끌려 들어가 정맥이 먼저 눌리면 장벽이 붓고 점막에서 피와 점액이 새어 나와 젤리 같은 변이 된다. 계속되면 동맥까지 막혀 괴사·천공에 이른다.<br> <b>발작성 통증의 기전</b>: 연동운동이 말려 들어간 부분을 더 밀어 넣을 때마다 심한 통증이 오고, 그 사이에는 처지거나 잠잠하다.<br> <b>관장 정복의 원리</b>: 직장으로 공기(또는 조영제)를 넣어 결장 안 압력으로 말려 든 장을 거꾸로 밀어낸다. 정복되면 회장으로 공기가 넘어간다. 금기는 천공 의심(유리 공기)·복막염·교정되지 않는 쇼크이고, 이때는 수술한다. 정복 뒤 24시간 안 재발이 약 10 % 라 관찰한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">공기 관장 정복(정답)</th><th>응급 개복 수술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>혈역학 안정, <b>복막자극징후·유리 공기 없음</b></td><td>천공(유리 공기)·복막염·교정 안 되는 쇼크, 관장 정복 실패</td></tr> <tr><td>병적 선두</td><td>나이가 어려 림프조직 비대가 대부분</td><td>5세 이상·반복 재발 — 멕켈 게실·용종·림프종 의심</td></tr> <tr><td>성공률·위험</td><td>약 80~90 %, 천공 1 % 미만</td><td>마취·개복의 부담</td></tr> </tbody></table> 같은 장중첩증이라도 복막염과 유리 공기가 있는지가 첫 처치를 가른다.\n- 오답 이유:\n  - ① 정맥 항생제 후 관찰은 세균성 장염이나 국소 복강 내 감염이 의심될 때 맞으며, 말려 들어간 장은 풀지 못한다.\n  - ② 대장내시경은 큰 아이의 만성 혈변에서 용종·염증성 장질환을 찾을 때 정답이 되며, 급성 장중첩증에서는 천공 위험이 있다.\n  - ④ 응급 개복 수술은 복부 X선에 유리 공기가 있거나 반발통·근육 경직의 복막염, 교정되지 않는 쇼크, 관장 정복 실패가 있을 때 정답이 된다.\n  - ⑤ 비위관 감압과 경과 관찰은 수술 뒤 마비성 장폐색처럼 기계적 폐쇄가 아닐 때 맞으며, 장중첩증을 미루면 장 괴사가 온다.\n- 함정: 혈변과 처진 모습을 보고 곧장 수술을 고르는 것 — 복막자극징후와 유리 공기가 없으면 관장 정복이 먼저다.\n- 학습목표: 걸음마 아기의 발작성 보챔·다리 당김·젤리 같은 혈변·소시지 모양 종괴와 초음파 표적징후를 장중첩증으로 판단하고, 복막염·천공·쇼크가 없으면 공기(또는 조영제) 관장 정복을 먼저 한다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Intussusception · Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39(Suppl 2):S140-S143",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "6개월~3세 아이의 발작성 복통(보채며 다리를 당김)·구토·젤리 같은 혈변·오른쪽 위배의 소시지 모양 종괴와 초음파 표적징후는 회결장 장중첩증이다. 복막자극징후·유리 공기·쇼크가 없으므로 수술보다 먼저 투시나 초음파 유도 공기(또는 조영제) 관장으로 정복한다(성공률 약 80~90 %)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 생기고 왜 피가 나는가</b>: 이 나이의 장중첩증은 대부분 감기·위장염 뒤 커진 회장 끝의 림프조직(Peyer 판)이 선두가 되어 회장이 맹장·결장 안으로 말려 들어간다. 장간막이 함께 끌려 들어가 정맥이 먼저 눌리면 장벽이 붓고 점막에서 피와 점액이 새어 나와 젤리 같은 변이 된다. 계속되면 동맥까지 막혀 괴사·천공에 이른다.<br> <b>발작성 통증의 기전</b>: 연동운동이 말려 들어간 부분을 더 밀어 넣을 때마다 심한 통증이 오고, 그 사이에는 처지거나 잠잠하다.<br> <b>관장 정복의 원리</b>: 직장으로 공기(또는 조영제)를 넣어 결장 안 압력으로 말려 든 장을 거꾸로 밀어낸다. 정복되면 회장으로 공기가 넘어간다. 금기는 천공 의심(유리 공기)·복막염·교정되지 않는 쇼크이고, 이때는 수술한다. 정복 뒤 24시간 안 재발이 약 10 % 라 관찰한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">공기 관장 정복(정답)</th><th>응급 개복 수술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>혈역학 안정, <b>복막자극징후·유리 공기 없음</b></td><td>천공(유리 공기)·복막염·교정 안 되는 쇼크, 관장 정복 실패</td></tr> <tr><td>병적 선두</td><td>나이가 어려 림프조직 비대가 대부분</td><td>5세 이상·반복 재발 — 멕켈 게실·용종·림프종 의심</td></tr> <tr><td>성공률·위험</td><td>약 80~90 %, 천공 1 % 미만</td><td>마취·개복의 부담</td></tr> </tbody></table> 같은 장중첩증이라도 복막염과 유리 공기가 있는지가 첫 처치를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정맥 항생제 후 관찰은 세균성 장염이나 국소 복강 내 감염이 의심될 때 맞으며, 말려 들어간 장은 풀지 못한다.\n② 대장내시경은 큰 아이의 만성 혈변에서 용종·염증성 장질환을 찾을 때 정답이 되며, 급성 장중첩증에서는 천공 위험이 있다.\n④ 응급 개복 수술은 복부 X선에 유리 공기가 있거나 반발통·근육 경직의 복막염, 교정되지 않는 쇼크, 관장 정복 실패가 있을 때 정답이 된다.\n⑤ 비위관 감압과 경과 관찰은 수술 뒤 마비성 장폐색처럼 기계적 폐쇄가 아닐 때 맞으며, 장중첩증을 미루면 장 괴사가 온다."
+   },
+   {
+    "k": "함정",
+    "v": "혈변과 처진 모습을 보고 곧장 수술을 고르는 것 — 복막자극징후와 유리 공기가 없으면 관장 정복이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "걸음마 아기의 발작성 보챔·다리 당김·젤리 같은 혈변·소시지 모양 종괴와 초음파 표적징후를 장중첩증으로 판단하고, 복막염·천공·쇼크가 없으면 공기(또는 조영제) 관장 정복을 먼저 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Intussusception · Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39(Suppl 2):S140-S143"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "걸음마 아기의 회결장 장중첩증이고 복막자극징후·유리 공기·쇼크가 없으므로 공기 관장 정복을 먼저 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "복막염·천공의 징후 — 반발통·근육 경직·유리 공기가 없다",
+   "steps": 2,
+   "chain": [
+    "14개월 + 발작성 보챔·다리 당김 + 젤리 같은 혈변 + 소시지 모양 종괴 + 과녁 모양 종괴 → 장중첩증",
+    "복막자극징후·유리 공기 없음 + 혈압 유지 → 공기 관장 정복"
+   ],
+   "key": [
+    {
+     "item": "다리를 배 쪽으로 끌어당기다가 15~20분 지나면 잠잠해지는",
+     "why": "발작성 복통",
+     "also": []
+    },
+    {
+     "item": "붉은 젤리 같은 변",
+     "why": "장벽 울혈에 의한 점액·피",
+     "also": []
+    },
+    {
+     "item": "오른쪽 위배에 소시지 모양의 종괴",
+     "why": "말려 들어간 장",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "반발통이나 근육 경직은 없다",
+     "why": "복막염 가능성을 낮춘다 — 관장 정복 가능",
+     "also": []
+    },
+    {
+     "item": "복부 단순 X선에서 유리 공기는 없다",
+     "why": "천공 가능성을 낮춘다 — 관장 정복 가능",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "1주 전 감기를 앓았다",
+     "why": "림프조직 비대의 흔한 계기 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "14개월 아기의 발작성 보챔·젤리 같은 혈변·소시지 모양 종괴와 초음파 과녁 모양 종괴는 장중첩증이다. 복막자극징후·유리 공기·쇼크가 없으므로 수술보다 공기 관장 정복이 먼저다.",
+   "switch": {
+    "choice": "D",
+    "condition": "복부 X선에 유리 공기가 있거나 반발통·근육 경직이 있었다면 응급 개복 수술이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0391",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "부인과 — 다낭난소증후군 여성의 배란 유도",
+  "type": "부인과 — 다낭난소증후군 여성의 배란 유도",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-20",
+  "vignette": "A 28-year-old woman comes to the physician because she has been unable to conceive despite regular unprotected intercourse for 14 months. Menses have occurred every 2 to 4 months since menarche. She has had acne and increasing hair growth on the chin and lower abdomen. She has tried a supervised diet and exercise program for 6 months and has lost 4 kg (8.8 lb). Her BMI is 31 kg/m2. There is coarse hair on the upper lip and chin. Serum thyroid-stimulating hormone and prolactin concentrations are normal, and serum 17-hydroxyprogesterone is normal. Transvaginal ultrasonography shows more than 20 follicles in each ovary. Hysterosalpingography shows patent fallopian tubes, and her husband's semen analysis is normal.",
+  "question": "Which of the following is the most appropriate pharmacotherapy to achieve pregnancy?",
+  "options": [
+   "Metformin alone",
+   "Combined oral contraceptive",
+   "Spironolactone",
+   "Letrozole",
+   "Clomiphene citrate"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Oligomenorrhea since menarche, clinical hyperandrogenism, and polycystic ovarian morphology, with thyroid disease, hyperprolactinemia, and nonclassic congenital adrenal hyperplasia excluded, establish polycystic ovary syndrome. Tubes and semen are normal, so infertility is from anovulation. After lifestyle modification, letrozole is the first-line ovulation-induction drug because it gives higher live-birth rates than clomiphene in this syndrome.\n- 원리: <b>Why women with PCOS do not ovulate</b>: high LH pulse frequency drives theca cells to make androgens, and insulin resistance with hyperinsulinemia amplifies this and lowers SHBG. Many follicles start to grow, but intraovarian androgens and insufficient FSH stop them at a small size, so no dominant follicle is selected.<br> <b>How letrozole induces ovulation</b>: as an aromatase inhibitor, it briefly lowers estrogen, which removes negative feedback on the hypothalamus and pituitary; FSH rises and a single dominant follicle can mature. Its short half-life leaves the endometrium and cervical mucus unaffected.<br> <b>Why it beats clomiphene</b>: clomiphene blocks estrogen receptors for weeks, including those in the endometrium and cervix, thinning the lining and thickening mucus; in a large randomized trial letrozole produced more ovulations and live births in PCOS, especially with obesity.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Letrozole (answer)</th><th>Clomiphene (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Aromatase inhibition — lowers estrogen</td><td>Estrogen-receptor blockade at the hypothalamus</td></tr> <tr><td>Half-life</td><td>About 2 days</td><td>About 5 days, with accumulation</td></tr> <tr><td>Endometrium and mucus</td><td>Not affected</td><td><b>Antiestrogenic</b> — thin lining, hostile mucus</td></tr> <tr><td>Live birth in PCOS</td><td>Higher</td><td>Lower; still used if letrozole is unavailable</td></tr> </tbody></table> Both raise FSH by removing estrogen feedback; letrozole does it without blocking estrogen at the target organs.\n- 오답 이유:\n  - (A) Metformin alone would be considered for glucose intolerance or as an add-on in clomiphene resistance; by itself it induces ovulation less often.\n  - (B) A combined oral contraceptive would be correct to regulate menses and treat hirsutism in a woman who does not want to become pregnant.\n  - (C) Spironolactone would be correct for hirsutism once pregnancy is prevented, as its antiandrogen effect can feminize a male fetus.\n  - (E) Clomiphene would be correct where letrozole is unavailable or not tolerated; it induces ovulation but has lower live-birth rates in this syndrome.\n- 함정: Choosing clomiphene from habit — in polycystic ovary syndrome, letrozole is first-line because of higher live-birth rates.\n- 학습목표: 다낭난소증후군 여성의 무배란 불임에서 생활 습관 교정 뒤 배란 유도 첫 약으로 레트로졸을 선택하고, 클로미펜·메트포르민·경구피임약·스피로노락톤의 자리와 구별한다\n- 근거·출처: Legro RS, et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome. N Engl J Med 2014;371:119-129 · Teede HJ, et al. Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. Fertil Steril 2023;120:767-793",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Oligomenorrhea since menarche, clinical hyperandrogenism, and polycystic ovarian morphology, with thyroid disease, hyperprolactinemia, and nonclassic congenital adrenal hyperplasia excluded, establish polycystic ovary syndrome. Tubes and semen are normal, so infertility is from anovulation. After lifestyle modification, letrozole is the first-line ovulation-induction drug because it gives higher live-birth rates than clomiphene in this syndrome."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why women with PCOS do not ovulate</b>: high LH pulse frequency drives theca cells to make androgens, and insulin resistance with hyperinsulinemia amplifies this and lowers SHBG. Many follicles start to grow, but intraovarian androgens and insufficient FSH stop them at a small size, so no dominant follicle is selected.<br> <b>How letrozole induces ovulation</b>: as an aromatase inhibitor, it briefly lowers estrogen, which removes negative feedback on the hypothalamus and pituitary; FSH rises and a single dominant follicle can mature. Its short half-life leaves the endometrium and cervical mucus unaffected.<br> <b>Why it beats clomiphene</b>: clomiphene blocks estrogen receptors for weeks, including those in the endometrium and cervix, thinning the lining and thickening mucus; in a large randomized trial letrozole produced more ovulations and live births in PCOS, especially with obesity."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Letrozole (answer)</th><th>Clomiphene (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Aromatase inhibition — lowers estrogen</td><td>Estrogen-receptor blockade at the hypothalamus</td></tr> <tr><td>Half-life</td><td>About 2 days</td><td>About 5 days, with accumulation</td></tr> <tr><td>Endometrium and mucus</td><td>Not affected</td><td><b>Antiestrogenic</b> — thin lining, hostile mucus</td></tr> <tr><td>Live birth in PCOS</td><td>Higher</td><td>Lower; still used if letrozole is unavailable</td></tr> </tbody></table> Both raise FSH by removing estrogen feedback; letrozole does it without blocking estrogen at the target organs."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Metformin alone would be considered for glucose intolerance or as an add-on in clomiphene resistance; by itself it induces ovulation less often.\n(B) A combined oral contraceptive would be correct to regulate menses and treat hirsutism in a woman who does not want to become pregnant.\n(C) Spironolactone would be correct for hirsutism once pregnancy is prevented, as its antiandrogen effect can feminize a male fetus.\n(E) Clomiphene would be correct where letrozole is unavailable or not tolerated; it induces ovulation but has lower live-birth rates in this syndrome."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing clomiphene from habit — in polycystic ovary syndrome, letrozole is first-line because of higher live-birth rates."
+   },
+   {
+    "k": "학습목표",
+    "v": "다낭난소증후군 여성의 무배란 불임에서 생활 습관 교정 뒤 배란 유도 첫 약으로 레트로졸을 선택하고, 클로미펜·메트포르민·경구피임약·스피로노락톤의 자리와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Legro RS, et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome. N Engl J Med 2014;371:119-129 · Teede HJ, et al. Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. Fertil Steril 2023;120:767-793"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "난관·정액이 정상인 다낭난소증후군의 무배란 불임이고 생활 습관 교정을 했으므로 배란 유도 첫 약은 레트로졸이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "다낭난소증후군에서 레트로졸이 클로미펜보다 생존 출생률이 높고 자궁내막에 항에스트로젠 작용이 없다",
+   "steps": 3,
+   "chain": [
+    "초경 뒤 희발월경 + 고안드로젠 소견 + 다낭 형태, TSH·프로락틴·17-OHP 정상 → 다낭난소증후군",
+    "난관 개통·정액 정상 → 무배란에 의한 불임",
+    "생활 습관 교정 뒤 배란 유도 첫 약 → 레트로졸"
+   ],
+   "key": [
+    {
+     "item": "Menses have occurred every 2 to 4 months since menarche",
+     "why": "만성 무배란",
+     "also": []
+    },
+    {
+     "item": "coarse hair on the upper lip and chin",
+     "why": "임상적 고안드로젠",
+     "also": []
+    },
+    {
+     "item": "more than 20 follicles in each ovary",
+     "why": "다낭 형태",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum 17-hydroxyprogesterone is normal",
+     "why": "비고전형 선천성 부신과형성 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "patent fallopian tubes, and her husband's semen analysis is normal",
+     "why": "난관·남성 요인 불임 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "supervised diet and exercise program for 6 months",
+     "why": "생활 습관 교정 뒤라 약물 배란 유도 단계",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "희발월경·고안드로젠·다낭 형태로 다낭난소증후군이고 난관·정액은 정상이라 무배란 불임이다. 생활 습관 교정 뒤 배란 유도의 첫 약은 클로미펜보다 생존 출생률이 높은 레트로졸이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "임신을 원하지 않고 월경 조절과 다모증 치료가 목적이었다면 복합 경구피임약이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0390",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "감염 — 치료받지 않은 HIV 환자의 두통과 높은 뇌척수액 압력",
+  "type": "감염 — 치료받지 않은 HIV 환자의 두통과 높은 뇌척수액 압력",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-20",
+  "vignette": "34세 남자가 2주 전부터 점점 심해지는 두통과 미열로 왔다. 3년 전 HIV 감염을 진단받았으나 치료를 받지 않았다. 체온 38.0 ℃, 혈압 124/78 mmHg, 맥박 92회/분이다. 의식은 명료하고 목이 약간 뻣뻣하며 국소 신경학적 이상은 없다. CD4 림프구는 38/mm³ 이다. 뇌 CT 에서 종괴나 수두증은 없다. 요추천자에서 개방압 32 cmH2O, 백혈구 20/mm³(림프구 90 %), 단백질 70 mg/dL, 포도당 35 mg/dL(혈당 100 mg/dL)이고, 인디아잉크 염색에서 두꺼운 피막을 가진 효모가 보이며 크립토콕쿠스 항원이 양성이다.",
+  "question": "가장 적절한 초기 치료는?",
+  "options": [
+   "암포테리신 B 와 플루시토신 병용",
+   "플루코나졸 고용량 단독 경구 투여",
+   "항레트로바이러스 치료를 즉시 시작하고 플루코나졸 병용",
+   "플루코나졸에 덱사메타손 추가",
+   "카스포펀진 정맥 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CD4 38/mm³ 의 HIV 환자에서 2주 동안 진행한 두통·발열, 림프구 우세 뇌척수액, 인디아잉크 양성과 크립토콕쿠스 항원 양성은 크립토콕쿠스 수막염이다. 유도 치료는 살진균력이 가장 강한 암포테리신 B(리포좀 제형)와 플루시토신 병용이고, 개방압이 25 cmH2O 이상이므로 요추천자를 반복해 압력을 낮춘다.\n- 원리: <b>왜 병용 유도 치료인가</b>: 크립토콕쿠스는 다당류 피막으로 탐식을 피하고 뇌척수액에서 빠르게 증식한다. 사망률을 낮추는 것은 뇌척수액의 균을 얼마나 빨리 없애느냐(살진균)이다. 암포테리신 B 는 에르고스테롤에 결합해 막에 구멍을 내고, 플루시토신은 균 안에서 5-FU 로 바뀌어 핵산 합성을 막아 두 약이 상승 작용을 한다. 플루코나졸은 정균제라 유도 단독으로는 균 제거가 느리고 내성이 생긴다.<br> <b>치료 단계</b>: 유도(병용 1~2주) → 공고(플루코나졸 고용량 8주) → 유지(플루코나졸, CD4 회복까지). WHO 는 리포좀 암포테리신 B 단회 고용량 + 플루시토신·플루코나졸 14일을 권고한다.<br> <b>두 가지 함정</b>: ① 높은 두개내압은 피막 다당류가 지주막 과립을 막아 생기며, 사망의 큰 원인이라 압력이 정상이 될 때까지 요추천자를 반복한다. ② 항레트로바이러스 치료를 바로 시작하면 면역재구성 염증증후군으로 사망률이 오르므로 항진균 치료 4~6주 뒤에 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">암포테리신 B + 플루시토신(정답)</th><th>플루코나졸 단독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td><b>살진균</b>, 상승 작용</td><td>정균(에르고스테롤 합성 억제)</td></tr> <tr><td>쓰는 단계</td><td>수막염의 유도 치료</td><td>공고·유지, 증상 없는 항원혈증(뇌척수액 음성)</td></tr> <tr><td>뇌척수액 균 제거</td><td>빠름 — 사망률 낮춤</td><td>느림, 내성 위험</td></tr> </tbody></table> 플루코나졸은 이 환자에게도 쓰이지만 유도 뒤의 공고·유지 단계에서이며, 수막염의 첫 치료로는 부족하다.\n- 오답 이유:\n  - ② 플루코나졸 단독은 수막염 없이 혈청 항원만 양성인 무증상 환자의 선제 치료나 유도 뒤 공고·유지 단계에서 정답이 된다.\n  - ③ 항레트로바이러스 치료는 결핵이나 다른 기회감염이 대부분 2주 안에 시작하는 것과 달리, 크립토콕쿠스 수막염에서는 4~6주 미뤄야 사망률이 낮다.\n  - ④ 덱사메타손 추가는 성인 폐렴알균 수막염에서 정답이 되지만, 크립토콕쿠스 수막염에서는 균 제거가 늦고 장애가 늘어 쓰지 않는다.\n  - ⑤ 카스포펀진은 칸디다·아스페르길루스 감염에서 정답이 되지만, 크립토콕쿠스에는 효과가 없다(세포벽 β-글루칸 합성효소 표적이 적다).\n- 함정: 부작용이 적은 경구 플루코나졸로 시작하는 것 — 수막염의 유도 치료는 살진균제 병용이고, 플루코나졸은 그 다음 단계다.\n- 학습목표: CD4 100/mm³ 미만 HIV 환자의 아급성 두통·높은 뇌척수액 개방압·크립토콕쿠스 항원 양성을 크립토콕쿠스 수막염으로 판단하고, 암포테리신 B 와 플루시토신 병용 유도 치료와 반복 요추천자를 선택한다\n- 근거·출처: World Health Organization. Guidelines for diagnosing, preventing and managing cryptococcal disease among adults, adolescents and children living with HIV. 2022 · Jarvis JN, et al. Single-dose liposomal amphotericin B treatment for cryptococcal meningitis (AMBITION-cm). N Engl J Med 2022;386:1109-1120 · Boulware DR, et al. Timing of antiretroviral therapy after diagnosis of cryptococcal meningitis (COAT). N Engl J Med 2014;370:2487-2498",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CD4 38/mm³ 의 HIV 환자에서 2주 동안 진행한 두통·발열, 림프구 우세 뇌척수액, 인디아잉크 양성과 크립토콕쿠스 항원 양성은 크립토콕쿠스 수막염이다. 유도 치료는 살진균력이 가장 강한 암포테리신 B(리포좀 제형)와 플루시토신 병용이고, 개방압이 25 cmH2O 이상이므로 요추천자를 반복해 압력을 낮춘다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 병용 유도 치료인가</b>: 크립토콕쿠스는 다당류 피막으로 탐식을 피하고 뇌척수액에서 빠르게 증식한다. 사망률을 낮추는 것은 뇌척수액의 균을 얼마나 빨리 없애느냐(살진균)이다. 암포테리신 B 는 에르고스테롤에 결합해 막에 구멍을 내고, 플루시토신은 균 안에서 5-FU 로 바뀌어 핵산 합성을 막아 두 약이 상승 작용을 한다. 플루코나졸은 정균제라 유도 단독으로는 균 제거가 느리고 내성이 생긴다.<br> <b>치료 단계</b>: 유도(병용 1~2주) → 공고(플루코나졸 고용량 8주) → 유지(플루코나졸, CD4 회복까지). WHO 는 리포좀 암포테리신 B 단회 고용량 + 플루시토신·플루코나졸 14일을 권고한다.<br> <b>두 가지 함정</b>: ① 높은 두개내압은 피막 다당류가 지주막 과립을 막아 생기며, 사망의 큰 원인이라 압력이 정상이 될 때까지 요추천자를 반복한다. ② 항레트로바이러스 치료를 바로 시작하면 면역재구성 염증증후군으로 사망률이 오르므로 항진균 치료 4~6주 뒤에 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">암포테리신 B + 플루시토신(정답)</th><th>플루코나졸 단독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td><b>살진균</b>, 상승 작용</td><td>정균(에르고스테롤 합성 억제)</td></tr> <tr><td>쓰는 단계</td><td>수막염의 유도 치료</td><td>공고·유지, 증상 없는 항원혈증(뇌척수액 음성)</td></tr> <tr><td>뇌척수액 균 제거</td><td>빠름 — 사망률 낮춤</td><td>느림, 내성 위험</td></tr> </tbody></table> 플루코나졸은 이 환자에게도 쓰이지만 유도 뒤의 공고·유지 단계에서이며, 수막염의 첫 치료로는 부족하다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 플루코나졸 단독은 수막염 없이 혈청 항원만 양성인 무증상 환자의 선제 치료나 유도 뒤 공고·유지 단계에서 정답이 된다.\n③ 항레트로바이러스 치료는 결핵이나 다른 기회감염이 대부분 2주 안에 시작하는 것과 달리, 크립토콕쿠스 수막염에서는 4~6주 미뤄야 사망률이 낮다.\n④ 덱사메타손 추가는 성인 폐렴알균 수막염에서 정답이 되지만, 크립토콕쿠스 수막염에서는 균 제거가 늦고 장애가 늘어 쓰지 않는다.\n⑤ 카스포펀진은 칸디다·아스페르길루스 감염에서 정답이 되지만, 크립토콕쿠스에는 효과가 없다(세포벽 β-글루칸 합성효소 표적이 적다)."
+   },
+   {
+    "k": "함정",
+    "v": "부작용이 적은 경구 플루코나졸로 시작하는 것 — 수막염의 유도 치료는 살진균제 병용이고, 플루코나졸은 그 다음 단계다."
+   },
+   {
+    "k": "학습목표",
+    "v": "CD4 100/mm³ 미만 HIV 환자의 아급성 두통·높은 뇌척수액 개방압·크립토콕쿠스 항원 양성을 크립토콕쿠스 수막염으로 판단하고, 암포테리신 B 와 플루시토신 병용 유도 치료와 반복 요추천자를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "World Health Organization. Guidelines for diagnosing, preventing and managing cryptococcal disease among adults, adolescents and children living with HIV. 2022 · Jarvis JN, et al. Single-dose liposomal amphotericin B treatment for cryptococcal meningitis (AMBITION-cm). N Engl J Med 2022;386:1109-1120 · Boulware DR, et al. Timing of antiretroviral therapy after diagnosis of cryptococcal meningitis (COAT). N Engl J Med 2014;370:2487-2498"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CD4 38/mm³ 환자의 크립토콕쿠스 수막염이므로 유도 치료는 암포테리신 B 와 플루시토신 병용이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "수막염의 유도 단계인가 — 플루코나졸은 정균제라 공고·유지에 쓴다",
+   "steps": 2,
+   "chain": [
+    "CD4 38 + 아급성 두통·발열 + 인디아잉크 양성·크립토콕쿠스 항원 양성 → 크립토콕쿠스 수막염",
+    "크립토콕쿠스 수막염의 유도 치료 → 암포테리신 B + 플루시토신(높은 개방압은 반복 요추천자)"
+   ],
+   "key": [
+    {
+     "item": "CD4 림프구는 38/mm³",
+     "why": "크립토콕쿠스 수막염의 위험 범위(100 미만)",
+     "also": []
+    },
+    {
+     "item": "크립토콕쿠스 항원이 양성",
+     "why": "진단",
+     "also": []
+    },
+    {
+     "item": "인디아잉크 염색에서 두꺼운 피막을 가진 효모",
+     "why": "피막 효모 — 크립토콕쿠스",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "뇌 CT 에서 종괴나 수두증은 없다",
+     "why": "톡소포자충증·림프종 가능성을 낮추고 요추천자를 안전하게 한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "개방압 32 cmH2O",
+     "why": "높은 두개내압 — 반복 요추천자 필요",
+     "also": []
+    },
+    {
+     "item": "3년 전 HIV 감염을 진단받았으나 치료를 받지 않았다",
+     "why": "항레트로바이러스 치료는 4~6주 미룬다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "치료받지 않은 HIV 환자(CD4 38)의 아급성 두통·발열, 인디아잉크·크립토콕쿠스 항원 양성은 크립토콕쿠스 수막염이다. 유도 치료는 암포테리신 B 와 플루시토신 병용이고 높은 개방압은 반복 요추천자로 낮춘다.",
+   "switch": {
+    "choice": "B",
+    "condition": "혈청 크립토콕쿠스 항원만 양성이고 증상이 없으며 뇌척수액이 음성이었다면 플루코나졸 단독 선제 치료다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0389",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "응급·중환자 — 아세트아미노펜 대량 복용 6시간 뒤",
+  "type": "응급·중환자 — 아세트아미노펜 대량 복용 6시간 뒤",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-20",
+  "vignette": "A 19-year-old woman is brought to the emergency department by her roommate 6 hours after she ingested thirty 500-mg tablets of acetaminophen after an argument with her boyfriend. She has had nausea and vomited once. She takes no other medications and did not drink alcohol. Her temperature is 36.8°C (98.2°F), pulse is 96/min, respirations are 16/min, and blood pressure is 118/72 mm Hg. She is alert and oriented. Abdominal examination shows mild epigastric tenderness. Serum studies show an acetaminophen concentration of 180 µg/mL, aspartate aminotransferase 28 U/L, alanine aminotransferase 31 U/L, and prothrombin time 12 seconds. Serum salicylate and ethanol are undetectable.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral activated charcoal",
+   "Intravenous fomepizole",
+   "Urgent hemodialysis",
+   "Repeat level in 4 hours",
+   "Intravenous N-acetylcysteine"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: A single ingestion of 15 g (about 15 g in a young woman of average weight, well over 150 mg/kg) with a 6-hour concentration of 180 µg/mL lies far above the treatment line of the Rumack-Matthew nomogram (about 100 µg/mL at 6 hours). Normal aminotransferases do not exclude toxicity because liver injury appears after 24 hours, so intravenous N-acetylcysteine is started now.\n- 원리: <b>Why acetaminophen injures the liver</b>: most of the drug is conjugated (glucuronide, sulfate) and excreted, and a small fraction is oxidized by CYP2E1 to the reactive metabolite NAPQI, which is detoxified by glutathione. In overdose the conjugation pathways saturate, more NAPQI is formed, glutathione is used up, and NAPQI binds hepatocyte proteins, causing centrilobular (zone 3) necrosis.<br> <b>How N-acetylcysteine works</b>: it replenishes glutathione (as a cysteine donor) and directly conjugates NAPQI; started within 8 hours of ingestion it nearly abolishes serious liver injury, and it still helps later.<br> <b>Why the 4-hour rule</b>: absorption is not complete before 4 hours, so the nomogram applies only to a single acute ingestion with a known time, from 4 hours onward. Aminotransferases rise only after 24–36 hours, which is why a normal ALT at 6 hours is reassuring for nothing.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">N-acetylcysteine (answer)</th><th>Activated charcoal (closest distractor)</th></tr></thead><tbody> <tr><td>Purpose</td><td>Restores glutathione, neutralizes NAPQI</td><td>Binds drug still in the gut</td></tr> <tr><td>Time window</td><td>Best within <b>8 hours</b>, still useful later</td><td>Within about <b>1–2 hours</b> of ingestion</td></tr> <tr><td>Decided by</td><td>4-hour or later level above the nomogram line, or unknown time with detectable level</td><td>Recent ingestion in a patient who protects the airway</td></tr> </tbody></table> At 6 hours, absorption is complete, so binding the drug in the gut has little to offer; the level above the line decides antidote therapy.\n- 오답 이유:\n  - (A) Activated charcoal would be correct within about 1 to 2 hours of the ingestion in an alert patient, before most of the drug has been absorbed.\n  - (B) Fomepizole would be correct for methanol or ethylene glycol poisoning with an anion-gap metabolic acidosis and an increased osmolal gap.\n  - (C) Hemodialysis would be considered for massive ingestions with very high levels, coma, and lactic acidosis, or for salicylate or toxic alcohol poisoning.\n  - (D) Repeating the level in 4 hours would be reasonable only if the first level were drawn before 4 hours, whereas this 6-hour level is already above the line.\n- 함정: Being reassured by normal aminotransferases and prothrombin time — hepatotoxicity appears after 24 hours, and the 6-hour level above the nomogram line requires N-acetylcysteine now.\n- 학습목표: 복용 시각이 분명한 아세트아미노펜 급성 과량 복용에서 4시간 이후 혈중 농도를 노모그램 치료선과 비교해 N-아세틸시스테인을 시작하고, 시간이 지난 활성탄과 구별한다\n- 근거·출처: Heard KJ. Acetylcysteine for acetaminophen poisoning. N Engl J Med 2008;359:285-292 · Rumack BH, Matthew H. Acetaminophen poisoning and toxicity. Pediatrics 1975;55:871-876 · Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Acetaminophen",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A single ingestion of 15 g (about 15 g in a young woman of average weight, well over 150 mg/kg) with a 6-hour concentration of 180 µg/mL lies far above the treatment line of the Rumack-Matthew nomogram (about 100 µg/mL at 6 hours). Normal aminotransferases do not exclude toxicity because liver injury appears after 24 hours, so intravenous N-acetylcysteine is started now."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why acetaminophen injures the liver</b>: most of the drug is conjugated (glucuronide, sulfate) and excreted, and a small fraction is oxidized by CYP2E1 to the reactive metabolite NAPQI, which is detoxified by glutathione. In overdose the conjugation pathways saturate, more NAPQI is formed, glutathione is used up, and NAPQI binds hepatocyte proteins, causing centrilobular (zone 3) necrosis.<br> <b>How N-acetylcysteine works</b>: it replenishes glutathione (as a cysteine donor) and directly conjugates NAPQI; started within 8 hours of ingestion it nearly abolishes serious liver injury, and it still helps later.<br> <b>Why the 4-hour rule</b>: absorption is not complete before 4 hours, so the nomogram applies only to a single acute ingestion with a known time, from 4 hours onward. Aminotransferases rise only after 24–36 hours, which is why a normal ALT at 6 hours is reassuring for nothing."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">N-acetylcysteine (answer)</th><th>Activated charcoal (closest distractor)</th></tr></thead><tbody> <tr><td>Purpose</td><td>Restores glutathione, neutralizes NAPQI</td><td>Binds drug still in the gut</td></tr> <tr><td>Time window</td><td>Best within <b>8 hours</b>, still useful later</td><td>Within about <b>1–2 hours</b> of ingestion</td></tr> <tr><td>Decided by</td><td>4-hour or later level above the nomogram line, or unknown time with detectable level</td><td>Recent ingestion in a patient who protects the airway</td></tr> </tbody></table> At 6 hours, absorption is complete, so binding the drug in the gut has little to offer; the level above the line decides antidote therapy."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Activated charcoal would be correct within about 1 to 2 hours of the ingestion in an alert patient, before most of the drug has been absorbed.\n(B) Fomepizole would be correct for methanol or ethylene glycol poisoning with an anion-gap metabolic acidosis and an increased osmolal gap.\n(C) Hemodialysis would be considered for massive ingestions with very high levels, coma, and lactic acidosis, or for salicylate or toxic alcohol poisoning.\n(D) Repeating the level in 4 hours would be reasonable only if the first level were drawn before 4 hours, whereas this 6-hour level is already above the line."
+   },
+   {
+    "k": "함정",
+    "v": "Being reassured by normal aminotransferases and prothrombin time — hepatotoxicity appears after 24 hours, and the 6-hour level above the nomogram line requires N-acetylcysteine now."
+   },
+   {
+    "k": "학습목표",
+    "v": "복용 시각이 분명한 아세트아미노펜 급성 과량 복용에서 4시간 이후 혈중 농도를 노모그램 치료선과 비교해 N-아세틸시스테인을 시작하고, 시간이 지난 활성탄과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Heard KJ. Acetylcysteine for acetaminophen poisoning. N Engl J Med 2008;359:285-292 · Rumack BH, Matthew H. Acetaminophen poisoning and toxicity. Pediatrics 1975;55:871-876 · Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Acetaminophen"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "복용 6시간 뒤 아세트아미노펜 농도 180 µg/mL 는 노모그램 치료선 위이므로 간 수치가 정상이어도 정맥 N-아세틸시스테인을 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "복용 뒤 지난 시간 — 6시간이면 흡수가 끝나 활성탄의 이득이 적다",
+   "steps": 2,
+   "chain": [
+    "복용 6시간 + 농도 180 µg/mL → 노모그램 치료선(6시간 약 100 µg/mL) 위",
+    "치료선 위 → 간 수치와 상관없이 정맥 N-아세틸시스테인"
+   ],
+   "key": [
+    {
+     "item": "6 hours after she ingested thirty 500-mg tablets of acetaminophen",
+     "why": "복용 시각이 분명한 단회 급성 복용 — 노모그램 적용",
+     "also": []
+    },
+    {
+     "item": "acetaminophen concentration of 180 µg/mL",
+     "why": "치료선 위",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum salicylate and ethanol are undetectable",
+     "why": "동반 중독 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "alanine aminotransferase 31 U/L",
+     "why": "간 손상은 24시간 뒤에 나타난다 — 결정을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "She is alert and oriented",
+     "why": "아세트아미노펜 초기에는 증상이 적다 — 중증도를 낮추지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "복용 시각이 분명한 아세트아미노펜 단회 과량 복용이고 6시간 농도 180 µg/mL 로 노모그램 치료선 위다. 간 수치가 정상이어도 정맥 N-아세틸시스테인을 바로 시작하며, 6시간이 지나 활성탄의 이득은 적다.",
+   "switch": {
+    "choice": "A",
+    "condition": "복용 1시간 안에 깨어 있는 상태로 왔다면 활성탄을 먼저 주고 4시간 농도를 기다린다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0388",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "산과 — 통증 없는 2삼분기 유산이 두 번 있었던 임신부",
+  "type": "산과 — 통증 없는 2삼분기 유산이 두 번 있었던 임신부",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-20",
+  "vignette": "32세 여자(임신 3회, 출산 0회)가 임신 12주에 산전 진찰을 받으러 왔다. 첫 임신은 19주에, 둘째 임신은 20주에 배가 아프거나 출혈이 없었는데 진찰에서 자궁경부가 이미 4 cm 열려 있어 태아를 잃었다. 두 번 모두 양막 파열이나 감염 소견은 없었다. 원추절제술을 받은 적이 있다. 지금은 증상이 없다. 혈압 112/70 mmHg 이다. 질경 검사에서 자궁경부는 닫혀 있고 출혈이나 분비물은 없다. 초음파에서 태아 1명, 머리엉덩길이는 12주에 맞고 태아 심박동이 있으며 자궁경부 길이는 34 mm 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "16주부터 니페디핀 예방 투여",
+   "임신 12~14주 자궁경부 원형결찰술",
+   "16주부터 2주마다 자궁경부 길이 초음파 추적",
+   "질 프로게스테론 단독 투여",
+   "임신 기간 내내 침상 안정"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 자궁수축·출혈 없이 자궁경부가 열려 생긴 2삼분기 유산이 두 번 있고 원추절제술의 과거력도 있어 자궁경부무력증이다. 통증 없는 개대에 의한 2삼분기 손실이 한 번 이상이면 지금 자궁경부 길이가 정상이어도 임신 12~14주에 과거력 기반 원형결찰술을 한다.\n- 원리: <b>자궁경부무력증의 기전</b>: 자궁경부는 콜라겐이 많은 결합조직으로, 임신 중 태아·양수의 무게를 버티는 문 역할을 한다. 원추절제술·반복 확장술·선천적 결합조직 이상으로 이 조직이 약하면 자궁수축 없이도 2삼분기에 경부가 짧아지고 열리며, 양막이 질 쪽으로 빠져나와 터지거나 감염되어 유산된다. 진통이 없다는 점이 조기진통과 다르다.<br> <b>왜 12~14주에 묶는가</b>: 염색체 이상에 의한 자연유산 대부분이 지나고(1삼분기 초음파·선별 확인 뒤), 경부가 열리기 시작하는 16~24주보다 앞선 때다. 경부를 실로 둘러 묶어 기계적으로 닫아 두고 36~37주에 푼다.<br> <b>적응증 세 가지</b>: ① 과거력 — 통증 없는 개대로 2삼분기 손실 1회 이상 ② 초음파 — 이전 자연 조산이 있고 24주 전 경부 길이 25 mm 미만 ③ 진찰 — 2삼분기에 이미 경부가 열림(응급 결찰). 이 환자는 ①에 해당해 경부 길이와 상관없이 묶는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">과거력 기반 결찰(정답)</th><th>경부 길이 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>통증 없는 개대로 <b>2삼분기 손실 1회 이상</b></td><td>이전 자연 조산(진통·양막 파열)이 있으나 무력증 병력은 뚜렷하지 않음</td></tr> <tr><td>시점</td><td>12~14주, 경부 길이와 무관</td><td>16~24주 2주마다 측정, 25 mm 미만이면 결찰</td></tr> <tr><td>근거가 되는 정보</td><td>과거 임신 경과</td><td>이번 임신의 초음파</td></tr> </tbody></table> 과거 손실이 진통 없는 개대였는지가 가른다. 진통이나 양막 파열로 시작된 조산이었다면 추적하다가 경부가 짧아질 때 결찰한다.\n- 오답 이유:\n  - ① 니페디핀 같은 자궁수축 억제제는 34주 전 진통이 시작되었을 때 스테로이드 투여 시간을 벌려고 쓰며, 수축 없는 개대는 막지 못한다.\n  - ③ 자궁경부 길이 추적은 이전 자연 조산이 진통이나 양막 파열로 시작되어 무력증 병력이 뚜렷하지 않을 때 정답이 된다.\n  - ④ 질 프로게스테론 단독은 조산 과거력 없이 이번 임신 중 초음파에서 경부가 20 mm 이하로 짧게 발견되었을 때 정답이 된다.\n  - ⑤ 침상 안정은 조산을 줄인다는 근거가 없고 혈전색전증·근력 저하를 늘려 어떤 경우에도 권하지 않는다.\n- 함정: 이번 임신의 경부 길이가 34 mm 로 정상이라 추적을 고르는 것 — 통증 없는 개대에 의한 2삼분기 손실의 과거력만으로 결찰 적응증이 된다.\n- 학습목표: 통증 없는 자궁경부 개대로 2삼분기 유산이 반복된 과거력을 자궁경부무력증으로 판단하고, 임신 12~14주에 과거력 기반 자궁경부 원형결찰술을 선택한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 142: Cerclage for the management of cervical insufficiency. Obstet Gynecol 2014;123:372-379 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Abortion — cervical insufficiency",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "자궁수축·출혈 없이 자궁경부가 열려 생긴 2삼분기 유산이 두 번 있고 원추절제술의 과거력도 있어 자궁경부무력증이다. 통증 없는 개대에 의한 2삼분기 손실이 한 번 이상이면 지금 자궁경부 길이가 정상이어도 임신 12~14주에 과거력 기반 원형결찰술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>자궁경부무력증의 기전</b>: 자궁경부는 콜라겐이 많은 결합조직으로, 임신 중 태아·양수의 무게를 버티는 문 역할을 한다. 원추절제술·반복 확장술·선천적 결합조직 이상으로 이 조직이 약하면 자궁수축 없이도 2삼분기에 경부가 짧아지고 열리며, 양막이 질 쪽으로 빠져나와 터지거나 감염되어 유산된다. 진통이 없다는 점이 조기진통과 다르다.<br> <b>왜 12~14주에 묶는가</b>: 염색체 이상에 의한 자연유산 대부분이 지나고(1삼분기 초음파·선별 확인 뒤), 경부가 열리기 시작하는 16~24주보다 앞선 때다. 경부를 실로 둘러 묶어 기계적으로 닫아 두고 36~37주에 푼다.<br> <b>적응증 세 가지</b>: ① 과거력 — 통증 없는 개대로 2삼분기 손실 1회 이상 ② 초음파 — 이전 자연 조산이 있고 24주 전 경부 길이 25 mm 미만 ③ 진찰 — 2삼분기에 이미 경부가 열림(응급 결찰). 이 환자는 ①에 해당해 경부 길이와 상관없이 묶는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">과거력 기반 결찰(정답)</th><th>경부 길이 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>통증 없는 개대로 <b>2삼분기 손실 1회 이상</b></td><td>이전 자연 조산(진통·양막 파열)이 있으나 무력증 병력은 뚜렷하지 않음</td></tr> <tr><td>시점</td><td>12~14주, 경부 길이와 무관</td><td>16~24주 2주마다 측정, 25 mm 미만이면 결찰</td></tr> <tr><td>근거가 되는 정보</td><td>과거 임신 경과</td><td>이번 임신의 초음파</td></tr> </tbody></table> 과거 손실이 진통 없는 개대였는지가 가른다. 진통이나 양막 파열로 시작된 조산이었다면 추적하다가 경부가 짧아질 때 결찰한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 니페디핀 같은 자궁수축 억제제는 34주 전 진통이 시작되었을 때 스테로이드 투여 시간을 벌려고 쓰며, 수축 없는 개대는 막지 못한다.\n③ 자궁경부 길이 추적은 이전 자연 조산이 진통이나 양막 파열로 시작되어 무력증 병력이 뚜렷하지 않을 때 정답이 된다.\n④ 질 프로게스테론 단독은 조산 과거력 없이 이번 임신 중 초음파에서 경부가 20 mm 이하로 짧게 발견되었을 때 정답이 된다.\n⑤ 침상 안정은 조산을 줄인다는 근거가 없고 혈전색전증·근력 저하를 늘려 어떤 경우에도 권하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "이번 임신의 경부 길이가 34 mm 로 정상이라 추적을 고르는 것 — 통증 없는 개대에 의한 2삼분기 손실의 과거력만으로 결찰 적응증이 된다."
+   },
+   {
+    "k": "학습목표",
+    "v": "통증 없는 자궁경부 개대로 2삼분기 유산이 반복된 과거력을 자궁경부무력증으로 판단하고, 임신 12~14주에 과거력 기반 자궁경부 원형결찰술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 142: Cerclage for the management of cervical insufficiency. Obstet Gynecol 2014;123:372-379 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Abortion — cervical insufficiency"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "통증 없는 경부 개대로 2삼분기 손실이 반복된 자궁경부무력증이므로 경부 길이와 상관없이 12~14주에 원형결찰술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "과거 손실이 진통·출혈 없는 경부 개대였는가 — 그렇다면 과거력만으로 결찰한다",
+   "steps": 2,
+   "chain": [
+    "배가 아프거나 출혈 없이 경부가 열린 19주·20주 손실 + 원추절제술 → 자궁경부무력증",
+    "자궁경부무력증의 2삼분기 손실 ≥ 1회 → 12~14주 과거력 기반 원형결찰술"
+   ],
+   "key": [
+    {
+     "item": "배가 아프거나 출혈이 없었는데 진찰에서 자궁경부가 이미 4 cm 열려 있어",
+     "why": "통증 없는 개대 — 무력증의 핵심 병력",
+     "also": []
+    },
+    {
+     "item": "첫 임신은 19주에, 둘째 임신은 20주에",
+     "why": "2삼분기 손실",
+     "also": []
+    },
+    {
+     "item": "원추절제술을 받은 적이 있다",
+     "why": "경부 조직 약화의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양막 파열이나 감염 소견은 없었다",
+     "why": "조기양막파열·융모양막염에 의한 손실 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "머리엉덩길이는 12주에 맞고 태아 심박동이 있으며",
+     "why": "살아 있는 임신을 확인해야 결찰한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "자궁경부 길이는 34 mm",
+     "why": "지금은 정상 — 과거력 기반 적응증이라 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "진통·출혈 없이 경부가 열려 19주·20주에 두 번 유산했고 원추절제술 병력이 있다. 자궁경부무력증이며, 지금 경부 길이가 정상이어도 과거력만으로 12~14주에 원형결찰술을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "이전 조산이 진통이나 양막 파열로 시작되었다면 16~24주에 경부 길이를 추적하다 25 mm 미만일 때 결찰한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0387",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "호흡기 — 고탄산혈증 산증을 동반한 COPD 급성 악화",
+  "type": "호흡기 — 고탄산혈증 산증을 동반한 COPD 급성 악화",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-20",
+  "vignette": "A 68-year-old man is brought to the emergency department because of a 3-day history of increasing shortness of breath and cough productive of purulent sputum. He has chronic obstructive pulmonary disease and a 50-pack-year smoking history. His temperature is 37.9°C (100.2°F), pulse is 112/min, respirations are 30/min, and blood pressure is 146/88 mm Hg. He is using accessory muscles but is alert, follows commands, and can clear his secretions. There are diffuse expiratory wheezes. Arterial blood gas analysis while receiving oxygen by nasal cannula at 2 L/min shows pH 7.28, PaCO2 68 mm Hg, and PaO2 62 mm Hg. A chest x-ray shows hyperinflation without consolidation. Nebulized albuterol and ipratropium, intravenous methylprednisolone, and oral doxycycline are given.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Noninvasive positive-pressure ventilation",
+   "Endotracheal intubation and mechanical ventilation",
+   "Oxygen by nonrebreather mask to keep oxygen saturation above 98%",
+   "Intravenous aminophylline infusion",
+   "Intravenous sodium bicarbonate infusion"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: He has an exacerbation of COPD with acute respiratory acidosis (pH 7.28, PaCO2 68 mm Hg) despite bronchodilators and corticosteroids. Because he is alert, cooperative, hemodynamically stable, and able to clear secretions, noninvasive positive-pressure ventilation is indicated; it lowers the need for intubation and mortality in this setting.\n- 원리: <b>Why the CO2 rises</b>: in an exacerbation, airway inflammation and mucus raise resistance, so expiration is not finished before the next breath (dynamic hyperinflation and intrinsic PEEP). The flattened diaphragm works at a mechanical disadvantage, breaths become rapid and shallow, dead-space fraction increases, and alveolar ventilation falls — PaCO2 rises faster than the kidneys can compensate, so pH drops.<br> <b>How NIV helps</b>: inspiratory pressure support increases tidal volume and unloads the fatigued diaphragm, while expiratory pressure offsets intrinsic PEEP so each breath needs less effort to trigger. Alveolar ventilation rises and PaCO2 falls, usually within 1–2 hours.<br> <b>Who can use it</b>: NIV needs a patient who protects the airway — awake, cooperative, able to clear secretions, and hemodynamically stable. Recheck arterial blood gases at 1–2 hours; if pH and PaCO2 do not improve or mental status worsens, intubate.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">NIV (answer)</th><th>Intubation (closest distractor)</th></tr></thead><tbody> <tr><td>Fits when</td><td>pH &lt; 7.35 and PaCO2 &gt; 45 mm Hg, <b>alert and cooperative</b></td><td>Coma or deteriorating mental status, apnea, shock</td></tr> <tr><td>Airway</td><td>Patient protects it and clears secretions</td><td>Cannot protect it, copious secretions, vomiting</td></tr> <tr><td>After NIV fails</td><td>—</td><td>pH and PaCO2 worse at 1–2 h despite NIV</td></tr> </tbody></table> The blood gas alone does not decide; mental status and airway protection do. The same pH 7.28 in a somnolent patient who cannot clear secretions would call for intubation.\n- 오답 이유:\n  - (B) Intubation would be correct if he were obtunded, unable to clear secretions, hemodynamically unstable, or worsening after a trial of noninvasive ventilation.\n  - (C) High-flow oxygen would be correct in hypoxemia without CO2 retention; here, oxygen saturation above 98% worsens hypercapnia, so the target is 88% to 92%.\n  - (D) Aminophylline would be considered only for refractory bronchospasm, as it adds little to inhaled bronchodilators and causes arrhythmias and seizures.\n  - (E) Sodium bicarbonate would be correct for severe metabolic acidosis; this acidosis is respiratory and is corrected by increasing ventilation.\n- 함정: Equating a pH of 7.28 with the need to intubate — an alert patient who protects his airway gets a trial of noninvasive ventilation first.\n- 학습목표: COPD 급성 악화에서 pH 7.35 미만·PaCO2 상승의 고탄산혈증 산증이 있고 의식·협조가 유지되면 기관삽관 전에 비침습적 양압환기를 선택한다\n- 근거·출처: Global Initiative for Chronic Obstructive Lung Disease. GOLD 2024 Report. Ch. Management of Exacerbations · Rochwerg B, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J 2017;50:1602426",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has an exacerbation of COPD with acute respiratory acidosis (pH 7.28, PaCO2 68 mm Hg) despite bronchodilators and corticosteroids. Because he is alert, cooperative, hemodynamically stable, and able to clear secretions, noninvasive positive-pressure ventilation is indicated; it lowers the need for intubation and mortality in this setting."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the CO2 rises</b>: in an exacerbation, airway inflammation and mucus raise resistance, so expiration is not finished before the next breath (dynamic hyperinflation and intrinsic PEEP). The flattened diaphragm works at a mechanical disadvantage, breaths become rapid and shallow, dead-space fraction increases, and alveolar ventilation falls — PaCO2 rises faster than the kidneys can compensate, so pH drops.<br> <b>How NIV helps</b>: inspiratory pressure support increases tidal volume and unloads the fatigued diaphragm, while expiratory pressure offsets intrinsic PEEP so each breath needs less effort to trigger. Alveolar ventilation rises and PaCO2 falls, usually within 1–2 hours.<br> <b>Who can use it</b>: NIV needs a patient who protects the airway — awake, cooperative, able to clear secretions, and hemodynamically stable. Recheck arterial blood gases at 1–2 hours; if pH and PaCO2 do not improve or mental status worsens, intubate."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">NIV (answer)</th><th>Intubation (closest distractor)</th></tr></thead><tbody> <tr><td>Fits when</td><td>pH &lt; 7.35 and PaCO2 &gt; 45 mm Hg, <b>alert and cooperative</b></td><td>Coma or deteriorating mental status, apnea, shock</td></tr> <tr><td>Airway</td><td>Patient protects it and clears secretions</td><td>Cannot protect it, copious secretions, vomiting</td></tr> <tr><td>After NIV fails</td><td>—</td><td>pH and PaCO2 worse at 1–2 h despite NIV</td></tr> </tbody></table> The blood gas alone does not decide; mental status and airway protection do. The same pH 7.28 in a somnolent patient who cannot clear secretions would call for intubation."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Intubation would be correct if he were obtunded, unable to clear secretions, hemodynamically unstable, or worsening after a trial of noninvasive ventilation.\n(C) High-flow oxygen would be correct in hypoxemia without CO2 retention; here, oxygen saturation above 98% worsens hypercapnia, so the target is 88% to 92%.\n(D) Aminophylline would be considered only for refractory bronchospasm, as it adds little to inhaled bronchodilators and causes arrhythmias and seizures.\n(E) Sodium bicarbonate would be correct for severe metabolic acidosis; this acidosis is respiratory and is corrected by increasing ventilation."
+   },
+   {
+    "k": "함정",
+    "v": "Equating a pH of 7.28 with the need to intubate — an alert patient who protects his airway gets a trial of noninvasive ventilation first."
+   },
+   {
+    "k": "학습목표",
+    "v": "COPD 급성 악화에서 pH 7.35 미만·PaCO2 상승의 고탄산혈증 산증이 있고 의식·협조가 유지되면 기관삽관 전에 비침습적 양압환기를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Global Initiative for Chronic Obstructive Lung Disease. GOLD 2024 Report. Ch. Management of Exacerbations · Rochwerg B, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J 2017;50:1602426"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "약물 치료에도 pH 7.28·PaCO2 68 mm Hg 의 고탄산혈증 산증이 있고 의식·협조·분비물 배출이 유지되므로 비침습적 양압환기를 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "의식과 기도 보호 — 깨어 있고 지시를 따르며 분비물을 뱉을 수 있다",
+   "steps": 2,
+   "chain": [
+    "COPD + 고름 가래·숨참 악화 + pH 7.28·PaCO2 68 → 급성 악화의 고탄산혈증 산증",
+    "고탄산혈증 산증 + 의식·협조·분비물 배출 유지 → 비침습적 양압환기"
+   ],
+   "key": [
+    {
+     "item": "pH 7.28, PaCO2 68 mm Hg",
+     "why": "급성 호흡산증 — 환기 보조 적응증",
+     "also": []
+    },
+    {
+     "item": "is alert, follows commands, and can clear his secretions",
+     "why": "NIV 를 쓸 수 있는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "blood pressure is 146/88 mm Hg",
+     "why": "혈역학적 불안정이 없다 — 즉시 삽관 필요성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "PaO2 62 mm Hg",
+     "why": "산소는 포화도 88~92 % 목표로만 — 과다 산소는 CO2 를 올린다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "hyperinflation without consolidation",
+     "why": "폐렴·기흉이 없다 — 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "COPD 급성 악화로 약물 치료에도 pH 7.28·PaCO2 68 mm Hg 의 호흡산증이 있다. 깨어 있고 협조하며 분비물을 뱉을 수 있으므로 기관삽관 전에 비침습적 양압환기를 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "의식이 처지고 분비물을 뱉지 못하거나 NIV 1~2시간 뒤에도 pH 가 나빠졌다면 기관삽관이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0386",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 소화기·병리·외과·영상판독·순환기·호흡기·산과·응급·감염·부인과·소아·내분비)",
+  "subtopic": "순환기 — 판막 질환 없는 심방세동의 뇌졸중 예방",
+  "type": "순환기 — 판막 질환 없는 심방세동의 뇌졸중 예방",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-20",
+  "vignette": "72세 여자가 1주 전부터 가슴이 두근거려 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 뇌졸중이나 출혈의 과거력은 없다. 혈압 134/82 mmHg, 맥박 불규칙하게 96회/분이다. 심전도에서 P파 없이 불규칙한 RR 간격을 보인다. 혈청 크레아티닌 0.9 mg/dL, 혈색소 13.1 g/dL, 혈소판 230,000/mm³ 이다. 심초음파에서 좌심실 박출률 58 %, 판막 협착이나 역류는 없다. 심박수는 베타차단제로 조절하기로 하였다.",
+  "question": "뇌졸중 예방을 위해 가장 적절한 것은?",
+  "options": [
+   "아픽사반 투여",
+   "와파린 투여(목표 INR 2~3)",
+   "아스피린 단독 투여",
+   "아스피린과 클로피도그렐 병용",
+   "항혈전제 없이 경과 관찰"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: P파 없이 불규칙한 RR 간격은 심방세동이다. 여성(1점)·65~74세(1점)·고혈압(1점)·당뇨병(1점)으로 CHA2DS2-VASc 4점이라 경구 항응고가 필요하다. 기계판막이나 중등도 이상 승모판협착이 없는 심방세동에서는 직접 경구 항응고제가 와파린보다 두개내출혈이 적고 효과는 같거나 나아 먼저 권고된다.\n- 원리: <b>왜 항응고인가</b>: 심방세동에서는 좌심방, 특히 좌심방이에서 혈류가 고여 적색 혈전(피브린·적혈구)이 생기고 이것이 뇌로 날아간다. 혈소판이 중심인 동맥 혈전이 아니므로 아스피린은 예방 효과가 작고, 응고 인자를 막는 약이 필요하다.<br> <b>점수로 정하는 이유</b>: CHA2DS2-VASc(심부전·고혈압·75세 이상 2점·당뇨병·뇌졸중 2점·혈관 질환·65~74세·여성)는 연간 뇌졸중 위험을 나눈다. 남자 2점·여자 3점 이상이면 항응고의 이익이 출혈 위험보다 커서 권고한다.<br> <b>왜 직접 경구 항응고제가 먼저인가</b>: 아픽사반(Xa 억제)·다비가트란(트롬빈 억제)은 고정 용량으로 INR 감시가 필요 없고, 큰 임상시험에서 두개내출혈이 와파린의 절반가량이었다. 단, 기계판막과 중등도 이상 승모판협착에서는 효과가 입증되지 않아 와파린을 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아픽사반(정답)</th><th>와파린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>판막 질환 없는 심방세동</td><td><b>기계판막</b>, 중등도 이상 승모판협착, 중증 신부전 일부</td></tr> <tr><td>감시</td><td>정기 INR 불필요, 신기능에 따라 용량 조절</td><td>INR 2~3 유지(기계 승모판 2.5~3.5)</td></tr> <tr><td>두개내출혈</td><td>와파린보다 적음</td><td>기준</td></tr> </tbody></table> 같은 「항응고」이므로 판막 상태가 고르는 기준이다. 이 환자는 판막 협착·역류가 없어 직접 경구 항응고제가 먼저다.\n- 오답 이유:\n  - ② 와파린은 기계판막이 있거나 중등도 이상 승모판협착이 동반된 심방세동일 때 정답이 되며, 이 환자는 판막 이상이 없다.\n  - ③ 아스피린 단독은 심방 혈전 예방 효과가 작고 출혈은 크게 줄지 않아, 관상동맥 질환의 이차 예방처럼 동맥 혈전이 문제일 때 쓴다.\n  - ④ 이중 항혈소판은 관상동맥 스텐트 직후에 맞으며, 심방세동 뇌졸중 예방에서는 항응고보다 효과가 낮고 출혈은 비슷하다.\n  - ⑤ 경과 관찰은 여성에서 성별 외 위험 인자가 없는 CHA2DS2-VASc 1점일 때 정답이 되며, 이 환자는 4점이다.\n- 함정: 오래 써 온 표준이라 와파린을 고르는 것 — 판막 질환이 없는 심방세동에서는 직접 경구 항응고제가 먼저 권고된다.\n- 학습목표: 판막 질환이 없는 심방세동에서 CHA2DS2-VASc 점수로 항응고 적응증을 정하고, 기계판막·중등도 이상 승모판협착이 없으면 와파린보다 직접 경구 항응고제를 선택한다\n- 근거·출처: Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156 · Granger CB, et al. Apixaban versus warfarin in patients with atrial fibrillation (ARISTOTLE). N Engl J Med 2011;365:981-992",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "P파 없이 불규칙한 RR 간격은 심방세동이다. 여성(1점)·65~74세(1점)·고혈압(1점)·당뇨병(1점)으로 CHA2DS2-VASc 4점이라 경구 항응고가 필요하다. 기계판막이나 중등도 이상 승모판협착이 없는 심방세동에서는 직접 경구 항응고제가 와파린보다 두개내출혈이 적고 효과는 같거나 나아 먼저 권고된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 항응고인가</b>: 심방세동에서는 좌심방, 특히 좌심방이에서 혈류가 고여 적색 혈전(피브린·적혈구)이 생기고 이것이 뇌로 날아간다. 혈소판이 중심인 동맥 혈전이 아니므로 아스피린은 예방 효과가 작고, 응고 인자를 막는 약이 필요하다.<br> <b>점수로 정하는 이유</b>: CHA2DS2-VASc(심부전·고혈압·75세 이상 2점·당뇨병·뇌졸중 2점·혈관 질환·65~74세·여성)는 연간 뇌졸중 위험을 나눈다. 남자 2점·여자 3점 이상이면 항응고의 이익이 출혈 위험보다 커서 권고한다.<br> <b>왜 직접 경구 항응고제가 먼저인가</b>: 아픽사반(Xa 억제)·다비가트란(트롬빈 억제)은 고정 용량으로 INR 감시가 필요 없고, 큰 임상시험에서 두개내출혈이 와파린의 절반가량이었다. 단, 기계판막과 중등도 이상 승모판협착에서는 효과가 입증되지 않아 와파린을 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아픽사반(정답)</th><th>와파린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잘 맞는 경우</td><td>판막 질환 없는 심방세동</td><td><b>기계판막</b>, 중등도 이상 승모판협착, 중증 신부전 일부</td></tr> <tr><td>감시</td><td>정기 INR 불필요, 신기능에 따라 용량 조절</td><td>INR 2~3 유지(기계 승모판 2.5~3.5)</td></tr> <tr><td>두개내출혈</td><td>와파린보다 적음</td><td>기준</td></tr> </tbody></table> 같은 「항응고」이므로 판막 상태가 고르는 기준이다. 이 환자는 판막 협착·역류가 없어 직접 경구 항응고제가 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 와파린은 기계판막이 있거나 중등도 이상 승모판협착이 동반된 심방세동일 때 정답이 되며, 이 환자는 판막 이상이 없다.\n③ 아스피린 단독은 심방 혈전 예방 효과가 작고 출혈은 크게 줄지 않아, 관상동맥 질환의 이차 예방처럼 동맥 혈전이 문제일 때 쓴다.\n④ 이중 항혈소판은 관상동맥 스텐트 직후에 맞으며, 심방세동 뇌졸중 예방에서는 항응고보다 효과가 낮고 출혈은 비슷하다.\n⑤ 경과 관찰은 여성에서 성별 외 위험 인자가 없는 CHA2DS2-VASc 1점일 때 정답이 되며, 이 환자는 4점이다."
+   },
+   {
+    "k": "함정",
+    "v": "오래 써 온 표준이라 와파린을 고르는 것 — 판막 질환이 없는 심방세동에서는 직접 경구 항응고제가 먼저 권고된다."
+   },
+   {
+    "k": "학습목표",
+    "v": "판막 질환이 없는 심방세동에서 CHA2DS2-VASc 점수로 항응고 적응증을 정하고, 기계판막·중등도 이상 승모판협착이 없으면 와파린보다 직접 경구 항응고제를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156 · Granger CB, et al. Apixaban versus warfarin in patients with atrial fibrillation (ARISTOTLE). N Engl J Med 2011;365:981-992"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CHA2DS2-VASc 4점의 판막 질환 없는 심방세동이므로 직접 경구 항응고제를 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "판막 상태 — 기계판막·중등도 이상 승모판협착이 없다",
+   "steps": 2,
+   "chain": [
+    "P파 없이 불규칙한 RR + 여성·72세·고혈압·당뇨병 → 심방세동, CHA2DS2-VASc 4점 → 항응고 필요",
+    "판막 협착·역류 없음 → 와파린보다 직접 경구 항응고제(아픽사반)"
+   ],
+   "key": [
+    {
+     "item": "P파 없이 불규칙한 RR 간격",
+     "why": "심방세동",
+     "also": []
+    },
+    {
+     "item": "고혈압과 제2형 당뇨병",
+     "why": "CHA2DS2-VASc 각 1점",
+     "also": []
+    },
+    {
+     "item": "판막 협착이나 역류는 없다",
+     "why": "직접 경구 항응고제를 쓸 수 있는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "혈청 크레아티닌 0.9 mg/dL",
+     "why": "정상 신기능 — 용량 감량이 필요 없다",
+     "also": []
+    },
+    {
+     "item": "뇌졸중이나 출혈의 과거력은 없다",
+     "why": "항응고의 금기가 될 출혈이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "좌심실 박출률 58 %",
+     "why": "심부전 점수 없음 — 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "여성·72세·고혈압·당뇨병으로 CHA2DS2-VASc 4점인 심방세동이고 판막 이상이 없다. 항응고가 필요하며, 판막 질환이 없으므로 와파린보다 직접 경구 항응고제가 먼저다.",
+   "switch": {
+    "choice": "B",
+    "condition": "기계 승모판막을 가졌거나 중등도 이상 승모판협착이 있었다면 와파린이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261020T202818Z_일일영상_2026-10-21_12units_12q_dff34755",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0374",
   "exam": "imaging",
   "style": "kmle_style",
