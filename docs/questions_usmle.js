@@ -23671,5 +23671,1132 @@ window.USMLE_QUESTIONS = [
    }
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0218",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pharmacology",
+  "subject_file": "Pharmacology",
+  "subtopic": "Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots",
+  "type": "Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots",
+  "difficulty": 3,
+  "created": "2026-10-22",
+  "vignette": "A 44-year-old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14-hour flight. She declined injections, and she was started on oral warfarin 10 mg daily; no other anticoagulant was given. Her mother had three episodes of deep venous thrombosis before the age of 50 years. The patient has no other medical conditions and takes no other medications. She has not received heparin at any time. Her vital signs are shown. Examination shows several sharply demarcated, exquisitely tender, purple-black plaques with overlying hemorrhagic bullae on both thighs and the lower abdomen; the surrounding skin is red. The lesions are flat and not palpable as raised purpura. The left calf is mildly swollen. There is no bleeding from the gums, nose or venipuncture sites. Laboratory results are shown. A skin biopsy shows fibrin thrombi occluding dermal and subcutaneous venules with hemorrhagic necrosis and no inflammation of the vessel walls.",
+  "question": "Which of the following best explains the pathogenesis of this patient's skin lesions?",
+  "options": [
+   "Deposition of immune complexes in the walls of dermal postcapillary venules",
+   "A faster fall in protein C activity than in prothrombin activity",
+   "Depletion of factor VII leading to bleeding into the dermis",
+   "Calcification of the media of dermal and subcutaneous arterioles",
+   "Antibodies against phospholipid-bound β2-glycoprotein I"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 2단계 추론. ① 비경구 항응고제 없이 와파린 고용량 시작 4일째, 허벅지·아랫배(지방 부위)의 통증성 자흑색 판·출혈성 물집, 생검상 소정맥 피브린 혈전, 어머니의 반복 DVT → 와파린 유발 피부 괴사(단백 C 결핍 의심). ② 와파린은 비타민 K 의존 단백을 모두 줄이지만 단백 C(반감기 ~8시간)가 프로트롬빈(~60시간)보다 먼저 떨어져 첫 며칠은 일시적 과응고 → 미세혈관 혈전.\n- 오답감별:\n  - (A) 면역 복합체 혈관염(백혈구파괴 혈관염)은 촉지 자반을 만들고 생검에 혈관벽 염증이 있다 — 이 병변은 평평하고 생검은 염증 없는 혈전이다.\n  - (C) 인자 VII 은 가장 먼저 떨어지지만 그 결과는 INR 상승·출혈이다. INR 은 치료 범위이고 다른 출혈이 없으며 생검은 혈전이다.\n  - (D) 칼시필락시스(소동맥 중막 석회화)도 지방 부위의 통증성 괴사를 만들지만 말기 신부전에서 생기고 생검에 석회화가 보인다 — 신기능·칼슘 정상, 와파린과 시간 관계가 이 시점과 다르다.\n  - (E) 항인지질 항체 증후군도 혈전성 피부 괴사를 일으키지만, 와파린 시작 직후의 발병 시점과 가족력이 와파린 피부 괴사를 가리킨다.\n- 임상핵심: 와파린은 시작 첫 며칠 단백 C 가 먼저 떨어져 과응고가 된다 — 그래서 급성 혈전에는 반드시 비경구 항응고제와 겹쳐 시작한다.\n- 출처: ACCP 9th ed. Oral anticoagulant therapy (Chest 2012); Nazarian RM, et al. Warfarin-induced skin necrosis (J Am Acad Dermatol 2009).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 비경구 항응고제 없이 와파린 고용량 시작 4일째, 허벅지·아랫배(지방 부위)의 통증성 자흑색 판·출혈성 물집, 생검상 소정맥 피브린 혈전, 어머니의 반복 DVT → 와파린 유발 피부 괴사(단백 C 결핍 의심). ② 와파린은 비타민 K 의존 단백을 모두 줄이지만 단백 C(반감기 ~8시간)가 프로트롬빈(~60시간)보다 먼저 떨어져 첫 며칠은 일시적 과응고 → 미세혈관 혈전."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 면역 복합체 혈관염(백혈구파괴 혈관염)은 촉지 자반을 만들고 생검에 혈관벽 염증이 있다 — 이 병변은 평평하고 생검은 염증 없는 혈전이다.\n(C) 인자 VII 은 가장 먼저 떨어지지만 그 결과는 INR 상승·출혈이다. INR 은 치료 범위이고 다른 출혈이 없으며 생검은 혈전이다.\n(D) 칼시필락시스(소동맥 중막 석회화)도 지방 부위의 통증성 괴사를 만들지만 말기 신부전에서 생기고 생검에 석회화가 보인다 — 신기능·칼슘 정상, 와파린과 시간 관계가 이 시점과 다르다.\n(E) 항인지질 항체 증후군도 혈전성 피부 괴사를 일으키지만, 와파린 시작 직후의 발병 시점과 가족력이 와파린 피부 괴사를 가리킨다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "와파린은 시작 첫 며칠 단백 C 가 먼저 떨어져 과응고가 된다 — 그래서 급성 혈전에는 반드시 비경구 항응고제와 겹쳐 시작한다."
+   },
+   {
+    "k": "출처",
+    "v": "ACCP 9th ed. Oral anticoagulant therapy (Chest 2012); Nazarian RM, et al. Warfarin-induced skin necrosis (J Am Acad Dermatol 2009)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Ageno W, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S; Nazarian RM, et al. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.2 °C (99.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "88 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "128/78 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "13.0 g/dL",
+    "ref": "12.0–16.0 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "246,000 /mm3",
+    "ref": "150,000–400,000 /mm3"
+   },
+   {
+    "name": "INR",
+    "value": "2.6",
+    "ref": "0.8–1.1"
+   },
+   {
+    "name": "Creatinine",
+    "value": "0.8 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Calcium",
+    "value": "9.3 mg/dL",
+    "ref": "8.5–10.5 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "와파린 시작 — 피부 괴사 예방과 처치\n─────────────────────────────────────────────\n급성 VTE 에 와파린 → 비경구 항응고제(헤파린·LMWH·폰다파리눅스)와 겹쳐 시작\n                   최소 5일 + INR ≥ 2 를 24시간 이상 유지한 뒤 비경구제 중단\n피부 괴사 발생      → 와파린 중단 · 비타민 K · 비경구 항응고(헤파린) 유지\n                   단백 C 결핍이면 단백 C 농축제 또는 신선동결혈장\n재시작              → 헤파린 겹침 아래 저용량에서 서서히\n",
+   "참고문헌": [
+    "Ageno W, Gallus AS, Wittkowsky A, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S.",
+    "Nazarian RM, Van Cott EM, Zembowicz A, Duncan LM. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "와파린을 비경구 항응고제 없이 시작한 지 며칠 만에 생긴 지방 부위의 혈전성 피부 괴사는, 반감기가 짧은 단백 C 가 응고 인자보다 먼저 떨어져 생긴 일시적 과응고로 설명된다.",
+   "rival": [
+    "C",
+    "E"
+   ],
+   "discriminator": "인자 VII 고갈(C)은 출혈을 일으키지만 이 환자는 INR 2.6(치료 범위)이고 잇몸·코 출혈이 없으며 생검은 출혈이 아니라 피브린 혈전이다. 항인지질 항체(E)도 피부 괴사·혈전을 일으키지만 발병 시점이 와파린 시작 4일째와 딱 맞고 어머니의 혈전 가족력이 단백 C 결핍을 가리킨다.",
+   "steps": 2,
+   "chain": [
+    "헤파린 없이 와파린 시작 4일째 + 허벅지·아랫배의 통증성 자흑색 판·출혈성 물집 + 생검 소정맥 피브린 혈전 + 어머니 반복 DVT → 와파린 유발 피부 괴사(단백 C 결핍 의심)",
+    "단백 C 반감기(~8시간) ≪ 프로트롬빈(~60시간) → 첫 며칠은 항응고 단백만 줄어든 과응고 → 미세혈관 혈전"
+   ],
+   "key": [
+    {
+     "item": "she was started on oral warfarin 10 mg daily; no other anticoagulant was given",
+     "why": "비경구 항응고제 겹침(bridging) 없이 고용량 시작 — 단백 C 가 먼저 떨어지는 시기에 보호막이 없다",
+     "also": []
+    },
+    {
+     "item": "Her mother had three episodes of deep venous thrombosis before the age of 50 years",
+     "why": "유전성 혈전성향(단백 C 결핍)을 시사 — 와파린 피부 괴사의 대표적 위험 인자",
+     "also": []
+    },
+    {
+     "item": "purple-black plaques with overlying hemorrhagic bullae on both thighs and the lower abdomen",
+     "why": "지방이 많은 부위의 통증성 괴사 — 전형적 분포",
+     "also": []
+    },
+    {
+     "item": "fibrin thrombi occluding dermal and subcutaneous venules with hemorrhagic necrosis and no inflammation of the vessel walls",
+     "why": "혈전성 과정 — 혈관염(A)과 다르다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "INR",
+     "why": "치료 범위 — 과도한 항응고에 의한 출혈(C) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no bleeding from the gums, nose or venipuncture sites",
+     "why": "전신 출혈 경향 없음 — 인자 결핍성 출혈(C)이 아니다",
+     "also": []
+    },
+    {
+     "item": "The lesions are flat and not palpable as raised purpura",
+     "why": "촉지 자반이 아니다 — 면역 복합체 혈관염(A) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Creatinine",
+     "why": "신기능 정상 — 칼시필락시스(D)의 바탕(말기 신부전) 없음",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She has not received heparin at any time",
+     "why": "헤파린 유발 혈소판 감소증을 떠올릴 여지를 없앤다(혈소판도 정상)",
+     "also": []
+    }
+   ],
+   "summary": "비경구 항응고제 없이 와파린을 시작한 지 4일째 지방 부위에 혈전성 피부 괴사가 생겼고, 어머니의 반복 혈전은 단백 C 결핍을 시사한다. 와파린은 반감기가 짧은 단백 C 를 프로트롬빈보다 먼저 떨어뜨려 첫 며칠 동안 일시적 과응고 상태를 만든다.",
+   "switch": {
+    "choice": "C",
+    "condition": "INR 이 크게 높고(예: 9) 잇몸·주사 부위 출혈과 넓은 반상출혈이 있으며 생검에 혈전이 없다면 과도한 항응고에 의한 출혈이 설명이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.pharm.warfarin-skin-necrosis.protein-c-half-life-mechanism",
+  "distractors": {
+   "C": {
+    "tempting": "와파린은 출혈을 일으키는 약이고, 병변에 출혈성 물집이 있으며 인자 VII 은 반감기가 가장 짧아 가장 먼저 떨어진다.",
+    "answer_first": "인자 VII 이 먼저 떨어지면 INR 이 오를 뿐 혈전은 생기지 않는다. 생검은 소정맥을 막은 피브린 혈전이고 INR 은 치료 범위이며 다른 출혈이 없다 — 출혈이 아니라 혈전성 괴사다. 같은 시기에 짧은 반감기로 떨어지는 단백 C 가 혈전을 설명한다.",
+    "discriminator": "「fibrin thrombi occluding dermal and subcutaneous venules」 · INR 2.6 · 「no bleeding from the gums, nose or venipuncture sites」.",
+    "when_right": "INR 이 과도하게 높고 피부·점막 출혈이 퍼지며 생검에 혈전이 없을 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "항인지질 항체 증후군은 정맥 혈전과 피부 괴사를 함께 일으킨다.",
+    "answer_first": "항인지질 항체도 피부 괴사를 일으킬 수 있지만, 괴사가 와파린을 비경구 항응고제 없이 시작한 지 4일째에 지방 부위에 생긴 시간 관계와 어머니의 반복 정맥 혈전(유전성 단백 C 결핍)이 와파린 유발 피부 괴사를 가리킨다.",
+    "discriminator": "발병 시점(와파린 시작 직후) · 지방 부위 분포 · 가족력.",
+    "when_right": "와파린과 시간 관계가 없고 반복 유산·동맥 혈전·aPTT 연장·혈소판 감소가 있으며 항인지질 항체가 지속 양성일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0219",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Yellow Eyes During Every Cold Since the Newborn Period and a Palpable Spleen in a 7-Year-Old With Prickly Red Cells",
+  "type": "Yellow Eyes During Every Cold Since the Newborn Period and a Palpable Spleen in a 7-Year-Old With Prickly Red Cells",
+  "difficulty": 4,
+  "created": "2026-10-22",
+  "vignette": "A 7-year-old boy is brought to the physician because of fatigue and yellow eyes for 3 days during an upper respiratory tract infection. His parents say that his eyes turn yellow with most colds. As a newborn, he required phototherapy for 6 days and one exchange transfusion. He received two red blood cell transfusions before the age of 3 years and none since then. He takes no medications and has not eaten fava beans or taken antimalarial drugs. His parents are first cousins; they are healthy. His vital signs are shown. He is at the 20th percentile for height. Examination shows pale conjunctivae and scleral icterus. The spleen tip is palpable 3 cm below the left costal margin. Laboratory results are shown. A peripheral blood smear shows scattered red cells with short, evenly spaced, spiky projections; there are no spherocytes, bite cells, Heinz bodies, target cells or sickle cells.",
+  "question": "Deficient activity of which of the following processes is most likely responsible for this patient's anemia?",
+  "options": [
+   "Generation of NADPH by the oxidative pentose phosphate pathway",
+   "Vertical linkage of the membrane skeleton through spectrin and ankyrin",
+   "Attachment of complement regulatory proteins by a glycosylphosphatidylinositol anchor",
+   "ATP generation from the conversion of phosphoenolpyruvate to pyruvate",
+   "Synthesis of β-globin chains in erythroid precursors"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계 추론. ① 신생아기부터 반복 황달·교환수혈, 비장 비대, 망상적혈구·간접 빌리루빈·LDH 상승, 합토글로빈 저하, DAT 음성 → 유전성 비면역 혈관 밖 용혈. ② 구형적혈구 없음·EMA·MCHC 정상(막 아님), G6PD 정상·물린 세포 없음(산화 아님), MCV 정상·표적세포 없음(글로빈 아님) → 해당과정 효소 결핍. ③ 적혈구는 미토콘드리아가 없어 해당과정으로만 ATP 를 만든다 → PK(PEP → 피루브산) 단계의 ATP 결손 → Na⁺/K⁺-ATPase 실패·탈수·경직 → 비장 제거.\n- 오답감별:\n  - (A) G6PD 결핍은 감염 때 용혈이 올 수 있지만 활성이 정상이고 물린 세포·하인츠 소체가 없으며, 유발 요인 사이에도 지속되는 용혈과 맞지 않는다.\n  - (B) 유전성 구형적혈구증은 임상 경과가 비슷하지만 구형적혈구가 없고 EMA 결합·MCHC 가 정상이다.\n  - (C) GPI 앵커 결손(PNH)은 후천성 클론 질환으로 보체에 의한 혈관 내 용혈·혈색소뇨·혈전을 일으킨다 — 신생아기 발병·혈뇨 없음과 맞지 않는다.\n  - (E) β-글로빈 합성 저하(β-지중해빈혈)는 소구성 빈혈과 표적세포를 만든다 — MCV 정상이다.\n- 임상핵심: 막(구형)·G6PD(물린 세포)·글로빈(소구성) 소견이 모두 없는 평생 비면역 용혈은 해당과정 효소, 특히 PK 결핍 — 적혈구의 ATP 는 해당과정에서만 나온다.\n- 출처: Grace RF, Glader B. Red blood cell enzyme disorders (Pediatr Clin North Am 2018); Grace RF, Barcellini W. Management of PK deficiency (Blood 2020).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 신생아기부터 반복 황달·교환수혈, 비장 비대, 망상적혈구·간접 빌리루빈·LDH 상승, 합토글로빈 저하, DAT 음성 → 유전성 비면역 혈관 밖 용혈. ② 구형적혈구 없음·EMA·MCHC 정상(막 아님), G6PD 정상·물린 세포 없음(산화 아님), MCV 정상·표적세포 없음(글로빈 아님) → 해당과정 효소 결핍. ③ 적혈구는 미토콘드리아가 없어 해당과정으로만 ATP 를 만든다 → PK(PEP → 피루브산) 단계의 ATP 결손 → Na⁺/K⁺-ATPase 실패·탈수·경직 → 비장 제거."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) G6PD 결핍은 감염 때 용혈이 올 수 있지만 활성이 정상이고 물린 세포·하인츠 소체가 없으며, 유발 요인 사이에도 지속되는 용혈과 맞지 않는다.\n(B) 유전성 구형적혈구증은 임상 경과가 비슷하지만 구형적혈구가 없고 EMA 결합·MCHC 가 정상이다.\n(C) GPI 앵커 결손(PNH)은 후천성 클론 질환으로 보체에 의한 혈관 내 용혈·혈색소뇨·혈전을 일으킨다 — 신생아기 발병·혈뇨 없음과 맞지 않는다.\n(E) β-글로빈 합성 저하(β-지중해빈혈)는 소구성 빈혈과 표적세포를 만든다 — MCV 정상이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "막(구형)·G6PD(물린 세포)·글로빈(소구성) 소견이 모두 없는 평생 비면역 용혈은 해당과정 효소, 특히 PK 결핍 — 적혈구의 ATP 는 해당과정에서만 나온다."
+   },
+   {
+    "k": "출처",
+    "v": "Grace RF, Glader B. Red blood cell enzyme disorders (Pediatr Clin North Am 2018); Grace RF, Barcellini W. Management of PK deficiency (Blood 2020)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Grace RF, Glader B. Red blood cell enzyme disorders. Pediatr Clin North Am. 2018;65(3):579-595; Grace RF, Barcellini W. Management of pyruvate kinase deficiency in children and adults. Blood. 2020;136(11):1241-1249)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.9 °C (100.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "108 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "20 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "100/62 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "8.3 g/dL",
+    "ref": "11.5–15.5 g/dL"
+   },
+   {
+    "name": "Mean corpuscular volume",
+    "value": "92 μm3",
+    "ref": "77–95 μm3"
+   },
+   {
+    "name": "Mean corpuscular hemoglobin concentration",
+    "value": "33 g/dL",
+    "ref": "31–36 g/dL"
+   },
+   {
+    "name": "Reticulocyte count",
+    "value": "12%",
+    "ref": "0.5–1.5%"
+   },
+   {
+    "name": "Bilirubin, indirect",
+    "value": "3.6 mg/dL",
+    "ref": "0.2–0.8 mg/dL"
+   },
+   {
+    "name": "Lactate dehydrogenase",
+    "value": "610 U/L",
+    "ref": "110–295 U/L"
+   },
+   {
+    "name": "Haptoglobin",
+    "value": "<10 mg/dL",
+    "ref": "30–200 mg/dL"
+   },
+   {
+    "name": "Direct antiglobulin (Coombs) test",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "G6PD activity",
+    "value": "Normal",
+    "ref": "Normal"
+   },
+   {
+    "name": "Eosin-5'-maleimide (EMA) binding",
+    "value": "Normal",
+    "ref": "Normal"
+   },
+   {
+    "name": "Urinalysis",
+    "value": "No blood; urobilinogen increased",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "유전성 비면역 용혈 — 결함 위치로 가르기\n─────────────────────────────────────────────\n막 골격(스펙트린·안키린) → 구형적혈구 · MCHC ↑ · EMA 결합 ↓ · 비장 절제로 호전\n헥소스 일인산 경로(G6PD) → 유발 요인 뒤 급성 · 물린 세포 · 하인츠 소체 · 혈색소뇨\n해당과정(PK)            → 지속 용혈 · 특이 형태 없음(가시 돋친 세포) · 2,3-BPG ↑ · PK 활성 측정\n글로빈(지중해빈혈)       → 소구성(MCV ↓) · 표적세포 · Hb 전기영동\n",
+   "참고문헌": [
+    "Grace RF, Glader B. Red blood cell enzyme disorders. Pediatr Clin North Am. 2018;65(3):579-595.",
+    "Grace RF, Barcellini W. Management of pyruvate kinase deficiency in children and adults. Blood. 2020;136(11):1241-1249."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "평생 이어진 비면역성 혈관 밖 용혈에서 막 골격·G6PD·글로빈 결함 소견이 모두 없으면 해당과정 효소 결핍이고, 적혈구는 해당과정으로만 ATP 를 얻으므로 피루브산 키나아제 단계의 ATP 생성 결손이 원인이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "G6PD 결핍(A)도 감염 때 황달·용혈이 오지만 G6PD 활성이 정상이고 물린 세포·하인츠 소체가 없으며 용혈이 평생 지속된다. 유전성 구형적혈구증(B)도 비장 비대·신생아 황달·감염 때 악화가 같지만 구형적혈구가 없고 EMA 결합·MCHC 가 정상이다.",
+   "steps": 3,
+   "chain": [
+    "신생아기부터 반복 황달 + 비장 비대 + 망상적혈구 12 % + 합토글로빈 저하 + DAT 음성 → 유전성 비면역 혈관 밖 용혈",
+    "구형적혈구 없음·EMA 정상·MCHC 정상 + G6PD 정상·물린 세포 없음 + MCV 정상·표적세포 없음 → 막·산화·글로빈 결함이 아님 → 해당과정 효소 결핍",
+    "적혈구는 미토콘드리아가 없어 ATP 를 해당과정에서만 얻음 → PEP → 피루브산(PK) 단계 ATP 결손 → 이온 펌프 실패·경직 → 비장 제거"
+   ],
+   "key": [
+    {
+     "item": "As a newborn, he required phototherapy for 6 days and one exchange transfusion",
+     "why": "신생아기부터 시작된 용혈 — 선천성 적혈구 결함",
+     "also": []
+    },
+    {
+     "item": "The spleen tip is palpable 3 cm below the left costal margin",
+     "why": "만성 혈관 밖(비장) 용혈",
+     "also": []
+    },
+    {
+     "item": "Reticulocyte count",
+     "why": "골수가 반응하는 용혈성 빈혈",
+     "also": []
+    },
+    {
+     "item": "short, evenly spaced, spiky projections",
+     "why": "탈수·경직된 가시 돋친 적혈구 — PK 결핍에서 보이는 소견(특이적이지는 않다)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Direct antiglobulin (Coombs) test",
+     "why": "면역성 용혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "G6PD activity",
+     "why": "G6PD 결핍(A) 가능성을 낮춘다 — 물린 세포·하인츠 소체도 없다",
+     "also": []
+    },
+    {
+     "item": "Eosin-5'-maleimide (EMA) binding",
+     "why": "막 골격 결함(B) 가능성을 낮춘다 — 구형적혈구 없음·MCHC 정상과 함께",
+     "also": []
+    },
+    {
+     "item": "Mean corpuscular volume",
+     "why": "정상 MCV·표적세포 없음 — 지중해빈혈(E) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Urinalysis",
+     "why": "혈색소뇨 없음 — 혈관 내 용혈(PNH, C)과 맞지 않는다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "His parents are first cousins",
+     "why": "상염색체 열성 유전 가능성 — PK 결핍과 맞지만 그것만으로 진단하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "신생아기부터 이어진 비면역성 혈관 밖 용혈인데 막 골격·G6PD·글로빈 결함을 가리키는 소견이 모두 없어 해당과정 효소 결핍, 가장 흔한 PK 결핍이다. 미토콘드리아가 없는 적혈구는 해당과정으로만 ATP 를 만들므로, PEP → 피루브산 단계의 ATP 결손이 이온 펌프 실패와 경직을 일으켜 비장에서 파괴된다.",
+   "switch": {
+    "choice": "B",
+    "condition": "말초혈액에 구형적혈구가 많고 MCHC 가 높으며 EMA 결합이 감소해 있다면 막 골격(스펙트린·안키린) 결함인 유전성 구형적혈구증이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.biochem.pyruvate-kinase-deficiency.glycolytic-atp-hemolysis",
+  "distractors": {
+   "A": {
+    "tempting": "감기를 앓을 때마다 황달이 생기고 소년이다 — 감염이 산화 스트레스로 G6PD 결핍 용혈을 부른다.",
+    "answer_first": "G6PD 활성이 정상이고 물린 세포·하인츠 소체가 없다. G6PD 결핍은 보통 유발 요인이 있을 때만 급성 혈관 내 용혈을 일으키고 그 사이에는 정상이지만, 이 환자는 망상적혈구 12 %·비장 비대로 평생 용혈이 계속된다.",
+    "discriminator": "「G6PD activity: Normal」 · 「no ... bite cells, Heinz bodies」 · 지속적 비장 비대.",
+    "when_right": "산화 유발 요인(파바콩·프리마퀸·설폰아마이드) 뒤 급성 용혈·혈색소뇨가 오고 물린 세포·하인츠 소체가 보이며, 급성기가 지난 뒤 잰 G6PD 활성이 낮을 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "신생아 황달·비장 비대·감염 때 악화된 용혈 — 유전성 용혈성 빈혈의 가장 흔한 원인은 유전성 구형적혈구증이다.",
+    "answer_first": "막 골격 결함이면 구형적혈구가 보이고 MCHC 가 높으며 EMA 결합이 줄어든다. 셋 다 정상이므로 막이 아니라 세포 안 대사(해당과정) 결함을 찾는다.",
+    "discriminator": "「there are no spherocytes」 · MCHC 33 g/dL · EMA 결합 정상.",
+    "when_right": "구형적혈구가 많고 MCHC 상승·EMA 결합 감소가 있을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0220",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Fever, Wheezing, Diarrhea and Escherichia coli in the Blood Five Weeks Into High-Dose Prednisone in a Man Who Left Rural Ecuador 30 Years Ago",
+  "type": "Fever, Wheezing, Diarrhea and Escherichia coli in the Blood Five Weeks Into High-Dose Prednisone in a Man Who Left Rural Ecuador 30 Years Ago",
+  "difficulty": 4,
+  "created": "2026-10-22",
+  "vignette": "A 63-year-old man is brought to the emergency department because of fever, cough and abdominal pain for 4 days. He has had watery diarrhea, epigastric pain and nausea for 2 weeks and began coughing up blood-streaked sputum 3 days ago. Five weeks ago, he was diagnosed with warm autoimmune hemolytic anemia and started on prednisone 60 mg daily. He grew up on a farm in rural Ecuador, where he often walked barefoot, and moved to Chicago 30 years ago; he has not traveled outside the United States since then. He has no pets. His vital signs are shown. He appears ill. Diffuse expiratory wheezes and scattered crackles are heard over both lungs. The abdomen is diffusely tender without guarding. A pruritic, raised, serpiginous red streak is seen on the lower abdomen and buttocks; his wife says it moved several centimeters over a few hours this morning. Laboratory results are shown. A chest x-ray shows bilateral patchy infiltrates.",
+  "question": "Infection with which of the following organisms is the most likely underlying cause of this patient's condition?",
+  "options": [
+   "Ascaris lumbricoides",
+   "Necator americanus",
+   "Toxocara canis",
+   "Schistosoma mansoni",
+   "Strongyloides stercoralis"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계 추론. ① 고용량 프레드니솔론 5주 + 30년 전 열대 농촌·맨발, 이후 재노출 없음 → 몸 안에 남아 있던 만성 기생충의 재활성화. ② 폐(쌕쌕거림·객혈·양측 침윤) + 장(설사·상복부 통증) + 대장균 균혈증 + 몇 시간 사이 움직이는 엉덩이·아랫배 피부 띠 → 유충이 장벽을 대량으로 뚫는 과다감염. ③ 재노출 없이 수십 년 유지 = 자가감염 → 분선충.\n- 오답감별:\n  - (A) 회충은 유충이 폐를 지나 뢰플러 증후군을 만들지만 몸 안에서 번식 주기를 되풀이하지 못해 30년간 재노출 없이 남지 않고, 균혈증을 일으키지 않는다.\n  - (B) 구충도 맨발 피부 침입·폐 통과를 하지만 자가감염하지 않으며 스테로이드로 과다감염이 되지 않는다.\n  - (C) 개회충(내장 유충 이행증)은 개·고양이 배설물 흙을 먹은 어린이에게 간 비대·호산구 증가를 일으킨다 — 반려동물 없고 성인이며 균혈증과 맞지 않는다.\n  - (D) 만손 주혈흡충은 민물 접촉으로 감염되어 간 섬유화·문맥 고혈압을 일으키고, 스테로이드로 폐·장 과다감염·그람 음성 균혈증을 만들지 않는다.\n- 임상핵심: 재노출 없이 수십 년 뒤 스테로이드로 폐·장·그람 음성 균혈증이 함께 터지면 분선충 과다감염 — 호산구가 정상이어도 배제하지 않는다.\n- 출처: Mejia R, Nutman TB. Strongyloides hyperinfection (Curr Opin Infect Dis 2012); CDC — Strongyloides clinical overview.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 고용량 프레드니솔론 5주 + 30년 전 열대 농촌·맨발, 이후 재노출 없음 → 몸 안에 남아 있던 만성 기생충의 재활성화. ② 폐(쌕쌕거림·객혈·양측 침윤) + 장(설사·상복부 통증) + 대장균 균혈증 + 몇 시간 사이 움직이는 엉덩이·아랫배 피부 띠 → 유충이 장벽을 대량으로 뚫는 과다감염. ③ 재노출 없이 수십 년 유지 = 자가감염 → 분선충."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 회충은 유충이 폐를 지나 뢰플러 증후군을 만들지만 몸 안에서 번식 주기를 되풀이하지 못해 30년간 재노출 없이 남지 않고, 균혈증을 일으키지 않는다.\n(B) 구충도 맨발 피부 침입·폐 통과를 하지만 자가감염하지 않으며 스테로이드로 과다감염이 되지 않는다.\n(C) 개회충(내장 유충 이행증)은 개·고양이 배설물 흙을 먹은 어린이에게 간 비대·호산구 증가를 일으킨다 — 반려동물 없고 성인이며 균혈증과 맞지 않는다.\n(D) 만손 주혈흡충은 민물 접촉으로 감염되어 간 섬유화·문맥 고혈압을 일으키고, 스테로이드로 폐·장 과다감염·그람 음성 균혈증을 만들지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "재노출 없이 수십 년 뒤 스테로이드로 폐·장·그람 음성 균혈증이 함께 터지면 분선충 과다감염 — 호산구가 정상이어도 배제하지 않는다."
+   },
+   {
+    "k": "출처",
+    "v": "Mejia R, Nutman TB. Strongyloides hyperinfection (Curr Opin Infect Dis 2012); CDC — Strongyloides clinical overview."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Mejia R, Nutman TB. Screening, prevention, and treatment for hyperinfection syndrome and disseminated infections caused by Strongyloides stercoralis. Curr Opin Infect Dis. 2012;25(4):458-463; Centers for Disease Control and Prevention. Strongyloides — Clinical overview)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "38.9 °C (102.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "118 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "26 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "96/58 mm Hg"
+   },
+   {
+    "name": "Oxygen saturation",
+    "value": "89% on room air"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "14,800 /mm3",
+    "ref": "4,500–11,000 /mm3"
+   },
+   {
+    "name": "Eosinophils",
+    "value": "1%",
+    "ref": "1–6%"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "10.9 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Creatinine",
+    "value": "1.3 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Blood cultures",
+    "value": "Escherichia coli in 2 of 2 sets",
+    "ref": "No growth"
+   },
+   {
+    "name": "HIV-1/2 antigen/antibody test",
+    "value": "Negative",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "분선충 — 언제 의심하고 무엇을 하나\n─────────────────────────────────────────────\n위험 노출     → 열대·아열대 농촌 거주·맨발(수십 년 전이라도)\n선별          → 고용량·장기 스테로이드, 장기 이식, HTLV-1 감염 전\n               혈청 분선충 항체(± 대변 검사) — 양성이면 이버멕틴 선제 치료\n               검사가 늦어질 상황에선 경험적 이버멕틴 고려\n과다감염      → 이버멕틴 매일(대변 유충 음성 2주까지) · 스테로이드 가능한 한 감량\n               장내 세균 균혈증·수막염에 대한 광범위 항생제 함께\n호산구        → 스테로이드 중에는 정상인 경우가 많다 — 배제 근거가 아니다\n",
+   "참고문헌": [
+    "Mejia R, Nutman TB. Screening, prevention, and treatment for hyperinfection syndrome and disseminated infections caused by Strongyloides stercoralis. Curr Opin Infect Dis. 2012;25(4):458-463.",
+    "Centers for Disease Control and Prevention. Clinical overview of strongyloidiasis."
+   ]
+  },
+  "design": {
+   "target": "진단",
+   "decision": "수십 년 전 유행 지역 노출 뒤 재노출 없이 고용량 스테로이드 중에 폐·장 증상과 장내 그람 음성균 균혈증이 함께 생기면, 몸 안에서 자가감염으로 남아 있던 분선충의 과다감염이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "회충(A)·구충(B)도 유충이 폐를 지나며 기침·쌕쌕거림(뢰플러 증후군)을 일으키지만 사람 몸 안에서 번식 주기를 되풀이하지 못해, 30년 동안 재노출이 없으면 감염이 유지되지 않고 스테로이드로 폭발하지도 않는다. 장내 세균 균혈증과 빠르게 움직이는 엉덩이·아랫배 피부 띠도 분선충을 가리킨다.",
+   "steps": 3,
+   "chain": [
+    "고용량 프레드니솔론 5주 + 30년 전 열대 농촌·맨발, 이후 재노출 없음 → 몸 안에 남아 있던 만성 기생충 감염의 재활성화",
+    "폐(쌕쌕거림·객혈·양측 침윤) + 장(설사·상복부 통증) + 대장균 균혈증 + 몇 시간 사이 움직이는 피부 띠 → 유충이 장벽을 대량으로 뚫는 과다감염",
+    "재노출 없이 수십 년 지속 = 사람 몸 안에서 생활사를 마치는 자가감염 → 분선충(회충·구충은 불가)"
+   ],
+   "key": [
+    {
+     "item": "started on prednisone 60 mg daily",
+     "why": "세포성 면역 억제 — 과다감염의 가장 흔한 유발 요인",
+     "also": []
+    },
+    {
+     "item": "moved to Chicago 30 years ago; he has not traveled outside the United States since then",
+     "why": "재노출 없이 수십 년 — 자가감염하는 선충만 남아 있을 수 있다",
+     "also": []
+    },
+    {
+     "item": "he often walked barefoot",
+     "why": "흙 속 사상형 유충의 피부 침입 경로(구충과 공통이라 단독으로는 가르지 못한다)",
+     "also": []
+    },
+    {
+     "item": "Blood cultures",
+     "why": "대장균 균혈증 — 장벽을 뚫는 유충이 장내 세균을 끌고 들어간다",
+     "also": []
+    },
+    {
+     "item": "A pruritic, raised, serpiginous red streak is seen on the lower abdomen and buttocks",
+     "why": "엉덩이·아랫배에서 빠르게 움직이는 피부 띠 — 항문 주위 피부로 재침입하는 유충",
+     "also": []
+    },
+    {
+     "item": "A chest x-ray shows bilateral patchy infiltrates",
+     "why": "폐를 지나는 대량의 유충",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Eosinophils",
+     "why": "함정 — 스테로이드가 호산구 증가를 누른다. 정상이라도 기생충 감염 가능성을 낮추지 않는다",
+     "also": []
+    },
+    {
+     "item": "He has no pets",
+     "why": "개·고양이 접촉 없음 — 개회충(C) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "HIV-1/2 antigen/antibody test",
+     "why": "면역 억제의 다른 원인 확인 — 판단은 스테로이드가 바꾼다",
+     "also": []
+    }
+   ],
+   "summary": "30년 전 유행 지역을 떠난 뒤 재노출이 없었는데 고용량 스테로이드 5주 만에 폐 침윤·장 증상·장내 그람 음성균 균혈증과 움직이는 피부 띠가 함께 생겼다. 재노출 없이 수십 년을 버틸 수 있는 것은 자가감염하는 분선충뿐이고, 스테로이드가 과다감염으로 폭발시킨다.",
+   "switch": {
+    "choice": "A",
+    "condition": "유행 지역에서 막 돌아온 면역 정상 환자가 몇 주 전 노출 뒤 일시적인 마른기침·쌕쌕거림과 호산구 증가만 보이고 균혈증이 없다면, 유충이 폐를 지나는 회충(뢰플러 증후군)도 같은 그림을 만든다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.id.strongyloides-hyperinfection.steroid-autoinfection-diagnosis",
+  "distractors": {
+   "A": {
+    "tempting": "열대 농촌 출신 + 기침·쌕쌕거림·폐 침윤 + 복통 — 유충이 폐를 지나는 회충의 뢰플러 증후군.",
+    "answer_first": "회충은 사람 몸 안에서 번식 주기를 되풀이하지 못해 성충 수명(1~2년)이 지나면 감염이 끝난다. 30년간 재노출이 없었으므로 남아 있을 수 없고, 스테로이드로 과다감염이 되지도 않는다. 장내 세균 균혈증도 설명하지 못한다.",
+    "discriminator": "「has not traveled outside the United States」 30년 · 대장균 균혈증 · 움직이는 피부 띠.",
+    "when_right": "최근 유행 지역 노출 뒤 수 주 안에 일시적 폐 증상과 호산구 증가가 생기거나, 대변에서 회충 알·성충이 나올 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "맨발로 흙을 밟은 병력 + 폐를 지나는 유충 + 빈혈 — 구충.",
+    "answer_first": "구충도 피부로 들어와 폐를 지나지만 사람 몸 안에서 자가감염하지 못해 재노출 없이 수십 년 지속되지 않는다. 빈혈은 온난형 자가면역 용혈 때문이고, 그람 음성균 균혈증과 스테로이드 뒤 폭발은 분선충의 특징이다.",
+    "discriminator": "재노출 없는 30년 · 스테로이드 뒤 폐·장·균혈증 동시 발생.",
+    "when_right": "최근 유행 지역에서 지내며 철 결핍 소구성 빈혈이 서서히 생기고 대변에서 구충 알이 나올 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0221",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "A Blood Pressure of 158/98 on Three Full-Dose Drugs and a Potassium of 3.1 Despite Supplements in a 49-Year-Old With Leg Cramps",
+  "type": "A Blood Pressure of 158/98 on Three Full-Dose Drugs and a Potassium of 3.1 Despite Supplements in a 49-Year-Old With Leg Cramps",
+  "difficulty": 4,
+  "created": "2026-10-22",
+  "vignette": "A 49-year-old man comes to the physician for follow-up of hypertension. His blood pressure has remained elevated for 8 months despite amlodipine 10 mg, lisinopril 40 mg and chlorthalidone 25 mg daily; pharmacy refill records and pill counts confirm that he takes all three. Home blood pressure readings average 154/96 mm Hg. Over the past 3 months he has had fatigue, nocturia twice nightly and cramps in his calves at night. Potassium chloride 20 mEq daily was added 6 weeks ago for a low potassium level. He has no headaches, sweating spells or palpitations. He does not snore, and his wife has not noticed pauses in his breathing. He does not use NSAIDs, decongestants or licorice, drinks 2 beers per week and does not smoke. His father had a stroke at the age of 52 years. His vital signs are shown. BMI is 27 kg/m2. There are no purple striae, supraclavicular fat pads or proximal muscle weakness. Funduscopic examination shows arteriolar narrowing. No abdominal or flank bruits are heard. Laboratory results are shown. An ECG shows sinus rhythm with prominent U waves and no other abnormalities.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Plasma aldosterone-to-renin activity ratio",
+   "CT scan of the adrenal glands",
+   "Plasma free metanephrines",
+   "Duplex ultrasonography of the renal arteries",
+   "24-hour urine free cortisol"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계 추론. ① 복용이 확인된 이뇨제 포함 3제 최대 용량 + 가정 혈압 154/96 → 저항성 고혈압 → 이차 원인 탐색. ② 칼륨 보충에도 K 3.1·HCO₃ 31·U파, 발작 증상·쿠싱 체형·신동맥 잡음 없음 → 무기질코르티코이드 과잉, 원발성 알도스테론증 우선. ③ 국소화보다 생화학 선별이 먼저 → 혈장 알도스테론 농도 + 레닌 활성.\n- 오답감별:\n  - (B) 부신 CT 는 원발성 알도스테론증을 생화학적으로 확진한 뒤의 국소화 검사다 — 먼저 찍으면 비기능성 우연종에 끌려간다.\n  - (C) 혈장 유리 메타네프린은 갈색세포종 검사다 — 두통·발한·두근거림 발작이 없고 저칼륨·알칼리증이 더 잘 맞는 원인이 따로 있다.\n  - (D) 신동맥 초음파는 신혈관성 고혈압을 찾지만 잡음이 없고 ACE 억제제에도 크레아티닌이 정상이며, 레닌 측정이 두 원인을 먼저 가른다.\n  - (E) 24시간 소변 유리 코르티솔은 쿠싱 증후군 검사다 — 자색 선조·쇄골 위 지방·근위부 근력 저하가 없다.\n- 임상핵심: 저항성 고혈압·저칼륨(이뇨제 유발 포함)이면 원발성 알도스테론증 — 「알도스테론/레닌 선별 → 확진 → 부신 CT」 순서를 거꾸로 하지 않는다.\n- 출처: Endocrine Society primary aldosteronism guideline (J Clin Endocrinol Metab 2016); AHA scientific statement on resistant hypertension (Hypertension 2018).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 복용이 확인된 이뇨제 포함 3제 최대 용량 + 가정 혈압 154/96 → 저항성 고혈압 → 이차 원인 탐색. ② 칼륨 보충에도 K 3.1·HCO₃ 31·U파, 발작 증상·쿠싱 체형·신동맥 잡음 없음 → 무기질코르티코이드 과잉, 원발성 알도스테론증 우선. ③ 국소화보다 생화학 선별이 먼저 → 혈장 알도스테론 농도 + 레닌 활성."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 부신 CT 는 원발성 알도스테론증을 생화학적으로 확진한 뒤의 국소화 검사다 — 먼저 찍으면 비기능성 우연종에 끌려간다.\n(C) 혈장 유리 메타네프린은 갈색세포종 검사다 — 두통·발한·두근거림 발작이 없고 저칼륨·알칼리증이 더 잘 맞는 원인이 따로 있다.\n(D) 신동맥 초음파는 신혈관성 고혈압을 찾지만 잡음이 없고 ACE 억제제에도 크레아티닌이 정상이며, 레닌 측정이 두 원인을 먼저 가른다.\n(E) 24시간 소변 유리 코르티솔은 쿠싱 증후군 검사다 — 자색 선조·쇄골 위 지방·근위부 근력 저하가 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "저항성 고혈압·저칼륨(이뇨제 유발 포함)이면 원발성 알도스테론증 — 「알도스테론/레닌 선별 → 확진 → 부신 CT」 순서를 거꾸로 하지 않는다."
+   },
+   {
+    "k": "출처",
+    "v": "Endocrine Society primary aldosteronism guideline (J Clin Endocrinol Metab 2016); AHA scientific statement on resistant hypertension (Hypertension 2018)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916; Carey RM, et al. Resistant hypertension: detection, evaluation, and management: a scientific statement from the American Heart Association. Hypertension. 2018;72(5):e53-e90)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "74 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "14 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "158/98 mm Hg (similar in both arms)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Sodium",
+    "value": "143 mEq/L",
+    "ref": "136–145 mEq/L"
+   },
+   {
+    "name": "Potassium",
+    "value": "3.1 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Chloride",
+    "value": "100 mEq/L",
+    "ref": "95–105 mEq/L"
+   },
+   {
+    "name": "Bicarbonate",
+    "value": "31 mEq/L",
+    "ref": "22–28 mEq/L"
+   },
+   {
+    "name": "Creatinine",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Glucose (fasting)",
+    "value": "94 mg/dL",
+    "ref": "70–99 mg/dL"
+   },
+   {
+    "name": "TSH",
+    "value": "2.1 μU/mL",
+    "ref": "0.5–5.0 μU/mL"
+   },
+   {
+    "name": "Urinalysis",
+    "value": "No protein or blood",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "원발성 알도스테론증 — 진단 순서(Endocrine Society 2016)\n─────────────────────────────────────────────\n선별 대상   → 3제(이뇨제 포함)에도 >140/90 · 4제 이상 필요 · 혈압 >150/100 지속\n             고혈압 + 저칼륨(자발 또는 이뇨제 유발) · 부신 우연종 · 수면무호흡 동반\n             40세 전 뇌졸중·조기 고혈압 가족력\n1) 선별      → 혈장 알도스테론 농도 + 레닌 활성(비) — 저칼륨 먼저 교정, MRA 는 해석 주의\n2) 확진      → 경구 식염 부하 · 생리식염수 주입 · 카프토프릴 · 플루드로코르티손 억제\n3) 아형      → 부신 CT → 수술 고려 시 부신 정맥 채혈\n치료         → 편측 선종: 복강경 부신 절제 / 양측: 스피로놀락톤·에플레레논\n",
+   "참고문헌": [
+    "Funder JW, Carey RM, Mantero F, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916.",
+    "Carey RM, Calhoun DA, Bakris GL, et al. Resistant hypertension: detection, evaluation, and management: a scientific statement from the American Heart Association. Hypertension. 2018;72(5):e53-e90."
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "확실히 복용하는 3제 요법에도 조절되지 않는 고혈압에 지속되는 저칼륨혈증·대사성 알칼리증이 있으면 원발성 알도스테론증을 먼저 의심하고, 영상 전에 혈장 알도스테론/레닌으로 선별한다.",
+   "rival": [
+    "B",
+    "D"
+   ],
+   "discriminator": "부신 CT(B)는 원인 부위를 찾는 검사라 생화학적 확진 뒤에 한다 — 부신 우연종이 흔해 먼저 찍으면 틀린 결론으로 간다. 신동맥 초음파(D)는 신혈관성 고혈압(이차성 알도스테론증으로 저칼륨도 생김)을 찾지만 복부·옆구리 잡음이 없고 ACE 억제제 최대 용량에도 크레아티닌이 정상이다 — 그리고 레닌이 높은지 낮은지가 둘을 먼저 가른다.",
+   "steps": 3,
+   "chain": [
+    "확실한 복용 확인 + 이뇨제 포함 3제 최대 용량 + 가정 혈압 154/96 → 저항성 고혈압 → 이차 원인 탐색",
+    "칼륨 보충에도 K 3.1 + HCO₃ 31 + U파 + 발작 증상·쿠싱 체형·신동맥 잡음 없음 → 무기질코르티코이드 과잉(원발성 알도스테론증 우선)",
+    "국소화(CT)보다 생화학 선별이 먼저 → 혈장 알도스테론 농도 + 레닌 활성"
+   ],
+   "key": [
+    {
+     "item": "pharmacy refill records and pill counts confirm that he takes all three",
+     "why": "복용 불량에 의한 가짜 저항성을 낮춘다 — 이차 원인 탐색 대상",
+     "also": []
+    },
+    {
+     "item": "Home blood pressure readings average 154/96 mm Hg",
+     "why": "백의 효과가 아니라 실제 고혈압",
+     "also": []
+    },
+    {
+     "item": "Potassium",
+     "why": "칼륨 보충에도 낮다 — 알도스테론 과잉의 칼륨 소실",
+     "also": []
+    },
+    {
+     "item": "Bicarbonate",
+     "why": "대사성 알칼리증 — 원위 신원의 H⁺ 분비 증가",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has no headaches, sweating spells or palpitations",
+     "why": "갈색세포종(C) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There are no purple striae, supraclavicular fat pads or proximal muscle weakness",
+     "why": "쿠싱 증후군(E) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "No abdominal or flank bruits are heard",
+     "why": "신혈관성 고혈압(D) 가능성을 낮춘다 — 크레아티닌 정상과 함께",
+     "also": []
+    },
+    {
+     "item": "He does not snore, and his wife has not noticed pauses in his breathing",
+     "why": "저항성 고혈압의 흔한 원인인 수면무호흡 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He does not use NSAIDs, decongestants or licorice",
+     "why": "약물·감초에 의한 혈압 상승·가성 알도스테론증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "확실히 복용하는 이뇨제 포함 3제에도 조절되지 않는 고혈압에 칼륨 보충에도 지속되는 저칼륨혈증과 대사성 알칼리증이 있어 원발성 알도스테론증이 가장 의심된다. 원인 부위를 찾는 부신 CT 보다 먼저 혈장 알도스테론 농도와 레닌 활성으로 생화학적 선별을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "알도스테론/레닌 비가 높고 확진 검사(식염 부하 등)로 원발성 알도스테론증이 확인되었다면 다음은 부신 CT 로 아형(선종·양측 증식)을 찾는다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.endo.primary-aldosteronism.renin-aldosterone-screening",
+  "distractors": {
+   "B": {
+    "tempting": "원발성 알도스테론증이 의심되면 알도스테론 생성 선종을 찾아야 한다 — 부신 CT 로 바로 찾는다.",
+    "answer_first": "CT 는 국소화 검사다. 생화학적 진단 없이 찍으면 흔한 비기능성 부신 우연종을 원인으로 오인하거나, 작은 선종·양측 증식을 놓친다. 먼저 알도스테론/레닌으로 선별하고 확진한 뒤 CT 를 찍는다.",
+    "discriminator": "아직 알도스테론·레닌을 잰 적이 없다 — 진단 순서는 「선별 → 확진 → 국소화」.",
+    "when_right": "알도스테론/레닌 비 상승과 확진 검사로 원발성 알도스테론증이 이미 확인됐을 때.",
+    "split": ""
+   },
+   "D": {
+    "tempting": "ACE 억제제를 써도 조절되지 않는 고혈압과 저칼륨혈증 — 신동맥 협착의 이차성 알도스테론증도 같은 그림을 만든다.",
+    "answer_first": "신혈관성 고혈압이면 레닌이 높고, 원발성 알도스테론증이면 레닌이 억제된다 — 알도스테론과 레닌을 함께 재면 둘이 먼저 갈린다. 게다가 잡음이 없고 최대 용량 ACE 억제제에도 크레아티닌이 정상이며 갑작스런 폐부종·급격한 발병 같은 단서가 없다.",
+    "discriminator": "「No abdominal or flank bruits」 · 크레아티닌 0.9 · 레닌이 아직 측정되지 않음.",
+    "when_right": "레닌이 높은 이차성 알도스테론증이거나, 복부 잡음·ACE 억제제 뒤 크레아티닌 상승·반복 갑작스런 폐부종·젊은 여성(섬유근이형성)일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0222",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Right Hand Weakness and Halting Speech That Mostly Resolved in a 72-Year-Old Whose Telemetry Shows the Rhythm Below",
+  "type": "Right Hand Weakness and Halting Speech That Mostly Resolved in a 72-Year-Old Whose Telemetry Shows the Rhythm Below",
+  "difficulty": 4,
+  "created": "2026-10-22",
+  "vignette": "A 72-year-old woman is evaluated on the third day of hospitalization. She was admitted after the sudden onset of weakness of the right hand and difficulty finding words while gardening; she arrived 6 hours after symptom onset and did not receive thrombolysis. Her symptoms have mostly resolved, and she now has mild clumsiness of the right hand and occasional word-finding pauses. She has hypertension treated with lisinopril and has no history of bleeding, falls or heart disease. She does not drink alcohol. Her vital signs are shown. Neurologic examination shows mild weakness of the right hand intrinsic muscles and mildly nonfluent speech with intact comprehension. MRI of the brain shows a 1.5-cm acute infarct in the left frontal cortex without hemorrhage and two small chronic cortical infarcts in the right parietal lobe. Duplex ultrasonography shows 30% stenosis of the left internal carotid artery and 20% stenosis of the right. Transthoracic echocardiography shows a left atrial diameter of 4.6 cm, thin mobile mitral leaflets without stenosis, no prosthetic valves and an ejection fraction of 60%. Laboratory results are shown. Continuous telemetry since admission has shown the rhythm in the ECG; she has never been told of a heart rhythm problem.",
+  "question": "Which of the following is the most appropriate long-term pharmacotherapy to prevent recurrent stroke?",
+  "options": [
+   "Aspirin plus clopidogrel for 21 days",
+   "Warfarin, target INR 2.0 to 3.0",
+   "Apixaban 5 mg twice daily",
+   "Aspirin plus extended-release dipyridamole",
+   "Clopidogrel 75 mg daily"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계 추론. ① 심전도: P파 없음 + 불규칙하게 불규칙한 RR → 심방세동. ② 여러 혈관 영역의 피질 경색 + 경동맥 협착 30 % → 심장 색전성 뇌졸중 → 경구 항응고제. ③ 승모판 협착·기계 판막 없음 + 신기능 정상 → 비판막성 → 와파린보다 DOAC(아픽사반).\n- 오답감별:\n  - (A) 21일 이중 항혈소판은 색전원이 없는 경증 비심인성 뇌졸중·고위험 TIA 의 치료다 — 심방세동 색전에는 항응고제만 못하다.\n  - (B) 와파린도 색전을 막지만 비판막성 심방세동에서는 DOAC 가 두개내 출혈이 적어 우선이다 — 와파린이 필요한 판막 조건이 없다.\n  - (D) 아스피린+서방형 디피리다몰은 비심인성 뇌졸중의 항혈소판 선택지다 — 심방세동에는 항응고제를 대신하지 못한다.\n  - (E) 클로피도그렐 단독도 비심인성 뇌졸중의 항혈소판 선택지일 뿐 심장 색전 예방에는 부족하다.\n- 임상핵심: 심방세동 + 허혈성 뇌졸중이면 항혈소판이 아니라 항응고 — 승모판 협착·기계 판막이 없으면 와파린보다 DOAC.\n- 출처: AHA/ASA 2021 secondary stroke prevention guideline (Stroke 2021); 2023 ACC/AHA/ACCP/HRS AF guideline (Circulation 2024).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 심전도: P파 없음 + 불규칙하게 불규칙한 RR → 심방세동. ② 여러 혈관 영역의 피질 경색 + 경동맥 협착 30 % → 심장 색전성 뇌졸중 → 경구 항응고제. ③ 승모판 협착·기계 판막 없음 + 신기능 정상 → 비판막성 → 와파린보다 DOAC(아픽사반)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 21일 이중 항혈소판은 색전원이 없는 경증 비심인성 뇌졸중·고위험 TIA 의 치료다 — 심방세동 색전에는 항응고제만 못하다.\n(B) 와파린도 색전을 막지만 비판막성 심방세동에서는 DOAC 가 두개내 출혈이 적어 우선이다 — 와파린이 필요한 판막 조건이 없다.\n(D) 아스피린+서방형 디피리다몰은 비심인성 뇌졸중의 항혈소판 선택지다 — 심방세동에는 항응고제를 대신하지 못한다.\n(E) 클로피도그렐 단독도 비심인성 뇌졸중의 항혈소판 선택지일 뿐 심장 색전 예방에는 부족하다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "심방세동 + 허혈성 뇌졸중이면 항혈소판이 아니라 항응고 — 승모판 협착·기계 판막이 없으면 와파린보다 DOAC."
+   },
+   {
+    "k": "출처",
+    "v": "AHA/ASA 2021 secondary stroke prevention guideline (Stroke 2021); 2023 ACC/AHA/ACCP/HRS AF guideline (Circulation 2024)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Kleindorfer DO, et al. 2021 Guideline for the prevention of stroke in patients with stroke and transient ischemic attack: a guideline from the American Heart Association/American Stroke Association. Stroke. 2021;52(7):e364-e467; Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.7 °C (98.1 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "88 /min, irregularly irregular"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "136/82 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "12.9 g/dL",
+    "ref": "12.0–16.0 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "231,000 /mm3",
+    "ref": "150,000–400,000 /mm3"
+   },
+   {
+    "name": "Creatinine",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "INR",
+    "value": "1.0",
+    "ref": "0.8–1.1"
+   },
+   {
+    "name": "LDL cholesterol",
+    "value": "88 mg/dL",
+    "ref": "<100 mg/dL"
+   },
+   {
+    "name": "Hemoglobin A1c",
+    "value": "5.6%",
+    "ref": "4.0–5.6%"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "심방세동 + 허혈성 뇌졸중·TIA — 재발 예방(AHA/ASA 2021 · ACC/AHA 2023)\n─────────────────────────────────────────────\n항혈전제     → 경구 항응고제(항혈소판제로 대신하지 않음 · 병용도 대신하지 않음)\n약 선택      → 비판막성: DOAC(아픽사반·다비가트란·리바록사반·에독사반) > 와파린\n              중등도 이상 승모판 협착·기계 판막: 와파린\n시작 시점    → 경증·중등증 경색은 이른 시작 가능, 큰 경색·출혈 전환은 늦춤\n경동맥 협착  → 증상 쪽 50 % 이상이면 내막 절제·스텐트 따로 평가\n",
+   "참고문헌": [
+    "Kleindorfer DO, Towfighi A, Chaturvedi S, et al. 2021 Guideline for the prevention of stroke in patients with stroke and transient ischemic attack: a guideline from the American Heart Association/American Stroke Association. Stroke. 2021;52(7):e364-e467.",
+    "Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156."
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "심방세동이 있는 환자의 피질 경색은 심장 색전성이므로 재발 예방은 항혈소판제가 아니라 경구 항응고제이고, 승모판 협착·기계 판막이 없고 신기능이 정상이면 와파린보다 DOAC 를 쓴다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "아스피린+클로피도그렐 21일(A)은 경증 비심인성 뇌졸중·고위험 TIA 의 표준이라 증상이 가벼운 이 환자에게 끌리지만, 심방세동에 의한 색전이면 항혈소판제는 항응고제보다 재발을 덜 막는다. 와파린(B)도 효과가 있지만 비판막성 심방세동에서는 DOAC 가 두개내 출혈이 적어 우선이다 — 와파린이 먼저인 조건(중등도 이상 승모판 협착·기계 판막)이 심초음파에서 없다.",
+   "steps": 3,
+   "chain": [
+    "심전도: P파 없음 + 불규칙하게 불규칙한 RR → 심방세동",
+    "피질 경색 + 다른 혈관 영역의 오래된 피질 경색 + 경동맥 협착 30 %(<50 %) → 심장 색전성 뇌졸중 → 항혈소판제가 아니라 경구 항응고제",
+    "승모판 협착·기계 판막 없음 + 크레아티닌 0.9 → 비판막성 → 와파린보다 DOAC(아픽사반)"
+   ],
+   "key": [
+    {
+     "item": "심전도: P파 없이 불규칙하게 불규칙한 RR 간격",
+     "why": "심방세동 — 색전원",
+     "also": []
+    },
+    {
+     "item": "a 1.5-cm acute infarct in the left frontal cortex without hemorrhage and two small chronic cortical infarcts in the right parietal lobe",
+     "why": "여러 혈관 영역의 피질 경색 — 색전성 양상, 출혈 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "30% stenosis of the left internal carotid artery",
+     "why": "50 % 미만 — 증상 쪽 큰동맥 죽상경화가 원인일 가능성을 낮춘다(내막 절제 적응 없음)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "thin mobile mitral leaflets without stenosis, no prosthetic valves",
+     "why": "비판막성 심방세동 — 와파린(B)이 아니라 DOAC 가 우선",
+     "also": []
+    },
+    {
+     "item": "Creatinine",
+     "why": "신기능 정상 — DOAC 사용·용량에 제한 없음",
+     "also": []
+    },
+    {
+     "item": "has no history of bleeding, falls or heart disease",
+     "why": "출혈 위험이 낮아 항응고를 미룰 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Her symptoms have mostly resolved",
+     "why": "경증 — 이중 항혈소판(A)을 떠올리게 하지만, 원인이 색전이면 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "LDL cholesterol",
+     "why": "죽상경화 위험 관리는 따로 하지만 항혈전제 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "심전도상 심방세동이 있고 여러 혈관 영역의 피질 경색이 있으며 경동맥 협착은 의미 없어 심장 색전성 뇌졸중이다. 재발 예방은 항혈소판제가 아니라 경구 항응고제이고, 승모판 협착·기계 판막이 없고 신기능이 정상이므로 와파린보다 아픽사반 같은 DOAC 를 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "심초음파에서 중등도 이상 류마티스 승모판 협착이 있거나 기계 판막을 가진 환자라면 DOAC 가 아니라 와파린을 쓴다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.neuro.cardioembolic-stroke.af-doac-secondary-prevention",
+  "distractors": {
+   "A": {
+    "tempting": "증상이 가볍고 거의 회복된 경증 허혈성 뇌졸중 — 21일 이중 항혈소판 뒤 단일 항혈소판이 재발을 가장 줄인다.",
+    "answer_first": "그 근거는 비심인성(작은 혈관·큰동맥) 경증 뇌졸중·TIA 에서 나왔다. 심방세동에 의한 색전에는 항혈소판제가 경구 항응고제보다 재발을 훨씬 덜 막고, 아스피린+클로피도그렐 병용도 출혈이 늘 뿐 항응고제만 못하다.",
+    "discriminator": "심전도의 심방세동 · 여러 영역 피질 경색 · 경동맥 협착 30 %.",
+    "when_right": "심방세동 등 색전원이 없는 경증(NIHSS ≤ 3) 비심인성 허혈성 뇌졸중이나 고위험 TIA 일 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "심방세동 뇌졸중에는 항응고제 — 와파린이 가장 오래 써 온 표준 항응고제다.",
+    "answer_first": "항응고 방향은 맞지만 비판막성 심방세동에서는 DOAC 가 와파린과 효과가 같거나 낫고 두개내 출혈이 적으며 INR 감시가 필요 없어 우선 권고된다. 와파린이 먼저인 중등도 이상 승모판 협착·기계 판막이 없다.",
+    "discriminator": "「thin mobile mitral leaflets without stenosis, no prosthetic valves」 · 신기능 정상.",
+    "when_right": "중등도 이상 류마티스 승모판 협착이나 기계 판막이 있을 때, 또는 DOAC 를 쓸 수 없을 때(말기 신부전 등 상황에 따라).",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG afib · 88 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,88.8 0.6,88.5 1.2,88.2 1.8,88.0 2.4,88.0 3.0,88.1 3.6,88.2 4.2,88.4 4.8,88.7 5.4,89.0 6.0,89.2 6.6,89.5 7.2,89.7 7.8,89.9 8.4,90.1 9.0,90.2 9.6,90.2 10.2,90.2 10.8,90.2 11.4,90.2 12.0,90.2 12.6,90.3 13.2,90.3 13.8,90.4 14.4,90.5 15.0,90.7 15.6,90.9 16.2,91.1 16.8,91.3 17.4,91.4 18.0,91.6 18.6,91.6 19.2,91.6 19.8,91.5 20.4,91.3 21.0,90.9 21.6,90.6 22.2,90.1 22.8,89.6 23.4,89.1 24.0,88.6 24.6,88.1 25.2,87.7 25.8,87.4 26.4,87.2 27.0,87.2 27.6,87.3 28.2,87.6 28.8,87.9 29.4,88.4 30.0,89.0 30.6,89.7 31.2,90.3 31.8,91.0 32.4,91.6 33.0,92.1 33.6,92.5 34.2,92.7 34.8,92.9 35.4,92.8 36.0,92.7 36.6,92.4 37.2,92.0 37.8,91.5 38.4,91.0 39.0,90.4 39.6,89.9 40.2,89.4 40.8,89.0 41.4,88.6 42.0,88.4 42.6,88.3 43.2,88.2 43.8,88.3 44.4,88.4 45.0,88.6 45.6,88.8 46.2,89.1 46.8,89.3 47.4,89.5 48.0,89.7 48.6,89.8 49.2,89.9 49.8,89.9 50.4,89.9 51.0,89.9 51.6,89.9 52.2,89.9 52.8,90.0 53.4,90.0 54.0,90.2 54.6,90.5 55.2,91.1 55.8,92.1 56.4,93.1 57.0,92.9 57.6,90.1 58.2,83.9 58.8,74.0 59.4,61.2 60.0,47.2 60.6,35.2 61.2,28.9 61.8,30.8 62.4,40.1 63.0,54.0 63.6,68.7 64.2,81.2 64.8,90.1 65.4,95.2 66.0,97.1 66.6,96.7 67.2,94.8 67.8,92.5 68.4,90.5 69.0,89.3 69.6,88.7 70.2,88.7 70.8,89.1 71.4,89.7 72.0,90.3 72.6,90.9 73.2,91.5 73.8,92.0 74.4,92.4 75.0,92.7 75.6,92.8 76.2,92.7 76.8,92.6 77.4,92.3 78.0,91.9 78.6,91.4 79.2,90.9 79.8,90.4 80.4,89.9 81.0,89.5 81.6,89.1 82.2,88.8 82.8,88.6 83.4,88.5 84.0,88.4 84.6,88.5 85.2,88.5 85.8,88.6 86.4,88.8 87.0,88.9 87.6,89.0 88.2,89.0 88.8,89.0 89.4,88.9 90.0,88.8 90.6,88.6 91.2,88.3 91.8,88.0 92.4,87.7 93.0,87.3 93.6,86.9 94.2,86.5 94.8,86.1 95.4,85.7 96.0,85.3 96.6,84.9 97.2,84.4 97.8,83.9 98.4,83.3 99.0,82.6 99.6,81.9 100.2,81.0 100.8,80.1 101.4,79.1 102.0,78.0 102.6,76.8 103.2,75.7 103.8,74.6 104.4,73.5 105.0,72.6 105.6,71.8 106.2,71.2 106.8,70.8 107.4,70.6 108.0,70.7 108.6,71.1 109.2,71.8 109.8,72.7 110.4,73.8 111.0,75.1 111.6,76.6 112.2,78.1 112.8,79.6 113.4,81.2 114.0,82.6 114.6,84.0 115.2,85.2 115.8,86.2 116.4,87.1 117.0,87.7 117.6,88.2 118.2,88.5 118.8,88.7 119.4,88.8 120.0,88.7 120.6,88.6 121.2,88.5 121.8,88.4 122.4,88.3 123.0,88.2 123.6,88.2 124.2,88.3 124.8,88.4 125.4,88.5 126.0,88.7 126.6,88.8 127.2,89.0 127.8,89.2 128.4,89.3 129.0,89.4 129.6,89.5 130.2,89.5 130.8,89.4 131.4,89.4 132.0,89.4 132.6,89.3 133.2,89.3 133.8,89.4 134.4,89.5 135.0,89.6 135.6,89.9 136.2,90.1 136.8,90.5 137.4,90.8 138.0,91.2 138.6,91.5 139.2,91.8 139.8,92.1 140.4,92.2 141.0,92.3 141.6,92.2 142.2,92.1 142.8,91.7 143.4,91.3 144.0,90.8 144.6,90.2 145.2,89.6 145.8,89.0 146.4,88.4 147.0,87.9 147.6,87.5 148.2,87.2 148.8,87.0 149.4,87.0 150.0,87.2 150.6,87.5 151.2,87.9 151.8,88.4 152.4,89.0 153.0,89.6 153.6,90.3 154.2,90.9 154.8,91.4 155.4,91.8 156.0,92.2 156.6,92.4 157.2,92.5 157.8,92.4 158.4,92.3 159.0,92.0 159.6,91.7 160.2,91.3 160.8,90.9 161.4,90.5 162.0,90.1 162.6,89.7 163.2,89.5 163.8,89.3 164.4,89.1 165.0,89.1 165.6,89.1 166.2,89.1 166.8,89.2 167.4,89.2 168.0,89.3 168.6,89.4 169.2,89.4 169.8,89.4 170.4,89.4 171.0,89.3 171.6,89.2 172.2,89.1 172.8,89.1 173.4,89.0 174.0,89.0 174.6,89.1 175.2,89.2 175.8,89.4 176.4,89.7 177.0,90.1 177.6,90.4 178.2,90.8 178.8,91.3 179.4,91.7 180.0,92.0 180.6,92.3 181.2,92.4 181.8,92.5 182.4,92.4 183.0,92.2 183.6,91.9 184.2,91.4 184.8,90.9 185.4,90.3 186.0,89.6 186.6,89.0 187.2,88.4 187.8,87.9 188.4,87.5 189.0,87.2 189.6,87.0 190.2,87.0 190.8,87.2 191.4,87.5 192.0,87.9 192.6,88.4 193.2,89.0 193.8,89.6 194.4,90.3 195.0,91.0 195.6,91.8 196.2,93.0 196.8,94.1 197.4,94.0 198.0,91.2 198.6,84.9 199.2,75.0 199.8,62.0 200.4,47.7 201.0,35.3 201.6,28.5 202.2,29.8 202.8,38.8 203.4,52.8 204.0,67.8 204.6,80.9 205.2,90.5 205.8,96.3 206.4,98.8 207.0,98.8 207.6,97.2 208.2,95.0 208.8,92.9 209.4,91.3 210.0,90.3 210.6,89.7 211.2,89.4 211.8,89.2 212.4,89.0 213.0,88.9 213.6,88.8 214.2,88.8 214.8,88.8 215.4,88.9 216.0,89.0 216.6,89.3 217.2,89.6 217.8,90.0 218.4,90.4 219.0,90.9 219.6,91.3 220.2,91.8 220.8,92.1 221.4,92.4 222.0,92.6 222.6,92.6 223.2,92.5 223.8,92.3 224.4,91.9 225.0,91.4 225.6,90.8 226.2,90.1 226.8,89.4 227.4,88.7 228.0,88.1 228.6,87.4 229.2,86.9 229.8,86.5 230.4,86.2 231.0,86.0 231.6,85.9 232.2,85.9 232.8,86.0 233.4,86.1 234.0,86.2 234.6,86.3 235.2,86.3 235.8,86.3 236.4,86.1 237.0,85.7 237.6,85.2 238.2,84.6 238.8,83.8 239.4,82.8 240.0,81.8 240.6,80.6 241.2,79.5 241.8,78.3 242.4,77.2 243.0,76.1 243.6,75.2 244.2,74.4 244.8,73.8 245.4,73.3 246.0,73.0 246.6,72.9 247.2,72.9 247.8,73.1 248.4,73.3 249.0,73.7 249.6,74.2 250.2,74.8 250.8,75.4 251.4,76.0 252.0,76.7 252.6,77.4 253.2,78.1 253.8,78.8 254.4,79.6 255.0,80.4 255.6,81.3 256.2,82.2 256.8,83.2 257.4,84.2 258.0,85.2 258.6,86.3 259.2,87.3 259.8,88.3 260.4,89.2 261.0,90.0 261.6,90.7 262.2,91.3 262.8,91.7 263.4,92.0 264.0,92.0 264.6,91.9 265.2,91.6 265.8,91.2 266.4,90.7 267.0,90.1 267.6,89.5 268.2,88.9 268.8,88.3 269.4,87.9 270.0,87.5 270.6,87.2 271.2,87.1 271.8,87.1 272.4,87.3 273.0,87.6 273.6,88.0 274.2,88.5 274.8,89.0 275.4,89.6 276.0,90.1 276.6,90.6 277.2,91.1 277.8,91.4 278.4,91.7 279.0,91.8 279.6,91.8 280.2,91.8 280.8,91.7 281.4,91.5 282.0,91.2 282.6,91.0 283.2,90.7 283.8,90.5 284.4,90.3 285.0,90.2 285.6,90.1 286.2,90.0 286.8,90.0 287.4,90.0 288.0,90.0 288.6,90.0 289.2,89.9 289.8,89.9 290.4,89.8 291.0,89.7 291.6,89.5 292.2,89.4 292.8,89.4 293.4,89.8 294.0,90.4 294.6,90.5 295.2,88.6 295.8,83.6 296.4,75.2 297.0,63.6 297.6,50.0 298.2,37.1 298.8,28.6 299.4,27.6 300.0,34.8 300.6,48.2 301.2,64.1 301.8,78.8 302.4,90.3 303.0,97.9 303.6,101.7 304.2,102.6 304.8,101.3 305.4,98.9 306.0,96.3 306.6,94.0 307.2,92.2 307.8,90.9 308.4,89.9 309.0,89.1 309.6,88.5 310.2,88.0 310.8,87.6 311.4,87.3 312.0,87.2 312.6,87.2 313.2,87.4 313.8,87.7 314.4,88.1 315.0,88.5 315.6,89.1 316.2,89.6 316.8,90.1 317.4,90.5 318.0,90.9 318.6,91.2 319.2,91.4 319.8,91.5 320.4,91.6 321.0,91.5 321.6,91.4 322.2,91.2 322.8,91.0 323.4,90.7 324.0,90.5 324.6,90.3 325.2,90.1 325.8,89.9 326.4,89.8 327.0,89.6 327.6,89.4 328.2,89.3 328.8,89.0 329.4,88.7 330.0,88.4 330.6,87.9 331.2,87.3 331.8,86.7 332.4,85.9 333.0,85.0 333.6,84.1 334.2,83.1 334.8,82.1 335.4,81.0 336.0,80.0 336.6,79.1 337.2,78.3 337.8,77.5 338.4,76.9 339.0,76.4 339.6,76.0 340.2,75.7 340.8,75.6 341.4,75.6 342.0,75.6 342.6,75.7 343.2,75.8 343.8,76.0 344.4,76.1 345.0,76.2 345.6,76.4 346.2,76.4 346.8,76.5 347.4,76.6 348.0,76.6 348.6,76.7 349.2,76.9 349.8,77.1 350.4,77.5 351.0,77.9 351.6,78.4 352.2,79.1 352.8,79.8 353.4,80.7 354.0,81.7 354.6,82.9 355.2,84.4 355.8,86.3 356.4,87.9 357.0,87.9 357.6,84.9 358.2,78.3 358.8,68.1 359.4,55.2 360.0,41.9 360.6,31.6 361.2,27.9 361.8,32.4 362.4,43.8 363.0,58.8 363.6,73.5 364.2,85.6 364.8,94.0 365.4,98.6 366.0,100.1 366.6,99.4 367.2,97.5 367.8,95.3 368.4,93.4 369.0,92.0 369.6,91.2 370.2,90.8 370.8,90.5 371.4,90.3 372.0,90.1 372.6,89.8 373.2,89.5 373.8,89.2 374.4,88.9 375.0,88.5 375.6,88.2 376.2,88.0 376.8,87.8 377.4,87.8 378.0,87.8 378.6,88.0 379.2,88.3 379.8,88.7 380.4,89.2 381.0,89.8 381.6,90.4 382.2,91.0 382.8,91.5 383.4,92.0 384.0,92.4 384.6,92.7 385.2,92.8 385.8,92.8 386.4,92.6 387.0,92.3 387.6,91.8 388.2,91.1 388.8,90.4 389.4,89.6 390.0,88.8 390.6,88.0 391.2,87.2 391.8,86.4 392.4,85.7 393.0,85.1 393.6,84.5 394.2,84.1 394.8,83.6 395.4,83.3 396.0,82.9 396.6,82.6 397.2,82.2 397.8,81.8 398.4,81.3 399.0,80.8 399.6,80.2 400.2,79.5 400.8,78.8 401.4,78.0 402.0,77.2 402.6,76.4 403.2,75.7 403.8,75.1 404.4,74.5 405.0,74.1 405.6,73.9 406.2,73.8 406.8,73.9 407.4,74.1 408.0,74.5 408.6,75.0 409.2,75.6 409.8,76.3 410.4,77.0 411.0,77.8 411.6,78.5 412.2,79.2 412.8,79.8 413.4,80.4 414.0,80.9 414.6,81.4 415.2,81.9 415.8,82.3 416.4,82.7 417.0,83.1 417.6,83.6 418.2,84.1 418.8,84.7 419.4,85.4 420.0,86.1 420.6,86.9 421.2,87.7 421.8,88.6 422.4,89.4 423.0,90.2 423.6,91.0 424.2,91.6 424.8,92.2 425.4,92.5 426.0,92.8 426.6,92.8 427.2,92.7 427.8,92.4 428.4,92.0 429.0,91.6 429.6,91.0 430.2,90.4 430.8,89.8 431.4,89.2 432.0,88.7 432.6,88.2 433.2,87.9 433.8,87.7 434.4,87.6 435.0,87.7 435.6,87.9 436.2,88.1 436.8,88.4 437.4,88.8 438.0,89.2 438.6,89.5 439.2,89.9 439.8,90.2 440.4,90.4 441.0,90.6 441.6,90.7 442.2,90.7 442.8,90.7 443.4,90.7 444.0,90.7 444.6,90.6 445.2,90.6 445.8,90.6 446.4,90.6 447.0,90.6 447.6,90.7 448.2,90.8 448.8,90.9 449.4,91.0 450.0,91.1 450.6,91.2 451.2,91.1 451.8,91.1 452.4,90.9 453.0,90.7 453.6,90.4 454.2,90.0 454.8,89.6 455.4,89.1 456.0,88.7 456.6,88.3 457.2,87.9 457.8,87.6 458.4,87.5 459.0,87.4 459.6,87.5 460.2,87.7 460.8,88.1 461.4,88.5 462.0,89.1 462.6,89.7 463.2,90.4 463.8,91.0 464.4,91.6 465.0,92.1 465.6,92.5 466.2,92.8 466.8,93.0 467.4,93.0 468.0,92.8 468.6,92.5 469.2,92.1 469.8,91.6 470.4,91.0 471.0,90.4 471.6,89.8 472.2,89.3 472.8,88.8 473.4,88.4 474.0,88.1 474.6,87.9 475.2,87.9 475.8,87.9 476.4,88.1 477.0,88.3 477.6,88.6 478.2,88.9 478.8,89.2 479.4,89.5 480.0,89.8 480.6,90.0 481.2,90.2 481.8,90.3 482.4,90.4 483.0,90.4 483.6,90.4 484.2,90.4 484.8,90.4 485.4,90.4 486.0,90.4 486.6,90.5 487.2,90.5 487.8,90.7 488.4,90.8 489.0,91.0 489.6,91.2 490.2,91.4 490.8,91.8 491.4,92.6 492.0,93.4 492.6,93.2 493.2,90.7 493.8,84.8 494.4,75.3 495.0,62.5 495.6,48.0 496.2,34.9 496.8,26.8 497.4,26.6 498.0,34.5 498.6,47.9 499.2,63.1 499.8,76.7 500.4,87.1 501.0,93.9 501.6,97.3 502.2,98.0 502.8,97.2 503.4,95.6 504.0,94.1 504.6,93.0 505.2,92.6 505.8,92.5 506.4,92.7 507.0,92.8 507.6,92.9 508.2,92.9 508.8,92.7 509.4,92.4 510.0,92.0 510.6,91.5 511.2,91.0 511.8,90.4 512.4,89.8 513.0,89.3 513.6,88.9 514.2,88.5 514.8,88.3 515.4,88.1 516.0,88.1 516.6,88.1 517.2,88.2 517.8,88.4 518.4,88.7 519.0,88.9 519.6,89.2 520.2,89.4 520.8,89.6 521.4,89.7 522.0,89.8 522.6,89.8 523.2,89.8 523.8,89.7 524.4,89.6 525.0,89.5 525.6,89.3 526.2,89.1 526.8,89.0 527.4,88.8 528.0,88.6 528.6,88.4 529.2,88.2 529.8,87.9 530.4,87.6 531.0,87.2 531.6,86.6 532.2,86.0 532.8,85.2 533.4,84.2 534.0,83.1 534.6,81.9 535.2,80.6 535.8,79.3 536.4,77.8 537.0,76.4 537.6,75.1 538.2,73.8 538.8,72.8 539.4,71.9 540.0,71.2 540.6,70.8 541.2,70.6 541.8,70.7 542.4,71.1 543.0,71.8 543.6,72.6 544.2,73.7 544.8,74.8 545.4,76.1 546.0,77.3 546.6,78.6 547.2,79.8 547.8,81.0 548.4,82.0 549.0,82.8 549.6,83.6 550.2,84.2 550.8,84.6 551.4,85.0 552.0,85.2 552.6,85.4 553.2,85.6 553.8,85.7 554.4,85.8 555.0,86.0 555.6,86.2 556.2,86.5 556.8,86.8 557.4,87.1 558.0,87.4 558.6,87.8 559.2,88.2 559.8,88.5 560.4,88.9 561.0,89.1 561.6,89.4 562.2,89.5 562.8,89.6 563.4,89.7 564.0,89.8 564.6,89.8 565.2,89.8 565.8,89.8 566.4,89.9 567.0,90.0 567.6,90.1 568.2,90.3 568.8,90.5 569.4,90.7 570.0,91.0 570.6,91.3 571.2,91.5 571.8,91.7 572.4,91.9 573.0,91.9 573.6,91.9 574.2,91.8 574.8,91.5 575.4,91.1 576.0,90.7 576.6,90.2 577.2,89.6 577.8,89.0 578.4,88.5 579.0,88.0 579.6,87.6 580.2,87.3 580.8,87.1 581.4,87.1 582.0,87.2 582.6,87.5 583.2,87.9 583.8,88.4 584.4,89.0 585.0,89.6 585.6,90.3 586.2,90.9 586.8,91.5 587.4,92.0 588.0,92.4 588.6,92.6 589.2,92.7 589.8,92.7 590.4,92.5 591.0,92.2 591.6,91.9 592.2,91.4 592.8,90.9 593.4,90.4 594.0,90.0 594.6,89.5 595.2,89.2 595.8,88.9 596.4,88.7 597.0,88.6 597.6,88.6 598.2,88.6 598.8,88.7 599.4,88.9 600.0,89.0 600.6,89.2 601.2,89.3 601.8,89.4 602.4,89.5 603.0,89.6 603.6,89.6 604.2,89.6 604.8,89.6 605.4,89.5 606.0,89.5 606.6,89.6 607.2,89.6 607.8,89.8 608.4,89.9 609.0,90.2 609.6,90.5 610.2,90.8 610.8,91.1 611.4,91.4 612.0,91.7 612.6,92.0 613.2,92.1 613.8,92.2 614.4,92.1 615.0,91.9 615.6,91.7 616.2,91.3 616.8,90.8 617.4,90.2 618.0,89.6 618.6,89.0 619.2,88.4 619.8,87.9 620.4,87.5 621.0,87.2 621.6,87.0 622.2,87.0 622.8,87.2 623.4,87.5 624.0,87.9 624.6,88.4 625.2,89.0 625.8,89.6 626.4,90.3 627.0,90.9 627.6,91.5 628.2,92.0 628.8,92.6 629.4,93.3 630.0,94.3 630.6,94.7 631.2,93.1 631.8,88.5 632.4,80.2 633.0,68.4 633.6,54.3 634.2,40.3 634.8,30.1 635.4,27.0 636.0,32.3 636.6,44.3 637.2,59.3 637.8,73.8 638.4,85.4 639.0,93.3 639.6,97.5 640.2,98.8 640.8,98.0 641.4,96.0 642.0,93.8 642.6,92.0 643.2,90.7 643.8,90.0 644.4,89.6 645.0,89.4 645.6,89.3 646.2,89.2 646.8,89.2 647.4,89.3 648.0,89.4 648.6,89.6 649.2,89.8 649.8,90.1 650.4,90.4 651.0,90.8 651.6,91.2 652.2,91.6 652.8,91.9 653.4,92.1 654.0,92.3 654.6,92.4 655.2,92.3 655.8,92.1 656.4,91.8 657.0,91.3 657.6,90.8 658.2,90.2 658.8,89.5 659.4,88.9 660.0,88.2 660.6,87.7 661.2,87.2 661.8,86.8 662.4,86.5 663.0,86.4 663.6,86.4 664.2,86.5 664.8,86.7 665.4,86.9 666.0,87.2 666.6,87.5 667.2,87.7 667.8,87.8 668.4,87.8 669.0,87.7 669.6,87.4 670.2,86.9 670.8,86.2 671.4,85.3 672.0,84.3 672.6,83.2 673.2,82.0 673.8,80.7 674.4,79.4 675.0,78.1 675.6,76.9 676.2,75.8 676.8,74.9 677.4,74.0 678.0,73.4 678.6,72.9 679.2,72.6 679.8,72.4 680.4,72.4 681.0,72.6 681.6,72.9 682.2,73.2 682.8,73.7 683.4,74.3 684.0,74.9 684.6,75.5 685.2,76.2 685.8,77.0 686.4,77.8 687.0,78.7 687.6,79.6 688.2,80.5 688.8,81.5 689.4,82.6 690.0,83.7 690.6,84.8 691.2,85.9 691.8,86.9 692.4,87.9 693.0,88.8 693.6,89.6 694.2,90.3 694.8,90.8 695.4,91.2 696.0,91.3 696.6,91.3 697.2,91.2 697.8,90.9 698.4,90.4 699.0,89.9 699.6,89.4 700.2,88.8 700.8,88.2 701.4,87.8 702.0,87.4 702.6,87.1 703.2,87.0 703.8,87.0 704.4,87.2 705.0,87.5 705.6,87.9 706.2,88.4 706.8,89.0 707.4,89.6 708.0,90.2 708.6,90.8 709.2,91.3 709.8,91.7 710.4,92.0 711.0,92.2 711.6,92.2 712.2,92.2 712.8,92.0 713.4,91.8 714.0,91.5 714.6,91.1 715.2,90.8 715.8,90.5 716.4,90.2 717.0,89.9 717.6,89.7 718.2,89.6 718.8,89.5 719.4,89.5 720.0,89.5 720.6,89.5 721.2,89.5 721.8,89.5 722.4,89.5 723.0,89.5 723.6,89.4 724.2,89.3 724.8,89.2 725.4,89.1 726.0,88.9 726.6,88.8 727.2,88.7 727.8,88.7 728.4,88.7 729.0,88.8 729.6,88.9 730.2,89.2 730.8,89.6 731.4,90.0 732.0,90.4 732.6,90.9 733.2,91.4 733.8,91.8 734.4,92.2 735.0,92.5 735.6,92.6 736.2,92.7 736.8,92.6 737.4,92.5 738.0,92.4 738.6,92.6 739.2,92.9 739.8,92.3 740.4,89.3 741.0,83.1 741.6,73.4 742.2,60.6 742.8,46.2 743.4,33.2 744.0,25.3 744.6,25.4 745.2,33.7 745.8,47.6 746.4,63.4 747.0,77.6 747.6,88.6 748.2,95.8 748.8,99.4 749.4,100.3 750.0,99.3 750.6,97.5 751.2,95.6 751.8,94.0 752.4,93.0 753.0,92.4 753.6,92.0 754.2,91.6 754.8,91.3 755.4,91.1 756.0,90.8 756.6,90.5 757.2,90.3 757.8,90.1 758.4,89.9 759.0,89.8 759.6,89.8 760.2,89.8 760.8,89.8 761.4,89.8 762.0,89.8 762.6,89.7 763.2,89.7 763.8,89.6 764.4,89.5 765.0,89.3 765.6,89.1 766.2,88.9 766.8,88.7 767.4,88.5 768.0,88.3 768.6,88.2 769.2,88.2 769.8,88.3 770.4,88.4 771.0,88.6 771.6,88.9 772.2,89.2 772.8,89.6 773.4,89.9 774.0,90.2 774.6,90.3 775.2,90.4 775.8,90.3 776.4,90.1 777.0,89.6 777.6,89.0 778.2,88.1 778.8,87.1 779.4,85.9 780.0,84.5 780.6,83.0 781.2,81.5 781.8,80.0 782.4,78.5 783.0,77.1 783.6,75.8 784.2,74.6 784.8,73.7 785.4,73.0 786.0,72.4 786.6,72.1 787.2,72.0 787.8,72.1 788.4,72.4 789.0,72.8 789.6,73.3 790.2,73.9 790.8,74.6 791.4,75.3 792.0,76.1 792.6,76.8 793.2,77.5 793.8,78.2 794.4,78.9 795.0,79.6 795.6,80.3 796.2,81.0 796.8,81.6 797.4,82.3 798.0,83.0 798.6,83.7 799.2,84.4 799.8,85.1 800.4,85.7 801.0,86.3 801.6,86.9 802.2,87.3 802.8,87.7 803.4,88.1 804.0,88.3 804.6,88.4 805.2,88.4 805.8,88.4 806.4,88.3 807.0,88.2 807.6,88.1 808.2,88.0 808.8,87.9 809.4,87.9 810.0,88.0 810.6,88.2 811.2,88.5 811.8,88.8 812.4,89.3 813.0,89.8 813.6,90.4 814.2,91.0 814.8,91.5 815.4,92.0 816.0,92.4 816.6,92.7 817.2,92.9 817.8,92.9 818.4,92.8 819.0,92.5 819.6,92.1 820.2,91.6 820.8,91.0 821.4,90.4 822.0,89.7 822.6,89.1 823.2,88.5 823.8,88.0 824.4,87.6 825.0,87.3 825.6,87.2 826.2,87.3 826.8,87.4 827.4,87.7 828.0,88.1 828.6,88.6 829.2,89.1 829.8,89.6 830.4,90.1 831.0,90.5 831.6,90.9 832.2,91.2 832.8,91.4 833.4,91.5 834.0,91.5 834.6,91.5 835.2,91.3 835.8,91.2 836.4,91.0 837.0,90.8 837.6,90.7 838.2,90.5 838.8,90.4 839.4,90.4 840.0,90.3 840.6,90.3 841.2,90.3 841.8,90.4 842.4,90.4 843.0,90.3 843.6,90.3 844.2,90.2 844.8,90.0 845.4,89.8 846.0,89.5 846.6,89.2 847.2,88.9 847.8,88.6 848.4,88.3 849.0,88.1 849.6,88.0 850.2,87.9 850.8,88.0 851.4,88.1 852.0,88.4 852.6,88.8 853.2,89.3 853.8,89.9 854.4,90.9 855.0,92.2 855.6,93.6 856.2,93.8 856.8,91.5 857.4,85.7 858.0,76.3 858.6,63.6 859.2,49.5 859.8,37.0 860.4,29.9 861.0,30.7 861.6,39.3 862.2,52.7 862.8,67.4 863.4,80.1 864.0,89.3 864.6,94.9 865.2,97.1 865.8,96.9 866.4,95.2 867.0,93.0 867.6,91.1 868.2,89.8 868.8,89.1 869.4,89.0 870.0,89.2 870.6,89.6 871.2,90.0 871.8,90.4 872.4,90.7 873.0,91.0 873.6,91.1 874.2,91.2 874.8,91.2 875.4,91.2 876.0,91.1 876.6,91.0 877.2,90.9 877.8,90.7 878.4,90.6 879.0,90.6 879.6,90.5 880.2,90.5 880.8,90.5 881.4,90.6 882.0,90.6 882.6,90.6 883.2,90.6 883.8,90.5 884.4,90.4 885.0,90.2 885.6,89.9 886.2,89.6 886.8,89.2 887.4,88.8 888.0,88.3 888.6,87.8 889.2,87.3 889.8,86.8 890.4,86.4 891.0,86.1 891.6,85.8 892.2,85.6 892.8,85.5 893.4,85.4 894.0,85.4 894.6,85.3 895.2,85.3 895.8,85.2 896.4,85.0 897.0,84.7 897.6,84.2 898.2,83.6 898.8,82.9 899.4,82.0 900.0,81.0\"/><text class=\"cap\" x=\"4\" y=\"193\">afib · 88 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0223",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Five Weeks of Right Knee Pain and a Limp After Soccer in a 12-Year-Old Whose Knee Examination Is Normal",
+  "type": "Five Weeks of Right Knee Pain and a Limp After Soccer in a 12-Year-Old Whose Knee Examination Is Normal",
+  "difficulty": 3,
+  "created": "2026-10-22",
+  "vignette": "A 12-year-old boy is brought to the physician because of pain in his right knee and a limp for 5 weeks. The pain is dull, worse after soccer practice and improves partially with ibuprofen. He does not remember an injury. He has had no fever, rash, night pain or weight loss, and he has not had a recent illness. He is otherwise healthy. His height is at the 60th percentile, and BMI is above the 97th percentile. His vital signs are shown. He walks with an antalgic gait, and the right foot points outward more than the left. The right knee has no swelling, effusion, warmth or tenderness; it has full range of motion, and the ligaments are stable. When the right hip is passively flexed, the thigh rotates outward; internal rotation of the right hip is limited to 5 degrees and reproduces the pain, which he feels in the front of the thigh and knee. The left hip has full, painless range of motion.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Radiographs of the right knee",
+   "MRI of the right knee",
+   "Ultrasonography of the right hip",
+   "Radiographs of both hips",
+   "Technetium-99m bone scan"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계 추론. ① 무릎 진찰 정상 + 고관절 내회전으로 허벅지 앞·무릎 통증 재현 → 고관절 연관통. ② 비만 12세 + 5주 서서히 + 열 없음 + 굽힐 때 강제 외회전 → SCFE. ③ 걸을 수 있는 안정형 + 반대쪽 침범 흔함 → 양측 고관절 전후면 + 개구리 다리 측면 단순 촬영.\n- 오답감별:\n  - (A) 무릎 사진은 아픈 곳을 찍는 것이지만 무릎 진찰이 정상이고 통증은 고관절에서 재현된다 — 연관통을 놓친다.\n  - (B) 무릎 MRI 는 반월상연골·인대 손상을 보지만 무릎이 정상이고, 고관절 병변을 보여 주지 않는다.\n  - (C) 고관절 초음파는 일과성 활막염·화농성 관절염의 삼출을 찾는다 — 열 없는 비만 청소년의 수 주 경과에는 단순 촬영이 먼저다.\n  - (E) 골 스캔은 잠복 골절·골수염·종양을 찾는 검사로, 단순 촬영으로 바로 진단되는 SCFE 의 첫 검사가 아니다.\n- 임상핵심: 무릎 진찰이 정상인 청소년의 무릎 통증은 고관절을 진찰하고 — 내회전 제한·강제 외회전이면 양측 고관절 전후면·개구리 다리 측면 사진.\n- 출처: Peck DM, et al. SCFE: diagnosis and management (Am Fam Physician 2017); Nelson Textbook of Pediatrics, 21st ed — SCFE.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 무릎 진찰 정상 + 고관절 내회전으로 허벅지 앞·무릎 통증 재현 → 고관절 연관통. ② 비만 12세 + 5주 서서히 + 열 없음 + 굽힐 때 강제 외회전 → SCFE. ③ 걸을 수 있는 안정형 + 반대쪽 침범 흔함 → 양측 고관절 전후면 + 개구리 다리 측면 단순 촬영."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 무릎 사진은 아픈 곳을 찍는 것이지만 무릎 진찰이 정상이고 통증은 고관절에서 재현된다 — 연관통을 놓친다.\n(B) 무릎 MRI 는 반월상연골·인대 손상을 보지만 무릎이 정상이고, 고관절 병변을 보여 주지 않는다.\n(C) 고관절 초음파는 일과성 활막염·화농성 관절염의 삼출을 찾는다 — 열 없는 비만 청소년의 수 주 경과에는 단순 촬영이 먼저다.\n(E) 골 스캔은 잠복 골절·골수염·종양을 찾는 검사로, 단순 촬영으로 바로 진단되는 SCFE 의 첫 검사가 아니다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "무릎 진찰이 정상인 청소년의 무릎 통증은 고관절을 진찰하고 — 내회전 제한·강제 외회전이면 양측 고관절 전후면·개구리 다리 측면 사진."
+   },
+   {
+    "k": "출처",
+    "v": "Peck DM, et al. SCFE: diagnosis and management (Am Fam Physician 2017); Nelson Textbook of Pediatrics, 21st ed — SCFE."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Peck DM, Voss LM, Voss TT. Slipped capital femoral epiphysis: diagnosis and management. Am Fam Physician. 2017;95(12):779-784; Kliegman RM, et al. Nelson Textbook of Pediatrics. 21st ed. Elsevier; 2020 — Slipped capital femoral epiphysis)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "84 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "118/74 mm Hg"
+   }
+  ],
+  "labs": [],
+  "appendix": {
+   "가이드라인": "청소년 무릎 통증 + 절뚝거림 — 고관절을 먼저\n─────────────────────────────────────────────\n무릎 진찰 정상 + 고관절 내회전 제한·강제 외회전 → SCFE 의심\n검사     → 양측 고관절 전후면 + 개구리 다리 측면 단순 촬영\n          (불안정형 — 걷지 못함 — 이면 개구리 다리 대신 교차 측면 촬영)\n진단 뒤  → 즉시 체중 부하 중단 · 정형외과 · 제자리 나사 고정\n감별     → 3~8세 급성: 일과성 활막염/화농성 관절염(초음파·염증 수치)\n          4~8세 만성: 레그-칼베-페르테스병(단순 촬영)\n",
+   "참고문헌": [
+    "Peck DM, Voss LM, Voss TT. Slipped capital femoral epiphysis: diagnosis and management. Am Fam Physician. 2017;95(12):779-784.",
+    "Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics. 21st ed. Elsevier; 2020. Slipped capital femoral epiphysis."
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "무릎 진찰이 정상인 무릎 통증에서 고관절 내회전 제한·강제 외회전이 있으면 고관절 연관통이고, 비만 청소년의 수 주 경과는 SCFE 이므로 양측 고관절 전후면·개구리 다리 측면 사진을 찍는다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "무릎 사진(A)은 아이가 아픈 곳을 가리켜 끌리지만 무릎 진찰이 완전히 정상이고 통증은 고관절 내회전으로 재현된다. 고관절 초음파(C)는 일과성 활막염·화농성 관절염의 삼출을 찾는 검사라, 열 없고 수 주에 걸친 비만 청소년의 강제 외회전에는 단순 촬영이 먼저다.",
+   "steps": 3,
+   "chain": [
+    "무릎 부종·압통·운동 제한 없음 + 고관절 내회전으로 허벅지 앞·무릎 통증 재현 → 고관절의 연관통",
+    "BMI 97 백분위 초과 12세 + 5주 서서히 + 열·전신 증상 없음 + 굽히면 외회전 → SCFE(일과성 활막염·감염이 아님)",
+    "걸을 수 있는 안정형 + 반대쪽도 흔히 침범 → 양측 고관절 전후면 + 개구리 다리 측면 단순 촬영"
+   ],
+   "key": [
+    {
+     "item": "The right knee has no swelling, effusion, warmth or tenderness; it has full range of motion, and the ligaments are stable",
+     "why": "무릎 자체는 정상 — 통증 원인을 다른 곳(고관절)에서 찾는다",
+     "also": []
+    },
+    {
+     "item": "internal rotation of the right hip is limited to 5 degrees and reproduces the pain",
+     "why": "고관절 병변 — 무릎으로 가는 연관통",
+     "also": []
+    },
+    {
+     "item": "When the right hip is passively flexed, the thigh rotates outward",
+     "why": "굽힐 때 강제 외회전 — 골두가 뒤·아래로 미끄러진 SCFE 의 소견",
+     "also": []
+    },
+    {
+     "item": "BMI is above the 97th percentile",
+     "why": "비만 — SCFE 의 가장 강한 위험 인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has had no fever, rash, night pain or weight loss",
+     "why": "화농성 관절염·골수염·종양의 가능성을 낮춘다 — 초음파·골 스캔(C·E)의 동기가 약하다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He walks with an antalgic gait",
+     "why": "걸을 수 있다 — 안정형이라 개구리 다리 측면 촬영을 할 수 있다(불안정형이면 측면 촬영 방식을 바꾼다)",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The left hip has full, painless range of motion",
+     "why": "반대쪽은 증상이 없지만 무증상 침범이 흔해 양측을 찍는다",
+     "also": []
+    }
+   ],
+   "summary": "무릎 진찰은 정상이고 통증은 고관절 내회전으로 재현되어 고관절 연관통이며, 비만한 12세의 수 주 경과·강제 외회전은 SCFE 를 가리킨다. 첫 검사는 양측 고관절 전후면과 개구리 다리 측면 단순 촬영이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "3~8세 아이가 감기 뒤 갑자기 절뚝거리고 열이 없거나 미열이면 일과성 활막염·화농성 관절염 감별을 위해 고관절 초음파로 삼출을 먼저 본다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.scfe.knee-pain-hip-radiograph",
+  "distractors": {
+   "A": {
+    "tempting": "아이는 무릎이 아프다고 한다 — 아픈 곳을 먼저 찍는다.",
+    "answer_first": "무릎에 부종·압통·운동 제한이 전혀 없고 통증은 고관절 내회전으로 재현된다. 청소년의 무릎 통증은 고관절 연관통일 수 있어, 무릎만 찍으면 SCFE 를 놓치고 미끄러짐이 진행된다.",
+    "discriminator": "「The right knee has no swelling, effusion, warmth or tenderness」 · 「internal rotation of the right hip ... reproduces the pain」.",
+    "when_right": "무릎 압통·부종·삼출·운동 제한 등 무릎 자체의 이상 소견이 있고 고관절 진찰이 정상일 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "고관절 통증으로 절뚝거리는 아이 — 고관절 삼출을 초음파로 먼저 확인한다.",
+    "answer_first": "초음파는 일과성 활막염·화농성 관절염의 삼출을 찾는 검사다. 이 환자는 열이 없고 5주에 걸쳐 서서히 생겼으며 비만 청소년의 강제 외회전이 있다 — 골단 미끄러짐을 보는 단순 촬영이 먼저다.",
+    "discriminator": "나이 12세·비만·5주 경과·「no fever」·굽힐 때 외회전.",
+    "when_right": "어린 아이(대개 3~8세)의 급성 절뚝거림·발열 의심으로 삼출과 감염을 감별할 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
  }
 ];

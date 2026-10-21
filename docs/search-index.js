@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-20",
+ "generated": "2026-10-21",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3874,
+  "total": 3888,
   "byType": {
+   "usmle": 210,
    "kmle": 1504,
    "concept": 107,
-   "usmle": 204,
+   "paper": 812,
    "imaging": 392,
-   "paper": 804,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 266,
-   "Nephrology": 214,
-   "Infectious Disease": 194,
-   "Pediatrics": 180,
+   "Cardiology": 267,
+   "Nephrology": 215,
+   "Infectious Disease": 195,
+   "Pediatrics": 182,
    "Obstetrics & Gynecology": 131,
-   "Pathology": 118,
-   "Hematology-Oncology": 116,
+   "Pathology": 119,
+   "Hematology-Oncology": 117,
    "Rheumatology": 116,
    "Psychiatry": 113,
-   "Neurology": 111,
+   "Neurology": 112,
    "General Surgery": 102,
    "Endocrinology": 99,
+   "Surgery": 99,
    "Dermatology": 98,
    "Orthopedics": 98,
-   "Surgery": 98,
    "Gastroenterology": 97,
    "Ophthalmology": 96,
    "Pulmonology": 96,
    "Hematology": 91,
-   "Laboratory Medicine": 81,
+   "Laboratory Medicine": 82,
    "산부인과": 60,
    "순환기": 34,
    "호흡기": 27,
@@ -45,20 +45,20 @@ window.MEDKOS_INDEX = {
    "Physiology": 23,
    "소아과": 22,
    "병리·조직학": 20,
+   "Pharmacology": 18,
    "감염": 18,
    "내분비": 18,
    "신경": 18,
    "응급·중환자": 18,
    "혈액·종양": 18,
-   "Pharmacology": 17,
+   "Biochemistry": 17,
    "신장·비뇨기": 17,
-   "Biochemistry": 16,
-   "Microbiology": 15,
+   "Microbiology": 16,
    "외과": 15,
    "피부과": 15,
    "예방의학·역학": 14,
+   "Internal Medicine": 13,
    "Immunology": 12,
-   "Internal Medicine": 12,
    "약리": 11,
    "근골격·류마티스": 10,
    "정신과": 10,
@@ -78,13 +78,141 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2707,
-   "medium": 1117,
+   "high": 2713,
+   "medium": 1125,
    "low": 50
   },
-  "tagCount": 4978
+  "tagCount": 4993
  },
  "docs": [
+  {
+   "id": "usmle-2026-0223",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Five Weeks of Right Knee Pain and a Limp After Soccer in a 12-Year-Old Whose Knee Examination Is Normal",
+   "tags": [
+    "slipped-capital-femoral-epiphysis",
+    "referred-knee-pain",
+    "limp",
+    "obesity",
+    "hip-radiograph",
+    "test-selection"
+   ],
+   "source": "USMLE-style / MedKOS (Peck DM, Voss LM, Voss TT. Slipped capital femoral epiphysis: diagnosis and management. Am Fam Physician. 2017;95(12):779-784; Kliegman RM, et al. Nelson Textbook of Pediatrics. 21st ed. Elsevier; 2020 — Slipped capital femoral epiphysis)",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/usmle/usmle-2026-0223.md",
+   "snippet": "A 12 year old boy is brought to the physician because of pain in his right knee and a limp for 5 weeks. The pain is dull, worse after soccer practice and improves partially with ibuprofen. He does not remember an injury. He has had no fever",
+   "text": "Pediatrics Five Weeks of Right Knee Pain and a Limp After Soccer in a 12-Year-Old Whose Knee Examination Is Normal slipped-capital-femoral-epiphysis referred-knee-pain limp obesity hip-radiograph test-selection USMLE-style / MedKOS (Peck DM, Voss LM, Voss TT. Slipped capital femoral epiphysis: diagnosis and management. Am Fam Physician. 2017;95(12):779-784; Kliegman RM, et al. Nelson Textbook of Pediatrics. 21st ed. Elsevier; 2020 — Slipped capital femoral epiphysis) A 12 year old boy is brought to the physician because of pain in his right knee and a limp for 5 weeks. The pain is dull, worse after soccer practice and improves partially with ibuprofen. He does not remember an injury. He has had no fever, rash, night pain or weight loss, and he has not had a recent illness. He is otherwise healthy. His height is at the 60th percentile, and BMI is above the 97th percentile. His vital signs are shown. He walks with an antalgic gait, and the right foot points outward more than the left. The right knee has no swelling, effusion, warmth or tenderness; it has full range of motion, and the ligaments are stable. When the right hip is passively flexed, the thigh rotates outward; internal rotation of the right hip is limited to 5 degrees and reproduces the pain, which he feels in the front of the thigh and knee. The left hip has full, painless range of motion. Which of the following is the most appropriate next step in diagnosis? A. Radiographs of the right knee B. MRI of the right knee C. Ultrasonography of the right hip D. Radiographs of both hips E. Technetium 99m bone scan 무릎 진찰이 완전히 정상인데 우측 고관절 내회전이 제한되고 그때 통증이 허벅지 앞·무릎으로 재현된다 — 고관절 병변의 연관통(폐쇄신경·대퇴신경 분포)이다. 비만한 초기 청소년, 수 주에 걸친 서서히 생긴 통증, 열·전신 증상 없음, 고관절을 굽히면 허벅지가 바깥으로 돌아가는(강제 외회전) 소견은 대퇴골두 골단 미끄러짐(SCFE)을 가리킨다. 걸을 수 있는 안정형이므로 양측 고관절 전후면과 개구리 다리 측면 단순 촬영이 첫 검사다 — 측면상에서 초기 미끄러짐이 더 잘 보이고, 반대쪽도 흔히(약 20 % 이상) 침범되어 양측을 찍는다. 진단되면 체중 부하를 중단하고 제자리 나사 고정을 한다."
+  },
+  {
+   "id": "usmle-2026-0222",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Right Hand Weakness and Halting Speech That Mostly Resolved in a 72-Year-Old Whose Telemetry Shows the Rhythm Below",
+   "tags": [
+    "ischemic-stroke",
+    "cardioembolic-stroke",
+    "atrial-fibrillation",
+    "secondary-prevention",
+    "apixaban",
+    "doac",
+    "ecg"
+   ],
+   "source": "USMLE-style / MedKOS (Kleindorfer DO, et al. 2021 Guideline for the prevention of stroke in patients with stroke and transient ischemic attack: a guideline from the American Heart Association/American Stroke Association. Stroke. 2021;52(7):e364-e467; Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156)",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/usmle/usmle-2026-0222.md",
+   "snippet": "A 72 year old woman is evaluated on the third day of hospitalization. She was admitted after the sudden onset of weakness of the right hand and difficulty finding words while gardening; she arrived 6 hours after symptom onset and did not re",
+   "text": "Neurology Right Hand Weakness and Halting Speech That Mostly Resolved in a 72-Year-Old Whose Telemetry Shows the Rhythm Below ischemic-stroke cardioembolic-stroke atrial-fibrillation secondary-prevention apixaban doac ecg USMLE-style / MedKOS (Kleindorfer DO, et al. 2021 Guideline for the prevention of stroke in patients with stroke and transient ischemic attack: a guideline from the American Heart Association/American Stroke Association. Stroke. 2021;52(7):e364-e467; Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156) A 72 year old woman is evaluated on the third day of hospitalization. She was admitted after the sudden onset of weakness of the right hand and difficulty finding words while gardening; she arrived 6 hours after symptom onset and did not receive thrombolysis. Her symptoms have mostly resolved, and she now has mild clumsiness of the right hand and occasional word finding pauses. She has hypertension treated with lisinopril and has no history of bleeding, falls or heart disease. She does not drink alcohol. Her vital signs are shown. Neurologic examination shows mild weakness of the right hand intrinsic muscles and mildly nonfluent speech with intact comprehension. MRI of the brain shows a 1.5 cm acute infarct in the left frontal cortex without hemorrhage and two small chronic cortical infarcts in the right parietal lobe. Duplex ultrasonography shows 30% stenosis of the left internal carotid artery and 20% stenosis of the right. Transthoracic echocardiography shows a left atrial diameter of 4.6 cm, thin mobile mitral leaflets without stenosis, no prosthetic valves and an ejection fraction of 60%. Laboratory results are shown. Continuous telemetry since admission has shown the rhythm in the ECG; she has never been told of a heart rhythm problem. Which of the following is the most appropriate long term pharmacotherapy to prevent recurrent stroke? A. Aspirin plus clopidogrel for 21 days B. Warfarin, target INR 2.0 to 3.0 C. Apixaban 5 mg twice daily D. Aspirin plus extended release dipyridamole E. Clopidogrel 75 mg daily 심전도는 P파 없이 RR 간격이 불규칙하게 불규칙하다 — 심방세동이다. 좌측 전두엽 피질 경색과 다른 혈관 영역(우측 두정엽)의 오래된 피질 경색이 함께 있고 경동맥 협착은 30 %(50 % 미만)라 큰동맥 죽상경화성이 아니라 심장 색전성 뇌졸중이다. 심방세동이 있는 뇌졸중·TIA 의 재발 예방은 항혈소판제가 아니라 경구 항응고제다(CHA₂DS₂ VASc: 나이 65~74 1·여성 1·고혈압 1·뇌졸중 2 = 5). 중등도 이상 승모판 협착이나 기계 판막이 없는 비판막성 심방세동이고 신기능이 정상이므로, 와파린보다 두개내 출혈이 적고 효과가 같거나 나은 DOAC(아픽사반)를 권한다. 경색이 작아 항응고는 뇌졸중 뒤 이른 시기(수일 안)에 시작할 수 있다."
+  },
+  {
+   "id": "usmle-2026-0221",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "A Blood Pressure of 158/98 on Three Full-Dose Drugs and a Potassium of 3.1 Despite Supplements in a 49-Year-Old With Leg Cramps",
+   "tags": [
+    "primary-aldosteronism",
+    "resistant-hypertension",
+    "hypokalemia",
+    "aldosterone-renin-ratio",
+    "secondary-hypertension",
+    "test-selection"
+   ],
+   "source": "USMLE-style / MedKOS (Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916; Carey RM, et al. Resistant hypertension: detection, evaluation, and management: a scientific statement from the American Heart Association. Hypertension. 2018;72(5):e53-e90)",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/usmle/usmle-2026-0221.md",
+   "snippet": "A 49 year old man comes to the physician for follow up of hypertension. His blood pressure has remained elevated for 8 months despite amlodipine 10 mg, lisinopril 40 mg and chlorthalidone 25 mg daily; pharmacy refill records and pill counts",
+   "text": "Internal Medicine A Blood Pressure of 158/98 on Three Full-Dose Drugs and a Potassium of 3.1 Despite Supplements in a 49-Year-Old With Leg Cramps primary-aldosteronism resistant-hypertension hypokalemia aldosterone-renin-ratio secondary-hypertension test-selection USMLE-style / MedKOS (Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916; Carey RM, et al. Resistant hypertension: detection, evaluation, and management: a scientific statement from the American Heart Association. Hypertension. 2018;72(5):e53-e90) A 49 year old man comes to the physician for follow up of hypertension. His blood pressure has remained elevated for 8 months despite amlodipine 10 mg, lisinopril 40 mg and chlorthalidone 25 mg daily; pharmacy refill records and pill counts confirm that he takes all three. Home blood pressure readings average 154/96 mm Hg. Over the past 3 months he has had fatigue, nocturia twice nightly and cramps in his calves at night. Potassium chloride 20 mEq daily was added 6 weeks ago for a low potassium level. He has no headaches, sweating spells or palpitations. He does not snore, and his wife has not noticed pauses in his breathing. He does not use NSAIDs, decongestants or licorice, drinks 2 beers per week and does not smoke. His father had a stroke at the age of 52 years. His vital signs are shown. BMI is 27 kg/m2. There are no purple striae, supraclavicular fat pads or proximal muscle weakness. Funduscopic examination shows arteriolar narrowing. No abdominal or flank bruits are heard. Laboratory results are shown. An ECG shows sinus rhythm with prominent U waves and no other abnormalities. Which of the following is the most appropriate next step in diagnosis? A. Plasma aldosterone to renin activity ratio B. CT scan of the adrenal glands C. Plasma free metanephrines D. Duplex ultrasonography of the renal arteries E. 24 hour urine free cortisol 충분 용량의 이뇨제를 포함한 세 가지 약을 확실히 복용하는데도 혈압이 조절되지 않는다(가정 혈압도 높아 백의 고혈압 아님) — 저항성 고혈압이고 이차 원인을 찾아야 한다. 칼륨 보충에도 지속되는 저칼륨혈증·대사성 알칼리증·U파·야간뇨·근육 경련은 무기질코르티코이드 과잉을 가리킨다. 클로르탈리돈이 저칼륨을 일으킬 수 있지만, 저항성 고혈압과 이뇨제 유발 저칼륨혈증은 둘 다 그 자체로 원발성 알도스테론증 선별 적응증이다. 갈색세포종(발작 증상 없음)·쿠싱(체형 없음)·신혈관성(잡음 없음·크레아티닌 정상)을 가리키는 단서는 없다. 원발성 알도스테론증은 저항성 고혈압의 가장 흔한 내분비 원인이고, 첫 검사는 혈장 알도스테론 농도와 레닌 활성(알도스테론/레닌 비)이다. 대부분의 항고혈압제를 유지한 채 선별할 수 있으며(ACE 억제제는 레닌을 올려 위음성 쪽이므로 그래도 레닌이 억제돼 있으면 더 강한 근거), 저칼륨은 검사 전에 교정한다. 생화학적으로 확진한 뒤에야 부신 CT 로 국소화한다."
+  },
+  {
+   "id": "usmle-2026-0220",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Fever, Wheezing, Diarrhea and Escherichia coli in the Blood Five Weeks Into High-Dose Prednisone in a Man Who Left Rural Ecuador 30 Years Ago",
+   "tags": [
+    "strongyloides-stercoralis",
+    "hyperinfection-syndrome",
+    "autoinfection",
+    "glucocorticoids",
+    "gram-negative-bacteremia",
+    "helminth",
+    "diagnosis"
+   ],
+   "source": "USMLE-style / MedKOS (Mejia R, Nutman TB. Screening, prevention, and treatment for hyperinfection syndrome and disseminated infections caused by Strongyloides stercoralis. Curr Opin Infect Dis. 2012;25(4):458-463; Centers for Disease Control and Prevention. Strongyloides — Clinical overview)",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/usmle/usmle-2026-0220.md",
+   "snippet": "A 63 year old man is brought to the emergency department because of fever, cough and abdominal pain for 4 days. He has had watery diarrhea, epigastric pain and nausea for 2 weeks and began coughing up blood streaked sputum 3 days ago. Five ",
+   "text": "Microbiology Fever, Wheezing, Diarrhea and Escherichia coli in the Blood Five Weeks Into High-Dose Prednisone in a Man Who Left Rural Ecuador 30 Years Ago strongyloides-stercoralis hyperinfection-syndrome autoinfection glucocorticoids gram-negative-bacteremia helminth diagnosis USMLE-style / MedKOS (Mejia R, Nutman TB. Screening, prevention, and treatment for hyperinfection syndrome and disseminated infections caused by Strongyloides stercoralis. Curr Opin Infect Dis. 2012;25(4):458-463; Centers for Disease Control and Prevention. Strongyloides — Clinical overview) A 63 year old man is brought to the emergency department because of fever, cough and abdominal pain for 4 days. He has had watery diarrhea, epigastric pain and nausea for 2 weeks and began coughing up blood streaked sputum 3 days ago. Five weeks ago, he was diagnosed with warm autoimmune hemolytic anemia and started on prednisone 60 mg daily. He grew up on a farm in rural Ecuador, where he often walked barefoot, and moved to Chicago 30 years ago; he has not traveled outside the United States since then. He has no pets. His vital signs are shown. He appears ill. Diffuse expiratory wheezes and scattered crackles are heard over both lungs. The abdomen is diffusely tender without guarding. A pruritic, raised, serpiginous red streak is seen on the lower abdomen and buttocks; his wife says it moved several centimeters over a few hours this morning. Laboratory results are shown. A chest x ray shows bilateral patchy infiltrates. Infection with which of the following organisms is the most likely underlying cause of this patient's condition? A. Ascaris lumbricoides B. Necator americanus C. Toxocara canis D. Schistosoma mansoni E. Strongyloides stercoralis 30년 전 맨발로 지낸 열대 농촌 거주 뒤 노출이 없었는데, 고용량 프레드니솔론 5주 만에 장(설사·상복부 통증)·폐(쌕쌕거림·객혈·양측 침윤)·장내 그람 음성균 균혈증(대장균)·몇 시간 사이 움직이는 아랫배·엉덩이의 가렵고 구불구불한 붉은 띠가 함께 나타났다 — 분선충(Strongyloides stercoralis) 과다감염 증후군이다. 분선충은 사람 몸 안에서 생활사를 마칠 수 있는(자가감염) 유일한 흔한 장내 선충이라, 재노출 없이 수십 년 동안 낮은 수준으로 남아 있다가 글루코코르티코이드가 면역을 누르면 사상형 유충이 대량으로 장벽을 뚫고 폐로 이동하며 장내 세균을 혈류로 끌고 들어간다. 스테로이드 때문에 호산구 증가가 없는 것이 흔하다 — 호산구가 정상이라고 기생충 감염 가능성을 낮추면 안 된다."
+  },
+  {
+   "id": "usmle-2026-0219",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Yellow Eyes During Every Cold Since the Newborn Period and a Palpable Spleen in a 7-Year-Old With Prickly Red Cells",
+   "tags": [
+    "pyruvate-kinase-deficiency",
+    "glycolysis",
+    "hemolytic-anemia",
+    "red-cell-enzyme",
+    "atp",
+    "mechanism"
+   ],
+   "source": "USMLE-style / MedKOS (Grace RF, Glader B. Red blood cell enzyme disorders. Pediatr Clin North Am. 2018;65(3):579-595; Grace RF, Barcellini W. Management of pyruvate kinase deficiency in children and adults. Blood. 2020;136(11):1241-1249)",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/usmle/usmle-2026-0219.md",
+   "snippet": "A 7 year old boy is brought to the physician because of fatigue and yellow eyes for 3 days during an upper respiratory tract infection. His parents say that his eyes turn yellow with most colds. As a newborn, he required phototherapy for 6 ",
+   "text": "Biochemistry Yellow Eyes During Every Cold Since the Newborn Period and a Palpable Spleen in a 7-Year-Old With Prickly Red Cells pyruvate-kinase-deficiency glycolysis hemolytic-anemia red-cell-enzyme atp mechanism USMLE-style / MedKOS (Grace RF, Glader B. Red blood cell enzyme disorders. Pediatr Clin North Am. 2018;65(3):579-595; Grace RF, Barcellini W. Management of pyruvate kinase deficiency in children and adults. Blood. 2020;136(11):1241-1249) A 7 year old boy is brought to the physician because of fatigue and yellow eyes for 3 days during an upper respiratory tract infection. His parents say that his eyes turn yellow with most colds. As a newborn, he required phototherapy for 6 days and one exchange transfusion. He received two red blood cell transfusions before the age of 3 years and none since then. He takes no medications and has not eaten fava beans or taken antimalarial drugs. His parents are first cousins; they are healthy. His vital signs are shown. He is at the 20th percentile for height. Examination shows pale conjunctivae and scleral icterus. The spleen tip is palpable 3 cm below the left costal margin. Laboratory results are shown. A peripheral blood smear shows scattered red cells with short, evenly spaced, spiky projections; there are no spherocytes, bite cells, Heinz bodies, target cells or sickle cells. Deficient activity of which of the following processes is most likely responsible for this patient's anemia? A. Generation of NADPH by the oxidative pentose phosphate pathway B. Vertical linkage of the membrane skeleton through spectrin and ankyrin C. Attachment of complement regulatory proteins by a glycosylphosphatidylinositol anchor D. ATP generation from the conversion of phosphoenolpyruvate to pyruvate E. Synthesis of β globin chains in erythroid precursors 신생아기부터 반복된 황달·교환수혈, 비장 비대, 망상적혈구 증가·간접 빌리루빈·LDH 상승·합토글로빈 저하, 혈뇨 없음, DAT 음성 — 평생 이어진 혈관 밖(비장) 용혈이고 면역성이 아니다. 근친 부모는 상염색체 열성 유전을 시사한다. 구형적혈구가 없고 EMA 결합·MCHC 가 정상이라 막 골격 결함 가능성이 낮고, G6PD 활성이 정상이며 물린 세포·하인츠 소체가 없어 산화 손상도 아니고, MCV 정상·표적세포 없음으로 지중해빈혈도 아니다 — 남는 것은 해당과정(glycolysis) 효소 결핍, 그중 가장 흔한 피루브산 키나아제(PK) 결핍이다. 적혈구는 미토콘드리아가 없어 ATP 를 해당과정에서만 얻는다. PK 는 포스포에놀피루브산 → 피루브산 단계에서 ATP 를 만든다. ATP 가 모자라면 Na⁺/K⁺ ATPase 가 실패해 칼륨·물이 빠져 세포가 탈수·경직되고(가시 돋친 세포), 비장에서 걸러진다. 상류의 2,3 BPG 가 쌓여 산소 해리 곡선이 오른쪽으로 옮겨 빈혈을 비교적 잘 견딘다."
+  },
+  {
+   "id": "usmle-2026-0218",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots",
+   "tags": [
+    "warfarin",
+    "warfarin-induced-skin-necrosis",
+    "protein-c",
+    "vitamin-k-antagonist",
+    "anticoagulation",
+    "mechanism"
+   ],
+   "source": "USMLE-style / MedKOS (Ageno W, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S; Nazarian RM, et al. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332)",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/usmle/usmle-2026-0218.md",
+   "snippet": "A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections",
+   "text": "Pharmacology Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots warfarin warfarin-induced-skin-necrosis protein-c vitamin-k-antagonist anticoagulation mechanism USMLE-style / MedKOS (Ageno W, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S; Nazarian RM, et al. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332) A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections, and she was started on oral warfarin 10 mg daily; no other anticoagulant was given. Her mother had three episodes of deep venous thrombosis before the age of 50 years. The patient has no other medical conditions and takes no other medications. She has not received heparin at any time. Her vital signs are shown. Examination shows several sharply demarcated, exquisitely tender, purple black plaques with overlying hemorrhagic bullae on both thighs and the lower abdomen; the surrounding skin is red. The lesions are flat and not palpable as raised purpura. The left calf is mildly swollen. There is no bleeding from the gums, nose or venipuncture sites. Laboratory results are shown. A skin biopsy shows fibrin thrombi occluding dermal and subcutaneous venules with hemorrhagic necrosis and no inflammation of the vessel walls. Which of the following best explains the pathogenesis of this patient's skin lesions? A. Deposition of immune complexes in the walls of dermal postcapillary venules B. A faster fall in protein C activity than in prothrombin activity C. Depletion of factor VII leading to bleeding into the dermis D. Calcification of the media of dermal and subcutaneous arterioles E. Antibodies against phospholipid bound β2 glycoprotein I 헤파린 없이 와파린을 고용량으로 시작한 지 3~5일째, 지방이 많은 부위(허벅지·아랫배)에 통증이 심한 경계 뚜렷한 자흑색 판과 출혈성 물집이 생겼고 생검에서 진피·피하 소정맥의 피브린 혈전과 출혈성 괴사(혈관벽 염증 없음)가 보인다 — 와파린 유발 피부 괴사다. 어머니의 반복 정맥 혈전은 단백 C 결핍(유전성 혈전성향)을 시사한다. 와파린은 비타민 K 의존 인자(II·VII·IX·X)와 항응고 단백 C·S 의 γ 카복실화를 함께 막는데, 반감기가 짧은 단백 C(~8시간)가 프로트롬빈(~60시간)·인자 X 보다 먼저 떨어진다. 그래서 첫 며칠은 항응고 단백만 줄어든 일시적 과응고 상태가 되어 미세혈관 혈전이 생긴다. 이 때문에 와파린은 헤파린 등 비경구 항응고제와 겹쳐(최소 5일, INR 2 이상 24시간) 시작한다."
+  },
   {
    "id": "kmle-2026-1537",
    "type": "kmle",
@@ -834,6 +962,142 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0212.md",
    "snippet": "A 76 year old woman comes to the emergency department because of fatigue for 2 weeks and two episodes of lightheadedness while standing in her kitchen. She did not lose consciousness. She has hypertension treated with amlodipine and takes n",
    "text": "Physiology Two Spells of Lightheadedness, a Pulse of 38 and Neck Pulsations That Come Only With Some Beats in a 76-Year-Old jugular-venous-pulse cannon-a-wave av-dissociation complete-heart-block cardiac-cycle ecg USMLE-style / MedKOS (Guyton and Hall Textbook of Medical Physiology 14e — The heart as a pump: atrial pressure waves (a, c, v); Harrison's Principles of Internal Medicine 21e — Physical examination of the cardiovascular system: jugular venous pulse; Bradyarrhythmias: atrioventricular conduction disturbances) A 76 year old woman comes to the emergency department because of fatigue for 2 weeks and two episodes of lightheadedness while standing in her kitchen. She did not lose consciousness. She has hypertension treated with amlodipine and takes no other medications. Her vital signs are shown. While she sits at 45 degrees, the jugular venous pulse shows intermittent, abrupt, very large outward pulsations that occur with some heartbeats but not with others. The intensity of the first heart sound varies from beat to beat. There is no murmur, and the lungs are clear. There is no peripheral edema. Laboratory results are shown. A rhythm strip is shown. Which of the following best explains the neck vein finding? A. Backflow of blood through an incompetent tricuspid valve during ventricular systole B. Forceful right atrial emptying into a hypertrophied, stiff right ventricle C. Rapid early diastolic filling of a right ventricle restricted by the pericardium D. Right atrial contraction against a closed tricuspid valve E. Increased venous return generated by the large stroke volume of each slow beat 리듬 스트립에서 P 파는 빠르고 규칙적으로, 넓은 QRS 는 느리고 규칙적으로 서로 관계없이 진행한다 — 완전 방실차단(방실 해리)이다. 심방과 심실이 따로 수축하므로 어떤 박동에서는 심방 수축이 심실 수축 중(삼첨판이 닫혀 있을 때)에 떨어진다. 그러면 우심방 혈액이 심실로 가지 못하고 경정맥으로 역류해 거대한 a 파(cannon a wave)가 생긴다. 두 리듬의 시점 관계가 박동마다 바뀌므로 거대 파는 일부 박동에서만 보이고, 같은 이유로 제1심음 세기도 박동마다 달라진다. 삼첨판 역류·우심실 비대·심막 수축은 구조 이상이라 매 박동 같은 모양으로 나타난다."
+  },
+  {
+   "id": "paper-2026-0812",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Canadian Urological Association journal = Journal de l'Association des urologues du Canada",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0812_does_treatment_of_non_obstructing_nephrolithiasis_reduce_rec.md",
+   "snippet": "Title Does treatment of non obstructing nephrolithiasis reduce recurrent urinary tract infections? A prospective, observational trial from the EDGE consortium Authors Forbes Connor M, Stern Karen L, Finegan Jamie, Reed Amy, Narang Gopal, Wy",
+   "text": "Surgery scraped pubmed PubMed / Canadian Urological Association journal = Journal de l'Association des urologues du Canada Title Does treatment of non obstructing nephrolithiasis reduce recurrent urinary tract infections? A prospective, observational trial from the EDGE consortium Authors Forbes Connor M, Stern Karen L, Finegan Jamie, Reed Amy, Narang Gopal, Wymer Kevin, Moore Jonathan, Berger Jonathan, et al. Journal / DOI Canadian Urological Association journal = Journal de l'Association des urologues du Canada · DOI: 10.5489/cuaj.9741 · PMID: 42900882 https://pubmed.ncbi.nlm.nih.gov/42900882/ Abstract INTRODUCTION: Existing studies link kidney stone treatment to reduced recurrent urinary tract infections (UTIs); however, these studies are limited by their retrospective design and/or lack of comparison group. The present study assesses a prospective, observational cohort of patients with recurrent UTIs who selected observation or intervention for management of their non obstructing kidney stones to assess for impact on UTI recurrence. METHODS: From 2020 2025, patients with non obstructing kidney stones and recurrent UTIs were prospectively enrolled at four centers. After shared decision making, participants underwent observation or surgical intervention. The primary outcome was UTI recurrence at 12 months post enrollment, defined as presence of urinary tract symptoms with positive urine culture. The study was powered to detect a 50% reduction in the rate of UTI recurrence between the groups at 12 months. RESULTS: Among 94 patients recruited, followup data at 12 months was available for 21 observation and 46 intervention patients. There were more staghorn stones in the intervention group (15.2% vs. 0%), and the median stone size was larger (13.5 vs. 6 mm). At 12 months, 81% (n=17) in the observation group and 54% (n=25) in the intervention group had a symptomatic UTI recurrence (p=0.06, non significant). The subgroup (n=17) of stone free intervention patients had fewer UTI recurrences compared to the observation group (odds ratio 0.12, 95% confidence interval 0.02 0.66). Causation cannot be confirmed due to the observational nature of the study. CONCLUSIONS: For patients with recurrent UTIs and stones, surgical intervention is not associated with decreased risk of UTI recurrence at 12 months overall; however, patients who were stone free after intervention had significantly fewer UTI recurrences on subgroup analysis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0811",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Psychosocial intervention",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0811_testing_the_evaluation_of_the_testimony_of_the_global_evalua.md",
+   "snippet": "Title Testing the Evaluation of the Testimony of the Global Evaluation System in Bullying Cases Authors Montes Álvaro, Cea Blanca, Arce Ramón Journal / DOI Psychosocial intervention · DOI: 10.5093/pi2026a12 · PMID: 42898722 https://pubmed.n",
+   "text": "Pediatrics scraped pubmed PubMed / Psychosocial intervention Title Testing the Evaluation of the Testimony of the Global Evaluation System in Bullying Cases Authors Montes Álvaro, Cea Blanca, Arce Ramón Journal / DOI Psychosocial intervention · DOI: 10.5093/pi2026a12 · PMID: 42898722 https://pubmed.ncbi.nlm.nih.gov/42898722/ Abstract Background/aim: The prevalence of school bullying victimization has been estimated between 5% (strict criteria for prevalence classification) and 33% (lenient criteria for prevalence assessment) of children and adolescents. Bullying victimization entails decision making at the administrative (school setting), civil (victim compensation), and criminal (criminal responsibility) levels, which must be based on certainty about the truthfulness of the allegation. A high fidelity simulation study was designed with the aim of testing the evaluation of testimony of the Global Evaluation System (GES) in cases of bullying allegations. Method: A total of 154 adolescents aged from 13 to 18 years, 86 boys, were randomly assigned to the condition of testimony of a memory of real life negative experiences or a fabricated memory of a bullying event. The protocols (statements) were subjected to a content analysis using the categories of validity of the evidence and the content categories of memories of real life experiences of the GES. Results: The results showed excellent reliability, α = .874, 95% CI [.843, .901], for the GES content category system. The findings also supported the association between the GES content categories and memories of real life experiences. Conversely, no significant association was found between fabricated memories of a bullying event and the GES content categories, while a lack of reliability was observed, α = .476, 95% CI [.289, .632], in this condition. Finally, strict decision criteria were computed (evidence based criterial validity) that guarantees compliance with the principle of presumption of innocence (no innocent person should be convicted; type I error/false positives = 0): coding of ≥ 10 content categories in the complete model, ≥ 8 in the higher prevalence model (content categories associated significantly with memories of real life experiences), and ≥ 5 in the robust model (content categories associated significantly with memories of real life experiences with a moderate or higher than moderate effect size). Conclusions: These findings support the validity and reliability of the GES content analysis categorical system for the validation of truthful testimonies of school bullying victimization (forensic task), providing scientific evidence (criterial validity) to ensure the strict compliance of the principle of presumption of innocence, but not for the classification of fabricated memories (investigative task). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0810",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Prenatal diagnosis",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0810_extended_non_invasive_prenatal_testing_for_chromosomal_and_m.md",
+   "snippet": "Title Extended Non Invasive Prenatal Testing for Chromosomal and Monogenic Disorders by Cell Free DNA Sequencing: A Blinded Comparison With Amniocentesis Authors Mesoraca Alvaro, Margiotti Katia, Fabiani Marco, Libotte Francesco, D'Emidio L",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Prenatal diagnosis Title Extended Non Invasive Prenatal Testing for Chromosomal and Monogenic Disorders by Cell Free DNA Sequencing: A Blinded Comparison With Amniocentesis Authors Mesoraca Alvaro, Margiotti Katia, Fabiani Marco, Libotte Francesco, D'Emidio Laura, Raffio Raffaella, Pasquale Chiara, Cima Antonella, et al. Journal / DOI Prenatal diagnosis · DOI: 10.1002/pd.70285 · PMID: 42900896 https://pubmed.ncbi.nlm.nih.gov/42900896/ Abstract OBJECTIVE: To determine whether molecular integrated non invasive fetal exome sequencing (iNIFS), using clinical exome sequencing of maternal plasma cell free DNA, concords per pregnancy with paired amniocentesis. METHOD: Prospective, blinded, single center, paired sample diagnostic accuracy study in 641 consecutive pregnancies referred for clinically indicated amniocentesis at 16 18 weeks. Plasma cell free DNA underwent low pass whole genome sequencing for aneuploidies and CNVs and, after short fragment enrichment, clinical exome sequencing within a parent fetus trio design. The reference standard comprised QF PCR, karyotyping, array comparative genomic hybridization and, where indicated, trio clinical exome sequencing on amniotic fluid DNA. RESULTS: iNIFS was reportable in 624/641 pregnancies (97.3%); 612 (95.5%) had complete paired data and formed the analysis population. The reference established a pathogenic or likely pathogenic finding in 107/612 (17.5%). NIPT gave 106 true positives, 503 true negatives, 2 discordant positives and 1 discordant negative: sensitivity 99.1% (95% CI 94.9 99.8), specificity 99.6% (98.6 99.9), PPV 98.1% (93.5 99.5), NPV 99.8% (98.9 100.0), agreement 99.5% and Cohen's κ 0.98. The discordant negative was a maternally inherited variant, the class for which distinguishing maternal from fetal contributions is most challenging. CONCLUSION: Molecular iNIFS showed high concordance with paired amniocentesis across chromosomal, copy number and monogenic findings, while retaining an explicit no call rate. Multicentre validation and invasive confirmation of positive findings remain necessary. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0809",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0809_association_of_circulating_eosinophils_with_systemic_immune_.md",
+   "snippet": "Title Association of Circulating Eosinophils With Systemic Immune Activation and Reduced Recurrence in Hormone Receptor Positive/Human Epidermal Growth Factor Receptor 2 Negative Breast Cancer Authors Li Ze Qing, Wu Song Yang, Ge Li Ping, W",
+   "text": "Pathology scraped pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Association of Circulating Eosinophils With Systemic Immune Activation and Reduced Recurrence in Hormone Receptor Positive/Human Epidermal Growth Factor Receptor 2 Negative Breast Cancer Authors Li Ze Qing, Wu Song Yang, Ge Li Ping, Wu Xiang Rong, Wu Wen Ya, Liu Cheng Lin, Shao Zhi Ming Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO 26 00261 · PMID: 42900864 https://pubmed.ncbi.nlm.nih.gov/42900864/ Abstract PURPOSE: Hormone receptor positive/human epidermal growth factor receptor 2 negative (HER2 ) breast cancer, the most common subtype, lacks simple, noninvasive biomarkers for recurrence. We evaluated circulating eosinophil count as a clinically applicable biomarker for recurrence in this population. METHODS: Associations between preoperative eosinophil count and patient outcomes were evaluated in a multimodal discovery cohort (N = 472) and validated via propensity score overlap weighting in an independent expanded cohort (N = 23,170). We assessed the additive value of eosinophils in patients with 21 gene recurrence scores (RSs; n = 2,973) and their predictive role for adjuvant cyclin dependent kinase 4/6 (CDK4/6) inhibitors in high risk patients (n = 3,471). Mechanisms were investigated using integrated multiomics, spatial digital pathology, and in vivo preclinical models. RESULTS: Higher circulating eosinophil counts correlated with significantly improved recurrence free and distant metastasis free survival in the discovery cohort. Genomic analysis associated these elevated counts with lower human leukocyte antigen homozygosity and increased intratumoral immune activation. Functionally, eosinophils were associated with antitumor effects, with evidence of CD8+ T cell involvement. These findings were further validated in vivo, where eosinophil adoptive transfer significantly reduced tumor burden in both the EMT6 (BALB/c) and E0771 (C57BL/6) mouse models. Spatial profiling demonstrated that tumor infiltrating eosinophils predominantly coaggregated with lymphocytes. These clinical associations were then validated in the independent expanded cohort through multivariable and propensity score weighted analyses. Critically, eosinophil levels provided additive prognostic value beyond the 21 gene RS and, among high risk patients, predicted the subset that would derive greater benefit from CDK4/6 inhibition. CONCLUSION: Circulating eosinophil count serves as a potential clinically applicable, liquid biopsy biomarker that independently prognosticates recurrence risk and predicts CDK4/6 inhibitor benefit, reflecting systemic immune activation in hormone receptor positive/HER2 breast cancer. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0808",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ACS applied bio materials",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0808_engineering_subcutaneous_ectopic_tertiary_lymphoid_structure.md",
+   "snippet": "Title Engineering Subcutaneous Ectopic Tertiary Lymphoid Structures as Personalized Immune Activation Niches for Cancer Immunotherapy Authors Su Jing Yun, Wang Tian Yang, Zhuo Shao Hua, Feng Geng Hui, Li Yan Mei Journal / DOI ACS applied bi",
+   "text": "Hematology-Oncology scraped pubmed PubMed / ACS applied bio materials Title Engineering Subcutaneous Ectopic Tertiary Lymphoid Structures as Personalized Immune Activation Niches for Cancer Immunotherapy Authors Su Jing Yun, Wang Tian Yang, Zhuo Shao Hua, Feng Geng Hui, Li Yan Mei Journal / DOI ACS applied bio materials · DOI: 10.1021/acsabm.6c01731 · PMID: 42900868 https://pubmed.ncbi.nlm.nih.gov/42900868/ Abstract Tumor associated tertiary lymphoid structures (TLSs) can promote anti tumor immune responses and survival. However, intratumor TLS formation and maturation are limited in tumors with a \"cold\" immune phenotype, including reduced infiltration of immune cells and a suppressive tumor microenvironment (TME). Here, we present a personalized immunotherapy strategy utilizing a subcutaneously injected, bioengineered hydrogel (scTLS) that acts as an ectopic immune activation center, effectively decoupled from the suppressive TME. Native immune cells and antigen presenting cells (APCs) with autologous antigens are recruited through the release of chemokines. An agonist for CD40 is modified on the gel, enabling an immune activated environment. We demonstrate that scTLSs promote robust dendritic cell (DC) activation and antigen presentation, driving the formation of organized T and B cell zones as confirmed by 3D imaging and transcriptomic analysis. This personalized, autologous vaccine based approach elicited potent anti tumor immune responses and effectively inhibited tumor progression across multiple murine models, with enhanced efficacy upon combination with doxorubicin induced immunogenic cell death and immune checkpoint blockade. By overcoming the spatial and immunosuppressive limitations of the native TME, our scTLS platform offers a versatile, \"off the shelf\" engineering strategy for inducing functional TLSs to enhance therapeutic outcomes in a broad spectrum of malignancies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0807",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular pharmacology",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0807_finerenone_a_non_steroidal_mineralocorticoid_receptor_antago.md",
+   "snippet": "Title Finerenone: A Non Steroidal Mineralocorticoid Receptor Antagonist and Its Emerging Role in Cardiovascular Kidney Metabolic Syndrome Authors Fischer Kyle G, Beavers Craig J Journal / DOI Journal of cardiovascular pharmacology · DOI: 10",
+   "text": "Nephrology scraped pubmed PubMed / Journal of cardiovascular pharmacology Title Finerenone: A Non Steroidal Mineralocorticoid Receptor Antagonist and Its Emerging Role in Cardiovascular Kidney Metabolic Syndrome Authors Fischer Kyle G, Beavers Craig J Journal / DOI Journal of cardiovascular pharmacology · DOI: 10.1097/FJC.0000000000001893 · PMID: 42900175 https://pubmed.ncbi.nlm.nih.gov/42900175/ Abstract Cardiovascular kidney metabolic (CKM) syndrome represents the interconnected pathophysiology of metabolic risk factors, chronic kidney disease (CKD), and cardiovascular disease, leading to multiorgan dysfunction and elevated adverse outcomes. Overactivation of the mineralocorticoid receptor (MR), via aldosterone dependent and ligand independent pathways, drives inflammation, fibrosis, and oxidative stress and facilitates CKM progression. Finerenone is a selective non steroidal MR antagonist (nsMRA) that exhibits high MR affinity, has balanced cardiac and renal distribution, and minimal off target steroidal effects, which make it mechanistically different from steroidal MRAs. Large phase 3 trials such as FIDELIO DKD and FIGARO DKD in type 2 diabetes with CKD, and FINEARTS HF in heart failure (HF) with a left ventricular ejection fraction (LVEF) 40%, demonstrated consistent cardiorenal benefits. The prespecified FINE HEART pooled analysis showed finerenone reduced all cause mortality (HR 0.91, 95% CI 0.84 0.99), HF hospitalizations (HR 0.83, 95% CI 0.75 0.92), and the kidney composite outcome (HR 0.80, 95% CI 0.72 0.90), with benefits consistent across CKM components and background therapies including sodium glucose cotransporter 2 (SGLT2) inhibitors. Recent data from FIND CKD extend utility to non diabetic CKD. Various guidelines incorporate finerenone as an additive therapy for patients with persistent albuminuria on maximal renin angiotensin system inhibition (RASi) + SGLT2i. This review summarizes the MR pathophysiology in CKM syndrome, compares the mechanisms of non steroidal versus steroidal MRAs, synthesizes clinical trial evidence, safety, and guideline directed place in therapy, addresses implementation barriers, including cost, and outlines future research directions. Finerenone may fill a critical gap in multimodal CKM management, enabling comprehensive pillar based therapy to mitigate residual cardiorenal risk. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0806",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American Medical Informatics Association : JAMIA",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0806_variability_in_automated_sepsis_case_detection_a_systematic_.md",
+   "snippet": "Title Variability in automated sepsis case detection: a systematic analysis of implementation methods in clinical data repositories Authors Meyer Eschenbach Falk, Schmiedler René, von Stoephasius Johannes, Zhang Camille, Kronfli Luis, Frey ",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of the American Medical Informatics Association : JAMIA Title Variability in automated sepsis case detection: a systematic analysis of implementation methods in clinical data repositories Authors Meyer Eschenbach Falk, Schmiedler René, von Stoephasius Johannes, Zhang Camille, Kronfli Luis, Frey Nicolas, Näher Anatol Fiete, Ehret Jacques, et al. Journal / DOI Journal of the American Medical Informatics Association : JAMIA · DOI: 10.1093/jamia/ocag144 · PMID: 42900705 https://pubmed.ncbi.nlm.nih.gov/42900705/ Abstract OBJECTIVE: To systematically review and characterize methodological heterogeneity in sepsis case detection using the Medical Information Mart for Intensive Care III (MIMIC III) and eICU CRD databases. MATERIALS AND METHODS: We conducted a PRISMA guided systematic review of PubMed and Web of Science (publication years 2016 2024). Studies were eligible if they applied the SOFA based Sepsis 3 definition to MIMIC III or eICU CRD, provided at least one explicit label calculation detail, reported a traceable detection rate, and met further criteria detailed in the PRISMA flow diagram. We classified each study by study type and unit of analysis (patients, admissions, or ICU stays) and extracted methodological details on sepsis case detection across 6 domains. For studies with available source code, we additionally examined code structure and repository dependencies to identify methodological decisions across these domains. RESULTS: Of 396 publications screened, 64 met inclusion criteria and 12 provided source code. Sepsis detection rates ranged from 3.4% to 65.2% in MIMIC III and from 9.8% to 47.9% in eICU CRD. Substantial variability persisted among studies using identical cohort definitions within both databases (MIMIC III: 16.9% 42.2%; eICU CRD: 13.9% 31.4%). In a generalized linear mixed model, between study heterogeneity was extreme (overall τ²≈0.79; 95% prediction interval for a new study's detection rate 5% 63%), and study level characteristics including database, study type, infection detection method, code availability, and unit of analysis explained only a small proportion of this variance (≈9%), with no characteristic reaching statistical significance. The overall proportion of studies reporting methodological details varied by domain: SOFA calculation (53.1%), infection detection methods (42.2%), temporal windows (37.5%), aggregation methods (26.6%), and missing data handling (17.2%). Source code analysis identified 321 implementation decisions, revealing heterogeneity in baseline SOFA definitions (SOFA = 0 vs dynamic baseline), temporal windows (infection centered vs ICU admission centered) and infection detection methods (antibiotic culture matching vs APACHE based diagnosis). Dependencies among several MIMIC III repositories suggested propagation of implementation decisions across studies. DISCUSSION: Clinically validated sepsis definitions yield substantially different detection rates across studies using identical datasets. Statistical modeling showed that this variability is driven almost entirely by between study implementation differences rather than sampling error or study characteristics. CONCLUSION: To improve reproducibility in sepsis research and the robustness of sepsis prediction models, we recommend standardized reporting of sepsis case detection methodology and the publication of version controlled source code. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0805",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiopulmonary rehabilitation and prevention",
+   "confidence": "medium",
+   "date": "2026-10-20",
+   "path": "content/papers/2026/2026-10-20_paper-2026-0805_physiologic_stress_during_walking_and_cycling_early_after_ca.md",
+   "snippet": "Title Physiologic Stress During Walking and Cycling Early After Cardiac Surgery Authors Dzikowicz Dillon J, Mummidi Sudhir K, Yu Yichen, Xia Xiaojuan, Couderc Jean Philippe, Lachant Daniel J Journal / DOI Journal of cardiopulmonary rehabili",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiopulmonary rehabilitation and prevention Title Physiologic Stress During Walking and Cycling Early After Cardiac Surgery Authors Dzikowicz Dillon J, Mummidi Sudhir K, Yu Yichen, Xia Xiaojuan, Couderc Jean Philippe, Lachant Daniel J Journal / DOI Journal of cardiopulmonary rehabilitation and prevention · DOI: 10.1097/HCR.0000000000001074 · PMID: 42900878 https://pubmed.ncbi.nlm.nih.gov/42900878/ Abstract PURPOSE: To characterize cardiac effort and heart rate (HR) responses during the 6 minute walk test (6MWT) early after cardiac surgery, compare HR patterns between walking and cycle ergometry, and evaluate differences by sex, frailty, and atrial fibrillation status. METHODS: We analyzed a publicly available PhysioNet dataset of adults ≥65 years with pre frailty/frailty undergoing cardiac surgery who completed a 6MWT and symptom limited cycle ergometry with continuous single lead electrocardiogram (ECG) monitoring (Polar H10). Cardiac effort was defined as total 6MWT heartbeats divided by distance walked (beats/m). Associations with cycle ergometry performance were assessed using Spearman correlations with bootstrap CI; paired t tests compared HR responses between modalities; subgroup differences were evaluated using Welch t tests and multivariable linear regression. RESULTS: Of 80 enrolled participants, 66 (83%) had analyzable 6MWT ECG recordings (mean age 73 ± 5 years; 67% male; 18 ± 8 days post surgery). Mean 6 minute walking distance (6MWD) was 300 ± 79 m, and mean cardiac effort was 1.62 ± 0.52 beats/m. In 38 participants with paired cycle ergometry data, HR responses were similar between walking and cycling. Greater 6MWD was associated with better cycle ergometry performance, while higher cardiac effort was associated with lower cycle ergometry performance. In multivariable analysis, female sex was independently associated with higher cardiac effort (β = .34 beats/m; P = .042), atrial fibrillation with lower average and end of test HR (P ≤ .035), and greater frailty with shorter 6MWD (P = .036). CONCLUSIONS: Cardiac effort is a feasible ECG derived metric that complements 6MWD by integrating heart rate response with functional performance early after cardiac surgery. In this frail, predominantly beta blocked cohort, HR responses during walking closely mirrored cycle ergometry. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0393",
