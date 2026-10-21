@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3900,
+  "total": 3901,
   "byType": {
    "usmle": 210,
+   "concept": 108,
    "kmle": 1504,
    "imaging": 404,
-   "concept": 107,
    "paper": 812,
    "anatomy": 846,
    "ailab": 14,
@@ -25,7 +25,7 @@ window.MEDKOS_INDEX = {
    "Obstetrics & Gynecology": 131,
    "Pathology": 119,
    "Hematology-Oncology": 117,
-   "Rheumatology": 116,
+   "Rheumatology": 117,
    "Psychiatry": 113,
    "Neurology": 112,
    "General Surgery": 102,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2725,
-   "medium": 1125,
+   "medium": 1126,
    "low": 50
   },
   "tagCount": 4993
@@ -212,6 +212,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0218.md",
    "snippet": "A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections",
    "text": "Pharmacology Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots warfarin warfarin-induced-skin-necrosis protein-c vitamin-k-antagonist anticoagulation mechanism USMLE-style / MedKOS (Ageno W, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S; Nazarian RM, et al. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332) A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections, and she was started on oral warfarin 10 mg daily; no other anticoagulant was given. Her mother had three episodes of deep venous thrombosis before the age of 50 years. The patient has no other medical conditions and takes no other medications. She has not received heparin at any time. Her vital signs are shown. Examination shows several sharply demarcated, exquisitely tender, purple black plaques with overlying hemorrhagic bullae on both thighs and the lower abdomen; the surrounding skin is red. The lesions are flat and not palpable as raised purpura. The left calf is mildly swollen. There is no bleeding from the gums, nose or venipuncture sites. Laboratory results are shown. A skin biopsy shows fibrin thrombi occluding dermal and subcutaneous venules with hemorrhagic necrosis and no inflammation of the vessel walls. Which of the following best explains the pathogenesis of this patient's skin lesions? A. Deposition of immune complexes in the walls of dermal postcapillary venules B. A faster fall in protein C activity than in prothrombin activity C. Depletion of factor VII leading to bleeding into the dermis D. Calcification of the media of dermal and subcutaneous arterioles E. Antibodies against phospholipid bound β2 glycoprotein I 헤파린 없이 와파린을 고용량으로 시작한 지 3~5일째, 지방이 많은 부위(허벅지·아랫배)에 통증이 심한 경계 뚜렷한 자흑색 판과 출혈성 물집이 생겼고 생검에서 진피·피하 소정맥의 피브린 혈전과 출혈성 괴사(혈관벽 염증 없음)가 보인다 — 와파린 유발 피부 괴사다. 어머니의 반복 정맥 혈전은 단백 C 결핍(유전성 혈전성향)을 시사한다. 와파린은 비타민 K 의존 인자(II·VII·IX·X)와 항응고 단백 C·S 의 γ 카복실화를 함께 막는데, 반감기가 짧은 단백 C(~8시간)가 프로트롬빈(~60시간)·인자 X 보다 먼저 떨어진다. 그래서 첫 며칠은 항응고 단백만 줄어든 일시적 과응고 상태가 되어 미세혈관 혈전이 생긴다. 이 때문에 와파린은 헤파린 등 비경구 항응고제와 겹쳐(최소 5일, INR 2 이상 24시간) 시작한다."
+  },
+  {
+   "id": "cn.rheum.acute-monoarthritis.synovial-fluid-first",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/concepts/rheumatology/cn.rheum.acute-monoarthritis.synovial-fluid-first.md",
+   "snippet": "판단 — 왜 관절 천자가 먼저인가 급성·국소·단관절 통증은 경고(red flag) 진단 — 화농성 관절염(septic arthritis)·급성 결정 관절염(통풍 등)·골절 — 을 먼저 떠올리게 한다. 늦게 진단하면 관절이 손상된다 [[harrison 21: 370장 p.2844]]. 급성 단관절염이나 감염·결정 관절병증 의심에서 관절액 흡인·분석(arthrocentesis, synovial fluid analysis)은 언제나",
+   "text": "Rheumatology 판단 — 왜 관절 천자가 먼저인가 급성·국소·단관절 통증은 경고(red flag) 진단 — 화농성 관절염(septic arthritis)·급성 결정 관절염(통풍 등)·골절 — 을 먼저 떠올리게 한다. 늦게 진단하면 관절이 손상된다 [[harrison 21: 370장 p.2844]]. 급성 단관절염이나 감염·결정 관절병증 의심에서 관절액 흡인·분석(arthrocentesis, synovial fluid analysis)은 언제나 적응이 된다 [[harrison 21: 370장 p.2852]]. 감염이 의심되면 관절액을 그람염색하고 배양한다 — 결정이 보여도 마찬가지다. 결정 관절염과 화농성 관절염은 가끔 한 관절에 함께 있다 [[harrison 21: 370장 p.2852]]. 혈청 요산·자가항체는 이 판단을 대신하지 못한다. 급성 통풍 발작의 최대 50%는 혈청 요산이 정상이고, RF·ANA 는 임상이 특정 진단을 가리킬 때만 낸다 [[harrison 21: 370장 p.2851]]. 기전 — 정상 관절액에서 염증 관절액으로 정상 관절액은 맑거나 옅은 짚색이고, 히알루론산(hyaluronate) 이 많아 점성이 높다 — 주사기에서 한 방울씩 밀면 긴 꼬리를 끌며 실처럼 늘어난다 [[harrison 21: 370장 p.2852]]. 골관절염·외상의 삼출은 이 점성이 그대로다. 염증이 생기면 다형핵구가 몰려 관절액이 탁해지고, 히알루론산이 줄어 점성이 떨어진다(꼬리가 거의 없다) [[harrison 21: 370장 p.2852]]. 세균 감염에서는 백혈구가 더 늘어 불투명한 고름이 된다. 그래서 관절액의 겉모습·점성·세포 수 만으로도 비염증·염증·화농을 가를 수 있고, 원인은 그람염색·배양·결정이 정한다 [[harrison 21: 370장 p.2852]]. 관절 안 압력이 오르면 환자는 관절 안 압력이 가장 낮고 부피가 가장 큰 자세(대개 약간 굽힘)로 관절을 둔다 [[harrison 21: 370장 p.2848]]. 가르는 소견 — 관절액이 말해 주는 것 천자 직후 겉모습·점성·세포 수를 바로 본다 [[harrison 21: 370장 p.2852]]. 관절액 포도당·단백·젖산탈수소효소(LDH)·젖산·자가항체 검사는 진단 가치가 없어 권하지 않는다 [[harrison 21: 370장 p.2852]]. 임균 관절염(gonococcal arthritis)이 의심되면 핵산증폭검사(NAAT)로 임균·클라미디아를 찾는다. 만성 단관절염이면 결핵균(Mycobacterium tuberculosis)·진균도 배양한다 [[harrison 21: 370장 p.2852]]. 해석의 한계 : 화농 범위의 관절액( 50,000/μL)은 류마티스관절염·통풍에서도 나온다 — 숫자 하나로 감염을 확정하거나 배제하지 않고 배양을 본다 [[harrison 21: 370장 p.2852]]. 선택 — 천자 전에 확인할 것과 다른 검사 관절인가, 관절 주위인가 : 관절 질환은 깊고 넓은 통증, 능동·수동 운동 모두의 제한, 부종·염발음·잠김·변형이 있다. 관절 주위 질환(힘줄염·윤활낭염)은 능동 운동에서만 아프고 관절 가장자리 밖의 점 압통이 있다 — 천자 대상이 아니다 [[harrison 21: 370장 p.2844, p.2848]]. 혈액 검사 : 혈구 수·ESR 또는 CRP 는 염증과 비염증을 가르는 데 쓴다. 혈청 요산은 통풍 진단과 요산 저하 치료의 감시(목표 < 6 mg/dL)에 쓰지만 발작 때 정상일 수 있다 [[harrison 21: 370장 p.2851]]. 영상 : 외상·만성 감염 의심·단관절 침범이면 단순 X선이 알맞지만, 급성 염증성 관절염의 이른 X선은 연부조직 부종·관절 주위 골감소만 보여 진단에 거의 도움이 되지 않는다 [[harrison 21: 370장 p.2852]]. 권고와 예외 외상 뒤 관절 삼출, 만성 다발관절염 환자에게 새로 생긴 단관절염, 혈관절증 의심도 천자를 강하게 고려한다(Fig. 370 6) [[harrison 21: 370장 p.2852]]. 새로 생긴 염증성 다발 관절염은 감별이 넓어(RA·간염 관련·치쿤구니야·혈청병·약물 유발 루푸스·SLE·다관절 화농성) 관절액보다 표적 혈액 검사가 더 필요할 수 있다 [[harrison 21: 370장 p.2847]]. 출혈성 관절액은 외상(인대·연골 파열)·골연골 골절·신경병성 관절병증·응고병증을 생각한다. 외상 뒤 육안으로 피가 섞인 관절액은 십자인대 손상을 의심하게 한다 [[harrison 21: 370장 p.2850, p.2852]]. 입원 중 수술·탈수·약물이 급성 통풍을 일으킬 수 있다 [[harrison 21: 370장 p.2847]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 370장 p.2844~2853)"
   },
   {
    "id": "kmle-2026-1537",
