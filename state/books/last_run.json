@@ -1,5 +1,5 @@
 {
- "started": "2026-10-20T09:32:27+09:00",
+ "started": "2026-10-21T09:04:43+09:00",
  "built": [
   "류마티스내과"
  ],
@@ -49,7 +49,7 @@
  ],
  "layout_trials": {
   "류마티스내과": {
-   "tried": 470,
+   "tried": 490,
    "diagram_after_section": {
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
@@ -88,6 +88,10 @@
     "u-cn-rheum-igg4-related-disease-diagnosis#shrink": 1.0,
     "u-cn-rheum-igg4-related-disease-diagnosis#pad": 14,
     "u-cn-rheum-igg4-related-disease-diagnosis#col": false,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine": 14,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#shrink": 1.0,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#pad": 14,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#col": false,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 9,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
@@ -100,7 +104,7 @@
   }
  },
  "result": "ok",
- "finished": "2026-10-20T10:11:21+09:00",
+ "finished": "2026-10-21T09:47:50+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -109,17 +113,17 @@
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "bc19c1c8134cf6170c1e619b6a2e091a",
-    "archive": "MedKOS_학습서_류마티스내과_v26_2026-10-20.pdf"
+    "md5": "e8abf27df223d5c53f18c9afff4fa5bd",
+    "archive": "MedKOS_학습서_류마티스내과_v27_2026-10-21.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "7f1c7f1832bb88c1db36ba40872f57ec"
+    "md5": "e04ecc43d11bfa6c6bc17dcc8d45f1bf"
    }
   },
-  "at": "2026-10-20T10:11:21+09:00"
+  "at": "2026-10-21T09:47:50+09:00"
  }
 }
