@@ -2,6 +2,1554 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0397",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "외과계 — 석 달 사이 빠르게 커진 젊은 여성의 유방 종괴",
+  "type": "외과계 — 석 달 사이 빠르게 커진 젊은 여성의 유방 종괴",
+  "modality": "US",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-21",
+  "vignette": "23세 여자가 왼쪽 유방의 멍울이 석 달 사이 빠르게 커져 병원에 왔다. 통증은 없고 유두 분비물도 없다. 2년 전 같은 자리에 작은 멍울이 있다는 말을 들었으나 지켜보기로 했었다. 진찰에서 왼쪽 유방 위쪽 바깥에 지름 약 4 cm 의 단단하고 잘 움직이는 둥근 종괴가 만져지며, 위 피부는 정상이다. 겨드랑이 림프절은 만져지지 않는다. 유방 초음파 사진은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "유방 고름집",
+   "엽상종양",
+   "섬유샘종",
+   "단순 낭",
+   "침윤성 관암종"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 초음파에서 외곽이 명확하고 완만하게 분엽된 큰 타원형 등에코 고형 종괴가 보인다. 섬유샘종과 같은 양성 모양이지만 지름 4 cm 로 크고 석 달 사이 빠르게 커졌다는 점이 엽상종양을 시사한다. 무에코가 아니어서 낭이 아니고, 외곽이 명확해 암의 침상·불규칙 변연과 다르다.\n- 원리: <b>왜 둘이 비슷하게 보이는가</b>: 섬유샘종과 엽상종양은 모두 유관 상피와 그 둘레 기질이 함께 자라는 섬유상피성 종양이다. 그래서 초음파에서 둘 다 외곽이 명확하고 피부와 평행한 타원형·분엽 고형 종괴로 보인다.<br> <b>무엇이 다른가</b>: 엽상종양은 <b>기질 세포</b>가 주인공이다 — 세포가 많고 빨리 자라 상피로 덮인 기질이 틈새 속으로 잎사귀처럼 밀고 들어간다(엽상 구조). 그래서 크기가 크고(흔히 3~4 cm 이상) 몇 달 사이 빠르게 자라며, 발병 나이는 섬유샘종보다 10~20년 늦은 40대가 많지만 젊은 여성에도 생긴다.<br> <b>왜 진단이 처치를 바꾸는가</b>: 섬유샘종은 관찰하거나 단순 적출하지만, 엽상종양은 단순 적출 뒤 국소 재발이 흔해 1 cm 이상 절제연의 광범위 절제를 한다. 림프절 전이는 드물어 겨드랑이 수술은 하지 않는다. 그래서 「크고 빨리 자라는 섬유샘종 모양 종괴」는 세침이 아닌 중심부 바늘생검으로 기질을 봐야 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">엽상종양(정답)</th><th>섬유샘종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>40대가 많으나 범위가 넓다</td><td>10대 후반~30대</td></tr> <tr><td>크기·성장</td><td><b>크다(흔히 4 cm↑), 몇 달 사이 빠르게 커진다</b></td><td>대개 3 cm 미만, 자라다 멈춘다</td></tr> <tr><td>조직</td><td>기질 세포 증가, 잎사귀 모양 틈</td><td>기질과 상피가 고르게, 세포 적음</td></tr> <tr><td>치료</td><td>1 cm 이상 절제연 광범위 절제</td><td>관찰 또는 단순 적출</td></tr> </tbody></table> 초음파 모양만으로는 둘을 가르기 어렵다. 크기와 성장 속도가 엽상종양 쪽으로 기울게 하고, 확진은 중심부 바늘생검의 기질 소견이다.\n- 오답 이유:\n  - ① 유방 고름집은 수유부에서 열·발적·압통과 함께 속이 불균일한 액체 저류로 보일 때 정답이 된다.\n  - ③ 섬유샘종은 같은 모양이라도 크기가 3 cm 미만이고 수년간 크기 변화가 거의 없는 젊은 여성의 종괴일 때 정답이 된다.\n  - ④ 단순 낭은 속이 무에코로 까맣고 벽이 얇으며 뒤쪽 음향 증강이 뚜렷할 때 정답이 되며, 이 종괴는 속이 차 있는 등에코다.\n  - ⑤ 침윤성 관암종은 경계가 불분명하고 각지거나 침상 변연, 피부에 수직인 모양과 뒤쪽 그림자를 보일 때 의심한다.\n- 함정: 모양이 전형적인 섬유샘종이라 섬유샘종을 고르는 것 — 크기 4 cm·석 달 사이의 빠른 성장은 엽상종양을 생각하게 하는 단서다.\n- 학습목표: 외곽이 명확한 분엽 모양 고형 종괴라도 크기가 크고 몇 달 사이 빠르게 커졌으면 섬유샘종보다 엽상종양을 먼저 생각하고, 확진 뒤 1 cm 이상 절제연의 광범위 절제를 계획한다\n- 근거·출처: Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — fibroepithelial lesions · National Comprehensive Cancer Network. NCCN Guidelines: Breast Cancer — Phyllodes tumor (2024) · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Breast — stromal tumors · 작성자 판독(2026-10-22): 크고 타원형·완만히 분엽된 등에코 고형 종괴, 외곽 명확, 약한 후방 증강\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case078 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 외곽이 명확하고 완만하게 분엽된 큰 타원형 등에코 고형 종괴가 보인다. 섬유샘종과 같은 양성 모양이지만 지름 4 cm 로 크고 석 달 사이 빠르게 커졌다는 점이 엽상종양을 시사한다. 무에코가 아니어서 낭이 아니고, 외곽이 명확해 암의 침상·불규칙 변연과 다르다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 둘이 비슷하게 보이는가</b>: 섬유샘종과 엽상종양은 모두 유관 상피와 그 둘레 기질이 함께 자라는 섬유상피성 종양이다. 그래서 초음파에서 둘 다 외곽이 명확하고 피부와 평행한 타원형·분엽 고형 종괴로 보인다.<br> <b>무엇이 다른가</b>: 엽상종양은 <b>기질 세포</b>가 주인공이다 — 세포가 많고 빨리 자라 상피로 덮인 기질이 틈새 속으로 잎사귀처럼 밀고 들어간다(엽상 구조). 그래서 크기가 크고(흔히 3~4 cm 이상) 몇 달 사이 빠르게 자라며, 발병 나이는 섬유샘종보다 10~20년 늦은 40대가 많지만 젊은 여성에도 생긴다.<br> <b>왜 진단이 처치를 바꾸는가</b>: 섬유샘종은 관찰하거나 단순 적출하지만, 엽상종양은 단순 적출 뒤 국소 재발이 흔해 1 cm 이상 절제연의 광범위 절제를 한다. 림프절 전이는 드물어 겨드랑이 수술은 하지 않는다. 그래서 「크고 빨리 자라는 섬유샘종 모양 종괴」는 세침이 아닌 중심부 바늘생검으로 기질을 봐야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">엽상종양(정답)</th><th>섬유샘종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>40대가 많으나 범위가 넓다</td><td>10대 후반~30대</td></tr> <tr><td>크기·성장</td><td><b>크다(흔히 4 cm↑), 몇 달 사이 빠르게 커진다</b></td><td>대개 3 cm 미만, 자라다 멈춘다</td></tr> <tr><td>조직</td><td>기질 세포 증가, 잎사귀 모양 틈</td><td>기질과 상피가 고르게, 세포 적음</td></tr> <tr><td>치료</td><td>1 cm 이상 절제연 광범위 절제</td><td>관찰 또는 단순 적출</td></tr> </tbody></table> 초음파 모양만으로는 둘을 가르기 어렵다. 크기와 성장 속도가 엽상종양 쪽으로 기울게 하고, 확진은 중심부 바늘생검의 기질 소견이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 유방 고름집은 수유부에서 열·발적·압통과 함께 속이 불균일한 액체 저류로 보일 때 정답이 된다.\n③ 섬유샘종은 같은 모양이라도 크기가 3 cm 미만이고 수년간 크기 변화가 거의 없는 젊은 여성의 종괴일 때 정답이 된다.\n④ 단순 낭은 속이 무에코로 까맣고 벽이 얇으며 뒤쪽 음향 증강이 뚜렷할 때 정답이 되며, 이 종괴는 속이 차 있는 등에코다.\n⑤ 침윤성 관암종은 경계가 불분명하고 각지거나 침상 변연, 피부에 수직인 모양과 뒤쪽 그림자를 보일 때 의심한다."
+   },
+   {
+    "k": "함정",
+    "v": "모양이 전형적인 섬유샘종이라 섬유샘종을 고르는 것 — 크기 4 cm·석 달 사이의 빠른 성장은 엽상종양을 생각하게 하는 단서다."
+   },
+   {
+    "k": "학습목표",
+    "v": "외곽이 명확한 분엽 모양 고형 종괴라도 크기가 크고 몇 달 사이 빠르게 커졌으면 섬유샘종보다 엽상종양을 먼저 생각하고, 확진 뒤 1 cm 이상 절제연의 광범위 절제를 계획한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — fibroepithelial lesions · National Comprehensive Cancer Network. NCCN Guidelines: Breast Cancer — Phyllodes tumor (2024) · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Breast — stromal tumors · 작성자 판독(2026-10-22): 크고 타원형·완만히 분엽된 등에코 고형 종괴, 외곽 명확, 약한 후방 증강 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case078 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "외곽이 명확한 분엽 모양 고형 종괴가 지름 4 cm 로 크고 석 달 사이 빠르게 커졌으므로 섬유샘종보다 엽상종양이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "크기와 성장 속도 — 4 cm, 석 달 사이 빠르게 커짐",
+   "steps": 2,
+   "chain": [
+    "영상: 외곽 명확한 큰 타원형·분엽 등에코 고형 종괴 → 섬유상피성 종양(섬유샘종 또는 엽상종양)",
+    "지름 4 cm + 석 달 사이 빠르게 커짐 → 엽상종양"
+   ],
+   "key": [
+    {
+     "item": "영상: 외곽이 명확하고 완만히 분엽된 큰 타원형 등에코 고형 종괴",
+     "why": "섬유상피성 종양 모양",
+     "also": []
+    },
+    {
+     "item": "석 달 사이 빠르게 커져",
+     "why": "엽상종양 쪽",
+     "also": []
+    },
+    {
+     "item": "지름 약 4 cm",
+     "why": "섬유샘종보다 큰 크기",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "잘 움직이는 둥근 종괴",
+     "why": "침윤성 암 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "통증은 없고",
+     "why": "고름집 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "겨드랑이 림프절은 만져지지 않는다",
+     "why": "엽상종양은 림프절 전이가 드물다 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "초음파에서 외곽이 명확하고 분엽된 큰 고형 종괴로 섬유샘종과 같은 모양이지만, 지름 4 cm 로 크고 석 달 사이 빠르게 커졌다. 엽상종양을 먼저 생각하고 중심부 바늘생검으로 확인한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "지름 1.5 cm 로 2년 동안 크기가 변하지 않은 같은 모양의 종괴였다면 섬유샘종이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0397.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case078",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case078"
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0396",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "외과계 — 안전벨트 타박 뒤 만져지는 유방 종괴와 초음파",
+  "type": "외과계 — 안전벨트 타박 뒤 만져지는 유방 종괴와 초음파",
+  "modality": "US",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-21",
+  "vignette": "56세 여자가 2주 전 오른쪽 유방에서 단단한 멍울을 만져 병원에 왔다. 2개월 전 자동차 사고로 안전벨트가 지나간 자리에 멍이 들었다. 유방암 가족력은 없다. 진찰에서 오른쪽 유방 위쪽 바깥에 지름 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지고, 피부 변화나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 자리에 경계가 불분명한 고밀도 음영이 있다. 유방 초음파 사진은 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "초음파 유도 중심부 바늘생검",
+   "6개월 뒤 추적 초음파",
+   "세침흡인으로 내용물 배액",
+   "변형 근치유방절제술",
+   "경구 항생제 2주 투여 뒤 재진찰"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 초음파에서 경계가 불분명한 불규칙 이질성 종괴, 둘레의 고에코 테두리와 뒤쪽 음향 그림자가 보인다. 악성을 강하게 의심하는 소견(BI-RADS 4~5)이므로 외상 병력이 있어 지방괴사가 그럴듯하더라도 조직으로 확인해야 하고, 다음 단계는 영상 유도 중심부 바늘생검이다.\n- 원리: <b>왜 지방괴사가 암처럼 보이는가</b>: 외상·수술·방사선으로 지방세포가 깨지면 흘러나온 중성지방을 대식세포가 먹어 거품세포가 되고, 둘레에 섬유화가 일어난다. 섬유화가 주변 조직을 당겨 경계가 불규칙해지고, 섬유 조직이 초음파를 흡수해 뒤쪽 그림자를 만든다 — 침윤성 관암종의 침상 변연·그림자와 겹친다.<br> <b>왜 병력으로 결론 내리지 않는가</b>: 외상 병력은 지방괴사 환자의 절반 정도에서만 확인되고, 외상을 계기로 원래 있던 암을 처음 만지는 일도 흔하다. 그래서 영상 분류가 처치를 정한다 — BI-RADS 3(양성 가능성 높음)이면 단기 추적, 4·5 이면 조직검사다.<br> <b>왜 중심부 바늘생검인가</b>: 세침흡인은 세포만 얻어 침윤 여부·수용체를 판정하지 못하고, 중심부 바늘생검은 조직 구조와 ER·PR·HER2 까지 확인한다. 지방괴사로 나오면 영상과 일치하는지(radiologic-pathologic concordance) 보고 경과 관찰로 돌린다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중심부 바늘생검(정답)</th><th>6개월 뒤 추적 초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>맞는 영상 분류</td><td><b>BI-RADS 4·5</b> — 불규칙, 경계 불분명, 뒤쪽 그림자</td><td>BI-RADS 3 — 타원형, 외곽 명확, 평행, 그림자 없음</td></tr> <tr><td>악성 가능성</td><td>2 % 초과(5 는 95 % 이상)</td><td>2 % 이하</td></tr> <tr><td>병력의 역할</td><td>외상 병력이 있어도 조직 확인</td><td>전형적 지방괴사의 기름 낭종 모양일 때만</td></tr> </tbody></table> 같은 지방괴사라도 기름 낭종(무에코·외곽 명확)처럼 보이면 추적이 가능하지만, 이 사진처럼 암과 구별되지 않는 모양이면 병력과 관계없이 생검한다.\n- 오답 이유:\n  - ② 6개월 추적은 외곽이 명확한 타원형 종괴나 무에코 기름 낭종처럼 BI-RADS 3 으로 분류될 때 정답이 된다.\n  - ③ 세침흡인 배액은 무에코의 단순 낭이나 고름집처럼 액체가 차 있는 병변일 때 진단과 치료를 겸한다.\n  - ④ 변형 근치유방절제술은 조직검사로 침윤성 유방암이 확진되고 유방 보존이 어려울 때의 수술로, 조직 진단 전에는 하지 않는다.\n  - ⑤ 경구 항생제는 열·홍반·압통이 있는 유방염이나 수유부의 유방 고름집이 의심될 때 정답이 된다.\n- 함정: 안전벨트 외상 병력만 보고 지방괴사로 단정해 추적 관찰을 고르는 것 — 영상이 암과 구별되지 않으면 조직검사가 먼저다.\n- 학습목표: 외상 병력이 있어도 초음파에서 경계가 불분명하고 뒤쪽 그림자를 보이는 불규칙 종괴(BI-RADS 4~5)는 지방괴사로 추정해 관찰하지 않고 중심부 바늘생검으로 조직을 확인한다\n- 근거·출처: American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound — assessment categories · Kerridge WD, et al. Fat necrosis of the breast: a pictorial review of the mammographic, ultrasound, CT, and MRI findings. Clin Radiol 2015;70:e43-e54 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast · 작성자 판독(2026-10-22): 경계 불분명한 불규칙 이질성 병변, 둘레 고에코 테두리, 뒤쪽 음향 그림자\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case115 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 경계가 불분명한 불규칙 이질성 종괴, 둘레의 고에코 테두리와 뒤쪽 음향 그림자가 보인다. 악성을 강하게 의심하는 소견(BI-RADS 4~5)이므로 외상 병력이 있어 지방괴사가 그럴듯하더라도 조직으로 확인해야 하고, 다음 단계는 영상 유도 중심부 바늘생검이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 지방괴사가 암처럼 보이는가</b>: 외상·수술·방사선으로 지방세포가 깨지면 흘러나온 중성지방을 대식세포가 먹어 거품세포가 되고, 둘레에 섬유화가 일어난다. 섬유화가 주변 조직을 당겨 경계가 불규칙해지고, 섬유 조직이 초음파를 흡수해 뒤쪽 그림자를 만든다 — 침윤성 관암종의 침상 변연·그림자와 겹친다.<br> <b>왜 병력으로 결론 내리지 않는가</b>: 외상 병력은 지방괴사 환자의 절반 정도에서만 확인되고, 외상을 계기로 원래 있던 암을 처음 만지는 일도 흔하다. 그래서 영상 분류가 처치를 정한다 — BI-RADS 3(양성 가능성 높음)이면 단기 추적, 4·5 이면 조직검사다.<br> <b>왜 중심부 바늘생검인가</b>: 세침흡인은 세포만 얻어 침윤 여부·수용체를 판정하지 못하고, 중심부 바늘생검은 조직 구조와 ER·PR·HER2 까지 확인한다. 지방괴사로 나오면 영상과 일치하는지(radiologic-pathologic concordance) 보고 경과 관찰로 돌린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중심부 바늘생검(정답)</th><th>6개월 뒤 추적 초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>맞는 영상 분류</td><td><b>BI-RADS 4·5</b> — 불규칙, 경계 불분명, 뒤쪽 그림자</td><td>BI-RADS 3 — 타원형, 외곽 명확, 평행, 그림자 없음</td></tr> <tr><td>악성 가능성</td><td>2 % 초과(5 는 95 % 이상)</td><td>2 % 이하</td></tr> <tr><td>병력의 역할</td><td>외상 병력이 있어도 조직 확인</td><td>전형적 지방괴사의 기름 낭종 모양일 때만</td></tr> </tbody></table> 같은 지방괴사라도 기름 낭종(무에코·외곽 명확)처럼 보이면 추적이 가능하지만, 이 사진처럼 암과 구별되지 않는 모양이면 병력과 관계없이 생검한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 6개월 추적은 외곽이 명확한 타원형 종괴나 무에코 기름 낭종처럼 BI-RADS 3 으로 분류될 때 정답이 된다.\n③ 세침흡인 배액은 무에코의 단순 낭이나 고름집처럼 액체가 차 있는 병변일 때 진단과 치료를 겸한다.\n④ 변형 근치유방절제술은 조직검사로 침윤성 유방암이 확진되고 유방 보존이 어려울 때의 수술로, 조직 진단 전에는 하지 않는다.\n⑤ 경구 항생제는 열·홍반·압통이 있는 유방염이나 수유부의 유방 고름집이 의심될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "안전벨트 외상 병력만 보고 지방괴사로 단정해 추적 관찰을 고르는 것 — 영상이 암과 구별되지 않으면 조직검사가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "외상 병력이 있어도 초음파에서 경계가 불분명하고 뒤쪽 그림자를 보이는 불규칙 종괴(BI-RADS 4~5)는 지방괴사로 추정해 관찰하지 않고 중심부 바늘생검으로 조직을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound — assessment categories · Kerridge WD, et al. Fat necrosis of the breast: a pictorial review of the mammographic, ultrasound, CT, and MRI findings. Clin Radiol 2015;70:e43-e54 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast · 작성자 판독(2026-10-22): 경계 불분명한 불규칙 이질성 병변, 둘레 고에코 테두리, 뒤쪽 음향 그림자 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case115 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "외상 병력이 있어도 초음파에서 불규칙·경계 불분명·뒤쪽 그림자인 종괴는 악성 의심(BI-RADS 4~5)이라 중심부 바늘생검을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "영상 분류 — 외곽 명확한 타원형(BI-RADS 3)이 아니라 불규칙·그림자(4~5)다",
+   "steps": 2,
+   "chain": [
+    "영상: 경계 불분명한 불규칙 종괴 + 고에코 테두리 + 뒤쪽 그림자 → 악성 의심(BI-RADS 4~5)",
+    "악성 의심 영상 + 외상 병력 → 병력으로 결론 내리지 않고 중심부 바늘생검"
+   ],
+   "key": [
+    {
+     "item": "영상: 경계가 불분명한 불규칙 이질성 종괴와 뒤쪽 음향 그림자",
+     "why": "악성 의심 형태",
+     "also": []
+    },
+    {
+     "item": "경계가 불분명한 고밀도 음영",
+     "why": "유방촬영도 악성 의심",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "안전벨트가 지나간 자리에 멍이 들었다",
+     "why": "지방괴사를 떠올리게 하지만 생검 결정을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "피부 변화나 유두 분비물은 없다",
+     "why": "국소 진행 소견이 없다 — 처치 선택에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "겨드랑이 림프절은 만져지지 않는다",
+     "why": "병기와 관련 — 조직 진단 순서는 같다",
+     "also": []
+    }
+   ],
+   "summary": "안전벨트 외상 뒤 생긴 종괴지만 초음파에서 경계가 불분명한 불규칙 종괴와 뒤쪽 그림자가 보여 악성을 배제할 수 없다. 병력으로 지방괴사라 단정하지 않고 중심부 바늘생검으로 조직을 확인한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "초음파에서 외곽이 명확한 무에코의 기름 낭종처럼 보였다면(BI-RADS 3) 6개월 추적이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0396.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case115",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case115"
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0395",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "호흡기 — 저일회호흡량에도 심한 저산소혈증이 남은 바이러스 폐렴 ARDS",
+  "type": "호흡기 — 저일회호흡량에도 심한 저산소혈증이 남은 바이러스 폐렴 ARDS",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-21",
+  "vignette": "A 57-year-old woman with viral pneumonia was intubated 30 hours ago because of worsening hypoxemia. She has a dual-chamber pacemaker for complete heart block. She is sedated and receiving volume-control ventilation with a tidal volume of 6 mL/kg of predicted body weight, PEEP of 14 cm H2O, and FiO2 of 0.8. Plateau pressure is 27 cm H2O. Her pulse is 96/min, and blood pressure is 118/70 mm Hg on a low dose of norepinephrine. Arterial blood gas analysis shows pH 7.31, PaCO2 52 mm Hg, and PaO2 68 mm Hg. Echocardiography shows a left ventricular ejection fraction of 60% and no valvular disease. A portable chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Venovenous extracorporeal membrane oxygenation now",
+   "High-frequency oscillatory ventilation",
+   "Increase the tidal volume to 10 mL/kg of predicted body weight",
+   "Intravenous furosemide infusion",
+   "Prone positioning for at least 16 hours per day"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Bilateral diffuse airspace opacities, onset within a week, and a normal ejection fraction meet the definition of ARDS. With lung-protective ventilation (6 mL/kg, plateau 27 cm H2O, PEEP 14) the PaO2/FiO2 ratio is 68/0.8 = 85 mm Hg — severe ARDS. Prone positioning for at least 16 hours a day lowers mortality when the ratio stays below 150 mm Hg and is the next step before rescue therapies.\n- 원리: <b>Why lying prone improves oxygenation</b>: in the supine position the heavy, edematous lung and the heart compress the dorsal lung, which collapses even though most pulmonary blood flow still goes there — a large shunt. Turning the patient prone recruits those dorsal regions, while perfusion stays dorsal, so ventilation-perfusion matching improves.<br> <b>Why it also protects the lung</b>: the chest wall is stiffer anteriorly when prone, so the inflation of the lung becomes more uniform; stress and strain are spread over more alveoli, reducing ventilator-induced lung injury. That, not the oxygen number, is why mortality falls.<br> <b>Order of escalation</b>: low tidal volume (6 mL/kg predicted body weight, plateau ≤ 30 cm H2O) and adequate PEEP → if PaO2/FiO2 &lt; 150 mm Hg, prone positioning (≥ 16 h/day, often with short-term neuromuscular blockade) → venovenous ECMO only if hypoxemia remains refractory despite these measures.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Prone positioning (answer)</th><th>VV-ECMO (closest distractor)</th></tr></thead><tbody> <tr><td>Fits when</td><td>PaO2/FiO2 <b>&lt; 150 mm Hg</b> despite lung-protective ventilation</td><td>Refractory hypoxemia (e.g., PaO2/FiO2 &lt; 80 for &gt; 6 h) or pH &lt; 7.25 with high PaCO2 <b>after</b> proning has failed</td></tr> <tr><td>Evidence</td><td>Mortality benefit in a randomized trial (PROSEVA)</td><td>Rescue therapy; selected centers</td></tr> <tr><td>Cost</td><td>Nursing effort, pressure injury, tube displacement</td><td>Cannulation, anticoagulation, bleeding</td></tr> </tbody></table> The ratio of 85 alone could point toward ECMO, but proning has not been tried yet; the sequence decides.\n- 오답 이유:\n  - (A) Venovenous ECMO would be appropriate if severe hypoxemia or hypercapnic acidosis persisted after several hours of prone positioning at an experienced center.\n  - (B) High-frequency oscillatory ventilation would have been chosen in the past; randomized trials showed no benefit or increased mortality in adult ARDS.\n  - (C) A larger tidal volume would raise plateau pressure and alveolar overdistension; 6 mL/kg is kept even if PaCO2 rises (permissive hypercapnia).\n  - (D) Furosemide would be correct if hydrostatic pulmonary edema were the cause; here the ejection fraction is normal and she is on a vasopressor.\n- 함정: Jumping to ECMO because the PaO2/FiO2 ratio is very low — prone positioning comes first and itself lowers mortality.\n- 학습목표: 저일회호흡량·적정 PEEP 에도 PaO2/FiO2 150 mm Hg 미만인 중등도~중증 ARDS 에서 하루 16시간 이상 엎드린 자세 환기를 다음 단계로 선택한다\n- 근거·출처: Guérin C, et al. Prone positioning in severe acute respiratory distress syndrome (PROSEVA). N Engl J Med 2013;368:2159-2168 · Grasselli G, et al. ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies. Intensive Care Med 2023;49:727-759 · 작성자 판독(2026-10-22): AP 앙와위 이동촬영, 양측 미만성 간유리·경화 음영, 기관내관·비위관·좌측 흉벽 이중 리드 심장 장치\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …39553400 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Bilateral diffuse airspace opacities, onset within a week, and a normal ejection fraction meet the definition of ARDS. With lung-protective ventilation (6 mL/kg, plateau 27 cm H2O, PEEP 14) the PaO2/FiO2 ratio is 68/0.8 = 85 mm Hg — severe ARDS. Prone positioning for at least 16 hours a day lowers mortality when the ratio stays below 150 mm Hg and is the next step before rescue therapies."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why lying prone improves oxygenation</b>: in the supine position the heavy, edematous lung and the heart compress the dorsal lung, which collapses even though most pulmonary blood flow still goes there — a large shunt. Turning the patient prone recruits those dorsal regions, while perfusion stays dorsal, so ventilation-perfusion matching improves.<br> <b>Why it also protects the lung</b>: the chest wall is stiffer anteriorly when prone, so the inflation of the lung becomes more uniform; stress and strain are spread over more alveoli, reducing ventilator-induced lung injury. That, not the oxygen number, is why mortality falls.<br> <b>Order of escalation</b>: low tidal volume (6 mL/kg predicted body weight, plateau ≤ 30 cm H2O) and adequate PEEP → if PaO2/FiO2 &lt; 150 mm Hg, prone positioning (≥ 16 h/day, often with short-term neuromuscular blockade) → venovenous ECMO only if hypoxemia remains refractory despite these measures."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Prone positioning (answer)</th><th>VV-ECMO (closest distractor)</th></tr></thead><tbody> <tr><td>Fits when</td><td>PaO2/FiO2 <b>&lt; 150 mm Hg</b> despite lung-protective ventilation</td><td>Refractory hypoxemia (e.g., PaO2/FiO2 &lt; 80 for &gt; 6 h) or pH &lt; 7.25 with high PaCO2 <b>after</b> proning has failed</td></tr> <tr><td>Evidence</td><td>Mortality benefit in a randomized trial (PROSEVA)</td><td>Rescue therapy; selected centers</td></tr> <tr><td>Cost</td><td>Nursing effort, pressure injury, tube displacement</td><td>Cannulation, anticoagulation, bleeding</td></tr> </tbody></table> The ratio of 85 alone could point toward ECMO, but proning has not been tried yet; the sequence decides."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Venovenous ECMO would be appropriate if severe hypoxemia or hypercapnic acidosis persisted after several hours of prone positioning at an experienced center.\n(B) High-frequency oscillatory ventilation would have been chosen in the past; randomized trials showed no benefit or increased mortality in adult ARDS.\n(C) A larger tidal volume would raise plateau pressure and alveolar overdistension; 6 mL/kg is kept even if PaCO2 rises (permissive hypercapnia).\n(D) Furosemide would be correct if hydrostatic pulmonary edema were the cause; here the ejection fraction is normal and she is on a vasopressor."
+   },
+   {
+    "k": "함정",
+    "v": "Jumping to ECMO because the PaO2/FiO2 ratio is very low — prone positioning comes first and itself lowers mortality."
+   },
+   {
+    "k": "학습목표",
+    "v": "저일회호흡량·적정 PEEP 에도 PaO2/FiO2 150 mm Hg 미만인 중등도~중증 ARDS 에서 하루 16시간 이상 엎드린 자세 환기를 다음 단계로 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Guérin C, et al. Prone positioning in severe acute respiratory distress syndrome (PROSEVA). N Engl J Med 2013;368:2159-2168 · Grasselli G, et al. ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies. Intensive Care Med 2023;49:727-759 · 작성자 판독(2026-10-22): AP 앙와위 이동촬영, 양측 미만성 간유리·경화 음영, 기관내관·비위관·좌측 흉벽 이중 리드 심장 장치 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …39553400 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "폐 보호 환기(6 mL/kg·고원압 27·PEEP 14)에도 PaO2/FiO2 85 mm Hg 인 중증 ARDS 이므로 엎드린 자세 환기를 먼저 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "엎드린 자세를 아직 시도하지 않았다 — ECMO 는 그 뒤에도 낫지 않을 때",
+   "steps": 2,
+   "chain": [
+    "영상: 양측 미만성 음영 + 1주 안의 발병 + 박출률 정상 → ARDS",
+    "PaO2 68 ÷ FiO2 0.8 = 85 (< 150) + 이미 폐 보호 환기 → 엎드린 자세 환기"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐야의 미만성 간유리·경화 음영",
+     "why": "ARDS 의 양측 음영",
+     "also": []
+    },
+    {
+     "item": "PaO2 68 mm Hg",
+     "why": "FiO2 0.8 에서 비 85 — 중증",
+     "also": []
+    },
+    {
+     "item": "tidal volume of 6 mL/kg of predicted body weight",
+     "why": "폐 보호 환기는 이미 하고 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "left ventricular ejection fraction of 60%",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "low dose of norepinephrine",
+     "why": "저용량 승압제는 엎드린 자세의 금기가 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "dual-chamber pacemaker for complete heart block",
+     "why": "사진의 장치를 설명 — 다음 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "바이러스 폐렴 뒤 양측 미만성 음영, 정상 박출률로 ARDS 이고 폐 보호 환기에도 PaO2/FiO2 85 mm Hg 다. 150 미만이므로 하루 16시간 이상 엎드린 자세 환기를 하고, ECMO 는 그래도 낫지 않을 때다.",
+   "switch": {
+    "choice": "A",
+    "condition": "엎드린 자세를 여러 시간 했는데도 PaO2/FiO2 가 80 미만으로 남았다면 정맥-정맥 ECMO 가 다음이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0395.png",
+   "caption": "Portable anteroposterior chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1013830382185845066932939553400",
+   "asset_id": "TCIA-COVID19_AR-48883106989129",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …39553400"
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0394",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "순환기 — 교통사고 사망자의 정상 심장 대조 조직 면역조직화학",
+  "type": "순환기 — 교통사고 사망자의 정상 심장 대조 조직 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-21",
+  "vignette": "A 49-year-old man dies in a motor vehicle collision. He had no history of cardiovascular disease, and an autopsy shows a heart of normal weight with no gross abnormalities and normal coronary arteries. Tissue from the left ventricular free wall is used as a normal control in a research study of inherited cardiomyopathies. A photomicrograph of a section of the heart stained by immunohistochemistry is shown.",
+  "question": "The antibody most likely recognizes which of the following antigens?",
+  "options": [
+   "Vimentin",
+   "CD68 (macrosialin)",
+   "Ki-67 (MIB-1)",
+   "Beta-myosin heavy chain",
+   "CD31 (PECAM-1)"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The brown chromogen fills the cytoplasm of every branching, cross-striated muscle cell, and the striations themselves are accentuated, while the central nuclei, the interstitial fibroblasts, and the capillary endothelium are negative. A protein confined to the contractile apparatus of ventricular cardiomyocytes is beta-myosin heavy chain, the thick-filament motor encoded by MYH7.\n- 원리: <b>Why the stain looks striated</b>: the sarcomere is a repeating unit of thick filaments (myosin) interdigitating with thin filaments (actin, troponin, tropomyosin). Beta-myosin heavy chain is the head-and-rod protein of the thick filament in the human ventricle, so an antibody against it fills the myofibrils and reproduces their banding, leaving the nucleus and the non-muscle cells between the fibers unstained.<br> <b>Why location decides</b>: in a section of normal myocardium every candidate antigen is present somewhere, so the question is which cell and which compartment is brown — myocyte cytoplasm (sarcomeric proteins), capillary lining (CD31), interstitial spindle cells (vimentin), scattered round cells (CD68), or nuclei (Ki-67).<br> <b>Clinical connection</b>: missense mutations in MYH7 and in MYBPC3 (myosin-binding protein C) are the two most common causes of hypertrophic cardiomyopathy, an autosomal dominant sarcomere disease with myocyte disarray and asymmetric septal hypertrophy — the reason a normal ventricle is used as the control in such studies.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Beta-myosin heavy chain (answer)</th><th>CD31 (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Cardiomyocyte</td><td>Endothelial cell of capillaries</td></tr> <tr><td>Pattern</td><td><b>Whole myocyte cytoplasm, banded like the striations</b></td><td>Thin rings and slits between the fibers</td></tr> <tr><td>Proportion of the field</td><td>Most of the tissue is brown</td><td>A fine network; myocytes stay blue-gray</td></tr> </tbody></table> Myocardium has roughly one capillary per myocyte, so an endothelial marker also covers the whole field — but as a lace between the fibers, never inside them.\n- 오답 이유:\n  - (A) Vimentin would be correct if the stained cells were the thin spindle-shaped interstitial fibroblasts and endothelium, since mature cardiomyocytes express little vimentin.\n  - (B) CD68 would be correct if only scattered round or oval interstitial macrophages were brown, as seen after infarction or in myocarditis.\n  - (C) Ki-67 would be correct if a few nuclei were brown; adult cardiomyocytes hardly divide, so almost no nuclei would stain.\n  - (E) CD31 would be correct if the brown signal outlined the small capillaries and slit-like vessels between the fibers while the myocytes themselves were unstained.\n- 함정: Choosing CD31 because myocardium is richly vascular — the brown material is inside the striated myocytes, not between them.\n- 학습목표: 심장 조직 면역조직화학에서 가로무늬가 보이는 분지형 심근세포의 세포질 전체가 물들고 간질·내피가 음성인 양상을 근절 단백(β-myosin heavy chain)으로 읽고, 내피·섬유모세포·대식세포 표지자와 세포 종류·위치로 구별한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Heart — cardiomyocyte structure and cardiomyopathies · Marian AJ, Braunwald E. Hypertrophic cardiomyopathy: genetics, pathogenesis, clinical manifestations, diagnosis, and therapy. Circ Res 2017;121:749-770 · Human Protein Atlas — MYH7, heart muscle (CC BY 4.0) (교사용) · 작성자 판독(2026-10-22): 가로무늬가 보이는 분지형 심근세포 세포질 전체가 강한 갈색, 중심 핵·간질 섬유모세포·모세혈관 내피 음성\n\n## 출처\n- Human Protein Atlas, MYH7 / Heart muscle (CC BY 4.0), https://images.proteinatlas.org/1239/3209_B_5_6.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown chromogen fills the cytoplasm of every branching, cross-striated muscle cell, and the striations themselves are accentuated, while the central nuclei, the interstitial fibroblasts, and the capillary endothelium are negative. A protein confined to the contractile apparatus of ventricular cardiomyocytes is beta-myosin heavy chain, the thick-filament motor encoded by MYH7."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the stain looks striated</b>: the sarcomere is a repeating unit of thick filaments (myosin) interdigitating with thin filaments (actin, troponin, tropomyosin). Beta-myosin heavy chain is the head-and-rod protein of the thick filament in the human ventricle, so an antibody against it fills the myofibrils and reproduces their banding, leaving the nucleus and the non-muscle cells between the fibers unstained.<br> <b>Why location decides</b>: in a section of normal myocardium every candidate antigen is present somewhere, so the question is which cell and which compartment is brown — myocyte cytoplasm (sarcomeric proteins), capillary lining (CD31), interstitial spindle cells (vimentin), scattered round cells (CD68), or nuclei (Ki-67).<br> <b>Clinical connection</b>: missense mutations in MYH7 and in MYBPC3 (myosin-binding protein C) are the two most common causes of hypertrophic cardiomyopathy, an autosomal dominant sarcomere disease with myocyte disarray and asymmetric septal hypertrophy — the reason a normal ventricle is used as the control in such studies."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Beta-myosin heavy chain (answer)</th><th>CD31 (closest distractor)</th></tr></thead><tbody> <tr><td>Cell</td><td>Cardiomyocyte</td><td>Endothelial cell of capillaries</td></tr> <tr><td>Pattern</td><td><b>Whole myocyte cytoplasm, banded like the striations</b></td><td>Thin rings and slits between the fibers</td></tr> <tr><td>Proportion of the field</td><td>Most of the tissue is brown</td><td>A fine network; myocytes stay blue-gray</td></tr> </tbody></table> Myocardium has roughly one capillary per myocyte, so an endothelial marker also covers the whole field — but as a lace between the fibers, never inside them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Vimentin would be correct if the stained cells were the thin spindle-shaped interstitial fibroblasts and endothelium, since mature cardiomyocytes express little vimentin.\n(B) CD68 would be correct if only scattered round or oval interstitial macrophages were brown, as seen after infarction or in myocarditis.\n(C) Ki-67 would be correct if a few nuclei were brown; adult cardiomyocytes hardly divide, so almost no nuclei would stain.\n(E) CD31 would be correct if the brown signal outlined the small capillaries and slit-like vessels between the fibers while the myocytes themselves were unstained."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing CD31 because myocardium is richly vascular — the brown material is inside the striated myocytes, not between them."
+   },
+   {
+    "k": "학습목표",
+    "v": "심장 조직 면역조직화학에서 가로무늬가 보이는 분지형 심근세포의 세포질 전체가 물들고 간질·내피가 음성인 양상을 근절 단백(β-myosin heavy chain)으로 읽고, 내피·섬유모세포·대식세포 표지자와 세포 종류·위치로 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Heart — cardiomyocyte structure and cardiomyopathies · Marian AJ, Braunwald E. Hypertrophic cardiomyopathy: genetics, pathogenesis, clinical manifestations, diagnosis, and therapy. Circ Res 2017;121:749-770 · Human Protein Atlas — MYH7, heart muscle (CC BY 4.0) (교사용) · 작성자 판독(2026-10-22): 가로무늬가 보이는 분지형 심근세포 세포질 전체가 강한 갈색, 중심 핵·간질 섬유모세포·모세혈관 내피 음성 ## 출처 Human Protein Atlas, MYH7 / Heart muscle (CC BY 4.0), https://images.proteinatlas.org/1239/3209_B_5_6.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "심장 절편에서 가로무늬가 보이는 심근세포의 세포질 전체가 갈색이고 간질·내피·핵이 음성이면 근절의 굵은 필라멘트 단백 β-myosin heavy chain 이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "갈색이 심근세포 안(근절)인가, 심근세포 사이의 모세혈관 내벽(CD31)인가",
+   "steps": 2,
+   "chain": [
+    "영상: 분지형·가로무늬 근세포 + 중심 핵 → 심근세포",
+    "영상: 심근세포 세포질 전체가 가로무늬를 따라 갈색, 사이 세포 음성 → 근절 단백(β-myosin heavy chain)"
+   ],
+   "key": [
+    {
+     "item": "영상: 가로무늬가 보이는 분지형 근세포의 세포질 전체가 갈색",
+     "why": "심근세포의 근절 단백",
+     "also": []
+    },
+    {
+     "item": "Tissue from the left ventricular free wall",
+     "why": "성인 심실 — β 형 중쇄가 주된 동형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 핵·간질 섬유모세포·모세혈관 내피는 음성",
+     "why": "내피(CD31)·섬유모세포(vimentin)·핵(Ki-67) 표지자 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "normal coronary arteries",
+     "why": "정상 대조 조직이라는 배경 — 항원 판정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "inherited cardiomyopathies",
+     "why": "연구의 배경 — 정답을 직접 가리키지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "심실 절편에서 가로무늬가 보이는 심근세포의 세포질 전체가 갈색이고, 핵·간질·내피는 음성이다. 근절의 굵은 필라멘트 단백 β-myosin heavy chain 이며, 근세포 사이 그물만 물드는 CD31 과 위치로 가른다.",
+   "switch": {
+    "choice": "E",
+    "condition": "근세포는 회청색이고 그 사이의 가는 고리·틈 모양 모세혈관 내벽만 갈색이었다면 CD31 이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0394.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000092054-MYH7/tissue/Heart+muscle",
+   "asset_id": "HPA-MYH7_3209_B_5_6",
+   "text": "Human Protein Atlas, MYH7 / Heart muscle (CC BY 4.0), https://images.proteinatlas.org/1239/3209_B_5_6.jpg"
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0405",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "약리 — 디곡신 복용자에게 아미오다론을 더한 뒤 생긴 독성",
+  "type": "약리 — 디곡신 복용자에게 아미오다론을 더한 뒤 생긴 독성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-21",
+  "vignette": "A 78-year-old man comes to the physician because of a 5-day history of nausea, loss of appetite, and seeing yellow halos around lights. He has heart failure with reduced ejection fraction and atrial fibrillation treated with digoxin 0.125 mg daily, metoprolol, sacubitril-valsartan, and apixaban; his dose of digoxin has been unchanged for 2 years. Three weeks ago, amiodarone was added for recurrent symptomatic atrial fibrillation. His pulse is 48/min and irregular, and blood pressure is 112/68 mm Hg. Serum potassium is 4.3 mEq/L, magnesium is 2.0 mg/dL, and creatinine is 1.1 mg/dL, unchanged from 3 months ago. Serum digoxin concentration is 2.9 ng/mL.",
+  "question": "Which of the following best explains the increase in the digoxin concentration?",
+  "options": [
+   "Decreased glomerular filtration rate",
+   "Increased oral bioavailability from enhanced gastric absorption",
+   "Inhibition of P-glycoprotein-mediated renal tubular secretion",
+   "Inhibition of hepatic CYP3A4-mediated oxidation",
+   "Displacement of digoxin from plasma albumin binding sites"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Digoxin is eliminated mostly unchanged by the kidney, largely through P-glycoprotein efflux in the proximal tubule, and in part by intestinal P-glycoprotein. Amiodarone inhibits P-glycoprotein, so digoxin clearance falls and its concentration roughly doubles within weeks, producing nausea, visual disturbance, and bradycardia. The creatinine is unchanged, so glomerular filtration has not fallen.\n- 원리: <b>How digoxin leaves the body</b>: about 60–70% is excreted unchanged in urine. Glomerular filtration contributes, but a large share is active secretion by P-glycoprotein (ABCB1) on the apical membrane of proximal tubular cells. P-glycoprotein in enterocytes also pumps absorbed digoxin back into the gut lumen. Hepatic CYP metabolism plays almost no role.<br> <b>What amiodarone does</b>: amiodarone (and verapamil, quinidine, dronedarone, clarithromycin, cyclosporine) inhibits P-glycoprotein. Renal secretion falls and intestinal efflux falls, so clearance drops and concentration rises — typically by 70–100%. Because amiodarone has a very long half-life, the rise develops over 1–3 weeks, the timing in this case. Guidelines advise halving the digoxin dose when amiodarone is started.<br> <b>Why the symptoms</b>: excess Na+/K+-ATPase inhibition raises vagal tone and slows AV conduction (bradycardia, AV block), increases intracellular calcium and automaticity (ectopy, bidirectional VT), and acts on the retina and chemoreceptor trigger zone (xanthopsia, nausea).\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">P-glycoprotein inhibition (answer)</th><th>CYP3A4 inhibition (closest distractor)</th></tr></thead><tbody> <tr><td>Main route of digoxin elimination</td><td><b>Renal and intestinal P-gp efflux</b></td><td>Negligible hepatic oxidation</td></tr> <tr><td>Amiodarone's effect</td><td>Inhibits P-gp → digoxin level up</td><td>Also inhibits CYP3A4 and CYP2C9 → warfarin, statins up</td></tr> <tr><td>Key clue</td><td>Creatinine unchanged, level doubled</td><td>Would matter for a CYP3A4 substrate such as simvastatin</td></tr> </tbody></table> Amiodarone inhibits both systems, so the question is which one digoxin depends on: digoxin is a P-gp substrate, not a CYP substrate.\n- 오답 이유:\n  - (A) A decreased glomerular filtration rate would be correct if the creatinine had risen, as in dehydration or acute kidney injury; here it is unchanged.\n  - (B) Increased bioavailability via the stomach would be correct only if a drug changed gastric emptying or gut flora that inactivates digoxin, such as some macrolides.\n  - (D) CYP3A4 inhibition would explain amiodarone raising the level of a hepatically oxidized drug such as simvastatin; digoxin is hardly metabolized by CYP enzymes.\n  - (E) Albumin displacement would matter for a highly protein-bound drug such as phenytoin or warfarin; digoxin is only about 25% bound and displacement changes only the free fraction transiently.\n- 함정: Attributing every amiodarone interaction to CYP inhibition — digoxin is a P-glycoprotein substrate, and that transporter is what amiodarone blocks here.\n- 학습목표: 디곡신은 대부분 콩팥 세관의 P-glycoprotein 으로 분비되므로, 아미오다론·verapamil·quinidine 같은 P-gp 억제제를 더하면 혈중 농도가 오른다는 것을 독성 증상과 연결한다\n- 근거·출처: Brunton LL, et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. Pharmacotherapy of Congestive Heart Failure — digoxin · Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032 · Fromm MF, et al. Inhibition of P-glycoprotein-mediated drug transport: a unifying mechanism to explain the interaction between digoxin and quinidine. Circulation 1999;99:552-557",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Digoxin is eliminated mostly unchanged by the kidney, largely through P-glycoprotein efflux in the proximal tubule, and in part by intestinal P-glycoprotein. Amiodarone inhibits P-glycoprotein, so digoxin clearance falls and its concentration roughly doubles within weeks, producing nausea, visual disturbance, and bradycardia. The creatinine is unchanged, so glomerular filtration has not fallen."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How digoxin leaves the body</b>: about 60–70% is excreted unchanged in urine. Glomerular filtration contributes, but a large share is active secretion by P-glycoprotein (ABCB1) on the apical membrane of proximal tubular cells. P-glycoprotein in enterocytes also pumps absorbed digoxin back into the gut lumen. Hepatic CYP metabolism plays almost no role.<br> <b>What amiodarone does</b>: amiodarone (and verapamil, quinidine, dronedarone, clarithromycin, cyclosporine) inhibits P-glycoprotein. Renal secretion falls and intestinal efflux falls, so clearance drops and concentration rises — typically by 70–100%. Because amiodarone has a very long half-life, the rise develops over 1–3 weeks, the timing in this case. Guidelines advise halving the digoxin dose when amiodarone is started.<br> <b>Why the symptoms</b>: excess Na+/K+-ATPase inhibition raises vagal tone and slows AV conduction (bradycardia, AV block), increases intracellular calcium and automaticity (ectopy, bidirectional VT), and acts on the retina and chemoreceptor trigger zone (xanthopsia, nausea)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">P-glycoprotein inhibition (answer)</th><th>CYP3A4 inhibition (closest distractor)</th></tr></thead><tbody> <tr><td>Main route of digoxin elimination</td><td><b>Renal and intestinal P-gp efflux</b></td><td>Negligible hepatic oxidation</td></tr> <tr><td>Amiodarone's effect</td><td>Inhibits P-gp → digoxin level up</td><td>Also inhibits CYP3A4 and CYP2C9 → warfarin, statins up</td></tr> <tr><td>Key clue</td><td>Creatinine unchanged, level doubled</td><td>Would matter for a CYP3A4 substrate such as simvastatin</td></tr> </tbody></table> Amiodarone inhibits both systems, so the question is which one digoxin depends on: digoxin is a P-gp substrate, not a CYP substrate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A decreased glomerular filtration rate would be correct if the creatinine had risen, as in dehydration or acute kidney injury; here it is unchanged.\n(B) Increased bioavailability via the stomach would be correct only if a drug changed gastric emptying or gut flora that inactivates digoxin, such as some macrolides.\n(D) CYP3A4 inhibition would explain amiodarone raising the level of a hepatically oxidized drug such as simvastatin; digoxin is hardly metabolized by CYP enzymes.\n(E) Albumin displacement would matter for a highly protein-bound drug such as phenytoin or warfarin; digoxin is only about 25% bound and displacement changes only the free fraction transiently."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing every amiodarone interaction to CYP inhibition — digoxin is a P-glycoprotein substrate, and that transporter is what amiodarone blocks here."
+   },
+   {
+    "k": "학습목표",
+    "v": "디곡신은 대부분 콩팥 세관의 P-glycoprotein 으로 분비되므로, 아미오다론·verapamil·quinidine 같은 P-gp 억제제를 더하면 혈중 농도가 오른다는 것을 독성 증상과 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Brunton LL, et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. Pharmacotherapy of Congestive Heart Failure — digoxin · Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032 · Fromm MF, et al. Inhibition of P-glycoprotein-mediated drug transport: a unifying mechanism to explain the interaction between digoxin and quinidine. Circulation 1999;99:552-557"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "신기능이 변하지 않았는데 아미오다론을 더한 뒤 디곡신 농도가 올랐으므로 콩팥 세관·장의 P-glycoprotein 억제가 원인이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "디곡신의 제거 경로 — CYP 대사가 아니라 P-gp 에 의한 세관 분비",
+   "steps": 3,
+   "chain": [
+    "구역·노란 무리·서맥 + 디곡신 2.9 ng/mL → 디곡신 독성",
+    "2년간 같은 용량 + 크레아티닌 변화 없음 + 3주 전 아미오다론 추가 → 약물 상호작용",
+    "디곡신은 P-gp 기질, 아미오다론은 P-gp 억제제 → 세관 분비 감소"
+   ],
+   "key": [
+    {
+     "item": "Serum digoxin concentration is 2.9 ng/mL",
+     "why": "독성 농도",
+     "also": []
+    },
+    {
+     "item": "Three weeks ago, amiodarone was added",
+     "why": "P-gp 억제제 추가 — 시기 일치",
+     "also": []
+    },
+    {
+     "item": "his dose of digoxin has been unchanged for 2 years",
+     "why": "용량이 아니라 제거가 바뀌었다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "creatinine is 1.1 mg/dL, unchanged from 3 months ago",
+     "why": "사구체 여과 감소 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum potassium is 4.3 mEq/L",
+     "why": "저칼륨혈증에 의한 독성 증폭 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "apixaban",
+     "why": "아미오다론과 상호작용이 있으나 디곡신 농도와는 무관",
+     "also": []
+    }
+   ],
+   "summary": "2년간 같은 용량의 디곡신을 먹던 환자가 아미오다론 추가 3주 뒤 디곡신 2.9 ng/mL 의 독성을 보이고 크레아티닌은 그대로다. 디곡신은 콩팥 세관·장의 P-glycoprotein 으로 배출되고 아미오다론이 이를 억제해 농도가 오른 것이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 증상에서 크레아티닌이 1.1 에서 2.4 mg/dL 로 올랐다면 사구체 여과 감소가 주된 설명이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0404",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "신장·비뇨 — 경련을 동반한 급성 중증 저나트륨혈증",
+  "type": "신장·비뇨 — 경련을 동반한 급성 중증 저나트륨혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-21",
+  "vignette": "24세 여자가 전신 경련을 한 뒤 응급실에 왔다. 친구들에 따르면 6시간 전 야외 음악 축제에서 엑스터시(MDMA)를 먹고 춤을 추며 물을 많이 마셨고, 2시간 전부터 두통·구토와 함께 횡설수설하다 경련을 하였다. 응급실에서 경련은 멈췄으나 혼미하다. 체온 37.4 ℃, 혈압 124/78 mmHg, 맥박 102회/분이다. 혈청 나트륨 118 mmol/L, 칼륨 3.6 mmol/L, 혈당 112 mg/dL, 혈청 삼투질농도 248 mOsm/kg, 소변 삼투질농도 420 mOsm/kg, 소변 나트륨 46 mmol/L 이다. 뇌 CT 에서 출혈은 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "푸로세미드 정주",
+   "3 % 고장성 식염수 볼루스 정주",
+   "0.9 % 생리식염수 정주",
+   "수분 섭취 제한만 시행",
+   "톨밥탄 경구 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 몇 시간 사이에 생긴 급성 저나트륨혈증(118 mmol/L)으로 경련과 혼미가 있다. 저삼투 상태에서 물이 뇌세포로 들어가 뇌부종이 생긴 것이므로, 원인 감별보다 먼저 3 % 고장성 식염수 100~150 mL 를 볼루스로 주어 나트륨을 4~6 mmol/L 빨리 올린다.\n- 원리: <b>왜 증상이 생기는가</b>: 혈청 삼투질농도가 떨어지면 물은 삼투압이 높은 뇌세포 안으로 들어간다. 뇌는 단단한 머리뼈 안에 있어 조금만 부어도 두개내압이 오르고, 두통·구토·혼돈·경련·호흡 정지(뇌탈출)로 이어진다. 몇 시간 안에 생긴 급성 저나트륨혈증은 뇌가 칼륨·유기 삼투질을 내보내 적응할 시간이 없어 특히 위험하다.<br> <b>왜 고장성 식염수인가</b>: 나트륨을 4~6 mmol/L 만 올려도 뇌부종이 줄어 경련이 멈춘다. 0.9 % 생리식염수(154 mmol/L)는 소변 삼투질농도가 높은(이 환자 420) 항이뇨 상태에서 나트륨은 소변으로 나가고 물만 남아 오히려 나트륨을 낮출 수 있다.<br> <b>얼마나 올릴까</b>: 만성으로 적응한 뇌에서는 너무 빨리 올리면 삼투성 탈수초증후군이 생기므로 첫 24시간 8~10 mmol/L 이하로 제한한다. MDMA 는 항이뇨호르몬 분비를 늘리고 갈증을 일으켜 물 중독을 부른다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">3 % 고장성 식염수(정답)</th><th>0.9 % 생리식염수(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나트륨 농도</td><td><b>513 mmol/L</b></td><td>154 mmol/L</td></tr> <tr><td>잘 맞는 경우</td><td>경련·혼미 등 중증 증상, 원인과 무관</td><td>혈량 저하(구토·설사)로 소변 나트륨 낮은 저나트륨혈증</td></tr> <tr><td>항이뇨 상태(소변 삼투 &gt; 혈청)</td><td>나트륨이 오른다</td><td>소변으로 나트륨이 빠져 효과가 없거나 악화</td></tr> </tbody></table> 증상이 중증이면 원인을 따지기 전에 고장성 식염수가 먼저다. 생리식염수는 경증의 혈량 저하형에서만 맞는다.\n- 오답 이유:\n  - ① 푸로세미드는 심부전 같은 혈량 과다 저나트륨혈증에서 수분 제한과 함께 쓰며, 단독으로는 중증 증상을 빨리 고치지 못한다.\n  - ③ 생리식염수는 구토·설사로 혈량이 줄고 소변 나트륨이 20 mmol/L 미만인 증상 경미한 저나트륨혈증에서 정답이 된다.\n  - ④ 수분 제한은 증상이 없거나 가벼운 만성 항이뇨호르몬 부적절분비증후군에서 1차 치료이며, 경련 중인 급성 환자에게는 너무 느리다.\n  - ⑤ 톨밥탄은 증상이 가벼운 만성 정상혈량 저나트륨혈증에서 입원 중 쓰는 약이며, 효과가 느리고 과교정 위험이 있어 응급에는 쓰지 않는다.\n- 함정: 소변 나트륨·삼투질농도로 원인부터 가려 생리식염수나 수분 제한을 고르는 것 — 경련이 있는 중증 저나트륨혈증은 원인과 관계없이 고장성 식염수 볼루스가 먼저다.\n- 학습목표: 경련·의식 저하 같은 중증 증상이 있는 저나트륨혈증은 원인과 관계없이 3 % 고장성 식염수 100~150 mL 를 볼루스로 주어 나트륨을 4~6 mmol/L 빨리 올리고, 첫 24시간 상승은 8~10 mmol/L 이하로 제한한다\n- 근거·출처: Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 · Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126:S1-S42",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "몇 시간 사이에 생긴 급성 저나트륨혈증(118 mmol/L)으로 경련과 혼미가 있다. 저삼투 상태에서 물이 뇌세포로 들어가 뇌부종이 생긴 것이므로, 원인 감별보다 먼저 3 % 고장성 식염수 100~150 mL 를 볼루스로 주어 나트륨을 4~6 mmol/L 빨리 올린다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 증상이 생기는가</b>: 혈청 삼투질농도가 떨어지면 물은 삼투압이 높은 뇌세포 안으로 들어간다. 뇌는 단단한 머리뼈 안에 있어 조금만 부어도 두개내압이 오르고, 두통·구토·혼돈·경련·호흡 정지(뇌탈출)로 이어진다. 몇 시간 안에 생긴 급성 저나트륨혈증은 뇌가 칼륨·유기 삼투질을 내보내 적응할 시간이 없어 특히 위험하다.<br> <b>왜 고장성 식염수인가</b>: 나트륨을 4~6 mmol/L 만 올려도 뇌부종이 줄어 경련이 멈춘다. 0.9 % 생리식염수(154 mmol/L)는 소변 삼투질농도가 높은(이 환자 420) 항이뇨 상태에서 나트륨은 소변으로 나가고 물만 남아 오히려 나트륨을 낮출 수 있다.<br> <b>얼마나 올릴까</b>: 만성으로 적응한 뇌에서는 너무 빨리 올리면 삼투성 탈수초증후군이 생기므로 첫 24시간 8~10 mmol/L 이하로 제한한다. MDMA 는 항이뇨호르몬 분비를 늘리고 갈증을 일으켜 물 중독을 부른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">3 % 고장성 식염수(정답)</th><th>0.9 % 생리식염수(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나트륨 농도</td><td><b>513 mmol/L</b></td><td>154 mmol/L</td></tr> <tr><td>잘 맞는 경우</td><td>경련·혼미 등 중증 증상, 원인과 무관</td><td>혈량 저하(구토·설사)로 소변 나트륨 낮은 저나트륨혈증</td></tr> <tr><td>항이뇨 상태(소변 삼투 &gt; 혈청)</td><td>나트륨이 오른다</td><td>소변으로 나트륨이 빠져 효과가 없거나 악화</td></tr> </tbody></table> 증상이 중증이면 원인을 따지기 전에 고장성 식염수가 먼저다. 생리식염수는 경증의 혈량 저하형에서만 맞는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 푸로세미드는 심부전 같은 혈량 과다 저나트륨혈증에서 수분 제한과 함께 쓰며, 단독으로는 중증 증상을 빨리 고치지 못한다.\n③ 생리식염수는 구토·설사로 혈량이 줄고 소변 나트륨이 20 mmol/L 미만인 증상 경미한 저나트륨혈증에서 정답이 된다.\n④ 수분 제한은 증상이 없거나 가벼운 만성 항이뇨호르몬 부적절분비증후군에서 1차 치료이며, 경련 중인 급성 환자에게는 너무 느리다.\n⑤ 톨밥탄은 증상이 가벼운 만성 정상혈량 저나트륨혈증에서 입원 중 쓰는 약이며, 효과가 느리고 과교정 위험이 있어 응급에는 쓰지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "소변 나트륨·삼투질농도로 원인부터 가려 생리식염수나 수분 제한을 고르는 것 — 경련이 있는 중증 저나트륨혈증은 원인과 관계없이 고장성 식염수 볼루스가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경련·의식 저하 같은 중증 증상이 있는 저나트륨혈증은 원인과 관계없이 3 % 고장성 식염수 100~150 mL 를 볼루스로 주어 나트륨을 4~6 mmol/L 빨리 올리고, 첫 24시간 상승은 8~10 mmol/L 이하로 제한한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 · Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126:S1-S42"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "몇 시간 사이 생긴 나트륨 118 mmol/L 의 저나트륨혈증에 경련·혼미가 있으므로 원인과 관계없이 3 % 고장성 식염수 볼루스를 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "증상의 중증도 — 경련·혼미는 뇌부종",
+   "steps": 2,
+   "chain": [
+    "MDMA + 많은 물 + 나트륨 118·혈청 삼투 248 → 급성 저삼투 저나트륨혈증",
+    "경련·혼미(중증 증상) → 3 % 고장성 식염수 볼루스"
+   ],
+   "key": [
+    {
+     "item": "혈청 나트륨 118 mmol/L",
+     "why": "심한 저나트륨혈증",
+     "also": []
+    },
+    {
+     "item": "전신 경련을 한 뒤",
+     "why": "중증 증상 — 뇌부종",
+     "also": []
+    },
+    {
+     "item": "혈청 삼투질농도 248 mOsm/kg",
+     "why": "저삼투 — 고혈당·가성 저나트륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "뇌 CT 에서 출혈은 없다",
+     "why": "경련의 다른 구조적 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "소변 삼투질농도 420 mOsm/kg",
+     "why": "항이뇨 상태 — 생리식염수는 효과가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "물을 많이 마셨고",
+     "why": "원인 — 응급 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "MDMA 복용 뒤 물을 많이 마셔 몇 시간 사이 나트륨 118 mmol/L 의 저삼투 저나트륨혈증이 되었고 경련·혼미가 있다. 원인 감별보다 먼저 3 % 고장성 식염수 볼루스로 나트륨을 4~6 mmol/L 올린다.",
+   "switch": {
+    "choice": "C",
+    "condition": "증상이 가볍고 구토·설사로 혈량이 줄어 소변 나트륨이 20 mmol/L 미만이었다면 생리식염수가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0403",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "감염 — 백혈구가 많은 첫 클로스트리디오이데스 디피실 감염",
+  "type": "감염 — 백혈구가 많은 첫 클로스트리디오이데스 디피실 감염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-21",
+  "vignette": "A 74-year-old woman is evaluated in the hospital because of 8 watery stools daily for 2 days. She was admitted 9 days ago for pyelonephritis and has been treated with intravenous ceftriaxone. Her temperature is 38.1°C (100.6°F), pulse is 98/min, and blood pressure is 128/74 mm Hg. The abdomen is soft and mildly tender in the lower quadrants without distention or rebound tenderness, and bowel sounds are active. Leukocyte count is 18,600/mm3, and serum creatinine concentration is 1.0 mg/dL. Serum lactate concentration is normal. A stool PCR test for Clostridioides difficile toxin genes is positive, and a toxin enzyme immunoassay is also positive. An abdominal x-ray shows no colonic dilation.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Bezlotoxumab alone",
+   "Oral vancomycin",
+   "Oral metronidazole",
+   "Intravenous vancomycin",
+   "Intravenous metronidazole plus rectal vancomycin"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Hospital-onset diarrhea after a cephalosporin with positive toxin testing is Clostridioides difficile infection. A leukocyte count of at least 15,000/mm3 makes it severe, but there is no hypotension, ileus, or megacolon, so it is not fulminant. An initial severe episode is treated with oral vancomycin (or fidaxomicin) for 10 days.\n- 원리: <b>Why oral, and why vancomycin</b>: C. difficile lives in the colonic lumen and causes disease through toxins A and B that glucosylate Rho GTPases, disrupting the epithelial cytoskeleton. The drug must reach the lumen. Oral vancomycin is hardly absorbed, so stool concentrations are hundreds of times above the MIC; intravenous vancomycin is not excreted into the colon and does nothing.<br> <b>Why metronidazole fell out</b>: metronidazole is well absorbed in the small intestine, and its colonic concentration falls as the inflamed mucosa heals. Trials showed lower cure rates than vancomycin, especially in severe disease, and repeated courses cause neuropathy.<br> <b>How severity is graded</b>: nonsevere — WBC &lt; 15,000 and creatinine &lt; 1.5; severe — WBC ≥ 15,000 or creatinine ≥ 1.5 mg/dL; fulminant — hypotension or shock, ileus, or megacolon, treated with high-dose oral (plus rectal if ileus) vancomycin and intravenous metronidazole, with surgical consultation. Stop the inciting antibiotic when possible.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Oral vancomycin (answer)</th><th>IV metronidazole + rectal vancomycin (closest distractor)</th></tr></thead><tbody> <tr><td>Severity</td><td>Initial episode, nonsevere or <b>severe</b></td><td><b>Fulminant</b> — shock, ileus, megacolon</td></tr> <tr><td>Why that route</td><td>Drug reaches the colonic lumen directly</td><td>Ileus prevents oral drug from reaching the colon</td></tr> <tr><td>Here</td><td>WBC 18,600, active bowel sounds, no dilation, normal lactate</td><td>Not present</td></tr> </tbody></table> A high WBC moves the case from nonsevere to severe, but not to fulminant; the route changes only when the colon cannot be reached orally.\n- 오답 이유:\n  - (A) Bezlotoxumab would be added to standard antibiotic therapy to reduce recurrence in high-risk patients; it is never given alone for active infection.\n  - (C) Oral metronidazole would be acceptable only for a nonsevere initial episode when vancomycin and fidaxomicin are unavailable.\n  - (D) Intravenous vancomycin would be correct for systemic MRSA infection; it does not reach the colonic lumen and does not treat C. difficile.\n  - (E) IV metronidazole plus rectal vancomycin would be correct for fulminant disease with ileus, hypotension, or toxic megacolon.\n- 함정: Escalating to the fulminant regimen because the leukocyte count is high — without shock, ileus, or megacolon this is severe, not fulminant, and oral vancomycin suffices.\n- 학습목표: 첫 C. difficile 감염에서 백혈구 15,000/mm3 이상 또는 크레아티닌 1.5 mg/dL 이상이면 비전격성 중증으로 보고 경구 vancomycin 또는 fidaxomicin 을 쓰며, metronidazole 은 1차가 아니다\n- 근거·출처: Johnson S, et al. Clinical practice guideline by IDSA and SHEA: 2021 focused update guidelines on management of Clostridioides difficile infection in adults. Clin Infect Dis 2021;73:e1029-e1044 · McDonald LC, et al. Clinical practice guidelines for Clostridium difficile infection in adults and children: 2017 update by IDSA and SHEA. Clin Infect Dis 2018;66:e1-e48",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Hospital-onset diarrhea after a cephalosporin with positive toxin testing is Clostridioides difficile infection. A leukocyte count of at least 15,000/mm3 makes it severe, but there is no hypotension, ileus, or megacolon, so it is not fulminant. An initial severe episode is treated with oral vancomycin (or fidaxomicin) for 10 days."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why oral, and why vancomycin</b>: C. difficile lives in the colonic lumen and causes disease through toxins A and B that glucosylate Rho GTPases, disrupting the epithelial cytoskeleton. The drug must reach the lumen. Oral vancomycin is hardly absorbed, so stool concentrations are hundreds of times above the MIC; intravenous vancomycin is not excreted into the colon and does nothing.<br> <b>Why metronidazole fell out</b>: metronidazole is well absorbed in the small intestine, and its colonic concentration falls as the inflamed mucosa heals. Trials showed lower cure rates than vancomycin, especially in severe disease, and repeated courses cause neuropathy.<br> <b>How severity is graded</b>: nonsevere — WBC &lt; 15,000 and creatinine &lt; 1.5; severe — WBC ≥ 15,000 or creatinine ≥ 1.5 mg/dL; fulminant — hypotension or shock, ileus, or megacolon, treated with high-dose oral (plus rectal if ileus) vancomycin and intravenous metronidazole, with surgical consultation. Stop the inciting antibiotic when possible."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Oral vancomycin (answer)</th><th>IV metronidazole + rectal vancomycin (closest distractor)</th></tr></thead><tbody> <tr><td>Severity</td><td>Initial episode, nonsevere or <b>severe</b></td><td><b>Fulminant</b> — shock, ileus, megacolon</td></tr> <tr><td>Why that route</td><td>Drug reaches the colonic lumen directly</td><td>Ileus prevents oral drug from reaching the colon</td></tr> <tr><td>Here</td><td>WBC 18,600, active bowel sounds, no dilation, normal lactate</td><td>Not present</td></tr> </tbody></table> A high WBC moves the case from nonsevere to severe, but not to fulminant; the route changes only when the colon cannot be reached orally."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Bezlotoxumab would be added to standard antibiotic therapy to reduce recurrence in high-risk patients; it is never given alone for active infection.\n(C) Oral metronidazole would be acceptable only for a nonsevere initial episode when vancomycin and fidaxomicin are unavailable.\n(D) Intravenous vancomycin would be correct for systemic MRSA infection; it does not reach the colonic lumen and does not treat C. difficile.\n(E) IV metronidazole plus rectal vancomycin would be correct for fulminant disease with ileus, hypotension, or toxic megacolon."
+   },
+   {
+    "k": "함정",
+    "v": "Escalating to the fulminant regimen because the leukocyte count is high — without shock, ileus, or megacolon this is severe, not fulminant, and oral vancomycin suffices."
+   },
+   {
+    "k": "학습목표",
+    "v": "첫 C. difficile 감염에서 백혈구 15,000/mm3 이상 또는 크레아티닌 1.5 mg/dL 이상이면 비전격성 중증으로 보고 경구 vancomycin 또는 fidaxomicin 을 쓰며, metronidazole 은 1차가 아니다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Johnson S, et al. Clinical practice guideline by IDSA and SHEA: 2021 focused update guidelines on management of Clostridioides difficile infection in adults. Clin Infect Dis 2021;73:e1029-e1044 · McDonald LC, et al. Clinical practice guidelines for Clostridium difficile infection in adults and children: 2017 update by IDSA and SHEA. Clin Infect Dis 2018;66:e1-e48"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "세팔로스포린 뒤 독소 양성 설사로 C. difficile 감염이고 백혈구 18,600 이라 중증이지만 쇼크·장폐색·거대결장이 없어 전격성은 아니므로 경구 vancomycin 을 쓴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "전격성 기준(저혈압·장폐색·거대결장)이 없다",
+   "steps": 2,
+   "chain": [
+    "입원 중 ceftriaxone 뒤 하루 8번 물설사 + 독소 PCR·EIA 양성 → C. difficile 감염",
+    "백혈구 18,600 (≥ 15,000) + 저혈압·장폐색·결장 확장 없음 → 비전격성 중증 → 경구 vancomycin"
+   ],
+   "key": [
+    {
+     "item": "Leukocyte count is 18,600/mm3",
+     "why": "중증 기준",
+     "also": []
+    },
+    {
+     "item": "toxin enzyme immunoassay is also positive",
+     "why": "활동성 독소 — 보균이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "blood pressure is 128/74 mm Hg",
+     "why": "전격성(쇼크) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "An abdominal x-ray shows no colonic dilation",
+     "why": "거대결장 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "bowel sounds are active",
+     "why": "장폐색이 없어 경구 투여가 결장에 닿는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "serum creatinine concentration is 1.0 mg/dL",
+     "why": "중증 판정은 백혈구로 충분 — 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "세팔로스포린 치료 중 생긴 물설사와 독소 양성으로 C. difficile 감염이다. 백혈구 18,600 으로 중증이지만 쇼크·장폐색·거대결장이 없어 전격성은 아니므로 경구 vancomycin(또는 fidaxomicin)을 쓴다.",
+   "switch": {
+    "choice": "E",
+    "condition": "저혈압과 장음 소실, 결장 확장이 있는 전격성이었다면 고용량 경구·직장 vancomycin 과 정맥 metronidazole 이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0402",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "혈액·종양 — 분열적혈구·혈소판 감소·신경 증상",
+  "type": "혈액·종양 — 분열적혈구·혈소판 감소·신경 증상",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-21",
+  "vignette": "38세 여자가 이틀 전부터 말이 어눌해지고 오른손에 힘이 빠졌다 돌아오기를 반복해 응급실에 왔다. 1주 전부터 피곤하고 다리에 멍이 들었다. 복용하는 약은 없다. 체온 37.6 ℃, 혈압 132/80 mmHg 이다. 다리에 점상출혈이 있다. 혈액검사에서 혈색소 7.8 g/dL, 그물적혈구 9 %, 혈소판 14,000/mm³, 크레아티닌 1.3 mg/dL, 간접빌리루빈 2.8 mg/dL, LDH 1,420 IU/L, 합토글로빈 감소, 직접 항글로불린 검사 음성, 프로트롬빈 시간과 활성화부분트롬보플라스틴 시간은 정상, 피브리노겐 310 mg/dL 이다. 말초혈액도말에서 혈소판이 적고 분열적혈구가 많다. 뇌 CT 는 정상이다. ADAMTS13 활성도 검사를 보냈다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "혈장교환",
+   "혈소판 수혈",
+   "정맥 면역글로불린",
+   "에쿨리주맙",
+   "헤파린 정주"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 분열적혈구·LDH 상승·합토글로빈 감소·직접 항글로불린 음성의 미세혈관병 용혈성 빈혈, 심한 혈소판 감소, 오락가락하는 신경 증상, 정상 응고검사는 혈전성 혈소판감소자색반(TTP)이다. 치료하지 않으면 사망률이 90 % 에 이르므로 ADAMTS13 결과를 기다리지 않고 즉시 혈장교환(과 스테로이드)을 시작한다.\n- 원리: <b>왜 미세혈전이 생기는가</b>: 혈관내피는 아주 큰 폰빌레브란트 인자(vWF) 다중체를 내보내고, 혈장의 ADAMTS13 이 이를 잘라 작게 만든다. 후천 TTP 에서는 ADAMTS13 에 대한 자가항체가 효소를 막아(활성도 10 % 미만) 큰 다중체가 남고, 높은 전단력이 걸리는 세동맥에서 혈소판을 붙잡아 혈소판-vWF 혈전을 만든다.<br> <b>소견이 나오는 이유</b>: 혈소판이 혈전에 소모되어 줄고, 적혈구가 좁아진 혈관을 지나며 찢겨 분열적혈구가 된다(용혈 → LDH·간접빌리루빈 상승, 합토글로빈 감소). 응고인자는 쓰이지 않아 PT·aPTT·피브리노겐이 정상이다 — DIC 와 가르는 지점이다. 뇌·심장 미세혈관이 막혀 오락가락하는 신경 증상이 생긴다.<br> <b>왜 혈장교환인가</b>: 환자의 혈장을 빼며 자가항체와 큰 vWF 다중체를 제거하고, 신선동결혈장으로 정상 ADAMTS13 을 채운다. 스테로이드·리툭시맙으로 항체 생산을 줄이고 카플라시주맙으로 vWF-혈소판 결합을 막는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈장교환(정답, TTP)</th><th>에쿨리주맙(가장 가까운 오답, 비정형 HUS)</th></tr></thead><tbody> <tr><td>원인</td><td><b>ADAMTS13 결핍</b>(자가항체)</td><td>보체 대체경로 조절 이상</td></tr> <tr><td>혈소판</td><td>심한 감소(흔히 &lt; 30,000)</td><td>덜 심함</td></tr> <tr><td>장기</td><td>신경 증상 두드러짐, 신기능 경미</td><td><b>급성 신손상 두드러짐</b></td></tr> <tr><td>ADAMTS13</td><td>&lt; 10 %</td><td>정상 또는 약간 감소</td></tr> </tbody></table> 둘 다 미세혈관병 용혈과 혈소판 감소를 보인다. 혈소판이 매우 적고 신경 증상이 앞서며 신기능이 비교적 보존되면 TTP 로 보고 혈장교환을 먼저 시작한다.\n- 오답 이유:\n  - ② 혈소판 수혈은 TTP 에서 혈전을 더 만들 수 있어 피하며, 생명을 위협하는 출혈이나 꼭 필요한 시술이 있을 때만 고려한다.\n  - ③ 정맥 면역글로불린은 응고검사와 적혈구 모양이 정상이고 혈소판만 줄어든 면역 혈소판감소증에서 정답이 된다.\n  - ④ 에쿨리주맙은 급성 신손상이 두드러지고 ADAMTS13 활성이 보존된 보체 매개 비정형 용혈요독증후군에서 정답이 된다.\n  - ⑤ 헤파린은 헤파린 투여 뒤 혈소판이 줄지 않았고 정맥 혈전이 확인된 경우의 항응고 치료이며, 출혈 위험이 큰 이 환자에게 맞지 않는다.\n- 함정: 혈소판이 14,000 이라 혈소판 수혈을 고르는 것 — TTP 에서는 수혈이 혈전을 키우고, 처치는 혈장교환이다.\n- 학습목표: 미세혈관병 용혈성 빈혈(분열적혈구·LDH 상승·합토글로빈 감소)과 혈소판 감소, 신경 증상이 있고 응고검사가 정상이면 혈전성 혈소판감소자색반을 의심해 ADAMTS13 결과를 기다리지 않고 혈장교환을 시작한다\n- 근거·출처: Zheng XL, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost 2020;18:2496-2502 · Joly BS, Coppo P, Veyradier A. Thrombotic thrombocytopenic purpura. Blood 2017;129:2836-2846",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "분열적혈구·LDH 상승·합토글로빈 감소·직접 항글로불린 음성의 미세혈관병 용혈성 빈혈, 심한 혈소판 감소, 오락가락하는 신경 증상, 정상 응고검사는 혈전성 혈소판감소자색반(TTP)이다. 치료하지 않으면 사망률이 90 % 에 이르므로 ADAMTS13 결과를 기다리지 않고 즉시 혈장교환(과 스테로이드)을 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 미세혈전이 생기는가</b>: 혈관내피는 아주 큰 폰빌레브란트 인자(vWF) 다중체를 내보내고, 혈장의 ADAMTS13 이 이를 잘라 작게 만든다. 후천 TTP 에서는 ADAMTS13 에 대한 자가항체가 효소를 막아(활성도 10 % 미만) 큰 다중체가 남고, 높은 전단력이 걸리는 세동맥에서 혈소판을 붙잡아 혈소판-vWF 혈전을 만든다.<br> <b>소견이 나오는 이유</b>: 혈소판이 혈전에 소모되어 줄고, 적혈구가 좁아진 혈관을 지나며 찢겨 분열적혈구가 된다(용혈 → LDH·간접빌리루빈 상승, 합토글로빈 감소). 응고인자는 쓰이지 않아 PT·aPTT·피브리노겐이 정상이다 — DIC 와 가르는 지점이다. 뇌·심장 미세혈관이 막혀 오락가락하는 신경 증상이 생긴다.<br> <b>왜 혈장교환인가</b>: 환자의 혈장을 빼며 자가항체와 큰 vWF 다중체를 제거하고, 신선동결혈장으로 정상 ADAMTS13 을 채운다. 스테로이드·리툭시맙으로 항체 생산을 줄이고 카플라시주맙으로 vWF-혈소판 결합을 막는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈장교환(정답, TTP)</th><th>에쿨리주맙(가장 가까운 오답, 비정형 HUS)</th></tr></thead><tbody> <tr><td>원인</td><td><b>ADAMTS13 결핍</b>(자가항체)</td><td>보체 대체경로 조절 이상</td></tr> <tr><td>혈소판</td><td>심한 감소(흔히 &lt; 30,000)</td><td>덜 심함</td></tr> <tr><td>장기</td><td>신경 증상 두드러짐, 신기능 경미</td><td><b>급성 신손상 두드러짐</b></td></tr> <tr><td>ADAMTS13</td><td>&lt; 10 %</td><td>정상 또는 약간 감소</td></tr> </tbody></table> 둘 다 미세혈관병 용혈과 혈소판 감소를 보인다. 혈소판이 매우 적고 신경 증상이 앞서며 신기능이 비교적 보존되면 TTP 로 보고 혈장교환을 먼저 시작한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 혈소판 수혈은 TTP 에서 혈전을 더 만들 수 있어 피하며, 생명을 위협하는 출혈이나 꼭 필요한 시술이 있을 때만 고려한다.\n③ 정맥 면역글로불린은 응고검사와 적혈구 모양이 정상이고 혈소판만 줄어든 면역 혈소판감소증에서 정답이 된다.\n④ 에쿨리주맙은 급성 신손상이 두드러지고 ADAMTS13 활성이 보존된 보체 매개 비정형 용혈요독증후군에서 정답이 된다.\n⑤ 헤파린은 헤파린 투여 뒤 혈소판이 줄지 않았고 정맥 혈전이 확인된 경우의 항응고 치료이며, 출혈 위험이 큰 이 환자에게 맞지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판이 14,000 이라 혈소판 수혈을 고르는 것 — TTP 에서는 수혈이 혈전을 키우고, 처치는 혈장교환이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "미세혈관병 용혈성 빈혈(분열적혈구·LDH 상승·합토글로빈 감소)과 혈소판 감소, 신경 증상이 있고 응고검사가 정상이면 혈전성 혈소판감소자색반을 의심해 ADAMTS13 결과를 기다리지 않고 혈장교환을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Zheng XL, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost 2020;18:2496-2502 · Joly BS, Coppo P, Veyradier A. Thrombotic thrombocytopenic purpura. Blood 2017;129:2836-2846"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "분열적혈구의 미세혈관병 용혈·심한 혈소판 감소·오락가락하는 신경 증상·정상 응고검사로 TTP 이므로 ADAMTS13 결과를 기다리지 않고 혈장교환을 시작한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "심한 혈소판 감소와 신경 증상, 경미한 신기능 이상 — 비정형 HUS 보다 TTP",
+   "steps": 3,
+   "chain": [
+    "분열적혈구 + LDH 1,420·합토글로빈 감소 + 직접 항글로불린 음성 → 미세혈관병 용혈성 빈혈",
+    "혈소판 14,000 + 오락가락하는 신경 증상 + 정상 PT·aPTT·피브리노겐 + 크레아티닌 1.3 → TTP(DIC·비정형 HUS 가능성 낮음)",
+    "TTP 의심 → 결과를 기다리지 않고 혈장교환"
+   ],
+   "key": [
+    {
+     "item": "분열적혈구가 많다",
+     "why": "미세혈관병 용혈",
+     "also": []
+    },
+    {
+     "item": "혈소판 14,000/mm³",
+     "why": "심한 혈소판 감소 — TTP 쪽",
+     "also": []
+    },
+    {
+     "item": "말이 어눌해지고 오른손에 힘이 빠졌다 돌아오기를 반복",
+     "why": "미세혈관 막힘의 신경 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "직접 항글로불린 검사 음성",
+     "why": "자가면역 용혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "프로트롬빈 시간과 활성화부분트롬보플라스틴 시간은 정상",
+     "why": "DIC 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.3 mg/dL",
+     "why": "경미 — 신손상이 두드러진 비정형 HUS 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "ADAMTS13 활성도 검사를 보냈다",
+     "why": "결과를 기다리지 않고 치료를 시작한다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "분열적혈구·LDH 상승·합토글로빈 감소의 미세혈관병 용혈과 혈소판 14,000, 오락가락하는 신경 증상, 정상 응고검사로 TTP 다. ADAMTS13 결과를 기다리지 않고 혈장교환을 시작하며, 혈소판 수혈은 피한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈소판 감소가 덜하고 급성 신손상이 두드러지며 ADAMTS13 활성이 정상으로 나왔다면 비정형 용혈요독증후군으로 보고 에쿨리주맙이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0401",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "신경 — 혈전용해 전 혈압이 높은 급성 허혈뇌졸중",
+  "type": "신경 — 혈전용해 전 혈압이 높은 급성 허혈뇌졸중",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-21",
+  "vignette": "A 66-year-old man is brought to the emergency department 90 minutes after the sudden onset of weakness of the right arm and difficulty speaking. He has hypertension and type 2 diabetes mellitus. He takes amlodipine and metformin and does not take anticoagulants. His blood pressure is 204/116 mm Hg on two measurements 10 minutes apart, and pulse is 84/min and regular. He has expressive aphasia, a right facial droop, and weakness of the right arm (2/5). The National Institutes of Health Stroke Scale score is 9. Fingerstick glucose is 146 mg/dL, and platelet count is 240,000/mm3. A CT scan of the head without contrast shows no hemorrhage or early ischemic changes.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Aspirin and permissive hypertension up to 220/120 mm Hg",
+   "Sublingual nifedipine to lower blood pressure below 140/90 mm Hg",
+   "Intravenous heparin infusion and observation",
+   "Intravenous labetalol, then alteplase once blood pressure is below 185/110 mm Hg",
+   "Intravenous alteplase now without lowering blood pressure"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: He has an acute ischemic stroke within 4.5 hours with a disabling deficit and no hemorrhage on CT, so he is a candidate for intravenous thrombolysis. Blood pressure above 185/110 mm Hg raises the risk of symptomatic intracranial hemorrhage and must be lowered first, with intravenous labetalol or nicardipine, before alteplase is given.\n- 원리: <b>Why the threshold exists</b>: after ischemia the blood-brain barrier in the infarct core is damaged. Alteplase converts plasminogen to plasmin systemically, and with high perfusion pressure, blood leaks through the injured vessels — symptomatic hemorrhagic transformation. The trials that proved benefit enrolled only patients whose pressure was below 185/110 mm Hg, so this is the limit for safe treatment.<br> <b>Why not lower it a lot</b>: the ischemic penumbra has lost autoregulation, and its flow depends passively on systemic pressure. Dropping pressure abruptly (e.g., sublingual nifedipine) shrinks penumbral perfusion and can enlarge the infarct. Titratable intravenous agents — labetalol, nicardipine, clevidipine — lower it just below 185/110.<br> <b>After treatment</b>: keep the pressure below 180/105 mm Hg for 24 hours. For patients who are not thrombolysed, pressure is left alone unless it exceeds 220/120 mm Hg (permissive hypertension).\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lower BP, then alteplase (answer)</th><th>Alteplase now (closest distractor)</th></tr></thead><tbody> <tr><td>BP before thrombolysis</td><td><b>Must be &lt; 185/110 mm Hg</b></td><td>Ignores the limit — 204/116 mm Hg</td></tr> <tr><td>Risk addressed</td><td>Symptomatic intracranial hemorrhage</td><td>Delay to treatment</td></tr> <tr><td>Agents</td><td>IV labetalol, nicardipine, clevidipine</td><td>—</td></tr> </tbody></table> Both aim at early reperfusion; the difference is a few minutes of titration that keeps the hemorrhage risk within what the trials showed. If the pressure cannot be brought below 185/110 mm Hg, alteplase is not given.\n- 오답 이유:\n  - (A) Aspirin with permissive hypertension up to 220/120 mm Hg is the approach for patients who are not candidates for thrombolysis, such as those presenting after 4.5 hours.\n  - (B) Sublingual nifedipine lowers pressure unpredictably and steeply; a target of 140/90 mm Hg would reduce penumbral perfusion and is not used acutely.\n  - (C) Heparin infusion would be considered for selected conditions such as cerebral venous thrombosis; it has no role as initial therapy for acute arterial stroke.\n  - (E) Alteplase without lowering blood pressure would be correct only if the pressure were already below 185/110 mm Hg on repeated measurements.\n- 함정: Giving alteplase immediately because 'time is brain' — blood pressure above 185/110 mm Hg must be lowered first.\n- 학습목표: 정맥 혈전용해 대상인 급성 허혈뇌졸중에서 혈압이 185/110 mm Hg 를 넘으면 투여 전에 labetalol·nicardipine 으로 그 아래로 낮추고, 투여 뒤 24시간은 180/105 미만으로 유지한다\n- 근거·출처: Powers WJ, et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. Stroke 2019;50:e344-e418 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Ischemic Stroke",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has an acute ischemic stroke within 4.5 hours with a disabling deficit and no hemorrhage on CT, so he is a candidate for intravenous thrombolysis. Blood pressure above 185/110 mm Hg raises the risk of symptomatic intracranial hemorrhage and must be lowered first, with intravenous labetalol or nicardipine, before alteplase is given."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the threshold exists</b>: after ischemia the blood-brain barrier in the infarct core is damaged. Alteplase converts plasminogen to plasmin systemically, and with high perfusion pressure, blood leaks through the injured vessels — symptomatic hemorrhagic transformation. The trials that proved benefit enrolled only patients whose pressure was below 185/110 mm Hg, so this is the limit for safe treatment.<br> <b>Why not lower it a lot</b>: the ischemic penumbra has lost autoregulation, and its flow depends passively on systemic pressure. Dropping pressure abruptly (e.g., sublingual nifedipine) shrinks penumbral perfusion and can enlarge the infarct. Titratable intravenous agents — labetalol, nicardipine, clevidipine — lower it just below 185/110.<br> <b>After treatment</b>: keep the pressure below 180/105 mm Hg for 24 hours. For patients who are not thrombolysed, pressure is left alone unless it exceeds 220/120 mm Hg (permissive hypertension)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lower BP, then alteplase (answer)</th><th>Alteplase now (closest distractor)</th></tr></thead><tbody> <tr><td>BP before thrombolysis</td><td><b>Must be &lt; 185/110 mm Hg</b></td><td>Ignores the limit — 204/116 mm Hg</td></tr> <tr><td>Risk addressed</td><td>Symptomatic intracranial hemorrhage</td><td>Delay to treatment</td></tr> <tr><td>Agents</td><td>IV labetalol, nicardipine, clevidipine</td><td>—</td></tr> </tbody></table> Both aim at early reperfusion; the difference is a few minutes of titration that keeps the hemorrhage risk within what the trials showed. If the pressure cannot be brought below 185/110 mm Hg, alteplase is not given."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Aspirin with permissive hypertension up to 220/120 mm Hg is the approach for patients who are not candidates for thrombolysis, such as those presenting after 4.5 hours.\n(B) Sublingual nifedipine lowers pressure unpredictably and steeply; a target of 140/90 mm Hg would reduce penumbral perfusion and is not used acutely.\n(C) Heparin infusion would be considered for selected conditions such as cerebral venous thrombosis; it has no role as initial therapy for acute arterial stroke.\n(E) Alteplase without lowering blood pressure would be correct only if the pressure were already below 185/110 mm Hg on repeated measurements."
+   },
+   {
+    "k": "함정",
+    "v": "Giving alteplase immediately because 'time is brain' — blood pressure above 185/110 mm Hg must be lowered first."
+   },
+   {
+    "k": "학습목표",
+    "v": "정맥 혈전용해 대상인 급성 허혈뇌졸중에서 혈압이 185/110 mm Hg 를 넘으면 투여 전에 labetalol·nicardipine 으로 그 아래로 낮추고, 투여 뒤 24시간은 180/105 미만으로 유지한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Powers WJ, et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. Stroke 2019;50:e344-e418 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Ischemic Stroke"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "4.5시간 안의 장애가 있는 허혈뇌졸중이라 혈전용해 대상이지만 혈압 204/116 이 185/110 을 넘으므로 정맥 labetalol 로 먼저 낮춘 뒤 alteplase 를 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "혈전용해 전 혈압 한계 185/110 mm Hg",
+   "steps": 3,
+   "chain": [
+    "갑작스러운 오른팔 위약·실어증 90분 + CT 출혈 없음 → 급성 허혈뇌졸중",
+    "4.5시간 안 + NIHSS 9 + 혈당·혈소판 정상·항응고제 없음 → 정맥 혈전용해 대상",
+    "혈압 204/116 (> 185/110) → 정맥 강압으로 먼저 낮춘 뒤 alteplase"
+   ],
+   "key": [
+    {
+     "item": "90 minutes after the sudden onset",
+     "why": "혈전용해 시간 안",
+     "also": []
+    },
+    {
+     "item": "no hemorrhage or early ischemic changes",
+     "why": "출혈 배제 — 혈전용해 가능",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 204/116 mm Hg on two measurements",
+     "why": "185/110 초과 — 먼저 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Fingerstick glucose is 146 mg/dL",
+     "why": "저혈당에 의한 국소 증상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "does not take anticoagulants",
+     "why": "혈전용해 금기가 없다",
+     "also": []
+    },
+    {
+     "item": "platelet count is 240,000/mm3",
+     "why": "혈소판 기준 충족",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "발병 90분의 장애가 있는 허혈뇌졸중으로 CT 에 출혈이 없어 정맥 혈전용해 대상이다. 혈압 204/116 은 185/110 을 넘어 출혈 위험이 커지므로 정맥 labetalol 로 먼저 낮춘 뒤 alteplase 를 준다.",
+   "switch": {
+    "choice": "A",
+    "condition": "발병 뒤 9시간이 지나 혈전용해·혈관내 치료 대상이 아니었다면 220/120 까지 혈압을 허용하고 아스피린을 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0400",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "소화기·간담췌 — 열·황달·우상복부 통증과 확장된 총담관",
+  "type": "소화기·간담췌 — 열·황달·우상복부 통증과 확장된 총담관",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-21",
+  "vignette": "71세 여자가 하루 전부터 열과 오한, 오른쪽 위배 통증이 있어 응급실에 왔다. 2년 전 담낭 결석을 들었으나 치료하지 않았다. 체온 38.9 ℃, 혈압 108/66 mmHg, 맥박 108회/분이다. 공막에 황달이 있고 오른쪽 위배에 압통이 있으나 반발통은 없다. 혈액검사에서 백혈구 16,800/mm³, 총빌리루빈 4.6 mg/dL, 알칼리인산분해효소 410 IU/L, AST 186 IU/L, ALT 204 IU/L, 리파아제 42 U/L(정상 < 60) 이다. 복부 초음파에서 담낭 결석과 지름 11 mm 로 늘어난 총담관이 보인다. 수액과 정맥 항생제를 시작하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "내시경 역행 담췌관조영술",
+   "응급 복강경 담낭절제술",
+   "경피적 담낭 배액술",
+   "자기공명 담췌관조영술 후 외래 추적",
+   "정맥 항생제만 2주 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 열·황달·오른쪽 위배 통증(Charcot 세 징후)과 담즙정체형 간기능 이상, 늘어난 총담관은 총담관 결석에 의한 급성 담관염이다. 수액·항생제와 함께 담도를 감압해야 하며, 1차 감압법은 내시경 역행 담췌관조영술(괄약근 절개·결석 제거 또는 스텐트)이다.\n- 원리: <b>왜 감압이 핵심인가</b>: 총담관이 결석으로 막히면 담관 안 압력이 오르고, 장에서 올라온 세균이 고인 담즙에서 늘어난다. 압력이 약 20 cmH2O 를 넘으면 세균과 독소가 간 동양혈관으로 역류해 균혈증·패혈증이 된다. 항생제는 고인 담즙에 잘 들어가지 못하므로, 막힌 길을 열어야 원인이 해결된다.<br> <b>왜 내시경인가</b>: 내시경 역행 담췌관조영술은 십이지장에서 유두로 들어가 괄약근을 자르고 결석을 꺼내거나 스텐트로 배액한다. 수술보다 사망률이 낮고, 경피 경간 배액은 내시경이 실패하거나 해부학적으로 불가능할 때 쓴다.<br> <b>시기</b>: 중증도(장기 부전 여부)에 따라 다르다 — 중증은 즉시, 중등도는 24~48시간 안, 경증은 항생제에 반응하지 않을 때. 담낭 결석은 담관염이 가라앉은 뒤 같은 입원 중 담낭절제술로 재발을 막는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">내시경 역행 담췌관조영술(정답)</th><th>응급 담낭절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>막힌 곳</td><td><b>총담관</b>(황달·간기능 담즙정체·총담관 확장)</td><td>담낭관(급성 담낭염 — 황달 없음, 담낭벽 비후)</td></tr> <tr><td>해결하는 것</td><td>담관 감압, 결석 제거</td><td>염증 담낭 제거</td></tr> <tr><td>시기</td><td>담관염 진단 뒤 24~48시간 안(중증은 즉시)</td><td>담관 정리 후 같은 입원 중</td></tr> </tbody></table> 둘 다 담석 질환의 처치이지만, 황달과 총담관 확장은 막힌 곳이 담관이라는 뜻이라 담관 감압이 먼저다.\n- 오답 이유:\n  - ② 응급 담낭절제술은 황달이 없고 담낭벽이 두꺼워진 급성 담낭염일 때 정답이며, 이 환자는 담관이 막힌 상태라 감압이 먼저다.\n  - ③ 경피적 담낭 배액술은 수술 위험이 매우 높은 급성 담낭염 환자에서 담낭만 배액할 때 쓰며, 막힌 총담관은 풀지 못한다.\n  - ④ 자기공명 담췌관조영술은 담관 결석 가능성이 중간 정도로 애매할 때 진단용으로 쓰며, 이미 담관염인 환자를 외래로 보내지 않는다.\n  - ⑤ 항생제 단독은 담관 폐쇄가 저절로 풀린 경증 환자에서 잠시 쓸 수 있으나, 폐쇄가 남아 있으면 감압 없이 낫지 않는다.\n- 함정: 담낭 결석이 보인다고 담낭절제술을 고르는 것 — 황달·총담관 확장은 담관 폐쇄이며 먼저 내시경으로 감압한다.\n- 학습목표: 열·황달·우상복부 통증과 총담관 확장·간기능 담즙정체 양상으로 급성 담관염을 진단하고, 수액·항생제와 함께 내시경 역행 담췌관조영술로 담도를 감압한다\n- 근거·출처: Miura F, et al. Tokyo Guidelines 2018: initial management of acute biliary infection and flowchart for acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:31-40 · Buxbaum JL, et al. ASGE guideline on the management of cholangitis. Gastrointest Endosc 2021;94:207-221",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "열·황달·오른쪽 위배 통증(Charcot 세 징후)과 담즙정체형 간기능 이상, 늘어난 총담관은 총담관 결석에 의한 급성 담관염이다. 수액·항생제와 함께 담도를 감압해야 하며, 1차 감압법은 내시경 역행 담췌관조영술(괄약근 절개·결석 제거 또는 스텐트)이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 감압이 핵심인가</b>: 총담관이 결석으로 막히면 담관 안 압력이 오르고, 장에서 올라온 세균이 고인 담즙에서 늘어난다. 압력이 약 20 cmH2O 를 넘으면 세균과 독소가 간 동양혈관으로 역류해 균혈증·패혈증이 된다. 항생제는 고인 담즙에 잘 들어가지 못하므로, 막힌 길을 열어야 원인이 해결된다.<br> <b>왜 내시경인가</b>: 내시경 역행 담췌관조영술은 십이지장에서 유두로 들어가 괄약근을 자르고 결석을 꺼내거나 스텐트로 배액한다. 수술보다 사망률이 낮고, 경피 경간 배액은 내시경이 실패하거나 해부학적으로 불가능할 때 쓴다.<br> <b>시기</b>: 중증도(장기 부전 여부)에 따라 다르다 — 중증은 즉시, 중등도는 24~48시간 안, 경증은 항생제에 반응하지 않을 때. 담낭 결석은 담관염이 가라앉은 뒤 같은 입원 중 담낭절제술로 재발을 막는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">내시경 역행 담췌관조영술(정답)</th><th>응급 담낭절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>막힌 곳</td><td><b>총담관</b>(황달·간기능 담즙정체·총담관 확장)</td><td>담낭관(급성 담낭염 — 황달 없음, 담낭벽 비후)</td></tr> <tr><td>해결하는 것</td><td>담관 감압, 결석 제거</td><td>염증 담낭 제거</td></tr> <tr><td>시기</td><td>담관염 진단 뒤 24~48시간 안(중증은 즉시)</td><td>담관 정리 후 같은 입원 중</td></tr> </tbody></table> 둘 다 담석 질환의 처치이지만, 황달과 총담관 확장은 막힌 곳이 담관이라는 뜻이라 담관 감압이 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 응급 담낭절제술은 황달이 없고 담낭벽이 두꺼워진 급성 담낭염일 때 정답이며, 이 환자는 담관이 막힌 상태라 감압이 먼저다.\n③ 경피적 담낭 배액술은 수술 위험이 매우 높은 급성 담낭염 환자에서 담낭만 배액할 때 쓰며, 막힌 총담관은 풀지 못한다.\n④ 자기공명 담췌관조영술은 담관 결석 가능성이 중간 정도로 애매할 때 진단용으로 쓰며, 이미 담관염인 환자를 외래로 보내지 않는다.\n⑤ 항생제 단독은 담관 폐쇄가 저절로 풀린 경증 환자에서 잠시 쓸 수 있으나, 폐쇄가 남아 있으면 감압 없이 낫지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "담낭 결석이 보인다고 담낭절제술을 고르는 것 — 황달·총담관 확장은 담관 폐쇄이며 먼저 내시경으로 감압한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "열·황달·우상복부 통증과 총담관 확장·간기능 담즙정체 양상으로 급성 담관염을 진단하고, 수액·항생제와 함께 내시경 역행 담췌관조영술로 담도를 감압한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Miura F, et al. Tokyo Guidelines 2018: initial management of acute biliary infection and flowchart for acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:31-40 · Buxbaum JL, et al. ASGE guideline on the management of cholangitis. Gastrointest Endosc 2021;94:207-221"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Charcot 세 징후·담즙정체형 간기능·총담관 확장으로 급성 담관염이므로 내시경 역행 담췌관조영술로 감압한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "막힌 곳 — 황달과 늘어난 총담관은 담관 폐쇄",
+   "steps": 2,
+   "chain": [
+    "열·황달·오른쪽 위배 통증 + 빌리루빈·ALP 상승 + 총담관 11 mm → 총담관 결석에 의한 급성 담관염",
+    "급성 담관염 + 수액·항생제 시작 → 내시경 역행 담췌관조영술로 감압"
+   ],
+   "key": [
+    {
+     "item": "공막에 황달이 있고",
+     "why": "담관 폐쇄",
+     "also": []
+    },
+    {
+     "item": "체온 38.9 ℃",
+     "why": "감염",
+     "also": []
+    },
+    {
+     "item": "지름 11 mm 로 늘어난 총담관",
+     "why": "총담관 폐쇄",
+     "also": []
+    },
+    {
+     "item": "알칼리인산분해효소 410 IU/L",
+     "why": "담즙정체형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "리파아제 42 U/L(정상 < 60)",
+     "why": "동반 담석 췌장염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 108/66 mmHg",
+     "why": "쇼크는 없다 — 즉시보다 24~48시간 안의 감압",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "열·황달·오른쪽 위배 통증과 담즙정체형 간기능 이상, 11 mm 로 늘어난 총담관으로 총담관 결석의 급성 담관염이다. 수액·항생제와 함께 내시경 역행 담췌관조영술로 담관을 감압하고, 담낭절제술은 그 뒤다.",
+   "switch": {
+    "choice": "B",
+    "condition": "황달이 없고 총담관이 정상이며 담낭벽이 두껍고 머피 징후가 있는 급성 담낭염이었다면 조기 복강경 담낭절제술이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0399",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "응급·중환자 — 삼환계 항우울제 과량 복용과 넓은 QRS",
+  "type": "응급·중환자 — 삼환계 항우울제 과량 복용과 넓은 QRS",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-21",
+  "vignette": "A 34-year-old woman is brought to the emergency department 1 hour after she was found confused next to empty bottles of her prescribed amitriptyline. She has a history of depression. Her temperature is 37.9°C (100.2°F), pulse is 132/min, respirations are 18/min, and blood pressure is 86/50 mm Hg. She is drowsy but protects her airway. Pupils are 7 mm and sluggishly reactive, the skin is dry and flushed, and bowel sounds are decreased. Serum glucose and electrolyte concentrations are within the reference ranges. An ECG shows sinus tachycardia with a QRS duration of 148 msec and a tall terminal R wave in lead aVR. Two liters of normal saline are being infused.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous procainamide",
+   "Intravenous metoprolol",
+   "Intravenous sodium bicarbonate",
+   "Intravenous physostigmine",
+   "Intravenous flumazenil"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Anticholinergic signs (dilated pupils, dry flushed skin, decreased bowel sounds, tachycardia, fever) with a widened QRS and a terminal R wave in aVR are tricyclic antidepressant toxicity. Blockade of fast sodium channels widens the QRS and causes hypotension and ventricular arrhythmias; hypertonic sodium bicarbonate is given for a QRS of 100 msec or more.\n- 원리: <b>Why the QRS widens</b>: tricyclic antidepressants block the fast sodium channels of the His-Purkinje system and ventricular myocardium in the same way as class IA/IC antiarrhythmics. Phase 0 depolarization slows, so ventricular conduction is delayed — the QRS widens, and the right bundle, which conducts last, produces the terminal rightward deflection seen as a tall R in aVR.<br> <b>Why bicarbonate works</b>: it acts in two ways. The extra sodium load increases the gradient across the partially blocked channels, and alkalinization (target pH 7.45–7.55) lowers the fraction of the drug that is ionized and bound to the channel. The QRS narrows and blood pressure rises within minutes.<br> <b>Other toxicities</b>: anticholinergic effects, alpha-1 blockade (hypotension), and seizures from GABA-A antagonism. A QRS above 100 msec predicts seizures and above 160 msec predicts ventricular arrhythmias.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Sodium bicarbonate (answer)</th><th>Physostigmine (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td><b>Sodium-channel blockade</b> (QRS widening, hypotension)</td><td>Peripheral and central anticholinergic signs</td></tr> <tr><td>Fits when</td><td>QRS ≥ 100 msec, arrhythmia, hypotension</td><td>Pure anticholinergic poisoning with a narrow QRS</td></tr> <tr><td>In TCA overdose</td><td>First-line</td><td><b>Contraindicated</b> — bradycardia, asystole, seizures</td></tr> </tbody></table> Both answer the anticholinergic picture, but only the ECG decides: a wide QRS means a sodium-channel problem, and cholinesterase inhibition then becomes dangerous.\n- 오답 이유:\n  - (A) Procainamide would be correct for stable ventricular tachycardia from other causes; as a class IA sodium-channel blocker it worsens tricyclic toxicity.\n  - (B) Metoprolol would be correct for symptomatic sinus tachycardia from thyrotoxicosis; here the tachycardia is compensatory and beta-blockade worsens hypotension.\n  - (D) Physostigmine would be correct for a pure anticholinergic toxidrome with a normal QRS; in tricyclic overdose it can precipitate bradycardia and asystole.\n  - (E) Flumazenil would be correct for isolated benzodiazepine sedation; with tricyclic coingestion it lowers the seizure threshold and is contraindicated.\n- 함정: Treating the anticholinergic signs with physostigmine — a wide QRS points to sodium-channel blockade, for which physostigmine is dangerous.\n- 학습목표: 삼환계 항우울제 중독에서 QRS 폭 100 ms 이상·저혈압·심실 부정맥이 있으면 고장성 탄산수소나트륨으로 나트륨 통로 차단을 거스른다\n- 근거·출처: Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Cyclic Antidepressants · Body R, et al. Guidelines in Emergency Medicine Network (GEMNet): guideline for the management of tricyclic antidepressant overdose. Emerg Med J 2011;28:347-368",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Anticholinergic signs (dilated pupils, dry flushed skin, decreased bowel sounds, tachycardia, fever) with a widened QRS and a terminal R wave in aVR are tricyclic antidepressant toxicity. Blockade of fast sodium channels widens the QRS and causes hypotension and ventricular arrhythmias; hypertonic sodium bicarbonate is given for a QRS of 100 msec or more."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the QRS widens</b>: tricyclic antidepressants block the fast sodium channels of the His-Purkinje system and ventricular myocardium in the same way as class IA/IC antiarrhythmics. Phase 0 depolarization slows, so ventricular conduction is delayed — the QRS widens, and the right bundle, which conducts last, produces the terminal rightward deflection seen as a tall R in aVR.<br> <b>Why bicarbonate works</b>: it acts in two ways. The extra sodium load increases the gradient across the partially blocked channels, and alkalinization (target pH 7.45–7.55) lowers the fraction of the drug that is ionized and bound to the channel. The QRS narrows and blood pressure rises within minutes.<br> <b>Other toxicities</b>: anticholinergic effects, alpha-1 blockade (hypotension), and seizures from GABA-A antagonism. A QRS above 100 msec predicts seizures and above 160 msec predicts ventricular arrhythmias."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Sodium bicarbonate (answer)</th><th>Physostigmine (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td><b>Sodium-channel blockade</b> (QRS widening, hypotension)</td><td>Peripheral and central anticholinergic signs</td></tr> <tr><td>Fits when</td><td>QRS ≥ 100 msec, arrhythmia, hypotension</td><td>Pure anticholinergic poisoning with a narrow QRS</td></tr> <tr><td>In TCA overdose</td><td>First-line</td><td><b>Contraindicated</b> — bradycardia, asystole, seizures</td></tr> </tbody></table> Both answer the anticholinergic picture, but only the ECG decides: a wide QRS means a sodium-channel problem, and cholinesterase inhibition then becomes dangerous."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Procainamide would be correct for stable ventricular tachycardia from other causes; as a class IA sodium-channel blocker it worsens tricyclic toxicity.\n(B) Metoprolol would be correct for symptomatic sinus tachycardia from thyrotoxicosis; here the tachycardia is compensatory and beta-blockade worsens hypotension.\n(D) Physostigmine would be correct for a pure anticholinergic toxidrome with a normal QRS; in tricyclic overdose it can precipitate bradycardia and asystole.\n(E) Flumazenil would be correct for isolated benzodiazepine sedation; with tricyclic coingestion it lowers the seizure threshold and is contraindicated."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the anticholinergic signs with physostigmine — a wide QRS points to sodium-channel blockade, for which physostigmine is dangerous."
+   },
+   {
+    "k": "학습목표",
+    "v": "삼환계 항우울제 중독에서 QRS 폭 100 ms 이상·저혈압·심실 부정맥이 있으면 고장성 탄산수소나트륨으로 나트륨 통로 차단을 거스른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Cyclic Antidepressants · Body R, et al. Guidelines in Emergency Medicine Network (GEMNet): guideline for the management of tricyclic antidepressant overdose. Emerg Med J 2011;28:347-368"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "항콜린 증상과 QRS 148 ms·aVR 말단 R파로 삼환계 항우울제 중독의 나트륨 통로 차단이므로 탄산수소나트륨을 준다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "QRS 폭 — 넓으면 나트륨 통로 차단, physostigmine 은 금기",
+   "steps": 2,
+   "chain": [
+    "amitriptyline 복용 + 산동·건조한 홍조 피부·장음 감소 + QRS 148 ms·aVR 말단 R → 삼환계 중독(나트륨 통로 차단)",
+    "QRS ≥ 100 ms + 저혈압 → 탄산수소나트륨"
+   ],
+   "key": [
+    {
+     "item": "QRS duration of 148 msec",
+     "why": "나트륨 통로 차단",
+     "also": []
+    },
+    {
+     "item": "tall terminal R wave in lead aVR",
+     "why": "삼환계 중독의 특징적 심전도",
+     "also": []
+    },
+    {
+     "item": "Pupils are 7 mm and sluggishly reactive, the skin is dry and flushed",
+     "why": "항콜린 독성 — 삼환계",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "electrolyte concentrations are within the reference ranges",
+     "why": "고칼륨혈증에 의한 넓은 QRS 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "blood pressure is 86/50 mm Hg",
+     "why": "저혈압 — 즉시 탄산수소나트륨 적응증",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "protects her airway",
+     "why": "지금 삽관이 필요하지 않다 — 해독 처치 선택에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "amitriptyline 과량 복용 뒤 항콜린 증상, 저혈압, QRS 148 ms 와 aVR 말단 R파로 삼환계 항우울제의 나트륨 통로 차단이다. 고장성 탄산수소나트륨으로 나트륨 부하와 알칼리화를 주고, physostigmine 은 금기다.",
+   "switch": {
+    "choice": "D",
+    "condition": "QRS 가 정상이고 항콜린 섬망만 있는 순수 항콜린제(예: 디펜히드라민 외 다른 약) 중독이었다면 physostigmine 을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0398",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·외과·산과·응급·소화기·신경·혈액·감염·신장·약리)",
+  "subtopic": "산과 — 식사 조절로 혈당 목표에 못 미치는 임신당뇨병",
+  "type": "산과 — 식사 조절로 혈당 목표에 못 미치는 임신당뇨병",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-21",
+  "vignette": "32세 여자가 임신 30주에 혈당 조절 때문에 다시 병원에 왔다. 임신 26주에 75 g 경구 포도당부하검사에서 공복 98 mg/dL, 1시간 192 mg/dL, 2시간 158 mg/dL 로 임신당뇨병을 진단받았다. 이후 3주 동안 영양 상담에 따른 식사 조절과 하루 30분 걷기를 하였다. 혈당 기록에서 공복 혈당은 100~108 mg/dL, 식후 1시간 혈당은 150~170 mg/dL 이다. 혈압 118/72 mmHg 이고 소변 단백은 음성이다. 초음파에서 태아 추정 체중은 82 백분위수이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "메트포르민 단독 투여",
+   "글리부라이드 투여",
+   "식사 조절을 2주 더 지속",
+   "임신 34주에 분만 유도",
+   "인슐린 투여 시작"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 임신당뇨병의 혈당 목표는 공복 95 mg/dL 미만, 식후 1시간 140 mg/dL 미만이다. 3주 동안 식사 조절과 운동을 했는데도 공복 100~108, 식후 1시간 150~170 mg/dL 로 목표를 넘으므로 약물이 필요하고, 태반을 거의 통과하지 않는 인슐린이 1차 약이다.\n- 원리: <b>왜 임신 중 혈당이 오르는가</b>: 태반이 만드는 인간 태반 락토겐·프로게스테론·코르티솔이 2삼분기 후반부터 인슐린 저항성을 키운다. 산모의 β 세포가 이를 따라가지 못하면 고혈당이 된다. 포도당은 태반을 자유롭게 건너지만 인슐린은 건너지 못하므로, 태아는 스스로 인슐린을 많이 만들어 거대아·신생아 저혈당이 생긴다.<br> <b>왜 인슐린이 먼저인가</b>: 인슐린은 분자가 커서 태반을 거의 통과하지 않고 용량을 혈당 기록에 맞춰 세밀하게 조절할 수 있다. 메트포르민·글리부라이드는 태반을 통과하고, 메트포르민은 혈당 조절 실패로 인슐린을 추가하는 경우가 많으며 자녀의 장기 영향 자료가 불충분해 2차로 둔다.<br> <b>기록을 보는 법</b>: 공복 혈당이 높으면 취침 전 중간형(NPH) 인슐린, 식후 혈당이 높으면 식전 속효성 인슐린을 쓴다. 이 환자는 둘 다 높아 두 가지를 함께 쓰게 된다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">인슐린(정답)</th><th>메트포르민(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>태반 통과</td><td><b>거의 없음</b></td><td>통과 — 태아 농도가 산모와 비슷</td></tr> <tr><td>권고 위치</td><td>1차 약물</td><td>인슐린을 거부하거나 쓸 수 없을 때</td></tr> <tr><td>목표 도달</td><td>용량 조절로 거의 모두 가능</td><td>상당수가 인슐린 추가 필요</td></tr> </tbody></table> 둘 다 혈당을 낮추지만 태아 노출과 조절 정밀도에서 인슐린이 앞서므로, 식사 조절 실패 뒤 첫 약은 인슐린이다.\n- 오답 이유:\n  - ① 메트포르민은 인슐린 투여를 거부하거나 비용·주사 문제로 안전하게 쓸 수 없는 임신부에서 대안으로 고려한다.\n  - ② 글리부라이드는 태반을 통과해 신생아 저혈당·거대아가 더 많아, 인슐린과 메트포르민을 모두 쓸 수 없을 때만 고려한다.\n  - ③ 식사 조절 지속은 1~2주의 기록에서 혈당 대부분이 목표 범위(공복 95, 식후 1시간 140 미만) 안에 있을 때 정답이 된다.\n  - ④ 34주 분만 유도는 태아 상태가 나빠지거나 산모에 중증 전자간증 같은 응급이 있을 때 고려하며, 혈당 조절이 안 된다는 이유만으로 하지 않는다.\n- 함정: 경구약이 편하다고 메트포르민을 고르는 것 — 임신당뇨병에서 식사 조절 실패 뒤 1차 약은 태반을 거의 통과하지 않는 인슐린이다.\n- 학습목표: 식사 조절과 운동으로 혈당 목표(공복 < 95, 식후 1시간 < 140, 2시간 < 120 mg/dL)에 이르지 못하는 임신당뇨병은 인슐린을 1차 약물로 시작한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 190: Gestational Diabetes Mellitus. Obstet Gynecol 2018;131:e49-e64 · American Diabetes Association. Standards of Care in Diabetes — 2024. 15. Management of Diabetes in Pregnancy. Diabetes Care 2024;47(Suppl 1):S282-S294",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "임신당뇨병의 혈당 목표는 공복 95 mg/dL 미만, 식후 1시간 140 mg/dL 미만이다. 3주 동안 식사 조절과 운동을 했는데도 공복 100~108, 식후 1시간 150~170 mg/dL 로 목표를 넘으므로 약물이 필요하고, 태반을 거의 통과하지 않는 인슐린이 1차 약이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 임신 중 혈당이 오르는가</b>: 태반이 만드는 인간 태반 락토겐·프로게스테론·코르티솔이 2삼분기 후반부터 인슐린 저항성을 키운다. 산모의 β 세포가 이를 따라가지 못하면 고혈당이 된다. 포도당은 태반을 자유롭게 건너지만 인슐린은 건너지 못하므로, 태아는 스스로 인슐린을 많이 만들어 거대아·신생아 저혈당이 생긴다.<br> <b>왜 인슐린이 먼저인가</b>: 인슐린은 분자가 커서 태반을 거의 통과하지 않고 용량을 혈당 기록에 맞춰 세밀하게 조절할 수 있다. 메트포르민·글리부라이드는 태반을 통과하고, 메트포르민은 혈당 조절 실패로 인슐린을 추가하는 경우가 많으며 자녀의 장기 영향 자료가 불충분해 2차로 둔다.<br> <b>기록을 보는 법</b>: 공복 혈당이 높으면 취침 전 중간형(NPH) 인슐린, 식후 혈당이 높으면 식전 속효성 인슐린을 쓴다. 이 환자는 둘 다 높아 두 가지를 함께 쓰게 된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">인슐린(정답)</th><th>메트포르민(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>태반 통과</td><td><b>거의 없음</b></td><td>통과 — 태아 농도가 산모와 비슷</td></tr> <tr><td>권고 위치</td><td>1차 약물</td><td>인슐린을 거부하거나 쓸 수 없을 때</td></tr> <tr><td>목표 도달</td><td>용량 조절로 거의 모두 가능</td><td>상당수가 인슐린 추가 필요</td></tr> </tbody></table> 둘 다 혈당을 낮추지만 태아 노출과 조절 정밀도에서 인슐린이 앞서므로, 식사 조절 실패 뒤 첫 약은 인슐린이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 메트포르민은 인슐린 투여를 거부하거나 비용·주사 문제로 안전하게 쓸 수 없는 임신부에서 대안으로 고려한다.\n② 글리부라이드는 태반을 통과해 신생아 저혈당·거대아가 더 많아, 인슐린과 메트포르민을 모두 쓸 수 없을 때만 고려한다.\n③ 식사 조절 지속은 1~2주의 기록에서 혈당 대부분이 목표 범위(공복 95, 식후 1시간 140 미만) 안에 있을 때 정답이 된다.\n④ 34주 분만 유도는 태아 상태가 나빠지거나 산모에 중증 전자간증 같은 응급이 있을 때 고려하며, 혈당 조절이 안 된다는 이유만으로 하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "경구약이 편하다고 메트포르민을 고르는 것 — 임신당뇨병에서 식사 조절 실패 뒤 1차 약은 태반을 거의 통과하지 않는 인슐린이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "식사 조절과 운동으로 혈당 목표(공복 < 95, 식후 1시간 < 140, 2시간 < 120 mg/dL)에 이르지 못하는 임신당뇨병은 인슐린을 1차 약물로 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 190: Gestational Diabetes Mellitus. Obstet Gynecol 2018;131:e49-e64 · American Diabetes Association. Standards of Care in Diabetes — 2024. 15. Management of Diabetes in Pregnancy. Diabetes Care 2024;47(Suppl 1):S282-S294"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "3주 식사 조절·운동에도 공복·식후 1시간 혈당이 목표를 넘으므로 인슐린을 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "1차 약 — 태반을 거의 통과하지 않는 인슐린",
+   "steps": 2,
+   "chain": [
+    "공복 100~108·식후 1시간 150~170 mg/dL (목표 95·140 미만) + 3주 식사 조절 → 약물 필요",
+    "임신당뇨병의 약물 → 1차는 인슐린"
+   ],
+   "key": [
+    {
+     "item": "공복 혈당은 100~108 mg/dL",
+     "why": "공복 목표 95 미만을 넘음",
+     "also": []
+    },
+    {
+     "item": "식후 1시간 혈당은 150~170 mg/dL",
+     "why": "식후 목표 140 미만을 넘음",
+     "also": []
+    },
+    {
+     "item": "3주 동안 영양 상담에 따른 식사 조절",
+     "why": "생활요법을 이미 충분히 했다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변 단백은 음성",
+     "why": "전자간증 가능성을 낮춘다 — 분만을 서두를 이유가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "태아 추정 체중은 82 백분위수",
+     "why": "거대아 쪽으로 기울고 있다 — 조절이 필요하다는 근거를 더한다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "임신 26주에 진단된 임신당뇨병이 3주 식사 조절·운동에도 공복·식후 혈당 목표를 넘는다. 약물이 필요하며, 태반을 거의 통과하지 않고 세밀하게 조절되는 인슐린이 1차 약이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "환자가 주사를 거부하거나 인슐린을 안전하게 쓸 수 없는 상황이었다면 메트포르민이 대안이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0385",
   "exam": "imaging",
   "style": "kmle_style",

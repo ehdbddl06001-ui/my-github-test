@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3888,
+  "total": 3900,
   "byType": {
    "usmle": 210,
    "kmle": 1504,
+   "imaging": 404,
    "concept": 107,
    "paper": 812,
-   "imaging": 392,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,28 +38,28 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 96,
    "Hematology": 91,
    "Laboratory Medicine": 82,
-   "산부인과": 60,
-   "순환기": 34,
-   "호흡기": 27,
-   "소화기": 25,
+   "산부인과": 61,
+   "순환기": 35,
+   "호흡기": 28,
+   "소화기": 26,
    "Physiology": 23,
    "소아과": 22,
    "병리·조직학": 20,
+   "감염": 19,
+   "신경": 19,
+   "응급·중환자": 19,
+   "혈액·종양": 19,
    "Pharmacology": 18,
-   "감염": 18,
    "내분비": 18,
-   "신경": 18,
-   "응급·중환자": 18,
-   "혈액·종양": 18,
+   "신장·비뇨기": 18,
    "Biochemistry": 17,
-   "신장·비뇨기": 17,
+   "외과": 17,
    "Microbiology": 16,
-   "외과": 15,
    "피부과": 15,
    "예방의학·역학": 14,
    "Internal Medicine": 13,
    "Immunology": 12,
-   "약리": 11,
+   "약리": 12,
    "근골격·류마티스": 10,
    "정신과": 10,
    "영상의학": 8,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2713,
+   "high": 2725,
    "medium": 1125,
    "low": 50
   },
@@ -817,6 +817,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1506.md",
    "snippet": "71세 남자가 폐렴으로 입원 3일째 아침 회진 때 병상에서 반응이 없는 채로 발견되었다. 간호사가 곧바로 가슴압박을 시작했고, 2분 뒤 도착한 심폐소생팀이 패드를 붙이고 압박을 잠시 멈춰 리듬을 확인하였다. 모니터에는 그림과 같은 리듬이 보이지만 경동맥 맥박은 만져지지 않고 자발 호흡도 없다. 팔에는 정맥로가 확보되어 있고 백 밸브 마스크로 환기하고 있다. 활력징후와 현장 검사 결과는 자료와 같다. 가슴압박을 다시 이어 가면서",
    "text": "Cardiology Unresponsive Ward Patient with an Organized Rhythm on the Monitor during Resuscitation cardiac-arrest pulseless-electrical-activity non-shockable-rhythm epinephrine ecg KMLE 2026 / Claude 71세 남자가 폐렴으로 입원 3일째 아침 회진 때 병상에서 반응이 없는 채로 발견되었다. 간호사가 곧바로 가슴압박을 시작했고, 2분 뒤 도착한 심폐소생팀이 패드를 붙이고 압박을 잠시 멈춰 리듬을 확인하였다. 모니터에는 그림과 같은 리듬이 보이지만 경동맥 맥박은 만져지지 않고 자발 호흡도 없다. 팔에는 정맥로가 확보되어 있고 백 밸브 마스크로 환기하고 있다. 활력징후와 현장 검사 결과는 자료와 같다. 가슴압박을 다시 이어 가면서 시행할 처치로 가장 적절한 것은? A. 비동기 제세동 200 J B. 에피네프린 1 mg 정맥 주사 C. 아트로핀 1 mg 정맥 주사 D. 아미오다론 300 mg 정맥 주사 E. 동기화 심장율동전환 100 J 모니터에 규칙적인 좁은 QRS 리듬이 보이지만 맥박이 없으므로 무맥성 전기활동(PEA)이다. 제세동 대상이 아닌 리듬이므로 가슴압박을 이어 가며 가능한 한 빨리 에피네프린 1 mg 을 정맥 주사하고 3–5분마다 반복하면서 되돌릴 수 있는 원인(5H·5T)을 찾는다."
+  },
+  {
+   "id": "imaging-2026-0405",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 디곡신 복용자에게 아미오다론을 더한 뒤 생긴 독성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0405.md",
+   "snippet": "A 78 year old man comes to the physician because of a 5 day history of nausea, loss of appetite, and seeing yellow halos around lights. He has heart failure with reduced ejection fraction and atrial fibrillation treated with digoxin 0.125 m",
+   "text": "약리 약리 — 디곡신 복용자에게 아미오다론을 더한 뒤 생긴 독성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 A 78 year old man comes to the physician because of a 5 day history of nausea, loss of appetite, and seeing yellow halos around lights. He has heart failure with reduced ejection fraction and atrial fibrillation treated with digoxin 0.125 mg daily, metoprolol, sacubitril valsartan, and apixaban; his dose of digoxin has been unchanged for 2 years. Three weeks ago, amiodarone was added for recurrent symptomatic atrial fibrillation. His pulse is 48/min and irregular, and blood pressure is 112/68 mm Hg. Serum potassium is 4.3 mEq/L, magnesium is 2.0 mg/dL, and creatinine is 1.1 mg/dL, unchanged from 3 months ago. Serum digoxin concentration is 2.9 ng/mL. Which of the following best explains the increase in the digoxin concentration? A. Decreased glomerular filtration rate B. Increased oral bioavailability from enhanced gastric absorption C. Inhibition of P glycoprotein mediated renal tubular secretion D. Inhibition of hepatic CYP3A4 mediated oxidation E. Displacement of digoxin from plasma albumin binding sites"
+  },
+  {
+   "id": "imaging-2026-0404",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 경련을 동반한 급성 중증 저나트륨혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0404.md",
+   "snippet": "24세 여자가 전신 경련을 한 뒤 응급실에 왔다. 친구들에 따르면 6시간 전 야외 음악 축제에서 엑스터시(MDMA)를 먹고 춤을 추며 물을 많이 마셨고, 2시간 전부터 두통·구토와 함께 횡설수설하다 경련을 하였다. 응급실에서 경련은 멈췄으나 혼미하다. 체온 37.4 ℃, 혈압 124/78 mmHg, 맥박 102회/분이다. 혈청 나트륨 118 mmol/L, 칼륨 3.6 mmol/L, 혈당 112 mg/dL, 혈청 삼투질농도 24",
+   "text": "신장·비뇨기 신장·비뇨 — 경련을 동반한 급성 중증 저나트륨혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 24세 여자가 전신 경련을 한 뒤 응급실에 왔다. 친구들에 따르면 6시간 전 야외 음악 축제에서 엑스터시(MDMA)를 먹고 춤을 추며 물을 많이 마셨고, 2시간 전부터 두통·구토와 함께 횡설수설하다 경련을 하였다. 응급실에서 경련은 멈췄으나 혼미하다. 체온 37.4 ℃, 혈압 124/78 mmHg, 맥박 102회/분이다. 혈청 나트륨 118 mmol/L, 칼륨 3.6 mmol/L, 혈당 112 mg/dL, 혈청 삼투질농도 248 mOsm/kg, 소변 삼투질농도 420 mOsm/kg, 소변 나트륨 46 mmol/L 이다. 뇌 CT 에서 출혈은 없다. 가장 적절한 처치는? A. 푸로세미드 정주 B. 3 % 고장성 식염수 볼루스 정주 C. 0.9 % 생리식염수 정주 D. 수분 섭취 제한만 시행 E. 톨밥탄 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0403",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 백혈구가 많은 첫 클로스트리디오이데스 디피실 감염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0403.md",
+   "snippet": "A 74 year old woman is evaluated in the hospital because of 8 watery stools daily for 2 days. She was admitted 9 days ago for pyelonephritis and has been treated with intravenous ceftriaxone. Her temperature is 38.1°C (100.6°F), pulse is 98",
+   "text": "감염 감염 — 백혈구가 많은 첫 클로스트리디오이데스 디피실 감염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 A 74 year old woman is evaluated in the hospital because of 8 watery stools daily for 2 days. She was admitted 9 days ago for pyelonephritis and has been treated with intravenous ceftriaxone. Her temperature is 38.1°C (100.6°F), pulse is 98/min, and blood pressure is 128/74 mm Hg. The abdomen is soft and mildly tender in the lower quadrants without distention or rebound tenderness, and bowel sounds are active. Leukocyte count is 18,600/mm3, and serum creatinine concentration is 1.0 mg/dL. Serum lactate concentration is normal. A stool PCR test for Clostridioides difficile toxin genes is positive, and a toxin enzyme immunoassay is also positive. An abdominal x ray shows no colonic dilation. Which of the following is the most appropriate pharmacotherapy? A. Bezlotoxumab alone B. Oral vancomycin C. Oral metronidazole D. Intravenous vancomycin E. Intravenous metronidazole plus rectal vancomycin"
+  },
+  {
+   "id": "imaging-2026-0402",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 분열적혈구·혈소판 감소·신경 증상",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0402.md",
+   "snippet": "38세 여자가 이틀 전부터 말이 어눌해지고 오른손에 힘이 빠졌다 돌아오기를 반복해 응급실에 왔다. 1주 전부터 피곤하고 다리에 멍이 들었다. 복용하는 약은 없다. 체온 37.6 ℃, 혈압 132/80 mmHg 이다. 다리에 점상출혈이 있다. 혈액검사에서 혈색소 7.8 g/dL, 그물적혈구 9 %, 혈소판 14,000/mm³, 크레아티닌 1.3 mg/dL, 간접빌리루빈 2.8 mg/dL, LDH 1,420 IU/L, 합토글로빈 ",
+   "text": "혈액·종양 혈액·종양 — 분열적혈구·혈소판 감소·신경 증상 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 38세 여자가 이틀 전부터 말이 어눌해지고 오른손에 힘이 빠졌다 돌아오기를 반복해 응급실에 왔다. 1주 전부터 피곤하고 다리에 멍이 들었다. 복용하는 약은 없다. 체온 37.6 ℃, 혈압 132/80 mmHg 이다. 다리에 점상출혈이 있다. 혈액검사에서 혈색소 7.8 g/dL, 그물적혈구 9 %, 혈소판 14,000/mm³, 크레아티닌 1.3 mg/dL, 간접빌리루빈 2.8 mg/dL, LDH 1,420 IU/L, 합토글로빈 감소, 직접 항글로불린 검사 음성, 프로트롬빈 시간과 활성화부분트롬보플라스틴 시간은 정상, 피브리노겐 310 mg/dL 이다. 말초혈액도말에서 혈소판이 적고 분열적혈구가 많다. 뇌 CT 는 정상이다. ADAMTS13 활성도 검사를 보냈다. 가장 적절한 처치는? A. 혈장교환 B. 혈소판 수혈 C. 정맥 면역글로불린 D. 에쿨리주맙 E. 헤파린 정주"
+  },
+  {
+   "id": "imaging-2026-0401",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 혈전용해 전 혈압이 높은 급성 허혈뇌졸중",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0401.md",
+   "snippet": "A 66 year old man is brought to the emergency department 90 minutes after the sudden onset of weakness of the right arm and difficulty speaking. He has hypertension and type 2 diabetes mellitus. He takes amlodipine and metformin and does no",
+   "text": "신경 신경 — 혈전용해 전 혈압이 높은 급성 허혈뇌졸중 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 A 66 year old man is brought to the emergency department 90 minutes after the sudden onset of weakness of the right arm and difficulty speaking. He has hypertension and type 2 diabetes mellitus. He takes amlodipine and metformin and does not take anticoagulants. His blood pressure is 204/116 mm Hg on two measurements 10 minutes apart, and pulse is 84/min and regular. He has expressive aphasia, a right facial droop, and weakness of the right arm (2/5). The National Institutes of Health Stroke Scale score is 9. Fingerstick glucose is 146 mg/dL, and platelet count is 240,000/mm3. A CT scan of the head without contrast shows no hemorrhage or early ischemic changes. Which of the following is the most appropriate next step in management? A. Aspirin and permissive hypertension up to 220/120 mm Hg B. Sublingual nifedipine to lower blood pressure below 140/90 mm Hg C. Intravenous heparin infusion and observation D. Intravenous labetalol, then alteplase once blood pressure is below 185/110 mm Hg E. Intravenous alteplase now without lowering blood pressure"
+  },
+  {
+   "id": "imaging-2026-0400",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 열·황달·우상복부 통증과 확장된 총담관",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0400.md",
+   "snippet": "71세 여자가 하루 전부터 열과 오한, 오른쪽 위배 통증이 있어 응급실에 왔다. 2년 전 담낭 결석을 들었으나 치료하지 않았다. 체온 38.9 ℃, 혈압 108/66 mmHg, 맥박 108회/분이다. 공막에 황달이 있고 오른쪽 위배에 압통이 있으나 반발통은 없다. 혈액검사에서 백혈구 16,800/mm³, 총빌리루빈 4.6 mg/dL, 알칼리인산분해효소 410 IU/L, AST 186 IU/L, ALT 204 IU/L, 리파아제",
+   "text": "소화기 소화기·간담췌 — 열·황달·우상복부 통증과 확장된 총담관 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 71세 여자가 하루 전부터 열과 오한, 오른쪽 위배 통증이 있어 응급실에 왔다. 2년 전 담낭 결석을 들었으나 치료하지 않았다. 체온 38.9 ℃, 혈압 108/66 mmHg, 맥박 108회/분이다. 공막에 황달이 있고 오른쪽 위배에 압통이 있으나 반발통은 없다. 혈액검사에서 백혈구 16,800/mm³, 총빌리루빈 4.6 mg/dL, 알칼리인산분해효소 410 IU/L, AST 186 IU/L, ALT 204 IU/L, 리파아제 42 U/L(정상 < 60) 이다. 복부 초음파에서 담낭 결석과 지름 11 mm 로 늘어난 총담관이 보인다. 수액과 정맥 항생제를 시작하였다. 다음 처치로 가장 적절한 것은? A. 내시경 역행 담췌관조영술 B. 응급 복강경 담낭절제술 C. 경피적 담낭 배액술 D. 자기공명 담췌관조영술 후 외래 추적 E. 정맥 항생제만 2주 투여"
+  },
+  {
+   "id": "imaging-2026-0399",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자 — 삼환계 항우울제 과량 복용과 넓은 QRS",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0399.md",
+   "snippet": "A 34 year old woman is brought to the emergency department 1 hour after she was found confused next to empty bottles of her prescribed amitriptyline. She has a history of depression. Her temperature is 37.9°C (100.2°F), pulse is 132/min, re",
+   "text": "응급·중환자 응급·중환자 — 삼환계 항우울제 과량 복용과 넓은 QRS opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 A 34 year old woman is brought to the emergency department 1 hour after she was found confused next to empty bottles of her prescribed amitriptyline. She has a history of depression. Her temperature is 37.9°C (100.2°F), pulse is 132/min, respirations are 18/min, and blood pressure is 86/50 mm Hg. She is drowsy but protects her airway. Pupils are 7 mm and sluggishly reactive, the skin is dry and flushed, and bowel sounds are decreased. Serum glucose and electrolyte concentrations are within the reference ranges. An ECG shows sinus tachycardia with a QRS duration of 148 msec and a tall terminal R wave in lead aVR. Two liters of normal saline are being infused. Which of the following is the most appropriate next step in management? A. Intravenous procainamide B. Intravenous metoprolol C. Intravenous sodium bicarbonate D. Intravenous physostigmine E. Intravenous flumazenil"
+  },
+  {
+   "id": "imaging-2026-0398",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 식사 조절로 혈당 목표에 못 미치는 임신당뇨병",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0398.md",
+   "snippet": "32세 여자가 임신 30주에 혈당 조절 때문에 다시 병원에 왔다. 임신 26주에 75 g 경구 포도당부하검사에서 공복 98 mg/dL, 1시간 192 mg/dL, 2시간 158 mg/dL 로 임신당뇨병을 진단받았다. 이후 3주 동안 영양 상담에 따른 식사 조절과 하루 30분 걷기를 하였다. 혈당 기록에서 공복 혈당은 100~108 mg/dL, 식후 1시간 혈당은 150~170 mg/dL 이다. 혈압 118/72 mmHg 이고 ",
+   "text": "산부인과 산과 — 식사 조절로 혈당 목표에 못 미치는 임신당뇨병 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 32세 여자가 임신 30주에 혈당 조절 때문에 다시 병원에 왔다. 임신 26주에 75 g 경구 포도당부하검사에서 공복 98 mg/dL, 1시간 192 mg/dL, 2시간 158 mg/dL 로 임신당뇨병을 진단받았다. 이후 3주 동안 영양 상담에 따른 식사 조절과 하루 30분 걷기를 하였다. 혈당 기록에서 공복 혈당은 100~108 mg/dL, 식후 1시간 혈당은 150~170 mg/dL 이다. 혈압 118/72 mmHg 이고 소변 단백은 음성이다. 초음파에서 태아 추정 체중은 82 백분위수이다. 다음 처치로 가장 적절한 것은? A. 메트포르민 단독 투여 B. 글리부라이드 투여 C. 식사 조절을 2주 더 지속 D. 임신 34주에 분만 유도 E. 인슐린 투여 시작"
+  },
+  {
+   "id": "imaging-2026-0397",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 석 달 사이 빠르게 커진 젊은 여성의 유방 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0397.md",
+   "snippet": "23세 여자가 왼쪽 유방의 멍울이 석 달 사이 빠르게 커져 병원에 왔다. 통증은 없고 유두 분비물도 없다. 2년 전 같은 자리에 작은 멍울이 있다는 말을 들었으나 지켜보기로 했었다. 진찰에서 왼쪽 유방 위쪽 바깥에 지름 약 4 cm 의 단단하고 잘 움직이는 둥근 종괴가 만져지며, 위 피부는 정상이다. 겨드랑이 림프절은 만져지지 않는다. 유방 초음파 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 유방 고름집 B. 엽상종",
+   "text": "외과 외과계 — 석 달 사이 빠르게 커진 젊은 여성의 유방 종괴 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 23세 여자가 왼쪽 유방의 멍울이 석 달 사이 빠르게 커져 병원에 왔다. 통증은 없고 유두 분비물도 없다. 2년 전 같은 자리에 작은 멍울이 있다는 말을 들었으나 지켜보기로 했었다. 진찰에서 왼쪽 유방 위쪽 바깥에 지름 약 4 cm 의 단단하고 잘 움직이는 둥근 종괴가 만져지며, 위 피부는 정상이다. 겨드랑이 림프절은 만져지지 않는다. 유방 초음파 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 유방 고름집 B. 엽상종양 C. 섬유샘종 D. 단순 낭 E. 침윤성 관암종"
+  },
+  {
+   "id": "imaging-2026-0396",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 안전벨트 타박 뒤 만져지는 유방 종괴와 초음파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0396.md",
+   "snippet": "56세 여자가 2주 전 오른쪽 유방에서 단단한 멍울을 만져 병원에 왔다. 2개월 전 자동차 사고로 안전벨트가 지나간 자리에 멍이 들었다. 유방암 가족력은 없다. 진찰에서 오른쪽 유방 위쪽 바깥에 지름 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지고, 피부 변화나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 자리에 경계가 불분명한 고밀도 음영이 있다. 유방 초음파 사진은 그림과 같다. ",
+   "text": "외과 외과계 — 안전벨트 타박 뒤 만져지는 유방 종괴와 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 56세 여자가 2주 전 오른쪽 유방에서 단단한 멍울을 만져 병원에 왔다. 2개월 전 자동차 사고로 안전벨트가 지나간 자리에 멍이 들었다. 유방암 가족력은 없다. 진찰에서 오른쪽 유방 위쪽 바깥에 지름 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지고, 피부 변화나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 자리에 경계가 불분명한 고밀도 음영이 있다. 유방 초음파 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 초음파 유도 중심부 바늘생검 B. 6개월 뒤 추적 초음파 C. 세침흡인으로 내용물 배액 D. 변형 근치유방절제술 E. 경구 항생제 2주 투여 뒤 재진찰"
+  },
+  {
+   "id": "imaging-2026-0395",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 저일회호흡량에도 심한 저산소혈증이 남은 바이러스 폐렴 ARDS",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0395.md",
+   "snippet": "A 57 year old woman with viral pneumonia was intubated 30 hours ago because of worsening hypoxemia. She has a dual chamber pacemaker for complete heart block. She is sedated and receiving volume control ventilation with a tidal volume of 6 ",
+   "text": "호흡기 호흡기 — 저일회호흡량에도 심한 저산소혈증이 남은 바이러스 폐렴 ARDS opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 A 57 year old woman with viral pneumonia was intubated 30 hours ago because of worsening hypoxemia. She has a dual chamber pacemaker for complete heart block. She is sedated and receiving volume control ventilation with a tidal volume of 6 mL/kg of predicted body weight, PEEP of 14 cm H2O, and FiO2 of 0.8. Plateau pressure is 27 cm H2O. Her pulse is 96/min, and blood pressure is 118/70 mm Hg on a low dose of norepinephrine. Arterial blood gas analysis shows pH 7.31, PaCO2 52 mm Hg, and PaO2 68 mm Hg. Echocardiography shows a left ventricular ejection fraction of 60% and no valvular disease. A portable chest x ray is shown. Which of the following is the most appropriate next step in management? A. Venovenous extracorporeal membrane oxygenation now B. High frequency oscillatory ventilation C. Increase the tidal volume to 10 mL/kg of predicted body weight D. Intravenous furosemide infusion E. Prone positioning for at least 16 hours per day"
+  },
+  {
+   "id": "imaging-2026-0394",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 교통사고 사망자의 정상 심장 대조 조직 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094",
+   "confidence": "high",
+   "date": "2026-10-21",
+   "path": "content/imaging/2026/imaging-2026-0394.md",
+   "snippet": "A 49 year old man dies in a motor vehicle collision. He had no history of cardiovascular disease, and an autopsy shows a heart of normal weight with no gross abnormalities and normal coronary arteries. Tissue from the left ventricular free ",
+   "text": "순환기 순환기 — 교통사고 사망자의 정상 심장 대조 조직 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261021T202352Z_일일영상_2026-10-22_12units_12q_5d008094 A 49 year old man dies in a motor vehicle collision. He had no history of cardiovascular disease, and an autopsy shows a heart of normal weight with no gross abnormalities and normal coronary arteries. Tissue from the left ventricular free wall is used as a normal control in a research study of inherited cardiomyopathies. A photomicrograph of a section of the heart stained by immunohistochemistry is shown. The antibody most likely recognizes which of the following antigens? A. Vimentin B. CD68 (macrosialin) C. Ki 67 (MIB 1) D. Beta myosin heavy chain E. CD31 (PECAM 1)"
   },
   {
    "id": "cn.rheum.familial-mediterranean-fever.daily-colchicine",
