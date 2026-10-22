@@ -1,5 +1,5 @@
 {
- "started": "2026-10-21T09:04:43+09:00",
+ "started": "2026-10-22T09:08:43+09:00",
  "built": [
   "류마티스내과"
  ],
@@ -49,7 +49,7 @@
  ],
  "layout_trials": {
   "류마티스내과": {
-   "tried": 490,
+   "tried": 510,
    "diagram_after_section": {
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
@@ -80,18 +80,14 @@
     "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#shrink": 1.0,
     "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#pad": 0,
     "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#col": false,
-    "u-cn-rheum-sarcoidosis-treat-or-observe": 15,
-    "u-cn-rheum-sarcoidosis-treat-or-observe#shrink": 1.0,
-    "u-cn-rheum-sarcoidosis-treat-or-observe#pad": 0,
-    "u-cn-rheum-sarcoidosis-treat-or-observe#col": true,
-    "u-cn-rheum-igg4-related-disease-diagnosis": 12,
-    "u-cn-rheum-igg4-related-disease-diagnosis#shrink": 1.0,
-    "u-cn-rheum-igg4-related-disease-diagnosis#pad": 14,
-    "u-cn-rheum-igg4-related-disease-diagnosis#col": false,
-    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine": 14,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine": 15,
     "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#shrink": 1.0,
-    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#pad": 14,
-    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#col": false,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#pad": 0,
+    "u-cn-rheum-familial-mediterranean-fever-daily-colchicine#col": true,
+    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first": 14,
+    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first#shrink": 1.0,
+    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first#pad": 14,
+    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first#col": false,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 9,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
@@ -104,7 +100,7 @@
   }
  },
  "result": "ok",
- "finished": "2026-10-21T09:47:50+09:00",
+ "finished": "2026-10-22T09:55:06+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -113,17 +109,17 @@
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "e8abf27df223d5c53f18c9afff4fa5bd",
-    "archive": "MedKOS_학습서_류마티스내과_v27_2026-10-21.pdf"
+    "md5": "9ec03a2fd5994f83a913c5cd9f42e062",
+    "archive": "MedKOS_학습서_류마티스내과_v28_2026-10-22.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "e04ecc43d11bfa6c6bc17dcc8d45f1bf"
+    "md5": "8a39d9e9e70dfd59b3ec433de7f70538"
    }
   },
-  "at": "2026-10-21T09:47:50+09:00"
+  "at": "2026-10-22T09:55:06+09:00"
  }
 }

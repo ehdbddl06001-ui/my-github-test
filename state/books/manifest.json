@@ -607,11 +607,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "5b7712fed440b556f7dc",
-   "version": 27,
-   "date": "2026-10-21",
+   "hash": "f4fc8abe006089a8d7f7",
+   "version": 28,
+   "date": "2026-10-22",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 46,
+   "pages": 48,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -718,52 +718,58 @@
     },
     "cn.rheum.igg4-related-disease.diagnosis": {
      "title": "IgG4 관련 질환 — 진단은 혈청값이 아니라 종합 판단",
-     "page": 34,
+     "page": 35,
      "concept_hash": "c4520c7b1f52acfe",
      "concept_version": 1
     },
     "cn.rheum.familial-mediterranean-fever.daily-colchicine": {
      "title": "가족성 지중해열 — 매일 콜히친이 아밀로이드증을 막는다",
-     "page": 36,
+     "page": 37,
      "concept_hash": "241d318742721993",
+     "concept_version": 1
+    },
+    "cn.rheum.acute-monoarthritis.synovial-fluid-first": {
+     "title": "급성 단관절염 — 관절 천자가 먼저다",
+     "page": 38,
+     "concept_hash": "94a9ab0a5d324fa8",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 38,
+     "page": 40,
      "concept_hash": "6295d1fb01e16a3b",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 39,
+     "page": 41,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 41,
+     "page": 43,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 43,
+     "page": 45,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 45,
+     "page": 47,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "e8abf27df223d5c53f18c9afff4fa5bd",
-    "version": 27,
-    "uploaded": "2026-10-21T09:47:50+09:00"
+    "md5": "9ec03a2fd5994f83a913c5cd9f42e062",
+    "version": 28,
+    "uploaded": "2026-10-22T09:55:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -792,10 +798,11 @@
     "MedKOS_학습서_류마티스내과_v24_2026-10-18.pdf",
     "MedKOS_학습서_류마티스내과_v25_2026-10-19.pdf",
     "MedKOS_학습서_류마티스내과_v26_2026-10-20.pdf",
-    "MedKOS_학습서_류마티스내과_v27_2026-10-21.pdf"
+    "MedKOS_학습서_류마티스내과_v27_2026-10-21.pdf",
+    "MedKOS_학습서_류마티스내과_v28_2026-10-22.pdf"
    ],
    "changes": [
-    "새 단원: 가족성 지중해열 — 매일 콜히친이 아밀로이드증을 막는다"
+    "새 단원: 급성 단관절염 — 관절 천자가 먼저다"
    ]
   },
   "호흡기내과": {
@@ -1292,13 +1299,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "e04ecc43d11bfa6c6bc17dcc8d45f1bf",
+   "md5": "8a39d9e9e70dfd59b3ec433de7f70538",
    "version": null,
-   "uploaded": "2026-10-21T09:47:50+09:00"
+   "uploaded": "2026-10-22T09:55:06+09:00"
   }
  },
- "updated": "2026-10-21"
+ "updated": "2026-10-22"
 }
