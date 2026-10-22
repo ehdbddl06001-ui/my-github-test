@@ -2,6 +2,1550 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0413",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "외과계 — 외상 없이 만져진 중년 여성의 유방 종괴와 초음파",
+  "type": "외과계 — 외상 없이 만져진 중년 여성의 유방 종괴와 초음파",
+  "modality": "US",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-22",
+  "vignette": "A 52-year-old woman comes to the physician because of a painless lump in her left breast that she noticed 1 month ago. She has had no breast trauma, surgery, nipple discharge, or fever. Her last screening mammogram 3 years ago was normal. Her mother was diagnosed with breast cancer at the age of 71 years. Her vital signs are within normal limits. Examination shows a 2-cm firm, nontender, poorly mobile mass in the upper outer quadrant of the left breast; the overlying skin is normal, and there is no axillary lymphadenopathy. A gray-scale ultrasound image of the breast mass is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Intraductal papilloma",
+   "Invasive ductal carcinoma",
+   "Fibroadenoma",
+   "Fat necrosis",
+   "Simple cyst"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The ultrasound shows an irregular, hypoechoic solid mass with angular and spiculated margins and posterior acoustic shadowing. These are the features most predictive of malignancy (BI-RADS 5). In a 52-year-old woman with a new, firm, fixed mass and no trauma, the most likely diagnosis is invasive ductal carcinoma (invasive carcinoma of no special type); core needle biopsy would confirm it.\n- 원리: <b>Why cancer looks irregular and spiculated</b>: invasive carcinoma grows by sending cords of tumor cells into the surrounding fat and provoking a desmoplastic (fibrous) stroma. Those radiating extensions are the spicules, and the uneven growth makes the outline angular rather than smooth.<br> <b>Why it casts a shadow</b>: dense collagen in the desmoplastic stroma absorbs and scatters the sound beam, so less echo returns from behind the mass — posterior acoustic shadowing. A fibroadenoma, made of loose stroma and ducts, transmits sound and often shows slight posterior enhancement; a cyst transmits sound completely.<br> <b>Why the margins are graded</b>: the BI-RADS lexicon ranks margin features by malignancy risk — circumscribed is the most benign; indistinct, angular, microlobulated, and spiculated progressively more suspicious. A non-parallel or taller-than-wide orientation adds to suspicion because tumor grows across tissue planes.<br> <b>Clinical context</b>: age over 50, a new firm, fixed lump, and a first-degree relative with breast cancer raise the pretest probability; the absence of trauma makes fat necrosis less likely.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Invasive ductal carcinoma (answer)</th><th>Fat necrosis (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td><b>No trauma</b>, older woman, new firm fixed mass</td><td>Prior trauma, surgery, or radiation in about half of cases</td></tr> <tr><td>Ultrasound</td><td>Irregular, hypoechoic, spiculated, posterior shadowing</td><td>Varies: oil cyst (anechoic, circumscribed) or irregular mass that can mimic cancer</td></tr> <tr><td>Course</td><td>Grows</td><td>Shrinks or calcifies over months</td></tr> </tbody></table> The images can be indistinguishable, which is why both go to biopsy; without a trauma history, carcinoma is far more likely.\n- 오답 이유:\n  - (A) An intraductal papilloma would be correct with bloody nipple discharge and a small solid mass within a dilated duct near the nipple.\n  - (C) A fibroadenoma would be correct in a young woman with an oval, circumscribed, parallel, homogeneous mass that does not cast a posterior shadow.\n  - (D) Fat necrosis would be favored after recent breast trauma or surgery, especially if the lesion were an anechoic oil cyst or regressed on follow-up.\n  - (E) A simple cyst would be correct if the lesion were round or oval, anechoic, with a thin wall and posterior acoustic enhancement.\n- 함정: Assuming a firm painless lump is benign because it is small and nontender — spiculated margins and shadowing are the ultrasound signs of invasive carcinoma.\n- 학습목표: 외상 병력이 없는 중년 여성의 만져지는 유방 종괴가 초음파에서 불규칙 모양·각지고 침상인 경계·뒤쪽 그림자를 보이면 침윤성 유방암을 가장 먼저 생각하고 섬유선종·지방괴사와 구별한다\n- 근거·출처: American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound — masses: shape, margin, posterior features · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — evaluation of a breast mass · 작성자 판독(2026-10-23): 불규칙 저에코 종괴, 각지고 침상인 경계, 뒤쪽 음향 그림자(생검 확인 침윤성 유방암 NST)\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case007 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ultrasound shows an irregular, hypoechoic solid mass with angular and spiculated margins and posterior acoustic shadowing. These are the features most predictive of malignancy (BI-RADS 5). In a 52-year-old woman with a new, firm, fixed mass and no trauma, the most likely diagnosis is invasive ductal carcinoma (invasive carcinoma of no special type); core needle biopsy would confirm it."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why cancer looks irregular and spiculated</b>: invasive carcinoma grows by sending cords of tumor cells into the surrounding fat and provoking a desmoplastic (fibrous) stroma. Those radiating extensions are the spicules, and the uneven growth makes the outline angular rather than smooth.<br> <b>Why it casts a shadow</b>: dense collagen in the desmoplastic stroma absorbs and scatters the sound beam, so less echo returns from behind the mass — posterior acoustic shadowing. A fibroadenoma, made of loose stroma and ducts, transmits sound and often shows slight posterior enhancement; a cyst transmits sound completely.<br> <b>Why the margins are graded</b>: the BI-RADS lexicon ranks margin features by malignancy risk — circumscribed is the most benign; indistinct, angular, microlobulated, and spiculated progressively more suspicious. A non-parallel or taller-than-wide orientation adds to suspicion because tumor grows across tissue planes.<br> <b>Clinical context</b>: age over 50, a new firm, fixed lump, and a first-degree relative with breast cancer raise the pretest probability; the absence of trauma makes fat necrosis less likely."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Invasive ductal carcinoma (answer)</th><th>Fat necrosis (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td><b>No trauma</b>, older woman, new firm fixed mass</td><td>Prior trauma, surgery, or radiation in about half of cases</td></tr> <tr><td>Ultrasound</td><td>Irregular, hypoechoic, spiculated, posterior shadowing</td><td>Varies: oil cyst (anechoic, circumscribed) or irregular mass that can mimic cancer</td></tr> <tr><td>Course</td><td>Grows</td><td>Shrinks or calcifies over months</td></tr> </tbody></table> The images can be indistinguishable, which is why both go to biopsy; without a trauma history, carcinoma is far more likely."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) An intraductal papilloma would be correct with bloody nipple discharge and a small solid mass within a dilated duct near the nipple.\n(C) A fibroadenoma would be correct in a young woman with an oval, circumscribed, parallel, homogeneous mass that does not cast a posterior shadow.\n(D) Fat necrosis would be favored after recent breast trauma or surgery, especially if the lesion were an anechoic oil cyst or regressed on follow-up.\n(E) A simple cyst would be correct if the lesion were round or oval, anechoic, with a thin wall and posterior acoustic enhancement."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming a firm painless lump is benign because it is small and nontender — spiculated margins and shadowing are the ultrasound signs of invasive carcinoma."
+   },
+   {
+    "k": "학습목표",
+    "v": "외상 병력이 없는 중년 여성의 만져지는 유방 종괴가 초음파에서 불규칙 모양·각지고 침상인 경계·뒤쪽 그림자를 보이면 침윤성 유방암을 가장 먼저 생각하고 섬유선종·지방괴사와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound — masses: shape, margin, posterior features · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — evaluation of a breast mass · 작성자 판독(2026-10-23): 불규칙 저에코 종괴, 각지고 침상인 경계, 뒤쪽 음향 그림자(생검 확인 침윤성 유방암 NST) ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case007 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "외상 없이 새로 만져진 단단하고 고정된 종괴가 초음파에서 불규칙·침상 경계와 뒤쪽 그림자를 보이므로 침윤성 유방암이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "외상 병력이 없다 — 같은 모양이라도 지방괴사보다 암이 훨씬 흔하다",
+   "steps": 2,
+   "chain": [
+    "영상: 불규칙 저에코 고형 종괴 + 각지고 침상인 경계 + 뒤쪽 그림자 → BI-RADS 5 소견",
+    "52세 + 외상 없음 + 단단하고 고정된 종괴 → 침윤성 관암종"
+   ],
+   "key": [
+    {
+     "item": "영상: 불규칙한 저에코 종괴, 침상 경계, 뒤쪽 음향 그림자",
+     "why": "악성 예측도가 가장 높은 소견",
+     "also": []
+    },
+    {
+     "item": "poorly mobile mass",
+     "why": "주변 조직 침윤",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has had no breast trauma, surgery",
+     "why": "지방괴사 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "nipple discharge",
+     "why": "분비물이 없어 관내 유두종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Her mother was diagnosed with breast cancer at the age of 71 years",
+     "why": "위험을 약간 높이지만 진단을 정하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "there is no axillary lymphadenopathy",
+     "why": "병기 정보 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "외상 없는 52세 여성에게 새로 만져진 단단하고 고정된 종괴가 초음파에서 불규칙 저에코·침상 경계·뒤쪽 그림자를 보인다. 섬유선종·지방괴사가 아니라 침윤성 관암종이 가장 가능성이 높고 중심부 바늘생검으로 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "2개월 전 안전벨트 타박이나 유방 수술 뒤에 생긴 종괴로 초음파가 무에코 기름 낭종이었다면 지방괴사를 먼저 생각한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0413.png",
+   "caption": "Gray-scale breast ultrasound, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or adjustment)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case007",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case007"
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0412",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "부인과 — 폐경 후 출혈과 난소 고형 종괴의 조직과 추적 표지자",
+  "type": "부인과 — 폐경 후 출혈과 난소 고형 종괴의 조직과 추적 표지자",
+  "modality": "HISTOLOGY",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-22",
+  "vignette": "65세 여자가 3개월 전부터 반복되는 질 출혈로 병원에 왔다. 15년 전 폐경되었고 호르몬 치료를 받은 적이 없다. 혈압 132/80 mmHg이다. 골반 진찰에서 오른쪽 부속기에 단단한 종괴가 만져진다. 질초음파에서 자궁내막 두께는 14 mm이고 오른쪽 난소에 9 cm 고형 종괴가 있다. 자궁내막 생검에서 자궁내막모양 선암이 나왔다. 전자궁절제술과 양쪽 부속기절제술로 떼어 낸 난소 종괴의 조직 절편(H&E 염색) 사진은 그림과 같다.",
+  "question": "수술 뒤 재발 감시에 가장 유용한 혈청 표지자는?",
+  "options": [
+   "인히빈 B",
+   "CA-125",
+   "α-태아단백",
+   "β-hCG",
+   "암배아항원"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 작고 균일한 세포가 판상으로 빽빽이 자라고, 호산성 물질을 둘러싼 작은 소포 모양 배열(Call-Exner 소체)과 커피콩처럼 홈이 팬 핵이 보인다 — 성인형 과립막세포종이다. 종양이 에스트로겐을 만들어 폐경 후 출혈과 자궁내막 증식·선암을 일으켰다. 과립막세포는 인히빈을 분비하므로 수술 뒤 재발 감시에는 혈청 인히빈 B(와 항뮐러관호르몬)를 본다.\n- 원리: <b>과립막세포가 하는 일</b>: 정상 난포에서 과립막세포는 난포막세포가 만든 안드로겐을 아로마타제로 에스트라디올로 바꾸고, FSH 를 억제하는 인히빈과 항뮐러관호르몬(AMH)을 분비한다. 종양이 된 과립막세포도 이 기능을 그대로 가진다.<br> <b>그래서 생기는 임상상</b>: 폐경 뒤에는 에스트로겐 공급원이 거의 없는데 종양이 에스트로겐을 계속 만들면 맞서는 프로게스테론 없이 자궁내막이 자극되어 증식증·자궁내막모양 선암이 생기고 출혈이 난다. 사춘기 전 아이라면 성조숙증으로 나타난다.<br> <b>조직에서 보는 것</b>: 작고 균일한 세포의 판상·소주상 성장, 호산성 기저막 물질을 둘러싼 장미꽃 모양의 Call-Exner 소체, 세로로 홈이 팬 「커피콩」 핵. 분자적으로는 FOXL2 돌연변이가 특징이다.<br> <b>왜 표지자가 중요한가</b>: 이 종양은 수술 뒤 10~20 년이 지나서도 재발할 수 있어 오래 추적해야 하고, 종양이 분비하는 인히빈·AMH 가 영상보다 먼저 오른다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">인히빈 B(정답)</th><th>CA-125(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나오는 곳</td><td><b>과립막세포</b>(성끈-간질 종양)</td><td>체강 상피 유래 — 장액성 상피성 난소암</td></tr> <tr><td>과립막세포종에서</td><td>대부분 상승, 재발 때 먼저 오른다</td><td>대개 정상 — 감시에 쓸모가 적다</td></tr> <tr><td>위양성</td><td>가임기 여성의 정상 주기</td><td>자궁내막증·골반염·월경·복수</td></tr> </tbody></table> 「난소암 = CA-125」 로 외우면 틀린다. 종양이 어느 세포에서 왔는지가 표지자를 정한다 — 상피는 CA-125, 생식세포는 AFP·hCG·LDH, 성끈-간질은 인히빈.\n- 오답 이유:\n  - ② CA-125 는 고등급 장액성 암처럼 상피성 난소암의 치료 반응과 재발 감시에 쓸 때 정답이 된다.\n  - ③ α-태아단백은 난황낭종(내배엽동종양)처럼 젊은 여성의 생식세포 종양을 추적할 때 정답이 된다.\n  - ④ β-hCG 는 융모막암종이나 hCG 를 분비하는 생식세포 종양, 임신성 융모성 질환을 추적할 때 정답이 된다.\n  - ⑤ 암배아항원은 점액성 난소 종양이나 위장관에서 난소로 전이한 Krukenberg 종양을 추적할 때 정답이 된다.\n- 함정: 난소 종양이라 습관적으로 CA-125 를 고르는 것 — 에스트로겐 증상을 내는 과립막세포종은 인히빈을 분비한다.\n- 학습목표: 난소 종괴 조직에서 Call-Exner 소체와 핵 홈이 있는 균일한 세포의 판상 성장을 성인형 과립막세포종으로 읽고, 재발 감시 표지자로 인히빈을 고른다\n- 근거·출처: Kurman RJ, et al. WHO Classification of Tumours of Female Reproductive Organs, 5th ed. Sex cord-stromal tumours — adult granulosa cell tumour · Berek JS, Novak's Gynecology, 16th ed. Ch. Ovarian, Fallopian Tube, and Peritoneal Cancer — sex cord-stromal tumors · 작성자 판독(2026-10-23): 난소 종괴 H&E, 균일한 작은 세포의 판상 성장, Call-Exner 소체(검은 화살표)·핵 홈(주황 화살표)\n\n## 출처\n- A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 8 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "작고 균일한 세포가 판상으로 빽빽이 자라고, 호산성 물질을 둘러싼 작은 소포 모양 배열(Call-Exner 소체)과 커피콩처럼 홈이 팬 핵이 보인다 — 성인형 과립막세포종이다. 종양이 에스트로겐을 만들어 폐경 후 출혈과 자궁내막 증식·선암을 일으켰다. 과립막세포는 인히빈을 분비하므로 수술 뒤 재발 감시에는 혈청 인히빈 B(와 항뮐러관호르몬)를 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>과립막세포가 하는 일</b>: 정상 난포에서 과립막세포는 난포막세포가 만든 안드로겐을 아로마타제로 에스트라디올로 바꾸고, FSH 를 억제하는 인히빈과 항뮐러관호르몬(AMH)을 분비한다. 종양이 된 과립막세포도 이 기능을 그대로 가진다.<br> <b>그래서 생기는 임상상</b>: 폐경 뒤에는 에스트로겐 공급원이 거의 없는데 종양이 에스트로겐을 계속 만들면 맞서는 프로게스테론 없이 자궁내막이 자극되어 증식증·자궁내막모양 선암이 생기고 출혈이 난다. 사춘기 전 아이라면 성조숙증으로 나타난다.<br> <b>조직에서 보는 것</b>: 작고 균일한 세포의 판상·소주상 성장, 호산성 기저막 물질을 둘러싼 장미꽃 모양의 Call-Exner 소체, 세로로 홈이 팬 「커피콩」 핵. 분자적으로는 FOXL2 돌연변이가 특징이다.<br> <b>왜 표지자가 중요한가</b>: 이 종양은 수술 뒤 10~20 년이 지나서도 재발할 수 있어 오래 추적해야 하고, 종양이 분비하는 인히빈·AMH 가 영상보다 먼저 오른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">인히빈 B(정답)</th><th>CA-125(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나오는 곳</td><td><b>과립막세포</b>(성끈-간질 종양)</td><td>체강 상피 유래 — 장액성 상피성 난소암</td></tr> <tr><td>과립막세포종에서</td><td>대부분 상승, 재발 때 먼저 오른다</td><td>대개 정상 — 감시에 쓸모가 적다</td></tr> <tr><td>위양성</td><td>가임기 여성의 정상 주기</td><td>자궁내막증·골반염·월경·복수</td></tr> </tbody></table> 「난소암 = CA-125」 로 외우면 틀린다. 종양이 어느 세포에서 왔는지가 표지자를 정한다 — 상피는 CA-125, 생식세포는 AFP·hCG·LDH, 성끈-간질은 인히빈."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② CA-125 는 고등급 장액성 암처럼 상피성 난소암의 치료 반응과 재발 감시에 쓸 때 정답이 된다.\n③ α-태아단백은 난황낭종(내배엽동종양)처럼 젊은 여성의 생식세포 종양을 추적할 때 정답이 된다.\n④ β-hCG 는 융모막암종이나 hCG 를 분비하는 생식세포 종양, 임신성 융모성 질환을 추적할 때 정답이 된다.\n⑤ 암배아항원은 점액성 난소 종양이나 위장관에서 난소로 전이한 Krukenberg 종양을 추적할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "난소 종양이라 습관적으로 CA-125 를 고르는 것 — 에스트로겐 증상을 내는 과립막세포종은 인히빈을 분비한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "난소 종괴 조직에서 Call-Exner 소체와 핵 홈이 있는 균일한 세포의 판상 성장을 성인형 과립막세포종으로 읽고, 재발 감시 표지자로 인히빈을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kurman RJ, et al. WHO Classification of Tumours of Female Reproductive Organs, 5th ed. Sex cord-stromal tumours — adult granulosa cell tumour · Berek JS, Novak's Gynecology, 16th ed. Ch. Ovarian, Fallopian Tube, and Peritoneal Cancer — sex cord-stromal tumors · 작성자 판독(2026-10-23): 난소 종괴 H&E, 균일한 작은 세포의 판상 성장, Call-Exner 소체(검은 화살표)·핵 홈(주황 화살표) ## 출처 A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 8 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "폐경 후 출혈·자궁내막 선암과 난소 고형 종괴, 조직의 Call-Exner 소체·핵 홈으로 과립막세포종이므로 재발 감시 표지자는 인히빈이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "종양의 기원 세포 — 상피가 아니라 성끈-간질(과립막세포)",
+   "steps": 3,
+   "chain": [
+    "폐경 후 출혈 + 자궁내막 선암 + 난소 고형 종괴 → 에스트로겐 분비 종양",
+    "영상: Call-Exner 소체·핵 홈이 있는 균일한 세포의 판상 성장 → 성인형 과립막세포종",
+    "과립막세포는 인히빈을 분비 → 재발 감시는 인히빈 B"
+   ],
+   "key": [
+    {
+     "item": "영상: Call-Exner 소체와 홈이 팬 핵을 가진 균일한 세포의 판상 성장",
+     "why": "과립막세포종의 조직 소견",
+     "also": []
+    },
+    {
+     "item": "반복되는 질 출혈",
+     "why": "에스트로겐 과다의 결과",
+     "also": []
+    },
+    {
+     "item": "자궁내막 두께는 14 mm",
+     "why": "에스트로겐 자극",
+     "also": []
+    },
+    {
+     "item": "9 cm 고형 종괴",
+     "why": "고형 난소 종양 — 에스트로겐 공급원",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "호르몬 치료를 받은 적이 없다",
+     "why": "외인성 에스트로겐 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈압 132/80 mmHg",
+     "why": "판단에 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "폐경 15년 뒤 질 출혈·자궁내막 선암과 9 cm 고형 난소 종괴가 있고, 조직에 Call-Exner 소체와 핵 홈이 보여 에스트로겐을 내는 성인형 과립막세포종이다. 과립막세포가 분비하는 인히빈 B 가 재발 감시 표지자다.",
+   "switch": {
+    "choice": "B",
+    "condition": "조직이 유두 모양 구조와 사종체를 가진 고등급 장액성 암이었다면 CA-125 로 추적한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0412.png",
+   "caption": "H&E 염색 조직 절편, 화살표는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 보정 없음)",
+   "alt": "HISTOLOGY 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9721141/",
+   "asset_id": "PMC-PMC9721141_Figure8",
+   "text": "A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 8"
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0409",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "류마티스·근골격 — 외상 없이 생긴 목 통증과 척수병증의 경추 CT",
+  "type": "류마티스·근골격 — 외상 없이 생긴 목 통증과 척수병증의 경추 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-22",
+  "vignette": "A 52-year-old woman comes to the physician because of a 6-month history of neck pain radiating to the back of the head and intermittent tingling in both hands. She has had no trauma, fever, or weight loss. Her temperature is 36.7°C (98.1°F), pulse is 76/min, and blood pressure is 124/78 mm Hg. Examination shows mildly limited neck rotation. Deep tendon reflexes are brisk in the upper extremities, and the Hoffmann sign is present bilaterally. Muscle strength is normal. Erythrocyte sedimentation rate is 12 mm/h, and rheumatoid factor is negative. A sagittal CT image of the cervical spine is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Os odontoideum",
+   "Type II odontoid fracture",
+   "Rheumatoid atlantoaxial subluxation",
+   "Jefferson fracture of the atlas",
+   "Basilar invagination"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The CT shows a separate, rounded ossicle surrounded by smooth corticated bone near the anterior arch of C1, while the top of the C2 body is rounded and smooth and no normal dens is present. Smooth cortical margins on both sides of the gap mean a long-standing developmental or remote-post-traumatic separation — os odontoideum — rather than an acute fracture. The upper motor neuron signs reflect atlantoaxial instability compressing the cord.\n- 원리: <b>Why the margins matter</b>: bone that has just broken shows sharp, irregular, noncorticated edges that fit together like puzzle pieces. When a gap has existed for years, both sides remodel and grow a smooth cortical rim, the ossicle becomes rounded, and the base of the dens becomes a smooth dome — the appearance of os odontoideum.<br> <b>Why it causes myelopathy</b>: the transverse ligament holds the dens against the anterior arch of C1. In os odontoideum the ossicle moves with C1, but the body of C2 below is not attached to it, so C1 can slide forward or backward on C2. Repeated motion narrows the canal and can produce a retro-odontoid soft-tissue mass, giving neck pain, brisk reflexes, and a Hoffmann sign.<br> <b>Origin</b>: many cases are thought to follow an unrecognized childhood dens fracture with disrupted blood supply, others are developmental (and associated with Down syndrome or skeletal dysplasias).<br> <b>Management</b>: flexion-extension radiographs and MRI assess instability and cord compression; symptomatic or unstable cases are treated with C1-C2 posterior fusion.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Os odontoideum (answer)</th><th>Type II odontoid fracture (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td><b>No recent trauma</b>, months of symptoms</td><td>Recent fall or collision, acute pain</td></tr> <tr><td>Fragment</td><td>Round or oval, smooth cortex all around</td><td>Shape of the dens tip, sharp irregular edges</td></tr> <tr><td>Base of the dens</td><td>Smooth, rounded dome</td><td>Jagged fracture surface at the waist of the dens</td></tr> <tr><td>Gap</td><td>Often wide, above the level of the superior articular facets</td><td>Narrow line at the dens–body junction</td></tr> </tbody></table> Both can make C1-C2 unstable; the cortical rim tells chronic from acute.\n- 오답 이유:\n  - (B) A type II odontoid fracture would be correct after recent trauma in an older adult if the gap at the dens waist had sharp, noncorticated edges.\n  - (C) Rheumatoid atlantoaxial subluxation would be correct in long-standing seropositive rheumatoid arthritis with a widened atlantodental interval and an intact, eroded dens.\n  - (D) A Jefferson fracture would be correct after axial loading on the vertex, with breaks in the C1 ring and lateral masses spreading beyond C2 on an open-mouth view.\n  - (E) Basilar invagination would be correct if the tip of an intact dens projected above the line from the hard palate to the opisthion into the foramen magnum.\n- 함정: Calling any separated dens a type II fracture — smooth corticated margins and no trauma point to os odontoideum.\n- 학습목표: 외상 없이 상부 경추 통증·척수병증이 있는 성인의 시상 CT 에서 피질이 매끈한 둥근 소골과 둥근 C2 윗면을 os odontoideum 으로 읽고 II형 치돌기 골절과 구별한다\n- 근거·출처: Arvin B, Fournier-Gosselin MP, Fehlings MG. Os odontoideum: etiology and surgical management. Neurosurgery 2010;66(3 Suppl):22-31 · Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical Spine Fractures — odontoid fractures · 작성자 판독(2026-10-23): 정중 시상 경추 CT, 피질이 매끈한 둥근 소골과 둥근 C2 윗면, 정상 치돌기 없음\n\n## 출처\n- Os odontoideum associated with a retro-odontoid cyst treated with posterior C1–C3 fixation: A case report and literature review. Front Surg. 2023 Jan 6;9:1006167. doi: 10.3389/fsurg.2022.1006167 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a separate, rounded ossicle surrounded by smooth corticated bone near the anterior arch of C1, while the top of the C2 body is rounded and smooth and no normal dens is present. Smooth cortical margins on both sides of the gap mean a long-standing developmental or remote-post-traumatic separation — os odontoideum — rather than an acute fracture. The upper motor neuron signs reflect atlantoaxial instability compressing the cord."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the margins matter</b>: bone that has just broken shows sharp, irregular, noncorticated edges that fit together like puzzle pieces. When a gap has existed for years, both sides remodel and grow a smooth cortical rim, the ossicle becomes rounded, and the base of the dens becomes a smooth dome — the appearance of os odontoideum.<br> <b>Why it causes myelopathy</b>: the transverse ligament holds the dens against the anterior arch of C1. In os odontoideum the ossicle moves with C1, but the body of C2 below is not attached to it, so C1 can slide forward or backward on C2. Repeated motion narrows the canal and can produce a retro-odontoid soft-tissue mass, giving neck pain, brisk reflexes, and a Hoffmann sign.<br> <b>Origin</b>: many cases are thought to follow an unrecognized childhood dens fracture with disrupted blood supply, others are developmental (and associated with Down syndrome or skeletal dysplasias).<br> <b>Management</b>: flexion-extension radiographs and MRI assess instability and cord compression; symptomatic or unstable cases are treated with C1-C2 posterior fusion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Os odontoideum (answer)</th><th>Type II odontoid fracture (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td><b>No recent trauma</b>, months of symptoms</td><td>Recent fall or collision, acute pain</td></tr> <tr><td>Fragment</td><td>Round or oval, smooth cortex all around</td><td>Shape of the dens tip, sharp irregular edges</td></tr> <tr><td>Base of the dens</td><td>Smooth, rounded dome</td><td>Jagged fracture surface at the waist of the dens</td></tr> <tr><td>Gap</td><td>Often wide, above the level of the superior articular facets</td><td>Narrow line at the dens–body junction</td></tr> </tbody></table> Both can make C1-C2 unstable; the cortical rim tells chronic from acute."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A type II odontoid fracture would be correct after recent trauma in an older adult if the gap at the dens waist had sharp, noncorticated edges.\n(C) Rheumatoid atlantoaxial subluxation would be correct in long-standing seropositive rheumatoid arthritis with a widened atlantodental interval and an intact, eroded dens.\n(D) A Jefferson fracture would be correct after axial loading on the vertex, with breaks in the C1 ring and lateral masses spreading beyond C2 on an open-mouth view.\n(E) Basilar invagination would be correct if the tip of an intact dens projected above the line from the hard palate to the opisthion into the foramen magnum."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any separated dens a type II fracture — smooth corticated margins and no trauma point to os odontoideum."
+   },
+   {
+    "k": "학습목표",
+    "v": "외상 없이 상부 경추 통증·척수병증이 있는 성인의 시상 CT 에서 피질이 매끈한 둥근 소골과 둥근 C2 윗면을 os odontoideum 으로 읽고 II형 치돌기 골절과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Arvin B, Fournier-Gosselin MP, Fehlings MG. Os odontoideum: etiology and surgical management. Neurosurgery 2010;66(3 Suppl):22-31 · Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical Spine Fractures — odontoid fractures · 작성자 판독(2026-10-23): 정중 시상 경추 CT, 피질이 매끈한 둥근 소골과 둥근 C2 윗면, 정상 치돌기 없음 ## 출처 Os odontoideum associated with a retro-odontoid cyst treated with posterior C1–C3 fixation: A case report and literature review. Front Surg. 2023 Jan 6;9:1006167. doi: 10.3389/fsurg.2022.1006167 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "외상 없이 생긴 상부 경추 통증·척수병증 환자의 CT 에서 피질로 둘러싸인 둥근 소골과 매끈한 C2 윗면이 보이므로 os odontoideum 이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "양쪽 가장자리가 매끈한 피질 — 급성 골절이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 피질이 매끈한 둥근 소골 + 둥근 C2 윗면 + 정상 치돌기 없음 → 오래된 분리",
+    "외상 없음 + 상부운동신경원 징후 → os odontoideum 에 의한 환축추 불안정"
+   ],
+   "key": [
+    {
+     "item": "영상: 피질이 매끈한 둥근 소골과 둥근 C2 윗면",
+     "why": "만성 분리의 모양",
+     "also": []
+    },
+    {
+     "item": "She has had no trauma",
+     "why": "급성 골절 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Hoffmann sign is present bilaterally",
+     "why": "상부 경수 압박",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "rheumatoid factor is negative",
+     "why": "류마티스관절염의 환축추 아탈구 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Erythrocyte sedimentation rate is 12 mm/h",
+     "why": "염증·감염 원인의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Muscle strength is normal",
+     "why": "중증도 정보 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "외상 없이 6개월간 목 통증과 상지 반사 항진이 있는 여성의 경추 CT 에 피질이 매끈한 둥근 소골과 매끈한 C2 윗면이 보인다. 급성 II형 치돌기 골절이 아니라 os odontoideum 이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "최근 넘어진 노인에서 치돌기 허리에 날카롭고 피질이 없는 골절선이 보이면 II형 치돌기 골절이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0409.jpg",
+   "caption": "Midsagittal CT reconstruction of the cervical spine; the asterisk is the authors' original marker — single published case figure, unaltered (PMC Open Access Subset, CC BY)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9852344/",
+   "asset_id": "PMC-PMC9852344_Figure2",
+   "text": "Os odontoideum associated with a retro-odontoid cyst treated with posterior C1–C3 fixation: A case report and literature review. Front Surg. 2023 Jan 6;9:1006167. doi: 10.3389/fsurg.2022.1006167 (CC BY) — Figure 2"
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0408",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "응급·중환자·외상 — 교통사고 뒤 목 통증과 측면 경추 X선",
+  "type": "응급·중환자·외상 — 교통사고 뒤 목 통증과 측면 경추 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-22",
+  "vignette": "54세 남자가 승용차를 운전하다 앞차를 들이받으며 이마를 앞유리에 부딪친 뒤 목 통증으로 응급실에 실려 왔다. 구급대원이 경추 보조기와 척추 고정판으로 고정해 왔다. 혈압 138/84 mmHg, 맥박 92회/분, 호흡 18회/분이다. 의식은 명료하고 이마에 찰과상이 있으며 뒤목 정중선에 압통이 있다. 사지 근력과 감각, 항문 괄약근 긴장도는 정상이다. 경추 측면 단순 X선 사진은 그림과 같다.",
+  "question": "가장 적절한 다음 처치는?",
+  "options": [
+   "고용량 메틸프레드니솔론을 정맥 투여한다",
+   "영상 추가 없이 응급 후방 고정술을 한다",
+   "경추 고정을 유지하고 경추 CT를 시행한다",
+   "보조기를 벗기고 굴곡·신전 X선을 찍는다",
+   "보조기를 벗기고 진통제를 주어 귀가시킨다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 측면 X선에서 C2 몸통이 C3 위로 앞쪽으로 밀리고 C2-3 사이가 각지게 꺾여 있으며 C2 몸통 뒤 신경궁에 단절이 보인다 — 이마를 부딪친 과신전·축성 부하로 생긴 C2 외상성 척추전방전위증(Hangman 골절)이다. 신경 결손이 없어도 불안정 손상이므로 고정을 유지한 채 경추 CT 로 골절선·전위 정도와 척추동맥 경로(횡돌기공)를 평가한 뒤 치료를 정한다.\n- 원리: <b>왜 C2 가 앞으로 밀리는가</b>: 이마가 부딪치면 머리가 뒤로 젖혀지며(과신전) 위에서 아래로 힘이 실린다. 그 힘이 C2 의 가장 가는 부분인 양쪽 관절간부(신경궁)에 모여 부러지면, 몸통은 앞쪽 C3 위로 미끄러지고 뒤쪽 요소는 제자리에 남는다.<br> <b>왜 신경 손상이 드문가</b>: 몸통과 뒤쪽 고리가 서로 벌어지며 오히려 척주관이 넓어지기 때문이다. 그래서 신경 진찰이 정상이어도 불안정성은 남는다.<br> <b>왜 CT 가 다음인가</b>: 단순 X선은 골절선 일부만 보이고 C1·후두-경추 이음부나 다른 높이의 동반 골절을 놓친다. CT 로 Levine-Edwards 분류(전위·각형성 정도)를 정하고 횡돌기공을 지나는 골절이면 CT 혈관조영으로 척추동맥 손상을 확인한다. 전위·각형성이 크거나 C2-3 디스크가 찢어진 형(II형 이상)은 수술·halo 고정을 검토한다.<br> <b>금기</b>: 불안정 손상이 보이는 환자를 움직여 굴곡·신전 촬영하는 것은 척수를 다치게 할 수 있다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고정 유지 + 경추 CT(정답)</th><th>굴곡·신전 X선(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>쓰는 때</td><td><b>X선·임상에서 골절·전위가 보이거나 의심될 때</b></td><td>CT 가 정상인데 인대 손상이 의심되는 의식 있는 환자(현재는 MRI 가 대체)</td></tr> <tr><td>위험</td><td>방사선 노출 외에 거의 없다</td><td>불안정 골절에서 전위를 키워 척수 손상</td></tr> <tr><td>얻는 정보</td><td>골절선·분류·횡돌기공 침범</td><td>움직일 때의 이동 정도뿐</td></tr> </tbody></table> 동적 촬영은 「골절이 없다」가 확인된 뒤의 검사다. 사진에서 이미 전위가 보이면 고정을 풀지 않는다.\n- 오답 이유:\n  - ① 고용량 메틸프레드니솔론은 이득보다 감염·위장관 출혈 위험이 커 급성 척수 손상에서도 일상적으로 권고되지 않는다.\n  - ② 응급 수술은 진행하는 신경 결손이나 정복되지 않는 탈구가 있을 때 고려하지만, 그때도 CT 로 골절 형태를 확인한 뒤 계획한다.\n  - ④ 굴곡·신전 X선은 CT 에 골절이 없는데도 목 통증이 남아 인대 손상을 확인해야 하는 신경학적으로 정상인 환자에서나 고려된다.\n  - ⑤ 귀가는 NEXUS·캐나다 경추 규칙상 영상이 필요 없거나 CT 가 정상이고 정중선 압통이 없는 환자에서 정답이 된다.\n- 함정: 신경 진찰이 정상이라 안정 손상으로 보고 보조기를 벗겨 동적 촬영을 하는 것 — C2 전위가 보이면 고정을 유지한 채 CT 다.\n- 학습목표: 둔상 환자의 측면 경추 X선에서 C2 몸통의 앞쪽 전위·각형성을 읽고, 불안정 손상이 보이면 고정을 유지한 채 CT 로 평가하며 굴곡·신전 촬영을 하지 않는다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Spine and Spinal Cord Trauma · Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical Spine Fractures — traumatic spondylolisthesis of the axis · 작성자 판독(2026-10-23): 측면 경추 X선, C2 몸통의 앞쪽 전위·C2-3 굴곡 각형성, C2 신경궁 투과성 단절\n\n## 출처\n- Postoperative Dysphagia Subsequent to Posterior Fixation of an Axis Fracture Without Cranial Fixation: A Case Report. Cureus. 2023 Mar 25;15(3):e36664. doi: 10.7759/cureus.36664 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "측면 X선에서 C2 몸통이 C3 위로 앞쪽으로 밀리고 C2-3 사이가 각지게 꺾여 있으며 C2 몸통 뒤 신경궁에 단절이 보인다 — 이마를 부딪친 과신전·축성 부하로 생긴 C2 외상성 척추전방전위증(Hangman 골절)이다. 신경 결손이 없어도 불안정 손상이므로 고정을 유지한 채 경추 CT 로 골절선·전위 정도와 척추동맥 경로(횡돌기공)를 평가한 뒤 치료를 정한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 C2 가 앞으로 밀리는가</b>: 이마가 부딪치면 머리가 뒤로 젖혀지며(과신전) 위에서 아래로 힘이 실린다. 그 힘이 C2 의 가장 가는 부분인 양쪽 관절간부(신경궁)에 모여 부러지면, 몸통은 앞쪽 C3 위로 미끄러지고 뒤쪽 요소는 제자리에 남는다.<br> <b>왜 신경 손상이 드문가</b>: 몸통과 뒤쪽 고리가 서로 벌어지며 오히려 척주관이 넓어지기 때문이다. 그래서 신경 진찰이 정상이어도 불안정성은 남는다.<br> <b>왜 CT 가 다음인가</b>: 단순 X선은 골절선 일부만 보이고 C1·후두-경추 이음부나 다른 높이의 동반 골절을 놓친다. CT 로 Levine-Edwards 분류(전위·각형성 정도)를 정하고 횡돌기공을 지나는 골절이면 CT 혈관조영으로 척추동맥 손상을 확인한다. 전위·각형성이 크거나 C2-3 디스크가 찢어진 형(II형 이상)은 수술·halo 고정을 검토한다.<br> <b>금기</b>: 불안정 손상이 보이는 환자를 움직여 굴곡·신전 촬영하는 것은 척수를 다치게 할 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고정 유지 + 경추 CT(정답)</th><th>굴곡·신전 X선(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>쓰는 때</td><td><b>X선·임상에서 골절·전위가 보이거나 의심될 때</b></td><td>CT 가 정상인데 인대 손상이 의심되는 의식 있는 환자(현재는 MRI 가 대체)</td></tr> <tr><td>위험</td><td>방사선 노출 외에 거의 없다</td><td>불안정 골절에서 전위를 키워 척수 손상</td></tr> <tr><td>얻는 정보</td><td>골절선·분류·횡돌기공 침범</td><td>움직일 때의 이동 정도뿐</td></tr> </tbody></table> 동적 촬영은 「골절이 없다」가 확인된 뒤의 검사다. 사진에서 이미 전위가 보이면 고정을 풀지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 고용량 메틸프레드니솔론은 이득보다 감염·위장관 출혈 위험이 커 급성 척수 손상에서도 일상적으로 권고되지 않는다.\n② 응급 수술은 진행하는 신경 결손이나 정복되지 않는 탈구가 있을 때 고려하지만, 그때도 CT 로 골절 형태를 확인한 뒤 계획한다.\n④ 굴곡·신전 X선은 CT 에 골절이 없는데도 목 통증이 남아 인대 손상을 확인해야 하는 신경학적으로 정상인 환자에서나 고려된다.\n⑤ 귀가는 NEXUS·캐나다 경추 규칙상 영상이 필요 없거나 CT 가 정상이고 정중선 압통이 없는 환자에서 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "신경 진찰이 정상이라 안정 손상으로 보고 보조기를 벗겨 동적 촬영을 하는 것 — C2 전위가 보이면 고정을 유지한 채 CT 다."
+   },
+   {
+    "k": "학습목표",
+    "v": "둔상 환자의 측면 경추 X선에서 C2 몸통의 앞쪽 전위·각형성을 읽고, 불안정 손상이 보이면 고정을 유지한 채 CT 로 평가하며 굴곡·신전 촬영을 하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Spine and Spinal Cord Trauma · Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical Spine Fractures — traumatic spondylolisthesis of the axis · 작성자 판독(2026-10-23): 측면 경추 X선, C2 몸통의 앞쪽 전위·C2-3 굴곡 각형성, C2 신경궁 투과성 단절 ## 출처 Postoperative Dysphagia Subsequent to Posterior Fixation of an Axis Fracture Without Cranial Fixation: A Case Report. Cureus. 2023 Mar 25;15(3):e36664. doi: 10.7759/cureus.36664 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "측면 X선에서 C2 몸통이 앞으로 밀리고 각형성된 불안정 손상이 보이므로 경추 고정을 유지하고 CT 로 평가한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "X선에서 이미 전위가 보인다 — 동적 촬영은 골절이 없을 때의 검사",
+   "steps": 2,
+   "chain": [
+    "영상: C2 몸통의 앞쪽 전위·C2-3 각형성·신경궁 단절 → C2 외상성 척추전방전위증",
+    "불안정 손상 + 신경 결손 없음 → 고정 유지 + 경추 CT"
+   ],
+   "key": [
+    {
+     "item": "영상: C2 몸통이 C3 위로 앞쪽으로 밀리고 C2-3 사이가 각지게 꺾임",
+     "why": "불안정 C2 손상",
+     "also": []
+    },
+    {
+     "item": "이마를 앞유리에 부딪친",
+     "why": "과신전 기전",
+     "also": []
+    },
+    {
+     "item": "뒤목 정중선에 압통",
+     "why": "경추 영상의 적응증",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "사지 근력과 감각, 항문 괄약근 긴장도는 정상",
+     "why": "신경 결손이 없어 응급 감압 수술 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "의식은 명료",
+     "why": "평가에 협조 가능 — 처치 순서를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "이마를 부딪친 운전자의 측면 경추 X선에서 C2 몸통이 C3 위로 앞쪽으로 밀리고 각형성되어 불안정 C2 손상이다. 신경 결손이 없어도 고정을 유지한 채 CT 로 골절을 평가하며, 굴곡·신전 촬영은 금기다.",
+   "switch": {
+    "choice": "D",
+    "condition": "CT 에 골절이 없는데도 목 통증이 남는 신경학적으로 정상인 환자라면 굴곡·신전 X선(또는 MRI)을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0408.png",
+   "caption": "경추 측면 단순 X선 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 자르기·보정 없음)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10124316/",
+   "asset_id": "PMC-PMC10124316_Figure1_L",
+   "text": "Postoperative Dysphagia Subsequent to Posterior Fixation of an Axis Fracture Without Cranial Fixation: A Case Report. Cureus. 2023 Mar 25;15(3):e36664. doi: 10.7759/cureus.36664 (CC BY) — Figure 1"
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0417",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "정신 — 티아지드·NSAID 추가 뒤 생긴 만성 리튬 중독",
+  "type": "정신 — 티아지드·NSAID 추가 뒤 생긴 만성 리튬 중독",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-22",
+  "vignette": "A 46-year-old man with bipolar I disorder is brought to the emergency department by his wife because of 2 days of worsening confusion, slurred speech, and diarrhea. He has taken lithium carbonate 900 mg daily for 6 years, with stable serum lithium concentrations of 0.7 to 0.9 mEq/L. Three weeks ago, hydrochlorothiazide was started for hypertension, and 5 days ago he began taking ibuprofen for back pain. His temperature is 37.1°C (98.8°F), pulse is 64/min, and blood pressure is 128/80 mm Hg. He is disoriented to time and place. There is a coarse tremor of both hands and multifocal myoclonus. Serum sodium is 136 mEq/L, creatinine is 2.4 mg/dL (baseline 1.0 mg/dL), and lithium is 4.1 mEq/L. An ECG shows sinus rhythm with flattened T waves. Lithium, hydrochlorothiazide, and ibuprofen are discontinued, and intravenous 0.9% saline is started.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Saline alone with a repeat lithium level in 6 hours",
+   "Hemodialysis",
+   "Activated charcoal by nasogastric tube",
+   "Whole-bowel irrigation with polyethylene glycol",
+   "Oral sodium polystyrene sulfonate"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Hydrochlorothiazide and ibuprofen lowered renal lithium clearance and precipitated acute kidney injury, producing chronic lithium toxicity with a level of 4.1 mEq/L, confusion, and myoclonus. Because lithium is a small, unbound, water-soluble ion, it is efficiently removed by hemodialysis, which is recommended when the level exceeds 4.0 mEq/L with impaired kidney function or when there is a decreased level of consciousness.\n- 원리: <b>How the kidney handles lithium</b>: lithium is filtered freely and about 80% is reabsorbed in the proximal tubule along with sodium. Anything that makes the proximal tubule avidly reclaim sodium — volume depletion, thiazides (which cause mild volume contraction), or reduced GFR — increases lithium reabsorption. NSAIDs reduce renal prostaglandins and GFR, and ACE inhibitors act similarly.<br> <b>Why chronic toxicity is worse at a given level</b>: in chronic poisoning, lithium has already distributed into the brain, so neurologic toxicity (confusion, myoclonus, seizures) appears at lower serum levels and persists longer than in an acute overdose, where the serum level is high but the brain is not yet loaded.<br> <b>Why dialysis works</b>: lithium has a low molecular weight, no protein binding, and a small volume of distribution, so dialysis clears it several times faster than even normal kidneys. The EXTRIP workgroup recommends it for a level above 4.0 mEq/L with impaired kidney function, or for decreased consciousness, seizures, or dysrhythmias regardless of level.<br> <b>Why charcoal does not help</b>: lithium, like other metals and alcohols, does not bind activated charcoal.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hemodialysis (answer)</th><th>Saline alone (closest distractor)</th></tr></thead><tbody> <tr><td>Lithium level</td><td><b>&gt; 4.0 mEq/L with impaired kidneys</b></td><td>Mildly elevated (e.g., 1.5–2.5 mEq/L)</td></tr> <tr><td>Kidney function</td><td>Creatinine 2.4 (acute kidney injury)</td><td>Normal or rapidly recovering</td></tr> <tr><td>Neurologic state</td><td>Confusion, myoclonus</td><td>Tremor only, alert</td></tr> </tbody></table> Saline restores sodium and GFR so the kidney can excrete lithium, but with creatinine more than doubled and the brain already affected, clearance is too slow; dialysis removes it directly.\n- 오답 이유:\n  - (A) Saline alone would be correct for mild chronic toxicity with a lower level, preserved kidney function, and only a tremor, with frequent repeat levels.\n  - (C) Activated charcoal would be appropriate for a recent co-ingestion of a drug that it binds, such as a tricyclic antidepressant; lithium is not adsorbed.\n  - (D) Whole-bowel irrigation would be correct after an acute ingestion of sustained-release lithium tablets; in chronic toxicity there is no drug left in the gut.\n  - (E) Sodium polystyrene sulfonate binds lithium modestly in experiments but causes hypokalemia and bowel injury and is not a recommended therapy.\n- 함정: Choosing saline alone because the level might fall with hydration — a level above 4.0 mEq/L with acute kidney injury and encephalopathy needs dialysis.\n- 학습목표: 티아지드·NSAID 추가로 리튬 제거가 줄어 생긴 만성 리튬 중독에서 신기능 저하와 신경 증상이 있고 농도가 4.0 mEq/L 을 넘으면 혈액투석을 고른다\n- 근거·출처: Decker BS, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875-887 · Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Lithium",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Hydrochlorothiazide and ibuprofen lowered renal lithium clearance and precipitated acute kidney injury, producing chronic lithium toxicity with a level of 4.1 mEq/L, confusion, and myoclonus. Because lithium is a small, unbound, water-soluble ion, it is efficiently removed by hemodialysis, which is recommended when the level exceeds 4.0 mEq/L with impaired kidney function or when there is a decreased level of consciousness."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How the kidney handles lithium</b>: lithium is filtered freely and about 80% is reabsorbed in the proximal tubule along with sodium. Anything that makes the proximal tubule avidly reclaim sodium — volume depletion, thiazides (which cause mild volume contraction), or reduced GFR — increases lithium reabsorption. NSAIDs reduce renal prostaglandins and GFR, and ACE inhibitors act similarly.<br> <b>Why chronic toxicity is worse at a given level</b>: in chronic poisoning, lithium has already distributed into the brain, so neurologic toxicity (confusion, myoclonus, seizures) appears at lower serum levels and persists longer than in an acute overdose, where the serum level is high but the brain is not yet loaded.<br> <b>Why dialysis works</b>: lithium has a low molecular weight, no protein binding, and a small volume of distribution, so dialysis clears it several times faster than even normal kidneys. The EXTRIP workgroup recommends it for a level above 4.0 mEq/L with impaired kidney function, or for decreased consciousness, seizures, or dysrhythmias regardless of level.<br> <b>Why charcoal does not help</b>: lithium, like other metals and alcohols, does not bind activated charcoal."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hemodialysis (answer)</th><th>Saline alone (closest distractor)</th></tr></thead><tbody> <tr><td>Lithium level</td><td><b>&gt; 4.0 mEq/L with impaired kidneys</b></td><td>Mildly elevated (e.g., 1.5–2.5 mEq/L)</td></tr> <tr><td>Kidney function</td><td>Creatinine 2.4 (acute kidney injury)</td><td>Normal or rapidly recovering</td></tr> <tr><td>Neurologic state</td><td>Confusion, myoclonus</td><td>Tremor only, alert</td></tr> </tbody></table> Saline restores sodium and GFR so the kidney can excrete lithium, but with creatinine more than doubled and the brain already affected, clearance is too slow; dialysis removes it directly."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Saline alone would be correct for mild chronic toxicity with a lower level, preserved kidney function, and only a tremor, with frequent repeat levels.\n(C) Activated charcoal would be appropriate for a recent co-ingestion of a drug that it binds, such as a tricyclic antidepressant; lithium is not adsorbed.\n(D) Whole-bowel irrigation would be correct after an acute ingestion of sustained-release lithium tablets; in chronic toxicity there is no drug left in the gut.\n(E) Sodium polystyrene sulfonate binds lithium modestly in experiments but causes hypokalemia and bowel injury and is not a recommended therapy."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing saline alone because the level might fall with hydration — a level above 4.0 mEq/L with acute kidney injury and encephalopathy needs dialysis."
+   },
+   {
+    "k": "학습목표",
+    "v": "티아지드·NSAID 추가로 리튬 제거가 줄어 생긴 만성 리튬 중독에서 신기능 저하와 신경 증상이 있고 농도가 4.0 mEq/L 을 넘으면 혈액투석을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Decker BS, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875-887 · Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Lithium"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "티아지드·NSAID 추가로 급성 신손상이 생긴 만성 리튬 중독이고 농도 4.1 mEq/L·의식 혼란이 있으므로 혈액투석을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "크레아티닌이 두 배 넘게 오르고 신경 증상이 있다 — 수액만으로는 제거가 너무 느리다",
+   "steps": 3,
+   "chain": [
+    "6년 안정 + 티아지드·이부프로펜 추가 → 근위 세관 리튬 재흡수 증가·GFR 감소",
+    "리튬 4.1 + 혼란·근간대경련 + 크레아티닌 2.4 → 신경 증상을 동반한 만성 리튬 중독",
+    "농도 > 4.0 + 신기능 저하(EXTRIP) → 혈액투석"
+   ],
+   "key": [
+    {
+     "item": "lithium is 4.1 mEq/L",
+     "why": "EXTRIP 기준을 넘는 농도",
+     "also": []
+    },
+    {
+     "item": "creatinine is 2.4 mg/dL (baseline 1.0 mg/dL)",
+     "why": "신장 제거 저하",
+     "also": []
+    },
+    {
+     "item": "multifocal myoclonus",
+     "why": "중추신경 독성",
+     "also": []
+    },
+    {
+     "item": "Three weeks ago, hydrochlorothiazide was started",
+     "why": "리튬 재흡수 증가의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum sodium is 136 mEq/L",
+     "why": "저나트륨혈증에 의한 혼란 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "flattened T waves",
+     "why": "리튬의 흔한 양성 심전도 변화 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "6년간 안정적이던 리튬 복용자가 티아지드·이부프로펜 추가 뒤 급성 신손상과 리튬 4.1 mEq/L, 혼란·근간대경련을 보인다. 신기능 저하와 함께 4.0 을 넘는 농도이므로 혈액투석을 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "리튬 농도가 2.0 mEq/L 이고 크레아티닌이 정상이며 손 떨림만 있다면 생리식염수와 반복 농도 측정으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0416",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "예방의학·역학 — 유병률이 다른 두 지역의 양성예측도",
+  "type": "예방의학·역학 — 유병률이 다른 두 지역의 양성예측도",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-22",
+  "vignette": "보건소에 근무하는 40세 여자 의사가 새 선별검사를 두 지역에 도입하려 한다. 이 검사의 민감도는 90%, 특이도는 95%로 두 지역에서 같다. 선별 대상자의 질병 유병률은 A 지역이 10%, B 지역이 1%이다. 두 지역 모두 대상자는 각각 10,000명이며 검사 비용과 확진 검사 방법도 같다.",
+  "question": "B 지역에서 검사 양성으로 나온 사람이 실제로 질병을 가지고 있을 확률(양성예측도)에 가장 가까운 값은?",
+  "options": [
+   "약 67%",
+   "약 90%",
+   "약 95%",
+   "약 99%",
+   "약 15%"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: B 지역 10,000명 중 환자는 100명이고 진양성은 100 × 0.90 = 90명이다. 비환자 9,900명 중 위양성은 9,900 × 0.05 = 495명이다. 양성예측도 = 90 ÷ (90 + 495) = 90 ÷ 585 ≈ 15%다. 같은 검사라도 유병률 10%인 A 지역에서는 900 ÷ (900 + 450) ≈ 67%다.\n- 원리: <b>왜 유병률이 양성예측도를 바꾸는가</b>: 민감도·특이도는 이미 질병 상태를 아는 사람들 안에서 정의된 검사의 성질이라 집단이 바뀌어도 거의 그대로다. 그러나 양성예측도는 「양성 결과를 받은 사람」을 분모로 삼는다. 이 분모에는 환자에게서 나온 진양성과 비환자에게서 나온 위양성이 섞인다.<br> <b>위양성이 지배하는 구조</b>: 유병률이 낮으면 비환자가 압도적으로 많아, 특이도 95%라도 5% 의 위양성이 큰 수(495명)가 되어 적은 진양성(90명)을 덮어 버린다. 그래서 드문 질병의 일반 인구 선별에서는 양성의 대부분이 위양성이다.<br> <b>반대로 음성예측도</b>는 유병률이 낮을수록 높아진다(B 지역: 9,405 ÷ 9,415 ≈ 99.9%).<br> <b>실천적 의미</b>: 선별은 고위험군(유병률이 높은 집단)에 집중하거나, 양성자에게 특이도가 높은 2단계 확진 검사를 하도록 설계한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">지표</th><th style=\"width:39%\">B 지역(유병률 1 %) — 정답 계산</th><th>A 지역(유병률 10 %) — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>진양성</td><td>100 × 0.90 = 90</td><td>1,000 × 0.90 = 900</td></tr> <tr><td>위양성</td><td>9,900 × 0.05 = 495</td><td>9,000 × 0.05 = 450</td></tr> <tr><td>양성예측도</td><td><b>90 ÷ 585 ≈ 15 %</b></td><td>900 ÷ 1,350 ≈ 67 %</td></tr> </tbody></table> 위양성 수는 두 지역이 비슷한데 진양성이 10배 차이 나서 양성예측도가 갈린다. 물음이 어느 지역인지 먼저 확인한다.\n- 오답 이유:\n  - ① 약 67%는 유병률 10%인 A 지역의 양성예측도로, 물음이 A 지역을 물었다면 정답이 된다.\n  - ② 약 90%는 검사의 민감도로, 「환자 중 양성으로 나오는 비율」을 물었다면 정답이 된다.\n  - ③ 약 95%는 검사의 특이도로, 「비환자 중 음성으로 나오는 비율」을 물었다면 정답이 된다.\n  - ④ 약 99%는 B 지역의 음성예측도(9,405 ÷ 9,415 ≈ 99.9%)에 가까워, 「음성자가 실제로 질병이 없을 확률」을 물었다면 정답이 된다.\n- 함정: 양성예측도를 민감도(90%)와 혼동하는 것 — 유병률이 1% 이면 같은 검사라도 양성자의 대부분이 위양성이다.\n- 학습목표: 민감도·특이도가 같은 검사라도 유병률이 낮은 집단에서는 위양성이 늘어 양성예측도가 크게 낮아짐을 2×2 표로 계산한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. Ch. Assessing the Validity and Reliability of Diagnostic and Screening Tests · 대한예방의학회. 예방의학과 공중보건학, 4판. 선별검사의 평가 — 예측도와 유병률",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "B 지역 10,000명 중 환자는 100명이고 진양성은 100 × 0.90 = 90명이다. 비환자 9,900명 중 위양성은 9,900 × 0.05 = 495명이다. 양성예측도 = 90 ÷ (90 + 495) = 90 ÷ 585 ≈ 15%다. 같은 검사라도 유병률 10%인 A 지역에서는 900 ÷ (900 + 450) ≈ 67%다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 유병률이 양성예측도를 바꾸는가</b>: 민감도·특이도는 이미 질병 상태를 아는 사람들 안에서 정의된 검사의 성질이라 집단이 바뀌어도 거의 그대로다. 그러나 양성예측도는 「양성 결과를 받은 사람」을 분모로 삼는다. 이 분모에는 환자에게서 나온 진양성과 비환자에게서 나온 위양성이 섞인다.<br> <b>위양성이 지배하는 구조</b>: 유병률이 낮으면 비환자가 압도적으로 많아, 특이도 95%라도 5% 의 위양성이 큰 수(495명)가 되어 적은 진양성(90명)을 덮어 버린다. 그래서 드문 질병의 일반 인구 선별에서는 양성의 대부분이 위양성이다.<br> <b>반대로 음성예측도</b>는 유병률이 낮을수록 높아진다(B 지역: 9,405 ÷ 9,415 ≈ 99.9%).<br> <b>실천적 의미</b>: 선별은 고위험군(유병률이 높은 집단)에 집중하거나, 양성자에게 특이도가 높은 2단계 확진 검사를 하도록 설계한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">지표</th><th style=\"width:39%\">B 지역(유병률 1 %) — 정답 계산</th><th>A 지역(유병률 10 %) — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>진양성</td><td>100 × 0.90 = 90</td><td>1,000 × 0.90 = 900</td></tr> <tr><td>위양성</td><td>9,900 × 0.05 = 495</td><td>9,000 × 0.05 = 450</td></tr> <tr><td>양성예측도</td><td><b>90 ÷ 585 ≈ 15 %</b></td><td>900 ÷ 1,350 ≈ 67 %</td></tr> </tbody></table> 위양성 수는 두 지역이 비슷한데 진양성이 10배 차이 나서 양성예측도가 갈린다. 물음이 어느 지역인지 먼저 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 약 67%는 유병률 10%인 A 지역의 양성예측도로, 물음이 A 지역을 물었다면 정답이 된다.\n② 약 90%는 검사의 민감도로, 「환자 중 양성으로 나오는 비율」을 물었다면 정답이 된다.\n③ 약 95%는 검사의 특이도로, 「비환자 중 음성으로 나오는 비율」을 물었다면 정답이 된다.\n④ 약 99%는 B 지역의 음성예측도(9,405 ÷ 9,415 ≈ 99.9%)에 가까워, 「음성자가 실제로 질병이 없을 확률」을 물었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "양성예측도를 민감도(90%)와 혼동하는 것 — 유병률이 1% 이면 같은 검사라도 양성자의 대부분이 위양성이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "민감도·특이도가 같은 검사라도 유병률이 낮은 집단에서는 위양성이 늘어 양성예측도가 크게 낮아짐을 2×2 표로 계산한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. Ch. Assessing the Validity and Reliability of Diagnostic and Screening Tests · 대한예방의학회. 예방의학과 공중보건학, 4판. 선별검사의 평가 — 예측도와 유병률"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "민감도 90%·특이도 95% 검사를 유병률 1% 집단에 쓰면 진양성 90명, 위양성 495명이라 양성예측도는 약 15% 다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "물음이 유병률 1%인 B 지역을 묻는다 — A 지역 값(67%)과 혼동하지 않는다",
+   "steps": 2,
+   "chain": [
+    "B 지역 10,000명: 환자 100명 → 진양성 90명, 비환자 9,900명 → 위양성 495명",
+    "양성예측도 = 90 ÷ 585 ≈ 15%"
+   ],
+   "key": [
+    {
+     "item": "민감도는 90%",
+     "why": "진양성 계산",
+     "also": []
+    },
+    {
+     "item": "특이도는 95%",
+     "why": "위양성 계산",
+     "also": []
+    },
+    {
+     "item": "B 지역이 1%",
+     "why": "물음의 대상 집단의 유병률",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "A 지역이 10%",
+     "why": "비교용 — 물음과 다른 집단",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "검사 비용과 확진 검사 방법도 같다",
+     "why": "계산에 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "민감도 90%·특이도 95% 검사를 유병률 1% 인 B 지역 10,000명에 쓰면 진양성 90명, 위양성 495명이다. 양성예측도는 90 ÷ 585 ≈ 15% 로, 유병률 10% 인 A 지역(약 67%)보다 훨씬 낮다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 계산을 유병률 10% 인 A 지역에 대해 물었다면 약 67% 가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0415",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "내분비·대사 — 장기 프레드니솔론을 갑자기 끊은 뒤의 쇼크",
+  "type": "내분비·대사 — 장기 프레드니솔론을 갑자기 끊은 뒤의 쇼크",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-22",
+  "vignette": "A 58-year-old woman is brought to the emergency department 6 hours after the onset of vomiting, diffuse abdominal pain, and lightheadedness. She has rheumatoid arthritis treated with prednisone 15 mg daily for the past 3 years; she stopped taking it 5 days ago when she ran out of tablets while traveling. Her temperature is 37.9°C (100.2°F), pulse is 118/min, and blood pressure is 76/44 mm Hg. She is drowsy but oriented. The abdomen is diffusely tender without guarding. Serum studies show sodium 129 mEq/L, potassium 4.6 mEq/L, glucose 62 mg/dL, and creatinine 1.3 mg/dL. Blood cultures are obtained. After 1 L of intravenous 0.9% saline, her blood pressure is 82/50 mm Hg.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Resume oral prednisone 15 mg daily",
+   "Intravenous hydrocortisone 100 mg",
+   "Cosyntropin stimulation test before any steroid",
+   "Norepinephrine infusion without corticosteroids",
+   "Oral fludrocortisone 0.1 mg daily"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Three years of prednisone suppressed the hypothalamic-pituitary-adrenal axis; stopping it abruptly left her without cortisol. Hypotension unresponsive to fluids, vomiting, abdominal pain, hypoglycemia, and hyponatremia indicate adrenal crisis. Intravenous hydrocortisone 100 mg must be given immediately, with continued saline and dextrose; diagnostic testing must not delay treatment.\n- 원리: <b>Why stopping prednisone causes crisis</b>: exogenous glucocorticoid suppresses CRH and ACTH. After weeks to months, the adrenal zona fasciculata atrophies and cannot produce cortisol on demand. When the drug stops, there is neither drug nor endogenous cortisol.<br> <b>Why blood pressure falls</b>: cortisol is required for the vascular response to catecholamines (it maintains adrenergic receptor expression and angiotensin-sensitive tone). Without it, vessels dilate and do not respond well to fluids or vasopressors.<br> <b>Why potassium is normal</b>: this is secondary (central) adrenal insufficiency. Aldosterone is controlled mainly by renin-angiotensin and potassium, not ACTH, so mineralocorticoid function is preserved — hyperkalemia is absent and fludrocortisone is not needed. Hyponatremia arises from cortisol deficiency increasing ADH release.<br> <b>Why hydrocortisone at 100 mg</b>: at this dose hydrocortisone also has mineralocorticoid activity, it acts within hours, and it treats every form of adrenal insufficiency. If testing is desired, dexamethasone could be used because it does not cross-react with cortisol assays, but treatment comes first.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">IV hydrocortisone now (answer)</th><th>Cosyntropin test first (closest distractor)</th></tr></thead><tbody> <tr><td>Patient state</td><td><b>Shock not corrected by fluids</b></td><td>Stable outpatient with vague fatigue</td></tr> <tr><td>Time</td><td>Minutes</td><td>30–60 minutes plus laboratory turnaround</td></tr> <tr><td>Interpretation here</td><td>Treats regardless of the cause</td><td>Atrophic adrenals would fail, but the answer would not change treatment</td></tr> </tbody></table> In crisis, draw a cortisol and ACTH sample if convenient, then give the steroid; confirmation can wait until she is stable.\n- 오답 이유:\n  - (A) Oral prednisone would be appropriate for a mild missed dose in a patient who can take oral medication; vomiting and shock require parenteral therapy.\n  - (C) A cosyntropin test would be correct in a hemodynamically stable patient with suspected adrenal insufficiency, such as one with fatigue and weight loss.\n  - (D) Norepinephrine without steroids would be inappropriate; vasopressors are added to steroids only if hypotension persists after hydrocortisone and fluids.\n  - (E) Fludrocortisone would be correct as maintenance therapy for primary adrenal insufficiency with hyperkalemia; it acts too slowly and is unnecessary in secondary deficiency.\n- 함정: Wanting to confirm the diagnosis with a cosyntropin test before giving steroids — in adrenal crisis, testing delays life-saving therapy.\n- 학습목표: 장기 글루코코르티코이드를 갑자기 끊은 뒤 수액에 반응하지 않는 저혈압·저혈당·저나트륨이 있으면 부신 위기로 보고 검사를 기다리지 않고 정맥 하이드로코르티손을 준다\n- 근거·출처: Bornstein SR, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2016;101:364-389 · Beuschlein F, et al. European Society of Endocrinology and Endocrine Society joint clinical guideline: diagnosis and therapy of glucocorticoid-induced adrenal insufficiency. Eur J Endocrinol 2024;190:G25-G51",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Three years of prednisone suppressed the hypothalamic-pituitary-adrenal axis; stopping it abruptly left her without cortisol. Hypotension unresponsive to fluids, vomiting, abdominal pain, hypoglycemia, and hyponatremia indicate adrenal crisis. Intravenous hydrocortisone 100 mg must be given immediately, with continued saline and dextrose; diagnostic testing must not delay treatment."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why stopping prednisone causes crisis</b>: exogenous glucocorticoid suppresses CRH and ACTH. After weeks to months, the adrenal zona fasciculata atrophies and cannot produce cortisol on demand. When the drug stops, there is neither drug nor endogenous cortisol.<br> <b>Why blood pressure falls</b>: cortisol is required for the vascular response to catecholamines (it maintains adrenergic receptor expression and angiotensin-sensitive tone). Without it, vessels dilate and do not respond well to fluids or vasopressors.<br> <b>Why potassium is normal</b>: this is secondary (central) adrenal insufficiency. Aldosterone is controlled mainly by renin-angiotensin and potassium, not ACTH, so mineralocorticoid function is preserved — hyperkalemia is absent and fludrocortisone is not needed. Hyponatremia arises from cortisol deficiency increasing ADH release.<br> <b>Why hydrocortisone at 100 mg</b>: at this dose hydrocortisone also has mineralocorticoid activity, it acts within hours, and it treats every form of adrenal insufficiency. If testing is desired, dexamethasone could be used because it does not cross-react with cortisol assays, but treatment comes first."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">IV hydrocortisone now (answer)</th><th>Cosyntropin test first (closest distractor)</th></tr></thead><tbody> <tr><td>Patient state</td><td><b>Shock not corrected by fluids</b></td><td>Stable outpatient with vague fatigue</td></tr> <tr><td>Time</td><td>Minutes</td><td>30–60 minutes plus laboratory turnaround</td></tr> <tr><td>Interpretation here</td><td>Treats regardless of the cause</td><td>Atrophic adrenals would fail, but the answer would not change treatment</td></tr> </tbody></table> In crisis, draw a cortisol and ACTH sample if convenient, then give the steroid; confirmation can wait until she is stable."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral prednisone would be appropriate for a mild missed dose in a patient who can take oral medication; vomiting and shock require parenteral therapy.\n(C) A cosyntropin test would be correct in a hemodynamically stable patient with suspected adrenal insufficiency, such as one with fatigue and weight loss.\n(D) Norepinephrine without steroids would be inappropriate; vasopressors are added to steroids only if hypotension persists after hydrocortisone and fluids.\n(E) Fludrocortisone would be correct as maintenance therapy for primary adrenal insufficiency with hyperkalemia; it acts too slowly and is unnecessary in secondary deficiency."
+   },
+   {
+    "k": "함정",
+    "v": "Wanting to confirm the diagnosis with a cosyntropin test before giving steroids — in adrenal crisis, testing delays life-saving therapy."
+   },
+   {
+    "k": "학습목표",
+    "v": "장기 글루코코르티코이드를 갑자기 끊은 뒤 수액에 반응하지 않는 저혈압·저혈당·저나트륨이 있으면 부신 위기로 보고 검사를 기다리지 않고 정맥 하이드로코르티손을 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bornstein SR, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2016;101:364-389 · Beuschlein F, et al. European Society of Endocrinology and Endocrine Society joint clinical guideline: diagnosis and therapy of glucocorticoid-induced adrenal insufficiency. Eur J Endocrinol 2024;190:G25-G51"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "3년간 먹던 프레드니솔론을 5일 전 끊은 뒤 수액에 반응하지 않는 쇼크·저혈당·저나트륨이 있으므로 부신 위기로 보고 즉시 정맥 하이드로코르티손을 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "수액에도 회복되지 않는 쇼크 — 검사보다 치료가 먼저",
+   "steps": 2,
+   "chain": [
+    "장기 프레드니솔론 중단 + 구토·복통 + 저혈당·저나트륨 → 부신 위기(2차성)",
+    "수액 1 L 뒤에도 82/50 mm Hg → 검사 없이 정맥 하이드로코르티손 100 mg"
+   ],
+   "key": [
+    {
+     "item": "she stopped taking it 5 days ago",
+     "why": "HPA 축 억제 상태에서 갑작스러운 중단",
+     "also": []
+    },
+    {
+     "item": "After 1 L of intravenous 0.9% saline, her blood pressure is 82/50 mm Hg",
+     "why": "수액 불응 쇼크",
+     "also": []
+    },
+    {
+     "item": "glucose 62 mg/dL",
+     "why": "코르티솔 결핍의 저혈당",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Blood cultures are obtained",
+     "why": "패혈증 평가는 진행하되 스테로이드를 미루지 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "potassium 4.6 mEq/L",
+     "why": "알도스테론 보존 — 2차성, 플루드로코르티손 불필요",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "rheumatoid arthritis",
+     "why": "스테로이드를 먹은 이유 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "3년간 프레드니솔론을 먹다 5일 전 끊은 여성이 구토·복통과 수액에 반응하지 않는 저혈압, 저혈당, 저나트륨으로 왔다. 2차성 부신 위기이며 검사를 기다리지 않고 정맥 하이드로코르티손 100 mg 을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "혈압이 정상이고 몇 주간 피로·체중 감소만 있는 외래 환자라면 코신트로핀 자극 검사로 먼저 확인한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0414",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "소아청소년 — 고열을 동반한 두 살 아이의 급성 중이염",
+  "type": "소아청소년 — 고열을 동반한 두 살 아이의 급성 중이염",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-22",
+  "vignette": "2세 남아가 이틀 전부터 열이 나고 밤에 보채며 오른쪽 귀를 잡아당겨서 병원에 왔다. 1주 전부터 콧물이 있었다. 어린이집에 다니며 최근 3개월 동안 항생제를 먹은 적은 없고 약물 알레르기도 없다. 체온 39.2℃, 맥박 140회/분, 호흡 28회/분이다. 이경검사에서 오른쪽 고막이 붉고 심하게 팽륜되어 있으며 공기 이경검사에서 고막이 움직이지 않는다. 왼쪽 고막은 정상이다. 눈곱이나 결막 충혈은 없고, 목은 부드럽다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "아목시실린-클라불란산 경구 투여",
+   "세프트리악손 근육 주사",
+   "고막 절개 후 환기관 삽입",
+   "고용량 아목시실린 경구 투여",
+   "48~72시간 관찰 뒤 재평가"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 고막이 심하게 팽륜되고 움직이지 않으며 급성 증상이 있어 급성 중이염이다. 2세 이상이라도 체온이 39℃ 이상이면 중증으로 보아 관찰 대신 바로 항생제를 쓴다. 최근 30일 안에 아목시실린을 쓰지 않았고 화농성 결막염이 없으므로 1차 약은 고용량 아목시실린(80~90 mg/kg/일)이다.\n- 원리: <b>왜 고용량인가</b>: 급성 중이염의 주된 균은 폐렴알균·비피막 헤모필루스·모락셀라다. 페니실린 중간 내성 폐렴알균은 세포벽의 페니실린 결합 단백이 바뀌어 약이 잘 붙지 않는데, 용량을 두 배(80~90 mg/kg/일)로 올려 중이 삼출액 농도를 높이면 대부분 극복된다.<br> <b>왜 관찰이 아닌가</b>: 급성 중이염의 상당수는 저절로 낫기 때문에, 증상이 가벼운 경우(6~23개월은 한쪽만, 2세 이상은 한쪽·양쪽 모두)에 한해 48~72시간 지켜볼 수 있다. 그러나 39℃ 이상 열, 48시간 넘는 중등도 이상의 귀 통증, 이루가 있으면 중증으로 보아 바로 치료한다.<br> <b>언제 클라불란산을 더하는가</b>: 최근 30일 안에 아목시실린을 썼거나, 화농성 결막염이 함께 있거나(헤모필루스를 시사), 아목시실린 치료에 실패했을 때다 — 베타락타마제를 만드는 헤모필루스·모락셀라를 덮기 위해서다.<br> <b>세프트리악손</b>은 경구 약을 먹을 수 없거나 1차 치료에 실패한 경우에 남겨 둔다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고용량 아목시실린(정답)</th><th>48~72시간 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>6개월 이상 모두</td><td>6~23개월은 한쪽 비중증, 2세 이상은 비중증</td></tr> <tr><td>열</td><td><b>39℃ 이상</b>이면 바로 치료</td><td>39℃ 미만</td></tr> <tr><td>귀 통증·이루</td><td>48시간 넘는 중등도 이상 통증 또는 이루</td><td>가벼운 통증, 이루 없음</td></tr> <tr><td>조건</td><td>—</td><td>보호자와 추적 연락이 확실해야</td></tr> </tbody></table> 같은 2세 아이라도 열이 38.5℃ 이고 통증이 가벼웠다면 관찰이 답이 된다 — 열의 높이가 갈림길이다.\n- 오답 이유:\n  - ① 아목시실린-클라불란산은 최근 30일 안에 아목시실린을 먹었거나 화농성 결막염이 함께 있을 때 정답이 된다.\n  - ② 세프트리악손 근육 주사는 구토로 약을 먹지 못하거나 1차 경구 치료가 48~72시간 안에 실패했을 때 쓴다.\n  - ③ 환기관 삽입은 6개월에 3번 이상, 1년에 4번 이상 재발하는 중이염이나 청력 저하를 동반한 오래된 삼출성 중이염에서 고려한다.\n  - ⑤ 관찰은 2세 이상에서 열이 39℃ 미만이고 귀 통증이 가벼우며 보호자가 48~72시간 안에 다시 올 수 있을 때 정답이 된다.\n- 함정: 2세 이상이면 무조건 관찰할 수 있다고 외우는 것 — 39℃ 이상 열이나 심한 통증은 나이와 관계없이 바로 항생제다.\n- 학습목표: 6개월 이상 소아의 급성 중이염에서 39℃ 이상 고열이나 심한 귀 통증이 있으면 관찰 대신 고용량 아목시실린을 쓰고, 아목시실린-클라불란산이 필요한 조건과 구별한다\n- 근거·출처: Lieberthal AS, et al. The diagnosis and management of acute otitis media. Pediatrics 2013;131:e964-e999 (AAP clinical practice guideline) · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Otitis Media",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "고막이 심하게 팽륜되고 움직이지 않으며 급성 증상이 있어 급성 중이염이다. 2세 이상이라도 체온이 39℃ 이상이면 중증으로 보아 관찰 대신 바로 항생제를 쓴다. 최근 30일 안에 아목시실린을 쓰지 않았고 화농성 결막염이 없으므로 1차 약은 고용량 아목시실린(80~90 mg/kg/일)이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 고용량인가</b>: 급성 중이염의 주된 균은 폐렴알균·비피막 헤모필루스·모락셀라다. 페니실린 중간 내성 폐렴알균은 세포벽의 페니실린 결합 단백이 바뀌어 약이 잘 붙지 않는데, 용량을 두 배(80~90 mg/kg/일)로 올려 중이 삼출액 농도를 높이면 대부분 극복된다.<br> <b>왜 관찰이 아닌가</b>: 급성 중이염의 상당수는 저절로 낫기 때문에, 증상이 가벼운 경우(6~23개월은 한쪽만, 2세 이상은 한쪽·양쪽 모두)에 한해 48~72시간 지켜볼 수 있다. 그러나 39℃ 이상 열, 48시간 넘는 중등도 이상의 귀 통증, 이루가 있으면 중증으로 보아 바로 치료한다.<br> <b>언제 클라불란산을 더하는가</b>: 최근 30일 안에 아목시실린을 썼거나, 화농성 결막염이 함께 있거나(헤모필루스를 시사), 아목시실린 치료에 실패했을 때다 — 베타락타마제를 만드는 헤모필루스·모락셀라를 덮기 위해서다.<br> <b>세프트리악손</b>은 경구 약을 먹을 수 없거나 1차 치료에 실패한 경우에 남겨 둔다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고용량 아목시실린(정답)</th><th>48~72시간 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>6개월 이상 모두</td><td>6~23개월은 한쪽 비중증, 2세 이상은 비중증</td></tr> <tr><td>열</td><td><b>39℃ 이상</b>이면 바로 치료</td><td>39℃ 미만</td></tr> <tr><td>귀 통증·이루</td><td>48시간 넘는 중등도 이상 통증 또는 이루</td><td>가벼운 통증, 이루 없음</td></tr> <tr><td>조건</td><td>—</td><td>보호자와 추적 연락이 확실해야</td></tr> </tbody></table> 같은 2세 아이라도 열이 38.5℃ 이고 통증이 가벼웠다면 관찰이 답이 된다 — 열의 높이가 갈림길이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아목시실린-클라불란산은 최근 30일 안에 아목시실린을 먹었거나 화농성 결막염이 함께 있을 때 정답이 된다.\n② 세프트리악손 근육 주사는 구토로 약을 먹지 못하거나 1차 경구 치료가 48~72시간 안에 실패했을 때 쓴다.\n③ 환기관 삽입은 6개월에 3번 이상, 1년에 4번 이상 재발하는 중이염이나 청력 저하를 동반한 오래된 삼출성 중이염에서 고려한다.\n⑤ 관찰은 2세 이상에서 열이 39℃ 미만이고 귀 통증이 가벼우며 보호자가 48~72시간 안에 다시 올 수 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "2세 이상이면 무조건 관찰할 수 있다고 외우는 것 — 39℃ 이상 열이나 심한 통증은 나이와 관계없이 바로 항생제다."
+   },
+   {
+    "k": "학습목표",
+    "v": "6개월 이상 소아의 급성 중이염에서 39℃ 이상 고열이나 심한 귀 통증이 있으면 관찰 대신 고용량 아목시실린을 쓰고, 아목시실린-클라불란산이 필요한 조건과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Lieberthal AS, et al. The diagnosis and management of acute otitis media. Pediatrics 2013;131:e964-e999 (AAP clinical practice guideline) · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Otitis Media"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "2세 아이의 급성 중이염에 체온 39.2℃ 의 중증 징후가 있고 최근 항생제·결막염이 없으므로 고용량 아목시실린을 바로 쓴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "체온 39℃ 이상 — 관찰 대상이 아니다",
+   "steps": 2,
+   "chain": [
+    "급성 증상 + 고막 팽륜·운동성 없음 → 급성 중이염",
+    "39.2℃(중증) + 최근 아목시실린·화농성 결막염 없음 → 고용량 아목시실린"
+   ],
+   "key": [
+    {
+     "item": "오른쪽 고막이 붉고 심하게 팽륜",
+     "why": "급성 중이염 진단의 핵심 소견",
+     "also": []
+    },
+    {
+     "item": "체온 39.2℃",
+     "why": "중증 — 관찰 대신 치료",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "목은 부드럽다",
+     "why": "수막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "최근 3개월 동안 항생제를 먹은 적은 없고",
+     "why": "클라불란산을 더할 이유가 없다",
+     "also": []
+    },
+    {
+     "item": "눈곱이나 결막 충혈은 없고",
+     "why": "중이염-결막염 증후군이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "어린이집에 다니며",
+     "why": "위험 요인 — 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "2세 아이에게 한쪽 고막의 심한 팽륜과 39.2℃ 열이 있어 중증 급성 중이염이다. 관찰하지 않고 바로 치료하며, 최근 아목시실린 사용·화농성 결막염이 없으므로 고용량 아목시실린이 1차 약이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "2주 전 다른 감염으로 아목시실린을 먹었거나 화농성 결막염이 함께 있다면 아목시실린-클라불란산이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0411",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "혈액·종양 — 인공관절 수술 뒤 헤파린 투여 중 혈소판 감소와 심부정맥혈전",
+  "type": "혈액·종양 — 인공관절 수술 뒤 헤파린 투여 중 혈소판 감소와 심부정맥혈전",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-22",
+  "vignette": "62세 여자가 무릎 인공관절 치환술 7일째 왼쪽 종아리가 붓고 아파서 진찰을 받았다. 수술 다음 날부터 혈전 예방을 위해 비분획 헤파린을 피하 주사로 맞고 있다. 혈압 128/76 mmHg, 맥박 94회/분, 체온 36.9℃이다. 왼쪽 종아리 둘레가 오른쪽보다 3 cm 크다. 혈소판 수는 수술 전 245,000/μL, 수술 7일째 98,000/μL이다. 혈색소 11.8 g/dL, 프로트롬빈시간 INR 1.0이고 말초혈액도말에 분열적혈구는 없다. 하지 정맥 초음파에서 왼쪽 오금정맥에 혈전이 있다. 항PF4/헤파린 항체 효소면역검사는 양성이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "헤파린을 끊고 와파린을 바로 시작한다",
+   "헤파린을 저분자량 헤파린으로 바꾼다",
+   "혈소판을 수혈하고 헤파린을 유지한다",
+   "헤파린을 끊고 항응고제 없이 지켜본다",
+   "헤파린을 끊고 아르가트로반을 정맥 투여한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 헤파린 시작 5~10일 사이(7일째)에 혈소판이 60 % 줄고, 새 심부정맥혈전이 생겼으며, 항PF4/헤파린 항체가 양성이다 — 혈전을 동반한 헤파린 유발 혈소판감소증(HIT)이다. 모든 헤파린을 끊고 아르가트로반 같은 비헤파린 항응고제를 바로 시작해야 한다. 와파린은 혈소판이 회복된 뒤(대개 15만 이상)에 겹쳐 시작한다.\n- 원리: <b>왜 혈소판이 줄면서 혈전이 생기는가</b>: 헤파린이 혈소판 인자 4(PF4)와 결합하면 새 항원이 드러나고, 이에 대한 IgG 가 생긴다. 이 면역복합체가 혈소판의 FcγRIIa 수용체에 붙어 혈소판을 활성화한다 — 활성화된 혈소판은 소모되어 수가 줄고, 동시에 트롬빈 생성과 혈전이 폭발적으로 늘어난다. 그래서 HIT 는 출혈이 아니라 혈전의 병이다.<br> <b>왜 5~10일인가</b>: 처음 노출된 뒤 IgG 항체가 만들어지는 데 그만큼 걸린다(최근 100일 안에 헤파린을 맞았다면 하루 안에도 생긴다).<br> <b>왜 와파린을 바로 쓰지 않는가</b>: 와파린은 반감기가 짧은 단백 C 를 먼저 떨어뜨린다. 트롬빈이 넘치는 HIT 에서 단백 C 가 갑자기 줄면 미세혈관 혈전이 생겨 정맥성 사지 괴저가 올 수 있다. 그래서 직접 트롬빈 억제제(아르가트로반·비발리루딘)나 폰다파리눅스로 먼저 막고, 혈소판이 회복된 뒤 와파린을 5일 이상 겹친다.<br> <b>저분자량 헤파린도 안 되는 이유</b>: 같은 PF4 항원과 교차반응한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아르가트로반(정답)</th><th>와파린 즉시 시작(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td><b>트롬빈을 직접 억제</b> — 바로 효과</td><td>비타민 K 의존 인자 합성 억제 — 효과까지 수일</td></tr> <tr><td>단백 C</td><td>영향 없음</td><td>먼저 떨어져 일시적 과응고</td></tr> <tr><td>HIT 급성기 위험</td><td>출혈(감시: aPTT)</td><td>정맥성 사지 괴저·피부 괴사</td></tr> <tr><td>시작 시점</td><td>HIT 를 의심한 즉시</td><td>혈소판 15만/μL 이상 회복 뒤 겹쳐서</td></tr> </tbody></table> HIT 의 장기 항응고에 와파린을 쓰는 것은 맞지만, 순서가 틀리면 해가 된다.\n- 오답 이유:\n  - ① 와파린은 HIT 환자에서 비헤파린 항응고제를 쓰는 중 혈소판이 15만/μL 이상으로 회복된 뒤 겹쳐 시작할 때 정답이 된다.\n  - ② 저분자량 헤파린으로의 교체는 HIT 가 아닌 비면역성 혈소판 감소나, 신기능 때문에 비분획 헤파린을 쓰던 환자에서나 고려된다.\n  - ③ 혈소판 수혈은 HIT 에서 혈전을 키울 수 있어 생명을 위협하는 출혈이 있을 때만 쓰며, 헤파린을 유지하는 것은 어느 경우에도 틀리다.\n  - ④ 항응고제 없이 관찰하는 것은 혈소판 감소가 다른 원인(예: 수술 뒤 희석)으로 설명되고 혈전이 없을 때나 맞는다 — HIT 는 혈전 위험이 매우 높다.\n- 함정: 혈소판이 적어 출혈을 걱정해 항응고를 미루거나, 익숙한 와파린으로 바로 바꾸는 것 — HIT 는 혈전의 병이고 단백 C 감소로 와파린이 괴저를 일으킨다.\n- 학습목표: 헤파린 시작 5~10일 사이 혈소판이 50 % 넘게 줄고 혈전이 생긴 헤파린 유발 혈소판감소증에서 모든 헤파린을 끊고 비헤파린 항응고제를 쓰며, 와파린을 바로 시작하지 않는다\n- 근거·출처: Cuker A, et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360-3392 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Disorders of Platelets and Vessel Wall — heparin-induced thrombocytopenia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "헤파린 시작 5~10일 사이(7일째)에 혈소판이 60 % 줄고, 새 심부정맥혈전이 생겼으며, 항PF4/헤파린 항체가 양성이다 — 혈전을 동반한 헤파린 유발 혈소판감소증(HIT)이다. 모든 헤파린을 끊고 아르가트로반 같은 비헤파린 항응고제를 바로 시작해야 한다. 와파린은 혈소판이 회복된 뒤(대개 15만 이상)에 겹쳐 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 혈소판이 줄면서 혈전이 생기는가</b>: 헤파린이 혈소판 인자 4(PF4)와 결합하면 새 항원이 드러나고, 이에 대한 IgG 가 생긴다. 이 면역복합체가 혈소판의 FcγRIIa 수용체에 붙어 혈소판을 활성화한다 — 활성화된 혈소판은 소모되어 수가 줄고, 동시에 트롬빈 생성과 혈전이 폭발적으로 늘어난다. 그래서 HIT 는 출혈이 아니라 혈전의 병이다.<br> <b>왜 5~10일인가</b>: 처음 노출된 뒤 IgG 항체가 만들어지는 데 그만큼 걸린다(최근 100일 안에 헤파린을 맞았다면 하루 안에도 생긴다).<br> <b>왜 와파린을 바로 쓰지 않는가</b>: 와파린은 반감기가 짧은 단백 C 를 먼저 떨어뜨린다. 트롬빈이 넘치는 HIT 에서 단백 C 가 갑자기 줄면 미세혈관 혈전이 생겨 정맥성 사지 괴저가 올 수 있다. 그래서 직접 트롬빈 억제제(아르가트로반·비발리루딘)나 폰다파리눅스로 먼저 막고, 혈소판이 회복된 뒤 와파린을 5일 이상 겹친다.<br> <b>저분자량 헤파린도 안 되는 이유</b>: 같은 PF4 항원과 교차반응한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아르가트로반(정답)</th><th>와파린 즉시 시작(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td><b>트롬빈을 직접 억제</b> — 바로 효과</td><td>비타민 K 의존 인자 합성 억제 — 효과까지 수일</td></tr> <tr><td>단백 C</td><td>영향 없음</td><td>먼저 떨어져 일시적 과응고</td></tr> <tr><td>HIT 급성기 위험</td><td>출혈(감시: aPTT)</td><td>정맥성 사지 괴저·피부 괴사</td></tr> <tr><td>시작 시점</td><td>HIT 를 의심한 즉시</td><td>혈소판 15만/μL 이상 회복 뒤 겹쳐서</td></tr> </tbody></table> HIT 의 장기 항응고에 와파린을 쓰는 것은 맞지만, 순서가 틀리면 해가 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 와파린은 HIT 환자에서 비헤파린 항응고제를 쓰는 중 혈소판이 15만/μL 이상으로 회복된 뒤 겹쳐 시작할 때 정답이 된다.\n② 저분자량 헤파린으로의 교체는 HIT 가 아닌 비면역성 혈소판 감소나, 신기능 때문에 비분획 헤파린을 쓰던 환자에서나 고려된다.\n③ 혈소판 수혈은 HIT 에서 혈전을 키울 수 있어 생명을 위협하는 출혈이 있을 때만 쓰며, 헤파린을 유지하는 것은 어느 경우에도 틀리다.\n④ 항응고제 없이 관찰하는 것은 혈소판 감소가 다른 원인(예: 수술 뒤 희석)으로 설명되고 혈전이 없을 때나 맞는다 — HIT 는 혈전 위험이 매우 높다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판이 적어 출혈을 걱정해 항응고를 미루거나, 익숙한 와파린으로 바로 바꾸는 것 — HIT 는 혈전의 병이고 단백 C 감소로 와파린이 괴저를 일으킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "헤파린 시작 5~10일 사이 혈소판이 50 % 넘게 줄고 혈전이 생긴 헤파린 유발 혈소판감소증에서 모든 헤파린을 끊고 비헤파린 항응고제를 쓰며, 와파린을 바로 시작하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cuker A, et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360-3392 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Disorders of Platelets and Vessel Wall — heparin-induced thrombocytopenia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "헤파린 7일째 혈소판이 60 % 줄고 새 심부정맥혈전과 항PF4 항체 양성이 있으므로 HIT 로 보고 헤파린을 끊고 아르가트로반을 쓴다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "HIT 급성기에는 와파린이 단백 C 를 먼저 떨어뜨려 괴저를 일으킨다 — 시작 시점",
+   "steps": 3,
+   "chain": [
+    "헤파린 7일째 혈소판 245,000 → 98,000(60 % 감소) + 새 혈전 → HIT 의심(4T 점수 높음)",
+    "항PF4/헤파린 항체 양성 → HIT 지지",
+    "모든 헤파린 중단 + 비헤파린 항응고제, 와파린은 혈소판 회복 뒤"
+   ],
+   "key": [
+    {
+     "item": "수술 7일째 98,000/μL",
+     "why": "헤파린 5~10일째의 50 % 이상 감소",
+     "also": []
+    },
+    {
+     "item": "왼쪽 오금정맥에 혈전",
+     "why": "HIT 의 혈전 합병증",
+     "also": []
+    },
+    {
+     "item": "항PF4/헤파린 항체 효소면역검사는 양성",
+     "why": "HIT 를 지지하는 항체",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "말초혈액도말에 분열적혈구는 없다",
+     "why": "TTP·DIC 같은 미세혈관병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "프로트롬빈시간 INR 1.0",
+     "why": "DIC 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈색소 11.8 g/dL",
+     "why": "수술 뒤 경미한 빈혈 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "무릎 수술 뒤 비분획 헤파린 7일째 혈소판이 245,000에서 98,000/μL로 줄고 오금정맥 혈전과 항PF4 항체 양성이 있어 혈전을 동반한 HIT 다. 모든 헤파린을 끊고 아르가트로반을 쓰며, 와파린은 혈소판이 회복된 뒤 겹쳐 시작한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "아르가트로반 치료 중 혈소판이 15만/μL 이상으로 회복되었다면 그때 와파린을 겹쳐 시작한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0410",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "소화기·간담췌 — 큰 고름집을 동반한 S결장 게실염",
+  "type": "소화기·간담췌 — 큰 고름집을 동반한 S결장 게실염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-22",
+  "vignette": "A 61-year-old man comes to the emergency department because of a 4-day history of left lower quadrant abdominal pain and fever. He has hypertension treated with amlodipine. His temperature is 38.6°C (101.5°F), pulse is 102/min, and blood pressure is 132/80 mm Hg. Abdominal examination shows tenderness and vague fullness in the left lower quadrant without rigidity or rebound tenderness. Bowel sounds are normal. Leukocyte count is 16,800/mm3, and serum lactate is 1.4 mmol/L. CT of the abdomen with contrast shows sigmoid wall thickening with surrounding fat stranding and a 6-cm rim-enhancing fluid collection adjacent to the sigmoid colon; there is no free intraperitoneal air. Intravenous antibiotics are begun.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "CT-guided percutaneous drainage of the collection",
+   "Emergency sigmoid resection with end colostomy",
+   "Colonoscopy within the next 48 hours",
+   "Oral antibiotics and outpatient follow-up",
+   "Laparoscopic peritoneal lavage"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: He has sigmoid diverticulitis complicated by a 6-cm pericolic abscess (Hinchey II) but no generalized peritonitis, free air, or sepsis with hypoperfusion. Abscesses of about 4 cm or larger respond poorly to antibiotics alone, so the next step is CT-guided percutaneous drainage together with intravenous antibiotics; this usually controls sepsis and allows a later elective one-stage resection if needed.\n- 원리: <b>Why size matters</b>: antibiotics reach an abscess cavity poorly because it has no blood supply and its acidic pus inactivates some drugs. Small abscesses (under about 3–4 cm) usually resolve with antibiotics; larger ones need the pus removed.<br> <b>Why drainage rather than surgery</b>: the infection is contained by omentum and adjacent bowel. Draining it through the skin under CT guidance controls the source without a laparotomy, and the inflamed colon can then cool down. If surgery is needed later, it can be done electively as a single resection with primary anastomosis instead of an emergency Hartmann procedure with a stoma.<br> <b>Hinchey stages</b>: I pericolic abscess, II distant (pelvic) abscess, III purulent peritonitis, IV feculent peritonitis. Stages III–IV, free air with peritonitis, or failure of drainage call for operation.<br> <b>Colonoscopy</b> is done about 6–8 weeks after recovery to exclude carcinoma, never in the acute phase because insufflation can perforate the inflamed wall.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Percutaneous drainage (answer)</th><th>Emergency Hartmann procedure (closest distractor)</th></tr></thead><tbody> <tr><td>Abdominal examination</td><td><b>Localized tenderness, no rigidity</b></td><td>Generalized peritonitis, rigidity</td></tr> <tr><td>CT</td><td>Contained abscess ≥ 4 cm, no free air</td><td>Free air or free fluid throughout the abdomen (Hinchey III–IV)</td></tr> <tr><td>Physiology</td><td>Stable, lactate normal</td><td>Septic shock or failure of drainage</td></tr> </tbody></table> The same disease moves from radiology to the operating room when the contamination is no longer walled off.\n- 오답 이유:\n  - (B) Emergency sigmoid resection would be correct if he had generalized peritonitis, free intraperitoneal air, or septic shock, or if drainage failed.\n  - (C) Colonoscopy would be correct 6 to 8 weeks after the episode has resolved, to exclude cancer; in acute diverticulitis it risks perforation.\n  - (D) Oral outpatient antibiotics would be correct for uncomplicated diverticulitis without abscess in a patient who tolerates oral intake and has no sepsis.\n  - (E) Laparoscopic lavage was proposed for purulent (Hinchey III) peritonitis; it does not drain a walled-off abscess and has higher reintervention rates.\n- 함정: Jumping to emergency resection because there is an abscess — a contained abscess without peritonitis is drained percutaneously first.\n- 학습목표: 복막염·유리 공기가 없는 게실염에 4 cm 이상 고름집이 있으면 항생제와 함께 CT 유도 경피 배액을 하고, 범발성 복막염의 응급 수술과 구별한다\n- 근거·출처: Hall J, et al. The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Management of Left-sided Colonic Diverticulitis. Dis Colon Rectum 2020;63:728-747 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Colon and Rectum — diverticular disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has sigmoid diverticulitis complicated by a 6-cm pericolic abscess (Hinchey II) but no generalized peritonitis, free air, or sepsis with hypoperfusion. Abscesses of about 4 cm or larger respond poorly to antibiotics alone, so the next step is CT-guided percutaneous drainage together with intravenous antibiotics; this usually controls sepsis and allows a later elective one-stage resection if needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why size matters</b>: antibiotics reach an abscess cavity poorly because it has no blood supply and its acidic pus inactivates some drugs. Small abscesses (under about 3–4 cm) usually resolve with antibiotics; larger ones need the pus removed.<br> <b>Why drainage rather than surgery</b>: the infection is contained by omentum and adjacent bowel. Draining it through the skin under CT guidance controls the source without a laparotomy, and the inflamed colon can then cool down. If surgery is needed later, it can be done electively as a single resection with primary anastomosis instead of an emergency Hartmann procedure with a stoma.<br> <b>Hinchey stages</b>: I pericolic abscess, II distant (pelvic) abscess, III purulent peritonitis, IV feculent peritonitis. Stages III–IV, free air with peritonitis, or failure of drainage call for operation.<br> <b>Colonoscopy</b> is done about 6–8 weeks after recovery to exclude carcinoma, never in the acute phase because insufflation can perforate the inflamed wall."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Percutaneous drainage (answer)</th><th>Emergency Hartmann procedure (closest distractor)</th></tr></thead><tbody> <tr><td>Abdominal examination</td><td><b>Localized tenderness, no rigidity</b></td><td>Generalized peritonitis, rigidity</td></tr> <tr><td>CT</td><td>Contained abscess ≥ 4 cm, no free air</td><td>Free air or free fluid throughout the abdomen (Hinchey III–IV)</td></tr> <tr><td>Physiology</td><td>Stable, lactate normal</td><td>Septic shock or failure of drainage</td></tr> </tbody></table> The same disease moves from radiology to the operating room when the contamination is no longer walled off."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Emergency sigmoid resection would be correct if he had generalized peritonitis, free intraperitoneal air, or septic shock, or if drainage failed.\n(C) Colonoscopy would be correct 6 to 8 weeks after the episode has resolved, to exclude cancer; in acute diverticulitis it risks perforation.\n(D) Oral outpatient antibiotics would be correct for uncomplicated diverticulitis without abscess in a patient who tolerates oral intake and has no sepsis.\n(E) Laparoscopic lavage was proposed for purulent (Hinchey III) peritonitis; it does not drain a walled-off abscess and has higher reintervention rates."
+   },
+   {
+    "k": "함정",
+    "v": "Jumping to emergency resection because there is an abscess — a contained abscess without peritonitis is drained percutaneously first."
+   },
+   {
+    "k": "학습목표",
+    "v": "복막염·유리 공기가 없는 게실염에 4 cm 이상 고름집이 있으면 항생제와 함께 CT 유도 경피 배액을 하고, 범발성 복막염의 응급 수술과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hall J, et al. The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Management of Left-sided Colonic Diverticulitis. Dis Colon Rectum 2020;63:728-747 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Colon and Rectum — diverticular disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "복막염·유리 공기 없이 6 cm 의 결장 주위 고름집이 있는 게실염이므로 항생제와 함께 CT 유도 경피 배액을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "복막 자극이 국소적이고 유리 공기가 없다 — 감염이 갇혀 있다",
+   "steps": 2,
+   "chain": [
+    "좌하복부 통증 + 열 + S결장 벽 비후·지방 침윤 → 게실염",
+    "6 cm 테두리 조영 고름집 + 유리 공기·복막염 없음 → 경피 배액"
+   ],
+   "key": [
+    {
+     "item": "a 6-cm rim-enhancing fluid collection",
+     "why": "4 cm 이상 — 항생제만으로는 부족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no free intraperitoneal air",
+     "why": "천공에 의한 범발성 복막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "without rigidity or rebound tenderness",
+     "why": "범발성 복막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "serum lactate is 1.4 mmol/L",
+     "why": "조직 저관류가 없어 응급 수술 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "amlodipine",
+     "why": "배경 약물 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "S결장 게실염에 6 cm 의 결장 주위 고름집이 생겼지만 복막염·유리 공기·쇼크가 없다. 4 cm 이상 고름집은 항생제와 함께 CT 유도 경피 배액을 하고, 수술은 배액이 실패하거나 범발성 복막염일 때다.",
+   "switch": {
+    "choice": "B",
+    "condition": "복부 전체가 딱딱하고 CT 에 유리 공기가 있거나 패혈성 쇼크라면 응급 S결장 절제(Hartmann 수술)가 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0407",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "산과 — 임신 30주의 조기 양막 파열",
+  "type": "산과 — 임신 30주의 조기 양막 파열",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-22",
+  "vignette": "A 27-year-old woman, gravida 2, para 1, at 30 weeks' gestation comes to the emergency department because of a sudden gush of clear fluid from the vagina 3 hours ago. She has had no contractions, abdominal pain, or vaginal bleeding. Her temperature is 36.9°C (98.4°F), pulse is 84/min, and blood pressure is 118/72 mm Hg. The uterus is soft and nontender. Sterile speculum examination shows pooling of clear fluid in the posterior fornix; nitrazine paper turns blue, and a ferning pattern is seen on microscopy. The cervix appears closed. Fetal heart rate tracing shows a baseline of 140/min with moderate variability and accelerations, and no contractions are recorded. Ultrasonography shows a singleton fetus in cephalic presentation with decreased amniotic fluid.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Cesarean delivery within the next few hours",
+   "Indomethacin tocolysis without antibiotics",
+   "Discharge home with weekly ultrasonography",
+   "Betamethasone plus ampicillin and erythromycin",
+   "Induction of labor with intravenous oxytocin"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Pooling, a positive nitrazine test, and ferning confirm preterm prelabor rupture of membranes at 30 weeks. There is no fever, uterine tenderness, labor, or fetal compromise, so expectant management is chosen: a course of antenatal corticosteroids to mature the fetal lungs and latency antibiotics (ampicillin plus erythromycin/azithromycin) to prolong pregnancy and reduce infection, with inpatient monitoring.\n- 원리: <b>Why gestational age decides</b>: after membranes rupture, the risks of staying pregnant (chorioamnionitis, abruption, cord compression) must be weighed against the risks of prematurity. Before 34 weeks, prematurity (respiratory distress syndrome, intraventricular hemorrhage, necrotizing enterocolitis) dominates, so pregnancy is prolonged if mother and fetus are well; from 34 weeks on, delivery is recommended.<br> <b>Why corticosteroids</b>: betamethasone crosses the placenta and induces surfactant production and structural lung maturation; the full benefit appears 24 hours to 7 days after the first dose.<br> <b>Why antibiotics</b>: ascending infection is both a cause and a consequence of rupture. A 7-day course of ampicillin plus a macrolide prolongs the latency period and lowers rates of chorioamnionitis and neonatal sepsis. Amoxicillin-clavulanate is avoided because it increases necrotizing enterocolitis.<br> <b>Other pieces</b>: magnesium sulfate is added for neuroprotection if delivery before 32 weeks becomes imminent, and group B streptococcal prophylaxis is given in labor.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Expectant management (answer)</th><th>Induction of labor (closest distractor)</th></tr></thead><tbody> <tr><td>Gestational age</td><td><b>Below 34 weeks</b></td><td>34 weeks or later</td></tr> <tr><td>Infection</td><td>No fever, nontender uterus</td><td>Chorioamnionitis at any gestational age</td></tr> <tr><td>Fetus</td><td>Reassuring tracing</td><td>Nonreassuring status or abruption</td></tr> </tbody></table> At 30 weeks with a well mother and fetus, the gain from each additional week outweighs the infection risk; the same rupture at 35 weeks, or with fever and a tender uterus, calls for delivery.\n- 오답 이유:\n  - (A) Cesarean delivery would be correct for an obstetric indication such as malpresentation in labor, cord prolapse, or a nonreassuring tracing that cannot wait for a vaginal birth.\n  - (B) Tocolysis is not recommended in ruptured membranes because it does not improve outcomes and may mask infection; antibiotics are needed regardless.\n  - (C) Outpatient care would only be considered after a period of stable inpatient observation in selected cases; on the day of rupture she needs admission and treatment.\n  - (E) Induction of labor would be correct if the rupture occurred at 34 weeks or later, or if chorioamnionitis or nonreassuring fetal status developed.\n- 함정: Delivering because membranes have ruptured — before 34 weeks without infection or fetal compromise, prolonging pregnancy with steroids and antibiotics is better.\n- 학습목표: 임신 34주 미만의 조기 양막 파열에서 감염·태아 곤란이 없으면 기대 요법으로 코르티코스테로이드와 잠복기 항생제를 주고, 34주 이후 분만과 구별한다\n- 근거·출처: ACOG Practice Bulletin No. 217: Prelabor Rupture of Membranes. Obstet Gynecol 2020;135:e80-e97 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Preterm Birth — preterm prelabor rupture of membranes",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Pooling, a positive nitrazine test, and ferning confirm preterm prelabor rupture of membranes at 30 weeks. There is no fever, uterine tenderness, labor, or fetal compromise, so expectant management is chosen: a course of antenatal corticosteroids to mature the fetal lungs and latency antibiotics (ampicillin plus erythromycin/azithromycin) to prolong pregnancy and reduce infection, with inpatient monitoring."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why gestational age decides</b>: after membranes rupture, the risks of staying pregnant (chorioamnionitis, abruption, cord compression) must be weighed against the risks of prematurity. Before 34 weeks, prematurity (respiratory distress syndrome, intraventricular hemorrhage, necrotizing enterocolitis) dominates, so pregnancy is prolonged if mother and fetus are well; from 34 weeks on, delivery is recommended.<br> <b>Why corticosteroids</b>: betamethasone crosses the placenta and induces surfactant production and structural lung maturation; the full benefit appears 24 hours to 7 days after the first dose.<br> <b>Why antibiotics</b>: ascending infection is both a cause and a consequence of rupture. A 7-day course of ampicillin plus a macrolide prolongs the latency period and lowers rates of chorioamnionitis and neonatal sepsis. Amoxicillin-clavulanate is avoided because it increases necrotizing enterocolitis.<br> <b>Other pieces</b>: magnesium sulfate is added for neuroprotection if delivery before 32 weeks becomes imminent, and group B streptococcal prophylaxis is given in labor."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Expectant management (answer)</th><th>Induction of labor (closest distractor)</th></tr></thead><tbody> <tr><td>Gestational age</td><td><b>Below 34 weeks</b></td><td>34 weeks or later</td></tr> <tr><td>Infection</td><td>No fever, nontender uterus</td><td>Chorioamnionitis at any gestational age</td></tr> <tr><td>Fetus</td><td>Reassuring tracing</td><td>Nonreassuring status or abruption</td></tr> </tbody></table> At 30 weeks with a well mother and fetus, the gain from each additional week outweighs the infection risk; the same rupture at 35 weeks, or with fever and a tender uterus, calls for delivery."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Cesarean delivery would be correct for an obstetric indication such as malpresentation in labor, cord prolapse, or a nonreassuring tracing that cannot wait for a vaginal birth.\n(B) Tocolysis is not recommended in ruptured membranes because it does not improve outcomes and may mask infection; antibiotics are needed regardless.\n(C) Outpatient care would only be considered after a period of stable inpatient observation in selected cases; on the day of rupture she needs admission and treatment.\n(E) Induction of labor would be correct if the rupture occurred at 34 weeks or later, or if chorioamnionitis or nonreassuring fetal status developed."
+   },
+   {
+    "k": "함정",
+    "v": "Delivering because membranes have ruptured — before 34 weeks without infection or fetal compromise, prolonging pregnancy with steroids and antibiotics is better."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 34주 미만의 조기 양막 파열에서 감염·태아 곤란이 없으면 기대 요법으로 코르티코스테로이드와 잠복기 항생제를 주고, 34주 이후 분만과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 217: Prelabor Rupture of Membranes. Obstet Gynecol 2020;135:e80-e97 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. Preterm Birth — preterm prelabor rupture of membranes"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "임신 30주의 조기 양막 파열이고 감염·진통·태아 곤란이 없으므로 기대 요법(코르티코스테로이드 + 잠복기 항생제)을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "임신 주수 30주(34주 미만)와 감염 징후 없음",
+   "steps": 2,
+   "chain": [
+    "양수 고임 + nitrazine 청색 + 고사리 모양 → 조기 양막 파열",
+    "30주 + 열·자궁 압통·진통 없음 + 안심되는 태아 → 스테로이드와 항생제로 기대 요법"
+   ],
+   "key": [
+    {
+     "item": "30 weeks' gestation",
+     "why": "34주 미만 — 기대 요법 대상",
+     "also": []
+    },
+    {
+     "item": "ferning pattern is seen on microscopy",
+     "why": "양막 파열 확진",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Her temperature is 36.9°C (98.4°F)",
+     "why": "융모양막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The uterus is soft and nontender",
+     "why": "자궁 감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "moderate variability and accelerations",
+     "why": "태아 상태가 안심되어 즉시 분만 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "decreased amniotic fluid",
+     "why": "양막 파열의 결과 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "임신 30주에 양수가 새고 nitrazine·고사리 검사로 조기 양막 파열이 확인되었다. 열·자궁 압통·진통·태아 곤란이 없으므로 34주 전에는 베타메타손과 잠복기 항생제로 임신을 유지한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 파열이 35주에 일어났거나 열과 자궁 압통으로 융모양막염이 생기면 분만 유도가 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0406",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·근골격·소화기·혈액·부인과·외과·소아·내분비·예방·정신)",
+  "subtopic": "순환기 — 폐암 환자의 저혈압·경정맥 팽대·기이맥",
+  "type": "순환기 — 폐암 환자의 저혈압·경정맥 팽대·기이맥",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-22",
+  "vignette": "68세 남자가 이틀 전부터 심해진 호흡곤란으로 응급실에 왔다. 6개월 전 폐 선암을 진단받고 항암치료 중이다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8℃이다. 앉은 자세에서 경정맥이 턱 아래까지 팽대되어 있고 심음은 작게 들린다. 흡기 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐 호흡음은 깨끗하고 다리 부종은 없다. 심전도에서 동빈맥과 함께 QRS 높이가 박동마다 번갈아 바뀐다. 흉부 X선에서 심장 음영이 물병 모양으로 커져 있다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "알테플라제 정맥주사",
+   "왼쪽 흉관 삽입",
+   "심낭천자",
+   "푸로세미드 정맥주사",
+   "니트로글리세린 설하 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 저혈압, 경정맥 팽대, 작은 심음(Beck 삼징)에 흡기 때 수축기 혈압이 10 mmHg 넘게 떨어지는 기이맥, 전기적 교대맥, 물병 모양 심장 음영이 함께 있다. 폐암의 악성 심낭삼출로 생긴 심장눌림증이며, 혈역학적으로 불안정하므로 즉시 심낭천자로 압력을 풀어야 한다.\n- 원리: <b>왜 혈압이 떨어지는가</b>: 심낭은 갑자기 늘어나지 못해 액체가 차면 심낭 압력이 오르고, 그 압력이 가장 얇은 우심방·우심실을 먼저 눌러 이완기 충만을 막는다. 들어오는 피가 줄어 1회 박출량과 혈압이 떨어지고, 돌아오지 못한 피가 경정맥을 부풀린다.<br> <b>왜 기이맥이 생기는가</b>: 네 방이 고정된 부피 안에 갇혀 있어 흡기 때 우심실로 피가 더 들어오면 심실중격이 왼쪽으로 밀려 좌심실 충만이 줄어든다(심실 상호의존). 그래서 흡기 때 수축기 혈압이 10 mmHg 넘게 떨어진다.<br> <b>왜 전기적 교대맥인가</b>: 많은 액체 속에서 심장이 박동마다 앞뒤로 흔들려 전극과의 거리가 바뀌므로 QRS 높이가 번갈아 달라진다.<br> <b>처치의 논리</b>: 원인이 기계적 압박이므로 약이 아니라 액체를 빼야 한다. 이뇨제·혈관확장제는 이미 부족한 전부하를 더 줄여 혈압을 무너뜨린다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">심장눌림증 — 심낭천자(정답)</th><th>급성 심부전 — 푸로세미드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>폐 청진</td><td><b>깨끗하다</b></td><td>양쪽 수포음</td></tr> <tr><td>흉부 X선</td><td>물병 모양 심장, 폐울혈 없음</td><td>폐울혈·흉막삼출</td></tr> <tr><td>심전도</td><td>저전압·전기적 교대맥</td><td>허혈·좌심실 비대 소견</td></tr> <tr><td>전부하를 줄이면</td><td>혈압이 더 떨어진다</td><td>호흡곤란이 좋아진다</td></tr> </tbody></table> 호흡곤란·경정맥 팽대만 보면 심부전 같지만, 폐가 맑은데 혈압이 낮고 기이맥이 있으면 압박 문제다.\n- 오답 이유:\n  - ① 알테플라제는 혈역학적으로 불안정한 고위험 폐색전증에서 정답이 되는데, 그때는 심음이 작아지거나 교대맥이 생기지 않는다.\n  - ② 흉관 삽입은 한쪽 호흡음이 줄고 기관이 밀린 긴장성 기흉이나 대량 혈흉일 때 정답이며, 이 환자는 폐 호흡음이 정상이다.\n  - ④ 푸로세미드는 양쪽 폐 수포음과 폐울혈이 있고 혈압이 유지되는 급성 비대상 심부전일 때 정답이 된다.\n  - ⑤ 니트로글리세린은 혈압이 충분한 급성 관상동맥증후군의 흉통이나 고혈압성 폐부종에서 쓰며, 저혈압에서는 금기다.\n- 함정: 호흡곤란과 경정맥 팽대만 보고 심부전으로 이뇨제를 고르는 것 — 폐가 맑고 기이맥이 있으면 심장눌림증이고, 전부하를 줄이면 쇼크가 깊어진다.\n- 학습목표: 저혈압·경정맥 팽대·작은 심음(Beck 삼징)과 기이맥, 전기적 교대맥이 있는 악성 심낭삼출 환자를 심장눌림증으로 판단하고 심낭천자를 고른다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Pericardial Disease — cardiac tamponade · Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "저혈압, 경정맥 팽대, 작은 심음(Beck 삼징)에 흡기 때 수축기 혈압이 10 mmHg 넘게 떨어지는 기이맥, 전기적 교대맥, 물병 모양 심장 음영이 함께 있다. 폐암의 악성 심낭삼출로 생긴 심장눌림증이며, 혈역학적으로 불안정하므로 즉시 심낭천자로 압력을 풀어야 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 혈압이 떨어지는가</b>: 심낭은 갑자기 늘어나지 못해 액체가 차면 심낭 압력이 오르고, 그 압력이 가장 얇은 우심방·우심실을 먼저 눌러 이완기 충만을 막는다. 들어오는 피가 줄어 1회 박출량과 혈압이 떨어지고, 돌아오지 못한 피가 경정맥을 부풀린다.<br> <b>왜 기이맥이 생기는가</b>: 네 방이 고정된 부피 안에 갇혀 있어 흡기 때 우심실로 피가 더 들어오면 심실중격이 왼쪽으로 밀려 좌심실 충만이 줄어든다(심실 상호의존). 그래서 흡기 때 수축기 혈압이 10 mmHg 넘게 떨어진다.<br> <b>왜 전기적 교대맥인가</b>: 많은 액체 속에서 심장이 박동마다 앞뒤로 흔들려 전극과의 거리가 바뀌므로 QRS 높이가 번갈아 달라진다.<br> <b>처치의 논리</b>: 원인이 기계적 압박이므로 약이 아니라 액체를 빼야 한다. 이뇨제·혈관확장제는 이미 부족한 전부하를 더 줄여 혈압을 무너뜨린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">심장눌림증 — 심낭천자(정답)</th><th>급성 심부전 — 푸로세미드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>폐 청진</td><td><b>깨끗하다</b></td><td>양쪽 수포음</td></tr> <tr><td>흉부 X선</td><td>물병 모양 심장, 폐울혈 없음</td><td>폐울혈·흉막삼출</td></tr> <tr><td>심전도</td><td>저전압·전기적 교대맥</td><td>허혈·좌심실 비대 소견</td></tr> <tr><td>전부하를 줄이면</td><td>혈압이 더 떨어진다</td><td>호흡곤란이 좋아진다</td></tr> </tbody></table> 호흡곤란·경정맥 팽대만 보면 심부전 같지만, 폐가 맑은데 혈압이 낮고 기이맥이 있으면 압박 문제다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 알테플라제는 혈역학적으로 불안정한 고위험 폐색전증에서 정답이 되는데, 그때는 심음이 작아지거나 교대맥이 생기지 않는다.\n② 흉관 삽입은 한쪽 호흡음이 줄고 기관이 밀린 긴장성 기흉이나 대량 혈흉일 때 정답이며, 이 환자는 폐 호흡음이 정상이다.\n④ 푸로세미드는 양쪽 폐 수포음과 폐울혈이 있고 혈압이 유지되는 급성 비대상 심부전일 때 정답이 된다.\n⑤ 니트로글리세린은 혈압이 충분한 급성 관상동맥증후군의 흉통이나 고혈압성 폐부종에서 쓰며, 저혈압에서는 금기다."
+   },
+   {
+    "k": "함정",
+    "v": "호흡곤란과 경정맥 팽대만 보고 심부전으로 이뇨제를 고르는 것 — 폐가 맑고 기이맥이 있으면 심장눌림증이고, 전부하를 줄이면 쇼크가 깊어진다."
+   },
+   {
+    "k": "학습목표",
+    "v": "저혈압·경정맥 팽대·작은 심음(Beck 삼징)과 기이맥, 전기적 교대맥이 있는 악성 심낭삼출 환자를 심장눌림증으로 판단하고 심낭천자를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Pericardial Disease — cardiac tamponade · Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Beck 삼징·기이맥·전기적 교대맥이 있는 악성 심낭삼출 환자는 심장눌림증이므로 즉시 심낭천자를 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "폐 호흡음이 깨끗하고 혈압이 낮다 — 심부전이 아니라 심낭 압박",
+   "steps": 2,
+   "chain": [
+    "저혈압 + 경정맥 팽대 + 작은 심음 + 기이맥 + 교대맥 → 심장눌림증",
+    "혈역학 불안정 → 이뇨·혈관확장이 아니라 심낭천자"
+   ],
+   "key": [
+    {
+     "item": "혈압 82/60 mmHg",
+     "why": "Beck 삼징의 저혈압",
+     "also": []
+    },
+    {
+     "item": "경정맥이 턱 아래까지 팽대",
+     "why": "우심 충만 장애",
+     "also": []
+    },
+    {
+     "item": "흡기 때 수축기 혈압이 18 mmHg 떨어진다",
+     "why": "기이맥 — 심실 상호의존",
+     "also": []
+    },
+    {
+     "item": "QRS 높이가 박동마다 번갈아 바뀐다",
+     "why": "전기적 교대맥",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 폐 호흡음은 깨끗하고",
+     "why": "급성 심부전 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "폐 선암",
+     "why": "악성 심낭삼출의 원인 — 응급 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "폐암 환자에게 저혈압·경정맥 팽대·작은 심음과 기이맥, 전기적 교대맥, 물병 모양 심장이 있어 심장눌림증이다. 폐가 맑아 심부전이 아니며, 즉시 심낭천자로 압력을 푼다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈압이 유지되고 양쪽 폐에 수포음과 X선의 폐울혈이 있다면 급성 심부전으로 푸로세미드가 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0397",
   "exam": "imaging",
   "style": "kmle_style",
