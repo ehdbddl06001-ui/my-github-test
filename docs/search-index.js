@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-21",
+ "generated": "2026-10-22",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3901,
+  "total": 3939,
   "byType": {
+   "kmle": 1536,
    "usmle": 210,
    "concept": 108,
-   "kmle": 1504,
+   "paper": 818,
    "imaging": 404,
-   "paper": 812,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 267,
-   "Nephrology": 215,
-   "Infectious Disease": 195,
-   "Pediatrics": 182,
-   "Obstetrics & Gynecology": 131,
-   "Pathology": 119,
-   "Hematology-Oncology": 117,
-   "Rheumatology": 117,
-   "Psychiatry": 113,
-   "Neurology": 112,
-   "General Surgery": 102,
-   "Endocrinology": 99,
-   "Surgery": 99,
-   "Dermatology": 98,
-   "Orthopedics": 98,
-   "Gastroenterology": 97,
-   "Ophthalmology": 96,
-   "Pulmonology": 96,
-   "Hematology": 91,
-   "Laboratory Medicine": 82,
+   "Cardiology": 270,
+   "Nephrology": 217,
+   "Infectious Disease": 198,
+   "Pediatrics": 184,
+   "Obstetrics & Gynecology": 133,
+   "Pathology": 120,
+   "Rheumatology": 119,
+   "Hematology-Oncology": 118,
+   "Psychiatry": 115,
+   "Neurology": 114,
+   "General Surgery": 104,
+   "Endocrinology": 101,
+   "Dermatology": 100,
+   "Orthopedics": 100,
+   "Surgery": 100,
+   "Gastroenterology": 99,
+   "Ophthalmology": 98,
+   "Pulmonology": 98,
+   "Hematology": 93,
+   "Laboratory Medicine": 83,
    "산부인과": 61,
    "순환기": 35,
    "호흡기": 28,
@@ -78,13 +78,619 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2725,
-   "medium": 1126,
+   "high": 2756,
+   "medium": 1133,
    "low": 50
   },
-  "tagCount": 4993
+  "tagCount": 5015
  },
  "docs": [
+  {
+   "id": "kmle-2026-1569",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Severe Headache, Blurred Vision and Rising Creatinine in a Woman with Rapidly Thickening Skin",
+   "tags": [
+    "scleroderma-renal-crisis",
+    "systemic-sclerosis",
+    "ace-inhibitor",
+    "microangiopathic-hemolysis"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1569.md",
+   "snippet": "48세 여자가 사흘 전부터 머리가 심하게 아프고 시야가 흐려 왔다. 8개월 전부터 추우면 손가락이 하얘졌다가 파래지고, 손가락·손등·팔뚝과 얼굴 피부가 빠르게 두꺼워졌다. 2주 전 근육통과 피로로 다른 병원에서 프레드니솔론 하루 30 mg을 시작했다. 소변량이 조금 줄었다. 안저검사에서 망막 출혈과 솜털 반점이 보인다. 의식은 맑고 경련은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 고용량 메틸프레드",
+   "text": "Rheumatology Severe Headache, Blurred Vision and Rising Creatinine in a Woman with Rapidly Thickening Skin scleroderma-renal-crisis systemic-sclerosis ace-inhibitor microangiopathic-hemolysis KMLE 2026 / Claude 48세 여자가 사흘 전부터 머리가 심하게 아프고 시야가 흐려 왔다. 8개월 전부터 추우면 손가락이 하얘졌다가 파래지고, 손가락·손등·팔뚝과 얼굴 피부가 빠르게 두꺼워졌다. 2주 전 근육통과 피로로 다른 병원에서 프레드니솔론 하루 30 mg을 시작했다. 소변량이 조금 줄었다. 안저검사에서 망막 출혈과 솜털 반점이 보인다. 의식은 맑고 경련은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 고용량 메틸프레드니솔론 정맥 B. 정맥 에쿨리주맙 투여 C. 혈장교환 매일 시행 D. 캡토프릴 경구로 시작해 증량 E. 시클로포스파미드 정맥 투여 빠르게 진행하는 미만 피부 전신경화증에 최근 스테로이드를 쓴 뒤 생긴 갑작스런 악성 고혈압, 급성 신손상, 미세혈관병 용혈은 경피증 신장 위기다. ADAMTS13 활성이 정상이라 혈전혈소판감소자색반병 가능성은 낮으며, 크레아티닌이 올라도 ACE 억제제를 빨리 증량하는 것이 치료다."
+  },
+  {
+   "id": "kmle-2026-1568",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "A Hot Swollen Knee on the Third Hospital Day in an Older Woman Admitted for Pneumonia",
+   "tags": [
+    "cppd",
+    "pseudogout",
+    "chondrocalcinosis",
+    "synovial-fluid"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1568.md",
+   "snippet": "78세 여자가 폐렴으로 입원해 정맥 항생제를 맞고 사흘째 되는 날 아침 갑자기 오른쪽 무릎이 붓고 뜨거워지며 아파 걷지 못한다. 몇 년 전부터 양쪽 무릎이 오래 걸으면 시큰했다. 무릎을 다치거나 주사를 맞은 적은 없다. 통풍을 진단받은 적은 없고 이뇨제는 먹지 않는다. 오른쪽 무릎은 붓고 열감이 있으며 관절 안에 액체가 찬다. 무릎 X선에서 양쪽 반월연골을 따라 가는 선 모양의 석회가 보인다. 관절을 천자했고 배양 결과를 기다",
+   "text": "Rheumatology A Hot Swollen Knee on the Third Hospital Day in an Older Woman Admitted for Pneumonia cppd pseudogout chondrocalcinosis synovial-fluid KMLE 2026 / Claude 78세 여자가 폐렴으로 입원해 정맥 항생제를 맞고 사흘째 되는 날 아침 갑자기 오른쪽 무릎이 붓고 뜨거워지며 아파 걷지 못한다. 몇 년 전부터 양쪽 무릎이 오래 걸으면 시큰했다. 무릎을 다치거나 주사를 맞은 적은 없다. 통풍을 진단받은 적은 없고 이뇨제는 먹지 않는다. 오른쪽 무릎은 붓고 열감이 있으며 관절 안에 액체가 찬다. 무릎 X선에서 양쪽 반월연골을 따라 가는 선 모양의 석회가 보인다. 관절을 천자했고 배양 결과를 기다리고 있다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 칼슘피로인산 결정 침착병 B. 화농관절염 C. 통풍 발작 D. 류마티스관절염 E. 골관절염의 악화 입원 중 노인에게 갑자기 생긴 무릎 단관절염에서 관절액에 약한 양성 복굴절의 마름모 모양 결정이 보이고 X선에 연골석회화가 있으면 칼슘피로인산 결정 침착병(급성 가성통풍)이다. 그람염색이 음성이어도 배양 결과를 확인해 동반 감염을 배제한다."
+  },
+  {
+   "id": "kmle-2026-1567",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Headache and Vomiting in Two Campers who Slept beside a Charcoal Grill in a Tent",
+   "tags": [
+    "carbon-monoxide-poisoning",
+    "co-oximetry",
+    "pulse-oximetry",
+    "hyperbaric-oxygen"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1567.md",
+   "snippet": "32세 남자가 겨울 캠핑장에서 텐트 문을 닫고 숯불을 피운 채 자다가 새벽에 두통과 구토, 어지러움으로 깨어 함께 잔 친구와 같이 왔다. 친구도 두통을 호소한다. 남자는 묻는 말에 대답이 조금 느리고 오늘 날짜를 헷갈린다. 피부색은 정상이고 청색증은 없다. 가슴 통증은 없고 폐 소리는 깨끗하다. 비재호흡 마스크로 산소를 시작했다. 활력징후와 검사 결과는 자료와 같다. 진단을 확인하기 위해 가장 적절한 검사는? A. 흉부 조영증",
+   "text": "Pulmonology Headache and Vomiting in Two Campers who Slept beside a Charcoal Grill in a Tent carbon-monoxide-poisoning co-oximetry pulse-oximetry hyperbaric-oxygen KMLE 2026 / Claude 32세 남자가 겨울 캠핑장에서 텐트 문을 닫고 숯불을 피운 채 자다가 새벽에 두통과 구토, 어지러움으로 깨어 함께 잔 친구와 같이 왔다. 친구도 두통을 호소한다. 남자는 묻는 말에 대답이 조금 느리고 오늘 날짜를 헷갈린다. 피부색은 정상이고 청색증은 없다. 가슴 통증은 없고 폐 소리는 깨끗하다. 비재호흡 마스크로 산소를 시작했다. 활력징후와 검사 결과는 자료와 같다. 진단을 확인하기 위해 가장 적절한 검사는? A. 흉부 조영증강 CT B. 뇌 확산강조 MRI C. 혈중 시안화물 농도 D. 맥박산소측정 반복 E. 혈중 일산화탄소헤모글로빈 닫힌 텐트의 숯불, 함께 있던 사람의 같은 증상, 두통·구토·혼돈은 일산화탄소 중독이다. 맥박산소측정기는 일산화탄소헤모글로빈을 산소헤모글로빈과 구별하지 못하고 동맥혈 산소분압도 정상이므로, 여러 파장의 혈중 산소측정(co oximetry)으로 일산화탄소헤모글로빈 농도를 잰다."
+  },
+  {
+   "id": "kmle-2026-1566",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Sudden Breathlessness and Fainting after a Long Flight in a Woman Taking Oral Contraceptives",
+   "tags": [
+    "pulmonary-embolism",
+    "high-risk-pe",
+    "thrombolysis",
+    "shock"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1566.md",
+   "snippet": "42세 여자가 화장실에서 갑자기 숨이 차며 쓰러져 구급차로 왔다. 사흘 전 열네 시간 비행기를 타고 귀국했고, 경구피임약을 먹고 있다. 이틀 전부터 왼쪽 종아리가 붓고 아팠다. 수술이나 다친 일, 뇌출혈이나 뇌졸중, 위장관 출혈 병력은 없다. 수액 1 L를 빠르게 주었으나 혈압이 오르지 않았다. 침상 심장초음파에서 우심실이 크게 늘어나 있고 심실중격이 왼쪽으로 밀려 있으며 심낭액은 없다. 활력징후와 검사 결과는 자료와 같다. ",
+   "text": "Pulmonology Sudden Breathlessness and Fainting after a Long Flight in a Woman Taking Oral Contraceptives pulmonary-embolism high-risk-pe thrombolysis shock KMLE 2026 / Claude 42세 여자가 화장실에서 갑자기 숨이 차며 쓰러져 구급차로 왔다. 사흘 전 열네 시간 비행기를 타고 귀국했고, 경구피임약을 먹고 있다. 이틀 전부터 왼쪽 종아리가 붓고 아팠다. 수술이나 다친 일, 뇌출혈이나 뇌졸중, 위장관 출혈 병력은 없다. 수액 1 L를 빠르게 주었으나 혈압이 오르지 않았다. 침상 심장초음파에서 우심실이 크게 늘어나 있고 심실중격이 왼쪽으로 밀려 있으며 심낭액은 없다. 활력징후와 검사 결과는 자료와 같다. 비분획 헤파린을 시작했다. 다음으로 가장 적절한 처치는? A. 헤파린을 유지하며 병동에서 관찰 B. 하대정맥 필터 삽입 C. 알테플라제 전신 혈전용해 D. 리바록사반 경구로 바꾸기 E. 흉부 CT 혈관조영 뒤 결정 장거리 비행과 경구피임약, 종아리 부종 뒤의 갑작스런 호흡곤란·실신에 수액에 반응하지 않는 저혈압과 우심실 확장이 있으면 고위험 폐색전증이다. 출혈 금기가 없으므로 헤파린과 함께 전신 혈전용해를 한다."
+  },
+  {
+   "id": "kmle-2026-1565",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "New Weakness and Breathlessness on the Third Day of Nutritional Rehabilitation in a Very Thin Young Woman",
+   "tags": [
+    "anorexia-nervosa",
+    "refeeding-syndrome",
+    "hypophosphatemia",
+    "mechanism"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1565.md",
+   "snippet": "19세 여자가 신경성 식욕부진증으로 입원했다. 1년 동안 하루 한 끼 이하로 먹으며 체질량지수가 13.8 kg/m²까지 떨어졌다. 구토나 설사약·이뇨제를 쓴 적은 없다. 입원 뒤 콧줄로 탄수화물 위주의 영양 공급을 빠르게 늘렸는데, 사흘째에 다리에 힘이 빠지고 숨이 차며 발목이 붓기 시작했다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 인 수치가 떨어진 기전으로 가장 적절한 것은? A. 장 점막 위축으로 인 흡수 감소 B",
+   "text": "Psychiatry New Weakness and Breathlessness on the Third Day of Nutritional Rehabilitation in a Very Thin Young Woman anorexia-nervosa refeeding-syndrome hypophosphatemia mechanism KMLE 2026 / Claude 19세 여자가 신경성 식욕부진증으로 입원했다. 1년 동안 하루 한 끼 이하로 먹으며 체질량지수가 13.8 kg/m²까지 떨어졌다. 구토나 설사약·이뇨제를 쓴 적은 없다. 입원 뒤 콧줄로 탄수화물 위주의 영양 공급을 빠르게 늘렸는데, 사흘째에 다리에 힘이 빠지고 숨이 차며 발목이 붓기 시작했다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 인 수치가 떨어진 기전으로 가장 적절한 것은? A. 장 점막 위축으로 인 흡수 감소 B. 부갑상선호르몬 증가로 소변 배설 증가 C. 인슐린 분비 증가로 인이 세포 안으로 이동 D. 반복 구토로 인한 위장관 손실 E. 비타민 D 결핍으로 뼈에서 동원 감소 오래 굶은 몸에 탄수화물이 들어오면 인슐린이 분비되어 포도당과 함께 인·칼륨·마그네슘이 세포 안으로 들어가고, 해당 과정과 ATP 합성에 인이 소비된다. 몸 전체 인이 이미 고갈된 상태라 혈청 인이 급격히 떨어지는 재급식 증후군이다."
+  },
+  {
+   "id": "kmle-2026-1564",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Night-time Agitation and Seeing Insects on the Wall after Hip Surgery in an Older Woman",
+   "tags": [
+    "delirium",
+    "postoperative",
+    "inattention",
+    "older-adult"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1564.md",
+   "snippet": "79세 여자가 넘어져 생긴 대퇴골 목 골절로 수술받고 이틀째 밤에 갑자기 소리를 지르며 수액 줄을 뽑았다. 벽에 벌레가 기어간다며 손을 휘젓는다. 낮에는 꾸벅꾸벅 졸다가 말을 걸면 엉뚱한 대답을 하고, 100에서 7씩 빼기를 시키면 두 번째에서 멈추며 요일을 거꾸로 말하지 못한다. 상태는 몇 시간 사이에도 좋았다 나빴다 한다. 수술 전에는 혼자 장을 보고 가계부를 썼으며 기억력 문제를 지적받은 적이 없다. 수술 뒤 트라마돌을 ",
+   "text": "Psychiatry Night-time Agitation and Seeing Insects on the Wall after Hip Surgery in an Older Woman delirium postoperative inattention older-adult KMLE 2026 / Claude 79세 여자가 넘어져 생긴 대퇴골 목 골절로 수술받고 이틀째 밤에 갑자기 소리를 지르며 수액 줄을 뽑았다. 벽에 벌레가 기어간다며 손을 휘젓는다. 낮에는 꾸벅꾸벅 졸다가 말을 걸면 엉뚱한 대답을 하고, 100에서 7씩 빼기를 시키면 두 번째에서 멈추며 요일을 거꾸로 말하지 못한다. 상태는 몇 시간 사이에도 좋았다 나빴다 한다. 수술 전에는 혼자 장을 보고 가계부를 썼으며 기억력 문제를 지적받은 적이 없다. 수술 뒤 트라마돌을 맞고 있고 소변줄이 들어 있다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 알츠하이머병 치매 B. 수술 후 섬망 C. 정신병적 양상의 우울증 D. 단기 정신병적 장애 E. 루이소체 치매 수술 뒤 몇 시간 만에 시작되어 하루 중 변동하는 의식·주의력 장애와 환시, 수면 각성 주기 장애는 섬망이다. 수술 전 인지 기능이 정상이었으므로 치매보다 섬망이고, 약물·감염·저나트륨혈증 같은 유발 원인을 찾는다."
+  },
+  {
+   "id": "kmle-2026-1563",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Yellow Skin Noticed on the First Day of Life in a Term Newborn",
+   "tags": [
+    "neonatal-jaundice",
+    "hemolysis",
+    "abo-incompatibility",
+    "direct-antiglobulin-test"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1563.md",
+   "snippet": "생후 18시간 된 남아의 얼굴과 가슴이 노랗다고 신생아실 간호사가 알렸다. 39주에 질식분만으로 3.3 kg으로 태어났고 출생 시 손상은 없다. 엄마는 O형 Rh 양성이고 첫째도 생후 이틀째 황달로 광선치료를 받았다. 모유를 잘 빨고 체중은 출생 때보다 2% 줄었다. 머리에 혈종이나 멍은 없고 간과 비장은 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 원인을 찾기 위해 가장 먼저 할 검사는? A. 갑상선기능검사 B. ",
+   "text": "Pediatrics Yellow Skin Noticed on the First Day of Life in a Term Newborn neonatal-jaundice hemolysis abo-incompatibility direct-antiglobulin-test KMLE 2026 / Claude 생후 18시간 된 남아의 얼굴과 가슴이 노랗다고 신생아실 간호사가 알렸다. 39주에 질식분만으로 3.3 kg으로 태어났고 출생 시 손상은 없다. 엄마는 O형 Rh 양성이고 첫째도 생후 이틀째 황달로 광선치료를 받았다. 모유를 잘 빨고 체중은 출생 때보다 2% 줄었다. 머리에 혈종이나 멍은 없고 간과 비장은 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 원인을 찾기 위해 가장 먼저 할 검사는? A. 갑상선기능검사 B. 간·담도 초음파 C. 아기 혈액형과 직접 항글로불린 검사 D. G6PD 효소 활성 E. 소변 환원당 검사 생후 24시간 안의 황달은 병적 황달이고, 간접 빌리루빈 우세와 빈혈·망상적혈구 증가는 용혈을 가리킨다. 엄마가 O형이고 첫째도 일찍 황달이 있었으므로 ABO 부적합 용혈을 먼저 확인하려고 아기 혈액형과 직접 항글로불린 검사를 한다."
+  },
+  {
+   "id": "kmle-2026-1562",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Six Days of Fever with Red Eyes and Cracked Lips in a Two-year-old Boy",
+   "tags": [
+    "incomplete-kawasaki-disease",
+    "ivig",
+    "coronary-artery",
+    "fever"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1562.md",
+   "snippet": "2세 남아가 엿새 전부터 39 ℃가 넘는 열이 해열제를 먹어도 내리지 않아 왔다. 사흘 전부터 양쪽 눈의 흰자위가 붉어졌지만 눈곱은 없고, 입술이 붉어지며 갈라져 피가 맺힌다. 몸에 발진은 없고 손발이 붓거나 붉지 않으며, 목에 만져지는 림프절은 1 cm 이하이다. 사흘 전 다른 병원에서 받은 경구 항생제를 먹었으나 열은 그대로다. 심장초음파에서 왼쪽 앞내림 관상동맥의 Z 점수가 2.7이다. 활력징후와 검사 결과는 자료와 같다",
+   "text": "Pediatrics Six Days of Fever with Red Eyes and Cracked Lips in a Two-year-old Boy incomplete-kawasaki-disease ivig coronary-artery fever KMLE 2026 / Claude 2세 남아가 엿새 전부터 39 ℃가 넘는 열이 해열제를 먹어도 내리지 않아 왔다. 사흘 전부터 양쪽 눈의 흰자위가 붉어졌지만 눈곱은 없고, 입술이 붉어지며 갈라져 피가 맺힌다. 몸에 발진은 없고 손발이 붓거나 붉지 않으며, 목에 만져지는 림프절은 1 cm 이하이다. 사흘 전 다른 병원에서 받은 경구 항생제를 먹었으나 열은 그대로다. 심장초음파에서 왼쪽 앞내림 관상동맥의 Z 점수가 2.7이다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손 + 반코마이신 정맥 B. 아목시실린 클라불란산 + 해열제 C. 경구 프레드니솔론 + 항히스타민 D. 정맥 면역글로불린 + 아스피린 E. 아시클로버 정맥 + 수액 공급 5일 넘는 발열에 주요 기준이 두 개뿐이지만 CRP 상승과 저알부민혈증·빈혈·ALT 상승·무균 농뇨, 관상동맥 Z 점수 2.7이 있어 불완전 가와사키병이다. 관상동맥류를 막으려고 발병 10일 안에 정맥 면역글로불린과 아스피린을 쓴다."
+  },
+  {
+   "id": "kmle-2026-1561",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Months of Night Shoulder Pain and Difficulty Combing Hair in a Woman with Diabetes",
+   "tags": [
+    "adhesive-capsulitis",
+    "rotator-cuff",
+    "shoulder-pain",
+    "diabetes"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1561.md",
+   "snippet": "53세 여자가 넉 달 전부터 오른쪽 어깨가 아파 왔다. 처음에는 쑤시기만 했는데 점점 밤에 아파 잠을 깨고, 머리를 빗거나 뒷주머니에 손을 넣기 어려워졌다. 넘어지거나 무거운 것을 들다 다친 적은 없다. 10년 전부터 2형 당뇨병으로 약을 먹고 있다. 오른쪽 어깨의 능동 운동과 의사가 움직여 주는 수동 운동 범위가 똑같이 줄어 있고, 특히 바깥돌림이 20°에서 막힌다. 막히기 전 범위 안에서 어깨 근력은 정상이다. 어깨뼈 위쪽",
+   "text": "Orthopedics Months of Night Shoulder Pain and Difficulty Combing Hair in a Woman with Diabetes adhesive-capsulitis rotator-cuff shoulder-pain diabetes KMLE 2026 / Claude 53세 여자가 넉 달 전부터 오른쪽 어깨가 아파 왔다. 처음에는 쑤시기만 했는데 점점 밤에 아파 잠을 깨고, 머리를 빗거나 뒷주머니에 손을 넣기 어려워졌다. 넘어지거나 무거운 것을 들다 다친 적은 없다. 10년 전부터 2형 당뇨병으로 약을 먹고 있다. 오른쪽 어깨의 능동 운동과 의사가 움직여 주는 수동 운동 범위가 똑같이 줄어 있고, 특히 바깥돌림이 20°에서 막힌다. 막히기 전 범위 안에서 어깨 근력은 정상이다. 어깨뼈 위쪽 압통은 뚜렷하지 않고 목 움직임과 팔의 감각·반사는 정상이다. 어깨 단순 X선은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 회전근개 완전 파열 B. 석회성 건염 C. 어깨 충돌증후군 D. 유착관절낭염 E. 경추 신경뿌리병증 외상 없이 서서히 생긴 어깨 통증에서 능동과 수동 운동 범위가 모두 줄고 특히 바깥돌림이 막히며 X선이 정상이면 유착관절낭염이다. 당뇨병은 잘 알려진 위험 요인이다."
+  },
+  {
+   "id": "kmle-2026-1560",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Refusing to Bear Weight with Fever and Hip Pain in a Six-year-old Boy",
+   "tags": [
+    "septic-arthritis",
+    "transient-synovitis",
+    "hip-aspiration",
+    "kocher-criteria"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1560.md",
+   "snippet": "6세 남아가 이틀 전부터 오른쪽 엉덩이가 아프다며 절뚝거리다 오늘은 아예 서지 못해 왔다. 일주일 전 콧물과 기침이 있었다. 넘어지거나 다친 적은 없다. 오른쪽 고관절을 굽히고 바깥으로 돌린 자세로 누워 있으며, 고관절을 조금만 안쪽으로 돌려도 울며 아파한다. 무릎과 발목은 붓지 않았다. 고관절 초음파에서 오른쪽 관절 안에 액체가 고여 있다. 단순 X선은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 단계는",
+   "text": "Orthopedics Refusing to Bear Weight with Fever and Hip Pain in a Six-year-old Boy septic-arthritis transient-synovitis hip-aspiration kocher-criteria KMLE 2026 / Claude 6세 남아가 이틀 전부터 오른쪽 엉덩이가 아프다며 절뚝거리다 오늘은 아예 서지 못해 왔다. 일주일 전 콧물과 기침이 있었다. 넘어지거나 다친 적은 없다. 오른쪽 고관절을 굽히고 바깥으로 돌린 자세로 누워 있으며, 고관절을 조금만 안쪽으로 돌려도 울며 아파한다. 무릎과 발목은 붓지 않았다. 고관절 초음파에서 오른쪽 관절 안에 액체가 고여 있다. 단순 X선은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 단계는? A. 이부프로펜 투여 후 1주 관찰 B. 초음파 유도 고관절 천자 C. 고관절 조영증강 MRI D. 정맥 항생제 투여 후 관찰 E. 테크네슘 뼈 스캔 발열 38.5 ℃ 이상, 체중 부하 거부, 백혈구·적혈구침강속도·CRP 상승은 일과성 활막염보다 화농관절염을 강하게 시사한다. 항생제 전에 고관절을 천자해 관절액 검사와 배양을 하고, 확인되면 응급 배농한다."
+  },
+  {
+   "id": "kmle-2026-1559",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Flashes, Floaters and a Rising Shadow in the Vision of a Highly Myopic Man",
+   "tags": [
+    "retinal-detachment",
+    "photopsia",
+    "floaters",
+    "myopia"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1559.md",
+   "snippet": "58세 남자가 오른눈이 이상해 왔다. 사흘 전부터 오른눈 바깥쪽에 번쩍이는 빛이 보이고 검은 점과 실오라기 같은 것이 많이 떠다녔다. 오늘 아침부터는 아래쪽에서 검은 커튼이 올라오듯 위쪽 시야가 가려진다. 눈 통증이나 충혈은 없다. 양눈 모두 −8 디옵터 근시로 안경을 쓴다. 오른눈 교정시력은 0.5이고 오른눈에 가벼운 상대구심동공결손이 있다. 세극등 검사에서 전방은 깨끗하고 앞유리체에 갈색 색소 알갱이가 떠 있다. 당뇨병과 ",
+   "text": "Ophthalmology Flashes, Floaters and a Rising Shadow in the Vision of a Highly Myopic Man retinal-detachment photopsia floaters myopia KMLE 2026 / Claude 58세 남자가 오른눈이 이상해 왔다. 사흘 전부터 오른눈 바깥쪽에 번쩍이는 빛이 보이고 검은 점과 실오라기 같은 것이 많이 떠다녔다. 오늘 아침부터는 아래쪽에서 검은 커튼이 올라오듯 위쪽 시야가 가려진다. 눈 통증이나 충혈은 없다. 양눈 모두 −8 디옵터 근시로 안경을 쓴다. 오른눈 교정시력은 0.5이고 오른눈에 가벼운 상대구심동공결손이 있다. 세극등 검사에서 전방은 깨끗하고 앞유리체에 갈색 색소 알갱이가 떠 있다. 당뇨병과 고혈압은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 열공망막박리 B. 유리체출혈 C. 후유리체박리 D. 망막중심정맥폐쇄 E. 조짐 편두통 고도근시 환자의 번쩍임과 날파리 뒤 커튼처럼 다가오는 시야 결손, 상대구심동공결손, 앞유리체 색소 알갱이는 열공망막박리다. 아래쪽 망막이 떨어지면 위쪽 시야가 가려진다."
+  },
+  {
+   "id": "kmle-2026-1558",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Sudden Painless Loss of Vision in One Eye with Jaw Pain while Chewing in an Older Woman",
+   "tags": [
+    "giant-cell-arteritis",
+    "central-retinal-artery-occlusion",
+    "steroids",
+    "vision-loss"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1558.md",
+   "snippet": "76세 여자가 오늘 아침 깨어 보니 왼눈이 거의 보이지 않아 왔다. 눈 통증은 없다. 3주 전부터 관자놀이가 욱신거리며 아프고, 음식을 씹으면 턱이 아파 쉬었다가 다시 씹는다. 입맛이 없고 한 달 사이 2 kg이 빠졌다. 왼눈 시력은 눈앞 손가락 수를 세는 정도이고 왼눈에 상대구심동공결손이 있다. 안저검사에서 왼눈 망막이 창백하게 부어 있고 황반 중심이 체리빛으로 보인다. 왼쪽 관자놀이 동맥이 굵고 눌리면 아프며 맥박이 약하다",
+   "text": "Ophthalmology Sudden Painless Loss of Vision in One Eye with Jaw Pain while Chewing in an Older Woman giant-cell-arteritis central-retinal-artery-occlusion steroids vision-loss KMLE 2026 / Claude 76세 여자가 오늘 아침 깨어 보니 왼눈이 거의 보이지 않아 왔다. 눈 통증은 없다. 3주 전부터 관자놀이가 욱신거리며 아프고, 음식을 씹으면 턱이 아파 쉬었다가 다시 씹는다. 입맛이 없고 한 달 사이 2 kg이 빠졌다. 왼눈 시력은 눈앞 손가락 수를 세는 정도이고 왼눈에 상대구심동공결손이 있다. 안저검사에서 왼눈 망막이 창백하게 부어 있고 황반 중심이 체리빛으로 보인다. 왼쪽 관자놀이 동맥이 굵고 눌리면 아프며 맥박이 약하다. 오른눈은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 먼저 할 처치는? A. 안구 마사지와 전방 천자 B. 고용량 메틸프레드니솔론 정맥 투여 C. 측두동맥 생검 결과 확인 뒤 치료 결정 D. 아스피린 투여와 경동맥 초음파 E. 정맥 알테플라제 투여 체리빛 반점을 동반한 망막중심동맥폐쇄에 관자놀이 두통·턱 파행·체중 감소·높은 적혈구침강속도가 있으면 거대세포동맥염에 의한 동맥염성 폐쇄다. 반대쪽 눈의 실명을 막으려면 생검을 기다리지 않고 즉시 고용량 스테로이드를 시작한다."
+  },
+  {
+   "id": "kmle-2026-1557",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Abrupt Right Lower Abdominal Pain and Vomiting during Exercise in a Young Woman with an Ovarian Cyst",
+   "tags": [
+    "adnexal-torsion",
+    "laparoscopy",
+    "ovarian-preservation",
+    "acute-pelvic-pain"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1557.md",
+   "snippet": "24세 여자가 3시간 전 줄넘기를 하다 갑자기 오른쪽 아랫배가 심하게 아파 왔다. 통증은 쥐어짜듯 계속되고 오는 동안 세 번 토했다. 설사나 배뇨 증상은 없다. 마지막 월경은 2주 전이었고 성관계 상대는 한 명이다. 내년에 결혼해 아이를 가질 계획이다. 오른쪽 아랫배에 압통이 있고 반발통은 약하다. 질 분비물은 정상이며 자궁경부 움직임 통증은 없다. 골반 초음파에서 오른쪽 난소가 7 cm 낭성 종괴와 함께 커지고 부어 있으며,",
+   "text": "Obstetrics & Gynecology Abrupt Right Lower Abdominal Pain and Vomiting during Exercise in a Young Woman with an Ovarian Cyst adnexal-torsion laparoscopy ovarian-preservation acute-pelvic-pain KMLE 2026 / Claude 24세 여자가 3시간 전 줄넘기를 하다 갑자기 오른쪽 아랫배가 심하게 아파 왔다. 통증은 쥐어짜듯 계속되고 오는 동안 세 번 토했다. 설사나 배뇨 증상은 없다. 마지막 월경은 2주 전이었고 성관계 상대는 한 명이다. 내년에 결혼해 아이를 가질 계획이다. 오른쪽 아랫배에 압통이 있고 반발통은 약하다. 질 분비물은 정상이며 자궁경부 움직임 통증은 없다. 골반 초음파에서 오른쪽 난소가 7 cm 낭성 종괴와 함께 커지고 부어 있으며, 난소 혈관이 꼬인 소용돌이 모양이 보인다. 도플러에서 난소 안 동맥 혈류는 약하게 잡힌다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 진통제 투여 후 6주 뒤 초음파 재검 B. 응급 복강경 염전 풀기와 난소 보존 C. 응급 복강경 오른쪽 부속기 절제 D. 정맥 항생제 투여와 입원 관찰 E. 경구 피임약으로 낭종 크기 줄이기 운동 중 갑작스런 한쪽 아랫배 통증과 구토, 커진 난소와 꼬인 혈관 모양은 부속기 염전이다. 도플러 혈류가 있어도 염전을 배제하지 못하므로 응급 복강경을 하고, 생식 능력을 지키려고 난소가 검게 보여도 꼬임을 풀어 보존한다."
+  },
+  {
+   "id": "kmle-2026-1556",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Sudden Painless Bright Red Vaginal Bleeding at 32 Weeks",
+   "tags": [
+    "placenta-previa",
+    "antepartum-hemorrhage",
+    "ultrasound",
+    "digital-exam"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1556.md",
+   "snippet": "31세 여자(임신 2회, 출산 1회)가 임신 32주에 30분 전 갑자기 통증 없이 선홍색 질출혈이 있어 왔다. 패드 두 장이 젖었고 지금은 줄었다. 3년 전 첫째를 제왕절개로 낳았다. 이번 임신은 외국에서 지내다 최근 귀국해 20주 이후 초음파 검사를 받지 않았다. 자궁은 부드럽고 압통이 없으며 수축은 만져지지 않는다. 태아 심박수는 140회/분이고 기저선 변이가 정상이며 감속은 없다. 활력징후와 검사 결과는 자료와 같다. 가",
+   "text": "Obstetrics & Gynecology Sudden Painless Bright Red Vaginal Bleeding at 32 Weeks placenta-previa antepartum-hemorrhage ultrasound digital-exam KMLE 2026 / Claude 31세 여자(임신 2회, 출산 1회)가 임신 32주에 30분 전 갑자기 통증 없이 선홍색 질출혈이 있어 왔다. 패드 두 장이 젖었고 지금은 줄었다. 3년 전 첫째를 제왕절개로 낳았다. 이번 임신은 외국에서 지내다 최근 귀국해 20주 이후 초음파 검사를 받지 않았다. 자궁은 부드럽고 압통이 없으며 수축은 만져지지 않는다. 태아 심박수는 140회/분이고 기저선 변이가 정상이며 감속은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 먼저 할 검사는? A. 손가락 내진으로 자궁경부 개대 확인 B. 질경 검사와 자궁경부 세포검사 C. 경복부 초음파로 태반 위치 확인 D. 양수천자로 태아 폐성숙 확인 E. 옥시토신 자궁수축 검사 임신 3분기의 통증 없는 선홍색 출혈과 부드러운 자궁은 전치태반을 먼저 의심한다. 태반 위치를 모르는 상태의 손가락 내진은 대량 출혈을 일으킬 수 있으므로, 먼저 초음파로 태반 위치를 확인한다."
+  },
+  {
+   "id": "kmle-2026-1555",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Waking Up with a Drooping Right Face in a Young Woman",
+   "tags": [
+    "facial-palsy",
+    "bell-palsy",
+    "upper-vs-lower-motor-neuron"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1555.md",
+   "snippet": "38세 여자가 오늘 아침 일어나 보니 오른쪽 얼굴이 처져 왔다. 어제 오후부터 오른쪽 귀 뒤가 뻐근했다. 물을 마시면 오른쪽 입가로 흐르고, 소리가 크게 울려 들리며 혀 앞쪽 맛이 둔하다. 오른쪽 이마에 주름을 잡지 못하고 오른쪽 눈이 완전히 감기지 않는다. 귓바퀴와 바깥귀길에 물집이 없고 고막은 정상이다. 귀밑에 덩이는 만져지지 않는다. 팔다리 근력과 감각, 말하기, 다른 뇌신경 검사는 정상이다. 활력징후와 검사 결과는 자료",
+   "text": "Neurology Waking Up with a Drooping Right Face in a Young Woman facial-palsy bell-palsy upper-vs-lower-motor-neuron KMLE 2026 / Claude 38세 여자가 오늘 아침 일어나 보니 오른쪽 얼굴이 처져 왔다. 어제 오후부터 오른쪽 귀 뒤가 뻐근했다. 물을 마시면 오른쪽 입가로 흐르고, 소리가 크게 울려 들리며 혀 앞쪽 맛이 둔하다. 오른쪽 이마에 주름을 잡지 못하고 오른쪽 눈이 완전히 감기지 않는다. 귓바퀴와 바깥귀길에 물집이 없고 고막은 정상이다. 귀밑에 덩이는 만져지지 않는다. 팔다리 근력과 감각, 말하기, 다른 뇌신경 검사는 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 람세이헌트 증후군 B. 왼쪽 중대뇌동맥 영역 뇌경색 C. 특발 안면신경마비 D. 귀밑샘 악성 종양 E. 급성 중이염에 의한 안면신경마비 이마를 포함한 한쪽 얼굴 전체의 마비는 하위운동신경원(말초) 안면신경마비다. 물집·고막 이상·귀밑 덩이·다른 신경 결손이 없어 다른 원인의 가능성이 낮으므로 특발 안면신경마비다."
+  },
+  {
+   "id": "kmle-2026-1554",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Ascending Leg Weakness Two Weeks after a Bout of Diarrhea in a Young Man",
+   "tags": [
+    "guillain-barre-syndrome",
+    "ivig",
+    "plasma-exchange",
+    "areflexia"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1554.md",
+   "snippet": "36세 남자가 닷새 전부터 발끝이 저리고 다리에 힘이 빠지더니 점점 위로 올라와 오늘은 부축 없이 걷지 못해 왔다. 2주 전 이틀 동안 설사를 했다. 팔 힘은 약간 떨어졌고 숨이 차거나 삼키기 힘들지는 않다. 다리 근력은 3/5이고 무릎과 발목 힘줄 반사는 나오지 않는다. 몸통에 감각이 바뀌는 높이는 없고 소변과 대변은 정상으로 본다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 고용량 메틸프레드니솔론 정맥",
+   "text": "Neurology Ascending Leg Weakness Two Weeks after a Bout of Diarrhea in a Young Man guillain-barre-syndrome ivig plasma-exchange areflexia KMLE 2026 / Claude 36세 남자가 닷새 전부터 발끝이 저리고 다리에 힘이 빠지더니 점점 위로 올라와 오늘은 부축 없이 걷지 못해 왔다. 2주 전 이틀 동안 설사를 했다. 팔 힘은 약간 떨어졌고 숨이 차거나 삼키기 힘들지는 않다. 다리 근력은 3/5이고 무릎과 발목 힘줄 반사는 나오지 않는다. 몸통에 감각이 바뀌는 높이는 없고 소변과 대변은 정상으로 본다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 고용량 메틸프레드니솔론 정맥 B. 경구 프레드니솔론 감량 요법 C. 경구 피리도스티그민 D. 정맥 아시클로버 14일 E. 정맥 면역글로불린 5일 설사 뒤 상행성 대칭성 근력 약화와 반사 소실, 뇌척수액 단백 세포 해리는 길랭 바레 증후군이다. 부축 없이 걷지 못하는 중등도 이상이므로 발병 4주 안에 정맥 면역글로불린(또는 혈장교환)을 쓰며, 스테로이드는 효과가 없다."
+  },
+  {
+   "id": "kmle-2026-1553",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Third Calcium Stone Episode despite Drinking More Water in a Middle-aged Man",
+   "tags": [
+    "nephrolithiasis",
+    "idiopathic-hypercalciuria",
+    "thiazide",
+    "mechanism"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1553.md",
+   "snippet": "42세 남자가 세 번째 요로결석으로 비뇨의학과 치료를 받은 뒤 재발 예방을 위해 왔다. 결석 성분 분석은 칼슘옥살산이었다. 2년 전부터 하루 물을 2.5 L 넘게 마시고 짠 음식을 줄였으나 다시 결석이 생겼다. 칼슘 보충제나 비타민 D는 먹지 않는다. 활력징후와 검사 결과는 자료와 같다. 하이드로클로로티아지드를 시작하기로 했다. 이 약이 결석 재발을 줄이는 기전은? A. 원위곡세뇨관 Na Cl 공동수송체 억제 B. 집합관 상피",
+   "text": "Nephrology Third Calcium Stone Episode despite Drinking More Water in a Middle-aged Man nephrolithiasis idiopathic-hypercalciuria thiazide mechanism KMLE 2026 / Claude 42세 남자가 세 번째 요로결석으로 비뇨의학과 치료를 받은 뒤 재발 예방을 위해 왔다. 결석 성분 분석은 칼슘옥살산이었다. 2년 전부터 하루 물을 2.5 L 넘게 마시고 짠 음식을 줄였으나 다시 결석이 생겼다. 칼슘 보충제나 비타민 D는 먹지 않는다. 활력징후와 검사 결과는 자료와 같다. 하이드로클로로티아지드를 시작하기로 했다. 이 약이 결석 재발을 줄이는 기전은? A. 원위곡세뇨관 Na Cl 공동수송체 억제 B. 집합관 상피 나트륨 통로 차단 C. 근위세뇨관 탄산탈수효소 억제 D. 소변 구연산 배설 증가 E. 헨레고리 굵은 오름가지의 Na K 2Cl 억제 혈청 칼슘과 PTH가 정상인 고칼슘뇨는 특발 고칼슘뇨다. 티아지드는 원위곡세뇨관의 Na Cl 공동수송체를 억제해 세포 안 나트륨을 낮추고 기저측 Na Ca 교환으로 칼슘 재흡수를 늘리며, 가벼운 체액 감소로 근위세뇨관 재흡수도 늘려 소변 칼슘을 줄인다."
+  },
+  {
+   "id": "kmle-2026-1552",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Confusion with a Large Anion Gap and Urine Crystals in a Car Mechanic",
+   "tags": [
+    "toxic-alcohol",
+    "ethylene-glycol",
+    "osmolar-gap",
+    "anion-gap-acidosis"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1552.md",
+   "snippet": "47세 남자가 차고에서 혼자 쓰러져 있다가 아내에게 발견되어 왔다. 자동차 정비소를 운영하며, 어젯밤 부부싸움 뒤 혼자 차고에 있었다. 횡설수설하고 숨을 깊고 빠르게 쉰다. 시야가 흐리다거나 잘 안 보인다는 말은 없고 동공 반응은 정상이다. 당뇨병이나 신장병 병력은 없다. 소변 현미경검사에서 봉투 모양과 바늘 모양의 결정이 많이 보인다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 원인은? A. 메탄올 중독 B. ",
+   "text": "Nephrology Confusion with a Large Anion Gap and Urine Crystals in a Car Mechanic toxic-alcohol ethylene-glycol osmolar-gap anion-gap-acidosis KMLE 2026 / Claude 47세 남자가 차고에서 혼자 쓰러져 있다가 아내에게 발견되어 왔다. 자동차 정비소를 운영하며, 어젯밤 부부싸움 뒤 혼자 차고에 있었다. 횡설수설하고 숨을 깊고 빠르게 쉰다. 시야가 흐리다거나 잘 안 보인다는 말은 없고 동공 반응은 정상이다. 당뇨병이나 신장병 병력은 없다. 소변 현미경검사에서 봉투 모양과 바늘 모양의 결정이 많이 보인다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 원인은? A. 메탄올 중독 B. 이소프로판올 중독 C. 당뇨병케톤산증 D. 살리실산 중독 E. 에틸렌글리콜 중독 음이온차 32의 대사성 산증에 삼투압차가 약 38로 커져 있어 독성 알코올을 의심한다. 급성 신손상과 소변의 칼슘 옥살산 결정, 시각 증상이 없는 점이 에틸렌글리콜 중독을 가리킨다."
+  },
+  {
+   "id": "kmle-2026-1551",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Fever Every Other Day in a Young Man after Military Service near the Border",
+   "tags": [
+    "vivax-malaria",
+    "primaquine",
+    "g6pd",
+    "korea"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1551.md",
+   "snippet": "23세 남자가 일주일 전부터 이틀에 한 번씩 오한과 함께 열이 오르고 땀을 흘린 뒤 내린다며 왔다. 석 달 전까지 경기도 파주의 휴전선 근처 부대에서 복무했고 해외여행은 없다. 의식은 맑고 경련·황달·호흡곤란은 없다. 말초혈액 도말에서 커진 적혈구 안에 아메바 모양의 영양형과 붉은 점들이 보이며, 감염 적혈구는 0.4%이다. 클로로퀸 치료를 시작했다. 재발을 막는 치료를 시작하기 전에 확인해야 할 검사로 가장 적절한 것은? A",
+   "text": "Infectious Disease Fever Every Other Day in a Young Man after Military Service near the Border vivax-malaria primaquine g6pd korea KMLE 2026 / Claude 23세 남자가 일주일 전부터 이틀에 한 번씩 오한과 함께 열이 오르고 땀을 흘린 뒤 내린다며 왔다. 석 달 전까지 경기도 파주의 휴전선 근처 부대에서 복무했고 해외여행은 없다. 의식은 맑고 경련·황달·호흡곤란은 없다. 말초혈액 도말에서 커진 적혈구 안에 아메바 모양의 영양형과 붉은 점들이 보이며, 감염 적혈구는 0.4%이다. 클로로퀸 치료를 시작했다. 재발을 막는 치료를 시작하기 전에 확인해야 할 검사로 가장 적절한 것은? A. 말초혈액 도말 매일 반복 B. 심전도 QT 간격 C. 복부 초음파 비장 크기 D. 시력·안저 검사 E. G6PD 효소 활성 휴전선 근처 복무, 이틀 간격 발열, 커진 적혈구와 붉은 점은 삼일열 말라리아다. 간에 숨어 있는 휴면체가 재발을 일으키므로 프리마퀸을 써야 하는데, G6PD 결핍이면 용혈을 일으키므로 먼저 G6PD 활성을 확인한다."
+  },
+  {
+   "id": "kmle-2026-1550",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Screening before a Biologic Agent in a Man with Ankylosing Spondylitis",
+   "tags": [
+    "latent-tuberculosis",
+    "igra",
+    "tnf-inhibitor",
+    "screening"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1550.md",
+   "snippet": "41세 남자가 강직척추염으로 아달리무맙을 시작하기 전에 왔다. 서로 다른 소염진통제 두 가지를 석 달 넘게 먹었으나 허리 통증과 아침 강직이 계속된다. 결핵을 앓거나 치료받은 적은 없고, 기침·가래·발열·밤에 땀 흘림·체중 감소는 없다. 술은 거의 마시지 않는다. 흉부 X선은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 아달리무맙을 바로 시작하고 증상을 관찰한다 B. 객담 항산균 검사 3회 결과를",
+   "text": "Infectious Disease Screening before a Biologic Agent in a Man with Ankylosing Spondylitis latent-tuberculosis igra tnf-inhibitor screening KMLE 2026 / Claude 41세 남자가 강직척추염으로 아달리무맙을 시작하기 전에 왔다. 서로 다른 소염진통제 두 가지를 석 달 넘게 먹었으나 허리 통증과 아침 강직이 계속된다. 결핵을 앓거나 치료받은 적은 없고, 기침·가래·발열·밤에 땀 흘림·체중 감소는 없다. 술은 거의 마시지 않는다. 흉부 X선은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 아달리무맙을 바로 시작하고 증상을 관찰한다 B. 객담 항산균 검사 3회 결과를 보고 아달리무맙을 정한다 C. 4제 항결핵제 6개월을 마친 뒤 아달리무맙을 시작한다 D. 잠복결핵 치료를 시작하고 3주 뒤 아달리무맙을 시작한다 E. 아달리무맙 대신 경구 프레드니솔론으로 바꾼다 TNF 억제제는 잠복결핵을 활동성 결핵으로 재활성화한다. IGRA 양성이고 증상이 없으며 흉부 X선이 정상이면 잠복결핵이므로, 잠복결핵 치료를 시작하고 국내 권고대로 최소 3주 뒤 TNF 억제제를 시작한다."
+  },
+  {
+   "id": "kmle-2026-1549",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Black Stools and Dizziness in a Woman Taking an Anticoagulant for Atrial Fibrillation",
+   "tags": [
+    "warfarin",
+    "major-bleeding",
+    "prothrombin-complex-concentrate",
+    "vitamin-k"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1549.md",
+   "snippet": "74세 여자가 이틀 전부터 검은 변을 보고 오늘 아침 일어서다 어지러워 주저앉아 왔다. 심방세동으로 와파린을 5년째 먹고 있고, 일주일 전 폐렴으로 항생제를 처방받았다. 기계 판막은 없다. 직장수지검사에서 검은 변이 묻어난다. 굵은 정맥관 두 개로 수액을 시작하고 적혈구 수혈과 내시경을 준비하고 있다. 활력징후와 검사 결과는 자료와 같다. 와파린을 중단한 뒤 항응고 효과를 되돌리는 처치로 가장 적절한 것은? A. 비타민 K 2",
+   "text": "Hematology Black Stools and Dizziness in a Woman Taking an Anticoagulant for Atrial Fibrillation warfarin major-bleeding prothrombin-complex-concentrate vitamin-k KMLE 2026 / Claude 74세 여자가 이틀 전부터 검은 변을 보고 오늘 아침 일어서다 어지러워 주저앉아 왔다. 심방세동으로 와파린을 5년째 먹고 있고, 일주일 전 폐렴으로 항생제를 처방받았다. 기계 판막은 없다. 직장수지검사에서 검은 변이 묻어난다. 굵은 정맥관 두 개로 수액을 시작하고 적혈구 수혈과 내시경을 준비하고 있다. 활력징후와 검사 결과는 자료와 같다. 와파린을 중단한 뒤 항응고 효과를 되돌리는 처치로 가장 적절한 것은? A. 비타민 K 2.5 mg 경구 투여 B. 와파린만 끊고 INR 추적 C. 신선동결혈장 + 비타민 K 경구 D. 4인자 프로트롬빈 복합체 + 비타민 K 정맥 E. 이다루시주맙 정맥 투여 와파린 복용 중 저혈압을 동반한 주요 출혈은 즉시 되돌려야 한다. 4인자 프로트롬빈 복합체는 적은 용량으로 빨리 INR을 교정하고, 정맥 비타민 K는 몇 시간 뒤부터 효과를 유지시킨다."
+  },
+  {
+   "id": "kmle-2026-1548",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Months of Fatigue and Exertional Breathlessness in an Older Man with Small Red Cells",
+   "tags": [
+    "iron-deficiency-anemia",
+    "gastrointestinal-blood-loss",
+    "endoscopy",
+    "older-adult"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1548.md",
+   "snippet": "67세 남자가 석 달 전부터 피곤하고 계단을 오르면 숨이 차서 왔다. 검은 변이나 혈변을 본 적은 없고 배변 습관 변화와 체중 감소도 없다. 아스피린이나 소염진통제를 먹지 않으며, 고기와 채소를 골고루 먹는다. 지난해 건강검진의 혈색소는 14.1 g/dL였다. 대장내시경은 받아 본 적이 없다. 결막이 창백하고 배는 부드러우며 덩이는 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 검사는? A. 위내시경",
+   "text": "Hematology Months of Fatigue and Exertional Breathlessness in an Older Man with Small Red Cells iron-deficiency-anemia gastrointestinal-blood-loss endoscopy older-adult KMLE 2026 / Claude 67세 남자가 석 달 전부터 피곤하고 계단을 오르면 숨이 차서 왔다. 검은 변이나 혈변을 본 적은 없고 배변 습관 변화와 체중 감소도 없다. 아스피린이나 소염진통제를 먹지 않으며, 고기와 채소를 골고루 먹는다. 지난해 건강검진의 혈색소는 14.1 g/dL였다. 대장내시경은 받아 본 적이 없다. 결막이 창백하고 배는 부드러우며 덩이는 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 검사는? A. 위내시경과 대장내시경 B. 골수 흡인과 생검 C. 혈색소 전기영동 D. 분변잠혈검사 E. 경구 철분 3개월 뒤 혈색소 재검 페리틴이 매우 낮은 소구성 빈혈은 철결핍빈혈이고, 섭취가 충분한 노인 남성의 새 철결핍은 위장관 출혈(특히 대장암·위암)을 뜻하므로 증상이 없어도 위내시경과 대장내시경을 모두 한다."
+  },
+  {
+   "id": "kmle-2026-1547",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Left Lower Abdominal Pain and Fever with a Pericolic Fluid Collection on CT",
+   "tags": [
+    "diverticulitis",
+    "abscess",
+    "percutaneous-drainage",
+    "hinchey"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1547.md",
+   "snippet": "61세 여자가 나흘 전부터 왼쪽 아랫배가 아프고 열이 나서 왔다. 3년 전 대장내시경에서 구불결장 게실을 들었다. 왼쪽 아랫배에 국한된 압통과 반발통이 있고 배 전체는 부드러우며 근육 강직은 없다. 복부 CT에서 구불결장 벽이 두꺼워지고 주위 지방에 염증이 있으며, 결장 옆에 테두리가 조영되는 지름 5 cm의 액체 고임이 있다. 복강 내 유리 공기나 복강 전체로 퍼진 액체는 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적",
+   "text": "General Surgery Left Lower Abdominal Pain and Fever with a Pericolic Fluid Collection on CT diverticulitis abscess percutaneous-drainage hinchey KMLE 2026 / Claude 61세 여자가 나흘 전부터 왼쪽 아랫배가 아프고 열이 나서 왔다. 3년 전 대장내시경에서 구불결장 게실을 들었다. 왼쪽 아랫배에 국한된 압통과 반발통이 있고 배 전체는 부드러우며 근육 강직은 없다. 복부 CT에서 구불결장 벽이 두꺼워지고 주위 지방에 염증이 있으며, 결장 옆에 테두리가 조영되는 지름 5 cm의 액체 고임이 있다. 복강 내 유리 공기나 복강 전체로 퍼진 액체는 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 경구 항생제 + 외래 추적 B. 정맥 항생제 + CT 유도 경피 배액 C. 정맥 항생제 + 응급 하트만 수술 D. 정맥 항생제 + 응급 대장내시경 E. 정맥 항생제 + 복강경 세척 구불결장 게실염에 4 cm 이상의 결장 주위 고름집이 있고 범발성 복막염·유리 공기가 없는 안정된 환자는 정맥 항생제와 영상 유도 경피 배액으로 치료하고, 6–8주 뒤 대장내시경으로 암을 배제한다."
+  },
+  {
+   "id": "kmle-2026-1546",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Persistent Hypotension after a Head-on Car Crash with a Seat-belt Mark",
+   "tags": [
+    "blunt-abdominal-trauma",
+    "fast",
+    "hemorrhagic-shock",
+    "laparotomy"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1546.md",
+   "snippet": "34세 남자가 승용차를 운전하다 정면충돌해 구급차로 왔다. 아랫배를 가로지르는 안전벨트 자국이 있고 배 전체에 압통이 있다. 도착 때 혈압 76/44 mmHg, 맥박 132회/분이었다. 묻는 말에 대답하지만 처져 있다. 기도는 유지되고 양쪽 호흡음은 대칭이며, 흉부 X선에서 기흉·혈흉은 없고 골반 X선에서 골절은 없다. 사지에 큰 상처나 외부 출혈은 없다. 따뜻한 결정질 수액 1 L와 O형 적혈구 2단위를 준 뒤 활력징후는 자",
+   "text": "General Surgery Persistent Hypotension after a Head-on Car Crash with a Seat-belt Mark blunt-abdominal-trauma fast hemorrhagic-shock laparotomy KMLE 2026 / Claude 34세 남자가 승용차를 운전하다 정면충돌해 구급차로 왔다. 아랫배를 가로지르는 안전벨트 자국이 있고 배 전체에 압통이 있다. 도착 때 혈압 76/44 mmHg, 맥박 132회/분이었다. 묻는 말에 대답하지만 처져 있다. 기도는 유지되고 양쪽 호흡음은 대칭이며, 흉부 X선에서 기흉·혈흉은 없고 골반 X선에서 골절은 없다. 사지에 큰 상처나 외부 출혈은 없다. 따뜻한 결정질 수액 1 L와 O형 적혈구 2단위를 준 뒤 활력징후는 자료와 같다. 침상 초음파에서 간신장 사이 오목과 비장 주위에 액체가 보인다. 가장 적절한 다음 처치는? A. 수술실로 옮겨 응급 개복술 B. 혈관조영 색전술 C. 복부·골반 조영증강 CT D. 진단적 복강 세척 E. 30분 뒤 침상 초음파 반복 수액과 수혈에도 저혈압이 지속되는 둔상 환자에서 침상 초음파로 복강 내 액체가 보이고 흉부·골반·외부 출혈원이 배제되면, 복강 내 출혈로 보고 CT 없이 바로 응급 개복술을 한다."
+  },
+  {
+   "id": "kmle-2026-1545",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Jaundice and Very High Aminotransferases Two Months after a New Sexual Partner",
+   "tags": [
+    "hepatitis-b",
+    "serology",
+    "window-period",
+    "acute-hepatitis"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1545.md",
+   "snippet": "29세 남자가 2주 전부터 피곤하고 입맛이 없으며 사흘 전부터 눈이 노래져 왔다. 두 달 전 새로운 상대와 콘돔 없이 성관계를 했다. 술은 거의 마시지 않고 복용 중인 약이나 건강보조식품은 없다. 어릴 때 B형간염 예방접종을 했는지는 모른다. 오른쪽 윗배에 가벼운 압통이 있고 의식은 맑다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 상태로 가장 가능성이 높은 것은? A. 급성 A형간염에 의한 간세포 손상 B. 만성 B형간",
+   "text": "Gastroenterology Jaundice and Very High Aminotransferases Two Months after a New Sexual Partner hepatitis-b serology window-period acute-hepatitis KMLE 2026 / Claude 29세 남자가 2주 전부터 피곤하고 입맛이 없으며 사흘 전부터 눈이 노래져 왔다. 두 달 전 새로운 상대와 콘돔 없이 성관계를 했다. 술은 거의 마시지 않고 복용 중인 약이나 건강보조식품은 없다. 어릴 때 B형간염 예방접종을 했는지는 모른다. 오른쪽 윗배에 가벼운 압통이 있고 의식은 맑다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 상태로 가장 가능성이 높은 것은? A. 급성 A형간염에 의한 간세포 손상 B. 만성 B형간염 보유자의 급성 악화 C. B형간염 예방접종 뒤 면역 상태 D. 과거 B형간염 감염 뒤 회복 상태 E. 급성 B형간염의 창기(window period) 급성 간염 소견에서 HBsAg 과 anti HBs 가 모두 음성이고 IgM anti HBc 만 양성이면, 표면항원이 사라졌지만 아직 표면항체가 생기지 않은 급성 B형간염의 창기다."
+  },
+  {
+   "id": "kmle-2026-1544",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Vomiting Bright Red Blood in a Man with Alcohol-related Cirrhosis",
+   "tags": [
+    "variceal-bleeding",
+    "cirrhosis",
+    "antibiotic-prophylaxis",
+    "upper-gi-bleeding"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1544.md",
+   "snippet": "55세 남자가 1시간 전부터 선홍색 피를 두 번 토해 응급실에 왔다. 20년 동안 매일 소주 한 병을 마셨고 2년 전 알코올 간경변을 진단받았다. 배는 불러 있고 이동성 둔탁음이 있으며 거미혈관종이 보인다. 의식은 맑고 복부 압통은 없다. 굵은 정맥관 두 개로 수액을 시작했고 혈색소 7–8 g/dL를 목표로 적혈구 수혈을 준비하고 있으며, 테를리프레신 정맥 주사를 시작했다. 내시경은 6시간 안에 하기로 했다. 활력징후와 검사 ",
+   "text": "Gastroenterology Vomiting Bright Red Blood in a Man with Alcohol-related Cirrhosis variceal-bleeding cirrhosis antibiotic-prophylaxis upper-gi-bleeding KMLE 2026 / Claude 55세 남자가 1시간 전부터 선홍색 피를 두 번 토해 응급실에 왔다. 20년 동안 매일 소주 한 병을 마셨고 2년 전 알코올 간경변을 진단받았다. 배는 불러 있고 이동성 둔탁음이 있으며 거미혈관종이 보인다. 의식은 맑고 복부 압통은 없다. 굵은 정맥관 두 개로 수액을 시작했고 혈색소 7–8 g/dL를 목표로 적혈구 수혈을 준비하고 있으며, 테를리프레신 정맥 주사를 시작했다. 내시경은 6시간 안에 하기로 했다. 활력징후와 검사 결과는 자료와 같다. 내시경 전에 추가할 가장 적절한 처치는? A. 세프트리악손 1 g 정맥 주사 시작 B. INR 교정을 위한 신선동결혈장 수혈 C. 혈색소 10 g/dL 목표 적혈구 수혈 D. 프로프라놀롤 40 mg 경구 투여 시작 E. 락툴로오스 300 mL 정체 관장 간경변 환자의 위장관 출혈은 세균 감염·재출혈·사망 위험을 크게 높이므로, 혈관수축제와 함께 짧은 기간 예방적 항생제(세프트리악손)를 바로 시작한다. INR 교정용 신선동결혈장과 높은 혈색소 목표 수혈은 문맥압을 올려 출혈을 악화시킨다."
+  },
+  {
+   "id": "kmle-2026-1543",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "A Woman with Treated Hashimoto Thyroiditis Who Just Learned She Is Pregnant",
+   "tags": [
+    "hypothyroidism",
+    "pregnancy",
+    "levothyroxine",
+    "tsh-target"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1543.md",
+   "snippet": "32세 여자가 오늘 임신 6주를 확인하고 왔다. 4년 전 하시모토 갑상선염에 의한 갑상선기능저하증을 진단받아 레보티록신 75 μg을 매일 아침 먹고 있으며, 3개월 전 TSH는 1.8 μIU/mL였다. 피로나 추위를 타는 증상은 없다. 첫 임신이고 입덧은 가볍다. 철분제나 칼슘제는 먹지 않는다. 갑상선은 약간 커져 있고 결절은 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 조치는? A. 지금 용량을 유지하",
+   "text": "Endocrinology A Woman with Treated Hashimoto Thyroiditis Who Just Learned She Is Pregnant hypothyroidism pregnancy levothyroxine tsh-target KMLE 2026 / Claude 32세 여자가 오늘 임신 6주를 확인하고 왔다. 4년 전 하시모토 갑상선염에 의한 갑상선기능저하증을 진단받아 레보티록신 75 μg을 매일 아침 먹고 있으며, 3개월 전 TSH는 1.8 μIU/mL였다. 피로나 추위를 타는 증상은 없다. 첫 임신이고 입덧은 가볍다. 철분제나 칼슘제는 먹지 않는다. 갑상선은 약간 커져 있고 결절은 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 조치는? A. 지금 용량을 유지하고 임신 20주에 TSH를 다시 잰다 B. 레보티록신을 끊고 4주 뒤 갑상선기능을 다시 잰다 C. 레보티록신을 리오티로닌으로 바꾸고 4주 뒤 다시 잰다 D. 레보티록신 용량을 약 25–30% 늘리고 4주 뒤 다시 잰다 E. 지금 용량을 유지하고 요오드 보충제를 추가한다 임신하면 갑상선호르몬 요구량이 1분기부터 늘어난다. 이미 치료 중인 갑상선기능저하증 여성은 임신을 확인하는 즉시 레보티록신을 약 25–30% 늘리고 4주마다 TSH를 확인해 임신 시기별 목표(대개 2.5 μIU/mL 미만) 안에 둔다."
+  },
+  {
+   "id": "kmle-2026-1542",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Hypertension with Low Potassium in a Young Woman Not Taking Diuretics",
+   "tags": [
+    "primary-aldosteronism",
+    "secondary-hypertension",
+    "hypokalemia",
+    "screening"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1542.md",
+   "snippet": "38세 여자가 고혈압을 조절하려고 왔다. 2년 전 건강검진에서 고혈압을 진단받아 암로디핀을 먹고 있으나 집에서 잰 혈압도 150/95 mmHg 안팎이다. 최근 다리에 힘이 빠지고 밤에 소변을 자주 본다. 이뇨제나 감초가 든 약은 먹은 적이 없다. 두통·두근거림·땀이 갑자기 나는 발작은 없다. 얼굴이 둥글어지거나 배에 붉은 줄무늬가 생기지 않았다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 검사는? A. 혈장 유리 ",
+   "text": "Endocrinology Hypertension with Low Potassium in a Young Woman Not Taking Diuretics primary-aldosteronism secondary-hypertension hypokalemia screening KMLE 2026 / Claude 38세 여자가 고혈압을 조절하려고 왔다. 2년 전 건강검진에서 고혈압을 진단받아 암로디핀을 먹고 있으나 집에서 잰 혈압도 150/95 mmHg 안팎이다. 최근 다리에 힘이 빠지고 밤에 소변을 자주 본다. 이뇨제나 감초가 든 약은 먹은 적이 없다. 두통·두근거림·땀이 갑자기 나는 발작은 없다. 얼굴이 둥글어지거나 배에 붉은 줄무늬가 생기지 않았다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 검사는? A. 혈장 유리 메타네프린 B. 혈장 알도스테론/레닌 비 C. 1 mg 덱사메타손 억제 검사 D. 신장동맥 도플러 초음파 E. 부신 조영증강 CT 이뇨제를 먹지 않는 젊은 고혈압 환자의 저칼륨혈증과 대사성 알칼리증은 무기질코르티코이드 과다, 특히 일차 알도스테론증을 시사한다. 선별 검사는 혈장 알도스테론/레닌 비이고, 영상은 생화학 확진 뒤에 한다."
+  },
+  {
+   "id": "kmle-2026-1541",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Thick Crusted Plaques on the Hands of a Bedridden Nursing Home Resident",
+   "tags": [
+    "crusted-scabies",
+    "ivermectin",
+    "nursing-home",
+    "outbreak"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1541.md",
+   "snippet": "82세 여자가 손과 팔꿈치의 두꺼운 딱지 때문에 요양원에서 왔다. 5년 전 뇌졸중 뒤로 누워 지내며 의사소통이 어렵고, 류마티스 다발근육통으로 프레드니솔론을 2년째 먹고 있다. 두 달 전부터 손가락 사이, 손등, 팔꿈치에 회색빛의 두껍고 갈라지는 딱지가 생겨 손바닥까지 번졌다. 긁는 모습은 별로 없다. 최근 이 환자를 돌보는 요양보호사 두 명이 손가락 사이와 손목에 밤마다 가려운 작은 구진이 생겼다. 딱지를 긁어 현미경으로 보",
+   "text": "Dermatology Thick Crusted Plaques on the Hands of a Bedridden Nursing Home Resident crusted-scabies ivermectin nursing-home outbreak KMLE 2026 / Claude 82세 여자가 손과 팔꿈치의 두꺼운 딱지 때문에 요양원에서 왔다. 5년 전 뇌졸중 뒤로 누워 지내며 의사소통이 어렵고, 류마티스 다발근육통으로 프레드니솔론을 2년째 먹고 있다. 두 달 전부터 손가락 사이, 손등, 팔꿈치에 회색빛의 두껍고 갈라지는 딱지가 생겨 손바닥까지 번졌다. 긁는 모습은 별로 없다. 최근 이 환자를 돌보는 요양보호사 두 명이 손가락 사이와 손목에 밤마다 가려운 작은 구진이 생겼다. 딱지를 긁어 현미경으로 보니 수많은 진드기와 알이 보인다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 치료로 가장 적절한 것은? A. 퍼메트린 5% 크림 1회 전신 도포 B. 강력 국소 스테로이드 + 경구 항히스타민 C. 린데인 로션 1회 전신 도포 D. 경구 테르비나핀 + 국소 아졸 크림 E. 경구 이버멕틴 + 퍼메트린 5% 크림 반복 면역이 떨어진 누워 지내는 노인의 두꺼운 회색 딱지와 수많은 진드기는 딱지옴(노르웨이옴)이다. 진드기 수가 많아 국소제 한 번으로는 치료되지 않으므로 경구 이버멕틴을 여러 번 주고 퍼메트린 크림을 반복해 바르며, 접촉자를 함께 치료한다."
+  },
+  {
+   "id": "kmle-2026-1540",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "An Enlarging Irregular Pigmented Mole on the Back of a Middle-aged Woman",
+   "tags": [
+    "melanoma",
+    "pigmented-lesion",
+    "excisional-biopsy"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1540.md",
+   "snippet": "54세 여자가 등의 점이 커진다며 왔다. 남편이 1년 전 처음 알아챘는데 그 사이 크기가 커지고 색이 짙어졌으며, 최근에는 가끔 가렵다. 점은 지름 9 mm이고 갈색·검은색·회색이 섞여 있으며 경계가 들쭉날쭉하고 좌우가 비대칭이다. 출혈이나 궤양은 없다. 겨드랑이와 목의 림프절은 만져지지 않는다. 다른 점들은 모두 지름 4 mm 이하로 고르게 갈색이다. 가장 적절한 다음 단계는? A. 병변 윗부분을 면도 생검한다 B. 액체질소",
+   "text": "Dermatology An Enlarging Irregular Pigmented Mole on the Back of a Middle-aged Woman melanoma pigmented-lesion excisional-biopsy KMLE 2026 / Claude 54세 여자가 등의 점이 커진다며 왔다. 남편이 1년 전 처음 알아챘는데 그 사이 크기가 커지고 색이 짙어졌으며, 최근에는 가끔 가렵다. 점은 지름 9 mm이고 갈색·검은색·회색이 섞여 있으며 경계가 들쭉날쭉하고 좌우가 비대칭이다. 출혈이나 궤양은 없다. 겨드랑이와 목의 림프절은 만져지지 않는다. 다른 점들은 모두 지름 4 mm 이하로 고르게 갈색이다. 가장 적절한 다음 단계는? A. 병변 윗부분을 면도 생검한다 B. 액체질소 냉동치료로 없앤다 C. 1–3 mm 경계를 두고 전절제 생검한다 D. 2 cm 경계를 두고 광범위 절제한다 E. 3개월 뒤 사진으로 비교해 추적한다 비대칭·불규칙 경계·여러 색·지름 6 mm 초과·크기와 색 변화는 흑색종을 의심하게 한다. 진단과 Breslow 두께 측정을 위해 좁은 경계로 병변 전체를 떼어내는 전절제 생검을 먼저 하고, 광범위 절제 범위는 그 두께로 정한다."
+  },
+  {
+   "id": "kmle-2026-1539",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Sharp Positional Chest Pain a Week after a Cold in a Young Man",
+   "tags": [
+    "acute-pericarditis",
+    "colchicine",
+    "nsaid",
+    "chest-pain"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1539.md",
+   "snippet": "26세 남자가 이틀 전부터 가슴 앞쪽이 날카롭게 아파 왔다. 일주일 전 콧물과 인후통을 앓았다. 통증은 숨을 깊이 들이쉬거나 똑바로 누우면 심해지고 앉아서 앞으로 숙이면 덜하다. 가슴 왼쪽 아래 흉골 경계에서 긁는 듯한 소리가 들린다. 심전도에서 여러 유도에 위로 오목한 ST 분절 상승과 PR 분절 하강이 보인다. 심장초음파에서 소량의 심낭액이 있고 우심실 확장기 허탈은 없으며 벽운동은 정상이다. 위장관 출혈이나 소화성 궤양 ",
+   "text": "Cardiology Sharp Positional Chest Pain a Week after a Cold in a Young Man acute-pericarditis colchicine nsaid chest-pain KMLE 2026 / Claude 26세 남자가 이틀 전부터 가슴 앞쪽이 날카롭게 아파 왔다. 일주일 전 콧물과 인후통을 앓았다. 통증은 숨을 깊이 들이쉬거나 똑바로 누우면 심해지고 앉아서 앞으로 숙이면 덜하다. 가슴 왼쪽 아래 흉골 경계에서 긁는 듯한 소리가 들린다. 심전도에서 여러 유도에 위로 오목한 ST 분절 상승과 PR 분절 하강이 보인다. 심장초음파에서 소량의 심낭액이 있고 우심실 확장기 허탈은 없으며 벽운동은 정상이다. 위장관 출혈이나 소화성 궤양 병력은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 이부프로펜 + 콜히친 경구 B. 프레드니솔론 경구 C. 아스피린 + 티카그렐러 경구 D. 에녹사파린 피하 주사 E. 메틸프레드니솔론 정맥 주사 체위에 따라 변하는 흉막성 흉통, 심낭 마찰음, 광범위한 오목 ST 상승과 PR 하강은 급성 심낭염이다. 고위험 소견이 없어 외래 치료가 가능하고, 첫 치료는 NSAID(또는 고용량 아스피린)에 콜히친을 더한다."
+  },
+  {
+   "id": "kmle-2026-1538",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Sudden Palpitations, Dizziness and Clammy Skin in a Man with a Prior Anterior Infarction",
+   "tags": [
+    "ventricular-tachycardia",
+    "unstable-tachycardia",
+    "wide-complex",
+    "ecg"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-10-23",
+   "path": "content/kmle/2026/kmle-2026-1538.md",
+   "snippet": "68세 남자가 1시간 전부터 가슴이 심하게 두근거리고 어지러워 응급실에 왔다. 3년 전 앞벽 심근경색으로 관상동맥 스텐트를 넣었고 이후 약을 꾸준히 먹고 있다. 도착 뒤 묻는 말에 대답이 점점 느려지고 피부가 차갑고 축축하다. 경동맥 맥박은 빠르고 약하게 만져진다. 심전도는 그림과 같다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 아데노신 6 mg 정맥 급속 주사 B. 진정 후 동기화 심율동전환 C. 비동",
+   "text": "Cardiology Sudden Palpitations, Dizziness and Clammy Skin in a Man with a Prior Anterior Infarction ventricular-tachycardia unstable-tachycardia wide-complex ecg KMLE 2026 / Claude 68세 남자가 1시간 전부터 가슴이 심하게 두근거리고 어지러워 응급실에 왔다. 3년 전 앞벽 심근경색으로 관상동맥 스텐트를 넣었고 이후 약을 꾸준히 먹고 있다. 도착 뒤 묻는 말에 대답이 점점 느려지고 피부가 차갑고 축축하다. 경동맥 맥박은 빠르고 약하게 만져진다. 심전도는 그림과 같다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 아데노신 6 mg 정맥 급속 주사 B. 진정 후 동기화 심율동전환 C. 비동기화 제세동 200 J D. 아미오다론 150 mg 정맥 주사 E. 경피 심박조율 넓은 QRS 의 규칙적인 빈맥은 심근경색 병력이 있는 환자에서 심실빈맥으로 다룬다. 저혈압·의식 저하·차고 축축한 피부는 불안정 징후이고 맥박이 있으므로 약물보다 동기화 심율동전환이 우선이다."
+  },
   {
    "id": "usmle-2026-0223",
    "type": "usmle",
@@ -226,6 +832,108 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/rheumatology/cn.rheum.acute-monoarthritis.synovial-fluid-first.md",
    "snippet": "판단 — 왜 관절 천자가 먼저인가 급성·국소·단관절 통증은 경고(red flag) 진단 — 화농성 관절염(septic arthritis)·급성 결정 관절염(통풍 등)·골절 — 을 먼저 떠올리게 한다. 늦게 진단하면 관절이 손상된다 [[harrison 21: 370장 p.2844]]. 급성 단관절염이나 감염·결정 관절병증 의심에서 관절액 흡인·분석(arthrocentesis, synovial fluid analysis)은 언제나",
    "text": "Rheumatology 판단 — 왜 관절 천자가 먼저인가 급성·국소·단관절 통증은 경고(red flag) 진단 — 화농성 관절염(septic arthritis)·급성 결정 관절염(통풍 등)·골절 — 을 먼저 떠올리게 한다. 늦게 진단하면 관절이 손상된다 [[harrison 21: 370장 p.2844]]. 급성 단관절염이나 감염·결정 관절병증 의심에서 관절액 흡인·분석(arthrocentesis, synovial fluid analysis)은 언제나 적응이 된다 [[harrison 21: 370장 p.2852]]. 감염이 의심되면 관절액을 그람염색하고 배양한다 — 결정이 보여도 마찬가지다. 결정 관절염과 화농성 관절염은 가끔 한 관절에 함께 있다 [[harrison 21: 370장 p.2852]]. 혈청 요산·자가항체는 이 판단을 대신하지 못한다. 급성 통풍 발작의 최대 50%는 혈청 요산이 정상이고, RF·ANA 는 임상이 특정 진단을 가리킬 때만 낸다 [[harrison 21: 370장 p.2851]]. 기전 — 정상 관절액에서 염증 관절액으로 정상 관절액은 맑거나 옅은 짚색이고, 히알루론산(hyaluronate) 이 많아 점성이 높다 — 주사기에서 한 방울씩 밀면 긴 꼬리를 끌며 실처럼 늘어난다 [[harrison 21: 370장 p.2852]]. 골관절염·외상의 삼출은 이 점성이 그대로다. 염증이 생기면 다형핵구가 몰려 관절액이 탁해지고, 히알루론산이 줄어 점성이 떨어진다(꼬리가 거의 없다) [[harrison 21: 370장 p.2852]]. 세균 감염에서는 백혈구가 더 늘어 불투명한 고름이 된다. 그래서 관절액의 겉모습·점성·세포 수 만으로도 비염증·염증·화농을 가를 수 있고, 원인은 그람염색·배양·결정이 정한다 [[harrison 21: 370장 p.2852]]. 관절 안 압력이 오르면 환자는 관절 안 압력이 가장 낮고 부피가 가장 큰 자세(대개 약간 굽힘)로 관절을 둔다 [[harrison 21: 370장 p.2848]]. 가르는 소견 — 관절액이 말해 주는 것 천자 직후 겉모습·점성·세포 수를 바로 본다 [[harrison 21: 370장 p.2852]]. 관절액 포도당·단백·젖산탈수소효소(LDH)·젖산·자가항체 검사는 진단 가치가 없어 권하지 않는다 [[harrison 21: 370장 p.2852]]. 임균 관절염(gonococcal arthritis)이 의심되면 핵산증폭검사(NAAT)로 임균·클라미디아를 찾는다. 만성 단관절염이면 결핵균(Mycobacterium tuberculosis)·진균도 배양한다 [[harrison 21: 370장 p.2852]]. 해석의 한계 : 화농 범위의 관절액( 50,000/μL)은 류마티스관절염·통풍에서도 나온다 — 숫자 하나로 감염을 확정하거나 배제하지 않고 배양을 본다 [[harrison 21: 370장 p.2852]]. 선택 — 천자 전에 확인할 것과 다른 검사 관절인가, 관절 주위인가 : 관절 질환은 깊고 넓은 통증, 능동·수동 운동 모두의 제한, 부종·염발음·잠김·변형이 있다. 관절 주위 질환(힘줄염·윤활낭염)은 능동 운동에서만 아프고 관절 가장자리 밖의 점 압통이 있다 — 천자 대상이 아니다 [[harrison 21: 370장 p.2844, p.2848]]. 혈액 검사 : 혈구 수·ESR 또는 CRP 는 염증과 비염증을 가르는 데 쓴다. 혈청 요산은 통풍 진단과 요산 저하 치료의 감시(목표 < 6 mg/dL)에 쓰지만 발작 때 정상일 수 있다 [[harrison 21: 370장 p.2851]]. 영상 : 외상·만성 감염 의심·단관절 침범이면 단순 X선이 알맞지만, 급성 염증성 관절염의 이른 X선은 연부조직 부종·관절 주위 골감소만 보여 진단에 거의 도움이 되지 않는다 [[harrison 21: 370장 p.2852]]. 권고와 예외 외상 뒤 관절 삼출, 만성 다발관절염 환자에게 새로 생긴 단관절염, 혈관절증 의심도 천자를 강하게 고려한다(Fig. 370 6) [[harrison 21: 370장 p.2852]]. 새로 생긴 염증성 다발 관절염은 감별이 넓어(RA·간염 관련·치쿤구니야·혈청병·약물 유발 루푸스·SLE·다관절 화농성) 관절액보다 표적 혈액 검사가 더 필요할 수 있다 [[harrison 21: 370장 p.2847]]. 출혈성 관절액은 외상(인대·연골 파열)·골연골 골절·신경병성 관절병증·응고병증을 생각한다. 외상 뒤 육안으로 피가 섞인 관절액은 십자인대 손상을 의심하게 한다 [[harrison 21: 370장 p.2850, p.2852]]. 입원 중 수술·탈수·약물이 급성 통풍을 일으킬 수 있다 [[harrison 21: 370장 p.2847]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 370장 p.2844~2853)"
+  },
+  {
+   "id": "paper-2026-0818",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinics in shoulder and elbow",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0818_clinical_and_radiological_outcomes_of_primary_semi_constrain.md",
+   "snippet": "Title Clinical and radiological outcomes of primary semi constrained total elbow arthroplasty at 10 year mean follow up Authors Jung Kyu Hak, Choi Min Hyeok, Choi Jun Yong, Kang Suk Woong Journal / DOI Clinics in shoulder and elbow · DOI: 1",
+   "text": "Surgery scraped pubmed PubMed / Clinics in shoulder and elbow Title Clinical and radiological outcomes of primary semi constrained total elbow arthroplasty at 10 year mean follow up Authors Jung Kyu Hak, Choi Min Hyeok, Choi Jun Yong, Kang Suk Woong Journal / DOI Clinics in shoulder and elbow · DOI: 10.5397/cise.2026.00325 · PMID: 42902580 https://pubmed.ncbi.nlm.nih.gov/42902580/ Abstract BACKGROUND: This study aimed to evaluate the long term clinical and radiological outcomes in patients undergoing semi constrained total elbow arthroplasty (TEA). Postoperative complications and implant survival rates were also investigated. METHODS: Of 68 patients who underwent primary semi constrained TEA, data from 62 with a minimum follow up of 5 years were analyzed. The mean follow up duration was 117.1 months (range, 60 246 months). Forty one patients had posttraumatic conditions, 11 had rheumatoid arthritis, and 10 had osteoarthritis. Clinical outcomes were assessed using the Mayo Elbow Performance Score (MEPS) and Oxford Elbow Score (OES), whereas radiological outcomes were analyzed using radiolucent lines and bushing wear. Kaplan Meier survival analysis was used to determine the implant survival rate. RESULTS: At the final follow up, the MEPS and OES were 88.2 (range, 55 100) and 31.6 (range, 22 42), respectively. Radiolucency of type 3 or 4 was observed on the humeral side in four patients and on the ulnar side in three patients. Grade 1 and 2 bushing wear was present in seven and three patients, respectively. The total complication rate was 25.8% (16/62), and the reoperation rate was 17.7% (11/62). Four patients underwent reoperation for periprosthetic infection after previous open reduction and internal fixation for acute fractures. In addition, three patients underwent hinge system change for hinge dissociation, four sustained periprosthetic fractures, one underwent revision TEA for gross loosening, and one underwent open repair for triceps rupture. Kaplan Meier survival analysis revealed that the 5 , 10 , and 15 year survival rates of the implants were 100%, 92.8%, and 77.5%, respectively. CONCLUSIONS: Clinical and radiological outcomes of primary semi constrained TEA were reasonably good at a mean 10 year follow up. Type 3 or 4 radiolucency was observed in seven patients and complete bushing wear in three patients, while the 10 year implant survival rate was 92.8%. Level of evidence: IV. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0817",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Renal failure",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0817_bilateral_peripheral_ct_venography_for_evaluating_central_ve.md",
+   "snippet": "Title Bilateral peripheral CT venography for evaluating central venous lesions in dysfunctional arteriovenous fistulas: feasibility, safety, and radiation dose in hemodialysis patients Authors Zhang Hongwei, Liu Hongming, Zou Zhi, Chen Shun",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Renal failure Title Bilateral peripheral CT venography for evaluating central venous lesions in dysfunctional arteriovenous fistulas: feasibility, safety, and radiation dose in hemodialysis patients Authors Zhang Hongwei, Liu Hongming, Zou Zhi, Chen Shunqiang, Shi Lili, Li Yongli, Dou Shewei Journal / DOI Renal failure · DOI: 10.1080/0886022X.2026.2740365 · PMID: 42902599 https://pubmed.ncbi.nlm.nih.gov/42902599/ Abstract OBJECTIVES: Central venous stenosis and occlusion are major causes of arteriovenous fistula (AVF) dysfunction in hemodialysis patients. This study aimed to evaluate the feasibility, safety, radiation exposure, and anatomical findings of bilateral peripheral CT venography for central venous assessment in patients with dysfunctional AVFs. METHODS: This single center retrospective cohort study included 46 consecutive hemodialysis patients with dysfunctional AVFs who underwent bilateral peripheral CT venography between August 2023 and June 2025. Technical success, procedure related adverse events, radiation dose parameters, central venous lesion characteristics, and agreement with available comparative imaging modalities were analyzed. Comparative imaging findings from puncture based angiography and/or duplex ultrasonography were assessed descriptively. RESULTS: All 46 examinations were technically successful (100%), with a mean procedure duration of 4 minutes (range, 3 5 minutes). Minor adverse events included one patient of contrast extravasation (2.2%) and 3 of mild allergic reactions (6.5%); no severe procedure related complications were documented. The mean CTDIvol and DLP were 11.87 mGy and 784.15 mGy·cm, respectively. Central venous abnormalities were identified in 44 patients (95.7%), including stenosis in 31 (67.4%), occlusion in 11 (23.9%), and aneurysmal changes in 2 (4.3%). Comparative imaging was available in 38 patients, and CT venography showed agreement with available findings in 37 cases (97.4%). This agreement was interpreted as descriptive concordance rather than formal diagnostic accuracy. CONCLUSIONS: Bilateral peripheral CT venography demonstrated high technical feasibility, acceptable safety, and effective visualization of central venous abnormalities in hemodialysis patients with dysfunctional AVFs. Further prospective studies are needed to validate its diagnostic performance and clinical impact. ADVANCES IN KNOWLEDGE: This technique enables efficient, noninvasive assessment of central venous pathology with minimal risk, supporting its potential as a practical alternative to conventional imaging in hemodialysis patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0816",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ophthalmic plastic and reconstructive surgery",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0816_parasitic_infections_of_the_lacrimal_system_a_major_review_o.md",
+   "snippet": "Title Parasitic Infections of the Lacrimal System: A Major Review of Etiology, Clinical Presentation, and Management Authors Salari Yasaman, Juniat Valerie, Ali Mohammad Javed Journal / DOI Ophthalmic plastic and reconstructive surgery · DO",
+   "text": "Pathology scraped pubmed PubMed / Ophthalmic plastic and reconstructive surgery Title Parasitic Infections of the Lacrimal System: A Major Review of Etiology, Clinical Presentation, and Management Authors Salari Yasaman, Juniat Valerie, Ali Mohammad Javed Journal / DOI Ophthalmic plastic and reconstructive surgery · DOI: 10.1097/IOP.0000000000003305 · PMID: 42902464 https://pubmed.ncbi.nlm.nih.gov/42902464/ Abstract PURPOSE: Parasitic infections of the lacrimal system are rare and often under recognized causes of lacrimal pathology. Their clinical presentation frequently mimics more common conditions such as chronic dacryocystitis, leading to diagnostic challenges and delays in appropriate management. This study aims to systematically review the literature on parasitic infections of the lacrimal system and to characterize their etiology, clinical presentation, diagnostic approaches, management strategies, and outcomes. METHODS: A systematic review was conducted across MEDLINE, Embase, Emcare, and PubMed from inception to March 2026. Studies reporting parasitic infections involving the lacrimal apparatus were included. Data on demographics, clinical presentation, anatomical involvement, causative organisms, diagnostic methods, treatment, and outcomes were extracted. Due to heterogeneity and predominance of case reports and small series, a qualitative descriptive analysis was performed. RESULTS: A total of 44 studies comprising 172 cases were included. Rhinosporidium seeberi was the most frequently reported pathogen, accounting for 147 cases (85.5%), followed by Leishmania (8 cases, 4.7%) and Ascaris lumbricoides (7 cases, 4.1%). The lacrimal sac was the most commonly involved site. Clinical presentation was nonspecific, with epiphora and medial canthal swelling predominating. Diagnosis was most often established by histopathology following surgical intervention. Management varied by etiology, with surgical excision commonly used for rhinosporidiosis and mechanical extraction for helminthic infections. Outcomes were generally favorable, although recurrence was reported, particularly in R. seeberi infections. CONCLUSIONS: Parasitic infections of the lacrimal system are rare but clinically important, with diverse presentations and management approaches. Increased awareness is essential for early diagnosis and appropriate treatment. Further studies with standardized reporting are needed to optimize management strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0815",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Future oncology (London, England)",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0815_study_protocol_of_a_prospective_non_interventional_cohort_st.md",
+   "snippet": "Title Study protocol of a prospective, non interventional cohort study evaluating the benefits of transjugular intrahepatic portosystemic shunt in patients with hepatocellular carcinoma receiving first line atezolizumab plus bevacizumab (NI",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Future oncology (London, England) Title Study protocol of a prospective, non interventional cohort study evaluating the benefits of transjugular intrahepatic portosystemic shunt in patients with hepatocellular carcinoma receiving first line atezolizumab plus bevacizumab (NISTIPS TRITICC 4, IKF092) Authors Angendohr Carolin, Weigel Christian, Kunstein Anselm, Joerdens Markus, Goetze Thorsten, Al Batran Salah Eddin, Zäpf Bianca, Gonzalez Carmona Maria, et al. Journal / DOI Future oncology (London, England) · DOI: 10.1080/14796694.2026.2748246 · PMID: 42902603 https://pubmed.ncbi.nlm.nih.gov/42902603/ Abstract BACKGROUND: Hepatocellular carcinoma (HCC) is a leading cause of cancer related mortality, with most patients diagnosed at an advanced stage. Atezolizumab plus bevacizumab is a current standard first line therapy; however, outcomes are strongly influenced by underlying cirrhosis and clinically significant portal hypertension (CSPH). Complications such as ascites and variceal bleeding may limit treatment continuation, particularly as bevacizumab increases bleeding risk. Transjugular intrahepatic portosystemic shunt (TIPS) reduces portal pressure and may improve outcomes, but its role in patients receiving immunoncology based systemic therapy remains unclear. METHODS: NISTIPS TRITICC 4 is a prospective, multicentre, non interventional cohort study conducted at up to 25 centers in Germany. A total of 350 adult patients with cirrhosis and unresectable or metastatic HCC receiving first line atezolizumab plus bevacizumab will be enrolled. Patients are allocated to two cohorts: TIPS in situ plus atezolizumab and bevacizumab or atezolizumab plus bevacizumab alone, according to routine clinical practice.The primary endpoint is time to deterioration of liver function (TTDL), defined as persistent worsening of liver parameters for 4 weeks. Secondary endpoints include overall survival, time on treatment, overall response rate, time to new extrahepatic lesions or death, and safety with focus on bleeding and TIPS related complications.Time to event endpoints will be analyzed using Kaplan Meier methods and Cox models. Propensity score matching will be applied to adjust for confounding. Analyses are exploratory. DISCUSSION: This study will provide real world evidence on the impact of TIPS in HCC patients receiving atezolizumab plus bevacizumab and may support more individualized management strategies in this high risk population. CLINICAL TRIAL REGISTRATION: www.clinicaltrials.gov identifier is NCT07365930. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0814",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical research in pediatric endocrinology",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0814_mixed_presentation_of_hyperglycemic_hyperosmolar_state_and_d.md",
+   "snippet": "Title Mixed Presentation of Hyperglycemic Hyperosmolar State and Diabetic Ketoacidosis in a Pediatric Patient: a Case Report and Literature Review Authors Ordoñez González Irvin, García Couturier Rosalía, Gómez Pérez Ana Paula, Saucedo Coro",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of clinical research in pediatric endocrinology Title Mixed Presentation of Hyperglycemic Hyperosmolar State and Diabetic Ketoacidosis in a Pediatric Patient: a Case Report and Literature Review Authors Ordoñez González Irvin, García Couturier Rosalía, Gómez Pérez Ana Paula, Saucedo Coronado María Paola, Pineda Macal Mónica Lizeth Journal / DOI Journal of clinical research in pediatric endocrinology · DOI: 10.4274/jcrpe.galenos.2026.2026 4 22 · PMID: 42902609 https://pubmed.ncbi.nlm.nih.gov/42902609/ Abstract The coexistence of diabetic ketoacidosis (DKA) and hyperglycemic hyperosmolar state (HHS), known as mixed hyperglycemic crisis, is a rare but potentially fatal metabolic emergency in pediatrics, and is frequently underrecognized because it is misclassified as isolated DKA. It carries a higher risk of complications than either entity alone, particularly in patients with complex comorbidities. We describe the case of a 16 year old female with myelomeningocele, neurogenic bladder, obesity, and insulin resistance, who had self discontinued treatment with metformin, atorvastatin, and allopurinol one year prior and presented with sudden neurological deterioration. Initial workup revealed extreme hyperglycemia (1,777 mg/dL), severe hyperosmolarity (431 mOsm/kg), decompensated metabolic acidosis (pH 7.13), and positive urine ketones (+++), consistent with a mixed DKA HHS presentation. She subsequently developed septic shock of urinary origin, acute kidney injury, and acute pancreatitis (lipase 3,911 U/L). Despite intensive management guided by International Society for Pediatric and Adolescent Diabetes ISPAD recommendations, she progressed to refractory shock and multiorgan failure, dying within 48 hours of admission. To the best of our knowledge, this represents one of the most extreme metabolic derangements reported in pediatric mixed hyperglycemic crisis. The convergence of extreme hyperosmolarity, concurrent sepsis, and structural comorbidities created a lethal risk phenotype in which sepsis, rather than the degree of metabolic derangement alone, appeared to determine the fatal outcome. Early recognition and an individualized therapeutic approach are essential to improve outcomes in vulnerable pediatric patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0813",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMB reports",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0813_atorvastatin_protects_cardiomyocytes_from_doxorubicin_toxici.md",
+   "snippet": "Title Atorvastatin protects cardiomyocytes from doxorubicin toxicity by modulating YAP/TAZ signaling Authors Lim Heejung, Jin Suyeon, Lee Chan Joo, Lim Gibbeum, Park Sungha, Lee Sang Hak, Oh Jaewon, Kang Seok Min Journal / DOI BMB reports ·",
+   "text": "Cardiology scraped pubmed PubMed / BMB reports Title Atorvastatin protects cardiomyocytes from doxorubicin toxicity by modulating YAP/TAZ signaling Authors Lim Heejung, Jin Suyeon, Lee Chan Joo, Lim Gibbeum, Park Sungha, Lee Sang Hak, Oh Jaewon, Kang Seok Min Journal / DOI BMB reports · PMID: 42902567 https://pubmed.ncbi.nlm.nih.gov/42902567/ Abstract Doxorubicin (DOX) is a widely used anthracycline chemotherapeutic agent; however, its clinical efficacy is hampered by dose dependent cardiotoxicity, which can lead to irreversible heart failure. Despite extensive research, effective strategies for preventing or mitigating DOX induced cardiac injury remain lacking. The Hippo signaling effectors, Yes associated protein (YAP) and transcriptional co activator with PDZ binding motif (TAZ), are known to regulate cardiomyocyte survival, apoptosis, and mitochondrial quality control; however, their role in protecting the heart from DOX toxicity remains unclear. In this study, we investigated whether atorvastatin, a widely prescribed HMG CoA reductase inhibitor with pleiotropic effects, attenuated DOX induced cardiomyopathy by modulating the YAP/TAZ signaling axis. In H9c2 cardiomyocytes, DOX suppressed the expression of YAP and TAZ, leading to the downregulation of their downstream targets, Survivin and Park2, and activation of apoptotic cascades. Atorvastatin pretreatment restored YAP/TAZ expression at both mRNA and protein levels and reversed DOX induced apoptosis. RNA interference mediated knockdown of YAP or TAZ abolished the protective effects of atorvastatin, confirming the importance of this pathway. In a murine model of DOX cardiotoxicity, atorvastatin preserved left ventricular systolic function, reduced myocardial apoptosis and fibrosis, and restored YAP/TAZ, Survivin, and Park2 expression in the cardiac tissue. These findings suggest that atorvastatin exerts cardioprotective effects by restoring YAP/TAZ mediated anti apoptotic and mitochondrial quality control signaling. Our study highlights a novel mechanism via which atorvastatin mitigates DOX induced cardiotoxicity and supports the therapeutic potential of YAP/TAZ modulation for cardioprotection. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1537",

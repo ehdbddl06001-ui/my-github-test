@@ -24566,6 +24566,7 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
+   "kmle-2026-1547",
    "usmle-2026-0173"
   ],
   "hasErrors": false
@@ -57582,7 +57583,8 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0962",
-   "kmle-2026-1305"
+   "kmle-2026-1305",
+   "kmle-2026-1562"
   ],
   "hasErrors": false
  },
@@ -69624,7 +69626,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-0967"
+   "kmle-2026-0967",
+   "kmle-2026-1566"
   ],
   "hasErrors": false
  },
@@ -76736,7 +76739,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-1193"
+   "kmle-2026-1193",
+   "kmle-2026-1568"
   ],
   "hasErrors": false
  },
@@ -80543,6 +80547,7 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "kmle-2026-0968",
    "kmle-2026-1311",
+   "kmle-2026-1558",
    "usmle-2026-0180"
   ],
   "hasErrors": false
@@ -83789,7 +83794,9 @@ window.MEDKOS_CONCEPTS = {
     "branches": []
    }
   ],
-  "questions": [],
+  "questions": [
+   "kmle-2026-1561"
+  ],
   "hasErrors": false
  },
  "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
@@ -87605,7 +87612,8 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0081",
-   "kmle-2026-1343"
+   "kmle-2026-1343",
+   "kmle-2026-1569"
   ],
   "hasErrors": false
  },
