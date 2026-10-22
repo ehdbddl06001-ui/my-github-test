@@ -1,67 +1,67 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-21",
+ "generated": "2026-10-22",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3901,
+  "total": 3919,
   "byType": {
    "usmle": 210,
+   "imaging": 416,
    "concept": 108,
+   "paper": 818,
    "kmle": 1504,
-   "imaging": 404,
-   "paper": 812,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 267,
+   "Cardiology": 268,
    "Nephrology": 215,
-   "Infectious Disease": 195,
+   "Infectious Disease": 196,
    "Pediatrics": 182,
    "Obstetrics & Gynecology": 131,
-   "Pathology": 119,
-   "Hematology-Oncology": 117,
+   "Pathology": 120,
+   "Hematology-Oncology": 118,
    "Rheumatology": 117,
    "Psychiatry": 113,
    "Neurology": 112,
    "General Surgery": 102,
+   "Surgery": 100,
    "Endocrinology": 99,
-   "Surgery": 99,
    "Dermatology": 98,
    "Orthopedics": 98,
    "Gastroenterology": 97,
    "Ophthalmology": 96,
    "Pulmonology": 96,
    "Hematology": 91,
-   "Laboratory Medicine": 82,
-   "산부인과": 61,
-   "순환기": 35,
+   "Laboratory Medicine": 83,
+   "산부인과": 63,
+   "순환기": 36,
    "호흡기": 28,
-   "소화기": 26,
+   "소화기": 27,
    "Physiology": 23,
-   "소아과": 22,
+   "소아과": 23,
    "병리·조직학": 20,
+   "응급·중환자": 20,
+   "혈액·종양": 20,
    "감염": 19,
+   "내분비": 19,
    "신경": 19,
-   "응급·중환자": 19,
-   "혈액·종양": 19,
    "Pharmacology": 18,
-   "내분비": 18,
    "신장·비뇨기": 18,
+   "외과": 18,
    "Biochemistry": 17,
-   "외과": 17,
    "Microbiology": 16,
+   "예방의학·역학": 15,
    "피부과": 15,
-   "예방의학·역학": 14,
    "Internal Medicine": 13,
    "Immunology": 12,
    "약리": 12,
-   "근골격·류마티스": 10,
-   "정신과": 10,
+   "근골격·류마티스": 11,
+   "정신과": 11,
    "영상의학": 8,
    "안과": 7,
    "이비인후과": 7,
@@ -78,8 +78,8 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2725,
-   "medium": 1126,
+   "high": 2737,
+   "medium": 1132,
    "low": 50
   },
   "tagCount": 4993
@@ -214,6 +214,214 @@ window.MEDKOS_INDEX = {
    "text": "Pharmacology Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots warfarin warfarin-induced-skin-necrosis protein-c vitamin-k-antagonist anticoagulation mechanism USMLE-style / MedKOS (Ageno W, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S; Nazarian RM, et al. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332) A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections, and she was started on oral warfarin 10 mg daily; no other anticoagulant was given. Her mother had three episodes of deep venous thrombosis before the age of 50 years. The patient has no other medical conditions and takes no other medications. She has not received heparin at any time. Her vital signs are shown. Examination shows several sharply demarcated, exquisitely tender, purple black plaques with overlying hemorrhagic bullae on both thighs and the lower abdomen; the surrounding skin is red. The lesions are flat and not palpable as raised purpura. The left calf is mildly swollen. There is no bleeding from the gums, nose or venipuncture sites. Laboratory results are shown. A skin biopsy shows fibrin thrombi occluding dermal and subcutaneous venules with hemorrhagic necrosis and no inflammation of the vessel walls. Which of the following best explains the pathogenesis of this patient's skin lesions? A. Deposition of immune complexes in the walls of dermal postcapillary venules B. A faster fall in protein C activity than in prothrombin activity C. Depletion of factor VII leading to bleeding into the dermis D. Calcification of the media of dermal and subcutaneous arterioles E. Antibodies against phospholipid bound β2 glycoprotein I 헤파린 없이 와파린을 고용량으로 시작한 지 3~5일째, 지방이 많은 부위(허벅지·아랫배)에 통증이 심한 경계 뚜렷한 자흑색 판과 출혈성 물집이 생겼고 생검에서 진피·피하 소정맥의 피브린 혈전과 출혈성 괴사(혈관벽 염증 없음)가 보인다 — 와파린 유발 피부 괴사다. 어머니의 반복 정맥 혈전은 단백 C 결핍(유전성 혈전성향)을 시사한다. 와파린은 비타민 K 의존 인자(II·VII·IX·X)와 항응고 단백 C·S 의 γ 카복실화를 함께 막는데, 반감기가 짧은 단백 C(~8시간)가 프로트롬빈(~60시간)·인자 X 보다 먼저 떨어진다. 그래서 첫 며칠은 항응고 단백만 줄어든 일시적 과응고 상태가 되어 미세혈관 혈전이 생긴다. 이 때문에 와파린은 헤파린 등 비경구 항응고제와 겹쳐(최소 5일, INR 2 이상 24시간) 시작한다."
   },
   {
+   "id": "imaging-2026-0417",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 티아지드·NSAID 추가 뒤 생긴 만성 리튬 중독",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0417.md",
+   "snippet": "A 46 year old man with bipolar I disorder is brought to the emergency department by his wife because of 2 days of worsening confusion, slurred speech, and diarrhea. He has taken lithium carbonate 900 mg daily for 6 years, with stable serum ",
+   "text": "정신과 정신 — 티아지드·NSAID 추가 뒤 생긴 만성 리튬 중독 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c A 46 year old man with bipolar I disorder is brought to the emergency department by his wife because of 2 days of worsening confusion, slurred speech, and diarrhea. He has taken lithium carbonate 900 mg daily for 6 years, with stable serum lithium concentrations of 0.7 to 0.9 mEq/L. Three weeks ago, hydrochlorothiazide was started for hypertension, and 5 days ago he began taking ibuprofen for back pain. His temperature is 37.1°C (98.8°F), pulse is 64/min, and blood pressure is 128/80 mm Hg. He is disoriented to time and place. There is a coarse tremor of both hands and multifocal myoclonus. Serum sodium is 136 mEq/L, creatinine is 2.4 mg/dL (baseline 1.0 mg/dL), and lithium is 4.1 mEq/L. An ECG shows sinus rhythm with flattened T waves. Lithium, hydrochlorothiazide, and ibuprofen are discontinued, and intravenous 0.9% saline is started. Which of the following is the most appropriate next step in management? A. Saline alone with a repeat lithium level in 6 hours B. Hemodialysis C. Activated charcoal by nasogastric tube D. Whole bowel irrigation with polyethylene glycol E. Oral sodium polystyrene sulfonate"
+  },
+  {
+   "id": "imaging-2026-0416",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학 — 유병률이 다른 두 지역의 양성예측도",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0416.md",
+   "snippet": "보건소에 근무하는 40세 여자 의사가 새 선별검사를 두 지역에 도입하려 한다. 이 검사의 민감도는 90%, 특이도는 95%로 두 지역에서 같다. 선별 대상자의 질병 유병률은 A 지역이 10%, B 지역이 1%이다. 두 지역 모두 대상자는 각각 10,000명이며 검사 비용과 확진 검사 방법도 같다. B 지역에서 검사 양성으로 나온 사람이 실제로 질병을 가지고 있을 확률(양성예측도)에 가장 가까운 값은? A. 약 67% B. 약 ",
+   "text": "예방의학·역학 예방의학·역학 — 유병률이 다른 두 지역의 양성예측도 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c 보건소에 근무하는 40세 여자 의사가 새 선별검사를 두 지역에 도입하려 한다. 이 검사의 민감도는 90%, 특이도는 95%로 두 지역에서 같다. 선별 대상자의 질병 유병률은 A 지역이 10%, B 지역이 1%이다. 두 지역 모두 대상자는 각각 10,000명이며 검사 비용과 확진 검사 방법도 같다. B 지역에서 검사 양성으로 나온 사람이 실제로 질병을 가지고 있을 확률(양성예측도)에 가장 가까운 값은? A. 약 67% B. 약 90% C. 약 95% D. 약 99% E. 약 15%"
+  },
+  {
+   "id": "imaging-2026-0415",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 장기 프레드니솔론을 갑자기 끊은 뒤의 쇼크",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0415.md",
+   "snippet": "A 58 year old woman is brought to the emergency department 6 hours after the onset of vomiting, diffuse abdominal pain, and lightheadedness. She has rheumatoid arthritis treated with prednisone 15 mg daily for the past 3 years; she stopped ",
+   "text": "내분비 내분비·대사 — 장기 프레드니솔론을 갑자기 끊은 뒤의 쇼크 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c A 58 year old woman is brought to the emergency department 6 hours after the onset of vomiting, diffuse abdominal pain, and lightheadedness. She has rheumatoid arthritis treated with prednisone 15 mg daily for the past 3 years; she stopped taking it 5 days ago when she ran out of tablets while traveling. Her temperature is 37.9°C (100.2°F), pulse is 118/min, and blood pressure is 76/44 mm Hg. She is drowsy but oriented. The abdomen is diffusely tender without guarding. Serum studies show sodium 129 mEq/L, potassium 4.6 mEq/L, glucose 62 mg/dL, and creatinine 1.3 mg/dL. Blood cultures are obtained. After 1 L of intravenous 0.9% saline, her blood pressure is 82/50 mm Hg. Which of the following is the most appropriate next step in management? A. Resume oral prednisone 15 mg daily B. Intravenous hydrocortisone 100 mg C. Cosyntropin stimulation test before any steroid D. Norepinephrine infusion without corticosteroids E. Oral fludrocortisone 0.1 mg daily"
+  },
+  {
+   "id": "imaging-2026-0414",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 고열을 동반한 두 살 아이의 급성 중이염",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0414.md",
+   "snippet": "2세 남아가 이틀 전부터 열이 나고 밤에 보채며 오른쪽 귀를 잡아당겨서 병원에 왔다. 1주 전부터 콧물이 있었다. 어린이집에 다니며 최근 3개월 동안 항생제를 먹은 적은 없고 약물 알레르기도 없다. 체온 39.2℃, 맥박 140회/분, 호흡 28회/분이다. 이경검사에서 오른쪽 고막이 붉고 심하게 팽륜되어 있으며 공기 이경검사에서 고막이 움직이지 않는다. 왼쪽 고막은 정상이다. 눈곱이나 결막 충혈은 없고, 목은 부드럽다. 가장 ",
+   "text": "소아과 소아청소년 — 고열을 동반한 두 살 아이의 급성 중이염 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c 2세 남아가 이틀 전부터 열이 나고 밤에 보채며 오른쪽 귀를 잡아당겨서 병원에 왔다. 1주 전부터 콧물이 있었다. 어린이집에 다니며 최근 3개월 동안 항생제를 먹은 적은 없고 약물 알레르기도 없다. 체온 39.2℃, 맥박 140회/분, 호흡 28회/분이다. 이경검사에서 오른쪽 고막이 붉고 심하게 팽륜되어 있으며 공기 이경검사에서 고막이 움직이지 않는다. 왼쪽 고막은 정상이다. 눈곱이나 결막 충혈은 없고, 목은 부드럽다. 가장 적절한 치료는? A. 아목시실린 클라불란산 경구 투여 B. 세프트리악손 근육 주사 C. 고막 절개 후 환기관 삽입 D. 고용량 아목시실린 경구 투여 E. 48~72시간 관찰 뒤 재평가"
+  },
+  {
+   "id": "imaging-2026-0413",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 외상 없이 만져진 중년 여성의 유방 종괴와 초음파",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0413.md",
+   "snippet": "A 52 year old woman comes to the physician because of a painless lump in her left breast that she noticed 1 month ago. She has had no breast trauma, surgery, nipple discharge, or fever. Her last screening mammogram 3 years ago was normal. H",
+   "text": "외과 외과계 — 외상 없이 만져진 중년 여성의 유방 종괴와 초음파 opendata usmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c A 52 year old woman comes to the physician because of a painless lump in her left breast that she noticed 1 month ago. She has had no breast trauma, surgery, nipple discharge, or fever. Her last screening mammogram 3 years ago was normal. Her mother was diagnosed with breast cancer at the age of 71 years. Her vital signs are within normal limits. Examination shows a 2 cm firm, nontender, poorly mobile mass in the upper outer quadrant of the left breast; the overlying skin is normal, and there is no axillary lymphadenopathy. A gray scale ultrasound image of the breast mass is shown. Which of the following is the most likely diagnosis? A. Intraductal papilloma B. Invasive ductal carcinoma C. Fibroadenoma D. Fat necrosis E. Simple cyst"
+  },
+  {
+   "id": "imaging-2026-0412",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 폐경 후 출혈과 난소 고형 종괴의 조직과 추적 표지자",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0412.md",
+   "snippet": "65세 여자가 3개월 전부터 반복되는 질 출혈로 병원에 왔다. 15년 전 폐경되었고 호르몬 치료를 받은 적이 없다. 혈압 132/80 mmHg이다. 골반 진찰에서 오른쪽 부속기에 단단한 종괴가 만져진다. 질초음파에서 자궁내막 두께는 14 mm이고 오른쪽 난소에 9 cm 고형 종괴가 있다. 자궁내막 생검에서 자궁내막모양 선암이 나왔다. 전자궁절제술과 양쪽 부속기절제술로 떼어 낸 난소 종괴의 조직 절편(H&E 염색) 사진은 그림과",
+   "text": "산부인과 부인과 — 폐경 후 출혈과 난소 고형 종괴의 조직과 추적 표지자 opendata kmle_style histology 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c 65세 여자가 3개월 전부터 반복되는 질 출혈로 병원에 왔다. 15년 전 폐경되었고 호르몬 치료를 받은 적이 없다. 혈압 132/80 mmHg이다. 골반 진찰에서 오른쪽 부속기에 단단한 종괴가 만져진다. 질초음파에서 자궁내막 두께는 14 mm이고 오른쪽 난소에 9 cm 고형 종괴가 있다. 자궁내막 생검에서 자궁내막모양 선암이 나왔다. 전자궁절제술과 양쪽 부속기절제술로 떼어 낸 난소 종괴의 조직 절편(H&E 염색) 사진은 그림과 같다. 수술 뒤 재발 감시에 가장 유용한 혈청 표지자는? A. 인히빈 B B. CA 125 C. α 태아단백 D. β hCG E. 암배아항원"
+  },
+  {
+   "id": "imaging-2026-0411",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 인공관절 수술 뒤 헤파린 투여 중 혈소판 감소와 심부정맥혈전",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0411.md",
+   "snippet": "62세 여자가 무릎 인공관절 치환술 7일째 왼쪽 종아리가 붓고 아파서 진찰을 받았다. 수술 다음 날부터 혈전 예방을 위해 비분획 헤파린을 피하 주사로 맞고 있다. 혈압 128/76 mmHg, 맥박 94회/분, 체온 36.9℃이다. 왼쪽 종아리 둘레가 오른쪽보다 3 cm 크다. 혈소판 수는 수술 전 245,000/μL, 수술 7일째 98,000/μL이다. 혈색소 11.8 g/dL, 프로트롬빈시간 INR 1.0이고 말초혈액도말에 ",
+   "text": "혈액·종양 혈액·종양 — 인공관절 수술 뒤 헤파린 투여 중 혈소판 감소와 심부정맥혈전 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c 62세 여자가 무릎 인공관절 치환술 7일째 왼쪽 종아리가 붓고 아파서 진찰을 받았다. 수술 다음 날부터 혈전 예방을 위해 비분획 헤파린을 피하 주사로 맞고 있다. 혈압 128/76 mmHg, 맥박 94회/분, 체온 36.9℃이다. 왼쪽 종아리 둘레가 오른쪽보다 3 cm 크다. 혈소판 수는 수술 전 245,000/μL, 수술 7일째 98,000/μL이다. 혈색소 11.8 g/dL, 프로트롬빈시간 INR 1.0이고 말초혈액도말에 분열적혈구는 없다. 하지 정맥 초음파에서 왼쪽 오금정맥에 혈전이 있다. 항PF4/헤파린 항체 효소면역검사는 양성이다. 가장 적절한 처치는? A. 헤파린을 끊고 와파린을 바로 시작한다 B. 헤파린을 저분자량 헤파린으로 바꾼다 C. 혈소판을 수혈하고 헤파린을 유지한다 D. 헤파린을 끊고 항응고제 없이 지켜본다 E. 헤파린을 끊고 아르가트로반을 정맥 투여한다"
+  },
+  {
+   "id": "imaging-2026-0410",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 큰 고름집을 동반한 S결장 게실염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0410.md",
+   "snippet": "A 61 year old man comes to the emergency department because of a 4 day history of left lower quadrant abdominal pain and fever. He has hypertension treated with amlodipine. His temperature is 38.6°C (101.5°F), pulse is 102/min, and blood pr",
+   "text": "소화기 소화기·간담췌 — 큰 고름집을 동반한 S결장 게실염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c A 61 year old man comes to the emergency department because of a 4 day history of left lower quadrant abdominal pain and fever. He has hypertension treated with amlodipine. His temperature is 38.6°C (101.5°F), pulse is 102/min, and blood pressure is 132/80 mm Hg. Abdominal examination shows tenderness and vague fullness in the left lower quadrant without rigidity or rebound tenderness. Bowel sounds are normal. Leukocyte count is 16,800/mm3, and serum lactate is 1.4 mmol/L. CT of the abdomen with contrast shows sigmoid wall thickening with surrounding fat stranding and a 6 cm rim enhancing fluid collection adjacent to the sigmoid colon; there is no free intraperitoneal air. Intravenous antibiotics are begun. Which of the following is the most appropriate next step in management? A. CT guided percutaneous drainage of the collection B. Emergency sigmoid resection with end colostomy C. Colonoscopy within the next 48 hours D. Oral antibiotics and outpatient follow up E. Laparoscopic peritoneal lavage"
+  },
+  {
+   "id": "imaging-2026-0409",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 외상 없이 생긴 목 통증과 척수병증의 경추 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0409.md",
+   "snippet": "A 52 year old woman comes to the physician because of a 6 month history of neck pain radiating to the back of the head and intermittent tingling in both hands. She has had no trauma, fever, or weight loss. Her temperature is 36.7°C (98.1°F)",
+   "text": "근골격·류마티스 류마티스·근골격 — 외상 없이 생긴 목 통증과 척수병증의 경추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c A 52 year old woman comes to the physician because of a 6 month history of neck pain radiating to the back of the head and intermittent tingling in both hands. She has had no trauma, fever, or weight loss. Her temperature is 36.7°C (98.1°F), pulse is 76/min, and blood pressure is 124/78 mm Hg. Examination shows mildly limited neck rotation. Deep tendon reflexes are brisk in the upper extremities, and the Hoffmann sign is present bilaterally. Muscle strength is normal. Erythrocyte sedimentation rate is 12 mm/h, and rheumatoid factor is negative. A sagittal CT image of the cervical spine is shown. Which of the following is the most likely diagnosis? A. Os odontoideum B. Type II odontoid fracture C. Rheumatoid atlantoaxial subluxation D. Jefferson fracture of the atlas E. Basilar invagination"
+  },
+  {
+   "id": "imaging-2026-0408",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 교통사고 뒤 목 통증과 측면 경추 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0408.md",
+   "snippet": "54세 남자가 승용차를 운전하다 앞차를 들이받으며 이마를 앞유리에 부딪친 뒤 목 통증으로 응급실에 실려 왔다. 구급대원이 경추 보조기와 척추 고정판으로 고정해 왔다. 혈압 138/84 mmHg, 맥박 92회/분, 호흡 18회/분이다. 의식은 명료하고 이마에 찰과상이 있으며 뒤목 정중선에 압통이 있다. 사지 근력과 감각, 항문 괄약근 긴장도는 정상이다. 경추 측면 단순 X선 사진은 그림과 같다. 가장 적절한 다음 처치는? A. ",
+   "text": "응급·중환자 응급·중환자·외상 — 교통사고 뒤 목 통증과 측면 경추 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c 54세 남자가 승용차를 운전하다 앞차를 들이받으며 이마를 앞유리에 부딪친 뒤 목 통증으로 응급실에 실려 왔다. 구급대원이 경추 보조기와 척추 고정판으로 고정해 왔다. 혈압 138/84 mmHg, 맥박 92회/분, 호흡 18회/분이다. 의식은 명료하고 이마에 찰과상이 있으며 뒤목 정중선에 압통이 있다. 사지 근력과 감각, 항문 괄약근 긴장도는 정상이다. 경추 측면 단순 X선 사진은 그림과 같다. 가장 적절한 다음 처치는? A. 고용량 메틸프레드니솔론을 정맥 투여한다 B. 영상 추가 없이 응급 후방 고정술을 한다 C. 경추 고정을 유지하고 경추 CT를 시행한다 D. 보조기를 벗기고 굴곡·신전 X선을 찍는다 E. 보조기를 벗기고 진통제를 주어 귀가시킨다"
+  },
+  {
+   "id": "imaging-2026-0407",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 30주의 조기 양막 파열",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0407.md",
+   "snippet": "A 27 year old woman, gravida 2, para 1, at 30 weeks' gestation comes to the emergency department because of a sudden gush of clear fluid from the vagina 3 hours ago. She has had no contractions, abdominal pain, or vaginal bleeding. Her temp",
+   "text": "산부인과 산과 — 임신 30주의 조기 양막 파열 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c A 27 year old woman, gravida 2, para 1, at 30 weeks' gestation comes to the emergency department because of a sudden gush of clear fluid from the vagina 3 hours ago. She has had no contractions, abdominal pain, or vaginal bleeding. Her temperature is 36.9°C (98.4°F), pulse is 84/min, and blood pressure is 118/72 mm Hg. The uterus is soft and nontender. Sterile speculum examination shows pooling of clear fluid in the posterior fornix; nitrazine paper turns blue, and a ferning pattern is seen on microscopy. The cervix appears closed. Fetal heart rate tracing shows a baseline of 140/min with moderate variability and accelerations, and no contractions are recorded. Ultrasonography shows a singleton fetus in cephalic presentation with decreased amniotic fluid. Which of the following is the most appropriate next step in management? A. Cesarean delivery within the next few hours B. Indomethacin tocolysis without antibiotics C. Discharge home with weekly ultrasonography D. Betamethasone plus ampicillin and erythromycin E. Induction of labor with intravenous oxytocin"
+  },
+  {
+   "id": "imaging-2026-0406",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 폐암 환자의 저혈압·경정맥 팽대·기이맥",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "confidence": "high",
+   "date": "2026-10-22",
+   "path": "content/imaging/2026/imaging-2026-0406.md",
+   "snippet": "68세 남자가 이틀 전부터 심해진 호흡곤란으로 응급실에 왔다. 6개월 전 폐 선암을 진단받고 항암치료 중이다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8℃이다. 앉은 자세에서 경정맥이 턱 아래까지 팽대되어 있고 심음은 작게 들린다. 흡기 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐 호흡음은 깨끗하고 다리 부종은 없다. 심전도에서 동빈맥과 함께 QRS 높이가 박동마다 번갈아 바뀐다. 흉",
+   "text": "순환기 순환기 — 폐암 환자의 저혈압·경정맥 팽대·기이맥 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c 68세 남자가 이틀 전부터 심해진 호흡곤란으로 응급실에 왔다. 6개월 전 폐 선암을 진단받고 항암치료 중이다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8℃이다. 앉은 자세에서 경정맥이 턱 아래까지 팽대되어 있고 심음은 작게 들린다. 흡기 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐 호흡음은 깨끗하고 다리 부종은 없다. 심전도에서 동빈맥과 함께 QRS 높이가 박동마다 번갈아 바뀐다. 흉부 X선에서 심장 음영이 물병 모양으로 커져 있다. 가장 적절한 처치는? A. 알테플라제 정맥주사 B. 왼쪽 흉관 삽입 C. 심낭천자 D. 푸로세미드 정맥주사 E. 니트로글리세린 설하 투여"
+  },
+  {
    "id": "cn.rheum.acute-monoarthritis.synovial-fluid-first",
    "type": "concept",
    "unit": "",
@@ -226,6 +434,108 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/rheumatology/cn.rheum.acute-monoarthritis.synovial-fluid-first.md",
    "snippet": "판단 — 왜 관절 천자가 먼저인가 급성·국소·단관절 통증은 경고(red flag) 진단 — 화농성 관절염(septic arthritis)·급성 결정 관절염(통풍 등)·골절 — 을 먼저 떠올리게 한다. 늦게 진단하면 관절이 손상된다 [[harrison 21: 370장 p.2844]]. 급성 단관절염이나 감염·결정 관절병증 의심에서 관절액 흡인·분석(arthrocentesis, synovial fluid analysis)은 언제나",
    "text": "Rheumatology 판단 — 왜 관절 천자가 먼저인가 급성·국소·단관절 통증은 경고(red flag) 진단 — 화농성 관절염(septic arthritis)·급성 결정 관절염(통풍 등)·골절 — 을 먼저 떠올리게 한다. 늦게 진단하면 관절이 손상된다 [[harrison 21: 370장 p.2844]]. 급성 단관절염이나 감염·결정 관절병증 의심에서 관절액 흡인·분석(arthrocentesis, synovial fluid analysis)은 언제나 적응이 된다 [[harrison 21: 370장 p.2852]]. 감염이 의심되면 관절액을 그람염색하고 배양한다 — 결정이 보여도 마찬가지다. 결정 관절염과 화농성 관절염은 가끔 한 관절에 함께 있다 [[harrison 21: 370장 p.2852]]. 혈청 요산·자가항체는 이 판단을 대신하지 못한다. 급성 통풍 발작의 최대 50%는 혈청 요산이 정상이고, RF·ANA 는 임상이 특정 진단을 가리킬 때만 낸다 [[harrison 21: 370장 p.2851]]. 기전 — 정상 관절액에서 염증 관절액으로 정상 관절액은 맑거나 옅은 짚색이고, 히알루론산(hyaluronate) 이 많아 점성이 높다 — 주사기에서 한 방울씩 밀면 긴 꼬리를 끌며 실처럼 늘어난다 [[harrison 21: 370장 p.2852]]. 골관절염·외상의 삼출은 이 점성이 그대로다. 염증이 생기면 다형핵구가 몰려 관절액이 탁해지고, 히알루론산이 줄어 점성이 떨어진다(꼬리가 거의 없다) [[harrison 21: 370장 p.2852]]. 세균 감염에서는 백혈구가 더 늘어 불투명한 고름이 된다. 그래서 관절액의 겉모습·점성·세포 수 만으로도 비염증·염증·화농을 가를 수 있고, 원인은 그람염색·배양·결정이 정한다 [[harrison 21: 370장 p.2852]]. 관절 안 압력이 오르면 환자는 관절 안 압력이 가장 낮고 부피가 가장 큰 자세(대개 약간 굽힘)로 관절을 둔다 [[harrison 21: 370장 p.2848]]. 가르는 소견 — 관절액이 말해 주는 것 천자 직후 겉모습·점성·세포 수를 바로 본다 [[harrison 21: 370장 p.2852]]. 관절액 포도당·단백·젖산탈수소효소(LDH)·젖산·자가항체 검사는 진단 가치가 없어 권하지 않는다 [[harrison 21: 370장 p.2852]]. 임균 관절염(gonococcal arthritis)이 의심되면 핵산증폭검사(NAAT)로 임균·클라미디아를 찾는다. 만성 단관절염이면 결핵균(Mycobacterium tuberculosis)·진균도 배양한다 [[harrison 21: 370장 p.2852]]. 해석의 한계 : 화농 범위의 관절액( 50,000/μL)은 류마티스관절염·통풍에서도 나온다 — 숫자 하나로 감염을 확정하거나 배제하지 않고 배양을 본다 [[harrison 21: 370장 p.2852]]. 선택 — 천자 전에 확인할 것과 다른 검사 관절인가, 관절 주위인가 : 관절 질환은 깊고 넓은 통증, 능동·수동 운동 모두의 제한, 부종·염발음·잠김·변형이 있다. 관절 주위 질환(힘줄염·윤활낭염)은 능동 운동에서만 아프고 관절 가장자리 밖의 점 압통이 있다 — 천자 대상이 아니다 [[harrison 21: 370장 p.2844, p.2848]]. 혈액 검사 : 혈구 수·ESR 또는 CRP 는 염증과 비염증을 가르는 데 쓴다. 혈청 요산은 통풍 진단과 요산 저하 치료의 감시(목표 < 6 mg/dL)에 쓰지만 발작 때 정상일 수 있다 [[harrison 21: 370장 p.2851]]. 영상 : 외상·만성 감염 의심·단관절 침범이면 단순 X선이 알맞지만, 급성 염증성 관절염의 이른 X선은 연부조직 부종·관절 주위 골감소만 보여 진단에 거의 도움이 되지 않는다 [[harrison 21: 370장 p.2852]]. 권고와 예외 외상 뒤 관절 삼출, 만성 다발관절염 환자에게 새로 생긴 단관절염, 혈관절증 의심도 천자를 강하게 고려한다(Fig. 370 6) [[harrison 21: 370장 p.2852]]. 새로 생긴 염증성 다발 관절염은 감별이 넓어(RA·간염 관련·치쿤구니야·혈청병·약물 유발 루푸스·SLE·다관절 화농성) 관절액보다 표적 혈액 검사가 더 필요할 수 있다 [[harrison 21: 370장 p.2847]]. 출혈성 관절액은 외상(인대·연골 파열)·골연골 골절·신경병성 관절병증·응고병증을 생각한다. 외상 뒤 육안으로 피가 섞인 관절액은 십자인대 손상을 의심하게 한다 [[harrison 21: 370장 p.2850, p.2852]]. 입원 중 수술·탈수·약물이 급성 통풍을 일으킬 수 있다 [[harrison 21: 370장 p.2847]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 370장 p.2844~2853)"
+  },
+  {
+   "id": "paper-2026-0818",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinics in shoulder and elbow",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0818_clinical_and_radiological_outcomes_of_primary_semi_constrain.md",
+   "snippet": "Title Clinical and radiological outcomes of primary semi constrained total elbow arthroplasty at 10 year mean follow up Authors Jung Kyu Hak, Choi Min Hyeok, Choi Jun Yong, Kang Suk Woong Journal / DOI Clinics in shoulder and elbow · DOI: 1",
+   "text": "Surgery scraped pubmed PubMed / Clinics in shoulder and elbow Title Clinical and radiological outcomes of primary semi constrained total elbow arthroplasty at 10 year mean follow up Authors Jung Kyu Hak, Choi Min Hyeok, Choi Jun Yong, Kang Suk Woong Journal / DOI Clinics in shoulder and elbow · DOI: 10.5397/cise.2026.00325 · PMID: 42902580 https://pubmed.ncbi.nlm.nih.gov/42902580/ Abstract BACKGROUND: This study aimed to evaluate the long term clinical and radiological outcomes in patients undergoing semi constrained total elbow arthroplasty (TEA). Postoperative complications and implant survival rates were also investigated. METHODS: Of 68 patients who underwent primary semi constrained TEA, data from 62 with a minimum follow up of 5 years were analyzed. The mean follow up duration was 117.1 months (range, 60 246 months). Forty one patients had posttraumatic conditions, 11 had rheumatoid arthritis, and 10 had osteoarthritis. Clinical outcomes were assessed using the Mayo Elbow Performance Score (MEPS) and Oxford Elbow Score (OES), whereas radiological outcomes were analyzed using radiolucent lines and bushing wear. Kaplan Meier survival analysis was used to determine the implant survival rate. RESULTS: At the final follow up, the MEPS and OES were 88.2 (range, 55 100) and 31.6 (range, 22 42), respectively. Radiolucency of type 3 or 4 was observed on the humeral side in four patients and on the ulnar side in three patients. Grade 1 and 2 bushing wear was present in seven and three patients, respectively. The total complication rate was 25.8% (16/62), and the reoperation rate was 17.7% (11/62). Four patients underwent reoperation for periprosthetic infection after previous open reduction and internal fixation for acute fractures. In addition, three patients underwent hinge system change for hinge dissociation, four sustained periprosthetic fractures, one underwent revision TEA for gross loosening, and one underwent open repair for triceps rupture. Kaplan Meier survival analysis revealed that the 5 , 10 , and 15 year survival rates of the implants were 100%, 92.8%, and 77.5%, respectively. CONCLUSIONS: Clinical and radiological outcomes of primary semi constrained TEA were reasonably good at a mean 10 year follow up. Type 3 or 4 radiolucency was observed in seven patients and complete bushing wear in three patients, while the 10 year implant survival rate was 92.8%. Level of evidence: IV. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0817",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Renal failure",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0817_bilateral_peripheral_ct_venography_for_evaluating_central_ve.md",
+   "snippet": "Title Bilateral peripheral CT venography for evaluating central venous lesions in dysfunctional arteriovenous fistulas: feasibility, safety, and radiation dose in hemodialysis patients Authors Zhang Hongwei, Liu Hongming, Zou Zhi, Chen Shun",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Renal failure Title Bilateral peripheral CT venography for evaluating central venous lesions in dysfunctional arteriovenous fistulas: feasibility, safety, and radiation dose in hemodialysis patients Authors Zhang Hongwei, Liu Hongming, Zou Zhi, Chen Shunqiang, Shi Lili, Li Yongli, Dou Shewei Journal / DOI Renal failure · DOI: 10.1080/0886022X.2026.2740365 · PMID: 42902599 https://pubmed.ncbi.nlm.nih.gov/42902599/ Abstract OBJECTIVES: Central venous stenosis and occlusion are major causes of arteriovenous fistula (AVF) dysfunction in hemodialysis patients. This study aimed to evaluate the feasibility, safety, radiation exposure, and anatomical findings of bilateral peripheral CT venography for central venous assessment in patients with dysfunctional AVFs. METHODS: This single center retrospective cohort study included 46 consecutive hemodialysis patients with dysfunctional AVFs who underwent bilateral peripheral CT venography between August 2023 and June 2025. Technical success, procedure related adverse events, radiation dose parameters, central venous lesion characteristics, and agreement with available comparative imaging modalities were analyzed. Comparative imaging findings from puncture based angiography and/or duplex ultrasonography were assessed descriptively. RESULTS: All 46 examinations were technically successful (100%), with a mean procedure duration of 4 minutes (range, 3 5 minutes). Minor adverse events included one patient of contrast extravasation (2.2%) and 3 of mild allergic reactions (6.5%); no severe procedure related complications were documented. The mean CTDIvol and DLP were 11.87 mGy and 784.15 mGy·cm, respectively. Central venous abnormalities were identified in 44 patients (95.7%), including stenosis in 31 (67.4%), occlusion in 11 (23.9%), and aneurysmal changes in 2 (4.3%). Comparative imaging was available in 38 patients, and CT venography showed agreement with available findings in 37 cases (97.4%). This agreement was interpreted as descriptive concordance rather than formal diagnostic accuracy. CONCLUSIONS: Bilateral peripheral CT venography demonstrated high technical feasibility, acceptable safety, and effective visualization of central venous abnormalities in hemodialysis patients with dysfunctional AVFs. Further prospective studies are needed to validate its diagnostic performance and clinical impact. ADVANCES IN KNOWLEDGE: This technique enables efficient, noninvasive assessment of central venous pathology with minimal risk, supporting its potential as a practical alternative to conventional imaging in hemodialysis patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0816",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ophthalmic plastic and reconstructive surgery",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0816_parasitic_infections_of_the_lacrimal_system_a_major_review_o.md",
+   "snippet": "Title Parasitic Infections of the Lacrimal System: A Major Review of Etiology, Clinical Presentation, and Management Authors Salari Yasaman, Juniat Valerie, Ali Mohammad Javed Journal / DOI Ophthalmic plastic and reconstructive surgery · DO",
+   "text": "Pathology scraped pubmed PubMed / Ophthalmic plastic and reconstructive surgery Title Parasitic Infections of the Lacrimal System: A Major Review of Etiology, Clinical Presentation, and Management Authors Salari Yasaman, Juniat Valerie, Ali Mohammad Javed Journal / DOI Ophthalmic plastic and reconstructive surgery · DOI: 10.1097/IOP.0000000000003305 · PMID: 42902464 https://pubmed.ncbi.nlm.nih.gov/42902464/ Abstract PURPOSE: Parasitic infections of the lacrimal system are rare and often under recognized causes of lacrimal pathology. Their clinical presentation frequently mimics more common conditions such as chronic dacryocystitis, leading to diagnostic challenges and delays in appropriate management. This study aims to systematically review the literature on parasitic infections of the lacrimal system and to characterize their etiology, clinical presentation, diagnostic approaches, management strategies, and outcomes. METHODS: A systematic review was conducted across MEDLINE, Embase, Emcare, and PubMed from inception to March 2026. Studies reporting parasitic infections involving the lacrimal apparatus were included. Data on demographics, clinical presentation, anatomical involvement, causative organisms, diagnostic methods, treatment, and outcomes were extracted. Due to heterogeneity and predominance of case reports and small series, a qualitative descriptive analysis was performed. RESULTS: A total of 44 studies comprising 172 cases were included. Rhinosporidium seeberi was the most frequently reported pathogen, accounting for 147 cases (85.5%), followed by Leishmania (8 cases, 4.7%) and Ascaris lumbricoides (7 cases, 4.1%). The lacrimal sac was the most commonly involved site. Clinical presentation was nonspecific, with epiphora and medial canthal swelling predominating. Diagnosis was most often established by histopathology following surgical intervention. Management varied by etiology, with surgical excision commonly used for rhinosporidiosis and mechanical extraction for helminthic infections. Outcomes were generally favorable, although recurrence was reported, particularly in R. seeberi infections. CONCLUSIONS: Parasitic infections of the lacrimal system are rare but clinically important, with diverse presentations and management approaches. Increased awareness is essential for early diagnosis and appropriate treatment. Further studies with standardized reporting are needed to optimize management strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0815",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Future oncology (London, England)",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0815_study_protocol_of_a_prospective_non_interventional_cohort_st.md",
+   "snippet": "Title Study protocol of a prospective, non interventional cohort study evaluating the benefits of transjugular intrahepatic portosystemic shunt in patients with hepatocellular carcinoma receiving first line atezolizumab plus bevacizumab (NI",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Future oncology (London, England) Title Study protocol of a prospective, non interventional cohort study evaluating the benefits of transjugular intrahepatic portosystemic shunt in patients with hepatocellular carcinoma receiving first line atezolizumab plus bevacizumab (NISTIPS TRITICC 4, IKF092) Authors Angendohr Carolin, Weigel Christian, Kunstein Anselm, Joerdens Markus, Goetze Thorsten, Al Batran Salah Eddin, Zäpf Bianca, Gonzalez Carmona Maria, et al. Journal / DOI Future oncology (London, England) · DOI: 10.1080/14796694.2026.2748246 · PMID: 42902603 https://pubmed.ncbi.nlm.nih.gov/42902603/ Abstract BACKGROUND: Hepatocellular carcinoma (HCC) is a leading cause of cancer related mortality, with most patients diagnosed at an advanced stage. Atezolizumab plus bevacizumab is a current standard first line therapy; however, outcomes are strongly influenced by underlying cirrhosis and clinically significant portal hypertension (CSPH). Complications such as ascites and variceal bleeding may limit treatment continuation, particularly as bevacizumab increases bleeding risk. Transjugular intrahepatic portosystemic shunt (TIPS) reduces portal pressure and may improve outcomes, but its role in patients receiving immunoncology based systemic therapy remains unclear. METHODS: NISTIPS TRITICC 4 is a prospective, multicentre, non interventional cohort study conducted at up to 25 centers in Germany. A total of 350 adult patients with cirrhosis and unresectable or metastatic HCC receiving first line atezolizumab plus bevacizumab will be enrolled. Patients are allocated to two cohorts: TIPS in situ plus atezolizumab and bevacizumab or atezolizumab plus bevacizumab alone, according to routine clinical practice.The primary endpoint is time to deterioration of liver function (TTDL), defined as persistent worsening of liver parameters for 4 weeks. Secondary endpoints include overall survival, time on treatment, overall response rate, time to new extrahepatic lesions or death, and safety with focus on bleeding and TIPS related complications.Time to event endpoints will be analyzed using Kaplan Meier methods and Cox models. Propensity score matching will be applied to adjust for confounding. Analyses are exploratory. DISCUSSION: This study will provide real world evidence on the impact of TIPS in HCC patients receiving atezolizumab plus bevacizumab and may support more individualized management strategies in this high risk population. CLINICAL TRIAL REGISTRATION: www.clinicaltrials.gov identifier is NCT07365930. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0814",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical research in pediatric endocrinology",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0814_mixed_presentation_of_hyperglycemic_hyperosmolar_state_and_d.md",
+   "snippet": "Title Mixed Presentation of Hyperglycemic Hyperosmolar State and Diabetic Ketoacidosis in a Pediatric Patient: a Case Report and Literature Review Authors Ordoñez González Irvin, García Couturier Rosalía, Gómez Pérez Ana Paula, Saucedo Coro",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of clinical research in pediatric endocrinology Title Mixed Presentation of Hyperglycemic Hyperosmolar State and Diabetic Ketoacidosis in a Pediatric Patient: a Case Report and Literature Review Authors Ordoñez González Irvin, García Couturier Rosalía, Gómez Pérez Ana Paula, Saucedo Coronado María Paola, Pineda Macal Mónica Lizeth Journal / DOI Journal of clinical research in pediatric endocrinology · DOI: 10.4274/jcrpe.galenos.2026.2026 4 22 · PMID: 42902609 https://pubmed.ncbi.nlm.nih.gov/42902609/ Abstract The coexistence of diabetic ketoacidosis (DKA) and hyperglycemic hyperosmolar state (HHS), known as mixed hyperglycemic crisis, is a rare but potentially fatal metabolic emergency in pediatrics, and is frequently underrecognized because it is misclassified as isolated DKA. It carries a higher risk of complications than either entity alone, particularly in patients with complex comorbidities. We describe the case of a 16 year old female with myelomeningocele, neurogenic bladder, obesity, and insulin resistance, who had self discontinued treatment with metformin, atorvastatin, and allopurinol one year prior and presented with sudden neurological deterioration. Initial workup revealed extreme hyperglycemia (1,777 mg/dL), severe hyperosmolarity (431 mOsm/kg), decompensated metabolic acidosis (pH 7.13), and positive urine ketones (+++), consistent with a mixed DKA HHS presentation. She subsequently developed septic shock of urinary origin, acute kidney injury, and acute pancreatitis (lipase 3,911 U/L). Despite intensive management guided by International Society for Pediatric and Adolescent Diabetes ISPAD recommendations, she progressed to refractory shock and multiorgan failure, dying within 48 hours of admission. To the best of our knowledge, this represents one of the most extreme metabolic derangements reported in pediatric mixed hyperglycemic crisis. The convergence of extreme hyperosmolarity, concurrent sepsis, and structural comorbidities created a lethal risk phenotype in which sepsis, rather than the degree of metabolic derangement alone, appeared to determine the fatal outcome. Early recognition and an individualized therapeutic approach are essential to improve outcomes in vulnerable pediatric patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0813",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMB reports",
+   "confidence": "medium",
+   "date": "2026-10-21",
+   "path": "content/papers/2026/2026-10-21_paper-2026-0813_atorvastatin_protects_cardiomyocytes_from_doxorubicin_toxici.md",
+   "snippet": "Title Atorvastatin protects cardiomyocytes from doxorubicin toxicity by modulating YAP/TAZ signaling Authors Lim Heejung, Jin Suyeon, Lee Chan Joo, Lim Gibbeum, Park Sungha, Lee Sang Hak, Oh Jaewon, Kang Seok Min Journal / DOI BMB reports ·",
+   "text": "Cardiology scraped pubmed PubMed / BMB reports Title Atorvastatin protects cardiomyocytes from doxorubicin toxicity by modulating YAP/TAZ signaling Authors Lim Heejung, Jin Suyeon, Lee Chan Joo, Lim Gibbeum, Park Sungha, Lee Sang Hak, Oh Jaewon, Kang Seok Min Journal / DOI BMB reports · PMID: 42902567 https://pubmed.ncbi.nlm.nih.gov/42902567/ Abstract Doxorubicin (DOX) is a widely used anthracycline chemotherapeutic agent; however, its clinical efficacy is hampered by dose dependent cardiotoxicity, which can lead to irreversible heart failure. Despite extensive research, effective strategies for preventing or mitigating DOX induced cardiac injury remain lacking. The Hippo signaling effectors, Yes associated protein (YAP) and transcriptional co activator with PDZ binding motif (TAZ), are known to regulate cardiomyocyte survival, apoptosis, and mitochondrial quality control; however, their role in protecting the heart from DOX toxicity remains unclear. In this study, we investigated whether atorvastatin, a widely prescribed HMG CoA reductase inhibitor with pleiotropic effects, attenuated DOX induced cardiomyopathy by modulating the YAP/TAZ signaling axis. In H9c2 cardiomyocytes, DOX suppressed the expression of YAP and TAZ, leading to the downregulation of their downstream targets, Survivin and Park2, and activation of apoptotic cascades. Atorvastatin pretreatment restored YAP/TAZ expression at both mRNA and protein levels and reversed DOX induced apoptosis. RNA interference mediated knockdown of YAP or TAZ abolished the protective effects of atorvastatin, confirming the importance of this pathway. In a murine model of DOX cardiotoxicity, atorvastatin preserved left ventricular systolic function, reduced myocardial apoptosis and fibrosis, and restored YAP/TAZ, Survivin, and Park2 expression in the cardiac tissue. These findings suggest that atorvastatin exerts cardioprotective effects by restoring YAP/TAZ mediated anti apoptotic and mitochondrial quality control signaling. Our study highlights a novel mechanism via which atorvastatin mitigates DOX induced cardiotoxicity and supports the therapeutic potential of YAP/TAZ modulation for cardioprotection. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1537",
