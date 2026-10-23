@@ -250,6 +250,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.granulosa-cell-tumor.tumor-marker",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0412.png",
    "caption": "H&E 염색 조직 절편, 화살표는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 보정 없음)",

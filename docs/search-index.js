@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-22",
+ "generated": "2026-10-23",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3952,
+  "total": 3960,
   "byType": {
    "kmle": 1536,
-   "concept": 109,
+   "concept": 110,
    "usmle": 210,
+   "paper": 825,
    "imaging": 416,
-   "paper": 818,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 270,
-   "Nephrology": 217,
-   "Infectious Disease": 198,
+   "Cardiology": 271,
+   "Nephrology": 218,
+   "Infectious Disease": 199,
    "Pediatrics": 184,
-   "Obstetrics & Gynecology": 133,
-   "Pathology": 120,
+   "Obstetrics & Gynecology": 134,
+   "Pathology": 121,
    "Rheumatology": 120,
-   "Hematology-Oncology": 118,
+   "Hematology-Oncology": 119,
    "Psychiatry": 115,
    "Neurology": 114,
    "General Surgery": 104,
    "Endocrinology": 101,
+   "Surgery": 101,
    "Dermatology": 100,
    "Orthopedics": 100,
-   "Surgery": 100,
    "Gastroenterology": 99,
    "Ophthalmology": 98,
    "Pulmonology": 98,
    "Hematology": 93,
-   "Laboratory Medicine": 83,
+   "Laboratory Medicine": 84,
    "산부인과": 63,
    "순환기": 36,
    "호흡기": 28,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2768,
-   "medium": 1134,
+   "medium": 1142,
    "low": 50
   },
   "tagCount": 5015
@@ -706,6 +706,20 @@ window.MEDKOS_INDEX = {
    "text": "Rheumatology 판단 — 왜 운동·체중 감량이 먼저인가 골관절염(osteoarthritis)은 기계적 하중이 이끄는 병 이라 치료의 중심은 관절에 실리는 하중을 바꾸고 관절 보호 장치의 기능을 높이는 것이다 — 아픈 활동 피하기, 관절을 잇는 근육 키우기, 지팡이·보조기·부목으로 하중 줄이기 [[harrison 21: 371장 p.2860]]. 체중 감량 은 특히 무릎 골관절염의 중심 전략이다. 한쪽 다리로 설 때 체중의 3~6배가 무릎에 실려, 줄인 체중이 무릎·고관절 하중을 곱절로 덜어 준다 [[harrison 21: 371장 p.2857, p.2860]]. 운동 (유산소·저항 운동)은 무릎·고관절 골관절염의 통증을 줄이고 기능을 낫게 한다. 운동과 열량 제한·체중 감량을 함께 하면 특히 효과가 크다 [[harrison 21: 371장 p.2860]]. 약은 증상을 다루는 보조 다 — 지금까지 병의 경과를 바꾸는 약은 없다 [[harrison 21: 371장 p.2861]]. 기전 — 관절 보호 장치에서 관절 부전으로 골관절염은 관절 부전(joint failure)이다 — 유리 관절 연골(hyaline articular cartilage)이 국소적으로 닳고, 연골하골이 두꺼워지고 경화되며, 관절 가장자리에 골극(osteophyte)이 자라고, 관절막이 늘어나고, 윤활막염과 관절을 잇는 근육의 약화가 함께 온다 [[harrison 21: 371장 p.2855]]. 관절막·인대·근육·감각 신경·윤활액(히알루론산·루브리신)이 하중을 나누는 보호 장치 인데, 이것이 무너지면 일상 하중으로도 연골이 상한다 [[harrison 21: 371장 p.2855–2856]]. 연골은 2형 콜라겐과 아그리칸(aggrecan)으로 압축 강성을 얻고, 연골세포가 기계적 스트레스에 반응해 염증 사이토카인(IL 1β·TNF α)과 기질 분해 효소(MMP·ADAMTS 5)를 내면 기질이 무너진다 [[harrison 21: 371장 p.2856]]. 대퇴사두근 약화와 내반 정렬은 국소 하중을 키워 진행을 앞당긴다 [[harrison 21: 371장 p.2857]]. 연골에는 신경이 없어 통증은 윤활막염·관절 삼출·골수 부종·주위 윤활낭에서 온다 — 그래서 하중과 염증을 줄이는 치료가 통증을 줄인다 [[harrison 21: 371장 p.2858]]. 가르는 소견 — 골관절염인가, 다른 원인인가 전형: 45세 이상, 활동 중·직후의 통증이 쉬면 가라앉고, 아침 강직은 대개 30분 미만이다. 계단·의자에서 일어설 때 아프면 무릎덮개대퇴 구획을 생각한다 [[harrison 21: 371장 p.2858–2859]]. 긴 아침 강직과 여러 관절 침범은 염증 관절염을, 관절선 밖 압통은 거위발 윤활낭염(anserine bursitis)·대전자 윤활낭염을 시사한다. 말기가 아닌데 야간 통증이 두드러지면 따로 검사한다 [[harrison 21: 371장 p.2859]]. 염증 관절염이 의심되지 않으면 혈액 검사는 필요 없고, 관절액 검사가 X선보다 도움이 된다 — 백혈구 1,000/μL 이면 염증 관절염·통풍·가성통풍 쪽이다 [[harrison 21: 371장 p.2859]]. 해석의 한계 : 이른 병기에서는 X선이 정상일 수 있고, 영상 소견은 통증의 유무·정도와 잘 맞지 않는다 [[harrison 21: 371장 p.2859–2860]]. 선택 — 약은 보조, 경로와 위험으로 고른다 NSAID 는 처음에 국소 또는 필요시 경구 저용량 으로 쓴다 — 부작용이 덜하다. 부족하면 매일 소염 용량으로 올린다 [[harrison 21: 371장 p.2861]]. 경구 NSAID 는 30~40%가 위장 부작용으로 끊을 만큼 흔하다. 식후 복용, 고위험이면 양성자펌프억제제를 더한다. 저용량 아스피린과는 시간을 띄워 먹는다 [[harrison 21: 371장 p.2861]]. 심혈관 고위험 노인에게 디클로페낙 같은 전통 NSAID 는 장기 치료로 알맞지 않다 — 나프록센과 저용량 셀레콕시브만 심혈관 쪽에서 안전해 보인다 [[harrison 21: 371장 p.2861]]. 효과 재평가: 치료의 목표는 통증 완화와 기능 소실 최소화다. 치료에도 통증이 남거나 양상이 골관절염답지 않을 때 영상을 찍는다 [[harrison 21: 371장 p.2859–2860]]. 권고와 예외 증상이 가볍고 간헐적이면 증상 조절과 체중 감량·신체 활동·운동·자기 관리만으로 충분할 수 있고, 지속되는 장애 통증에는 물리 치료와 약을 함께 쓴다 [[harrison 21: 371장 p.2860]]. 저충격 운동(수중 유산소·수중 저항 운동)이 달리기·러닝머신보다 잘 견뎌진다. 무릎에는 태극권도 효과가 있을 수 있지만, 손 골관절염은 운동 치료의 근거가 약하다 [[harrison 21: 371장 p.2860]]. 운동은 6개월에 1/3~절반 이상이 그만둔다 — 진료 때마다 운동 처방을 다시 강조한다 [[harrison 21: 371장 p.2860]]. 경구 NSAID 는 4·5기 콩팥병에서 쓰지 않고 3기에서는 주의한다 [[harrison 21: 371장 p.2861]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 371장 p.2854~2861)"
   },
   {
+   "id": "cn.obgyn.granulosa-cell-tumor.tumor-marker",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.granulosa-cell-tumor.tumor-marker.md",
+   "snippet": "판단 — 왜 인히빈 B가 먼저인가 먼저 종양의 기원 세포를 정한다: 폐경 후 에스트로겐 과다 (출혈·자궁내막 증식·선암) + 한쪽 고형 난소 종괴 는 호르몬을 만드는 성끈 간질 종양을 떠올리게 한다 [[harrison 21: 89장 p.697]]. 조직의 Call Exner 소체와 세로 홈이 팬 「커피콩」 핵이 성인형 과립막세포종을 정한다 [[?who 5 female]]. 혈청 표지자는 그 세포가 만드는 물질이다 — 과립막세포",
+   "text": "Obstetrics & Gynecology 판단 — 왜 인히빈 B가 먼저인가 먼저 종양의 기원 세포를 정한다: 폐경 후 에스트로겐 과다 (출혈·자궁내막 증식·선암) + 한쪽 고형 난소 종괴 는 호르몬을 만드는 성끈 간질 종양을 떠올리게 한다 [[harrison 21: 89장 p.697]]. 조직의 Call Exner 소체와 세로 홈이 팬 「커피콩」 핵이 성인형 과립막세포종을 정한다 [[?who 5 female]]. 혈청 표지자는 그 세포가 만드는 물질이다 — 과립막세포는 인히빈과 항뮐러관호르몬(anti Müllerian hormone, AMH)을 분비하므로 수술 뒤 재발 감시는 인히빈 B 로 한다 [[?novak 16]]. CA 125 는 상피성 난소암의 표지자다 — 「난소 종양 = CA 125」 로 고르면 틀린다 [[harrison 21: 89장 p.696]]. 기전 — 과립막세포에서 에스트로겐 징후로 정상 난포에서 과립막세포는 난포막세포가 만든 안드로겐을 아로마타제(aromatase)로 에스트라디올로 바꾸고, FSH 를 억제하는 인히빈과 AMH 를 분비한다. 종양이 된 과립막세포도 이 기능을 가진다 [[?novak 16]]. 폐경 뒤에는 에스트로겐 공급원이 거의 없는데 종양이 에스트로겐을 계속 만들면, 맞서는 프로게스테론 없이 자궁내막이 자극되어 증식증·자궁내막모양 선암이 생기고 출혈이 난다 [[harrison 21: 89장 p.699]]. 그래서 이 종양은 폐경 후 출혈로, 아이에서는 성조숙증으로 드러난다 [[harrison 21: 89장 p.697]]. 조직에서는 작고 균일한 세포가 판상·소주상으로 자라고, 호산성 기저막 물질을 둘러싼 소포 모양 배열(Call Exner 소체)과 세로 홈이 팬 핵이 보인다 [[?who 5 female]]. 가르는 소견 — 기원 세포가 표지자를 정한다 상피·생식세포·성끈 간질 중 어디서 나왔는지가 표지자를 정한다(표) [[harrison 21: 89장 p.695]]. CA 125(MUC16)는 상피성 난소암과 연관되지만 특이하지 않다 — 자궁내막증·골반염·복수에서도 오른다 [[harrison 21: 89장 p.696]]. 과립막세포종에서는 감시 도구로 쓸모가 적다. 가임기 여성은 정상 주기에도 인히빈이 오르내려, 표지자 해석은 폐경 뒤에 가장 깨끗하다 [[?novak 16]]. 권고와 예외 성끈 간질 종양의 치료는 대부분 수술이고, 보조 항암치료 없이 절제한다 — 항암치료(카보플라틴·파클리탁셀)는 절제 불가·여러 번 재발한 종양에 남겨 둔다 [[harrison 21: 89장 p.697]] [[harrison 21: 89장 p.698]]. 에스트로겐을 만드는 종양에는 자궁내막암·유방암이 동시에 있을 수 있어 함께 평가한다 [[harrison 21: 89장 p.697]]. 과립막세포종은 수술 뒤 오래 지나 재발할 수 있어 장기 추적한다 — 재발 시점 수치는 원문 미대조(검토 항목) [[?novak 16]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 간질 종양은 에스트로겐을 만드는가 — 시험 기준: 과립막세포종(성인형)은 에스트로겐을 만드는 대표 난소 종양이다 [[?novak 16]] / 다른 기준: 「대부분의 간질 종양은 에스트로겐을 만들지 않고, 드물게 만들어 폐경 후 출혈·자궁내막암을 일으킨다」 [[harrison 21: 89장 p.695]] [[harrison 21: 89장 p.697]] / 왜 다른가: 해리슨은 섬유종·Sertoli Leydig 를 포함한 간질 종양 전체를 말하고, 시험은 그중 과립막세포종 하나를 묻는다 / 시험에서는: KMLE · USMLE 모두 「폐경 후 출혈 + 자궁내막 증식·암 + 고형 난소 종괴」 = 과립막세포종, 표지자 인히빈. Z2 새 근거 · 표지자 출처 — 시험 기준: 인히빈 B(·AMH) [[?novak 16]] / 다른 기준: 해리슨 89장은 간질 종양의 표지자를 언급하지 않는다(대조: 89장 p.697) / 왜 다른가: 내과 교과서는 부인종양 세부를 다루지 않는다 / 시험에서는: KMLE · USMLE 모두 인히빈. 원문 대조가 남은 검토 항목이다."
+  },
+  {
    "id": "usmle-2026-0223",
    "type": "usmle",
    "unit": "",
@@ -832,6 +846,125 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0218.md",
    "snippet": "A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections",
    "text": "Pharmacology Painful Purple-Black Patches on the Thighs and Abdomen on the Fourth Day of a New Oral Anticoagulant in a Woman Whose Mother Had Recurrent Clots warfarin warfarin-induced-skin-necrosis protein-c vitamin-k-antagonist anticoagulation mechanism USMLE-style / MedKOS (Ageno W, et al. Oral anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. Chest. 2012;141(2 Suppl):e44S-e88S; Nazarian RM, et al. Warfarin-induced skin necrosis. J Am Acad Dermatol. 2009;61(2):325-332) A 44 year old woman is evaluated in the hospital because of painful skin lesions that began yesterday. Five days ago, she was diagnosed with a deep venous thrombosis of the left popliteal vein after a 14 hour flight. She declined injections, and she was started on oral warfarin 10 mg daily; no other anticoagulant was given. Her mother had three episodes of deep venous thrombosis before the age of 50 years. The patient has no other medical conditions and takes no other medications. She has not received heparin at any time. Her vital signs are shown. Examination shows several sharply demarcated, exquisitely tender, purple black plaques with overlying hemorrhagic bullae on both thighs and the lower abdomen; the surrounding skin is red. The lesions are flat and not palpable as raised purpura. The left calf is mildly swollen. There is no bleeding from the gums, nose or venipuncture sites. Laboratory results are shown. A skin biopsy shows fibrin thrombi occluding dermal and subcutaneous venules with hemorrhagic necrosis and no inflammation of the vessel walls. Which of the following best explains the pathogenesis of this patient's skin lesions? A. Deposition of immune complexes in the walls of dermal postcapillary venules B. A faster fall in protein C activity than in prothrombin activity C. Depletion of factor VII leading to bleeding into the dermis D. Calcification of the media of dermal and subcutaneous arterioles E. Antibodies against phospholipid bound β2 glycoprotein I 헤파린 없이 와파린을 고용량으로 시작한 지 3~5일째, 지방이 많은 부위(허벅지·아랫배)에 통증이 심한 경계 뚜렷한 자흑색 판과 출혈성 물집이 생겼고 생검에서 진피·피하 소정맥의 피브린 혈전과 출혈성 괴사(혈관벽 염증 없음)가 보인다 — 와파린 유발 피부 괴사다. 어머니의 반복 정맥 혈전은 단백 C 결핍(유전성 혈전성향)을 시사한다. 와파린은 비타민 K 의존 인자(II·VII·IX·X)와 항응고 단백 C·S 의 γ 카복실화를 함께 막는데, 반감기가 짧은 단백 C(~8시간)가 프로트롬빈(~60시간)·인자 X 보다 먼저 떨어진다. 그래서 첫 며칠은 항응고 단백만 줄어든 일시적 과응고 상태가 되어 미세혈관 혈전이 생긴다. 이 때문에 와파린은 헤파린 등 비경구 항응고제와 겹쳐(최소 5일, INR 2 이상 24시간) 시작한다."
+  },
+  {
+   "id": "paper-2026-0825",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / World journal of surgery",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0825_where_to_begin_prioritizing_procedures_for_surgical_skills_t.md",
+   "snippet": "Title Where to Begin? Prioritizing Procedures for Surgical Skills Training Development: SELF Series Article 2 Authors Levi Amelia, Jeffcoach David R, Roy Nobhojit, Puyana Juan Carlos, O'Flynn Eric, Bekele Abebe Journal / DOI World journal o",
+   "text": "Surgery scraped pubmed PubMed / World journal of surgery Title Where to Begin? Prioritizing Procedures for Surgical Skills Training Development: SELF Series Article 2 Authors Levi Amelia, Jeffcoach David R, Roy Nobhojit, Puyana Juan Carlos, O'Flynn Eric, Bekele Abebe Journal / DOI World journal of surgery · DOI: 10.1002/wjs.70625 · PMID: 42904764 https://pubmed.ncbi.nlm.nih.gov/42904764/ Abstract BACKGROUND: The shortage of practitioners trained to provide essential surgical care remains among the most stubborn contributors to the global burden of disease. Scaling the global surgical care workforce through independent procedural skills training is essential to address unmet surgical needs, particularly in resource constrained settings. This is a dauntingly large task; prioritization of a sub set of surgical skills is required in order to make an impactful start. During the 2023 Surgical Education Learners Forum (SELF) Symposium, participants developed criteria to prioritize the development of self directed and simulation based training modules to address the most urgent needs in surgery, critical care, and perioperative care. This is the second article in the SELF series. METHODS: The SELF community of practice members from diverse geographies convened at the SELF Symposium to gain a common understanding of the environments where SELF training modules are deployed and articulate how to prioritize the development of those materials. Participants voted to prioritize 262 procedures by impact and then effectiveness, \"deployability\", and outcome variability. RESULTS: Fifty seven procedures were identified as high priority for surgical skills development. Of these, 20 were trauma and critical care procedures, 21 were general surgical procedures, 11 were pediatric surgical procedures, and 5 were obstetrics, gynecology, and family planning procedures. CONCLUSIONS: When faced with the dauntingly large need for surgical, critical care and perioperative procedural skills training, prioritizing the identified areas will guide training development efforts toward the greatest impacts. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0824",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0824_furosemide_stress_test_in_adults_and_children_with_acute_kid.md",
+   "snippet": "Title Furosemide Stress Test in Adults and Children With Acute Kidney Injury: A Systematic Review and Meta Analysis Authors Tran Phu Nguyen Trong, Luong Hoang Minh, Doan Nhan Duc Journal / DOI Critical care medicine · DOI: 10.1097/CCM.00000",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Critical care medicine Title Furosemide Stress Test in Adults and Children With Acute Kidney Injury: A Systematic Review and Meta Analysis Authors Tran Phu Nguyen Trong, Luong Hoang Minh, Doan Nhan Duc Journal / DOI Critical care medicine · DOI: 10.1097/CCM.0000000000007392 · PMID: 42904937 https://pubmed.ncbi.nlm.nih.gov/42904937/ Abstract OBJECTIVES: To evaluate the diagnostic accuracy and therapeutic utility of the furosemide stress test (FST) for acute kidney injury (AKI) management in critically ill adults and children. DATA SOURCES: PubMed, Embase, Scopus, and Cochrane Central Register of Controlled Trials were searched from inception to March 3, 2026. STUDY SELECTION: Studies evaluating the standardized FST protocol in critically ill adults or children with AKI were eligible. Outcomes included AKI stage 3 progression (Q1), kidney replacement therapy (KRT) initiation (Q2), short term mortality (Q3), successful KRT liberation (Q4), and FST guided vs. standard KRT initiation in randomized trials (Q5). DATA EXTRACTION: Two reviewers independently extracted data and assessed risk of bias using Quality Assessment of Diagnostic Accuracy Studies 2 and Risk of Bias 2. Certainty of evidence was assessed using the Grading of Recommendations Assessment, Development and Evaluation (GRADE) framework. DATA SYNTHESIS: Twenty studies (n = 1979; 11 countries; 2013 2025) were included. For AKI progression (nine studies; n = 501), pooled sensitivity was 0.69 and specificity was 0.88 (area under the curve [AUC], 0.89; GRADE: low). For KRT initiation (nine studies; n = 952), sensitivity was 0.81 and specificity was 0.75 (AUC, 0.79; GRADE: very low). For mortality (six studies; n = 487), sensitivity was 0.56 and specificity was 0.76 (AUC, 0.75; GRADE: very low). For KRT liberation (three studies; n = 177), sensitivity was 0.81 and specificity was 0.87 (AUC, 0.89; GRADE: low for sensitivity, very low for specificity). The effect of FST guided early KRT initiation on short term mortality was uncertain (pooled risk ratio, 1.00; 95% CI, 0.79 1.27; two randomized controlled trials, n = 212; GRADE: very low). Pediatric analyses yielded AUC values of 0.81 and 0.63 for KRT initiation and mortality, respectively. CONCLUSIONS: Based on low to very low certainty evidence, the FST may support risk stratification for AKI progression and KRT liberation in critically ill adults. Its impact on mortality when guiding early KRT initiation remains uncertain. As a low cost bedside test, the FST can be a useful tool in resource limited settings where novel biomarkers are inaccessible. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0823",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Investigative ophthalmology & visual science",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0823_temporally_resolved_characterization_of_254_nm_uv_radiation_.md",
+   "snippet": "Title Temporally Resolved Characterization of 254 nm UV Radiation Induced Photokeratitis in a Rabbit Model Authors Zhu Litong, Nie Zukang, Cui Mengdi, Yang Ying, Guan Yaxin, Qiu Mengqi, Xing Jiahao, Liang Chao, et al. Journal / DOI Investig",
+   "text": "Pathology scraped pubmed PubMed / Investigative ophthalmology & visual science Title Temporally Resolved Characterization of 254 nm UV Radiation Induced Photokeratitis in a Rabbit Model Authors Zhu Litong, Nie Zukang, Cui Mengdi, Yang Ying, Guan Yaxin, Qiu Mengqi, Xing Jiahao, Liang Chao, et al. Journal / DOI Investigative ophthalmology & visual science · DOI: 10.1167/iovs.67.12.41 · PMID: 42904885 https://pubmed.ncbi.nlm.nih.gov/42904885/ Abstract PURPOSE: This study systematically characterized the dynamic progression of corneal injury and the subsequent repair following suprathreshold exposure to 254 nm UV C radiation. METHODS: A pulsed laser system was used to investigate pathological alterations in rabbit corneas over 3 months following acute 254 nm UV exposure. Four laser exposure doses (265, 530, 1150, and 2125 mJ/cm2) were selected to induce varying severities of corneal injury. Corneal changes were assessed using slit lamp biomicroscopy, optical coherence tomography, histopathology, and immunohistochemical analyses of cyclobutane pyrimidine dimers and caspase 3. RESULTS: Following acute 254 nm UV C exposure, photokeratitis exhibited delayed onset characterized by conjunctival hyperemia, photophobia, and corneal epithelial defects. The extent of epithelial defects and stromal edema correlated positively with the radiant exposure dose. Linear mixed effects modeling demonstrated significant effects of dose and time, as well as their interaction on corneal thickness (all P < 0.001). Corneal thickness showed a strong dose dependent correlation during the edematous phase, peaking at 36 hours (r = 0.866; P < 0.001), and the highest dose group (2125 mJ/cm2) exhibited a 61.5% increase relative to baseline (600.50 ± 40.85 µm vs. 371.75 ± 30.91 µm). Although the ocular surface findings resolved within 7 days, histological restoration required at least 14 days. Cyclobutane pyrimidine dimer immunostaining revealed pan epithelial DNA photodamage. CONCLUSIONS: Acute 254 nm UV C exposure induces a temporally ordered sequence of corneal injury characterized by epithelial thinning, epithelial denudation, re epithelialization, cellular proliferation, and epithelial restratification, highlighting a dissociation between clinical recovery and histological repair. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0822",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical investigation",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0822_granulocyte_derived_resistin_inhibits_monocyte_maturation_an.md",
+   "snippet": "Title Granulocyte derived Resistin Inhibits Monocyte Maturation and Promotes an Immunosuppressive Phenotype in Chronic Myelomonocytic Leukemia Monocytes Authors Hull Nathan J, Cant Rachel, Guest Laura A, Wang Yu Hung, Gurashi Kristian, Pare",
+   "text": "Hematology-Oncology scraped pubmed PubMed / The Journal of clinical investigation Title Granulocyte derived Resistin Inhibits Monocyte Maturation and Promotes an Immunosuppressive Phenotype in Chronic Myelomonocytic Leukemia Monocytes Authors Hull Nathan J, Cant Rachel, Guest Laura A, Wang Yu Hung, Gurashi Kristian, Paredes Roberto, Rivera Rivera Carlos, Lefkati Revekka, et al. Journal / DOI The Journal of clinical investigation · DOI: 10.1172/JCI201335 · PMID: 42904894 https://pubmed.ncbi.nlm.nih.gov/42904894/ Abstract Chronic myelomonocytic leukemia (CMML) is a hematological neoplasm characterized by expansion of malignant monocytes. However, as a stem cell neoplasm, the disease clone comprises most blood lineages, including granulocytes. To investigate their pathogenic contribution, we performed extensive phenotypic, transcriptomic and functional characterization of CMML granulocytes. These cells exhibited reduced granularity and impaired maturation, the latter of which is associated with poor prognosis. Functionally, CMML granulocytes displayed reduced phagocytic capacity and impaired NETosis, together with aberrant gene expression programs. Notably, RETN, encoding the chemokine resistin, was uniquely upregulated in CMML granulocytes. Accordingly, resistin levels were 10 fold higher in CMML plasma, correlating with inferior survival. Ex vivo exposure to resistin directly blocked monocyte maturation and macrophage differentiation, partly via TLR4 interaction, recapitulating the classical monocytosis repartitioning phenotype that characterizes CMML. Resistin treated monocytes upregulated gene signatures related to immune suppression and myeloid derived suppressor cell phenotype. Consistent with these findings, CMML patients displayed higher Treg proportions and Th2/Th1 ratios. Furthermore, we demonstrated that resistin directly skews the Th2/Th1 ratio via binding to monocytes. Thus, CMML granulocytes produce high levels of resistin, which contributes to defective monocyte maturation and induction of myeloid derived suppressor cell features in monocytes, thereby fostering an immune suppressive state in this disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0821",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. CardioOncology",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0821_high_sensitivity_cardiac_troponin_t_and_i_discordance_in_pat.md",
+   "snippet": "Title High Sensitivity Cardiac Troponin T and I Discordance in Patients Receiving Immune Checkpoint Inhibitors Authors Ismail Anis, Vasbinder Alexi, Bobby Bobby, de Bever McKenna, Vosooghi Aidan, Pena Valentin Valeria, Shu Lihua, Kalathoor ",
+   "text": "Nephrology scraped pubmed PubMed / JACC. CardioOncology Title High Sensitivity Cardiac Troponin T and I Discordance in Patients Receiving Immune Checkpoint Inhibitors Authors Ismail Anis, Vasbinder Alexi, Bobby Bobby, de Bever McKenna, Vosooghi Aidan, Pena Valentin Valeria, Shu Lihua, Kalathoor Sujay, et al. Journal / DOI JACC. CardioOncology · DOI: 10.1016/j.jaccao.2026.07.012 · PMID: 42904625 https://pubmed.ncbi.nlm.nih.gov/42904625/ Abstract BACKGROUND: Serial troponin monitoring is used during immune checkpoint inhibitor (ICI) therapy, but guidelines do not specify whether high sensitivity cardiac troponin I (hs cTnI) or T (hs cTnT) should be measured. Unlike cardiac specific hs cTnI, hs cTnT can rise from noncardiac sources. OBJECTIVES: This study sought to determine the prevalence and temporal stability of hs cTnT/hs cTnI discordance, identify clinical correlates, and evaluate prognostic implications in ambulatory ICI treated patients. METHODS: In this prospective single center cohort, patients starting ICI therapy underwent paired hs cTnT (Roche Elecsys) and hs cTnI (Siemens Atellica) measurements in the same banked samples at baseline and 1 month. Patients with adjudicated ICI associated myocarditis or myositis were excluded by design. RESULTS: Among 433 patients with paired baseline measurements, hs cTnT was elevated in 37.9% and hs cTnI in 1.8%; 158 (36.5%) were discordant (elevated hs cTnT, normal hs cTnI), and 267 (61.7%) had normal levels of both (κ = 0.036). Among 329 patients with paired data at baseline and 1 month, discordance prevalence was unchanged (38.3% vs 38.0%; McNemar P 0.99). Independent correlates were older age, male sex, and chronic kidney disease (all P < 0.05). Over a median follow up of 30.1 months (reverse Kaplan Meier), elevated hs cTnT was associated with all cause mortality (adjusted HR: 1.35; 95% CI: 1.00 1.81; P = 0.048); only 8 of 231 deaths (3.5%) were cardiac. CONCLUSIONS: In ambulatory patients with cancer receiving ICI therapy, over one third had elevated hs cTnT with normal hs cTnI: a stable, nonspecific pattern present before ICI exposure and consistent with noncardiac sources rather than acute cardiac injury. hs cTnI is the more cardiac specific assay; paired baseline measurement of both troponins may help contextualize later elevations when myocarditis is suspected. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0820",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0820_hemodynamic_patterns_relative_to_vasopressin_initiation_and_.md",
+   "snippet": "Title Hemodynamic Patterns Relative to Vasopressin Initiation and Subsequent Septic Shock Progression in Children: A Retrospective Cohort, 2020 2023 Authors Gelbart Ben, Hall Gabby, Carter Bradley G, Marshall Sam, Veysey Andrea, Ramesh Sail",
+   "text": "Infectious Disease scraped pubmed PubMed / Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies Title Hemodynamic Patterns Relative to Vasopressin Initiation and Subsequent Septic Shock Progression in Children: A Retrospective Cohort, 2020 2023 Authors Gelbart Ben, Hall Gabby, Carter Bradley G, Marshall Sam, Veysey Andrea, Ramesh Sailavan, Masterson Kate, Duke Trevor, et al. Journal / DOI Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies · DOI: 10.1097/PCC.0000000000004064 · PMID: 42905025 https://pubmed.ncbi.nlm.nih.gov/42905025/ Abstract OBJECTIVES: To describe the hemodynamic patterns associated with starting vasopressin in children with septic shock and to compare the early patterns based on subsequent progression of shock. DESIGN: Retrospective cohort (2020 2023) study. SETTING: Single center, tertiary PICU in Australia. PATIENTS: Children younger than 18 years with septic shock. INTERVENTIONS: None. MEASUREMENTS AND MAIN RESULTS: Hemodynamic variables collected at 1 minute intervals during a 1 hour observation period after starting vasopressin infusion were reviewed and collated according to whether shock subsequently progressed in the following 5 hours. In a cohort of 30 children (median age, 9 yr [interquartile range, 2 14 yr]), eight had shock progression, which was defined by echocardiography, lactate, and use of extracorporeal support. Cases with subsequent shock progression, as opposedto not, had an associated higher Phoenix score (7 [7 8] vs. 6 [5 6]; p = 0.01). The vasopressin starting dose in the shock vs. nonshock progression groups was 0.03 U/kg/hr (0.02 0.06 U/kg/hr) vs. 0.02 U/kg/hr (0.02 0.04 U/kg/hr; p = 0.72). We failed to find an association between ventricular dysfunction at baseline and the shock progression group vs. no shock progression (4/6 vs. 7/18; mean difference, 28%; 95% CI, 16% to 71%; p = 0.36). In the shock progression group, earlier pulse pressure continued on a decreasing trajectory following vasopressin initiation, despite increasing systolic and diastolic blood pressures. In those without shock progression, pulse pressure increased marginally. The difference between groups in the median pulse pressures during the observation period was 7.5 mm Hg. CONCLUSIONS: In this hypothesis generating, retrospective study of children with septic shock treated with vasopressin, subsequent shock progression was associated with early decreasing pulse pressure. Further studies are needed to test whether early changes in pulse pressure after starting vasopressin can be used as a potential marker of subsequent shock progression. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0819",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical transplantation",
+   "confidence": "medium",
+   "date": "2026-10-22",
+   "path": "content/papers/2026/2026-10-22_paper-2026-0819_equity_gaps_in_sex_racial_and_ethnic_inclusion_in_united_sta.md",
+   "snippet": "Title Equity Gaps in Sex, Racial, and Ethnic Inclusion in United States Heart Transplant Trials Authors Manasrah AlMothana, Sporn Kyle, Manasrah Shahed, Lee Ryung, Maxey Jones Courtney Journal / DOI Clinical transplantation · DOI: 10.1111/c",
+   "text": "Cardiology scraped pubmed PubMed / Clinical transplantation Title Equity Gaps in Sex, Racial, and Ethnic Inclusion in United States Heart Transplant Trials Authors Manasrah AlMothana, Sporn Kyle, Manasrah Shahed, Lee Ryung, Maxey Jones Courtney Journal / DOI Clinical transplantation · DOI: 10.1111/ctr.70726 · PMID: 42904829 https://pubmed.ncbi.nlm.nih.gov/42904829/ Abstract BACKGROUND & OBJECTIVE: Heart transplantation (HT) remains the definitive therapy for select patients with end stage heart failure. Equitable representation in clinical trials is essential to ensure that evidence guiding HT practice is generalizable across populations. However, the extent of sex, racial, and ethnic inclusion in U.S. HT clinical trials has not been systematically evaluated at the level of clinical trials. METHODS: We conducted a cross sectional analysis of U.S. based HT clinical trials, with publicly available results, registered on ClinicalTrials.gov between 2000 and 2025. Demographic data on sex, race, and ethnicity were independently extracted and categorized using federal reporting standards. Trial enrollment distributions were compared with 2010 and 2020 U.S. Census data and with the overall HT data. Proportions were estimated with Wilson 95% confidence intervals, and racial distributions were assessed using multinomial confidence intervals with Bonferroni adjustment. RESULTS: Twenty seven eligible trials encompassing 2,271 participants were included. Female representation was low at 24.2% (95% CI: 22.5% 26.0%), below both U.S. population benchmarks (∼50%) and HT recipient proportions (27.0% in 2010; 28.4% in 2020). White participants were overrepresented (75.3%) compared with 61.6% in the 2020 U.S. population and 59.3% of HT recipients. Black participants comprised 15.5% (95% CI: 12.2% 19.5%), lower than HT populations (25.0% in 2020). Hispanic/Latino (9.7%) and Asian (1.7%) participants were markedly underrepresented relative to national (18.7%and 6.0%, respectively) populations. Multiracial (0.3%) and Indigenous and Pacific Islander participants (0%) were nearly absent. Race and ethnicity reporting improved over time, with universal reporting in trials conducted after 2020. CONCLUSION: U.S. HT clinical trials demonstrate persistent and clinically meaningful inequities in sex, racial, and ethnic representation. These gaps may compromise the external validity of trial findings and perpetuate disparities in transplant care. Deliberate efforts to standardize demographic reporting, implement equity focused enrollment strategies, and align trial populations with the evolving demographics of advanced heart failure are urgently needed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0417",
