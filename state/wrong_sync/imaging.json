@@ -475,8 +475,29 @@
    "date": "2026-10-17",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0412": {
+   "id": "imaging-2026-0412",
+   "exam": "imaging",
+   "subject": "산부인과",
+   "step": "",
+   "type": "부인과 — 폐경 후 출혈과 난소 고형 종괴의 조직과 추적 표지자",
+   "style": "kmle_style",
+   "modality": "HISTOLOGY",
+   "question": "수술 뒤 재발 감시에 가장 유용한 혈청 표지자는?",
+   "chosen": 1,
+   "chosenText": "CA-125",
+   "answer": 0,
+   "answerText": "인히빈 B",
+   "coreNote": "",
+   "differ": "",
+   "decision": "폐경 15년 뒤 질 출혈·자궁내막 선암과 9 cm 고형 난소 종괴가 있고, 조직에 Call-Exner 소체와 핵 홈이 보여 에스트로겐을 내는 성인형 과립막세포종이다. 과립막세포가 분비하는 인히빈 B 가 재발 감시 표지자다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261022T202313Z_일일영상_2026-10-23_12units_12q_2a8ec49c",
+   "date": "2026-10-23",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-23T07:00:42.449Z"
+ "updated": "2026-10-23T07:01:31.340Z"
 }
