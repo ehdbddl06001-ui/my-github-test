@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3979,
+  "total": 3980,
   "byType": {
+   "concept": 111,
    "imaging": 428,
    "paper": 832,
    "kmle": 1536,
-   "concept": 110,
    "usmle": 210,
    "anatomy": 846,
    "ailab": 14,
@@ -75,16 +75,31 @@ window.MEDKOS_INDEX = {
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
+   "Obstetrics and Gynecology": 1,
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1150,
    "high": 2780,
-   "medium": 1149,
    "low": 50
   },
   "tagCount": 5015
  },
  "docs": [
+  {
+   "id": "cn.obgyn.menstrual-cycle.ovulation-confirmation",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics and Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.menstrual-cycle.ovulation-confirmation.md",
+   "snippet": "판단 — 왜 배란 7일 뒤 프로게스테론인가 프로게스테론(progesterone)은 배란 뒤 생긴 황체(corpus luteum)의 황체화 과립막세포 가 주로 낸다 — 배란이 없으면 황체가 없고 프로게스테론도 오르지 않는다 [[harrison 21: 392장 p.3029]]. 그래서 배란 약 7일 뒤 혈청 프로게스테론 3 ng/mL 이면 배란이 있었다고 본다 [[harrison 21: 392장 p.3031]]. 시점은 다음 월경",
+   "text": "Obstetrics and Gynecology 판단 — 왜 배란 7일 뒤 프로게스테론인가 프로게스테론(progesterone)은 배란 뒤 생긴 황체(corpus luteum)의 황체화 과립막세포 가 주로 낸다 — 배란이 없으면 황체가 없고 프로게스테론도 오르지 않는다 [[harrison 21: 392장 p.3029]]. 그래서 배란 약 7일 뒤 혈청 프로게스테론 3 ng/mL 이면 배란이 있었다고 본다 [[harrison 21: 392장 p.3031]]. 시점은 다음 월경에서 거꾸로 센다. 황체기는 12~14일로 일정하고 주기 길이의 차이는 난포기에서 온다 — 주기가 길면 배란이 늦다 [[harrison 21: 392장 p.3031]]. 규칙적으로 매달 출혈하는 여성은 대개 배란 주기다. 규칙성 자체가 첫 단서이고, 검사는 그것을 확인한다 [[harrison 21: 392장 p.3031]]. 기전 — 난포에서 황체로, 에스트라디올에서 프로게스테론으로 난포기에는 FSH 를 받는 과립막세포가 난포막세포(theca cell)의 안드로겐을 아로마타제로 바꿔 에스트라디올을 만든다(2세포 모형, two cell model) [[harrison 21: 392장 p.3029]]. 앞 주기 황체기 끝에 FSH 가 20~30% 오르면 난포 무리가 동원되고, 에스트라디올·인히빈이 FSH 를 눌러 대개 하나의 우세 난포만 자란다 [[harrison 21: 392장 p.3030–3031]]. 우세 난포의 에스트라디올이 지수적으로 오르면 뇌하수체에 양성 되먹임 이 걸려 LH 급증(LH surge)이 오고, 약 36시간 뒤 배란한다 [[harrison 21: 392장 p.3030–3031]]. 터진 난포는 LH 로 황체화해 프로게스테론·인히빈 A·에스트라디올을 내고, 프로게스테론은 에스트로겐으로 준비된 내막을 분비기로 바꾸고 자궁경부 점액을 끈끈하게 하며 기초체온을 올린다 [[harrison 21: 392장 p.3030–3031]]. 황체는 LH 에 대한 민감도가 줄어 수명이 정해져 있고(그래서 황체기 길이가 일정하다), 임신하면 영양막의 hCG 가 같은 LH 수용체에 붙어 태반이 넘겨받는 6~10주까지 황체를 유지한다 [[harrison 21: 392장 p.3029, p.3031]]. 가르는 소견 — 배란의 증거와 그 한계 기초체온(basal body temperature)은 프로게스테론의 체온 조절 효과로 주기 후반에 0.24°C( 0.5°F) 오른다 — 오른 뒤에야 알 수 있어 지난 배란의 증거다 [[harrison 21: 392장 p.3031]]. 소변 LH 급증 검사(ovulation predictor kit)는 배란을 예측 한다. 배란은 급증 약 36시간 뒤라 성교 시점을 맞추는 데 쓴다 [[harrison 21: 392장 p.3031]]. 초음파는 난포 동의 성장과 에스트라디올에 따른 내막 두께를 보고, 우세 난포의 붕괴·황체·분비기 내막의 특징적 에코로 배란을 보여 준다 [[harrison 21: 392장 p.3031]]. 해석의 한계 : 배란통(mittelschmerz)과 월경전 증상은 배란 주기에 흔하지만 없다고 무배란은 아니다. 프로게스테론은 시점이 이르면 배란 전 값이라 낮게 나온다 [[harrison 21: 392장 p.3031]]. 권고와 예외 정상 주기: 첫날부터 다음 월경 전날까지 약 28일(25~35일), 한 여성의 주기 간 변동은 ±2일, 출혈 4~6일 [[harrison 21: 392장 p.3031]]. 초경 뒤 2~4년은 무배란·불규칙 주기가 흔하고, 35세가 넘으면 주기가 짧아지며, 폐경이 가까워지면 무배란 주기가 늘어 출혈이 불규칙해진다 [[harrison 21: 392장 p.3031]]. 난소 예비력은 배란 확인과 다른 질문이다 — 항뮐러관호르몬(AMH)이 주기 내내 비교적 안정해 인히빈 B보다 낫고, 20대 초반에 가장 높고 폐경 무렵 크게 준다. 다낭난소증후군에서는 작은 난포가 많아 높다 [[harrison 21: 392장 p.3030]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 392장 p.3027~3032)"
+  },
   {
    "id": "imaging-2026-0429",
    "type": "imaging",
