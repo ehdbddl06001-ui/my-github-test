@@ -1,7 +1,7 @@
 {
- "started": "2026-10-24T08:57:53+09:00",
+ "started": "2026-10-25T08:31:27+09:00",
  "built": [
-  "산부인과"
+  "Obstetrics and Gynecology"
  ],
  "skipped": [
   "응급의학과",
@@ -11,6 +11,7 @@
   "내분비내과",
   "안과",
   "외과",
+  "산부인과",
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
@@ -28,15 +29,10 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "산부인과": []
+  "Obstetrics and Gynecology": []
  },
  "notes": {
-  "산부인과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 3쪽에 빈 공간이 크다(내용 31%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 왼쪽 단 아래가 비어 있다(빈 공간 67%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 오른쪽 단 아래가 비어 있다(빈 공간 68%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 9쪽 왼쪽 단 아래가 비어 있다(빈 공간 31%)"
-  ]
+  "Obstetrics and Gynecology": []
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -50,62 +46,37 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "산부인과": {
-   "tried": 211,
+  "Obstetrics and Gynecology": {
+   "tried": 6,
    "diagram_after_section": {
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 18,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 0.88,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 0,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
-    "u-cn-obgyn-pcos-infertility-ovulation-induction": 19,
-    "u-cn-obgyn-pcos-infertility-ovulation-induction#shrink": 1.0,
-    "u-cn-obgyn-pcos-infertility-ovulation-induction#pad": 0,
-    "u-cn-obgyn-pcos-infertility-ovulation-induction#col": true,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation": 4,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#shrink": 1.0,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#pad": 0,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#col": false,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication": 5,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#shrink": 1.0,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#pad": 0,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#col": false,
-    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker": 11,
-    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#shrink": 1.0,
-    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#pad": 28,
-    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#col": false,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type": 11,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#shrink": 1.0,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#pad": 0,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#col": true,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#figscale:f2": 0.85,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis": 15,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#shrink": 1.0,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#pad": 0,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#col": true
+    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 11,
+    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#shrink": 1.0,
+    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#pad": 0,
+    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#col": true
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-24T09:08:11+09:00",
+ "finished": "2026-10-25T08:31:50+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "산부인과": {
-    "file": "MedKOS_학습서_산부인과.pdf",
+   "Obstetrics and Gynecology": {
+    "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
     "status": "uploaded",
-    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "kept_id": true,
-    "md5": "02d46036e822c7843967040792a99f16",
-    "archive": "MedKOS_학습서_산부인과_v13_2026-10-24.pdf"
+    "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
+    "kept_id": false,
+    "md5": "ea92b7541dfc4c00aa6473f44b78271d",
+    "archive": "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "3ba1f21697d6d6b32bc04d764aba0560"
+    "md5": "ac729b4c688ba8c3accd086dfd292f96"
    }
   },
-  "at": "2026-10-24T09:08:11+09:00"
+  "at": "2026-10-25T08:31:50+09:00"
  }
 }

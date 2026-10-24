@@ -1309,17 +1309,43 @@
    "changes": [
     "내용 갱신: 고환 조직 — 관 사이 간질세포는 LH, 관 안 세르톨리는 FSH (정리본 v2 → v3)"
    ]
+  },
+  "Obstetrics and Gynecology": {
+   "hash": "a519f21e657c40e7fd58",
+   "version": 1,
+   "date": "2026-10-25",
+   "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
+   "pages": 3,
+   "template_version": 11,
+   "units": {
+    "cn.obgyn.menstrual-cycle.ovulation-confirmation": {
+     "title": "월경주기 — 배란 확인은 배란 7일 뒤 프로게스테론",
+     "page": 2,
+     "concept_hash": "f47dcdc47e1e6025",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
+    "md5": "ea92b7541dfc4c00aa6473f44b78271d",
+    "version": 1,
+    "uploaded": "2026-10-25T08:31:50+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf"
+   ],
+   "changes": []
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "3ba1f21697d6d6b32bc04d764aba0560",
+   "md5": "ac729b4c688ba8c3accd086dfd292f96",
    "version": null,
-   "uploaded": "2026-10-24T09:08:11+09:00"
+   "uploaded": "2026-10-25T08:31:50+09:00"
   }
  },
- "updated": "2026-10-24"
+ "updated": "2026-10-25"
 }
