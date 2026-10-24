@@ -467,11 +467,11 @@
    ]
   },
   "산부인과": {
-   "hash": "8001a19d6aa7f2ae7136",
-   "version": 12,
-   "date": "2026-10-18",
+   "hash": "8dc1a53546312476b8fa",
+   "version": 13,
+   "date": "2026-10-24",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 22,
+   "pages": 23,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -482,7 +482,7 @@
     },
     "cn.obgyn.pcos-infertility.ovulation-induction": {
      "title": "다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다",
-     "page": 4,
+     "page": 5,
      "concept_hash": "1cb909b218723ac8",
      "concept_version": 4
     },
@@ -504,36 +504,42 @@
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
+    "cn.obgyn.granulosa-cell-tumor.tumor-marker": {
+     "title": "과립막세포종 — 추적 표지자는 기원 세포가 정한다",
+     "page": 15,
+     "concept_hash": "edb8da638ad18885",
+     "concept_version": 2
+    },
     "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
      "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
-     "page": 14,
+     "page": 17,
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
      "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
-     "page": 16,
+     "page": 18,
      "concept_hash": "55af692609810631",
      "concept_version": 2
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 18,
+     "page": 20,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 20,
+     "page": 22,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "8d295f9516b4ee2fa4892cb459cf07e6",
-    "version": 12,
-    "uploaded": "2026-10-18T09:13:15+09:00"
+    "md5": "02d46036e822c7843967040792a99f16",
+    "version": 13,
+    "uploaded": "2026-10-24T09:08:11+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -547,10 +553,11 @@
     "MedKOS_학습서_산부인과_v9_2026-10-06.pdf",
     "MedKOS_학습서_산부인과_v10_2026-10-07.pdf",
     "MedKOS_학습서_산부인과_v11_2026-10-14.pdf",
-    "MedKOS_학습서_산부인과_v12_2026-10-18.pdf"
+    "MedKOS_학습서_산부인과_v12_2026-10-18.pdf",
+    "MedKOS_학습서_산부인과_v13_2026-10-24.pdf"
    ],
    "changes": [
-    "새 단원: 자궁 평활근 종양 — 악성은 괴사·이형성·분열로"
+    "새 단원: 과립막세포종 — 추적 표지자는 기원 세포가 정한다"
    ]
   },
   "정신건강의학과": {
@@ -1306,13 +1313,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "75920112b9b9e54c50f271eef219c349",
+   "md5": "3ba1f21697d6d6b32bc04d764aba0560",
    "version": null,
-   "uploaded": "2026-10-23T09:57:10+09:00"
+   "uploaded": "2026-10-24T09:08:11+09:00"
   }
  },
- "updated": "2026-10-23"
+ "updated": "2026-10-24"
 }
