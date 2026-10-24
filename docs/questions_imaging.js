@@ -2,6 +2,1578 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0426",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "소아청소년 — 넘어지고 12일 뒤 손목 측면 X선의 골막 새뼈",
+  "type": "소아청소년 — 넘어지고 12일 뒤 손목 측면 X선의 골막 새뼈",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-24",
+  "vignette": "10세 남아가 왼쪽 손목 위가 튀어나와 보여 어머니와 함께 외래에 왔다. 12일 전 자전거에서 넘어지며 왼손을 짚었고, 부모는 삔 줄 알고 파스만 붙였다. 처음 사흘은 많이 아팠지만 지금은 통증이 줄었다. 열은 없었다. 체온 36.7℃ 이고, 원위 전완이 약간 휘어 보이며 그 부위에 가벼운 압통이 있다. 피부 발적이나 열감은 없고 손가락 감각·운동과 요골 동맥 맥박은 정상이다. 백혈구 7,800/μL, C-반응단백 0.3 mg/dL, 알칼리인산분해효소는 나이에 맞는 범위다. 왼쪽 손목 측면 X선 사진은 그림과 같다.",
+  "question": "골절 부위 피질을 따라 보이는 희뿌연 새 뼈 음영으로 가장 적절한 것은?",
+  "options": [
+   "유잉육종의 양파껍질 골막 반응",
+   "골육종의 Codman 삼각",
+   "괴혈병의 골막하 출혈 석회화",
+   "치유 중인 골절의 골막 가골",
+   "급성 골수염의 골막 반응"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: X선에서 원위 요골 골간단을 가로지르는 골절과 원위 골편의 각형성이 있고, 골절 부위 한쪽 피질을 따라 희뿌연 골막 새뼈가 붙어 있다. 넘어진 지 12일이 지났고 열·발적이 없으며 백혈구·C-반응단백이 정상이므로, 이 새 뼈는 골절이 아물며 생긴 골막 가골이다.\n- 원리: <b>왜 소아 골절에서 골막 새뼈가 빨리 보이나</b>: 소아의 골막은 두껍고 혈관이 많으며 뼈모세포를 만드는 능력이 크다. 골절 때 들뜬 골막 아래 혈종 속으로 골막의 전구세포가 들어가 연골·섬유 가골을 만들고, 이것이 무기질화되면 X선에서 골절 부위를 감싸는 <b>희뿌연 새 뼈</b>로 보인다 — 소아에서는 대개 <b>7~14일</b>에 나타난다. 그래서 골막 새뼈는 '골절이 며칠 됐는지'를 알려 주는 시계가 된다(아동학대 평가에서도 쓰인다).<br> <b>같은 골막 반응, 다른 원인</b>: 골막은 무엇이든 들어 올리면 새 뼈를 만든다 — 피(외상·괴혈병), 고름(골수염), 종양(유잉육종·골육종). 그래서 모양보다 <b>맥락</b>이 먼저다: 외상력과 시점, 골절선이 있는지, 열·염증 수치, 뼈 파괴가 있는지를 함께 본다.<br> <b>위험 신호</b>: 외상력 없이, 골절선 없이, 뼈속질 파괴나 골막 반응이 끊기는 모양(Codman 삼각)·햇살 모양이 보이거나, 열과 염증 수치가 높으면 골수염·종양을 의심해 MRI 와 생검을 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">골막 가골(정답)</th><th>급성 골수염의 골막 반응(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계기</td><td><b>외상 뒤 7~14일</b></td><td>열·국소 통증으로 시작, 외상은 우연</td></tr> <tr><td>골절선</td><td><b>있다</b> — 새 뼈가 골절을 감싼다</td><td>없다, 골간단 투과성 파괴</td></tr> <tr><td>전신 소견</td><td>열 없음, 백혈구·CRP 정상</td><td>발열, CRP·적혈구침강속도 상승</td></tr> <tr><td>경과</td><td>통증이 줄어든다</td><td>통증이 심해진다</td></tr> </tbody></table> 골막 반응을 보면 먼저 '그 안에 골절선이 있는가, 아이가 아파 보이는가'를 묻는다.\n- 오답 이유:\n  - ① 유잉육종은 외상과 무관하게 통증·열이 이어지고 골간에 침투성 뼈 파괴와 겹겹의 양파껍질 골막 반응이 보일 때 정답이다.\n  - ② 골육종의 Codman 삼각은 골간단의 뼈 파괴·종양 뼈 형성과 함께 골막이 들려 끊긴 삼각형으로 보일 때 정답이 된다.\n  - ③ 괴혈병의 골막하 출혈 석회화는 비타민 C 결핍 식이, 잇몸 출혈, 골간단의 투명대·고리 모양 골단이 함께 있을 때 정답이다.\n  - ⑤ 급성 골수염의 골막 반응은 열과 국소 발적이 있고 C-반응단백이 오르며 골절선 없이 골간단 파괴가 보일 때 정답이 된다.\n- 함정: 새 뼈가 보이면 골수염이나 종양부터 떠올리는 것 — 외상 12일 뒤 골절선을 감싸는 새 뼈에 열·염증 수치가 정상이면 치유 가골이다.\n- 학습목표: 외상 12일 뒤 소아 원위 요골 골절의 골막 새뼈를 치유 가골로 읽고, 열·염증 수치가 정상이면 골수염·골종양의 골막 반응과 구별한다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Common Fractures — healing and remodeling in children · Prosser I, et al. A timetable for the radiologic features of fracture healing in young children. AJR Am J Roentgenol 2012;198:1014-1020\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 원위 요골 골간단을 가로지르는 골절과 원위 골편의 각형성이 있고, 골절 부위 한쪽 피질을 따라 희뿌연 골막 새뼈가 붙어 있다. 넘어진 지 12일이 지났고 열·발적이 없으며 백혈구·C-반응단백이 정상이므로, 이 새 뼈는 골절이 아물며 생긴 골막 가골이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 소아 골절에서 골막 새뼈가 빨리 보이나</b>: 소아의 골막은 두껍고 혈관이 많으며 뼈모세포를 만드는 능력이 크다. 골절 때 들뜬 골막 아래 혈종 속으로 골막의 전구세포가 들어가 연골·섬유 가골을 만들고, 이것이 무기질화되면 X선에서 골절 부위를 감싸는 <b>희뿌연 새 뼈</b>로 보인다 — 소아에서는 대개 <b>7~14일</b>에 나타난다. 그래서 골막 새뼈는 '골절이 며칠 됐는지'를 알려 주는 시계가 된다(아동학대 평가에서도 쓰인다).<br> <b>같은 골막 반응, 다른 원인</b>: 골막은 무엇이든 들어 올리면 새 뼈를 만든다 — 피(외상·괴혈병), 고름(골수염), 종양(유잉육종·골육종). 그래서 모양보다 <b>맥락</b>이 먼저다: 외상력과 시점, 골절선이 있는지, 열·염증 수치, 뼈 파괴가 있는지를 함께 본다.<br> <b>위험 신호</b>: 외상력 없이, 골절선 없이, 뼈속질 파괴나 골막 반응이 끊기는 모양(Codman 삼각)·햇살 모양이 보이거나, 열과 염증 수치가 높으면 골수염·종양을 의심해 MRI 와 생검을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">골막 가골(정답)</th><th>급성 골수염의 골막 반응(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계기</td><td><b>외상 뒤 7~14일</b></td><td>열·국소 통증으로 시작, 외상은 우연</td></tr> <tr><td>골절선</td><td><b>있다</b> — 새 뼈가 골절을 감싼다</td><td>없다, 골간단 투과성 파괴</td></tr> <tr><td>전신 소견</td><td>열 없음, 백혈구·CRP 정상</td><td>발열, CRP·적혈구침강속도 상승</td></tr> <tr><td>경과</td><td>통증이 줄어든다</td><td>통증이 심해진다</td></tr> </tbody></table> 골막 반응을 보면 먼저 '그 안에 골절선이 있는가, 아이가 아파 보이는가'를 묻는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 유잉육종은 외상과 무관하게 통증·열이 이어지고 골간에 침투성 뼈 파괴와 겹겹의 양파껍질 골막 반응이 보일 때 정답이다.\n② 골육종의 Codman 삼각은 골간단의 뼈 파괴·종양 뼈 형성과 함께 골막이 들려 끊긴 삼각형으로 보일 때 정답이 된다.\n③ 괴혈병의 골막하 출혈 석회화는 비타민 C 결핍 식이, 잇몸 출혈, 골간단의 투명대·고리 모양 골단이 함께 있을 때 정답이다.\n⑤ 급성 골수염의 골막 반응은 열과 국소 발적이 있고 C-반응단백이 오르며 골절선 없이 골간단 파괴가 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "새 뼈가 보이면 골수염이나 종양부터 떠올리는 것 — 외상 12일 뒤 골절선을 감싸는 새 뼈에 열·염증 수치가 정상이면 치유 가골이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "외상 12일 뒤 소아 원위 요골 골절의 골막 새뼈를 치유 가골로 읽고, 열·염증 수치가 정상이면 골수염·골종양의 골막 반응과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Common Fractures — healing and remodeling in children · Prosser I, et al. A timetable for the radiologic features of fracture healing in young children. AJR Am J Roentgenol 2012;198:1014-1020 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "외상 12일 뒤 골절선을 감싸는 골막 새뼈이고 열·염증 수치가 정상이므로 치유 중인 골절의 가골이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "외상 시점과 골절선이 있고 열·CRP·백혈구가 정상이다 — 골수염의 근거가 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 원위 요골 골간단 골절선 + 그 피질을 따른 희뿌연 새 뼈 → 골절 부위의 골막 반응",
+    "외상 12일 뒤 → 소아 골막 가골이 보이는 시기",
+    "열 없음 + 백혈구·CRP 정상 → 감염·종양보다 치유 가골"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단을 가로지르는 골절과 원위 골편의 각형성",
+     "why": "골절이 실제로 있다",
+     "also": []
+    },
+    {
+     "item": "영상: 골절 부위 한쪽 피질을 따라 희뿌연 골막 새뼈",
+     "why": "물은 소견",
+     "also": []
+    },
+    {
+     "item": "12일 전 자전거에서 넘어지며",
+     "why": "가골이 보이는 시기와 맞다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "C-반응단백 0.3 mg/dL",
+     "why": "골수염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "피부 발적이나 열감은 없고",
+     "why": "국소 감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "알칼리인산분해효소는 나이에 맞는 범위",
+     "why": "성장기 소아는 원래 높다 — 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "원위 전완이 약간 휘어 보이며",
+     "why": "각변형 — 진단보다 정복 여부 판단에 쓰는 정보",
+     "also": []
+    }
+   ],
+   "summary": "넘어진 지 12일 된 원위 요골 골간단 골절을 따라 골막 새뼈가 보이고, 열·발적이 없으며 백혈구·CRP 가 정상이다. 치유 중인 골절의 골막 가골이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "외상력이 없거나 골절선 없이 열과 CRP 상승이 있고 골간단에 투과성 파괴가 보였다면 급성 골수염의 골막 반응이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0426.png",
+   "caption": "왼쪽 손목·원위 전완 측면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0422_1294991061_03_WRI-L2_M010",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0424",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "부인과 — 난관 임신으로 떼어 낸 난관의 면역조직화학",
+  "type": "부인과 — 난관 임신으로 떼어 낸 난관의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-24",
+  "vignette": "A 26-year-old woman undergoes laparoscopic salpingectomy for a ruptured ampullary ectopic pregnancy. She had pelvic inflammatory disease 4 years ago. Her blood pressure stabilizes after surgery, and serum β-hCG becomes undetectable 3 weeks later. To study the mucosa of the removed tube, a section taken away from the implantation site is stained by immunohistochemistry with an antibody against a nuclear transcription factor that switches on the genes needed to build motile microtubule-based surface projections. A photomicrograph of the stained section is shown.",
+  "question": "Which of the following best describes the cells with brown-stained nuclei?",
+  "options": [
+   "Lining epithelial cells that sweep the embryo toward the uterus",
+   "Lining epithelial cells that secrete nutrient fluid into the lumen",
+   "Smooth muscle cells whose peristalsis moves the embryo",
+   "Stromal cells of the folds that form decidua after implantation",
+   "Endothelial cells of the vessels supplying the mucosal folds"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Brown nuclei are confined to a subset of the columnar cells lining the mucosal folds; the neighboring lining cells, the stroma, the smooth muscle wall, and the vessels are unstained. A transcription factor that drives formation of motile cilia marks the ciliated cells, whose coordinated beating (with muscular peristalsis) carries the embryo toward the uterus. Loss of these cells after salpingitis is a major cause of tubal ectopic pregnancy.\n- 원리: <b>The tubal lining has two cell types</b>: ciliated cells (most numerous toward the fimbria and ampulla) and secretory (peg) cells that produce tubal fluid nourishing the gametes and early embryo. The muscularis below contracts in peristaltic waves.<br> <b>How to read this stain</b>: the antibody marks a transcription factor, so the signal is <b>nuclear</b>. Only some lining cells are positive, in an alternating pattern with negative neighbors — that is what a marker for one of two intermixed epithelial cell types looks like. The muscle wall, stroma, and vessels are negative.<br> <b>Why it matters clinically</b>: embryo transport depends mostly on ciliary beating toward the uterus. Pelvic inflammatory disease (chlamydia, gonorrhea) destroys ciliated cells and scars the folds; smoking and the luteal hormone milieu also slow ciliary beat. A delayed embryo implants in the tube — usually the ampulla — producing ectopic pregnancy. Primary ciliary dyskinesia similarly reduces fertility and raises ectopic risk.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Ciliated cell (answer)</th><th>Secretory (peg) cell (closest distractor)</th></tr></thead><tbody> <tr><td>Marker program</td><td><b>Motile-cilia transcription factor (nuclear)</b></td><td>Secretory proteins; PAX8</td></tr> <tr><td>Surface</td><td>Many motile cilia</td><td>Microvilli, apical bulge</td></tr> <tr><td>Function</td><td>Moves gametes and embryo</td><td>Produces nourishing tubal fluid</td></tr> <tr><td>Lost in</td><td>Salpingitis, smoking → ectopic pregnancy</td><td>Proportion rises after the menopause</td></tr> </tbody></table> Both line the same folds, so location alone cannot separate them — the marker program does.\n- 오답 이유:\n  - (B) Secretory (peg) cells would be the answer if the antibody marked a secretory program such as PAX8; they lie beside the stained cells but are negative here.\n  - (C) Smooth muscle cells would be correct if brown nuclei filled the muscular wall around the folds; in this section the wall is unstained.\n  - (D) Stromal cells would be the answer for a marker of decidualized stroma; the fold cores here are negative and decidua forms at implantation sites.\n  - (E) Endothelial cells would be stained by a vascular marker such as CD31, outlining vessel lumens; the vessels in this section are negative.\n- 함정: Assuming the muscular wall moves the embryo and choosing smooth muscle — the stain is in the lining epithelium, where ciliary beating does most of the transport.\n- 학습목표: 난관 면역조직화학에서 점막 주름 상피의 일부 세포 핵만 염색된 것을 읽고, 섬모 형성 전사인자가 표시하는 섬모세포의 역할(배아 수송)과 연결한다\n- 근거·출처: Kumar V, et al. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Female Genital Tract — fallopian tubes; ectopic pregnancy · Lyons RA, et al. The reproductive significance of human Fallopian tube cilia. Hum Reprod Update 2006;12:363-372\n\n## 출처\n- Human Protein Atlas, FOXJ1 / Fallopian tube (CC BY 4.0), https://images.proteinatlas.org/5714/153422_A_8_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Brown nuclei are confined to a subset of the columnar cells lining the mucosal folds; the neighboring lining cells, the stroma, the smooth muscle wall, and the vessels are unstained. A transcription factor that drives formation of motile cilia marks the ciliated cells, whose coordinated beating (with muscular peristalsis) carries the embryo toward the uterus. Loss of these cells after salpingitis is a major cause of tubal ectopic pregnancy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>The tubal lining has two cell types</b>: ciliated cells (most numerous toward the fimbria and ampulla) and secretory (peg) cells that produce tubal fluid nourishing the gametes and early embryo. The muscularis below contracts in peristaltic waves.<br> <b>How to read this stain</b>: the antibody marks a transcription factor, so the signal is <b>nuclear</b>. Only some lining cells are positive, in an alternating pattern with negative neighbors — that is what a marker for one of two intermixed epithelial cell types looks like. The muscle wall, stroma, and vessels are negative.<br> <b>Why it matters clinically</b>: embryo transport depends mostly on ciliary beating toward the uterus. Pelvic inflammatory disease (chlamydia, gonorrhea) destroys ciliated cells and scars the folds; smoking and the luteal hormone milieu also slow ciliary beat. A delayed embryo implants in the tube — usually the ampulla — producing ectopic pregnancy. Primary ciliary dyskinesia similarly reduces fertility and raises ectopic risk."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Ciliated cell (answer)</th><th>Secretory (peg) cell (closest distractor)</th></tr></thead><tbody> <tr><td>Marker program</td><td><b>Motile-cilia transcription factor (nuclear)</b></td><td>Secretory proteins; PAX8</td></tr> <tr><td>Surface</td><td>Many motile cilia</td><td>Microvilli, apical bulge</td></tr> <tr><td>Function</td><td>Moves gametes and embryo</td><td>Produces nourishing tubal fluid</td></tr> <tr><td>Lost in</td><td>Salpingitis, smoking → ectopic pregnancy</td><td>Proportion rises after the menopause</td></tr> </tbody></table> Both line the same folds, so location alone cannot separate them — the marker program does."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Secretory (peg) cells would be the answer if the antibody marked a secretory program such as PAX8; they lie beside the stained cells but are negative here.\n(C) Smooth muscle cells would be correct if brown nuclei filled the muscular wall around the folds; in this section the wall is unstained.\n(D) Stromal cells would be the answer for a marker of decidualized stroma; the fold cores here are negative and decidua forms at implantation sites.\n(E) Endothelial cells would be stained by a vascular marker such as CD31, outlining vessel lumens; the vessels in this section are negative."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming the muscular wall moves the embryo and choosing smooth muscle — the stain is in the lining epithelium, where ciliary beating does most of the transport."
+   },
+   {
+    "k": "학습목표",
+    "v": "난관 면역조직화학에서 점막 주름 상피의 일부 세포 핵만 염색된 것을 읽고, 섬모 형성 전사인자가 표시하는 섬모세포의 역할(배아 수송)과 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, et al. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The Female Genital Tract — fallopian tubes; ectopic pregnancy · Lyons RA, et al. The reproductive significance of human Fallopian tube cilia. Hum Reprod Update 2006;12:363-372 ## 출처 Human Protein Atlas, FOXJ1 / Fallopian tube (CC BY 4.0), https://images.proteinatlas.org/5714/153422_A_8_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "점막 주름 상피의 일부 세포 핵만 섬모 형성 전사인자로 염색되므로 배아를 자궁 쪽으로 쓸어 보내는 섬모세포다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "표지가 섬모 형성 유전자를 켜는 전사인자다 — 같은 주름의 분비세포는 음성",
+   "steps": 2,
+   "chain": [
+    "영상: 주름 상피의 일부 세포 핵만 갈색, 기질·근육층·혈관 음성 → 상피의 한 세포군",
+    "섬모 형성 전사인자 → 섬모세포 → 배아 수송"
+   ],
+   "key": [
+    {
+     "item": "영상: 점막 주름 원주상피 가운데 일부 세포의 핵만 갈색",
+     "why": "상피 안의 한 세포군을 표시",
+     "also": []
+    },
+    {
+     "item": "motile microtubule-based surface projections",
+     "why": "섬모 — 분비세포와 가르는 정보",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 근육층·기질·혈관은 음성",
+     "why": "민무늬근·기질·내피세포 선지 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "pelvic inflammatory disease 4 years ago",
+     "why": "섬모세포 손상의 원인 — 판독 자체를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "ruptured ampullary ectopic pregnancy",
+     "why": "검체 맥락 — 섬모 기능 장애와 연결된다",
+     "also": []
+    }
+   ],
+   "summary": "난관 점막 주름 상피 중 일부 세포의 핵만 섬모 형성 전사인자로 염색되고 근육층·기질·혈관은 음성이다. 섬모 운동으로 배아를 자궁 쪽으로 보내는 섬모세포다.",
+   "switch": {
+    "choice": "C",
+    "condition": "갈색 핵이 주름 바깥의 두꺼운 근육층에 가득했다면 연동 수축을 맡는 민무늬근세포를 표시한 것이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0424.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), resized only (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000129654-FOXJ1/tissue/Fallopian+tube",
+   "asset_id": "HPA-FOXJ1_153422_A_8_7",
+   "text": "Human Protein Atlas, FOXJ1 / Fallopian tube (CC BY 4.0), https://images.proteinatlas.org/5714/153422_A_8_7.jpg"
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0422",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "외과계 — 여러 유관에서 나오는 녹갈색 유두 분비물과 유방 초음파",
+  "type": "외과계 — 여러 유관에서 나오는 녹갈색 유두 분비물과 유방 초음파",
+  "modality": "US",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-24",
+  "vignette": "57세 여자가 두 달 전부터 왼쪽 유두에서 끈적한 녹갈색 분비물이 나와 외래에 왔다. 분비물은 짜야 나오고, 유두 표면의 여러 유관 구멍에서 나온다. 폐경은 6년 전이고 호르몬 치료는 받지 않았으며 담배를 20년 피웠다. 유두는 갈라진 틈 모양으로 약간 들어가 있다. 유륜 아래가 반죽처럼 만져지지만 따로 구분되는 덩이는 없고, 겨드랑이 림프절은 만져지지 않는다. 분비물의 잠혈 검사는 음성이고, 유방촬영에서 덩이나 미세석회화는 없다. 왼쪽 유방 초음파 사진은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "유관 확장증",
+   "유관내 유두종",
+   "침윤성 관암종",
+   "섬유선종",
+   "유관상피내암"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 초음파에서 무에코의 관 모양 구조가 여러 개 가지 치듯 늘어서 있고 관 안에 고형 결절이 없다. 폐경 후 흡연자에게 여러 유관에서 짜야 나오는 끈적한 녹갈색 분비물, 틈 모양 유두 함몰, 잠혈 음성, 유방촬영 정상이 함께 있으므로 유관 확장증이다.\n- 원리: <b>무엇이 늘어나나</b>: 유관 확장증은 유륜 아래 큰 유관이 넓어지고 그 안에 지질이 많은 분비물과 세포 찌꺼기가 고이는 양성 질환이다. 고인 분비물이 관벽 밖으로 새면 주변에 형질세포가 많은 만성 염증과 섬유화가 생기고(형질세포 유방염), 섬유화가 유관을 당겨 <b>틈 모양의 유두 함몰</b>을 만든다 — 그래서 암과 헷갈린다. 흡연이 위험인자다.<br> <b>분비물이 말해 주는 것</b>: 병리적 분비물의 경고 표지는 <b>한쪽 · 한 유관 · 저절로 · 혈성(또는 맑은 물)</b>이다. 여러 유관에서 짜야 나오는 끈적한 녹색·갈색·검은 분비물은 양성(유관 확장증·섬유낭성 변화)을 시사한다.<br> <b>초음파 읽는 법</b>: 관 모양 무에코 구조 안에 <b>고형 결절이 있는지</b>가 핵심이다. 관 안 결절이나 벽에 붙은 덩이가 보이면 유관내 유두종이나 암을 배제하기 위해 생검·절제가 필요하다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">유관 확장증(정답)</th><th>유관내 유두종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>폐경 전후·흡연자</td><td>35~55세</td></tr> <tr><td>분비물</td><td><b>여러 유관, 짜야 나옴, 녹갈색·끈적</b></td><td><b>한 유관, 저절로, 혈성·장액성</b></td></tr> <tr><td>초음파</td><td>여러 확장 유관, 관 안 고형 성분 없음</td><td>확장 유관 안의 고형 결절</td></tr> <tr><td>처치</td><td>증상 조절·금연, 심하면 중심 유관 절제</td><td>병변 유관 절제로 조직 확인</td></tr> </tbody></table> 분비물이 '몇 개의 구멍에서, 어떤 색으로, 저절로인가'를 먼저 묻고, 초음파에서 관 안을 본다.\n- 오답 이유:\n  - ② 유관내 유두종은 한 유관에서 저절로 나오는 혈성·장액성 분비물이 있고 초음파에서 확장 유관 안에 고형 결절이 보일 때 정답이다.\n  - ③ 침윤성 관암종은 초음파에서 경계가 불규칙하고 비평행이며 뒤쪽 음향 그림자를 보이는 저에코 덩이가 있을 때 정답이 된다.\n  - ④ 섬유선종은 젊은 여성에서 잘 움직이는 고무 같은 덩이로, 초음파에서 경계가 매끈한 타원형 저에코 고형 덩이일 때 정답이다.\n  - ⑤ 유관상피내암은 유방촬영의 가는 선형·분지형 미세석회화로 발견되는 경우가 많고, 혈성 분비물과 함께 오면 정답이 될 수 있다.\n- 함정: 유두 함몰과 폐경 후 나이만 보고 암을 고르는 것 — 여러 유관의 끈적한 녹갈색 분비물과 고형 성분 없는 확장 유관은 유관 확장증이다.\n- 학습목표: 여러 유관에서 나오는 끈적한 녹갈색 유두 분비물과 초음파의 무에코 관 모양 구조를 유관 확장증으로 판단하고, 한 유관의 혈성 분비물·관내 종괴를 보이는 유관내 유두종과 구별한다\n- 근거·출처: Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — nipple discharge and duct ectasia · Expert Panel on Breast Imaging; Lee SJ, et al. ACR Appropriateness Criteria® Evaluation of Nipple Discharge. J Am Coll Radiol 2017;14:S138-S153\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case140 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 무에코의 관 모양 구조가 여러 개 가지 치듯 늘어서 있고 관 안에 고형 결절이 없다. 폐경 후 흡연자에게 여러 유관에서 짜야 나오는 끈적한 녹갈색 분비물, 틈 모양 유두 함몰, 잠혈 음성, 유방촬영 정상이 함께 있으므로 유관 확장증이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 늘어나나</b>: 유관 확장증은 유륜 아래 큰 유관이 넓어지고 그 안에 지질이 많은 분비물과 세포 찌꺼기가 고이는 양성 질환이다. 고인 분비물이 관벽 밖으로 새면 주변에 형질세포가 많은 만성 염증과 섬유화가 생기고(형질세포 유방염), 섬유화가 유관을 당겨 <b>틈 모양의 유두 함몰</b>을 만든다 — 그래서 암과 헷갈린다. 흡연이 위험인자다.<br> <b>분비물이 말해 주는 것</b>: 병리적 분비물의 경고 표지는 <b>한쪽 · 한 유관 · 저절로 · 혈성(또는 맑은 물)</b>이다. 여러 유관에서 짜야 나오는 끈적한 녹색·갈색·검은 분비물은 양성(유관 확장증·섬유낭성 변화)을 시사한다.<br> <b>초음파 읽는 법</b>: 관 모양 무에코 구조 안에 <b>고형 결절이 있는지</b>가 핵심이다. 관 안 결절이나 벽에 붙은 덩이가 보이면 유관내 유두종이나 암을 배제하기 위해 생검·절제가 필요하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">유관 확장증(정답)</th><th>유관내 유두종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>폐경 전후·흡연자</td><td>35~55세</td></tr> <tr><td>분비물</td><td><b>여러 유관, 짜야 나옴, 녹갈색·끈적</b></td><td><b>한 유관, 저절로, 혈성·장액성</b></td></tr> <tr><td>초음파</td><td>여러 확장 유관, 관 안 고형 성분 없음</td><td>확장 유관 안의 고형 결절</td></tr> <tr><td>처치</td><td>증상 조절·금연, 심하면 중심 유관 절제</td><td>병변 유관 절제로 조직 확인</td></tr> </tbody></table> 분비물이 '몇 개의 구멍에서, 어떤 색으로, 저절로인가'를 먼저 묻고, 초음파에서 관 안을 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 유관내 유두종은 한 유관에서 저절로 나오는 혈성·장액성 분비물이 있고 초음파에서 확장 유관 안에 고형 결절이 보일 때 정답이다.\n③ 침윤성 관암종은 초음파에서 경계가 불규칙하고 비평행이며 뒤쪽 음향 그림자를 보이는 저에코 덩이가 있을 때 정답이 된다.\n④ 섬유선종은 젊은 여성에서 잘 움직이는 고무 같은 덩이로, 초음파에서 경계가 매끈한 타원형 저에코 고형 덩이일 때 정답이다.\n⑤ 유관상피내암은 유방촬영의 가는 선형·분지형 미세석회화로 발견되는 경우가 많고, 혈성 분비물과 함께 오면 정답이 될 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "유두 함몰과 폐경 후 나이만 보고 암을 고르는 것 — 여러 유관의 끈적한 녹갈색 분비물과 고형 성분 없는 확장 유관은 유관 확장증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "여러 유관에서 나오는 끈적한 녹갈색 유두 분비물과 초음파의 무에코 관 모양 구조를 유관 확장증으로 판단하고, 한 유관의 혈성 분비물·관내 종괴를 보이는 유관내 유두종과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. Diseases of the Breast — nipple discharge and duct ectasia · Expert Panel on Breast Imaging; Lee SJ, et al. ACR Appropriateness Criteria® Evaluation of Nipple Discharge. J Am Coll Radiol 2017;14:S138-S153 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case140 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "여러 유관에서 짜야 나오는 끈적한 녹갈색 분비물과 고형 성분 없는 여러 확장 유관이 보이므로 유관 확장증이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "분비물이 한 유관의 혈성이 아니라 여러 유관의 녹갈색이고, 확장 유관 안에 결절이 없다",
+   "steps": 2,
+   "chain": [
+    "여러 유관 + 짜야 나옴 + 끈적한 녹갈색 + 잠혈 음성 → 양성 분비물",
+    "영상: 고형 성분 없는 무에코 관 모양 구조 여러 개 → 유관 확장증"
+   ],
+   "key": [
+    {
+     "item": "영상: 무에코의 관 모양 구조 여러 개, 관 안 고형 결절 없음",
+     "why": "확장 유관 — 유두종·암과 가른다",
+     "also": []
+    },
+    {
+     "item": "여러 유관 구멍에서 나온다",
+     "why": "양성 분비물의 특징",
+     "also": []
+    },
+    {
+     "item": "끈적한 녹갈색 분비물",
+     "why": "유관 확장증의 전형적 색",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "분비물의 잠혈 검사는 음성",
+     "why": "유관내 유두종·암 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "유방촬영에서 덩이나 미세석회화는 없다",
+     "why": "침윤암·유관상피내암 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "담배를 20년 피웠다",
+     "why": "위험인자 — 진단을 단독으로 정하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "틈 모양으로 약간 들어가 있다",
+     "why": "섬유화에 의한 함몰 — 암과 헷갈리게 하는 정보",
+     "also": []
+    }
+   ],
+   "summary": "여러 유관에서 짜야 나오는 끈적한 녹갈색 분비물, 잠혈 음성, 유방촬영 정상에 초음파에서 고형 성분 없는 확장 유관이 여러 개 보여 유관 확장증이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "한 유관에서 저절로 혈성 분비물이 나오고 초음파에서 확장 유관 안에 고형 결절이 보였다면 유관내 유두종을 먼저 생각한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0422.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case140",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case140"
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0421",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "산과 — 자연 진통 중 초산부의 태아심박동 기록",
+  "type": "산과 — 자연 진통 중 초산부의 태아심박동 기록",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-24",
+  "vignette": "A 30-year-old woman, gravida 1, para 0, at 39 weeks' gestation is admitted to the labor unit in spontaneous labor. Contractions began 8 hours ago, and her membranes ruptured spontaneously 2 hours ago, draining clear fluid. Her pregnancy has been uncomplicated. She has not received oxytocin or epidural analgesia. Her temperature is 36.9°C (98.4°F), pulse is 88/min, and blood pressure is 122/76 mm Hg. Pelvic examination shows the cervix is 6 cm dilated and 90% effaced, with the vertex at 0 station. Continuous electronic fetal monitoring is in place, and a 10-minute segment of the tracing is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Continue labor with routine periodic review of the tracing",
+   "Left lateral positioning, oxygen, and an intravenous fluid bolus",
+   "Fetal scalp blood sampling for pH measurement",
+   "Amnioinfusion through an intrauterine catheter",
+   "Immediate cesarean delivery"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The baseline fetal heart rate is about 130–140/min with moderate variability (amplitude roughly 6–15/min), and there are no late or variable decelerations with the contractions. This is a Category I (normal) tracing, which predicts a normal fetal acid–base status at that moment, so labor continues with routine periodic review of the tracing; no intrauterine resuscitation or intervention is needed.\n- 원리: <b>What a tracing tells you</b>: the fetal heart rate is set by the autonomic nervous system. <b>Moderate variability</b> means that the fetal brainstem is well oxygenated and actively adjusting the rate beat to beat — the single most reassuring feature, because it is lost when central acidemia develops.<br> <b>Reading in order</b>: baseline (110–160/min), variability (moderate = 6–25/min), accelerations, decelerations and their timing relative to contractions, then contraction frequency (normal ≤ 5 in 10 minutes averaged over 30 minutes).<br> <b>The three categories</b>: Category I has a normal baseline, moderate variability, and no late or variable decelerations — accelerations may or may not be present. Category II is everything in between and calls for evaluation and intrauterine resuscitation. Category III (absent variability with recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern) calls for prompt delivery if resuscitation fails.<br> <b>Gaps in the line</b>: short breaks in an external tracing are signal loss, not fetal events, and do not change the category.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Routine care — Category I (answer)</th><th>Intrauterine resuscitation — Category II (closest distractor)</th></tr></thead><tbody> <tr><td>Variability</td><td><b>Moderate (6–25/min)</b></td><td>Minimal, or moderate with decelerations</td></tr> <tr><td>Decelerations</td><td><b>None late or variable</b></td><td>Recurrent late or variable decelerations</td></tr> <tr><td>Baseline</td><td>110–160/min</td><td>Tachycardia or bradycardia possible</td></tr> </tbody></table> Repositioning, oxygen, and fluids treat a cause such as cord compression or reduced uteroplacental flow; a normal tracing has no such cause to treat.\n- 오답 이유:\n  - (B) Repositioning, oxygen, and fluids become correct when a Category II tracing shows recurrent late or variable decelerations or minimal variability.\n  - (C) Fetal scalp blood sampling is used in some settings to clarify an indeterminate Category II tracing; it is not needed when variability is moderate.\n  - (D) Amnioinfusion is indicated for recurrent variable decelerations from cord compression, typically with oligohydramnios, which this tracing does not show.\n  - (E) Immediate cesarean delivery is correct for a Category III tracing that does not improve, such as absent variability with recurrent late decelerations.\n- 함정: Treating the gaps in the line or the strong contractions as a warning — the tracing has moderate variability and no decelerations, so it is Category I.\n- 학습목표: 분만 중 태아심박동 기록에서 정상 기저 심박동·중등도 변이·감속 없음을 읽어 범주 I 로 판정하고 일상적 분만 관리를 이어 간다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring. Obstet Gynecol 2009;114:192-202 · Macones GA, et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661-666\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1174 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The baseline fetal heart rate is about 130–140/min with moderate variability (amplitude roughly 6–15/min), and there are no late or variable decelerations with the contractions. This is a Category I (normal) tracing, which predicts a normal fetal acid–base status at that moment, so labor continues with routine periodic review of the tracing; no intrauterine resuscitation or intervention is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What a tracing tells you</b>: the fetal heart rate is set by the autonomic nervous system. <b>Moderate variability</b> means that the fetal brainstem is well oxygenated and actively adjusting the rate beat to beat — the single most reassuring feature, because it is lost when central acidemia develops.<br> <b>Reading in order</b>: baseline (110–160/min), variability (moderate = 6–25/min), accelerations, decelerations and their timing relative to contractions, then contraction frequency (normal ≤ 5 in 10 minutes averaged over 30 minutes).<br> <b>The three categories</b>: Category I has a normal baseline, moderate variability, and no late or variable decelerations — accelerations may or may not be present. Category II is everything in between and calls for evaluation and intrauterine resuscitation. Category III (absent variability with recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern) calls for prompt delivery if resuscitation fails.<br> <b>Gaps in the line</b>: short breaks in an external tracing are signal loss, not fetal events, and do not change the category."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Routine care — Category I (answer)</th><th>Intrauterine resuscitation — Category II (closest distractor)</th></tr></thead><tbody> <tr><td>Variability</td><td><b>Moderate (6–25/min)</b></td><td>Minimal, or moderate with decelerations</td></tr> <tr><td>Decelerations</td><td><b>None late or variable</b></td><td>Recurrent late or variable decelerations</td></tr> <tr><td>Baseline</td><td>110–160/min</td><td>Tachycardia or bradycardia possible</td></tr> </tbody></table> Repositioning, oxygen, and fluids treat a cause such as cord compression or reduced uteroplacental flow; a normal tracing has no such cause to treat."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Repositioning, oxygen, and fluids become correct when a Category II tracing shows recurrent late or variable decelerations or minimal variability.\n(C) Fetal scalp blood sampling is used in some settings to clarify an indeterminate Category II tracing; it is not needed when variability is moderate.\n(D) Amnioinfusion is indicated for recurrent variable decelerations from cord compression, typically with oligohydramnios, which this tracing does not show.\n(E) Immediate cesarean delivery is correct for a Category III tracing that does not improve, such as absent variability with recurrent late decelerations."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the gaps in the line or the strong contractions as a warning — the tracing has moderate variability and no decelerations, so it is Category I."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동 기록에서 정상 기저 심박동·중등도 변이·감속 없음을 읽어 범주 I 로 판정하고 일상적 분만 관리를 이어 간다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring. Obstet Gynecol 2009;114:192-202 · Macones GA, et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661-666 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1174 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "기저 심박동 정상·중등도 변이·감속 없음의 범주 I 기록이므로 개입 없이 일상적 분만 관리를 이어 간다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "자궁수축 뒤에 늦은 감속이나 변이성 감속이 없고 변이가 중등도다",
+   "steps": 2,
+   "chain": [
+    "영상: 기저 약 130~140회/분 + 중등도 변이 + 감속 없음 → 범주 I",
+    "범주 I → 자궁 내 소생술·분만 앞당김 없이 일상적 관리"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저 태아심박동 약 130~140회/분, 진폭 약 6~15회/분의 중등도 변이",
+     "why": "정상 기저·중등도 변이",
+     "also": []
+    },
+    {
+     "item": "영상: 자궁수축 뒤 감속 없음",
+     "why": "늦은 감속·변이성 감속이 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "draining clear fluid",
+     "why": "태변 착색이 없어 태아 곤란을 의심할 근거를 하나 줄인다",
+     "also": []
+    },
+    {
+     "item": "Her temperature is 36.9°C",
+     "why": "융모양막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has not received oxytocin",
+     "why": "자궁 과다수축을 줄일 약을 끊을 필요가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "영상: 군데군데 끊긴 선",
+     "why": "신호 소실 — 범주를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "기저 약 130~140회/분, 중등도 변이, 수축에 따른 감속이 없는 범주 I 기록이다. 일상적 감시를 하며 분만을 이어 간다.",
+   "switch": {
+    "choice": "B",
+    "condition": "수축마다 늦은 감속이 반복되고 변이가 최소로 줄었다면(범주 II) 자세 변경·산소·수액으로 자궁 내 소생술을 먼저 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0421.png",
+   "caption": "Intrapartum fetal heart rate (upper) and uterine activity (lower), minutes 20–30 of monitoring; 3 cm/min, vertical lines = 1 min; gaps are signal loss in the original record (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1174_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1174"
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0429",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "정신 — 할로페리돌 장기 복용자의 입 주위 불수의 운동",
+  "type": "정신 — 할로페리돌 장기 복용자의 입 주위 불수의 운동",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-24",
+  "vignette": "A 58-year-old woman with schizophrenia is brought to the clinic by her sister because of involuntary mouth movements that have gradually worsened over 8 months. She has taken haloperidol 10 mg daily for 12 years, and her psychotic symptoms have been stable without hospitalization for 5 years. Six months ago, benztropine was added for the movements, and since then they have become more frequent. She is embarrassed to eat in public. She is alert and calm. There are repetitive lip smacking, puckering, and lateral jaw movements, and her tongue darts in and out of her mouth; the movements decrease when she is asked to tap her fingers. There is no rigidity, tremor, or bradykinesia, and her gait is normal. She does not report restlessness. Serum TSH, calcium, and copper concentrations are normal.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Increase the dose of haloperidol",
+   "Intramuscular diphenhydramine",
+   "Valbenazine",
+   "Increase the dose of benztropine",
+   "Propranolol"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Choreoathetoid oro-buccal-lingual movements that began after years of dopamine-receptor blockade are tardive dyskinesia. Anticholinergic drugs such as benztropine worsen it, as happened here. For moderate to severe tardive dyskinesia that impairs function, a vesicular monoamine transporter 2 (VMAT2) inhibitor — valbenazine or deutetrabenazine — is the recommended treatment, while the antipsychotic is continued or adjusted to keep psychosis stable.\n- 원리: <b>Why tardive dyskinesia appears late</b>: chronic D2-receptor blockade in the striatum leads to upregulated, supersensitive postsynaptic D2 receptors (and loss of striatal inhibitory interneurons). The indirect pathway is under-active and the direct pathway relatively over-active, producing hyperkinetic choreoathetoid movements — the opposite of acute drug-induced parkinsonism.<br> <b>Why anticholinergics make it worse</b>: in the striatum, acetylcholine and dopamine are in balance. Drugs like benztropine help dystonia and parkinsonism (relative cholinergic excess), but in tardive dyskinesia they further tilt the balance toward dopaminergic activity and increase the movements.<br> <b>Why VMAT2 inhibitors work</b>: VMAT2 loads dopamine into presynaptic vesicles. Inhibiting it depletes releasable dopamine, so the supersensitive receptors receive less stimulation. Valbenazine and deutetrabenazine reduce movement scores in randomized trials, with less depression and parkinsonism than tetrabenazine.<br> <b>Why not raise the antipsychotic</b>: a higher dose masks movements briefly by blocking more receptors but drives further supersensitivity.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tardive dyskinesia — valbenazine (answer)</th><th>Drug-induced parkinsonism — benztropine (closest distractor)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Months to years</b> of D2 blockade</td><td>Days to weeks after starting or raising the dose</td></tr> <tr><td>Movements</td><td>Hyperkinetic oro-buccal-lingual chorea</td><td>Hypokinetic: rigidity, tremor, bradykinesia</td></tr> <tr><td>Anticholinergic</td><td><b>Worsens</b></td><td>Improves</td></tr> <tr><td>Striatal state</td><td>Relative dopaminergic excess</td><td>Dopaminergic deficit</td></tr> </tbody></table> Benztropine is the right drug for the wrong syndrome here — it relieves stiffness and tremor, not chorea.\n- 오답 이유:\n  - (A) Raising haloperidol temporarily suppresses movements by blocking more receptors but worsens the underlying supersensitivity; it would fit only acute psychotic relapse.\n  - (B) Intramuscular diphenhydramine is the treatment for acute dystonia such as torticollis or oculogyric crisis within days of starting an antipsychotic.\n  - (D) More benztropine would be correct for drug-induced parkinsonism or acute dystonia; in tardive dyskinesia it worsened the movements, as seen in this patient.\n  - (E) Propranolol is the treatment for akathisia, an inner restlessness with an urge to move; she denies restlessness and has involuntary orofacial chorea instead.\n- 함정: Adding or increasing an anticholinergic because the problem is 'extrapyramidal' — tardive dyskinesia is worsened by anticholinergics and is treated with a VMAT2 inhibitor.\n- 학습목표: 항정신병약 장기 복용 뒤 생긴 입·혀의 무도무정위 운동을 지연이상운동증으로 판단하고, 항콜린제가 악화시킴을 알아 VMAT2 억제제를 고른다\n- 근거·출처: Bhidayasiri R, et al. Updating the recommendations for treatment of tardive syndromes: a systematic review of new evidence and practice guideline. Neurology 2018;91:316-326 · Keepers GA, et al. The American Psychiatric Association Practice Guideline for the Treatment of Patients With Schizophrenia. Am J Psychiatry 2020;177:868-872",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Choreoathetoid oro-buccal-lingual movements that began after years of dopamine-receptor blockade are tardive dyskinesia. Anticholinergic drugs such as benztropine worsen it, as happened here. For moderate to severe tardive dyskinesia that impairs function, a vesicular monoamine transporter 2 (VMAT2) inhibitor — valbenazine or deutetrabenazine — is the recommended treatment, while the antipsychotic is continued or adjusted to keep psychosis stable."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why tardive dyskinesia appears late</b>: chronic D2-receptor blockade in the striatum leads to upregulated, supersensitive postsynaptic D2 receptors (and loss of striatal inhibitory interneurons). The indirect pathway is under-active and the direct pathway relatively over-active, producing hyperkinetic choreoathetoid movements — the opposite of acute drug-induced parkinsonism.<br> <b>Why anticholinergics make it worse</b>: in the striatum, acetylcholine and dopamine are in balance. Drugs like benztropine help dystonia and parkinsonism (relative cholinergic excess), but in tardive dyskinesia they further tilt the balance toward dopaminergic activity and increase the movements.<br> <b>Why VMAT2 inhibitors work</b>: VMAT2 loads dopamine into presynaptic vesicles. Inhibiting it depletes releasable dopamine, so the supersensitive receptors receive less stimulation. Valbenazine and deutetrabenazine reduce movement scores in randomized trials, with less depression and parkinsonism than tetrabenazine.<br> <b>Why not raise the antipsychotic</b>: a higher dose masks movements briefly by blocking more receptors but drives further supersensitivity."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tardive dyskinesia — valbenazine (answer)</th><th>Drug-induced parkinsonism — benztropine (closest distractor)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Months to years</b> of D2 blockade</td><td>Days to weeks after starting or raising the dose</td></tr> <tr><td>Movements</td><td>Hyperkinetic oro-buccal-lingual chorea</td><td>Hypokinetic: rigidity, tremor, bradykinesia</td></tr> <tr><td>Anticholinergic</td><td><b>Worsens</b></td><td>Improves</td></tr> <tr><td>Striatal state</td><td>Relative dopaminergic excess</td><td>Dopaminergic deficit</td></tr> </tbody></table> Benztropine is the right drug for the wrong syndrome here — it relieves stiffness and tremor, not chorea."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Raising haloperidol temporarily suppresses movements by blocking more receptors but worsens the underlying supersensitivity; it would fit only acute psychotic relapse.\n(B) Intramuscular diphenhydramine is the treatment for acute dystonia such as torticollis or oculogyric crisis within days of starting an antipsychotic.\n(D) More benztropine would be correct for drug-induced parkinsonism or acute dystonia; in tardive dyskinesia it worsened the movements, as seen in this patient.\n(E) Propranolol is the treatment for akathisia, an inner restlessness with an urge to move; she denies restlessness and has involuntary orofacial chorea instead."
+   },
+   {
+    "k": "함정",
+    "v": "Adding or increasing an anticholinergic because the problem is 'extrapyramidal' — tardive dyskinesia is worsened by anticholinergics and is treated with a VMAT2 inhibitor."
+   },
+   {
+    "k": "학습목표",
+    "v": "항정신병약 장기 복용 뒤 생긴 입·혀의 무도무정위 운동을 지연이상운동증으로 판단하고, 항콜린제가 악화시킴을 알아 VMAT2 억제제를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bhidayasiri R, et al. Updating the recommendations for treatment of tardive syndromes: a systematic review of new evidence and practice guideline. Neurology 2018;91:316-326 · Keepers GA, et al. The American Psychiatric Association Practice Guideline for the Treatment of Patients With Schizophrenia. Am J Psychiatry 2020;177:868-872"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "12년 할로페리돌 뒤 생긴 입·혀의 무도성 운동이 항콜린제로 악화되었으므로 지연이상운동증이고 VMAT2 억제제를 쓴다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "벤즈트로핀을 더한 뒤 운동이 오히려 늘었고 경직·떨림·운동 완서가 없다 — 파킨슨증이 아니다",
+   "steps": 3,
+   "chain": [
+    "12년 D2 차단 + 입술·턱·혀의 반복 운동 → 지연이상운동증",
+    "벤즈트로핀 뒤 악화 + 경직·떨림 없음 → 파킨슨증·근육긴장이상이 아님",
+    "기능을 해치는 지연이상운동증 → VMAT2 억제제"
+   ],
+   "key": [
+    {
+     "item": "haloperidol 10 mg daily for 12 years",
+     "why": "장기 D2 차단 — 지연이상운동증의 조건",
+     "also": []
+    },
+    {
+     "item": "repetitive lip smacking, puckering, and lateral jaw movements",
+     "why": "전형적 입·볼·혀 무도 운동",
+     "also": []
+    },
+    {
+     "item": "benztropine was added for the movements, and since then they have become more frequent",
+     "why": "항콜린제로 악화 — 파킨슨증과 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no rigidity, tremor, or bradykinesia",
+     "why": "약물 유발 파킨슨증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She does not report restlessness",
+     "why": "좌불안석증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum TSH, calcium, and copper concentrations are normal",
+     "why": "갑상샘·부갑상샘·윌슨병에 의한 무도증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She is embarrassed to eat in public",
+     "why": "기능 장애 — 약물 치료를 시작할 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "psychotic symptoms have been stable",
+     "why": "항정신병약 조정의 여지 — 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "12년 할로페리돌 복용 뒤 입·턱·혀의 반복 운동이 생겼고 벤즈트로핀 뒤 악화되었다. 지연이상운동증이며, 기능을 해치므로 VMAT2 억제제(발베나진)를 쓴다.",
+   "switch": {
+    "choice": "D",
+    "condition": "할로페리돌을 늘린 지 2주 만에 경직·떨림·운동 완서가 생겼다면 약물 유발 파킨슨증으로 벤즈트로핀이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0428",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "예방의학·역학·보건통계 — 항응고 시험의 NNT·NNH 와 이득-위해 비",
+  "type": "예방의학·역학·보건통계 — 항응고 시험의 NNT·NNH 와 이득-위해 비",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-24",
+  "vignette": "보건소에 근무하는 38세 남자 의사가 심방세동 노인에게 새 항응고제를 권할지 판단하려고 한 무작위 대조 시험을 읽었다. 65세 이상 심방세동 환자 8,000명을 새 항응고제군과 위약군에 4,000명씩 배정해 5년 동안 추적했다. 5년 동안 허혈뇌졸중은 위약군 320명(8 %), 항응고제군 240명(6 %)에서 생겼다. 같은 기간 주요 출혈은 위약군 40명(1 %), 항응고제군 80명(2 %)에서 생겼다. 두 군의 사망률과 추적 탈락률은 비슷했다.",
+  "question": "이 결과를 그대로 적용할 때, 이 약으로 허혈뇌졸중 1건을 예방할 때마다 추가로 생기는 주요 출혈은 몇 건인가?",
+  "options": [
+   "2건",
+   "1건",
+   "0.25건",
+   "4건",
+   "0.5건"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 허혈뇌졸중의 절대위험감소는 8 % − 6 % = 2 % 이므로 NNT = 1/0.02 = 50명이다. 주요 출혈의 절대위험증가는 2 % − 1 % = 1 % 이므로 NNH = 1/0.01 = 100명이다. 50명을 치료하면 뇌졸중 1건을 막고 출혈은 0.5건 늘어난다(= ARI/ARR = 1 %/2 % = NNT/NNH).\n- 원리: <b>왜 상대 지표가 아니라 절대 지표인가</b>: 상대위험감소(뇌졸중 25 %)와 상대위험증가(출혈 100 %)를 나란히 놓으면 '출혈이 두 배'라는 숫자가 압도해 보이지만, 환자에게 일어나는 사건 수는 기저 위험에 달려 있다. 절대위험감소(ARR)와 절대위험증가(ARI)는 100명 중 실제로 몇 명이 달라지는지를 보여 주므로 이득과 위해를 같은 단위로 비교할 수 있다.<br> <b>NNT 와 NNH</b>: NNT = 1/ARR 은 한 명의 사건을 막기 위해 치료해야 하는 수, NNH = 1/ARI 는 한 명의 위해가 생기기까지 치료하는 수다. 두 값 모두 <b>추적 기간(여기서는 5년)</b>을 함께 말해야 뜻이 있다.<br> <b>이득-위해 비</b>: 예방한 사건 1건당 위해 사건 수 = ARI/ARR = NNT/NNH. 이 값이 1보다 작고, 막은 사건(장애를 남기는 뇌졸중)이 생긴 사건(대부분 회복하는 출혈)보다 무겁다면 치료 쪽으로 기운다 — 최종 판단은 사건의 무게와 환자의 가치까지 넣어야 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">계산</th><th style=\"width:39%\">절대 지표로 비교(정답 0.5건)</th><th>순서를 뒤집은 계산(가장 가까운 오답 2건)</th></tr></thead><tbody> <tr><td>뇌졸중</td><td>ARR 2 % → NNT 50</td><td>같음</td></tr> <tr><td>출혈</td><td>ARI 1 % → NNH 100</td><td>같음</td></tr> <tr><td>나눗셈</td><td><b>출혈 증가 ÷ 뇌졸중 감소 = 1/2</b></td><td>뇌졸중 감소 ÷ 출혈 증가 = 2(출혈 1건당 막은 뇌졸중)</td></tr> </tbody></table> '무엇 1건당 무엇이냐'를 먼저 적고 분모에 '1건당'의 사건을 놓는다. 상대위험(25 %, 100 %)을 섞으면 0.25·4 같은 답이 나온다.\n- 오답 이유:\n  - ① 2건은 분자와 분모를 뒤집어 '출혈 1건이 생길 때 예방하는 뇌졸중 수'를 구한 값으로, 그 물음이었다면 정답이다.\n  - ② 1건은 출혈과 뇌졸중의 절대위험 차이가 같을 때(예: 출혈이 1 %에서 3 %로 늘 때) 정답이 되는 값이다.\n  - ③ 0.25건은 뇌졸중 상대위험감소(25 %)를 숫자로 잘못 옮긴 값으로, 상대 지표를 사건 수로 착각할 때 나온다.\n  - ④ 4건은 1/상대위험감소(1/0.25)로, 상대위험감소를 절대위험감소처럼 써서 NNT 를 구했을 때 나오는 숫자다.\n- 함정: 출혈이 '두 배'라는 상대 수치에 끌리거나 나눗셈 순서를 뒤집는 것 — 절대 차이(2 % 대 1 %)로 '뇌졸중 1건당 출혈'을 구하면 0.5건이다.\n- 학습목표: 무작위 시험의 사건 비율에서 절대위험감소·NNT 와 절대위험증가·NNH 를 구하고, 예방한 사건 1건당 생기는 위해 사건 수를 계산한다\n- 근거·출처: Straus SE, et al. Evidence-Based Medicine: How to Practice and Teach EBM, 5th ed. Ch. Therapy — NNT and NNH · Laupacis A, et al. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med 1988;318:1728-1733",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "허혈뇌졸중의 절대위험감소는 8 % − 6 % = 2 % 이므로 NNT = 1/0.02 = 50명이다. 주요 출혈의 절대위험증가는 2 % − 1 % = 1 % 이므로 NNH = 1/0.01 = 100명이다. 50명을 치료하면 뇌졸중 1건을 막고 출혈은 0.5건 늘어난다(= ARI/ARR = 1 %/2 % = NNT/NNH)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 상대 지표가 아니라 절대 지표인가</b>: 상대위험감소(뇌졸중 25 %)와 상대위험증가(출혈 100 %)를 나란히 놓으면 '출혈이 두 배'라는 숫자가 압도해 보이지만, 환자에게 일어나는 사건 수는 기저 위험에 달려 있다. 절대위험감소(ARR)와 절대위험증가(ARI)는 100명 중 실제로 몇 명이 달라지는지를 보여 주므로 이득과 위해를 같은 단위로 비교할 수 있다.<br> <b>NNT 와 NNH</b>: NNT = 1/ARR 은 한 명의 사건을 막기 위해 치료해야 하는 수, NNH = 1/ARI 는 한 명의 위해가 생기기까지 치료하는 수다. 두 값 모두 <b>추적 기간(여기서는 5년)</b>을 함께 말해야 뜻이 있다.<br> <b>이득-위해 비</b>: 예방한 사건 1건당 위해 사건 수 = ARI/ARR = NNT/NNH. 이 값이 1보다 작고, 막은 사건(장애를 남기는 뇌졸중)이 생긴 사건(대부분 회복하는 출혈)보다 무겁다면 치료 쪽으로 기운다 — 최종 판단은 사건의 무게와 환자의 가치까지 넣어야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">계산</th><th style=\"width:39%\">절대 지표로 비교(정답 0.5건)</th><th>순서를 뒤집은 계산(가장 가까운 오답 2건)</th></tr></thead><tbody> <tr><td>뇌졸중</td><td>ARR 2 % → NNT 50</td><td>같음</td></tr> <tr><td>출혈</td><td>ARI 1 % → NNH 100</td><td>같음</td></tr> <tr><td>나눗셈</td><td><b>출혈 증가 ÷ 뇌졸중 감소 = 1/2</b></td><td>뇌졸중 감소 ÷ 출혈 증가 = 2(출혈 1건당 막은 뇌졸중)</td></tr> </tbody></table> '무엇 1건당 무엇이냐'를 먼저 적고 분모에 '1건당'의 사건을 놓는다. 상대위험(25 %, 100 %)을 섞으면 0.25·4 같은 답이 나온다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 2건은 분자와 분모를 뒤집어 '출혈 1건이 생길 때 예방하는 뇌졸중 수'를 구한 값으로, 그 물음이었다면 정답이다.\n② 1건은 출혈과 뇌졸중의 절대위험 차이가 같을 때(예: 출혈이 1 %에서 3 %로 늘 때) 정답이 되는 값이다.\n③ 0.25건은 뇌졸중 상대위험감소(25 %)를 숫자로 잘못 옮긴 값으로, 상대 지표를 사건 수로 착각할 때 나온다.\n④ 4건은 1/상대위험감소(1/0.25)로, 상대위험감소를 절대위험감소처럼 써서 NNT 를 구했을 때 나오는 숫자다."
+   },
+   {
+    "k": "함정",
+    "v": "출혈이 '두 배'라는 상대 수치에 끌리거나 나눗셈 순서를 뒤집는 것 — 절대 차이(2 % 대 1 %)로 '뇌졸중 1건당 출혈'을 구하면 0.5건이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무작위 시험의 사건 비율에서 절대위험감소·NNT 와 절대위험증가·NNH 를 구하고, 예방한 사건 1건당 생기는 위해 사건 수를 계산한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Straus SE, et al. Evidence-Based Medicine: How to Practice and Teach EBM, 5th ed. Ch. Therapy — NNT and NNH · Laupacis A, et al. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med 1988;318:1728-1733"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "뇌졸중 절대위험감소 2 %, 출혈 절대위험증가 1 % 이므로 뇌졸중 1건 예방당 출혈은 1/2 = 0.5건 늘어난다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "'뇌졸중 1건을 예방할 때마다'의 출혈 수 — 출혈 증가를 뇌졸중 감소로 나눈다",
+   "steps": 3,
+   "chain": [
+    "뇌졸중 8 % → 6 % → ARR 2 %, NNT 50",
+    "출혈 1 % → 2 % → ARI 1 %, NNH 100",
+    "뇌졸중 1건 예방당 출혈 = ARI/ARR = 0.5건"
+   ],
+   "key": [
+    {
+     "item": "위약군 320명(8 %), 항응고제군 240명(6 %)",
+     "why": "절대위험감소 2 %",
+     "also": []
+    },
+    {
+     "item": "위약군 40명(1 %), 항응고제군 80명(2 %)",
+     "why": "절대위험증가 1 %",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "두 군의 사망률과 추적 탈락률은 비슷했다",
+     "why": "탈락에 따른 비뚤림 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "5년 동안 추적했다",
+     "why": "NNT·NNH 의 기간 — 비율 계산을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "4,000명씩 배정해",
+     "why": "표본 크기 — 비율이 이미 주어져 계산에 필요 없다",
+     "also": []
+    }
+   ],
+   "summary": "뇌졸중 절대위험감소 2 %(NNT 50), 출혈 절대위험증가 1 %(NNH 100)다. 뇌졸중 1건을 막을 때마다 출혈은 0.5건 늘어난다.",
+   "switch": {
+    "choice": "A",
+    "condition": "물음이 '주요 출혈 1건이 생길 때마다 예방하는 뇌졸중 수'였다면 ARR/ARI = 2건이 정답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0427",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "내분비·대사 — 레보티록신 복용 중 임신을 확인한 하시모토 갑상샘염",
+  "type": "내분비·대사 — 레보티록신 복용 중 임신을 확인한 하시모토 갑상샘염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-24",
+  "vignette": "A 31-year-old woman with Hashimoto thyroiditis comes to the physician because a home pregnancy test was positive this morning. Her last menstrual period was 6 weeks ago. She has taken levothyroxine 100 µg daily for 4 years, and her serum TSH concentration 2 months ago was 1.6 µU/mL. She takes a prenatal vitamin with iron, separated from levothyroxine by 4 hours. She feels well. Her pulse is 76/min and blood pressure is 112/70 mm Hg. The thyroid gland is slightly enlarged and firm without nodules. Serum β-hCG is 14,800 mIU/mL, and transvaginal ultrasonography shows a single intrauterine gestational sac with a yolk sac.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Decrease levothyroxine by about 25% to avoid fetal hyperthyroidism",
+   "Increase levothyroxine by about 30% now (two extra doses per week)",
+   "Continue the current dose and measure TSH in 4 weeks",
+   "Switch levothyroxine to liothyronine",
+   "Continue the current dose and measure TSH after delivery"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Thyroxine requirements rise by 25–50% from the first weeks of pregnancy, while the fetus depends entirely on maternal thyroxine until about 12 weeks. A woman with treated hypothyroidism should therefore increase her levothyroxine dose by about 25–30% as soon as pregnancy is confirmed — conveniently by taking two extra daily doses per week — and then check TSH every 4 weeks in the first half of pregnancy.\n- 원리: <b>Why the requirement rises</b>: estrogen increases hepatic production and sialylation of thyroxine-binding globulin, so more T4 is bound and free T4 falls unless production rises; the volume of distribution expands; placental type 3 deiodinase degrades T4; and transplacental transfer supplies the fetus. A normal gland meets this by increasing output (helped by hCG's TSH-like action) — a gland destroyed by Hashimoto thyroiditis cannot.<br> <b>Why act before checking TSH</b>: the fetal thyroid does not produce meaningful hormone until 10–12 weeks, and fetal brain development in the first trimester depends on maternal T4. Maternal hypothyroidism early in pregnancy is linked to miscarriage and poorer neurodevelopment, so waiting 4 weeks for a TSH result leaves the most vulnerable window uncovered.<br> <b>How much and how to follow</b>: an increase of about 25–30% (two extra tablets a week) is standard; TSH is checked every 4 weeks until midgestation, aiming for the lower half of the trimester-specific range, and the dose returns to the prepregnancy level after delivery. Iron and calcium are separated from levothyroxine by 4 hours because they reduce absorption.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Increase dose now (answer)</th><th>Same dose, TSH in 4 weeks (closest distractor)</th></tr></thead><tbody> <tr><td>Who</td><td><b>Known hypothyroidism on levothyroxine</b></td><td>Euthyroid woman screened in early pregnancy</td></tr> <tr><td>Physiology</td><td>Gland cannot raise output</td><td>Gland can raise output</td></tr> <tr><td>First-trimester fetus</td><td>Protected from the start</td><td>Exposed to possible deficiency for weeks</td></tr> </tbody></table> Monitoring TSH every 4 weeks is still needed — it follows the increase rather than replacing it.\n- 오답 이유:\n  - (A) Reducing the dose would fit iatrogenic overtreatment with suppressed TSH; maternal levothyroxine at replacement doses does not cause fetal hyperthyroidism.\n  - (C) Keeping the dose and checking TSH in 4 weeks fits a woman with subclinical thyroid autoimmunity who is not on treatment; for treated hypothyroidism it delays the needed increase.\n  - (D) Liothyronine crosses the placenta poorly and gives fluctuating T3 levels; levothyroxine is preferred in pregnancy, and switching would be right only in unusual malabsorption.\n  - (E) Waiting until after delivery would be correct for a woman who is not pregnant; in pregnancy TSH must be followed every 4 weeks through midgestation.\n- 함정: Waiting for a TSH result because the last value was normal — the requirement rises from the first weeks, so the dose is increased at confirmation of pregnancy.\n- 학습목표: 레보티록신으로 치료 중인 갑상샘저하증 여성이 임신을 확인하면 TSH 결과를 기다리지 않고 용량을 약 25~30 % 늘린다\n- 근거·출처: Alexander EK, et al. 2017 Guidelines of the American Thyroid Association for the diagnosis and management of thyroid disease during pregnancy and the postpartum. Thyroid 2017;27:315-389 · Alexander EK, et al. Timing and magnitude of increases in levothyroxine requirements during pregnancy in women with hypothyroidism. N Engl J Med 2004;351:241-249",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Thyroxine requirements rise by 25–50% from the first weeks of pregnancy, while the fetus depends entirely on maternal thyroxine until about 12 weeks. A woman with treated hypothyroidism should therefore increase her levothyroxine dose by about 25–30% as soon as pregnancy is confirmed — conveniently by taking two extra daily doses per week — and then check TSH every 4 weeks in the first half of pregnancy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the requirement rises</b>: estrogen increases hepatic production and sialylation of thyroxine-binding globulin, so more T4 is bound and free T4 falls unless production rises; the volume of distribution expands; placental type 3 deiodinase degrades T4; and transplacental transfer supplies the fetus. A normal gland meets this by increasing output (helped by hCG's TSH-like action) — a gland destroyed by Hashimoto thyroiditis cannot.<br> <b>Why act before checking TSH</b>: the fetal thyroid does not produce meaningful hormone until 10–12 weeks, and fetal brain development in the first trimester depends on maternal T4. Maternal hypothyroidism early in pregnancy is linked to miscarriage and poorer neurodevelopment, so waiting 4 weeks for a TSH result leaves the most vulnerable window uncovered.<br> <b>How much and how to follow</b>: an increase of about 25–30% (two extra tablets a week) is standard; TSH is checked every 4 weeks until midgestation, aiming for the lower half of the trimester-specific range, and the dose returns to the prepregnancy level after delivery. Iron and calcium are separated from levothyroxine by 4 hours because they reduce absorption."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Increase dose now (answer)</th><th>Same dose, TSH in 4 weeks (closest distractor)</th></tr></thead><tbody> <tr><td>Who</td><td><b>Known hypothyroidism on levothyroxine</b></td><td>Euthyroid woman screened in early pregnancy</td></tr> <tr><td>Physiology</td><td>Gland cannot raise output</td><td>Gland can raise output</td></tr> <tr><td>First-trimester fetus</td><td>Protected from the start</td><td>Exposed to possible deficiency for weeks</td></tr> </tbody></table> Monitoring TSH every 4 weeks is still needed — it follows the increase rather than replacing it."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Reducing the dose would fit iatrogenic overtreatment with suppressed TSH; maternal levothyroxine at replacement doses does not cause fetal hyperthyroidism.\n(C) Keeping the dose and checking TSH in 4 weeks fits a woman with subclinical thyroid autoimmunity who is not on treatment; for treated hypothyroidism it delays the needed increase.\n(D) Liothyronine crosses the placenta poorly and gives fluctuating T3 levels; levothyroxine is preferred in pregnancy, and switching would be right only in unusual malabsorption.\n(E) Waiting until after delivery would be correct for a woman who is not pregnant; in pregnancy TSH must be followed every 4 weeks through midgestation."
+   },
+   {
+    "k": "함정",
+    "v": "Waiting for a TSH result because the last value was normal — the requirement rises from the first weeks, so the dose is increased at confirmation of pregnancy."
+   },
+   {
+    "k": "학습목표",
+    "v": "레보티록신으로 치료 중인 갑상샘저하증 여성이 임신을 확인하면 TSH 결과를 기다리지 않고 용량을 약 25~30 % 늘린다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Alexander EK, et al. 2017 Guidelines of the American Thyroid Association for the diagnosis and management of thyroid disease during pregnancy and the postpartum. Thyroid 2017;27:315-389 · Alexander EK, et al. Timing and magnitude of increases in levothyroxine requirements during pregnancy in women with hypothyroidism. N Engl J Med 2004;351:241-249"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "레보티록신으로 치료 중인 하시모토 갑상샘저하증 여성이 임신을 확인했으므로 TSH 를 기다리지 않고 용량을 약 30 % 늘린다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "이미 갑상샘이 망가져 치료 중인 환자다 — 임신 초기 요구량 증가를 스스로 감당하지 못한다",
+   "steps": 2,
+   "chain": [
+    "하시모토 + 레보티록신 100 µg + 자궁 내 임신 확인 → 임신 초기 갑상샘호르몬 요구량 증가",
+    "태아는 12주까지 모체 T4 에 의존 → 지금 약 30 % 증량 후 4주마다 TSH"
+   ],
+   "key": [
+    {
+     "item": "levothyroxine 100 µg daily for 4 years",
+     "why": "치료 중인 갑상샘저하증",
+     "also": []
+    },
+    {
+     "item": "single intrauterine gestational sac with a yolk sac",
+     "why": "임신 확인 — 증량 시점",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "separated from levothyroxine by 4 hours",
+     "why": "철분에 의한 흡수 저하 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "TSH concentration 2 months ago was 1.6 µU/mL",
+     "why": "임신 전 정상 — 증량 필요를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "The thyroid gland is slightly enlarged and firm",
+     "why": "하시모토의 흔한 소견",
+     "also": []
+    }
+   ],
+   "summary": "레보티록신 치료 중인 하시모토 갑상샘저하증 여성이 임신 6주로 확인되었다. 임신 초기 요구량이 늘고 태아가 모체 T4 에 의존하므로 지금 약 30 % 증량하고 4주마다 TSH 를 본다.",
+   "switch": {
+    "choice": "C",
+    "condition": "치료받지 않는 TPO 항체 양성 여성이 TSH 정상으로 임신했다면 용량 조절 대상이 아니라 4주마다 TSH 를 보며 지켜본다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0425",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "신장·비뇨 — 반복 구토 뒤 대사성 알칼리증과 저칼륨혈증",
+  "type": "신장·비뇨 — 반복 구토 뒤 대사성 알칼리증과 저칼륨혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-24",
+  "vignette": "24세 여자가 일주일 전부터 기운이 없고 다리가 저려 외래에 왔다. 1년 전부터 폭식한 뒤 스스로 토하는 일이 하루 2~3번 있었다고 한다. 이뇨제나 완하제는 쓰지 않는다. 혈압 98/60 mmHg(누우면 108/66 mmHg), 맥박 104회/분이다. 침샘이 커져 있고 손등에 굳은살이 있다. 혈청 나트륨 136 mEq/L, 칼륨 2.8 mEq/L, 염소 88 mEq/L, 중탄산 36 mEq/L, 크레아티닌 1.0 mg/dL 이다. 동맥혈 pH 7.52, PaCO₂ 46 mmHg 이다. 소변 나트륨 28 mEq/L, 소변 칼륨 32 mEq/L, 소변 염소 8 mEq/L 이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "중탄산나트륨 정맥 투여",
+   "푸로세미드 정맥 투여",
+   "생리식염수와 염화칼륨 정맥 투여",
+   "아세타졸아마이드 경구 투여",
+   "스피로놀락톤 경구 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 반복 구토로 위산(HCl)을 잃어 생긴 대사성 알칼리증과 저칼륨혈증이다. 소변 염소가 8 mEq/L 로 낮아 체액·염소 결핍이 알칼리증을 유지하는 '식염수 반응성'이므로, 생리식염수로 체액과 염소를 채우고 염화칼륨으로 칼륨을 보충하면 신장이 남는 중탄산을 내보낸다.\n- 원리: <b>시작과 유지는 다르다</b>: 구토는 위산을 잃게 해 중탄산을 남기며 알칼리증을 <b>시작</b>한다. 정상 신장이라면 남는 중탄산을 곧 내보내야 하는데, 체액 감소(레닌-알도스테론 활성화)·<b>염소 결핍</b>·저칼륨혈증이 있으면 신장이 오히려 중탄산을 붙잡아 알칼리증을 <b>유지</b>한다. 집합관의 펜드린(Cl⁻/HCO₃⁻ 교환체)은 내강에 염소가 있어야 중탄산을 분비할 수 있기 때문이다.<br> <b>왜 소변 나트륨이 아니라 염소를 보나</b>: 구토 초기에는 여과된 중탄산이 넘쳐 음이온으로 나트륨·칼륨을 끌고 나가므로 체액이 부족해도 소변 나트륨이 높을 수 있다. 소변 염소는 이런 영향이 없어 체액·염소 상태를 더 정확히 보여 준다 — 25 mEq/L 미만이면 식염수 반응성이다.<br> <b>왜 칼륨이 빠지나</b>: 체액 감소로 늘어난 알도스테론과 집합관에 도달한 나트륨·중탄산이 칼륨 분비를 늘린다(소변 칼륨 32 mEq/L).\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">식염수 반응성 — 생리식염수+KCl(정답)</th><th>체액 과다 알칼리증 — 아세타졸아마이드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>소변 염소</td><td><b>&lt; 25 mEq/L</b></td><td>다양(이뇨제 사용 중이면 높음)</td></tr> <tr><td>체액 상태</td><td><b>부족 — 기립 저혈압·빈맥</b></td><td>과다 — 부종·심부전</td></tr> <tr><td>원인</td><td>구토·위 흡인</td><td>이뇨제를 쓰는 심부전·간경변</td></tr> <tr><td>치료 기전</td><td>염소·체액 보충 → 신장이 중탄산 배설</td><td>근위 세관 중탄산 재흡수 억제</td></tr> </tbody></table> 같은 대사성 알칼리증이라도 '체액이 부족한가'가 치료를 가른다.\n- 오답 이유:\n  - ① 중탄산나트륨은 대사성 산증에서 쓰는 약으로, 이미 중탄산이 높은 알칼리증에 주면 알칼리혈증을 더 악화시킨다.\n  - ② 푸로세미드는 체액 과다를 줄일 때 쓰며, 염소와 칼륨을 더 잃게 해 이 환자의 알칼리증과 저칼륨혈증을 악화시킨다.\n  - ④ 아세타졸아마이드는 체액 과다로 식염수를 줄 수 없는 심부전 환자의 이뇨제 유발 대사성 알칼리증일 때 정답이 된다.\n  - ⑤ 스피로놀락톤은 고혈압과 소변 염소가 높은(> 40 mEq/L) 일차 알도스테론증처럼 식염수 저항성 알칼리증일 때 정답이다.\n- 함정: 소변 나트륨 28 mEq/L 을 보고 체액이 충분하다고 판단하는 것 — 구토 초기에는 중탄산뇨가 나트륨을 끌고 나가므로 소변 염소(8)를 봐야 한다.\n- 학습목표: 반복 구토 뒤 대사성 알칼리증·저칼륨혈증에서 소변 염소가 낮으면 식염수 반응성으로 판단하고 생리식염수와 염화칼륨을 준다\n- 근거·출처: Luke RG, Galla JH. It is chloride depletion alkalosis, not contraction alkalosis. J Am Soc Nephrol 2012;23:204-207 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Acidosis and Alkalosis — metabolic alkalosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "반복 구토로 위산(HCl)을 잃어 생긴 대사성 알칼리증과 저칼륨혈증이다. 소변 염소가 8 mEq/L 로 낮아 체액·염소 결핍이 알칼리증을 유지하는 '식염수 반응성'이므로, 생리식염수로 체액과 염소를 채우고 염화칼륨으로 칼륨을 보충하면 신장이 남는 중탄산을 내보낸다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>시작과 유지는 다르다</b>: 구토는 위산을 잃게 해 중탄산을 남기며 알칼리증을 <b>시작</b>한다. 정상 신장이라면 남는 중탄산을 곧 내보내야 하는데, 체액 감소(레닌-알도스테론 활성화)·<b>염소 결핍</b>·저칼륨혈증이 있으면 신장이 오히려 중탄산을 붙잡아 알칼리증을 <b>유지</b>한다. 집합관의 펜드린(Cl⁻/HCO₃⁻ 교환체)은 내강에 염소가 있어야 중탄산을 분비할 수 있기 때문이다.<br> <b>왜 소변 나트륨이 아니라 염소를 보나</b>: 구토 초기에는 여과된 중탄산이 넘쳐 음이온으로 나트륨·칼륨을 끌고 나가므로 체액이 부족해도 소변 나트륨이 높을 수 있다. 소변 염소는 이런 영향이 없어 체액·염소 상태를 더 정확히 보여 준다 — 25 mEq/L 미만이면 식염수 반응성이다.<br> <b>왜 칼륨이 빠지나</b>: 체액 감소로 늘어난 알도스테론과 집합관에 도달한 나트륨·중탄산이 칼륨 분비를 늘린다(소변 칼륨 32 mEq/L)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">식염수 반응성 — 생리식염수+KCl(정답)</th><th>체액 과다 알칼리증 — 아세타졸아마이드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>소변 염소</td><td><b>&lt; 25 mEq/L</b></td><td>다양(이뇨제 사용 중이면 높음)</td></tr> <tr><td>체액 상태</td><td><b>부족 — 기립 저혈압·빈맥</b></td><td>과다 — 부종·심부전</td></tr> <tr><td>원인</td><td>구토·위 흡인</td><td>이뇨제를 쓰는 심부전·간경변</td></tr> <tr><td>치료 기전</td><td>염소·체액 보충 → 신장이 중탄산 배설</td><td>근위 세관 중탄산 재흡수 억제</td></tr> </tbody></table> 같은 대사성 알칼리증이라도 '체액이 부족한가'가 치료를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 중탄산나트륨은 대사성 산증에서 쓰는 약으로, 이미 중탄산이 높은 알칼리증에 주면 알칼리혈증을 더 악화시킨다.\n② 푸로세미드는 체액 과다를 줄일 때 쓰며, 염소와 칼륨을 더 잃게 해 이 환자의 알칼리증과 저칼륨혈증을 악화시킨다.\n④ 아세타졸아마이드는 체액 과다로 식염수를 줄 수 없는 심부전 환자의 이뇨제 유발 대사성 알칼리증일 때 정답이 된다.\n⑤ 스피로놀락톤은 고혈압과 소변 염소가 높은(> 40 mEq/L) 일차 알도스테론증처럼 식염수 저항성 알칼리증일 때 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "소변 나트륨 28 mEq/L 을 보고 체액이 충분하다고 판단하는 것 — 구토 초기에는 중탄산뇨가 나트륨을 끌고 나가므로 소변 염소(8)를 봐야 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "반복 구토 뒤 대사성 알칼리증·저칼륨혈증에서 소변 염소가 낮으면 식염수 반응성으로 판단하고 생리식염수와 염화칼륨을 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Luke RG, Galla JH. It is chloride depletion alkalosis, not contraction alkalosis. J Am Soc Nephrol 2012;23:204-207 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Acidosis and Alkalosis — metabolic alkalosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "반복 구토로 생긴 대사성 알칼리증에서 소변 염소가 낮아 식염수 반응성이므로 생리식염수와 염화칼륨을 준다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "기립성 혈압 저하·빈맥으로 체액이 부족하고 소변 염소가 8 mEq/L 이다 — 체액 과다 알칼리증이 아니다",
+   "steps": 3,
+   "chain": [
+    "pH 7.52 + 중탄산 36 + PaCO₂ 46 → 대사성 알칼리증(적절한 호흡 보상)",
+    "스스로 토함 + 침샘 비대·손등 굳은살 → 위산 손실",
+    "소변 염소 8 + 기립 저혈압 → 식염수 반응성 → 생리식염수 + 염화칼륨"
+   ],
+   "key": [
+    {
+     "item": "소변 염소 8 mEq/L",
+     "why": "식염수 반응성의 기준",
+     "also": []
+    },
+    {
+     "item": "중탄산 36 mEq/L",
+     "why": "대사성 알칼리증",
+     "also": []
+    },
+    {
+     "item": "스스로 토하는 일이 하루 2~3번",
+     "why": "위산 손실 — 알칼리증의 시작",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "이뇨제나 완하제는 쓰지 않는다",
+     "why": "이뇨제 유발 알칼리증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "칼륨 2.8 mEq/L",
+     "why": "칼륨을 함께 보충해야 한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "소변 나트륨 28 mEq/L",
+     "why": "중탄산뇨로 높게 나올 수 있어 체액 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "PaCO₂ 46 mmHg",
+     "why": "보상으로 예상되는 범위 — 별도 호흡 장애 근거가 아니다",
+     "also": []
+    }
+   ],
+   "summary": "반복 구토로 위산을 잃어 대사성 알칼리증과 저칼륨혈증이 생겼고, 소변 염소가 8 mEq/L 로 낮은 식염수 반응성이다. 생리식염수와 염화칼륨으로 체액·염소·칼륨을 채운다.",
+   "switch": {
+    "choice": "D",
+    "condition": "심부전으로 부종이 심해 식염수를 줄 수 없는 환자의 이뇨제 유발 알칼리증이라면 아세타졸아마이드가 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0423",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "감염 — 혈액투석 도관 환자의 메티실린 감수성 황색포도알균 균혈증",
+  "type": "감염 — 혈액투석 도관 환자의 메티실린 감수성 황색포도알균 균혈증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-24",
+  "vignette": "A 64-year-old man with end-stage kidney disease who receives hemodialysis through a tunneled right internal jugular catheter comes to the emergency department because of fever and shaking chills that began during dialysis yesterday. He has no allergies. His temperature is 39.1°C (102.4°F), pulse is 108/min, and blood pressure is 112/68 mm Hg. There is erythema and tenderness at the catheter exit site. Cardiac examination shows no murmurs. Blood cultures are drawn, and intravenous vancomycin is started. Two days later, both sets of blood cultures grow Staphylococcus aureus susceptible to oxacillin, cefazolin, and vancomycin (vancomycin MIC 1 µg/mL). The catheter has been removed, and repeat blood cultures have been sent.",
+  "question": "Which of the following is the most appropriate change in antibiotic therapy?",
+  "options": [
+   "Add gentamicin to vancomycin",
+   "Switch vancomycin to daptomycin",
+   "Switch vancomycin to oral linezolid",
+   "Switch vancomycin to cefazolin",
+   "Continue vancomycin at the current dose"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The bloodstream isolate is methicillin-susceptible S. aureus. For MSSA bacteremia, a β-lactam — cefazolin or an antistaphylococcal penicillin such as nafcillin — kills faster and is associated with lower mortality and relapse than vancomycin, so vancomycin should be switched to cefazolin. Cefazolin is also convenient for hemodialysis patients because it can be given after each session.\n- 원리: <b>Why β-lactams beat vancomycin for MSSA</b>: β-lactams bind penicillin-binding proteins and are rapidly bactericidal against susceptible S. aureus. Vancomycin is a large glycopeptide that binds the D-Ala-D-Ala terminus; it penetrates tissue poorly and kills slowly, and observational studies and meta-analyses show higher failure, relapse, and death when MSSA bacteremia is treated with vancomycin alone.<br> <b>Why vancomycin is started first</b>: until susceptibility is known, MRSA must be covered, so vancomycin is the right empirical drug — the error is not switching once the isolate is reported susceptible.<br> <b>The rest of S. aureus bacteremia care</b>: remove the infected device, repeat blood cultures until negative, obtain echocardiography (TEE for most patients with risk factors such as a hemodialysis catheter), and treat for at least 14 days from the first negative culture if uncomplicated, or 4–6 weeks if complicated (endocarditis, persistent bacteremia, metastatic infection).<br> <b>Why gentamicin is no longer added</b>: synergy did not improve outcomes and caused kidney injury.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Cefazolin (answer)</th><th>Continue vancomycin (closest distractor)</th></tr></thead><tbody> <tr><td>Isolate</td><td><b>Oxacillin-susceptible (MSSA)</b></td><td>Methicillin-resistant (MRSA)</td></tr> <tr><td>Killing</td><td>Rapid</td><td>Slow</td></tr> <tr><td>Outcomes in MSSA</td><td>Lower mortality and relapse</td><td>Higher failure</td></tr> <tr><td>Allergy</td><td>No serious β-lactam allergy</td><td>Severe β-lactam allergy</td></tr> </tbody></table> Empirical vancomycin is right on day 0; on the day susceptibility returns as MSSA, switch to a β-lactam.\n- 오답 이유:\n  - (A) Adding gentamicin was once used for synergy but increases nephrotoxicity without improving survival; it is not recommended for bacteremia.\n  - (B) Daptomycin is an alternative for MRSA bacteremia or vancomycin failure with a high MIC; it is not preferred over a β-lactam for MSSA.\n  - (C) Oral linezolid is bacteriostatic against S. aureus and is not standard initial therapy for bacteremia; it may fit MRSA pneumonia or skin infection.\n  - (E) Continuing vancomycin is correct if the isolate is MRSA or if the patient has a severe β-lactam allergy that precludes cefazolin.\n- 함정: Continuing the empirical vancomycin because it 'covers' the isolate — for MSSA, a β-lactam is more effective, so de-escalate.\n- 학습목표: 메티실린 감수성 황색포도알균 균혈증에서 경험적 반코마이신을 세파졸린(또는 항포도알균 페니실린)으로 바꾸고 감염원 도관을 제거한다\n- 근거·출처: Liu C, et al. Clinical practice guidelines by the Infectious Diseases Society of America for the treatment of MRSA infections. Clin Infect Dis 2011;52:e18-e55 · Holland TL, et al. Clinical management of Staphylococcus aureus bacteremia: a review. JAMA 2014;312:1330-1341",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The bloodstream isolate is methicillin-susceptible S. aureus. For MSSA bacteremia, a β-lactam — cefazolin or an antistaphylococcal penicillin such as nafcillin — kills faster and is associated with lower mortality and relapse than vancomycin, so vancomycin should be switched to cefazolin. Cefazolin is also convenient for hemodialysis patients because it can be given after each session."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why β-lactams beat vancomycin for MSSA</b>: β-lactams bind penicillin-binding proteins and are rapidly bactericidal against susceptible S. aureus. Vancomycin is a large glycopeptide that binds the D-Ala-D-Ala terminus; it penetrates tissue poorly and kills slowly, and observational studies and meta-analyses show higher failure, relapse, and death when MSSA bacteremia is treated with vancomycin alone.<br> <b>Why vancomycin is started first</b>: until susceptibility is known, MRSA must be covered, so vancomycin is the right empirical drug — the error is not switching once the isolate is reported susceptible.<br> <b>The rest of S. aureus bacteremia care</b>: remove the infected device, repeat blood cultures until negative, obtain echocardiography (TEE for most patients with risk factors such as a hemodialysis catheter), and treat for at least 14 days from the first negative culture if uncomplicated, or 4–6 weeks if complicated (endocarditis, persistent bacteremia, metastatic infection).<br> <b>Why gentamicin is no longer added</b>: synergy did not improve outcomes and caused kidney injury."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Cefazolin (answer)</th><th>Continue vancomycin (closest distractor)</th></tr></thead><tbody> <tr><td>Isolate</td><td><b>Oxacillin-susceptible (MSSA)</b></td><td>Methicillin-resistant (MRSA)</td></tr> <tr><td>Killing</td><td>Rapid</td><td>Slow</td></tr> <tr><td>Outcomes in MSSA</td><td>Lower mortality and relapse</td><td>Higher failure</td></tr> <tr><td>Allergy</td><td>No serious β-lactam allergy</td><td>Severe β-lactam allergy</td></tr> </tbody></table> Empirical vancomycin is right on day 0; on the day susceptibility returns as MSSA, switch to a β-lactam."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Adding gentamicin was once used for synergy but increases nephrotoxicity without improving survival; it is not recommended for bacteremia.\n(B) Daptomycin is an alternative for MRSA bacteremia or vancomycin failure with a high MIC; it is not preferred over a β-lactam for MSSA.\n(C) Oral linezolid is bacteriostatic against S. aureus and is not standard initial therapy for bacteremia; it may fit MRSA pneumonia or skin infection.\n(E) Continuing vancomycin is correct if the isolate is MRSA or if the patient has a severe β-lactam allergy that precludes cefazolin."
+   },
+   {
+    "k": "함정",
+    "v": "Continuing the empirical vancomycin because it 'covers' the isolate — for MSSA, a β-lactam is more effective, so de-escalate."
+   },
+   {
+    "k": "학습목표",
+    "v": "메티실린 감수성 황색포도알균 균혈증에서 경험적 반코마이신을 세파졸린(또는 항포도알균 페니실린)으로 바꾸고 감염원 도관을 제거한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Liu C, et al. Clinical practice guidelines by the Infectious Diseases Society of America for the treatment of MRSA infections. Clin Infect Dis 2011;52:e18-e55 · Holland TL, et al. Clinical management of Staphylococcus aureus bacteremia: a review. JAMA 2014;312:1330-1341"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "감수성 결과가 메티실린 감수성 황색포도알균이므로 경험적 반코마이신을 더 효과적인 세파졸린으로 바꾼다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "옥사실린 감수성이고 베타락탐 알레르기가 없다 — 반코마이신을 이어 쓸 이유가 없다",
+   "steps": 3,
+   "chain": [
+    "투석 도관 + 출구 발적 + 혈액배양 2세트 황색포도알균 → 도관 관련 균혈증",
+    "옥사실린 감수성 → MSSA",
+    "MSSA + 알레르기 없음 → 반코마이신에서 세파졸린으로"
+   ],
+   "key": [
+    {
+     "item": "susceptible to oxacillin, cefazolin, and vancomycin",
+     "why": "MSSA — 베타락탐으로 좁힐 근거",
+     "also": []
+    },
+    {
+     "item": "both sets of blood cultures grow Staphylococcus aureus",
+     "why": "오염이 아닌 진짜 균혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Cardiac examination shows no murmurs",
+     "why": "심내막염 가능성을 낮추지만 배제하지는 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has no allergies",
+     "why": "세파졸린을 막는 이유가 없다",
+     "also": []
+    },
+    {
+     "item": "The catheter has been removed",
+     "why": "감염원 제거 — 항생제 선택과 별개로 필요",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "vancomycin MIC 1 µg/mL",
+     "why": "반코마이신 감수성 — MSSA 에서는 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "투석 도관 관련 황색포도알균 균혈증으로 균이 옥사실린 감수성(MSSA)이다. 알레르기가 없으므로 경험적 반코마이신을 더 빨리 죽이고 예후가 좋은 세파졸린으로 바꾼다.",
+   "switch": {
+    "choice": "E",
+    "condition": "분리균이 옥사실린 내성(MRSA)이거나 아나필락시스 같은 중증 베타락탐 알레르기가 있다면 반코마이신을 이어 쓴다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0420",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "응급·중환자·외상 — 농약을 마신 뒤 침 흘림·축동·서맥",
+  "type": "응급·중환자·외상 — 농약을 마신 뒤 침 흘림·축동·서맥",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-24",
+  "vignette": "58세 남자가 1시간 전 비닐하우스 창고에서 농약을 마신 채 쓰러져 있는 것을 가족이 발견해 응급실에 왔다. 혈압 96/60 mmHg, 맥박 46회/분, 호흡 26회/분, 체온 36.4℃, 산소포화도 88 % 이다. 의식은 졸려 하지만 부르면 눈을 뜬다. 동공은 양쪽 모두 1 mm 로 작고, 입에서 침이 흘러나오며 땀을 많이 흘린다. 양쪽 폐에서 거친 수포음과 천명이 들리고, 팔다리와 얼굴 근육에 근섬유다발수축이 보인다. 대변과 소변을 지렸다. 혈당은 132 mg/dL 이다. 기도 흡인을 하며 산소를 주고 있다.",
+  "question": "가장 먼저 투여할 약은?",
+  "options": [
+   "N-아세틸시스테인",
+   "아트로핀",
+   "날록손",
+   "플루마제닐",
+   "피소스티그민"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 농약 음독 뒤 축동, 침·땀·기관지 분비물 증가, 서맥, 대소변 실금(무스카린 증상)에 근섬유다발수축(니코틴 증상)이 함께 있는 유기인계 콜린성 위기다. 사망의 주원인은 기관지 분비물·기관지 수축에 의한 저산소증이므로, 분비물이 마를 때까지 아트로핀을 반복·증량 투여하는 것이 가장 먼저다(프랄리독심은 함께 준다).\n- 원리: <b>무엇이 쌓이나</b>: 유기인계는 아세틸콜린에스테라아제를 인산화해 비활성화한다. 분해되지 못한 아세틸콜린이 시냅스에 쌓여 무스카린 수용체(분비샘·민무늬근·심장)와 니코틴 수용체(신경근 접합부·자율신경절)를 모두 과도하게 자극한다.<br> <b>왜 아트로핀이 먼저인가</b>: 환자를 죽이는 것은 '<b>3B</b>' — 기관지 분비물(bronchorrhea), 기관지 수축(bronchospasm), 서맥(bradycardia)이고 모두 무스카린 작용이다. 아트로핀은 무스카린 수용체만 막으므로 분비물·서맥은 풀지만 근력 약화(니코틴)는 풀지 못한다. 목표는 동공 크기가 아니라 <b>폐 분비물이 마르는 것</b>이다.<br> <b>프랄리독심의 자리</b>: 효소가 '노화(aging)'로 영구 결합하기 전에 인산기를 떼어 내 니코틴 증상(호흡근 약화)까지 회복시키므로 아트로핀과 함께 일찍 준다. 그러나 단독으로는 분비물을 바로 줄이지 못한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">유기인 중독 — 아트로핀(정답)</th><th>아편류 중독 — 날록손(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>동공</td><td>축동</td><td>축동</td></tr> <tr><td>분비물</td><td><b>침·땀·기관지 분비물 많음</b></td><td>건조하거나 정상</td></tr> <tr><td>호흡</td><td>빠르고 수포음·천명</td><td><b>느리고 얕다</b></td></tr> <tr><td>근육</td><td>근섬유다발수축·약화</td><td>없음</td></tr> </tbody></table> 축동 + 의식 저하만 보면 아편류와 같지만, 호흡이 빠르고 젖어 있으면 콜린성 위기다.\n- 오답 이유:\n  - ① N-아세틸시스테인은 아세트아미노펜 과다 복용 뒤 간독성을 막는 해독제로, 콜린성 증상이 없는 음독에서 쓴다.\n  - ③ 날록손은 축동·의식 저하에 호흡수가 분당 12회 미만으로 느리고 분비물이 없는 아편류 중독일 때 정답이 된다.\n  - ④ 플루마제닐은 다른 약을 함께 먹지 않은 벤조디아제핀 단독 과다 복용에서 쓰며, 동공·분비물 변화가 거의 없다.\n  - ⑤ 피소스티그민은 산동·건조한 피부·고열·장음 소실이 있는 항콜린성 중독에서 정답이며, 여기에 주면 콜린성 위기를 악화시킨다.\n- 함정: 축동과 의식 저하만 보고 날록손을 고르는 것 — 빠른 호흡, 넘치는 분비물, 근섬유다발수축은 아편류가 아니라 유기인 중독이다.\n- 학습목표: 농약 음독 뒤 축동·과다 분비·서맥·근섬유다발수축이 함께 있으면 유기인 중독으로 판단하고 아트로핀을 먼저 투여한다\n- 근거·출처: Eddleston M, et al. Management of acute organophosphorus pesticide poisoning. Lancet 2008;371:597-607 · Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Insecticides: Organic Phosphorus Compounds and Carbamates",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "농약 음독 뒤 축동, 침·땀·기관지 분비물 증가, 서맥, 대소변 실금(무스카린 증상)에 근섬유다발수축(니코틴 증상)이 함께 있는 유기인계 콜린성 위기다. 사망의 주원인은 기관지 분비물·기관지 수축에 의한 저산소증이므로, 분비물이 마를 때까지 아트로핀을 반복·증량 투여하는 것이 가장 먼저다(프랄리독심은 함께 준다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 쌓이나</b>: 유기인계는 아세틸콜린에스테라아제를 인산화해 비활성화한다. 분해되지 못한 아세틸콜린이 시냅스에 쌓여 무스카린 수용체(분비샘·민무늬근·심장)와 니코틴 수용체(신경근 접합부·자율신경절)를 모두 과도하게 자극한다.<br> <b>왜 아트로핀이 먼저인가</b>: 환자를 죽이는 것은 '<b>3B</b>' — 기관지 분비물(bronchorrhea), 기관지 수축(bronchospasm), 서맥(bradycardia)이고 모두 무스카린 작용이다. 아트로핀은 무스카린 수용체만 막으므로 분비물·서맥은 풀지만 근력 약화(니코틴)는 풀지 못한다. 목표는 동공 크기가 아니라 <b>폐 분비물이 마르는 것</b>이다.<br> <b>프랄리독심의 자리</b>: 효소가 '노화(aging)'로 영구 결합하기 전에 인산기를 떼어 내 니코틴 증상(호흡근 약화)까지 회복시키므로 아트로핀과 함께 일찍 준다. 그러나 단독으로는 분비물을 바로 줄이지 못한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">유기인 중독 — 아트로핀(정답)</th><th>아편류 중독 — 날록손(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>동공</td><td>축동</td><td>축동</td></tr> <tr><td>분비물</td><td><b>침·땀·기관지 분비물 많음</b></td><td>건조하거나 정상</td></tr> <tr><td>호흡</td><td>빠르고 수포음·천명</td><td><b>느리고 얕다</b></td></tr> <tr><td>근육</td><td>근섬유다발수축·약화</td><td>없음</td></tr> </tbody></table> 축동 + 의식 저하만 보면 아편류와 같지만, 호흡이 빠르고 젖어 있으면 콜린성 위기다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① N-아세틸시스테인은 아세트아미노펜 과다 복용 뒤 간독성을 막는 해독제로, 콜린성 증상이 없는 음독에서 쓴다.\n③ 날록손은 축동·의식 저하에 호흡수가 분당 12회 미만으로 느리고 분비물이 없는 아편류 중독일 때 정답이 된다.\n④ 플루마제닐은 다른 약을 함께 먹지 않은 벤조디아제핀 단독 과다 복용에서 쓰며, 동공·분비물 변화가 거의 없다.\n⑤ 피소스티그민은 산동·건조한 피부·고열·장음 소실이 있는 항콜린성 중독에서 정답이며, 여기에 주면 콜린성 위기를 악화시킨다."
+   },
+   {
+    "k": "함정",
+    "v": "축동과 의식 저하만 보고 날록손을 고르는 것 — 빠른 호흡, 넘치는 분비물, 근섬유다발수축은 아편류가 아니라 유기인 중독이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "농약 음독 뒤 축동·과다 분비·서맥·근섬유다발수축이 함께 있으면 유기인 중독으로 판단하고 아트로핀을 먼저 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Eddleston M, et al. Management of acute organophosphorus pesticide poisoning. Lancet 2008;371:597-607 · Nelson LS, et al. Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Insecticides: Organic Phosphorus Compounds and Carbamates"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "농약 음독 뒤 무스카린·니코틴 증상이 함께 있는 유기인 중독이므로 기관지 분비물을 말리는 아트로핀을 먼저 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "호흡이 빠르고 폐에 수포음·분비물이 많으며 근섬유다발수축이 있다 — 아편류는 호흡이 느리고 마른다",
+   "steps": 2,
+   "chain": [
+    "축동 + 침·땀·기관지 분비물 + 서맥 + 근섬유다발수축 → 유기인계 콜린성 위기",
+    "사인은 기관지 분비물·수축 → 아트로핀을 먼저, 분비물이 마를 때까지"
+   ],
+   "key": [
+    {
+     "item": "농약을 마신 채",
+     "why": "노출원",
+     "also": []
+    },
+    {
+     "item": "동공은 양쪽 모두 1 mm 로 작고",
+     "why": "무스카린 증상",
+     "also": []
+    },
+    {
+     "item": "거친 수포음과 천명",
+     "why": "기관지 분비물·수축 — 사인이자 아트로핀의 목표",
+     "also": []
+    },
+    {
+     "item": "근섬유다발수축",
+     "why": "니코틴 증상 — 아편류와 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "호흡 26회/분",
+     "why": "호흡이 빨라 아편류 중독 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈당은 132 mg/dL",
+     "why": "저혈당에 의한 의식 저하 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "농약 음독 뒤 축동·과다 분비·서맥·근섬유다발수축이 있는 유기인 중독이다. 기관지 분비물로 인한 저산소증을 막도록 아트로핀을 가장 먼저 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "축동·의식 저하에 호흡이 분당 6회로 느리고 폐가 깨끗하며 분비물이 없다면 날록손이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0419",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "순환기 — 아트로핀에 반응하지 않는 완전 방실차단과 저혈압",
+  "type": "순환기 — 아트로핀에 반응하지 않는 완전 방실차단과 저혈압",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-24",
+  "vignette": "A 74-year-old man is brought to the emergency department 40 minutes after he fainted while standing in his kitchen. He has had episodes of lightheadedness for 2 days. He takes amlodipine for hypertension and does not take any rate-slowing drugs. His pulse is 34/min and regular, blood pressure is 78/46 mm Hg, and respirations are 18/min. He is pale, diaphoretic, and drowsy but follows commands. Lungs are clear. An ECG shows P waves at a rate of 82/min that bear no relationship to wide QRS complexes occurring at 34/min. Serum potassium is 4.3 mEq/L. Atropine has been given intravenously to a total of 3 mg without any change in heart rate or blood pressure.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "An additional 1 mg of intravenous atropine",
+   "Synchronized cardioversion",
+   "Intravenous amiodarone",
+   "Intravenous adenosine",
+   "Transcutaneous pacing"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Independent P waves and wide QRS complexes at 34/min indicate complete (third-degree) atrioventricular block with a ventricular escape rhythm. He is hypotensive and drowsy, so the bradycardia is unstable, and atropine has already reached its maximum dose without effect. Transcutaneous pacing is the next step, bridging to transvenous and then permanent pacing.\n- 원리: <b>Why atropine fails here</b>: atropine blocks vagal (muscarinic) tone, so it speeds the sinus node and improves conduction through the AV node. In complete heart block with a wide-complex escape, the block usually lies below the AV node in the His–Purkinje system, which has little vagal innervation; atropine can raise the atrial rate without letting any more impulses through.<br> <b>Why the escape rhythm is dangerous</b>: a ventricular escape focus fires slowly (20–40/min) and unreliably, so cardiac output depends on a rate that cannot rise with demand, and pauses can lead to asystole or torsades de pointes.<br> <b>The sequence for unstable bradycardia</b>: atropine first (1 mg every 3–5 minutes up to 3 mg); if it is ineffective, transcutaneous pacing or a chronotropic infusion (epinephrine or dopamine), then expert consultation for transvenous pacing. Reversible causes — hyperkalemia, ischemia, β-blocker or calcium-channel-blocker excess — are sought in parallel.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transcutaneous pacing (answer)</th><th>More atropine (closest distractor)</th></tr></thead><tbody> <tr><td>Atropine already given</td><td><b>3 mg total — the maximum</b></td><td>Less than 3 mg</td></tr> <tr><td>Site of block</td><td>Infranodal (wide escape QRS)</td><td>AV nodal or sinus (narrow QRS, vagal)</td></tr> <tr><td>Expected response</td><td>Captures the ventricle directly</td><td>Faster sinus rate, better nodal conduction</td></tr> </tbody></table> A narrow-complex block after inferior MI may still respond to atropine; a wide-complex escape after maximal atropine needs pacing.\n- 오답 이유:\n  - (A) More atropine would be reasonable only if less than the 3 mg maximum had been given, especially for sinus bradycardia or AV nodal block.\n  - (B) Synchronized cardioversion is the answer for unstable tachyarrhythmias with a pulse, such as atrial flutter or ventricular tachycardia at fast rates.\n  - (C) Amiodarone would be correct for stable monomorphic ventricular tachycardia; it slows conduction further and could worsen this block.\n  - (D) Adenosine would be used for stable regular narrow-complex supraventricular tachycardia; it transiently blocks the AV node and would deepen bradycardia.\n- 함정: Repeating atropine after the 3-mg maximum — an infranodal block with a wide escape does not respond; pacing is next.\n- 학습목표: 아트로핀에 반응하지 않는 증상성 완전 방실차단에서 경피 심박조율을 고르고, 빈맥 치료나 아트로핀 추가와 구별한다\n- 근거·출처: Panchal AR, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. Circulation 2020;142:S366-S468 · Kusumoto FM, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation 2019;140:e382-e482",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Independent P waves and wide QRS complexes at 34/min indicate complete (third-degree) atrioventricular block with a ventricular escape rhythm. He is hypotensive and drowsy, so the bradycardia is unstable, and atropine has already reached its maximum dose without effect. Transcutaneous pacing is the next step, bridging to transvenous and then permanent pacing."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why atropine fails here</b>: atropine blocks vagal (muscarinic) tone, so it speeds the sinus node and improves conduction through the AV node. In complete heart block with a wide-complex escape, the block usually lies below the AV node in the His–Purkinje system, which has little vagal innervation; atropine can raise the atrial rate without letting any more impulses through.<br> <b>Why the escape rhythm is dangerous</b>: a ventricular escape focus fires slowly (20–40/min) and unreliably, so cardiac output depends on a rate that cannot rise with demand, and pauses can lead to asystole or torsades de pointes.<br> <b>The sequence for unstable bradycardia</b>: atropine first (1 mg every 3–5 minutes up to 3 mg); if it is ineffective, transcutaneous pacing or a chronotropic infusion (epinephrine or dopamine), then expert consultation for transvenous pacing. Reversible causes — hyperkalemia, ischemia, β-blocker or calcium-channel-blocker excess — are sought in parallel."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transcutaneous pacing (answer)</th><th>More atropine (closest distractor)</th></tr></thead><tbody> <tr><td>Atropine already given</td><td><b>3 mg total — the maximum</b></td><td>Less than 3 mg</td></tr> <tr><td>Site of block</td><td>Infranodal (wide escape QRS)</td><td>AV nodal or sinus (narrow QRS, vagal)</td></tr> <tr><td>Expected response</td><td>Captures the ventricle directly</td><td>Faster sinus rate, better nodal conduction</td></tr> </tbody></table> A narrow-complex block after inferior MI may still respond to atropine; a wide-complex escape after maximal atropine needs pacing."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) More atropine would be reasonable only if less than the 3 mg maximum had been given, especially for sinus bradycardia or AV nodal block.\n(B) Synchronized cardioversion is the answer for unstable tachyarrhythmias with a pulse, such as atrial flutter or ventricular tachycardia at fast rates.\n(C) Amiodarone would be correct for stable monomorphic ventricular tachycardia; it slows conduction further and could worsen this block.\n(D) Adenosine would be used for stable regular narrow-complex supraventricular tachycardia; it transiently blocks the AV node and would deepen bradycardia."
+   },
+   {
+    "k": "함정",
+    "v": "Repeating atropine after the 3-mg maximum — an infranodal block with a wide escape does not respond; pacing is next."
+   },
+   {
+    "k": "학습목표",
+    "v": "아트로핀에 반응하지 않는 증상성 완전 방실차단에서 경피 심박조율을 고르고, 빈맥 치료나 아트로핀 추가와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Panchal AR, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. Circulation 2020;142:S366-S468 · Kusumoto FM, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation 2019;140:e382-e482"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "넓은 QRS 이탈 리듬을 동반한 완전 방실차단으로 저혈압·의식 저하가 있고 아트로핀 최대량에 반응이 없으므로 경피 심박조율을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "아트로핀이 이미 최대량 3 mg 에 이르렀고 이탈 리듬의 QRS 가 넓다 — 방실결절 아래 차단",
+   "steps": 3,
+   "chain": [
+    "P파와 넓은 QRS 가 따로 뛴다 → 완전 방실차단(심실 이탈 리듬)",
+    "저혈압·졸림 → 불안정 서맥",
+    "아트로핀 3 mg 무반응 → 경피 심박조율"
+   ],
+   "key": [
+    {
+     "item": "P waves at a rate of 82/min that bear no relationship to wide QRS complexes",
+     "why": "완전 방실차단의 정의",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 78/46 mm Hg",
+     "why": "불안정 — 즉시 처치 필요",
+     "also": []
+    },
+    {
+     "item": "to a total of 3 mg without any change",
+     "why": "아트로핀 최대량 실패",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "does not take any rate-slowing drugs",
+     "why": "약물 유발 서맥 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum potassium is 4.3 mEq/L",
+     "why": "고칼륨혈증에 의한 전도 장애 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He takes amlodipine for hypertension",
+     "why": "디하이드로피리딘계는 방실 전도를 거의 늦추지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "P파와 넓은 QRS 가 따로 뛰는 완전 방실차단에 저혈압·졸림이 있다. 아트로핀 3 mg 에 반응이 없으므로 경피 심박조율로 잇는다.",
+   "switch": {
+    "choice": "A",
+    "condition": "아트로핀을 1 mg 만 주었고 하벽 경색 뒤 좁은 QRS 의 방실결절 차단이라면 아트로핀을 더 줄 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0418",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·응급·산과·외과·감염·부인과·신장·소아·내분비·예방·정신)",
+  "subtopic": "피부 — 경구 항생제에 반응하지 않는 결절낭포성 여드름",
+  "type": "피부 — 경구 항생제에 반응하지 않는 결절낭포성 여드름",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-24",
+  "vignette": "22세 여자가 얼굴과 등의 여드름이 낫지 않아 피부과 외래에 왔다. 3년 전부터 여드름이 있었고, 최근 6개월 동안 국소 레티노이드와 벤조일퍼옥사이드를 바르면서 경구 독시사이클린을 3개월 먹었지만 아프고 깊은 결절이 계속 새로 생긴다. 볼과 등에 지름 5~10 mm 의 붉은 결절과 낭종이 여러 개 있고, 볼에는 움푹 팬 흉터가 생겼다. 생리 주기는 규칙적이고 다모증은 없다. 경구 피임약을 먹으며 콘돔도 함께 쓰고 있고, 오늘 소변 임신 검사는 음성이다. 간기능 검사와 공복 지질 검사는 정상이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "국소 클린다마이신 단독",
+   "경구 이소트레티노인",
+   "경구 미노사이클린으로 교체",
+   "경구 독시사이클린 3개월 연장",
+   "경구 프레드니솔론"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 경구 항생제와 국소 치료를 3개월 충분히 했는데도 결절·낭종이 계속 생기고 흉터가 남는 중증 결절낭포성 여드름이다. 이때 표준 치료는 경구 이소트레티노인이며, 기형 유발 약이므로 임신 검사 음성과 두 가지 피임을 확인한 뒤 시작한다 — 이 환자는 두 조건을 이미 갖추었다.\n- 원리: <b>여드름의 네 고리</b>: 여드름은 ① 안드로겐에 의한 피지 과다, ② 모낭 입구의 과각화(면포), ③ <i>Cutibacterium acnes</i> 증식, ④ 염증의 네 단계가 겹쳐 생긴다. 국소 레티노이드는 ②, 벤조일퍼옥사이드·항생제는 ③·④ 만 겨눈다.<br> <b>왜 이소트레티노인만 결절낭포성 여드름을 바꾸나</b>: 이소트레티노인은 피지샘 세포의 자멸사를 일으켜 피지샘 크기와 피지 분비를 크게 줄인다 — 네 고리를 모두 끊는 유일한 약이라 치료를 마친 뒤에도 재발이 적고, 흉터가 쌓이기 전에 써야 이득이 크다.<br> <b>왜 임신 검사와 피임이 먼저인가</b>: 레티노산은 배아의 신경능선세포 이동을 방해해 두개안면·심장·흉선·중추신경 기형을 일으킨다. 그래서 시작 전과 매달 임신 검사, 치료 1개월 전부터 끝난 뒤 1개월까지 두 가지 피임을 요구한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">이소트레티노인(정답)</th><th>미노사이클린 교체(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>겨누는 고리</td><td>피지 분비·과각화·세균·염증 모두</td><td>세균·염증만</td></tr> <tr><td>적응</td><td><b>항생제 3개월에 반응 없는 중증·흉터</b></td><td>중등도 염증성 여드름의 첫 경구 약</td></tr> <tr><td>주의</td><td>기형 유발 — 임신 검사·두 가지 피임</td><td>색소 침착·약물 루푸스, 같은 계열이라 효과 비슷</td></tr> </tbody></table> 같은 계열 항생제로 바꾸는 것은 실패한 치료를 되풀이하는 것이다 — 3개월 실패와 흉터가 기준선이다.\n- 오답 이유:\n  - ① 국소 클린다마이신 단독은 경증 염증성 여드름에서도 내성 때문에 벤조일퍼옥사이드와 함께 쓰며, 결절낭포성에는 부족하다.\n  - ③ 미노사이클린은 테트라사이클린 계열이라 독시사이클린 3개월 실패 뒤 바꿔도 이득이 적고, 첫 경구 항생제를 고를 때나 정답이 된다.\n  - ④ 독시사이클린 연장은 3개월에 효과가 나타나고 있는 중등도 여드름일 때 쓰며, 내성 위험 때문에 대개 3~4개월을 넘기지 않는다.\n  - ⑤ 경구 프레드니솔론은 이소트레티노인 시작 초기의 악화나 전격성 여드름처럼 전신 증상이 있는 경우에 짧게 더할 때 정답이 된다.\n- 함정: 여드름이 낫지 않으니 다른 항생제로 바꾸는 것 — 같은 계열 경구 항생제 3개월 실패와 흉터가 이소트레티노인의 기준선이다.\n- 학습목표: 경구 항생제 3개월에도 낫지 않고 흉터를 남기는 결절낭포성 여드름에 경구 이소트레티노인을 고르고, 시작 전 임신 검사와 두 가지 피임을 확인한다\n- 근거·출처: Zaenglein AL, et al. Guidelines of care for the management of acne vulgaris. J Am Acad Dermatol 2016;74:945-973 · Reynolds RV, et al. Guidelines of care for the management of acne vulgaris. J Am Acad Dermatol 2024;90:1006.e1-1006.e30",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "경구 항생제와 국소 치료를 3개월 충분히 했는데도 결절·낭종이 계속 생기고 흉터가 남는 중증 결절낭포성 여드름이다. 이때 표준 치료는 경구 이소트레티노인이며, 기형 유발 약이므로 임신 검사 음성과 두 가지 피임을 확인한 뒤 시작한다 — 이 환자는 두 조건을 이미 갖추었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>여드름의 네 고리</b>: 여드름은 ① 안드로겐에 의한 피지 과다, ② 모낭 입구의 과각화(면포), ③ <i>Cutibacterium acnes</i> 증식, ④ 염증의 네 단계가 겹쳐 생긴다. 국소 레티노이드는 ②, 벤조일퍼옥사이드·항생제는 ③·④ 만 겨눈다.<br> <b>왜 이소트레티노인만 결절낭포성 여드름을 바꾸나</b>: 이소트레티노인은 피지샘 세포의 자멸사를 일으켜 피지샘 크기와 피지 분비를 크게 줄인다 — 네 고리를 모두 끊는 유일한 약이라 치료를 마친 뒤에도 재발이 적고, 흉터가 쌓이기 전에 써야 이득이 크다.<br> <b>왜 임신 검사와 피임이 먼저인가</b>: 레티노산은 배아의 신경능선세포 이동을 방해해 두개안면·심장·흉선·중추신경 기형을 일으킨다. 그래서 시작 전과 매달 임신 검사, 치료 1개월 전부터 끝난 뒤 1개월까지 두 가지 피임을 요구한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">이소트레티노인(정답)</th><th>미노사이클린 교체(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>겨누는 고리</td><td>피지 분비·과각화·세균·염증 모두</td><td>세균·염증만</td></tr> <tr><td>적응</td><td><b>항생제 3개월에 반응 없는 중증·흉터</b></td><td>중등도 염증성 여드름의 첫 경구 약</td></tr> <tr><td>주의</td><td>기형 유발 — 임신 검사·두 가지 피임</td><td>색소 침착·약물 루푸스, 같은 계열이라 효과 비슷</td></tr> </tbody></table> 같은 계열 항생제로 바꾸는 것은 실패한 치료를 되풀이하는 것이다 — 3개월 실패와 흉터가 기준선이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 국소 클린다마이신 단독은 경증 염증성 여드름에서도 내성 때문에 벤조일퍼옥사이드와 함께 쓰며, 결절낭포성에는 부족하다.\n③ 미노사이클린은 테트라사이클린 계열이라 독시사이클린 3개월 실패 뒤 바꿔도 이득이 적고, 첫 경구 항생제를 고를 때나 정답이 된다.\n④ 독시사이클린 연장은 3개월에 효과가 나타나고 있는 중등도 여드름일 때 쓰며, 내성 위험 때문에 대개 3~4개월을 넘기지 않는다.\n⑤ 경구 프레드니솔론은 이소트레티노인 시작 초기의 악화나 전격성 여드름처럼 전신 증상이 있는 경우에 짧게 더할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "여드름이 낫지 않으니 다른 항생제로 바꾸는 것 — 같은 계열 경구 항생제 3개월 실패와 흉터가 이소트레티노인의 기준선이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경구 항생제 3개월에도 낫지 않고 흉터를 남기는 결절낭포성 여드름에 경구 이소트레티노인을 고르고, 시작 전 임신 검사와 두 가지 피임을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Zaenglein AL, et al. Guidelines of care for the management of acne vulgaris. J Am Acad Dermatol 2016;74:945-973 · Reynolds RV, et al. Guidelines of care for the management of acne vulgaris. J Am Acad Dermatol 2024;90:1006.e1-1006.e30"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "경구 항생제 3개월에도 결절·낭종이 계속 생기고 흉터가 남는 중증 여드름이므로 경구 이소트레티노인을 쓴다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "이미 테트라사이클린 계열 3개월 실패와 흉터가 있다 — 같은 계열 교체는 이득이 없다",
+   "steps": 2,
+   "chain": [
+    "결절·낭종 + 흉터 + 경구 독시사이클린 3개월 실패 → 치료 저항성 중증 여드름",
+    "임신 검사 음성 + 두 가지 피임 → 이소트레티노인 시작 조건 충족"
+   ],
+   "key": [
+    {
+     "item": "경구 독시사이클린을 3개월 먹었지만",
+     "why": "경구 항생제 실패의 기준",
+     "also": []
+    },
+    {
+     "item": "움푹 팬 흉터",
+     "why": "흉터는 조기 이소트레티노인의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "생리 주기는 규칙적이고 다모증은 없다",
+     "why": "다낭난소증후군 등 안드로겐 과다로 호르몬 치료를 먼저 고려할 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "소변 임신 검사는 음성",
+     "why": "기형 유발 약 시작 조건",
+     "also": []
+    },
+    {
+     "item": "경구 피임약을 먹으며 콘돔도 함께",
+     "why": "두 가지 피임 요건",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "간기능 검사와 공복 지질 검사는 정상",
+     "why": "치료 전 기준값 — 금기가 없음을 보여 줄 뿐 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "경구 독시사이클린 3개월에도 결절·낭종이 생기고 흉터가 남는 중증 여드름이다. 임신 검사 음성·두 가지 피임을 갖추었으므로 경구 이소트레티노인을 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "아직 경구 항생제를 써 본 적 없는 중등도 염증성 여드름이라면 국소 치료에 경구 테트라사이클린 계열을 더하는 것이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0413",
   "exam": "imaging",
   "style": "usmle_style",

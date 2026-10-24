@@ -1,36 +1,36 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-23",
+ "generated": "2026-10-24",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3960,
+  "total": 3979,
   "byType": {
+   "imaging": 428,
+   "paper": 832,
    "kmle": 1536,
    "concept": 110,
    "usmle": 210,
-   "paper": 825,
-   "imaging": 416,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 271,
-   "Nephrology": 218,
-   "Infectious Disease": 199,
-   "Pediatrics": 184,
+   "Cardiology": 272,
+   "Nephrology": 219,
+   "Infectious Disease": 200,
+   "Pediatrics": 185,
    "Obstetrics & Gynecology": 134,
-   "Pathology": 121,
+   "Pathology": 122,
+   "Hematology-Oncology": 120,
    "Rheumatology": 120,
-   "Hematology-Oncology": 119,
    "Psychiatry": 115,
    "Neurology": 114,
    "General Surgery": 104,
+   "Surgery": 102,
    "Endocrinology": 101,
-   "Surgery": 101,
    "Dermatology": 100,
    "Orthopedics": 100,
    "Gastroenterology": 99,
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 98,
    "Hematology": 93,
    "Laboratory Medicine": 84,
-   "산부인과": 63,
-   "순환기": 36,
+   "산부인과": 65,
+   "순환기": 37,
    "호흡기": 28,
    "소화기": 27,
+   "소아과": 24,
    "Physiology": 23,
-   "소아과": 23,
+   "응급·중환자": 21,
+   "감염": 20,
+   "내분비": 20,
    "병리·조직학": 20,
-   "응급·중환자": 20,
    "혈액·종양": 20,
-   "감염": 19,
-   "내분비": 19,
    "신경": 19,
+   "신장·비뇨기": 19,
+   "외과": 19,
    "Pharmacology": 18,
-   "신장·비뇨기": 18,
-   "외과": 18,
    "Biochemistry": 17,
    "Microbiology": 16,
-   "예방의학·역학": 15,
-   "피부과": 15,
+   "예방의학·역학": 16,
+   "피부과": 16,
    "Internal Medicine": 13,
    "Immunology": 12,
    "약리": 12,
+   "정신과": 12,
    "근골격·류마티스": 11,
-   "정신과": 11,
    "영상의학": 8,
    "안과": 7,
    "이비인후과": 7,
@@ -78,13 +78,340 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2768,
-   "medium": 1142,
+   "high": 2780,
+   "medium": 1149,
    "low": 50
   },
   "tagCount": 5015
  },
  "docs": [
+  {
+   "id": "imaging-2026-0429",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 할로페리돌 장기 복용자의 입 주위 불수의 운동",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0429.md",
+   "snippet": "A 58 year old woman with schizophrenia is brought to the clinic by her sister because of involuntary mouth movements that have gradually worsened over 8 months. She has taken haloperidol 10 mg daily for 12 years, and her psychotic symptoms ",
+   "text": "정신과 정신 — 할로페리돌 장기 복용자의 입 주위 불수의 운동 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 A 58 year old woman with schizophrenia is brought to the clinic by her sister because of involuntary mouth movements that have gradually worsened over 8 months. She has taken haloperidol 10 mg daily for 12 years, and her psychotic symptoms have been stable without hospitalization for 5 years. Six months ago, benztropine was added for the movements, and since then they have become more frequent. She is embarrassed to eat in public. She is alert and calm. There are repetitive lip smacking, puckering, and lateral jaw movements, and her tongue darts in and out of her mouth; the movements decrease when she is asked to tap her fingers. There is no rigidity, tremor, or bradykinesia, and her gait is normal. She does not report restlessness. Serum TSH, calcium, and copper concentrations are normal. Which of the following is the most appropriate pharmacotherapy? A. Increase the dose of haloperidol B. Intramuscular diphenhydramine C. Valbenazine D. Increase the dose of benztropine E. Propranolol"
+  },
+  {
+   "id": "imaging-2026-0428",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 항응고 시험의 NNT·NNH 와 이득-위해 비",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0428.md",
+   "snippet": "보건소에 근무하는 38세 남자 의사가 심방세동 노인에게 새 항응고제를 권할지 판단하려고 한 무작위 대조 시험을 읽었다. 65세 이상 심방세동 환자 8,000명을 새 항응고제군과 위약군에 4,000명씩 배정해 5년 동안 추적했다. 5년 동안 허혈뇌졸중은 위약군 320명(8 %), 항응고제군 240명(6 %)에서 생겼다. 같은 기간 주요 출혈은 위약군 40명(1 %), 항응고제군 80명(2 %)에서 생겼다. 두 군의 사망률과 추적",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 항응고 시험의 NNT·NNH 와 이득-위해 비 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 보건소에 근무하는 38세 남자 의사가 심방세동 노인에게 새 항응고제를 권할지 판단하려고 한 무작위 대조 시험을 읽었다. 65세 이상 심방세동 환자 8,000명을 새 항응고제군과 위약군에 4,000명씩 배정해 5년 동안 추적했다. 5년 동안 허혈뇌졸중은 위약군 320명(8 %), 항응고제군 240명(6 %)에서 생겼다. 같은 기간 주요 출혈은 위약군 40명(1 %), 항응고제군 80명(2 %)에서 생겼다. 두 군의 사망률과 추적 탈락률은 비슷했다. 이 결과를 그대로 적용할 때, 이 약으로 허혈뇌졸중 1건을 예방할 때마다 추가로 생기는 주요 출혈은 몇 건인가? A. 2건 B. 1건 C. 0.25건 D. 4건 E. 0.5건"
+  },
+  {
+   "id": "imaging-2026-0427",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 레보티록신 복용 중 임신을 확인한 하시모토 갑상샘염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0427.md",
+   "snippet": "A 31 year old woman with Hashimoto thyroiditis comes to the physician because a home pregnancy test was positive this morning. Her last menstrual period was 6 weeks ago. She has taken levothyroxine 100 µg daily for 4 years, and her serum TS",
+   "text": "내분비 내분비·대사 — 레보티록신 복용 중 임신을 확인한 하시모토 갑상샘염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 A 31 year old woman with Hashimoto thyroiditis comes to the physician because a home pregnancy test was positive this morning. Her last menstrual period was 6 weeks ago. She has taken levothyroxine 100 µg daily for 4 years, and her serum TSH concentration 2 months ago was 1.6 µU/mL. She takes a prenatal vitamin with iron, separated from levothyroxine by 4 hours. She feels well. Her pulse is 76/min and blood pressure is 112/70 mm Hg. The thyroid gland is slightly enlarged and firm without nodules. Serum β hCG is 14,800 mIU/mL, and transvaginal ultrasonography shows a single intrauterine gestational sac with a yolk sac. Which of the following is the most appropriate next step in management? A. Decrease levothyroxine by about 25% to avoid fetal hyperthyroidism B. Increase levothyroxine by about 30% now (two extra doses per week) C. Continue the current dose and measure TSH in 4 weeks D. Switch levothyroxine to liothyronine E. Continue the current dose and measure TSH after delivery"
+  },
+  {
+   "id": "imaging-2026-0426",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 넘어지고 12일 뒤 손목 측면 X선의 골막 새뼈",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0426.md",
+   "snippet": "10세 남아가 왼쪽 손목 위가 튀어나와 보여 어머니와 함께 외래에 왔다. 12일 전 자전거에서 넘어지며 왼손을 짚었고, 부모는 삔 줄 알고 파스만 붙였다. 처음 사흘은 많이 아팠지만 지금은 통증이 줄었다. 열은 없었다. 체온 36.7℃ 이고, 원위 전완이 약간 휘어 보이며 그 부위에 가벼운 압통이 있다. 피부 발적이나 열감은 없고 손가락 감각·운동과 요골 동맥 맥박은 정상이다. 백혈구 7,800/μL, C 반응단백 0.3 mg",
+   "text": "소아과 소아청소년 — 넘어지고 12일 뒤 손목 측면 X선의 골막 새뼈 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 10세 남아가 왼쪽 손목 위가 튀어나와 보여 어머니와 함께 외래에 왔다. 12일 전 자전거에서 넘어지며 왼손을 짚었고, 부모는 삔 줄 알고 파스만 붙였다. 처음 사흘은 많이 아팠지만 지금은 통증이 줄었다. 열은 없었다. 체온 36.7℃ 이고, 원위 전완이 약간 휘어 보이며 그 부위에 가벼운 압통이 있다. 피부 발적이나 열감은 없고 손가락 감각·운동과 요골 동맥 맥박은 정상이다. 백혈구 7,800/μL, C 반응단백 0.3 mg/dL, 알칼리인산분해효소는 나이에 맞는 범위다. 왼쪽 손목 측면 X선 사진은 그림과 같다. 골절 부위 피질을 따라 보이는 희뿌연 새 뼈 음영으로 가장 적절한 것은? A. 유잉육종의 양파껍질 골막 반응 B. 골육종의 Codman 삼각 C. 괴혈병의 골막하 출혈 석회화 D. 치유 중인 골절의 골막 가골 E. 급성 골수염의 골막 반응"
+  },
+  {
+   "id": "imaging-2026-0425",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 반복 구토 뒤 대사성 알칼리증과 저칼륨혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0425.md",
+   "snippet": "24세 여자가 일주일 전부터 기운이 없고 다리가 저려 외래에 왔다. 1년 전부터 폭식한 뒤 스스로 토하는 일이 하루 2~3번 있었다고 한다. 이뇨제나 완하제는 쓰지 않는다. 혈압 98/60 mmHg(누우면 108/66 mmHg), 맥박 104회/분이다. 침샘이 커져 있고 손등에 굳은살이 있다. 혈청 나트륨 136 mEq/L, 칼륨 2.8 mEq/L, 염소 88 mEq/L, 중탄산 36 mEq/L, 크레아티닌 1.0 mg/dL ",
+   "text": "신장·비뇨기 신장·비뇨 — 반복 구토 뒤 대사성 알칼리증과 저칼륨혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 24세 여자가 일주일 전부터 기운이 없고 다리가 저려 외래에 왔다. 1년 전부터 폭식한 뒤 스스로 토하는 일이 하루 2~3번 있었다고 한다. 이뇨제나 완하제는 쓰지 않는다. 혈압 98/60 mmHg(누우면 108/66 mmHg), 맥박 104회/분이다. 침샘이 커져 있고 손등에 굳은살이 있다. 혈청 나트륨 136 mEq/L, 칼륨 2.8 mEq/L, 염소 88 mEq/L, 중탄산 36 mEq/L, 크레아티닌 1.0 mg/dL 이다. 동맥혈 pH 7.52, PaCO₂ 46 mmHg 이다. 소변 나트륨 28 mEq/L, 소변 칼륨 32 mEq/L, 소변 염소 8 mEq/L 이다. 가장 적절한 치료는? A. 중탄산나트륨 정맥 투여 B. 푸로세미드 정맥 투여 C. 생리식염수와 염화칼륨 정맥 투여 D. 아세타졸아마이드 경구 투여 E. 스피로놀락톤 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0424",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 난관 임신으로 떼어 낸 난관의 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0424.md",
+   "snippet": "A 26 year old woman undergoes laparoscopic salpingectomy for a ruptured ampullary ectopic pregnancy. She had pelvic inflammatory disease 4 years ago. Her blood pressure stabilizes after surgery, and serum β hCG becomes undetectable 3 weeks ",
+   "text": "산부인과 부인과 — 난관 임신으로 떼어 낸 난관의 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 A 26 year old woman undergoes laparoscopic salpingectomy for a ruptured ampullary ectopic pregnancy. She had pelvic inflammatory disease 4 years ago. Her blood pressure stabilizes after surgery, and serum β hCG becomes undetectable 3 weeks later. To study the mucosa of the removed tube, a section taken away from the implantation site is stained by immunohistochemistry with an antibody against a nuclear transcription factor that switches on the genes needed to build motile microtubule based surface projections. A photomicrograph of the stained section is shown. Which of the following best describes the cells with brown stained nuclei? A. Lining epithelial cells that sweep the embryo toward the uterus B. Lining epithelial cells that secrete nutrient fluid into the lumen C. Smooth muscle cells whose peristalsis moves the embryo D. Stromal cells of the folds that form decidua after implantation E. Endothelial cells of the vessels supplying the mucosal folds"
+  },
+  {
+   "id": "imaging-2026-0423",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 혈액투석 도관 환자의 메티실린 감수성 황색포도알균 균혈증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0423.md",
+   "snippet": "A 64 year old man with end stage kidney disease who receives hemodialysis through a tunneled right internal jugular catheter comes to the emergency department because of fever and shaking chills that began during dialysis yesterday. He has ",
+   "text": "감염 감염 — 혈액투석 도관 환자의 메티실린 감수성 황색포도알균 균혈증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 A 64 year old man with end stage kidney disease who receives hemodialysis through a tunneled right internal jugular catheter comes to the emergency department because of fever and shaking chills that began during dialysis yesterday. He has no allergies. His temperature is 39.1°C (102.4°F), pulse is 108/min, and blood pressure is 112/68 mm Hg. There is erythema and tenderness at the catheter exit site. Cardiac examination shows no murmurs. Blood cultures are drawn, and intravenous vancomycin is started. Two days later, both sets of blood cultures grow Staphylococcus aureus susceptible to oxacillin, cefazolin, and vancomycin (vancomycin MIC 1 µg/mL). The catheter has been removed, and repeat blood cultures have been sent. Which of the following is the most appropriate change in antibiotic therapy? A. Add gentamicin to vancomycin B. Switch vancomycin to daptomycin C. Switch vancomycin to oral linezolid D. Switch vancomycin to cefazolin E. Continue vancomycin at the current dose"
+  },
+  {
+   "id": "imaging-2026-0422",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 여러 유관에서 나오는 녹갈색 유두 분비물과 유방 초음파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0422.md",
+   "snippet": "57세 여자가 두 달 전부터 왼쪽 유두에서 끈적한 녹갈색 분비물이 나와 외래에 왔다. 분비물은 짜야 나오고, 유두 표면의 여러 유관 구멍에서 나온다. 폐경은 6년 전이고 호르몬 치료는 받지 않았으며 담배를 20년 피웠다. 유두는 갈라진 틈 모양으로 약간 들어가 있다. 유륜 아래가 반죽처럼 만져지지만 따로 구분되는 덩이는 없고, 겨드랑이 림프절은 만져지지 않는다. 분비물의 잠혈 검사는 음성이고, 유방촬영에서 덩이나 미세석회화는 ",
+   "text": "외과 외과계 — 여러 유관에서 나오는 녹갈색 유두 분비물과 유방 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 57세 여자가 두 달 전부터 왼쪽 유두에서 끈적한 녹갈색 분비물이 나와 외래에 왔다. 분비물은 짜야 나오고, 유두 표면의 여러 유관 구멍에서 나온다. 폐경은 6년 전이고 호르몬 치료는 받지 않았으며 담배를 20년 피웠다. 유두는 갈라진 틈 모양으로 약간 들어가 있다. 유륜 아래가 반죽처럼 만져지지만 따로 구분되는 덩이는 없고, 겨드랑이 림프절은 만져지지 않는다. 분비물의 잠혈 검사는 음성이고, 유방촬영에서 덩이나 미세석회화는 없다. 왼쪽 유방 초음파 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 유관 확장증 B. 유관내 유두종 C. 침윤성 관암종 D. 섬유선종 E. 유관상피내암"
+  },
+  {
+   "id": "imaging-2026-0421",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 자연 진통 중 초산부의 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0421.md",
+   "snippet": "A 30 year old woman, gravida 1, para 0, at 39 weeks' gestation is admitted to the labor unit in spontaneous labor. Contractions began 8 hours ago, and her membranes ruptured spontaneously 2 hours ago, draining clear fluid. Her pregnancy has",
+   "text": "산부인과 산과 — 자연 진통 중 초산부의 태아심박동 기록 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 A 30 year old woman, gravida 1, para 0, at 39 weeks' gestation is admitted to the labor unit in spontaneous labor. Contractions began 8 hours ago, and her membranes ruptured spontaneously 2 hours ago, draining clear fluid. Her pregnancy has been uncomplicated. She has not received oxytocin or epidural analgesia. Her temperature is 36.9°C (98.4°F), pulse is 88/min, and blood pressure is 122/76 mm Hg. Pelvic examination shows the cervix is 6 cm dilated and 90% effaced, with the vertex at 0 station. Continuous electronic fetal monitoring is in place, and a 10 minute segment of the tracing is shown. Which of the following is the most appropriate next step in management? A. Continue labor with routine periodic review of the tracing B. Left lateral positioning, oxygen, and an intravenous fluid bolus C. Fetal scalp blood sampling for pH measurement D. Amnioinfusion through an intrauterine catheter E. Immediate cesarean delivery"
+  },
+  {
+   "id": "imaging-2026-0420",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 농약을 마신 뒤 침 흘림·축동·서맥",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0420.md",
+   "snippet": "58세 남자가 1시간 전 비닐하우스 창고에서 농약을 마신 채 쓰러져 있는 것을 가족이 발견해 응급실에 왔다. 혈압 96/60 mmHg, 맥박 46회/분, 호흡 26회/분, 체온 36.4℃, 산소포화도 88 % 이다. 의식은 졸려 하지만 부르면 눈을 뜬다. 동공은 양쪽 모두 1 mm 로 작고, 입에서 침이 흘러나오며 땀을 많이 흘린다. 양쪽 폐에서 거친 수포음과 천명이 들리고, 팔다리와 얼굴 근육에 근섬유다발수축이 보인다. 대변",
+   "text": "응급·중환자 응급·중환자·외상 — 농약을 마신 뒤 침 흘림·축동·서맥 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 58세 남자가 1시간 전 비닐하우스 창고에서 농약을 마신 채 쓰러져 있는 것을 가족이 발견해 응급실에 왔다. 혈압 96/60 mmHg, 맥박 46회/분, 호흡 26회/분, 체온 36.4℃, 산소포화도 88 % 이다. 의식은 졸려 하지만 부르면 눈을 뜬다. 동공은 양쪽 모두 1 mm 로 작고, 입에서 침이 흘러나오며 땀을 많이 흘린다. 양쪽 폐에서 거친 수포음과 천명이 들리고, 팔다리와 얼굴 근육에 근섬유다발수축이 보인다. 대변과 소변을 지렸다. 혈당은 132 mg/dL 이다. 기도 흡인을 하며 산소를 주고 있다. 가장 먼저 투여할 약은? A. N 아세틸시스테인 B. 아트로핀 C. 날록손 D. 플루마제닐 E. 피소스티그민"
+  },
+  {
+   "id": "imaging-2026-0419",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 아트로핀에 반응하지 않는 완전 방실차단과 저혈압",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0419.md",
+   "snippet": "A 74 year old man is brought to the emergency department 40 minutes after he fainted while standing in his kitchen. He has had episodes of lightheadedness for 2 days. He takes amlodipine for hypertension and does not take any rate slowing d",
+   "text": "순환기 순환기 — 아트로핀에 반응하지 않는 완전 방실차단과 저혈압 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 A 74 year old man is brought to the emergency department 40 minutes after he fainted while standing in his kitchen. He has had episodes of lightheadedness for 2 days. He takes amlodipine for hypertension and does not take any rate slowing drugs. His pulse is 34/min and regular, blood pressure is 78/46 mm Hg, and respirations are 18/min. He is pale, diaphoretic, and drowsy but follows commands. Lungs are clear. An ECG shows P waves at a rate of 82/min that bear no relationship to wide QRS complexes occurring at 34/min. Serum potassium is 4.3 mEq/L. Atropine has been given intravenously to a total of 3 mg without any change in heart rate or blood pressure. Which of the following is the most appropriate next step in management? A. An additional 1 mg of intravenous atropine B. Synchronized cardioversion C. Intravenous amiodarone D. Intravenous adenosine E. Transcutaneous pacing"
+  },
+  {
+   "id": "imaging-2026-0418",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 경구 항생제에 반응하지 않는 결절낭포성 여드름",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45",
+   "confidence": "high",
+   "date": "2026-10-24",
+   "path": "content/imaging/2026/imaging-2026-0418.md",
+   "snippet": "22세 여자가 얼굴과 등의 여드름이 낫지 않아 피부과 외래에 왔다. 3년 전부터 여드름이 있었고, 최근 6개월 동안 국소 레티노이드와 벤조일퍼옥사이드를 바르면서 경구 독시사이클린을 3개월 먹었지만 아프고 깊은 결절이 계속 새로 생긴다. 볼과 등에 지름 5~10 mm 의 붉은 결절과 낭종이 여러 개 있고, 볼에는 움푹 팬 흉터가 생겼다. 생리 주기는 규칙적이고 다모증은 없다. 경구 피임약을 먹으며 콘돔도 함께 쓰고 있고, 오늘 ",
+   "text": "피부과 피부 — 경구 항생제에 반응하지 않는 결절낭포성 여드름 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261024T202248Z_일일영상_2026-10-25_12units_12q_94864d45 22세 여자가 얼굴과 등의 여드름이 낫지 않아 피부과 외래에 왔다. 3년 전부터 여드름이 있었고, 최근 6개월 동안 국소 레티노이드와 벤조일퍼옥사이드를 바르면서 경구 독시사이클린을 3개월 먹었지만 아프고 깊은 결절이 계속 새로 생긴다. 볼과 등에 지름 5~10 mm 의 붉은 결절과 낭종이 여러 개 있고, 볼에는 움푹 팬 흉터가 생겼다. 생리 주기는 규칙적이고 다모증은 없다. 경구 피임약을 먹으며 콘돔도 함께 쓰고 있고, 오늘 소변 임신 검사는 음성이다. 간기능 검사와 공복 지질 검사는 정상이다. 가장 적절한 치료는? A. 국소 클린다마이신 단독 B. 경구 이소트레티노인 C. 경구 미노사이클린으로 교체 D. 경구 독시사이클린 3개월 연장 E. 경구 프레드니솔론"
+  },
+  {
+   "id": "paper-2026-0832",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Aesthetic surgery journal",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0832_single_stage_nipple_sparing_mastectomy_with_concurrent_masto.md",
+   "snippet": "Title Single Stage Nipple Sparing Mastectomy with Concurrent Mastopexy: A Systematic Review and Meta Analysis Authors Gibson Ella, Vega Viviana, Salibian Ara A Journal / DOI Aesthetic surgery journal · DOI: 10.1093/asj/sjag242 · PMID: 42913",
+   "text": "Surgery scraped pubmed PubMed / Aesthetic surgery journal Title Single Stage Nipple Sparing Mastectomy with Concurrent Mastopexy: A Systematic Review and Meta Analysis Authors Gibson Ella, Vega Viviana, Salibian Ara A Journal / DOI Aesthetic surgery journal · DOI: 10.1093/asj/sjag242 · PMID: 42913480 https://pubmed.ncbi.nlm.nih.gov/42913480/ Abstract Patients with macromastia or breast ptosis are typically considered poor candidates for nipple sparing mastectomy (NSM) due to concerns regarding nipple and mastectomy flap vascularity as well as challenges in maintaining optimal nipple position due to the redundant skin envelope. Several techniques for concurrent NSM and mastopexy have been described with encouraging results; however, data is limited to case series with small sample sizes. PubMed, Scopus, and Cochrane databases were queried to identify all studies analyzing outcomes in patients who underwent nipple sparing mastectomy and simultaneous mastopexy with implant based reconstruction. Study characteristics, patient demographics, surgical techniques, and post operative complications were collected from relevant articles. Random effects model meta analysis was performed to assess complication rates. Nineteen studies, with a pooled total of 1,076 breasts were identified for analysis. The average patient was 48.1 ± 5.2 years old with a mean BMI of 27.2 ± 3.0 and a mean mastectomy specimen weight of 701.3 ± 93.8 g. The majority of mastopexies were performed using a Wise pattern skin resection (70%) however there was a wide variety of dermal pedicles used to supply the nipple areolar complex (NAC). Meta analysis demonstrated acceptable complication rates, including partial NAC necrosis (5.9%, CI 3.0 9.5 %), total NAC necrosis (0.9%, CI 0.0 2.4%), and mastectomy flap necrosis (3.1%, CI 0.7 6.6%). The current literature supports the safety of performing single stage NSM and mastopexy in favorable and highly selective patient populations. Additional studies are needed to refine specific, objective preoperative and intraoperative indications as well as to evaluate aesthetic and patient reported outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0831",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of consulting and clinical psychology",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0831_twelve_month_follow_up_of_parent_based_child_anxiety_treatme.md",
+   "snippet": "Title Twelve month follow up of parent based child anxiety treatment Authors Etkin Rebecca G, Shimshoni Yaara, Silverman Wendy K, Lebowitz Eli R Journal / DOI Journal of consulting and clinical psychology · DOI: 10.1037/ccp0001033 · PMID: 4",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of consulting and clinical psychology Title Twelve month follow up of parent based child anxiety treatment Authors Etkin Rebecca G, Shimshoni Yaara, Silverman Wendy K, Lebowitz Eli R Journal / DOI Journal of consulting and clinical psychology · DOI: 10.1037/ccp0001033 · PMID: 42911791 https://pubmed.ncbi.nlm.nih.gov/42911791/ Abstract OBJECTIVE: Supportive Parenting for Anxious Childhood Emotions (SPACE) is an efficacious parent based treatment for child anxiety disorders. Little is known about the maintenance of treatment gains following SPACE, and no comparative follow up studies have been conducted. We address both gaps by examining child anxiety severity up to 12 months following SPACE and cognitive behavioral therapy (CBT). We also examine whether reductions in family accommodation of child anxiety are maintained through follow up in both treatments. METHOD: Participants were 125 mother child dyads enrolled in a randomized controlled noninferiority trial comparing posttreatment outcomes of SPACE and CBT. Parents and children in both treatments completed measures of child anxiety severity and family accommodation at pre , mid , and posttreatment and at 3 , 6 , and 12 month follow ups. Linear mixed models were used to examine effects of time, treatment, and their interaction across all assessment intervals, with particular interest in maintenance at 12 month follow up. RESULTS: SPACE and CBT both produced significant reductions in parent and child rated anxiety severity and family accommodation over time, indicating gains were maintained similarly for both treatments through 12 month follow up. Parent (but not child) ratings of child anxiety severity were lower for SPACE than CBT at posttreatment and 12 month follow up. CONCLUSIONS: Results are the first to show maintenance of treatment gains up to 1 year following SPACE, comparable to CBT. These findings may inform clinical decision making and guide the selection of interventions that optimize both short and longer term outcomes for anxious children and their families. (PsycInfo Database Record (c) 2026 APA, all rights reserved). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0830",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of radiology",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0830_diagnostic_value_of_breast_mri_and_kaiser_score_in_birads_0_.md",
+   "snippet": "Title Diagnostic value of breast MRI and Kaiser score in BIRADS 0 and 4 lesions compared with histopathology and follow up Authors Zengin Ece, Şimşir Begüm Demirler, Çevik Mehmet Emir, Akın Mustafa Emre Journal / DOI European journal of rad",
+   "text": "Pathology scraped pubmed PubMed / European journal of radiology Title Diagnostic value of breast MRI and Kaiser score in BIRADS 0 and 4 lesions compared with histopathology and follow up Authors Zengin Ece, Şimşir Begüm Demirler, Çevik Mehmet Emir, Akın Mustafa Emre Journal / DOI European journal of radiology · DOI: 10.1016/j.ejrad.2026.113310 · PMID: 42913345 https://pubmed.ncbi.nlm.nih.gov/42913345/ Abstract OBJECTIVE: Breast cancer is the most frequently diagnosed cancer type in women, and early detection and treatment significantly improve survival rates. In conventional imaging methods (mammography and ultrasound), lesions classified as BI RADS 0 or 4 often lead to a high rate of unnecessary biopsies, resulting in both superfluous invasive procedures for patients and increased costs for the healthcare system. The aim of our study is to investigate the diagnostic validity of the Kaiser score in predicting malignancy in patients who underwent breast MRI following inconclusive or suspicious findings (BI RADS 0 or 4) on conventional imaging, based on pathology results or clinical follow up. MATERIALS AND METHODS: Between September 2022 and April 2024, 99 patients who underwent breast MRI due to inconclusive results from conventional breast imaging methods (mammography and breast ultrasound) or the detection of suspicious findings (BI RADS 0 or 4), and who had either histopathological evaluation following biopsy under US or MG guidance or were followed for at least 12 months, were included in this single center retrospective study. The 99 patients included in the study were divided into two groups based on histopathology or follow up outcomes (benign lesion group and malignant lesion group). Comparisons were made between these two groups. RESULTS: When comparing benign and malignant groups, statistically significant differences were observed for age (p < 0,001), age at menarche (p = 0,004), breastfeeding status (p = 0,009), menopausal status (p = 0,017), and use of hormone replacement therapy (p = 0,036). MRI BI RADS (p < 0,001) and Kaiser scores (p < 0,001) were notably higher in the malignant group. Kaiser score was identified as the strongest diagnostic predictor of malignancy (AUC = 0,977, 95 % CI: 0.955 0.999; p < 0,001). Using a cut off value of Kaiser score 5, the sensitivity and specificity were 97 % (95 % CI: 84.2 % 99.9 %) and 87.9 % (95 % CI: 77.5 % 94.6 %), respectively. The MRI BI RADS ranked second with a cut off value 4 (AUC = 0.878, 95 % CI: 0.805 0.950; p < 0.001); at this threshold, the sensitivity and specificity were 60.6 % (95 % CI: 42.1 % 77.1 %) and 100 % (95 % CI: 94.6 % 100.0 %), respectively. In multivariable logistic regression, higher Kaiser score (OR = 4.25, p < 0.001) and older age (OR = 1.16, p = 0.041) were associated with higher odds of malignancy, whereas older age at menarche was associated with lower odds (OR = 0.347, p = 0.030). CONCLUSION: For breast lesions classified as BI RADS 0 or 4 on conventional imaging, the Kaiser score provides excellent diagnostic accuracy and may support lesion stratification when used with MRI BI RADS assessment; biopsy decisions should remain based on integrated clinical and imaging findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0829",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood advances",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0829_adverse_impact_of_deletion_of_the_chromosome_6_on_clinical_o.md",
+   "snippet": "Title Adverse impact of deletion of the chromosome 6 on clinical outcomes after allogeneic hematopoietic transplantation Authors Tamaki Masaharu, Zaimoku Yoshitaka, Kawamura Shunto, Fukushima Kentaro, Yanagisawa Ryu, Hirayama Masahiro, Doki",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Blood advances Title Adverse impact of deletion of the chromosome 6 on clinical outcomes after allogeneic hematopoietic transplantation Authors Tamaki Masaharu, Zaimoku Yoshitaka, Kawamura Shunto, Fukushima Kentaro, Yanagisawa Ryu, Hirayama Masahiro, Doki Noriko, Fukuda Takahiro, et al. Journal / DOI Blood advances · DOI: 10.1182/bloodadvances.2026021320 · PMID: 42913459 https://pubmed.ncbi.nlm.nih.gov/42913459/ Abstract Graft versus leukemia (GVL) effect is mainly mediated by alloreactive T and NK cells through human leukocyte antigen (HLA). Although most HLA genes are located on the short arm of chromosome 6, the clinical significance of deletion of the short arm of chromosome 6 (del6p) which could attenuate the GVL effect has not been elucidated. We investigated impact of del6p at the diagnosis of hematological malignancies on allogeneic cell transplantation, using a Japanese registry database. Del6p was highly associated with additional chromosomal abnormalities. In the univariate analysis, the del6p group showed a higher incidence of relapse at 2 years among the entire cohort (2y relapse 48.3% vs 25.7%, P <0.001). Multivariate analysis confirmed that del6p was significantly associated with an increased risk of relapse (HR 1.30 [95% CI: 1.02 1.65], P = 0.036). The del6p group also tended to be associated with relapse, when focusing on patients with complex karyotype (HR 1.25 [95% CI: 0.97 1.60], P = 0.079). Additionally, the impact of del6p on relapse was more evident in the HLA mismatched than in the HLA matched cohort. These results suggest that del6p at diagnosis might attenuate the GVL effect through HLA status. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0828",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Neurology",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0828_racial_disparity_in_stroke_and_chronic_kidney_disease_mortal.md",
+   "snippet": "Title Racial Disparity in Stroke and Chronic Kidney Disease Mortality Among Black Population in the United States (P12 14.002) Authors Noree Wanprapit, Boonyawairote Rabhas, Tantisattamo Ekamol, Rochanaroon Voramol, Kookanok Chutawat, Manka",
+   "text": "Nephrology scraped pubmed PubMed / Neurology Title Racial Disparity in Stroke and Chronic Kidney Disease Mortality Among Black Population in the United States (P12 14.002) Authors Noree Wanprapit, Boonyawairote Rabhas, Tantisattamo Ekamol, Rochanaroon Voramol, Kookanok Chutawat, Mankan Kanita, Mohpichai Nopavit, Kim Seonghyeon, et al. Journal / DOI Neurology · DOI: 10.1212/WNL.0000000000218396 · PMID: 42913446 https://pubmed.ncbi.nlm.nih.gov/42913446/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0827",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Early human development",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0827_early_pancreatic_stone_protein_kinetics_and_subsequent_infla.md",
+   "snippet": "Title Early pancreatic stone protein kinetics and subsequent inflammatory outcomes in extremely preterm neonates: A prospective cohort study Authors Rallis Dimitrios, Lithoxopoulou Maria, Gialamprinou Dimitra, Aggeli Evangelia, Amarantidou ",
+   "text": "Infectious Disease scraped pubmed PubMed / Early human development Title Early pancreatic stone protein kinetics and subsequent inflammatory outcomes in extremely preterm neonates: A prospective cohort study Authors Rallis Dimitrios, Lithoxopoulou Maria, Gialamprinou Dimitra, Aggeli Evangelia, Amarantidou Maria, Kerpiniotis Georgios, Goulordava Athina, Drogouti Eftychia, et al. Journal / DOI Early human development · DOI: 10.1016/j.earlhumdev.2026.106702 · PMID: 42913355 https://pubmed.ncbi.nlm.nih.gov/42913355/ Abstract OBJECTIVE: To evaluate pancreatic stone protein (PSP) levels in extremely preterm neonates and their association with early onset sepsis (EOS), late onset sepsis (LOS), and necrotizing enterocolitis (NEC). STUDY DESIGN: A prospective longitudinal study, evaluating serial PSP, C reactive protein (CRP), and white blood cell (WBC) count during the first ten days after birth. RESULTS: Thirty extremely preterm neonates with a mean gestational age of 26.5 ± 1.8 weeks and a mean birth weight of 890 ± 304 g were enrolled. PSP increased significantly 48 h before LOS presentation, with a diagnostic accuracy higher than that of CRP and WBC (AUROC 0.711, 0.567, and 0.538, respectively). PSP levels also increased from 72 h before NEC onset, with a better discriminatory ability than CRP and WBC (AUROC 0.851, 0.648, and 0.616, respectively). CONCLUSION: PSP may represent a promising early biomarker for LOS and NEC in extremely preterm neonates. Larger multicenter studies are required to validate these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0826",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of preventive cardiology",
+   "confidence": "medium",
+   "date": "2026-10-23",
+   "path": "content/papers/2026/2026-10-23_paper-2026-0826_dose_response_associations_of_exercise_modalities_with_cardi.md",
+   "snippet": "Title Dose Response Associations of Exercise Modalities With Cardiorespiratory Fitness in Heart Failure: A Systematic Review and Bayesian Network Meta Analysis Authors Zhang Wei, Du Minghui, Zhan Yixing, Zhang Zhiyuan, Chen Longwei, Dong Ji",
+   "text": "Cardiology scraped pubmed PubMed / European journal of preventive cardiology Title Dose Response Associations of Exercise Modalities With Cardiorespiratory Fitness in Heart Failure: A Systematic Review and Bayesian Network Meta Analysis Authors Zhang Wei, Du Minghui, Zhan Yixing, Zhang Zhiyuan, Chen Longwei, Dong Jie Journal / DOI European journal of preventive cardiology · DOI: 10.1093/eurjpc/zwag560 · PMID: 42913481 https://pubmed.ncbi.nlm.nih.gov/42913481/ Abstract AIMS: Exercise training improves cardiorespiratory fitness in patients with heart failure, yet the dose response relationship across different exercise modalities remains unclear. This study aimed to evaluate the effects of different exercise modalities and their standardized doses on peak oxygen uptake (VO2peak) in patients with heart failure. METHODS: We systematically searched multiple databases from inception through March 2026 for randomized controlled trials comparing exercise interventions with controls. Exercise modalities were categorized as interval aerobic training (IAT), continuous aerobic training (CAT), resistance training (RT), mind body training (MBT), and their combinations. Exercise dose was uniformly quantified as weekly metabolic equivalents (MET min/week). A Bayesian model based network dose response meta analysis was performed. RESULTS: A total of 100 trials involving 5,353 patients were included. The dose response relationship followed an Emax curve, with ED50 values clustering around 80 90 MET min/week. A weekly dose of 500 MET min yielded considerable benefit, and 750 1000 MET min approached maximal benefit for nearly all modalities. The top three ranked interventions were IAT (Emax = 3.50, 95% CrI: 2.49 4.60), RT (Emax = 3.66, 95% CrI: 1.96 5.85), and IAT+RT (Emax = 3.49, 95% CrI: 1.26 5.79). CONCLUSIONS: The exercise dose response relationship in heart failure follows an Emax curve, with distinct dose benefit profiles across different exercise modalities. Based on the current evidence, the following preliminary considerations may be offered: for patients with limited exercise tolerance, MBT may be considered as one of the preferred options; for those with moderate exercise tolerance, IAT+RT or CAT+RT may be suitable choices; for patients with good exercise tolerance, IAT or RT may be considered; and for patients with comorbid obesity, CAT may be incorporated into a comprehensive management program. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1569",
    "type": "kmle",
