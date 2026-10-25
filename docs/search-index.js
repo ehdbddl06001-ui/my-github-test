@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4017,
+  "total": 4029,
   "byType": {
    "kmle": 1568,
+   "imaging": 440,
    "concept": 111,
    "paper": 837,
-   "imaging": 428,
    "usmle": 210,
    "anatomy": 846,
    "ailab": 14,
@@ -38,33 +38,33 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 100,
    "Hematology": 95,
    "Laboratory Medicine": 85,
-   "산부인과": 65,
-   "순환기": 37,
-   "호흡기": 28,
-   "소화기": 27,
-   "소아과": 24,
+   "산부인과": 66,
+   "순환기": 38,
+   "호흡기": 29,
+   "소화기": 28,
+   "소아과": 25,
    "Physiology": 23,
-   "응급·중환자": 21,
+   "응급·중환자": 22,
+   "혈액·종양": 21,
    "감염": 20,
    "내분비": 20,
    "병리·조직학": 20,
-   "혈액·종양": 20,
-   "신경": 19,
+   "신경": 20,
+   "외과": 20,
    "신장·비뇨기": 19,
-   "외과": 19,
    "Pharmacology": 18,
    "Biochemistry": 17,
+   "예방의학·역학": 17,
+   "피부과": 17,
    "Microbiology": 16,
-   "예방의학·역학": 16,
-   "피부과": 16,
    "Internal Medicine": 13,
    "Immunology": 12,
    "약리": 12,
    "정신과": 12,
    "근골격·류마티스": 11,
    "영상의학": 8,
+   "이비인후과": 8,
    "안과": 7,
-   "이비인후과": 7,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2812,
+   "high": 2824,
    "medium": 1155,
    "low": 50
   },
@@ -692,6 +692,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1570.md",
    "snippet": "66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와",
    "text": "Cardiology Dizziness and a Slow Pulse after Swallowing a Relative's Blood Pressure Pills calcium-channel-blocker-overdose toxicology bradycardia ecg antidote KMLE 2026 / Claude 66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 정맥 날록손 투여 B. 디곡신 특이 항체 조각 C. 정맥 염화칼슘 투여 D. 정맥 글루카곤 투여 E. 정맥 지방유제 투여 아트로핀·수액에 반응하지 않는 서맥·저혈압에 고혈당이 동반되고 칼륨이 정상이면 칼슘통로차단제 중독을 먼저 생각한다. 첫 해독 처치는 정맥 칼슘이다."
+  },
+  {
+   "id": "imaging-2026-0441",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 진단 후 생존 기간",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0441.md",
+   "snippet": "A 66 year old man asks his physician whether he should join a regional screening program for pancreatic cancer that uses annual imaging. The program brochure reports that, among participants whose cancer was detected by screening, mean surv",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 선별검사 뒤 늘어난 진단 후 생존 기간 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 66 year old man asks his physician whether he should join a regional screening program for pancreatic cancer that uses annual imaging. The program brochure reports that, among participants whose cancer was detected by screening, mean survival after diagnosis is 3.4 years, compared with 1.2 years among people in a neighboring region without screening whose cancer was diagnosed after symptoms appeared. The two regions have similar age, sex, and smoking distributions. In both regions, the mean age at death from pancreatic cancer is 71 years, and pancreatic cancer mortality per 100,000 person years has not changed since the program began. Screen detected and symptom detected tumors have a similar proportion of slow growing, low grade histology, and almost all screen detected cancers progressed to symptomatic disease during follow up. Which of the following best explains the longer survival after diagnosis in the screened group? A. Lead time bias B. Length time bias C. Overdiagnosis bias D. Volunteer (selection) bias E. Confounding by age"
+  },
+  {
+   "id": "imaging-2026-0440",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 열과 부속기 종괴를 동반한 골반염증질환",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0440.md",
+   "snippet": "24세 여자가 5일 전부터 시작된 아랫배 통증과 열로 응급실에 왔다. 2주 전 새 성 상대가 생겼고 콘돔은 쓰지 않았다. 마지막 월경은 10일 전이었다. 체온 38.6℃, 혈압 116/72 mmHg, 맥박 102회/분이다. 복부 진찰에서 양쪽 아랫배 압통이 있으나 반발통이나 근육 강직은 없다. 골반 진찰에서 자궁경부의 점액농성 분비물, 자궁경부 움직임 압통과 오른쪽 부속기 압통이 있고 오른쪽 부속기에 종괴가 만져진다. 혈청 β",
+   "text": "산부인과 부인과 — 열과 부속기 종괴를 동반한 골반염증질환 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 24세 여자가 5일 전부터 시작된 아랫배 통증과 열로 응급실에 왔다. 2주 전 새 성 상대가 생겼고 콘돔은 쓰지 않았다. 마지막 월경은 10일 전이었다. 체온 38.6℃, 혈압 116/72 mmHg, 맥박 102회/분이다. 복부 진찰에서 양쪽 아랫배 압통이 있으나 반발통이나 근육 강직은 없다. 골반 진찰에서 자궁경부의 점액농성 분비물, 자궁경부 움직임 압통과 오른쪽 부속기 압통이 있고 오른쪽 부속기에 종괴가 만져진다. 혈청 β hCG 는 음성이고 백혈구는 16,400/mm3 이다. 경질 초음파에서 오른쪽 부속기에 6 cm 크기의 벽이 두껍고 내부에 격막과 부유물이 있는 복합 낭성 종괴가 있다. 처치로 가장 적절한 것은? A. 경구 메트로니다졸 단독 투여 B. 입원하여 정맥 항생제 투여 C. 세프트리악손 근육주사 후 외래 경구 독시사이클린 D. 즉시 개복 전자궁절제술 E. 2주 뒤 경질 초음파 재검"
+  },
+  {
+   "id": "imaging-2026-0439",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 항암 시작 전 요산이 높고 크레아티닌이 오른 버킷림프종",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0439.md",
+   "snippet": "A 28 year old man is admitted to the hospital because of a rapidly enlarging abdominal mass and night sweats for 3 weeks. CT shows bulky mesenteric and retroperitoneal lymphadenopathy, and biopsy shows Burkitt lymphoma. He is scheduled to b",
+   "text": "혈액·종양 혈액·종양 — 항암 시작 전 요산이 높고 크레아티닌이 오른 버킷림프종 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 28 year old man is admitted to the hospital because of a rapidly enlarging abdominal mass and night sweats for 3 weeks. CT shows bulky mesenteric and retroperitoneal lymphadenopathy, and biopsy shows Burkitt lymphoma. He is scheduled to begin chemotherapy tomorrow. His pulse is 98/min, and blood pressure is 124/76 mm Hg. Serum studies show LDH 2,850 U/L, uric acid 11.2 mg/dL, potassium 4.9 mEq/L, phosphorus 4.8 mg/dL, calcium 9.0 mg/dL, and creatinine 1.6 mg/dL (1.0 mg/dL 2 weeks ago). Glucose 6 phosphate dehydrogenase activity is normal. His urine output is 50 mL/h with intravenous fluids. Which of the following is the most appropriate pharmacotherapy to start in addition to aggressive hydration? A. Rasburicase B. Allopurinol C. Febuxostat D. Sodium bicarbonate infusion E. Probenecid"
+  },
+  {
+   "id": "imaging-2026-0438",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 감염 뒤 삼킴 곤란과 폐활량 감소를 보이는 중증근무력증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0438.md",
+   "snippet": "38세 여자가 3일 전부터 심해진 삼킴 곤란과 숨참으로 응급실에 왔다. 2년 전 아세틸콜린수용체 항체 양성 중증근무력증으로 진단받아 피리도스티그민을 복용 중이며, 1주 전 기관지염으로 항생제를 처방받았다. 혈압 126/78 mmHg, 맥박 104회/분, 호흡 26회/분, 산소포화도는 실내 공기에서 95 % 이다. 양쪽 눈꺼풀 처짐과 목 굽힘근 약화가 있고, 말을 하면 콧소리가 나며 숨이 차서 문장을 끊어 말한다. 동공은 정상 ",
+   "text": "신경 신경 — 감염 뒤 삼킴 곤란과 폐활량 감소를 보이는 중증근무력증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 38세 여자가 3일 전부터 심해진 삼킴 곤란과 숨참으로 응급실에 왔다. 2년 전 아세틸콜린수용체 항체 양성 중증근무력증으로 진단받아 피리도스티그민을 복용 중이며, 1주 전 기관지염으로 항생제를 처방받았다. 혈압 126/78 mmHg, 맥박 104회/분, 호흡 26회/분, 산소포화도는 실내 공기에서 95 % 이다. 양쪽 눈꺼풀 처짐과 목 굽힘근 약화가 있고, 말을 하면 콧소리가 나며 숨이 차서 문장을 끊어 말한다. 동공은 정상 크기이고 침 흘림·설사·근섬유다발수축은 없다. 강제폐활량은 15 mL/kg 로 6시간 전 25 mL/kg 에서 감소했고, 동맥혈 PaCO2 는 46 mmHg 이다. 중환자실로 옮겨 기도 확보를 준비하였다. 근력 회복을 위한 치료로 가장 적절한 것은? A. 응급 흉선절제술 B. 네오스티그민 지속 정맥 주입 C. 혈장교환술 D. 피리도스티그민 증량 E. 고용량 메틸프레드니솔론 단독"
+  },
+  {
+   "id": "imaging-2026-0437",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간경변 복수의 자발세균복막염과 신부전 예방",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0437.md",
+   "snippet": "A 56 year old man with alcohol associated cirrhosis is admitted to the hospital because of increasing abdominal girth and mild diffuse abdominal discomfort for 4 days. He stopped drinking alcohol 1 year ago. His medications are spironolacto",
+   "text": "소화기 소화기·간담췌 — 간경변 복수의 자발세균복막염과 신부전 예방 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 56 year old man with alcohol associated cirrhosis is admitted to the hospital because of increasing abdominal girth and mild diffuse abdominal discomfort for 4 days. He stopped drinking alcohol 1 year ago. His medications are spironolactone and furosemide. His temperature is 37.9°C (100.2°F), pulse is 92/min, and blood pressure is 108/64 mm Hg. He is alert and oriented, without asterixis. The abdomen is distended with shifting dullness and mild diffuse tenderness without rigidity. Serum studies show a creatinine concentration of 1.4 mg/dL (baseline 0.9 mg/dL), BUN 34 mg/dL, total bilirubin 4.6 mg/dL, and albumin 2.6 g/dL. Diagnostic paracentesis shows an ascitic fluid neutrophil count of 620/mm3 and total protein 0.9 g/dL; Gram stain shows no organisms. Intravenous cefotaxime is started, and diuretics are held. Which of the following additional interventions is most likely to reduce his risk of renal failure and death? A. Oral rifaximin B. Addition of intravenous metronidazole C. Intravenous albumin on days 1 and 3 D. Large volume paracentesis with albumin E. Intravenous normal saline at 150 mL/h"
+  },
+  {
+   "id": "imaging-2026-0436",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 돌아누울 때 생기는 짧은 회전성 어지럼",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0436.md",
+   "snippet": "62세 여자가 3일 전 아침 침대에서 돌아누울 때 갑자기 시작된 어지럼으로 외래에 왔다. 그 뒤로 고개를 들거나 침대에 누울 때마다 주위가 도는 어지럼이 30초 이내로 지속되다 멎었고, 가만히 있으면 어지럼이 없다. 청력 저하·이명·두통은 없다. 혈압 132/80 mmHg, 맥박 72회/분이다. 신경학적 검사에서 구음장애·복시·운동실조는 없고, 앉은 자세에서 자발 안진은 없다. 머리를 오른쪽으로 45° 돌린 채 빠르게 눕히자 ",
+   "text": "이비인후과 이비인후과 — 돌아누울 때 생기는 짧은 회전성 어지럼 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 62세 여자가 3일 전 아침 침대에서 돌아누울 때 갑자기 시작된 어지럼으로 외래에 왔다. 그 뒤로 고개를 들거나 침대에 누울 때마다 주위가 도는 어지럼이 30초 이내로 지속되다 멎었고, 가만히 있으면 어지럼이 없다. 청력 저하·이명·두통은 없다. 혈압 132/80 mmHg, 맥박 72회/분이다. 신경학적 검사에서 구음장애·복시·운동실조는 없고, 앉은 자세에서 자발 안진은 없다. 머리를 오른쪽으로 45° 돌린 채 빠르게 눕히자 3초 뒤 위로 치며 오른쪽으로 도는 회전성 안진이 약 20초 나타났다가 사라졌고, 반복할수록 약해졌다. 치료로 가장 적절한 것은? A. 아세타졸아미드 복용 B. 입자 재배치법(에플리 수기) C. 메클리진 장기 복용 D. 고용량 경구 프레드니솔론 E. 바비큐 회전법(수평반고리관 정복술)"
+  },
+  {
+   "id": "imaging-2026-0435",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 밤에 심한 가려움과 손가락 사이 굴",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0435.md",
+   "snippet": "A 34 year old woman comes to the physician because of an intensely itchy rash for 3 weeks. The itching is worst at night. Her 6 year old son, who sleeps in her bed, has developed similar itching during the past week. She has no history of a",
+   "text": "피부과 피부 — 밤에 심한 가려움과 손가락 사이 굴 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 34 year old woman comes to the physician because of an intensely itchy rash for 3 weeks. The itching is worst at night. Her 6 year old son, who sleeps in her bed, has developed similar itching during the past week. She has no history of atopic dermatitis and takes no medications. Vital signs are within normal limits. Examination shows excoriated papules and several short, wavy, gray white linear burrows in the finger web spaces and on the flexor surfaces of the wrists, with scattered papules around the umbilicus. The face and scalp are spared. Microscopy of a mineral oil scraping from a burrow shows an eight legged organism and oval eggs. Which of the following is the most appropriate management? A. Permethrin cream for her and all household contacts at once B. Permethrin cream for the patient only C. High potency topical corticosteroid alone D. Oral cephalexin for the patient and her son E. Oral hydroxyzine alone for symptom relief"
+  },
+  {
+   "id": "imaging-2026-0434",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 델타파가 있던 청년의 불규칙한 넓은 QRS 빈맥",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0434.md",
+   "snippet": "24세 남자가 30분 전부터 시작된 가슴 두근거림으로 응급실에 왔다. 전에도 짧은 두근거림이 몇 번 있었으나 저절로 멎었다. 복용하는 약은 없다. 혈압 118/74 mmHg, 맥박 190회/분(불규칙), 호흡 18회/분이고, 의식은 명료하며 흉통은 없다. 심전도에서 RR 간격이 불규칙하고 QRS 폭과 모양이 박동마다 달라지는 넓은 QRS 빈맥이 보이며, 가장 짧은 RR 간격은 0.22초이다. 1년 전 건강검진 심전도에서 PR ",
+   "text": "순환기 순환기 — 델타파가 있던 청년의 불규칙한 넓은 QRS 빈맥 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 24세 남자가 30분 전부터 시작된 가슴 두근거림으로 응급실에 왔다. 전에도 짧은 두근거림이 몇 번 있었으나 저절로 멎었다. 복용하는 약은 없다. 혈압 118/74 mmHg, 맥박 190회/분(불규칙), 호흡 18회/분이고, 의식은 명료하며 흉통은 없다. 심전도에서 RR 간격이 불규칙하고 QRS 폭과 모양이 박동마다 달라지는 넓은 QRS 빈맥이 보이며, 가장 짧은 RR 간격은 0.22초이다. 1년 전 건강검진 심전도에서 PR 간격 0.10초와 델타파가 있었다. 혈청 칼륨은 4.2 mEq/L 이다. 가장 적절한 약물은? A. 디곡신 정맥 주사 B. 프로카인아마이드 정맥 주사 C. 아데노신 정맥 주사 D. 딜티아젬 정맥 주사 E. 메토프롤롤 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0433",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0433.md",
+   "snippet": "A 7 year old boy is brought to the emergency department 1 day after he fell from the monkey bars at a playground and landed on his head and right shoulder. Since then he has held his head tilted to the right with the chin rotated to the lef",
+   "text": "소아과 소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 7 year old boy is brought to the emergency department 1 day after he fell from the monkey bars at a playground and landed on his head and right shoulder. Since then he has held his head tilted to the right with the chin rotated to the left, and he cries when anyone tries to turn his head back to the midline. He has had no recent fever or sore throat. His temperature is 36.8°C (98.2°F). The posterior neck is tender, and there is no mass in either sternocleidomastoid muscle. Strength, sensation, and deep tendon reflexes are normal in all extremities. An axial CT image of the cervical spine at the level of the atlas is shown. Which of the following is the most likely diagnosis? A. Jefferson burst fracture of the atlas B. Congenital muscular torticollis C. Atlanto occipital dissociation D. Hangman fracture of the axis E. Atlantoaxial rotatory subluxation"
+  },
+  {
+   "id": "imaging-2026-0432",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 폐경 후 여성의 단단한 유방 종괴와 초음파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0432.md",
+   "snippet": "53세 여자가 왼쪽 유방에 만져지는 멍울로 외래에 왔다. 2개월 전 샤워하다 처음 알았고 통증은 없다. 폐경은 50세였고 호르몬 치료를 받은 적이 없으며 유방암 가족력은 없다. 왼쪽 유방 위바깥쪽에 지름 약 2 cm 의 단단하고 경계가 불분명한 종괴가 만져지며, 피부 함몰이나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 위치에 경계가 불분명한 고밀도 음영이 있다. 종괴 부위의 유방 초음파 영상은",
+   "text": "외과 외과계 — 폐경 후 여성의 단단한 유방 종괴와 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 53세 여자가 왼쪽 유방에 만져지는 멍울로 외래에 왔다. 2개월 전 샤워하다 처음 알았고 통증은 없다. 폐경은 50세였고 호르몬 치료를 받은 적이 없으며 유방암 가족력은 없다. 왼쪽 유방 위바깥쪽에 지름 약 2 cm 의 단단하고 경계가 불분명한 종괴가 만져지며, 피부 함몰이나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 위치에 경계가 불분명한 고밀도 음영이 있다. 종괴 부위의 유방 초음파 영상은 그림과 같다. 다음 단계로 가장 적절한 것은? A. 미세침흡인 세포검사 후 음성이면 추적 B. 유방 자기공명영상 C. 변형 근치 유방절제술 D. 초음파 유도 중심부 바늘생검 E. 6개월 뒤 추적 초음파"
+  },
+  {
+   "id": "imaging-2026-0431",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 오토바이 사고 뒤 두개-경추 이음부 CT 와 동반 손상 선별",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0431.md",
+   "snippet": "A 42 year old man is brought to the emergency department 50 minutes after he was thrown from his motorcycle in a high speed collision. A rigid cervical collar was placed at the scene. He was intubated for airway protection after he became c",
+   "text": "응급·중환자 응급·중환자·외상 — 오토바이 사고 뒤 두개-경추 이음부 CT 와 동반 손상 선별 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 42 year old man is brought to the emergency department 50 minutes after he was thrown from his motorcycle in a high speed collision. A rigid cervical collar was placed at the scene. He was intubated for airway protection after he became combative. Before sedation, he moved all four extremities to command. His pulse is 96/min, and blood pressure is 132/78 mm Hg. There is a scalp laceration over the occiput. Noncontrast CT of the head shows no intracranial hemorrhage. Focused abdominal sonography shows no free fluid. A coronal reconstruction of the cervical spine CT is shown. Neurosurgery is consulted for occipitocervical stabilization. Which of the following is the most appropriate additional study to screen for an associated injury that can cause a delayed stroke? A. Carotid duplex ultrasonography B. MRI of the brain with diffusion weighted imaging C. Flexion–extension radiographs of the cervical spine D. Transcranial Doppler ultrasonography E. CT angiography of the head and neck"
+  },
+  {
+   "id": "imaging-2026-0430",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 승압제를 끊은 뒤 수분이 많이 쌓인 기계환기 환자",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0430.md",
+   "snippet": "57세 여자가 중환자실에서 기관삽관 6일째이다. 열과 기침으로 입원해 SARS CoV 2 PCR 양성을 확인했고, 저산소혈증이 악화되어 기관삽관한 뒤 덱사메타손과 일회호흡량 6 mL/kg(예측체중)의 기계환기를 받고 있다. 입원 초기에 쓰던 노르에피네프린은 48시간 전에 끊었다. 동결절 기능부전으로 영구 심박조율기를 가지고 있다. 혈압 128/72 mmHg, 맥박 84회/분, 체온 37.4℃이다. 흡입산소분율 0.4, 호기말양",
+   "text": "호흡기 호흡기 — 승압제를 끊은 뒤 수분이 많이 쌓인 기계환기 환자 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 57세 여자가 중환자실에서 기관삽관 6일째이다. 열과 기침으로 입원해 SARS CoV 2 PCR 양성을 확인했고, 저산소혈증이 악화되어 기관삽관한 뒤 덱사메타손과 일회호흡량 6 mL/kg(예측체중)의 기계환기를 받고 있다. 입원 초기에 쓰던 노르에피네프린은 48시간 전에 끊었다. 동결절 기능부전으로 영구 심박조율기를 가지고 있다. 혈압 128/72 mmHg, 맥박 84회/분, 체온 37.4℃이다. 흡입산소분율 0.4, 호기말양압 8 cmH2O 에서 동맥혈 PaO2 는 84 mmHg 이다. 입원 뒤 누적 수분 균형은 +6.2 L 이고, 소변량은 시간당 60 mL, 혈청 크레아티닌은 0.8 mg/dL 이다. 심장초음파에서 좌심실 박출률은 60 % 이다. 오늘 아침 휴대용 흉부 X선 사진은 그림과 같다. 가장 적절한 처치는? A. 엎드린 자세 환기 시작 B. 일회호흡량을 10 mL/kg 로 증량 C. 고빈도 진동 환기로 전환 D. 푸로세미드 정맥 투여로 음성 수분 균형 유도 E. 생리식염수 1 L 정맥 급속 주입"
   },
   {
    "id": "cn.obgyn.menstrual-cycle.ovulation-confirmation",

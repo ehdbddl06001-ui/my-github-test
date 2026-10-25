@@ -2,6 +2,1582 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0433",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT",
+  "type": "소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-25",
+  "vignette": "A 7-year-old boy is brought to the emergency department 1 day after he fell from the monkey bars at a playground and landed on his head and right shoulder. Since then he has held his head tilted to the right with the chin rotated to the left, and he cries when anyone tries to turn his head back to the midline. He has had no recent fever or sore throat. His temperature is 36.8°C (98.2°F). The posterior neck is tender, and there is no mass in either sternocleidomastoid muscle. Strength, sensation, and deep tendon reflexes are normal in all extremities. An axial CT image of the cervical spine at the level of the atlas is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Jefferson burst fracture of the atlas",
+   "Congenital muscular torticollis",
+   "Atlanto-occipital dissociation",
+   "Hangman fracture of the axis",
+   "Atlantoaxial rotatory subluxation"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: After minor trauma the child holds a 'cock-robin' posture (tilt to one side, chin rotated to the other) and cannot correct it. On the axial CT the ring of the atlas is rotated relative to the dens, with the right lateral mass displaced anteriorly — the atlas is locked in rotation on the axis. This is atlantoaxial rotatory subluxation (fixation).\n- 원리: <b>Why C1–C2 is the rotation joint</b>: about half of all cervical rotation occurs at the atlantoaxial joint, which has flat, horizontally oriented facets and is held mainly by ligaments (transverse and alar ligaments and the joint capsules), not by bony interlocking.<br> <b>Why children</b>: in children the facets are shallower, the ligaments and capsules more lax, and the head relatively large, so a minor fall or even pharyngeal inflammation (Grisel syndrome) can let the atlas rotate and stay locked; capsular swelling or muscle spasm then holds it there.<br> <b>Reading the axial CT</b>: in rotatory subluxation the C1 ring stays intact but is turned on the dens — one lateral mass moves forward and the other backward (here the right lateral mass is anterior, matching a chin turned to the left). The posture is the clue: the head tilts toward one side and the chin turns to the other.<br> <b>Pitfall</b>: in young children, unfused synchondroses of the atlas can look like fracture lines; a burst fracture needs separated ring fragments with lateral mass spreading.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Rotatory subluxation (answer)</th><th>Jefferson burst fracture (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Minor fall or rotation; child</b></td><td>Axial load on the vertex (diving), adult</td></tr> <tr><td>Axial CT</td><td>Intact ring rotated on the dens; one lateral mass anterior</td><td>Ring broken in ≥ 2 places, fragments spread outward</td></tr> <tr><td>Posture</td><td>Cock-robin: tilt one way, chin the other</td><td>Neck pain; no fixed rotation</td></tr> </tbody></table> A rotated but continuous ring points to C1–C2 subluxation; a separated ring points to a burst fracture.\n- 오답 이유:\n  - (A) A Jefferson fracture would be correct after a vertical axial load such as a dive into shallow water, with the C1 ring broken and the lateral masses spread outward.\n  - (B) Congenital muscular torticollis presents in early infancy with a firm sternocleidomastoid mass or fibrosis; it would fit a 6-week-old, not an acute post-fall 7-year-old.\n  - (C) Atlanto-occipital dissociation would show a widened occipital condyle–C1 joint after a high-energy injury, usually with severe neurologic deficits or death.\n  - (D) A hangman fracture is a bilateral C2 pars interarticularis fracture from hyperextension, seen on lateral views below the atlas, not as C1 ring rotation.\n- 함정: Seeing a lucent line in a child's C1 ring and calling it a burst fracture — unfused synchondroses mimic fractures; the key finding is rotation of an intact ring on the dens.\n- 학습목표: 외상 뒤 고개를 한쪽으로 기울이고 반대쪽으로 돌린 아이의 C1 축상 CT 에서 환추가 치아돌기에 대해 돌아간 것을 읽어 환축추 회전 아탈구로 진단하고, 환추 파열골절과 구별한다\n- 근거·출처: Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation (fixed rotatory subluxation of the atlanto-axial joint). J Bone Joint Surg Am 1977;59:37-44 · Neal KM, Mohamed AS. Atlantoaxial rotatory subluxation in children. J Am Acad Orthop Surg 2015;23:382-392\n\n## 출처\n- Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report. Medicine (Baltimore). 2021 Apr 23;100(16):e25588. doi: 10.1097/MD.0000000000025588 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "After minor trauma the child holds a 'cock-robin' posture (tilt to one side, chin rotated to the other) and cannot correct it. On the axial CT the ring of the atlas is rotated relative to the dens, with the right lateral mass displaced anteriorly — the atlas is locked in rotation on the axis. This is atlantoaxial rotatory subluxation (fixation)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why C1–C2 is the rotation joint</b>: about half of all cervical rotation occurs at the atlantoaxial joint, which has flat, horizontally oriented facets and is held mainly by ligaments (transverse and alar ligaments and the joint capsules), not by bony interlocking.<br> <b>Why children</b>: in children the facets are shallower, the ligaments and capsules more lax, and the head relatively large, so a minor fall or even pharyngeal inflammation (Grisel syndrome) can let the atlas rotate and stay locked; capsular swelling or muscle spasm then holds it there.<br> <b>Reading the axial CT</b>: in rotatory subluxation the C1 ring stays intact but is turned on the dens — one lateral mass moves forward and the other backward (here the right lateral mass is anterior, matching a chin turned to the left). The posture is the clue: the head tilts toward one side and the chin turns to the other.<br> <b>Pitfall</b>: in young children, unfused synchondroses of the atlas can look like fracture lines; a burst fracture needs separated ring fragments with lateral mass spreading."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Rotatory subluxation (answer)</th><th>Jefferson burst fracture (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Minor fall or rotation; child</b></td><td>Axial load on the vertex (diving), adult</td></tr> <tr><td>Axial CT</td><td>Intact ring rotated on the dens; one lateral mass anterior</td><td>Ring broken in ≥ 2 places, fragments spread outward</td></tr> <tr><td>Posture</td><td>Cock-robin: tilt one way, chin the other</td><td>Neck pain; no fixed rotation</td></tr> </tbody></table> A rotated but continuous ring points to C1–C2 subluxation; a separated ring points to a burst fracture."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A Jefferson fracture would be correct after a vertical axial load such as a dive into shallow water, with the C1 ring broken and the lateral masses spread outward.\n(B) Congenital muscular torticollis presents in early infancy with a firm sternocleidomastoid mass or fibrosis; it would fit a 6-week-old, not an acute post-fall 7-year-old.\n(C) Atlanto-occipital dissociation would show a widened occipital condyle–C1 joint after a high-energy injury, usually with severe neurologic deficits or death.\n(D) A hangman fracture is a bilateral C2 pars interarticularis fracture from hyperextension, seen on lateral views below the atlas, not as C1 ring rotation."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing a lucent line in a child's C1 ring and calling it a burst fracture — unfused synchondroses mimic fractures; the key finding is rotation of an intact ring on the dens."
+   },
+   {
+    "k": "학습목표",
+    "v": "외상 뒤 고개를 한쪽으로 기울이고 반대쪽으로 돌린 아이의 C1 축상 CT 에서 환추가 치아돌기에 대해 돌아간 것을 읽어 환축추 회전 아탈구로 진단하고, 환추 파열골절과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation (fixed rotatory subluxation of the atlanto-axial joint). J Bone Joint Surg Am 1977;59:37-44 · Neal KM, Mohamed AS. Atlantoaxial rotatory subluxation in children. J Am Acad Orthop Surg 2015;23:382-392 ## 출처 Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report. Medicine (Baltimore). 2021 Apr 23;100(16):e25588. doi: 10.1097/MD.0000000000025588 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "외상 뒤 고정된 기울기·회전 자세와 C1 축상 CT 에서 치아돌기에 대해 돌아간 환추로 환축추 회전 아탈구를 진단한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "환추 고리가 흩어지지 않고 통째로 돌아가 한쪽 외측괴만 앞으로 나왔다 — 파열골절은 고리가 바깥으로 벌어진다",
+   "steps": 2,
+   "chain": [
+    "오른쪽으로 기울고 턱이 왼쪽으로 돈 고정 자세 → 상부 경추의 회전 고정",
+    "영상: 환추 고리가 치아돌기에 대해 회전, 오른쪽 외측괴 전방 → 환축추 회전 아탈구"
+   ],
+   "key": [
+    {
+     "item": "영상: 환추 고리가 치아돌기에 대해 돌아가 오른쪽 외측괴가 앞으로 나옴",
+     "why": "회전 아탈구의 직접 소견",
+     "also": []
+    },
+    {
+     "item": "head tilted to the right with the chin rotated to the left",
+     "why": "cock-robin 자세",
+     "also": []
+    },
+    {
+     "item": "fell from the monkey bars",
+     "why": "소아의 경미한 외상 — 흔한 유발 요인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no recent fever or sore throat",
+     "why": "인두 염증 뒤의 그리젤 증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no mass in either sternocleidomastoid muscle",
+     "why": "선천성 근성 사경 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Strength, sensation, and deep tendon reflexes are normal",
+     "why": "신경 손상이 없어 보존적 정복·고정을 먼저 시도할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "경미한 낙상 뒤 cock-robin 자세가 고정되었고 C1 축상 CT 에서 환추가 치아돌기에 대해 돌아가 있다. 환축추 회전 아탈구다.",
+   "switch": {
+    "choice": "A",
+    "condition": "얕은 물에 머리부터 다이빙한 성인에서 환추 고리가 두 곳 이상 끊어지고 외측괴가 바깥으로 벌어졌다면 제퍼슨 파열골절이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0433.png",
+   "caption": "Axial CT at the level of the atlas, bone window — one panel cropped from a published case figure; the two black lines and the panel letter are the authors' original markings (PMC Open Access Subset, CC BY — no adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078422/",
+   "asset_id": "PMC-PMC8078422_Figure1_E",
+   "text": "Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report. Medicine (Baltimore). 2021 Apr 23;100(16):e25588. doi: 10.1097/MD.0000000000025588 (CC BY) — Figure 1"
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0432",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "외과계 — 폐경 후 여성의 단단한 유방 종괴와 초음파",
+  "type": "외과계 — 폐경 후 여성의 단단한 유방 종괴와 초음파",
+  "modality": "US",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-25",
+  "vignette": "53세 여자가 왼쪽 유방에 만져지는 멍울로 외래에 왔다. 2개월 전 샤워하다 처음 알았고 통증은 없다. 폐경은 50세였고 호르몬 치료를 받은 적이 없으며 유방암 가족력은 없다. 왼쪽 유방 위바깥쪽에 지름 약 2 cm 의 단단하고 경계가 불분명한 종괴가 만져지며, 피부 함몰이나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 위치에 경계가 불분명한 고밀도 음영이 있다. 종괴 부위의 유방 초음파 영상은 그림과 같다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "미세침흡인 세포검사 후 음성이면 추적",
+   "유방 자기공명영상",
+   "변형 근치 유방절제술",
+   "초음파 유도 중심부 바늘생검",
+   "6개월 뒤 추적 초음파"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 초음파에서 종괴가 불규칙한 모양, 세로가 긴 비평행 방향, 불명확·각진 외곽을 보인다 — 모두 악성을 시사하는 소견이라 BI-RADS 4~5 이다. 조직 진단이 다음 단계이며, 표준은 영상 유도 중심부 바늘생검이다(조직형·호르몬수용체·HER2 까지 확인).\n- 원리: <b>모양이 말해 주는 성장 방식</b>: 양성 종괴(섬유샘종 등)는 주위 조직을 밀어내며 자라서 타원형·평행 방향·얇은 피막을 가진다. 침윤성 암은 조직면을 가로질러 <b>파고들어</b> 자라므로 외곽이 불명확하거나 각지고 가시 모양이 되고, 유방의 층(피부와 평행한 조직면)을 무시해 <b>세로가 가로보다 긴</b> 비평행 방향을 보인다. 섬유화 반응은 뒤쪽 음향 그림자를 만든다.<br> <b>BI-RADS 와 처치</b>: 3(양성 가능성 높음, 악성 ≤ 2 %)은 6개월 추적, 4(의심)·5(악성 강력 의심, ≥ 95 %)는 생검이다. 하나라도 의심 소견이 있으면 3으로 낮추지 않는다.<br> <b>왜 중심부 바늘생검인가</b>: 조직 구조를 보존해 침윤 여부와 조직형, 에스트로겐·프로게스테론 수용체와 HER2 를 수술 전에 정할 수 있어 수술 범위·선행 항암 여부를 결정한다. 미세침흡인은 세포만 얻어 침윤을 판정하지 못한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중심부 바늘생검(정답)</th><th>6개월 추적 초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해당 BI-RADS</td><td><b>4~5 — 불규칙·비평행·불명확 외곽</b></td><td>3 — 타원형·평행·명확한 외곽</td></tr> <tr><td>악성 가능성</td><td>2 % 초과 ~ 95 % 이상</td><td>2 % 이하</td></tr> <tr><td>얻는 정보</td><td>침윤·조직형·수용체·HER2</td><td>크기·모양의 변화</td></tr> </tbody></table> 악성 소견이 하나라도 있으면 추적이 아니라 생검이다 — 촉진 소견(단단하고 경계 불분명)도 같은 방향이다.\n- 오답 이유:\n  - ① 미세침흡인은 단순 낭종의 흡인이나 림프절 세포 확인에는 쓰이지만, 침윤 여부를 판정하지 못하고 음성이어도 의심 종괴를 배제하지 못한다.\n  - ② 유방 MRI 는 암 진단이 확정된 뒤 병변 범위 평가나 BRCA 보인자 같은 고위험군 선별에 쓰며, 조직 진단을 대신하지 않는다.\n  - ③ 유방절제술은 조직 진단과 병기, 수용체 상태를 확인한 뒤 환자와 수술 방식을 정할 때 고려하며, 진단 전에 하지 않는다.\n  - ⑤ 6개월 추적은 타원형·평행·명확한 외곽의 BI-RADS 3 종괴(예: 젊은 여성의 전형적 섬유샘종)일 때 정답이 된다.\n- 함정: 유방촬영에서 덩어리가 확실하지 않으니 추적하려는 것 — 초음파의 불규칙·비평행·불명확 외곽은 그 자체로 생검 기준이다.\n- 학습목표: 유방 초음파에서 불규칙한 모양·비평행 방향·불명확한 외곽의 저에코 종괴를 악성 의심(BI-RADS 4~5)으로 읽고 초음파 유도 중심부 바늘생검을 고른다\n- 근거·출처: American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound. Reston, VA: ACR; 2013 · NCCN Clinical Practice Guidelines in Oncology: Breast Cancer Screening and Diagnosis. Version 2.2024\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case013 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 종괴가 불규칙한 모양, 세로가 긴 비평행 방향, 불명확·각진 외곽을 보인다 — 모두 악성을 시사하는 소견이라 BI-RADS 4~5 이다. 조직 진단이 다음 단계이며, 표준은 영상 유도 중심부 바늘생검이다(조직형·호르몬수용체·HER2 까지 확인)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>모양이 말해 주는 성장 방식</b>: 양성 종괴(섬유샘종 등)는 주위 조직을 밀어내며 자라서 타원형·평행 방향·얇은 피막을 가진다. 침윤성 암은 조직면을 가로질러 <b>파고들어</b> 자라므로 외곽이 불명확하거나 각지고 가시 모양이 되고, 유방의 층(피부와 평행한 조직면)을 무시해 <b>세로가 가로보다 긴</b> 비평행 방향을 보인다. 섬유화 반응은 뒤쪽 음향 그림자를 만든다.<br> <b>BI-RADS 와 처치</b>: 3(양성 가능성 높음, 악성 ≤ 2 %)은 6개월 추적, 4(의심)·5(악성 강력 의심, ≥ 95 %)는 생검이다. 하나라도 의심 소견이 있으면 3으로 낮추지 않는다.<br> <b>왜 중심부 바늘생검인가</b>: 조직 구조를 보존해 침윤 여부와 조직형, 에스트로겐·프로게스테론 수용체와 HER2 를 수술 전에 정할 수 있어 수술 범위·선행 항암 여부를 결정한다. 미세침흡인은 세포만 얻어 침윤을 판정하지 못한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중심부 바늘생검(정답)</th><th>6개월 추적 초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해당 BI-RADS</td><td><b>4~5 — 불규칙·비평행·불명확 외곽</b></td><td>3 — 타원형·평행·명확한 외곽</td></tr> <tr><td>악성 가능성</td><td>2 % 초과 ~ 95 % 이상</td><td>2 % 이하</td></tr> <tr><td>얻는 정보</td><td>침윤·조직형·수용체·HER2</td><td>크기·모양의 변화</td></tr> </tbody></table> 악성 소견이 하나라도 있으면 추적이 아니라 생검이다 — 촉진 소견(단단하고 경계 불분명)도 같은 방향이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 미세침흡인은 단순 낭종의 흡인이나 림프절 세포 확인에는 쓰이지만, 침윤 여부를 판정하지 못하고 음성이어도 의심 종괴를 배제하지 못한다.\n② 유방 MRI 는 암 진단이 확정된 뒤 병변 범위 평가나 BRCA 보인자 같은 고위험군 선별에 쓰며, 조직 진단을 대신하지 않는다.\n③ 유방절제술은 조직 진단과 병기, 수용체 상태를 확인한 뒤 환자와 수술 방식을 정할 때 고려하며, 진단 전에 하지 않는다.\n⑤ 6개월 추적은 타원형·평행·명확한 외곽의 BI-RADS 3 종괴(예: 젊은 여성의 전형적 섬유샘종)일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "유방촬영에서 덩어리가 확실하지 않으니 추적하려는 것 — 초음파의 불규칙·비평행·불명확 외곽은 그 자체로 생검 기준이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "유방 초음파에서 불규칙한 모양·비평행 방향·불명확한 외곽의 저에코 종괴를 악성 의심(BI-RADS 4~5)으로 읽고 초음파 유도 중심부 바늘생검을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound. Reston, VA: ACR; 2013 · NCCN Clinical Practice Guidelines in Oncology: Breast Cancer Screening and Diagnosis. Version 2.2024 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case013 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "불규칙한 모양·비평행 방향·불명확한 외곽의 저에코 종괴는 BI-RADS 4~5 이므로 초음파 유도 중심부 바늘생검을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "양성 가능성이 높은 BI-RADS 3 소견(타원형·평행·명확한 외곽)이 하나도 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 불규칙 저에코 종괴 + 비평행 방향 + 불명확 외곽 → BI-RADS 4~5",
+    "악성 의심 고형 종괴 → 영상 유도 중심부 바늘생검"
+   ],
+   "key": [
+    {
+     "item": "영상: 불규칙한 저에코 종괴, 세로가 긴 비평행 방향, 불명확한 외곽",
+     "why": "악성 의심 소견의 묶음",
+     "also": []
+    },
+    {
+     "item": "단단하고 경계가 불분명한 종괴",
+     "why": "촉진 소견도 악성 쪽",
+     "also": []
+    },
+    {
+     "item": "경계가 불분명한 고밀도 음영",
+     "why": "유방촬영도 의심 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "겨드랑이 림프절은 만져지지 않는다",
+     "why": "병기에 관한 정보로 생검 결정을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "유방암 가족력은 없다",
+     "why": "가족력이 없어도 의심 종괴의 생검 기준은 같다",
+     "also": []
+    }
+   ],
+   "summary": "초음파에서 불규칙·비평행·불명확 외곽의 저에코 종괴로 BI-RADS 4~5 이다. 다음 단계는 초음파 유도 중심부 바늘생검이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "종괴가 타원형·평행 방향·명확한 외곽의 균질한 저에코로 BI-RADS 3 이라면 6개월 추적 초음파가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0432.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case013",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case013"
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0431",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "응급·중환자·외상 — 오토바이 사고 뒤 두개-경추 이음부 CT 와 동반 손상 선별",
+  "type": "응급·중환자·외상 — 오토바이 사고 뒤 두개-경추 이음부 CT 와 동반 손상 선별",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-25",
+  "vignette": "A 42-year-old man is brought to the emergency department 50 minutes after he was thrown from his motorcycle in a high-speed collision. A rigid cervical collar was placed at the scene. He was intubated for airway protection after he became combative. Before sedation, he moved all four extremities to command. His pulse is 96/min, and blood pressure is 132/78 mm Hg. There is a scalp laceration over the occiput. Noncontrast CT of the head shows no intracranial hemorrhage. Focused abdominal sonography shows no free fluid. A coronal reconstruction of the cervical spine CT is shown. Neurosurgery is consulted for occipitocervical stabilization.",
+  "question": "Which of the following is the most appropriate additional study to screen for an associated injury that can cause a delayed stroke?",
+  "options": [
+   "Carotid duplex ultrasonography",
+   "MRI of the brain with diffusion-weighted imaging",
+   "Flexion–extension radiographs of the cervical spine",
+   "Transcranial Doppler ultrasonography",
+   "CT angiography of the head and neck"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Both occipital condyle–C1 joints are widened and incongruent while the C1–C2 joints below are normal: atlanto-occipital (craniocervical) dissociation. This high-energy upper cervical injury is a high-risk criterion for blunt cerebrovascular injury of the vertebral and internal carotid arteries, which often causes stroke hours to days later. CT angiography of the head and neck is the screening test of choice, so antithrombotic therapy can be started before ischemia occurs.\n- 원리: <b>Why the vertebral artery is at risk</b>: the vertebral artery runs through the C1 transverse foramen, curves posteriorly over the C1 arch, and pierces the atlanto-occipital membrane to enter the skull. Distraction or translation at the occiput–C1 joint stretches it exactly at this fixed curve. The distal internal carotid artery is also stretched over the lateral masses of C1–C2 by hyperextension and rotation.<br> <b>How it causes delayed stroke</b>: stretching tears the intima; a dissection flap or intramural hematoma forms, and platelet thrombus on the injured surface embolizes or occludes the vessel. Most strokes appear after a latent period of hours to days, which is the window for screening and antithrombotic treatment.<br> <b>Screening criteria</b>: the (expanded) Denver and Memphis criteria list cervical spine fractures — especially C1–C3, subluxation, or fractures through the transverse foramen — and craniocervical dissociation as indications. Multidetector CT angiography is fast, noninvasive, and images both vertebral and carotid arteries up to the skull base.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CT angiography (answer)</th><th>Carotid duplex (closest distractor)</th></tr></thead><tbody> <tr><td>Vessels seen</td><td><b>Vertebral and carotid arteries to the skull base</b></td><td>Cervical carotid below the mandible</td></tr> <tr><td>Vertebral V3 (C1–occiput)</td><td>Visualized</td><td>Hidden by bone — not assessable</td></tr> <tr><td>Role in blunt trauma</td><td>Screening test of choice</td><td>Insensitive; misses most injuries</td></tr> </tbody></table> The injury from craniocervical dissociation lies exactly where ultrasound cannot see.\n- 오답 이유:\n  - (A) Carotid duplex would be useful for atherosclerotic stenosis of the cervical carotid bifurcation; it cannot see the vertebral artery at C1 or the distal internal carotid.\n  - (B) Diffusion-weighted MRI shows infarction that has already happened; it would be correct for a patient with a new focal deficit, not for screening before ischemia.\n  - (C) Flexion–extension films would be used for suspected ligamentous instability in an awake, neurologically intact patient without obvious injury; here they are dangerous.\n  - (D) Transcranial Doppler detects intracranial vasospasm or emboli, as after subarachnoid hemorrhage; it does not image the extracranial arterial wall.\n- 함정: Choosing ultrasound because it is noninvasive — the vessel stretched by craniocervical dissociation lies behind the skull base, where only CT angiography reaches.\n- 학습목표: 관상 CT 에서 양쪽 후두과-환추 관절이 벌어진 두개-경추 분리를 읽고, 이것이 둔상성 뇌혈관 손상의 고위험 기준이므로 머리·목 CT 혈관조영으로 선별한다\n- 근거·출처: Kim DY, et al. Evaluation and management of blunt cerebrovascular injury: a practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg 2020;88:875-887 · Geddes AE, et al. Expanded screening criteria for blunt cerebrovascular injury: a bigger impact than anticipated. Am J Surg 2016;212:1167-1174\n\n## 출처\n- Atlanto-Occipital Dissociation With Catastrophic Neurological Injury: Ethical Challenges in the Intensive Care Setting. Cureus. 2025 Dec 13;17(12):e99105. doi: 10.7759/cureus.99105 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Both occipital condyle–C1 joints are widened and incongruent while the C1–C2 joints below are normal: atlanto-occipital (craniocervical) dissociation. This high-energy upper cervical injury is a high-risk criterion for blunt cerebrovascular injury of the vertebral and internal carotid arteries, which often causes stroke hours to days later. CT angiography of the head and neck is the screening test of choice, so antithrombotic therapy can be started before ischemia occurs."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the vertebral artery is at risk</b>: the vertebral artery runs through the C1 transverse foramen, curves posteriorly over the C1 arch, and pierces the atlanto-occipital membrane to enter the skull. Distraction or translation at the occiput–C1 joint stretches it exactly at this fixed curve. The distal internal carotid artery is also stretched over the lateral masses of C1–C2 by hyperextension and rotation.<br> <b>How it causes delayed stroke</b>: stretching tears the intima; a dissection flap or intramural hematoma forms, and platelet thrombus on the injured surface embolizes or occludes the vessel. Most strokes appear after a latent period of hours to days, which is the window for screening and antithrombotic treatment.<br> <b>Screening criteria</b>: the (expanded) Denver and Memphis criteria list cervical spine fractures — especially C1–C3, subluxation, or fractures through the transverse foramen — and craniocervical dissociation as indications. Multidetector CT angiography is fast, noninvasive, and images both vertebral and carotid arteries up to the skull base."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CT angiography (answer)</th><th>Carotid duplex (closest distractor)</th></tr></thead><tbody> <tr><td>Vessels seen</td><td><b>Vertebral and carotid arteries to the skull base</b></td><td>Cervical carotid below the mandible</td></tr> <tr><td>Vertebral V3 (C1–occiput)</td><td>Visualized</td><td>Hidden by bone — not assessable</td></tr> <tr><td>Role in blunt trauma</td><td>Screening test of choice</td><td>Insensitive; misses most injuries</td></tr> </tbody></table> The injury from craniocervical dissociation lies exactly where ultrasound cannot see."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Carotid duplex would be useful for atherosclerotic stenosis of the cervical carotid bifurcation; it cannot see the vertebral artery at C1 or the distal internal carotid.\n(B) Diffusion-weighted MRI shows infarction that has already happened; it would be correct for a patient with a new focal deficit, not for screening before ischemia.\n(C) Flexion–extension films would be used for suspected ligamentous instability in an awake, neurologically intact patient without obvious injury; here they are dangerous.\n(D) Transcranial Doppler detects intracranial vasospasm or emboli, as after subarachnoid hemorrhage; it does not image the extracranial arterial wall."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing ultrasound because it is noninvasive — the vessel stretched by craniocervical dissociation lies behind the skull base, where only CT angiography reaches."
+   },
+   {
+    "k": "학습목표",
+    "v": "관상 CT 에서 양쪽 후두과-환추 관절이 벌어진 두개-경추 분리를 읽고, 이것이 둔상성 뇌혈관 손상의 고위험 기준이므로 머리·목 CT 혈관조영으로 선별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kim DY, et al. Evaluation and management of blunt cerebrovascular injury: a practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg 2020;88:875-887 · Geddes AE, et al. Expanded screening criteria for blunt cerebrovascular injury: a bigger impact than anticipated. Am J Surg 2016;212:1167-1174 ## 출처 Atlanto-Occipital Dissociation With Catastrophic Neurological Injury: Ethical Challenges in the Intensive Care Setting. Cureus. 2025 Dec 13;17(12):e99105. doi: 10.7759/cureus.99105 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "양쪽 후두과-환추 관절이 벌어진 두개-경추 분리는 둔상성 뇌혈관 손상의 고위험 기준이므로 머리·목 CT 혈관조영으로 선별한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "손상 위치가 C1-후두골 높이 — 척추동맥 V3 와 원위 내경동맥은 초음파로 보이지 않는다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 후두과-C1 관절 간격 확대 + C1-C2 정상 → 두개-경추 분리",
+    "상부 경추 손상 = 둔상성 뇌혈관 손상 고위험 기준 → CT 혈관조영 선별"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 후두과-환추 관절 간격이 넓고 어긋남",
+     "why": "두개-경추 분리",
+     "also": []
+    },
+    {
+     "item": "thrown from his motorcycle in a high-speed collision",
+     "why": "고에너지 기전",
+     "also": []
+    },
+    {
+     "item": "screen for an associated injury that can cause a delayed stroke",
+     "why": "물음이 혈관 손상 선별을 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "he moved all four extremities to command",
+     "why": "척수 손상은 뚜렷하지 않다 — 선별이 목적",
+     "also": []
+    },
+    {
+     "item": "Noncontrast CT of the head shows no intracranial hemorrhage",
+     "why": "출혈이 없어 손상이 발견되면 항혈전 치료를 할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "scalp laceration over the occiput",
+     "why": "충격 부위를 말할 뿐 검사 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "관상 CT 에서 양쪽 후두과-C1 관절이 벌어진 두개-경추 분리다. 둔상성 뇌혈관 손상의 고위험 기준이므로 머리·목 CT 혈관조영으로 척추·경동맥을 선별한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 환자가 이미 한쪽 팔다리 마비 같은 새 국소 신경 결손을 보이면 경색 확인을 위해 확산강조 MRI 가 필요하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0431.jpg",
+   "caption": "Coronal CT reconstruction of the craniocervical junction and cervical spine; red arrows are from the original figure (PMC Open Access Subset, CC BY — single-panel figure as published, no cropping or adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12794498/",
+   "asset_id": "PMC-PMC12794498_Figure1",
+   "text": "Atlanto-Occipital Dissociation With Catastrophic Neurological Injury: Ethical Challenges in the Intensive Care Setting. Cureus. 2025 Dec 13;17(12):e99105. doi: 10.7759/cureus.99105 (CC BY) — Figure 1"
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0430",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "호흡기 — 승압제를 끊은 뒤 수분이 많이 쌓인 기계환기 환자",
+  "type": "호흡기 — 승압제를 끊은 뒤 수분이 많이 쌓인 기계환기 환자",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-25",
+  "vignette": "57세 여자가 중환자실에서 기관삽관 6일째이다. 열과 기침으로 입원해 SARS-CoV-2 PCR 양성을 확인했고, 저산소혈증이 악화되어 기관삽관한 뒤 덱사메타손과 일회호흡량 6 mL/kg(예측체중)의 기계환기를 받고 있다. 입원 초기에 쓰던 노르에피네프린은 48시간 전에 끊었다. 동결절 기능부전으로 영구 심박조율기를 가지고 있다. 혈압 128/72 mmHg, 맥박 84회/분, 체온 37.4℃이다. 흡입산소분율 0.4, 호기말양압 8 cmH2O 에서 동맥혈 PaO2 는 84 mmHg 이다. 입원 뒤 누적 수분 균형은 +6.2 L 이고, 소변량은 시간당 60 mL, 혈청 크레아티닌은 0.8 mg/dL 이다. 심장초음파에서 좌심실 박출률은 60 % 이다. 오늘 아침 휴대용 흉부 X선 사진은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "엎드린 자세 환기 시작",
+   "일회호흡량을 10 mL/kg 로 증량",
+   "고빈도 진동 환기로 전환",
+   "푸로세미드 정맥 투여로 음성 수분 균형 유도",
+   "생리식염수 1 L 정맥 급속 주입"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 양쪽 폐야의 퍼진 음영, PaO2/FiO2 = 84/0.4 = 210, 정상 좌심실 기능 — 심장성 폐부종이 아닌 급성호흡곤란증후군(ARDS)이다. 승압제를 48시간 전에 끊어 쇼크가 풀렸고, 누적 수분이 +6.2 L 이며 소변량·크레아티닌이 정상이므로 이뇨제로 음성 수분 균형을 만드는 보존적 수분 전략이 가장 적절하다.\n- 원리: <b>ARDS 의 부종은 「새는 모세혈관」이다</b>: 폐포-모세혈관 장벽이 염증으로 손상되어 정수압이 정상이어도 단백질이 많은 액체가 간질·폐포로 샌다. 그래서 같은 양의 수액이라도 정상 폐보다 훨씬 많이 폐로 빠져나가고, 폐 안 물의 양이 산소화와 폐 탄성을 직접 나쁘게 한다.<br> <b>왜 쇼크가 풀린 뒤에 말리나</b>: 소생기(쇼크)에는 장기 관류가 먼저라 수액을 주지만, 승압제를 끊은 뒤에도 남은 양성 수분 균형은 폐부종만 늘린다. FACTT 시험에서 쇼크가 없는 ARDS 환자에게 이뇨제로 수분을 줄인 군은 사망률 차이 없이 <b>기계환기 없는 날</b>과 중환자실 밖 날이 늘었고 투석은 늘지 않았다.<br> <b>조건</b>: 소변량과 크레아티닌이 유지되고 승압제가 필요 없을 때 한다 — 이 환자는 세 가지를 모두 갖추었다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">보존적 수분 전략(정답)</th><th>엎드린 자세 환기(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>쇼크가 풀린 ARDS + 양성 수분 균형</b></td><td>PaO2/FiO2 &lt; 150 인 중등도~중증 ARDS</td></tr> <tr><td>이 환자</td><td>승압제 중단 48시간, +6.2 L, 소변량·크레아티닌 정상</td><td>PaO2/FiO2 210 — 기준 미달</td></tr> <tr><td>근거</td><td>FACTT — 기계환기 없는 날 증가</td><td>PROSEVA — P/F &lt; 150 에서 사망률 감소</td></tr> </tbody></table> 산소화가 P/F 150 아래로 나빠지면 엎드린 자세가 먼저이고, 그 위에서는 저일회호흡량을 유지하며 수분을 줄인다.\n- 오답 이유:\n  - ① 엎드린 자세 환기는 PaO2/FiO2 가 150 미만인 중등도~중증 ARDS 에서 정답이 되며, 이 환자의 값은 210 이다.\n  - ② 일회호흡량 증량은 ARDS 에서 폐 과팽창 손상을 늘려 사망률을 높인다 — 어떤 조건에서도 6 mL/kg 근처를 유지하는 것이 원칙이다.\n  - ③ 고빈도 진동 환기는 대규모 시험에서 사망률을 줄이지 못하거나 늘렸으며, 일반 환기로 버틸 수 없는 구조 상황에서만 고려한다.\n  - ⑤ 생리식염수 급속 주입은 승압제가 필요한 쇼크나 소변량 감소를 동반한 저혈량이 있을 때 정답이 되며, 이 환자에게는 폐부종을 늘린다.\n- 함정: 양쪽 폐 음영이 심하니 산소화를 위해 엎드린 자세부터 하려는 것 — P/F 210 은 기준 밖이고, 이 단계의 문제는 쌓인 수분이다.\n- 학습목표: 쇼크가 풀린 급성호흡곤란증후군 환자에서 누적 수분이 많고 콩팥 기능이 유지되면 이뇨제로 보존적 수분 전략을 쓰고, 엎드린 자세 환기의 적응(P/F < 150)과 구별한다\n- 근거·출처: National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury. N Engl J Med 2006;354:2564-2575 · Guérin C, et al. Prone positioning in severe acute respiratory distress syndrome. N Engl J Med 2013;368:2159-2168 · Qadir N, et al. An update on management of adult patients with ARDS: an official ATS clinical practice guideline. Am J Respir Crit Care Med 2024;209:24-36\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …32539920 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "양쪽 폐야의 퍼진 음영, PaO2/FiO2 = 84/0.4 = 210, 정상 좌심실 기능 — 심장성 폐부종이 아닌 급성호흡곤란증후군(ARDS)이다. 승압제를 48시간 전에 끊어 쇼크가 풀렸고, 누적 수분이 +6.2 L 이며 소변량·크레아티닌이 정상이므로 이뇨제로 음성 수분 균형을 만드는 보존적 수분 전략이 가장 적절하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>ARDS 의 부종은 「새는 모세혈관」이다</b>: 폐포-모세혈관 장벽이 염증으로 손상되어 정수압이 정상이어도 단백질이 많은 액체가 간질·폐포로 샌다. 그래서 같은 양의 수액이라도 정상 폐보다 훨씬 많이 폐로 빠져나가고, 폐 안 물의 양이 산소화와 폐 탄성을 직접 나쁘게 한다.<br> <b>왜 쇼크가 풀린 뒤에 말리나</b>: 소생기(쇼크)에는 장기 관류가 먼저라 수액을 주지만, 승압제를 끊은 뒤에도 남은 양성 수분 균형은 폐부종만 늘린다. FACTT 시험에서 쇼크가 없는 ARDS 환자에게 이뇨제로 수분을 줄인 군은 사망률 차이 없이 <b>기계환기 없는 날</b>과 중환자실 밖 날이 늘었고 투석은 늘지 않았다.<br> <b>조건</b>: 소변량과 크레아티닌이 유지되고 승압제가 필요 없을 때 한다 — 이 환자는 세 가지를 모두 갖추었다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">보존적 수분 전략(정답)</th><th>엎드린 자세 환기(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>쇼크가 풀린 ARDS + 양성 수분 균형</b></td><td>PaO2/FiO2 &lt; 150 인 중등도~중증 ARDS</td></tr> <tr><td>이 환자</td><td>승압제 중단 48시간, +6.2 L, 소변량·크레아티닌 정상</td><td>PaO2/FiO2 210 — 기준 미달</td></tr> <tr><td>근거</td><td>FACTT — 기계환기 없는 날 증가</td><td>PROSEVA — P/F &lt; 150 에서 사망률 감소</td></tr> </tbody></table> 산소화가 P/F 150 아래로 나빠지면 엎드린 자세가 먼저이고, 그 위에서는 저일회호흡량을 유지하며 수분을 줄인다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 엎드린 자세 환기는 PaO2/FiO2 가 150 미만인 중등도~중증 ARDS 에서 정답이 되며, 이 환자의 값은 210 이다.\n② 일회호흡량 증량은 ARDS 에서 폐 과팽창 손상을 늘려 사망률을 높인다 — 어떤 조건에서도 6 mL/kg 근처를 유지하는 것이 원칙이다.\n③ 고빈도 진동 환기는 대규모 시험에서 사망률을 줄이지 못하거나 늘렸으며, 일반 환기로 버틸 수 없는 구조 상황에서만 고려한다.\n⑤ 생리식염수 급속 주입은 승압제가 필요한 쇼크나 소변량 감소를 동반한 저혈량이 있을 때 정답이 되며, 이 환자에게는 폐부종을 늘린다."
+   },
+   {
+    "k": "함정",
+    "v": "양쪽 폐 음영이 심하니 산소화를 위해 엎드린 자세부터 하려는 것 — P/F 210 은 기준 밖이고, 이 단계의 문제는 쌓인 수분이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "쇼크가 풀린 급성호흡곤란증후군 환자에서 누적 수분이 많고 콩팥 기능이 유지되면 이뇨제로 보존적 수분 전략을 쓰고, 엎드린 자세 환기의 적응(P/F < 150)과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury. N Engl J Med 2006;354:2564-2575 · Guérin C, et al. Prone positioning in severe acute respiratory distress syndrome. N Engl J Med 2013;368:2159-2168 · Qadir N, et al. An update on management of adult patients with ARDS: an official ATS clinical practice guideline. Am J Respir Crit Care Med 2024;209:24-36 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …32539920 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "쇼크가 풀린 ARDS 에서 누적 수분이 많고 콩팥 기능이 유지되므로 이뇨제로 음성 수분 균형을 만든다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "PaO2/FiO2 가 210 으로 엎드린 자세의 기준(150 미만)에 미치지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 폐야의 퍼진 음영 + P/F 210 + 좌심실 박출률 정상 → ARDS",
+    "노르에피네프린 중단 48시간 → 쇼크가 풀린 시기",
+    "누적 +6.2 L + 소변량·크레아티닌 정상 → 이뇨제로 보존적 수분 전략"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐야의 퍼진 그물·간유리 음영",
+     "why": "ARDS 의 영상 기준",
+     "also": []
+    },
+    {
+     "item": "PaO2 는 84 mmHg",
+     "why": "FiO2 0.4 와 함께 P/F 210 — 엎드린 자세 기준 밖",
+     "also": []
+    },
+    {
+     "item": "노르에피네프린은 48시간 전에 끊었다",
+     "why": "쇼크가 풀렸다 — 수분을 줄일 수 있는 시기",
+     "also": []
+    },
+    {
+     "item": "누적 수분 균형은 +6.2 L",
+     "why": "줄일 수분이 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 박출률은 60 %",
+     "why": "심장성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈청 크레아티닌은 0.8 mg/dL",
+     "why": "이뇨제를 쓸 수 있는 콩팥 기능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "영구 심박조율기",
+     "why": "영상의 기기를 설명할 뿐 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 폐 음영·P/F 210·정상 좌심실 기능으로 ARDS 이다. 쇼크가 풀렸고 수분이 +6.2 L 쌓였으며 콩팥 기능이 정상이므로 푸로세미드로 음성 수분 균형을 만든다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 환자의 PaO2/FiO2 가 FiO2 0.6 에서 120 으로 떨어졌다면 엎드린 자세 환기를 먼저 시작한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0430.png",
+   "caption": "휴대용 반좌위 전후 흉부 X선, 위치·방향 글자는 원본의 것 (TCIA, CC BY 4.0 — DICOM 을 표준 창으로 변환, 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1777499773346790962182932539920",
+   "asset_id": "TCIA-COVID19_AR-71068392439772",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …32539920"
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0441",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 진단 후 생존 기간",
+  "type": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 진단 후 생존 기간",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-25",
+  "vignette": "A 66-year-old man asks his physician whether he should join a regional screening program for pancreatic cancer that uses annual imaging. The program brochure reports that, among participants whose cancer was detected by screening, mean survival after diagnosis is 3.4 years, compared with 1.2 years among people in a neighboring region without screening whose cancer was diagnosed after symptoms appeared. The two regions have similar age, sex, and smoking distributions. In both regions, the mean age at death from pancreatic cancer is 71 years, and pancreatic cancer mortality per 100,000 person-years has not changed since the program began. Screen-detected and symptom-detected tumors have a similar proportion of slow-growing, low-grade histology, and almost all screen-detected cancers progressed to symptomatic disease during follow-up.",
+  "question": "Which of the following best explains the longer survival after diagnosis in the screened group?",
+  "options": [
+   "Lead-time bias",
+   "Length-time bias",
+   "Overdiagnosis bias",
+   "Volunteer (selection) bias",
+   "Confounding by age"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Survival after diagnosis is longer in the screened group, but people die at the same age and disease-specific mortality is unchanged. Screening has only moved the date of diagnosis earlier, adding the interval between screen detection and the time symptoms would have appeared — lead-time bias. Similar tumor grades exclude length-time bias, progression of nearly all screen-detected cancers excludes overdiagnosis, and unchanged population mortality with similar demographics argues against volunteer bias or confounding.\n- 원리: <b>Why survival from diagnosis is a misleading yardstick</b>: survival is measured from the date of diagnosis to death. Screening detects disease in its preclinical phase — the sojourn time before symptoms. If earlier treatment does not change the course, death occurs on the same date, but the clock started earlier, so survival appears longer by exactly the lead time.<br> <b>How the three screening biases differ</b>: lead-time bias moves the starting point; <b>length-time bias</b> arises because periodic screening preferentially catches slow-growing tumors with long preclinical phases, which have better prognosis anyway; <b>overdiagnosis</b> is the extreme form, detecting tumors that would never have caused symptoms or death. Each inflates survival and case counts without benefit.<br> <b>The unbiased outcome</b>: disease-specific mortality in the whole population (deaths per person-years), ideally from a randomized trial of screening versus no screening. Only a fall in mortality shows that screening changes outcomes.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lead-time bias (answer)</th><th>Length-time bias (closest distractor)</th></tr></thead><tbody> <tr><td>Cause</td><td><b>Earlier diagnosis date, same death date</b></td><td>Screening preferentially finds slow-growing tumors</td></tr> <tr><td>Tumor biology in screened group</td><td>Same as symptomatic tumors</td><td>More indolent, lower grade</td></tr> <tr><td>Age at death / mortality</td><td>Unchanged</td><td>Unchanged</td></tr> </tbody></table> Both leave mortality unchanged; the tell is tumor biology — similar grades point to lead time, an excess of indolent tumors points to length time.\n- 오답 이유:\n  - (B) Length-time bias would explain the result if screen-detected tumors were disproportionately slow-growing and low-grade; here the grade distribution is similar.\n  - (C) Overdiagnosis would be likely if many screen-detected cancers never progressed or caused symptoms; almost all of these progressed during follow-up.\n  - (D) Volunteer bias would apply if healthier, health-conscious people joined the program, which would tend to lower their mortality; mortality was unchanged.\n  - (E) Confounding by age would require the regions to differ in age; their age, sex, and smoking distributions are similar.\n- 함정: Choosing length-time bias because survival is longer with screening — it needs indolent tumors; with similar biology and unchanged death age, only the start of the clock moved.\n- 학습목표: 선별검사 군의 진단 후 생존이 길어졌지만 사망 나이와 질병 사망률이 그대로면 리드타임 비뚤림으로 설명하고, 길이 비뚤림·과잉진단과 구별한다\n- 근거·출처: Gordis L. Epidemiology, 5th ed. Philadelphia: Elsevier Saunders; 2014. Chapter 18: Epidemiologic approach to evaluating screening programs · Welch HG, Black WC. Overdiagnosis in cancer. J Natl Cancer Inst 2010;102:605-613",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Survival after diagnosis is longer in the screened group, but people die at the same age and disease-specific mortality is unchanged. Screening has only moved the date of diagnosis earlier, adding the interval between screen detection and the time symptoms would have appeared — lead-time bias. Similar tumor grades exclude length-time bias, progression of nearly all screen-detected cancers excludes overdiagnosis, and unchanged population mortality with similar demographics argues against volunteer bias or confounding."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why survival from diagnosis is a misleading yardstick</b>: survival is measured from the date of diagnosis to death. Screening detects disease in its preclinical phase — the sojourn time before symptoms. If earlier treatment does not change the course, death occurs on the same date, but the clock started earlier, so survival appears longer by exactly the lead time.<br> <b>How the three screening biases differ</b>: lead-time bias moves the starting point; <b>length-time bias</b> arises because periodic screening preferentially catches slow-growing tumors with long preclinical phases, which have better prognosis anyway; <b>overdiagnosis</b> is the extreme form, detecting tumors that would never have caused symptoms or death. Each inflates survival and case counts without benefit.<br> <b>The unbiased outcome</b>: disease-specific mortality in the whole population (deaths per person-years), ideally from a randomized trial of screening versus no screening. Only a fall in mortality shows that screening changes outcomes."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lead-time bias (answer)</th><th>Length-time bias (closest distractor)</th></tr></thead><tbody> <tr><td>Cause</td><td><b>Earlier diagnosis date, same death date</b></td><td>Screening preferentially finds slow-growing tumors</td></tr> <tr><td>Tumor biology in screened group</td><td>Same as symptomatic tumors</td><td>More indolent, lower grade</td></tr> <tr><td>Age at death / mortality</td><td>Unchanged</td><td>Unchanged</td></tr> </tbody></table> Both leave mortality unchanged; the tell is tumor biology — similar grades point to lead time, an excess of indolent tumors points to length time."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Length-time bias would explain the result if screen-detected tumors were disproportionately slow-growing and low-grade; here the grade distribution is similar.\n(C) Overdiagnosis would be likely if many screen-detected cancers never progressed or caused symptoms; almost all of these progressed during follow-up.\n(D) Volunteer bias would apply if healthier, health-conscious people joined the program, which would tend to lower their mortality; mortality was unchanged.\n(E) Confounding by age would require the regions to differ in age; their age, sex, and smoking distributions are similar."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing length-time bias because survival is longer with screening — it needs indolent tumors; with similar biology and unchanged death age, only the start of the clock moved."
+   },
+   {
+    "k": "학습목표",
+    "v": "선별검사 군의 진단 후 생존이 길어졌지만 사망 나이와 질병 사망률이 그대로면 리드타임 비뚤림으로 설명하고, 길이 비뚤림·과잉진단과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 5th ed. Philadelphia: Elsevier Saunders; 2014. Chapter 18: Epidemiologic approach to evaluating screening programs · Welch HG, Black WC. Overdiagnosis in cancer. J Natl Cancer Inst 2010;102:605-613"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "진단 후 생존은 길어졌으나 사망 나이와 질병 사망률이 같으므로 진단 시점만 앞당긴 리드타임 비뚤림이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "선별 발견 종양과 증상 발견 종양의 저등급 비율이 비슷하다 — 느린 종양의 과다 표집이 아니다",
+   "steps": 3,
+   "chain": [
+    "생존 3.4년 대 1.2년인데 사망 나이 71세로 같고 사망률 불변 → 결과가 아닌 측정 시작점의 차이",
+    "종양 등급 비슷 → 길이 비뚤림 배제, 거의 모두 진행 → 과잉진단 배제",
+    "두 지역 인구 구성 비슷 → 교란·자원자 비뚤림 가능성 낮음 → 리드타임 비뚤림"
+   ],
+   "key": [
+    {
+     "item": "mean survival after diagnosis is 3.4 years",
+     "why": "겉보기 생존 이득",
+     "also": []
+    },
+    {
+     "item": "the mean age at death from pancreatic cancer is 71 years",
+     "why": "사망 시점이 같다",
+     "also": []
+    },
+    {
+     "item": "mortality per 100,000 person-years has not changed",
+     "why": "실제 이득 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "similar proportion of slow-growing, low-grade histology",
+     "why": "길이 비뚤림 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "almost all screen-detected cancers progressed to symptomatic disease",
+     "why": "과잉진단 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "similar age, sex, and smoking distributions",
+     "why": "교란 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "A 66-year-old man asks his physician",
+     "why": "질문의 맥락일 뿐 판단에 쓰이지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "선별 군의 진단 후 생존이 길지만 사망 나이와 사망률은 같고, 종양 등급과 진행 양상, 인구 구성도 비슷하다. 진단 시점만 앞당긴 리드타임 비뚤림이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "선별로 발견된 종양에 저등급·느리게 자라는 종양이 훨씬 많았다면 길이 비뚤림이 더 적절한 설명이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0440",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "부인과 — 열과 부속기 종괴를 동반한 골반염증질환",
+  "type": "부인과 — 열과 부속기 종괴를 동반한 골반염증질환",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-25",
+  "vignette": "24세 여자가 5일 전부터 시작된 아랫배 통증과 열로 응급실에 왔다. 2주 전 새 성 상대가 생겼고 콘돔은 쓰지 않았다. 마지막 월경은 10일 전이었다. 체온 38.6℃, 혈압 116/72 mmHg, 맥박 102회/분이다. 복부 진찰에서 양쪽 아랫배 압통이 있으나 반발통이나 근육 강직은 없다. 골반 진찰에서 자궁경부의 점액농성 분비물, 자궁경부 움직임 압통과 오른쪽 부속기 압통이 있고 오른쪽 부속기에 종괴가 만져진다. 혈청 β-hCG 는 음성이고 백혈구는 16,400/mm3 이다. 경질 초음파에서 오른쪽 부속기에 6 cm 크기의 벽이 두껍고 내부에 격막과 부유물이 있는 복합 낭성 종괴가 있다.",
+  "question": "처치로 가장 적절한 것은?",
+  "options": [
+   "경구 메트로니다졸 단독 투여",
+   "입원하여 정맥 항생제 투여",
+   "세프트리악손 근육주사 후 외래 경구 독시사이클린",
+   "즉시 개복 전자궁절제술",
+   "2주 뒤 경질 초음파 재검"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 자궁경부 움직임 압통·부속기 압통·점액농성 분비물로 골반염증질환이고, 열과 함께 부속기에 벽이 두꺼운 6 cm 복합 낭성 종괴가 있어 난관난소농양이 동반되었다. 난관난소농양은 입원 치료 기준이며, 혈역학적으로 안정하고 파열 징후가 없으므로 정맥 항생제(세포테탄 또는 세폭시틴 + 독시사이클린, 혐기균을 덮는 메트로니다졸 추가 등)로 시작한다.\n- 원리: <b>골반염증질환이 농양이 되는 길</b>: 자궁경부의 임균·클라미디아가 자궁내막과 난관으로 올라가고, 질 혐기균·장내 세균이 뒤따라 섞이면서 난관과 난소가 엉겨 붙어 농양 벽을 만든다. 그래서 난관난소농양은 <b>다균성(특히 혐기균)</b>이다.<br> <b>왜 입원·정맥 투여인가</b>: 농양 안은 혈류가 적고 산성이라 경구 항생제의 농도가 충분하지 않고, 파열되면 범발성 복막염·패혈증으로 생명이 위험해진다. 그래서 관찰하면서 혐기균까지 덮는 정맥 항생제를 쓰고, 48~72시간 안에 열·통증·백혈구가 좋아지지 않거나 농양이 크면(대개 7~8 cm 이상) 영상 유도 배액이나 수술을 더한다.<br> <b>즉시 수술의 기준</b>: 파열 징후(갑자기 심해진 통증·복막 자극·저혈압)가 있을 때다. 젊은 여성에서는 가임력을 위해 가능한 한 보존 치료와 최소 범위 수술을 먼저 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">입원 정맥 항생제(정답)</th><th>외래 근육주사 + 경구 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>난관난소농양</b>·고열과 전신 증상·임신·경구 실패·외과 응급 배제 불가</td><td>경증~중등도 골반염증질환, 농양 없음</td></tr> <tr><td>이 환자</td><td>6 cm 복합 낭성 종괴 + 38.6℃</td><td>해당하지 않음</td></tr> <tr><td>항균 범위</td><td>혐기균까지 정맥으로 충분한 농도</td><td>농양 내부 농도 부족</td></tr> </tbody></table> 같은 골반염증질환이라도 초음파의 농양 하나가 치료 장소를 바꾼다.\n- 오답 이유:\n  - ① 경구 메트로니다졸 단독은 세균성 질증이나 트리코모나스 질염의 치료이며, 임균·클라미디아와 농양을 덮지 못한다.\n  - ③ 세프트리악손 근육주사 후 외래 독시사이클린(+메트로니다졸)은 농양이 없고 경구 복용이 가능한 경증~중등도 골반염증질환에서 정답이 된다.\n  - ④ 즉시 개복은 농양 파열로 복막 자극·저혈압이 생겼을 때 정답이 되며, 그때도 젊은 여성은 가임력 보존을 위해 범위를 줄인다.\n  - ⑤ 2주 뒤 재검은 무증상 단순 기능성 낭종의 추적에 쓰며, 열과 압통을 동반한 농양을 그대로 두면 파열할 수 있다.\n- 함정: 골반염증질환이니 외래 표준 처방을 하는 것 — 초음파의 난관난소농양은 그 자체로 입원·정맥 치료 기준이다.\n- 학습목표: 골반염증질환에 난관난소농양이 동반되면 입원해 정맥 항생제로 치료하고, 외래 치료나 즉시 수술과 구별한다\n- 근거·출처: Workowski KA, et al. Sexually transmitted infections treatment guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187 · Brunham RC, et al. Pelvic inflammatory disease. N Engl J Med 2015;372:2039-2048",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "자궁경부 움직임 압통·부속기 압통·점액농성 분비물로 골반염증질환이고, 열과 함께 부속기에 벽이 두꺼운 6 cm 복합 낭성 종괴가 있어 난관난소농양이 동반되었다. 난관난소농양은 입원 치료 기준이며, 혈역학적으로 안정하고 파열 징후가 없으므로 정맥 항생제(세포테탄 또는 세폭시틴 + 독시사이클린, 혐기균을 덮는 메트로니다졸 추가 등)로 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>골반염증질환이 농양이 되는 길</b>: 자궁경부의 임균·클라미디아가 자궁내막과 난관으로 올라가고, 질 혐기균·장내 세균이 뒤따라 섞이면서 난관과 난소가 엉겨 붙어 농양 벽을 만든다. 그래서 난관난소농양은 <b>다균성(특히 혐기균)</b>이다.<br> <b>왜 입원·정맥 투여인가</b>: 농양 안은 혈류가 적고 산성이라 경구 항생제의 농도가 충분하지 않고, 파열되면 범발성 복막염·패혈증으로 생명이 위험해진다. 그래서 관찰하면서 혐기균까지 덮는 정맥 항생제를 쓰고, 48~72시간 안에 열·통증·백혈구가 좋아지지 않거나 농양이 크면(대개 7~8 cm 이상) 영상 유도 배액이나 수술을 더한다.<br> <b>즉시 수술의 기준</b>: 파열 징후(갑자기 심해진 통증·복막 자극·저혈압)가 있을 때다. 젊은 여성에서는 가임력을 위해 가능한 한 보존 치료와 최소 범위 수술을 먼저 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">입원 정맥 항생제(정답)</th><th>외래 근육주사 + 경구 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>난관난소농양</b>·고열과 전신 증상·임신·경구 실패·외과 응급 배제 불가</td><td>경증~중등도 골반염증질환, 농양 없음</td></tr> <tr><td>이 환자</td><td>6 cm 복합 낭성 종괴 + 38.6℃</td><td>해당하지 않음</td></tr> <tr><td>항균 범위</td><td>혐기균까지 정맥으로 충분한 농도</td><td>농양 내부 농도 부족</td></tr> </tbody></table> 같은 골반염증질환이라도 초음파의 농양 하나가 치료 장소를 바꾼다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 메트로니다졸 단독은 세균성 질증이나 트리코모나스 질염의 치료이며, 임균·클라미디아와 농양을 덮지 못한다.\n③ 세프트리악손 근육주사 후 외래 독시사이클린(+메트로니다졸)은 농양이 없고 경구 복용이 가능한 경증~중등도 골반염증질환에서 정답이 된다.\n④ 즉시 개복은 농양 파열로 복막 자극·저혈압이 생겼을 때 정답이 되며, 그때도 젊은 여성은 가임력 보존을 위해 범위를 줄인다.\n⑤ 2주 뒤 재검은 무증상 단순 기능성 낭종의 추적에 쓰며, 열과 압통을 동반한 농양을 그대로 두면 파열할 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "골반염증질환이니 외래 표준 처방을 하는 것 — 초음파의 난관난소농양은 그 자체로 입원·정맥 치료 기준이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "골반염증질환에 난관난소농양이 동반되면 입원해 정맥 항생제로 치료하고, 외래 치료나 즉시 수술과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA, et al. Sexually transmitted infections treatment guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187 · Brunham RC, et al. Pelvic inflammatory disease. N Engl J Med 2015;372:2039-2048"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "골반염증질환에 난관난소농양이 동반되었고 파열 징후가 없으므로 입원해 정맥 항생제를 쓴다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "경질 초음파의 6 cm 복합 낭성 종괴(농양) — 외래 치료 대상이 아니다",
+   "steps": 2,
+   "chain": [
+    "자궁경부 움직임 압통 + 부속기 압통 + 점액농성 분비물 → 골반염증질환",
+    "열 + 벽 두꺼운 6 cm 복합 낭성 종괴, 파열 징후 없음 → 난관난소농양 → 입원 정맥 항생제"
+   ],
+   "key": [
+    {
+     "item": "자궁경부 움직임 압통과 오른쪽 부속기 압통",
+     "why": "골반염증질환의 최소 진단 기준",
+     "also": []
+    },
+    {
+     "item": "6 cm 크기의 벽이 두껍고 내부에 격막과 부유물이 있는 복합 낭성 종괴",
+     "why": "난관난소농양",
+     "also": []
+    },
+    {
+     "item": "체온 38.6℃",
+     "why": "전신 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 β-hCG 는 음성",
+     "why": "자궁외임신 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "반발통이나 근육 강직은 없다",
+     "why": "파열 징후 없음 — 즉시 수술이 아니라 보존 치료",
+     "also": []
+    },
+    {
+     "item": "혈압 116/72 mmHg",
+     "why": "혈역학 안정 — 항생제부터",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "마지막 월경은 10일 전",
+     "why": "월경 직후 발생이 흔하다는 배경일 뿐 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "골반염증질환에 열과 6 cm 복합 낭성 종괴로 난관난소농양이 동반되었고 파열 징후는 없다. 입원해 혐기균까지 덮는 정맥 항생제를 쓴다.",
+   "switch": {
+    "choice": "D",
+    "condition": "갑자기 통증이 심해지며 복부 전체 반발통과 저혈압이 생겼다면 농양 파열로 즉시 수술이 필요하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0439",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "혈액·종양 — 항암 시작 전 요산이 높고 크레아티닌이 오른 버킷림프종",
+  "type": "혈액·종양 — 항암 시작 전 요산이 높고 크레아티닌이 오른 버킷림프종",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-25",
+  "vignette": "A 28-year-old man is admitted to the hospital because of a rapidly enlarging abdominal mass and night sweats for 3 weeks. CT shows bulky mesenteric and retroperitoneal lymphadenopathy, and biopsy shows Burkitt lymphoma. He is scheduled to begin chemotherapy tomorrow. His pulse is 98/min, and blood pressure is 124/76 mm Hg. Serum studies show LDH 2,850 U/L, uric acid 11.2 mg/dL, potassium 4.9 mEq/L, phosphorus 4.8 mg/dL, calcium 9.0 mg/dL, and creatinine 1.6 mg/dL (1.0 mg/dL 2 weeks ago). Glucose-6-phosphate dehydrogenase activity is normal. His urine output is 50 mL/h with intravenous fluids.",
+  "question": "Which of the following is the most appropriate pharmacotherapy to start in addition to aggressive hydration?",
+  "options": [
+   "Rasburicase",
+   "Allopurinol",
+   "Febuxostat",
+   "Sodium bicarbonate infusion",
+   "Probenecid"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Bulky Burkitt lymphoma with a very high LDH is the highest-risk setting for tumor lysis syndrome, and he already has hyperuricemia (11.2 mg/dL) and acute kidney injury before chemotherapy. Rasburicase, a recombinant urate oxidase, rapidly converts existing uric acid to soluble allantoin; G6PD deficiency has been excluded, so it can be given safely.\n- 원리: <b>Where uric acid comes from</b>: lysed tumor cells release nucleic acids; purines are broken down to hypoxanthine, then xanthine, then uric acid by xanthine oxidase. Humans lack urate oxidase (uricase), so uric acid is the end product and precipitates in the acidic distal tubule, causing obstructive and inflammatory kidney injury.<br> <b>Why rasburicase here</b>: allopurinol and febuxostat block xanthine oxidase and prevent new uric acid formation, but they do nothing to uric acid already present and take days to lower levels. Rasburicase supplies the missing enzyme, converting uric acid to allantoin, which is 5–10 times more soluble, and lowers levels within hours — the priority when uric acid is already high and kidney function is falling.<br> <b>Why check G6PD</b>: the reaction produces hydrogen peroxide; in G6PD deficiency, red cells cannot regenerate glutathione and develop hemolysis and methemoglobinemia.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Rasburicase (answer)</th><th>Allopurinol (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Degrades existing uric acid to allantoin</b></td><td>Blocks new uric acid formation</td></tr> <tr><td>Onset</td><td>Hours</td><td>Days; existing urate unchanged</td></tr> <tr><td>Best setting</td><td>High-risk TLS, uric acid ≥ 8, or AKI</td><td>Low–intermediate risk prophylaxis</td></tr> <tr><td>Contraindication</td><td>G6PD deficiency</td><td>Caution with azathioprine</td></tr> </tbody></table> Prevention of new urate is not enough when the urate that is already there is injuring the kidney.\n- 오답 이유:\n  - (B) Allopurinol would be correct for intermediate-risk prophylaxis with normal uric acid and kidney function, or when rasburicase is contraindicated by G6PD deficiency.\n  - (C) Febuxostat is an alternative to allopurinol for prophylaxis in patients with allopurinol hypersensitivity; it also does not remove existing uric acid.\n  - (D) Bicarbonate alkalinization is no longer recommended: it promotes calcium phosphate precipitation and xanthine stones, and would be considered only with metabolic acidosis.\n  - (E) Probenecid increases urinary uric acid excretion and is used for gout in underexcretors; in tumor lysis it would increase tubular uric acid precipitation.\n- 함정: Choosing allopurinol, the familiar prophylactic — it does not lower uric acid that is already high, and this patient already has kidney injury.\n- 학습목표: 항암 시작 전 이미 고요산혈증과 급성 신손상이 있는 고위험 종양용해증후군에서 G6PD 정상을 확인하고 라스부리카제를 고른다\n- 근거·출처: Howard SC, et al. The tumor lysis syndrome. N Engl J Med 2011;364:1844-1854 · Coiffier B, et al. Guidelines for the management of pediatric and adult tumor lysis syndrome: an evidence-based review. J Clin Oncol 2008;26:2767-2778",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Bulky Burkitt lymphoma with a very high LDH is the highest-risk setting for tumor lysis syndrome, and he already has hyperuricemia (11.2 mg/dL) and acute kidney injury before chemotherapy. Rasburicase, a recombinant urate oxidase, rapidly converts existing uric acid to soluble allantoin; G6PD deficiency has been excluded, so it can be given safely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Where uric acid comes from</b>: lysed tumor cells release nucleic acids; purines are broken down to hypoxanthine, then xanthine, then uric acid by xanthine oxidase. Humans lack urate oxidase (uricase), so uric acid is the end product and precipitates in the acidic distal tubule, causing obstructive and inflammatory kidney injury.<br> <b>Why rasburicase here</b>: allopurinol and febuxostat block xanthine oxidase and prevent new uric acid formation, but they do nothing to uric acid already present and take days to lower levels. Rasburicase supplies the missing enzyme, converting uric acid to allantoin, which is 5–10 times more soluble, and lowers levels within hours — the priority when uric acid is already high and kidney function is falling.<br> <b>Why check G6PD</b>: the reaction produces hydrogen peroxide; in G6PD deficiency, red cells cannot regenerate glutathione and develop hemolysis and methemoglobinemia."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Rasburicase (answer)</th><th>Allopurinol (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Degrades existing uric acid to allantoin</b></td><td>Blocks new uric acid formation</td></tr> <tr><td>Onset</td><td>Hours</td><td>Days; existing urate unchanged</td></tr> <tr><td>Best setting</td><td>High-risk TLS, uric acid ≥ 8, or AKI</td><td>Low–intermediate risk prophylaxis</td></tr> <tr><td>Contraindication</td><td>G6PD deficiency</td><td>Caution with azathioprine</td></tr> </tbody></table> Prevention of new urate is not enough when the urate that is already there is injuring the kidney."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Allopurinol would be correct for intermediate-risk prophylaxis with normal uric acid and kidney function, or when rasburicase is contraindicated by G6PD deficiency.\n(C) Febuxostat is an alternative to allopurinol for prophylaxis in patients with allopurinol hypersensitivity; it also does not remove existing uric acid.\n(D) Bicarbonate alkalinization is no longer recommended: it promotes calcium phosphate precipitation and xanthine stones, and would be considered only with metabolic acidosis.\n(E) Probenecid increases urinary uric acid excretion and is used for gout in underexcretors; in tumor lysis it would increase tubular uric acid precipitation."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing allopurinol, the familiar prophylactic — it does not lower uric acid that is already high, and this patient already has kidney injury."
+   },
+   {
+    "k": "학습목표",
+    "v": "항암 시작 전 이미 고요산혈증과 급성 신손상이 있는 고위험 종양용해증후군에서 G6PD 정상을 확인하고 라스부리카제를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Howard SC, et al. The tumor lysis syndrome. N Engl J Med 2011;364:1844-1854 · Coiffier B, et al. Guidelines for the management of pediatric and adult tumor lysis syndrome: an evidence-based review. J Clin Oncol 2008;26:2767-2778"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "고위험 종양용해증후군 상황에서 이미 요산이 높고 크레아티닌이 올랐으며 G6PD 가 정상이므로 라스부리카제를 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "요산 11.2 mg/dL 와 급성 신손상이 이미 있다 — 새 요산 생성만 막는 약으로는 부족하다",
+   "steps": 3,
+   "chain": [
+    "거대 버킷림프종 + LDH 2,850 → 종양용해증후군 최고위험",
+    "요산 11.2 + 크레아티닌 1.0 → 1.6 → 이미 진행 중인 요산 신손상",
+    "G6PD 정상 → 라스부리카제"
+   ],
+   "key": [
+    {
+     "item": "biopsy shows Burkitt lymphoma",
+     "why": "세포 회전이 가장 빠른 종양",
+     "also": []
+    },
+    {
+     "item": "uric acid 11.2 mg/dL",
+     "why": "이미 고요산혈증",
+     "also": []
+    },
+    {
+     "item": "creatinine 1.6 mg/dL (1.0 mg/dL 2 weeks ago)",
+     "why": "급성 신손상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Glucose-6-phosphate dehydrogenase activity is normal",
+     "why": "라스부리카제 금기 배제",
+     "also": []
+    },
+    {
+     "item": "LDH 2,850 U/L",
+     "why": "종양 부담 — 위험도 상승",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "calcium 9.0 mg/dL",
+     "why": "정상 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "거대 버킷림프종으로 종양용해 최고위험군이며, 항암 전부터 요산 11.2 mg/dL 와 급성 신손상이 있다. G6PD 가 정상이므로 수액과 함께 라스부리카제를 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "G6PD 결핍이 확인되었다면 라스부리카제는 금기이고 알로퓨리놀과 수액, 필요하면 투석을 준비한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0438",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "신경 — 감염 뒤 삼킴 곤란과 폐활량 감소를 보이는 중증근무력증",
+  "type": "신경 — 감염 뒤 삼킴 곤란과 폐활량 감소를 보이는 중증근무력증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-25",
+  "vignette": "38세 여자가 3일 전부터 심해진 삼킴 곤란과 숨참으로 응급실에 왔다. 2년 전 아세틸콜린수용체 항체 양성 중증근무력증으로 진단받아 피리도스티그민을 복용 중이며, 1주 전 기관지염으로 항생제를 처방받았다. 혈압 126/78 mmHg, 맥박 104회/분, 호흡 26회/분, 산소포화도는 실내 공기에서 95 % 이다. 양쪽 눈꺼풀 처짐과 목 굽힘근 약화가 있고, 말을 하면 콧소리가 나며 숨이 차서 문장을 끊어 말한다. 동공은 정상 크기이고 침 흘림·설사·근섬유다발수축은 없다. 강제폐활량은 15 mL/kg 로 6시간 전 25 mL/kg 에서 감소했고, 동맥혈 PaCO2 는 46 mmHg 이다. 중환자실로 옮겨 기도 확보를 준비하였다.",
+  "question": "근력 회복을 위한 치료로 가장 적절한 것은?",
+  "options": [
+   "응급 흉선절제술",
+   "네오스티그민 지속 정맥 주입",
+   "혈장교환술",
+   "피리도스티그민 증량",
+   "고용량 메틸프레드니솔론 단독"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 중증근무력증 환자가 감염(과 일부 항생제) 뒤 구음·삼킴 장애와 강제폐활량 15 mL/kg(20 mL/kg 미만), PaCO2 상승을 보인다 — 근무력증 위기다. 동공 정상·침 흘림·설사·근섬유다발수축이 없어 콜린성 위기 가능성은 낮다. 기도 확보와 함께 빠르게 작용하는 혈장교환술(또는 IVIG)이 근력 회복 치료다.\n- 원리: <b>무엇이 근력을 앗아가나</b>: 아세틸콜린수용체 항체는 신경근접합부의 수용체를 가리고, 교차결합으로 내재화시키며, 보체를 활성화해 접합후막을 파괴한다. 남은 수용체가 안전역 아래로 떨어지면 반복 사용할수록 근력이 빠진다. 감염·수술·일부 약(아미노글리코사이드·플루오로퀴놀론·마크롤라이드·마그네슘)이 이 안전역을 더 낮춰 위기를 부른다.<br> <b>왜 혈장교환·IVIG 인가</b>: 혈장교환은 순환 항체를 직접 걸러 내 며칠 안에 효과가 나고, IVIG 는 Fc 수용체 포화·항체 분해 촉진으로 비슷한 속도로 작용한다. 스테로이드와 다른 면역억제제는 효과까지 몇 주가 걸리고, 고용량 스테로이드는 시작 초기 1~2주에 오히려 근력을 악화시킬 수 있어 위기에는 단독으로 쓰지 않는다.<br> <b>콜린억제제를 늘리지 않는 이유</b>: 남은 수용체가 적어 효과가 한정적이고, 과량이면 탈분극 차단(콜린성 위기)과 기도 분비물 증가로 호흡을 더 해친다. 위기 동안에는 대개 일시 중단한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">근무력증 위기 — 혈장교환(정답)</th><th>피리도스티그민 증량(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용 대상</td><td><b>원인인 항체를 제거</b></td><td>남은 수용체에서 아세틸콜린을 늘림</td></tr> <tr><td>위기에서의 효과</td><td>며칠 안에 근력 회복</td><td>한정적 — 수용체가 부족</td></tr> <tr><td>위험</td><td>저혈압·혈관 접근 합병증</td><td>콜린성 위기·기도 분비물 증가</td></tr> </tbody></table> 축동·침 흘림·설사·근섬유다발수축이 있으면 과량(콜린성)을, 없으면 질병 악화(근무력증 위기)를 먼저 생각한다.\n- 오답 이유:\n  - ① 흉선절제술은 항체 양성 전신형 환자에서 안정된 시기에 계획해 장기 관해율을 높이는 수술이며, 위기 중 응급으로 하지 않는다.\n  - ② 네오스티그민 지속 주입은 일부 기관에서 경구 투여가 불가능할 때 유지 용량을 대신하는 정도이며, 위기를 되돌리는 치료가 아니다.\n  - ④ 피리도스티그민 증량은 위기가 아닌 가벼운 근력 저하에서 용량이 부족할 때 정답이 되며, 위기에는 분비물을 늘려 호흡을 해칠 수 있다.\n  - ⑤ 고용량 메틸프레드니솔론 단독은 초기 악화 위험이 있어, 혈장교환·IVIG 로 회복을 시작한 뒤 장기 면역억제로 더할 때 적절하다.\n- 함정: 근무력증이니 콜린억제제를 늘리는 것 — 위기의 원인은 항체이고, 빠른 회복은 항체를 줄이는 혈장교환·IVIG 에서 온다.\n- 학습목표: 감염 뒤 구음·삼킴 곤란과 강제폐활량 감소를 보이는 중증근무력증 위기를 콜린성 위기와 구별하고, 기도 확보와 함께 혈장교환술(또는 IVIG)로 치료한다\n- 근거·출처: Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96:114-122 · Gilhus NE. Myasthenia gravis. N Engl J Med 2016;375:2570-2581",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "중증근무력증 환자가 감염(과 일부 항생제) 뒤 구음·삼킴 장애와 강제폐활량 15 mL/kg(20 mL/kg 미만), PaCO2 상승을 보인다 — 근무력증 위기다. 동공 정상·침 흘림·설사·근섬유다발수축이 없어 콜린성 위기 가능성은 낮다. 기도 확보와 함께 빠르게 작용하는 혈장교환술(또는 IVIG)이 근력 회복 치료다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 근력을 앗아가나</b>: 아세틸콜린수용체 항체는 신경근접합부의 수용체를 가리고, 교차결합으로 내재화시키며, 보체를 활성화해 접합후막을 파괴한다. 남은 수용체가 안전역 아래로 떨어지면 반복 사용할수록 근력이 빠진다. 감염·수술·일부 약(아미노글리코사이드·플루오로퀴놀론·마크롤라이드·마그네슘)이 이 안전역을 더 낮춰 위기를 부른다.<br> <b>왜 혈장교환·IVIG 인가</b>: 혈장교환은 순환 항체를 직접 걸러 내 며칠 안에 효과가 나고, IVIG 는 Fc 수용체 포화·항체 분해 촉진으로 비슷한 속도로 작용한다. 스테로이드와 다른 면역억제제는 효과까지 몇 주가 걸리고, 고용량 스테로이드는 시작 초기 1~2주에 오히려 근력을 악화시킬 수 있어 위기에는 단독으로 쓰지 않는다.<br> <b>콜린억제제를 늘리지 않는 이유</b>: 남은 수용체가 적어 효과가 한정적이고, 과량이면 탈분극 차단(콜린성 위기)과 기도 분비물 증가로 호흡을 더 해친다. 위기 동안에는 대개 일시 중단한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">근무력증 위기 — 혈장교환(정답)</th><th>피리도스티그민 증량(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용 대상</td><td><b>원인인 항체를 제거</b></td><td>남은 수용체에서 아세틸콜린을 늘림</td></tr> <tr><td>위기에서의 효과</td><td>며칠 안에 근력 회복</td><td>한정적 — 수용체가 부족</td></tr> <tr><td>위험</td><td>저혈압·혈관 접근 합병증</td><td>콜린성 위기·기도 분비물 증가</td></tr> </tbody></table> 축동·침 흘림·설사·근섬유다발수축이 있으면 과량(콜린성)을, 없으면 질병 악화(근무력증 위기)를 먼저 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 흉선절제술은 항체 양성 전신형 환자에서 안정된 시기에 계획해 장기 관해율을 높이는 수술이며, 위기 중 응급으로 하지 않는다.\n② 네오스티그민 지속 주입은 일부 기관에서 경구 투여가 불가능할 때 유지 용량을 대신하는 정도이며, 위기를 되돌리는 치료가 아니다.\n④ 피리도스티그민 증량은 위기가 아닌 가벼운 근력 저하에서 용량이 부족할 때 정답이 되며, 위기에는 분비물을 늘려 호흡을 해칠 수 있다.\n⑤ 고용량 메틸프레드니솔론 단독은 초기 악화 위험이 있어, 혈장교환·IVIG 로 회복을 시작한 뒤 장기 면역억제로 더할 때 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "근무력증이니 콜린억제제를 늘리는 것 — 위기의 원인은 항체이고, 빠른 회복은 항체를 줄이는 혈장교환·IVIG 에서 온다."
+   },
+   {
+    "k": "학습목표",
+    "v": "감염 뒤 구음·삼킴 곤란과 강제폐활량 감소를 보이는 중증근무력증 위기를 콜린성 위기와 구별하고, 기도 확보와 함께 혈장교환술(또는 IVIG)로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96:114-122 · Gilhus NE. Myasthenia gravis. N Engl J Med 2016;375:2570-2581"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "감염 뒤 구음·삼킴 곤란과 강제폐활량 15 mL/kg 는 근무력증 위기이므로 기도 확보와 함께 혈장교환술을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "동공 정상·침 흘림·설사·근섬유다발수축이 없어 콜린 과량이 아니며, 위기에는 콜린억제제 증량이 효과가 없다",
+   "steps": 3,
+   "chain": [
+    "중증근무력증 + 감염·항생제 뒤 구음·삼킴 곤란 → 악화 유발",
+    "강제폐활량 15 mL/kg·PaCO2 46 → 근무력증 위기(콜린성 징후 없음)",
+    "빠른 항체 제거 → 혈장교환술"
+   ],
+   "key": [
+    {
+     "item": "강제폐활량은 15 mL/kg 로 6시간 전 25 mL/kg 에서 감소",
+     "why": "20 mL/kg 미만 — 위기",
+     "also": []
+    },
+    {
+     "item": "동맥혈 PaCO2 는 46 mmHg",
+     "why": "환기 부전의 시작",
+     "also": []
+    },
+    {
+     "item": "1주 전 기관지염으로 항생제를 처방받았다",
+     "why": "감염·약물 — 위기 유발 요인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "동공은 정상 크기이고 침 흘림·설사·근섬유다발수축은 없다",
+     "why": "콜린성 위기 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "산소포화도는 실내 공기에서 95 %",
+     "why": "신경근 호흡부전에서는 산소포화도가 늦게 떨어진다 — 안심 근거가 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈압 126/78 mmHg",
+     "why": "혈장교환에 필요한 혈역학 안정 — 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "감염과 항생제 뒤 구음·삼킴 곤란, 강제폐활량 15 mL/kg 와 PaCO2 상승으로 근무력증 위기이고 콜린성 징후는 없다. 기도 확보와 함께 혈장교환술(또는 IVIG)로 치료한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "위기가 아니라 저녁에만 눈꺼풀 처짐이 심해지는 가벼운 악화이고 피리도스티그민 용량이 적다면 증량이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0437",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "소화기·간담췌 — 간경변 복수의 자발세균복막염과 신부전 예방",
+  "type": "소화기·간담췌 — 간경변 복수의 자발세균복막염과 신부전 예방",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-25",
+  "vignette": "A 56-year-old man with alcohol-associated cirrhosis is admitted to the hospital because of increasing abdominal girth and mild diffuse abdominal discomfort for 4 days. He stopped drinking alcohol 1 year ago. His medications are spironolactone and furosemide. His temperature is 37.9°C (100.2°F), pulse is 92/min, and blood pressure is 108/64 mm Hg. He is alert and oriented, without asterixis. The abdomen is distended with shifting dullness and mild diffuse tenderness without rigidity. Serum studies show a creatinine concentration of 1.4 mg/dL (baseline 0.9 mg/dL), BUN 34 mg/dL, total bilirubin 4.6 mg/dL, and albumin 2.6 g/dL. Diagnostic paracentesis shows an ascitic fluid neutrophil count of 620/mm3 and total protein 0.9 g/dL; Gram stain shows no organisms. Intravenous cefotaxime is started, and diuretics are held.",
+  "question": "Which of the following additional interventions is most likely to reduce his risk of renal failure and death?",
+  "options": [
+   "Oral rifaximin",
+   "Addition of intravenous metronidazole",
+   "Intravenous albumin on days 1 and 3",
+   "Large-volume paracentesis with albumin",
+   "Intravenous normal saline at 150 mL/h"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: An ascitic neutrophil count of 620/mm3 without a surgical source is spontaneous bacterial peritonitis. Because creatinine is above 1 mg/dL, BUN above 30 mg/dL, and bilirubin above 4 mg/dL, he is at high risk of hepatorenal kidney injury. Intravenous albumin (1.5 g/kg on day 1 and 1 g/kg on day 3) with cefotaxime reduced renal failure and in-hospital mortality compared with cefotaxime alone.\n- 원리: <b>Why SBP damages the kidneys</b>: in cirrhosis, splanchnic vasodilation already lowers effective arterial blood volume. Infection releases cytokines and nitric oxide that dilate the splanchnic bed further; the renin–angiotensin and sympathetic systems respond with intense renal vasoconstriction, producing hepatorenal-type acute kidney injury in about one-third of patients given antibiotics alone.<br> <b>Why albumin and not saline</b>: albumin stays in the circulation longer than crystalloid and expands effective arterial volume; it also binds endotoxin and nitric oxide and has antioxidant effects. In the landmark trial, albumin with cefotaxime lowered renal impairment from 33% to 10% and in-hospital mortality from 29% to 10%. Benefit was concentrated in patients with creatinine > 1 mg/dL, BUN > 30 mg/dL, or bilirubin > 4 mg/dL.<br> <b>Why stop diuretics and avoid big taps</b>: both reduce effective volume at the moment the kidneys are most vulnerable.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">IV albumin (answer)</th><th>IV normal saline (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on volume</td><td><b>Sustained expansion of effective arterial volume</b></td><td>Mostly redistributes into ascites and edema</td></tr> <tr><td>Trial evidence in SBP</td><td>Less renal failure and death</td><td>No survival benefit; worsens ascites</td></tr> <tr><td>Who benefits most</td><td>Creatinine &gt; 1, BUN &gt; 30, bilirubin &gt; 4</td><td>—</td></tr> </tbody></table> In SBP, the kidney injury comes from vasodilation, not salt depletion — albumin answers the mechanism.\n- 오답 이유:\n  - (A) Rifaximin is used to prevent recurrent hepatic encephalopathy; he has no asterixis or confusion, and it does not reduce renal failure in SBP.\n  - (B) Metronidazole would be added for secondary peritonitis from a perforation or abscess, suggested by polymicrobial Gram stain or very high ascitic protein and LDH.\n  - (D) Large-volume paracentesis is the treatment for tense ascites causing dyspnea; during SBP with rising creatinine it further reduces effective volume.\n  - (E) Saline would be reasonable for prerenal injury from vomiting or diarrhea in a patient without ascites; here it accumulates in the peritoneum without protecting the kidney.\n- 함정: Treating the rising creatinine with crystalloid — in SBP the mechanism is splanchnic vasodilation, and only albumin has been shown to prevent renal failure.\n- 학습목표: 자발세균복막염(복수 호중구 ≥ 250/mm3)에서 크레아티닌·빌리루빈이 높으면 항생제에 더해 1일째·3일째 정맥 알부민을 주어 신부전과 사망을 줄인다\n- 근거·출처: Sort P, et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and spontaneous bacterial peritonitis. N Engl J Med 1999;341:403-409 · Biggins SW, et al. Diagnosis, evaluation, and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome: 2021 practice guidance by the AASLD. Hepatology 2021;74:1014-1048",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An ascitic neutrophil count of 620/mm3 without a surgical source is spontaneous bacterial peritonitis. Because creatinine is above 1 mg/dL, BUN above 30 mg/dL, and bilirubin above 4 mg/dL, he is at high risk of hepatorenal kidney injury. Intravenous albumin (1.5 g/kg on day 1 and 1 g/kg on day 3) with cefotaxime reduced renal failure and in-hospital mortality compared with cefotaxime alone."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why SBP damages the kidneys</b>: in cirrhosis, splanchnic vasodilation already lowers effective arterial blood volume. Infection releases cytokines and nitric oxide that dilate the splanchnic bed further; the renin–angiotensin and sympathetic systems respond with intense renal vasoconstriction, producing hepatorenal-type acute kidney injury in about one-third of patients given antibiotics alone.<br> <b>Why albumin and not saline</b>: albumin stays in the circulation longer than crystalloid and expands effective arterial volume; it also binds endotoxin and nitric oxide and has antioxidant effects. In the landmark trial, albumin with cefotaxime lowered renal impairment from 33% to 10% and in-hospital mortality from 29% to 10%. Benefit was concentrated in patients with creatinine > 1 mg/dL, BUN > 30 mg/dL, or bilirubin > 4 mg/dL.<br> <b>Why stop diuretics and avoid big taps</b>: both reduce effective volume at the moment the kidneys are most vulnerable."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">IV albumin (answer)</th><th>IV normal saline (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on volume</td><td><b>Sustained expansion of effective arterial volume</b></td><td>Mostly redistributes into ascites and edema</td></tr> <tr><td>Trial evidence in SBP</td><td>Less renal failure and death</td><td>No survival benefit; worsens ascites</td></tr> <tr><td>Who benefits most</td><td>Creatinine &gt; 1, BUN &gt; 30, bilirubin &gt; 4</td><td>—</td></tr> </tbody></table> In SBP, the kidney injury comes from vasodilation, not salt depletion — albumin answers the mechanism."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Rifaximin is used to prevent recurrent hepatic encephalopathy; he has no asterixis or confusion, and it does not reduce renal failure in SBP.\n(B) Metronidazole would be added for secondary peritonitis from a perforation or abscess, suggested by polymicrobial Gram stain or very high ascitic protein and LDH.\n(D) Large-volume paracentesis is the treatment for tense ascites causing dyspnea; during SBP with rising creatinine it further reduces effective volume.\n(E) Saline would be reasonable for prerenal injury from vomiting or diarrhea in a patient without ascites; here it accumulates in the peritoneum without protecting the kidney."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the rising creatinine with crystalloid — in SBP the mechanism is splanchnic vasodilation, and only albumin has been shown to prevent renal failure."
+   },
+   {
+    "k": "학습목표",
+    "v": "자발세균복막염(복수 호중구 ≥ 250/mm3)에서 크레아티닌·빌리루빈이 높으면 항생제에 더해 1일째·3일째 정맥 알부민을 주어 신부전과 사망을 줄인다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sort P, et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and spontaneous bacterial peritonitis. N Engl J Med 1999;341:403-409 · Biggins SW, et al. Diagnosis, evaluation, and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome: 2021 practice guidance by the AASLD. Hepatology 2021;74:1014-1048"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "자발세균복막염에서 크레아티닌·BUN·빌리루빈이 기준을 넘으므로 항생제에 더해 1·3일째 정맥 알부민을 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "SBP 의 신손상은 혈관 확장에 의한 유효 순환량 감소라 결정질 수액이 아닌 알부민이 시험에서 효과를 보였다",
+   "steps": 3,
+   "chain": [
+    "복수 호중구 620/mm3 + 외과적 원인 없음 → 자발세균복막염",
+    "크레아티닌 1.4 · BUN 34 · 빌리루빈 4.6 → 간신증후군형 신손상 고위험",
+    "항생제에 더해 1·3일째 정맥 알부민"
+   ],
+   "key": [
+    {
+     "item": "ascitic fluid neutrophil count of 620/mm3",
+     "why": "SBP 진단 기준(≥ 250/mm3)",
+     "also": []
+    },
+    {
+     "item": "creatinine concentration of 1.4 mg/dL",
+     "why": "알부민 투여 기준(> 1 mg/dL)",
+     "also": []
+    },
+    {
+     "item": "total bilirubin 4.6 mg/dL",
+     "why": "알부민 투여 기준(> 4 mg/dL)",
+     "also": []
+    },
+    {
+     "item": "BUN 34 mg/dL",
+     "why": "알부민 투여 기준(> 30 mg/dL)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Gram stain shows no organisms",
+     "why": "여러 균이 보이는 이차 복막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "without asterixis",
+     "why": "간성뇌증 치료(리팍시민)의 필요성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He stopped drinking alcohol 1 year ago",
+     "why": "간경변 원인 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "복수 호중구 620/mm3 로 자발세균복막염이고, 크레아티닌·BUN·빌리루빈이 모두 기준을 넘는다. 세포탁심에 더해 1일째·3일째 정맥 알부민을 주어 신부전과 사망을 줄인다.",
+   "switch": {
+    "choice": "B",
+    "condition": "복수 그람염색에서 여러 균이 보이고 복수 단백 > 1 g/dL·당 < 50 mg/dL·LDH 가 높다면 이차 복막염으로 메트로니다졸 추가와 영상 검사가 필요하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0436",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "이비인후과 — 돌아누울 때 생기는 짧은 회전성 어지럼",
+  "type": "이비인후과 — 돌아누울 때 생기는 짧은 회전성 어지럼",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-25",
+  "vignette": "62세 여자가 3일 전 아침 침대에서 돌아누울 때 갑자기 시작된 어지럼으로 외래에 왔다. 그 뒤로 고개를 들거나 침대에 누울 때마다 주위가 도는 어지럼이 30초 이내로 지속되다 멎었고, 가만히 있으면 어지럼이 없다. 청력 저하·이명·두통은 없다. 혈압 132/80 mmHg, 맥박 72회/분이다. 신경학적 검사에서 구음장애·복시·운동실조는 없고, 앉은 자세에서 자발 안진은 없다. 머리를 오른쪽으로 45° 돌린 채 빠르게 눕히자 3초 뒤 위로 치며 오른쪽으로 도는 회전성 안진이 약 20초 나타났다가 사라졌고, 반복할수록 약해졌다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "아세타졸아미드 복용",
+   "입자 재배치법(에플리 수기)",
+   "메클리진 장기 복용",
+   "고용량 경구 프레드니솔론",
+   "바비큐 회전법(수평반고리관 정복술)"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 두위 변화로만 생기고 30초 이내에 멎는 회전성 어지럼, 청력 증상과 중추 징후가 없음, 오른쪽 딕스-홀파이크 검사에서 잠복기(3초)·짧은 지속·피로 현상을 보이는 위로 치는 회전성 안진 — 오른쪽 후반고리관의 양성 돌발성 두위현훈(BPPV)이다. 치료는 그 반고리관에 맞춘 입자 재배치법(에플리 수기)이다.\n- 원리: <b>돌이 굴러다니는 반고리관</b>: 난형낭의 이석(탄산칼슘 결정)이 떨어져 반고리관 안 내림프로 들어가면, 머리를 움직일 때 중력 방향으로 가라앉으며 내림프를 끌고 가 팽대부릉정을 휘게 한다. 실제로는 회전하지 않았는데 회전 신호가 생긴다.<br> <b>왜 잠복기와 피로가 있나</b>: 결정이 움직이기 시작하는 데 몇 초가 걸리고(잠복기), 바닥에 닿으면 흐름이 멎어 안진이 30초 안에 사라지며, 반복하면 결정이 흩어져 반응이 약해진다(피로). 중추성 두위 안진에는 이런 특징이 없다.<br> <b>안진 방향이 반고리관을 알려 준다</b>: 후반고리관은 위로 치는 수직 성분과 아래쪽 귀를 향한 회전 성분을, 수평반고리관은 누운 자세에서 고개를 좌우로 돌릴 때 수평 안진을 만든다. 그래서 딕스-홀파이크에서 위로 치는 회전성 안진 = 후반고리관 → 에플리 수기, 누운 회전 검사의 수평 안진 = 수평반고리관 → 바비큐 회전법이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">후반고리관 BPPV — 에플리(정답)</th><th>수평반고리관 BPPV — 바비큐 회전(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>유발 검사</td><td><b>딕스-홀파이크</b></td><td>누운 자세 고개 좌우 돌리기(supine roll)</td></tr> <tr><td>안진</td><td><b>위로 치는 회전성</b>, 잠복기·피로 있음</td><td>수평(지면 쪽 또는 하늘 쪽)</td></tr> <tr><td>빈도</td><td>BPPV 의 약 80~90 %</td><td>약 10~15 %</td></tr> </tbody></table> 정복술은 어느 관에 결정이 있는지에 맞춰야 한다 — 안진의 방향이 그 주소다.\n- 오답 이유:\n  - ① 아세타졸아미드는 반복 발작성 운동실조나 특발성 두개내압 상승에 쓰며, 메니에르병의 예방 치료로도 근거가 약하다.\n  - ③ 메클리진 같은 전정억제제는 급성 전정신경염의 첫 며칠 증상 완화에 쓰며, BPPV 에서는 정복을 대신하지 못하고 중추 보상을 늦춘다.\n  - ④ 고용량 프레드니솔론은 돌발성 감각신경성 난청에서 정답이 되며, 청력 저하가 없는 이 환자에게는 근거가 없다.\n  - ⑤ 바비큐 회전법은 누운 자세 회전 검사에서 수평 안진이 나오는 수평반고리관 BPPV 에서 정답이 된다.\n- 함정: 어지럼이니 전정억제제를 처방하는 것 — 잠복기·피로가 있는 두위 안진은 정복술의 적응이고, 안진 방향이 어느 정복술인지를 정한다.\n- 학습목표: 두위 변화로 생기는 30초 이내의 회전성 어지럼과 딕스-홀파이크 검사의 잠복기·피로 현상이 있는 위로 치는 회전성 안진으로 후반고리관 양성 돌발성 두위현훈을 진단하고 에플리 수기로 치료한다\n- 근거·출처: Bhattacharyya N, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). Otolaryngol Head Neck Surg 2017;156:S1-S47 · von Brevern M, et al. Benign paroxysmal positional vertigo: diagnostic criteria. J Vestib Res 2015;25:105-117",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "두위 변화로만 생기고 30초 이내에 멎는 회전성 어지럼, 청력 증상과 중추 징후가 없음, 오른쪽 딕스-홀파이크 검사에서 잠복기(3초)·짧은 지속·피로 현상을 보이는 위로 치는 회전성 안진 — 오른쪽 후반고리관의 양성 돌발성 두위현훈(BPPV)이다. 치료는 그 반고리관에 맞춘 입자 재배치법(에플리 수기)이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>돌이 굴러다니는 반고리관</b>: 난형낭의 이석(탄산칼슘 결정)이 떨어져 반고리관 안 내림프로 들어가면, 머리를 움직일 때 중력 방향으로 가라앉으며 내림프를 끌고 가 팽대부릉정을 휘게 한다. 실제로는 회전하지 않았는데 회전 신호가 생긴다.<br> <b>왜 잠복기와 피로가 있나</b>: 결정이 움직이기 시작하는 데 몇 초가 걸리고(잠복기), 바닥에 닿으면 흐름이 멎어 안진이 30초 안에 사라지며, 반복하면 결정이 흩어져 반응이 약해진다(피로). 중추성 두위 안진에는 이런 특징이 없다.<br> <b>안진 방향이 반고리관을 알려 준다</b>: 후반고리관은 위로 치는 수직 성분과 아래쪽 귀를 향한 회전 성분을, 수평반고리관은 누운 자세에서 고개를 좌우로 돌릴 때 수평 안진을 만든다. 그래서 딕스-홀파이크에서 위로 치는 회전성 안진 = 후반고리관 → 에플리 수기, 누운 회전 검사의 수평 안진 = 수평반고리관 → 바비큐 회전법이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">후반고리관 BPPV — 에플리(정답)</th><th>수평반고리관 BPPV — 바비큐 회전(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>유발 검사</td><td><b>딕스-홀파이크</b></td><td>누운 자세 고개 좌우 돌리기(supine roll)</td></tr> <tr><td>안진</td><td><b>위로 치는 회전성</b>, 잠복기·피로 있음</td><td>수평(지면 쪽 또는 하늘 쪽)</td></tr> <tr><td>빈도</td><td>BPPV 의 약 80~90 %</td><td>약 10~15 %</td></tr> </tbody></table> 정복술은 어느 관에 결정이 있는지에 맞춰야 한다 — 안진의 방향이 그 주소다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아세타졸아미드는 반복 발작성 운동실조나 특발성 두개내압 상승에 쓰며, 메니에르병의 예방 치료로도 근거가 약하다.\n③ 메클리진 같은 전정억제제는 급성 전정신경염의 첫 며칠 증상 완화에 쓰며, BPPV 에서는 정복을 대신하지 못하고 중추 보상을 늦춘다.\n④ 고용량 프레드니솔론은 돌발성 감각신경성 난청에서 정답이 되며, 청력 저하가 없는 이 환자에게는 근거가 없다.\n⑤ 바비큐 회전법은 누운 자세 회전 검사에서 수평 안진이 나오는 수평반고리관 BPPV 에서 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "어지럼이니 전정억제제를 처방하는 것 — 잠복기·피로가 있는 두위 안진은 정복술의 적응이고, 안진 방향이 어느 정복술인지를 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "두위 변화로 생기는 30초 이내의 회전성 어지럼과 딕스-홀파이크 검사의 잠복기·피로 현상이 있는 위로 치는 회전성 안진으로 후반고리관 양성 돌발성 두위현훈을 진단하고 에플리 수기로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bhattacharyya N, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). Otolaryngol Head Neck Surg 2017;156:S1-S47 · von Brevern M, et al. Benign paroxysmal positional vertigo: diagnostic criteria. J Vestib Res 2015;25:105-117"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "딕스-홀파이크에서 잠복기·피로가 있는 위로 치는 회전성 안진이 나오므로 오른쪽 후반고리관 BPPV 이고 에플리 수기를 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "안진이 위로 치는 회전성이고 딕스-홀파이크로 유발된다 — 수평 안진이 아니다",
+   "steps": 3,
+   "chain": [
+    "두위 변화 때만 30초 이내 회전성 어지럼 + 청력 증상·중추 징후 없음 → 말초성 두위현훈",
+    "잠복기 3초·20초 지속·피로 → BPPV",
+    "오른쪽 딕스-홀파이크의 위로 치는 회전성 안진 → 오른쪽 후반고리관 → 에플리 수기"
+   ],
+   "key": [
+    {
+     "item": "고개를 들거나 침대에 누울 때마다",
+     "why": "두위성 어지럼",
+     "also": []
+    },
+    {
+     "item": "3초 뒤 위로 치며 오른쪽으로 도는 회전성 안진",
+     "why": "후반고리관 BPPV 의 안진",
+     "also": []
+    },
+    {
+     "item": "반복할수록 약해졌다",
+     "why": "피로 현상 — 말초성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "구음장애·복시·운동실조는 없고",
+     "why": "뇌간·소뇌 원인 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "청력 저하·이명·두통은 없다",
+     "why": "메니에르병·돌발성 난청 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈압 132/80 mmHg",
+     "why": "정상 범위로 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "두위 변화 때만 짧게 도는 어지럼과 오른쪽 딕스-홀파이크의 잠복기·피로가 있는 위로 치는 회전성 안진으로 오른쪽 후반고리관 BPPV 다. 에플리 수기로 치료한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "누운 자세에서 고개를 좌우로 돌릴 때 수평 안진이 나온다면 수평반고리관 BPPV 로 바비큐 회전법이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0435",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "피부 — 밤에 심한 가려움과 손가락 사이 굴",
+  "type": "피부 — 밤에 심한 가려움과 손가락 사이 굴",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-25",
+  "vignette": "A 34-year-old woman comes to the physician because of an intensely itchy rash for 3 weeks. The itching is worst at night. Her 6-year-old son, who sleeps in her bed, has developed similar itching during the past week. She has no history of atopic dermatitis and takes no medications. Vital signs are within normal limits. Examination shows excoriated papules and several short, wavy, gray-white linear burrows in the finger web spaces and on the flexor surfaces of the wrists, with scattered papules around the umbilicus. The face and scalp are spared. Microscopy of a mineral oil scraping from a burrow shows an eight-legged organism and oval eggs.",
+  "question": "Which of the following is the most appropriate management?",
+  "options": [
+   "Permethrin cream for her and all household contacts at once",
+   "Permethrin cream for the patient only",
+   "High-potency topical corticosteroid alone",
+   "Oral cephalexin for the patient and her son",
+   "Oral hydroxyzine alone for symptom relief"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Nocturnal pruritus, burrows in the finger webs and wrists, periumbilical papules, a symptomatic household member, and mites with eggs on a burrow scraping establish scabies. Treatment is topical permethrin 5% for the patient and all close and household contacts at the same time — even those without symptoms — repeated in 7–14 days, with hot-water laundering of bedding and clothing.\n- 원리: <b>Why everyone at once</b>: <i>Sarcoptes scabiei</i> spreads by prolonged skin-to-skin contact, such as sharing a bed. The itch is a delayed (type IV) hypersensitivity reaction to the mite, its eggs, and feces that takes 3–6 weeks to develop in a first infestation — so infested contacts can carry mites for weeks without symptoms. Treating only the patient leaves an untreated reservoir, and reinfestation follows.<br> <b>Why permethrin, and why repeat</b>: permethrin blocks sodium channels in the mite's nerve membranes, causing paralysis and death. It is less reliably ovicidal, so a second application after 7–14 days kills mites that hatch from surviving eggs.<br> <b>Why itching persists</b>: the hypersensitivity reaction lasts for 2–4 weeks after successful treatment; persistent itch alone is not treatment failure, and new burrows are.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Treat patient and contacts (answer)</th><th>Treat patient only (closest distractor)</th></tr></thead><tbody> <tr><td>Asymptomatic contacts</td><td><b>Treated — may be infested without itch for weeks</b></td><td>Left as a reservoir</td></tr> <tr><td>Timing</td><td>Same day for all</td><td>Contacts treated only when itching starts</td></tr> <tr><td>Outcome</td><td>Cure of the household</td><td>Ping-pong reinfestation</td></tr> </tbody></table> The symptomatic son proves transmission; the delayed itch means others may already be infested.\n- 오답 이유:\n  - (B) Treating only the patient would be adequate only if she had no close contacts, which is not the case here; untreated bedmates reinfest her.\n  - (C) A topical corticosteroid alone fits atopic or contact dermatitis; it may be added for post-treatment itch but does not kill mites.\n  - (D) Oral cephalexin is needed when excoriations become impetiginized with honey-colored crusts; it does not treat the infestation itself.\n  - (E) Hydroxyzine helps nocturnal itch as an adjunct after scabicide treatment, but used alone it leaves the mites and the reservoir untouched.\n- 함정: Treating only people who itch — the type IV reaction takes weeks, so infested contacts are often still asymptomatic.\n- 학습목표: 밤에 심한 가려움·손가락 사이 굴·가족 내 발생으로 옴을 진단하고, 환자와 가까운 접촉자 모두를 동시에 퍼메트린으로 치료한다\n- 근거·출처: Thomas C, et al. Ectoparasites: scabies. J Am Acad Dermatol 2020;82:533-548 · Centers for Disease Control and Prevention. Scabies: clinical care. 2024",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Nocturnal pruritus, burrows in the finger webs and wrists, periumbilical papules, a symptomatic household member, and mites with eggs on a burrow scraping establish scabies. Treatment is topical permethrin 5% for the patient and all close and household contacts at the same time — even those without symptoms — repeated in 7–14 days, with hot-water laundering of bedding and clothing."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why everyone at once</b>: <i>Sarcoptes scabiei</i> spreads by prolonged skin-to-skin contact, such as sharing a bed. The itch is a delayed (type IV) hypersensitivity reaction to the mite, its eggs, and feces that takes 3–6 weeks to develop in a first infestation — so infested contacts can carry mites for weeks without symptoms. Treating only the patient leaves an untreated reservoir, and reinfestation follows.<br> <b>Why permethrin, and why repeat</b>: permethrin blocks sodium channels in the mite's nerve membranes, causing paralysis and death. It is less reliably ovicidal, so a second application after 7–14 days kills mites that hatch from surviving eggs.<br> <b>Why itching persists</b>: the hypersensitivity reaction lasts for 2–4 weeks after successful treatment; persistent itch alone is not treatment failure, and new burrows are."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Treat patient and contacts (answer)</th><th>Treat patient only (closest distractor)</th></tr></thead><tbody> <tr><td>Asymptomatic contacts</td><td><b>Treated — may be infested without itch for weeks</b></td><td>Left as a reservoir</td></tr> <tr><td>Timing</td><td>Same day for all</td><td>Contacts treated only when itching starts</td></tr> <tr><td>Outcome</td><td>Cure of the household</td><td>Ping-pong reinfestation</td></tr> </tbody></table> The symptomatic son proves transmission; the delayed itch means others may already be infested."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Treating only the patient would be adequate only if she had no close contacts, which is not the case here; untreated bedmates reinfest her.\n(C) A topical corticosteroid alone fits atopic or contact dermatitis; it may be added for post-treatment itch but does not kill mites.\n(D) Oral cephalexin is needed when excoriations become impetiginized with honey-colored crusts; it does not treat the infestation itself.\n(E) Hydroxyzine helps nocturnal itch as an adjunct after scabicide treatment, but used alone it leaves the mites and the reservoir untouched."
+   },
+   {
+    "k": "함정",
+    "v": "Treating only people who itch — the type IV reaction takes weeks, so infested contacts are often still asymptomatic."
+   },
+   {
+    "k": "학습목표",
+    "v": "밤에 심한 가려움·손가락 사이 굴·가족 내 발생으로 옴을 진단하고, 환자와 가까운 접촉자 모두를 동시에 퍼메트린으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Thomas C, et al. Ectoparasites: scabies. J Am Acad Dermatol 2020;82:533-548 · Centers for Disease Control and Prevention. Scabies: clinical care. 2024"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "야간 가려움·손가락 사이 굴·동거 가족 발생·진드기 확인으로 옴이므로 환자와 모든 가까운 접촉자를 동시에 퍼메트린으로 치료한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "같은 침대에서 자는 아들에게 이미 증상이 있다 — 전파가 일어났고 무증상 감염자가 있을 수 있다",
+   "steps": 2,
+   "chain": [
+    "야간 가려움 + 손가락 사이·손목 굴 + 진드기·알 → 옴",
+    "같은 침대에서 자는 가족의 증상 → 모든 접촉자 동시 치료"
+   ],
+   "key": [
+    {
+     "item": "The itching is worst at night",
+     "why": "옴의 전형적 증상",
+     "also": []
+    },
+    {
+     "item": "linear burrows in the finger web spaces",
+     "why": "굴 — 특이 소견",
+     "also": []
+    },
+    {
+     "item": "an eight-legged organism and oval eggs",
+     "why": "진단 확정",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no history of atopic dermatitis",
+     "why": "아토피피부염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "who sleeps in her bed",
+     "why": "밀접 접촉 — 동시 치료의 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The face and scalp are spared",
+     "why": "성인 옴의 흔한 분포를 보여 줄 뿐 치료를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "야간 가려움과 손가락 사이 굴, 진드기·알 확인으로 옴이다. 같은 침대의 아들에게 이미 증상이 있으므로 환자와 모든 가까운 접촉자를 같은 날 퍼메트린으로 치료한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "긁은 자리에 꿀색 딱지가 덮인 농가진이 겹쳤다면 옴 치료와 함께 경구 세팔렉신이 필요하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0434",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·외과·소아·순환기·피부·이비인후과·소화기·신경·혈액·부인과·예방)",
+  "subtopic": "순환기 — 델타파가 있던 청년의 불규칙한 넓은 QRS 빈맥",
+  "type": "순환기 — 델타파가 있던 청년의 불규칙한 넓은 QRS 빈맥",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-25",
+  "vignette": "24세 남자가 30분 전부터 시작된 가슴 두근거림으로 응급실에 왔다. 전에도 짧은 두근거림이 몇 번 있었으나 저절로 멎었다. 복용하는 약은 없다. 혈압 118/74 mmHg, 맥박 190회/분(불규칙), 호흡 18회/분이고, 의식은 명료하며 흉통은 없다. 심전도에서 RR 간격이 불규칙하고 QRS 폭과 모양이 박동마다 달라지는 넓은 QRS 빈맥이 보이며, 가장 짧은 RR 간격은 0.22초이다. 1년 전 건강검진 심전도에서 PR 간격 0.10초와 델타파가 있었다. 혈청 칼륨은 4.2 mEq/L 이다.",
+  "question": "가장 적절한 약물은?",
+  "options": [
+   "디곡신 정맥 주사",
+   "프로카인아마이드 정맥 주사",
+   "아데노신 정맥 주사",
+   "딜티아젬 정맥 주사",
+   "메토프롤롤 정맥 주사"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 델타파(조기흥분) 병력이 있는 젊은 남자에서 불규칙하고 QRS 모양이 박동마다 바뀌는 매우 빠른 넓은 QRS 빈맥은 부전도로를 따라 내려가는 심방세동이다. 혈역학적으로 안정하므로 부전도로의 불응기를 늘리는 프로카인아마이드(또는 이부틸라이드)를 쓰고, 방실결절만 막는 약은 피한다.\n- 원리: <b>두 개의 길</b>: 정상에서는 심방 흥분이 방실결절을 지나며 늦춰져, 심방세동의 분당 수백 번 흥분 중 일부만 심실로 간다. 조기흥분 증후군에서는 방실결절을 거치지 않는 부전도로(켄트속)가 있고, 이 길은 결절과 달리 <b>감쇠 전도</b>가 없어 불응기가 짧으면 거의 모든 흥분을 심실로 보낸다.<br> <b>왜 QRS 모양이 바뀌나</b>: 박동마다 두 길로 내려간 흥분이 섞이는 정도가 달라 델타파의 크기와 QRS 폭이 계속 달라진다. 가장 짧은 RR 이 0.25초 이하면 부전도로의 불응기가 짧은 고위험 경로다.<br> <b>왜 결절 차단제가 위험한가</b>: 아데노신·칼슘통로차단제·베타차단제·디곡신은 방실결절만 막아 경쟁하던 정상 경로를 닫고, 결과적으로 부전도로 전도를 늘린다(디곡신·베라파밀은 부전도로 불응기를 직접 줄이기도 한다). 심실세동으로 바뀔 수 있다.<br> <b>정답 약의 작용</b>: 프로카인아마이드는 나트륨통로를 막아 부전도로와 심방 조직의 불응기를 늘린다. 불안정하면 즉시 동기화 전기충격이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">조기흥분 동반 심방세동 — 프로카인아마이드(정답)</th><th>일반 심방세동 — 딜티아젬(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS</td><td><b>넓고 박동마다 모양이 다름</b></td><td>좁음(각차단이 없으면)</td></tr> <tr><td>심실 박동수</td><td>200회/분 안팎, 가장 짧은 RR ≤ 0.25초</td><td>보통 110~170회/분</td></tr> <tr><td>방실결절 차단</td><td>금기 — 부전도로 전도 증가</td><td>심박수 조절의 1차 약</td></tr> </tbody></table> 불규칙 + 넓고 바뀌는 QRS + 매우 빠름 = 결절을 우회하는 길이 있다는 신호다.\n- 오답 이유:\n  - ① 디곡신은 저혈압이 있는 심부전 동반 심방세동의 심박수 조절에 쓰일 수 있으나, 부전도로 불응기를 줄여 조기흥분에서는 금기다.\n  - ③ 아데노신은 규칙적이고 좁은 QRS 빈맥(방실결절 회귀성 빈맥 등)을 멈출 때 정답이 되며, 여기서는 결절만 막아 부전도로 전도를 늘린다.\n  - ④ 딜티아젬은 조기흥분이 없는 좁은 QRS 심방세동의 심박수 조절에 정답이 되며, 이 환자에서는 심실세동을 부를 수 있다.\n  - ⑤ 메토프롤롤은 갑상샘중독이나 수술 뒤처럼 조기흥분 없는 심방세동의 심박수 조절에 쓰이며, 이 환자에서는 결절만 막아 위험하다.\n- 함정: 심방세동이니 늘 하던 대로 심박수 조절제를 쓰는 것 — 델타파 병력과 넓고 바뀌는 QRS 는 결절 차단제 금기의 신호다.\n- 학습목표: 델타파 병력과 불규칙하고 QRS 모양이 박동마다 바뀌는 빠른 넓은 QRS 빈맥에서 조기흥분 동반 심방세동을 알아보고, 방실결절 차단제를 피하고 프로카인아마이드를 고른다\n- 근거·출처: Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156 · Page RL, et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "델타파(조기흥분) 병력이 있는 젊은 남자에서 불규칙하고 QRS 모양이 박동마다 바뀌는 매우 빠른 넓은 QRS 빈맥은 부전도로를 따라 내려가는 심방세동이다. 혈역학적으로 안정하므로 부전도로의 불응기를 늘리는 프로카인아마이드(또는 이부틸라이드)를 쓰고, 방실결절만 막는 약은 피한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>두 개의 길</b>: 정상에서는 심방 흥분이 방실결절을 지나며 늦춰져, 심방세동의 분당 수백 번 흥분 중 일부만 심실로 간다. 조기흥분 증후군에서는 방실결절을 거치지 않는 부전도로(켄트속)가 있고, 이 길은 결절과 달리 <b>감쇠 전도</b>가 없어 불응기가 짧으면 거의 모든 흥분을 심실로 보낸다.<br> <b>왜 QRS 모양이 바뀌나</b>: 박동마다 두 길로 내려간 흥분이 섞이는 정도가 달라 델타파의 크기와 QRS 폭이 계속 달라진다. 가장 짧은 RR 이 0.25초 이하면 부전도로의 불응기가 짧은 고위험 경로다.<br> <b>왜 결절 차단제가 위험한가</b>: 아데노신·칼슘통로차단제·베타차단제·디곡신은 방실결절만 막아 경쟁하던 정상 경로를 닫고, 결과적으로 부전도로 전도를 늘린다(디곡신·베라파밀은 부전도로 불응기를 직접 줄이기도 한다). 심실세동으로 바뀔 수 있다.<br> <b>정답 약의 작용</b>: 프로카인아마이드는 나트륨통로를 막아 부전도로와 심방 조직의 불응기를 늘린다. 불안정하면 즉시 동기화 전기충격이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">조기흥분 동반 심방세동 — 프로카인아마이드(정답)</th><th>일반 심방세동 — 딜티아젬(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS</td><td><b>넓고 박동마다 모양이 다름</b></td><td>좁음(각차단이 없으면)</td></tr> <tr><td>심실 박동수</td><td>200회/분 안팎, 가장 짧은 RR ≤ 0.25초</td><td>보통 110~170회/분</td></tr> <tr><td>방실결절 차단</td><td>금기 — 부전도로 전도 증가</td><td>심박수 조절의 1차 약</td></tr> </tbody></table> 불규칙 + 넓고 바뀌는 QRS + 매우 빠름 = 결절을 우회하는 길이 있다는 신호다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 디곡신은 저혈압이 있는 심부전 동반 심방세동의 심박수 조절에 쓰일 수 있으나, 부전도로 불응기를 줄여 조기흥분에서는 금기다.\n③ 아데노신은 규칙적이고 좁은 QRS 빈맥(방실결절 회귀성 빈맥 등)을 멈출 때 정답이 되며, 여기서는 결절만 막아 부전도로 전도를 늘린다.\n④ 딜티아젬은 조기흥분이 없는 좁은 QRS 심방세동의 심박수 조절에 정답이 되며, 이 환자에서는 심실세동을 부를 수 있다.\n⑤ 메토프롤롤은 갑상샘중독이나 수술 뒤처럼 조기흥분 없는 심방세동의 심박수 조절에 쓰이며, 이 환자에서는 결절만 막아 위험하다."
+   },
+   {
+    "k": "함정",
+    "v": "심방세동이니 늘 하던 대로 심박수 조절제를 쓰는 것 — 델타파 병력과 넓고 바뀌는 QRS 는 결절 차단제 금기의 신호다."
+   },
+   {
+    "k": "학습목표",
+    "v": "델타파 병력과 불규칙하고 QRS 모양이 박동마다 바뀌는 빠른 넓은 QRS 빈맥에서 조기흥분 동반 심방세동을 알아보고, 방실결절 차단제를 피하고 프로카인아마이드를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156 · Page RL, et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "델타파 병력과 불규칙하고 모양이 바뀌는 넓은 QRS 빈맥은 조기흥분 동반 심방세동이므로, 안정 상태에서 프로카인아마이드를 쓴다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "QRS 가 넓고 박동마다 모양이 다르며 가장 짧은 RR 이 0.22초 — 부전도로 전도",
+   "steps": 2,
+   "chain": [
+    "불규칙 + 넓고 모양이 바뀌는 QRS + 델타파 병력 → 조기흥분 동반 심방세동",
+    "의식 명료·혈압 유지 → 안정 — 결절 차단제를 피하고 프로카인아마이드"
+   ],
+   "key": [
+    {
+     "item": "QRS 폭과 모양이 박동마다 달라지는 넓은 QRS 빈맥",
+     "why": "부전도로를 통한 전도",
+     "also": []
+    },
+    {
+     "item": "RR 간격이 불규칙",
+     "why": "심방세동",
+     "also": []
+    },
+    {
+     "item": "PR 간격 0.10초와 델타파",
+     "why": "조기흥분 증후군의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨은 4.2 mEq/L",
+     "why": "고칼륨혈증에 의한 넓은 QRS 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "가장 짧은 RR 간격은 0.22초",
+     "why": "고위험 부전도로 — 결절 차단제가 특히 위험",
+     "also": []
+    },
+    {
+     "item": "혈압 118/74 mmHg",
+     "why": "안정 — 약물 전환이 가능",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "델타파 병력이 있는 청년의 불규칙하고 모양이 바뀌는 매우 빠른 넓은 QRS 빈맥은 조기흥분 동반 심방세동이다. 안정하므로 결절 차단제 대신 프로카인아마이드를 쓴다.",
+   "switch": {
+    "choice": "D",
+    "condition": "델타파 병력이 없고 QRS 가 좁은 불규칙 빈맥(일반 심방세동)이라면 딜티아젬으로 심박수를 조절한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0426",
   "exam": "imaging",
   "style": "kmle_style",
