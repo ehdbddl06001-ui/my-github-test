@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4029,
+  "total": 4030,
   "byType": {
    "kmle": 1568,
+   "concept": 112,
    "imaging": 440,
-   "concept": 111,
    "paper": 837,
    "usmle": 210,
    "anatomy": 846,
@@ -71,16 +71,16 @@ window.MEDKOS_INDEX = {
    "Medical Signal AI": 4,
    "Oncology": 3,
    "Medical Imaging AI": 2,
+   "Obstetrics and Gynecology": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "Obstetrics and Gynecology": 1,
    "Urology": 1
   },
   "byConfidence": {
    "high": 2824,
-   "medium": 1155,
+   "medium": 1156,
    "low": 50
   },
   "tagCount": 5052
@@ -692,6 +692,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1570.md",
    "snippet": "66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와",
    "text": "Cardiology Dizziness and a Slow Pulse after Swallowing a Relative's Blood Pressure Pills calcium-channel-blocker-overdose toxicology bradycardia ecg antidote KMLE 2026 / Claude 66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 정맥 날록손 투여 B. 디곡신 특이 항체 조각 C. 정맥 염화칼슘 투여 D. 정맥 글루카곤 투여 E. 정맥 지방유제 투여 아트로핀·수액에 반응하지 않는 서맥·저혈압에 고혈당이 동반되고 칼륨이 정상이면 칼슘통로차단제 중독을 먼저 생각한다. 첫 해독 처치는 정맥 칼슘이다."
+  },
+  {
+   "id": "cn.obgyn.primary-amenorrhea-absent-uterus.karyotype-differentiation",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics and Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.primary-amenorrhea-absent-uterus.karyotype-differentiation.md",
+   "snippet": "판단 — 왜 핵형을 먼저 보는가 자궁 유무는 세르톨리세포의 AMH(뮐러관 억제물질) 가, 남성형 외생식기는 테스토스테론·DHT 와 그 작용 이 정한다 — 그래서 「자궁 없음 + 여성 외생식기」는 고환이 있되 안드로겐이 작용하지 못한 46,XY 와 뮐러관만 생기지 않은 46,XX 둘 다에서 나온다 [[harrison 21: 390장 p.2999]]. 겉모습(유방·외생식기)은 같아 보이므로 둘을 가르는 첫 검사는 핵형 이다. 핵형",
+   "text": "Obstetrics and Gynecology 판단 — 왜 핵형을 먼저 보는가 자궁 유무는 세르톨리세포의 AMH(뮐러관 억제물질) 가, 남성형 외생식기는 테스토스테론·DHT 와 그 작용 이 정한다 — 그래서 「자궁 없음 + 여성 외생식기」는 고환이 있되 안드로겐이 작용하지 못한 46,XY 와 뮐러관만 생기지 않은 46,XX 둘 다에서 나온다 [[harrison 21: 390장 p.2999]]. 겉모습(유방·외생식기)은 같아 보이므로 둘을 가르는 첫 검사는 핵형 이다. 핵형은 진단의 출발점이지 성 정체성을 정하지 않는다 [[harrison 21: 390장 p.3002]]. 46,XY 이고 유방이 자랐으면 완전 안드로겐 무감응증후군(complete androgen insensitivity syndrome, CAIS), 46,XX 면 마이어 로키탄스키 퀴스터 하우저 증후군(Mayer Rokitansky Küster Hauser syndrome, MRKH) 이다 [[harrison 21: 390장 p.3002–3003, p.3005]]. 46,XY 인데 사춘기가 오지 않고 고혈압이 있으면 17α 수산화효소 결핍(CYP17A1) 을 생각한다 [[harrison 21: 390장 p.3002]]. 기전 — 고환은 있는데 안드로겐이 작용하지 못한다 안드로겐 수용체는 X 염색체에 있어 46,XY 만 병이 나고, 대개 보인자 어머니에게서 물려받는다 [[harrison 21: 390장 p.3002]]. CAIS 의 고환은 정상적으로 AMH 를 내 수정 60~80일에 뮐러관이 퇴행하므로 자궁·난관·질 상부가 없다 [[harrison 21: 390장 p.2999, p.3002]]. 테스토스테론은 만들어지지만 수용체가 반응하지 않아 볼프관·외생식기가 남성화되지 않고, 비뇨생식동에서 생긴 질 하부만 남아 질이 짧다 [[harrison 21: 390장 p.2999, p.3002]]. 사춘기에는 테스토스테론이 방향족화돼 생긴 에스트로겐으로 유방이 정상으로 자라지만, 음모·액모는 안드로겐 의존이라 드물다 [[harrison 21: 390장 p.3002–3003]]. MRKH 는 뮐러관 자체가 생기지 않거나 덜 생긴 것이다 — 난소는 뮐러관 구조가 아니므로 남아 사춘기의 여성화가 일어나고, 질이 선천적으로 없다 [[harrison 21: 390장 p.2999, p.3005]]. 가르는 소견 — 핵형·자궁·유방·체모 체모 : CAIS 는 음모·액모가 드물다. MRKH 는 안드로겐 작용이 정상이다(발생에서 정리). 동반 이상 : MRKH 는 신장 무형성·경추 이상을 함께 찾는다 [[harrison 21: 390장 p.3005]]. CAIS 는 소아기에 고환이 든 서혜부 탈장으로 먼저 오기도 한다 [[harrison 21: 390장 p.3003]]. 호르몬 해석의 한계 : CAIS 의 생식샘자극호르몬·테스토스테론은 안드로겐 저항 정도와 에스트라디올의 되먹임에 따라 낮음·정상·높음이 모두 가능하다 — 테스토스테론 한 번으로 핵형을 대신하지 않는다. 소아기 AMH 는 정상 또는 높다 [[harrison 21: 390장 p.3003]]. 권고와 예외 CAIS 의 생식샘: 악성 위험이 약 2% 로 낮아 예전처럼 소아기에 절제하지 않고 유방 발달이 끝날 때까지 두며, 그 뒤 영상·표지자로 전암 변화를 미리 찾을 수 없다는 점을 상담해 절제(에스트로겐 보충과 함께) 여부를 정한다 [[harrison 21: 390장 p.3003]]. CAIS 의 짧은 질은 사춘기 단계적 확장기로 대개 충분하다 [[harrison 21: 390장 p.3003]]. 부분 안드로겐 무감응(Reifenstein) 은 영아기 음경음낭 요도하열·잠복고환, 사춘기 여성형 유방으로 오고 생식세포암 위험이 높아진다 [[harrison 21: 390장 p.3003–3004]]. 완전 생식샘 발생장애(스와이어) 는 자궁이 있고, 줄무늬 생식샘의 생식세포암 위험이 높아 복강 내 생식샘을 절제한다 [[harrison 21: 390장 p.3002]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · CAIS 생식샘 절제 시기 — 시험 기준: 유방 발달이 끝난 뒤 상담해 결정(악성 약 2%) [[harrison 21: 390장 p.3003]] / 다른 기준: 예전에는 소아기 절제를 권했다 [[harrison 21: 390장 p.3003]] / 왜 다른가: 낮은 악성 위험과 자연 사춘기(유방 발달)의 이점이 알려져 늦추는 쪽으로 바뀌었다 / 시험에서는: KMLE · USMLE 모두 현행 기준(유방 발달 완료 뒤 상담해 절제)을 답으로 쓴다."
   },
   {
    "id": "imaging-2026-0441",
