@@ -1311,11 +1311,11 @@
    ]
   },
   "Obstetrics and Gynecology": {
-   "hash": "a519f21e657c40e7fd58",
-   "version": 1,
-   "date": "2026-10-25",
+   "hash": "c7a3c9e84edc0a78b59e",
+   "version": 2,
+   "date": "2026-10-26",
    "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
-   "pages": 3,
+   "pages": 4,
    "template_version": 11,
    "units": {
     "cn.obgyn.menstrual-cycle.ovulation-confirmation": {
@@ -1323,29 +1323,38 @@
      "page": 2,
      "concept_hash": "f47dcdc47e1e6025",
      "concept_version": 1
+    },
+    "cn.obgyn.primary-amenorrhea-absent-uterus.karyotype-differentiation": {
+     "title": "일차무월경·자궁 없음 — 핵형이 CAIS와 MRKH를 가른다",
+     "page": 3,
+     "concept_hash": "9af1b5e2fcc07cf9",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
-    "md5": "ea92b7541dfc4c00aa6473f44b78271d",
-    "version": 1,
-    "uploaded": "2026-10-25T08:31:50+09:00"
+    "md5": "1b636089346051c8106a4a5d776df29a",
+    "version": 2,
+    "uploaded": "2026-10-26T08:28:09+09:00"
    },
    "archive": [
-    "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf"
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf",
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v2_2026-10-26.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 일차무월경·자궁 없음 — 핵형이 CAIS와 MRKH를 가른다"
+   ]
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "ac729b4c688ba8c3accd086dfd292f96",
+   "md5": "0cb69fe317243dfbf9dcc6e425f1e15f",
    "version": null,
-   "uploaded": "2026-10-25T08:31:50+09:00"
+   "uploaded": "2026-10-26T08:28:09+09:00"
   }
  },
- "updated": "2026-10-25"
+ "updated": "2026-10-26"
 }

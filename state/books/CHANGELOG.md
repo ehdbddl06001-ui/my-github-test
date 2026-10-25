@@ -358,3 +358,7 @@
 ## 2026-10-25T08:31:27+09:00
 
 - Obstetrics and Gynecology 판 1 (3쪽, 판형 11): 내용 변경 없음
+
+## 2026-10-26T08:27:44+09:00
+
+- Obstetrics and Gynecology 판 2 (4쪽, 판형 11): 새 단원: 일차무월경·자궁 없음 — 핵형이 CAIS와 MRKH를 가른다

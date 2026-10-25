@@ -1,5 +1,5 @@
 {
- "started": "2026-10-25T08:31:27+09:00",
+ "started": "2026-10-26T08:27:44+09:00",
  "built": [
   "Obstetrics and Gynecology"
  ],
@@ -47,7 +47,7 @@
  ],
  "layout_trials": {
   "Obstetrics and Gynecology": {
-   "tried": 6,
+   "tried": 7,
    "diagram_after_section": {
     "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 11,
     "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#shrink": 1.0,
@@ -57,7 +57,7 @@
   }
  },
  "result": "ok",
- "finished": "2026-10-25T08:31:50+09:00",
+ "finished": "2026-10-26T08:28:09+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -65,18 +65,18 @@
     "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
     "status": "uploaded",
     "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
-    "kept_id": false,
-    "md5": "ea92b7541dfc4c00aa6473f44b78271d",
-    "archive": "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf"
+    "kept_id": true,
+    "md5": "1b636089346051c8106a4a5d776df29a",
+    "archive": "MedKOS_학습서_Obstetrics_and_Gynecology_v2_2026-10-26.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "ac729b4c688ba8c3accd086dfd292f96"
+    "md5": "0cb69fe317243dfbf9dcc6e425f1e15f"
    }
   },
-  "at": "2026-10-25T08:31:50+09:00"
+  "at": "2026-10-26T08:28:09+09:00"
  }
 }
