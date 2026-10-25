@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-24",
+ "generated": "2026-10-25",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3980,
+  "total": 3997,
   "byType": {
+   "imaging": 440,
    "concept": 111,
-   "imaging": 428,
-   "paper": 832,
+   "paper": 837,
    "kmle": 1536,
    "usmle": 210,
    "anatomy": 846,
@@ -18,12 +18,12 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 272,
-   "Nephrology": 219,
-   "Infectious Disease": 200,
+   "Cardiology": 273,
+   "Nephrology": 220,
+   "Infectious Disease": 201,
    "Pediatrics": 185,
    "Obstetrics & Gynecology": 134,
-   "Pathology": 122,
+   "Pathology": 123,
    "Hematology-Oncology": 120,
    "Rheumatology": 120,
    "Psychiatry": 115,
@@ -37,34 +37,34 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 98,
    "Pulmonology": 98,
    "Hematology": 93,
-   "Laboratory Medicine": 84,
-   "산부인과": 65,
-   "순환기": 37,
-   "호흡기": 28,
-   "소화기": 27,
-   "소아과": 24,
+   "Laboratory Medicine": 85,
+   "산부인과": 66,
+   "순환기": 38,
+   "호흡기": 29,
+   "소화기": 28,
+   "소아과": 25,
    "Physiology": 23,
-   "응급·중환자": 21,
+   "응급·중환자": 22,
+   "혈액·종양": 21,
    "감염": 20,
    "내분비": 20,
    "병리·조직학": 20,
-   "혈액·종양": 20,
-   "신경": 19,
+   "신경": 20,
+   "외과": 20,
    "신장·비뇨기": 19,
-   "외과": 19,
    "Pharmacology": 18,
    "Biochemistry": 17,
+   "예방의학·역학": 17,
+   "피부과": 17,
    "Microbiology": 16,
-   "예방의학·역학": 16,
-   "피부과": 16,
    "Internal Medicine": 13,
    "Immunology": 12,
    "약리": 12,
    "정신과": 12,
    "근골격·류마티스": 11,
    "영상의학": 8,
+   "이비인후과": 8,
    "안과": 7,
-   "이비인후과": 7,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -79,13 +79,221 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1150,
-   "high": 2780,
+   "high": 2792,
+   "medium": 1155,
    "low": 50
   },
   "tagCount": 5015
  },
  "docs": [
+  {
+   "id": "imaging-2026-0441",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 진단 후 생존 기간",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0441.md",
+   "snippet": "A 66 year old man asks his physician whether he should join a regional screening program for pancreatic cancer that uses annual imaging. The program brochure reports that, among participants whose cancer was detected by screening, mean surv",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 선별검사 뒤 늘어난 진단 후 생존 기간 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 66 year old man asks his physician whether he should join a regional screening program for pancreatic cancer that uses annual imaging. The program brochure reports that, among participants whose cancer was detected by screening, mean survival after diagnosis is 3.4 years, compared with 1.2 years among people in a neighboring region without screening whose cancer was diagnosed after symptoms appeared. The two regions have similar age, sex, and smoking distributions. In both regions, the mean age at death from pancreatic cancer is 71 years, and pancreatic cancer mortality per 100,000 person years has not changed since the program began. Screen detected and symptom detected tumors have a similar proportion of slow growing, low grade histology, and almost all screen detected cancers progressed to symptomatic disease during follow up. Which of the following best explains the longer survival after diagnosis in the screened group? A. Lead time bias B. Length time bias C. Overdiagnosis bias D. Volunteer (selection) bias E. Confounding by age"
+  },
+  {
+   "id": "imaging-2026-0440",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 열과 부속기 종괴를 동반한 골반염증질환",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0440.md",
+   "snippet": "24세 여자가 5일 전부터 시작된 아랫배 통증과 열로 응급실에 왔다. 2주 전 새 성 상대가 생겼고 콘돔은 쓰지 않았다. 마지막 월경은 10일 전이었다. 체온 38.6℃, 혈압 116/72 mmHg, 맥박 102회/분이다. 복부 진찰에서 양쪽 아랫배 압통이 있으나 반발통이나 근육 강직은 없다. 골반 진찰에서 자궁경부의 점액농성 분비물, 자궁경부 움직임 압통과 오른쪽 부속기 압통이 있고 오른쪽 부속기에 종괴가 만져진다. 혈청 β",
+   "text": "산부인과 부인과 — 열과 부속기 종괴를 동반한 골반염증질환 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 24세 여자가 5일 전부터 시작된 아랫배 통증과 열로 응급실에 왔다. 2주 전 새 성 상대가 생겼고 콘돔은 쓰지 않았다. 마지막 월경은 10일 전이었다. 체온 38.6℃, 혈압 116/72 mmHg, 맥박 102회/분이다. 복부 진찰에서 양쪽 아랫배 압통이 있으나 반발통이나 근육 강직은 없다. 골반 진찰에서 자궁경부의 점액농성 분비물, 자궁경부 움직임 압통과 오른쪽 부속기 압통이 있고 오른쪽 부속기에 종괴가 만져진다. 혈청 β hCG 는 음성이고 백혈구는 16,400/mm3 이다. 경질 초음파에서 오른쪽 부속기에 6 cm 크기의 벽이 두껍고 내부에 격막과 부유물이 있는 복합 낭성 종괴가 있다. 처치로 가장 적절한 것은? A. 경구 메트로니다졸 단독 투여 B. 입원하여 정맥 항생제 투여 C. 세프트리악손 근육주사 후 외래 경구 독시사이클린 D. 즉시 개복 전자궁절제술 E. 2주 뒤 경질 초음파 재검"
+  },
+  {
+   "id": "imaging-2026-0439",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 항암 시작 전 요산이 높고 크레아티닌이 오른 버킷림프종",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0439.md",
+   "snippet": "A 28 year old man is admitted to the hospital because of a rapidly enlarging abdominal mass and night sweats for 3 weeks. CT shows bulky mesenteric and retroperitoneal lymphadenopathy, and biopsy shows Burkitt lymphoma. He is scheduled to b",
+   "text": "혈액·종양 혈액·종양 — 항암 시작 전 요산이 높고 크레아티닌이 오른 버킷림프종 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 28 year old man is admitted to the hospital because of a rapidly enlarging abdominal mass and night sweats for 3 weeks. CT shows bulky mesenteric and retroperitoneal lymphadenopathy, and biopsy shows Burkitt lymphoma. He is scheduled to begin chemotherapy tomorrow. His pulse is 98/min, and blood pressure is 124/76 mm Hg. Serum studies show LDH 2,850 U/L, uric acid 11.2 mg/dL, potassium 4.9 mEq/L, phosphorus 4.8 mg/dL, calcium 9.0 mg/dL, and creatinine 1.6 mg/dL (1.0 mg/dL 2 weeks ago). Glucose 6 phosphate dehydrogenase activity is normal. His urine output is 50 mL/h with intravenous fluids. Which of the following is the most appropriate pharmacotherapy to start in addition to aggressive hydration? A. Rasburicase B. Allopurinol C. Febuxostat D. Sodium bicarbonate infusion E. Probenecid"
+  },
+  {
+   "id": "imaging-2026-0438",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 감염 뒤 삼킴 곤란과 폐활량 감소를 보이는 중증근무력증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0438.md",
+   "snippet": "38세 여자가 3일 전부터 심해진 삼킴 곤란과 숨참으로 응급실에 왔다. 2년 전 아세틸콜린수용체 항체 양성 중증근무력증으로 진단받아 피리도스티그민을 복용 중이며, 1주 전 기관지염으로 항생제를 처방받았다. 혈압 126/78 mmHg, 맥박 104회/분, 호흡 26회/분, 산소포화도는 실내 공기에서 95 % 이다. 양쪽 눈꺼풀 처짐과 목 굽힘근 약화가 있고, 말을 하면 콧소리가 나며 숨이 차서 문장을 끊어 말한다. 동공은 정상 ",
+   "text": "신경 신경 — 감염 뒤 삼킴 곤란과 폐활량 감소를 보이는 중증근무력증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 38세 여자가 3일 전부터 심해진 삼킴 곤란과 숨참으로 응급실에 왔다. 2년 전 아세틸콜린수용체 항체 양성 중증근무력증으로 진단받아 피리도스티그민을 복용 중이며, 1주 전 기관지염으로 항생제를 처방받았다. 혈압 126/78 mmHg, 맥박 104회/분, 호흡 26회/분, 산소포화도는 실내 공기에서 95 % 이다. 양쪽 눈꺼풀 처짐과 목 굽힘근 약화가 있고, 말을 하면 콧소리가 나며 숨이 차서 문장을 끊어 말한다. 동공은 정상 크기이고 침 흘림·설사·근섬유다발수축은 없다. 강제폐활량은 15 mL/kg 로 6시간 전 25 mL/kg 에서 감소했고, 동맥혈 PaCO2 는 46 mmHg 이다. 중환자실로 옮겨 기도 확보를 준비하였다. 근력 회복을 위한 치료로 가장 적절한 것은? A. 응급 흉선절제술 B. 네오스티그민 지속 정맥 주입 C. 혈장교환술 D. 피리도스티그민 증량 E. 고용량 메틸프레드니솔론 단독"
+  },
+  {
+   "id": "imaging-2026-0437",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간경변 복수의 자발세균복막염과 신부전 예방",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0437.md",
+   "snippet": "A 56 year old man with alcohol associated cirrhosis is admitted to the hospital because of increasing abdominal girth and mild diffuse abdominal discomfort for 4 days. He stopped drinking alcohol 1 year ago. His medications are spironolacto",
+   "text": "소화기 소화기·간담췌 — 간경변 복수의 자발세균복막염과 신부전 예방 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 56 year old man with alcohol associated cirrhosis is admitted to the hospital because of increasing abdominal girth and mild diffuse abdominal discomfort for 4 days. He stopped drinking alcohol 1 year ago. His medications are spironolactone and furosemide. His temperature is 37.9°C (100.2°F), pulse is 92/min, and blood pressure is 108/64 mm Hg. He is alert and oriented, without asterixis. The abdomen is distended with shifting dullness and mild diffuse tenderness without rigidity. Serum studies show a creatinine concentration of 1.4 mg/dL (baseline 0.9 mg/dL), BUN 34 mg/dL, total bilirubin 4.6 mg/dL, and albumin 2.6 g/dL. Diagnostic paracentesis shows an ascitic fluid neutrophil count of 620/mm3 and total protein 0.9 g/dL; Gram stain shows no organisms. Intravenous cefotaxime is started, and diuretics are held. Which of the following additional interventions is most likely to reduce his risk of renal failure and death? A. Oral rifaximin B. Addition of intravenous metronidazole C. Intravenous albumin on days 1 and 3 D. Large volume paracentesis with albumin E. Intravenous normal saline at 150 mL/h"
+  },
+  {
+   "id": "imaging-2026-0436",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 돌아누울 때 생기는 짧은 회전성 어지럼",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0436.md",
+   "snippet": "62세 여자가 3일 전 아침 침대에서 돌아누울 때 갑자기 시작된 어지럼으로 외래에 왔다. 그 뒤로 고개를 들거나 침대에 누울 때마다 주위가 도는 어지럼이 30초 이내로 지속되다 멎었고, 가만히 있으면 어지럼이 없다. 청력 저하·이명·두통은 없다. 혈압 132/80 mmHg, 맥박 72회/분이다. 신경학적 검사에서 구음장애·복시·운동실조는 없고, 앉은 자세에서 자발 안진은 없다. 머리를 오른쪽으로 45° 돌린 채 빠르게 눕히자 ",
+   "text": "이비인후과 이비인후과 — 돌아누울 때 생기는 짧은 회전성 어지럼 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 62세 여자가 3일 전 아침 침대에서 돌아누울 때 갑자기 시작된 어지럼으로 외래에 왔다. 그 뒤로 고개를 들거나 침대에 누울 때마다 주위가 도는 어지럼이 30초 이내로 지속되다 멎었고, 가만히 있으면 어지럼이 없다. 청력 저하·이명·두통은 없다. 혈압 132/80 mmHg, 맥박 72회/분이다. 신경학적 검사에서 구음장애·복시·운동실조는 없고, 앉은 자세에서 자발 안진은 없다. 머리를 오른쪽으로 45° 돌린 채 빠르게 눕히자 3초 뒤 위로 치며 오른쪽으로 도는 회전성 안진이 약 20초 나타났다가 사라졌고, 반복할수록 약해졌다. 치료로 가장 적절한 것은? A. 아세타졸아미드 복용 B. 입자 재배치법(에플리 수기) C. 메클리진 장기 복용 D. 고용량 경구 프레드니솔론 E. 바비큐 회전법(수평반고리관 정복술)"
+  },
+  {
+   "id": "imaging-2026-0435",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 밤에 심한 가려움과 손가락 사이 굴",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0435.md",
+   "snippet": "A 34 year old woman comes to the physician because of an intensely itchy rash for 3 weeks. The itching is worst at night. Her 6 year old son, who sleeps in her bed, has developed similar itching during the past week. She has no history of a",
+   "text": "피부과 피부 — 밤에 심한 가려움과 손가락 사이 굴 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 34 year old woman comes to the physician because of an intensely itchy rash for 3 weeks. The itching is worst at night. Her 6 year old son, who sleeps in her bed, has developed similar itching during the past week. She has no history of atopic dermatitis and takes no medications. Vital signs are within normal limits. Examination shows excoriated papules and several short, wavy, gray white linear burrows in the finger web spaces and on the flexor surfaces of the wrists, with scattered papules around the umbilicus. The face and scalp are spared. Microscopy of a mineral oil scraping from a burrow shows an eight legged organism and oval eggs. Which of the following is the most appropriate management? A. Permethrin cream for her and all household contacts at once B. Permethrin cream for the patient only C. High potency topical corticosteroid alone D. Oral cephalexin for the patient and her son E. Oral hydroxyzine alone for symptom relief"
+  },
+  {
+   "id": "imaging-2026-0434",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 델타파가 있던 청년의 불규칙한 넓은 QRS 빈맥",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0434.md",
+   "snippet": "24세 남자가 30분 전부터 시작된 가슴 두근거림으로 응급실에 왔다. 전에도 짧은 두근거림이 몇 번 있었으나 저절로 멎었다. 복용하는 약은 없다. 혈압 118/74 mmHg, 맥박 190회/분(불규칙), 호흡 18회/분이고, 의식은 명료하며 흉통은 없다. 심전도에서 RR 간격이 불규칙하고 QRS 폭과 모양이 박동마다 달라지는 넓은 QRS 빈맥이 보이며, 가장 짧은 RR 간격은 0.22초이다. 1년 전 건강검진 심전도에서 PR ",
+   "text": "순환기 순환기 — 델타파가 있던 청년의 불규칙한 넓은 QRS 빈맥 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 24세 남자가 30분 전부터 시작된 가슴 두근거림으로 응급실에 왔다. 전에도 짧은 두근거림이 몇 번 있었으나 저절로 멎었다. 복용하는 약은 없다. 혈압 118/74 mmHg, 맥박 190회/분(불규칙), 호흡 18회/분이고, 의식은 명료하며 흉통은 없다. 심전도에서 RR 간격이 불규칙하고 QRS 폭과 모양이 박동마다 달라지는 넓은 QRS 빈맥이 보이며, 가장 짧은 RR 간격은 0.22초이다. 1년 전 건강검진 심전도에서 PR 간격 0.10초와 델타파가 있었다. 혈청 칼륨은 4.2 mEq/L 이다. 가장 적절한 약물은? A. 디곡신 정맥 주사 B. 프로카인아마이드 정맥 주사 C. 아데노신 정맥 주사 D. 딜티아젬 정맥 주사 E. 메토프롤롤 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0433",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0433.md",
+   "snippet": "A 7 year old boy is brought to the emergency department 1 day after he fell from the monkey bars at a playground and landed on his head and right shoulder. Since then he has held his head tilted to the right with the chin rotated to the lef",
+   "text": "소아과 소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 7 year old boy is brought to the emergency department 1 day after he fell from the monkey bars at a playground and landed on his head and right shoulder. Since then he has held his head tilted to the right with the chin rotated to the left, and he cries when anyone tries to turn his head back to the midline. He has had no recent fever or sore throat. His temperature is 36.8°C (98.2°F). The posterior neck is tender, and there is no mass in either sternocleidomastoid muscle. Strength, sensation, and deep tendon reflexes are normal in all extremities. An axial CT image of the cervical spine at the level of the atlas is shown. Which of the following is the most likely diagnosis? A. Jefferson burst fracture of the atlas B. Congenital muscular torticollis C. Atlanto occipital dissociation D. Hangman fracture of the axis E. Atlantoaxial rotatory subluxation"
+  },
+  {
+   "id": "imaging-2026-0432",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 폐경 후 여성의 단단한 유방 종괴와 초음파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0432.md",
+   "snippet": "53세 여자가 왼쪽 유방에 만져지는 멍울로 외래에 왔다. 2개월 전 샤워하다 처음 알았고 통증은 없다. 폐경은 50세였고 호르몬 치료를 받은 적이 없으며 유방암 가족력은 없다. 왼쪽 유방 위바깥쪽에 지름 약 2 cm 의 단단하고 경계가 불분명한 종괴가 만져지며, 피부 함몰이나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 위치에 경계가 불분명한 고밀도 음영이 있다. 종괴 부위의 유방 초음파 영상은",
+   "text": "외과 외과계 — 폐경 후 여성의 단단한 유방 종괴와 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 53세 여자가 왼쪽 유방에 만져지는 멍울로 외래에 왔다. 2개월 전 샤워하다 처음 알았고 통증은 없다. 폐경은 50세였고 호르몬 치료를 받은 적이 없으며 유방암 가족력은 없다. 왼쪽 유방 위바깥쪽에 지름 약 2 cm 의 단단하고 경계가 불분명한 종괴가 만져지며, 피부 함몰이나 유두 분비물은 없다. 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 위치에 경계가 불분명한 고밀도 음영이 있다. 종괴 부위의 유방 초음파 영상은 그림과 같다. 다음 단계로 가장 적절한 것은? A. 미세침흡인 세포검사 후 음성이면 추적 B. 유방 자기공명영상 C. 변형 근치 유방절제술 D. 초음파 유도 중심부 바늘생검 E. 6개월 뒤 추적 초음파"
+  },
+  {
+   "id": "imaging-2026-0431",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 오토바이 사고 뒤 두개-경추 이음부 CT 와 동반 손상 선별",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0431.md",
+   "snippet": "A 42 year old man is brought to the emergency department 50 minutes after he was thrown from his motorcycle in a high speed collision. A rigid cervical collar was placed at the scene. He was intubated for airway protection after he became c",
+   "text": "응급·중환자 응급·중환자·외상 — 오토바이 사고 뒤 두개-경추 이음부 CT 와 동반 손상 선별 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a A 42 year old man is brought to the emergency department 50 minutes after he was thrown from his motorcycle in a high speed collision. A rigid cervical collar was placed at the scene. He was intubated for airway protection after he became combative. Before sedation, he moved all four extremities to command. His pulse is 96/min, and blood pressure is 132/78 mm Hg. There is a scalp laceration over the occiput. Noncontrast CT of the head shows no intracranial hemorrhage. Focused abdominal sonography shows no free fluid. A coronal reconstruction of the cervical spine CT is shown. Neurosurgery is consulted for occipitocervical stabilization. Which of the following is the most appropriate additional study to screen for an associated injury that can cause a delayed stroke? A. Carotid duplex ultrasonography B. MRI of the brain with diffusion weighted imaging C. Flexion–extension radiographs of the cervical spine D. Transcranial Doppler ultrasonography E. CT angiography of the head and neck"
+  },
+  {
+   "id": "imaging-2026-0430",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 승압제를 끊은 뒤 수분이 많이 쌓인 기계환기 환자",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "confidence": "high",
+   "date": "2026-10-25",
+   "path": "content/imaging/2026/imaging-2026-0430.md",
+   "snippet": "57세 여자가 중환자실에서 기관삽관 6일째이다. 열과 기침으로 입원해 SARS CoV 2 PCR 양성을 확인했고, 저산소혈증이 악화되어 기관삽관한 뒤 덱사메타손과 일회호흡량 6 mL/kg(예측체중)의 기계환기를 받고 있다. 입원 초기에 쓰던 노르에피네프린은 48시간 전에 끊었다. 동결절 기능부전으로 영구 심박조율기를 가지고 있다. 혈압 128/72 mmHg, 맥박 84회/분, 체온 37.4℃이다. 흡입산소분율 0.4, 호기말양",
+   "text": "호흡기 호흡기 — 승압제를 끊은 뒤 수분이 많이 쌓인 기계환기 환자 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a 57세 여자가 중환자실에서 기관삽관 6일째이다. 열과 기침으로 입원해 SARS CoV 2 PCR 양성을 확인했고, 저산소혈증이 악화되어 기관삽관한 뒤 덱사메타손과 일회호흡량 6 mL/kg(예측체중)의 기계환기를 받고 있다. 입원 초기에 쓰던 노르에피네프린은 48시간 전에 끊었다. 동결절 기능부전으로 영구 심박조율기를 가지고 있다. 혈압 128/72 mmHg, 맥박 84회/분, 체온 37.4℃이다. 흡입산소분율 0.4, 호기말양압 8 cmH2O 에서 동맥혈 PaO2 는 84 mmHg 이다. 입원 뒤 누적 수분 균형은 +6.2 L 이고, 소변량은 시간당 60 mL, 혈청 크레아티닌은 0.8 mg/dL 이다. 심장초음파에서 좌심실 박출률은 60 % 이다. 오늘 아침 휴대용 흉부 X선 사진은 그림과 같다. 가장 적절한 처치는? A. 엎드린 자세 환기 시작 B. 일회호흡량을 10 mL/kg 로 증량 C. 고빈도 진동 환기로 전환 D. 푸로세미드 정맥 투여로 음성 수분 균형 유도 E. 생리식염수 1 L 정맥 급속 주입"
+  },
   {
    "id": "cn.obgyn.menstrual-cycle.ovulation-confirmation",
    "type": "concept",
@@ -99,6 +307,91 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/obstetrics-gynecology/cn.obgyn.menstrual-cycle.ovulation-confirmation.md",
    "snippet": "판단 — 왜 배란 7일 뒤 프로게스테론인가 프로게스테론(progesterone)은 배란 뒤 생긴 황체(corpus luteum)의 황체화 과립막세포 가 주로 낸다 — 배란이 없으면 황체가 없고 프로게스테론도 오르지 않는다 [[harrison 21: 392장 p.3029]]. 그래서 배란 약 7일 뒤 혈청 프로게스테론 3 ng/mL 이면 배란이 있었다고 본다 [[harrison 21: 392장 p.3031]]. 시점은 다음 월경",
    "text": "Obstetrics and Gynecology 판단 — 왜 배란 7일 뒤 프로게스테론인가 프로게스테론(progesterone)은 배란 뒤 생긴 황체(corpus luteum)의 황체화 과립막세포 가 주로 낸다 — 배란이 없으면 황체가 없고 프로게스테론도 오르지 않는다 [[harrison 21: 392장 p.3029]]. 그래서 배란 약 7일 뒤 혈청 프로게스테론 3 ng/mL 이면 배란이 있었다고 본다 [[harrison 21: 392장 p.3031]]. 시점은 다음 월경에서 거꾸로 센다. 황체기는 12~14일로 일정하고 주기 길이의 차이는 난포기에서 온다 — 주기가 길면 배란이 늦다 [[harrison 21: 392장 p.3031]]. 규칙적으로 매달 출혈하는 여성은 대개 배란 주기다. 규칙성 자체가 첫 단서이고, 검사는 그것을 확인한다 [[harrison 21: 392장 p.3031]]. 기전 — 난포에서 황체로, 에스트라디올에서 프로게스테론으로 난포기에는 FSH 를 받는 과립막세포가 난포막세포(theca cell)의 안드로겐을 아로마타제로 바꿔 에스트라디올을 만든다(2세포 모형, two cell model) [[harrison 21: 392장 p.3029]]. 앞 주기 황체기 끝에 FSH 가 20~30% 오르면 난포 무리가 동원되고, 에스트라디올·인히빈이 FSH 를 눌러 대개 하나의 우세 난포만 자란다 [[harrison 21: 392장 p.3030–3031]]. 우세 난포의 에스트라디올이 지수적으로 오르면 뇌하수체에 양성 되먹임 이 걸려 LH 급증(LH surge)이 오고, 약 36시간 뒤 배란한다 [[harrison 21: 392장 p.3030–3031]]. 터진 난포는 LH 로 황체화해 프로게스테론·인히빈 A·에스트라디올을 내고, 프로게스테론은 에스트로겐으로 준비된 내막을 분비기로 바꾸고 자궁경부 점액을 끈끈하게 하며 기초체온을 올린다 [[harrison 21: 392장 p.3030–3031]]. 황체는 LH 에 대한 민감도가 줄어 수명이 정해져 있고(그래서 황체기 길이가 일정하다), 임신하면 영양막의 hCG 가 같은 LH 수용체에 붙어 태반이 넘겨받는 6~10주까지 황체를 유지한다 [[harrison 21: 392장 p.3029, p.3031]]. 가르는 소견 — 배란의 증거와 그 한계 기초체온(basal body temperature)은 프로게스테론의 체온 조절 효과로 주기 후반에 0.24°C( 0.5°F) 오른다 — 오른 뒤에야 알 수 있어 지난 배란의 증거다 [[harrison 21: 392장 p.3031]]. 소변 LH 급증 검사(ovulation predictor kit)는 배란을 예측 한다. 배란은 급증 약 36시간 뒤라 성교 시점을 맞추는 데 쓴다 [[harrison 21: 392장 p.3031]]. 초음파는 난포 동의 성장과 에스트라디올에 따른 내막 두께를 보고, 우세 난포의 붕괴·황체·분비기 내막의 특징적 에코로 배란을 보여 준다 [[harrison 21: 392장 p.3031]]. 해석의 한계 : 배란통(mittelschmerz)과 월경전 증상은 배란 주기에 흔하지만 없다고 무배란은 아니다. 프로게스테론은 시점이 이르면 배란 전 값이라 낮게 나온다 [[harrison 21: 392장 p.3031]]. 권고와 예외 정상 주기: 첫날부터 다음 월경 전날까지 약 28일(25~35일), 한 여성의 주기 간 변동은 ±2일, 출혈 4~6일 [[harrison 21: 392장 p.3031]]. 초경 뒤 2~4년은 무배란·불규칙 주기가 흔하고, 35세가 넘으면 주기가 짧아지며, 폐경이 가까워지면 무배란 주기가 늘어 출혈이 불규칙해진다 [[harrison 21: 392장 p.3031]]. 난소 예비력은 배란 확인과 다른 질문이다 — 항뮐러관호르몬(AMH)이 주기 내내 비교적 안정해 인히빈 B보다 낫고, 20대 초반에 가장 높고 폐경 무렵 크게 준다. 다낭난소증후군에서는 작은 난포가 많아 높다 [[harrison 21: 392장 p.3030]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 392장 p.3027~3032)"
+  },
+  {
+   "id": "paper-2026-0837",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in cardiovascular medicine",
+   "confidence": "medium",
+   "date": "2026-10-24",
+   "path": "content/papers/2026/2026-10-24_paper-2026-0837_large_language_model_assisted_cad_rads_classification_struct.md",
+   "snippet": "Title Large language model assisted CAD RADS classification: structured report extraction, accuracy, and clinical decision making risk of ChatGPT 4o/5 and DeepSeek R1 Authors Rong Haorong, Huang Xiyi, Chen Xinjie, Ouyang Lizhu, Li Yuelu, Li",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Frontiers in cardiovascular medicine Title Large language model assisted CAD RADS classification: structured report extraction, accuracy, and clinical decision making risk of ChatGPT 4o/5 and DeepSeek R1 Authors Rong Haorong, Huang Xiyi, Chen Xinjie, Ouyang Lizhu, Li Yuelu, Lin Xin, Pan Jialing, Li Yunjing, et al. Journal / DOI Frontiers in cardiovascular medicine · DOI: 10.3389/fcvm.2026.1909068 · PMID: 42920484 https://pubmed.ncbi.nlm.nih.gov/42920484/ Abstract OBJECTIVE: To compare ChatGPT 4o, ChatGPT 5, and DeepSeek R1 in assigning main Coronary Artery Disease Reporting and Data System (CAD RADS) categories from findings only coronary computed tomography angiography (CCTA) reports and to characterize management relevant classification errors. METHODS: This retrospective diagnostic accuracy study included 2,100 category balanced findings only CCTA reports (300 per CAD RADS category). Two experienced CCTA radiologists graded the English translated reports; 12 disagreements were resolved by a third. ChatGPT 4o was evaluated in standard mode, ChatGPT 5 in Thinking mode, and DeepSeek R1 in Deep Thinking mode; model generation and inference mode therefore varied together. Exact match accuracy with 95% Wilson confidence intervals (CIs), paired comparisons, and unweighted Gwet AC1 with 95% CIs were calculated. Management relevant transitions and digital subtraction angiography (DSA) findings among high risk downgrades were analyzed. RESULTS: DeepSeek R1 had an exact match accuracy of 82.57% (95% CI, 80.89 84.13) and AC1 of 0.797 (95% CI, 0.778 0.816). ChatGPT 5 had an accuracy of 80.19% (95% CI, 78.43 81.84) and AC1 of 0.769 (95% CI, 0.749 0.789), whereas ChatGPT 4o had an accuracy of 53.62% (95% CI, 51.48 55.74) and AC1 of 0.460 (95% CI, 0.435 0.485). Cochran's Q test was significant (Q = 657.87; df = 2; P < 0.001); after Holm correction, DeepSeek R1 also outperformed ChatGPT 5 in the paired comparison (P = 0.026), and both outperformed ChatGPT 4o (both P < 0.001). ChatGPT 4o downgraded 127/900 (14.11%) reference high risk reports to CAD RADS 3 or lower. Of these 127 cases, 65 underwent DSA within three months; DSA supported the original high risk assessment in 56/65 (86.15%). The corresponding high risk downgrade proportions were 37/900 (4.11%) for ChatGPT 5 and 23/900 (2.56%) for DeepSeek R1. CONCLUSION: The DeepSeek R1 Deep Thinking and ChatGPT 5 Thinking configurations achieved higher accuracy than ChatGPT 4o in standard mode. Because model generation and inference mode varied together, the results do not isolate a model family effect. LLMs merit further evaluation for secondary structuring when no documented CAD RADS category is available, but should not overwrite a radiologist assigned category or independently determine management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0836",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in medicine",
+   "confidence": "medium",
+   "date": "2026-10-24",
+   "path": "content/papers/2026/2026-10-24_paper-2026-0836_amelanotic_subungual_melanoma_becoming_clinically_apparent_w.md",
+   "snippet": "Title Amelanotic subungual melanoma becoming clinically apparent within 24 h after minor blunt trauma: a case report Authors Wang Huiru, Wang Peng, Suo Yanyan, Lu Kang, Xue Qingfeng, Li Huahua, Gao Rui, Guo Yunchang, et al. Journal / DOI Fr",
+   "text": "Pathology scraped pubmed PubMed / Frontiers in medicine Title Amelanotic subungual melanoma becoming clinically apparent within 24 h after minor blunt trauma: a case report Authors Wang Huiru, Wang Peng, Suo Yanyan, Lu Kang, Xue Qingfeng, Li Huahua, Gao Rui, Guo Yunchang, et al. Journal / DOI Frontiers in medicine · DOI: 10.3389/fmed.2026.1991898 · PMID: 42920588 https://pubmed.ncbi.nlm.nih.gov/42920588/ Abstract Amelanotic subungual melanoma (ASM) is a rare variant of nail unit melanoma (NUM) lacking melanin pigmentation, frequently misdiagnosed as a benign post traumatic or infectious lesion. To our knowledge, ASM becoming clinically apparent within 24 h following minor blunt trauma has not been reported previously. We report the case of a 66 year old male who presented with a persistent flesh colored nodule beneath his right thumbnail that was manifested within 24 h after minor blunt trauma caused by nail clippers. The lesion was non tender, non pigmented, and unresponsive to 2 weeks of antibiotic therapy. Histopathology revealed diffuse subepidermal proliferation of atypical cells with signet ring morphology. Immunohistochemistry (IHC) demonstrated positivity for vimentin, HMB45, and Melan A, and negativity for cytokeratin 5 (CK5) and S 100. Ki 67 was approximately 30%; Breslow thickness was 2.5 mm. Final diagnosis: ASM, AJCC stage IIA (T3aN0M0). Diagnostic excisional biopsy with a 2 mm margin was performed; sentinel lymph node biopsy of two axillary lymph nodes was negative. At 1 year follow up, no local recurrence or distant metastasis was observed. This case demonstrates that ASM can become clinically evident within 24 h after acute trauma, likely through unmasking of a pre existing subclinical tumor. For post traumatic nail lesions unresponsive to antibiotics, early biopsy with a comprehensive IHC panel (including Melan A, HMB45, and S 100) is essential. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0835",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Pan African medical journal",
+   "confidence": "medium",
+   "date": "2026-10-24",
+   "path": "content/papers/2026/2026-10-24_paper-2026-0835_microbiological_patterns_of_bacterial_bloodstream_infections.md",
+   "snippet": "Title Microbiological patterns of bacterial bloodstream infections and predictors of kidney dysfunction at a tertiary hospital in Zambia Authors Nzobokela John, Chisompola David, Chinyante Elijah, Namwinga Luswepo, Kalyapu Lucky, Chindima N",
+   "text": "Nephrology scraped pubmed PubMed / The Pan African medical journal Title Microbiological patterns of bacterial bloodstream infections and predictors of kidney dysfunction at a tertiary hospital in Zambia Authors Nzobokela John, Chisompola David, Chinyante Elijah, Namwinga Luswepo, Kalyapu Lucky, Chindima Nanjela Journal / DOI The Pan African medical journal · DOI: 10.11604/pamj.2026.54.29.52096 · PMID: 42920723 https://pubmed.ncbi.nlm.nih.gov/42920723/ Abstract INTRODUCTION: bloodstream infections (BSIs) are a significant cause of morbidity and mortality and are frequently complicated by kidney dysfunction. Evidence on the prevalence, predictors, and associated microbiological patterns in Zambia remains scarce. This study evaluated the burden of kidney dysfunction, its laboratory predictors, and blood culture isolate patterns at Ndola Teaching Hospital (NTH). METHODS: a retrospective cohort study was conducted at NTH from January to December 2025. Data were extracted from the DISA laboratory database and patient registry records. Kidney dysfunction was defined as an estimated glomerular filtration rate (eGFR) of less than 60 mL/min/1.73 m2 at admission. Descriptive statistics summarized demographic and microbiological characteristics. Logistic regression analyses were performed to identify independent predictors of kidney dysfunction. RESULTS: among 232 patients with confirmed BSIs, 58.6% (n = 136; 95% CI: 52.1 64.9) had kidney dysfunction at admission. The majority were aged 18 39 years (37.9%) and ≥60 years (34.9%), and 51.3% were female. Gram negative organisms predominated (67.1%), particularly Enterobacterales (52.2%), with Enterobacter agglomerans (15.1%), Klebsiella pneumonia (10.8%), and Escherichia coli (8.2%) most common. Gram positive organisms accounted for 32.3%, mainly Staphylococcus aureus (16.8%). Multidrug resistant isolates comprised 58.2%. Independent predictors of kidney dysfunction at admission included age 40 59 years (AOR 2.39; 95% CI 1.01 5.61) and age ≥60 years (AOR 5.62; 95% CI 2.41 13.08) compared with patients aged 18 39 years. Compared with patients with pre existing chronic kidney disease (CKD), those without CKD had markedly lower odds of kidney dysfunction at admission (AOR 0.007; 95% CI 0.00 0.11). Among laboratory markers, a lower hemoglobin to RDW ratio (AOR 0.04; 95% CI 0.03 0.85) and lower platelet count (AOR 0.995; 95% CI 0.994 0.998) were also independently associated with kidney dysfunction at admission. CONCLUSION: kidney dysfunction at admission is highly prevalent among adults with BSIs at NTH and is independently associated with older age, pre existing CKD, lower hemoglobin to RDW ratio, and thrombocytopenia. The predominance of multidrug resistant Gram negative pathogens highlights the importance of early renal assessment, risk stratification, and strengthened antimicrobial stewardship in resource limited settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0834",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / iScience",
+   "confidence": "medium",
+   "date": "2026-10-24",
+   "path": "content/papers/2026/2026-10-24_paper-2026-0834_bridging_soil_resistome_and_clinical_inference_a_four_tier_e.md",
+   "snippet": "Title Bridging soil resistome and clinical inference: A four tier evidentiary framework Authors Meski Simon, Mojsoska Biljana, Krogfelt Karen A, Cruz Paredes Carla Journal / DOI iScience · DOI: 10.1016/j.isci.2026.117815 · PMID: 42920753 ht",
+   "text": "Infectious Disease scraped pubmed PubMed / iScience Title Bridging soil resistome and clinical inference: A four tier evidentiary framework Authors Meski Simon, Mojsoska Biljana, Krogfelt Karen A, Cruz Paredes Carla Journal / DOI iScience · DOI: 10.1016/j.isci.2026.117815 · PMID: 42920753 https://pubmed.ncbi.nlm.nih.gov/42920753/ Abstract Soils support a varied range of microbial communities and are important repositories of antimicrobial resistance genes. Sequence based techniques, such as quantitative polymerase chain reaction and shotgun metagenomics, have substantially aided soil resistome cataloging. Nevertheless, discovery alone does not indicate activity, transferability, exposure, or clinical relevance. This review contends that better clinical inference requires tying presence based signals to function, mobility, and exposure routes, rather than just increasing survey volume. We offer a four tiered evidentiary paradigm that distinguishes between detection, functional or expression based evidence, mobile genetic element context, and exposure linked evidence in environmental, animal, and human compartments. Because activity, mobility, and cross compartmental similarity support several claims, layered, claim aligned approaches are required for careful One Health interpretation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0833",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in cardiovascular medicine",
+   "confidence": "medium",
+   "date": "2026-10-24",
+   "path": "content/papers/2026/2026-10-24_paper-2026-0833_atypical_echocardiographic_phenotype_of_end_stage_hypertroph.md",
+   "snippet": "Title Atypical echocardiographic phenotype of end stage hypertrophic cardiomyopathy: a case series Authors Wang Xi, Liu Qiuying, Zhao Li, Li Menglu Journal / DOI Frontiers in cardiovascular medicine · DOI: 10.3389/fcvm.2026.1907550 · PMID: ",
+   "text": "Cardiology scraped pubmed PubMed / Frontiers in cardiovascular medicine Title Atypical echocardiographic phenotype of end stage hypertrophic cardiomyopathy: a case series Authors Wang Xi, Liu Qiuying, Zhao Li, Li Menglu Journal / DOI Frontiers in cardiovascular medicine · DOI: 10.3389/fcvm.2026.1907550 · PMID: 42920698 https://pubmed.ncbi.nlm.nih.gov/42920698/ Abstract We fully documented the diagnostic process of three hypertrophic cardiomyopathy (HCM) cases without typical asymmetric myocardial hypertrophy, including medical histories, imaging, and laboratory tests, ultimately confirming the diagnosis through genetic testing. Case 1 presented with segmental wall motion abnormalities with thrombosis, requiring differentiation from coronary atherosclerotic heart disease; case 2 presented with restrictive hemodynamic changes that could be confused with restrictive cardiomyopathy such as amyloidosis; case 3 occurred in a pediatric setting and showed diffuse and concentric hypertrophy similar to metabolic disorders. Various imaging examinations were employed for differential diagnosis, and whole exome sequencing identified a pathogenic MYBPC3 mutation in case 1 and pathogenic MYH7 mutations in cases 2 and 3, including a de novo variant in case 3. We provided appropriate treatment and follow up for each case. Case 1's left ventricular ejection fraction increased to 48%, and cases 2 and 3 have not experienced worsening heart failure or malignant arrhythmic events based on an optimized drug regimen. This case series confirms the diversity of echocardiographic phenotypes in end stage HCM, underscoring the role of multimodal imaging and genetic testing in diagnosis and differential diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0429",
