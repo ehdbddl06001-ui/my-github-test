@@ -496,8 +496,29 @@
    "date": "2026-10-23",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "imaging-2026-0341": {
+   "id": "imaging-2026-0341",
+   "exam": "imaging",
+   "subject": "내분비",
+   "step": "Step 2",
+   "type": "내분비·대사 — 갑상샘 조직의 면역조직화학과 호르몬 조절",
+   "style": "usmle_style",
+   "modality": "HISTOLOGY_IHC",
+   "question": "Hormone production by the stained cell population is most directly stimulated by which of the following?",
+   "chosen": 1,
+   "chosenText": "Thyrotropin-releasing hormone acting directly on the gland",
+   "answer": 3,
+   "answerText": "Thyroid-stimulating hormone from the anterior pituitary",
+   "coreNote": "",
+   "differ": "",
+   "decision": "갈색 염색이 콜로이드 여포를 고리처럼 둘러싸므로 염색된 세포는 여포상피세포다. 여포세포의 갑상샘호르몬 합성은 TSH 가 Gs-cAMP 로 직접 자극하며, 칼슘에 반응하는 것은 여포 사이 C 세포다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "date": "2026-10-26",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-23T23:45:32.585Z"
+ "updated": "2026-10-26T00:13:25.102Z"
 }
