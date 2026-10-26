@@ -517,8 +517,29 @@
    "date": "2026-10-26",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0433": {
+   "id": "imaging-2026-0433",
+   "exam": "imaging",
+   "subject": "소아과",
+   "step": "Step 2",
+   "type": "소아청소년 — 철봉에서 떨어진 뒤 고개가 기운 아이의 환추 CT",
+   "style": "usmle_style",
+   "modality": "CT",
+   "question": "Which of the following is the most likely diagnosis?",
+   "chosen": 0,
+   "chosenText": "Jefferson burst fracture of the atlas",
+   "answer": 4,
+   "answerText": "Atlantoaxial rotatory subluxation",
+   "coreNote": "",
+   "differ": "",
+   "decision": "경미한 낙상 뒤 cock-robin 자세가 고정되었고 C1 축상 CT 에서 환추가 치아돌기에 대해 돌아가 있다. 환축추 회전 아탈구다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261025T202524Z_일일영상_2026-10-26_12units_12q_e0da6c6a",
+   "date": "2026-10-26",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-26T00:13:25.102Z"
+ "updated": "2026-10-26T00:16:49.932Z"
 }
