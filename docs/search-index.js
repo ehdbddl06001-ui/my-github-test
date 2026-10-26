@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4045,
+  "total": 4057,
   "byType": {
    "usmle": 216,
    "kmle": 1568,
+   "imaging": 452,
    "concept": 114,
    "paper": 844,
-   "imaging": 440,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,20 +38,20 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 100,
    "Hematology": 95,
    "Laboratory Medicine": 86,
-   "산부인과": 66,
-   "순환기": 38,
-   "호흡기": 29,
+   "산부인과": 67,
+   "순환기": 39,
+   "호흡기": 30,
    "소화기": 28,
-   "소아과": 25,
+   "소아과": 26,
    "Physiology": 24,
-   "응급·중환자": 22,
+   "응급·중환자": 23,
+   "감염": 21,
+   "내분비": 21,
+   "병리·조직학": 21,
+   "신경": 21,
    "혈액·종양": 21,
-   "감염": 20,
-   "내분비": 20,
-   "병리·조직학": 20,
-   "신경": 20,
+   "신장·비뇨기": 20,
    "외과": 20,
-   "신장·비뇨기": 19,
    "Pharmacology": 18,
    "Biochemistry": 17,
    "예방의학·역학": 17,
@@ -59,9 +59,9 @@ window.MEDKOS_INDEX = {
    "Microbiology": 16,
    "Immunology": 13,
    "Internal Medicine": 13,
-   "약리": 12,
+   "약리": 13,
+   "근골격·류마티스": 12,
    "정신과": 12,
-   "근골격·류마티스": 11,
    "영상의학": 8,
    "이비인후과": 8,
    "안과": 7,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2830,
+   "high": 2842,
    "low": 51,
    "medium": 1164
   },
@@ -820,6 +820,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1570.md",
    "snippet": "66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와",
    "text": "Cardiology Dizziness and a Slow Pulse after Swallowing a Relative's Blood Pressure Pills calcium-channel-blocker-overdose toxicology bradycardia ecg antidote KMLE 2026 / Claude 66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 정맥 날록손 투여 B. 디곡신 특이 항체 조각 C. 정맥 염화칼슘 투여 D. 정맥 글루카곤 투여 E. 정맥 지방유제 투여 아트로핀·수액에 반응하지 않는 서맥·저혈압에 고혈당이 동반되고 칼륨이 정상이면 칼슘통로차단제 중독을 먼저 생각한다. 첫 해독 처치는 정맥 칼슘이다."
+  },
+  {
+   "id": "imaging-2026-0453",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 걸음 장애·요실금·인지 저하와 뇌실 확장",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0453.md",
+   "snippet": "A 74 year old man is brought to the physician by his daughter because of progressive difficulty walking for 1 year. He feels as if his feet are stuck to the floor, and he has fallen twice. During the past 6 months, he has developed urinary ",
+   "text": "신경 신경 — 걸음 장애·요실금·인지 저하와 뇌실 확장 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b A 74 year old man is brought to the physician by his daughter because of progressive difficulty walking for 1 year. He feels as if his feet are stuck to the floor, and he has fallen twice. During the past 6 months, he has developed urinary urgency with occasional incontinence and has become slow in planning daily activities. He has hypertension treated with lisinopril. There is no tremor. Examination shows a broad based gait with short, shuffling steps and difficulty initiating and turning; arm swing is preserved. Muscle tone is normal, and there is no bradykinesia of finger tapping. Mini Mental State Examination score is 25/30. MRI of the brain shows enlargement of the lateral and third ventricles out of proportion to sulcal widening, with tight high convexity sulci and no obstructing mass. Which of the following is the most appropriate next step? A. Large volume lumbar puncture with gait assessment before and after B. Trial of carbidopa levodopa C. Ventriculoperitoneal shunt placement without further testing D. Donepezil therapy E. Oxybutynin therapy"
+  },
+  {
+   "id": "imaging-2026-0452",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 알도스테론/레닌 비가 높은 고혈압 환자의 다음 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0452.md",
+   "snippet": "A 46 year old woman comes to the physician for follow up of hypertension diagnosed 2 years ago. Her blood pressure remains above 150/95 mm Hg despite taking amlodipine, losartan, and hydrochlorothiazide at maximal doses. She has no headache",
+   "text": "내분비 내분비·대사 — 알도스테론/레닌 비가 높은 고혈압 환자의 다음 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b A 46 year old woman comes to the physician for follow up of hypertension diagnosed 2 years ago. Her blood pressure remains above 150/95 mm Hg despite taking amlodipine, losartan, and hydrochlorothiazide at maximal doses. She has no headache, palpitations, or sweating. Body mass index is 25 kg/m2. Blood pressure is 156/98 mm Hg. Examination shows no cushingoid features. Serum potassium is 3.6 mEq/L, and creatinine is 0.7 mg/dL. Morning plasma aldosterone concentration is 16 ng/dL, and plasma renin activity is 0.4 ng/mL/h (aldosterone to renin ratio, 40). The tests were repeated after correcting potassium with similar results. Which of the following is the most appropriate next step in diagnosis? A. Saline infusion suppression test B. CT scan of the adrenal glands C. Adrenal venous sampling D. Overnight 1 mg dexamethasone suppression test E. 24 hour urine metanephrines"
+  },
+  {
+   "id": "imaging-2026-0451",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 건조증후군 환자의 정상 음이온차 대사산증과 신석회화",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0451.md",
+   "snippet": "A 39 year old woman comes to the physician because of fatigue and muscle weakness for 3 months and an episode of left flank pain with hematuria 2 weeks ago. She has had dry eyes and dry mouth for 2 years. She has no diarrhea and takes no me",
+   "text": "신장·비뇨기 신장·비뇨 — 건조증후군 환자의 정상 음이온차 대사산증과 신석회화 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b A 39 year old woman comes to the physician because of fatigue and muscle weakness for 3 months and an episode of left flank pain with hematuria 2 weeks ago. She has had dry eyes and dry mouth for 2 years. She has no diarrhea and takes no medications. Blood pressure is 112/70 mm Hg. Examination shows bilateral parotid enlargement and mild proximal muscle weakness. Serum studies show: Na+ 139 mEq/L, K+ 2.9 mEq/L, Cl− 115 mEq/L, HCO3− 15 mEq/L, glucose 90 mg/dL, and creatinine 0.8 mg/dL. Arterial pH is 7.30. Urine pH is 6.8; urine Na+ 40 mEq/L, K+ 30 mEq/L, Cl− 50 mEq/L. Urinalysis shows no glucose and no protein. Renal ultrasonography shows bilateral medullary nephrocalcinosis. Which of the following is the most likely cause of the acid base disorder? A. Impaired HCO3− reabsorption in the proximal tubule B. Aldosterone deficiency or resistance in the collecting duct C. Gastrointestinal loss of bicarbonate D. Accumulation of unmeasured organic acids E. Impaired H+ secretion by α intercalated cells of the collecting duct"
+  },
+  {
+   "id": "imaging-2026-0450",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 연골석회화를 동반한 젊은 남성의 급성 무릎 관절염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0450.md",
+   "snippet": "A 44 year old man comes to the emergency department because of a 2 day history of pain and swelling of the right knee. He has had two similar episodes in the left knee during the past year that resolved within 10 days. He also reports fatig",
+   "text": "근골격·류마티스 류마티스·근골격 — 연골석회화를 동반한 젊은 남성의 급성 무릎 관절염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b A 44 year old man comes to the emergency department because of a 2 day history of pain and swelling of the right knee. He has had two similar episodes in the left knee during the past year that resolved within 10 days. He also reports fatigue and decreased libido for 1 year. He drinks alcohol occasionally. Temperature is 37.6°C. The right knee is warm and swollen with a large effusion. There is bony enlargement of the second and third metacarpophalangeal joints of both hands. Synovial fluid analysis shows a leukocyte count of 18,000/mm3 (85% neutrophils) and rhomboid shaped crystals that are weakly positively birefringent under polarized light; Gram stain is negative. X rays of both knees show linear calcification of the menisci. Serum alanine aminotransferase is 68 U/L, and the fasting glucose is 128 mg/dL. Which of the following serum studies is most likely to identify the underlying cause of this condition? A. Antinuclear antibody titer B. Transferrin saturation and ferritin C. Serum uric acid concentration D. Rheumatoid factor and anti CCP E. HLA B27 genotyping"
+  },
+  {
+   "id": "imaging-2026-0449",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 알로푸리놀을 더한 뒤 아자티오프린 복용자의 범혈구감소",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0449.md",
+   "snippet": "52세 남자가 1주일 전부터 생긴 열과 입안 궤양으로 병원에 왔다. 3년 전 신장 이식을 받고 타크로리무스, 프레드니솔론, 아자티오프린 100 mg/일을 복용해 왔으며, 지난 2년 동안 혈구 수는 정상이었다. 4주 전 반복되는 통풍 발작으로 알로푸리놀 300 mg/일을 새로 시작하였다. 체온 38.4℃, 혈압 132/78 mmHg 이다. 혈액 검사에서 백혈구 1,100/mm3(호중구 300/mm3), 혈색소 7.9 g/dL, ",
+   "text": "약리 약리 — 알로푸리놀을 더한 뒤 아자티오프린 복용자의 범혈구감소 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b 52세 남자가 1주일 전부터 생긴 열과 입안 궤양으로 병원에 왔다. 3년 전 신장 이식을 받고 타크로리무스, 프레드니솔론, 아자티오프린 100 mg/일을 복용해 왔으며, 지난 2년 동안 혈구 수는 정상이었다. 4주 전 반복되는 통풍 발작으로 알로푸리놀 300 mg/일을 새로 시작하였다. 체온 38.4℃, 혈압 132/78 mmHg 이다. 혈액 검사에서 백혈구 1,100/mm3(호중구 300/mm3), 혈색소 7.9 g/dL, 혈소판 38,000/mm3 이다. 혈청 크레아티닌은 1.3 mg/dL 로 지난달과 같고, 타크로리무스 혈중 농도는 목표 범위 안이다. 이식 전 검사에서 TPMT 활성은 정상이었다. 이 환자의 범혈구감소를 일으킨 효소 억제로 가장 적절한 것은? A. 하이포잔틴 구아닌 포스포리보실전이효소 B. 사이토크롬 P450 3A4 C. 디하이드로피리미딘 탈수소효소 D. 잔틴산화효소(xanthine oxidase) E. 티오퓨린 메틸전이효소(TPMT)"
+  },
+  {
+   "id": "imaging-2026-0448",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 비린내 나는 묽은 질 분비물과 단서세포",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0448.md",
+   "snippet": "28세 여자가 1주일 전부터 생긴 질 분비물로 병원에 왔다. 분비물에서 생선 비린내가 나고 성관계 뒤에 더 심해진다. 가려움이나 성교통은 없다. 한 명의 남성 파트너와 성관계를 하며 콘돔은 쓰지 않는다. 마지막 월경은 2주 전이고 소변 임신 검사는 음성이다. 질경 검사에서 질벽에 얇고 균일한 회백색 분비물이 묻어 있고, 질벽과 자궁경부에 발적이나 점상 출혈은 없다. 질 분비물 pH 는 5.0 이고, 10 % 수산화칼륨을 떨어뜨",
+   "text": "산부인과 부인과 — 비린내 나는 묽은 질 분비물과 단서세포 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b 28세 여자가 1주일 전부터 생긴 질 분비물로 병원에 왔다. 분비물에서 생선 비린내가 나고 성관계 뒤에 더 심해진다. 가려움이나 성교통은 없다. 한 명의 남성 파트너와 성관계를 하며 콘돔은 쓰지 않는다. 마지막 월경은 2주 전이고 소변 임신 검사는 음성이다. 질경 검사에서 질벽에 얇고 균일한 회백색 분비물이 묻어 있고, 질벽과 자궁경부에 발적이나 점상 출혈은 없다. 질 분비물 pH 는 5.0 이고, 10 % 수산화칼륨을 떨어뜨리면 비린내가 강해진다. 식염수 현미경 검사에서 가장자리가 세균으로 덮여 흐릿한 상피세포가 많고, 백혈구는 드물며 움직이는 원충은 보이지 않는다. 가장 적절한 치료는? A. 아목시실린 경구 투여 B. 에스트로겐 질 크림 C. 메트로니다졸 경구 투여 D. 플루코나졸 경구 투여 E. 세프트리악손 근육 주사"
+  },
+  {
+   "id": "imaging-2026-0447",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 고양이에게 손을 물린 성인의 예방 항생제",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0447.md",
+   "snippet": "35세 여자가 4시간 전 기르던 고양이에게 오른손 등을 물려 병원에 왔다. 약물 알레르기는 없고 기저 질환도 없다. 파상풍 예방접종은 4년 전에 받았다. 체온 36.8℃이다. 오른손 등에 깊이를 알 수 없는 작은 천공상 2개가 있고, 주위 발적은 1 cm 이내이며, 손가락 움직임과 감각은 정상이다. 고양이는 실내에서만 길렀고 광견병 예방접종을 받았다. 상처를 생리식염수로 충분히 세척하였다. 예방 항생제로 가장 적절한 것은? A",
+   "text": "감염 감염 — 고양이에게 손을 물린 성인의 예방 항생제 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b 35세 여자가 4시간 전 기르던 고양이에게 오른손 등을 물려 병원에 왔다. 약물 알레르기는 없고 기저 질환도 없다. 파상풍 예방접종은 4년 전에 받았다. 체온 36.8℃이다. 오른손 등에 깊이를 알 수 없는 작은 천공상 2개가 있고, 주위 발적은 1 cm 이내이며, 손가락 움직임과 감각은 정상이다. 고양이는 실내에서만 길렀고 광견병 예방접종을 받았다. 상처를 생리식염수로 충분히 세척하였다. 예방 항생제로 가장 적절한 것은? A. 세팔렉신 B. 클린다마이신 C. 에리스로마이신 D. 디클록사실린 E. 아목시실린/클라불란산"
+  },
+  {
+   "id": "imaging-2026-0446",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 찢어지는 흉통과 상행대동맥 내막편",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0446.md",
+   "snippet": "58세 남자가 1시간 전 갑자기 시작되어 등으로 뻗치는 찢어지는 듯한 흉통으로 응급실에 왔다. 15년 동안 고혈압이 있었으나 약을 불규칙하게 먹었다. 오른팔 혈압 176/92 mmHg, 왼팔 혈압 148/84 mmHg, 맥박 102회/분이다. 흉골 왼쪽 경계에서 이완기 잡음이 들린다. 심전도는 좌심실 비대 외에 ST 분절 변화가 없고, 고감도 트로포닌 I 는 정상 범위이다. 혈청 크레아티닌은 1.0 mg/dL 이다. 흉부 조영",
+   "text": "순환기 순환기 — 찢어지는 흉통과 상행대동맥 내막편 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b 58세 남자가 1시간 전 갑자기 시작되어 등으로 뻗치는 찢어지는 듯한 흉통으로 응급실에 왔다. 15년 동안 고혈압이 있었으나 약을 불규칙하게 먹었다. 오른팔 혈압 176/92 mmHg, 왼팔 혈압 148/84 mmHg, 맥박 102회/분이다. 흉골 왼쪽 경계에서 이완기 잡음이 들린다. 심전도는 좌심실 비대 외에 ST 분절 변화가 없고, 고감도 트로포닌 I 는 정상 범위이다. 혈청 크레아티닌은 1.0 mg/dL 이다. 흉부 조영증강 CT 에서 대동맥 뿌리 바로 위의 상행대동맥부터 대동맥궁을 지나 하행대동맥까지 내막편이 이어지고, 심장막 삼출은 소량이다. 정맥 에스몰롤 투여를 시작하였다. 다음으로 가장 적절한 처치는? A. 응급 상행대동맥 치환술 B. 혈압 조절과 집중 감시만 하는 내과 치료 C. 흉부 대동맥 스텐트그라프트 삽입 D. 응급 관상동맥 조영술 E. 정맥 헤파린 투여"
+  },
+  {
+   "id": "imaging-2026-0445",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 넘어진 고령 남성의 목 통증과 시상 경추 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0445.md",
+   "snippet": "A 70 year old man is brought to the emergency department 2 hours after he tripped and fell forward at home, striking his forehead on the floor. He reports severe upper neck pain and holds his head with both hands. He takes amlodipine for hy",
+   "text": "응급·중환자 응급·중환자·외상 — 넘어진 고령 남성의 목 통증과 시상 경추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b A 70 year old man is brought to the emergency department 2 hours after he tripped and fell forward at home, striking his forehead on the floor. He reports severe upper neck pain and holds his head with both hands. He takes amlodipine for hypertension. Blood pressure is 152/86 mm Hg and pulse is 84/min. There is a small abrasion on the forehead. He has tenderness over the upper posterior cervical spine. Strength, sensation, and reflexes are normal in all extremities. A cervical collar is placed. A sagittal CT image of the cervical spine is shown (the encircled occipital finding was judged incidental). Which of the following is the most likely diagnosis? A. Congenital separate ossicle above C2 (os odontoideum) B. Fracture through the base of the dens (type II odontoid fracture) C. Fracture extending into the C2 vertebral body (type III odontoid fracture) D. Bilateral C2 pars interarticularis fracture (hangman fracture) E. Burst fracture of the C1 ring (Jefferson fracture)"
+  },
+  {
+   "id": "imaging-2026-0444",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 넘어진 뒤 해부학적 코담뱃갑 압통이 있는 청소년의 손목 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0444.md",
+   "snippet": "13세 남자가 3시간 전 축구를 하다 오른손을 짚고 넘어진 뒤 생긴 손목 통증으로 응급실에 왔다. 활력징후는 정상이다. 오른쪽 손목은 약간 부어 있고, 해부학적 코담뱃갑에 뚜렷한 압통이 있으며, 엄지를 길이 방향으로 누르면 통증이 심해진다. 원위 요골 성장판 부위와 원위 척골에는 압통이 없고, 손가락의 감각과 모세혈관 재충혈은 정상이다. 오른쪽 손목 전후면 X선 사진은 그림과 같고, 측면 사진에서도 골절이나 전위는 보이지 않았",
+   "text": "소아과 소아청소년 — 넘어진 뒤 해부학적 코담뱃갑 압통이 있는 청소년의 손목 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b 13세 남자가 3시간 전 축구를 하다 오른손을 짚고 넘어진 뒤 생긴 손목 통증으로 응급실에 왔다. 활력징후는 정상이다. 오른쪽 손목은 약간 부어 있고, 해부학적 코담뱃갑에 뚜렷한 압통이 있으며, 엄지를 길이 방향으로 누르면 통증이 심해진다. 원위 요골 성장판 부위와 원위 척골에는 압통이 없고, 손가락의 감각과 모세혈관 재충혈은 정상이다. 오른쪽 손목 전후면 X선 사진은 그림과 같고, 측면 사진에서도 골절이나 전위는 보이지 않았다. 가장 적절한 처치는? A. 응급 관혈적 정복 및 나사 고정 B. 팔걸이(삼각건)만 하고 조기 운동 C. 엄지 포함 부목 고정 후 10~14일 뒤 재평가 D. 탄력붕대 감고 귀가, 증상 있을 때만 재진 E. 도수 정복 후 장상지 석고 고정"
+  },
+  {
+   "id": "imaging-2026-0443",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 림프절 면역염색의 여포 구역과 선천면역결핍 유전자",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0443.md",
+   "snippet": "A 55 year old man undergoes right hemicolectomy for a cecal adenoma that could not be removed endoscopically. Pathologic examination of the specimen shows no carcinoma. One of the regional lymph nodes shows reactive changes without metastas",
+   "text": "병리·조직학 병리·조직 — 림프절 면역염색의 여포 구역과 선천면역결핍 유전자 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b A 55 year old man undergoes right hemicolectomy for a cecal adenoma that could not be removed endoscopically. Pathologic examination of the specimen shows no carcinoma. One of the regional lymph nodes shows reactive changes without metastasis. A section of this lymph node is stained by immunohistochemistry for a lineage specific surface marker; the brown staining cells fill the rounded nodules of the cortex, while the zones between the nodules contain only scattered positive cells, as shown. A patient with a germline defect in which of the following genes would most likely have almost none of the cells that are stained in these nodules in the blood and lymph nodes, while T cell numbers remain normal? A. AIRE (autoimmune regulator) B. BTK (Bruton tyrosine kinase) C. CD40LG (CD40 ligand) D. ADA (adenosine deaminase) E. IL2RG (common gamma chain)"
+  },
+  {
+   "id": "imaging-2026-0442",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 100 % 산소에도 오르지 않는 기계환기 환자의 동맥혈 산소",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "confidence": "high",
+   "date": "2026-10-26",
+   "path": "content/imaging/2026/imaging-2026-0442.md",
+   "snippet": "64세 남자가 중환자실에서 기관삽관 3일째이다. 열과 기침으로 입원한 뒤 호흡곤란이 빠르게 악화되어 기관삽관하였다. 혈압 124/70 mmHg, 맥박 96회/분, 체온 37.8℃이다. 일회호흡량 6 mL/kg(예측체중), 호기말양압 10 cmH2O 로 환기 중이며, 흡입산소분율 0.6 에서 동맥혈 PaO2 62 mmHg, PaCO2 41 mmHg 였고, 흡입산소분율을 1.0 으로 올리고 20분 뒤 PaO2 는 68 mmHg 였",
+   "text": "호흡기 호흡기 — 100 % 산소에도 오르지 않는 기계환기 환자의 동맥혈 산소 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b 64세 남자가 중환자실에서 기관삽관 3일째이다. 열과 기침으로 입원한 뒤 호흡곤란이 빠르게 악화되어 기관삽관하였다. 혈압 124/70 mmHg, 맥박 96회/분, 체온 37.8℃이다. 일회호흡량 6 mL/kg(예측체중), 호기말양압 10 cmH2O 로 환기 중이며, 흡입산소분율 0.6 에서 동맥혈 PaO2 62 mmHg, PaCO2 41 mmHg 였고, 흡입산소분율을 1.0 으로 올리고 20분 뒤 PaO2 는 68 mmHg 였다. 혈색소는 13.2 g/dL 이고, 심장초음파에서 좌심실 박출률은 58 % 이며 심방중격을 통한 흐름은 없다. 휴대용 흉부 X선 사진은 그림과 같다. 이 환자의 저산소혈증을 일으키는 주된 기전으로 가장 적절한 것은? A. 폐포 저환기 B. 폐포 모세혈관 확산 장애 C. 흡입 산소분압 저하 D. 폐내 단락 E. 환기 관류 불균형"
   },
   {
    "id": "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis",

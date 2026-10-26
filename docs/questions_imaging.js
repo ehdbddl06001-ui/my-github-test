@@ -2,6 +2,1600 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0445",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "응급·중환자·외상 — 넘어진 고령 남성의 목 통증과 시상 경추 CT",
+  "type": "응급·중환자·외상 — 넘어진 고령 남성의 목 통증과 시상 경추 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-26",
+  "vignette": "A 70-year-old man is brought to the emergency department 2 hours after he tripped and fell forward at home, striking his forehead on the floor. He reports severe upper neck pain and holds his head with both hands. He takes amlodipine for hypertension. Blood pressure is 152/86 mm Hg and pulse is 84/min. There is a small abrasion on the forehead. He has tenderness over the upper posterior cervical spine. Strength, sensation, and reflexes are normal in all extremities. A cervical collar is placed. A sagittal CT image of the cervical spine is shown (the encircled occipital finding was judged incidental).",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Congenital separate ossicle above C2 (os odontoideum)",
+   "Fracture through the base of the dens (type II odontoid fracture)",
+   "Fracture extending into the C2 vertebral body (type III odontoid fracture)",
+   "Bilateral C2 pars interarticularis fracture (hangman fracture)",
+   "Burst fracture of the C1 ring (Jefferson fracture)"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The sagittal CT shows a fracture line crossing the base of the dens (arrow), at its junction with the C2 body, with slight displacement of the dens fragment; the line does not run down into the cancellous C2 body. In an older adult who falls forward onto the head, this is the typical type II odontoid fracture — the most common C2 fracture in the elderly.\n- 원리: <b>Why the base of the dens breaks in older adults</b>: with age, the dens becomes osteoporotic while the atlantoaxial joint stiffens. A low-energy fall onto the forehead hyperextends (or flexes) the head, and C1 levers the dens against the C2 body; the narrow waist at the base is where the force concentrates.<br> <b>Why the level matters (Anderson–D'Alonzo)</b>: type I is a tip avulsion; type II crosses the base, where the contact surface is small, mostly cortical, and the blood supply is a watershed — nonunion is common, especially with displacement, older age, and posterior angulation; type III runs into the broad cancellous C2 body and usually heals in an orthosis.<br> <b>Reading the image</b>: follow the fracture line — if it stays at the dens waist it is type II; if it dips into the body below the C2 superior articular facets it is type III.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Type II odontoid (answer)</th><th>Type III odontoid (closest distractor)</th></tr></thead><tbody> <tr><td>Fracture line</td><td><b>Across the base/waist of the dens</b></td><td>Into the cancellous C2 body</td></tr> <tr><td>Bone contact</td><td>Small, mostly cortical</td><td>Broad, cancellous</td></tr> <tr><td>Nonunion risk</td><td>High — often fixed surgically in displaced cases</td><td>Low — usually heals in a collar or halo</td></tr> </tbody></table> Same mechanism, different level: the deeper the line goes into the body, the better the healing.\n- 오답 이유:\n  - (A) Os odontoideum is correct when a rounded ossicle with smooth corticated margins sits above a short, rounded dens stump, without an acute fracture line.\n  - (C) Type III fracture is correct when the line extends below the dens base into the C2 body, often involving the superior articular facets.\n  - (D) Hangman fracture is correct when the fracture runs through both C2 pars (the neural arch) with anterior slip of C2 on C3, usually after hyperextension with axial load.\n  - (E) Jefferson fracture is correct when an axial load splits the C1 ring at the anterior and posterior arches, seen best on axial CT with lateral mass spread.\n- 함정: Calling any dens fracture type III because the fragment looks attached to the body — trace whether the line stays at the waist or enters the cancellous body.\n- 학습목표: 고령자 낙상 뒤 시상 경추 CT 에서 치아돌기 기저부를 가로지르는 골절선을 읽어 II형 치아돌기 골절을 진단하고 III형·Hangman 골절과 구별한다\n- 근거·출처: Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am 1974;56:1663-1674 · Tintinalli's Emergency Medicine: A Comprehensive Study Guide, 9th ed. McGraw-Hill; 2020. Chapter 258: Spine trauma\n\n## 출처\n- Case report: Interdisciplinary treatment of complex C1/C2 fractures in a patient with concomitant three-vessel coronary artery disease requiring bypass surgery. Front Surg. 2023 May 16;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The sagittal CT shows a fracture line crossing the base of the dens (arrow), at its junction with the C2 body, with slight displacement of the dens fragment; the line does not run down into the cancellous C2 body. In an older adult who falls forward onto the head, this is the typical type II odontoid fracture — the most common C2 fracture in the elderly."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the base of the dens breaks in older adults</b>: with age, the dens becomes osteoporotic while the atlantoaxial joint stiffens. A low-energy fall onto the forehead hyperextends (or flexes) the head, and C1 levers the dens against the C2 body; the narrow waist at the base is where the force concentrates.<br> <b>Why the level matters (Anderson–D'Alonzo)</b>: type I is a tip avulsion; type II crosses the base, where the contact surface is small, mostly cortical, and the blood supply is a watershed — nonunion is common, especially with displacement, older age, and posterior angulation; type III runs into the broad cancellous C2 body and usually heals in an orthosis.<br> <b>Reading the image</b>: follow the fracture line — if it stays at the dens waist it is type II; if it dips into the body below the C2 superior articular facets it is type III."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Type II odontoid (answer)</th><th>Type III odontoid (closest distractor)</th></tr></thead><tbody> <tr><td>Fracture line</td><td><b>Across the base/waist of the dens</b></td><td>Into the cancellous C2 body</td></tr> <tr><td>Bone contact</td><td>Small, mostly cortical</td><td>Broad, cancellous</td></tr> <tr><td>Nonunion risk</td><td>High — often fixed surgically in displaced cases</td><td>Low — usually heals in a collar or halo</td></tr> </tbody></table> Same mechanism, different level: the deeper the line goes into the body, the better the healing."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Os odontoideum is correct when a rounded ossicle with smooth corticated margins sits above a short, rounded dens stump, without an acute fracture line.\n(C) Type III fracture is correct when the line extends below the dens base into the C2 body, often involving the superior articular facets.\n(D) Hangman fracture is correct when the fracture runs through both C2 pars (the neural arch) with anterior slip of C2 on C3, usually after hyperextension with axial load.\n(E) Jefferson fracture is correct when an axial load splits the C1 ring at the anterior and posterior arches, seen best on axial CT with lateral mass spread."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any dens fracture type III because the fragment looks attached to the body — trace whether the line stays at the waist or enters the cancellous body."
+   },
+   {
+    "k": "학습목표",
+    "v": "고령자 낙상 뒤 시상 경추 CT 에서 치아돌기 기저부를 가로지르는 골절선을 읽어 II형 치아돌기 골절을 진단하고 III형·Hangman 골절과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am 1974;56:1663-1674 · Tintinalli's Emergency Medicine: A Comprehensive Study Guide, 9th ed. McGraw-Hill; 2020. Chapter 258: Spine trauma ## 출처 Case report: Interdisciplinary treatment of complex C1/C2 fractures in a patient with concomitant three-vessel coronary artery disease requiring bypass surgery. Front Surg. 2023 May 16;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "치아돌기 기저부(허리)를 가로지르고 C2 몸통으로 내려가지 않는 골절선은 II형 치아돌기 골절이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "골절선이 해면골 C2 몸통 안으로 들어가지 않는다",
+   "steps": 2,
+   "chain": [
+    "고령 + 앞으로 넘어져 이마를 부딪침 + 위쪽 목 통증 → 상부 경추(C2) 골절 의심",
+    "영상: 치아돌기 기저부를 가로지르는 골절선, C2 몸통 침범 없음 → II형 치아돌기 골절"
+   ],
+   "key": [
+    {
+     "item": "영상: 치아돌기 기저부를 가로지르는 골절선(화살표), 약간의 전위",
+     "why": "II형의 위치",
+     "also": []
+    },
+    {
+     "item": "tripped and fell forward at home, striking his forehead",
+     "why": "고령자 치아돌기 골절의 전형적 기전",
+     "also": []
+    },
+    {
+     "item": "severe upper neck pain",
+     "why": "상부 경추 손상을 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Strength, sensation, and reflexes are normal",
+     "why": "척수 손상 없음 — 치료 선택과 긴급도에 영향",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "the encircled occipital finding was judged incidental",
+     "why": "그림의 다른 표시를 설명할 뿐 진단과 무관하다",
+     "also": []
+    },
+    {
+     "item": "amlodipine for hypertension",
+     "why": "낙상 위험의 배경일 뿐 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "고령 남성이 앞으로 넘어진 뒤 위쪽 목 통증을 호소하고, 시상 CT 에서 치아돌기 기저부를 가로지르는 골절선이 C2 몸통으로 내려가지 않는다. II형 치아돌기 골절이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "골절선이 치아돌기 아래 해면골 C2 몸통까지 내려갔다면 III형 치아돌기 골절이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0445.png",
+   "caption": "Sagittal CT of the upper cervical spine and craniocervical junction, bone window — one panel cropped from a published case figure; the red arrow and blue ellipse are the authors' original markings (PMC Open Access Subset, CC BY — no adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10228685/",
+   "asset_id": "PMC-PMC10228685_Figure1_A",
+   "text": "Case report: Interdisciplinary treatment of complex C1/C2 fractures in a patient with concomitant three-vessel coronary artery disease requiring bypass surgery. Front Surg. 2023 May 16;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) — Figure 1"
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0444",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "소아청소년 — 넘어진 뒤 해부학적 코담뱃갑 압통이 있는 청소년의 손목 X선",
+  "type": "소아청소년 — 넘어진 뒤 해부학적 코담뱃갑 압통이 있는 청소년의 손목 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-26",
+  "vignette": "13세 남자가 3시간 전 축구를 하다 오른손을 짚고 넘어진 뒤 생긴 손목 통증으로 응급실에 왔다. 활력징후는 정상이다. 오른쪽 손목은 약간 부어 있고, 해부학적 코담뱃갑에 뚜렷한 압통이 있으며, 엄지를 길이 방향으로 누르면 통증이 심해진다. 원위 요골 성장판 부위와 원위 척골에는 압통이 없고, 손가락의 감각과 모세혈관 재충혈은 정상이다. 오른쪽 손목 전후면 X선 사진은 그림과 같고, 측면 사진에서도 골절이나 전위는 보이지 않았다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "응급 관혈적 정복 및 나사 고정",
+   "팔걸이(삼각건)만 하고 조기 운동",
+   "엄지 포함 부목 고정 후 10~14일 뒤 재평가",
+   "탄력붕대 감고 귀가, 증상 있을 때만 재진",
+   "도수 정복 후 장상지 석고 고정"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 넘어지며 손을 짚은 뒤 해부학적 코담뱃갑 압통과 엄지 축 압박 통증이 있으면 주상골 골절을 의심한다. 첫 X선은 주상골 골절의 일부를 놓치므로(잠복 골절), X선이 정상이어도 엄지 포함 부목으로 고정하고 10~14일 뒤 다시 진찰·촬영하거나 MRI 로 확인한다.\n- 원리: <b>왜 첫 X선을 믿지 않나</b>: 주상골은 비스듬히 놓인 작은 뼈라 금이 간 직후에는 골절선이 X선 방향과 어긋나 보이지 않을 수 있다. 1~2주가 지나 골절면의 뼈가 흡수되면 선이 넓어져 그제야 보인다.<br> <b>왜 놓치면 안 되나</b>: 주상골의 혈액은 원위부에서 들어와 근위부로 거꾸로 흐른다(역행성 혈류). 허리·근위부 골절을 고정하지 않으면 근위 조각으로 가는 혈류가 끊겨 불유합·무혈성 괴사가 생기고, 손목 관절염으로 이어진다.<br> <b>소아에서도</b>: 성장판이 열린 청소년에서는 원위 요골 성장판 손상과도 감별해야 하는데, 이 환자는 압통이 코담뱃갑에 국한되고 성장판 부위는 아프지 않다. 청소년기 손목뼈 골절 중 가장 흔한 것이 주상골이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">엄지 포함 부목 + 재평가(정답)</th><th>붕대 후 귀가(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>코담뱃갑 압통 + X선 정상</b> — 잠복 주상골 골절 의심</td><td>압통이 없고 단순 염좌로 판단될 때</td></tr> <tr><td>위험 관리</td><td>골절이 있어도 고정되어 불유합 예방</td><td>골절을 놓치면 불유합·무혈성 괴사</td></tr> <tr><td>확인</td><td>10~14일 뒤 재촬영 또는 MRI</td><td>추적 없음</td></tr> </tbody></table> X선이 정상이어도 진찰 소견이 주상골을 가리키면 「골절로 보고 고정」이 원칙이다.\n- 오답 이유:\n  - ① 관혈적 정복과 나사 고정은 전위가 1 mm 넘는 주상골 골절이나 근위부 골절이 영상으로 확인될 때 정답이 된다.\n  - ② 삼각건과 조기 운동은 쇄골 골절이나 가벼운 연부조직 손상에 맞으며, 주상골 골절이 의심되는 손목은 고정해야 한다.\n  - ④ 탄력붕대 후 귀가는 코담뱃갑 압통과 엄지 축 압박 통증이 없는 단순 손목 염좌일 때 정답이 되며, 이 환자에서는 잠복 골절을 놓친다.\n  - ⑤ 도수 정복 후 석고 고정은 X선에서 전위된 원위 요골 골절이 확인될 때 정답이 되며, 이 환자의 X선에는 골절도 전위도 없다.\n- 함정: X선이 정상이니 염좌로 보고 돌려보내는 것 — 코담뱃갑 압통은 X선보다 앞서는 주상골 골절의 신호다.\n- 학습목표: 해부학적 코담뱃갑 압통이 있는데 첫 손목 X선이 정상이면 잠복 주상골 골절로 보고 엄지 포함 부목 고정 후 재평가함을 안다\n- 근거·출처: Rockwood and Wilkins' Fractures in Children, 9th ed. Wolters Kluwer; 2019. Chapter: Fractures and dislocations of the hand and carpal bones · Mallee WH, et al. Detecting scaphoid fractures in wrist injury: a clinical decision rule. Arch Orthop Trauma Surg 2020;140:575-581\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "넘어지며 손을 짚은 뒤 해부학적 코담뱃갑 압통과 엄지 축 압박 통증이 있으면 주상골 골절을 의심한다. 첫 X선은 주상골 골절의 일부를 놓치므로(잠복 골절), X선이 정상이어도 엄지 포함 부목으로 고정하고 10~14일 뒤 다시 진찰·촬영하거나 MRI 로 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 첫 X선을 믿지 않나</b>: 주상골은 비스듬히 놓인 작은 뼈라 금이 간 직후에는 골절선이 X선 방향과 어긋나 보이지 않을 수 있다. 1~2주가 지나 골절면의 뼈가 흡수되면 선이 넓어져 그제야 보인다.<br> <b>왜 놓치면 안 되나</b>: 주상골의 혈액은 원위부에서 들어와 근위부로 거꾸로 흐른다(역행성 혈류). 허리·근위부 골절을 고정하지 않으면 근위 조각으로 가는 혈류가 끊겨 불유합·무혈성 괴사가 생기고, 손목 관절염으로 이어진다.<br> <b>소아에서도</b>: 성장판이 열린 청소년에서는 원위 요골 성장판 손상과도 감별해야 하는데, 이 환자는 압통이 코담뱃갑에 국한되고 성장판 부위는 아프지 않다. 청소년기 손목뼈 골절 중 가장 흔한 것이 주상골이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">엄지 포함 부목 + 재평가(정답)</th><th>붕대 후 귀가(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>코담뱃갑 압통 + X선 정상</b> — 잠복 주상골 골절 의심</td><td>압통이 없고 단순 염좌로 판단될 때</td></tr> <tr><td>위험 관리</td><td>골절이 있어도 고정되어 불유합 예방</td><td>골절을 놓치면 불유합·무혈성 괴사</td></tr> <tr><td>확인</td><td>10~14일 뒤 재촬영 또는 MRI</td><td>추적 없음</td></tr> </tbody></table> X선이 정상이어도 진찰 소견이 주상골을 가리키면 「골절로 보고 고정」이 원칙이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 관혈적 정복과 나사 고정은 전위가 1 mm 넘는 주상골 골절이나 근위부 골절이 영상으로 확인될 때 정답이 된다.\n② 삼각건과 조기 운동은 쇄골 골절이나 가벼운 연부조직 손상에 맞으며, 주상골 골절이 의심되는 손목은 고정해야 한다.\n④ 탄력붕대 후 귀가는 코담뱃갑 압통과 엄지 축 압박 통증이 없는 단순 손목 염좌일 때 정답이 되며, 이 환자에서는 잠복 골절을 놓친다.\n⑤ 도수 정복 후 석고 고정은 X선에서 전위된 원위 요골 골절이 확인될 때 정답이 되며, 이 환자의 X선에는 골절도 전위도 없다."
+   },
+   {
+    "k": "함정",
+    "v": "X선이 정상이니 염좌로 보고 돌려보내는 것 — 코담뱃갑 압통은 X선보다 앞서는 주상골 골절의 신호다."
+   },
+   {
+    "k": "학습목표",
+    "v": "해부학적 코담뱃갑 압통이 있는데 첫 손목 X선이 정상이면 잠복 주상골 골절로 보고 엄지 포함 부목 고정 후 재평가함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rockwood and Wilkins' Fractures in Children, 9th ed. Wolters Kluwer; 2019. Chapter: Fractures and dislocations of the hand and carpal bones · Mallee WH, et al. Detecting scaphoid fractures in wrist injury: a clinical decision rule. Arch Orthop Trauma Surg 2020;140:575-581 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "코담뱃갑 압통과 엄지 축 압박 통증이 있으면 X선이 정상이어도 잠복 주상골 골절로 보고 엄지 포함 부목으로 고정한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "해부학적 코담뱃갑에 뚜렷한 압통 — 단순 염좌로 돌려보낼 수 없는 진찰 소견",
+   "steps": 2,
+   "chain": [
+    "손을 짚고 넘어짐 + 코담뱃갑 압통 + 엄지 축 압박 통증 → 주상골 골절 의심",
+    "영상: 골절선 없음 → 잠복 골절 가능 → 엄지 포함 부목 후 재평가"
+   ],
+   "key": [
+    {
+     "item": "해부학적 코담뱃갑에 뚜렷한 압통",
+     "why": "주상골 골절을 가리키는 진찰 소견",
+     "also": []
+    },
+    {
+     "item": "엄지를 길이 방향으로 누르면 통증이 심해진다",
+     "why": "주상골 압박 검사 양성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "원위 요골 성장판 부위와 원위 척골에는 압통이 없고",
+     "why": "성장판 골절 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "손가락의 감각과 모세혈관 재충혈은 정상",
+     "why": "응급 정복이 필요한 신경혈관 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "영상: 요골·척골·수근골 피질 연속, 골절선 없음",
+     "why": "첫 X선 정상 — 잠복 골절 처치로 간다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "손을 짚고 넘어진 청소년에게 코담뱃갑 압통과 엄지 압박 통증이 있고 X선은 정상이다. 잠복 주상골 골절로 보고 엄지 포함 부목으로 고정한 뒤 10~14일 뒤 재평가한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "코담뱃갑 압통과 엄지 압박 통증이 없고 손목 등쪽 연부조직만 아팠다면 붕대 후 귀가가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0444.png",
+   "caption": "오른쪽 손목·원위 전완 전후면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0739_0685849972_01_WRI-R1_M013",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0443",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "병리·조직 — 림프절 면역염색의 여포 구역과 선천면역결핍 유전자",
+  "type": "병리·조직 — 림프절 면역염색의 여포 구역과 선천면역결핍 유전자",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-26",
+  "vignette": "A 55-year-old man undergoes right hemicolectomy for a cecal adenoma that could not be removed endoscopically. Pathologic examination of the specimen shows no carcinoma. One of the regional lymph nodes shows reactive changes without metastasis. A section of this lymph node is stained by immunohistochemistry for a lineage-specific surface marker; the brown-staining cells fill the rounded nodules of the cortex, while the zones between the nodules contain only scattered positive cells, as shown.",
+  "question": "A patient with a germline defect in which of the following genes would most likely have almost none of the cells that are stained in these nodules in the blood and lymph nodes, while T-cell numbers remain normal?",
+  "options": [
+   "AIRE (autoimmune regulator)",
+   "BTK (Bruton tyrosine kinase)",
+   "CD40LG (CD40 ligand)",
+   "ADA (adenosine deaminase)",
+   "IL2RG (common gamma chain)"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The marker stains the cells that fill the cortical nodules (follicles with germinal centers and mantle zones) and only scattered cells in the interfollicular paracortex — a B-cell pattern, as with CD19 or CD20. Bruton tyrosine kinase transmits pre-B-cell receptor signals; without it, B-cell development arrests at the pre-B stage in the marrow, so mature B cells and lymphoid follicles are nearly absent while T cells are normal (X-linked agammaglobulinemia).\n- 원리: <b>Where each lineage lives in a node</b>: B cells home to the outer cortex and form follicles; antigen-stimulated follicles develop germinal centers surrounded by a mantle of naive B cells. T cells occupy the paracortex between and beneath the follicles. A lineage stain that fills the follicles and leaves the paracortex largely negative therefore marks B cells.<br> <b>Why BTK removes the cells, not just their function</b>: after heavy-chain rearrangement, the pre-B-cell receptor signals through BTK to drive proliferation and light-chain rearrangement. Without BTK the cells stall as pre-B cells in the marrow; circulating CD19+ B cells are usually below 1 % of lymphocytes, all immunoglobulin classes are low, and lymph nodes and tonsils are small with no follicles.<br> <b>Contrast with CD40L deficiency</b>: B cells are produced normally but cannot receive the T-cell help needed for germinal centers and class switching — follicles lack germinal centers, IgM is normal or high, and IgG/IgA/IgE are low.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">BTK deficiency (answer)</th><th>CD40L deficiency (closest distractor)</th></tr></thead><tbody> <tr><td>Circulating B cells</td><td><b>Nearly absent</b> — arrest at pre-B stage</td><td>Normal number</td></tr> <tr><td>Lymph node</td><td>No follicles at all</td><td>Primary follicles present, no germinal centers</td></tr> <tr><td>Immunoglobulins</td><td>All classes low</td><td>IgM normal/high; IgG, IgA, IgE low</td></tr> <tr><td>Typical infections</td><td>Encapsulated bacteria, enteroviruses after 6 months</td><td>Pneumocystis, Cryptosporidium (T-cell help also lost)</td></tr> </tbody></table> Ask \"are the B cells missing, or only unable to switch?\" — missing cells point to BTK; present cells with high IgM point to CD40L.\n- 오답 이유:\n  - (A) AIRE defects are correct for autoimmune polyendocrinopathy with mucocutaneous candidiasis from failed thymic negative selection; lymphocyte numbers are normal.\n  - (C) CD40LG defects are correct when B cells are present but cannot form germinal centers or class-switch (high IgM, low IgG); B-cell numbers stay normal.\n  - (D) ADA deficiency would be correct if T cells, B cells, and NK cells were all markedly reduced by toxic deoxyadenosine metabolites; here T cells are normal.\n  - (E) IL2RG defects cause X-linked SCID with absent T and NK cells but present (nonfunctional) B cells — correct only if T cells were missing.\n- 함정: Choosing CD40LG because the question is about follicles — CD40L loss removes germinal centers, but the stained B cells themselves are still there.\n- 학습목표: 림프절 면역염색에서 여포(피질의 둥근 결절)를 채우는 세포가 B세포임을 읽고, B세포 성숙이 멈추는 BTK 결함과 배중심만 없는 CD40L 결함을 구별한다\n- 근거·출처: Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed. Elsevier; 2022. Chapter 21: Congenital and acquired immunodeficiencies · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 6: Diseases of the immune system\n\n## 출처\n- Human Protein Atlas, CD19 / Lymph node (CC BY 4.0), https://images.proteinatlas.org/16110/36120_A_7_8.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The marker stains the cells that fill the cortical nodules (follicles with germinal centers and mantle zones) and only scattered cells in the interfollicular paracortex — a B-cell pattern, as with CD19 or CD20. Bruton tyrosine kinase transmits pre-B-cell receptor signals; without it, B-cell development arrests at the pre-B stage in the marrow, so mature B cells and lymphoid follicles are nearly absent while T cells are normal (X-linked agammaglobulinemia)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Where each lineage lives in a node</b>: B cells home to the outer cortex and form follicles; antigen-stimulated follicles develop germinal centers surrounded by a mantle of naive B cells. T cells occupy the paracortex between and beneath the follicles. A lineage stain that fills the follicles and leaves the paracortex largely negative therefore marks B cells.<br> <b>Why BTK removes the cells, not just their function</b>: after heavy-chain rearrangement, the pre-B-cell receptor signals through BTK to drive proliferation and light-chain rearrangement. Without BTK the cells stall as pre-B cells in the marrow; circulating CD19+ B cells are usually below 1 % of lymphocytes, all immunoglobulin classes are low, and lymph nodes and tonsils are small with no follicles.<br> <b>Contrast with CD40L deficiency</b>: B cells are produced normally but cannot receive the T-cell help needed for germinal centers and class switching — follicles lack germinal centers, IgM is normal or high, and IgG/IgA/IgE are low."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">BTK deficiency (answer)</th><th>CD40L deficiency (closest distractor)</th></tr></thead><tbody> <tr><td>Circulating B cells</td><td><b>Nearly absent</b> — arrest at pre-B stage</td><td>Normal number</td></tr> <tr><td>Lymph node</td><td>No follicles at all</td><td>Primary follicles present, no germinal centers</td></tr> <tr><td>Immunoglobulins</td><td>All classes low</td><td>IgM normal/high; IgG, IgA, IgE low</td></tr> <tr><td>Typical infections</td><td>Encapsulated bacteria, enteroviruses after 6 months</td><td>Pneumocystis, Cryptosporidium (T-cell help also lost)</td></tr> </tbody></table> Ask \"are the B cells missing, or only unable to switch?\" — missing cells point to BTK; present cells with high IgM point to CD40L."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) AIRE defects are correct for autoimmune polyendocrinopathy with mucocutaneous candidiasis from failed thymic negative selection; lymphocyte numbers are normal.\n(C) CD40LG defects are correct when B cells are present but cannot form germinal centers or class-switch (high IgM, low IgG); B-cell numbers stay normal.\n(D) ADA deficiency would be correct if T cells, B cells, and NK cells were all markedly reduced by toxic deoxyadenosine metabolites; here T cells are normal.\n(E) IL2RG defects cause X-linked SCID with absent T and NK cells but present (nonfunctional) B cells — correct only if T cells were missing."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing CD40LG because the question is about follicles — CD40L loss removes germinal centers, but the stained B cells themselves are still there."
+   },
+   {
+    "k": "학습목표",
+    "v": "림프절 면역염색에서 여포(피질의 둥근 결절)를 채우는 세포가 B세포임을 읽고, B세포 성숙이 멈추는 BTK 결함과 배중심만 없는 CD40L 결함을 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed. Elsevier; 2022. Chapter 21: Congenital and acquired immunodeficiencies · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 6: Diseases of the immune system ## 출처 Human Protein Atlas, CD19 / Lymph node (CC BY 4.0), https://images.proteinatlas.org/16110/36120_A_7_8.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "여포를 채우는 염색 세포는 B세포이고, 성숙 B세포가 거의 없고 T세포가 정상인 결함은 BTK 이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "CD40L 결함은 B세포 수가 정상이고 배중심만 없다 — 「세포가 거의 없다」와 맞지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: 피질의 둥근 결절(여포)이 진하게 염색되고 피질곁은 대부분 음성 → B세포 계열 표지",
+    "B세포가 거의 없고 T세포는 정상 → B세포 발생 자체의 정지",
+    "pre-B 수용체 신호 전달 결함 → BTK(X연관 무감마글로불린혈증)"
+   ],
+   "key": [
+    {
+     "item": "영상: 피질의 둥근 여포가 진한 갈색, 여포 사이 피질곁은 대부분 음성",
+     "why": "B세포 구역 분포",
+     "also": []
+    },
+    {
+     "item": "the brown-staining cells fill the rounded nodules of the cortex",
+     "why": "염색된 세포 = 여포의 B세포",
+     "also": []
+    },
+    {
+     "item": "while T-cell numbers remain normal",
+     "why": "T세포까지 줄어드는 SCID 계열(ADA·IL2RG)을 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "reactive changes without metastasis",
+     "why": "반응성 림프절이라 여포가 잘 보일 뿐 답을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "cecal adenoma",
+     "why": "검체를 얻은 맥락 — 판단에 쓰이지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "여포를 채우는 염색 세포는 B세포다. 성숙 B세포가 거의 없고 T세포가 정상인 선천 결함은 pre-B 단계에서 성숙이 멈추는 BTK 결함이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "B세포 수는 정상인데 배중심이 없고 IgM 만 높다면 CD40L 결함이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0443.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000177455-CD19/tissue/Lymph+node",
+   "asset_id": "HPA-CD19_36120_A_7_8",
+   "text": "Human Protein Atlas, CD19 / Lymph node (CC BY 4.0), https://images.proteinatlas.org/16110/36120_A_7_8.jpg"
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0442",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "호흡기 — 100 % 산소에도 오르지 않는 기계환기 환자의 동맥혈 산소",
+  "type": "호흡기 — 100 % 산소에도 오르지 않는 기계환기 환자의 동맥혈 산소",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-26",
+  "vignette": "64세 남자가 중환자실에서 기관삽관 3일째이다. 열과 기침으로 입원한 뒤 호흡곤란이 빠르게 악화되어 기관삽관하였다. 혈압 124/70 mmHg, 맥박 96회/분, 체온 37.8℃이다. 일회호흡량 6 mL/kg(예측체중), 호기말양압 10 cmH2O 로 환기 중이며, 흡입산소분율 0.6 에서 동맥혈 PaO2 62 mmHg, PaCO2 41 mmHg 였고, 흡입산소분율을 1.0 으로 올리고 20분 뒤 PaO2 는 68 mmHg 였다. 혈색소는 13.2 g/dL 이고, 심장초음파에서 좌심실 박출률은 58 % 이며 심방중격을 통한 흐름은 없다. 휴대용 흉부 X선 사진은 그림과 같다.",
+  "question": "이 환자의 저산소혈증을 일으키는 주된 기전으로 가장 적절한 것은?",
+  "options": [
+   "폐포 저환기",
+   "폐포-모세혈관 확산 장애",
+   "흡입 산소분압 저하",
+   "폐내 단락",
+   "환기-관류 불균형"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 양쪽 폐 하부·말초에 퍼진 간유리·경화 음영은 폐포가 액체로 차 있다는 뜻이다. 흡입산소분율을 0.6 에서 1.0 으로 올려도 PaO2 가 62 에서 68 mmHg 로 거의 오르지 않으므로, 환기되지 않는 폐포를 지나는 혈류(폐내 단락)가 주된 기전이다. PaCO2 가 정상이라 저환기는 아니고, 심방중격 흐름이 없어 심장 내 단락 가능성도 낮다.\n- 원리: <b>산소를 올려도 왜 안 오르나</b>: 단락 혈류는 공기가 전혀 들어가지 않는 폐포(액체·고름으로 찬 폐포, 무기폐)를 지난다. 그 폐포의 산소분압은 흡입산소를 아무리 올려도 혼합정맥혈 수준에 머물러, 그 혈액은 산소를 받지 못한 채 동맥으로 섞인다. 정상 폐포를 지난 혈액은 이미 혈색소가 거의 포화되어 있어 산소를 더 실을 여유가 적으니, 섞인 뒤의 PaO2 는 거의 오르지 않는다.<br> <b>환기-관류 불균형과의 차이</b>: 환기가 「적은」 폐포는 산소 농도를 올리면 결국 폐포 산소분압이 올라가 혈액이 포화된다 — 그래서 100 % 산소에 잘 반응한다.<br> <b>ARDS 의 처치 논리</b>: 단락은 산소 농도로는 못 고치고, 닫힌 폐포를 다시 여는 호기말양압·엎드린 자세로 줄인다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">폐내 단락(정답)</th><th>환기-관류 불균형(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>폐포 상태</td><td><b>환기 0 — 액체로 찬 폐포·무기폐</b></td><td>환기가 줄었으나 남아 있음</td></tr> <tr><td>100 % 산소 반응</td><td>거의 없음(62 → 68 mmHg)</td><td>뚜렷이 오름</td></tr> <tr><td>PaCO2</td><td>보통 정상</td><td>보통 정상</td></tr> <tr><td>교정 수단</td><td>호기말양압·폐포 재개방</td><td>산소 투여</td></tr> </tbody></table> 둘 다 폐포-동맥 산소 차이가 크고 PaCO2 는 정상이다 — 가르는 것은 산소에 대한 반응이다.\n- 오답 이유:\n  - ① 폐포 저환기는 PaCO2 가 오르고 폐포-동맥 산소 차이가 정상일 때(진정제 과량·신경근 질환) 정답이 되며, 이 환자의 PaCO2 는 41 mmHg 로 정상이다.\n  - ② 확산 장애는 간질성 폐질환에서 운동 시 저산소혈증이 두드러질 때 정답이 되며, 산소 투여에 잘 반응하므로 이 환자의 소견과 맞지 않는다.\n  - ③ 흡입 산소분압 저하는 고지대처럼 대기압이 낮을 때 정답이 되며, 기계환기로 흡입산소분율 1.0 을 주는 환자에게는 해당하지 않는다.\n  - ⑤ 환기-관류 불균형은 COPD·천식 악화·폐색전처럼 환기가 줄었지만 남아 있는 폐포가 많아 산소 투여로 PaO2 가 뚜렷이 오를 때 정답이 된다.\n- 함정: 퍼진 폐 음영 = 환기-관류 불균형이라고 넘기는 것 — 100 % 산소에도 PaO2 가 6 mmHg 만 올랐다는 반응이 단락을 가리킨다.\n- 학습목표: 양쪽 폐포 음영이 있는 기계환기 환자에서 100 % 산소로도 PaO2 가 거의 오르지 않으면 저산소혈증의 주된 기전이 폐내 단락임을 안다\n- 근거·출처: West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. Wolters Kluwer; 2020. Chapter 5: Gas transport / Chapter 9: Pulmonary gas exchange in disease · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526-2533\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27537080 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "양쪽 폐 하부·말초에 퍼진 간유리·경화 음영은 폐포가 액체로 차 있다는 뜻이다. 흡입산소분율을 0.6 에서 1.0 으로 올려도 PaO2 가 62 에서 68 mmHg 로 거의 오르지 않으므로, 환기되지 않는 폐포를 지나는 혈류(폐내 단락)가 주된 기전이다. PaCO2 가 정상이라 저환기는 아니고, 심방중격 흐름이 없어 심장 내 단락 가능성도 낮다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>산소를 올려도 왜 안 오르나</b>: 단락 혈류는 공기가 전혀 들어가지 않는 폐포(액체·고름으로 찬 폐포, 무기폐)를 지난다. 그 폐포의 산소분압은 흡입산소를 아무리 올려도 혼합정맥혈 수준에 머물러, 그 혈액은 산소를 받지 못한 채 동맥으로 섞인다. 정상 폐포를 지난 혈액은 이미 혈색소가 거의 포화되어 있어 산소를 더 실을 여유가 적으니, 섞인 뒤의 PaO2 는 거의 오르지 않는다.<br> <b>환기-관류 불균형과의 차이</b>: 환기가 「적은」 폐포는 산소 농도를 올리면 결국 폐포 산소분압이 올라가 혈액이 포화된다 — 그래서 100 % 산소에 잘 반응한다.<br> <b>ARDS 의 처치 논리</b>: 단락은 산소 농도로는 못 고치고, 닫힌 폐포를 다시 여는 호기말양압·엎드린 자세로 줄인다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">폐내 단락(정답)</th><th>환기-관류 불균형(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>폐포 상태</td><td><b>환기 0 — 액체로 찬 폐포·무기폐</b></td><td>환기가 줄었으나 남아 있음</td></tr> <tr><td>100 % 산소 반응</td><td>거의 없음(62 → 68 mmHg)</td><td>뚜렷이 오름</td></tr> <tr><td>PaCO2</td><td>보통 정상</td><td>보통 정상</td></tr> <tr><td>교정 수단</td><td>호기말양압·폐포 재개방</td><td>산소 투여</td></tr> </tbody></table> 둘 다 폐포-동맥 산소 차이가 크고 PaCO2 는 정상이다 — 가르는 것은 산소에 대한 반응이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폐포 저환기는 PaCO2 가 오르고 폐포-동맥 산소 차이가 정상일 때(진정제 과량·신경근 질환) 정답이 되며, 이 환자의 PaCO2 는 41 mmHg 로 정상이다.\n② 확산 장애는 간질성 폐질환에서 운동 시 저산소혈증이 두드러질 때 정답이 되며, 산소 투여에 잘 반응하므로 이 환자의 소견과 맞지 않는다.\n③ 흡입 산소분압 저하는 고지대처럼 대기압이 낮을 때 정답이 되며, 기계환기로 흡입산소분율 1.0 을 주는 환자에게는 해당하지 않는다.\n⑤ 환기-관류 불균형은 COPD·천식 악화·폐색전처럼 환기가 줄었지만 남아 있는 폐포가 많아 산소 투여로 PaO2 가 뚜렷이 오를 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "퍼진 폐 음영 = 환기-관류 불균형이라고 넘기는 것 — 100 % 산소에도 PaO2 가 6 mmHg 만 올랐다는 반응이 단락을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "양쪽 폐포 음영이 있는 기계환기 환자에서 100 % 산소로도 PaO2 가 거의 오르지 않으면 저산소혈증의 주된 기전이 폐내 단락임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. Wolters Kluwer; 2020. Chapter 5: Gas transport / Chapter 9: Pulmonary gas exchange in disease · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526-2533 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27537080 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "흡입산소분율을 1.0 으로 올려도 PaO2 가 거의 오르지 않으므로 환기되지 않는 폐포를 지나는 폐내 단락이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "100 % 산소에 대한 반응 — 환기-관류 불균형이면 PaO2 가 뚜렷이 올라야 한다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 폐 하부·말초의 간유리·경화 음영 → 폐포가 액체로 참",
+    "FiO2 0.6 → 1.0 에서 PaO2 62 → 68 mmHg + PaCO2 정상 → 산소에 반응하지 않는 단락"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐 하부·말초 우세의 간유리·경화 음영",
+     "why": "환기되지 않는 폐포의 근거",
+     "also": []
+    },
+    {
+     "item": "PaO2 는 68 mmHg",
+     "why": "FiO2 1.0 으로 올려도 6 mmHg 만 올랐다 — 단락",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "PaCO2 41 mmHg",
+     "why": "폐포 저환기 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심방중격을 통한 흐름은 없다",
+     "why": "심장 내 단락 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "좌심실 박출률은 58 %",
+     "why": "심장성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈색소는 13.2 g/dL",
+     "why": "빈혈은 PaO2 를 바꾸지 않는다 — 기전 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 폐포 음영이 있고 100 % 산소에도 PaO2 가 거의 오르지 않으며 PaCO2 는 정상이다. 환기되지 않는 폐포를 지나는 폐내 단락이 주된 기전이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "FiO2 1.0 에서 PaO2 가 250 mmHg 이상으로 크게 올랐다면 환기-관류 불균형이 주된 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0442.png",
+   "caption": "휴대용 반좌위 전후 흉부 X선, 위치·방향 글자는 원본의 것 (TCIA, CC BY 4.0 — DICOM 을 표준 창으로 변환, 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1359674365175470934552327537080",
+   "asset_id": "TCIA-COVID19_AR-21901529050067",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27537080"
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0453",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "신경 — 걸음 장애·요실금·인지 저하와 뇌실 확장",
+  "type": "신경 — 걸음 장애·요실금·인지 저하와 뇌실 확장",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-26",
+  "vignette": "A 74-year-old man is brought to the physician by his daughter because of progressive difficulty walking for 1 year. He feels as if his feet are stuck to the floor, and he has fallen twice. During the past 6 months, he has developed urinary urgency with occasional incontinence and has become slow in planning daily activities. He has hypertension treated with lisinopril. There is no tremor. Examination shows a broad-based gait with short, shuffling steps and difficulty initiating and turning; arm swing is preserved. Muscle tone is normal, and there is no bradykinesia of finger tapping. Mini-Mental State Examination score is 25/30. MRI of the brain shows enlargement of the lateral and third ventricles out of proportion to sulcal widening, with tight high-convexity sulci and no obstructing mass.",
+  "question": "Which of the following is the most appropriate next step?",
+  "options": [
+   "Large-volume lumbar puncture with gait assessment before and after",
+   "Trial of carbidopa-levodopa",
+   "Ventriculoperitoneal shunt placement without further testing",
+   "Donepezil therapy",
+   "Oxybutynin therapy"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Gait apraxia that began first, followed by urinary urgency/incontinence and executive slowing, with ventriculomegaly out of proportion to sulcal atrophy and tight high-convexity sulci, is idiopathic normal pressure hydrocephalus. Before committing to a shunt, a high-volume (30–50 mL) lumbar tap with timed gait testing before and after identifies patients likely to benefit.\n- 원리: <b>Why the gait goes first</b>: the enlarged lateral ventricles stretch periventricular white matter fibers — the medial corticospinal and frontal-subcortical fibers that run to the legs and to the bladder control centers. Leg fibers lie closest to the ventricles, so a magnetic, broad-based gait appears before incontinence and dementia.<br> <b>What \"normal pressure\" means</b>: opening pressure is usually normal or only intermittently high, because CSF absorption is impaired and ventricular compliance has changed; the damage comes from pulsatile stretch rather than sustained high pressure.<br> <b>Why test before shunting</b>: a shunt carries risks of subdural hematoma, infection, and overdrainage in older adults, and many look-alike conditions (vascular parkinsonism, Alzheimer disease, atrophy with ex vacuo ventriculomegaly) will not improve. Temporary removal of CSF mimics the shunt; a clear gait improvement predicts a good surgical response.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Normal pressure hydrocephalus — tap test (answer)</th><th>Parkinson disease — levodopa trial (closest distractor)</th></tr></thead><tbody> <tr><td>Gait</td><td><b>Broad-based, magnetic, preserved arm swing</b></td><td>Narrow-based, festinating, reduced arm swing</td></tr> <tr><td>Limb signs</td><td>Normal tone, no finger-tap bradykinesia</td><td>Rigidity, bradykinesia, rest tremor</td></tr> <tr><td>Imaging</td><td>Ventricles out of proportion to sulci, tight convexity</td><td>Usually normal</td></tr> <tr><td>Next step</td><td>High-volume lumbar tap → shunt if responsive</td><td>Dopaminergic therapy</td></tr> </tbody></table> \"Lower-body parkinsonism\" with normal upper limbs and enlarged ventricles points to the CSF, not the substantia nigra.\n- 오답 이유:\n  - (B) A levodopa trial is correct when asymmetric bradykinesia, rigidity, rest tremor, and reduced arm swing suggest Parkinson disease; his upper limbs are normal.\n  - (C) Shunt placement is correct after a positive tap test or external lumbar drainage confirms responsiveness; doing it first exposes him to risk without predicting benefit.\n  - (D) Donepezil is correct for Alzheimer disease with early memory loss and atrophy matching ventricular size; here gait came first and the ventricles are disproportionate.\n  - (E) Oxybutynin is correct for isolated overactive bladder; here urgency is part of a treatable syndrome, and anticholinergics can worsen cognition in the elderly.\n- 함정: Treating each symptom separately — the triad of gait, bladder, and cognition with disproportionate ventricles is one CSF disorder that needs a tap test.\n- 학습목표: 걸음 장애가 먼저 오고 요실금·인지 저하가 뒤따르며 뇌고랑에 비해 뇌실이 큰 정상압수두증에서 다량 요추천자(배액 검사)로 단락술 반응을 예측함을 안다\n- 근거·출처: Relkin N, et al. Diagnosing idiopathic normal-pressure hydrocephalus. Neurosurgery 2005;57(3 Suppl):S4-16 · Ropper AH, et al. Adams and Victor's Principles of Neurology, 12th ed. McGraw-Hill; 2023. Chapter: Disturbances of cerebrospinal fluid circulation",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Gait apraxia that began first, followed by urinary urgency/incontinence and executive slowing, with ventriculomegaly out of proportion to sulcal atrophy and tight high-convexity sulci, is idiopathic normal pressure hydrocephalus. Before committing to a shunt, a high-volume (30–50 mL) lumbar tap with timed gait testing before and after identifies patients likely to benefit."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the gait goes first</b>: the enlarged lateral ventricles stretch periventricular white matter fibers — the medial corticospinal and frontal-subcortical fibers that run to the legs and to the bladder control centers. Leg fibers lie closest to the ventricles, so a magnetic, broad-based gait appears before incontinence and dementia.<br> <b>What \"normal pressure\" means</b>: opening pressure is usually normal or only intermittently high, because CSF absorption is impaired and ventricular compliance has changed; the damage comes from pulsatile stretch rather than sustained high pressure.<br> <b>Why test before shunting</b>: a shunt carries risks of subdural hematoma, infection, and overdrainage in older adults, and many look-alike conditions (vascular parkinsonism, Alzheimer disease, atrophy with ex vacuo ventriculomegaly) will not improve. Temporary removal of CSF mimics the shunt; a clear gait improvement predicts a good surgical response."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Normal pressure hydrocephalus — tap test (answer)</th><th>Parkinson disease — levodopa trial (closest distractor)</th></tr></thead><tbody> <tr><td>Gait</td><td><b>Broad-based, magnetic, preserved arm swing</b></td><td>Narrow-based, festinating, reduced arm swing</td></tr> <tr><td>Limb signs</td><td>Normal tone, no finger-tap bradykinesia</td><td>Rigidity, bradykinesia, rest tremor</td></tr> <tr><td>Imaging</td><td>Ventricles out of proportion to sulci, tight convexity</td><td>Usually normal</td></tr> <tr><td>Next step</td><td>High-volume lumbar tap → shunt if responsive</td><td>Dopaminergic therapy</td></tr> </tbody></table> \"Lower-body parkinsonism\" with normal upper limbs and enlarged ventricles points to the CSF, not the substantia nigra."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A levodopa trial is correct when asymmetric bradykinesia, rigidity, rest tremor, and reduced arm swing suggest Parkinson disease; his upper limbs are normal.\n(C) Shunt placement is correct after a positive tap test or external lumbar drainage confirms responsiveness; doing it first exposes him to risk without predicting benefit.\n(D) Donepezil is correct for Alzheimer disease with early memory loss and atrophy matching ventricular size; here gait came first and the ventricles are disproportionate.\n(E) Oxybutynin is correct for isolated overactive bladder; here urgency is part of a treatable syndrome, and anticholinergics can worsen cognition in the elderly."
+   },
+   {
+    "k": "함정",
+    "v": "Treating each symptom separately — the triad of gait, bladder, and cognition with disproportionate ventricles is one CSF disorder that needs a tap test."
+   },
+   {
+    "k": "학습목표",
+    "v": "걸음 장애가 먼저 오고 요실금·인지 저하가 뒤따르며 뇌고랑에 비해 뇌실이 큰 정상압수두증에서 다량 요추천자(배액 검사)로 단락술 반응을 예측함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Relkin N, et al. Diagnosing idiopathic normal-pressure hydrocephalus. Neurosurgery 2005;57(3 Suppl):S4-16 · Ropper AH, et al. Adams and Victor's Principles of Neurology, 12th ed. McGraw-Hill; 2023. Chapter: Disturbances of cerebrospinal fluid circulation"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "걸음 장애로 시작한 세 증상과 뇌고랑에 비해 큰 뇌실은 정상압수두증이므로 다량 요추천자로 단락술 반응을 먼저 본다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "팔 흔들기 보존·손가락 두드리기 서동 없음·정상 긴장도 — 파킨슨병의 상지 소견이 없다",
+   "steps": 3,
+   "chain": [
+    "걸음 장애(먼저) → 요실금 → 인지 저하의 순서 → 정상압수두증 의심",
+    "MRI 에서 뇌고랑에 비해 큰 뇌실·높은 볼록면 뇌고랑 좁아짐 → 정상압수두증에 합당",
+    "단락술 전 반응 예측 → 다량 요추천자와 전후 보행 평가"
+   ],
+   "key": [
+    {
+     "item": "He feels as if his feet are stuck to the floor",
+     "why": "자석 보행 — 정상압수두증의 걸음",
+     "also": []
+    },
+    {
+     "item": "urinary urgency with occasional incontinence",
+     "why": "세 증상 중 방광",
+     "also": []
+    },
+    {
+     "item": "enlargement of the lateral and third ventricles out of proportion to sulcal widening",
+     "why": "위축이 아닌 수두증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "arm swing is preserved",
+     "why": "파킨슨병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no bradykinesia of finger tapping",
+     "why": "파킨슨병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no obstructing mass",
+     "why": "폐쇄성 수두증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Mini-Mental State Examination score is 25/30",
+     "why": "가벼운 인지 저하 — 진단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "hypertension treated with lisinopril",
+     "why": "혈관성 원인 감별에 떠올릴 수 있지만 다음 단계를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "걸음 장애로 시작해 요실금·인지 저하가 뒤따르고 MRI 에서 뇌고랑에 비해 뇌실이 크다. 정상압수두증으로 보고 단락술 전에 다량 요추천자로 보행 반응을 본다.",
+   "switch": {
+    "choice": "B",
+    "condition": "한쪽에서 시작한 안정 시 떨림·톱니바퀴 강직·손가락 두드리기 서동이 있고 MRI 가 정상이었다면 레보도파 시험 투여가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0452",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "내분비·대사 — 알도스테론/레닌 비가 높은 고혈압 환자의 다음 검사",
+  "type": "내분비·대사 — 알도스테론/레닌 비가 높은 고혈압 환자의 다음 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-26",
+  "vignette": "A 46-year-old woman comes to the physician for follow-up of hypertension diagnosed 2 years ago. Her blood pressure remains above 150/95 mm Hg despite taking amlodipine, losartan, and hydrochlorothiazide at maximal doses. She has no headache, palpitations, or sweating. Body mass index is 25 kg/m2. Blood pressure is 156/98 mm Hg. Examination shows no cushingoid features. Serum potassium is 3.6 mEq/L, and creatinine is 0.7 mg/dL. Morning plasma aldosterone concentration is 16 ng/dL, and plasma renin activity is 0.4 ng/mL/h (aldosterone-to-renin ratio, 40). The tests were repeated after correcting potassium with similar results.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Saline infusion suppression test",
+   "CT scan of the adrenal glands",
+   "Adrenal venous sampling",
+   "Overnight 1-mg dexamethasone suppression test",
+   "24-hour urine metanephrines"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Resistant hypertension with a high aldosterone-to-renin ratio (40, with aldosterone 16 ng/dL and suppressed renin) is a positive screen for primary aldosteronism. Because she lacks the combination that makes confirmation unnecessary (spontaneous hypokalemia, undetectable renin, and aldosterone > 20 ng/dL), autonomous aldosterone secretion must first be confirmed with a suppression test such as saline infusion; imaging and venous sampling come only after confirmation.\n- 원리: <b>Why screening is not diagnosis</b>: the aldosterone-to-renin ratio rises whenever renin is low, even if aldosterone is only modestly elevated — and many drugs, age, and salt intake shift renin. A ratio is therefore sensitive but not specific.<br> <b>What confirmation proves</b>: normal adrenal glomerulosa is controlled by angiotensin II; volume loading (2 L saline over 4 hours) suppresses renin and should drop aldosterone below about 5–6 ng/dL. Aldosterone that stays above 10 ng/dL is autonomous — primary aldosteronism. Oral salt loading, fludrocortisone, and captopril tests use the same logic.<br> <b>Why the order matters</b>: adrenal incidentalomas are common in middle age, so a CT nodule does not prove the source; and bilateral hyperplasia, treated with mineralocorticoid antagonists, cannot be distinguished from a unilateral adenoma on CT. Hence confirm → CT (to exclude carcinoma and map anatomy) → adrenal venous sampling to lateralize before surgery.\n- 비교: <table><thead><tr><th style=\"width:22%\">Step</th><th style=\"width:39%\">Confirmatory test (answer)</th><th>Adrenal CT (closest distractor)</th></tr></thead><tbody> <tr><td>Question answered</td><td><b>Is aldosterone secretion autonomous?</b></td><td>What does the adrenal anatomy look like?</td></tr> <tr><td>When to do it</td><td>After a positive ratio, unless hypokalemia + undetectable renin + aldosterone &gt; 20 ng/dL</td><td>Only after the diagnosis is established</td></tr> <tr><td>This patient</td><td>K+ 3.6, aldosterone 16 — confirmation needed</td><td>Premature — incidental nodules may mislead</td></tr> </tbody></table> Biochemistry first, anatomy second, lateralization third.\n- 오답 이유:\n  - (B) Adrenal CT is correct after primary aldosteronism is confirmed (or confirmation is waived by hypokalemia, undetectable renin, and aldosterone > 20 ng/dL).\n  - (C) Adrenal venous sampling is correct after confirmation and CT in a surgical candidate, to decide whether aldosterone excess is unilateral.\n  - (D) The 1-mg dexamethasone suppression test is correct for suspected Cushing syndrome or for evaluating an adrenal incidentaloma for cortisol excess; she has no cushingoid features.\n  - (E) Urine metanephrines are correct when episodic headache, palpitations, and sweating suggest pheochromocytoma; she has none of these.\n- 함정: Jumping to adrenal CT after a positive ratio — without confirmation, a nonfunctioning incidentaloma could send a patient with bilateral hyperplasia to surgery.\n- 학습목표: 알도스테론/레닌 비가 높은 고혈압 환자에서 자발 저칼륨혈증·알도스테론 > 20 ng/dL 같은 확정 조건을 갖추지 않았다면 확진 검사(식염수 부하)를 먼저 하고, 그 뒤 부신 CT·부신정맥채혈로 간다\n- 근거·출처: Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2016;101:1889-1916 · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Elsevier; 2020. Chapter: Endocrine hypertension",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Resistant hypertension with a high aldosterone-to-renin ratio (40, with aldosterone 16 ng/dL and suppressed renin) is a positive screen for primary aldosteronism. Because she lacks the combination that makes confirmation unnecessary (spontaneous hypokalemia, undetectable renin, and aldosterone > 20 ng/dL), autonomous aldosterone secretion must first be confirmed with a suppression test such as saline infusion; imaging and venous sampling come only after confirmation."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why screening is not diagnosis</b>: the aldosterone-to-renin ratio rises whenever renin is low, even if aldosterone is only modestly elevated — and many drugs, age, and salt intake shift renin. A ratio is therefore sensitive but not specific.<br> <b>What confirmation proves</b>: normal adrenal glomerulosa is controlled by angiotensin II; volume loading (2 L saline over 4 hours) suppresses renin and should drop aldosterone below about 5–6 ng/dL. Aldosterone that stays above 10 ng/dL is autonomous — primary aldosteronism. Oral salt loading, fludrocortisone, and captopril tests use the same logic.<br> <b>Why the order matters</b>: adrenal incidentalomas are common in middle age, so a CT nodule does not prove the source; and bilateral hyperplasia, treated with mineralocorticoid antagonists, cannot be distinguished from a unilateral adenoma on CT. Hence confirm → CT (to exclude carcinoma and map anatomy) → adrenal venous sampling to lateralize before surgery."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Step</th><th style=\"width:39%\">Confirmatory test (answer)</th><th>Adrenal CT (closest distractor)</th></tr></thead><tbody> <tr><td>Question answered</td><td><b>Is aldosterone secretion autonomous?</b></td><td>What does the adrenal anatomy look like?</td></tr> <tr><td>When to do it</td><td>After a positive ratio, unless hypokalemia + undetectable renin + aldosterone &gt; 20 ng/dL</td><td>Only after the diagnosis is established</td></tr> <tr><td>This patient</td><td>K+ 3.6, aldosterone 16 — confirmation needed</td><td>Premature — incidental nodules may mislead</td></tr> </tbody></table> Biochemistry first, anatomy second, lateralization third."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Adrenal CT is correct after primary aldosteronism is confirmed (or confirmation is waived by hypokalemia, undetectable renin, and aldosterone > 20 ng/dL).\n(C) Adrenal venous sampling is correct after confirmation and CT in a surgical candidate, to decide whether aldosterone excess is unilateral.\n(D) The 1-mg dexamethasone suppression test is correct for suspected Cushing syndrome or for evaluating an adrenal incidentaloma for cortisol excess; she has no cushingoid features.\n(E) Urine metanephrines are correct when episodic headache, palpitations, and sweating suggest pheochromocytoma; she has none of these."
+   },
+   {
+    "k": "함정",
+    "v": "Jumping to adrenal CT after a positive ratio — without confirmation, a nonfunctioning incidentaloma could send a patient with bilateral hyperplasia to surgery."
+   },
+   {
+    "k": "학습목표",
+    "v": "알도스테론/레닌 비가 높은 고혈압 환자에서 자발 저칼륨혈증·알도스테론 > 20 ng/dL 같은 확정 조건을 갖추지 않았다면 확진 검사(식염수 부하)를 먼저 하고, 그 뒤 부신 CT·부신정맥채혈로 간다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2016;101:1889-1916 · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Elsevier; 2020. Chapter: Endocrine hypertension"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "알도스테론/레닌 비가 높지만 자발 저칼륨혈증·알도스테론 > 20 ng/dL 을 갖추지 않았으므로 식염수 부하로 자율 분비를 먼저 확진한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "확진 전 단계 — 혈청 칼륨 3.6 과 알도스테론 16 ng/dL 은 확진 검사 생략 조건이 아니다",
+   "steps": 3,
+   "chain": [
+    "3제 최대 용량에도 조절 안 되는 고혈압 → 일차 알도스테론증 선별 대상",
+    "알도스테론 16 ng/dL, 레닌 억제, 비 40 → 선별 양성",
+    "칼륨 3.6·알도스테론 < 20 → 확진 생략 조건 미충족 → 식염수 부하 검사"
+   ],
+   "key": [
+    {
+     "item": "amlodipine, losartan, and hydrochlorothiazide at maximal doses",
+     "why": "저항성 고혈압 — 선별 대상",
+     "also": []
+    },
+    {
+     "item": "aldosterone-to-renin ratio, 40",
+     "why": "선별 양성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no headache, palpitations, or sweating",
+     "why": "갈색세포종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no cushingoid features",
+     "why": "쿠싱 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Morning plasma aldosterone concentration is 16 ng/dL",
+     "why": "20 ng/dL 미만 — 확진 검사가 필요하다",
+     "also": []
+    },
+    {
+     "item": "Serum potassium is 3.6 mEq/L",
+     "why": "자발 저칼륨혈증이 없다 — 확진 생략 조건이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "repeated after correcting potassium",
+     "why": "저칼륨이 알도스테론을 낮추는 것을 피한 정확한 검사 조건",
+     "also": []
+    }
+   ],
+   "summary": "저항성 고혈압에서 알도스테론/레닌 비 40 으로 선별 양성이지만 칼륨 3.6·알도스테론 16 ng/dL 이라 확진 생략 조건이 아니다. 식염수 부하 검사로 자율 분비를 먼저 확인한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "자발 저칼륨혈증이 있고 레닌이 측정 불가이며 알도스테론이 25 ng/dL 이었다면 확진 검사 없이 부신 CT 로 간다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0451",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "신장·비뇨 — 건조증후군 환자의 정상 음이온차 대사산증과 신석회화",
+  "type": "신장·비뇨 — 건조증후군 환자의 정상 음이온차 대사산증과 신석회화",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-26",
+  "vignette": "A 39-year-old woman comes to the physician because of fatigue and muscle weakness for 3 months and an episode of left flank pain with hematuria 2 weeks ago. She has had dry eyes and dry mouth for 2 years. She has no diarrhea and takes no medications. Blood pressure is 112/70 mm Hg. Examination shows bilateral parotid enlargement and mild proximal muscle weakness. Serum studies show: Na+ 139 mEq/L, K+ 2.9 mEq/L, Cl− 115 mEq/L, HCO3− 15 mEq/L, glucose 90 mg/dL, and creatinine 0.8 mg/dL. Arterial pH is 7.30. Urine pH is 6.8; urine Na+ 40 mEq/L, K+ 30 mEq/L, Cl− 50 mEq/L. Urinalysis shows no glucose and no protein. Renal ultrasonography shows bilateral medullary nephrocalcinosis.",
+  "question": "Which of the following is the most likely cause of the acid-base disorder?",
+  "options": [
+   "Impaired HCO3− reabsorption in the proximal tubule",
+   "Aldosterone deficiency or resistance in the collecting duct",
+   "Gastrointestinal loss of bicarbonate",
+   "Accumulation of unmeasured organic acids",
+   "Impaired H+ secretion by α-intercalated cells of the collecting duct"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Anion gap is 139 − (115 + 15) = 9 — a normal anion gap (hyperchloremic) metabolic acidosis. The urine anion gap is positive (40 + 30 − 50 = +20), so the kidney is not excreting NH4+, and urine pH stays 6.8 despite systemic acidosis. With hypokalemia, nephrocalcinosis, and sicca symptoms with parotid enlargement (Sjögren syndrome), this is distal (type 1) renal tubular acidosis — failure of α-intercalated cells to secrete H+.\n- 원리: <b>Two ways to lose base without an anion gap</b>: bicarbonate leaves through the gut (diarrhea) or the kidney fails to reclaim or regenerate it (renal tubular acidosis). The urine anion gap (Na+ + K+ − Cl−) estimates urinary NH4+: a healthy kidney facing acidosis excretes large amounts of NH4Cl, making the gap negative; a positive gap means the kidney is part of the problem.<br> <b>Why distal RTA keeps urine alkaline</b>: α-intercalated cells pump H+ into the collecting duct lumen via H+-ATPase. In Sjögren syndrome, autoantibodies against this pump (or carbonic anhydrase II) disable it, so urine cannot be acidified below about 5.5 — even with serum HCO3− of 15.<br> <b>Why stones and low K+</b>: chronic acidosis releases calcium phosphate from bone and increases proximal citrate reabsorption; alkaline urine with low citrate precipitates calcium phosphate, causing nephrocalcinosis. Sodium delivered distally is reabsorbed in exchange for K+ instead of H+, wasting potassium.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Distal (type 1) RTA (answer)</th><th>Proximal (type 2) RTA (closest distractor)</th></tr></thead><tbody> <tr><td>Defect</td><td><b>H+ secretion in collecting duct</b></td><td>HCO3− reabsorption in proximal tubule</td></tr> <tr><td>Urine pH during acidosis</td><td>Always &gt; 5.5</td><td>&lt; 5.5 once serum HCO3− falls below the lowered threshold</td></tr> <tr><td>Serum HCO3−</td><td>Often &lt; 10–15</td><td>Usually 12–20</td></tr> <tr><td>Stones</td><td>Nephrocalcinosis common</td><td>Rare</td></tr> <tr><td>Other clues</td><td>Sjögren, amphotericin, lithium</td><td>Fanconi (glycosuria, phosphaturia), multiple myeloma, tenofovir</td></tr> </tbody></table> Both cause hypokalemic, normal-gap acidosis — urine pH during acidosis and nephrocalcinosis separate them.\n- 오답 이유:\n  - (A) Impaired proximal HCO3− reabsorption is correct when urine pH falls below 5.5 at steady state and Fanconi features (glycosuria with normal serum glucose, phosphaturia) appear.\n  - (B) Aldosterone deficiency or resistance (type 4 RTA) is correct when the normal-gap acidosis comes with hyperkalemia, as in diabetic nephropathy; this patient's K+ is low.\n  - (C) Gastrointestinal HCO3− loss is correct when diarrhea produces a normal-gap acidosis with a negative urine anion gap; she has no diarrhea and the urine gap is positive.\n  - (D) Unmeasured organic acids (ketoacids, lactate, toxic alcohols) are correct when the anion gap is elevated; here it is 9.\n- 함정: Choosing proximal RTA because of hypokalemia — both types waste potassium; an alkaline urine during acidosis and nephrocalcinosis mark the distal defect.\n- 학습목표: 정상 음이온차 대사산증에서 양의 소변 음이온차·소변 pH > 5.5·저칼륨혈증·신석회화로 원위(1형) 신세관산증을 진단하고, 설사와 근위(2형) 신세관산증과 구별한다\n- 근거·출처: Rose BD, Post TW. Clinical Physiology of Acid-Base and Electrolyte Disorders, 5th ed. McGraw-Hill; 2001. Chapter 19: Metabolic acidosis · Rodríguez Soriano J. Renal tubular acidosis: the clinical entity. J Am Soc Nephrol 2002;13:2160-2170",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Anion gap is 139 − (115 + 15) = 9 — a normal anion gap (hyperchloremic) metabolic acidosis. The urine anion gap is positive (40 + 30 − 50 = +20), so the kidney is not excreting NH4+, and urine pH stays 6.8 despite systemic acidosis. With hypokalemia, nephrocalcinosis, and sicca symptoms with parotid enlargement (Sjögren syndrome), this is distal (type 1) renal tubular acidosis — failure of α-intercalated cells to secrete H+."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Two ways to lose base without an anion gap</b>: bicarbonate leaves through the gut (diarrhea) or the kidney fails to reclaim or regenerate it (renal tubular acidosis). The urine anion gap (Na+ + K+ − Cl−) estimates urinary NH4+: a healthy kidney facing acidosis excretes large amounts of NH4Cl, making the gap negative; a positive gap means the kidney is part of the problem.<br> <b>Why distal RTA keeps urine alkaline</b>: α-intercalated cells pump H+ into the collecting duct lumen via H+-ATPase. In Sjögren syndrome, autoantibodies against this pump (or carbonic anhydrase II) disable it, so urine cannot be acidified below about 5.5 — even with serum HCO3− of 15.<br> <b>Why stones and low K+</b>: chronic acidosis releases calcium phosphate from bone and increases proximal citrate reabsorption; alkaline urine with low citrate precipitates calcium phosphate, causing nephrocalcinosis. Sodium delivered distally is reabsorbed in exchange for K+ instead of H+, wasting potassium."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Distal (type 1) RTA (answer)</th><th>Proximal (type 2) RTA (closest distractor)</th></tr></thead><tbody> <tr><td>Defect</td><td><b>H+ secretion in collecting duct</b></td><td>HCO3− reabsorption in proximal tubule</td></tr> <tr><td>Urine pH during acidosis</td><td>Always &gt; 5.5</td><td>&lt; 5.5 once serum HCO3− falls below the lowered threshold</td></tr> <tr><td>Serum HCO3−</td><td>Often &lt; 10–15</td><td>Usually 12–20</td></tr> <tr><td>Stones</td><td>Nephrocalcinosis common</td><td>Rare</td></tr> <tr><td>Other clues</td><td>Sjögren, amphotericin, lithium</td><td>Fanconi (glycosuria, phosphaturia), multiple myeloma, tenofovir</td></tr> </tbody></table> Both cause hypokalemic, normal-gap acidosis — urine pH during acidosis and nephrocalcinosis separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Impaired proximal HCO3− reabsorption is correct when urine pH falls below 5.5 at steady state and Fanconi features (glycosuria with normal serum glucose, phosphaturia) appear.\n(B) Aldosterone deficiency or resistance (type 4 RTA) is correct when the normal-gap acidosis comes with hyperkalemia, as in diabetic nephropathy; this patient's K+ is low.\n(C) Gastrointestinal HCO3− loss is correct when diarrhea produces a normal-gap acidosis with a negative urine anion gap; she has no diarrhea and the urine gap is positive.\n(D) Unmeasured organic acids (ketoacids, lactate, toxic alcohols) are correct when the anion gap is elevated; here it is 9."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing proximal RTA because of hypokalemia — both types waste potassium; an alkaline urine during acidosis and nephrocalcinosis mark the distal defect."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 음이온차 대사산증에서 양의 소변 음이온차·소변 pH > 5.5·저칼륨혈증·신석회화로 원위(1형) 신세관산증을 진단하고, 설사와 근위(2형) 신세관산증과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rose BD, Post TW. Clinical Physiology of Acid-Base and Electrolyte Disorders, 5th ed. McGraw-Hill; 2001. Chapter 19: Metabolic acidosis · Rodríguez Soriano J. Renal tubular acidosis: the clinical entity. J Am Soc Nephrol 2002;13:2160-2170"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "정상 음이온차 대사산증에서 소변 음이온차가 양이고 소변 pH 가 6.8 이며 저칼륨·신석회화가 있으므로 원위 신세관산증(H+ 분비 장애)이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "산증 중에도 소변 pH 6.8 과 신석회화 — 근위 신세관산증은 소변을 산성화할 수 있고 결석이 드물다",
+   "steps": 3,
+   "chain": [
+    "음이온차 139 − 130 = 9 → 정상 음이온차 대사산증",
+    "소변 음이온차 +20 → 신장성(NH4+ 배설 부족), 설사가 아님",
+    "소변 pH 6.8 + 저칼륨 + 신석회화 + 건조증후군 → 원위(1형) 신세관산증"
+   ],
+   "key": [
+    {
+     "item": "Cl− 115 mEq/L, HCO3− 15 mEq/L",
+     "why": "음이온차 9 — 정상 음이온차 산증",
+     "also": []
+    },
+    {
+     "item": "Urine pH is 6.8",
+     "why": "산증 중에도 소변을 산성화하지 못한다",
+     "also": []
+    },
+    {
+     "item": "urine Na+ 40 mEq/L, K+ 30 mEq/L, Cl− 50 mEq/L",
+     "why": "소변 음이온차 +20 — 신장 원인",
+     "also": []
+    },
+    {
+     "item": "bilateral medullary nephrocalcinosis",
+     "why": "원위 신세관산증의 특징",
+     "also": []
+    },
+    {
+     "item": "dry eyes and dry mouth for 2 years",
+     "why": "건조증후군 — 원위 신세관산증의 흔한 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "K+ 2.9 mEq/L",
+     "why": "고칼륨성 4형 신세관산증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Urinalysis shows no glucose",
+     "why": "판코니 증후군(근위 신세관산증) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She has no diarrhea",
+     "why": "위장관 중탄산 손실 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "음이온차 9 의 정상 음이온차 대사산증에서 소변 음이온차가 +20, 소변 pH 6.8 이고 저칼륨·신석회화·건조증후군이 있다. 집합관 H+ 분비 장애인 원위(1형) 신세관산증이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "소변 pH 가 5.2 이고 정상 혈당에서 요당·인산뇨가 있었다면 근위(2형) 신세관산증이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0450",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "류마티스·근골격 — 연골석회화를 동반한 젊은 남성의 급성 무릎 관절염",
+  "type": "류마티스·근골격 — 연골석회화를 동반한 젊은 남성의 급성 무릎 관절염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-26",
+  "vignette": "A 44-year-old man comes to the emergency department because of a 2-day history of pain and swelling of the right knee. He has had two similar episodes in the left knee during the past year that resolved within 10 days. He also reports fatigue and decreased libido for 1 year. He drinks alcohol occasionally. Temperature is 37.6°C. The right knee is warm and swollen with a large effusion. There is bony enlargement of the second and third metacarpophalangeal joints of both hands. Synovial fluid analysis shows a leukocyte count of 18,000/mm3 (85% neutrophils) and rhomboid-shaped crystals that are weakly positively birefringent under polarized light; Gram stain is negative. X-rays of both knees show linear calcification of the menisci. Serum alanine aminotransferase is 68 U/L, and the fasting glucose is 128 mg/dL.",
+  "question": "Which of the following serum studies is most likely to identify the underlying cause of this condition?",
+  "options": [
+   "Antinuclear antibody titer",
+   "Transferrin saturation and ferritin",
+   "Serum uric acid concentration",
+   "Rheumatoid factor and anti-CCP",
+   "HLA-B27 genotyping"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Rhomboid, weakly positively birefringent crystals with meniscal chondrocalcinosis indicate calcium pyrophosphate deposition (pseudogout). CPPD before age 55 calls for a search for a metabolic cause; second and third MCP arthropathy, fatigue, low libido (hypogonadism), elevated ALT, and hyperglycemia point to hereditary hemochromatosis, screened with transferrin saturation and ferritin.\n- 원리: <b>Why young CPPD is a clue</b>: pyrophosphate crystals usually form in aging cartilage; when they appear before about 55 years, cartilage chemistry has been altered by a metabolic disorder — hemochromatosis, hyperparathyroidism, hypomagnesemia, or hypophosphatasia.<br> <b>How iron causes it</b>: iron deposited in synovium and cartilage inhibits pyrophosphatase, raising local inorganic pyrophosphate that combines with calcium to form crystals. Iron also damages chondrocytes directly, producing a characteristic degenerative arthropathy of the 2nd and 3rd MCP joints with hook-like osteophytes.<br> <b>The multisystem picture</b>: iron in the liver (elevated aminotransferases, cirrhosis), pancreas (diabetes), pituitary (hypogonadotropic hypogonadism — low libido), heart, and skin. Transferrin saturation above 45 % is the most sensitive first test; ferritin reflects stores; HFE genotyping follows.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CPPD — iron studies (answer)</th><th>Gout — uric acid (closest distractor)</th></tr></thead><tbody> <tr><td>Crystal shape</td><td><b>Rhomboid</b></td><td>Needle-shaped</td></tr> <tr><td>Birefringence</td><td>Weakly positive (blue when parallel)</td><td>Strongly negative (yellow when parallel)</td></tr> <tr><td>X-ray</td><td>Chondrocalcinosis of menisci</td><td>Punched-out erosions with overhanging edges</td></tr> <tr><td>Underlying cause to seek</td><td>Hemochromatosis, hyperparathyroidism, low Mg</td><td>Urate overproduction/underexcretion</td></tr> </tbody></table> The crystal decides the disease; the patient's age and systemic clues decide the next test.\n- 오답 이유:\n  - (A) Antinuclear antibodies are correct for suspected lupus with non-erosive arthritis, rash, or cytopenias, none of which are present here.\n  - (C) Uric acid is correct when needle-shaped, strongly negatively birefringent crystals indicate gout; it does not explain pyrophosphate deposition.\n  - (D) Rheumatoid factor and anti-CCP are correct for symmetric small-joint synovitis with erosions; MCP hook osteophytes with crystals point elsewhere.\n  - (E) HLA-B27 is correct for inflammatory back pain or reactive arthritis with enthesitis, not for crystal-proven monoarthritis with chondrocalcinosis.\n- 함정: Stopping at 'pseudogout' and treating — in a 44-year-old the crystal is a sign; MCP 2–3 changes, hypogonadism, and liver enzymes point to iron overload.\n- 학습목표: 55세 미만에서 생긴 CPPD 관절염은 혈색소증·부갑상샘기능항진증·저마그네슘혈증 같은 대사 원인을 찾아야 하며, 그중 혈색소증 선별에 철 검사를 고른다\n- 근거·출처: Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. N Engl J Med 2016;374:2575-2584 · Kowdley KV, et al. ACG clinical guideline: hereditary hemochromatosis. Am J Gastroenterol 2019;114:1202-1218",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Rhomboid, weakly positively birefringent crystals with meniscal chondrocalcinosis indicate calcium pyrophosphate deposition (pseudogout). CPPD before age 55 calls for a search for a metabolic cause; second and third MCP arthropathy, fatigue, low libido (hypogonadism), elevated ALT, and hyperglycemia point to hereditary hemochromatosis, screened with transferrin saturation and ferritin."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why young CPPD is a clue</b>: pyrophosphate crystals usually form in aging cartilage; when they appear before about 55 years, cartilage chemistry has been altered by a metabolic disorder — hemochromatosis, hyperparathyroidism, hypomagnesemia, or hypophosphatasia.<br> <b>How iron causes it</b>: iron deposited in synovium and cartilage inhibits pyrophosphatase, raising local inorganic pyrophosphate that combines with calcium to form crystals. Iron also damages chondrocytes directly, producing a characteristic degenerative arthropathy of the 2nd and 3rd MCP joints with hook-like osteophytes.<br> <b>The multisystem picture</b>: iron in the liver (elevated aminotransferases, cirrhosis), pancreas (diabetes), pituitary (hypogonadotropic hypogonadism — low libido), heart, and skin. Transferrin saturation above 45 % is the most sensitive first test; ferritin reflects stores; HFE genotyping follows."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CPPD — iron studies (answer)</th><th>Gout — uric acid (closest distractor)</th></tr></thead><tbody> <tr><td>Crystal shape</td><td><b>Rhomboid</b></td><td>Needle-shaped</td></tr> <tr><td>Birefringence</td><td>Weakly positive (blue when parallel)</td><td>Strongly negative (yellow when parallel)</td></tr> <tr><td>X-ray</td><td>Chondrocalcinosis of menisci</td><td>Punched-out erosions with overhanging edges</td></tr> <tr><td>Underlying cause to seek</td><td>Hemochromatosis, hyperparathyroidism, low Mg</td><td>Urate overproduction/underexcretion</td></tr> </tbody></table> The crystal decides the disease; the patient's age and systemic clues decide the next test."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Antinuclear antibodies are correct for suspected lupus with non-erosive arthritis, rash, or cytopenias, none of which are present here.\n(C) Uric acid is correct when needle-shaped, strongly negatively birefringent crystals indicate gout; it does not explain pyrophosphate deposition.\n(D) Rheumatoid factor and anti-CCP are correct for symmetric small-joint synovitis with erosions; MCP hook osteophytes with crystals point elsewhere.\n(E) HLA-B27 is correct for inflammatory back pain or reactive arthritis with enthesitis, not for crystal-proven monoarthritis with chondrocalcinosis."
+   },
+   {
+    "k": "함정",
+    "v": "Stopping at 'pseudogout' and treating — in a 44-year-old the crystal is a sign; MCP 2–3 changes, hypogonadism, and liver enzymes point to iron overload."
+   },
+   {
+    "k": "학습목표",
+    "v": "55세 미만에서 생긴 CPPD 관절염은 혈색소증·부갑상샘기능항진증·저마그네슘혈증 같은 대사 원인을 찾아야 하며, 그중 혈색소증 선별에 철 검사를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. N Engl J Med 2016;374:2575-2584 · Kowdley KV, et al. ACG clinical guideline: hereditary hemochromatosis. Am J Gastroenterol 2019;114:1202-1218"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "44세의 CPPD 관절염과 2·3번째 MCP 관절병증·성선기능저하·간효소 상승·고혈당은 혈색소증을 가리키므로 철 검사를 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "결정이 마름모꼴이고 약한 양성 복굴절 — 통풍(바늘 모양, 강한 음성)이 아니다",
+   "steps": 3,
+   "chain": [
+    "마름모꼴·약한 양성 복굴절 결정 + 반월판 석회화 → CPPD",
+    "55세 미만 CPPD → 대사 원인 탐색",
+    "2·3번째 MCP 관절 비대 + 성선기능저하 + ALT 상승 + 고혈당 → 혈색소증 → 트랜스페린 포화도·페리틴"
+   ],
+   "key": [
+    {
+     "item": "rhomboid-shaped crystals that are weakly positively birefringent",
+     "why": "CPPD 의 결정",
+     "also": []
+    },
+    {
+     "item": "linear calcification of the menisci",
+     "why": "연골석회화",
+     "also": []
+    },
+    {
+     "item": "A 44-year-old man",
+     "why": "55세 미만 — 대사 원인을 찾을 근거",
+     "also": []
+    },
+    {
+     "item": "bony enlargement of the second and third metacarpophalangeal joints",
+     "why": "혈색소증 관절병증의 전형 위치",
+     "also": []
+    },
+    {
+     "item": "decreased libido",
+     "why": "뇌하수체 철 침착에 의한 성선기능저하",
+     "also": []
+    },
+    {
+     "item": "Serum alanine aminotransferase is 68 U/L",
+     "why": "간 철 침착",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Gram stain is negative",
+     "why": "세균 관절염 가능성을 낮춘다(배양 결과는 따로 확인)",
+     "also": []
+    },
+    {
+     "item": "He drinks alcohol occasionally",
+     "why": "알코올성 간질환으로 간효소 상승을 설명할 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "마름모꼴 약한 양성 복굴절 결정과 연골석회화로 CPPD 이고, 44세에 MCP 2·3 관절병증·성선기능저하·간효소 상승·고혈당이 있다. 혈색소증을 찾기 위해 트랜스페린 포화도와 페리틴을 잰다.",
+   "switch": {
+    "choice": "C",
+    "condition": "관절액에 바늘 모양의 강한 음성 복굴절 결정이 보였다면 통풍이므로 요산을 확인한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0449",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "약리 — 알로푸리놀을 더한 뒤 아자티오프린 복용자의 범혈구감소",
+  "type": "약리 — 알로푸리놀을 더한 뒤 아자티오프린 복용자의 범혈구감소",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-26",
+  "vignette": "52세 남자가 1주일 전부터 생긴 열과 입안 궤양으로 병원에 왔다. 3년 전 신장 이식을 받고 타크로리무스, 프레드니솔론, 아자티오프린 100 mg/일을 복용해 왔으며, 지난 2년 동안 혈구 수는 정상이었다. 4주 전 반복되는 통풍 발작으로 알로푸리놀 300 mg/일을 새로 시작하였다. 체온 38.4℃, 혈압 132/78 mmHg 이다. 혈액 검사에서 백혈구 1,100/mm3(호중구 300/mm3), 혈색소 7.9 g/dL, 혈소판 38,000/mm3 이다. 혈청 크레아티닌은 1.3 mg/dL 로 지난달과 같고, 타크로리무스 혈중 농도는 목표 범위 안이다. 이식 전 검사에서 TPMT 활성은 정상이었다.",
+  "question": "이 환자의 범혈구감소를 일으킨 효소 억제로 가장 적절한 것은?",
+  "options": [
+   "하이포잔틴-구아닌 포스포리보실전이효소",
+   "사이토크롬 P450 3A4",
+   "디하이드로피리미딘 탈수소효소",
+   "잔틴산화효소(xanthine oxidase)",
+   "티오퓨린 메틸전이효소(TPMT)"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 아자티오프린은 6-머캅토퓨린(6-MP)으로 바뀐 뒤 잔틴산화효소와 TPMT 로 불활성화되고, HGPRT 경로로 활성 티오구아닌 뉴클레오타이드가 된다. 알로푸리놀이 잔틴산화효소를 막자 6-MP 가 활성 경로로 몰려 티오구아닌 뉴클레오타이드가 쌓였고, 4주 뒤 범혈구감소가 생겼다. TPMT 활성은 정상이었고 다른 원인(타크로리무스 독성·신기능 변화)은 배제되었다.\n- 원리: <b>6-MP 의 세 갈래</b>: ① 잔틴산화효소 → 6-티오요산(불활성, 주로 간·장), ② TPMT → 6-메틸머캅토퓨린(불활성), ③ HGPRT → 티오이노신 일인산 → 6-티오구아닌 뉴클레오타이드(활성 — DNA 에 끼어들어 빨리 분열하는 림프구와 골수 세포를 죽인다).<br> <b>왜 알로푸리놀이 위험한가</b>: 경구 6-MP 의 상당 부분은 장과 간의 잔틴산화효소에서 첫 통과 때 없어진다. 이 길을 막으면 같은 용량에서 활성 대사물이 몇 배로 늘어난다. 그래서 병용이 꼭 필요하면 아자티오프린·6-MP 용량을 약 1/3~1/4 로 줄이고 혈구 수를 자주 본다(페북소스타트도 같다).<br> <b>TPMT 와의 관계</b>: TPMT 결핍은 유전적으로 둘째 길이 막힌 상태라 같은 독성이 처음부터 나타난다 — 이 환자처럼 2년 동안 문제가 없다가 새 약을 시작한 뒤 생긴 독성은 약물 상호작용을 먼저 생각한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">잔틴산화효소 억제 — 알로푸리놀(정답)</th><th>TPMT 결핍(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td><b>약물 상호작용(후천)</b></td><td>유전 다형성(선천)</td></tr> <tr><td>발생 시점</td><td>새 약 시작 후 수 주</td><td>아자티오프린 시작 후 첫 수 주~수개월</td></tr> <tr><td>이 환자</td><td>4주 전 알로푸리놀 시작</td><td>TPMT 활성 정상, 2년간 혈구 정상</td></tr> <tr><td>대처</td><td>병용 시 티오퓨린 용량 1/3~1/4</td><td>활성에 따라 용량 감량·대체 약</td></tr> </tbody></table> 두 효소 모두 6-MP 를 불활성화한다 — 언제 시작됐는지와 TPMT 검사 결과가 둘을 가른다.\n- 오답 이유:\n  - ① HGPRT 는 6-MP 를 활성 뉴클레오타이드로 바꾸는 효소라, 이 효소가 억제되면 오히려 독성이 줄고 약효가 떨어진다 — 결핍은 레쉬-니한 증후군에서 정답이 된다.\n  - ② 사이토크롬 P450 3A4 억제는 타크로리무스 농도가 오르는 상호작용(아졸계 항진균제 등)에서 정답이 되며, 이 환자의 타크로리무스 농도는 목표 범위다.\n  - ③ 디하이드로피리미딘 탈수소효소 결핍은 5-플루오로우라실·카페시타빈 독성에서 정답이 되며, 티오퓨린 대사와는 관계가 없다.\n  - ⑤ TPMT 는 유전적으로 활성이 낮을 때 아자티오프린 시작 직후부터 골수억제를 일으키는 경우에 정답이 되며, 이 환자의 TPMT 활성은 정상이다.\n- 함정: 티오퓨린 골수억제 = TPMT 라고 외운 대로 고르는 것 — TPMT 정상, 2년간 문제 없음, 4주 전 새 약이라는 시간 순서가 상호작용을 가리킨다.\n- 학습목표: 아자티오프린의 활성 대사물 6-머캅토퓨린이 잔틴산화효소로 불활성화되므로 알로푸리놀 병용 시 골수억제가 생김을 알고, TPMT 결핍과 구별한다\n- 근거·출처: Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. McGraw-Hill; 2023. Chapter: Immunosuppressants · Relling MV, et al. Clinical Pharmacogenetics Implementation Consortium guideline for thiopurine dosing based on TPMT and NUDT15 genotypes: 2018 update. Clin Pharmacol Ther 2019;105:1095-1105",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "아자티오프린은 6-머캅토퓨린(6-MP)으로 바뀐 뒤 잔틴산화효소와 TPMT 로 불활성화되고, HGPRT 경로로 활성 티오구아닌 뉴클레오타이드가 된다. 알로푸리놀이 잔틴산화효소를 막자 6-MP 가 활성 경로로 몰려 티오구아닌 뉴클레오타이드가 쌓였고, 4주 뒤 범혈구감소가 생겼다. TPMT 활성은 정상이었고 다른 원인(타크로리무스 독성·신기능 변화)은 배제되었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>6-MP 의 세 갈래</b>: ① 잔틴산화효소 → 6-티오요산(불활성, 주로 간·장), ② TPMT → 6-메틸머캅토퓨린(불활성), ③ HGPRT → 티오이노신 일인산 → 6-티오구아닌 뉴클레오타이드(활성 — DNA 에 끼어들어 빨리 분열하는 림프구와 골수 세포를 죽인다).<br> <b>왜 알로푸리놀이 위험한가</b>: 경구 6-MP 의 상당 부분은 장과 간의 잔틴산화효소에서 첫 통과 때 없어진다. 이 길을 막으면 같은 용량에서 활성 대사물이 몇 배로 늘어난다. 그래서 병용이 꼭 필요하면 아자티오프린·6-MP 용량을 약 1/3~1/4 로 줄이고 혈구 수를 자주 본다(페북소스타트도 같다).<br> <b>TPMT 와의 관계</b>: TPMT 결핍은 유전적으로 둘째 길이 막힌 상태라 같은 독성이 처음부터 나타난다 — 이 환자처럼 2년 동안 문제가 없다가 새 약을 시작한 뒤 생긴 독성은 약물 상호작용을 먼저 생각한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">잔틴산화효소 억제 — 알로푸리놀(정답)</th><th>TPMT 결핍(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td><b>약물 상호작용(후천)</b></td><td>유전 다형성(선천)</td></tr> <tr><td>발생 시점</td><td>새 약 시작 후 수 주</td><td>아자티오프린 시작 후 첫 수 주~수개월</td></tr> <tr><td>이 환자</td><td>4주 전 알로푸리놀 시작</td><td>TPMT 활성 정상, 2년간 혈구 정상</td></tr> <tr><td>대처</td><td>병용 시 티오퓨린 용량 1/3~1/4</td><td>활성에 따라 용량 감량·대체 약</td></tr> </tbody></table> 두 효소 모두 6-MP 를 불활성화한다 — 언제 시작됐는지와 TPMT 검사 결과가 둘을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① HGPRT 는 6-MP 를 활성 뉴클레오타이드로 바꾸는 효소라, 이 효소가 억제되면 오히려 독성이 줄고 약효가 떨어진다 — 결핍은 레쉬-니한 증후군에서 정답이 된다.\n② 사이토크롬 P450 3A4 억제는 타크로리무스 농도가 오르는 상호작용(아졸계 항진균제 등)에서 정답이 되며, 이 환자의 타크로리무스 농도는 목표 범위다.\n③ 디하이드로피리미딘 탈수소효소 결핍은 5-플루오로우라실·카페시타빈 독성에서 정답이 되며, 티오퓨린 대사와는 관계가 없다.\n⑤ TPMT 는 유전적으로 활성이 낮을 때 아자티오프린 시작 직후부터 골수억제를 일으키는 경우에 정답이 되며, 이 환자의 TPMT 활성은 정상이다."
+   },
+   {
+    "k": "함정",
+    "v": "티오퓨린 골수억제 = TPMT 라고 외운 대로 고르는 것 — TPMT 정상, 2년간 문제 없음, 4주 전 새 약이라는 시간 순서가 상호작용을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "아자티오프린의 활성 대사물 6-머캅토퓨린이 잔틴산화효소로 불활성화되므로 알로푸리놀 병용 시 골수억제가 생김을 알고, TPMT 결핍과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. McGraw-Hill; 2023. Chapter: Immunosuppressants · Relling MV, et al. Clinical Pharmacogenetics Implementation Consortium guideline for thiopurine dosing based on TPMT and NUDT15 genotypes: 2018 update. Clin Pharmacol Ther 2019;105:1095-1105"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "알로푸리놀이 잔틴산화효소를 막아 6-MP 가 활성 티오구아닌 뉴클레오타이드 쪽으로 몰려 골수억제가 생겼다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "TPMT 활성 정상 + 2년간 혈구 정상 + 4주 전 알로푸리놀 시작",
+   "steps": 3,
+   "chain": [
+    "범혈구감소 + 이식 후 면역억제제 → 약물 골수억제 의심",
+    "타크로리무스 농도·신기능 변화 없음, TPMT 정상 → 새로 시작한 약과의 상호작용",
+    "알로푸리놀 → 잔틴산화효소 억제 → 6-MP 불활성화 감소 → 티오구아닌 뉴클레오타이드 축적"
+   ],
+   "key": [
+    {
+     "item": "알로푸리놀 300 mg/일을 새로 시작",
+     "why": "시간 순서가 맞는 원인 약",
+     "also": []
+    },
+    {
+     "item": "아자티오프린 100 mg/일",
+     "why": "잔틴산화효소로 불활성화되는 약",
+     "also": []
+    },
+    {
+     "item": "지난 2년 동안 혈구 수는 정상",
+     "why": "유전적 원인보다 새 상호작용을 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "TPMT 활성은 정상",
+     "why": "TPMT 결핍 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "타크로리무스 혈중 농도는 목표 범위 안",
+     "why": "CYP3A4 상호작용·칼시뉴린 억제제 독성 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아티닌은 1.3 mg/dL 로 지난달과 같고",
+     "why": "신기능 변화로 인한 약물 축적 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "체온 38.4℃",
+     "why": "호중구감소성 발열 — 즉시 치료해야 할 중증도",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "2년간 문제 없던 아자티오프린 복용자가 알로푸리놀을 시작하고 4주 뒤 범혈구감소가 생겼고 TPMT 는 정상이다. 알로푸리놀의 잔틴산화효소 억제로 6-MP 가 활성 대사물로 몰렸다.",
+   "switch": {
+    "choice": "E",
+    "condition": "알로푸리놀 없이 아자티오프린을 시작한 지 3주 만에 범혈구감소가 생기고 TPMT 활성이 매우 낮았다면 TPMT 결핍이 원인이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0448",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "부인과 — 비린내 나는 묽은 질 분비물과 단서세포",
+  "type": "부인과 — 비린내 나는 묽은 질 분비물과 단서세포",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-26",
+  "vignette": "28세 여자가 1주일 전부터 생긴 질 분비물로 병원에 왔다. 분비물에서 생선 비린내가 나고 성관계 뒤에 더 심해진다. 가려움이나 성교통은 없다. 한 명의 남성 파트너와 성관계를 하며 콘돔은 쓰지 않는다. 마지막 월경은 2주 전이고 소변 임신 검사는 음성이다. 질경 검사에서 질벽에 얇고 균일한 회백색 분비물이 묻어 있고, 질벽과 자궁경부에 발적이나 점상 출혈은 없다. 질 분비물 pH 는 5.0 이고, 10 % 수산화칼륨을 떨어뜨리면 비린내가 강해진다. 식염수 현미경 검사에서 가장자리가 세균으로 덮여 흐릿한 상피세포가 많고, 백혈구는 드물며 움직이는 원충은 보이지 않는다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "아목시실린 경구 투여",
+   "에스트로겐 질 크림",
+   "메트로니다졸 경구 투여",
+   "플루코나졸 경구 투여",
+   "세프트리악손 근육 주사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 비린내 나는 얇고 균일한 회백색 분비물, 질 pH 5.0, 수산화칼륨 아민 냄새 검사 양성, 단서세포 — Amsel 기준 4가지를 모두 갖춘 세균질증이다. 백혈구가 드물고 움직이는 원충이 없어 트리코모나스 가능성은 낮고, 증상이 있으므로 메트로니다졸(경구 500 mg 하루 2번 7일)로 치료한다.\n- 원리: <b>세균질증은 「감염」보다 「생태계 교체」다</b>: 정상 질에서는 젖산간균이 젖산과 과산화수소를 만들어 pH 를 4.5 이하로 유지한다. 젖산간균이 줄면 Gardnerella vaginalis 와 혐기균이 수백 배 늘어 그 자리를 차지한다.<br> <b>각 소견의 기전</b>: 혐기균이 만드는 아민(트리메틸아민 등)이 비린내를 내고, 알칼리(수산화칼륨·정액)를 만나면 휘발해 냄새가 강해진다 — 그래서 성관계 뒤 심해진다. 단서세포는 세균이 상피세포 표면에 달라붙어 가장자리를 흐리게 만든 것이다. 염증이 거의 없어 백혈구가 드물고 가려움도 적다.<br> <b>왜 메트로니다졸인가</b>: 혐기균을 선택적으로 죽이고 젖산간균은 비교적 살려 둔다. 남성 파트너 치료는 재발을 줄이지 못해 권하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세균질증 — 메트로니다졸(정답)</th><th>칸디다 질염 — 플루코나졸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>분비물</td><td><b>얇고 균일한 회백색, 비린내</b></td><td>희고 덩어리진(코티지치즈) 분비물, 냄새 없음</td></tr> <tr><td>증상</td><td>가려움 적음</td><td>심한 가려움·작열감, 외음부 발적</td></tr> <tr><td>질 pH</td><td>&gt; 4.5</td><td>4.0~4.5(정상)</td></tr> <tr><td>현미경</td><td>단서세포, 백혈구 드묾</td><td>KOH 에서 가성균사·출아 효모</td></tr> </tbody></table> pH 가 높으면 세균질증·트리코모나스, 정상이면 칸디다 — 다음으로 단서세포와 움직이는 원충을 본다.\n- 오답 이유:\n  - ① 아목시실린은 임신 중 클라미디아 치료의 대안으로 쓰일 수 있으나, 세균질증의 혐기균에는 표준 치료가 아니다.\n  - ② 에스트로겐 질 크림은 폐경 뒤 위축성 질염(얇고 창백한 질벽, 높은 pH, 백혈구·기저세포)에서 정답이 된다.\n  - ④ 플루코나졸은 가려움과 덩어리진 흰 분비물, 정상 pH, KOH 에서 가성균사가 보이는 칸디다 질염일 때 정답이 된다.\n  - ⑤ 세프트리악손은 점액농성 자궁경부염에서 임균이 확인되거나 의심될 때 정답이 되며, 이 환자의 자궁경부는 정상이다.\n- 함정: pH 가 높고 분비물이 있으니 트리코모나스로 보고 성 파트너까지 치료하려는 것 — 원충이 없고 단서세포가 있어 세균질증이며, 파트너 치료는 필요 없다.\n- 학습목표: 비린내 나는 묽은 회백색 분비물·질 pH > 4.5·아민 냄새·단서세포로 세균질증을 진단하고 메트로니다졸로 치료하며, 칸디다·트리코모나스와 구별한다\n- 근거·출처: Workowski KA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187 · Berek JS. Berek & Novak's Gynecology, 16th ed. Wolters Kluwer; 2020. Chapter: Genitourinary infections and sexually transmitted diseases",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "비린내 나는 얇고 균일한 회백색 분비물, 질 pH 5.0, 수산화칼륨 아민 냄새 검사 양성, 단서세포 — Amsel 기준 4가지를 모두 갖춘 세균질증이다. 백혈구가 드물고 움직이는 원충이 없어 트리코모나스 가능성은 낮고, 증상이 있으므로 메트로니다졸(경구 500 mg 하루 2번 7일)로 치료한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>세균질증은 「감염」보다 「생태계 교체」다</b>: 정상 질에서는 젖산간균이 젖산과 과산화수소를 만들어 pH 를 4.5 이하로 유지한다. 젖산간균이 줄면 Gardnerella vaginalis 와 혐기균이 수백 배 늘어 그 자리를 차지한다.<br> <b>각 소견의 기전</b>: 혐기균이 만드는 아민(트리메틸아민 등)이 비린내를 내고, 알칼리(수산화칼륨·정액)를 만나면 휘발해 냄새가 강해진다 — 그래서 성관계 뒤 심해진다. 단서세포는 세균이 상피세포 표면에 달라붙어 가장자리를 흐리게 만든 것이다. 염증이 거의 없어 백혈구가 드물고 가려움도 적다.<br> <b>왜 메트로니다졸인가</b>: 혐기균을 선택적으로 죽이고 젖산간균은 비교적 살려 둔다. 남성 파트너 치료는 재발을 줄이지 못해 권하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세균질증 — 메트로니다졸(정답)</th><th>칸디다 질염 — 플루코나졸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>분비물</td><td><b>얇고 균일한 회백색, 비린내</b></td><td>희고 덩어리진(코티지치즈) 분비물, 냄새 없음</td></tr> <tr><td>증상</td><td>가려움 적음</td><td>심한 가려움·작열감, 외음부 발적</td></tr> <tr><td>질 pH</td><td>&gt; 4.5</td><td>4.0~4.5(정상)</td></tr> <tr><td>현미경</td><td>단서세포, 백혈구 드묾</td><td>KOH 에서 가성균사·출아 효모</td></tr> </tbody></table> pH 가 높으면 세균질증·트리코모나스, 정상이면 칸디다 — 다음으로 단서세포와 움직이는 원충을 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아목시실린은 임신 중 클라미디아 치료의 대안으로 쓰일 수 있으나, 세균질증의 혐기균에는 표준 치료가 아니다.\n② 에스트로겐 질 크림은 폐경 뒤 위축성 질염(얇고 창백한 질벽, 높은 pH, 백혈구·기저세포)에서 정답이 된다.\n④ 플루코나졸은 가려움과 덩어리진 흰 분비물, 정상 pH, KOH 에서 가성균사가 보이는 칸디다 질염일 때 정답이 된다.\n⑤ 세프트리악손은 점액농성 자궁경부염에서 임균이 확인되거나 의심될 때 정답이 되며, 이 환자의 자궁경부는 정상이다."
+   },
+   {
+    "k": "함정",
+    "v": "pH 가 높고 분비물이 있으니 트리코모나스로 보고 성 파트너까지 치료하려는 것 — 원충이 없고 단서세포가 있어 세균질증이며, 파트너 치료는 필요 없다."
+   },
+   {
+    "k": "학습목표",
+    "v": "비린내 나는 묽은 회백색 분비물·질 pH > 4.5·아민 냄새·단서세포로 세균질증을 진단하고 메트로니다졸로 치료하며, 칸디다·트리코모나스와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187 · Berek JS. Berek & Novak's Gynecology, 16th ed. Wolters Kluwer; 2020. Chapter: Genitourinary infections and sexually transmitted diseases"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Amsel 기준 4가지(얇은 회백색 분비물·pH > 4.5·아민 냄새·단서세포)를 갖춘 세균질증은 메트로니다졸로 치료한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "질 분비물 pH 5.0 과 단서세포 — 칸디다는 pH 가 정상이고 가성균사가 보인다",
+   "steps": 2,
+   "chain": [
+    "비린내 + 얇은 회백색 분비물 + pH 5.0 + KOH 아민 냄새 + 단서세포 → 세균질증",
+    "증상 있는 세균질증 → 메트로니다졸(파트너 치료 불필요)"
+   ],
+   "key": [
+    {
+     "item": "생선 비린내",
+     "why": "혐기균의 아민",
+     "also": []
+    },
+    {
+     "item": "얇고 균일한 회백색 분비물",
+     "why": "Amsel 기준",
+     "also": []
+    },
+    {
+     "item": "질 분비물 pH 는 5.0",
+     "why": "젖산간균 감소 — 칸디다 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "가장자리가 세균으로 덮여 흐릿한 상피세포",
+     "why": "단서세포",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "움직이는 원충은 보이지 않는다",
+     "why": "트리코모나스 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "발적이나 점상 출혈은 없다",
+     "why": "트리코모나스의 딸기 모양 자궁경부와 자궁경부염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "소변 임신 검사는 음성",
+     "why": "임신 여부가 약 선택에 영향을 줄 수 있어 확인한 정보",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "비린내 나는 얇은 회백색 분비물, pH 5.0, 아민 냄새, 단서세포로 Amsel 기준을 모두 갖춘 세균질증이다. 메트로니다졸로 치료한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "분비물이 덩어리지고 가려움이 심하며 pH 가 4.2, KOH 에서 가성균사가 보였다면 플루코나졸이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0447",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "감염 — 고양이에게 손을 물린 성인의 예방 항생제",
+  "type": "감염 — 고양이에게 손을 물린 성인의 예방 항생제",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-26",
+  "vignette": "35세 여자가 4시간 전 기르던 고양이에게 오른손 등을 물려 병원에 왔다. 약물 알레르기는 없고 기저 질환도 없다. 파상풍 예방접종은 4년 전에 받았다. 체온 36.8℃이다. 오른손 등에 깊이를 알 수 없는 작은 천공상 2개가 있고, 주위 발적은 1 cm 이내이며, 손가락 움직임과 감각은 정상이다. 고양이는 실내에서만 길렀고 광견병 예방접종을 받았다. 상처를 생리식염수로 충분히 세척하였다.",
+  "question": "예방 항생제로 가장 적절한 것은?",
+  "options": [
+   "세팔렉신",
+   "클린다마이신",
+   "에리스로마이신",
+   "디클록사실린",
+   "아목시실린/클라불란산"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 고양이 이빨은 가늘고 날카로워 손에 깊은 천공상을 만들고, 구강의 Pasteurella multocida 와 혐기균·포도알균·연쇄알균이 함께 들어간다. 손의 고양이 교상은 감염 위험이 높아 예방 항생제 적응이며, 이 균들을 모두 덮는 아목시실린/클라불란산이 1차 선택이다.\n- 원리: <b>왜 고양이 교상은 개보다 위험한가</b>: 개 이빨은 뭉툭해 찢긴 상처를 만들어 세척이 쉽지만, 고양이 이빨은 바늘처럼 깊게 들어가 힘줄집·관절까지 균을 심고 입구는 바로 닫힌다. 감염률이 개 교상보다 몇 배 높고, 손이면 더 위험하다.<br> <b>원인균과 약의 짝</b>: Pasteurella multocida 는 고양이 구강의 대부분에 있고, 물린 뒤 24시간 안에 빠르게 진행하는 봉와직염을 만든다. 이 균은 페니실린 계열에 잘 듣지만 1세대 세팔로스포린·디클록사실린·클린다마이신·에리스로마이신에는 약하다. 클라불란산은 β-락타메이스를 만드는 혐기균·포도알균까지 덮게 한다.<br> <b>페니실린 알레르기일 때</b>: 독시사이클린 또는 TMP-SMX 에 혐기균을 덮는 메트로니다졸·클린다마이신을 더한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아목시실린/클라불란산(정답)</th><th>세팔렉신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>Pasteurella</td><td><b>잘 듣는다</b></td><td>약하다 — 실패 흔함</td></tr> <tr><td>구강 혐기균</td><td>클라불란산으로 덮는다</td><td>덮지 못한다</td></tr> <tr><td>잘 맞는 상황</td><td>개·고양이·사람 교상</td><td>교상이 아닌 단순 피부 봉와직염(연쇄알균·포도알균)</td></tr> </tbody></table> 「피부 감염 = 세팔렉신」의 공식은 동물 입속 균에서 깨진다.\n- 오답 이유:\n  - ① 세팔렉신은 교상이 아닌 단순 봉와직염(연쇄알균·감수성 포도알균)에서 정답이 되며, Pasteurella 와 구강 혐기균을 충분히 덮지 못한다.\n  - ② 클린다마이신은 혐기균·그람양성균은 덮지만 Pasteurella 에 약해, 페니실린 알레르기 환자에서 TMP-SMX 등과 병용할 때만 쓰인다.\n  - ③ 에리스로마이신은 Pasteurella 에 대한 활성이 낮아 교상 예방에는 맞지 않고, 백일해나 일부 비정형 폐렴에서 정답이 된다.\n  - ④ 디클록사실린은 메티실린 감수성 포도알균 피부 감염에 정답이 되며, Pasteurella 에는 약해 동물 교상에 단독으로 쓰지 않는다.\n- 함정: 상처가 작고 발적이 적으니 흔한 피부 감염약(세팔렉신)을 고르는 것 — 고양이 교상은 Pasteurella 를 먼저 생각한다.\n- 학습목표: 고양이 교상은 깊은 천공상으로 Pasteurella multocida 감염 위험이 높아 아목시실린/클라불란산으로 예방 항생제를 주고, 1세대 세팔로스포린의 한계를 안다\n- 근거·출처: Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. Clin Infect Dis 2014;59:e10-e52 · Ellis R, Ellis C. Dog and cat bites. Am Fam Physician 2014;90:239-243",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "고양이 이빨은 가늘고 날카로워 손에 깊은 천공상을 만들고, 구강의 Pasteurella multocida 와 혐기균·포도알균·연쇄알균이 함께 들어간다. 손의 고양이 교상은 감염 위험이 높아 예방 항생제 적응이며, 이 균들을 모두 덮는 아목시실린/클라불란산이 1차 선택이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 고양이 교상은 개보다 위험한가</b>: 개 이빨은 뭉툭해 찢긴 상처를 만들어 세척이 쉽지만, 고양이 이빨은 바늘처럼 깊게 들어가 힘줄집·관절까지 균을 심고 입구는 바로 닫힌다. 감염률이 개 교상보다 몇 배 높고, 손이면 더 위험하다.<br> <b>원인균과 약의 짝</b>: Pasteurella multocida 는 고양이 구강의 대부분에 있고, 물린 뒤 24시간 안에 빠르게 진행하는 봉와직염을 만든다. 이 균은 페니실린 계열에 잘 듣지만 1세대 세팔로스포린·디클록사실린·클린다마이신·에리스로마이신에는 약하다. 클라불란산은 β-락타메이스를 만드는 혐기균·포도알균까지 덮게 한다.<br> <b>페니실린 알레르기일 때</b>: 독시사이클린 또는 TMP-SMX 에 혐기균을 덮는 메트로니다졸·클린다마이신을 더한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아목시실린/클라불란산(정답)</th><th>세팔렉신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>Pasteurella</td><td><b>잘 듣는다</b></td><td>약하다 — 실패 흔함</td></tr> <tr><td>구강 혐기균</td><td>클라불란산으로 덮는다</td><td>덮지 못한다</td></tr> <tr><td>잘 맞는 상황</td><td>개·고양이·사람 교상</td><td>교상이 아닌 단순 피부 봉와직염(연쇄알균·포도알균)</td></tr> </tbody></table> 「피부 감염 = 세팔렉신」의 공식은 동물 입속 균에서 깨진다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 세팔렉신은 교상이 아닌 단순 봉와직염(연쇄알균·감수성 포도알균)에서 정답이 되며, Pasteurella 와 구강 혐기균을 충분히 덮지 못한다.\n② 클린다마이신은 혐기균·그람양성균은 덮지만 Pasteurella 에 약해, 페니실린 알레르기 환자에서 TMP-SMX 등과 병용할 때만 쓰인다.\n③ 에리스로마이신은 Pasteurella 에 대한 활성이 낮아 교상 예방에는 맞지 않고, 백일해나 일부 비정형 폐렴에서 정답이 된다.\n④ 디클록사실린은 메티실린 감수성 포도알균 피부 감염에 정답이 되며, Pasteurella 에는 약해 동물 교상에 단독으로 쓰지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "상처가 작고 발적이 적으니 흔한 피부 감염약(세팔렉신)을 고르는 것 — 고양이 교상은 Pasteurella 를 먼저 생각한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고양이 교상은 깊은 천공상으로 Pasteurella multocida 감염 위험이 높아 아목시실린/클라불란산으로 예방 항생제를 주고, 1세대 세팔로스포린의 한계를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. Clin Infect Dis 2014;59:e10-e52 · Ellis R, Ellis C. Dog and cat bites. Am Fam Physician 2014;90:239-243"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "손의 고양이 교상 천공상은 Pasteurella 와 혐기균을 함께 덮는 아목시실린/클라불란산으로 예방한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "원인 동물이 고양이 — 1세대 세팔로스포린이 약한 Pasteurella 가 주 원인균이다",
+   "steps": 2,
+   "chain": [
+    "손의 고양이 교상 + 깊은 천공상 → 감염 위험 높음, 예방 항생제 적응",
+    "Pasteurella + 구강 혐기균 → 아목시실린/클라불란산"
+   ],
+   "key": [
+    {
+     "item": "고양이에게 오른손 등을 물려",
+     "why": "고위험 교상 — 원인균 Pasteurella",
+     "also": []
+    },
+    {
+     "item": "깊이를 알 수 없는 작은 천공상 2개",
+     "why": "세척이 어려운 깊은 상처 — 예방 적응",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "광견병 예방접종을 받았다",
+     "why": "광견병 노출 후 예방의 필요성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "약물 알레르기는 없고",
+     "why": "페니실린 계열을 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "파상풍 예방접종은 4년 전에 받았다",
+     "why": "5년 이내라 추가 접종이 필요 없다 — 항생제 선택과 무관",
+     "also": []
+    }
+   ],
+   "summary": "손등의 고양이 교상 천공상은 감염 위험이 높아 예방 항생제를 준다. Pasteurella 와 구강 혐기균을 함께 덮는 아목시실린/클라불란산이 1차 선택이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 상처인데 아나필락시스를 일으킨 페니실린 알레르기가 있다면 TMP-SMX 에 클린다마이신을 더하는 조합을 고른다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0446",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·병리·소아·응급·순환기·감염·부인과·약리·류마티스·신장·내분비·신경)",
+  "subtopic": "순환기 — 찢어지는 흉통과 상행대동맥 내막편",
+  "type": "순환기 — 찢어지는 흉통과 상행대동맥 내막편",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-26",
+  "vignette": "58세 남자가 1시간 전 갑자기 시작되어 등으로 뻗치는 찢어지는 듯한 흉통으로 응급실에 왔다. 15년 동안 고혈압이 있었으나 약을 불규칙하게 먹었다. 오른팔 혈압 176/92 mmHg, 왼팔 혈압 148/84 mmHg, 맥박 102회/분이다. 흉골 왼쪽 경계에서 이완기 잡음이 들린다. 심전도는 좌심실 비대 외에 ST 분절 변화가 없고, 고감도 트로포닌 I 는 정상 범위이다. 혈청 크레아티닌은 1.0 mg/dL 이다. 흉부 조영증강 CT 에서 대동맥 뿌리 바로 위의 상행대동맥부터 대동맥궁을 지나 하행대동맥까지 내막편이 이어지고, 심장막 삼출은 소량이다. 정맥 에스몰롤 투여를 시작하였다.",
+  "question": "다음으로 가장 적절한 처치는?",
+  "options": [
+   "응급 상행대동맥 치환술",
+   "혈압 조절과 집중 감시만 하는 내과 치료",
+   "흉부 대동맥 스텐트그라프트 삽입",
+   "응급 관상동맥 조영술",
+   "정맥 헤파린 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 찢어지는 흉통, 양팔 혈압 차이, 새로 생긴 대동맥판 역류 잡음과 CT 의 상행대동맥 내막편은 Stanford A형 급성 대동맥 박리다. A형은 심장막 압전·대동맥판 역류·관상동맥 폐쇄로 시간당 사망률이 오르므로, β차단제로 심박수·혈압을 낮추면서 곧바로 응급 수술(상행대동맥 치환)을 한다.\n- 원리: <b>왜 위치가 치료를 가르나</b>: 박리가 상행대동맥에 있으면 거짓 내강이 대동맥 뿌리로 거슬러 올라가 ① 심장막으로 터져 압전, ② 대동맥판 고리를 벌려 급성 역류, ③ 관상동맥 입구를 막아 심근경색을 일으킨다. 치료하지 않으면 첫 48시간 동안 시간당 약 1~2 %씩 사망률이 오른다.<br> <b>수술이 하는 일</b>: 터진 입구(내막 열공)가 있는 상행대동맥을 인조혈관으로 바꿔 거짓 내강으로 들어가는 흐름을 막고, 필요하면 대동맥판을 다시 붙이거나 바꾼다.<br> <b>β차단제를 먼저 쓰는 이유</b>: 대동맥 벽에 걸리는 힘은 혈압뿐 아니라 압력이 오르는 속도(dP/dt)에 비례한다. 심박수 60회/분 이하, 수축기 혈압 100~120 mmHg 로 낮추면 박리 진행을 늦춘다 — 그러나 A형에서는 이것이 수술까지의 다리일 뿐이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">Stanford A형 — 응급 수술(정답)</th><th>Stanford B형 — 내과 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>침범</td><td><b>상행대동맥 포함</b>(궁·하행으로 이어져도 A형)</td><td>왼쪽 빗장밑동맥 이후 하행대동맥만</td></tr> <tr><td>합병증</td><td>압전·대동맥판 역류·관상동맥 폐쇄</td><td>장기 허혈·파열(합병 시)</td></tr> <tr><td>1차 치료</td><td>β차단제 + 응급 상행대동맥 치환</td><td>β차단제·혈관확장제, 합병 시 스텐트그라프트</td></tr> </tbody></table> 내막편이 어디서 시작하든 상행대동맥에 걸리면 A형이고, 수술이 기본이다.\n- 오답 이유:\n  - ② 내과 치료만 하는 것은 합병증 없는 Stanford B형(하행대동맥만 침범)에서 정답이 되며, 상행대동맥이 침범된 이 환자에서는 사망률이 높다.\n  - ③ 흉부 대동맥 스텐트그라프트는 장기 허혈·파열 위험이 있는 합병 B형 박리에서 정답이 되며, 상행대동맥에는 표준 치료가 아니다.\n  - ④ 응급 관상동맥 조영술은 ST 분절 상승 심근경색에서 정답이 되며, 박리 환자에게 하면 수술을 늦추고 거짓 내강을 건드릴 수 있다.\n  - ⑤ 헤파린은 급성 관상동맥증후군이나 폐색전에서 정답이 되며, 대동맥 박리에서는 출혈·파열을 늘려 금기다.\n- 함정: 혈압이 높고 β차단제를 시작했으니 내과 치료로 지켜보는 것 — 상행대동맥 내막편이 있으면 β차단제는 수술까지의 다리일 뿐이다.\n- 학습목표: 상행대동맥을 침범한 급성 대동맥 박리(Stanford A형)는 혈압·심박수를 조절하면서 응급 수술로 치료하고, 하행대동맥만 침범한 B형의 내과 치료와 구별한다\n- 근거·출처: Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 280: Diseases of the aorta",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "찢어지는 흉통, 양팔 혈압 차이, 새로 생긴 대동맥판 역류 잡음과 CT 의 상행대동맥 내막편은 Stanford A형 급성 대동맥 박리다. A형은 심장막 압전·대동맥판 역류·관상동맥 폐쇄로 시간당 사망률이 오르므로, β차단제로 심박수·혈압을 낮추면서 곧바로 응급 수술(상행대동맥 치환)을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 위치가 치료를 가르나</b>: 박리가 상행대동맥에 있으면 거짓 내강이 대동맥 뿌리로 거슬러 올라가 ① 심장막으로 터져 압전, ② 대동맥판 고리를 벌려 급성 역류, ③ 관상동맥 입구를 막아 심근경색을 일으킨다. 치료하지 않으면 첫 48시간 동안 시간당 약 1~2 %씩 사망률이 오른다.<br> <b>수술이 하는 일</b>: 터진 입구(내막 열공)가 있는 상행대동맥을 인조혈관으로 바꿔 거짓 내강으로 들어가는 흐름을 막고, 필요하면 대동맥판을 다시 붙이거나 바꾼다.<br> <b>β차단제를 먼저 쓰는 이유</b>: 대동맥 벽에 걸리는 힘은 혈압뿐 아니라 압력이 오르는 속도(dP/dt)에 비례한다. 심박수 60회/분 이하, 수축기 혈압 100~120 mmHg 로 낮추면 박리 진행을 늦춘다 — 그러나 A형에서는 이것이 수술까지의 다리일 뿐이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">Stanford A형 — 응급 수술(정답)</th><th>Stanford B형 — 내과 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>침범</td><td><b>상행대동맥 포함</b>(궁·하행으로 이어져도 A형)</td><td>왼쪽 빗장밑동맥 이후 하행대동맥만</td></tr> <tr><td>합병증</td><td>압전·대동맥판 역류·관상동맥 폐쇄</td><td>장기 허혈·파열(합병 시)</td></tr> <tr><td>1차 치료</td><td>β차단제 + 응급 상행대동맥 치환</td><td>β차단제·혈관확장제, 합병 시 스텐트그라프트</td></tr> </tbody></table> 내막편이 어디서 시작하든 상행대동맥에 걸리면 A형이고, 수술이 기본이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 내과 치료만 하는 것은 합병증 없는 Stanford B형(하행대동맥만 침범)에서 정답이 되며, 상행대동맥이 침범된 이 환자에서는 사망률이 높다.\n③ 흉부 대동맥 스텐트그라프트는 장기 허혈·파열 위험이 있는 합병 B형 박리에서 정답이 되며, 상행대동맥에는 표준 치료가 아니다.\n④ 응급 관상동맥 조영술은 ST 분절 상승 심근경색에서 정답이 되며, 박리 환자에게 하면 수술을 늦추고 거짓 내강을 건드릴 수 있다.\n⑤ 헤파린은 급성 관상동맥증후군이나 폐색전에서 정답이 되며, 대동맥 박리에서는 출혈·파열을 늘려 금기다."
+   },
+   {
+    "k": "함정",
+    "v": "혈압이 높고 β차단제를 시작했으니 내과 치료로 지켜보는 것 — 상행대동맥 내막편이 있으면 β차단제는 수술까지의 다리일 뿐이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "상행대동맥을 침범한 급성 대동맥 박리(Stanford A형)는 혈압·심박수를 조절하면서 응급 수술로 치료하고, 하행대동맥만 침범한 B형의 내과 치료와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 280: Diseases of the aorta"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "상행대동맥에서 시작한 내막편은 Stanford A형 박리이므로 β차단제와 함께 응급 상행대동맥 치환술을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "내막편이 대동맥 뿌리 바로 위의 상행대동맥에 있다 — B형이 아니다",
+   "steps": 3,
+   "chain": [
+    "찢어지는 흉통 + 양팔 혈압 차이 + 이완기 잡음 → 대동맥 박리",
+    "CT 에서 상행대동맥부터 내막편 → Stanford A형",
+    "A형 → 혈압·심박수 조절과 함께 응급 수술"
+   ],
+   "key": [
+    {
+     "item": "등으로 뻗치는 찢어지는 듯한 흉통",
+     "why": "박리의 전형적 통증",
+     "also": []
+    },
+    {
+     "item": "왼팔 혈압 148/84 mmHg",
+     "why": "오른팔과 28 mmHg 차이 — 궁 분지 침범",
+     "also": []
+    },
+    {
+     "item": "흉골 왼쪽 경계에서 이완기 잡음",
+     "why": "대동맥판 역류 — 뿌리 쪽 침범",
+     "also": []
+    },
+    {
+     "item": "대동맥 뿌리 바로 위의 상행대동맥부터",
+     "why": "Stanford A형의 정의",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "고감도 트로포닌 I 는 정상 범위",
+     "why": "급성 심근경색 가능성을 낮춘다 — 관상동맥 조영술 대상이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "심장막 삼출은 소량",
+     "why": "압전 위험 — 수술을 서둘러야 할 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 크레아티닌은 1.0 mg/dL",
+     "why": "조영 CT 를 할 수 있었던 배경 — 치료 선택에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "찢어지는 흉통·양팔 혈압 차이·대동맥판 역류 잡음과 상행대동맥 내막편은 Stanford A형 박리다. β차단제와 함께 응급 상행대동맥 치환술을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "내막편이 왼쪽 빗장밑동맥 이후의 하행대동맥에만 있고 장기 허혈이 없다면 혈압 조절 중심의 내과 치료가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0433",
   "exam": "imaging",
   "style": "usmle_style",
