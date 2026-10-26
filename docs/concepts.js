@@ -20149,6 +20149,823 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.endo.thyroid-follicular-cell.tsh-target": {
+  "id": "cn.endo.thyroid-follicular-cell.tsh-target",
+  "title": "갑상샘 여포세포 — 염색 세포를 직접 움직이는 것은 TSH",
+  "objective": "갑상샘 조직 사진에서 염색된 세포를 위치로 여포세포·C 세포로 가르고, 그 세포의 호르몬 생산을 직접 자극하는 신호(TSH·칼슘)를 축의 윗단계 호르몬과 구분해 연결한다",
+  "objectiveKind": "기전",
+  "condition": "정상 갑상샘 여포세포·C 세포와 시상하부–뇌하수체–갑상샘 축",
+  "topic": "Endocrinology",
+  "seeAlso": [
+   "Pathology",
+   "Physiology"
+  ],
+  "version": 2,
+  "updated": "2026-10-26",
+  "reviewStatus": "unreviewed",
+  "hash": "d9d6822ad4ca4af9",
+  "summary": [
+   "결론: 콜로이드 여포를 고리처럼 둘러싼 양성 세포 = 여포세포 → 호르몬 생산의 직접 자극 = 뇌하수체 전엽 TSH.",
+   "시험 단서: 갑상샘 IHC(TPO·Tg)에서 여포 테두리가 갈색 + 「염색 세포를 가장 직접 자극하는 것은?」(TSH, follicular cell).",
+   "왜: TSH 수용체는 여포세포 기저측막의 Gs 결합 수용체다 — TRH 는 그 한 단계 위, 뇌하수체 갑상샘자극세포에 작용한다.",
+   "여포 사이에 흩어진 C 세포(칼시토닌)라면 직접 자극은 혈청 칼슘 상승이다. ACTH 는 부신피질의 영양호르몬이다.",
+   "TSH 반감기 약 50분 — 한 번 측정으로 충분하지만, 시상하부·뇌하수체 병에서는 TSH 단독으로 기능을 판단하지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 위치가 세포를, 세포가 자극을 정한다",
+    "deep": false,
+    "html": "<ul>\n<li>갑상샘에는 내분비 세포가 둘이다. 콜로이드를 둘러싼 <strong>여포세포(follicular cell)</strong> 는 T4·T3 를 만들고, 여포 사이에 흩어진 <strong>C 세포(parafollicular cell)</strong> 는 칼시토닌을 만든다 <sup>[1 382장 p.2926]</sup>.</li>\n<li>TPO 는 여포세포 정단막의 효소라 <sup>[1 382장 p.2927]</sup> 염색이 여포마다 갈색 고리를 그린다 — 그 세포의 수용체는 기저측막의 TSH 수용체(TSH-R)다 <sup>[1 382장 p.2926]</sup>.</li>\n<li>「가장 직접」은 그 세포에 수용체가 있는 호르몬이다. TRH 는 TSH 를 거쳐서만 여포세포에 닿는다 <sup>[1 382장 p.2927]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — TRH 에서 TSH, TSH 에서 여포세포로",
+    "deep": false,
+    "html": "<p>시상하부 TRH 가 뇌하수체 전엽 갑상샘자극세포의 TSH 생산을 자극하고, TSH 가 갑상샘호르몬 합성·분비를 자극한다. 갑상샘호르몬은 TRβ2 를 통해 TRH·TSH 를 누르며, 축의 「설정점」은 TSH 가 정한다 <sup>[1 382장 p.2927]</sup>.</p>\n<ul>\n<li><strong>여포세포 안</strong>: TSH-R 은 7회 막관통 G 단백 결합 수용체로 Gsα → 아데닐산고리화효소 → cAMP 를 올리고 포스포리파제 C 도 활성화한다 <sup>[1 382장 p.2928]</sup>. TSH 가 결합하면 내강의 Tg 가 다시 흡수되고 세포 안에서 분해되어 호르몬이 혈류로 나간다 <sup>[1 382장 p.2926]</sup>.</li>\n<li><strong>수용체 변이가 증명한다</strong>: 기능소실 변이는 갑상샘 형성저하·선천 갑상샘저하증, 기능획득 변이는 자율 기능 결절·가족성 갑상샘항진증을 만든다. 그레이브스병의 갑상샘자극 항체(TSI)도 같은 수용체를 자극한다 <sup>[1 382장 p.2928]</sup>.</li>\n<li><strong>다른 조절자</strong>: IGF-1·EGF·TGF-β 같은 국소 성장인자도 합성에 영향을 주지만 주된 호르몬 조절자는 TSH 다 <sup>[1 382장 p.2928]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 여포 테두리 vs 여포 사이",
+    "deep": false,
+    "html": "<ul>\n<li><strong>여포세포 표지(TPO·Tg)</strong>: 여포를 한 층으로 둘러싼 입방상피가 양성, 여포 사이 간질은 음성. 문항 사진도 이 양상이다(HPA 병리의사 주석: 샘세포 강양성) <sup>[3†]</sup>.</li>\n<li><strong>C 세포 표지(칼시토닌)</strong>: 여포 사이에 하나씩·작은 무리로 흩어진 세포만 양성. C 세포는 샘 위 1/3 과 아래 2/3 경계에 가장 많다 <sup>[1 382장 p.2926]</sup>.</li>\n<li><strong>배경 수치의 한계</strong>: 정상 TSH·칼슘은 판단을 바꾸지 않는다 — 질문은 염색된 세포를 「무엇이」 움직이는지다. 정상 TSH 는 일차 갑상샘 이상을 대개 배제하지만, 시상하부·뇌하수체 병에서는 TSH 가 낮은 T4 에 부적절하게 낮음~정상이어서 TSH 단독으로 기능을 판단하지 않는다 <sup>[1 382장 p.2931]</sup> <sup>[1 382장 p.2932]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「위치 → 세포 → 수용체 → 질문의 단계」 순서로 읽는다: 여포 테두리 = 여포세포 = TSH, 여포 사이 = C 세포 = 칼슘.</li>\n<li>TSH 는 반감기가 약 50분이라 한 번 측정으로 혈중 농도를 평가할 수 있다 <sup>[1 382장 p.2927]</sup>. 바이오틴은 면역측정에서 TSH 를 거짓으로 낮추므로 검사 전 최소 2일 끊는다 <sup>[1 382장 p.2931]</sup>.</li>\n<li>임신 초기 hCG 는 TSH-R 에 약하게 결합해 TSH 를 낮춘다 — 여포세포를 자극할 수 있는 다른 리간드의 예다 <sup>[1 382장 p.2929]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 382장 p.2926~2932)</li>\n</ul>"
+   },
+   {
+    "title": "왜 한 장기에 두 축인가",
+    "deep": true,
+    "html": "<p>여포세포와 C 세포는 기원이 다르다. 여포세포는 TTF-1·PAX-8 같은 전사인자로 Tg·TPO·NIS·TSH-R 을 함께 켜는 갑상샘 고유 세포이고 <sup>[1 382장 p.2926]</sup>, C 세포는 새후체에서 온 신경능선 세포다 <sup>[1 382장 p.2926]</sup>. 그래서 여포세포는 뇌하수체 축(TSH)의 지배를, C 세포는 혈중 칼슘이라는 다른 신호를 따른다. 사진에서 어느 구획이 양성인지가 곧 어느 축의 질문인지를 알려 준다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "갑상샘의 두 내분비 세포 — 어디에 있고, 무엇이 직접 움직이나",
+    "columns": [
+     "세포",
+     "위치(사진에서)",
+     "표지",
+     "직접 자극",
+     "산물"
+    ],
+    "rows": [
+     [
+      "여포세포(follicular cell)",
+      "콜로이드 여포를 한 층으로 둘러쌈 — 갈색 고리",
+      "TPO(정단막)·Tg <sup>[1 382장 p.2927]</sup>",
+      "TSH — 기저측막 TSH-R(Gs → cAMP) <sup>[1 382장 p.2928]</sup>",
+      "T4·T3 <sup>[1 382장 p.2926]</sup>"
+     ],
+     [
+      "C 세포(parafollicular cell)",
+      "여포 사이에 하나씩·작은 무리로 흩어짐 <sup>[1 382장 p.2926]</sup>",
+      "칼시토닌",
+      "혈청 칼슘 상승(가스트린도) <sup>[2†]</sup>",
+      "칼시토닌(사람에서 역할 작음) <sup>[1 382장 p.2926]</sup>"
+     ]
+    ],
+    "note": "사진 문항 순서: ① 양성 세포가 여포 테두리인지 여포 사이인지 본다 ② 그 세포의 수용체(직접 자극)를 붙인다 ③ 질문이 「가장 직접」인지 「축의 맨 위」인지 확인한다."
+   },
+   {
+    "title": "축의 단계 — 누가 누구에게 작용하나",
+    "columns": [
+     "호르몬",
+     "만드는 곳",
+     "작용하는 곳"
+    ],
+    "rows": [
+     [
+      "TRH",
+      "시상하부",
+      "뇌하수체 전엽 갑상샘자극세포 → TSH <sup>[1 382장 p.2927]</sup>"
+     ],
+     [
+      "TSH",
+      "뇌하수체 전엽 갑상샘자극세포 <sup>[1 382장 p.2926]</sup>",
+      "갑상샘 여포세포 TSH-R <sup>[1 382장 p.2928]</sup>"
+     ],
+     [
+      "T4·T3",
+      "여포세포",
+      "TRβ2 로 TRH·TSH 음성 되먹임 <sup>[1 382장 p.2927]</sup>"
+     ]
+    ],
+    "note": "「직접」을 묻는 문항에서 정답은 염색된 세포에 수용체가 있는 호르몬이다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "TRH vs TSH — 「축의 맨 위가 가장 근본」",
+    "point": "TRH 는 뇌하수체 갑상샘자극세포의 TSH 생산을 자극하고, 여포세포를 움직이는 것은 TSH 다 <sup>[1 382장 p.2927]</sup>. 여포세포에 있는 수용체는 TSH-R 이다 <sup>[1 382장 p.2928]</sup> — 「가장 직접」은 한 단계 위가 아니라 그 세포의 수용체로 정한다.",
+    "exception": "질문이 염색 세포가 아니라 뇌하수체 갑상샘자극세포를 무엇이 자극하는지 묻는다면 TRH 가 답이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "여포세포 vs C 세포 — 칼슘 상승",
+    "point": "칼슘 상승에 반응해 칼시토닌을 내는 것은 여포 사이에 흩어진 C 세포다 <sup>[1 382장 p.2926]</sup> <sup>[2†]</sup>. 여포 테두리를 고리처럼 따라가는 염색(TPO)은 여포세포이므로 칼슘은 답이 아니다.",
+    "exception": "칼시토닌 염색처럼 여포 사이의 흩어진 세포만 양성이면 혈청 칼슘 상승이 답이 된다.",
+    "cites": ""
+   },
+   {
+    "contrast": "가스트린 — C 세포 쪽 자극",
+    "point": "가스트린은 칼시토닌 분비를 늘리는 C 세포 쪽 자극이다 <sup>[2†]</sup>. 여포세포의 갑상샘호르몬 합성과는 연결되지 않는다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "ACTH — 다른 샘의 영양호르몬",
+    "point": "ACTH 는 뇌하수체 전엽 호르몬이지만 부신피질을 표적으로 한다 <sup>[2†]</sup>. 같은 전엽 호르몬이라는 것만으로 표적이 같지 않다 — 갑상샘 여포세포의 영양호르몬은 TSH 다 <sup>[1 382장 p.2928]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "TPO·Tg·NIS 는 모두 여포세포 단백이다 — 어느 표지든 여포 테두리(또는 콜로이드)가 양성이면 여포세포 쪽이다. 단백별 염색 양상은 「갑상샘 IHC — 콜로이드를 채우면 타이로글로불린」 에서 다룬다.",
+   "TSH-R 은 7회 막관통 GPCR 로 Gsα → 아데닐산고리화효소 → cAMP 를 올리고, 포스포리파제 C 도 활성화한다 <sup>[1 382장 p.2928]</sup>.",
+   "TRH 는 TSH 의 주된 양성 조절자이고, 갑상샘호르몬은 TRβ2 로 TRH·TSH 를 누르는 지배적 조절자다 <sup>[1 382장 p.2927]</sup>.",
+   "IGF-1·EGF·TGF-β 등 국소 성장인자도 합성에 영향을 주지만 TSH 가 주된 호르몬 조절자다 <sup>[1 382장 p.2928]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "tsh-secondary-limit",
+    "name": "TSH 로 갑상샘 기능을 읽을 때의 한계",
+    "kind": "검사 해석",
+    "population": "갑상샘 기능을 평가하는 성인",
+    "statement": "정상 TSH 는 드문 예외를 빼면 일차 갑상샘 기능 이상을 배제한다. 그러나 시상하부·뇌하수체 병으로 인한 이차 갑상샘저하증에서는 TSH 가 낮음~정상 상단으로 다양해 낮은 T4 에 「부적절」하므로, 이런 환자에서는 TSH 를 단독 검사로 쓰지 않는다 [[harrison-21: 382장 p.2931]] [[harrison-21: 382장 p.2932]]",
+    "exceptions": "바이오틴 복용은 면역측정에서 TSH 를 거짓으로 낮춘다 — 검사 전 최소 2일 끊는다 [[harrison-21: 382장 p.2931]]",
+    "source": "harrison-21",
+    "locator": "382장 p.2931–2932 Measurement of thyroid hormones",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 382: Thyroid Gland Physiology and Testing",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 382장 p.2926–2932",
+    "checked": "드라이브 382장 문서 대조 — p.2926: 신경능선(새후체) 유래 C 세포가 칼시토닌을 만들고 샘 전체에 흩어져 있음, 사람 칼슘 항상성에서 역할 작음·수질암과 관련; 여포세포가 Tg 가 많은 콜로이드를 둘러싸고 기저측막은 혈류·정단막은 내강; TSH 가 기저측막 수용체에 결합해 Tg 재흡수·단백분해 → 호르몬 분비; TSH 는 뇌하수체 전엽 갑상샘자극세포가 분비, TRH 가 TSH 의 당 수식을 조절; 「TRH 가 뇌하수체 TSH 생산을 자극하고 TSH 가 갑상샘호르몬 합성·분비를 자극」. p.2927: 정단막에서 TPO·DUOX 로 유기화·짝지음, 갑상샘호르몬이 TRβ2 로 TRH·TSH 를 음성 되먹임, TRH 가 TSH 의 주된 양성 조절자, TSH 반감기 50분·한 번 측정으로 충분. p.2928: TSH-R 은 7회 막관통 GPCR, Gsα → 아데닐산고리화효소 → cAMP, 포스포리파제 C 도 활성; 기능소실 변이 = 형성저하·선천 저하증, 기능획득 변이 = 자율 기능 결절; TSH 가 성장·기능의 주된 호르몬 조절자. p.2931: 정상 TSH 는 드문 예외 외 일차 이상 배제, 바이오틴 간섭. p.2932: 이차 갑상샘저하증에서 TSH 가 낮음~정상 상단으로 부적절 → TSH 단독 사용 금지, TRAb 는 TSH-R 자극 항체",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-10-26",
+    "url": ""
+   },
+   {
+    "id": "guyton-14",
+    "org": "Elsevier",
+    "title": "Guyton and Hall Textbook of Medical Physiology, 14th ed. — Thyroid Metabolic Hormones",
+    "kind": "textbook",
+    "citation": "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology, 14e",
+    "checked": "서지만(문항 해설의 근거 목록에서 옮김, 원문 미대조 — 검토 항목). 칼시토닌 분비의 칼슘·가스트린 자극, ACTH 의 부신피질 작용 서술에만 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-10-26",
+    "url": ""
+   },
+   {
+    "id": "hpa-tpo",
+    "org": "Human Protein Atlas",
+    "title": "TPO — tissue expression, Thyroid gland",
+    "kind": "other",
+    "citation": "",
+    "checked": "문항 영상의 출처 페이지. 풀 기록의 병리의사 주석(Glandular cells: high)만 확인, 페이지는 이 컨테이너에서 열지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-10-26",
+    "url": "https://www.proteinatlas.org/ENSG00000115705-TPO/tissue/Thyroid+gland"
+   }
+  ],
+  "checks": [
+   {
+    "q": "갑상샘 TPO 면역염색에서 콜로이드 여포를 둘러싼 한 층의 세포가 갈색이다. 이 세포의 호르몬 생산을 가장 직접 자극하는 것은?",
+    "a": "TSH — 염색 세포는 여포세포이고, 기저측막 TSH-R(Gs-cAMP)에 TSH 가 결합한다."
+   },
+   {
+    "q": "TRH 가 「가장 직접」의 답이 아닌 이유는?",
+    "a": "TRH 는 뇌하수체 갑상샘자극세포에 작용해 TSH 를 내게 하는 한 단계 위 호르몬이다."
+   },
+   {
+    "q": "여포 사이에 흩어진 세포만 양성인 사진에서 그 세포의 직접 자극은?",
+    "a": "혈청 칼슘 상승 — C 세포가 칼시토닌을 낸다."
+   },
+   {
+    "q": "TSH-R 의 기능획득 체세포 변이가 여포세포에 생기면?",
+    "a": "그 세포가 클론 증식해 자율 기능 결절이 된다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.endo.thyroid-follicular-cell.tsh-target#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 양성 세포가 여포 사이에 있다",
+    "stem": "A 58-year-old woman undergoes right thyroid lobectomy for a 2-cm follicular nodule. Serum thyroid-stimulating hormone and calcium concentrations are within normal limits. A section of the uninvolved thyroid is stained by immunohistochemistry for a peptide hormone. The follicular epithelium lining the colloid-filled follicles is unstained; positive cells lie singly and in small clusters in the interstitium between follicles. Secretion by the stained cells is most directly stimulated by which of the following?",
+    "options": [
+     "Thyroid-stimulating hormone from the anterior pituitary",
+     "A rise in serum ionized calcium concentration",
+     "Thyrotropin-releasing hormone acting directly on the gland",
+     "Parathyroid hormone acting on bone",
+     "Adrenocorticotropic hormone from the anterior pituitary"
+    ],
+    "answer": 2,
+    "explanation": "Cells scattered between the follicles, with the follicular epithelium negative, are parafollicular C cells, which make calcitonin [[harrison-21: 382장 p.2926]]; their secretion rises with serum calcium [[?guyton-14]]. In the original item the stain outlined each follicle (follicular cells, thyroid peroxidase), so TSH acting on the follicular-cell TSH receptor was the answer [[harrison-21: 382장 p.2928]] — moving the positive cells from the follicle rim to the interstitium is the single change that switches the answer. TRH acts on pituitary thyrotropes, and ACTH targets the adrenal cortex.",
+    "of": "imaging-2026-0341",
+    "changed": "양성 세포를 「콜로이드 여포를 고리처럼 둘러싼 세포(TPO)」에서 「여포 사이 간질에 하나씩·작은 무리로 흩어진 세포(칼시토닌)」로 바꿈 → 직접 자극이 TSH 에서 혈청 칼슘 상승으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.endo.thyroid-follicular-cell.tsh-target#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 다른 여포세포 표지",
+    "stem": "During parathyroidectomy for a parathyroid adenoma, a small wedge of adjacent normal thyroid is removed from a 45-year-old woman. Immunohistochemistry for thyroglobulin shows strong staining of the single layer of cuboidal cells that line each colloid-filled follicle, with weaker staining of the colloid; cells in the interstitium between follicles are negative. Binding of which of the following to a receptor on the basolateral membrane of the stained cells most directly increases their hormone synthesis?",
+    "options": [
+     "Thyrotropin-releasing hormone",
+     "Calcitonin",
+     "Thyroid-stimulating hormone",
+     "Parathyroid hormone",
+     "Somatostatin"
+    ],
+    "answer": 3,
+    "explanation": "The stained cells line the colloid follicles, so they are follicular cells whatever the marker (thyroglobulin or thyroid peroxidase) [[harrison-21: 382장 p.2926]]. TSH binds its Gs-coupled receptor on their basolateral membrane, raising cAMP and driving thyroglobulin reabsorption and hormone release [[harrison-21: 382장 p.2926]] [[harrison-21: 382장 p.2928]]. TRH acts one step higher on pituitary thyrotropes [[harrison-21: 382장 p.2927]]; somatostatin suppresses TSH secretion rather than stimulating the gland [[harrison-21: 382장 p.2927]]; calcitonin is the product of C cells, and PTH acts on bone and kidney.",
+    "of": "imaging-2026-0341",
+    "changed": "나이·성별·수술 이유(우연 발견 결절 → 갑상샘 주변 부갑상샘 선종 수술 중 생검)·염색 대상(TPO → 타이로글로불린)·물음 표현을 바꾸고 「여포를 둘러싼 세포가 양성」은 그대로 → 답은 여전히 TSH",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/hpa-tpo_21449_b_2_5.jpg",
+    "kind": "histology",
+    "at": "가르는 소견 — 여포 테두리 vs 여포 사이",
+    "shows": "갑상샘 TPO 면역염색 — 여포를 둘러싼 샘세포(여포세포)가 갈색",
+    "look": [
+     "콜로이드 여포마다 테두리를 따라가는 갈색 고리",
+     "여포 사이 간질 세포는 파란색(음성)"
+    ],
+    "label": "Thyroid gland, TPO 면역조직화학 — 병리의사 주석(항체·조직 요약) Glandular cells: high",
+    "basis": "dataset_expert",
+    "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
+    "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
+    "doiUrl": "https://doi.org/10.1126/science.1260419",
+    "citedBy": 14435,
+    "credit": "Human Protein Atlas, TPO / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/7987/21449_B_2_5.jpg",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://www.proteinatlas.org/ENSG00000115705-TPO/tissue/Thyroid+gland",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "갑상샘 조직 사진 — 염색 세포와 직접 자극",
+  "geo": {
+   "title": "갑상샘 조직 사진 — 염색 세포와 직접 자극",
+   "w": 567.0,
+   "h": 595.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "갑상샘 조직 사진에서",
+      "양성(갈색) 세포를 본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "loc",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "양성 세포는 어디에 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "콜로이드 여포 윤곽을 먼저",
+      "찾아 위치를 다시 본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 212.0
+    },
+    {
+     "id": "foll",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "여포 테두리 고리 → 여포세포"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 339.0
+    },
+    {
+     "id": "ccell",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "여포 사이 흩어진 세포 → C",
+      "세포"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 339.0
+    },
+    {
+     "id": "ask",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "질문이 묻는 단계는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 425.0
+    },
+    {
+     "id": "tsh",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "직접 자극 = TSH(TSH-R →",
+      "Gs → cAMP)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 515.0
+    },
+    {
+     "id": "trh",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "윗단계 = TRH(뇌하수체에",
+      "작용)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 515.0
+    },
+    {
+     "id": "ca",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "직접 자극 = 혈청 칼슘 상승",
+      "→ 칼시토닌"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 425.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "loc",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "loc",
+     "to": "foll",
+     "points": [
+      [
+       291.0,
+       149.0
+      ],
+      [
+       291.0,
+       198.0
+      ],
+      [
+       226.0,
+       198.0
+      ],
+      [
+       226.0,
+       325.0
+      ],
+      [
+       194.3,
+       325.0
+      ],
+      [
+       194.3,
+       339.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "여포 테두리"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 257.6,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "loc",
+     "to": "ccell",
+     "points": [
+      [
+       389.0,
+       149.0
+      ],
+      [
+       389.0,
+       198.0
+      ],
+      [
+       454.0,
+       198.0
+      ],
+      [
+       454.0,
+       325.0
+      ],
+      [
+       485.7,
+       325.0
+      ],
+      [
+       485.7,
+       339.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "여포 사이"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 361.1,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "loc",
+     "to": "info",
+     "points": [
+      [
+       340.0,
+       149.0
+      ],
+      [
+       340.0,
+       212.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판단 어려움"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 306.6,
+      "y": 173.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "foll",
+     "points": [
+      [
+       307.3,
+       276.0
+      ],
+      [
+       307.3,
+       325.0
+      ],
+      [
+       259.7,
+       325.0
+      ],
+      [
+       259.7,
+       339.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "테두리로 확인"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 268.5,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "ccell",
+     "points": [
+      [
+       372.7,
+       276.0
+      ],
+      [
+       372.7,
+       325.0
+      ],
+      [
+       420.3,
+       325.0
+      ],
+      [
+       420.3,
+       339.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "여포 사이로 확인"
+      ],
+      "w": 92.5,
+      "h": 17,
+      "x": 326.4,
+      "y": 300.0
+     }
+    },
+    {
+     "from": "foll",
+     "to": "ask",
+     "points": [
+      [
+       227.0,
+       386.0
+      ],
+      [
+       227.0,
+       425.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ask",
+     "to": "tsh",
+     "points": [
+      [
+       194.3,
+       472.0
+      ],
+      [
+       194.3,
+       501.0
+      ],
+      [
+       114.0,
+       501.0
+      ],
+      [
+       114.0,
+       515.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "가장 직접"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 166.5,
+      "y": 476.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "trh",
+     "points": [
+      [
+       259.7,
+       472.0
+      ],
+      [
+       259.7,
+       501.0
+      ],
+      [
+       340.0,
+       501.0
+      ],
+      [
+       340.0,
+       515.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "TSH 의 조절"
+      ],
+      "w": 67.6,
+      "h": 17,
+      "x": 225.9,
+      "y": 476.0
+     }
+    },
+    {
+     "from": "ccell",
+     "to": "ca",
+     "points": [
+      [
+       453.0,
+       403.0
+      ],
+      [
+       453.0,
+       425.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "갑상샘 조직 사진에서 양성(갈색) 세포를 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "양성 세포는 어디에 있나?"
+     }
+    ]
+   },
+   {
+    "id": "loc",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "양성 세포는 어디에 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "여포 테두리",
+      "to": 4,
+      "toText": "여포 테두리 고리 → 여포세포"
+     },
+     {
+      "label": "여포 사이",
+      "to": 5,
+      "toText": "여포 사이 흩어진 세포 → C 세포"
+     },
+     {
+      "label": "판단 어려움",
+      "to": 3,
+      "toText": "콜로이드 여포 윤곽을 먼저 찾아 위치를 다시 본다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "콜로이드 여포 윤곽을 먼저 찾아 위치를 다시 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "테두리로 확인",
+      "to": 4,
+      "toText": "여포 테두리 고리 → 여포세포"
+     },
+     {
+      "label": "여포 사이로 확인",
+      "to": 5,
+      "toText": "여포 사이 흩어진 세포 → C 세포"
+     }
+    ]
+   },
+   {
+    "id": "foll",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "여포 테두리 고리 → 여포세포",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "질문이 묻는 단계는?"
+     }
+    ]
+   },
+   {
+    "id": "ccell",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "여포 사이 흩어진 세포 → C 세포",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "직접 자극 = 혈청 칼슘 상승 → 칼시토닌"
+     }
+    ]
+   },
+   {
+    "id": "ask",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "질문이 묻는 단계는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "가장 직접",
+      "to": 8,
+      "toText": "직접 자극 = TSH(TSH-R → Gs → cAMP)"
+     },
+     {
+      "label": "TSH 의 조절",
+      "to": 9,
+      "toText": "윗단계 = TRH(뇌하수체에 작용)"
+     }
+    ]
+   },
+   {
+    "id": "ca",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "직접 자극 = 혈청 칼슘 상승 → 칼시토닌",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tsh",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "직접 자극 = TSH(TSH-R → Gs → cAMP)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "trh",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "윗단계 = TRH(뇌하수체에 작용)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0341"
+  ],
+  "hasErrors": false
+ },
  "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization": {
   "id": "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization",
   "title": "갑상샘 IHC — 콜로이드를 채우면 타이로글로불린",
@@ -47618,6 +48435,910 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0576"
+  ],
+  "hasErrors": false
+ },
+ "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis": {
+  "id": "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis",
+  "title": "환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나",
+  "objective": "경미한 외상 뒤 고정된 사경 자세를 보인 소아의 C1 축상 CT 에서 끊어지지 않은 환추 고리가 치아돌기에 대해 돈 것을 읽어 환축추 회전 아탈구를 진단하고 환추 파열골절과 구별한다",
+  "objectiveKind": "진단",
+  "condition": "소아 환축추 회전 아탈구(고정)와 상부 경추 외상의 감별",
+  "topic": "Orthopedics",
+  "seeAlso": [
+   "Pediatrics",
+   "Emergency Medicine",
+   "Radiology"
+  ],
+  "version": 2,
+  "updated": "2026-10-26",
+  "reviewStatus": "unreviewed",
+  "hash": "327d614915e416f7",
+  "summary": [
+   "결론: 경미한 외상 뒤 굳은 사경 + C1 축상 CT 에서 끊어지지 않은 고리가 치아돌기에 대해 돌았다 = 환축추 회전 아탈구.",
+   "시험 단서: 소아·낙상·감기 뒤, 고개는 한쪽으로 기울고 턱은 반대쪽(cock-robin) + 바로 못 함(atlantoaxial rotatory subluxation).",
+   "왜: C1–C2 는 평평한 관절면을 인대가 붙잡는 회전 관절이라, 인대가 느슨한 소아는 뼈가 부러지지 않고 돈 채로 걸린다.",
+   "제퍼슨 파열골절은 머리 꼭대기 축 하중(다이빙) 뒤 고리가 두 곳 이상 끊어지고 외측괴가 바깥으로 벌어진다.",
+   "선천 근성 사경은 영아의 흉쇄유돌근 덩이, 류마티스관절염의 환축추 아탈구는 앞쪽 전위(횡인대 손상)다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 회전 아탈구가 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>경미한 낙상 뒤 생긴 <strong>고정된 사경</strong>(cock-robin: 한쪽으로 기울고 턱은 반대쪽, 바로 못 함)은 상부 경추가 돈 채로 걸린 자세다. 7세라는 나이와 낮은 에너지가 회전 아탈구 쪽으로 기운다 <sup>[3†]</sup>.</li>\n<li>C1 축상 CT 의 결정적 소견은 <strong>고리가 이어져 있다</strong>는 것이다. 이어진 고리가 치아돌기에 대해 돌고 한쪽 외측괴만 앞으로 나왔다 <sup>[4†]</sup> — 끊어지고 벌어진 고리(파열골절)가 아니다.</li>\n<li>흉쇄유돌근 덩이 없음·발열 없음·정상 신경 진찰은 다른 갈래(선천 근성 사경·염증 뒤 그리젤·고에너지 손상)를 줄이는 정보다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 회전 관절이 돈 채로 걸린다",
+    "deep": false,
+    "html": "<p>목 회전의 상당 부분은 환축추 관절에서 일어난다. 관절면이 평평하고 수평에 가까워 뼈의 맞물림이 아니라 횡인대·익상인대·관절낭이 안정성을 지킨다 <sup>[3†]</sup>. 소아는 관절면이 얕고 인대·관절낭이 느슨하며 머리가 상대적으로 커서, 경미한 외상이나 인두 염증(그리젤 증후군)만으로도 환추가 돈 채 걸릴 수 있고, 관절낭 부종·근육 연축이 그 자리를 붙든다 <sup>[3†]</sup>.</p>\n<ul>\n<li><strong>분류</strong>: 회전에 앞쪽 전위가 얼마나 더해졌는지로 나눈다(Fielding–Hawkins) — 전위가 클수록 횡인대 손상·불안정성이 크다 <sup>[2†]</sup>.</li>\n<li><strong>횡인대가 망가지는 다른 길</strong>: 류마티스관절염의 활막염은 횡인대를 손상해 환추를 축추 위로 <strong>앞으로</strong> 미끄러뜨린다 <sup>[1 17장 p.128]</sup> — 회전이 아니라 전위가 주 소견이다.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 축상 CT 에서 고리를 본다",
+    "deep": false,
+    "html": "<ul>\n<li>상부 경추 외상은 CT 가 1차 검사다 — C1·C2 골절과 두개경추 이행부 정렬 이상을 X 선보다 잘 찾는다 <sup>[1 17장 p.120]</sup> <sup>[1 17장 p.127]</sup>.</li>\n<li>판독 순서: ① 고리가 이어져 있나 ② 이어져 있다면 치아돌기에 대해 돌았나, 한쪽 외측괴가 앞으로 나왔나 ③ 환추치아간격이 넓어졌나(앞쪽 전위).</li>\n<li><strong>해석 한계</strong>: 어린 소아의 C1 연골결합은 골절선처럼 보인다 <sup>[3†]</sup>. 한 장의 축상 영상은 「돌아간 자세」와 「돌아서 걸린 상태」를 가르지 못한다 — 고정 여부는 임상 경과와 추가 영상으로 본다 <sup>[3†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>외상 뒤 경추 손상이 의심되면 먼저 목을 고정하고 영상으로 간다. 척수·추골동맥 손상이 의심되면 MRI·MRA 를 더한다 <sup>[1 17장 p.127]</sup>.</li>\n<li>신경 결손이 없는 소아 회전 아탈구는 보존적 정복·고정을 먼저 시도한다. 늦게 발견되거나 정복되지 않거나 불안정하면 견인·수술을 고려한다 <sup>[3†]</sup>.</li>\n<li>류마티스관절염 환자는 삽관 전 경추 X 선으로 환축추 아탈구를 확인하고, 척수병증 징후가 생기면 수술을 고려한다 <sup>[1 17장 p.128]</sup>.</li>\n<li>이 정리본의 소아 특이 서술(해부 특징·분류·치료)은 문항 해설의 근거 논문을 원문 대조하지 못했다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "왜 소아는 뼈 대신 관절이 걸리나",
+    "deep": true,
+    "html": "<p>성인의 상부 경추는 강한 외력에서 뼈가 먼저 부러지지만, 소아는 인대가 느슨하고 관절면이 얕아 같은 외력에도 관절이 먼저 미끄러지고 돈다 <sup>[3†]</sup>. 그래서 성인은 「끊어진 고리(파열골절)」, 소아는 「돈 고리(회전 아탈구)」가 전형이다. 이 대비가 문항의 나이·외상 에너지·CT 소견을 하나로 묶는다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "C1 축상 CT — 고리가 돌았나, 끊어졌나, 앞으로 갔나",
+    "columns": [
+     "진단",
+     "전형적 상황",
+     "자세·증상",
+     "C1 축상 CT"
+    ],
+    "rows": [
+     [
+      "환축추 회전 아탈구(AARS)",
+      "소아, 경미한 낙상·회전, 인두 염증 뒤 <sup>[3†]</sup>",
+      "cock-robin — 한쪽으로 기울고 턱은 반대쪽, 바로 못 함",
+      "끊어지지 않은 고리가 치아돌기에 대해 회전, 한쪽 외측괴가 앞으로 <sup>[4†]</sup>"
+     ],
+     [
+      "환추 파열골절(Jefferson)",
+      "머리 꼭대기 축 하중(얕은 물 다이빙)",
+      "목 통증, 고정 회전 자세는 아님",
+      "고리가 두 곳 이상 끊어지고 외측괴가 바깥으로 벌어짐"
+     ],
+     [
+      "류마티스관절염 환축추 아탈구",
+      "RA(최대 30 %) <sup>[1 17장 p.128]</sup>",
+      "목 통증·뻣뻣함, 척수병증 위험 <sup>[1 17장 p.128]</sup>",
+      "횡인대 손상으로 환추가 축추 위로 앞으로 전위(환추치아간격 증가) <sup>[1 17장 p.128]</sup>"
+     ],
+     [
+      "선천 근성 사경",
+      "영아",
+      "흉쇄유돌근 덩이·섬유화",
+      "골·관절 이상 없음"
+     ]
+    ],
+    "note": "축상 CT 에서 먼저 고리가 이어져 있는지 보고, 이어져 있으면 치아돌기에 대한 회전과 앞쪽 전위를 본다. 어린 소아의 연골결합(synchondrosis)은 골절선처럼 보일 수 있다 <sup>[3†]</sup>."
+   },
+   {
+    "title": "Fielding–Hawkins 분류 — 회전에 전위가 더해지는 정도",
+    "columns": [
+     "형",
+     "소견"
+    ],
+    "rows": [
+     [
+      "I",
+      "앞쪽 전위 없는 회전 — 횡인대 온전, 가장 흔함 <sup>[2†]</sup>"
+     ],
+     [
+      "II",
+      "회전 + 앞쪽 전위 3~5 mm <sup>[2†]</sup>"
+     ],
+     [
+      "III",
+      "회전 + 앞쪽 전위 5 mm 초과 <sup>[2†]</sup>"
+     ],
+     [
+      "IV",
+      "회전 + 뒤쪽 전위 <sup>[2†]</sup>"
+     ]
+    ],
+    "note": "전위가 클수록 횡인대 손상과 불안정성이 크다. 문항 그림의 원 논문은 환추치아간격 4.5 mm 로 II형이라 했다 <sup>[4†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "회전 아탈구 vs 제퍼슨 파열골절 — 「C1 이 이상하면 골절」",
+    "point": "파열골절은 머리 꼭대기 축 하중으로 고리가 두 곳 이상 끊어지고 외측괴가 바깥으로 벌어진다. 회전 아탈구는 고리가 이어진 채 치아돌기에 대해 통째로 돌아 한쪽 외측괴만 앞으로 나온다 <sup>[4†]</sup>. 경미한 낙상 뒤의 소아 + 고정된 cock-robin 자세는 회전 쪽이다.",
+    "exception": "다이빙 같은 축 하중 뒤 고리가 여러 곳에서 끊어지고 외측괴가 바깥으로 벌어져 있으면 파열골절이 답이다. 어린 소아의 연골결합을 골절선으로 읽지 않는다 <sup>[3†]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "선천 근성 사경 — 「사경 = 흉쇄유돌근」",
+    "point": "선천 근성 사경은 영아기에 흉쇄유돌근 덩이·섬유화로 나타난다. 외상 뒤 급성으로 생긴 7세의 고정 사경이고 흉쇄유돌근 덩이가 없으면 C1–C2 를 본다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "환추후두 분리 — 고에너지 손상",
+    "point": "환추후두 분리는 후두과–C1 관절이 벌어지는 고에너지 손상으로 대개 심한 신경 결손이나 사망을 동반한다. 신경 진찰이 정상인 놀이터 낙상과 맞지 않고, 소견도 C1 고리의 회전이 아니다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "행맨 골절 — 층이 다르다",
+    "point": "행맨 골절은 C2 관절간부 양쪽 골절(과신전)로 C1 아래 층의 소견이다. C1 높이 축상 CT 에서 고리가 돈 소견은 C1–C2 회전 관절의 문제다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "외상 뒤 경추 손상이 의심되면 불안정 분절이 움직이지 않도록 먼저 목을 고정한다. 심한 외상 뒤 급성 골절은 CT, 척수·추골동맥 손상이 의심되면 MRI·MRA 로 본다 <sup>[1 17장 p.127]</sup>.",
+   "CT 는 C1·C2 골절과 두개경추 이행부 정렬 이상을 X 선보다 잘 보여 준다 <sup>[1 17장 p.120]</sup>.",
+   "자세의 짝: 한쪽 외측괴가 앞으로 나오면 턱은 반대쪽으로 돈다 — 문항 그림은 오른쪽 외측괴 전방 + 턱 왼쪽 회전이었다 <sup>[4†]</sup>.",
+   "유발 요인에는 외상 외에 인두·두경부 염증(그리젤 증후군)과 수술이 있다 <sup>[3†]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "c-spine-ct",
+    "name": "상부 경추 외상의 영상 선택",
+    "kind": "검사 선택",
+    "population": "중등도 이상 경추 외상 환자",
+    "statement": "CT 가 급성 골절의 1차 검사다. CT 는 두개경추 이행부·C1·C2 골절과 정렬 이상을 X 선보다 잘 찾는다. 척수·추골동맥 손상이 의심되면 MRI(MRA)를 쓴다 [[harrison-21: 17장 p.120]] [[harrison-21: 17장 p.127]]",
+    "exceptions": "경미한 외상이나 CT 를 쓸 수 없는 곳에서는 단순 X 선을 쓴다 [[harrison-21: 17장 p.127]]",
+    "source": "harrison-21",
+    "locator": "17장 p.120 Imaging · p.127 Neck pain — trauma",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 17: Back and Neck Pain",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 17장 p.117–129",
+    "checked": "드라이브 17장 문서 대조 — p.120: 중등도 이상 급성 외상의 1차 선별은 CT, CT 가 후방 구조·두개경추/경흉추 이행부·C1·C2 골절·척추관 안 골편·정렬 이상에서 X 선보다 우수. p.127: 외상(골절·아탈구)은 척수를 압박할 위험, 불안정 분절의 움직임을 막기 위해 즉시 목 고정, 심한 외상 뒤 급성 골절 진단은 CT, 경미한 외상·CT 불가 시 X 선, 척수·추골동맥 손상 의심 시 MRI·MRA. p.128: 류마티스관절염의 환축추 관절 활막염이 환추 횡인대를 손상해 환추가 축추 위로 앞으로 전위(환축추 아탈구), RA 의 최대 30 %, 삽관 전 X 선, 척수병증 징후 감시. 소아 회전 아탈구·그리젤 증후군·Fielding 분류는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-10-26",
+    "url": ""
+   },
+   {
+    "id": "fielding-1977",
+    "org": "J Bone Joint Surg Am",
+    "title": "Atlanto-axial rotatory fixation (fixed rotatory subluxation of the atlanto-axial joint)",
+    "kind": "other",
+    "citation": "Fielding JW, Hawkins RJ. J Bone Joint Surg Am 1977;59(1):37-44",
+    "checked": "서지만(문항 해설의 근거 목록에서 옮김, 원문 미대조 — 이 컨테이너는 PubMed 를 막는다. url 은 PubMed 검색 링크이고 PMID·DOI 는 확인하지 못했다). 분류(I~IV형) 서술에만 쓴다 — 검토 항목",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "1977",
+    "checkedAt": "2026-10-26",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Fielding+Hawkins+atlanto-axial+rotatory+fixation+1977"
+   },
+   {
+    "id": "neal-2015",
+    "org": "J Am Acad Orthop Surg",
+    "title": "Atlantoaxial rotatory subluxation in children",
+    "kind": "review",
+    "citation": "Neal KM, Mohamed AS. J Am Acad Orthop Surg 2015;23(6):382-392",
+    "checked": "서지만(문항 해설의 근거 목록에서 옮김, 원문 미대조. url 은 PubMed 검색 링크, PMID·DOI 미확인). 소아 해부 특징·유발 요인·보존 치료 서술에만 쓴다 — 검토 항목",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2015",
+    "checkedAt": "2026-10-26",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Neal+Mohamed+atlantoaxial+rotatory+subluxation+children+2015"
+   },
+   {
+    "id": "pmc-aars-2021",
+    "org": "Medicine (Baltimore)",
+    "title": "Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report",
+    "kind": "other",
+    "citation": "Medicine (Baltimore) 2021;100(16):e25588 (CC BY) — Figure 1",
+    "checked": "그림 설명(풀 기록에 저장된 원문 캡션)만 확인 — 7세 남아, 축상 CT(E·F)에서 C1 오른쪽 외측괴가 앞으로 전위·왼쪽으로 회전, 환추치아간격 4.5 mm 증가 → Fielding-Hawkins II형 AARS, 치아돌기 가로 골절 동반. 본문은 열지 않았다",
+    "doi": "10.1097/MD.0000000000025588",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-10-26",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078422/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "7세가 놀이터에서 떨어진 뒤 고개를 오른쪽으로 기울이고 턱을 왼쪽으로 돌린 채 바로 못 한다. C1 축상 CT 에서 고리는 이어져 있으나 치아돌기에 대해 돌아가 있다. 진단은?",
+    "a": "환축추 회전 아탈구(고정)."
+   },
+   {
+    "q": "C1 축상 CT 에서 제퍼슨 파열골절과 회전 아탈구를 가르는 소견은?",
+    "a": "파열골절은 고리가 두 곳 이상 끊어지고 외측괴가 바깥으로 벌어진다. 회전 아탈구는 고리가 이어진 채 돈다."
+   },
+   {
+    "q": "상부 경추(C1·C2) 급성 외상에서 X 선보다 CT 를 쓰는 이유는?",
+    "a": "CT 가 두개경추 이행부·C1·C2 골절과 정렬 이상을 더 잘 찾는다."
+   },
+   {
+    "q": "류마티스관절염 환자의 환축추 아탈구는 어느 방향이고 왜 생기나?",
+    "a": "환추가 축추 위로 앞으로 전위한다 — 활막염이 환추 횡인대를 손상하기 때문이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 축 하중 뒤 끊어진 고리",
+    "stem": "A 24-year-old man is brought to the emergency department after diving headfirst into the shallow end of a swimming pool and striking the top of his head on the bottom. He reports severe upper neck pain. He holds his head in the midline and has no fixed tilt or rotation. Strength, sensation, and reflexes are normal in all extremities. Axial CT at the level of the atlas shows breaks in both the anterior and posterior arches, with both lateral masses displaced outward away from the dens. Which of the following is the most likely diagnosis?",
+    "options": [
+     "Atlantoaxial rotatory subluxation",
+     "Jefferson burst fracture of the atlas",
+     "Hangman fracture of the axis",
+     "Atlanto-occipital dissociation",
+     "Odontoid fracture"
+    ],
+    "answer": 2,
+    "explanation": "An axial load on the vertex followed by a C1 ring broken in more than one place with the lateral masses spread outward is a Jefferson burst fracture. In the original item the ring was continuous but rotated on the dens in a child with a fixed cock-robin posture after a minor fall — rotatory subluxation [[?pmc-aars-2021]]. Changing the mechanism and the ring from 'rotated but intact' to 'broken and spread' is what switches the answer. CT is the preferred study because it shows C1 and C2 fractures better than plain films [[harrison-21: 17장 p.120]]. A hangman fracture involves the C2 pars, and an odontoid fracture involves the dens rather than the C1 ring.",
+    "of": "imaging-2026-0433",
+    "changed": "상황을 「놀이터 낙상 뒤 고정된 cock-robin 자세의 7세」에서 「얕은 물에 머리부터 다이빙한 성인, 고정 회전 자세 없음」으로, CT 를 「이어진 고리의 회전」에서 「고리 앞뒤 단절·외측괴의 바깥 벌어짐」으로 바꿈 → 답이 회전 아탈구에서 제퍼슨 파열골절로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 다른 아이, 반대 방향",
+    "stem": "A 9-year-old girl is brought to the clinic 2 days after she landed awkwardly with her neck bent while jumping on a trampoline. Since then her head has been tilted to the left with the chin turned to the right, and attempts to straighten it are painful. She has had no fever or sore throat, and there is no mass in either sternocleidomastoid muscle. Neurologic examination is normal. Axial CT at the level of the atlas shows an intact ring of C1 that is rotated relative to the dens, with the left lateral mass displaced anteriorly. Which of the following is the most likely diagnosis?",
+    "options": [
+     "Congenital muscular torticollis",
+     "Jefferson burst fracture of the atlas",
+     "Atlantoaxial rotatory subluxation",
+     "Atlanto-occipital dissociation",
+     "Hangman fracture of the axis"
+    ],
+    "answer": 3,
+    "explanation": "A child with a fixed posture after a minor injury — head tilted to one side, chin turned to the other — and an intact C1 ring rotated on the dens has atlantoaxial rotatory subluxation, whichever side is involved; the anteriorly displaced lateral mass is on the side opposite the chin turn [[?pmc-aars-2021]]. The ring is not broken, so this is not a burst fracture. Congenital muscular torticollis presents in infancy with a sternocleidomastoid mass, and atlanto-occipital dissociation and hangman fracture involve other levels after higher-energy injury.",
+    "of": "imaging-2026-0433",
+    "changed": "나이·성별(7세 남아 → 9세 여아)·유발 상황(철봉 낙상 → 트램펄린에서 목이 꺾임)·기울기 방향(오른쪽 → 왼쪽)·검사 서술 순서를 바꾸고 「고정된 cock-robin 자세 + 이어진 C1 고리의 회전」은 그대로 → 답은 여전히 회전 아탈구",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc8078422_figure1_e.jpg",
+    "kind": "ct",
+    "at": "가르는 소견 — 축상 CT 에서 고리를 본다",
+    "shows": "C1 축상 CT — 환추 고리가 회전하고 오른쪽 외측괴가 앞으로 전위(Fielding–Hawkins II형 회전 아탈구)",
+    "look": [
+     "끊어지지 않은 C1 고리가 정중선에 대해 돌아감(저자의 두 선)",
+     "오른쪽 외측괴가 왼쪽보다 앞에 놓임"
+    ],
+    "label": "「Lateral radiograph (A) showing anteriorly displaced transverse dens fracture along with ossiculum terminale (white arrow), increased atlanto-dental interval (ADI) of 4.5 mm (dark line), and increased anterior soft tissue swelling (dotted white arrows). Open mouth view (B) showing transverse dens fracture (white arrow), asymmetric distance between the lateral mass and dens (dark arrows), and anteriorly displaced right lateral mass of C1 (asterisk). Sagittal (C) and coronal (D) reconstructed computed tomography (CT) scans showing the same finding s more clearly. Axial CT (E and F) scans clearly showing anteriorly displaced and rotated right lateral mass of C1 to the left side and increased ADI of 4.5 mm, which indicating type II atlanto-axial rotatory subluxation (AARS) (according to Fielding and Hawkins classification).」 — Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report. Medicine",
+    "doiUrl": "https://doi.org/10.1097/MD.0000000000025588",
+    "citedBy": null,
+    "credit": "Traumatic atlanto-axial rotatory subluxation and dens fracture with subaxial SCIWORA of Brown-Sequard syndrome: A case report. Medicine (Baltimore). 2021 Apr 23;100(16):e25588. doi: 10.1097/MD.0000000000025588 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078422/",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "고정된 사경 — 어디가 문제인가",
+  "geo": {
+   "title": "고정된 사경 — 어디가 문제인가",
+   "w": 567.0,
+   "h": 685.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "소아가 고개를 기울인 채",
+      "바로 못 한다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "age",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "언제부터, 무엇 뒤에 생겼나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "cmt",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "영아 + 흉쇄유돌근 덩이 →",
+      "선천 근성 사경"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 212.0
+    },
+    {
+     "id": "neuro",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "신경 결손·고에너지 손상이",
+      "있나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 212.0
+    },
+    {
+     "id": "immob",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "목 고정 → CT(필요 시 MRI)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 170.4,
+     "y": 319.0
+    },
+    {
+     "id": "ct",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "C1 축상 CT 에서 고리는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 388.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "연골결합과 골절선을 가려",
+      "다시 판독"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 498.0
+    },
+    {
+     "id": "aars",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "이어진 고리가 회전 → 환축추",
+      "회전 아탈구"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 605.0
+    },
+    {
+     "id": "jeff",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "여러 곳 단절·외측괴 벌어짐",
+      "→ 파열골절"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 605.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "age",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "age",
+     "to": "cmt",
+     "points": [
+      [
+       194.3,
+       149.0
+      ],
+      [
+       194.3,
+       198.0
+      ],
+      [
+       114.0,
+       198.0
+      ],
+      [
+       114.0,
+       212.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "영아기부터"
+      ],
+      "w": 63.0,
+      "h": 17,
+      "x": 162.8,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "age",
+     "to": "neuro",
+     "points": [
+      [
+       259.7,
+       149.0
+      ],
+      [
+       259.7,
+       198.0
+      ],
+      [
+       340.0,
+       198.0
+      ],
+      [
+       340.0,
+       212.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "외상·감염 뒤 급성"
+      ],
+      "w": 98.9,
+      "h": 17,
+      "x": 210.2,
+      "y": 173.0
+     }
+    },
+    {
+     "from": "neuro",
+     "to": "immob",
+     "points": [
+      [
+       307.3,
+       276.0
+      ],
+      [
+       307.3,
+       305.0
+      ],
+      [
+       268.4,
+       305.0
+      ],
+      [
+       268.4,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "neuro",
+     "to": "ct",
+     "points": [
+      [
+       372.7,
+       276.0
+      ],
+      [
+       372.7,
+       305.0
+      ],
+      [
+       382.4,
+       305.0
+      ],
+      [
+       382.4,
+       374.0
+      ],
+      [
+       372.7,
+       374.0
+      ],
+      [
+       372.7,
+       388.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "immob",
+     "to": "ct",
+     "points": [
+      [
+       268.4,
+       366.0
+      ],
+      [
+       268.4,
+       374.0
+      ],
+      [
+       307.3,
+       374.0
+      ],
+      [
+       307.3,
+       388.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ct",
+     "to": "aars",
+     "points": [
+      [
+       291.0,
+       435.0
+      ],
+      [
+       291.0,
+       484.0
+      ],
+      [
+       226.0,
+       484.0
+      ],
+      [
+       226.0,
+       591.0
+      ],
+      [
+       194.3,
+       591.0
+      ],
+      [
+       194.3,
+       605.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "이어진 채 회전"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 250.3,
+      "y": 439.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "jeff",
+     "points": [
+      [
+       389.0,
+       435.0
+      ],
+      [
+       389.0,
+       484.0
+      ],
+      [
+       454.0,
+       484.0
+      ],
+      [
+       454.0,
+       591.0
+      ],
+      [
+       485.7,
+       591.0
+      ],
+      [
+       485.7,
+       605.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "끊어짐"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 368.5,
+      "y": 439.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "info",
+     "points": [
+      [
+       340.0,
+       435.0
+      ],
+      [
+       340.0,
+       498.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "선이 애매"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 459.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "aars",
+     "points": [
+      [
+       307.3,
+       562.0
+      ],
+      [
+       307.3,
+       591.0
+      ],
+      [
+       259.7,
+       591.0
+      ],
+      [
+       259.7,
+       605.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "연골결합"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 281.3,
+      "y": 566.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "jeff",
+     "points": [
+      [
+       372.7,
+       562.0
+      ],
+      [
+       372.7,
+       591.0
+      ],
+      [
+       420.3,
+       591.0
+      ],
+      [
+       420.3,
+       605.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "골절"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 566.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "소아가 고개를 기울인 채 바로 못 한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "언제부터, 무엇 뒤에 생겼나?"
+     }
+    ]
+   },
+   {
+    "id": "age",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "언제부터, 무엇 뒤에 생겼나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "영아기부터",
+      "to": 3,
+      "toText": "영아 + 흉쇄유돌근 덩이 → 선천 근성 사경"
+     },
+     {
+      "label": "외상·감염 뒤 급성",
+      "to": 4,
+      "toText": "신경 결손·고에너지 손상이 있나?"
+     }
+    ]
+   },
+   {
+    "id": "cmt",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "영아 + 흉쇄유돌근 덩이 → 선천 근성 사경",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "neuro",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "신경 결손·고에너지 손상이 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 5,
+      "toText": "목 고정 → CT(필요 시 MRI)"
+     },
+     {
+      "label": "없음",
+      "to": 6,
+      "toText": "C1 축상 CT 에서 고리는?"
+     }
+    ]
+   },
+   {
+    "id": "immob",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "목 고정 → CT(필요 시 MRI)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "C1 축상 CT 에서 고리는?"
+     }
+    ]
+   },
+   {
+    "id": "ct",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "C1 축상 CT 에서 고리는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "이어진 채 회전",
+      "to": 8,
+      "toText": "이어진 고리가 회전 → 환축추 회전 아탈구"
+     },
+     {
+      "label": "끊어짐",
+      "to": 9,
+      "toText": "여러 곳 단절·외측괴 벌어짐 → 파열골절"
+     },
+     {
+      "label": "선이 애매",
+      "to": 7,
+      "toText": "연골결합과 골절선을 가려 다시 판독"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "연골결합과 골절선을 가려 다시 판독",
+    "note": "",
+    "branches": [
+     {
+      "label": "연골결합",
+      "to": 8,
+      "toText": "이어진 고리가 회전 → 환축추 회전 아탈구"
+     },
+     {
+      "label": "골절",
+      "to": 9,
+      "toText": "여러 곳 단절·외측괴 벌어짐 → 파열골절"
+     }
+    ]
+   },
+   {
+    "id": "aars",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "이어진 고리가 회전 → 환축추 회전 아탈구",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "jeff",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "여러 곳 단절·외측괴 벌어짐 → 파열골절",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0433"
   ],
   "hasErrors": false
  },

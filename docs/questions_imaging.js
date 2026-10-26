@@ -117,6 +117,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0433.png",
    "caption": "Axial CT at the level of the atlas, bone window — one panel cropped from a published case figure; the two black lines and the panel letter are the authors' original markings (PMC Open Access Subset, CC BY — no adjustment)",
@@ -12259,6 +12260,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.endo.thyroid-follicular-cell.tsh-target",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0341.jpg",
    "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",

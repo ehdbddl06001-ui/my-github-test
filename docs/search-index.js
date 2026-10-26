@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-25",
+ "generated": "2026-10-26",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4030,
+  "total": 4039,
   "byType": {
    "kmle": 1568,
-   "concept": 112,
+   "concept": 114,
+   "paper": 844,
    "imaging": 440,
-   "paper": 837,
    "usmle": 210,
    "anatomy": 846,
    "ailab": 14,
@@ -18,26 +18,26 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 275,
+   "Cardiology": 276,
    "Nephrology": 222,
-   "Infectious Disease": 203,
-   "Pediatrics": 187,
+   "Infectious Disease": 204,
+   "Pediatrics": 188,
    "Obstetrics & Gynecology": 136,
-   "Pathology": 123,
+   "Pathology": 124,
    "Rheumatology": 122,
-   "Hematology-Oncology": 120,
+   "Hematology-Oncology": 121,
    "Psychiatry": 117,
    "Neurology": 116,
    "General Surgery": 106,
-   "Endocrinology": 103,
+   "Endocrinology": 104,
+   "Orthopedics": 103,
+   "Surgery": 103,
    "Dermatology": 102,
-   "Orthopedics": 102,
-   "Surgery": 102,
    "Gastroenterology": 101,
    "Ophthalmology": 100,
    "Pulmonology": 100,
    "Hematology": 95,
-   "Laboratory Medicine": 85,
+   "Laboratory Medicine": 86,
    "산부인과": 66,
    "순환기": 38,
    "호흡기": 29,
@@ -80,8 +80,8 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2824,
-   "medium": 1156,
-   "low": 50
+   "low": 51,
+   "medium": 1164
   },
   "tagCount": 5052
  },
@@ -694,6 +694,20 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Dizziness and a Slow Pulse after Swallowing a Relative's Blood Pressure Pills calcium-channel-blocker-overdose toxicology bradycardia ecg antidote KMLE 2026 / Claude 66세 여자가 같이 사는 언니와 다툰 뒤 언니가 먹던 혈압약 한 통을 삼켰다며 3시간 뒤 응급실에 왔다. 어지럽고 기운이 없다. 당뇨병 병력은 없고 본인이 먹는 약도 없다. 의식은 맑고 동공은 양쪽 3 mm로 빛에 잘 반응한다. 피부는 따뜻하고 땀은 없다. 폐음은 깨끗하다. 아트로핀 1 mg을 두 번 정맥 주사하고 생리식염수 1 L를 빠르게 넣었으나 혈압과 맥박은 그대로다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 정맥 날록손 투여 B. 디곡신 특이 항체 조각 C. 정맥 염화칼슘 투여 D. 정맥 글루카곤 투여 E. 정맥 지방유제 투여 아트로핀·수액에 반응하지 않는 서맥·저혈압에 고혈당이 동반되고 칼륨이 정상이면 칼슘통로차단제 중독을 먼저 생각한다. 첫 해독 처치는 정맥 칼슘이다."
   },
   {
+   "id": "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "low",
+   "date": "2026-10-26",
+   "path": "content/concepts/orthopedics/cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis.md",
+   "snippet": "판단 — 왜 회전 아탈구가 먼저인가 경미한 낙상 뒤 생긴 고정된 사경 (cock robin: 한쪽으로 기울고 턱은 반대쪽, 바로 못 함)은 상부 경추가 돈 채로 걸린 자세다. 7세라는 나이와 낮은 에너지가 회전 아탈구 쪽으로 기운다 [[?neal 2015]]. C1 축상 CT 의 결정적 소견은 고리가 이어져 있다 는 것이다. 이어진 고리가 치아돌기에 대해 돌고 한쪽 외측괴만 앞으로 나왔다 [[?pmc aars 2021]] — ",
+   "text": "Orthopedics 판단 — 왜 회전 아탈구가 먼저인가 경미한 낙상 뒤 생긴 고정된 사경 (cock robin: 한쪽으로 기울고 턱은 반대쪽, 바로 못 함)은 상부 경추가 돈 채로 걸린 자세다. 7세라는 나이와 낮은 에너지가 회전 아탈구 쪽으로 기운다 [[?neal 2015]]. C1 축상 CT 의 결정적 소견은 고리가 이어져 있다 는 것이다. 이어진 고리가 치아돌기에 대해 돌고 한쪽 외측괴만 앞으로 나왔다 [[?pmc aars 2021]] — 끊어지고 벌어진 고리(파열골절)가 아니다. 흉쇄유돌근 덩이 없음·발열 없음·정상 신경 진찰은 다른 갈래(선천 근성 사경·염증 뒤 그리젤·고에너지 손상)를 줄이는 정보다. 기전 — 회전 관절이 돈 채로 걸린다 목 회전의 상당 부분은 환축추 관절에서 일어난다. 관절면이 평평하고 수평에 가까워 뼈의 맞물림이 아니라 횡인대·익상인대·관절낭이 안정성을 지킨다 [[?neal 2015]]. 소아는 관절면이 얕고 인대·관절낭이 느슨하며 머리가 상대적으로 커서, 경미한 외상이나 인두 염증(그리젤 증후군)만으로도 환추가 돈 채 걸릴 수 있고, 관절낭 부종·근육 연축이 그 자리를 붙든다 [[?neal 2015]]. 분류 : 회전에 앞쪽 전위가 얼마나 더해졌는지로 나눈다(Fielding–Hawkins) — 전위가 클수록 횡인대 손상·불안정성이 크다 [[?fielding 1977]]. 횡인대가 망가지는 다른 길 : 류마티스관절염의 활막염은 횡인대를 손상해 환추를 축추 위로 앞으로 미끄러뜨린다 [[harrison 21: 17장 p.128]] — 회전이 아니라 전위가 주 소견이다. 가르는 소견 — 축상 CT 에서 고리를 본다 상부 경추 외상은 CT 가 1차 검사다 — C1·C2 골절과 두개경추 이행부 정렬 이상을 X 선보다 잘 찾는다 [[harrison 21: 17장 p.120]] [[harrison 21: 17장 p.127]]. 판독 순서: ① 고리가 이어져 있나 ② 이어져 있다면 치아돌기에 대해 돌았나, 한쪽 외측괴가 앞으로 나왔나 ③ 환추치아간격이 넓어졌나(앞쪽 전위). 해석 한계 : 어린 소아의 C1 연골결합은 골절선처럼 보인다 [[?neal 2015]]. 한 장의 축상 영상은 「돌아간 자세」와 「돌아서 걸린 상태」를 가르지 못한다 — 고정 여부는 임상 경과와 추가 영상으로 본다 [[?neal 2015]]. 권고와 예외 외상 뒤 경추 손상이 의심되면 먼저 목을 고정하고 영상으로 간다. 척수·추골동맥 손상이 의심되면 MRI·MRA 를 더한다 [[harrison 21: 17장 p.127]]. 신경 결손이 없는 소아 회전 아탈구는 보존적 정복·고정을 먼저 시도한다. 늦게 발견되거나 정복되지 않거나 불안정하면 견인·수술을 고려한다 [[?neal 2015]]. 류마티스관절염 환자는 삽관 전 경추 X 선으로 환축추 아탈구를 확인하고, 척수병증 징후가 생기면 수술을 고려한다 [[harrison 21: 17장 p.128]]. 이 정리본의 소아 특이 서술(해부 특징·분류·치료)은 문항 해설의 근거 논문을 원문 대조하지 못했다(검토 항목). (심화) 왜 소아는 뼈 대신 관절이 걸리나 성인의 상부 경추는 강한 외력에서 뼈가 먼저 부러지지만, 소아는 인대가 느슨하고 관절면이 얕아 같은 외력에도 관절이 먼저 미끄러지고 돈다 [[?neal 2015]]. 그래서 성인은 「끊어진 고리(파열골절)」, 소아는 「돈 고리(회전 아탈구)」가 전형이다. 이 대비가 문항의 나이·외상 에너지·CT 소견을 하나로 묶는다."
+  },
+  {
    "id": "cn.obgyn.primary-amenorrhea-absent-uterus.karyotype-differentiation",
    "type": "concept",
    "unit": "",
@@ -706,6 +720,139 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/obstetrics-gynecology/cn.obgyn.primary-amenorrhea-absent-uterus.karyotype-differentiation.md",
    "snippet": "판단 — 왜 핵형을 먼저 보는가 자궁 유무는 세르톨리세포의 AMH(뮐러관 억제물질) 가, 남성형 외생식기는 테스토스테론·DHT 와 그 작용 이 정한다 — 그래서 「자궁 없음 + 여성 외생식기」는 고환이 있되 안드로겐이 작용하지 못한 46,XY 와 뮐러관만 생기지 않은 46,XX 둘 다에서 나온다 [[harrison 21: 390장 p.2999]]. 겉모습(유방·외생식기)은 같아 보이므로 둘을 가르는 첫 검사는 핵형 이다. 핵형",
    "text": "Obstetrics and Gynecology 판단 — 왜 핵형을 먼저 보는가 자궁 유무는 세르톨리세포의 AMH(뮐러관 억제물질) 가, 남성형 외생식기는 테스토스테론·DHT 와 그 작용 이 정한다 — 그래서 「자궁 없음 + 여성 외생식기」는 고환이 있되 안드로겐이 작용하지 못한 46,XY 와 뮐러관만 생기지 않은 46,XX 둘 다에서 나온다 [[harrison 21: 390장 p.2999]]. 겉모습(유방·외생식기)은 같아 보이므로 둘을 가르는 첫 검사는 핵형 이다. 핵형은 진단의 출발점이지 성 정체성을 정하지 않는다 [[harrison 21: 390장 p.3002]]. 46,XY 이고 유방이 자랐으면 완전 안드로겐 무감응증후군(complete androgen insensitivity syndrome, CAIS), 46,XX 면 마이어 로키탄스키 퀴스터 하우저 증후군(Mayer Rokitansky Küster Hauser syndrome, MRKH) 이다 [[harrison 21: 390장 p.3002–3003, p.3005]]. 46,XY 인데 사춘기가 오지 않고 고혈압이 있으면 17α 수산화효소 결핍(CYP17A1) 을 생각한다 [[harrison 21: 390장 p.3002]]. 기전 — 고환은 있는데 안드로겐이 작용하지 못한다 안드로겐 수용체는 X 염색체에 있어 46,XY 만 병이 나고, 대개 보인자 어머니에게서 물려받는다 [[harrison 21: 390장 p.3002]]. CAIS 의 고환은 정상적으로 AMH 를 내 수정 60~80일에 뮐러관이 퇴행하므로 자궁·난관·질 상부가 없다 [[harrison 21: 390장 p.2999, p.3002]]. 테스토스테론은 만들어지지만 수용체가 반응하지 않아 볼프관·외생식기가 남성화되지 않고, 비뇨생식동에서 생긴 질 하부만 남아 질이 짧다 [[harrison 21: 390장 p.2999, p.3002]]. 사춘기에는 테스토스테론이 방향족화돼 생긴 에스트로겐으로 유방이 정상으로 자라지만, 음모·액모는 안드로겐 의존이라 드물다 [[harrison 21: 390장 p.3002–3003]]. MRKH 는 뮐러관 자체가 생기지 않거나 덜 생긴 것이다 — 난소는 뮐러관 구조가 아니므로 남아 사춘기의 여성화가 일어나고, 질이 선천적으로 없다 [[harrison 21: 390장 p.2999, p.3005]]. 가르는 소견 — 핵형·자궁·유방·체모 체모 : CAIS 는 음모·액모가 드물다. MRKH 는 안드로겐 작용이 정상이다(발생에서 정리). 동반 이상 : MRKH 는 신장 무형성·경추 이상을 함께 찾는다 [[harrison 21: 390장 p.3005]]. CAIS 는 소아기에 고환이 든 서혜부 탈장으로 먼저 오기도 한다 [[harrison 21: 390장 p.3003]]. 호르몬 해석의 한계 : CAIS 의 생식샘자극호르몬·테스토스테론은 안드로겐 저항 정도와 에스트라디올의 되먹임에 따라 낮음·정상·높음이 모두 가능하다 — 테스토스테론 한 번으로 핵형을 대신하지 않는다. 소아기 AMH 는 정상 또는 높다 [[harrison 21: 390장 p.3003]]. 권고와 예외 CAIS 의 생식샘: 악성 위험이 약 2% 로 낮아 예전처럼 소아기에 절제하지 않고 유방 발달이 끝날 때까지 두며, 그 뒤 영상·표지자로 전암 변화를 미리 찾을 수 없다는 점을 상담해 절제(에스트로겐 보충과 함께) 여부를 정한다 [[harrison 21: 390장 p.3003]]. CAIS 의 짧은 질은 사춘기 단계적 확장기로 대개 충분하다 [[harrison 21: 390장 p.3003]]. 부분 안드로겐 무감응(Reifenstein) 은 영아기 음경음낭 요도하열·잠복고환, 사춘기 여성형 유방으로 오고 생식세포암 위험이 높아진다 [[harrison 21: 390장 p.3003–3004]]. 완전 생식샘 발생장애(스와이어) 는 자궁이 있고, 줄무늬 생식샘의 생식세포암 위험이 높아 복강 내 생식샘을 절제한다 [[harrison 21: 390장 p.3002]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · CAIS 생식샘 절제 시기 — 시험 기준: 유방 발달이 끝난 뒤 상담해 결정(악성 약 2%) [[harrison 21: 390장 p.3003]] / 다른 기준: 예전에는 소아기 절제를 권했다 [[harrison 21: 390장 p.3003]] / 왜 다른가: 낮은 악성 위험과 자연 사춘기(유방 발달)의 이점이 알려져 늦추는 쪽으로 바뀌었다 / 시험에서는: KMLE · USMLE 모두 현행 기준(유방 발달 완료 뒤 상담해 절제)을 답으로 쓴다."
+  },
+  {
+   "id": "cn.endo.thyroid-follicular-cell.tsh-target",
+   "type": "concept",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/concepts/endocrinology/cn.endo.thyroid-follicular-cell.tsh-target.md",
+   "snippet": "판단 — 위치가 세포를, 세포가 자극을 정한다 갑상샘에는 내분비 세포가 둘이다. 콜로이드를 둘러싼 여포세포(follicular cell) 는 T4·T3 를 만들고, 여포 사이에 흩어진 C 세포(parafollicular cell) 는 칼시토닌을 만든다 [[harrison 21: 382장 p.2926]]. TPO 는 여포세포 정단막의 효소라 [[harrison 21: 382장 p.2927]] 염색이 여포마다 갈색 고리를 그린다 ",
+   "text": "Endocrinology 판단 — 위치가 세포를, 세포가 자극을 정한다 갑상샘에는 내분비 세포가 둘이다. 콜로이드를 둘러싼 여포세포(follicular cell) 는 T4·T3 를 만들고, 여포 사이에 흩어진 C 세포(parafollicular cell) 는 칼시토닌을 만든다 [[harrison 21: 382장 p.2926]]. TPO 는 여포세포 정단막의 효소라 [[harrison 21: 382장 p.2927]] 염색이 여포마다 갈색 고리를 그린다 — 그 세포의 수용체는 기저측막의 TSH 수용체(TSH R)다 [[harrison 21: 382장 p.2926]]. 「가장 직접」은 그 세포에 수용체가 있는 호르몬이다. TRH 는 TSH 를 거쳐서만 여포세포에 닿는다 [[harrison 21: 382장 p.2927]]. 기전 — TRH 에서 TSH, TSH 에서 여포세포로 시상하부 TRH 가 뇌하수체 전엽 갑상샘자극세포의 TSH 생산을 자극하고, TSH 가 갑상샘호르몬 합성·분비를 자극한다. 갑상샘호르몬은 TRβ2 를 통해 TRH·TSH 를 누르며, 축의 「설정점」은 TSH 가 정한다 [[harrison 21: 382장 p.2927]]. 여포세포 안 : TSH R 은 7회 막관통 G 단백 결합 수용체로 Gsα → 아데닐산고리화효소 → cAMP 를 올리고 포스포리파제 C 도 활성화한다 [[harrison 21: 382장 p.2928]]. TSH 가 결합하면 내강의 Tg 가 다시 흡수되고 세포 안에서 분해되어 호르몬이 혈류로 나간다 [[harrison 21: 382장 p.2926]]. 수용체 변이가 증명한다 : 기능소실 변이는 갑상샘 형성저하·선천 갑상샘저하증, 기능획득 변이는 자율 기능 결절·가족성 갑상샘항진증을 만든다. 그레이브스병의 갑상샘자극 항체(TSI)도 같은 수용체를 자극한다 [[harrison 21: 382장 p.2928]]. 다른 조절자 : IGF 1·EGF·TGF β 같은 국소 성장인자도 합성에 영향을 주지만 주된 호르몬 조절자는 TSH 다 [[harrison 21: 382장 p.2928]]. 가르는 소견 — 여포 테두리 vs 여포 사이 여포세포 표지(TPO·Tg) : 여포를 한 층으로 둘러싼 입방상피가 양성, 여포 사이 간질은 음성. 문항 사진도 이 양상이다(HPA 병리의사 주석: 샘세포 강양성) [[?hpa tpo]]. C 세포 표지(칼시토닌) : 여포 사이에 하나씩·작은 무리로 흩어진 세포만 양성. C 세포는 샘 위 1/3 과 아래 2/3 경계에 가장 많다 [[harrison 21: 382장 p.2926]]. 배경 수치의 한계 : 정상 TSH·칼슘은 판단을 바꾸지 않는다 — 질문은 염색된 세포를 「무엇이」 움직이는지다. 정상 TSH 는 일차 갑상샘 이상을 대개 배제하지만, 시상하부·뇌하수체 병에서는 TSH 가 낮은 T4 에 부적절하게 낮음~정상이어서 TSH 단독으로 기능을 판단하지 않는다 [[harrison 21: 382장 p.2931]] [[harrison 21: 382장 p.2932]]. 권고와 예외 「위치 → 세포 → 수용체 → 질문의 단계」 순서로 읽는다: 여포 테두리 = 여포세포 = TSH, 여포 사이 = C 세포 = 칼슘. TSH 는 반감기가 약 50분이라 한 번 측정으로 혈중 농도를 평가할 수 있다 [[harrison 21: 382장 p.2927]]. 바이오틴은 면역측정에서 TSH 를 거짓으로 낮추므로 검사 전 최소 2일 끊는다 [[harrison 21: 382장 p.2931]]. 임신 초기 hCG 는 TSH R 에 약하게 결합해 TSH 를 낮춘다 — 여포세포를 자극할 수 있는 다른 리간드의 예다 [[harrison 21: 382장 p.2929]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 382장 p.2926~2932) (심화) 왜 한 장기에 두 축인가 여포세포와 C 세포는 기원이 다르다. 여포세포는 TTF 1·PAX 8 같은 전사인자로 Tg·TPO·NIS·TSH R 을 함께 켜는 갑상샘 고유 세포이고 [[harrison 21: 382장 p.2926]], C 세포는 새후체에서 온 신경능선 세포다 [[harrison 21: 382장 p.2926]]. 그래서 여포세포는 뇌하수체 축(TSH)의 지배를, C 세포는 혈중 칼슘이라는 다른 신호를 따른다. 사진에서 어느 구획이 양성인지가 곧 어느 축의 질문인지를 알려 준다."
+  },
+  {
+   "id": "paper-2026-0844",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0844_preprocedural_computed_tomography_guidance_improves_accuracy.md",
+   "snippet": "Title Preprocedural Computed Tomography Guidance Improves Accuracy of Right Ventricular Septal Lead Placement in Pacemaker Implantation Authors Tachibana Motomi, Matsumoto Akiko, Kimura Akihisa, Moriya Seiji, Banba Kimikazu, Teranishi Jin, ",
+   "text": "Surgery scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Preprocedural Computed Tomography Guidance Improves Accuracy of Right Ventricular Septal Lead Placement in Pacemaker Implantation Authors Tachibana Motomi, Matsumoto Akiko, Kimura Akihisa, Moriya Seiji, Banba Kimikazu, Teranishi Jin, Fujio Hideki, Yuasa Shinsuke Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70545 · PMID: 42927648 https://pubmed.ncbi.nlm.nih.gov/42927648/ Abstract INTRODUCTION: Accurate right ventricular septal lead placement is crucial for optimal pacemaker performance and procedural safety, yet conventional fluoroscopy guided implantation is limited by inter individual anatomical variability. We therefore examined whether preprocedural computed tomography (CT) can provide patient specific anatomical guidance to enable precise lead positioning. METHODS AND RESULTS: We retrospectively analyzed 501 consecutive patients who underwent initial dual chamber pacemaker implantation for bradycardia pacing (non CT guided, n = 243; CT guided, n = 258). In the CT guided group, the midseptal target was determined preoperatively using multiplanar reconstruction of CT images, and reference lines were projected onto the scout image to guide lead placement. We evaluated the total procedure time, fluoroscopy time, right ventricular lead electrical parameters, implantation site, and complications. CT guidance was associated with a higher rate of septal lead placement than non CT guidance (93.0% vs. 55.6%, p < 0.001), whereas free wall lead placement was less frequent (7.0% vs. 44.4%, p < 0.001). The procedural radiation dose was lower with CT guidance (CT guided, 100.2 ± 124.6 mGy vs. non CT guided, 169.1 ± 152.4 mGy; p < 0.001). Among patients with complete atrioventricular block and available postoperative paced QRS measurements (n = 303), QRS duration was shorter in the CT guided group than in the non CT guided group (145.3 ± 22.3 ms [n = 165] vs. 155.4 ± 19.0 ms [n = 138], p < 0.001). The association persisted after multivariable adjustment ((adjusted OR, 10.30; 95% CI, 5.91 17.97; p < 0.001). The total procedure time, fluoroscopy time, and pacing parameters were comparable between the groups. Complication rates were low overall, and pocket hematoma was less frequent in the CT guided group (0.4% vs. 2.9%, p = 0.03). CONCLUSION: Preprocedural CT guidance facilitated precise planning of the right ventricular lead target using scout images and was associated with accurate and reproducible placement at the intended septal site without prolonging procedural time or compromising electrical performance. This approach may represent a practical strategy for optimizing lead placement in bradycardia pacing. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0843",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical interventions in aging",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0843_the_effect_of_mindfulness_based_cognitive_therapy_on_kinesio.md",
+   "snippet": "Title The Effect of Mindfulness Based Cognitive Therapy on Kinesiophobia in Older Adults with Chronic Knee Osteoarthritis: A Randomized Controlled Trial Authors Kheirkhah Zahra, Fallahi Fatemeh, Sharifi Khadijeh, Asgarian Fatemeh Sadat, Fal",
+   "text": "Pediatrics scraped pubmed PubMed / Clinical interventions in aging Title The Effect of Mindfulness Based Cognitive Therapy on Kinesiophobia in Older Adults with Chronic Knee Osteoarthritis: A Randomized Controlled Trial Authors Kheirkhah Zahra, Fallahi Fatemeh, Sharifi Khadijeh, Asgarian Fatemeh Sadat, Fallahi Amir Hossein Journal / DOI Clinical interventions in aging · DOI: 10.2147/CIA.S638393 · PMID: 42927343 https://pubmed.ncbi.nlm.nih.gov/42927343/ Abstract PURPOSE: To determine the effect of mindfulness based cognitive therapy on kinesiophobia in older adults with chronic knee osteoarthritis. PATIENTS AND METHODS: This randomized clinical trial conducted among 56 older patients with knee osteoarthritis at health centers in Kashan, Iran, in 2024. Participants were selected via consecutive sampling and randomly assigned to either an intervention (n = 28) or a control (n = 28) group using block randomization. The intervention group participated in eight 90 minute sessions of Mindfulness Based Cognitive Therapy, while the control group received routine care. Kinesiophobia was measured with the Tampa Scale for Kinesiophobia (TSK11) at baseline, week 4 (immediately post intervention), and week 8 (four week follow up). Covariate adjusted repeated measures ANCOVA was performed, adjusting for age, number of children, and baseline pain intensity. Statistical significance was set at p < 0.05. All participants completed follow up. RESULTS: The mean kinesiophobia score decreased from 29.46 ± 3.81 at baseline to 25.68 ± 3.22 at week 8 in the intervention group and from 28.64 ± 4.78 to 26.68 ± 5.15 in the control group. The adjusted repeated measures analysis showed a significant group by time interaction (Wilks' Λ = 0.88, F(2.50) = 3.34, p = 0.040, ηp2 = 0.11), indicating different trajectories of change between groups. However, adjusted between group differences were not statistically significant at baseline, week 4, or week 8 (all p 0.05). The adjusted difference in change from baseline to week 8 was 1.60 points (95% CI 3.25 to 0.05; p = 0.05). Within group Bonferroni adjusted comparisons showed significant reductions across all time intervals in the intervention group (all p < 0.001) and from baseline to week 4 and week 8 in the control group (p = 0.0022 and p = 0.0028, respectively), but not between weeks 4 and 8 (p = 0.13). CONCLUSION: Four weeks of MBCT may influence the trajectory of kinesiophobia over time in older adults with knee osteoarthritis. TRIAL REGISTRATION: Registered in the Iranian Registry of Clinical Trials (IRCT20231105059961N1). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0842",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of thrombosis and thrombolysis",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0842_platelet_derived_biomarkers_in_solid_malignancies_a_systemat.md",
+   "snippet": "Title Platelet derived biomarkers in solid malignancies: a systematic review and meta analysis of prognostic outcomes and diagnostic evidence Authors Pathan Roshan Mustafa, Singh Jugraj, Muddam Nikhil, George Lilly Rebecca, Ghanta Saahi, Mu",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of thrombosis and thrombolysis Title Platelet derived biomarkers in solid malignancies: a systematic review and meta analysis of prognostic outcomes and diagnostic evidence Authors Pathan Roshan Mustafa, Singh Jugraj, Muddam Nikhil, George Lilly Rebecca, Ghanta Saahi, Munipally Sikendra Teja, Kommalapati Sreeja, Iqbal Azra Journal / DOI Journal of thrombosis and thrombolysis · DOI: 10.1007/s11239 026 03417 x · PMID: 42927565 https://pubmed.ncbi.nlm.nih.gov/42927565/ Abstract Platelets contribute to tumor angiogenesis, immune evasion, and metastasis, and baseline platelet indices have been proposed as accessible prognostic biomarkers for solid malignancies. Their clinical utility remains uncertain because prior studies have reported inconsistent comparison directions and cancer type dependent effects. This PRISMA 2020 compliant, PROSPERO registered (CRD420261350460) systematic review and meta analysis evaluated platelet count (PLT), mean platelet volume (MPV), platelet distribution width (PDW), and plateletcrit (PCT) in patients with solid malignancies. Overall survival (OS) was the primary endpoint for all indices, and disease free survival (DFS) was the secondary endpoint for PLT and PDW. Studies were pooled using Hartung Knapp random effects models, and diagnostic and secondary biomarker categories were synthesized narratively. Of the 29 included studies, 22 contributed to the quantitative synthesis. Pooled PLT OS was significantly adverse (HR 1.41, 95% CI 1.11 1.79) following exclusion of two studies whose platelet count estimates were not exposure comparable to the remaining cohorts; the direction specific high versus low PLT estimate was similarly adverse (HR 1.22, 95% CI 1.04 1.42). High versus low MPV was significantly associated with adverse overall survival (HR 1.34, 95% CI 1.16 1.55, I2 = 0%); the non directional pooled MPV OS estimate was not robust to publication bias (trim and fill adjusted HR 1.05, 95% CI 0.85 1.29). The PDW OS (HR 1.95, 95% CI 0.51 7.43) and PCT OS (HR 1.55, 95% CI 0.22 10.92) were not significant. PLT DFS was significantly adverse (HR 1.51, 95% CI 1.10 2.08), whereas PDW DFS was not (HR 1.17, 95% CI 0.53 2.59). GRADE certainty was moderate for PLT and MPV, low for PDW, and very low for PCT. Diagnostic evidence was synthesized narratively because of substantial methodological and clinical heterogeneity; combined biomarker and machine learning models generally showed better discriminatory performance than standalone platelet indices. Both PLT and MPV were independently associated with adverse overall survival in direction specific analyses, while PDW and PCT lack support. Diagnostics remain narrative pending validation. Standardized prospective multicenter studies are required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0841",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of thrombosis and thrombolysis",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0841_the_retrieved_venous_thrombus_as_a_translational_platform_a_.md",
+   "snippet": "Title The retrieved venous thrombus as a translational platform: a methodologic roadmap for venous immunothrombosis Authors Galassi Luca, Rossi Antonio, Pellegrino Greta, Azzahrani Lina, Meh Leylie, Facchinetti Federica, Banfi Carlo Journal",
+   "text": "Pathology scraped pubmed PubMed / Journal of thrombosis and thrombolysis Title The retrieved venous thrombus as a translational platform: a methodologic roadmap for venous immunothrombosis Authors Galassi Luca, Rossi Antonio, Pellegrino Greta, Azzahrani Lina, Meh Leylie, Facchinetti Federica, Banfi Carlo Journal / DOI Journal of thrombosis and thrombolysis · DOI: 10.1007/s11239 026 03420 2 · PMID: 42927563 https://pubmed.ncbi.nlm.nih.gov/42927563/ Abstract Percutaneous mechanical thrombectomy is now widely used for iliofemoral deep vein thrombosis (DVT) and intermediate risk pulmonary embolism (PE) across several device platforms, and every procedure yields intact human thrombus that is routinely discarded. Whether this material can be developed into a translational resource linking thrombus biology to clinical outcome has not been systematically addressed. A narrative, non systematic review was performed. PubMed/MEDLINE, Scopus, Web of Science and the Cochrane Library were searched (January 2010 to August 2026) for studies addressing the biology, histopathology and translational analysis of mechanically retrieved venous thrombi, supplemented by reference list, trial registry and congress hand searching. Published venous series remain small and largely confined to descriptive histology, disconnected from longitudinal outcomes. Intra thrombus biology could address venous specific questions that peripheral biomarkers and imaging alone cannot: post thrombotic syndrome, incomplete recanalization, chronic thromboembolic pulmonary hypertension and cancer associated thrombosis. A device agnostic framework is proposed, comprising structured intra procedural sampling at the level of the case rather than the anatomical region, centralized specimen processing under harmonized quality standards, a tiered analytic pipeline anchored on quantitative immunohistochemistry, paired peripheral biomarker collection, pre specified hypotheses with feasibility based sample sizes, and biobank infrastructure embedded in existing trial platforms. The equivalent programme in arterial thrombectomy supplies transferable methodology, subject to explicit boundary conditions. The retrieved venous thrombus is among the more underused translational specimens in vascular medicine. A standardized, registry embedded characterization framework could accelerate progress toward precision venous thrombosis medicine. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0840",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicinal research reviews",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0840_chemical_modulation_of_the_cgas_sting_enpp1_axis_medicinal_c.md",
+   "snippet": "Title Chemical Modulation of the cGAS STING ENPP1 Axis: Medicinal Chemistry and Clinical Perspective Authors Shinde Akash U, Bharate Sandip B Journal / DOI Medicinal research reviews · DOI: 10.1002/med.70118 · PMID: 42927615 https://pubmed.",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Medicinal research reviews Title Chemical Modulation of the cGAS STING ENPP1 Axis: Medicinal Chemistry and Clinical Perspective Authors Shinde Akash U, Bharate Sandip B Journal / DOI Medicinal research reviews · DOI: 10.1002/med.70118 · PMID: 42927615 https://pubmed.ncbi.nlm.nih.gov/42927615/ Abstract The cyclic GMP AMP synthase (cGAS) stimulator of interferon genes (STING) pathway plays a fundamental role in innate immune signaling and has emerged as a therapeutically relevant pathway across cancer, inflammatory, and autoimmune diseases. Herein, we provide a comprehensive medicinal chemistry focused overview of both activation and inhibition of the cGAS STING pathway, focusing on three druggable therapeutic targets, cGAS, STING, and ectonucleotide pyrophosphatase/phosphodiesterase 1 (ENPP1). The translational maturity of these targets differs substantially, with STING being the most clinically advanced, whereas cGAS and ENPP1 remain emerging targets supported predominantly by preclinical evidence, with the advancement of a few inhibitors into early stage clinical trials. The biological rationale for pathway modulation, along with modulators, is discussed with emphasis on active site interactions, scaffold diversity, their activity profiles, structure activity relationships, species selectivity, and in vivo efficacy. The particular focus is on patent literature and advanced stage molecules, discussing their ADME properties, pharmacokinetics, and clinical development status. Although STING agonists have achieved a larger reach in clinical trials within this pathway, recent developments suggest that cGAS inhibitors and ENPP1 inhibitors hold a greater promise for future clinical success. In summary, this review provides insights into medicinal chemistry and translational challenges and future opportunities for rational drug design to guide next generation modulators of the cGAS STING ENPP1 axis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0839",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of pineal research",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0839_persistent_endothelial_glycocalyx_disruption_in_sepsis_trans.md",
+   "snippet": "Title Persistent Endothelial Glycocalyx Disruption in Sepsis: Translational Evidence for Melatonin Mediated Vascular Protection Authors Martín Estebané María, Acuña Fernández Carlos, López Soto Pablo J, Hernández Belsmeisl Jessica, López Co",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of pineal research Title Persistent Endothelial Glycocalyx Disruption in Sepsis: Translational Evidence for Melatonin Mediated Vascular Protection Authors Martín Estebané María, Acuña Fernández Carlos, López Soto Pablo J, Hernández Belsmeisl Jessica, López Coleto Luna, Darias Delbey Beneharo, de la Fuente Martos Carmen, San Luis Arranz Begoña, et al. Journal / DOI Journal of pineal research · DOI: 10.1111/jpi.70193 · PMID: 42927469 https://pubmed.ncbi.nlm.nih.gov/42927469/ Abstract Sepsis is a life threatening syndrome driven by a dysregulated host response to infection, with endothelial dysfunction and glycocalyx disruption playing central roles in vascular failure. Despite growing recognition of the glycocalyx as a therapeutic target, its temporal dynamics and potential pharmacological modulation remain poorly understood. We performed a translational study combining longitudinal clinical observations in septic patients with mechanistic investigations in a murine cecal ligation and puncture (CLP) model. Plasma from patients was collected at intensive care unit admission and after clinical recovery to assess inflammatory mediators, coagulation parameters, and glycocalyx related biomarkers. In parallel, the CLP model evaluated systemic and tissue specific glycocalyx alterations and the effects of injectable melatonin. Acute sepsis induced marked alterations in multiple glycocalyx related biomarkers in patients, with several changes persisting despite normalization of organ dysfunction and standard inflammatory indices, indicating ongoing endothelial injury and repair. In the CLP model, sepsis reproduced these alterations, while melatonin treatment significantly attenuated systemic cytokine responses and partially restored circulating and tissue glycocalyx components in an organ and gene specific manner. These results highlight persistent, dynamic glycocalyx disruption as a key driver of sepsis pathology and support pharmacological stabilization of the glycocalyx as a promising therapeutic strategy. Melatonin emerges as a potential endothelial protective agent capable of promoting vascular recovery and homeostasis, providing translational insight for interventions targeting microvascular integrity in sepsis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0838",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Romanian journal of internal medicine = Revue roumaine de medecine interne",
+   "confidence": "medium",
+   "date": "2026-10-25",
+   "path": "content/papers/2026/2026-10-25_paper-2026-0838_same_class_different_risk_dapagliflozin_versus_empagliflozin.md",
+   "snippet": "Title Same Class, Different Risk? Dapagliflozin versus Empagliflozin and Genitourinary Safety in Heart Failure with Preserved Ejection Fraction: A Retrospective Comparative Cohort Study Authors Danau Razvan Alexandru, Munteanu Madalina Andr",
+   "text": "Cardiology scraped pubmed PubMed / Romanian journal of internal medicine = Revue roumaine de medecine interne Title Same Class, Different Risk? Dapagliflozin versus Empagliflozin and Genitourinary Safety in Heart Failure with Preserved Ejection Fraction: A Retrospective Comparative Cohort Study Authors Danau Razvan Alexandru, Munteanu Madalina Andreea, Muraru Minerva, Nicolae Camelia, Predoiu Gabriel, Bardan Andreea, Jinga Viorel Journal / DOI Romanian journal of internal medicine = Revue roumaine de medecine interne · DOI: 10.2478/rjim 2026 0024 · PMID: 42927657 https://pubmed.ncbi.nlm.nih.gov/42927657/ Abstract BACKGROUND: Sodium glucose cotransporter 2 inhibitors are guideline directed therapy for heart failure with preserved ejection fraction (HFpEF), but comparative genitourinary safety data for dapagliflozin and empagliflozin in HFpEF treated populations remain limited. OBJECTIVE: To compare 6 month symptomatic urinary tract infection (UTI), asymptomatic bacteriuria, and other genitourinary adverse events among patients newly initiated on dapagliflozin or empagliflozin for HFpEF. METHODS: This retrospective, single centre comparative cohort study included 239 adults with physician documented HFpEF retained after a requirement for at least 6 months of continuous follow up: 113 received dapagliflozin 10 mg once daily and 126 received empagliflozin 10 mg once daily. The original outcome of any documented bacteriuria/UTI was separated into symptomatic UTI and asymptomatic bacteriuria. Risk differences and 95% confidence intervals were calculated; a multivariable logistic model of the original documented bacteriuria/UTI composite adjusted for age, sex, and baseline estimated glomerular filtration rate (eGFR). RESULTS: Any documented bacteriuria/UTI occurred in 21/113 (18.6%) dapagliflozin treated participants and 25/126 (19.8%) empagliflozin treated participants. Symptomatic UTI occurred in 4/113 (3.5%) and 5/126 (4.0%), respectively; 17/113 (15.0%) and 20/126 (15.9%) had documented asymptomatic bacteriuria. The risk difference for the composite, calculated as empagliflozin minus dapagliflozin, was 1.3 percentage points (95% CI 8.9 to 11.2). The adjusted odds ratio was 1.62 (95% CI 0.76 3.45; p = 0.208). Other genitourinary events were uncommon and estimates were imprecise. CONCLUSIONS: No statistically detectable between group difference was found in symptomatic UTI, asymptomatic bacteriuria, or the original composite outcome. Confidence intervals were wide and compatible with clinically meaningful differences in either direction. These exploratory findings require confirmation in prospective multicentre studies with standardized culture ascertainment and complete follow up. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0441",
