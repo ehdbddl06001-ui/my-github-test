@@ -538,8 +538,29 @@
    "date": "2026-10-26",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0445": {
+   "id": "imaging-2026-0445",
+   "exam": "imaging",
+   "subject": "응급·중환자",
+   "step": "Step 2",
+   "type": "응급·중환자·외상 — 넘어진 고령 남성의 목 통증과 시상 경추 CT",
+   "style": "usmle_style",
+   "modality": "CT",
+   "question": "Which of the following is the most likely diagnosis?",
+   "chosen": 2,
+   "chosenText": "Fracture extending into the C2 vertebral body (type III odontoid fracture)",
+   "answer": 1,
+   "answerText": "Fracture through the base of the dens (type II odontoid fracture)",
+   "coreNote": "",
+   "differ": "",
+   "decision": "고령 남성이 앞으로 넘어진 뒤 위쪽 목 통증을 호소하고, 시상 CT 에서 치아돌기 기저부를 가로지르는 골절선이 C2 몸통으로 내려가지 않는다. II형 치아돌기 골절이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261026T202631Z_일일영상_2026-10-27_12units_12q_4d63a54b",
+   "date": "2026-10-27",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-26T00:16:49.932Z"
+ "updated": "2026-10-26T23:00:44.877Z"
 }
