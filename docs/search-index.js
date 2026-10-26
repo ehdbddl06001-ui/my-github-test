@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4057,
+  "total": 4058,
   "byType": {
    "usmle": 216,
+   "concept": 115,
    "kmle": 1568,
    "imaging": 452,
-   "concept": 114,
    "paper": 844,
    "anatomy": 846,
    "ailab": 14,
@@ -69,9 +69,9 @@ window.MEDKOS_INDEX = {
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "Obstetrics and Gynecology": 3,
    "Oncology": 3,
    "Medical Imaging AI": 2,
-   "Obstetrics and Gynecology": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
@@ -80,8 +80,8 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2842,
-   "low": 51,
-   "medium": 1164
+   "medium": 1165,
+   "low": 51
   },
   "tagCount": 5064
  },
@@ -213,6 +213,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0224.md",
    "snippet": "A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and sin",
    "text": "Physiology Lightheadedness on Standing After Three Days of Watery Diarrhea in a 26-Year-Old Woman Back From Mexico baroreceptor-reflex hypovolemia orthostatic-hypotension sinus-tachycardia autonomic-control mechanism USMLE-style / MedKOS (Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14th ed. Elsevier; 2021 — Nervous regulation of the circulation: baroreceptor reflex; Costanzo LS. Physiology. 7th ed. Elsevier; 2022 — Regulation of arterial pressure) A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and since yesterday she has been unable to keep fluids down. She takes no medications. Her vital signs, measured while she is supine, are shown. When she sits up, her pulse increases to 138/min and her blood pressure decreases to 84/56 mm Hg, and she feels faint. The mucous membranes are dry, and capillary refill time is 4 seconds. There is no jugular venous distention, and the lungs are clear to auscultation. The abdomen is soft with hyperactive bowel sounds and mild diffuse tenderness. Laboratory results are shown. A rhythm strip is shown. Which of the following is the most likely mechanism of this patient's increased heart rate? A. Increased carotid sinus afferent firing, increasing vagal outflow to the sinoatrial node B. Decreased carotid sinus afferent firing, decreasing vagal and increasing sympathetic outflow C. Increased atrial stretch receptor firing, increasing sympathetic outflow to the sinoatrial node D. Increased peripheral chemoreceptor firing from acidemia, increasing sympathetic outflow E. Increased angiotensin II acting directly on sinoatrial node pacemaker cells 3일간의 수양성 설사와 경구 섭취 불가로 세포외액이 빠졌다 — 점막 건조, 모세혈관 재충전 지연, BUN/크레아티닌 상승, 혈색소 농축, 경정맥 팽대 없음, 앉을 때 혈압이 더 떨어지고 맥박이 더 오르는 기립 반응이 모두 혈관 내 용적 감소를 가리킨다. 정맥 환류와 1회 박출량이 줄어 평균 동맥압과 맥압이 떨어지면 경동맥동(설인신경)·대동맥궁(미주신경) 압수용체가 덜 늘어나 구심 발화가 감소한다. 연수 심혈관 중추는 이를 「혈압 저하」로 읽고 미주신경의 동방결절 억제를 줄이며 교감 출력(동방결절 β1, 세동맥 α1)을 늘린다 — 리듬 띠의 동성 빈맥이 그 결과다. 압수용체 반사는 초 단위의 빠른 혈압 조절 기전이라 자세를 바꿀 때 맥박이 곧바로 더 오르는 것을 설명한다."
+  },
+  {
+   "id": "cn.obgyn.hirsutism.evaluation-tumor-vs-pcos",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics and Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.hirsutism.evaluation-tumor-vs-pcos.md",
+   "snippet": "판단 — 왜 진행 속도와 남성화를 먼저 보는가 다모증(hirsutism)은 대부분 특발성이거나 다낭난소증후군(polycystic ovary syndrome, PCOS) 의 안드로겐 과다이고, 드물게 비고전 선천부신증식증(nonclassic congenital adrenal hyperplasia) 이다 [[harrison 21: 394장 p.3039]]. 흔한 원인은 10~20대에 시작해 천천히 진행한다. 갑자기 생겨 빨리 진행",
+   "text": "Obstetrics and Gynecology 판단 — 왜 진행 속도와 남성화를 먼저 보는가 다모증(hirsutism)은 대부분 특발성이거나 다낭난소증후군(polycystic ovary syndrome, PCOS) 의 안드로겐 과다이고, 드물게 비고전 선천부신증식증(nonclassic congenital adrenal hyperplasia) 이다 [[harrison 21: 394장 p.3039]]. 흔한 원인은 10~20대에 시작해 천천히 진행한다. 갑자기 생겨 빨리 진행 하면 안드로겐 분비 종양을 의심하고, 이때는 남성화(virilization: 목소리 굵어짐·유방 위축·근육 증가·음핵 비대)가 함께 오기도 한다 [[harrison 21: 394장 p.3039]]. 그래서 첫 혈액검사는 총·유리 테스토스테론과 DHEAS 이고, 수치가 종양 범위면 부신 CT·MRI 나 난소 초음파로 종괴를 찾는다 [[harrison 21: 394장 p.3041]]. 경도·단독 다모증은 바로 정밀검사하지 않고 피부과 처치나 경구피임약을 시도하되 진행하면 다시 평가한다 [[harrison 21: 394장 p.3041 그림 394 2]]. 기전 — 연모가 성모로 바뀐다 털 주머니 수는 평생 같고, 안드로겐이 털피지샘 단위(pilosebaceous unit) 를 성모(terminal hair) 또는 피지샘으로 분화시킨다 [[harrison 21: 394장 p.3039]]. 얼굴·가슴·윗배·등의 털은 높은 안드로겐이 있어야 자라므로 이 부위의 성모 과다가 다모증이다. 다만 안드로겐 농도와 털의 양은 느슨하게만 비례한다 — 국소 성장인자, 털 단위의 민감도, 유전·인종이 함께 정한다 [[harrison 21: 394장 p.3039]]. 순환하는 주 안드로겐은 테스토스테론으로, 난소와 부신이 비슷하게 기여하고 절반은 말초 전환에서 온다 [[harrison 21: 394장 p.3040]]. 털 단위 안의 5α 환원효소가 이를 더 강한 다이하이드로테스토스테론(DHT) 으로 바꾼다. 작용하는 것은 SHBG 에 결합하지 않은 유리 분획이고, 고인슐린혈증과 안드로겐 과다는 SHBG 를 줄여 총량보다 유리 테스토스테론을 더 올린다 [[harrison 21: 394장 p.3041]]. 가르는 소견 — 속도·남성화·수치 병력 : 초경부터 희발월경이면 부신보다 난소성 안드로겐 과다가 더 가능하다. 불임·다모증 가족력은 비고전 CAH 를 시사한다 [[harrison 21: 394장 p.3039]]. 진찰 : 수정 페리먼 골웨이 점수(modified Ferriman Gallwey score) 는 9부위를 0~4점으로 매기고 8점을 넘으면 호르몬 평가를 한다. 털과다증과 다모증을 가르고 치료 반응의 기준점이 된다 [[harrison 21: 394장 p.3039]]. 수치의 해석 한계 : DHEAS 의 약간 상승은 PCOS 에서도 흔하다. 덱사메타손 안드로겐 억제검사로 유리 테스토스테론이 정상까지 내려가면 부신성, 덜 내려가면 난소성이다 [[harrison 21: 394장 p.3041–3042]]. 권고와 예외 치료 반응은 6개월 뒤에 판정한다. 경구피임약이 미용·피부 처치 다음의 1차 내분비 치료이고, 비고전 CAH 의 다모증에도 글루코코르티코이드보다 먼저 쓴다 [[harrison 21: 394장 p.3042]]. 경구피임약은 혈전색전증 병력·에스트로겐 의존 암 위험에서 금기, 흡연·고혈압·편두통에서 상대 금기다 [[harrison 21: 394장 p.3042]]. 스피로노락톤(100~200 mg/일)·피나스테리드는 남성 태아의 성분화를 해칠 수 있어 임신을 피한다 — 그래서 흔히 경구피임약과 함께 쓴다 [[harrison 21: 394장 p.3042]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 페리먼 골웨이 8점 기준과 인종 — 시험 기준: 8점 초과면 안드로겐 매개 털 과다로 보고 호르몬 평가 [[harrison 21: 394장 p.3039]] / 다른 기준: 8점 미만은 비히스패닉 백인·흑인 여성 약 95% 의 범위이고, 아시아·아메리카 원주민 여성은 다모증으로 덜 드러나 고름 여드름·두피 모발 얇아짐만 있을 수 있다 [[harrison 21: 394장 p.3039]] / 왜 다른가: 털 단위의 안드로겐 민감도가 인종마다 다르다 / 시험에서는: KMLE · USMLE 모두 8점 기준을 쓰되, 아시아 여성에서는 점수가 낮아도 고름 여드름·두피 모발 얇아짐을 안드로겐 과다 단서로 본다. Z2 충돌 · PCOS 의 LH/FSH 비 — 시험 기준: 무작위 LH·FSH 는 권하지 않는다 [[harrison 21: 394장 p.3041]] / 다른 기준: 신중히 연구한 PCOS 환자에서는 LH/FSH 비 상승이 특징이다 [[harrison 21: 394장 p.3041]] / 왜 다른가: 생식샘자극호르몬은 박동성으로 분비돼 한 번 잰 값이 흔들린다 / 시험에서는: KMLE · USMLE 모두 LH/FSH 비를 진단 필수 검사로 고르지 않는다."
   },
   {
    "id": "kmle-2026-1601",

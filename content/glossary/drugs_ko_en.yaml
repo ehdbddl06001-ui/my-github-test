@@ -2,6 +2,15 @@
 # 약 = RxNorm 정확 일치, 약군 = MeSH 표목(check)으로 확인한 것만 verified.json 에 들어가고, 조판은 verified.json 만 쓴다.
 # 추가·수정 뒤: python pipelines/verify_glossary.py (NLM RxNav·MeSH API 조회 — 네트워크 필요)
 drugs:
+  코신트로핀: cosyntropin
+  드로스피레논: drospirenone
+  두타스테리드: dutasteride
+  페니토인: phenytoin
+  미녹시딜: minoxidil
+  플루타마이드: flutamide
+  사이프로테론: cyproterone
+  피나스테리드: finasteride
+  스피로노락톤: spironolactone
   메토트렉세이트: methotrexate
   히드록시클로로퀸: hydroxychloroquine
   하이드록시클로로퀸: hydroxychloroquine
