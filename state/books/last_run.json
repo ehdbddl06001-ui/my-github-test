@@ -1,14 +1,14 @@
 {
- "started": "2026-10-26T08:27:44+09:00",
+ "started": "2026-10-27T09:41:33+09:00",
  "built": [
+  "정형외과",
+  "내분비내과",
   "Obstetrics and Gynecology"
  ],
  "skipped": [
   "응급의학과",
-  "정형외과",
   "피부과",
   "순환기내과",
-  "내분비내과",
   "안과",
   "외과",
   "산부인과",
@@ -29,9 +29,16 @@
  "retry": [],
  "previews": [],
  "validation": {
+  "정형외과": [],
+  "내분비내과": [],
   "Obstetrics and Gynecology": []
  },
  "notes": {
+  "정형외과": [
+   "마지막 쪽 내용이 적다(7%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
+  ],
+  "내분비내과": [],
   "Obstetrics and Gynecology": []
  },
  "concept_errors": [
@@ -46,37 +53,99 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "Obstetrics and Gynecology": {
-   "tried": 7,
+  "정형외과": {
+   "tried": 129,
    "diagram_after_section": {
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 11,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#fig:f1": 9,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging": 14,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 42,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#fig:f1": 9,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale": 20,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#shrink": 0.76,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#pad": 0,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#col": false,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis": 13,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis#shrink": 1.0,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis#pad": 42,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis#col": false,
+    "u-cn-ortho-scfe-in-situ-fixation": 17,
+    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
+    "u-cn-ortho-scfe-in-situ-fixation#pad": 0,
+    "u-cn-ortho-scfe-in-situ-fixation#col": true
+   }
+  },
+  "내분비내과": {
+   "tried": 70,
+   "diagram_after_section": {
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#fig:f1": 13,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization": 7,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#shrink": 1.0,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#pad": 0,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#col": false,
+    "u-cn-endo-thyroid-follicular-cell-tsh-target#figscale:f1": 0.85,
+    "u-cn-endo-thyroid-follicular-cell-tsh-target": 15,
+    "u-cn-endo-thyroid-follicular-cell-tsh-target#shrink": 1.0,
+    "u-cn-endo-thyroid-follicular-cell-tsh-target#pad": 14,
+    "u-cn-endo-thyroid-follicular-cell-tsh-target#col": false,
+    "u-cn-endo-cushing-syndrome-screening-test": 21,
+    "u-cn-endo-cushing-syndrome-screening-test#shrink": 1.0,
+    "u-cn-endo-cushing-syndrome-screening-test#pad": 0,
+    "u-cn-endo-cushing-syndrome-screening-test#col": false,
+    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade": 17,
+    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#shrink": 1.0,
+    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#pad": 28,
+    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#col": false
+   }
+  },
+  "Obstetrics and Gynecology": {
+   "tried": 17,
+   "diagram_after_section": {
+    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 6,
     "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#shrink": 1.0,
     "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#pad": 0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#col": true
+    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#col": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-26T08:28:09+09:00",
+ "finished": "2026-10-27T09:46:28+09:00",
  "upload": {
   "result": "ok",
   "items": {
+   "정형외과": {
+    "file": "MedKOS_학습서_정형외과.pdf",
+    "status": "uploaded",
+    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
+    "kept_id": true,
+    "md5": "cf96eec301b74afb523e46a02b3880dc",
+    "archive": "MedKOS_학습서_정형외과_v14_2026-10-27.pdf"
+   },
+   "내분비내과": {
+    "file": "MedKOS_학습서_내분비내과.pdf",
+    "status": "uploaded",
+    "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
+    "kept_id": true,
+    "md5": "5316fd650a2791e13528a2cafa8642e9",
+    "archive": "MedKOS_학습서_내분비내과_v9_2026-10-27.pdf"
+   },
    "Obstetrics and Gynecology": {
     "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
     "status": "uploaded",
     "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
     "kept_id": true,
-    "md5": "1b636089346051c8106a4a5d776df29a",
-    "archive": "MedKOS_학습서_Obstetrics_and_Gynecology_v2_2026-10-26.pdf"
+    "md5": "b827c3dda1621f825d361f18df9bc400",
+    "archive": "MedKOS_학습서_Obstetrics_and_Gynecology_v3_2026-10-27.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "0cb69fe317243dfbf9dcc6e425f1e15f"
+    "md5": "7534f92993e10df5a48115fd42d9eb11"
    }
   },
-  "at": "2026-10-26T08:28:09+09:00"
+  "at": "2026-10-27T09:46:28+09:00"
  }
 }

@@ -359,11 +359,11 @@
    ]
   },
   "정형외과": {
-   "hash": "479c770352c012801ac5",
-   "version": 13,
-   "date": "2026-10-09",
+   "hash": "8664c84020094cb39812",
+   "version": 14,
+   "date": "2026-10-27",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 13,
+   "pages": 15,
    "template_version": 11,
    "units": {
     "cn.ortho.scaphoid-fracture.occult-imaging": {
@@ -378,30 +378,36 @@
      "concept_hash": "ffd2be60f94fba93",
      "concept_version": 4
     },
+    "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis": {
+     "title": "환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나",
+     "page": 7,
+     "concept_hash": "327d614915e416f7",
+     "concept_version": 2
+    },
     "cn.ortho.achilles-rupture.thompson-test": {
      "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
-     "page": 7,
+     "page": 9,
      "concept_hash": "c55a14c1972e4b5a",
      "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 8,
+     "page": 10,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
-     "page": 10,
+     "page": 12,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "8ab998404f14db1fd4bb3b817a5e5204",
-    "version": 13,
-    "uploaded": "2026-10-09T10:30:31+09:00"
+    "md5": "cf96eec301b74afb523e46a02b3880dc",
+    "version": 14,
+    "uploaded": "2026-10-27T09:46:28+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -416,12 +422,11 @@
     "MedKOS_학습서_정형외과_v10_2026-10-05.pdf",
     "MedKOS_학습서_정형외과_v11_2026-10-06.pdf",
     "MedKOS_학습서_정형외과_v12_2026-10-08.pdf",
-    "MedKOS_학습서_정형외과_v13_2026-10-09.pdf"
+    "MedKOS_학습서_정형외과_v13_2026-10-09.pdf",
+    "MedKOS_학습서_정형외과_v14_2026-10-27.pdf"
    ],
    "changes": [
-    "새 단원: 잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
-    "내용 갱신: 넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류 (정리본 v3 → v4)",
-    "내용 갱신: 소아 융기 골절 — 안정 골절이라 정복 없이 부목 (정리본 v2 → v3)"
+    "새 단원: 환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나"
    ]
   },
   "외과": {
@@ -929,11 +934,11 @@
    "changes": []
   },
   "내분비내과": {
-   "hash": "d70182cc3178f29d964b",
-   "version": 8,
-   "date": "2026-10-04",
+   "hash": "9852878d0d3b04239e0b",
+   "version": 9,
+   "date": "2026-10-27",
    "file": "MedKOS_학습서_내분비내과.pdf",
-   "pages": 9,
+   "pages": 11,
    "template_version": 11,
    "units": {
     "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization": {
@@ -942,30 +947,36 @@
      "concept_hash": "5c10eeb4d04cd66e",
      "concept_version": 3
     },
+    "cn.endo.thyroid-follicular-cell.tsh-target": {
+     "title": "갑상샘 여포세포 — 염색 세포를 직접 움직이는 것은 TSH",
+     "page": 4,
+     "concept_hash": "d9d6822ad4ca4af9",
+     "concept_version": 2
+    },
     "cn.endo.cushing-syndrome.screening-test": {
      "title": "쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터",
-     "page": 4,
+     "page": 6,
      "concept_hash": "108f0605037f8ad3",
      "concept_version": 2
     },
     "cn.endo.pheochromocytoma.preoperative-alpha-blockade": {
      "title": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
-     "page": 6,
+     "page": 8,
      "concept_hash": "99dfbf2fa4afa2fa",
      "concept_version": 2
     },
     "cn.endo.hhs.initial-fluid-resuscitation": {
      "title": "HHS — 첫 치료는 인슐린이 아니라 등장식염수",
-     "page": 8,
+     "page": 10,
      "concept_hash": "d67c6e924d21865e",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
-    "md5": "383278bf3b490130b7eed7d4a30ca31e",
-    "version": 8,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "5316fd650a2791e13528a2cafa8642e9",
+    "version": 9,
+    "uploaded": "2026-10-27T09:46:28+09:00"
    },
    "archive": [
     "MedKOS_학습서_내분비내과_v1_2026-09-25.pdf",
@@ -975,10 +986,11 @@
     "MedKOS_학습서_내분비내과_v5_2026-09-28.pdf",
     "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf",
     "MedKOS_학습서_내분비내과_v7_2026-10-03.pdf",
-    "MedKOS_학습서_내분비내과_v8_2026-10-04.pdf"
+    "MedKOS_학습서_내분비내과_v8_2026-10-04.pdf",
+    "MedKOS_학습서_내분비내과_v9_2026-10-27.pdf"
    ],
    "changes": [
-    "내용 갱신: 갑상샘 IHC — 콜로이드를 채우면 타이로글로불린 (정리본 v2 → v3)"
+    "새 단원: 갑상샘 여포세포 — 염색 세포를 직접 움직이는 것은 TSH"
    ]
   },
   "혈액종양내과": {
@@ -1311,11 +1323,11 @@
    ]
   },
   "Obstetrics and Gynecology": {
-   "hash": "c7a3c9e84edc0a78b59e",
-   "version": 2,
-   "date": "2026-10-26",
+   "hash": "2bed0b6c9e6e45c2f29e",
+   "version": 3,
+   "date": "2026-10-27",
    "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
-   "pages": 4,
+   "pages": 6,
    "template_version": 11,
    "units": {
     "cn.obgyn.menstrual-cycle.ovulation-confirmation": {
@@ -1329,32 +1341,39 @@
      "page": 3,
      "concept_hash": "9af1b5e2fcc07cf9",
      "concept_version": 1
+    },
+    "cn.obgyn.hirsutism.evaluation-tumor-vs-pcos": {
+     "title": "다모증 — 급속 진행·남성화면 종양부터 찾는다",
+     "page": 5,
+     "concept_hash": "e1a9b7651898ad63",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
-    "md5": "1b636089346051c8106a4a5d776df29a",
-    "version": 2,
-    "uploaded": "2026-10-26T08:28:09+09:00"
+    "md5": "b827c3dda1621f825d361f18df9bc400",
+    "version": 3,
+    "uploaded": "2026-10-27T09:46:28+09:00"
    },
    "archive": [
     "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf",
-    "MedKOS_학습서_Obstetrics_and_Gynecology_v2_2026-10-26.pdf"
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v2_2026-10-26.pdf",
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v3_2026-10-27.pdf"
    ],
    "changes": [
-    "새 단원: 일차무월경·자궁 없음 — 핵형이 CAIS와 MRKH를 가른다"
+    "새 단원: 다모증 — 급속 진행·남성화면 종양부터 찾는다"
    ]
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "0cb69fe317243dfbf9dcc6e425f1e15f",
+   "md5": "7534f92993e10df5a48115fd42d9eb11",
    "version": null,
-   "uploaded": "2026-10-26T08:28:09+09:00"
+   "uploaded": "2026-10-27T09:46:28+09:00"
   }
  },
- "updated": "2026-10-26"
+ "updated": "2026-10-27"
 }
