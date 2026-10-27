@@ -117,6 +117,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.odontoid-fracture.diagnosis",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0445.png",
    "caption": "Sagittal CT of the upper cervical spine and craniocervical junction, bone window — one panel cropped from a published case figure; the red arrow and blue ellipse are the authors' original markings (PMC Open Access Subset, CC BY — no adjustment)",

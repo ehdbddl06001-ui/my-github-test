@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-26",
+ "generated": "2026-10-27",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4058,
+  "total": 4066,
   "byType": {
    "usmle": 216,
-   "concept": 115,
+   "concept": 116,
+   "paper": 851,
    "kmle": 1568,
    "imaging": 452,
-   "paper": 844,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 276,
+   "Cardiology": 277,
    "Nephrology": 222,
-   "Infectious Disease": 204,
-   "Pediatrics": 188,
+   "Infectious Disease": 205,
+   "Pediatrics": 189,
    "Obstetrics & Gynecology": 137,
-   "Pathology": 125,
+   "Pathology": 126,
+   "Hematology-Oncology": 122,
    "Rheumatology": 122,
-   "Hematology-Oncology": 121,
    "Psychiatry": 118,
    "Neurology": 116,
    "General Surgery": 106,
+   "Surgery": 105,
    "Endocrinology": 104,
-   "Surgery": 104,
-   "Orthopedics": 103,
+   "Orthopedics": 104,
    "Dermatology": 102,
    "Gastroenterology": 101,
    "Ophthalmology": 100,
    "Pulmonology": 100,
    "Hematology": 95,
-   "Laboratory Medicine": 86,
+   "Laboratory Medicine": 87,
    "산부인과": 67,
    "순환기": 39,
    "호흡기": 30,
@@ -80,8 +80,8 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2842,
-   "medium": 1165,
-   "low": 51
+   "low": 52,
+   "medium": 1172
   },
   "tagCount": 5064
  },
@@ -215,6 +215,20 @@ window.MEDKOS_INDEX = {
    "text": "Physiology Lightheadedness on Standing After Three Days of Watery Diarrhea in a 26-Year-Old Woman Back From Mexico baroreceptor-reflex hypovolemia orthostatic-hypotension sinus-tachycardia autonomic-control mechanism USMLE-style / MedKOS (Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14th ed. Elsevier; 2021 — Nervous regulation of the circulation: baroreceptor reflex; Costanzo LS. Physiology. 7th ed. Elsevier; 2022 — Regulation of arterial pressure) A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and since yesterday she has been unable to keep fluids down. She takes no medications. Her vital signs, measured while she is supine, are shown. When she sits up, her pulse increases to 138/min and her blood pressure decreases to 84/56 mm Hg, and she feels faint. The mucous membranes are dry, and capillary refill time is 4 seconds. There is no jugular venous distention, and the lungs are clear to auscultation. The abdomen is soft with hyperactive bowel sounds and mild diffuse tenderness. Laboratory results are shown. A rhythm strip is shown. Which of the following is the most likely mechanism of this patient's increased heart rate? A. Increased carotid sinus afferent firing, increasing vagal outflow to the sinoatrial node B. Decreased carotid sinus afferent firing, decreasing vagal and increasing sympathetic outflow C. Increased atrial stretch receptor firing, increasing sympathetic outflow to the sinoatrial node D. Increased peripheral chemoreceptor firing from acidemia, increasing sympathetic outflow E. Increased angiotensin II acting directly on sinoatrial node pacemaker cells 3일간의 수양성 설사와 경구 섭취 불가로 세포외액이 빠졌다 — 점막 건조, 모세혈관 재충전 지연, BUN/크레아티닌 상승, 혈색소 농축, 경정맥 팽대 없음, 앉을 때 혈압이 더 떨어지고 맥박이 더 오르는 기립 반응이 모두 혈관 내 용적 감소를 가리킨다. 정맥 환류와 1회 박출량이 줄어 평균 동맥압과 맥압이 떨어지면 경동맥동(설인신경)·대동맥궁(미주신경) 압수용체가 덜 늘어나 구심 발화가 감소한다. 연수 심혈관 중추는 이를 「혈압 저하」로 읽고 미주신경의 동방결절 억제를 줄이며 교감 출력(동방결절 β1, 세동맥 α1)을 늘린다 — 리듬 띠의 동성 빈맥이 그 결과다. 압수용체 반사는 초 단위의 빠른 혈압 조절 기전이라 자세를 바꿀 때 맥박이 곧바로 더 오르는 것을 설명한다."
   },
   {
+   "id": "cn.ortho.odontoid-fracture.diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "low",
+   "date": "2026-10-27",
+   "path": "content/concepts/orthopedics/cn.ortho.odontoid-fracture.diagnosis.md",
+   "snippet": "판단 — 왜 II형이 먼저인가 고령자가 앞으로 넘어져 이마를 부딪친 뒤의 위쪽 목 통증은 치아돌기 골절의 전형적 상황이다 [[?tintinalli 9]]. 65세 초과라 경추 영상의 적응이고 [[harrison 21: 17장 p.127]], C2 골절은 CT 가 잘 찾는다 [[harrison 21: 17장 p.120]]. 결정적 소견은 골절선의 높이 다. 선이 치아돌기 허리(기저부)를 가로지르고 C2 몸통 해면골로 내려가지 않",
+   "text": "Orthopedics 판단 — 왜 II형이 먼저인가 고령자가 앞으로 넘어져 이마를 부딪친 뒤의 위쪽 목 통증은 치아돌기 골절의 전형적 상황이다 [[?tintinalli 9]]. 65세 초과라 경추 영상의 적응이고 [[harrison 21: 17장 p.127]], C2 골절은 CT 가 잘 찾는다 [[harrison 21: 17장 p.120]]. 결정적 소견은 골절선의 높이 다. 선이 치아돌기 허리(기저부)를 가로지르고 C2 몸통 해면골로 내려가지 않으면 II형이다 [[?anderson 1974]]. 정상 신경 진찰은 진단을 바꾸지 않고 치료 선택·긴급도에 쓰이는 정보다. 그림 안의 다른 표시(후두골 병변)는 진단과 무관하다. 기전 — 지렛대가 허리를 꺾는다 치아돌기는 환추(C1) 앞고리 뒤에 끼워진 축으로, 횡인대가 붙잡아 머리 회전의 중심이 된다. 앞으로 넘어져 이마를 부딪치면 머리가 꺾이고, C1 이 치아돌기를 C2 몸통에 대고 지렛대처럼 민다. 힘은 치아돌기와 몸통이 만나는 가장 좁은 곳 — 허리 — 에 모인다 [[?anderson 1974]]. 나이가 들면 뼈가 약해져 낮은 에너지로도 부러진다 [[?tintinalli 9]] — 진행된 골다공증 환자는 경미한 외상에도 영상을 고려하라는 이유다 [[harrison 21: 17장 p.127]]. 왜 높이가 예후를 정하나 : 허리의 골절면은 좁고 대부분 피질골이라 접촉·혈류가 부족해 불유합이 흔하다. 몸통으로 내려간 골절은 넓은 해면골끼리 맞닿아 대개 보조기로 붙는다 [[?anderson 1974]]. 그래서 같은 「치아돌기 골절」이라도 형이 치료 방향을 가른다. 가르는 소견 — 시상 CT 에서 골절선을 끝까지 따라간다 판독 순서: ① 치아돌기에 급성 골절선이 있나(날카로운 선·전위) ② 그 선이 끝·허리·몸통 중 어디를 지나나 ③ 전위·각형성의 방향 ④ C1 고리도 보았나. 해석 한계 : 한 장의 시상 영상에서는 선이 몸통에 닿았는지 애매할 수 있다 — 관상 재구성을 함께 본다. 둥글고 매끈한 피질로 둘러싼 뼈조각은 급성 골절이 아니라 치아돌기뼈일 수 있다. 척수 손상 여부는 CT 가 아니라 MRI 로 본다 [[harrison 21: 17장 p.127]]. C2 에 골절이 있으면 C1 도 확인한다 — 문항 그림의 원 증례는 II형 치아돌기 골절에 제퍼슨 골절이 동반되었다 [[?pmc c1c2 2023]]. 권고와 예외 경추 외상이 의심되면 영상 전에 목을 고정한다 [[harrison 21: 17장 p.127]]. NEXUS 저위험 기준(정중선 압통·중독·신경 결손·주의 분산 손상이 모두 없음)을 만족하면 의미 있는 손상 가능성이 낮지만, 캐나다 경추 규칙은 65세 초과면 영상을 권한다 [[harrison 21: 17장 p.127]]. 심한 외상 뒤 급성 골절은 CT, 경미한 외상이나 CT 를 쓸 수 없으면 X 선, 척수·추골동맥 손상이 의심되면 MRI·MRA [[harrison 21: 17장 p.127]]. 형별 치료(II형의 수술 고정 여부, III형의 보조기)는 이 정리본의 근거 논문을 원문 대조하지 못했다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 17장 p.120·127 — 경추 외상의 고정·영상 선택만 다루고 치아돌기 골절 분류는 없다). (심화) 같은 낙상, 다른 높이 젊은 성인의 상부 경추 골절은 대개 고에너지 손상이지만, 고령자는 서 있는 높이에서 넘어지는 것만으로 치아돌기가 부러진다 [[?tintinalli 9]]. 기전이 같아도 골절선이 허리에 머물면 붙기 어렵고, 몸통으로 내려가면 잘 붙는다 [[?anderson 1974]]. 시험이 「II형 vs III형」을 묻는 이유는 이름이 아니라 이 유합 차이 — 곧 치료 선택 — 때문이다."
+  },
+  {
    "id": "cn.obgyn.hirsutism.evaluation-tumor-vs-pcos",
    "type": "concept",
    "unit": "",
@@ -227,6 +241,125 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/obstetrics-gynecology/cn.obgyn.hirsutism.evaluation-tumor-vs-pcos.md",
    "snippet": "판단 — 왜 진행 속도와 남성화를 먼저 보는가 다모증(hirsutism)은 대부분 특발성이거나 다낭난소증후군(polycystic ovary syndrome, PCOS) 의 안드로겐 과다이고, 드물게 비고전 선천부신증식증(nonclassic congenital adrenal hyperplasia) 이다 [[harrison 21: 394장 p.3039]]. 흔한 원인은 10~20대에 시작해 천천히 진행한다. 갑자기 생겨 빨리 진행",
    "text": "Obstetrics and Gynecology 판단 — 왜 진행 속도와 남성화를 먼저 보는가 다모증(hirsutism)은 대부분 특발성이거나 다낭난소증후군(polycystic ovary syndrome, PCOS) 의 안드로겐 과다이고, 드물게 비고전 선천부신증식증(nonclassic congenital adrenal hyperplasia) 이다 [[harrison 21: 394장 p.3039]]. 흔한 원인은 10~20대에 시작해 천천히 진행한다. 갑자기 생겨 빨리 진행 하면 안드로겐 분비 종양을 의심하고, 이때는 남성화(virilization: 목소리 굵어짐·유방 위축·근육 증가·음핵 비대)가 함께 오기도 한다 [[harrison 21: 394장 p.3039]]. 그래서 첫 혈액검사는 총·유리 테스토스테론과 DHEAS 이고, 수치가 종양 범위면 부신 CT·MRI 나 난소 초음파로 종괴를 찾는다 [[harrison 21: 394장 p.3041]]. 경도·단독 다모증은 바로 정밀검사하지 않고 피부과 처치나 경구피임약을 시도하되 진행하면 다시 평가한다 [[harrison 21: 394장 p.3041 그림 394 2]]. 기전 — 연모가 성모로 바뀐다 털 주머니 수는 평생 같고, 안드로겐이 털피지샘 단위(pilosebaceous unit) 를 성모(terminal hair) 또는 피지샘으로 분화시킨다 [[harrison 21: 394장 p.3039]]. 얼굴·가슴·윗배·등의 털은 높은 안드로겐이 있어야 자라므로 이 부위의 성모 과다가 다모증이다. 다만 안드로겐 농도와 털의 양은 느슨하게만 비례한다 — 국소 성장인자, 털 단위의 민감도, 유전·인종이 함께 정한다 [[harrison 21: 394장 p.3039]]. 순환하는 주 안드로겐은 테스토스테론으로, 난소와 부신이 비슷하게 기여하고 절반은 말초 전환에서 온다 [[harrison 21: 394장 p.3040]]. 털 단위 안의 5α 환원효소가 이를 더 강한 다이하이드로테스토스테론(DHT) 으로 바꾼다. 작용하는 것은 SHBG 에 결합하지 않은 유리 분획이고, 고인슐린혈증과 안드로겐 과다는 SHBG 를 줄여 총량보다 유리 테스토스테론을 더 올린다 [[harrison 21: 394장 p.3041]]. 가르는 소견 — 속도·남성화·수치 병력 : 초경부터 희발월경이면 부신보다 난소성 안드로겐 과다가 더 가능하다. 불임·다모증 가족력은 비고전 CAH 를 시사한다 [[harrison 21: 394장 p.3039]]. 진찰 : 수정 페리먼 골웨이 점수(modified Ferriman Gallwey score) 는 9부위를 0~4점으로 매기고 8점을 넘으면 호르몬 평가를 한다. 털과다증과 다모증을 가르고 치료 반응의 기준점이 된다 [[harrison 21: 394장 p.3039]]. 수치의 해석 한계 : DHEAS 의 약간 상승은 PCOS 에서도 흔하다. 덱사메타손 안드로겐 억제검사로 유리 테스토스테론이 정상까지 내려가면 부신성, 덜 내려가면 난소성이다 [[harrison 21: 394장 p.3041–3042]]. 권고와 예외 치료 반응은 6개월 뒤에 판정한다. 경구피임약이 미용·피부 처치 다음의 1차 내분비 치료이고, 비고전 CAH 의 다모증에도 글루코코르티코이드보다 먼저 쓴다 [[harrison 21: 394장 p.3042]]. 경구피임약은 혈전색전증 병력·에스트로겐 의존 암 위험에서 금기, 흡연·고혈압·편두통에서 상대 금기다 [[harrison 21: 394장 p.3042]]. 스피로노락톤(100~200 mg/일)·피나스테리드는 남성 태아의 성분화를 해칠 수 있어 임신을 피한다 — 그래서 흔히 경구피임약과 함께 쓴다 [[harrison 21: 394장 p.3042]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 페리먼 골웨이 8점 기준과 인종 — 시험 기준: 8점 초과면 안드로겐 매개 털 과다로 보고 호르몬 평가 [[harrison 21: 394장 p.3039]] / 다른 기준: 8점 미만은 비히스패닉 백인·흑인 여성 약 95% 의 범위이고, 아시아·아메리카 원주민 여성은 다모증으로 덜 드러나 고름 여드름·두피 모발 얇아짐만 있을 수 있다 [[harrison 21: 394장 p.3039]] / 왜 다른가: 털 단위의 안드로겐 민감도가 인종마다 다르다 / 시험에서는: KMLE · USMLE 모두 8점 기준을 쓰되, 아시아 여성에서는 점수가 낮아도 고름 여드름·두피 모발 얇아짐을 안드로겐 과다 단서로 본다. Z2 충돌 · PCOS 의 LH/FSH 비 — 시험 기준: 무작위 LH·FSH 는 권하지 않는다 [[harrison 21: 394장 p.3041]] / 다른 기준: 신중히 연구한 PCOS 환자에서는 LH/FSH 비 상승이 특징이다 [[harrison 21: 394장 p.3041]] / 왜 다른가: 생식샘자극호르몬은 박동성으로 분비돼 한 번 잰 값이 흔들린다 / 시험에서는: KMLE · USMLE 모두 LH/FSH 비를 진단 필수 검사로 고르지 않는다."
+  },
+  {
+   "id": "paper-2026-0851",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / NEJM AI",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0851_implementation_of_an_ai_triggered_rapid_response_association.md",
+   "snippet": "Title Implementation of an AI Triggered Rapid Response Association with Mortality Authors Nahass Thomas A, Hanna Joseph S, Liu Nancy, Martinez Nicole, Halm Ethan A, Rockman Amy, Roy Jason, Gilligan Christopher, et al. Journal / DOI NEJM AI ",
+   "text": "Surgery scraped pubmed PubMed / NEJM AI Title Implementation of an AI Triggered Rapid Response Association with Mortality Authors Nahass Thomas A, Hanna Joseph S, Liu Nancy, Martinez Nicole, Halm Ethan A, Rockman Amy, Roy Jason, Gilligan Christopher, et al. Journal / DOI NEJM AI · DOI: 10.1056/AIoa2500973 · PMID: 42932707 https://pubmed.ncbi.nlm.nih.gov/42932707/ Abstract BACKGROUND: Use of a real time, machine learning enabled clinical deterioration prediction model combined with an automated rapid response team (RRT) activation could reduce inpatient mortality. The objective was to assess reduction in risk adjusted inpatient mortality following implementation of the Epic Deterioration Index (EDI) combined with an automated RRT activation in a large regional health system. METHODS: We conducted a quasi experimental, staggered cohort study using a pre versus postimplementation design. The setting was a regional health system with 11 acute care hospitals including academic, community teaching, and nonteaching facilities. Participants included adult medical surgical admissions with an EDI greater than or equal to 60 from October 1, 2022, to August 30, 2024. We evaluated the clinical impact of deploying real time, targeted electronic health record (EHR) alerts and RRT push notifications; the primary outcome was risk adjusted inhospital mortality. RESULTS: The study included 23,132 patients. Mean age was 71.9 years, 51.6% were male, and 51.4% were non Hispanic white. In total, 10,803 patients (46.7%) were preintervention and 12,329 (53.3%) were postintervention; 5746 postintervention encounters (46.6%) generated a push notification to the RRT, although not all resulted in RRT activation. The postintervention group compared with the preintervention group was associated with increased RRT activations (37.5% vs. 25.3%; absolute difference, 12.2 percentage points [95% confidence interval (CI), 11.0 to 13.4]; adjusted odds ratio, 1.74 [95% CI, 1.61 to 1.88]) and decreased unadjusted inhospital mortality (18.6% vs. 23.1%; absolute difference, 4.5 percentage points [95% CI, 5.6 to 3.5]), without a significant increase in escalations of care (1.1% vs. 1.0%; absolute difference, 0.1 percentage points [95% CI, 0.18 to 0.37]; adjusted odds ratio, 1.34 [95% CI, 0.97 to 1.85]). Risk adjusted odds of inhospital mortality, accounting for age, comorbidities, hospital type, EDI score, and clustering at the hospital level were lower in the intervention group (adjusted odds ratio, 0.82 [95% CI, 0.74 to 0.91]). CONCLUSIONS: Implementation of the EDI combined with RRT activation was associated with a reduction in risk adjusted inpatient mortality across different types of hospitals in a large health system. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0850",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC gastroenterology",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0850_dupilumab_improves_clinical_outcome_assessments_in_children_.md",
+   "snippet": "Title Dupilumab improves clinical outcome assessments in children with eosinophilic esophagitis in a randomized phase 3 study Authors Chehade Mirna, Spergel Jonathan M, Oliva Salvatore, Dellon Evan S, Ashok Dhandapani, Rothenberg Marc E, Li",
+   "text": "Pediatrics scraped pubmed PubMed / BMC gastroenterology Title Dupilumab improves clinical outcome assessments in children with eosinophilic esophagitis in a randomized phase 3 study Authors Chehade Mirna, Spergel Jonathan M, Oliva Salvatore, Dellon Evan S, Ashok Dhandapani, Rothenberg Marc E, Liu Ruiqi, Louisias Margee, et al. Journal / DOI BMC gastroenterology · DOI: 10.1186/s12876 026 05017 8 · PMID: 42928144 https://pubmed.ncbi.nlm.nih.gov/42928144/ Abstract BACKGROUND: Eosinophilic esophagitis (EoE) is a chronic, progressive disease impacting patient quality of life (QoL). Assessment of pediatric EoE symptoms and their impact is challenging. This post hoc analysis of the phase 3 EoE KIDS trial (NCT04394351) evaluated a range of clinician , caregiver , and patient reported outcomes (ClinROs/ObsROs/PROs) in pediatric patients aged 1 11 years with active EoE. METHODS: EoE KIDS evaluated the efficacy and safety of dupilumab in a 16 week, placebo controlled, double blind period (Part A). ClinRO/ObsRO/PRO measures included the Pediatric EoE Sign/Symptom Questionnaire caregiver (PESQ C) and patient (PESQ P) versions, Pediatric EoE Symptom Score version 2.0 (PEESS v2.0 Caregiver version), Global Impression of Severity (GIS), Global Impression of Change (GIC), and Pediatric EoE Impact Scale (PEIS). EoE KIDS was not powered to detect significant differences in the main symptom measure, PESQ C. RESULTS: In Part A, 37 patients were assigned to higher exposure dupilumab and 34 to placebo. The percentage reduction (improvement) from baseline to week 16 (least squares mean [95% confidence interval]) in proportion of days with ≥1 EoE sign assessed by PESQ C was numerically greater with dupilumab ( 48.5% [ 73.4, 23.6]) than placebo ( 19.65% [ 45.3, 6.0]). Changes in symptoms and QoL assessed by PEESS v2.0 Caregiver version, GIS, GIC, and PEIS instruments also generally favored dupilumab vs. placebo. High concordance was observed between individual signs of EoE (symptoms observed by caregivers) and corresponding patient reported symptoms using PESQ C and PESQ P. CONCLUSIONS: Improvements with dupilumab vs. placebo were observed in most ClinROs and ObsROs, but these improvements were not consistent within certain PROs. TRIAL REGISTRATION: ClinicalTrials.gov ID NCT04394351; Trial registered on May 7th, 2020. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0849",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / NEJM AI",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0849_automation_bias_in_large_language_model_assisted_diagnostic_.md",
+   "snippet": "Title Automation Bias in Large Language Model Assisted Diagnostic Reasoning among Physicians Trained in AI Literacy A Randomized Clinical Trial Authors Qazi Ihsan Ayyub, Ali Ayesha, Khawaja Asad Ullah, Akhtar Muhammad Junaid, Sheikh Ali Zaf",
+   "text": "Laboratory Medicine scraped pubmed PubMed / NEJM AI Title Automation Bias in Large Language Model Assisted Diagnostic Reasoning among Physicians Trained in AI Literacy A Randomized Clinical Trial Authors Qazi Ihsan Ayyub, Ali Ayesha, Khawaja Asad Ullah, Akhtar Muhammad Junaid, Sheikh Ali Zafar, Alizai Muhammad Hamad Journal / DOI NEJM AI · DOI: 10.1056/AIoa2501001 · PMID: 42932681 https://pubmed.ncbi.nlm.nih.gov/42932681/ Abstract BACKGROUND: Large language models (LLMs) have the potential to improve clinical reasoning, but can also hallucinate, generating plausible but false information that risks patient harm. This risk is amplified by automation bias, the tendency to over rely on automated outputs. It remains unclear whether physicians formally trained to critically evaluate artificial intelligence (AI) outputs remain susceptible to this bias when LLM consultation is discretionary. METHODS: We conducted a single blind, randomized clinical trial from June 20 to August 15, 2025, involving 44 physicians in Pakistan who completed a 20 hour AI literacy training program. Post training, participants were randomly assigned 1:1 to diagnose six clinical vignettes. The control group received error free diagnostic suggestions from Chat Generative Pretrained Transformer (ChatGPT) 4o, while the treatment group received suggestions containing deliberately introduced errors for three of the six cases, which were randomly ordered to minimize anchoring bias. Physicians could voluntarily consult ChatGPT 4o's recommendations alongside standard diagnostic resources, while retaining full autonomy to accept, modify, or reject its suggestions. The primary outcome was composite diagnostic reasoning accuracy (correct differentials, supporting or opposing evidence, top choice diagnosis, and next steps) adjudicated by three blinded physicians; the secondary outcome was top choice diagnosis accuracy. RESULTS: Forty four physicians (22 per group) completed 264 diagnostic cases. The physicians exposed to erroneous LLM suggestions (treatment group) had a mean diagnostic accuracy of 73.3%, representing an adjusted 14.0 percentage point reduction compared with the control group's 84.9% (95% confidence interval [CI], 18.9 to 9.1; P<0.0001). The top choice accuracy was 76.1% in the treatment group versus 90.5% in the control group, resulting in an adjusted 18.3 percentage point difference (95% CI, 26.6 to 10.0). CONCLUSIONS: Physicians demonstrate substantial automation bias when exposed to erroneous LLM recommendations, even with voluntary consultation and prior AI literacy training. These findings highlight safety risks that require robust validation frameworks and regulatory safeguards before widespread clinical AI deployment. (Funded by the Learning Institute at Lahore University of Management Sciences.). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0848",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLOS digital health",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0848_quantitative_assessment_of_collagen_architecture_from_routin.md",
+   "snippet": "Title Quantitative assessment of collagen architecture from routine histopathological images shows concordance with Second Harmonic Generation microscopy Authors Ingawale Vedant, Dandapat Krishnendu, Konkada Manattayil Jyothsna, Gupta Shash",
+   "text": "Pathology scraped pubmed PubMed / PLOS digital health Title Quantitative assessment of collagen architecture from routine histopathological images shows concordance with Second Harmonic Generation microscopy Authors Ingawale Vedant, Dandapat Krishnendu, Konkada Manattayil Jyothsna, Gupta Shashank, Shashidhara L S, Koppiker Chaitanyanand, Shah Nameeta, Raghunathan Varun, et al. Journal / DOI PLOS digital health · DOI: 10.1371/journal.pdig.0001364 · PMID: 42932315 https://pubmed.ncbi.nlm.nih.gov/42932315/ Abstract Collagen organization within the tumour microenvironment plays a critical role in tumour progression and has emerged as an important structural biomarker in cancer. Second Harmonic Generation (SHG) microscopy enables label free visualization and quantitative assessment of fibrillar collagen architecture; however, its high cost, specialized instrumentation, and limited field of view restrict routine clinical application. In this study, we evaluated whether collagen features quantified from digitally scanned Masson Goldner's Trichrome stained histopathological sections can approximate measurements obtained from SHG microscopy. Formalin fixed paraffin embedded breast tumour tissues, including benign and invasive ductal carcinoma (IDC) samples with varying collagen content, were analysed using SHG microscopy and whole slide brightfield imaging. Matched regions of interest were analysed using two independent digital image analysis approaches: a conventional ImageJ based workflow (TWOMBLI) and a machine learning based computational pipeline. Collagen structural parameters including collagen deposition area, fibre number, and alignment metrics were quantified and compared across imaging modalities using correlation analysis. SHG signals were consistently detected from Trichrome stained sections, confirming compatibility of SHG imaging. Quantitative comparison demonstrated significant concordance between SHG derived collagen metrics and those obtained from digital image analysis pipelines, particularly for collagen area and fibre alignment. These findings demonstrate a proof of concept, that computational analysis of routine histopathological images can capture key spatial features of collagen organization comparable to SHG microscopy. Digital pathology based collagen quantification therefore represents a potentially scalable and clinically accessible approach for assessing extracellular matrix architecture in tumour tissues. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0847",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR medical informatics",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0847_differential_diagnosis_of_early_stage_pulmonary_sarcoidosis_.md",
+   "snippet": "Title Differential Diagnosis of Early Stage Pulmonary Sarcoidosis With Normal Serum Angiotensin Converting Enzyme Activity Using Peripheral Blood Indicators: Machine Learning Models Development and Validation Authors Wang Lixiuyun, Tang Yaf",
+   "text": "Hematology-Oncology scraped pubmed PubMed / JMIR medical informatics Title Differential Diagnosis of Early Stage Pulmonary Sarcoidosis With Normal Serum Angiotensin Converting Enzyme Activity Using Peripheral Blood Indicators: Machine Learning Models Development and Validation Authors Wang Lixiuyun, Tang Yafei, Ma Jun, Wang Shuqi, Yang Guoqiang, Huang Jin, Li Qiuhong, Feng Yonghong Journal / DOI JMIR medical informatics · DOI: 10.2196/86639 · PMID: 42932875 https://pubmed.ncbi.nlm.nih.gov/42932875/ Abstract BACKGROUND: Early stage pulmonary sarcoidosis with serum angiotensin converting enzyme (sACE) activity within the normal range is difficult to distinguish from other pulmonary diseases with similar radiographic characteristics. OBJECTIVE: This study aimed to develop and validate machine learning (ML) based diagnostic models for differentiating early stage pulmonary sarcoidosis using indices from routine peripheral blood tests. METHODS: From May 2014 to May 2021, a total of 1142 patients with atypical initial pulmonary imaging findings were enrolled. After applying strict inclusion and exclusion criteria, 420 cases were divided into sarcoidosis and nonsarcoidosis groups (including mediastinal lymph node tuberculosis [MLNT], lung cancer, lymphoma, and pneumoconiosis), then stratified by sex and randomly split (7:3) into training and validation sets. Features were selected via univariate analysis (P<.10), the Boruta algorithm, and least absolute shrinkage and selection operator regression. Six ML algorithms logistic regression (LR), random forest, support vector machine (SVM), extreme gradient boosting, k‑nearest neighbor, and naïve Bayes were compared using area under the curve (AUC), accuracy, sensitivity, specificity, F1 score, Brier score, calibration assessment, and decision curve analysis. Shapley Additive Explanations was used for interpretability. The selected models were deployed as an interactive Shiny web application. RESULTS: After stratification, the male group comprised 224 cases (sarcoidosis n=42; MLNT: n=39; lung cancer: n=106; lymphoma: n=9; pneumoconiosis: n=28), and the female group comprised 196 cases (sarcoidosis: n=100; MLNT: n=39; lung cancer: n=49; lymphoma: n=4; pneumoconiosis: n=4). Models were selected based on comprehensive evaluation of multiple performance metrics, including AUC, accuracy, specificity, F1 score, and Brier score. The selected model for the male group was SVM, incorporating the following indices: age, lymphocyte count (Lym ), red cell distribution width standard deviation, D dimer, sACE, cluster of differentiation 4 positive T cells to cluster of differentiation 8 positive T cells ratio (CD4+/CD8+), erythrocyte sedimentation rate, triglyceride to high density lipoprotein cholesterol ratio (TG/HDLC), basophil count, and total protein. The selected model for the female group was LR, using Lym , sACE, total cholesterol, TG/HDLC, glucose, CD3+%, and CD8+%. The validation set results showed AUCs of 0.896 (95% CI 0.746 1.000) and 0.762 (95% CI 0.632 0.892), sensitivities of 0.700 (95% CI 0.397 0.892) and 0.679 (95% CI 0.493 0.821), and specificities of 0.942 (95% CI 0.844 0.980) and 0.815 (95% CI 0.633 0.918), respectively. CONCLUSIONS: Based on sex‑stratified strategies, the models demonstrated preliminary discriminative ability for differentiating early‑stage pulmonary sarcoidosis with normal sACE from other pulmonary diseases. However, the wide CIs preclude definitive conclusions about clinical performance, and external validation in larger cohorts is needed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0846",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS neglected tropical diseases",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0846_genomic_microdiversity_of_mycobacterium_africanum_in_s_n_gal.md",
+   "snippet": "Title Genomic microdiversity of Mycobacterium africanum in Sénégal Authors Ba Diallo A, Badiane J, Beye M, Gueye K, Cortaredona S, Lo S, Drancourt M, Grine G, et al. Journal / DOI PLoS neglected tropical diseases · DOI: 10.1371/journal.pntd",
+   "text": "Infectious Disease scraped pubmed PubMed / PLoS neglected tropical diseases Title Genomic microdiversity of Mycobacterium africanum in Sénégal Authors Ba Diallo A, Badiane J, Beye M, Gueye K, Cortaredona S, Lo S, Drancourt M, Grine G, et al. Journal / DOI PLoS neglected tropical diseases · DOI: 10.1371/journal.pntd.0014770 · PMID: 42932393 https://pubmed.ncbi.nlm.nih.gov/42932393/ Abstract INTRODUCTION: Mycobacterium africanum is responsible for up to half of tuberculosis cases in West Africa and comprises four sub lineages. Its genomic diversity remains undescribed in Sénégal where M. africanum was first described and where the present study was conducted. RESULTS: Whole Genome Sequencing (WGS) identified one M. africanum lineage L5 isolate and 50 M. africanum lineage L6 isolates, with a predominance of sub lineage L6.1.1 (24/50, 43.7%) across seven of eight regions of Sénégal. The Dakar region gathered all the sub lineages (L5.3, L6.1, L6.1.1, L6.1.3, L6.2.3, L6.3.1, L6.3.2, L6.3.3, unclassified L6), except for sub lineage L6.2. Further Single Nucleotide Polymorphisms (SNPs) analysis revealed substantial genetic diversity among the lineage L6 isolates with mean value of 668.54 (±239.61), while themedian was 465 SNPs (interquartile range = 400, median absolute deviation:163.09). According to the World health Organization Catalogue of mutations in the Mycobacterium tuberculosis complex and their association with drug resistance, WGS predicted antibiotic resistance in 16 strains. Comparing Drug Susceptibility Testing (DST) and WGS results showed complete concordance across 19 DST tested strains. CONCLUSION: This study highlights the diversity of M. africanum in Sénégal, with intra lineage genomic variability and predicted antimicrobial resistance. The presence of synonymous mutations in the absence of resistance associated variants suggests that WGS based predictions of drug resistance should be interpreted with caution. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0845",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of preventive cardiology",
+   "confidence": "medium",
+   "date": "2026-10-26",
+   "path": "content/papers/2026/2026-10-26_paper-2026-0845_using_rare_coding_variants_in_slc5a2_to_explore_the_impact_o.md",
+   "snippet": "Title Using rare coding variants in SLC5A2 to explore the impact of SGLT2 inhibitors on cardiorenal outcomes Authors Wang Siqi, Nolte Ilja M, Groothof Dion, Qin Hailun, Bakker Stephan J L, van der Harst Pim, Snieder Harold Journal / DOI Eur",
+   "text": "Cardiology scraped pubmed PubMed / European journal of preventive cardiology Title Using rare coding variants in SLC5A2 to explore the impact of SGLT2 inhibitors on cardiorenal outcomes Authors Wang Siqi, Nolte Ilja M, Groothof Dion, Qin Hailun, Bakker Stephan J L, van der Harst Pim, Snieder Harold Journal / DOI European journal of preventive cardiology · DOI: 10.1093/eurjpc/zwag539 · PMID: 42932779 https://pubmed.ncbi.nlm.nih.gov/42932779/ Abstract AIMS: Sodium glucose cotransporter 2 (SGLT2) inhibitors are agents originally developed as glucose lowering drugs but now widely used to improve cardiorenal outcomes, including in patients with heart failure and chronic kidney disease regardless of diabetes status. However, their exact mode of action remains unclear. Here, we investigated the association of loss of function (LoF) and other rare coding variants in the SLC5A2 gene, as a genetic model of altered SGLT2 function, with 13 cardiometabolic and renal traits and clinical outcomes. METHODS AND RESULTS: A total of 442 570 European ancestry participants from the UK Biobank with exome sequence and phenotype data were included. We applied SAIGE GENE+ for gene based and single variant association tests in the full study population and in individuals with heart failure, renal failure, and type 2 diabetes (T2D). A total of 52 LoF variants in SLC5A2 were identified. Rare variants in SLC5A2 were associated with decreased uric acid (PCauchy = 4.98 × 10 13) and with increased haematocrit (PCauchy = 1.67 × 10 5), haemoglobin (PCauchy = 1.60 × 10 5), and estimated glomerular filtration rate (PCauchy = 9.88 × 10 4). One frameshift variant (rs267607067) was significantly associated with increased haemoglobin (β = 0.33 [95% CI 0.15 0.51]; P value = 2.40 × 10 4) and another (rs768095044) with decreased uric acid (β = 0.31 [95% CI 0.49 to 0.13]; P value = 4.22 × 10 4). In patients with T2D, the rare variants within SLC5A2 were also associated with a lower probability of having heart failure (PCauchy = 4.00 × 10 4). CONCLUSION: Rare genetic variants in SLC5A2 were associated with increased haemoglobin and decreased uric acid. These variants were also associated with a lower probability of heart failure among participants with T2D, providing tentative genetic support for a cardioprotective effect of SGLT2 inhibition. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1601",
