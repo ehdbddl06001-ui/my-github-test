@@ -1049,8 +1049,29 @@
    "date": "2026-09-28",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1601": {
+   "id": "kmle-2026-1601",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Recurrent Painful Mouth Sores, a Scrotal Scar and Tender Shin Nodules in a Young Man",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 진단은?",
+   "chosen": 2,
+   "chosenText": "크론병",
+   "answer": 0,
+   "answerText": "베체트병",
+   "coreNote": "",
+   "differ": "",
+   "decision": "1년에 다섯 번 넘게 재발하는 아픈 입안 궤양에 흉터를 남긴 음낭 궤양, 정강이의 결절 홍반 같은 병변, 포도막염 병력, 채혈 자리 고름물집이 있어 베체트병이다. 장 증상이 없고 단순포진 PCR·항핵항체가 음성이어서 크론병·단순포진·루푸스 가능성은 낮으며, 눈 침범이 있었으므로 안과 추적과 전신 치료가 필요하다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-10-27",
+   "device": "android-9buhos",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-27T22:46:39.347Z"
+ "updated": "2026-10-27T09:23:48.443Z"
 }
