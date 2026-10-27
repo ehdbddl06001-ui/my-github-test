@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4066,
+  "total": 4078,
   "byType": {
    "usmle": 216,
+   "imaging": 464,
    "concept": 116,
    "paper": 851,
    "kmle": 1568,
-   "imaging": 452,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,33 +38,33 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 100,
    "Hematology": 95,
    "Laboratory Medicine": 87,
-   "산부인과": 67,
-   "순환기": 39,
+   "산부인과": 68,
+   "순환기": 40,
    "호흡기": 30,
-   "소화기": 28,
+   "소화기": 29,
    "소아과": 26,
    "Physiology": 24,
    "응급·중환자": 23,
-   "감염": 21,
+   "감염": 22,
+   "병리·조직학": 22,
+   "신경": 22,
+   "혈액·종양": 22,
    "내분비": 21,
-   "병리·조직학": 21,
-   "신경": 21,
-   "혈액·종양": 21,
+   "외과": 21,
    "신장·비뇨기": 20,
-   "외과": 20,
    "Pharmacology": 18,
+   "예방의학·역학": 18,
+   "피부과": 18,
    "Biochemistry": 17,
-   "예방의학·역학": 17,
-   "피부과": 17,
    "Microbiology": 16,
    "Immunology": 13,
    "Internal Medicine": 13,
+   "근골격·류마티스": 13,
    "약리": 13,
-   "근골격·류마티스": 12,
    "정신과": 12,
+   "안과": 8,
    "영상의학": 8,
    "이비인후과": 8,
-   "안과": 7,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -79,11 +79,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2842,
+   "high": 2854,
    "low": 52,
    "medium": 1172
   },
-  "tagCount": 5064
+  "tagCount": 5065
  },
  "docs": [
   {
@@ -213,6 +213,214 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0224.md",
    "snippet": "A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and sin",
    "text": "Physiology Lightheadedness on Standing After Three Days of Watery Diarrhea in a 26-Year-Old Woman Back From Mexico baroreceptor-reflex hypovolemia orthostatic-hypotension sinus-tachycardia autonomic-control mechanism USMLE-style / MedKOS (Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14th ed. Elsevier; 2021 — Nervous regulation of the circulation: baroreceptor reflex; Costanzo LS. Physiology. 7th ed. Elsevier; 2022 — Regulation of arterial pressure) A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and since yesterday she has been unable to keep fluids down. She takes no medications. Her vital signs, measured while she is supine, are shown. When she sits up, her pulse increases to 138/min and her blood pressure decreases to 84/56 mm Hg, and she feels faint. The mucous membranes are dry, and capillary refill time is 4 seconds. There is no jugular venous distention, and the lungs are clear to auscultation. The abdomen is soft with hyperactive bowel sounds and mild diffuse tenderness. Laboratory results are shown. A rhythm strip is shown. Which of the following is the most likely mechanism of this patient's increased heart rate? A. Increased carotid sinus afferent firing, increasing vagal outflow to the sinoatrial node B. Decreased carotid sinus afferent firing, decreasing vagal and increasing sympathetic outflow C. Increased atrial stretch receptor firing, increasing sympathetic outflow to the sinoatrial node D. Increased peripheral chemoreceptor firing from acidemia, increasing sympathetic outflow E. Increased angiotensin II acting directly on sinoatrial node pacemaker cells 3일간의 수양성 설사와 경구 섭취 불가로 세포외액이 빠졌다 — 점막 건조, 모세혈관 재충전 지연, BUN/크레아티닌 상승, 혈색소 농축, 경정맥 팽대 없음, 앉을 때 혈압이 더 떨어지고 맥박이 더 오르는 기립 반응이 모두 혈관 내 용적 감소를 가리킨다. 정맥 환류와 1회 박출량이 줄어 평균 동맥압과 맥압이 떨어지면 경동맥동(설인신경)·대동맥궁(미주신경) 압수용체가 덜 늘어나 구심 발화가 감소한다. 연수 심혈관 중추는 이를 「혈압 저하」로 읽고 미주신경의 동방결절 억제를 줄이며 교감 출력(동방결절 β1, 세동맥 α1)을 늘린다 — 리듬 띠의 동성 빈맥이 그 결과다. 압수용체 반사는 초 단위의 빠른 혈압 조절 기전이라 자세를 바꿀 때 맥박이 곧바로 더 오르는 것을 설명한다."
+  },
+  {
+   "id": "imaging-2026-0465",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 코호트 연구의 인구집단 기여위험분율",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0465.md",
+   "snippet": "A 45 year old woman who works as a city public health officer reviews a 10 year prospective cohort study that followed 10,000 adults in a city who were free of chronic obstructive pulmonary disease at baseline. At enrollment, 2,000 particip",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 코호트 연구의 인구집단 기여위험분율 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 A 45 year old woman who works as a city public health officer reviews a 10 year prospective cohort study that followed 10,000 adults in a city who were free of chronic obstructive pulmonary disease at baseline. At enrollment, 2,000 participants are current smokers and 8,000 have never smoked; this proportion is representative of the city's adult population. During follow up, 80 of the smokers and 80 of the never smokers develop the disease. She wants to know what proportion of all new cases of the disease in the city's adult population could be prevented if smoking were completely eliminated, assuming the association is causal and there is no confounding. Which of the following is the closest estimate? A. 50 % B. 25 % C. 3 % D. 38 % E. 75 %"
+  },
+  {
+   "id": "imaging-2026-0464",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 열·인두염·뒤목 림프절 비대와 아목시실린 뒤 발진",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0464.md",
+   "snippet": "19세 남자가 1주 전부터 열이 나고 목이 아프며 몹시 피곤하여 왔다. 사흘 전 다른 의원에서 아목시실린을 처방받아 먹은 뒤 어제부터 온몸에 가렵지 않은 붉은 구진 발진이 생겼다. 체온 38.4℃, 맥박 96회/분이다. 편도가 커져 있고 회백색 삼출물로 덮여 있으며, 입천장에 점상출혈이 있다. 앞목과 뒤목 양쪽에 압통이 약한 림프절이 여럿 만져지고, 왼쪽 갈비뼈 아래에서 비장 끝이 만져진다. 백혈구 11,200/mm³(림프구 ",
+   "text": "감염 감염 — 열·인두염·뒤목 림프절 비대와 아목시실린 뒤 발진 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 19세 남자가 1주 전부터 열이 나고 목이 아프며 몹시 피곤하여 왔다. 사흘 전 다른 의원에서 아목시실린을 처방받아 먹은 뒤 어제부터 온몸에 가렵지 않은 붉은 구진 발진이 생겼다. 체온 38.4℃, 맥박 96회/분이다. 편도가 커져 있고 회백색 삼출물로 덮여 있으며, 입천장에 점상출혈이 있다. 앞목과 뒤목 양쪽에 압통이 약한 림프절이 여럿 만져지고, 왼쪽 갈비뼈 아래에서 비장 끝이 만져진다. 백혈구 11,200/mm³(림프구 62 %, 비정형 림프구 18 %), AST 88 U/L, ALT 104 U/L 이다. 진단을 위해 가장 적절한 검사는? A. 말초혈액 유세포분석 B. 골수 검사 C. HIV 항원·항체 검사 D. 이종친화항체 검사 E. 인두 배양"
+  },
+  {
+   "id": "imaging-2026-0463",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 월경과다·잇몸 출혈 병력과 발치 전 지혈 준비",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0463.md",
+   "snippet": "A 19 year old woman comes to the physician before a scheduled extraction of impacted wisdom teeth. Since menarche she has had heavy menstrual periods lasting 8 days that soak through pads hourly on the first 2 days, and she bled for 2 days ",
+   "text": "혈액·종양 혈액·종양 — 월경과다·잇몸 출혈 병력과 발치 전 지혈 준비 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 A 19 year old woman comes to the physician before a scheduled extraction of impacted wisdom teeth. Since menarche she has had heavy menstrual periods lasting 8 days that soak through pads hourly on the first 2 days, and she bled for 2 days after a tooth was pulled at age 12. She bruises easily and has frequent nosebleeds. Her mother has similar symptoms. She takes no medications. Hemoglobin is 10.8 g/dL, platelet count is 245,000/mm3, PT is 12 seconds (normal), and aPTT is 39 seconds (upper limit of normal, 35 seconds). Von Willebrand factor antigen is 32 IU/dL, von Willebrand factor activity is 30 IU/dL, and factor VIII activity is 41 IU/dL. A desmopressin trial previously raised all three values above 100 IU/dL. Which of the following is the most appropriate agent to prevent bleeding during the procedure? A. Recombinant factor VIIa B. Platelet transfusion C. Vitamin K D. Cryoprecipitate E. Desmopressin"
+  },
+  {
+   "id": "imaging-2026-0462",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 영양 결핍 음주자의 혼돈·안구진탕·운동실조",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0462.md",
+   "snippet": "52세 남자가 이틀 전부터 횡설수설하고 비틀거려 가족과 함께 응급실에 왔다. 20년 동안 매일 소주 2병을 마셨고 최근 한 달은 거의 먹지 않고 술만 마셨다. 혈압 128/80 mmHg, 맥박 92회/분, 체온 36.6℃이다. 날짜와 장소를 모르고 주의가 산만하다. 양쪽 눈을 바깥으로 돌리지 못하고 수평 안구진탕이 있으며, 넓은 보폭으로 비틀거려 혼자 서 있지 못한다. 떨림과 땀은 없다. 모세혈관 혈당은 68 mg/dL, 혈청",
+   "text": "신경 신경 — 영양 결핍 음주자의 혼돈·안구진탕·운동실조 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 52세 남자가 이틀 전부터 횡설수설하고 비틀거려 가족과 함께 응급실에 왔다. 20년 동안 매일 소주 2병을 마셨고 최근 한 달은 거의 먹지 않고 술만 마셨다. 혈압 128/80 mmHg, 맥박 92회/분, 체온 36.6℃이다. 날짜와 장소를 모르고 주의가 산만하다. 양쪽 눈을 바깥으로 돌리지 못하고 수평 안구진탕이 있으며, 넓은 보폭으로 비틀거려 혼자 서 있지 못한다. 떨림과 땀은 없다. 모세혈관 혈당은 68 mg/dL, 혈청 나트륨은 136 mEq/L 이다. 가장 먼저 투여해야 할 것은? A. 티아민 정맥 주사 B. 50 % 포도당 정맥 주사 C. 로라제팜 정맥 주사 D. 할로페리돌 근육 주사 E. 날록손 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0461",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간경변 환자의 정맥류 출혈에서 옥트레오타이드와 함께 줄 것",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0461.md",
+   "snippet": "A 56 year old man with alcohol associated cirrhosis is brought to the emergency department 1 hour after vomiting large amounts of bright red blood. He has no fever or abdominal pain. Blood pressure is 92/58 mm Hg, pulse is 116/min, and temp",
+   "text": "소화기 소화기·간담췌 — 간경변 환자의 정맥류 출혈에서 옥트레오타이드와 함께 줄 것 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 A 56 year old man with alcohol associated cirrhosis is brought to the emergency department 1 hour after vomiting large amounts of bright red blood. He has no fever or abdominal pain. Blood pressure is 92/58 mm Hg, pulse is 116/min, and temperature is 36.8°C. He is alert. The abdomen is mildly distended with shifting dullness and is nontender. Hemoglobin is 7.4 g/dL, platelet count is 72,000/mm3, and INR is 1.6. Two large bore intravenous lines are placed, and a restrictive transfusion of packed red blood cells is started with a target hemoglobin of 7–8 g/dL. Intravenous octreotide is begun, and endoscopy is scheduled within 12 hours. In addition to these measures, which of the following is most likely to decrease this patient's mortality? A. Intravenous pantoprazole infusion B. Intravenous ceftriaxone C. Intravenous propranolol D. Intravenous vitamin K E. Fresh frozen plasma to correct the INR"
+  },
+  {
+   "id": "imaging-2026-0460",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 노인의 팽팽한 물집과 기저막의 선상 침착",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0460.md",
+   "snippet": "81세 남자가 한 달 전부터 몸통과 팔다리가 가렵고, 열흘 전부터 물집이 생겨 왔다. 처음 몇 주는 가려운 붉은 두드러기 모양 판만 있었다. 6개월 전부터 당뇨병으로 리나글립틴을 복용하고 있다. 진찰에서 넓적다리 안쪽과 아랫배, 팔의 굽힘 쪽에 붉은 판 위로 지름 1~3 cm의 팽팽한 물집이 여럿 있고, 물집은 쉽게 터지지 않는다. 물집 주변의 정상 피부를 문질러도 표피가 벗겨지지 않는다. 입안과 눈 결막에는 병변이 없다. 물",
+   "text": "피부과 피부 — 노인의 팽팽한 물집과 기저막의 선상 침착 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 81세 남자가 한 달 전부터 몸통과 팔다리가 가렵고, 열흘 전부터 물집이 생겨 왔다. 처음 몇 주는 가려운 붉은 두드러기 모양 판만 있었다. 6개월 전부터 당뇨병으로 리나글립틴을 복용하고 있다. 진찰에서 넓적다리 안쪽과 아랫배, 팔의 굽힘 쪽에 붉은 판 위로 지름 1~3 cm의 팽팽한 물집이 여럿 있고, 물집은 쉽게 터지지 않는다. 물집 주변의 정상 피부를 문질러도 표피가 벗겨지지 않는다. 입안과 눈 결막에는 병변이 없다. 물집 가장자리 조직검사에서 표피 아래 물집과 호산구 침윤이 보이고, 직접면역형광검사에서 기저막을 따라 IgG와 C3가 선상으로 침착되어 있다. 진단은? A. 심상성천포창 B. 포진피부염 C. 후천표피박리수포증 D. 다형홍반 E. 수포유사천포창"
+  },
+  {
+   "id": "imaging-2026-0459",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 갑자기 생긴 통증 없는 한쪽 시력 소실과 체리붉은점",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0459.md",
+   "snippet": "A 71 year old man comes to the emergency department 2 hours after sudden, painless loss of vision in his right eye while reading the newspaper. He has hypertension, type 2 diabetes mellitus, and a 40 pack year smoking history. He has no hea",
+   "text": "안과 안과 — 갑자기 생긴 통증 없는 한쪽 시력 소실과 체리붉은점 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 A 71 year old man comes to the emergency department 2 hours after sudden, painless loss of vision in his right eye while reading the newspaper. He has hypertension, type 2 diabetes mellitus, and a 40 pack year smoking history. He has no headache, jaw pain, or scalp tenderness. Visual acuity is counting fingers in the right eye and 20/25 in the left eye. There is a right relative afferent pupillary defect. Intraocular pressure is normal in both eyes. Fundoscopic examination of the right eye shows a pale, whitened posterior retina with a bright red spot at the fovea and narrowed, segmented arterioles; there are no retinal hemorrhages. A carotid bruit is heard on the right. Which of the following is the most likely diagnosis? A. Vitreous hemorrhage B. Nonarteritic anterior ischemic optic neuropathy C. Central retinal artery occlusion D. Central retinal vein occlusion E. Rhegmatogenous retinal detachment"
+  },
+  {
+   "id": "imaging-2026-0458",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 심근경색 나흘째 갑자기 생긴 폐부종과 새 수축기 잡음",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0458.md",
+   "snippet": "68세 남자가 하벽 ST분절상승 심근경색으로 입원한 지 4일째 갑자기 숨이 차서 의사를 불렀다. 입원 첫날 증상 시작 14시간 뒤에 우관상동맥 성형술을 받았다. 혈압 86/54 mmHg, 맥박 118회/분, 호흡 30회/분, 산소포화도 86 %(산소 마스크)이다. 양쪽 폐 전체에서 수포음이 들리고, 심첨부에서 겨드랑이로 퍼지는 새 전수축기 잡음이 들리며 진전(thrill)은 없다. 흉부 X선에서 양쪽 폐부종이 있다. 폐동맥 도",
+   "text": "순환기 순환기 — 심근경색 나흘째 갑자기 생긴 폐부종과 새 수축기 잡음 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 68세 남자가 하벽 ST분절상승 심근경색으로 입원한 지 4일째 갑자기 숨이 차서 의사를 불렀다. 입원 첫날 증상 시작 14시간 뒤에 우관상동맥 성형술을 받았다. 혈압 86/54 mmHg, 맥박 118회/분, 호흡 30회/분, 산소포화도 86 %(산소 마스크)이다. 양쪽 폐 전체에서 수포음이 들리고, 심첨부에서 겨드랑이로 퍼지는 새 전수축기 잡음이 들리며 진전(thrill)은 없다. 흉부 X선에서 양쪽 폐부종이 있다. 폐동맥 도관에서 폐동맥쐐기압 파형에 큰 v파가 보이고, 혈액 산소포화도는 우심방 68 %, 우심실 69 %, 폐동맥 69 %이다. 가장 가능성이 높은 진단은? A. 경색 후 심낭염 B. 유두근 파열 C. 심실중격 파열 D. 좌심실 자유벽 파열 E. 우심실 경색"
+  },
+  {
+   "id": "imaging-2026-0457",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 손목·손허리손가락관절이 무너진 손 X선과 특이 자가항체",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0457.md",
+   "snippet": "A 59 year old woman comes to the physician because of worsening deformity and weakness of both hands. She has had pain and swelling of the wrists and knuckles of both hands with morning stiffness lasting more than 1 hour for many years but ",
+   "text": "근골격·류마티스 류마티스·근골격 — 손목·손허리손가락관절이 무너진 손 X선과 특이 자가항체 opendata usmle_style xr 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 A 59 year old woman comes to the physician because of worsening deformity and weakness of both hands. She has had pain and swelling of the wrists and knuckles of both hands with morning stiffness lasting more than 1 hour for many years but did not seek regular care. She has no history of skin rash, nail changes, back pain, or diarrhea. Examination shows symmetric swelling of the wrists and metacarpophalangeal joints with ulnar deviation of the fingers; the distal interphalangeal joints are not swollen, and the nails are normal. A posteroanterior radiograph of the right hand is shown. Which of the following serum antibodies is most specific for this patient's condition? A. Anti cyclic citrullinated peptide antibody B. Rheumatoid factor C. Antinuclear antibody D. Anti double stranded DNA antibody E. Anti centromere antibody"
+  },
+  {
+   "id": "imaging-2026-0456",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 림프절 면역염색의 여포 사이 구역과 흉선 발생",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0456.md",
+   "snippet": "A 67 year old man undergoes radical cystectomy for muscle invasive urothelial carcinoma of the bladder. A pelvic lymph node removed during the operation shows reactive changes without metastasis. A section of this lymph node is stained by i",
+   "text": "병리·조직학 병리·조직 — 림프절 면역염색의 여포 사이 구역과 흉선 발생 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 A 67 year old man undergoes radical cystectomy for muscle invasive urothelial carcinoma of the bladder. A pelvic lymph node removed during the operation shows reactive changes without metastasis. A section of this lymph node is stained by immunohistochemistry for a lineage specific marker that is part of the antigen receptor signaling complex; the brown staining lymphocytes diffusely fill the zones between and around the follicles (the paracortex), whereas the follicle centers are negative, as shown. A newborn with defective development of which of the following embryologic structures would most likely have markedly reduced numbers of the stained cells? A. Thyroglossal duct B. Third and fourth pharyngeal pouches C. First pharyngeal pouch D. Second pharyngeal arch E. First pharyngeal cleft"
+  },
+  {
+   "id": "imaging-2026-0455",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 20대 여성의 전형적 양성 소견 유방 종괴와 추적",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0455.md",
+   "snippet": "23세 여자가 2개월 전 샤워하다 왼쪽 유방에서 만져지는 멍울을 발견하여 왔다. 통증은 없고 월경 주기에 따라 크기가 변하지 않았다. 유두 분비물은 없다. 출산력은 없고, 유방암·난소암 가족력은 없다. 진찰에서 왼쪽 유방 위바깥쪽에 지름 2.5 cm의 단단하고 잘 움직이는 경계가 매끈한 종괴가 만져지고, 피부 변화와 겨드랑이 림프절 비대는 없다. 유방 초음파 사진은 그림과 같고, 판독의는 BI RADS 3 으로 분류하였다. 다",
+   "text": "외과 외과계 — 20대 여성의 전형적 양성 소견 유방 종괴와 추적 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 23세 여자가 2개월 전 샤워하다 왼쪽 유방에서 만져지는 멍울을 발견하여 왔다. 통증은 없고 월경 주기에 따라 크기가 변하지 않았다. 유두 분비물은 없다. 출산력은 없고, 유방암·난소암 가족력은 없다. 진찰에서 왼쪽 유방 위바깥쪽에 지름 2.5 cm의 단단하고 잘 움직이는 경계가 매끈한 종괴가 만져지고, 피부 변화와 겨드랑이 림프절 비대는 없다. 유방 초음파 사진은 그림과 같고, 판독의는 BI RADS 3 으로 분류하였다. 다음 조치로 가장 적절한 것은? A. 수술적 절제생검 B. 타목시펜 투여 C. 6개월 뒤 유방 초음파 추적 D. 초음파 유도 중심부 바늘생검 E. 유방촬영술"
+  },
+  {
+   "id": "imaging-2026-0454",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 양막이 터진 초산부의 신호가 자주 끊기는 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+   "confidence": "high",
+   "date": "2026-10-27",
+   "path": "content/imaging/2026/imaging-2026-0454.md",
+   "snippet": "39세 초산부가 임신 40주에 진통으로 입원하였다. 입원 2시간 전 양막이 저절로 터졌고 양수는 맑았다. 혈압 118/72 mmHg, 맥박 84회/분, 체온 36.9℃이다. 내진에서 자궁경부는 5 cm 열려 있고 태아 머리가 −1 위치에 있다. 산모는 체질량지수 36 kg/m²이고 자주 몸을 뒤척인다. 옥시토신은 쓰지 않고 있다. 복부에 붙인 외부 탐촉자로 기록한 태아심박동과 자궁수축 기록은 그림과 같다. 다음 조치로 가장 적",
+   "text": "산부인과 산과 — 양막이 터진 초산부의 신호가 자주 끊기는 태아심박동 기록 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400 39세 초산부가 임신 40주에 진통으로 입원하였다. 입원 2시간 전 양막이 저절로 터졌고 양수는 맑았다. 혈압 118/72 mmHg, 맥박 84회/분, 체온 36.9℃이다. 내진에서 자궁경부는 5 cm 열려 있고 태아 머리가 −1 위치에 있다. 산모는 체질량지수 36 kg/m²이고 자주 몸을 뒤척인다. 옥시토신은 쓰지 않고 있다. 복부에 붙인 외부 탐촉자로 기록한 태아심박동과 자궁수축 기록은 그림과 같다. 다음 조치로 가장 적절한 것은? A. 태아 두피 전극 부착 B. 응급 제왕절개 C. 흡입 분만 D. 자궁수축억제제 투여 E. 2시간 뒤 다시 기록"
   },
   {
    "id": "cn.ortho.odontoid-fracture.diagnosis",

@@ -2,6 +2,1564 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0457",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "류마티스·근골격 — 손목·손허리손가락관절이 무너진 손 X선과 특이 자가항체",
+  "type": "류마티스·근골격 — 손목·손허리손가락관절이 무너진 손 X선과 특이 자가항체",
+  "modality": "XR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-27",
+  "vignette": "A 59-year-old woman comes to the physician because of worsening deformity and weakness of both hands. She has had pain and swelling of the wrists and knuckles of both hands with morning stiffness lasting more than 1 hour for many years but did not seek regular care. She has no history of skin rash, nail changes, back pain, or diarrhea. Examination shows symmetric swelling of the wrists and metacarpophalangeal joints with ulnar deviation of the fingers; the distal interphalangeal joints are not swollen, and the nails are normal. A posteroanterior radiograph of the right hand is shown.",
+  "question": "Which of the following serum antibodies is most specific for this patient's condition?",
+  "options": [
+   "Anti-cyclic citrullinated peptide antibody",
+   "Rheumatoid factor",
+   "Antinuclear antibody",
+   "Anti-double-stranded DNA antibody",
+   "Anti-centromere antibody"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The radiograph shows collapse and fusion of the carpal bones, destruction of the radiocarpal joint, erosions and subluxation at the metacarpophalangeal joints, and periarticular osteopenia, while the distal interphalangeal joints are relatively spared. With long-standing symmetric wrist/MCP synovitis and no psoriasis or nail disease, this is advanced rheumatoid arthritis. Anti-CCP antibody is the most specific test (about 95 % specificity) and predicts erosive disease.\n- 원리: <b>Why erosions appear where they do</b>: rheumatoid synovitis forms a pannus that invades the \"bare areas\" of bone at the joint margin, where cartilage does not cover the bone. Wrists and MCP/PIP joints have the most synovium relative to joint size, so marginal erosions start there; inflammatory cytokines (TNF, IL-6, RANKL) cause periarticular osteopenia.<br> <b>Why anti-CCP is specific</b>: in RA, peptidyl-arginine deiminase converts arginine to citrulline in inflamed synovium (and in smokers' lungs), and loss of tolerance produces antibodies against citrullinated proteins. These antibodies are rare in other diseases, whereas rheumatoid factor (IgM against the Fc portion of IgG) also appears with chronic infections (hepatitis C, endocarditis), Sjögren syndrome, and aging.<br> <b>Psoriatic arthritis mimic</b>: arthritis mutilans can occur in both, but psoriatic arthritis favors DIP joints, shows \"pencil-in-cup\" change, fluffy periostitis, and preserved bone density.\n- 비교: <table><thead><tr><th style=\"width:24%\">Test</th><th style=\"width:38%\">Anti-CCP (answer)</th><th>Rheumatoid factor (closest distractor)</th></tr></thead><tbody> <tr><td>Sensitivity</td><td>~65–70 %</td><td>~70–80 %</td></tr> <tr><td>Specificity</td><td><b>~95 %</b></td><td>~80–85 %</td></tr> <tr><td>Other positives</td><td>Rare</td><td>Hepatitis C, endocarditis, Sjögren, elderly</td></tr> <tr><td>Prognosis</td><td>Predicts erosive disease, may precede symptoms</td><td>High titer also predicts severity</td></tr> </tbody></table> \"Most sensitive\" can be argued for RF in some series, but \"most specific\" belongs to anti-CCP.\n- 오답 이유:\n  - (B) Rheumatoid factor would be correct if the question asked for the classic or more often positive antibody; it is less specific because chronic infections and Sjögren syndrome also produce it.\n  - (C) Antinuclear antibody is correct as the most sensitive screen for systemic lupus erythematosus, which causes nonerosive, reducible deformities (Jaccoud arthropathy).\n  - (D) Anti-dsDNA antibody would be correct for lupus with nephritis; lupus arthritis does not cause the carpal collapse and erosions seen here.\n  - (E) Anti-centromere antibody would be correct for limited cutaneous systemic sclerosis with Raynaud phenomenon, sclerodactyly, and acro-osteolysis of the fingertips.\n- 함정: Choosing rheumatoid factor because of the disease name — the question asks for the most specific test, which is anti-CCP.\n- 학습목표: 손목·손허리손가락관절 중심의 미란과 관절 주위 골감소, 원위지관절 보존을 보이는 손 X선에서 류마티스관절염을 읽고 가장 특이한 자가항체가 항CCP 항체임을 안다\n- 근거·출처: Aletaha D, et al. 2010 Rheumatoid arthritis classification criteria: an ACR/EULAR collaborative initiative. Arthritis Rheum 2010;62:2569-2581 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 358: Rheumatoid arthritis\n\n## 출처\n- Radiographic Findings of Inflammatory Arthritis and Mimics in the Hands. Diagnostics (Basel). 2022 Sep 2;12(9):2134. doi: 10.3390/diagnostics12092134 (CC BY) — Figure 5 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows collapse and fusion of the carpal bones, destruction of the radiocarpal joint, erosions and subluxation at the metacarpophalangeal joints, and periarticular osteopenia, while the distal interphalangeal joints are relatively spared. With long-standing symmetric wrist/MCP synovitis and no psoriasis or nail disease, this is advanced rheumatoid arthritis. Anti-CCP antibody is the most specific test (about 95 % specificity) and predicts erosive disease."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why erosions appear where they do</b>: rheumatoid synovitis forms a pannus that invades the \"bare areas\" of bone at the joint margin, where cartilage does not cover the bone. Wrists and MCP/PIP joints have the most synovium relative to joint size, so marginal erosions start there; inflammatory cytokines (TNF, IL-6, RANKL) cause periarticular osteopenia.<br> <b>Why anti-CCP is specific</b>: in RA, peptidyl-arginine deiminase converts arginine to citrulline in inflamed synovium (and in smokers' lungs), and loss of tolerance produces antibodies against citrullinated proteins. These antibodies are rare in other diseases, whereas rheumatoid factor (IgM against the Fc portion of IgG) also appears with chronic infections (hepatitis C, endocarditis), Sjögren syndrome, and aging.<br> <b>Psoriatic arthritis mimic</b>: arthritis mutilans can occur in both, but psoriatic arthritis favors DIP joints, shows \"pencil-in-cup\" change, fluffy periostitis, and preserved bone density."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Test</th><th style=\"width:38%\">Anti-CCP (answer)</th><th>Rheumatoid factor (closest distractor)</th></tr></thead><tbody> <tr><td>Sensitivity</td><td>~65–70 %</td><td>~70–80 %</td></tr> <tr><td>Specificity</td><td><b>~95 %</b></td><td>~80–85 %</td></tr> <tr><td>Other positives</td><td>Rare</td><td>Hepatitis C, endocarditis, Sjögren, elderly</td></tr> <tr><td>Prognosis</td><td>Predicts erosive disease, may precede symptoms</td><td>High titer also predicts severity</td></tr> </tbody></table> \"Most sensitive\" can be argued for RF in some series, but \"most specific\" belongs to anti-CCP."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Rheumatoid factor would be correct if the question asked for the classic or more often positive antibody; it is less specific because chronic infections and Sjögren syndrome also produce it.\n(C) Antinuclear antibody is correct as the most sensitive screen for systemic lupus erythematosus, which causes nonerosive, reducible deformities (Jaccoud arthropathy).\n(D) Anti-dsDNA antibody would be correct for lupus with nephritis; lupus arthritis does not cause the carpal collapse and erosions seen here.\n(E) Anti-centromere antibody would be correct for limited cutaneous systemic sclerosis with Raynaud phenomenon, sclerodactyly, and acro-osteolysis of the fingertips."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing rheumatoid factor because of the disease name — the question asks for the most specific test, which is anti-CCP."
+   },
+   {
+    "k": "학습목표",
+    "v": "손목·손허리손가락관절 중심의 미란과 관절 주위 골감소, 원위지관절 보존을 보이는 손 X선에서 류마티스관절염을 읽고 가장 특이한 자가항체가 항CCP 항체임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Aletaha D, et al. 2010 Rheumatoid arthritis classification criteria: an ACR/EULAR collaborative initiative. Arthritis Rheum 2010;62:2569-2581 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 358: Rheumatoid arthritis ## 출처 Radiographic Findings of Inflammatory Arthritis and Mimics in the Hands. Diagnostics (Basel). 2022 Sep 2;12(9):2134. doi: 10.3390/diagnostics12092134 (CC BY) — Figure 5 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "손목·MCP 중심 미란과 골감소, DIP 보존인 대칭 다발관절염은 류마티스관절염이고 가장 특이한 항체는 항CCP 항체다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "류마티스인자는 C형간염·쇼그렌에서도 양성이라 특이도가 낮다 — 「most specific」은 항CCP",
+   "steps": 2,
+   "chain": [
+    "영상: 손목뼈 붕괴·유합, MCP 미란·골감소, DIP 보존 + 대칭 손목·MCP 활막염 → 류마티스관절염",
+    "가장 특이한 혈청 검사 → 항CCP 항체"
+   ],
+   "key": [
+    {
+     "item": "영상: 손목뼈 붕괴·유합과 손허리손가락관절 미란, 관절 주위 골감소",
+     "why": "진행된 류마티스관절염",
+     "also": []
+    },
+    {
+     "item": "morning stiffness lasting more than 1 hour",
+     "why": "염증성 관절염",
+     "also": []
+    },
+    {
+     "item": "ulnar deviation of the fingers",
+     "why": "류마티스관절염의 전형적 변형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the distal interphalangeal joints are not swollen",
+     "why": "건선관절염·골관절염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no history of skin rash, nail changes",
+     "why": "건선관절염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "back pain, or diarrhea",
+     "why": "척추관절염·장염 관련 관절염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "대칭 손목·MCP 활막염과 X선의 손목뼈 붕괴·MCP 미란·골감소, DIP 보존은 진행된 류마티스관절염이다. 가장 특이한 혈청 검사는 항CCP 항체다.",
+   "switch": {
+    "choice": "B",
+    "condition": "질문이 「역사적으로 쓰여 온, 더 흔히 양성인 항체」를 물었다면 류마티스인자가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0457.jpg",
+   "caption": "Posteroanterior radiograph of the hand and wrist — single published case figure, unaltered (PMC Open Access Subset, CC BY)",
+   "alt": "XR 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9498090/",
+   "asset_id": "PMC-PMC9498090_Figure5",
+   "text": "Radiographic Findings of Inflammatory Arthritis and Mimics in the Hands. Diagnostics (Basel). 2022 Sep 2;12(9):2134. doi: 10.3390/diagnostics12092134 (CC BY) — Figure 5"
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0456",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "병리·조직 — 림프절 면역염색의 여포 사이 구역과 흉선 발생",
+  "type": "병리·조직 — 림프절 면역염색의 여포 사이 구역과 흉선 발생",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-27",
+  "vignette": "A 67-year-old man undergoes radical cystectomy for muscle-invasive urothelial carcinoma of the bladder. A pelvic lymph node removed during the operation shows reactive changes without metastasis. A section of this lymph node is stained by immunohistochemistry for a lineage-specific marker that is part of the antigen-receptor signaling complex; the brown-staining lymphocytes diffusely fill the zones between and around the follicles (the paracortex), whereas the follicle centers are negative, as shown.",
+  "question": "A newborn with defective development of which of the following embryologic structures would most likely have markedly reduced numbers of the stained cells?",
+  "options": [
+   "Thyroglossal duct",
+   "Third and fourth pharyngeal pouches",
+   "First pharyngeal pouch",
+   "Second pharyngeal arch",
+   "First pharyngeal cleft"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The marker stains lymphocytes that fill the interfollicular paracortex and spares the follicle centers — the T-cell zone pattern (CD3). T cells mature in the thymus, which arises from the endoderm of the third pharyngeal pouch, together with the inferior parathyroid glands; the superior parathyroids come from the fourth pouch. Defective development of the third and fourth pouches (22q11.2 deletion, DiGeorge syndrome) causes thymic hypoplasia, T-cell lymphopenia, and hypocalcemia.\n- 원리: <b>Reading the pattern</b>: in a lymph node, B cells gather into follicles (germinal centers with a mantle); T cells occupy the paracortex between and beneath the follicles, around high endothelial venules. A lineage marker that fills the paracortex and leaves germinal centers negative therefore marks T cells — CD3 is the invariant signaling part of the T-cell receptor complex.<br> <b>Why the thymus links to the pouches</b>: the third pharyngeal pouch endoderm forms the thymic epithelium, which provides the selection signals that turn bone-marrow precursors into mature T cells. Without that epithelium, precursors still exist but cannot mature, so the paracortex is empty while follicles are intact.<br> <b>Clinical package</b>: the third pouch also gives the inferior parathyroids and the fourth gives the superior parathyroids, so the same defect causes neonatal hypocalcemic tetany; neural-crest migration through the arches explains the conotruncal heart defects and facial features.\n- 비교: <table><thead><tr><th style=\"width:24%\">Structure</th><th style=\"width:38%\">3rd/4th pouches (answer)</th><th>1st pouch (closest distractor)</th></tr></thead><tbody> <tr><td>Derivatives</td><td><b>Thymus, inferior and superior parathyroids</b></td><td>Middle ear cavity, eustachian tube, mastoid air cells</td></tr> <tr><td>Defect</td><td>T-cell deficiency, hypocalcemia</td><td>Conductive hearing problems</td></tr> <tr><td>Lymph node</td><td>Empty paracortex, follicles present</td><td>Normal lymphocyte zones</td></tr> </tbody></table> If the stain had filled the follicles instead, the question would point to B-cell development (e.g., BTK), not the pharyngeal pouches.\n- 오답 이유:\n  - (A) The thyroglossal duct would be correct for a midline neck cyst that moves with swallowing; the thyroid does not produce lymphocytes.\n  - (C) The first pouch would be correct if the question asked about the middle ear cavity or eustachian tube; it does not form lymphoid organs.\n  - (D) The second arch would be correct for derivatives such as the stapes, styloid process, and muscles of facial expression, none of which shape T-cell development.\n  - (E) The first cleft would be correct for the external auditory meatus; its defects cause preauricular cysts or sinuses, not lymphopenia.\n- 함정: Reading any lymph node stain as B cells — here the follicle centers are negative and the paracortex is positive, which is the T-cell zone.\n- 학습목표: 림프절 면역염색에서 여포 사이·피질곁을 넓게 채우는 양성 세포가 T세포임을 읽고, T세포가 성숙하는 흉선이 제3·4 인두낭에서 발생함을 연결한다\n- 근거·출처: Sadler TW. Langman's Medical Embryology, 15th ed. Wolters Kluwer; 2023. Chapter 17: Head and neck · Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed. Elsevier; 2022. Chapter 2: Cells and tissues of the immune system\n\n## 출처\n- Human Protein Atlas, CD3E / Lymph node (CC BY 4.0), https://images.proteinatlas.org/10/1628_A_9_8.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The marker stains lymphocytes that fill the interfollicular paracortex and spares the follicle centers — the T-cell zone pattern (CD3). T cells mature in the thymus, which arises from the endoderm of the third pharyngeal pouch, together with the inferior parathyroid glands; the superior parathyroids come from the fourth pouch. Defective development of the third and fourth pouches (22q11.2 deletion, DiGeorge syndrome) causes thymic hypoplasia, T-cell lymphopenia, and hypocalcemia."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Reading the pattern</b>: in a lymph node, B cells gather into follicles (germinal centers with a mantle); T cells occupy the paracortex between and beneath the follicles, around high endothelial venules. A lineage marker that fills the paracortex and leaves germinal centers negative therefore marks T cells — CD3 is the invariant signaling part of the T-cell receptor complex.<br> <b>Why the thymus links to the pouches</b>: the third pharyngeal pouch endoderm forms the thymic epithelium, which provides the selection signals that turn bone-marrow precursors into mature T cells. Without that epithelium, precursors still exist but cannot mature, so the paracortex is empty while follicles are intact.<br> <b>Clinical package</b>: the third pouch also gives the inferior parathyroids and the fourth gives the superior parathyroids, so the same defect causes neonatal hypocalcemic tetany; neural-crest migration through the arches explains the conotruncal heart defects and facial features."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Structure</th><th style=\"width:38%\">3rd/4th pouches (answer)</th><th>1st pouch (closest distractor)</th></tr></thead><tbody> <tr><td>Derivatives</td><td><b>Thymus, inferior and superior parathyroids</b></td><td>Middle ear cavity, eustachian tube, mastoid air cells</td></tr> <tr><td>Defect</td><td>T-cell deficiency, hypocalcemia</td><td>Conductive hearing problems</td></tr> <tr><td>Lymph node</td><td>Empty paracortex, follicles present</td><td>Normal lymphocyte zones</td></tr> </tbody></table> If the stain had filled the follicles instead, the question would point to B-cell development (e.g., BTK), not the pharyngeal pouches."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) The thyroglossal duct would be correct for a midline neck cyst that moves with swallowing; the thyroid does not produce lymphocytes.\n(C) The first pouch would be correct if the question asked about the middle ear cavity or eustachian tube; it does not form lymphoid organs.\n(D) The second arch would be correct for derivatives such as the stapes, styloid process, and muscles of facial expression, none of which shape T-cell development.\n(E) The first cleft would be correct for the external auditory meatus; its defects cause preauricular cysts or sinuses, not lymphopenia."
+   },
+   {
+    "k": "함정",
+    "v": "Reading any lymph node stain as B cells — here the follicle centers are negative and the paracortex is positive, which is the T-cell zone."
+   },
+   {
+    "k": "학습목표",
+    "v": "림프절 면역염색에서 여포 사이·피질곁을 넓게 채우는 양성 세포가 T세포임을 읽고, T세포가 성숙하는 흉선이 제3·4 인두낭에서 발생함을 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sadler TW. Langman's Medical Embryology, 15th ed. Wolters Kluwer; 2023. Chapter 17: Head and neck · Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed. Elsevier; 2022. Chapter 2: Cells and tissues of the immune system ## 출처 Human Protein Atlas, CD3E / Lymph node (CC BY 4.0), https://images.proteinatlas.org/10/1628_A_9_8.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "여포 사이 피질곁을 채우는 염색 세포는 T세포이고, T세포가 성숙하는 흉선은 제3 인두낭(부갑상샘은 제3·4 인두낭)에서 생긴다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "제1 인두낭은 가운데귀·귀관을 만든다 — 림프 기관과 무관하다",
+   "steps": 3,
+   "chain": [
+    "영상: 여포 사이·피질곁이 넓게 갈색, 여포 중심은 음성 → T세포 구역",
+    "T세포 성숙 장소 → 흉선",
+    "흉선 발생 → 제3 인두낭(부갑상샘 제3·4) — 22q11.2 결실"
+   ],
+   "key": [
+    {
+     "item": "영상: 여포 사이·피질곁을 넓게 채운 갈색 림프구",
+     "why": "T세포 구역 양성",
+     "also": []
+    },
+    {
+     "item": "the follicle centers are negative",
+     "why": "B세포 구역(배중심)이 아니다",
+     "also": []
+    },
+    {
+     "item": "part of the antigen-receptor signaling complex",
+     "why": "CD3 — T세포 수용체 복합체",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "reactive changes without metastasis",
+     "why": "반응성 림프절이라는 배경 — 답을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "muscle-invasive urothelial carcinoma of the bladder",
+     "why": "검체를 얻은 맥락일 뿐",
+     "also": []
+    }
+   ],
+   "summary": "여포 사이 피질곁을 채우고 배중심은 음성인 염색은 T세포다. T세포는 제3 인두낭에서 생기는 흉선에서 성숙하므로 제3·4 인두낭 발생 결함(DiGeorge)에서 줄어든다.",
+   "switch": {
+    "choice": "C",
+    "condition": "질문이 가운데귀·귀관의 발생 기원을 물었다면 제1 인두낭이 정답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0456.jpg",
+   "caption": "Tissue microarray core, immunohistochemistry (brown DAB chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0 — no cropping or adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000198851-CD3E/tissue/Lymph+node",
+   "asset_id": "HPA-CD3E_1628_A_9_8",
+   "text": "Human Protein Atlas, CD3E / Lymph node (CC BY 4.0), https://images.proteinatlas.org/10/1628_A_9_8.jpg"
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0455",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "외과계 — 20대 여성의 전형적 양성 소견 유방 종괴와 추적",
+  "type": "외과계 — 20대 여성의 전형적 양성 소견 유방 종괴와 추적",
+  "modality": "US",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-27",
+  "vignette": "23세 여자가 2개월 전 샤워하다 왼쪽 유방에서 만져지는 멍울을 발견하여 왔다. 통증은 없고 월경 주기에 따라 크기가 변하지 않았다. 유두 분비물은 없다. 출산력은 없고, 유방암·난소암 가족력은 없다. 진찰에서 왼쪽 유방 위바깥쪽에 지름 2.5 cm의 단단하고 잘 움직이는 경계가 매끈한 종괴가 만져지고, 피부 변화와 겨드랑이 림프절 비대는 없다. 유방 초음파 사진은 그림과 같고, 판독의는 BI-RADS 3 으로 분류하였다.",
+  "question": "다음 조치로 가장 적절한 것은?",
+  "options": [
+   "수술적 절제생검",
+   "타목시펜 투여",
+   "6개월 뒤 유방 초음파 추적",
+   "초음파 유도 중심부 바늘생검",
+   "유방촬영술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 초음파에서 종괴는 타원형이고 외곽이 매끈하며 피부와 평행(가로가 세로보다 김)하고 얇은 피막이 있으며 후방 음향 그림자나 석회가 없다 — 섬유샘종의 전형적 소견으로 BI-RADS 3(악성 가능성 2 % 이하)이다. 젊고 위험인자가 없으며 진찰도 양성 소견과 일치하므로 6개월 뒤 초음파로 안정성을 확인하는 단기 추적이 원칙이다.\n- 원리: <b>BI-RADS 3 의 뜻</b>: 「아마도 양성」 — 악성 가능성이 2 % 이하라 조직검사 대신 영상 추적으로 안정성을 증명한다. 보통 6개월 뒤, 이후 6~12개월 간격으로 총 2년 변화가 없으면 양성(BI-RADS 2)으로 내린다.<br> <b>왜 이 모양이 양성인가</b>: 섬유샘종은 피막에 싸여 주변을 밀어내며 자라므로 외곽이 매끈하고, 조직면을 따라 옆으로 자라 피부와 평행(가로 > 세로)이 된다. 악성은 조직을 뚫고 수직으로 침윤해 「세로가 더 긴」 모양·각진 또는 침상 외곽·후방 그림자를 만든다.<br> <b>추적이 아니라 생검으로 바꾸는 신호</b>: 추적 중 크기가 20 % 넘게 커짐, 모양 변화, 환자의 강한 불안, 추적이 불가능한 상황, 그리고 고위험(BRCA 보인자 등).\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">6개월 추적(정답)</th><th>중심부 바늘생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>BI-RADS</td><td><b>3 — 악성 가능성 ≤ 2 %</b></td><td>4 이상 — 2 % 초과(4A 2~10 %)</td></tr> <tr><td>초음파 모양</td><td>타원·외곽 명확·평행·얇은 피막</td><td>불규칙·각진/미세분엽 외곽·비평행·후방 그림자</td></tr> <tr><td>임상</td><td>젊고 위험인자 없음, 변화 없음</td><td>빠른 성장·고위험·추적 불가</td></tr> </tbody></table> 같은 섬유샘종이라도 「빠르게 커진다」면 엽상종양 가능성 때문에 생검 쪽으로 넘어간다.\n- 오답 이유:\n  - ① 절제생검은 바늘생검 결과가 영상과 맞지 않거나 엽상종양이 의심되는 빠르게 커지는 큰 종괴일 때 정답이 된다.\n  - ② 타목시펜은 고위험 여성의 유방암 위험 감소나 호르몬 수용체 양성 유방암 치료에 쓰며, 양성 종괴의 치료가 아니다.\n  - ④ 중심부 바늘생검은 BI-RADS 4 이상이거나, BI-RADS 3 이라도 추적 중 크기가 뚜렷이 커지거나 고위험군·추적 불가일 때 정답이 된다.\n  - ⑤ 유방촬영술은 30~40세 이상에서 만져지는 종괴를 평가할 때 초음파와 함께 쓰며, 23세의 치밀유방에서는 첫 검사로 권하지 않는다.\n- 함정: 만져지는 멍울은 무조건 조직검사라고 생각하는 것 — 초음파가 전형적 양성(BI-RADS 3)이고 위험인자가 없으면 단기 추적이 원칙이다.\n- 학습목표: 젊은 여성의 유방 종괴가 초음파에서 타원형·외곽 명확·피부와 평행한 전형적 양성 소견(BI-RADS 3)이면 6개월 단기 추적 초음파가 원칙임을 안다\n- 근거·출처: American College of Radiology. ACR BI-RADS Atlas, 5th ed. 2013 — Ultrasound: assessment category 3 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Elsevier; 2022. Chapter: Diseases of the breast\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case185 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 종괴는 타원형이고 외곽이 매끈하며 피부와 평행(가로가 세로보다 김)하고 얇은 피막이 있으며 후방 음향 그림자나 석회가 없다 — 섬유샘종의 전형적 소견으로 BI-RADS 3(악성 가능성 2 % 이하)이다. 젊고 위험인자가 없으며 진찰도 양성 소견과 일치하므로 6개월 뒤 초음파로 안정성을 확인하는 단기 추적이 원칙이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>BI-RADS 3 의 뜻</b>: 「아마도 양성」 — 악성 가능성이 2 % 이하라 조직검사 대신 영상 추적으로 안정성을 증명한다. 보통 6개월 뒤, 이후 6~12개월 간격으로 총 2년 변화가 없으면 양성(BI-RADS 2)으로 내린다.<br> <b>왜 이 모양이 양성인가</b>: 섬유샘종은 피막에 싸여 주변을 밀어내며 자라므로 외곽이 매끈하고, 조직면을 따라 옆으로 자라 피부와 평행(가로 > 세로)이 된다. 악성은 조직을 뚫고 수직으로 침윤해 「세로가 더 긴」 모양·각진 또는 침상 외곽·후방 그림자를 만든다.<br> <b>추적이 아니라 생검으로 바꾸는 신호</b>: 추적 중 크기가 20 % 넘게 커짐, 모양 변화, 환자의 강한 불안, 추적이 불가능한 상황, 그리고 고위험(BRCA 보인자 등)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">6개월 추적(정답)</th><th>중심부 바늘생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>BI-RADS</td><td><b>3 — 악성 가능성 ≤ 2 %</b></td><td>4 이상 — 2 % 초과(4A 2~10 %)</td></tr> <tr><td>초음파 모양</td><td>타원·외곽 명확·평행·얇은 피막</td><td>불규칙·각진/미세분엽 외곽·비평행·후방 그림자</td></tr> <tr><td>임상</td><td>젊고 위험인자 없음, 변화 없음</td><td>빠른 성장·고위험·추적 불가</td></tr> </tbody></table> 같은 섬유샘종이라도 「빠르게 커진다」면 엽상종양 가능성 때문에 생검 쪽으로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 절제생검은 바늘생검 결과가 영상과 맞지 않거나 엽상종양이 의심되는 빠르게 커지는 큰 종괴일 때 정답이 된다.\n② 타목시펜은 고위험 여성의 유방암 위험 감소나 호르몬 수용체 양성 유방암 치료에 쓰며, 양성 종괴의 치료가 아니다.\n④ 중심부 바늘생검은 BI-RADS 4 이상이거나, BI-RADS 3 이라도 추적 중 크기가 뚜렷이 커지거나 고위험군·추적 불가일 때 정답이 된다.\n⑤ 유방촬영술은 30~40세 이상에서 만져지는 종괴를 평가할 때 초음파와 함께 쓰며, 23세의 치밀유방에서는 첫 검사로 권하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "만져지는 멍울은 무조건 조직검사라고 생각하는 것 — 초음파가 전형적 양성(BI-RADS 3)이고 위험인자가 없으면 단기 추적이 원칙이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 여성의 유방 종괴가 초음파에서 타원형·외곽 명확·피부와 평행한 전형적 양성 소견(BI-RADS 3)이면 6개월 단기 추적 초음파가 원칙임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. ACR BI-RADS Atlas, 5th ed. 2013 — Ultrasound: assessment category 3 · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Elsevier; 2022. Chapter: Diseases of the breast ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case185 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "젊은 저위험 여성의 종괴가 초음파에서 전형적 양성(BI-RADS 3)이므로 6개월 단기 추적 초음파를 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "BI-RADS 3 이고 빠른 성장·고위험이 없다 — 생검 기준(BI-RADS 4 이상)에 해당하지 않는다",
+   "steps": 2,
+   "chain": [
+    "영상: 타원형·외곽 명확·피부와 평행·얇은 피막·후방 변화 없음 → BI-RADS 3 양성 소견",
+    "23세·가족력 없음·변화 없음 → 6개월 단기 추적"
+   ],
+   "key": [
+    {
+     "item": "영상: 타원형·외곽이 매끈하고 피부와 평행한 저에코 종괴",
+     "why": "섬유샘종의 전형적 양성 모양",
+     "also": []
+    },
+    {
+     "item": "BI-RADS 3",
+     "why": "악성 가능성 2 % 이하 — 추적의 근거",
+     "also": []
+    },
+    {
+     "item": "23세 여자",
+     "why": "젊은 나이 — 섬유샘종의 호발 연령, 유방촬영술보다 초음파",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "유방암·난소암 가족력은 없다",
+     "why": "고위험군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "겨드랑이 림프절 비대는 없다",
+     "why": "악성 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "월경 주기에 따라 크기가 변하지 않았다",
+     "why": "섬유낭종 변화와의 감별에 떠올리지만 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "23세 저위험 여성의 종괴가 초음파에서 타원형·외곽 명확·평행한 BI-RADS 3 소견이다. 생검 대신 6개월 뒤 초음파로 안정성을 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "추적 6개월 사이 크기가 20 % 넘게 커졌거나 BRCA 보인자였다면 초음파 유도 중심부 바늘생검이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0455.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case185",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case185"
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0454",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "산과 — 양막이 터진 초산부의 신호가 자주 끊기는 태아심박동 기록",
+  "type": "산과 — 양막이 터진 초산부의 신호가 자주 끊기는 태아심박동 기록",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-27",
+  "vignette": "39세 초산부가 임신 40주에 진통으로 입원하였다. 입원 2시간 전 양막이 저절로 터졌고 양수는 맑았다. 혈압 118/72 mmHg, 맥박 84회/분, 체온 36.9℃이다. 내진에서 자궁경부는 5 cm 열려 있고 태아 머리가 −1 위치에 있다. 산모는 체질량지수 36 kg/m²이고 자주 몸을 뒤척인다. 옥시토신은 쓰지 않고 있다. 복부에 붙인 외부 탐촉자로 기록한 태아심박동과 자궁수축 기록은 그림과 같다.",
+  "question": "다음 조치로 가장 적절한 것은?",
+  "options": [
+   "태아 두피 전극 부착",
+   "응급 제왕절개",
+   "흡입 분만",
+   "자궁수축억제제 투여",
+   "2시간 뒤 다시 기록"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 기록의 앞쪽 절반은 태아심박동 선이 수십 초마다 끊겨 기준선·변이도·감속을 판정할 수 없고, 끝 무렵에는 신호가 끊기는 사이에 75회/분까지 떨어지는 구간이 있다. 비만과 산모의 움직임으로 외부 탐촉자 신호가 불안정한 것이다. 양막이 터졌고 자궁경부가 열려 있으므로 태아 두피 전극으로 태아 심전도 R파를 직접 세어 믿을 수 있는 기록을 먼저 얻는 것이 다음 단계다.\n- 원리: <b>외부 감시가 끊기는 이유</b>: 복부 탐촉자는 도플러 초음파로 태아 심장벽·판막의 움직임을 잡는다. 산모 복벽이 두껍거나 산모·태아가 움직이면 초음파 빔이 심장을 벗어나 선이 끊기고, 때로는 산모 대동맥 박동(산모 맥박)을 잘못 잡는다.<br> <b>내부 감시의 원리</b>: 두피 전극은 태아 피부에 붙어 태아 심전도의 R-R 간격으로 심박수를 계산하므로, 박동마다 끊김 없는 기록과 정확한 변이도를 준다. 조건은 <b>양막 파열·자궁경부 개대·선진부가 머리</b>이고, 산모 HIV·B형간염 등 수직 감염 위험이나 태아 출혈 경향이 있으면 쓰지 않는다.<br> <b>순서</b>: 감속이 의심되는 구간이 있어도 그것이 진짜 태아 심박인지 확인하지 못하면 분만 방식을 정할 근거가 없다 — 「해석할 수 있는 기록」이 먼저다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">태아 두피 전극(정답)</th><th>응급 제왕절개(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전제</td><td><b>기록을 믿을 수 없다 — 먼저 확인</b></td><td>믿을 수 있는 기록이 3단계(비정상)임을 확인</td></tr> <tr><td>이 기록</td><td>신호 소실이 잦아 기준선·변이도 판정 불가</td><td>지속되는 서맥·변이도 소실이 확인되지 않음</td></tr> <tr><td>조건</td><td>양막 파열·경부 개대·두위</td><td>태아 상태가 나쁘다는 확인 + 질식분만이 곧 어려움</td></tr> </tbody></table> 「끊긴 선 사이의 낮은 값」은 태아 서맥일 수도, 신호 탐지 오류일 수도 있다 — 내부 감시로 가린 뒤에야 수술을 결정한다.\n- 오답 이유:\n  - ② 응급 제왕절개는 믿을 수 있는 기록에서 지속되는 서맥·변이도 소실 같은 3단계 소견이 확인되고 질식분만이 곧 어려울 때 정답이 된다.\n  - ③ 흡입 분만은 자궁경부가 완전히 열리고 머리가 충분히 내려온 분만 2기에 태아 곤란이 확인될 때 정답이 되며, 5 cm 개대에서는 할 수 없다.\n  - ④ 자궁수축억제제는 과다수축(10분에 5회 초과)과 함께 태아심박동 이상이 있을 때 정답이 되며, 이 기록의 수축 빈도는 높지 않다.\n  - ⑤ 2시간 뒤 재기록은 해석 가능한 1단계(정상) 기록이 이어질 때 적절하며, 판정할 수 없는 기록을 그대로 두면 태아 상태를 놓친다.\n- 함정: 끝 무렵의 낮은 값만 보고 바로 제왕절개를 고르는 것 — 신호가 끊긴 기록에서 먼저 할 일은 진짜 태아 심박을 확인하는 것이다.\n- 학습목표: 외부 태아심박동 감시에서 신호가 자주 끊겨 기록을 해석할 수 없으면 양막이 터진 산모에게 태아 두피 전극으로 내부 감시를 하는 것을 안다\n- 근거·출처: ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol 2009;114:192-202 · Cunningham FG, et al. Williams Obstetrics, 26th ed. McGraw-Hill; 2022. Chapter 24: Intrapartum assessment\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1347 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기록의 앞쪽 절반은 태아심박동 선이 수십 초마다 끊겨 기준선·변이도·감속을 판정할 수 없고, 끝 무렵에는 신호가 끊기는 사이에 75회/분까지 떨어지는 구간이 있다. 비만과 산모의 움직임으로 외부 탐촉자 신호가 불안정한 것이다. 양막이 터졌고 자궁경부가 열려 있으므로 태아 두피 전극으로 태아 심전도 R파를 직접 세어 믿을 수 있는 기록을 먼저 얻는 것이 다음 단계다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>외부 감시가 끊기는 이유</b>: 복부 탐촉자는 도플러 초음파로 태아 심장벽·판막의 움직임을 잡는다. 산모 복벽이 두껍거나 산모·태아가 움직이면 초음파 빔이 심장을 벗어나 선이 끊기고, 때로는 산모 대동맥 박동(산모 맥박)을 잘못 잡는다.<br> <b>내부 감시의 원리</b>: 두피 전극은 태아 피부에 붙어 태아 심전도의 R-R 간격으로 심박수를 계산하므로, 박동마다 끊김 없는 기록과 정확한 변이도를 준다. 조건은 <b>양막 파열·자궁경부 개대·선진부가 머리</b>이고, 산모 HIV·B형간염 등 수직 감염 위험이나 태아 출혈 경향이 있으면 쓰지 않는다.<br> <b>순서</b>: 감속이 의심되는 구간이 있어도 그것이 진짜 태아 심박인지 확인하지 못하면 분만 방식을 정할 근거가 없다 — 「해석할 수 있는 기록」이 먼저다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">태아 두피 전극(정답)</th><th>응급 제왕절개(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전제</td><td><b>기록을 믿을 수 없다 — 먼저 확인</b></td><td>믿을 수 있는 기록이 3단계(비정상)임을 확인</td></tr> <tr><td>이 기록</td><td>신호 소실이 잦아 기준선·변이도 판정 불가</td><td>지속되는 서맥·변이도 소실이 확인되지 않음</td></tr> <tr><td>조건</td><td>양막 파열·경부 개대·두위</td><td>태아 상태가 나쁘다는 확인 + 질식분만이 곧 어려움</td></tr> </tbody></table> 「끊긴 선 사이의 낮은 값」은 태아 서맥일 수도, 신호 탐지 오류일 수도 있다 — 내부 감시로 가린 뒤에야 수술을 결정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 응급 제왕절개는 믿을 수 있는 기록에서 지속되는 서맥·변이도 소실 같은 3단계 소견이 확인되고 질식분만이 곧 어려울 때 정답이 된다.\n③ 흡입 분만은 자궁경부가 완전히 열리고 머리가 충분히 내려온 분만 2기에 태아 곤란이 확인될 때 정답이 되며, 5 cm 개대에서는 할 수 없다.\n④ 자궁수축억제제는 과다수축(10분에 5회 초과)과 함께 태아심박동 이상이 있을 때 정답이 되며, 이 기록의 수축 빈도는 높지 않다.\n⑤ 2시간 뒤 재기록은 해석 가능한 1단계(정상) 기록이 이어질 때 적절하며, 판정할 수 없는 기록을 그대로 두면 태아 상태를 놓친다."
+   },
+   {
+    "k": "함정",
+    "v": "끝 무렵의 낮은 값만 보고 바로 제왕절개를 고르는 것 — 신호가 끊긴 기록에서 먼저 할 일은 진짜 태아 심박을 확인하는 것이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "외부 태아심박동 감시에서 신호가 자주 끊겨 기록을 해석할 수 없으면 양막이 터진 산모에게 태아 두피 전극으로 내부 감시를 하는 것을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol 2009;114:192-202 · Cunningham FG, et al. Williams Obstetrics, 26th ed. McGraw-Hill; 2022. Chapter 24: Intrapartum assessment ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1347 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "외부 감시 신호가 자주 끊겨 기록을 해석할 수 없고 양막이 터져 경부가 열려 있으므로 두피 전극으로 내부 감시를 먼저 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "낮은 값이 신호가 끊기는 사이에만 보여 진짜 태아 서맥인지 확인되지 않았다 — 수술 근거가 아직 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 태아심박동 선이 수십 초마다 끊김 → 기준선·변이도 판정 불가",
+    "양막 파열·경부 5 cm·두위 → 두피 전극으로 내부 감시"
+   ],
+   "key": [
+    {
+     "item": "영상: 앞쪽 절반에서 태아심박동 선이 자주 끊김",
+     "why": "외부 감시 기록을 해석할 수 없다",
+     "also": []
+    },
+    {
+     "item": "입원 2시간 전 양막이 저절로 터졌고",
+     "why": "두피 전극의 전제 조건",
+     "also": []
+    },
+    {
+     "item": "자궁경부는 5 cm 열려 있고",
+     "why": "전극을 붙일 수 있고, 흡입 분만은 아직 할 수 없다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "옥시토신은 쓰지 않고 있다",
+     "why": "옥시토신에 의한 과다수축 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "체질량지수 36 kg/m²",
+     "why": "외부 탐촉자 신호가 약한 이유를 설명한다",
+     "also": []
+    },
+    {
+     "item": "자주 몸을 뒤척인다",
+     "why": "신호 소실의 또 다른 원인",
+     "also": []
+    },
+    {
+     "item": "맥박 84회/분",
+     "why": "산모 맥박을 태아 심박으로 잘못 잡는지 확인할 때 쓰는 값",
+     "also": []
+    }
+   ],
+   "summary": "외부 탐촉자 기록이 자주 끊겨 기준선·변이도·감속을 판정할 수 없다. 양막이 터지고 경부가 열린 두위이므로 태아 두피 전극으로 믿을 수 있는 기록을 먼저 얻는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "두피 전극 기록에서도 태아 심박이 75회/분 안팎으로 10분 넘게 지속되고 변이도가 없다면 응급 제왕절개가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0454.png",
+   "caption": "분만 중 태아심박동(위)과 자궁활동(아래), 기록 시작 후 20~30분 구간, 굵은 세로선 = 1분 (PhysioNet CTU-UHB, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1347_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1347"
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0465",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 코호트 연구의 인구집단 기여위험분율",
+  "type": "예방의학·역학·보건통계 — 코호트 연구의 인구집단 기여위험분율",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-27",
+  "vignette": "A 45-year-old woman who works as a city public health officer reviews a 10-year prospective cohort study that followed 10,000 adults in a city who were free of chronic obstructive pulmonary disease at baseline. At enrollment, 2,000 participants are current smokers and 8,000 have never smoked; this proportion is representative of the city's adult population. During follow-up, 80 of the smokers and 80 of the never-smokers develop the disease. She wants to know what proportion of all new cases of the disease in the city's adult population could be prevented if smoking were completely eliminated, assuming the association is causal and there is no confounding.",
+  "question": "Which of the following is the closest estimate?",
+  "options": [
+   "50 %",
+   "25 %",
+   "3 %",
+   "38 %",
+   "75 %"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Incidence in smokers is 80/2,000 = 4.0 %; in never-smokers 80/8,000 = 1.0 %; relative risk = 4. The total population incidence is 160/10,000 = 1.6 %. The population attributable fraction is (1.6 − 1.0)/1.6 = 37.5 %, which by the prevalence formula is Pe(RR − 1)/[1 + Pe(RR − 1)] = 0.2 × 3/(1 + 0.6) = 0.375. This rounds to 38 %; 75 % is the attributable fraction among the exposed only.\n- 원리: <b>Two different questions</b>: the attributable fraction in the exposed asks, \"Among smokers who got the disease, what share is due to smoking?\" — (RR − 1)/RR = 3/4 = 75 %. The population attributable fraction asks, \"Among all cases in the population, what share would disappear without the exposure?\" — it shrinks when few people are exposed, because many cases occur in never-smokers anyway.<br> <b>Computing it two ways</b>: (incidence in total population − incidence in unexposed)/incidence in total population = (1.6 − 1.0)/1.6 = 37.5 %. Or Pe(RR − 1)/[1 + Pe(RR − 1)] with Pe = 0.20 and RR = 4, giving 0.6/1.6 = 37.5 %. Half of the cases (80 of 160) occur in smokers, but even without smoking those 2,000 people would have had 20 cases (1 %), so 60 of 160 cases (37.5 %) are preventable.<br> <b>Why it matters for policy</b>: a strong risk factor that few people have can have a smaller population impact than a modest risk factor that many people have.\n- 비교: <table><thead><tr><th style=\"width:24%\">Measure</th><th style=\"width:38%\">Population attributable fraction (answer)</th><th>Attributable fraction in exposed (closest distractor)</th></tr></thead><tbody> <tr><td>Question</td><td><b>Share of all population cases preventable</b></td><td>Share of cases among the exposed due to exposure</td></tr> <tr><td>Formula</td><td>(Ip − Iu)/Ip = Pe(RR−1)/[1+Pe(RR−1)]</td><td>(Ie − Iu)/Ie = (RR−1)/RR</td></tr> <tr><td>This study</td><td>(1.6 − 1.0)/1.6 = 37.5 % (≈ 38 %)</td><td>(4.0 − 1.0)/4.0 = 75 %</td></tr> </tbody></table> \"Among smokers\" → (RR−1)/RR; \"in the population\" → weight by how common the exposure is.\n- 오답 이유:\n  - (A) 50 % is the share of all cases that occurred in smokers (80 of 160); it ignores the cases smokers would have had anyway.\n  - (B) 25 % is the reciprocal of the relative risk (1/4), the proportion of smokers' risk they would have even without smoking.\n  - (C) 3 % is the risk difference (4.0 % − 1.0 %), an absolute measure in the exposed, not a fraction of all cases.\n  - (E) 75 % is correct if the question asks what proportion of cases among smokers is attributable to smoking, (RR − 1)/RR.\n- 함정: Answering 75 % — that is the attributable fraction among smokers; the question asks about all cases in the whole population.\n- 학습목표: 코호트 연구에서 노출군 기여위험분율과 인구집단 기여위험분율을 구별하고, 노출 유병률과 상대위험도로 인구집단 기여위험분율을 계산한다\n- 근거·출처: Gordis L, Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019. Chapter 12: More on risk — estimating the potential for prevention · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Lippincott Williams & Wilkins; 2008. Chapter 4: Measures of effect and association",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Incidence in smokers is 80/2,000 = 4.0 %; in never-smokers 80/8,000 = 1.0 %; relative risk = 4. The total population incidence is 160/10,000 = 1.6 %. The population attributable fraction is (1.6 − 1.0)/1.6 = 37.5 %, which by the prevalence formula is Pe(RR − 1)/[1 + Pe(RR − 1)] = 0.2 × 3/(1 + 0.6) = 0.375. This rounds to 38 %; 75 % is the attributable fraction among the exposed only."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Two different questions</b>: the attributable fraction in the exposed asks, \"Among smokers who got the disease, what share is due to smoking?\" — (RR − 1)/RR = 3/4 = 75 %. The population attributable fraction asks, \"Among all cases in the population, what share would disappear without the exposure?\" — it shrinks when few people are exposed, because many cases occur in never-smokers anyway.<br> <b>Computing it two ways</b>: (incidence in total population − incidence in unexposed)/incidence in total population = (1.6 − 1.0)/1.6 = 37.5 %. Or Pe(RR − 1)/[1 + Pe(RR − 1)] with Pe = 0.20 and RR = 4, giving 0.6/1.6 = 37.5 %. Half of the cases (80 of 160) occur in smokers, but even without smoking those 2,000 people would have had 20 cases (1 %), so 60 of 160 cases (37.5 %) are preventable.<br> <b>Why it matters for policy</b>: a strong risk factor that few people have can have a smaller population impact than a modest risk factor that many people have."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Measure</th><th style=\"width:38%\">Population attributable fraction (answer)</th><th>Attributable fraction in exposed (closest distractor)</th></tr></thead><tbody> <tr><td>Question</td><td><b>Share of all population cases preventable</b></td><td>Share of cases among the exposed due to exposure</td></tr> <tr><td>Formula</td><td>(Ip − Iu)/Ip = Pe(RR−1)/[1+Pe(RR−1)]</td><td>(Ie − Iu)/Ie = (RR−1)/RR</td></tr> <tr><td>This study</td><td>(1.6 − 1.0)/1.6 = 37.5 % (≈ 38 %)</td><td>(4.0 − 1.0)/4.0 = 75 %</td></tr> </tbody></table> \"Among smokers\" → (RR−1)/RR; \"in the population\" → weight by how common the exposure is."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) 50 % is the share of all cases that occurred in smokers (80 of 160); it ignores the cases smokers would have had anyway.\n(B) 25 % is the reciprocal of the relative risk (1/4), the proportion of smokers' risk they would have even without smoking.\n(C) 3 % is the risk difference (4.0 % − 1.0 %), an absolute measure in the exposed, not a fraction of all cases.\n(E) 75 % is correct if the question asks what proportion of cases among smokers is attributable to smoking, (RR − 1)/RR."
+   },
+   {
+    "k": "함정",
+    "v": "Answering 75 % — that is the attributable fraction among smokers; the question asks about all cases in the whole population."
+   },
+   {
+    "k": "학습목표",
+    "v": "코호트 연구에서 노출군 기여위험분율과 인구집단 기여위험분율을 구별하고, 노출 유병률과 상대위험도로 인구집단 기여위험분율을 계산한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L, Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019. Chapter 12: More on risk — estimating the potential for prevention · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Lippincott Williams & Wilkins; 2008. Chapter 4: Measures of effect and association"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "모든 신규 환자 중 흡연 제거로 막을 수 있는 비율은 인구집단 기여위험분율 (1.6−1.0)/1.6 = 37.5 % (약 38 %)이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "75 % 는 흡연자 안에서의 기여위험분율이다 — 질문은 인구 전체의 환자를 묻는다",
+   "steps": 3,
+   "chain": [
+    "흡연자 발생률 4.0 %·비흡연자 1.0 % → 상대위험도 4",
+    "전체 발생률 1.6 % (노출 유병률 20 %)",
+    "인구집단 기여위험분율 (1.6−1.0)/1.6 = 37.5 % ≈ 38 %"
+   ],
+   "key": [
+    {
+     "item": "80 of the smokers and 80 of the never-smokers",
+     "why": "발생률 계산의 근거",
+     "also": []
+    },
+    {
+     "item": "2,000 participants are current smokers and 8,000 have never smoked",
+     "why": "노출 유병률 20 %",
+     "also": []
+    },
+    {
+     "item": "all new cases of the disease in the city's adult population",
+     "why": "인구집단 기여위험분율을 묻는다",
+     "also": []
+    },
+    {
+     "item": "this proportion is representative of the city's adult population",
+     "why": "표본의 노출 유병률을 인구에 적용할 수 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "assuming the association is causal and there is no confounding",
+     "why": "계산의 전제 — 값 자체를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "흡연자 4.0 %, 비흡연자 1.0 %, 전체 1.6 %의 발생률에서 인구집단 기여위험분율은 37.5 %(약 38 %)이다. 75 % 는 흡연자 안에서의 기여위험분율이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "질문이 「흡연자에게 생긴 환자 중 흡연 때문인 비율」을 물었다면 75 % 가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0464",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "감염 — 열·인두염·뒤목 림프절 비대와 아목시실린 뒤 발진",
+  "type": "감염 — 열·인두염·뒤목 림프절 비대와 아목시실린 뒤 발진",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-27",
+  "vignette": "19세 남자가 1주 전부터 열이 나고 목이 아프며 몹시 피곤하여 왔다. 사흘 전 다른 의원에서 아목시실린을 처방받아 먹은 뒤 어제부터 온몸에 가렵지 않은 붉은 구진 발진이 생겼다. 체온 38.4℃, 맥박 96회/분이다. 편도가 커져 있고 회백색 삼출물로 덮여 있으며, 입천장에 점상출혈이 있다. 앞목과 뒤목 양쪽에 압통이 약한 림프절이 여럿 만져지고, 왼쪽 갈비뼈 아래에서 비장 끝이 만져진다. 백혈구 11,200/mm³(림프구 62 %, 비정형 림프구 18 %), AST 88 U/L, ALT 104 U/L 이다.",
+  "question": "진단을 위해 가장 적절한 검사는?",
+  "options": [
+   "말초혈액 유세포분석",
+   "골수 검사",
+   "HIV 항원·항체 검사",
+   "이종친화항체 검사",
+   "인두 배양"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 청소년·젊은 성인의 열·삼출성 인두염·뒤목 림프절 비대·비장 비대, 림프구 증가와 비정형 림프구 10 % 이상, 가벼운 간수치 상승, 그리고 아미노페니실린 뒤 생긴 발진은 엡스타인-바 바이러스에 의한 전염단핵구증의 전형이다. 첫 확인 검사는 이종친화항체(Monospot) 검사이며, 음성이면 EBV 특이 항체(VCA IgM)를 본다.\n- 원리: <b>비정형 림프구의 정체</b>: EBV 는 B세포에 감염하고, 이를 없애려는 세포독성 CD8 T세포가 크게 늘어난다. 이 활성 T세포가 말초혈액의 크고 세포질이 풍부한 비정형 림프구다 — 감염된 B세포가 아니다. 림프 조직이 커져 뒤목 림프절·편도·비장이 붓는다.<br> <b>이종친화항체의 원리</b>: 감염된 B세포가 다클론성으로 활성화되어 양·말 적혈구를 응집시키는 IgM 항체를 만든다. 간단하고 빠르지만 증상 첫 주와 4세 미만에서는 위음성이 흔하다.<br> <b>아목시실린 발진</b>: 다클론성 B세포 활성화로 약물에 대한 일시적 면역 반응이 생겨 대부분 발진이 나며, 진짜 페니실린 알레르기는 아니다. 비장 파열 위험 때문에 최소 3~4주 접촉 운동을 금한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">이종친화항체 검사(정답)</th><th>인두 배양(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td><b>EBV 전염단핵구증</b></td><td>A군 연쇄알균 인두염</td></tr> <tr><td>지지 소견</td><td>뒤목 림프절·비장 비대·비정형 림프구·간수치 상승</td><td>앞목 림프절, 기침 없음, 비장 비대·비정형 림프구 없음</td></tr> <tr><td>아목시실린 뒤</td><td>발진이 흔함</td><td>발진 드묾</td></tr> </tbody></table> 둘 다 삼출성 편도염을 만든다 — 뒤목 림프절·비장·비정형 림프구가 바이러스 쪽으로 기울게 한다.\n- 오답 이유:\n  - ① 유세포분석은 성숙 림프구가 단클론성으로 계속 늘어 만성 림프구백혈병이 의심되는 고령 환자에서 정답이 된다.\n  - ② 골수 검사는 빈혈·혈소판 감소·모세포가 함께 있어 급성 백혈병이 의심될 때 정답이 되며, 이 환자의 혈구는 그렇지 않다.\n  - ③ HIV 검사는 이종친화항체와 EBV 항체가 음성인 단핵구증 유사 증후군이나 고위험 노출이 있을 때 정답이 된다.\n  - ⑤ 인두 배양(또는 신속항원검사)은 기침 없는 열·앞목 림프절 압통·삼출성 편도염이 있고 비장 비대·비정형 림프구가 없을 때 정답이 된다.\n- 함정: 삼출성 편도염이라 연쇄알균부터 보는 것 — 뒤목 림프절·비장 비대·비정형 림프구·아목시실린 발진은 EBV 를 가리킨다.\n- 학습목표: 열·삼출성 인두염·뒤목 림프절 비대·비장 비대와 아목시실린 뒤 발진, 비정형 림프구에서 전염단핵구증을 의심하고 이종친화항체 검사를 한다\n- 근거·출처: Dunmire SK, Verghese PS, Balfour HH Jr. Primary Epstein-Barr virus infection. J Clin Virol 2018;102:84-92 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 194: Epstein-Barr virus infections",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "청소년·젊은 성인의 열·삼출성 인두염·뒤목 림프절 비대·비장 비대, 림프구 증가와 비정형 림프구 10 % 이상, 가벼운 간수치 상승, 그리고 아미노페니실린 뒤 생긴 발진은 엡스타인-바 바이러스에 의한 전염단핵구증의 전형이다. 첫 확인 검사는 이종친화항체(Monospot) 검사이며, 음성이면 EBV 특이 항체(VCA IgM)를 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>비정형 림프구의 정체</b>: EBV 는 B세포에 감염하고, 이를 없애려는 세포독성 CD8 T세포가 크게 늘어난다. 이 활성 T세포가 말초혈액의 크고 세포질이 풍부한 비정형 림프구다 — 감염된 B세포가 아니다. 림프 조직이 커져 뒤목 림프절·편도·비장이 붓는다.<br> <b>이종친화항체의 원리</b>: 감염된 B세포가 다클론성으로 활성화되어 양·말 적혈구를 응집시키는 IgM 항체를 만든다. 간단하고 빠르지만 증상 첫 주와 4세 미만에서는 위음성이 흔하다.<br> <b>아목시실린 발진</b>: 다클론성 B세포 활성화로 약물에 대한 일시적 면역 반응이 생겨 대부분 발진이 나며, 진짜 페니실린 알레르기는 아니다. 비장 파열 위험 때문에 최소 3~4주 접촉 운동을 금한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">이종친화항체 검사(정답)</th><th>인두 배양(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td><b>EBV 전염단핵구증</b></td><td>A군 연쇄알균 인두염</td></tr> <tr><td>지지 소견</td><td>뒤목 림프절·비장 비대·비정형 림프구·간수치 상승</td><td>앞목 림프절, 기침 없음, 비장 비대·비정형 림프구 없음</td></tr> <tr><td>아목시실린 뒤</td><td>발진이 흔함</td><td>발진 드묾</td></tr> </tbody></table> 둘 다 삼출성 편도염을 만든다 — 뒤목 림프절·비장·비정형 림프구가 바이러스 쪽으로 기울게 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 유세포분석은 성숙 림프구가 단클론성으로 계속 늘어 만성 림프구백혈병이 의심되는 고령 환자에서 정답이 된다.\n② 골수 검사는 빈혈·혈소판 감소·모세포가 함께 있어 급성 백혈병이 의심될 때 정답이 되며, 이 환자의 혈구는 그렇지 않다.\n③ HIV 검사는 이종친화항체와 EBV 항체가 음성인 단핵구증 유사 증후군이나 고위험 노출이 있을 때 정답이 된다.\n⑤ 인두 배양(또는 신속항원검사)은 기침 없는 열·앞목 림프절 압통·삼출성 편도염이 있고 비장 비대·비정형 림프구가 없을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "삼출성 편도염이라 연쇄알균부터 보는 것 — 뒤목 림프절·비장 비대·비정형 림프구·아목시실린 발진은 EBV 를 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "열·삼출성 인두염·뒤목 림프절 비대·비장 비대와 아목시실린 뒤 발진, 비정형 림프구에서 전염단핵구증을 의심하고 이종친화항체 검사를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Dunmire SK, Verghese PS, Balfour HH Jr. Primary Epstein-Barr virus infection. J Clin Virol 2018;102:84-92 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 194: Epstein-Barr virus infections"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "열·삼출성 인두염·뒤목 림프절·비장 비대·비정형 림프구와 아목시실린 발진은 전염단핵구증이므로 이종친화항체 검사를 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "뒤목 림프절·비장 비대·비정형 림프구 18 % — 연쇄알균 인두염에는 없는 소견",
+   "steps": 2,
+   "chain": [
+    "삼출성 인두염 + 뒤목 림프절 + 비장 비대 + 비정형 림프구 + 아목시실린 발진 → 전염단핵구증",
+    "첫 확인 검사 → 이종친화항체"
+   ],
+   "key": [
+    {
+     "item": "아목시실린을 처방받아 먹은 뒤",
+     "why": "아미노페니실린 발진 — EBV 의 단서",
+     "also": []
+    },
+    {
+     "item": "앞목과 뒤목 양쪽에 압통이 약한 림프절",
+     "why": "뒤목 림프절 비대",
+     "also": []
+    },
+    {
+     "item": "비장 끝이 만져진다",
+     "why": "비장 비대",
+     "also": []
+    },
+    {
+     "item": "비정형 림프구 18 %",
+     "why": "활성 CD8 T세포",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "AST 88 U/L, ALT 104 U/L",
+     "why": "흔한 경도 간염 — 진단을 지지하지만 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "입천장에 점상출혈",
+     "why": "EBV·연쇄알균 모두에서 보여 둘을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "19세의 열·삼출성 인두염·뒤목 림프절·비장 비대, 비정형 림프구 증가, 아목시실린 뒤 발진은 전염단핵구증이다. 이종친화항체 검사로 확인한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "기침 없는 열과 앞목 림프절 압통·삼출성 편도염만 있고 비장 비대·비정형 림프구가 없었다면 인두 배양(신속항원검사)이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0463",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "혈액·종양 — 월경과다·잇몸 출혈 병력과 발치 전 지혈 준비",
+  "type": "혈액·종양 — 월경과다·잇몸 출혈 병력과 발치 전 지혈 준비",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-27",
+  "vignette": "A 19-year-old woman comes to the physician before a scheduled extraction of impacted wisdom teeth. Since menarche she has had heavy menstrual periods lasting 8 days that soak through pads hourly on the first 2 days, and she bled for 2 days after a tooth was pulled at age 12. She bruises easily and has frequent nosebleeds. Her mother has similar symptoms. She takes no medications. Hemoglobin is 10.8 g/dL, platelet count is 245,000/mm3, PT is 12 seconds (normal), and aPTT is 39 seconds (upper limit of normal, 35 seconds). Von Willebrand factor antigen is 32 IU/dL, von Willebrand factor activity is 30 IU/dL, and factor VIII activity is 41 IU/dL. A desmopressin trial previously raised all three values above 100 IU/dL.",
+  "question": "Which of the following is the most appropriate agent to prevent bleeding during the procedure?",
+  "options": [
+   "Recombinant factor VIIa",
+   "Platelet transfusion",
+   "Vitamin K",
+   "Cryoprecipitate",
+   "Desmopressin"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Mucocutaneous bleeding (menorrhagia, epistaxis, prolonged dental bleeding), autosomal dominant inheritance, normal platelet count and PT, mildly prolonged aPTT, and proportionally reduced VWF antigen, VWF activity, and factor VIII indicate type 1 von Willebrand disease. Because a desmopressin trial raised the levels to normal, desmopressin — which releases stored VWF and factor VIII from endothelial Weibel-Palade bodies — is the agent of choice for minor procedures, often with tranexamic acid.\n- 원리: <b>Why VWF deficiency looks like a platelet problem</b>: VWF links platelet glycoprotein Ib to exposed subendothelial collagen under high shear, so its deficiency impairs primary hemostasis — mucosal bleeding, easy bruising, heavy periods — even though the platelet count is normal.<br> <b>Why the aPTT is long</b>: VWF also carries factor VIII and protects it from clearance; low VWF lowers factor VIII and mildly prolongs the aPTT.<br> <b>How desmopressin works</b>: this V2-receptor agonist triggers endothelial cells to release VWF (and factor VIII) stored in Weibel-Palade bodies, raising levels 2–5-fold within 30–60 minutes. It works only when the patient makes normal VWF (type 1); it is less useful in type 3 (no VWF) and may worsen thrombocytopenia in type 2B. Repeated doses cause tachyphylaxis and hyponatremia, so fluids are restricted.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Desmopressin (answer)</th><th>Cryoprecipitate (closest distractor)</th></tr></thead><tbody> <tr><td>Source of VWF</td><td><b>Patient's own stores</b></td><td>Pooled donor plasma</td></tr> <tr><td>Best for</td><td>Type 1 with proven response, minor procedures</td><td>Only when VWF concentrate is unavailable</td></tr> <tr><td>Risks</td><td>Hyponatremia, tachyphylaxis</td><td>Infection transmission, volume, allergic reactions</td></tr> </tbody></table> When the patient's own stores are proven adequate, use them first; donor products are for nonresponders, type 3, or major surgery.\n- 오답 이유:\n  - (A) Recombinant factor VIIa is correct for hemophilia with inhibitors or Glanzmann thrombasthenia; it bypasses but does not replace missing VWF.\n  - (B) Platelet transfusion is correct for thrombocytopenia or a qualitative platelet defect; her platelet count is normal and the defect is in VWF.\n  - (C) Vitamin K is correct for warfarin effect or vitamin K deficiency, which prolong the PT first; her PT is normal.\n  - (D) Cryoprecipitate contains VWF but is a backup when VWF/factor VIII concentrate is unavailable, for nonresponders or type 3 disease.\n- 함정: Reaching for a blood product because the aPTT is long — a proven desmopressin responder with type 1 disease uses her own VWF stores.\n- 학습목표: 점막 출혈 병력과 혈소판 수 정상·aPTT 경도 연장·폰빌레브란트 인자 활성 저하를 보이는 1형 폰빌레브란트병에서 소수술 전 데스모프레신을 쓴다\n- 근거·출처: Connell NT, et al. ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease. Blood Adv 2021;5:301-325 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 116: Bleeding and thrombosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Mucocutaneous bleeding (menorrhagia, epistaxis, prolonged dental bleeding), autosomal dominant inheritance, normal platelet count and PT, mildly prolonged aPTT, and proportionally reduced VWF antigen, VWF activity, and factor VIII indicate type 1 von Willebrand disease. Because a desmopressin trial raised the levels to normal, desmopressin — which releases stored VWF and factor VIII from endothelial Weibel-Palade bodies — is the agent of choice for minor procedures, often with tranexamic acid."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why VWF deficiency looks like a platelet problem</b>: VWF links platelet glycoprotein Ib to exposed subendothelial collagen under high shear, so its deficiency impairs primary hemostasis — mucosal bleeding, easy bruising, heavy periods — even though the platelet count is normal.<br> <b>Why the aPTT is long</b>: VWF also carries factor VIII and protects it from clearance; low VWF lowers factor VIII and mildly prolongs the aPTT.<br> <b>How desmopressin works</b>: this V2-receptor agonist triggers endothelial cells to release VWF (and factor VIII) stored in Weibel-Palade bodies, raising levels 2–5-fold within 30–60 minutes. It works only when the patient makes normal VWF (type 1); it is less useful in type 3 (no VWF) and may worsen thrombocytopenia in type 2B. Repeated doses cause tachyphylaxis and hyponatremia, so fluids are restricted."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Desmopressin (answer)</th><th>Cryoprecipitate (closest distractor)</th></tr></thead><tbody> <tr><td>Source of VWF</td><td><b>Patient's own stores</b></td><td>Pooled donor plasma</td></tr> <tr><td>Best for</td><td>Type 1 with proven response, minor procedures</td><td>Only when VWF concentrate is unavailable</td></tr> <tr><td>Risks</td><td>Hyponatremia, tachyphylaxis</td><td>Infection transmission, volume, allergic reactions</td></tr> </tbody></table> When the patient's own stores are proven adequate, use them first; donor products are for nonresponders, type 3, or major surgery."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Recombinant factor VIIa is correct for hemophilia with inhibitors or Glanzmann thrombasthenia; it bypasses but does not replace missing VWF.\n(B) Platelet transfusion is correct for thrombocytopenia or a qualitative platelet defect; her platelet count is normal and the defect is in VWF.\n(C) Vitamin K is correct for warfarin effect or vitamin K deficiency, which prolong the PT first; her PT is normal.\n(D) Cryoprecipitate contains VWF but is a backup when VWF/factor VIII concentrate is unavailable, for nonresponders or type 3 disease."
+   },
+   {
+    "k": "함정",
+    "v": "Reaching for a blood product because the aPTT is long — a proven desmopressin responder with type 1 disease uses her own VWF stores."
+   },
+   {
+    "k": "학습목표",
+    "v": "점막 출혈 병력과 혈소판 수 정상·aPTT 경도 연장·폰빌레브란트 인자 활성 저하를 보이는 1형 폰빌레브란트병에서 소수술 전 데스모프레신을 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Connell NT, et al. ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease. Blood Adv 2021;5:301-325 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 116: Bleeding and thrombosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "점막 출혈·상염색체 우성·VWF 항원·활성·제8인자의 비례 저하는 1형 폰빌레브란트병이고 데스모프레신 반응이 확인되었으므로 데스모프레신을 쓴다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "데스모프레신 시험에서 세 값이 모두 정상으로 올랐다 — 공여자 제제가 필요하지 않다",
+   "steps": 2,
+   "chain": [
+    "점막 출혈 + 혈소판 정상 + aPTT 경도 연장 + VWF 항원·활성·제8인자 비례 저하 → 1형 폰빌레브란트병",
+    "데스모프레신 반응 확인 + 소수술 → 데스모프레신"
+   ],
+   "key": [
+    {
+     "item": "heavy menstrual periods",
+     "why": "점막 출혈 — 일차 지혈 이상",
+     "also": []
+    },
+    {
+     "item": "Her mother has similar symptoms",
+     "why": "상염색체 우성 유전",
+     "also": []
+    },
+    {
+     "item": "Von Willebrand factor antigen is 32 IU/dL",
+     "why": "양적 결핍(1형)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "platelet count is 245,000/mm3",
+     "why": "혈소판 감소 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "PT is 12 seconds (normal)",
+     "why": "비타민 K 결핍·와파린 효과 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "A desmopressin trial previously raised all three values above 100 IU/dL",
+     "why": "데스모프레신 반응자",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Hemoglobin is 10.8 g/dL",
+     "why": "월경과다에 따른 빈혈 — 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "점막 출혈, 어머니의 비슷한 증상, 혈소판·PT 정상, VWF 항원·활성·제8인자의 비례 저하는 1형 폰빌레브란트병이다. 데스모프레신 반응이 확인되었으므로 발치 전 데스모프레신을 쓴다.",
+   "switch": {
+    "choice": "D",
+    "condition": "VWF 가 거의 측정되지 않는 3형이고 VWF 농축제를 구할 수 없었다면 동결침전제제가 대안이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0462",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "신경 — 영양 결핍 음주자의 혼돈·안구진탕·운동실조",
+  "type": "신경 — 영양 결핍 음주자의 혼돈·안구진탕·운동실조",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-27",
+  "vignette": "52세 남자가 이틀 전부터 횡설수설하고 비틀거려 가족과 함께 응급실에 왔다. 20년 동안 매일 소주 2병을 마셨고 최근 한 달은 거의 먹지 않고 술만 마셨다. 혈압 128/80 mmHg, 맥박 92회/분, 체온 36.6℃이다. 날짜와 장소를 모르고 주의가 산만하다. 양쪽 눈을 바깥으로 돌리지 못하고 수평 안구진탕이 있으며, 넓은 보폭으로 비틀거려 혼자 서 있지 못한다. 떨림과 땀은 없다. 모세혈관 혈당은 68 mg/dL, 혈청 나트륨은 136 mEq/L 이다.",
+  "question": "가장 먼저 투여해야 할 것은?",
+  "options": [
+   "티아민 정맥 주사",
+   "50 % 포도당 정맥 주사",
+   "로라제팜 정맥 주사",
+   "할로페리돌 근육 주사",
+   "날록손 정맥 주사"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 영양 결핍 음주자에서 혼돈·안근마비(외직근 마비)·안구진탕·운동실조가 함께 있으면 베르니케 뇌병증이다. 티아민 결핍 상태에서 포도당을 먼저 주면 남은 티아민이 포도당 대사에 소모되어 뇌병증이 악화될 수 있으므로, 고용량 티아민을 정맥으로 먼저 주고 이어서 포도당을 준다.\n- 원리: <b>티아민이 하는 일</b>: 티아민 피로인산은 피루브산 탈수소효소·α-케토글루타르산 탈수소효소·트랜스케톨레이스의 보조인자다. 결핍되면 포도당을 산화해 ATP 를 만들지 못하고 젖산이 쌓여, 대사가 활발한 유두체·시상 내측·중뇌수도관 주위·제3·4뇌실 바닥이 먼저 손상된다.<br> <b>증상의 해부</b>: 중뇌·교뇌의 외전신경·동안신경핵 주위 손상 → 안근마비·안구진탕, 소뇌 충부 → 몸통 운동실조, 시상·유두체 → 혼돈. 세 가지가 다 갖춰진 경우는 1/3 정도라 하나만 있어도 의심한다.<br> <b>왜 포도당보다 먼저인가</b>: 포도당이 들어오면 남은 티아민을 빠르게 써 버려 급성 악화를 부를 수 있다. 저혈당이 있으면 둘 다 주되 티아민을 먼저(또는 동시에) 준다. 치료가 늦으면 코르사코프 기억상실이 남는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">티아민 먼저(정답)</th><th>포도당 먼저(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>영양 결핍 음주자의 혼돈·안근마비·운동실조</b></td><td>저혈당이 의식 저하의 원인일 때</td></tr> <tr><td>혈당</td><td>68 mg/dL — 경도 저하, 증상을 설명하지 못함</td><td>대개 50 mg/dL 미만에 땀·떨림 동반</td></tr> <tr><td>위험</td><td>없음(안전)</td><td>티아민 결핍에서 뇌병증 악화</td></tr> </tbody></table> 저혈당이 뚜렷해도 순서는 「티아민 → 포도당」이고, 둘 사이를 늦출 이유는 없다.\n- 오답 이유:\n  - ② 포도당은 뚜렷한 저혈당(땀·떨림 동반)이 의식 저하의 원인일 때 필요하지만, 영양 결핍 음주자에게는 티아민을 먼저 또는 함께 준다.\n  - ③ 로라제팜은 마지막 음주 뒤 떨림·땀·빈맥·경련을 동반한 알코올 금단일 때 정답이 되며, 이 환자에게는 자율신경 항진이 없다.\n  - ④ 할로페리돌은 원인 치료 뒤에도 위험한 초조가 남은 섬망에 보조로 쓸 수 있으며, 안근마비·운동실조의 원인을 고치지 못한다.\n  - ⑤ 날록손은 축동·호흡 저하를 동반한 아편유사제 중독에서 정답이 되며, 이 환자에게는 그런 소견이 없다.\n- 함정: 혈당이 조금 낮다고 포도당부터 주는 것 — 영양 결핍 음주자의 혼돈·안근마비·운동실조에는 티아민이 먼저다.\n- 학습목표: 영양이 나쁜 음주자의 혼돈·안구진탕/안근마비·운동실조에서 베르니케 뇌병증을 의심하고 포도당보다 먼저 티아민을 정맥 투여함을 안다\n- 근거·출처: Sechi G, Serra A. Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management. Lancet Neurol 2007;6:442-455 · Ropper AH, et al. Adams and Victor's Principles of Neurology, 12th ed. McGraw-Hill; 2023. Chapter: Diseases of the nervous system due to nutritional deficiency",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "영양 결핍 음주자에서 혼돈·안근마비(외직근 마비)·안구진탕·운동실조가 함께 있으면 베르니케 뇌병증이다. 티아민 결핍 상태에서 포도당을 먼저 주면 남은 티아민이 포도당 대사에 소모되어 뇌병증이 악화될 수 있으므로, 고용량 티아민을 정맥으로 먼저 주고 이어서 포도당을 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>티아민이 하는 일</b>: 티아민 피로인산은 피루브산 탈수소효소·α-케토글루타르산 탈수소효소·트랜스케톨레이스의 보조인자다. 결핍되면 포도당을 산화해 ATP 를 만들지 못하고 젖산이 쌓여, 대사가 활발한 유두체·시상 내측·중뇌수도관 주위·제3·4뇌실 바닥이 먼저 손상된다.<br> <b>증상의 해부</b>: 중뇌·교뇌의 외전신경·동안신경핵 주위 손상 → 안근마비·안구진탕, 소뇌 충부 → 몸통 운동실조, 시상·유두체 → 혼돈. 세 가지가 다 갖춰진 경우는 1/3 정도라 하나만 있어도 의심한다.<br> <b>왜 포도당보다 먼저인가</b>: 포도당이 들어오면 남은 티아민을 빠르게 써 버려 급성 악화를 부를 수 있다. 저혈당이 있으면 둘 다 주되 티아민을 먼저(또는 동시에) 준다. 치료가 늦으면 코르사코프 기억상실이 남는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">티아민 먼저(정답)</th><th>포도당 먼저(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>영양 결핍 음주자의 혼돈·안근마비·운동실조</b></td><td>저혈당이 의식 저하의 원인일 때</td></tr> <tr><td>혈당</td><td>68 mg/dL — 경도 저하, 증상을 설명하지 못함</td><td>대개 50 mg/dL 미만에 땀·떨림 동반</td></tr> <tr><td>위험</td><td>없음(안전)</td><td>티아민 결핍에서 뇌병증 악화</td></tr> </tbody></table> 저혈당이 뚜렷해도 순서는 「티아민 → 포도당」이고, 둘 사이를 늦출 이유는 없다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 포도당은 뚜렷한 저혈당(땀·떨림 동반)이 의식 저하의 원인일 때 필요하지만, 영양 결핍 음주자에게는 티아민을 먼저 또는 함께 준다.\n③ 로라제팜은 마지막 음주 뒤 떨림·땀·빈맥·경련을 동반한 알코올 금단일 때 정답이 되며, 이 환자에게는 자율신경 항진이 없다.\n④ 할로페리돌은 원인 치료 뒤에도 위험한 초조가 남은 섬망에 보조로 쓸 수 있으며, 안근마비·운동실조의 원인을 고치지 못한다.\n⑤ 날록손은 축동·호흡 저하를 동반한 아편유사제 중독에서 정답이 되며, 이 환자에게는 그런 소견이 없다."
+   },
+   {
+    "k": "함정",
+    "v": "혈당이 조금 낮다고 포도당부터 주는 것 — 영양 결핍 음주자의 혼돈·안근마비·운동실조에는 티아민이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "영양이 나쁜 음주자의 혼돈·안구진탕/안근마비·운동실조에서 베르니케 뇌병증을 의심하고 포도당보다 먼저 티아민을 정맥 투여함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sechi G, Serra A. Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management. Lancet Neurol 2007;6:442-455 · Ropper AH, et al. Adams and Victor's Principles of Neurology, 12th ed. McGraw-Hill; 2023. Chapter: Diseases of the nervous system due to nutritional deficiency"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "영양 결핍 음주자의 혼돈·외직근 마비·안구진탕·운동실조는 베르니케 뇌병증이므로 티아민을 정맥으로 먼저 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "혈당 68 mg/dL 은 경도 저하로 안근마비·운동실조를 설명하지 못하고, 포도당을 먼저 주면 악화할 수 있다",
+   "steps": 2,
+   "chain": [
+    "혼돈 + 외직근 마비·수평 안구진탕 + 몸통 운동실조 + 영양 결핍 음주 → 베르니케 뇌병증",
+    "포도당보다 먼저 → 티아민 정맥 주사"
+   ],
+   "key": [
+    {
+     "item": "거의 먹지 않고 술만 마셨다",
+     "why": "티아민 결핍의 원인",
+     "also": []
+    },
+    {
+     "item": "양쪽 눈을 바깥으로 돌리지 못하고",
+     "why": "외전신경 영역 안근마비",
+     "also": []
+    },
+    {
+     "item": "넓은 보폭으로 비틀거려",
+     "why": "소뇌 충부 운동실조",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "떨림과 땀은 없다",
+     "why": "알코올 금단 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 나트륨은 136 mEq/L",
+     "why": "저나트륨혈증 뇌병증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "모세혈관 혈당은 68 mg/dL",
+     "why": "포도당이 필요하지만 티아민 뒤에",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "영양 결핍 음주자에게 혼돈·외직근 마비·안구진탕·운동실조가 있다. 베르니케 뇌병증으로 보고 포도당보다 먼저 티아민을 정맥 투여한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "마지막 음주 2일 뒤 떨림·땀·빈맥·환시가 있고 안근마비가 없었다면 벤조디아제핀(로라제팜)이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0461",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "소화기·간담췌 — 간경변 환자의 정맥류 출혈에서 옥트레오타이드와 함께 줄 것",
+  "type": "소화기·간담췌 — 간경변 환자의 정맥류 출혈에서 옥트레오타이드와 함께 줄 것",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-27",
+  "vignette": "A 56-year-old man with alcohol-associated cirrhosis is brought to the emergency department 1 hour after vomiting large amounts of bright red blood. He has no fever or abdominal pain. Blood pressure is 92/58 mm Hg, pulse is 116/min, and temperature is 36.8°C. He is alert. The abdomen is mildly distended with shifting dullness and is nontender. Hemoglobin is 7.4 g/dL, platelet count is 72,000/mm3, and INR is 1.6. Two large-bore intravenous lines are placed, and a restrictive transfusion of packed red blood cells is started with a target hemoglobin of 7–8 g/dL. Intravenous octreotide is begun, and endoscopy is scheduled within 12 hours.",
+  "question": "In addition to these measures, which of the following is most likely to decrease this patient's mortality?",
+  "options": [
+   "Intravenous pantoprazole infusion",
+   "Intravenous ceftriaxone",
+   "Intravenous propranolol",
+   "Intravenous vitamin K",
+   "Fresh frozen plasma to correct the INR"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Cirrhotic patients with gastrointestinal bleeding have a high risk of bacterial infection (spontaneous bacterial peritonitis, bacteremia) from gut bacterial translocation, and infection increases rebleeding and death. Short-term antibiotic prophylaxis — ceftriaxone 1 g/day for up to 7 days in advanced cirrhosis — reduces infection, rebleeding, and mortality, so it is given alongside vasoactive drugs and endoscopic band ligation.\n- 원리: <b>Why bleeding invites infection</b>: in cirrhosis, portal hypertension makes the gut wall edematous and leaky, bacteria overgrow, and immune function (complement, neutrophils, Kupffer cells) is weak. Hemorrhagic shock further damages the mucosa, so bacteria translocate to mesenteric nodes, ascites, and blood within days.<br> <b>Why infection makes bleeding worse</b>: endotoxin and cytokines raise portal pressure and impair hemostasis, so infected patients rebleed more and die more often. Prophylactic antibiotics are one of the few interventions shown to lower mortality in variceal bleeding.<br> <b>Other parts of the bundle</b>: restrictive transfusion (overtransfusion raises portal pressure), octreotide or terlipressin to reduce splanchnic flow, and band ligation within 12 hours. Nonselective beta-blockers are for secondary prevention after the patient is stable, not during shock.\n- 비교: <table><thead><tr><th style=\"width:24%\">Measure</th><th style=\"width:38%\">Ceftriaxone prophylaxis (answer)</th><th>Propranolol (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td><b>At admission, during the acute bleed</b></td><td>After bleeding stops and hemodynamics are stable</td></tr> <tr><td>Target</td><td>Bacterial translocation and infection</td><td>Portal pressure (prevent rebleeding)</td></tr> <tr><td>In shock</td><td>Safe</td><td>Worsens hypotension, blunts compensatory tachycardia</td></tr> </tbody></table> Both lower long-term risk, but only one belongs in the first hour of a bleeding, hypotensive patient.\n- 오답 이유:\n  - (A) A proton pump inhibitor infusion is correct for bleeding peptic ulcer with high-risk stigmata; it has no proven effect on variceal bleeding outcomes.\n  - (C) Propranolol is correct for secondary prophylaxis after the acute bleed has stopped and blood pressure is stable; during shock it worsens hypotension.\n  - (D) Vitamin K would be correct for vitamin K deficiency or warfarin effect; in cirrhosis the INR reflects poor synthesis and does not correct meaningfully.\n  - (E) Plasma to correct the INR is not recommended because the INR does not predict bleeding in cirrhosis and the volume raises portal pressure.\n- 함정: Focusing on the abnormal INR — in cirrhosis the step that lowers mortality is antibiotic prophylaxis, not correcting the number.\n- 학습목표: 간경변 환자의 정맥류 출혈에서는 혈관작용약·내시경 결찰과 함께 예방적 항생제(세프트리악손)를 주어 감염과 재출혈·사망을 줄임을 안다\n- 근거·출처: de Franchis R, et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol 2022;76:959-974 · Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. Hepatology 2024;79:1180-1211",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Cirrhotic patients with gastrointestinal bleeding have a high risk of bacterial infection (spontaneous bacterial peritonitis, bacteremia) from gut bacterial translocation, and infection increases rebleeding and death. Short-term antibiotic prophylaxis — ceftriaxone 1 g/day for up to 7 days in advanced cirrhosis — reduces infection, rebleeding, and mortality, so it is given alongside vasoactive drugs and endoscopic band ligation."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why bleeding invites infection</b>: in cirrhosis, portal hypertension makes the gut wall edematous and leaky, bacteria overgrow, and immune function (complement, neutrophils, Kupffer cells) is weak. Hemorrhagic shock further damages the mucosa, so bacteria translocate to mesenteric nodes, ascites, and blood within days.<br> <b>Why infection makes bleeding worse</b>: endotoxin and cytokines raise portal pressure and impair hemostasis, so infected patients rebleed more and die more often. Prophylactic antibiotics are one of the few interventions shown to lower mortality in variceal bleeding.<br> <b>Other parts of the bundle</b>: restrictive transfusion (overtransfusion raises portal pressure), octreotide or terlipressin to reduce splanchnic flow, and band ligation within 12 hours. Nonselective beta-blockers are for secondary prevention after the patient is stable, not during shock."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Measure</th><th style=\"width:38%\">Ceftriaxone prophylaxis (answer)</th><th>Propranolol (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td><b>At admission, during the acute bleed</b></td><td>After bleeding stops and hemodynamics are stable</td></tr> <tr><td>Target</td><td>Bacterial translocation and infection</td><td>Portal pressure (prevent rebleeding)</td></tr> <tr><td>In shock</td><td>Safe</td><td>Worsens hypotension, blunts compensatory tachycardia</td></tr> </tbody></table> Both lower long-term risk, but only one belongs in the first hour of a bleeding, hypotensive patient."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A proton pump inhibitor infusion is correct for bleeding peptic ulcer with high-risk stigmata; it has no proven effect on variceal bleeding outcomes.\n(C) Propranolol is correct for secondary prophylaxis after the acute bleed has stopped and blood pressure is stable; during shock it worsens hypotension.\n(D) Vitamin K would be correct for vitamin K deficiency or warfarin effect; in cirrhosis the INR reflects poor synthesis and does not correct meaningfully.\n(E) Plasma to correct the INR is not recommended because the INR does not predict bleeding in cirrhosis and the volume raises portal pressure."
+   },
+   {
+    "k": "함정",
+    "v": "Focusing on the abnormal INR — in cirrhosis the step that lowers mortality is antibiotic prophylaxis, not correcting the number."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 환자의 정맥류 출혈에서는 혈관작용약·내시경 결찰과 함께 예방적 항생제(세프트리악손)를 주어 감염과 재출혈·사망을 줄임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "de Franchis R, et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol 2022;76:959-974 · Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. Hepatology 2024;79:1180-1211"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "간경변 환자의 정맥류 출혈에는 옥트레오타이드·내시경과 함께 예방적 세프트리악손이 사망을 줄인다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "프로프라놀롤은 출혈이 멎고 혈역학이 안정된 뒤의 2차 예방이다 — 쇼크 중에는 저혈압을 악화한다",
+   "steps": 2,
+   "chain": [
+    "간경변 + 선홍색 토혈·쇼크 → 정맥류 출혈",
+    "옥트레오타이드·결찰 외에 사망을 줄이는 것 → 예방적 항생제(세프트리악손)"
+   ],
+   "key": [
+    {
+     "item": "alcohol-associated cirrhosis",
+     "why": "정맥류 출혈과 세균 전위 위험",
+     "also": []
+    },
+    {
+     "item": "vomiting large amounts of bright red blood",
+     "why": "상부위장관 출혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Blood pressure is 92/58 mm Hg, pulse is 116/min",
+     "why": "쇼크 — 베타차단제를 지금 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "INR is 1.6",
+     "why": "교정 대상으로 끌리지만 출혈 위험을 반영하지 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has no fever or abdominal pain",
+     "why": "감염 증상이 없어도 예방 항생제를 준다",
+     "also": []
+    },
+    {
+     "item": "shifting dullness",
+     "why": "복수 — 자발세균복막염 위험을 더한다",
+     "also": []
+    }
+   ],
+   "summary": "간경변 환자의 선홍색 토혈과 쇼크로 정맥류 출혈이다. 혈관작용약·제한 수혈·내시경과 함께 예방적 세프트리악손이 감염·재출혈·사망을 줄인다.",
+   "switch": {
+    "choice": "C",
+    "condition": "결찰 뒤 출혈이 멎고 혈압이 안정된 퇴원 전 재출혈 예방을 물었다면 비선택 베타차단제가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0460",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "피부 — 노인의 팽팽한 물집과 기저막의 선상 침착",
+  "type": "피부 — 노인의 팽팽한 물집과 기저막의 선상 침착",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-27",
+  "vignette": "81세 남자가 한 달 전부터 몸통과 팔다리가 가렵고, 열흘 전부터 물집이 생겨 왔다. 처음 몇 주는 가려운 붉은 두드러기 모양 판만 있었다. 6개월 전부터 당뇨병으로 리나글립틴을 복용하고 있다. 진찰에서 넓적다리 안쪽과 아랫배, 팔의 굽힘 쪽에 붉은 판 위로 지름 1~3 cm의 팽팽한 물집이 여럿 있고, 물집은 쉽게 터지지 않는다. 물집 주변의 정상 피부를 문질러도 표피가 벗겨지지 않는다. 입안과 눈 결막에는 병변이 없다. 물집 가장자리 조직검사에서 표피 아래 물집과 호산구 침윤이 보이고, 직접면역형광검사에서 기저막을 따라 IgG와 C3가 선상으로 침착되어 있다.",
+  "question": "진단은?",
+  "options": [
+   "심상성천포창",
+   "포진피부염",
+   "후천표피박리수포증",
+   "다형홍반",
+   "수포유사천포창"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 노인에서 가려운 두드러기 모양 판이 먼저 생기고 그 위로 팽팽하고 잘 터지지 않는 물집이 생기며, 니콜스키 징후가 음성이고 점막을 거의 침범하지 않는다. 조직에서 표피 아래 물집·호산구, 직접면역형광에서 기저막의 선상 IgG·C3 침착은 반교소체 항원(BP180·BP230)에 대한 자가항체로 생기는 수포유사천포창이다. DPP-4 억제제(리나글립틴)는 알려진 유발 약물이다.\n- 원리: <b>물집이 생기는 층이 모양을 정한다</b>: 수포유사천포창의 자가항체는 기저세포를 기저막에 붙이는 반교소체(BP180=XVII형 콜라겐, BP230)를 공격한다. 보체가 활성화되어 호산구·호중구가 모이고 표피 전체가 기저막에서 떨어진다 — 지붕이 표피 전층이라 두껍고 팽팽해 잘 터지지 않는다.<br> <b>심상성천포창과의 차이</b>: 천포창은 표피세포끼리 붙이는 데스모글레인(Dsg3·Dsg1)에 대한 항체로 표피 안이 갈라진다(극세포해리). 지붕이 얇아 쉽게 터지고 미란이 남으며, 정상 피부를 문지르면 벗겨지고(니콜스키 양성), Dsg3 때문에 구강 점막이 먼저 침범된다. 면역형광은 세포 사이 그물 모양이다.<br> <b>노인과 약물</b>: 70세 이상에서 가장 흔한 자가면역 물집병이며, DPP-4 억제제·이뇨제 등이 유발할 수 있다. 치료는 강한 국소 스테로이드가 먼저다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">수포유사천포창(정답)</th><th>심상성천포창(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적 항원</td><td><b>반교소체 BP180·BP230</b></td><td>데스모글레인 3(±1)</td></tr> <tr><td>물집</td><td>팽팽함, 잘 안 터짐</td><td>이완, 쉽게 터져 미란</td></tr> <tr><td>니콜스키 징후</td><td>음성</td><td>양성</td></tr> <tr><td>점막</td><td>드묾</td><td>거의 항상(구강 먼저)</td></tr> <tr><td>직접면역형광</td><td>기저막 선상 IgG·C3</td><td>표피 세포 사이 그물 모양 IgG</td></tr> </tbody></table> 「물집이 팽팽하냐 이완되었냐」는 물집이 생긴 깊이를 그대로 보여 준다.\n- 오답 이유:\n  - ① 심상성천포창은 이완된 물집이 쉽게 터져 미란이 되고 니콜스키 징후가 양성이며 구강 점막을 침범하고, 면역형광이 세포 사이 그물 모양일 때 정답이 된다.\n  - ② 포진피부염은 팔꿈치·무릎·엉덩이에 무리 지은 작은 물집이 매우 가렵고, 셀리악병을 동반하며 진피유두에 과립상 IgA가 침착될 때 정답이 된다.\n  - ③ 후천표피박리수포증은 외상 부위에 물집·흉터·비립종이 생기고 VII형 콜라겐 항체가 있어 소금물 분리 검사에서 진피 쪽에 침착될 때 정답이 된다.\n  - ④ 다형홍반은 단순포진 감염 뒤 손발 끝에 표적 모양 병변이 대칭으로 생길 때 정답이 되며, 기저막 선상 침착을 보이지 않는다.\n- 함정: 물집 = 천포창으로 이름만 보고 고르는 것 — 팽팽한 물집·니콜스키 음성·점막 없음·기저막 선상 침착은 수포유사천포창이다.\n- 학습목표: 노인의 팽팽한 물집, 음성 니콜스키 징후, 점막 침범 없음과 기저막의 선상 IgG·C3 침착으로 수포유사천포창을 진단한다\n- 근거·출처: Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 5th ed. Elsevier; 2024. Chapter 30: Pemphigoid group · Kridin K, Ludwig RJ. The growing incidence of bullous pemphigoid: overview and potential explanations. Front Med 2018;5:220",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "노인에서 가려운 두드러기 모양 판이 먼저 생기고 그 위로 팽팽하고 잘 터지지 않는 물집이 생기며, 니콜스키 징후가 음성이고 점막을 거의 침범하지 않는다. 조직에서 표피 아래 물집·호산구, 직접면역형광에서 기저막의 선상 IgG·C3 침착은 반교소체 항원(BP180·BP230)에 대한 자가항체로 생기는 수포유사천포창이다. DPP-4 억제제(리나글립틴)는 알려진 유발 약물이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>물집이 생기는 층이 모양을 정한다</b>: 수포유사천포창의 자가항체는 기저세포를 기저막에 붙이는 반교소체(BP180=XVII형 콜라겐, BP230)를 공격한다. 보체가 활성화되어 호산구·호중구가 모이고 표피 전체가 기저막에서 떨어진다 — 지붕이 표피 전층이라 두껍고 팽팽해 잘 터지지 않는다.<br> <b>심상성천포창과의 차이</b>: 천포창은 표피세포끼리 붙이는 데스모글레인(Dsg3·Dsg1)에 대한 항체로 표피 안이 갈라진다(극세포해리). 지붕이 얇아 쉽게 터지고 미란이 남으며, 정상 피부를 문지르면 벗겨지고(니콜스키 양성), Dsg3 때문에 구강 점막이 먼저 침범된다. 면역형광은 세포 사이 그물 모양이다.<br> <b>노인과 약물</b>: 70세 이상에서 가장 흔한 자가면역 물집병이며, DPP-4 억제제·이뇨제 등이 유발할 수 있다. 치료는 강한 국소 스테로이드가 먼저다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">수포유사천포창(정답)</th><th>심상성천포창(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적 항원</td><td><b>반교소체 BP180·BP230</b></td><td>데스모글레인 3(±1)</td></tr> <tr><td>물집</td><td>팽팽함, 잘 안 터짐</td><td>이완, 쉽게 터져 미란</td></tr> <tr><td>니콜스키 징후</td><td>음성</td><td>양성</td></tr> <tr><td>점막</td><td>드묾</td><td>거의 항상(구강 먼저)</td></tr> <tr><td>직접면역형광</td><td>기저막 선상 IgG·C3</td><td>표피 세포 사이 그물 모양 IgG</td></tr> </tbody></table> 「물집이 팽팽하냐 이완되었냐」는 물집이 생긴 깊이를 그대로 보여 준다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심상성천포창은 이완된 물집이 쉽게 터져 미란이 되고 니콜스키 징후가 양성이며 구강 점막을 침범하고, 면역형광이 세포 사이 그물 모양일 때 정답이 된다.\n② 포진피부염은 팔꿈치·무릎·엉덩이에 무리 지은 작은 물집이 매우 가렵고, 셀리악병을 동반하며 진피유두에 과립상 IgA가 침착될 때 정답이 된다.\n③ 후천표피박리수포증은 외상 부위에 물집·흉터·비립종이 생기고 VII형 콜라겐 항체가 있어 소금물 분리 검사에서 진피 쪽에 침착될 때 정답이 된다.\n④ 다형홍반은 단순포진 감염 뒤 손발 끝에 표적 모양 병변이 대칭으로 생길 때 정답이 되며, 기저막 선상 침착을 보이지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "물집 = 천포창으로 이름만 보고 고르는 것 — 팽팽한 물집·니콜스키 음성·점막 없음·기저막 선상 침착은 수포유사천포창이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "노인의 팽팽한 물집, 음성 니콜스키 징후, 점막 침범 없음과 기저막의 선상 IgG·C3 침착으로 수포유사천포창을 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 5th ed. Elsevier; 2024. Chapter 30: Pemphigoid group · Kridin K, Ludwig RJ. The growing incidence of bullous pemphigoid: overview and potential explanations. Front Med 2018;5:220"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "노인의 팽팽한 물집·니콜스키 음성·점막 없음과 기저막 선상 IgG·C3 침착은 수포유사천포창이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "심상성천포창은 니콜스키 양성·구강 점막 침범·세포 사이 그물 모양 침착이다",
+   "steps": 2,
+   "chain": [
+    "팽팽한 물집 + 니콜스키 음성 + 점막 없음 → 표피 아래 물집",
+    "기저막 선상 IgG·C3 + 호산구 → 수포유사천포창"
+   ],
+   "key": [
+    {
+     "item": "지름 1~3 cm의 팽팽한 물집",
+     "why": "표피 아래 물집",
+     "also": []
+    },
+    {
+     "item": "기저막을 따라 IgG와 C3가 선상으로 침착",
+     "why": "반교소체 항체",
+     "also": []
+    },
+    {
+     "item": "가려운 붉은 두드러기 모양 판",
+     "why": "물집 전 단계의 전형적 경과",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "표피가 벗겨지지 않는다",
+     "why": "심상성천포창 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "입안과 눈 결막에는 병변이 없다",
+     "why": "심상성천포창 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "리나글립틴",
+     "why": "DPP-4 억제제 — 유발 인자로 알려졌지만 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "81세에서 가려운 판 위로 팽팽한 물집이 생기고 니콜스키 음성·점막 없음이며, 기저막에 선상 IgG·C3가 침착되었다. 수포유사천포창이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "쉽게 터지는 이완된 물집과 구강 미란이 먼저 생기고 면역형광이 표피 세포 사이 그물 모양이었다면 심상성천포창이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0459",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "안과 — 갑자기 생긴 통증 없는 한쪽 시력 소실과 체리붉은점",
+  "type": "안과 — 갑자기 생긴 통증 없는 한쪽 시력 소실과 체리붉은점",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-27",
+  "vignette": "A 71-year-old man comes to the emergency department 2 hours after sudden, painless loss of vision in his right eye while reading the newspaper. He has hypertension, type 2 diabetes mellitus, and a 40-pack-year smoking history. He has no headache, jaw pain, or scalp tenderness. Visual acuity is counting fingers in the right eye and 20/25 in the left eye. There is a right relative afferent pupillary defect. Intraocular pressure is normal in both eyes. Fundoscopic examination of the right eye shows a pale, whitened posterior retina with a bright red spot at the fovea and narrowed, segmented arterioles; there are no retinal hemorrhages. A carotid bruit is heard on the right.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Vitreous hemorrhage",
+   "Nonarteritic anterior ischemic optic neuropathy",
+   "Central retinal artery occlusion",
+   "Central retinal vein occlusion",
+   "Rhegmatogenous retinal detachment"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Sudden painless monocular vision loss with a relative afferent pupillary defect, a pale edematous retina, a cherry-red spot at the fovea, and segmented ('boxcarring') arterioles is central retinal artery occlusion. The ipsilateral carotid bruit and vascular risk factors suggest an embolus from carotid atherosclerosis; absence of headache and jaw claudication makes giant cell arteritis less likely.\n- 원리: <b>Why the retina turns white and the fovea red</b>: the inner retina is supplied by the central retinal artery. When it is occluded, the inner retinal layers become ischemic and edematous, and the swollen ganglion-cell layer looks opaque white. The fovea has no inner retinal layers, so the normal choroidal circulation underneath still shows through — the \"cherry-red spot.\"<br> <b>Why it is a stroke equivalent</b>: most nonarteritic CRAO is embolic (carotid plaque, cardiac source), and the risk of cerebral stroke is highest in the first weeks. Patients need urgent stroke-pathway evaluation: carotid imaging, cardiac rhythm monitoring, and echocardiography.<br> <b>Always consider giant cell arteritis</b> in patients over 50: headache, jaw claudication, scalp tenderness, and high ESR/CRP call for immediate glucocorticoids to protect the other eye.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Retinal artery occlusion (answer)</th><th>Retinal vein occlusion (closest distractor)</th></tr></thead><tbody> <tr><td>Retina</td><td><b>Pale, white, edematous</b></td><td>Diffuse \"blood and thunder\" hemorrhages</td></tr> <tr><td>Fovea</td><td>Cherry-red spot</td><td>Macular edema</td></tr> <tr><td>Vessels</td><td>Narrow, segmented arterioles</td><td>Dilated, tortuous veins; disc swelling</td></tr> <tr><td>Onset</td><td>Abrupt, profound loss</td><td>Sudden or subacute, often milder</td></tr> </tbody></table> Both are painless and monocular — the color of the retina (white vs. hemorrhagic) decides.\n- 오답 이유:\n  - (A) Vitreous hemorrhage is correct when the red reflex is lost and the fundus cannot be seen, typically in proliferative diabetic retinopathy.\n  - (B) Nonarteritic ischemic optic neuropathy is correct when the patient wakes with vision loss and has a swollen optic disc with a normal-appearing retina.\n  - (D) Central retinal vein occlusion is correct when the fundus shows widespread retinal hemorrhages, dilated tortuous veins, and disc swelling rather than a pale retina.\n  - (E) Retinal detachment is correct when flashes, floaters, and a curtain over the visual field precede the loss and a gray elevated retina is seen.\n- 함정: Choosing vein occlusion because both are sudden and painless — a pale retina with a cherry-red spot means arterial occlusion, not hemorrhage.\n- 학습목표: 갑작스러운 통증 없는 한쪽 시력 소실, 상대적 구심동공운동장애, 창백한 망막과 체리붉은점에서 망막중심동맥폐쇄를 진단한다\n- 근거·출처: Mac Grory B, et al. Management of central retinal artery occlusion: a scientific statement from the American Heart Association. Stroke 2021;52:e282-e294 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 32: Disorders of the eye",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sudden painless monocular vision loss with a relative afferent pupillary defect, a pale edematous retina, a cherry-red spot at the fovea, and segmented ('boxcarring') arterioles is central retinal artery occlusion. The ipsilateral carotid bruit and vascular risk factors suggest an embolus from carotid atherosclerosis; absence of headache and jaw claudication makes giant cell arteritis less likely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the retina turns white and the fovea red</b>: the inner retina is supplied by the central retinal artery. When it is occluded, the inner retinal layers become ischemic and edematous, and the swollen ganglion-cell layer looks opaque white. The fovea has no inner retinal layers, so the normal choroidal circulation underneath still shows through — the \"cherry-red spot.\"<br> <b>Why it is a stroke equivalent</b>: most nonarteritic CRAO is embolic (carotid plaque, cardiac source), and the risk of cerebral stroke is highest in the first weeks. Patients need urgent stroke-pathway evaluation: carotid imaging, cardiac rhythm monitoring, and echocardiography.<br> <b>Always consider giant cell arteritis</b> in patients over 50: headache, jaw claudication, scalp tenderness, and high ESR/CRP call for immediate glucocorticoids to protect the other eye."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Retinal artery occlusion (answer)</th><th>Retinal vein occlusion (closest distractor)</th></tr></thead><tbody> <tr><td>Retina</td><td><b>Pale, white, edematous</b></td><td>Diffuse \"blood and thunder\" hemorrhages</td></tr> <tr><td>Fovea</td><td>Cherry-red spot</td><td>Macular edema</td></tr> <tr><td>Vessels</td><td>Narrow, segmented arterioles</td><td>Dilated, tortuous veins; disc swelling</td></tr> <tr><td>Onset</td><td>Abrupt, profound loss</td><td>Sudden or subacute, often milder</td></tr> </tbody></table> Both are painless and monocular — the color of the retina (white vs. hemorrhagic) decides."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Vitreous hemorrhage is correct when the red reflex is lost and the fundus cannot be seen, typically in proliferative diabetic retinopathy.\n(B) Nonarteritic ischemic optic neuropathy is correct when the patient wakes with vision loss and has a swollen optic disc with a normal-appearing retina.\n(D) Central retinal vein occlusion is correct when the fundus shows widespread retinal hemorrhages, dilated tortuous veins, and disc swelling rather than a pale retina.\n(E) Retinal detachment is correct when flashes, floaters, and a curtain over the visual field precede the loss and a gray elevated retina is seen."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing vein occlusion because both are sudden and painless — a pale retina with a cherry-red spot means arterial occlusion, not hemorrhage."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑작스러운 통증 없는 한쪽 시력 소실, 상대적 구심동공운동장애, 창백한 망막과 체리붉은점에서 망막중심동맥폐쇄를 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Mac Grory B, et al. Management of central retinal artery occlusion: a scientific statement from the American Heart Association. Stroke 2021;52:e282-e294 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 32: Disorders of the eye"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "갑작스러운 통증 없는 한쪽 시력 소실에 창백한 망막·체리붉은점·분절된 세동맥이면 망막중심동맥폐쇄다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "망막 출혈이 없고 망막이 창백하다 — 정맥폐쇄는 광범위한 출혈과 확장된 정맥",
+   "steps": 1,
+   "chain": [
+    "창백한 망막 + 중심와 체리붉은점 + 분절된 세동맥 + 출혈 없음 → 망막중심동맥폐쇄"
+   ],
+   "key": [
+    {
+     "item": "sudden, painless loss of vision in his right eye",
+     "why": "급성 혈관 폐쇄",
+     "also": []
+    },
+    {
+     "item": "a bright red spot at the fovea",
+     "why": "체리붉은점",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there are no retinal hemorrhages",
+     "why": "정맥폐쇄 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no headache, jaw pain, or scalp tenderness",
+     "why": "거대세포동맥염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Intraocular pressure is normal",
+     "why": "급성 폐쇄각녹내장 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "A carotid bruit is heard on the right",
+     "why": "색전 근원 — 뇌졸중 평가가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "통증 없이 갑자기 한쪽 시력을 잃었고 안저가 창백하며 중심와 체리붉은점·분절된 세동맥이 보이고 출혈은 없다. 망막중심동맥폐쇄다.",
+   "switch": {
+    "choice": "D",
+    "condition": "안저 전체에 불꽃 모양 출혈과 확장·굴곡된 정맥, 시신경유두 부종이 있었다면 망막중심정맥폐쇄다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0458",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·외과·병리·류마티스·순환기·안과·피부·소화기·신경·혈액·감염·예방의학)",
+  "subtopic": "순환기 — 심근경색 나흘째 갑자기 생긴 폐부종과 새 수축기 잡음",
+  "type": "순환기 — 심근경색 나흘째 갑자기 생긴 폐부종과 새 수축기 잡음",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-27",
+  "vignette": "68세 남자가 하벽 ST분절상승 심근경색으로 입원한 지 4일째 갑자기 숨이 차서 의사를 불렀다. 입원 첫날 증상 시작 14시간 뒤에 우관상동맥 성형술을 받았다. 혈압 86/54 mmHg, 맥박 118회/분, 호흡 30회/분, 산소포화도 86 %(산소 마스크)이다. 양쪽 폐 전체에서 수포음이 들리고, 심첨부에서 겨드랑이로 퍼지는 새 전수축기 잡음이 들리며 진전(thrill)은 없다. 흉부 X선에서 양쪽 폐부종이 있다. 폐동맥 도관에서 폐동맥쐐기압 파형에 큰 v파가 보이고, 혈액 산소포화도는 우심방 68 %, 우심실 69 %, 폐동맥 69 %이다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "경색 후 심낭염",
+   "유두근 파열",
+   "심실중격 파열",
+   "좌심실 자유벽 파열",
+   "우심실 경색"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 경색 3~5일째 갑자기 생긴 폐부종·저혈압과 심첨부에서 겨드랑이로 퍼지는 새 전수축기 잡음은 급성 승모판 역류를 가리킨다. 폐동맥쐐기압의 큰 v파는 순응도가 낮은 좌심방으로 역류한 혈액 때문이고, 우심방에서 폐동맥까지 산소포화도가 오르지 않아(계단 상승 없음) 좌→우 단락인 심실중격 파열 가능성이 낮다. 하벽 경색에서는 혈액 공급이 한 줄기뿐인 후내측 유두근이 잘 파열된다.\n- 원리: <b>왜 3~5일째인가</b>: 경색 조직은 그 시기에 호중구·대식세포가 괴사 조직을 녹이고 아직 육아조직·콜라겐이 자리 잡지 않아 가장 약하다. 그래서 유두근·심실중격·자유벽 파열이 이 무렵에 몰린다(재관류가 늦었을수록 위험).<br> <b>후내측 유두근이 약한 이유</b>: 전외측 유두근은 좌전하행지와 회선지 두 곳에서 피를 받지만, 후내측 유두근은 대개 우관상동맥(후하행지) 한 줄기에만 의존한다 — 하벽 경색에서 파열된다.<br> <b>큰 v파의 생리</b>: 급성 역류는 커지지 못한 좌심방으로 수축기마다 혈액을 밀어 넣어 압력이 급히 오른다. 같은 잡음이라도 심실중격 파열은 좌→우 단락으로 산소가 풍부한 혈액이 우심실로 들어가 우심방→우심실 산소포화도가 5 % 이상 계단처럼 오른다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">유두근 파열(정답)</th><th>심실중격 파열(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잡음 위치</td><td><b>심첨부 → 겨드랑이</b>, 진전 드묾</td><td>왼쪽 흉골연 아래, 진전 흔함</td></tr> <tr><td>산소포화도</td><td>우심방 → 폐동맥 계단 상승 없음</td><td><b>우심방 → 우심실 ≥ 5 % 상승</b></td></tr> <tr><td>폐동맥쐐기압</td><td>큰 v파</td><td>큰 v파는 드묾</td></tr> <tr><td>흔한 경색</td><td>하벽(후내측 유두근)</td><td>전벽·하벽 모두</td></tr> </tbody></table> 두 합병증 모두 새 수축기 잡음과 쇼크를 만든다 — 가르는 열쇠는 산소포화도 계단과 잡음이 퍼지는 방향이다.\n- 오답 이유:\n  - ① 경색 후 심낭염은 앉으면 나아지는 흉막성 흉통과 심낭 마찰음이 있을 때 정답이 되며, 쇼크와 폐부종을 일으키지 않는다.\n  - ③ 심실중격 파열은 왼쪽 흉골연 아래에 진전을 동반한 잡음이 있고 우심방에서 우심실로 산소포화도가 5 % 이상 오를 때 정답이 된다.\n  - ④ 자유벽 파열은 잡음 없이 갑자기 심장눌림증(경정맥 팽대·저혈압·무맥성 전기활동)으로 쓰러질 때 정답이 된다.\n  - ⑤ 우심실 경색은 하벽 경색에 저혈압·경정맥 팽대가 있으면서 폐가 깨끗할 때 정답이 되며, 이 환자는 폐부종이 뚜렷하다.\n- 함정: 새 수축기 잡음 = 심실중격 파열로 고르는 것 — 산소포화도 계단 상승이 없고 큰 v파가 있으면 유두근 파열이다.\n- 학습목표: 심근경색 수일 뒤 갑자기 생긴 폐부종과 새 수축기 잡음에서 우심 도관의 큰 v파와 산소포화도 계단 상승 유무로 유두근 파열과 심실중격 파열을 가른다\n- 근거·출처: O'Gara PT, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362-e425 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 275: ST-segment elevation myocardial infarction",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "경색 3~5일째 갑자기 생긴 폐부종·저혈압과 심첨부에서 겨드랑이로 퍼지는 새 전수축기 잡음은 급성 승모판 역류를 가리킨다. 폐동맥쐐기압의 큰 v파는 순응도가 낮은 좌심방으로 역류한 혈액 때문이고, 우심방에서 폐동맥까지 산소포화도가 오르지 않아(계단 상승 없음) 좌→우 단락인 심실중격 파열 가능성이 낮다. 하벽 경색에서는 혈액 공급이 한 줄기뿐인 후내측 유두근이 잘 파열된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 3~5일째인가</b>: 경색 조직은 그 시기에 호중구·대식세포가 괴사 조직을 녹이고 아직 육아조직·콜라겐이 자리 잡지 않아 가장 약하다. 그래서 유두근·심실중격·자유벽 파열이 이 무렵에 몰린다(재관류가 늦었을수록 위험).<br> <b>후내측 유두근이 약한 이유</b>: 전외측 유두근은 좌전하행지와 회선지 두 곳에서 피를 받지만, 후내측 유두근은 대개 우관상동맥(후하행지) 한 줄기에만 의존한다 — 하벽 경색에서 파열된다.<br> <b>큰 v파의 생리</b>: 급성 역류는 커지지 못한 좌심방으로 수축기마다 혈액을 밀어 넣어 압력이 급히 오른다. 같은 잡음이라도 심실중격 파열은 좌→우 단락으로 산소가 풍부한 혈액이 우심실로 들어가 우심방→우심실 산소포화도가 5 % 이상 계단처럼 오른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">유두근 파열(정답)</th><th>심실중격 파열(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>잡음 위치</td><td><b>심첨부 → 겨드랑이</b>, 진전 드묾</td><td>왼쪽 흉골연 아래, 진전 흔함</td></tr> <tr><td>산소포화도</td><td>우심방 → 폐동맥 계단 상승 없음</td><td><b>우심방 → 우심실 ≥ 5 % 상승</b></td></tr> <tr><td>폐동맥쐐기압</td><td>큰 v파</td><td>큰 v파는 드묾</td></tr> <tr><td>흔한 경색</td><td>하벽(후내측 유두근)</td><td>전벽·하벽 모두</td></tr> </tbody></table> 두 합병증 모두 새 수축기 잡음과 쇼크를 만든다 — 가르는 열쇠는 산소포화도 계단과 잡음이 퍼지는 방향이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경색 후 심낭염은 앉으면 나아지는 흉막성 흉통과 심낭 마찰음이 있을 때 정답이 되며, 쇼크와 폐부종을 일으키지 않는다.\n③ 심실중격 파열은 왼쪽 흉골연 아래에 진전을 동반한 잡음이 있고 우심방에서 우심실로 산소포화도가 5 % 이상 오를 때 정답이 된다.\n④ 자유벽 파열은 잡음 없이 갑자기 심장눌림증(경정맥 팽대·저혈압·무맥성 전기활동)으로 쓰러질 때 정답이 된다.\n⑤ 우심실 경색은 하벽 경색에 저혈압·경정맥 팽대가 있으면서 폐가 깨끗할 때 정답이 되며, 이 환자는 폐부종이 뚜렷하다."
+   },
+   {
+    "k": "함정",
+    "v": "새 수축기 잡음 = 심실중격 파열로 고르는 것 — 산소포화도 계단 상승이 없고 큰 v파가 있으면 유두근 파열이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심근경색 수일 뒤 갑자기 생긴 폐부종과 새 수축기 잡음에서 우심 도관의 큰 v파와 산소포화도 계단 상승 유무로 유두근 파열과 심실중격 파열을 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "O'Gara PT, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362-e425 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 275: ST-segment elevation myocardial infarction"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "경색 수일 뒤 새 심첨부 전수축기 잡음·폐부종·큰 v파이고 산소포화도 계단 상승이 없으므로 유두근 파열이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "우심방 68 %·우심실 69 % — 좌→우 단락의 계단 상승이 없다",
+   "steps": 3,
+   "chain": [
+    "경색 4일째 갑작스러운 폐부종·저혈압 + 새 전수축기 잡음 → 기계적 합병증",
+    "심첨부에서 겨드랑이로 퍼짐·큰 v파 → 급성 승모판 역류",
+    "산소포화도 계단 상승 없음 → 심실중격 파열이 아닌 유두근 파열"
+   ],
+   "key": [
+    {
+     "item": "입원한 지 4일째 갑자기 숨이 차서",
+     "why": "기계적 합병증의 호발 시기",
+     "also": []
+    },
+    {
+     "item": "심첨부에서 겨드랑이로 퍼지는 새 전수축기 잡음",
+     "why": "승모판 역류",
+     "also": []
+    },
+    {
+     "item": "큰 v파",
+     "why": "급성 승모판 역류",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "우심방 68 %, 우심실 69 %",
+     "why": "심실중격 파열 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "진전(thrill)은 없다",
+     "why": "심실중격 파열 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "양쪽 폐 전체에서 수포음",
+     "why": "우심실 경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "증상 시작 14시간 뒤에",
+     "why": "늦은 재관류 — 기계적 합병증 위험을 높이는 배경",
+     "also": []
+    }
+   ],
+   "summary": "하벽 경색 4일째 폐부종·저혈압과 새 심첨부 전수축기 잡음, 큰 v파가 있고 우심방→우심실 산소포화도 계단 상승이 없다. 후내측 유두근 파열이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "우심방 65 %에서 우심실 80 %로 산소포화도가 계단처럼 올랐고 흉골연 아래 진전이 있었다면 심실중격 파열이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261027T202846Z_일일영상_2026-10-28_12units_12q_dc848400",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0445",
   "exam": "imaging",
   "style": "usmle_style",
