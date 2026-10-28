@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-27",
+ "generated": "2026-10-28",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4111,
+  "total": 4125,
   "byType": {
+   "usmle": 222,
    "kmle": 1600,
    "concept": 117,
-   "usmle": 216,
+   "paper": 859,
    "imaging": 464,
-   "paper": 851,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 279,
-   "Nephrology": 224,
-   "Infectious Disease": 207,
-   "Pediatrics": 191,
+   "Cardiology": 280,
+   "Nephrology": 225,
+   "Infectious Disease": 208,
+   "Pediatrics": 193,
    "Obstetrics & Gynecology": 140,
-   "Pathology": 126,
+   "Pathology": 127,
    "Rheumatology": 124,
-   "Hematology-Oncology": 122,
+   "Hematology-Oncology": 123,
    "Psychiatry": 120,
-   "Neurology": 118,
+   "Neurology": 119,
    "General Surgery": 108,
    "Endocrinology": 106,
    "Orthopedics": 106,
-   "Surgery": 105,
+   "Surgery": 106,
    "Dermatology": 104,
    "Gastroenterology": 103,
    "Ophthalmology": 102,
    "Pulmonology": 102,
    "Hematology": 97,
-   "Laboratory Medicine": 87,
+   "Laboratory Medicine": 88,
    "산부인과": 68,
    "순환기": 40,
    "호흡기": 30,
@@ -52,13 +52,13 @@ window.MEDKOS_INDEX = {
    "내분비": 21,
    "외과": 21,
    "신장·비뇨기": 20,
-   "Pharmacology": 18,
+   "Pharmacology": 19,
+   "Biochemistry": 18,
    "예방의학·역학": 18,
    "피부과": 18,
-   "Biochemistry": 17,
-   "Microbiology": 16,
+   "Microbiology": 17,
+   "Internal Medicine": 14,
    "Immunology": 13,
-   "Internal Medicine": 13,
    "근골격·류마티스": 13,
    "약리": 13,
    "정신과": 12,
@@ -79,13 +79,146 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1174,
-   "high": 2885,
+   "high": 2890,
+   "medium": 1183,
    "low": 52
   },
-  "tagCount": 5108
+  "tagCount": 5124
  },
  "docs": [
+  {
+   "id": "usmle-2026-0235",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Two Large Painless Maroon Stools and a Pulse of 146 in a Playful 2-Year-Old Boy With a Soft Abdomen",
+   "tags": [
+    "meckel-diverticulum",
+    "lower-gi-bleeding",
+    "technetium-99m-pertechnetate",
+    "intussusception",
+    "juvenile-polyp",
+    "pediatrics",
+    "test-selection"
+   ],
+   "source": "USMLE-style / MedKOS (Kliegman RM, St Geme JW, et al. Nelson Textbook of Pediatrics, 21st ed. — Meckel diverticulum and other remnants of the omphalomesenteric duct; Gastrointestinal bleeding; Intussusception)",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/usmle/usmle-2026-0235.md",
+   "snippet": "A 2 year old boy is brought to the emergency department 3 hours after he passed 2 large, maroon stools. He has otherwise been well, with a normal appetite and no vomiting, fever, abdominal pain or recent diarrhea. He has had no previous ble",
+   "text": "Pediatrics Two Large Painless Maroon Stools and a Pulse of 146 in a Playful 2-Year-Old Boy With a Soft Abdomen meckel-diverticulum lower-gi-bleeding technetium-99m-pertechnetate intussusception juvenile-polyp pediatrics test-selection USMLE-style / MedKOS (Kliegman RM, St Geme JW, et al. Nelson Textbook of Pediatrics, 21st ed. — Meckel diverticulum and other remnants of the omphalomesenteric duct; Gastrointestinal bleeding; Intussusception) A 2 year old boy is brought to the emergency department 3 hours after he passed 2 large, maroon stools. He has otherwise been well, with a normal appetite and no vomiting, fever, abdominal pain or recent diarrhea. He has had no previous bleeding, takes no medications, and has not had nosebleeds or easy bruising. His vital signs are shown. He is pale but playful. The abdomen is soft, nondistended and nontender, with no masses. Rectal examination shows maroon stool in the vault without fissures or palpable polyps. A nasogastric aspirate is clear and bile stained. Laboratory results are shown. After an intravenous fluid bolus and while blood is being cross matched, his pulse decreases to 118/min and his blood pressure is 96/60 mm Hg. Which of the following is the most appropriate next step in diagnosis? A. Air contrast enema B. Colonoscopy C. Upper endoscopy D. Technetium 99m pertechnetate scan E. Abdominal ultrasonography 두 살 아이가 통증 없이 많은 양의 적갈색(maroon) 변을 두 번 보고 빈맥·빈혈(Hb 8.1)이 생겼다. 비위관 흡인물이 담즙이 섞인 채 맑고 BUN 이 정상이라 트라이츠 인대 위쪽(위·십이지장) 출혈의 가능성은 낮다. 배가 부드럽고 압통·종괴·구토가 없어 장중첩증의 가능성도 낮다. 이 나이에 통증 없는 대량 하부위장관 출혈의 가장 흔한 원인은 메켈 게실이다 — 이소성 위점막이 산을 분비해 인접 회장 점막에 궤양을 만든다. 이소성 위점막은 technetium 99m pertechnetate 를 섭취하므로 이 스캔(Meckel scan)이 진단 검사다. 수액에 반응해 안정되었으므로 지금 할 수 있다. 응고 검사·혈소판이 정상이라 출혈 경향은 원인이 아니다."
+  },
+  {
+   "id": "usmle-2026-0234",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Feet That Feel Stuck to the Floor, Three Falls and New Urinary Urgency Over Eight Months in a 74-Year-Old Man Who Is Slower to Answer",
+   "tags": [
+    "normal-pressure-hydrocephalus",
+    "tap-test",
+    "gait-apraxia",
+    "ventriculomegaly",
+    "ventriculoperitoneal-shunt",
+    "parkinsonism-mimic",
+    "test-selection"
+   ],
+   "source": "USMLE-style / MedKOS (Relkin N, Marmarou A, Klinge P, Bergsneider M, Black PM. Diagnosing idiopathic normal-pressure hydrocephalus. Neurosurgery. 2005;57(3 Suppl):S4-16; Marmarou A, Bergsneider M, Klinge P, Relkin N, Black PM. The value of supplemental prognostic tests for the preoperative assessment of idiopathic normal-pressure hydrocephalus. Neurosurgery. 2005;57(3 Suppl):S17-28)",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/usmle/usmle-2026-0234.md",
+   "snippet": "A 74 year old man is brought to the physician by his daughter because of increasing difficulty walking over the past 8 months. He has fallen 3 times, and he says his feet feel stuck to the floor when he starts to walk. Over the same period,",
+   "text": "Neurology Feet That Feel Stuck to the Floor, Three Falls and New Urinary Urgency Over Eight Months in a 74-Year-Old Man Who Is Slower to Answer normal-pressure-hydrocephalus tap-test gait-apraxia ventriculomegaly ventriculoperitoneal-shunt parkinsonism-mimic test-selection USMLE-style / MedKOS (Relkin N, Marmarou A, Klinge P, Bergsneider M, Black PM. Diagnosing idiopathic normal-pressure hydrocephalus. Neurosurgery. 2005;57(3 Suppl):S4-16; Marmarou A, Bergsneider M, Klinge P, Relkin N, Black PM. The value of supplemental prognostic tests for the preoperative assessment of idiopathic normal-pressure hydrocephalus. Neurosurgery. 2005;57(3 Suppl):S17-28) A 74 year old man is brought to the physician by his daughter because of increasing difficulty walking over the past 8 months. He has fallen 3 times, and he says his feet feel stuck to the floor when he starts to walk. Over the same period, he has developed urinary urgency with 2 episodes of incontinence, and his daughter says he has become slower to answer questions and forgets appointments. He has hypertension treated with amlodipine and benign prostatic hyperplasia treated with tamsulosin. He has no history of head trauma, meningitis or subarachnoid hemorrhage. He drinks 1 glass of wine weekly. His vital signs are shown. He is oriented to person, place and time and recalls 1 of 3 words after 5 minutes. He walks slowly on a wide base with short, shuffling steps and needs 6 steps to turn around; arm swing is preserved. There is no resting tremor, and muscle tone is normal in all extremities. Strength, sensation and deep tendon reflexes are normal. Laboratory results are shown. MRI of the brain shows enlarged lateral and third ventricles out of proportion to sulcal widening, with an open cerebral aqueduct, no obstructing lesion and no infarcts. Which of the following is the most appropriate next step in management? A. Ventriculoperitoneal shunt placement B. Carbidopa levodopa trial C. Large volume lumbar tap test D. Donepezil therapy E. Endoscopic third ventriculostomy 8개월에 걸친 보행 장애(시작이 어렵고 발이 바닥에 붙은 듯한 넓은 기저의 종종걸음·여러 걸음으로 도는 회전), 절박뇨·요실금, 느려진 사고·기억 저하 — 보행이 먼저 나타난 이 세 가지에 MRI 에서 고랑 넓어짐보다 큰 뇌실 확장, 열린 중뇌수도관이면 특발성 정상압수두증(iNPH)을 의심한다. 안정 시 떨림·경직이 없고 팔 흔들기가 보존되어 파킨슨병의 가능성은 낮고, B12·TSH·RPR 이 정상이라 교정 가능한 다른 인지저하 원인도 가능성이 낮다. 다음 단계는 수술 전에 단락술 반응을 예측하는 검사다 — 요추천자로 뇌척수액 30~50 mL 를 빼고(개방압은 정상 범위) 보행을 전후로 측정한다. 보행이 좋아지면 뇌실복강 단락술의 이득 가능성이 높다. 바로 단락술을 하면 반응하지 않을 환자에게도 수술 합병증(경막하 혈종·감염·단락 기능 장애)을 지게 된다."
+  },
+  {
+   "id": "usmle-2026-0233",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Palpitations for Four Days and Wheezes That Persist After Three Nebulizer Treatments in a 58-Year-Old Woman With Lifelong Asthma",
+   "tags": [
+    "atrial-fibrillation",
+    "rate-control",
+    "diltiazem",
+    "asthma-exacerbation",
+    "beta-blocker-caution",
+    "cardioversion-timing",
+    "ecg",
+    "treatment"
+   ],
+   "source": "USMLE-style / MedKOS (Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation. 2024;149(1):e1-e156; Global Initiative for Asthma (GINA) 2024 report — management of exacerbations)",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/usmle/usmle-2026-0233.md",
+   "snippet": "A 58 year old woman comes to the emergency department because of shortness of breath and wheezing for 3 days and palpitations for 4 days. She has had asthma since childhood, with 2 hospitalizations in the past 5 years. She uses inhaled bude",
+   "text": "Internal Medicine Palpitations for Four Days and Wheezes That Persist After Three Nebulizer Treatments in a 58-Year-Old Woman With Lifelong Asthma atrial-fibrillation rate-control diltiazem asthma-exacerbation beta-blocker-caution cardioversion-timing ecg treatment USMLE-style / MedKOS (Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation. 2024;149(1):e1-e156; Global Initiative for Asthma (GINA) 2024 report — management of exacerbations) A 58 year old woman comes to the emergency department because of shortness of breath and wheezing for 3 days and palpitations for 4 days. She has had asthma since childhood, with 2 hospitalizations in the past 5 years. She uses inhaled budesonide formoterol and has needed albuterol every 2 hours since yesterday. She has hypertension treated with lisinopril. Transthoracic echocardiography 1 year ago showed normal left ventricular size and function. She takes no anticoagulant. In the emergency department, she receives 3 nebulized treatments of albuterol and ipratropium and intravenous methylprednisolone. One hour later, she is speaking in full sentences but diffuse expiratory wheezes persist. Her vital signs at this time are shown. She has no chest pain. Jugular venous pressure is not elevated, there are no crackles and there is no peripheral edema. Bedside echocardiography shows a left ventricular ejection fraction of 60%. An ECG is shown. Laboratory results are shown. Which of the following is the most appropriate next step in management? A. Intravenous metoprolol B. Intravenous diltiazem C. Intravenous amiodarone D. Synchronized electrical cardioversion E. Intravenous digoxin 심전도는 P파 없이 불규칙하게 불규칙한 좁은 QRS 빈맥(약 146회) — 빠른 심실 반응의 심방세동이다. 혈압 134/82, 흉통·심부전 징후 없음·트로포닌 정상으로 혈역학적으로 안정이라 즉시 전기 동율동 전환의 적응이 아니다. 두근거림이 4일째(48시간 이상)이고 항응고를 하지 않았으므로, 지금 동율동으로 되돌리면(전기 전환·amiodarone) 좌심방 혈전에 의한 뇌졸중 위험이 있다 — 3주 항응고나 경식도 심초음파 뒤에 한다. 그러므로 지금은 심박수 조절이다. 1차 약은 β 차단제와 비디하이드로피리딘 칼슘통로차단제인데, 이 환자는 치료 뒤에도 쌕쌕거림이 남은 천식 악화 중이라 β 차단제는 기관지 연축을 악화시킬 수 있다. 박출률 60% 로 diltiazem 의 음성 수축력 금기(HFrEF)가 없으므로 정맥 diltiazem 이 적절하다. 이어서 CHA₂DS₂ VASc(고혈압·여성 = 2)에 따라 항응고를 시작한다."
+  },
+  {
+   "id": "usmle-2026-0232",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "A Draining Ulcer on the Hand and a Chain of Tender Nodules Up the Forearm a Month After a Rosebush Scrape in a 46-Year-Old Gardener",
+   "tags": [
+    "nocardia",
+    "lymphocutaneous-syndrome",
+    "sporotrichosis",
+    "mycobacterium-marinum",
+    "trimethoprim-sulfamethoxazole",
+    "modified-acid-fast",
+    "treatment"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 21st ed. — Nocardiosis; Sporotrichosis; Nontuberculous mycobacterial infections · Mycobacterium marinum; Kauffman CA, et al. Clinical practice guidelines for the management of sporotrichosis: 2007 update by the Infectious Diseases Society of America. Clin Infect Dis. 2007;45(10):1255-1265)",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/usmle/usmle-2026-0232.md",
+   "snippet": "A 46 year old man comes to the physician because of a painful sore on the back of his right hand and 3 lumps on his right forearm that have appeared over the past 3 weeks. One month ago, he scraped the hand on a rosebush while clearing a ga",
+   "text": "Microbiology A Draining Ulcer on the Hand and a Chain of Tender Nodules Up the Forearm a Month After a Rosebush Scrape in a 46-Year-Old Gardener nocardia lymphocutaneous-syndrome sporotrichosis mycobacterium-marinum trimethoprim-sulfamethoxazole modified-acid-fast treatment USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 21st ed. — Nocardiosis; Sporotrichosis; Nontuberculous mycobacterial infections · Mycobacterium marinum; Kauffman CA, et al. Clinical practice guidelines for the management of sporotrichosis: 2007 update by the Infectious Diseases Society of America. Clin Infect Dis. 2007;45(10):1255-1265) A 46 year old man comes to the physician because of a painful sore on the back of his right hand and 3 lumps on his right forearm that have appeared over the past 3 weeks. One month ago, he scraped the hand on a rosebush while clearing a garden bed. A red bump formed at the site of the scrape and became a draining sore; firm, tender lumps then appeared one after another along the forearm. He has no fever, cough or headache. He has hypertension treated with amlodipine. He does not keep fish or an aquarium and has not been in fresh water or salt water recently. His vital signs are shown. There is a 1.5 cm ulcer with purulent drainage on the dorsum of the right hand and 3 tender, erythematous subcutaneous nodules in a linear arrangement along the volar forearm. A tender 2 cm right epitrochlear lymph node is palpable. The lungs are clear to auscultation, and neurologic examination shows no abnormalities. A chest x ray shows no abnormalities. Laboratory studies and stains of the drainage are shown. Which of the following is the most appropriate pharmacotherapy? A. Oral itraconazole B. Oral penicillin V C. Oral clarithromycin and ethambutol D. Oral potassium iodide E. Oral trimethoprim sulfamethoxazole 손등의 궤양에서 시작해 림프관을 따라 줄지어 올라가는 결절과 상완골 위 림프절 — 림프피부 증후군(nodular lymphangitis)이다. 원인 감별은 셋이다: 장미 가시·흙에 다친 뒤의 Sporothrix schenckii, 어항·물에 다친 뒤의 Mycobacterium marinum, 흙에 다친 뒤의 Nocardia(주로 N. brasiliensis). 장미 덤불 병력은 스포로트릭스증을 떠올리게 하지만, 고름의 그람 염색에서 가늘고 염주 모양으로 가지 친 그람 양성 막대균이 보이고 변형(Kinyoun) 항산성 염색에서 부분 항산성이다 — Nocardia 다. Sporothrix 는 조직에서 작은 시가 모양 효모로 보이고, M. marinum 은 가지를 치지 않으며 물 노출이 없다. Nocardia 의 1차 약은 sulfonamide(trimethoprim sulfamethoxazole)이며, 면역이 정상인 사람의 국소 피부·림프피부형은 경구 TMP SMX 를 수개월 쓴다. 폐·중추신경 침범이 없다(기침·두통 없음, 흉부 사진 정상)."
+  },
+  {
+   "id": "usmle-2026-0231",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Sweating and Jerking Spells Three Hours After Feeds, a Liver Down to the Umbilicus and Palpable Kidneys in a 5-Month-Old Girl",
+   "tags": [
+    "glycogen-storage-disease",
+    "von-gierke",
+    "glucose-6-phosphatase",
+    "lactic-acidosis",
+    "hypoglycemia",
+    "glucagon-test",
+    "mechanism"
+   ],
+   "source": "USMLE-style / MedKOS (Kishnani PS, Austin SL, Abdenur JE, et al. Diagnosis and management of glycogen storage disease type I: a practice guideline of the American College of Medical Genetics and Genomics. Genet Med. 2014;16(11):e1; Lehninger Principles of Biochemistry — glycogen metabolism and gluconeogenesis)",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/usmle/usmle-2026-0231.md",
+   "snippet": "A 5 month old girl is brought to the physician because of 2 episodes of sweating, irritability and jerking of the arms over the past week, each occurring about 3 to 4 hours after a feeding. She is breastfed every 2 to 3 hours during the day",
+   "text": "Biochemistry Sweating and Jerking Spells Three Hours After Feeds, a Liver Down to the Umbilicus and Palpable Kidneys in a 5-Month-Old Girl glycogen-storage-disease von-gierke glucose-6-phosphatase lactic-acidosis hypoglycemia glucagon-test mechanism USMLE-style / MedKOS (Kishnani PS, Austin SL, Abdenur JE, et al. Diagnosis and management of glycogen storage disease type I: a practice guideline of the American College of Medical Genetics and Genomics. Genet Med. 2014;16(11):e1; Lehninger Principles of Biochemistry — glycogen metabolism and gluconeogenesis) A 5 month old girl is brought to the physician because of 2 episodes of sweating, irritability and jerking of the arms over the past week, each occurring about 3 to 4 hours after a feeding. She is breastfed every 2 to 3 hours during the day, and the episodes began after she started sleeping through the night. She was born at term after an uncomplicated pregnancy. Her vital signs are shown. She has a round face with full cheeks and is at the 15th percentile for length. The liver edge is firm and palpable 6 cm below the right costal margin; the spleen is not palpable. Both kidneys are palpable. Muscle tone and reflexes are normal. Laboratory studies obtained 4 hours after her last feeding are shown. On another day, intramuscular glucagon is given 2 hours after a feeding; serum glucose does not rise over the next 30 minutes, while serum lactate increases further. A deficiency of the enzyme that catalyzes which of the following reactions is the most likely cause of this patient's condition? A. Glucose 6 phosphate → glucose B. Glycogen α 1,6 branch → free glucose C. Glycogen → glucose 1 phosphate D. Fructose 1,6 bisphosphate → fructose 6 phosphate E. Pyruvate → oxaloacetate 수유 3~4시간 뒤의 저혈당(34 mg/dL)과 큰 젖산산증(7.2 mmol/L) — 공복이 조금만 길어져도 포도당을 내지 못하는데, 글리코겐 분해와 포도당신생합성이 둘 다 막혀야 이렇게 짧은 공복에서 저혈당이 온다. 두 경로가 함께 지나는 마지막 단계가 간·신장의 glucose 6 phosphatase(G6P → 포도당)다. 막힌 G6P 는 해당으로 넘쳐 젖산을, 오탄당인산경로로 넘쳐 요산을, 아세틸 CoA 로 넘쳐 중성지방을 만든다 — 고요산혈증·고중성지방혈증이 함께 있다. 간과 신장에 글리코겐이 쌓여 간비대와 신장비대(만져지는 콩팥)가 생기고 비장은 크지 않다. 식후 2시간 글루카곤에도 포도당이 오르지 않고 젖산만 더 오르는 것이 결정적이다 — 분해된 글리코겐이 G6P 에서 멈춰 젖산으로 빠진다. 폰기르케병(GSD Ia)."
+  },
+  {
+   "id": "usmle-2026-0230",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "A Seizure, Vomiting and a Pulse of 128 Five Days Into an Antibiotic for a COPD Flare in a 67-Year-Old Who Still Smokes",
+   "tags": [
+    "theophylline",
+    "ciprofloxacin",
+    "cyp1a2",
+    "drug-interaction",
+    "pharmacokinetics",
+    "copd",
+    "mechanism"
+   ],
+   "source": "USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — drugs used in asthma: methylxanthines; drug interactions: CYP1A2 inhibition by fluoroquinolones; Lexicomp drug interaction monograph: ciprofloxacin–theophylline)",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/usmle/usmle-2026-0230.md",
+   "snippet": "A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. ",
+   "text": "Pharmacology A Seizure, Vomiting and a Pulse of 128 Five Days Into an Antibiotic for a COPD Flare in a 67-Year-Old Who Still Smokes theophylline ciprofloxacin cyp1a2 drug-interaction pharmacokinetics copd mechanism USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — drugs used in asthma: methylxanthines; drug interactions: CYP1A2 inhibition by fluoroquinolones; Lexicomp drug interaction monograph: ciprofloxacin–theophylline) A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. He has severe chronic obstructive pulmonary disease treated with inhaled tiotropium, inhaled albuterol as needed and sustained release oral theophylline, which he has taken at the same dose for 3 years. Five days ago he began a course of oral ciprofloxacin for an exacerbation with increased purulent sputum. He has smoked 1 pack of cigarettes daily for 45 years and smoked as usual this morning. He has no history of seizures or head trauma. His vital signs are shown. He is drowsy but arousable. He has a fine tremor of both hands. Scattered expiratory wheezes are heard. An ECG shows sinus tachycardia. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's elevated serum drug concentration? A. Decreased renal tubular secretion B. Displacement from albumin binding sites C. Inhibition of intestinal P glycoprotein D. Inhibition of hepatic CYP1A2 E. Withdrawal of smoking induced CYP1A2 activity 구토·떨림·빈맥·저칼륨혈증·고혈당 뒤 경련, 혈중 테오필린 34 µg/mL — 테오필린 독성이다(아데노신 수용체 차단·포스포디에스터레이스 억제·카테콜아민 분비 증가). 3년간 같은 용량으로 문제없던 농도가 5일 전 시작한 ciprofloxacin 뒤에 올랐으므로 약물 상호작용이다. 테오필린은 주로 간 CYP1A2 로 대사되고 치료역이 좁다 — 플루오로퀴놀론(특히 ciprofloxacin)은 CYP1A2 를 억제해 청소율을 떨어뜨리고 농도를 올린다. 흡연은 CYP1A2 를 유도하므로 금연하면 같은 결과가 오지만, 이 환자는 오늘 아침까지 피웠다. 크레아티닌·알부민이 정상이고 테오필린은 신장 배설·단백 결합 비중이 작아 신 배설 감소나 결합 치환으로 설명되지 않는다."
+  },
   {
    "id": "kmle-2026-1634",
    "type": "kmle",
@@ -830,6 +963,142 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0224.md",
    "snippet": "A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and sin",
    "text": "Physiology Lightheadedness on Standing After Three Days of Watery Diarrhea in a 26-Year-Old Woman Back From Mexico baroreceptor-reflex hypovolemia orthostatic-hypotension sinus-tachycardia autonomic-control mechanism USMLE-style / MedKOS (Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14th ed. Elsevier; 2021 — Nervous regulation of the circulation: baroreceptor reflex; Costanzo LS. Physiology. 7th ed. Elsevier; 2022 — Regulation of arterial pressure) A 26 year old woman is brought to the emergency department because of lightheadedness whenever she stands up. For 3 days she has had watery, nonbloody diarrhea 8 to 10 times daily that began after she returned from a trip to Mexico, and since yesterday she has been unable to keep fluids down. She takes no medications. Her vital signs, measured while she is supine, are shown. When she sits up, her pulse increases to 138/min and her blood pressure decreases to 84/56 mm Hg, and she feels faint. The mucous membranes are dry, and capillary refill time is 4 seconds. There is no jugular venous distention, and the lungs are clear to auscultation. The abdomen is soft with hyperactive bowel sounds and mild diffuse tenderness. Laboratory results are shown. A rhythm strip is shown. Which of the following is the most likely mechanism of this patient's increased heart rate? A. Increased carotid sinus afferent firing, increasing vagal outflow to the sinoatrial node B. Decreased carotid sinus afferent firing, decreasing vagal and increasing sympathetic outflow C. Increased atrial stretch receptor firing, increasing sympathetic outflow to the sinoatrial node D. Increased peripheral chemoreceptor firing from acidemia, increasing sympathetic outflow E. Increased angiotensin II acting directly on sinoatrial node pacemaker cells 3일간의 수양성 설사와 경구 섭취 불가로 세포외액이 빠졌다 — 점막 건조, 모세혈관 재충전 지연, BUN/크레아티닌 상승, 혈색소 농축, 경정맥 팽대 없음, 앉을 때 혈압이 더 떨어지고 맥박이 더 오르는 기립 반응이 모두 혈관 내 용적 감소를 가리킨다. 정맥 환류와 1회 박출량이 줄어 평균 동맥압과 맥압이 떨어지면 경동맥동(설인신경)·대동맥궁(미주신경) 압수용체가 덜 늘어나 구심 발화가 감소한다. 연수 심혈관 중추는 이를 「혈압 저하」로 읽고 미주신경의 동방결절 억제를 줄이며 교감 출력(동방결절 β1, 세동맥 α1)을 늘린다 — 리듬 띠의 동성 빈맥이 그 결과다. 압수용체 반사는 초 단위의 빠른 혈압 조절 기전이라 자세를 바꿀 때 맥박이 곧바로 더 오르는 것을 설명한다."
+  },
+  {
+   "id": "paper-2026-0859",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ophthalmologica. Journal international d'ophtalmologie. International journal of ophthalmology. Zeitschrift fur Augenheilkunde",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0859_macular_structure_and_function_in_retinal_detachment_complic.md",
+   "snippet": "Title MACULAR STRUCTURE AND FUNCTION IN RETINAL DETACHMENT COMPLICATED BY PROLIFERATIVE VITREORETINOPATHY Authors Anguita Rodrigo, Sim Peng Yong, Ferro Desideri Lorenzo, Schmid Moritz Joachim, Banerjee Philip J, Zinkernagel Martin, Charteri",
+   "text": "Surgery scraped pubmed PubMed / Ophthalmologica. Journal international d'ophtalmologie. International journal of ophthalmology. Zeitschrift fur Augenheilkunde Title MACULAR STRUCTURE AND FUNCTION IN RETINAL DETACHMENT COMPLICATED BY PROLIFERATIVE VITREORETINOPATHY Authors Anguita Rodrigo, Sim Peng Yong, Ferro Desideri Lorenzo, Schmid Moritz Joachim, Banerjee Philip J, Zinkernagel Martin, Charteris David G Journal / DOI Ophthalmologica. Journal international d'ophtalmologie. International journal of ophthalmology. Zeitschrift fur Augenheilkunde · DOI: 10.1159/oph/aeeag019 · PMID: 42945440 https://pubmed.ncbi.nlm.nih.gov/42945440/ Abstract INTRODUCTION: Macular structural changes after surgery for rhegmatogenous retinal detachment (RRD) complicated by proliferative vitreoretinopathy (PVR) remain poorly characterised. The aim of this study was to evaluate longitudinal macular structural changes on optical coherence tomography (OCT) and their relationship to visual function over 12 months in eyes undergoing pars plana vitrectomy (PPV) with silicone oil tamponade for PVR related RRD. METHODS: Post hoc analysis from a phase IIIb, single centre, participant masked, prospective, randomised controlled trial of slow release dexamethasone in PVR related RRD conducted at Moorfields Eye Hospital. One hundred and thirty nine (139) eyes of 139 patients undergoing PPV with silicone oil tamponade for RRD with confirmed PVR C were included. Spectral domain OCT imaging and best corrected visual acuity (BCVA, LogMAR) were obtained preoperatively and at 10 days, 6 months, and 12 months postoperatively. Retinal layer thicknesses were obtained by manual segmentation and 13 qualitative biomarkers were graded. Univariable regression and Firth penalised multivariable logistic regression were used to identify early structural predictors of 12 month BCVA. RESULTS: Central retinal thickness (CRT) increased significantly from 314.9 µm at 10 days to 370.9 µm at 12 months (p < 0.0001). The outer plexiform layer and outer nuclear layer showed dynamic changes over time. The proportion of eyes with epiretinal membrane (ERM) rose from 22.1% at 10 days to 41.2% at 6 months (p=0.001) and 49.6% at 12 months (p=0.011 versus 6 months), and cystoid macular oedema (CMO) increased from 20.7% to 52.2% (p<0.0001) and 62.6% (p = 0.029). Mean BCVA improved from 1.68 LogMAR preoperatively to 1.06 LogMAR at 10 days (p < 0.0001), with no significant further change to 0.92 LogMAR at 12 months. In univariable analysis, retinal pigment epithelium (RPE) thickness, outer retinal layer thickness, gross full thickness retinal disruption, disrupted ellipsoid and external limiting membrane, absence of a foveal bulge, subretinal PVR and persistent subretinal macular fluid at 10 days were associated with poorer 12 month BCVA (all p < 0.05). In the multivariable model, 10 day BCVA (adjusted odds ratio [aOR] 3.52, 95% CI 1.31 11.2) and gross full thickness retinal disruption (aOR 10.51, 95% CI 1.16 1391) remained independently associated with moderate visual impairment at 12 months (BCVA worse than 6/38; LogMAR 0.80), with an area under the receiver operating characteristic curve of 0.71. CONCLUSIONS: Macular structural changes after surgery for PVR related RRD reflect extensive cellular remodelling with progressive development of ERM and CMO. Early (10 day) postoperative OCT findings are associated with 12 month visual outcome and may help inform prognosis in PVR related RRD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0858",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR formative research",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0858_purrble_use_among_lgbtq_young_people_with_self_harm_experien.md",
+   "snippet": "Title Purrble Use Among LGBTQ+ Young People With Self Harm Experiences: Findings From a Qualitative Process Evaluation of a Randomized Controlled Trial Authors Williams A Jess, Townsend Ellen, Posada Lauren, Cleare Seonaid, Martin Lucy, Cha",
+   "text": "Pediatrics scraped pubmed PubMed / JMIR formative research Title Purrble Use Among LGBTQ+ Young People With Self Harm Experiences: Findings From a Qualitative Process Evaluation of a Randomized Controlled Trial Authors Williams A Jess, Townsend Ellen, Posada Lauren, Cleare Seonaid, Martin Lucy, Chapman Nisar Amelia, Hollis Chris, Gross James J, et al. Journal / DOI JMIR formative research · DOI: 10.2196/103590 · PMID: 42945478 https://pubmed.ncbi.nlm.nih.gov/42945478/ Abstract BACKGROUND: Difficulties with emotion regulation (ER) have widely been associated with the development and persistence of poor mental health, such as depression, anxiety, self harmful thoughts, behaviors, and suicide attempts. Despite the importance of ER as a transdiagnostic risk factor, few interventions directly target ER. The impact of one such intervention, Purrble (a socially assistive robot; developed by Sproutel and Committee for Children), was recently evaluated when compared to treatment as usual (TAU) within a randomized controlled trial (RCT) with sexual orientation and gender identity minorities, that is, lesbian, gay, bisexual, transgender, queer, or questioning (LGBTQ+) youth, who had self harm experiences. However, while RCTs are well suited to evaluating effectiveness, they offer limited insight into how participants engage with, integrate, and perceive the value of interventions, like Purrble, in their everyday lives. Consequently, complementary qualitative process evaluation is needed to fully understand participants' experiences and contextualize trial outcomes. OBJECTIVE: This study aimed to explore and understand the engagement with and integration of the Purrble intervention using process evaluation interviews, considering its perceived influence on ER, mental health, and self harm experiences. METHODS: Following their participation in the Purrble RCT, 40 LGBTQ+ young people (16 25 years) with current self harm ideation took part in this qualitative process evaluation using semistructured online interviews. Interviews explored participant expectations of the RCT and Purrble; engagement and appropriation of Purrble; and perceived impact on mental health and self harm. Thematic analysis was used to develop a thematic framework. RESULTS: Four overarching themes were developed from the data. The first theme describes how participants used Purrble to ground themselves and manage distress, with participants suggesting de escalation of their self harm thoughts or behaviors. The second theme captures how Purrble was perceived as a companion or source of comfort, supporting self soothing and self care. The third theme highlights the role of accessibility and proximity, how the availability and location of Purrble during moments of distress influenced its perceived usefulness. The final theme examines circumstances in which participants chose not to engage with Purrble, offering insights into barriers to use and individual differences in engagement. CONCLUSIONS: This process evaluation helps to contextualize how Purrble could be a helpful intervention for those LGBTQ+ young people with experience of self harm thoughts and behaviors. This evaluation also clarifies when Purrble may not be helpful. These qualitative findings offer important contextual insights alongside the quantitative results of the related RCT. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0857",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of lower genital tract disease",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0857_toward_safer_regenerative_functional_and_aesthetic_gynecolog.md",
+   "snippet": "Title Toward Safer Regenerative, Functional, and Aesthetic Gynecology: A Clinical Governance Framework for Patient Safety Authors Sánchez Borrego Rafael, Alinsod Red, Bader Alexander, Escribano Juan José, Gaspar Adrián, González Isaza Pablo",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of lower genital tract disease Title Toward Safer Regenerative, Functional, and Aesthetic Gynecology: A Clinical Governance Framework for Patient Safety Authors Sánchez Borrego Rafael, Alinsod Red, Bader Alexander, Escribano Juan José, Gaspar Adrián, González Isaza Pablo, Leibaschoff Gustavo H, Sánchez Prieto Manuel, et al. Journal / DOI Journal of lower genital tract disease · DOI: 10.1097/LGT.0000000000000994 · PMID: 42945456 https://pubmed.ncbi.nlm.nih.gov/42945456/ Abstract OBJECTIVES: Regenerative, functional, and aesthetic gynecology has expanded rapidly, yet discussions about complications remain focused on individual technologies rather than the clinical decisions that determine procedural safety. This review proposes a multidimensional clinical governance framework for complication prevention in this subspecialty. METHODS: A narrative review was based on a structured search of PubMed/MEDLINE and Embase (January 2014 May 2026), supplemented by international guidelines, regulatory communications, and evidence syntheses. Forty two sources were included in the final qualitative synthesis. Evidence was appraised by study design, methodological rigor, clinical relevance, consistency, and applicability. The preliminary framework underwent successive rounds of multidisciplinary expert review, substantive textual and conceptual revision, and approval by all authors. RESULTS: Adverse outcomes arise from the convergence of 3 interdependent domains: patient related factors (hormonal status, tissue quality, expectations, psychological context), clinician related factors (diagnostic accuracy, anatomic expertise, endocrine competence, willingness to decline intervention), and procedural variables (technique, standardization, follow up). When present, genitourinary syndrome of menopause represents a potentially modifiable biologic risk factor that should be identified and appropriately managed before restorative intervention is considered. A structured 5 component clinical evaluation framework integrating hormonal status, symptom profile, anatomic assessment, psychological context, and prior treatment history supports indication based decision making. Safety reflects both procedure specific risk and patient , clinician , and protocol related factors. CONCLUSIONS: Complication prevention begins with clinical reasoning, not procedural selection. The credibility of this subspecialty will depend on rigorous patient selection, endocrine optimization when indicated, evidence based indications, competency based training, and robust clinical governance rather than on the continuous introduction of new technologies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0856",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0856_aberrant_mrna_5_methylcytosine_modification_contributes_to_o.md",
+   "snippet": "Title Aberrant mRNA 5 methylcytosine modification contributes to ovarian dysfunction in a rat model of polycystic ovary syndrome Authors Chen Xiaohong, Lin Jing, Chi Zhoulin, Yang Sha, Yu Shuguang Journal / DOI PloS one · DOI: 10.1371/journ",
+   "text": "Pathology scraped pubmed PubMed / PloS one Title Aberrant mRNA 5 methylcytosine modification contributes to ovarian dysfunction in a rat model of polycystic ovary syndrome Authors Chen Xiaohong, Lin Jing, Chi Zhoulin, Yang Sha, Yu Shuguang Journal / DOI PloS one · DOI: 10.1371/journal.pone.0358238 · PMID: 42945348 https://pubmed.ncbi.nlm.nih.gov/42945348/ Abstract OBJECTIVE: This study investigated the altered landscape of messenger RNA 5 methylcytosine (m5C) methylation and the functional involvement of m5C related regulators in a rat model of polycystic ovary syndrome (PCOS). METHODS: A PCOS rat model was established by dehydroepiandrosterone (DHEA) induction, with the phenotype confirmed through estrous cycle monitoring, serum sex hormone analysis, and ovarian morphological assessment. Differentially m5C methylated mRNAs were identified using an m5C epitranscriptomic microarray, and their associated biological pathways were predicted by KEGG analysis. Global m5C methylation levels and the expression and m5C enrichment of selected pathway related genes were validated in ovarian tissues and isolated primary ovarian granulosa cells using dot blot, RT qPCR, Western blotting, and methylated RNA immunoprecipitation quantitative PCR (MeRIP qPCR). The functional roles of TET2 and NSUN6 were further evaluated using shRNA mediated knockdown, followed by analysis of PI3K/AKT related signaling proteins, serum sex hormones, and ovarian histopathology. RESULTS: m5C modifications were predominantly localized within coding sequences and 3' untranslated regions. Among 1,090 RNAs showing both differential m5C methylation and expression, 36 genes exhibited significant correlations between methylation and expression changes. Global mRNA m5C methylation was significantly elevated in the PCOS group. The m5C related regulators Nsun6 and Tet2 showed increased m5C enrichment and significantly elevated protein expression. KEGG analysis linked the differentially modified transcripts to endocrine resistance and insulin related signaling pathways. Tet2, Nsun6, Src, Pi3k, and Akt transcripts exhibited increased m5C enrichment in PCOS ovarian tissues and primary granulosa cells. Concurrently, SRC and PI3K protein expression was increased, whereas AKT protein expression was decreased in the PCOS group. Knockdown of TET2 and NSUN6 was confirmed at the mRNA and protein levels and differentially modulated PI3K/AKT related protein expression and phosphorylation status, as assessed by PI3K, p PI3K, AKT, and p AKT levels. TET2 and NSUN6 knockdown also partially improved PCOS associated abnormalities in serum FSH, LH, the LH/FSH ratio, testosterone, estradiol, and ovarian morphology. CONCLUSION: This study reveals a significantly altered mRNA m5C methylation landscape in a DHEA induced PCOS rat model and primary ovarian granulosa cells. The functional knockdown data suggest that TET2 and NSUN6 may contribute to PCOS associated ovarian dysfunction through differential regulation or remodeling of PI3K/AKT signaling. However, the opposite changes in the p PI3K/PI3K and p AKT/AKT ratios indicate that the pathway is differentially regulated rather than uniformly activated or inhibited. Because the DHEA model primarily mimics hyperandrogenism and MeRIP qPCR does not provide single nucleotide resolution, further validation in human samples and high resolution m5C mapping is required to establish the precise molecular mechanism and clinical relevance of these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0855",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Rhode Island medical journal (2013)",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0855_recurrent_nodular_lymphocyte_predominant_hodgkin_lymphoma_wi.md",
+   "snippet": "Title Recurrent Nodular Lymphocyte Predominant Hodgkin Lymphoma with Diagnostic Evolution Over Two Decades Authors Atluri Swetha, Schiffman Fred Journal / DOI Rhode Island medical journal (2013) · PMID: 42945516 https://pubmed.ncbi.nlm.nih.",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Rhode Island medical journal (2013) Title Recurrent Nodular Lymphocyte Predominant Hodgkin Lymphoma with Diagnostic Evolution Over Two Decades Authors Atluri Swetha, Schiffman Fred Journal / DOI Rhode Island medical journal (2013) · PMID: 42945516 https://pubmed.ncbi.nlm.nih.gov/42945516/ Abstract Nodular lymphocyte predominant Hodgkin lymphoma (NLPHL) is a rare subtype of Hodgkin lymphoma with distinct pathologic and clinical characteristics. We present the case of a 51 year old man with a nearly 20 year history of NLPHL characterized by multiple relapses, diagnostic reclassification, and treatment de escalation. This case illustrates the diagnostic challenges in distinguishing NLPHL from lymphocyte rich classical Hodg kin lymphoma (LRCHL), the indolent natural history of NLPHL with prolonged remissions, and the role of active surveillance in managing asymptomatic relapsed disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0854",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of nephrology",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0854_pregnancy_outcomes_and_long_term_kidney_function_in_women_wi.md",
+   "snippet": "Title Pregnancy Outcomes and Long Term Kidney Function in Women with Primary Glomerulonephritis Authors Gulseren Ubeyde Ayse, Mirioglu Safak, Oto Ozgur Akin, Deniz Rabia, Dirim Ahmet Burak, Yazici Halil, Artan Ayse Serra Journal / DOI Journ",
+   "text": "Nephrology scraped pubmed PubMed / Journal of nephrology Title Pregnancy Outcomes and Long Term Kidney Function in Women with Primary Glomerulonephritis Authors Gulseren Ubeyde Ayse, Mirioglu Safak, Oto Ozgur Akin, Deniz Rabia, Dirim Ahmet Burak, Yazici Halil, Artan Ayse Serra Journal / DOI Journal of nephrology · DOI: 10.1093/joneph/aajag264 · PMID: 42945472 https://pubmed.ncbi.nlm.nih.gov/42945472/ Abstract BACKGROUND: Whether pregnancy accelerates long term kidney function decline in women with primary glomerulonephritis remains unclear. This study aimed to evaluate maternal and fetal outcomes and the long term course of kidney function in women with primary glomerulonephritis. METHODS: This retrospective single center study analyzed 40 pregnancies in 31 women with biopsy proven primary glomerulonephritis (1996 2022). A control group of nulliparous women with primary glomerulonephritis, matched for subtype, age at diagnosis, and disease duration, was included. Obstetric and neonatal outcomes were evaluated alongside longitudinal kidney parameters assessed before, during, and up to 60 months postpartum. RESULTS: Common diagnoses were focal segmental glomerulosclerosis (32.3%) and IgA nephropathy (25.8%). Mean maternal age was 29.6±4.1 years. Preeclampsia occurred in 15% and preterm birth in 50% of pregnancies (mean birth weight: 2819±859 g). During pregnancy, serum creatinine decreased and eGFR increased (p<0.001). Postpartum, serum creatinine returned to baseline, showing no significant differences at 6, 12, or 60 months. Although eGFR at 60 months was lower than pre pregnancy levels, serum creatinine remained comparable to baseline and no significant differences in kidney function parameters were observed between the pregnancy and control groups at 60 months. The clinical significance of the isolated reduction in calculated eGFR therefore remains uncertain. CONCLUSIONS: In women with primary glomerulonephritis and predominantly early stage kidney disease, physiological kidney adaptation during pregnancy is largely preserved. No clear acceleration in long term kidney function decline was observed compared with matched controls; however, an adverse effect of pregnancy cannot be excluded. Preeclampsia and preterm delivery remain significant, requiring monitoring. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0853",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLOS global public health",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0853_laboratory_performance_of_antimicrobial_susceptibility_testi.md",
+   "snippet": "Title Laboratory performance of antimicrobial susceptibility testing for GLASS pathogens among participants in the EQuAfrica programme, 2021‒2025 Authors Perovic Olga, van der Puije Beatrice, Carter Jane Y, Humwa Felix, Badat Rubeina, Mwiti",
+   "text": "Infectious Disease scraped pubmed PubMed / PLOS global public health Title Laboratory performance of antimicrobial susceptibility testing for GLASS pathogens among participants in the EQuAfrica programme, 2021‒2025 Authors Perovic Olga, van der Puije Beatrice, Carter Jane Y, Humwa Felix, Badat Rubeina, Mwiti Dennis, Smith Marshagne, Poulo Ly Fatime, et al. Journal / DOI PLOS global public health · DOI: 10.1371/journal.pgph.0007478 · PMID: 42945389 https://pubmed.ncbi.nlm.nih.gov/42945389/ Abstract The External Quality Assessment (EQA) for Africa (EQuAFRICA) project aimed at building regional capacity to provide a One Health bacteriology proficiency testing (PT) programme for reference and sentinel laboratories supporting antimicrobial resistance (AMR) surveillance and submission of data to the World Health Organization Global Antimicrobial Resistance and Use Surveillance System (WHO GLASS). We analysed the performance of participating laboratories in pathogen specific identification (ID) and qualitative antimicrobial susceptibility testing. The programme covered all GLASS and other bacterial pathogens of importance. One survey was distributed in 2021 and 2023 and two surveys in 2022, 2024 and 2025, with five isolates per survey. Participants were selected among reference and designated sentinel AMR laboratories from the 14 Fleming Fund recipient countries in Africa. The Clinical Microbiology Proficiency Testing (CMPT) marking scheme was used to score performance. The number of invited, enrolled and responding laboratories differed by survey; an average of 85% of enrolled laboratories submitted results. Participants scored 83% for organism ID across all cycles. Microbiology laboratories from the human health sector represented the majority in all cycles (75%). The average scores for antibiotic susceptibility testing (AST) was 73%, no participants that scored zero. Critical AST errors with clinical implications for directed treatment included vancomycin and cefoxitin for staphylococci. Our manuscript highlights that the use of EQA programmes to detecting gaps in laboratory processes and maintaining the quality and accuracy of AST is vital for effective AMR surveillance and control. This report illustrates that poorly performed AST at the beginning of the programme improved over the time. Building sustainable capacity for bacteriology testing, including AST, is critically important at all laboratory levels across Africa, from routine clinical and surveillance sites to national AMR reference laboratories. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0852",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR mHealth and uHealth",
+   "confidence": "medium",
+   "date": "2026-10-27",
+   "path": "content/papers/2026/2026-10-27_paper-2026-0852_effectiveness_of_wrist_worn_wearable_guided_cardiac_rehabili.md",
+   "snippet": "Title Effectiveness of Wrist Worn Wearable Guided Cardiac Rehabilitation Delivered Through Fully Remote or Hybrid Programs in Patients With Cardiovascular Disease: Systematic Review and Meta Analysis of Randomized Controlled Trials Authors ",
+   "text": "Cardiology scraped pubmed PubMed / JMIR mHealth and uHealth Title Effectiveness of Wrist Worn Wearable Guided Cardiac Rehabilitation Delivered Through Fully Remote or Hybrid Programs in Patients With Cardiovascular Disease: Systematic Review and Meta Analysis of Randomized Controlled Trials Authors Choi Jun Hwan, Lee So Young, Seo Kyung Cheon, Lee Sang Yoon, Lee Hyo Kyung, Heo Dongbin, Ryu Hyun, Kim Jong Hoon, et al. Journal / DOI JMIR mHealth and uHealth · DOI: 10.2196/101306 · PMID: 42945529 https://pubmed.ncbi.nlm.nih.gov/42945529/ Abstract BACKGROUND: Cardiovascular disease (CVD) remains the leading cause of death worldwide, yet participation in cardiac rehabilitation (CR) remains suboptimal. Wrist worn wearables may support fully remote or hybrid CR through activity monitoring and individualized feedback, but the effectiveness and consistency of benefits remain uncertain. OBJECTIVE: This study aimed to evaluate the effectiveness of wrist worn wearable guided CR delivered through fully remote or hybrid programs initiated during phase II or III CR in patients with CVD. METHODS: A total of 8 databases were searched for randomized controlled trials published from January 1, 2015, through August 7, 2026. Eligible trials enrolled adults with CVD and integrated a wrist worn wearable into fully remote or hybrid CR. Studies focused primarily on heart failure or using wearables only for outcome measurement were excluded. Primary outcomes were peak oxygen consumption (VO2), 6 minute walk distance (6MWD), and daily steps. Random effects meta analyses used mean differences (MDs), except for quality of life, which used standardized MDs. Between study variance was estimated using the DerSimonian Laird method, pooled effect CIs used the Knapp Hartung adjustment, and 95% prediction intervals (PIs) used the Nagashima Noma Furukawa parametric bootstrap method. Risk of bias was assessed with Cochrane Risk of Bias 2. Subgroup and univariable meta regression analyses explored study and intervention characteristics. RESULTS: A total of 18 trials involving 1993 randomized participants, reported in 20 publications, were included; 17 contributed to meta analysis. Pooled estimates favored wearable guided CR for peak VO2 (10 studies; 591 participants; MD 1.69, 95% CI 0.46 2.92, 95% PI 2.21 to 5.39 mL/kg/min), 6MWD (9 studies; 1094 participants; MD 31.03, 95% CI 7.66 53.92, 95% PI 62.11 to 123.18 m), and daily steps (8 studies; 474 participants; MD 1062.8, 95% CI 383.5 1825.0, 95% PI 503.0 to 2860.0 steps/day). All 3 PIs included the null, indicating uncertainty about consistency across future comparable settings. No clear pooled effects were observed for anaerobic threshold, BMI, waist circumference, grip strength, or quality of life. Subgroup differences were not statistically significant. In univariable meta regression, a higher proportion of female participants was associated with greater peak VO2 improvement, although this aggregate level finding was exploratory. CONCLUSIONS: Wrist worn wearable guided CR delivered through fully remote or hybrid programs may improve average exercise capacity and physical activity in patients with CVD. However, PIs included the null, indicating uncertainty about consistency across future settings. These programs may extend activity monitoring, individualized feedback, and behavioral support beyond center based CR, but their multicomponent nature prevents attributing effects to wearables alone. Larger, rigorously designed trials with standardized protocols and outcomes should identify the patients and program components most likely to benefit. Future research should also evaluate long term adherence, safety, equity, and implementation within routine multidisciplinary CR across diverse health systems. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0465",
