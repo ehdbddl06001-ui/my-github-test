@@ -1070,8 +1070,29 @@
    "date": "2026-10-27",
    "device": "android-9buhos",
    "note": ""
+  },
+  "kmle-2026-1633": {
+   "id": "kmle-2026-1633",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Planning Long-Term Urate Lowering for a Korean Man with Reduced Kidney Function",
+   "style": "",
+   "modality": "",
+   "question": "약을 시작하기 전에 가장 적절한 것은?",
+   "chosen": 0,
+   "chosenText": "페북소스타트로 바꾸어 바로 시작",
+   "answer": 2,
+   "answerText": "HLA-B*58:01 유전자형 검사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "결정으로 확진된 통풍에 연 3회 발작이 있어 요산저하제가 필요하고, 관상동맥질환이 있어 알로푸리놀이 1차다. 한국인이며 만성콩팥병 3기라 HLA-B*58:01 관련 중증 피부이상반응 위험이 높으므로 시작 전에 유전자형을 검사하고, 양성이면 다른 약을 고른다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-10-29",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-27T09:23:48.443Z"
+ "updated": "2026-10-28T23:18:53.794Z"
 }
