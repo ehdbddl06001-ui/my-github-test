@@ -2,6 +2,1061 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0467",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "응급·중환자·외상 — 고속 충돌 뒤 위쪽 목 통증과 경추 축상 CT",
+  "type": "응급·중환자·외상 — 고속 충돌 뒤 위쪽 목 통증과 경추 축상 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-28",
+  "vignette": "A 31-year-old woman is brought to the emergency department 1 hour after a high-speed motor vehicle collision. She reports severe pain at the back of the upper neck and is unwilling to turn her head. She takes no medications. Her pulse is 96/min and blood pressure is 126/78 mm Hg. She is alert and oriented. A rigid cervical collar is in place. There is tenderness over the upper posterior cervical spine. Strength, sensation, and reflexes are normal in all extremities. An axial CT image of the cervical spine at the level of the first cervical vertebra (atlas) is shown.",
+  "question": "Integrity of which of the following structures is most important in determining whether this fracture is mechanically unstable?",
+  "options": [
+   "Transverse ligament of the atlas",
+   "Alar ligaments",
+   "Tectorial membrane",
+   "Anterior longitudinal ligament",
+   "Ligamentum flavum"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The axial CT shows two breaks in the ring of the atlas: one through the anterior arch near the midline and one through the posterior arch on the patient's right. A C1 ring fracture is stable only while the transverse ligament holds the dens against the anterior arch; if the ligament is torn (seen directly on MRI, or inferred when the lateral masses overhang C2 by more than about 7 mm in total), C1 can slide on C2 and the injury needs surgical stabilization or halo immobilization.\n- 원리: <b>Why the ring breaks in more than one place</b>: the atlas is a closed bony ring without a vertebral body. A force that spreads the lateral masses apart, or bends the ring, usually breaks it in two or more places — an isolated single break is uncommon.<br> <b>What holds C1 on C2</b>: the dens sits against the back of the anterior arch and is held there by the <b>transverse ligament</b>, the main stabilizer of the atlantoaxial joint. When the ring is broken, the ligament is what still keeps the two lateral masses and the dens in register.<br> <b>How stability is judged</b>: MRI shows the ligament (or a bony avulsion of its tubercle) directly. On an open-mouth view or coronal CT, a combined lateral-mass overhang beyond the C2 facets of more than about 7 mm (rule of Spence) suggests the ligament is torn. Intact ligament → rigid collar; disrupted ligament → halo or fusion.\n- 비교: <table><thead><tr><th style=\"width:22%\">Structure</th><th style=\"width:39%\">Transverse ligament (answer)</th><th>Alar ligaments (closest distractor)</th></tr></thead><tbody> <tr><td>Span</td><td><b>Between the lateral masses of C1, behind the dens</b></td><td>From the sides of the dens tip to the occipital condyles</td></tr> <tr><td>Main role</td><td>Keeps the dens against the anterior arch (C1–C2 translation)</td><td>Limits head rotation and occiput–C2 distraction</td></tr> <tr><td>Injury it decides</td><td>Stability of C1 ring fractures</td><td>Craniocervical (atlanto-occipital) dissociation, with the tectorial membrane</td></tr> </tbody></table> A C1 ring fracture raises the transverse-ligament question; a widened basion–dens interval raises the alar/tectorial question.\n- 오답 이유:\n  - (B) Alar ligaments become the key structure when the basion–dens interval is widened, indicating craniocervical (atlanto-occipital) dissociation.\n  - (C) The tectorial membrane matters most in craniocervical dissociation, where it and the alar ligaments are torn and the skull separates from C2.\n  - (D) The anterior longitudinal ligament is critical in hyperextension injuries of the subaxial spine, such as widening of an anterior disc space.\n  - (E) The ligamentum flavum is part of the posterior ligamentous complex judged in flexion-distraction injuries of the subaxial and thoracolumbar spine.\n- 함정: Choosing the alar ligaments because the injury is at the craniocervical junction — the stability of a C1 ring fracture depends on the transverse ligament holding the dens.\n- 학습목표: 환추 축상 CT 에서 앞고리와 뒤고리 두 곳의 골절(환추 고리 골절)을 읽고, 그 안정성을 가르는 구조가 환추 가로인대임을 안다\n- 근거·출처: Kandziora F, Chapman JR, Vaccaro AR, et al. Atlas fractures and atlas osteosynthesis: a comprehensive narrative review. J Orthop Trauma 2017;31 Suppl 4:S81-S89 · Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery 1996;38:44-50\n\n## 출처\n- Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The axial CT shows two breaks in the ring of the atlas: one through the anterior arch near the midline and one through the posterior arch on the patient's right. A C1 ring fracture is stable only while the transverse ligament holds the dens against the anterior arch; if the ligament is torn (seen directly on MRI, or inferred when the lateral masses overhang C2 by more than about 7 mm in total), C1 can slide on C2 and the injury needs surgical stabilization or halo immobilization."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the ring breaks in more than one place</b>: the atlas is a closed bony ring without a vertebral body. A force that spreads the lateral masses apart, or bends the ring, usually breaks it in two or more places — an isolated single break is uncommon.<br> <b>What holds C1 on C2</b>: the dens sits against the back of the anterior arch and is held there by the <b>transverse ligament</b>, the main stabilizer of the atlantoaxial joint. When the ring is broken, the ligament is what still keeps the two lateral masses and the dens in register.<br> <b>How stability is judged</b>: MRI shows the ligament (or a bony avulsion of its tubercle) directly. On an open-mouth view or coronal CT, a combined lateral-mass overhang beyond the C2 facets of more than about 7 mm (rule of Spence) suggests the ligament is torn. Intact ligament → rigid collar; disrupted ligament → halo or fusion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Structure</th><th style=\"width:39%\">Transverse ligament (answer)</th><th>Alar ligaments (closest distractor)</th></tr></thead><tbody> <tr><td>Span</td><td><b>Between the lateral masses of C1, behind the dens</b></td><td>From the sides of the dens tip to the occipital condyles</td></tr> <tr><td>Main role</td><td>Keeps the dens against the anterior arch (C1–C2 translation)</td><td>Limits head rotation and occiput–C2 distraction</td></tr> <tr><td>Injury it decides</td><td>Stability of C1 ring fractures</td><td>Craniocervical (atlanto-occipital) dissociation, with the tectorial membrane</td></tr> </tbody></table> A C1 ring fracture raises the transverse-ligament question; a widened basion–dens interval raises the alar/tectorial question."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Alar ligaments become the key structure when the basion–dens interval is widened, indicating craniocervical (atlanto-occipital) dissociation.\n(C) The tectorial membrane matters most in craniocervical dissociation, where it and the alar ligaments are torn and the skull separates from C2.\n(D) The anterior longitudinal ligament is critical in hyperextension injuries of the subaxial spine, such as widening of an anterior disc space.\n(E) The ligamentum flavum is part of the posterior ligamentous complex judged in flexion-distraction injuries of the subaxial and thoracolumbar spine."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the alar ligaments because the injury is at the craniocervical junction — the stability of a C1 ring fracture depends on the transverse ligament holding the dens."
+   },
+   {
+    "k": "학습목표",
+    "v": "환추 축상 CT 에서 앞고리와 뒤고리 두 곳의 골절(환추 고리 골절)을 읽고, 그 안정성을 가르는 구조가 환추 가로인대임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kandziora F, Chapman JR, Vaccaro AR, et al. Atlas fractures and atlas osteosynthesis: a comprehensive narrative review. J Orthop Trauma 2017;31 Suppl 4:S81-S89 · Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery 1996;38:44-50 ## 출처 Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "환추 앞고리·뒤고리 두 곳의 고리 골절이므로 안정성은 치아돌기를 붙잡는 환추 가로인대의 온전함으로 판단한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "날개인대·덮개막은 기저골-치아돌기 간격이 벌어진 두개-경추 분리에서 문제가 된다 — 이 영상은 C1 고리 골절이다",
+   "steps": 2,
+   "chain": [
+    "영상: C1 앞고리 정중 부근과 오른쪽 뒤고리의 골절 → 환추 고리 골절",
+    "고리 골절의 안정성 → 치아돌기를 앞고리에 붙잡는 가로인대의 온전함"
+   ],
+   "key": [
+    {
+     "item": "영상: 앞고리 정중 부근과 오른쪽 뒤고리를 지나는 두 골절선",
+     "why": "환추 고리 골절 — 가로인대 평가가 필요한 손상",
+     "also": []
+    },
+    {
+     "item": "severe pain at the back of the upper neck",
+     "why": "위쪽 경추 손상을 시사",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Strength, sensation, and reflexes are normal in all extremities",
+     "why": "신경 손상이 없어도 인대가 끊겼으면 불안정 — 안정성은 영상으로 판단",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "high-speed motor vehicle collision",
+     "why": "고에너지 외상 — 손상 기전을 특정하지 않는다",
+     "also": []
+    },
+    {
+     "item": "She is alert and oriented",
+     "why": "임상 진찰이 가능하다는 정보 — 답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "C1 축상 CT 에서 앞고리와 뒤고리 두 곳이 부러진 환추 고리 골절이다. 이 손상의 안정성은 치아돌기를 붙잡는 가로인대가 온전한지로 가른다.",
+   "switch": {
+    "choice": "B",
+    "condition": "측면 영상에서 기저골-치아돌기 간격이 크게 벌어져 두개-경추 분리가 의심되었다면 날개인대(와 덮개막)가 핵심 구조다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0467.png",
+   "caption": "Axial CT of the upper cervical spine at the level of the atlas, bone window — one panel cropped from a published case figure; the arrows are the authors' original markings (PMC Open Access Subset, CC BY — no adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6946329/",
+   "asset_id": "PMC-PMC6946329_Figure1_E",
+   "text": "Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 1"
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0466",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "병리·조직 — 외상으로 절제한 폐 조직의 면역조직화학염색",
+  "type": "병리·조직 — 외상으로 절제한 폐 조직의 면역조직화학염색",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-28",
+  "vignette": "21세 남자가 오토바이 사고로 가슴을 다쳐 응급실에 왔다. 오른쪽 폐 아래엽의 열상으로 공기 누출이 계속되어 쐐기절제술을 받았다. 과거력은 없고 담배는 피우지 않는다. 절제 검체 가운데 손상되지 않은 가장자리 폐 조직의 절편에 면역조직화학염색을 하였고, 사진은 그림과 같다.",
+  "question": "폐포 공간 안에 떠 있는, 진하게 염색된 큰 세포의 기능이 자가항체로 억제될 때 생기는 질환은?",
+  "options": [
+   "미만성 폐포출혈",
+   "폐랑게르한스세포조직구증",
+   "폐포단백증",
+   "과민폐렴",
+   "만성 호산구폐렴"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 갈색으로 진하게 염색된 세포는 폐포벽에서 떨어져 폐포 공간 안에 떠 있는 크고 둥근 세포 — 폐포 대식세포다(벽에 붙은 입방형 제2형 폐포세포는 더 옅다). 폐포 대식세포는 GM-CSF 신호로 성숙해 쓰고 남은 계면활성물질을 먹어 치운다. GM-CSF 에 대한 자가항체가 생기면 이 제거가 막혀 폐포 안에 PAS 양성 지단백 물질이 쌓이는 자가면역 폐포단백증이 된다.\n- 원리: <b>계면활성물질의 생애</b>: 제2형 폐포세포가 층판소체로 계면활성물질을 만들어 분비하고, 쓰고 난 물질의 일부는 제2형 세포가 다시 흡수하며 나머지는 <b>폐포 대식세포</b>가 먹어 분해한다. 이 염색 단백(napsin A)은 계면활성 단백 B 의 전구체를 자르는 효소라 두 세포 모두에 있다.<br> <b>GM-CSF 가 열쇠인 이유</b>: 폐포 대식세포는 GM-CSF → 전사인자 PU.1 신호로 성숙해야 계면활성물질을 분해할 수 있다. 성인 폐포단백증의 약 90 % 는 <b>항 GM-CSF 자가항체</b>가 이 신호를 막는 자가면역형이다. 대식세포는 거품 모양으로 부풀고, 폐포는 PAS 양성 과립성 물질로 찬다.<br> <b>임상 연결</b>: 서서히 진행하는 호흡곤란, CT 의 「미친 포장도로(crazy-paving)」 양상, 기관지폐포세척액이 우윳빛. 치료는 전폐 세척과 흡입 GM-CSF 다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">폐포단백증(정답)</th><th>미만성 폐포출혈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>자가항체의 표적</td><td><b>GM-CSF — 대식세포 성숙 신호</b></td><td>사구체·폐포 기저막(항 GBM), 호중구 효소(ANCA)</td></tr> <tr><td>대식세포의 모습</td><td>지단백 물질로 부푼 거품 세포</td><td>혈철소를 먹은 대식세포(철 염색 양성)</td></tr> <tr><td>폐포 안 물질</td><td>PAS 양성 지단백, 우윳빛 세척액</td><td>적혈구, 갈수록 붉어지는 세척액</td></tr> </tbody></table> 둘 다 폐포 안 대식세포가 주인공이지만, 대식세포 「기능」이 막히는 것은 폐포단백증이고 폐포출혈에서 대식세포는 피를 치우는 정상 기능을 한다.\n- 오답 이유:\n  - ① 미만성 폐포출혈은 항 GBM 항체·ANCA 혈관염처럼 기저막이나 혈관을 표적으로 하는 자가항체가 객혈·빈혈과 함께 있을 때 정답이 된다.\n  - ② 폐랑게르한스세포조직구증은 흡연 젊은 성인에서 CD1a·랑게린 양성 세포가 위쪽 폐에 결절·낭을 만들 때 정답이 되며 자가항체 질환이 아니다.\n  - ④ 과민폐렴은 새 깃털·곰팡이 같은 흡입 항원에 대한 면역반응이 원인이며, 노출 뒤 반복되는 기침·열과 세기관지 주위 육아종이 있을 때 정답이 된다.\n  - ⑤ 만성 호산구폐렴은 말초·기관지폐포세척액 호산구 증가와 폐 바깥쪽 음영(폐부종의 역상)이 있을 때 정답이 되며 대식세포 기능 억제와 무관하다.\n- 함정: 갈색 세포를 모두 제2형 폐포세포로 보고 「계면활성물질 결핍」만 떠올리는 것 — 폐포 안에 떠 있는 큰 세포는 대식세포이고, 그 기능이 막히면 물질이 「쌓이는」 질환이 된다.\n- 학습목표: 폐 조직 면역염색에서 폐포 공간 안에 떠 있는 큰 양성 세포를 폐포 대식세포로 읽고, GM-CSF 자가항체가 이 세포의 계면활성물질 제거를 막아 폐포단백증을 일으킴을 연결한다\n- 근거·출처: Trapnell BC, Nakata K, Bonella F, et al. Pulmonary alveolar proteinosis. Nat Rev Dis Primers 2019;5:16 · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 15: The Lung\n\n## 출처\n- Human Protein Atlas, NAPSA / Lung (CC BY 4.0), https://images.proteinatlas.org/9591/27119_A_1_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "갈색으로 진하게 염색된 세포는 폐포벽에서 떨어져 폐포 공간 안에 떠 있는 크고 둥근 세포 — 폐포 대식세포다(벽에 붙은 입방형 제2형 폐포세포는 더 옅다). 폐포 대식세포는 GM-CSF 신호로 성숙해 쓰고 남은 계면활성물질을 먹어 치운다. GM-CSF 에 대한 자가항체가 생기면 이 제거가 막혀 폐포 안에 PAS 양성 지단백 물질이 쌓이는 자가면역 폐포단백증이 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>계면활성물질의 생애</b>: 제2형 폐포세포가 층판소체로 계면활성물질을 만들어 분비하고, 쓰고 난 물질의 일부는 제2형 세포가 다시 흡수하며 나머지는 <b>폐포 대식세포</b>가 먹어 분해한다. 이 염색 단백(napsin A)은 계면활성 단백 B 의 전구체를 자르는 효소라 두 세포 모두에 있다.<br> <b>GM-CSF 가 열쇠인 이유</b>: 폐포 대식세포는 GM-CSF → 전사인자 PU.1 신호로 성숙해야 계면활성물질을 분해할 수 있다. 성인 폐포단백증의 약 90 % 는 <b>항 GM-CSF 자가항체</b>가 이 신호를 막는 자가면역형이다. 대식세포는 거품 모양으로 부풀고, 폐포는 PAS 양성 과립성 물질로 찬다.<br> <b>임상 연결</b>: 서서히 진행하는 호흡곤란, CT 의 「미친 포장도로(crazy-paving)」 양상, 기관지폐포세척액이 우윳빛. 치료는 전폐 세척과 흡입 GM-CSF 다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">폐포단백증(정답)</th><th>미만성 폐포출혈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>자가항체의 표적</td><td><b>GM-CSF — 대식세포 성숙 신호</b></td><td>사구체·폐포 기저막(항 GBM), 호중구 효소(ANCA)</td></tr> <tr><td>대식세포의 모습</td><td>지단백 물질로 부푼 거품 세포</td><td>혈철소를 먹은 대식세포(철 염색 양성)</td></tr> <tr><td>폐포 안 물질</td><td>PAS 양성 지단백, 우윳빛 세척액</td><td>적혈구, 갈수록 붉어지는 세척액</td></tr> </tbody></table> 둘 다 폐포 안 대식세포가 주인공이지만, 대식세포 「기능」이 막히는 것은 폐포단백증이고 폐포출혈에서 대식세포는 피를 치우는 정상 기능을 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 미만성 폐포출혈은 항 GBM 항체·ANCA 혈관염처럼 기저막이나 혈관을 표적으로 하는 자가항체가 객혈·빈혈과 함께 있을 때 정답이 된다.\n② 폐랑게르한스세포조직구증은 흡연 젊은 성인에서 CD1a·랑게린 양성 세포가 위쪽 폐에 결절·낭을 만들 때 정답이 되며 자가항체 질환이 아니다.\n④ 과민폐렴은 새 깃털·곰팡이 같은 흡입 항원에 대한 면역반응이 원인이며, 노출 뒤 반복되는 기침·열과 세기관지 주위 육아종이 있을 때 정답이 된다.\n⑤ 만성 호산구폐렴은 말초·기관지폐포세척액 호산구 증가와 폐 바깥쪽 음영(폐부종의 역상)이 있을 때 정답이 되며 대식세포 기능 억제와 무관하다."
+   },
+   {
+    "k": "함정",
+    "v": "갈색 세포를 모두 제2형 폐포세포로 보고 「계면활성물질 결핍」만 떠올리는 것 — 폐포 안에 떠 있는 큰 세포는 대식세포이고, 그 기능이 막히면 물질이 「쌓이는」 질환이 된다."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐 조직 면역염색에서 폐포 공간 안에 떠 있는 큰 양성 세포를 폐포 대식세포로 읽고, GM-CSF 자가항체가 이 세포의 계면활성물질 제거를 막아 폐포단백증을 일으킴을 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Trapnell BC, Nakata K, Bonella F, et al. Pulmonary alveolar proteinosis. Nat Rev Dis Primers 2019;5:16 · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 15: The Lung ## 출처 Human Protein Atlas, NAPSA / Lung (CC BY 4.0), https://images.proteinatlas.org/9591/27119_A_1_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "폐포 공간 안의 큰 양성 세포는 폐포 대식세포이고, GM-CSF 자가항체가 그 기능을 막으면 폐포단백증이 된다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "폐포출혈의 자가항체는 기저막·혈관을 표적으로 하고 대식세포 기능은 정상이다 — 대식세포 성숙 신호를 막는 것은 GM-CSF 자가항체",
+   "steps": 2,
+   "chain": [
+    "영상: 폐포 공간 안에 떠 있는 크고 둥근 갈색 세포 → 폐포 대식세포",
+    "대식세포의 계면활성물질 제거를 자가항체(GM-CSF)가 막음 → 폐포단백증"
+   ],
+   "key": [
+    {
+     "item": "영상: 폐포 공간 안에 떠 있는 크고 둥근 진한 갈색 세포",
+     "why": "폐포 대식세포 — 질문의 대상 세포",
+     "also": []
+    },
+    {
+     "item": "자가항체로 억제될 때",
+     "why": "자가면역 폐포단백증(항 GM-CSF)을 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 폐포벽에 붙은 입방형 세포는 더 옅게 염색",
+     "why": "제2형 폐포세포가 아니라 대식세포를 묻는다는 것을 가른다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "손상되지 않은 가장자리 폐 조직",
+     "why": "정상 폐의 세포 분포를 보는 검체라는 설명 — 답을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "담배는 피우지 않는다",
+     "why": "흡연 관련 질환(랑게르한스세포조직구증) 쪽 연상을 줄이지만 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "폐포 안에 떠 있는 큰 갈색 세포는 폐포 대식세포다. GM-CSF 자가항체가 대식세포의 계면활성물질 제거를 막으면 자가면역 폐포단백증이 된다.",
+   "switch": {
+    "choice": "A",
+    "condition": "질문이 「기저막을 표적으로 한 자가항체로 객혈과 함께 이 세포가 혈철소로 차는 질환」을 물었다면 미만성 폐포출혈이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0466.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색 발색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000131400-NAPSA/tissue/Lung",
+   "asset_id": "HPA-NAPSA_27119_A_1_4",
+   "text": "Human Protein Atlas, NAPSA / Lung (CC BY 4.0), https://images.proteinatlas.org/9591/27119_A_1_4.jpg"
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0473",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "호흡기 — 깨우기 힘든 상태로 발견된 젊은 남성의 동맥혈가스",
+  "type": "호흡기 — 깨우기 힘든 상태로 발견된 젊은 남성의 동맥혈가스",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-28",
+  "vignette": "A 34-year-old man is brought to the emergency department 40 minutes after his roommate found him difficult to arouse. Two empty bottles of oxycodone are found next to him. He has no history of lung disease and does not smoke. His respirations are 6/min and shallow, pulse is 64/min, and blood pressure is 112/70 mm Hg. He responds only to painful stimuli, and the pupils are pinpoint. Breath sounds are clear bilaterally with no crackles. Arterial blood gas analysis while breathing room air at sea level shows a pH of 7.18, Paco2 of 72 mm Hg, Pao2 of 52 mm Hg, and HCO3- of 26 mEq/L. A chest x-ray shows no abnormalities.",
+  "question": "Which of the following is the most likely primary mechanism of this patient's hypoxemia?",
+  "options": [
+   "Ventilation-perfusion mismatch",
+   "Right-to-left shunt",
+   "Diffusion impairment",
+   "Low inspired oxygen tension",
+   "Alveolar hypoventilation"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Alveolar Po2 = 0.21 × (760 − 47) − Paco2/0.8 ≈ 150 − 72/0.8 = 60 mm Hg. The A–a gradient is 60 − 52 = 8 mm Hg, which is normal (expected about age/4 + 4 ≈ 12 or less). Hypoxemia with a normal A–a gradient and a high Paco2 at sea level means the lungs themselves exchange gas normally; the opioid-depressed respiratory drive has lowered alveolar ventilation, so CO2 rises and displaces oxygen in the alveoli.\n- 원리: <b>The alveolar gas equation</b>: PAo2 = Fio2 × (Patm − PH2O) − Paco2/R. At sea level on room air, the first term is about 150 mm Hg and R ≈ 0.8. Every 1 mm Hg rise in Paco2 lowers alveolar Po2 by about 1.25 mm Hg — so a Paco2 of 72 alone pulls alveolar Po2 down to about 60.<br> <b>Reading the A–a gradient</b>: a normal gradient (≤ 10–15 mm Hg in young adults) means oxygen moves from alveolus to blood normally; the problem is how much fresh gas reaches the alveoli (hypoventilation) or how much oxygen is in the inspired air (altitude). A widened gradient points into the lung — V/Q mismatch, shunt, or diffusion limitation.<br> <b>Telling the two normal-gradient causes apart</b>: hypoventilation raises Paco2; high altitude lowers Paco2 because the hypoxic drive makes the person hyperventilate. Supplemental oxygen corrects both, but the real fix here is naloxone or assisted ventilation.\n- 비교: <table><thead><tr><th style=\"width:22%\">Mechanism</th><th style=\"width:39%\">Hypoventilation (answer)</th><th>V/Q mismatch (closest distractor — e.g., aspiration)</th></tr></thead><tbody> <tr><td>A–a gradient</td><td><b>Normal — here 60 − 52 = 8 mm Hg</b></td><td>Increased</td></tr> <tr><td>Paco2</td><td>High (72 mm Hg)</td><td>Normal or low (unless very severe)</td></tr> <tr><td>Chest x-ray / auscultation</td><td>Clear</td><td>Infiltrate, crackles, wheeze</td></tr> </tbody></table> If this patient later aspirated, the gradient would widen — the same calculation would then show a second, lung-based mechanism.\n- 오답 이유:\n  - (A) Ventilation-perfusion mismatch is the answer when the A–a gradient is widened with an abnormal lung exam or x-ray, such as aspiration pneumonia or COPD.\n  - (B) Right-to-left shunt is the answer when the A–a gradient is wide and hypoxemia barely improves with 100% oxygen, as in ARDS or an intracardiac shunt.\n  - (C) Diffusion impairment is the answer in interstitial lung disease, where the A–a gradient widens and desaturation worsens with exercise.\n  - (D) Low inspired oxygen tension is the answer at high altitude, where the A–a gradient is normal but Paco2 is low from hyperventilation, not high.\n- 함정: Assuming that any overdose with hypoxemia must have aspiration (V/Q mismatch) — the calculated A–a gradient of 8 mm Hg is normal, so hypoventilation alone explains it.\n- 학습목표: 실내공기 동맥혈가스로 폐포 기체 방정식을 계산해 정상 폐포-동맥 산소분압차를 확인하고, 오피오이드 과량의 저산소혈증을 폐포 저환기로 설명한다\n- 근거·출처: West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. Wolters Kluwer; 2021. Chapter 5: Ventilation-perfusion relationships · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 285: Disturbances of respiratory function",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Alveolar Po2 = 0.21 × (760 − 47) − Paco2/0.8 ≈ 150 − 72/0.8 = 60 mm Hg. The A–a gradient is 60 − 52 = 8 mm Hg, which is normal (expected about age/4 + 4 ≈ 12 or less). Hypoxemia with a normal A–a gradient and a high Paco2 at sea level means the lungs themselves exchange gas normally; the opioid-depressed respiratory drive has lowered alveolar ventilation, so CO2 rises and displaces oxygen in the alveoli."
+   },
+   {
+    "k": "원리",
+    "v": "<b>The alveolar gas equation</b>: PAo2 = Fio2 × (Patm − PH2O) − Paco2/R. At sea level on room air, the first term is about 150 mm Hg and R ≈ 0.8. Every 1 mm Hg rise in Paco2 lowers alveolar Po2 by about 1.25 mm Hg — so a Paco2 of 72 alone pulls alveolar Po2 down to about 60.<br> <b>Reading the A–a gradient</b>: a normal gradient (≤ 10–15 mm Hg in young adults) means oxygen moves from alveolus to blood normally; the problem is how much fresh gas reaches the alveoli (hypoventilation) or how much oxygen is in the inspired air (altitude). A widened gradient points into the lung — V/Q mismatch, shunt, or diffusion limitation.<br> <b>Telling the two normal-gradient causes apart</b>: hypoventilation raises Paco2; high altitude lowers Paco2 because the hypoxic drive makes the person hyperventilate. Supplemental oxygen corrects both, but the real fix here is naloxone or assisted ventilation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Mechanism</th><th style=\"width:39%\">Hypoventilation (answer)</th><th>V/Q mismatch (closest distractor — e.g., aspiration)</th></tr></thead><tbody> <tr><td>A–a gradient</td><td><b>Normal — here 60 − 52 = 8 mm Hg</b></td><td>Increased</td></tr> <tr><td>Paco2</td><td>High (72 mm Hg)</td><td>Normal or low (unless very severe)</td></tr> <tr><td>Chest x-ray / auscultation</td><td>Clear</td><td>Infiltrate, crackles, wheeze</td></tr> </tbody></table> If this patient later aspirated, the gradient would widen — the same calculation would then show a second, lung-based mechanism."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ventilation-perfusion mismatch is the answer when the A–a gradient is widened with an abnormal lung exam or x-ray, such as aspiration pneumonia or COPD.\n(B) Right-to-left shunt is the answer when the A–a gradient is wide and hypoxemia barely improves with 100% oxygen, as in ARDS or an intracardiac shunt.\n(C) Diffusion impairment is the answer in interstitial lung disease, where the A–a gradient widens and desaturation worsens with exercise.\n(D) Low inspired oxygen tension is the answer at high altitude, where the A–a gradient is normal but Paco2 is low from hyperventilation, not high."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming that any overdose with hypoxemia must have aspiration (V/Q mismatch) — the calculated A–a gradient of 8 mm Hg is normal, so hypoventilation alone explains it."
+   },
+   {
+    "k": "학습목표",
+    "v": "실내공기 동맥혈가스로 폐포 기체 방정식을 계산해 정상 폐포-동맥 산소분압차를 확인하고, 오피오이드 과량의 저산소혈증을 폐포 저환기로 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. Wolters Kluwer; 2021. Chapter 5: Ventilation-perfusion relationships · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 285: Disturbances of respiratory function"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "폐포 기체 방정식으로 구한 폐포-동맥 산소분압차가 8 mm Hg 로 정상이고 Paco2 가 높으므로 저산소혈증은 폐포 저환기 때문이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "A–a 차 정상(8 mm Hg)·청진과 흉부 X선 정상 — 환기-관류 불균형이면 차가 벌어진다",
+   "steps": 3,
+   "chain": [
+    "PAo2 = 150 − 72/0.8 ≈ 60 mm Hg",
+    "A–a 차 = 60 − 52 = 8 mm Hg → 정상",
+    "정상 차 + Paco2 상승 + 해수면 → 폐포 저환기(오피오이드 호흡 억제)"
+   ],
+   "key": [
+    {
+     "item": "Paco2 of 72 mm Hg",
+     "why": "폐포 기체 방정식의 입력값 — 고이산화탄소혈증",
+     "also": []
+    },
+    {
+     "item": "Pao2 of 52 mm Hg",
+     "why": "A–a 차 계산의 입력값",
+     "also": []
+    },
+    {
+     "item": "while breathing room air at sea level",
+     "why": "Fio2 0.21·대기압 760 — 흡입 산소분압 저하를 배제하는 조건",
+     "also": []
+    },
+    {
+     "item": "respirations are 6/min and shallow",
+     "why": "환기 감소의 진찰 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Breath sounds are clear bilaterally with no crackles",
+     "why": "흡인·폐부종에 의한 환기-관류 불균형 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "A chest x-ray shows no abnormalities",
+     "why": "폐 실질 질환 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "HCO3- of 26 mEq/L",
+     "why": "보상 전 급성 호흡산증 — 기전 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "the pupils are pinpoint",
+     "why": "오피오이드 중독의 단서 — 원인은 알려 주지만 계산이 답을 정한다",
+     "also": []
+    }
+   ],
+   "summary": "실내공기·해수면에서 폐포 산소분압은 약 60 mm Hg, A–a 차는 8 mm Hg 로 정상이다. Paco2 가 높고 폐가 정상이므로 저산소혈증은 오피오이드에 의한 폐포 저환기 때문이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 환자의 흉부 X선에 오른쪽 아래엽 침윤이 생기고 A–a 차가 40 mm Hg 로 벌어졌다면 환기-관류 불균형(흡인)이 주된 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0472",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "안과 — 콘택트렌즈 착용자의 한쪽 눈 통증·충혈",
+  "type": "안과 — 콘택트렌즈 착용자의 한쪽 눈 통증·충혈",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-28",
+  "vignette": "A 24-year-old woman comes to the emergency department because of pain, redness, tearing, and sensitivity to light in her right eye for 1 day. She wears soft contact lenses and often sleeps in them. She has no history of eye surgery or cold sores. Visual acuity is 20/60 in the right eye and 20/20 in the left eye. Examination of the right eye shows conjunctival injection most prominent around the limbus and a 2-mm white corneal infiltrate with an overlying epithelial defect that stains with fluorescein. No dendritic pattern is seen. There are a few cells in the anterior chamber and no hypopyon. The contact lens is removed, and corneal scrapings are sent for Gram stain and culture.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Topical fluoroquinolone drops every hour",
+   "Eye patching for 24 hours",
+   "Topical corticosteroid drops",
+   "Oral acyclovir",
+   "Topical erythromycin ointment"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A contact lens wearer who sleeps in lenses has a white corneal infiltrate with an overlying epithelial defect — bacterial keratitis until proven otherwise, and Pseudomonas aeruginosa is the organism to cover. After scrapings, start an intensive antipseudomonal topical antibiotic (a fluoroquinolone such as moxifloxacin, initially every hour) and arrange ophthalmology follow-up within 24 hours. Patching is contraindicated.\n- 원리: <b>Why contact lenses change the organism</b>: overnight wear starves the epithelium of oxygen, causes microscopic breaks, and lets biofilm on the lens and case seed the cornea. Pseudomonas aeruginosa — which can melt the cornea within a day or two — is the leading cause; Acanthamoeba is a rarer cause linked to tap water.<br> <b>Why \"infiltrate\" matters</b>: a simple abrasion is a clear epithelial defect. A white or gray opacity in the stroma beneath it means white cells have entered — an ulcer (keratitis), which threatens vision and needs culture and frequent antibiotic drops.<br> <b>Why no patch</b>: a patch creates a warm, closed, low-oxygen space where Pseudomonas grows faster and hides worsening. Corticosteroids are withheld at first because they slow epithelial healing and worsen fungal, herpetic, or uncontrolled bacterial infection.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Contact-lens keratitis (answer)</th><th>Non-lens corneal abrasion (patching / erythromycin)</th></tr></thead><tbody> <tr><td>Cornea</td><td><b>White stromal infiltrate + epithelial defect</b></td><td>Clear epithelial defect only</td></tr> <tr><td>Antibiotic</td><td>Antipseudomonal fluoroquinolone, hourly at first</td><td>Erythromycin ointment or similar, few times daily</td></tr> <tr><td>Patch</td><td>Contraindicated</td><td>Not needed, but not dangerous in small abrasions</td></tr> </tbody></table> Any contact-lens wearer with an abrasion gets antipseudomonal coverage and no patch — even before an infiltrate appears.\n- 오답 이유:\n  - (B) Patching was once used for small traumatic abrasions in non-lens wearers; in lens wearers or with an infiltrate it promotes Pseudomonas growth.\n  - (C) Topical corticosteroids may be added by an ophthalmologist after cultures and clinical improvement on antibiotics, never as the first treatment.\n  - (D) Oral acyclovir treats herpes simplex or zoster keratitis, suggested by a dendritic ulcer, vesicles, or prior cold sores — none are present.\n  - (E) Topical erythromycin ointment is reasonable for a simple abrasion in a non-lens wearer, but it does not cover Pseudomonas aeruginosa.\n- 함정: Treating it like an ordinary abrasion (patch or erythromycin) — a contact-lens wearer with an infiltrate needs antipseudomonal drops and no patch.\n- 학습목표: 콘택트렌즈 착용자의 각막 침윤과 상피 결손을 세균 각막염(녹농균 포함)으로 보고, 가리개를 하지 않고 녹농균을 덮는 국소 항생제를 자주 점안한다\n- 근거·출처: American Academy of Ophthalmology Cornea/External Disease Panel. Bacterial Keratitis Preferred Practice Pattern. Ophthalmology 2024;131:P87-P133 · Lin A, Rhee MK, Akpek EK, et al. Bacterial keratitis Preferred Practice Pattern. Ophthalmology 2019;126:P1-P55",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A contact lens wearer who sleeps in lenses has a white corneal infiltrate with an overlying epithelial defect — bacterial keratitis until proven otherwise, and Pseudomonas aeruginosa is the organism to cover. After scrapings, start an intensive antipseudomonal topical antibiotic (a fluoroquinolone such as moxifloxacin, initially every hour) and arrange ophthalmology follow-up within 24 hours. Patching is contraindicated."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why contact lenses change the organism</b>: overnight wear starves the epithelium of oxygen, causes microscopic breaks, and lets biofilm on the lens and case seed the cornea. Pseudomonas aeruginosa — which can melt the cornea within a day or two — is the leading cause; Acanthamoeba is a rarer cause linked to tap water.<br> <b>Why \"infiltrate\" matters</b>: a simple abrasion is a clear epithelial defect. A white or gray opacity in the stroma beneath it means white cells have entered — an ulcer (keratitis), which threatens vision and needs culture and frequent antibiotic drops.<br> <b>Why no patch</b>: a patch creates a warm, closed, low-oxygen space where Pseudomonas grows faster and hides worsening. Corticosteroids are withheld at first because they slow epithelial healing and worsen fungal, herpetic, or uncontrolled bacterial infection."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Contact-lens keratitis (answer)</th><th>Non-lens corneal abrasion (patching / erythromycin)</th></tr></thead><tbody> <tr><td>Cornea</td><td><b>White stromal infiltrate + epithelial defect</b></td><td>Clear epithelial defect only</td></tr> <tr><td>Antibiotic</td><td>Antipseudomonal fluoroquinolone, hourly at first</td><td>Erythromycin ointment or similar, few times daily</td></tr> <tr><td>Patch</td><td>Contraindicated</td><td>Not needed, but not dangerous in small abrasions</td></tr> </tbody></table> Any contact-lens wearer with an abrasion gets antipseudomonal coverage and no patch — even before an infiltrate appears."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Patching was once used for small traumatic abrasions in non-lens wearers; in lens wearers or with an infiltrate it promotes Pseudomonas growth.\n(C) Topical corticosteroids may be added by an ophthalmologist after cultures and clinical improvement on antibiotics, never as the first treatment.\n(D) Oral acyclovir treats herpes simplex or zoster keratitis, suggested by a dendritic ulcer, vesicles, or prior cold sores — none are present.\n(E) Topical erythromycin ointment is reasonable for a simple abrasion in a non-lens wearer, but it does not cover Pseudomonas aeruginosa."
+   },
+   {
+    "k": "함정",
+    "v": "Treating it like an ordinary abrasion (patch or erythromycin) — a contact-lens wearer with an infiltrate needs antipseudomonal drops and no patch."
+   },
+   {
+    "k": "학습목표",
+    "v": "콘택트렌즈 착용자의 각막 침윤과 상피 결손을 세균 각막염(녹농균 포함)으로 보고, 가리개를 하지 않고 녹농균을 덮는 국소 항생제를 자주 점안한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American Academy of Ophthalmology Cornea/External Disease Panel. Bacterial Keratitis Preferred Practice Pattern. Ophthalmology 2024;131:P87-P133 · Lin A, Rhee MK, Akpek EK, et al. Bacterial keratitis Preferred Practice Pattern. Ophthalmology 2019;126:P1-P55"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "콘택트렌즈를 끼고 자는 사람의 각막 침윤과 상피 결손은 세균 각막염이므로 녹농균을 덮는 국소 플루오로퀴놀론을 자주 점안한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "렌즈 착용자 — 녹농균 위험 때문에 가리개는 금기다",
+   "steps": 2,
+   "chain": [
+    "렌즈를 끼고 잠 + 흰 각막 침윤 + 상피 결손 → 세균 각막염(녹농균)",
+    "배양 뒤 국소 플루오로퀴놀론을 매시간, 가리개 금지"
+   ],
+   "key": [
+    {
+     "item": "She wears soft contact lenses and often sleeps in them",
+     "why": "녹농균 각막염의 가장 큰 위험인자",
+     "also": []
+    },
+    {
+     "item": "a 2-mm white corneal infiltrate with an overlying epithelial defect",
+     "why": "단순 찰과상이 아니라 각막염",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "No dendritic pattern is seen",
+     "why": "단순포진 각막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She has no history of eye surgery or cold sores",
+     "why": "헤르페스 재발 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no hypopyon",
+     "why": "아주 심하지는 않다 — 그래도 집중 점안이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Visual acuity is 20/60 in the right eye",
+     "why": "시력 저하 — 긴급성을 보여 주지만 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "콘택트렌즈를 끼고 자는 사람에게 생긴 흰 각막 침윤과 상피 결손은 세균 각막염이다. 배양 뒤 녹농균을 덮는 국소 플루오로퀴놀론을 매시간 점안하고 가리개는 하지 않는다.",
+   "switch": {
+    "choice": "E",
+    "condition": "렌즈를 끼지 않는 사람이 나뭇가지에 긁혀 생긴, 침윤 없는 작은 각막 찰과상이었다면 에리트로마이신 안연고가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0471",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "소화기·간담췌 — 폐렴 항생제 치료 뒤 입원 중 생긴 물설사",
+  "type": "소화기·간담췌 — 폐렴 항생제 치료 뒤 입원 중 생긴 물설사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-28",
+  "vignette": "A 71-year-old woman is evaluated in the hospital because of 6 episodes of watery diarrhea daily for the past 2 days. Eight days ago, she was admitted for community-acquired pneumonia and treated with ceftriaxone and azithromycin, which were completed 2 days ago. She has never had a similar illness. Her temperature is 38.2°C (100.8°F), pulse is 98/min, and blood pressure is 124/76 mm Hg. The abdomen is soft and mildly tender in both lower quadrants without distention, rigidity, or guarding; bowel sounds are present. Leukocyte count is 18,600/mm3, serum creatinine is 1.7 mg/dL (baseline 0.9 mg/dL), and serum lactate is 1.4 mmol/L. Stool testing is positive for Clostridioides difficile toxin. An abdominal x-ray shows no colonic dilation.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Loperamide",
+   "Oral rifaximin",
+   "Oral vancomycin",
+   "Oral metronidazole",
+   "Intravenous vancomycin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: This is a first episode of Clostridioides difficile infection after broad-spectrum antibiotics. A leukocyte count of 15,000/mm3 or more or a serum creatinine above 1.5 mg/dL defines severe disease; there is no hypotension, ileus, or megacolon, so it is not fulminant. Oral vancomycin (or fidaxomicin) is the treatment; it stays in the colonic lumen at high concentration, where the organism lives.\n- 원리: <b>Why the route matters</b>: C. difficile lives and makes toxin in the colonic lumen, not in tissue. Oral vancomycin is barely absorbed, so it reaches stool concentrations far above the organism's MIC. Intravenous vancomycin is not secreted into the colon and does nothing for this infection.<br> <b>Severity defines the plan</b>: nonsevere — leukocytes &lt; 15,000/mm3 and creatinine ≤ 1.5 mg/dL; severe — either threshold crossed; fulminant — hypotension or shock, ileus, or megacolon. First episodes (nonsevere or severe) are treated with fidaxomicin or oral vancomycin for 10 days. Fulminant disease adds higher-dose oral (± rectal) vancomycin plus intravenous metronidazole and a surgical consultation.<br> <b>Why metronidazole fell out of favor</b>: it is absorbed in the small intestine, reaches the colon mainly through inflamed mucosa, and had lower cure rates in trials, especially in severe disease.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Oral vancomycin (answer)</th><th>Oral metronidazole (closest distractor)</th></tr></thead><tbody> <tr><td>Colonic drug level</td><td><b>Very high — not absorbed</b></td><td>Low — absorbed proximally</td></tr> <tr><td>Place in current guidelines</td><td>First episode, nonsevere or severe (with fidaxomicin)</td><td>Only for a nonsevere first episode when vancomycin and fidaxomicin are unavailable</td></tr> <tr><td>This patient</td><td>WBC 18,600/mm3 and creatinine 1.7 mg/dL = severe</td><td>Not appropriate for severe disease</td></tr> </tbody></table> Intravenous metronidazole is added (not substituted) only when disease is fulminant.\n- 오답 이유:\n  - (A) Loperamide may help noninfectious diarrhea, but in C. difficile infection it slows toxin clearance and can precipitate toxic megacolon.\n  - (B) Oral rifaximin is used for hepatic encephalopathy and traveler's diarrhea, and only as an adjunct after vancomycin for multiple recurrences.\n  - (D) Oral metronidazole is acceptable only for a nonsevere first episode when neither oral vancomycin nor fidaxomicin can be obtained.\n  - (E) Intravenous vancomycin treats bloodstream or tissue gram-positive infections such as MRSA bacteremia; it does not reach the colonic lumen.\n- 함정: Choosing metronidazole out of habit — current guidelines reserve it for nonsevere disease when vancomycin or fidaxomicin is unavailable, and this case meets severe criteria.\n- 학습목표: 항생제 치료 뒤 첫 클로스트리디오이데스 디피실레 감염에서 백혈구 ≥ 15,000/mm³ 또는 크레아티닌 > 1.5 mg/dL 이면 중증으로 분류하고 경구 반코마이신(또는 피닥소마이신)으로 치료한다\n- 근거·출처: Johnson S, Lavergne V, Skinner AM, et al. Clinical practice guideline by IDSA and SHEA: 2021 focused update guidelines on management of Clostridioides difficile infection in adults. Clin Infect Dis 2021;73:e1029-e1044 · McDonald LC, Gerding DN, Johnson S, et al. Clinical practice guidelines for Clostridium difficile infection in adults and children: 2017 update by IDSA and SHEA. Clin Infect Dis 2018;66:e1-e48",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "This is a first episode of Clostridioides difficile infection after broad-spectrum antibiotics. A leukocyte count of 15,000/mm3 or more or a serum creatinine above 1.5 mg/dL defines severe disease; there is no hypotension, ileus, or megacolon, so it is not fulminant. Oral vancomycin (or fidaxomicin) is the treatment; it stays in the colonic lumen at high concentration, where the organism lives."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the route matters</b>: C. difficile lives and makes toxin in the colonic lumen, not in tissue. Oral vancomycin is barely absorbed, so it reaches stool concentrations far above the organism's MIC. Intravenous vancomycin is not secreted into the colon and does nothing for this infection.<br> <b>Severity defines the plan</b>: nonsevere — leukocytes &lt; 15,000/mm3 and creatinine ≤ 1.5 mg/dL; severe — either threshold crossed; fulminant — hypotension or shock, ileus, or megacolon. First episodes (nonsevere or severe) are treated with fidaxomicin or oral vancomycin for 10 days. Fulminant disease adds higher-dose oral (± rectal) vancomycin plus intravenous metronidazole and a surgical consultation.<br> <b>Why metronidazole fell out of favor</b>: it is absorbed in the small intestine, reaches the colon mainly through inflamed mucosa, and had lower cure rates in trials, especially in severe disease."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Oral vancomycin (answer)</th><th>Oral metronidazole (closest distractor)</th></tr></thead><tbody> <tr><td>Colonic drug level</td><td><b>Very high — not absorbed</b></td><td>Low — absorbed proximally</td></tr> <tr><td>Place in current guidelines</td><td>First episode, nonsevere or severe (with fidaxomicin)</td><td>Only for a nonsevere first episode when vancomycin and fidaxomicin are unavailable</td></tr> <tr><td>This patient</td><td>WBC 18,600/mm3 and creatinine 1.7 mg/dL = severe</td><td>Not appropriate for severe disease</td></tr> </tbody></table> Intravenous metronidazole is added (not substituted) only when disease is fulminant."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Loperamide may help noninfectious diarrhea, but in C. difficile infection it slows toxin clearance and can precipitate toxic megacolon.\n(B) Oral rifaximin is used for hepatic encephalopathy and traveler's diarrhea, and only as an adjunct after vancomycin for multiple recurrences.\n(D) Oral metronidazole is acceptable only for a nonsevere first episode when neither oral vancomycin nor fidaxomicin can be obtained.\n(E) Intravenous vancomycin treats bloodstream or tissue gram-positive infections such as MRSA bacteremia; it does not reach the colonic lumen."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing metronidazole out of habit — current guidelines reserve it for nonsevere disease when vancomycin or fidaxomicin is unavailable, and this case meets severe criteria."
+   },
+   {
+    "k": "학습목표",
+    "v": "항생제 치료 뒤 첫 클로스트리디오이데스 디피실레 감염에서 백혈구 ≥ 15,000/mm³ 또는 크레아티닌 > 1.5 mg/dL 이면 중증으로 분류하고 경구 반코마이신(또는 피닥소마이신)으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Johnson S, Lavergne V, Skinner AM, et al. Clinical practice guideline by IDSA and SHEA: 2021 focused update guidelines on management of Clostridioides difficile infection in adults. Clin Infect Dis 2021;73:e1029-e1044 · McDonald LC, Gerding DN, Johnson S, et al. Clinical practice guidelines for Clostridium difficile infection in adults and children: 2017 update by IDSA and SHEA. Clin Infect Dis 2018;66:e1-e48"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "항생제 뒤 첫 디피실레 감염이 백혈구 18,600·크레아티닌 1.7 로 중증(전격성 아님)이므로 경구 반코마이신으로 치료한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "중증 기준(백혈구 ≥ 15,000 또는 크레아티닌 > 1.5) 충족 — 메트로니다졸은 중증에 쓰지 않는다",
+   "steps": 3,
+   "chain": [
+    "항생제 뒤 물설사 + 독소 양성 → 디피실레 감염 첫 발병",
+    "백혈구 18,600·크레아티닌 1.7, 저혈압·장폐색·거대결장 없음 → 중증, 전격성 아님",
+    "중증 첫 발병 → 경구 반코마이신(또는 피닥소마이신)"
+   ],
+   "key": [
+    {
+     "item": "Leukocyte count is 18,600/mm3",
+     "why": "중증 기준(≥ 15,000)",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "serum creatinine is 1.7 mg/dL (baseline 0.9 mg/dL)",
+     "why": "중증 기준(> 1.5)",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "positive for Clostridioides difficile toxin",
+     "why": "진단 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "blood pressure is 124/76 mm Hg",
+     "why": "쇼크 없음 — 전격성 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "An abdominal x-ray shows no colonic dilation",
+     "why": "중독성 거대결장 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has never had a similar illness",
+     "why": "첫 발병 — 재발 요법(테이퍼·분변 이식)이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "serum lactate is 1.4 mmol/L",
+     "why": "정상 젖산 — 전격성을 지지하지 않지만 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "항생제 치료 뒤 첫 디피실레 감염이며, 백혈구 18,600 과 크레아티닌 1.7 로 중증이지만 쇼크·거대결장은 없다. 경구 반코마이신으로 치료한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "백혈구 9,000·크레아티닌 정상의 비중증 첫 발병인데 경구 반코마이신과 피닥소마이신을 모두 구할 수 없다면 경구 메트로니다졸을 쓸 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0470",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "신장·비뇨 — 새 약을 먹은 뒤 생긴 미열·발진과 크레아티닌 상승",
+  "type": "신장·비뇨 — 새 약을 먹은 뒤 생긴 미열·발진과 크레아티닌 상승",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-28",
+  "vignette": "58세 여자가 1주 전부터 생긴 미열과 몸통의 가려운 발진으로 왔다. 3주 전 위식도역류병으로 오메프라졸을 먹기 시작하였다. 다른 약은 먹지 않으며 최근 조영제 검사나 혈관 시술을 받은 적은 없다. 혈압 132/80 mmHg, 맥박 82회/분, 체온 37.8℃이다. 몸통에 붉은 반점구진 발진이 퍼져 있고 옆구리 압통은 없다. 혈액검사: 크레아티닌 2.4 mg/dL(한 달 전 0.8 mg/dL), 백혈구 8,600/μL(호산구 9 %), 보체 C3 정상. 소변검사: 단백 1+, 적혈구 3~5/고배율시야, 백혈구 20~30/고배율시야, 백혈구 원주가 보이고 소변 배양은 음성이다.",
+  "question": "진단으로 가장 적절한 것은?",
+  "options": [
+   "콜레스테롤 색전증",
+   "급성 간질신염",
+   "급성 세관괴사",
+   "급성 신우신염",
+   "연쇄알균감염후 사구체신염"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 오메프라졸을 시작한 지 2~3주 뒤 열·발진·호산구 증가가 생기고, 크레아티닌이 0.8 에서 2.4 mg/dL 로 올랐으며, 소변에 백혈구와 백혈구 원주가 있는데 배양은 음성(무균성 농뇨)이다. 약물에 대한 지연형 과민반응으로 신장 간질에 림프구·호산구가 스며드는 급성 간질신염이다. 원인 약을 끊고, 회복이 늦으면 스테로이드를 고려한다.\n- 원리: <b>무엇이 간질에 일어나는가</b>: 약물(또는 그 대사물)이 세관 기저막·간질 단백에 붙어 새 항원이 되고, T세포 중심의 지연형 과민반응이 생긴다. 간질에 림프구·대식세포·호산구가 스며들고 부종이 생겨 세관이 눌리며 사구체여과율이 떨어진다.<br> <b>소변에 나타나는 흔적</b>: 염증세포가 세관 안으로 새어 나와 <b>백혈구 원주</b>를 만들고, 감염이 없으니 배양은 음성이다. 사구체 질환이 아니라 단백뇨는 대개 1+ 이하, 적혈구는 적다.<br> <b>원인 약</b>: 베타락탐 항생제, 양성자펌프억제제, 비스테로이드소염제, 설폰아마이드, 리팜핀. 양성자펌프억제제·비스테로이드소염제에서는 열·발진·호산구 증가의 「고전적 세 징후」가 드물어 놓치기 쉽다 — 이 환자는 세 가지가 다 있다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">급성 간질신염(정답)</th><th>급성 신우신염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td><b>약물 과민반응(오메프라졸 3주)</b></td><td>상행성 세균 감염</td></tr> <tr><td>소변 배양</td><td>음성 — 무균성 백혈구뇨</td><td>양성(대장균 등)</td></tr> <tr><td>동반 소견</td><td>발진·호산구 증가, 옆구리 압통 없음</td><td>고열·오한·옆구리 압통(늑골척추각 압통)</td></tr> </tbody></table> 백혈구 원주는 둘 다에서 보인다 — 가르는 것은 배양 결과와 약물 노출·발진·호산구다.\n- 오답 이유:\n  - ① 콜레스테롤 색전증은 동맥경화 환자의 혈관조영·심도자 뒤 그물울혈반·발가락 청색증·호산구 증가·낮은 보체가 있을 때 정답이 된다.\n  - ③ 급성 세관괴사는 저혈압·패혈증·조영제·아미노글리코사이드 노출 뒤 흙갈색 과립 원주와 세관 상피세포가 보일 때 정답이 된다.\n  - ④ 급성 신우신염은 고열·오한·늑골척추각 압통과 함께 소변 배양에서 세균이 자라는 백혈구 원주일 때 정답이 된다.\n  - ⑤ 연쇄알균감염후 사구체신염은 인두염·농가진 1~3주 뒤 적혈구 원주·고혈압·부종과 낮은 보체 C3 가 있을 때 정답이 된다.\n- 함정: 백혈구 원주만 보고 신우신염을 고르는 것 — 배양 음성, 약물 시작 뒤 발진·호산구 증가는 급성 간질신염을 가리킨다.\n- 학습목표: 양성자펌프억제제 시작 뒤 열·발진·호산구 증가와 무균성 백혈구뇨·백혈구 원주를 동반한 급성 신손상을 급성 간질신염으로 진단한다\n- 근거·출처: Perazella MA, Markowitz GS. Drug-induced acute interstitial nephritis. Nat Rev Nephrol 2010;6:461-470 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 315: Tubulointerstitial diseases of the kidney",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "오메프라졸을 시작한 지 2~3주 뒤 열·발진·호산구 증가가 생기고, 크레아티닌이 0.8 에서 2.4 mg/dL 로 올랐으며, 소변에 백혈구와 백혈구 원주가 있는데 배양은 음성(무균성 농뇨)이다. 약물에 대한 지연형 과민반응으로 신장 간질에 림프구·호산구가 스며드는 급성 간질신염이다. 원인 약을 끊고, 회복이 늦으면 스테로이드를 고려한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 간질에 일어나는가</b>: 약물(또는 그 대사물)이 세관 기저막·간질 단백에 붙어 새 항원이 되고, T세포 중심의 지연형 과민반응이 생긴다. 간질에 림프구·대식세포·호산구가 스며들고 부종이 생겨 세관이 눌리며 사구체여과율이 떨어진다.<br> <b>소변에 나타나는 흔적</b>: 염증세포가 세관 안으로 새어 나와 <b>백혈구 원주</b>를 만들고, 감염이 없으니 배양은 음성이다. 사구체 질환이 아니라 단백뇨는 대개 1+ 이하, 적혈구는 적다.<br> <b>원인 약</b>: 베타락탐 항생제, 양성자펌프억제제, 비스테로이드소염제, 설폰아마이드, 리팜핀. 양성자펌프억제제·비스테로이드소염제에서는 열·발진·호산구 증가의 「고전적 세 징후」가 드물어 놓치기 쉽다 — 이 환자는 세 가지가 다 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">급성 간질신염(정답)</th><th>급성 신우신염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td><b>약물 과민반응(오메프라졸 3주)</b></td><td>상행성 세균 감염</td></tr> <tr><td>소변 배양</td><td>음성 — 무균성 백혈구뇨</td><td>양성(대장균 등)</td></tr> <tr><td>동반 소견</td><td>발진·호산구 증가, 옆구리 압통 없음</td><td>고열·오한·옆구리 압통(늑골척추각 압통)</td></tr> </tbody></table> 백혈구 원주는 둘 다에서 보인다 — 가르는 것은 배양 결과와 약물 노출·발진·호산구다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 콜레스테롤 색전증은 동맥경화 환자의 혈관조영·심도자 뒤 그물울혈반·발가락 청색증·호산구 증가·낮은 보체가 있을 때 정답이 된다.\n③ 급성 세관괴사는 저혈압·패혈증·조영제·아미노글리코사이드 노출 뒤 흙갈색 과립 원주와 세관 상피세포가 보일 때 정답이 된다.\n④ 급성 신우신염은 고열·오한·늑골척추각 압통과 함께 소변 배양에서 세균이 자라는 백혈구 원주일 때 정답이 된다.\n⑤ 연쇄알균감염후 사구체신염은 인두염·농가진 1~3주 뒤 적혈구 원주·고혈압·부종과 낮은 보체 C3 가 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "백혈구 원주만 보고 신우신염을 고르는 것 — 배양 음성, 약물 시작 뒤 발진·호산구 증가는 급성 간질신염을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "양성자펌프억제제 시작 뒤 열·발진·호산구 증가와 무균성 백혈구뇨·백혈구 원주를 동반한 급성 신손상을 급성 간질신염으로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Perazella MA, Markowitz GS. Drug-induced acute interstitial nephritis. Nat Rev Nephrol 2010;6:461-470 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 315: Tubulointerstitial diseases of the kidney"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "오메프라졸 시작 뒤 열·발진·호산구 증가와 무균성 백혈구뇨·백혈구 원주를 동반한 급성 신손상은 급성 간질신염이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "소변 배양 음성·옆구리 압통 없음·발진과 호산구 증가 — 세균성 신우신염이 아니다",
+   "steps": 2,
+   "chain": [
+    "크레아티닌 0.8 → 2.4 + 백혈구 원주·배양 음성 → 세관간질의 무균성 염증",
+    "오메프라졸 3주 + 열·발진·호산구 증가 → 약물 유발 급성 간질신염"
+   ],
+   "key": [
+    {
+     "item": "3주 전 위식도역류병으로 오메프라졸을 먹기 시작하였다",
+     "why": "급성 간질신염의 흔한 원인 약물과 전형적 잠복기",
+     "also": []
+    },
+    {
+     "item": "백혈구 원주가 보이고 소변 배양은 음성이다",
+     "why": "무균성 세관간질 염증",
+     "also": []
+    },
+    {
+     "item": "호산구 9 %",
+     "why": "과민반응의 단서",
+     "also": []
+    },
+    {
+     "item": "몸통에 붉은 반점구진 발진",
+     "why": "약물 과민반응의 피부 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "옆구리 압통은 없다",
+     "why": "신우신염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "보체 C3 정상",
+     "why": "연쇄알균감염후 사구체신염·콜레스테롤 색전증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "최근 조영제 검사나 혈관 시술을 받은 적은 없다",
+     "why": "조영제 신병증·콜레스테롤 색전증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "오메프라졸을 시작한 뒤 열·발진·호산구 증가와 함께 급성 신손상이 생겼고, 소변은 백혈구 원주가 있는 무균성 농뇨다. 약물 유발 급성 간질신염이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "고열·오한·늑골척추각 압통이 있고 소변 배양에서 대장균이 자랐다면 급성 신우신염이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0469",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "내분비·대사 — 인슐린을 거른 1형 당뇨병 환자의 구토·복통",
+  "type": "내분비·대사 — 인슐린을 거른 1형 당뇨병 환자의 구토·복통",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-28",
+  "vignette": "19세 여자가 이틀 동안 이어진 구토·복통과 심한 갈증으로 응급실에 왔다. 3년 전 1형 당뇨병을 진단받았고 최근 인슐린 주사를 자주 걸렀다. 혈압 98/60 mmHg, 맥박 118회/분, 호흡 28회/분으로 깊고 빠르며, 체온 36.8℃이다. 입안 점막이 말라 있다. 혈액검사: 포도당 520 mg/dL, 나트륨 132 mEq/L, 칼륨 3.1 mEq/L, 염화물 96 mEq/L, 중탄산 8 mEq/L, 크레아티닌 1.3 mg/dL, 혈청 베타-하이드록시뷰티르산 양성. 동맥혈 pH 7.08. 심전도에서 U파가 보인다. 생리식염수 1 L 를 1시간 동안 주입하기 시작하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "지속형 인슐린 피하 주사",
+   "염화칼륨 정맥 보충, 칼륨이 오른 뒤 인슐린 시작",
+   "속효성 인슐린 정맥 지속 주입 즉시 시작",
+   "탄산수소나트륨 정맥 투여",
+   "5 % 포도당 수액으로 교체"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 음이온차 28(132 − 96 − 8)의 대사산증과 케톤으로 당뇨병케톤산증이다. 산증과 인슐린 결핍으로 칼륨이 세포 밖으로 나와 있는데도 혈청 칼륨이 3.1 mEq/L 이면 몸 전체 칼륨은 심하게 부족하다. 이 상태에서 인슐린을 주면 칼륨이 세포 안으로 들어가 치명적 저칼륨혈증(부정맥·호흡근 마비)이 생기므로, 수액과 함께 염화칼륨을 먼저 보충해 3.3 mEq/L 이상이 된 뒤 인슐린을 시작한다.\n- 원리: <b>혈청 칼륨이 몸 전체를 대변하지 못하는 이유</b>: 인슐린 결핍은 Na⁺/K⁺-ATPase 활동을 줄이고, 고혈당의 삼투압이 물과 함께 칼륨을 세포 밖으로 끌어낸다. 그 사이 삼투성 이뇨와 구토로 칼륨은 소변·위액으로 계속 빠져나간다. 그래서 첫 혈청 칼륨은 대개 정상이나 높게 나오고, 몸 전체로는 3~5 mEq/kg 부족하다.<br> <b>인슐린이 칼륨을 옮긴다</b>: 인슐린은 Na⁺/K⁺-ATPase 를 자극해 칼륨을 세포 안으로 넣는다. 처음부터 낮은 칼륨에서 인슐린을 주면 혈청 칼륨이 더 떨어져 부정맥이 생긴다 — 그래서 미국당뇨병학회 지침은 <b>칼륨 < 3.3 이면 인슐린 보류</b>, 3.3~5.2 면 수액에 칼륨을 섞어 인슐린과 함께, > 5.2 면 칼륨 없이 인슐린을 쓴다.<br> <b>U파</b>는 저칼륨혈증의 심전도 신호로, 보충이 급하다는 뜻이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">처음 혈청 칼륨</th><th style=\"width:39%\">칼륨 먼저(정답 — 3.1 mEq/L)</th><th>인슐린 즉시(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기준</td><td><b>&lt; 3.3 mEq/L</b></td><td>≥ 3.3 mEq/L</td></tr> <tr><td>처치</td><td>염화칼륨 20~40 mEq/시간, 인슐린 보류</td><td>인슐린 0.1 U/kg/시간 + 수액에 칼륨 혼합(&gt; 5.2 면 칼륨 없이)</td></tr> <tr><td>위험</td><td>지연이 짧아 안전</td><td>칼륨이 낮을 때 시작하면 치명적 부정맥</td></tr> </tbody></table> 「수액 → 칼륨 확인 → 인슐린」 순서를 기억하면 칼륨이 어느 쪽으로 나와도 대응된다.\n- 오답 이유:\n  - ① 지속형 인슐린 피하 주사는 산증이 풀려 음이온차가 정상화되고 먹을 수 있을 때 정맥 인슐린을 끊기 1~2시간 전에 시작한다.\n  - ③ 인슐린 정맥 지속 주입 즉시 시작은 혈청 칼륨이 3.3 mEq/L 이상일 때 정답이며, 3.3~5.2 이면 수액에 칼륨을 섞어 함께 준다.\n  - ④ 탄산수소나트륨은 pH 가 6.9 미만인 아주 심한 산증에서만 고려하며, 칼륨을 세포 안으로 더 밀어 넣어 이 환자의 저칼륨혈증을 악화시킨다.\n  - ⑤ 5 % 포도당 수액은 인슐린 치료 중 혈당이 200~250 mg/dL 로 내려왔을 때 저혈당을 막으며 케톤 제거를 이어가려고 더하는 단계다.\n- 함정: 당뇨병케톤산증이니 인슐린부터 시작하는 것 — 칼륨이 3.3 mEq/L 미만이면 인슐린이 남은 칼륨을 세포 안으로 넣어 부정맥을 일으킨다.\n- 학습목표: 당뇨병케톤산증 치료 시작 시 혈청 칼륨이 3.3 mEq/L 미만이면 인슐린을 미루고 칼륨부터 보충하는 이유를 안다\n- 근거·출처: Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009;32:1335-1343 · Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care 2024;47:1257-1275",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "음이온차 28(132 − 96 − 8)의 대사산증과 케톤으로 당뇨병케톤산증이다. 산증과 인슐린 결핍으로 칼륨이 세포 밖으로 나와 있는데도 혈청 칼륨이 3.1 mEq/L 이면 몸 전체 칼륨은 심하게 부족하다. 이 상태에서 인슐린을 주면 칼륨이 세포 안으로 들어가 치명적 저칼륨혈증(부정맥·호흡근 마비)이 생기므로, 수액과 함께 염화칼륨을 먼저 보충해 3.3 mEq/L 이상이 된 뒤 인슐린을 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>혈청 칼륨이 몸 전체를 대변하지 못하는 이유</b>: 인슐린 결핍은 Na⁺/K⁺-ATPase 활동을 줄이고, 고혈당의 삼투압이 물과 함께 칼륨을 세포 밖으로 끌어낸다. 그 사이 삼투성 이뇨와 구토로 칼륨은 소변·위액으로 계속 빠져나간다. 그래서 첫 혈청 칼륨은 대개 정상이나 높게 나오고, 몸 전체로는 3~5 mEq/kg 부족하다.<br> <b>인슐린이 칼륨을 옮긴다</b>: 인슐린은 Na⁺/K⁺-ATPase 를 자극해 칼륨을 세포 안으로 넣는다. 처음부터 낮은 칼륨에서 인슐린을 주면 혈청 칼륨이 더 떨어져 부정맥이 생긴다 — 그래서 미국당뇨병학회 지침은 <b>칼륨 < 3.3 이면 인슐린 보류</b>, 3.3~5.2 면 수액에 칼륨을 섞어 인슐린과 함께, > 5.2 면 칼륨 없이 인슐린을 쓴다.<br> <b>U파</b>는 저칼륨혈증의 심전도 신호로, 보충이 급하다는 뜻이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">처음 혈청 칼륨</th><th style=\"width:39%\">칼륨 먼저(정답 — 3.1 mEq/L)</th><th>인슐린 즉시(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기준</td><td><b>&lt; 3.3 mEq/L</b></td><td>≥ 3.3 mEq/L</td></tr> <tr><td>처치</td><td>염화칼륨 20~40 mEq/시간, 인슐린 보류</td><td>인슐린 0.1 U/kg/시간 + 수액에 칼륨 혼합(&gt; 5.2 면 칼륨 없이)</td></tr> <tr><td>위험</td><td>지연이 짧아 안전</td><td>칼륨이 낮을 때 시작하면 치명적 부정맥</td></tr> </tbody></table> 「수액 → 칼륨 확인 → 인슐린」 순서를 기억하면 칼륨이 어느 쪽으로 나와도 대응된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 지속형 인슐린 피하 주사는 산증이 풀려 음이온차가 정상화되고 먹을 수 있을 때 정맥 인슐린을 끊기 1~2시간 전에 시작한다.\n③ 인슐린 정맥 지속 주입 즉시 시작은 혈청 칼륨이 3.3 mEq/L 이상일 때 정답이며, 3.3~5.2 이면 수액에 칼륨을 섞어 함께 준다.\n④ 탄산수소나트륨은 pH 가 6.9 미만인 아주 심한 산증에서만 고려하며, 칼륨을 세포 안으로 더 밀어 넣어 이 환자의 저칼륨혈증을 악화시킨다.\n⑤ 5 % 포도당 수액은 인슐린 치료 중 혈당이 200~250 mg/dL 로 내려왔을 때 저혈당을 막으며 케톤 제거를 이어가려고 더하는 단계다."
+   },
+   {
+    "k": "함정",
+    "v": "당뇨병케톤산증이니 인슐린부터 시작하는 것 — 칼륨이 3.3 mEq/L 미만이면 인슐린이 남은 칼륨을 세포 안으로 넣어 부정맥을 일으킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "당뇨병케톤산증 치료 시작 시 혈청 칼륨이 3.3 mEq/L 미만이면 인슐린을 미루고 칼륨부터 보충하는 이유를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009;32:1335-1343 · Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care 2024;47:1257-1275"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "당뇨병케톤산증에서 혈청 칼륨이 3.3 mEq/L 미만이므로 인슐린을 미루고 칼륨부터 보충한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "칼륨 3.1 mEq/L 와 U파 — 인슐린을 바로 시작할 수 있는 3.3 mEq/L 기준에 못 미친다",
+   "steps": 3,
+   "chain": [
+    "포도당 520·음이온차 28·pH 7.08·케톤 → 당뇨병케톤산증",
+    "산증인데도 칼륨 3.1 → 몸 전체 칼륨 심한 결핍",
+    "칼륨 < 3.3 → 인슐린 보류, 염화칼륨 먼저"
+   ],
+   "key": [
+    {
+     "item": "칼륨 3.1 mEq/L",
+     "why": "인슐린 시작 기준(3.3) 미만",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "심전도에서 U파가 보인다",
+     "why": "저칼륨혈증의 심장 영향 — 보충이 급하다",
+     "also": []
+    },
+    {
+     "item": "중탄산 8 mEq/L",
+     "why": "음이온차 대사산증의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "동맥혈 pH 7.08",
+     "why": "6.9 이상 — 탄산수소나트륨 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.3 mg/dL",
+     "why": "소변이 나오는 신기능 — 칼륨 보충이 가능하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "나트륨 132 mEq/L",
+     "why": "고혈당에 의한 희석성 저나트륨 — 처치 순서를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "음이온차 대사산증과 케톤으로 당뇨병케톤산증이다. 혈청 칼륨이 3.1 mEq/L 로 3.3 미만이므로 인슐린을 미루고 수액과 함께 칼륨을 먼저 보충한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "처음 혈청 칼륨이 4.5 mEq/L 였다면 수액에 칼륨을 섞으면서 인슐린 정맥 지속 주입을 바로 시작한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0468",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·응급·순환기·내분비·신장·소화기·안과·호흡기)",
+  "subtopic": "순환기 — 가슴 통증과 저혈압, 팽대된 목정맥",
+  "type": "순환기 — 가슴 통증과 저혈압, 팽대된 목정맥",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-28",
+  "vignette": "62세 남자가 1시간 전부터 시작된 가슴을 짓누르는 통증과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 혈압 84/52 mmHg, 맥박 58회/분, 호흡 18회/분, 산소포화도 97 %(실내공기)이다. 목정맥이 팽대되어 있고 폐 청진은 깨끗하며 심잡음은 없다. 12유도 심전도에서 II·III·aVF 유도의 ST분절이 상승해 있고, 오른쪽 가슴유도 V4R 에서도 ST분절이 1 mm 상승해 있다. 아스피린을 씹어 먹게 하였다.",
+  "question": "심도자실로 옮기기 전 처치로 가장 적절한 것은?",
+  "options": [
+   "푸로세미드 정맥 투여",
+   "모르핀 정맥 투여",
+   "메토프롤롤 정맥 투여",
+   "생리식염수 정맥 급속 주입",
+   "니트로글리세린 혀밑 투여"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 하벽(II·III·aVF) ST 상승에 V4R ST 상승, 저혈압·목정맥 팽대·맑은 폐가 함께 있으면 오른심실 경색이다. 오른심실이 펌프 역할을 못 해 왼심실 충만이 전부하에 크게 의존하므로, 생리식염수를 급속 주입해 전부하를 유지하면서 재관류(일차 경피적 관상동맥중재술)로 옮긴다.\n- 원리: <b>왜 전부하가 전부인가</b>: 경색된 오른심실은 수축력이 떨어져 「수동적 통로」에 가까워진다. 피는 정맥압의 힘으로 폐를 지나 왼심실로 가므로, 정맥 귀환이 줄면 왼심실 충만과 심박출량이 곧바로 떨어진다.<br> <b>그래서 피해야 할 약</b>: 니트로글리세린·모르핀은 정맥을 넓혀 전부하를 줄이고, 이뇨제는 혈관 안 용적을 줄이며, 베타차단제는 이미 느린 맥박과 수축력을 더 떨어뜨린다 — 모두 저혈압을 깊게 만든다.<br> <b>세 가지 진찰 소견</b>: 저혈압 + 목정맥 팽대 + 맑은 폐. 왼심실 부전이라면 폐에 수포음이 들려야 한다. 하벽 경색을 보면 V4R 을 찍어 오른심실 침범을 확인한다(V4R ST 상승 ≥ 1 mm).\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">생리식염수 급속 주입(정답)</th><th>니트로글리세린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전부하</td><td><b>늘린다 — 오른심실 경색의 핵심</b></td><td>정맥 확장으로 줄인다</td></tr> <tr><td>이 환자</td><td>혈압 84/52, 목정맥 팽대, 폐 깨끗</td><td>수축기 90 mmHg 미만·오른심실 경색은 금기</td></tr> <tr><td>쓰는 경우</td><td>오른심실 경색·저혈압</td><td>혈압이 유지되는 허혈성 흉통·폐부종</td></tr> </tbody></table> 수액 뒤에도 저혈압이면 도부타민 같은 강심제를 더하고, 재관류가 가장 근본적인 치료다.\n- 오답 이유:\n  - ① 푸로세미드는 수포음과 폐부종이 있는 왼심실 부전에서 정답이 되며, 폐가 깨끗한 오른심실 경색에서는 전부하를 더 줄여 쇼크를 악화시킨다.\n  - ② 모르핀은 다른 처치로 조절되지 않는 심한 흉통에 제한적으로 쓰며, 정맥 확장과 저혈압 위험 때문에 이 환자에게는 피한다.\n  - ③ 메토프롤롤은 혈압과 맥박이 유지되고 심부전 징후가 없는 경색에서 빈맥·고혈압을 조절할 때 정답이 된다.\n  - ⑤ 니트로글리세린은 수축기 혈압이 90 mmHg 이상이고 오른심실 경색이 없는 허혈성 흉통이나 폐부종을 동반한 경색에서 정답이 된다.\n- 함정: 가슴 통증이니 니트로글리세린부터 주는 것 — 하벽 경색에 저혈압·목정맥 팽대·맑은 폐면 오른심실 경색이고 질산염은 금기다.\n- 학습목표: 하벽 ST분절 상승 심근경색에서 저혈압·경정맥 팽대·맑은 폐와 V4R ST 상승을 오른심실 경색으로 읽고, 질산염을 피하고 수액으로 전부하를 유지한다\n- 근거·출처: O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362-e425 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 275: ST-segment elevation myocardial infarction",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "하벽(II·III·aVF) ST 상승에 V4R ST 상승, 저혈압·목정맥 팽대·맑은 폐가 함께 있으면 오른심실 경색이다. 오른심실이 펌프 역할을 못 해 왼심실 충만이 전부하에 크게 의존하므로, 생리식염수를 급속 주입해 전부하를 유지하면서 재관류(일차 경피적 관상동맥중재술)로 옮긴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전부하가 전부인가</b>: 경색된 오른심실은 수축력이 떨어져 「수동적 통로」에 가까워진다. 피는 정맥압의 힘으로 폐를 지나 왼심실로 가므로, 정맥 귀환이 줄면 왼심실 충만과 심박출량이 곧바로 떨어진다.<br> <b>그래서 피해야 할 약</b>: 니트로글리세린·모르핀은 정맥을 넓혀 전부하를 줄이고, 이뇨제는 혈관 안 용적을 줄이며, 베타차단제는 이미 느린 맥박과 수축력을 더 떨어뜨린다 — 모두 저혈압을 깊게 만든다.<br> <b>세 가지 진찰 소견</b>: 저혈압 + 목정맥 팽대 + 맑은 폐. 왼심실 부전이라면 폐에 수포음이 들려야 한다. 하벽 경색을 보면 V4R 을 찍어 오른심실 침범을 확인한다(V4R ST 상승 ≥ 1 mm)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">생리식염수 급속 주입(정답)</th><th>니트로글리세린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전부하</td><td><b>늘린다 — 오른심실 경색의 핵심</b></td><td>정맥 확장으로 줄인다</td></tr> <tr><td>이 환자</td><td>혈압 84/52, 목정맥 팽대, 폐 깨끗</td><td>수축기 90 mmHg 미만·오른심실 경색은 금기</td></tr> <tr><td>쓰는 경우</td><td>오른심실 경색·저혈압</td><td>혈압이 유지되는 허혈성 흉통·폐부종</td></tr> </tbody></table> 수액 뒤에도 저혈압이면 도부타민 같은 강심제를 더하고, 재관류가 가장 근본적인 치료다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 푸로세미드는 수포음과 폐부종이 있는 왼심실 부전에서 정답이 되며, 폐가 깨끗한 오른심실 경색에서는 전부하를 더 줄여 쇼크를 악화시킨다.\n② 모르핀은 다른 처치로 조절되지 않는 심한 흉통에 제한적으로 쓰며, 정맥 확장과 저혈압 위험 때문에 이 환자에게는 피한다.\n③ 메토프롤롤은 혈압과 맥박이 유지되고 심부전 징후가 없는 경색에서 빈맥·고혈압을 조절할 때 정답이 된다.\n⑤ 니트로글리세린은 수축기 혈압이 90 mmHg 이상이고 오른심실 경색이 없는 허혈성 흉통이나 폐부종을 동반한 경색에서 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "가슴 통증이니 니트로글리세린부터 주는 것 — 하벽 경색에 저혈압·목정맥 팽대·맑은 폐면 오른심실 경색이고 질산염은 금기다."
+   },
+   {
+    "k": "학습목표",
+    "v": "하벽 ST분절 상승 심근경색에서 저혈압·경정맥 팽대·맑은 폐와 V4R ST 상승을 오른심실 경색으로 읽고, 질산염을 피하고 수액으로 전부하를 유지한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362-e425 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 275: ST-segment elevation myocardial infarction"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "하벽 경색에 V4R ST 상승·저혈압·목정맥 팽대·맑은 폐는 오른심실 경색이므로 수액으로 전부하를 유지한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "수축기 혈압 84 mmHg 와 오른심실 경색 — 니트로글리세린의 금기",
+   "steps": 2,
+   "chain": [
+    "II·III·aVF·V4R ST 상승 + 저혈압 + 목정맥 팽대 + 맑은 폐 → 오른심실 경색",
+    "전부하 의존 → 생리식염수 급속 주입(질산염·이뇨제 금기)"
+   ],
+   "key": [
+    {
+     "item": "V4R 에서도 ST분절이 1 mm 상승",
+     "why": "오른심실 침범의 심전도 근거",
+     "also": []
+    },
+    {
+     "item": "혈압 84/52 mmHg",
+     "why": "저혈압 — 질산염·모르핀 금기",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "목정맥이 팽대되어 있고 폐 청진은 깨끗하며",
+     "why": "오른심실 부전 + 왼심실 부전 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심잡음은 없다",
+     "why": "유두근 파열·심실중격 파열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "맥박 58회/분",
+     "why": "하벽 경색의 서맥 — 베타차단제를 피하는 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압과 당뇨병",
+     "why": "관상동맥질환 위험인자 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "하벽 ST 상승과 V4R ST 상승, 저혈압·목정맥 팽대·맑은 폐는 오른심실 경색이다. 전부하에 의존하므로 생리식염수를 급속 주입하고 질산염은 피한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈압이 130/80 mmHg 로 유지되고 V4R ST 상승이 없는 하벽 경색의 지속 흉통이었다면 니트로글리세린을 쓸 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0457",
   "exam": "imaging",
   "style": "usmle_style",

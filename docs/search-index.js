@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4125,
+  "total": 4133,
   "byType": {
    "usmle": 222,
    "kmle": 1600,
+   "imaging": 472,
    "concept": 117,
    "paper": 859,
-   "imaging": 464,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -39,19 +39,19 @@ window.MEDKOS_INDEX = {
    "Hematology": 97,
    "Laboratory Medicine": 88,
    "산부인과": 68,
-   "순환기": 40,
-   "호흡기": 30,
-   "소화기": 29,
+   "순환기": 41,
+   "호흡기": 31,
+   "소화기": 30,
    "소아과": 26,
    "Physiology": 24,
-   "응급·중환자": 23,
+   "응급·중환자": 24,
+   "병리·조직학": 23,
    "감염": 22,
-   "병리·조직학": 22,
+   "내분비": 22,
    "신경": 22,
    "혈액·종양": 22,
-   "내분비": 21,
+   "신장·비뇨기": 21,
    "외과": 21,
-   "신장·비뇨기": 20,
    "Pharmacology": 19,
    "Biochemistry": 18,
    "예방의학·역학": 18,
@@ -62,7 +62,7 @@ window.MEDKOS_INDEX = {
    "근골격·류마티스": 13,
    "약리": 13,
    "정신과": 12,
-   "안과": 8,
+   "안과": 9,
    "영상의학": 8,
    "이비인후과": 8,
    "Allergy": 4,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2890,
+   "high": 2898,
    "medium": 1183,
    "low": 52
   },
@@ -821,6 +821,144 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1603.md",
    "snippet": "58세 남자가 숨이 차서 외래에 왔다. 1년 전 관상동맥 CT에서 협착이 없어 확장성 심근병증으로 진단받았다. 사쿠비트릴/발사르탄, 비소프롤롤, 스피로놀락톤, 다파글리플로진을 6개월째 최대 내약 용량으로 먹고 있다. 비소프롤롤은 더 올리면 어지러워 지금 용량을 유지하고 있다. 평지를 100 m쯤 걸으면 숨이 차 쉬어야 하지만, 집 안에서 지낼 때는 괜찮다. 실신이나 두근거림은 없었다. 경정맥 확장은 없고 양쪽 폐 아래쪽에 수포",
    "text": "Cardiology Breathless after a Short Walk despite Six Months of Full Heart Failure Medication heart-failure hfref dilated-cardiomyopathy ecg device-therapy KMLE 2026 / Claude 58세 남자가 숨이 차서 외래에 왔다. 1년 전 관상동맥 CT에서 협착이 없어 확장성 심근병증으로 진단받았다. 사쿠비트릴/발사르탄, 비소프롤롤, 스피로놀락톤, 다파글리플로진을 6개월째 최대 내약 용량으로 먹고 있다. 비소프롤롤은 더 올리면 어지러워 지금 용량을 유지하고 있다. 평지를 100 m쯤 걸으면 숨이 차 쉬어야 하지만, 집 안에서 지낼 때는 괜찮다. 실신이나 두근거림은 없었다. 경정맥 확장은 없고 양쪽 폐 아래쪽에 수포음이 조금 들리며 발목에 부종은 없다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 다음 치료로 가장 적절한 것은? A. 심장재동기화 장치 삽입 B. 삽입형 제세동기 삽입 C. 이바브라딘 추가 투여 D. 디곡신 추가 투여 E. 심장이식 평가 의뢰 최적 약물치료 3개월 이상에도 NYHA III, LVEF ≤35 %, 동율동 좌각차단 QRS ≥150 ms 이면 심장재동기화치료(필요하면 제세동 기능을 갖춘 CRT D)가 증상·입원·사망을 줄인다."
+  },
+  {
+   "id": "imaging-2026-0473",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 깨우기 힘든 상태로 발견된 젊은 남성의 동맥혈가스",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0473.md",
+   "snippet": "A 34 year old man is brought to the emergency department 40 minutes after his roommate found him difficult to arouse. Two empty bottles of oxycodone are found next to him. He has no history of lung disease and does not smoke. His respiratio",
+   "text": "호흡기 호흡기 — 깨우기 힘든 상태로 발견된 젊은 남성의 동맥혈가스 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 A 34 year old man is brought to the emergency department 40 minutes after his roommate found him difficult to arouse. Two empty bottles of oxycodone are found next to him. He has no history of lung disease and does not smoke. His respirations are 6/min and shallow, pulse is 64/min, and blood pressure is 112/70 mm Hg. He responds only to painful stimuli, and the pupils are pinpoint. Breath sounds are clear bilaterally with no crackles. Arterial blood gas analysis while breathing room air at sea level shows a pH of 7.18, Paco2 of 72 mm Hg, Pao2 of 52 mm Hg, and HCO3 of 26 mEq/L. A chest x ray shows no abnormalities. Which of the following is the most likely primary mechanism of this patient's hypoxemia? A. Ventilation perfusion mismatch B. Right to left shunt C. Diffusion impairment D. Low inspired oxygen tension E. Alveolar hypoventilation"
+  },
+  {
+   "id": "imaging-2026-0472",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 콘택트렌즈 착용자의 한쪽 눈 통증·충혈",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0472.md",
+   "snippet": "A 24 year old woman comes to the emergency department because of pain, redness, tearing, and sensitivity to light in her right eye for 1 day. She wears soft contact lenses and often sleeps in them. She has no history of eye surgery or cold ",
+   "text": "안과 안과 — 콘택트렌즈 착용자의 한쪽 눈 통증·충혈 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 A 24 year old woman comes to the emergency department because of pain, redness, tearing, and sensitivity to light in her right eye for 1 day. She wears soft contact lenses and often sleeps in them. She has no history of eye surgery or cold sores. Visual acuity is 20/60 in the right eye and 20/20 in the left eye. Examination of the right eye shows conjunctival injection most prominent around the limbus and a 2 mm white corneal infiltrate with an overlying epithelial defect that stains with fluorescein. No dendritic pattern is seen. There are a few cells in the anterior chamber and no hypopyon. The contact lens is removed, and corneal scrapings are sent for Gram stain and culture. Which of the following is the most appropriate next step in management? A. Topical fluoroquinolone drops every hour B. Eye patching for 24 hours C. Topical corticosteroid drops D. Oral acyclovir E. Topical erythromycin ointment"
+  },
+  {
+   "id": "imaging-2026-0471",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 폐렴 항생제 치료 뒤 입원 중 생긴 물설사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0471.md",
+   "snippet": "A 71 year old woman is evaluated in the hospital because of 6 episodes of watery diarrhea daily for the past 2 days. Eight days ago, she was admitted for community acquired pneumonia and treated with ceftriaxone and azithromycin, which were",
+   "text": "소화기 소화기·간담췌 — 폐렴 항생제 치료 뒤 입원 중 생긴 물설사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 A 71 year old woman is evaluated in the hospital because of 6 episodes of watery diarrhea daily for the past 2 days. Eight days ago, she was admitted for community acquired pneumonia and treated with ceftriaxone and azithromycin, which were completed 2 days ago. She has never had a similar illness. Her temperature is 38.2°C (100.8°F), pulse is 98/min, and blood pressure is 124/76 mm Hg. The abdomen is soft and mildly tender in both lower quadrants without distention, rigidity, or guarding; bowel sounds are present. Leukocyte count is 18,600/mm3, serum creatinine is 1.7 mg/dL (baseline 0.9 mg/dL), and serum lactate is 1.4 mmol/L. Stool testing is positive for Clostridioides difficile toxin. An abdominal x ray shows no colonic dilation. Which of the following is the most appropriate pharmacotherapy? A. Loperamide B. Oral rifaximin C. Oral vancomycin D. Oral metronidazole E. Intravenous vancomycin"
+  },
+  {
+   "id": "imaging-2026-0470",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 새 약을 먹은 뒤 생긴 미열·발진과 크레아티닌 상승",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0470.md",
+   "snippet": "58세 여자가 1주 전부터 생긴 미열과 몸통의 가려운 발진으로 왔다. 3주 전 위식도역류병으로 오메프라졸을 먹기 시작하였다. 다른 약은 먹지 않으며 최근 조영제 검사나 혈관 시술을 받은 적은 없다. 혈압 132/80 mmHg, 맥박 82회/분, 체온 37.8℃이다. 몸통에 붉은 반점구진 발진이 퍼져 있고 옆구리 압통은 없다. 혈액검사: 크레아티닌 2.4 mg/dL(한 달 전 0.8 mg/dL), 백혈구 8,600/μL(호산구 ",
+   "text": "신장·비뇨기 신장·비뇨 — 새 약을 먹은 뒤 생긴 미열·발진과 크레아티닌 상승 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 58세 여자가 1주 전부터 생긴 미열과 몸통의 가려운 발진으로 왔다. 3주 전 위식도역류병으로 오메프라졸을 먹기 시작하였다. 다른 약은 먹지 않으며 최근 조영제 검사나 혈관 시술을 받은 적은 없다. 혈압 132/80 mmHg, 맥박 82회/분, 체온 37.8℃이다. 몸통에 붉은 반점구진 발진이 퍼져 있고 옆구리 압통은 없다. 혈액검사: 크레아티닌 2.4 mg/dL(한 달 전 0.8 mg/dL), 백혈구 8,600/μL(호산구 9 %), 보체 C3 정상. 소변검사: 단백 1+, 적혈구 3~5/고배율시야, 백혈구 20~30/고배율시야, 백혈구 원주가 보이고 소변 배양은 음성이다. 진단으로 가장 적절한 것은? A. 콜레스테롤 색전증 B. 급성 간질신염 C. 급성 세관괴사 D. 급성 신우신염 E. 연쇄알균감염후 사구체신염"
+  },
+  {
+   "id": "imaging-2026-0469",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 인슐린을 거른 1형 당뇨병 환자의 구토·복통",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0469.md",
+   "snippet": "19세 여자가 이틀 동안 이어진 구토·복통과 심한 갈증으로 응급실에 왔다. 3년 전 1형 당뇨병을 진단받았고 최근 인슐린 주사를 자주 걸렀다. 혈압 98/60 mmHg, 맥박 118회/분, 호흡 28회/분으로 깊고 빠르며, 체온 36.8℃이다. 입안 점막이 말라 있다. 혈액검사: 포도당 520 mg/dL, 나트륨 132 mEq/L, 칼륨 3.1 mEq/L, 염화물 96 mEq/L, 중탄산 8 mEq/L, 크레아티닌 1.3 mg",
+   "text": "내분비 내분비·대사 — 인슐린을 거른 1형 당뇨병 환자의 구토·복통 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 19세 여자가 이틀 동안 이어진 구토·복통과 심한 갈증으로 응급실에 왔다. 3년 전 1형 당뇨병을 진단받았고 최근 인슐린 주사를 자주 걸렀다. 혈압 98/60 mmHg, 맥박 118회/분, 호흡 28회/분으로 깊고 빠르며, 체온 36.8℃이다. 입안 점막이 말라 있다. 혈액검사: 포도당 520 mg/dL, 나트륨 132 mEq/L, 칼륨 3.1 mEq/L, 염화물 96 mEq/L, 중탄산 8 mEq/L, 크레아티닌 1.3 mg/dL, 혈청 베타 하이드록시뷰티르산 양성. 동맥혈 pH 7.08. 심전도에서 U파가 보인다. 생리식염수 1 L 를 1시간 동안 주입하기 시작하였다. 다음 처치로 가장 적절한 것은? A. 지속형 인슐린 피하 주사 B. 염화칼륨 정맥 보충, 칼륨이 오른 뒤 인슐린 시작 C. 속효성 인슐린 정맥 지속 주입 즉시 시작 D. 탄산수소나트륨 정맥 투여 E. 5 % 포도당 수액으로 교체"
+  },
+  {
+   "id": "imaging-2026-0468",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 가슴 통증과 저혈압, 팽대된 목정맥",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0468.md",
+   "snippet": "62세 남자가 1시간 전부터 시작된 가슴을 짓누르는 통증과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 혈압 84/52 mmHg, 맥박 58회/분, 호흡 18회/분, 산소포화도 97 %(실내공기)이다. 목정맥이 팽대되어 있고 폐 청진은 깨끗하며 심잡음은 없다. 12유도 심전도에서 II·III·aVF 유도의 ST분절이 상승해 있고, 오른쪽 가슴유도 V4R 에서도 ST분절이 1 mm 상승해 있다. 아스피린을 씹",
+   "text": "순환기 순환기 — 가슴 통증과 저혈압, 팽대된 목정맥 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 62세 남자가 1시간 전부터 시작된 가슴을 짓누르는 통증과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 혈압 84/52 mmHg, 맥박 58회/분, 호흡 18회/분, 산소포화도 97 %(실내공기)이다. 목정맥이 팽대되어 있고 폐 청진은 깨끗하며 심잡음은 없다. 12유도 심전도에서 II·III·aVF 유도의 ST분절이 상승해 있고, 오른쪽 가슴유도 V4R 에서도 ST분절이 1 mm 상승해 있다. 아스피린을 씹어 먹게 하였다. 심도자실로 옮기기 전 처치로 가장 적절한 것은? A. 푸로세미드 정맥 투여 B. 모르핀 정맥 투여 C. 메토프롤롤 정맥 투여 D. 생리식염수 정맥 급속 주입 E. 니트로글리세린 혀밑 투여"
+  },
+  {
+   "id": "imaging-2026-0467",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 고속 충돌 뒤 위쪽 목 통증과 경추 축상 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0467.md",
+   "snippet": "A 31 year old woman is brought to the emergency department 1 hour after a high speed motor vehicle collision. She reports severe pain at the back of the upper neck and is unwilling to turn her head. She takes no medications. Her pulse is 96",
+   "text": "응급·중환자 응급·중환자·외상 — 고속 충돌 뒤 위쪽 목 통증과 경추 축상 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 A 31 year old woman is brought to the emergency department 1 hour after a high speed motor vehicle collision. She reports severe pain at the back of the upper neck and is unwilling to turn her head. She takes no medications. Her pulse is 96/min and blood pressure is 126/78 mm Hg. She is alert and oriented. A rigid cervical collar is in place. There is tenderness over the upper posterior cervical spine. Strength, sensation, and reflexes are normal in all extremities. An axial CT image of the cervical spine at the level of the first cervical vertebra (atlas) is shown. Integrity of which of the following structures is most important in determining whether this fracture is mechanically unstable? A. Transverse ligament of the atlas B. Alar ligaments C. Tectorial membrane D. Anterior longitudinal ligament E. Ligamentum flavum"
+  },
+  {
+   "id": "imaging-2026-0466",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 외상으로 절제한 폐 조직의 면역조직화학염색",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8",
+   "confidence": "high",
+   "date": "2026-10-28",
+   "path": "content/imaging/2026/imaging-2026-0466.md",
+   "snippet": "21세 남자가 오토바이 사고로 가슴을 다쳐 응급실에 왔다. 오른쪽 폐 아래엽의 열상으로 공기 누출이 계속되어 쐐기절제술을 받았다. 과거력은 없고 담배는 피우지 않는다. 절제 검체 가운데 손상되지 않은 가장자리 폐 조직의 절편에 면역조직화학염색을 하였고, 사진은 그림과 같다. 폐포 공간 안에 떠 있는, 진하게 염색된 큰 세포의 기능이 자가항체로 억제될 때 생기는 질환은? A. 미만성 폐포출혈 B. 폐랑게르한스세포조직구증 C. 폐",
+   "text": "병리·조직학 병리·조직 — 외상으로 절제한 폐 조직의 면역조직화학염색 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261028T204122Z_일일영상_2026-10-29_8units_8q_8e715fd8 21세 남자가 오토바이 사고로 가슴을 다쳐 응급실에 왔다. 오른쪽 폐 아래엽의 열상으로 공기 누출이 계속되어 쐐기절제술을 받았다. 과거력은 없고 담배는 피우지 않는다. 절제 검체 가운데 손상되지 않은 가장자리 폐 조직의 절편에 면역조직화학염색을 하였고, 사진은 그림과 같다. 폐포 공간 안에 떠 있는, 진하게 염색된 큰 세포의 기능이 자가항체로 억제될 때 생기는 질환은? A. 미만성 폐포출혈 B. 폐랑게르한스세포조직구증 C. 폐포단백증 D. 과민폐렴 E. 만성 호산구폐렴"
   },
   {
    "id": "cn.obgyn.menopause.hormone-therapy-decision",
