@@ -359,11 +359,11 @@
    ]
   },
   "정형외과": {
-   "hash": "8664c84020094cb39812",
-   "version": 14,
-   "date": "2026-10-27",
+   "hash": "e067f2dfcdde6632de28",
+   "version": 15,
+   "date": "2026-10-28",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 15,
+   "pages": 17,
    "template_version": 11,
    "units": {
     "cn.ortho.scaphoid-fracture.occult-imaging": {
@@ -378,36 +378,42 @@
      "concept_hash": "ffd2be60f94fba93",
      "concept_version": 4
     },
+    "cn.ortho.odontoid-fracture.diagnosis": {
+     "title": "치아돌기 골절 — 골절선이 허리에 머무나, 몸통으로 가나",
+     "page": 7,
+     "concept_hash": "bc5041f727e2b115",
+     "concept_version": 2
+    },
     "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis": {
      "title": "환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나",
-     "page": 7,
+     "page": 9,
      "concept_hash": "327d614915e416f7",
      "concept_version": 2
     },
     "cn.ortho.achilles-rupture.thompson-test": {
      "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
-     "page": 9,
+     "page": 11,
      "concept_hash": "c55a14c1972e4b5a",
      "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 10,
+     "page": 12,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
-     "page": 12,
+     "page": 14,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "cf96eec301b74afb523e46a02b3880dc",
-    "version": 14,
-    "uploaded": "2026-10-27T09:46:28+09:00"
+    "md5": "9b5fb91d24ce6594f5bc6342632e74b2",
+    "version": 15,
+    "uploaded": "2026-10-28T10:20:41+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -423,10 +429,11 @@
     "MedKOS_학습서_정형외과_v11_2026-10-06.pdf",
     "MedKOS_학습서_정형외과_v12_2026-10-08.pdf",
     "MedKOS_학습서_정형외과_v13_2026-10-09.pdf",
-    "MedKOS_학습서_정형외과_v14_2026-10-27.pdf"
+    "MedKOS_학습서_정형외과_v14_2026-10-27.pdf",
+    "MedKOS_학습서_정형외과_v15_2026-10-28.pdf"
    ],
    "changes": [
-    "새 단원: 환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나"
+    "새 단원: 치아돌기 골절 — 골절선이 허리에 머무나, 몸통으로 가나"
    ]
   },
   "외과": {
@@ -472,11 +479,11 @@
    ]
   },
   "산부인과": {
-   "hash": "8dc1a53546312476b8fa",
-   "version": 13,
-   "date": "2026-10-24",
+   "hash": "2285ab1b9d8b33d2da29",
+   "version": 14,
+   "date": "2026-10-28",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 23,
+   "pages": 25,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -487,64 +494,70 @@
     },
     "cn.obgyn.pcos-infertility.ovulation-induction": {
      "title": "다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다",
-     "page": 5,
+     "page": 4,
      "concept_hash": "1cb909b218723ac8",
      "concept_version": 4
     },
+    "cn.obgyn.menopause.hormone-therapy-decision": {
+     "title": "폐경 호르몬 치료 — 증상·나이·금기로 정한다",
+     "page": 7,
+     "concept_hash": "64ffae546fabcf71",
+     "concept_version": 1
+    },
     "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
      "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
-     "page": 7,
+     "page": 9,
      "concept_hash": "b5e8475cfea79a62",
      "concept_version": 1
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
      "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
-     "page": 9,
+     "page": 11,
      "concept_hash": "54c314318cffecef",
      "concept_version": 3
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 12,
+     "page": 14,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
     "cn.obgyn.granulosa-cell-tumor.tumor-marker": {
      "title": "과립막세포종 — 추적 표지자는 기원 세포가 정한다",
-     "page": 15,
+     "page": 17,
      "concept_hash": "edb8da638ad18885",
      "concept_version": 2
     },
     "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
      "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
-     "page": 17,
+     "page": 19,
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
      "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
-     "page": 18,
+     "page": 20,
      "concept_hash": "55af692609810631",
      "concept_version": 2
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 20,
+     "page": 22,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 22,
+     "page": 24,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "02d46036e822c7843967040792a99f16",
-    "version": 13,
-    "uploaded": "2026-10-24T09:08:11+09:00"
+    "md5": "2a1e47dc80fae02a8fc61adca83cbacf",
+    "version": 14,
+    "uploaded": "2026-10-28T10:20:41+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -559,10 +572,11 @@
     "MedKOS_학습서_산부인과_v10_2026-10-07.pdf",
     "MedKOS_학습서_산부인과_v11_2026-10-14.pdf",
     "MedKOS_학습서_산부인과_v12_2026-10-18.pdf",
-    "MedKOS_학습서_산부인과_v13_2026-10-24.pdf"
+    "MedKOS_학습서_산부인과_v13_2026-10-24.pdf",
+    "MedKOS_학습서_산부인과_v14_2026-10-28.pdf"
    ],
    "changes": [
-    "새 단원: 과립막세포종 — 추적 표지자는 기원 세포가 정한다"
+    "새 단원: 폐경 호르몬 치료 — 증상·나이·금기로 정한다"
    ]
   },
   "정신건강의학과": {
@@ -619,9 +633,9 @@
    ]
   },
   "류마티스내과": {
-   "hash": "d2276e1d04a5f8640b58",
-   "version": 29,
-   "date": "2026-10-23",
+   "hash": "7d1982db1f7938eccc36",
+   "version": 30,
+   "date": "2026-10-28",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 50,
    "template_version": 11,
@@ -707,8 +721,8 @@
     "cn.rheum.behcet.clinical-diagnosis": {
      "title": "베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단",
      "page": 28,
-     "concept_hash": "30b6e60570924c5a",
-     "concept_version": 1
+     "concept_hash": "99114229c6440e61",
+     "concept_version": 2
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
@@ -785,9 +799,9 @@
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "144af0c8768e564ea2eadb8c7befc66f",
-    "version": 29,
-    "uploaded": "2026-10-23T09:57:10+09:00"
+    "md5": "5c816c7553cb654c86b8fa7c01663ab5",
+    "version": 30,
+    "uploaded": "2026-10-28T10:20:41+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -818,10 +832,11 @@
     "MedKOS_학습서_류마티스내과_v26_2026-10-20.pdf",
     "MedKOS_학습서_류마티스내과_v27_2026-10-21.pdf",
     "MedKOS_학습서_류마티스내과_v28_2026-10-22.pdf",
-    "MedKOS_학습서_류마티스내과_v29_2026-10-23.pdf"
+    "MedKOS_학습서_류마티스내과_v29_2026-10-23.pdf",
+    "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf"
    ],
    "changes": [
-    "새 단원: 골관절염 — 운동·체중 감량이 바탕, 약은 보조"
+    "내용 갱신: 베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단 (정리본 v1 → v2)"
    ]
   },
   "호흡기내과": {
@@ -1367,13 +1382,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "7534f92993e10df5a48115fd42d9eb11",
+   "md5": "5e150d2eef72515f23df97470ad47416",
    "version": null,
-   "uploaded": "2026-10-27T09:46:28+09:00"
+   "uploaded": "2026-10-28T10:20:41+09:00"
   }
  },
- "updated": "2026-10-27"
+ "updated": "2026-10-28"
 }
