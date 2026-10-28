@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4133,
+  "total": 4134,
   "byType": {
    "usmle": 222,
+   "concept": 118,
    "kmle": 1600,
    "imaging": 472,
-   "concept": 117,
    "paper": 859,
    "anatomy": 846,
    "ailab": 14,
@@ -22,7 +22,7 @@ window.MEDKOS_INDEX = {
    "Nephrology": 225,
    "Infectious Disease": 208,
    "Pediatrics": 193,
-   "Obstetrics & Gynecology": 140,
+   "Obstetrics & Gynecology": 141,
    "Pathology": 127,
    "Rheumatology": 124,
    "Hematology-Oncology": 123,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2898,
-   "medium": 1183,
+   "medium": 1184,
    "low": 52
   },
   "tagCount": 5124
@@ -218,6 +218,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0230.md",
    "snippet": "A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. ",
    "text": "Pharmacology A Seizure, Vomiting and a Pulse of 128 Five Days Into an Antibiotic for a COPD Flare in a 67-Year-Old Who Still Smokes theophylline ciprofloxacin cyp1a2 drug-interaction pharmacokinetics copd mechanism USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — drugs used in asthma: methylxanthines; drug interactions: CYP1A2 inhibition by fluoroquinolones; Lexicomp drug interaction monograph: ciprofloxacin–theophylline) A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. He has severe chronic obstructive pulmonary disease treated with inhaled tiotropium, inhaled albuterol as needed and sustained release oral theophylline, which he has taken at the same dose for 3 years. Five days ago he began a course of oral ciprofloxacin for an exacerbation with increased purulent sputum. He has smoked 1 pack of cigarettes daily for 45 years and smoked as usual this morning. He has no history of seizures or head trauma. His vital signs are shown. He is drowsy but arousable. He has a fine tremor of both hands. Scattered expiratory wheezes are heard. An ECG shows sinus tachycardia. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's elevated serum drug concentration? A. Decreased renal tubular secretion B. Displacement from albumin binding sites C. Inhibition of intestinal P glycoprotein D. Inhibition of hepatic CYP1A2 E. Withdrawal of smoking induced CYP1A2 activity 구토·떨림·빈맥·저칼륨혈증·고혈당 뒤 경련, 혈중 테오필린 34 µg/mL — 테오필린 독성이다(아데노신 수용체 차단·포스포디에스터레이스 억제·카테콜아민 분비 증가). 3년간 같은 용량으로 문제없던 농도가 5일 전 시작한 ciprofloxacin 뒤에 올랐으므로 약물 상호작용이다. 테오필린은 주로 간 CYP1A2 로 대사되고 치료역이 좁다 — 플루오로퀴놀론(특히 ciprofloxacin)은 CYP1A2 를 억제해 청소율을 떨어뜨리고 농도를 올린다. 흡연은 CYP1A2 를 유도하므로 금연하면 같은 결과가 오지만, 이 환자는 오늘 아침까지 피웠다. 크레아티닌·알부민이 정상이고 테오필린은 신장 배설·단백 결합 비중이 작아 신 배설 감소나 결합 치환으로 설명되지 않는다."
+  },
+  {
+   "id": "cn.obgyn.female-sexual-dysfunction.management",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.female-sexual-dysfunction.management.md",
+   "snippet": "판단 — 왜 고통·주된 문제·원인 순서인가 진단의 문턱은 개인적 고통 이다 — 네 갈래(욕구 저하·흥분·극치감·통증) 모두 고통을 요건으로 두므로, 고통이 없으면 교육으로 끝난다 [[harrison 21: 397장 p.3062]]. 다음은 가장 괴로운 증상 을 고른다 — 갈래는 서로 배타적이지 않아 환자가 무엇을 가장 고치고 싶은지가 치료의 출발점이다 [[harrison 21: 397장 p.3062]]. 통증·건조가 중심이고 ",
+   "text": "Obstetrics & Gynecology 판단 — 왜 고통·주된 문제·원인 순서인가 진단의 문턱은 개인적 고통 이다 — 네 갈래(욕구 저하·흥분·극치감·통증) 모두 고통을 요건으로 두므로, 고통이 없으면 교육으로 끝난다 [[harrison 21: 397장 p.3062]]. 다음은 가장 괴로운 증상 을 고른다 — 갈래는 서로 배타적이지 않아 환자가 무엇을 가장 고치고 싶은지가 치료의 출발점이다 [[harrison 21: 397장 p.3062]]. 통증·건조가 중심이고 폐경 뒤라면 외음질 위축(vulvovaginal atrophy) 을 먼저 다룬다 — 폐경과 그 이행기는 위축 관련 성기능 장애의 큰 위험 요인이다 [[harrison 21: 397장 p.3062]]. 욕구·흥분이 중심이면 원인 약물 (항우울제 등)과 위험 요인을 먼저 찾고, 행동·비약물 치료와 상담을 첫 단계로 둔다 [[harrison 21: 397장 p.3062]]. 기전 — 에스트로겐·혈류·신경이 반응을 만든다 정상 여성 성 반응에는 에스트로겐이 필요하고, 안드로겐도 관여할 것으로 보지만 근거는 덜하다 [[harrison 21: 397장 p.3062]]. 욕구가 생기면 흥분은 중추·자율신경이 매개한다 — 말초 부교감 활동이 음핵 울혈과 질 분비(윤활)를 만들고, 음핵 해면체 평활근 이완에는 산화질소(nitric oxide, NO)가, 질 삼출에는 NO·혈관작용 장 펩티드(VIP)가 관여한다고 본다 [[harrison 21: 397장 p.3062]]. 질 윤활은 흥분 때 골반 혈류가 늘며 생기는 혈청 삼출액 이라, 혈관 부전이 있으면 윤활이 부족해 성교통(dyspareunia)이 생긴다 [[harrison 21: 397장 p.3062]]. 감각이 온전해야 흥분하므로 당뇨 말초신경병에서 기능이 떨어지고, 극치감은 온전한 교감신경 출력로 가 필요해 척수 손상 여성에서 극치감 장애가 흔하다 [[harrison 21: 397장 p.3062]]. 위험 요인은 남성과 비슷하다 — 심혈관 질환(특히 고혈압), 당뇨·고프로락틴혈증, 신경 질환, 생식기 수술·방사선, 간·신부전, 흡연, 심리·관계 요인, 약물(항우울제·항안드로겐·항에스트로겐·항고혈압제 등) [[harrison 21: 397장 p.3061]]. 가르는 소견 — 무엇이 가장 괴로운가 지역사회 조사에서 여성의 43% 가 하나 이상의 성 문제를 호소하고, 가장 흔한 것은 욕구·흥분(윤활 포함) 장애 다 [[harrison 21: 397장 p.3061–3062]]. 평가는 내과·수술·산과·부인과·정신·성·사회력과 복용 약을 묻고, 음핵을 포함한 생식기와 골반저 (탈출 등)를 진찰한다 [[harrison 21: 397장 p.3062]]. 검사는 제한적으로 — 폐경 여부가 불확실하면 에스트라디올·FSH·LH, 부신 안드로겐 분비를 보려면 DHEA. 음핵 도플러·감각 측정은 비싸고 유용성이 불확실하다 [[harrison 21: 397장 p.3062]]. 선택 — 국소 치료·약 조정·상담 행동·비약물 치료가 첫 단계 다 — 정상 해부·생리 반응과 나이에 따른 변화를 설명하고, 성교 삽입보다 음핵 자극이 더 도움이 될 수 있음을 알려 준다. 부부 상담이 소통·관계 긴장을 풀 수 있다 [[harrison 21: 397장 p.3062]]. 성교통·건조에는 국소 윤활제를 쓴다 [[harrison 21: 397장 p.3062]]. 폐경 뒤에는 에스트로겐 보충이 질 위축·성교 통증을 줄이고 음핵 감각을 개선할 수 있다 — 질 제제로 쓰고, 정기적으로 바르는 윤활·보습제의 효과가 국소 에스트로겐과 비슷하다 [[harrison 21: 397장 p.3062]]. 원인 약물은 감량·교체·휴약으로 조정한다 [[harrison 21: 397장 p.3062]]. 권고와 예외 유방암 병력이 있고 위축이 심하면 전신 흡수가 가장 낮은 질 에스트로겐 제제가 선호될 수 있다. 질 에스트로겐을 피하고 싶은 여성에게는 윤활·보습제를 권한다 [[harrison 21: 397장 p.3062]]. 항우울제를 바꿀 때 SSRI 중 파록세틴·에스시탈로프람이 성기능 부작용 위험이 가장 크고, 부프로피온·네파조돈·미르타자핀은 덜한 편이다 [[harrison 21: 397장 p.3058]]. 폐경 전신 호르몬 치료의 시작·금기 판단은 정리본 cn.obgyn.menopause.hormone therapy decision 에 있다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 397장 p.3058·3061~3062). 드라이브 장 문서가 p.3062 중간에서 끝나 그 뒤 호르몬·약물 치료 서술은 대조하지 못했다."
   },
   {
    "id": "kmle-2026-1634",
