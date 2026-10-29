@@ -47311,7 +47311,8 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0093",
-   "kmle-2026-1302"
+   "kmle-2026-1302",
+   "kmle-2026-1655"
   ],
   "hasErrors": false
  },
