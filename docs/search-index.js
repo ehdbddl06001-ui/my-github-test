@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4143,
+  "total": 4152,
   "byType": {
    "usmle": 222,
+   "imaging": 481,
    "concept": 119,
    "paper": 867,
    "kmle": 1600,
-   "imaging": 472,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,31 +38,31 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 102,
    "Hematology": 97,
    "Laboratory Medicine": 89,
-   "산부인과": 68,
+   "산부인과": 69,
    "순환기": 41,
+   "소화기": 31,
    "호흡기": 31,
-   "소화기": 30,
-   "소아과": 26,
+   "소아과": 27,
    "Physiology": 24,
    "응급·중환자": 24,
+   "감염": 23,
+   "내분비": 23,
    "병리·조직학": 23,
-   "감염": 22,
-   "내분비": 22,
+   "혈액·종양": 23,
    "신경": 22,
-   "혈액·종양": 22,
-   "신장·비뇨기": 21,
+   "신장·비뇨기": 22,
    "외과": 21,
    "Pharmacology": 19,
+   "피부과": 19,
    "Biochemistry": 18,
    "예방의학·역학": 18,
-   "피부과": 18,
    "Microbiology": 17,
    "Internal Medicine": 14,
    "Immunology": 13,
    "근골격·류마티스": 13,
    "약리": 13,
    "정신과": 12,
-   "안과": 9,
+   "안과": 10,
    "영상의학": 8,
    "이비인후과": 8,
    "Allergy": 4,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2898,
+   "high": 2907,
    "medium": 1193,
    "low": 52
   },
@@ -218,6 +218,162 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0230.md",
    "snippet": "A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. ",
    "text": "Pharmacology A Seizure, Vomiting and a Pulse of 128 Five Days Into an Antibiotic for a COPD Flare in a 67-Year-Old Who Still Smokes theophylline ciprofloxacin cyp1a2 drug-interaction pharmacokinetics copd mechanism USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — drugs used in asthma: methylxanthines; drug interactions: CYP1A2 inhibition by fluoroquinolones; Lexicomp drug interaction monograph: ciprofloxacin–theophylline) A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. He has severe chronic obstructive pulmonary disease treated with inhaled tiotropium, inhaled albuterol as needed and sustained release oral theophylline, which he has taken at the same dose for 3 years. Five days ago he began a course of oral ciprofloxacin for an exacerbation with increased purulent sputum. He has smoked 1 pack of cigarettes daily for 45 years and smoked as usual this morning. He has no history of seizures or head trauma. His vital signs are shown. He is drowsy but arousable. He has a fine tremor of both hands. Scattered expiratory wheezes are heard. An ECG shows sinus tachycardia. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's elevated serum drug concentration? A. Decreased renal tubular secretion B. Displacement from albumin binding sites C. Inhibition of intestinal P glycoprotein D. Inhibition of hepatic CYP1A2 E. Withdrawal of smoking induced CYP1A2 activity 구토·떨림·빈맥·저칼륨혈증·고혈당 뒤 경련, 혈중 테오필린 34 µg/mL — 테오필린 독성이다(아데노신 수용체 차단·포스포디에스터레이스 억제·카테콜아민 분비 증가). 3년간 같은 용량으로 문제없던 농도가 5일 전 시작한 ciprofloxacin 뒤에 올랐으므로 약물 상호작용이다. 테오필린은 주로 간 CYP1A2 로 대사되고 치료역이 좁다 — 플루오로퀴놀론(특히 ciprofloxacin)은 CYP1A2 를 억제해 청소율을 떨어뜨리고 농도를 올린다. 흡연은 CYP1A2 를 유도하므로 금연하면 같은 결과가 오지만, 이 환자는 오늘 아침까지 피웠다. 크레아티닌·알부민이 정상이고 테오필린은 신장 배설·단백 결합 비중이 작아 신 배설 감소나 결합 치환으로 설명되지 않는다."
+  },
+  {
+   "id": "imaging-2026-0482",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 조절되지 않는 고혈압과 저칼륨혈증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0482.md",
+   "snippet": "A 52 year old woman comes to the physician for follow up of hypertension. Her blood pressure has been difficult to control for 4 years despite amlodipine, losartan, and hydrochlorothiazide; 6 weeks ago, losartan and hydrochlorothiazide were",
+   "text": "내분비 내분비·대사 — 조절되지 않는 고혈압과 저칼륨혈증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d A 52 year old woman comes to the physician for follow up of hypertension. Her blood pressure has been difficult to control for 4 years despite amlodipine, losartan, and hydrochlorothiazide; 6 weeks ago, losartan and hydrochlorothiazide were replaced with doxazosin and diltiazem. Today, blood pressure is 162/98 mm Hg. Serum potassium is 3.1 mEq/L and creatinine is 0.8 mg/dL. Plasma aldosterone concentration is 28 ng/dL, and plasma renin activity is less than 0.2 ng/mL/h. After an oral sodium loading test, 24 hour urinary aldosterone excretion is 18 μg. CT of the abdomen shows a 1.1 cm low attenuation nodule in the left adrenal gland; the right adrenal gland appears normal. She says she would choose surgery if it could cure her condition. Which of the following is the most appropriate next step in management? A. Left laparoscopic adrenalectomy B. Lifelong spironolactone without further testing C. Fludrocortisone suppression test D. MRI of the abdomen E. Adrenal venous sampling"
+  },
+  {
+   "id": "imaging-2026-0481",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 발작성 보챔과 혈변을 보이는 영아",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0481.md",
+   "snippet": "A 9 month old boy is brought to the emergency department because of episodes of inconsolable crying with drawing up of his legs for 12 hours. The episodes last a few minutes and recur every 15 to 20 minutes; between episodes, he is quiet an",
+   "text": "소아과 소아청소년 — 발작성 보챔과 혈변을 보이는 영아 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d A 9 month old boy is brought to the emergency department because of episodes of inconsolable crying with drawing up of his legs for 12 hours. The episodes last a few minutes and recur every 15 to 20 minutes; between episodes, he is quiet and sleepy. He has vomited twice, and his last diaper contained stool mixed with blood and mucus. Temperature is 37.4°C (99.3°F), pulse is 140/min, and blood pressure is 88/54 mm Hg. Capillary refill time is 2 seconds. The abdomen is soft, with a sausage shaped mass in the right upper quadrant; there is no guarding or rebound tenderness. Ultrasonography of the abdomen shows a target shaped mass. Intravenous fluids are started. Which of the following is the most appropriate next step in management? A. Technetium 99m pertechnetate scan B. Air enema reduction under imaging guidance C. Emergency exploratory laparotomy D. CT scan of the abdomen with contrast E. Nasogastric decompression and observation"
+  },
+  {
+   "id": "imaging-2026-0480",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 소세포폐암 환자의 저나트륨혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0480.md",
+   "snippet": "66세 남자가 1주 전부터 기운이 없고 입맛이 떨어져 왔다. 2주 전 소세포폐암을 진단받고 항암치료를 앞두고 있다. 혈압 132/78 mmHg, 맥박 76회/분이고 의식은 명료하며 신경학적 이상은 없다. 피부 긴장도와 점막은 정상이고 목정맥 팽대나 부종은 없다. 혈청 나트륨 122 mEq/L, 칼륨 4.1 mEq/L, 혈청 삼투질농도 255 mOsm/kg, 요삼투질농도 520 mOsm/kg, 요나트륨 62 mEq/L, 혈청 요",
+   "text": "신장·비뇨기 신장·비뇨 — 소세포폐암 환자의 저나트륨혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d 66세 남자가 1주 전부터 기운이 없고 입맛이 떨어져 왔다. 2주 전 소세포폐암을 진단받고 항암치료를 앞두고 있다. 혈압 132/78 mmHg, 맥박 76회/분이고 의식은 명료하며 신경학적 이상은 없다. 피부 긴장도와 점막은 정상이고 목정맥 팽대나 부종은 없다. 혈청 나트륨 122 mEq/L, 칼륨 4.1 mEq/L, 혈청 삼투질농도 255 mOsm/kg, 요삼투질농도 520 mOsm/kg, 요나트륨 62 mEq/L, 혈청 요산 2.6 mg/dL 이다. 갑상샘기능과 아침 코르티솔은 정상이다. 저나트륨혈증 치료로 가장 적절한 것은? A. 히드로클로로티아지드 투여 B. 데스모프레신 투여 C. 수분 제한 D. 생리식염수 정맥 주입 E. 3 % 고장성 식염수 급속 주입"
+  },
+  {
+   "id": "imaging-2026-0479",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — HIV 환자의 아급성 두통과 발열",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0479.md",
+   "snippet": "A 34 year old man comes to the emergency department because of headache and fever for 2 weeks. During the past 3 days, he has also had nausea and intermittent blurred vision. He was diagnosed with HIV infection 1 month ago but has not start",
+   "text": "감염 감염 — HIV 환자의 아급성 두통과 발열 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d A 34 year old man comes to the emergency department because of headache and fever for 2 weeks. During the past 3 days, he has also had nausea and intermittent blurred vision. He was diagnosed with HIV infection 1 month ago but has not started antiretroviral therapy. Temperature is 38.1°C (100.6°F), pulse is 92/min, and blood pressure is 124/78 mm Hg. He is alert and oriented. There is mild neck stiffness; there are no focal neurologic deficits. CD4+ T lymphocyte count is 42/mm3. CT of the head shows no abnormalities. Lumbar puncture shows an opening pressure of 32 cm H2O; cerebrospinal fluid has a leukocyte count of 20/mm3 (90% lymphocytes), protein of 70 mg/dL, and glucose of 35 mg/dL (serum glucose 95 mg/dL). India ink stain shows encapsulated yeast forms, and cryptococcal antigen is positive. Which of the following is the most appropriate initial pharmacotherapy? A. Dexamethasone and fluconazole B. Liposomal amphotericin B and flucytosine C. Fluconazole alone D. Fluconazole and antiretroviral therapy E. Ceftriaxone and vancomycin"
+  },
+  {
+   "id": "imaging-2026-0478",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 고령 남자의 철결핍빈혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0478.md",
+   "snippet": "68세 남자가 3개월 전부터 쉽게 피로하고 계단을 오를 때 숨이 차서 왔다. 혈변이나 흑색변은 없었다고 한다. 고혈압으로 암로디핀을 복용하고 있으며 진통소염제나 항혈소판제는 먹지 않는다. 6개월 동안 체중이 2 kg 줄었다. 혈압 128/76 mmHg, 맥박 92회/분이다. 결막이 창백하고 복부 진찰에서 이상은 없다. 혈색소 9.1 g/dL, 평균적혈구용적 71 fL, 적혈구분포폭 18.5 %, 백혈구 6,800/mm³, 혈소",
+   "text": "혈액·종양 혈액·종양 — 고령 남자의 철결핍빈혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d 68세 남자가 3개월 전부터 쉽게 피로하고 계단을 오를 때 숨이 차서 왔다. 혈변이나 흑색변은 없었다고 한다. 고혈압으로 암로디핀을 복용하고 있으며 진통소염제나 항혈소판제는 먹지 않는다. 6개월 동안 체중이 2 kg 줄었다. 혈압 128/76 mmHg, 맥박 92회/분이다. 결막이 창백하고 복부 진찰에서 이상은 없다. 혈색소 9.1 g/dL, 평균적혈구용적 71 fL, 적혈구분포폭 18.5 %, 백혈구 6,800/mm³, 혈소판 410,000/mm³, 페리틴 7 ng/mL, 대변 잠혈검사 음성이다. 다음 검사로 가장 적절한 것은? A. 혈색소 전기영동 B. 경구 철분 투여 후 3개월 뒤 혈색소 재검 C. 복부·골반 컴퓨터단층촬영 D. 상부위장관내시경과 대장내시경 E. 골수 흡인과 생검"
+  },
+  {
+   "id": "imaging-2026-0477",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 헬리코박터 제균 확인 검사의 시점",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0477.md",
+   "snippet": "45세 남자가 1주 전 헬리코박터 파일로리 제균 치료를 마치고 외래에 왔다. 2개월 전 명치 통증으로 상부위장관내시경을 하여 합병증이 없는 십이지장궤양을 진단받았고, 조직검사에서 헬리코박터 파일로리가 확인되어 14일 동안 제균 치료를 받았다. 궤양 치료를 위해 양성자펌프억제제를 지금도 하루 한 번 복용하고 있다. 통증은 없어졌고 활력징후와 복부 진찰 소견은 정상이다. 제균 여부를 확인하는 방법으로 가장 적절한 것은? A. 치료",
+   "text": "소화기 소화기·간담췌 — 헬리코박터 제균 확인 검사의 시점 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d 45세 남자가 1주 전 헬리코박터 파일로리 제균 치료를 마치고 외래에 왔다. 2개월 전 명치 통증으로 상부위장관내시경을 하여 합병증이 없는 십이지장궤양을 진단받았고, 조직검사에서 헬리코박터 파일로리가 확인되어 14일 동안 제균 치료를 받았다. 궤양 치료를 위해 양성자펌프억제제를 지금도 하루 한 번 복용하고 있다. 통증은 없어졌고 활력징후와 복부 진찰 소견은 정상이다. 제균 여부를 확인하는 방법으로 가장 적절한 것은? A. 치료 종료 4주 뒤 양성자펌프억제제를 2주 끊고 요소호기검사 B. 지금 양성자펌프억제제를 계속 먹으면서 요소호기검사 C. 치료 종료 4주 뒤 혈청 헬리코박터 IgG 항체검사 D. 지금 내시경을 다시 하여 신속요소분해효소검사 E. 증상이 없으므로 추가 검사 없이 경과 관찰"
+  },
+  {
+   "id": "imaging-2026-0476",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 정기 산전 초음파의 태아 머리 단면과 계측",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0476.md",
+   "snippet": "임신 20주 임신부가 정기 산전진찰을 위해 외래에 왔다. 특별한 증상은 없고 지금까지 산전검사에서 이상 소견은 없었다. 혈압 116/72 mmHg 이고 자궁저부 높이는 배꼽 높이이다. 태아 정밀 초음파검사를 하였고, 태아 머리의 가로단면 초음파 사진은 그림과 같다. 이 단면을 표준으로 하여 측정하는 태아 계측치로 가장 적절한 것은? A. 목덜미 투명대 두께 B. 머리엉덩길이 C. 양두정경 D. 소뇌 가로지름 E. 측뇌실 뒤뿔 ",
+   "text": "산부인과 산과 — 정기 산전 초음파의 태아 머리 단면과 계측 opendata kmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d 임신 20주 임신부가 정기 산전진찰을 위해 외래에 왔다. 특별한 증상은 없고 지금까지 산전검사에서 이상 소견은 없었다. 혈압 116/72 mmHg 이고 자궁저부 높이는 배꼽 높이이다. 태아 정밀 초음파검사를 하였고, 태아 머리의 가로단면 초음파 사진은 그림과 같다. 이 단면을 표준으로 하여 측정하는 태아 계측치로 가장 적절한 것은? A. 목덜미 투명대 두께 B. 머리엉덩길이 C. 양두정경 D. 소뇌 가로지름 E. 측뇌실 뒤뿔 너비"
+  },
+  {
+   "id": "imaging-2026-0475",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 당뇨병 환자의 첫 안저 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "fundus"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0475.md",
+   "snippet": "A patient with type 2 diabetes mellitus for 15 years comes to the ophthalmologist for a first dilated eye examination. The patient has no visual symptoms. Current medications are metformin and insulin glargine; the most recent hemoglobin A1",
+   "text": "안과 안과 — 당뇨병 환자의 첫 안저 검사 opendata usmle_style fundus 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d A patient with type 2 diabetes mellitus for 15 years comes to the ophthalmologist for a first dilated eye examination. The patient has no visual symptoms. Current medications are metformin and insulin glargine; the most recent hemoglobin A1c was 9.4%. Today, blood pressure is 138/84 mm Hg. Corrected visual acuity is 20/25 in both eyes, and intraocular pressures are normal. A color fundus photograph of the right eye is shown. Which of the following is the most likely diagnosis? A. Severe nonproliferative diabetic retinopathy B. Proliferative diabetic retinopathy C. Central retinal vein occlusion D. Hypertensive retinopathy E. Mild nonproliferative diabetic retinopathy"
+  },
+  {
+   "id": "imaging-2026-0474",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 등에 천천히 커지는 갈색 판의 더모스코피와 조직 소견",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+   "confidence": "high",
+   "date": "2026-10-29",
+   "path": "content/imaging/2026/imaging-2026-0474.md",
+   "snippet": "60세 남자가 1년 전부터 등에 생긴 갈색 반점이 천천히 커져 피부과에 왔다. 가렵거나 아프지 않으나 샤워 뒤 가끔 얇은 딱지가 앉았다가 떨어진다고 한다. 젊었을 때 20년 동안 야외 건설 현장에서 일했다. 등 위쪽에 지름 약 1 cm 의 경계가 불규칙하고 납작한 갈색 판이 있으며 단단하게 만져지지 않는다. 다른 곳에 비슷한 병변은 없다. 병변의 더모스코피 사진은 그림과 같다. 이 병변을 조직검사하였을 때 예상되는 소견으로 가",
+   "text": "피부과 피부 — 등에 천천히 커지는 갈색 판의 더모스코피와 조직 소견 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d 60세 남자가 1년 전부터 등에 생긴 갈색 반점이 천천히 커져 피부과에 왔다. 가렵거나 아프지 않으나 샤워 뒤 가끔 얇은 딱지가 앉았다가 떨어진다고 한다. 젊었을 때 20년 동안 야외 건설 현장에서 일했다. 등 위쪽에 지름 약 1 cm 의 경계가 불규칙하고 납작한 갈색 판이 있으며 단단하게 만져지지 않는다. 다른 곳에 비슷한 병변은 없다. 병변의 더모스코피 사진은 그림과 같다. 이 병변을 조직검사하였을 때 예상되는 소견으로 가장 적절한 것은? A. 표피 안에 갇힌 각질 낭과 기저양 각질형성세포의 증식 B. 표피 전층을 채운 비정형 각질형성세포와 이상각화 C. 깊이 내려갈수록 작아지는 진피 내 멜라닌세포 둥지 D. 표피 아래에 붙은 기저양세포 둥지와 가장자리 울타리 배열 E. 표피 진피 경계를 따라 퍼진 비정형 멜라닌세포 둥지"
   },
   {
    "id": "cn.rheum.gout.hla-b5801-before-allopurinol",
