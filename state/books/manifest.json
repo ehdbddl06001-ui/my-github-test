@@ -479,11 +479,11 @@
    ]
   },
   "산부인과": {
-   "hash": "2285ab1b9d8b33d2da29",
-   "version": 14,
-   "date": "2026-10-28",
+   "hash": "e57704b6fd79cb26e31e",
+   "version": 15,
+   "date": "2026-10-29",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 25,
+   "pages": 26,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -504,60 +504,66 @@
      "concept_hash": "64ffae546fabcf71",
      "concept_version": 1
     },
+    "cn.obgyn.female-sexual-dysfunction.management": {
+     "title": "여성 성기능 장애 — 고통이 기준, 폐경 성교통은 국소 치료",
+     "page": 9,
+     "concept_hash": "2437290fb8c2d1a4",
+     "concept_version": 1
+    },
     "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
      "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
-     "page": 9,
+     "page": 10,
      "concept_hash": "b5e8475cfea79a62",
      "concept_version": 1
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
      "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
-     "page": 11,
+     "page": 12,
      "concept_hash": "54c314318cffecef",
      "concept_version": 3
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 14,
+     "page": 15,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
     "cn.obgyn.granulosa-cell-tumor.tumor-marker": {
      "title": "과립막세포종 — 추적 표지자는 기원 세포가 정한다",
-     "page": 17,
+     "page": 18,
      "concept_hash": "edb8da638ad18885",
      "concept_version": 2
     },
     "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
      "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
-     "page": 19,
+     "page": 20,
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
      "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
-     "page": 20,
+     "page": 21,
      "concept_hash": "55af692609810631",
      "concept_version": 2
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 22,
+     "page": 23,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 24,
+     "page": 25,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "2a1e47dc80fae02a8fc61adca83cbacf",
-    "version": 14,
-    "uploaded": "2026-10-28T10:20:41+09:00"
+    "md5": "5bb072f50df8363b464057cbb2bd4ee5",
+    "version": 15,
+    "uploaded": "2026-10-29T11:14:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -573,10 +579,11 @@
     "MedKOS_학습서_산부인과_v11_2026-10-14.pdf",
     "MedKOS_학습서_산부인과_v12_2026-10-18.pdf",
     "MedKOS_학습서_산부인과_v13_2026-10-24.pdf",
-    "MedKOS_학습서_산부인과_v14_2026-10-28.pdf"
+    "MedKOS_학습서_산부인과_v14_2026-10-28.pdf",
+    "MedKOS_학습서_산부인과_v15_2026-10-29.pdf"
    ],
    "changes": [
-    "새 단원: 폐경 호르몬 치료 — 증상·나이·금기로 정한다"
+    "새 단원: 여성 성기능 장애 — 고통이 기준, 폐경 성교통은 국소 치료"
    ]
   },
   "정신건강의학과": {
@@ -633,11 +640,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "7d1982db1f7938eccc36",
-   "version": 30,
-   "date": "2026-10-28",
+   "hash": "6395af548d59ec9af24b",
+   "version": 31,
+   "date": "2026-10-29",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 50,
+   "pages": 49,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -792,16 +799,22 @@
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 49,
+     "page": 48,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
+    },
+    "cn.rheum.gout.hla-b5801-before-allopurinol": {
+     "title": "Planning Long-Term Urate Lowering for a Korean Man with Reduced Kidney Function",
+     "page": 49,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "5c816c7553cb654c86b8fa7c01663ab5",
-    "version": 30,
-    "uploaded": "2026-10-28T10:20:41+09:00"
+    "md5": "16f40b7fa5f1b441a0d7c6457dc2806d",
+    "version": 31,
+    "uploaded": "2026-10-29T11:14:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -833,10 +846,11 @@
     "MedKOS_학습서_류마티스내과_v27_2026-10-21.pdf",
     "MedKOS_학습서_류마티스내과_v28_2026-10-22.pdf",
     "MedKOS_학습서_류마티스내과_v29_2026-10-23.pdf",
-    "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf"
+    "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf",
+    "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf"
    ],
    "changes": [
-    "내용 갱신: 베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단 (정리본 v1 → v2)"
+    "새 단원: Planning Long-Term Urate Lowering for a Korean Man with Reduced Kidney Function"
    ]
   },
   "호흡기내과": {
@@ -1382,13 +1396,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "5e150d2eef72515f23df97470ad47416",
+   "md5": "e576208a2e9bc22f9bf8499cd5717bed",
    "version": null,
-   "uploaded": "2026-10-28T10:20:41+09:00"
+   "uploaded": "2026-10-29T11:14:32+09:00"
   }
  },
- "updated": "2026-10-28"
+ "updated": "2026-10-29"
 }

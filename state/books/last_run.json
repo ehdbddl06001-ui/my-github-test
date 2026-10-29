@@ -1,12 +1,12 @@
 {
- "started": "2026-10-28T09:38:45+09:00",
+ "started": "2026-10-29T10:09:50+09:00",
  "built": [
-  "정형외과",
   "산부인과",
   "류마티스내과"
  ],
  "skipped": [
   "응급의학과",
+  "정형외과",
   "피부과",
   "순환기내과",
   "내분비내과",
@@ -29,20 +29,12 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "정형외과": [],
   "산부인과": [],
   "류마티스내과": []
  },
  "notes": {
-  "정형외과": [
-   "마지막 쪽 내용이 적다(7%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
-  ],
   "산부인과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 8쪽에 빈 공간이 크다(내용 40%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 8쪽 왼쪽 단 아래가 비어 있다(빈 공간 60%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 8쪽 오른쪽 단 아래가 비어 있다(빈 공간 57%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 10쪽 왼쪽 단 아래가 비어 있다(빈 공간 32%)"
+   "배치 탐색 뒤에도 남은 빈 공간: 11쪽 왼쪽 단 아래가 비어 있다(빈 공간 32%)"
   ],
   "류마티스내과": [
    "배치 탐색 뒤에도 남은 빈 공간: 15쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)",
@@ -61,31 +53,8 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "정형외과": {
-   "tried": 152,
-   "diagram_after_section": {
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#fig:f1": 9,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging": 14,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 42,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
-    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#fig:f1": 9,
-    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale": 20,
-    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#shrink": 0.88,
-    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#pad": 0,
-    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#col": false,
-    "u-cn-ortho-odontoid-fracture-diagnosis": 14,
-    "u-cn-ortho-odontoid-fracture-diagnosis#shrink": 1.0,
-    "u-cn-ortho-odontoid-fracture-diagnosis#pad": 14,
-    "u-cn-ortho-odontoid-fracture-diagnosis#col": false,
-    "u-cn-ortho-scfe-in-situ-fixation": 17,
-    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
-    "u-cn-ortho-scfe-in-situ-fixation#pad": 0,
-    "u-cn-ortho-scfe-in-situ-fixation#col": true
-   }
-  },
   "산부인과": {
-   "tried": 230,
+   "tried": 249,
    "diagram_after_section": {
     "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 21,
     "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 1.0,
@@ -95,10 +64,14 @@
     "u-cn-obgyn-pcos-infertility-ovulation-induction#shrink": 1.0,
     "u-cn-obgyn-pcos-infertility-ovulation-induction#pad": 42,
     "u-cn-obgyn-pcos-infertility-ovulation-induction#col": false,
-    "u-cn-obgyn-menopause-hormone-therapy-decision": 17,
+    "u-cn-obgyn-menopause-hormone-therapy-decision": 13,
     "u-cn-obgyn-menopause-hormone-therapy-decision#shrink": 1.0,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#pad": 0,
+    "u-cn-obgyn-menopause-hormone-therapy-decision#pad": 42,
     "u-cn-obgyn-menopause-hormone-therapy-decision#col": false,
+    "u-cn-obgyn-female-sexual-dysfunction-management": 14,
+    "u-cn-obgyn-female-sexual-dysfunction-management#shrink": 0.76,
+    "u-cn-obgyn-female-sexual-dysfunction-management#pad": 0,
+    "u-cn-obgyn-female-sexual-dysfunction-management#col": false,
     "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation": 17,
     "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#shrink": 1.0,
     "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#pad": 0,
@@ -158,50 +131,46 @@
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
     "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#col": false,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 15,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 16,
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 14,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 0,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": true,
+    "u-cn-rheum-painful-shoulder-capsulitis-vs-rotator-cuff": 16,
+    "u-cn-rheum-painful-shoulder-capsulitis-vs-rotator-cuff#shrink": 1.0,
+    "u-cn-rheum-painful-shoulder-capsulitis-vs-rotator-cuff#pad": 0,
+    "u-cn-rheum-painful-shoulder-capsulitis-vs-rotator-cuff#col": true
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-28T10:20:41+09:00",
+ "finished": "2026-10-29T11:14:32+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "정형외과": {
-    "file": "MedKOS_학습서_정형외과.pdf",
-    "status": "uploaded",
-    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "kept_id": true,
-    "md5": "9b5fb91d24ce6594f5bc6342632e74b2",
-    "archive": "MedKOS_학습서_정형외과_v15_2026-10-28.pdf"
-   },
    "산부인과": {
     "file": "MedKOS_학습서_산부인과.pdf",
     "status": "uploaded",
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
     "kept_id": true,
-    "md5": "2a1e47dc80fae02a8fc61adca83cbacf",
-    "archive": "MedKOS_학습서_산부인과_v14_2026-10-28.pdf"
+    "md5": "5bb072f50df8363b464057cbb2bd4ee5",
+    "archive": "MedKOS_학습서_산부인과_v15_2026-10-29.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "5c816c7553cb654c86b8fa7c01663ab5",
-    "archive": "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf"
+    "md5": "16f40b7fa5f1b441a0d7c6457dc2806d",
+    "archive": "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "5e150d2eef72515f23df97470ad47416"
+    "md5": "e576208a2e9bc22f9bf8499cd5717bed"
    }
   },
-  "at": "2026-10-28T10:20:41+09:00"
+  "at": "2026-10-29T11:14:32+09:00"
  }
 }
