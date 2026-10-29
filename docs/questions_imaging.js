@@ -2,6 +2,1154 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0476",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "산과 — 정기 산전 초음파의 태아 머리 단면과 계측",
+  "type": "산과 — 정기 산전 초음파의 태아 머리 단면과 계측",
+  "modality": "ULTRASOUND",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-29",
+  "vignette": "임신 20주 임신부가 정기 산전진찰을 위해 외래에 왔다. 특별한 증상은 없고 지금까지 산전검사에서 이상 소견은 없었다. 혈압 116/72 mmHg 이고 자궁저부 높이는 배꼽 높이이다. 태아 정밀 초음파검사를 하였고, 태아 머리의 가로단면 초음파 사진은 그림과 같다.",
+  "question": "이 단면을 표준으로 하여 측정하는 태아 계측치로 가장 적절한 것은?",
+  "options": [
+   "목덜미 투명대 두께",
+   "머리엉덩길이",
+   "양두정경",
+   "소뇌 가로지름",
+   "측뇌실 뒤뿔 너비"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 타원형 두개골 반사테 안에 중앙선(대뇌낫) 에코가 지나고 그 가운데에 좌우 대칭인 시상이 보이며, 뒤쪽 소뇌는 보이지 않는다 — 시상 경유(trans-thalamic) 단면이다. 이 단면이 양두정경과 머리둘레를 재는 표준 단면이다.\n- 원리: <b>왜 시상 높이인가</b>: 머리 계측은 매번 같은 높이에서 재야 주수별 기준곡선과 비교할 수 있다. 시상과 투명사이막공간은 정중선 가까이 있어 찾기 쉽고, 이 높이에서 두개골 단면이 가장 넓고 대칭인 타원이 된다. 그래서 양두정경(바깥-안 또는 바깥-바깥 경계)과 머리둘레를 이 단면에서 잰다.<br> <b>세 가지 머리 단면</b>: 같은 가로단면이라도 탐촉자를 조금 위로 올리면 측뇌실 뒤뿔(맥락얼기를 담은 방)이 보이는 <b>측뇌실 경유 단면</b>이 되고, 뒤쪽을 아래로 기울이면 소뇌와 대수조가 보이는 <b>소뇌 경유 단면</b>이 된다. 각 단면은 재는 것이 다르다 — 측뇌실 너비(뇌실확장), 소뇌 가로지름·대수조(후두와 이상).<br> <b>임상 연결</b>: 2분기 이후 주수 확인·태아 성장 평가에는 양두정경·머리둘레·복부둘레·대퇴골길이를 함께 쓴다. 1분기 주수 확인은 머리엉덩길이가 가장 정확하다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">시상 경유 단면(정답)</th><th>측뇌실 경유 단면(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>보이는 구조</td><td><b>정중선과 그 가운데 대칭인 시상</b>, 투명사이막공간</td><td>측뇌실 뒤뿔과 그 안의 맥락얼기</td></tr> <tr><td>높이</td><td>조금 아래(시상 높이)</td><td>조금 위(뇌실 방 높이)</td></tr> <tr><td>재는 것</td><td>양두정경·머리둘레</td><td>측뇌실 뒤뿔 너비(10 mm 이상이면 뇌실확장)</td></tr> </tbody></table> 소뇌가 보이면 소뇌 경유 단면, 맥락얼기를 담은 뇌실 방이 주인공이면 측뇌실 경유 단면, 정중선 가운데 시상이 보이면 시상 경유 단면이다.\n- 오답 이유:\n  - ① 목덜미 투명대 두께는 임신 11~14주 태아의 정중 시상단면에서 목 뒤 피하 액체를 잴 때 정답이 된다.\n  - ② 머리엉덩길이는 1분기(대략 14주 이전) 태아 전체의 정중 시상단면에서 주수를 정할 때 정답이 된다.\n  - ④ 소뇌 가로지름은 탐촉자를 뒤로 기울여 소뇌 두 반구와 대수조가 보이는 소뇌 경유 단면일 때 정답이 된다.\n  - ⑤ 측뇌실 뒤뿔 너비는 시상보다 조금 위에서 맥락얼기를 담은 뇌실 방이 보이는 측뇌실 경유 단면일 때 정답이 된다.\n- 함정: 머리 가로단면이면 모두 같다고 보고 아무 계측이나 고르는 것 — 보이는 구조(시상·뇌실 방·소뇌)로 단면을 먼저 정해야 한다.\n- 제작 가정: FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신 20주 정기 산전진찰 상황을 가정했다 (가정한 정보: 임신 20주 · 정기 산전진찰)\n- 학습목표: 태아 머리 가로단면 초음파에서 중앙선과 대칭인 시상이 보이고 소뇌가 없는 시상 경유 단면을 알아보고, 이 단면이 양두정경·머리둘레의 표준 계측 단면임을 안다\n- 근거·출처: Salomon LJ, Alfirevic Z, Da Silva Costa F, et al. ISUOG Practice Guidelines: ultrasound assessment of fetal biometry and growth. Ultrasound Obstet Gynecol 2019;53:715-723 · Burgos-Artizzu XP, Coronado-Gutiérrez D, Valenzuela-Alcaraz B, et al. Evaluation of deep convolutional neural networks for automatic classification of common maternal fetal ultrasound planes. Sci Rep 2020;10:10200\n\n## 출처\n- FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01068_Plane3_4_of_5 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "타원형 두개골 반사테 안에 중앙선(대뇌낫) 에코가 지나고 그 가운데에 좌우 대칭인 시상이 보이며, 뒤쪽 소뇌는 보이지 않는다 — 시상 경유(trans-thalamic) 단면이다. 이 단면이 양두정경과 머리둘레를 재는 표준 단면이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 시상 높이인가</b>: 머리 계측은 매번 같은 높이에서 재야 주수별 기준곡선과 비교할 수 있다. 시상과 투명사이막공간은 정중선 가까이 있어 찾기 쉽고, 이 높이에서 두개골 단면이 가장 넓고 대칭인 타원이 된다. 그래서 양두정경(바깥-안 또는 바깥-바깥 경계)과 머리둘레를 이 단면에서 잰다.<br> <b>세 가지 머리 단면</b>: 같은 가로단면이라도 탐촉자를 조금 위로 올리면 측뇌실 뒤뿔(맥락얼기를 담은 방)이 보이는 <b>측뇌실 경유 단면</b>이 되고, 뒤쪽을 아래로 기울이면 소뇌와 대수조가 보이는 <b>소뇌 경유 단면</b>이 된다. 각 단면은 재는 것이 다르다 — 측뇌실 너비(뇌실확장), 소뇌 가로지름·대수조(후두와 이상).<br> <b>임상 연결</b>: 2분기 이후 주수 확인·태아 성장 평가에는 양두정경·머리둘레·복부둘레·대퇴골길이를 함께 쓴다. 1분기 주수 확인은 머리엉덩길이가 가장 정확하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">시상 경유 단면(정답)</th><th>측뇌실 경유 단면(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>보이는 구조</td><td><b>정중선과 그 가운데 대칭인 시상</b>, 투명사이막공간</td><td>측뇌실 뒤뿔과 그 안의 맥락얼기</td></tr> <tr><td>높이</td><td>조금 아래(시상 높이)</td><td>조금 위(뇌실 방 높이)</td></tr> <tr><td>재는 것</td><td>양두정경·머리둘레</td><td>측뇌실 뒤뿔 너비(10 mm 이상이면 뇌실확장)</td></tr> </tbody></table> 소뇌가 보이면 소뇌 경유 단면, 맥락얼기를 담은 뇌실 방이 주인공이면 측뇌실 경유 단면, 정중선 가운데 시상이 보이면 시상 경유 단면이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 목덜미 투명대 두께는 임신 11~14주 태아의 정중 시상단면에서 목 뒤 피하 액체를 잴 때 정답이 된다.\n② 머리엉덩길이는 1분기(대략 14주 이전) 태아 전체의 정중 시상단면에서 주수를 정할 때 정답이 된다.\n④ 소뇌 가로지름은 탐촉자를 뒤로 기울여 소뇌 두 반구와 대수조가 보이는 소뇌 경유 단면일 때 정답이 된다.\n⑤ 측뇌실 뒤뿔 너비는 시상보다 조금 위에서 맥락얼기를 담은 뇌실 방이 보이는 측뇌실 경유 단면일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "머리 가로단면이면 모두 같다고 보고 아무 계측이나 고르는 것 — 보이는 구조(시상·뇌실 방·소뇌)로 단면을 먼저 정해야 한다."
+   },
+   {
+    "k": "제작 가정",
+    "v": "FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신 20주 정기 산전진찰 상황을 가정했다 (가정한 정보: 임신 20주 · 정기 산전진찰)"
+   },
+   {
+    "k": "학습목표",
+    "v": "태아 머리 가로단면 초음파에서 중앙선과 대칭인 시상이 보이고 소뇌가 없는 시상 경유 단면을 알아보고, 이 단면이 양두정경·머리둘레의 표준 계측 단면임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Salomon LJ, Alfirevic Z, Da Silva Costa F, et al. ISUOG Practice Guidelines: ultrasound assessment of fetal biometry and growth. Ultrasound Obstet Gynecol 2019;53:715-723 · Burgos-Artizzu XP, Coronado-Gutiérrez D, Valenzuela-Alcaraz B, et al. Evaluation of deep convolutional neural networks for automatic classification of common maternal fetal ultrasound planes. Sci Rep 2020;10:10200 ## 출처 FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01068_Plane3_4_of_5 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "정중선 가운데 대칭인 시상이 보이고 소뇌가 없는 머리 가로단면은 시상 경유 단면이며, 양두정경·머리둘레를 재는 표준 단면이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "측뇌실 경유 단면은 맥락얼기를 담은 측뇌실 뒤뿔이 주인공이다 — 이 단면은 정중선 가운데 시상이 보이는 높이다",
+   "steps": 2,
+   "chain": [
+    "영상: 타원형 두개골 안 정중선과 그 가운데 대칭인 시상, 소뇌 없음 → 시상 경유 단면",
+    "시상 경유 단면 → 양두정경·머리둘레의 표준 계측 단면"
+   ],
+   "key": [
+    {
+     "item": "영상: 정중선 에코와 그 가운데 좌우 대칭인 시상",
+     "why": "시상 경유 단면을 정하는 구조",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 뒤쪽에 소뇌가 보이지 않음",
+     "why": "소뇌 경유 단면 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "임신 20주",
+     "why": "2분기라 머리엉덩길이·목덜미 투명대의 시기가 아니다(제작 가정)",
+     "also": []
+    },
+    {
+     "item": "정기 산전진찰",
+     "why": "이상 소견을 찾는 상황이 아니라 표준 계측을 묻는 맥락(제작 가정)",
+     "also": []
+    }
+   ],
+   "summary": "정중선 가운데 대칭인 시상이 보이고 소뇌가 없는 시상 경유 단면이다. 이 단면에서 양두정경과 머리둘레를 잰다.",
+   "switch": {
+    "choice": "D",
+    "condition": "탐촉자를 뒤로 기울여 소뇌 두 반구와 대수조가 보이는 단면이었다면 소뇌 가로지름을 잰다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0476.png",
+   "caption": "태아 초음파 정지 영상, 화면 오른쪽 위 문자는 기기 설정값 — 원본 그대로 축소만 (FETAL_PLANES_DB, Zenodo, CC BY 4.0) ※ 발문의 임상 상황은 문항 구성을 위한 가정이다 — 원 데이터에는 나이·병력이 없다",
+   "alt": "ULTRASOUND 영상"
+  },
+  "attribution": {
+   "dataset": "FETAL_PLANES_DB: Common maternal-fetal ultrasound images",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://zenodo.org/records/3904280",
+   "asset_id": "FETALPLANES-Patient01068_Plane3_4_of_5",
+   "text": "FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01068_Plane3_4_of_5"
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0475",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "안과 — 당뇨병 환자의 첫 안저 검사",
+  "type": "안과 — 당뇨병 환자의 첫 안저 검사",
+  "modality": "FUNDUS",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-29",
+  "vignette": "A patient with type 2 diabetes mellitus for 15 years comes to the ophthalmologist for a first dilated eye examination. The patient has no visual symptoms. Current medications are metformin and insulin glargine; the most recent hemoglobin A1c was 9.4%. Today, blood pressure is 138/84 mm Hg. Corrected visual acuity is 20/25 in both eyes, and intraocular pressures are normal. A color fundus photograph of the right eye is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Severe nonproliferative diabetic retinopathy",
+   "Proliferative diabetic retinopathy",
+   "Central retinal vein occlusion",
+   "Hypertensive retinopathy",
+   "Mild nonproliferative diabetic retinopathy"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The photograph shows many dot-and-blot intraretinal hemorrhages scattered through all four quadrants, clusters of yellow hard exudates, and pale fluffy cotton-wool spots, with no new vessels on the disc or elsewhere and no preretinal or vitreous hemorrhage. Extensive hemorrhages in all four quadrants without neovascularization meet the definition of severe nonproliferative diabetic retinopathy, which carries a high 1-year risk of progression to proliferative disease.\n- 원리: <b>Why the lesions appear in this order</b>: chronic hyperglycemia damages retinal capillaries — pericytes are lost, the basement membrane thickens, and the capillary wall bulges into <b>microaneurysms</b>. Leaky capillaries let blood and lipoprotein into the retina (<b>dot-blot hemorrhages, hard exudates</b>); closed capillaries cause ischemic swelling of nerve-fiber axons (<b>cotton-wool spots</b>).<br> <b>Why severity is graded by ischemia</b>: the more retina that is ischemic, the more VEGF it releases. The 4-2-1 rule (severe hemorrhages in 4 quadrants, venous beading in 2, intraretinal microvascular abnormalities in 1) marks the stage just before VEGF drives <b>new vessels</b> — the defining feature of proliferative disease.<br> <b>Why it matters now</b>: severe NPDR needs close ophthalmology follow-up (every 2–4 months) and treatment is considered before neovascularization bleeds; exudates near the fovea also call for OCT to look for macular edema.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Severe NPDR (answer)</th><th>Proliferative DR (closest distractor)</th></tr></thead><tbody> <tr><td>New vessels</td><td><b>Absent</b></td><td>On the disc or elsewhere (fine, tortuous loops)</td></tr> <tr><td>Hemorrhage location</td><td>Intraretinal dot-blot, all 4 quadrants</td><td>May add preretinal or vitreous hemorrhage</td></tr> <tr><td>Driver</td><td>Capillary leakage and closure</td><td>VEGF from widespread ischemia</td></tr> <tr><td>Usual step</td><td>Close follow-up ± early treatment</td><td>Panretinal photocoagulation or anti-VEGF</td></tr> </tbody></table> Count the ischemic lesions for the NPDR grade, but look for new vessels first — any neovascularization makes it proliferative regardless of how many hemorrhages there are.\n- 오답 이유:\n  - (B) Proliferative diabetic retinopathy would be correct if fine new vessels were seen on the disc or along the arcades, or if there were preretinal or vitreous hemorrhage.\n  - (C) Central retinal vein occlusion would be correct with sudden painless vision loss, dilated tortuous veins, flame hemorrhages radiating from a swollen disc, usually in one eye.\n  - (D) Hypertensive retinopathy would be correct with arteriolar narrowing and arteriovenous nicking, flame hemorrhages, and, when severe, disc edema in a patient with very high pressure.\n  - (E) Mild nonproliferative diabetic retinopathy would be correct if the fundus showed only a few microaneurysms without widespread hemorrhages or cotton-wool spots.\n- 함정: Calling it proliferative because the fundus looks crowded with lesions — the grade jumps to proliferative only when new vessels or preretinal/vitreous blood appear.\n- 제작 가정: IDRiD 는 안저 사진과 망막병증 등급만 있고 나이·성별·병력이 없다 — 당뇨병 유병 기간·HbA1c·혈압·시력을 가정했다 (가정한 정보: type 2 diabetes mellitus for 15 years · hemoglobin A1c was 9.4% · blood pressure is 138/84 mm Hg · visual acuity is 20/25 in both eyes)\n- 학습목표: 당뇨병 환자의 안저 사진에서 네 사분면의 망막내 출혈·경성삼출물·면화반을 읽고 신생혈관이 없음을 확인해 중증 비증식 당뇨망막병증으로 분류한다\n- 근거·출처: Flaxel CJ, Adelman RA, Bailey ST, et al. Diabetic Retinopathy Preferred Practice Pattern. Ophthalmology 2020;127(1):P66-P145 · Wilkinson CP, Ferris FL, Klein RE, et al. Proposed international clinical diabetic retinopathy and diabetic macular edema disease severity scales. Ophthalmology 2003;110:1677-1682\n\n## 출처\n- IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_341 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photograph shows many dot-and-blot intraretinal hemorrhages scattered through all four quadrants, clusters of yellow hard exudates, and pale fluffy cotton-wool spots, with no new vessels on the disc or elsewhere and no preretinal or vitreous hemorrhage. Extensive hemorrhages in all four quadrants without neovascularization meet the definition of severe nonproliferative diabetic retinopathy, which carries a high 1-year risk of progression to proliferative disease."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the lesions appear in this order</b>: chronic hyperglycemia damages retinal capillaries — pericytes are lost, the basement membrane thickens, and the capillary wall bulges into <b>microaneurysms</b>. Leaky capillaries let blood and lipoprotein into the retina (<b>dot-blot hemorrhages, hard exudates</b>); closed capillaries cause ischemic swelling of nerve-fiber axons (<b>cotton-wool spots</b>).<br> <b>Why severity is graded by ischemia</b>: the more retina that is ischemic, the more VEGF it releases. The 4-2-1 rule (severe hemorrhages in 4 quadrants, venous beading in 2, intraretinal microvascular abnormalities in 1) marks the stage just before VEGF drives <b>new vessels</b> — the defining feature of proliferative disease.<br> <b>Why it matters now</b>: severe NPDR needs close ophthalmology follow-up (every 2–4 months) and treatment is considered before neovascularization bleeds; exudates near the fovea also call for OCT to look for macular edema."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Severe NPDR (answer)</th><th>Proliferative DR (closest distractor)</th></tr></thead><tbody> <tr><td>New vessels</td><td><b>Absent</b></td><td>On the disc or elsewhere (fine, tortuous loops)</td></tr> <tr><td>Hemorrhage location</td><td>Intraretinal dot-blot, all 4 quadrants</td><td>May add preretinal or vitreous hemorrhage</td></tr> <tr><td>Driver</td><td>Capillary leakage and closure</td><td>VEGF from widespread ischemia</td></tr> <tr><td>Usual step</td><td>Close follow-up ± early treatment</td><td>Panretinal photocoagulation or anti-VEGF</td></tr> </tbody></table> Count the ischemic lesions for the NPDR grade, but look for new vessels first — any neovascularization makes it proliferative regardless of how many hemorrhages there are."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Proliferative diabetic retinopathy would be correct if fine new vessels were seen on the disc or along the arcades, or if there were preretinal or vitreous hemorrhage.\n(C) Central retinal vein occlusion would be correct with sudden painless vision loss, dilated tortuous veins, flame hemorrhages radiating from a swollen disc, usually in one eye.\n(D) Hypertensive retinopathy would be correct with arteriolar narrowing and arteriovenous nicking, flame hemorrhages, and, when severe, disc edema in a patient with very high pressure.\n(E) Mild nonproliferative diabetic retinopathy would be correct if the fundus showed only a few microaneurysms without widespread hemorrhages or cotton-wool spots."
+   },
+   {
+    "k": "함정",
+    "v": "Calling it proliferative because the fundus looks crowded with lesions — the grade jumps to proliferative only when new vessels or preretinal/vitreous blood appear."
+   },
+   {
+    "k": "제작 가정",
+    "v": "IDRiD 는 안저 사진과 망막병증 등급만 있고 나이·성별·병력이 없다 — 당뇨병 유병 기간·HbA1c·혈압·시력을 가정했다 (가정한 정보: type 2 diabetes mellitus for 15 years · hemoglobin A1c was 9.4% · blood pressure is 138/84 mm Hg · visual acuity is 20/25 in both eyes)"
+   },
+   {
+    "k": "학습목표",
+    "v": "당뇨병 환자의 안저 사진에서 네 사분면의 망막내 출혈·경성삼출물·면화반을 읽고 신생혈관이 없음을 확인해 중증 비증식 당뇨망막병증으로 분류한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Flaxel CJ, Adelman RA, Bailey ST, et al. Diabetic Retinopathy Preferred Practice Pattern. Ophthalmology 2020;127(1):P66-P145 · Wilkinson CP, Ferris FL, Klein RE, et al. Proposed international clinical diabetic retinopathy and diabetic macular edema disease severity scales. Ophthalmology 2003;110:1677-1682 ## 출처 IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_341 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "네 사분면의 망막내 출혈·경성삼출물·면화반이 있고 신생혈관이 없으면 중증 비증식 당뇨망막병증이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "증식 당뇨망막병증은 신생혈관(또는 망막앞·유리체 출혈)이 있어야 한다 — 이 안저에는 신생혈관이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 네 사분면의 점상·반점상 출혈 + 경성삼출물 + 면화반 → 비증식 당뇨망막병증 중 진행 단계",
+    "영상: 신생혈관·망막앞 출혈 없음 → 증식이 아니라 중증 비증식"
+   ],
+   "key": [
+    {
+     "item": "영상: 네 사분면에 흩어진 점상·반점상 망막내 출혈",
+     "why": "광범위한 출혈 — 경도·중등도가 아니라 중증 비증식 쪽",
+     "also": []
+    },
+    {
+     "item": "영상: 경성삼출물 군집과 흐릿한 면화반",
+     "why": "혈관 누출과 모세혈관 폐쇄(허혈)의 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 시신경유두와 혈관 활에 신생혈관이 없음",
+     "why": "증식 당뇨망막병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The patient has no visual symptoms",
+     "why": "급성 시력 저하가 없어 망막중심정맥폐쇄 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "type 2 diabetes mellitus for 15 years",
+     "why": "당뇨망막병증의 맥락(제작 가정) — 등급은 영상으로 정한다",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 138/84 mm Hg",
+     "why": "고혈압망막병증을 설명할 만큼 높지 않다(제작 가정)",
+     "also": []
+    }
+   ],
+   "summary": "네 사분면의 출혈·경성삼출물·면화반이 있고 신생혈관이 없다. 중증 비증식 당뇨망막병증이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "시신경유두나 혈관 활을 따라 가는 신생혈관 고리, 또는 망막앞·유리체 출혈이 보였다면 증식 당뇨망막병증이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0475.jpg",
+   "caption": "Color fundus photograph, unaltered apart from scaling (IDRiD, IEEE DataPort, CC BY 4.0 — no crop or adjustment) ※ The clinical scenario in the stem is an authoring assumption — the source dataset has no age or clinical history",
+   "alt": "FUNDUS 영상"
+  },
+  "attribution": {
+   "dataset": "Indian Diabetic Retinopathy Image Dataset (IDRiD)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://idrid.grand-challenge.org/Data/",
+   "asset_id": "IDRID-IDRiD_341",
+   "text": "IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_341"
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0474",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "피부 — 등에 천천히 커지는 갈색 판의 더모스코피와 조직 소견",
+  "type": "피부 — 등에 천천히 커지는 갈색 판의 더모스코피와 조직 소견",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-29",
+  "vignette": "60세 남자가 1년 전부터 등에 생긴 갈색 반점이 천천히 커져 피부과에 왔다. 가렵거나 아프지 않으나 샤워 뒤 가끔 얇은 딱지가 앉았다가 떨어진다고 한다. 젊었을 때 20년 동안 야외 건설 현장에서 일했다. 등 위쪽에 지름 약 1 cm 의 경계가 불규칙하고 납작한 갈색 판이 있으며 단단하게 만져지지 않는다. 다른 곳에 비슷한 병변은 없다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "이 병변을 조직검사하였을 때 예상되는 소견으로 가장 적절한 것은?",
+  "options": [
+   "표피 안에 갇힌 각질 낭과 기저양 각질형성세포의 증식",
+   "표피 전층을 채운 비정형 각질형성세포와 이상각화",
+   "깊이 내려갈수록 작아지는 진피 내 멜라닌세포 둥지",
+   "표피 아래에 붙은 기저양세포 둥지와 가장자리 울타리 배열",
+   "표피-진피 경계를 따라 퍼진 비정형 멜라닌세포 둥지"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 더모스코피에서 색소 그물이 없고, 옅은 갈색 판 위에 작은 청회색 점·소구가 흩어져 있으며 가는 짧은 모세혈관확장이 보인다 — 비멜라닌세포성 병변 가운데 기저세포암의 소견이다. 몸통의 납작한 판과 반복되는 얇은 딱지(작은 미란)는 표재성 기저세포암에 맞는다. 조직에서는 표피 아래면에 매달린 기저양세포 둥지가 여러 곳에서 보이고, 둥지 가장자리 세포가 울타리처럼 늘어서며 주변 기질과 틈(수축 틈)이 생긴다.\n- 원리: <b>더모스코피의 첫 갈림길 — 색소 그물</b>: 색소 그물은 표피 능선을 따라 멜라닌세포·멜라닌이 놓인 모양이라 멜라닌세포 병변(모반·흑색종)의 표지다. 그물이 없으면 먼저 비멜라닌세포 병변(기저세포암·지루각화증·혈관 병변)을 생각한다.<br> <b>왜 「청회색」인가</b>: 멜라닌이 진피 쪽 깊이 있으면 빛의 산란(틴들 효과)으로 갈색이 아니라 청회색으로 보인다. 기저세포암의 색소는 진피로 내려간 종양 둥지 안에 있어 청회색 점·소구·난원형 둥지로 보인다. 가는 짧은 모세혈관확장은 종양 위로 늘어난 얕은 혈관이다.<br> <b>조직과의 대응</b>: 표재성 기저세포암은 표피 기저층에서 진피 쪽으로 매달린 작은 둥지가 여럿 떨어져 있는 형태라, 임상적으로는 납작한 판으로 넓게 퍼진다. 둥지 가장자리의 울타리 배열과 수축 틈이 기저세포암의 조직학적 표지다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">기저세포암(정답)</th><th>흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>색소 그물</td><td><b>없음</b> — 멜라닌세포 병변이 아니다</td><td>있으면 불규칙하고 굵기·색이 고르지 않다</td></tr> <tr><td>청회색 구조</td><td>흩어진 점·소구·난원형 둥지</td><td>청백색 베일·불규칙 청회색 구역</td></tr> <tr><td>혈관</td><td>가는 짧은 또는 나뭇가지 모양 모세혈관확장</td><td>점·선 모양의 다형 혈관</td></tr> <tr><td>조직</td><td>기저양세포 둥지·울타리 배열·수축 틈</td><td>경계부를 따라 퍼진 비정형 멜라닌세포</td></tr> </tbody></table> 청회색만 보고 흑색종으로 가지 말고, 그물이 있는지부터 본다 — 그물 없는 청회색 소구는 기저세포암 쪽이다.\n- 오답 이유:\n  - ① 각질 낭과 기저양 각질형성세포 증식은 지루각화증이며, 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조가 보일 때 정답이 된다.\n  - ② 표피 전층의 비정형 각질형성세포는 보웬병(제자리 편평세포암)이며, 사구체 모양 혈관과 비늘 덮인 붉은 판이 보일 때 정답이 된다.\n  - ③ 깊이에 따라 작아지는 진피 내 멜라닌세포 둥지는 진피내 모반의 성숙이며, 대칭적인 부드러운 돔 모양 병변일 때 정답이 된다.\n  - ⑤ 경계부 비정형 멜라닌세포 둥지는 흑색종의 소견이며, 더모스코피에서 불규칙한 색소 그물·청백색 베일·비대칭이 보일 때 정답이 된다.\n- 함정: 청회색 구조를 보고 바로 흑색종을 고르는 것 — 색소 그물이 없고 청회색이 점·소구로 흩어져 있으면 기저세포암을 먼저 생각한다.\n- 학습목표: 더모스코피에서 색소 그물 없이 흩어진 청회색 점·소구와 가는 짧은 모세혈관확장을 기저세포암 소견으로 읽고, 그 조직 소견(표피에 붙은 기저양세포 둥지·가장자리 울타리 배열)을 예상한다\n- 근거·출처: Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Elsevier; 2018. Chapter 108: Basal Cell Carcinoma · Lallas A, Apalla Z, Argenziano G, et al. The dermatoscopic universe of basal cell carcinoma. Dermatol Pract Concept 2014;4(3):11-24\n\n## 출처\n- ISIC Archive ISIC_0001149 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 색소 그물이 없고, 옅은 갈색 판 위에 작은 청회색 점·소구가 흩어져 있으며 가는 짧은 모세혈관확장이 보인다 — 비멜라닌세포성 병변 가운데 기저세포암의 소견이다. 몸통의 납작한 판과 반복되는 얇은 딱지(작은 미란)는 표재성 기저세포암에 맞는다. 조직에서는 표피 아래면에 매달린 기저양세포 둥지가 여러 곳에서 보이고, 둥지 가장자리 세포가 울타리처럼 늘어서며 주변 기질과 틈(수축 틈)이 생긴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>더모스코피의 첫 갈림길 — 색소 그물</b>: 색소 그물은 표피 능선을 따라 멜라닌세포·멜라닌이 놓인 모양이라 멜라닌세포 병변(모반·흑색종)의 표지다. 그물이 없으면 먼저 비멜라닌세포 병변(기저세포암·지루각화증·혈관 병변)을 생각한다.<br> <b>왜 「청회색」인가</b>: 멜라닌이 진피 쪽 깊이 있으면 빛의 산란(틴들 효과)으로 갈색이 아니라 청회색으로 보인다. 기저세포암의 색소는 진피로 내려간 종양 둥지 안에 있어 청회색 점·소구·난원형 둥지로 보인다. 가는 짧은 모세혈관확장은 종양 위로 늘어난 얕은 혈관이다.<br> <b>조직과의 대응</b>: 표재성 기저세포암은 표피 기저층에서 진피 쪽으로 매달린 작은 둥지가 여럿 떨어져 있는 형태라, 임상적으로는 납작한 판으로 넓게 퍼진다. 둥지 가장자리의 울타리 배열과 수축 틈이 기저세포암의 조직학적 표지다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">기저세포암(정답)</th><th>흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>색소 그물</td><td><b>없음</b> — 멜라닌세포 병변이 아니다</td><td>있으면 불규칙하고 굵기·색이 고르지 않다</td></tr> <tr><td>청회색 구조</td><td>흩어진 점·소구·난원형 둥지</td><td>청백색 베일·불규칙 청회색 구역</td></tr> <tr><td>혈관</td><td>가는 짧은 또는 나뭇가지 모양 모세혈관확장</td><td>점·선 모양의 다형 혈관</td></tr> <tr><td>조직</td><td>기저양세포 둥지·울타리 배열·수축 틈</td><td>경계부를 따라 퍼진 비정형 멜라닌세포</td></tr> </tbody></table> 청회색만 보고 흑색종으로 가지 말고, 그물이 있는지부터 본다 — 그물 없는 청회색 소구는 기저세포암 쪽이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 각질 낭과 기저양 각질형성세포 증식은 지루각화증이며, 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조가 보일 때 정답이 된다.\n② 표피 전층의 비정형 각질형성세포는 보웬병(제자리 편평세포암)이며, 사구체 모양 혈관과 비늘 덮인 붉은 판이 보일 때 정답이 된다.\n③ 깊이에 따라 작아지는 진피 내 멜라닌세포 둥지는 진피내 모반의 성숙이며, 대칭적인 부드러운 돔 모양 병변일 때 정답이 된다.\n⑤ 경계부 비정형 멜라닌세포 둥지는 흑색종의 소견이며, 더모스코피에서 불규칙한 색소 그물·청백색 베일·비대칭이 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "청회색 구조를 보고 바로 흑색종을 고르는 것 — 색소 그물이 없고 청회색이 점·소구로 흩어져 있으면 기저세포암을 먼저 생각한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 색소 그물 없이 흩어진 청회색 점·소구와 가는 짧은 모세혈관확장을 기저세포암 소견으로 읽고, 그 조직 소견(표피에 붙은 기저양세포 둥지·가장자리 울타리 배열)을 예상한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Elsevier; 2018. Chapter 108: Basal Cell Carcinoma · Lallas A, Apalla Z, Argenziano G, et al. The dermatoscopic universe of basal cell carcinoma. Dermatol Pract Concept 2014;4(3):11-24 ## 출처 ISIC Archive ISIC_0001149 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "색소 그물 없이 흩어진 청회색 점·소구와 가는 모세혈관확장은 기저세포암이고, 그 조직은 기저양세포 둥지와 가장자리 울타리 배열이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "흑색종은 멜라닌세포 병변이라 불규칙한 색소 그물·청백색 베일이 보인다 — 이 병변에는 색소 그물이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 색소 그물 없음 + 흩어진 청회색 점·소구 + 가는 모세혈관확장 → 기저세포암",
+    "기저세포암의 조직 → 표피에 붙은 기저양세포 둥지와 가장자리 울타리 배열"
+   ],
+   "key": [
+    {
+     "item": "영상: 옅은 갈색 판 위에 흩어진 작은 청회색 점·소구",
+     "why": "진피 쪽 종양 둥지 안의 색소 — 기저세포암의 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 가는 짧은 모세혈관확장",
+     "why": "기저세포암의 혈관 양상",
+     "also": []
+    },
+    {
+     "item": "얇은 딱지가 앉았다가 떨어진다",
+     "why": "작은 미란을 반복하는 기저세포암의 임상 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 색소 그물이 보이지 않음",
+     "why": "멜라닌세포 병변(흑색종·모반) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "야외 건설 현장에서 일했다",
+     "why": "자외선 노출은 위험인자지만 기저세포암·흑색종 모두에 해당해 둘을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "색소 그물 없이 흩어진 청회색 점·소구와 가는 모세혈관확장은 기저세포암이다. 조직에서는 표피에 매달린 기저양세포 둥지와 가장자리 울타리 배열이 보인다.",
+   "switch": {
+    "choice": "E",
+    "condition": "더모스코피에서 불규칙한 색소 그물과 청백색 베일, 비대칭 색 분포가 보였다면 흑색종의 경계부 비정형 멜라닌세포를 예상한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0474.jpg",
+   "caption": "피부 병변의 더모스코피 사진, 원본 그대로 축소만 (ISIC Archive, CC0 — 크롭·보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001149",
+   "asset_id": "ISIC-ISIC_0001149",
+   "text": "ISIC Archive ISIC_0001149 (CC-0)"
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0482",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "내분비·대사 — 조절되지 않는 고혈압과 저칼륨혈증",
+  "type": "내분비·대사 — 조절되지 않는 고혈압과 저칼륨혈증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-29",
+  "vignette": "A 52-year-old woman comes to the physician for follow-up of hypertension. Her blood pressure has been difficult to control for 4 years despite amlodipine, losartan, and hydrochlorothiazide; 6 weeks ago, losartan and hydrochlorothiazide were replaced with doxazosin and diltiazem. Today, blood pressure is 162/98 mm Hg. Serum potassium is 3.1 mEq/L and creatinine is 0.8 mg/dL. Plasma aldosterone concentration is 28 ng/dL, and plasma renin activity is less than 0.2 ng/mL/h. After an oral sodium loading test, 24-hour urinary aldosterone excretion is 18 μg. CT of the abdomen shows a 1.1-cm low-attenuation nodule in the left adrenal gland; the right adrenal gland appears normal. She says she would choose surgery if it could cure her condition.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Left laparoscopic adrenalectomy",
+   "Lifelong spironolactone without further testing",
+   "Fludrocortisone suppression test",
+   "MRI of the abdomen",
+   "Adrenal venous sampling"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Hypokalemia with resistant hypertension, a high aldosterone-to-renin ratio, and failure of aldosterone to suppress after salt loading confirm primary aldosteronism. Because she is over 35 years old and wants surgery, adrenal venous sampling is needed to prove that aldosterone excess comes from the left gland — a small CT nodule may be a nonfunctioning incidentaloma while the true disease is bilateral hyperplasia or a contralateral adenoma.\n- 원리: <b>Why renin is suppressed</b>: autonomous aldosterone makes the kidney retain sodium and excrete potassium and hydrogen. The expanded volume shuts off renin release — so a high aldosterone with low renin points to a primary adrenal source, and salt loading that should suppress aldosterone fails to do so.<br> <b>Why CT is not enough</b>: CT shows anatomy, not hormone secretion. Nonfunctioning adrenal nodules become common after age 35–40, and bilateral adrenal hyperplasia (the cause in about two thirds of cases) may show small nodules or none. Relying on CT alone sends many patients to the wrong operation or to an operation that cannot cure them.<br> <b>What adrenal venous sampling measures</b>: aldosterone is sampled from both adrenal veins and corrected for cortisol (to account for dilution). A clearly higher ratio on one side (lateralization index usually > 4) means unilateral disease cured or improved by adrenalectomy; no lateralization means bilateral disease treated with a mineralocorticoid receptor antagonist.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Adrenal venous sampling first (answer)</th><th>Adrenalectomy now (closest distractor)</th></tr></thead><tbody> <tr><td>Question answered</td><td><b>Which gland secretes the excess aldosterone</b></td><td>Assumes the CT nodule is the source</td></tr> <tr><td>When skipping AVS is acceptable</td><td>—</td><td>Age &lt; 35, spontaneous hypokalemia, marked excess, clear unilateral adenoma</td></tr> <tr><td>Risk if wrong</td><td>Invasive but diagnostic</td><td>Removing a normal gland; disease persists</td></tr> </tbody></table> In a younger patient with a classic picture, surgery may follow CT directly; at 52 the chance of an incidental nodule is too high to skip lateralization.\n- 오답 이유:\n  - (A) Adrenalectomy becomes correct after adrenal venous sampling lateralizes to the left, or in a patient under 35 with a classic unilateral adenoma and marked aldosterone excess.\n  - (B) Lifelong spironolactone without further testing is correct when the patient declines or cannot undergo surgery, or when sampling shows bilateral disease.\n  - (C) A fludrocortisone suppression test is an alternative confirmatory test, but confirmation has already been achieved by the oral sodium loading result here.\n  - (D) MRI offers no advantage over CT for adrenal anatomy and, like CT, cannot show which gland is secreting aldosterone.\n- 함정: Removing the gland that shows the nodule on CT — at age 52, the nodule may be nonfunctioning; secretion must be lateralized before surgery.\n- 학습목표: 저칼륨혈증을 동반한 저항성 고혈압에서 알도스테론/레닌 비 상승과 확진 검사로 원발알도스테론증을 확인한 뒤, 35세 이상에서는 CT 결절이 한쪽이어도 수술 전 부신정맥 채혈로 편측성을 확인한다\n- 근거·출처: Funder JW, Carey RM, Mantero F, et al. The Management of Primary Aldosteronism: Case Detection, Diagnosis, and Treatment: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2016;101:1889-1916 · Young WF Jr. Diagnosis and treatment of primary aldosteronism: practical clinical perspectives. J Intern Med 2019;285:126-148",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Hypokalemia with resistant hypertension, a high aldosterone-to-renin ratio, and failure of aldosterone to suppress after salt loading confirm primary aldosteronism. Because she is over 35 years old and wants surgery, adrenal venous sampling is needed to prove that aldosterone excess comes from the left gland — a small CT nodule may be a nonfunctioning incidentaloma while the true disease is bilateral hyperplasia or a contralateral adenoma."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why renin is suppressed</b>: autonomous aldosterone makes the kidney retain sodium and excrete potassium and hydrogen. The expanded volume shuts off renin release — so a high aldosterone with low renin points to a primary adrenal source, and salt loading that should suppress aldosterone fails to do so.<br> <b>Why CT is not enough</b>: CT shows anatomy, not hormone secretion. Nonfunctioning adrenal nodules become common after age 35–40, and bilateral adrenal hyperplasia (the cause in about two thirds of cases) may show small nodules or none. Relying on CT alone sends many patients to the wrong operation or to an operation that cannot cure them.<br> <b>What adrenal venous sampling measures</b>: aldosterone is sampled from both adrenal veins and corrected for cortisol (to account for dilution). A clearly higher ratio on one side (lateralization index usually > 4) means unilateral disease cured or improved by adrenalectomy; no lateralization means bilateral disease treated with a mineralocorticoid receptor antagonist."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Adrenal venous sampling first (answer)</th><th>Adrenalectomy now (closest distractor)</th></tr></thead><tbody> <tr><td>Question answered</td><td><b>Which gland secretes the excess aldosterone</b></td><td>Assumes the CT nodule is the source</td></tr> <tr><td>When skipping AVS is acceptable</td><td>—</td><td>Age &lt; 35, spontaneous hypokalemia, marked excess, clear unilateral adenoma</td></tr> <tr><td>Risk if wrong</td><td>Invasive but diagnostic</td><td>Removing a normal gland; disease persists</td></tr> </tbody></table> In a younger patient with a classic picture, surgery may follow CT directly; at 52 the chance of an incidental nodule is too high to skip lateralization."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Adrenalectomy becomes correct after adrenal venous sampling lateralizes to the left, or in a patient under 35 with a classic unilateral adenoma and marked aldosterone excess.\n(B) Lifelong spironolactone without further testing is correct when the patient declines or cannot undergo surgery, or when sampling shows bilateral disease.\n(C) A fludrocortisone suppression test is an alternative confirmatory test, but confirmation has already been achieved by the oral sodium loading result here.\n(D) MRI offers no advantage over CT for adrenal anatomy and, like CT, cannot show which gland is secreting aldosterone."
+   },
+   {
+    "k": "함정",
+    "v": "Removing the gland that shows the nodule on CT — at age 52, the nodule may be nonfunctioning; secretion must be lateralized before surgery."
+   },
+   {
+    "k": "학습목표",
+    "v": "저칼륨혈증을 동반한 저항성 고혈압에서 알도스테론/레닌 비 상승과 확진 검사로 원발알도스테론증을 확인한 뒤, 35세 이상에서는 CT 결절이 한쪽이어도 수술 전 부신정맥 채혈로 편측성을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Funder JW, Carey RM, Mantero F, et al. The Management of Primary Aldosteronism: Case Detection, Diagnosis, and Treatment: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2016;101:1889-1916 · Young WF Jr. Diagnosis and treatment of primary aldosteronism: practical clinical perspectives. J Intern Med 2019;285:126-148"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "원발알도스테론증이 확진되고 수술을 원하는 52세 환자는 CT 결절이 한쪽이어도 부신정맥 채혈로 편측성을 먼저 확인한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "CT 결절만 보고 부신절제를 바로 하는 것은 35세 미만의 전형적 양상일 때 — 52세에서는 비기능 우연종일 수 있다",
+   "steps": 3,
+   "chain": [
+    "저칼륨혈증 + 저항성 고혈압 + 알도스테론 28·레닌 <0.2 → 원발알도스테론증 의심",
+    "식염 부하 뒤 24시간 요알도스테론 18 μg → 확진",
+    "52세·수술 희망·CT 1.1 cm 결절 → 수술 전 부신정맥 채혈로 편측성 확인"
+   ],
+   "key": [
+    {
+     "item": "Plasma aldosterone concentration is 28 ng/dL",
+     "why": "레닌 억제와 함께 알도스테론/레닌 비 상승",
+     "also": []
+    },
+    {
+     "item": "24-hour urinary aldosterone excretion is 18 μg",
+     "why": "식염 부하 뒤 억제되지 않아 확진",
+     "also": []
+    },
+    {
+     "item": "A 52-year-old woman",
+     "why": "35세 이상 — 비기능 결절이 흔해 CT 만으로 수술하지 않는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "1.1-cm low-attenuation nodule in the left adrenal gland",
+     "why": "작은 결절은 원인을 증명하지 못한다 — 바로 수술할 근거가 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "she would choose surgery",
+     "why": "편측성 확인이 의미 있는 상황",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "replaced with doxazosin and diltiazem",
+     "why": "검사에 영향이 적은 약으로 바꿔 결과를 믿을 수 있게 한 배경",
+     "also": []
+    }
+   ],
+   "summary": "저칼륨혈증·높은 알도스테론/레닌 비·식염 부하 무억제로 원발알도스테론증이 확진되었다. 52세이고 수술을 원하므로 CT 결절과 관계없이 부신정맥 채혈로 편측성을 확인한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "30세 환자가 자발성 저칼륨혈증·현저한 알도스테론 과다와 CT 상 뚜렷한 한쪽 선종을 보였다면 부신정맥 채혈 없이 부신절제를 할 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0481",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "소아청소년 — 발작성 보챔과 혈변을 보이는 영아",
+  "type": "소아청소년 — 발작성 보챔과 혈변을 보이는 영아",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-29",
+  "vignette": "A 9-month-old boy is brought to the emergency department because of episodes of inconsolable crying with drawing up of his legs for 12 hours. The episodes last a few minutes and recur every 15 to 20 minutes; between episodes, he is quiet and sleepy. He has vomited twice, and his last diaper contained stool mixed with blood and mucus. Temperature is 37.4°C (99.3°F), pulse is 140/min, and blood pressure is 88/54 mm Hg. Capillary refill time is 2 seconds. The abdomen is soft, with a sausage-shaped mass in the right upper quadrant; there is no guarding or rebound tenderness. Ultrasonography of the abdomen shows a target-shaped mass. Intravenous fluids are started.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Technetium-99m pertechnetate scan",
+   "Air enema reduction under imaging guidance",
+   "Emergency exploratory laparotomy",
+   "CT scan of the abdomen with contrast",
+   "Nasogastric decompression and observation"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Paroxysmal colicky pain with lethargy between episodes, currant-jelly-like stool, a right upper quadrant sausage-shaped mass, and an ultrasonographic target sign establish ileocolic intussusception. With a soft abdomen and stable circulation after fluids, the next step is nonoperative reduction by an imaging-guided air (or hydrostatic) enema, which is both diagnostic and therapeutic.\n- 원리: <b>How the bowel telescopes</b>: in infants 6–36 months, hypertrophied Peyer patches in the terminal ileum (often after a viral illness) act as a lead point; peristalsis drags the ileum into the colon. The trapped mesentery is compressed — veins first, so the bowel wall swells and oozes blood and mucus (<b>currant-jelly stool</b>), and later arterial supply fails.<br> <b>Why enema first</b>: pressure from air or contrast pushed retrograde from the rectum pushes the intussusceptum back; it succeeds in roughly 80–90% when done early, avoiding laparotomy. Air is preferred because perforation spills less material than barium.<br> <b>Why some need surgery</b>: once the bowel is necrotic or perforated, pressure reduction is dangerous — peritonitis, free air, or shock that does not respond to fluids are contraindications, and older children often have a pathologic lead point (Meckel diverticulum, polyp, lymphoma) that needs resection.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Air enema reduction (answer)</th><th>Emergency laparotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Abdomen</td><td><b>Soft, no peritoneal signs</b></td><td>Guarding, rebound — peritonitis</td></tr> <tr><td>Circulation</td><td>Stable or responds to fluids</td><td>Shock despite resuscitation</td></tr> <tr><td>Imaging</td><td>Target sign, no free air</td><td>Free air (perforation)</td></tr> <tr><td>Other trigger</td><td>—</td><td>Failed or repeatedly recurrent enema reduction</td></tr> </tbody></table> Enema is the default; surgery is chosen by the presence of peritonitis, perforation, shock, or enema failure.\n- 오답 이유:\n  - (A) A technetium-99m pertechnetate scan is correct for painless rectal bleeding in a toddler when a Meckel diverticulum with ectopic gastric mucosa is suspected.\n  - (C) Emergency laparotomy becomes correct if there is peritonitis, free intraperitoneal air, shock unresponsive to fluids, or failed enema reduction.\n  - (D) CT is not needed when ultrasonography already shows a target sign; it may help in older children when a pathologic lead point such as lymphoma is suspected.\n  - (E) Nasogastric decompression with observation suits uncomplicated adhesive small-bowel obstruction, not an intussusception that will not reduce on its own.\n- 함정: Going straight to surgery because of bloody stool — blood alone does not mean necrosis; a soft abdomen and stable circulation allow enema reduction.\n- 학습목표: 영아의 발작성 복통·혈액 섞인 점액변·소시지 모양 종괴와 초음파 표적 징후로 장중첩증을 진단하고, 복막염·천공·쇼크가 없으면 영상 유도 공기 관장으로 정복한다\n- 근거·출처: Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Chapter 359: Intussusception · Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39 Suppl 2:S140-S143",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Paroxysmal colicky pain with lethargy between episodes, currant-jelly-like stool, a right upper quadrant sausage-shaped mass, and an ultrasonographic target sign establish ileocolic intussusception. With a soft abdomen and stable circulation after fluids, the next step is nonoperative reduction by an imaging-guided air (or hydrostatic) enema, which is both diagnostic and therapeutic."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How the bowel telescopes</b>: in infants 6–36 months, hypertrophied Peyer patches in the terminal ileum (often after a viral illness) act as a lead point; peristalsis drags the ileum into the colon. The trapped mesentery is compressed — veins first, so the bowel wall swells and oozes blood and mucus (<b>currant-jelly stool</b>), and later arterial supply fails.<br> <b>Why enema first</b>: pressure from air or contrast pushed retrograde from the rectum pushes the intussusceptum back; it succeeds in roughly 80–90% when done early, avoiding laparotomy. Air is preferred because perforation spills less material than barium.<br> <b>Why some need surgery</b>: once the bowel is necrotic or perforated, pressure reduction is dangerous — peritonitis, free air, or shock that does not respond to fluids are contraindications, and older children often have a pathologic lead point (Meckel diverticulum, polyp, lymphoma) that needs resection."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Air enema reduction (answer)</th><th>Emergency laparotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Abdomen</td><td><b>Soft, no peritoneal signs</b></td><td>Guarding, rebound — peritonitis</td></tr> <tr><td>Circulation</td><td>Stable or responds to fluids</td><td>Shock despite resuscitation</td></tr> <tr><td>Imaging</td><td>Target sign, no free air</td><td>Free air (perforation)</td></tr> <tr><td>Other trigger</td><td>—</td><td>Failed or repeatedly recurrent enema reduction</td></tr> </tbody></table> Enema is the default; surgery is chosen by the presence of peritonitis, perforation, shock, or enema failure."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A technetium-99m pertechnetate scan is correct for painless rectal bleeding in a toddler when a Meckel diverticulum with ectopic gastric mucosa is suspected.\n(C) Emergency laparotomy becomes correct if there is peritonitis, free intraperitoneal air, shock unresponsive to fluids, or failed enema reduction.\n(D) CT is not needed when ultrasonography already shows a target sign; it may help in older children when a pathologic lead point such as lymphoma is suspected.\n(E) Nasogastric decompression with observation suits uncomplicated adhesive small-bowel obstruction, not an intussusception that will not reduce on its own."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to surgery because of bloody stool — blood alone does not mean necrosis; a soft abdomen and stable circulation allow enema reduction."
+   },
+   {
+    "k": "학습목표",
+    "v": "영아의 발작성 복통·혈액 섞인 점액변·소시지 모양 종괴와 초음파 표적 징후로 장중첩증을 진단하고, 복막염·천공·쇼크가 없으면 영상 유도 공기 관장으로 정복한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Chapter 359: Intussusception · Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39 Suppl 2:S140-S143"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "영아의 발작성 복통·혈액 섞인 점액변·표적 징후는 장중첩증이고, 복막염·쇼크가 없으면 영상 유도 공기 관장으로 정복한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "응급 개복술은 복막자극징후·천공·수액에 반응하지 않는 쇼크·관장 실패가 있을 때 — 이 영아는 배가 부드럽고 순환이 안정적이다",
+   "steps": 2,
+   "chain": [
+    "발작성 보챔 + 혈액 섞인 점액변 + 우상복부 소시지 모양 종괴 + 초음파 표적 → 회결장 장중첩증",
+    "복막자극징후 없음·순환 안정 → 수술이 아니라 공기 관장 정복"
+   ],
+   "key": [
+    {
+     "item": "stool mixed with blood and mucus",
+     "why": "장벽 정맥 울혈의 소견",
+     "also": []
+    },
+    {
+     "item": "sausage-shaped mass in the right upper quadrant",
+     "why": "말려 들어간 장",
+     "also": []
+    },
+    {
+     "item": "target-shaped mass",
+     "why": "초음파 확진 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "there is no guarding or rebound tenderness",
+     "why": "복막염이 없어 비수술 정복이 가능",
+     "also": []
+    },
+    {
+     "item": "Capillary refill time is 2 seconds",
+     "why": "쇼크가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has vomited twice",
+     "why": "장폐색의 흔한 동반 증상 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "발작성 보챔·혈액 섞인 점액변·소시지 모양 종괴와 표적 징후로 장중첩증이다. 복막염·쇼크가 없으므로 영상 유도 공기 관장으로 정복한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "복부 강직과 반발통이 있거나 단순 X선에 복강 내 유리 공기가 보였다면 관장 없이 응급 개복술을 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0480",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "신장·비뇨 — 소세포폐암 환자의 저나트륨혈증",
+  "type": "신장·비뇨 — 소세포폐암 환자의 저나트륨혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-29",
+  "vignette": "66세 남자가 1주 전부터 기운이 없고 입맛이 떨어져 왔다. 2주 전 소세포폐암을 진단받고 항암치료를 앞두고 있다. 혈압 132/78 mmHg, 맥박 76회/분이고 의식은 명료하며 신경학적 이상은 없다. 피부 긴장도와 점막은 정상이고 목정맥 팽대나 부종은 없다. 혈청 나트륨 122 mEq/L, 칼륨 4.1 mEq/L, 혈청 삼투질농도 255 mOsm/kg, 요삼투질농도 520 mOsm/kg, 요나트륨 62 mEq/L, 혈청 요산 2.6 mg/dL 이다. 갑상샘기능과 아침 코르티솔은 정상이다.",
+  "question": "저나트륨혈증 치료로 가장 적절한 것은?",
+  "options": [
+   "히드로클로로티아지드 투여",
+   "데스모프레신 투여",
+   "수분 제한",
+   "생리식염수 정맥 주입",
+   "3 % 고장성 식염수 급속 주입"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 정상 용적, 혈청 삼투질농도 저하, 부적절하게 진한 소변(520 mOsm/kg)과 요나트륨 상승, 낮은 요산, 정상 갑상샘·부신 기능은 항이뇨호르몬 부적절분비증후군이다(소세포폐암의 이소성 ADH). 의식이 명료하고 증상이 경한 만성 저나트륨혈증이므로 첫 치료는 수분 제한이다.\n- 원리: <b>무엇이 나트륨을 묽히는가</b>: SIADH 에서는 ADH 가 혈장 삼투질과 관계없이 나와 집합관 아쿠아포린-2 를 열어 둔다. 물만 붙잡히니 혈장이 묽어지고, 늘어난 용적은 나트륨이뇨펩티드를 늘려 나트륨을 내보낸다 — 그래서 <b>부종 없는 정상 용적</b>에 요나트륨이 높고, 요산도 씻겨 나가 낮다.<br> <b>왜 생리식염수가 오히려 나쁜가</b>: 콩팥은 소변 농도를 약 520 mOsm/kg 로 고정해 둔다. 생리식염수(약 308 mOsm/kg) 1 L 의 용질은 약 0.6 L 의 소변으로 빠져나가고 나머지 물은 몸에 남는다 — 나트륨이 더 떨어진다.<br> <b>교정 속도</b>: 만성 저나트륨혈증에서 뇌세포는 이미 삼투물질을 내보내 적응했으므로, 24시간에 8~10 mEq/L 넘게 빨리 올리면 삼투성 탈수초증후군이 생긴다. 경련·혼수 같은 중증 증상이 있을 때만 3 % 식염수를 소량 볼루스로 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">수분 제한(정답)</th><th>생리식염수(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>맞는 상황</td><td><b>정상 용적 SIADH, 경한 증상</b></td><td>저용적 저나트륨혈증(구토·이뇨제), 요나트륨 낮음</td></tr> <tr><td>요삼투질농도 520 에서</td><td>자유수 섭취를 줄여 나트륨이 오른다</td><td>용질은 빠져나가고 물이 남아 나트륨이 더 떨어진다</td></tr> <tr><td>확인 지표</td><td>요나트륨 높음·요산 낮음·부종 없음</td><td>요나트륨 &lt; 30, 기립성 저혈압</td></tr> </tbody></table> 요나트륨이 높고 용적이 정상이면 식염수가 아니라 물을 줄인다 — 용적 상태를 먼저 판정하는 것이 치료를 가른다.\n- 오답 이유:\n  - ① 티아지드는 저나트륨혈증을 악화시키는 원인 약물이며, 신성 요붕증이나 칼슘 결석 예방에서 정답이 된다.\n  - ② 데스모프레신은 중추성 요붕증의 치료이거나 저나트륨혈증의 과교정을 되돌릴 때 쓰는 약으로, 그런 상황에서 정답이 된다.\n  - ④ 생리식염수는 구토·설사·이뇨제로 용적이 줄어 요나트륨이 30 mEq/L 미만인 저용적 저나트륨혈증일 때 정답이 된다.\n  - ⑤ 3 % 고장성 식염수는 경련·혼수·심한 혼돈 같은 중증 신경 증상이 있을 때 소량 볼루스로 쓰는 것이 정답이 된다.\n- 함정: 저나트륨혈증이니 나트륨을 넣자며 생리식염수를 고르는 것 — 소변이 식염수보다 진한 SIADH 에서는 나트륨이 더 떨어진다.\n- 학습목표: 소세포폐암 환자의 정상 용적 저삼투 저나트륨혈증에서 요삼투질농도·요나트륨이 높으면 항이뇨호르몬 부적절분비증후군으로 판단하고, 증상이 경하면 수분 제한으로 치료한다\n- 근거·출처: Spasovski G, Vanholder R, Allolio B, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 · Verbalis JG, Goldsmith SR, Greenberg A, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "정상 용적, 혈청 삼투질농도 저하, 부적절하게 진한 소변(520 mOsm/kg)과 요나트륨 상승, 낮은 요산, 정상 갑상샘·부신 기능은 항이뇨호르몬 부적절분비증후군이다(소세포폐암의 이소성 ADH). 의식이 명료하고 증상이 경한 만성 저나트륨혈증이므로 첫 치료는 수분 제한이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 나트륨을 묽히는가</b>: SIADH 에서는 ADH 가 혈장 삼투질과 관계없이 나와 집합관 아쿠아포린-2 를 열어 둔다. 물만 붙잡히니 혈장이 묽어지고, 늘어난 용적은 나트륨이뇨펩티드를 늘려 나트륨을 내보낸다 — 그래서 <b>부종 없는 정상 용적</b>에 요나트륨이 높고, 요산도 씻겨 나가 낮다.<br> <b>왜 생리식염수가 오히려 나쁜가</b>: 콩팥은 소변 농도를 약 520 mOsm/kg 로 고정해 둔다. 생리식염수(약 308 mOsm/kg) 1 L 의 용질은 약 0.6 L 의 소변으로 빠져나가고 나머지 물은 몸에 남는다 — 나트륨이 더 떨어진다.<br> <b>교정 속도</b>: 만성 저나트륨혈증에서 뇌세포는 이미 삼투물질을 내보내 적응했으므로, 24시간에 8~10 mEq/L 넘게 빨리 올리면 삼투성 탈수초증후군이 생긴다. 경련·혼수 같은 중증 증상이 있을 때만 3 % 식염수를 소량 볼루스로 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">수분 제한(정답)</th><th>생리식염수(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>맞는 상황</td><td><b>정상 용적 SIADH, 경한 증상</b></td><td>저용적 저나트륨혈증(구토·이뇨제), 요나트륨 낮음</td></tr> <tr><td>요삼투질농도 520 에서</td><td>자유수 섭취를 줄여 나트륨이 오른다</td><td>용질은 빠져나가고 물이 남아 나트륨이 더 떨어진다</td></tr> <tr><td>확인 지표</td><td>요나트륨 높음·요산 낮음·부종 없음</td><td>요나트륨 &lt; 30, 기립성 저혈압</td></tr> </tbody></table> 요나트륨이 높고 용적이 정상이면 식염수가 아니라 물을 줄인다 — 용적 상태를 먼저 판정하는 것이 치료를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 티아지드는 저나트륨혈증을 악화시키는 원인 약물이며, 신성 요붕증이나 칼슘 결석 예방에서 정답이 된다.\n② 데스모프레신은 중추성 요붕증의 치료이거나 저나트륨혈증의 과교정을 되돌릴 때 쓰는 약으로, 그런 상황에서 정답이 된다.\n④ 생리식염수는 구토·설사·이뇨제로 용적이 줄어 요나트륨이 30 mEq/L 미만인 저용적 저나트륨혈증일 때 정답이 된다.\n⑤ 3 % 고장성 식염수는 경련·혼수·심한 혼돈 같은 중증 신경 증상이 있을 때 소량 볼루스로 쓰는 것이 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "저나트륨혈증이니 나트륨을 넣자며 생리식염수를 고르는 것 — 소변이 식염수보다 진한 SIADH 에서는 나트륨이 더 떨어진다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소세포폐암 환자의 정상 용적 저삼투 저나트륨혈증에서 요삼투질농도·요나트륨이 높으면 항이뇨호르몬 부적절분비증후군으로 판단하고, 증상이 경하면 수분 제한으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Spasovski G, Vanholder R, Allolio B, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 · Verbalis JG, Goldsmith SR, Greenberg A, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "정상 용적·요삼투질 520·요나트륨 62 의 저나트륨혈증은 SIADH 이고, 증상이 경하면 수분 제한으로 치료한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "생리식염수는 저용적·요나트륨 낮은 경우 — 요삼투질이 식염수보다 높은 SIADH 에서는 나트륨이 더 떨어진다",
+   "steps": 3,
+   "chain": [
+    "혈청 삼투질 255·요삼투질 520 → 저삼투 저나트륨혈증에서 ADH 작용 지속",
+    "부종·탈수 없음 + 요나트륨 62·요산 낮음 + 갑상샘·코르티솔 정상 → SIADH(소세포폐암)",
+    "의식 명료·경한 증상 → 수분 제한"
+   ],
+   "key": [
+    {
+     "item": "요삼투질농도 520 mOsm/kg",
+     "why": "ADH 가 작용하고 있다는 근거",
+     "also": []
+    },
+    {
+     "item": "요나트륨 62 mEq/L",
+     "why": "저용적이 아니라는 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "목정맥 팽대나 부종은 없다",
+     "why": "심부전·간경변 같은 고용적 상태 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘기능과 아침 코르티솔은 정상",
+     "why": "갑상샘저하증·부신부전 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "의식은 명료하며 신경학적 이상은 없다",
+     "why": "고장성 식염수가 필요한 중증 증상이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "소세포폐암",
+     "why": "SIADH 의 원인을 설명하지만 치료 선택은 용적·증상으로 정한다",
+     "also": []
+    }
+   ],
+   "summary": "정상 용적에 요삼투질·요나트륨이 높은 저나트륨혈증은 소세포폐암의 SIADH 다. 증상이 경하므로 수분 제한이 첫 치료다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 환자가 경련이나 혼수를 보였다면 3 % 고장성 식염수 볼루스로 나트륨을 4~6 mEq/L 빠르게 올린다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0479",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "감염 — HIV 환자의 아급성 두통과 발열",
+  "type": "감염 — HIV 환자의 아급성 두통과 발열",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-29",
+  "vignette": "A 34-year-old man comes to the emergency department because of headache and fever for 2 weeks. During the past 3 days, he has also had nausea and intermittent blurred vision. He was diagnosed with HIV infection 1 month ago but has not started antiretroviral therapy. Temperature is 38.1°C (100.6°F), pulse is 92/min, and blood pressure is 124/78 mm Hg. He is alert and oriented. There is mild neck stiffness; there are no focal neurologic deficits. CD4+ T-lymphocyte count is 42/mm3. CT of the head shows no abnormalities. Lumbar puncture shows an opening pressure of 32 cm H2O; cerebrospinal fluid has a leukocyte count of 20/mm3 (90% lymphocytes), protein of 70 mg/dL, and glucose of 35 mg/dL (serum glucose 95 mg/dL). India ink stain shows encapsulated yeast forms, and cryptococcal antigen is positive.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy?",
+  "options": [
+   "Dexamethasone and fluconazole",
+   "Liposomal amphotericin B and flucytosine",
+   "Fluconazole alone",
+   "Fluconazole and antiretroviral therapy",
+   "Ceftriaxone and vancomycin"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Subacute headache and fever, CD4 count below 100, encapsulated yeast on India ink, and a positive cryptococcal antigen establish cryptococcal meningitis. Induction therapy is amphotericin B (liposomal preferred) plus flucytosine, followed by fluconazole consolidation and maintenance. Antiretroviral therapy is deferred 4–6 weeks, and the high opening pressure is lowered with repeated lumbar punctures.\n- 원리: <b>Why two drugs at induction</b>: amphotericin B binds ergosterol and punches pores in the fungal membrane — it kills quickly. Flucytosine is converted inside the fungus to 5-fluorouracil and blocks DNA/RNA synthesis; the combination clears the CSF faster and lowers mortality. Fluconazole only inhibits ergosterol synthesis (fungistatic), so it is too slow to start with but suits long consolidation and maintenance.<br> <b>Why delay antiretroviral therapy</b>: restoring immunity early lets T cells attack the large antigen burden in the closed space of the meninges — <b>immune reconstitution inflammatory syndrome</b> — which raised mortality when ART was started within 1–2 weeks in trials (COAT).<br> <b>Why the pressure matters</b>: the polysaccharide capsule clogs arachnoid villi, so CSF outflow falls and pressure rises — causing headache, vision loss, and cranial nerve palsies. Serial lumbar punctures to bring it under 20 cm H2O are part of treatment; glucocorticoids do not help and worsen outcome.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">AmB + flucytosine now (answer)</th><th>Fluconazole + ART now (closest distractor)</th></tr></thead><tbody> <tr><td>Antifungal action</td><td><b>Fungicidal, rapid CSF clearance</b></td><td>Fungistatic, slow clearance</td></tr> <tr><td>ART timing</td><td>Deferred 4–6 weeks</td><td>Immediate — risk of IRIS</td></tr> <tr><td>Role of fluconazole</td><td>Consolidation, then maintenance</td><td>Used alone as induction</td></tr> </tbody></table> Fluconazole is the right drug for the later phases and for antigen-positive patients without meningitis, not for induction in established meningitis.\n- 오답 이유:\n  - (A) Dexamethasone is correct adjunct therapy for pneumococcal meningitis or tuberculous meningitis, but it increases harm in cryptococcal meningitis.\n  - (C) Fluconazole alone is correct for asymptomatic cryptococcal antigenemia without meningitis, or later as consolidation after induction therapy.\n  - (D) Starting ART is correct for most HIV opportunistic infections within 2 weeks, but in cryptococcal meningitis it is delayed 4–6 weeks to avoid IRIS.\n  - (E) Ceftriaxone and vancomycin are correct empiric therapy for acute bacterial meningitis with neutrophilic CSF before an organism is identified.\n- 함정: Starting ART right away because the CD4 count is very low — in cryptococcal meningitis, early ART increases death from immune reconstitution.\n- 학습목표: CD4 100 미만 HIV 환자의 크립토코쿠스 수막염을 진단하고 유도 치료로 암포테리신 B 와 플루시토신을 쓰며, 항레트로바이러스 치료는 4~6주 미룬다\n- 근거·출처: Panel on Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents with HIV. Cryptococcosis. NIH/CDC/HIVMA-IDSA, updated 2024 · Boulware DR, Meya DB, Muzoora C, et al. Timing of antiretroviral therapy after diagnosis of cryptococcal meningitis. N Engl J Med 2014;370:2487-2498",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Subacute headache and fever, CD4 count below 100, encapsulated yeast on India ink, and a positive cryptococcal antigen establish cryptococcal meningitis. Induction therapy is amphotericin B (liposomal preferred) plus flucytosine, followed by fluconazole consolidation and maintenance. Antiretroviral therapy is deferred 4–6 weeks, and the high opening pressure is lowered with repeated lumbar punctures."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why two drugs at induction</b>: amphotericin B binds ergosterol and punches pores in the fungal membrane — it kills quickly. Flucytosine is converted inside the fungus to 5-fluorouracil and blocks DNA/RNA synthesis; the combination clears the CSF faster and lowers mortality. Fluconazole only inhibits ergosterol synthesis (fungistatic), so it is too slow to start with but suits long consolidation and maintenance.<br> <b>Why delay antiretroviral therapy</b>: restoring immunity early lets T cells attack the large antigen burden in the closed space of the meninges — <b>immune reconstitution inflammatory syndrome</b> — which raised mortality when ART was started within 1–2 weeks in trials (COAT).<br> <b>Why the pressure matters</b>: the polysaccharide capsule clogs arachnoid villi, so CSF outflow falls and pressure rises — causing headache, vision loss, and cranial nerve palsies. Serial lumbar punctures to bring it under 20 cm H2O are part of treatment; glucocorticoids do not help and worsen outcome."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">AmB + flucytosine now (answer)</th><th>Fluconazole + ART now (closest distractor)</th></tr></thead><tbody> <tr><td>Antifungal action</td><td><b>Fungicidal, rapid CSF clearance</b></td><td>Fungistatic, slow clearance</td></tr> <tr><td>ART timing</td><td>Deferred 4–6 weeks</td><td>Immediate — risk of IRIS</td></tr> <tr><td>Role of fluconazole</td><td>Consolidation, then maintenance</td><td>Used alone as induction</td></tr> </tbody></table> Fluconazole is the right drug for the later phases and for antigen-positive patients without meningitis, not for induction in established meningitis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Dexamethasone is correct adjunct therapy for pneumococcal meningitis or tuberculous meningitis, but it increases harm in cryptococcal meningitis.\n(C) Fluconazole alone is correct for asymptomatic cryptococcal antigenemia without meningitis, or later as consolidation after induction therapy.\n(D) Starting ART is correct for most HIV opportunistic infections within 2 weeks, but in cryptococcal meningitis it is delayed 4–6 weeks to avoid IRIS.\n(E) Ceftriaxone and vancomycin are correct empiric therapy for acute bacterial meningitis with neutrophilic CSF before an organism is identified."
+   },
+   {
+    "k": "함정",
+    "v": "Starting ART right away because the CD4 count is very low — in cryptococcal meningitis, early ART increases death from immune reconstitution."
+   },
+   {
+    "k": "학습목표",
+    "v": "CD4 100 미만 HIV 환자의 크립토코쿠스 수막염을 진단하고 유도 치료로 암포테리신 B 와 플루시토신을 쓰며, 항레트로바이러스 치료는 4~6주 미룬다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Panel on Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents with HIV. Cryptococcosis. NIH/CDC/HIVMA-IDSA, updated 2024 · Boulware DR, Meya DB, Muzoora C, et al. Timing of antiretroviral therapy after diagnosis of cryptococcal meningitis. N Engl J Med 2014;370:2487-2498"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CD4 42 인 HIV 환자의 크립토코쿠스 수막염은 암포테리신 B 와 플루시토신으로 유도 치료하고 항레트로바이러스 치료는 미룬다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "크립토코쿠스 수막염에서 즉시 항레트로바이러스 치료를 시작하면 면역재구성 염증증후군으로 사망률이 오른다",
+   "steps": 3,
+   "chain": [
+    "CD4 42 + 아급성 두통·발열 + 인디아잉크 양성 피막 효모·항원 양성 → 크립토코쿠스 수막염",
+    "확진된 수막염의 유도 치료 → 살진균 병합(암포테리신 B + 플루시토신)",
+    "항레트로바이러스 치료 → 면역재구성 위험 때문에 4~6주 뒤"
+   ],
+   "key": [
+    {
+     "item": "India ink stain shows encapsulated yeast forms",
+     "why": "크립토코쿠스 확진 소견",
+     "also": []
+    },
+    {
+     "item": "CD4+ T-lymphocyte count is 42/mm3",
+     "why": "100 미만 — 크립토코쿠스 수막염의 위험군",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "has not started antiretroviral therapy",
+     "why": "ART 시작 시점을 정해야 하는 상황",
+     "also": []
+    },
+    {
+     "item": "opening pressure of 32 cm H2O",
+     "why": "반복 요추천자로 압력을 낮춰야 한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "CT of the head shows no abnormalities",
+     "why": "요추천자 전 확인 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "CD4 42, 인디아잉크 양성·항원 양성으로 크립토코쿠스 수막염이다. 암포테리신 B 와 플루시토신으로 유도 치료를 하고 항레트로바이러스 치료는 4~6주 미룬다.",
+   "switch": {
+    "choice": "C",
+    "condition": "두통·수막자극징후가 없고 요추천자가 정상인데 혈청 크립토코쿠스 항원만 양성이었다면 플루코나졸 단독 선제 치료가 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0478",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "혈액·종양 — 고령 남자의 철결핍빈혈",
+  "type": "혈액·종양 — 고령 남자의 철결핍빈혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-29",
+  "vignette": "68세 남자가 3개월 전부터 쉽게 피로하고 계단을 오를 때 숨이 차서 왔다. 혈변이나 흑색변은 없었다고 한다. 고혈압으로 암로디핀을 복용하고 있으며 진통소염제나 항혈소판제는 먹지 않는다. 6개월 동안 체중이 2 kg 줄었다. 혈압 128/76 mmHg, 맥박 92회/분이다. 결막이 창백하고 복부 진찰에서 이상은 없다. 혈색소 9.1 g/dL, 평균적혈구용적 71 fL, 적혈구분포폭 18.5 %, 백혈구 6,800/mm³, 혈소판 410,000/mm³, 페리틴 7 ng/mL, 대변 잠혈검사 음성이다.",
+  "question": "다음 검사로 가장 적절한 것은?",
+  "options": [
+   "혈색소 전기영동",
+   "경구 철분 투여 후 3개월 뒤 혈색소 재검",
+   "복부·골반 컴퓨터단층촬영",
+   "상부위장관내시경과 대장내시경",
+   "골수 흡인과 생검"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 소구성 빈혈·적혈구분포폭 증가·페리틴 7 ng/mL 은 철결핍빈혈이다. 폐경 전 여성처럼 월경으로 설명되지 않는 고령 남자의 철결핍은 위장관 출혈 — 특히 대장암·위암 — 을 증명될 때까지 의심해야 하며, 대변 잠혈 1회 음성은 간헐적 출혈을 배제하지 못한다. 상부위장관내시경과 대장내시경을 함께 한다.\n- 원리: <b>철은 잃어야만 부족해진다</b>: 성인 남자는 하루 약 1 mg 의 철을 잃고 그만큼 흡수하며, 몸은 철을 적극적으로 내보내는 길이 없다. 그래서 식사가 극단적으로 부족하지 않은 성인 남자·폐경 후 여성의 철결핍은 거의 항상 <b>만성 실혈</b>, 그중 대부분 위장관 출혈이다.<br> <b>왜 대변 잠혈 음성을 믿지 않는가</b>: 대장암의 출혈은 간헐적이고, 우측 대장 병변의 피는 장을 지나며 변에 고르게 섞여 1회 검사에서 놓치기 쉽다. 철결핍빈혈이라는 사실 자체가 이미 「출혈이 있었다」는 더 강한 증거다.<br> <b>왜 위아래를 모두 보는가</b>: 위·십이지장 병변(궤양·위암·혈관이형성)과 대장 병변이 함께 있는 경우가 있어, 한쪽에서 원인을 찾아도 다른 쪽을 확인한다. 둘 다 정상이면 셀리악병 혈청검사·소장 캡슐내시경으로 넘어간다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">위·대장 내시경(정답)</th><th>철분만 주고 경과 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목표</td><td><b>철이 빠져나간 곳(출혈원)을 찾는다</b></td><td>부족한 철만 채운다</td></tr> <tr><td>대장암이 있다면</td><td>진단·병기 결정</td><td>빈혈이 잠시 좋아져 진단이 늦어진다</td></tr> <tr><td>맞는 대상</td><td>고령 남자·폐경 후 여성의 철결핍</td><td>월경 과다로 설명되는 젊은 여성의 철결핍</td></tr> </tbody></table> 철분 보충은 내시경과 함께 시작해도 되지만, 그 자체가 원인 검사를 대신하지 않는다.\n- 오답 이유:\n  - ① 혈색소 전기영동은 소구성 빈혈인데 페리틴이 정상·높고 적혈구 수가 많은(멘처 지수 낮음) 지중해빈혈을 의심할 때 정답이 된다.\n  - ② 경구 철분만 주고 보는 것은 월경 과다처럼 실혈 원인이 분명한 젊은 여성의 철결핍에서 정답이 된다.\n  - ③ 복부·골반 CT 는 내시경으로 원인을 못 찾았거나 복부 종괴·전이를 의심할 때 고려되며, 점막 출혈원을 찾는 첫 검사가 아니다.\n  - ⑤ 골수검사는 페리틴이 애매하거나 범혈구감소·이형성 같은 다른 계열 이상이 있어 골수 질환을 의심할 때 정답이 된다.\n- 함정: 대변 잠혈 음성이니 위장관 출혈이 아니라고 보고 철분만 주는 것 — 고령 남자의 철결핍빈혈 자체가 내시경 적응증이다.\n- 학습목표: 고령 남자의 철결핍빈혈은 대변 잠혈이 음성이어도 위장관 출혈(특히 대장암)을 의심해 상부위장관내시경과 대장내시경을 한다\n- 근거·출처: Ko CW, Siddique SM, Patel A, et al. AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia. Gastroenterology 2020;159:1085-1094 · Snook J, Bhala N, Beales ILP, et al. British Society of Gastroenterology guidelines for the management of iron deficiency anaemia in adults. Gut 2021;70:2030-2051",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "소구성 빈혈·적혈구분포폭 증가·페리틴 7 ng/mL 은 철결핍빈혈이다. 폐경 전 여성처럼 월경으로 설명되지 않는 고령 남자의 철결핍은 위장관 출혈 — 특히 대장암·위암 — 을 증명될 때까지 의심해야 하며, 대변 잠혈 1회 음성은 간헐적 출혈을 배제하지 못한다. 상부위장관내시경과 대장내시경을 함께 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>철은 잃어야만 부족해진다</b>: 성인 남자는 하루 약 1 mg 의 철을 잃고 그만큼 흡수하며, 몸은 철을 적극적으로 내보내는 길이 없다. 그래서 식사가 극단적으로 부족하지 않은 성인 남자·폐경 후 여성의 철결핍은 거의 항상 <b>만성 실혈</b>, 그중 대부분 위장관 출혈이다.<br> <b>왜 대변 잠혈 음성을 믿지 않는가</b>: 대장암의 출혈은 간헐적이고, 우측 대장 병변의 피는 장을 지나며 변에 고르게 섞여 1회 검사에서 놓치기 쉽다. 철결핍빈혈이라는 사실 자체가 이미 「출혈이 있었다」는 더 강한 증거다.<br> <b>왜 위아래를 모두 보는가</b>: 위·십이지장 병변(궤양·위암·혈관이형성)과 대장 병변이 함께 있는 경우가 있어, 한쪽에서 원인을 찾아도 다른 쪽을 확인한다. 둘 다 정상이면 셀리악병 혈청검사·소장 캡슐내시경으로 넘어간다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">위·대장 내시경(정답)</th><th>철분만 주고 경과 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목표</td><td><b>철이 빠져나간 곳(출혈원)을 찾는다</b></td><td>부족한 철만 채운다</td></tr> <tr><td>대장암이 있다면</td><td>진단·병기 결정</td><td>빈혈이 잠시 좋아져 진단이 늦어진다</td></tr> <tr><td>맞는 대상</td><td>고령 남자·폐경 후 여성의 철결핍</td><td>월경 과다로 설명되는 젊은 여성의 철결핍</td></tr> </tbody></table> 철분 보충은 내시경과 함께 시작해도 되지만, 그 자체가 원인 검사를 대신하지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 혈색소 전기영동은 소구성 빈혈인데 페리틴이 정상·높고 적혈구 수가 많은(멘처 지수 낮음) 지중해빈혈을 의심할 때 정답이 된다.\n② 경구 철분만 주고 보는 것은 월경 과다처럼 실혈 원인이 분명한 젊은 여성의 철결핍에서 정답이 된다.\n③ 복부·골반 CT 는 내시경으로 원인을 못 찾았거나 복부 종괴·전이를 의심할 때 고려되며, 점막 출혈원을 찾는 첫 검사가 아니다.\n⑤ 골수검사는 페리틴이 애매하거나 범혈구감소·이형성 같은 다른 계열 이상이 있어 골수 질환을 의심할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "대변 잠혈 음성이니 위장관 출혈이 아니라고 보고 철분만 주는 것 — 고령 남자의 철결핍빈혈 자체가 내시경 적응증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고령 남자의 철결핍빈혈은 대변 잠혈이 음성이어도 위장관 출혈(특히 대장암)을 의심해 상부위장관내시경과 대장내시경을 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ko CW, Siddique SM, Patel A, et al. AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia. Gastroenterology 2020;159:1085-1094 · Snook J, Bhala N, Beales ILP, et al. British Society of Gastroenterology guidelines for the management of iron deficiency anaemia in adults. Gut 2021;70:2030-2051"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "고령 남자의 철결핍빈혈은 대변 잠혈과 관계없이 위장관 출혈을 의심해 상부위장관내시경과 대장내시경을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "철분만 주는 것은 실혈 원인이 분명한 경우 — 고령 남자는 원인을 찾아야 한다",
+   "steps": 3,
+   "chain": [
+    "평균적혈구용적 71·페리틴 7 → 철결핍빈혈",
+    "68세 남자 → 월경이 없으니 만성 위장관 실혈을 의심",
+    "대변 잠혈 음성은 배제 근거가 못 됨 → 상부위장관내시경과 대장내시경"
+   ],
+   "key": [
+    {
+     "item": "페리틴 7 ng/mL",
+     "why": "철결핍을 확정하는 값",
+     "also": []
+    },
+    {
+     "item": "평균적혈구용적 71 fL",
+     "why": "소구성 빈혈",
+     "also": []
+    },
+    {
+     "item": "68세 남자",
+     "why": "월경 같은 생리적 실혈이 없어 위장관 출혈을 의심할 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "대변 잠혈검사 음성",
+     "why": "간헐적 출혈을 배제하지 못한다 — 내시경을 미룰 근거가 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "진통소염제나 항혈소판제는 먹지 않는다",
+     "why": "약물성 궤양 가능성을 낮추지만 내시경 필요성은 그대로",
+     "also": []
+    },
+    {
+     "item": "체중이 2 kg 줄었다",
+     "why": "악성 종양을 떠올리게 하지만 단독으로 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "소구성 빈혈과 페리틴 7 은 철결핍빈혈이다. 고령 남자의 철결핍은 대변 잠혈이 음성이어도 위장관 출혈을 의심해 위·대장 내시경을 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 소구성 빈혈이라도 페리틴이 정상이고 적혈구 수가 많으며 빈혈이 경하다면 지중해빈혈을 보려고 혈색소 전기영동을 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0477",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·산과·소화기·혈액·감염·신장·소아·내분비)",
+  "subtopic": "소화기·간담췌 — 헬리코박터 제균 확인 검사의 시점",
+  "type": "소화기·간담췌 — 헬리코박터 제균 확인 검사의 시점",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-29",
+  "vignette": "45세 남자가 1주 전 헬리코박터 파일로리 제균 치료를 마치고 외래에 왔다. 2개월 전 명치 통증으로 상부위장관내시경을 하여 합병증이 없는 십이지장궤양을 진단받았고, 조직검사에서 헬리코박터 파일로리가 확인되어 14일 동안 제균 치료를 받았다. 궤양 치료를 위해 양성자펌프억제제를 지금도 하루 한 번 복용하고 있다. 통증은 없어졌고 활력징후와 복부 진찰 소견은 정상이다.",
+  "question": "제균 여부를 확인하는 방법으로 가장 적절한 것은?",
+  "options": [
+   "치료 종료 4주 뒤 양성자펌프억제제를 2주 끊고 요소호기검사",
+   "지금 양성자펌프억제제를 계속 먹으면서 요소호기검사",
+   "치료 종료 4주 뒤 혈청 헬리코박터 IgG 항체검사",
+   "지금 내시경을 다시 하여 신속요소분해효소검사",
+   "증상이 없으므로 추가 검사 없이 경과 관찰"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 제균 확인은 치료 종료 후 최소 4주가 지나고, 양성자펌프억제제를 최소 2주 끊은 상태에서 요소호기검사(또는 대변 항원검사)로 한다. 합병증 없는 십이지장궤양은 궤양 확인을 위한 추적 내시경이 필요 없으므로 비침습 검사가 적절하다.\n- 원리: <b>왜 기다려야 하는가</b>: 항생제와 양성자펌프억제제는 균을 완전히 없애지 못했더라도 그 수와 요소분해효소 활성을 일시적으로 크게 줄인다. 그 상태에서 검사하면 남은 균이 있는데도 음성으로 나오는 <b>위음성</b>이 생긴다. 항생제·비스무트는 4주, 양성자펌프억제제는 2주 동안의 「씻김 기간」이 필요하다.<br> <b>요소호기검사의 원리</b>: 표지된 탄소(13C)를 가진 요소를 먹으면 살아 있는 균의 요소분해효소가 이를 암모니아와 표지된 CO2 로 나누고, 날숨에서 그 CO2 를 잰다. 즉 <b>살아 있는 균의 활성</b>을 보는 검사라 균 수가 억제되면 음성이 된다.<br> <b>혈청 항체가 안 되는 이유</b>: IgG 항체는 균이 사라진 뒤에도 수개월~수년 남아 「과거 감염」과 「현재 감염」을 가르지 못한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">4주 뒤·PPI 2주 중단 후 요소호기검사(정답)</th><th>PPI 복용 중 요소호기검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>균 활성</td><td><b>억제가 풀려 남은 균이 드러난다</b></td><td>남은 균의 요소분해효소가 억제된 상태</td></tr> <tr><td>음성의 의미</td><td>제균 성공으로 믿을 수 있다</td><td>위음성 가능 — 제균 실패를 놓친다</td></tr> <tr><td>필요한 간격</td><td>항생제 종료 ≥ 4주, PPI 중단 ≥ 2주</td><td>간격 없음</td></tr> </tbody></table> PPI 를 계속 써야 하면 H2 수용체 차단제로 바꿔 2주를 채운다 — 「언제」 검사하느냐가 「무엇으로」 검사하느냐만큼 중요하다.\n- 오답 이유:\n  - ② 양성자펌프억제제 복용 중 검사는 위음성이 많아 쓰지 않으며, 약을 2주 이상 끊은 뒤라면 같은 요소호기검사가 정답이 된다.\n  - ③ 혈청 IgG 항체는 제균 뒤에도 오래 남아 확인 검사로 부적절하고, 치료받은 적 없는 사람의 감염 선별에서만 쓸 수 있다.\n  - ④ 내시경 재검은 위궤양처럼 악성 배제를 위해 궤양 치유를 확인해야 할 때 정답이 되며, 그때도 약물 중단 간격은 같다.\n  - ⑤ 제균 확인은 증상과 관계없이 모든 치료자에게 권고되며, 검사를 생략하면 제균 실패와 궤양 재발 위험을 놓친다.\n- 함정: 치료를 마쳤으니 지금 바로 요소호기검사를 하는 것 — PPI·항생제가 균을 일시 억제해 위음성이 나온다.\n- 학습목표: 헬리코박터 제균 성공 여부는 치료 종료 4주 이후, 양성자펌프억제제를 2주 끊은 상태에서 요소호기검사(또는 대변 항원검사)로 확인한다\n- 근거·출처: Chey WD, Howden CW, Moss SF, et al. ACG Clinical Guideline: Treatment of Helicobacter pylori Infection. Am J Gastroenterol 2024;119:1730-1753 · Malfertheiner P, Megraud F, Rokkas T, et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. Gut 2022;71:1724-1762",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "제균 확인은 치료 종료 후 최소 4주가 지나고, 양성자펌프억제제를 최소 2주 끊은 상태에서 요소호기검사(또는 대변 항원검사)로 한다. 합병증 없는 십이지장궤양은 궤양 확인을 위한 추적 내시경이 필요 없으므로 비침습 검사가 적절하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 기다려야 하는가</b>: 항생제와 양성자펌프억제제는 균을 완전히 없애지 못했더라도 그 수와 요소분해효소 활성을 일시적으로 크게 줄인다. 그 상태에서 검사하면 남은 균이 있는데도 음성으로 나오는 <b>위음성</b>이 생긴다. 항생제·비스무트는 4주, 양성자펌프억제제는 2주 동안의 「씻김 기간」이 필요하다.<br> <b>요소호기검사의 원리</b>: 표지된 탄소(13C)를 가진 요소를 먹으면 살아 있는 균의 요소분해효소가 이를 암모니아와 표지된 CO2 로 나누고, 날숨에서 그 CO2 를 잰다. 즉 <b>살아 있는 균의 활성</b>을 보는 검사라 균 수가 억제되면 음성이 된다.<br> <b>혈청 항체가 안 되는 이유</b>: IgG 항체는 균이 사라진 뒤에도 수개월~수년 남아 「과거 감염」과 「현재 감염」을 가르지 못한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">4주 뒤·PPI 2주 중단 후 요소호기검사(정답)</th><th>PPI 복용 중 요소호기검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>균 활성</td><td><b>억제가 풀려 남은 균이 드러난다</b></td><td>남은 균의 요소분해효소가 억제된 상태</td></tr> <tr><td>음성의 의미</td><td>제균 성공으로 믿을 수 있다</td><td>위음성 가능 — 제균 실패를 놓친다</td></tr> <tr><td>필요한 간격</td><td>항생제 종료 ≥ 4주, PPI 중단 ≥ 2주</td><td>간격 없음</td></tr> </tbody></table> PPI 를 계속 써야 하면 H2 수용체 차단제로 바꿔 2주를 채운다 — 「언제」 검사하느냐가 「무엇으로」 검사하느냐만큼 중요하다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 양성자펌프억제제 복용 중 검사는 위음성이 많아 쓰지 않으며, 약을 2주 이상 끊은 뒤라면 같은 요소호기검사가 정답이 된다.\n③ 혈청 IgG 항체는 제균 뒤에도 오래 남아 확인 검사로 부적절하고, 치료받은 적 없는 사람의 감염 선별에서만 쓸 수 있다.\n④ 내시경 재검은 위궤양처럼 악성 배제를 위해 궤양 치유를 확인해야 할 때 정답이 되며, 그때도 약물 중단 간격은 같다.\n⑤ 제균 확인은 증상과 관계없이 모든 치료자에게 권고되며, 검사를 생략하면 제균 실패와 궤양 재발 위험을 놓친다."
+   },
+   {
+    "k": "함정",
+    "v": "치료를 마쳤으니 지금 바로 요소호기검사를 하는 것 — PPI·항생제가 균을 일시 억제해 위음성이 나온다."
+   },
+   {
+    "k": "학습목표",
+    "v": "헬리코박터 제균 성공 여부는 치료 종료 4주 이후, 양성자펌프억제제를 2주 끊은 상태에서 요소호기검사(또는 대변 항원검사)로 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Chey WD, Howden CW, Moss SF, et al. ACG Clinical Guideline: Treatment of Helicobacter pylori Infection. Am J Gastroenterol 2024;119:1730-1753 · Malfertheiner P, Megraud F, Rokkas T, et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. Gut 2022;71:1724-1762"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "제균 확인은 치료 종료 4주 뒤, 양성자펌프억제제를 2주 끊은 상태에서 요소호기검사로 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "PPI 복용 중이거나 항생제 직후에는 균 활성이 억제되어 위음성이 나온다",
+   "steps": 2,
+   "chain": [
+    "양성자펌프억제제를 지금도 복용 + 치료 종료 1주 → 지금 검사하면 위음성",
+    "합병증 없는 십이지장궤양 → 내시경 대신 비침습 요소호기검사를 적절한 시점에"
+   ],
+   "key": [
+    {
+     "item": "양성자펌프억제제를 지금도 하루 한 번 복용",
+     "why": "검사 전 2주 중단이 필요한 이유",
+     "also": []
+    },
+    {
+     "item": "1주 전 헬리코박터 파일로리 제균 치료를 마치고",
+     "why": "항생제 종료 4주가 지나지 않았다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "합병증이 없는 십이지장궤양",
+     "why": "추적 내시경이 필요한 위궤양·합병 궤양이 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "통증은 없어졌고",
+     "why": "증상 호전은 제균 성공을 뜻하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "치료 직후·PPI 복용 중에는 위음성이 나온다. 치료 종료 4주 뒤, PPI 를 2주 끊고 요소호기검사로 제균을 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "십이지장궤양이 아니라 위궤양이어서 악성 배제를 위해 치유를 확인해야 한다면 같은 간격을 지켜 내시경으로 확인한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261029T202621Z_일일영상_2026-10-30_9units_9q_8b599c8d",
+  "qid": "Q0004"
+ },
+ {
   "id": "imaging-2026-0467",
   "exam": "imaging",
   "style": "usmle_style",
