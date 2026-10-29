@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-28",
+ "generated": "2026-10-29",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4134,
+  "total": 4143,
   "byType": {
    "usmle": 222,
-   "concept": 118,
+   "concept": 119,
+   "paper": 867,
    "kmle": 1600,
    "imaging": 472,
-   "paper": 859,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 280,
-   "Nephrology": 225,
-   "Infectious Disease": 208,
-   "Pediatrics": 193,
+   "Cardiology": 281,
+   "Nephrology": 226,
+   "Infectious Disease": 209,
+   "Pediatrics": 194,
    "Obstetrics & Gynecology": 141,
-   "Pathology": 127,
-   "Rheumatology": 124,
-   "Hematology-Oncology": 123,
+   "Pathology": 128,
+   "Rheumatology": 125,
+   "Hematology-Oncology": 124,
    "Psychiatry": 120,
    "Neurology": 119,
    "General Surgery": 108,
+   "Surgery": 107,
    "Endocrinology": 106,
    "Orthopedics": 106,
-   "Surgery": 106,
    "Dermatology": 104,
    "Gastroenterology": 103,
    "Ophthalmology": 102,
    "Pulmonology": 102,
    "Hematology": 97,
-   "Laboratory Medicine": 88,
+   "Laboratory Medicine": 89,
    "산부인과": 68,
    "순환기": 41,
    "호흡기": 31,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2898,
-   "medium": 1184,
+   "medium": 1193,
    "low": 52
   },
   "tagCount": 5124
@@ -220,6 +220,20 @@ window.MEDKOS_INDEX = {
    "text": "Pharmacology A Seizure, Vomiting and a Pulse of 128 Five Days Into an Antibiotic for a COPD Flare in a 67-Year-Old Who Still Smokes theophylline ciprofloxacin cyp1a2 drug-interaction pharmacokinetics copd mechanism USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — drugs used in asthma: methylxanthines; drug interactions: CYP1A2 inhibition by fluoroquinolones; Lexicomp drug interaction monograph: ciprofloxacin–theophylline) A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. He has severe chronic obstructive pulmonary disease treated with inhaled tiotropium, inhaled albuterol as needed and sustained release oral theophylline, which he has taken at the same dose for 3 years. Five days ago he began a course of oral ciprofloxacin for an exacerbation with increased purulent sputum. He has smoked 1 pack of cigarettes daily for 45 years and smoked as usual this morning. He has no history of seizures or head trauma. His vital signs are shown. He is drowsy but arousable. He has a fine tremor of both hands. Scattered expiratory wheezes are heard. An ECG shows sinus tachycardia. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's elevated serum drug concentration? A. Decreased renal tubular secretion B. Displacement from albumin binding sites C. Inhibition of intestinal P glycoprotein D. Inhibition of hepatic CYP1A2 E. Withdrawal of smoking induced CYP1A2 activity 구토·떨림·빈맥·저칼륨혈증·고혈당 뒤 경련, 혈중 테오필린 34 µg/mL — 테오필린 독성이다(아데노신 수용체 차단·포스포디에스터레이스 억제·카테콜아민 분비 증가). 3년간 같은 용량으로 문제없던 농도가 5일 전 시작한 ciprofloxacin 뒤에 올랐으므로 약물 상호작용이다. 테오필린은 주로 간 CYP1A2 로 대사되고 치료역이 좁다 — 플루오로퀴놀론(특히 ciprofloxacin)은 CYP1A2 를 억제해 청소율을 떨어뜨리고 농도를 올린다. 흡연은 CYP1A2 를 유도하므로 금연하면 같은 결과가 오지만, 이 환자는 오늘 아침까지 피웠다. 크레아티닌·알부민이 정상이고 테오필린은 신장 배설·단백 결합 비중이 작아 신 배설 감소나 결합 치환으로 설명되지 않는다."
   },
   {
+   "id": "cn.rheum.gout.hla-b5801-before-allopurinol",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/concepts/rheumatology/cn.rheum.gout.hla-b5801-before-allopurinol.md",
+   "snippet": "판단 — 왜 HLA B 58:01 검사가 먼저인가 연 2회 넘는 발작·통풍결절·만성 통풍 관절염·요산 결석이 있으면 요산저하제를 시작한다 [[harrison 21: 372장 p.2864]]. 1차 약은 알로푸리놀(allopurinol)이다 [[harrison 21: 372장 p.2865]]. 드물지만 목숨을 위협하는 중증 피부이상반응(severe cutaneous adverse reaction, SCAR) — 스티븐스 존슨 증",
+   "text": "Rheumatology 판단 — 왜 HLA B 58:01 검사가 먼저인가 연 2회 넘는 발작·통풍결절·만성 통풍 관절염·요산 결석이 있으면 요산저하제를 시작한다 [[harrison 21: 372장 p.2864]]. 1차 약은 알로푸리놀(allopurinol)이다 [[harrison 21: 372장 p.2865]]. 드물지만 목숨을 위협하는 중증 피부이상반응(severe cutaneous adverse reaction, SCAR) — 스티븐스 존슨 증후군(Stevens Johnson syndrome)·독성표피괴사용해(toxic epidermal necrolysis) — 이 문제다. HLA B 58:01 보유율은 동남아시아인(일본계 제외)·태평양 도서민·흑인에서 높아, 이들은 알로푸리놀 시작 전에 선별한다 [[harrison 21: 372장 p.2865]]. 한국인을 대상에 넣는 근거는 「시험 쟁점」의 Z1. 만성콩팥병은 위험을 더 높이므로 검사 이유를 강화할 뿐, 시작을 미룰 이유가 아니다 [[harrison 21: 372장 p.2865]]. 기전 — 요산 과포화에서 약물 과민까지 사람은 요산분해효소(uricase)가 없어 요산이 쌓이기 쉽고, 혈청 요산이 약 6.85 mg/dL 를 넘으면 요산나트륨 결정이 생겨 관절에 침착한다 [[harrison 21: 372장 p.2863]]. 그래서 요산을 포화점 아래(< 5–6 mg/dL)로 유지해야 결정이 녹고 발작이 줄어든다 [[harrison 21: 372장 p.2864]]. 알로푸리놀은 잔틴산화효소(xanthine oxidase)를 억제해 요산 생성을 줄인다. 중증 피부이상반응은 용량과 몸속 농도가 높을수록 잘 생겨, 만성콩팥병·높은 시작 용량이 위험 요인이고, HLA B 58:01 보유·고령·여성이 더해진다 [[harrison 21: 372장 p.2865]]. 저용량에서 시작해 천천히 올리면 이 위험과 요산 급강하로 인한 발작이 함께 준다 [[harrison 21: 372장 p.2865]]. 선택 — 어떤 요산저하제를 어떻게 시작하나 검사 음성(또는 위험 집단이 아님): 알로푸리놀을 하루 100 mg 이하에서 시작한다. eGFR 30–45 면 50 mg 부터, 목표 요산까지 천천히 올린다 [[harrison 21: 372장 p.2865]]. 검사 양성: 알로푸리놀을 쓰지 않고 다른 요산저하제를 쓴다 [[harrison 21: 372장 p.2865]]. 시작 시점: 활동성 발작 중에는 시작하지 않는다. 회복기·뒤에 콜히친 0.6 mg 하루 1–2회 같은 예방을 함께 하고, 정상 요산으로 3–6개월 발작이 없을 때까지 이어 간다 [[harrison 21: 372장 p.2865]]. 재평가: 혈청 요산으로 용량을 맞추고, 가벼운 발진(약 2 %)도 중증 반응의 시작일 수 있어 살핀다 [[harrison 21: 372장 p.2865]]. 권고와 예외 시작 전 기본 검사: 크레아티닌·간기능·혈색소·백혈구·당화혈색소·지질 [[harrison 21: 372장 p.2864]]. 이뇨제(티아자이드·고리)는 요산을 올리고 발작을 유발한다 — 로사르탄·암로디핀·페노피브레이트·SGLT2 억제제는 요산을 낮추는 쪽이다 [[harrison 21: 372장 p.2865]]. 프로베네시드는 크레아티닌 2 mg/dL 에서 효과가 없다 [[harrison 21: 372장 p.2865]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 한국인은 선별 대상인가 — 시험 기준: 한국인은 알로푸리놀 시작 전 HLA B 58:01 을 검사한다 [[?acr 2020 gout]] / 다른 기준: 해리슨은 대상을 「동남아시아인(일본계 제외)·태평양 도서민·흑인」으로 적고 한국인을 따로 이름 짓지 않는다 [[harrison 21: 372장 p.2865]] / 왜 다른가: 해리슨은 넓은 집단 이름으로 묶었고, 지침은 국적별로 적는다 / 시험에서는: KMLE 는 한국인 = 검사 대상으로 · USMLE 는 「Southeast Asian(Han Chinese·Korean·Thai)·African American」 단서로 묻는다. Z2 새 근거 · 심혈관질환자의 페북소스타트 — 시험 기준: 심혈관질환이 있으면 알로푸리놀을 먼저, 페북소스타트는 덜 권한다 [[?acr 2020 gout]] / 다른 기준: 해리슨 372장은 페북소스타트의 심혈관 위험을 언급하지 않고 보유자의 대안으로만 적는다 [[harrison 21: 372장 p.2865]] / 왜 다른가: 지침은 심혈관 사망 우려를 반영했다(원문 미대조) / 시험에서는: KMLE·USMLE 모두 「심근경색·뇌졸중 병력 + 요산저하제」면 알로푸리놀 쪽을 고른다. (심화) 왜 저용량 시작이 피부 반응과 발작을 함께 줄이나 알로푸리놀과 그 활성 대사물 옥시푸리놀은 콩팥으로 나가므로 사구체여과율이 떨어지면 몸에 오래 남는다. 같은 용량이라도 만성콩팥병에서 농도가 높아져 면역 반응을 일으킬 문턱을 넘기 쉽다 — 그래서 만성콩팥병과 높은 시작 용량이 함께 위험 요인으로 꼽힌다 [[harrison 21: 372장 p.2865]]. 한편 요산이 빨리 떨어지면 관절의 결정 덩이(활막 통풍결절)가 녹으며 결정이 떨어져 나와 역설적 발작이 생긴다 [[harrison 21: 372장 p.2865]]. 천천히 올리는 전략 하나가 두 위험을 함께 낮춘다."
+  },
+  {
    "id": "cn.obgyn.female-sexual-dysfunction.management",
    "type": "concept",
    "unit": "",
@@ -232,6 +246,142 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/obstetrics-gynecology/cn.obgyn.female-sexual-dysfunction.management.md",
    "snippet": "판단 — 왜 고통·주된 문제·원인 순서인가 진단의 문턱은 개인적 고통 이다 — 네 갈래(욕구 저하·흥분·극치감·통증) 모두 고통을 요건으로 두므로, 고통이 없으면 교육으로 끝난다 [[harrison 21: 397장 p.3062]]. 다음은 가장 괴로운 증상 을 고른다 — 갈래는 서로 배타적이지 않아 환자가 무엇을 가장 고치고 싶은지가 치료의 출발점이다 [[harrison 21: 397장 p.3062]]. 통증·건조가 중심이고 ",
    "text": "Obstetrics & Gynecology 판단 — 왜 고통·주된 문제·원인 순서인가 진단의 문턱은 개인적 고통 이다 — 네 갈래(욕구 저하·흥분·극치감·통증) 모두 고통을 요건으로 두므로, 고통이 없으면 교육으로 끝난다 [[harrison 21: 397장 p.3062]]. 다음은 가장 괴로운 증상 을 고른다 — 갈래는 서로 배타적이지 않아 환자가 무엇을 가장 고치고 싶은지가 치료의 출발점이다 [[harrison 21: 397장 p.3062]]. 통증·건조가 중심이고 폐경 뒤라면 외음질 위축(vulvovaginal atrophy) 을 먼저 다룬다 — 폐경과 그 이행기는 위축 관련 성기능 장애의 큰 위험 요인이다 [[harrison 21: 397장 p.3062]]. 욕구·흥분이 중심이면 원인 약물 (항우울제 등)과 위험 요인을 먼저 찾고, 행동·비약물 치료와 상담을 첫 단계로 둔다 [[harrison 21: 397장 p.3062]]. 기전 — 에스트로겐·혈류·신경이 반응을 만든다 정상 여성 성 반응에는 에스트로겐이 필요하고, 안드로겐도 관여할 것으로 보지만 근거는 덜하다 [[harrison 21: 397장 p.3062]]. 욕구가 생기면 흥분은 중추·자율신경이 매개한다 — 말초 부교감 활동이 음핵 울혈과 질 분비(윤활)를 만들고, 음핵 해면체 평활근 이완에는 산화질소(nitric oxide, NO)가, 질 삼출에는 NO·혈관작용 장 펩티드(VIP)가 관여한다고 본다 [[harrison 21: 397장 p.3062]]. 질 윤활은 흥분 때 골반 혈류가 늘며 생기는 혈청 삼출액 이라, 혈관 부전이 있으면 윤활이 부족해 성교통(dyspareunia)이 생긴다 [[harrison 21: 397장 p.3062]]. 감각이 온전해야 흥분하므로 당뇨 말초신경병에서 기능이 떨어지고, 극치감은 온전한 교감신경 출력로 가 필요해 척수 손상 여성에서 극치감 장애가 흔하다 [[harrison 21: 397장 p.3062]]. 위험 요인은 남성과 비슷하다 — 심혈관 질환(특히 고혈압), 당뇨·고프로락틴혈증, 신경 질환, 생식기 수술·방사선, 간·신부전, 흡연, 심리·관계 요인, 약물(항우울제·항안드로겐·항에스트로겐·항고혈압제 등) [[harrison 21: 397장 p.3061]]. 가르는 소견 — 무엇이 가장 괴로운가 지역사회 조사에서 여성의 43% 가 하나 이상의 성 문제를 호소하고, 가장 흔한 것은 욕구·흥분(윤활 포함) 장애 다 [[harrison 21: 397장 p.3061–3062]]. 평가는 내과·수술·산과·부인과·정신·성·사회력과 복용 약을 묻고, 음핵을 포함한 생식기와 골반저 (탈출 등)를 진찰한다 [[harrison 21: 397장 p.3062]]. 검사는 제한적으로 — 폐경 여부가 불확실하면 에스트라디올·FSH·LH, 부신 안드로겐 분비를 보려면 DHEA. 음핵 도플러·감각 측정은 비싸고 유용성이 불확실하다 [[harrison 21: 397장 p.3062]]. 선택 — 국소 치료·약 조정·상담 행동·비약물 치료가 첫 단계 다 — 정상 해부·생리 반응과 나이에 따른 변화를 설명하고, 성교 삽입보다 음핵 자극이 더 도움이 될 수 있음을 알려 준다. 부부 상담이 소통·관계 긴장을 풀 수 있다 [[harrison 21: 397장 p.3062]]. 성교통·건조에는 국소 윤활제를 쓴다 [[harrison 21: 397장 p.3062]]. 폐경 뒤에는 에스트로겐 보충이 질 위축·성교 통증을 줄이고 음핵 감각을 개선할 수 있다 — 질 제제로 쓰고, 정기적으로 바르는 윤활·보습제의 효과가 국소 에스트로겐과 비슷하다 [[harrison 21: 397장 p.3062]]. 원인 약물은 감량·교체·휴약으로 조정한다 [[harrison 21: 397장 p.3062]]. 권고와 예외 유방암 병력이 있고 위축이 심하면 전신 흡수가 가장 낮은 질 에스트로겐 제제가 선호될 수 있다. 질 에스트로겐을 피하고 싶은 여성에게는 윤활·보습제를 권한다 [[harrison 21: 397장 p.3062]]. 항우울제를 바꿀 때 SSRI 중 파록세틴·에스시탈로프람이 성기능 부작용 위험이 가장 크고, 부프로피온·네파조돈·미르타자핀은 덜한 편이다 [[harrison 21: 397장 p.3058]]. 폐경 전신 호르몬 치료의 시작·금기 판단은 정리본 cn.obgyn.menopause.hormone therapy decision 에 있다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 397장 p.3058·3061~3062). 드라이브 장 문서가 p.3062 중간에서 끝나 그 뒤 호르몬·약물 치료 서술은 대조하지 못했다."
+  },
+  {
+   "id": "paper-2026-0867",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / General dentistry",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0867_coronectomy_as_an_alternative_to_extraction_for_mandibular_t.md",
+   "snippet": "Title Coronectomy as an alternative to extraction for mandibular third molars with high risk of paresthesia: a case report Authors Mello Luis Fernando, González Alejandra Hortencia M, Gomez Ana Luiza, Texeira Itamar Francisco, Andrade José ",
+   "text": "Surgery scraped pubmed PubMed / General dentistry Title Coronectomy as an alternative to extraction for mandibular third molars with high risk of paresthesia: a case report Authors Mello Luis Fernando, González Alejandra Hortencia M, Gomez Ana Luiza, Texeira Itamar Francisco, Andrade José Rubens, Volpato Luiz Evaristo Ricci Journal / DOI General dentistry · PMID: 42949940 https://pubmed.ncbi.nlm.nih.gov/42949940/ Abstract Coronectomy, a surgical alternative to dental extraction, involves the removal of the crown and retention of the intraosseous roots at least 3 mm below the alveolar crest. This report presents the clinical case of a 55 year old woman who sought care due to pain and food accumulation in the region of the mandibular left third molar. Clinical evaluation and imaging tests revealed that the impacted tooth was close to the mandibular canal, and coronectomy was selected to avoid possible injury to the inferior alveolar nerve and consequent short or long term paresthesia. After administration of anesthesia and elevation of a full thickness envelope flap, osteotomy was performed, and the crown was sectioned from the root buccolingually at the cementoenamel junction in such a way as to preserve the alveolar bone crest. The crown was carefully removed using elevators, and then the remaining root and surrounding bone were recontoured to maintain the root at least 3 mm below the margin of the alveolar crest without causing injury to the inferior alveolar nerve. Clinical and radiographic evaluations 2 years after the procedure revealed excellent tissue healing and good bone repair without root migration. The favorable outcome in this patient supports coronectomy as a viable and conservative treatment alternative in specific cases selected based on clear indications and careful planning, supported by adequate diagnostic imaging. It is important to schedule periodic follow up evaluations to observe the behavior of the remaining roots. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0866",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Scandinavian journal of medicine & science in sports",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0866_effects_of_a_multicomponent_app_based_exercise_program_on_mo.md",
+   "snippet": "Title Effects of a Multicomponent App Based Exercise Program on Motor Skill Development in Children With Attention Deficit Hyperactivity Disorder: A Secondary Outcome Analysis of a Three Arm Randomized Controlled Trial Authors Zhu Feilong, ",
+   "text": "Pediatrics scraped pubmed PubMed / Scandinavian journal of medicine & science in sports Title Effects of a Multicomponent App Based Exercise Program on Motor Skill Development in Children With Attention Deficit Hyperactivity Disorder: A Secondary Outcome Analysis of a Three Arm Randomized Controlled Trial Authors Zhu Feilong, Dong Zhenghao, Kuang Dongqing, Zhu Xiaotong, Bi Xiaoyu, Li Zhufeng, Yang Li, Wang Yufeng, et al. Journal / DOI Scandinavian journal of medicine & science in sports · DOI: 10.1111/sms.70386 · PMID: 42949431 https://pubmed.ncbi.nlm.nih.gov/42949431/ Abstract Motor skill deficits are common in children with attention deficit hyperactivity disorder (ADHD), while traditional face to face exercise interventions are often limited by cost and accessibility. This secondary outcome analysis of a three arm randomized controlled trial examined the effects of a multicomponent app based exercise program on motor skill outcomes in children with ADHD. A total of 145 children aged 6 10 years were assigned to an app based exercise group (Experimental Group 1, EG1; n = 53), a traditional offline exercise group (Experimental Group 2, EG2; n = 45), or a minimal intervention control group (CG, n = 47). Both intervention groups received a 12 week program (3 sessions/week, 45 60 min/session) involving integrated physical and cognitive exercises, delivered either through a custom developed WeChat applet (\"LeDongYing\") or through coach led in person sessions. Motor skills were assessed using the Test of Gross Motor Development, Third Edition (TGMD 3) for locomotor and ball skills, and the Movement Assessment Battery for Children, Second Edition (MABC 2) for manual dexterity, aiming and catching, and balance. Intervention effects were examined using linear mixed effects models. Both EG1 and EG2 showed significant improvements across all motor skill domains (all p < 0.01), whereas the CG showed no significant changes. Pairwise comparisons showed that both intervention groups were superior to the CG on all motor skill outcomes (all p < 0.05), with no statistically significant differences between EG1 and EG2. These findings support the short term efficacy of a multicomponent app based exercise intervention for motor test performance in children with ADHD compared with minimal intervention, suggesting potential as an alternative delivery when access to face to face exercise services is limited. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0865",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0865_25_hydroxyvitamin_d2_and_d3_composition_and_repeat_test_patt.md",
+   "snippet": "Title 25 hydroxyvitamin D2 and D3 composition and repeat test patterns in routine adult hospital liquid chromatography tandem mass spectrometry testing Authors Mai Yichi, Song Ziyin, Yi Cheng, Wei Lili, Liu Huanliang, Xiao Yanhong Journal /",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Laboratory medicine Title 25 hydroxyvitamin D2 and D3 composition and repeat test patterns in routine adult hospital liquid chromatography tandem mass spectrometry testing Authors Mai Yichi, Song Ziyin, Yi Cheng, Wei Lili, Liu Huanliang, Xiao Yanhong Journal / DOI Laboratory medicine · DOI: 10.1093/labmed/lmag079 · PMID: 42950140 https://pubmed.ncbi.nlm.nih.gov/42950140/ Abstract INTRODUCTION: Liquid chromatography tandem mass spectrometry quantifies 25 hydroxyvitamin D2 (25[OH]D2) and D3 (25[OH]D3) separately, but clinical reporting often emphasizes total 25(OH)D. We characterized component composition and repeat test changes in routine adult hospital testing. METHODS: We retrospectively analyzed a pseudonymized dataset derived from routine laboratory records for vitamin D tests performed from June 2019 through November 2022. Cross sectional analyses used first tests from 2808 adults; longitudinal analyses compared first and last tests in 446 retested adults. Vitamin D2 contributory composition was defined exploratorily as a 25(OH)D2 share of at least 10%, with sensitivity analyses using 5%, 20%, and a continuous measure. RESULTS: Median total 25(OH)D was 24.6 ng/mL (approximately 61.5 nmol/L), and 71.3% of results were below the local reference cutoff. Vitamin D2 contributory composition occurred in 16.3% and was associated with sex, season, and ordering service. Among retested adults, median changes were 4.3 ng/mL for total 25(OH)D, 4.2 ng/mL for 25(OH)D3, and 0.1 ng/mL for 25(OH)D2. Total change correlated with 25(OH)D3 change (ρ = 0.98; P < .001) but not with 25(OH)D2 change (ρ = 0.04; P = .46). DISCUSSION: Fractionated measurements revealed compositional variation within total 25(OH)D categories and predominantly D₃ related changes on repeat testing. The clinical implications of these patterns require further evaluation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0864",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / CASE (Philadelphia, Pa.)",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0864_a_self_inflicted_intracardiac_foreign_body_traversing_the_ve.md",
+   "snippet": "Title A Self Inflicted Intracardiac Foreign Body Traversing the Ventricular Septum Authors Hajiali Arezoo, Hali Reza, Mohammadzadeh Saba Journal / DOI CASE (Philadelphia, Pa.) · DOI: 10.1016/j.case.2026.05.008 · PMID: 42948799 https://pubme",
+   "text": "Pathology scraped pubmed PubMed / CASE (Philadelphia, Pa.) Title A Self Inflicted Intracardiac Foreign Body Traversing the Ventricular Septum Authors Hajiali Arezoo, Hali Reza, Mohammadzadeh Saba Journal / DOI CASE (Philadelphia, Pa.) · DOI: 10.1016/j.case.2026.05.008 · PMID: 42948799 https://pubmed.ncbi.nlm.nih.gov/42948799/ Abstract • Multimodality imaging is vital for diagnosing complex intracardiac foreign bodies. • Chronic needle injuries may present as masses mimicking thrombus on imaging. • Histopathology is essential to differentiate fibroconnective tissue from thrombi. • Imaging facilitates precise surgical planning for objects traversing the septum. • Collateral history is key when clinical narratives are unreliable or withheld. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0863",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0863_immunotherapy_with_stereotactic_body_radiation_therapy_in_ea.md",
+   "snippet": "Title Immunotherapy With Stereotactic Body Radiation Therapy in Early Stage Non‑Small Cell Lung Cancer: Matching Risk, Biology, and Timing Authors Shaverdian Narek, Riely Gregory J Journal / DOI Journal of clinical oncology : official journ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Immunotherapy With Stereotactic Body Radiation Therapy in Early Stage Non‑Small Cell Lung Cancer: Matching Risk, Biology, and Timing Authors Shaverdian Narek, Riely Gregory J Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO 26 01966 · PMID: 42950185 https://pubmed.ncbi.nlm.nih.gov/42950185/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0862",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annual review of medicine",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0862_conservative_management_of_kidney_failure.md",
+   "snippet": "Title Conservative Management of Kidney Failure Authors Yahr Jordana, Schell Jane O, Gelfand Samantha L Journal / DOI Annual review of medicine · DOI: 10.1146/annurev med 042425 022821 · PMID: 42950168 https://pubmed.ncbi.nlm.nih.gov/429501",
+   "text": "Nephrology scraped pubmed PubMed / Annual review of medicine Title Conservative Management of Kidney Failure Authors Yahr Jordana, Schell Jane O, Gelfand Samantha L Journal / DOI Annual review of medicine · DOI: 10.1146/annurev med 042425 022821 · PMID: 42950168 https://pubmed.ncbi.nlm.nih.gov/42950168/ Abstract The default therapy for end stage kidney disease is often dialysis, but for those with advanced age and multimorbidity, it may not provide significant benefit to longevity or quality of life. Conservative management (CM) is a holistic care pathway for those whose care preferences do not align with dialysis. CM aims to optimize quality of life over the disease course as patient priorities evolve and their disease progresses. Components of CM include customized chronic kidney disease care, symptom management, and navigation of transitions of care, including end of life care. Nephrology clinicians are the central providers of CM and ideally collaborate with a multidisciplinary team to provide medical, psychosocial, and spiritual care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0861",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0861_gram_negative_bacterial_resistance.md",
+   "snippet": "Title Gram Negative Bacterial Resistance Authors Tamma Pranita D Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMra2506114 · PMID: 42950203 https://pubmed.ncbi.nlm.nih.gov/42950203/ Abstract The rapid worldwide spread o",
+   "text": "Infectious Disease scraped pubmed PubMed / The New England journal of medicine Title Gram Negative Bacterial Resistance Authors Tamma Pranita D Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMra2506114 · PMID: 42950203 https://pubmed.ncbi.nlm.nih.gov/42950203/ Abstract The rapid worldwide spread of antimicrobial resistance among gram negative bacteria is driven by a complex interplay of human, environmental, and health care associated factors and accelerated by mobile genetic elements that facilitate the dissemination of resistance genes. Resistance in gram negative bacteria arises primarily through reduced drug entry, active drug efflux, modification of antibiotic targets, and enzymatic drug inactivation, most notably through β lactamase production. Clinically important resistant pathogens include extended spectrum β lactamase producing Enterobacterales, carbapenem resistant Enterobacterales, Pseudomonas aeruginosa with difficult to treat resistance, and carbapenem resistant Acinetobacter baumannii. Limited access to effective antibiotics and the continued emergence of resistance to available agents pose substantial challenges to the management of these infections. Appropriate management requires timely and accurate diagnostics, targeted use of newer β lactam agents, effective source control, and judicious selection of treatment durations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0860",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal. Cardiovascular Imaging",
+   "confidence": "medium",
+   "date": "2026-10-28",
+   "path": "content/papers/2026/2026-10-28_paper-2026-0860_right_atrial_phasic_function_improves_cmr_based_prognosticat.md",
+   "snippet": "Title Right Atrial Phasic Function Improves CMR Based Prognostication in Patients with Heart Failure with Mildly Reduced Ejection Fraction: A Multicenter Study Authors Wang Wenxian, Zhu Runze, Gao Yan, Wang Jian, Liu Wen, Liu Jie, Wu Liang,",
+   "text": "Cardiology scraped pubmed PubMed / European heart journal. Cardiovascular Imaging Title Right Atrial Phasic Function Improves CMR Based Prognostication in Patients with Heart Failure with Mildly Reduced Ejection Fraction: A Multicenter Study Authors Wang Wenxian, Zhu Runze, Gao Yan, Wang Jian, Liu Wen, Liu Jie, Wu Liang, Wang Wanting, et al. Journal / DOI European heart journal. Cardiovascular Imaging · DOI: 10.1093/ehjci/jeag298 · PMID: 42950123 https://pubmed.ncbi.nlm.nih.gov/42950123/ Abstract AIMS: In multiple cardiovascular diseases, right atrial (RA) function can serve as an independent predictor for the clinical status and prognosis. However, the prognostic value of RA strain in patients with heart failure with mildly reduced ejection fraction (HFmrEF) remains considerably unknown. This study aims to explore the relationships between RA strain derived from cardiac magnetic resonance imaging feature tracking (CMR FT) and adverse outcomes in patients with HFmrEF. METHODS AND RESULTS: This retrospective study enrolled patients with HFmrEF who were referred for echocardiography and CMR at two tertiary medical centers from April 2016 to September 2024. The primary endpoint was a composite of all cause mortality, HF related hospitalization and cardiac transplantation. The findings were validated in a cohort of patients with HFmrEF enrolled from two additional tertiary care centers (January 2019 to January 2025). The development cohort included 1317 patients, and the validation cohort comprised 385 patients. During a median follow up period of 2.8 years and 2.1 years, respectively, 243 and 72 patients in the development cohort and validation cohort reached the primary endpoint, respectively. Cox regression analysis showed that RA conduit strain was an independent predictor of the primary outcome (HR: 0.86 [0.82, 0.90]; P < .001). The full model integrating clinical variables, traditional imaging, and RA strain achieved the best predictive performance (C index: 0.80 in development, 0.81 in validation cohorts). CONCLUSION: RA conduit strain derived from CMR is an independent predictor of adverse outcomes in patients with HFmrEF, providing incremental prognostic value beyond traditional clinical and imaging derived risk markers.​. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1634",
