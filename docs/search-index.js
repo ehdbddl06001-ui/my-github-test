@@ -1,59 +1,59 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-29",
+ "generated": "2026-10-30",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4185,
+  "total": 4201,
   "byType": {
    "kmle": 1632,
+   "imaging": 489,
    "concept": 120,
    "usmle": 222,
-   "imaging": 481,
-   "paper": 867,
+   "paper": 875,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 284,
-   "Nephrology": 228,
-   "Infectious Disease": 211,
-   "Pediatrics": 196,
+   "Cardiology": 285,
+   "Nephrology": 229,
+   "Infectious Disease": 212,
+   "Pediatrics": 197,
    "Obstetrics & Gynecology": 143,
-   "Pathology": 128,
+   "Pathology": 129,
    "Rheumatology": 127,
-   "Hematology-Oncology": 124,
+   "Hematology-Oncology": 125,
    "Psychiatry": 122,
    "Neurology": 121,
    "General Surgery": 110,
    "Endocrinology": 108,
    "Orthopedics": 108,
-   "Surgery": 107,
+   "Surgery": 108,
    "Dermatology": 106,
    "Gastroenterology": 105,
    "Ophthalmology": 104,
    "Pulmonology": 104,
    "Hematology": 99,
-   "Laboratory Medicine": 89,
+   "Laboratory Medicine": 90,
    "산부인과": 69,
    "순환기": 41,
-   "소화기": 31,
-   "호흡기": 31,
+   "소화기": 32,
+   "호흡기": 32,
    "소아과": 27,
    "Physiology": 24,
+   "내분비": 24,
    "응급·중환자": 24,
+   "혈액·종양": 24,
    "감염": 23,
-   "내분비": 23,
    "병리·조직학": 23,
-   "혈액·종양": 23,
-   "신경": 22,
-   "신장·비뇨기": 22,
+   "신경": 23,
+   "신장·비뇨기": 23,
    "외과": 21,
+   "피부과": 20,
    "Pharmacology": 19,
-   "피부과": 19,
    "Biochemistry": 18,
    "예방의학·역학": 18,
    "Microbiology": 17,
@@ -61,7 +61,7 @@ window.MEDKOS_INDEX = {
    "Immunology": 13,
    "근골격·류마티스": 13,
    "약리": 13,
-   "정신과": 12,
+   "정신과": 13,
    "안과": 10,
    "영상의학": 8,
    "이비인후과": 8,
@@ -79,8 +79,8 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2938,
-   "medium": 1195,
+   "high": 2946,
+   "medium": 1203,
    "low": 52
   },
   "tagCount": 5158
@@ -670,6 +670,144 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Two Fainting Spells in Two Weeks with a Very Slow Pulse in an Older Woman Taking a Single Blood Pressure Pill bradyarrhythmia av-block pacemaker ecg KMLE 2026 / Claude 74세 여자가 2주 동안 서 있다가 갑자기 눈앞이 캄캄해지며 두 번 쓰러져 왔다. 쓰러지기 전 가슴 통증이나 두근거림은 없었고 깨어난 뒤 곧 정신이 돌아왔다. 고혈압으로 5년째 암로디핀 한 가지만 먹고 있고 다른 약이나 한약은 먹지 않는다. 진찰에서 목정맥에 가끔 큰 파동이 보인다. 응급실 도착 뒤 의식은 명료하고 계속 감시하는 동안 같은 리듬이 이어진다. 활력징후, 검사 결과와 심전도는 자료와 같다. 가장 적절한 처치는? A. 영구 심장박동기 삽입 B. 24시간 홀터 감시 후 외래 재평가 C. 이소프로테레놀 정맥 주사 후 퇴원 D. 아트로핀 정맥 주사 후 경과 관찰 E. 암로디핀 중단 후 일주일 뒤 재평가 P파와 QRS가 서로 무관하게 뛰는 완전 방실차단이 실신과 함께 확인되었고, 칼륨·트로포닌·TSH가 정상이며 방실결절을 늦추는 약도 없어 되돌릴 원인이 없다. 증상이 있는 완전 방실차단이므로 영구 심장박동기를 넣는다."
   },
   {
+   "id": "imaging-2026-0490",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 갑자기 생긴 한쪽 얼굴 마비",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0490.md",
+   "snippet": "A 34 year old man comes to the emergency department because he noticed that the right side of his face was drooping when he woke up this morning. He also has mild pain behind the right ear since yesterday and finds loud sounds uncomfortable",
+   "text": "신경 신경 — 갑자기 생긴 한쪽 얼굴 마비 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 A 34 year old man comes to the emergency department because he noticed that the right side of his face was drooping when he woke up this morning. He also has mild pain behind the right ear since yesterday and finds loud sounds uncomfortable in the right ear. He has no weakness or numbness of the limbs and no rash. Vital signs are within normal limits. He cannot wrinkle the right side of his forehead or fully close the right eye, and the right corner of his mouth droops. The ear canal and tympanic membrane appear normal. The remainder of the neurologic examination is normal. Which of the following is the most appropriate next step in management? A. Oral valacyclovir alone B. Lumbar puncture C. Oral prednisone D. Noncontrast CT of the head E. Intravenous alteplase"
+  },
+  {
+   "id": "imaging-2026-0489",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 리튬 복용자가 이뇨제를 더한 뒤 생긴 혼돈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0489.md",
+   "snippet": "48세 여자가 이틀 전부터 말이 어눌하고 손이 심하게 떨리며 헛소리를 해 가족이 응급실에 데려왔다. 양극성장애로 6년째 탄산리튬을 복용하며 혈중 농도는 늘 0.8 mEq/L 안팎이었다. 3주 전 고혈압으로 하이드로클로로티아자이드를 새로 처방받았고, 일주일 전부터 설사를 하여 잘 먹지 못했다. 체온 37.2℃, 혈압 108/66 mmHg, 맥박 96회/분이다. 이름은 대지만 날짜와 장소를 모르고, 굵은 떨림과 사지의 간대성 근경",
+   "text": "정신과 정신 — 리튬 복용자가 이뇨제를 더한 뒤 생긴 혼돈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 48세 여자가 이틀 전부터 말이 어눌하고 손이 심하게 떨리며 헛소리를 해 가족이 응급실에 데려왔다. 양극성장애로 6년째 탄산리튬을 복용하며 혈중 농도는 늘 0.8 mEq/L 안팎이었다. 3주 전 고혈압으로 하이드로클로로티아자이드를 새로 처방받았고, 일주일 전부터 설사를 하여 잘 먹지 못했다. 체온 37.2℃, 혈압 108/66 mmHg, 맥박 96회/분이다. 이름은 대지만 날짜와 장소를 모르고, 굵은 떨림과 사지의 간대성 근경련, 운동실조가 있다. 근육 강직은 없다. 혈중 리튬 4.1 mEq/L, 나트륨 134 mEq/L, 크레아티닌 2.4 mg/dL(3개월 전 0.9 mg/dL)이다. 생리식염수 정맥 주입을 시작하였다. 함께 해야 할 처치로 가장 적절한 것은? A. 혈액투석으로 리튬 제거 B. 활성탄 50 g 경구 투여 C. 단트롤렌 정맥 주사 D. 사이프로헵타딘 경구 투여 E. 수액 지속과 리튬 농도 재측정"
+  },
+  {
+   "id": "imaging-2026-0488",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 출산 뒤 갑상샘중독증과 낮은 방사성 요오드 섭취",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0488.md",
+   "snippet": "A 29 year old woman comes to the physician because of palpitations, heat intolerance, and a 3 kg weight loss for 3 weeks. She delivered a healthy infant 4 months ago and stopped breastfeeding 1 month ago. She has no neck pain. Pulse is 108/",
+   "text": "내분비 내분비·대사 — 출산 뒤 갑상샘중독증과 낮은 방사성 요오드 섭취 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 A 29 year old woman comes to the physician because of palpitations, heat intolerance, and a 3 kg weight loss for 3 weeks. She delivered a healthy infant 4 months ago and stopped breastfeeding 1 month ago. She has no neck pain. Pulse is 108/min and blood pressure is 126/74 mm Hg. The thyroid gland is slightly enlarged, nontender, and smooth. There is no proptosis. Serum TSH is less than 0.01 μU/mL, free T4 is 2.6 ng/dL (N = 0.9–1.7), and anti–thyroid peroxidase antibodies are positive. Thyrotropin receptor antibodies are negative. A 24 hour radioactive iodine uptake is 2% (N = 10–30). Which of the following is the most appropriate treatment? A. Prednisone B. Levothyroxine C. Propranolol D. Methimazole E. Radioactive iodine ablation"
+  },
+  {
+   "id": "imaging-2026-0487",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 성인 신증후군과 혈청 자가항체",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0487.md",
+   "snippet": "52세 남자가 2개월 전부터 양쪽 다리와 눈꺼풀이 부어 왔다. 당뇨병은 없고 최근 복용한 약도 없다. 혈압 132/82 mmHg 이고 양쪽 정강이에 오목부종이 있다. 소변검사에서 단백 4+, 적혈구 0~2/고배율시야, 원주는 없다. 24시간 소변 단백 8.2 g, 혈청 알부민 2.1 g/dL, 총콜레스테롤 340 mg/dL, 크레아티닌 0.9 mg/dL 이다. 혈청 보체 C3·C4 는 정상이고 항핵항체, B형·C형 간염 항원·",
+   "text": "신장·비뇨기 신장·비뇨 — 성인 신증후군과 혈청 자가항체 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 52세 남자가 2개월 전부터 양쪽 다리와 눈꺼풀이 부어 왔다. 당뇨병은 없고 최근 복용한 약도 없다. 혈압 132/82 mmHg 이고 양쪽 정강이에 오목부종이 있다. 소변검사에서 단백 4+, 적혈구 0~2/고배율시야, 원주는 없다. 24시간 소변 단백 8.2 g, 혈청 알부민 2.1 g/dL, 총콜레스테롤 340 mg/dL, 크레아티닌 0.9 mg/dL 이다. 혈청 보체 C3·C4 는 정상이고 항핵항체, B형·C형 간염 항원·항체, HIV 검사는 음성이다. 혈청 항 포스포리파아제 A2 수용체(PLA2R) 항체가 높은 역가로 양성이다. 가장 가능성이 높은 진단은? A. 루푸스신염(제5형) B. 일차 막성신병증 C. 미세변화병 D. 일차 국소분절사구체경화증 E. 막증식사구체신염"
+  },
+  {
+   "id": "imaging-2026-0486",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 샤워 뒤 가려움과 높은 혈색소",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0486.md",
+   "snippet": "A 61 year old man comes to the physician because of headaches and itching after hot showers for 3 months. He has never smoked and does not have snoring or daytime sleepiness. He takes no medications, including testosterone. Blood pressure i",
+   "text": "혈액·종양 혈액·종양 — 샤워 뒤 가려움과 높은 혈색소 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 A 61 year old man comes to the physician because of headaches and itching after hot showers for 3 months. He has never smoked and does not have snoring or daytime sleepiness. He takes no medications, including testosterone. Blood pressure is 148/88 mm Hg. His face is ruddy, and the spleen tip is palpable 2 cm below the left costal margin. Oxygen saturation is 97% on room air. Hemoglobin is 19.2 g/dL, hematocrit is 58%, leukocyte count is 13,200/mm3, and platelet count is 520,000/mm3. Serum erythropoietin concentration is low. Which of the following is the most appropriate next step in diagnosis? A. JAK2 V617F mutation analysis B. BCR ABL1 fusion analysis C. Overnight polysomnography D. CT of the abdomen to look for a renal mass E. Bone marrow aspiration and biopsy"
+  },
+  {
+   "id": "imaging-2026-0485",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 담석췌장염 회복 뒤 담낭절제의 시점",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0485.md",
+   "snippet": "56세 여자가 이틀 전 명치에서 등으로 뻗치는 심한 통증으로 입원하였다. 입원 당시 혈청 리파아제 1,850 U/L(참고치 < 60), ALT 245 U/L, 총빌리루빈 1.4 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있었으며 총담관 지름은 5 mm 였다. 수액 치료 뒤 통증이 사라져 오늘 아침부터 일반식을 먹고 있다. 체온 36.8℃, 혈압 124/78 mmHg, 맥박 76회/분이다. 오늘 검사에서 총빌리",
+   "text": "소화기 소화기·간담췌 — 담석췌장염 회복 뒤 담낭절제의 시점 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 56세 여자가 이틀 전 명치에서 등으로 뻗치는 심한 통증으로 입원하였다. 입원 당시 혈청 리파아제 1,850 U/L(참고치 < 60), ALT 245 U/L, 총빌리루빈 1.4 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있었으며 총담관 지름은 5 mm 였다. 수액 치료 뒤 통증이 사라져 오늘 아침부터 일반식을 먹고 있다. 체온 36.8℃, 혈압 124/78 mmHg, 맥박 76회/분이다. 오늘 검사에서 총빌리루빈 0.8 mg/dL, ALT 62 U/L, 백혈구 7,900/mm³, 크레아티닌 0.7 mg/dL 이다. 다음 처치로 가장 적절한 것은? A. 복부 조영증강 컴퓨터단층촬영 B. 이번 입원 중 복강경 담낭절제술 C. 내시경역행담췌관조영술과 괄약근절개술 D. 퇴원 후 6~8주 뒤 복강경 담낭절제술 E. 우르소데옥시콜산 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0484",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 고령 남성의 발열·호흡곤란과 산소가 필요한 바이러스 폐렴",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0484.md",
+   "snippet": "A 79 year old man is brought to the emergency department because of fever, cough, and increasing shortness of breath for 6 days. A nasal swab RT PCR test performed yesterday was positive for SARS CoV 2. He has hypertension treated with amlo",
+   "text": "호흡기 호흡기 — 고령 남성의 발열·호흡곤란과 산소가 필요한 바이러스 폐렴 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 A 79 year old man is brought to the emergency department because of fever, cough, and increasing shortness of breath for 6 days. A nasal swab RT PCR test performed yesterday was positive for SARS CoV 2. He has hypertension treated with amlodipine. Temperature is 38.4°C, pulse is 104/min, respirations are 26/min, and blood pressure is 132/78 mm Hg. Oxygen saturation is 88% on room air and rises to 94% with oxygen at 3 L/min by nasal cannula. Crackles are heard at both lung bases. A portable chest radiograph is shown. Which of the following is the most appropriate pharmacotherapy? A. Nirmatrelvir–ritonavir B. Tocilizumab C. Hydroxychloroquine D. Oseltamivir E. Dexamethasone"
+  },
+  {
+   "id": "imaging-2026-0483",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 고령 여성의 등에 넓게 퍼진 다색 색소 병변",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+   "confidence": "high",
+   "date": "2026-10-30",
+   "path": "content/imaging/2026/imaging-2026-0483.md",
+   "snippet": "80세 여자가 등에 있던 갈색 반점이 몇 년 사이 넓어지고 색이 짙어졌다고 딸이 알려 주어 피부과에 왔다. 가렵거나 피가 난 적은 없다. 젊었을 때 해수욕을 자주 했고 피부암 가족력은 없다. 등 아래쪽에 가로 약 2.5 cm 의 경계가 불규칙하고 납작한 갈색·흑갈색 반이 있으며 만져지는 결절은 없다. 겨드랑이 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 액체질소 냉동치",
+   "text": "피부과 피부 — 고령 여성의 등에 넓게 퍼진 다색 색소 병변 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279 80세 여자가 등에 있던 갈색 반점이 몇 년 사이 넓어지고 색이 짙어졌다고 딸이 알려 주어 피부과에 왔다. 가렵거나 피가 난 적은 없다. 젊었을 때 해수욕을 자주 했고 피부암 가족력은 없다. 등 아래쪽에 가로 약 2.5 cm 의 경계가 불규칙하고 납작한 갈색·흑갈색 반이 있으며 만져지는 결절은 없다. 겨드랑이 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 액체질소 냉동치료 B. 6개월 뒤 더모스코피 사진을 비교하는 추적 관찰 C. 2 cm 경계의 광범위 절제와 감시림프절 생검 D. 1~3 mm 경계를 두고 병변 전체를 절제생검 E. 가장 짙은 부위 한 곳의 펀치생검만 시행"
+  },
+  {
    "id": "cn.cardio.edema.generalized-cause",
    "type": "concept",
    "unit": "",
@@ -815,6 +953,142 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0230.md",
    "snippet": "A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. ",
    "text": "Pharmacology A Seizure, Vomiting and a Pulse of 128 Five Days Into an Antibiotic for a COPD Flare in a 67-Year-Old Who Still Smokes theophylline ciprofloxacin cyp1a2 drug-interaction pharmacokinetics copd mechanism USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — drugs used in asthma: methylxanthines; drug interactions: CYP1A2 inhibition by fluoroquinolones; Lexicomp drug interaction monograph: ciprofloxacin–theophylline) A 67 year old man is brought to the emergency department 30 minutes after a generalized tonic clonic seizure at home. For the past 2 days he has had nausea, repeated vomiting and palpitations, and his wife has noticed that his hands shake. He has severe chronic obstructive pulmonary disease treated with inhaled tiotropium, inhaled albuterol as needed and sustained release oral theophylline, which he has taken at the same dose for 3 years. Five days ago he began a course of oral ciprofloxacin for an exacerbation with increased purulent sputum. He has smoked 1 pack of cigarettes daily for 45 years and smoked as usual this morning. He has no history of seizures or head trauma. His vital signs are shown. He is drowsy but arousable. He has a fine tremor of both hands. Scattered expiratory wheezes are heard. An ECG shows sinus tachycardia. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's elevated serum drug concentration? A. Decreased renal tubular secretion B. Displacement from albumin binding sites C. Inhibition of intestinal P glycoprotein D. Inhibition of hepatic CYP1A2 E. Withdrawal of smoking induced CYP1A2 activity 구토·떨림·빈맥·저칼륨혈증·고혈당 뒤 경련, 혈중 테오필린 34 µg/mL — 테오필린 독성이다(아데노신 수용체 차단·포스포디에스터레이스 억제·카테콜아민 분비 증가). 3년간 같은 용량으로 문제없던 농도가 5일 전 시작한 ciprofloxacin 뒤에 올랐으므로 약물 상호작용이다. 테오필린은 주로 간 CYP1A2 로 대사되고 치료역이 좁다 — 플루오로퀴놀론(특히 ciprofloxacin)은 CYP1A2 를 억제해 청소율을 떨어뜨리고 농도를 올린다. 흡연은 CYP1A2 를 유도하므로 금연하면 같은 결과가 오지만, 이 환자는 오늘 아침까지 피웠다. 크레아티닌·알부민이 정상이고 테오필린은 신장 배설·단백 결합 비중이 작아 신 배설 감소나 결합 치환으로 설명되지 않는다."
+  },
+  {
+   "id": "paper-2026-0875",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cancer research and therapeutics",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0875_dose_fall_off_index_dfi_an_organ_centric_metric_for_spatial_.md",
+   "snippet": "Title Dose fall off index (DFI): An organ centric metric for spatial dose gradient evaluation in head and neck IMRT and VMAT Authors Ghosh Subhrendu, Goyal Monika, Sarkar Biplab Journal / DOI Journal of cancer research and therapeutics · DO",
+   "text": "Surgery scraped pubmed PubMed / Journal of cancer research and therapeutics Title Dose fall off index (DFI): An organ centric metric for spatial dose gradient evaluation in head and neck IMRT and VMAT Authors Ghosh Subhrendu, Goyal Monika, Sarkar Biplab Journal / DOI Journal of cancer research and therapeutics · DOI: 10.4103/jcrt.jcrt 97 26 · PMID: 42955967 https://pubmed.ncbi.nlm.nih.gov/42955967/ Abstract BACKGROUND: Achieving sharp dose gradients is essential in head and neck radiotherapy to ensure tumor control while sparing nearby organs at risk (OARs). Conventional dose volume histograms (DVHs) summarize dose but do not show spatial fall off at OAR boundaries. To address this, we evaluated the Dose Fall off Index (DFI), an OAR centric metric that normalizes high dose subvolume to organ size. To provide clinical context, DFI was examined together with normal tissue complication probability (NTCP) modeling and risk classification. METHODS: A total of 160 treatment plans were retrospectively analyzed, including VMAT ( n = 82) and IMRT ( n = 78). DFI was calculated for the parotid glands, larynx, oral cavity, and pharyngeal constrictor muscles (PCM). Correlations with irradiated volume and mean dose were assessed, and subgroup comparisons were made by diagnosis, postoperative status, SIB use, and age. Statistical tests included t tests, ANO V A, and Bonferroni corrections. RESULTS: DFI showed an inverse relationship with irradiated volume and a moderate association with mean dose across OARs. Despite comparable mean doses, VMAT achieved significantly higher parotid DFI than IMRT ( P < 0.001), consistent with improved angular dose sampling. Lower DFI values were observed in laryngeal tumors, postoperative cases, and SIB plans, while the weak negative association with age was not clinically meaningful. VMAT plans more frequently fell into the low risk category on NTCP based stratification. CONCLUSIONS: DFI is a simple, organ focused metric that complements DVHs by describing dose gradient steepness. When used alongside NTCP modeling, DFI provides a complementary framework for interpreting spatial dose gradients within the context of established biological risk estimates. Further studies incorporating clinical toxicity outcomes are required to determine its clinical relevance and potential association with treatment related toxicity outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0874",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0874_effect_of_nutrition_counseling_on_complementary_feeding_prac.md",
+   "snippet": "Title Effect of nutrition counseling on complementary feeding practices among mothers with children aged 6 23 months in West Gojjam Zone, Northwest Ethiopia: A cluster randomized controlled trial Authors Birhanu Shiferaw, Alene Getu Degu, D",
+   "text": "Pediatrics scraped pubmed PubMed / PloS one Title Effect of nutrition counseling on complementary feeding practices among mothers with children aged 6 23 months in West Gojjam Zone, Northwest Ethiopia: A cluster randomized controlled trial Authors Birhanu Shiferaw, Alene Getu Degu, Demilew Yeshalem Mulugeta Journal / DOI PloS one · DOI: 10.1371/journal.pone.0361976 · PMID: 42955999 https://pubmed.ncbi.nlm.nih.gov/42955999/ Abstract BACKGROUND: Appropriate complementary feeding is essential for children's growth and cognitive development. However, these practices remain inadequate in the study area. Therefore, this study aimed to evaluate the effect of nutrition counseling on complementary feeding practices among mothers with children aged 6 23 months in West Gojjam Zone, Northwest Ethiopia. METHODS: A two arm, parallel, cluster randomized controlled trial was conducted from June 2023 to December 2024 in rural districts of West Gojjam Zone. Thirty clusters (15 per arm) were assigned to either an intervention group (n = 401), which received Health Belief Model based nutrition counseling by Women's Development Army leaders, or to a control group (n = 401), which received routine education. The intervention was delivered monthly for nine months from infant age 6 8 months. The primary outcome was appropriate complementary feeding practices. Secondary outcomes included minimum dietary diversity, meal frequency, acceptable diet, and egg/flesh food consumption. Data were collected via interviewer administered questionnaires. The intervention effect was analyzed using Generalized Estimating Equations with adjustment for potential confounders. Statistical significance was set at p < 0.05. RESULTS: The difference in differences in appropriate complementary feeding practices between groups was 13.2 percentage points. After adjustment, mothers in the intervention group were nearly 2.5 times more likely to practice appropriate complementary feeding than controls [AOR = 2.49, 95% CI: (1.40, 4.42)]. Children of counseled mothers were also more likely to achieve minimum dietary diversity [AOR = 1.75, 95% CI: (1.04, 2.93)], minimum meal frequency [AOR = 1.62, 95% CI: (1.01, 2.61)], and minimum acceptable diet [AOR = 2.13, 95% CI: (1.26, 3.59)] compared with controls. CONCLUSION: Health Belief Model based nutrition counseling was positively associated with improvements in appropriate complementary feeding practices, minimum dietary diversity, meal frequency, and acceptable diet. Integrating such counseling into routine maternal and child health services may strengthen child nutrition programs in similar rural settings. TRIAL REGISTRATION: ClinicalTrials.gov (NCT05871346). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0873",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0873_validation_of_a_four_extrastimulus_ventricular_stimulation_p.md",
+   "snippet": "Title Validation of a Four Extrastimulus Ventricular Stimulation Protocol for Arrhythmic Risk Stratification in Tetralogy of Fallot Authors Muñoz Lucía Canales, Peinado Rafael Peinado, Ferrero Teba González, Diz Jesús, Argos Carlos Merino, ",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Validation of a Four Extrastimulus Ventricular Stimulation Protocol for Arrhythmic Risk Stratification in Tetralogy of Fallot Authors Muñoz Lucía Canales, Peinado Rafael Peinado, Ferrero Teba González, Diz Jesús, Argos Carlos Merino, Colunga Pablo Meras, García Ana González, Cantador José Ruíz, et al. Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70550 · PMID: 42956186 https://pubmed.ncbi.nlm.nih.gov/42956186/ Abstract INTRODUCTION: Risk stratification for sustained ventricular arrhythmias (SVA) in adults with repaired Tetralogy of Fallot (TOF) remains challenging. Although programmed ventricular stimulation (PVS) has shown a high negative predictive value, the prognostic performance of a four extrastimulus PVS protocol validated in ischemic heart disease has not been systematically evaluated in congenital heart disease. METHODS AND RESULTS: We retrospectively included 41 consecutive adults with repaired TOF who underwent EPS using a standardized four extrastimulus PVS protocol at two right ventricular sites. Inducibility of SVA was assessed. The primary endpoint was the occurrence of clinical SVA during follow up. Kaplan Meier analysis and Firth penalized Cox regression were used to evaluate prognostic performance, and diagnostic accuracy metrics were calculated. Inducibility was observed in 18 patients (44%). During a median follow up of 1.68 years, SVA occurred exclusively in inducible patients (5/18; 28%), all corresponding to sustained monomorphic ventricular tachycardia. No non inducible patient developed SVA. Inducibility was associated with significantly lower SVA free survival (log rank p = 0.015) and an increased risk of events (HR 13.6; 95% CI 1.5 1804; p = 0.017) in univariate analysis. The four extrastimulus protocol demonstrated a sensitivity of 100% and specificity of 64%. CONCLUSIONS: In adults with repaired TOF and risk factors for sudden cardiac death, the four extrastimulus PVS protocol identified a subgroup at high arrhythmic risk while reliably excluding events in non inducible individuals. These findings support the potential value of PVS as part of multimodal risk stratification, particularly for identifying patients in whom ICD implantation may be deferred. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0872",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cancer research and therapeutics",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0872_foreign_body_granulomas_masquerading_as_metastatic_deposits.md",
+   "snippet": "Title Foreign body granulomas masquerading as metastatic deposits Authors Krishnan K Abhilash, Joshi Rashmi P, Goyal Harish, Balasubramanian Kalaivanan Journal / DOI Journal of cancer research and therapeutics · DOI: 10.4103/jcrt.jcrt 1789 ",
+   "text": "Pathology scraped pubmed PubMed / Journal of cancer research and therapeutics Title Foreign body granulomas masquerading as metastatic deposits Authors Krishnan K Abhilash, Joshi Rashmi P, Goyal Harish, Balasubramanian Kalaivanan Journal / DOI Journal of cancer research and therapeutics · DOI: 10.4103/jcrt.jcrt 1789 25 · PMID: 42955991 https://pubmed.ncbi.nlm.nih.gov/42955991/ Abstract A 30 year old male with a known case of rectal adenocarcinoma, post low anterior resection (LAR) and oxaliplatin with capecitabine chemotherapy, presented with fluorodeoxyglucose (FDG) avid extensive multiple peritoneal and hepatic deposits on Positron Emission Tomography Computed Tomography (PET CT), suggestive of metastatic disease. After histological examination, these lesions were pulse granulomas with vegetable matter deposits, causing a florid foreign body type giant cell reaction. This case represents a rare presentation of foreign body granuloma masquerading as a metastatic deposit. It is an important diagnostic pitfall where benign foreign body granulomas can mimic metastatic disease both radiologically and clinically, emphasizing the role of histopathology in definitive diagnosis and guiding appropriate patient management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0871",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cancer research communications",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0871_anti_pd_l1_glycoengineering_enhances_tumor_killing_through_c.md",
+   "snippet": "Title Anti PD L1 glycoengineering enhances tumor killing through coordinated interactions between PD L1⁺ DCs and CD16A⁺ cytotoxic lymphocytes Authors Blomberg Anne Louise, Tian Weihua, Agullet Judit Pina, Madsen Natasha Helleberg, Linde Kat",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Cancer research communications Title Anti PD L1 glycoengineering enhances tumor killing through coordinated interactions between PD L1⁺ DCs and CD16A⁺ cytotoxic lymphocytes Authors Blomberg Anne Louise, Tian Weihua, Agullet Judit Pina, Madsen Natasha Helleberg, Linde Katrine Grove, Psaradaki Christina, Skov Søren, Skovbakke Sarah Line, et al. Journal / DOI Cancer research communications · DOI: 10.1158/2767 9764.CRC 26 0696 · PMID: 42956317 https://pubmed.ncbi.nlm.nih.gov/42956317/ Abstract Blockade of the PD 1/PD L1 axis has transformed cancer immunotherapy, yet many patients fail to achieve durable responses. Although Fc glycoengineering by defucosylation is well established to enhance NK cell mediated antibody dependent cellular cytotoxicity through increased FcγRIIIa binding, its effects on other FcγRIIIa expressing immune cells remain poorly understood. Using complementary human in vitro dendritic cell lymphocyte coculture models, we compared non glycosylated, wild type, and defucosylated anti PD L1 antibody variants. Defucosylation enhanced FcγRIIIa binding and increased the relative frequency and activation of cytotoxic lymphocytes, particularly CD3⁺CD56⁺ NKT like cells. Our findings identify a previously unrecognized mechanism whereby coordinated engagement of PD L1 on dendritic cells and FcγRIIIa on lymphocytes alters cytotoxic lymphocyte composition. The changes in cytotoxic lymphocyte composition and activation induced by defucosylated anti PD L1 were associated with enhanced tumor killing in both human 2D and 3D cancer models, supporting Fc glycoengineering as a potential strategy to improve cancer immunotherapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0870",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of veterinary internal medicine",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0870_effect_of_canagliflozin_on_insulin_sensitivity_in_insulin_dy.md",
+   "snippet": "Title Effect of canagliflozin on insulin sensitivity in insulin dysregulated horses as assessed by euglycemic hyperinsulinemic clamp: a randomized, placebo controlled trial Authors Svonni Elin, Michanek Peter, Bergsten Peter, Lindåse Sanna,",
+   "text": "Nephrology scraped pubmed PubMed / Journal of veterinary internal medicine Title Effect of canagliflozin on insulin sensitivity in insulin dysregulated horses as assessed by euglycemic hyperinsulinemic clamp: a randomized, placebo controlled trial Authors Svonni Elin, Michanek Peter, Bergsten Peter, Lindåse Sanna, Bröjer Johan Journal / DOI Journal of veterinary internal medicine · DOI: 10.1093/jvimsj/aalag285 · PMID: 42955827 https://pubmed.ncbi.nlm.nih.gov/42955827/ Abstract BACKGROUND: Insulin resistance, enhanced β cell responsiveness, and lower insulin clearance contribute to hyperinsulinemia in horses with insulin dysregulation. Canagliflozin (CAN) reduces hyperinsulinemia in horses, but its effect on insulin sensitivity (IS) remains unclear. HYPOTHESIS/OBJECTIVES: Evaluate the effects of CAN on IS and insulin clearance using a euglycemic hyperinsulinemic clamp (EHC) and on β cell responsiveness using a graded glucose infusion test (GGI) in insulin dysregulated (ID) horses. ANIMALS: Twenty privately owned ID mares. METHODS: In this randomized, double blind, placebo controlled study, horses received CAN (0.4 mg/kg, n = 10) or placebo (PBO, n = 10) PO once daily for 4 weeks. Insulin sensitivity and insulin metabolic clearance rate (MCR) were assessed by EHC, and β cell responsiveness by GGI. RESULTS: Insulin sensitivity (M/I) was lower with CAN than PBO (1.5 ± 0.2 vs 2.7 ± 0.2 [mg/kg/min × 103]/[μIU/mL]; LS mean difference, 1.3 [95% CI, 1.9 to 0.6]; P < .001), whereas insulin MCR was higher (6.5 ± 0.3 vs 5.4 ± 0.3 mL/kg/min; LS mean difference, 1.0 [95% CI, 0.3 1.8]; P = .01). Beta cell responsiveness (ΔI vs ΔG) was 43.3% lower with CAN (20.8 [95% CI, 16.9 25.5] vs 36.7 [29.9 45.1] mIU/mmol; ratio of geometric LS means, 0.57 [95% CI, 0.42 0.76]; P < .001). CONCLUSIONS AND CLINICAL IMPORTANCE: Beta cell responsiveness was lower and insulin clearance higher in CAN treated ID mares, despite apparently lower IS. Higher endogenous glucose production in CAN treated mares might have contributed to an underestimation of IS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0869",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medical Internet research",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0869_nanorobots_are_using_light_and_clever_engineering_to_beat_bi.md",
+   "snippet": "Title Nanorobots Are Using Light and Clever Engineering to Beat Biofilms and Tackle Antimicrobial Resistant Infections Authors Critchley Liam Journal / DOI Journal of medical Internet research · DOI: 10.2196/114831 · PMID: 42956189 https://",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of medical Internet research Title Nanorobots Are Using Light and Clever Engineering to Beat Biofilms and Tackle Antimicrobial Resistant Infections Authors Critchley Liam Journal / DOI Journal of medical Internet research · DOI: 10.2196/114831 · PMID: 42956189 https://pubmed.ncbi.nlm.nih.gov/42956189/ Abstract The scope of the antimicrobial resistance issue is huge one promising solution may be much, much smaller. In this News and Perspectives article, JMIR Correspondent Liam Critchley reports on advances in micro/nanorobotics, which may provide new avenues for treating biofilm infections. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0868",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-10-29",
+   "path": "content/papers/2026/2026-10-29_paper-2026-0868_transient_lung_volume_reduction_improves_first_shock_cardiov.md",
+   "snippet": "Title Transient Lung Volume Reduction Improves First Shock Cardioversion Success by Reducing Transthoracic Impedance in Patients With Persistent Atrial Fibrillation Authors Yildirim Onur, Şahin Büşra Kidam, Kaplan Havva Sayhan, Akincioğlu B",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Transient Lung Volume Reduction Improves First Shock Cardioversion Success by Reducing Transthoracic Impedance in Patients With Persistent Atrial Fibrillation Authors Yildirim Onur, Şahin Büşra Kidam, Kaplan Havva Sayhan, Akincioğlu Betül, Şahan Haluk Furkan, Özdemir Özcan Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70548 · PMID: 42956187 https://pubmed.ncbi.nlm.nih.gov/42956187/ Abstract BACKGROUND: Transthoracic impedance (TTI) is an important determinant of the efficacy of direct current cardioversion (DCCV), as increased impedance may reduce myocardial current delivery. Because lung volume influences thoracic electrical properties, transient lung volume reduction (TLVR) may represent a simple strategy for acutely lowering TTI and improving cardioversion efficacy. This study evaluated the effect of a standardized TLVR maneuver on TTI and first shock cardioversion success in patients with persistent atrial fibrillation (AF). METHODS: This prospective, randomized study included 116 patients with persistent AF scheduled for first time radiofrequency ablation. Patients were randomized 1:1 to conventional mechanical ventilation (standard CV group, n = 58) or a standardized TLVR maneuver immediately before cardioversion (TLVR CV group, n = 58). Baseline TTI was measured before the intervention, and post TLVR TTI was additionally measured in the TLVR group. All patients underwent anterior posterior cardioversion with an initial 200 J shock. First shock success was defined as maintenance of sinus rhythm for at least 1 min. Multivariable linear and hierarchical logistic regression analyses were performed to investigate determinants of impedance reduction and first shock success. RESULTS: First shock cardioversion success was significantly higher in the TLVR CV group than in the standard CV group (53.4% vs. 29.3%, p = 0.008), whereas cumulative success after up to three shocks was similar (96.6% vs. 91.4%, p = 0.242). The impedance reduction rate was significantly higher among patients with successful first shock cardioversion (9.09% vs. 5.00%, p < 0.001). In multivariable linear regression, TLVR independently increased the impedance reduction rate by 1.75 percentage points (B = 1.751, p = 0.001), while a higher Body Roundness Index was associated with a lower reduction (β = 0.468, p < 0.001). In the mechanistic logistic regression model, each 1% increase in impedance reduction was associated with a 2.23 fold higher likelihood of first shock success (OR = 2.226, p < 0.001). Model explanatory power increased from 56.3% to 74.9% after the incorporation of impedance reduction. CONCLUSION: A standardized TLVR maneuver immediately before cardioversion was associated with greater TTI reduction and an approximately twofold increase in first shock cardioversion success in patients with persistent AF. The impedance reduction rate emerged as a strong independent predictor of successful initial cardioversion, supporting a potential physiological mechanism linking acute lung volume reduction to improved electrical cardioversion efficacy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0482",

@@ -2,6 +2,1041 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0484",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "호흡기 — 고령 남성의 발열·호흡곤란과 산소가 필요한 바이러스 폐렴",
+  "type": "호흡기 — 고령 남성의 발열·호흡곤란과 산소가 필요한 바이러스 폐렴",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-30",
+  "vignette": "A 79-year-old man is brought to the emergency department because of fever, cough, and increasing shortness of breath for 6 days. A nasal swab RT-PCR test performed yesterday was positive for SARS-CoV-2. He has hypertension treated with amlodipine. Temperature is 38.4°C, pulse is 104/min, respirations are 26/min, and blood pressure is 132/78 mm Hg. Oxygen saturation is 88% on room air and rises to 94% with oxygen at 3 L/min by nasal cannula. Crackles are heard at both lung bases. A portable chest radiograph is shown.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Nirmatrelvir–ritonavir",
+   "Tocilizumab",
+   "Hydroxychloroquine",
+   "Oseltamivir",
+   "Dexamethasone"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The radiograph shows hazy ground-glass and reticular opacities in both lower lung zones, denser on the left, with relatively clear upper zones and no pneumothorax or large effusion — bilateral pneumonia. With confirmed SARS-CoV-2 infection and hypoxemia that requires supplemental oxygen, dexamethasone 6 mg daily for up to 10 days reduces mortality; remdesivir may be added in hospitalized patients who need low-flow oxygen.\n- 원리: <b>Why a steroid helps only now</b>: COVID-19 runs in two phases. In the first week the virus replicates; later, lung injury is driven mostly by the host inflammatory response. Patients who already need oxygen are in the inflammatory phase, and dexamethasone dampens it — in the RECOVERY trial it lowered 28-day mortality in patients on oxygen or mechanical ventilation but not in those who needed no oxygen, where it trended toward harm.<br> <b>Why the radiograph matters</b>: bilateral, lower-zone and peripheral opacities show that hypoxemia comes from viral pneumonia rather than from bronchospasm or a focal bacterial consolidation; it places him in the \"hospitalized, needs oxygen\" category that the guidelines use to choose drugs.<br> <b>Why antivirals alone are not enough</b>: oral antivirals are given early to outpatients at high risk to prevent progression; once oxygen is needed, the inflammatory phase has begun and antiviral therapy adds little without a steroid.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Dexamethasone (answer)</th><th>Nirmatrelvir–ritonavir (closest distractor)</th></tr></thead><tbody> <tr><td>Target phase</td><td><b>Inflammatory phase — patient needs oxygen</b></td><td>Early viral phase — within 5 days of symptoms</td></tr> <tr><td>Usual setting</td><td>Hospitalized with SpO<sub>2</sub> &lt; 94% on room air</td><td>Outpatient at high risk, no oxygen requirement</td></tr> <tr><td>Proven benefit</td><td>Lower mortality (RECOVERY)</td><td>Fewer hospitalizations and deaths in unvaccinated high-risk outpatients</td></tr> <tr><td>Caution</td><td>Hyperglycemia, secondary infection</td><td>Strong CYP3A inhibition — many drug interactions</td></tr> </tbody></table> The oxygen requirement is the switch: no oxygen and early illness → oral antiviral; oxygen required → dexamethasone (± remdesivir).\n- 오답 이유:\n  - (A) Nirmatrelvir–ritonavir would be correct for a high-risk outpatient within 5 days of symptom onset who does not yet need supplemental oxygen.\n  - (B) Tocilizumab would be added to dexamethasone if oxygen needs rose rapidly to high-flow or ventilation with markedly elevated inflammatory markers.\n  - (C) Hydroxychloroquine showed no benefit in randomized trials and would only be considered for conditions such as malaria or lupus, not COVID-19.\n  - (D) Oseltamivir would be correct if the swab were positive for influenza, which also causes fever, cough, and bilateral pneumonia in older adults.\n- 함정: Choosing the oral antiviral because the infection is viral — once hypoxemia requires oxygen, the inflammatory phase calls for dexamethasone.\n- 학습목표: SARS-CoV-2 감염 환자에서 흉부 X선의 양측 아래폐야 음영과 실내 공기 산소포화도 저하로 산소가 필요한 폐렴을 확인하고 덱사메타손을 투여한다\n- 근거·출처: RECOVERY Collaborative Group. Dexamethasone in Hospitalized Patients with Covid-19. N Engl J Med 2021;384:693-704 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic Management of Hospitalized Adults With COVID-19 (archived 2024)\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27279274 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows hazy ground-glass and reticular opacities in both lower lung zones, denser on the left, with relatively clear upper zones and no pneumothorax or large effusion — bilateral pneumonia. With confirmed SARS-CoV-2 infection and hypoxemia that requires supplemental oxygen, dexamethasone 6 mg daily for up to 10 days reduces mortality; remdesivir may be added in hospitalized patients who need low-flow oxygen."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a steroid helps only now</b>: COVID-19 runs in two phases. In the first week the virus replicates; later, lung injury is driven mostly by the host inflammatory response. Patients who already need oxygen are in the inflammatory phase, and dexamethasone dampens it — in the RECOVERY trial it lowered 28-day mortality in patients on oxygen or mechanical ventilation but not in those who needed no oxygen, where it trended toward harm.<br> <b>Why the radiograph matters</b>: bilateral, lower-zone and peripheral opacities show that hypoxemia comes from viral pneumonia rather than from bronchospasm or a focal bacterial consolidation; it places him in the \"hospitalized, needs oxygen\" category that the guidelines use to choose drugs.<br> <b>Why antivirals alone are not enough</b>: oral antivirals are given early to outpatients at high risk to prevent progression; once oxygen is needed, the inflammatory phase has begun and antiviral therapy adds little without a steroid."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Dexamethasone (answer)</th><th>Nirmatrelvir–ritonavir (closest distractor)</th></tr></thead><tbody> <tr><td>Target phase</td><td><b>Inflammatory phase — patient needs oxygen</b></td><td>Early viral phase — within 5 days of symptoms</td></tr> <tr><td>Usual setting</td><td>Hospitalized with SpO<sub>2</sub> &lt; 94% on room air</td><td>Outpatient at high risk, no oxygen requirement</td></tr> <tr><td>Proven benefit</td><td>Lower mortality (RECOVERY)</td><td>Fewer hospitalizations and deaths in unvaccinated high-risk outpatients</td></tr> <tr><td>Caution</td><td>Hyperglycemia, secondary infection</td><td>Strong CYP3A inhibition — many drug interactions</td></tr> </tbody></table> The oxygen requirement is the switch: no oxygen and early illness → oral antiviral; oxygen required → dexamethasone (± remdesivir)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Nirmatrelvir–ritonavir would be correct for a high-risk outpatient within 5 days of symptom onset who does not yet need supplemental oxygen.\n(B) Tocilizumab would be added to dexamethasone if oxygen needs rose rapidly to high-flow or ventilation with markedly elevated inflammatory markers.\n(C) Hydroxychloroquine showed no benefit in randomized trials and would only be considered for conditions such as malaria or lupus, not COVID-19.\n(D) Oseltamivir would be correct if the swab were positive for influenza, which also causes fever, cough, and bilateral pneumonia in older adults."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the oral antiviral because the infection is viral — once hypoxemia requires oxygen, the inflammatory phase calls for dexamethasone."
+   },
+   {
+    "k": "학습목표",
+    "v": "SARS-CoV-2 감염 환자에서 흉부 X선의 양측 아래폐야 음영과 실내 공기 산소포화도 저하로 산소가 필요한 폐렴을 확인하고 덱사메타손을 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "RECOVERY Collaborative Group. Dexamethasone in Hospitalized Patients with Covid-19. N Engl J Med 2021;384:693-704 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic Management of Hospitalized Adults With COVID-19 (archived 2024) ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27279274 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "SARS-CoV-2 폐렴으로 산소가 필요한 입원 환자에게는 덱사메타손을 투여한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "경구 항바이러스제는 산소가 필요 없는 고위험 외래 환자의 초기 5일 안에 쓴다 — 이 환자는 6일째이고 산소가 필요하다",
+   "steps": 2,
+   "chain": [
+    "영상: 양측 아래폐야 음영 + 양 폐 바닥 수포음 + SARS-CoV-2 양성 → 바이러스 폐렴",
+    "실내 공기 산소포화도 88 %, 산소 투여 필요 → 염증기 → 덱사메타손"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 아래폐야의 흐릿한 간유리·그물 음영",
+     "why": "양측 바이러스 폐렴을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "Oxygen saturation is 88% on room air",
+     "why": "산소가 필요한 단계 — 스테로이드의 사망률 이득이 있는 군",
+     "also": []
+    },
+    {
+     "item": "positive for SARS-CoV-2",
+     "why": "원인 확인 — 인플루엔자 치료를 고를 이유가 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "for 6 days",
+     "why": "경구 항바이러스제의 5일 창을 지났다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "hypertension treated with amlodipine",
+     "why": "니르마트렐비르-리토나비르의 약물 상호작용 확인 대상이지만 정답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "양측 아래폐야 음영과 산소가 필요한 저산소혈증은 SARS-CoV-2 폐렴의 염증기다. 덱사메타손을 투여한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "증상 3일째이고 산소포화도가 실내 공기에서 96 % 로 산소가 필요 없는 외래 환자였다면 니르마트렐비르-리토나비르가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0484.png",
+   "caption": "Portable anteroposterior chest radiograph, unaltered apart from scaling (TCIA, CC BY 4.0 — no crop or adjustment; ECG electrodes visible)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1106101309565967627801027279274",
+   "asset_id": "TCIA-COVID19_AR-77370597115698",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27279274"
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0483",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "피부 — 고령 여성의 등에 넓게 퍼진 다색 색소 병변",
+  "type": "피부 — 고령 여성의 등에 넓게 퍼진 다색 색소 병변",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-30",
+  "vignette": "80세 여자가 등에 있던 갈색 반점이 몇 년 사이 넓어지고 색이 짙어졌다고 딸이 알려 주어 피부과에 왔다. 가렵거나 피가 난 적은 없다. 젊었을 때 해수욕을 자주 했고 피부암 가족력은 없다. 등 아래쪽에 가로 약 2.5 cm 의 경계가 불규칙하고 납작한 갈색·흑갈색 반이 있으며 만져지는 결절은 없다. 겨드랑이 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "액체질소 냉동치료",
+   "6개월 뒤 더모스코피 사진을 비교하는 추적 관찰",
+   "2 cm 경계의 광범위 절제와 감시림프절 생검",
+   "1~3 mm 경계를 두고 병변 전체를 절제생검",
+   "가장 짙은 부위 한 곳의 펀치생검만 시행"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 더모스코피에서 병변이 비대칭이고 굵기가 고르지 않은 비정형 색소 그물, 연갈색·진갈색·흑갈색이 섞인 여러 색, 한쪽의 불규칙한 짙은 얼룩, 가장자리의 불규칙한 점·소구와 흰 퇴행 구역이 보인다 — 흑색종을 의심하는 소견이다. 임상적으로도 넓어지고 짙어진 비대칭 다색 반이다. 흑색종이 의심되면 먼저 병변 전체를 1~3 mm 경계로 절제생검해 진단과 Breslow 두께를 확인하고, 그 두께에 따라 최종 절제 경계와 감시림프절 생검 여부를 정한다.\n- 원리: <b>왜 「전체」를 떼어 보는가</b>: 흑색종의 예후와 이후 치료는 거의 전부 <b>Breslow 두께</b>(과립층에서 가장 깊은 종양세포까지의 깊이)로 정해진다. 큰 병변의 일부만 떼면 가장 두꺼운 곳을 놓쳐 병기를 낮게 매길 수 있고, 제자리 흑색종과 침윤 흑색종이 한 병변 안에 섞여 있을 때 진단이 틀어진다.<br> <b>왜 좁은 경계(1~3 mm)인가</b>: 진단 전에 넓게 떼면 림프 흐름이 바뀌어 나중에 감시림프절 생검의 정확도가 떨어지고, 양성으로 판명되면 불필요한 결손이 남는다. 그래서 진단 절제는 좁게, 두께가 나온 뒤 재절제로 최종 경계(제자리 0.5~1 cm, 1 mm 이하 1 cm, 2 mm 초과 2 cm)를 맞춘다.<br> <b>더모스코피 소견의 뜻</b>: 비정형 그물·여러 색·불규칙 얼룩은 표피-진피 경계에서 비정형 멜라닌세포가 고르지 않게 퍼진 모양이고, 흰 퇴행 구역은 면역반응으로 종양 일부가 사라진 흔적이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">전체 절제생검(정답)</th><th>짙은 부위 펀치생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>얻는 정보</td><td><b>진단 + 병변 전체의 최대 Breslow 두께</b></td><td>떼어 낸 한 점의 진단뿐</td></tr> <tr><td>표본 오류</td><td>거의 없음</td><td>가장 두꺼운 곳을 놓치면 병기를 낮게 매긴다</td></tr> <tr><td>쓰는 상황</td><td>흑색종 의심 병변의 기본</td><td>얼굴의 큰 악성흑색점처럼 전체 절제가 어려울 때</td></tr> </tbody></table> 「짙은 곳을 찍으면 된다」가 아니라 「두께를 정확히 재야 한다」가 기준이다 — 그래서 가능하면 병변 전체를 좁게 뗀다.\n- 오답 이유:\n  - ① 냉동치료는 조직을 남기지 않아 진단을 못 하므로, 임상적으로 확실한 광선각화증이나 바이러스 사마귀일 때에만 정답이 된다.\n  - ② 단기 추적 관찰은 비정형 소견이 약하고 평평한 모반의 변화를 지켜볼 때 쓰며, 이처럼 여러 흑색종 소견이 모이면 해당하지 않는다.\n  - ③ 2 cm 광범위 절제와 감시림프절 생검은 조직검사로 두께 2 mm 를 넘는 침윤 흑색종이 확인된 뒤의 최종 수술일 때 정답이 된다.\n  - ⑤ 부분 펀치생검은 얼굴·손바닥처럼 전체 절제가 어려운 매우 큰 병변에서 가장 의심스러운 곳을 고를 때 정답이 될 수 있다.\n- 함정: 흑색종이 의심되니 처음부터 2 cm 광범위 절제를 고르는 것 — 진단과 두께를 모르는 상태에서는 좁은 경계의 전체 절제생검이 먼저다.\n- 학습목표: 더모스코피에서 비정형 색소 그물·여러 색·불규칙한 얼룩과 점·소구·퇴행 구역을 흑색종 소견으로 읽고, 진단을 위해 병변 전체를 좁은 경계로 절제생검한다\n- 근거·출처: Swetter SM, Tsao H, Bichakjian CK, et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol 2019;80:208-250 · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Elsevier; 2018. Chapter 113: Melanoma\n\n## 출처\n- ISIC Archive ISIC_0000049 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 병변이 비대칭이고 굵기가 고르지 않은 비정형 색소 그물, 연갈색·진갈색·흑갈색이 섞인 여러 색, 한쪽의 불규칙한 짙은 얼룩, 가장자리의 불규칙한 점·소구와 흰 퇴행 구역이 보인다 — 흑색종을 의심하는 소견이다. 임상적으로도 넓어지고 짙어진 비대칭 다색 반이다. 흑색종이 의심되면 먼저 병변 전체를 1~3 mm 경계로 절제생검해 진단과 Breslow 두께를 확인하고, 그 두께에 따라 최종 절제 경계와 감시림프절 생검 여부를 정한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「전체」를 떼어 보는가</b>: 흑색종의 예후와 이후 치료는 거의 전부 <b>Breslow 두께</b>(과립층에서 가장 깊은 종양세포까지의 깊이)로 정해진다. 큰 병변의 일부만 떼면 가장 두꺼운 곳을 놓쳐 병기를 낮게 매길 수 있고, 제자리 흑색종과 침윤 흑색종이 한 병변 안에 섞여 있을 때 진단이 틀어진다.<br> <b>왜 좁은 경계(1~3 mm)인가</b>: 진단 전에 넓게 떼면 림프 흐름이 바뀌어 나중에 감시림프절 생검의 정확도가 떨어지고, 양성으로 판명되면 불필요한 결손이 남는다. 그래서 진단 절제는 좁게, 두께가 나온 뒤 재절제로 최종 경계(제자리 0.5~1 cm, 1 mm 이하 1 cm, 2 mm 초과 2 cm)를 맞춘다.<br> <b>더모스코피 소견의 뜻</b>: 비정형 그물·여러 색·불규칙 얼룩은 표피-진피 경계에서 비정형 멜라닌세포가 고르지 않게 퍼진 모양이고, 흰 퇴행 구역은 면역반응으로 종양 일부가 사라진 흔적이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">전체 절제생검(정답)</th><th>짙은 부위 펀치생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>얻는 정보</td><td><b>진단 + 병변 전체의 최대 Breslow 두께</b></td><td>떼어 낸 한 점의 진단뿐</td></tr> <tr><td>표본 오류</td><td>거의 없음</td><td>가장 두꺼운 곳을 놓치면 병기를 낮게 매긴다</td></tr> <tr><td>쓰는 상황</td><td>흑색종 의심 병변의 기본</td><td>얼굴의 큰 악성흑색점처럼 전체 절제가 어려울 때</td></tr> </tbody></table> 「짙은 곳을 찍으면 된다」가 아니라 「두께를 정확히 재야 한다」가 기준이다 — 그래서 가능하면 병변 전체를 좁게 뗀다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 냉동치료는 조직을 남기지 않아 진단을 못 하므로, 임상적으로 확실한 광선각화증이나 바이러스 사마귀일 때에만 정답이 된다.\n② 단기 추적 관찰은 비정형 소견이 약하고 평평한 모반의 변화를 지켜볼 때 쓰며, 이처럼 여러 흑색종 소견이 모이면 해당하지 않는다.\n③ 2 cm 광범위 절제와 감시림프절 생검은 조직검사로 두께 2 mm 를 넘는 침윤 흑색종이 확인된 뒤의 최종 수술일 때 정답이 된다.\n⑤ 부분 펀치생검은 얼굴·손바닥처럼 전체 절제가 어려운 매우 큰 병변에서 가장 의심스러운 곳을 고를 때 정답이 될 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "흑색종이 의심되니 처음부터 2 cm 광범위 절제를 고르는 것 — 진단과 두께를 모르는 상태에서는 좁은 경계의 전체 절제생검이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 비정형 색소 그물·여러 색·불규칙한 얼룩과 점·소구·퇴행 구역을 흑색종 소견으로 읽고, 진단을 위해 병변 전체를 좁은 경계로 절제생검한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Swetter SM, Tsao H, Bichakjian CK, et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol 2019;80:208-250 · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Elsevier; 2018. Chapter 113: Melanoma ## 출처 ISIC Archive ISIC_0000049 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "여러 흑색종 소견을 보이는 색소 병변은 진단과 Breslow 두께를 얻기 위해 1~3 mm 경계로 병변 전체를 절제생검한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "부분 생검은 가장 두꺼운 곳을 놓쳐 병기를 낮게 매길 수 있다 — 등의 2.5 cm 병변은 전체 절제가 가능하다",
+   "steps": 2,
+   "chain": [
+    "영상: 비정형 색소 그물 + 여러 색 + 불규칙 얼룩·점·소구 + 퇴행 구역 → 흑색종 의심",
+    "흑색종 의심 + 전체 절제 가능한 부위 → 1~3 mm 경계 절제생검으로 진단과 두께 확인"
+   ],
+   "key": [
+    {
+     "item": "영상: 굵기가 고르지 않은 비정형 색소 그물과 여러 색",
+     "why": "멜라닌세포 병변이면서 비정형 — 흑색종 쪽",
+     "also": []
+    },
+    {
+     "item": "영상: 한쪽의 불규칙한 짙은 얼룩과 흰 퇴행 구역",
+     "why": "흑색종의 특이 소견",
+     "also": []
+    },
+    {
+     "item": "몇 년 사이 넓어지고 색이 짙어졌다",
+     "why": "변화(ABCDE 의 E)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "겨드랑이 림프절은 만져지지 않는다",
+     "why": "임상적 림프절 전이 가능성을 낮춘다 — 감시림프절 생검 여부는 두께가 정한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "만져지는 결절은 없다",
+     "why": "결절형 침윤을 시사하지 않지만 두께는 조직으로만 안다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "해수욕을 자주 했고",
+     "why": "자외선 노출은 위험인자일 뿐 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "비정형 그물·여러 색·불규칙 얼룩과 퇴행 구역은 흑색종 소견이다. 진단과 Breslow 두께를 위해 병변 전체를 1~3 mm 경계로 절제생검한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "절제생검에서 두께 2.4 mm 의 침윤 흑색종이 확인되었다면 2 cm 경계 재절제와 감시림프절 생검이 다음 단계다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0483.jpg",
+   "caption": "피부 병변의 더모스코피 사진, 원본 그대로 축소만 (ISIC Archive, CC0 — 크롭·보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0000049",
+   "asset_id": "ISIC-ISIC_0000049",
+   "text": "ISIC Archive ISIC_0000049 (CC-0)"
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0490",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "신경 — 갑자기 생긴 한쪽 얼굴 마비",
+  "type": "신경 — 갑자기 생긴 한쪽 얼굴 마비",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-30",
+  "vignette": "A 34-year-old man comes to the emergency department because he noticed that the right side of his face was drooping when he woke up this morning. He also has mild pain behind the right ear since yesterday and finds loud sounds uncomfortable in the right ear. He has no weakness or numbness of the limbs and no rash. Vital signs are within normal limits. He cannot wrinkle the right side of his forehead or fully close the right eye, and the right corner of his mouth droops. The ear canal and tympanic membrane appear normal. The remainder of the neurologic examination is normal.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral valacyclovir alone",
+   "Lumbar puncture",
+   "Oral prednisone",
+   "Noncontrast CT of the head",
+   "Intravenous alteplase"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Sudden weakness of the whole right half of the face, including the forehead, with retroauricular pain and hyperacusis and an otherwise normal neurologic examination is a peripheral facial nerve palsy — Bell palsy. Starting oral glucocorticoids within 72 hours improves the chance of complete recovery; eye protection is added because he cannot close the eye.\n- 원리: <b>Why the forehead decides central versus peripheral</b>: the part of the facial motor nucleus that supplies the forehead receives corticobulbar fibers from both hemispheres, while the part for the lower face receives mainly crossed fibers. A stroke above the nucleus therefore spares the forehead, whereas a lesion of the nerve itself paralyzes the whole half of the face.<br> <b>Why hyperacusis and ear pain</b>: inflammation and swelling of the nerve inside the narrow facial canal (often linked to herpes simplex reactivation) involve the branch to the stapedius — sounds become too loud — and irritate nearby sensory fibers behind the ear.<br> <b>Why steroids work early</b>: they reduce edema of the nerve in its bony canal before compression causes axonal degeneration; benefit is shown when started within 72 hours. Antivirals alone add no proven benefit.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Bell palsy → prednisone (answer)</th><th>Stroke → CT of the head (closest distractor)</th></tr></thead><tbody> <tr><td>Forehead</td><td><b>Paralyzed</b> — lower motor neuron</td><td>Spared — bilateral cortical input</td></tr> <tr><td>Other deficits</td><td>None besides facial nerve functions (hyperacusis, taste)</td><td>Arm weakness, dysarthria, aphasia</td></tr> <tr><td>Imaging</td><td>Not needed in a typical case</td><td>Urgent noncontrast CT</td></tr> </tbody></table> Check the forehead first: whole-face weakness with a normal remaining examination is a nerve problem, not a brain problem.\n- 오답 이유:\n  - (A) Valacyclovir alone would not be appropriate; an antiviral is reserved as an optional addition to steroids, or for Ramsay Hunt syndrome with a vesicular ear rash.\n  - (B) Lumbar puncture would be correct with bilateral facial palsy, fever, or meningeal signs suggesting Lyme disease, Guillain–Barré syndrome, or meningitis.\n  - (D) Noncontrast CT of the head would be correct if the forehead were spared or if limb weakness or speech difficulty suggested an acute stroke.\n  - (E) Intravenous alteplase would be correct for an acute ischemic stroke with a disabling deficit within 4.5 hours after hemorrhage is excluded by imaging.\n- 함정: Ordering a head CT for every facial droop — forehead involvement with an otherwise normal examination identifies a peripheral palsy.\n- 학습목표: 이마를 포함한 한쪽 얼굴 전체의 급성 마비를 말초성 얼굴신경 마비(벨마비)로 판단하고 72시간 안에 경구 글루코코르티코이드를 시작한다\n- 근거·출처: Baugh RF, Basura GJ, Ishii LE, et al. Clinical Practice Guideline: Bell's Palsy. Otolaryngol Head Neck Surg 2013;149(3 Suppl):S1-S27 · Sullivan FM, Swan IR, Donnan PT, et al. Early treatment with prednisolone or acyclovir in Bell's palsy. N Engl J Med 2007;357:1598-1607",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sudden weakness of the whole right half of the face, including the forehead, with retroauricular pain and hyperacusis and an otherwise normal neurologic examination is a peripheral facial nerve palsy — Bell palsy. Starting oral glucocorticoids within 72 hours improves the chance of complete recovery; eye protection is added because he cannot close the eye."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the forehead decides central versus peripheral</b>: the part of the facial motor nucleus that supplies the forehead receives corticobulbar fibers from both hemispheres, while the part for the lower face receives mainly crossed fibers. A stroke above the nucleus therefore spares the forehead, whereas a lesion of the nerve itself paralyzes the whole half of the face.<br> <b>Why hyperacusis and ear pain</b>: inflammation and swelling of the nerve inside the narrow facial canal (often linked to herpes simplex reactivation) involve the branch to the stapedius — sounds become too loud — and irritate nearby sensory fibers behind the ear.<br> <b>Why steroids work early</b>: they reduce edema of the nerve in its bony canal before compression causes axonal degeneration; benefit is shown when started within 72 hours. Antivirals alone add no proven benefit."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Bell palsy → prednisone (answer)</th><th>Stroke → CT of the head (closest distractor)</th></tr></thead><tbody> <tr><td>Forehead</td><td><b>Paralyzed</b> — lower motor neuron</td><td>Spared — bilateral cortical input</td></tr> <tr><td>Other deficits</td><td>None besides facial nerve functions (hyperacusis, taste)</td><td>Arm weakness, dysarthria, aphasia</td></tr> <tr><td>Imaging</td><td>Not needed in a typical case</td><td>Urgent noncontrast CT</td></tr> </tbody></table> Check the forehead first: whole-face weakness with a normal remaining examination is a nerve problem, not a brain problem."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Valacyclovir alone would not be appropriate; an antiviral is reserved as an optional addition to steroids, or for Ramsay Hunt syndrome with a vesicular ear rash.\n(B) Lumbar puncture would be correct with bilateral facial palsy, fever, or meningeal signs suggesting Lyme disease, Guillain–Barré syndrome, or meningitis.\n(D) Noncontrast CT of the head would be correct if the forehead were spared or if limb weakness or speech difficulty suggested an acute stroke.\n(E) Intravenous alteplase would be correct for an acute ischemic stroke with a disabling deficit within 4.5 hours after hemorrhage is excluded by imaging."
+   },
+   {
+    "k": "함정",
+    "v": "Ordering a head CT for every facial droop — forehead involvement with an otherwise normal examination identifies a peripheral palsy."
+   },
+   {
+    "k": "학습목표",
+    "v": "이마를 포함한 한쪽 얼굴 전체의 급성 마비를 말초성 얼굴신경 마비(벨마비)로 판단하고 72시간 안에 경구 글루코코르티코이드를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Baugh RF, Basura GJ, Ishii LE, et al. Clinical Practice Guideline: Bell's Palsy. Otolaryngol Head Neck Surg 2013;149(3 Suppl):S1-S27 · Sullivan FM, Swan IR, Donnan PT, et al. Early treatment with prednisolone or acyclovir in Bell's palsy. N Engl J Med 2007;357:1598-1607"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "이마를 포함한 한쪽 얼굴 전체 마비에 다른 신경 결손이 없으면 벨마비로 보고 72시간 안에 경구 프레드니손을 시작한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "뇌졸중은 이마를 침범하지 않고 팔다리·말 결손이 함께 있다 — 이 환자는 이마가 마비되고 나머지 신경학적 검사가 정상이다",
+   "steps": 2,
+   "chain": [
+    "이마 포함 한쪽 얼굴 전체 마비 + 다른 결손 없음 → 말초성 얼굴신경 마비(벨마비)",
+    "발병 하루 이내 → 경구 글루코코르티코이드"
+   ],
+   "key": [
+    {
+     "item": "cannot wrinkle the right side of his forehead",
+     "why": "이마 침범 — 말초성",
+     "also": []
+    },
+    {
+     "item": "loud sounds uncomfortable in the right ear",
+     "why": "등자근 신경 침범 — 얼굴신경 자체의 병변",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The remainder of the neurologic examination is normal",
+     "why": "뇌졸중 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no rash",
+     "why": "람세이헌트증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "tympanic membrane appear normal",
+     "why": "중이염 합병 얼굴 마비 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "when he woke up this morning",
+     "why": "72시간 안 — 스테로이드 이득이 있는 시기",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "이마를 포함한 한쪽 얼굴 마비와 청각과민, 정상인 나머지 신경학적 검사는 벨마비다. 72시간 안에 경구 프레드니손을 시작한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "이마가 움직이고 같은 쪽 팔의 근력 저하와 구음장애가 있었다면 급성 뇌졸중 — 비조영 CT 가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0489",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "정신 — 리튬 복용자가 이뇨제를 더한 뒤 생긴 혼돈",
+  "type": "정신 — 리튬 복용자가 이뇨제를 더한 뒤 생긴 혼돈",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-30",
+  "vignette": "48세 여자가 이틀 전부터 말이 어눌하고 손이 심하게 떨리며 헛소리를 해 가족이 응급실에 데려왔다. 양극성장애로 6년째 탄산리튬을 복용하며 혈중 농도는 늘 0.8 mEq/L 안팎이었다. 3주 전 고혈압으로 하이드로클로로티아자이드를 새로 처방받았고, 일주일 전부터 설사를 하여 잘 먹지 못했다. 체온 37.2℃, 혈압 108/66 mmHg, 맥박 96회/분이다. 이름은 대지만 날짜와 장소를 모르고, 굵은 떨림과 사지의 간대성 근경련, 운동실조가 있다. 근육 강직은 없다. 혈중 리튬 4.1 mEq/L, 나트륨 134 mEq/L, 크레아티닌 2.4 mg/dL(3개월 전 0.9 mg/dL)이다. 생리식염수 정맥 주입을 시작하였다.",
+  "question": "함께 해야 할 처치로 가장 적절한 것은?",
+  "options": [
+   "혈액투석으로 리튬 제거",
+   "활성탄 50 g 경구 투여",
+   "단트롤렌 정맥 주사",
+   "사이프로헵타딘 경구 투여",
+   "수액 지속과 리튬 농도 재측정"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 티아지드 추가와 설사로 인한 체액 감소가 근위세뇨관의 리튬 재흡수를 늘려 리튬 중독이 생겼다. 혼돈·간대성 근경련·운동실조의 신경학적 중독이 있고, 농도가 4.0 mEq/L 를 넘으며 신기능이 떨어져 있어 스스로 리튬을 내보내기 어렵다 — 혈액투석의 적응증이다. 생리식염수는 함께 하되 그것만으로는 부족하다.\n- 원리: <b>리튬은 나트륨처럼 다뤄진다</b>: 리튬은 사구체에서 여과된 뒤 대부분 근위세뇨관에서 나트륨과 함께 재흡수된다. 티아지드는 원위세뇨관에서 나트륨을 잃게 해 체액이 줄면 근위세뇨관이 나트륨(과 리튬)을 더 붙잡는다. 설사·탈수, NSAID, ACE 억제제도 같은 방향으로 작용해 리튬 농도를 25~40 % 올린다.<br> <b>왜 투석인가</b>: 리튬은 작고 단백질에 결합하지 않으며 분포용적이 작아 투석으로 잘 빠진다. 반면 신기능이 떨어지면 몸에서 빠져나갈 길이 막힌다. 뇌 조직의 리튬은 혈중 농도보다 늦게 빠져 신경 증상이 오래가고, 지속되는 소뇌 손상(SILENT)이 남을 수 있어 신경학적 중독이면 빨리 제거한다.<br> <b>EXTRIP 기준</b>: 신기능 저하에서 농도 > 4.0 mEq/L, 또는 의식 저하·경련·생명을 위협하는 부정맥이 있으면 농도와 관계없이 투석을 권고한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈액투석(정답)</th><th>생리식염수만 지속(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리튬 제거</td><td><b>몇 시간 안에 빠르게</b> — 작은 분자·단백 결합 없음</td><td>신장 배설에 의존 — 크레아티닌 2.4 에서는 느리다</td></tr> <tr><td>적합한 상황</td><td>신경학적 중독 + 농도 &gt; 4.0 + 신기능 저하</td><td>가벼운 떨림·구역만 있고 신기능 정상인 경도 중독</td></tr> <tr><td>위험</td><td>투석 뒤 조직에서 다시 나와 농도 반등 — 재측정</td><td>뇌 노출이 길어져 지속 신경 손상</td></tr> </tbody></table> 수액은 어떤 경우에도 하되, 「신경 증상 + 높은 농도 + 신기능 저하」가 모이면 투석을 더한다.\n- 오답 이유:\n  - ② 활성탄은 리튬 같은 금속 이온을 흡착하지 못하며, 아세트아미노펜·삼환계처럼 흡착되는 약물을 1~2시간 안에 먹었을 때 정답이 된다.\n  - ③ 단트롤렌은 흡입마취제나 숙시닐콜린 뒤 근육 강직·고열이 생기는 악성고열증에서 정답이 되며, 이 환자는 강직이 없다.\n  - ④ 사이프로헵타딘은 세로토닌 작용 약물을 더한 뒤 생긴 세로토닌증후군(고열·간대성 근경련·설사·동공 확대)에서 정답이 된다.\n  - ⑤ 수액만 지속하며 추적하는 것은 신기능이 정상이고 경미한 떨림·구역만 있는 경도 리튬 중독에서 정답이 된다.\n- 함정: 간대성 근경련을 보고 세로토닌증후군으로 가는 것 — 티아지드 추가·설사 뒤 높은 리튬 농도와 신기능 저하가 리튬 중독을 가리킨다.\n- 학습목표: 리튬 복용자가 티아지드를 더한 뒤 생긴 신경학적 중독(혼돈·간대성 근경련)과 높은 혈중 리튬 농도, 신기능 저하에서 혈액투석을 선택한다\n- 근거·출처: Decker BS, Goldfarb DS, Dargan PI, et al. Extracorporeal Treatment for Lithium Poisoning: Systematic Review and Recommendations from the EXTRIP Workgroup. Clin J Am Soc Nephrol 2015;10:875-887 · Nelson LS, Howland MA, Lewin NA, et al. Goldfrank's Toxicologic Emergencies, 11th ed. McGraw-Hill; 2019. Chapter 70: Lithium",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "티아지드 추가와 설사로 인한 체액 감소가 근위세뇨관의 리튬 재흡수를 늘려 리튬 중독이 생겼다. 혼돈·간대성 근경련·운동실조의 신경학적 중독이 있고, 농도가 4.0 mEq/L 를 넘으며 신기능이 떨어져 있어 스스로 리튬을 내보내기 어렵다 — 혈액투석의 적응증이다. 생리식염수는 함께 하되 그것만으로는 부족하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>리튬은 나트륨처럼 다뤄진다</b>: 리튬은 사구체에서 여과된 뒤 대부분 근위세뇨관에서 나트륨과 함께 재흡수된다. 티아지드는 원위세뇨관에서 나트륨을 잃게 해 체액이 줄면 근위세뇨관이 나트륨(과 리튬)을 더 붙잡는다. 설사·탈수, NSAID, ACE 억제제도 같은 방향으로 작용해 리튬 농도를 25~40 % 올린다.<br> <b>왜 투석인가</b>: 리튬은 작고 단백질에 결합하지 않으며 분포용적이 작아 투석으로 잘 빠진다. 반면 신기능이 떨어지면 몸에서 빠져나갈 길이 막힌다. 뇌 조직의 리튬은 혈중 농도보다 늦게 빠져 신경 증상이 오래가고, 지속되는 소뇌 손상(SILENT)이 남을 수 있어 신경학적 중독이면 빨리 제거한다.<br> <b>EXTRIP 기준</b>: 신기능 저하에서 농도 > 4.0 mEq/L, 또는 의식 저하·경련·생명을 위협하는 부정맥이 있으면 농도와 관계없이 투석을 권고한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈액투석(정답)</th><th>생리식염수만 지속(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리튬 제거</td><td><b>몇 시간 안에 빠르게</b> — 작은 분자·단백 결합 없음</td><td>신장 배설에 의존 — 크레아티닌 2.4 에서는 느리다</td></tr> <tr><td>적합한 상황</td><td>신경학적 중독 + 농도 &gt; 4.0 + 신기능 저하</td><td>가벼운 떨림·구역만 있고 신기능 정상인 경도 중독</td></tr> <tr><td>위험</td><td>투석 뒤 조직에서 다시 나와 농도 반등 — 재측정</td><td>뇌 노출이 길어져 지속 신경 손상</td></tr> </tbody></table> 수액은 어떤 경우에도 하되, 「신경 증상 + 높은 농도 + 신기능 저하」가 모이면 투석을 더한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 활성탄은 리튬 같은 금속 이온을 흡착하지 못하며, 아세트아미노펜·삼환계처럼 흡착되는 약물을 1~2시간 안에 먹었을 때 정답이 된다.\n③ 단트롤렌은 흡입마취제나 숙시닐콜린 뒤 근육 강직·고열이 생기는 악성고열증에서 정답이 되며, 이 환자는 강직이 없다.\n④ 사이프로헵타딘은 세로토닌 작용 약물을 더한 뒤 생긴 세로토닌증후군(고열·간대성 근경련·설사·동공 확대)에서 정답이 된다.\n⑤ 수액만 지속하며 추적하는 것은 신기능이 정상이고 경미한 떨림·구역만 있는 경도 리튬 중독에서 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "간대성 근경련을 보고 세로토닌증후군으로 가는 것 — 티아지드 추가·설사 뒤 높은 리튬 농도와 신기능 저하가 리튬 중독을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리튬 복용자가 티아지드를 더한 뒤 생긴 신경학적 중독(혼돈·간대성 근경련)과 높은 혈중 리튬 농도, 신기능 저하에서 혈액투석을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Decker BS, Goldfarb DS, Dargan PI, et al. Extracorporeal Treatment for Lithium Poisoning: Systematic Review and Recommendations from the EXTRIP Workgroup. Clin J Am Soc Nephrol 2015;10:875-887 · Nelson LS, Howland MA, Lewin NA, et al. Goldfrank's Toxicologic Emergencies, 11th ed. McGraw-Hill; 2019. Chapter 70: Lithium"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "신경학적 중독 증상과 4.0 mEq/L 를 넘는 리튬 농도, 신기능 저하가 함께 있으면 수액에 더해 혈액투석을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "수액만으로 충분한 것은 신기능이 정상인 경도 중독 — 크레아티닌 2.4 와 혼돈·근경련이 있다",
+   "steps": 3,
+   "chain": [
+    "티아지드 추가 + 설사로 체액 감소 → 근위세뇨관 리튬 재흡수 증가 → 리튬 중독",
+    "혼돈·간대성 근경련·운동실조 + 리튬 4.1 → 중증 신경학적 중독",
+    "크레아티닌 2.4 로 배설 저하 → 수액만으로 부족 → 혈액투석"
+   ],
+   "key": [
+    {
+     "item": "혈중 리튬 4.1 mEq/L",
+     "why": "EXTRIP 투석 기준 농도",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 2.4 mg/dL",
+     "why": "신장으로 내보내기 어렵다 — 투석 적응증",
+     "also": []
+    },
+    {
+     "item": "하이드로클로로티아자이드를 새로 처방",
+     "why": "리튬 재흡수를 늘린 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "근육 강직은 없다",
+     "why": "악성고열증·신경이완제악성증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "날짜와 장소를 모르고",
+     "why": "신경학적 중독 — 빠른 제거가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "나트륨 134 mEq/L",
+     "why": "경미한 저나트륨혈증은 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "티아지드와 설사로 리튬 중독이 생겼고, 신경학적 중독·리튬 4.1·신기능 저하가 모여 수액에 더해 혈액투석이 필요하다.",
+   "switch": {
+    "choice": "E",
+    "condition": "크레아티닌이 0.9 로 정상이고 가벼운 떨림·구역만 있으며 농도가 1.8 mEq/L 였다면 생리식염수와 원인 약 중단·농도 추적으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0488",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "내분비·대사 — 출산 뒤 갑상샘중독증과 낮은 방사성 요오드 섭취",
+  "type": "내분비·대사 — 출산 뒤 갑상샘중독증과 낮은 방사성 요오드 섭취",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-30",
+  "vignette": "A 29-year-old woman comes to the physician because of palpitations, heat intolerance, and a 3-kg weight loss for 3 weeks. She delivered a healthy infant 4 months ago and stopped breastfeeding 1 month ago. She has no neck pain. Pulse is 108/min and blood pressure is 126/74 mm Hg. The thyroid gland is slightly enlarged, nontender, and smooth. There is no proptosis. Serum TSH is less than 0.01 μU/mL, free T4 is 2.6 ng/dL (N = 0.9–1.7), and anti–thyroid peroxidase antibodies are positive. Thyrotropin receptor antibodies are negative. A 24-hour radioactive iodine uptake is 2% (N = 10–30).",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Prednisone",
+   "Levothyroxine",
+   "Propranolol",
+   "Methimazole",
+   "Radioactive iodine ablation"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Painless thyrotoxicosis 4 months after delivery, a small nontender goiter, positive anti-TPO antibodies, negative TSH-receptor antibodies, and a very low radioactive iodine uptake indicate the thyrotoxic phase of postpartum thyroiditis. Excess hormone comes from release of stored hormone from an inflamed gland, not new synthesis, so antithyroid drugs do not help; a β-blocker controls symptoms until the phase resolves.\n- 원리: <b>Leak versus overproduction</b>: in Graves disease, TSH-receptor antibodies drive the gland to make new hormone, so it traps iodine avidly (high uptake). In thyroiditis, lymphocytic inflammation breaks follicles and preformed hormone leaks out; the stimulated TSH falls, the gland stops trapping iodine, and uptake is low.<br> <b>Why methimazole is useless here</b>: thionamides block thyroid peroxidase — the step that makes new hormone. When hormone is merely leaking from a damaged store, there is nothing for them to block, and the leak ends on its own over weeks.<br> <b>Why the postpartum timing matters</b>: immune tolerance in pregnancy rebounds after delivery; women with anti-TPO antibodies have a high risk of a thyrotoxic phase at 1–4 months and a hypothyroid phase at 4–8 months. TSH should be rechecked, and some develop permanent hypothyroidism.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Postpartum thyroiditis (answer: propranolol)</th><th>Postpartum Graves disease (methimazole)</th></tr></thead><tbody> <tr><td>Radioactive iodine uptake</td><td><b>Low (2%)</b> — hormone leaking</td><td>High and diffuse — hormone being made</td></tr> <tr><td>TSH-receptor antibodies</td><td>Negative</td><td>Positive</td></tr> <tr><td>Eye or skin signs</td><td>None</td><td>Ophthalmopathy, pretibial myxedema possible</td></tr> <tr><td>Course</td><td>Resolves in weeks; may turn hypothyroid</td><td>Persists without treatment</td></tr> </tbody></table> Both can appear months after delivery; uptake and TRAb decide which one it is. (Radioactive iodine uptake is avoided during breastfeeding — she has stopped.)\n- 오답 이유:\n  - (A) Prednisone would be correct for subacute granulomatous thyroiditis with a painful, tender gland and high ESR when NSAIDs are not enough.\n  - (B) Levothyroxine would be correct later if the hypothyroid phase is symptomatic or persistent, with an elevated TSH and low free T4.\n  - (D) Methimazole would be correct if the uptake were high and diffuse with positive TSH-receptor antibodies, indicating postpartum Graves disease.\n  - (E) Radioactive iodine ablation would be correct for Graves disease or a toxic nodule with high uptake; with 2% uptake the gland cannot take it up.\n- 함정: Treating every thyrotoxicosis with methimazole — a low uptake means hormone is leaking, not being made, so only symptom control is needed.\n- 학습목표: 출산 뒤 수개월 내 통증 없는 갑상샘중독증에서 방사성 요오드 섭취율이 낮으면 산후갑상샘염으로, 항갑상샘제 대신 베타차단제로 증상을 조절한다\n- 근거·출처: Ross DS, Burch HB, Cooper DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid 2016;26:1343-1421 · Alexander EK, Pearce EN, Brent GA, et al. 2017 Guidelines of the American Thyroid Association for the Diagnosis and Management of Thyroid Disease During Pregnancy and the Postpartum. Thyroid 2017;27:315-389",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Painless thyrotoxicosis 4 months after delivery, a small nontender goiter, positive anti-TPO antibodies, negative TSH-receptor antibodies, and a very low radioactive iodine uptake indicate the thyrotoxic phase of postpartum thyroiditis. Excess hormone comes from release of stored hormone from an inflamed gland, not new synthesis, so antithyroid drugs do not help; a β-blocker controls symptoms until the phase resolves."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Leak versus overproduction</b>: in Graves disease, TSH-receptor antibodies drive the gland to make new hormone, so it traps iodine avidly (high uptake). In thyroiditis, lymphocytic inflammation breaks follicles and preformed hormone leaks out; the stimulated TSH falls, the gland stops trapping iodine, and uptake is low.<br> <b>Why methimazole is useless here</b>: thionamides block thyroid peroxidase — the step that makes new hormone. When hormone is merely leaking from a damaged store, there is nothing for them to block, and the leak ends on its own over weeks.<br> <b>Why the postpartum timing matters</b>: immune tolerance in pregnancy rebounds after delivery; women with anti-TPO antibodies have a high risk of a thyrotoxic phase at 1–4 months and a hypothyroid phase at 4–8 months. TSH should be rechecked, and some develop permanent hypothyroidism."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Postpartum thyroiditis (answer: propranolol)</th><th>Postpartum Graves disease (methimazole)</th></tr></thead><tbody> <tr><td>Radioactive iodine uptake</td><td><b>Low (2%)</b> — hormone leaking</td><td>High and diffuse — hormone being made</td></tr> <tr><td>TSH-receptor antibodies</td><td>Negative</td><td>Positive</td></tr> <tr><td>Eye or skin signs</td><td>None</td><td>Ophthalmopathy, pretibial myxedema possible</td></tr> <tr><td>Course</td><td>Resolves in weeks; may turn hypothyroid</td><td>Persists without treatment</td></tr> </tbody></table> Both can appear months after delivery; uptake and TRAb decide which one it is. (Radioactive iodine uptake is avoided during breastfeeding — she has stopped.)"
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Prednisone would be correct for subacute granulomatous thyroiditis with a painful, tender gland and high ESR when NSAIDs are not enough.\n(B) Levothyroxine would be correct later if the hypothyroid phase is symptomatic or persistent, with an elevated TSH and low free T4.\n(D) Methimazole would be correct if the uptake were high and diffuse with positive TSH-receptor antibodies, indicating postpartum Graves disease.\n(E) Radioactive iodine ablation would be correct for Graves disease or a toxic nodule with high uptake; with 2% uptake the gland cannot take it up."
+   },
+   {
+    "k": "함정",
+    "v": "Treating every thyrotoxicosis with methimazole — a low uptake means hormone is leaking, not being made, so only symptom control is needed."
+   },
+   {
+    "k": "학습목표",
+    "v": "출산 뒤 수개월 내 통증 없는 갑상샘중독증에서 방사성 요오드 섭취율이 낮으면 산후갑상샘염으로, 항갑상샘제 대신 베타차단제로 증상을 조절한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ross DS, Burch HB, Cooper DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid 2016;26:1343-1421 · Alexander EK, Pearce EN, Brent GA, et al. 2017 Guidelines of the American Thyroid Association for the Diagnosis and Management of Thyroid Disease During Pregnancy and the Postpartum. Thyroid 2017;27:315-389"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "출산 뒤 통증 없는 갑상샘중독증에서 방사성 요오드 섭취율이 낮고 TRAb 음성이면 산후갑상샘염이므로 베타차단제로 증상만 조절한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "메티마졸은 호르몬을 새로 만드는 그레이브스병에 — 섭취율 2 %·TRAb 음성은 저장 호르몬의 유출이다",
+   "steps": 3,
+   "chain": [
+    "TSH 억제 + 유리 T4 상승 → 갑상샘중독증",
+    "출산 4개월 + 통증 없음 + 섭취율 2 % + TRAb 음성·anti-TPO 양성 → 산후갑상샘염",
+    "유출성 갑상샘중독증 → 항갑상샘제 효과 없음 → 프로프라놀롤로 증상 조절"
+   ],
+   "key": [
+    {
+     "item": "radioactive iodine uptake is 2%",
+     "why": "합성이 아니라 유출 — 갑상샘염",
+     "also": []
+    },
+    {
+     "item": "delivered a healthy infant 4 months ago",
+     "why": "산후갑상샘염의 전형적 시기",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Thyrotropin receptor antibodies are negative",
+     "why": "그레이브스병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no neck pain",
+     "why": "통증성 아급성 갑상샘염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Pulse is 108/min",
+     "why": "베타차단제로 조절할 증상",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "stopped breastfeeding 1 month ago",
+     "why": "섭취율 검사를 할 수 있었던 이유 — 치료 선택은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "출산 4개월 뒤의 통증 없는 갑상샘중독증, TRAb 음성, 방사성 요오드 섭취율 2 % 는 산후갑상샘염이다. 호르몬 유출이므로 프로프라놀롤로 증상만 조절한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "방사성 요오드 섭취율이 45 % 로 미만성 증가하고 TRAb 가 양성이었다면 산후 그레이브스병 — 메티마졸이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0487",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "신장·비뇨 — 성인 신증후군과 혈청 자가항체",
+  "type": "신장·비뇨 — 성인 신증후군과 혈청 자가항체",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-30",
+  "vignette": "52세 남자가 2개월 전부터 양쪽 다리와 눈꺼풀이 부어 왔다. 당뇨병은 없고 최근 복용한 약도 없다. 혈압 132/82 mmHg 이고 양쪽 정강이에 오목부종이 있다. 소변검사에서 단백 4+, 적혈구 0~2/고배율시야, 원주는 없다. 24시간 소변 단백 8.2 g, 혈청 알부민 2.1 g/dL, 총콜레스테롤 340 mg/dL, 크레아티닌 0.9 mg/dL 이다. 혈청 보체 C3·C4 는 정상이고 항핵항체, B형·C형 간염 항원·항체, HIV 검사는 음성이다. 혈청 항-포스포리파아제 A2 수용체(PLA2R) 항체가 높은 역가로 양성이다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "루푸스신염(제5형)",
+   "일차 막성신병증",
+   "미세변화병",
+   "일차 국소분절사구체경화증",
+   "막증식사구체신염"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 부종·단백뇨 8.2 g/일·저알부민혈증·고콜레스테롤혈증의 신증후군이고 혈뇨가 거의 없으며 보체가 정상이다. 이차 원인(루푸스·간염·HIV·약물)이 음성이고 항-PLA2R 항체가 높은 역가로 양성이므로 일차 막성신병증이다. 신기능이 정상인 성인에서 항-PLA2R 양성이면 신생검 없이 진단할 수 있다.\n- 원리: <b>항-PLA2R 은 원인이자 표지자다</b>: PLA2R 은 사구체 발세포(podocyte) 표면의 단백질이다. 이에 대한 IgG4 자가항체가 발세포 바깥(상피하)에서 항원과 결합해 면역복합체를 만들고, 그 자리에서 보체가 활성화되어 발세포를 손상시킨다 — 그래서 사구체기저막 바깥에 「가시」 모양 침착이 생기고 단백뇨가 쏟아진다.<br> <b>왜 보체·혈뇨가 정상인가</b>: 침착이 기저막 바깥에 있어 혈액 쪽 염증세포를 끌어들이지 않는다. 그래서 신염(혈뇨·적혈구 원주) 없이 순수한 신증후군이 되고 혈청 보체도 떨어지지 않는다.<br> <b>임상적 의미</b>: 성인 일차 막성신병증의 약 70~80 % 가 항-PLA2R 양성이고 특이도가 높다. 역가는 질병 활동도를 반영해 치료 반응 추적에도 쓴다. 이차 막성신병증(루푸스·B형간염·고형암·NSAID)을 먼저 배제해야 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">일차 막성신병증(정답)</th><th>루푸스신염 제5형(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적 항원</td><td><b>PLA2R(혈청 항체로 측정)</b></td><td>여러 핵항원 — 항핵항체·항-dsDNA 양성</td></tr> <tr><td>보체</td><td>정상</td><td>흔히 낮다</td></tr> <tr><td>조직 면역형광</td><td>IgG4 우세, C1q 드묾</td><td>IgG·IgA·IgM·C3·C1q 모두(full house)</td></tr> <tr><td>호발</td><td>중년 남자</td><td>젊은 여자</td></tr> </tbody></table> 「막성」이라는 조직 모양은 같아도 항-PLA2R 양성·항핵항체 음성·정상 보체가 일차 쪽으로 기울게 한다.\n- 오답 이유:\n  - ① 루푸스신염 제5형은 젊은 여자에서 항핵항체·항-dsDNA 양성과 낮은 보체를 동반할 때 정답이 된다.\n  - ③ 미세변화병은 어린이나 NSAID 복용 성인에서 갑자기 시작한 신증후군일 때 정답이며, 항-PLA2R 항체와는 관련이 없다.\n  - ④ 국소분절사구체경화증은 흑인·비만·HIV 환자나 고혈압·신기능 저하를 동반한 신증후군에서 정답이 되며, 항-PLA2R 은 음성이다.\n  - ⑤ 막증식사구체신염은 C형 간염이나 한랭글로불린혈증이 있고 혈뇨·저보체혈증이 동반될 때 정답이 된다.\n- 함정: 성인 신증후군의 가장 흔한 원인을 물었다고 보고 국소분절사구체경화증을 고르는 것 — 항-PLA2R 양성이 막성신병증을 가리킨다.\n- 학습목표: 성인 신증후군에서 혈청 항-PLA2R 항체 양성은 일차 막성신병증을 시사하며, 신기능이 보존되면 신생검 없이 진단할 수 있다\n- 근거·출처: KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1-S276 · Beck LH Jr, Bonegio RG, Lambeau G, et al. M-type phospholipase A2 receptor as target antigen in idiopathic membranous nephropathy. N Engl J Med 2009;361:11-21",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "부종·단백뇨 8.2 g/일·저알부민혈증·고콜레스테롤혈증의 신증후군이고 혈뇨가 거의 없으며 보체가 정상이다. 이차 원인(루푸스·간염·HIV·약물)이 음성이고 항-PLA2R 항체가 높은 역가로 양성이므로 일차 막성신병증이다. 신기능이 정상인 성인에서 항-PLA2R 양성이면 신생검 없이 진단할 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>항-PLA2R 은 원인이자 표지자다</b>: PLA2R 은 사구체 발세포(podocyte) 표면의 단백질이다. 이에 대한 IgG4 자가항체가 발세포 바깥(상피하)에서 항원과 결합해 면역복합체를 만들고, 그 자리에서 보체가 활성화되어 발세포를 손상시킨다 — 그래서 사구체기저막 바깥에 「가시」 모양 침착이 생기고 단백뇨가 쏟아진다.<br> <b>왜 보체·혈뇨가 정상인가</b>: 침착이 기저막 바깥에 있어 혈액 쪽 염증세포를 끌어들이지 않는다. 그래서 신염(혈뇨·적혈구 원주) 없이 순수한 신증후군이 되고 혈청 보체도 떨어지지 않는다.<br> <b>임상적 의미</b>: 성인 일차 막성신병증의 약 70~80 % 가 항-PLA2R 양성이고 특이도가 높다. 역가는 질병 활동도를 반영해 치료 반응 추적에도 쓴다. 이차 막성신병증(루푸스·B형간염·고형암·NSAID)을 먼저 배제해야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">일차 막성신병증(정답)</th><th>루푸스신염 제5형(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적 항원</td><td><b>PLA2R(혈청 항체로 측정)</b></td><td>여러 핵항원 — 항핵항체·항-dsDNA 양성</td></tr> <tr><td>보체</td><td>정상</td><td>흔히 낮다</td></tr> <tr><td>조직 면역형광</td><td>IgG4 우세, C1q 드묾</td><td>IgG·IgA·IgM·C3·C1q 모두(full house)</td></tr> <tr><td>호발</td><td>중년 남자</td><td>젊은 여자</td></tr> </tbody></table> 「막성」이라는 조직 모양은 같아도 항-PLA2R 양성·항핵항체 음성·정상 보체가 일차 쪽으로 기울게 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 루푸스신염 제5형은 젊은 여자에서 항핵항체·항-dsDNA 양성과 낮은 보체를 동반할 때 정답이 된다.\n③ 미세변화병은 어린이나 NSAID 복용 성인에서 갑자기 시작한 신증후군일 때 정답이며, 항-PLA2R 항체와는 관련이 없다.\n④ 국소분절사구체경화증은 흑인·비만·HIV 환자나 고혈압·신기능 저하를 동반한 신증후군에서 정답이 되며, 항-PLA2R 은 음성이다.\n⑤ 막증식사구체신염은 C형 간염이나 한랭글로불린혈증이 있고 혈뇨·저보체혈증이 동반될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "성인 신증후군의 가장 흔한 원인을 물었다고 보고 국소분절사구체경화증을 고르는 것 — 항-PLA2R 양성이 막성신병증을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "성인 신증후군에서 혈청 항-PLA2R 항체 양성은 일차 막성신병증을 시사하며, 신기능이 보존되면 신생검 없이 진단할 수 있다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1-S276 · Beck LH Jr, Bonegio RG, Lambeau G, et al. M-type phospholipase A2 receptor as target antigen in idiopathic membranous nephropathy. N Engl J Med 2009;361:11-21"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "이차 원인이 음성인 성인 신증후군에서 항-PLA2R 항체 양성은 일차 막성신병증이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "국소분절사구체경화증은 항-PLA2R 음성 — 이 환자는 높은 역가로 양성이다",
+   "steps": 2,
+   "chain": [
+    "단백뇨 8.2 g + 알부민 2.1 + 콜레스테롤 340 + 부종, 혈뇨 거의 없음 → 신증후군",
+    "보체 정상·이차 원인 음성 + 항-PLA2R 양성 → 일차 막성신병증"
+   ],
+   "key": [
+    {
+     "item": "항-포스포리파아제 A2 수용체(PLA2R) 항체가 높은 역가로 양성",
+     "why": "일차 막성신병증의 특이 표지자",
+     "also": []
+    },
+    {
+     "item": "24시간 소변 단백 8.2 g",
+     "why": "신증후군 범위 단백뇨",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "보체 C3·C4 는 정상",
+     "why": "루푸스신염·막증식사구체신염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "항핵항체, B형·C형 간염 항원·항체, HIV 검사는 음성",
+     "why": "이차 막성신병증 원인을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 0.9 mg/dL",
+     "why": "신기능 보존 — 항-PLA2R 양성이면 신생검 없이 진단 가능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "총콜레스테롤 340 mg/dL",
+     "why": "신증후군의 일부일 뿐 원인을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "이차 원인과 저보체혈증이 없는 성인 신증후군에서 항-PLA2R 항체가 높은 역가로 양성이면 일차 막성신병증이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "28세 여자로 항핵항체·항-dsDNA 양성과 낮은 C3·C4 를 보였다면 루푸스신염 제5형을 먼저 생각한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0486",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "혈액·종양 — 샤워 뒤 가려움과 높은 혈색소",
+  "type": "혈액·종양 — 샤워 뒤 가려움과 높은 혈색소",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-30",
+  "vignette": "A 61-year-old man comes to the physician because of headaches and itching after hot showers for 3 months. He has never smoked and does not have snoring or daytime sleepiness. He takes no medications, including testosterone. Blood pressure is 148/88 mm Hg. His face is ruddy, and the spleen tip is palpable 2 cm below the left costal margin. Oxygen saturation is 97% on room air. Hemoglobin is 19.2 g/dL, hematocrit is 58%, leukocyte count is 13,200/mm3, and platelet count is 520,000/mm3. Serum erythropoietin concentration is low.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "JAK2 V617F mutation analysis",
+   "BCR-ABL1 fusion analysis",
+   "Overnight polysomnography",
+   "CT of the abdomen to look for a renal mass",
+   "Bone marrow aspiration and biopsy"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Erythrocytosis with leukocytosis, thrombocytosis, splenomegaly, aquagenic pruritus, and a low serum erythropoietin points to a primary (marrow-driven) erythrocytosis — polycythemia vera. JAK2 V617F is present in about 95% of cases and, with the hemoglobin level, is a major diagnostic criterion; JAK2 exon 12 testing follows if V617F is negative.\n- 원리: <b>Why erythropoietin sorts primary from secondary</b>: in secondary erythrocytosis the kidney senses low oxygen (smoking, sleep apnea, high altitude, lung disease) or an erythropoietin-secreting tumor makes the hormone — erythropoietin is normal or high. In polycythemia vera, red cell precursors grow without needing erythropoietin, the raised red-cell mass suppresses the kidney, and erythropoietin is low.<br> <b>Why JAK2</b>: the V617F mutation removes the inhibitory pseudokinase control of JAK2, so the erythropoietin-receptor signal is switched on without the hormone. Because JAK2 also serves the thrombopoietin and G-CSF receptors, all three lines rise — explaining the leukocytosis and thrombocytosis.<br> <b>Why mast cells itch</b>: clonal basophils and mast cells release histamine on warm water exposure, producing aquagenic pruritus; the treatment target is a hematocrit below 45% with phlebotomy and low-dose aspirin.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">JAK2 V617F (answer)</th><th>Bone marrow biopsy (closest distractor)</th></tr></thead><tbody> <tr><td>Role in WHO criteria</td><td><b>Major criterion; noninvasive blood test</b></td><td>Major criterion, but may be omitted when Hb is very high with JAK2 and low EPO</td></tr> <tr><td>Best use</td><td>First confirmatory test after low EPO</td><td>Staging fibrosis, unclear cases, or suspected other MPN</td></tr> <tr><td>Burden</td><td>Peripheral blood</td><td>Invasive</td></tr> </tbody></table> Low EPO plus trilineage rise → JAK2 first; marrow becomes necessary when the molecular test is negative or the picture suggests fibrosis.\n- 오답 이유:\n  - (B) BCR-ABL1 analysis would be correct with marked leukocytosis, a left-shifted differential, basophilia, and splenomegaly but without erythrocytosis (chronic myeloid leukemia).\n  - (C) Polysomnography would be correct in an obese snorer with daytime sleepiness and a normal or high erythropoietin suggesting hypoxia-driven erythrocytosis.\n  - (D) Abdominal imaging for a renal mass would be correct if erythropoietin were inappropriately high without hypoxemia, suggesting a tumor secreting the hormone.\n  - (E) Bone marrow biopsy would be the next step if JAK2 V617F and exon 12 testing were negative or if marrow fibrosis needed to be assessed.\n- 함정: Going straight to bone marrow biopsy — a blood JAK2 test is the confirmatory step once erythropoietin is low.\n- 학습목표: 이차 원인 없이 높은 혈색소와 낮은 혈청 에리스로포이에틴을 보이는 환자에서 진성적혈구증가증을 확인하기 위해 JAK2 V617F 돌연변이 검사를 한다\n- 근거·출처: Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. Am J Hematol 2023;98:1465-1487 · Arber DA, Orazi A, Hasserjian RP, et al. International Consensus Classification of Myeloid Neoplasms and Acute Leukemias. Blood 2022;140:1200-1228",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Erythrocytosis with leukocytosis, thrombocytosis, splenomegaly, aquagenic pruritus, and a low serum erythropoietin points to a primary (marrow-driven) erythrocytosis — polycythemia vera. JAK2 V617F is present in about 95% of cases and, with the hemoglobin level, is a major diagnostic criterion; JAK2 exon 12 testing follows if V617F is negative."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why erythropoietin sorts primary from secondary</b>: in secondary erythrocytosis the kidney senses low oxygen (smoking, sleep apnea, high altitude, lung disease) or an erythropoietin-secreting tumor makes the hormone — erythropoietin is normal or high. In polycythemia vera, red cell precursors grow without needing erythropoietin, the raised red-cell mass suppresses the kidney, and erythropoietin is low.<br> <b>Why JAK2</b>: the V617F mutation removes the inhibitory pseudokinase control of JAK2, so the erythropoietin-receptor signal is switched on without the hormone. Because JAK2 also serves the thrombopoietin and G-CSF receptors, all three lines rise — explaining the leukocytosis and thrombocytosis.<br> <b>Why mast cells itch</b>: clonal basophils and mast cells release histamine on warm water exposure, producing aquagenic pruritus; the treatment target is a hematocrit below 45% with phlebotomy and low-dose aspirin."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">JAK2 V617F (answer)</th><th>Bone marrow biopsy (closest distractor)</th></tr></thead><tbody> <tr><td>Role in WHO criteria</td><td><b>Major criterion; noninvasive blood test</b></td><td>Major criterion, but may be omitted when Hb is very high with JAK2 and low EPO</td></tr> <tr><td>Best use</td><td>First confirmatory test after low EPO</td><td>Staging fibrosis, unclear cases, or suspected other MPN</td></tr> <tr><td>Burden</td><td>Peripheral blood</td><td>Invasive</td></tr> </tbody></table> Low EPO plus trilineage rise → JAK2 first; marrow becomes necessary when the molecular test is negative or the picture suggests fibrosis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) BCR-ABL1 analysis would be correct with marked leukocytosis, a left-shifted differential, basophilia, and splenomegaly but without erythrocytosis (chronic myeloid leukemia).\n(C) Polysomnography would be correct in an obese snorer with daytime sleepiness and a normal or high erythropoietin suggesting hypoxia-driven erythrocytosis.\n(D) Abdominal imaging for a renal mass would be correct if erythropoietin were inappropriately high without hypoxemia, suggesting a tumor secreting the hormone.\n(E) Bone marrow biopsy would be the next step if JAK2 V617F and exon 12 testing were negative or if marrow fibrosis needed to be assessed."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to bone marrow biopsy — a blood JAK2 test is the confirmatory step once erythropoietin is low."
+   },
+   {
+    "k": "학습목표",
+    "v": "이차 원인 없이 높은 혈색소와 낮은 혈청 에리스로포이에틴을 보이는 환자에서 진성적혈구증가증을 확인하기 위해 JAK2 V617F 돌연변이 검사를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. Am J Hematol 2023;98:1465-1487 · Arber DA, Orazi A, Hasserjian RP, et al. International Consensus Classification of Myeloid Neoplasms and Acute Leukemias. Blood 2022;140:1200-1228"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "이차 원인 없이 적혈구증가와 낮은 에리스로포이에틴을 보이면 JAK2 V617F 검사로 진성적혈구증가증을 확인한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "골수 생검은 JAK2 음성이거나 섬유화 평가가 필요할 때 — 혈액 검사로 먼저 확인할 수 있다",
+   "steps": 2,
+   "chain": [
+    "혈색소 19.2 + 백혈구·혈소판 증가 + 비장 촉지 + 샤워 후 가려움, 저산소·흡연·수면무호흡 없음 → 일차 적혈구증가",
+    "낮은 에리스로포이에틴 → 진성적혈구증가증 의심 → JAK2 V617F 검사"
+   ],
+   "key": [
+    {
+     "item": "Hemoglobin is 19.2 g/dL",
+     "why": "적혈구증가증 기준을 넘는다",
+     "also": []
+    },
+    {
+     "item": "Serum erythropoietin concentration is low",
+     "why": "이차 적혈구증가증과 가르는 핵심",
+     "also": []
+    },
+    {
+     "item": "itching after hot showers",
+     "why": "진성적혈구증가증의 특징적 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Oxygen saturation is 97% on room air",
+     "why": "저산소성 이차 원인 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "does not have snoring or daytime sleepiness",
+     "why": "수면무호흡 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Blood pressure is 148/88 mm Hg",
+     "why": "과점도와 관련될 수 있으나 검사 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "세 혈구계열 증가·비장비대·샤워 후 가려움과 낮은 에리스로포이에틴은 진성적혈구증가증이다. JAK2 V617F 검사로 확인한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "비만하고 코골이·주간 졸림이 있으며 에리스로포이에틴이 정상~높고 백혈구·혈소판이 정상이었다면 수면다원검사가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0485",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·소화기·혈액·신장·내분비·정신·신경)",
+  "subtopic": "소화기·간담췌 — 담석췌장염 회복 뒤 담낭절제의 시점",
+  "type": "소화기·간담췌 — 담석췌장염 회복 뒤 담낭절제의 시점",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-30",
+  "vignette": "56세 여자가 이틀 전 명치에서 등으로 뻗치는 심한 통증으로 입원하였다. 입원 당시 혈청 리파아제 1,850 U/L(참고치 < 60), ALT 245 U/L, 총빌리루빈 1.4 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있었으며 총담관 지름은 5 mm 였다. 수액 치료 뒤 통증이 사라져 오늘 아침부터 일반식을 먹고 있다. 체온 36.8℃, 혈압 124/78 mmHg, 맥박 76회/분이다. 오늘 검사에서 총빌리루빈 0.8 mg/dL, ALT 62 U/L, 백혈구 7,900/mm³, 크레아티닌 0.7 mg/dL 이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "복부 조영증강 컴퓨터단층촬영",
+   "이번 입원 중 복강경 담낭절제술",
+   "내시경역행담췌관조영술과 괄약근절개술",
+   "퇴원 후 6~8주 뒤 복강경 담낭절제술",
+   "우르소데옥시콜산 경구 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리파아제가 참고치 3배 이상이고 담낭 담석이 있어 담석췌장염이다. 장기부전·국소 합병증 없이 하루 이틀 만에 회복된 경증이며, 빌리루빈이 정상화되고 총담관이 확장되지 않아 남은 총담관 결석이나 담관염의 근거가 없다. 경증 담석췌장염은 재발을 막기 위해 같은 입원 중 담낭절제술을 한다.\n- 원리: <b>왜 담석이 췌장염을 일으키는가</b>: 담낭에서 빠져나온 작은 돌이 바터팽대부를 일시적으로 막으면 췌관 압력이 오르고 담즙이 역류해 췌장 안에서 효소가 활성화된다. 대부분의 돌은 십이지장으로 그냥 빠져나가 증상과 간 수치가 빨리 좋아진다 — 이 환자의 빌리루빈·ALT 감소가 그 흔적이다.<br> <b>왜 같은 입원 중인가</b>: 돌을 만든 담낭이 그대로 있으면 몇 주 안에 다시 돌이 내려온다. 퇴원 후로 미루면 수술 전에 췌장염·담관염·담낭염이 재발하는 비율이 상당히 높아(무작위 PONCHO 시험) 경증이면 입원 중 수술이 표준이다.<br> <b>언제 미루는가</b>: 괴사나 액체 고임이 있는 중증 췌장염은 염증이 가라앉고 액체 고임이 정리될 때까지(대개 6주 이상) 수술을 미룬다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">입원 중 담낭절제(정답)</th><th>ERCP·괄약근절개(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해결하는 문제</td><td><b>돌을 만드는 담낭 — 재발의 근원</b></td><td>총담관에 남은 돌·담관염</td></tr> <tr><td>필요한 근거</td><td>경증, 회복됨</td><td>담관염, 지속되는 황달·총담관 확장·초음파에서 보이는 총담관 결석</td></tr> <tr><td>이 환자</td><td>리파아제 상승 후 증상·간수치 회복</td><td>빌리루빈 정상화, 총담관 5 mm — 근거 없음</td></tr> </tbody></table> 담관을 막고 있는 돌이 있으면 ERCP, 이미 빠져나갔으면 담낭절제 — 간 수치가 「떨어지고 있는지」가 갈림길이다.\n- 오답 이유:\n  - ① 조영증강 CT 는 진단이 불확실하거나 72시간 뒤에도 호전이 없어 괴사를 확인해야 할 때 정답이 되며, 빠르게 회복된 환자에겐 필요 없다.\n  - ③ ERCP 는 담관염이 동반되거나 황달이 지속되고 총담관 확장·총담관 결석이 확인될 때 정답이 되며, 회복된 경증에는 이득이 없다.\n  - ④ 퇴원 후 6~8주 뒤 수술은 괴사·액체 고임을 동반한 중증 담석췌장염에서 염증이 가라앉기를 기다릴 때 정답이 된다.\n  - ⑤ 우르소데옥시콜산은 수술을 할 수 없거나 원하지 않는 환자의 작은 콜레스테롤 담석에서 선택할 수 있으나 재발 예방 효과가 약하다.\n- 함정: 담석이 원인이니 ERCP 로 돌을 빼려는 것 — 남은 총담관 결석·담관염 근거가 없으면 원인 장기인 담낭을 입원 중에 뗀다.\n- 학습목표: 경증 담석췌장염이 회복되면 재발을 막기 위해 같은 입원 중 담낭절제술을 한다\n- 근거·출처: da Costa DW, Bouwense SA, Schepers NJ, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO). Lancet 2015;386:1261-1268 · Tenner S, Vege SS, Sheth SG, et al. American College of Gastroenterology Guidelines: Management of Acute Pancreatitis. Am J Gastroenterol 2024;119:419-437",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리파아제가 참고치 3배 이상이고 담낭 담석이 있어 담석췌장염이다. 장기부전·국소 합병증 없이 하루 이틀 만에 회복된 경증이며, 빌리루빈이 정상화되고 총담관이 확장되지 않아 남은 총담관 결석이나 담관염의 근거가 없다. 경증 담석췌장염은 재발을 막기 위해 같은 입원 중 담낭절제술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 담석이 췌장염을 일으키는가</b>: 담낭에서 빠져나온 작은 돌이 바터팽대부를 일시적으로 막으면 췌관 압력이 오르고 담즙이 역류해 췌장 안에서 효소가 활성화된다. 대부분의 돌은 십이지장으로 그냥 빠져나가 증상과 간 수치가 빨리 좋아진다 — 이 환자의 빌리루빈·ALT 감소가 그 흔적이다.<br> <b>왜 같은 입원 중인가</b>: 돌을 만든 담낭이 그대로 있으면 몇 주 안에 다시 돌이 내려온다. 퇴원 후로 미루면 수술 전에 췌장염·담관염·담낭염이 재발하는 비율이 상당히 높아(무작위 PONCHO 시험) 경증이면 입원 중 수술이 표준이다.<br> <b>언제 미루는가</b>: 괴사나 액체 고임이 있는 중증 췌장염은 염증이 가라앉고 액체 고임이 정리될 때까지(대개 6주 이상) 수술을 미룬다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">입원 중 담낭절제(정답)</th><th>ERCP·괄약근절개(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해결하는 문제</td><td><b>돌을 만드는 담낭 — 재발의 근원</b></td><td>총담관에 남은 돌·담관염</td></tr> <tr><td>필요한 근거</td><td>경증, 회복됨</td><td>담관염, 지속되는 황달·총담관 확장·초음파에서 보이는 총담관 결석</td></tr> <tr><td>이 환자</td><td>리파아제 상승 후 증상·간수치 회복</td><td>빌리루빈 정상화, 총담관 5 mm — 근거 없음</td></tr> </tbody></table> 담관을 막고 있는 돌이 있으면 ERCP, 이미 빠져나갔으면 담낭절제 — 간 수치가 「떨어지고 있는지」가 갈림길이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 조영증강 CT 는 진단이 불확실하거나 72시간 뒤에도 호전이 없어 괴사를 확인해야 할 때 정답이 되며, 빠르게 회복된 환자에겐 필요 없다.\n③ ERCP 는 담관염이 동반되거나 황달이 지속되고 총담관 확장·총담관 결석이 확인될 때 정답이 되며, 회복된 경증에는 이득이 없다.\n④ 퇴원 후 6~8주 뒤 수술은 괴사·액체 고임을 동반한 중증 담석췌장염에서 염증이 가라앉기를 기다릴 때 정답이 된다.\n⑤ 우르소데옥시콜산은 수술을 할 수 없거나 원하지 않는 환자의 작은 콜레스테롤 담석에서 선택할 수 있으나 재발 예방 효과가 약하다."
+   },
+   {
+    "k": "함정",
+    "v": "담석이 원인이니 ERCP 로 돌을 빼려는 것 — 남은 총담관 결석·담관염 근거가 없으면 원인 장기인 담낭을 입원 중에 뗀다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경증 담석췌장염이 회복되면 재발을 막기 위해 같은 입원 중 담낭절제술을 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "da Costa DW, Bouwense SA, Schepers NJ, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO). Lancet 2015;386:1261-1268 · Tenner S, Vege SS, Sheth SG, et al. American College of Gastroenterology Guidelines: Management of Acute Pancreatitis. Am J Gastroenterol 2024;119:419-437"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "회복된 경증 담석췌장염에서 남은 총담관 결석 근거가 없으면 같은 입원 중 담낭절제술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "ERCP 는 담관염이나 지속되는 담관 폐쇄가 있을 때 — 빌리루빈이 정상화되고 총담관이 5 mm 다",
+   "steps": 3,
+   "chain": [
+    "리파아제 1,850 + 담낭 담석 → 담석췌장염",
+    "하루 이틀 만에 회복·장기부전 없음 → 경증",
+    "빌리루빈 정상화·총담관 5 mm → 남은 돌 없음 → 같은 입원 중 담낭절제"
+   ],
+   "key": [
+    {
+     "item": "혈청 리파아제 1,850 U/L",
+     "why": "참고치 3배 이상 — 급성 췌장염",
+     "also": []
+    },
+    {
+     "item": "담낭에 여러 개의 담석",
+     "why": "담석췌장염의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "총빌리루빈 0.8 mg/dL",
+     "why": "떨어진 빌리루빈은 남은 총담관 결석 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "총담관 지름은 5 mm",
+     "why": "확장 없음 — ERCP 근거가 약하다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "일반식을 먹고 있다",
+     "why": "경증으로 회복 — 수술을 미룰 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌 0.7 mg/dL",
+     "why": "장기부전이 없음을 보여 주지만 처치를 직접 가르지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "리파아제 상승과 담낭 담석으로 담석췌장염이고 빠르게 회복된 경증이다. 남은 총담관 결석 근거가 없으므로 같은 입원 중 담낭절제술을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "발열과 함께 빌리루빈이 4 mg/dL 로 계속 오르고 총담관이 10 mm 로 확장되어 있었다면 담관염 — ERCP 가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261030T201937Z_일일영상_2026-10-31_8units_8q_f8333279",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0476",
   "exam": "imaging",
   "style": "kmle_style",
