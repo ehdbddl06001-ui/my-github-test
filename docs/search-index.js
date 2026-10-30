@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4201,
+  "total": 4202,
   "byType": {
+   "concept": 121,
    "kmle": 1632,
    "imaging": 489,
-   "concept": 120,
    "usmle": 222,
    "paper": 875,
    "anatomy": 846,
@@ -22,7 +22,7 @@ window.MEDKOS_INDEX = {
    "Nephrology": 229,
    "Infectious Disease": 212,
    "Pediatrics": 197,
-   "Obstetrics & Gynecology": 143,
+   "Obstetrics & Gynecology": 144,
    "Pathology": 129,
    "Rheumatology": 127,
    "Hematology-Oncology": 125,
@@ -79,13 +79,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1204,
    "high": 2946,
-   "medium": 1203,
    "low": 52
   },
   "tagCount": 5158
  },
  "docs": [
+  {
+   "id": "cn.obgyn.pregnancy-physiology.normal-vs-abnormal",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.pregnancy-physiology.normal-vs-abnormal.md",
+   "snippet": "판단 — 왜 방향과 크기로 읽는가 임신은 심혈관·콩팥·내분비·혈액의 기준값을 예측 가능한 방향 으로 옮긴다 — 그래서 비임신 기준을 벗어났다는 것만으로는 병이 아니다 [[harrison 21: 479장 p.3762]]. 먼저 방향 을 본다: 생리 변화와 반대(예: 2삼분기에 혈압이 오른다, 크레아티닌 청소율이 늘어야 할 때 크레아티닌이 오른다)면 병적이다 [[harrison 21: 479장 p.3762–3763]]. 다음 크기",
+   "text": "Obstetrics & Gynecology 판단 — 왜 방향과 크기로 읽는가 임신은 심혈관·콩팥·내분비·혈액의 기준값을 예측 가능한 방향 으로 옮긴다 — 그래서 비임신 기준을 벗어났다는 것만으로는 병이 아니다 [[harrison 21: 479장 p.3762]]. 먼저 방향 을 본다: 생리 변화와 반대(예: 2삼분기에 혈압이 오른다, 크레아티닌 청소율이 늘어야 할 때 크레아티닌이 오른다)면 병적이다 [[harrison 21: 479장 p.3762–3763]]. 다음 크기 를 본다: 같은 방향이라도 문턱을 넘으면(혈소판 <100,000/µL) 생리로 설명하지 않는다 [[harrison 21: 479장 p.3766]]. 마지막으로 함께 있는 단서 를 본다: 생리 범위 안의 빈혈도 철·엽산·B12 결핍이 흔해 따로 확인한다 [[harrison 21: 479장 p.3766]]. 기전 — 무엇이 기준을 옮기나 혈역학 : 혈량·심박출량이 늘고(약 40 %, 주로 1회 박출량), 3삼분기 심박이 약 10회/분 빨라지며, 2삼분기에 전신 혈관 저항이 떨어져 혈압이 내려간다 [[harrison 21: 479장 p.3762]]. 같은 이유로 승모판 협착은 경판 압력차가 커져 악화되고, 역류 병변은 혈관 저항 감소 덕분에 잘 견딘다 [[harrison 21: 479장 p.3764]]. 콩팥 : 콩팥 혈장 흐름과 사구체 여과압이 올라 사구체 여과율·크레아티닌 청소율이 는다 [[harrison 21: 479장 p.3763]]. 갑상선 : 에스트로겐이 갑상선호르몬 결합 글로불린(thyroxine binding globulin, TBG)을 늘려 총 T3·T4 가 오르고, 태반 hCG 가 갑상선을 직접 자극해 유리 T3·T4 도 오른다 [[harrison 21: 479장 p.3765]]. 티록신 요구량은 임신 5주부터 늘어 갑상선기능저하 산모는 임신을 알면 바로 약 30 % 증량한다 [[harrison 21: 479장 p.3765–3766]]. 당 대사 : 태반 스테로이드·성장호르몬 변이체·태반 락토젠으로 인슐린 저항이 임신 경과에 따라 커지고, 공복에는 혈당이 낮고 케톤이 높다 [[harrison 21: 479장 p.3764]]. 혈액 : 혈장이 더 늘어 헤모글로빈이 일부 희석되고(생리적 빈혈), 정맥 정체·내피 손상·과응고 상태로 D dimer 가 정상적으로 오른다 [[harrison 21: 479장 p.3766]]. 가르는 소견 — 방향과 크기 표가 항목별 생리 변화와 병적 신호를 정리한다. 수치 문턱은 재태주수·삼분기 를 함께 적어야 의미가 있다(갑상선은 삼분기별 기준) [[harrison 21: 479장 p.3765]]. 정상 결과의 해석 한계: 당화혈색소는 적혈구 회전이 빨라 거짓으로 낮고, D dimer·부종·숨참은 정상 임신에도 있어 VTE 를 배제하는 근거가 되지 못한다 [[harrison 21: 479장 p.3765–3766]]. 권고와 예외 혈압은 4시간 이상 간격 2회 측정으로 고혈압을 판정한다 — 한 번의 높은 값으로 정하지 않는다 [[harrison 21: 479장 p.3762]]. 임신 중 VTE 가 의심되면 비임신 환자에게 쓰는 진단·치료 수단을 모두 쓴다 [[harrison 21: 479장 p.3766]]. 호흡(과환기)·간 효소·심음의 생리 변화는 이 정리본에서 대조하지 않았다(검토 항목 — 산과 교과서로 보강). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 479장 p.3762~3766). 삼분기별 갑상선 기준의 구체적 수치는 해리슨에 없어 싣지 않았다."
+  },
   {
    "id": "kmle-2026-1666",
    "type": "kmle",
