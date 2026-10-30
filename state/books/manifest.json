@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "7c1dab9e328062613b6c",
-   "version": 15,
-   "date": "2026-10-14",
+   "hash": "3ffa0d4cd7146128fe20",
+   "version": 16,
+   "date": "2026-10-30",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 23,
+   "pages": 24,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -14,60 +14,66 @@
      "concept_hash": "d33ac4577580f7c7",
      "concept_version": 1
     },
+    "cn.cardio.edema.generalized-cause": {
+     "title": "전신 부종 — 경정맥압·소변 단백·간 징후로 가른다",
+     "page": 3,
+     "concept_hash": "da7eb2b1c623c1ea",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 4,
+     "page": 5,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 5,
+     "page": 6,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 8,
+     "page": 9,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 10,
+     "page": 11,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 13,
+     "page": 14,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 15,
+     "page": 16,
      "concept_hash": "4e8173c6e4c8359f",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 19,
+     "page": 20,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 22,
+     "page": 23,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "863005f440fe299fcd6217392dd7b59a",
-    "version": 15,
-    "uploaded": "2026-10-14T10:32:03+09:00"
+    "md5": "248e3922facd6dbc62d23bde319e667a",
+    "version": 16,
+    "uploaded": "2026-10-30T11:09:17+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -84,11 +90,11 @@
     "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf",
     "MedKOS_학습서_순환기내과_v13_2026-10-03.pdf",
     "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf",
-    "MedKOS_학습서_순환기내과_v15_2026-10-14.pdf"
+    "MedKOS_학습서_순환기내과_v15_2026-10-14.pdf",
+    "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf"
    ],
    "changes": [
-    "내용 갱신: 고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해 (정리본 v2 → v3)",
-    "내용 갱신: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때 (정리본 v1 → v2)"
+    "새 단원: 전신 부종 — 경정맥압·소변 단백·간 징후로 가른다"
    ]
   },
   "피부과": {
@@ -640,11 +646,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "6395af548d59ec9af24b",
-   "version": 31,
-   "date": "2026-10-29",
+   "hash": "37bb583a1c52f8bc6e7f",
+   "version": 32,
+   "date": "2026-10-30",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 49,
+   "pages": 52,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -779,42 +785,42 @@
      "concept_hash": "6295d1fb01e16a3b",
      "concept_version": 1
     },
+    "cn.rheum.gout.hla-b5801-before-allopurinol": {
+     "title": "통풍 — allopurinol(알로푸리놀) 전 HLA-B*58:01 검사",
+     "page": 43,
+     "concept_hash": "1c3a85b4be944c24",
+     "concept_version": 1
+    },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 43,
+     "page": 45,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 45,
+     "page": 47,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 47,
+     "page": 49,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 48,
+     "page": 51,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
-    },
-    "cn.rheum.gout.hla-b5801-before-allopurinol": {
-     "title": "Planning Long-Term Urate Lowering for a Korean Man with Reduced Kidney Function",
-     "page": 49,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "16f40b7fa5f1b441a0d7c6457dc2806d",
-    "version": 31,
-    "uploaded": "2026-10-29T11:14:32+09:00"
+    "md5": "e6498890c373ea9295c85511f43c5346",
+    "version": 32,
+    "uploaded": "2026-10-30T11:09:17+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -847,10 +853,11 @@
     "MedKOS_학습서_류마티스내과_v28_2026-10-22.pdf",
     "MedKOS_학습서_류마티스내과_v29_2026-10-23.pdf",
     "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf",
-    "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf"
+    "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf",
+    "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf"
    ],
    "changes": [
-    "새 단원: Planning Long-Term Urate Lowering for a Korean Man with Reduced Kidney Function"
+    "내용 갱신: 통풍 — allopurinol(알로푸리놀) 전 HLA-B*58:01 검사 (정리본 vNone → v1)"
    ]
   },
   "호흡기내과": {
@@ -1396,13 +1403,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "e576208a2e9bc22f9bf8499cd5717bed",
+   "md5": "3db5e921580cc8206a62e426ada0f15c",
    "version": null,
-   "uploaded": "2026-10-29T11:14:32+09:00"
+   "uploaded": "2026-10-30T11:09:17+09:00"
   }
  },
- "updated": "2026-10-29"
+ "updated": "2026-10-30"
 }
