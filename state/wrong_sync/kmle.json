@@ -1091,8 +1091,29 @@
    "date": "2026-10-29",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1664": {
+   "id": "kmle-2026-1664",
+   "exam": "kmle",
+   "subject": "Pulmonology",
+   "step": "",
+   "type": "Blue Lips and an Unchanging Low Pulse Oximeter Reading after a Throat Spray before Endoscopy",
+   "style": "",
+   "modality": "",
+   "question": "이 환자의 증상을 일으킨 기전은?",
+   "chosen": 1,
+   "chosenText": "일산화탄소의 혈색소 결합",
+   "answer": 3,
+   "answerText": "혈색소 철의 3가 산화",
+   "coreNote": "",
+   "differ": "",
+   "decision": "벤조카인 뒤 청색증이 생기고 산소에도 맥박산소측정 85%가 고정되며 PaO2는 높고 혈액이 초콜릿색이다. 폐 산소화는 정상이고 일산화탄소 노출도 없어, 혈색소 철이 3가로 산화되어 산소를 운반하지 못하는 메트헤모글로빈혈증이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-10-31",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-28T23:18:53.794Z"
+ "updated": "2026-10-31T12:29:29.494Z"
 }
