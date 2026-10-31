@@ -25,9 +25,9 @@ Claude Routine `trig_01DzVed7kjfo6hLqyLQf1vaJ`(cron `0 9,21 * * *` UTC, 모델 c
    - 도식 노드 글 판단 ≤ 30자·나머지 ≤ 40자·갈래 라벨 ≤ 14자. 조건 목록·용량·예외는 `diagram_notes` 나 표로. 배치는 코드가 정한다.
    - frontmatter `outline:` 슬롯 필수(`python pipelines/outline.py --find <말>` · `--book <과> --gaps`).
    - 시험 답이 갈릴 곳은 `## 시험 쟁점 — 충돌·맥락·새 근거` 절에 네 칸으로. `review_status: unreviewed`.
-4. **해리슨 대조(기본)** — 정리본마다 `python pipelines/outline.py --harrison <슬롯>`:
-   - 「드라이브 문서 <ID>」가 나오면 Google Drive 커넥터 `read_file_content` 로 **그 문서 하나만** 읽는다(`===== [H21 p.N] =====` 뒤가 인쇄쪽 N).
-   - 맞는 서술에 `[[harrison-21: <장>장 p.<쪽>]]`, 출처 `harrison-21`(kind: textbook, verified: text, checked 에 확인한 것과 쪽). 다르면 고치거나 시험 쟁점 절에 밝힌다.
+4. **해리슨 대조(기본, 22판 DB)** — 정리본마다 `python pipelines/outline.py --harrison <슬롯>`(슬롯 번호는 21판 장, 출력은 22판 장):
+   - 「드라이브 문서 <ID>」가 나오면 Google Drive 커넥터 `read_file_content` 로 **그 문서 하나만** 읽는다(`===== [H22 p.N] =====` 뒤가 인쇄쪽 N). 결과가 커서 「파일로 저장됐다」고 나오면 그 JSON 파일의 `fileContent` 에서 필요한 `[H22 p.N]` 구간만 python 으로 뽑아 읽는다.
+   - 맞는 서술에 출력이 준 인용 `[[harrison-22: <장>장 p.<쪽>]]`, 출처 `harrison-22`(kind: textbook, verified: text, checked 에 확인한 것과 쪽). 22판에 없는 장이면 출력대로 `harrison-21`. 다르면 고치거나 시험 쟁점 절에 밝힌다.
    - 「드라이브 문서 없음」이면 대조하지 않고 넘어간다. 「해리슨이 다루지 않는 자리」면 대상 아님.
    - 이 컨테이너는 PubMed·doi.org·NCBI 를 막는다. 못 연 출처는 `verified: citation` 과 사유를 적는다. PMID 를 알면 `pmid` 를 붙이고, 모르면 DOI 만 둔다(학습서 워크플로가 DOI 로 PMID 를 찾는다). 없는 출처·안 본 쪽수를 만들지 않는다.
 5. 검증(오류 0 이어야 커밋): `python pipelines/concept_figures.py check` → `python pipelines/concepts.py`(도식이 한 쪽에 안 들어가면 ERROR — 노드 글을 줄인다; 판형 2 정리본은 판형 WARN 도 0) → 목표·distractors 를 더한 문항이 있으면 `python pipelines/lint_questions.py <파일들>` → `python pipelines/outline.py`.

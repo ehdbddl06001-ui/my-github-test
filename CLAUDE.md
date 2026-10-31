@@ -189,7 +189,10 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   `build_books.py` 가 그 순서로 정렬하며 차례에 해리슨 절 이름을 머리글로 넣는다. 비우면 맨 뒤 「배치 대기」(WARN).
   해리슨의 한 장은 **한 과에만** 넣는다(`outline.py` 가 빠진 장·중복을 검사). 해리슨에 없는 과(산부인과·소아과·외과·
   정형외과·비뇨·예방의학·기초의학)는 손으로 적은 슬롯을 쓴다. 근거를 확인할 때는 `harrison_read.py --slot <id>` 로
-  **그 장만** 읽고 인쇄쪽을 인용한다(본문은 저장소에 저장하지 않는다). 루틴은 드라이브 `교과서/Harrison_21e_장별` 문서를 읽는다.
+  **그 장만** 읽고 인쇄쪽을 인용한다(본문은 저장소에 저장하지 않는다).
+  **대조는 해리슨 22판 DB(2026-10-31 사용자 지시)** — 드라이브 `교과서/Harrison_22e_장별/H22_<장>` 문서. 슬롯 id 는 21판 장 번호 그대로 두고
+  `content/outline/harrison22.json`(`harrison22_build.py`)의 대응표로 22판 장을 찾는다 → `outline.py --harrison <슬롯>` 이 22판 장·인쇄쪽·문서 ID·
+  인용 `[[harrison-22: 장 p.N]]` 을 준다. 22판에 없는 21판 장(7·417·484)만 21판 문서(`Harrison_21e_장별`)로. 기존 `harrison-21` 인용은 유효하다.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.

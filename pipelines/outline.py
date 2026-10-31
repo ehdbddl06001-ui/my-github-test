@@ -2,7 +2,9 @@
 
 원본은 두 파일이다.
   content/outline/subjects.yaml      과 → 슬롯 순서(사람이 정한 배치). 해리슨 장 번호를 가리킨다.
-  content/outline/harrison_toc.json  해리슨 21판 목차(기계로 한 번 뽑은 것 — `harrison_toc.py`).
+  content/outline/harrison_toc.json  해리슨 21판 목차(기계로 한 번 뽑은 것 — `harrison_toc.py`). 슬롯 id·순서의 뼈대.
+  content/outline/harrison22.json    해리슨 22판 장별 DB(드라이브 문서 ID)와 21판 장 → 22판 장 대응표(`harrison22_build.py`).
+                                     **대조는 22판으로 한다**(2026-10-31 사용자 지시). 22판에 없는 장만 21판 문서로.
 
 이 모듈이 하는 일은 **순서를 주는 것**뿐이다. 정리본의 내용은 건드리지 않는다.
 정리본은 frontmatter `outline: <슬롯 id>` 로 자기 자리를 밝힌다. 비우면 책 맨 뒤 「배치 대기」로 간다.
@@ -29,6 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SUBJECTS = ROOT / "content" / "outline" / "subjects.yaml"
 TOC = ROOT / "content" / "outline" / "harrison_toc.json"
 BOOKS_CFG = ROOT / "pipelines" / "books_config.yaml"
+H22 = ROOT / "content" / "outline" / "harrison22.json"
 ID_RE = re.compile(r"^[a-z0-9]+(?:[.-][a-z0-9]+)*$")
 
 
@@ -40,13 +43,14 @@ class Slot:
     order: int
     chapters: list[int] = field(default_factory=list)
     part: str = ""                      # 해리슨 부·절 이름(책의 중간 머리글로 쓴다)
+    chapters22: list[int] = field(default_factory=list)   # 대조할 해리슨 22판 장(from21 대응)
 
     @property
     def source(self) -> str:
-        if not self.chapters:
+        ns, ed = (self.chapters22, 22) if self.chapters22 else (self.chapters, 21)
+        if not ns:
             return ""
-        ns = self.chapters
-        return f"해리슨 21판 {ns[0]}장" if len(ns) == 1 else f"해리슨 21판 {ns[0]}~{ns[-1]}장"
+        return f"해리슨 {ed}판 {ns[0]}장" if len(ns) == 1 else f"해리슨 {ed}판 {ns[0]}~{ns[-1]}장"
 
 
 def parse_range(spec) -> list[int]:
@@ -76,6 +80,24 @@ def load_toc() -> dict[int, dict]:
     return {c["n"]: c for c in data["chapters"]}
 
 
+def load_h22() -> dict:
+    """해리슨 22판 DB 표 — 없으면 빈 dict(21판으로 돌아간다)."""
+    if not H22.exists():
+        return {}
+    return json.loads(H22.read_text(encoding="utf-8"))
+
+
+def to22(chapters: list[int], h22: dict) -> list[int]:
+    """21판 장 번호들 → 22판 장 번호들(순서 유지·중복 제거). 대응이 없는 장은 빠진다."""
+    m = h22.get("from21") or {}
+    out: list[int] = []
+    for n in chapters:
+        for j in m.get(str(n)) or []:
+            if j not in out:
+                out.append(j)
+    return out
+
+
 def load() -> tuple[dict[str, list[Slot]], list[str]]:
     """{책: [슬롯…]} 과 오류 목록. 오류가 있어도 만들 수 있는 만큼은 만든다(학습서를 멈추지 않는다)."""
     errs: list[str] = []
@@ -83,6 +105,7 @@ def load() -> tuple[dict[str, list[Slot]], list[str]]:
         return {}, [f"기본틀 파일이 없다: {SUBJECTS.name} · {TOC.name}"]
     cfg = yaml.safe_load(SUBJECTS.read_text(encoding="utf-8")) or {}
     toc = load_toc()
+    h22 = load_h22()
     books_cfg = yaml.safe_load(BOOKS_CFG.read_text(encoding="utf-8")) or {}
     known_books = set((books_cfg.get("books") or {}).values())
 
@@ -120,6 +143,7 @@ def load() -> tuple[dict[str, list[Slot]], list[str]]:
                         continue
                     slots.append(Slot(f"h{n}", c["title"], book, len(slots), [n], c.get("section") or ""))
         for s in slots:
+            s.chapters22 = to22(s.chapters, h22)
             if not ID_RE.match(s.id):
                 errs.append(f"{book}: 슬롯 id {s.id!r} 는 소문자·숫자·점·하이픈만")
             if s.id in seen_ids:
@@ -156,7 +180,8 @@ DRIVE_IDS = ROOT / "content" / "outline" / "harrison_drive.json"
 
 
 def harrison_targets(slot_id: str, books: dict[str, list[Slot]]) -> int:
-    """대조할 장을 알려 준다. 드라이브에 장별 문서가 있으면 그 ID(루틴이 Google Drive 커넥터로 그것만 읽는다)."""
+    """대조할 장을 알려 준다 — **해리슨 22판**이 기본(2026-10-31). 드라이브 장별 문서 ID 를 주면 루틴이 Google Drive
+    커넥터로 그 문서만 읽는다. 22판에 대응 장이 없는 21판 장만 21판 문서로 돌아간다."""
     s = index(books).get(slot_id)
     if not s:
         print(f"슬롯 {slot_id} 가 기본틀에 없다")
@@ -165,16 +190,34 @@ def harrison_targets(slot_id: str, books: dict[str, list[Slot]]) -> int:
         print(f"{slot_id} 는 해리슨이 다루지 않는 자리다 — 해리슨 대조 대상 아님(다른 출처로 근거를 단다)")
         return 0
     toc = load_toc()
-    ids = {}
+    h22 = load_h22()
+    ch22 = h22.get("chapters") or {}
+    ids21 = {}
     if DRIVE_IDS.exists():
-        ids = json.loads(DRIVE_IDS.read_text(encoding="utf-8")).get("chapters", {})
+        ids21 = json.loads(DRIVE_IDS.read_text(encoding="utf-8")).get("chapters", {})
+    done: set[int] = set()
     for n in s.chapters:
+        js = (h22.get("from21") or {}).get(str(n)) if h22 else None
+        if js:
+            for j in js:
+                if j in done:
+                    continue
+                done.add(j)
+                c = ch22.get(str(j)) or {}
+                doc = c.get("doc")
+                where = (f"드라이브 문서 {doc} (Google Drive read_file_content)" if doc
+                         else "드라이브 문서 없음 — 22판 DB 에 이 장 문서가 없다")
+                print(f"해리슨 22판 {j}장 {c.get('title', '')} · 인쇄쪽 {c.get('page')}~{c.get('page_end')} · {where}"
+                      f" · 인용 [[harrison-22: {j}장 p.<쪽>]] · 출처 id harrison-22")
+            continue
         c = toc[n]
         offset = c["pdf"] - c["page"]
-        doc = ids.get(str(n))
+        doc = ids21.get(str(n))
+        why = "22판에 이 장이 없다 — 21판으로 대조" if h22 else "22판 DB 표(harrison22.json)가 없다 — 21판으로 대조"
         where = (f"드라이브 문서 {doc} (Google Drive read_file_content)" if doc
                  else "드라이브 문서 없음 — PC 에서 `python pipelines/harrison_read.py --chapter %d` 로 대조" % n)
-        print(f"해리슨 21판 {n}장 {c['title']} · 인쇄쪽 {c['page']}~{c['pdf_end'] - offset} · {where}")
+        print(f"해리슨 21판 {n}장 {c['title']} · 인쇄쪽 {c['page']}~{c['pdf_end'] - offset} · {where}"
+              f" · 인용 [[harrison-21: {n}장 p.<쪽>]] · 출처 id harrison-21 ({why})")
     return 0
 
 
@@ -184,7 +227,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--gaps", action="store_true", help="정리본이 없는 슬롯만")
     ap.add_argument("--find", help="슬롯·해리슨 장 제목 검색")
     ap.add_argument("--json", action="store_true")
-    ap.add_argument("--harrison", metavar="SLOT", help="그 슬롯을 대조할 해리슨 장·쪽·드라이브 문서 ID")
+    ap.add_argument("--harrison", metavar="SLOT", help="그 슬롯을 대조할 해리슨(22판) 장·쪽·드라이브 문서 ID")
     a = ap.parse_args(argv)
 
     books, errs = load()

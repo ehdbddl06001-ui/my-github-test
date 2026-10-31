@@ -182,8 +182,12 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
             # 해리슨 대조가 기본이다(2026-09-22 사용자 지시) — 그 장을 읽고 확인한 흔적이 없으면 알린다
             if sl.chapters and not any(str(x.get("id", "")).startswith("harrison") and x.get("verified") == "text"
                                        for x in meta.get("sources") or [] if isinstance(x, dict)):
-                errs.append(f"[WARN] 해리슨 대조 없음 — 슬롯 {slot} = 해리슨 {', '.join(map(str, sl.chapters))}장. "
-                            f"그 장을 읽고 harrison-21 출처(verified: text)와 [[harrison-21: 장 p.N]] 을 단다")
+                # 2026-10-31: 대조는 해리슨 22판 DB 로(22판에 없는 장만 21판) — harrison-21 로 이미 대조한 정리본도 유효하다
+                where = (f"해리슨 22판 {', '.join(map(str, sl.chapters22))}장" if sl.chapters22
+                         else f"해리슨 21판 {', '.join(map(str, sl.chapters))}장")
+                ed = "22" if sl.chapters22 else "21"
+                errs.append(f"[WARN] 해리슨 대조 없음 — 슬롯 {slot} = {where}. `outline.py --harrison {slot}` 로 "
+                            f"그 장을 읽고 harrison-{ed} 출처(verified: text)와 [[harrison-{ed}: 장 p.N]] 을 단다")
     # 그림(2026-09-27) — 확실한 라벨만·출처·라이선스·파일. 규칙은 concept_figures.py
     from concept_figures import validate_figures
     errs += validate_figures(meta, [s["title"] for s in sections(str(meta.get("_body", "")))] if "_body" in meta else None)
