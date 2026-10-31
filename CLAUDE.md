@@ -16,6 +16,7 @@
 | 판단 도식 | `decision_diagram.py`(배치는 코드가 정한다) | 노드 글 판단 ≤ 30자 — 안 들어가면 `concepts.py` ERROR |
 | 정리본 그림(심전도·조직·영상) | `/gen-concept` 「[figure]」 — **확실한 라벨만**(전문가 데이터셋 라벨·논문 그림 설명) | `concept_figures.py find/add/want/none/reject/status` · 수확은 exam-builder `opendata demand` |
 | 오픈데이터 영상 문항 | **여기서 만들지 않는다** — 빌더(`exam-builder`)의 `opendata medkos-export` | `content/imaging/`, `export_imaging_web.py` |
+| 매일 심전도(🫀 덱) | 여기서 만들지 않는다 — 빌더의 매일 심전도 트랙(`ecg_daily.yaml` · `opendata ecg-plan`, run `일일심전도_<날짜>`). 덱 = 영상 카드 중 `modality: ECG`, 오답은 `wrong_imaging` 공유 | `docs/app.js` `ECG` · `deckWrong()` |
 | 해부학(3Q, ~2026-10-19) | `/anatomy-daily` + **`docs/ANATOMY_RULES.md` 먼저** | `docs/ANATOMY_VISUALS.md` |
 | AI·코딩 학습 | `/gen-ailab` `/ai-weekly` `/deepen-week` `/gen-quest` `/ai-mentor` `/ai-debug` | 아래 「실행 로그 루프」 |
 | 커밋 | `python pipelines/publish.py -m "…"` (콘텐츠 = main, 코드 = `--branch claude/…` + PR) | 아래 「커밋 전 필수 순서」 |
