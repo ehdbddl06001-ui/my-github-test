@@ -1112,8 +1112,29 @@
    "date": "2026-10-31",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1658": {
+   "id": "kmle-2026-1658",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Morning Low Back Stiffness Easing with Exercise in a Young Man with Normal Pelvic Radiographs",
+   "style": "",
+   "modality": "",
+   "question": "다음으로 가장 적절한 검사는?",
+   "chosen": 0,
+   "chosenText": "요추 CT 촬영",
+   "answer": 2,
+   "answerText": "엉치엉덩관절 MRI",
+   "coreNote": "",
+   "differ": "",
+   "decision": "젊은 남자의 염증성 허리통증에 앞포도막염 병력·HLA-B27 양성·CRP 상승이 있어 축성 척추관절염이 의심된다. 골반 X선이 정상인 초기에는 엉치엉덩관절 MRI로 골수 부종을 확인한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-10-31",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-31T12:29:29.494Z"
+ "updated": "2026-10-31T13:20:32.834Z"
 }
