@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4206,
+  "total": 4217,
   "byType": {
-   "imaging": 492,
+   "imaging": 503,
    "concept": 121,
    "paper": 876,
    "kmle": 1632,
@@ -39,10 +39,10 @@ window.MEDKOS_INDEX = {
    "Hematology": 99,
    "Laboratory Medicine": 90,
    "산부인과": 69,
-   "순환기": 44,
+   "순환기": 47,
+   "호흡기": 33,
    "소화기": 32,
-   "호흡기": 32,
-   "소아과": 27,
+   "소아과": 28,
    "Physiology": 24,
    "내분비": 24,
    "응급·중환자": 24,
@@ -52,19 +52,19 @@ window.MEDKOS_INDEX = {
    "신경": 23,
    "신장·비뇨기": 23,
    "외과": 21,
-   "피부과": 20,
+   "피부과": 21,
    "Pharmacology": 19,
+   "예방의학·역학": 19,
    "Biochemistry": 18,
-   "예방의학·역학": 18,
    "Microbiology": 17,
    "Internal Medicine": 14,
+   "근골격·류마티스": 14,
+   "약리": 14,
    "Immunology": 13,
-   "근골격·류마티스": 13,
-   "약리": 13,
    "정신과": 13,
    "안과": 10,
-   "영상의학": 8,
-   "이비인후과": 8,
+   "영상의학": 9,
+   "이비인후과": 9,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -79,13 +79,207 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2949,
+   "high": 2960,
    "medium": 1205,
    "low": 52
   },
   "tagCount": 5159
  },
  "docs": [
+  {
+   "id": "imaging-2026-0504",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 가끔 두근거리는 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0504.md",
+   "snippet": "82세 여자가 한 달 전부터 가끔 가슴이 「툭」 하고 건너뛰는 느낌이 있어 내과에 왔다. 하루에 몇 번 몇 초씩 느끼고 일상생활에는 지장이 없다. 어지러움·실신·흉통·호흡곤란은 없다. 고혈압으로 암로디핀을 먹고 있고 저녁마다 녹차를 두 잔 마신다. 혈압 132/76 mmHg, 맥박 62회/분으로 가끔 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 마그네슘 2.0 mg/dL 이고 갑상샘자극호르몬은 정상이다. 심장초음",
+   "text": "순환기 심전도 처치 — 가끔 두근거리는 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf 82세 여자가 한 달 전부터 가끔 가슴이 「툭」 하고 건너뛰는 느낌이 있어 내과에 왔다. 하루에 몇 번 몇 초씩 느끼고 일상생활에는 지장이 없다. 어지러움·실신·흉통·호흡곤란은 없다. 고혈압으로 암로디핀을 먹고 있고 저녁마다 녹차를 두 잔 마신다. 혈압 132/76 mmHg, 맥박 62회/분으로 가끔 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 마그네슘 2.0 mg/dL 이고 갑상샘자극호르몬은 정상이다. 심장초음파에서 좌심실 박출률 62 %, 좌심방 크기와 판막은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 안심시키고 카페인 등 유발 요인 줄이기 B. 직접작용 경구 항응고제 시작 C. 메토프롤롤 매일 복용 시작 D. 아미오다론 매일 복용 시작 E. 전극도자절제술 의뢰"
+  },
+  {
+   "id": "imaging-2026-0503",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 열과 옆구리 통증이 있는 고령 여성의 빠른 맥박",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0503.md",
+   "snippet": "67세 여자가 3일 전부터 열·오한과 오른쪽 옆구리 통증이 있고 오늘 기운이 없어 응급실에 왔다. 잘 먹지 못했다고 한다. 체온 38.9℃, 혈압 104/66 mmHg, 호흡 20회/분이다. 오른쪽 늑골척추각 압통이 있고 입안이 말라 있다. 심잡음은 들리지 않는다. 소변검사에서 백혈구가 많이 보이고 아질산염 양성이다. 혈청 칼륨 3.8 mEq/L 이다. 맥박이 빨라 12유도 심전도를 찍었고 그림과 같다. 심전도 판독으로 가장 ",
+   "text": "순환기 심전도 판독 — 열과 옆구리 통증이 있는 고령 여성의 빠른 맥박 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf 67세 여자가 3일 전부터 열·오한과 오른쪽 옆구리 통증이 있고 오늘 기운이 없어 응급실에 왔다. 잘 먹지 못했다고 한다. 체온 38.9℃, 혈압 104/66 mmHg, 호흡 20회/분이다. 오른쪽 늑골척추각 압통이 있고 입안이 말라 있다. 심잡음은 들리지 않는다. 소변검사에서 백혈구가 많이 보이고 아질산염 양성이다. 혈청 칼륨 3.8 mEq/L 이다. 맥박이 빨라 12유도 심전도를 찍었고 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 가속 접합부 리듬 B. 동빈맥 C. 발작성 상심실빈맥 D. 2:1 전도 심방조동 E. 다소성 심방빈맥"
+  },
+  {
+   "id": "imaging-2026-0502",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 추적 기간이 서로 다른 코호트의 발생률",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0502.md",
+   "snippet": "한 공장에서 새로 쓰기 시작한 용제의 영향을 보려고 신규 입사자 5명(모두 25세 남자)을 최대 4년간 추적하였다. 갑은 4년 동안 질환 없이 추적이 끝났다. 을은 입사 2년째 말에 질환이 진단되었다. 병은 1년 뒤 퇴사해 추적이 끊겼다. 정은 3년째 말에 질환이 진단되었다. 무는 2년 동안 질환 없이 지내다 교통사고로 사망하였다. 질환은 한 번 진단되면 그 사람의 추적을 끝낸다. 이 집단에서 질환의 발생률(100인년당)은? ",
+   "text": "예방의학·역학 예방의학 — 추적 기간이 서로 다른 코호트의 발생률 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 한 공장에서 새로 쓰기 시작한 용제의 영향을 보려고 신규 입사자 5명(모두 25세 남자)을 최대 4년간 추적하였다. 갑은 4년 동안 질환 없이 추적이 끝났다. 을은 입사 2년째 말에 질환이 진단되었다. 병은 1년 뒤 퇴사해 추적이 끊겼다. 정은 3년째 말에 질환이 진단되었다. 무는 2년 동안 질환 없이 지내다 교통사고로 사망하였다. 질환은 한 번 진단되면 그 사람의 추적을 끝낸다. 이 집단에서 질환의 발생률(100인년당)은? A. 16.7 B. 40.0 C. 12.5 D. 50.0 E. 20.0"
+  },
+  {
+   "id": "imaging-2026-0501",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 스타틴 복용 중 항생제를 더한 뒤 생긴 근육통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0501.md",
+   "snippet": "A 68 year old man comes to the emergency department because of diffuse muscle aching and weakness for 3 days and dark urine since yesterday. Ten days ago he began a course of clarithromycin for community acquired pneumonia. He has taken sim",
+   "text": "약리 약리 — 스타틴 복용 중 항생제를 더한 뒤 생긴 근육통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 A 68 year old man comes to the emergency department because of diffuse muscle aching and weakness for 3 days and dark urine since yesterday. Ten days ago he began a course of clarithromycin for community acquired pneumonia. He has taken simvastatin 40 mg daily for 5 years without problems, as well as lisinopril. He has not exercised strenuously. Examination shows tender proximal thigh and arm muscles with 4/5 strength. Serum creatine kinase is 18,500 U/L and creatinine is 1.9 mg/dL (baseline 1.0). Urine dipstick is positive for blood, but microscopy shows no erythrocytes. Which of the following best explains the mechanism of this drug interaction? A. Inhibition of CYP2C9 mediated simvastatin metabolism B. Inhibition of hepatic OATP1B1 uptake of simvastatin C. Induction of P glycoprotein in skeletal muscle D. Displacement of simvastatin from plasma albumin E. Inhibition of CYP3A4 mediated simvastatin metabolism"
+  },
+  {
+   "id": "imaging-2026-0500",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 생후 5주 영아의 황달과 회색 대변",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0500.md",
+   "snippet": "생후 35일 여아가 황달이 없어지지 않아 왔다. 만삭 질식분만으로 태어났고 모유 수유 중이며 잘 먹는다. 2주 전부터 대변이 옅은 회백색이고 소변은 진한 노란색이다. 체중은 출생 뒤 정상적으로 늘었다. 공막 황달이 있고 간이 오른쪽 갈비뼈 아래 3 cm 에서 단단하게 만져진다. 총빌리루빈 8.2 mg/dL, 직접빌리루빈 6.4 mg/dL, AST 120 U/L, ALT 98 U/L, 감마글루타밀전이효소 610 U/L 이고 갑상",
+   "text": "소아과 소아청소년 — 생후 5주 영아의 황달과 회색 대변 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 생후 35일 여아가 황달이 없어지지 않아 왔다. 만삭 질식분만으로 태어났고 모유 수유 중이며 잘 먹는다. 2주 전부터 대변이 옅은 회백색이고 소변은 진한 노란색이다. 체중은 출생 뒤 정상적으로 늘었다. 공막 황달이 있고 간이 오른쪽 갈비뼈 아래 3 cm 에서 단단하게 만져진다. 총빌리루빈 8.2 mg/dL, 직접빌리루빈 6.4 mg/dL, AST 120 U/L, ALT 98 U/L, 감마글루타밀전이효소 610 U/L 이고 갑상샘 기능은 정상이다. 공복 복부 초음파에서 담낭이 작고 불규칙하며 간문맥 앞쪽에 삼각형 고에코 띠가 보인다. 다음 처치로 가장 적절한 것은? A. 간이식 대기자 등록 B. 수술 중 담관조영술 C. 광선요법 시행 D. 분유로 바꾼 뒤 2주 추적 E. 우르소데옥시콜산 투여 후 추적"
+  },
+  {
+   "id": "imaging-2026-0499",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사 — 출혈 없는 aPTT 연장과 혼합 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0499.md",
+   "snippet": "A 31 year old woman is referred before a scheduled laparoscopic cholecystectomy because preoperative coagulation tests are abnormal. She has had two miscarriages at 9 and 11 weeks' gestation. She has never had abnormal bleeding, including a",
+   "text": "영상의학 진단검사 — 출혈 없는 aPTT 연장과 혼합 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 A 31 year old woman is referred before a scheduled laparoscopic cholecystectomy because preoperative coagulation tests are abnormal. She has had two miscarriages at 9 and 11 weeks' gestation. She has never had abnormal bleeding, including after a dental extraction last year, and her menstrual periods are normal. She takes no medications. Platelet count is 210,000/mm³. Prothrombin time is 12 seconds (INR 1.0), and activated partial thromboplastin time is 52 seconds (reference 25–35). A 1:1 mixing study with normal plasma gives an aPTT of 49 seconds immediately and 50 seconds after 2 hours of incubation at 37°C. Factor VIII activity is 95%. Which of the following is the most likely cause of the prolonged aPTT? A. Lupus anticoagulant B. Acquired factor VIII inhibitor C. Factor XII deficiency D. von Willebrand disease E. Unfractionated heparin contamination"
+  },
+  {
+   "id": "imaging-2026-0498",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 젊은 남성의 아침 허리 뻣뻣함",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0498.md",
+   "snippet": "24세 남자가 1년 전부터 서서히 심해진 허리 통증으로 왔다. 아침에 일어나면 허리가 1시간 이상 뻣뻣하고, 움직이면 나아지며 쉬면 나빠진다. 밤 후반에 아파서 깨는 일이 잦다. 6개월 전 오른쪽 눈이 붉고 아프며 눈부심이 있어 안과에서 안약 치료를 받았다. 건선·설사·요도 분비물은 없었다. 쇼버 검사에서 허리 굽힘이 줄어 있고 양쪽 천장관절에 압통이 있다. 말초관절 부기는 없다. 적혈구침강속도 32 mm/h, C 반응단백 1",
+   "text": "근골격·류마티스 류마티스·근골격 — 젊은 남성의 아침 허리 뻣뻣함 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 24세 남자가 1년 전부터 서서히 심해진 허리 통증으로 왔다. 아침에 일어나면 허리가 1시간 이상 뻣뻣하고, 움직이면 나아지며 쉬면 나빠진다. 밤 후반에 아파서 깨는 일이 잦다. 6개월 전 오른쪽 눈이 붉고 아프며 눈부심이 있어 안과에서 안약 치료를 받았다. 건선·설사·요도 분비물은 없었다. 쇼버 검사에서 허리 굽힘이 줄어 있고 양쪽 천장관절에 압통이 있다. 말초관절 부기는 없다. 적혈구침강속도 32 mm/h, C 반응단백 1.8 mg/dL, HLA B27 양성이다. 골반 X선에서 양쪽 천장관절의 관절면 미란과 경화가 보인다. 이전에 진통제는 써 본 적이 없다. 가장 적절한 첫 치료는? A. 프레드니솔론 30 mg 매일 복용 B. 설파살라진 매일 복용 C. 나프록센 최대 용량 매일 복용 D. 아달리무맙 피하 주사 E. 메토트렉세이트 주 1회 복용"
+  },
+  {
+   "id": "imaging-2026-0497",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 몇 시간씩 지속되는 반복 어지럼과 한쪽 귀 먹먹함",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0497.md",
+   "snippet": "A 45 year old woman comes to the physician because of recurrent episodes of spinning vertigo over the past 4 months. Each episode lasts 2 to 4 hours and is accompanied by nausea, a roaring sound, and a feeling of fullness in the left ear. B",
+   "text": "이비인후과 이비인후과 — 몇 시간씩 지속되는 반복 어지럼과 한쪽 귀 먹먹함 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 A 45 year old woman comes to the physician because of recurrent episodes of spinning vertigo over the past 4 months. Each episode lasts 2 to 4 hours and is accompanied by nausea, a roaring sound, and a feeling of fullness in the left ear. Between episodes she feels well, but she thinks her hearing in the left ear has become worse and fluctuates. She has no headache, visual aura, or weakness. Otoscopic examination shows normal tympanic membranes. The Weber test lateralizes to the right ear, and the Rinne test shows air conduction greater than bone conduction bilaterally. Pure tone audiometry shows a left low frequency sensorineural hearing loss. Neurologic examination between attacks is normal. Which of the following is the most likely diagnosis? A. Benign paroxysmal positional vertigo B. Vestibular migraine C. Ménière disease D. Vestibular schwannoma E. Vestibular neuritis"
+  },
+  {
+   "id": "imaging-2026-0496",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 산소를 늘려도 숨찬 바이러스 폐렴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0496.md",
+   "snippet": "40세 남자가 5일 전부터 열과 기침이 있었고 오늘 숨이 많이 차서 응급실에 왔다. 어제 SARS CoV 2 신속항원검사가 양성이었다. 비만(체질량지수 34 kg/m²)이 있고 다른 병력은 없다. 체온 38.6℃, 혈압 128/80 mmHg, 맥박 108회/분, 호흡 30회/분이다. 의식은 명료하고 문장으로 말할 수 있다. 비강 캐뉼라로 산소 6 L/분을 주는데도 산소포화도는 88 % 이다. 동맥혈가스(산소 투여 중) pH 7",
+   "text": "호흡기 호흡기 — 산소를 늘려도 숨찬 바이러스 폐렴 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 40세 남자가 5일 전부터 열과 기침이 있었고 오늘 숨이 많이 차서 응급실에 왔다. 어제 SARS CoV 2 신속항원검사가 양성이었다. 비만(체질량지수 34 kg/m²)이 있고 다른 병력은 없다. 체온 38.6℃, 혈압 128/80 mmHg, 맥박 108회/분, 호흡 30회/분이다. 의식은 명료하고 문장으로 말할 수 있다. 비강 캐뉼라로 산소 6 L/분을 주는데도 산소포화도는 88 % 이다. 동맥혈가스(산소 투여 중) pH 7.47, PaCO₂ 32 mmHg, PaO₂ 56 mmHg 이다. 이미 덱사메타손과 렘데시비르를 시작하였다. 흉부 X선은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 푸로세미드 정맥 주사 B. 고유량 비강 캐뉼라 산소 요법 C. 즉시 기관삽관 후 기계환기 D. 체외막산소공급(ECMO) E. 벤투리 마스크 산소 28 %"
+  },
+  {
+   "id": "imaging-2026-0495",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 고령 여성의 불규칙한 맥박과 묶여 오는 박동",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0495.md",
+   "snippet": "A 74 year old woman comes to the physician because of a sensation of skipped heartbeats for 3 weeks. She has had no chest pain, dizziness, or syncope. She has hypertension treated with hydrochlorothiazide and drinks two cups of coffee daily",
+   "text": "순환기 순환기 — 고령 여성의 불규칙한 맥박과 묶여 오는 박동 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 A 74 year old woman comes to the physician because of a sensation of skipped heartbeats for 3 weeks. She has had no chest pain, dizziness, or syncope. She has hypertension treated with hydrochlorothiazide and drinks two cups of coffee daily. Pulse is 64/min and irregular, with a pattern that repeats every third beat; blood pressure is 138/82 mm Hg. Cardiac examination shows no murmurs. Serum potassium is 3.9 mEq/L, and TSH is within the reference range. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Second degree atrioventricular block, Mobitz type I B. Sinus arrhythmia C. Atrial flutter with variable conduction D. Premature atrial contractions in a trigeminal pattern E. Premature ventricular contractions in a trigeminal pattern"
+  },
+  {
+   "id": "imaging-2026-0494",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 중년 남성의 몸통에 있는 오래된 갈색 판",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0494.md",
+   "snippet": "60세 남자가 앞가슴에 있는 갈색 반점이 거슬린다며 피부과에 왔다. 10년 전부터 있었고 최근 1년 사이 약간 두꺼워졌으며 옷에 쓸리면 가끔 가렵다. 출혈이나 궤양은 없었다. 몸통에 비슷한 작은 갈색 구진이 여러 개 있다. 앞가슴에 지름 약 1.5 cm 의 경계가 뚜렷하고 표면이 약간 오톨도톨하며 피부에 「붙여 놓은 듯한」 갈색·흑갈색 판이 있다. 병변의 더모스코피 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 색소성",
+   "text": "피부과 피부 — 중년 남성의 몸통에 있는 오래된 갈색 판 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9 60세 남자가 앞가슴에 있는 갈색 반점이 거슬린다며 피부과에 왔다. 10년 전부터 있었고 최근 1년 사이 약간 두꺼워졌으며 옷에 쓸리면 가끔 가렵다. 출혈이나 궤양은 없었다. 몸통에 비슷한 작은 갈색 구진이 여러 개 있다. 앞가슴에 지름 약 1.5 cm 의 경계가 뚜렷하고 표면이 약간 오톨도톨하며 피부에 「붙여 놓은 듯한」 갈색·흑갈색 판이 있다. 병변의 더모스코피 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 색소성 기저세포암 B. 복합 모반 C. 일광흑자 D. 지루각화증 E. 흑색종"
+  },
   {
    "id": "imaging-2026-0493",
    "type": "imaging",

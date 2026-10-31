@@ -2,6 +2,678 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0504",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 가끔 두근거리는 고령 여성",
+  "type": "심전도 처치 — 가끔 두근거리는 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "82세 여자가 한 달 전부터 가끔 가슴이 「툭」 하고 건너뛰는 느낌이 있어 내과에 왔다. 하루에 몇 번 몇 초씩 느끼고 일상생활에는 지장이 없다. 어지러움·실신·흉통·호흡곤란은 없다. 고혈압으로 암로디핀을 먹고 있고 저녁마다 녹차를 두 잔 마신다. 혈압 132/76 mmHg, 맥박 62회/분으로 가끔 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 마그네슘 2.0 mg/dL 이고 갑상샘자극호르몬은 정상이다. 심장초음파에서 좌심실 박출률 62 %, 좌심방 크기와 판막은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "안심시키고 카페인 등 유발 요인 줄이기",
+   "직접작용 경구 항응고제 시작",
+   "메토프롤롤 매일 복용 시작",
+   "아미오다론 매일 복용 시작",
+   "전극도자절제술 의뢰"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 리듬 스트립에서 바탕 리듬은 분당 약 60회의 동리듬이고, 사이사이에 예정보다 일찍 오는 박동이 있다(I·II 열의 2번째, aVF 열의 3번째 박동). 이 박동은 QRS 가 좁고 동박동과 모양이 같으며 뒤에 짧은 쉼이 따른다 — 심방 기외수축이다. 증상이 가볍고 구조적 심질환·전해질·갑상샘 이상이 없으므로, 양성임을 설명해 안심시키고 카페인·알코올·수면 부족 같은 유발 요인을 줄이는 것이 처치다. 심방세동이 아니므로 항응고 대상이 아니다.\n- 원리: <b>왜 대부분 치료하지 않는가</b>: 심방 기외수축은 건강한 고령자 24시간 기록에서 거의 모두 보일 만큼 흔하다. 심방 근육 한 곳의 자동능이 잠깐 앞서 발화하는 것이고, 정상 전도로를 타므로 혈역학적 영향이 거의 없다. 치료의 목표는 리듬을 없애는 것이 아니라 증상을 줄이는 것이어서, 증상이 가벼우면 설명과 유발 요인 조절이 가장 이득이 크고 해가 없다.<br> <b>왜 항응고를 하지 않는가</b>: 뇌졸중 위험을 높이는 것은 심방이 <b>떨기만 하고 수축하지 못해</b> 좌심방귀에 혈류가 고이는 심방세동이다. 심방 기외수축 사이에는 정상 심방 수축이 유지된다. CHA₂DS₂-VASc 점수는 심방세동(또는 조동)이 확인된 환자에게만 적용한다. 다만 기외수축이 매우 잦으면 나중에 심방세동이 생길 위험이 커지므로, 두근거림의 양상이 바뀌면 다시 기록한다.<br> <b>약을 쓸 때</b>: 증상이 생활을 방해하면 베타차단제나 비디하이드로피리딘 칼슘통로차단제를 먼저 쓴다. 아미오다론은 독성이 커서 양성 기외수축에는 쓰지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">안심·유발 요인 조절(정답)</th><th>직접작용 경구 항응고제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상 리듬</td><td><b>동리듬 사이의 단발 심방 기외수축</b></td><td>심방세동·심방조동</td></tr> <tr><td>심전도</td><td>동 P파가 있고, 조기 박동 뒤 다시 규칙적인 동리듬</td><td>P파 없음, RR 간격이 완전히 불규칙</td></tr> <tr><td>위험 평가</td><td>증상·구조적 심질환·유발 요인</td><td>CHA₂DS₂-VASc(이 환자라면 여성·75세 이상·고혈압 4점)</td></tr> <tr><td>해</td><td>거의 없음</td><td>82세에서 주요 출혈 위험</td></tr> </tbody></table> 「불규칙한 맥박 + 고령 + 고혈압」을 보고 항응고부터 떠올리지 않는다 — 리듬이 심방세동인지 먼저 확인한다.\n- 오답 이유:\n  - ② 직접작용 경구 항응고제는 심전도에서 P파가 없고 RR 이 완전히 불규칙한 심방세동이 확인되고 CHA₂DS₂-VASc 가 높을 때 정답이 된다.\n  - ③ 메토프롤롤은 안심과 유발 요인 조절에도 두근거림이 잦고 생활을 방해할 만큼 심할 때 증상 조절 약으로 정답이 될 수 있다.\n  - ④ 아미오다론은 양성 기외수축에는 쓰지 않고, 구조적 심질환이 있는 심실빈맥이나 다른 약이 실패한 심방세동 리듬 조절일 때 고려된다.\n  - ⑤ 전극도자절제술은 약물에도 증상이 심한 매우 잦은 단일 초점 기외수축이나 반복성 심방빈맥, 기외수축 유발 심근병증일 때 정답이 된다.\n- 함정: 고령·고혈압·불규칙한 맥박을 보고 항응고제를 고르는 것 — 동리듬 사이의 단발 심방 기외수축은 심방세동이 아니다.\n- 학습목표: 동리듬 사이의 단발 심방 기외수축을 읽고, 구조적 심질환·유발 질환이 없고 증상이 가벼우면 안심시키고 유발 요인을 줄이는 것이 처치이며 심방세동으로 오인해 항응고를 시작하지 않는다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 14 · Page RL, Joglar JA, Caldwell MA, et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13709 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립에서 바탕 리듬은 분당 약 60회의 동리듬이고, 사이사이에 예정보다 일찍 오는 박동이 있다(I·II 열의 2번째, aVF 열의 3번째 박동). 이 박동은 QRS 가 좁고 동박동과 모양이 같으며 뒤에 짧은 쉼이 따른다 — 심방 기외수축이다. 증상이 가볍고 구조적 심질환·전해질·갑상샘 이상이 없으므로, 양성임을 설명해 안심시키고 카페인·알코올·수면 부족 같은 유발 요인을 줄이는 것이 처치다. 심방세동이 아니므로 항응고 대상이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 대부분 치료하지 않는가</b>: 심방 기외수축은 건강한 고령자 24시간 기록에서 거의 모두 보일 만큼 흔하다. 심방 근육 한 곳의 자동능이 잠깐 앞서 발화하는 것이고, 정상 전도로를 타므로 혈역학적 영향이 거의 없다. 치료의 목표는 리듬을 없애는 것이 아니라 증상을 줄이는 것이어서, 증상이 가벼우면 설명과 유발 요인 조절이 가장 이득이 크고 해가 없다.<br> <b>왜 항응고를 하지 않는가</b>: 뇌졸중 위험을 높이는 것은 심방이 <b>떨기만 하고 수축하지 못해</b> 좌심방귀에 혈류가 고이는 심방세동이다. 심방 기외수축 사이에는 정상 심방 수축이 유지된다. CHA₂DS₂-VASc 점수는 심방세동(또는 조동)이 확인된 환자에게만 적용한다. 다만 기외수축이 매우 잦으면 나중에 심방세동이 생길 위험이 커지므로, 두근거림의 양상이 바뀌면 다시 기록한다.<br> <b>약을 쓸 때</b>: 증상이 생활을 방해하면 베타차단제나 비디하이드로피리딘 칼슘통로차단제를 먼저 쓴다. 아미오다론은 독성이 커서 양성 기외수축에는 쓰지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">안심·유발 요인 조절(정답)</th><th>직접작용 경구 항응고제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상 리듬</td><td><b>동리듬 사이의 단발 심방 기외수축</b></td><td>심방세동·심방조동</td></tr> <tr><td>심전도</td><td>동 P파가 있고, 조기 박동 뒤 다시 규칙적인 동리듬</td><td>P파 없음, RR 간격이 완전히 불규칙</td></tr> <tr><td>위험 평가</td><td>증상·구조적 심질환·유발 요인</td><td>CHA₂DS₂-VASc(이 환자라면 여성·75세 이상·고혈압 4점)</td></tr> <tr><td>해</td><td>거의 없음</td><td>82세에서 주요 출혈 위험</td></tr> </tbody></table> 「불규칙한 맥박 + 고령 + 고혈압」을 보고 항응고부터 떠올리지 않는다 — 리듬이 심방세동인지 먼저 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 직접작용 경구 항응고제는 심전도에서 P파가 없고 RR 이 완전히 불규칙한 심방세동이 확인되고 CHA₂DS₂-VASc 가 높을 때 정답이 된다.\n③ 메토프롤롤은 안심과 유발 요인 조절에도 두근거림이 잦고 생활을 방해할 만큼 심할 때 증상 조절 약으로 정답이 될 수 있다.\n④ 아미오다론은 양성 기외수축에는 쓰지 않고, 구조적 심질환이 있는 심실빈맥이나 다른 약이 실패한 심방세동 리듬 조절일 때 고려된다.\n⑤ 전극도자절제술은 약물에도 증상이 심한 매우 잦은 단일 초점 기외수축이나 반복성 심방빈맥, 기외수축 유발 심근병증일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고령·고혈압·불규칙한 맥박을 보고 항응고제를 고르는 것 — 동리듬 사이의 단발 심방 기외수축은 심방세동이 아니다."
+   },
+   {
+    "k": "학습목표",
+    "v": "동리듬 사이의 단발 심방 기외수축을 읽고, 구조적 심질환·유발 질환이 없고 증상이 가벼우면 안심시키고 유발 요인을 줄이는 것이 처치이며 심방세동으로 오인해 항응고를 시작하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 14 · Page RL, Joglar JA, Caldwell MA, et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13709 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "동리듬 사이의 단발 심방 기외수축이고 증상이 가벼우며 구조적 심질환·유발 질환이 없으면 안심시키고 유발 요인을 줄인다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "항응고는 심방세동·조동에서 뇌졸중을 막는 치료다 — 이 기록은 동 P파가 있는 동리듬에 조기 박동이 섞였을 뿐이다",
+   "steps": 3,
+   "chain": [
+    "영상: 동리듬 약 60회/분 사이의 조기 박동, QRS 좁고 동박동과 같은 모양 → 심방 기외수축",
+    "P파 있고 기외수축 뒤 다시 규칙적 동리듬 → 심방세동 아님 → 항응고 대상 아님",
+    "가벼운 증상 + 박출률·좌심방·전해질·갑상샘 정상 → 안심과 유발 요인 조절"
+   ],
+   "key": [
+    {
+     "item": "영상: 동리듬 사이에 일찍 오는 좁은 QRS 박동(동박동과 같은 모양)",
+     "why": "심방 기외수축",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 박출률 62 %",
+     "why": "구조적 심질환에 의한 기외수축 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘자극호르몬은 정상이다",
+     "why": "갑상샘중독증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "어지러움·실신·흉통·호흡곤란은 없다",
+     "why": "위험한 부정맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "일상생활에는 지장이 없다",
+     "why": "약물이 필요한 증상 수준이 아니다",
+     "also": []
+    },
+    {
+     "item": "저녁마다 녹차를 두 잔 마신다",
+     "why": "줄일 수 있는 카페인 유발 요인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압으로 암로디핀을 먹고 있고",
+     "why": "CHA₂DS₂-VASc 를 떠올리게 하지만 심방세동이 없으면 적용하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "동리듬 사이의 단발 심방 기외수축이다. 증상이 가볍고 심장 구조·전해질·갑상샘이 정상이므로 안심시키고 카페인 등 유발 요인을 줄인다 — 심방세동이 아니어서 항응고 대상이 아니다.",
+   "switch": {
+    "choice": "C",
+    "condition": "유발 요인을 줄였는데도 두근거림이 하루 종일 이어져 잠을 못 잘 정도라면 베타차단제로 증상을 조절한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0504.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/13000/#files-panel",
+   "asset_id": "PTBXL-13709",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13709"
+  },
+  "run_id": "20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0503",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 열과 옆구리 통증이 있는 고령 여성의 빠른 맥박",
+  "type": "심전도 판독 — 열과 옆구리 통증이 있는 고령 여성의 빠른 맥박",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-31",
+  "vignette": "67세 여자가 3일 전부터 열·오한과 오른쪽 옆구리 통증이 있고 오늘 기운이 없어 응급실에 왔다. 잘 먹지 못했다고 한다. 체온 38.9℃, 혈압 104/66 mmHg, 호흡 20회/분이다. 오른쪽 늑골척추각 압통이 있고 입안이 말라 있다. 심잡음은 들리지 않는다. 소변검사에서 백혈구가 많이 보이고 아질산염 양성이다. 혈청 칼륨 3.8 mEq/L 이다. 맥박이 빨라 12유도 심전도를 찍었고 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "가속 접합부 리듬",
+   "동빈맥",
+   "발작성 상심실빈맥",
+   "2:1 전도 심방조동",
+   "다소성 심방빈맥"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리듬 스트립의 QRS 간격이 약 3큰칸(0.57초)으로 규칙적이라 심박수는 분당 약 105회이고 QRS 는 좁다. II·III·aVF 에서 모든 QRS 앞에 같은 모양의 양성 P파가 있고 PR 간격이 일정하며 전기축은 정상이다 — 동방결절에서 나온 빠른 리듬, 곧 동빈맥이다(V4~V6 의 T파 평탄은 비특이 소견). 열과 탈수가 있는 급성 신우신염에서 생긴 생리적 반응이므로 리듬 자체를 낮추려 하지 말고 수액과 항생제로 원인을 치료한다.\n- 원리: <b>왜 P파의 모양과 방향이 결정적인가</b>: 동방결절은 우심방 위·바깥쪽에 있어, 거기서 시작한 흥분은 심방을 <b>위에서 아래로, 오른쪽에서 왼쪽으로</b> 퍼진다. 그래서 동 P파는 II·III·aVF 에서 양성, aVR 에서 음성이다. 이 모양의 P파가 모든 QRS 앞에 일정한 PR 로 있으면 리듬의 출발점은 동방결절이다 — 빠르기와 상관없이.<br> <b>왜 빨라졌는가</b>: 열은 체온 1℃ 오를 때마다 심박수를 약 10회 올리고, 탈수로 줄어든 1회 박출량을 보상하려 교감신경이 동방결절의 4상 탈분극 기울기를 가파르게 만든다. 따라서 동빈맥은 「진단」이 아니라 「신호」이고, 치료 대상은 열·저혈량·통증·빈혈·저산소증·폐색전증 같은 원인이다.<br> <b>왜 다른 빈맥과 헷갈리는가</b>: 심박수가 빨라지면 P파가 앞 박동의 T파에 가까워져 묻히기 쉽다. 그때는 리듬 스트립 전체에서 박동마다 P파가 같은 자리에 있는지, 심박수가 서서히 변하는지를 본다.\n- 비교: <table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">동빈맥(정답)</th><th>발작성 상심실빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심박수</td><td><b>대개 100~150, 원인에 따라 서서히 변함</b></td><td>대개 150~250, 갑자기 시작·멈춤</td></tr> <tr><td>P파</td><td>II·III·aVF 양성, 모든 QRS 앞, PR 일정</td><td>보이지 않거나 QRS 바로 뒤의 역행 P파(II 에서 음성)</td></tr> <tr><td>미주신경 자극·아데노신</td><td>잠깐 느려졌다 돌아온다</td><td>갑자기 끊긴다</td></tr> <tr><td>치료</td><td>원인 치료(수액·해열·항생제)</td><td>미주신경 자극 → 아데노신</td></tr> </tbody></table> P파가 QRS 앞에 바로 서 있으면 출발점은 동방결절이다 — 빠르다는 이유로 상심실빈맥이라 부르지 않는다.\n- 오답 이유:\n  - ① 가속 접합부 리듬은 심박수 60~100회에 P파가 없거나 QRS 앞뒤의 역행 P파로 보이고 흔히 디곡신 중독·심근경색 뒤에 생길 때 정답이 된다.\n  - ③ 발작성 상심실빈맥은 심박수가 150회 이상으로 갑자기 시작하고 P파가 보이지 않거나 QRS 바로 뒤의 역행 P파로 보일 때 정답이 된다.\n  - ④ 2:1 전도 심방조동은 심박수가 약 150회로 고정되고 II·III·aVF 에서 분당 300회 정도의 톱니 모양 조동파가 보일 때 정답이 된다.\n  - ⑤ 다소성 심방빈맥은 모양이 다른 P파가 세 가지 이상이고 PR·RR 간격이 불규칙하며 흔히 중증 폐질환 환자에서 보일 때 정답이 된다.\n- 함정: 빠른 좁은 QRS 빈맥을 모두 상심실빈맥으로 부르는 것 — II·III·aVF 의 양성 P파가 QRS 앞마다 일정하게 있으면 동빈맥이다.\n- 학습목표: 분당 100회를 조금 넘는 규칙적 좁은 QRS 빈맥에서 II·III·aVF 의 QRS 앞마다 양성 P파와 일정한 PR 을 확인해 동빈맥으로 읽고, 발작성 상심실빈맥·심방조동 2:1 과 가른다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 13 · Page RL, Joglar JA, Caldwell MA, et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1375 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립의 QRS 간격이 약 3큰칸(0.57초)으로 규칙적이라 심박수는 분당 약 105회이고 QRS 는 좁다. II·III·aVF 에서 모든 QRS 앞에 같은 모양의 양성 P파가 있고 PR 간격이 일정하며 전기축은 정상이다 — 동방결절에서 나온 빠른 리듬, 곧 동빈맥이다(V4~V6 의 T파 평탄은 비특이 소견). 열과 탈수가 있는 급성 신우신염에서 생긴 생리적 반응이므로 리듬 자체를 낮추려 하지 말고 수액과 항생제로 원인을 치료한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 P파의 모양과 방향이 결정적인가</b>: 동방결절은 우심방 위·바깥쪽에 있어, 거기서 시작한 흥분은 심방을 <b>위에서 아래로, 오른쪽에서 왼쪽으로</b> 퍼진다. 그래서 동 P파는 II·III·aVF 에서 양성, aVR 에서 음성이다. 이 모양의 P파가 모든 QRS 앞에 일정한 PR 로 있으면 리듬의 출발점은 동방결절이다 — 빠르기와 상관없이.<br> <b>왜 빨라졌는가</b>: 열은 체온 1℃ 오를 때마다 심박수를 약 10회 올리고, 탈수로 줄어든 1회 박출량을 보상하려 교감신경이 동방결절의 4상 탈분극 기울기를 가파르게 만든다. 따라서 동빈맥은 「진단」이 아니라 「신호」이고, 치료 대상은 열·저혈량·통증·빈혈·저산소증·폐색전증 같은 원인이다.<br> <b>왜 다른 빈맥과 헷갈리는가</b>: 심박수가 빨라지면 P파가 앞 박동의 T파에 가까워져 묻히기 쉽다. 그때는 리듬 스트립 전체에서 박동마다 P파가 같은 자리에 있는지, 심박수가 서서히 변하는지를 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">동빈맥(정답)</th><th>발작성 상심실빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심박수</td><td><b>대개 100~150, 원인에 따라 서서히 변함</b></td><td>대개 150~250, 갑자기 시작·멈춤</td></tr> <tr><td>P파</td><td>II·III·aVF 양성, 모든 QRS 앞, PR 일정</td><td>보이지 않거나 QRS 바로 뒤의 역행 P파(II 에서 음성)</td></tr> <tr><td>미주신경 자극·아데노신</td><td>잠깐 느려졌다 돌아온다</td><td>갑자기 끊긴다</td></tr> <tr><td>치료</td><td>원인 치료(수액·해열·항생제)</td><td>미주신경 자극 → 아데노신</td></tr> </tbody></table> P파가 QRS 앞에 바로 서 있으면 출발점은 동방결절이다 — 빠르다는 이유로 상심실빈맥이라 부르지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 가속 접합부 리듬은 심박수 60~100회에 P파가 없거나 QRS 앞뒤의 역행 P파로 보이고 흔히 디곡신 중독·심근경색 뒤에 생길 때 정답이 된다.\n③ 발작성 상심실빈맥은 심박수가 150회 이상으로 갑자기 시작하고 P파가 보이지 않거나 QRS 바로 뒤의 역행 P파로 보일 때 정답이 된다.\n④ 2:1 전도 심방조동은 심박수가 약 150회로 고정되고 II·III·aVF 에서 분당 300회 정도의 톱니 모양 조동파가 보일 때 정답이 된다.\n⑤ 다소성 심방빈맥은 모양이 다른 P파가 세 가지 이상이고 PR·RR 간격이 불규칙하며 흔히 중증 폐질환 환자에서 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빠른 좁은 QRS 빈맥을 모두 상심실빈맥으로 부르는 것 — II·III·aVF 의 양성 P파가 QRS 앞마다 일정하게 있으면 동빈맥이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분당 100회를 조금 넘는 규칙적 좁은 QRS 빈맥에서 II·III·aVF 의 QRS 앞마다 양성 P파와 일정한 PR 을 확인해 동빈맥으로 읽고, 발작성 상심실빈맥·심방조동 2:1 과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 13 · Page RL, Joglar JA, Caldwell MA, et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1375 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "분당 약 105회의 규칙적 좁은 QRS 빈맥에서 II·III·aVF 의 양성 P파가 QRS 앞마다 일정한 PR 로 있으면 동빈맥이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "발작성 상심실빈맥은 대개 150회 이상이고 P파가 안 보이거나 역행성이다 — 이 기록은 약 105회이고 정상 동 P파가 보인다",
+   "steps": 2,
+   "chain": [
+    "영상: 규칙적 좁은 QRS, 약 105회/분 + II·III·aVF 에서 QRS 앞마다 양성 P파, PR 일정 → 동방결절에서 나온 빈맥",
+    "열·탈수가 있는 급성 신우신염 → 생리적 동빈맥(원인 치료 대상)"
+   ],
+   "key": [
+    {
+     "item": "영상: II·III·aVF 에서 모든 QRS 앞의 양성 P파와 일정한 PR",
+     "why": "리듬의 출발점이 동방결절이다",
+     "also": []
+    },
+    {
+     "item": "영상: 약 105회/분의 규칙적인 좁은 QRS",
+     "why": "상심실성 빈맥 가운데 동빈맥 범위의 심박수",
+     "also": []
+    },
+    {
+     "item": "체온 38.9℃",
+     "why": "동빈맥의 흔한 원인",
+     "also": []
+    },
+    {
+     "item": "입안이 말라 있다",
+     "why": "탈수 — 보상성 빈맥",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 3.8 mEq/L",
+     "why": "전해질 이상에 의한 부정맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "아질산염 양성",
+     "why": "신우신염 진단의 근거로 판독 자체에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "약 105회/분의 규칙적 좁은 QRS 빈맥이고 II·III·aVF 에 정상 동 P파가 QRS 앞마다 있다. 열과 탈수에 의한 동빈맥이므로 원인을 치료한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "P파 없이 심박수 180회/분의 규칙적 좁은 QRS 빈맥이 갑자기 시작했다면 발작성 상심실빈맥이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0503.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01375",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1375"
+  },
+  "run_id": "20261031T202307Z_일일심전도_2026-11-01_2units_2q_c53ccdbf",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0496",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "호흡기 — 산소를 늘려도 숨찬 바이러스 폐렴",
+  "type": "호흡기 — 산소를 늘려도 숨찬 바이러스 폐렴",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-31",
+  "vignette": "40세 남자가 5일 전부터 열과 기침이 있었고 오늘 숨이 많이 차서 응급실에 왔다. 어제 SARS-CoV-2 신속항원검사가 양성이었다. 비만(체질량지수 34 kg/m²)이 있고 다른 병력은 없다. 체온 38.6℃, 혈압 128/80 mmHg, 맥박 108회/분, 호흡 30회/분이다. 의식은 명료하고 문장으로 말할 수 있다. 비강 캐뉼라로 산소 6 L/분을 주는데도 산소포화도는 88 % 이다. 동맥혈가스(산소 투여 중) pH 7.47, PaCO₂ 32 mmHg, PaO₂ 56 mmHg 이다. 이미 덱사메타손과 렘데시비르를 시작하였다. 흉부 X선은 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "푸로세미드 정맥 주사",
+   "고유량 비강 캐뉼라 산소 요법",
+   "즉시 기관삽관 후 기계환기",
+   "체외막산소공급(ECMO)",
+   "벤투리 마스크 산소 28 %"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 아래·가운데폐야에 바깥쪽과 아래쪽이 더 짙은 흐릿한 간유리·반점 음영이 있고 폐 용적이 작다 — 양측 바이러스 폐렴이다. 저유량 산소 6 L/분으로도 산소포화도 88 % 인 급성 저산소성 호흡부전이지만 의식이 명료하고 말할 수 있으며 혈압이 안정적이고 PaCO₂ 가 낮아 환기는 유지된다. 이때는 고유량 비강 캐뉼라로 산소를 올려 기관삽관을 줄일 수 있는지 먼저 본다. 1~2시간 안에 호흡수·산소화가 나아지지 않거나 의식 저하·피로가 생기면 지체 없이 삽관한다.\n- 원리: <b>왜 고유량 비강 캐뉼라가 먼저인가</b>: 숨찬 환자는 분당 흡기 유량이 30~60 L 까지 올라 저유량 캐뉼라(최대 약 6 L/분)의 산소가 바깥 공기로 희석되어 실제 흡입 산소 농도가 낮아진다. 고유량 장치는 가온·가습한 산소를 최대 60 L/분으로 흘려 흡기 유량을 넘어서므로 흡입 산소 농도를 거의 설정값(최대 100 %)대로 전달하고, 코인두의 사강을 씻어 내며 약간의 호기말 양압을 만든다.<br> <b>왜 아직 삽관하지 않는가</b>: 삽관의 근거는 산소포화도 숫자 하나가 아니라 <b>기도 보호 불능·의식 저하·환기 부전(PaCO₂ 상승)·혈역학 불안정·호흡근 피로</b>다. 이 환자는 의식이 명료하고 과호흡으로 PaCO₂ 가 낮다. 고유량 산소는 코로나19 저산소성 호흡부전에서 삽관을 줄였다(RECOVERY-RS 는 CPAP, HENIVOT 등).<br> <b>왜 지켜봐야 하는가</b>: 고유량 산소가 실패의 신호를 가려 삽관이 늦어지면 예후가 나빠진다 — ROX 지수(산소포화도/흡입 산소 농도 ÷ 호흡수)로 재평가한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고유량 비강 캐뉼라(정답)</th><th>즉시 기관삽관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>의식·기도</td><td><b>명료, 스스로 기도 유지</b></td><td>의식 저하, 기도 보호 불능</td></tr> <tr><td>환기</td><td>PaCO₂ 정상 또는 낮음</td><td>PaCO₂ 상승·호흡산증</td></tr> <tr><td>혈역학·피로</td><td>안정, 문장으로 말함</td><td>쇼크, 보조호흡근 탈진·역설호흡</td></tr> <tr><td>재평가</td><td>1~2시간 뒤 ROX 지수·호흡수</td><td>—</td></tr> </tbody></table> 산소포화도가 낮다는 것만으로 삽관하지 않는다 — 의식·환기·혈역학 중 하나라도 무너지면 삽관이다.\n- 오답 이유:\n  - ① 푸로세미드는 심장비대·흉수·커얼리 B선과 경정맥 팽대 등 체액 과다에 의한 심인성 폐부종일 때 정답이 된다.\n  - ③ 즉시 기관삽관은 의식 저하·PaCO₂ 상승·쇼크·호흡근 피로가 있거나 고유량 산소 1~2시간 뒤에도 악화할 때 정답이 된다.\n  - ④ 체외막산소공급은 기계환기와 복와위에도 PaO₂/FiO₂ 가 50~80 mmHg 미만으로 지속되는 중증 ARDS 의 구제 치료일 때 정답이 된다.\n  - ⑤ 벤투리 마스크 28 % 는 고탄산혈증 위험이 있는 COPD 악화에서 정해진 낮은 농도를 주어야 할 때 정답이 되며, 6 L/분 캐뉼라보다 오히려 산소가 적다.\n- 함정: 산소포화도 88 % 라는 숫자만 보고 즉시 삽관을 고르는 것 — 의식이 명료하고 PaCO₂ 가 낮으면 고유량 산소를 먼저 시도한다.\n- 학습목표: 양측 폐 음영이 있는 바이러스 폐렴에서 저유량 산소로 산소포화도를 유지하지 못하지만 의식이 명료하고 혈역학이 안정된 급성 저산소성 호흡부전에 고유량 비강 캐뉼라 산소를 먼저 적용한다\n- 근거·출처: Frat JP, Thille AW, Mercat A, et al. High-flow oxygen through nasal cannula in acute hypoxemic respiratory failure. N Engl J Med 2015;372:2185-2196 · Rochwerg B, Einav S, Chaudhuri D, et al. The role for high flow nasal cannula as a respiratory support strategy in adults: a clinical practice guideline. Intensive Care Med 2020;46:2226-2237\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …10113736 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 아래·가운데폐야에 바깥쪽과 아래쪽이 더 짙은 흐릿한 간유리·반점 음영이 있고 폐 용적이 작다 — 양측 바이러스 폐렴이다. 저유량 산소 6 L/분으로도 산소포화도 88 % 인 급성 저산소성 호흡부전이지만 의식이 명료하고 말할 수 있으며 혈압이 안정적이고 PaCO₂ 가 낮아 환기는 유지된다. 이때는 고유량 비강 캐뉼라로 산소를 올려 기관삽관을 줄일 수 있는지 먼저 본다. 1~2시간 안에 호흡수·산소화가 나아지지 않거나 의식 저하·피로가 생기면 지체 없이 삽관한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 고유량 비강 캐뉼라가 먼저인가</b>: 숨찬 환자는 분당 흡기 유량이 30~60 L 까지 올라 저유량 캐뉼라(최대 약 6 L/분)의 산소가 바깥 공기로 희석되어 실제 흡입 산소 농도가 낮아진다. 고유량 장치는 가온·가습한 산소를 최대 60 L/분으로 흘려 흡기 유량을 넘어서므로 흡입 산소 농도를 거의 설정값(최대 100 %)대로 전달하고, 코인두의 사강을 씻어 내며 약간의 호기말 양압을 만든다.<br> <b>왜 아직 삽관하지 않는가</b>: 삽관의 근거는 산소포화도 숫자 하나가 아니라 <b>기도 보호 불능·의식 저하·환기 부전(PaCO₂ 상승)·혈역학 불안정·호흡근 피로</b>다. 이 환자는 의식이 명료하고 과호흡으로 PaCO₂ 가 낮다. 고유량 산소는 코로나19 저산소성 호흡부전에서 삽관을 줄였다(RECOVERY-RS 는 CPAP, HENIVOT 등).<br> <b>왜 지켜봐야 하는가</b>: 고유량 산소가 실패의 신호를 가려 삽관이 늦어지면 예후가 나빠진다 — ROX 지수(산소포화도/흡입 산소 농도 ÷ 호흡수)로 재평가한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고유량 비강 캐뉼라(정답)</th><th>즉시 기관삽관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>의식·기도</td><td><b>명료, 스스로 기도 유지</b></td><td>의식 저하, 기도 보호 불능</td></tr> <tr><td>환기</td><td>PaCO₂ 정상 또는 낮음</td><td>PaCO₂ 상승·호흡산증</td></tr> <tr><td>혈역학·피로</td><td>안정, 문장으로 말함</td><td>쇼크, 보조호흡근 탈진·역설호흡</td></tr> <tr><td>재평가</td><td>1~2시간 뒤 ROX 지수·호흡수</td><td>—</td></tr> </tbody></table> 산소포화도가 낮다는 것만으로 삽관하지 않는다 — 의식·환기·혈역학 중 하나라도 무너지면 삽관이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 푸로세미드는 심장비대·흉수·커얼리 B선과 경정맥 팽대 등 체액 과다에 의한 심인성 폐부종일 때 정답이 된다.\n③ 즉시 기관삽관은 의식 저하·PaCO₂ 상승·쇼크·호흡근 피로가 있거나 고유량 산소 1~2시간 뒤에도 악화할 때 정답이 된다.\n④ 체외막산소공급은 기계환기와 복와위에도 PaO₂/FiO₂ 가 50~80 mmHg 미만으로 지속되는 중증 ARDS 의 구제 치료일 때 정답이 된다.\n⑤ 벤투리 마스크 28 % 는 고탄산혈증 위험이 있는 COPD 악화에서 정해진 낮은 농도를 주어야 할 때 정답이 되며, 6 L/분 캐뉼라보다 오히려 산소가 적다."
+   },
+   {
+    "k": "함정",
+    "v": "산소포화도 88 % 라는 숫자만 보고 즉시 삽관을 고르는 것 — 의식이 명료하고 PaCO₂ 가 낮으면 고유량 산소를 먼저 시도한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "양측 폐 음영이 있는 바이러스 폐렴에서 저유량 산소로 산소포화도를 유지하지 못하지만 의식이 명료하고 혈역학이 안정된 급성 저산소성 호흡부전에 고유량 비강 캐뉼라 산소를 먼저 적용한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Frat JP, Thille AW, Mercat A, et al. High-flow oxygen through nasal cannula in acute hypoxemic respiratory failure. N Engl J Med 2015;372:2185-2196 · Rochwerg B, Einav S, Chaudhuri D, et al. The role for high flow nasal cannula as a respiratory support strategy in adults: a clinical practice guideline. Intensive Care Med 2020;46:2226-2237 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …10113736 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "저유량 산소로 산소포화도를 유지하지 못하는 급성 저산소성 호흡부전이라도 의식이 명료하고 환기·혈역학이 유지되면 고유량 비강 캐뉼라 산소를 먼저 적용한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "삽관의 근거는 의식 저하·PaCO₂ 상승·혈역학 불안정·호흡근 피로다 — 이 환자는 의식이 명료하고 PaCO₂ 32 mmHg 다",
+   "steps": 2,
+   "chain": [
+    "영상: 양측 바깥쪽·아래쪽 우세 간유리 음영 + 저유량 산소 6 L/분에도 산소포화도 88 % → 바이러스 폐렴의 급성 저산소성 호흡부전",
+    "의식 명료·PaCO₂ 낮음·혈압 안정 → 삽관 기준 없음 → 고유량 비강 캐뉼라"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 아래·가운데폐야의 흐릿한 간유리·반점 음영",
+     "why": "양측 바이러스 폐렴 — 산소화 장애의 원인",
+     "also": []
+    },
+    {
+     "item": "산소 6 L/분을 주는데도 산소포화도는 88 %",
+     "why": "저유량 장치의 한계 — 산소 보조를 올려야 한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "의식은 명료하고 문장으로 말할 수 있다",
+     "why": "기도 보호·피로 측면에서 아직 삽관 기준이 아니다",
+     "also": []
+    },
+    {
+     "item": "PaCO₂ 32 mmHg",
+     "why": "환기 부전이 없다 — 삽관 쪽 근거가 아니다",
+     "also": []
+    },
+    {
+     "item": "혈압 128/80 mmHg",
+     "why": "혈역학이 안정적이다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "이미 덱사메타손과 렘데시비르를 시작하였다",
+     "why": "약물 치료는 끝났고 물음은 호흡 보조다",
+     "also": []
+    },
+    {
+     "item": "비만(체질량지수 34 kg/m²)",
+     "why": "중증화 위험인자이지만 처치 순서를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "양측 바이러스 폐렴으로 저유량 산소에도 저산소혈증이 있지만 의식·환기·혈역학이 유지된다. 고유량 비강 캐뉼라 산소를 먼저 적용하고 1~2시간 뒤 재평가한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "의식이 처지고 PaCO₂ 가 52 mmHg 로 오르거나 고유량 산소 2시간 뒤에도 호흡수 35회/분 이상이 지속되면 기관삽관한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0496.png",
+   "caption": "이동식 전후면 흉부 X선, 축소만 (TCIA, CC BY 4.0 — 크롭·보정 없음, 심전도 전극이 보임)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1513304685454593742477410113736",
+   "asset_id": "TCIA-COVID19_AR-64786682725364",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …10113736"
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0495",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "순환기 — 고령 여성의 불규칙한 맥박과 묶여 오는 박동",
+  "type": "순환기 — 고령 여성의 불규칙한 맥박과 묶여 오는 박동",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-31",
+  "vignette": "A 74-year-old woman comes to the physician because of a sensation of skipped heartbeats for 3 weeks. She has had no chest pain, dizziness, or syncope. She has hypertension treated with hydrochlorothiazide and drinks two cups of coffee daily. Pulse is 64/min and irregular, with a pattern that repeats every third beat; blood pressure is 138/82 mm Hg. Cardiac examination shows no murmurs. Serum potassium is 3.9 mEq/L, and TSH is within the reference range. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Second-degree atrioventricular block, Mobitz type I",
+   "Sinus arrhythmia",
+   "Atrial flutter with variable conduction",
+   "Premature atrial contractions in a trigeminal pattern",
+   "Premature ventricular contractions in a trigeminal pattern"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: In the lead II rhythm strip, two sinus beats are followed by one early beat, and the cycle repeats every third beat (trigeminy). Each early beat is preceded by an early P wave and has a narrow QRS complex identical to the sinus beats, followed by a pause. A premature narrow beat with its own early P wave arises in the atria: premature atrial contractions occurring in a trigeminal pattern. PR intervals of the sinus beats are constant, and no P wave is left without a QRS.\n- 원리: <b>Why the QRS stays narrow</b>: an impulse from an ectopic atrial focus still reaches the ventricles through the AV node and His–Purkinje system, so ventricular activation is the same as in sinus rhythm — a narrow QRS that looks like the sinus beats. A ventricular ectopic beat bypasses this conduction system and spreads slowly through muscle, making the QRS wide and bizarre.<br> <b>Why there is a pause after the early beat</b>: the premature atrial impulse enters and resets the sinus node, so the next sinus beat comes one sinus cycle after the PAC — the pause is usually <b>less than compensatory</b>. A PVC usually does not reset the sinus node, giving a fully compensatory pause.<br> <b>Why \"grouped beating\" is not always AV block</b>: any repeating 2:1 or 3:1 pattern of early beats groups the QRS complexes. Wenckebach groups beats by <i>dropping</i> a QRS after progressive PR prolongation; trigeminy groups them by <i>adding</i> an early beat.\n- 비교: <table><thead><tr><th style=\"width:24%\">Look at</th><th style=\"width:38%\">PACs in trigeminy (answer)</th><th>Mobitz type I block (closest distractor)</th></tr></thead><tbody> <tr><td>Third beat of the group</td><td><b>Comes early, with its own early P wave</b></td><td>Absent — a P wave appears with no QRS after it</td></tr> <tr><td>PR interval</td><td>Constant in sinus beats</td><td>Lengthens beat by beat until the dropped QRS</td></tr> <tr><td>Pause</td><td>Follows an early beat</td><td>Contains a non-conducted P wave</td></tr> <tr><td>QRS width</td><td>Narrow, same as sinus</td><td>Narrow (block in the AV node)</td></tr> </tbody></table> Ask whether the irregularity is from an extra early beat or from a missing beat — then search the pause for a lone P wave.\n- 오답 이유:\n  - (A) Mobitz type I block would be correct if the PR interval lengthened progressively and a P wave inside each pause failed to conduct to the ventricles.\n  - (B) Sinus arrhythmia would be correct if the P waves were all identical sinus P waves and the rate rose and fell gradually with respiration rather than abruptly.\n  - (C) Atrial flutter with variable conduction would be correct if sawtooth flutter waves at about 300/min replaced the discrete P waves in II, III, and aVF.\n  - (E) PVCs in a trigeminal pattern would be correct if every third beat were wide and bizarre without a preceding early P wave and with a discordant T wave.\n- 함정: Calling grouped beating Wenckebach — here the third beat arrives early with its own P wave instead of dropping out.\n- 학습목표: 리듬 스트립에서 동박동 2개마다 일찍 온 P파를 가진 좁은 QRS 조기 박동이 되풀이되는 것을 심방 기외수축 3단맥으로 읽고, 묶여 오는 박동을 만드는 Wenckebach 방실차단과 가른다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 14 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 251\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8945 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "In the lead II rhythm strip, two sinus beats are followed by one early beat, and the cycle repeats every third beat (trigeminy). Each early beat is preceded by an early P wave and has a narrow QRS complex identical to the sinus beats, followed by a pause. A premature narrow beat with its own early P wave arises in the atria: premature atrial contractions occurring in a trigeminal pattern. PR intervals of the sinus beats are constant, and no P wave is left without a QRS."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the QRS stays narrow</b>: an impulse from an ectopic atrial focus still reaches the ventricles through the AV node and His–Purkinje system, so ventricular activation is the same as in sinus rhythm — a narrow QRS that looks like the sinus beats. A ventricular ectopic beat bypasses this conduction system and spreads slowly through muscle, making the QRS wide and bizarre.<br> <b>Why there is a pause after the early beat</b>: the premature atrial impulse enters and resets the sinus node, so the next sinus beat comes one sinus cycle after the PAC — the pause is usually <b>less than compensatory</b>. A PVC usually does not reset the sinus node, giving a fully compensatory pause.<br> <b>Why \"grouped beating\" is not always AV block</b>: any repeating 2:1 or 3:1 pattern of early beats groups the QRS complexes. Wenckebach groups beats by <i>dropping</i> a QRS after progressive PR prolongation; trigeminy groups them by <i>adding</i> an early beat."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Look at</th><th style=\"width:38%\">PACs in trigeminy (answer)</th><th>Mobitz type I block (closest distractor)</th></tr></thead><tbody> <tr><td>Third beat of the group</td><td><b>Comes early, with its own early P wave</b></td><td>Absent — a P wave appears with no QRS after it</td></tr> <tr><td>PR interval</td><td>Constant in sinus beats</td><td>Lengthens beat by beat until the dropped QRS</td></tr> <tr><td>Pause</td><td>Follows an early beat</td><td>Contains a non-conducted P wave</td></tr> <tr><td>QRS width</td><td>Narrow, same as sinus</td><td>Narrow (block in the AV node)</td></tr> </tbody></table> Ask whether the irregularity is from an extra early beat or from a missing beat — then search the pause for a lone P wave."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Mobitz type I block would be correct if the PR interval lengthened progressively and a P wave inside each pause failed to conduct to the ventricles.\n(B) Sinus arrhythmia would be correct if the P waves were all identical sinus P waves and the rate rose and fell gradually with respiration rather than abruptly.\n(C) Atrial flutter with variable conduction would be correct if sawtooth flutter waves at about 300/min replaced the discrete P waves in II, III, and aVF.\n(E) PVCs in a trigeminal pattern would be correct if every third beat were wide and bizarre without a preceding early P wave and with a discordant T wave."
+   },
+   {
+    "k": "함정",
+    "v": "Calling grouped beating Wenckebach — here the third beat arrives early with its own P wave instead of dropping out."
+   },
+   {
+    "k": "학습목표",
+    "v": "리듬 스트립에서 동박동 2개마다 일찍 온 P파를 가진 좁은 QRS 조기 박동이 되풀이되는 것을 심방 기외수축 3단맥으로 읽고, 묶여 오는 박동을 만드는 Wenckebach 방실차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 14 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 251 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8945 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "동박동 두 개마다 일찍 온 P파를 가진 좁은 QRS 조기 박동이 되풀이되면 심방 기외수축 3단맥이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "Wenckebach 는 PR 이 점점 길어지다 P파 뒤 QRS 가 빠진다 — 이 기록은 PR 이 일정하고 셋째 박동이 빠지지 않고 일찍 온다",
+   "steps": 2,
+   "chain": [
+    "영상: 셋째 박동마다 조기 박동 + 그 앞의 일찍 온 P파 + 쉼 안에 홀로 남은 P파 없음 → 박동이 더해진 것(차단 아님)",
+    "조기 박동의 QRS 가 좁고 동박동과 같은 모양 → 심방 기외수축 3단맥"
+   ],
+   "key": [
+    {
+     "item": "영상: II 리듬 스트립에서 동박동 2개 뒤 조기 박동 1개가 되풀이",
+     "why": "3단맥 — 규칙적으로 묶인 맥박의 원인",
+     "also": []
+    },
+    {
+     "item": "영상: 조기 박동 앞의 일찍 온 P파와 좁은 QRS",
+     "why": "심방에서 시작해 정상 전도로를 탄 박동",
+     "also": []
+    },
+    {
+     "item": "a pattern that repeats every third beat",
+     "why": "진찰에서 이미 3박동 주기가 보인다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum potassium is 3.9 mEq/L",
+     "why": "이뇨제 복용 중이지만 저칼륨혈증에 의한 기외수축 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "TSH is within the reference range",
+     "why": "갑상샘중독증에 의한 심방 이소성 박동 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "drinks two cups of coffee daily",
+     "why": "흔한 배경이며 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "셋째 박동마다 일찍 온 P파를 가진 좁은 QRS 조기 박동이 오고 PR 이 일정하다. 박동이 빠진 것이 아니라 더해진 것이므로 Wenckebach 가 아니라 심방 기외수축 3단맥이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "셋째 박동이 넓고 기이하며 앞에 P파가 없고 T파가 QRS 와 반대 방향이라면 심실 기외수축 3단맥이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0495.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/08000/#files-panel",
+   "asset_id": "PTBXL-08945",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8945"
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0494",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "피부 — 중년 남성의 몸통에 있는 오래된 갈색 판",
+  "type": "피부 — 중년 남성의 몸통에 있는 오래된 갈색 판",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-31",
+  "vignette": "60세 남자가 앞가슴에 있는 갈색 반점이 거슬린다며 피부과에 왔다. 10년 전부터 있었고 최근 1년 사이 약간 두꺼워졌으며 옷에 쓸리면 가끔 가렵다. 출혈이나 궤양은 없었다. 몸통에 비슷한 작은 갈색 구진이 여러 개 있다. 앞가슴에 지름 약 1.5 cm 의 경계가 뚜렷하고 표면이 약간 오톨도톨하며 피부에 「붙여 놓은 듯한」 갈색·흑갈색 판이 있다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "색소성 기저세포암",
+   "복합 모반",
+   "일광흑자",
+   "지루각화증",
+   "흑색종"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 더모스코피에서 병변 경계가 뚜렷하고 가장자리가 좀먹은 듯하며, 안에 여러 개의 둥근 흰 점(비립종 유사 낭종)과 갈색 각질 마개가 찬 구멍(면포 유사 개구부), 뇌회 모양 고랑이 보인다. 색소 그물은 없다 — 표피가 두꺼워지며 각질이 갇히는 비멜라닌세포 병변, 곧 지루각화증의 소견이다. 임상적으로도 오래된, 「붙여 놓은 듯한」 오톨도톨한 판이고 몸통에 비슷한 병변이 여럿이다. 중앙의 청회색 구역은 흑색종을 떠올리게 하지만, 여러 개의 비립종 유사 낭종과 면포 유사 개구부가 함께 있으면 지루각화증이 먼저다(이 병변은 조직으로 확정되었다).\n- 원리: <b>왜 흰 점과 갈색 구멍이 생기는가</b>: 지루각화증은 표피 기저양 각질세포가 위로 쌓이며 두꺼워지는 양성 종양이다. 두꺼워진 표피 안에 각질이 동그랗게 갇히면 <b>각질 가성낭종</b>이 되어 더모스코피에서 하얗게 빛나는 둥근 점(비립종 유사 낭종)으로 보이고, 표면으로 열린 각질 마개는 산화된 각질 때문에 갈색·흑색 구멍(면포 유사 개구부)으로 보인다. 표면의 이랑과 고랑은 뇌회 모양을 만든다.<br> <b>왜 색소 그물이 없는가</b>: 색소 그물은 표피 능선을 따라 늘어선 멜라닌세포의 멜라닌이 그리는 무늬다. 지루각화증은 멜라닌세포가 아니라 각질세포가 증식하는 병변이라 그물 무늬를 만들지 않는다 — 그래서 더모스코피의 첫 질문은 「멜라닌세포 병변인가」이고, 그물·소구·줄무늬가 없고 각질 구조가 보이면 비멜라닌세포 쪽으로 간다.<br> <b>왜 청회색이 있어도 되는가</b>: 두꺼운 각질과 깊은 멜라닌 때문에 지루각화증도 청회색으로 보일 수 있다. 판단은 한 소견이 아니라 소견의 묶음으로 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">지루각화증(정답)</th><th>흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포 기원</td><td>각질세포 — 비멜라닌세포</td><td>멜라닌세포</td></tr> <tr><td>특징 구조</td><td><b>비립종 유사 낭종 · 면포 유사 개구부 · 뇌회 모양</b></td><td>비정형 색소 그물 · 불규칙 줄무늬 · 청백색 베일 · 퇴행 구역</td></tr> <tr><td>경계</td><td>뚜렷하고 좀먹은 듯함 — 「붙여 놓은」 모양</td><td>불규칙하고 비대칭, 주변으로 번져 흐려짐</td></tr> <tr><td>경과</td><td>수년간 천천히, 여러 개</td><td>최근의 변화, 「미운 오리 새끼」 하나</td></tr> </tbody></table> 각질 구조가 여럿 보이면 지루각화증, 멜라닌세포 구조가 비정형이면 흑색종이다 — 둘 다 애매하면 절제해 조직으로 확인한다.\n- 오답 이유:\n  - ① 색소성 기저세포암은 색소 그물이 없으면서 나무가지 모양 혈관, 청회색 난형 둥지, 잎사귀 모양 구조, 궤양이 보일 때 정답이 된다.\n  - ② 복합 모반은 대칭적이고 규칙적인 색소 그물이나 고른 소구가 보이고 표면이 매끈하며 각질 구조가 없을 때 정답이 된다.\n  - ③ 일광흑자는 얼굴·손등의 납작한 연갈색 반으로 지문 모양 선이나 고른 그물이 보이고 두께·각질 마개가 없을 때 정답이 된다.\n  - ⑤ 흑색종은 비정형 색소 그물·불규칙한 줄무늬·청백색 베일이 있고 각질 구조 없이 최근 크기·색이 빠르게 바뀐 단일 병변일 때 정답이 된다.\n- 함정: 중앙의 청회색만 보고 흑색종을 고르는 것 — 비립종 유사 낭종과 면포 유사 개구부가 여럿 있으면 지루각화증이 먼저다.\n- 학습목표: 더모스코피에서 비립종 유사 낭종·면포 유사 개구부·뇌회 모양 고랑과 뚜렷한 좀먹은 경계를 지루각화증 소견으로 읽고 흑색종과 가른다\n- 근거·출처: Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Elsevier; 2018. Chapter 109: Benign Epithelial Tumors and Proliferations · Marghoob AA, Malvehy J, Braun RP. Atlas of Dermoscopy, 2nd ed. CRC Press; 2012\n\n## 출처\n- ISIC Archive ISIC_0001144 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 병변 경계가 뚜렷하고 가장자리가 좀먹은 듯하며, 안에 여러 개의 둥근 흰 점(비립종 유사 낭종)과 갈색 각질 마개가 찬 구멍(면포 유사 개구부), 뇌회 모양 고랑이 보인다. 색소 그물은 없다 — 표피가 두꺼워지며 각질이 갇히는 비멜라닌세포 병변, 곧 지루각화증의 소견이다. 임상적으로도 오래된, 「붙여 놓은 듯한」 오톨도톨한 판이고 몸통에 비슷한 병변이 여럿이다. 중앙의 청회색 구역은 흑색종을 떠올리게 하지만, 여러 개의 비립종 유사 낭종과 면포 유사 개구부가 함께 있으면 지루각화증이 먼저다(이 병변은 조직으로 확정되었다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 흰 점과 갈색 구멍이 생기는가</b>: 지루각화증은 표피 기저양 각질세포가 위로 쌓이며 두꺼워지는 양성 종양이다. 두꺼워진 표피 안에 각질이 동그랗게 갇히면 <b>각질 가성낭종</b>이 되어 더모스코피에서 하얗게 빛나는 둥근 점(비립종 유사 낭종)으로 보이고, 표면으로 열린 각질 마개는 산화된 각질 때문에 갈색·흑색 구멍(면포 유사 개구부)으로 보인다. 표면의 이랑과 고랑은 뇌회 모양을 만든다.<br> <b>왜 색소 그물이 없는가</b>: 색소 그물은 표피 능선을 따라 늘어선 멜라닌세포의 멜라닌이 그리는 무늬다. 지루각화증은 멜라닌세포가 아니라 각질세포가 증식하는 병변이라 그물 무늬를 만들지 않는다 — 그래서 더모스코피의 첫 질문은 「멜라닌세포 병변인가」이고, 그물·소구·줄무늬가 없고 각질 구조가 보이면 비멜라닌세포 쪽으로 간다.<br> <b>왜 청회색이 있어도 되는가</b>: 두꺼운 각질과 깊은 멜라닌 때문에 지루각화증도 청회색으로 보일 수 있다. 판단은 한 소견이 아니라 소견의 묶음으로 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">지루각화증(정답)</th><th>흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포 기원</td><td>각질세포 — 비멜라닌세포</td><td>멜라닌세포</td></tr> <tr><td>특징 구조</td><td><b>비립종 유사 낭종 · 면포 유사 개구부 · 뇌회 모양</b></td><td>비정형 색소 그물 · 불규칙 줄무늬 · 청백색 베일 · 퇴행 구역</td></tr> <tr><td>경계</td><td>뚜렷하고 좀먹은 듯함 — 「붙여 놓은」 모양</td><td>불규칙하고 비대칭, 주변으로 번져 흐려짐</td></tr> <tr><td>경과</td><td>수년간 천천히, 여러 개</td><td>최근의 변화, 「미운 오리 새끼」 하나</td></tr> </tbody></table> 각질 구조가 여럿 보이면 지루각화증, 멜라닌세포 구조가 비정형이면 흑색종이다 — 둘 다 애매하면 절제해 조직으로 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 색소성 기저세포암은 색소 그물이 없으면서 나무가지 모양 혈관, 청회색 난형 둥지, 잎사귀 모양 구조, 궤양이 보일 때 정답이 된다.\n② 복합 모반은 대칭적이고 규칙적인 색소 그물이나 고른 소구가 보이고 표면이 매끈하며 각질 구조가 없을 때 정답이 된다.\n③ 일광흑자는 얼굴·손등의 납작한 연갈색 반으로 지문 모양 선이나 고른 그물이 보이고 두께·각질 마개가 없을 때 정답이 된다.\n⑤ 흑색종은 비정형 색소 그물·불규칙한 줄무늬·청백색 베일이 있고 각질 구조 없이 최근 크기·색이 빠르게 바뀐 단일 병변일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "중앙의 청회색만 보고 흑색종을 고르는 것 — 비립종 유사 낭종과 면포 유사 개구부가 여럿 있으면 지루각화증이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 비립종 유사 낭종·면포 유사 개구부·뇌회 모양 고랑과 뚜렷한 좀먹은 경계를 지루각화증 소견으로 읽고 흑색종과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Elsevier; 2018. Chapter 109: Benign Epithelial Tumors and Proliferations · Marghoob AA, Malvehy J, Braun RP. Atlas of Dermoscopy, 2nd ed. CRC Press; 2012 ## 출처 ISIC Archive ISIC_0001144 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "여러 개의 비립종 유사 낭종·면포 유사 개구부와 뚜렷한 좀먹은 경계가 있고 색소 그물이 없으면 지루각화증으로 진단한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "흑색종은 멜라닌세포 구조(비정형 그물·줄무늬)를 보이고 각질 구조가 없다 — 이 병변은 각질 구조가 뚜렷하다",
+   "steps": 2,
+   "chain": [
+    "영상: 색소 그물 없음 + 비립종 유사 낭종·면포 유사 개구부 → 비멜라닌세포(각질세포) 병변",
+    "오래되고 「붙여 놓은 듯한」 판, 몸통에 여러 개 → 지루각화증"
+   ],
+   "key": [
+    {
+     "item": "영상: 여러 개의 둥근 흰 점(비립종 유사 낭종)과 갈색 마개가 찬 구멍(면포 유사 개구부)",
+     "why": "지루각화증의 특징적 각질 구조",
+     "also": []
+    },
+    {
+     "item": "영상: 경계가 뚜렷하고 좀먹은 듯한 가장자리",
+     "why": "「붙여 놓은」 표피 병변의 모양",
+     "also": []
+    },
+    {
+     "item": "몸통에 비슷한 작은 갈색 구진이 여러 개 있다",
+     "why": "지루각화증은 흔히 여러 개",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "10년 전부터 있었고",
+     "why": "최근 생긴 빠른 변화가 아니어서 흑색종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "출혈이나 궤양은 없었다",
+     "why": "기저세포암·결절 흑색종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "영상: 중앙의 청회색 구역",
+     "why": "흑색종을 떠올리게 하지만 각질 구조가 여럿이면 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "색소 그물이 없고 비립종 유사 낭종·면포 유사 개구부와 뚜렷한 좀먹은 경계가 있는 오래된 판은 지루각화증이다. 청회색 구역만으로 흑색종을 고르지 않는다.",
+   "switch": {
+    "choice": "E",
+    "condition": "각질 구조 없이 비정형 색소 그물과 불규칙 줄무늬가 있고 최근 몇 달 새 커졌다면 흑색종을 의심해 절제생검한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0494.jpg",
+   "caption": "피부 병변의 더모스코피 사진, 원본 그대로 축소만 (ISIC Archive, CC0 — 크롭·보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001144",
+   "asset_id": "ISIC-ISIC_0001144",
+   "text": "ISIC Archive ISIC_0001144 (CC-0)"
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0493",
   "exam": "imaging",
   "style": "usmle_style",
@@ -414,6 +1086,786 @@ window.IMAGING_QUESTIONS = [
   },
   "run_id": "20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
   "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0502",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "예방의학 — 추적 기간이 서로 다른 코호트의 발생률",
+  "type": "예방의학 — 추적 기간이 서로 다른 코호트의 발생률",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-31",
+  "vignette": "한 공장에서 새로 쓰기 시작한 용제의 영향을 보려고 신규 입사자 5명(모두 25세 남자)을 최대 4년간 추적하였다. 갑은 4년 동안 질환 없이 추적이 끝났다. 을은 입사 2년째 말에 질환이 진단되었다. 병은 1년 뒤 퇴사해 추적이 끊겼다. 정은 3년째 말에 질환이 진단되었다. 무는 2년 동안 질환 없이 지내다 교통사고로 사망하였다. 질환은 한 번 진단되면 그 사람의 추적을 끝낸다.",
+  "question": "이 집단에서 질환의 발생률(100인년당)은?",
+  "options": [
+   "16.7",
+   "40.0",
+   "12.5",
+   "50.0",
+   "20.0"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 발생률(발생 밀도)은 새로 생긴 사례 수를 위험에 노출된 관찰 인년의 합으로 나눈다. 각 사람은 질환 진단·탈락·사망·추적 종료 가운데 먼저 일어난 시점까지만 기여한다 — 갑 4, 을 2, 병 1, 정 3, 무 2 로 합계 12인년이다. 사례는 을과 정 2명이므로 2 ÷ 12 = 0.167/인년, 곧 100인년당 16.7 이다. 사례 2명을 처음 인원 5명으로 나눈 40 % 는 누적발생률처럼 보이지만, 추적이 끊긴 병과 사망한 무를 끝까지 지켜본 것처럼 다루어 맞지 않는다.\n- 원리: <b>왜 인년을 쓰는가</b>: 실제 코호트에서는 사람마다 관찰 기간이 다르다 — 중간에 퇴사·이사로 끊기고, 다른 원인으로 사망하고, 늦게 들어온다. 이들을 처음 인원에 그대로 넣으면 「4년 동안 질환이 생길 수 있었던 사람」을 과대 계상해 위험을 낮게, 아예 빼면 높게 계산하게 된다. 인년은 각 사람이 실제로 위험에 노출되어 관찰된 시간만 더하므로 이런 편향 없이 「단위 시간당 새 사례가 생기는 속도」를 준다.<br> <b>왜 사례는 진단 시점에서 멈추는가</b>: 질환이 생긴 사람은 더 이상 「새로 생길 위험」에 있지 않다. 진단 뒤의 시간을 더하면 분모가 커져 발생률이 낮게 나온다.<br> <b>발생률과 누적발생률의 관계</b>: 발생률이 일정하고 낮으면 누적발생률 ≈ 1 − e<sup>−발생률 × 시간</sup> ≈ 발생률 × 시간이다. 그래서 발생률은 「속도」, 누적발생률은 정해진 기간 동안의 「확률」이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">발생률 — 인년(정답 16.7)</th><th>누적발생률 — 처음 인원(오답 40 %)</th></tr></thead><tbody> <tr><td>분모</td><td><b>관찰 인년의 합 = 4+2+1+3+2 = 12</b></td><td>처음 위험 인원 = 5명</td></tr> <tr><td>단위</td><td>100인년당(속도)</td><td>비율(기간 안의 확률)</td></tr> <tr><td>탈락·사망</td><td>끊긴 시점까지만 기여</td><td>끝까지 관찰했다고 가정해야 해서 편향</td></tr> <tr><td>계산</td><td>2 ÷ 12 × 100 = 16.7</td><td>2 ÷ 5 = 0.40</td></tr> </tbody></table> 그 밖의 오답 — 12.5 는 사례의 진단 뒤 기간까지 4년씩 더해 분모를 16 으로, 50.0 은 끊긴 2명을 빼고 2 ÷ 4 로, 20.0 은 분모를 10 으로 잘못 센 것이다.\n- 오답 이유:\n  - ② 40.0 은 추적이 모두 4년간 완전하고 탈락·경쟁 사망이 없는 고정 코호트에서 4년 누적발생률(%)을 물었을 때 정답이 된다.\n  - ③ 12.5 는 사례도 진단 뒤 추적 종료까지 위험 기간에 넣어 분모를 16인년으로 센 값으로, 재발할 수 있는 사건을 셀 때나 맞는 방식이다.\n  - ④ 50.0 은 퇴사자와 사망자를 분석에서 빼고 남은 4명의 4년 누적발생률을 구할 때 나오는 값이며, 그 제외 자체가 편향을 만든다.\n  - ⑤ 20.0 은 분모를 10인년으로 셀 때 나오는 값으로, 갑의 추적 기간을 2년으로 잘못 읽는 등 관찰 기간을 줄였을 때만 정답이 된다.\n- 함정: 사례 수를 처음 인원으로 나누어 40 % 를 고르는 것 — 추적 기간이 다르면 각자 관찰된 인년만 분모에 더한다.\n- 학습목표: 추적 기간이 서로 다른 코호트에서 사건 발생·탈락·사망 시점까지만 관찰 인년을 더해 발생률(인년당)을 계산하고, 누적발생률과 혼동하지 않는다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. (Celentano DD, Szklo M). Elsevier; 2019. Chapter 3 · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Lippincott Williams & Wilkins; 2008. Chapter 3",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "발생률(발생 밀도)은 새로 생긴 사례 수를 위험에 노출된 관찰 인년의 합으로 나눈다. 각 사람은 질환 진단·탈락·사망·추적 종료 가운데 먼저 일어난 시점까지만 기여한다 — 갑 4, 을 2, 병 1, 정 3, 무 2 로 합계 12인년이다. 사례는 을과 정 2명이므로 2 ÷ 12 = 0.167/인년, 곧 100인년당 16.7 이다. 사례 2명을 처음 인원 5명으로 나눈 40 % 는 누적발생률처럼 보이지만, 추적이 끊긴 병과 사망한 무를 끝까지 지켜본 것처럼 다루어 맞지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 인년을 쓰는가</b>: 실제 코호트에서는 사람마다 관찰 기간이 다르다 — 중간에 퇴사·이사로 끊기고, 다른 원인으로 사망하고, 늦게 들어온다. 이들을 처음 인원에 그대로 넣으면 「4년 동안 질환이 생길 수 있었던 사람」을 과대 계상해 위험을 낮게, 아예 빼면 높게 계산하게 된다. 인년은 각 사람이 실제로 위험에 노출되어 관찰된 시간만 더하므로 이런 편향 없이 「단위 시간당 새 사례가 생기는 속도」를 준다.<br> <b>왜 사례는 진단 시점에서 멈추는가</b>: 질환이 생긴 사람은 더 이상 「새로 생길 위험」에 있지 않다. 진단 뒤의 시간을 더하면 분모가 커져 발생률이 낮게 나온다.<br> <b>발생률과 누적발생률의 관계</b>: 발생률이 일정하고 낮으면 누적발생률 ≈ 1 − e<sup>−발생률 × 시간</sup> ≈ 발생률 × 시간이다. 그래서 발생률은 「속도」, 누적발생률은 정해진 기간 동안의 「확률」이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">발생률 — 인년(정답 16.7)</th><th>누적발생률 — 처음 인원(오답 40 %)</th></tr></thead><tbody> <tr><td>분모</td><td><b>관찰 인년의 합 = 4+2+1+3+2 = 12</b></td><td>처음 위험 인원 = 5명</td></tr> <tr><td>단위</td><td>100인년당(속도)</td><td>비율(기간 안의 확률)</td></tr> <tr><td>탈락·사망</td><td>끊긴 시점까지만 기여</td><td>끝까지 관찰했다고 가정해야 해서 편향</td></tr> <tr><td>계산</td><td>2 ÷ 12 × 100 = 16.7</td><td>2 ÷ 5 = 0.40</td></tr> </tbody></table> 그 밖의 오답 — 12.5 는 사례의 진단 뒤 기간까지 4년씩 더해 분모를 16 으로, 50.0 은 끊긴 2명을 빼고 2 ÷ 4 로, 20.0 은 분모를 10 으로 잘못 센 것이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 40.0 은 추적이 모두 4년간 완전하고 탈락·경쟁 사망이 없는 고정 코호트에서 4년 누적발생률(%)을 물었을 때 정답이 된다.\n③ 12.5 는 사례도 진단 뒤 추적 종료까지 위험 기간에 넣어 분모를 16인년으로 센 값으로, 재발할 수 있는 사건을 셀 때나 맞는 방식이다.\n④ 50.0 은 퇴사자와 사망자를 분석에서 빼고 남은 4명의 4년 누적발생률을 구할 때 나오는 값이며, 그 제외 자체가 편향을 만든다.\n⑤ 20.0 은 분모를 10인년으로 셀 때 나오는 값으로, 갑의 추적 기간을 2년으로 잘못 읽는 등 관찰 기간을 줄였을 때만 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "사례 수를 처음 인원으로 나누어 40 % 를 고르는 것 — 추적 기간이 다르면 각자 관찰된 인년만 분모에 더한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "추적 기간이 서로 다른 코호트에서 사건 발생·탈락·사망 시점까지만 관찰 인년을 더해 발생률(인년당)을 계산하고, 누적발생률과 혼동하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. (Celentano DD, Szklo M). Elsevier; 2019. Chapter 3 · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Lippincott Williams & Wilkins; 2008. Chapter 3"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "관찰 기간이 서로 다르면 각 사람이 진단·탈락·사망 전까지 관찰된 인년만 더해 발생률을 구한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "누적발생률(사례 ÷ 처음 인원)은 모두 끝까지 관찰했다고 가정한다 — 여기는 탈락 1명과 경쟁 사망 1명이 있다",
+   "steps": 3,
+   "chain": [
+    "각자 먼저 일어난 사건(진단·탈락·사망·종료)까지의 기간 → 4·2·1·3·2",
+    "관찰 인년 합 12, 새 사례 2(을·정)",
+    "2 ÷ 12 × 100 = 100인년당 16.7"
+   ],
+   "key": [
+    {
+     "item": "을은 입사 2년째 말에 질환이 진단되었다",
+     "why": "사례 — 2년만 기여",
+     "also": []
+    },
+    {
+     "item": "병은 1년 뒤 퇴사해 추적이 끊겼다",
+     "why": "탈락 — 1년만 기여, 사례 아님",
+     "also": []
+    },
+    {
+     "item": "무는 2년 동안 질환 없이 지내다 교통사고로 사망하였다",
+     "why": "경쟁 사망 — 2년만 기여",
+     "also": []
+    },
+    {
+     "item": "질환은 한 번 진단되면 그 사람의 추적을 끝낸다",
+     "why": "사례는 진단 시점에서 분모 기여를 멈춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "새로 쓰기 시작한 용제",
+     "why": "연구 배경이며 계산에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "각자 진단·탈락·사망·종료까지의 관찰 기간(4·2·1·3·2)을 더하면 12인년이고 사례는 2명이다. 발생률은 100인년당 16.7 이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "5명 모두 4년간 탈락·사망 없이 끝까지 추적되었다면 4년 누적발생률 2/5 = 40 % 를 물을 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0501",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "약리 — 스타틴 복용 중 항생제를 더한 뒤 생긴 근육통",
+  "type": "약리 — 스타틴 복용 중 항생제를 더한 뒤 생긴 근육통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "A 68-year-old man comes to the emergency department because of diffuse muscle aching and weakness for 3 days and dark urine since yesterday. Ten days ago he began a course of clarithromycin for community-acquired pneumonia. He has taken simvastatin 40 mg daily for 5 years without problems, as well as lisinopril. He has not exercised strenuously. Examination shows tender proximal thigh and arm muscles with 4/5 strength. Serum creatine kinase is 18,500 U/L and creatinine is 1.9 mg/dL (baseline 1.0). Urine dipstick is positive for blood, but microscopy shows no erythrocytes.",
+  "question": "Which of the following best explains the mechanism of this drug interaction?",
+  "options": [
+   "Inhibition of CYP2C9-mediated simvastatin metabolism",
+   "Inhibition of hepatic OATP1B1 uptake of simvastatin",
+   "Induction of P-glycoprotein in skeletal muscle",
+   "Displacement of simvastatin from plasma albumin",
+   "Inhibition of CYP3A4-mediated simvastatin metabolism"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Statin myopathy progressing to rhabdomyolysis (CK over 10 times normal, myoglobinuria with heme-positive dipstick but no red cells, acute kidney injury) began after clarithromycin was added to long-standing simvastatin. Simvastatin is extensively metabolized by CYP3A4 in the gut wall and liver; clarithromycin is a strong mechanism-based CYP3A4 inhibitor, which raises simvastatin and simvastatin acid exposure several-fold and increases muscle toxicity. Simvastatin should be withheld during macrolide therapy, or azithromycin chosen instead.\n- 원리: <b>Why simvastatin is so sensitive to CYP3A4</b>: simvastatin is a lipophilic lactone prodrug with very high first-pass metabolism by CYP3A4 in the intestinal wall and liver — normally only about 5% of an oral dose reaches the circulation. Blocking CYP3A4 removes most of this first-pass loss, so plasma levels of simvastatin and its active acid can increase 10-fold. Atorvastatin and lovastatin share this pathway; pravastatin and rosuvastatin are largely not CYP3A4 substrates.<br> <b>Why muscle is injured</b>: higher statin concentrations in muscle inhibit HMG-CoA reductase there, reducing mevalonate products such as coenzyme Q10 and prenylated proteins, which impairs mitochondrial function and membrane integrity; myocytes break down and release CK and myoglobin.<br> <b>Why the urine is heme-positive without red cells</b>: the dipstick detects the heme in myoglobin, which is filtered freely and is toxic to tubules — the cause of the acute kidney injury.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP3A4 inhibition (answer)</th><th>OATP1B1 inhibition (closest distractor)</th></tr></thead><tbody> <tr><td>Typical perpetrators</td><td><b>Clarithromycin, erythromycin, azole antifungals, HIV protease inhibitors, grapefruit juice</b></td><td>Gemfibrozil, cyclosporine, rifampin (single dose)</td></tr> <tr><td>Step blocked</td><td>Metabolic clearance in gut wall and liver</td><td>Hepatic uptake of the statin from blood</td></tr> <tr><td>Statins affected</td><td>Simvastatin, lovastatin, atorvastatin</td><td>All statins, including rosuvastatin and pravastatin</td></tr> </tbody></table> Name the added drug: a macrolide or azole means CYP3A4; a fibrate (gemfibrozil) or cyclosporine adds transporter inhibition.\n- 오답 이유:\n  - (A) CYP2C9 inhibition would explain toxicity with fluvastatin, which is metabolized by CYP2C9, when combined with a CYP2C9 inhibitor such as fluconazole or amiodarone.\n  - (B) OATP1B1 inhibition would be the main mechanism if the added drug were gemfibrozil or cyclosporine, which block hepatic statin uptake and affect all statins.\n  - (C) P-glycoprotein induction would lower, not raise, statin exposure; induction by rifampin or St. John's wort reduces the statin effect rather than causing myopathy.\n  - (D) Albumin displacement would matter only for highly bound drugs with narrow margins and causes a transient change; it would not explain sustained statin toxicity.\n- 함정: Choosing OATP1B1 inhibition because it is a well-known statin interaction — that mechanism belongs to gemfibrozil and cyclosporine, not macrolides.\n- 학습목표: 심바스타틴 복용 중 클래리스로마이신을 더한 뒤 생긴 근육병증·횡문근융해의 기전을 CYP3A4 억제에 의한 스타틴 노출 증가로 설명하고, OATP1B1 억제(겜피브로질·사이클로스포린)와 가른다\n- 근거·출처: Wiggins BS, Saseen JJ, Page RL 2nd, et al. Recommendations for Management of Clinically Significant Drug-Drug Interactions With Statins. Circulation 2016;134:e468-e495 · Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. McGraw-Hill; 2023. Chapter 37",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Statin myopathy progressing to rhabdomyolysis (CK over 10 times normal, myoglobinuria with heme-positive dipstick but no red cells, acute kidney injury) began after clarithromycin was added to long-standing simvastatin. Simvastatin is extensively metabolized by CYP3A4 in the gut wall and liver; clarithromycin is a strong mechanism-based CYP3A4 inhibitor, which raises simvastatin and simvastatin acid exposure several-fold and increases muscle toxicity. Simvastatin should be withheld during macrolide therapy, or azithromycin chosen instead."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why simvastatin is so sensitive to CYP3A4</b>: simvastatin is a lipophilic lactone prodrug with very high first-pass metabolism by CYP3A4 in the intestinal wall and liver — normally only about 5% of an oral dose reaches the circulation. Blocking CYP3A4 removes most of this first-pass loss, so plasma levels of simvastatin and its active acid can increase 10-fold. Atorvastatin and lovastatin share this pathway; pravastatin and rosuvastatin are largely not CYP3A4 substrates.<br> <b>Why muscle is injured</b>: higher statin concentrations in muscle inhibit HMG-CoA reductase there, reducing mevalonate products such as coenzyme Q10 and prenylated proteins, which impairs mitochondrial function and membrane integrity; myocytes break down and release CK and myoglobin.<br> <b>Why the urine is heme-positive without red cells</b>: the dipstick detects the heme in myoglobin, which is filtered freely and is toxic to tubules — the cause of the acute kidney injury."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP3A4 inhibition (answer)</th><th>OATP1B1 inhibition (closest distractor)</th></tr></thead><tbody> <tr><td>Typical perpetrators</td><td><b>Clarithromycin, erythromycin, azole antifungals, HIV protease inhibitors, grapefruit juice</b></td><td>Gemfibrozil, cyclosporine, rifampin (single dose)</td></tr> <tr><td>Step blocked</td><td>Metabolic clearance in gut wall and liver</td><td>Hepatic uptake of the statin from blood</td></tr> <tr><td>Statins affected</td><td>Simvastatin, lovastatin, atorvastatin</td><td>All statins, including rosuvastatin and pravastatin</td></tr> </tbody></table> Name the added drug: a macrolide or azole means CYP3A4; a fibrate (gemfibrozil) or cyclosporine adds transporter inhibition."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) CYP2C9 inhibition would explain toxicity with fluvastatin, which is metabolized by CYP2C9, when combined with a CYP2C9 inhibitor such as fluconazole or amiodarone.\n(B) OATP1B1 inhibition would be the main mechanism if the added drug were gemfibrozil or cyclosporine, which block hepatic statin uptake and affect all statins.\n(C) P-glycoprotein induction would lower, not raise, statin exposure; induction by rifampin or St. John's wort reduces the statin effect rather than causing myopathy.\n(D) Albumin displacement would matter only for highly bound drugs with narrow margins and causes a transient change; it would not explain sustained statin toxicity."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing OATP1B1 inhibition because it is a well-known statin interaction — that mechanism belongs to gemfibrozil and cyclosporine, not macrolides."
+   },
+   {
+    "k": "학습목표",
+    "v": "심바스타틴 복용 중 클래리스로마이신을 더한 뒤 생긴 근육병증·횡문근융해의 기전을 CYP3A4 억제에 의한 스타틴 노출 증가로 설명하고, OATP1B1 억제(겜피브로질·사이클로스포린)와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Wiggins BS, Saseen JJ, Page RL 2nd, et al. Recommendations for Management of Clinically Significant Drug-Drug Interactions With Statins. Circulation 2016;134:e468-e495 · Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. McGraw-Hill; 2023. Chapter 37"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "심바스타틴 복용자에게 클래리스로마이신을 더한 뒤 생긴 횡문근융해는 CYP3A4 억제로 심바스타틴 노출이 커진 결과다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "OATP1B1 억제는 겜피브로질·사이클로스포린의 기전이다 — 여기서 더한 약은 강한 CYP3A4 억제제인 마크로라이드다",
+   "steps": 2,
+   "chain": [
+    "CK 18,500·혈뇨 시험 양성인데 적혈구 없음·크레아티닌 상승 → 스타틴 근육병증에 의한 횡문근융해",
+    "5년간 문제없던 심바스타틴 + 새로 더한 클래리스로마이신 → CYP3A4 억제로 스타틴 노출 증가"
+   ],
+   "key": [
+    {
+     "item": "Ten days ago he began a course of clarithromycin",
+     "why": "새로 더한 강한 CYP3A4 억제제",
+     "also": []
+    },
+    {
+     "item": "simvastatin 40 mg daily for 5 years without problems",
+     "why": "CYP3A4 의존 스타틴 — 상호작용 전에는 문제가 없었다",
+     "also": []
+    },
+    {
+     "item": "Serum creatine kinase is 18,500 U/L",
+     "why": "정상 상한의 10배 이상 — 횡문근융해",
+     "also": []
+    },
+    {
+     "item": "Urine dipstick is positive for blood, but microscopy shows no erythrocytes",
+     "why": "미오글로빈뇨",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has not exercised strenuously",
+     "why": "운동에 의한 횡문근융해 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "lisinopril",
+     "why": "스타틴과 의미 있는 상호작용이 없다",
+     "also": []
+    }
+   ],
+   "summary": "새로 더한 클래리스로마이신이 CYP3A4 를 억제해 심바스타틴 노출이 커지고 횡문근융해가 생겼다. OATP1B1 억제는 겜피브로질·사이클로스포린의 기전이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "더한 약이 클래리스로마이신이 아니라 겜피브로질이었다면 간 OATP1B1 섭취 억제(와 글루쿠론산화 억제)가 주된 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0500",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "소아청소년 — 생후 5주 영아의 황달과 회색 대변",
+  "type": "소아청소년 — 생후 5주 영아의 황달과 회색 대변",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "생후 35일 여아가 황달이 없어지지 않아 왔다. 만삭 질식분만으로 태어났고 모유 수유 중이며 잘 먹는다. 2주 전부터 대변이 옅은 회백색이고 소변은 진한 노란색이다. 체중은 출생 뒤 정상적으로 늘었다. 공막 황달이 있고 간이 오른쪽 갈비뼈 아래 3 cm 에서 단단하게 만져진다. 총빌리루빈 8.2 mg/dL, 직접빌리루빈 6.4 mg/dL, AST 120 U/L, ALT 98 U/L, 감마글루타밀전이효소 610 U/L 이고 갑상샘 기능은 정상이다. 공복 복부 초음파에서 담낭이 작고 불규칙하며 간문맥 앞쪽에 삼각형 고에코 띠가 보인다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "간이식 대기자 등록",
+   "수술 중 담관조영술",
+   "광선요법 시행",
+   "분유로 바꾼 뒤 2주 추적",
+   "우르소데옥시콜산 투여 후 추적"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 생후 2주 이후에도 지속되는 황달에서 직접빌리루빈이 1 mg/dL(또는 총빌리루빈의 20 %)을 넘으면 담즙 정체다. 무담즙(회백색) 대변·진한 소변·단단한 간비대, 감마글루타밀전이효소의 뚜렷한 상승, 초음파의 작고 불규칙한 담낭과 간문맥 앞 삼각형 고에코 띠(삼각형 띠 징후)는 담도폐쇄증을 강하게 시사한다. 확진은 수술 중 담관조영으로 하고, 폐쇄가 확인되면 같은 수술에서 카사이 간문부 장문합술을 한다. 생후 60일 전에 수술해야 담즙 배출 성공률이 높으므로 지체하지 않는다.\n- 원리: <b>왜 직접빌리루빈이 갈림길인가</b>: 신생아의 생리적·모유 황달은 간접(비결합) 빌리루빈이 쌓이는 것이다. 직접(결합) 빌리루빈은 간세포가 이미 포합한 빌리루빈이라, 그것이 올라갔다면 담즙이 간 밖으로 나가지 못하는 담즙 정체다. 그래서 생후 2주 넘은 황달은 반드시 분획 빌리루빈을 잰다.<br> <b>왜 대변이 하얗고 소변이 진한가</b>: 담즙이 장으로 가지 못하면 대변을 갈색으로 만드는 스테르코빌린이 생기지 않아 회백색이 되고, 혈중 결합 빌리루빈은 수용성이라 소변으로 나가 소변이 진해진다.<br> <b>왜 서두르는가</b>: 담도폐쇄증은 간외 담관이 진행성 염증으로 막히는 병이다. 막힌 채로 시간이 지나면 간 안에서 섬유화가 빠르게 진행해 담즙성 간경변이 된다. 카사이 수술로 담즙 흐름을 되살리는 비율은 생후 60일 안에 하면 높고 90일이 지나면 크게 떨어진다. 그래서 의심되면 진단 과정을 길게 끌지 않고 수술 중 담관조영으로 확진과 치료를 한 번에 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">담도폐쇄증 — 수술 중 담관조영(정답)</th><th>간접빌리루빈 황달 — 광선요법(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>빌리루빈</td><td><b>직접빌리루빈 상승</b>(&gt;1 mg/dL)</td><td>간접빌리루빈 상승, 직접은 정상</td></tr> <tr><td>대변·소변</td><td>회백색 대변, 진한 소변</td><td>정상 노란 대변, 옅은 소변</td></tr> <tr><td>간</td><td>단단하게 커짐</td><td>정상</td></tr> <tr><td>광선요법 효과</td><td>없음 — 결합 빌리루빈은 광이성화 대상이 아님(청동색 아기 증후군 위험)</td><td>빌리루빈을 수용성 이성질체로 바꿔 배설</td></tr> </tbody></table> 생후 2주 넘은 황달은 「직접인가 간접인가」부터 — 직접이면 광선요법이 아니라 담즙 정체의 원인을 찾는다.\n- 오답 이유:\n  - ① 간이식 대기는 카사이 수술이 실패했거나 진단이 늦어 이미 비대상성 담즙성 간경변이 생겼을 때 정답이 된다.\n  - ③ 광선요법은 직접빌리루빈이 정상이고 간접빌리루빈이 나이별 기준을 넘는 신생아 황달일 때 정답이 된다.\n  - ④ 모유 수유 중단은 잘 먹고 대변 색이 정상인 아기의 간접빌리루빈 상승(모유 황달)에서 진단적으로 잠시 시도할 때 정답이 될 수 있다.\n  - ⑤ 우르소데옥시콜산은 카사이 수술 뒤 담즙 배출을 돕는 보조 치료일 때 정답이 되며, 진단 전에 쓰면 수술 시기를 늦춘다.\n- 함정: 신생아 황달이니 광선요법을 고르는 것 — 직접빌리루빈 상승과 회백색 대변은 담즙 정체이며 시간이 중요한 담도폐쇄증을 먼저 확인한다.\n- 학습목표: 생후 2주 이후 지속되는 황달·무담즙 대변·직접 빌리루빈 상승과 초음파 소견으로 담도폐쇄증을 의심하고, 수술 중 담관조영으로 확진해 생후 60일 전 카사이 수술을 하도록 서두른다\n- 근거·출처: Fawaz R, Baumann U, Ekong U, et al. Guideline for the Evaluation of Cholestatic Jaundice in Infants: Joint Recommendations of NASPGHAN and ESPGHAN. J Pediatr Gastroenterol Nutr 2017;64:154-168 · Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Chapter 383",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "생후 2주 이후에도 지속되는 황달에서 직접빌리루빈이 1 mg/dL(또는 총빌리루빈의 20 %)을 넘으면 담즙 정체다. 무담즙(회백색) 대변·진한 소변·단단한 간비대, 감마글루타밀전이효소의 뚜렷한 상승, 초음파의 작고 불규칙한 담낭과 간문맥 앞 삼각형 고에코 띠(삼각형 띠 징후)는 담도폐쇄증을 강하게 시사한다. 확진은 수술 중 담관조영으로 하고, 폐쇄가 확인되면 같은 수술에서 카사이 간문부 장문합술을 한다. 생후 60일 전에 수술해야 담즙 배출 성공률이 높으므로 지체하지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 직접빌리루빈이 갈림길인가</b>: 신생아의 생리적·모유 황달은 간접(비결합) 빌리루빈이 쌓이는 것이다. 직접(결합) 빌리루빈은 간세포가 이미 포합한 빌리루빈이라, 그것이 올라갔다면 담즙이 간 밖으로 나가지 못하는 담즙 정체다. 그래서 생후 2주 넘은 황달은 반드시 분획 빌리루빈을 잰다.<br> <b>왜 대변이 하얗고 소변이 진한가</b>: 담즙이 장으로 가지 못하면 대변을 갈색으로 만드는 스테르코빌린이 생기지 않아 회백색이 되고, 혈중 결합 빌리루빈은 수용성이라 소변으로 나가 소변이 진해진다.<br> <b>왜 서두르는가</b>: 담도폐쇄증은 간외 담관이 진행성 염증으로 막히는 병이다. 막힌 채로 시간이 지나면 간 안에서 섬유화가 빠르게 진행해 담즙성 간경변이 된다. 카사이 수술로 담즙 흐름을 되살리는 비율은 생후 60일 안에 하면 높고 90일이 지나면 크게 떨어진다. 그래서 의심되면 진단 과정을 길게 끌지 않고 수술 중 담관조영으로 확진과 치료를 한 번에 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">담도폐쇄증 — 수술 중 담관조영(정답)</th><th>간접빌리루빈 황달 — 광선요법(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>빌리루빈</td><td><b>직접빌리루빈 상승</b>(&gt;1 mg/dL)</td><td>간접빌리루빈 상승, 직접은 정상</td></tr> <tr><td>대변·소변</td><td>회백색 대변, 진한 소변</td><td>정상 노란 대변, 옅은 소변</td></tr> <tr><td>간</td><td>단단하게 커짐</td><td>정상</td></tr> <tr><td>광선요법 효과</td><td>없음 — 결합 빌리루빈은 광이성화 대상이 아님(청동색 아기 증후군 위험)</td><td>빌리루빈을 수용성 이성질체로 바꿔 배설</td></tr> </tbody></table> 생후 2주 넘은 황달은 「직접인가 간접인가」부터 — 직접이면 광선요법이 아니라 담즙 정체의 원인을 찾는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 간이식 대기는 카사이 수술이 실패했거나 진단이 늦어 이미 비대상성 담즙성 간경변이 생겼을 때 정답이 된다.\n③ 광선요법은 직접빌리루빈이 정상이고 간접빌리루빈이 나이별 기준을 넘는 신생아 황달일 때 정답이 된다.\n④ 모유 수유 중단은 잘 먹고 대변 색이 정상인 아기의 간접빌리루빈 상승(모유 황달)에서 진단적으로 잠시 시도할 때 정답이 될 수 있다.\n⑤ 우르소데옥시콜산은 카사이 수술 뒤 담즙 배출을 돕는 보조 치료일 때 정답이 되며, 진단 전에 쓰면 수술 시기를 늦춘다."
+   },
+   {
+    "k": "함정",
+    "v": "신생아 황달이니 광선요법을 고르는 것 — 직접빌리루빈 상승과 회백색 대변은 담즙 정체이며 시간이 중요한 담도폐쇄증을 먼저 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "생후 2주 이후 지속되는 황달·무담즙 대변·직접 빌리루빈 상승과 초음파 소견으로 담도폐쇄증을 의심하고, 수술 중 담관조영으로 확진해 생후 60일 전 카사이 수술을 하도록 서두른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Fawaz R, Baumann U, Ekong U, et al. Guideline for the Evaluation of Cholestatic Jaundice in Infants: Joint Recommendations of NASPGHAN and ESPGHAN. J Pediatr Gastroenterol Nutr 2017;64:154-168 · Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Chapter 383"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "생후 2주 이후 직접빌리루빈 상승·회백색 대변·초음파의 삼각형 띠 징후는 담도폐쇄증을 시사하므로 수술 중 담관조영으로 확진해 카사이 수술로 이어 간다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "광선요법은 간접빌리루빈 황달의 치료다 — 이 아기는 직접빌리루빈이 총빌리루빈의 대부분이고 대변이 회백색이다",
+   "steps": 3,
+   "chain": [
+    "생후 35일의 지속 황달 + 직접빌리루빈 6.4 mg/dL → 담즙 정체",
+    "회백색 대변 + 감마글루타밀전이효소 상승 + 작은 담낭·삼각형 고에코 띠 → 담도폐쇄증 의심",
+    "생후 60일 전 카사이 수술이 예후를 정함 → 수술 중 담관조영으로 확진"
+   ],
+   "key": [
+    {
+     "item": "직접빌리루빈 6.4 mg/dL",
+     "why": "담즙 정체 — 광선요법 대상이 아니다",
+     "also": []
+    },
+    {
+     "item": "대변이 옅은 회백색이고",
+     "why": "무담즙 대변 — 담도 폐쇄",
+     "also": []
+    },
+    {
+     "item": "간문맥 앞쪽에 삼각형 고에코 띠",
+     "why": "섬유화된 담관 잔유물 — 담도폐쇄증의 특이 소견",
+     "also": []
+    },
+    {
+     "item": "감마글루타밀전이효소 610 U/L",
+     "why": "담관 손상 — 담도폐쇄증에서 뚜렷이 높다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "갑상샘 기능은 정상이다",
+     "why": "갑상샘저하증에 의한 지속 황달 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "체중은 출생 뒤 정상적으로 늘었다",
+     "why": "담도폐쇄증 초기 아기는 대개 잘 자라 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "모유 수유 중이며",
+     "why": "모유 황달을 떠올리게 하지만 모유 황달은 간접빌리루빈이다",
+     "also": []
+    }
+   ],
+   "summary": "생후 5주의 지속 황달에서 직접빌리루빈이 높고 대변이 회백색이며 초음파에서 삼각형 띠 징후가 보인다. 담도폐쇄증을 수술 중 담관조영으로 확진하고 생후 60일 전에 카사이 수술을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "직접빌리루빈이 0.4 mg/dL 로 정상이고 간접빌리루빈만 18 mg/dL 로 높으며 대변이 노랗다면 광선요법을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0499",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "진단검사 — 출혈 없는 aPTT 연장과 혼합 검사",
+  "type": "진단검사 — 출혈 없는 aPTT 연장과 혼합 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "A 31-year-old woman is referred before a scheduled laparoscopic cholecystectomy because preoperative coagulation tests are abnormal. She has had two miscarriages at 9 and 11 weeks' gestation. She has never had abnormal bleeding, including after a dental extraction last year, and her menstrual periods are normal. She takes no medications. Platelet count is 210,000/mm³. Prothrombin time is 12 seconds (INR 1.0), and activated partial thromboplastin time is 52 seconds (reference 25–35). A 1:1 mixing study with normal plasma gives an aPTT of 49 seconds immediately and 50 seconds after 2 hours of incubation at 37°C. Factor VIII activity is 95%.",
+  "question": "Which of the following is the most likely cause of the prolonged aPTT?",
+  "options": [
+   "Lupus anticoagulant",
+   "Acquired factor VIII inhibitor",
+   "Factor XII deficiency",
+   "von Willebrand disease",
+   "Unfractionated heparin contamination"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: An isolated prolonged aPTT that does not correct immediately with 1:1 normal plasma indicates an inhibitor rather than a factor deficiency. The inhibitor is not time dependent (no further prolongation after incubation), factor VIII activity is normal, and she has no bleeding history but two pregnancy losses — features of a lupus anticoagulant, an antiphospholipid antibody that prolongs phospholipid-dependent clotting tests in vitro while predisposing to thrombosis and pregnancy morbidity in vivo. Confirmation uses a second phospholipid-dependent test such as the dilute Russell viper venom time with phospholipid neutralization, repeated after 12 weeks.\n- 원리: <b>Why mixing separates deficiency from inhibitor</b>: a clotting test stays normal as long as each factor is above about 40–50% of normal. Mixing patient plasma 1:1 with normal plasma supplies at least 50% of every factor, so a deficiency corrects. If the aPTT stays prolonged, something in the patient's plasma is blocking clotting — an inhibitor.<br> <b>Why a lupus anticoagulant prolongs the test but causes clotting</b>: these antibodies bind phospholipid–protein complexes (β2-glycoprotein I, prothrombin). In the test tube, they compete with clotting factors for the limited phospholipid in the aPTT reagent, slowing clot formation. In the body, the same antibodies activate endothelial cells, platelets, and monocytes and interfere with protein C, promoting thrombosis and placental injury.<br> <b>Why incubation matters</b>: factor VIII autoantibodies bind slowly and are temperature dependent, so the aPTT is often near-normal immediately but lengthens after 1–2 hours at 37°C; a lupus anticoagulant acts immediately.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Lupus anticoagulant (answer)</th><th>Acquired factor VIII inhibitor (closest distractor)</th></tr></thead><tbody> <tr><td>Mixing study</td><td><b>No correction immediately; no further change with incubation</b></td><td>Often partial correction immediately, then prolongs after 1–2 h at 37°C</td></tr> <tr><td>Factor VIII activity</td><td>Normal (may be falsely low in some assays)</td><td>Markedly low</td></tr> <tr><td>Clinical picture</td><td>No bleeding; thrombosis, pregnancy loss</td><td>Sudden large soft-tissue bleeding, often elderly or postpartum</td></tr> <tr><td>Confirmation</td><td>dRVVT with phospholipid neutralization</td><td>Bethesda assay</td></tr> </tbody></table> Non-correction means an inhibitor; then ask whether it is time dependent and whether the patient bleeds or clots.\n- 오답 이유:\n  - (B) An acquired factor VIII inhibitor would be correct if factor VIII activity were very low, the aPTT lengthened after incubation, and she had sudden large bruises or muscle bleeds.\n  - (C) Factor XII deficiency would be correct if the aPTT were prolonged without bleeding but corrected fully with 1:1 mixing, because it is a deficiency rather than an inhibitor.\n  - (D) von Willebrand disease would be correct with mucocutaneous bleeding, heavy menses, and a low factor VIII; mixing would correct any aPTT prolongation.\n  - (E) Heparin contamination would be correct if blood had been drawn from a heparinized line; the thrombin time would be prolonged and correct with heparinase.\n- 함정: Choosing factor XII deficiency because she does not bleed — a deficiency corrects with mixing, whereas this aPTT does not.\n- 학습목표: PT 는 정상이고 aPTT 만 연장되었는데 1:1 혼합 검사에서 즉시 교정되지 않으며 출혈이 없고 임신 손실 병력이 있으면 루푸스 항응고인자로 보고 응고인자 VIII 억제인자와 가른다\n- 근거·출처: Devreese KMJ, de Groot PG, de Laat B, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 116",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An isolated prolonged aPTT that does not correct immediately with 1:1 normal plasma indicates an inhibitor rather than a factor deficiency. The inhibitor is not time dependent (no further prolongation after incubation), factor VIII activity is normal, and she has no bleeding history but two pregnancy losses — features of a lupus anticoagulant, an antiphospholipid antibody that prolongs phospholipid-dependent clotting tests in vitro while predisposing to thrombosis and pregnancy morbidity in vivo. Confirmation uses a second phospholipid-dependent test such as the dilute Russell viper venom time with phospholipid neutralization, repeated after 12 weeks."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why mixing separates deficiency from inhibitor</b>: a clotting test stays normal as long as each factor is above about 40–50% of normal. Mixing patient plasma 1:1 with normal plasma supplies at least 50% of every factor, so a deficiency corrects. If the aPTT stays prolonged, something in the patient's plasma is blocking clotting — an inhibitor.<br> <b>Why a lupus anticoagulant prolongs the test but causes clotting</b>: these antibodies bind phospholipid–protein complexes (β2-glycoprotein I, prothrombin). In the test tube, they compete with clotting factors for the limited phospholipid in the aPTT reagent, slowing clot formation. In the body, the same antibodies activate endothelial cells, platelets, and monocytes and interfere with protein C, promoting thrombosis and placental injury.<br> <b>Why incubation matters</b>: factor VIII autoantibodies bind slowly and are temperature dependent, so the aPTT is often near-normal immediately but lengthens after 1–2 hours at 37°C; a lupus anticoagulant acts immediately."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Lupus anticoagulant (answer)</th><th>Acquired factor VIII inhibitor (closest distractor)</th></tr></thead><tbody> <tr><td>Mixing study</td><td><b>No correction immediately; no further change with incubation</b></td><td>Often partial correction immediately, then prolongs after 1–2 h at 37°C</td></tr> <tr><td>Factor VIII activity</td><td>Normal (may be falsely low in some assays)</td><td>Markedly low</td></tr> <tr><td>Clinical picture</td><td>No bleeding; thrombosis, pregnancy loss</td><td>Sudden large soft-tissue bleeding, often elderly or postpartum</td></tr> <tr><td>Confirmation</td><td>dRVVT with phospholipid neutralization</td><td>Bethesda assay</td></tr> </tbody></table> Non-correction means an inhibitor; then ask whether it is time dependent and whether the patient bleeds or clots."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) An acquired factor VIII inhibitor would be correct if factor VIII activity were very low, the aPTT lengthened after incubation, and she had sudden large bruises or muscle bleeds.\n(C) Factor XII deficiency would be correct if the aPTT were prolonged without bleeding but corrected fully with 1:1 mixing, because it is a deficiency rather than an inhibitor.\n(D) von Willebrand disease would be correct with mucocutaneous bleeding, heavy menses, and a low factor VIII; mixing would correct any aPTT prolongation.\n(E) Heparin contamination would be correct if blood had been drawn from a heparinized line; the thrombin time would be prolonged and correct with heparinase."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing factor XII deficiency because she does not bleed — a deficiency corrects with mixing, whereas this aPTT does not."
+   },
+   {
+    "k": "학습목표",
+    "v": "PT 는 정상이고 aPTT 만 연장되었는데 1:1 혼합 검사에서 즉시 교정되지 않으며 출혈이 없고 임신 손실 병력이 있으면 루푸스 항응고인자로 보고 응고인자 VIII 억제인자와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Devreese KMJ, de Groot PG, de Laat B, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 116"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "aPTT 만 연장되고 혼합 검사에서 즉시 교정되지 않으며 시간 의존성이 없고 출혈 없이 임신 손실이 있으면 루푸스 항응고인자다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "응고인자 VIII 억제인자는 배양 뒤 aPTT 가 더 길어지고 VIII 활성이 낮으며 출혈이 있다 — 이 환자는 VIII 95 %, 배양 뒤 변화 없음, 출혈 없음",
+   "steps": 3,
+   "chain": [
+    "PT 정상 + aPTT 연장 → 내인 경로(VIII·IX·XI·XII) 또는 인지질 의존 억제",
+    "1:1 혼합에서 교정 안 됨 → 결핍이 아니라 억제인자",
+    "시간 의존성 없음 + VIII 정상 + 출혈 없음·유산 2회 → 루푸스 항응고인자"
+   ],
+   "key": [
+    {
+     "item": "aPTT of 49 seconds immediately and 50 seconds after 2 hours of incubation",
+     "why": "즉시 교정 안 됨, 시간 의존성 없음 — 루푸스 항응고인자 양상",
+     "also": []
+    },
+    {
+     "item": "never had abnormal bleeding",
+     "why": "출혈이 아니라 혈전 쪽 질환에 맞는다",
+     "also": []
+    },
+    {
+     "item": "two miscarriages at 9 and 11 weeks' gestation",
+     "why": "항인지질항체증후군의 임신 이환",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Factor VIII activity is 95%",
+     "why": "VIII 억제인자·폰빌레브란트병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Prothrombin time is 12 seconds",
+     "why": "외인·공통 경로 이상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She takes no medications",
+     "why": "항응고제 효과 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "scheduled laparoscopic cholecystectomy",
+     "why": "검사가 발견된 계기일 뿐 원인 판단과는 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "aPTT 만 연장되고 혼합 검사에서 즉시 교정되지 않으며 배양해도 변화가 없다. VIII 이 정상이고 출혈 없이 유산이 2회이므로 루푸스 항응고인자다.",
+   "switch": {
+    "choice": "C",
+    "condition": "1:1 혼합에서 aPTT 가 31초로 완전히 교정되고 출혈 병력이 없었다면 응고인자 XII 결핍을 생각한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0498",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "류마티스·근골격 — 젊은 남성의 아침 허리 뻣뻣함",
+  "type": "류마티스·근골격 — 젊은 남성의 아침 허리 뻣뻣함",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "24세 남자가 1년 전부터 서서히 심해진 허리 통증으로 왔다. 아침에 일어나면 허리가 1시간 이상 뻣뻣하고, 움직이면 나아지며 쉬면 나빠진다. 밤 후반에 아파서 깨는 일이 잦다. 6개월 전 오른쪽 눈이 붉고 아프며 눈부심이 있어 안과에서 안약 치료를 받았다. 건선·설사·요도 분비물은 없었다. 쇼버 검사에서 허리 굽힘이 줄어 있고 양쪽 천장관절에 압통이 있다. 말초관절 부기는 없다. 적혈구침강속도 32 mm/h, C-반응단백 1.8 mg/dL, HLA-B27 양성이다. 골반 X선에서 양쪽 천장관절의 관절면 미란과 경화가 보인다. 이전에 진통제는 써 본 적이 없다.",
+  "question": "가장 적절한 첫 치료는?",
+  "options": [
+   "프레드니솔론 30 mg 매일 복용",
+   "설파살라진 매일 복용",
+   "나프록센 최대 용량 매일 복용",
+   "아달리무맙 피하 주사",
+   "메토트렉세이트 주 1회 복용"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 40세 전 서서히 시작해 3개월 넘게 지속되고, 아침 뻣뻣함이 길며 운동으로 나아지고 쉬면 나빠지며 밤 후반에 깨는 허리 통증은 염증성 허리 통증이다. 앞포도막염 병력, HLA-B27 양성, 염증 수치 상승, X선의 양측 천장관절 미란·경화를 더하면 방사선학적 축성 척추관절염(강직척추염)이다. 첫 치료는 운동치료와 함께 충분한 용량의 NSAID 를 매일 쓰는 것이고, 두 가지 NSAID 를 각각 2~4주 써도 반응이 없을 때 TNF 억제제로 올린다.\n- 원리: <b>왜 NSAID 가 첫 치료인가</b>: 축성 척추관절염의 통증과 뻣뻣함은 천장관절·척추 부착부의 염증(부착부염)에서 온다. 프로스타글란딘 E2 는 이 염증과 통증의 중심 매개체이고, NSAID 는 COX 를 억제해 증상을 빠르게 줄인다. 환자의 약 70~80 % 가 2주 안에 좋은 반응을 보이며, 이 반응 자체가 진단을 뒷받침한다.<br> <b>왜 전통적 항류마티스제가 듣지 않는가</b>: 메토트렉세이트·설파살라진은 활막염이 중심인 말초관절염에는 효과가 있지만 척추·천장관절의 부착부염과 새 뼈 형성에는 효과가 입증되지 않았다. 그래서 축성 침범만 있을 때는 NSAID 다음 단계가 생물학적 제제(TNF 억제제 또는 IL-17 억제제)다.<br> <b>왜 전신 스테로이드를 쓰지 않는가</b>: 축성 질환에는 효과가 작고 장기 부작용(골다공증 — 이미 척추 골절 위험이 높다)이 크다. 국소 주사는 말초 부착부염에서 쓸 수 있다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">NSAID(정답)</th><th>TNF 억제제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td><b>첫 치료 — 진단 직후</b></td><td>두 가지 NSAID 를 각각 2~4주 써도 질병 활성이 높을 때</td></tr> <tr><td>효과</td><td>증상의 빠른 호전, 70~80 % 반응</td><td>증상·염증 호전, NSAID 실패에도 효과</td></tr> <tr><td>시작 전 확인</td><td>위장관·신장·심혈관 위험</td><td>잠복결핵·B형간염 선별</td></tr> <tr><td>이 증례</td><td>진통제를 써 본 적이 없다</td><td>아직 NSAID 실패가 없다</td></tr> </tbody></table> X선 변화가 있고 HLA-B27 이 양성이어도 치료 단계는 NSAID 부터다 — 생물학적 제제로 가는 기준은 「NSAID 실패」다.\n- 오답 이유:\n  - ① 전신 스테로이드는 축성 질환에 효과가 작아 쓰지 않으며, 다른 약을 쓸 수 없는 짧은 가교 치료나 국소 주사로만 고려된다.\n  - ② 설파살라진은 축성 증상에는 효과가 없고 무릎·발목 같은 말초관절염이 함께 있을 때 정답이 될 수 있다.\n  - ④ 아달리무맙은 두 가지 NSAID 를 각각 최대 용량으로 2~4주 써도 질병 활성 지수(ASDAS·BASDAI)가 높게 남을 때 정답이 된다.\n  - ⑤ 메토트렉세이트는 축성 침범이 아니라 류마티스관절염이나 건선관절염처럼 말초 활막염이 중심일 때 정답이 된다.\n- 함정: X선 미란과 HLA-B27 양성을 보고 바로 생물학적 제제를 고르는 것 — 진통제를 써 본 적 없는 환자의 첫 치료는 NSAID 다.\n- 학습목표: 40세 이전에 시작한 염증성 허리 통증과 양측 천장관절염을 축성 척추관절염으로 진단하고, 첫 치료로 충분한 용량의 NSAID 를 쓴 뒤 반응이 없을 때 TNF 억제제로 올린다\n- 근거·출처: Ward MM, Deodhar A, Gensler LS, et al. 2019 Update of the ACR/SAA/SPARTAN Recommendations for the Treatment of Ankylosing Spondylitis and Nonradiographic Axial Spondyloarthritis. Arthritis Rheumatol 2019;71:1599-1613 · Ramiro S, Nikiphorou E, Sepriano A, et al. ASAS-EULAR recommendations for the management of axial spondyloarthritis: 2022 update. Ann Rheum Dis 2023;82:19-34",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "40세 전 서서히 시작해 3개월 넘게 지속되고, 아침 뻣뻣함이 길며 운동으로 나아지고 쉬면 나빠지며 밤 후반에 깨는 허리 통증은 염증성 허리 통증이다. 앞포도막염 병력, HLA-B27 양성, 염증 수치 상승, X선의 양측 천장관절 미란·경화를 더하면 방사선학적 축성 척추관절염(강직척추염)이다. 첫 치료는 운동치료와 함께 충분한 용량의 NSAID 를 매일 쓰는 것이고, 두 가지 NSAID 를 각각 2~4주 써도 반응이 없을 때 TNF 억제제로 올린다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 NSAID 가 첫 치료인가</b>: 축성 척추관절염의 통증과 뻣뻣함은 천장관절·척추 부착부의 염증(부착부염)에서 온다. 프로스타글란딘 E2 는 이 염증과 통증의 중심 매개체이고, NSAID 는 COX 를 억제해 증상을 빠르게 줄인다. 환자의 약 70~80 % 가 2주 안에 좋은 반응을 보이며, 이 반응 자체가 진단을 뒷받침한다.<br> <b>왜 전통적 항류마티스제가 듣지 않는가</b>: 메토트렉세이트·설파살라진은 활막염이 중심인 말초관절염에는 효과가 있지만 척추·천장관절의 부착부염과 새 뼈 형성에는 효과가 입증되지 않았다. 그래서 축성 침범만 있을 때는 NSAID 다음 단계가 생물학적 제제(TNF 억제제 또는 IL-17 억제제)다.<br> <b>왜 전신 스테로이드를 쓰지 않는가</b>: 축성 질환에는 효과가 작고 장기 부작용(골다공증 — 이미 척추 골절 위험이 높다)이 크다. 국소 주사는 말초 부착부염에서 쓸 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">NSAID(정답)</th><th>TNF 억제제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td><b>첫 치료 — 진단 직후</b></td><td>두 가지 NSAID 를 각각 2~4주 써도 질병 활성이 높을 때</td></tr> <tr><td>효과</td><td>증상의 빠른 호전, 70~80 % 반응</td><td>증상·염증 호전, NSAID 실패에도 효과</td></tr> <tr><td>시작 전 확인</td><td>위장관·신장·심혈관 위험</td><td>잠복결핵·B형간염 선별</td></tr> <tr><td>이 증례</td><td>진통제를 써 본 적이 없다</td><td>아직 NSAID 실패가 없다</td></tr> </tbody></table> X선 변화가 있고 HLA-B27 이 양성이어도 치료 단계는 NSAID 부터다 — 생물학적 제제로 가는 기준은 「NSAID 실패」다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 전신 스테로이드는 축성 질환에 효과가 작아 쓰지 않으며, 다른 약을 쓸 수 없는 짧은 가교 치료나 국소 주사로만 고려된다.\n② 설파살라진은 축성 증상에는 효과가 없고 무릎·발목 같은 말초관절염이 함께 있을 때 정답이 될 수 있다.\n④ 아달리무맙은 두 가지 NSAID 를 각각 최대 용량으로 2~4주 써도 질병 활성 지수(ASDAS·BASDAI)가 높게 남을 때 정답이 된다.\n⑤ 메토트렉세이트는 축성 침범이 아니라 류마티스관절염이나 건선관절염처럼 말초 활막염이 중심일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "X선 미란과 HLA-B27 양성을 보고 바로 생물학적 제제를 고르는 것 — 진통제를 써 본 적 없는 환자의 첫 치료는 NSAID 다."
+   },
+   {
+    "k": "학습목표",
+    "v": "40세 이전에 시작한 염증성 허리 통증과 양측 천장관절염을 축성 척추관절염으로 진단하고, 첫 치료로 충분한 용량의 NSAID 를 쓴 뒤 반응이 없을 때 TNF 억제제로 올린다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ward MM, Deodhar A, Gensler LS, et al. 2019 Update of the ACR/SAA/SPARTAN Recommendations for the Treatment of Ankylosing Spondylitis and Nonradiographic Axial Spondyloarthritis. Arthritis Rheumatol 2019;71:1599-1613 · Ramiro S, Nikiphorou E, Sepriano A, et al. ASAS-EULAR recommendations for the management of axial spondyloarthritis: 2022 update. Ann Rheum Dis 2023;82:19-34"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "염증성 허리 통증·앞포도막염·HLA-B27·양측 천장관절염으로 축성 척추관절염을 진단하고, 치료를 받은 적 없으면 충분한 용량의 NSAID 로 시작한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "TNF 억제제는 NSAID 두 가지 실패 뒤에 쓴다 — 이 환자는 진통제를 써 본 적이 없다",
+   "steps": 3,
+   "chain": [
+    "아침 뻣뻣함 1시간 이상·운동으로 호전·밤 후반 통증·24세 → 염증성 허리 통증",
+    "앞포도막염 병력 + HLA-B27 양성 + 양측 천장관절 미란·경화 → 축성 척추관절염",
+    "치료받은 적 없음 → NSAID 최대 용량(실패 시 TNF 억제제)"
+   ],
+   "key": [
+    {
+     "item": "아침에 일어나면 허리가 1시간 이상 뻣뻣하고",
+     "why": "염증성 허리 통증의 특징",
+     "also": []
+    },
+    {
+     "item": "오른쪽 눈이 붉고 아프며 눈부심이 있어",
+     "why": "앞포도막염 — 척추관절염의 관절 외 증상",
+     "also": []
+    },
+    {
+     "item": "양쪽 천장관절의 관절면 미란과 경화",
+     "why": "방사선학적 천장관절염",
+     "also": []
+    },
+    {
+     "item": "HLA-B27 양성",
+     "why": "척추관절염 분류 기준의 한 항목",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "건선·설사·요도 분비물은 없었다",
+     "why": "건선·장염·반응성 관절염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "이전에 진통제는 써 본 적이 없다",
+     "why": "NSAID 실패가 없으므로 생물학적 제제 기준이 아니다",
+     "also": []
+    },
+    {
+     "item": "말초관절 부기는 없다",
+     "why": "말초관절염용 설파살라진·메토트렉세이트의 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "염증성 허리 통증·앞포도막염·HLA-B27·양측 천장관절염은 축성 척추관절염이다. 치료받은 적이 없으므로 충분한 용량의 NSAID 로 시작하고, 실패하면 TNF 억제제로 올린다.",
+   "switch": {
+    "choice": "D",
+    "condition": "나프록센과 셀레콕시브를 각각 4주씩 최대 용량으로 써도 아침 뻣뻣함과 CRP 상승이 지속되었다면 TNF 억제제를 시작한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0497",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·이비인후과·류마티스·진단검사·소아·약리·예방의학)",
+  "subtopic": "이비인후과 — 몇 시간씩 지속되는 반복 어지럼과 한쪽 귀 먹먹함",
+  "type": "이비인후과 — 몇 시간씩 지속되는 반복 어지럼과 한쪽 귀 먹먹함",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-31",
+  "vignette": "A 45-year-old woman comes to the physician because of recurrent episodes of spinning vertigo over the past 4 months. Each episode lasts 2 to 4 hours and is accompanied by nausea, a roaring sound, and a feeling of fullness in the left ear. Between episodes she feels well, but she thinks her hearing in the left ear has become worse and fluctuates. She has no headache, visual aura, or weakness. Otoscopic examination shows normal tympanic membranes. The Weber test lateralizes to the right ear, and the Rinne test shows air conduction greater than bone conduction bilaterally. Pure-tone audiometry shows a left low-frequency sensorineural hearing loss. Neurologic examination between attacks is normal.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Benign paroxysmal positional vertigo",
+   "Vestibular migraine",
+   "Ménière disease",
+   "Vestibular schwannoma",
+   "Vestibular neuritis"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Recurrent spontaneous vertigo lasting 20 minutes to 12 hours, with fluctuating low-frequency sensorineural hearing loss, tinnitus, and aural fullness in the same ear, fulfills the criteria for definite Ménière disease. Weber lateralizing to the right with air conduction greater than bone conduction on both sides indicates a left sensorineural loss, confirmed by audiometry. The normal examination between attacks and the absence of headache or aura make a central or migrainous cause less likely.\n- 원리: <b>Why endolymphatic hydrops gives these symptoms</b>: in Ménière disease, endolymph accumulates and distends the membranous labyrinth. In the cochlea, the apex — which encodes low frequencies — is the most compliant part, so distension first impairs low tones and causes a roaring tinnitus and a pressure sensation. When the distended membranes leak or rupture, potassium-rich endolymph mixes with perilymph and transiently depolarizes vestibular hair cells and nerve fibers, producing an attack of vertigo lasting hours until the ionic balance is restored.<br> <b>Why the hearing fluctuates</b>: early on, the hair cells are stressed rather than destroyed, so hearing recovers between attacks; repeated episodes cause permanent loss that later becomes flat.<br> <b>Why the duration matters</b>: seconds point to positional vertigo, hours to Ménière disease or migraine, days of continuous vertigo to vestibular neuritis, and slowly progressive imbalance to a mass.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Ménière disease (answer)</th><th>Vestibular schwannoma (closest distractor)</th></tr></thead><tbody> <tr><td>Vertigo</td><td><b>Discrete attacks of 20 min to 12 h</b></td><td>Usually mild, chronic unsteadiness — central compensation for slow loss</td></tr> <tr><td>Hearing loss</td><td>Low frequency, fluctuating</td><td>High frequency, slowly progressive, poor speech discrimination</td></tr> <tr><td>Aural fullness</td><td>Prominent during attacks</td><td>Uncommon</td></tr> <tr><td>Key test</td><td>Audiometry over time</td><td>Gadolinium-enhanced MRI of the internal auditory canal</td></tr> </tbody></table> Any asymmetric sensorineural loss still warrants MRI to exclude a schwannoma — but episodic hours-long vertigo with fluctuating low-tone loss points to hydrops.\n- 오답 이유:\n  - (A) Benign paroxysmal positional vertigo would be correct if vertigo lasted less than a minute, was triggered by head position, and hearing were normal.\n  - (B) Vestibular migraine would be correct with migraine headache, photophobia, or visual aura accompanying the attacks and without progressive one-sided hearing loss.\n  - (D) Vestibular schwannoma would be correct with slowly progressive unilateral high-frequency loss, poor speech discrimination, and constant imbalance rather than hours-long attacks.\n  - (E) Vestibular neuritis would be correct with a single episode of continuous vertigo lasting days after a viral illness, with normal hearing.\n- 함정: Choosing vestibular schwannoma because of unilateral sensorineural loss and tinnitus — the hours-long attacks and fluctuating low-frequency loss indicate hydrops.\n- 학습목표: 수십 분~수 시간 지속되는 반복 회전성 어지럼, 변동하는 저음역 감각신경성 난청, 이명과 이충만감으로 메니에르병을 진단하고 전정신경집종·전정신경염과 가른다\n- 근거·출처: Lopez-Escamez JA, Carey J, Chung WH, et al. Diagnostic criteria for Menière's disease. J Vestib Res 2015;25:1-7 · Basura GJ, Adams ME, Monfared A, et al. Clinical Practice Guideline: Ménière's Disease. Otolaryngol Head Neck Surg 2020;162(2 Suppl):S1-S55",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Recurrent spontaneous vertigo lasting 20 minutes to 12 hours, with fluctuating low-frequency sensorineural hearing loss, tinnitus, and aural fullness in the same ear, fulfills the criteria for definite Ménière disease. Weber lateralizing to the right with air conduction greater than bone conduction on both sides indicates a left sensorineural loss, confirmed by audiometry. The normal examination between attacks and the absence of headache or aura make a central or migrainous cause less likely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why endolymphatic hydrops gives these symptoms</b>: in Ménière disease, endolymph accumulates and distends the membranous labyrinth. In the cochlea, the apex — which encodes low frequencies — is the most compliant part, so distension first impairs low tones and causes a roaring tinnitus and a pressure sensation. When the distended membranes leak or rupture, potassium-rich endolymph mixes with perilymph and transiently depolarizes vestibular hair cells and nerve fibers, producing an attack of vertigo lasting hours until the ionic balance is restored.<br> <b>Why the hearing fluctuates</b>: early on, the hair cells are stressed rather than destroyed, so hearing recovers between attacks; repeated episodes cause permanent loss that later becomes flat.<br> <b>Why the duration matters</b>: seconds point to positional vertigo, hours to Ménière disease or migraine, days of continuous vertigo to vestibular neuritis, and slowly progressive imbalance to a mass."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Ménière disease (answer)</th><th>Vestibular schwannoma (closest distractor)</th></tr></thead><tbody> <tr><td>Vertigo</td><td><b>Discrete attacks of 20 min to 12 h</b></td><td>Usually mild, chronic unsteadiness — central compensation for slow loss</td></tr> <tr><td>Hearing loss</td><td>Low frequency, fluctuating</td><td>High frequency, slowly progressive, poor speech discrimination</td></tr> <tr><td>Aural fullness</td><td>Prominent during attacks</td><td>Uncommon</td></tr> <tr><td>Key test</td><td>Audiometry over time</td><td>Gadolinium-enhanced MRI of the internal auditory canal</td></tr> </tbody></table> Any asymmetric sensorineural loss still warrants MRI to exclude a schwannoma — but episodic hours-long vertigo with fluctuating low-tone loss points to hydrops."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Benign paroxysmal positional vertigo would be correct if vertigo lasted less than a minute, was triggered by head position, and hearing were normal.\n(B) Vestibular migraine would be correct with migraine headache, photophobia, or visual aura accompanying the attacks and without progressive one-sided hearing loss.\n(D) Vestibular schwannoma would be correct with slowly progressive unilateral high-frequency loss, poor speech discrimination, and constant imbalance rather than hours-long attacks.\n(E) Vestibular neuritis would be correct with a single episode of continuous vertigo lasting days after a viral illness, with normal hearing."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing vestibular schwannoma because of unilateral sensorineural loss and tinnitus — the hours-long attacks and fluctuating low-frequency loss indicate hydrops."
+   },
+   {
+    "k": "학습목표",
+    "v": "수십 분~수 시간 지속되는 반복 회전성 어지럼, 변동하는 저음역 감각신경성 난청, 이명과 이충만감으로 메니에르병을 진단하고 전정신경집종·전정신경염과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Lopez-Escamez JA, Carey J, Chung WH, et al. Diagnostic criteria for Menière's disease. J Vestib Res 2015;25:1-7 · Basura GJ, Adams ME, Monfared A, et al. Clinical Practice Guideline: Ménière's Disease. Otolaryngol Head Neck Surg 2020;162(2 Suppl):S1-S55"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "수 시간 지속되는 반복 회전성 어지럼에 같은 귀의 변동하는 저음역 감각신경성 난청·이명·이충만감이 동반되면 메니에르병이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "전정신경집종은 고음역 난청이 서서히 진행하고 발작성 어지럼이 드물다 — 이 환자는 2~4시간 발작과 변동하는 저음역 난청이다",
+   "steps": 2,
+   "chain": [
+    "Weber 오른쪽 편위 + 양쪽 Rinne 기도>골도 + 청력검사 → 왼쪽 저음역 감각신경성 난청",
+    "2~4시간 발작성 어지럼 + 이충만감·이명 + 변동하는 난청 → 메니에르병"
+   ],
+   "key": [
+    {
+     "item": "Each episode lasts 2 to 4 hours",
+     "why": "발작 지속 시간이 메니에르병의 범위(20분~12시간)",
+     "also": []
+    },
+    {
+     "item": "a feeling of fullness in the left ear",
+     "why": "내림프수종의 이충만감",
+     "also": []
+    },
+    {
+     "item": "left low-frequency sensorineural hearing loss",
+     "why": "수종이 먼저 침범하는 와우 첨부의 저음역",
+     "also": []
+    },
+    {
+     "item": "The Weber test lateralizes to the right ear",
+     "why": "왼쪽 감각신경성 난청을 뜻한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no headache, visual aura, or weakness",
+     "why": "전정 편두통·중추성 원인 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "normal tympanic membranes",
+     "why": "중이 질환에 의한 전음성 난청 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "수 시간 발작성 어지럼과 같은 귀의 변동하는 저음역 감각신경성 난청·이명·이충만감은 메니에르병이다. 고음역 진행성 난청이 아니므로 전정신경집종보다 먼저다.",
+   "switch": {
+    "choice": "D",
+    "condition": "어지럼 발작 없이 왼쪽 고음역 난청이 수년간 서서히 나빠지고 어음 변별력이 크게 떨어졌다면 전정신경집종을 의심해 MRI 를 찍는다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261031T201823Z_일일영상_2026-11-01_9units_9q_df6963f9",
+  "qid": "Q0004"
  },
  {
   "id": "imaging-2026-0484",
