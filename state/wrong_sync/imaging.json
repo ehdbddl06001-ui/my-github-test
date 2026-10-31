@@ -580,8 +580,29 @@
    "date": "2026-10-31",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0491": {
+   "id": "imaging-2026-0491",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "",
+   "type": "심전도 판독 — 가끔 내려앉는 느낌의 젊은 여성",
+   "style": "kmle_style",
+   "modality": "ECG",
+   "question": "심전도 판독으로 가장 적절한 것은?",
+   "chosen": 0,
+   "chosenText": "간헐적 좌각차단",
+   "answer": 2,
+   "answerText": "심실 기외수축",
+   "coreNote": "",
+   "differ": "",
+   "decision": "동리듬 사이에 조기에 오는 넓고 기이한 QRS 가 앞선 조기 P파 없이 나타나고 T파가 반대 방향이다. 심실 기외수축이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+   "date": "2026-11-01",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-31T14:37:21.058Z"
+ "updated": "2026-10-31T15:08:03.018Z"
 }
