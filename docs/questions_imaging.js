@@ -790,6 +790,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.ischemic-ecg-localization.culprit-artery",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0493.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -1071,6 +1072,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.premature-ventricular-complex.ecg-recognition",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0491.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",

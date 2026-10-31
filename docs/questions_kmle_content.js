@@ -1412,6 +1412,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.ortho.axial-spondyloarthritis.sacroiliac-mri",
+  "qversion": 2,
   "distractors": {
    "D": {
     "tempting": "X선이 정상이니 시간이 지나 변화가 생기면 확인하면 된다고 생각한다.",
@@ -1425,6 +1426,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "엉치엉덩관절은 원래 섭취가 많아 뼈스캔의 민감도·특이도가 낮아 척추관절염 진단에 권하지 않는다.",
     "discriminator": "엉치엉덩관절염을 보려는 목적.",
     "when_right": "",
+    "split": ""
+   },
+   "A": {
+    "tempting": "허리가 아프고 X선이 정상이면 더 자세한 단면 영상으로 척추를 보는 것이 자연스러워 보인다.",
+    "answer_first": "CT 는 미란·경화 같은 구조 변화만 보고 활동성 염증(골수 부종)은 보지 못하며 방사선 노출이 크다. 초기 축성 척추관절염의 병변은 요추가 아니라 엉치엉덩관절의 염증이라 MRI가 먼저다.",
+    "discriminator": "골반 X선 정상(구조 변화 전 단계) + 엉치엉덩관절 압통 — 찾을 것은 엉치엉덩관절의 염증.",
+    "when_right": "MRI를 찍을 수 없거나 금기일 때 구조 변화를 평가하는 대안(저선량 엉치엉덩관절 CT).",
     "split": ""
    }
   },

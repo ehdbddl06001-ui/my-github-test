@@ -5974,6 +5974,680 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.cardio.ischemic-ecg-localization.culprit-artery": {
+  "id": "cn.cardio.ischemic-ecg-localization.culprit-artery",
+  "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
+  "objective": "허혈성 ST-T 변화가 모인 유도로 심근 벽을 정하고 책임 관상동맥(좌전하행지·회선지·우관상동맥)을 고른다",
+  "objectiveKind": "진단",
+  "condition": "관상동맥 질환의 허혈성 심전도 변화(전벽·하벽·측벽)",
+  "topic": "Cardiology",
+  "seeAlso": [],
+  "version": 2,
+  "updated": "2026-11-01",
+  "reviewStatus": "unreviewed",
+  "hash": "37c7a057908d38d0",
+  "summary": [
+   "결론: V1~V4(± V5)·I·aVL = 전벽 → 좌전하행지(LAD). II·III·aVF = 하벽 → 대개 우관상동맥(RCA).",
+   "시험 단서: 운동 시 흉부 압박(stable angina) + 통증 없을 때 V2~V4 중심의 T파 역위.",
+   "왜: 흉부 유도는 바로 밑 벽을 본다 — 좌전하행지가 중격·전벽에, 대각지가 고위 측벽(aVL)에 피를 준다.",
+   "회선지는 I·aVL·V5·V6 중심, 또는 V1~V3 의 거울상 ST 하강(후벽).",
+   "비ST상승 변화는 ST상승보다 위치를 덜 정확히 가리킨다 — 예외: 흉부 유도 깊은 T파 역위는 좌전하행지 심한 협착."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 이 유도면 이 혈관인가",
+    "deep": false,
+    "html": "<ul>\n<li>각 흉부 유도는 <strong>바로 밑의 벽</strong>을 본다. 전벽(첨부·측벽 포함) 허혈은 V1~V6 와 I·aVL, 하벽 허혈은 II·III·aVF 에 나타난다 <sup>[1 247장 p.1872]</sup>.</li>\n<li>그래서 변화가 모인 <strong>유도 묶음 → 벽 → 그 벽을 맡은 혈관</strong> 순서로 고른다.</li>\n<li>흉부 유도의 깊은 T파 역위는 좌전하행지의 심한 협착을 가리키는 대표 소견이다 <sup>[1 247장 p.1873]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 허혈 층에 따라 ST 가 기운다",
+    "deep": false,
+    "html": "<p>허혈 부위와 정상 부위 사이의 전압차가 손상 전류를 만들고, 이것이 ST 를 움직인다. 경벽 허혈이면 ST 벡터가 바깥(심외막)으로 향해 그 위 유도에 ST 상승이, 내막하 허혈이면 벡터가 안쪽으로 향해 ST 하강이 생긴다 <sup>[1 247장 p.1872]</sup>. 완전히 막히지 않은 고정 협착은 주로 내막하 허혈을 일으키고, 재분극 지연이 T파를 그 부위에서 돌려세워 증상 없을 때도 T파 역위로 남을 수 있다 <sup>[1 247장 p.1873]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 유도 묶음과 혈관",
+    "deep": false,
+    "html": "<ul>\n<li>후벽 허혈은 직접 보는 유도가 없어 V1~V3 의 거울상 ST 하강으로 간접적으로 읽는다 <sup>[1 247장 p.1872]</sup>.</li>\n<li>우심실 허혈은 우측 흉부 유도의 ST 상승으로 본다 <sup>[1 247장 p.1872]</sup>.</li>\n<li><strong>한계</strong>: 정상 심전도 한 장으로 허혈을 배제하지 못한다 <sup>[1 247장 p.1873]</sup>. T파 역위는 비대·각차단·약물·뇌출혈에서도 생긴다 <sup>[1 247장 p.1874]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>혈관과 벽의 대응은 우세형·개인차에 따라 달라진다(하벽이 회선지일 수 있음).</li>\n<li>안정 협심증의 다음 검사·치료는 이 정리본의 목표가 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 비ST상승 변화로 위치 정하기</strong> — 시험 기준: T파 역위가 모인 유도로 벽과 혈관을 고른다(문항이 이렇게 묻는다) / 다른 기준: 유도는 비ST상승 허혈보다 ST상승 허혈의 위치를 더 잘 가리킨다 <sup>[1 247장 p.1872]</sup> / 왜 다른가: 내막하 허혈의 ST 하강은 넓게 퍼져 책임 부위와 어긋날 수 있다 — 다만 흉부 유도 깊은 T파 역위는 좌전하행지를 비교적 잘 가리킨다 <sup>[1 247장 p.1873]</sup> / 시험에서는: KMLE · USMLE 모두 유도 묶음 → 혈관 대응으로 답한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "유도 → 벽 → 책임 혈관",
+    "columns": [
+     "유도",
+     "벽",
+     "흔한 책임 혈관"
+    ],
+    "rows": [
+     [
+      "V1~V4(± V5), I·aVL",
+      "중격·전벽(첨부·측벽 포함)",
+      "좌전하행지 <sup>[1 247장 p.1872]</sup>"
+     ],
+     [
+      "II·III·aVF",
+      "하벽",
+      "대개 우관상동맥(우세형에 따라 회선지)"
+     ],
+     [
+      "I·aVL·V5·V6",
+      "측벽",
+      "회선지 또는 대각지"
+     ],
+     [
+      "V1~V3 ST 하강·큰 R(거울상)",
+      "후벽",
+      "회선지·우관상동맥 <sup>[1 247장 p.1872]</sup>"
+     ],
+     [
+      "우측 흉부 유도 ST 상승",
+      "우심실",
+      "근위 우관상동맥 <sup>[1 247장 p.1872]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "우관상동맥 vs 좌전하행지",
+    "point": "우관상동맥은 대개 하벽을 맡아 II·III·aVF 에 변화가 생긴다. 변화가 V2~V5·aVL 에 모여 있고 하벽 유도가 깨끗하면 전벽, 곧 좌전하행지다.",
+    "exception": "",
+    "cites": "<sup>[1 247장 p.1872]</sup>"
+   },
+   {
+    "contrast": "aVL 이 있으니 측벽 = 회선지?",
+    "point": "aVL 은 좌전하행지의 대각지 영역(고위 측벽)도 본다. 역위의 중심이 V2~V4 면 좌전하행지다. 회선지는 I·aVL·V5·V6 가 주이고 V2~V4 변화가 적다.",
+    "exception": "",
+    "cites": "<sup>[1 247장 p.1873]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "aVL 은 대각지(좌전하행지 가지)의 고위 측벽도 본다 — aVL 이 있다고 바로 회선지로 가지 않는다.",
+   "하벽은 우세 혈관에 따라 회선지일 수도 있다. 하벽 + 서맥·방실차단은 우관상동맥 쪽 단서다.",
+   "비ST상승 변화(T파 역위·ST 하강)는 ST 상승보다 위치를 덜 정확히 가리킨다 <sup>[1 247장 p.1872]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "lad-twi",
+    "name": "흉부 유도 깊은 T파 역위",
+    "kind": "판독 기준",
+    "population": "허혈성 흉통 환자",
+    "statement": "여러 흉부 유도(V1~V4, 때로 I·aVL)의 깊은 T파 역위는 대개 좌전하행지의 심한 협착을 뜻한다(Wellens T파) [[harrison-22: 247장 p.1873]]",
+    "exceptions": "T파 역위는 비대·각차단·약물·뇌출혈 등에서도 생긴다 — 임상과 함께 [[harrison-22: 247장 p.1874]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 247: Electrocardiography",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 247장 p.1872–1874",
+    "checked": "드라이브 22판 장별 문서 H22_247 본문 대조 — 경벽 허혈은 ST 상승, 내막하 허혈은 그 위 유도의 ST 하강, 유도는 비ST상승보다 ST상승 허혈의 위치를 더 잘 가리킴, 전벽(첨부·측벽 포함) = V1~V6·I·aVL, 하벽 = II·III·aVF, 후벽 = V1~V3 거울상 ST 하강, 우심실 = 우측 흉부 유도(p.1872) · 흉부 유도 깊은 T파 역위(V1~V4, 때로 I·aVL)는 대개 좌전하행지 심한 협착, Fig. 247-12 Wellens(p.1873) · 뇌출혈의 깊은 T파 역위 등 비허혈 원인(p.1874). 혈관별 벽 배정(우관상동맥=하벽, 회선지=측벽)과 대각지-aVL 연결은 이 장 본문에 명시되지 않음(원문 미대조)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-01",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "V2~V5·aVL 의 T파 역위, 하벽 유도는 정상. 책임 혈관은?",
+    "a": "좌전하행지 — 중격·전벽과 대각지의 고위 측벽."
+   },
+   {
+    "q": "II·III·aVF 의 ST 상승이면?",
+    "a": "하벽 — 대개 우관상동맥."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.ischemic-ecg-localization.culprit-artery#v1",
+    "context": "Same patient frame, ischemic changes moved to the inferior leads (text, no image)",
+    "stem": "A 64-year-old man comes to the emergency department because of crushing substernal chest pain that began 50 minutes ago while he was shoveling snow. He has hypertension and smokes 1 pack of cigarettes daily. His pulse is 52/min and blood pressure is 104/66 mm Hg. A 12-lead ECG shows sinus rhythm with 3-mm ST-segment elevation in leads II, III, and aVF and ST-segment depression in leads I and aVL. The precordial leads show no ST elevation. Which of the following coronary arteries is most likely occluded?",
+    "options": [
+     "Left internal mammary artery",
+     "Left anterior descending artery",
+     "Left circumflex artery",
+     "Right coronary artery",
+     "Left main coronary artery"
+    ],
+    "answer": 4,
+    "explanation": "The ischemic changes now sit in II, III, and aVF (inferior wall) with reciprocal depression in I and aVL, and the precordial leads are spared. The inferior wall is usually supplied by the right coronary artery, which in most people also supplies the sinoatrial and atrioventricular nodes — consistent with the bradycardia. Changes centered on V1–V4 would have pointed to the LAD.",
+    "of": "imaging-2026-0493",
+    "changed": "T-wave inversion in aVL and V2–V5 → ST elevation in II, III, aVF with reciprocal ST depression in I and aVL and sinus bradycardia ⇒ the territory moves from anterior to inferior, so the answer changes from LAD to right coronary artery",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.ischemic-ecg-localization.culprit-artery#v2",
+    "context": "Surface changed — different patient, pain-free after an episode, text description",
+    "stem": "A 58-year-old man comes to the emergency department because of an episode of chest pressure at rest that lasted 20 minutes and resolved 6 hours ago. He has hyperlipidemia. He is now pain free. His pulse is 78/min and blood pressure is 138/84 mm Hg. A 12-lead ECG shows sinus rhythm with deep, symmetric T-wave inversions in leads V1 through V4 and no ST elevation; the inferior leads are normal. Serum troponin is slightly elevated. Which of the following coronary arteries most likely has a critical stenosis?",
+    "options": [
+     "Right coronary artery",
+     "Posterior descending artery",
+     "Left anterior descending artery",
+     "Left circumflex artery",
+     "Acute marginal artery"
+    ],
+    "answer": 3,
+    "explanation": "Age, sex, and presentation changed, but the deciding clue is the same: T-wave inversion centered on the anterior precordial leads with normal inferior leads. Deep T-wave inversions across V1–V4 in a patient with ischemic chest pain typically indicate severe obstruction of the LAD. Inferior-lead changes would point to the right coronary artery; lateral-lead changes (I, aVL, V5, V6) to the circumflex.",
+    "of": "imaging-2026-0493",
+    "changed": "70-year-old woman with stable exertional angina, image → 58-year-old man whose chest pain resolved 6 hours ago, ECG described in words with deep T-wave inversions in V1–V4 ⇒ inversion centered on the anterior precordial leads is unchanged, so the answer stays LAD",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-04964.png",
+    "kind": "ecg",
+    "at": "판단 — 왜 이 유도면 이 혈관인가",
+    "shows": "전중격 유도의 허혈성 변화(라벨: ischemic in anteroseptal leads)",
+    "look": [
+     "V2~V5 의 얕은 T파 역위",
+     "aVL 의 T파 역위"
+    ],
+    "label": "ischemic in anteroseptal leads (SCP ISCAS, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4964",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/04000/#files-panel",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "허혈성 ST-T 변화 — 어느 혈관인가",
+  "geo": {
+   "title": "허혈성 ST-T 변화 — 어느 혈관인가",
+   "w": 680.0,
+   "h": 538.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "허혈성 ST-T 변화가 있는",
+      "심전도"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "where",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "변화가 모인 유도 묶음을 표시"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "inf",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "II·III·aVF 에 모여 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 171.0
+    },
+    {
+     "id": "rca",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "하벽 — 대개 우관상동맥"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 261.0
+    },
+    {
+     "id": "ant",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "중심이 V1~V4 인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 261.0
+    },
+    {
+     "id": "lad",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전벽 — 좌전하행지"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 351.0
+    },
+    {
+     "id": "lat",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "I·aVL·V5·V6 또는 V1~V3",
+      "거울상?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 351.0
+    },
+    {
+     "id": "lcx",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "측벽·후벽 — 회선지"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 458.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "비허혈 원인(비대·각차단·",
+      "약물) 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 458.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "where",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "where",
+     "to": "inf",
+     "points": [
+      [
+       227.0,
+       149.0
+      ],
+      [
+       227.0,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "inf",
+     "to": "rca",
+     "points": [
+      [
+       194.3,
+       218.0
+      ],
+      [
+       194.3,
+       247.0
+      ],
+      [
+       114.0,
+       247.0
+      ],
+      [
+       114.0,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "inf",
+     "to": "ant",
+     "points": [
+      [
+       259.7,
+       218.0
+      ],
+      [
+       259.7,
+       247.0
+      ],
+      [
+       340.0,
+       247.0
+      ],
+      [
+       340.0,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "ant",
+     "to": "lad",
+     "points": [
+      [
+       307.3,
+       308.0
+      ],
+      [
+       307.3,
+       337.0
+      ],
+      [
+       227.0,
+       337.0
+      ],
+      [
+       227.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "ant",
+     "to": "lat",
+     "points": [
+      [
+       372.7,
+       308.0
+      ],
+      [
+       372.7,
+       337.0
+      ],
+      [
+       453.0,
+       337.0
+      ],
+      [
+       453.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "lat",
+     "to": "lcx",
+     "points": [
+      [
+       420.3,
+       415.0
+      ],
+      [
+       420.3,
+       444.0
+      ],
+      [
+       340.0,
+       444.0
+      ],
+      [
+       340.0,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 419.0
+     }
+    },
+    {
+     "from": "lat",
+     "to": "other",
+     "points": [
+      [
+       485.7,
+       415.0
+      ],
+      [
+       485.7,
+       444.0
+      ],
+      [
+       566.0,
+       444.0
+      ],
+      [
+       566.0,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 419.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "허혈성 ST-T 변화가 있는 심전도",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "변화가 모인 유도 묶음을 표시"
+     }
+    ]
+   },
+   {
+    "id": "where",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "변화가 모인 유도 묶음을 표시",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "II·III·aVF 에 모여 있나?"
+     }
+    ]
+   },
+   {
+    "id": "inf",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "II·III·aVF 에 모여 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "하벽 — 대개 우관상동맥"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "중심이 V1~V4 인가?"
+     }
+    ]
+   },
+   {
+    "id": "rca",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "하벽 — 대개 우관상동맥",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ant",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "중심이 V1~V4 인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "전벽 — 좌전하행지"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "I·aVL·V5·V6 또는 V1~V3 거울상?"
+     }
+    ]
+   },
+   {
+    "id": "lad",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전벽 — 좌전하행지",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lat",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "I·aVL·V5·V6 또는 V1~V3 거울상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "측벽·후벽 — 회선지"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "비허혈 원인(비대·각차단·약물) 확인"
+     }
+    ]
+   },
+   {
+    "id": "lcx",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "측벽·후벽 — 회선지",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "비허혈 원인(비대·각차단·약물) 확인",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0493"
+  ],
+  "hasErrors": false
+ },
  "cn.cardio.long-qt-syndrome.first-line-drug": {
   "id": "cn.cardio.long-qt-syndrome.first-line-drug",
   "title": "선천 QT연장증후군 — 1차 약은 비선택 베타차단제",
@@ -7105,6 +7779,777 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1035"
+  ],
+  "hasErrors": false
+ },
+ "cn.cardio.premature-ventricular-complex.ecg-recognition": {
+  "id": "cn.cardio.premature-ventricular-complex.ecg-recognition",
+  "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
+  "objective": "심전도에서 조기에 오는 넓고 기이한 QRS·앞선 조기 P파 없음·반대 방향 T파로 심실 기외수축을 읽고 각차단·변행전도 심방 기외수축과 가른다",
+  "objectiveKind": "진단",
+  "condition": "심실 기외수축(premature ventricular complex, PVC)",
+  "topic": "Cardiology",
+  "seeAlso": [],
+  "version": 2,
+  "updated": "2026-11-01",
+  "reviewStatus": "unreviewed",
+  "hash": "9438a56ea8ac6481",
+  "summary": [
+   "결론: 예정보다 일찍 온 넓고(> 0.12초) 기이한 QRS + 앞에 조기 P파 없음 + 반대 방향 T파 = 심실 기외수축.",
+   "시험 단서: 「쿵 하고 내려앉는」 두근거림, 가끔 불규칙한 맥, 리듬 스트립 중간에 끼어든 넓은 박동 하나.",
+   "왜: 심실 근육에서 시작한 흥분은 퍼킨제 전도계를 못 타 천천히 번진다 — 그래서 넓고, 재분극도 거꾸로 선다.",
+   "넓다는 것만으로 각차단이 아니다 — 각차단은 제때 오고 정상 PR 의 P파가 앞에 있다.",
+   "구조 심질환·심전도 이상이 없으면 대개 양성 — 안심시키기와 카페인·술 줄이기."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 넓은 박동 하나를 읽는 순서",
+    "deep": false,
+    "html": "<ul>\n<li><strong>언제 왔나</strong>: 예정보다 일찍 온 박동이 기외수축이다. 제때 온 넓은 박동은 각차단 쪽이다.</li>\n<li><strong>앞에 P파가 있나</strong>: 앞 T파가 다른 T파와 같으면 숨은 조기 P파가 없다 — 심실 기원.</li>\n<li><strong>몇 개인가</strong>: 하나는 기외수축, 둘은 쌍발, 3개 이상·100회 초과는 심실빈맥이다 <sup>[1 259장 p.1954]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 퍼킨제 고속도로를 못 탄 흥분",
+    "deep": false,
+    "html": "<p>정상 흥분은 히스-퍼킨제계를 타고 두 심실을 거의 동시에 탈분극시켜 QRS 가 좁다. 심실 근육의 한 곳에서 시작한 흥분은 근육에서 근육으로 천천히 번져 QRS 가 대개 0.12초를 넘게 넓어진다 <sup>[1 259장 p.1954]</sup>. 탈분극 순서가 바뀌면 재분극 순서도 따라 바뀌어 T파가 QRS 와 반대로 선다(이차성 ST-T 변화, 허혈이 아니다). 처음 흥분한 자리가 QRS 모양을 정하므로 V1 모양과 전두면 축으로 기원 위치를 짐작한다 <sup>[1 259장 p.1956]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 넓은 박동 하나를 만났을 때",
+    "deep": false,
+    "html": "<ul>\n<li>다형(모양이 여럿)이거나 V1 우각차단 모양이면 구조 심질환 가능성이 더 높다 <sup>[1 260장 p.1960]</sup>.</li>\n<li>기외수축은 교감 자극·허혈·저산소·전해질 이상(특히 저칼륨혈증)의 신호일 수 있다 <sup>[1 260장 p.1960]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>구조 심질환이 없고 평소 심전도가 정상이면 안심시키기와 카페인·술 같은 악화 요인 제거로 충분한 경우가 많다 <sup>[1 259장 p.1957]</sup>.</li>\n<li>실신·운동 중 증상·돌연사 가족력·심전도 이상이 있으면 심초음파 등으로 구조 질환을 평가한다 <sup>[1 259장 p.1957]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 259장 p.1954–1957 · 260장 p.1960)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "넓은 QRS 박동 — 무엇이 가르나",
+    "columns": [
+     "판독",
+     "때",
+     "앞의 P파"
+    ],
+    "rows": [
+     [
+      "심실 기외수축",
+      "조기",
+      "없음 · T파는 QRS 와 반대 <sup>[1 259장 p.1954]</sup>"
+     ],
+     [
+      "변행전도 심방 기외수축",
+      "조기",
+      "있음(앞 T파에 묻혀 T 모양 변형) · 대개 우각차단 모양"
+     ],
+     [
+      "간헐적 각차단",
+      "제때",
+      "있음, PR 정상"
+     ],
+     [
+      "비지속성 심실빈맥",
+      "3개 이상 연속, &gt; 100회/분",
+      "없음 · 30초 안에 멈춤 <sup>[1 259장 p.1955]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "간헐적 좌각차단 vs 심실 기외수축",
+    "point": "둘 다 QRS 가 넓지만, 각차단 박동은 예정된 때에 오고 앞에 정상 PR 간격의 P파가 있다. 넓은 박동이 일찍 오고 앞에 P파가 없으면 심실에서 시작한 박동이다. 먼저 「언제 왔나」와 「앞에 P파가 있나」를 본다.",
+    "exception": "",
+    "cites": "<sup>[1 259장 p.1954]</sup>"
+   },
+   {
+    "contrast": "변행전도 심방 기외수축 vs 심실 기외수축",
+    "point": "변행전도면 넓은 박동 바로 앞 T파에 조기 P파가 겹쳐 그 T파 모양이 다른 T파와 달라지고, QRS 가 대개 전형적 우각차단 모양이다. 앞 T파가 다른 T파와 같으면 숨은 P파가 없다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "넓은 박동 하나 = 비지속성 심실빈맥?",
+    "point": "심실빈맥은 3개 이상 연달아, 분당 100회 넘게. 하나는 기외수축, 둘은 쌍발(couplet)이다.",
+    "exception": "",
+    "cites": "<sup>[1 259장 p.1954]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "기외수축 뒤 휴지는 흔히 완전 보상 — 동방결절이 재설정되지 않아 다음 동박동이 제 리듬대로 온다(원문 미대조).",
+   "V1 에서 좌각차단 모양이면 우심실·중격 기원(정상 심장에 흔함), 우각차단 모양이면 좌심실 기원(구조 질환 가능성 더 높음) <sup>[1 260장 p.1960]</sup>.",
+   "이분맥이면 기외수축이 맥박을 만들지 못해 맥박 수가 가짜로 느리게 잡힐 수 있다 <sup>[1 259장 p.1956]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "pvc-def",
+    "name": "심실 기외수축·심실빈맥 정의",
+    "kind": "진단 기준",
+    "population": "넓은 QRS 박동이 보이는 심전도",
+    "statement": "심실 기외수축은 다음 상심실 박동보다 일찍 오는 단일 심실 박동이다. 둘 연속은 쌍발, 3개 이상·분당 100회 초과는 심실빈맥이고 30초 안에 저절로 멈추면 비지속성이다 [[harrison-22: 259장 p.1954–1955]]",
+    "exceptions": "QRS 는 대개 0.12초를 넘지만 드물게 좁을 수 있다 [[harrison-22: 259장 p.1954]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 259: Approach to Ventricular Arrhythmias · Chapter 260: PVCs, NSVT, and AIVR",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 259장 p.1954–1957 · 260장 p.1960",
+    "checked": "드라이브 22판 장별 문서 H22_259 본문 대조 — 심실 기원 흥분은 퍼킨제계보다 느리게 번져 QRS > 0.12초, PVC 정의(다음 상심실 박동보다 일찍 오는 단일 박동)·단일/다형·쌍발, VT = 3개 이상 > 100회/분(p.1954) · 비지속성 < 30초(p.1955) · QRS 모양으로 기원(V1 LBBB 모양 = 우심실·중격, RBBB 모양 = 좌심실), 이분맥 시 가성 서맥(p.1956) · 정상 심장·정상 심전도면 안심과 카페인·술 제거, 무증상 증상 평가에 12유도 심전도·심초음파(p.1957) · 260장: PVC 는 교감 자극·허혈·저산소·전해질 이상 신호, 저칼륨혈증 교정, 다형·RBBB 모양은 구조 질환 시사(p.1960). 변행전도 심방 기외수축의 T파 속 P파·보상 휴지는 이 장에 없다(원문 미대조)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-01",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "넓은 QRS 박동이 일찍 왔고 앞에 P파가 없다. 판독은?",
+    "a": "심실 기외수축. 넓은 이유는 퍼킨제계를 못 타고 근육으로 천천히 번지기 때문이다."
+   },
+   {
+    "q": "간헐적 각차단과 무엇으로 가르나?",
+    "a": "때와 P파. 각차단 박동은 제때 오고 정상 PR 의 P파가 앞에 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.premature-ventricular-complex.ecg-recognition#v1",
+    "context": "같은 증상, 넓은 박동 앞에 조기 P파 단서를 넣은 글 변형(그림 없음)",
+    "stem": "39세 여자가 한 달 전부터 가끔 가슴이 덜컥하는 느낌으로 왔다. 흉통·실신은 없고 혈압 116/70 mmHg, 맥박 66회/분으로 가끔 불규칙하다. 혈청 칼륨은 4.2 mEq/L 이다. 12유도 심전도의 리듬 스트립에서 동리듬 사이에 일찍 오는 넓은 QRS 박동이 하나 있다. 그 박동 바로 앞 T파의 끝이 뾰족하게 솟아 다른 T파와 모양이 다르고, 넓은 박동의 QRS 는 V1 에서 rSR′ 모양이다. 심전도 판독으로 가장 적절한 것은?",
+    "options": [
+     "간헐적 좌각차단",
+     "비지속성 심실빈맥",
+     "심실 기외수축",
+     "변행전도를 동반한 심방 기외수축",
+     "2도 방실차단(Mobitz II형)"
+    ],
+    "answer": 4,
+    "explanation": "넓은 박동이 일찍 온 것은 같지만, 바로 앞 T파 모양이 달라진 것은 그 T파 위에 조기 P파가 겹쳤다는 뜻이다 — 박동은 심방에서 시작했고, 아직 불응기인 우각을 지나지 못해 우각차단 모양(rSR′)으로 넓어졌다. 앞 T파가 다른 T파와 같았다면 숨은 P파가 없어 심실 기외수축이다.",
+    "of": "imaging-2026-0491",
+    "changed": "넓은 박동 앞 T파가 다른 T파와 같음(숨은 P파 없음)·기이한 QRS → 넓은 박동 바로 앞 T파 끝이 뾰족하게 솟아 다른 T파와 모양이 다르고 QRS 가 전형적 우각차단 모양(rSR′) ⇒ 정답이 심실 기외수축에서 변행전도를 동반한 심방 기외수축으로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.premature-ventricular-complex.ecg-recognition#v2",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "23세 남자 대학생이 시험 기간에 에너지음료를 하루 4캔씩 마시면서 심장이 가끔 한 번 건너뛰는 느낌이 들어 왔다. 실신·흉통·운동 시 호흡곤란은 없고 가족 중 돌연사는 없다. 맥박 74회/분으로 가끔 쉬었다 뛴다. 심잡음은 없다. 12유도 심전도의 리듬 스트립에서 동리듬 사이에 예정보다 일찍 오는 박동이 두 번 보인다. 그 박동의 QRS 는 0.14초로 넓고 모양이 기이하며, 앞의 T파는 다른 T파와 모양이 같고, 뒤따르는 T파는 QRS 와 반대 방향이다. 심전도 판독으로 가장 적절한 것은?",
+    "options": [
+     "심실 기외수축",
+     "간헐적 우각차단",
+     "비지속성 심실빈맥",
+     "변행전도를 동반한 심방 기외수축",
+     "심실 쌍발"
+    ],
+    "answer": 1,
+    "explanation": "나이·성별·유발 요인이 바뀌었지만 결정 단서는 같다 — 일찍 온 넓고 기이한 QRS, 앞 T파 모양이 같아 숨은 조기 P파가 없음, 반대 방향 T파. 따로 떨어진 두 박동이라 쌍발(연속 2개)도 심실빈맥(3개 이상)도 아니다. 구조 이상 단서가 없으면 안심시키고 자극제를 줄인다.",
+    "of": "imaging-2026-0491",
+    "changed": "41세 여자·쉴 때 두근거림·커피 → 23세 남자 대학생·시험 기간 에너지음료 뒤 건너뛰는 느낌, 소견을 글로 제시 ⇒ 조기 + 앞 P파 없음 + 넓고 기이한 QRS + 반대 방향 T파라는 결정 단서는 같아 답은 그대로 심실 기외수축",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-18790.png",
+    "kind": "ecg",
+    "at": "기전 — 퍼킨제 고속도로를 못 탄 흥분",
+    "shows": "동리듬 사이에 끼어든 심실 기외수축",
+    "look": [
+     "II 리듬 스트립 중간·뒤쪽의 일찍 온 넓고 기이한 QRS",
+     "넓은 박동 뒤 QRS 와 반대 방향의 T파"
+    ],
+    "label": "ventricular premature complex (SCP PVC, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18790",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/18000/#files-panel",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "넓은 QRS 박동 하나 — 어디서 왔나",
+  "geo": {
+   "title": "넓은 QRS 박동 하나 — 어디서 왔나",
+   "w": 567.0,
+   "h": 579.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "리듬 중간에 넓은 QRS 박동"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "early",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "예정보다 일찍 왔나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 85.0
+    },
+    {
+     "id": "bbb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "간헐적 각차단 쪽"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 175.0
+    },
+    {
+     "id": "pwave",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "바로 앞 T파에 조기 P파가",
+      "숨어 있나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 175.0
+    },
+    {
+     "id": "look",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "앞 T파를 다른 T파와 겹쳐",
+      "비교"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 282.0
+    },
+    {
+     "id": "apc",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "변행전도 심방 기외수축"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 409.0
+    },
+    {
+     "id": "count",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "3개 이상 연달아 나오나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 409.0
+    },
+    {
+     "id": "pvc",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "심실 기외수축"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 499.0
+    },
+    {
+     "id": "vt",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "심실빈맥 — 지속 시간·혈역학",
+      "평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 499.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "early",
+     "points": [
+      [
+       340.0,
+       63.0
+      ],
+      [
+       340.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "early",
+     "to": "pwave",
+     "points": [
+      [
+       307.3,
+       132.0
+      ],
+      [
+       307.3,
+       161.0
+      ],
+      [
+       227.0,
+       161.0
+      ],
+      [
+       227.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "early",
+     "to": "bbb",
+     "points": [
+      [
+       372.7,
+       132.0
+      ],
+      [
+       372.7,
+       161.0
+      ],
+      [
+       453.0,
+       161.0
+      ],
+      [
+       453.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "제때"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "pwave",
+     "to": "apc",
+     "points": [
+      [
+       178.0,
+       239.0
+      ],
+      [
+       178.0,
+       268.0
+      ],
+      [
+       113.0,
+       268.0
+      ],
+      [
+       113.0,
+       395.0
+      ],
+      [
+       81.3,
+       395.0
+      ],
+      [
+       81.3,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 163.0,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "pwave",
+     "to": "count",
+     "points": [
+      [
+       276.0,
+       239.0
+      ],
+      [
+       276.0,
+       268.0
+      ],
+      [
+       341.0,
+       268.0
+      ],
+      [
+       341.0,
+       395.0
+      ],
+      [
+       372.7,
+       395.0
+      ],
+      [
+       372.7,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 261.0,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "pwave",
+     "to": "look",
+     "points": [
+      [
+       227.0,
+       239.0
+      ],
+      [
+       227.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모르겠음"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 201.0,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "look",
+     "to": "apc",
+     "points": [
+      [
+       194.3,
+       346.0
+      ],
+      [
+       194.3,
+       395.0
+      ],
+      [
+       146.7,
+       395.0
+      ],
+      [
+       146.7,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "T 모양 다름"
+      ],
+      "w": 65.9,
+      "h": 17,
+      "x": 161.4,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "look",
+     "to": "count",
+     "points": [
+      [
+       259.7,
+       346.0
+      ],
+      [
+       259.7,
+       395.0
+      ],
+      [
+       307.3,
+       395.0
+      ],
+      [
+       307.3,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "T 모양 같음"
+      ],
+      "w": 65.9,
+      "h": 17,
+      "x": 226.7,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "count",
+     "to": "pvc",
+     "points": [
+      [
+       307.3,
+       456.0
+      ],
+      [
+       307.3,
+       485.0
+      ],
+      [
+       227.0,
+       485.0
+      ],
+      [
+       227.0,
+       499.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나·둘"
+      ],
+      "w": 47.4,
+      "h": 17,
+      "x": 283.6,
+      "y": 460.0
+     }
+    },
+    {
+     "from": "count",
+     "to": "vt",
+     "points": [
+      [
+       372.7,
+       456.0
+      ],
+      [
+       372.7,
+       485.0
+      ],
+      [
+       453.0,
+       485.0
+      ],
+      [
+       453.0,
+       499.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "3개 이상"
+      ],
+      "w": 51.1,
+      "h": 17,
+      "x": 347.1,
+      "y": 460.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "리듬 중간에 넓은 QRS 박동",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "예정보다 일찍 왔나?"
+     }
+    ]
+   },
+   {
+    "id": "early",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "예정보다 일찍 왔나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "바로 앞 T파에 조기 P파가 숨어 있나?"
+     },
+     {
+      "label": "제때",
+      "to": 4,
+      "toText": "간헐적 각차단 쪽"
+     }
+    ]
+   },
+   {
+    "id": "pwave",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "바로 앞 T파에 조기 P파가 숨어 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "변행전도 심방 기외수축"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "3개 이상 연달아 나오나?"
+     },
+     {
+      "label": "모르겠음",
+      "to": 5,
+      "toText": "앞 T파를 다른 T파와 겹쳐 비교"
+     }
+    ]
+   },
+   {
+    "id": "bbb",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "간헐적 각차단 쪽",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "look",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "앞 T파를 다른 T파와 겹쳐 비교",
+    "note": "",
+    "branches": [
+     {
+      "label": "T 모양 다름",
+      "to": 6,
+      "toText": "변행전도 심방 기외수축"
+     },
+     {
+      "label": "T 모양 같음",
+      "to": 7,
+      "toText": "3개 이상 연달아 나오나?"
+     }
+    ]
+   },
+   {
+    "id": "apc",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "변행전도 심방 기외수축",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "count",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "3개 이상 연달아 나오나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "하나·둘",
+      "to": 8,
+      "toText": "심실 기외수축"
+     },
+     {
+      "label": "3개 이상",
+      "to": 9,
+      "toText": "심실빈맥 — 지속 시간·혈역학 평가"
+     }
+    ]
+   },
+   {
+    "id": "pvc",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "심실 기외수축",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "vt",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "심실빈맥 — 지속 시간·혈역학 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0491"
   ],
   "hasErrors": false
  },
@@ -76654,6 +78099,550 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.pulm.methemoglobinemia.mechanism": {
+  "id": "cn.pulm.methemoglobinemia.mechanism",
+  "title": "메트헤모글로빈혈증 — 철이 3가로 산화된다",
+  "objective": "산화 약물 뒤 산소에 반응하지 않는 낮은 맥박산소 포화도·높은 PaO2·초콜릿색 혈액에서 혈색소 철의 3가 산화를 기전으로 설명한다",
+  "objectiveKind": "기전",
+  "condition": "메트헤모글로빈혈증(methemoglobinemia) — 후천성(국소마취제 등)",
+  "topic": "Pulmonology",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Hematology"
+  ],
+  "version": 1,
+  "updated": "2026-11-01",
+  "reviewStatus": "unreviewed",
+  "hash": "08d04d0817cf2bde",
+  "summary": [
+   "결론: 혈색소의 2가 철(Fe2+)이 3가(Fe3+)로 산화돼 산소를 싣지 못하고, 남은 혈색소는 산소를 덜 내놓는다.",
+   "시험 단서: 벤조카인·답손 뒤 청색증, 산소에도 맥박산소 포화도(SpO2) 약 85 % 고정, PaO2 높음, 초콜릿색 혈액.",
+   "왜: 폐는 정상이라 PaO2 는 높다 — 문제는 혈색소이므로 단락·저환기가 아니다.",
+   "일산화탄소(CO)는 청색증이 아니라 붉은 홍조이고 SpO2 가 정상처럼 나온다. 시안화물은 산소를 못 쓰는 것이다.",
+   "청색증이 심장·폐로 설명되지 않으면 분광(협동 산소측정, CO-oximetry)으로 비정상 혈색소를 찾는다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 혈색소 철의 산화인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>PaO2 가 높다</strong> = 폐에서 혈장으로 산소는 잘 들어간다. 단락이면 100 % 산소로도 PaO2 가 일부만 교정되고, 저환기면 PaCO2 가 오른다 <sup>[1 42장 p.277]</sup>.</li>\n<li>그런데 포화도가 낮고 혈액이 초콜릿색이면 <strong>혈색소 자체가 산소를 싣지 못한다</strong> — 메트헤모글로빈(Hb Fe3+)이다 <sup>[1 42장 p.279]</sup>.</li>\n<li>일산화탄소혈색소도 산소를 싣지 못하지만 청색증이 아니라 앵두색 홍조를 낸다 <sup>[1 42장 p.278]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 2가 철에서 3가 철로",
+    "deep": false,
+    "html": "<p>혈색소의 헴 철은 2가(Fe2+)일 때만 산소와 가역적으로 결합한다. 벤조카인·답손 같은 산화 약물이 이 철을 3가(Fe3+)로 바꾸면 그 헴은 산소를 싣지 못하고, 같은 혈색소 분자의 남은 헴은 산소를 더 꽉 붙잡아 조직에 덜 내놓는다. 그래서 PaO2 는 정상인데 산소 전달이 줄고, 메트헤모글로빈은 적은 양으로도 청색증을 만든다 <sup>[1 42장 p.279]</sup>. 메트헤모글로빈의 갈색 때문에 혈액은 공기에 흔들어도 붉어지지 않는다. 맥박산소측정은 두 파장만 비교하므로 메트헤모글로빈이 많으면 실제 포화도와 무관하게 약 85 % 근처로 읽힌다(원문 미대조).</p>"
+   },
+   {
+    "title": "가르는 소견 — PaO2·SpO2·혈액 색",
+    "deep": false,
+    "html": "<ul>\n<li>PaO2 가 낮으면 폐·단락·저환기 쪽, 정상~높으면 혈색소·조직 쪽이다.</li>\n<li>청색증이 심장·폐 이상으로 설명되지 않으면 분광 검사로 비정상 혈색소를 찾는다 — 원인 불명 청색증의 감별에 결정적이다 <sup>[1 42장 p.279]</sup>.</li>\n<li>급히 생긴 중심 청색증에는 곤봉지가 없다 <sup>[1 42장 p.279]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>확진은 협동 산소측정(CO-oximetry)의 메트헤모글로빈 분율이다. 치료(메틸렌블루, G6PD 결핍 확인)는 이 정리본의 목표가 아니어서 대조하지 않았다.</li>\n<li>황화혈색소(sulfhemoglobin)도 더 적은 양으로 청색증을 만든다 <sup>[1 42장 p.279]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 42장 p.276–279)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "저산소증 종류 — 어디가 막혔나",
+    "columns": [
+     "종류",
+     "PaO2",
+     "핵심 소견"
+    ],
+    "rows": [
+     [
+      "메트헤모글로빈혈증",
+      "정상~높음",
+      "SpO2 약 85 % 고정, 초콜릿색 혈액, 산화 약물 <sup>[1 42장 p.279]</sup>"
+     ],
+     [
+      "일산화탄소 중독",
+      "정상",
+      "앵두색 홍조, SpO2 정상처럼, 노출력 <sup>[1 42장 p.278]</sup>"
+     ],
+     [
+      "시안화물(조직독성)",
+      "정상",
+      "정맥혈 산소분압 높음 <sup>[1 42장 p.277]</sup>"
+     ],
+     [
+      "폐내·심장 단락",
+      "낮음, 100 % 산소로 일부만 교정",
+      "무기폐·동정맥루·선천 심질환 <sup>[1 42장 p.277]</sup>"
+     ],
+     [
+      "저환기",
+      "낮음",
+      "PaCO2 상승, 산소로 교정 <sup>[1 42장 p.277]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "일산화탄소혈색소 vs 메트헤모글로빈",
+    "point": "둘 다 산소를 싣지 못하는 혈색소지만, 일산화탄소혈색소는 청색증이 아니라 앵두색 홍조를 내고 맥박산소측정에 산소혈색소처럼 읽혀 수치가 정상으로 나온다. SpO2 가 낮게 고정되고 혈액이 초콜릿색이면 메트헤모글로빈이다. 화재·난방기 노출력이 일산화탄소의 단서다.",
+    "exception": "",
+    "cites": "<sup>[1 42장 p.277]</sup> <sup>[1 42장 p.278]</sup>"
+   },
+   {
+    "contrast": "산소에 안 오르는 포화도 = 단락?",
+    "point": "단락이면 100 % 산소로도 PaO2 자체가 일부만 교정된다(낮다). PaO2 가 높은데 포화도만 낮으면 폐가 아니라 혈색소 문제다.",
+    "exception": "",
+    "cites": "<sup>[1 42장 p.277]</sup>"
+   },
+   {
+    "contrast": "사이토크롬 산화효소 억제(시안화물)?",
+    "point": "시안화물은 미토콘드리아가 산소를 쓰지 못해 정맥혈 산소분압이 높게 남는다(조직독성 저산소증). 혈색소 색은 바뀌지 않는다.",
+    "exception": "",
+    "cites": "<sup>[1 42장 p.277]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "확진은 협동 산소측정(CO-oximetry)으로 메트헤모글로빈 분율을 재는 것이다 — 일반 맥박산소측정은 비정상 혈색소를 구별하지 못한다.",
+   "치료(메틸렌블루, G6PD 결핍이면 피함)는 이 정리본의 목표가 아니다 — 대조하지 않았다."
+  ],
+  "criteria": [
+   {
+    "id": "mh-workup",
+    "name": "원인 불명 청색증의 검사",
+    "kind": "진단 접근",
+    "population": "심장·폐 이상으로 설명되지 않는 청색증",
+    "statement": "PaO2·SaO2 를 재고, 기전이 불분명하면 혈액 분광 검사로 비정상 혈색소(메트헤모글로빈·황화혈색소)를 찾는다 [[harrison-22: 42장 p.279]]",
+    "exceptions": "메트헤모글로빈·황화혈색소는 적은 양으로도 청색증을 만들고 곤봉지는 대개 없다 [[harrison-22: 42장 p.279]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 42: Hypoxia and Cyanosis",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 42장 p.276–279",
+    "checked": "드라이브 22판 장별 문서 H22_042 본문 대조 — 환기-관류 불균형·저환기는 100 % 산소로 교정, 단락은 일부만 교정 · COHb 는 산소 운반 불가+해리곡선 왼쪽 이동 · 시안화물은 전자전달 장애로 정맥혈 산소분압 높음(p.277) · 청색증 = 환원 혈색소 또는 메트헤모글로빈·황화혈색소, COHb 는 청색증이 아니라 앵두색 홍조, Table 42-1(p.278) · 메트헤모글로빈(Hb Fe3+)은 적은 양으로 청색증·산소 전달 장애, 분광 검사로 찾음, 곤봉지 없음(p.279). 맥박산소 85 % 고정·메틸렌블루·G6PD·남은 혈색소의 해리곡선 이동은 이 장에 없다(교과서 일반 지식, 원문 미대조)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-01",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "PaO2 310 mmHg 인데 SpO2 85 % 가 산소에도 변하지 않는다. 문제는 폐인가?",
+    "a": "아니다. 폐 산소화는 정상이고 혈색소가 산소를 싣지 못한다 — 메트헤모글로빈(Fe3+)."
+   },
+   {
+    "q": "일산화탄소 중독을 SpO2 로 거를 수 없는 이유는?",
+    "a": "일산화탄소혈색소가 산소혈색소처럼 읽혀 SpO2 가 정상으로 나온다. 분광 검사가 필요하다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.methemoglobinemia.mechanism#v1",
+    "context": "같은 '산소 운반 장애' 뼈대, 노출과 맥박산소 수치를 바꾼 변형",
+    "stem": "48세 남자가 겨울밤 창문을 닫은 방에서 연탄 난로를 켜고 자다가 아침에 심한 두통과 구역, 혼동으로 실려 왔다. 같은 방에서 잔 아내도 두통을 호소한다. 혈압 132/80 mmHg, 맥박 112회/분, 호흡 22회/분. 입술과 손끝은 파랗지 않다. 실내 공기에서 맥박산소측정 수치는 99 % 이다. 동맥혈 PaO2 92 mmHg, PaCO2 34 mmHg 이고 뽑은 혈액은 선홍색이다. 흉부 X선은 정상이다. 이 환자의 증상을 일으킨 기전은?",
+    "options": [
+     "폐내 오른쪽-왼쪽 단락",
+     "일산화탄소의 혈색소 결합",
+     "사이토크롬 산화효소 억제",
+     "혈색소 철의 3가 산화",
+     "폐포 저환기"
+    ],
+    "answer": 2,
+    "explanation": "원래 문항의 산화 약물·초콜릿색 혈액·낮게 고정된 포화도가 사라지고 밀폐 공간 연탄 연소와 동반 환자가 생겼다. 일산화탄소혈색소는 산소를 싣지 못하고 해리곡선을 왼쪽으로 옮겨 조직 저산소를 만들지만, 맥박산소측정에는 산소혈색소처럼 읽혀 99 % 로 정상처럼 나오고 청색증이 아니라 붉은 빛을 띤다. PaO2 정상·PaCO2 정상이라 단락·저환기가 아니다.",
+    "of": "kmle-2026-1664",
+    "changed": "벤조카인 노출·초콜릿색 혈액·SpO2 85 % 고정 → 겨울 밀폐된 방의 연탄 난로·두통과 혼동·SpO2 99 %·선홍색 혈액 ⇒ 정답이 혈색소 철의 3가 산화에서 일산화탄소의 혈색소 결합으로",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.methemoglobinemia.mechanism#v2",
+    "context": "겉모습만 바꾼 변형 — 다른 산화 약물",
+    "stem": "52세 여자가 신장 이식 뒤 폐포자충 폐렴 예방을 위해 답손을 먹기 시작한 지 2주째 숨이 차고 입술이 파랗다며 왔다. 의식은 명료하다. 비재호흡 마스크로 산소를 주어도 맥박산소측정 수치는 86 % 에서 움직이지 않는다. 동맥혈 PaO2 285 mmHg, PaCO2 38 mmHg 이고, 채혈한 혈액은 어두운 갈색이며 흰 거즈에 떨어뜨려 공기에 두어도 붉어지지 않는다. 흉부 X선과 심초음파는 정상이다. 이 환자의 증상을 일으킨 기전은?",
+    "options": [
+     "혈색소 철의 3가 산화",
+     "폐내 오른쪽-왼쪽 단락",
+     "일산화탄소의 혈색소 결합",
+     "폐포 저환기",
+     "사이토크롬 산화효소 억제"
+    ],
+    "answer": 1,
+    "explanation": "환자·약물·제시 순서가 바뀌었지만 결정 단서는 같다 — 산화 약물(답손) 뒤 산소에 반응하지 않는 낮은 포화도, 높은 PaO2, 갈색 혈액. 폐 산소화는 정상이므로 혈색소의 2가 철이 3가로 산화된 메트헤모글로빈이 산소를 싣지 못하는 것이다. 흉부 X선·심초음파 정상과 높은 PaO2 가 단락을, 정상 PaCO2 가 저환기를 배제한다.",
+    "of": "kmle-2026-1664",
+    "changed": "34세 남자·내시경 전 벤조카인 → 52세 여자·폐포자충 예방으로 답손 복용 2주째, 증상 제시 순서를 바꿈 ⇒ 산화 약물 + SpO2 고정 + PaO2 높음 + 초콜릿색 혈액이라는 결정 단서는 같아 답은 그대로 혈색소 철의 3가 산화",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "청색증·낮은 SpO2 — 폐인가 혈색소인가",
+  "geo": {
+   "title": "청색증·낮은 SpO2 — 폐인가 혈색소인가",
+   "w": 567.0,
+   "h": 431.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "청색증 + 낮은 SpO2"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "abg",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "동맥혈 가스로 PaO2·PaCO2",
+      "를 잰다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 85.0
+    },
+    {
+     "id": "pao2",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "PaO2 가 낮은가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 171.0
+    },
+    {
+     "id": "lung",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "폐·단락·저환기 원인 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 261.0
+    },
+    {
+     "id": "color",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "산화 약물 뒤, 초콜릿색 혈액?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 261.0
+    },
+    {
+     "id": "metHb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "메트헤모글로빈혈증(Fe3+)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 351.0
+    },
+    {
+     "id": "co",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "화재 노출·홍조면",
+      "일산화탄소 — 분광 검사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 351.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "abg",
+     "points": [
+      [
+       227.0,
+       63.0
+      ],
+      [
+       227.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "abg",
+     "to": "pao2",
+     "points": [
+      [
+       227.0,
+       149.0
+      ],
+      [
+       227.0,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "pao2",
+     "to": "lung",
+     "points": [
+      [
+       194.3,
+       218.0
+      ],
+      [
+       194.3,
+       247.0
+      ],
+      [
+       114.0,
+       247.0
+      ],
+      [
+       114.0,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "pao2",
+     "to": "color",
+     "points": [
+      [
+       259.7,
+       218.0
+      ],
+      [
+       259.7,
+       247.0
+      ],
+      [
+       340.0,
+       247.0
+      ],
+      [
+       340.0,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상·높음"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 230.5,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "color",
+     "to": "metHb",
+     "points": [
+      [
+       307.3,
+       308.0
+      ],
+      [
+       307.3,
+       337.0
+      ],
+      [
+       227.0,
+       337.0
+      ],
+      [
+       227.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "color",
+     "to": "co",
+     "points": [
+      [
+       372.7,
+       308.0
+      ],
+      [
+       372.7,
+       337.0
+      ],
+      [
+       453.0,
+       337.0
+      ],
+      [
+       453.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 312.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "청색증 + 낮은 SpO2",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "동맥혈 가스로 PaO2·PaCO2 를 잰다"
+     }
+    ]
+   },
+   {
+    "id": "abg",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "동맥혈 가스로 PaO2·PaCO2 를 잰다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "PaO2 가 낮은가?"
+     }
+    ]
+   },
+   {
+    "id": "pao2",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "PaO2 가 낮은가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "낮음",
+      "to": 4,
+      "toText": "폐·단락·저환기 원인 평가"
+     },
+     {
+      "label": "정상·높음",
+      "to": 5,
+      "toText": "산화 약물 뒤, 초콜릿색 혈액?"
+     }
+    ]
+   },
+   {
+    "id": "lung",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "폐·단락·저환기 원인 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "color",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "산화 약물 뒤, 초콜릿색 혈액?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "메트헤모글로빈혈증(Fe3+)"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "화재 노출·홍조면 일산화탄소 — 분광 검사"
+     }
+    ]
+   },
+   {
+    "id": "metHb",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "메트헤모글로빈혈증(Fe3+)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "co",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "화재 노출·홍조면 일산화탄소 — 분광 검사",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1664"
+  ],
+  "hasErrors": false
+ },
  "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
   "id": "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation",
   "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
@@ -79587,6 +81576,774 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1192"
+  ],
+  "hasErrors": false
+ },
+ "cn.ortho.axial-spondyloarthritis.sacroiliac-mri": {
+  "id": "cn.ortho.axial-spondyloarthritis.sacroiliac-mri",
+  "title": "축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI",
+  "objective": "염증성 허리통증에 척추관절염 소견이 있는데 골반 X선이 정상이면 엉치엉덩관절 MRI로 활동성 염증을 찾는 검사를 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "축성 척추관절염(axial spondyloarthritis) · 방사선 비진행형(nonradiographic axSpA)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Orthopedics"
+  ],
+  "version": 1,
+  "updated": "2026-11-01",
+  "reviewStatus": "unreviewed",
+  "hash": "30f437db258ddf6c",
+  "summary": [
+   "결론: 염증성 허리통증 + 척추관절염 소견 + 골반 X선 정상 → 다음 검사는 엉치엉덩관절 MRI(STIR 골수 부종).",
+   "시험 단서: 45세 전 시작, 새벽 통증·30분 넘는 아침 강직, 운동에 호전, 진통소염제(NSAID) 48시간 반응, 앞포도막염(anterior uveitis)·HLA-B27.",
+   "왜: 초기 염증(osteitis)은 MRI에만 보이고, X선 변화(경화·미란)는 수년 뒤에야 생긴다 — 기다리면 진단이 늦는다.",
+   "CT 는 구조 변화만 보고 방사선이 많다. 뼈스캔은 민감도·특이도가 낮다. 척추 X선은 만성 허리통증에서 피한다.",
+   "MRI 는 민감해 운동선수·출산 뒤·40세 넘은 사람도 골수 부종이 보일 수 있다 — 임상 소견 없이 찍으면 과잉 진단."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 X선이 정상이면 MRI 인가",
+    "deep": false,
+    "html": "<ul>\n<li>엉치엉덩관절 X선의 경화·미란은 <strong>구조 손상</strong>이 쌓인 뒤에야 보인다 — 진단 지연이 5–14년으로 보고된다 <sup>[1 374장 p.2884]</sup>.</li>\n<li>초기에는 MRI 의 활동성 염증(osteitis)이 <strong>유일한 이상</strong>일 수 있다 <sup>[1 374장 p.2885]</sup>. 그래서 X선이 정상이고 임상 소견이 뚜렷하면 다음은 MRI 다.</li>\n<li>기다리는 것(재촬영)은 진단·치료만 늦추고, CT·뼈스캔은 지금 찾으려는 염증을 보지 못한다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 부착부 염증에서 골수 부종, 그리고 뼈로",
+    "deep": false,
+    "html": "<p>척추관절염은 힘줄·인대가 뼈에 붙는 자리(부착부)와 엉치엉덩관절의 면역 염증으로 시작한다. 염증이 관절 밑 뼈속질로 번지면 물이 늘어 MRI STIR 영상에서 밝은 골수 부종으로 보인다. 시간이 지나면 염증 자리가 지방 변성으로 바뀌고, 다시 새 뼈가 생겨 미란·경화·강직이 된다 <sup>[1 374장 p.2885]</sup>. X선은 이 마지막 구조 단계만 잡아내므로 초기에 정상이다.</p>"
+   },
+   {
+    "title": "가르는 소견 — 검사마다 보는 것",
+    "deep": false,
+    "html": "<ul>\n<li>첫 검사는 골반 AP(또는 Ferguson) 한 장이고, 척추 X선은 만성 허리통증에서 피한다 <sup>[1 374장 p.2884]</sup>.</li>\n<li>STIR 골수 부종이 활동성 염증, T1 의 지방 변성·미란이 구조 변화다. 여러 종류의 병변이 함께 있을수록 확신이 커진다 <sup>[1 374장 p.2885]</sup>.</li>\n<li><strong>음성·양성의 한계</strong>: CRP·ESR 은 활동성 환자의 30–40 % 에서만 오른다 <sup>[1 374장 p.2884]</sup>. MRI 골수 부종은 운동선수·출산 뒤·40세 넘은 사람에게도 보일 수 있다 <sup>[1 374장 p.2885]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>MRI 가 음성이어도 임상 소견이 뚜렷하고 HLA-B27 이 양성이면 방사선 비진행형으로 진단할 수 있다 <sup>[1 374장 p.2884]</sup>.</li>\n<li>MRI 를 찍을 수 없으면 저선량 엉치엉덩관절 CT 가 X선의 대안이다 — 염증이 아니라 구조를 본다 <sup>[1 374장 p.2885]</sup>.</li>\n<li>진단 뒤 첫 치료(운동·최대 용량 NSAID → 생물학제제)는 이 정리본의 목표가 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 374장 p.2883–2885)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "엉치엉덩관절을 보는 검사 — 무엇을 보나",
+    "columns": [
+     "검사",
+     "보는 것",
+     "언제"
+    ],
+    "rows": [
+     [
+      "골반 X선(AP·Ferguson)",
+      "경화·미란·관절 간격 변화·강직(구조)",
+      "첫 검사 — 양성이면 방사선 진행형(강직척추염) <sup>[1 374장 p.2884]</sup>"
+     ],
+     [
+      "엉치엉덩관절 MRI",
+      "STIR 골수 부종(활동성 염증) + 지방 변성·미란(구조)",
+      "X선 정상인데 임상 소견이 뚜렷할 때 <sup>[1 374장 p.2885]</sup>"
+     ],
+     [
+      "저선량 CT",
+      "구조 변화(미란·강직) — 염증은 못 본다",
+      "MRI 불가 시, X선 대안 <sup>[1 374장 p.2885]</sup>"
+     ],
+     [
+      "뼈스캔",
+      "뼈 대사 증가 — 엉치엉덩관절에서 비특이",
+      "진단에 쓰지 않는다"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "요추 CT vs 엉치엉덩관절 MRI",
+    "point": "CT 는 미란·경화·강직 같은 구조 변화를 보지만 활동성 염증(골수 부종)은 보지 못하고 방사선 노출이 크다. X선이 정상인 초기 단계에서 찾을 것은 염증이라 MRI다. 게다가 병변은 요추가 아니라 엉치엉덩관절에 먼저 온다.",
+    "exception": "MRI 를 찍을 수 없을 때 저선량 엉치엉덩관절 CT 가 X선 대안으로 쓰인다(구조 평가용).",
+    "cites": "<sup>[1 374장 p.2885]</sup> <sup>[1 374장 p.2888]</sup>"
+   },
+   {
+    "contrast": "6개월 뒤 X선 재촬영 — 기다리면?",
+    "point": "방사선 변화가 생기기까지 수년이 걸리고, 진단 지연이 이미 5–14년으로 보고된다. 지금 MRI 로 염증을 볼 수 있다.",
+    "exception": "",
+    "cites": "<sup>[1 374장 p.2884]</sup>"
+   },
+   {
+    "contrast": "뼈스캔 — 온몸의 염증을 찾는다?",
+    "point": "엉치엉덩관절은 원래 섭취가 많아 뼈스캔으로 염증을 가르기 어렵다(민감도·특이도 낮음). 축성 척추관절염 진단 검사가 아니다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "척추관절염 소견 — 염증성 허리통증, 말초 관절염, 앞포도막염, 손발가락염, 부착부염, 건선, 염증성 장질환, 가족력, NSAID 반응, CRP 상승 <sup>[1 374장 p.2884]</sup>.",
+   "CRP·ESR 은 활동성 환자의 30–40 % 에서만 올라 정상이어도 배제하지 못한다 <sup>[1 374장 p.2884]</sup>.",
+   "MRI 는 기계적 부하(운동선수·출산 뒤)·40세 이후에도 골수 부종을 보일 수 있다 — 임상 소견 없이 찍지 않는다."
+  ],
+  "criteria": [
+   {
+    "id": "ibp",
+    "name": "염증성 허리통증",
+    "kind": "임상 소견",
+    "population": "3개월 넘는 만성 허리통증",
+    "statement": "45세 전 서서히 시작, 30분 넘는 아침 강직, 자정 뒤 야간 통증, 운동에 호전·쉬면 악화, 충분한 NSAID 에 48시간 안에 50 % 넘게 호전 [[harrison-22: 374장 p.2883]]",
+    "exceptions": "모든 항목이 있어야 하는 것은 아니다 [[harrison-22: 374장 p.2883]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "nraxspa",
+    "name": "방사선 비진행형 진단",
+    "kind": "진단 흐름",
+    "population": "엉치엉덩관절 X선이 확실한 엉치엉덩관절염이 아닌 만성 허리통증",
+    "statement": "척추관절염 소견이 있으면 엉치엉덩관절 MRI — 양성이면 방사선 비진행형 축성 척추관절염. MRI 음성이면 임상 소견이 뚜렷하고 HLA-B27 양성일 때만 진단을 유지한다 [[harrison-22: 374장 p.2884]]",
+    "exceptions": "MRI 소견은 기계적 부하로도 생긴다 — 임상 소견과 함께 판단 [[harrison-22: 374장 p.2885]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 374: Spondyloarthritis",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 374장 p.2883–2885, 2887–2888",
+    "checked": "드라이브 22판 장별 문서 H22_374 본문 대조 — Table 374-4 염증성 vs 기계적 허리통증(p.2883) · 진단 지연 5–14년, Fig. 374-2 진단 흐름(X선 → 척추관절염 소견 → 엉치엉덩관절 MRI → HLA-B27), CRP·ESR 민감도 30–40 %, 척추 X선은 피함(p.2884) · 저선량 CT 는 X선 대안, MRI 초기 염증(osteitis)이 유일한 이상일 수 있음, STIR 골수 부종, 기계적 부하·40세 이후 과잉 진단 주의(p.2885) · 뼈스캔은 PsA 진단에 민감·특이하지 않음, CT 방사선 부담(p.2888, PsA 절) · Table 374-5 최대 용량 NSAID 4주 뒤 활동성이면 TNFi·IL-17i, 전통 DMARD 는 축성 병변에 무효(p.2887)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-01",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "염증성 허리통증·HLA-B27 양성인데 골반 X선이 정상이다. 다음 검사는?",
+    "a": "엉치엉덩관절 MRI(STIR) — 초기 활동성 염증(골수 부종)은 MRI에만 보인다."
+   },
+   {
+    "q": "CT 가 이 단계에서 답이 아닌 이유는?",
+    "a": "구조 변화만 보고 염증을 못 보며 방사선이 많다. MRI 를 못 찍을 때의 X선 대안이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.axial-spondyloarthritis.sacroiliac-mri#v1",
+    "context": "같은 염증성 허리통증, X선이 이미 엉치엉덩관절염을 보여 주는 변형",
+    "stem": "27세 남자가 2년 전부터 허리와 엉덩이가 아파 왔다. 새벽에 아파서 깨고 아침에 1시간 넘게 허리가 뻣뻣하며 움직이면 나아진다. 진찰에서 허리 앞굽힘이 제한되고 양쪽 엉치엉덩관절을 누르면 아프다. 다리 근력과 감각은 정상이다. CRP 2.1 mg/dL, HLA-B27 양성이다. 골반 X선에서 양쪽 엉치엉덩관절 가장자리에 경화와 미란이 있다. 지금까지 약을 먹은 적은 없다. 가장 적절한 처치는?",
+    "options": [
+     "엉치엉덩관절 MRI 촬영 후 치료 결정",
+     "최대 용량 진통소염제 지속 투여와 운동 치료",
+     "경구 글루코코르티코이드 장기 투여",
+     "메토트렉세이트 단독 투여",
+     "요추 유합술"
+    ],
+    "answer": 2,
+    "explanation": "원래 문항과 달리 X선에서 확실한 엉치엉덩관절염(경화·미란)이 보여 방사선 진행형 축성 척추관절염(강직척추염)으로 진단이 끝난다 — MRI 는 X선이 정상일 때 염증을 찾는 검사라 여기서는 필요 없다. 첫 치료는 운동·물리치료와 최대 용량 진통소염제이고, 4주 뒤에도 활동성이면 TNF 억제제나 IL-17 억제제로 올린다. 메토트렉세이트 같은 전통 항류마티스제는 축성 병변에 효과가 없다.",
+    "of": "kmle-2026-1658",
+    "changed": "골반 X선 정상 → 양쪽 엉치엉덩관절의 경화·미란(확실한 엉치엉덩관절염), 물음을 다음 처치로 ⇒ 진단이 X선으로 끝나 MRI가 필요 없고, 정답이 엉치엉덩관절 MRI에서 최대 용량 진통소염제로",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.axial-spondyloarthritis.sacroiliac-mri#v2",
+    "context": "겉모습만 바꾼 변형 — 여자, 다른 척추관절염 소견",
+    "stem": "31세 여자가 8개월째 엉덩이 깊은 곳과 허리가 아파 왔다. 밤 2시쯤 아파서 깨고 아침 강직이 40분 가며, 오래 앉아 있으면 심해지고 걸으면 나아진다. 3년 전 궤양성 대장염을 진단받았고 왼쪽 발뒤꿈치 아킬레스힘줄 부착부가 붓고 아팠던 적이 있다. 진찰에서 양쪽 엉치엉덩관절 부위에 압통이 있고 신경학적 이상은 없다. HLA-B27 은 양성이고 CRP 는 정상이다. 골반 X선에서 엉치엉덩관절은 정상이다. 다음으로 가장 적절한 검사는?",
+    "options": [
+     "1년 뒤 골반 X선 재촬영",
+     "엉치엉덩관절 MRI",
+     "요추 CT",
+     "전신 뼈스캔",
+     "류마티스인자 검사"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·동반 소견이 바뀌었지만 결정 단서는 같다 — 45세 전 시작한 염증성 허리통증(야간 통증·아침 강직·움직이면 호전)에 척추관절염 소견(염증성 장질환·부착부염·HLA-B27)이 있고 X선은 정상이다. 초기 염증은 MRI 에만 보이므로 엉치엉덩관절 MRI 를 찍는다. CRP 정상은 활동성 환자의 60–70 % 에서 볼 수 있어 배제 근거가 아니고, 여자라는 점은 진단을 늦추는 흔한 이유일 뿐이다.",
+    "of": "kmle-2026-1658",
+    "changed": "26세 남자·앞포도막염 → 31세 여자·발뒤꿈치 부착부염과 궤양성 대장염, 검사 순서와 표현을 바꿈 ⇒ 염증성 허리통증 + 척추관절염 소견 + 골반 X선 정상이라는 결정 단서는 같아 답은 그대로 엉치엉덩관절 MRI",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "만성 허리통증 — 엉치엉덩관절 MRI 까지",
+  "geo": {
+   "title": "만성 허리통증 — 엉치엉덩관절 MRI 까지",
+   "w": 567.0,
+   "h": 613.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "3개월 넘는 허리·엉덩이",
+      "통증, 45세 전 시작"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "ibp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "염증성 양상(아침 강직·",
+      "운동에 호전)?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "ask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "강직 시간·야간 통증·NSAID",
+      "반응을 묻는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 229.0
+    },
+    {
+     "id": "mech",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "기계적 허리통증 쪽으로 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 336.0
+    },
+    {
+     "id": "xray",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "골반 X선에 확실한",
+      "엉치엉덩관절염?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 336.0
+    },
+    {
+     "id": "ras",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "방사선 진행형(강직척추염)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 443.0
+    },
+    {
+     "id": "mri",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "엉치엉덩관절 MRI 골수 부종?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 443.0
+    },
+    {
+     "id": "nras",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "방사선 비진행형 축성",
+      "척추관절염"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 533.0
+    },
+    {
+     "id": "b27",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "임상 소견 뚜렷 + HLA-B27",
+      "양성일 때만 진단"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 533.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "ibp",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ibp",
+     "to": "xray",
+     "points": [
+      [
+       291.0,
+       166.0
+      ],
+      [
+       291.0,
+       215.0
+      ],
+      [
+       226.0,
+       215.0
+      ],
+      [
+       226.0,
+       322.0
+      ],
+      [
+       194.3,
+       322.0
+      ],
+      [
+       194.3,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 281.5,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "ibp",
+     "to": "mech",
+     "points": [
+      [
+       389.0,
+       166.0
+      ],
+      [
+       389.0,
+       215.0
+      ],
+      [
+       454.0,
+       215.0
+      ],
+      [
+       454.0,
+       322.0
+      ],
+      [
+       485.7,
+       322.0
+      ],
+      [
+       485.7,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 368.5,
+      "y": 190.0
+     }
+    },
+    {
+     "from": "ibp",
+     "to": "ask",
+     "points": [
+      [
+       340.0,
+       166.0
+      ],
+      [
+       340.0,
+       229.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정보 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "xray",
+     "points": [
+      [
+       307.3,
+       293.0
+      ],
+      [
+       307.3,
+       322.0
+      ],
+      [
+       259.7,
+       322.0
+      ],
+      [
+       259.7,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "염증성"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 297.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "mech",
+     "points": [
+      [
+       372.7,
+       293.0
+      ],
+      [
+       372.7,
+       322.0
+      ],
+      [
+       420.3,
+       322.0
+      ],
+      [
+       420.3,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "기계적"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 297.0
+     }
+    },
+    {
+     "from": "xray",
+     "to": "ras",
+     "points": [
+      [
+       194.3,
+       400.0
+      ],
+      [
+       194.3,
+       429.0
+      ],
+      [
+       114.0,
+       429.0
+      ],
+      [
+       114.0,
+       443.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 404.0
+     }
+    },
+    {
+     "from": "xray",
+     "to": "mri",
+     "points": [
+      [
+       259.7,
+       400.0
+      ],
+      [
+       259.7,
+       429.0
+      ],
+      [
+       340.0,
+       429.0
+      ],
+      [
+       340.0,
+       443.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 404.0
+     }
+    },
+    {
+     "from": "mri",
+     "to": "nras",
+     "points": [
+      [
+       307.3,
+       490.0
+      ],
+      [
+       307.3,
+       519.0
+      ],
+      [
+       227.0,
+       519.0
+      ],
+      [
+       227.0,
+       533.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 494.0
+     }
+    },
+    {
+     "from": "mri",
+     "to": "b27",
+     "points": [
+      [
+       372.7,
+       490.0
+      ],
+      [
+       372.7,
+       519.0
+      ],
+      [
+       453.0,
+       519.0
+      ],
+      [
+       453.0,
+       533.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 494.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "3개월 넘는 허리·엉덩이 통증, 45세 전 시작",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "염증성 양상(아침 강직·운동에 호전)?"
+     }
+    ]
+   },
+   {
+    "id": "ibp",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "염증성 양상(아침 강직·운동에 호전)?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "골반 X선에 확실한 엉치엉덩관절염?"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "기계적 허리통증 쪽으로 평가"
+     },
+     {
+      "label": "정보 없음",
+      "to": 3,
+      "toText": "강직 시간·야간 통증·NSAID 반응을 묻는다"
+     }
+    ]
+   },
+   {
+    "id": "ask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "강직 시간·야간 통증·NSAID 반응을 묻는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "염증성",
+      "to": 4,
+      "toText": "골반 X선에 확실한 엉치엉덩관절염?"
+     },
+     {
+      "label": "기계적",
+      "to": 5,
+      "toText": "기계적 허리통증 쪽으로 평가"
+     }
+    ]
+   },
+   {
+    "id": "xray",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "골반 X선에 확실한 엉치엉덩관절염?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "방사선 진행형(강직척추염)"
+     },
+     {
+      "label": "정상",
+      "to": 7,
+      "toText": "엉치엉덩관절 MRI 골수 부종?"
+     }
+    ]
+   },
+   {
+    "id": "mech",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "기계적 허리통증 쪽으로 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ras",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "방사선 진행형(강직척추염)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mri",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "엉치엉덩관절 MRI 골수 부종?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 8,
+      "toText": "방사선 비진행형 축성 척추관절염"
+     },
+     {
+      "label": "없음",
+      "to": 9,
+      "toText": "임상 소견 뚜렷 + HLA-B27 양성일 때만 진단"
+     }
+    ]
+   },
+   {
+    "id": "nras",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "방사선 비진행형 축성 척추관절염",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "b27",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "임상 소견 뚜렷 + HLA-B27 양성일 때만 진단",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1658"
   ],
   "hasErrors": false
  },
