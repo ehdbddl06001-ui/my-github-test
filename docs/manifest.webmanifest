@@ -16,6 +16,7 @@
   ],
   "shortcuts": [
     { "name": "오늘의 영상 문항", "short_name": "영상", "url": "./index.html?exam=imaging&mode=latest" },
+    { "name": "오늘의 심전도", "short_name": "심전도", "url": "./index.html?exam=ecg&mode=latest" },
     { "name": "KMLE 최신 세트", "short_name": "KMLE", "url": "./index.html?exam=kmle&mode=latest" },
     { "name": "USMLE 최신 세트", "short_name": "USMLE", "url": "./index.html?exam=usmle&mode=latest" }
   ]

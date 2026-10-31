@@ -6,12 +6,15 @@
            + 삭제 묘비(wrong_removed_<exam>)로 기기 간 동기화 시 삭제가 되살아나지 않게 한다
    - 동기화: 같은 출처의 /api/wrong (Cloudflare Pages Function) 이 있으면 GitHub 저장소와 합친다.
              GitHub Pages 처럼 함수가 없는 호스트에서는 404 → 조용히 로컬 모드.
-   - USMLE는 Step 1(기초의학)/Step 2(임상) 필터, 영상은 국시형/USMLE형 필터를 지원 */
+   - USMLE는 Step 1(기초의학)/Step 2(임상) 필터, 영상은 국시형/USMLE형 필터를 지원
+   - 심전도 덱(ecg) = 영상 문항 중 modality ECG — 매일 심전도 트랙(exam-builder ecg_daily) + 영상 세트의 ECG.
+     오답은 따로 두지 않고 wrong_imaging 을 함께 쓴다(같은 문항이 두 곳에 갈라지지 않게). */
 "use strict";
 
 // 각 문항에 출처 덱(src)을 박아 둔다 — '최신 세트'는 출처별 최신 날짜를 합쳐서 만든다.
 function tagSrc(list, src) { list.forEach((q) => { if (!q.src) q.src = src; }); return list; }
 const IMAGING = tagSrc(Array.isArray(window.IMAGING_QUESTIONS) ? window.IMAGING_QUESTIONS : [], "imaging");
+const ECG = IMAGING.filter((q) => String(q.modality || "").toUpperCase() === "ECG");
 // KMLE 덱 = content/kmle(MedKOS SoT) + 레거시 quiz.py 번들 + 영상 세트의 국시형 문항(그날 만든 문항을 한 자리에서).
 const KMLE = [].concat(
   tagSrc(Array.isArray(window.KMLE_CONTENT_QUESTIONS) ? window.KMLE_CONTENT_QUESTIONS : [], "kmle"),
@@ -25,26 +28,29 @@ const USMLE = [].concat(
 );
 const CIRCLED = ["①", "②", "③", "④", "⑤"];
 const ALPHA = ["A", "B", "C", "D", "E"];
-const EXAM_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상" };
+const EXAM_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", ecg: "심전도" };
 
 const $ = (id) => document.getElementById(id);
 const show = (el) => el.classList.remove("hidden");
 const hide = (el) => el.classList.add("hidden");
 
 /* ---------- 시험 컨텍스트 ---------- */
-function exam() { return $("exam").value; }             // "kmle" | "usmle" | "imaging"
+function exam() { return $("exam").value; }             // "kmle" | "usmle" | "imaging" | "ecg"
 function isUsmle() { return exam() === "usmle"; }
-function isImaging() { return exam() === "imaging"; }
+function isEcg() { return exam() === "ecg"; }
+function isImaging() { return exam() === "imaging" || isEcg(); }   // 심전도 덱은 영상 덱의 한 갈래(형식 필터·영상 오답 공유)
 function examName(e) { return EXAM_NAME[e || exam()] || String(e || exam()).toUpperCase(); }
-function allQuestions() { return isUsmle() ? USMLE : isImaging() ? IMAGING : KMLE; }
+function allQuestions() { return isUsmle() ? USMLE : isEcg() ? ECG : isImaging() ? IMAGING : KMLE; }
 // 보기 글머리: USMLE 와 영상 덱의 USMLE형은 A~E, 나머지(국시)는 ①~⑤.
 function labelsFor(q) {
   const alpha = isUsmle() || (q && q.style === "usmle_style") || (q && q.exam === "usmle");
   return alpha ? ALPHA : CIRCLED;
 }
 function label(i, q) { return labelsFor(q || deck[pos])[i] || String(i + 1); }
-function storeKey(e) { return "wrong_" + (e || exam()); }
-function removedKey(e) { return "wrong_removed_" + (e || exam()); }
+// 저장·동기화 단위 — 심전도 덱은 영상 오답(wrong_imaging)에 쌓는다.
+function storeExam(e) { const x = e || exam(); return x === "ecg" ? "imaging" : x; }
+function storeKey(e) { return "wrong_" + storeExam(e); }
+function removedKey(e) { return "wrong_removed_" + storeExam(e); }
 // 영상 세트 문항은 어느 덱에서 풀었든 오답을 wrong_imaging 에 모은다(같은 문항이 두 곳에 갈라지지 않게).
 function wrongExamOf(q) { return q && q.exam === "imaging" ? "imaging" : exam(); }
 
@@ -65,6 +71,15 @@ function baseList() {
 }
 
 /* ---------- 오답노트 저장소(시험별) ---------- */
+// 지금 덱에서 보여 줄 오답 — 심전도 덱이면 영상 오답 중 심전도 문항만.
+function deckWrong() {
+  const m = loadWrong();
+  if (!isEcg()) return m;
+  const ids = new Set(ECG.map((q) => q.id));
+  const out = {};
+  Object.keys(m).forEach((id) => { if (ids.has(id)) out[id] = m[id]; });
+  return out;
+}
 function loadWrong(e) {
   try { return JSON.parse(localStorage.getItem(storeKey(e))) || {}; }
   catch (err) { return {}; }
@@ -232,7 +247,7 @@ function scheduleSync() {
 async function syncAll(quiet) {
   // 지금 연 덱만이 아니라 이 기기에 기록이 있는 모든 시험을 보낸다(2026-09-23) — 예전에는 KMLE 덱을 열면
   // USMLE 오답이 올라가지 않아 저장소에 USMLE 오답 파일이 한 번도 생기지 않았다.
-  const list = [exam()];
+  const list = [storeExam()];
   SYNC_EXAMS.forEach((e) => {
     if (list.indexOf(e) < 0 && (e === "imaging" || Object.keys(loadWrong(e)).length || Object.keys(loadRemoved(e)).length)) list.push(e);
   });
@@ -975,7 +990,7 @@ function renderReview(openConcept) {
 function renderWrongbook() {
   hide($("setup")); hide($("quiz")); hide($("result"));
   show($("wrongbook"));
-  const map = loadWrong();
+  const map = deckWrong();
   const items = Object.values(map);
   $("wbCount").textContent = `(${examName()} · ${items.length}개)`;
   const list = $("wbList");
@@ -1021,7 +1036,7 @@ function download(filename, text, mime) {
 }
 
 function exportMarkdown() {
-  const items = Object.values(loadWrong());
+  const items = Object.values(deckWrong());
   if (items.length === 0) { alert("저장된 오답이 없습니다."); return; }
   const bySub = {};
   items.forEach((w) => { (bySub[w.subject] = bySub[w.subject] || []).push(w); });
@@ -1045,7 +1060,7 @@ function exportMarkdown() {
 }
 
 function exportCsv() {
-  const items = Object.values(loadWrong());
+  const items = Object.values(deckWrong());
   if (items.length === 0) { alert("저장된 오답이 없습니다."); return; }
   const esc = (s) => `"${String(s == null ? "" : s).replace(/"/g, '""')}"`;
   const head = ["id", "시험", "step", "과목", "유형", "기록일", "문항", "내가고른답", "정답", "출처", "메모"];
@@ -1064,7 +1079,7 @@ function escapeHtml(s) {
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 function updateWrongCount() {
-  const n = Object.keys(loadWrong()).length;
+  const n = Object.keys(deckWrong()).length;
   $("wrongCount").textContent = n ? `현재 ${examName()} 오답노트에 ${n}개 저장됨` : "";
 }
 
@@ -1112,7 +1127,7 @@ function onModeChange() {
     populateSubjects(base);
   }
 
-  const wrongN = Object.keys(loadWrong()).length;
+  const wrongN = Object.keys(deckWrong()).length;
   const stepTxt = isUsmle() && $("step").value !== "__ALL__" ? ` [${$("step").value}]` : "";
   const latestN = latestSet(base).length;
   const latestImg = latestSet(base).filter((q) => q.exam === "imaging").length;
@@ -1122,7 +1137,7 @@ function onModeChange() {
     const n = base.filter((q) => inRange(q, lo, hi)).length;
     rangeHint = `${lo} ~ ${hi} 사이에 만든 ${n}개를 풉니다.`;
   }
-  const latestLabel = isImaging() ? `오늘의 영상 세트(${fd})` : `최신 세트(${fd})`;
+  const latestLabel = isEcg() ? `오늘의 심전도(${fd})` : isImaging() ? `오늘의 영상 세트(${fd})` : `최신 세트(${fd})`;
   const imgNote = !isImaging() && latestImg ? ` 이 중 ${latestImg}개는 그날 영상 세트에서 온 문항입니다.` : "";
   const hint = {
     latest: `${latestLabel} ${latestN}개를 풉니다.${imgNote} 새 세트가 나오면 자동으로 그 세트로 바뀝니다.`,
@@ -1165,6 +1180,10 @@ function init() {
     const o = [...$("exam").options].find((x) => x.value === "imaging");
     if (o) o.textContent = "🩻 영상 (아직 문항 없음)";
   }
+  if (ECG.length === 0) {
+    const o = [...$("exam").options].find((x) => x.value === "ecg");
+    if (o) o.textContent = "🫀 심전도 (아직 문항 없음)";
+  }
   const qp = applyQueryParams();
   $("exam").onchange = onExamChange;
   $("step").onchange = onModeChange;
@@ -1190,9 +1209,11 @@ function init() {
   $("clearBtn").onclick = () => {
     if (confirm(`${examName()} 오답노트를 모두 비웁니다. 계속할까요?`)) {
       const rm = loadRemoved(); const t = nowIso();
-      Object.keys(loadWrong()).forEach((id) => { rm[id] = t; });
+      const gone = Object.keys(deckWrong());
+      gone.forEach((id) => { rm[id] = t; });
       saveRemoved(rm);
-      localStorage.removeItem(storeKey());
+      if (isEcg()) { const m = loadWrong(); gone.forEach((id) => delete m[id]); saveWrong(m); }   // 다른 영상 오답은 남긴다
+      else localStorage.removeItem(storeKey());
       renderWrongbook(); updateWrongCount(); scheduleSync();
     }
   };
