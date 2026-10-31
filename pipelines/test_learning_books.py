@@ -1016,6 +1016,21 @@ class OutlineFrame(unittest.TestCase):
     def test_harrison_toc_matches_known_anchors(self):
         self.assertEqual(ht.main(["--check"]), 0)             # PDF 없이 JSON 만으로 검사(Actions 에서도 돈다)
 
+    def test_harrison22_map_is_complete_and_keeps_known_anchors(self):
+        # 2026-10-31: 대조는 해리슨 22판 DB. 슬롯 id 는 21판 장 번호 그대로 두고 from21 로 22판 장을 찾는다.
+        h = ol.load_h22()
+        self.assertEqual(h.get("edition"), 22)
+        toc21 = ol.load_toc()
+        self.assertEqual(set(h["from21"]), {str(n) for n in toc21})                 # 21판 모든 장에 대응(빈 목록 = 22판에 없음)
+        self.assertTrue(all(c.get("doc") for c in h["chapters"].values()))          # 22판 모든 장에 드라이브 문서
+        self.assertEqual(ol.to22([42], h), [44])                                     # 심잡음 42장 → 44장
+        self.assertEqual(ol.to22([17], h), [18, 19])                                 # 등·목 통증 → 두 장
+        self.assertEqual(ol.to22([417], h), [])                                      # 퓨린 대사 — 22판에 없음
+        idx = ol.index(ol.load()[0])
+        self.assertEqual(idx["h42"].chapters22, [44])
+        self.assertEqual(idx["h42"].source, "해리슨 22판 44장")
+        self.assertEqual(idx["h417"].source, "해리슨 21판 417장")                   # 22판에 없으면 21판으로 돌아간다
+
     def test_range_parsing(self):
         self.assertEqual(ol.parse_range("236-238"), [236, 237, 238])
         self.assertEqual(ol.parse_range("392"), [392])
