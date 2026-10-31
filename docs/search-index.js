@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4221,
+  "total": 4222,
   "byType": {
-   "concept": 125,
+   "concept": 126,
    "imaging": 503,
    "paper": 876,
    "kmle": 1632,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 288,
+   "Cardiology": 289,
    "Nephrology": 229,
    "Infectious Disease": 212,
    "Pediatrics": 197,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1209,
+   "medium": 1210,
    "high": 2960,
    "low": 52
   },
@@ -113,6 +113,20 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/rheumatology/cn.ortho.axial-spondyloarthritis.sacroiliac-mri.md",
    "snippet": "판단 — 왜 X선이 정상이면 MRI 인가 엉치엉덩관절 X선의 경화·미란은 구조 손상 이 쌓인 뒤에야 보인다 — 진단 지연이 5–14년으로 보고된다 [[harrison 22: 374장 p.2884]]. 초기에는 MRI 의 활동성 염증(osteitis)이 유일한 이상 일 수 있다 [[harrison 22: 374장 p.2885]]. 그래서 X선이 정상이고 임상 소견이 뚜렷하면 다음은 MRI 다. 기다리는 것(재촬영)은 진단·치료만",
    "text": "Rheumatology 판단 — 왜 X선이 정상이면 MRI 인가 엉치엉덩관절 X선의 경화·미란은 구조 손상 이 쌓인 뒤에야 보인다 — 진단 지연이 5–14년으로 보고된다 [[harrison 22: 374장 p.2884]]. 초기에는 MRI 의 활동성 염증(osteitis)이 유일한 이상 일 수 있다 [[harrison 22: 374장 p.2885]]. 그래서 X선이 정상이고 임상 소견이 뚜렷하면 다음은 MRI 다. 기다리는 것(재촬영)은 진단·치료만 늦추고, CT·뼈스캔은 지금 찾으려는 염증을 보지 못한다. 기전 — 부착부 염증에서 골수 부종, 그리고 뼈로 척추관절염은 힘줄·인대가 뼈에 붙는 자리(부착부)와 엉치엉덩관절의 면역 염증으로 시작한다. 염증이 관절 밑 뼈속질로 번지면 물이 늘어 MRI STIR 영상에서 밝은 골수 부종으로 보인다. 시간이 지나면 염증 자리가 지방 변성으로 바뀌고, 다시 새 뼈가 생겨 미란·경화·강직이 된다 [[harrison 22: 374장 p.2885]]. X선은 이 마지막 구조 단계만 잡아내므로 초기에 정상이다. 가르는 소견 — 검사마다 보는 것 첫 검사는 골반 AP(또는 Ferguson) 한 장이고, 척추 X선은 만성 허리통증에서 피한다 [[harrison 22: 374장 p.2884]]. STIR 골수 부종이 활동성 염증, T1 의 지방 변성·미란이 구조 변화다. 여러 종류의 병변이 함께 있을수록 확신이 커진다 [[harrison 22: 374장 p.2885]]. 음성·양성의 한계 : CRP·ESR 은 활동성 환자의 30–40 % 에서만 오른다 [[harrison 22: 374장 p.2884]]. MRI 골수 부종은 운동선수·출산 뒤·40세 넘은 사람에게도 보일 수 있다 [[harrison 22: 374장 p.2885]]. 권고와 예외 MRI 가 음성이어도 임상 소견이 뚜렷하고 HLA B27 이 양성이면 방사선 비진행형으로 진단할 수 있다 [[harrison 22: 374장 p.2884]]. MRI 를 찍을 수 없으면 저선량 엉치엉덩관절 CT 가 X선의 대안이다 — 염증이 아니라 구조를 본다 [[harrison 22: 374장 p.2885]]. 진단 뒤 첫 치료(운동·최대 용량 NSAID → 생물학제제)는 이 정리본의 목표가 아니다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 374장 p.2883–2885)"
+  },
+  {
+   "id": "cn.cardio.systolic-murmur.dynamic-auscultation",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-01",
+   "path": "content/concepts/cardiology/cn.cardio.systolic-murmur.dynamic-auscultation.md",
+   "snippet": "판단 — 왜 조작 반응이 원인을 가르나 대부분의 잡음은 흐름의 양 에 비례한다 — 발살바 긴장기·일어서기로 정맥 환류가 줄면 작아진다 [[harrison 22: 44장 p.290]]. HOCM·MVP 는 반대다 — 심실이 작아질수록 유출로 폐쇄가 심해지고 판막이 일찍 탈출해 커진다 [[harrison 22: 44장 p.290]]. 후부하(손쥐기)는 역방향 흐름(MR·VSD)을 늘리고 순방향 유출 기울기(AS·HOCM)는 줄인다",
+   "text": "Cardiology 판단 — 왜 조작 반응이 원인을 가르나 대부분의 잡음은 흐름의 양 에 비례한다 — 발살바 긴장기·일어서기로 정맥 환류가 줄면 작아진다 [[harrison 22: 44장 p.290]]. HOCM·MVP 는 반대다 — 심실이 작아질수록 유출로 폐쇄가 심해지고 판막이 일찍 탈출해 커진다 [[harrison 22: 44장 p.290]]. 후부하(손쥐기)는 역방향 흐름(MR·VSD)을 늘리고 순방향 유출 기울기(AS·HOCM)는 줄인다 [[harrison 22: 44장 p.289]]. 기전 — 심실 크기가 폐쇄를 정한다 HOCM 에서는 두꺼운 중격과 승모판 앞첨판이 수축기에 유출로를 좁힌다. 심실 안 혈액이 적을수록(전부하·후부하 감소, 수축력 증가) 둘이 더 가까워져 동적 유출로 기울기와 잡음이 커지고, 잡음은 유출로 폐쇄와 MR 이 섞인 모양이다 [[harrison 22: 44장 p.285]]. 쪼그려 앉으면 정맥 환류와 후부하가 함께 올라 심실이 커지므로 잡음이 작고 짧아진다 [[harrison 22: 44장 p.290]]. MVP 도 심실이 작으면 탈출이 수축기 일찍 일어나 클릭과 잡음이 S1 쪽으로 당겨진다 [[harrison 22: 44장 p.286]]. 가르는 소견 — 조작별 반응 HOCM 과 MVP 는 조작 반응이 같아 동반 소견으로 가른다 — HOCM 은 좌심실 비대, MVP 는 비구출성 클릭 [[harrison 22: 44장 p.285]]. HOCM 의 경동맥 상승은 빠르고 정상 크기, 심한 AS 는 작고 늦다 — 노인의 굳은 동맥에서는 덜 정확하다 [[harrison 22: 44장 p.285]]. 왼쪽 잡음은 날숨 끝에 잘 들리고, 오른쪽 잡음은 들숨에 커진다 [[harrison 22: 44장 p.289]]. 권고와 예외 조작은 원인의 단서일 뿐 — 원인·중증도·좌심실 기능은 경흉부 심초음파로 확인한다 [[harrison 22: 44장 p.285]]. 정상 심박출량에서 2번째 오른쪽 늑간의 진전과 4도 이상의 잡음은 심한 AS 를 시사하지만, 심부전·저심박출에서는 AS 잡음이 작아진다 [[harrison 22: 44장 p.285]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 44장 p.284–290)"
   },
   {
    "id": "cn.cardio.premature-ventricular-complex.ecg-recognition",
