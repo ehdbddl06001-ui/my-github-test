@@ -1,20 +1,20 @@
 {
- "started": "2026-10-30T10:15:32+09:00",
+ "started": "2026-10-31T09:59:41+09:00",
  "built": [
-  "순환기내과",
-  "류마티스내과"
+  "산부인과"
  ],
  "skipped": [
   "응급의학과",
   "정형외과",
   "피부과",
+  "순환기내과",
   "내분비내과",
   "안과",
   "외과",
-  "산부인과",
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
+  "류마티스내과",
   "호흡기내과",
   "감염내과",
   "소화기내과",
@@ -29,16 +29,13 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "순환기내과": [],
-  "류마티스내과": []
+  "산부인과": []
  },
  "notes": {
-  "순환기내과": [],
-  "류마티스내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 15쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 15쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 45쪽 왼쪽 단 아래가 비어 있다(빈 공간 43%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 45쪽 오른쪽 단 아래가 비어 있다(빈 공간 43%)"
+  "산부인과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 11쪽 왼쪽 단 아래가 비어 있다(빈 공간 46%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 11쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 14쪽 왼쪽 단 아래가 비어 있다(빈 공간 30%)"
   ]
  },
  "concept_errors": [
@@ -53,108 +50,70 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "순환기내과": {
-   "tried": 223,
+  "산부인과": {
+   "tried": 269,
    "diagram_after_section": {
-    "u-cn-cardio-syncope-high-risk-admit": 16,
-    "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
-    "u-cn-cardio-syncope-high-risk-admit#pad": 0,
-    "u-cn-cardio-syncope-high-risk-admit#col": false,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity": 18,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 0.76,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 0,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 10,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#pad": 0,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": false,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 1.0,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 14,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false,
-    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management": 22,
-    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#shrink": 1.0,
-    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#pad": 42,
-    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#col": false,
-    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#pad": 14
-   }
-  },
-  "류마티스내과": {
-   "tried": 550,
-   "diagram_after_section": {
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#pad": 42,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#col": false,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis": 16,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#shrink": 1.0,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#pad": 28,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#col": false,
-    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#fig:f1": 6,
-    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis": 12,
-    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#shrink": 0.76,
-    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#pad": 0,
-    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#col": false,
-    "u-cn-rheum-sjogren-sicca-workup": 7,
-    "u-cn-rheum-sjogren-sicca-workup#shrink": 1.0,
-    "u-cn-rheum-sjogren-sicca-workup#pad": 0,
-    "u-cn-rheum-sjogren-sicca-workup#col": false,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa": 18,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#shrink": 1.0,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#pad": 0,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#col": true,
-    "u-cn-rheum-behcet-clinical-diagnosis": 14,
-    "u-cn-rheum-behcet-clinical-diagnosis#shrink": 1.0,
-    "u-cn-rheum-behcet-clinical-diagnosis#pad": 42,
-    "u-cn-rheum-behcet-clinical-diagnosis#col": false,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis": 12,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#shrink": 1.0,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#pad": 0,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#col": false,
-    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first": 17,
-    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first#shrink": 1.0,
-    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first#pad": 0,
-    "u-cn-rheum-acute-monoarthritis-synovial-fluid-first#col": true,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 4,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#col": false,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 15,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 14,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 21,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 1.0,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 0,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction": 19,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#shrink": 1.0,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#pad": 42,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#col": false,
+    "u-cn-obgyn-female-sexual-dysfunction-management": 14,
+    "u-cn-obgyn-female-sexual-dysfunction-management#shrink": 0.88,
+    "u-cn-obgyn-female-sexual-dysfunction-management#pad": 0,
+    "u-cn-obgyn-female-sexual-dysfunction-management#col": false,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal": 14,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#shrink": 1.0,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#pad": 0,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#col": false,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation": 13,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#shrink": 1.0,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#pad": 28,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#col": false,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication": 5,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#shrink": 1.0,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#pad": 0,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#col": false,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker": 11,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#shrink": 1.0,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#pad": 28,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#col": false,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type": 11,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#shrink": 1.0,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#pad": 0,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#col": true,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis#figscale:f2": 0.85,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis": 15,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis#shrink": 1.0,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis#pad": 0,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis#col": true
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-30T11:09:17+09:00",
+ "finished": "2026-10-31T10:15:35+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "순환기내과": {
-    "file": "MedKOS_학습서_순환기내과.pdf",
+   "산부인과": {
+    "file": "MedKOS_학습서_산부인과.pdf",
     "status": "uploaded",
-    "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
+    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
     "kept_id": true,
-    "md5": "248e3922facd6dbc62d23bde319e667a",
-    "archive": "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf"
-   },
-   "류마티스내과": {
-    "file": "MedKOS_학습서_류마티스내과.pdf",
-    "status": "uploaded",
-    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "kept_id": true,
-    "md5": "e6498890c373ea9295c85511f43c5346",
-    "archive": "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf"
+    "md5": "19821766e3f6893be73859061eacec0b",
+    "archive": "MedKOS_학습서_산부인과_v16_2026-10-31.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "3db5e921580cc8206a62e426ada0f15c"
+    "md5": "0f3e79692906c307bbebfcb703774905"
    }
   },
-  "at": "2026-10-30T11:09:17+09:00"
+  "at": "2026-10-31T10:15:35+09:00"
  }
 }

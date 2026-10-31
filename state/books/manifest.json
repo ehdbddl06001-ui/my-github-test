@@ -485,11 +485,11 @@
    ]
   },
   "산부인과": {
-   "hash": "e57704b6fd79cb26e31e",
-   "version": 15,
-   "date": "2026-10-29",
+   "hash": "e55ba34f6a80f2d2301d",
+   "version": 16,
+   "date": "2026-10-31",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 26,
+   "pages": 28,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -516,60 +516,66 @@
      "concept_hash": "2437290fb8c2d1a4",
      "concept_version": 1
     },
+    "cn.obgyn.pregnancy-physiology.normal-vs-abnormal": {
+     "title": "임신 중 소견 — 생리 변화의 방향·크기를 넘으면 병이다",
+     "page": 10,
+     "concept_hash": "88a60b36c154c856",
+     "concept_version": 1
+    },
     "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
      "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
-     "page": 10,
+     "page": 12,
      "concept_hash": "b5e8475cfea79a62",
      "concept_version": 1
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
      "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
-     "page": 12,
+     "page": 14,
      "concept_hash": "54c314318cffecef",
      "concept_version": 3
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 15,
+     "page": 17,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
     "cn.obgyn.granulosa-cell-tumor.tumor-marker": {
      "title": "과립막세포종 — 추적 표지자는 기원 세포가 정한다",
-     "page": 18,
+     "page": 20,
      "concept_hash": "edb8da638ad18885",
      "concept_version": 2
     },
     "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
      "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
-     "page": 20,
+     "page": 22,
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
      "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
-     "page": 21,
+     "page": 23,
      "concept_hash": "55af692609810631",
      "concept_version": 2
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 23,
+     "page": 25,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 25,
+     "page": 27,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "5bb072f50df8363b464057cbb2bd4ee5",
-    "version": 15,
-    "uploaded": "2026-10-29T11:14:32+09:00"
+    "md5": "19821766e3f6893be73859061eacec0b",
+    "version": 16,
+    "uploaded": "2026-10-31T10:15:35+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -586,10 +592,11 @@
     "MedKOS_학습서_산부인과_v12_2026-10-18.pdf",
     "MedKOS_학습서_산부인과_v13_2026-10-24.pdf",
     "MedKOS_학습서_산부인과_v14_2026-10-28.pdf",
-    "MedKOS_학습서_산부인과_v15_2026-10-29.pdf"
+    "MedKOS_학습서_산부인과_v15_2026-10-29.pdf",
+    "MedKOS_학습서_산부인과_v16_2026-10-31.pdf"
    ],
    "changes": [
-    "새 단원: 여성 성기능 장애 — 고통이 기준, 폐경 성교통은 국소 치료"
+    "새 단원: 임신 중 소견 — 생리 변화의 방향·크기를 넘으면 병이다"
    ]
   },
   "정신건강의학과": {
@@ -1403,13 +1410,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "3db5e921580cc8206a62e426ada0f15c",
+   "md5": "0f3e79692906c307bbebfcb703774905",
    "version": null,
-   "uploaded": "2026-10-30T11:09:17+09:00"
+   "uploaded": "2026-10-31T10:15:35+09:00"
   }
  },
- "updated": "2026-10-30"
+ "updated": "2026-10-31"
 }
