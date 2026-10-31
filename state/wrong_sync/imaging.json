@@ -559,8 +559,29 @@
    "date": "2026-10-27",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0493": {
+   "id": "imaging-2026-0493",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "Step 2",
+   "type": "심전도 판독 — 운동 시 흉부 압박감과 휴식 시 심전도",
+   "style": "usmle_style",
+   "modality": "ECG",
+   "question": "Which of the following coronary arteries is most likely to have a hemodynamically significant stenosis?",
+   "chosen": 3,
+   "chosenText": "Right coronary artery",
+   "answer": 1,
+   "answerText": "Left anterior descending artery",
+   "coreNote": "",
+   "differ": "",
+   "decision": "휴식 시 심전도의 T파 역위가 aVL 과 V2~V5 에 모여 있다. 운동 시 흉부 압박과 합치면 좌전하행지 영역의 허혈이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+   "date": "2026-10-31",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-26T23:00:44.877Z"
+ "updated": "2026-10-31T14:37:21.058Z"
 }
