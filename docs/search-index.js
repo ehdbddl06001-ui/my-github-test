@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4203,
+  "total": 4206,
   "byType": {
+   "imaging": 492,
    "concept": 121,
    "paper": 876,
    "kmle": 1632,
-   "imaging": 489,
    "usmle": 222,
    "anatomy": 846,
    "ailab": 14,
@@ -39,7 +39,7 @@ window.MEDKOS_INDEX = {
    "Hematology": 99,
    "Laboratory Medicine": 90,
    "산부인과": 69,
-   "순환기": 41,
+   "순환기": 44,
    "소화기": 32,
    "호흡기": 32,
    "소아과": 27,
@@ -79,13 +79,70 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 2949,
    "medium": 1205,
-   "high": 2946,
    "low": 52
   },
-  "tagCount": 5158
+  "tagCount": 5159
  },
  "docs": [
+  {
+   "id": "imaging-2026-0493",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 운동 시 흉부 압박감과 휴식 시 심전도",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0493.md",
+   "snippet": "A 70 year old woman comes to the physician because of episodes of chest pressure for 2 months. The episodes occur when she walks uphill and resolve within 5 minutes of rest. She has had no pain at rest. She has type 2 diabetes mellitus and ",
+   "text": "순환기 심전도 판독 — 운동 시 흉부 압박감과 휴식 시 심전도 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f A 70 year old woman comes to the physician because of episodes of chest pressure for 2 months. The episodes occur when she walks uphill and resolve within 5 minutes of rest. She has had no pain at rest. She has type 2 diabetes mellitus and hypertension. Her pulse is 70/min and blood pressure is 146/84 mm Hg. Cardiac examination shows no murmurs. She is pain free at the time of evaluation, and a 12 lead ECG is obtained and shown. Which of the following coronary arteries is most likely to have a hemodynamically significant stenosis? A. Left internal mammary artery B. Left anterior descending artery C. Left circumflex artery D. Right coronary artery E. Posterior descending artery"
+  },
+  {
+   "id": "imaging-2026-0492",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 흉통과 서맥이 있는 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0492.md",
+   "snippet": "85세 여자가 1시간 전 시작된 가슴 한가운데의 쥐어짜는 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 쉬어도 가라앉지 않는다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 102/64 mmHg, 맥박 52회/분, 호흡 20회/분, 산소포화도 96%이다. 경정맥 확장은 없고 양쪽 폐는 깨끗하다. 이 병원은 24시간 심혈관조영실을 운영한다. 아스피린을 씹어 먹게 했다. 12유도 심전도는 그림과 같다. 다음 처치로 가",
+   "text": "순환기 심전도 처치 — 흉통과 서맥이 있는 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f 85세 여자가 1시간 전 시작된 가슴 한가운데의 쥐어짜는 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 쉬어도 가라앉지 않는다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 102/64 mmHg, 맥박 52회/분, 호흡 20회/분, 산소포화도 96%이다. 경정맥 확장은 없고 양쪽 폐는 깨끗하다. 이 병원은 24시간 심혈관조영실을 운영한다. 아스피린을 씹어 먹게 했다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 응급 관상동맥조영술과 일차 경피적 관상동맥중재술 B. 고감도 트로포닌을 3시간 뒤 재검한 후 치료 결정 C. 정맥 혈전용해제(테넥테플라제) 투여 D. 설하 니트로글리세린 반복 투여 후 경과 관찰 E. 정맥 메토프롤롤 투여"
+  },
+  {
+   "id": "imaging-2026-0491",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 가끔 내려앉는 느낌의 젊은 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+   "confidence": "high",
+   "date": "2026-10-31",
+   "path": "content/imaging/2026/imaging-2026-0491.md",
+   "snippet": "41세 여자가 두 달 전부터 가끔 가슴이 「쿵」 하고 내려앉는 느낌이 들어 내과에 왔다. 증상은 쉴 때 더 잘 느끼고 몇 초 만에 사라진다. 흉통·실신·호흡곤란은 없고 커피를 하루 3잔 마신다. 혈압 118/72 mmHg, 맥박 62회/분으로 가끔 불규칙하다. 심잡음은 들리지 않는다. 혈청 칼륨 4.1 mEq/L 이고 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 간헐적 ",
+   "text": "순환기 심전도 판독 — 가끔 내려앉는 느낌의 젊은 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f 41세 여자가 두 달 전부터 가끔 가슴이 「쿵」 하고 내려앉는 느낌이 들어 내과에 왔다. 증상은 쉴 때 더 잘 느끼고 몇 초 만에 사라진다. 흉통·실신·호흡곤란은 없고 커피를 하루 3잔 마신다. 혈압 118/72 mmHg, 맥박 62회/분으로 가끔 불규칙하다. 심잡음은 들리지 않는다. 혈청 칼륨 4.1 mEq/L 이고 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 간헐적 좌각차단 B. 비지속성 심실빈맥 C. 심실 기외수축 D. 변행전도를 동반한 심방 기외수축 E. 2도 방실차단(Mobitz II형)"
+  },
   {
    "id": "cn.obgyn.pregnancy-physiology.normal-vs-abnormal",
    "type": "concept",

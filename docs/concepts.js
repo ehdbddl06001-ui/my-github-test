@@ -88929,7 +88929,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "판단 — 왜 HLA-B*58:01 검사가 먼저인가",
     "deep": false,
-    "html": "<ul>\n<li>연 2회 넘는 발작·통풍결절·만성 통풍 관절염·요산 결석이 있으면 요산저하제를 시작한다 <sup>[1 372장 p.2864]</sup>.</li>\n<li>1차 약은 알로푸리놀(allopurinol)이다 <sup>[1 372장 p.2865]</sup>. 드물지만 목숨을 위협하는 중증 피부이상반응(severe cutaneous adverse reaction, SCAR) — 스티븐스-존슨 증후군(Stevens-Johnson syndrome)·독성표피괴사용해(toxic epidermal necrolysis) — 이 문제다.</li>\n<li>HLA-B*58:01 보유율은 동남아시아인(일본계 제외)·태평양 도서민·흑인에서 높아, 이들은 알로푸리놀 시작 <strong>전에</strong> 선별한다 <sup>[1 372장 p.2865]</sup>. 한국인을 대상에 넣는 근거는 「시험 쟁점」의 Z1.</li>\n<li>만성콩팥병은 위험을 더 높이므로 검사 이유를 강화할 뿐, 시작을 미룰 이유가 아니다 <sup>[1 372장 p.2865]</sup>.</li>\n</ul>"
+    "html": "<ul>\n<li>연 2회 넘는 발작·통풍결절·만성 통풍 관절염·요산 결석이 있으면 요산저하제를 시작한다 <sup>[1 372장 p.2864]</sup>.</li>\n<li>1차 약은 알로푸리놀(allopurinol)이다 <sup>[1 372장 p.2865]</sup>. 드물지만 목숨을 위협하는 중증 피부이상반응(severe cutaneous adverse reaction, SCAR) — 스티븐스-존슨 증후군(Stevens-Johnson syndrome)·독성표피괴사용해(toxic epidermal necrolysis) — 이 문제다.</li>\n<li>HLA-B<em>58:01 보유율은 동남아시아인(일본계 제외)·태평양 도서민·흑인에서 높아, 이들은 알로푸리놀 시작 </em><em>전에</em>* 선별한다 <sup>[1 372장 p.2865]</sup>. 한국인을 대상에 넣는 근거는 「시험 쟁점」의 Z1.</li>\n<li>만성콩팥병은 위험을 더 높이므로 검사 이유를 강화할 뿐, 시작을 미룰 이유가 아니다 <sup>[1 372장 p.2865]</sup>.</li>\n</ul>"
    },
    {
     "title": "기전 — 요산 과포화에서 약물 과민까지",

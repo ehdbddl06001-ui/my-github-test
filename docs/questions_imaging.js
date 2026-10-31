@@ -2,6 +2,420 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0493",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "심전도 판독(매일 심전도 트랙)",
+  "subtopic": "심전도 판독 — 운동 시 흉부 압박감과 휴식 시 심전도",
+  "type": "심전도 판독 — 운동 시 흉부 압박감과 휴식 시 심전도",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "A 70-year-old woman comes to the physician because of episodes of chest pressure for 2 months. The episodes occur when she walks uphill and resolve within 5 minutes of rest. She has had no pain at rest. She has type 2 diabetes mellitus and hypertension. Her pulse is 70/min and blood pressure is 146/84 mm Hg. Cardiac examination shows no murmurs. She is pain free at the time of evaluation, and a 12-lead ECG is obtained and shown.",
+  "question": "Which of the following coronary arteries is most likely to have a hemodynamically significant stenosis?",
+  "options": [
+   "Left internal mammary artery",
+   "Left anterior descending artery",
+   "Left circumflex artery",
+   "Right coronary artery",
+   "Posterior descending artery"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The ECG shows sinus rhythm at about 70/min with shallow T-wave inversions in aVL and V2 through V5 and a flat T wave in V6; the limb leads are noisy but show no ST elevation. T-wave inversion confined to the anteroseptal and anterior precordial leads points to ischemia in the territory of the left anterior descending artery (its diagonal branches supply the high lateral wall seen by aVL). With exertional chest pressure relieved by rest, the most likely culprit is a significant LAD stenosis.\n- 원리: <b>Why lead location maps to an artery</b>: each precordial lead looks at the wall directly beneath it. V1–V2 face the septum, V3–V4 the anterior wall, V5–V6 and I/aVL the lateral wall, and II/III/aVF the inferior wall. The LAD runs down the anterior interventricular groove, sending septal perforators to the septum and diagonal branches to the anterolateral and high lateral wall, so ischemia in its territory shows up in V1–V4 (often V5) and, with diagonal involvement, in aVL.<br> <b>Why T-wave inversion rather than ST elevation</b>: a fixed stenosis that is not completely occlusive produces subendocardial ischemia; repolarization in that layer is delayed and the T-wave vector turns away from the affected region. This pattern can persist between episodes, which is why it is visible when she is pain free.<br> <b>Why the circumflex and right coronary artery fit less well</b>: the circumflex supplies the lateral and posterior wall (I, aVL, V5–V6, and reciprocal changes in V1–V3); the right coronary artery usually supplies the inferior wall (II, III, aVF). Neither produces T-wave inversion centered on V2–V4.\n- 비교: <table><thead><tr><th style=\"width:24%\">Leads with changes</th><th style=\"width:38%\">Left anterior descending (answer)</th><th>Left circumflex (closest distractor)</th></tr></thead><tbody> <tr><td>Precordial</td><td><b>V1–V4 (± V5)</b> — septal and anterior</td><td>V5–V6; V1–V3 only as reciprocal posterior changes</td></tr> <tr><td>Limb</td><td>aVL (and I) when a diagonal branch is involved</td><td>I and aVL as the main finding</td></tr> <tr><td>Wall supplied</td><td>Septum, anterior wall, apex</td><td>Lateral and posterior wall</td></tr> </tbody></table> If the inversion is centered on V2–V4, think LAD; if it sits mainly in I, aVL, V5 and V6 with little change in V2–V4, think circumflex.\n- 오답 이유:\n  - (A) The left internal mammary artery is a bypass conduit, not a native coronary artery; it would be relevant only after coronary artery bypass grafting to the LAD.\n  - (C) The left circumflex artery would be the answer if the T-wave inversion were centered on I, aVL, V5, and V6, or if V1–V3 showed horizontal ST depression with tall R waves from posterior ischemia.\n  - (D) The right coronary artery would be the answer if the ischemic changes were in the inferior leads II, III, and aVF, often with sinus bradycardia or AV block.\n  - (E) The posterior descending artery would be the answer if the changes involved the inferior wall alone; it supplies the inferior septum and is a branch of the dominant right coronary artery.\n- 함정: Looking only at aVL and calling the pattern lateral (circumflex). The inversion is greatest across V2–V4, the LAD territory; aVL reflects a diagonal branch of the same artery.\n- 학습목표: 휴식 시 심전도의 aVL·V2~V5 T파 역위를 전중격·전벽 허혈로 읽고 좌전하행지를 책임 혈관으로 고른다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 10: Myocardial ischemia and infarction — non-ST elevation patterns · Virani SS, Newby LK, Arnold SV, et al. 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9-e119\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4964 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows sinus rhythm at about 70/min with shallow T-wave inversions in aVL and V2 through V5 and a flat T wave in V6; the limb leads are noisy but show no ST elevation. T-wave inversion confined to the anteroseptal and anterior precordial leads points to ischemia in the territory of the left anterior descending artery (its diagonal branches supply the high lateral wall seen by aVL). With exertional chest pressure relieved by rest, the most likely culprit is a significant LAD stenosis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why lead location maps to an artery</b>: each precordial lead looks at the wall directly beneath it. V1–V2 face the septum, V3–V4 the anterior wall, V5–V6 and I/aVL the lateral wall, and II/III/aVF the inferior wall. The LAD runs down the anterior interventricular groove, sending septal perforators to the septum and diagonal branches to the anterolateral and high lateral wall, so ischemia in its territory shows up in V1–V4 (often V5) and, with diagonal involvement, in aVL.<br> <b>Why T-wave inversion rather than ST elevation</b>: a fixed stenosis that is not completely occlusive produces subendocardial ischemia; repolarization in that layer is delayed and the T-wave vector turns away from the affected region. This pattern can persist between episodes, which is why it is visible when she is pain free.<br> <b>Why the circumflex and right coronary artery fit less well</b>: the circumflex supplies the lateral and posterior wall (I, aVL, V5–V6, and reciprocal changes in V1–V3); the right coronary artery usually supplies the inferior wall (II, III, aVF). Neither produces T-wave inversion centered on V2–V4."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Leads with changes</th><th style=\"width:38%\">Left anterior descending (answer)</th><th>Left circumflex (closest distractor)</th></tr></thead><tbody> <tr><td>Precordial</td><td><b>V1–V4 (± V5)</b> — septal and anterior</td><td>V5–V6; V1–V3 only as reciprocal posterior changes</td></tr> <tr><td>Limb</td><td>aVL (and I) when a diagonal branch is involved</td><td>I and aVL as the main finding</td></tr> <tr><td>Wall supplied</td><td>Septum, anterior wall, apex</td><td>Lateral and posterior wall</td></tr> </tbody></table> If the inversion is centered on V2–V4, think LAD; if it sits mainly in I, aVL, V5 and V6 with little change in V2–V4, think circumflex."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) The left internal mammary artery is a bypass conduit, not a native coronary artery; it would be relevant only after coronary artery bypass grafting to the LAD.\n(C) The left circumflex artery would be the answer if the T-wave inversion were centered on I, aVL, V5, and V6, or if V1–V3 showed horizontal ST depression with tall R waves from posterior ischemia.\n(D) The right coronary artery would be the answer if the ischemic changes were in the inferior leads II, III, and aVF, often with sinus bradycardia or AV block.\n(E) The posterior descending artery would be the answer if the changes involved the inferior wall alone; it supplies the inferior septum and is a branch of the dominant right coronary artery."
+   },
+   {
+    "k": "함정",
+    "v": "Looking only at aVL and calling the pattern lateral (circumflex). The inversion is greatest across V2–V4, the LAD territory; aVL reflects a diagonal branch of the same artery."
+   },
+   {
+    "k": "학습목표",
+    "v": "휴식 시 심전도의 aVL·V2~V5 T파 역위를 전중격·전벽 허혈로 읽고 좌전하행지를 책임 혈관으로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 10: Myocardial ischemia and infarction — non-ST elevation patterns · Virani SS, Newby LK, Arnold SV, et al. 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9-e119 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4964 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "T파 역위가 V2~V5 와 aVL 에 모여 있으면 전중격·전벽(대각지 포함) 허혈이므로 좌전하행지 협착을 고른다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "역위의 중심이 V2~V4 다 — 회선지는 I·aVL·V5·V6 중심이거나 V1~V3 거울상 ST 하강으로 나타난다",
+   "steps": 2,
+   "chain": [
+    "영상: aVL·V2~V5 의 T파 역위, V6 평탄 T → 전중격·전벽과 고위 측벽의 허혈",
+    "운동 시 흉부 압박 + 전중격·전벽 허혈 → 좌전하행지(와 대각지) 협착"
+   ],
+   "key": [
+    {
+     "item": "영상: V2~V5 의 얕은 T파 역위",
+     "why": "전중격·전벽 — 좌전하행지 영역",
+     "also": []
+    },
+    {
+     "item": "영상: aVL 의 T파 역위",
+     "why": "고위 측벽 — 좌전하행지의 대각지",
+     "also": []
+    },
+    {
+     "item": "occur when she walks uphill and resolve within 5 minutes of rest",
+     "why": "고정 협착에 의한 안정형 협심증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Cardiac examination shows no murmurs",
+     "why": "대동맥판 협착에 의한 운동 시 흉통 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has had no pain at rest",
+     "why": "불안정 협심증이 아니다 — 응급 재관류 대상이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "type 2 diabetes mellitus and hypertension",
+     "why": "관상동맥질환 위험인자 — 어느 혈관인지는 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "휴식 시 심전도의 T파 역위가 aVL 과 V2~V5 에 모여 있다. 운동 시 흉부 압박과 합치면 좌전하행지 영역의 허혈이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 증상에서 T파 역위가 II·III·aVF 에 모여 있었다면 우관상동맥 영역의 허혈이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0493.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/04000/#files-panel",
+   "asset_id": "PTBXL-04964",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4964"
+  },
+  "run_id": "20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0492",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "심전도 판독(매일 심전도 트랙)",
+  "subtopic": "심전도 처치 — 흉통과 서맥이 있는 고령 여성",
+  "type": "심전도 처치 — 흉통과 서맥이 있는 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-31",
+  "vignette": "85세 여자가 1시간 전 시작된 가슴 한가운데의 쥐어짜는 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 쉬어도 가라앉지 않는다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 102/64 mmHg, 맥박 52회/분, 호흡 20회/분, 산소포화도 96%이다. 경정맥 확장은 없고 양쪽 폐는 깨끗하다. 이 병원은 24시간 심혈관조영실을 운영한다. 아스피린을 씹어 먹게 했다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "응급 관상동맥조영술과 일차 경피적 관상동맥중재술",
+   "고감도 트로포닌을 3시간 뒤 재검한 후 치료 결정",
+   "정맥 혈전용해제(테넥테플라제) 투여",
+   "설하 니트로글리세린 반복 투여 후 경과 관찰",
+   "정맥 메토프롤롤 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: II·III·aVF 에서 ST 분절이 올라가 있고(III 이 II 보다 높음) V5·V6 도 올라가 있다. V1~V3 에는 수평 ST 하강이 있는데, 이는 후벽 ST 상승의 거울상이다 — 급성 하측후벽 ST 상승 심근경색이다. 증상 1시간, 24시간 심혈관조영실이 있는 병원이므로 트로포닌 결과를 기다리지 않고 응급 관상동맥조영술과 일차 경피적 관상동맥중재술로 재관류한다(도착부터 풍선까지 90분 안).\n- 원리: <b>왜 심전도만으로 결정하는가</b>: ST 상승은 관상동맥이 완전히 막혀 심근 전층이 허혈에 빠졌다는 신호다. 막힌 시간이 길수록 괴사가 심내막에서 심외막으로 번져 살릴 수 있는 심근이 줄어든다(「시간이 곧 심근」). 트로포닌은 세포가 이미 죽은 뒤에 올라가는 지표라, 기다리는 동안 구제할 심근을 잃는다. 그래서 인접 두 유도 이상의 ST 상승과 맞는 증상이 있으면 바이오마커 없이 바로 재관류로 간다.<br> <b>왜 V1~V3 의 ST 하강을 「후벽」으로 읽는가</b>: 12유도에는 좌심실 후벽을 정면으로 보는 유도가 없다. V1~V3 는 후벽을 반대편(앞)에서 보므로 후벽의 ST 상승이 거꾸로 — 수평 ST 하강과 큰 R파로 — 그려진다. 하벽 경색에 이것이 붙으면 우세한 우관상동맥이나 회선지가 막혀 경색 범위가 넓다는 뜻이다.<br> <b>왜 PCI 가 혈전용해보다 나은가</b>: 일차 PCI 는 막힌 혈관을 90 % 이상 열고 재경색·뇌출혈이 적다. 특히 75세 이상은 혈전용해제의 두개내출혈 위험이 커서, 120분 안에 PCI 가 가능하면 PCI 가 우선이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">일차 PCI(정답)</th><th>트로포닌 재검 후 결정(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>진단 근거</td><td><b>심전도의 ST 상승 + 증상</b>으로 충분(STEMI)</td><td>ST 상승이 없는 흉통에서 비ST상승 경색을 가를 때 쓰는 근거</td></tr> <tr><td>시간 목표</td><td>도착부터 풍선까지 90분 안</td><td>0·1~3시간 연속 측정 — 그동안 재관류가 늦어진다</td></tr> <tr><td>쓰는 상황</td><td>인접 두 유도 ST 상승(하벽 1 mm 이상) 또는 후벽 경색 소견</td><td>ST 하강·T 역위·정상 심전도의 급성 관상동맥 증후군</td></tr> </tbody></table> 「ST 가 올라갔는가」가 갈림길이다 — 올라갔으면 혈액검사를 기다리지 않고, 안 올라갔으면 트로포닌으로 위험도를 나눈다.\n- 오답 이유:\n  - ② 트로포닌 연속 측정 후 결정은 ST 상승이 없는 흉통 환자에서 비ST상승 심근경색을 가르고 위험도를 나눌 때 정답이 된다.\n  - ③ 혈전용해제는 심혈관조영실이 없어 진단부터 PCI 까지 120분 넘게 걸리는 병원에서 증상 12시간 안의 STEMI 일 때 정답이 된다(75세 이상은 용량을 줄인다).\n  - ④ 니트로글리세린은 혈압이 충분하고 우심실 경색이 배제된 허혈성 흉통의 증상 완화에 쓰이며, 재관류를 대신하는 처치가 될 수는 없다 — 하벽 경색의 우심실 침범이면 저혈압을 일으킨다.\n  - ⑤ 정맥 베타차단제는 서맥·저혈압·심부전 징후가 없는 고혈압성 빈맥 상태의 경색 환자일 때 정답이 될 수 있으며, 맥박 52회인 이 환자에서는 금기에 가깝다.\n- 함정: V1~V3 의 ST 하강만 보고 「전벽 허혈(비ST상승)」로 읽어 트로포닌을 기다리는 것 — 하벽 ST 상승과 함께 있으면 후벽 경색의 거울상이다.\n- 학습목표: 하벽 유도 ST 상승과 V1~V3 ST 하강(후벽 거울상)을 급성 하측후벽 ST 상승 심근경색으로 읽고, 심혈관조영실이 있는 병원에서는 바이오마커를 기다리지 않고 일차 경피적 관상동맥중재술을 한다\n- 근거·출처: Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720-3826 · O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362-e425 · Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 9: Myocardial ischemia and infarction\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2993 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II·III·aVF 에서 ST 분절이 올라가 있고(III 이 II 보다 높음) V5·V6 도 올라가 있다. V1~V3 에는 수평 ST 하강이 있는데, 이는 후벽 ST 상승의 거울상이다 — 급성 하측후벽 ST 상승 심근경색이다. 증상 1시간, 24시간 심혈관조영실이 있는 병원이므로 트로포닌 결과를 기다리지 않고 응급 관상동맥조영술과 일차 경피적 관상동맥중재술로 재관류한다(도착부터 풍선까지 90분 안)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 심전도만으로 결정하는가</b>: ST 상승은 관상동맥이 완전히 막혀 심근 전층이 허혈에 빠졌다는 신호다. 막힌 시간이 길수록 괴사가 심내막에서 심외막으로 번져 살릴 수 있는 심근이 줄어든다(「시간이 곧 심근」). 트로포닌은 세포가 이미 죽은 뒤에 올라가는 지표라, 기다리는 동안 구제할 심근을 잃는다. 그래서 인접 두 유도 이상의 ST 상승과 맞는 증상이 있으면 바이오마커 없이 바로 재관류로 간다.<br> <b>왜 V1~V3 의 ST 하강을 「후벽」으로 읽는가</b>: 12유도에는 좌심실 후벽을 정면으로 보는 유도가 없다. V1~V3 는 후벽을 반대편(앞)에서 보므로 후벽의 ST 상승이 거꾸로 — 수평 ST 하강과 큰 R파로 — 그려진다. 하벽 경색에 이것이 붙으면 우세한 우관상동맥이나 회선지가 막혀 경색 범위가 넓다는 뜻이다.<br> <b>왜 PCI 가 혈전용해보다 나은가</b>: 일차 PCI 는 막힌 혈관을 90 % 이상 열고 재경색·뇌출혈이 적다. 특히 75세 이상은 혈전용해제의 두개내출혈 위험이 커서, 120분 안에 PCI 가 가능하면 PCI 가 우선이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">일차 PCI(정답)</th><th>트로포닌 재검 후 결정(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>진단 근거</td><td><b>심전도의 ST 상승 + 증상</b>으로 충분(STEMI)</td><td>ST 상승이 없는 흉통에서 비ST상승 경색을 가를 때 쓰는 근거</td></tr> <tr><td>시간 목표</td><td>도착부터 풍선까지 90분 안</td><td>0·1~3시간 연속 측정 — 그동안 재관류가 늦어진다</td></tr> <tr><td>쓰는 상황</td><td>인접 두 유도 ST 상승(하벽 1 mm 이상) 또는 후벽 경색 소견</td><td>ST 하강·T 역위·정상 심전도의 급성 관상동맥 증후군</td></tr> </tbody></table> 「ST 가 올라갔는가」가 갈림길이다 — 올라갔으면 혈액검사를 기다리지 않고, 안 올라갔으면 트로포닌으로 위험도를 나눈다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 트로포닌 연속 측정 후 결정은 ST 상승이 없는 흉통 환자에서 비ST상승 심근경색을 가르고 위험도를 나눌 때 정답이 된다.\n③ 혈전용해제는 심혈관조영실이 없어 진단부터 PCI 까지 120분 넘게 걸리는 병원에서 증상 12시간 안의 STEMI 일 때 정답이 된다(75세 이상은 용량을 줄인다).\n④ 니트로글리세린은 혈압이 충분하고 우심실 경색이 배제된 허혈성 흉통의 증상 완화에 쓰이며, 재관류를 대신하는 처치가 될 수는 없다 — 하벽 경색의 우심실 침범이면 저혈압을 일으킨다.\n⑤ 정맥 베타차단제는 서맥·저혈압·심부전 징후가 없는 고혈압성 빈맥 상태의 경색 환자일 때 정답이 될 수 있으며, 맥박 52회인 이 환자에서는 금기에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "V1~V3 의 ST 하강만 보고 「전벽 허혈(비ST상승)」로 읽어 트로포닌을 기다리는 것 — 하벽 ST 상승과 함께 있으면 후벽 경색의 거울상이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "하벽 유도 ST 상승과 V1~V3 ST 하강(후벽 거울상)을 급성 하측후벽 ST 상승 심근경색으로 읽고, 심혈관조영실이 있는 병원에서는 바이오마커를 기다리지 않고 일차 경피적 관상동맥중재술을 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720-3826 · O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362-e425 · Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 9: Myocardial ischemia and infarction ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2993 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "하벽 유도 ST 상승과 V1~V3 ST 하강(후벽 거울상)은 급성 하측후벽 STEMI 이므로 바이오마커를 기다리지 않고 일차 PCI 로 재관류한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "인접 하벽 유도의 ST 상승이 있어 STEMI 기준을 이미 채웠다 — 트로포닌은 ST 상승이 없을 때 쓰는 근거다",
+   "steps": 3,
+   "chain": [
+    "영상: II·III·aVF 와 V5·V6 의 ST 상승 → 하벽·측벽의 급성 전층 허혈",
+    "영상: V1~V3 의 수평 ST 하강 → 후벽 ST 상승의 거울상 — 하측후벽 STEMI",
+    "STEMI + 증상 1시간 + 24시간 심혈관조영실 → 트로포닌을 기다리지 않고 일차 PCI"
+   ],
+   "key": [
+    {
+     "item": "영상: II·III·aVF 의 ST 상승(III 이 II 보다 높음)",
+     "why": "하벽 STEMI — III > II 는 우관상동맥 쪽",
+     "also": []
+    },
+    {
+     "item": "영상: V1~V3 의 수평 ST 하강",
+     "why": "후벽 경색의 거울상",
+     "also": []
+    },
+    {
+     "item": "쉬어도 가라앉지 않는다",
+     "why": "안정형 협심증이 아닌 급성 관상동맥 폐쇄",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 폐는 깨끗하다",
+     "why": "급성 폐부종을 동반한 심인성 쇼크 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "1시간 전 시작된",
+     "why": "재관류 이득이 가장 큰 시기",
+     "also": []
+    },
+    {
+     "item": "24시간 심혈관조영실을 운영한다",
+     "why": "120분 안 PCI 가능 — 혈전용해보다 PCI",
+     "also": []
+    },
+    {
+     "item": "맥박 52회/분",
+     "why": "하벽 경색의 미주신경 서맥 — 베타차단제를 피할 이유",
+     "also": []
+    },
+    {
+     "item": "혈압 102/64 mmHg",
+     "why": "니트로글리세린을 조심할 근거(우심실 침범 가능)",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "하벽·측벽 유도의 ST 상승과 V1~V3 의 거울상 ST 하강은 급성 하측후벽 STEMI 다. PCI 가 가능한 병원이므로 바로 응급 관상동맥조영술과 일차 PCI 를 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "심혈관조영실이 없는 병원이고 PCI 병원까지 이송·시술에 120분 넘게 걸린다면 금기가 없는 한 혈전용해제(75세 이상 감량)가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0492.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02993",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2993"
+  },
+  "run_id": "20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0491",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "심전도 판독(매일 심전도 트랙)",
+  "subtopic": "심전도 판독 — 가끔 내려앉는 느낌의 젊은 여성",
+  "type": "심전도 판독 — 가끔 내려앉는 느낌의 젊은 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-31",
+  "vignette": "41세 여자가 두 달 전부터 가끔 가슴이 「쿵」 하고 내려앉는 느낌이 들어 내과에 왔다. 증상은 쉴 때 더 잘 느끼고 몇 초 만에 사라진다. 흉통·실신·호흡곤란은 없고 커피를 하루 3잔 마신다. 혈압 118/72 mmHg, 맥박 62회/분으로 가끔 불규칙하다. 심잡음은 들리지 않는다. 혈청 칼륨 4.1 mEq/L 이고 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "간헐적 좌각차단",
+   "비지속성 심실빈맥",
+   "심실 기외수축",
+   "변행전도를 동반한 심방 기외수축",
+   "2도 방실차단(Mobitz II형)"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 바탕 리듬은 분당 약 60회의 동리듬이다. 리듬 스트립 중간과 뒤쪽에 예정보다 일찍 오는 박동이 하나씩 있는데, QRS 가 0.12초를 넘게 넓고 모양이 기이하며(II 에서 깊은 음성, V1~V3 에서 양성), 그 앞에 일찍 온 P파가 없고, T파는 QRS 와 반대 방향이다 — 심실에서 시작한 조기 박동, 곧 심실 기외수축이다. 구조적 심질환 소견이 없는 젊은 사람의 드문 단발성 심실 기외수축이므로 판독 다음 단계는 대개 안심시키기와 유발 요인(카페인) 조절이다.\n- 원리: <b>왜 넓고 기이한가</b>: 동방결절에서 온 흥분은 히스-퍼킨제 전도계라는 「고속도로」를 타고 두 심실을 거의 동시에 탈분극시켜 QRS 가 좁다(0.10초 미만). 심실 근육 한 곳에서 스스로 시작한 흥분은 이 고속도로를 타지 못하고 근육세포에서 근육세포로 천천히 번져 한 심실이 먼저, 다른 심실이 나중에 흥분한다 — 그래서 QRS 가 0.12초를 넘게 넓고 모양이 낯설다.<br> <b>왜 T파가 반대로 서는가</b>: 탈분극 순서가 비정상이면 재분극 순서도 따라 바뀐다. 가장 늦게 탈분극한 부위가 가장 늦게 재분극하므로 T파가 QRS 주된 방향과 반대(불일치)로 그려진다 — 이차성 ST-T 변화이며 허혈을 뜻하지 않는다.<br> <b>왜 앞에 P파가 없는가</b>: 박동이 심방이 아니라 심실에서 시작했기 때문이다. 동방결절은 대개 이 박동의 영향을 받지 않아 다음 동박동이 제 리듬대로 오고, 그래서 조기 박동 뒤에 「쉼」이 느껴진다 — 환자가 말하는 「쿵 하고 내려앉는 느낌」은 쉼 뒤에 더 많이 찬 심실이 세게 뛰는 박동이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">보는 곳</th><th style=\"width:38%\">심실 기외수축(정답)</th><th>변행전도 심방 기외수축(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>넓은 박동 앞</td><td><b>일찍 온 P파가 없다</b></td><td>일찍 온 P파가 있다(앞 박동의 T파에 묻혀 T 모양이 달라짐)</td></tr> <tr><td>QRS 모양</td><td>기이하고 넓다 — 어느 각차단 모양과도 딱 맞지 않을 수 있다</td><td>대개 전형적 우각차단 모양(우각의 불응기가 더 길어서)</td></tr> <tr><td>뒤따르는 쉼</td><td>흔히 완전 보상(동방결절이 재설정되지 않음)</td><td>흔히 불완전 보상(동방결절이 재설정됨)</td></tr> </tbody></table> 넓은 조기 박동을 만나면 「앞 박동의 T파가 다른 T파와 모양이 같은가」부터 본다 — 같으면 숨은 P파가 없고, 심실 기외수축 쪽이다.\n- 오답 이유:\n  - ① 간헐적 좌각차단은 넓은 박동이 조기에 오지 않고 정상 PR 간격의 P파를 앞에 두고 제때 나타날 때 정답이 된다(주로 심박수에 따라 나타나는 각차단).\n  - ② 비지속성 심실빈맥은 넓은 박동이 3개 이상 연달아 분당 100회 이상으로 나올 때 정답이 되며, 이 기록은 동박동 사이에 하나씩 끼어 있다.\n  - ④ 변행전도 심방 기외수축은 넓은 박동 바로 앞 T파에 일찍 온 P파가 겹쳐 T 모양이 바뀌어 있고 QRS 가 전형적 우각차단 모양일 때 정답이 된다.\n  - ⑤ Mobitz II형 2도 방실차단은 PR 간격이 일정한 P파 뒤에 QRS 가 갑자기 빠지는 「빠진 박동」이 있을 때 정답이 되며, 여기처럼 박동이 더 생기지는 않는다.\n- 함정: 넓은 QRS 만 보고 「각차단」을 고르는 것 — 그 박동이 조기에 왔는지, 앞에 P파가 있는지를 먼저 본다. 조기 + P파 없음 + 넓은 QRS 는 심실 기외수축이다.\n- 학습목표: 리듬 스트립에서 조기에 오는 넓고 기이한 QRS, 앞선 조기 P파의 부재, QRS 와 반대 방향의 T파로 심실 기외수축을 읽고 변행전도 심방 기외수축과 가른다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 16: Ventricular arrhythmias · Al-Khatib SM, Stevenson WG, Ackerman MJ, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272-e391\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18790 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "바탕 리듬은 분당 약 60회의 동리듬이다. 리듬 스트립 중간과 뒤쪽에 예정보다 일찍 오는 박동이 하나씩 있는데, QRS 가 0.12초를 넘게 넓고 모양이 기이하며(II 에서 깊은 음성, V1~V3 에서 양성), 그 앞에 일찍 온 P파가 없고, T파는 QRS 와 반대 방향이다 — 심실에서 시작한 조기 박동, 곧 심실 기외수축이다. 구조적 심질환 소견이 없는 젊은 사람의 드문 단발성 심실 기외수축이므로 판독 다음 단계는 대개 안심시키기와 유발 요인(카페인) 조절이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 넓고 기이한가</b>: 동방결절에서 온 흥분은 히스-퍼킨제 전도계라는 「고속도로」를 타고 두 심실을 거의 동시에 탈분극시켜 QRS 가 좁다(0.10초 미만). 심실 근육 한 곳에서 스스로 시작한 흥분은 이 고속도로를 타지 못하고 근육세포에서 근육세포로 천천히 번져 한 심실이 먼저, 다른 심실이 나중에 흥분한다 — 그래서 QRS 가 0.12초를 넘게 넓고 모양이 낯설다.<br> <b>왜 T파가 반대로 서는가</b>: 탈분극 순서가 비정상이면 재분극 순서도 따라 바뀐다. 가장 늦게 탈분극한 부위가 가장 늦게 재분극하므로 T파가 QRS 주된 방향과 반대(불일치)로 그려진다 — 이차성 ST-T 변화이며 허혈을 뜻하지 않는다.<br> <b>왜 앞에 P파가 없는가</b>: 박동이 심방이 아니라 심실에서 시작했기 때문이다. 동방결절은 대개 이 박동의 영향을 받지 않아 다음 동박동이 제 리듬대로 오고, 그래서 조기 박동 뒤에 「쉼」이 느껴진다 — 환자가 말하는 「쿵 하고 내려앉는 느낌」은 쉼 뒤에 더 많이 찬 심실이 세게 뛰는 박동이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">보는 곳</th><th style=\"width:38%\">심실 기외수축(정답)</th><th>변행전도 심방 기외수축(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>넓은 박동 앞</td><td><b>일찍 온 P파가 없다</b></td><td>일찍 온 P파가 있다(앞 박동의 T파에 묻혀 T 모양이 달라짐)</td></tr> <tr><td>QRS 모양</td><td>기이하고 넓다 — 어느 각차단 모양과도 딱 맞지 않을 수 있다</td><td>대개 전형적 우각차단 모양(우각의 불응기가 더 길어서)</td></tr> <tr><td>뒤따르는 쉼</td><td>흔히 완전 보상(동방결절이 재설정되지 않음)</td><td>흔히 불완전 보상(동방결절이 재설정됨)</td></tr> </tbody></table> 넓은 조기 박동을 만나면 「앞 박동의 T파가 다른 T파와 모양이 같은가」부터 본다 — 같으면 숨은 P파가 없고, 심실 기외수축 쪽이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 간헐적 좌각차단은 넓은 박동이 조기에 오지 않고 정상 PR 간격의 P파를 앞에 두고 제때 나타날 때 정답이 된다(주로 심박수에 따라 나타나는 각차단).\n② 비지속성 심실빈맥은 넓은 박동이 3개 이상 연달아 분당 100회 이상으로 나올 때 정답이 되며, 이 기록은 동박동 사이에 하나씩 끼어 있다.\n④ 변행전도 심방 기외수축은 넓은 박동 바로 앞 T파에 일찍 온 P파가 겹쳐 T 모양이 바뀌어 있고 QRS 가 전형적 우각차단 모양일 때 정답이 된다.\n⑤ Mobitz II형 2도 방실차단은 PR 간격이 일정한 P파 뒤에 QRS 가 갑자기 빠지는 「빠진 박동」이 있을 때 정답이 되며, 여기처럼 박동이 더 생기지는 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "넓은 QRS 만 보고 「각차단」을 고르는 것 — 그 박동이 조기에 왔는지, 앞에 P파가 있는지를 먼저 본다. 조기 + P파 없음 + 넓은 QRS 는 심실 기외수축이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리듬 스트립에서 조기에 오는 넓고 기이한 QRS, 앞선 조기 P파의 부재, QRS 와 반대 방향의 T파로 심실 기외수축을 읽고 변행전도 심방 기외수축과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 16: Ventricular arrhythmias · Al-Khatib SM, Stevenson WG, Ackerman MJ, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272-e391 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18790 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "조기에 오는 넓고 기이한 QRS 앞에 조기 P파가 없고 T파가 반대 방향이면 심실 기외수축으로 읽는다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "넓은 박동 앞 T파의 모양이 다른 T파와 같다 — 숨은 조기 P파가 없어 변행전도 심방 기외수축이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬 사이에 조기에 오는 넓은 QRS → 조기 박동이 끼어든 리듬",
+    "영상: 앞에 조기 P파 없음 + 기이한 QRS + 반대 방향 T파 → 심실에서 시작한 기외수축"
+   ],
+   "key": [
+    {
+     "item": "영상: 리듬 스트립 중간과 뒤쪽의 조기에 오는 넓고 기이한 QRS",
+     "why": "심실 기원 조기 박동의 기본 모양",
+     "also": []
+    },
+    {
+     "item": "영상: 넓은 박동 앞에 일찍 온 P파가 없다",
+     "why": "변행전도 심방 기외수축과 가르는 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 넓은 박동의 T파가 QRS 와 반대 방향",
+     "why": "비정상 탈분극에 따른 이차성 재분극 변화",
+     "also": []
+    },
+    {
+     "item": "가끔 불규칙하다",
+     "why": "조기 박동이 끼어든 맥박 — 진찰에서 이미 기외수축을 떠올리게 한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.1 mEq/L",
+     "why": "저칼륨혈증에 의한 기외수축 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "흉통·실신·호흡곤란은 없고",
+     "why": "고위험 심실 부정맥 증상이 없어 판독 뒤 처치가 보존적이다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "커피를 하루 3잔",
+     "why": "유발 요인일 수 있으나 판독 자체를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "동리듬 사이에 조기에 오는 넓고 기이한 QRS 가 앞선 조기 P파 없이 나타나고 T파가 반대 방향이다. 심실 기외수축이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "넓은 박동 바로 앞 T파에 일찍 온 P파가 겹쳐 T 모양이 달라 보이고 QRS 가 전형적 우각차단 모양이었다면 변행전도 심방 기외수축이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0491.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/18000/#files-panel",
+   "asset_id": "PTBXL-18790",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18790"
+  },
+  "run_id": "20261031T133706Z_일일심전도_2026-10-31_3units_3q_e3f4648f",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0484",
   "exam": "imaging",
   "style": "usmle_style",
