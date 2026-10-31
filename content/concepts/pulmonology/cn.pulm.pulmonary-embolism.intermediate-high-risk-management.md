@@ -236,6 +236,8 @@ figures_rejected:
   reason: 그림 요약(도식) — CT 사진이 아니다
 - asset: PMC-PMC13315614_Fig2
   reason: 패널이 혈전·폐동맥간 확장만 보여 준다 — 요청 소견인 우심실 확장(RV/LV 비) 단면이 없고 설명에도 RV/LV 계측이 없음
+- asset: PMC-PMC13711138_Figure1
+  reason: 연구 흐름도(도식) — CT 사진이 아니고 우심실 확장 단면이 없다
 ---
 
 ## 판단 — 왜 항응고 + 감시가 먼저인가

@@ -77960,7 +77960,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-10-13",
   "reviewStatus": "unreviewed",
-  "hash": "4e8173c6e4c8359f",
+  "hash": "4b71b7a03cd73ebc",
   "summary": [
    "결론: 혈압이 유지되면 우심실 기능장애·트로포닌 상승이 있어도 치료 용량 항응고 + 집중 감시, 무너지면 구제 혈전용해.",
    "시험 단서: 확진 폐색전증 + 혈압 유지·정상 젖산 + 우심실/좌심실 비↑·트로포닌↑ = 중간-고위험(intermediate-high risk).",
