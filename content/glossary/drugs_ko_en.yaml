@@ -144,7 +144,11 @@ drugs:
   이버멕틴: ivermectin
   도세탁셀: docetaxel
   젬시타빈: gemcitabine
-
+  아미노필린: aminophylline
+  아트로핀: atropine
+  카페인: caffeine
+  코카인: cocaine
+  암페타민: amphetamine
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
   칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}
