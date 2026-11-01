@@ -36,6 +36,7 @@ from frontmatter import load, Doc, QUESTION_TYPES
 from question_design import format_findings, review_flags
 from concepts import OBJECTIVE_REQUIRED_FROM, load_concepts, question_learning_errors
 from traps import question_findings as trap_findings
+from harrison_cite import HARRISON22_FROM, check_text as harrison_findings
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
@@ -232,6 +233,10 @@ def lint_doc(d: Doc) -> list[Finding]:
     # 9-b) 함정 계열(design.trap) — 등록부(content/traps/)의 단서·오답 계열·정답 계열과 모양이 맞는가(2026-09-29)
     for level, code, msg in trap_findings(m, d.type):
         findings.append(Finding(level, code, msg))
+    # 9-c) 해리슨 인용은 22판(2026-11-02 사용자 지시) — 21판 인용·22판 장 번호/제목 불일치는 ERROR(harrison_cite.py)
+    if str(m.get("date", "") or "") >= HARRISON22_FROM:
+        for level, code, msg in harrison_findings(d.body + "\n" + str(m.get("source", "") or "")):
+            findings.append(Finding(level, code, msg))
     # 10) 내용 검토 신호 — 실패로 치지 않는다
     for code, msg in review_flags(m):
         findings.append(Finding("REVIEW", code, msg))
