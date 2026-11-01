@@ -82442,7 +82442,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-01",
   "reviewStatus": "unreviewed",
-  "hash": "30f437db258ddf6c",
+  "hash": "6431fb9885cbd555",
   "summary": [
    "결론: 염증성 허리통증 + 척추관절염 소견 + 골반 X선 정상 → 다음 검사는 엉치엉덩관절 MRI(STIR 골수 부종).",
    "시험 단서: 45세 전 시작, 새벽 통증·30분 넘는 아침 강직, 운동에 호전, 진통소염제(NSAID) 48시간 반응, 앞포도막염(anterior uveitis)·HLA-B27.",

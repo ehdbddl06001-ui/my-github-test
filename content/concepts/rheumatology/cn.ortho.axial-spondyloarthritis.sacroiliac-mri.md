@@ -135,6 +135,9 @@ figures_wanted:
   - bone marrow
   - STIR
   modality: MR
+figures_rejected:
+- asset: PMC-PMC13535286_Figure2
+  reason: 치료 6개월 뒤 추적 STIR — 캡션이 골수 부종의 뚜렷한 감소·잔존 이상 신호 없음이라 말한다. 요청한 활동성 골수 부종(기저 영상)이 아니다
 ---
 
 ## 판단 — 왜 X선이 정상이면 MRI 인가

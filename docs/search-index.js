@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-31",
+ "generated": "2026-11-01",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4222,
+  "total": 4229,
   "byType": {
    "concept": 126,
+   "paper": 883,
    "imaging": 503,
-   "paper": 876,
    "kmle": 1632,
    "usmle": 222,
    "anatomy": 846,
@@ -18,26 +18,26 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 289,
-   "Nephrology": 229,
-   "Infectious Disease": 212,
-   "Pediatrics": 197,
+   "Cardiology": 290,
+   "Nephrology": 230,
+   "Infectious Disease": 213,
+   "Pediatrics": 198,
    "Obstetrics & Gynecology": 144,
    "Pathology": 129,
    "Rheumatology": 128,
-   "Hematology-Oncology": 125,
+   "Hematology-Oncology": 126,
    "Psychiatry": 122,
    "Neurology": 121,
    "General Surgery": 110,
+   "Surgery": 109,
    "Endocrinology": 108,
    "Orthopedics": 108,
-   "Surgery": 108,
    "Dermatology": 106,
    "Gastroenterology": 105,
    "Pulmonology": 105,
    "Ophthalmology": 104,
    "Hematology": 99,
-   "Laboratory Medicine": 90,
+   "Laboratory Medicine": 91,
    "산부인과": 69,
    "순환기": 47,
    "호흡기": 33,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1210,
+   "medium": 1217,
    "high": 2960,
    "low": 52
   },
@@ -155,6 +155,125 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.ischemic-ecg-localization.culprit-artery.md",
    "snippet": "판단 — 왜 이 유도면 이 혈관인가 각 흉부 유도는 바로 밑의 벽 을 본다. 전벽(첨부·측벽 포함) 허혈은 V1~V6 와 I·aVL, 하벽 허혈은 II·III·aVF 에 나타난다 [[harrison 22: 247장 p.1872]]. 그래서 변화가 모인 유도 묶음 → 벽 → 그 벽을 맡은 혈관 순서로 고른다. 흉부 유도의 깊은 T파 역위는 좌전하행지의 심한 협착을 가리키는 대표 소견이다 [[harrison 22: 247장 p.1",
    "text": "Cardiology 판단 — 왜 이 유도면 이 혈관인가 각 흉부 유도는 바로 밑의 벽 을 본다. 전벽(첨부·측벽 포함) 허혈은 V1~V6 와 I·aVL, 하벽 허혈은 II·III·aVF 에 나타난다 [[harrison 22: 247장 p.1872]]. 그래서 변화가 모인 유도 묶음 → 벽 → 그 벽을 맡은 혈관 순서로 고른다. 흉부 유도의 깊은 T파 역위는 좌전하행지의 심한 협착을 가리키는 대표 소견이다 [[harrison 22: 247장 p.1873]]. 기전 — 허혈 층에 따라 ST 가 기운다 허혈 부위와 정상 부위 사이의 전압차가 손상 전류를 만들고, 이것이 ST 를 움직인다. 경벽 허혈이면 ST 벡터가 바깥(심외막)으로 향해 그 위 유도에 ST 상승이, 내막하 허혈이면 벡터가 안쪽으로 향해 ST 하강이 생긴다 [[harrison 22: 247장 p.1872]]. 완전히 막히지 않은 고정 협착은 주로 내막하 허혈을 일으키고, 재분극 지연이 T파를 그 부위에서 돌려세워 증상 없을 때도 T파 역위로 남을 수 있다 [[harrison 22: 247장 p.1873]]. 가르는 소견 — 유도 묶음과 혈관 후벽 허혈은 직접 보는 유도가 없어 V1~V3 의 거울상 ST 하강으로 간접적으로 읽는다 [[harrison 22: 247장 p.1872]]. 우심실 허혈은 우측 흉부 유도의 ST 상승으로 본다 [[harrison 22: 247장 p.1872]]. 한계 : 정상 심전도 한 장으로 허혈을 배제하지 못한다 [[harrison 22: 247장 p.1873]]. T파 역위는 비대·각차단·약물·뇌출혈에서도 생긴다 [[harrison 22: 247장 p.1874]]. 권고와 예외 혈관과 벽의 대응은 우세형·개인차에 따라 달라진다(하벽이 회선지일 수 있음). 안정 협심증의 다음 검사·치료는 이 정리본의 목표가 아니다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 비ST상승 변화로 위치 정하기 — 시험 기준: T파 역위가 모인 유도로 벽과 혈관을 고른다(문항이 이렇게 묻는다) / 다른 기준: 유도는 비ST상승 허혈보다 ST상승 허혈의 위치를 더 잘 가리킨다 [[harrison 22: 247장 p.1872]] / 왜 다른가: 내막하 허혈의 ST 하강은 넓게 퍼져 책임 부위와 어긋날 수 있다 — 다만 흉부 유도 깊은 T파 역위는 좌전하행지를 비교적 잘 가리킨다 [[harrison 22: 247장 p.1873]] / 시험에서는: KMLE · USMLE 모두 유도 묶음 → 혈관 대응으로 답한다."
+  },
+  {
+   "id": "paper-2026-0883",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in medicine",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0883_remimazolam_versus_propofol_for_elderly_patients_undergoing_.md",
+   "snippet": "Title Remimazolam versus propofol for elderly patients undergoing laparoscopic gastrointestinal surgery: a randomized trial concentrating on delirium and hemodynamic stability Authors Fan Hongna, Chen Xiaotong, Xu Linlin, Zou Bin, Li Da, Zh",
+   "text": "Surgery scraped pubmed PubMed / Frontiers in medicine Title Remimazolam versus propofol for elderly patients undergoing laparoscopic gastrointestinal surgery: a randomized trial concentrating on delirium and hemodynamic stability Authors Fan Hongna, Chen Xiaotong, Xu Linlin, Zou Bin, Li Da, Zhang Cheng, Zu Jianyu, Diao Yugang Journal / DOI Frontiers in medicine · DOI: 10.3389/fmed.2026.1992969 · PMID: 42964328 https://pubmed.ncbi.nlm.nih.gov/42964328/ Abstract BACKGROUND: Postoperative delirium (POD) is a common complication in elderly surgical patients that can impede recovery. While remimazolam offers superior hemodynamic stability compared to propofol, its impact on POD incidence remains unclear. This randomized trial aimed to determine whether two induction doses of remimazolam are more effective than propofol in reducing POD and improving hemodynamic stability in older patients undergoing laparoscopic gastrointestinal surgery. METHODS: In this prospective trial, 186 patients (aged 60 80 years) were randomized to receive anesthesia induction with remimazolam 0.15 mg/kg (R1), remimazolam 0.3 mg/kg (R2), or propofol 1.5 mg/kg (P). The primary endpoint was the incidence of POD within 5 days post surgery, assessed using the 3 Minute Diagnostic Interview for Confusion Assessment Method. Secondary endpoints included hemodynamic parameters, recovery times, and adverse events. RESULTS: The incidence of POD was 12.9% in the R1 group, 11.3% in the R2 group, and 6.5% in the P group (P = 0.467). Both remimazolam groups exhibited significantly higher mean arterial pressure following induction and intubation (both P < 0.05). Furthermore, remimazolam was associated with a lower incidence of treated hypotension (P = 0.010), fewer bradycardia events (P < 0.001), and reduced vasopressor requirements (P < 0.05). However, the time to loss of consciousness (P < 0.001) and extubation time (P < 0.001) were longer with remimazolam. CONCLUSIONS: Remimazolam at induction doses of 0.15 mg/kg and 0.3 mg/kg did not reduce the incidence of POD compared with propofol. Nevertheless, the study was not adequately powered to exclude a clinically relevant difference in POD incidence given the substantially lower than expected event rate, as no statistically significant between group difference was detected. In addition, remimazolam at these doses was associated with higher post induction blood pressure, fewer hypotensive events, and lower vasopressor requirements compared with propofol. Therefore, remimazolam at these induction doses may serve as suitable alternatives for this vulnerable patient population. CLINICAL TRIAL REGISTRATION: https://www.chictr.org.cn, Chinese Clinical Trial Registry ChiCTR2400082176. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0882",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0882_nurse_led_treatment_strategy_based_on_asthma_score_and_oxyge.md",
+   "snippet": "Title Nurse Led treatment strategy based on asthma score and oxygen requirement in children with acute reversible bronchoconstriction: A randomised controlled non inferiority trial Authors Louman Sam, Foreman Britt, van Lente Lidy, Kop Rich",
+   "text": "Pediatrics scraped pubmed PubMed / PloS one Title Nurse Led treatment strategy based on asthma score and oxygen requirement in children with acute reversible bronchoconstriction: A randomised controlled non inferiority trial Authors Louman Sam, Foreman Britt, van Lente Lidy, Kop Richard, Postma Laura, Ploegstra Mark Jan, Boehmer Annemie L M, Kamps Arvid W A Journal / DOI PloS one · DOI: 10.1371/journal.pone.0361579 · PMID: 42961876 https://pubmed.ncbi.nlm.nih.gov/42961876/ Abstract OBJECTIVE: The Childhood Asthma Score (CAS) does not fully account for oxygen therapy in children with acute reversible bronchoconstriction (ARB), thus the CAS O2 was developed. Our aim was to assess effectiveness and safety of the CAS O2 treatment protocol compared to the CAS protocol. DESIGN: Multicentre, open label, randomised, non inferiority trial. SETTING: Two Dutch teaching hospitals with general paediatric wards. PATIENTS: Children 2 18 years admitted with ARB, requiring supplemental oxygen. INTERVENTIONS: Nurse led treatment strategies using CAS O2 (tailored for patients receiving supplemental oxygen) or CAS to guide bronchodilator administration and reassessment intervals. MAIN OUTCOME MEASURE: Length of hospital stay (LOS); non inferiority margin of 8 hours. RESULTS: Data of 132 children who required supplemental oxygen were analysed (CAS O2 group n = 69; CAS n = 63). Median LOS was 40.0 hours (IQR 25.5 47.0) with CAS O2 and 40.8 hours (IQR 27.1 65.2) with CAS. The adjusted absolute difference in LOS (CAS O2 CAS) was 3.7 hours (95% CI 10.2 to 4.1), meeting non inferiority. Bronchodilator administrations were fewer with CAS O2 (mean 7.9 versus 10.5; rate ratio 0.75, (95% CI 0.64 0.88; p < 0.001). Safety outcomes (physician assessments, intravenous magnesium sulphate or salbutamol, PICU transfer, 7 day readmission) did not differ between groups. CONCLUSIONS: Compared with CAS, CAS O2 supports nurse led management of children hospitalised with ARB, including those requiring supplemental oxygen, with fewer bronchodilator administrations and no prolongation of LOS. These findings support broader implementation of CAS O2 based pathways. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0881",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in medicine",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0881_incremental_diagnostic_value_of_serum_progesterone_combined_.md",
+   "snippet": "Title Incremental diagnostic value of serum progesterone combined with transvaginal ultrasound in differentiating early ectopic pregnancy: a single center real world study Authors Liu Leilei, Cai Yao, Wang Tingting Journal / DOI Frontiers i",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Frontiers in medicine Title Incremental diagnostic value of serum progesterone combined with transvaginal ultrasound in differentiating early ectopic pregnancy: a single center real world study Authors Liu Leilei, Cai Yao, Wang Tingting Journal / DOI Frontiers in medicine · DOI: 10.3389/fmed.2026.1949190 · PMID: 42964179 https://pubmed.ncbi.nlm.nih.gov/42964179/ Abstract OBJECTIVE: To evaluate serum progesterone combined with transvaginal ultrasound for distinguishing ectopic pregnancy (EP) in patients with pregnancy of unknown location (PUL), and to assess diagnostic efficacy across risk stratifications. METHODS: Internally unvalidated analysis included 148 PUL patients (January 2022 December 2025). Final diagnosis by surgical pathology or follow up divided patients into EP (49) and non EP (99; intrauterine pregnancy or natural regression). All underwent initial transvaginal ultrasound to confirm PUL. The prediction point was the 48 hour reassessment. Predictors were abnormal adnexal findings on follow up ultrasound at 48 h, serum progesterone, and 48 hour β hCG results available at that visit. The intended application is risk re stratification and follow up planning at 48 hour reassessment, not replacement of surgical/histopathological diagnosis or immediate treatment. Progesterone and β hCG were measured; groups were compared. Logistic regression screened independent predictors. ROC curves evaluated single and combined indicators. We assessed if progesterone improved the ultrasound + M6NP model, with M6NP defined as M6 excluding initial progesterone. RESULTS: The EP group had lower serum progesterone, initial β hCG, 48 hour β hCG change rate, and endometrial thickness, and higher abnormal adnexal ultrasound detection (P < 0.05). Multivariate analysis showed log progesterone, abnormal adnexal ultrasound, previous EP, and M6NP high risk classification (≥5%) were independent predictors (P < 0.05). All AUC values are apparent/in sample estimates. Ultrasound + M6NP had an apparent AUC of 0.913; adding progesterone increased it to 0.947. In the M6NP high risk subgroup, progesterone plus ultrasound had an apparent AUC of 0.945 and specificity of 91.67%. Because the model was developed and evaluated in the same dataset without bootstrap or internal validation, estimates are preliminary and require external validation. CONCLUSION: Internally unvalidated analysis, serum progesterone combined with transvaginal ultrasound was associated with improved apparent diagnostic accuracy for EP in PUL, especially within M6NP risk stratification. These estimates are apparent/in sample, preliminary, and hypothesis generating. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0880",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in immunology",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0880_p53_activation_via_pharmacologic_mdm2_inhibition_constrains_.md",
+   "snippet": "Title p53 activation via pharmacologic MDM2 inhibition constrains exhaustion and enhances antitumor function of human CD8+ T cells Authors Boix de Jesus Alexandra, Dao Hy B, Imani Anthony, Rodriguez Gabriel A, Shehata Michael S, Chandran Ra",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Frontiers in immunology Title p53 activation via pharmacologic MDM2 inhibition constrains exhaustion and enhances antitumor function of human CD8+ T cells Authors Boix de Jesus Alexandra, Dao Hy B, Imani Anthony, Rodriguez Gabriel A, Shehata Michael S, Chandran Rachana R, Fine Stuart A, Lim Sin Y, et al. Journal / DOI Frontiers in immunology · DOI: 10.3389/fimmu.2026.1910235 · PMID: 42964330 https://pubmed.ncbi.nlm.nih.gov/42964330/ Abstract Adoptive T cell therapies using chimeric antigen receptors (CARs) or engineered T cell receptors (TCRs) have transformed cancer treatment but remain limited by poor persistence and progressive T cell exhaustion. Manufacturing strategies that promote memory T cell formation may improve therapeutic durability. Here we investigated whether transient pharmacologic activation of the p53 pathway influences the differentiation and function of human CD8+ T cells. p53 expression was minimal in quiescent naïve CD8+ T cells but was rapidly induced following T cell receptor activation. Pharmacologic inhibition of the p53 negative regulator MDM2 increased p53 protein levels and promoted expansion of central memory and stem like memory T cell subsets during clonal proliferation. Treated cells displayed enhanced mitochondrial fitness, increased polyfunctional cytokine production, and transcriptional programs consistent with memory differentiation and reduced exhaustion. Importantly, TCR engineered CD8+ T cells generated in the presence of the MDM2 inhibitor Navtemadlin demonstrated superior tumor cell killing in vitro compared with conventionally manufactured cells. These findings identify transient p53 activation as a pharmacologic strategy to enhance memory programming during T cell manufacturing and suggest a clinically feasible approach to improve the efficacy of adoptive T cell immunotherapies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0879",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical medicine research",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0879_klotho_gene_single_nucleotide_polymorphism_and_proteinuria_i.md",
+   "snippet": "Title Klotho Gene Single Nucleotide Polymorphism and Proteinuria in a General Population Authors Hamasaki Masato, Kotani Kazuhiko, Iwazu Yoshitaka, Kuro O Makoto Journal / DOI Journal of clinical medicine research · DOI: 10.14740/jocmr6669 ",
+   "text": "Nephrology scraped pubmed PubMed / Journal of clinical medicine research Title Klotho Gene Single Nucleotide Polymorphism and Proteinuria in a General Population Authors Hamasaki Masato, Kotani Kazuhiko, Iwazu Yoshitaka, Kuro O Makoto Journal / DOI Journal of clinical medicine research · DOI: 10.14740/jocmr6669 · PMID: 42964217 https://pubmed.ncbi.nlm.nih.gov/42964217/ Abstract BACKGROUND: Chronic kidney disease (CKD) is a major condition with a substantial sociomedical and economic burden. Klotho plays a role in renal protection via its antioxidant and anti inflammatory properties. Proteinuria is an early indicator of CKD. Although experimental studies have demonstrated the biological effects of Klotho in CKD, its clinical relevance to proteinuria remains unclear. METHODS: The present study investigated the association between the A/T alleles of the Klotho gene rs650439 single nucleotide polymorphism (SNP) and proteinuria in a general Japanese population. Clinical and genotyping data from a total of 916 community dwelling participants (mean age = 63 years old) were analyzed. RESULTS: Participants carrying the minor TT genotype accounted for 13.2% of the population. The prevalence of proteinuria was significantly higher in the TT group than in the AA + AT group (15.7% vs. 7.3%, P < 0.01). Logistic regression analysis showed that the TT genotype was significantly associated with proteinuria (crude odds ratio (OR) = 2.37, 95% confidence interval (CI) 1.35 4.14). This association remained significant after adjustment for age, sex, and cardiometabolic factors (adjusted OR = 2.07, 95% CI 1.14 3.77). CONCLUSIONS: These findings suggest that the TT genotype of Klotho gene rs650439 SNP may serve as a genetic marker for early renal proteinuria. Further research is required to confirm the findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0878",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in medicine",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0878_development_and_external_validation_of_interpretable_machine.md",
+   "snippet": "Title Development and external validation of interpretable machine learning models for 7 , 14 , and 28 day mortality in sepsis associated liver injury Authors Yao Hao, Li Zhaopu, Lü Jinxiao, Shen Wei Journal / DOI Frontiers in medicine · DO",
+   "text": "Infectious Disease scraped pubmed PubMed / Frontiers in medicine Title Development and external validation of interpretable machine learning models for 7 , 14 , and 28 day mortality in sepsis associated liver injury Authors Yao Hao, Li Zhaopu, Lü Jinxiao, Shen Wei Journal / DOI Frontiers in medicine · DOI: 10.3389/fmed.2026.1942203 · PMID: 42964336 https://pubmed.ncbi.nlm.nih.gov/42964336/ Abstract BACKGROUND: Mortality in sepsis associated liver injury (SALI) remains high, and early risk stratification is difficult. Existing prognostic models commonly focus on a single endpoint, usually 28 day mortality, and rarely undergo independent external validation. METHODS: We developed machine learning models using clinical features recorded during the first 24 h to predict all cause in hospital mortality within 7, 14, and 28 days. In MIMIC IV (v3.1), 1,550 adults meeting the prespecified SALI criteria were allocated to a training cohort (n = 1,119) and a held out internal validation cohort (n = 431). An independent Chinese cohort from Xiaogan Central Hospital (n = 229; 28 day in hospital mortality, 45.9%) was used for external validation. One hundred candidate pipelines were evaluated using stratified 10 fold cross validation. SHAP was used to describe feature attribution across prediction horizons. RESULTS: AUROCs in the held out internal validation cohort were 0.840, 0.841, and 0.850 for 7 , 14 , and 28 day mortality, respectively; corresponding external AUROCs were 0.720, 0.717, and 0.763. The external 28 day model outperformed modified SOFA (0.763 vs. 0.673; P = 0.011) and MELD Na (0.763 vs. 0.636; P = 0.002). A parsimonious logistic regression sensitivity model achieved an external 28 day AUROC of 0.762, not significantly different from the full model (P = 0.970). The 14 day model was miscalibrated externally; recalibration improved the calibration slope from 0.563 to 0.970 but did not materially improve the Brier score. SHAP rankings varied across horizons and were interpreted descriptively rather than causally. CONCLUSION: The models showed moderate transportability to one independent retrospective cohort. Multicentre prospective validation is needed before clinical implementation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0877",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in pharmacology",
+   "confidence": "medium",
+   "date": "2026-10-31",
+   "path": "content/papers/2026/2026-10-31_paper-2026-0877_cinobufagin_induces_peroxisome_dysfunction_through_suppressi.md",
+   "snippet": "Title Cinobufagin induces peroxisome dysfunction through suppression of the peroxisomal biogenesis factor proteins and interferes with lipid metabolism to affect the growth of liver cancer cells Authors Yang Jingyi, Shao Wanjun, Yu Congying",
+   "text": "Cardiology scraped pubmed PubMed / Frontiers in pharmacology Title Cinobufagin induces peroxisome dysfunction through suppression of the peroxisomal biogenesis factor proteins and interferes with lipid metabolism to affect the growth of liver cancer cells Authors Yang Jingyi, Shao Wanjun, Yu Congying, Wu Qi, Xu Rufei, Rong Xiaoqian, Yang Ailin Journal / DOI Frontiers in pharmacology · DOI: 10.3389/fphar.2026.1860569 · PMID: 42964345 https://pubmed.ncbi.nlm.nih.gov/42964345/ Abstract BACKGROUND: Primary liver cancer is the sixth most commonly diagnosed cancer and the third most common cause of cancer death worldwide. Chansu is made by processing and drying the white serous fluid of the posterior ear and skin glands of Bufo bufo gargarizans Cantor or Bufo melanostictus Schneider. Chansu is a well known traditional Chinese medicine (TCM) that is mainly used for detoxification, detumescence, analgesia, the treatment of cancer, and heart failure. Cinobufagin, as a bufadienolide, has been reported as the main antitumor active component of Chansu. However, the molecular mechanisms related to the anticancer effects of cinobufagin still remain elusive. PURPOSE: The purpose of this study is to explore whether cinobufagin inhibits the growth of HepG2 and SK HEP 1 tumor cells by inducing peroxisome dysfunction and interfering with lipid metabolism. METHODS: The protein levels of catalase, ABCD3, PEX5, PEX6, and PEX10 in human hepatoma cells were analyzed by Western blotting. The effects of cinobufagin on the viability of HepG2 and SK HEP 1 cells were detected by cell counting kit 8 (CCK 8) assay and clone formation assay. Small interfering RNA (siRNA) transfection was used to explore whether inhibition of PEX could enhance the inhibitory effect of cinobufagin on cell growth of HepG2 and SK HEP 1 tumor cells. The effects of cinobufagin on lipid metabolism were analyzed by untargeted metabolomics. The in vivo antitumor effects of cinobufagin were verified by animal studies. RESULTS: Cinobufagin causes peroxisome dysfunction in HepG2 and SK HEP 1 tumor cells. From a mechanistic point of view, we reveal that cinobufagin downregulates the expression of PEX5, PEX10, and PEX6. In addition, through RNA interference, cinobufagin partially blocks the growth of HepG2 and SK HEP 1 tumor cells and restrains the expression of lipid metabolism related proteins via downregulating the expression of PEX5 and PEX10. Subsequently, we perform a non targeted metabolomics analysis of the cells and find that cinobufagin exerts its anti hepatoma effects by interfering with lipid metabolic reprogramming. The results show that cinobufagin mainly interferes with glycerophospholipid and fatty acyl levels. In addition, in vivo experiments reveal that cinobufagin restrains tumor growth without obvious adverse effects. Serum metabolomics analyses reveal that cinobufagin causes significant changes in the levels of lipid and lipid like differential metabolites. CONCLUSION: Cinobufagin is a promising natural drug for the treatment of liver cancer, and PEXs may be potential molecular targets of cinobufagin to exert anticancer effects. Cinobufagin induces peroxisome dysfunction through suppression of the proteins encoded by the PEX genes and interferes with lipid metabolism to restrain the growth of liver cancer cells. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0504",
