@@ -2,6 +2,1448 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0515",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 건강검진에서 맥박이 느리다는 말을 들은 고령 여성",
+  "type": "심전도 처치 — 건강검진에서 맥박이 느리다는 말을 들은 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-01",
+  "vignette": "72세 여자가 건강검진에서 맥박이 느리다는 말을 듣고 외래에 왔다. 어지러움·실신·호흡곤란·운동 시 피로는 없고 매일 40분씩 걷는다. 고지혈증으로 스타틴을 먹고 있고 베타차단제나 칼슘통로차단제는 먹지 않는다. 혈압 128/76 mmHg, 맥박 56회/분이다. 갑상샘자극호르몬과 혈청 칼륨은 정상이다. 계단을 오르게 한 뒤 다시 잰 맥박은 92회/분이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "추가 치료 없이 경과를 관찰한다",
+   "아트로핀을 정맥 주사한다",
+   "영구 심박동기를 삽입한다",
+   "이소프로테레놀을 지속 주입한다",
+   "일시적 경피 심박조율을 시작한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 리듬 스트립의 RR 간격이 약 5큰칸(약 1.04 s)으로 규칙적이라 심박수는 분당 약 57회이고, 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 로 있으며 QRS 는 좁다 — 동서맥이다. 방실차단은 없다. 증상이 없고, 서맥을 일으키는 약이나 갑상샘 기능 저하가 없으며, 운동하면 맥박이 92회까지 오른다(변시성 기능 보존). 증상 없는 동서맥은 치료 대상이 아니므로 경과를 관찰한다.\n- 원리: <b>왜 「느리다」만으로는 치료하지 않는가</b>: 심박출량은 심박수 × 1회 박출량이다. 휴식 시 심박수가 50대라도 1회 박출량이 보상하면 조직 관류는 충분하고 증상이 없다. 동서맥 치료의 기준은 숫자가 아니라 <b>서맥과 연결된 증상</b>(어지러움·실신·운동 시 피로·심부전)이다.<br> <b>왜 운동 시 맥박을 보는가</b>: 동방결절 기능 부전의 핵심은 필요할 때 심박수를 올리지 못하는 변시성 부전이다. 운동으로 맥박이 적절히 오르면 결절의 예비력이 있다는 뜻이다.<br> <b>왜 원인을 먼저 찾는가</b>: 베타차단제·비디하이드로피리딘 칼슘통로차단제·디곡신, 갑상샘 기능 저하, 고칼륨혈증, 수면 무호흡 같은 되돌릴 수 있는 원인을 먼저 배제한다. 원인이 없고 증상도 없으면 박동조율기는 이득 없이 시술 위험만 더한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">경과 관찰(정답)</th><th>영구 심박동기(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>없음</b></td><td>서맥과 연관된 어지러움·실신·피로</td></tr> <tr><td>리듬</td><td>동서맥, 방실 전도 정상</td><td>증상 있는 동결절 기능 부전, 2도 Mobitz II·3도 방실차단</td></tr> <tr><td>운동 반응</td><td>맥박이 적절히 오름</td><td>오르지 않음(변시성 부전)</td></tr> <tr><td>가역 원인</td><td>없음</td><td>배제한 뒤에도 지속</td></tr> </tbody></table> 동서맥에서 심박동기를 정하는 것은 심박수가 아니라 증상과 서맥의 연관이다 — 방실차단이 있는 경우와는 기준이 다르다.\n- 오답 이유:\n  - ② 아트로핀 정맥 주사는 서맥으로 저혈압·의식 변화·쇼크 같은 불안정 징후가 있을 때 첫 약물로 정답이 된다.\n  - ③ 영구 심박동기는 서맥과 연관된 실신·어지러움이 기록되거나 변시성 부전이 있거나 3도·Mobitz II 방실차단이 있을 때 정답이 된다.\n  - ④ 이소프로테레놀 지속 주입은 아트로핀에 반응하지 않는 불안정 서맥에서 조율 준비 전까지 쓰는 다리 역할일 때 정답에 가까워진다.\n  - ⑤ 경피 심박조율은 아트로핀에 반응하지 않는 혈역학적으로 불안정한 서맥이나 고도 방실차단일 때 정답이 된다.\n- 함정: 맥박 56회라는 숫자에 끌려 약물·조율을 고르는 것 — 증상이 없고 운동 반응이 정상이면 치료하지 않는다.\n- 학습목표: 증상 없는 동서맥(분당 50대, P파·PR 정상)은 치료하지 않고 경과 관찰하며, 박동조율기·아트로핀은 증상이 있거나 방실차단이 있을 때로 가른다\n- 근거·출처: Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation. 2019;140(8):e382-e482. PMID: 30586772 · Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 13\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1795 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립의 RR 간격이 약 5큰칸(약 1.04 s)으로 규칙적이라 심박수는 분당 약 57회이고, 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 로 있으며 QRS 는 좁다 — 동서맥이다. 방실차단은 없다. 증상이 없고, 서맥을 일으키는 약이나 갑상샘 기능 저하가 없으며, 운동하면 맥박이 92회까지 오른다(변시성 기능 보존). 증상 없는 동서맥은 치료 대상이 아니므로 경과를 관찰한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「느리다」만으로는 치료하지 않는가</b>: 심박출량은 심박수 × 1회 박출량이다. 휴식 시 심박수가 50대라도 1회 박출량이 보상하면 조직 관류는 충분하고 증상이 없다. 동서맥 치료의 기준은 숫자가 아니라 <b>서맥과 연결된 증상</b>(어지러움·실신·운동 시 피로·심부전)이다.<br> <b>왜 운동 시 맥박을 보는가</b>: 동방결절 기능 부전의 핵심은 필요할 때 심박수를 올리지 못하는 변시성 부전이다. 운동으로 맥박이 적절히 오르면 결절의 예비력이 있다는 뜻이다.<br> <b>왜 원인을 먼저 찾는가</b>: 베타차단제·비디하이드로피리딘 칼슘통로차단제·디곡신, 갑상샘 기능 저하, 고칼륨혈증, 수면 무호흡 같은 되돌릴 수 있는 원인을 먼저 배제한다. 원인이 없고 증상도 없으면 박동조율기는 이득 없이 시술 위험만 더한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">경과 관찰(정답)</th><th>영구 심박동기(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>없음</b></td><td>서맥과 연관된 어지러움·실신·피로</td></tr> <tr><td>리듬</td><td>동서맥, 방실 전도 정상</td><td>증상 있는 동결절 기능 부전, 2도 Mobitz II·3도 방실차단</td></tr> <tr><td>운동 반응</td><td>맥박이 적절히 오름</td><td>오르지 않음(변시성 부전)</td></tr> <tr><td>가역 원인</td><td>없음</td><td>배제한 뒤에도 지속</td></tr> </tbody></table> 동서맥에서 심박동기를 정하는 것은 심박수가 아니라 증상과 서맥의 연관이다 — 방실차단이 있는 경우와는 기준이 다르다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 아트로핀 정맥 주사는 서맥으로 저혈압·의식 변화·쇼크 같은 불안정 징후가 있을 때 첫 약물로 정답이 된다.\n③ 영구 심박동기는 서맥과 연관된 실신·어지러움이 기록되거나 변시성 부전이 있거나 3도·Mobitz II 방실차단이 있을 때 정답이 된다.\n④ 이소프로테레놀 지속 주입은 아트로핀에 반응하지 않는 불안정 서맥에서 조율 준비 전까지 쓰는 다리 역할일 때 정답에 가까워진다.\n⑤ 경피 심박조율은 아트로핀에 반응하지 않는 혈역학적으로 불안정한 서맥이나 고도 방실차단일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "맥박 56회라는 숫자에 끌려 약물·조율을 고르는 것 — 증상이 없고 운동 반응이 정상이면 치료하지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상 없는 동서맥(분당 50대, P파·PR 정상)은 치료하지 않고 경과 관찰하며, 박동조율기·아트로핀은 증상이 있거나 방실차단이 있을 때로 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation. 2019;140(8):e382-e482. PMID: 30586772 · Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 13 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1795 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "증상 없고 변시성 기능이 보존된 동서맥은 치료 없이 경과를 관찰한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "영구 심박동기는 증상과 서맥의 연관이나 고도 방실차단이 있을 때 — 이 환자는 증상이 없고 방실 전도가 정상이며 운동 시 맥박이 오른다",
+   "steps": 3,
+   "chain": [
+    "영상: 규칙적 RR 약 1.04 s(약 57회), 모든 QRS 앞 같은 P파·일정한 PR, 좁은 QRS → 동서맥, 방실차단 없음",
+    "증상 없음·서맥 유발 약 없음·갑상샘 정상 → 가역 원인·증상 연관 없음",
+    "운동 시 맥박 92회(변시성 보존) → 치료 대상 아님 → 경과 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞의 같은 P파와 일정한 PR, 약 57회/분",
+     "why": "동서맥 — 방실차단이 아니다",
+     "also": []
+    },
+    {
+     "item": "어지러움·실신·호흡곤란·운동 시 피로는 없고",
+     "why": "증상 없음 — 치료 결정의 핵심",
+     "also": []
+    },
+    {
+     "item": "계단을 오르게 한 뒤 다시 잰 맥박은 92회/분",
+     "why": "변시성 기능 보존",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "베타차단제나 칼슘통로차단제는 먹지 않는다",
+     "why": "약물성 서맥 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘자극호르몬과 혈청 칼륨은 정상",
+     "why": "갑상샘 기능 저하·고칼륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "매일 40분씩 걷는다",
+     "why": "활동량을 보여 주지만 판독을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "동서맥(약 57회, P파·PR 정상)이다. 증상이 없고 원인 약·갑상샘 이상이 없으며 운동 시 맥박이 오르므로 치료하지 않고 경과를 관찰한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 동서맥에서 서맥과 연관된 실신이 기록되었거나 운동해도 맥박이 오르지 않는다면 영구 심박동기"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0515.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01795",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1795"
+  },
+  "run_id": "20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0514",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 수술 전 검사를 받은 중년 남성",
+  "type": "심전도 판독 — 수술 전 검사를 받은 중년 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-01",
+  "vignette": "66세 남자가 오른쪽 서혜부 탈장 수술을 앞두고 수술 전 검사를 받았다. 증상은 없고 계단 두 층을 쉬지 않고 오른다. 고혈압으로 약을 먹고 있고 흡연한 적은 없다. 혈압 132/80 mmHg, 맥박 88회/분이다. 심잡음은 없고 제2심음이 넓게 분열되어 들린다. 흉부 X선은 정상이다. 혈청 칼륨 4.2 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "우심실 비대",
+   "완전 우각차단",
+   "완전 좌각차단",
+   "좌전섬유속 차단",
+   "브루가다 1형 양상"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: QRS 폭이 3칸(0.12 s) 이상으로 넓고, V1 에서 작은 r 뒤 S, 그리고 크고 넓은 R′ 가 이어지는 rsR′ 모양이며, I·V5·V6 에는 넓고 둔한 S파가 있다. 우심실의 탈분극이 늦게 일어나 마지막 부분이 오른쪽·앞쪽(V1 쪽)으로 향하는 모습 — 완전 우각차단이다. V1~V2 의 T파가 QRS 끝부분과 반대 방향인 것은 이차성 재분극 변화다. 진찰의 넓은 제2심음 분열도 폐동맥판 폐쇄가 늦어진 결과로 같은 방향을 가리킨다.\n- 원리: <b>왜 끝부분이 오른쪽으로 향하는가</b>: 정상에서는 좌·우각이 거의 동시에 양쪽 심실을 탈분극하고, 두꺼운 좌심실이 벡터를 지배한다. 우각이 막히면 좌심실은 제때 탈분극하고, 우심실은 좌심실에서 근육을 따라 느리게 전해진 흥분으로 <b>늦게</b> 탈분극한다. 이 늦은 우심실 성분이 QRS 끝에 오른쪽·앞쪽으로 덧붙어 V1 에 큰 R′, 왼쪽 유도(I·V6)에 넓은 S파를 만든다.<br> <b>왜 처음 부분은 정상인가</b>: 중격 탈분극은 좌각에서 시작해 왼쪽에서 오른쪽으로 가므로 우각차단에서도 그대로 남는다 — V1 의 작은 r 과 V6 의 작은 q 가 유지된다. 좌각차단은 이 첫 부분부터 바뀌어 V6 의 q 가 사라진다.<br> <b>왜 제2심음이 넓게 갈라지는가</b>: 우심실 수축이 늦어지면 폐동맥판이 늦게 닫혀 P2 가 뒤로 밀리고, 이 분열은 호기 때도 남는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">완전 우각차단(정답)</th><th>완전 좌각차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>V1</td><td><b>rsR′ — 끝부분이 위로</b></td><td>넓은 QS 또는 rS — 깊게 아래로</td></tr> <tr><td>I·V6</td><td>넓고 둔한 S파, 작은 q 유지</td><td>넓고 끝이 패인 R파, q 없음</td></tr> <tr><td>탈분극 순서</td><td>좌심실 → 늦은 우심실</td><td>우심실 → 늦은 좌심실(중격도 거꾸로)</td></tr> <tr><td>의미</td><td>건강한 사람에서도 흔함</td><td>대개 구조적 심질환 동반 — 평가 필요</td></tr> </tbody></table> 넓은 QRS 를 보면 V1 의 마지막 방향부터 본다 — 위로면 우각, 아래로면 좌각이다.\n- 오답 이유:\n  - ① 우심실 비대는 V1 에 큰 R파(R/S > 1)가 있어도 QRS 폭이 정상이고 우축 편위와 V1~V3 의 변형 ST-T 가 함께 있을 때 정답이 된다.\n  - ③ 완전 좌각차단은 V1 이 넓고 깊은 QS·rS 로 끝부분이 아래로 향하고, I·V6 에 q 없이 넓고 끝이 패인 R파가 있을 때 정답이 된다.\n  - ④ 좌전섬유속 차단은 QRS 폭이 0.12 s 미만으로 좁고 전기축이 −45° 보다 왼쪽이며 II·III·aVF 에 rS, I·aVL 에 qR 이 있을 때 정답이 된다.\n  - ⑤ 브루가다 1형 양상은 V1~V2 에서 2 mm 이상 둥글게 솟은 ST 상승이 음성 T파로 이어지고 I·V6 의 넓은 S파가 없을 때 정답이 된다.\n- 함정: V1 의 R′ 와 ST-T 변화만 보고 브루가다를 고르는 것 — I·V6 의 넓은 S파와 넓어진 QRS 는 우각차단의 짝이다.\n- 학습목표: V1 의 넓은 rsR′ 와 I·V6 의 넓고 둔한 S파, QRS 0.12 s 이상을 완전 우각차단으로 읽고 좌각차단·브루가다 양상과 가른다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 7 · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the Electrocardiogram: Part III: Intraventricular Conduction Disturbances. Circulation. 2009;119(10):e235-e240. PMID: 19228822\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 903 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "QRS 폭이 3칸(0.12 s) 이상으로 넓고, V1 에서 작은 r 뒤 S, 그리고 크고 넓은 R′ 가 이어지는 rsR′ 모양이며, I·V5·V6 에는 넓고 둔한 S파가 있다. 우심실의 탈분극이 늦게 일어나 마지막 부분이 오른쪽·앞쪽(V1 쪽)으로 향하는 모습 — 완전 우각차단이다. V1~V2 의 T파가 QRS 끝부분과 반대 방향인 것은 이차성 재분극 변화다. 진찰의 넓은 제2심음 분열도 폐동맥판 폐쇄가 늦어진 결과로 같은 방향을 가리킨다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 끝부분이 오른쪽으로 향하는가</b>: 정상에서는 좌·우각이 거의 동시에 양쪽 심실을 탈분극하고, 두꺼운 좌심실이 벡터를 지배한다. 우각이 막히면 좌심실은 제때 탈분극하고, 우심실은 좌심실에서 근육을 따라 느리게 전해진 흥분으로 <b>늦게</b> 탈분극한다. 이 늦은 우심실 성분이 QRS 끝에 오른쪽·앞쪽으로 덧붙어 V1 에 큰 R′, 왼쪽 유도(I·V6)에 넓은 S파를 만든다.<br> <b>왜 처음 부분은 정상인가</b>: 중격 탈분극은 좌각에서 시작해 왼쪽에서 오른쪽으로 가므로 우각차단에서도 그대로 남는다 — V1 의 작은 r 과 V6 의 작은 q 가 유지된다. 좌각차단은 이 첫 부분부터 바뀌어 V6 의 q 가 사라진다.<br> <b>왜 제2심음이 넓게 갈라지는가</b>: 우심실 수축이 늦어지면 폐동맥판이 늦게 닫혀 P2 가 뒤로 밀리고, 이 분열은 호기 때도 남는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">보는 곳</th><th style=\"width:39%\">완전 우각차단(정답)</th><th>완전 좌각차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>V1</td><td><b>rsR′ — 끝부분이 위로</b></td><td>넓은 QS 또는 rS — 깊게 아래로</td></tr> <tr><td>I·V6</td><td>넓고 둔한 S파, 작은 q 유지</td><td>넓고 끝이 패인 R파, q 없음</td></tr> <tr><td>탈분극 순서</td><td>좌심실 → 늦은 우심실</td><td>우심실 → 늦은 좌심실(중격도 거꾸로)</td></tr> <tr><td>의미</td><td>건강한 사람에서도 흔함</td><td>대개 구조적 심질환 동반 — 평가 필요</td></tr> </tbody></table> 넓은 QRS 를 보면 V1 의 마지막 방향부터 본다 — 위로면 우각, 아래로면 좌각이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 우심실 비대는 V1 에 큰 R파(R/S > 1)가 있어도 QRS 폭이 정상이고 우축 편위와 V1~V3 의 변형 ST-T 가 함께 있을 때 정답이 된다.\n③ 완전 좌각차단은 V1 이 넓고 깊은 QS·rS 로 끝부분이 아래로 향하고, I·V6 에 q 없이 넓고 끝이 패인 R파가 있을 때 정답이 된다.\n④ 좌전섬유속 차단은 QRS 폭이 0.12 s 미만으로 좁고 전기축이 −45° 보다 왼쪽이며 II·III·aVF 에 rS, I·aVL 에 qR 이 있을 때 정답이 된다.\n⑤ 브루가다 1형 양상은 V1~V2 에서 2 mm 이상 둥글게 솟은 ST 상승이 음성 T파로 이어지고 I·V6 의 넓은 S파가 없을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "V1 의 R′ 와 ST-T 변화만 보고 브루가다를 고르는 것 — I·V6 의 넓은 S파와 넓어진 QRS 는 우각차단의 짝이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "V1 의 넓은 rsR′ 와 I·V6 의 넓고 둔한 S파, QRS 0.12 s 이상을 완전 우각차단으로 읽고 좌각차단·브루가다 양상과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 7 · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the Electrocardiogram: Part III: Intraventricular Conduction Disturbances. Circulation. 2009;119(10):e235-e240. PMID: 19228822 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 903 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "QRS ≥ 0.12 s 에 V1 rsR′ 와 I·V6 의 넓은 S파가 있으면 완전 우각차단이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "좌각차단은 V1 의 끝부분이 아래로 깊고 V6 에 넓은 R파와 q 소실 — 이 기록은 V1 끝이 위로(R′), V6 에 넓은 S파다",
+   "steps": 2,
+   "chain": [
+    "영상: QRS 0.12 s 이상 → 각차단 계열",
+    "영상: V1 rsR′ + I·V5·V6 넓고 둔한 S파 → 늦은 우심실 탈분극 → 완전 우각차단"
+   ],
+   "key": [
+    {
+     "item": "영상: V1 의 넓은 rsR′",
+     "why": "늦은 우심실 성분이 V1 쪽으로",
+     "also": []
+    },
+    {
+     "item": "영상: I·V5·V6 의 넓고 둔한 S파",
+     "why": "같은 늦은 성분이 왼쪽 유도에서 멀어지는 모습",
+     "also": []
+    },
+    {
+     "item": "제2심음이 넓게 분열되어",
+     "why": "우심실 수축 지연 — 심전도 소견과 같은 방향",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉부 X선은 정상",
+     "why": "우심실 비대·폐고혈압 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "증상은 없고 계단 두 층을 쉬지 않고 오른다",
+     "why": "운동능력 양호 — 수술 전 추가 검사 필요성이 낮다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압",
+     "why": "흔한 배경이며 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "QRS 가 넓고 V1 rsR′, I·V6 의 넓은 S파가 있어 완전 우각차단이다. 끝부분이 V1 쪽(위)으로 향한다는 점이 좌각차단과 가른다.",
+   "switch": {
+    "choice": "C",
+    "condition": "V1 이 넓고 깊은 QS 이고 I·V6 에 q 없이 넓고 패인 R파가 있다면 완전 좌각차단"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0514.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+   "asset_id": "PTBXL-00903",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 903"
+  },
+  "run_id": "20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0508",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "응급·중환자·외상 — 얕은 물에 다이빙한 뒤의 위쪽 목 통증",
+  "type": "응급·중환자·외상 — 얕은 물에 다이빙한 뒤의 위쪽 목 통증",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-01",
+  "vignette": "A 70-year-old man is brought to the emergency department 1 hour after he dove into the shallow end of a swimming pool and struck the top of his head on the bottom. He reports severe upper neck pain but no weakness or numbness. He has coronary artery disease. Pulse is 88/min, and blood pressure is 142/84 mm Hg. He is wearing a rigid cervical collar. Neurologic examination shows normal strength, sensation, and reflexes in all extremities. An axial CT scan of the upper cervical spine at the level of the first cervical vertebra is shown.",
+  "question": "Which of the following mechanisms most likely produced this injury?",
+  "options": [
+   "Axial compression transmitted from the vertex through the occipital condyles",
+   "Hyperextension compressing the posterior arch between the occiput and C2",
+   "Hyperflexion with compression of the anterior vertebral body",
+   "Lateral flexion with avulsion of the alar ligament from the dens",
+   "Rotational force causing atlantoaxial facet subluxation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The CT shows a ring broken in several places: one fracture of the anterior arch and fractures of the posterior arch and the junction of the left lateral mass and posterior arch (arrows), with the dens centered in the ring. A ring fractured both in front and behind is the burst (Jefferson) fracture of C1. It results from an axial load on the vertex — here diving into shallow water — that drives the occipital condyles down into the wedge-shaped lateral masses and forces them apart, breaking the ring at its weakest points. Neurologic deficits are usually absent because the canal widens rather than narrows.\n- 원리: <b>Why an axial load bursts the atlas</b>: the lateral masses of C1 are wedge-shaped — thicker laterally and thinner medially — and their upper surfaces cup the occipital condyles. A force on the top of the head pushes the condyles into these wedges like a splitting maul, so the lateral masses spread outward and the ring snaps at the thin junctions of the anterior and posterior arches with the lateral masses.<br> <b>Why the cord is usually spared</b>: the fragments move outward, enlarging the spinal canal at C1, which is already the widest part of the cervical canal. Patients often present with neck pain only.<br> <b>Why stability depends on the transverse ligament</b>: the transverse atlantal ligament holds the dens against the anterior arch. If the lateral masses spread so far that the ligament tears (combined overhang of the lateral masses on C2 beyond about 7 mm on an open-mouth view, or a bony avulsion on CT/MRI), the fracture is unstable and needs fixation rather than a collar alone.\n- 비교: <table><thead><tr><th style=\"width:24%\">Look at</th><th style=\"width:38%\">Axial load — burst (answer)</th><th>Hyperextension (closest distractor)</th></tr></thead><tbody> <tr><td>Fracture pattern</td><td><b>Anterior and posterior arches both broken</b> — ring in ≥ 2–4 parts</td><td>Posterior arch alone (bilateral), anterior arch intact</td></tr> <tr><td>How it happens</td><td>Condyles drive lateral masses apart</td><td>Arch pinched between occiput and C2 spinous process</td></tr> <tr><td>Typical story</td><td>Diving, fall onto the head, roof collapse</td><td>Chin or forehead strikes an object, neck forced back</td></tr> </tbody></table> A ring can break in only one place if it is held in front: when the anterior arch is also broken, an outward-spreading axial force is required.\n- 오답 이유:\n  - (B) Hyperextension would be correct if only the posterior arch were fractured on both sides, pinched between the occiput and C2, with the anterior arch intact.\n  - (C) Hyperflexion would be correct for an anterior wedge compression or flexion teardrop fracture of a lower cervical vertebral body, not a C1 ring burst.\n  - (D) Lateral flexion would be correct for an alar ligament avulsion or an occipital condyle fracture, seen as a small fragment at the tip of the dens.\n  - (E) Rotation would be correct for atlantoaxial rotatory subluxation, seen as asymmetric lateral mass–dens relationships without fractures, often in children.\n- 함정: Assuming every C1 arch fracture comes from hyperextension — only an isolated posterior arch fracture does; a ring broken front and back means axial loading.\n- 학습목표: 고리뼈(C1) 축상 CT 에서 앞·뒤고리가 여러 곳 끊긴 고리 파열(Jefferson 골절)을 읽고 머리 꼭대기로 전달된 축성 압박 기전과 연결한다\n- 근거·출처: Jefferson G. Fracture of the atlas vertebra: report of four cases, and a review of those previously recorded. Br J Surg. 1920;7(27):407-422 · Tornetta P III, Ricci WM, Ostrum RF, et al. Rockwood and Green's Fractures in Adults, 9th ed. Wolters Kluwer; 2019. Chapter: Cervical Spine Fractures and Dislocations · Case figure: Front Surg. 2023;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY)\n\n## 출처\n- Case report: Interdisciplinary treatment of complex C1/C2 fractures in a patient with concomitant three-vessel coronary artery disease requiring bypass surgery. Front Surg. 2023 May 16;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a ring broken in several places: one fracture of the anterior arch and fractures of the posterior arch and the junction of the left lateral mass and posterior arch (arrows), with the dens centered in the ring. A ring fractured both in front and behind is the burst (Jefferson) fracture of C1. It results from an axial load on the vertex — here diving into shallow water — that drives the occipital condyles down into the wedge-shaped lateral masses and forces them apart, breaking the ring at its weakest points. Neurologic deficits are usually absent because the canal widens rather than narrows."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why an axial load bursts the atlas</b>: the lateral masses of C1 are wedge-shaped — thicker laterally and thinner medially — and their upper surfaces cup the occipital condyles. A force on the top of the head pushes the condyles into these wedges like a splitting maul, so the lateral masses spread outward and the ring snaps at the thin junctions of the anterior and posterior arches with the lateral masses.<br> <b>Why the cord is usually spared</b>: the fragments move outward, enlarging the spinal canal at C1, which is already the widest part of the cervical canal. Patients often present with neck pain only.<br> <b>Why stability depends on the transverse ligament</b>: the transverse atlantal ligament holds the dens against the anterior arch. If the lateral masses spread so far that the ligament tears (combined overhang of the lateral masses on C2 beyond about 7 mm on an open-mouth view, or a bony avulsion on CT/MRI), the fracture is unstable and needs fixation rather than a collar alone."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Look at</th><th style=\"width:38%\">Axial load — burst (answer)</th><th>Hyperextension (closest distractor)</th></tr></thead><tbody> <tr><td>Fracture pattern</td><td><b>Anterior and posterior arches both broken</b> — ring in ≥ 2–4 parts</td><td>Posterior arch alone (bilateral), anterior arch intact</td></tr> <tr><td>How it happens</td><td>Condyles drive lateral masses apart</td><td>Arch pinched between occiput and C2 spinous process</td></tr> <tr><td>Typical story</td><td>Diving, fall onto the head, roof collapse</td><td>Chin or forehead strikes an object, neck forced back</td></tr> </tbody></table> A ring can break in only one place if it is held in front: when the anterior arch is also broken, an outward-spreading axial force is required."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Hyperextension would be correct if only the posterior arch were fractured on both sides, pinched between the occiput and C2, with the anterior arch intact.\n(C) Hyperflexion would be correct for an anterior wedge compression or flexion teardrop fracture of a lower cervical vertebral body, not a C1 ring burst.\n(D) Lateral flexion would be correct for an alar ligament avulsion or an occipital condyle fracture, seen as a small fragment at the tip of the dens.\n(E) Rotation would be correct for atlantoaxial rotatory subluxation, seen as asymmetric lateral mass–dens relationships without fractures, often in children."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming every C1 arch fracture comes from hyperextension — only an isolated posterior arch fracture does; a ring broken front and back means axial loading."
+   },
+   {
+    "k": "학습목표",
+    "v": "고리뼈(C1) 축상 CT 에서 앞·뒤고리가 여러 곳 끊긴 고리 파열(Jefferson 골절)을 읽고 머리 꼭대기로 전달된 축성 압박 기전과 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Jefferson G. Fracture of the atlas vertebra: report of four cases, and a review of those previously recorded. Br J Surg. 1920;7(27):407-422 · Tornetta P III, Ricci WM, Ostrum RF, et al. Rockwood and Green's Fractures in Adults, 9th ed. Wolters Kluwer; 2019. Chapter: Cervical Spine Fractures and Dislocations · Case figure: Front Surg. 2023;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) ## 출처 Case report: Interdisciplinary treatment of complex C1/C2 fractures in a patient with concomitant three-vessel coronary artery disease requiring bypass surgery. Front Surg. 2023 May 16;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "앞고리와 뒤고리가 모두 끊긴 C1 고리 파열은 머리 꼭대기로 전달된 축성 압박으로 생긴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "과신전은 뒤고리만 끊는다 — 이 영상은 앞고리도 끊겨 있어 가쪽덩이를 바깥으로 벌리는 힘이 필요하다",
+   "steps": 3,
+   "chain": [
+    "영상: 앞고리 1곳 + 뒤고리·가쪽덩이 이음부 여러 곳 골절 → 고리가 앞뒤 모두 끊김",
+    "앞뒤가 모두 끊긴 고리 = 가쪽덩이가 바깥으로 벌어진 파열(Jefferson)",
+    "얕은 물 다이빙으로 머리 꼭대기를 부딪침 → 뒤통수관절융기를 통한 축성 압박"
+   ],
+   "key": [
+    {
+     "item": "영상: 앞고리와 뒤고리가 모두 끊긴 고리뼈",
+     "why": "고리 파열 — 축성 압박의 지문",
+     "also": []
+    },
+    {
+     "item": "struck the top of his head on the bottom",
+     "why": "머리 꼭대기로 들어온 축성 하중",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "rigid cervical collar",
+     "why": "불안정성 평가 전 고정 유지",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "normal strength, sensation, and reflexes in all extremities",
+     "why": "고리 파열은 척추관을 넓혀 신경 손상이 드물다 — 기전 판단에는 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "coronary artery disease",
+     "why": "동반 질환이며 기전과 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "고리뼈가 앞고리와 뒤고리 여러 곳에서 끊긴 고리 파열이다. 앞고리까지 끊어지려면 가쪽덩이를 바깥으로 벌리는 축성 압박이 필요하다 — 얕은 물 다이빙의 전형적 기전이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "CT 에서 앞고리는 온전하고 뒤고리만 양쪽에서 끊어졌다면 과신전 기전"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0508.png",
+   "caption": "Axial CT, bone window; arrows are from the original published figure — one panel cropped, no other change (PMC Open Access Subset, CC BY)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10228685/",
+   "asset_id": "PMC-PMC10228685_Figure1_C",
+   "text": "Case report: Interdisciplinary treatment of complex C1/C2 fractures in a patient with concomitant three-vessel coronary artery disease requiring bypass surgery. Front Surg. 2023 May 16;10:1123947. doi: 10.3389/fsurg.2023.1123947 (CC BY) — Figure 1"
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0507",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "순환기 — 초고령 여성의 가끔 건너뛰는 맥박",
+  "type": "순환기 — 초고령 여성의 가끔 건너뛰는 맥박",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-01",
+  "vignette": "An 89-year-old woman is brought to the clinic by her daughter because she has noticed an occasional 'skipped beat' for the past 2 months. She has had no chest pain, dyspnea, light-headedness, or syncope. She has hypertension controlled with amlodipine and takes no other medications. Pulse is 68/min with an occasional irregular beat; blood pressure is 134/76 mm Hg. Cardiac examination shows no murmurs or gallops. Serum potassium is 4.3 mEq/L, and serum magnesium is 2.0 mg/dL. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely cause of the irregular beat?",
+  "options": [
+   "Ventricular escape beat",
+   "Intermittent ventricular preexcitation",
+   "Premature ventricular contraction",
+   "Premature atrial contraction with aberrant conduction",
+   "Intermittent left bundle branch block"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: In the lead II rhythm strip, one beat in the middle comes early and is wide and bizarre, with a T wave pointing opposite to its main QRS deflection. No premature P wave precedes it, and the next sinus beat arrives on schedule, so the sinus rhythm is not reset and there is no pause — an interpolated premature ventricular contraction. All other beats are narrow sinus beats with a constant PR interval and mild sinus arrhythmia.\n- 원리: <b>Why a ventricular beat is wide</b>: an impulse that starts in ventricular muscle does not use the His–Purkinje system, so it spreads cell to cell and activation takes longer than 120 ms. Repolarization follows the same abnormal path in reverse order, which is why the T wave points opposite to the QRS (secondary ST–T change).<br> <b>Why no pause follows this beat</b>: a PVC usually does not enter the sinus node, so the sinus node keeps firing on time. If the next sinus P wave falls when the AV node is still refractory, it is blocked and a fully compensatory pause appears; if the PVC comes early enough and the sinus rate is slow, the next sinus impulse conducts normally and the PVC is simply <b>interpolated</b> between two sinus beats.<br> <b>Why this argues against an atrial origin</b>: a premature atrial impulse enters and resets the sinus node, shifting all later sinus beats. A beat that leaves the sinus schedule untouched did not come from the atria.\n- 비교: <table><thead><tr><th style=\"width:24%\">Look at</th><th style=\"width:38%\">PVC (answer)</th><th>PAC with aberrancy (closest distractor)</th></tr></thead><tbody> <tr><td>Before the wide beat</td><td><b>No premature P wave</b></td><td>An early P wave, often hidden in the preceding T wave</td></tr> <tr><td>QRS shape</td><td>Wide, bizarre, discordant T</td><td>Often RBBB-like with a normal initial deflection</td></tr> <tr><td>Next sinus beat</td><td><b>On schedule</b> (interpolated) or after a full compensatory pause</td><td>Reset — usually a less-than-compensatory pause</td></tr> </tbody></table> Search the preceding T wave for a hidden early P wave, then measure whether the sinus schedule was reset.\n- 오답 이유:\n  - (A) A ventricular escape beat would be correct if the wide beat came late, after a long pause caused by sinus arrest or AV block, rather than early.\n  - (B) Intermittent preexcitation would be correct if the wide beats had a short PR interval with a slurred delta wave and were not premature.\n  - (D) PAC with aberrancy would be correct if an early, differently shaped P wave preceded the wide beat and the following sinus beat came late because the sinus node was reset.\n  - (E) Intermittent LBBB would be correct if the wide beats were not premature, each followed an on-time sinus P wave with a normal PR interval, and showed a broad notched R in V6.\n- 함정: Calling every wide beat a bundle branch block or aberrancy — first check whether it is premature and whether a P wave drives it.\n- 학습목표: 리듬 스트립에서 조기 P파 없이 나타난 넓고 기이한 조기 박동과 그 뒤 동박동이 제때 오는 것을 삽입성 심실 기외수축으로 읽고 변행전도를 동반한 심방 기외수축과 가른다\n- 근거·출처: Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 16 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 251\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8579 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "In the lead II rhythm strip, one beat in the middle comes early and is wide and bizarre, with a T wave pointing opposite to its main QRS deflection. No premature P wave precedes it, and the next sinus beat arrives on schedule, so the sinus rhythm is not reset and there is no pause — an interpolated premature ventricular contraction. All other beats are narrow sinus beats with a constant PR interval and mild sinus arrhythmia."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a ventricular beat is wide</b>: an impulse that starts in ventricular muscle does not use the His–Purkinje system, so it spreads cell to cell and activation takes longer than 120 ms. Repolarization follows the same abnormal path in reverse order, which is why the T wave points opposite to the QRS (secondary ST–T change).<br> <b>Why no pause follows this beat</b>: a PVC usually does not enter the sinus node, so the sinus node keeps firing on time. If the next sinus P wave falls when the AV node is still refractory, it is blocked and a fully compensatory pause appears; if the PVC comes early enough and the sinus rate is slow, the next sinus impulse conducts normally and the PVC is simply <b>interpolated</b> between two sinus beats.<br> <b>Why this argues against an atrial origin</b>: a premature atrial impulse enters and resets the sinus node, shifting all later sinus beats. A beat that leaves the sinus schedule untouched did not come from the atria."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Look at</th><th style=\"width:38%\">PVC (answer)</th><th>PAC with aberrancy (closest distractor)</th></tr></thead><tbody> <tr><td>Before the wide beat</td><td><b>No premature P wave</b></td><td>An early P wave, often hidden in the preceding T wave</td></tr> <tr><td>QRS shape</td><td>Wide, bizarre, discordant T</td><td>Often RBBB-like with a normal initial deflection</td></tr> <tr><td>Next sinus beat</td><td><b>On schedule</b> (interpolated) or after a full compensatory pause</td><td>Reset — usually a less-than-compensatory pause</td></tr> </tbody></table> Search the preceding T wave for a hidden early P wave, then measure whether the sinus schedule was reset."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A ventricular escape beat would be correct if the wide beat came late, after a long pause caused by sinus arrest or AV block, rather than early.\n(B) Intermittent preexcitation would be correct if the wide beats had a short PR interval with a slurred delta wave and were not premature.\n(D) PAC with aberrancy would be correct if an early, differently shaped P wave preceded the wide beat and the following sinus beat came late because the sinus node was reset.\n(E) Intermittent LBBB would be correct if the wide beats were not premature, each followed an on-time sinus P wave with a normal PR interval, and showed a broad notched R in V6."
+   },
+   {
+    "k": "함정",
+    "v": "Calling every wide beat a bundle branch block or aberrancy — first check whether it is premature and whether a P wave drives it."
+   },
+   {
+    "k": "학습목표",
+    "v": "리듬 스트립에서 조기 P파 없이 나타난 넓고 기이한 조기 박동과 그 뒤 동박동이 제때 오는 것을 삽입성 심실 기외수축으로 읽고 변행전도를 동반한 심방 기외수축과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography: A Simplified Approach, 10th ed. Elsevier; 2023. Chapter 16 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 251 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8579 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "조기 P파 없이 온 넓고 기이한 조기 박동 뒤에 동박동이 제때 오면 삽입성 심실 기외수축이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "변행전도 심방 기외수축은 앞에 조기 P파가 있고 동결절을 재설정해 뒤 박동이 늦어진다 — 이 기록은 조기 P파가 없고 동리듬 시간표가 그대로다",
+   "steps": 2,
+   "chain": [
+    "영상: II 리듬 스트립 가운데의 넓고 기이한 조기 박동, T파가 QRS 와 반대, 앞에 조기 P파 없음 → 심실 기원",
+    "다음 동박동이 제때 옴(쉼 없음) → 동결절 재설정 없음 → 삽입성 심실 기외수축"
+   ],
+   "key": [
+    {
+     "item": "영상: 리듬 스트립 가운데의 넓고 기이한 조기 박동과 반대 방향 T파",
+     "why": "심실에서 시작해 전도계를 타지 않은 박동",
+     "also": []
+    },
+    {
+     "item": "영상: 다음 동박동이 제때 와서 쉼이 없음",
+     "why": "동결절이 재설정되지 않음 — 심방 기원이 아니다",
+     "also": []
+    },
+    {
+     "item": "an occasional irregular beat",
+     "why": "드문 단발 조기 박동",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum potassium is 4.3 mEq/L",
+     "why": "저칼륨혈증에 의한 이소성 박동 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no chest pain, dyspnea, light-headedness, or syncope",
+     "why": "증상이 경하다 — 판독 후 처치 강도를 정할 정보",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "hypertension controlled with amlodipine",
+     "why": "흔한 배경이며 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "리듬 스트립 가운데의 넓고 기이한 조기 박동은 앞에 조기 P파가 없고, 다음 동박동이 제때 와서 쉼이 없다. 동결절이 재설정되지 않았으니 심실 기원 — 삽입성 심실 기외수축이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "넓은 박동 앞의 T파 속에 조기 P파가 숨어 있고 다음 동박동이 늦게 온다면 변행전도 심방 기외수축"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0507.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/08000/#files-panel",
+   "asset_id": "PTBXL-08579",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8579"
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0506",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "신장·비뇨 — 검진에서 우연히 발견된 신장 고형 종괴",
+  "type": "신장·비뇨 — 검진에서 우연히 발견된 신장 고형 종괴",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-01",
+  "vignette": "59세 남자가 건강검진 복부 초음파에서 왼쪽 신장 종괴가 발견되어 비뇨의학과에 왔다. 증상은 없고 육안적 혈뇨나 옆구리 통증은 없었다. 고혈압으로 약을 먹고 있다. 신체 진찰에서 만져지는 종괴는 없다. 혈청 크레아티닌 0.9 mg/dL 이고 소변검사에서 적혈구는 없다. 복부 조영증강 CT 동맥기 영상은 그림과 같다. 종괴의 최대 지름은 3.4 cm 이고 반대쪽 신장은 정상이며 신정맥 침범이나 커진 림프절은 없다. 흉부 CT 에서 폐 결절은 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "6개월 뒤 초음파 추적 관찰",
+   "부분 신장절제술",
+   "근치적 신장절제술",
+   "경피적 신장 생검 후 경과 관찰",
+   "수니티닙 경구 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: CT 에서 왼쪽 신장 앞쪽에 피질처럼 강하게, 그러나 불균질하게 조영증강되는 고형 종괴가 있다. 지방이 없는 조영증강 고형 신장 종괴는 신세포암을 먼저 생각한다(이 종괴는 수술 병리로 투명세포 신세포암 pT1a 가 확인되었다). 4 cm 이하이고 정맥 침범·림프절·원격 전이가 없으므로 cT1a 이며, 이때 표준 치료는 종양학적 결과가 근치적 절제와 같으면서 신장 기능을 보존하는 부분 신장절제술이다. 고혈압이 있어 이후 만성 신장병 위험이 있다는 점도 신장 보존 쪽을 지지한다.\n- 원리: <b>왜 조영증강이 핵심인가</b>: 신장 종괴는 먼저 낭성인지 고형인지, 그리고 조영 후 감쇠값이 15~20 HU 이상 오르는지(혈관이 있는 조직인지)로 가른다. 지방(−10 HU 이하)이 보이면 혈관근지방종이고, 지방 없이 조영되는 고형 종괴는 80~90 % 가 신세포암이다. 투명세포형은 혈관이 풍부해 동맥기에 강하고 불균질하게(괴사·출혈 부위가 섞여) 조영된다.<br> <b>왜 작은 종양은 부분절제인가</b>: 근치적 절제는 신장 하나를 통째로 없애 신원(nephron) 수를 절반으로 줄이고, 그 뒤 만성 신장병과 심혈관 사건 위험이 늘어난다. T1a 종양에서 부분절제는 국소 재발·암 특이 생존이 근치적 절제와 같으므로, 기술적으로 가능하면 신장 보존이 원칙이다.<br> <b>왜 생검이 기본이 아닌가</b>: 영상이 전형적이고 수술할 계획이면 생검 결과가 치료를 바꾸지 않는다. 생검은 감시·국소 소작을 고를 때나 림프종·전이암을 의심할 때 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">고려점</th><th style=\"width:39%\">부분 신장절제술(정답)</th><th>근치적 신장절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>cT1a(≤ 4 cm)</b>, 기술적으로 가능한 위치</td><td>큰 종양(T2 이상)·신문 중심부·정맥 혈전</td></tr> <tr><td>암 조절</td><td>T1a 에서 근치적과 같음</td><td>같음</td></tr> <tr><td>신기능</td><td>신원 보존 → 만성 신장병 위험 낮음</td><td>신장 하나를 잃음</td></tr> <tr><td>대가</td><td>출혈·소변 누출 위험이 조금 더</td><td>수술은 단순</td></tr> </tbody></table> 작고 접근 가능한 종양이면 신장 보존, 크거나 중심부·정맥 침범이면 근치적 절제 — 크기와 위치가 선택을 정한다.\n- 오답 이유:\n  - ① 초음파 추적 관찰은 2 cm 미만의 작은 종괴이거나 기대여명이 짧아 능동 감시를 택할 때 정답이 된다.\n  - ③ 근치적 신장절제술은 종양이 크거나(대개 7 cm 초과) 신문 중심부를 채워 부분절제가 기술적으로 어렵거나 신정맥 혈전이 있을 때 정답이 된다.\n  - ④ 생검 후 관찰은 고령·동반질환으로 수술 위험이 크거나 영상이 비전형적이어서 림프종·전이암을 배제해야 할 때 정답에 가까워진다.\n  - ⑤ 수니티닙 같은 표적 치료는 원격 전이가 있는 진행성 투명세포 신세포암일 때 정답이 된다 — 국소 T1a 에는 쓰지 않는다.\n- 함정: 「암이면 신장을 통째로」라고 생각해 근치적 절제를 고르는 것 — T1a 는 신장 보존이 표준이다.\n- 학습목표: 조영 CT 에서 강하게 불균질 조영되는 4 cm 이하의 신장 고형 종괴(cT1a)를 신세포암으로 보고 신장 보존 부분절제술을 선택한다\n- 근거·출처: Campbell SC, Clark PE, Chang SS, et al. Renal Mass and Localized Renal Cancer: Evaluation, Management, and Follow-Up: AUA Guideline: Part I. J Urol. 2021;206(2):199-208. PMID: 34115547 · Partin AW, Dmochowski RR, Kavoussi LR, Peters CA. Campbell-Walsh-Wein Urology, 12th ed. Elsevier; 2020. Chapter: Malignant Renal Tumors\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00015 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 왼쪽 신장 앞쪽에 피질처럼 강하게, 그러나 불균질하게 조영증강되는 고형 종괴가 있다. 지방이 없는 조영증강 고형 신장 종괴는 신세포암을 먼저 생각한다(이 종괴는 수술 병리로 투명세포 신세포암 pT1a 가 확인되었다). 4 cm 이하이고 정맥 침범·림프절·원격 전이가 없으므로 cT1a 이며, 이때 표준 치료는 종양학적 결과가 근치적 절제와 같으면서 신장 기능을 보존하는 부분 신장절제술이다. 고혈압이 있어 이후 만성 신장병 위험이 있다는 점도 신장 보존 쪽을 지지한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 조영증강이 핵심인가</b>: 신장 종괴는 먼저 낭성인지 고형인지, 그리고 조영 후 감쇠값이 15~20 HU 이상 오르는지(혈관이 있는 조직인지)로 가른다. 지방(−10 HU 이하)이 보이면 혈관근지방종이고, 지방 없이 조영되는 고형 종괴는 80~90 % 가 신세포암이다. 투명세포형은 혈관이 풍부해 동맥기에 강하고 불균질하게(괴사·출혈 부위가 섞여) 조영된다.<br> <b>왜 작은 종양은 부분절제인가</b>: 근치적 절제는 신장 하나를 통째로 없애 신원(nephron) 수를 절반으로 줄이고, 그 뒤 만성 신장병과 심혈관 사건 위험이 늘어난다. T1a 종양에서 부분절제는 국소 재발·암 특이 생존이 근치적 절제와 같으므로, 기술적으로 가능하면 신장 보존이 원칙이다.<br> <b>왜 생검이 기본이 아닌가</b>: 영상이 전형적이고 수술할 계획이면 생검 결과가 치료를 바꾸지 않는다. 생검은 감시·국소 소작을 고를 때나 림프종·전이암을 의심할 때 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">고려점</th><th style=\"width:39%\">부분 신장절제술(정답)</th><th>근치적 신장절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>cT1a(≤ 4 cm)</b>, 기술적으로 가능한 위치</td><td>큰 종양(T2 이상)·신문 중심부·정맥 혈전</td></tr> <tr><td>암 조절</td><td>T1a 에서 근치적과 같음</td><td>같음</td></tr> <tr><td>신기능</td><td>신원 보존 → 만성 신장병 위험 낮음</td><td>신장 하나를 잃음</td></tr> <tr><td>대가</td><td>출혈·소변 누출 위험이 조금 더</td><td>수술은 단순</td></tr> </tbody></table> 작고 접근 가능한 종양이면 신장 보존, 크거나 중심부·정맥 침범이면 근치적 절제 — 크기와 위치가 선택을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 초음파 추적 관찰은 2 cm 미만의 작은 종괴이거나 기대여명이 짧아 능동 감시를 택할 때 정답이 된다.\n③ 근치적 신장절제술은 종양이 크거나(대개 7 cm 초과) 신문 중심부를 채워 부분절제가 기술적으로 어렵거나 신정맥 혈전이 있을 때 정답이 된다.\n④ 생검 후 관찰은 고령·동반질환으로 수술 위험이 크거나 영상이 비전형적이어서 림프종·전이암을 배제해야 할 때 정답에 가까워진다.\n⑤ 수니티닙 같은 표적 치료는 원격 전이가 있는 진행성 투명세포 신세포암일 때 정답이 된다 — 국소 T1a 에는 쓰지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "「암이면 신장을 통째로」라고 생각해 근치적 절제를 고르는 것 — T1a 는 신장 보존이 표준이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영 CT 에서 강하게 불균질 조영되는 4 cm 이하의 신장 고형 종괴(cT1a)를 신세포암으로 보고 신장 보존 부분절제술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Campbell SC, Clark PE, Chang SS, et al. Renal Mass and Localized Renal Cancer: Evaluation, Management, and Follow-Up: AUA Guideline: Part I. J Urol. 2021;206(2):199-208. PMID: 34115547 · Partin AW, Dmochowski RR, Kavoussi LR, Peters CA. Campbell-Walsh-Wein Urology, 12th ed. Elsevier; 2020. Chapter: Malignant Renal Tumors ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00015 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "4 cm 이하의 국소 조영증강 고형 신장 종괴(cT1a)는 부분 신장절제술로 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "근치적 절제는 큰 종양·중심부 위치·정맥 침범일 때 — 이 종괴는 3.4 cm 이고 침범·전이가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 신장 앞쪽의 불균질하게 강하게 조영되는 고형 종괴 → 신세포암을 먼저 생각",
+    "3.4 cm·정맥 침범·림프절·전이 없음 → cT1a → 신장 보존 부분절제"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 신장의 불균질하게 강하게 조영증강되는 고형 종괴",
+     "why": "지방 없는 조영 고형 종괴 = 신세포암 의심",
+     "also": []
+    },
+    {
+     "item": "종괴의 최대 지름은 3.4 cm",
+     "why": "4 cm 이하 — T1a",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉부 CT 에서 폐 결절은 없다",
+     "why": "전이 가능성을 낮춰 전신 치료 대상이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "신정맥 침범이나 커진 림프절은 없다",
+     "why": "국소 병기 — 근치적 절제의 이유가 없다",
+     "also": []
+    },
+    {
+     "item": "고혈압으로 약을 먹고 있다",
+     "why": "만성 신장병 위험 — 신장 보존의 이점이 크다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 크레아티닌 0.9 mg/dL",
+     "why": "현재 신기능 정상 — 선택을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "지방 없이 강하게 조영되는 3.4 cm 고형 신장 종괴는 신세포암 cT1a 로 본다. 전이·침범이 없으므로 신장을 보존하는 부분 신장절제술이 표준이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "종괴가 신문 중심부를 채워 부분절제가 기술적으로 어렵거나 8 cm 이고 신정맥 혈전이 있다면 근치적 신장절제술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0506.png",
+   "caption": "복부 조영증강 CT 동맥기 축상면 1장, 연부조직 창 (TCIA, CC BY 3.0 — 크롭·보정 없음, 분할선 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.135561535915374715293148075351",
+   "asset_id": "TCIA-KITS-00015_32442622",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00015"
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0505",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "호흡기 — 기계환기 중인 바이러스 폐렴 환자의 산소화 지표",
+  "type": "호흡기 — 기계환기 중인 바이러스 폐렴 환자의 산소화 지표",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-01",
+  "vignette": "56세 남자가 일주일 전부터 열과 기침이 있다가 사흘 전부터 숨이 차서 입원하였다. 입원 둘째 날 저산소혈증이 심해져 기관삽관 후 기계환기를 시작하였다. 고혈압 외에 다른 병력은 없다. 체온 38.4℃, 혈압 118/72 mmHg, 맥박 104회/분이다. 양쪽 폐에서 수포음이 들린다. 호기말양압 10 cmH₂O, 흡입산소분율 0.6 에서 측정한 동맥혈 PaO₂ 는 90 mmHg 이다. 심초음파에서 좌심실 박출률은 60 % 이고 좌심방 확장은 없다. 흉부 X선은 그림과 같다.",
+  "question": "이 환자 상태의 분류로 가장 적절한 것은?",
+  "options": [
+   "경증 급성호흡곤란증후군",
+   "중등도 급성호흡곤란증후군",
+   "중증 급성호흡곤란증후군",
+   "심인성 폐부종",
+   "수혈 관련 급성 폐손상"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 폐에 넓은 반점·융합성 음영이 있고(오른쪽 중하폐야와 왼쪽 중폐야 바깥쪽이 두드러짐), 증상은 1주 안에 악화되었으며, 좌심실 박출률 60 %·좌심방 확장 없음으로 심부전이나 수액 과다만으로 설명되지 않는다 — 급성호흡곤란증후군(Berlin 정의)의 조건을 갖춘다. 중증도는 호기말양압 5 cmH₂O 이상에서 PaO₂/FiO₂ 로 나눈다. 90 ÷ 0.6 = 150 으로 100 초과 200 이하이므로 중등도다.\n- 원리: <b>왜 PaO₂ 만이 아니라 PaO₂/FiO₂ 인가</b>: 같은 PaO₂ 90 mmHg 라도 실내 공기(FiO₂ 0.21)에서라면 비율 430 으로 정상이고, FiO₂ 0.6 이 필요하다면 폐포에 들어간 산소가 혈액으로 넘어가지 못하는 정도가 크다는 뜻이다. 비율은 산소를 얼마나 주고 있는지를 보정해 <b>폐의 산소화 장애 자체</b>를 나타낸다.<br> <b>왜 호기말양압 조건이 붙는가</b>: 호기말양압은 허탈된 폐포를 열어 두어 PaO₂ 를 크게 바꾼다. 같은 환자도 호기말양압 0 과 10 에서 비율이 전혀 다르므로, 정의는 「최소 5 cmH₂O 를 준 상태」로 측정 조건을 고정한다.<br> <b>왜 심기능을 따로 확인하는가</b>: 정수압이 높아 생긴 폐부종도 양측 음영과 저산소혈증을 만든다. ARDS 는 폐포-모세혈관 막의 투과성이 높아진 비심인성 부종이므로, 위험 요인이 분명하지 않거나 심부전을 의심할 때는 심초음파로 정수압성 부종을 객관적으로 배제해야 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">PaO₂/FiO₂ (PEEP ≥ 5)</th><th style=\"width:38%\">중등도(정답)</th><th>중증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기준</td><td><b>100 초과 ~ 200 이하</b></td><td>100 이하</td></tr> <tr><td>이 환자</td><td>90 ÷ 0.6 = <b>150</b></td><td>PaO₂ 가 60 mmHg 미만이어야 FiO₂ 0.6 에서 100 이하</td></tr> <tr><td>뜻</td><td>폐보호 환기·충분한 호기말양압</td><td>복와위·근이완제·ECMO 검토</td></tr> </tbody></table> FiO₂ 를 백분율(60)로 넣어 1.5 를 얻는 실수가 「중증」으로 끌려가는 흔한 경로다 — 반드시 소수(0.6)로 나눈다.\n- 오답 이유:\n  - ① 경증은 호기말양압 5 이상에서 PaO₂/FiO₂ 가 200 초과 300 이하일 때, 예컨대 같은 FiO₂ 0.6 에서 PaO₂ 가 150 mmHg 일 때 정답이다.\n  - ③ 중증은 PaO₂/FiO₂ 가 100 이하일 때, 곧 같은 설정에서 PaO₂ 가 60 mmHg 미만으로 떨어졌을 때 정답이 된다.\n  - ④ 심인성 폐부종은 좌심실 박출률이 낮거나 좌심방 확장·이완기 충만압 상승이 있고 심장 비대·나비 모양 음영이 보일 때 정답이 된다.\n  - ⑤ 수혈 관련 급성 폐손상은 수혈 중이나 수혈 6시간 안에 양측 음영과 저산소혈증이 새로 생겼을 때만 정답이 된다.\n- 함정: FiO₂ 를 60 으로 나누거나 PaO₂ 만 보고 「90 이면 괜찮다」고 판단하는 것 — 비율은 90/0.6 = 150 이다.\n- 학습목표: 양측 폐 음영·1주 이내 발병·심기능 정상인 기계환기 환자에서 호기말양압 5 이상일 때 PaO₂/FiO₂ 로 급성호흡곤란증후군의 중증도를 분류한다\n- 근거·출처: ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA. 2012;307(23):2526-2533. PMID: 22797452 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 301: Acute Respiratory Distress Syndrome\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …84640493 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 폐에 넓은 반점·융합성 음영이 있고(오른쪽 중하폐야와 왼쪽 중폐야 바깥쪽이 두드러짐), 증상은 1주 안에 악화되었으며, 좌심실 박출률 60 %·좌심방 확장 없음으로 심부전이나 수액 과다만으로 설명되지 않는다 — 급성호흡곤란증후군(Berlin 정의)의 조건을 갖춘다. 중증도는 호기말양압 5 cmH₂O 이상에서 PaO₂/FiO₂ 로 나눈다. 90 ÷ 0.6 = 150 으로 100 초과 200 이하이므로 중등도다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 PaO₂ 만이 아니라 PaO₂/FiO₂ 인가</b>: 같은 PaO₂ 90 mmHg 라도 실내 공기(FiO₂ 0.21)에서라면 비율 430 으로 정상이고, FiO₂ 0.6 이 필요하다면 폐포에 들어간 산소가 혈액으로 넘어가지 못하는 정도가 크다는 뜻이다. 비율은 산소를 얼마나 주고 있는지를 보정해 <b>폐의 산소화 장애 자체</b>를 나타낸다.<br> <b>왜 호기말양압 조건이 붙는가</b>: 호기말양압은 허탈된 폐포를 열어 두어 PaO₂ 를 크게 바꾼다. 같은 환자도 호기말양압 0 과 10 에서 비율이 전혀 다르므로, 정의는 「최소 5 cmH₂O 를 준 상태」로 측정 조건을 고정한다.<br> <b>왜 심기능을 따로 확인하는가</b>: 정수압이 높아 생긴 폐부종도 양측 음영과 저산소혈증을 만든다. ARDS 는 폐포-모세혈관 막의 투과성이 높아진 비심인성 부종이므로, 위험 요인이 분명하지 않거나 심부전을 의심할 때는 심초음파로 정수압성 부종을 객관적으로 배제해야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">PaO₂/FiO₂ (PEEP ≥ 5)</th><th style=\"width:38%\">중등도(정답)</th><th>중증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기준</td><td><b>100 초과 ~ 200 이하</b></td><td>100 이하</td></tr> <tr><td>이 환자</td><td>90 ÷ 0.6 = <b>150</b></td><td>PaO₂ 가 60 mmHg 미만이어야 FiO₂ 0.6 에서 100 이하</td></tr> <tr><td>뜻</td><td>폐보호 환기·충분한 호기말양압</td><td>복와위·근이완제·ECMO 검토</td></tr> </tbody></table> FiO₂ 를 백분율(60)로 넣어 1.5 를 얻는 실수가 「중증」으로 끌려가는 흔한 경로다 — 반드시 소수(0.6)로 나눈다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경증은 호기말양압 5 이상에서 PaO₂/FiO₂ 가 200 초과 300 이하일 때, 예컨대 같은 FiO₂ 0.6 에서 PaO₂ 가 150 mmHg 일 때 정답이다.\n③ 중증은 PaO₂/FiO₂ 가 100 이하일 때, 곧 같은 설정에서 PaO₂ 가 60 mmHg 미만으로 떨어졌을 때 정답이 된다.\n④ 심인성 폐부종은 좌심실 박출률이 낮거나 좌심방 확장·이완기 충만압 상승이 있고 심장 비대·나비 모양 음영이 보일 때 정답이 된다.\n⑤ 수혈 관련 급성 폐손상은 수혈 중이나 수혈 6시간 안에 양측 음영과 저산소혈증이 새로 생겼을 때만 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "FiO₂ 를 60 으로 나누거나 PaO₂ 만 보고 「90 이면 괜찮다」고 판단하는 것 — 비율은 90/0.6 = 150 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "양측 폐 음영·1주 이내 발병·심기능 정상인 기계환기 환자에서 호기말양압 5 이상일 때 PaO₂/FiO₂ 로 급성호흡곤란증후군의 중증도를 분류한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA. 2012;307(23):2526-2533. PMID: 22797452 · Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 301: Acute Respiratory Distress Syndrome ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …84640493 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "양측 음영·1주 이내 발병·심기능 정상에서 PEEP 10 의 PaO₂/FiO₂ 150 은 중등도 ARDS 다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "중증은 PaO₂/FiO₂ ≤ 100 — 이 환자는 90 ÷ 0.6 = 150 이다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 폐의 넓은 음영 + 1주 안의 악화 + 박출률 정상 → ARDS 조건 충족",
+    "PEEP 10 에서 PaO₂/FiO₂ = 90 ÷ 0.6 = 150 → 100 초과 200 이하 → 중등도"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐의 넓은 반점·융합성 음영",
+     "why": "ARDS 의 양측 음영 조건",
+     "also": []
+    },
+    {
+     "item": "일주일 전부터 열과 기침",
+     "why": "1주 안의 발병 — 시간 조건",
+     "also": []
+    },
+    {
+     "item": "호기말양압 10 cmH₂O",
+     "why": "PEEP ≥ 5 측정 조건을 충족",
+     "also": []
+    },
+    {
+     "item": "흡입산소분율 0.6",
+     "why": "비율의 분모",
+     "also": []
+    },
+    {
+     "item": "PaO₂ 는 90 mmHg",
+     "why": "비율의 분자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 박출률은 60 %",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압",
+     "why": "흔한 배경이며 분류를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "양측 음영·1주 이내 발병·심기능 정상으로 ARDS 이고, PEEP 10 에서 PaO₂/FiO₂ 는 90 ÷ 0.6 = 150 이다. 100 초과 200 이하라 중등도다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 설정에서 PaO₂ 가 55 mmHg(비율 약 92)였다면 중증 ARDS 로 분류한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0505.png",
+   "caption": "휴대용 반좌위 전후 흉부 X선, 위치·방향 글자는 원본의 것 (TCIA, CC BY 4.0 — 크롭·보정 없음, 심전도 전극·관이 겹쳐 보임)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1636494065113696494148784640493",
+   "asset_id": "TCIA-COVID19_AR-71328909370802",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …84640493"
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0513",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "예방의학 — 두 선별검사가 모두 양성일 때의 양성예측도",
+  "type": "예방의학 — 두 선별검사가 모두 양성일 때의 양성예측도",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-01",
+  "vignette": "55세 남자가 건강검진에서 대장암 선별용 혈액 검사 A 가 양성으로 나와 외래에 왔다. 증상은 없고 대장암 가족력도 없다. 이 연령대 무증상 성인의 대장암 유병률은 2 % 이고, 검사 A 의 민감도는 90 %, 특이도는 95 % 이다. 의사가 같은 날 채취한 혈액으로 원리가 다른 검사 B(민감도 90 %, 특이도 95 %)를 추가로 시행하였고 역시 양성이었다. 질병 유무가 같을 때 두 검사의 결과는 서로 독립이라고 가정한다.",
+  "question": "이 남자가 실제로 대장암일 확률에 가장 가까운 것은?",
+  "options": [
+   "87 %",
+   "27 %",
+   "50 %",
+   "81 %",
+   "99 %"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 10,000명으로 계산한다. 환자 200명 중 검사 A 양성은 180명, 비환자 9,800명 중 위양성은 490명이므로 A 양성의 양성예측도는 180/670 ≈ 27 % 다. 검사 B 는 독립이므로 A 양성 670명에 다시 적용한다 — 환자 180명 중 162명, 비환자 490명 중 24.5명이 B 양성이다. 두 검사 모두 양성인 사람 중 환자의 비율은 162/186.5 ≈ 87 % 다. 같은 식으로, 사전 확률 27 % 가 2차 검사의 사후 확률 계산에서 새 「유병률」이 된다.\n- 원리: <b>왜 같은 검사라도 양성예측도가 낮은가</b>: 양성예측도는 검사 성능만이 아니라 검사받는 집단의 유병률에 달려 있다. 유병률 2 % 에서는 비환자가 49배 많아서, 특이도 95 % 의 위양성 5 % 만으로도 비환자 쪽 양성(490명)이 환자 쪽 양성(180명)보다 훨씬 많다.<br> <b>왜 2차 검사가 확률을 크게 올리는가</b>: 1차 양성 집단은 유병률이 27 % 인 새로운 집단이다. 이 집단에 두 번째 독립 검사를 하면 위양성이 다시 5 % 로 걸러져 490명 → 24.5명으로 줄고, 환자는 90 % 가 남는다. 직렬 검사(둘 다 양성이어야 양성)는 <b>특이도를 높이고 민감도를 낮춘다</b>(민감도 0.9 × 0.9 = 81 %).<br> <b>왜 독립 가정이 필요한가</b>: 두 검사가 같은 원리(같은 표지자)를 보면 위양성이 같은 사람에게 겹쳐 생겨 2차 검사가 위양성을 걸러 내지 못한다. 실제로는 원리가 다른 검사를 짝지어야 이 계산에 가까워진다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구하는 값</th><th style=\"width:38%\">두 검사 모두 양성의 양성예측도(정답)</th><th>1차 검사만의 양성예측도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>환자 중 양성</td><td>200 × 0.9 × 0.9 = 162</td><td>200 × 0.9 = 180</td></tr> <tr><td>비환자 중 양성</td><td>9,800 × 0.05 × 0.05 = 24.5</td><td>9,800 × 0.05 = 490</td></tr> <tr><td>양성예측도</td><td><b>162 / 186.5 ≈ 87 %</b></td><td>180 / 670 ≈ 27 %</td></tr> </tbody></table> 81 % 는 직렬 검사의 민감도(0.9 × 0.9)이고 양성예측도가 아니다 — 무엇을 분모로 두는지 먼저 정한다.\n- 오답 이유:\n  - ② 27 % 는 검사 A 하나만 양성일 때의 양성예측도로, 검사 B 를 시행하지 않았거나 B 가 A 와 완전히 같은 결과를 주는 검사일 때 정답이 된다.\n  - ③ 50 % 는 유병률을 고려하지 않고 「양성이면 반반」으로 직관할 때 나오는 값으로, 환자와 비환자 쪽 양성 수가 같을 때만 정답이 된다.\n  - ④ 81 % 는 두 검사를 직렬로 시행했을 때의 민감도(0.9 × 0.9)로, 환자 중 두 검사 모두 양성인 비율을 묻는 문항일 때 정답이 된다.\n  - ⑤ 99 % 는 두 검사 모두 음성일 때 대장암이 아닐 확률(음성예측도)에 가까운 값으로, 음성 결과의 해석을 물을 때 정답에 가깝다.\n- 함정: 특이도 95 % 면 양성일 때 95 % 암이라고 생각하거나, 직렬 민감도 81 % 를 양성예측도로 착각하는 것.\n- 학습목표: 유병률·민감도·특이도로 1차 양성예측도를 구하고, 독립인 2차 검사 양성을 더해 사후 확률(양성예측도)을 다시 계산한다\n- 근거·출처: Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019. Chapter 5: Assessing the Validity and Reliability of Diagnostic and Screening Tests · Fletcher GS. Clinical Epidemiology: The Essentials, 6th ed. Wolters Kluwer; 2020. Chapter 8: Diagnosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "10,000명으로 계산한다. 환자 200명 중 검사 A 양성은 180명, 비환자 9,800명 중 위양성은 490명이므로 A 양성의 양성예측도는 180/670 ≈ 27 % 다. 검사 B 는 독립이므로 A 양성 670명에 다시 적용한다 — 환자 180명 중 162명, 비환자 490명 중 24.5명이 B 양성이다. 두 검사 모두 양성인 사람 중 환자의 비율은 162/186.5 ≈ 87 % 다. 같은 식으로, 사전 확률 27 % 가 2차 검사의 사후 확률 계산에서 새 「유병률」이 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 같은 검사라도 양성예측도가 낮은가</b>: 양성예측도는 검사 성능만이 아니라 검사받는 집단의 유병률에 달려 있다. 유병률 2 % 에서는 비환자가 49배 많아서, 특이도 95 % 의 위양성 5 % 만으로도 비환자 쪽 양성(490명)이 환자 쪽 양성(180명)보다 훨씬 많다.<br> <b>왜 2차 검사가 확률을 크게 올리는가</b>: 1차 양성 집단은 유병률이 27 % 인 새로운 집단이다. 이 집단에 두 번째 독립 검사를 하면 위양성이 다시 5 % 로 걸러져 490명 → 24.5명으로 줄고, 환자는 90 % 가 남는다. 직렬 검사(둘 다 양성이어야 양성)는 <b>특이도를 높이고 민감도를 낮춘다</b>(민감도 0.9 × 0.9 = 81 %).<br> <b>왜 독립 가정이 필요한가</b>: 두 검사가 같은 원리(같은 표지자)를 보면 위양성이 같은 사람에게 겹쳐 생겨 2차 검사가 위양성을 걸러 내지 못한다. 실제로는 원리가 다른 검사를 짝지어야 이 계산에 가까워진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구하는 값</th><th style=\"width:38%\">두 검사 모두 양성의 양성예측도(정답)</th><th>1차 검사만의 양성예측도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>환자 중 양성</td><td>200 × 0.9 × 0.9 = 162</td><td>200 × 0.9 = 180</td></tr> <tr><td>비환자 중 양성</td><td>9,800 × 0.05 × 0.05 = 24.5</td><td>9,800 × 0.05 = 490</td></tr> <tr><td>양성예측도</td><td><b>162 / 186.5 ≈ 87 %</b></td><td>180 / 670 ≈ 27 %</td></tr> </tbody></table> 81 % 는 직렬 검사의 민감도(0.9 × 0.9)이고 양성예측도가 아니다 — 무엇을 분모로 두는지 먼저 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 27 % 는 검사 A 하나만 양성일 때의 양성예측도로, 검사 B 를 시행하지 않았거나 B 가 A 와 완전히 같은 결과를 주는 검사일 때 정답이 된다.\n③ 50 % 는 유병률을 고려하지 않고 「양성이면 반반」으로 직관할 때 나오는 값으로, 환자와 비환자 쪽 양성 수가 같을 때만 정답이 된다.\n④ 81 % 는 두 검사를 직렬로 시행했을 때의 민감도(0.9 × 0.9)로, 환자 중 두 검사 모두 양성인 비율을 묻는 문항일 때 정답이 된다.\n⑤ 99 % 는 두 검사 모두 음성일 때 대장암이 아닐 확률(음성예측도)에 가까운 값으로, 음성 결과의 해석을 물을 때 정답에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "특이도 95 % 면 양성일 때 95 % 암이라고 생각하거나, 직렬 민감도 81 % 를 양성예측도로 착각하는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "유병률·민감도·특이도로 1차 양성예측도를 구하고, 독립인 2차 검사 양성을 더해 사후 확률(양성예측도)을 다시 계산한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019. Chapter 5: Assessing the Validity and Reliability of Diagnostic and Screening Tests · Fletcher GS. Clinical Epidemiology: The Essentials, 6th ed. Wolters Kluwer; 2020. Chapter 8: Diagnosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "1차 양성의 양성예측도를 새 사전 확률로 두고 독립인 2차 양성을 적용하면 양성예측도는 약 87 % 다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "27 % 는 1차 검사만의 양성예측도 — 2차 검사 양성이 위양성을 5 % 로 다시 걸러 낸다",
+   "steps": 3,
+   "chain": [
+    "10,000명: 환자 200 중 A 양성 180, 비환자 9,800 중 위양성 490 → 1차 양성예측도 27 %",
+    "A 양성 집단에 B 적용: 환자 180 × 0.9 = 162, 비환자 490 × 0.05 = 24.5",
+    "162 ÷ 186.5 ≈ 87 %"
+   ],
+   "key": [
+    {
+     "item": "유병률은 2 %",
+     "why": "사전 확률 — 계산의 출발점",
+     "also": []
+    },
+    {
+     "item": "민감도는 90 %",
+     "why": "환자 중 양성 비율",
+     "also": []
+    },
+    {
+     "item": "특이도는 95 %",
+     "why": "비환자 중 위양성 5 %",
+     "also": []
+    },
+    {
+     "item": "서로 독립이라고 가정한다",
+     "why": "두 확률을 곱할 수 있는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "대장암 가족력도 없다",
+     "why": "평균 위험군 — 유병률 2 % 를 그대로 쓸 근거",
+     "also": []
+    }
+   ],
+   "summary": "유병률 2 % 에서 검사 A 양성의 양성예측도는 27 % 다. 이를 새 사전 확률로 두고 독립 검사 B 양성을 적용하면 162 ÷ 186.5 ≈ 87 % 가 된다.",
+   "switch": {
+    "choice": "B",
+    "condition": "검사 B 를 하지 않고 검사 A 양성만으로 대장암일 확률을 묻는다면 약 27 %"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0512",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "정신 — 할로페리돌 증량 뒤 생긴 고열과 근육 강직",
+  "type": "정신 — 할로페리돌 증량 뒤 생긴 고열과 근육 강직",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-01",
+  "vignette": "A 34-year-old man is brought to the emergency department because of confusion and fever for 1 day. He has schizophrenia, and 4 days ago his haloperidol dose was increased because of worsening agitation. He takes no other medications and does not use illicit drugs. Temperature is 40.1°C (104.2°F), pulse is 122/min, respirations are 24/min, and blood pressure is 168/98 mm Hg. He is diaphoretic and disoriented. There is generalized lead-pipe rigidity of the extremities. Deep tendon reflexes are 1+ and symmetric, and there is no clonus. Pupils are 4 mm and reactive to light. Bowel sounds are normal. The neck is stiff in all directions of movement. Serum creatine kinase is 18,400 U/L, and leukocyte count is 14,200/mm3.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Malignant hyperthermia",
+   "Anticholinergic toxicity",
+   "Bacterial meningitis",
+   "Neuroleptic malignant syndrome",
+   "Serotonin syndrome"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Days after a haloperidol dose increase, he has the tetrad of neuroleptic malignant syndrome: hyperthermia, generalized lead-pipe rigidity, altered mental status, and autonomic instability (tachycardia, hypertension, diaphoresis), with a markedly elevated creatine kinase from muscle breakdown and leukocytosis. Reflexes are diminished and there is no clonus, which argues against serotonin syndrome. Normal pupils and bowel sounds with sweating argue against anticholinergic toxicity, and the neck stiffness is part of generalized rigidity rather than isolated meningismus.\n- 원리: <b>Why dopamine blockade causes this syndrome</b>: D2 receptor blockade in the nigrostriatal pathway produces intense muscle rigidity, and blockade in the hypothalamus disturbs temperature set-point and autonomic control. Sustained contraction of rigid muscle generates heat and breaks down muscle, so temperature and creatine kinase rise together. It typically develops over days, often after starting or rapidly increasing a high-potency antipsychotic.<br> <b>Why reflexes separate it from serotonin syndrome</b>: serotonin excess stimulates 5-HT2A receptors in the brainstem and spinal cord, increasing neuromuscular excitability — hyperreflexia, inducible or spontaneous clonus (especially in the legs), tremor, mydriasis, and diarrhea, usually within 24 hours of a serotonergic drug. NMS gives a \"quiet,\" slowly evolving rigidity with normal or decreased reflexes.<br> <b>Why it matters</b>: treatment differs — NMS needs the antipsychotic stopped, cooling, and sometimes dantrolene or bromocriptine; serotonin syndrome needs serotonergic drugs stopped and cyproheptadine.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Neuroleptic malignant syndrome (answer)</th><th>Serotonin syndrome (closest distractor)</th></tr></thead><tbody> <tr><td>Drug</td><td>Dopamine antagonist (haloperidol)</td><td>SSRI, MAOI, linezolid, tramadol …</td></tr> <tr><td>Onset</td><td>Days</td><td>Hours (usually &lt; 24 h)</td></tr> <tr><td>Neuromuscular</td><td><b>Lead-pipe rigidity, reflexes normal or decreased</b></td><td><b>Hyperreflexia, clonus</b>, tremor</td></tr> <tr><td>Other</td><td>Very high CK, normal pupils</td><td>Mydriasis, diarrhea, hyperactive bowel sounds</td></tr> </tbody></table> Both cause fever and autonomic instability — tap the reflexes and look for clonus to tell them apart.\n- 오답 이유:\n  - (A) Malignant hyperthermia would be correct if rigidity and rising temperature began during general anesthesia with a volatile agent or succinylcholine.\n  - (B) Anticholinergic toxicity would be correct if he had hot, dry skin, dilated pupils, absent bowel sounds, and urinary retention without lead-pipe rigidity.\n  - (C) Bacterial meningitis would be correct if neck stiffness were isolated with headache and photophobia, and CSF showed neutrophilic pleocytosis, without generalized rigidity.\n  - (E) Serotonin syndrome would be correct if he had started a serotonergic drug within the last day and showed hyperreflexia, ankle clonus, mydriasis, and diarrhea.\n- 함정: Choosing serotonin syndrome because of fever and agitation — the deciding signs are the reflexes and clonus, which are absent here.\n- 학습목표: 도파민 길항제 증량 뒤 고열·납관 강직·의식 변화·CK 상승·반사 저하가 오면 신경이완제 악성 증후군으로 진단하고 반사 항진·간대성 경련이 특징인 세로토닌 증후군과 가른다\n- 근거·출처: Strawn JR, Keck PE Jr, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry. 2007;164(6):870-876. PMID: 17541044 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120. PMID: 15784664",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Days after a haloperidol dose increase, he has the tetrad of neuroleptic malignant syndrome: hyperthermia, generalized lead-pipe rigidity, altered mental status, and autonomic instability (tachycardia, hypertension, diaphoresis), with a markedly elevated creatine kinase from muscle breakdown and leukocytosis. Reflexes are diminished and there is no clonus, which argues against serotonin syndrome. Normal pupils and bowel sounds with sweating argue against anticholinergic toxicity, and the neck stiffness is part of generalized rigidity rather than isolated meningismus."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why dopamine blockade causes this syndrome</b>: D2 receptor blockade in the nigrostriatal pathway produces intense muscle rigidity, and blockade in the hypothalamus disturbs temperature set-point and autonomic control. Sustained contraction of rigid muscle generates heat and breaks down muscle, so temperature and creatine kinase rise together. It typically develops over days, often after starting or rapidly increasing a high-potency antipsychotic.<br> <b>Why reflexes separate it from serotonin syndrome</b>: serotonin excess stimulates 5-HT2A receptors in the brainstem and spinal cord, increasing neuromuscular excitability — hyperreflexia, inducible or spontaneous clonus (especially in the legs), tremor, mydriasis, and diarrhea, usually within 24 hours of a serotonergic drug. NMS gives a \"quiet,\" slowly evolving rigidity with normal or decreased reflexes.<br> <b>Why it matters</b>: treatment differs — NMS needs the antipsychotic stopped, cooling, and sometimes dantrolene or bromocriptine; serotonin syndrome needs serotonergic drugs stopped and cyproheptadine."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Neuroleptic malignant syndrome (answer)</th><th>Serotonin syndrome (closest distractor)</th></tr></thead><tbody> <tr><td>Drug</td><td>Dopamine antagonist (haloperidol)</td><td>SSRI, MAOI, linezolid, tramadol …</td></tr> <tr><td>Onset</td><td>Days</td><td>Hours (usually &lt; 24 h)</td></tr> <tr><td>Neuromuscular</td><td><b>Lead-pipe rigidity, reflexes normal or decreased</b></td><td><b>Hyperreflexia, clonus</b>, tremor</td></tr> <tr><td>Other</td><td>Very high CK, normal pupils</td><td>Mydriasis, diarrhea, hyperactive bowel sounds</td></tr> </tbody></table> Both cause fever and autonomic instability — tap the reflexes and look for clonus to tell them apart."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Malignant hyperthermia would be correct if rigidity and rising temperature began during general anesthesia with a volatile agent or succinylcholine.\n(B) Anticholinergic toxicity would be correct if he had hot, dry skin, dilated pupils, absent bowel sounds, and urinary retention without lead-pipe rigidity.\n(C) Bacterial meningitis would be correct if neck stiffness were isolated with headache and photophobia, and CSF showed neutrophilic pleocytosis, without generalized rigidity.\n(E) Serotonin syndrome would be correct if he had started a serotonergic drug within the last day and showed hyperreflexia, ankle clonus, mydriasis, and diarrhea."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing serotonin syndrome because of fever and agitation — the deciding signs are the reflexes and clonus, which are absent here."
+   },
+   {
+    "k": "학습목표",
+    "v": "도파민 길항제 증량 뒤 고열·납관 강직·의식 변화·CK 상승·반사 저하가 오면 신경이완제 악성 증후군으로 진단하고 반사 항진·간대성 경련이 특징인 세로토닌 증후군과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Strawn JR, Keck PE Jr, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry. 2007;164(6):870-876. PMID: 17541044 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120. PMID: 15784664"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "할로페리돌 증량 며칠 뒤 고열·납관 강직·의식 변화·자율신경 불안정·CK 상승에 반사 저하·간대성 경련 없음이면 신경이완제 악성 증후군이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "세로토닌 증후군은 반사 항진·간대성 경련·산동·설사가 특징 — 이 환자는 반사가 1+ 이고 간대성 경련이 없다",
+   "steps": 2,
+   "chain": [
+    "도파민 길항제 증량 며칠 뒤 + 고열·납관 강직·의식 변화·CK 18,400 → 신경이완제 악성 증후군 의심",
+    "반사 1+·간대성 경련 없음·동공·장음 정상 → 세로토닌 증후군·항콜린 중독 가능성 낮음"
+   ],
+   "key": [
+    {
+     "item": "haloperidol dose was increased",
+     "why": "도파민 길항제 — 원인 약",
+     "also": []
+    },
+    {
+     "item": "lead-pipe rigidity",
+     "why": "신경이완제 악성 증후군의 근육 소견",
+     "also": []
+    },
+    {
+     "item": "Serum creatine kinase is 18,400 U/L",
+     "why": "지속적 근수축에 의한 근육 파괴",
+     "also": []
+    },
+    {
+     "item": "Deep tendon reflexes are 1+",
+     "why": "반사 저하 — 세로토닌 증후군과 반대",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no clonus",
+     "why": "세로토닌 증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Bowel sounds are normal",
+     "why": "항콜린 중독 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The neck is stiff in all directions of movement",
+     "why": "전신 강직의 일부 — 수막자극만의 경부 강직과 다르다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "할로페리돌 증량 며칠 뒤 고열·납관 강직·의식 변화·자율신경 불안정과 CK 18,400 이 생겼다. 반사가 낮고 간대성 경련이 없어 세로토닌 증후군이 아니라 신경이완제 악성 증후군이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "하루 안에 세로토닌 작용 약을 추가했고 반사 항진·발목 간대성 경련·산동·설사가 있었다면 세로토닌 증후군"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0511",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "약리 — 결핵 치료를 시작하는 경구피임약 복용 여성",
+  "type": "약리 — 결핵 치료를 시작하는 경구피임약 복용 여성",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-01",
+  "vignette": "28세 여자가 폐결핵으로 진단되어 이소니아지드·리팜핀·피라진아마이드·에탐부톨 치료를 시작하려고 한다. 2년째 복합 경구피임약(에티닐에스트라디올·레보노르게스트렐)을 먹고 있고 앞으로 1년 안에는 임신할 계획이 없다. 흡연하지 않으며 혈압은 118/74 mmHg 이다. 편두통·혈전증 병력은 없다. 소변 임신 검사는 음성이다.",
+  "question": "결핵 치료 동안의 피임 방법으로 가장 적절한 것은?",
+  "options": [
+   "프로게스틴 단독 경구피임약으로 바꾼다",
+   "피부 부착형 피임 패치로 바꾼다",
+   "구리 자궁내장치로 바꾼다",
+   "같은 경구피임약을 그대로 먹는다",
+   "에스트로겐 함량이 높은 경구피임약으로 바꾼다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 리팜핀은 간과 장의 CYP3A4 와 글루쿠론산 결합 효소를 강하게 유도해 에티닐에스트라디올과 프로게스틴의 혈중 농도를 모두 떨어뜨린다. 그래서 복합 경구피임약·패치·질 링·프로게스틴 단독 경구약은 효과를 믿을 수 없다(미국 피임 적격 기준 3등급). 호르몬 대사와 무관하게 작용하는 구리 자궁내장치(또는 레보노르게스트렐 자궁내장치·DMPA 주사)가 권고되며, 효소 유도는 리팜핀을 끊은 뒤에도 약 4주 지속되므로 그 기간까지 유지한다.\n- 원리: <b>왜 리팜핀은 피임약을 무력하게 만드는가</b>: 리팜핀은 핵수용체 PXR 을 활성화해 CYP3A4·CYP2C·UGT·P-당단백질의 유전자 발현을 늘린다. 에티닐에스트라디올과 레보노르게스트렐은 모두 CYP3A4 로 대사되고 에스트로겐은 장간 순환에도 의존하므로, 유도가 걸리면 농도-시간 곡선 면적이 크게 줄어 배란 억제가 깨진다.<br> <b>왜 용량을 올려도 해결되지 않는가</b>: 유도 정도는 사람마다 달라 「얼마나 올리면 충분한지」를 알 수 없고, 프로게스틴 성분도 함께 떨어진다. 과거의 고용량 에스트로겐 처방은 혈전 위험만 늘린다.<br> <b>왜 자궁내장치는 괜찮은가</b>: 구리 자궁내장치는 국소의 구리 이온이 정자와 수정을 방해해 간 대사와 무관하다. 레보노르게스트렐 자궁내장치도 작용이 주로 자궁 안에서 일어나 혈중 농도 저하의 영향을 받지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">피임법</th><th style=\"width:38%\">구리 자궁내장치(정답)</th><th>고용량 에스트로겐 경구약(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리팜핀의 영향</td><td><b>없음</b> — 국소 작용</td><td>에스트로겐·프로게스틴 모두 대사 증가</td></tr> <tr><td>효과</td><td>유도 여부와 무관하게 유지</td><td>얼마나 보충되는지 예측 불가</td></tr> <tr><td>대가</td><td>삽입 시술, 월경량 증가</td><td>혈전 위험 증가</td></tr> </tbody></table> 효소 유도제를 쓰는 동안과 끊은 뒤 4주까지는 간 대사를 거치지 않는 방법(자궁내장치·DMPA)을 고른다.\n- 오답 이유:\n  - ① 프로게스틴 단독 경구약은 에스트로겐 금기(흡연 고령·혈전 병력)가 있고 효소 유도제를 쓰지 않을 때 정답이 된다.\n  - ② 피임 패치는 매일 복용을 잊기 쉬운 여성에게 효소 유도제 없이 쓸 때 정답이 된다 — 패치도 같은 호르몬이라 리팜핀에 영향받는다.\n  - ④ 같은 약을 그대로 먹는 것은 결핵을 효소 유도 작용이 없는 약제(예: 리팜핀 없는 처방)로 치료할 때 정답이 된다.\n  - ⑤ 고용량 에스트로겐 경구약은 과거 일부에서 쓰던 방식으로, 효소 유도가 약한 약과 함께이고 다른 방법을 쓸 수 없을 때만 고려한다.\n- 함정: 경로만 바꾸면(패치·질 링·프로게스틴 단독) 해결된다고 생각하는 것 — 간 대사를 거치는 호르몬은 모두 유도의 영향을 받는다.\n- 학습목표: 리팜핀의 강한 CYP3A4·글루쿠론산 결합 유도가 복합 호르몬 피임약의 효과를 떨어뜨리므로 효소 유도에 영향받지 않는 구리 자궁내장치로 바꾼다\n- 근거·출처: Nguyen AT, Curtis KM, Tepper NK, et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024. MMWR Recomm Rep. 2024;73(4):1-126. PMID: 39106314 · Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. McGraw-Hill; 2023. Chapter: Chemotherapy of Tuberculosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리팜핀은 간과 장의 CYP3A4 와 글루쿠론산 결합 효소를 강하게 유도해 에티닐에스트라디올과 프로게스틴의 혈중 농도를 모두 떨어뜨린다. 그래서 복합 경구피임약·패치·질 링·프로게스틴 단독 경구약은 효과를 믿을 수 없다(미국 피임 적격 기준 3등급). 호르몬 대사와 무관하게 작용하는 구리 자궁내장치(또는 레보노르게스트렐 자궁내장치·DMPA 주사)가 권고되며, 효소 유도는 리팜핀을 끊은 뒤에도 약 4주 지속되므로 그 기간까지 유지한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 리팜핀은 피임약을 무력하게 만드는가</b>: 리팜핀은 핵수용체 PXR 을 활성화해 CYP3A4·CYP2C·UGT·P-당단백질의 유전자 발현을 늘린다. 에티닐에스트라디올과 레보노르게스트렐은 모두 CYP3A4 로 대사되고 에스트로겐은 장간 순환에도 의존하므로, 유도가 걸리면 농도-시간 곡선 면적이 크게 줄어 배란 억제가 깨진다.<br> <b>왜 용량을 올려도 해결되지 않는가</b>: 유도 정도는 사람마다 달라 「얼마나 올리면 충분한지」를 알 수 없고, 프로게스틴 성분도 함께 떨어진다. 과거의 고용량 에스트로겐 처방은 혈전 위험만 늘린다.<br> <b>왜 자궁내장치는 괜찮은가</b>: 구리 자궁내장치는 국소의 구리 이온이 정자와 수정을 방해해 간 대사와 무관하다. 레보노르게스트렐 자궁내장치도 작용이 주로 자궁 안에서 일어나 혈중 농도 저하의 영향을 받지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">피임법</th><th style=\"width:38%\">구리 자궁내장치(정답)</th><th>고용량 에스트로겐 경구약(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리팜핀의 영향</td><td><b>없음</b> — 국소 작용</td><td>에스트로겐·프로게스틴 모두 대사 증가</td></tr> <tr><td>효과</td><td>유도 여부와 무관하게 유지</td><td>얼마나 보충되는지 예측 불가</td></tr> <tr><td>대가</td><td>삽입 시술, 월경량 증가</td><td>혈전 위험 증가</td></tr> </tbody></table> 효소 유도제를 쓰는 동안과 끊은 뒤 4주까지는 간 대사를 거치지 않는 방법(자궁내장치·DMPA)을 고른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 프로게스틴 단독 경구약은 에스트로겐 금기(흡연 고령·혈전 병력)가 있고 효소 유도제를 쓰지 않을 때 정답이 된다.\n② 피임 패치는 매일 복용을 잊기 쉬운 여성에게 효소 유도제 없이 쓸 때 정답이 된다 — 패치도 같은 호르몬이라 리팜핀에 영향받는다.\n④ 같은 약을 그대로 먹는 것은 결핵을 효소 유도 작용이 없는 약제(예: 리팜핀 없는 처방)로 치료할 때 정답이 된다.\n⑤ 고용량 에스트로겐 경구약은 과거 일부에서 쓰던 방식으로, 효소 유도가 약한 약과 함께이고 다른 방법을 쓸 수 없을 때만 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "경로만 바꾸면(패치·질 링·프로게스틴 단독) 해결된다고 생각하는 것 — 간 대사를 거치는 호르몬은 모두 유도의 영향을 받는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리팜핀의 강한 CYP3A4·글루쿠론산 결합 유도가 복합 호르몬 피임약의 효과를 떨어뜨리므로 효소 유도에 영향받지 않는 구리 자궁내장치로 바꾼다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Nguyen AT, Curtis KM, Tepper NK, et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024. MMWR Recomm Rep. 2024;73(4):1-126. PMID: 39106314 · Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. McGraw-Hill; 2023. Chapter: Chemotherapy of Tuberculosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "리팜핀을 쓰는 동안에는 호르몬 대사와 무관한 구리 자궁내장치로 피임한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "에스트로겐 증량은 유도 정도를 예측할 수 없고 프로게스틴도 함께 떨어진다 — 자궁내장치는 간 대사를 거치지 않는다",
+   "steps": 2,
+   "chain": [
+    "리팜핀 → CYP3A4·UGT 강한 유도 → 에스트로겐·프로게스틴 농도 모두 저하",
+    "호르몬 경로를 바꾸거나 용량을 올려도 불확실 → 국소 작용 구리 자궁내장치"
+   ],
+   "key": [
+    {
+     "item": "리팜핀",
+     "why": "강한 효소 유도제",
+     "also": []
+    },
+    {
+     "item": "복합 경구피임약(에티닐에스트라디올·레보노르게스트렐)",
+     "why": "두 성분 모두 CYP3A4 대사",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "1년 안에는 임신할 계획이 없다",
+     "why": "장기 지속형 피임법이 적합",
+     "also": []
+    },
+    {
+     "item": "소변 임신 검사는 음성",
+     "why": "자궁내장치 삽입 전 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "흡연하지 않으며",
+     "why": "에스트로겐 금기가 없어 선택을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "편두통·혈전증 병력은 없다",
+     "why": "에스트로겐 금기가 없지만 유도 문제는 그대로다",
+     "also": []
+    }
+   ],
+   "summary": "리팜핀은 CYP3A4 를 강하게 유도해 경구약·패치·프로게스틴 단독약의 호르몬 농도를 모두 떨어뜨린다. 간 대사와 무관한 구리 자궁내장치가 가장 믿을 만하다.",
+   "switch": {
+    "choice": "D",
+    "condition": "결핵 처방에 리팜핀이 없고(예: 리팜핀 내성으로 다른 약제 처방) 효소 유도제가 없다면 기존 경구피임약을 유지"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0510",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "진단검사 — 증상 없는 혈소판증가증 환자의 높은 혈청 칼륨",
+  "type": "진단검사 — 증상 없는 혈소판증가증 환자의 높은 혈청 칼륨",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-01",
+  "vignette": "A 64-year-old woman comes to the physician for a follow-up visit. She was diagnosed with essential thrombocythemia 1 year ago and takes low-dose aspirin. She feels well and has no muscle weakness or palpitations. She takes no potassium supplements, ACE inhibitors, or diuretics. Pulse is 76/min and regular, and blood pressure is 128/78 mm Hg. Laboratory studies show a hemoglobin of 13.1 g/dL, leukocyte count of 8,200/mm3, platelet count of 1,150,000/mm3, serum sodium of 140 mEq/L, serum potassium of 6.4 mEq/L, and serum creatinine of 0.8 mg/dL. The laboratory reports that the specimen was not hemolyzed. An ECG shows normal sinus rhythm with normal T waves.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Start oral patiromer and recheck potassium in 1 week",
+   "Measure the transtubular potassium gradient in urine",
+   "Measure plasma renin activity and aldosterone",
+   "Measure potassium in a heparinized plasma sample",
+   "Administer intravenous calcium gluconate"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Serum potassium is high, but nothing supports true hyperkalemia: she is asymptomatic, the ECG has normal T waves, renal function is normal, and she takes no drug that raises potassium. Her platelet count is over 1 million/mm3. When blood clots in a serum tube, activated platelets release their intracellular potassium, so serum potassium rises in proportion to the platelet count while the patient's plasma potassium is normal — pseudohyperkalemia. Hemolysis was excluded. The next step is to measure potassium in an unclotted (heparinized) plasma sample, ideally analyzed promptly; a plasma value that is normal and more than about 0.4 mEq/L lower than serum confirms it.\n- 원리: <b>Why serum and plasma differ</b>: serum is what remains after blood clots; plasma is the fluid of anticoagulated blood. During clotting, platelets are activated and release granule contents and cytosolic potassium. Normally this adds only about 0.1–0.4 mEq/L, but with platelet counts above roughly 500,000–1,000,000/mm3 (or extreme leukocytosis) the added potassium becomes large enough to look like hyperkalemia.<br> <b>Why the ECG and the patient matter</b>: true hyperkalemia lowers the resting membrane potential toward threshold, causing peaked T waves, conduction slowing, and weakness. A potassium of 6.4 mEq/L with a normal ECG and no reason to retain potassium should make the clinician question the measurement before treating it.<br> <b>Why treating would harm</b>: potassium binders or insulin given for a spurious value can cause real hypokalemia. The fix is in the specimen, not in the patient.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Pseudohyperkalemia (answer)</th><th>True hyperkalemia (closest distractor)</th></tr></thead><tbody> <tr><td>Plasma (heparin) K</td><td><b>Normal</b> — only serum is high</td><td>High in both serum and plasma</td></tr> <tr><td>ECG</td><td>Normal</td><td>Peaked T, PR/QRS prolongation at higher levels</td></tr> <tr><td>Clues</td><td>Thrombocytosis, leukocytosis, fist clenching, hemolysis</td><td>Kidney disease, ACE inhibitors, spironolactone, tissue breakdown</td></tr> <tr><td>Action</td><td>Repeat in plasma, analyze promptly</td><td>Calcium, shift, remove</td></tr> </tbody></table> Treat urgently only when the ECG shows changes or the value is confirmed in plasma.\n- 오답 이유:\n  - (A) Patiromer would be correct for confirmed chronic hyperkalemia, for example in chronic kidney disease on an ACE inhibitor, after a plasma value confirms it.\n  - (B) The urine potassium gradient would be correct once true hyperkalemia is confirmed and the question is whether renal excretion is inappropriately low.\n  - (C) Renin and aldosterone would be correct for confirmed hyperkalemia with low renal potassium excretion, to look for hypoaldosteronism or type 4 RTA.\n  - (E) IV calcium gluconate would be correct if the ECG showed peaked T waves or QRS widening from confirmed hyperkalemia, to stabilize the myocardium.\n- 함정: Treating the number — a serum potassium of 6.4 with a normal ECG and a platelet count above 1 million is pseudohyperkalemia until proven otherwise.\n- 학습목표: 혈소판이 매우 많은 무증상 환자의 혈청 칼륨 상승을 응고 중 혈소판의 칼륨 방출에 의한 가성고칼륨혈증으로 의심하고 헤파린 혈장 칼륨으로 확인한다\n- 근거·출처: Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 53: Fluid and Electrolyte Disturbances · Meng QH, Wagar EA. Pseudohyperkalemia: a new twist on an old phenomenon. Crit Rev Clin Lab Sci. 2015;52(2):45-55. PMID: 25319089",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Serum potassium is high, but nothing supports true hyperkalemia: she is asymptomatic, the ECG has normal T waves, renal function is normal, and she takes no drug that raises potassium. Her platelet count is over 1 million/mm3. When blood clots in a serum tube, activated platelets release their intracellular potassium, so serum potassium rises in proportion to the platelet count while the patient's plasma potassium is normal — pseudohyperkalemia. Hemolysis was excluded. The next step is to measure potassium in an unclotted (heparinized) plasma sample, ideally analyzed promptly; a plasma value that is normal and more than about 0.4 mEq/L lower than serum confirms it."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why serum and plasma differ</b>: serum is what remains after blood clots; plasma is the fluid of anticoagulated blood. During clotting, platelets are activated and release granule contents and cytosolic potassium. Normally this adds only about 0.1–0.4 mEq/L, but with platelet counts above roughly 500,000–1,000,000/mm3 (or extreme leukocytosis) the added potassium becomes large enough to look like hyperkalemia.<br> <b>Why the ECG and the patient matter</b>: true hyperkalemia lowers the resting membrane potential toward threshold, causing peaked T waves, conduction slowing, and weakness. A potassium of 6.4 mEq/L with a normal ECG and no reason to retain potassium should make the clinician question the measurement before treating it.<br> <b>Why treating would harm</b>: potassium binders or insulin given for a spurious value can cause real hypokalemia. The fix is in the specimen, not in the patient."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Pseudohyperkalemia (answer)</th><th>True hyperkalemia (closest distractor)</th></tr></thead><tbody> <tr><td>Plasma (heparin) K</td><td><b>Normal</b> — only serum is high</td><td>High in both serum and plasma</td></tr> <tr><td>ECG</td><td>Normal</td><td>Peaked T, PR/QRS prolongation at higher levels</td></tr> <tr><td>Clues</td><td>Thrombocytosis, leukocytosis, fist clenching, hemolysis</td><td>Kidney disease, ACE inhibitors, spironolactone, tissue breakdown</td></tr> <tr><td>Action</td><td>Repeat in plasma, analyze promptly</td><td>Calcium, shift, remove</td></tr> </tbody></table> Treat urgently only when the ECG shows changes or the value is confirmed in plasma."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Patiromer would be correct for confirmed chronic hyperkalemia, for example in chronic kidney disease on an ACE inhibitor, after a plasma value confirms it.\n(B) The urine potassium gradient would be correct once true hyperkalemia is confirmed and the question is whether renal excretion is inappropriately low.\n(C) Renin and aldosterone would be correct for confirmed hyperkalemia with low renal potassium excretion, to look for hypoaldosteronism or type 4 RTA.\n(E) IV calcium gluconate would be correct if the ECG showed peaked T waves or QRS widening from confirmed hyperkalemia, to stabilize the myocardium."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the number — a serum potassium of 6.4 with a normal ECG and a platelet count above 1 million is pseudohyperkalemia until proven otherwise."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈소판이 매우 많은 무증상 환자의 혈청 칼륨 상승을 응고 중 혈소판의 칼륨 방출에 의한 가성고칼륨혈증으로 의심하고 헤파린 혈장 칼륨으로 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci A, Kasper D, et al. Harrison's Principles of Internal Medicine, 21st ed. McGraw-Hill; 2022. Chapter 53: Fluid and Electrolyte Disturbances · Meng QH, Wagar EA. Pseudohyperkalemia: a new twist on an old phenomenon. Crit Rev Clin Lab Sci. 2015;52(2):45-55. PMID: 25319089"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "혈소판 115만의 무증상 환자에서 정상 심전도와 함께 혈청 칼륨만 높으면 가성고칼륨혈증을 의심해 헤파린 혈장 칼륨을 잰다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "칼슘 정맥 주사는 심전도 변화가 있는 진짜 고칼륨혈증일 때 — 이 환자는 심전도가 정상이고 칼륨을 올릴 이유가 없다",
+   "steps": 3,
+   "chain": [
+    "무증상 + 정상 T파 + 정상 신기능 + 칼륨을 올리는 약 없음 → 진짜 고칼륨혈증의 근거 부족",
+    "혈소판 115만 → 혈청관 응고 중 혈소판이 칼륨 방출 → 가성고칼륨혈증",
+    "확인: 응고되지 않은 헤파린 혈장 칼륨(정상이면 확진)"
+   ],
+   "key": [
+    {
+     "item": "platelet count of 1,150,000/mm3",
+     "why": "응고 중 칼륨을 방출할 혈소판이 매우 많다",
+     "also": []
+    },
+    {
+     "item": "normal T waves",
+     "why": "실제 세포막 효과가 없다 — 수치와 맞지 않음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "not hemolyzed",
+     "why": "용혈에 의한 가성 상승 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no potassium supplements, ACE inhibitors, or diuretics",
+     "why": "약물에 의한 진짜 고칼륨혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "serum creatinine of 0.8 mg/dL",
+     "why": "신기능 저하에 의한 칼륨 저류 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "takes low-dose aspirin",
+     "why": "혈소판 기능을 억제하지만 응고 중 칼륨 방출을 막지는 못한다",
+     "also": []
+    }
+   ],
+   "summary": "정상 심전도·정상 신기능·칼륨을 올리는 약 없음에 혈소판 115만 — 혈청 칼륨 6.4 는 응고 중 혈소판이 내놓은 칼륨일 가능성이 높다. 치료 전에 헤파린 혈장 칼륨으로 확인한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "심전도에 뾰족한 T파나 QRS 확장이 있었다면 검체 확인 전에 칼슘 글루코네이트를 먼저 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0509",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신장비뇨·순환기·응급외상·이비인후과·진단검사·약리·정신·예방의학)",
+  "subtopic": "이비인후과 — 감기 뒤 눈 주위가 붓고 복시가 생긴 아이",
+  "type": "이비인후과 — 감기 뒤 눈 주위가 붓고 복시가 생긴 아이",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-01",
+  "vignette": "8세 남아가 이틀 전부터 왼쪽 눈 주위가 붓고 아파서 응급실에 왔다. 열흘 전부터 누런 콧물과 기침이 있었다. 체온 38.9℃ 이다. 왼쪽 위·아래 눈꺼풀이 붉게 부어 있고, 눈을 움직일 때 통증이 있으며 바깥쪽을 볼 때 둘로 보인다고 한다. 왼쪽 눈이 약간 앞으로 튀어나와 있다. 시력은 양쪽 1.0 이고 동공 대광반사는 정상이며 상대구심동공운동장애는 없다. 백혈구 16,800/mm³ 이다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "경구 아목시실린-클라불란산 처방 후 외래 추적",
+   "즉시 내시경 부비동 수술",
+   "비강 식염수 세척과 비강 스테로이드 분무",
+   "요추천자로 뇌척수액 검사",
+   "안와·부비동 조영증강 CT 촬영"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 열흘간의 상기도 감염 뒤(급성 세균성 부비동염, 대개 사골동) 눈꺼풀 부종이 생겼는데, 안구운동 통증·복시·안구돌출이 있다. 이는 염증이 안와격막 앞 눈꺼풀에만 있는 격막전 연조직염이 아니라 격막 뒤 안와 안으로 퍼졌다는 신호(안와 연조직염 또는 골막하 농양)다. 이때는 입원해 정맥 항생제를 시작하면서 안와·부비동 조영증강 CT 로 골막하·안와 농양 유무와 범위를 확인해야 한다 — 농양의 크기·시력 변화가 수술 여부를 정한다.\n- 원리: <b>왜 안와격막이 경계인가</b>: 안와격막은 안와 테두리에서 눈꺼풀판으로 이어지는 섬유막으로, 눈꺼풀(격막 앞)과 안와 내용물(격막 뒤)을 나눈다. 격막 앞에만 염증이 있으면 눈꺼풀만 붓고 안구 자체는 영향을 받지 않는다. 격막 뒤로 넘어가면 외안근·안와 지방이 붓기 때문에 <b>안구운동 통증·운동 제한·복시·안구돌출</b>이 생긴다.<br> <b>왜 부비동에서 안와로 쉽게 퍼지는가</b>: 사골동과 안와 사이의 벽(종이판)은 얇고 구멍이 있으며, 판막 없는 정맥이 서로 이어져 있어 감염이 직접 또는 혈전정맥염으로 넘어간다. 그래서 소아 안와 연조직염의 대부분은 사골동염에서 온다.<br> <b>왜 CT 가 다음 단계인가</b>: 진찰로는 연조직염과 골막하 농양을 가를 수 없다. CT 는 농양의 위치·크기와 해면정맥동 혈전 같은 합병증을 보여 주어, 항생제만으로 볼지 배농할지를 정하게 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">소견</th><th style=\"width:39%\">격막후(안와) 침범(정답 판단)</th><th>격막전 연조직염(가장 가까운 오답 판단)</th></tr></thead><tbody> <tr><td>안구운동</td><td><b>통증·제한·복시</b></td><td>정상, 통증 없음</td></tr> <tr><td>안구돌출</td><td>있음</td><td>없음</td></tr> <tr><td>시력·동공</td><td>떨어질 수 있음 — 응급 신호</td><td>정상</td></tr> <tr><td>처치</td><td>입원·정맥 항생제·<b>조영증강 CT</b></td><td>경구 항생제·외래 추적 가능</td></tr> </tbody></table> 눈꺼풀이 아무리 심하게 부어도 안구운동·돌출·시력이 정상이면 격막전, 하나라도 이상이면 격막후로 보고 영상을 찍는다.\n- 오답 이유:\n  - ① 경구 항생제 외래 추적은 안구운동·시력·안구돌출이 모두 정상인 격막전 연조직염이고 전신 상태가 좋을 때 정답이 된다.\n  - ② 즉시 수술은 CT 에서 큰 골막하 농양이 확인되거나 시력 저하·상대구심동공운동장애가 생겼을 때, 영상을 확인한 뒤에 정답이 된다.\n  - ③ 비강 세척과 스테로이드 분무는 합병증 없는 급성 비부비동염에서 증상을 줄이는 보조 치료일 때 정답이 된다 — 안와 합병증의 첫 처치가 아니다.\n  - ④ 요추천자는 두통·의식 저하·수막자극징후로 수막염이나 두개내 합병증을 의심할 때, 영상으로 종괴를 배제한 뒤 정답이 된다.\n- 함정: 눈꺼풀이 붓고 붉다는 것만 보고 격막전 연조직염으로 외래 치료하는 것 — 복시와 안구돌출은 격막 뒤 침범이다.\n- 학습목표: 부비동염 뒤 안와 주위 부종에 안구운동 통증·복시·안구돌출이 있으면 격막후(안와) 침범으로 보고 조영증강 CT 를 먼저 시행한다\n- 근거·출처: Flint PW, Francis HW, Haughey BH, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Elsevier; 2020. Chapter: Complications of Rhinosinusitis · Chandler JR, Langenbrunner DJ, Stevens ER. The pathogenesis of orbital complications in acute sinusitis. Laryngoscope. 1970;80(9):1414-1428. PMID: 5470225",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "열흘간의 상기도 감염 뒤(급성 세균성 부비동염, 대개 사골동) 눈꺼풀 부종이 생겼는데, 안구운동 통증·복시·안구돌출이 있다. 이는 염증이 안와격막 앞 눈꺼풀에만 있는 격막전 연조직염이 아니라 격막 뒤 안와 안으로 퍼졌다는 신호(안와 연조직염 또는 골막하 농양)다. 이때는 입원해 정맥 항생제를 시작하면서 안와·부비동 조영증강 CT 로 골막하·안와 농양 유무와 범위를 확인해야 한다 — 농양의 크기·시력 변화가 수술 여부를 정한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 안와격막이 경계인가</b>: 안와격막은 안와 테두리에서 눈꺼풀판으로 이어지는 섬유막으로, 눈꺼풀(격막 앞)과 안와 내용물(격막 뒤)을 나눈다. 격막 앞에만 염증이 있으면 눈꺼풀만 붓고 안구 자체는 영향을 받지 않는다. 격막 뒤로 넘어가면 외안근·안와 지방이 붓기 때문에 <b>안구운동 통증·운동 제한·복시·안구돌출</b>이 생긴다.<br> <b>왜 부비동에서 안와로 쉽게 퍼지는가</b>: 사골동과 안와 사이의 벽(종이판)은 얇고 구멍이 있으며, 판막 없는 정맥이 서로 이어져 있어 감염이 직접 또는 혈전정맥염으로 넘어간다. 그래서 소아 안와 연조직염의 대부분은 사골동염에서 온다.<br> <b>왜 CT 가 다음 단계인가</b>: 진찰로는 연조직염과 골막하 농양을 가를 수 없다. CT 는 농양의 위치·크기와 해면정맥동 혈전 같은 합병증을 보여 주어, 항생제만으로 볼지 배농할지를 정하게 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">소견</th><th style=\"width:39%\">격막후(안와) 침범(정답 판단)</th><th>격막전 연조직염(가장 가까운 오답 판단)</th></tr></thead><tbody> <tr><td>안구운동</td><td><b>통증·제한·복시</b></td><td>정상, 통증 없음</td></tr> <tr><td>안구돌출</td><td>있음</td><td>없음</td></tr> <tr><td>시력·동공</td><td>떨어질 수 있음 — 응급 신호</td><td>정상</td></tr> <tr><td>처치</td><td>입원·정맥 항생제·<b>조영증강 CT</b></td><td>경구 항생제·외래 추적 가능</td></tr> </tbody></table> 눈꺼풀이 아무리 심하게 부어도 안구운동·돌출·시력이 정상이면 격막전, 하나라도 이상이면 격막후로 보고 영상을 찍는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 항생제 외래 추적은 안구운동·시력·안구돌출이 모두 정상인 격막전 연조직염이고 전신 상태가 좋을 때 정답이 된다.\n② 즉시 수술은 CT 에서 큰 골막하 농양이 확인되거나 시력 저하·상대구심동공운동장애가 생겼을 때, 영상을 확인한 뒤에 정답이 된다.\n③ 비강 세척과 스테로이드 분무는 합병증 없는 급성 비부비동염에서 증상을 줄이는 보조 치료일 때 정답이 된다 — 안와 합병증의 첫 처치가 아니다.\n④ 요추천자는 두통·의식 저하·수막자극징후로 수막염이나 두개내 합병증을 의심할 때, 영상으로 종괴를 배제한 뒤 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "눈꺼풀이 붓고 붉다는 것만 보고 격막전 연조직염으로 외래 치료하는 것 — 복시와 안구돌출은 격막 뒤 침범이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "부비동염 뒤 안와 주위 부종에 안구운동 통증·복시·안구돌출이 있으면 격막후(안와) 침범으로 보고 조영증강 CT 를 먼저 시행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Flint PW, Francis HW, Haughey BH, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Elsevier; 2020. Chapter: Complications of Rhinosinusitis · Chandler JR, Langenbrunner DJ, Stevens ER. The pathogenesis of orbital complications in acute sinusitis. Laryngoscope. 1970;80(9):1414-1428. PMID: 5470225"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "부비동염 뒤 안와 주위 부종에 안구운동 통증·복시·안구돌출이 있으면 격막후 침범으로 보고 조영증강 CT 를 찍는다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "격막전 연조직염은 안구운동·시력·돌출이 정상 — 이 아이는 복시와 안구돌출이 있다",
+   "steps": 2,
+   "chain": [
+    "열흘간의 콧물 뒤 눈 주위 부종 → 부비동염의 안와 합병증",
+    "안구운동 통증·복시·안구돌출 → 격막후 침범 → 농양 확인을 위해 조영증강 CT"
+   ],
+   "key": [
+    {
+     "item": "눈을 움직일 때 통증",
+     "why": "외안근·안와 지방의 염증 — 격막후 침범",
+     "also": []
+    },
+    {
+     "item": "둘로 보인다",
+     "why": "안구운동 제한 — 격막후 침범",
+     "also": []
+    },
+    {
+     "item": "앞으로 튀어나와",
+     "why": "안와 안 용적 증가 — 연조직염·골막하 농양",
+     "also": []
+    },
+    {
+     "item": "열흘 전부터 누런 콧물과 기침",
+     "why": "세균성 부비동염 — 감염의 출발점",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "시력은 양쪽 1.0",
+     "why": "시신경 압박 징후가 없어 즉시 감압보다 영상이 먼저",
+     "also": []
+    },
+    {
+     "item": "상대구심동공운동장애는 없다",
+     "why": "응급 수술 지표가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "백혈구 16,800/mm³",
+     "why": "감염을 뒷받침하지만 격막 앞뒤를 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "부비동염 뒤 눈 주위 부종에 안구운동 통증·복시·안구돌출이 있어 격막후(안와) 침범이다. 시력은 보존되어 있으므로 입원·정맥 항생제와 함께 조영증강 CT 로 농양을 확인한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "CT 에서 큰 골막하 농양이 보이거나 시력이 떨어지고 상대구심동공운동장애가 생기면 즉시 수술 배농"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0504",
   "exam": "imaging",
   "style": "kmle_style",

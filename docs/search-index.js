@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4229,
+  "total": 4240,
   "byType": {
+   "imaging": 514,
    "concept": 126,
    "paper": 883,
-   "imaging": 503,
    "kmle": 1632,
    "usmle": 222,
    "anatomy": 846,
@@ -39,32 +39,32 @@ window.MEDKOS_INDEX = {
    "Hematology": 99,
    "Laboratory Medicine": 91,
    "산부인과": 69,
-   "순환기": 47,
-   "호흡기": 33,
+   "순환기": 50,
+   "호흡기": 34,
    "소화기": 32,
    "소아과": 28,
+   "응급·중환자": 25,
    "Physiology": 24,
    "내분비": 24,
-   "응급·중환자": 24,
+   "신장·비뇨기": 24,
    "혈액·종양": 24,
    "감염": 23,
    "병리·조직학": 23,
    "신경": 23,
-   "신장·비뇨기": 23,
    "외과": 21,
    "피부과": 21,
+   "예방의학·역학": 20,
    "Pharmacology": 19,
-   "예방의학·역학": 19,
    "Biochemistry": 18,
    "Microbiology": 17,
+   "약리": 15,
    "Internal Medicine": 14,
    "근골격·류마티스": 14,
-   "약리": 14,
+   "정신과": 14,
    "Immunology": 13,
-   "정신과": 13,
    "안과": 10,
-   "영상의학": 9,
-   "이비인후과": 9,
+   "영상의학": 10,
+   "이비인후과": 10,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -79,13 +79,208 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 2971,
    "medium": 1217,
-   "high": 2960,
    "low": 52
   },
   "tagCount": 5159
  },
  "docs": [
+  {
+   "id": "imaging-2026-0515",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 건강검진에서 맥박이 느리다는 말을 들은 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0515.md",
+   "snippet": "72세 여자가 건강검진에서 맥박이 느리다는 말을 듣고 외래에 왔다. 어지러움·실신·호흡곤란·운동 시 피로는 없고 매일 40분씩 걷는다. 고지혈증으로 스타틴을 먹고 있고 베타차단제나 칼슘통로차단제는 먹지 않는다. 혈압 128/76 mmHg, 맥박 56회/분이다. 갑상샘자극호르몬과 혈청 칼륨은 정상이다. 계단을 오르게 한 뒤 다시 잰 맥박은 92회/분이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 추가 치료 없이",
+   "text": "순환기 심전도 처치 — 건강검진에서 맥박이 느리다는 말을 들은 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96 72세 여자가 건강검진에서 맥박이 느리다는 말을 듣고 외래에 왔다. 어지러움·실신·호흡곤란·운동 시 피로는 없고 매일 40분씩 걷는다. 고지혈증으로 스타틴을 먹고 있고 베타차단제나 칼슘통로차단제는 먹지 않는다. 혈압 128/76 mmHg, 맥박 56회/분이다. 갑상샘자극호르몬과 혈청 칼륨은 정상이다. 계단을 오르게 한 뒤 다시 잰 맥박은 92회/분이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 추가 치료 없이 경과를 관찰한다 B. 아트로핀을 정맥 주사한다 C. 영구 심박동기를 삽입한다 D. 이소프로테레놀을 지속 주입한다 E. 일시적 경피 심박조율을 시작한다"
+  },
+  {
+   "id": "imaging-2026-0514",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 수술 전 검사를 받은 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0514.md",
+   "snippet": "66세 남자가 오른쪽 서혜부 탈장 수술을 앞두고 수술 전 검사를 받았다. 증상은 없고 계단 두 층을 쉬지 않고 오른다. 고혈압으로 약을 먹고 있고 흡연한 적은 없다. 혈압 132/80 mmHg, 맥박 88회/분이다. 심잡음은 없고 제2심음이 넓게 분열되어 들린다. 흉부 X선은 정상이다. 혈청 칼륨 4.2 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 우심실 비대 B. 완전 우각차단 ",
+   "text": "순환기 심전도 판독 — 수술 전 검사를 받은 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96 66세 남자가 오른쪽 서혜부 탈장 수술을 앞두고 수술 전 검사를 받았다. 증상은 없고 계단 두 층을 쉬지 않고 오른다. 고혈압으로 약을 먹고 있고 흡연한 적은 없다. 혈압 132/80 mmHg, 맥박 88회/분이다. 심잡음은 없고 제2심음이 넓게 분열되어 들린다. 흉부 X선은 정상이다. 혈청 칼륨 4.2 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 우심실 비대 B. 완전 우각차단 C. 완전 좌각차단 D. 좌전섬유속 차단 E. 브루가다 1형 양상"
+  },
+  {
+   "id": "imaging-2026-0513",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 두 선별검사가 모두 양성일 때의 양성예측도",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0513.md",
+   "snippet": "55세 남자가 건강검진에서 대장암 선별용 혈액 검사 A 가 양성으로 나와 외래에 왔다. 증상은 없고 대장암 가족력도 없다. 이 연령대 무증상 성인의 대장암 유병률은 2 % 이고, 검사 A 의 민감도는 90 %, 특이도는 95 % 이다. 의사가 같은 날 채취한 혈액으로 원리가 다른 검사 B(민감도 90 %, 특이도 95 %)를 추가로 시행하였고 역시 양성이었다. 질병 유무가 같을 때 두 검사의 결과는 서로 독립이라고 가정한다. ",
+   "text": "예방의학·역학 예방의학 — 두 선별검사가 모두 양성일 때의 양성예측도 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce 55세 남자가 건강검진에서 대장암 선별용 혈액 검사 A 가 양성으로 나와 외래에 왔다. 증상은 없고 대장암 가족력도 없다. 이 연령대 무증상 성인의 대장암 유병률은 2 % 이고, 검사 A 의 민감도는 90 %, 특이도는 95 % 이다. 의사가 같은 날 채취한 혈액으로 원리가 다른 검사 B(민감도 90 %, 특이도 95 %)를 추가로 시행하였고 역시 양성이었다. 질병 유무가 같을 때 두 검사의 결과는 서로 독립이라고 가정한다. 이 남자가 실제로 대장암일 확률에 가장 가까운 것은? A. 87 % B. 27 % C. 50 % D. 81 % E. 99 %"
+  },
+  {
+   "id": "imaging-2026-0512",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 할로페리돌 증량 뒤 생긴 고열과 근육 강직",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0512.md",
+   "snippet": "A 34 year old man is brought to the emergency department because of confusion and fever for 1 day. He has schizophrenia, and 4 days ago his haloperidol dose was increased because of worsening agitation. He takes no other medications and doe",
+   "text": "정신과 정신 — 할로페리돌 증량 뒤 생긴 고열과 근육 강직 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce A 34 year old man is brought to the emergency department because of confusion and fever for 1 day. He has schizophrenia, and 4 days ago his haloperidol dose was increased because of worsening agitation. He takes no other medications and does not use illicit drugs. Temperature is 40.1°C (104.2°F), pulse is 122/min, respirations are 24/min, and blood pressure is 168/98 mm Hg. He is diaphoretic and disoriented. There is generalized lead pipe rigidity of the extremities. Deep tendon reflexes are 1+ and symmetric, and there is no clonus. Pupils are 4 mm and reactive to light. Bowel sounds are normal. The neck is stiff in all directions of movement. Serum creatine kinase is 18,400 U/L, and leukocyte count is 14,200/mm3. Which of the following is the most likely diagnosis? A. Malignant hyperthermia B. Anticholinergic toxicity C. Bacterial meningitis D. Neuroleptic malignant syndrome E. Serotonin syndrome"
+  },
+  {
+   "id": "imaging-2026-0511",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 결핵 치료를 시작하는 경구피임약 복용 여성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0511.md",
+   "snippet": "28세 여자가 폐결핵으로 진단되어 이소니아지드·리팜핀·피라진아마이드·에탐부톨 치료를 시작하려고 한다. 2년째 복합 경구피임약(에티닐에스트라디올·레보노르게스트렐)을 먹고 있고 앞으로 1년 안에는 임신할 계획이 없다. 흡연하지 않으며 혈압은 118/74 mmHg 이다. 편두통·혈전증 병력은 없다. 소변 임신 검사는 음성이다. 결핵 치료 동안의 피임 방법으로 가장 적절한 것은? A. 프로게스틴 단독 경구피임약으로 바꾼다 B. 피부 ",
+   "text": "약리 약리 — 결핵 치료를 시작하는 경구피임약 복용 여성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce 28세 여자가 폐결핵으로 진단되어 이소니아지드·리팜핀·피라진아마이드·에탐부톨 치료를 시작하려고 한다. 2년째 복합 경구피임약(에티닐에스트라디올·레보노르게스트렐)을 먹고 있고 앞으로 1년 안에는 임신할 계획이 없다. 흡연하지 않으며 혈압은 118/74 mmHg 이다. 편두통·혈전증 병력은 없다. 소변 임신 검사는 음성이다. 결핵 치료 동안의 피임 방법으로 가장 적절한 것은? A. 프로게스틴 단독 경구피임약으로 바꾼다 B. 피부 부착형 피임 패치로 바꾼다 C. 구리 자궁내장치로 바꾼다 D. 같은 경구피임약을 그대로 먹는다 E. 에스트로겐 함량이 높은 경구피임약으로 바꾼다"
+  },
+  {
+   "id": "imaging-2026-0510",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사 — 증상 없는 혈소판증가증 환자의 높은 혈청 칼륨",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0510.md",
+   "snippet": "A 64 year old woman comes to the physician for a follow up visit. She was diagnosed with essential thrombocythemia 1 year ago and takes low dose aspirin. She feels well and has no muscle weakness or palpitations. She takes no potassium supp",
+   "text": "영상의학 진단검사 — 증상 없는 혈소판증가증 환자의 높은 혈청 칼륨 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce A 64 year old woman comes to the physician for a follow up visit. She was diagnosed with essential thrombocythemia 1 year ago and takes low dose aspirin. She feels well and has no muscle weakness or palpitations. She takes no potassium supplements, ACE inhibitors, or diuretics. Pulse is 76/min and regular, and blood pressure is 128/78 mm Hg. Laboratory studies show a hemoglobin of 13.1 g/dL, leukocyte count of 8,200/mm3, platelet count of 1,150,000/mm3, serum sodium of 140 mEq/L, serum potassium of 6.4 mEq/L, and serum creatinine of 0.8 mg/dL. The laboratory reports that the specimen was not hemolyzed. An ECG shows normal sinus rhythm with normal T waves. Which of the following is the most appropriate next step in management? A. Start oral patiromer and recheck potassium in 1 week B. Measure the transtubular potassium gradient in urine C. Measure plasma renin activity and aldosterone D. Measure potassium in a heparinized plasma sample E. Administer intravenous calcium gluconate"
+  },
+  {
+   "id": "imaging-2026-0509",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 감기 뒤 눈 주위가 붓고 복시가 생긴 아이",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0509.md",
+   "snippet": "8세 남아가 이틀 전부터 왼쪽 눈 주위가 붓고 아파서 응급실에 왔다. 열흘 전부터 누런 콧물과 기침이 있었다. 체온 38.9℃ 이다. 왼쪽 위·아래 눈꺼풀이 붉게 부어 있고, 눈을 움직일 때 통증이 있으며 바깥쪽을 볼 때 둘로 보인다고 한다. 왼쪽 눈이 약간 앞으로 튀어나와 있다. 시력은 양쪽 1.0 이고 동공 대광반사는 정상이며 상대구심동공운동장애는 없다. 백혈구 16,800/mm³ 이다. 다음 단계로 가장 적절한 것은? A",
+   "text": "이비인후과 이비인후과 — 감기 뒤 눈 주위가 붓고 복시가 생긴 아이 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce 8세 남아가 이틀 전부터 왼쪽 눈 주위가 붓고 아파서 응급실에 왔다. 열흘 전부터 누런 콧물과 기침이 있었다. 체온 38.9℃ 이다. 왼쪽 위·아래 눈꺼풀이 붉게 부어 있고, 눈을 움직일 때 통증이 있으며 바깥쪽을 볼 때 둘로 보인다고 한다. 왼쪽 눈이 약간 앞으로 튀어나와 있다. 시력은 양쪽 1.0 이고 동공 대광반사는 정상이며 상대구심동공운동장애는 없다. 백혈구 16,800/mm³ 이다. 다음 단계로 가장 적절한 것은? A. 경구 아목시실린 클라불란산 처방 후 외래 추적 B. 즉시 내시경 부비동 수술 C. 비강 식염수 세척과 비강 스테로이드 분무 D. 요추천자로 뇌척수액 검사 E. 안와·부비동 조영증강 CT 촬영"
+  },
+  {
+   "id": "imaging-2026-0508",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 얕은 물에 다이빙한 뒤의 위쪽 목 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0508.md",
+   "snippet": "A 70 year old man is brought to the emergency department 1 hour after he dove into the shallow end of a swimming pool and struck the top of his head on the bottom. He reports severe upper neck pain but no weakness or numbness. He has corona",
+   "text": "응급·중환자 응급·중환자·외상 — 얕은 물에 다이빙한 뒤의 위쪽 목 통증 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce A 70 year old man is brought to the emergency department 1 hour after he dove into the shallow end of a swimming pool and struck the top of his head on the bottom. He reports severe upper neck pain but no weakness or numbness. He has coronary artery disease. Pulse is 88/min, and blood pressure is 142/84 mm Hg. He is wearing a rigid cervical collar. Neurologic examination shows normal strength, sensation, and reflexes in all extremities. An axial CT scan of the upper cervical spine at the level of the first cervical vertebra is shown. Which of the following mechanisms most likely produced this injury? A. Axial compression transmitted from the vertex through the occipital condyles B. Hyperextension compressing the posterior arch between the occiput and C2 C. Hyperflexion with compression of the anterior vertebral body D. Lateral flexion with avulsion of the alar ligament from the dens E. Rotational force causing atlantoaxial facet subluxation"
+  },
+  {
+   "id": "imaging-2026-0507",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 초고령 여성의 가끔 건너뛰는 맥박",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0507.md",
+   "snippet": "An 89 year old woman is brought to the clinic by her daughter because she has noticed an occasional 'skipped beat' for the past 2 months. She has had no chest pain, dyspnea, light headedness, or syncope. She has hypertension controlled with",
+   "text": "순환기 순환기 — 초고령 여성의 가끔 건너뛰는 맥박 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce An 89 year old woman is brought to the clinic by her daughter because she has noticed an occasional 'skipped beat' for the past 2 months. She has had no chest pain, dyspnea, light headedness, or syncope. She has hypertension controlled with amlodipine and takes no other medications. Pulse is 68/min with an occasional irregular beat; blood pressure is 134/76 mm Hg. Cardiac examination shows no murmurs or gallops. Serum potassium is 4.3 mEq/L, and serum magnesium is 2.0 mg/dL. A 12 lead ECG is shown. Which of the following is the most likely cause of the irregular beat? A. Ventricular escape beat B. Intermittent ventricular preexcitation C. Premature ventricular contraction D. Premature atrial contraction with aberrant conduction E. Intermittent left bundle branch block"
+  },
+  {
+   "id": "imaging-2026-0506",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 검진에서 우연히 발견된 신장 고형 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0506.md",
+   "snippet": "59세 남자가 건강검진 복부 초음파에서 왼쪽 신장 종괴가 발견되어 비뇨의학과에 왔다. 증상은 없고 육안적 혈뇨나 옆구리 통증은 없었다. 고혈압으로 약을 먹고 있다. 신체 진찰에서 만져지는 종괴는 없다. 혈청 크레아티닌 0.9 mg/dL 이고 소변검사에서 적혈구는 없다. 복부 조영증강 CT 동맥기 영상은 그림과 같다. 종괴의 최대 지름은 3.4 cm 이고 반대쪽 신장은 정상이며 신정맥 침범이나 커진 림프절은 없다. 흉부 CT 에",
+   "text": "신장·비뇨기 신장·비뇨 — 검진에서 우연히 발견된 신장 고형 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce 59세 남자가 건강검진 복부 초음파에서 왼쪽 신장 종괴가 발견되어 비뇨의학과에 왔다. 증상은 없고 육안적 혈뇨나 옆구리 통증은 없었다. 고혈압으로 약을 먹고 있다. 신체 진찰에서 만져지는 종괴는 없다. 혈청 크레아티닌 0.9 mg/dL 이고 소변검사에서 적혈구는 없다. 복부 조영증강 CT 동맥기 영상은 그림과 같다. 종괴의 최대 지름은 3.4 cm 이고 반대쪽 신장은 정상이며 신정맥 침범이나 커진 림프절은 없다. 흉부 CT 에서 폐 결절은 없다. 가장 적절한 치료는? A. 6개월 뒤 초음파 추적 관찰 B. 부분 신장절제술 C. 근치적 신장절제술 D. 경피적 신장 생검 후 경과 관찰 E. 수니티닙 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0505",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 기계환기 중인 바이러스 폐렴 환자의 산소화 지표",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
+   "confidence": "high",
+   "date": "2026-11-01",
+   "path": "content/imaging/2026/imaging-2026-0505.md",
+   "snippet": "56세 남자가 일주일 전부터 열과 기침이 있다가 사흘 전부터 숨이 차서 입원하였다. 입원 둘째 날 저산소혈증이 심해져 기관삽관 후 기계환기를 시작하였다. 고혈압 외에 다른 병력은 없다. 체온 38.4℃, 혈압 118/72 mmHg, 맥박 104회/분이다. 양쪽 폐에서 수포음이 들린다. 호기말양압 10 cmH₂O, 흡입산소분율 0.6 에서 측정한 동맥혈 PaO₂ 는 90 mmHg 이다. 심초음파에서 좌심실 박출률은 60 % 이고",
+   "text": "호흡기 호흡기 — 기계환기 중인 바이러스 폐렴 환자의 산소화 지표 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce 56세 남자가 일주일 전부터 열과 기침이 있다가 사흘 전부터 숨이 차서 입원하였다. 입원 둘째 날 저산소혈증이 심해져 기관삽관 후 기계환기를 시작하였다. 고혈압 외에 다른 병력은 없다. 체온 38.4℃, 혈압 118/72 mmHg, 맥박 104회/분이다. 양쪽 폐에서 수포음이 들린다. 호기말양압 10 cmH₂O, 흡입산소분율 0.6 에서 측정한 동맥혈 PaO₂ 는 90 mmHg 이다. 심초음파에서 좌심실 박출률은 60 % 이고 좌심방 확장은 없다. 흉부 X선은 그림과 같다. 이 환자 상태의 분류로 가장 적절한 것은? A. 경증 급성호흡곤란증후군 B. 중등도 급성호흡곤란증후군 C. 중증 급성호흡곤란증후군 D. 심인성 폐부종 E. 수혈 관련 급성 폐손상"
+  },
   {
    "id": "cn.pulm.methemoglobinemia.mechanism",
    "type": "concept",
