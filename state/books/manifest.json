@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "3ffa0d4cd7146128fe20",
-   "version": 16,
-   "date": "2026-10-30",
+   "hash": "2597092bdd3552d3e26f",
+   "version": 17,
+   "date": "2026-11-01",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 24,
+   "pages": 27,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -20,60 +20,78 @@
      "concept_hash": "da7eb2b1c623c1ea",
      "concept_version": 1
     },
+    "cn.cardio.systolic-murmur.dynamic-auscultation": {
+     "title": "수축기 잡음 — 손 조작으로 원인을 가른다",
+     "page": 5,
+     "concept_hash": "7ec30433a104f74c",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 5,
+     "page": 6,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 6,
+     "page": 7,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
+    "cn.cardio.ischemic-ecg-localization.culprit-artery": {
+     "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
+     "page": 10,
+     "concept_hash": "37c7a057908d38d0",
+     "concept_version": 2
+    },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 9,
+     "page": 11,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
+    "cn.cardio.premature-ventricular-complex.ecg-recognition": {
+     "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
+     "page": 13,
+     "concept_hash": "9438a56ea8ac6481",
+     "concept_version": 2
+    },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 11,
+     "page": 15,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 14,
+     "page": 18,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 16,
-     "concept_hash": "4e8173c6e4c8359f",
+     "page": 20,
+     "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 20,
+     "page": 23,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 23,
+     "page": 26,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "248e3922facd6dbc62d23bde319e667a",
-    "version": 16,
-    "uploaded": "2026-10-30T11:09:17+09:00"
+    "md5": "ecb8eed6becc182d075b5ddd6d597e3e",
+    "version": 17,
+    "uploaded": "2026-11-01T10:14:05+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -91,10 +109,14 @@
     "MedKOS_학습서_순환기내과_v13_2026-10-03.pdf",
     "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf",
     "MedKOS_학습서_순환기내과_v15_2026-10-14.pdf",
-    "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf"
+    "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf",
+    "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf"
    ],
    "changes": [
-    "새 단원: 전신 부종 — 경정맥압·소변 단백·간 징후로 가른다"
+    "새 단원: 수축기 잡음 — 손 조작으로 원인을 가른다",
+    "새 단원: 허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
+    "새 단원: 심실 기외수축 — 조기·P파 없음·넓은 QRS",
+    "내용 수정: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때"
    ]
   },
   "피부과": {
@@ -653,11 +675,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "37bb583a1c52f8bc6e7f",
-   "version": 32,
-   "date": "2026-10-30",
+   "hash": "1aa7357a2a8224fc36c3",
+   "version": 33,
+   "date": "2026-11-01",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 52,
+   "pages": 53,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -710,124 +732,130 @@
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 둘 실패 뒤엔 TNF·IL-17 억제제",
-     "page": 17,
+     "page": 16,
      "concept_hash": "1924d396b0fdfb26",
      "concept_version": 3
     },
+    "cn.ortho.axial-spondyloarthritis.sacroiliac-mri": {
+     "title": "축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI",
+     "page": 19,
+     "concept_hash": "30f437db258ddf6c",
+     "concept_version": 1
+    },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
-     "page": 19,
+     "page": 20,
      "concept_hash": "0a95671a7fc0c818",
      "concept_version": 3
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염 — 혈소판 정상의 만져지는 자반이면 임상 진단",
-     "page": 21,
+     "page": 22,
      "concept_hash": "b85f82c4ac8f8ba7",
      "concept_version": 3
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
      "title": "거대세포동맥염 — 의심되면 생검 전에 스테로이드부터",
-     "page": 24,
+     "page": 25,
      "concept_hash": "36db8f06087016bc",
      "concept_version": 2
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 확진은 증상 있는 침범 조직의 생검",
-     "page": 26,
+     "page": 27,
      "concept_hash": "e71e27053a5552c2",
      "concept_version": 2
     },
     "cn.rheum.behcet.clinical-diagnosis": {
      "title": "베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단",
-     "page": 28,
+     "page": 29,
      "concept_hash": "99114229c6440e61",
      "concept_version": 2
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 29,
+     "page": 30,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.relapsing-polychondritis.clinical-diagnosis": {
      "title": "재발성 다발연골염 — 귓불을 남기는 귀 연골염",
-     "page": 31,
+     "page": 32,
      "concept_hash": "60735de172c47893",
      "concept_version": 1
     },
     "cn.rheum.sarcoidosis.treat-or-observe": {
      "title": "사르코이드증 — 치료는 위험 장기·증상이 정한다",
-     "page": 33,
+     "page": 34,
      "concept_hash": "642023f4a90db935",
      "concept_version": 1
     },
     "cn.rheum.igg4-related-disease.diagnosis": {
      "title": "IgG4 관련 질환 — 진단은 혈청값이 아니라 종합 판단",
-     "page": 35,
+     "page": 36,
      "concept_hash": "c4520c7b1f52acfe",
      "concept_version": 1
     },
     "cn.rheum.familial-mediterranean-fever.daily-colchicine": {
      "title": "가족성 지중해열 — 매일 콜히친이 아밀로이드증을 막는다",
-     "page": 37,
+     "page": 38,
      "concept_hash": "241d318742721993",
      "concept_version": 1
     },
     "cn.rheum.acute-monoarthritis.synovial-fluid-first": {
      "title": "급성 단관절염 — 관절 천자가 먼저다",
-     "page": 39,
+     "page": 40,
      "concept_hash": "94a9ab0a5d324fa8",
      "concept_version": 1
     },
     "cn.rheum.osteoarthritis.exercise-weight-loss-first": {
      "title": "골관절염 — 운동·체중 감량이 바탕, 약은 보조",
-     "page": 40,
+     "page": 41,
      "concept_hash": "4f81357b47a8bc91",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 42,
+     "page": 43,
      "concept_hash": "6295d1fb01e16a3b",
      "concept_version": 1
     },
     "cn.rheum.gout.hla-b5801-before-allopurinol": {
      "title": "통풍 — allopurinol(알로푸리놀) 전 HLA-B*58:01 검사",
-     "page": 43,
+     "page": 44,
      "concept_hash": "1c3a85b4be944c24",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 45,
+     "page": 46,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 47,
+     "page": 48,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 49,
+     "page": 50,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 51,
+     "page": 52,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "e6498890c373ea9295c85511f43c5346",
-    "version": 32,
-    "uploaded": "2026-10-30T11:09:17+09:00"
+    "md5": "c9c49b1828b640599c7f00ee5d554db6",
+    "version": 33,
+    "uploaded": "2026-11-01T10:14:05+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -861,50 +889,57 @@
     "MedKOS_학습서_류마티스내과_v29_2026-10-23.pdf",
     "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf",
     "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf",
-    "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf"
+    "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf",
+    "MedKOS_학습서_류마티스내과_v33_2026-11-01.pdf"
    ],
    "changes": [
-    "내용 갱신: 통풍 — allopurinol(알로푸리놀) 전 HLA-B*58:01 검사 (정리본 vNone → v1)"
+    "새 단원: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI"
    ]
   },
   "호흡기내과": {
-   "hash": "c55175cf5787f11cb312",
-   "version": 12,
-   "date": "2026-10-13",
+   "hash": "eb326226ead55ee1d46a",
+   "version": 13,
+   "date": "2026-11-01",
    "file": "MedKOS_학습서_호흡기내과.pdf",
-   "pages": 7,
+   "pages": 8,
    "template_version": 11,
    "units": {
+    "cn.pulm.methemoglobinemia.mechanism": {
+     "title": "메트헤모글로빈혈증 — 철이 3가로 산화된다",
+     "page": 2,
+     "concept_hash": "08d04d0817cf2bde",
+     "concept_version": 1
+    },
     "cn.pulm.chest-ct-anatomy.diaphragm-level-structures": {
      "title": "흉부 CT 가로막 높이 — 구조를 자리로 확정하고 높이를 붙인다",
-     "page": 2,
+     "page": 3,
      "concept_hash": "913a50eb90f1d3c6",
      "concept_version": 2
     },
     "cn.pulm.copd-exacerbation.hypercapnic-failure-niv": {
      "title": "COPD 악화 고탄산 호흡부전 — 금기 없으면 NIPPV 먼저",
-     "page": 4,
+     "page": 5,
      "concept_hash": "a821eb5cab2cbf9f",
      "concept_version": 2
     },
     "cn.pulm.tuberculous-pleurisy.ada-diagnosis": {
      "title": "결핵성 흉막염 — 림프구 삼출액에 ADA가 높으면",
-     "page": 6,
+     "page": 7,
      "concept_hash": "7e642e0d6d7bfe89",
      "concept_version": 1
     },
     "cn.pulm.early-nsclc.lobectomy-vs-sublobar": {
      "title": "Peripheral 2.5 cm Adenocarcinoma, cT1cN0M0 (IA), Good Lung Function in a 70-year-old — Treatment",
-     "page": 7,
+     "page": 8,
      "concept_hash": null,
      "concept_version": null
     }
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "17d2cec68fc15d3c9d779587a430f26a",
-    "version": 12,
-    "uploaded": "2026-10-13T12:08:38+09:00"
+    "md5": "17d8c6f21d379800d0749b06816c667d",
+    "version": 13,
+    "uploaded": "2026-11-01T10:14:05+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -918,10 +953,11 @@
     "MedKOS_학습서_호흡기내과_v9_2026-09-30.pdf",
     "MedKOS_학습서_호흡기내과_v10_2026-10-05.pdf",
     "MedKOS_학습서_호흡기내과_v11_2026-10-06.pdf",
-    "MedKOS_학습서_호흡기내과_v12_2026-10-13.pdf"
+    "MedKOS_학습서_호흡기내과_v12_2026-10-13.pdf",
+    "MedKOS_학습서_호흡기내과_v13_2026-11-01.pdf"
    ],
    "changes": [
-    "내용 갱신: COPD 악화 고탄산 호흡부전 — 금기 없으면 NIPPV 먼저 (정리본 v1 → v2)"
+    "새 단원: 메트헤모글로빈혈증 — 철이 3가로 산화된다"
    ]
   },
   "응급의학과": {
@@ -1410,13 +1446,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "0f3e79692906c307bbebfcb703774905",
+   "md5": "0e2f896c643047845c5bc4dbcb47d1c0",
    "version": null,
-   "uploaded": "2026-10-31T10:15:35+09:00"
+   "uploaded": "2026-11-01T10:14:05+09:00"
   }
  },
- "updated": "2026-10-31"
+ "updated": "2026-11-01"
 }
