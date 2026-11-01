@@ -2,6 +2,41 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0884",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Variation in Anticoagulation Practice for Atrial High-Rate Episodes: A Nationwide Cross-Sectional Survey",
+  "authors": [
+   "Thant Kyi Zin",
+   "Antoun Ibrahim",
+   "Thu Kaung Myat",
+   "Somani Riyaz",
+   "Vali Zakariyya",
+   "Ng G Andre",
+   "Ibrahim Mokhtar"
+  ],
+  "journal": "Journal of cardiovascular electrophysiology",
+  "doi": "10.1111/jce.70542",
+  "pmid": "42967320",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42967320/",
+  "pubdate": "2026-11-01",
+  "date": "2026-11-01",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Atrial high-rate episodes (AHRE) detected by cardiac implantable electronic devices (CIEDs) are associated with increased thromboembolic risk, yet their clinical significance and optimal anticoagulation strategy remain uncertain, particularly in the absence of electrocardiogram (ECG)-confirmed atrial fibrillation.\n\n**METHODS:** We conducted a nationwide cross-sectional survey of UK clinicians involved in CIED follow-up. The survey assessed anticoagulation decision-making in AHRE, including episode-duration thresholds, cumulative burden, CHA2DS2-VA use, additional ECG monitoring, and anticoagulant choice. Only responses from UK-based consultant clinicians were included and analysed descriptively.\n\n**RESULTS:** A total of 51 responses were received; 38 met the inclusion criteria and were analysed. Most respondents (86.8%) reported having reviewed AHRE alerts within the preceding 6 months, indicating that AHRE are commonly encountered in clinical practice. A ≥ 24-h episode was the most common threshold for anticoagulation (44.7%), although many clinicians reported lower thresholds or individualised approaches. Nearly half (44.7%) did not consider cumulative AHRE burden in decision-making. CHA2DS2-VA thresholds also varied, most commonly ≥ 2 or ≥ 1. Additional ECG monitoring was infrequently performed. Direct oral anticoagulants were universally preferred, with apixaban the most commonly selected agent (73.7%).\n\n**CONCLUSION:** There is substantial variation in UK clinical practice regarding anticoagulation for AHRE, reflecting ongoing uncertainty and lack of clear guidance. These findings highlight the need for evidence-based thresholds to support consistent and informed clinical decision-making.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0883",
   "topic": "Surgery",
   "subtopic": "",
