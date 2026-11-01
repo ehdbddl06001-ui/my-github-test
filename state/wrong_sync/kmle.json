@@ -1133,8 +1133,29 @@
    "date": "2026-10-31",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1697": {
+   "id": "kmle-2026-1697",
+   "exam": "kmle",
+   "subject": "Ophthalmology",
+   "step": "",
+   "type": "An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure",
+   "style": "",
+   "modality": "",
+   "question": "다음으로 시행할 검사는?",
+   "chosen": 2,
+   "chosenText": "형광 안저혈관조영",
+   "answer": 0,
+   "answerText": "자동 정적 시야검사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "비대칭 함몰비·아래쪽 테두리 패임·시신경유두 출혈·쐐기 모양 신경섬유층 결손은 녹내장성 시신경병증이고, 안압 정상·열린 각으로 정상안압 녹내장을 의심한다. 분홍색 테두리와 정상 시력·색각으로 압박성 병변 가능성은 낮아, 다음은 기능 손상을 보는 자동 시야검사다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-02",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-31T13:20:32.834Z"
+ "updated": "2026-11-01T23:44:06.348Z"
 }
