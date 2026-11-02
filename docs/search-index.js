@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4298,
+  "total": 4299,
   "byType": {
    "usmle": 228,
+   "concept": 134,
    "kmle": 1664,
    "imaging": 526,
-   "concept": 133,
    "paper": 884,
    "anatomy": 846,
    "ailab": 14,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 295,
+   "Cardiology": 296,
    "Nephrology": 232,
    "Infectious Disease": 215,
    "Pediatrics": 200,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1228,
+   "medium": 1229,
    "high": 3017,
    "low": 53
   },
@@ -221,6 +221,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0236.md",
    "snippet": "A 41 year old woman comes to the physician because of progressive muscle weakness for 1 month. Over the past year, she has had 2 episodes of left flank pain during which she passed small stones. She has had dry eyes and a dry mouth for 3 ye",
    "text": "Physiology Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate renal-tubular-acidosis distal-rta normal-anion-gap-metabolic-acidosis urine-anion-gap sjogren nephrocalcinosis physiology mechanism USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 58장 Acidosis and Alkalosis; 373장 Sjögren’s Disease) A 41 year old woman comes to the physician because of progressive muscle weakness for 1 month. Over the past year, she has had 2 episodes of left flank pain during which she passed small stones. She has had dry eyes and a dry mouth for 3 years, for which she uses artificial tears. She has not had vomiting or diarrhea and takes no diuretics, laxatives or other medications. Her vital signs are shown. Examination shows dry oral mucosa and bilateral parotid enlargement. Muscle strength is 4/5 in the proximal lower extremities. Laboratory results are shown. An x ray of the abdomen shows bilateral speckled calcifications in the renal medullae. Which of the following best explains her acid base disturbance? A. Decreased bicarbonate reabsorption in the proximal tubule B. Impaired hydrogen ion secretion by α intercalated cells of the collecting duct C. Reduced aldosterone effect on the cortical collecting duct D. Loss of bicarbonate from the gastrointestinal tract E. Accumulation of unmeasured organic acids in the plasma 중탄산 15·pH 7.31 의 대사산증이고 음이온 차는 139 − (115 + 15) = 9 로 정상이다(Winter 식 예상 PCO2 1.5×15 + 8 = 30.5 — 호흡 보상 적절). 설사가 없고 소변 음이온 차가 45 + 32 − 48 = +29 로 양수라 소변 암모늄 배설이 늘지 않았다 — 위장관 손실이 아니라 신장이 산을 내보내지 못한다. 산혈증인데도 소변 pH 가 6.6 으로 5.5 아래로 내려가지 않는 것은 집합관 α 사이세포의 H+ 분비(H+ ATPase) 장애, 곧 원위(1형) 신세관산증이다. 저칼륨혈증(근력 저하)·신수질 석회화·결석, 그리고 쇼그렌병(안구·구강 건조, 이하선 비대, 항 SSA 양성)이 원위 신세관산증과 맞는다. 혈당 정상인데 소변 포도당 음성·인 정상이라 근위세관 전반 장애(Fanconi)의 가능성은 낮다."
+  },
+  {
+   "id": "cn.cardio.nyha-class.functional-assessment",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/concepts/cardiology/cn.cardio.nyha-class.functional-assessment.md",
+   "snippet": "판단 — 왜 활동의 양이 등급을 정하나 심근·관상동맥 기능은 안정 시에는 충분해도 활동 중에는 모자랄 수 있다 — 그래서 심장 증상은 활동 시 나타나고 안정 시 사라진다 [[harrison 22: 243장 p.1841]]. 등급은 「숨이 차다」가 아니라 증상 전 활동의 수준과 속도 로 매긴다. 계단 두 층을 뛰어오른 뒤의 호흡곤란과 평지 몇 걸음 뒤의 호흡곤란은 장애의 크기가 전혀 다르다 [[harrison 22: 243장 p",
+   "text": "Cardiology 판단 — 왜 활동의 양이 등급을 정하나 심근·관상동맥 기능은 안정 시에는 충분해도 활동 중에는 모자랄 수 있다 — 그래서 심장 증상은 활동 시 나타나고 안정 시 사라진다 [[harrison 22: 243장 p.1841]]. 등급은 「숨이 차다」가 아니라 증상 전 활동의 수준과 속도 로 매긴다. 계단 두 층을 뛰어오른 뒤의 호흡곤란과 평지 몇 걸음 뒤의 호흡곤란은 장애의 크기가 전혀 다르다 [[harrison 22: 243장 p.1842]]. 안정 시 증상은 IV 만의 소견이다. 안정 시 무증상은 I~III 를 가르지 못한다. 기능 장애의 중증도가 검사의 범위·속도와 치료 전략을 정한다 [[harrison 22: 243장 p.1842]]. 기전 — 공급·수요 불균형에서 증상으로 심장 증상은 주로 심근 허혈(산소 공급과 수요의 불균형), 수축·이완 장애, 혈류 폐쇄(판막 협착), 비정상 리듬에서 온다 [[harrison 22: 243장 p.1841]]. 펌프 기능이 떨어지면 피로와 함께 기능이 떨어진 심실 상류의 혈관 내 압력이 올라 말초 부종이나 폐울혈·호흡곤란이 생긴다. 활동은 산소 수요와 심박출 요구를 늘리므로, 여유가 줄어들수록 더 가벼운 활동에서 증상이 나타난다 — NYHA 등급은 이 여유의 크기를 활동량으로 잰 것이다. 가르는 소견 — 어느 활동에서 증상이 나나 일상 활동의 기준은 환자 자신이다: 평소 하던 일(출근길 계단, 장보기)에서 증상이 나면 II, 그보다 가벼운 일(집 안 걷기, 옷 입기)에서 나면 III. 평소 활동량을 함께 본다 — 잘 단련된 마라톤 선수의 2층 호흡곤란이 좌식 생활자의 1층 호흡곤란보다 의미가 클 수 있다 [[harrison 22: 243장 p.1842]]. 호흡곤란·흉부 불편·부종·실신은 심장 밖 원인(폐질환·비만·불안, 신장·간질환, 신경 질환)에서도 나므로, 등급을 매기기 전에 그 증상이 심장 때문인지를 진찰과 비침습 검사로 확인한다 [[harrison 22: 243장 p.1841]]. 선택 — 등급을 쓰는 곳 NYHA 의 완전한 심장 진단은 원인 · 해부학적 이상 · 생리적 장애(부정맥·심부전·허혈) · 기능 장애 네 가지를 함께 적는다 — 기능 등급은 그 마지막 칸이다 [[harrison 22: 243장 p.1841–1842]]. 진행은 6개월~1년 전에 하던 일 가운데 지금 못 하는 것을 물어 가늠한다 [[harrison 22: 243장 p.1842]]. 해부학적으로 심한 판막질환이 무증상·경증이면 6~12개월마다 임상·비침습 검사로 추적한다 — 심실 기능 악화의 초기 징후가 증상 전 수술의 신호일 수 있다 [[harrison 22: 243장 p.1843]]. 권고와 예외 치료 맥락으로 보정한다: 최적 용량의 이뇨제·심부전 치료를 받는데도 남은 부종·호흡곤란은 치료 없이 생긴 같은 증상보다 무겁다 [[harrison 22: 243장 p.1842]]. 등급은 증상의 보고에 기대므로 같은 환자도 치료에 따라 등급이 오르내린다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 243장 p.1841~1843). ACC/AHA 심부전 단계(A~D)와의 관계는 이 장에 없어 다루지 않았다(검토 항목)."
   },
   {
    "id": "kmle-2026-1698",
