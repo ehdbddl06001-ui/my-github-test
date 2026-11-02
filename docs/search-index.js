@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4286,
+  "total": 4295,
   "byType": {
    "usmle": 228,
    "kmle": 1664,
+   "imaging": 523,
    "concept": 133,
    "paper": 884,
-   "imaging": 514,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,19 +38,19 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 107,
    "Hematology": 101,
    "Laboratory Medicine": 91,
-   "산부인과": 69,
-   "순환기": 50,
-   "호흡기": 34,
-   "소화기": 32,
+   "산부인과": 71,
+   "순환기": 51,
+   "호흡기": 35,
+   "소화기": 33,
    "소아과": 28,
    "Physiology": 25,
    "응급·중환자": 25,
+   "감염": 24,
    "내분비": 24,
+   "병리·조직학": 24,
+   "신경": 24,
    "신장·비뇨기": 24,
    "혈액·종양": 24,
-   "감염": 23,
-   "병리·조직학": 23,
-   "신경": 23,
    "외과": 21,
    "피부과": 21,
    "예방의학·역학": 20,
@@ -62,7 +62,7 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 14,
    "근골격·류마티스": 14,
    "정신과": 14,
-   "안과": 10,
+   "안과": 11,
    "영상의학": 10,
    "이비인후과": 10,
    "Allergy": 4,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1228,
-   "high": 3005,
+   "high": 3014,
    "low": 53
   },
   "tagCount": 5223
@@ -797,6 +797,162 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1667.md",
    "snippet": "31세 남자가 이틀 전부터 가슴이 빨리 뛰어 왔다. 사흘 전부터 열이 나고 하루 8~9번 물설사를 하며 거의 먹지 못했다. 두근거림이 언제 시작됐는지 딱 집어 말하지 못하고 서서히 심해졌다고 한다. 응급실에서 숨을 참고 배에 힘을 주게 하자 맥박이 잠시 조금 느려졌다가 곧 원래대로 돌아왔다. 과거력은 없고 먹는 약은 없다. 입안이 마르고 피부 긴장도가 떨어져 있다. 활력징후, 검사 결과와 심전도는 자료와 같다. 심전도 리듬으로",
    "text": "Cardiology Racing Heartbeat for Two Days with Fever and Watery Stools in a Young Man tachyarrhythmia narrow-complex-tachycardia ecg KMLE 2026 / Claude 31세 남자가 이틀 전부터 가슴이 빨리 뛰어 왔다. 사흘 전부터 열이 나고 하루 8~9번 물설사를 하며 거의 먹지 못했다. 두근거림이 언제 시작됐는지 딱 집어 말하지 못하고 서서히 심해졌다고 한다. 응급실에서 숨을 참고 배에 힘을 주게 하자 맥박이 잠시 조금 느려졌다가 곧 원래대로 돌아왔다. 과거력은 없고 먹는 약은 없다. 입안이 마르고 피부 긴장도가 떨어져 있다. 활력징후, 검사 결과와 심전도는 자료와 같다. 심전도 리듬으로 가장 적절한 것은? A. 심방조동(atrial flutter) B. 방실결절 재진입 빈맥(AVNRT) C. 심방세동(atrial fibrillation) D. 다소성 심방빈맥(MAT) E. 동빈맥(sinus tachycardia) 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 간격으로 선행하는 규칙적인 좁은 QRS 빈맥이고, 서서히 시작되었으며 발살바 수기에 잠시 느려졌다가 되돌아왔다. 발열·탈수가 원인인 동빈맥이다."
+  },
+  {
+   "id": "imaging-2026-0524",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 당뇨병 환자의 시력 저하와 안저 소견",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "fundus"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0524.md",
+   "snippet": "당뇨병으로 14년째 치료 중인 환자가 두 달 전부터 왼눈으로 글자가 흐릿하고 직선이 약간 휘어 보여 안과에 왔다. 갑자기 시야가 가려진 적은 없다. 당화혈색소는 8.9 % 이다. 왼눈 교정시력이 0.4, 오른눈 교정시력은 0.9 이다. 안압은 양쪽 모두 정상이고 상대구심동공운동장애는 없다. 산동 후 왼눈의 안저 사진은 그림과 같다. 왼눈 시력 저하의 원인으로 가장 적절한 것은? A. 당뇨황반부종 B. 증식당뇨망막병증 C. 망막",
+   "text": "안과 안과 — 당뇨병 환자의 시력 저하와 안저 소견 opendata kmle_style fundus 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b 당뇨병으로 14년째 치료 중인 환자가 두 달 전부터 왼눈으로 글자가 흐릿하고 직선이 약간 휘어 보여 안과에 왔다. 갑자기 시야가 가려진 적은 없다. 당화혈색소는 8.9 % 이다. 왼눈 교정시력이 0.4, 오른눈 교정시력은 0.9 이다. 안압은 양쪽 모두 정상이고 상대구심동공운동장애는 없다. 산동 후 왼눈의 안저 사진은 그림과 같다. 왼눈 시력 저하의 원인으로 가장 적절한 것은? A. 당뇨황반부종 B. 증식당뇨망막병증 C. 망막중심정맥폐쇄 D. 습성 연령관련황반변성 E. 고혈압망막병증"
+  },
+  {
+   "id": "imaging-2026-0523",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 배란장애 불임의 배란 유도",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0523.md",
+   "snippet": "A 27 year old woman comes to the office because she has been unable to conceive for 14 months despite regular unprotected intercourse. Her menstrual cycles occur every 45 to 90 days. Six months of diet and exercise lowered her weight by 4 k",
+   "text": "산부인과 부인과 — 배란장애 불임의 배란 유도 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b A 27 year old woman comes to the office because she has been unable to conceive for 14 months despite regular unprotected intercourse. Her menstrual cycles occur every 45 to 90 days. Six months of diet and exercise lowered her weight by 4 kg. BMI is 32 kg/m². She has coarse hair on the upper lip and chin. Serum TSH and prolactin concentrations are within the reference ranges, and the 17 hydroxyprogesterone level is normal. Transvaginal ultrasonography shows more than 20 follicles in each ovary. Her partner's semen analysis is normal, and hysterosalpingography shows patent fallopian tubes. Which of the following is the most appropriate pharmacotherapy to achieve pregnancy? A. Spironolactone B. Letrozole C. Clomiphene citrate D. Metformin E. Combined oral contraceptive"
+  },
+  {
+   "id": "imaging-2026-0522",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 가을철 열성 질환과 가피, 임신부의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0522.md",
+   "snippet": "29세 여자가 5일 전부터 열·두통·근육통이 있고 이틀 전부터 몸통에 발진이 생겨 왔다. 임신 26주이다. 10월 말 시댁 밭에서 들깨를 베었다. 체온 39.1℃, 혈압 112/68 mmHg, 맥박 104회/분이다. 몸통에 붉은 반점구진발진이 퍼져 있고, 왼쪽 겨드랑이에 지름 6 mm 의 검은 딱지(가피)와 그 주위 홍반이 있으며 같은 쪽 겨드랑이 림프절이 만져진다. AST 88 U/L, ALT 76 U/L, 혈소판 112,0",
+   "text": "감염 감염 — 가을철 열성 질환과 가피, 임신부의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b 29세 여자가 5일 전부터 열·두통·근육통이 있고 이틀 전부터 몸통에 발진이 생겨 왔다. 임신 26주이다. 10월 말 시댁 밭에서 들깨를 베었다. 체온 39.1℃, 혈압 112/68 mmHg, 맥박 104회/분이다. 몸통에 붉은 반점구진발진이 퍼져 있고, 왼쪽 겨드랑이에 지름 6 mm 의 검은 딱지(가피)와 그 주위 홍반이 있으며 같은 쪽 겨드랑이 림프절이 만져진다. AST 88 U/L, ALT 76 U/L, 혈소판 112,000/mm³ 이다. 태아 심박동은 정상이다. 가장 적절한 치료는? A. 독시사이클린 B. 클로람페니콜 C. 세프트리악손 D. 시프로플록사신 E. 아지트로마이신"
+  },
+  {
+   "id": "imaging-2026-0521",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 간경변 환자의 자발세균복막염과 신부전 예방",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0521.md",
+   "snippet": "A 56 year old man with alcohol associated cirrhosis comes to the emergency department because of increasing abdominal girth and diffuse abdominal discomfort for 3 days. He takes spironolactone and furosemide. Temperature is 38.0°C, blood pr",
+   "text": "소화기 소화기 — 간경변 환자의 자발세균복막염과 신부전 예방 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b A 56 year old man with alcohol associated cirrhosis comes to the emergency department because of increasing abdominal girth and diffuse abdominal discomfort for 3 days. He takes spironolactone and furosemide. Temperature is 38.0°C, blood pressure is 104/64 mm Hg, and pulse is 96/min. The abdomen is distended with shifting dullness and mild diffuse tenderness without rigidity. Diagnostic paracentesis shows a polymorphonuclear leukocyte count of 480/µL and a total protein of 0.8 g/dL; Gram stain shows no organisms. Serum creatinine is 1.6 mg/dL, blood urea nitrogen 34 mg/dL, and total bilirubin 4.8 mg/dL. Intravenous cefotaxime is started and diuretics are held. In addition, which of the following is most likely to reduce this patient's risk of renal failure and death? A. Intravenous furosemide B. Oral lactulose C. Exploratory laparotomy D. Intravenous albumin on day 1 and day 3 E. Large volume paracentesis"
+  },
+  {
+   "id": "imaging-2026-0520",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 벼락두통 8시간 뒤 정상인 머리 CT",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0520.md",
+   "snippet": "47세 여자가 오늘 아침 운동 중 갑자기 생긴 「평생 가장 심한」 두통으로 왔다. 두통은 1분 안에 최고조에 이르렀고 한 번 토하였다. 의식을 잃은 적은 없다. 두통 발생 8시간 뒤 도착하였다. 편두통 병력은 없고 흡연자이다. 혈압 152/90 mmHg, 맥박 88회/분, 체온 36.8℃ 이다. 의식은 명료하고 국소 신경학적 결손은 없으며 목을 굽힐 때 약간 뻣뻣하다. 도착 직후 시행한 비조영 머리 CT 는 정상이다. 다음 단",
+   "text": "신경 신경 — 벼락두통 8시간 뒤 정상인 머리 CT opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b 47세 여자가 오늘 아침 운동 중 갑자기 생긴 「평생 가장 심한」 두통으로 왔다. 두통은 1분 안에 최고조에 이르렀고 한 번 토하였다. 의식을 잃은 적은 없다. 두통 발생 8시간 뒤 도착하였다. 편두통 병력은 없고 흡연자이다. 혈압 152/90 mmHg, 맥박 88회/분, 체온 36.8℃ 이다. 의식은 명료하고 국소 신경학적 결손은 없으며 목을 굽힐 때 약간 뻣뻣하다. 도착 직후 시행한 비조영 머리 CT 는 정상이다. 다음 단계로 가장 적절한 것은? A. 니모디핀 투여 시작 B. 뇌파 검사 C. 요추천자 D. 트립탄 투여 후 귀가 E. 24시간 뒤 머리 CT 재검"
+  },
+  {
+   "id": "imaging-2026-0519",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 진행 중 태아심박동 감시 기록의 해석",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0519.md",
+   "snippet": "A 31 year old nulliparous woman at 39 weeks' gestation is admitted in spontaneous labor. Her pregnancy has been uncomplicated. Membranes ruptured 2 hours ago with clear fluid. She is not receiving oxytocin and has epidural analgesia. Temper",
+   "text": "산부인과 산과 — 분만 진행 중 태아심박동 감시 기록의 해석 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b A 31 year old nulliparous woman at 39 weeks' gestation is admitted in spontaneous labor. Her pregnancy has been uncomplicated. Membranes ruptured 2 hours ago with clear fluid. She is not receiving oxytocin and has epidural analgesia. Temperature is 37.0°C and blood pressure is 118/72 mm Hg. The cervix is 6 cm dilated and 90% effaced, and the fetal head is at 0 station. Over the past 30 minutes, contractions have averaged four every 10 minutes. A representative 10 minute segment of the continuous fetal heart rate and uterine activity tracing is shown. Which of the following is the most appropriate next step in management? A. Fetal scalp stimulation B. Emergency cesarean delivery C. Continue current labor management with ongoing fetal monitoring D. Maternal repositioning and supplemental oxygen E. Transcervical amnioinfusion"
+  },
+  {
+   "id": "imaging-2026-0518",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 산소가 필요한 바이러스 폐렴의 약물 치료",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0518.md",
+   "snippet": "61세 여자가 5일 전부터 열과 마른기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 체온 38.2℃, 혈압 132/78 mmHg, 맥박 102회/분, 호흡 26회/분이고 실내 공기에서 산소포화도는 91 % 이다. 양쪽 아래 폐에서 수포음이 들린다. 비인두 검체의 SARS CoV 2 핵산증폭검사는 양성이다. C 반응단백 6.2 mg/dL 이고 프로칼시토닌은 정상이다. 흉부 X선은",
+   "text": "호흡기 호흡기 — 산소가 필요한 바이러스 폐렴의 약물 치료 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b 61세 여자가 5일 전부터 열과 마른기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 체온 38.2℃, 혈압 132/78 mmHg, 맥박 102회/분, 호흡 26회/분이고 실내 공기에서 산소포화도는 91 % 이다. 양쪽 아래 폐에서 수포음이 들린다. 비인두 검체의 SARS CoV 2 핵산증폭검사는 양성이다. C 반응단백 6.2 mg/dL 이고 프로칼시토닌은 정상이다. 흉부 X선은 그림과 같다. 입원시켜 코삽관으로 산소를 주기 시작하였다. 이 환자에게 가장 적절한 약물 치료는? A. 덱사메타손 B. 니르마트렐비르·리토나비르 C. 토실리주맙 D. 아지트로마이신 E. 오셀타미비르"
+  },
+  {
+   "id": "imaging-2026-0517",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0517.md",
+   "snippet": "A 19 year old man is brought to the emergency department after he fainted while sprinting during a basketball game. He regained consciousness within a minute. His father died suddenly at age 40 years. Blood pressure is 124/76 mm Hg and puls",
+   "text": "순환기 순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b A 19 year old man is brought to the emergency department after he fainted while sprinting during a basketball game. He regained consciousness within a minute. His father died suddenly at age 40 years. Blood pressure is 124/76 mm Hg and pulse is 72/min. A grade 3/6 crescendo decrescendo systolic murmur is heard best at the left lower sternal border; it does not radiate to the carotid arteries. The murmur becomes louder when he performs the Valsalva maneuver and when he stands from a squatting position, and softer with sustained handgrip. No ejection click is heard. Which of the following is the most likely diagnosis? A. Innocent flow murmur B. Hypertrophic cardiomyopathy C. Bicuspid aortic valve stenosis D. Mitral valve prolapse E. Ventricular septal defect"
+  },
+  {
+   "id": "imaging-2026-0516",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 오래 흡연한 사람의 기관지 상피 변화",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0516.md",
+   "snippet": "58세 남자가 3개월 전부터 계속되는 기침과 가래로 왔다. 하루 한 갑씩 40년 동안 담배를 피웠다. 체중 감소와 객혈은 없다. 활력징후는 정상이고 양쪽 폐에서 호기 끝에 약한 천명이 들린다. 흉부 CT 에서 종괴는 없다. 기관지내시경으로 얻은 기관지 점막 생검에서 원래의 섬모원주상피가 있던 자리에 성숙한 중층편평상피가 덮여 있고, 세포의 이형성과 기저막 침윤은 없다. 이 상피 변화에 대한 설명으로 가장 적절한 것은? A. 분",
+   "text": "병리·조직학 병리 — 오래 흡연한 사람의 기관지 상피 변화 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b 58세 남자가 3개월 전부터 계속되는 기침과 가래로 왔다. 하루 한 갑씩 40년 동안 담배를 피웠다. 체중 감소와 객혈은 없다. 활력징후는 정상이고 양쪽 폐에서 호기 끝에 약한 천명이 들린다. 흉부 CT 에서 종괴는 없다. 기관지내시경으로 얻은 기관지 점막 생검에서 원래의 섬모원주상피가 있던 자리에 성숙한 중층편평상피가 덮여 있고, 세포의 이형성과 기저막 침윤은 없다. 이 상피 변화에 대한 설명으로 가장 적절한 것은? A. 분화를 마친 섬모세포가 그대로 편평세포로 바뀐 것이다 B. 점액 분비와 섬모에 의한 청소 기능이 더 강해진다 C. 세포 수는 그대로이고 세포 크기만 커진 변화다 D. 자극이 없어지면 원래 상피로 돌아갈 수 있다 E. 이미 기저막을 넘은 침윤암으로 진행한 상태다"
   },
   {
    "id": "cn.ortho.ulnar-neuropathy.localization",

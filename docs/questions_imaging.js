@@ -2,6 +2,1173 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0524",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "안과 — 당뇨병 환자의 시력 저하와 안저 소견",
+  "type": "안과 — 당뇨병 환자의 시력 저하와 안저 소견",
+  "modality": "FUNDUS",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-02",
+  "vignette": "당뇨병으로 14년째 치료 중인 환자가 두 달 전부터 왼눈으로 글자가 흐릿하고 직선이 약간 휘어 보여 안과에 왔다. 갑자기 시야가 가려진 적은 없다. 당화혈색소는 8.9 % 이다. 왼눈 교정시력이 0.4, 오른눈 교정시력은 0.9 이다. 안압은 양쪽 모두 정상이고 상대구심동공운동장애는 없다. 산동 후 왼눈의 안저 사진은 그림과 같다.",
+  "question": "왼눈 시력 저하의 원인으로 가장 적절한 것은?",
+  "options": [
+   "당뇨황반부종",
+   "증식당뇨망막병증",
+   "망막중심정맥폐쇄",
+   "습성 연령관련황반변성",
+   "고혈압망막병증"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 안저 사진에서 시신경유두 이측의 황반 주위에 밝은 노란 경성삼출물이 여러 군집으로 모여 있고, 일부는 황반 중심에서 1 유두직경 안에 있다. 그 사이에 점상출혈·미세동맥류가 흩어져 있고 시신경유두나 망막의 신생혈관은 없다. 당뇨망막병증의 미세혈관 누출로 황반이 붓고 지질이 침착한 당뇨황반부종이 시력 저하와 변형시의 원인이다.\n- 원리: <b>왜 경성삼출물이 황반부종의 표지인가</b>: 당뇨병의 고혈당은 망막 모세혈관의 주피세포를 잃게 하고 기저막을 두껍게 해 미세동맥류가 생긴다. 이 약한 혈관벽으로 혈장이 새어 나오면 물은 다시 흡수되지만 <b>지단백(지질)</b>은 남아 노란 경성삼출물로 쌓인다. 그래서 경성삼출물의 군집·고리는 그 자리에 만성 누출과 부종이 있다는 흔적이다.<br> <b>왜 황반이 중요한가</b>: 원뿔세포가 모인 황반 중심이 부으면 시세포 배열이 흐트러져 중심 시력이 떨어지고 직선이 휘어 보인다(변형시). 주변부의 같은 병변은 시력에 영향이 적다.<br> <b>증식성과의 차이</b>: 증식당뇨망막병증의 시력 저하는 신생혈관 출혈(유리체출혈)이나 견인 망막박리로 갑자기 오고, 사진에서 유두나 망막 위의 가는 새 혈관 그물이 보인다. 이 사진에는 그것이 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">당뇨황반부종(정답)</th><th>증식당뇨망막병증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>핵심 병변</td><td><b>황반 주위 경성삼출물 군집</b>, 미세동맥류</td><td>유두·망막 신생혈관, 망막앞·유리체출혈</td></tr> <tr><td>시력 저하 양상</td><td>몇 주~몇 달에 걸친 흐림·변형시</td><td>갑작스러운 흐림·비문증(출혈)</td></tr> <tr><td>확인 검사</td><td>빛간섭단층촬영으로 황반 두께</td><td>형광안저혈관조영으로 신생혈관 누출</td></tr> </tbody></table> 둘은 함께 있을 수 있다 — 「신생혈관이 있는가」와 「황반이 붓는가」를 따로 묻는다.\n- 오답 이유:\n  - ② 증식당뇨망막병증은 시신경유두나 망막에 신생혈관이 보이거나 유리체출혈로 시력이 갑자기 떨어졌을 때 정답이다.\n  - ③ 망막중심정맥폐쇄는 한쪽 눈 네 사분면 모두에 불꽃 모양 출혈과 확장·구불구불한 정맥이 갑자기 나타났을 때 정답이 된다.\n  - ④ 습성 연령관련황반변성은 고령에서 황반 아래 회녹색 맥락막신생혈관막과 망막하출혈이 보이고 당뇨 병변이 없을 때 정답이다.\n  - ⑤ 고혈압망막병증은 동맥 협착·동정맥 교차 현상과 불꽃 출혈·면화반, 심하면 유두부종이 있을 때 정답이 된다.\n- 함정: 당뇨병 환자의 시력 저하를 곧 증식성 병변으로 생각하는 것 — 신생혈관이 없으면 황반의 누출을 본다.\n- 제작 가정: IDRiD 는 안저 사진과 망막병증 등급·황반부종 위험만 있고 나이·성별·병력이 없다 — 당뇨병 유병 기간·당화혈색소·시력 저하를 가정했다 (가정한 정보: 당뇨병으로 14년째 치료 중인 · 당화혈색소는 8.9 % 이다 · 왼눈 교정시력이 0.4)\n- 학습목표: 당뇨병 환자의 안저 사진에서 황반 가까이 모인 경성삼출물과 점상출혈을 읽고 신생혈관이 없음을 확인해 시력 저하의 원인을 당뇨황반부종으로 판단한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 417: Diabetes Mellitus: Complications · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 34: Disorders of the Eye\n\n## 출처\n- IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_328 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "안저 사진에서 시신경유두 이측의 황반 주위에 밝은 노란 경성삼출물이 여러 군집으로 모여 있고, 일부는 황반 중심에서 1 유두직경 안에 있다. 그 사이에 점상출혈·미세동맥류가 흩어져 있고 시신경유두나 망막의 신생혈관은 없다. 당뇨망막병증의 미세혈관 누출로 황반이 붓고 지질이 침착한 당뇨황반부종이 시력 저하와 변형시의 원인이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 경성삼출물이 황반부종의 표지인가</b>: 당뇨병의 고혈당은 망막 모세혈관의 주피세포를 잃게 하고 기저막을 두껍게 해 미세동맥류가 생긴다. 이 약한 혈관벽으로 혈장이 새어 나오면 물은 다시 흡수되지만 <b>지단백(지질)</b>은 남아 노란 경성삼출물로 쌓인다. 그래서 경성삼출물의 군집·고리는 그 자리에 만성 누출과 부종이 있다는 흔적이다.<br> <b>왜 황반이 중요한가</b>: 원뿔세포가 모인 황반 중심이 부으면 시세포 배열이 흐트러져 중심 시력이 떨어지고 직선이 휘어 보인다(변형시). 주변부의 같은 병변은 시력에 영향이 적다.<br> <b>증식성과의 차이</b>: 증식당뇨망막병증의 시력 저하는 신생혈관 출혈(유리체출혈)이나 견인 망막박리로 갑자기 오고, 사진에서 유두나 망막 위의 가는 새 혈관 그물이 보인다. 이 사진에는 그것이 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">당뇨황반부종(정답)</th><th>증식당뇨망막병증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>핵심 병변</td><td><b>황반 주위 경성삼출물 군집</b>, 미세동맥류</td><td>유두·망막 신생혈관, 망막앞·유리체출혈</td></tr> <tr><td>시력 저하 양상</td><td>몇 주~몇 달에 걸친 흐림·변형시</td><td>갑작스러운 흐림·비문증(출혈)</td></tr> <tr><td>확인 검사</td><td>빛간섭단층촬영으로 황반 두께</td><td>형광안저혈관조영으로 신생혈관 누출</td></tr> </tbody></table> 둘은 함께 있을 수 있다 — 「신생혈관이 있는가」와 「황반이 붓는가」를 따로 묻는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 증식당뇨망막병증은 시신경유두나 망막에 신생혈관이 보이거나 유리체출혈로 시력이 갑자기 떨어졌을 때 정답이다.\n③ 망막중심정맥폐쇄는 한쪽 눈 네 사분면 모두에 불꽃 모양 출혈과 확장·구불구불한 정맥이 갑자기 나타났을 때 정답이 된다.\n④ 습성 연령관련황반변성은 고령에서 황반 아래 회녹색 맥락막신생혈관막과 망막하출혈이 보이고 당뇨 병변이 없을 때 정답이다.\n⑤ 고혈압망막병증은 동맥 협착·동정맥 교차 현상과 불꽃 출혈·면화반, 심하면 유두부종이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "당뇨병 환자의 시력 저하를 곧 증식성 병변으로 생각하는 것 — 신생혈관이 없으면 황반의 누출을 본다."
+   },
+   {
+    "k": "제작 가정",
+    "v": "IDRiD 는 안저 사진과 망막병증 등급·황반부종 위험만 있고 나이·성별·병력이 없다 — 당뇨병 유병 기간·당화혈색소·시력 저하를 가정했다 (가정한 정보: 당뇨병으로 14년째 치료 중인 · 당화혈색소는 8.9 % 이다 · 왼눈 교정시력이 0.4)"
+   },
+   {
+    "k": "학습목표",
+    "v": "당뇨병 환자의 안저 사진에서 황반 가까이 모인 경성삼출물과 점상출혈을 읽고 신생혈관이 없음을 확인해 시력 저하의 원인을 당뇨황반부종으로 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 417: Diabetes Mellitus: Complications · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 34: Disorders of the Eye ## 출처 IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_328 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "황반 가까이 모인 경성삼출물과 미세동맥류, 신생혈관 없음 — 시력 저하의 원인은 당뇨황반부종이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "신생혈관과 망막앞·유리체출혈이 없다 — 증식성 병변이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 황반 주위 경성삼출물 군집(일부 중심 1 유두직경 안)과 점상출혈·미세동맥류",
+    "신생혈관 없음 + 서서히 생긴 흐림·변형시 → 당뇨황반부종"
+   ],
+   "key": [
+    {
+     "item": "영상: 황반 주위의 노란 경성삼출물 군집",
+     "why": "만성 누출로 쌓인 지질 — 황반부종의 흔적",
+     "also": []
+    },
+    {
+     "item": "직선이 약간 휘어 보여",
+     "why": "변형시 — 황반 병변",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 시신경유두·망막의 신생혈관 없음",
+     "why": "증식당뇨망막병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑자기 시야가 가려진 적은 없다",
+     "why": "유리체출혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "상대구심동공운동장애는 없다",
+     "why": "시신경·광범위 망막 병변 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "황반 주위 경성삼출물 군집과 미세동맥류가 있고 신생혈관은 없다. 서서히 생긴 흐림과 변형시는 당뇨황반부종 때문이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "시신경유두에 신생혈관이 있고 유리체출혈로 시력이 갑자기 떨어졌다면 증식당뇨망막병증"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0524.jpg",
+   "caption": "안저 사진, 원본 그대로 축소만 (IEEE DataPort, CC BY 4.0) ※ 발문의 임상 상황은 문항 구성을 위한 가정이다 — 원 데이터에는 나이·병력이 없다",
+   "alt": "FUNDUS 영상"
+  },
+  "attribution": {
+   "dataset": "Indian Diabetic Retinopathy Image Dataset (IDRiD)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://idrid.grand-challenge.org/Data/",
+   "asset_id": "IDRID-IDRiD_328",
+   "text": "IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_328"
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0519",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "산과 — 분만 진행 중 태아심박동 감시 기록의 해석",
+  "type": "산과 — 분만 진행 중 태아심박동 감시 기록의 해석",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-02",
+  "vignette": "A 31-year-old nulliparous woman at 39 weeks' gestation is admitted in spontaneous labor. Her pregnancy has been uncomplicated. Membranes ruptured 2 hours ago with clear fluid. She is not receiving oxytocin and has epidural analgesia. Temperature is 37.0°C and blood pressure is 118/72 mm Hg. The cervix is 6 cm dilated and 90% effaced, and the fetal head is at 0 station. Over the past 30 minutes, contractions have averaged four every 10 minutes. A representative 10-minute segment of the continuous fetal heart rate and uterine activity tracing is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Fetal scalp stimulation",
+   "Emergency cesarean delivery",
+   "Continue current labor management with ongoing fetal monitoring",
+   "Maternal repositioning and supplemental oxygen",
+   "Transcervical amnioinfusion"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The tracing shows a baseline fetal heart rate of about 140/min, moderate variability (amplitude about 6–10 beats/min), and no late or variable decelerations; contractions average four per 10 minutes, which is not tachysystole. This is a Category I (normal) tracing, which predicts normal fetal acid–base status at the time of observation, so routine labor management and monitoring continue without intervention.\n- 원리: <b>Why Category I is reassuring</b>: Moderate variability means the fetal autonomic nervous system — sympathetic and parasympathetic inputs to the sinus node — is intact and well oxygenated. Metabolic acidemia blunts this beat-to-beat control first, so a normal baseline with moderate variability and no late or variable decelerations strongly predicts a normal pH at that moment.<br> <b>Why intervene only in Category II or III</b>: Intrauterine resuscitation (repositioning, fluids, stopping oxytocin, oxygen) is used when decelerations or reduced variability suggest impaired uteroplacental or cord flow. Without them, intervention adds risk without benefit.<br> <b>Why the tracing is re-evaluated</b>: The category describes the present moment only; labor can change it, so monitoring continues.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Category I — continue (answer)</th><th>Category II — intrauterine resuscitation (closest distractor)</th></tr></thead><tbody> <tr><td>Baseline</td><td>110–160/min (here about 140)</td><td>Bradycardia without absent variability, or tachycardia</td></tr> <tr><td>Variability</td><td><b>Moderate (6–25)</b></td><td>Minimal, absent without decelerations, or marked</td></tr> <tr><td>Decelerations</td><td>None late or variable</td><td>Recurrent late or variable, prolonged</td></tr> </tbody></table> Read the tracing in the same order every time: baseline, variability, accelerations/decelerations, contractions — then categorize.\n- 오답 이유:\n  - (A) Fetal scalp stimulation is correct when variability is minimal or absent and fetal acidemia must be excluded by eliciting an acceleration.\n  - (B) Emergency cesarean delivery is correct for a Category III tracing (absent variability with recurrent decelerations, or sinusoidal pattern) that does not resolve.\n  - (D) Repositioning and oxygen are correct for a Category II tracing, such as recurrent late decelerations or minimal variability.\n  - (E) Amnioinfusion is correct for recurrent variable decelerations from cord compression, which this tracing does not show.\n- 함정: Intervening because the uterine activity line looks busy — four contractions per 10 minutes averaged over 30 minutes is normal.\n- 학습목표: 정상 기저 심박수·중등도 변이도·감속 없음의 분만 중 태아심박동 기록을 범주 I 로 분류하고 진통 관리를 그대로 이어 간다\n- 근거·출처: Cunningham FG, Leveno KJ, Dashe JS, et al. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 24: Intrapartum Assessment\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1439 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The tracing shows a baseline fetal heart rate of about 140/min, moderate variability (amplitude about 6–10 beats/min), and no late or variable decelerations; contractions average four per 10 minutes, which is not tachysystole. This is a Category I (normal) tracing, which predicts normal fetal acid–base status at the time of observation, so routine labor management and monitoring continue without intervention."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why Category I is reassuring</b>: Moderate variability means the fetal autonomic nervous system — sympathetic and parasympathetic inputs to the sinus node — is intact and well oxygenated. Metabolic acidemia blunts this beat-to-beat control first, so a normal baseline with moderate variability and no late or variable decelerations strongly predicts a normal pH at that moment.<br> <b>Why intervene only in Category II or III</b>: Intrauterine resuscitation (repositioning, fluids, stopping oxytocin, oxygen) is used when decelerations or reduced variability suggest impaired uteroplacental or cord flow. Without them, intervention adds risk without benefit.<br> <b>Why the tracing is re-evaluated</b>: The category describes the present moment only; labor can change it, so monitoring continues."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Category I — continue (answer)</th><th>Category II — intrauterine resuscitation (closest distractor)</th></tr></thead><tbody> <tr><td>Baseline</td><td>110–160/min (here about 140)</td><td>Bradycardia without absent variability, or tachycardia</td></tr> <tr><td>Variability</td><td><b>Moderate (6–25)</b></td><td>Minimal, absent without decelerations, or marked</td></tr> <tr><td>Decelerations</td><td>None late or variable</td><td>Recurrent late or variable, prolonged</td></tr> </tbody></table> Read the tracing in the same order every time: baseline, variability, accelerations/decelerations, contractions — then categorize."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Fetal scalp stimulation is correct when variability is minimal or absent and fetal acidemia must be excluded by eliciting an acceleration.\n(B) Emergency cesarean delivery is correct for a Category III tracing (absent variability with recurrent decelerations, or sinusoidal pattern) that does not resolve.\n(D) Repositioning and oxygen are correct for a Category II tracing, such as recurrent late decelerations or minimal variability.\n(E) Amnioinfusion is correct for recurrent variable decelerations from cord compression, which this tracing does not show."
+   },
+   {
+    "k": "함정",
+    "v": "Intervening because the uterine activity line looks busy — four contractions per 10 minutes averaged over 30 minutes is normal."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 기저 심박수·중등도 변이도·감속 없음의 분만 중 태아심박동 기록을 범주 I 로 분류하고 진통 관리를 그대로 이어 간다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cunningham FG, Leveno KJ, Dashe JS, et al. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 24: Intrapartum Assessment ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1439 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Normal baseline, moderate variability and no decelerations make a Category I tracing — continue routine management",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Intrauterine resuscitation is for Category II features (decelerations or reduced variability), which are absent",
+   "steps": 2,
+   "chain": [
+    "영상: baseline about 140/min, moderate variability, no late or variable decelerations",
+    "Category I with normal contraction frequency → continue labor management and monitoring"
+   ],
+   "key": [
+    {
+     "item": "영상: baseline about 140/min with moderate variability",
+     "why": "Intact autonomic control — normal oxygenation",
+     "also": []
+    },
+    {
+     "item": "영상: no late or variable decelerations",
+     "why": "No sign of impaired placental or cord flow",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "contractions have averaged four every 10 minutes",
+     "why": "Not tachysystole (> 5 per 10 min)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She is not receiving oxytocin",
+     "why": "Nothing to stop",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Membranes ruptured 2 hours ago with clear fluid",
+     "why": "No meconium — consistent but not decisive",
+     "also": []
+    },
+    {
+     "item": "has epidural analgesia",
+     "why": "Can cause hypotension and decelerations, which are absent here",
+     "also": []
+    }
+   ],
+   "summary": "Baseline about 140/min, moderate variability and no decelerations with normal contraction frequency is a Category I tracing; labor management continues with monitoring.",
+   "switch": {
+    "choice": "D",
+    "condition": "If recurrent late decelerations appeared after contractions, a Category II tracing calling for intrauterine resuscitation"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0519.png",
+   "caption": "Fetal heart rate (top) and uterine activity (bottom) during labor, a 10-minute segment, bold vertical lines = 1 min (PhysioNet CTU-UHB, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1439_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1439"
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0518",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "호흡기 — 산소가 필요한 바이러스 폐렴의 약물 치료",
+  "type": "호흡기 — 산소가 필요한 바이러스 폐렴의 약물 치료",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-02",
+  "vignette": "61세 여자가 5일 전부터 열과 마른기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 체온 38.2℃, 혈압 132/78 mmHg, 맥박 102회/분, 호흡 26회/분이고 실내 공기에서 산소포화도는 91 % 이다. 양쪽 아래 폐에서 수포음이 들린다. 비인두 검체의 SARS-CoV-2 핵산증폭검사는 양성이다. C-반응단백 6.2 mg/dL 이고 프로칼시토닌은 정상이다. 흉부 X선은 그림과 같다. 입원시켜 코삽관으로 산소를 주기 시작하였다.",
+  "question": "이 환자에게 가장 적절한 약물 치료는?",
+  "options": [
+   "덱사메타손",
+   "니르마트렐비르·리토나비르",
+   "토실리주맙",
+   "아지트로마이신",
+   "오셀타미비르"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 폐용적이 작고 양쪽 하폐야(오른쪽 우세)와 중폐야 바깥쪽에 반점·그물 모양 음영이 퍼져 있다 — 핵산증폭검사 양성과 함께 코로나19 폐렴이다. 실내 공기 산소포화도 91 % 로 산소 보충이 필요한 입원 환자이므로, 사망률을 낮추는 것이 입증된 덱사메타손(6 mg 하루 1회, 최대 10일)을 준다(렘데시비르를 함께 쓸 수 있다).\n- 원리: <b>왜 이 시기에 스테로이드인가</b>: 코로나19 는 초기에 바이러스 증식이 주를 이루다가, 산소가 필요해지는 시기에는 <b>숙주의 과도한 염증 반응</b>이 폐 손상을 이끈다. 그래서 산소가 필요한 환자에서 덱사메타손은 염증을 눌러 28일 사망률을 낮췄고(RECOVERY), 산소가 필요 없는 환자에서는 이득이 없고 해로운 경향이 있었다.<br> <b>왜 니르마트렐비르는 아닌가</b>: 단백분해효소 억제제는 바이러스가 늘어나는 초기, 곧 <b>입원하지 않은 고위험 경증 환자</b>에게 증상 5일 안에 주어 입원을 줄이는 약이다. 이미 산소가 필요한 단계에서의 이득은 입증되지 않았다.<br> <b>토실리주맙의 자리</b>: 덱사메타손을 쓰는데도 산소 요구가 빠르게 늘고 염증 지표가 높을 때 더한다 — 첫 약이 아니다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">덱사메타손(정답)</th><th>니르마트렐비르·리토나비르(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>산소가 필요한 입원 환자</b></td><td>입원하지 않은 고위험 경증·중등증</td></tr> <tr><td>시기</td><td>염증기</td><td>증상 5일 이내 바이러스 증식기</td></tr> <tr><td>효과</td><td>사망률 감소</td><td>입원·사망 위험 감소(외래)</td></tr> </tbody></table> 「산소가 필요한가」가 갈림길이다 — 필요하면 덱사메타손, 필요 없으면 덱사메타손을 쓰지 않는다.\n- 오답 이유:\n  - ② 니르마트렐비르·리토나비르는 산소 보충이 필요 없는 외래 고위험 환자가 증상 5일 안에 왔을 때 정답이다.\n  - ③ 토실리주맙은 덱사메타손을 쓰는 중에도 산소 요구가 빠르게 늘고 C-반응단백이 높은 환자에게 더할 때 정답이 된다.\n  - ④ 아지트로마이신은 세균성 폐렴이 함께 의심될 때(프로칼시토닌 상승·화농성 가래) 경험적 항생제로 정답이 될 수 있다.\n  - ⑤ 오셀타미비르는 인플루엔자 검사가 양성이거나 유행기에 인플루엔자가 의심될 때 정답이다 — 이 환자는 코로나19 양성이다.\n- 함정: 입원한 코로나19 환자에게 외래용 항바이러스제를 고르는 것 — 산소 요구 여부가 약을 정한다.\n- 학습목표: 산소 보충이 필요한 입원 코로나19 폐렴 환자에게 덱사메타손을 투여하고, 외래 경증용 항바이러스제·면역조절제의 적응과 구분한다\n- 근거·출처: RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704. PMID: 32678530 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …50585929 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 폐용적이 작고 양쪽 하폐야(오른쪽 우세)와 중폐야 바깥쪽에 반점·그물 모양 음영이 퍼져 있다 — 핵산증폭검사 양성과 함께 코로나19 폐렴이다. 실내 공기 산소포화도 91 % 로 산소 보충이 필요한 입원 환자이므로, 사망률을 낮추는 것이 입증된 덱사메타손(6 mg 하루 1회, 최대 10일)을 준다(렘데시비르를 함께 쓸 수 있다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이 시기에 스테로이드인가</b>: 코로나19 는 초기에 바이러스 증식이 주를 이루다가, 산소가 필요해지는 시기에는 <b>숙주의 과도한 염증 반응</b>이 폐 손상을 이끈다. 그래서 산소가 필요한 환자에서 덱사메타손은 염증을 눌러 28일 사망률을 낮췄고(RECOVERY), 산소가 필요 없는 환자에서는 이득이 없고 해로운 경향이 있었다.<br> <b>왜 니르마트렐비르는 아닌가</b>: 단백분해효소 억제제는 바이러스가 늘어나는 초기, 곧 <b>입원하지 않은 고위험 경증 환자</b>에게 증상 5일 안에 주어 입원을 줄이는 약이다. 이미 산소가 필요한 단계에서의 이득은 입증되지 않았다.<br> <b>토실리주맙의 자리</b>: 덱사메타손을 쓰는데도 산소 요구가 빠르게 늘고 염증 지표가 높을 때 더한다 — 첫 약이 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">덱사메타손(정답)</th><th>니르마트렐비르·리토나비르(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>산소가 필요한 입원 환자</b></td><td>입원하지 않은 고위험 경증·중등증</td></tr> <tr><td>시기</td><td>염증기</td><td>증상 5일 이내 바이러스 증식기</td></tr> <tr><td>효과</td><td>사망률 감소</td><td>입원·사망 위험 감소(외래)</td></tr> </tbody></table> 「산소가 필요한가」가 갈림길이다 — 필요하면 덱사메타손, 필요 없으면 덱사메타손을 쓰지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 니르마트렐비르·리토나비르는 산소 보충이 필요 없는 외래 고위험 환자가 증상 5일 안에 왔을 때 정답이다.\n③ 토실리주맙은 덱사메타손을 쓰는 중에도 산소 요구가 빠르게 늘고 C-반응단백이 높은 환자에게 더할 때 정답이 된다.\n④ 아지트로마이신은 세균성 폐렴이 함께 의심될 때(프로칼시토닌 상승·화농성 가래) 경험적 항생제로 정답이 될 수 있다.\n⑤ 오셀타미비르는 인플루엔자 검사가 양성이거나 유행기에 인플루엔자가 의심될 때 정답이다 — 이 환자는 코로나19 양성이다."
+   },
+   {
+    "k": "함정",
+    "v": "입원한 코로나19 환자에게 외래용 항바이러스제를 고르는 것 — 산소 요구 여부가 약을 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "산소 보충이 필요한 입원 코로나19 폐렴 환자에게 덱사메타손을 투여하고, 외래 경증용 항바이러스제·면역조절제의 적응과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704. PMID: 32678530 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …50585929 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "산소 보충이 필요한 입원 코로나19 폐렴에는 덱사메타손을 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "니르마트렐비르는 산소가 필요 없는 외래 고위험 환자의 약 — 이 환자는 실내 공기 산소포화도 91 % 로 산소가 필요하다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 하폐야·중폐야 바깥쪽 반점 음영 + 핵산증폭검사 양성 → 코로나19 폐렴",
+    "실내 공기 산소포화도 91 %, 산소 투여 시작 → 산소가 필요한 입원 환자 → 덱사메타손"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 하폐야(오른쪽 우세)와 중폐야 바깥쪽의 반점·그물 모양 음영",
+     "why": "폐렴 — 바이러스 폐렴의 전형적 분포",
+     "also": []
+    },
+    {
+     "item": "실내 공기에서 산소포화도는 91 % 이다",
+     "why": "산소 보충 필요 — 치료 단계를 정한다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "SARS-CoV-2 핵산증폭검사는 양성이다",
+     "why": "원인 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로칼시토닌은 정상이다",
+     "why": "세균 동반 감염 가능성을 낮춘다 — 아지트로마이신의 근거가 약하다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "C-반응단백 6.2 mg/dL",
+     "why": "토실리주맙을 고려할 만큼 산소 요구가 빠르게 늘지는 않았다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압과 제2형 당뇨병으로 약을 먹고 있다",
+     "why": "중증화 위험 인자 — 덱사메타손 사용 시 혈당 감시",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 하폐야 반점 음영과 핵산증폭검사 양성으로 코로나19 폐렴이다. 실내 공기 산소포화도 91 % 로 산소가 필요한 입원 환자이므로 덱사메타손을 준다.",
+   "switch": {
+    "choice": "B",
+    "condition": "산소포화도가 정상이어서 입원하지 않는 고위험 환자로 증상 5일 안에 왔다면 니르마트렐비르·리토나비르"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0518.png",
+   "caption": "흉부 X선 정면상 1장 (TCIA, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1360879092067738820560450585929",
+   "asset_id": "TCIA-COVID19_AR-27623976126665",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …50585929"
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0523",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "부인과 — 배란장애 불임의 배란 유도",
+  "type": "부인과 — 배란장애 불임의 배란 유도",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-02",
+  "vignette": "A 27-year-old woman comes to the office because she has been unable to conceive for 14 months despite regular unprotected intercourse. Her menstrual cycles occur every 45 to 90 days. Six months of diet and exercise lowered her weight by 4 kg. BMI is 32 kg/m². She has coarse hair on the upper lip and chin. Serum TSH and prolactin concentrations are within the reference ranges, and the 17-hydroxyprogesterone level is normal. Transvaginal ultrasonography shows more than 20 follicles in each ovary. Her partner's semen analysis is normal, and hysterosalpingography shows patent fallopian tubes.",
+  "question": "Which of the following is the most appropriate pharmacotherapy to achieve pregnancy?",
+  "options": [
+   "Spironolactone",
+   "Letrozole",
+   "Clomiphene citrate",
+   "Metformin",
+   "Combined oral contraceptive"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Oligomenorrhea, clinical hyperandrogenism, and polycystic ovarian morphology — with thyroid disease, hyperprolactinemia, and nonclassic congenital adrenal hyperplasia excluded — meet the Rotterdam criteria for polycystic ovary syndrome. With tubal and male factors normal, infertility is due to anovulation. Letrozole is the first-line ovulation induction agent because it produced more live births than clomiphene in women with PCOS.\n- 원리: <b>How letrozole induces ovulation</b>: Letrozole blocks aromatase, so less androgen is converted to estradiol. The hypothalamus senses low estrogen and raises GnRH pulses and pituitary FSH, which recruits a follicle. Because the drug is short-acting and does not occupy estrogen receptors, estrogen rises normally as the follicle grows, feedback is restored, and usually a single dominant follicle forms.<br> <b>Why clomiphene does less well</b>: Clomiphene blocks hypothalamic estrogen receptors for weeks; the long-lasting antiestrogen effect thins the endometrium and thickens cervical mucus, so ovulation does not always translate into pregnancy, and multiple follicles are more frequent.<br> <b>Where metformin fits</b>: It improves insulin resistance and may restore some cycles, but alone it gives fewer live births than either ovulation-inducing drug.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Letrozole (answer)</th><th>Clomiphene citrate (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Aromatase inhibitor — lowers estradiol briefly</td><td>Estrogen receptor antagonist — long half-life</td></tr> <tr><td>Live birth in PCOS</td><td><b>Higher</b></td><td>Lower</td></tr> <tr><td>Endometrium</td><td>Not thinned</td><td>Can be thinned by antiestrogen effect</td></tr> </tbody></table> Both trigger FSH release by making the hypothalamus \"see\" less estrogen — the difference is how long that signal lasts.\n- 오답 이유:\n  - (A) Spironolactone is correct for hirsutism in a woman using reliable contraception; it is avoided when trying to conceive because it can feminize a male fetus.\n  - (C) Clomiphene citrate would be correct if letrozole were unavailable or not tolerated; it still induces ovulation but with fewer live births in PCOS.\n  - (D) Metformin would be correct for glucose intolerance or as an adjunct to ovulation induction, not as the main drug when pregnancy is the goal.\n  - (E) A combined oral contraceptive is correct for cycle control and hirsutism when she does not want pregnancy — it prevents ovulation.\n- 함정: Treating the hirsutism instead of the stated goal — the question asks for pregnancy, so ovulation induction comes first.\n- 학습목표: 다낭난소증후군의 배란장애 불임에서 생활습관 교정 뒤 첫 배란 유도제로 레트로졸을 고르고 클로미펜과의 차이를 설명한다\n- 근거·출처: Legro RS, Brzyski RG, Diamond MP, et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome. N Engl J Med. 2014;371(2):119-129. PMID: 25006718 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 408: Infertility and Contraception",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Oligomenorrhea, clinical hyperandrogenism, and polycystic ovarian morphology — with thyroid disease, hyperprolactinemia, and nonclassic congenital adrenal hyperplasia excluded — meet the Rotterdam criteria for polycystic ovary syndrome. With tubal and male factors normal, infertility is due to anovulation. Letrozole is the first-line ovulation induction agent because it produced more live births than clomiphene in women with PCOS."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How letrozole induces ovulation</b>: Letrozole blocks aromatase, so less androgen is converted to estradiol. The hypothalamus senses low estrogen and raises GnRH pulses and pituitary FSH, which recruits a follicle. Because the drug is short-acting and does not occupy estrogen receptors, estrogen rises normally as the follicle grows, feedback is restored, and usually a single dominant follicle forms.<br> <b>Why clomiphene does less well</b>: Clomiphene blocks hypothalamic estrogen receptors for weeks; the long-lasting antiestrogen effect thins the endometrium and thickens cervical mucus, so ovulation does not always translate into pregnancy, and multiple follicles are more frequent.<br> <b>Where metformin fits</b>: It improves insulin resistance and may restore some cycles, but alone it gives fewer live births than either ovulation-inducing drug."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Letrozole (answer)</th><th>Clomiphene citrate (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Aromatase inhibitor — lowers estradiol briefly</td><td>Estrogen receptor antagonist — long half-life</td></tr> <tr><td>Live birth in PCOS</td><td><b>Higher</b></td><td>Lower</td></tr> <tr><td>Endometrium</td><td>Not thinned</td><td>Can be thinned by antiestrogen effect</td></tr> </tbody></table> Both trigger FSH release by making the hypothalamus \"see\" less estrogen — the difference is how long that signal lasts."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Spironolactone is correct for hirsutism in a woman using reliable contraception; it is avoided when trying to conceive because it can feminize a male fetus.\n(C) Clomiphene citrate would be correct if letrozole were unavailable or not tolerated; it still induces ovulation but with fewer live births in PCOS.\n(D) Metformin would be correct for glucose intolerance or as an adjunct to ovulation induction, not as the main drug when pregnancy is the goal.\n(E) A combined oral contraceptive is correct for cycle control and hirsutism when she does not want pregnancy — it prevents ovulation."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the hirsutism instead of the stated goal — the question asks for pregnancy, so ovulation induction comes first."
+   },
+   {
+    "k": "학습목표",
+    "v": "다낭난소증후군의 배란장애 불임에서 생활습관 교정 뒤 첫 배란 유도제로 레트로졸을 고르고 클로미펜과의 차이를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Legro RS, Brzyski RG, Diamond MP, et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome. N Engl J Med. 2014;371(2):119-129. PMID: 25006718 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 408: Infertility and Contraception"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Anovulatory infertility from PCOS after lifestyle change is treated first with letrozole",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "Letrozole gives more live births than clomiphene in PCOS",
+   "steps": 3,
+   "chain": [
+    "Oligomenorrhea + hirsutism + > 20 follicles per ovary, other causes excluded → PCOS",
+    "Normal semen analysis and patent tubes → anovulation is the cause of infertility",
+    "Goal is pregnancy → first-line ovulation induction with letrozole"
+   ],
+   "key": [
+    {
+     "item": "Her menstrual cycles occur every 45 to 90 days",
+     "why": "Oligo-ovulation",
+     "also": []
+    },
+    {
+     "item": "coarse hair on the upper lip and chin",
+     "why": "Clinical hyperandrogenism",
+     "also": []
+    },
+    {
+     "item": "more than 20 follicles in each ovary",
+     "why": "Polycystic ovarian morphology",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the 17-hydroxyprogesterone level is normal",
+     "why": "Lowers the likelihood of nonclassic congenital adrenal hyperplasia",
+     "also": []
+    },
+    {
+     "item": "hysterosalpingography shows patent fallopian tubes",
+     "why": "Lowers the likelihood of tubal infertility",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "BMI is 32 kg/m²",
+     "why": "Common in PCOS; lifestyle change has been tried",
+     "also": []
+    }
+   ],
+   "summary": "Oligomenorrhea, hirsutism and polycystic ovaries with other causes excluded indicate PCOS; with normal tubes and semen, letrozole is the first-line drug to achieve pregnancy.",
+   "switch": {
+    "choice": "E",
+    "condition": "If she did not want pregnancy and wanted cycle control and less hirsutism, a combined oral contraceptive"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0522",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "감염 — 가을철 열성 질환과 가피, 임신부의 치료",
+  "type": "감염 — 가을철 열성 질환과 가피, 임신부의 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-02",
+  "vignette": "29세 여자가 5일 전부터 열·두통·근육통이 있고 이틀 전부터 몸통에 발진이 생겨 왔다. 임신 26주이다. 10월 말 시댁 밭에서 들깨를 베었다. 체온 39.1℃, 혈압 112/68 mmHg, 맥박 104회/분이다. 몸통에 붉은 반점구진발진이 퍼져 있고, 왼쪽 겨드랑이에 지름 6 mm 의 검은 딱지(가피)와 그 주위 홍반이 있으며 같은 쪽 겨드랑이 림프절이 만져진다. AST 88 U/L, ALT 76 U/L, 혈소판 112,000/mm³ 이다. 태아 심박동은 정상이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "독시사이클린",
+   "클로람페니콜",
+   "세프트리악손",
+   "시프로플록사신",
+   "아지트로마이신"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 가을철 밭일 뒤의 고열·두통·근육통, 몸통의 반점구진발진, 겨드랑이의 검은 가피와 국소 림프절 비대, 경한 간효소 상승·혈소판 감소는 쯔쯔가무시증이다. 표준 치료는 독시사이클린이지만, 임신부에게는 태아 안전성과 효과가 확인된 아지트로마이신을 준다.\n- 원리: <b>왜 가피가 생기는가</b>: 털진드기 유충이 피부에 붙어 체액을 빨 때 <i>Orientia tsutsugamushi</i> 가 들어가 그 자리의 혈관 내피에서 증식한다. 국소 혈관염과 괴사로 검은 딱지(가피)가 생기고, 균이 림프관을 따라 퍼져 국소 림프절이 붓는다. 가피는 겨드랑이·사타구니·허리띠 자리처럼 <b>옷이 조이고 습한 곳</b>에 잘 생겨 찾아야 보인다.<br> <b>왜 베타락탐이 듣지 않는가</b>: <i>Orientia</i> 는 세포 안에 사는 균이고 세포벽에 펩티도글리칸이 거의 없어 세포벽 합성 억제제가 작용할 표적이 없다. 세포 안으로 잘 들어가는 테트라사이클린·마크로라이드·클로람페니콜·리팜핀이 듣는다.<br> <b>임신부에서의 선택</b>: 테트라사이클린 계열은 태아 치아·뼈 침착 우려로 임신 중 피해 왔고, 클로람페니콜은 회색아기증후군 위험이 있다. 아지트로마이신은 임신 중 사용 경험이 많고 쯔쯔가무시증에서 효과가 확인되었다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">아지트로마이신(정답)</th><th>독시사이클린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>임신부·소아</b>(또는 독시사이클린 불내성)</td><td>임신하지 않은 성인의 표준 치료</td></tr> <tr><td>임신 중 우려</td><td>사용 경험이 많아 선호</td><td>태아 치아·뼈 침착 우려로 피해 옴</td></tr> <tr><td>효과</td><td>쯔쯔가무시증에서 동등</td><td>가장 빠른 해열</td></tr> </tbody></table> 같은 쯔쯔가무시증이라도 「임신」 한 줄이 약을 바꾼다 — 진단과 환자 조건을 따로 확인한다.\n- 오답 이유:\n  - ① 독시사이클린은 같은 쯔쯔가무시증이 임신하지 않은 성인에게 생겼을 때 표준 치료로 정답이다.\n  - ② 클로람페니콜은 리케치아에 듣지만 골수 억제와 회색아기증후군 위험이 있어 다른 약을 쓸 수 없을 때에만 고려한다.\n  - ③ 세프트리악손은 렙토스피라증처럼 세포 밖 세균이 원인인 열성 질환이 의심될 때 정답이 된다 — 세포 안 균인 쯔쯔가무시에는 듣지 않는다.\n  - ④ 시프로플록사신은 장티푸스 등에서 쓰이지만 쯔쯔가무시증에서는 치료 실패가 많고 임신 중에도 피한다 — 다른 조건에서도 첫 선택이 되기 어렵다.\n- 함정: 쯔쯔가무시증이면 곧 독시사이클린 — 임신 26주라는 조건을 놓치는 것.\n- 학습목표: 가을철 야외 활동 뒤 열·발진·가피로 쯔쯔가무시증을 진단하고 임신부에게는 독시사이클린 대신 아지트로마이신을 준다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 192: Rickettsial Diseases",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "가을철 밭일 뒤의 고열·두통·근육통, 몸통의 반점구진발진, 겨드랑이의 검은 가피와 국소 림프절 비대, 경한 간효소 상승·혈소판 감소는 쯔쯔가무시증이다. 표준 치료는 독시사이클린이지만, 임신부에게는 태아 안전성과 효과가 확인된 아지트로마이신을 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 가피가 생기는가</b>: 털진드기 유충이 피부에 붙어 체액을 빨 때 <i>Orientia tsutsugamushi</i> 가 들어가 그 자리의 혈관 내피에서 증식한다. 국소 혈관염과 괴사로 검은 딱지(가피)가 생기고, 균이 림프관을 따라 퍼져 국소 림프절이 붓는다. 가피는 겨드랑이·사타구니·허리띠 자리처럼 <b>옷이 조이고 습한 곳</b>에 잘 생겨 찾아야 보인다.<br> <b>왜 베타락탐이 듣지 않는가</b>: <i>Orientia</i> 는 세포 안에 사는 균이고 세포벽에 펩티도글리칸이 거의 없어 세포벽 합성 억제제가 작용할 표적이 없다. 세포 안으로 잘 들어가는 테트라사이클린·마크로라이드·클로람페니콜·리팜핀이 듣는다.<br> <b>임신부에서의 선택</b>: 테트라사이클린 계열은 태아 치아·뼈 침착 우려로 임신 중 피해 왔고, 클로람페니콜은 회색아기증후군 위험이 있다. 아지트로마이신은 임신 중 사용 경험이 많고 쯔쯔가무시증에서 효과가 확인되었다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">아지트로마이신(정답)</th><th>독시사이클린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>임신부·소아</b>(또는 독시사이클린 불내성)</td><td>임신하지 않은 성인의 표준 치료</td></tr> <tr><td>임신 중 우려</td><td>사용 경험이 많아 선호</td><td>태아 치아·뼈 침착 우려로 피해 옴</td></tr> <tr><td>효과</td><td>쯔쯔가무시증에서 동등</td><td>가장 빠른 해열</td></tr> </tbody></table> 같은 쯔쯔가무시증이라도 「임신」 한 줄이 약을 바꾼다 — 진단과 환자 조건을 따로 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 독시사이클린은 같은 쯔쯔가무시증이 임신하지 않은 성인에게 생겼을 때 표준 치료로 정답이다.\n② 클로람페니콜은 리케치아에 듣지만 골수 억제와 회색아기증후군 위험이 있어 다른 약을 쓸 수 없을 때에만 고려한다.\n③ 세프트리악손은 렙토스피라증처럼 세포 밖 세균이 원인인 열성 질환이 의심될 때 정답이 된다 — 세포 안 균인 쯔쯔가무시에는 듣지 않는다.\n④ 시프로플록사신은 장티푸스 등에서 쓰이지만 쯔쯔가무시증에서는 치료 실패가 많고 임신 중에도 피한다 — 다른 조건에서도 첫 선택이 되기 어렵다."
+   },
+   {
+    "k": "함정",
+    "v": "쯔쯔가무시증이면 곧 독시사이클린 — 임신 26주라는 조건을 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "가을철 야외 활동 뒤 열·발진·가피로 쯔쯔가무시증을 진단하고 임신부에게는 독시사이클린 대신 아지트로마이신을 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 192: Rickettsial Diseases"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "임신부의 쯔쯔가무시증에는 아지트로마이신을 준다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "독시사이클린은 표준 치료지만 임신 26주 환자에게는 아지트로마이신을 고른다",
+   "steps": 2,
+   "chain": [
+    "가을 밭일 + 열·발진 + 겨드랑이 가피·국소 림프절 → 쯔쯔가무시증",
+    "임신 26주 → 독시사이클린 대신 아지트로마이신"
+   ],
+   "key": [
+    {
+     "item": "검은 딱지(가피)",
+     "why": "털진드기 물린 자리 — 쯔쯔가무시증의 핵심 소견",
+     "also": []
+    },
+    {
+     "item": "10월 말 시댁 밭에서 들깨를 베었다",
+     "why": "유행 시기·노출",
+     "also": []
+    },
+    {
+     "item": "같은 쪽 겨드랑이 림프절이 만져진다",
+     "why": "가피 주위 국소 림프절염",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "임신 26주이다",
+     "why": "약 선택을 바꾸는 조건",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈소판 112,000/mm³",
+     "why": "리케치아 감염에 흔한 경한 감소 — 진단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "태아 심박동은 정상이다",
+     "why": "태아 상태 — 약 선택에 직접 영향은 적다",
+     "also": []
+    }
+   ],
+   "summary": "가을 밭일 뒤 열·발진·겨드랑이 가피로 쯔쯔가무시증이다. 임신 26주이므로 독시사이클린 대신 아지트로마이신을 준다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 증상의 환자가 임신하지 않은 성인이라면 독시사이클린"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0521",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "소화기 — 간경변 환자의 자발세균복막염과 신부전 예방",
+  "type": "소화기 — 간경변 환자의 자발세균복막염과 신부전 예방",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-02",
+  "vignette": "A 56-year-old man with alcohol-associated cirrhosis comes to the emergency department because of increasing abdominal girth and diffuse abdominal discomfort for 3 days. He takes spironolactone and furosemide. Temperature is 38.0°C, blood pressure is 104/64 mm Hg, and pulse is 96/min. The abdomen is distended with shifting dullness and mild diffuse tenderness without rigidity. Diagnostic paracentesis shows a polymorphonuclear leukocyte count of 480/µL and a total protein of 0.8 g/dL; Gram stain shows no organisms. Serum creatinine is 1.6 mg/dL, blood urea nitrogen 34 mg/dL, and total bilirubin 4.8 mg/dL. Intravenous cefotaxime is started and diuretics are held.",
+  "question": "In addition, which of the following is most likely to reduce this patient's risk of renal failure and death?",
+  "options": [
+   "Intravenous furosemide",
+   "Oral lactulose",
+   "Exploratory laparotomy",
+   "Intravenous albumin on day 1 and day 3",
+   "Large-volume paracentesis"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: An ascitic neutrophil count of 250/µL or more without a surgical source is spontaneous bacterial peritonitis. About a third of patients develop renal failure from worsening effective arterial underfilling. In patients with serum creatinine above 1 mg/dL, BUN above 30 mg/dL, or bilirubin above 4 mg/dL — all present here — intravenous albumin (1.5 g/kg on day 1 and 1 g/kg on day 3) added to cefotaxime reduced renal failure and in-hospital mortality.\n- 원리: <b>Why SBP causes kidney failure</b>: Cirrhosis already causes splanchnic vasodilation and low effective arterial volume. Infection releases cytokines and nitric oxide that widen vessels further, so the renin–angiotensin and sympathetic systems constrict the renal arteries — a hepatorenal-type physiology.<br> <b>Why albumin helps</b>: Albumin expands plasma volume and also binds endotoxin and nitric oxide-related mediators, supporting arterial filling and renal perfusion. The benefit was shown in the high-risk group (creatinine > 1, BUN > 30, bilirubin > 4).<br> <b>Why low ascitic protein matters later</b>: Protein below 1.5 g/dL means few opsonins in the fluid; after recovery this patient needs long-term prophylaxis against recurrence.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">IV albumin with antibiotics (answer)</th><th>Large-volume paracentesis (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on circulation</td><td><b>Expands effective arterial volume</b></td><td>Removes volume; can worsen arterial underfilling</td></tr> <tr><td>Proven benefit</td><td>Lower renal failure and mortality in SBP with Cr > 1, BUN > 30 or bilirubin > 4</td><td>Relief of tense ascites (with albumin if > 5 L)</td></tr> <tr><td>Timing here</td><td>Day 1 and day 3</td><td>Not for an infected, hypotensive patient's kidney protection</td></tr> </tbody></table> In SBP the goal is to protect the kidney by filling the circulation, not by removing fluid.\n- 오답 이유:\n  - (A) Intravenous furosemide is correct for volume overload with adequate renal perfusion — here it would deepen arterial underfilling.\n  - (B) Oral lactulose is correct when hepatic encephalopathy is present, such as confusion and asterixis, which this patient does not have.\n  - (C) Exploratory laparotomy is correct for secondary peritonitis, suggested by polymicrobial Gram stain, very high protein, or low glucose in the fluid.\n  - (E) Large-volume paracentesis is correct for tense, symptomatic ascites without infection and is paired with albumin when more than 5 L is removed.\n- 함정: Choosing to remove more ascites or keep diuretics in SBP — the kidney is threatened by underfilling, so albumin is given.\n- 학습목표: 복수 다형핵백혈구 250/µL 이상으로 자발세균복막염을 진단하고, 혈청 크레아티닌·BUN·빌리루빈이 높은 환자에게 항생제와 함께 알부민을 주어 신부전과 사망을 줄인다\n- 근거·출처: Sort P, Navasa M, Arroyo V, et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and spontaneous bacterial peritonitis. N Engl J Med. 1999;341(6):403-409. PMID: 10432325 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 355: Cirrhosis and Its Complications",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An ascitic neutrophil count of 250/µL or more without a surgical source is spontaneous bacterial peritonitis. About a third of patients develop renal failure from worsening effective arterial underfilling. In patients with serum creatinine above 1 mg/dL, BUN above 30 mg/dL, or bilirubin above 4 mg/dL — all present here — intravenous albumin (1.5 g/kg on day 1 and 1 g/kg on day 3) added to cefotaxime reduced renal failure and in-hospital mortality."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why SBP causes kidney failure</b>: Cirrhosis already causes splanchnic vasodilation and low effective arterial volume. Infection releases cytokines and nitric oxide that widen vessels further, so the renin–angiotensin and sympathetic systems constrict the renal arteries — a hepatorenal-type physiology.<br> <b>Why albumin helps</b>: Albumin expands plasma volume and also binds endotoxin and nitric oxide-related mediators, supporting arterial filling and renal perfusion. The benefit was shown in the high-risk group (creatinine > 1, BUN > 30, bilirubin > 4).<br> <b>Why low ascitic protein matters later</b>: Protein below 1.5 g/dL means few opsonins in the fluid; after recovery this patient needs long-term prophylaxis against recurrence."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">IV albumin with antibiotics (answer)</th><th>Large-volume paracentesis (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on circulation</td><td><b>Expands effective arterial volume</b></td><td>Removes volume; can worsen arterial underfilling</td></tr> <tr><td>Proven benefit</td><td>Lower renal failure and mortality in SBP with Cr > 1, BUN > 30 or bilirubin > 4</td><td>Relief of tense ascites (with albumin if > 5 L)</td></tr> <tr><td>Timing here</td><td>Day 1 and day 3</td><td>Not for an infected, hypotensive patient's kidney protection</td></tr> </tbody></table> In SBP the goal is to protect the kidney by filling the circulation, not by removing fluid."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intravenous furosemide is correct for volume overload with adequate renal perfusion — here it would deepen arterial underfilling.\n(B) Oral lactulose is correct when hepatic encephalopathy is present, such as confusion and asterixis, which this patient does not have.\n(C) Exploratory laparotomy is correct for secondary peritonitis, suggested by polymicrobial Gram stain, very high protein, or low glucose in the fluid.\n(E) Large-volume paracentesis is correct for tense, symptomatic ascites without infection and is paired with albumin when more than 5 L is removed."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing to remove more ascites or keep diuretics in SBP — the kidney is threatened by underfilling, so albumin is given."
+   },
+   {
+    "k": "학습목표",
+    "v": "복수 다형핵백혈구 250/µL 이상으로 자발세균복막염을 진단하고, 혈청 크레아티닌·BUN·빌리루빈이 높은 환자에게 항생제와 함께 알부민을 주어 신부전과 사망을 줄인다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sort P, Navasa M, Arroyo V, et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and spontaneous bacterial peritonitis. N Engl J Med. 1999;341(6):403-409. PMID: 10432325 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 355: Cirrhosis and Its Complications"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "SBP with creatinine > 1, BUN > 30 and bilirubin > 4 needs IV albumin on days 1 and 3 in addition to antibiotics",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Paracentesis removes volume; albumin restores effective arterial filling, which is what prevents renal failure",
+   "steps": 3,
+   "chain": [
+    "Ascitic PMN 480/µL with no organisms → spontaneous bacterial peritonitis",
+    "Creatinine 1.6, BUN 34, bilirubin 4.8 → high risk of renal failure",
+    "Add IV albumin 1.5 g/kg day 1 and 1 g/kg day 3 to cefotaxime"
+   ],
+   "key": [
+    {
+     "item": "polymorphonuclear leukocyte count of 480/µL",
+     "why": "≥ 250/µL defines SBP",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine is 1.6 mg/dL",
+     "why": "Albumin criterion (> 1 mg/dL)",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Gram stain shows no organisms",
+     "why": "Lowers the likelihood of secondary (perforation) peritonitis",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "blood urea nitrogen 34 mg/dL",
+     "why": "Albumin criterion (> 30 mg/dL)",
+     "also": []
+    },
+    {
+     "item": "total bilirubin 4.8 mg/dL",
+     "why": "Albumin criterion (> 4 mg/dL)",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "total protein of 0.8 g/dL",
+     "why": "Low protein favors SBP and sets later prophylaxis, not today's choice",
+     "also": []
+    }
+   ],
+   "summary": "Ascitic PMN 480/µL is SBP. With creatinine 1.6, BUN 34 and bilirubin 4.8, IV albumin on days 1 and 3 plus cefotaxime lowers renal failure and death.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the ascitic fluid showed multiple organisms, protein > 1 g/dL and glucose < 50 mg/dL, secondary peritonitis needing surgical evaluation"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0520",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "신경 — 벼락두통 8시간 뒤 정상인 머리 CT",
+  "type": "신경 — 벼락두통 8시간 뒤 정상인 머리 CT",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-02",
+  "vignette": "47세 여자가 오늘 아침 운동 중 갑자기 생긴 「평생 가장 심한」 두통으로 왔다. 두통은 1분 안에 최고조에 이르렀고 한 번 토하였다. 의식을 잃은 적은 없다. 두통 발생 8시간 뒤 도착하였다. 편두통 병력은 없고 흡연자이다. 혈압 152/90 mmHg, 맥박 88회/분, 체온 36.8℃ 이다. 의식은 명료하고 국소 신경학적 결손은 없으며 목을 굽힐 때 약간 뻣뻣하다. 도착 직후 시행한 비조영 머리 CT 는 정상이다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "니모디핀 투여 시작",
+   "뇌파 검사",
+   "요추천자",
+   "트립탄 투여 후 귀가",
+   "24시간 뒤 머리 CT 재검"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 1분 안에 최고조에 이른 벼락두통과 구토, 약한 경부 강직은 지주막하출혈을 먼저 생각하게 한다. 발병 6시간 안에 3세대 CT 를 찍으면 민감도가 거의 100 % 이지만, 이 환자는 8시간 뒤에 찍어 혈액이 희석·재분포되었을 수 있다. 그래서 정상 CT 만으로는 배제하지 못하고 요추천자로 뇌척수액의 황색변색이나 줄지 않는 적혈구를 확인한다(CT 혈관조영도 대안이다).\n- 원리: <b>왜 시간이 중요한가</b>: 지주막하 공간의 혈액은 뇌척수액 흐름에 씻겨 희석되고 시간이 지날수록 CT 에서 흐려진다. 그래서 CT 민감도는 발병 6시간 안에는 거의 100 % 이지만 그 뒤로 점점 떨어져 며칠 뒤에는 절반 수준이 된다.<br> <b>왜 황색변색인가</b>: 뇌척수액 속 적혈구가 깨지면 헤모글로빈이 옥시헤모글로빈·빌리루빈으로 바뀌어 노랗게 된다. 이 변화에는 몇 시간(대개 발병 12시간 뒤 가장 확실)이 걸리므로, 천자 손상으로 들어간 신선한 혈액(관마다 적혈구가 줄고 황색변색 없음)과 구별하는 근거가 된다.<br> <b>왜 놓치면 안 되는가</b>: 동맥류 파열은 첫 출혈 뒤 재출혈 위험이 높고 재출혈의 사망률이 매우 높다 — 「경고 출혈」을 찾는 것이 목적이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">요추천자(정답)</th><th>트립탄 투여 후 귀가(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>CT 시점</td><td><b>발병 6시간 뒤</b> 정상 → 배제 불충분</td><td>—</td></tr> <tr><td>두통 양상</td><td>1분 안에 최고조(벼락두통)</td><td>점점 심해지는 전형적 편두통·병력 있음</td></tr> <tr><td>목적</td><td>황색변색·적혈구로 출혈 확인</td><td>일차두통 증상 조절</td></tr> </tbody></table> 「처음 겪는 벼락두통」은 일차두통으로 진단하기 전에 지주막하출혈을 먼저 배제한다.\n- 오답 이유:\n  - ① 니모디핀은 지주막하출혈이 확진된 뒤 혈관연축으로 인한 지연 뇌허혈을 줄이려고 줄 때 정답이 된다.\n  - ② 뇌파 검사는 의식 저하·발작이 있어 비경련성 발작을 찾을 때 정답이 된다 — 이 환자는 의식이 명료하다.\n  - ④ 트립탄은 벼락 양상이 아니고 같은 양상의 편두통 병력이 있어 이차두통이 배제되었을 때 정답이 된다.\n  - ⑤ 24시간 뒤 CT 재검은 시간이 지날수록 민감도가 더 떨어져 의미가 없다 — 진단을 미루는 사이 재출혈 위험만 남는다.\n- 함정: 정상 머리 CT 를 보고 지주막하출혈을 배제하는 것 — 발병 6시간이 지났으면 요추천자가 필요하다.\n- 학습목표: 벼락두통 발병 6시간이 지나 시행한 비조영 머리 CT 가 정상이면 지주막하출혈을 배제할 수 없어 요추천자(뇌척수액 황색변색·적혈구)를 한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 440: Subarachnoid Hemorrhage · Perry JJ, Stiell IG, Sivilotti ML, et al. Sensitivity of computed tomography performed within six hours of onset of headache for diagnosis of subarachnoid haemorrhage: prospective cohort study. BMJ. 2011;343:d4277. PMID: 21768192",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "1분 안에 최고조에 이른 벼락두통과 구토, 약한 경부 강직은 지주막하출혈을 먼저 생각하게 한다. 발병 6시간 안에 3세대 CT 를 찍으면 민감도가 거의 100 % 이지만, 이 환자는 8시간 뒤에 찍어 혈액이 희석·재분포되었을 수 있다. 그래서 정상 CT 만으로는 배제하지 못하고 요추천자로 뇌척수액의 황색변색이나 줄지 않는 적혈구를 확인한다(CT 혈관조영도 대안이다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 시간이 중요한가</b>: 지주막하 공간의 혈액은 뇌척수액 흐름에 씻겨 희석되고 시간이 지날수록 CT 에서 흐려진다. 그래서 CT 민감도는 발병 6시간 안에는 거의 100 % 이지만 그 뒤로 점점 떨어져 며칠 뒤에는 절반 수준이 된다.<br> <b>왜 황색변색인가</b>: 뇌척수액 속 적혈구가 깨지면 헤모글로빈이 옥시헤모글로빈·빌리루빈으로 바뀌어 노랗게 된다. 이 변화에는 몇 시간(대개 발병 12시간 뒤 가장 확실)이 걸리므로, 천자 손상으로 들어간 신선한 혈액(관마다 적혈구가 줄고 황색변색 없음)과 구별하는 근거가 된다.<br> <b>왜 놓치면 안 되는가</b>: 동맥류 파열은 첫 출혈 뒤 재출혈 위험이 높고 재출혈의 사망률이 매우 높다 — 「경고 출혈」을 찾는 것이 목적이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">요추천자(정답)</th><th>트립탄 투여 후 귀가(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>CT 시점</td><td><b>발병 6시간 뒤</b> 정상 → 배제 불충분</td><td>—</td></tr> <tr><td>두통 양상</td><td>1분 안에 최고조(벼락두통)</td><td>점점 심해지는 전형적 편두통·병력 있음</td></tr> <tr><td>목적</td><td>황색변색·적혈구로 출혈 확인</td><td>일차두통 증상 조절</td></tr> </tbody></table> 「처음 겪는 벼락두통」은 일차두통으로 진단하기 전에 지주막하출혈을 먼저 배제한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 니모디핀은 지주막하출혈이 확진된 뒤 혈관연축으로 인한 지연 뇌허혈을 줄이려고 줄 때 정답이 된다.\n② 뇌파 검사는 의식 저하·발작이 있어 비경련성 발작을 찾을 때 정답이 된다 — 이 환자는 의식이 명료하다.\n④ 트립탄은 벼락 양상이 아니고 같은 양상의 편두통 병력이 있어 이차두통이 배제되었을 때 정답이 된다.\n⑤ 24시간 뒤 CT 재검은 시간이 지날수록 민감도가 더 떨어져 의미가 없다 — 진단을 미루는 사이 재출혈 위험만 남는다."
+   },
+   {
+    "k": "함정",
+    "v": "정상 머리 CT 를 보고 지주막하출혈을 배제하는 것 — 발병 6시간이 지났으면 요추천자가 필요하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "벼락두통 발병 6시간이 지나 시행한 비조영 머리 CT 가 정상이면 지주막하출혈을 배제할 수 없어 요추천자(뇌척수액 황색변색·적혈구)를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 440: Subarachnoid Hemorrhage · Perry JJ, Stiell IG, Sivilotti ML, et al. Sensitivity of computed tomography performed within six hours of onset of headache for diagnosis of subarachnoid haemorrhage: prospective cohort study. BMJ. 2011;343:d4277. PMID: 21768192"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "발병 6시간 뒤 정상인 머리 CT 는 지주막하출혈을 배제하지 못하므로 요추천자를 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "1분 안에 최고조인 처음 겪는 벼락두통 — 일차두통으로 보기 전에 출혈을 배제해야 한다",
+   "steps": 3,
+   "chain": [
+    "1분 안에 최고조인 처음 겪는 두통 + 구토·경부 강직 → 지주막하출혈 의심",
+    "CT 는 발병 8시간 뒤 — 6시간이 지나 민감도가 떨어진다",
+    "정상 CT 로 배제 불가 → 요추천자로 황색변색·적혈구 확인"
+   ],
+   "key": [
+    {
+     "item": "두통은 1분 안에 최고조에 이르렀고",
+     "why": "벼락두통의 정의",
+     "also": []
+    },
+    {
+     "item": "두통 발생 8시간 뒤 도착하였다",
+     "why": "CT 민감도가 떨어지는 시점",
+     "also": []
+    },
+    {
+     "item": "비조영 머리 CT 는 정상이다",
+     "why": "배제에 충분하지 않은 음성",
+     "also": []
+    },
+    {
+     "item": "목을 굽힐 때 약간 뻣뻣하다",
+     "why": "수막 자극 — 지주막하 혈액",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "편두통 병력은 없고",
+     "why": "일차두통의 재발일 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "국소 신경학적 결손은 없으며",
+     "why": "경미한 출혈에서도 흔하다 — 출혈을 배제하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "처음 겪는 벼락두통이고 CT 를 발병 8시간 뒤에 찍었다. 정상 CT 로는 지주막하출혈을 배제할 수 없어 요추천자를 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "두통이 서서히 심해졌고 같은 양상의 편두통을 여러 번 겪어 온 사람이라면 트립탄으로 증상 조절"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0517",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음",
+  "type": "순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-02",
+  "vignette": "A 19-year-old man is brought to the emergency department after he fainted while sprinting during a basketball game. He regained consciousness within a minute. His father died suddenly at age 40 years. Blood pressure is 124/76 mm Hg and pulse is 72/min. A grade 3/6 crescendo-decrescendo systolic murmur is heard best at the left lower sternal border; it does not radiate to the carotid arteries. The murmur becomes louder when he performs the Valsalva maneuver and when he stands from a squatting position, and softer with sustained handgrip. No ejection click is heard.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Innocent flow murmur",
+   "Hypertrophic cardiomyopathy",
+   "Bicuspid aortic valve stenosis",
+   "Mitral valve prolapse",
+   "Ventricular septal defect"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Exertional syncope, a family history of sudden death at 40 years, and a systolic murmur at the left lower sternal border that gets louder with Valsalva and standing (less preload) and softer with handgrip (more afterload) point to dynamic left ventricular outflow obstruction from hypertrophic cardiomyopathy. A fixed aortic valve obstruction would get softer, not louder, when preload falls.\n- 원리: <b>Why preload changes the murmur</b>: In hypertrophic cardiomyopathy the thick septum and the anterior mitral leaflet (systolic anterior motion) narrow the outflow tract during systole. A <b>smaller</b> ventricle — less venous return with Valsalva or standing — brings the leaflet and septum closer, so the obstruction and the murmur increase. Squatting and handgrip enlarge the ventricle or raise afterload and widen the tract, so the murmur softens.<br> <b>Why aortic stenosis behaves the opposite way</b>: A stiff valve is a fixed opening. Less blood crossing it means less turbulence, so Valsalva softens the murmur.<br> <b>Why it matters</b>: Exertional syncope plus a family history of sudden death are risk markers for ventricular arrhythmia; the next steps are echocardiography, avoidance of competitive sport until evaluated, and screening of first-degree relatives.\n- 비교: <table><thead><tr><th style=\"width:24%\">Maneuver</th><th style=\"width:38%\">Hypertrophic cardiomyopathy (answer)</th><th>Aortic stenosis (closest distractor)</th></tr></thead><tbody> <tr><td>Valsalva / standing</td><td><b>Louder</b> (smaller LV, more obstruction)</td><td>Softer (less flow)</td></tr> <tr><td>Squatting / handgrip</td><td>Softer</td><td>Squatting louder; handgrip softer</td></tr> <tr><td>Location, radiation</td><td>Left lower sternal border, no carotid radiation</td><td>Right upper sternal border, to carotids; ejection click if bicuspid</td></tr> </tbody></table> Only two murmurs grow louder with Valsalva — HCM and mitral valve prolapse; the click and the apical location separate MVP.\n- 오답 이유:\n  - (A) An innocent flow murmur would be correct in an asymptomatic person with a soft murmur that decreases on standing and no syncope or family history.\n  - (C) Bicuspid aortic stenosis would be correct with an ejection click and a right upper sternal border murmur radiating to the carotids that softens with Valsalva.\n  - (D) Mitral valve prolapse would be correct with a mid-systolic click and a late systolic apical murmur that starts earlier with Valsalva.\n  - (E) A ventricular septal defect would be correct with a holosystolic murmur at the left lower sternal border that gets louder with handgrip.\n- 함정: Assuming every systolic ejection murmur in a fainting athlete is aortic stenosis — the Valsalva response decides.\n- 학습목표: 발살바·서기에서 커지고 쪼그려 앉기·손 쥐기에서 작아지는 수축기 잡음으로 비대심근병증의 역동적 좌심실 유출로 폐쇄를 대동맥판 협착과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 246: Physical Examination of the Cardiovascular System · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 266: Classification of Cardiomyopathy",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Exertional syncope, a family history of sudden death at 40 years, and a systolic murmur at the left lower sternal border that gets louder with Valsalva and standing (less preload) and softer with handgrip (more afterload) point to dynamic left ventricular outflow obstruction from hypertrophic cardiomyopathy. A fixed aortic valve obstruction would get softer, not louder, when preload falls."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why preload changes the murmur</b>: In hypertrophic cardiomyopathy the thick septum and the anterior mitral leaflet (systolic anterior motion) narrow the outflow tract during systole. A <b>smaller</b> ventricle — less venous return with Valsalva or standing — brings the leaflet and septum closer, so the obstruction and the murmur increase. Squatting and handgrip enlarge the ventricle or raise afterload and widen the tract, so the murmur softens.<br> <b>Why aortic stenosis behaves the opposite way</b>: A stiff valve is a fixed opening. Less blood crossing it means less turbulence, so Valsalva softens the murmur.<br> <b>Why it matters</b>: Exertional syncope plus a family history of sudden death are risk markers for ventricular arrhythmia; the next steps are echocardiography, avoidance of competitive sport until evaluated, and screening of first-degree relatives."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Maneuver</th><th style=\"width:38%\">Hypertrophic cardiomyopathy (answer)</th><th>Aortic stenosis (closest distractor)</th></tr></thead><tbody> <tr><td>Valsalva / standing</td><td><b>Louder</b> (smaller LV, more obstruction)</td><td>Softer (less flow)</td></tr> <tr><td>Squatting / handgrip</td><td>Softer</td><td>Squatting louder; handgrip softer</td></tr> <tr><td>Location, radiation</td><td>Left lower sternal border, no carotid radiation</td><td>Right upper sternal border, to carotids; ejection click if bicuspid</td></tr> </tbody></table> Only two murmurs grow louder with Valsalva — HCM and mitral valve prolapse; the click and the apical location separate MVP."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) An innocent flow murmur would be correct in an asymptomatic person with a soft murmur that decreases on standing and no syncope or family history.\n(C) Bicuspid aortic stenosis would be correct with an ejection click and a right upper sternal border murmur radiating to the carotids that softens with Valsalva.\n(D) Mitral valve prolapse would be correct with a mid-systolic click and a late systolic apical murmur that starts earlier with Valsalva.\n(E) A ventricular septal defect would be correct with a holosystolic murmur at the left lower sternal border that gets louder with handgrip."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming every systolic ejection murmur in a fainting athlete is aortic stenosis — the Valsalva response decides."
+   },
+   {
+    "k": "학습목표",
+    "v": "발살바·서기에서 커지고 쪼그려 앉기·손 쥐기에서 작아지는 수축기 잡음으로 비대심근병증의 역동적 좌심실 유출로 폐쇄를 대동맥판 협착과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 246: Physical Examination of the Cardiovascular System · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 266: Classification of Cardiomyopathy"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A systolic murmur that grows with Valsalva and standing and shrinks with handgrip is dynamic outflow obstruction — hypertrophic cardiomyopathy",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "Aortic stenosis softens with Valsalva, radiates to the carotids, and a bicuspid valve has an ejection click",
+   "steps": 2,
+   "chain": [
+    "Murmur louder with Valsalva and standing, softer with handgrip → dynamic obstruction (preload-dependent)",
+    "Exertional syncope + sudden death in father at 40 → hypertrophic cardiomyopathy"
+   ],
+   "key": [
+    {
+     "item": "The murmur becomes louder when he performs the Valsalva maneuver",
+     "why": "Only HCM and MVP get louder with less preload",
+     "also": []
+    },
+    {
+     "item": "softer with sustained handgrip",
+     "why": "More afterload widens the outflow tract",
+     "also": []
+    },
+    {
+     "item": "His father died suddenly at age 40 years",
+     "why": "Inherited cardiomyopathy risk",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "it does not radiate to the carotid arteries",
+     "why": "Lowers the likelihood of aortic stenosis",
+     "also": []
+    },
+    {
+     "item": "No ejection click is heard",
+     "why": "Lowers the likelihood of a bicuspid valve; also no mid-systolic click of MVP",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Blood pressure is 124/76 mm Hg",
+     "why": "Normal — does not change the diagnosis",
+     "also": []
+    }
+   ],
+   "summary": "Exertional syncope, a family history of sudden death, and a left lower sternal border systolic murmur that grows with Valsalva/standing and softens with handgrip indicate hypertrophic cardiomyopathy.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the murmur softened with Valsalva, radiated to the carotids and followed an ejection click, bicuspid aortic stenosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0516",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·산과·신경·소화기·감염·부인과·안과)",
+  "subtopic": "병리 — 오래 흡연한 사람의 기관지 상피 변화",
+  "type": "병리 — 오래 흡연한 사람의 기관지 상피 변화",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-02",
+  "vignette": "58세 남자가 3개월 전부터 계속되는 기침과 가래로 왔다. 하루 한 갑씩 40년 동안 담배를 피웠다. 체중 감소와 객혈은 없다. 활력징후는 정상이고 양쪽 폐에서 호기 끝에 약한 천명이 들린다. 흉부 CT 에서 종괴는 없다. 기관지내시경으로 얻은 기관지 점막 생검에서 원래의 섬모원주상피가 있던 자리에 성숙한 중층편평상피가 덮여 있고, 세포의 이형성과 기저막 침윤은 없다.",
+  "question": "이 상피 변화에 대한 설명으로 가장 적절한 것은?",
+  "options": [
+   "분화를 마친 섬모세포가 그대로 편평세포로 바뀐 것이다",
+   "점액 분비와 섬모에 의한 청소 기능이 더 강해진다",
+   "세포 수는 그대로이고 세포 크기만 커진 변화다",
+   "자극이 없어지면 원래 상피로 돌아갈 수 있다",
+   "이미 기저막을 넘은 침윤암으로 진행한 상태다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 섬모원주상피 자리에 성숙한 중층편평상피가 들어선 것은 편평상피화생이다 — 담배 연기라는 만성 자극에 더 잘 버티는 상피로 바뀐 적응 반응이다. 이형성과 침윤이 없으므로 아직 종양이 아니고, 자극(흡연)이 없어지면 원래 상피로 돌아갈 수 있다. 다만 자극이 계속되면 화생 상피에서 이형성을 거쳐 편평세포암이 생길 수 있다.\n- 원리: <b>왜 화생이 생기는가</b>: 기관지의 섬모원주상피는 점액을 만들고 섬모로 쓸어 올리는 데 알맞지만 연기의 화학적 손상에는 약하다. 만성 자극이 계속되면 기저층의 <b>줄기세포·예비세포</b>가 분화 방향을 바꿔 손상에 더 강한 중층편평상피를 만든다. 이미 분화를 마친 세포가 다른 세포로 바뀌는 것이 아니라, 새로 만들어지는 세포의 유전자 발현 프로그램(사이토카인·성장인자·세포외기질 신호)이 달라진다.<br> <b>왜 가역적인가</b>: 유전자 자체가 바뀐 것이 아니라 자극에 따라 분화 신호가 바뀐 것이므로, 자극이 없어지면 줄기세포는 다시 원래 상피를 만든다.<br> <b>대가는 무엇인가</b>: 편평상피에는 섬모와 술잔세포가 없어 점액섬모 청소가 약해진다 — 흡연자의 가래와 감염이 잦은 이유다. 그리고 자극이 계속되면 화생 → 이형성 → 상피내암 → 침윤암으로 갈 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">편평상피화생(정답)</th><th>침윤암(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포 모양</td><td>성숙한 중층편평상피, 이형성 없음</td><td>핵 비대·다형성·분열 증가</td></tr> <tr><td>기저막</td><td><b>보존</b></td><td>넘어 침윤</td></tr> <tr><td>자극 제거 뒤</td><td>원래 상피로 돌아갈 수 있다</td><td>돌아가지 않는다</td></tr> </tbody></table> 화생은 「다른 정상 세포로 바뀐 적응」, 이형성은 「세포 자체의 비정상」이다 — 생검 보고에서 이형성·침윤 유무를 먼저 본다.\n- 오답 이유:\n  - ① 화생은 분화를 마친 세포가 아니라 기저층 줄기세포의 분화 방향이 바뀐 것이다 — 이 설명이 맞으려면 세포 전환을 직접 보여 주어야 한다.\n  - ② 편평상피에는 섬모·술잔세포가 없어 청소 기능은 오히려 약해진다 — 술잔세포 과형성(점액화생)을 물었다면 점액 분비 증가가 맞다.\n  - ③ 세포 수 변화 없이 크기만 커진 것은 비대이고, 그것은 골격근·심근처럼 분열하지 않는 조직의 적응일 때 정답이 된다.\n  - ⑤ 침윤암은 생검에서 이형성 세포가 기저막을 넘어 간질로 들어간 소견이 있을 때 정답이다 — 이 증례는 이형성도 침윤도 없다.\n- 함정: 편평상피화생을 곧 전암·암으로 여기는 것 — 이형성이 없으면 가역적인 적응이다.\n- 학습목표: 만성 자극에 대한 적응으로 생긴 기관지 편평상피화생이 줄기세포의 분화 방향 전환이며 자극이 없어지면 가역적임을 설명한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 2: Cell Injury, Cell Death, and Adaptations",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "섬모원주상피 자리에 성숙한 중층편평상피가 들어선 것은 편평상피화생이다 — 담배 연기라는 만성 자극에 더 잘 버티는 상피로 바뀐 적응 반응이다. 이형성과 침윤이 없으므로 아직 종양이 아니고, 자극(흡연)이 없어지면 원래 상피로 돌아갈 수 있다. 다만 자극이 계속되면 화생 상피에서 이형성을 거쳐 편평세포암이 생길 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 화생이 생기는가</b>: 기관지의 섬모원주상피는 점액을 만들고 섬모로 쓸어 올리는 데 알맞지만 연기의 화학적 손상에는 약하다. 만성 자극이 계속되면 기저층의 <b>줄기세포·예비세포</b>가 분화 방향을 바꿔 손상에 더 강한 중층편평상피를 만든다. 이미 분화를 마친 세포가 다른 세포로 바뀌는 것이 아니라, 새로 만들어지는 세포의 유전자 발현 프로그램(사이토카인·성장인자·세포외기질 신호)이 달라진다.<br> <b>왜 가역적인가</b>: 유전자 자체가 바뀐 것이 아니라 자극에 따라 분화 신호가 바뀐 것이므로, 자극이 없어지면 줄기세포는 다시 원래 상피를 만든다.<br> <b>대가는 무엇인가</b>: 편평상피에는 섬모와 술잔세포가 없어 점액섬모 청소가 약해진다 — 흡연자의 가래와 감염이 잦은 이유다. 그리고 자극이 계속되면 화생 → 이형성 → 상피내암 → 침윤암으로 갈 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">편평상피화생(정답)</th><th>침윤암(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포 모양</td><td>성숙한 중층편평상피, 이형성 없음</td><td>핵 비대·다형성·분열 증가</td></tr> <tr><td>기저막</td><td><b>보존</b></td><td>넘어 침윤</td></tr> <tr><td>자극 제거 뒤</td><td>원래 상피로 돌아갈 수 있다</td><td>돌아가지 않는다</td></tr> </tbody></table> 화생은 「다른 정상 세포로 바뀐 적응」, 이형성은 「세포 자체의 비정상」이다 — 생검 보고에서 이형성·침윤 유무를 먼저 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 화생은 분화를 마친 세포가 아니라 기저층 줄기세포의 분화 방향이 바뀐 것이다 — 이 설명이 맞으려면 세포 전환을 직접 보여 주어야 한다.\n② 편평상피에는 섬모·술잔세포가 없어 청소 기능은 오히려 약해진다 — 술잔세포 과형성(점액화생)을 물었다면 점액 분비 증가가 맞다.\n③ 세포 수 변화 없이 크기만 커진 것은 비대이고, 그것은 골격근·심근처럼 분열하지 않는 조직의 적응일 때 정답이 된다.\n⑤ 침윤암은 생검에서 이형성 세포가 기저막을 넘어 간질로 들어간 소견이 있을 때 정답이다 — 이 증례는 이형성도 침윤도 없다."
+   },
+   {
+    "k": "함정",
+    "v": "편평상피화생을 곧 전암·암으로 여기는 것 — 이형성이 없으면 가역적인 적응이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "만성 자극에 대한 적응으로 생긴 기관지 편평상피화생이 줄기세포의 분화 방향 전환이며 자극이 없어지면 가역적임을 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 2: Cell Injury, Cell Death, and Adaptations"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "이형성 없는 성숙한 편평상피가 원주상피 자리를 덮은 것은 가역적 적응인 편평상피화생이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "이형성과 기저막 침윤이 없다 — 침윤암이 아니다",
+   "steps": 2,
+   "chain": [
+    "섬모원주상피 자리에 성숙한 중층편평상피 → 편평상피화생",
+    "이형성·침윤 없음 → 아직 종양이 아닌 적응, 자극이 없어지면 가역적"
+   ],
+   "key": [
+    {
+     "item": "성숙한 중층편평상피가 덮여 있고",
+     "why": "화생의 정의 — 다른 성숙 상피로의 대치",
+     "also": []
+    },
+    {
+     "item": "하루 한 갑씩 40년 동안 담배를 피웠다",
+     "why": "만성 자극의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "세포의 이형성과 기저막 침윤은 없다",
+     "why": "이형성·침윤암 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "흉부 CT 에서 종괴는 없다",
+     "why": "덩이를 이룬 암의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "호기 끝에 약한 천명이 들린다",
+     "why": "흡연자 기도 질환의 배경 — 생검 해석을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "흡연자의 기관지 생검에서 이형성 없는 성숙 편평상피가 원주상피를 대신했다. 편평상피화생이며 자극이 없어지면 가역적이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "생검에서 이형성 세포가 기저막을 넘어 간질로 침윤했다면 침윤성 편평세포암"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261102T202021Z_일일영상_2026-11-03_9units_9q_90fbeb4b",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0515",
   "exam": "imaging",
   "style": "kmle_style",
