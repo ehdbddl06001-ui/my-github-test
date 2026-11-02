@@ -1313,6 +1313,7 @@ function init() {
   }
   const qp = applyQueryParams();
   renderChips();
+  if (!$("deckChips")) throw new Error("index.html 이 옛 버전입니다(종목 칩 없음)");
   $("deckChips").querySelectorAll("button[data-deck]").forEach((b) => {
     b.onclick = () => {
       const d = b.getAttribute("data-deck");
@@ -1396,4 +1397,42 @@ function init() {
   else if (qp.start) startQuiz();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+/* 시작이 실패하면(주로 브라우저 캐시 때문에 index.html 과 스크립트 버전이 어긋날 때 — 2026-11-02 칩·과목이 멈춘 화면)
+   캐시를 비우고 스크립트를 서버에서 다시 받아 한 번만 새로 연다. 그래도 안 되면 멈춘 화면 대신 안내를 띄운다. */
+const RELOAD_ONCE = "medkos_reload_once";
+function recoverFromBrokenStart(err) {
+  try { console.error(err); } catch (e) { /* 무시 */ }
+  let tried = false;
+  try { tried = sessionStorage.getItem(RELOAD_ONCE) === "1"; sessionStorage.setItem(RELOAD_ONCE, "1"); } catch (e) { tried = true; }
+  if (!tried) {
+    const urls = [...document.scripts].map((s) => s.src)
+      .concat([...document.querySelectorAll('link[rel="stylesheet"]')].map((l) => l.href))
+      .filter((u) => u && u.indexOf(location.origin) === 0 && !/questions|concepts/.test(u));
+    const clear = window.caches && caches.keys
+      ? caches.keys().then((ks) => Promise.all(ks.map((k) => caches.delete(k)))) : Promise.resolve();
+    clear.catch(() => {})
+      .then(() => Promise.all(urls.map((u) => fetch(u, { cache: "reload" }).catch(() => null))))
+      .then(() => location.reload(), () => location.reload());
+    return;
+  }
+  const box = document.createElement("div");
+  box.className = "syncwarn";
+  box.setAttribute("role", "alert");
+  box.innerHTML = "<p>화면을 불러오지 못했습니다. 잠시 뒤 새로고침하거나, PC 는 Ctrl+Shift+R(맥은 Cmd+Shift+R)로 다시 여세요.</p>"
+    + `<p class="muted small">${escapeHtml(String((err && err.message) || err))}</p>`;
+  const b = document.createElement("button");
+  b.className = "small";
+  b.textContent = "새로고침";
+  b.onclick = () => { try { sessionStorage.removeItem(RELOAD_ONCE); } catch (e) { /* 무시 */ } location.reload(); };
+  box.appendChild(b);
+  const at = $("setup") || document.body;
+  at.insertBefore(box, at.firstChild);
+}
+document.addEventListener("DOMContentLoaded", () => {
+  try {
+    init();
+    try { sessionStorage.removeItem(RELOAD_ONCE); } catch (e) { /* 무시 */ }
+  } catch (err) {
+    recoverFromBrokenStart(err);
+  }
+});
