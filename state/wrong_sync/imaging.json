@@ -632,8 +632,8 @@
    "style": "usmle_style",
    "modality": "CT",
    "question": "Which of the following mechanisms most likely produced this injury?",
-   "chosen": 1,
-   "chosenText": "Hyperextension compressing the posterior arch between the occiput and C2",
+   "chosen": 2,
+   "chosenText": "Hyperflexion with compression of the anterior vertebral body",
    "answer": 0,
    "answerText": "Axial compression transmitted from the vertex through the occipital condyles",
    "coreNote": "",
@@ -641,10 +641,10 @@
    "decision": "고리뼈가 앞고리와 뒤고리 여러 곳에서 끊긴 고리 파열이다. 앞고리까지 끊어지려면 가쪽덩이를 바깥으로 벌리는 축성 압박이 필요하다 — 얕은 물 다이빙의 전형적 기전이다.",
    "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202213Z_일일영상_2026-11-02_9units_9q_3a59cfce",
    "date": "2026-11-02",
-   "device": "pc-haprn5",
+   "device": "pc-oc4qm2",
    "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-02T03:54:36.954Z"
+ "updated": "2026-11-02T04:01:02.241Z"
 }
