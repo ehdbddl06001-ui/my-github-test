@@ -394,3 +394,11 @@
 - 순환기내과 판 17 (27쪽, 판형 11): 새 단원: 수축기 잡음 — 손 조작으로 원인을 가른다; 새 단원: 허혈 심전도 위치 — 유도로 책임 혈관을 고른다; 새 단원: 심실 기외수축 — 조기·P파 없음·넓은 QRS; 내용 수정: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때
 - 류마티스내과 판 33 (53쪽, 판형 11): 새 단원: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI
 - 호흡기내과 판 13 (8쪽, 판형 11): 새 단원: 메트헤모글로빈혈증 — 철이 3가로 산화된다
+
+## 2026-11-02T09:58:58+09:00
+
+- 정형외과 판 16 (17쪽, 판형 11): 새 단원: Numb Ring and Little Fingers and a Weak Grip in a Call-center Worker Who Leans on His Elbows; 새 단원: Two Months of Pain above the Heel in a Marathon Runner Who Recently Took an Antibiotic
+- 순환기내과 판 18 (29쪽, 판형 11): 새 단원: 심계항진 — 위험 부정맥 단서와 기록 방법
+- 안과 판 11 (10쪽, 판형 11): 새 단원: An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure
+- 산부인과 판 17 (29쪽, 판형 11): 새 단원: Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl
+- 류마티스내과 판 34 (53쪽, 판형 11): 내용 수정: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI

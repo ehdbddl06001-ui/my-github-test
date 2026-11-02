@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "2597092bdd3552d3e26f",
-   "version": 17,
-   "date": "2026-11-01",
+   "hash": "f6c5e8c4d8f75a0a8934",
+   "version": 18,
+   "date": "2026-11-02",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 27,
+   "pages": 29,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -26,72 +26,78 @@
      "concept_hash": "7ec30433a104f74c",
      "concept_version": 1
     },
+    "cn.cardio.palpitations.arrhythmia-evaluation": {
+     "title": "심계항진 — 위험 부정맥 단서와 기록 방법",
+     "page": 6,
+     "concept_hash": "4b8fade838aee025",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 6,
+     "page": 7,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 7,
+     "page": 9,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-     "page": 10,
+     "page": 12,
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 11,
+     "page": 13,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 13,
+     "page": 15,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 15,
+     "page": 17,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 18,
+     "page": 20,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 20,
+     "page": 22,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 23,
+     "page": 25,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 26,
+     "page": 28,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "ecb8eed6becc182d075b5ddd6d597e3e",
-    "version": 17,
-    "uploaded": "2026-11-01T10:14:05+09:00"
+    "md5": "c8375225351721712f921680d3dbda43",
+    "version": 18,
+    "uploaded": "2026-11-02T11:15:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -110,13 +116,11 @@
     "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf",
     "MedKOS_학습서_순환기내과_v15_2026-10-14.pdf",
     "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf",
-    "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf"
+    "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf",
+    "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf"
    ],
    "changes": [
-    "새 단원: 수축기 잡음 — 손 조작으로 원인을 가른다",
-    "새 단원: 허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-    "새 단원: 심실 기외수축 — 조기·P파 없음·넓은 QRS",
-    "내용 수정: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때"
+    "새 단원: 심계항진 — 위험 부정맥 단서와 기록 방법"
    ]
   },
   "피부과": {
@@ -330,9 +334,9 @@
    ]
   },
   "안과": {
-   "hash": "94a594dcdbf871adfacd",
-   "version": 10,
-   "date": "2026-10-08",
+   "hash": "c2a621ced45162d51452",
+   "version": 11,
+   "date": "2026-11-02",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -357,16 +361,22 @@
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
      "title": "중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다",
-     "page": 8,
+     "page": 9,
      "concept_hash": "bedc5753c750574e",
      "concept_version": 3
+    },
+    "cn.ophth.normal-tension-glaucoma.visual-field": {
+     "title": "An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure",
+     "page": 10,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "120d5ffd5d8b95feb277b530aaa454a5",
-    "version": 10,
-    "uploaded": "2026-10-08T10:32:08+09:00"
+    "md5": "8ac317ca92de67fe59211df8d8ed003c",
+    "version": 11,
+    "uploaded": "2026-11-02T11:15:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -378,18 +388,17 @@
     "MedKOS_학습서_안과_v7_2026-10-02.pdf",
     "MedKOS_학습서_안과_v8_2026-10-05.pdf",
     "MedKOS_학습서_안과_v9_2026-10-06.pdf",
-    "MedKOS_학습서_안과_v10_2026-10-08.pdf"
+    "MedKOS_학습서_안과_v10_2026-10-08.pdf",
+    "MedKOS_학습서_안과_v11_2026-11-02.pdf"
    ],
    "changes": [
-    "내용 갱신: 급성 수술 후 안내염 — 시력이 즉시 절제술을 가른다 (정리본 v3 → v4)",
-    "내용 갱신: 망막중심동맥폐쇄 — 50세 이상은 동맥염부터 가린다 (정리본 v3 → v4)",
-    "내용 갱신: 중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다 (정리본 v2 → v3)"
+    "새 단원: An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure"
    ]
   },
   "정형외과": {
-   "hash": "e067f2dfcdde6632de28",
-   "version": 15,
-   "date": "2026-10-28",
+   "hash": "aad5c5783fd3f9e012e7",
+   "version": 16,
+   "date": "2026-11-02",
    "file": "MedKOS_학습서_정형외과.pdf",
    "pages": 17,
    "template_version": 11,
@@ -435,13 +444,25 @@
      "page": 14,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
+    },
+    "cn.ortho.ulnar-neuropathy.localization": {
+     "title": "Numb Ring and Little Fingers and a Weak Grip in a Call-center Worker Who Leans on His Elbows",
+     "page": 17,
+     "concept_hash": null,
+     "concept_version": null
+    },
+    "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication": {
+     "title": "Two Months of Pain above the Heel in a Marathon Runner Who Recently Took an Antibiotic",
+     "page": 17,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "9b5fb91d24ce6594f5bc6342632e74b2",
-    "version": 15,
-    "uploaded": "2026-10-28T10:20:41+09:00"
+    "md5": "519484d4583f90c31c8bbca8f04007b5",
+    "version": 16,
+    "uploaded": "2026-11-02T11:15:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -458,10 +479,12 @@
     "MedKOS_학습서_정형외과_v12_2026-10-08.pdf",
     "MedKOS_학습서_정형외과_v13_2026-10-09.pdf",
     "MedKOS_학습서_정형외과_v14_2026-10-27.pdf",
-    "MedKOS_학습서_정형외과_v15_2026-10-28.pdf"
+    "MedKOS_학습서_정형외과_v15_2026-10-28.pdf",
+    "MedKOS_학습서_정형외과_v16_2026-11-02.pdf"
    ],
    "changes": [
-    "새 단원: 치아돌기 골절 — 골절선이 허리에 머무나, 몸통으로 가나"
+    "새 단원: Numb Ring and Little Fingers and a Weak Grip in a Call-center Worker Who Leans on His Elbows",
+    "새 단원: Two Months of Pain above the Heel in a Marathon Runner Who Recently Took an Antibiotic"
    ]
   },
   "외과": {
@@ -507,11 +530,11 @@
    ]
   },
   "산부인과": {
-   "hash": "e55ba34f6a80f2d2301d",
-   "version": 16,
-   "date": "2026-10-31",
+   "hash": "a616336f6db1fd110e6a",
+   "version": 17,
+   "date": "2026-11-02",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 28,
+   "pages": 29,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -591,13 +614,19 @@
      "page": 27,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
+    },
+    "cn.obgyn.ovarian-germ-cell-tumor.tumor-markers": {
+     "title": "Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl",
+     "page": 29,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "19821766e3f6893be73859061eacec0b",
-    "version": 16,
-    "uploaded": "2026-10-31T10:15:35+09:00"
+    "md5": "8a07751c95faae55c53c1f03e94fb6d4",
+    "version": 17,
+    "uploaded": "2026-11-02T11:15:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -615,10 +644,11 @@
     "MedKOS_학습서_산부인과_v13_2026-10-24.pdf",
     "MedKOS_학습서_산부인과_v14_2026-10-28.pdf",
     "MedKOS_학습서_산부인과_v15_2026-10-29.pdf",
-    "MedKOS_학습서_산부인과_v16_2026-10-31.pdf"
+    "MedKOS_학습서_산부인과_v16_2026-10-31.pdf",
+    "MedKOS_학습서_산부인과_v17_2026-11-02.pdf"
    ],
    "changes": [
-    "새 단원: 임신 중 소견 — 생리 변화의 방향·크기를 넘으면 병이다"
+    "새 단원: Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl"
    ]
   },
   "정신건강의학과": {
@@ -675,9 +705,9 @@
    ]
   },
   "류마티스내과": {
-   "hash": "1aa7357a2a8224fc36c3",
-   "version": 33,
-   "date": "2026-11-01",
+   "hash": "f209b6385fd8adc72a2d",
+   "version": 34,
+   "date": "2026-11-02",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 53,
    "template_version": 11,
@@ -739,7 +769,7 @@
     "cn.ortho.axial-spondyloarthritis.sacroiliac-mri": {
      "title": "축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI",
      "page": 19,
-     "concept_hash": "30f437db258ddf6c",
+     "concept_hash": "6431fb9885cbd555",
      "concept_version": 1
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
@@ -853,9 +883,9 @@
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "c9c49b1828b640599c7f00ee5d554db6",
-    "version": 33,
-    "uploaded": "2026-11-01T10:14:05+09:00"
+    "md5": "506dde9f7291de032a8fa116d002626b",
+    "version": 34,
+    "uploaded": "2026-11-02T11:15:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -890,10 +920,11 @@
     "MedKOS_학습서_류마티스내과_v30_2026-10-28.pdf",
     "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf",
     "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf",
-    "MedKOS_학습서_류마티스내과_v33_2026-11-01.pdf"
+    "MedKOS_학습서_류마티스내과_v33_2026-11-01.pdf",
+    "MedKOS_학습서_류마티스내과_v34_2026-11-02.pdf"
    ],
    "changes": [
-    "새 단원: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI"
+    "내용 수정: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI"
    ]
   },
   "호흡기내과": {
@@ -1446,13 +1477,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "0e2f896c643047845c5bc4dbcb47d1c0",
+   "md5": "7cb78463ee8a6e855e25e5f19e2ca082",
    "version": null,
-   "uploaded": "2026-11-01T10:14:05+09:00"
+   "uploaded": "2026-11-02T11:15:15+09:00"
   }
  },
- "updated": "2026-11-01"
+ "updated": "2026-11-02"
 }

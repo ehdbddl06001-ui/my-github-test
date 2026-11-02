@@ -1,21 +1,21 @@
 {
- "started": "2026-11-01T09:18:28+09:00",
+ "started": "2026-11-02T09:58:58+09:00",
  "built": [
+  "정형외과",
   "순환기내과",
-  "류마티스내과",
-  "호흡기내과"
+  "안과",
+  "산부인과",
+  "류마티스내과"
  ],
  "skipped": [
   "응급의학과",
-  "정형외과",
   "피부과",
   "내분비내과",
-  "안과",
   "외과",
-  "산부인과",
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
+  "호흡기내과",
   "감염내과",
   "소화기내과",
   "알레르기내과",
@@ -29,17 +29,27 @@
  "retry": [],
  "previews": [],
  "validation": {
+  "정형외과": [],
   "순환기내과": [],
-  "류마티스내과": [],
-  "호흡기내과": []
+  "안과": [],
+  "산부인과": [],
+  "류마티스내과": []
  },
  "notes": {
+  "정형외과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
+  ],
   "순환기내과": [],
+  "안과": [],
+  "산부인과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 11쪽 왼쪽 단 아래가 비어 있다(빈 공간 46%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 11쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 14쪽 왼쪽 단 아래가 비어 있다(빈 공간 30%)"
+  ],
   "류마티스내과": [
    "배치 탐색 뒤에도 남은 빈 공간: 46쪽 왼쪽 단 아래가 비어 있다(빈 공간 43%)",
    "배치 탐색 뒤에도 남은 빈 공간: 46쪽 오른쪽 단 아래가 비어 있다(빈 공간 43%)"
-  ],
-  "호흡기내과": []
+  ]
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -53,8 +63,31 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
+  "정형외과": {
+   "tried": 152,
+   "diagram_after_section": {
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#fig:f1": 9,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging": 14,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 42,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#fig:f1": 9,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale": 20,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#shrink": 0.88,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#pad": 0,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#col": false,
+    "u-cn-ortho-odontoid-fracture-diagnosis": 14,
+    "u-cn-ortho-odontoid-fracture-diagnosis#shrink": 1.0,
+    "u-cn-ortho-odontoid-fracture-diagnosis#pad": 14,
+    "u-cn-ortho-odontoid-fracture-diagnosis#col": false,
+    "u-cn-ortho-scfe-in-situ-fixation": 17,
+    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
+    "u-cn-ortho-scfe-in-situ-fixation#pad": 0,
+    "u-cn-ortho-scfe-in-situ-fixation#col": true
+   }
+  },
   "순환기내과": {
-   "tried": 179,
+   "tried": 198,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -64,13 +97,13 @@
     "u-cn-cardio-edema-generalized-cause#shrink": 1.0,
     "u-cn-cardio-edema-generalized-cause#pad": 0,
     "u-cn-cardio-edema-generalized-cause#col": false,
-    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery": 11,
+    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery": 14,
     "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#shrink": 1.0,
-    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#pad": 14,
+    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#pad": 0,
     "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#col": false,
     "u-cn-cardio-qrs-axis-limb-lead-polarity": 18,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 0.88,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 0,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 1.0,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 42,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first": 16,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
@@ -84,6 +117,61 @@
     "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 0.76,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 0,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false
+   }
+  },
+  "안과": {
+   "tried": 75,
+   "diagram_after_section": {
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 10,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
+    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 1.0,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 28,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#col": false,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk": 13,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk#shrink": 1.0,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk#pad": 0,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk#col": true
+   }
+  },
+  "산부인과": {
+   "tried": 269,
+   "diagram_after_section": {
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 21,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 1.0,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 0,
+    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction": 19,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#shrink": 1.0,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#pad": 42,
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#col": false,
+    "u-cn-obgyn-female-sexual-dysfunction-management": 14,
+    "u-cn-obgyn-female-sexual-dysfunction-management#shrink": 0.88,
+    "u-cn-obgyn-female-sexual-dysfunction-management#pad": 0,
+    "u-cn-obgyn-female-sexual-dysfunction-management#col": false,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal": 14,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#shrink": 1.0,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#pad": 0,
+    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#col": false,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation": 13,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#shrink": 1.0,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#pad": 28,
+    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#col": false,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication": 5,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#shrink": 1.0,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#pad": 0,
+    "u-cn-obgyn-gestational-diabetes-insulin-indication#col": false,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker": 11,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#shrink": 1.0,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#pad": 28,
+    "u-cn-obgyn-granulosa-cell-tumor-tumor-marker#col": false,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type": 11,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#shrink": 1.0,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#pad": 0,
+    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#col": true,
+    "u-cn-obgyn-hydatidiform-mole-diagnosis#figscale:f2": 0.85
    }
   },
   "류마티스내과": {
@@ -127,58 +215,61 @@
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 14,
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
    }
-  },
-  "호흡기내과": {
-   "tried": 23,
-   "diagram_after_section": {
-    "u-cn-pulm-methemoglobinemia-mechanism": 14,
-    "u-cn-pulm-methemoglobinemia-mechanism#shrink": 0.88,
-    "u-cn-pulm-methemoglobinemia-mechanism#pad": 0,
-    "u-cn-pulm-methemoglobinemia-mechanism#col": false,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures": 16,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#shrink": 1.0,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#pad": 14,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#col": false
-   }
   }
  },
  "result": "ok",
- "finished": "2026-11-01T10:14:05+09:00",
+ "finished": "2026-11-02T11:15:15+09:00",
  "upload": {
   "result": "ok",
   "items": {
+   "정형외과": {
+    "file": "MedKOS_학습서_정형외과.pdf",
+    "status": "uploaded",
+    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
+    "kept_id": true,
+    "md5": "519484d4583f90c31c8bbca8f04007b5",
+    "archive": "MedKOS_학습서_정형외과_v16_2026-11-02.pdf"
+   },
    "순환기내과": {
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "ecb8eed6becc182d075b5ddd6d597e3e",
-    "archive": "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf"
+    "md5": "c8375225351721712f921680d3dbda43",
+    "archive": "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf"
+   },
+   "안과": {
+    "file": "MedKOS_학습서_안과.pdf",
+    "status": "uploaded",
+    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
+    "kept_id": true,
+    "md5": "8ac317ca92de67fe59211df8d8ed003c",
+    "archive": "MedKOS_학습서_안과_v11_2026-11-02.pdf"
+   },
+   "산부인과": {
+    "file": "MedKOS_학습서_산부인과.pdf",
+    "status": "uploaded",
+    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
+    "kept_id": true,
+    "md5": "8a07751c95faae55c53c1f03e94fb6d4",
+    "archive": "MedKOS_학습서_산부인과_v17_2026-11-02.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "c9c49b1828b640599c7f00ee5d554db6",
-    "archive": "MedKOS_학습서_류마티스내과_v33_2026-11-01.pdf"
-   },
-   "호흡기내과": {
-    "file": "MedKOS_학습서_호흡기내과.pdf",
-    "status": "uploaded",
-    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "kept_id": true,
-    "md5": "17d8c6f21d379800d0749b06816c667d",
-    "archive": "MedKOS_학습서_호흡기내과_v13_2026-11-01.pdf"
+    "md5": "506dde9f7291de032a8fa116d002626b",
+    "archive": "MedKOS_학습서_류마티스내과_v34_2026-11-02.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "0e2f896c643047845c5bc4dbcb47d1c0"
+    "md5": "7cb78463ee8a6e855e25e5f19e2ca082"
    }
   },
-  "at": "2026-11-01T10:14:05+09:00"
+  "at": "2026-11-02T11:15:15+09:00"
  }
 }
