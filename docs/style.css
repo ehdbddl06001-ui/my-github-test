@@ -87,6 +87,26 @@ button.primary{background:var(--accent); border-color:var(--accent); color:#fff;
 button.danger{border-color:var(--bad); color:#ffb4b4}
 .muted{color:var(--muted); font-size:.88rem}
 
+/* 종목 칩(여러 개 선택) · 문항 목록 — 2026-11-02 */
+.chips{display:flex; flex-wrap:wrap; gap:8px; flex:1 1 300px}   /* 좁은 화면에선 이름표 아래 한 줄을 다 쓴다 */
+.chip{display:inline-flex; align-items:center; gap:6px; min-height:38px; border-radius:999px; padding:6px 13px; background:#0e1826}
+.chip[aria-pressed="true"]{background:rgba(59,130,246,.2); border-color:var(--accent); color:#fff; font-weight:600}
+.chip[aria-pressed="true"]::before{content:"✓"; color:var(--accent); font-weight:700}
+.chip .cnt{font-size:.8rem; font-weight:400; color:var(--muted); font-variant-numeric:tabular-nums}
+.chip .cnt:empty{display:none}
+.chip.all{border-style:dashed; color:var(--muted)}
+.chip.all[aria-pressed="true"]::before{content:none}
+.qlistbox{margin:6px 0 4px}
+.qlistbox summary{cursor:pointer; padding:4px 0}
+.qlist{list-style:none; margin:6px 0 0; padding:0; display:flex; flex-direction:column; gap:6px; max-height:60vh; overflow-y:auto}
+.ql-item{width:100%; text-align:left; display:grid; grid-template-columns:auto 1fr; gap:2px 10px; padding:8px 10px; background:#0e1826; font-size:.88rem}
+.ql-st{grid-row:span 2; align-self:center; font-size:.75rem; border-radius:6px; padding:2px 7px; border:1px solid var(--line); white-space:nowrap}
+.ql-st.u{color:#c9bcff; border-color:#4a3d7a}
+.ql-st.s{color:var(--ok); border-color:#1f6b3a}
+.ql-st.w{color:#ffb4b4; border-color:#7a3d3d}
+.ql-meta{color:var(--muted); font-size:.78rem}
+.ql-q{color:var(--ink); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
 .quiz-top{display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:10px}
 .badge{background:#0e1826; border:1px solid var(--line); border-radius:20px; padding:3px 12px; font-size:.82rem; color:var(--muted)}
 .tag{background:rgba(124,92,255,.15); color:#c9bcff; border:1px solid #4a3d7a; border-radius:6px; padding:2px 8px; font-size:.82rem}

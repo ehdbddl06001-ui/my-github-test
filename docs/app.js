@@ -8,7 +8,9 @@
              GitHub Pages 처럼 함수가 없는 호스트에서는 404 → 조용히 로컬 모드.
    - USMLE는 Step 1(기초의학)/Step 2(임상) 필터, 영상은 국시형/USMLE형 필터를 지원
    - 심전도 덱(ecg) = 영상 문항 중 modality ECG — 매일 심전도 트랙(exam-builder ecg_daily) + 영상 세트의 ECG.
-     오답은 따로 두지 않고 wrong_imaging 을 함께 쓴다(같은 문항이 두 곳에 갈라지지 않게). */
+     오답은 따로 두지 않고 wrong_imaging 을 함께 쓴다(같은 문항이 두 곳에 갈라지지 않게).
+   - 종목(덱)은 첫 화면 칩으로 여러 개를 함께 고른다(2026-11-02). 학습 구역의 「안 푼 문항」·「푼 문항 다시」는
+     학습 기록(learn.js 채점 기록)과 오답노트로 「푼 것」을 센다. */
 "use strict";
 
 // 각 문항에 출처 덱(src)을 박아 둔다 — '최신 세트'는 출처별 최신 날짜를 합쳐서 만든다.
@@ -29,21 +31,45 @@ const USMLE = [].concat(
 const CIRCLED = ["①", "②", "③", "④", "⑤"];
 const ALPHA = ["A", "B", "C", "D", "E"];
 const EXAM_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", ecg: "심전도" };
+// 종목(덱). 덱끼리 겹치는 문항(영상 세트의 국시형 등)은 여러 덱을 골라도 한 번만 낸다.
+const DECKS = { kmle: KMLE, usmle: USMLE, imaging: IMAGING, ecg: ECG };
+const DECK_ORDER = ["kmle", "usmle", "imaging", "ecg"];
+const DECK_KEY = "medkos_decks";
 
 const $ = (id) => document.getElementById(id);
 const show = (el) => el.classList.remove("hidden");
 const hide = (el) => el.classList.add("hidden");
 
-/* ---------- 시험 컨텍스트 ---------- */
-function exam() { return $("exam").value; }             // "kmle" | "usmle" | "imaging" | "ecg"
-function isUsmle() { return exam() === "usmle"; }
-function isEcg() { return exam() === "ecg"; }
-function isImaging() { return exam() === "imaging" || isEcg(); }   // 심전도 덱은 영상 덱의 한 갈래(형식 필터·영상 오답 공유)
-function examName(e) { return EXAM_NAME[e || exam()] || String(e || exam()).toUpperCase(); }
-function allQuestions() { return isUsmle() ? USMLE : isEcg() ? ECG : isImaging() ? IMAGING : KMLE; }
-// 보기 글머리: USMLE 와 영상 덱의 USMLE형은 A~E, 나머지(국시)는 ①~⑤.
+/* ---------- 시험 컨텍스트(고른 종목) ---------- */
+let SEL = loadSel();
+function loadSel() {
+  try {
+    const a = JSON.parse(localStorage.getItem(DECK_KEY) || "null");
+    const ok = Array.isArray(a) ? DECK_ORDER.filter((d) => a.indexOf(d) >= 0) : [];
+    return ok.length ? ok : ["kmle"];
+  } catch (e) { return ["kmle"]; }
+}
+function setSel(list) {
+  const ok = DECK_ORDER.filter((d) => list.indexOf(d) >= 0);
+  SEL = ok.length ? ok : ["kmle"];
+  try { localStorage.setItem(DECK_KEY, JSON.stringify(SEL)); } catch (e) { /* 저장 불가 — 이번 화면만 */ }
+  renderChips();
+}
+function has(d) { return SEL.indexOf(d) >= 0; }
+// 대표 종목 — 한 종목만 골랐을 때의 옛 뜻 그대로(여러 개면 첫 칩). 문항마다 갈리는 것(글머리·오답 저장)은 q 의 필드로 정한다.
+function exam() { return SEL[0]; }                      // "kmle" | "usmle" | "imaging" | "ecg"
+function isUsmle() { return SEL.length === 1 && SEL[0] === "usmle"; }
+function isEcg() { return SEL.length === 1 && SEL[0] === "ecg"; }
+function isImaging() { return SEL.length === 1 && (SEL[0] === "imaging" || SEL[0] === "ecg"); }   // 심전도 덱은 영상 덱의 한 갈래
+function examName(e) {
+  if (!e) return SEL.map((d) => EXAM_NAME[d]).join(" + ");
+  return EXAM_NAME[e] || String(e).toUpperCase();
+}
+// 보기 글머리: USMLE 문항과 영상 세트의 USMLE형은 A~E, 나머지(국시)는 ①~⑤. 여러 종목을 섞어 풀어도 문항마다 맞게.
 function labelsFor(q) {
-  const alpha = isUsmle() || (q && q.style === "usmle_style") || (q && q.exam === "usmle");
+  const alpha = q && (q.exam || q.src || q.style)
+    ? q.style === "usmle_style" || q.exam === "usmle" || q.src === "usmle"
+    : isUsmle();
   return alpha ? ALPHA : CIRCLED;
 }
 function label(i, q) { return labelsFor(q || deck[pos])[i] || String(i + 1); }
@@ -52,16 +78,16 @@ function storeExam(e) { const x = e || exam(); return x === "ecg" ? "imaging" : 
 function storeKey(e) { return "wrong_" + storeExam(e); }
 function removedKey(e) { return "wrong_removed_" + storeExam(e); }
 // 영상 세트 문항은 어느 덱에서 풀었든 오답을 wrong_imaging 에 모은다(같은 문항이 두 곳에 갈라지지 않게).
-function wrongExamOf(q) { return q && q.exam === "imaging" ? "imaging" : exam(); }
+function wrongExamOf(q) { return q && q.exam === "imaging" ? "imaging" : (q && q.src) || exam(); }
 
-/* 선택된 Step(USMLE)·형식(영상)으로 필터한 기준 문항 목록 */
-function baseList() {
-  let list = allQuestions().slice();
-  if (isUsmle()) {
+/* 한 덱의 기준 문항 — Step(USMLE)·형식(영상) 필터는 그 덱에만 건다 */
+function deckList(d) {
+  let list = (DECKS[d] || []).slice();
+  if (d === "usmle") {
     const step = $("step").value;
     if (step && step !== "__ALL__") list = list.filter((q) => q.step === step);
   }
-  if (isImaging()) {
+  if (d === "imaging" || d === "ecg") {
     const st = $("style").value;
     if (st && st !== "__ALL__") list = list.filter((q) => q.style === st);
     // 기본은 영상이 붙은 문항만. 세트의 텍스트 문항은 KMLE/USMLE 덱(그날 세트)에서 함께 풀린다.
@@ -69,15 +95,28 @@ function baseList() {
   }
   return list;
 }
+function unionLists(lists) {
+  const seen = new Set(), out = [];
+  lists.forEach((l) => l.forEach((q) => { if (!seen.has(q.id)) { seen.add(q.id); out.push(q); } }));
+  return out;
+}
+/* 고른 종목 전부의 기준 문항(겹치는 문항은 한 번) */
+function baseList() { return unionLists(SEL.map(deckList)); }
 
 /* ---------- 오답노트 저장소(시험별) ---------- */
-// 지금 덱에서 보여 줄 오답 — 심전도 덱이면 영상 오답 중 심전도 문항만.
-function deckWrong() {
-  const m = loadWrong();
-  if (!isEcg()) return m;
+// 한 덱의 오답노트 — 심전도 덱이면 영상 오답 중 심전도 문항만.
+function deckWrongOf(d) {
+  const m = loadWrong(d);
+  if (d !== "ecg") return m;
   const ids = new Set(ECG.map((q) => q.id));
   const out = {};
   Object.keys(m).forEach((id) => { if (ids.has(id)) out[id] = m[id]; });
+  return out;
+}
+// 고른 종목들의 오답노트를 합친 것(오답노트 화면·내보내기)
+function deckWrong() {
+  const out = {};
+  SEL.forEach((d) => Object.assign(out, deckWrongOf(d)));
   return out;
 }
 function loadWrong(e) {
@@ -116,23 +155,37 @@ function recordWrong(q, chosenIdx) {
   if (rm[q.id]) { delete rm[q.id]; saveRemoved(rm, we); }   // 다시 틀렸으면 묘비 철회
   scheduleSync();
 }
-function removeWrong(id) {
-  const m = loadWrong(); delete m[id]; saveWrong(m);
-  const rm = loadRemoved(); rm[id] = nowIso(); saveRemoved(rm);
+// e = 그 오답이 저장된 시험(오답 기록의 exam). 여러 종목을 함께 보는 오답노트에서 제자리를 지운다.
+function removeWrong(id, e) {
+  const m = loadWrong(e); delete m[id]; saveWrong(m, e);
+  const rm = loadRemoved(e); rm[id] = nowIso(); saveRemoved(rm, e);
   scheduleSync();
 }
-function setWrongNote(id, note) {
-  const m = loadWrong();
+function setWrongNote(id, note, e) {
+  const m = loadWrong(e);
   if (!m[id]) return;
   m[id].note = note;
   m[id].date = todayStr();      // 메모를 고친 기기의 값이 병합에서 이기도록 기록일 갱신
-  saveWrong(m);
+  saveWrong(m, e);
   scheduleSync();
 }
-// 이 덱의 오답 id 집합 — 덱 자체의 오답 + (영상 문항이 섞인 덱이면) 영상 오답까지.
+// 오답 id 전부(모든 시험) — 고른 덱의 문항과 겹치는 것만 쓰인다(영상 세트 문항은 어느 덱에서 풀었든 wrong_imaging).
 function wrongIds() {
-  const ids = new Set(Object.keys(loadWrong()));
-  if (!isImaging()) Object.keys(loadWrong("imaging")).forEach((id) => ids.add(id));
+  const ids = new Set();
+  SYNC_EXAMS.forEach((e) => Object.keys(loadWrong(e)).forEach((id) => ids.add(id)));
+  return ids;
+}
+// 푼 문항 id — 학습 기록의 채점(answer, 2026-09-18~ · 기기 간 동기화분 포함) + 오답노트(지운 오답의 묘비 포함 —
+// 한 번 틀렸으면 푼 것). 변형 문제(mode variant)는 덱 문항이 아니라 뺀다. 기록을 읽기만 하고 고치지 않는다.
+function solvedIds() {
+  const ids = new Set();
+  if (typeof LEARN === "object" && LEARN.load) {
+    LEARN.load().forEach((e) => { if (e && e.kind === "answer" && e.qid && e.mode !== "variant") ids.add(e.qid); });
+  }
+  SYNC_EXAMS.forEach((e) => {
+    Object.keys(loadWrong(e)).forEach((id) => ids.add(id));
+    Object.keys(loadRemoved(e)).forEach((id) => ids.add(id));
+  });
   return ids;
 }
 
@@ -247,10 +300,9 @@ function scheduleSync() {
 async function syncAll(quiet) {
   // 지금 연 덱만이 아니라 이 기기에 기록이 있는 모든 시험을 보낸다(2026-09-23) — 예전에는 KMLE 덱을 열면
   // USMLE 오답이 올라가지 않아 저장소에 USMLE 오답 파일이 한 번도 생기지 않았다.
-  const list = [storeExam()];
-  SYNC_EXAMS.forEach((e) => {
-    if (list.indexOf(e) < 0 && (e === "imaging" || Object.keys(loadWrong(e)).length || Object.keys(loadRemoved(e)).length)) list.push(e);
-  });
+  const mine = SEL.map(storeExam);
+  const list = SYNC_EXAMS.filter((e) => mine.indexOf(e) >= 0 || e === "imaging"
+    || Object.keys(loadWrong(e)).length || Object.keys(loadRemoved(e)).length);
   if (!quiet) setSyncStatus("☁ 동기화 중…");
   const parts = [];
   for (const e of list) {
@@ -265,6 +317,7 @@ async function syncAll(quiet) {
   const learnNote = !ls || ls.available === false ? ""
     : ls.fails ? ` · 학습 기록 전송 실패 ${ls.fails}회(자동 재시도)` : ls.lastOk ? ` · 학습 기록 ${ls.count}건 ${ls.lastOk}` : "";
   setSyncStatus(`☁ 오답 ${parts.join(" · ")} 동기화됨 · ${t}${learnNote}`, ls && ls.fails ? "bad" : "ok");
+  if (!$("setup").classList.contains("hidden")) onModeChange();   // 다른 기기의 오답이 들어왔으면 수를 다시 센다
 }
 // 반환: 동기화된 오답 수(실패·서버 없음이면 null)
 async function syncNow(e, quiet) {
@@ -356,26 +409,33 @@ function inRange(q, lo, hi) {
   return true;
 }
 
-function buildDeck() {
+// 학습 구역별 문항 — 덱마다 고른 뒤 합친다(최신 세트는 덱마다 그 덱의 최신 날짜).
+//   latest 최신 세트 · unsolved 안 푼 문항 · review 오답노트 · solved 푼 문항 전부 · range 기간 · all 전체
+function modeListOf(list, mode, ctx) {
+  if (mode === "latest") return latestSet(list);
+  if (mode === "range") return list.filter((q) => inRange(q, ctx.lo, ctx.hi));
+  if (mode === "review") return list.filter((q) => ctx.wrong.has(q.id));
+  if (mode === "solved") return list.filter((q) => ctx.solved.has(q.id));
+  if (mode === "unsolved") return list.filter((q) => !ctx.solved.has(q.id));
+  return list;
+}
+function modeCtx(mode) {
+  const ctx = { wrong: wrongIds(), solved: solvedIds(), lo: "", hi: "" };
+  if (mode === "range") Object.assign(ctx, rangeBounds(baseList()));
+  return ctx;
+}
+function modeList(mode, ctx) { return unionLists(SEL.map((d) => modeListOf(deckList(d), mode, ctx))); }
+// 지금 설정(종목·학습 구역·과목)으로 풀 문항 — 섞기 전 순서
+function currentList(ctx) {
   const mode = $("mode").value;
-  const base = baseList();
-  let list;
-  if (mode === "latest") {
-    const subj = $("subject").value;
-    list = latestSet(base);
-    if (subj && subj !== "__ALL__") list = list.filter((q) => q.subject === subj);
-  } else if (mode === "range") {
-    const subj = $("subject").value;
-    const { lo, hi } = rangeBounds(base);
-    list = base.filter((q) => inRange(q, lo, hi));
-    if (subj && subj !== "__ALL__") list = list.filter((q) => q.subject === subj);
-  } else if (mode === "review") {
-    const ids = wrongIds();
-    list = base.filter((q) => ids.has(q.id));
-  } else {
-    const subj = $("subject").value;
-    list = subj === "__ALL__" ? base : base.filter((q) => q.subject === subj);
-  }
+  let list = modeList(mode, ctx || modeCtx(mode));
+  const subj = $("subject").value;
+  if (subj && subj !== "__ALL__") list = list.filter((q) => q.subject === subj);
+  return list;
+}
+
+function buildDeck() {
+  const list = currentList();
   if ($("shuffle").checked) {
     for (let i = list.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -394,7 +454,11 @@ function startQuiz() {
       : mode === "range"
       ? "선택한 기간에 생성된 문항이 없습니다. 날짜 범위를 조정해 보세요."
       : mode === "review"
-      ? "이 시험의 오답노트에 쌓인 문항이 없습니다. 먼저 전체 문항을 풀어보세요."
+      ? "고른 종목의 오답노트에 쌓인 문항이 없습니다. 먼저 문항을 풀어보세요."
+      : mode === "unsolved"
+      ? "고른 종목(과목)에 안 푼 문항이 없습니다. 👏"
+      : mode === "solved"
+      ? "고른 종목(과목)에서 푼 문항이 아직 없습니다."
       : "조건에 맞는 문항이 없습니다.";
     alert(msg);
     return;
@@ -793,6 +857,7 @@ function pauseQuiz() {
   saveProgress();
   hide($("quiz"));
   show($("setup"));
+  onModeChange();               // 방금 푼 문항이 「안 푼 문항」 수에서 빠지게
   refreshResume();
 }
 
@@ -875,7 +940,7 @@ function closeZoom() {
 function saveProgress() {
   try {
     localStorage.setItem(PROG_KEY, JSON.stringify({
-      exam: exam(), mode: $("mode").value, subject: $("subject").value,
+      exam: exam(), decks: SEL.slice(), mode: $("mode").value, subject: $("subject").value,
       step: $("step").value, style: $("style").value, ids: deck.map((q) => q.id), answers, pos,
     }));
   } catch (e) { /* 저장 실패는 무시 */ }
@@ -892,7 +957,8 @@ function refreshResume() {
   if (!btn) return;
   if (p && p.ids && p.ids.length && (p.pos || 0) < p.ids.length) {
     btn.classList.remove("hidden");
-    btn.textContent = `이어서 풀기 (${(p.pos || 0) + 1}/${p.ids.length} · ${examName(p.exam)})`;
+    const names = Array.isArray(p.decks) && p.decks.length ? p.decks.map((d) => examName(d)).join("+") : examName(p.exam);
+    btn.textContent = `이어서 풀기 (${(p.pos || 0) + 1}/${p.ids.length} · ${names})`;
   } else {
     btn.classList.add("hidden");
   }
@@ -901,7 +967,9 @@ function refreshResume() {
 function resumeQuiz() {
   const p = loadProgress();
   if (!p || !p.ids) return;
-  if (p.exam) { $("exam").value = p.exam; onExamChange(); }
+  if (Array.isArray(p.decks) && p.decks.length) setSel(p.decks);
+  else if (p.exam) setSel([p.exam]);
+  onExamChange();
   if (p.step) $("step").value = p.step;
   if (p.style) $("style").value = p.style;
   if (p.mode) $("mode").value = p.mode;
@@ -910,7 +978,7 @@ function resumeQuiz() {
     $("subject").value = p.subject;
   }
   const byId = {};
-  allQuestions().forEach((q) => { byId[q.id] = q; });
+  DECK_ORDER.forEach((d) => DECKS[d].forEach((q) => { if (!byId[q.id]) byId[q.id] = q; }));
   deck = p.ids.map((id) => byId[id]).filter(Boolean);
   if (!deck.length) { clearProgress(); return; }
   answers = (p.answers || []).slice(0, deck.length);
@@ -948,11 +1016,12 @@ function finish() {
 
 /* ---------- 단일 문항(학습서 링크 ?q=<id> · 복습 목록) ---------- */
 function openSingleQuestion(id) {
-  const pools = [["kmle", KMLE], ["usmle", USMLE], ["imaging", IMAGING]];
-  for (const [e, arr] of pools) {
-    const q = arr.find((x) => x.id === id);
+  // 고른 종목에서 먼저 찾는다 — 목록에서 연 문항 때문에 고른 종목이 바뀌지 않게
+  const order = SEL.concat(DECK_ORDER.filter((d) => !has(d)));
+  for (const e of order) {
+    const q = DECKS[e].find((x) => x.id === id);
     if (!q) continue;
-    if (exam() !== e) { $("exam").value = e; onExamChange(); }
+    if (!has(e)) { setSel([e]); onExamChange(); }
     deck = [q]; pos = 0; correctCnt = 0; sessionWrong = []; answers = [];
     ["setup", "result", "wrongbook", "review"].forEach((s) => { if ($(s)) hide($(s)); });
     show($("quiz"));
@@ -999,27 +1068,27 @@ function renderWrongbook() {
   items.forEach((w) => { (bySub[w.subject] = bySub[w.subject] || []).push(w); });
   list.innerHTML = Object.keys(bySub).map((sub) => {
     const rows = bySub[sub].map((w) => `<div class="w">
-      <div class="whead">#${escapeHtml(w.id)} <span class="muted">${w.step ? w.step + " · " : ""}${w.style === "usmle_style" ? "USMLE형 · " : w.style === "kmle_style" ? "국시형 · " : ""}${escapeHtml(w.type || "")} · ${w.date}${w.device && w.device !== SYNC.device ? " · " + escapeHtml(w.device) : ""}</span></div>
+      <div class="whead">#${escapeHtml(w.id)} <span class="muted">${SEL.length > 1 ? escapeHtml(examName(w.exam)) + " · " : ""}${w.step ? w.step + " · " : ""}${w.style === "usmle_style" ? "USMLE형 · " : w.style === "kmle_style" ? "국시형 · " : ""}${escapeHtml(w.type || "")} · ${w.date}${w.device && w.device !== SYNC.device ? " · " + escapeHtml(w.device) : ""}</span></div>
       <div class="wmeta">${escapeHtml(w.question)}</div>
       <div class="mine">내 선택 ${label(w.chosen, w)} ${escapeHtml(w.chosenText)}</div>
       <div class="ans">정답 ${label(w.answer, w)} ${escapeHtml(w.answerText)}</div>
       ${w.coreNote ? `<div class="wmeta">핵심: ${escapeHtml(w.coreNote)}</div>` : ""}
       ${w.note ? `<div class="wnote">✍ ${escapeHtml(w.note)}</div>` : ""}
-      <button data-note="${escapeHtml(w.id)}">${w.note ? "메모 수정" : "틀린 이유 메모"}</button>
-      <button data-del="${escapeHtml(w.id)}">이 오답 삭제</button>
+      <button data-note="${escapeHtml(w.id)}" data-ex="${escapeHtml(w.exam || storeExam())}">${w.note ? "메모 수정" : "틀린 이유 메모"}</button>
+      <button data-del="${escapeHtml(w.id)}" data-ex="${escapeHtml(w.exam || storeExam())}">이 오답 삭제</button>
     </div>`).join("");
     return `<h3>${escapeHtml(sub)} (${bySub[sub].length})</h3>` + rows;
   }).join("");
   list.querySelectorAll("button[data-del]").forEach((b) => {
-    b.onclick = () => { removeWrong(b.getAttribute("data-del")); renderWrongbook(); updateWrongCount(); };
+    b.onclick = () => { removeWrong(b.getAttribute("data-del"), b.getAttribute("data-ex")); renderWrongbook(); updateWrongCount(); };
   });
   list.querySelectorAll("button[data-note]").forEach((b) => {
     b.onclick = () => {
-      const id = b.getAttribute("data-note");
-      const cur = (loadWrong()[id] || {}).note || "";
+      const id = b.getAttribute("data-note"), ex = b.getAttribute("data-ex");
+      const cur = (loadWrong(ex)[id] || {}).note || "";
       const v = prompt("틀린 이유 / 기억할 것 (비우면 삭제)", cur);
       if (v === null) return;
-      setWrongNote(id, v.trim());
+      setWrongNote(id, v.trim(), ex);
       renderWrongbook();
     };
   });
@@ -1056,7 +1125,7 @@ function exportMarkdown() {
       md += `| 복습 예정일(직접 작성) |  |\n`;
     });
   });
-  download(`오답노트_${exam()}_${todayStr()}.md`, md, "text/markdown");
+  download(`오답노트_${SEL.join("+")}_${todayStr()}.md`, md, "text/markdown");
 }
 
 function exportCsv() {
@@ -1070,7 +1139,7 @@ function exportCsv() {
     label(w.answer, w) + " " + w.answerText,
     w.source, w.note || "",
   ].map(esc).join(","));
-  download(`오답노트_${exam()}_${todayStr()}.csv`, "﻿" + head.join(",") + "\n" + rows.join("\n"), "text/csv");
+  download(`오답노트_${SEL.join("+")}_${todayStr()}.csv`, "﻿" + head.join(",") + "\n" + rows.join("\n"), "text/csv");
 }
 
 /* ---------- 유틸 ---------- */
@@ -1110,48 +1179,114 @@ function setRangeDefaults(base, force) {
   if (force || !t.value) t.value = hi;
 }
 
+// 종목 칩 — 눌림 상태, 그리고 (mode 가 주어지면) 그 학습 구역에서 각 종목만 골랐을 때 풀 문항 수
+function renderChips(mode, ctx) {
+  const box = $("deckChips");
+  if (!box) return;
+  box.querySelectorAll("button[data-deck]").forEach((b) => {
+    const d = b.getAttribute("data-deck");
+    b.setAttribute("aria-pressed", has(d) ? "true" : "false");
+    const c = b.querySelector(".cnt");
+    if (c && mode && ctx) c.textContent = String(modeListOf(deckList(d), mode, ctx).length);
+  });
+  const all = box.querySelector("button[data-deck-all]");
+  if (all) all.setAttribute("aria-pressed", SEL.length === DECK_ORDER.length ? "true" : "false");
+}
+function datesLabel(list) {
+  const dates = [...new Set(list.map((q) => q.created).filter(Boolean))].sort();
+  return dates.length > 1 ? `${dates[0]}~${dates[dates.length - 1]}` : (dates[0] || "");
+}
+
 function onModeChange() {
   const mode = $("mode").value;
   const base = baseList();
-  $("subjectRow").style.display = mode === "review" ? "none" : "";
   $("rangeRow").style.display = mode === "range" ? "" : "none";
+  if (mode === "range") setRangeDefaults(base, false);
+  const ctx = modeCtx(mode);
+  const list = modeList(mode, ctx);
+  const prevSubj = $("subject").value;
+  populateSubjects(list);
+  if (prevSubj && [...$("subject").options].some((o) => o.value === prevSubj)) $("subject").value = prevSubj;
+  renderChips(mode, ctx);
 
-  const fd = latestLabelOf(base);
+  const n = list.length;
+  const stepTxt = has("usmle") && $("step").value !== "__ALL__" ? ` [USMLE ${$("step").value}]` : "";
+  const names = examName() + stepTxt;
+  let hint = "";
   if (mode === "latest") {
-    populateSubjects(latestSet(base));
+    const fd = datesLabel(list);
+    const label = isEcg() ? `오늘의 심전도(${fd})` : isImaging() ? `오늘의 영상 세트(${fd})` : `최신 세트(${fd})`;
+    const u = list.filter((q) => !ctx.solved.has(q.id)).length;
+    const latestImg = !has("imaging") && !has("ecg") ? list.filter((q) => q.exam === "imaging").length : 0;
+    const imgNote = latestImg ? ` 이 중 ${latestImg}개는 그날 영상 세트에서 온 문항입니다.` : "";
+    hint = `${isImaging() ? "" : names + " "}${label} ${n}개 — 안 푼 ${u}개 · 푼 ${n - u}개.${imgNote}`
+      + (n && !u ? " 이 세트는 다 풀었습니다. 「안 푼 문항」으로 이어서 풀 수 있습니다."
+                 : " 새 세트가 나오면 자동으로 그 세트로 바뀝니다.");
   } else if (mode === "range") {
-    setRangeDefaults(base, false);
-    const { lo, hi } = rangeBounds(base);
-    populateSubjects(base.filter((q) => inRange(q, lo, hi)));
+    hint = `${ctx.lo} ~ ${ctx.hi} 사이에 만든 ${names} ${n}개를 풉니다.`;
   } else if (mode === "all") {
-    populateSubjects(base);
+    hint = `${names} 누적 ${n}개 전체(또는 선택 과목)를 풉니다.`;
+  } else if (mode === "review") {
+    hint = `${names} 오답노트에 쌓인 ${n}개만 다시 풉니다.`;
+  } else if (mode === "unsolved") {
+    hint = `${names} 누적 ${base.length}개 중 아직 안 푼 ${n}개를 풉니다. 칩의 숫자는 종목별 안 푼 수입니다.`;
+  } else if (mode === "solved") {
+    hint = `${names}에서 이미 푼 ${n}개(맞힌 것 포함)를 다시 풉니다.`;
   }
+  // 영상 세트 문항은 그 형식(국시형·USMLE형)의 KMLE·USMLE 덱에도 들어 있어 칩 숫자의 합이 총수보다 클 수 있다
+  if (SEL.length > 1) {
+    const sum = SEL.reduce((a, d) => a + modeListOf(deckList(d), mode, ctx).length, 0);
+    if (sum > n) hint += " (영상 세트 문항은 KMLE·USMLE 칩에도 함께 세어지지만, 풀 때는 한 번만 나옵니다.)";
+  }
+  $("modeHint").textContent = hint;
+  const basis = $("solvedBasis");
+  if (basis) basis.classList.toggle("hidden", !(mode === "unsolved" || mode === "solved" || mode === "latest"));
+  updateQList();
+}
 
-  const wrongN = Object.keys(deckWrong()).length;
-  const stepTxt = isUsmle() && $("step").value !== "__ALL__" ? ` [${$("step").value}]` : "";
-  const latestN = latestSet(base).length;
-  const latestImg = latestSet(base).filter((q) => q.exam === "imaging").length;
-  let rangeHint = "날짜 범위를 고르세요.";
-  if (mode === "range") {
-    const { lo, hi } = rangeBounds(base);
-    const n = base.filter((q) => inRange(q, lo, hi)).length;
-    rangeHint = `${lo} ~ ${hi} 사이에 만든 ${n}개를 풉니다.`;
+/* 지금 설정으로 풀 문항 목록(접어 둠) — 열 때만 그린다. 상태 표시: 안 품 · 푼 것 · 오답 */
+const QLIST_MAX = 200;
+function updateQList() {
+  const box = $("qlist");
+  if (!box) return;
+  const ctx = { wrong: wrongIds(), solved: solvedIds() };
+  const list = currentList();
+  $("qlistSum").textContent = `문항 목록 보기 (${list.length})`;
+  if (box.open) renderQList(list, ctx);
+}
+function deckLabelOf(q) {
+  if (q.src === "imaging") return String(q.modality || "").toUpperCase() === "ECG" ? "심전도" : "영상";
+  return EXAM_NAME[q.src] || "";
+}
+function renderQList(list, ctx) {
+  const body = $("qlistBody");
+  body.innerHTML = "";
+  if (!list.length) { body.innerHTML = '<p class="muted">문항이 없습니다.</p>'; return; }
+  const ol = document.createElement("ol");
+  ol.className = "qlist";
+  list.slice(0, QLIST_MAX).forEach((q) => {
+    const st = ctx.wrong.has(q.id) ? ["w", "오답"] : ctx.solved.has(q.id) ? ["s", "푼 것"] : ["u", "안 품"];
+    const text = String(q.vignette || q.question || "").replace(/\s+/g, " ").trim();
+    const li = document.createElement("li");
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "ql-item";
+    b.innerHTML = `<span class="ql-st ${st[0]}">${st[1]}</span>`
+      + `<span class="ql-meta">${escapeHtml(deckLabelOf(q))} · ${escapeHtml(q.subject || "")}${q.created ? " · " + escapeHtml(q.created) : ""}</span>`
+      + `<span class="ql-q">${escapeHtml(text.length > 70 ? text.slice(0, 70) + "…" : text)}</span>`;
+    b.onclick = () => openSingleQuestion(q.id);
+    li.appendChild(b);
+    ol.appendChild(li);
+  });
+  body.appendChild(ol);
+  if (list.length > QLIST_MAX) {
+    body.insertAdjacentHTML("beforeend", `<p class="muted small">앞 ${QLIST_MAX}개만 보입니다 — 과목을 고르면 좁혀집니다.</p>`);
   }
-  const latestLabel = isEcg() ? `오늘의 심전도(${fd})` : isImaging() ? `오늘의 영상 세트(${fd})` : `최신 세트(${fd})`;
-  const imgNote = !isImaging() && latestImg ? ` 이 중 ${latestImg}개는 그날 영상 세트에서 온 문항입니다.` : "";
-  const hint = {
-    latest: `${latestLabel} ${latestN}개를 풉니다.${imgNote} 새 세트가 나오면 자동으로 그 세트로 바뀝니다.`,
-    range: rangeHint,
-    all: `${examName()}${stepTxt} 누적 ${base.length}개 전체(또는 선택 과목)를 풉니다.`,
-    review: `${examName()} 오답노트에 쌓인 ${wrongN}개만 다시 풉니다.`,
-  }[mode];
-  $("modeHint").textContent = hint || "";
 }
 
 function onExamChange() {
-  const usmle = isUsmle(), imaging = isImaging();
-  $("stepRow").style.display = usmle ? "" : "none";
-  $("styleRow").style.display = imaging ? "" : "none";
+  $("stepRow").style.display = has("usmle") ? "" : "none";
+  $("styleRow").style.display = has("imaging") || has("ecg") ? "" : "none";
   // 시험이 바뀌면 사용 가능한 날짜 범위도 달라지므로 기간 입력을 새 전체범위로 리셋한다.
   setRangeDefaults(baseList(), true);
   onModeChange();
@@ -1163,7 +1298,7 @@ function onExamChange() {
 function applyQueryParams() {
   const p = new URLSearchParams(location.search);
   const e = p.get("exam");
-  if (e && [...$("exam").options].some((o) => o.value === e)) $("exam").value = e;
+  if (e && DECKS[e]) setSel([e]);
   const m = p.get("mode");
   if (m && [...$("mode").options].some((o) => o.value === m)) $("mode").value = m;
   return { start: p.get("start") === "1", q: p.get("q") || "", concept: p.get("concept") || "" };
@@ -1176,16 +1311,20 @@ function init() {
       '<p style="max-width:820px;margin:16px auto;color:#ffb4b4">문항 데이터를 불러오지 못했습니다. questions.js / questions_usmle.js / questions_imaging.js 를 확인하세요.</p>');
     return;
   }
-  if (IMAGING.length === 0) {
-    const o = [...$("exam").options].find((x) => x.value === "imaging");
-    if (o) o.textContent = "🩻 영상 (아직 문항 없음)";
-  }
-  if (ECG.length === 0) {
-    const o = [...$("exam").options].find((x) => x.value === "ecg");
-    if (o) o.textContent = "🫀 심전도 (아직 문항 없음)";
-  }
   const qp = applyQueryParams();
-  $("exam").onchange = onExamChange;
+  renderChips();
+  $("deckChips").querySelectorAll("button[data-deck]").forEach((b) => {
+    b.onclick = () => {
+      const d = b.getAttribute("data-deck");
+      const next = has(d) ? SEL.filter((x) => x !== d) : SEL.concat([d]);
+      if (!next.length) return;              // 하나는 남긴다
+      setSel(next); onExamChange();
+    };
+  });
+  const allChip = $("deckChips").querySelector("button[data-deck-all]");
+  if (allChip) allChip.onclick = () => { setSel(DECK_ORDER); onExamChange(); };
+  if ($("qlist")) $("qlist").addEventListener("toggle", updateQList);
+  $("subject").onchange = updateQList;
   $("step").onchange = onModeChange;
   $("style").onchange = onModeChange;
   if ($("imgOnly")) $("imgOnly").onchange = onModeChange;
@@ -1208,12 +1347,13 @@ function init() {
   $("exportCsvBtn").onclick = exportCsv;
   $("clearBtn").onclick = () => {
     if (confirm(`${examName()} 오답노트를 모두 비웁니다. 계속할까요?`)) {
-      const rm = loadRemoved(); const t = nowIso();
-      const gone = Object.keys(deckWrong());
-      gone.forEach((id) => { rm[id] = t; });
-      saveRemoved(rm);
-      if (isEcg()) { const m = loadWrong(); gone.forEach((id) => delete m[id]); saveWrong(m); }   // 다른 영상 오답은 남긴다
-      else localStorage.removeItem(storeKey());
+      const t = nowIso();
+      SEL.forEach((d) => {                     // 심전도만 골랐으면 다른 영상 오답은 남긴다
+        const gone = Object.keys(deckWrongOf(d));
+        if (!gone.length) return;
+        const rm = loadRemoved(d); gone.forEach((id) => { rm[id] = t; }); saveRemoved(rm, d);
+        const m = loadWrong(d); gone.forEach((id) => delete m[id]); saveWrong(m, d);
+      });
       renderWrongbook(); updateWrongCount(); scheduleSync();
     }
   };
@@ -1247,7 +1387,10 @@ function init() {
     LEARN.importJson(f, (n) => { alert(n < 0 ? "읽을 수 없는 파일입니다." : `기록 ${n}건을 합쳤습니다(기존 기록은 그대로).`); renderReview(); });
     ev.target.value = "";
   };
-  if (typeof LEARN === "object") LEARN.syncLearning(true);
+  // 다른 기기의 풀이 기록이 들어오면 「안 푼 문항」 수를 다시 센다
+  if (typeof LEARN === "object") Promise.resolve(LEARN.syncLearning(true)).then(() => {
+    if (!$("setup").classList.contains("hidden")) onModeChange();
+  }).catch(() => {});
   if (qp.q) openSingleQuestion(qp.q);
   else if (qp.concept) renderReview(qp.concept);
   else if (qp.start) startQuiz();

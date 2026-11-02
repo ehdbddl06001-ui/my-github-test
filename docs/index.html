@@ -25,18 +25,36 @@
 </nav>
 <header>
   <h1>MedKOS 대화형 퀴즈</h1>
-  <p class="sub">KMLE·USMLE·오픈데이터 영상 문항을 풀고 보기를 누르면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로, 영상은 국시형·USMLE형으로 나눠 풀 수 있습니다. 오답은 시험별로 저장되고, 동기화 서버가 있으면 기기 간에 합쳐집니다.</p>
+  <p class="sub">KMLE·USMLE·오픈데이터 영상 문항을 풀고 보기를 누르면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로, 영상은 국시형·USMLE형으로 나눠 풀 수 있습니다. 종목은 여러 개를 함께 고를 수 있고, 「안 푼 문항」으로 아직 안 푼 것만 모아 풀 수 있습니다. 오답은 시험별로 저장되고, 동기화 서버가 있으면 기기 간에 합쳐집니다.</p>
 </header>
 
 <!-- 설정 화면 -->
 <section id="setup" class="card">
+  <div class="row deckrow">
+    <label id="deckLabel">종목</label>
+    <div id="deckChips" class="chips" role="group" aria-labelledby="deckLabel">
+      <button type="button" class="chip" data-deck="kmle" aria-pressed="true">KMLE <span class="cnt"></span></button>
+      <button type="button" class="chip" data-deck="usmle" aria-pressed="false">USMLE <span class="cnt"></span></button>
+      <button type="button" class="chip" data-deck="imaging" aria-pressed="false">🩻 영상 <span class="cnt"></span></button>
+      <button type="button" class="chip" data-deck="ecg" aria-pressed="false">🫀 심전도 <span class="cnt"></span></button>
+      <button type="button" class="chip all" data-deck-all="1" aria-pressed="false">전체</button>
+    </div>
+  </div>
   <div class="row">
-    <label for="exam">시험</label>
-    <select id="exam">
-      <option value="kmle" selected>KMLE (국시)</option>
-      <option value="usmle">USMLE</option>
-      <option value="imaging">🩻 영상 (오늘의 오픈데이터 영상 문항)</option>
-      <option value="ecg">🫀 심전도 (매일 3장 판독 연습)</option>
+    <label for="mode">학습 구역</label>
+    <select id="mode">
+      <optgroup label="새로 풀기">
+        <option value="latest" selected>최신 세트 (가장 최근에 만든 문항)</option>
+        <option value="unsolved">안 푼 문항 (누적 중 아직 안 푼 것)</option>
+      </optgroup>
+      <optgroup label="다시 풀기">
+        <option value="review">오답 복습 (오답노트에 쌓인 문항)</option>
+        <option value="solved">푼 문항 다시 (맞힌 것까지 전부)</option>
+      </optgroup>
+      <optgroup label="골라 풀기">
+        <option value="range">기간 선택 (날짜 범위로 풀기)</option>
+        <option value="all">전체 문항 (누적)</option>
+      </optgroup>
     </select>
   </div>
   <div class="row" id="stepRow" style="display:none">
@@ -55,15 +73,6 @@
       <option value="usmle_style">USMLE형 (A~E)</option>
     </select>
     <label><input type="checkbox" id="imgOnly" checked /> 영상이 붙은 문항만</label>
-  </div>
-  <div class="row">
-    <label for="mode">학습 구역</label>
-    <select id="mode">
-      <option value="latest" selected>최신 세트 (가장 최근에 만든 문항)</option>
-      <option value="range">기간 선택 (날짜 범위로 풀기)</option>
-      <option value="all">전체 문항 (누적)</option>
-      <option value="review">오답 복습 (오답노트에 쌓인 문항)</option>
-    </select>
   </div>
   <div class="row" id="rangeRow" style="display:none">
     <label for="rangeFrom">기간</label>
@@ -85,6 +94,11 @@
     <button id="reviewOpenBtn">개념 복습</button>
   </div>
   <p id="modeHint" class="muted"></p>
+  <p id="solvedBasis" class="muted small hidden">「푼 것」은 채점 기록(2026-09-18~, 다른 기기와 동기화된 것 포함)과 오답노트로 셉니다 — 그 전에 맞히기만 한 문항은 기록이 없어 「안 푼 문항」에 남습니다.</p>
+  <details id="qlist" class="qlistbox">
+    <summary id="qlistSum" class="muted">문항 목록 보기</summary>
+    <div id="qlistBody"></div>
+  </details>
   <p id="wrongCount" class="muted"></p>
   <div id="syncNeedKey" class="syncwarn hidden" role="alert">
     <p id="syncNeedKeyText"></p>

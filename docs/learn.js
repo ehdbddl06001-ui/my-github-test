@@ -218,7 +218,7 @@ const LEARN = (() => {
   /* ---------- 채점 훅 ---------- */
   function onAnswer(q, chosenIdx, ok) {
     const ci = q.answer - 1;
-    add({ kind: "answer", qid: q.id, qver: q.qversion || 1, exam: q.exam || (typeof exam === "function" ? exam() : ""),
+    add({ kind: "answer", qid: q.id, qver: q.qversion || 1, exam: q.exam || q.src || (typeof exam === "function" ? exam() : ""),
       objective: q.objective || null, chosen: letterOf(chosenIdx), correct: letterOf(ci), ok,
       chosenText: q.options[chosenIdx] || "", answerText: q.options[ci] || "", mode: "deck" });
     add({ kind: "view", what: "explanation", qid: q.id, objective: q.objective || null });
