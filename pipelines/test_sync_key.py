@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import unittest
@@ -86,11 +87,19 @@ class StatusEndpoint(unittest.TestCase):
 class Wiring(unittest.TestCase):
     def test_index_loads_synckey_before_learn_and_app(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
-        a, b, c = (html.index(f'<script src="{n}"></script>') for n in ("synckey.js", "learn.js", "app.js"))
+        a, b, c = (re.search(rf'<script src="{re.escape(n)}(\?v=\d+)?"></script>', html).start()
+                   for n in ("synckey.js", "learn.js", "app.js"))
         self.assertLess(a, b)
         self.assertLess(b, c)
         for el in ("syncNeedKey", "syncNeedKeyText", "syncLinkBtn", "syncAuthInfo"):
             self.assertIn(f'id="{el}"', html)
+
+    def test_app_code_urls_carry_service_worker_version(self):
+        # 배포 직후 브라우저 캐시가 새 index.html 과 옛 app.js 를 섞지 않게 — 앱 코드 주소의 ?v= 는 sw.js VERSION 과 같다
+        html = (DOCS / "index.html").read_text(encoding="utf-8")
+        ver = re.search(r'const VERSION = "medkos-v(\d+)"', (DOCS / "sw.js").read_text(encoding="utf-8")).group(1)
+        for n in ("style.css", "synckey.js", "learn.js", "app.js", "pwa.js"):
+            self.assertIn(f'{n}?v={ver}"', html, n)
 
     def test_service_worker_caches_synckey(self):
         self.assertIn('"./synckey.js"', (DOCS / "sw.js").read_text(encoding="utf-8"))

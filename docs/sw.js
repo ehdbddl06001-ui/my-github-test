@@ -10,7 +10,7 @@
    경로는 전부 상대경로라 GitHub Pages(/my-github-test/)와 Cloudflare Pages(/) 어디서든 같다. */
 "use strict";
 
-const VERSION = "medkos-v21";
+const VERSION = "medkos-v22";   // 올리면 index.html 의 ?v= 도 같은 번호로(test_sync_key 가 본다)
 const DATA_TIMEOUT_MS = 8000;   // 이 시간 안에 네트워크 응답이 없으면 캐시로 먼저 보여 준다
 const SHELL = [
   "./", "./index.html", "./style.css", "./app.js", "./learn.js", "./synckey.js", "./pwa.js", "./manifest.webmanifest",
@@ -50,7 +50,9 @@ async function notifyClients(msg) {
 async function networkFirst(req) {
   const cache = await caches.open(VERSION);
   try {
-    const res = await fetch(req);
+    // no-cache = 브라우저 캐시를 쓰기 전에 서버에 확인(ETag → 바뀌지 않았으면 304). GitHub Pages 의 10분 캐시 때문에
+    // 껍데기 파일끼리 버전이 어긋나지 않게 한다(2026-11-02).
+    const res = await fetch(req, { cache: "no-cache" });
     if (res && res.ok) cache.put(req, res.clone());
     return res;
   } catch (err) {
