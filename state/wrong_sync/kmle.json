@@ -1175,8 +1175,29 @@
    "date": "2026-11-02",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1693": {
+   "id": "kmle-2026-1693",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Two Months of Pain above the Heel in a Marathon Runner Who Recently Took an Antibiotic",
+   "style": "",
+   "modality": "",
+   "question": "이 환자에게 하지 않아야 할 것은?",
+   "chosen": 4,
+   "chosenText": "뒤꿈치를 높이는 신발 깔창",
+   "answer": 2,
+   "answerText": "힘줄 주위 스테로이드 주사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "부착부 위 4 cm의 방추형 비후와 운동 시작 통증은 중간부 힘줄병증이고, 종아리 쥐기 반응과 초음파 연속성으로 파열은 아니다. 보존치료가 원칙이며 퇴행 힘줄에 스테로이드를 주사하면 파열 위험이 커지고, 최근 시프로플록사신 복용은 그 위험을 더한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-02",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-02T00:25:09.685Z"
+ "updated": "2026-11-02T00:30:58.845Z"
 }
