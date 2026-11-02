@@ -194,6 +194,9 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   **대조는 해리슨 22판 DB(2026-10-31 사용자 지시)** — 드라이브 `교과서/Harrison_22e_장별/H22_<장>` 문서. 슬롯 id 는 21판 장 번호 그대로 두고
   `content/outline/harrison22.json`(`harrison22_build.py`)의 대응표로 22판 장을 찾는다 → `outline.py --harrison <슬롯>` 이 22판 장·인쇄쪽·문서 ID·
   인용 `[[harrison-22: 장 p.N]]` 을 준다. 22판에 없는 21판 장(7·417·484)만 21판 문서(`Harrison_21e_장별`)로. 기존 `harrison-21` 인용은 유효하다.
+  **문항(KMLE·USMLE·영상)의 해리슨 인용도 22판(2026-11-02 사용자 지시)** — `harrison_cite.py --find <주제>` 로 22판 장 번호·제목을 찾아
+  `Harrison's Principles of Internal Medicine, 22e. <장>장 <제목>` 으로 쓴다(장 번호를 기억으로 쓰지 않는다 — 판마다 다르다).
+  `lint_questions.py` 가 2026-11-03 이후 문항의 21판 인용·장 번호 오류를 ERROR 로 막는다. 규칙 `/gen-kmle` 「해리슨 인용」.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.
