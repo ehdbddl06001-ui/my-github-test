@@ -79870,7 +79870,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-1086"
+   "kmle-2026-1086",
+   "usmle-2026-0241"
   ],
   "hasErrors": false
  },
