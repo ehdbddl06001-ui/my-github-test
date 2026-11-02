@@ -601,8 +601,29 @@
    "date": "2026-11-01",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0514": {
+   "id": "imaging-2026-0514",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "",
+   "type": "심전도 판독 — 수술 전 검사를 받은 중년 남성",
+   "style": "kmle_style",
+   "modality": "ECG",
+   "question": "심전도 판독으로 가장 적절한 것은?",
+   "chosen": 3,
+   "chosenText": "좌전섬유속 차단",
+   "answer": 1,
+   "answerText": "완전 우각차단",
+   "coreNote": "",
+   "differ": "",
+   "decision": "QRS 가 넓고 V1 rsR′, I·V6 의 넓은 S파가 있어 완전 우각차단이다. 끝부분이 V1 쪽(위)으로 향한다는 점이 좌각차단과 가른다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261101T202425Z_일일심전도_2026-11-02_2units_2q_db01df96",
+   "date": "2026-11-02",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-31T15:08:03.018Z"
+ "updated": "2026-11-02T00:52:53.837Z"
 }
