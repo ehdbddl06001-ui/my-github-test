@@ -1154,8 +1154,29 @@
    "date": "2026-11-02",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1694": {
+   "id": "kmle-2026-1694",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Numb Ring and Little Fingers and a Weak Grip in a Call-center Worker Who Leans on His Elbows",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 것은?",
+   "chosen": 3,
+   "chosenText": "제8경추 신경근병증",
+   "answer": 1,
+   "answerText": "팔꿈치굴증후군",
+   "coreNote": "",
+   "differ": "",
+   "decision": "넷째 자쪽 절반·다섯째 손가락 감각 저하와 뼈사이근 위축은 척골신경 병변이다. 손등 자쪽 감각 저하가 있어 손목보다 위쪽이고, 아래팔 안쪽 감각 정상과 목 검사 음성이 경추·신경얼기 병변 가능성을 낮추며, 팔꿈치 굽힘 유발 양성이 팔꿈치굴증후군을 가리킨다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-02",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-01T23:44:06.348Z"
+ "updated": "2026-11-02T00:25:09.685Z"
 }
