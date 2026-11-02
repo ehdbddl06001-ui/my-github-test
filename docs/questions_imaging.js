@@ -2,6 +2,397 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0527",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 숨이 차는 초고령 남성의 넓은 QRS",
+  "type": "심전도 판독 — 숨이 차는 초고령 남성의 넓은 QRS",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-02",
+  "vignette": "An 85-year-old man comes to the physician because of shortness of breath when climbing one flight of stairs for 3 months. He has no chest pain. He has hypertension treated with amlodipine. Blood pressure is 148/82 mm Hg and pulse is 80/min. Crackles are heard at both lung bases, and there is mild bilateral ankle edema. Serum troponin concentration is within the reference range and unchanged 3 hours later. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely interpretation of this ECG?",
+  "options": [
+   "Left bundle branch block",
+   "Acute anterior ST-elevation myocardial infarction",
+   "Right bundle branch block",
+   "Left ventricular hypertrophy with strain pattern",
+   "Ventricular preexcitation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Sinus rhythm at about 80/min with a QRS duration of at least 120 ms. Leads I, aVL, V5 and V6 show broad, notched R waves with no septal q waves, and V1–V3 show deep, wide QS or rS complexes. The ST segments and T waves point opposite to the main QRS deflection (ST elevation in V1–V3, ST depression and T inversion in I, aVL, V5–V6). This is complete left bundle branch block; the anterior ST elevation is the expected discordant change, not infarction.\n- 원리: <b>Why the septal q wave disappears</b>: Normally the septum is activated first from the left bundle, left to right, which makes a small q in I, aVL and V6. When the left bundle is blocked, the right bundle activates the septum from right to left, so the q is lost and the first force already points leftward.<br> <b>Why the QRS is wide and notched</b>: The left ventricle is depolarized slowly cell to cell from the right side; the delay produces a broad, notched R in the lateral leads and a deep wide S (QS) in the right precordial leads.<br> <b>Why ST elevation in V1–V3 is expected</b>: Abnormal depolarization changes repolarization, so ST and T go opposite to the QRS — discordant ST elevation in leads with deep QS. Infarction is suggested only when ST changes are concordant with the QRS or the discordant elevation is disproportionate (Sgarbossa criteria).\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Left bundle branch block (answer)</th><th>Acute anterior STEMI (closest distractor)</th></tr></thead><tbody> <tr><td>QRS</td><td><b>≥ 120 ms</b>, broad notched R in I, V6, no septal q</td><td>Usually narrow; new Q waves in V1–V4</td></tr> <tr><td>ST in V1–V3</td><td>Elevated but <b>discordant</b>, proportionate to the deep S</td><td>Elevated with a normal-width QRS, reciprocal inferior depression</td></tr> <tr><td>Clinical</td><td>No chest pain, flat normal troponin</td><td>Chest pain, rising troponin</td></tr> </tbody></table> In LBBB, ask whether ST deviation follows the expected discordant rule; concordance points to ischemia.\n- 오답 이유:\n  - (B) Acute anterior STEMI would be correct with chest pain, rising troponin and ST elevation over a narrow QRS or concordant ST elevation in LBBB.\n  - (C) Right bundle branch block would be correct with a wide rsR′ in V1 and wide slurred S waves in I and V6, the reverse of this pattern.\n  - (D) Left ventricular hypertrophy with strain would be correct with tall voltage and lateral ST depression but a QRS under 120 ms and preserved septal q waves.\n  - (E) Ventricular preexcitation would be correct with a short PR interval and a slurred delta wave at the start of a wide QRS.\n- 함정: Calling discordant ST elevation in V1–V3 an anterior infarction — in LBBB it is the expected secondary change.\n- 학습목표: 넓은 QRS, I·aVL·V5~V6 의 넓고 갈라진 R파와 중격 q파 소실, V1~V3 의 깊은 QS 와 반대 방향 ST 상승을 좌각차단으로 읽고 전벽 ST 상승 경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6661 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sinus rhythm at about 80/min with a QRS duration of at least 120 ms. Leads I, aVL, V5 and V6 show broad, notched R waves with no septal q waves, and V1–V3 show deep, wide QS or rS complexes. The ST segments and T waves point opposite to the main QRS deflection (ST elevation in V1–V3, ST depression and T inversion in I, aVL, V5–V6). This is complete left bundle branch block; the anterior ST elevation is the expected discordant change, not infarction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the septal q wave disappears</b>: Normally the septum is activated first from the left bundle, left to right, which makes a small q in I, aVL and V6. When the left bundle is blocked, the right bundle activates the septum from right to left, so the q is lost and the first force already points leftward.<br> <b>Why the QRS is wide and notched</b>: The left ventricle is depolarized slowly cell to cell from the right side; the delay produces a broad, notched R in the lateral leads and a deep wide S (QS) in the right precordial leads.<br> <b>Why ST elevation in V1–V3 is expected</b>: Abnormal depolarization changes repolarization, so ST and T go opposite to the QRS — discordant ST elevation in leads with deep QS. Infarction is suggested only when ST changes are concordant with the QRS or the discordant elevation is disproportionate (Sgarbossa criteria)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Left bundle branch block (answer)</th><th>Acute anterior STEMI (closest distractor)</th></tr></thead><tbody> <tr><td>QRS</td><td><b>≥ 120 ms</b>, broad notched R in I, V6, no septal q</td><td>Usually narrow; new Q waves in V1–V4</td></tr> <tr><td>ST in V1–V3</td><td>Elevated but <b>discordant</b>, proportionate to the deep S</td><td>Elevated with a normal-width QRS, reciprocal inferior depression</td></tr> <tr><td>Clinical</td><td>No chest pain, flat normal troponin</td><td>Chest pain, rising troponin</td></tr> </tbody></table> In LBBB, ask whether ST deviation follows the expected discordant rule; concordance points to ischemia."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Acute anterior STEMI would be correct with chest pain, rising troponin and ST elevation over a narrow QRS or concordant ST elevation in LBBB.\n(C) Right bundle branch block would be correct with a wide rsR′ in V1 and wide slurred S waves in I and V6, the reverse of this pattern.\n(D) Left ventricular hypertrophy with strain would be correct with tall voltage and lateral ST depression but a QRS under 120 ms and preserved septal q waves.\n(E) Ventricular preexcitation would be correct with a short PR interval and a slurred delta wave at the start of a wide QRS."
+   },
+   {
+    "k": "함정",
+    "v": "Calling discordant ST elevation in V1–V3 an anterior infarction — in LBBB it is the expected secondary change."
+   },
+   {
+    "k": "학습목표",
+    "v": "넓은 QRS, I·aVL·V5~V6 의 넓고 갈라진 R파와 중격 q파 소실, V1~V3 의 깊은 QS 와 반대 방향 ST 상승을 좌각차단으로 읽고 전벽 ST 상승 경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6661 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Wide QRS with broad notched lateral R waves, no septal q, and deep QS in V1–V3 with discordant ST changes is complete left bundle branch block",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The ST elevation in V1–V3 is discordant to deep QS complexes, and there is no chest pain and troponin is flat",
+   "steps": 3,
+   "chain": [
+    "영상: QRS ≥ 120 ms with sinus P waves → bundle branch block or ventricular origin",
+    "영상: broad notched R in I, aVL, V5–V6 without septal q; deep QS in V1–V3 → left bundle branch block",
+    "ST elevation in V1–V3 is discordant and troponin is flat → secondary change, not STEMI"
+   ],
+   "key": [
+    {
+     "item": "영상: QRS ≥ 120 ms, broad notched R in I, aVL, V5–V6 without septal q",
+     "why": "Defining features of LBBB",
+     "also": []
+    },
+    {
+     "item": "영상: deep QS in V1–V3 with discordant ST elevation",
+     "why": "Expected secondary change, not infarction",
+     "also": [
+      "의미 있는 정상·음성 소견"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has no chest pain",
+     "why": "Lowers the likelihood of acute infarction",
+     "also": []
+    },
+    {
+     "item": "Serum troponin concentration is within the reference range and unchanged 3 hours later",
+     "why": "No myocardial injury",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Crackles are heard at both lung bases",
+     "why": "Heart failure symptoms are common with LBBB but do not define the ECG",
+     "also": []
+    }
+   ],
+   "summary": "Wide QRS, broad notched lateral R waves without septal q, and deep QS in V1–V3 with discordant ST changes indicate left bundle branch block; flat troponin and no chest pain argue against STEMI.",
+   "switch": {
+    "choice": "B",
+    "condition": "If he had chest pain, rising troponin, and concordant ST elevation in leads with a positive QRS, acute myocardial infarction in LBBB"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0527.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/06000/#files-panel",
+   "asset_id": "PTBXL-06661",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6661"
+  },
+  "run_id": "20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0526",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 검진에서 맥박이 불규칙하다는 말을 들은 남성",
+  "type": "심전도 처치 — 검진에서 맥박이 불규칙하다는 말을 들은 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-02",
+  "vignette": "45세 남자가 건강검진에서 맥박이 불규칙하다는 말을 듣고 왔다. 두근거림·어지러움·실신은 없고 매주 세 번 달리기를 한다. 약은 먹지 않는다. 혈압 122/76 mmHg 이다. 맥박은 숨을 들이쉴 때 빨라지고 내쉴 때 느려지며, 숨을 참으면 규칙적이 된다. 심잡음은 없다. 혈청 전해질과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "항응고제를 시작한다",
+   "전기생리검사를 의뢰한다",
+   "추가 검사나 치료 없이 정상 변이임을 설명한다",
+   "24시간 활동 심전도 검사를 시행한다",
+   "베타차단제를 투여한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 리듬 스트립에서 RR 간격이 약 0.77~1.0 s 사이로 서서히 늘고 줄지만, 모든 QRS 앞에 같은 모양의 P파가 있고 PR 이 일정하며 QRS 는 좁다. 숨에 따라 맥이 빨라지고 느려지며 숨을 참으면 규칙적이 된다 — 호흡성 동부정맥이다. 증상이 없고 구조적 이상이 없으면 정상 생리 변이이므로 검사나 치료 없이 설명하고 안심시킨다.\n- 원리: <b>왜 숨에 따라 맥이 변하는가</b>: 들숨에는 흉강 압력이 낮아져 오른심장으로 돌아오는 혈액이 늘고, 폐 신장 수용체와 뇌줄기 호흡 중추의 연결로 <b>미주신경 긴장이 줄어</b> 동결절이 빨리 뛴다. 날숨에는 미주신경 긴장이 다시 늘어 느려진다. 그래서 숨을 참으면 변동이 사라진다.<br> <b>왜 건강의 표지인가</b>: 이 변동은 자율신경이 동결절을 잘 조절한다는 뜻이다. 젊고 운동하는 사람에게 크고, 나이·당뇨 자율신경병증·심부전에서는 줄어든다.<br> <b>병적 불규칙과 가르는 법</b>: P파 모양이 매번 같고 PR 이 일정하면 박동은 모두 동결절에서 나온다 — 심방 기외수축(다른 P파), 심방세동(P파 없음), 동결절 기능부전(긴 정지·변시성 장애)과 다르다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">설명·안심(정답)</th><th>24시간 활동 심전도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>없음</b></td><td>두근거림·어지러움·실신이 간헐적으로 있음</td></tr> <tr><td>심전도</td><td>같은 P파·일정한 PR, 숨에 따른 RR 변동</td><td>기록 중 원인 리듬이 잡히지 않음</td></tr> <tr><td>목적</td><td>정상 변이 확인으로 충분</td><td>증상과 리듬의 연관을 찾음</td></tr> </tbody></table> 「불규칙한 맥」이라는 말보다 리듬의 정체가 처치를 정한다 — 동부정맥이 확인되면 더 찾을 것이 없다.\n- 오답 이유:\n  - ① 항응고제는 심방세동·조동에서 뇌졸중 위험 점수가 높을 때 정답이다 — P파가 매번 보이는 이 기록에는 해당하지 않는다.\n  - ② 전기생리검사는 실신을 동반한 원인 불명의 넓은 QRS 빈맥이나 고도 방실차단이 의심될 때 정답이 된다.\n  - ④ 24시간 활동 심전도는 간헐적 두근거림·실신처럼 증상이 있고 진료실 심전도에서 원인 리듬이 잡히지 않았을 때 정답이 된다.\n  - ⑤ 베타차단제는 증상 있는 동빈맥이나 잦은 기외수축으로 불편할 때 쓰지만 생리적 동부정맥에는 쓸 이유가 없다.\n- 함정: 「맥이 불규칙하다」는 말에 곧 활동 심전도·약을 고르는 것 — 숨에 따라 변하고 P파가 같으면 정상이다.\n- 학습목표: 숨에 따라 RR 이 서서히 늘고 주는 동부정맥을 P파 모양·PR 이 일정함으로 확인하고, 증상 없는 생리적 변이에는 검사·치료 없이 안심시킨다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5126 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립에서 RR 간격이 약 0.77~1.0 s 사이로 서서히 늘고 줄지만, 모든 QRS 앞에 같은 모양의 P파가 있고 PR 이 일정하며 QRS 는 좁다. 숨에 따라 맥이 빨라지고 느려지며 숨을 참으면 규칙적이 된다 — 호흡성 동부정맥이다. 증상이 없고 구조적 이상이 없으면 정상 생리 변이이므로 검사나 치료 없이 설명하고 안심시킨다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 숨에 따라 맥이 변하는가</b>: 들숨에는 흉강 압력이 낮아져 오른심장으로 돌아오는 혈액이 늘고, 폐 신장 수용체와 뇌줄기 호흡 중추의 연결로 <b>미주신경 긴장이 줄어</b> 동결절이 빨리 뛴다. 날숨에는 미주신경 긴장이 다시 늘어 느려진다. 그래서 숨을 참으면 변동이 사라진다.<br> <b>왜 건강의 표지인가</b>: 이 변동은 자율신경이 동결절을 잘 조절한다는 뜻이다. 젊고 운동하는 사람에게 크고, 나이·당뇨 자율신경병증·심부전에서는 줄어든다.<br> <b>병적 불규칙과 가르는 법</b>: P파 모양이 매번 같고 PR 이 일정하면 박동은 모두 동결절에서 나온다 — 심방 기외수축(다른 P파), 심방세동(P파 없음), 동결절 기능부전(긴 정지·변시성 장애)과 다르다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">설명·안심(정답)</th><th>24시간 활동 심전도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>없음</b></td><td>두근거림·어지러움·실신이 간헐적으로 있음</td></tr> <tr><td>심전도</td><td>같은 P파·일정한 PR, 숨에 따른 RR 변동</td><td>기록 중 원인 리듬이 잡히지 않음</td></tr> <tr><td>목적</td><td>정상 변이 확인으로 충분</td><td>증상과 리듬의 연관을 찾음</td></tr> </tbody></table> 「불규칙한 맥」이라는 말보다 리듬의 정체가 처치를 정한다 — 동부정맥이 확인되면 더 찾을 것이 없다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 항응고제는 심방세동·조동에서 뇌졸중 위험 점수가 높을 때 정답이다 — P파가 매번 보이는 이 기록에는 해당하지 않는다.\n② 전기생리검사는 실신을 동반한 원인 불명의 넓은 QRS 빈맥이나 고도 방실차단이 의심될 때 정답이 된다.\n④ 24시간 활동 심전도는 간헐적 두근거림·실신처럼 증상이 있고 진료실 심전도에서 원인 리듬이 잡히지 않았을 때 정답이 된다.\n⑤ 베타차단제는 증상 있는 동빈맥이나 잦은 기외수축으로 불편할 때 쓰지만 생리적 동부정맥에는 쓸 이유가 없다."
+   },
+   {
+    "k": "함정",
+    "v": "「맥이 불규칙하다」는 말에 곧 활동 심전도·약을 고르는 것 — 숨에 따라 변하고 P파가 같으면 정상이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "숨에 따라 RR 이 서서히 늘고 주는 동부정맥을 P파 모양·PR 이 일정함으로 확인하고, 증상 없는 생리적 변이에는 검사·치료 없이 안심시킨다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5126 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "증상 없는 호흡성 동부정맥은 정상 변이이므로 검사·치료 없이 설명한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "증상이 없고 진료실 심전도에서 이미 리듬이 동부정맥으로 확인되었다 — 활동 심전도로 더 찾을 것이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞에 같은 P파·일정한 PR, RR 이 서서히 늘고 줄어듦 → 동리듬의 변동",
+    "들숨에 빨라지고 숨을 참으면 규칙적 → 호흡성 동부정맥",
+    "증상 없음 → 정상 변이, 설명·안심"
+   ],
+   "key": [
+    {
+     "item": "영상: 같은 모양 P파와 일정한 PR, RR 약 0.77~1.0 s 로 변동",
+     "why": "모든 박동이 동결절 기원",
+     "also": []
+    },
+    {
+     "item": "숨을 들이쉴 때 빨라지고 내쉴 때 느려지며",
+     "why": "호흡에 따른 미주신경 변화",
+     "also": []
+    },
+    {
+     "item": "숨을 참으면 규칙적이 된다",
+     "why": "호흡성임을 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 전해질과 갑상샘자극호르몬은 정상이다",
+     "why": "이차 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "두근거림·어지러움·실신은 없고",
+     "why": "증상 없음 — 추가 검사·치료가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "매주 세 번 달리기를 한다",
+     "why": "미주신경 긴장이 높은 사람에게 흔하다는 배경",
+     "also": []
+    }
+   ],
+   "summary": "같은 P파·일정한 PR 에 RR 이 숨에 따라 변하고 숨을 참으면 규칙적이 된다. 증상 없는 호흡성 동부정맥이므로 검사·치료 없이 설명한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "간헐적 두근거림이나 어지러움이 있는데 진료실 심전도가 정상이라면 24시간 활동 심전도"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0526.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05126",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5126"
+  },
+  "run_id": "20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0525",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 가끔 가슴이 덜컥하는 중년 남성",
+  "type": "심전도 판독 — 가끔 가슴이 덜컥하는 중년 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-02",
+  "vignette": "47세 남자가 2주 전부터 가끔 가슴이 「덜컥」 하고 한 박자 건너뛰는 느낌이 들어 왔다. 흉통·실신·호흡곤란은 없다. 고혈압으로 약을 먹고 있고 하루 커피 네 잔을 마신다. 혈압 136/84 mmHg 이고 요골동맥 맥박은 강약이 번갈아 느껴진다. 심잡음은 없다. 혈청 칼륨 4.0 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "간헐적 조기흥분 증후군",
+   "심실 기외수축 이단맥",
+   "심방세동",
+   "모비츠 2형 2도 방실차단",
+   "가속 심실고유리듬"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리듬 스트립과 사지·흉부 유도에서 좁은 동박동 하나와 넓고 기이한 조기 박동 하나가 짝을 이루어 번갈아 나온다. 조기 박동은 I·V4·V5 에서 크고 넓은 R파에 T파가 QRS 와 반대 방향이다 — 심실에서 시작해 정상 전도로가 아닌 심근을 따라 천천히 퍼진 박동의 모양이다. 동박동마다 기외수축이 하나씩 붙는 규칙적인 짝은 심실 기외수축 이단맥이다.\n- 원리: <b>왜 넓고 기이한가</b>: 동박동은 히스-푸르키니에 전도계를 타고 두 심실을 거의 동시에 탈분극시켜 QRS 가 좁다. 심실 한 곳에서 시작한 박동은 전도계를 거치지 않고 심근 세포끼리 천천히 전해져 QRS 가 0.12 s 이상으로 넓고 모양이 기이하다.<br> <b>왜 T파가 반대 방향인가</b>: 탈분극 순서가 비정상이면 재분극 순서도 따라 바뀐다. 먼저 탈분극된 부위가 먼저 재분극하므로 T파는 QRS 의 주 방향과 반대로 그려진다(이차성 ST-T 변화).<br> <b>왜 「건너뛰는」 느낌인가</b>: 일찍 온 박동은 심실이 덜 차 박출량이 적어 맥이 약하거나 만져지지 않는다. 그 뒤의 박동은 충만 시간이 길어 강하게 느껴진다 — 강약이 번갈아 느껴지는 맥과 「덜컥」 하는 증상의 원인이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">심실 기외수축 이단맥(정답)</th><th>심방세동(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리듬</td><td><b>짝을 이룬 규칙적 반복</b>(정상-조기-정상-조기)</td><td>완전히 불규칙한 RR</td></tr> <tr><td>QRS</td><td>번갈아 넓고 기이함, T파 반대 방향</td><td>대개 모두 좁고 같은 모양</td></tr> <tr><td>P파</td><td>동박동 앞에 같은 P파</td><td>P파 없고 기저선이 잔물결</td></tr> </tbody></table> 「불규칙하다」에서 멈추지 말고 반복되는 규칙(짝)이 있는지, QRS 가 두 종류인지를 본다.\n- 오답 이유:\n  - ① 조기흥분 증후군은 짧은 PR 과 QRS 시작부의 델타파가 있고 그 넓은 QRS 앞에 P파가 정상적으로 있을 때 정답이 된다.\n  - ③ 심방세동은 RR 이 규칙 없이 완전히 불규칙하고 P파 대신 잔물결 같은 기저선이 보일 때 정답이다.\n  - ④ 모비츠 2형 방실차단은 PR 이 일정하다가 P파 뒤에 QRS 가 갑자기 빠질 때 정답이다 — 이 기록은 빠지는 박동이 없다.\n  - ⑤ 가속 심실고유리듬은 넓은 QRS 가 분당 50~110회로 연달아 이어져 동리듬을 대신할 때 정답이 된다.\n- 함정: 번갈아 넓어지는 QRS 를 「불규칙한 맥 = 심방세동」으로 읽는 것 — 짝을 이루는 규칙성이 있다.\n- 학습목표: 좁은 동박동과 넓고 기이한 조기 박동이 번갈아 나오는 리듬을 심실 기외수축 이단맥으로 읽고 심방세동·2도 방실차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4637 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립과 사지·흉부 유도에서 좁은 동박동 하나와 넓고 기이한 조기 박동 하나가 짝을 이루어 번갈아 나온다. 조기 박동은 I·V4·V5 에서 크고 넓은 R파에 T파가 QRS 와 반대 방향이다 — 심실에서 시작해 정상 전도로가 아닌 심근을 따라 천천히 퍼진 박동의 모양이다. 동박동마다 기외수축이 하나씩 붙는 규칙적인 짝은 심실 기외수축 이단맥이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 넓고 기이한가</b>: 동박동은 히스-푸르키니에 전도계를 타고 두 심실을 거의 동시에 탈분극시켜 QRS 가 좁다. 심실 한 곳에서 시작한 박동은 전도계를 거치지 않고 심근 세포끼리 천천히 전해져 QRS 가 0.12 s 이상으로 넓고 모양이 기이하다.<br> <b>왜 T파가 반대 방향인가</b>: 탈분극 순서가 비정상이면 재분극 순서도 따라 바뀐다. 먼저 탈분극된 부위가 먼저 재분극하므로 T파는 QRS 의 주 방향과 반대로 그려진다(이차성 ST-T 변화).<br> <b>왜 「건너뛰는」 느낌인가</b>: 일찍 온 박동은 심실이 덜 차 박출량이 적어 맥이 약하거나 만져지지 않는다. 그 뒤의 박동은 충만 시간이 길어 강하게 느껴진다 — 강약이 번갈아 느껴지는 맥과 「덜컥」 하는 증상의 원인이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">심실 기외수축 이단맥(정답)</th><th>심방세동(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리듬</td><td><b>짝을 이룬 규칙적 반복</b>(정상-조기-정상-조기)</td><td>완전히 불규칙한 RR</td></tr> <tr><td>QRS</td><td>번갈아 넓고 기이함, T파 반대 방향</td><td>대개 모두 좁고 같은 모양</td></tr> <tr><td>P파</td><td>동박동 앞에 같은 P파</td><td>P파 없고 기저선이 잔물결</td></tr> </tbody></table> 「불규칙하다」에서 멈추지 말고 반복되는 규칙(짝)이 있는지, QRS 가 두 종류인지를 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 조기흥분 증후군은 짧은 PR 과 QRS 시작부의 델타파가 있고 그 넓은 QRS 앞에 P파가 정상적으로 있을 때 정답이 된다.\n③ 심방세동은 RR 이 규칙 없이 완전히 불규칙하고 P파 대신 잔물결 같은 기저선이 보일 때 정답이다.\n④ 모비츠 2형 방실차단은 PR 이 일정하다가 P파 뒤에 QRS 가 갑자기 빠질 때 정답이다 — 이 기록은 빠지는 박동이 없다.\n⑤ 가속 심실고유리듬은 넓은 QRS 가 분당 50~110회로 연달아 이어져 동리듬을 대신할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "번갈아 넓어지는 QRS 를 「불규칙한 맥 = 심방세동」으로 읽는 것 — 짝을 이루는 규칙성이 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "좁은 동박동과 넓고 기이한 조기 박동이 번갈아 나오는 리듬을 심실 기외수축 이단맥으로 읽고 심방세동·2도 방실차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4637 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 동박동과 넓고 기이한 조기 박동이 하나씩 번갈아 나오면 심실 기외수축 이단맥이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "RR 이 짝을 이루어 규칙적으로 반복되고 동박동 앞에 P파가 있다 — 완전히 불규칙한 심방세동이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 좁은 박동과 넓은 조기 박동이 하나씩 짝을 이루어 반복",
+    "넓은 박동은 I·V4·V5 에서 넓은 R파와 반대 방향 T파 → 심실 기원 → 심실 기외수축 이단맥"
+   ],
+   "key": [
+    {
+     "item": "영상: 좁은 동박동과 넓고 기이한 조기 박동이 번갈아 나옴",
+     "why": "이단맥의 정의",
+     "also": []
+    },
+    {
+     "item": "영상: 조기 박동의 T파가 QRS 와 반대 방향(I·V4·V5)",
+     "why": "심실 기원의 이차성 재분극",
+     "also": []
+    },
+    {
+     "item": "요골동맥 맥박은 강약이 번갈아 느껴진다",
+     "why": "조기 박동의 적은 박출량",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.0 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상",
+     "why": "전해질·갑상샘 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "하루 커피 네 잔을 마신다",
+     "why": "기외수축을 늘릴 수 있는 배경 — 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "좁은 동박동과 넓고 기이한 조기 박동(반대 방향 T파)이 하나씩 짝을 이루어 반복된다. 심실 기외수축 이단맥이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "RR 이 규칙 없이 완전히 불규칙하고 P파 대신 잔물결 기저선이면 심방세동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0525.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/04000/#files-panel",
+   "asset_id": "PTBXL-04637",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4637"
+  },
+  "run_id": "20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0524",
   "exam": "imaging",
   "style": "kmle_style",

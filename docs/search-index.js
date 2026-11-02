@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4295,
+  "total": 4298,
   "byType": {
    "usmle": 228,
    "kmle": 1664,
-   "imaging": 523,
+   "imaging": 526,
    "concept": 133,
    "paper": 884,
    "anatomy": 846,
@@ -39,7 +39,7 @@ window.MEDKOS_INDEX = {
    "Hematology": 101,
    "Laboratory Medicine": 91,
    "산부인과": 71,
-   "순환기": 51,
+   "순환기": 54,
    "호흡기": 35,
    "소화기": 33,
    "소아과": 28,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1228,
-   "high": 3014,
+   "high": 3017,
    "low": 53
   },
   "tagCount": 5223
@@ -797,6 +797,63 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1667.md",
    "snippet": "31세 남자가 이틀 전부터 가슴이 빨리 뛰어 왔다. 사흘 전부터 열이 나고 하루 8~9번 물설사를 하며 거의 먹지 못했다. 두근거림이 언제 시작됐는지 딱 집어 말하지 못하고 서서히 심해졌다고 한다. 응급실에서 숨을 참고 배에 힘을 주게 하자 맥박이 잠시 조금 느려졌다가 곧 원래대로 돌아왔다. 과거력은 없고 먹는 약은 없다. 입안이 마르고 피부 긴장도가 떨어져 있다. 활력징후, 검사 결과와 심전도는 자료와 같다. 심전도 리듬으로",
    "text": "Cardiology Racing Heartbeat for Two Days with Fever and Watery Stools in a Young Man tachyarrhythmia narrow-complex-tachycardia ecg KMLE 2026 / Claude 31세 남자가 이틀 전부터 가슴이 빨리 뛰어 왔다. 사흘 전부터 열이 나고 하루 8~9번 물설사를 하며 거의 먹지 못했다. 두근거림이 언제 시작됐는지 딱 집어 말하지 못하고 서서히 심해졌다고 한다. 응급실에서 숨을 참고 배에 힘을 주게 하자 맥박이 잠시 조금 느려졌다가 곧 원래대로 돌아왔다. 과거력은 없고 먹는 약은 없다. 입안이 마르고 피부 긴장도가 떨어져 있다. 활력징후, 검사 결과와 심전도는 자료와 같다. 심전도 리듬으로 가장 적절한 것은? A. 심방조동(atrial flutter) B. 방실결절 재진입 빈맥(AVNRT) C. 심방세동(atrial fibrillation) D. 다소성 심방빈맥(MAT) E. 동빈맥(sinus tachycardia) 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 간격으로 선행하는 규칙적인 좁은 QRS 빈맥이고, 서서히 시작되었으며 발살바 수기에 잠시 느려졌다가 되돌아왔다. 발열·탈수가 원인인 동빈맥이다."
+  },
+  {
+   "id": "imaging-2026-0527",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 숨이 차는 초고령 남성의 넓은 QRS",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0527.md",
+   "snippet": "An 85 year old man comes to the physician because of shortness of breath when climbing one flight of stairs for 3 months. He has no chest pain. He has hypertension treated with amlodipine. Blood pressure is 148/82 mm Hg and pulse is 80/min.",
+   "text": "순환기 심전도 판독 — 숨이 차는 초고령 남성의 넓은 QRS opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9 An 85 year old man comes to the physician because of shortness of breath when climbing one flight of stairs for 3 months. He has no chest pain. He has hypertension treated with amlodipine. Blood pressure is 148/82 mm Hg and pulse is 80/min. Crackles are heard at both lung bases, and there is mild bilateral ankle edema. Serum troponin concentration is within the reference range and unchanged 3 hours later. A 12 lead ECG is shown. Which of the following is the most likely interpretation of this ECG? A. Left bundle branch block B. Acute anterior ST elevation myocardial infarction C. Right bundle branch block D. Left ventricular hypertrophy with strain pattern E. Ventricular preexcitation"
+  },
+  {
+   "id": "imaging-2026-0526",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 검진에서 맥박이 불규칙하다는 말을 들은 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0526.md",
+   "snippet": "45세 남자가 건강검진에서 맥박이 불규칙하다는 말을 듣고 왔다. 두근거림·어지러움·실신은 없고 매주 세 번 달리기를 한다. 약은 먹지 않는다. 혈압 122/76 mmHg 이다. 맥박은 숨을 들이쉴 때 빨라지고 내쉴 때 느려지며, 숨을 참으면 규칙적이 된다. 심잡음은 없다. 혈청 전해질과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 항응고제를 시작한다 B. 전기생리검사를 의뢰한다 C. ",
+   "text": "순환기 심전도 처치 — 검진에서 맥박이 불규칙하다는 말을 들은 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9 45세 남자가 건강검진에서 맥박이 불규칙하다는 말을 듣고 왔다. 두근거림·어지러움·실신은 없고 매주 세 번 달리기를 한다. 약은 먹지 않는다. 혈압 122/76 mmHg 이다. 맥박은 숨을 들이쉴 때 빨라지고 내쉴 때 느려지며, 숨을 참으면 규칙적이 된다. 심잡음은 없다. 혈청 전해질과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 항응고제를 시작한다 B. 전기생리검사를 의뢰한다 C. 추가 검사나 치료 없이 정상 변이임을 설명한다 D. 24시간 활동 심전도 검사를 시행한다 E. 베타차단제를 투여한다"
+  },
+  {
+   "id": "imaging-2026-0525",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 가끔 가슴이 덜컥하는 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+   "confidence": "high",
+   "date": "2026-11-02",
+   "path": "content/imaging/2026/imaging-2026-0525.md",
+   "snippet": "47세 남자가 2주 전부터 가끔 가슴이 「덜컥」 하고 한 박자 건너뛰는 느낌이 들어 왔다. 흉통·실신·호흡곤란은 없다. 고혈압으로 약을 먹고 있고 하루 커피 네 잔을 마신다. 혈압 136/84 mmHg 이고 요골동맥 맥박은 강약이 번갈아 느껴진다. 심잡음은 없다. 혈청 칼륨 4.0 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 간헐적 조기흥분 증후군",
+   "text": "순환기 심전도 판독 — 가끔 가슴이 덜컥하는 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9 47세 남자가 2주 전부터 가끔 가슴이 「덜컥」 하고 한 박자 건너뛰는 느낌이 들어 왔다. 흉통·실신·호흡곤란은 없다. 고혈압으로 약을 먹고 있고 하루 커피 네 잔을 마신다. 혈압 136/84 mmHg 이고 요골동맥 맥박은 강약이 번갈아 느껴진다. 심잡음은 없다. 혈청 칼륨 4.0 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 간헐적 조기흥분 증후군 B. 심실 기외수축 이단맥 C. 심방세동 D. 모비츠 2형 2도 방실차단 E. 가속 심실고유리듬"
   },
   {
    "id": "imaging-2026-0524",
