@@ -1196,8 +1196,29 @@
    "date": "2026-11-02",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1690": {
+   "id": "kmle-2026-1690",
+   "exam": "kmle",
+   "subject": "Obstetrics & Gynecology",
+   "step": "",
+   "type": "Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl",
+   "style": "",
+   "modality": "",
+   "question": "수술 전 시행할 혈액검사로 가장 적절한 것은?",
+   "chosen": 4,
+   "chosenText": "인히빈 B·에스트라디올",
+   "answer": 0,
+   "answerText": "알파태아단백·β-hCG·LDH",
+   "coreNote": "",
+   "differ": "",
+   "decision": "17세에서 빠르게 커진 한쪽 고형 난소 종괴는 악성 생식세포종양을 먼저 생각한다. 월경이 규칙적이고 남성화 징후가 없어 호르몬 분비 성삭간질종양 가능성이 낮으므로, 수술 전 알파태아단백·β-hCG·LDH를 측정해 진단과 추적의 기준값으로 삼는다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-02",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-02T00:30:58.845Z"
+ "updated": "2026-11-02T00:41:08.943Z"
 }
