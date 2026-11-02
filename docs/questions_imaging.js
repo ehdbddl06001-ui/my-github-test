@@ -251,6 +251,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.complete-rbbb.ecg-recognition",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0514.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -379,6 +380,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.atlas-burst-fracture.mechanism",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0508.png",
    "caption": "Axial CT, bone window; arrows are from the original published figure — one panel cropped, no other change (PMC Open Access Subset, CC BY)",

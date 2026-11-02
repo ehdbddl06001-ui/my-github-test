@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-01",
+ "generated": "2026-11-02",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4273,
+  "total": 4280,
   "byType": {
    "kmle": 1664,
-   "concept": 127,
+   "concept": 133,
+   "paper": 884,
    "imaging": 514,
-   "paper": 883,
    "usmle": 222,
    "anatomy": 846,
    "ailab": 14,
@@ -18,24 +18,24 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 293,
+   "Cardiology": 295,
    "Nephrology": 232,
    "Infectious Disease": 215,
    "Pediatrics": 200,
-   "Obstetrics & Gynecology": 146,
+   "Obstetrics & Gynecology": 147,
    "Rheumatology": 130,
    "Pathology": 129,
    "Hematology-Oncology": 126,
    "Psychiatry": 124,
    "Neurology": 123,
+   "Orthopedics": 113,
    "General Surgery": 112,
    "Endocrinology": 110,
-   "Orthopedics": 110,
    "Surgery": 109,
    "Dermatology": 108,
    "Gastroenterology": 107,
+   "Ophthalmology": 107,
    "Pulmonology": 107,
-   "Ophthalmology": 106,
    "Hematology": 101,
    "Laboratory Medicine": 91,
    "산부인과": 69,
@@ -80,8 +80,8 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3000,
-   "medium": 1221,
-   "low": 52
+   "medium": 1227,
+   "low": 53
   },
   "tagCount": 5204
  },
@@ -663,6 +663,76 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Racing Heartbeat for Two Days with Fever and Watery Stools in a Young Man tachyarrhythmia narrow-complex-tachycardia ecg KMLE 2026 / Claude 31세 남자가 이틀 전부터 가슴이 빨리 뛰어 왔다. 사흘 전부터 열이 나고 하루 8~9번 물설사를 하며 거의 먹지 못했다. 두근거림이 언제 시작됐는지 딱 집어 말하지 못하고 서서히 심해졌다고 한다. 응급실에서 숨을 참고 배에 힘을 주게 하자 맥박이 잠시 조금 느려졌다가 곧 원래대로 돌아왔다. 과거력은 없고 먹는 약은 없다. 입안이 마르고 피부 긴장도가 떨어져 있다. 활력징후, 검사 결과와 심전도는 자료와 같다. 심전도 리듬으로 가장 적절한 것은? A. 심방조동(atrial flutter) B. 방실결절 재진입 빈맥(AVNRT) C. 심방세동(atrial fibrillation) D. 다소성 심방빈맥(MAT) E. 동빈맥(sinus tachycardia) 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 간격으로 선행하는 규칙적인 좁은 QRS 빈맥이고, 서서히 시작되었으며 발살바 수기에 잠시 느려졌다가 되돌아왔다. 발열·탈수가 원인인 동빈맥이다."
   },
   {
+   "id": "cn.ortho.ulnar-neuropathy.localization",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-02",
+   "path": "content/concepts/orthopedics/cn.ortho.ulnar-neuropathy.localization.md",
+   "snippet": "판단 — 왜 팔꿈치인가 넷째 자쪽 절반·다섯째 손가락 저림과 손 내재근(뼈사이근) 약화는 척골신경 영역이다. 엄지두덩·엄지와 검지 감각이 정상이면 정중신경(손목굴증후군)이 아니다 [[harrison 22: 457장 p.3613]]. 손등 자쪽 감각까지 떨어지면 손목 위에서 갈라지는 등쪽 피부가지가 침범된 것이라 병변은 손목보다 위다 [[?gray anatomy]]. 아래팔 안쪽 감각이 정상이면 C8·T1 뿌리와 하부 신경얼기는",
+   "text": "Orthopedics 판단 — 왜 팔꿈치인가 넷째 자쪽 절반·다섯째 손가락 저림과 손 내재근(뼈사이근) 약화는 척골신경 영역이다. 엄지두덩·엄지와 검지 감각이 정상이면 정중신경(손목굴증후군)이 아니다 [[harrison 22: 457장 p.3613]]. 손등 자쪽 감각까지 떨어지면 손목 위에서 갈라지는 등쪽 피부가지가 침범된 것이라 병변은 손목보다 위다 [[?gray anatomy]]. 아래팔 안쪽 감각이 정상이면 C8·T1 뿌리와 하부 신경얼기는 아니다 — 그 피부는 안쪽 다발에서 나오는 안쪽아래팔피부신경이 맡는다 [[harrison 22: 457장 p.3614–3615]]. 남는 자리가 팔꿈치다. 팔꿈치 Tinel, 굽힘·기대기에서 악화가 같은 쪽을 가리킨다 [[harrison 22: 457장 p.3613]]. 기전 — 고랑에서 눌리는 신경 척골신경은 팔꿈치에서 안쪽위관절융기와 팔꿈치머리 사이 고랑(condylar groove)을 지나 팔꿈치굴로 들어간다 [[harrison 22: 457장 p.3613]]. 이 자리는 피부 바로 아래라 책상에 팔꿈치를 기대면 직접 눌리고, 팔꿈치를 굽히면 신경이 늘어나고 굴이 좁아진다. 그래서 굽힌 채 자거나 수화기를 오래 들면 저림이 심해진다. 압박이 길어지면 감각 저하에 이어 손 내재근의 약화와 위축(첫째 등쪽뼈사이근, 손가락 벌리기 약화)이 오고, 엄지 모음근이 약해 종이를 집을 때 엄지 끝마디를 굽히는 Froment 징후가 나타난다 [[harrison 22: 457장 p.3613]]. 가르는 소견 — 병변 높이별 감각 손가락 분포는 척골신경과 C8 뿌리가 겹친다 — 높이는 손가락 바깥의 피부(손등 자쪽·아래팔 안쪽)로 가린다. 하부 줄기는 C8·T1 앞가지로 이루어진다 [[harrison 22: 457장 p.3614]]. 뿌리·하부 신경얼기 병변은 척골신경 밖의 C8·T1 영역(아래팔 안쪽 피부, 정중신경이 지배하는 엄지 근육)까지 함께 침범할 수 있다. 신경전도검사는 팔꿈치를 가로지르는 운동신경 전도 속도 저하와 감각 잠복기 연장으로 위치를 확인하고, 초음파는 팔꿈치 주변 신경 부종을 보여 준다 [[harrison 22: 457장 p.3613]]. 권고와 예외 치료는 악화 요인(팔꿈치 기대기·오래 굽히기)을 피하고 팔꿈치 패드를 쓰며, 필요하면 팔꿈치굴에서 신경을 감압한다 [[harrison 22: 457장 p.3613]]. 손목 척골관·손의 척골신경병증은 드물고 대개 외상 뒤에 생긴다 [[harrison 22: 457장 p.3613]]. 척골신경 등쪽 피부가지의 분지 높이는 해부서 원문으로 아직 대조하지 않았다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 457장 p.3613~3615)"
+  },
+  {
+   "id": "cn.ortho.atlas-burst-fracture.mechanism",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "low",
+   "date": "2026-11-02",
+   "path": "content/concepts/orthopedics/cn.ortho.atlas-burst-fracture.mechanism.md",
+   "snippet": "판단 — 왜 축성 압박이 먼저인가 결정적 소견은 앞고리가 끊겼는가 다. 고리는 앞에서 붙잡혀 있으면 한 쪽만 끊기기 어렵다 — 앞과 뒤가 모두 끊겼다면 고리를 바깥으로 벌리는 힘이 있었다 [[?jefferson 1920]]. 그 힘은 머리 꼭대기로 들어온 축성 하중이다. 얕은 물 다이빙·머리부터 떨어짐이 전형적 이야기다 [[?rockwood 9]]. 과신전은 뒤고리만, 과굴곡은 아래 목뼈 몸통을 다친다 — 표 참고. 신경 진찰",
+   "text": "Orthopedics 판단 — 왜 축성 압박이 먼저인가 결정적 소견은 앞고리가 끊겼는가 다. 고리는 앞에서 붙잡혀 있으면 한 쪽만 끊기기 어렵다 — 앞과 뒤가 모두 끊겼다면 고리를 바깥으로 벌리는 힘이 있었다 [[?jefferson 1920]]. 그 힘은 머리 꼭대기로 들어온 축성 하중이다. 얕은 물 다이빙·머리부터 떨어짐이 전형적 이야기다 [[?rockwood 9]]. 과신전은 뒤고리만, 과굴곡은 아래 목뼈 몸통을 다친다 — 표 참고. 신경 진찰 정상은 고리 파열에서 흔해 기전을 바꾸지 않는다. 기전 — 쐐기가 고리를 벌린다 고리뼈(atlas)는 몸통이 없는 고리다. 양옆의 가쪽덩이(lateral mass)는 바깥이 두껍고 안쪽이 얇은 쐐기 모양이며, 윗면이 뒤통수관절융기(occipital condyle)를 받친다. 머리 꼭대기에 힘이 들어오면 관절융기가 쐐기를 아래로 박아 가쪽덩이를 바깥으로 벌리고, 고리는 앞고리·뒤고리와 가쪽덩이가 만나는 얇은 곳에서 끊긴다 [[?jefferson 1920]]. 왜 신경이 대개 멀쩡한가 : 조각이 바깥으로 벌어져 척추관이 오히려 넓어진다. 왜 가로인대가 안정성을 정하나 : 가로인대(transverse atlantal ligament)는 치아돌기를 앞고리 뒤에 붙잡는다. 가쪽덩이가 너무 벌어져 이 인대가 끊기면 C1 C2 가 불안정해진다 [[?rockwood 9]]. 경추 운동의 절반이 이 고리중쇠관절에서 나온다 [[harrison 22: 19장 p.129]]. 가르는 소견 — 축상 CT 에서 앞고리와 뒤고리를 따로 본다 판독 순서: ① 앞고리가 이어져 있나 ② 뒤고리가 몇 곳에서 끊겼나 ③ 가쪽덩이가 바깥으로 밀렸나 ④ 치아돌기가 고리 가운데에 있나 ⑤ C2 도 보았나. 해석 한계 : 한 장의 축상 영상에서 얇은 골절선은 놓치기 쉽다 — 위·아래 단면과 재구성을 함께 본다. 가로인대 자체는 CT 로 보이지 않으므로 벌어짐·견열 조각으로 짐작하고 MRI 로 확인한다 [[harrison 22: 19장 p.130]]. 권고와 예외 경추 골절이 의심되면 불안정성으로 인한 추가 척수 손상을 막도록 목을 고정하고, 골절은 CT 로 본다 [[harrison 22: 19장 p.130]] [[harrison 22: 19장 p.132]]. 안정 파열은 보조기, 가로인대 파열은 고정술을 검토한다는 치료 갈래는 원문 대조하지 못했다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 19장 p.129~132 — 경추 외상의 고정·영상 선택만 다루고 고리뼈 골절의 기전·분류는 없다). (심화) 고리가 한 곳만 끊길 수 있나 닫힌 고리는 대개 두 곳 이상에서 끊긴다. 뒤고리 단독 골절은 앞고리가 온전해 고리가 「경첩」처럼 버티는 상황 — 뒤쪽에서만 집는 과신전 — 이고, 앞·뒤가 모두 끊긴 파열은 바깥으로 벌리는 힘이 있었다는 뜻이다 [[?jefferson 1920]] [[?rockwood 9]]. 그래서 축상 CT 한 장에서 「앞고리가 이어졌는가」 하나가 기전 문항의 답을 가른다."
+  },
+  {
+   "id": "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-02",
+   "path": "content/concepts/orthopedics/cn.ortho.achilles-tendinopathy.steroid-injection-contraindication.md",
+   "snippet": "판단 — 왜 스테로이드 주사가 금기인가 「하지 않아야 할 것」은 해로운 처치를 고르는 문항이다. 효과 근거가 약한 처치(깔창·단기 소염진통제)와 해를 남기는 처치를 가른다. 연속성이 유지된 중간부 힘줄병증은 보존치료 대상이다 — 부하 조절과 편심성 운동이 중심이다 [[?martin 2018]]. 퇴행 힘줄 주위에 글루코코르티코이드를 넣으면 파열 위험이 커진다. 글루코코르티코이드와 퀴놀론은 모두 힘줄병증 유발 약군이다 [[har",
+   "text": "Orthopedics 판단 — 왜 스테로이드 주사가 금기인가 「하지 않아야 할 것」은 해로운 처치를 고르는 문항이다. 효과 근거가 약한 처치(깔창·단기 소염진통제)와 해를 남기는 처치를 가른다. 연속성이 유지된 중간부 힘줄병증은 보존치료 대상이다 — 부하 조절과 편심성 운동이 중심이다 [[?martin 2018]]. 퇴행 힘줄 주위에 글루코코르티코이드를 넣으면 파열 위험이 커진다. 글루코코르티코이드와 퀴놀론은 모두 힘줄병증 유발 약군이다 [[harrison 22: 387장 p.2974]]. 최근 퀴놀론 복용은 위험을 더한다 — 원인 약은 끊고 다시 쓰지 않는다 [[harrison 22: 387장 p.2974]]. 기전 — 과부하에서 퇴행 힘줄로 아킬레스힘줄은 종아리 세갈래근의 힘을 발꿈치뼈로 전달한다. 반복된 달리기 부하가 회복을 넘어서면 힘줄이 염증보다는 퇴행 (섬유 배열 흐트러짐·두꺼워짐) 쪽으로 바뀐다 — 그래서 「힘줄염」보다 「힘줄병증」이라 부르고, 초음파에서 방추형 비후·저에코로 보인다. 아침 첫걸음과 운동 시작 때 아프다가 풀리는 것은 굳은 힘줄이 부하에 적응하기 때문이다. 이 약해진 힘줄에 글루코코르티코이드나 퀴놀론이 더해지면 힘줄이 더 약해져 파열로 갈 수 있고, 약물 유발 힘줄병증은 첫 증상이 파열인 경우도 있다 [[harrison 22: 387장 p.2974]]. 기전 자체는 아직 밝혀지지 않았다 [[harrison 22: 387장 p.2974]]. 가르는 소견 — 위치와 연속성 연속성은 종아리 쥐기 검사(발바닥굽힘이 일어나면 유지)와 초음파로 본다. 끊겼으면 다른 목표(파열 치료)다. 위치가 발꿈치 아래 안쪽이면 족저근막염, 발꿈치 뒤 힘줄 양옆 부종이면 발꿈치뼈 뒤 윤활낭염이다(감별표). 선택 — 해가 없는 것과 해로운 것 할 것: 활동 조절, 편심성 운동, 원인 약 중단. 보조: 단기 소염진통제, 뒤꿈치 깔창. 피할 것: 힘줄 주위 스테로이드 주사. 같은 장의 족저근막염에서도 국소 스테로이드 주사가 근막 파열 위험을 높일 수 있다고 적는다 [[harrison 22: 387장 p.2975]]. 권고와 예외 퀴놀론 복용 중 생긴 힘줄 통증은 약을 바꾸는 것이 먼저다(변형 v1). 편심성 운동의 횟수·기간, 깔창의 효과 크기는 이 정리본에서 대조하지 않았다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 387장 p.2973~2975 — 이 장은 아킬레스힘줄병증 치료를 따로 다루지 않고 약물 유발 힘줄병증만 다룬다)"
+  },
+  {
+   "id": "cn.ophth.normal-tension-glaucoma.visual-field",
+   "type": "concept",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-02",
+   "path": "content/concepts/ophthalmology/cn.ophth.normal-tension-glaucoma.visual-field.md",
+   "snippet": "판단 — 왜 시야검사가 먼저인가 녹내장은 시신경의 특징적 손상 (구조)과 그에 맞는 시야결손 (기능)으로 진단한다 — 안압은 진단 기준이 아니라 가장 중요한 위험인자이자 치료 표적이다 [[?aao poag ppp 2020]]. 안저에서 구조 이상을 봤으니 다음은 기능이다. 자동 정적 시야검사(standard automated perimetry)가 손상을 확인하고, 이후 진행을 판단할 기준값 이 된다. 정상안압 녹내장에서도 안압",
+   "text": "Ophthalmology 판단 — 왜 시야검사가 먼저인가 녹내장은 시신경의 특징적 손상 (구조)과 그에 맞는 시야결손 (기능)으로 진단한다 — 안압은 진단 기준이 아니라 가장 중요한 위험인자이자 치료 표적이다 [[?aao poag ppp 2020]]. 안저에서 구조 이상을 봤으니 다음은 기능이다. 자동 정적 시야검사(standard automated perimetry)가 손상을 확인하고, 이후 진행을 판단할 기준값 이 된다. 정상안압 녹내장에서도 안압을 더 낮추면 진행이 줄어든다 [[?cntgs 1998]] — 그래서 진단·기준값을 잡는 일이 치료 결정으로 이어진다. 기전 — 축삭 소실에서 테두리 패임으로 망막신경절세포의 축삭이 시신경유두 테두리(neuroretinal rim)를 지나 눈 밖으로 나간다. 녹내장에서는 이 축삭이 서서히 소실되어 테두리가 얇아지고 함몰(cup)이 커진다. 축삭은 위·아래 극에서 먼저 잘 빠진다 → 아래·위쪽 테두리 패임(notching) , 같은 방향의 쐐기 모양 신경섬유층 결손 . 유두 출혈(disc hemorrhage) 은 테두리 가장자리의 불꽃 모양 출혈로 진행의 신호다. 정상안압 녹내장에서 자주 보이며, 혈관 조절 이상(편두통·말초 혈관 연축)과 연관된다고 본다. 남은 테두리는 분홍색 이다 — 축삭이 줄어도 남은 조직의 혈류는 유지된다. 반대로 압박·허혈성 시신경병증은 창백이 앞선다. 신경섬유 다발 손상에 맞게 시야결손은 수평 경계선 (코쪽 계단·활 모양 암점)을 따른다. 가르는 소견 — 녹내장 vs 압박 vs 혈관 녹내장: 테두리 패임·유두 출혈·쐐기 결손, 분홍색 테두리, 시력·색각은 늦게까지 보존, 시야결손은 수평 경계. 압박성 시신경병증: 창백 함몰, 시력·색각 저하, 상대구심동공운동장애, 시야결손은 수직 경계. 망막 혈관 질환: 넓은 망막출혈·정맥 확장·면화반 — 혈관조영이 쓰이는 쪽. 안압 정상은 녹내장을 배제하지 않는다. 정상 범위는 인구 분포에서 정한 값이고 시신경의 견딤과는 별개다. 선택 — 무엇이 다음 검사를 바꾸나 녹내장성 변화 + 분홍색 테두리 + 정상 시력·색각 → 자동 정적 시야검사(빛간섭단층촬영으로 신경섬유층 두께를 함께 재기도 한다). 열린 각인지 전방각경으로 본다 — 좁으면 각막힘 평가와 치료가 원인 쪽 단계로 더해지고, 열려 있으면 유발검사는 필요 없다. 창백 함몰, 시력·색각 저하, 수직 경계 결손이면 시야검사만으로 끝내지 않고 영상검사를 한다. 권고와 예외 젊은 나이, 빠른 진행, 함몰 정도와 맞지 않는 시야결손이면 녹내장이 의심돼도 압박 병변을 찾는 영상검사를 고려한다. 시야검사는 학습 효과가 있어 첫 검사는 신뢰도가 낮을 수 있다 — 기준값은 반복 검사로 확정한다. 근거 표시: 위 서술의 출처는 서지만 확인했다(원문 미대조, 검토 항목). 국내 교과서·대한녹내장학회 지침 문구는 대조하지 않았다."
+  },
+  {
+   "id": "cn.obgyn.ovarian-germ-cell-tumor.tumor-markers",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-02",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.ovarian-germ-cell-tumor.tumor-markers.md",
+   "snippet": "판단 — 왜 AFP·β hCG·LDH 가 먼저인가 나이가 종양 계열을 정한다: 생식세포종양은 발생 정점이 청소년이고, 상피성 암은 나이 든 여성의 종양이다 [[harrison 22: 94장 p.712]]. 빠르게 커지는 큰 고형 종괴는 양성 기형종(유피낭종 — 석회화·지방이 섞인 낭종)보다 악성 생식세포종양을 먼저 생각하게 한다 [[harrison 22: 94장 p.712]]. 호르몬 징후(월경 사이 출혈·조기 사춘기·남성화)",
+   "text": "Obstetrics & Gynecology 판단 — 왜 AFP·β hCG·LDH 가 먼저인가 나이가 종양 계열을 정한다: 생식세포종양은 발생 정점이 청소년이고, 상피성 암은 나이 든 여성의 종양이다 [[harrison 22: 94장 p.712]]. 빠르게 커지는 큰 고형 종괴는 양성 기형종(유피낭종 — 석회화·지방이 섞인 낭종)보다 악성 생식세포종양을 먼저 생각하게 한다 [[harrison 22: 94장 p.712]]. 호르몬 징후(월경 사이 출혈·조기 사춘기·남성화)가 없으면 호르몬을 만드는 성끈 간질 종양 가능성이 낮다 — 간질 종양 대부분은 에스트로겐을 만들지 않고, 만들 때는 이 징후로 드러난다 [[harrison 22: 94장 p.710]] [[harrison 22: 94장 p.712]]. 표지자는 그 세포가 만드는 물질이다 — 생식세포종양 일부가 hCG·AFP 를 만들고 [[harrison 22: 94장 p.712]], 미분화세포종은 LDH 가 오른다 [[?novak 16]]. 수술 전 수치가 추적의 기준값이 된다. 기전 — 전능 세포에서 여러 표지자로 생식세포는 거의 모든 조직으로 분화할 수 있는 전능 세포라, 생식세포종양은 양성 기형종부터 미분화세포종·미성숙 기형종·난황낭종양·융모막암종까지 모양이 제각각이다 [[harrison 22: 94장 p.712]]. 어느 쪽으로 분화했는지가 표지자를 정한다 — 난황낭(태아 간·난황낭 성분)은 AFP, 영양막(융모막암종)은 hCG 를 만들고, 원시 생식세포를 닮은 미분화세포종은 특정 단백 대신 LDH 가 오른다 [[?novak 16]]. 고환 종양과 생물학이 비슷해 표지자와 항암 요법(BEP)도 같다 [[harrison 22: 94장 p.710]] [[harrison 22: 94장 p.712]]. 섞인 종양이 흔해 하나만 재지 않고 셋을 함께 잰다 [[?novak 16]]. 가르는 소견 — 기원 세포가 표지자를 정한다 상피·성끈 간질·생식세포 중 어디서 나왔는지를 나이·종괴 모양·호르몬 징후로 먼저 가늠한다(표) [[harrison 22: 94장 p.710]]. CA 125 는 상피성 암과 연관되지만 특이하지 않아 [[harrison 22: 94장 p.710]], 가임기 여성에서는 월경·자궁내막증·골반염에서도 오른다 — 10대 고형 종괴에서 정상이어도 악성을 배제하지 못한다 [[?novak 16]]. 소변 임신반응 음성은 임신 관련 종괴를 배제할 뿐이다 — 혈청 β hCG 정량은 종양 표지자로 따로 본다. 권고와 예외 생식세포종양은 양측이 드물어(미분화세포종만 10–15 %) 가임력을 보존하는 한쪽 난소(난관)절제와 림프절 표본이 원칙이다 [[harrison 22: 94장 p.712]]. 진행성 악성 생식세포종양은 고환 종양처럼 BEP(블레오마이신·에토포시드·시스플라틴) 항암치료를 한다. 미분화세포종은 방사선에도 잘 듣지만 불임을 일으켜 BEP 가 같거나 더 낫다 [[harrison 22: 94장 p.712]]. 수술 전에는 침 생검으로 진단하지 않는다 — 복강 오염 위험 [[harrison 22: 94장 p.711]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 표지자 짝의 근거 — 시험 기준: AFP = 난황낭종양, β hCG = 융모막암종, LDH = 미분화세포종 [[?novak 16]] / 다른 기준: 해리슨 22판은 「일부 생식세포 종양이 hCG·AFP 를 만든다」까지만 쓰고 LDH 와 종양별 짝은 적지 않는다 [[harrison 22: 94장 p.712]] / 왜 다른가: 내과 교과서는 부인종양 세부를 다루지 않는다 / 시험에서는: KMLE · USMLE 모두 세 표지자를 함께 고르는 것이 답이다. 짝의 원문 대조가 남은 검토 항목이다."
+  },
+  {
    "id": "cn.cardio.palpitations.arrhythmia-evaluation",
    "type": "concept",
    "unit": "",
@@ -675,6 +745,37 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.palpitations.arrhythmia-evaluation.md",
    "snippet": "판단 — 왜 위험 단서를 먼저 보나 심계항진 평가의 첫 목표는 증상이 생명을 위협하는 부정맥 때문인지 가리는 것이다 [[harrison 22: 45장 p.291]]. 관상동맥질환이나 그 위험인자가 있으면 심실 부정맥 위험이 가장 크고, 실신·어지럼이 함께 있으면 혈역학 저하를 시사한다 [[harrison 22: 45장 p.291]]. 대부분의 심계항진 환자는 심각한 부정맥이나 구조적 심질환이 없다 — 위험 단서가 없을 때 양상",
    "text": "Cardiology 판단 — 왜 위험 단서를 먼저 보나 심계항진 평가의 첫 목표는 증상이 생명을 위협하는 부정맥 때문인지 가리는 것이다 [[harrison 22: 45장 p.291]]. 관상동맥질환이나 그 위험인자가 있으면 심실 부정맥 위험이 가장 크고, 실신·어지럼이 함께 있으면 혈역학 저하를 시사한다 [[harrison 22: 45장 p.291]]. 대부분의 심계항진 환자는 심각한 부정맥이나 구조적 심질환이 없다 — 위험 단서가 없을 때 양상과 빈도로 기록 방법을 고른다 [[harrison 22: 45장 p.291]]. 기전 — 기외수축 뒤 박동을 느낀다 심계항진은 가슴이 「쿵」「두근」「파닥」하는 느낌, 곧 평소 의식하지 않던 심장 박동을 느끼는 것이다. 다른 자극이 적은 조용한 휴식 때 잘 느낀다. 간헐적 심계항진의 흔한 원인인 심방·심실 기외수축(premature contraction)에서 환자가 느끼는 것은 기외수축 자체가 아니라 그다음 박동이다 — 쉼 동안 심실 확장말기 크기가 커지고 그 박동의 수축력이 세지기(post extrasystolic potentiation) 때문이다. 그래서 「건너뛰는」 느낌으로 호소한다. 운동·스트레스·갈색세포종의 카테콜아민 자극, 대동맥판 역류의 커진 심실과 과역동 심첨부, 수축력을 올리는 물질(담배·카페인·아미노필린·아트로핀·티록신·코카인·암페타민·대마)도 심계항진을 만든다 [[harrison 22: 45장 p.291]]. 가르는 소견 — 양상과 원인 한 대규모 연구에서 원인은 심장 43%, 정신과 31%, 기타 10%, 불명 16%였다 [[harrison 22: 45장 p.291]]. 증상이 있을 때 환자에게 리듬을 두드려 보게 하거나 맥을 짚게 하면 규칙·불규칙을 가를 수 있다 [[harrison 22: 45장 p.291]]. 기타 원인 — 갑상선중독증, 알코올, 흉벽 골격근의 자발 수축, 갈색세포종, 전신 비만세포증, 코로나 후 증후군 [[harrison 22: 45장 p.291]]. 대부분의 부정맥은 심계항진이 없다 — 증상이 없다는 것이 부정맥이 없다는 뜻은 아니다 [[harrison 22: 45장 p.291]]. 선택 — 언제 무엇으로 기록하나 진찰에서 활력징후, 경정맥압과 맥박, 흉부·심장 청진으로 부정맥과 그 혈역학 결과를 본다. 기록은 증상 빈도에 맞춘다. Holter 는 임상 쓸모가 제한적이고, 드물게 되풀이되는 원인 불명 심계항진에서는 삽입형 루프 기록기와 이동형 원격 측정이 안전하고 비용효과가 나을 수 있다. 어느 방법이든 증상 시각을 일지나 표시로 남겨야 해석할 수 있다 [[harrison 22: 45장 p.291]]. 권고와 예외 증상이 괴로운 양성 심방·심실 기외수축은 베타차단제로 조절할 수 있다 [[harrison 22: 45장 p.291]]. 알코올·담배·불법 약물이 유발하면 끊게 하고, 처방약이 원인이면 가능할 때 다른 약으로 바꾼다 [[harrison 22: 45장 p.291]]. 정신과 원인은 인지치료나 약물치료가 도움이 될 수 있다. 심각한 원인을 배제한 뒤에는 예후에 나쁜 영향이 없다고 안심시킨다 [[harrison 22: 45장 p.291]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 45장 p.291)"
+  },
+  {
+   "id": "cn.cardio.complete-rbbb.ecg-recognition",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-02",
+   "path": "content/concepts/cardiology/cn.cardio.complete-rbbb.ecg-recognition.md",
+   "snippet": "판단 — 넓은 QRS 를 읽는 순서 폭 : QRS ≥ 120 ms 면 완전 각차단, 110~120 ms 면 불완전 [[harrison 22: 247장 p.1871]]. 폭이 늘지 않았다면 각차단이 아니다. V1 끝 방향 : 끝이 위로(R′) 서면 우각차단, 넓고 깊은 QS 면 좌각차단 [[harrison 22: 247장 p.1871]]. 축 : 폭이 정상인데 축이 −45° 보다 왼쪽이면 좌전섬유속 차단 [[harrison 22",
+   "text": "Cardiology 판단 — 넓은 QRS 를 읽는 순서 폭 : QRS ≥ 120 ms 면 완전 각차단, 110~120 ms 면 불완전 [[harrison 22: 247장 p.1871]]. 폭이 늘지 않았다면 각차단이 아니다. V1 끝 방향 : 끝이 위로(R′) 서면 우각차단, 넓고 깊은 QS 면 좌각차단 [[harrison 22: 247장 p.1871]]. 축 : 폭이 정상인데 축이 −45° 보다 왼쪽이면 좌전섬유속 차단 [[harrison 22: 247장 p.1872]]. 기전 — 늦게 깨는 우심실 정상 흥분은 히스속에서 좌우 각으로 갈라져 두 심실을 거의 동시에 탈분극시킨다 [[harrison 22: 247장 p.1868]]. 우각이 막히면 좌심실이 먼저, 우심실은 근육을 따라 천천히 늦게 탈분극한다. 그래서 QRS 가 넓어지고, QRS 끝 벡터가 늦은 쪽 — 오른쪽·앞 — 으로 향한다: V1 에서는 끝에 위로 솟는 R′, I·V6 에서는 끝에 넓은 S 가 된다 [[harrison 22: 247장 p.1871]]. 탈분극 순서가 바뀌어 재분극도 바뀌므로 T파는 QRS 마지막 굴절과 반대로 선다(이차성 변화) [[harrison 22: 247장 p.1872]]. 우심실 수축이 늦어 폐동맥판이 늦게 닫히면 S2 가 넓게 분열된다(원문 미대조). 가르는 소견 — 폭·V1 끝·축 좌각은 좌전·좌후 섬유속으로 나뉜다. 섬유속 하나만 막히면 나머지가 좌심실을 빠르게 깨우므로 QRS 는 거의 넓어지지 않고 축만 옮겨 간다 [[harrison 22: 247장 p.1872]]. 우각차단은 구조 심질환이 없는 사람에게 좌각차단보다 흔하고, 심방중격결손 같은 선천 질환과 판막·허혈 질환에서도 생긴다 [[harrison 22: 247장 p.1871]]. QRS 를 넓히는 바깥 요인(고칼륨혈증·1군 항부정맥제·삼환계 항우울제)과 조기흥분을 먼저 배제한다 [[harrison 22: 247장 p.1872]]. 권고와 예외 우각차단에서 오른쪽 가슴 유도의 T파 역위는 기대되는 이차성 변화이지만, 왼쪽 가슴 유도의 T파 역위는 허혈 등 다른 이상의 표지일 수 있다 [[harrison 22: 247장 p.1872]]. 오른쪽 가슴 유도에 우각차단 비슷한 모양과 ST 상승이 함께면 브루가다 양상을 따로 생각한다 [[harrison 22: 247장 p.1872]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 247장 p.1868–1873)"
+  },
+  {
+   "id": "paper-2026-0884",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-11-01",
+   "path": "content/papers/2026/2026-11-01_paper-2026-0884_variation_in_anticoagulation_practice_for_atrial_high_rate_e.md",
+   "snippet": "Title Variation in Anticoagulation Practice for Atrial High Rate Episodes: A Nationwide Cross Sectional Survey Authors Thant Kyi Zin, Antoun Ibrahim, Thu Kaung Myat, Somani Riyaz, Vali Zakariyya, Ng G Andre, Ibrahim Mokhtar Journal / DOI Jo",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Variation in Anticoagulation Practice for Atrial High Rate Episodes: A Nationwide Cross Sectional Survey Authors Thant Kyi Zin, Antoun Ibrahim, Thu Kaung Myat, Somani Riyaz, Vali Zakariyya, Ng G Andre, Ibrahim Mokhtar Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70542 · PMID: 42967320 https://pubmed.ncbi.nlm.nih.gov/42967320/ Abstract BACKGROUND: Atrial high rate episodes (AHRE) detected by cardiac implantable electronic devices (CIEDs) are associated with increased thromboembolic risk, yet their clinical significance and optimal anticoagulation strategy remain uncertain, particularly in the absence of electrocardiogram (ECG) confirmed atrial fibrillation. METHODS: We conducted a nationwide cross sectional survey of UK clinicians involved in CIED follow up. The survey assessed anticoagulation decision making in AHRE, including episode duration thresholds, cumulative burden, CHA2DS2 VA use, additional ECG monitoring, and anticoagulant choice. Only responses from UK based consultant clinicians were included and analysed descriptively. RESULTS: A total of 51 responses were received; 38 met the inclusion criteria and were analysed. Most respondents (86.8%) reported having reviewed AHRE alerts within the preceding 6 months, indicating that AHRE are commonly encountered in clinical practice. A ≥ 24 h episode was the most common threshold for anticoagulation (44.7%), although many clinicians reported lower thresholds or individualised approaches. Nearly half (44.7%) did not consider cumulative AHRE burden in decision making. CHA2DS2 VA thresholds also varied, most commonly ≥ 2 or ≥ 1. Additional ECG monitoring was infrequently performed. Direct oral anticoagulants were universally preferred, with apixaban the most commonly selected agent (73.7%). CONCLUSION: There is substantial variation in UK clinical practice regarding anticoagulation for AHRE, reflecting ongoing uncertainty and lack of clear guidance. These findings highlight the need for evidence based thresholds to support consistent and informed clinical decision making. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0515",

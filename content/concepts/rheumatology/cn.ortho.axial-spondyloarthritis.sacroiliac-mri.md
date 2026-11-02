@@ -4,8 +4,8 @@ type: concept
 topic: Rheumatology
 see_also: [Orthopedics]
 date: 2026-11-01
-updated: 2026-11-01
-version: 1
+updated: 2026-11-02
+version: 2
 outline: h362
 confidence: medium
 review_status: unreviewed
@@ -126,18 +126,29 @@ variants:
     answer: "B"
     explanation: "나이·성별·동반 소견이 바뀌었지만 결정 단서는 같다 — 45세 전 시작한 염증성 허리통증(야간 통증·아침 강직·움직이면 호전)에 척추관절염 소견(염증성 장질환·부착부염·HLA-B27)이 있고 X선은 정상이다. 초기 염증은 MRI 에만 보이므로 엉치엉덩관절 MRI 를 찍는다. CRP 정상은 활동성 환자의 60–70 % 에서 볼 수 있어 배제 근거가 아니고, 여자라는 점은 진단을 늦추는 흔한 이유일 뿐이다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 엉치엉덩관절 MRI STIR 의 골수 부종 — 축성 척추관절염의 활동성 염증
-  at: 가르는 소견 — 검사마다 보는 것
-  query: '"sacroiliitis" AND "bone marrow edema" AND "STIR" AND "spondyloarthritis"'
-  caption_terms:
-  - bone marrow
-  - STIR
-  modality: MR
 figures_rejected:
 - asset: PMC-PMC13535286_Figure2
   reason: 치료 6개월 뒤 추적 STIR — 캡션이 골수 부종의 뚜렷한 감소·잔존 이상 신호 없음이라 말한다. 요청한 활동성 골수 부종(기저 영상)이 아니다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13668895_fig2-752-0-1498-565.jpg
+  kind: mri
+  at: 가르는 소견 — 검사마다 보는 것
+  shows: 축성 척추관절염 — 엉치엉덩관절 반축상 STIR 의 엉치뼈 쪽 골수 부종(기저 영상)
+  look_for:
+  - 오른쪽 엉치엉덩관절 앞쪽 엉치뼈의 밝은 고신호(굵은 화살표)
+  - 관절 맞은편 엉덩뼈 경화 주변의 가는 고신호 띠(가는 화살표)
+  label: 「33-year-old woman with a clinical diagnosis of axSpA, Case 5, initial examinations, A anterior-posterior angulated radiograph of the sacroiliac joints (SIJs) and B–D MRI, semi-axial STIR image B, and semi-coronal T1-weighted image C and T1-weighted with fat saturation (FS) D. Radiographically, there is right-sided iliac sclerosis mainly located at the upper and middle part of the joint, also visible by MRI (asterisks). MRI in addition shows bone marrow edema (BME) at the right SIJ predominantly located anteriorly in the sacrum (arrows) with a slim brim of surrounding fat deposition (open arrows) extending to the subchondral area anteriorly (not shown). There is also a brim of BME peripherally to the iliac sclerosis (slim arrow)」 — Imaging characteristics of osteitis condensans ilii. A follow-up study
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Imaging characteristics of osteitis condensans ilii. A follow-up study. Skeletal Radiology
+  doi: 10.1007/s00256-026-05360-7
+  credit: 'Imaging characteristics of osteitis condensans ilii. A follow-up study. Skeletal Radiol. 2026 Sep 7;55(12):3347–60. doi: 10.1007/s00256-026-05360-7 (CC BY) — Fig. 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13668895/
+  asset: PMC-PMC13668895_Fig2
+  privacy_check: 패널 B(반축상 STIR)만 잘라 확인 — 골반 단면뿐, 얼굴·문신·이름·병원 표지 없음(인쇄 글자는 'Semi-axial STIR' 와 패널 문자뿐)
+  crop: 752,0,1498,565
 ---
 
 ## 판단 — 왜 X선이 정상이면 MRI 인가
