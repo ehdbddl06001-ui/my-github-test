@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4338,
+  "total": 4346,
   "byType": {
    "kmle": 1696,
    "usmle": 228,
    "paper": 888,
+   "imaging": 534,
    "concept": 137,
-   "imaging": 526,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,21 +38,21 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 109,
    "Hematology": 103,
    "Laboratory Medicine": 91,
-   "산부인과": 71,
+   "산부인과": 73,
    "순환기": 54,
-   "호흡기": 35,
+   "호흡기": 36,
    "소화기": 33,
-   "소아과": 28,
+   "소아과": 29,
    "Physiology": 25,
+   "감염": 25,
+   "병리·조직학": 25,
    "응급·중환자": 25,
-   "감염": 24,
+   "혈액·종양": 25,
    "내분비": 24,
-   "병리·조직학": 24,
    "신경": 24,
    "신장·비뇨기": 24,
-   "혈액·종양": 24,
+   "피부과": 22,
    "외과": 21,
-   "피부과": 21,
    "예방의학·역학": 20,
    "Pharmacology": 19,
    "Biochemistry": 18,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3046,
+   "high": 3054,
    "medium": 1239,
    "low": 53
   },
@@ -882,6 +882,144 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-03_paper-2026-0885_tavr_in_patients_with_moderate_aortic_stenosis_with_at_risk_.md",
    "snippet": "Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI Th",
    "text": "Cardiology scraped pubmed PubMed / The New England journal of medicine Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMoa2607326 · PMID: 42970708 https://pubmed.ncbi.nlm.nih.gov/42970708/ Abstract BACKGROUND: For patients with moderate aortic stenosis, current guidelines recommend clinical surveillance with echocardiographic assessment every 1 or 2 years. Whether transcatheter aortic valve replacement (TAVR) will improve outcomes in these patients remains unknown. METHODS: We conducted an international, open label, randomized trial to evaluate whether TAVR will result in better outcomes than clinical surveillance among patients with moderate aortic stenosis with at least one at risk feature (i.e., a symptom or structural or functional abnormality that has been shown to be associated with faster disease progression or adverse cardiovascular outcomes). The patients were assigned in a 1:1 ratio to undergo transfemoral TAVR with a balloon expandable valve or clinical surveillance. The primary effectiveness end point was a composite of death from any cause or a heart failure event with or without hospitalization at 2 years. Superiority testing was performed in the intention to treat population. RESULTS: A total of 744 patients underwent randomization: 373 patients were assigned to the TAVR group and 371 to the clinical surveillance group. The mean age of patients was 78 years, 39.1% were women, and 45.6% were at low surgical risk. The mean aortic valve area was 1.2 cm2, and the mean aortic valve peak velocity was 3.3 m per second. At 2 years, the Kaplan Meier estimate of the percentage of patients with a primary effectiveness end point event was 16.7% in the TAVR group and 23.9% in the clinical surveillance group (risk difference, 7.2 percentage points; 95% confidence interval, 13.1 to 1.3; P = 0.02 for superiority). The Kaplan Meier estimate of the percentage of patients who died from any cause was 8.4% in the TAVR group and 7.3% in the clinical surveillance group; the estimates for a heart failure event were 10.8% and 19.0%, respectively. The incidence of procedure related adverse events did not differ meaningfully between the patients in the TAVR group and those in the clinical surveillance group who underwent aortic valve replacement. CONCLUSIONS: Among patients with moderate aortic stenosis and at risk features, a strategy of TAVR was superior to clinical surveillance in lowering the incidence of death or a heart failure event at 2 years. (Funded by Edwards Lifesciences; PROGRESS ClinicalTrials.gov number, NCT04889872.). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0535",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 몇 달 사이 커진 검은 결절의 더모스코피",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0535.md",
+   "snippet": "A 55 year old woman comes to the physician because of a dark skin bump that has grown quickly over several months. It began as a small flat spot, became raised over the past 2 months, and bled once after minor trauma. It is not painful or i",
+   "text": "피부과 피부 — 몇 달 사이 커진 검은 결절의 더모스코피 opendata usmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 A 55 year old woman comes to the physician because of a dark skin bump that has grown quickly over several months. It began as a small flat spot, became raised over the past 2 months, and bled once after minor trauma. It is not painful or itchy. She has no family history of skin cancer. Examination shows a firm, 9 mm blue black nodule; no regional lymph nodes are palpable. A dermoscopic photograph of the lesion is shown. Which of the following is the most likely diagnosis? A. Cherry hemangioma B. Nodular melanoma C. Blue nevus D. Pigmented basal cell carcinoma E. Seborrheic keratosis"
+  },
+  {
+   "id": "imaging-2026-0534",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 사출성 구토를 하는 영아의 산염기 이상",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0534.md",
+   "snippet": "A 4 week old boy is brought to the physician because of vomiting after every feeding for 5 days. The vomiting has become forceful, and the vomitus is nonbilious formula. He is hungry immediately after vomiting. He was born at term after an ",
+   "text": "소아과 소아청소년 — 사출성 구토를 하는 영아의 산염기 이상 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 A 4 week old boy is brought to the physician because of vomiting after every feeding for 5 days. The vomiting has become forceful, and the vomitus is nonbilious formula. He is hungry immediately after vomiting. He was born at term after an uncomplicated pregnancy and is the family's first child. He has had fewer wet diapers today. His weight is 140 g less than at his visit 1 week ago. The mucous membranes are dry. A firm, mobile, olive sized mass is palpable in the epigastrium, and visible gastric peristaltic waves move from left to right across the upper abdomen. Which of the following sets of serum findings is most likely in this patient? A. Normal chloride, normal potassium, normal bicarbonate B. Low chloride, low potassium, high bicarbonate C. High chloride, low potassium, low bicarbonate D. Normal chloride, high potassium, low bicarbonate E. Low chloride, high potassium, high bicarbonate"
+  },
+  {
+   "id": "imaging-2026-0533",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 임신 중 자궁경부 세포검사의 고등급 병변",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0533.md",
+   "snippet": "31세 여자가 임신 14주에 처음 산전 진찰을 받았다. 지난 5년 동안 자궁경부암 검진을 받지 않았다. 질 출혈이나 성교 후 출혈은 없다. 초음파에서 자궁 안에 임신 주수에 맞는 태아 하나가 보이고 태아심박동이 있다. 질경 검사에서 자궁경부에 눈에 보이는 종괴는 없다. 자궁경부 세포검사 결과는 고등급 편평상피내병변(HSIL)이고 고위험 인유두종바이러스 16형이 양성이다. 다음 처치로 가장 적절한 것은? A. 질확대경 없이 분만",
+   "text": "산부인과 부인과 — 임신 중 자궁경부 세포검사의 고등급 병변 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 31세 여자가 임신 14주에 처음 산전 진찰을 받았다. 지난 5년 동안 자궁경부암 검진을 받지 않았다. 질 출혈이나 성교 후 출혈은 없다. 초음파에서 자궁 안에 임신 주수에 맞는 태아 하나가 보이고 태아심박동이 있다. 질경 검사에서 자궁경부에 눈에 보이는 종괴는 없다. 자궁경부 세포검사 결과는 고등급 편평상피내병변(HSIL)이고 고위험 인유두종바이러스 16형이 양성이다. 다음 처치로 가장 적절한 것은? A. 질확대경 없이 분만 6주 뒤 세포검사 반복 B. 질확대경검사와 자궁경부내막소파술 C. 임신 종결 뒤 자궁적출술 D. 질확대경검사와 의심 부위의 조준 생검 E. 자궁경부원추절제술"
+  },
+  {
+   "id": "imaging-2026-0532",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 페니실린 알레르기가 있는 임신부의 2기 매독",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0532.md",
+   "snippet": "A 24 year old woman, gravida 1, para 0, at 18 weeks' gestation comes to the physician because of a nonpruritic rash on her trunk, palms, and soles for 1 week. She has had mild malaise. Two months ago she noticed a painless genital sore that",
+   "text": "감염 감염 — 페니실린 알레르기가 있는 임신부의 2기 매독 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 A 24 year old woman, gravida 1, para 0, at 18 weeks' gestation comes to the physician because of a nonpruritic rash on her trunk, palms, and soles for 1 week. She has had mild malaise. Two months ago she noticed a painless genital sore that healed on its own. She reports developing generalized hives and wheezing after taking amoxicillin as a teenager. Temperature is 37.5°C. Examination shows scattered copper colored macules and papules, including on the palms and soles, and generalized nontender lymphadenopathy. Rapid plasma reagin titer is 1:64, and a treponemal antibody test is positive. HIV testing is negative. Which of the following is the most appropriate next step in management? A. Oral doxycycline for 14 days B. Intramuscular ceftriaxone for 10 days C. Oral azithromycin as a single dose D. Repeat the rapid plasma reagin titer in 4 weeks E. Penicillin desensitization followed by benzathine penicillin G"
+  },
+  {
+   "id": "imaging-2026-0531",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 철분제에 반응하지 않는 소구성 빈혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0531.md",
+   "snippet": "26세 여자가 회사 건강검진에서 빈혈이 있다고 하여 왔다. 3개월 전 다른 병원에서 철분제를 처방받아 꾸준히 먹었지만 혈색소가 그대로라고 한다. 월경량은 많지 않고 피곤함 외에 증상은 없다. 아버지도 「가벼운 빈혈」이 있다고 들었다. 결막이 약간 창백하고 비장은 만져지지 않는다. 혈색소 10.9 g/dL, 평균적혈구용적(MCV) 63 fL, 적혈구 수 5.8×10⁶/μL, 적혈구분포폭(RDW) 13.6 %(정상 11.5~14.",
+   "text": "혈액·종양 혈액·종양 — 철분제에 반응하지 않는 소구성 빈혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 26세 여자가 회사 건강검진에서 빈혈이 있다고 하여 왔다. 3개월 전 다른 병원에서 철분제를 처방받아 꾸준히 먹었지만 혈색소가 그대로라고 한다. 월경량은 많지 않고 피곤함 외에 증상은 없다. 아버지도 「가벼운 빈혈」이 있다고 들었다. 결막이 약간 창백하고 비장은 만져지지 않는다. 혈색소 10.9 g/dL, 평균적혈구용적(MCV) 63 fL, 적혈구 수 5.8×10⁶/μL, 적혈구분포폭(RDW) 13.6 %(정상 11.5~14.5), 페리틴 96 ng/mL, 그물적혈구 2.1 % 이다. 말초혈액도말에서 소구성 저색소성 적혈구와 표적세포가 보인다. 다음 검사로 확진에 가장 적절한 것은? A. 혈색소 전기영동 B. 골수 흡인 철염색 C. 위내시경과 대장내시경 D. 직접 항글로불린 검사 E. 혈청 비타민 B12·엽산 측정"
+  },
+  {
+   "id": "imaging-2026-0530",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 만삭이 지난 경산부의 분만 중 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0530.md",
+   "snippet": "34세 경산부(2회 분만)가 임신 42주에 진통으로 입원하였다. 임신 중 특별한 합병증은 없었고 양막은 2시간 전에 저절로 터졌으며 양수는 맑았다. 산모의 체온은 37.0 ℃, 혈압은 118/72 mmHg 이고 자궁경부는 6 cm 열려 있다. 옥시토신은 쓰지 않았다. 분만 중 태아심박동과 자궁활동 감시 기록의 10분 구간은 그림과 같다. 이 기록에서 자궁수축 때마다 반복되는 태아심박동 감속의 종류로 가장 적절한 것은? A. 지",
+   "text": "산부인과 산과 — 만삭이 지난 경산부의 분만 중 태아심박동 기록 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 34세 경산부(2회 분만)가 임신 42주에 진통으로 입원하였다. 임신 중 특별한 합병증은 없었고 양막은 2시간 전에 저절로 터졌으며 양수는 맑았다. 산모의 체온은 37.0 ℃, 혈압은 118/72 mmHg 이고 자궁경부는 6 cm 열려 있다. 옥시토신은 쓰지 않았다. 분만 중 태아심박동과 자궁활동 감시 기록의 10분 구간은 그림과 같다. 이 기록에서 자궁수축 때마다 반복되는 태아심박동 감속의 종류로 가장 적절한 것은? A. 지속감속 B. 동요성 심박동 C. 후기감속 D. 조기감속 E. 변이감속"
+  },
+  {
+   "id": "imaging-2026-0529",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 폐렴과 함께 생긴 삼출성 흉막삼출",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0529.md",
+   "snippet": "A 58 year old man comes to the emergency department because of fever, productive cough, and right sided pleuritic chest pain for 4 days. Temperature is 38.6°C, pulse is 104/min, and respirations are 22/min. Dullness to percussion and decrea",
+   "text": "호흡기 호흡기 — 폐렴과 함께 생긴 삼출성 흉막삼출 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 A 58 year old man comes to the emergency department because of fever, productive cough, and right sided pleuritic chest pain for 4 days. Temperature is 38.6°C, pulse is 104/min, and respirations are 22/min. Dullness to percussion and decreased breath sounds are present at the right lung base. Chest x ray shows right lower lobe consolidation with a small to moderate free flowing pleural effusion. Diagnostic thoracentesis yields slightly cloudy fluid. Pleural fluid/serum protein ratio is 0.7 and pleural fluid/serum LDH ratio is 0.8. Pleural fluid pH is 7.38, glucose is 92 mg/dL, and the white blood cell count is 6,500/mm3 with 85% neutrophils. Gram stain shows no organisms. Which of the following is the most likely cause of the effusion? A. Uncomplicated parapneumonic effusion B. Complicated parapneumonic effusion C. Malignant pleural effusion D. Tuberculous pleural effusion E. Heart failure related transudate"
+  },
+  {
+   "id": "imaging-2026-0528",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 뇌경색 3주 뒤 부검 뇌의 괴사 형태",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0528.md",
+   "snippet": "72세 남자가 3주 전 갑자기 생긴 오른쪽 반신마비와 실어증으로 입원해 치료받던 중 흡인폐렴으로 사망하였다. 고혈압과 심방세동이 있었고 항응고제를 먹지 않았다. 입원 당시 머리 CT 에서 출혈은 없었다. 부검에서 왼쪽 중대뇌동맥 영역의 뇌 조직이 물러지고 일부가 녹아 없어져 있었으며, 현미경으로는 지질을 탐식한 거품 모양 대식세포가 가득하고 가장자리에 반응성 성상세포가 늘어 있었다. 이 병변의 괴사 형태로 가장 적절한 것은? ",
+   "text": "병리·조직학 병리 — 뇌경색 3주 뒤 부검 뇌의 괴사 형태 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916 72세 남자가 3주 전 갑자기 생긴 오른쪽 반신마비와 실어증으로 입원해 치료받던 중 흡인폐렴으로 사망하였다. 고혈압과 심방세동이 있었고 항응고제를 먹지 않았다. 입원 당시 머리 CT 에서 출혈은 없었다. 부검에서 왼쪽 중대뇌동맥 영역의 뇌 조직이 물러지고 일부가 녹아 없어져 있었으며, 현미경으로는 지질을 탐식한 거품 모양 대식세포가 가득하고 가장자리에 반응성 성상세포가 늘어 있었다. 이 병변의 괴사 형태로 가장 적절한 것은? A. 지방괴사 B. 섬유소모양괴사 C. 액화괴사 D. 응고괴사 E. 치즈괴사"
   },
   {
    "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion",
