@@ -318,8 +318,29 @@
    "date": "2026-11-03",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "usmle-2026-0237": {
+   "id": "usmle-2026-0237",
+   "exam": "usmle",
+   "subject": "Immunology",
+   "step": "Step 1",
+   "type": "A Creatinine That Rose From 1.2 to 2.1 Fourteen Months After a Kidney Transplant in a 46-Year-Old Who Has Been Skipping Evening Doses",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following is the most likely mechanism of this graft dysfunction?",
+   "chosen": 1,
+   "chosenText": "Recipient CD8+ T cells recognizing donor MHC class I on tubular cells",
+   "answer": 3,
+   "answerText": "Newly formed recipient antibodies against donor HLA on graft endothelium",
+   "coreNote": "",
+   "differ": "",
+   "decision": "교차시험 음성과 14개월의 안정 경과는 기존 항체를, 낮은 타크로리무스 농도는 약물 독성을 낮춘다. 모세혈관염·세관주위 모세혈관 C4d·새로 검출된 공여자 특이 항체는 복용 누락 뒤 새로 생긴 항체가 이식편 내피를 공격하는 항체 매개 거부를 가리킨다.",
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 325장 Kidney Transplantation)",
+   "date": "2026-11-03",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-03T02:32:37.382Z"
+ "updated": "2026-11-03T02:59:40.262Z"
 }
