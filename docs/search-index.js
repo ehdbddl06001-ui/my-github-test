@@ -1,29 +1,29 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-02",
+ "generated": "2026-11-03",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4299,
+  "total": 4303,
   "byType": {
    "usmle": 228,
+   "paper": 888,
    "concept": 134,
    "kmle": 1664,
    "imaging": 526,
-   "paper": 884,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 296,
-   "Nephrology": 232,
+   "Cardiology": 297,
+   "Nephrology": 233,
    "Infectious Disease": 215,
-   "Pediatrics": 200,
+   "Pediatrics": 201,
    "Obstetrics & Gynecology": 148,
-   "Pathology": 130,
+   "Pathology": 131,
    "Rheumatology": 130,
    "Hematology-Oncology": 126,
    "Psychiatry": 125,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1229,
+   "medium": 1233,
    "high": 3017,
    "low": 53
   },
@@ -221,6 +221,74 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0236.md",
    "snippet": "A 41 year old woman comes to the physician because of progressive muscle weakness for 1 month. Over the past year, she has had 2 episodes of left flank pain during which she passed small stones. She has had dry eyes and a dry mouth for 3 ye",
    "text": "Physiology Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate renal-tubular-acidosis distal-rta normal-anion-gap-metabolic-acidosis urine-anion-gap sjogren nephrocalcinosis physiology mechanism USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 58장 Acidosis and Alkalosis; 373장 Sjögren’s Disease) A 41 year old woman comes to the physician because of progressive muscle weakness for 1 month. Over the past year, she has had 2 episodes of left flank pain during which she passed small stones. She has had dry eyes and a dry mouth for 3 years, for which she uses artificial tears. She has not had vomiting or diarrhea and takes no diuretics, laxatives or other medications. Her vital signs are shown. Examination shows dry oral mucosa and bilateral parotid enlargement. Muscle strength is 4/5 in the proximal lower extremities. Laboratory results are shown. An x ray of the abdomen shows bilateral speckled calcifications in the renal medullae. Which of the following best explains her acid base disturbance? A. Decreased bicarbonate reabsorption in the proximal tubule B. Impaired hydrogen ion secretion by α intercalated cells of the collecting duct C. Reduced aldosterone effect on the cortical collecting duct D. Loss of bicarbonate from the gastrointestinal tract E. Accumulation of unmeasured organic acids in the plasma 중탄산 15·pH 7.31 의 대사산증이고 음이온 차는 139 − (115 + 15) = 9 로 정상이다(Winter 식 예상 PCO2 1.5×15 + 8 = 30.5 — 호흡 보상 적절). 설사가 없고 소변 음이온 차가 45 + 32 − 48 = +29 로 양수라 소변 암모늄 배설이 늘지 않았다 — 위장관 손실이 아니라 신장이 산을 내보내지 못한다. 산혈증인데도 소변 pH 가 6.6 으로 5.5 아래로 내려가지 않는 것은 집합관 α 사이세포의 H+ 분비(H+ ATPase) 장애, 곧 원위(1형) 신세관산증이다. 저칼륨혈증(근력 저하)·신수질 석회화·결석, 그리고 쇼그렌병(안구·구강 건조, 이하선 비대, 항 SSA 양성)이 원위 신세관산증과 맞는다. 혈당 정상인데 소변 포도당 음성·인 정상이라 근위세관 전반 장애(Fanconi)의 가능성은 낮다."
+  },
+  {
+   "id": "paper-2026-0888",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/papers/2026/2026-11-03_paper-2026-0888_extraoral_versus_intraoral_photobiomodulation_for_the_preven.md",
+   "snippet": "Title Extraoral Versus Intraoral Photobiomodulation for the Prevention of Oral Mucositis in Pediatric Patients Undergoing High Dose Methotrexate Chemotherapy Authors Sassi Mariana Lena, Cardoso Nicoly Ghilardi, Mobile Rafael Zancan, Wastner",
+   "text": "Pediatrics scraped pubmed PubMed / Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry Title Extraoral Versus Intraoral Photobiomodulation for the Prevention of Oral Mucositis in Pediatric Patients Undergoing High Dose Methotrexate Chemotherapy Authors Sassi Mariana Lena, Cardoso Nicoly Ghilardi, Mobile Rafael Zancan, Wastner Bruna da Fonseca, Pianovski Mara Albonei Dudeque, Sabino Silva Robinson, Guevara Vega Marco, Caixeta Douglas Carvalho, et al. Journal / DOI Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry · DOI: 10.1111/scd.70279 · PMID: 42969421 https://pubmed.ncbi.nlm.nih.gov/42969421/ Abstract AIMS: To compare intraoral (IO) and extraoral (EO) photobiomodulation therapy (PBMT) for preventing oral mucositis (OM) in pediatric patients receiving high dose methotrexate (HD MTX). METHODS AND RESULTS: This prospective, open label, randomized clinical trial included 75 HD MTX treatment episodes from 31 pediatric patients aged 1 18 years. Each episode was randomized to IO PBMT or EO PBMT with red light at 660 nm. Preventive PBMT was initiated before HD MTX infusion and administered daily until discharge. OM was assessed at baseline and on days 3, 5, and 10 using the World Health Organization scale. Pain, salivary pH, and salivary biochemical profiles were secondary or exploratory outcomes. Cumulative OM occurred in 22/37 IO PBMT episodes (59.5%) and 12/38 EO PBMT episodes (31.6%). After accounting for repeated episodes within patients, OM risk was higher with IO PBMT (risk ratio, 1.84; 95% CI, 1.07 3.19; p = 0.029). Pain scores, salivary pH, and biochemical profiles did not differ significantly between groups. EO PBMT required substantially less application time, and no adverse effects were reported. CONCLUSION: EO PBMT was associated with lower cumulative OM occurrence, shorter application time, and good tolerability, supporting its use as a promising, less burdensome preventive strategy in pediatric oncology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0887",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / IEEE transactions on medical imaging",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/papers/2026/2026-11-03_paper-2026-0887_identification_of_local_nonlinear_shear_wave_dynamics_using_.md",
+   "snippet": "Title Identification of local nonlinear shear wave dynamics using Volterra kernels: application to prostate cancer detection Authors Li X, Turco S, Zwart M, Beerlage H P, Wijkstra H, Mischi M Journal / DOI IEEE transactions on medical imagi",
+   "text": "Pathology scraped pubmed PubMed / IEEE transactions on medical imaging Title Identification of local nonlinear shear wave dynamics using Volterra kernels: application to prostate cancer detection Authors Li X, Turco S, Zwart M, Beerlage H P, Wijkstra H, Mischi M Journal / DOI IEEE transactions on medical imaging · DOI: 10.1109/TMI.2026.3749706 · PMID: 42970650 https://pubmed.ncbi.nlm.nih.gov/42970650/ Abstract Cancer remains a major health concern worldwide. Shear wave elastography (SWE) holds promise for cancer detection by quantifying linear elastic changes in tissue through shear wave (SW) velocity estimation. However, shear viscosity and nonlinearity are often over looked, despite their potential as additional biomarkers. This study evaluates the visco hyperelastic properties of soft tissue, including linear shear modulus, shear viscosity, and shear nonlinearity. We propose using Volterra kernels to characterize local nonlinear SW dynamics, with kernel identification based on SW particle velocity measurements at adjacent locations. The method was validated using in silico simulations and in vitro gelatin phantoms. To evaluate its clinical relevance, we applied the method for prostate cancer (PCa) detection. To our knowledge, this is the first in vivo assessment of voxel based visco hyperelastic properties of the prostate. In 90 patients, our results indicated that the linear kernel correlated with the linear shear modulus, while the quadratic kernel reflected both viscosity and nonlinearity. A convolutional neural network trained on these parameters with registered histopathology as ground truth achieved area under the receiver operating characteristic curve (AUC) values of 0.60 (95% confidence interval [CI]: 0.57, 0.62) and 0.66 (95% CI: 0.64, 0.68) for PCa detection, respectively both significantly outperforming the linear shear modulus (AUC of 0.54; 95% CI, 0.52 to 0.56). Our findings suggest that Volterra kernels reflect information related to the visco hyperelastic properties of prostate tissue, highlighting the potential of viscosity and nonlinearity as additional biomarkers for PCa detection. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0886",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR medical informatics",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/papers/2026/2026-11-03_paper-2026-0886_context_dependent_clinical_narrative_signals_of_renal_functi.md",
+   "snippet": "Title Context Dependent Clinical Narrative Signals of Renal Function Deterioration in Cross Language Settings: Retrospective Multicohort Study Authors Antonakis Andreas, Drosataki Eleni, Dermitzaki Eleftheria Kleio, Pleros Christos, Lygerou",
+   "text": "Nephrology scraped pubmed PubMed / JMIR medical informatics Title Context Dependent Clinical Narrative Signals of Renal Function Deterioration in Cross Language Settings: Retrospective Multicohort Study Authors Antonakis Andreas, Drosataki Eleni, Dermitzaki Eleftheria Kleio, Pleros Christos, Lygerou Dimitra, Androvitsanea Ariadni, Papadakis Nikolaos, Kydonaki Konstantina, et al. Journal / DOI JMIR medical informatics · DOI: 10.2196/94249 · PMID: 42970747 https://pubmed.ncbi.nlm.nih.gov/42970747/ Abstract BACKGROUND: Kidney Disease: Improving Global Outcomes (KDIGO) classifies chronic kidney disease (CKD) using categories based on both glomerular filtration rate and albuminuria. Structured measures remain essential but may not capture contextual clinical concerns documented in narrative records. OBJECTIVE: This study examined whether text derived clinical status language features in clinician notes were associated with deterioration in renal function in independent Greek and English language clinical cohorts. METHODS: We retrospectively analyzed a Greek general nephrology cohort (314 patients; 10,306 estimated glomerular filtration rate [eGFR] measurements) and an independent English language Medical Information Mart for Intensive Care IV (MIMIC IV) replication cohort. The Greek primary analysis used a linear mixed effects model over a follow up period of up to 1797 days. The MIMIC IV primary analysis used a 90 day, patient level fixed horizon competing outcome model (N=87,533). Separate analyses of Greek and MIMIC IV data evaluated discrimination, calibration, and sensitivity to alternative feature specifications. RESULTS: In the Greek cohort, a 1 SD higher negativity was associated with lower eGFR (β= 3.273 mL/min/1.73 m², 95% CI 5.049 to 1.498; P<.001) and a more negative time trajectory (time by score β= 1.324, 95% CI 2.553 to 0.096; P=.035). In MIMIC IV, a 1 SD higher negative vs reassuring polarity contrast was associated with renal deterioration (relative risk ratio [RRR]=1.090, 95% CI 1.070 1.110; P<.001). Within eGFR G categories, polarity score areas under the curve (AUCs) were 0.506 to 0.552 using discharge eGFR and 0.518 to 0.534 using the worst observed eGFR. Discrimination for renal deterioration remained modest (one vs rest AUC=0.6134, 95% CI 0.6092 0.6175), and adding both natural language processing (NLP) features to the clinical model increased AUC by only 0.0018 (95% CI 0.0010 0.0025). CONCLUSIONS: Independently constructed clinical language measures were associated with renal function deterioration across two languages and health care settings. The findings support cross language replication of an association signal, not formal external validation, measurement equivalence, or clinically useful stand alone prediction. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0885",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/papers/2026/2026-11-03_paper-2026-0885_tavr_in_patients_with_moderate_aortic_stenosis_with_at_risk_.md",
+   "snippet": "Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI Th",
+   "text": "Cardiology scraped pubmed PubMed / The New England journal of medicine Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMoa2607326 · PMID: 42970708 https://pubmed.ncbi.nlm.nih.gov/42970708/ Abstract BACKGROUND: For patients with moderate aortic stenosis, current guidelines recommend clinical surveillance with echocardiographic assessment every 1 or 2 years. Whether transcatheter aortic valve replacement (TAVR) will improve outcomes in these patients remains unknown. METHODS: We conducted an international, open label, randomized trial to evaluate whether TAVR will result in better outcomes than clinical surveillance among patients with moderate aortic stenosis with at least one at risk feature (i.e., a symptom or structural or functional abnormality that has been shown to be associated with faster disease progression or adverse cardiovascular outcomes). The patients were assigned in a 1:1 ratio to undergo transfemoral TAVR with a balloon expandable valve or clinical surveillance. The primary effectiveness end point was a composite of death from any cause or a heart failure event with or without hospitalization at 2 years. Superiority testing was performed in the intention to treat population. RESULTS: A total of 744 patients underwent randomization: 373 patients were assigned to the TAVR group and 371 to the clinical surveillance group. The mean age of patients was 78 years, 39.1% were women, and 45.6% were at low surgical risk. The mean aortic valve area was 1.2 cm2, and the mean aortic valve peak velocity was 3.3 m per second. At 2 years, the Kaplan Meier estimate of the percentage of patients with a primary effectiveness end point event was 16.7% in the TAVR group and 23.9% in the clinical surveillance group (risk difference, 7.2 percentage points; 95% confidence interval, 13.1 to 1.3; P = 0.02 for superiority). The Kaplan Meier estimate of the percentage of patients who died from any cause was 8.4% in the TAVR group and 7.3% in the clinical surveillance group; the estimates for a heart failure event were 10.8% and 19.0%, respectively. The incidence of procedure related adverse events did not differ meaningfully between the patients in the TAVR group and those in the clinical surveillance group who underwent aortic valve replacement. CONCLUSIONS: Among patients with moderate aortic stenosis and at risk features, a strategy of TAVR was superior to clinical surveillance in lowering the incidence of death or a heart failure event at 2 years. (Funded by Edwards Lifesciences; PROGRESS ClinicalTrials.gov number, NCT04889872.). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "cn.cardio.nyha-class.functional-assessment",

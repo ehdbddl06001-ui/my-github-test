@@ -25,7 +25,7 @@
 | 루틴 | 시각(KST) | 하는 일 | 프롬프트 |
 |---|---|---|---|
 | 매일 하루 KMLE 문항 제작 | 월·수·금 05:00 | 16과목 × 2문항 + 정리본 큐 조금 | `prompts/routine_kmle.md`(얇음 → `/daily-run`) |
-| USMLE 콘텐츠 생성 | 화·목 05:00 | Step 1·2 각 3문항 | `prompts/routine_usmle.md` |
+| USMLE 콘텐츠 생성 | 화·목 05:00 | Step 1·2 각 6문항(과목마다 1개, 2026-11-03~) | `prompts/routine_usmle.md` |
 | 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산) → `[figure]` → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
 | 오픈데이터 영상 세트 | 매일 05:00 | exam-builder → MedKOS 내보내기 | exam-builder 저장소 |
 | anatomy-daily | 매일 05:00(~10-19) | 해부 서브노트 | `/anatomy-daily` |
