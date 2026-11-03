@@ -402,3 +402,13 @@
 - 안과 판 11 (10쪽, 판형 11): 새 단원: An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure
 - 산부인과 판 17 (29쪽, 판형 11): 새 단원: Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl
 - 류마티스내과 판 34 (53쪽, 판형 11): 내용 수정: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI
+
+## 2026-11-03T12:02:25+09:00
+
+- 정형외과 판 17 (21쪽, 판형 11): 내용 갱신: 척골신경병증 — 손등·아래팔 감각이 병변 높이를 정한다 (정리본 vNone → v1); 새 단원: 고리뼈 파열 — 앞·뒤고리가 다 끊기면 축성 압박; 내용 갱신: 아킬레스힘줄병증 — 스테로이드 주사는 파열을 부른다 (정리본 vNone → v1)
+- 순환기내과 판 19 (31쪽, 판형 11): 새 단원: NYHA 기능 등급 — 증상을 부르는 활동 수준; 새 단원: 완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S
+- 안과 판 12 (11쪽, 판형 11): 내용 갱신: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인 (정리본 vNone → v1)
+- 산부인과 판 18 (29쪽, 판형 11): 내용 갱신: 난소 생식세포종양 — 10대 고형 종괴는 AFP·hCG·LDH (정리본 vNone → v1)
+- 류마티스내과 판 35 (52쪽, 판형 11): 내용 갱신: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI (정리본 v1 → v2)
+- 기초의학 판 7 (5쪽, 판형 11): 새 단원: Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate
+- 신장내과 판 11 (8쪽, 판형 11): 내용 변경 없음

@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "f6c5e8c4d8f75a0a8934",
-   "version": 18,
-   "date": "2026-11-02",
+   "hash": "4c3e25c0a088abca0b49",
+   "version": 19,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 29,
+   "pages": 31,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -32,72 +32,84 @@
      "concept_hash": "4b8fade838aee025",
      "concept_version": 1
     },
+    "cn.cardio.nyha-class.functional-assessment": {
+     "title": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
+     "page": 7,
+     "concept_hash": "3d981114fa201cda",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 7,
+     "page": 9,
      "concept_hash": "a9f83809ac2d6f6e",
+     "concept_version": 2
+    },
+    "cn.cardio.complete-rbbb.ecg-recognition": {
+     "title": "완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S",
+     "page": 10,
+     "concept_hash": "61e5dd306a69c419",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 9,
+     "page": 12,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-     "page": 12,
+     "page": 14,
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 13,
+     "page": 15,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 15,
+     "page": 17,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 17,
+     "page": 19,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 20,
+     "page": 22,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 22,
+     "page": 24,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 25,
+     "page": 27,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 28,
+     "page": 30,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "c8375225351721712f921680d3dbda43",
-    "version": 18,
-    "uploaded": "2026-11-02T11:15:15+09:00"
+    "md5": "ebab5ab5e0b41c09371437d7c830c22a",
+    "version": 19,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -117,10 +129,12 @@
     "MedKOS_학습서_순환기내과_v15_2026-10-14.pdf",
     "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf",
     "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf",
-    "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf"
+    "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf",
+    "MedKOS_학습서_순환기내과_v19_2026-11-03.pdf"
    ],
    "changes": [
-    "새 단원: 심계항진 — 위험 부정맥 단서와 기록 방법"
+    "새 단원: NYHA 기능 등급 — 증상을 부르는 활동 수준",
+    "새 단원: 완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S"
    ]
   },
   "피부과": {
@@ -194,9 +208,9 @@
    ]
   },
   "신장내과": {
-   "hash": "86bbda428faead0e806b",
-   "version": 10,
-   "date": "2026-10-16",
+   "hash": "1d1c5e6658f4d33ddc42",
+   "version": 11,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_신장내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -222,9 +236,9 @@
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "ea72f6311ee28eed0e3a25b5e46ebc3a",
-    "version": 10,
-    "uploaded": "2026-10-16T09:33:29+09:00"
+    "md5": "8def90c805c2a5a6f3e533dd58ef2258",
+    "version": 11,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -236,11 +250,10 @@
     "MedKOS_학습서_신장내과_v7_2026-10-03.pdf",
     "MedKOS_학습서_신장내과_v8_2026-10-05.pdf",
     "MedKOS_학습서_신장내과_v9_2026-10-06.pdf",
-    "MedKOS_학습서_신장내과_v10_2026-10-16.pdf"
+    "MedKOS_학습서_신장내과_v10_2026-10-16.pdf",
+    "MedKOS_학습서_신장내과_v11_2026-11-03.pdf"
    ],
-   "changes": [
-    "내용 갱신: 고칼륨혈증 — 막 안정화·이동·제거는 목적이 다르다 (정리본 v3 → v4)"
-   ]
+   "changes": []
   },
   "소아청소년과": {
    "hash": "c061a278dab2f615dc86",
@@ -334,11 +347,11 @@
    ]
   },
   "안과": {
-   "hash": "c2a621ced45162d51452",
-   "version": 11,
-   "date": "2026-11-02",
+   "hash": "1e39df9dcbf0f03d34e9",
+   "version": 12,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_안과.pdf",
-   "pages": 10,
+   "pages": 11,
    "template_version": 11,
    "units": {
     "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
@@ -355,28 +368,28 @@
     },
     "cn.ophth.chemical-burn.immediate-irrigation": {
      "title": "안구 화학화상 — 검사보다 세척이 먼저",
-     "page": 7,
+     "page": 6,
      "concept_hash": "9b74781b3d476ea0",
      "concept_version": 2
+    },
+    "cn.ophth.normal-tension-glaucoma.visual-field": {
+     "title": "정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인",
+     "page": 8,
+     "concept_hash": "002ae314f2f3c3d5",
+     "concept_version": 1
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
      "title": "중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다",
      "page": 9,
      "concept_hash": "bedc5753c750574e",
      "concept_version": 3
-    },
-    "cn.ophth.normal-tension-glaucoma.visual-field": {
-     "title": "An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure",
-     "page": 10,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "8ac317ca92de67fe59211df8d8ed003c",
-    "version": 11,
-    "uploaded": "2026-11-02T11:15:15+09:00"
+    "md5": "1632fbb4af4a20297b70b757194a6730",
+    "version": 12,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -389,18 +402,19 @@
     "MedKOS_학습서_안과_v8_2026-10-05.pdf",
     "MedKOS_학습서_안과_v9_2026-10-06.pdf",
     "MedKOS_학습서_안과_v10_2026-10-08.pdf",
-    "MedKOS_학습서_안과_v11_2026-11-02.pdf"
+    "MedKOS_학습서_안과_v11_2026-11-02.pdf",
+    "MedKOS_학습서_안과_v12_2026-11-03.pdf"
    ],
    "changes": [
-    "새 단원: An Asymmetric Optic Disc Found on a Checkup Fundus Photograph with Normal Eye Pressure"
+    "내용 갱신: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인 (정리본 vNone → v1)"
    ]
   },
   "정형외과": {
-   "hash": "aad5c5783fd3f9e012e7",
-   "version": 16,
-   "date": "2026-11-02",
+   "hash": "b9cb8ab582dc850294ee",
+   "version": 17,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 17,
+   "pages": 21,
    "template_version": 11,
    "units": {
     "cn.ortho.scaphoid-fracture.occult-imaging": {
@@ -409,60 +423,66 @@
      "concept_hash": "e3ca64f2f1155187",
      "concept_version": 2
     },
+    "cn.ortho.ulnar-neuropathy.localization": {
+     "title": "척골신경병증 — 손등·아래팔 감각이 병변 높이를 정한다",
+     "page": 4,
+     "concept_hash": "f36d42ad555a9fa8",
+     "concept_version": 1
+    },
     "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
      "title": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
-     "page": 4,
+     "page": 5,
      "concept_hash": "ffd2be60f94fba93",
      "concept_version": 4
     },
+    "cn.ortho.atlas-burst-fracture.mechanism": {
+     "title": "고리뼈 파열 — 앞·뒤고리가 다 끊기면 축성 압박",
+     "page": 8,
+     "concept_hash": "90d718277d9a5f80",
+     "concept_version": 2
+    },
     "cn.ortho.odontoid-fracture.diagnosis": {
      "title": "치아돌기 골절 — 골절선이 허리에 머무나, 몸통으로 가나",
-     "page": 7,
+     "page": 10,
      "concept_hash": "bc5041f727e2b115",
      "concept_version": 2
     },
     "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis": {
      "title": "환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나",
-     "page": 9,
+     "page": 12,
      "concept_hash": "327d614915e416f7",
      "concept_version": 2
     },
     "cn.ortho.achilles-rupture.thompson-test": {
      "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
-     "page": 11,
+     "page": 14,
      "concept_hash": "c55a14c1972e4b5a",
      "concept_version": 2
     },
+    "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication": {
+     "title": "아킬레스힘줄병증 — 스테로이드 주사는 파열을 부른다",
+     "page": 15,
+     "concept_hash": "2e8e17a29fd1ce6f",
+     "concept_version": 1
+    },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 12,
+     "page": 16,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
-     "page": 14,
+     "page": 18,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
-    },
-    "cn.ortho.ulnar-neuropathy.localization": {
-     "title": "Numb Ring and Little Fingers and a Weak Grip in a Call-center Worker Who Leans on His Elbows",
-     "page": 17,
-     "concept_hash": null,
-     "concept_version": null
-    },
-    "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication": {
-     "title": "Two Months of Pain above the Heel in a Marathon Runner Who Recently Took an Antibiotic",
-     "page": 17,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "519484d4583f90c31c8bbca8f04007b5",
-    "version": 16,
-    "uploaded": "2026-11-02T11:15:15+09:00"
+    "md5": "c45986bd7f76bae25adf33a5d15c463c",
+    "version": 17,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -480,11 +500,13 @@
     "MedKOS_학습서_정형외과_v13_2026-10-09.pdf",
     "MedKOS_학습서_정형외과_v14_2026-10-27.pdf",
     "MedKOS_학습서_정형외과_v15_2026-10-28.pdf",
-    "MedKOS_학습서_정형외과_v16_2026-11-02.pdf"
+    "MedKOS_학습서_정형외과_v16_2026-11-02.pdf",
+    "MedKOS_학습서_정형외과_v17_2026-11-03.pdf"
    ],
    "changes": [
-    "새 단원: Numb Ring and Little Fingers and a Weak Grip in a Call-center Worker Who Leans on His Elbows",
-    "새 단원: Two Months of Pain above the Heel in a Marathon Runner Who Recently Took an Antibiotic"
+    "내용 갱신: 척골신경병증 — 손등·아래팔 감각이 병변 높이를 정한다 (정리본 vNone → v1)",
+    "새 단원: 고리뼈 파열 — 앞·뒤고리가 다 끊기면 축성 압박",
+    "내용 갱신: 아킬레스힘줄병증 — 스테로이드 주사는 파열을 부른다 (정리본 vNone → v1)"
    ]
   },
   "외과": {
@@ -530,9 +552,9 @@
    ]
   },
   "산부인과": {
-   "hash": "a616336f6db1fd110e6a",
-   "version": 17,
-   "date": "2026-11-02",
+   "hash": "dada39159cb75e3f582b",
+   "version": 18,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_산부인과.pdf",
    "pages": 29,
    "template_version": 11,
@@ -575,7 +597,7 @@
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
      "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
-     "page": 14,
+     "page": 13,
      "concept_hash": "54c314318cffecef",
      "concept_version": 3
     },
@@ -587,46 +609,46 @@
     },
     "cn.obgyn.granulosa-cell-tumor.tumor-marker": {
      "title": "과립막세포종 — 추적 표지자는 기원 세포가 정한다",
-     "page": 20,
+     "page": 19,
      "concept_hash": "edb8da638ad18885",
      "concept_version": 2
     },
+    "cn.obgyn.ovarian-germ-cell-tumor.tumor-markers": {
+     "title": "난소 생식세포종양 — 10대 고형 종괴는 AFP·hCG·LDH",
+     "page": 21,
+     "concept_hash": "2b8773aa3933c53d",
+     "concept_version": 1
+    },
     "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
      "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
-     "page": 22,
+     "page": 23,
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
      "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
-     "page": 23,
+     "page": 24,
      "concept_hash": "55af692609810631",
      "concept_version": 2
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 25,
+     "page": 26,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 27,
+     "page": 28,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
-    },
-    "cn.obgyn.ovarian-germ-cell-tumor.tumor-markers": {
-     "title": "Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl",
-     "page": 29,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "8a07751c95faae55c53c1f03e94fb6d4",
-    "version": 17,
-    "uploaded": "2026-11-02T11:15:15+09:00"
+    "md5": "7776266942f31ca81128b66883654ce7",
+    "version": 18,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -645,10 +667,11 @@
     "MedKOS_학습서_산부인과_v14_2026-10-28.pdf",
     "MedKOS_학습서_산부인과_v15_2026-10-29.pdf",
     "MedKOS_학습서_산부인과_v16_2026-10-31.pdf",
-    "MedKOS_학습서_산부인과_v17_2026-11-02.pdf"
+    "MedKOS_학습서_산부인과_v17_2026-11-02.pdf",
+    "MedKOS_학습서_산부인과_v18_2026-11-03.pdf"
    ],
    "changes": [
-    "새 단원: Rapidly Growing Solid Pelvic Mass with Abdominal Fullness in a Teenage Girl"
+    "내용 갱신: 난소 생식세포종양 — 10대 고형 종괴는 AFP·hCG·LDH (정리본 vNone → v1)"
    ]
   },
   "정신건강의학과": {
@@ -705,11 +728,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "f209b6385fd8adc72a2d",
-   "version": 34,
-   "date": "2026-11-02",
+   "hash": "8792f42b1fe250a9e4e4",
+   "version": 35,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 53,
+   "pages": 52,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -769,8 +792,8 @@
     "cn.ortho.axial-spondyloarthritis.sacroiliac-mri": {
      "title": "축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI",
      "page": 19,
-     "concept_hash": "6431fb9885cbd555",
-     "concept_version": 1
+     "concept_hash": "3e4d9d85bc69b2a5",
+     "concept_version": 2
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
@@ -780,7 +803,7 @@
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염 — 혈소판 정상의 만져지는 자반이면 임상 진단",
-     "page": 22,
+     "page": 23,
      "concept_hash": "b85f82c4ac8f8ba7",
      "concept_version": 3
     },
@@ -792,7 +815,7 @@
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 확진은 증상 있는 침범 조직의 생검",
-     "page": 27,
+     "page": 26,
      "concept_hash": "e71e27053a5552c2",
      "concept_version": 2
     },
@@ -876,16 +899,16 @@
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 52,
+     "page": 51,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "506dde9f7291de032a8fa116d002626b",
-    "version": 34,
-    "uploaded": "2026-11-02T11:15:15+09:00"
+    "md5": "cecbdabe749ead7f142a4513dfbabe29",
+    "version": 35,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -921,10 +944,11 @@
     "MedKOS_학습서_류마티스내과_v31_2026-10-29.pdf",
     "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf",
     "MedKOS_학습서_류마티스내과_v33_2026-11-01.pdf",
-    "MedKOS_학습서_류마티스내과_v34_2026-11-02.pdf"
+    "MedKOS_학습서_류마티스내과_v34_2026-11-02.pdf",
+    "MedKOS_학습서_류마티스내과_v35_2026-11-03.pdf"
    ],
    "changes": [
-    "내용 수정: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI"
+    "내용 갱신: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI (정리본 v1 → v2)"
    ]
   },
   "호흡기내과": {
@@ -1193,11 +1217,11 @@
    "changes": []
   },
   "기초의학": {
-   "hash": "ac77b2ce35a351dd91a2",
-   "version": 6,
-   "date": "2026-10-12",
+   "hash": "8f0e773c5fa3d2bb2d0d",
+   "version": 7,
+   "date": "2026-11-03",
    "file": "MedKOS_학습서_기초의학.pdf",
-   "pages": 4,
+   "pages": 5,
    "template_version": 11,
    "units": {
     "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia": {
@@ -1211,13 +1235,19 @@
      "page": 4,
      "concept_hash": "b2049fc3c5214548",
      "concept_version": 2
+    },
+    "cn.physio.distal-rta.alpha-intercalated-h-secretion": {
+     "title": "Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate",
+     "page": 5,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "1794tdNS1sPYC9DlfZq-FYa68q_CpBmkw",
-    "md5": "5cd9a3a1771e0198a2cf045992900fcb",
-    "version": 6,
-    "uploaded": "2026-10-12T10:09:23+09:00"
+    "md5": "f91bf6fd0481a4bccdfc5005c7667773",
+    "version": 7,
+    "uploaded": "2026-11-03T13:31:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_기초의학_v1_2026-09-25.pdf",
@@ -1225,10 +1255,11 @@
     "MedKOS_학습서_기초의학_v3_2026-09-27.pdf",
     "MedKOS_학습서_기초의학_v4_2026-09-27.pdf",
     "MedKOS_학습서_기초의학_v5_2026-09-28.pdf",
-    "MedKOS_학습서_기초의학_v6_2026-10-12.pdf"
+    "MedKOS_학습서_기초의학_v6_2026-10-12.pdf",
+    "MedKOS_학습서_기초의학_v7_2026-11-03.pdf"
    ],
    "changes": [
-    "내용 갱신: 사구체 혈역학 — 신동맥협착에서 ACE억제제가 GFR 을 떨어뜨린다 (정리본 v1 → v2)"
+    "새 단원: Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate"
    ]
   },
   "감염내과": {
@@ -1477,13 +1508,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "7cb78463ee8a6e855e25e5f19e2ca082",
+   "md5": "b082255938c4bef88da06071206b1cb8",
    "version": null,
-   "uploaded": "2026-11-02T11:15:15+09:00"
+   "uploaded": "2026-11-03T13:31:29+09:00"
   }
  },
- "updated": "2026-11-02"
+ "updated": "2026-11-03"
 }
