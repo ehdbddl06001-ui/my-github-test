@@ -297,8 +297,29 @@
    "date": "2026-09-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "usmle-2026-0236": {
+   "id": "usmle-2026-0236",
+   "exam": "usmle",
+   "subject": "Physiology",
+   "step": "Step 1",
+   "type": "Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following best explains her acid-base disturbance?",
+   "chosen": 0,
+   "chosenText": "Decreased bicarbonate reabsorption in the proximal tubule",
+   "answer": 1,
+   "answerText": "Impaired hydrogen ion secretion by α-intercalated cells of the collecting duct",
+   "coreNote": "",
+   "differ": "",
+   "decision": "정상 음이온 차 대사산증에서 설사가 없고 소변 음이온 차가 양수라 신장이 원인이다. 산혈증에도 소변 pH 가 6.6 이고 저칼륨·신수질 석회화·쇼그렌병이 함께 있어 집합관 α-사이세포의 H+ 분비 장애(원위 신세관산증)로 설명된다.",
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 58장 Acidosis and Alkalosis; 373장 Sjögren’s Disease)",
+   "date": "2026-11-03",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-25T08:44:08.321Z"
+ "updated": "2026-11-03T02:32:37.382Z"
 }
