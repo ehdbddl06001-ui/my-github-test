@@ -30,10 +30,36 @@ const USMLE = [].concat(
 );
 const CIRCLED = ["①", "②", "③", "④", "⑤"];
 const ALPHA = ["A", "B", "C", "D", "E"];
-const EXAM_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", ecg: "심전도" };
+// 변형 문제 덱(2026-11-03) — 정리본(concepts.js)의 변형: 틀린 문항에서 단서 하나를 바꾼 문항. 개념 복습 화면에서 한 개씩만
+// 열리던 것을 덱으로 모아 푼다. 기록은 learn.js 의 변형 기록(kind answer · mode variant)과 똑같이 남겨 복습 일정·재확인이 그대로 돈다.
+// 오답노트(wrong_*)에는 넣지 않는다 — 오답 동기화·오답노트 .md 는 실제 문항만 다룬다. 「오답」은 마지막 풀이가 틀린 변형.
+const VARIANT = (() => {
+  const C = window.MEDKOS_CONCEPTS && typeof window.MEDKOS_CONCEPTS === "object" ? window.MEDKOS_CONCEPTS : {};
+  const byId = {};
+  [].concat(KMLE, USMLE, IMAGING).forEach((q) => { if (q && q.id && !byId[q.id]) byId[q.id] = q; });
+  const out = [];
+  Object.keys(C).forEach((cid) => {
+    const c = C[cid];
+    (c && Array.isArray(c.variants) ? c.variants : []).forEach((v) => {
+      if (!v || !v.id || !Array.isArray(v.options) || !v.options.length || !v.answer) return;
+      const of = byId[v.of] || null;
+      const cite = (t) => String(t || "").replace(/\[\[([^\]]+)\]\]/g, "(출처 $1)");   // 원본의 [[출처]] 표기를 읽을 수 있게
+      const items = [{ k: "정답 근거", v: cite(v.explanation) }];
+      if (v.changed) items.push({ k: v.flip ? "바뀐 단서 → 답이 바뀜" : "바뀐 겉모습 → 답은 그대로", v: cite(v.changed) });
+      out.push({
+        id: v.id, src: "variant", isVariant: true, objective: c.id || cid, conceptTitle: c.title || "",
+        subject: (of && of.subject) || c.topic || "기타", created: c.updated || "",
+        vignette: v.stem || "", question: "", options: v.options, answer: v.answer,
+        of: v.of || "", ofQ: of, context: v.context || "", explanationItems: items.filter((it) => it.v),
+      });
+    });
+  });
+  return out;
+})();
+const EXAM_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", ecg: "심전도", variant: "변형" };
 // 종목(덱). 덱끼리 겹치는 문항(영상 세트의 국시형 등)은 여러 덱을 골라도 한 번만 낸다.
-const DECKS = { kmle: KMLE, usmle: USMLE, imaging: IMAGING, ecg: ECG };
-const DECK_ORDER = ["kmle", "usmle", "imaging", "ecg"];
+const DECKS = { kmle: KMLE, usmle: USMLE, imaging: IMAGING, ecg: ECG, variant: VARIANT };
+const DECK_ORDER = ["kmle", "usmle", "imaging", "ecg", "variant"];
 const DECK_KEY = "medkos_decks";
 
 const $ = (id) => document.getElementById(id);
@@ -68,7 +94,7 @@ function examName(e) {
 // 보기 글머리: USMLE 문항과 영상 세트의 USMLE형은 A~E, 나머지(국시)는 ①~⑤. 여러 종목을 섞어 풀어도 문항마다 맞게.
 function labelsFor(q) {
   const alpha = q && (q.exam || q.src || q.style)
-    ? q.style === "usmle_style" || q.exam === "usmle" || q.src === "usmle"
+    ? q.style === "usmle_style" || q.exam === "usmle" || q.src === "usmle" || q.src === "variant"
     : isUsmle();
   return alpha ? ALPHA : CIRCLED;
 }
@@ -173,14 +199,20 @@ function setWrongNote(id, note, e) {
 function wrongIds() {
   const ids = new Set();
   SYNC_EXAMS.forEach((e) => Object.keys(loadWrong(e)).forEach((id) => ids.add(id)));
+  // 변형 문제는 오답노트가 없다 — 마지막으로 푼 결과가 틀린 변형
+  if (typeof LEARN === "object" && LEARN.load) {
+    const last = {};
+    LEARN.load().forEach((e) => { if (e && e.kind === "answer" && e.mode === "variant" && e.qid) last[e.qid] = e.ok; });
+    Object.keys(last).forEach((id) => { if (last[id] === false) ids.add(id); });
+  }
   return ids;
 }
-// 푼 문항 id — 학습 기록의 채점(answer, 2026-09-18~ · 기기 간 동기화분 포함) + 오답노트(지운 오답의 묘비 포함 —
-// 한 번 틀렸으면 푼 것). 변형 문제(mode variant)는 덱 문항이 아니라 뺀다. 기록을 읽기만 하고 고치지 않는다.
+// 푼 문항 id — 학습 기록의 채점(answer, 2026-09-18~ · 기기 간 동기화분 포함, 변형 문제 포함 — 변형 id 는 「…#v1」이라
+// 실제 문항과 겹치지 않는다) + 오답노트(지운 오답의 묘비 포함 — 한 번 틀렸으면 푼 것). 기록을 읽기만 하고 고치지 않는다.
 function solvedIds() {
   const ids = new Set();
   if (typeof LEARN === "object" && LEARN.load) {
-    LEARN.load().forEach((e) => { if (e && e.kind === "answer" && e.qid && e.mode !== "variant") ids.add(e.qid); });
+    LEARN.load().forEach((e) => { if (e && e.kind === "answer" && e.qid) ids.add(e.qid); });
   }
   SYNC_EXAMS.forEach((e) => {
     Object.keys(loadWrong(e)).forEach((id) => ids.add(id));
@@ -485,7 +517,9 @@ function figureHtml(q) {
    풀기 전에는 숨기고 채점 뒤에만 보인다. */
 function tagText(q, reveal) {
   let tag;
-  if (q.exam === "imaging") {
+  if (q.isVariant) {
+    tag = "🔁 변형 문제" + (reveal && q.context ? " · " + q.context : "");
+  } else if (q.exam === "imaging") {
     tag = ["🩻 영상 세트", q.styleLabel || "", q.modality || (reveal ? q.type : "") || "", q.difficultyLabel ? "난이도 " + q.difficultyLabel : ""].filter(Boolean).join(" · ");
   } else {
     const t = reveal ? (q.type || "") : "";
@@ -505,7 +539,8 @@ function renderQuestion() {
   $("clindata").querySelectorAll("img[data-zoom]").forEach((img) => {
     img.onclick = () => openZoom(img.getAttribute("src"), img.getAttribute("alt"));
   });
-  $("question").textContent = "Q. " + (q.question || "").trim();
+  $("question").textContent = (q.question || "").trim() ? "Q. " + q.question.trim() : "";
+  $("question").classList.toggle("hidden", !(q.question || "").trim());
 
   const box = $("options");
   box.innerHTML = "";
@@ -549,10 +584,13 @@ function grade(chosenIdx, btn) {
   if (ok) {
     correctCnt++;
   } else {
-    recordWrong(q, chosenIdx);
+    if (!q.isVariant) recordWrong(q, chosenIdx);    // 변형은 오답노트가 아니라 학습 기록에만
     sessionWrong.push(q);
   }
-  if (typeof LEARN === "object") LEARN.onAnswer(q, chosenIdx, ok);   // 덧붙이기만 하는 학습 기록
+  if (typeof LEARN === "object") {                  // 덧붙이기만 하는 학습 기록
+    if (q.isVariant) LEARN.onVariantAnswer(q, chosenIdx, ok);
+    else LEARN.onAnswer(q, chosenIdx, ok);
+  }
   updateReviewBadge();
   showGraded(chosenIdx);
   $("typeTag").textContent = tagText(q, true);
@@ -574,7 +612,8 @@ function renderExplanation(q, chosenIdx, ok) {
   const verdict = ok
     ? `<div class="verdict ok">✅ 정답입니다! 정답: ${label(q.answer - 1, q)}</div>`
     : `<div class="verdict bad">❌ 오답입니다. 당신의 선택: ${label(chosenIdx, q)} / 정답: ${label(q.answer - 1, q)}
-       <div class="muted">↳ 이 오답은 오답노트에 자동 저장되었습니다.</div></div>`;
+       <div class="muted">${q.isVariant ? "↳ 학습 기록에 남았습니다 — 「오답 복습」에서 이 변형을 다시 풀 수 있습니다."
+                                          : "↳ 이 오답은 오답노트에 자동 저장되었습니다."}</div></div>`;
 
   let bodyHtml;
   if (q.explanationItems && q.explanationItems.length) {
@@ -594,12 +633,40 @@ function renderExplanation(q, chosenIdx, ok) {
   // 오답이면 해설보다 먼저 「오답 확인 → 선택한 오답과 정답 비교 → 정리본」 흐름을, 정답이면 표시(찍었다 등)만 붙인다.
   let learnHtml = "";
   try {
-    if (typeof LEARN === "object") learnHtml = ok ? LEARN.flagRowHtml(q) : LEARN.wrongPanelHtml(q, chosenIdx);
+    if (q.isVariant) learnHtml = variantFootHtml(q);
+    else if (typeof LEARN === "object") learnHtml = ok ? LEARN.flagRowHtml(q) : LEARN.wrongPanelHtml(q, chosenIdx);
   } catch (e) { learnHtml = ""; }             // 학습 흐름 오류가 해설 표시를 막지 않게
-  el.innerHTML = ok ? verdict + bodyHtml + attributionHtml(q) + learnHtml
+  // 변형은 해설이 먼저, 원래 문항·정리본은 그 뒤(오답 흐름 패널이 없다)
+  el.innerHTML = ok || q.isVariant ? verdict + bodyHtml + attributionHtml(q) + learnHtml
                     : verdict + learnHtml + `<div class="expl-head">해설</div>` + bodyHtml + attributionHtml(q);
   el.classList.remove("hidden");
-  try { if (typeof LEARN === "object") LEARN.bind(el, q, chosenIdx); } catch (e) { /* 무시 — 해설은 이미 보인다 */ }
+  try {
+    if (q.isVariant) bindVariantFoot(el, q);
+    else if (typeof LEARN === "object") LEARN.bind(el, q, chosenIdx);
+  } catch (e) { /* 무시 — 해설은 이미 보인다 */ }
+}
+
+// 변형 문제 해설 끝 — 원래 문항(무엇이 바뀌었나 견주기)과 개념 정리본. 풀던 덱을 떠나지 않게 그 자리에서 펼친다.
+function variantFootHtml(q) {
+  const o = q.ofQ;
+  const orig = o ? `<details class="var-orig"><summary>원래 문항 보기 (#${escapeHtml(o.id)})</summary>`
+    + `<p class="vignette">${escapeHtml(String(o.vignette || "").trim())}</p>`
+    + (o.question ? `<p class="question">Q. ${escapeHtml(String(o.question).trim())}</p>` : "")
+    + `<div class="ans">정답 ${labelsFor(o)[o.answer - 1] || ""} ${escapeHtml(o.options[o.answer - 1] || "")}</div></details>` : "";
+  const cn = q.objective && typeof LEARN === "object" && LEARN.concept && LEARN.concept(q.objective)
+    ? `<div class="row"><button type="button" class="small" data-var-concept="1">개념 정리본 펼치기 — ${escapeHtml(q.conceptTitle || "")}</button></div>`
+      + `<div class="learn-concept var-concept" hidden></div>` : "";
+  return orig || cn ? `<div class="var-foot">${orig}${cn}</div>` : "";
+}
+function bindVariantFoot(el, q) {
+  const b = el.querySelector("button[data-var-concept]");
+  const box = el.querySelector(".var-concept");
+  if (!b || !box) return;
+  b.onclick = () => {
+    if (box.hidden && !box.childNodes.length) LEARN.renderConcept(box, q.objective, null, null);
+    box.hidden = !box.hidden;
+    b.textContent = (box.hidden ? "개념 정리본 펼치기 — " : "개념 정리본 접기 — ") + (q.conceptTitle || "");
+  };
 }
 
 // 해설의 '오답감별' 값을 보기(A~E·①~⑤)별로 각 줄에 나눠 가독성을 높인다.
@@ -1227,7 +1294,8 @@ function onModeChange() {
   } else if (mode === "all") {
     hint = `${names} 누적 ${n}개 전체(또는 선택 과목)를 풉니다.`;
   } else if (mode === "review") {
-    hint = `${names} 오답노트에 쌓인 ${n}개만 다시 풉니다.`;
+    hint = `${names} 오답노트에 쌓인 ${n}개만 다시 풉니다.`
+      + (has("variant") ? " 변형 문제는 마지막으로 풀었을 때 틀린 것이 들어갑니다." : "");
   } else if (mode === "unsolved") {
     hint = `${names} 누적 ${base.length}개 중 아직 안 푼 ${n}개를 풉니다. 칩의 숫자는 종목별 안 푼 수입니다.`;
   } else if (mode === "solved") {
@@ -1255,6 +1323,7 @@ function updateQList() {
   if (box.open) renderQList(list, ctx);
 }
 function deckLabelOf(q) {
+  if (q.isVariant) return "변형";
   if (q.src === "imaging") return String(q.modality || "").toUpperCase() === "ECG" ? "심전도" : "영상";
   return EXAM_NAME[q.src] || "";
 }
