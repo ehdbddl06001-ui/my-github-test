@@ -224,6 +224,13 @@ const LEARN = (() => {
     add({ kind: "view", what: "explanation", qid: q.id, objective: q.objective || null });
   }
 
+  // 퀴즈 덱에서 푼 변형 문제(app.js 변형 덱) — 개념 복습 화면의 변형 풀기(renderVariant)와 같은 기록을 남긴다
+  function onVariantAnswer(q, chosenIdx, ok) {
+    const ci = q.answer - 1;
+    add({ kind: "answer", mode: "variant", qid: q.id, objective: q.objective, chosen: letterOf(chosenIdx), correct: letterOf(ci), ok,
+      chosenText: q.options[chosenIdx] || "", answerText: q.options[ci] || "", phase: phaseFor(q.objective) });
+  }
+
   /* ---------- 오답 화면 첫 부분 ---------- */
   function wrongPanelHtml(q, chosenIdx) {
     const ci = q.answer - 1;
@@ -741,6 +748,6 @@ const LEARN = (() => {
     window.addEventListener("online", () => scheduleLearnSync(500));
   }
 
-  return { onAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
+  return { onAnswer, onVariantAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
     syncLearning, learnSyncState, states, schedule, dueKeys, reviewSteps, load, concept, STATUS };
 })();

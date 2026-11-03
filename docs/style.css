@@ -105,6 +105,9 @@ button.danger{border-color:var(--bad); color:#ffb4b4}
 .ql-st.s{color:var(--ok); border-color:#1f6b3a}
 .ql-st.w{color:#ffb4b4; border-color:#7a3d3d}
 .ql-meta{color:var(--muted); font-size:.78rem}
+.var-foot{margin-top:12px; border-top:1px dashed var(--line); padding-top:10px}
+.var-orig summary{cursor:pointer; color:var(--muted)}
+.var-orig .vignette{margin-top:8px}
 .ql-q{color:var(--ink); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
 .quiz-top{display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:10px}
