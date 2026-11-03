@@ -2,6 +2,1031 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0535",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "피부 — 몇 달 사이 커진 검은 결절의 더모스코피",
+  "type": "피부 — 몇 달 사이 커진 검은 결절의 더모스코피",
+  "modality": "DERMOSCOPY",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-03",
+  "vignette": "A 55-year-old woman comes to the physician because of a dark skin bump that has grown quickly over several months. It began as a small flat spot, became raised over the past 2 months, and bled once after minor trauma. It is not painful or itchy. She has no family history of skin cancer. Examination shows a firm, 9-mm blue-black nodule; no regional lymph nodes are palpable. A dermoscopic photograph of the lesion is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Cherry hemangioma",
+   "Nodular melanoma",
+   "Blue nevus",
+   "Pigmented basal cell carcinoma",
+   "Seborrheic keratosis"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Dermoscopy shows an asymmetric, structureless blue-black to purple area covering the nodule without a pigment network, with a blue-white veil, white shiny lines, and irregular brown dots at the edge. Together with a firm nodule that grew quickly over months and bled, this is nodular melanoma. The next step is a full-thickness excisional biopsy with 1-3 mm margins to measure Breslow thickness.\n- 원리: <b>Why nodular melanoma escapes the ABCD rule</b>: Superficial spreading melanoma first grows sideways along the epidermis (radial growth phase), so it is asymmetric, irregularly bordered, and multicolored. Nodular melanoma begins in the <b>vertical growth phase</b>, invading the dermis from the start, so it can be small, symmetric, and nearly one color. The better clue is EFG: elevated, firm, and growing for more than a month.<br> <b>What the colors mean</b>: Melanin in the epidermis looks brown or black; melanin deep in the dermis looks <b>blue</b> because of light scattering (the Tyndall effect). A blue-white veil is dermal melanin under a thickened, orthokeratotic epidermis, and white shiny lines reflect altered dermal collagen; both point to invasive melanoma.<br> <b>Why excisional biopsy</b>: Breslow thickness decides the surgical margin and whether sentinel lymph node biopsy is offered, so the first biopsy should remove the whole lesion down to fat. A shave biopsy can transect the tumor and underestimate its depth.\n- 비교: <table><thead><tr><th style=\"width:24%\">Dermoscopy</th><th style=\"width:38%\">Nodular melanoma (answer)</th><th>Blue nevus (closest distractor)</th></tr></thead><tbody> <tr><td>Color</td><td>Blue-black, purple, and brown <b>mixed</b>, asymmetric</td><td>Uniform steel-blue, one color</td></tr> <tr><td>Structures</td><td>Blue-white veil, white shiny lines, irregular dots and vessels</td><td>Structureless and homogeneous</td></tr> <tr><td>Course</td><td>Grows over months, may bleed</td><td>Present since childhood, stable for years</td></tr> </tbody></table> A blue nodule that is multicolored or newly growing is treated as melanoma until an excisional biopsy says otherwise.\n- 오답 이유:\n  - (A) Cherry hemangioma would be correct with sharply demarcated red to purple lacunae separated by whitish septa on dermoscopy.\n  - (C) Blue nevus would be correct for a small, long-standing, unchanged nodule that shows only homogeneous steel-blue color on dermoscopy.\n  - (D) Pigmented basal cell carcinoma would be correct with leaf-like areas, large blue-gray ovoid nests, and arborizing vessels on dermoscopy.\n  - (E) Seborrheic keratosis would be correct for a stuck-on lesion with comedo-like openings, milia-like cysts, and brain-like ridges.\n- 함정: Calling a symmetric dark nodule benign because it fails the ABCD rule - nodular melanoma is caught by EFG (elevated, firm, growing).\n- 학습목표: 더모스코피에서 청흑색 무구조 영역·청백색 베일·흰 반짝이는 선을 가진 빠르게 자란 결절을 결절흑색종으로 판단하고 청색모반·색소성 기저세포암과 가른다\n- 근거·출처: Swetter SM, Tsao H, Bichakjian CK, et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol. 2019;80(1):208-250 · Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 25: The Skin\n\n## 출처\n- ISIC Archive ISIC_0046450 (CC-BY) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Dermoscopy shows an asymmetric, structureless blue-black to purple area covering the nodule without a pigment network, with a blue-white veil, white shiny lines, and irregular brown dots at the edge. Together with a firm nodule that grew quickly over months and bled, this is nodular melanoma. The next step is a full-thickness excisional biopsy with 1-3 mm margins to measure Breslow thickness."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why nodular melanoma escapes the ABCD rule</b>: Superficial spreading melanoma first grows sideways along the epidermis (radial growth phase), so it is asymmetric, irregularly bordered, and multicolored. Nodular melanoma begins in the <b>vertical growth phase</b>, invading the dermis from the start, so it can be small, symmetric, and nearly one color. The better clue is EFG: elevated, firm, and growing for more than a month.<br> <b>What the colors mean</b>: Melanin in the epidermis looks brown or black; melanin deep in the dermis looks <b>blue</b> because of light scattering (the Tyndall effect). A blue-white veil is dermal melanin under a thickened, orthokeratotic epidermis, and white shiny lines reflect altered dermal collagen; both point to invasive melanoma.<br> <b>Why excisional biopsy</b>: Breslow thickness decides the surgical margin and whether sentinel lymph node biopsy is offered, so the first biopsy should remove the whole lesion down to fat. A shave biopsy can transect the tumor and underestimate its depth."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Dermoscopy</th><th style=\"width:38%\">Nodular melanoma (answer)</th><th>Blue nevus (closest distractor)</th></tr></thead><tbody> <tr><td>Color</td><td>Blue-black, purple, and brown <b>mixed</b>, asymmetric</td><td>Uniform steel-blue, one color</td></tr> <tr><td>Structures</td><td>Blue-white veil, white shiny lines, irregular dots and vessels</td><td>Structureless and homogeneous</td></tr> <tr><td>Course</td><td>Grows over months, may bleed</td><td>Present since childhood, stable for years</td></tr> </tbody></table> A blue nodule that is multicolored or newly growing is treated as melanoma until an excisional biopsy says otherwise."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Cherry hemangioma would be correct with sharply demarcated red to purple lacunae separated by whitish septa on dermoscopy.\n(C) Blue nevus would be correct for a small, long-standing, unchanged nodule that shows only homogeneous steel-blue color on dermoscopy.\n(D) Pigmented basal cell carcinoma would be correct with leaf-like areas, large blue-gray ovoid nests, and arborizing vessels on dermoscopy.\n(E) Seborrheic keratosis would be correct for a stuck-on lesion with comedo-like openings, milia-like cysts, and brain-like ridges."
+   },
+   {
+    "k": "함정",
+    "v": "Calling a symmetric dark nodule benign because it fails the ABCD rule - nodular melanoma is caught by EFG (elevated, firm, growing)."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 청흑색 무구조 영역·청백색 베일·흰 반짝이는 선을 가진 빠르게 자란 결절을 결절흑색종으로 판단하고 청색모반·색소성 기저세포암과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Swetter SM, Tsao H, Bichakjian CK, et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol. 2019;80(1):208-250 · Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 25: The Skin ## 출처 ISIC Archive ISIC_0046450 (CC-BY) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A rapidly growing, bleeding, firm nodule with an asymmetric multicolored structureless area, blue-white veil, and white shiny lines on dermoscopy is nodular melanoma",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "A blue nevus is uniformly one blue color and stable; this lesion is multicolored and grew quickly",
+   "steps": 2,
+   "chain": [
+    "영상: asymmetric blue-black, purple, and brown structureless nodule with a blue-white veil and white shiny lines",
+    "Elevated, firm, and growing over months with bleeding (EFG) -> nodular melanoma"
+   ],
+   "key": [
+    {
+     "item": "영상: blue-white veil and white shiny lines",
+     "why": "Dermoscopic signs of invasive melanoma",
+     "also": []
+    },
+    {
+     "item": "영상: mixed colors in an asymmetric structureless area with irregular brown dots at the edge",
+     "why": "Unlike the uniform blue of a blue nevus",
+     "also": []
+    },
+    {
+     "item": "has grown quickly over several months",
+     "why": "The G of EFG",
+     "also": []
+    },
+    {
+     "item": "bled once after minor trauma",
+     "why": "Fragile, possibly ulcerated invasive tumor",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "no regional lymph nodes are palpable",
+     "why": "Staging information - does not decide the diagnosis",
+     "also": []
+    },
+    {
+     "item": "She has no family history of skin cancer",
+     "why": "Common background - does not change the diagnosis",
+     "also": []
+    }
+   ],
+   "summary": "A firm nodule that grew quickly and bled shows an asymmetric multicolored structureless area, blue-white veil, and white shiny lines on dermoscopy. It is nodular melanoma; excisional biopsy measures its thickness.",
+   "switch": {
+    "choice": "C",
+    "condition": "If a small nodule present since childhood showed only uniform steel-blue color and never changed, a blue nevus"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0535.jpg",
+   "caption": "Dermoscopic photograph of the skin lesion, downscaled only (ISIC Archive, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0046450",
+   "asset_id": "ISIC-ISIC_0046450",
+   "text": "ISIC Archive ISIC_0046450 (CC-BY)"
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0530",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "산과 — 만삭이 지난 경산부의 분만 중 태아심박동 기록",
+  "type": "산과 — 만삭이 지난 경산부의 분만 중 태아심박동 기록",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-03",
+  "vignette": "34세 경산부(2회 분만)가 임신 42주에 진통으로 입원하였다. 임신 중 특별한 합병증은 없었고 양막은 2시간 전에 저절로 터졌으며 양수는 맑았다. 산모의 체온은 37.0 ℃, 혈압은 118/72 mmHg 이고 자궁경부는 6 cm 열려 있다. 옥시토신은 쓰지 않았다. 분만 중 태아심박동과 자궁활동 감시 기록의 10분 구간은 그림과 같다.",
+  "question": "이 기록에서 자궁수축 때마다 반복되는 태아심박동 감속의 종류로 가장 적절한 것은?",
+  "options": [
+   "지속감속",
+   "동요성 심박동",
+   "후기감속",
+   "조기감속",
+   "변이감속"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 145~150회/분이다. 자궁수축(11·12.8·15.4·17.3분 무렵)마다 심박동이 수축 시작과 함께 서서히(최저점까지 30초 이상) 20~30회/분 떨어지는데, 최저점이 수축 정점보다 늦게 오고(약 13.4·15.9분) 수축이 끝난 뒤에야 기저선으로 돌아온다. 수축의 거울상처럼 정점과 최저점이 겹치는 조기감속이 아니라, 수축에 늦게 따라오는 반복 후기감속이다.\n- 원리: <b>왜 후기감속은 늦게 오는가</b>: 자궁이 수축하면 근층을 지나는 나선동맥이 눌려 융모사이공간으로 가는 모체 혈류가 줄어든다. 태반 예비력이 충분하면 태아는 이 짧은 감소를 견디지만, 예비력이 줄면(과숙 임신·고혈압·당뇨·자궁수축 과다) 태아 혈중 산소가 떨어진다. 이 저산소혈증을 <b>화학수용체</b>가 감지해 미주신경 반사를 일으키기까지 시간이 걸리므로 감속은 수축보다 늦게 시작·바닥·회복한다. 저산소가 깊어지면 심근 자체가 억눌려 같은 모양이 된다.<br> <b>왜 조기감속과 다르게 다루는가</b>: 조기감속은 태아 머리 압박에 의한 미주신경 반사라 수축과 동시에 움직이고(거울상) 저산소와 관계가 없다. 반복 후기감속은 태반 기능 저하의 신호로 범주 II 이며, 체위 변경·수액·자궁수축 억제(옥시토신 중단)로 자궁 내 소생을 하고 변이도를 보며 다음 결정을 한다. 변이도가 사라지면 범주 III 이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">후기감속(정답)</th><th>조기감속(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>최저점과 수축 정점</td><td><b>정점보다 늦다</b></td><td>정점과 동시(거울상)</td></tr> <tr><td>회복</td><td>수축이 끝난 뒤</td><td>수축이 끝날 때 함께</td></tr> <tr><td>기전</td><td>자궁태반 기능 저하 → 태아 저산소</td><td>태아 머리 압박 → 미주신경 반사</td></tr> <tr><td>의미</td><td>반복되면 범주 II, 자궁 내 소생</td><td>양성, 처치 불필요</td></tr> </tbody></table> 둘 다 서서히(30초 이상) 떨어진다 — 모양이 아니라 <b>수축과의 시간 관계</b>로 가른다. 갑자기(30초 미만) 떨어지면 변이감속이다.\n- 오답 이유:\n  - ① 지속감속은 기저선보다 15회/분 이상 낮은 상태가 2분 이상 10분 미만 이어질 때 정답이 된다.\n  - ② 동요성 심박동은 3~5회/분 주기의 매끈한 물결 모양이 20분 이상 이어지고 변이도가 없을 때 정답이다.\n  - ④ 조기감속은 감속의 최저점이 수축 정점과 겹치고 수축이 끝날 때 함께 회복하는 거울상일 때 정답이다.\n  - ⑤ 변이감속은 수축과의 관계가 일정하지 않고 시작부터 최저점까지 30초 안에 갑자기 떨어지는 V·U 모양일 때 정답이다.\n- 함정: 서서히 떨어지는 감속을 모두 조기감속으로 읽는 것 — 최저점이 수축 정점보다 늦으면 후기감속이다.\n- 학습목표: 분만 중 태아심박동 기록에서 감속의 시작·최저점·회복을 자궁수축과 맞춰 읽어 반복 후기감속을 조기감속·변이감속과 가른다\n- 근거·출처: American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol. 2009;114(1):192-202 · Macones GA, Hankins GD, Spong CY, et al. The 2008 National Institute of Child Health and Human Development workshop report on electronic fetal monitoring. Obstet Gynecol. 2008;112(3):661-666\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1220 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 145~150회/분이다. 자궁수축(11·12.8·15.4·17.3분 무렵)마다 심박동이 수축 시작과 함께 서서히(최저점까지 30초 이상) 20~30회/분 떨어지는데, 최저점이 수축 정점보다 늦게 오고(약 13.4·15.9분) 수축이 끝난 뒤에야 기저선으로 돌아온다. 수축의 거울상처럼 정점과 최저점이 겹치는 조기감속이 아니라, 수축에 늦게 따라오는 반복 후기감속이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 후기감속은 늦게 오는가</b>: 자궁이 수축하면 근층을 지나는 나선동맥이 눌려 융모사이공간으로 가는 모체 혈류가 줄어든다. 태반 예비력이 충분하면 태아는 이 짧은 감소를 견디지만, 예비력이 줄면(과숙 임신·고혈압·당뇨·자궁수축 과다) 태아 혈중 산소가 떨어진다. 이 저산소혈증을 <b>화학수용체</b>가 감지해 미주신경 반사를 일으키기까지 시간이 걸리므로 감속은 수축보다 늦게 시작·바닥·회복한다. 저산소가 깊어지면 심근 자체가 억눌려 같은 모양이 된다.<br> <b>왜 조기감속과 다르게 다루는가</b>: 조기감속은 태아 머리 압박에 의한 미주신경 반사라 수축과 동시에 움직이고(거울상) 저산소와 관계가 없다. 반복 후기감속은 태반 기능 저하의 신호로 범주 II 이며, 체위 변경·수액·자궁수축 억제(옥시토신 중단)로 자궁 내 소생을 하고 변이도를 보며 다음 결정을 한다. 변이도가 사라지면 범주 III 이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">후기감속(정답)</th><th>조기감속(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>최저점과 수축 정점</td><td><b>정점보다 늦다</b></td><td>정점과 동시(거울상)</td></tr> <tr><td>회복</td><td>수축이 끝난 뒤</td><td>수축이 끝날 때 함께</td></tr> <tr><td>기전</td><td>자궁태반 기능 저하 → 태아 저산소</td><td>태아 머리 압박 → 미주신경 반사</td></tr> <tr><td>의미</td><td>반복되면 범주 II, 자궁 내 소생</td><td>양성, 처치 불필요</td></tr> </tbody></table> 둘 다 서서히(30초 이상) 떨어진다 — 모양이 아니라 <b>수축과의 시간 관계</b>로 가른다. 갑자기(30초 미만) 떨어지면 변이감속이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 지속감속은 기저선보다 15회/분 이상 낮은 상태가 2분 이상 10분 미만 이어질 때 정답이 된다.\n② 동요성 심박동은 3~5회/분 주기의 매끈한 물결 모양이 20분 이상 이어지고 변이도가 없을 때 정답이다.\n④ 조기감속은 감속의 최저점이 수축 정점과 겹치고 수축이 끝날 때 함께 회복하는 거울상일 때 정답이다.\n⑤ 변이감속은 수축과의 관계가 일정하지 않고 시작부터 최저점까지 30초 안에 갑자기 떨어지는 V·U 모양일 때 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "서서히 떨어지는 감속을 모두 조기감속으로 읽는 것 — 최저점이 수축 정점보다 늦으면 후기감속이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동 기록에서 감속의 시작·최저점·회복을 자궁수축과 맞춰 읽어 반복 후기감속을 조기감속·변이감속과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol. 2009;114(1):192-202 · Macones GA, Hankins GD, Spong CY, et al. The 2008 National Institute of Child Health and Human Development workshop report on electronic fetal monitoring. Obstet Gynecol. 2008;112(3):661-666 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1220 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "수축마다 서서히 떨어지고 최저점이 수축 정점보다 늦으며 수축 뒤 회복하는 감속은 후기감속이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "조기감속은 최저점이 수축 정점과 동시인 거울상이다 — 이 기록은 최저점이 늦다",
+   "steps": 2,
+   "chain": [
+    "영상: 수축마다 서서히(30초 이상) 떨어지는 20~30회/분 감속",
+    "영상: 최저점이 수축 정점보다 늦고 수축 뒤 회복 → 반복 후기감속"
+   ],
+   "key": [
+    {
+     "item": "영상: 감속의 최저점이 수축 정점보다 늦고 수축이 끝난 뒤 회복",
+     "why": "후기감속의 정의",
+     "also": []
+    },
+    {
+     "item": "임신 42주",
+     "why": "과숙 임신 — 태반 예비력 저하의 배경",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 시작부터 최저점까지 30초 이상 걸리는 완만한 감속",
+     "why": "갑작스러운 변이감속 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "옥시토신은 쓰지 않았다",
+     "why": "자궁 내 소생에서 끊을 약이 없다 — 체위·수액이 먼저",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "양수는 맑았다",
+     "why": "태변 착색이 없다는 정보 — 감속의 종류를 정하지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "수축마다 서서히 떨어진 심박동의 최저점이 수축 정점보다 늦고 수축 뒤 회복한다. 과숙 임신의 반복 후기감속이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "최저점이 수축 정점과 겹치고 수축이 끝나며 함께 회복했다면 조기감속"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0530.png",
+   "caption": "분만 중 태아심박동(위)과 자궁활동(아래), 기록 시작 후 10~20분 구간, 굵은 세로선 = 1분 (PhysioNet CTU-UHB, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1220_10m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1220"
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0534",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "소아청소년 — 사출성 구토를 하는 영아의 산염기 이상",
+  "type": "소아청소년 — 사출성 구토를 하는 영아의 산염기 이상",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-03",
+  "vignette": "A 4-week-old boy is brought to the physician because of vomiting after every feeding for 5 days. The vomiting has become forceful, and the vomitus is nonbilious formula. He is hungry immediately after vomiting. He was born at term after an uncomplicated pregnancy and is the family's first child. He has had fewer wet diapers today. His weight is 140 g less than at his visit 1 week ago. The mucous membranes are dry. A firm, mobile, olive-sized mass is palpable in the epigastrium, and visible gastric peristaltic waves move from left to right across the upper abdomen.",
+  "question": "Which of the following sets of serum findings is most likely in this patient?",
+  "options": [
+   "Normal chloride, normal potassium, normal bicarbonate",
+   "Low chloride, low potassium, high bicarbonate",
+   "High chloride, low potassium, low bicarbonate",
+   "Normal chloride, high potassium, low bicarbonate",
+   "Low chloride, high potassium, high bicarbonate"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: A 4-week-old first-born boy with projectile nonbilious vomiting, hunger after vomiting, an olive-shaped epigastric mass, and visible peristalsis has hypertrophic pyloric stenosis. Repeated loss of gastric hydrochloric acid causes hypochloremic metabolic alkalosis, and volume depletion with renal compensation causes potassium loss — low chloride, low potassium, high bicarbonate.\n- 원리: <b>Why alkalosis</b>: Each liter of gastric juice carries hydrogen and chloride. Every H+ secreted into the stomach leaves one bicarbonate in the blood; normally the bicarbonate is neutralized when acid reaches the duodenum. With the pylorus closed, the acid is vomited, so bicarbonate accumulates and chloride falls.<br> <b>Why potassium falls</b>: Vomiting causes volume loss, which activates the renin–angiotensin–aldosterone system. Aldosterone makes the distal nephron reabsorb sodium in exchange for potassium and hydrogen. Alkalosis also shifts potassium into cells.<br> <b>Paradoxical aciduria</b>: When potassium is depleted, the kidney keeps sodium by excreting H+, so urine becomes acidic despite systemic alkalosis. Correcting volume, chloride, and potassium with saline plus potassium <b>before</b> pyloromyotomy matters, because alkalosis depresses respiratory drive and raises the risk of postoperative apnea.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Pyloric stenosis vomiting (answer)</th><th>Diarrhea in an infant (closest distractor pattern)</th></tr></thead><tbody> <tr><td>Fluid lost</td><td>Gastric HCl</td><td>Bicarbonate-rich intestinal fluid</td></tr> <tr><td>Chloride</td><td><b>Low</b></td><td>High (normal anion gap acidosis)</td></tr> <tr><td>Bicarbonate</td><td><b>High</b></td><td>Low</td></tr> <tr><td>Potassium</td><td>Low</td><td>Low</td></tr> </tbody></table> Both lose potassium — chloride and bicarbonate move in opposite directions depending on whether acid or base is lost.\n- 오답 이유:\n  - (A) Normal values would be expected only very early in the illness, before repeated vomiting and dehydration — not after 5 days with weight loss.\n  - (C) High chloride, low potassium, and low bicarbonate would be correct for infant diarrhea, which loses bicarbonate and causes non-anion gap acidosis.\n  - (D) Normal chloride, high potassium, and low bicarbonate would fit salt-wasting congenital adrenal hyperplasia, which also causes vomiting in infants of this age.\n  - (E) Low chloride with high potassium and high bicarbonate mixes patterns; high potassium would suggest adrenal insufficiency, which causes acidosis rather than alkalosis.\n- 함정: Confusing pyloric stenosis with salt-wasting adrenal hyperplasia, which also vomits at 2–4 weeks but has high potassium and acidosis.\n- 학습목표: 비대날문협착증의 반복 구토로 생기는 저염소성 저칼륨성 대사알칼리증과 역설적 산성 소변을 기전으로 설명한다\n- 근거·출처: Kliegman RM, St Geme JW, Blum NJ, et al., eds. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Chapter 355: Pyloric Stenosis and Other Congenital Anomalies of the Stomach · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 58: Acidosis and Alkalosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A 4-week-old first-born boy with projectile nonbilious vomiting, hunger after vomiting, an olive-shaped epigastric mass, and visible peristalsis has hypertrophic pyloric stenosis. Repeated loss of gastric hydrochloric acid causes hypochloremic metabolic alkalosis, and volume depletion with renal compensation causes potassium loss — low chloride, low potassium, high bicarbonate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why alkalosis</b>: Each liter of gastric juice carries hydrogen and chloride. Every H+ secreted into the stomach leaves one bicarbonate in the blood; normally the bicarbonate is neutralized when acid reaches the duodenum. With the pylorus closed, the acid is vomited, so bicarbonate accumulates and chloride falls.<br> <b>Why potassium falls</b>: Vomiting causes volume loss, which activates the renin–angiotensin–aldosterone system. Aldosterone makes the distal nephron reabsorb sodium in exchange for potassium and hydrogen. Alkalosis also shifts potassium into cells.<br> <b>Paradoxical aciduria</b>: When potassium is depleted, the kidney keeps sodium by excreting H+, so urine becomes acidic despite systemic alkalosis. Correcting volume, chloride, and potassium with saline plus potassium <b>before</b> pyloromyotomy matters, because alkalosis depresses respiratory drive and raises the risk of postoperative apnea."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Pyloric stenosis vomiting (answer)</th><th>Diarrhea in an infant (closest distractor pattern)</th></tr></thead><tbody> <tr><td>Fluid lost</td><td>Gastric HCl</td><td>Bicarbonate-rich intestinal fluid</td></tr> <tr><td>Chloride</td><td><b>Low</b></td><td>High (normal anion gap acidosis)</td></tr> <tr><td>Bicarbonate</td><td><b>High</b></td><td>Low</td></tr> <tr><td>Potassium</td><td>Low</td><td>Low</td></tr> </tbody></table> Both lose potassium — chloride and bicarbonate move in opposite directions depending on whether acid or base is lost."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Normal values would be expected only very early in the illness, before repeated vomiting and dehydration — not after 5 days with weight loss.\n(C) High chloride, low potassium, and low bicarbonate would be correct for infant diarrhea, which loses bicarbonate and causes non-anion gap acidosis.\n(D) Normal chloride, high potassium, and low bicarbonate would fit salt-wasting congenital adrenal hyperplasia, which also causes vomiting in infants of this age.\n(E) Low chloride with high potassium and high bicarbonate mixes patterns; high potassium would suggest adrenal insufficiency, which causes acidosis rather than alkalosis."
+   },
+   {
+    "k": "함정",
+    "v": "Confusing pyloric stenosis with salt-wasting adrenal hyperplasia, which also vomits at 2–4 weeks but has high potassium and acidosis."
+   },
+   {
+    "k": "학습목표",
+    "v": "비대날문협착증의 반복 구토로 생기는 저염소성 저칼륨성 대사알칼리증과 역설적 산성 소변을 기전으로 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, St Geme JW, Blum NJ, et al., eds. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Chapter 355: Pyloric Stenosis and Other Congenital Anomalies of the Stomach · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 58: Acidosis and Alkalosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "Projectile nonbilious vomiting with an olive-shaped mass is pyloric stenosis, which loses gastric HCl and causes hypochloremic hypokalemic metabolic alkalosis",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Salt-wasting adrenal hyperplasia causes hyperkalemia and acidosis and has no pyloric mass",
+   "steps": 2,
+   "chain": [
+    "4-week-old first-born boy + projectile nonbilious vomiting + olive-shaped mass → hypertrophic pyloric stenosis",
+    "Loss of gastric HCl + volume depletion with aldosterone → low chloride, low potassium, high bicarbonate"
+   ],
+   "key": [
+    {
+     "item": "olive-sized mass is palpable in the epigastrium",
+     "why": "The hypertrophied pylorus",
+     "also": []
+    },
+    {
+     "item": "the vomitus is nonbilious formula",
+     "why": "Obstruction proximal to the ampulla",
+     "also": []
+    },
+    {
+     "item": "He is hungry immediately after vomiting",
+     "why": "A hungry vomiter — not a sick, septic infant",
+     "also": []
+    },
+    {
+     "item": "visible gastric peristaltic waves",
+     "why": "The stomach working against the obstruction",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "The mucous membranes are dry",
+     "why": "Dehydration to correct before surgery",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "is the family's first child",
+     "why": "A known risk association — does not change the electrolytes",
+     "also": []
+    }
+   ],
+   "summary": "Projectile nonbilious vomiting, an olive-shaped mass, and visible peristalsis in a 4-week-old boy indicate pyloric stenosis. Loss of gastric acid causes hypochloremic, hypokalemic metabolic alkalosis.",
+   "switch": {
+    "choice": "D",
+    "condition": "With ambiguous genitalia or hyperpigmentation and no pyloric mass, salt-wasting adrenal hyperplasia with high potassium and acidosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0533",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "부인과 — 임신 중 자궁경부 세포검사의 고등급 병변",
+  "type": "부인과 — 임신 중 자궁경부 세포검사의 고등급 병변",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-03",
+  "vignette": "31세 여자가 임신 14주에 처음 산전 진찰을 받았다. 지난 5년 동안 자궁경부암 검진을 받지 않았다. 질 출혈이나 성교 후 출혈은 없다. 초음파에서 자궁 안에 임신 주수에 맞는 태아 하나가 보이고 태아심박동이 있다. 질경 검사에서 자궁경부에 눈에 보이는 종괴는 없다. 자궁경부 세포검사 결과는 고등급 편평상피내병변(HSIL)이고 고위험 인유두종바이러스 16형이 양성이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "질확대경 없이 분만 6주 뒤 세포검사 반복",
+   "질확대경검사와 자궁경부내막소파술",
+   "임신 종결 뒤 자궁적출술",
+   "질확대경검사와 의심 부위의 조준 생검",
+   "자궁경부원추절제술"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 임신 중이라도 HSIL 은 침윤암 가능성이 있어 미루지 않고 질확대경검사를 하고, 침윤이 의심되는 부위만 조준 생검한다. 임신 중에는 자궁경부내막소파술(태아막 손상 우려)과 원추절제술(출혈·유산·조산)은 피하며, 침윤암이 아니면 치료는 분만 뒤(산후 4주 이후)로 미룬다.\n- 원리: <b>왜 미루지 않는가</b>: HSIL 은 CIN 2~3 의 위험이 높고 일부는 이미 침윤암이다. 임신 중 침윤암을 놓치면 분만 방식과 치료 시기가 달라지므로, 고등급 세포 소견이 나오면 임신 주수와 관계없이 <b>질확대경</b>으로 병변의 범위를 보고 침윤을 배제한다. 임신 중 자궁경부는 혈관이 많고 변형대가 바깥으로 나와 있어 질확대경으로 보기 쉽다.<br> <b>왜 일부 처치를 피하는가</b>: 자궁경부내막소파는 자궁경관 안으로 기구를 넣어 태아막·출혈 위험이 있고, 원추절제는 출혈·유산·조산과 자궁경부 무력을 일으킬 수 있다. CIN 2~3 이 임신 중 침윤암으로 진행하는 일은 드물고 산후에 상당수가 퇴행하므로, 침윤이 확인되지 않으면 치료는 산후로 미룬다. 생검은 침윤이 의심되는 부위에만 한다(출혈은 대개 압박으로 조절된다).<br> <b>예외</b>: 생검에서 침윤암이 의심되거나 확인될 때만 진단적 원추절제를 고려한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:38%\">질확대경 + 조준 생검(정답)</th><th>산후로 세포검사 미룸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상 세포 소견</td><td><b>HSIL·ASC-H·AGC</b> — 고등급</td><td>ASC-US·LSIL(일부는 산후 질확대경 허용)</td></tr> <tr><td>목적</td><td>지금 침윤암을 배제</td><td>저등급은 퇴행이 많아 기다려도 된다</td></tr> <tr><td>임신 중 금지</td><td colspan=\"2\">자궁경부내막소파술 · 침윤 의심이 없는 원추절제술</td></tr> </tbody></table> 「임신 중이니 다 미룬다」가 아니다 — 진단(질확대경)은 지금, 치료는 산후.\n- 오답 이유:\n  - ① 산후로 미루는 것은 저등급 병변(ASC-US·LSIL)에서 허용되는 선택이다 — HSIL 은 지금 침윤암을 배제해야 한다.\n  - ② 자궁경부내막소파술은 임신이 아닌 여자에서 변형대가 보이지 않을 때 정답이 되며, 임신 중에는 하지 않는다.\n  - ③ 자궁적출술은 침윤성 자궁경부암이 확인되어 병기에 따라 근치 수술을 정할 때 고려하며 HSIL 만으로는 하지 않는다.\n  - ⑤ 원추절제술은 질확대경 생검에서 미세침윤·침윤암이 의심되어 진단이 꼭 필요할 때만 임신 중 고려한다.\n- 함정: 임신이니 모든 평가를 산후로 미루거나, 임신이 아닐 때처럼 원추절제·내막소파를 하는 것 — 진단은 지금, 치료는 산후다.\n- 학습목표: 임신 중 자궁경부 세포검사의 고등급 병변은 질확대경으로 침윤암을 배제하되 자궁경부내막소파와 절제 치료를 피하고 산후로 미루는 원칙을 적용한다\n- 근거·출처: Perkins RB, Guido RS, Castle PE, et al. 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors. J Low Genit Tract Dis. 2020;24(2):102-131 · Cunningham FG, Leveno KJ, Dashe JS, et al., eds. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 66: Neoplastic Disorders",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "임신 중이라도 HSIL 은 침윤암 가능성이 있어 미루지 않고 질확대경검사를 하고, 침윤이 의심되는 부위만 조준 생검한다. 임신 중에는 자궁경부내막소파술(태아막 손상 우려)과 원추절제술(출혈·유산·조산)은 피하며, 침윤암이 아니면 치료는 분만 뒤(산후 4주 이후)로 미룬다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 미루지 않는가</b>: HSIL 은 CIN 2~3 의 위험이 높고 일부는 이미 침윤암이다. 임신 중 침윤암을 놓치면 분만 방식과 치료 시기가 달라지므로, 고등급 세포 소견이 나오면 임신 주수와 관계없이 <b>질확대경</b>으로 병변의 범위를 보고 침윤을 배제한다. 임신 중 자궁경부는 혈관이 많고 변형대가 바깥으로 나와 있어 질확대경으로 보기 쉽다.<br> <b>왜 일부 처치를 피하는가</b>: 자궁경부내막소파는 자궁경관 안으로 기구를 넣어 태아막·출혈 위험이 있고, 원추절제는 출혈·유산·조산과 자궁경부 무력을 일으킬 수 있다. CIN 2~3 이 임신 중 침윤암으로 진행하는 일은 드물고 산후에 상당수가 퇴행하므로, 침윤이 확인되지 않으면 치료는 산후로 미룬다. 생검은 침윤이 의심되는 부위에만 한다(출혈은 대개 압박으로 조절된다).<br> <b>예외</b>: 생검에서 침윤암이 의심되거나 확인될 때만 진단적 원추절제를 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:38%\">질확대경 + 조준 생검(정답)</th><th>산후로 세포검사 미룸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상 세포 소견</td><td><b>HSIL·ASC-H·AGC</b> — 고등급</td><td>ASC-US·LSIL(일부는 산후 질확대경 허용)</td></tr> <tr><td>목적</td><td>지금 침윤암을 배제</td><td>저등급은 퇴행이 많아 기다려도 된다</td></tr> <tr><td>임신 중 금지</td><td colspan=\"2\">자궁경부내막소파술 · 침윤 의심이 없는 원추절제술</td></tr> </tbody></table> 「임신 중이니 다 미룬다」가 아니다 — 진단(질확대경)은 지금, 치료는 산후."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 산후로 미루는 것은 저등급 병변(ASC-US·LSIL)에서 허용되는 선택이다 — HSIL 은 지금 침윤암을 배제해야 한다.\n② 자궁경부내막소파술은 임신이 아닌 여자에서 변형대가 보이지 않을 때 정답이 되며, 임신 중에는 하지 않는다.\n③ 자궁적출술은 침윤성 자궁경부암이 확인되어 병기에 따라 근치 수술을 정할 때 고려하며 HSIL 만으로는 하지 않는다.\n⑤ 원추절제술은 질확대경 생검에서 미세침윤·침윤암이 의심되어 진단이 꼭 필요할 때만 임신 중 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "임신이니 모든 평가를 산후로 미루거나, 임신이 아닐 때처럼 원추절제·내막소파를 하는 것 — 진단은 지금, 치료는 산후다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 중 자궁경부 세포검사의 고등급 병변은 질확대경으로 침윤암을 배제하되 자궁경부내막소파와 절제 치료를 피하고 산후로 미루는 원칙을 적용한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Perkins RB, Guido RS, Castle PE, et al. 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors. J Low Genit Tract Dis. 2020;24(2):102-131 · Cunningham FG, Leveno KJ, Dashe JS, et al., eds. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 66: Neoplastic Disorders"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "임신 중 HSIL 은 질확대경검사와 의심 부위 조준 생검으로 침윤암을 배제하고, 내막소파·절제 치료는 피한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "HSIL 은 고등급이라 산후로 미루지 않는다 — 산후 연기는 저등급 병변에서만",
+   "steps": 3,
+   "chain": [
+    "HSIL + HPV 16 양성 → CIN 3 이상 위험이 높아 질확대경이 필요",
+    "임신 14주 → 침윤암 배제는 지금, 치료는 산후",
+    "임신 중 자궁경부내막소파·원추절제는 피함 → 질확대경과 조준 생검"
+   ],
+   "key": [
+    {
+     "item": "고등급 편평상피내병변(HSIL)",
+     "why": "즉시 질확대경이 필요한 세포 소견",
+     "also": []
+    },
+    {
+     "item": "고위험 인유두종바이러스 16형이 양성",
+     "why": "CIN 3 이상 위험을 더 높인다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "자궁경부에 눈에 보이는 종괴는 없다",
+     "why": "육안적 침윤암 가능성을 낮춘다 — 바로 근치 치료로 가지 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "임신 14주",
+     "why": "내막소파·원추절제를 피하고 치료를 미루는 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "지난 5년 동안 자궁경부암 검진을 받지 않았다",
+     "why": "고등급 병변이 생길 수 있었던 배경 — 처치 순서를 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "임신 14주 HSIL·HPV 16 양성이다. 질확대경과 조준 생검으로 지금 침윤암을 배제하고, 내막소파·절제 치료는 피하고 산후로 미룬다.",
+   "switch": {
+    "choice": "A",
+    "condition": "세포검사가 ASC-US 나 LSIL 이었다면 질확대경을 산후로 미룰 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0532",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "감염 — 페니실린 알레르기가 있는 임신부의 2기 매독",
+  "type": "감염 — 페니실린 알레르기가 있는 임신부의 2기 매독",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-03",
+  "vignette": "A 24-year-old woman, gravida 1, para 0, at 18 weeks' gestation comes to the physician because of a nonpruritic rash on her trunk, palms, and soles for 1 week. She has had mild malaise. Two months ago she noticed a painless genital sore that healed on its own. She reports developing generalized hives and wheezing after taking amoxicillin as a teenager. Temperature is 37.5°C. Examination shows scattered copper-colored macules and papules, including on the palms and soles, and generalized nontender lymphadenopathy. Rapid plasma reagin titer is 1:64, and a treponemal antibody test is positive. HIV testing is negative.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral doxycycline for 14 days",
+   "Intramuscular ceftriaxone for 10 days",
+   "Oral azithromycin as a single dose",
+   "Repeat the rapid plasma reagin titer in 4 weeks",
+   "Penicillin desensitization followed by benzathine penicillin G"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: A healed painless chancre followed by a copper-colored rash on the palms and soles, lymphadenopathy, and a high RPR titer with a positive treponemal test is secondary syphilis. In pregnancy, only penicillin reliably treats the mother and prevents congenital syphilis, so a pregnant woman with an IgE-mediated penicillin allergy (hives and wheezing) should be desensitized and then given benzathine penicillin G.\n- 원리: <b>Why penicillin is irreplaceable in pregnancy</b>: Treponema pallidum crosses the placenta at any stage of pregnancy; untreated secondary syphilis — the stage with the most circulating spirochetes — transmits to the fetus most often, causing stillbirth or congenital syphilis. Penicillin is the only drug proven to treat the fetus as well as the mother. Doxycycline is avoided in pregnancy (fetal tooth and bone effects), macrolides cross the placenta poorly and resistance is common, and ceftriaxone has too little evidence for preventing congenital infection.<br> <b>Why desensitization works</b>: Giving gradually increasing doses over hours lets mast cells bind small amounts of drug-specific IgE without massive degranulation, creating a temporary tolerant state. Treatment must begin while tolerance lasts. Hives and wheezing indicate an IgE-mediated reaction, so a direct challenge is unsafe.<br> <b>After treatment</b>: Expect a Jarisch–Herxheimer reaction (fever, which in pregnancy may trigger contractions), and follow RPR titers for a fourfold decline.\n- 비교: <table><thead><tr><th style=\"width:24%\">Patient</th><th style=\"width:38%\">Pregnant, penicillin allergy (answer)</th><th>Not pregnant, penicillin allergy (closest distractor)</th></tr></thead><tbody> <tr><td>Early syphilis therapy</td><td><b>Desensitize → benzathine penicillin G</b></td><td>Doxycycline 100 mg twice daily for 14 days</td></tr> <tr><td>Reason</td><td>Only penicillin prevents congenital syphilis; doxycycline is contraindicated</td><td>Doxycycline is an acceptable alternative with close follow-up</td></tr> <tr><td>Same rule applies to</td><td>Neurosyphilis (desensitize if allergic)</td><td>—</td></tr> </tbody></table> The deciding fact is the pregnancy — the same allergy in a nonpregnant adult would allow doxycycline.\n- 오답 이유:\n  - (A) Doxycycline for 14 days would be correct for early syphilis in a nonpregnant adult with penicillin allergy; it is avoided in pregnancy.\n  - (B) Ceftriaxone is an alternative in nonpregnant adults without anaphylaxis, but it is not adequate to prevent congenital syphilis in pregnancy.\n  - (C) Single-dose azithromycin is no longer recommended because of macrolide resistance; it would be right only for some other STIs, such as chlamydia.\n  - (D) Repeating the titer would be right only after treatment to confirm a fourfold decline — waiting now risks fetal infection.\n- 함정: Choosing the nonpregnant alternative (doxycycline) for a penicillin-allergic pregnant woman — pregnancy requires desensitization and penicillin.\n- 학습목표: 페니실린 알레르기가 있는 임신부의 매독은 대체약이 아니라 탈감작 후 벤자틴 페니실린 G 로 치료해야 하는 이유를 설명한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 187: Syphilis · Workowski KA, Bachmann LH, Chan PA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep. 2021;70(4):1-187",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A healed painless chancre followed by a copper-colored rash on the palms and soles, lymphadenopathy, and a high RPR titer with a positive treponemal test is secondary syphilis. In pregnancy, only penicillin reliably treats the mother and prevents congenital syphilis, so a pregnant woman with an IgE-mediated penicillin allergy (hives and wheezing) should be desensitized and then given benzathine penicillin G."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why penicillin is irreplaceable in pregnancy</b>: Treponema pallidum crosses the placenta at any stage of pregnancy; untreated secondary syphilis — the stage with the most circulating spirochetes — transmits to the fetus most often, causing stillbirth or congenital syphilis. Penicillin is the only drug proven to treat the fetus as well as the mother. Doxycycline is avoided in pregnancy (fetal tooth and bone effects), macrolides cross the placenta poorly and resistance is common, and ceftriaxone has too little evidence for preventing congenital infection.<br> <b>Why desensitization works</b>: Giving gradually increasing doses over hours lets mast cells bind small amounts of drug-specific IgE without massive degranulation, creating a temporary tolerant state. Treatment must begin while tolerance lasts. Hives and wheezing indicate an IgE-mediated reaction, so a direct challenge is unsafe.<br> <b>After treatment</b>: Expect a Jarisch–Herxheimer reaction (fever, which in pregnancy may trigger contractions), and follow RPR titers for a fourfold decline."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Patient</th><th style=\"width:38%\">Pregnant, penicillin allergy (answer)</th><th>Not pregnant, penicillin allergy (closest distractor)</th></tr></thead><tbody> <tr><td>Early syphilis therapy</td><td><b>Desensitize → benzathine penicillin G</b></td><td>Doxycycline 100 mg twice daily for 14 days</td></tr> <tr><td>Reason</td><td>Only penicillin prevents congenital syphilis; doxycycline is contraindicated</td><td>Doxycycline is an acceptable alternative with close follow-up</td></tr> <tr><td>Same rule applies to</td><td>Neurosyphilis (desensitize if allergic)</td><td>—</td></tr> </tbody></table> The deciding fact is the pregnancy — the same allergy in a nonpregnant adult would allow doxycycline."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Doxycycline for 14 days would be correct for early syphilis in a nonpregnant adult with penicillin allergy; it is avoided in pregnancy.\n(B) Ceftriaxone is an alternative in nonpregnant adults without anaphylaxis, but it is not adequate to prevent congenital syphilis in pregnancy.\n(C) Single-dose azithromycin is no longer recommended because of macrolide resistance; it would be right only for some other STIs, such as chlamydia.\n(D) Repeating the titer would be right only after treatment to confirm a fourfold decline — waiting now risks fetal infection."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the nonpregnant alternative (doxycycline) for a penicillin-allergic pregnant woman — pregnancy requires desensitization and penicillin."
+   },
+   {
+    "k": "학습목표",
+    "v": "페니실린 알레르기가 있는 임신부의 매독은 대체약이 아니라 탈감작 후 벤자틴 페니실린 G 로 치료해야 하는 이유를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 187: Syphilis · Workowski KA, Bachmann LH, Chan PA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep. 2021;70(4):1-187"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Secondary syphilis in a pregnant woman with IgE-mediated penicillin allergy is treated with benzathine penicillin G after desensitization",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "She is pregnant — doxycycline is contraindicated and only penicillin prevents congenital syphilis",
+   "steps": 3,
+   "chain": [
+    "Healed painless genital sore + palm and sole rash + RPR 1:64 with positive treponemal test → secondary syphilis",
+    "Pregnancy → only penicillin prevents congenital syphilis",
+    "Hives and wheezing after amoxicillin → IgE-mediated allergy → desensitize, then benzathine penicillin G"
+   ],
+   "key": [
+    {
+     "item": "including on the palms and soles",
+     "why": "Rash pattern of secondary syphilis",
+     "also": []
+    },
+    {
+     "item": "painless genital sore that healed on its own",
+     "why": "Earlier primary chancre",
+     "also": []
+    },
+    {
+     "item": "Rapid plasma reagin titer is 1:64",
+     "why": "High nontreponemal titer — active infection",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "at 18 weeks' gestation",
+     "why": "Pregnancy excludes non-penicillin alternatives",
+     "also": []
+    },
+    {
+     "item": "generalized hives and wheezing after taking amoxicillin",
+     "why": "IgE-mediated reaction — direct penicillin is unsafe without desensitization",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "HIV testing is negative",
+     "why": "Recommended screening; does not change the regimen",
+     "also": []
+    }
+   ],
+   "summary": "Secondary syphilis in an 18-week pregnant woman with an IgE-mediated penicillin allergy. Penicillin is the only adequate therapy in pregnancy, so she is desensitized and then given benzathine penicillin G.",
+   "switch": {
+    "choice": "A",
+    "condition": "If she were not pregnant, doxycycline for 14 days would be an acceptable alternative"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0531",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "혈액·종양 — 철분제에 반응하지 않는 소구성 빈혈",
+  "type": "혈액·종양 — 철분제에 반응하지 않는 소구성 빈혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-03",
+  "vignette": "26세 여자가 회사 건강검진에서 빈혈이 있다고 하여 왔다. 3개월 전 다른 병원에서 철분제를 처방받아 꾸준히 먹었지만 혈색소가 그대로라고 한다. 월경량은 많지 않고 피곤함 외에 증상은 없다. 아버지도 「가벼운 빈혈」이 있다고 들었다. 결막이 약간 창백하고 비장은 만져지지 않는다. 혈색소 10.9 g/dL, 평균적혈구용적(MCV) 63 fL, 적혈구 수 5.8×10⁶/μL, 적혈구분포폭(RDW) 13.6 %(정상 11.5~14.5), 페리틴 96 ng/mL, 그물적혈구 2.1 % 이다. 말초혈액도말에서 소구성 저색소성 적혈구와 표적세포가 보인다.",
+  "question": "다음 검사로 확진에 가장 적절한 것은?",
+  "options": [
+   "혈색소 전기영동",
+   "골수 흡인 철염색",
+   "위내시경과 대장내시경",
+   "직접 항글로불린 검사",
+   "혈청 비타민 B12·엽산 측정"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 소구성 빈혈인데 페리틴이 정상이고 철분제에 반응이 없어 철결핍이 아니다. 적혈구 수가 오히려 많고(5.8×10⁶/μL, MCV/적혈구 수 = 약 11로 13 미만), RDW 가 정상이며 표적세포가 보이고 아버지도 가벼운 빈혈이 있다 — 경증 베타지중해빈혈(보인자)을 시사한다. HbA2 증가(>3.5 %)를 보여 줄 혈색소 전기영동이 확진 검사다.\n- 원리: <b>왜 적혈구 수가 많은가</b>: 베타지중해빈혈 보인자는 한쪽 베타글로빈 유전자의 결함으로 베타사슬 합성이 줄어 적혈구마다 혈색소가 적다(소구성·저색소). 그러나 골수의 적혈구 생산 자체는 정상이어서 작은 적혈구를 <b>많이</b> 만든다. 철결핍은 재료(철)가 부족해 생산 자체가 줄므로 적혈구 수가 적다. 그래서 MCV/적혈구 수(Mentzer 지수) &lt; 13 이면 지중해빈혈, &gt; 13 이면 철결핍 쪽이다.<br> <b>왜 HbA2 가 오르는가</b>: 베타사슬이 모자라면 남는 알파사슬이 델타사슬과 결합해 HbA2(α2δ2)가 늘어난다(3.5~7 %). 알파지중해빈혈 보인자는 HbA2 가 정상이라 전기영동으로 구별되지 않을 수 있다.<br> <b>왜 진단이 중요한가</b>: 철분을 계속 주면 철 과부하만 생긴다. 그리고 배우자도 보인자이면 자녀가 중증 지중해빈혈일 수 있어 유전 상담이 필요하다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">경증 베타지중해빈혈(정답 쪽)</th><th>철결핍빈혈(가장 가까운 대안)</th></tr></thead><tbody> <tr><td>적혈구 수</td><td><b>많다</b>(&gt; 5×10⁶/μL)</td><td>적다</td></tr> <tr><td>MCV/적혈구 수</td><td>&lt; 13</td><td>&gt; 13</td></tr> <tr><td>RDW</td><td>정상</td><td>넓다(크기가 제각각)</td></tr> <tr><td>페리틴</td><td>정상~높음</td><td>&lt; 30 ng/mL</td></tr> <tr><td>확진</td><td>혈색소 전기영동 — HbA2 &gt; 3.5 %</td><td>철 검사, 이어 출혈원 찾기</td></tr> </tbody></table> 철결핍과 지중해빈혈이 함께 있으면 HbA2 가 낮아질 수 있다 — 철을 채운 뒤 다시 잰다.\n- 오답 이유:\n  - ② 골수 철염색은 철결핍·철적모구빈혈을 가려야 하는데 혈청 철 검사로 판단이 안 될 때 쓴다 — 이 증례는 페리틴이 이미 정상이다.\n  - ③ 위·대장내시경은 페리틴이 낮은 철결핍빈혈이 남자나 폐경 후 여자에게 있어 위장관 출혈원을 찾을 때 정답이 된다.\n  - ④ 직접 항글로불린 검사는 그물적혈구 증가·간접 빌리루빈 상승·구형적혈구로 자가면역 용혈이 의심될 때 정답이다.\n  - ⑤ 비타민 B12·엽산 측정은 MCV 가 100 fL 을 넘는 대구성 빈혈과 과분엽 호중구가 있을 때 정답이 된다.\n- 함정: 소구성 빈혈이면 모두 철결핍으로 보고 철분을 계속 주는 것 — 페리틴 정상과 많은 적혈구 수가 지중해빈혈의 단서다.\n- 학습목표: 소구성 빈혈에서 정상 페리틴·높은 적혈구 수·HbA2 증가로 경증 베타지중해빈혈을 철결핍빈혈과 가르고 철분 투여를 멈춘다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 103: Disorders of Hemoglobin · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 102: Iron Deficiency and Other Acquired Anemias Due to Decreased Erythrocyte Production",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "소구성 빈혈인데 페리틴이 정상이고 철분제에 반응이 없어 철결핍이 아니다. 적혈구 수가 오히려 많고(5.8×10⁶/μL, MCV/적혈구 수 = 약 11로 13 미만), RDW 가 정상이며 표적세포가 보이고 아버지도 가벼운 빈혈이 있다 — 경증 베타지중해빈혈(보인자)을 시사한다. HbA2 증가(>3.5 %)를 보여 줄 혈색소 전기영동이 확진 검사다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 적혈구 수가 많은가</b>: 베타지중해빈혈 보인자는 한쪽 베타글로빈 유전자의 결함으로 베타사슬 합성이 줄어 적혈구마다 혈색소가 적다(소구성·저색소). 그러나 골수의 적혈구 생산 자체는 정상이어서 작은 적혈구를 <b>많이</b> 만든다. 철결핍은 재료(철)가 부족해 생산 자체가 줄므로 적혈구 수가 적다. 그래서 MCV/적혈구 수(Mentzer 지수) &lt; 13 이면 지중해빈혈, &gt; 13 이면 철결핍 쪽이다.<br> <b>왜 HbA2 가 오르는가</b>: 베타사슬이 모자라면 남는 알파사슬이 델타사슬과 결합해 HbA2(α2δ2)가 늘어난다(3.5~7 %). 알파지중해빈혈 보인자는 HbA2 가 정상이라 전기영동으로 구별되지 않을 수 있다.<br> <b>왜 진단이 중요한가</b>: 철분을 계속 주면 철 과부하만 생긴다. 그리고 배우자도 보인자이면 자녀가 중증 지중해빈혈일 수 있어 유전 상담이 필요하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">경증 베타지중해빈혈(정답 쪽)</th><th>철결핍빈혈(가장 가까운 대안)</th></tr></thead><tbody> <tr><td>적혈구 수</td><td><b>많다</b>(&gt; 5×10⁶/μL)</td><td>적다</td></tr> <tr><td>MCV/적혈구 수</td><td>&lt; 13</td><td>&gt; 13</td></tr> <tr><td>RDW</td><td>정상</td><td>넓다(크기가 제각각)</td></tr> <tr><td>페리틴</td><td>정상~높음</td><td>&lt; 30 ng/mL</td></tr> <tr><td>확진</td><td>혈색소 전기영동 — HbA2 &gt; 3.5 %</td><td>철 검사, 이어 출혈원 찾기</td></tr> </tbody></table> 철결핍과 지중해빈혈이 함께 있으면 HbA2 가 낮아질 수 있다 — 철을 채운 뒤 다시 잰다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 골수 철염색은 철결핍·철적모구빈혈을 가려야 하는데 혈청 철 검사로 판단이 안 될 때 쓴다 — 이 증례는 페리틴이 이미 정상이다.\n③ 위·대장내시경은 페리틴이 낮은 철결핍빈혈이 남자나 폐경 후 여자에게 있어 위장관 출혈원을 찾을 때 정답이 된다.\n④ 직접 항글로불린 검사는 그물적혈구 증가·간접 빌리루빈 상승·구형적혈구로 자가면역 용혈이 의심될 때 정답이다.\n⑤ 비타민 B12·엽산 측정은 MCV 가 100 fL 을 넘는 대구성 빈혈과 과분엽 호중구가 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "소구성 빈혈이면 모두 철결핍으로 보고 철분을 계속 주는 것 — 페리틴 정상과 많은 적혈구 수가 지중해빈혈의 단서다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소구성 빈혈에서 정상 페리틴·높은 적혈구 수·HbA2 증가로 경증 베타지중해빈혈을 철결핍빈혈과 가르고 철분 투여를 멈춘다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 103: Disorders of Hemoglobin · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 102: Iron Deficiency and Other Acquired Anemias Due to Decreased Erythrocyte Production"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "페리틴 정상·적혈구 수 증가·RDW 정상인 소구성 빈혈은 지중해빈혈 보인자를 시사하므로 혈색소 전기영동으로 확진한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "페리틴이 96 ng/mL 로 정상 — 철결핍이 아니므로 출혈원 검사가 우선이 아니다",
+   "steps": 3,
+   "chain": [
+    "MCV 63 fL 의 소구성 빈혈 + 철분제 무반응",
+    "페리틴 정상·적혈구 수 5.8×10⁶/μL·RDW 정상·표적세포·가족력 → 지중해빈혈 보인자",
+    "베타지중해빈혈은 HbA2 증가로 확진 → 혈색소 전기영동"
+   ],
+   "key": [
+    {
+     "item": "적혈구 수 5.8×10⁶/μL",
+     "why": "생산은 정상인 소구성 — Mentzer 지수 < 13",
+     "also": []
+    },
+    {
+     "item": "적혈구분포폭(RDW) 13.6 %",
+     "why": "크기가 고르다 — 지중해빈혈 쪽",
+     "also": []
+    },
+    {
+     "item": "철분제를 처방받아 꾸준히 먹었지만 혈색소가 그대로",
+     "why": "철결핍이라면 반응했을 것",
+     "also": []
+    },
+    {
+     "item": "아버지도 「가벼운 빈혈」이 있다",
+     "why": "상염색체 유전 보인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "페리틴 96 ng/mL",
+     "why": "철결핍 가능성을 크게 낮춘다",
+     "also": []
+    },
+    {
+     "item": "월경량은 많지 않고",
+     "why": "만성 실혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "그물적혈구 2.1 %",
+     "why": "용혈이 두드러지지 않음 — 진단을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "철분제에 반응하지 않는 소구성 빈혈에서 페리틴이 정상이고 적혈구 수가 많으며 RDW 가 정상이다. 베타지중해빈혈 보인자를 혈색소 전기영동(HbA2)으로 확진한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "페리틴이 10 ng/mL 로 낮고 적혈구 수가 적은 50세 남자라면 위장관 출혈원을 찾는 내시경"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0529",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "호흡기 — 폐렴과 함께 생긴 삼출성 흉막삼출",
+  "type": "호흡기 — 폐렴과 함께 생긴 삼출성 흉막삼출",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-03",
+  "vignette": "A 58-year-old man comes to the emergency department because of fever, productive cough, and right-sided pleuritic chest pain for 4 days. Temperature is 38.6°C, pulse is 104/min, and respirations are 22/min. Dullness to percussion and decreased breath sounds are present at the right lung base. Chest x-ray shows right lower lobe consolidation with a small to moderate free-flowing pleural effusion. Diagnostic thoracentesis yields slightly cloudy fluid. Pleural fluid/serum protein ratio is 0.7 and pleural fluid/serum LDH ratio is 0.8. Pleural fluid pH is 7.38, glucose is 92 mg/dL, and the white blood cell count is 6,500/mm3 with 85% neutrophils. Gram stain shows no organisms.",
+  "question": "Which of the following is the most likely cause of the effusion?",
+  "options": [
+   "Uncomplicated parapneumonic effusion",
+   "Complicated parapneumonic effusion",
+   "Malignant pleural effusion",
+   "Tuberculous pleural effusion",
+   "Heart failure-related transudate"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The fluid is an exudate by Light's criteria (protein ratio > 0.5, LDH ratio > 0.6). With pneumonia, a neutrophil-predominant exudate, pH 7.38, normal glucose, and a negative Gram stain, the effusion is an uncomplicated parapneumonic effusion that usually resolves with antibiotics alone. Pus, a positive Gram stain, pH < 7.20, or low glucose would make it complicated or an empyema needing drainage.\n- 원리: <b>Why Light's criteria come first</b>: A transudate forms when hydrostatic or oncotic pressure changes push fluid across a normal pleura (heart failure, cirrhosis), so the fluid has little protein and LDH. An exudate means the pleura itself is inflamed or invaded and leaks protein and cells — infection, cancer, tuberculosis. One positive criterion (protein ratio > 0.5, LDH ratio > 0.6, or LDH > 2/3 of the upper normal serum value) makes an exudate.<br> <b>Why pH and glucose decide drainage</b>: When bacteria invade the pleural space, neutrophils and bacteria consume glucose and produce lactate and CO2 through anaerobic glycolysis. The pleural pH falls below 7.20 and glucose below 60 mg/dL — the fluid is now <b>complicated</b> and loculates unless drained. Normal pH and glucose with a sterile Gram stain mean the inflammation is reactive, and antibiotics for the pneumonia are enough.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Uncomplicated parapneumonic (answer)</th><th>Empyema / complicated (closest distractor)</th></tr></thead><tbody> <tr><td>Appearance</td><td>Clear to slightly cloudy</td><td><b>Frank pus</b> or loculated</td></tr> <tr><td>pH / glucose</td><td>≥ 7.20 / ≥ 60 mg/dL</td><td>&lt; 7.20 / &lt; 60 mg/dL (bacterial metabolism)</td></tr> <tr><td>Gram stain, culture</td><td>Negative</td><td>Often positive</td></tr> <tr><td>Management</td><td>Antibiotics alone</td><td>Chest tube drainage ± fibrinolytics or surgery</td></tr> </tbody></table> Both are neutrophilic exudates next to pneumonia — the pH, glucose, and Gram stain separate them.\n- 오답 이유:\n  - (B) A complicated effusion or empyema would be correct with frank pus or a positive Gram stain, or pH below 7.20 and glucose below 60 mg/dL.\n  - (C) Malignant effusion would be correct with a lymphocyte-predominant, often bloody exudate, weight loss, and malignant cells on cytology.\n  - (D) Tuberculous pleuritis would be correct with a lymphocytic exudate (often > 80% lymphocytes), high adenosine deaminase, and a subacute course.\n  - (E) Heart failure would be correct if the fluid were a transudate (protein ratio ≤ 0.5, LDH ratio ≤ 0.6), often bilateral with cardiomegaly.\n- 함정: Calling every effusion beside pneumonia an empyema — pH, glucose, and Gram stain decide whether drainage is needed.\n- 학습목표: Light 기준으로 삼출액을 확인하고 호중구 우세·정상 pH 와 포도당으로 단순 부폐렴삼출을 다른 삼출액과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 305: Disorders of the Pleura",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The fluid is an exudate by Light's criteria (protein ratio > 0.5, LDH ratio > 0.6). With pneumonia, a neutrophil-predominant exudate, pH 7.38, normal glucose, and a negative Gram stain, the effusion is an uncomplicated parapneumonic effusion that usually resolves with antibiotics alone. Pus, a positive Gram stain, pH < 7.20, or low glucose would make it complicated or an empyema needing drainage."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why Light's criteria come first</b>: A transudate forms when hydrostatic or oncotic pressure changes push fluid across a normal pleura (heart failure, cirrhosis), so the fluid has little protein and LDH. An exudate means the pleura itself is inflamed or invaded and leaks protein and cells — infection, cancer, tuberculosis. One positive criterion (protein ratio > 0.5, LDH ratio > 0.6, or LDH > 2/3 of the upper normal serum value) makes an exudate.<br> <b>Why pH and glucose decide drainage</b>: When bacteria invade the pleural space, neutrophils and bacteria consume glucose and produce lactate and CO2 through anaerobic glycolysis. The pleural pH falls below 7.20 and glucose below 60 mg/dL — the fluid is now <b>complicated</b> and loculates unless drained. Normal pH and glucose with a sterile Gram stain mean the inflammation is reactive, and antibiotics for the pneumonia are enough."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Uncomplicated parapneumonic (answer)</th><th>Empyema / complicated (closest distractor)</th></tr></thead><tbody> <tr><td>Appearance</td><td>Clear to slightly cloudy</td><td><b>Frank pus</b> or loculated</td></tr> <tr><td>pH / glucose</td><td>≥ 7.20 / ≥ 60 mg/dL</td><td>&lt; 7.20 / &lt; 60 mg/dL (bacterial metabolism)</td></tr> <tr><td>Gram stain, culture</td><td>Negative</td><td>Often positive</td></tr> <tr><td>Management</td><td>Antibiotics alone</td><td>Chest tube drainage ± fibrinolytics or surgery</td></tr> </tbody></table> Both are neutrophilic exudates next to pneumonia — the pH, glucose, and Gram stain separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A complicated effusion or empyema would be correct with frank pus or a positive Gram stain, or pH below 7.20 and glucose below 60 mg/dL.\n(C) Malignant effusion would be correct with a lymphocyte-predominant, often bloody exudate, weight loss, and malignant cells on cytology.\n(D) Tuberculous pleuritis would be correct with a lymphocytic exudate (often > 80% lymphocytes), high adenosine deaminase, and a subacute course.\n(E) Heart failure would be correct if the fluid were a transudate (protein ratio ≤ 0.5, LDH ratio ≤ 0.6), often bilateral with cardiomegaly."
+   },
+   {
+    "k": "함정",
+    "v": "Calling every effusion beside pneumonia an empyema — pH, glucose, and Gram stain decide whether drainage is needed."
+   },
+   {
+    "k": "학습목표",
+    "v": "Light 기준으로 삼출액을 확인하고 호중구 우세·정상 pH 와 포도당으로 단순 부폐렴삼출을 다른 삼출액과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 305: Disorders of the Pleura"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A neutrophilic exudate beside pneumonia with normal pH and glucose and a negative Gram stain is an uncomplicated parapneumonic effusion",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Empyema has pus or a positive Gram stain with pH < 7.20 and glucose < 60 mg/dL",
+   "steps": 2,
+   "chain": [
+    "Protein ratio 0.7 and LDH ratio 0.8 → exudate",
+    "Pneumonia + neutrophils + pH 7.38, normal glucose, negative Gram stain → uncomplicated parapneumonic effusion"
+   ],
+   "key": [
+    {
+     "item": "Pleural fluid/serum protein ratio is 0.7",
+     "why": "Light's criterion for exudate",
+     "also": []
+    },
+    {
+     "item": "right lower lobe consolidation",
+     "why": "The pneumonia the effusion accompanies",
+     "also": []
+    },
+    {
+     "item": "85% neutrophils",
+     "why": "Acute bacterial inflammation — not the lymphocytic exudate of TB or cancer",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Pleural fluid pH is 7.38",
+     "why": "Lowers the likelihood of a complicated effusion or empyema",
+     "also": []
+    },
+    {
+     "item": "glucose is 92 mg/dL",
+     "why": "Normal glucose — little bacterial consumption",
+     "also": []
+    },
+    {
+     "item": "Gram stain shows no organisms",
+     "why": "Lowers the likelihood of empyema",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "pulse is 104/min",
+     "why": "Reflects the pneumonia; does not classify the fluid",
+     "also": []
+    }
+   ],
+   "summary": "Exudate by Light's criteria next to a pneumonia, neutrophil-predominant, with normal pH and glucose and a negative Gram stain — an uncomplicated parapneumonic effusion.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the aspirate were frank pus or the pH were below 7.20 with glucose under 60 mg/dL, it would be an empyema needing drainage"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0528",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·산과·혈액·감염·부인과·소아청소년·피부)",
+  "subtopic": "병리 — 뇌경색 3주 뒤 부검 뇌의 괴사 형태",
+  "type": "병리 — 뇌경색 3주 뒤 부검 뇌의 괴사 형태",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-03",
+  "vignette": "72세 남자가 3주 전 갑자기 생긴 오른쪽 반신마비와 실어증으로 입원해 치료받던 중 흡인폐렴으로 사망하였다. 고혈압과 심방세동이 있었고 항응고제를 먹지 않았다. 입원 당시 머리 CT 에서 출혈은 없었다. 부검에서 왼쪽 중대뇌동맥 영역의 뇌 조직이 물러지고 일부가 녹아 없어져 있었으며, 현미경으로는 지질을 탐식한 거품 모양 대식세포가 가득하고 가장자리에 반응성 성상세포가 늘어 있었다.",
+  "question": "이 병변의 괴사 형태로 가장 적절한 것은?",
+  "options": [
+   "지방괴사",
+   "섬유소모양괴사",
+   "액화괴사",
+   "응고괴사",
+   "치즈괴사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 뇌경색 부위가 물러지고 녹아 없어졌으며, 지질을 먹은 거품 대식세포가 가득하고 가장자리에 성상세포가 반응한 것은 뇌 허혈의 전형인 액화괴사다. 뇌는 결합조직 기질이 적고 지질이 많아, 허혈로 죽은 세포가 단백 변성으로 굳기보다 효소에 소화되어 액체가 되고 결국 낭성 공동이 남는다.\n- 원리: <b>왜 같은 허혈인데 뇌만 녹는가</b>: 심장·신장·비장처럼 대부분의 고형 장기는 허혈 직후 세포 안 산성화로 구조 단백과 효소가 함께 <b>변성</b>된다. 효소가 먼저 망가지므로 세포는 분해되지 않고 윤곽을 유지한 채 굳는다 — 응고괴사다. 뇌는 세포 사이를 받치는 결합조직(교원섬유) 기질이 거의 없고 지질이 많다. 죽은 신경·신경교세포는 자신의 리소좀 효소와 몰려든 미세아교세포·대식세포의 효소에 <b>소화</b>되어 액체가 된다.<br> <b>시간 순서</b>: 12~24시간 붉은 신경세포 → 며칠 사이 호중구, 이어 미세아교세포·대식세포가 몰려 지질(미엘린)을 먹어 거품 모양이 된다(1~2주 이후 뚜렷) → 수 주~수개월 뒤 조직이 빠져나간 자리에 반응성 성상세포가 둘러싼 <b>낭성 공동</b>이 남는다. 이 증례의 3주는 거품 대식세포가 가득한 시기다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">액화괴사(정답)</th><th>응고괴사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대표 장기</td><td><b>뇌의 허혈</b>, 세균·진균 고름집</td><td>심장·신장·비장의 허혈(뇌 제외)</td></tr> <tr><td>우세한 과정</td><td>효소 분해(소화)</td><td>단백 변성 — 효소도 변성돼 분해가 늦다</td></tr> <tr><td>육안·현미경</td><td>물러지고 녹아 공동, 거품 대식세포</td><td>윤곽이 남은 호산성 「유령 세포」</td></tr> </tbody></table> 허혈이라는 원인이 같아도 장기가 다르면 괴사 형태가 다르다 — 「뇌의 허혈 = 액화」는 예외로 외운다.\n- 오답 이유:\n  - ① 지방괴사는 급성 췌장염의 리파아제나 유방 외상으로 지방이 분해되어 칼슘 비누(백악 반점)를 만들 때 정답이다.\n  - ② 섬유소모양괴사는 악성 고혈압·혈관염에서 혈관벽에 섬유소와 면역복합체가 밝은 분홍색으로 침착할 때 정답이다.\n  - ④ 응고괴사는 같은 허혈이라도 심근·신장처럼 기질이 단단한 장기에서 세포 윤곽이 남은 채 굳어 있을 때 정답이 된다.\n  - ⑤ 치즈괴사는 결핵·진균 감염에서 육아종 가운데가 치즈처럼 무른 무구조 물질로 바뀌었을 때 정답이다.\n- 함정: 허혈이면 모두 응고괴사라고 외우는 것 — 뇌는 허혈에서도 액화괴사다.\n- 학습목표: 뇌의 허혈 손상이 단백 변성보다 효소 분해가 우세한 액화괴사로 진행해 결국 낭성 공동을 남기는 이유를 설명한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 2: Cell Injury, Cell Death, and Adaptations · Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 28: The Central Nervous System",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "뇌경색 부위가 물러지고 녹아 없어졌으며, 지질을 먹은 거품 대식세포가 가득하고 가장자리에 성상세포가 반응한 것은 뇌 허혈의 전형인 액화괴사다. 뇌는 결합조직 기질이 적고 지질이 많아, 허혈로 죽은 세포가 단백 변성으로 굳기보다 효소에 소화되어 액체가 되고 결국 낭성 공동이 남는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 같은 허혈인데 뇌만 녹는가</b>: 심장·신장·비장처럼 대부분의 고형 장기는 허혈 직후 세포 안 산성화로 구조 단백과 효소가 함께 <b>변성</b>된다. 효소가 먼저 망가지므로 세포는 분해되지 않고 윤곽을 유지한 채 굳는다 — 응고괴사다. 뇌는 세포 사이를 받치는 결합조직(교원섬유) 기질이 거의 없고 지질이 많다. 죽은 신경·신경교세포는 자신의 리소좀 효소와 몰려든 미세아교세포·대식세포의 효소에 <b>소화</b>되어 액체가 된다.<br> <b>시간 순서</b>: 12~24시간 붉은 신경세포 → 며칠 사이 호중구, 이어 미세아교세포·대식세포가 몰려 지질(미엘린)을 먹어 거품 모양이 된다(1~2주 이후 뚜렷) → 수 주~수개월 뒤 조직이 빠져나간 자리에 반응성 성상세포가 둘러싼 <b>낭성 공동</b>이 남는다. 이 증례의 3주는 거품 대식세포가 가득한 시기다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">액화괴사(정답)</th><th>응고괴사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대표 장기</td><td><b>뇌의 허혈</b>, 세균·진균 고름집</td><td>심장·신장·비장의 허혈(뇌 제외)</td></tr> <tr><td>우세한 과정</td><td>효소 분해(소화)</td><td>단백 변성 — 효소도 변성돼 분해가 늦다</td></tr> <tr><td>육안·현미경</td><td>물러지고 녹아 공동, 거품 대식세포</td><td>윤곽이 남은 호산성 「유령 세포」</td></tr> </tbody></table> 허혈이라는 원인이 같아도 장기가 다르면 괴사 형태가 다르다 — 「뇌의 허혈 = 액화」는 예외로 외운다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 지방괴사는 급성 췌장염의 리파아제나 유방 외상으로 지방이 분해되어 칼슘 비누(백악 반점)를 만들 때 정답이다.\n② 섬유소모양괴사는 악성 고혈압·혈관염에서 혈관벽에 섬유소와 면역복합체가 밝은 분홍색으로 침착할 때 정답이다.\n④ 응고괴사는 같은 허혈이라도 심근·신장처럼 기질이 단단한 장기에서 세포 윤곽이 남은 채 굳어 있을 때 정답이 된다.\n⑤ 치즈괴사는 결핵·진균 감염에서 육아종 가운데가 치즈처럼 무른 무구조 물질로 바뀌었을 때 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "허혈이면 모두 응고괴사라고 외우는 것 — 뇌는 허혈에서도 액화괴사다."
+   },
+   {
+    "k": "학습목표",
+    "v": "뇌의 허혈 손상이 단백 변성보다 효소 분해가 우세한 액화괴사로 진행해 결국 낭성 공동을 남기는 이유를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 2: Cell Injury, Cell Death, and Adaptations · Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2021. Chapter 28: The Central Nervous System"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "뇌의 허혈 부위가 녹아 없어지고 거품 대식세포가 가득한 것은 액화괴사다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "응고괴사는 세포 윤곽이 남은 채 굳는다 — 이 병변은 녹아 없어졌다",
+   "steps": 2,
+   "chain": [
+    "중대뇌동맥 영역 경색(허혈) + 뇌 조직이 물러지고 녹아 없어짐",
+    "지질을 탐식한 거품 대식세포 → 효소 분해가 우세한 액화괴사"
+   ],
+   "key": [
+    {
+     "item": "뇌 조직이 물러지고 일부가 녹아 없어져 있었으며",
+     "why": "액화괴사의 육안 소견",
+     "also": []
+    },
+    {
+     "item": "지질을 탐식한 거품 모양 대식세포가 가득하고",
+     "why": "미엘린을 먹은 대식세포 — 뇌 경색 1~3주의 현미경 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "머리 CT 에서 출혈은 없었다",
+     "why": "허혈성 뇌경색임을 받쳐 주지만 괴사 형태를 정하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "심방세동",
+     "why": "색전성 경색의 원인 — 괴사 형태와는 무관",
+     "also": []
+    }
+   ],
+   "summary": "뇌경색 3주 뒤 병변이 녹아 없어지고 거품 대식세포가 가득하다. 뇌의 허혈은 액화괴사다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 시기의 심근경색 부검이라면 세포 윤곽이 남은 응고괴사"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261103T202308Z_일일영상_2026-11-04_8units_8q_66897916",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0527",
   "exam": "imaging",
   "style": "usmle_style",
