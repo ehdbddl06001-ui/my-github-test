@@ -5,6 +5,8 @@
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--bg); color:var(--ink);
+  /* 설치한 앱(아이폰·아이패드 홈 화면)은 상태 막대가 화면 위에 겹친다(black-translucent) — 그 아래로 내려 위 탭이 눌리게(2026-11-03) */
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",
     "Noto Sans KR",Roboto,sans-serif; line-height:1.6;
 }
@@ -313,7 +315,7 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
 /* 확대 보기(핀치·드래그) */
 .zoom{position:fixed; inset:0; z-index:1000; background:rgba(4,8,14,.96); display:flex; align-items:center; justify-content:center; touch-action:none; overscroll-behavior:contain}
 .zoom img{max-width:100vw; max-height:100vh; transform-origin:center center; will-change:transform; user-select:none; -webkit-user-drag:none; background:#fff}
-.zoom .zclose{position:fixed; top:10px; right:10px; z-index:1001; font-size:1.2rem; padding:8px 12px; background:rgba(24,37,52,.9)}
+.zoom .zclose{position:fixed; top:calc(10px + env(safe-area-inset-top)); right:calc(10px + env(safe-area-inset-right)); z-index:1001; font-size:1.2rem; padding:8px 12px; background:rgba(24,37,52,.9)}
 .zoom .zhint{position:fixed; bottom:12px; left:0; right:0; text-align:center; color:var(--muted); font-size:.82rem; pointer-events:none}
 body.noscroll{overflow:hidden}
 /* 동기화 표시 */
@@ -328,14 +330,16 @@ button.small{padding:6px 10px; font-size:.85rem}
 .syncopts summary{cursor:pointer; font-size:.85rem}
 .syncopts input{width:100%; margin-top:6px; background:#0e1826; color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:.95rem}
 /* PWA 설치 버튼·토스트 */
-.pwa-install{position:fixed; right:14px; bottom:14px; z-index:900; background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; box-shadow:0 6px 20px rgba(0,0,0,.35)}
-.pwa-toast{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:950; display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+/* 빠르게 두 번 누르면 확대로 먹히지 않게 — 탭은 곧바로 클릭으로(2026-11-03) */
+a,button,select,label,summary,input,.opt,.chip{touch-action:manipulation}
+.pwa-install{position:fixed; right:calc(14px + env(safe-area-inset-right)); bottom:calc(14px + env(safe-area-inset-bottom)); z-index:900; background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.pwa-toast{position:fixed; left:50%; bottom:calc(18px + env(safe-area-inset-bottom)); transform:translateX(-50%); z-index:950; display:flex; gap:10px; align-items:center; flex-wrap:wrap;
   background:#182534; border:1px solid var(--accent); border-radius:12px; padding:10px 14px; font-size:.92rem; box-shadow:0 6px 20px rgba(0,0,0,.4);
   width:max-content; max-width:min(92vw, 34rem)}
 /* 안내 문장이 버튼에 밀려 한 글자씩 세로로 쪼개지지 않게 — 글은 늘어나고 버튼은 줄바꿈으로 내려간다 */
 .pwa-toast>span{flex:1 1 14rem; min-width:0}
 /* 안내 토스트와 「앱으로 설치」 버튼이 겹치지 않게 — 버튼이 있을 때만 토스트를 위로 올린다(토스트가 뒤에 붙는다) */
-#pwaInstall ~ .pwa-toast{bottom:64px}
+#pwaInstall ~ .pwa-toast{bottom:calc(64px + env(safe-area-inset-bottom))}
 .pwa-toast button{padding:6px 10px; font-size:.85rem}
 .pwa-toast .x{background:none; border:none; color:var(--muted); font-size:1rem; padding:2px 6px}
 /* 좁은 화면(핸드폰) */

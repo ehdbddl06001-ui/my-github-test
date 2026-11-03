@@ -4,6 +4,8 @@
      그 신호가 없는 브라우저(아이폰·아이패드 Safari, 카카오톡 등 앱 안 브라우저)는 그 기기의 설치 방법을 안내한다
      — 크롬 말고는 설치 프롬프트 자체가 없어서 「설치가 안 뜬다」로 보이기 때문이다(2026-09-20).
    - 서비스워커가 새 문항 번들을 받아오면 「새 자료 · 새로고침」 토스트
+   - 설치한 앱은 새로고침 버튼이 없고, 닫지 않으면 며칠 전 화면이 그대로 다시 열린다 → 화면에 돌아올 때마다
+     새 배포를 확인하고, 막 연 참이면 바로 새로 연다(2026-11-03 「앱에서 눌러도 제대로 안 눌린다」)
    file:// 로 열었을 때는 아무것도 하지 않는다(로컬 미리보기 호환). */
 (function () {
   "use strict";
@@ -80,12 +82,26 @@
   });
   // 새 서비스워커가 이 페이지를 넘겨받으면(sw.js 배포) 한 번만 새로고침해 새 캐시 전략으로 번들을 다시 받는다.
   // 첫 설치(이전 컨트롤러가 없던 경우)는 새로고침하지 않는다 — 이미 네트워크에서 받은 최신 페이지다.
+  // 다만 이미 누르며 쓰는 중이면 손가락 밑에서 화면이 바뀌지 않게 토스트로 묻는다(열거나 돌아온 지 5초 안이면 바로).
   var hadController = !!navigator.serviceWorker.controller;
+  var shownAt = Date.now();
   navigator.serviceWorker.addEventListener("controllerchange", function () {
     if (reloading || !hadController) { hadController = true; return; }
-    reloading = true;
-    location.reload();
+    if (Date.now() - shownAt < 5000) { reloading = true; location.reload(); return; }
+    toast("새 버전이 준비됐습니다.", "새로고침", function () { reloading = true; location.reload(); });
   });
+
+  // 화면에 돌아올 때(앱 전환·잠금 해제·iOS 뒤로 가기 캐시) 새 sw.js 가 있는지 확인 — 1분에 한 번까지
+  var checkedAt = 0;
+  function checkUpdate() {
+    shownAt = Date.now();
+    if (shownAt - checkedAt < 60000) return;
+    checkedAt = shownAt;
+    navigator.serviceWorker.getRegistration().then(function (reg) { if (reg) return reg.update(); })
+      .catch(function () { /* 오프라인 — 무시 */ });
+  }
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) checkUpdate(); });
+  window.addEventListener("pageshow", function (e) { if (e.persisted) checkUpdate(); });
 
   window.addEventListener("load", function () {
     navigator.serviceWorker.register("./sw.js").catch(function (err) {
