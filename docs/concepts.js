@@ -23164,7 +23164,8 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "imaging-2026-0072",
-   "kmle-2026-1467"
+   "kmle-2026-1467",
+   "kmle-2026-1717"
   ],
   "hasErrors": false
  },
@@ -65351,7 +65352,8 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "imaging-2026-0263",
    "kmle-2026-1157",
-   "kmle-2026-1463"
+   "kmle-2026-1463",
+   "kmle-2026-1729"
   ],
   "hasErrors": false
  },
