@@ -8,7 +8,9 @@ CLAUDE.md 와 .claude/skills/ 가 자동 로드되므로 그걸 따르게만 한
 
 - 세부 규칙(frontmatter, step·exam_subject, 중복 방지, ID 규칙, 저장 경로, 검증,
   색인, 웹 번들 재생성, 커밋)은 전부 CLAUDE.md 와 .claude/skills/daily-run 을 따른다.
-- 오늘 목표: USMLE 6문항 = Step 1 3문항 + Step 2 3문항. 과목을 회전시키고,
+- 오늘 목표: USMLE 12문항 = Step 1 6문항 + Step 2 6문항 — 과목마다 1문항
+  (Step 1: Pharmacology·Immunology·Biochemistry·Microbiology·Pathology·Physiology,
+  Step 2: Internal Medicine·Surgery·Neurology·Pediatrics·Obstetrics & Gynecology·Psychiatry).
   `recent_topics('usmle', 14)` 로 나온 최근 주제는 제외한다.
 - 저장: content/usmle/{id}.md  (id는 state.next_id('usmle')).
 - 완료 후: `python pipelines/indexer.py --check` → `python pipelines/indexer.py`
@@ -17,5 +19,6 @@ CLAUDE.md 와 .claude/skills/ 가 자동 로드되므로 그걸 따르게만 한
 --------------------------------------------------------------------
 
 ## 참고
+- 2026-11-03 사용자 요청으로 6 → 12문항(과목마다 1개)으로 늘렸다. 세트 구성 규칙(3단계 40 %↑ 등)은 12문항 전체에 적용된다.
 - 문항 PR 은 병합이 늦으면 `next_id()` 가 같은 ID 를 다시 발급한다 — 문항은 main 으로 바로 올리고, 사람 검토는 `review_status` 로 표시한다.
 - 규칙을 프롬프트에 복사하지 않는다. 규칙이 여러 벌로 갈라지면 관리가 무너진다.
