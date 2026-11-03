@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4346,
+  "total": 4349,
   "byType": {
    "kmle": 1696,
    "usmle": 228,
    "paper": 888,
-   "imaging": 534,
+   "imaging": 537,
    "concept": 137,
    "anatomy": 846,
    "ailab": 14,
@@ -39,7 +39,7 @@ window.MEDKOS_INDEX = {
    "Hematology": 103,
    "Laboratory Medicine": 91,
    "산부인과": 73,
-   "순환기": 54,
+   "순환기": 57,
    "호흡기": 36,
    "소화기": 33,
    "소아과": 29,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3054,
+   "high": 3057,
    "medium": 1239,
    "low": 53
   },
@@ -882,6 +882,63 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-03_paper-2026-0885_tavr_in_patients_with_moderate_aortic_stenosis_with_at_risk_.md",
    "snippet": "Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI Th",
    "text": "Cardiology scraped pubmed PubMed / The New England journal of medicine Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMoa2607326 · PMID: 42970708 https://pubmed.ncbi.nlm.nih.gov/42970708/ Abstract BACKGROUND: For patients with moderate aortic stenosis, current guidelines recommend clinical surveillance with echocardiographic assessment every 1 or 2 years. Whether transcatheter aortic valve replacement (TAVR) will improve outcomes in these patients remains unknown. METHODS: We conducted an international, open label, randomized trial to evaluate whether TAVR will result in better outcomes than clinical surveillance among patients with moderate aortic stenosis with at least one at risk feature (i.e., a symptom or structural or functional abnormality that has been shown to be associated with faster disease progression or adverse cardiovascular outcomes). The patients were assigned in a 1:1 ratio to undergo transfemoral TAVR with a balloon expandable valve or clinical surveillance. The primary effectiveness end point was a composite of death from any cause or a heart failure event with or without hospitalization at 2 years. Superiority testing was performed in the intention to treat population. RESULTS: A total of 744 patients underwent randomization: 373 patients were assigned to the TAVR group and 371 to the clinical surveillance group. The mean age of patients was 78 years, 39.1% were women, and 45.6% were at low surgical risk. The mean aortic valve area was 1.2 cm2, and the mean aortic valve peak velocity was 3.3 m per second. At 2 years, the Kaplan Meier estimate of the percentage of patients with a primary effectiveness end point event was 16.7% in the TAVR group and 23.9% in the clinical surveillance group (risk difference, 7.2 percentage points; 95% confidence interval, 13.1 to 1.3; P = 0.02 for superiority). The Kaplan Meier estimate of the percentage of patients who died from any cause was 8.4% in the TAVR group and 7.3% in the clinical surveillance group; the estimates for a heart failure event were 10.8% and 19.0%, respectively. The incidence of procedure related adverse events did not differ meaningfully between the patients in the TAVR group and those in the clinical surveillance group who underwent aortic valve replacement. CONCLUSIONS: Among patients with moderate aortic stenosis and at risk features, a strategy of TAVR was superior to clinical surveillance in lowering the incidence of death or a heart failure event at 2 years. (Funded by Edwards Lifesciences; PROGRESS ClinicalTrials.gov number, NCT04889872.). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0538",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 가슴 답답함으로 온 여성의 V1~V3 ST 상승",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0538.md",
+   "snippet": "A 67 year old woman comes to the emergency department because of chest tightness for 2 hours that began after climbing stairs and has now eased. She has hypertension and was told years ago that her electrocardiogram was abnormal. Blood pres",
+   "text": "순환기 심전도 판독 — 가슴 답답함으로 온 여성의 V1~V3 ST 상승 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce A 67 year old woman comes to the emergency department because of chest tightness for 2 hours that began after climbing stairs and has now eased. She has hypertension and was told years ago that her electrocardiogram was abnormal. Blood pressure is 142/84 mm Hg and pulse is 90/min. The lungs are clear. A prior ECG from 2 years ago is not available. The first high sensitivity troponin is within normal limits. An ECG is shown. Which of the following best explains the ST segment elevation in leads V1 through V3? A. Acute pericarditis with diffuse ST elevation B. Brugada pattern from a sodium channel disorder C. Repolarization change from left bundle branch block D. Acute anterior ST elevation myocardial infarction E. Left ventricular aneurysm after old infarction"
+  },
+  {
+   "id": "imaging-2026-0537",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 하루 몇 번 두근거림을 느끼는 여성의 정상 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0537.md",
+   "snippet": "61세 여자가 두 달 전부터 하루 두세 번, 몇 분 동안 가슴이 빠르게 뛰는 느낌이 들어 왔다. 갑자기 시작해 갑자기 멈추는지는 잘 모르겠다고 한다. 실신·흉통·호흡곤란은 없다. 고혈압과 당뇨병은 없고 커피는 마시지 않는다. 진료실에서는 두근거림이 없다. 혈압 118/72 mmHg, 맥박 70회/분이고 심잡음은 없다. 혈색소, 전해질, 갑상샘자극호르몬은 정상이다. 진료실에서 찍은 12유도 심전도는 그림과 같다. 다음 처치로 가",
+   "text": "순환기 심전도 처치 — 하루 몇 번 두근거림을 느끼는 여성의 정상 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce 61세 여자가 두 달 전부터 하루 두세 번, 몇 분 동안 가슴이 빠르게 뛰는 느낌이 들어 왔다. 갑자기 시작해 갑자기 멈추는지는 잘 모르겠다고 한다. 실신·흉통·호흡곤란은 없다. 고혈압과 당뇨병은 없고 커피는 마시지 않는다. 진료실에서는 두근거림이 없다. 혈압 118/72 mmHg, 맥박 70회/분이고 심잡음은 없다. 혈색소, 전해질, 갑상샘자극호르몬은 정상이다. 진료실에서 찍은 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 24~48시간 활동중 심전도 감시 B. 침습적 심장 전기생리검사 C. 아미오다론 경구 투여 시작 D. 관상동맥조영술 E. 증상이 없으니 추가 검사 없이 종결"
+  },
+  {
+   "id": "imaging-2026-0536",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 몇 달 전 가슴 통증을 그냥 넘긴 남성의 수술 전 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+   "confidence": "high",
+   "date": "2026-11-03",
+   "path": "content/imaging/2026/imaging-2026-0536.md",
+   "snippet": "66세 남자가 서혜부 탈장 수술 전 검사를 위해 왔다. 3개월 전 30분 넘게 가슴을 짓누르는 통증과 식은땀이 있었으나 저절로 나아져 병원에 가지 않았다. 지금은 가슴 통증이 없고 계단을 두 층 오르면 약간 숨이 차다. 당뇨병과 흡연력이 있다. 혈압 132/80 mmHg, 맥박 70회/분이고 심잡음은 없다. 고감도 트로포닌 I 는 정상 범위이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 정상 심",
+   "text": "순환기 심전도 판독 — 몇 달 전 가슴 통증을 그냥 넘긴 남성의 수술 전 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce 66세 남자가 서혜부 탈장 수술 전 검사를 위해 왔다. 3개월 전 30분 넘게 가슴을 짓누르는 통증과 식은땀이 있었으나 저절로 나아져 병원에 가지 않았다. 지금은 가슴 통증이 없고 계단을 두 층 오르면 약간 숨이 차다. 당뇨병과 흡연력이 있다. 혈압 132/80 mmHg, 맥박 70회/분이고 심잡음은 없다. 고감도 트로포닌 I 는 정상 범위이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 정상 심전도 B. 오래된 전벽 심근경색 C. 급성 전벽 ST 분절 상승 심근경색 D. 오래된 하벽 심근경색 E. 완전 좌각차단"
   },
   {
    "id": "imaging-2026-0535",

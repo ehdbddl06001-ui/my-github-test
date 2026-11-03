@@ -2,6 +2,406 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0538",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 가슴 답답함으로 온 여성의 V1~V3 ST 상승",
+  "type": "심전도 판독 — 가슴 답답함으로 온 여성의 V1~V3 ST 상승",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-03",
+  "vignette": "A 67-year-old woman comes to the emergency department because of chest tightness for 2 hours that began after climbing stairs and has now eased. She has hypertension and was told years ago that her electrocardiogram was abnormal. Blood pressure is 142/84 mm Hg and pulse is 90/min. The lungs are clear. A prior ECG from 2 years ago is not available. The first high-sensitivity troponin is within normal limits. An ECG is shown.",
+  "question": "Which of the following best explains the ST-segment elevation in leads V1 through V3?",
+  "options": [
+   "Acute pericarditis with diffuse ST elevation",
+   "Brugada pattern from a sodium channel disorder",
+   "Repolarization change from left bundle branch block",
+   "Acute anterior ST-elevation myocardial infarction",
+   "Left ventricular aneurysm after old infarction"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The QRS is about 0.12 s wide, with deep QS/rS complexes in V1-V3, broad notched R waves in I and aVL, and left axis deviation: complete left bundle branch block. In V1-V3 the ST segment rises opposite to the predominantly negative QRS and is less than 5 mm — the expected discordant, secondary repolarization change. No concordant ST elevation or concordant ST depression in V1-V3 is present, so the Sgarbossa criteria for acute infarction are not met.\n- 원리: <b>Why LBBB elevates ST in V1-V3</b>: When the left bundle is blocked, the left ventricle is activated slowly from right to left through myocardium. Repolarization follows the same abnormal order, so the ST segment and T wave point opposite to the main QRS deflection. In V1-V3 the QRS is mostly negative (QS/rS), so the ST is elevated; in I, aVL, and V6 the QRS is positive, so the ST is depressed. This \"appropriate discordance\" is expected and is not ischemia.<br> <b>How infarction is recognized despite LBBB</b>: Sgarbossa criteria look for what discordance cannot explain: <b>concordant</b> ST elevation ≥ 1 mm in a lead with a positive QRS, concordant ST depression ≥ 1 mm in V1-V3, or (modified Smith rule) discordant ST elevation that is ≥ 25% of the preceding S-wave depth.<br> <b>Why it matters</b>: A new LBBB alone no longer triggers emergency reperfusion; decisions rest on these criteria, the clinical picture, and serial troponins.\n- 비교: <table><thead><tr><th style=\"width:24%\">Finding</th><th style=\"width:38%\">LBBB repolarization (answer)</th><th>Acute anterior STEMI with LBBB (closest distractor)</th></tr></thead><tbody> <tr><td>Direction of ST in V1-V3</td><td>Opposite to the negative QRS (discordant)</td><td><b>Concordant ST depression</b>, or disproportionate discordant elevation</td></tr> <tr><td>Size</td><td>Less than 5 mm, proportional to the S wave</td><td>≥ 25% of the S-wave depth (Smith)</td></tr> <tr><td>Leads with positive QRS</td><td>ST depressed</td><td>Concordant ST elevation ≥ 1 mm</td></tr> <tr><td>Troponin</td><td>Normal</td><td>Rising</td></tr> </tbody></table> In LBBB, the question is never \"is there ST elevation?\" but \"is it in the expected direction and proportion?\"\n- 오답 이유:\n  - (A) Acute pericarditis would be correct with diffuse concave ST elevation in many limb and precordial leads, PR depression, and a narrow QRS.\n  - (B) Brugada pattern would be correct with coved ST elevation ≥ 2 mm and T-wave inversion in V1-V2 with an RBBB-like, not LBBB, morphology.\n  - (D) Acute anterior STEMI would be correct if Sgarbossa criteria were met — concordant ST changes or ST elevation ≥ 25% of the S wave — with rising troponin.\n  - (E) A left ventricular aneurysm would be correct with a narrow QRS, QS waves, and persistent ST elevation weeks after an anterior infarction.\n- 함정: Reading the discordant ST elevation of LBBB as an anterior STEMI — check whether the ST deviation is concordant or disproportionate (Sgarbossa).\n- 학습목표: 좌각차단에서 V1~V3 의 QRS 와 반대 방향 ST 상승을 이차성 재분극 변화로 해석하고 Sgarbossa 기준으로 급성 경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11135 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The QRS is about 0.12 s wide, with deep QS/rS complexes in V1-V3, broad notched R waves in I and aVL, and left axis deviation: complete left bundle branch block. In V1-V3 the ST segment rises opposite to the predominantly negative QRS and is less than 5 mm — the expected discordant, secondary repolarization change. No concordant ST elevation or concordant ST depression in V1-V3 is present, so the Sgarbossa criteria for acute infarction are not met."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why LBBB elevates ST in V1-V3</b>: When the left bundle is blocked, the left ventricle is activated slowly from right to left through myocardium. Repolarization follows the same abnormal order, so the ST segment and T wave point opposite to the main QRS deflection. In V1-V3 the QRS is mostly negative (QS/rS), so the ST is elevated; in I, aVL, and V6 the QRS is positive, so the ST is depressed. This \"appropriate discordance\" is expected and is not ischemia.<br> <b>How infarction is recognized despite LBBB</b>: Sgarbossa criteria look for what discordance cannot explain: <b>concordant</b> ST elevation ≥ 1 mm in a lead with a positive QRS, concordant ST depression ≥ 1 mm in V1-V3, or (modified Smith rule) discordant ST elevation that is ≥ 25% of the preceding S-wave depth.<br> <b>Why it matters</b>: A new LBBB alone no longer triggers emergency reperfusion; decisions rest on these criteria, the clinical picture, and serial troponins."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Finding</th><th style=\"width:38%\">LBBB repolarization (answer)</th><th>Acute anterior STEMI with LBBB (closest distractor)</th></tr></thead><tbody> <tr><td>Direction of ST in V1-V3</td><td>Opposite to the negative QRS (discordant)</td><td><b>Concordant ST depression</b>, or disproportionate discordant elevation</td></tr> <tr><td>Size</td><td>Less than 5 mm, proportional to the S wave</td><td>≥ 25% of the S-wave depth (Smith)</td></tr> <tr><td>Leads with positive QRS</td><td>ST depressed</td><td>Concordant ST elevation ≥ 1 mm</td></tr> <tr><td>Troponin</td><td>Normal</td><td>Rising</td></tr> </tbody></table> In LBBB, the question is never \"is there ST elevation?\" but \"is it in the expected direction and proportion?\""
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Acute pericarditis would be correct with diffuse concave ST elevation in many limb and precordial leads, PR depression, and a narrow QRS.\n(B) Brugada pattern would be correct with coved ST elevation ≥ 2 mm and T-wave inversion in V1-V2 with an RBBB-like, not LBBB, morphology.\n(D) Acute anterior STEMI would be correct if Sgarbossa criteria were met — concordant ST changes or ST elevation ≥ 25% of the S wave — with rising troponin.\n(E) A left ventricular aneurysm would be correct with a narrow QRS, QS waves, and persistent ST elevation weeks after an anterior infarction."
+   },
+   {
+    "k": "함정",
+    "v": "Reading the discordant ST elevation of LBBB as an anterior STEMI — check whether the ST deviation is concordant or disproportionate (Sgarbossa)."
+   },
+   {
+    "k": "학습목표",
+    "v": "좌각차단에서 V1~V3 의 QRS 와 반대 방향 ST 상승을 이차성 재분극 변화로 해석하고 Sgarbossa 기준으로 급성 경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11135 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Wide QRS with QS in V1-V3 and broad notched R in I and aVL is LBBB, and ST elevation opposite to the QRS that is under 5 mm is its expected repolarization change",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "No concordant ST change and no disproportionate discordant elevation — Sgarbossa criteria are not met, and troponin is normal",
+   "steps": 3,
+   "chain": [
+    "영상: QRS about 0.12 s, QS/rS in V1-V3, broad notched R in I and aVL, left axis deviation → complete LBBB",
+    "영상: ST elevation in V1-V3 is opposite to the negative QRS and under 5 mm → appropriate discordance",
+    "No Sgarbossa criteria + first troponin normal → secondary repolarization change, not acute STEMI"
+   ],
+   "key": [
+    {
+     "item": "영상: QS/rS in V1-V3 with discordant ST elevation under 5 mm",
+     "why": "Expected LBBB repolarization",
+     "also": []
+    },
+    {
+     "item": "영상: broad notched R waves in I and aVL",
+     "why": "Left ventricular activation through myocardium — LBBB",
+     "also": []
+    },
+    {
+     "item": "was told years ago that her electrocardiogram was abnormal",
+     "why": "Suggests a long-standing conduction abnormality",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The first high-sensitivity troponin is within normal limits",
+     "why": "Lowers the likelihood of acute infarction; repeat testing still needed",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "A prior ECG from 2 years ago is not available",
+     "why": "Old vs new LBBB cannot be compared — judgment rests on Sgarbossa criteria",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has hypertension",
+     "why": "A common cause of LBBB — does not decide the interpretation",
+     "also": []
+    }
+   ],
+   "summary": "The ECG shows complete LBBB. The ST elevation in V1-V3 is discordant and proportionate, Sgarbossa criteria are absent, and troponin is normal — it is LBBB repolarization, not an anterior STEMI.",
+   "switch": {
+    "choice": "D",
+    "condition": "If V1-V3 showed concordant ST depression or ST elevation at least 25% of the S-wave depth with rising troponin, acute anterior infarction"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0538.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/11000/#files-panel",
+   "asset_id": "PTBXL-11135",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11135"
+  },
+  "run_id": "20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0537",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 하루 몇 번 두근거림을 느끼는 여성의 정상 심전도",
+  "type": "심전도 처치 — 하루 몇 번 두근거림을 느끼는 여성의 정상 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-03",
+  "vignette": "61세 여자가 두 달 전부터 하루 두세 번, 몇 분 동안 가슴이 빠르게 뛰는 느낌이 들어 왔다. 갑자기 시작해 갑자기 멈추는지는 잘 모르겠다고 한다. 실신·흉통·호흡곤란은 없다. 고혈압과 당뇨병은 없고 커피는 마시지 않는다. 진료실에서는 두근거림이 없다. 혈압 118/72 mmHg, 맥박 70회/분이고 심잡음은 없다. 혈색소, 전해질, 갑상샘자극호르몬은 정상이다. 진료실에서 찍은 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "24~48시간 활동중 심전도 감시",
+   "침습적 심장 전기생리검사",
+   "아미오다론 경구 투여 시작",
+   "관상동맥조영술",
+   "증상이 없으니 추가 검사 없이 종결"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 진료실 심전도는 동리듬 약 70회/분, PR 약 0.16 s, 좁은 QRS, 정상 축, 정상 R파 진행과 ST-T 로 정상이다 — 조기흥분(짧은 PR·델타파), 긴 QT, 방실차단 같은 바탕 이상도 없다. 그러나 증상이 없을 때 찍은 정상 심전도는 간헐적 부정맥을 배제하지 못한다. 하루 여러 번 생기는 두근거림이므로 그 시간 안에 증상과 리듬을 함께 잡을 24~48시간 활동중 심전도(홀터)가 다음 검사다.\n- 원리: <b>왜 정상 심전도로 끝내지 않는가</b>: 12유도 심전도는 약 10초의 기록이다. 발작성 상심실빈맥·심방세동·기외수축은 발작 사이에는 완전히 정상일 수 있다. 진단의 핵심은 <b>증상이 있는 순간의 리듬</b>을 기록해 증상과 맞추는 것이다(증상-리듬 상관).<br> <b>왜 감시 기간을 증상 빈도로 고르는가</b>: 매일 생기면 24~48시간 홀터로 충분히 잡힌다. 몇 주에 한 번이면 2~4주 사건 기록기·패치형 감시, 몇 달에 한 번(특히 실신)이면 삽입형 루프 기록기를 쓴다. 기록 기간이 증상 간격보다 짧으면 결과가 정상이어도 의미가 없다.<br> <b>정상 심전도가 주는 정보</b>: 그래도 이 기록은 쓸모가 있다 — 짧은 PR·델타파가 없어 WPW 증후군의 바탕이 보이지 않고, QT 가 정상이며, 구조적 심질환을 시사하는 Q파·비대·각차단이 없다. 위험 신호(실신·운동 중 증상·가족력 돌연사)가 없으므로 침습 검사나 약물을 먼저 시작할 이유가 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">증상 빈도</th><th style=\"width:38%\">24~48시간 홀터(정답)</th><th>전기생리검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>언제 쓰나</td><td><b>매일</b> 생기는 두근거림</td><td>기록된 빈맥의 기전 확인·절제술 계획, 또는 고위험 실신</td></tr> <tr><td>침습성</td><td>비침습</td><td>정맥으로 도관 삽입</td></tr> <tr><td>전제</td><td>리듬이 아직 기록되지 않음</td><td>비침습 기록으로 부정맥이 이미 잡혔거나 위험이 높음</td></tr> </tbody></table> 비침습 기록으로 증상과 리듬을 먼저 맞추고, 그 결과에 따라 전기생리검사·절제술로 간다.\n- 오답 이유:\n  - ② 전기생리검사는 홀터 등으로 발작성 상심실빈맥이 기록되어 절제술을 계획하거나 구조적 심질환 환자의 실신을 평가할 때 정답이 된다.\n  - ③ 아미오다론은 부정맥이 기록되어 종류가 확인되고 다른 치료가 맞지 않을 때 고려한다 — 리듬도 모른 채 독성이 많은 약을 쓰지 않는다.\n  - ④ 관상동맥조영술은 운동 때 흉통이 있거나 비침습 검사에서 허혈이 확인되었을 때 정답이다 — 이 환자는 흉통이 없다.\n  - ⑤ 추가 검사 없이 종결하는 것은 증상이 드물고 경미하며 기록으로 양성 기외수축임이 확인되었을 때 맞다 — 지금은 리듬이 기록되지 않았다.\n- 함정: 진료실 심전도가 정상이니 부정맥이 없다고 결론짓는 것 — 간헐적 증상은 증상이 있는 시간의 기록으로 진단한다.\n- 학습목표: 증상이 없을 때 찍은 정상 심전도로는 간헐적 두근거림을 배제할 수 없음을 알고 증상 빈도에 맞는 활동중 심전도 감시를 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 45: Palpitations\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 15105 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "진료실 심전도는 동리듬 약 70회/분, PR 약 0.16 s, 좁은 QRS, 정상 축, 정상 R파 진행과 ST-T 로 정상이다 — 조기흥분(짧은 PR·델타파), 긴 QT, 방실차단 같은 바탕 이상도 없다. 그러나 증상이 없을 때 찍은 정상 심전도는 간헐적 부정맥을 배제하지 못한다. 하루 여러 번 생기는 두근거림이므로 그 시간 안에 증상과 리듬을 함께 잡을 24~48시간 활동중 심전도(홀터)가 다음 검사다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 정상 심전도로 끝내지 않는가</b>: 12유도 심전도는 약 10초의 기록이다. 발작성 상심실빈맥·심방세동·기외수축은 발작 사이에는 완전히 정상일 수 있다. 진단의 핵심은 <b>증상이 있는 순간의 리듬</b>을 기록해 증상과 맞추는 것이다(증상-리듬 상관).<br> <b>왜 감시 기간을 증상 빈도로 고르는가</b>: 매일 생기면 24~48시간 홀터로 충분히 잡힌다. 몇 주에 한 번이면 2~4주 사건 기록기·패치형 감시, 몇 달에 한 번(특히 실신)이면 삽입형 루프 기록기를 쓴다. 기록 기간이 증상 간격보다 짧으면 결과가 정상이어도 의미가 없다.<br> <b>정상 심전도가 주는 정보</b>: 그래도 이 기록은 쓸모가 있다 — 짧은 PR·델타파가 없어 WPW 증후군의 바탕이 보이지 않고, QT 가 정상이며, 구조적 심질환을 시사하는 Q파·비대·각차단이 없다. 위험 신호(실신·운동 중 증상·가족력 돌연사)가 없으므로 침습 검사나 약물을 먼저 시작할 이유가 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">증상 빈도</th><th style=\"width:38%\">24~48시간 홀터(정답)</th><th>전기생리검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>언제 쓰나</td><td><b>매일</b> 생기는 두근거림</td><td>기록된 빈맥의 기전 확인·절제술 계획, 또는 고위험 실신</td></tr> <tr><td>침습성</td><td>비침습</td><td>정맥으로 도관 삽입</td></tr> <tr><td>전제</td><td>리듬이 아직 기록되지 않음</td><td>비침습 기록으로 부정맥이 이미 잡혔거나 위험이 높음</td></tr> </tbody></table> 비침습 기록으로 증상과 리듬을 먼저 맞추고, 그 결과에 따라 전기생리검사·절제술로 간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 전기생리검사는 홀터 등으로 발작성 상심실빈맥이 기록되어 절제술을 계획하거나 구조적 심질환 환자의 실신을 평가할 때 정답이 된다.\n③ 아미오다론은 부정맥이 기록되어 종류가 확인되고 다른 치료가 맞지 않을 때 고려한다 — 리듬도 모른 채 독성이 많은 약을 쓰지 않는다.\n④ 관상동맥조영술은 운동 때 흉통이 있거나 비침습 검사에서 허혈이 확인되었을 때 정답이다 — 이 환자는 흉통이 없다.\n⑤ 추가 검사 없이 종결하는 것은 증상이 드물고 경미하며 기록으로 양성 기외수축임이 확인되었을 때 맞다 — 지금은 리듬이 기록되지 않았다."
+   },
+   {
+    "k": "함정",
+    "v": "진료실 심전도가 정상이니 부정맥이 없다고 결론짓는 것 — 간헐적 증상은 증상이 있는 시간의 기록으로 진단한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상이 없을 때 찍은 정상 심전도로는 간헐적 두근거림을 배제할 수 없음을 알고 증상 빈도에 맞는 활동중 심전도 감시를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 45: Palpitations ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 15105 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "하루 여러 번 생기는 두근거림에서 진료실 심전도가 정상이면 증상 시점의 리듬을 잡을 24~48시간 활동중 심전도 감시가 다음이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "아직 부정맥이 기록되지 않았고 실신·구조적 심질환 같은 고위험 신호가 없다 — 침습 검사가 먼저가 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: 동리듬, PR 약 0.16 s(델타파 없음), 좁은 QRS, 정상 축·ST-T → 정상 심전도",
+    "증상이 없을 때의 정상 심전도는 간헐적 부정맥을 배제하지 못한다",
+    "증상이 매일 생긴다 → 24~48시간 홀터로 증상-리듬 상관을 본다"
+   ],
+   "key": [
+    {
+     "item": "영상: 동리듬, PR 약 0.16 s, 델타파 없음, 정상 QT·ST-T",
+     "why": "바탕 이상 없는 정상 기록",
+     "also": []
+    },
+    {
+     "item": "진료실에서는 두근거림이 없다",
+     "why": "증상 없는 시점의 기록이라 부정맥을 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "실신·흉통·호흡곤란은 없다",
+     "why": "고위험 부정맥·허혈 가능성을 낮춘다 — 침습 검사가 먼저가 아니다",
+     "also": []
+    },
+    {
+     "item": "갑상샘자극호르몬은 정상",
+     "why": "갑상샘중독증에 의한 빈맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "하루 두세 번, 몇 분 동안",
+     "why": "매일 생기므로 24~48시간 감시로 잡힌다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "커피는 마시지 않는다",
+     "why": "흔한 유발 요인이 없다는 배경 — 처치를 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "진료실 심전도는 정상이지만 증상이 없을 때 찍은 것이다. 하루 여러 번 생기는 두근거림이므로 24~48시간 홀터로 증상과 리듬을 맞춘다.",
+   "switch": {
+    "choice": "B",
+    "condition": "홀터에서 발작성 상심실빈맥이 기록되었고 절제술을 원한다면 전기생리검사"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0537.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/15000/#files-panel",
+   "asset_id": "PTBXL-15105",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 15105"
+  },
+  "run_id": "20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0536",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 몇 달 전 가슴 통증을 그냥 넘긴 남성의 수술 전 심전도",
+  "type": "심전도 판독 — 몇 달 전 가슴 통증을 그냥 넘긴 남성의 수술 전 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-03",
+  "vignette": "66세 남자가 서혜부 탈장 수술 전 검사를 위해 왔다. 3개월 전 30분 넘게 가슴을 짓누르는 통증과 식은땀이 있었으나 저절로 나아져 병원에 가지 않았다. 지금은 가슴 통증이 없고 계단을 두 층 오르면 약간 숨이 차다. 당뇨병과 흡연력이 있다. 혈압 132/80 mmHg, 맥박 70회/분이고 심잡음은 없다. 고감도 트로포닌 I 는 정상 범위이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "정상 심전도",
+   "오래된 전벽 심근경색",
+   "급성 전벽 ST 분절 상승 심근경색",
+   "오래된 하벽 심근경색",
+   "완전 좌각차단"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: QRS 는 좁은데 V1·V2·V3 에 R파가 전혀 없는 QS 파가 있고 V4 에서도 r 이 작아 R파 진행이 끊겨 있다 — 전벽 심근이 전기적으로 죽어 그 자리 전극이 반대쪽 벽의 탈분극만 「멀어지는」 방향으로 보는 경색 Q파다. V1~V3 의 ST 는 약간 높지만 T파가 직립하고 과급성 T파·거울상 ST 하강이 없으며 트로포닌이 정상이다. 3개월 전의 흉통과 합치면 오래된 전벽 심근경색이다.\n- 원리: <b>왜 Q파가 생기는가</b>: 심근이 괴사해 섬유조직으로 바뀌면 그 부위는 탈분극하지 않는다. 그 위의 전극은 「창문」처럼 반대쪽 벽이 자기에게서 멀어지며 탈분극하는 것만 보게 되어 첫 굴절이 음성 — Q파, 그리고 R파가 전혀 없으면 QS 파가 된다. 경색 Q파는 대개 영구히 남아 몇 달·몇 년 뒤에도 과거 경색의 흔적이 된다.<br> <b>어느 벽인가</b>: V1~V2 는 중격, V3~V4 는 전벽, I·aVL·V5~V6 는 측벽, II·III·aVF 는 하벽을 본다. 이 기록은 V1~V3(4)에 Q 가 모여 있어 좌전하행지 영역의 전벽(전중격) 경색이다.<br> <b>급성과의 구별</b>: 급성 경색은 과급성 T파 → 볼록한 ST 상승과 거울상 ST 하강 → 수 시간~수일 뒤 Q파·T파 역전 순서로 변한다. 몇 주가 지나면 ST 는 대부분 기저선으로 돌아오고, 전벽 경색 뒤 ST 상승이 계속 남으면 좌심실류를 의심한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">오래된 전벽 경색(정답)</th><th>급성 전벽 STEMI(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>Q파</td><td><b>V1~V3 QS</b>, R파 진행 불량</td><td>처음 몇 시간에는 없음(나중에 생김)</td></tr> <tr><td>ST·T</td><td>ST 거의 기저선~약간 상승, T 직립 또는 역전</td><td>볼록한 ST 상승, 과급성 T, 하벽 거울상 하강</td></tr> <tr><td>증상·검사</td><td>지금 흉통 없음, 트로포닌 정상</td><td>진행 중인 흉통, 트로포닌 상승</td></tr> </tbody></table> 같은 「V1~V3 이상」이라도 지금 일어나는 일인지(흉통·트로포닌·ST 의 모양) 지나간 흔적인지(Q파)를 먼저 가른다.\n- 오답 이유:\n  - ① 정상 심전도는 V1 의 작은 r 이 V3~V4 로 갈수록 커지는 R파 진행이 있을 때 정답이 된다 — V1~V3 이 모두 QS 이면 정상이 아니다.\n  - ③ 급성 전벽 STEMI 는 지금 흉통이 이어지고 V1~V4 에 볼록한 ST 상승·과급성 T파와 하벽 거울상 하강, 트로포닌 상승이 있을 때 정답이다.\n  - ④ 오래된 하벽 심근경색은 II·III·aVF 에 폭 0.04 s 이상의 깊은 Q파가 있을 때 정답이다 — 이 기록의 하벽 유도에는 Q파가 없다.\n  - ⑤ 완전 좌각차단은 QRS 가 0.12 s 이상 넓고 I·aVL·V6 에 넓고 갈라진 R파가 있을 때 정답이다 — 이 기록은 QRS 가 좁다.\n- 함정: V1~V3 의 약간 높은 ST 만 보고 급성 STEMI 로 읽는 것 — 좁은 QRS 의 QS 파·정상 트로포닌·지금 없는 흉통이 오래된 경색을 말한다.\n- 학습목표: V1~V3 의 QS 파와 R파 진행 불량을 오래된 전벽 심근경색의 흔적으로 읽고 급성 전벽 경색·하벽 경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20):e618-e651\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13868 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "QRS 는 좁은데 V1·V2·V3 에 R파가 전혀 없는 QS 파가 있고 V4 에서도 r 이 작아 R파 진행이 끊겨 있다 — 전벽 심근이 전기적으로 죽어 그 자리 전극이 반대쪽 벽의 탈분극만 「멀어지는」 방향으로 보는 경색 Q파다. V1~V3 의 ST 는 약간 높지만 T파가 직립하고 과급성 T파·거울상 ST 하강이 없으며 트로포닌이 정상이다. 3개월 전의 흉통과 합치면 오래된 전벽 심근경색이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 Q파가 생기는가</b>: 심근이 괴사해 섬유조직으로 바뀌면 그 부위는 탈분극하지 않는다. 그 위의 전극은 「창문」처럼 반대쪽 벽이 자기에게서 멀어지며 탈분극하는 것만 보게 되어 첫 굴절이 음성 — Q파, 그리고 R파가 전혀 없으면 QS 파가 된다. 경색 Q파는 대개 영구히 남아 몇 달·몇 년 뒤에도 과거 경색의 흔적이 된다.<br> <b>어느 벽인가</b>: V1~V2 는 중격, V3~V4 는 전벽, I·aVL·V5~V6 는 측벽, II·III·aVF 는 하벽을 본다. 이 기록은 V1~V3(4)에 Q 가 모여 있어 좌전하행지 영역의 전벽(전중격) 경색이다.<br> <b>급성과의 구별</b>: 급성 경색은 과급성 T파 → 볼록한 ST 상승과 거울상 ST 하강 → 수 시간~수일 뒤 Q파·T파 역전 순서로 변한다. 몇 주가 지나면 ST 는 대부분 기저선으로 돌아오고, 전벽 경색 뒤 ST 상승이 계속 남으면 좌심실류를 의심한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">오래된 전벽 경색(정답)</th><th>급성 전벽 STEMI(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>Q파</td><td><b>V1~V3 QS</b>, R파 진행 불량</td><td>처음 몇 시간에는 없음(나중에 생김)</td></tr> <tr><td>ST·T</td><td>ST 거의 기저선~약간 상승, T 직립 또는 역전</td><td>볼록한 ST 상승, 과급성 T, 하벽 거울상 하강</td></tr> <tr><td>증상·검사</td><td>지금 흉통 없음, 트로포닌 정상</td><td>진행 중인 흉통, 트로포닌 상승</td></tr> </tbody></table> 같은 「V1~V3 이상」이라도 지금 일어나는 일인지(흉통·트로포닌·ST 의 모양) 지나간 흔적인지(Q파)를 먼저 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정상 심전도는 V1 의 작은 r 이 V3~V4 로 갈수록 커지는 R파 진행이 있을 때 정답이 된다 — V1~V3 이 모두 QS 이면 정상이 아니다.\n③ 급성 전벽 STEMI 는 지금 흉통이 이어지고 V1~V4 에 볼록한 ST 상승·과급성 T파와 하벽 거울상 하강, 트로포닌 상승이 있을 때 정답이다.\n④ 오래된 하벽 심근경색은 II·III·aVF 에 폭 0.04 s 이상의 깊은 Q파가 있을 때 정답이다 — 이 기록의 하벽 유도에는 Q파가 없다.\n⑤ 완전 좌각차단은 QRS 가 0.12 s 이상 넓고 I·aVL·V6 에 넓고 갈라진 R파가 있을 때 정답이다 — 이 기록은 QRS 가 좁다."
+   },
+   {
+    "k": "함정",
+    "v": "V1~V3 의 약간 높은 ST 만 보고 급성 STEMI 로 읽는 것 — 좁은 QRS 의 QS 파·정상 트로포닌·지금 없는 흉통이 오래된 경색을 말한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "V1~V3 의 QS 파와 R파 진행 불량을 오래된 전벽 심근경색의 흔적으로 읽고 급성 전벽 경색·하벽 경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20):e618-e651 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13868 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 에 V1~V3 QS 파와 R파 진행 불량이 있고 지금 흉통·트로포닌 상승이 없으면 오래된 전벽 심근경색이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "볼록한 ST 상승·과급성 T·거울상 하강·트로포닌 상승이 없다 — 지금 진행 중인 경색이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 좁은 QRS, V1~V3 QS 파와 V4 의 작은 r(R파 진행 불량) → 전벽의 경색 Q파",
+    "지금 흉통 없음 + 트로포닌 정상 + 3개월 전 흉통 → 오래된 전벽 경색"
+   ],
+   "key": [
+    {
+     "item": "영상: V1~V3 QS 파와 R파 진행 불량",
+     "why": "전벽 경색 Q파",
+     "also": []
+    },
+    {
+     "item": "3개월 전 30분 넘게 가슴을 짓누르는 통증과 식은땀",
+     "why": "병원에 가지 않은 과거 경색",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: II·III·aVF 에 Q파 없음",
+     "why": "하벽 경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "고감도 트로포닌 I 는 정상 범위",
+     "why": "급성 심근 손상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "지금은 가슴 통증이 없고",
+     "why": "진행 중인 경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "당뇨병과 흡연력",
+     "why": "관상동맥질환 위험인자 — 판독을 정하지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "좁은 QRS 의 V1~V3 QS 파와 R파 진행 불량은 전벽 경색 Q파다. 지금 흉통과 트로포닌 상승이 없어 오래된 전벽 심근경색으로 읽는다.",
+   "switch": {
+    "choice": "C",
+    "condition": "지금 흉통이 이어지고 V1~V4 에 볼록한 ST 상승과 하벽 거울상 하강, 트로포닌 상승이 있으면 급성 전벽 STEMI"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0536.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/13000/#files-panel",
+   "asset_id": "PTBXL-13868",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13868"
+  },
+  "run_id": "20261103T203605Z_일일심전도_2026-11-04_3units_3q_f568e1ce",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0535",
   "exam": "imaging",
   "style": "usmle_style",
