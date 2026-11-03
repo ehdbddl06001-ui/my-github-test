@@ -643,8 +643,29 @@
    "date": "2026-11-02",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0527": {
+   "id": "imaging-2026-0527",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "Step 2",
+   "type": "심전도 판독 — 숨이 차는 초고령 남성의 넓은 QRS",
+   "style": "usmle_style",
+   "modality": "ECG",
+   "question": "Which of the following is the most likely interpretation of this ECG?",
+   "chosen": 1,
+   "chosenText": "Acute anterior ST-elevation myocardial infarction",
+   "answer": 0,
+   "answerText": "Left bundle branch block",
+   "coreNote": "",
+   "differ": "",
+   "decision": "Wide QRS, broad notched lateral R waves without septal q, and deep QS in V1–V3 with discordant ST changes indicate left bundle branch block; flat troponin and no chest pain argue against STEMI.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261102T202258Z_일일심전도_2026-11-03_3units_3q_7b3481c9",
+   "date": "2026-11-03",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-02T10:10:42.000Z"
+ "updated": "2026-11-03T05:04:09.792Z"
 }
