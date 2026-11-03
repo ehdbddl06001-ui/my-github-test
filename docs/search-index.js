@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4303,
+  "total": 4306,
   "byType": {
    "usmle": 228,
    "paper": 888,
-   "concept": 134,
+   "concept": 137,
    "kmle": 1664,
    "imaging": 526,
    "anatomy": 846,
@@ -18,8 +18,8 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 297,
-   "Nephrology": 233,
+   "Cardiology": 298,
+   "Nephrology": 235,
    "Infectious Disease": 215,
    "Pediatrics": 201,
    "Obstetrics & Gynecology": 148,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1233,
+   "medium": 1236,
    "high": 3017,
    "low": 53
   },
@@ -291,6 +291,34 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology scraped pubmed PubMed / The New England journal of medicine Title TAVR in Patients with Moderate Aortic Stenosis with At Risk Features Authors Généreux Philippe, Makkar Raj R, Pibarot Philippe, Bax Jeroen J, Lindman Brian R, Muhammad Kamran, Oldemeyer J Bradley, Pirwitz Mark, et al. Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMoa2607326 · PMID: 42970708 https://pubmed.ncbi.nlm.nih.gov/42970708/ Abstract BACKGROUND: For patients with moderate aortic stenosis, current guidelines recommend clinical surveillance with echocardiographic assessment every 1 or 2 years. Whether transcatheter aortic valve replacement (TAVR) will improve outcomes in these patients remains unknown. METHODS: We conducted an international, open label, randomized trial to evaluate whether TAVR will result in better outcomes than clinical surveillance among patients with moderate aortic stenosis with at least one at risk feature (i.e., a symptom or structural or functional abnormality that has been shown to be associated with faster disease progression or adverse cardiovascular outcomes). The patients were assigned in a 1:1 ratio to undergo transfemoral TAVR with a balloon expandable valve or clinical surveillance. The primary effectiveness end point was a composite of death from any cause or a heart failure event with or without hospitalization at 2 years. Superiority testing was performed in the intention to treat population. RESULTS: A total of 744 patients underwent randomization: 373 patients were assigned to the TAVR group and 371 to the clinical surveillance group. The mean age of patients was 78 years, 39.1% were women, and 45.6% were at low surgical risk. The mean aortic valve area was 1.2 cm2, and the mean aortic valve peak velocity was 3.3 m per second. At 2 years, the Kaplan Meier estimate of the percentage of patients with a primary effectiveness end point event was 16.7% in the TAVR group and 23.9% in the clinical surveillance group (risk difference, 7.2 percentage points; 95% confidence interval, 13.1 to 1.3; P = 0.02 for superiority). The Kaplan Meier estimate of the percentage of patients who died from any cause was 8.4% in the TAVR group and 7.3% in the clinical surveillance group; the estimates for a heart failure event were 10.8% and 19.0%, respectively. The incidence of procedure related adverse events did not differ meaningfully between the patients in the TAVR group and those in the clinical surveillance group who underwent aortic valve replacement. CONCLUSIONS: Among patients with moderate aortic stenosis and at risk features, a strategy of TAVR was superior to clinical surveillance in lowering the incidence of death or a heart failure event at 2 years. (Funded by Edwards Lifesciences; PROGRESS ClinicalTrials.gov number, NCT04889872.). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
+   "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion",
+   "type": "concept",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/concepts/physiology/cn.physio.distal-rta.alpha-intercalated-h-secretion.md",
+   "snippet": "기전 — 집합관이 산을 내보내지 못하면 콩팥은 매일 생기는 비휘발성 산을 근위세관의 중탄산 재흡수와 원위 네프론의 H+ 분비(적정산·암모늄으로 배설)로 처리한다. 원위(1형)에서는 집합관의 H+ 분비가 떨어져 산혈증인데도 소변을 산성화하지 못하고(pH 5.5), H+ 를 가둘 암모늄 배설도 낮다(소변 음이온 차 양수) [[harrison 22: 58장 p.372]]. H+ 를 내보내는 세포가 집합관의 α 사이세포(H+ ATPa",
+   "text": "Nephrology 기전 — 집합관이 산을 내보내지 못하면 콩팥은 매일 생기는 비휘발성 산을 근위세관의 중탄산 재흡수와 원위 네프론의 H+ 분비(적정산·암모늄으로 배설)로 처리한다. 원위(1형)에서는 집합관의 H+ 분비가 떨어져 산혈증인데도 소변을 산성화하지 못하고(pH 5.5), H+ 를 가둘 암모늄 배설도 낮다(소변 음이온 차 양수) [[harrison 22: 58장 p.372]]. H+ 를 내보내는 세포가 집합관의 α 사이세포(H+ ATPase)라는 세포 수준의 설명은 해리슨 이 장에서 확인하지 않았다. 대부분 저구연산뇨·고칼슘뇨가 함께 생겨 알칼리 소변에서 인산칼슘이 가라앉아 신결석·신석회화·뼈 질환이 흔하고, 저칼륨혈증이 근력 저하를 낸다 [[harrison 22: 58장 p.372]]. 가르는 소견 — 소변 음이온 차·소변 pH·칼륨 음이온 차가 정상인가 : 정상 음이온 차 산증에서는 Cl 상승이 HCO3 감소와 거의 같다 — 어긋나면 혼합 장애를 생각한다 [[harrison 22: 58장 p.372]]. 위장관인가 콩팥인가 : 소변 음이온 차 [Na+ + K+]u − [Cl−]u 가 음수면 암모늄 배설이 늘어 위장관, 양수면 신세관이다. 설사에서도 소변 pH 는 대개 6 을 넘으므로 pH 만으로 가르지 않는다 [[harrison 22: 58장 p.372]]. 어느 신세관인가 : 칼륨이 높으면 4형, 낮으면 소변 pH 를 본다 — 중탄산이 이미 낮은데 pH 5.5 면 원위, < 5.5 면 근위 [[harrison 22: 58장 p.372]]. 호흡 보상은 Winter 식(1.5 × HCO3 + 8 ± 2)으로 확인한다 [[harrison 22: 58장 p.367]]. 권고와 예외 원위형은 먼저 저칼륨을 교정한 뒤 알칼리로 중탄산 24~26 meq/L 를 유지하면 결석이 줄고 골밀도·성장·신기능이 지켜진다 [[harrison 22: 58장 p.373]]. 쇼그렌병은 간질 신염으로 신세관 기능 장애와 산증을 일으킬 수 있고, 신세관산증 증상은 쇼그렌병을 의심할 단서다. 신세관산증 환자에게 경구 NaHCO3 를 준다 [[harrison 22: 373장 p.2877]] [[harrison 22: 373장 p.2878]] [[harrison 22: 373장 p.2879]]. 약물(암포테리신 B·이포스파미드)도 원위형을 일으킨다 [[harrison 22: 58장 p.372]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 새 근거 · 소변 음이온 차의 신뢰도 — 시험 기준: 소변 음이온 차 양수 = 암모늄 배설 낮음 = 신세관 원인 [[harrison 22: 58장 p.372]] / 다른 기준: 계산값과 실제 소변 암모늄의 상관이 약해 소변 암모늄을 직접 재자는 제안 [[harrison 22: 58장 p.372]] / 왜 다른가: 소변에 다른 음이온(케톤 등)이 많으면 계산이 암모늄을 반영하지 못한다(원문 미대조) / 시험에서는: KMLE · USMLE 모두 소변 음이온 차 해석을 그대로 묻는다."
+  },
+  {
+   "id": "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d",
+   "type": "concept",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/concepts/nephrology/cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d.md",
+   "snippet": "기전 — 공여자 항원에서 모세혈관 손상까지 이식 뒤 공여자 항원이 수용자의 배액 림프절로 옮겨져 동종면역 반응을 켠다. 여포 보조 T 세포(Tfh)가 B 세포를 형질세포로 분화시키고, 형질세포가 공여자 HLA·비HLA 항원에 대한 항체를 만든다. 이 항체가 이식 신장에 침착해 보체 의존·비의존 기전으로 손상을 준다 [[harrison 22: 325장 p.2407]]. 항체가 내피에 붙어 고전 경로 보체가 켜지면 C4 가 쪼개진",
+   "text": "Nephrology 기전 — 공여자 항원에서 모세혈관 손상까지 이식 뒤 공여자 항원이 수용자의 배액 림프절로 옮겨져 동종면역 반응을 켠다. 여포 보조 T 세포(Tfh)가 B 세포를 형질세포로 분화시키고, 형질세포가 공여자 HLA·비HLA 항원에 대한 항체를 만든다. 이 항체가 이식 신장에 침착해 보체 의존·비의존 기전으로 손상을 준다 [[harrison 22: 325장 p.2407]]. 항체가 내피에 붙어 고전 경로 보체가 켜지면 C4 가 쪼개진 조각 C4d 가 세관주위 모세혈관·사구체 기저막에 공유결합으로 남는다 — 그래서 C4d 는 보체 활성의 「발자국」이다 [[harrison 22: 325장 p.2407]]. 손상이 내피에 몰리므로 생검에서는 모세혈관 안 염증세포(모세혈관염)가 보이고 세관 염증은 적다. 판단 — 왜 T 세포가 아니라 항체인가 C4d + DSA : 세관주위 모세혈관 C4d 와 순환 공여자 특이 항체는 항체 매개 거부의 진단 기준이다 [[harrison 22: 325장 p.2407]]. 세관염이 적다 : T 세포 매개 거부의 진단 소견은 간질·세관·혈관의 면역세포 침윤이다 [[harrison 22: 325장 p.2410]] — 이것이 적으면 T 세포가 주체가 아니다. 새로 생긴 항체 : 교차시험 음성으로 이식하고 오래 안정했다면 항체는 이식 뒤 생겼다. 이식 전부터 있던 항체(교차시험 양성)는 초급성 거부를 예측한다 [[harrison 22: 325장 p.2407]]. 가르는 소견 — 생검과 혈액 항체 거부는 발열·이식편 압통 없이 크레아티닌 상승만으로 나타날 수 있다. 먼저 급성 세관 손상·칼시뉴린 억제제 독성·BK 신병증·재발 사구체병을 배제하고, 도플러 초음파로 혈관·요로 폐쇄를 본다 [[harrison 22: 325장 p.2410]]. 이식편 생검이 T 세포 매개·항체 매개 거부 진단의 표준이다 [[harrison 22: 325장 p.2410]]. 칼시뉴린 억제제는 신독성이 있고 치료 범위가 좁아 농도를 감시한다 [[harrison 22: 325장 p.2409]] — 농도가 낮으면 독성보다 면역억제 부족을 생각한다. BK 바이러스 재활성은 면역억제가 과할 때 생긴다 [[harrison 22: 325장 p.2410]] — 면역억제가 부족한 환자와 방향이 반대다. 권고와 예외 감작(공여자 항체를 만드는 계기)의 알려진 원인은 수혈·이전 이식·임신이다 [[harrison 22: 325장 p.2407]]. 항체 매개 거부의 치료는 여전히 어렵고 혈장교환·IVIG·리툭시맙(B 세포)·보르테조밉(형질세포)을 적극적으로 쓴다. T 세포 매개 거부는 고용량 스테로이드, 반응이 없으면 ATG [[harrison 22: 325장 p.2410]]. 만성 이식 기능 저하의 원인에 만성 활동성 항체 매개 거부가 들어간다 [[harrison 22: 325장 p.2410]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 325장 p.2407–2410)"
+  },
+  {
    "id": "cn.cardio.nyha-class.functional-assessment",
    "type": "concept",
    "unit": "",
@@ -303,6 +331,20 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.nyha-class.functional-assessment.md",
    "snippet": "판단 — 왜 활동의 양이 등급을 정하나 심근·관상동맥 기능은 안정 시에는 충분해도 활동 중에는 모자랄 수 있다 — 그래서 심장 증상은 활동 시 나타나고 안정 시 사라진다 [[harrison 22: 243장 p.1841]]. 등급은 「숨이 차다」가 아니라 증상 전 활동의 수준과 속도 로 매긴다. 계단 두 층을 뛰어오른 뒤의 호흡곤란과 평지 몇 걸음 뒤의 호흡곤란은 장애의 크기가 전혀 다르다 [[harrison 22: 243장 p",
    "text": "Cardiology 판단 — 왜 활동의 양이 등급을 정하나 심근·관상동맥 기능은 안정 시에는 충분해도 활동 중에는 모자랄 수 있다 — 그래서 심장 증상은 활동 시 나타나고 안정 시 사라진다 [[harrison 22: 243장 p.1841]]. 등급은 「숨이 차다」가 아니라 증상 전 활동의 수준과 속도 로 매긴다. 계단 두 층을 뛰어오른 뒤의 호흡곤란과 평지 몇 걸음 뒤의 호흡곤란은 장애의 크기가 전혀 다르다 [[harrison 22: 243장 p.1842]]. 안정 시 증상은 IV 만의 소견이다. 안정 시 무증상은 I~III 를 가르지 못한다. 기능 장애의 중증도가 검사의 범위·속도와 치료 전략을 정한다 [[harrison 22: 243장 p.1842]]. 기전 — 공급·수요 불균형에서 증상으로 심장 증상은 주로 심근 허혈(산소 공급과 수요의 불균형), 수축·이완 장애, 혈류 폐쇄(판막 협착), 비정상 리듬에서 온다 [[harrison 22: 243장 p.1841]]. 펌프 기능이 떨어지면 피로와 함께 기능이 떨어진 심실 상류의 혈관 내 압력이 올라 말초 부종이나 폐울혈·호흡곤란이 생긴다. 활동은 산소 수요와 심박출 요구를 늘리므로, 여유가 줄어들수록 더 가벼운 활동에서 증상이 나타난다 — NYHA 등급은 이 여유의 크기를 활동량으로 잰 것이다. 가르는 소견 — 어느 활동에서 증상이 나나 일상 활동의 기준은 환자 자신이다: 평소 하던 일(출근길 계단, 장보기)에서 증상이 나면 II, 그보다 가벼운 일(집 안 걷기, 옷 입기)에서 나면 III. 평소 활동량을 함께 본다 — 잘 단련된 마라톤 선수의 2층 호흡곤란이 좌식 생활자의 1층 호흡곤란보다 의미가 클 수 있다 [[harrison 22: 243장 p.1842]]. 호흡곤란·흉부 불편·부종·실신은 심장 밖 원인(폐질환·비만·불안, 신장·간질환, 신경 질환)에서도 나므로, 등급을 매기기 전에 그 증상이 심장 때문인지를 진찰과 비침습 검사로 확인한다 [[harrison 22: 243장 p.1841]]. 선택 — 등급을 쓰는 곳 NYHA 의 완전한 심장 진단은 원인 · 해부학적 이상 · 생리적 장애(부정맥·심부전·허혈) · 기능 장애 네 가지를 함께 적는다 — 기능 등급은 그 마지막 칸이다 [[harrison 22: 243장 p.1841–1842]]. 진행은 6개월~1년 전에 하던 일 가운데 지금 못 하는 것을 물어 가늠한다 [[harrison 22: 243장 p.1842]]. 해부학적으로 심한 판막질환이 무증상·경증이면 6~12개월마다 임상·비침습 검사로 추적한다 — 심실 기능 악화의 초기 징후가 증상 전 수술의 신호일 수 있다 [[harrison 22: 243장 p.1843]]. 권고와 예외 치료 맥락으로 보정한다: 최적 용량의 이뇨제·심부전 치료를 받는데도 남은 부종·호흡곤란은 치료 없이 생긴 같은 증상보다 무겁다 [[harrison 22: 243장 p.1842]]. 등급은 증상의 보고에 기대므로 같은 환자도 치료에 따라 등급이 오르내린다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 243장 p.1841~1843). ACC/AHA 심부전 단계(A~D)와의 관계는 이 장에 없어 다루지 않았다(검토 항목)."
+  },
+  {
+   "id": "cn.cardio.complete-lbbb.discordant-st-not-stemi",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-03",
+   "path": "content/concepts/cardiology/cn.cardio.complete-lbbb.discordant-st-not-stemi.md",
+   "snippet": "판단 — 왜 경색이 아니라 좌각차단인가 폭부터 : QRS ≥ 120 ms 면 각차단을 먼저 읽는다 [[harrison 22: 247장 p.1871]]. 각차단이 있으면 ST T 는 QRS 에 끌려간다. 모양 : V1 넓은 QS(주로 음성), I·aVL·V6 q 없는 넓은 R(전부 양성)은 좌각차단이다 [[harrison 22: 247장 p.1871]]. ST 방향 : 깊은 QS 유도(V1~V3)의 ST 상승은 QRS 와 반대 ",
+   "text": "Cardiology 판단 — 왜 경색이 아니라 좌각차단인가 폭부터 : QRS ≥ 120 ms 면 각차단을 먼저 읽는다 [[harrison 22: 247장 p.1871]]. 각차단이 있으면 ST T 는 QRS 에 끌려간다. 모양 : V1 넓은 QS(주로 음성), I·aVL·V6 q 없는 넓은 R(전부 양성)은 좌각차단이다 [[harrison 22: 247장 p.1871]]. ST 방향 : 깊은 QS 유도(V1~V3)의 ST 상승은 QRS 와 반대 방향인 이차 변화다 [[harrison 22: 247장 p.1872]]. 흉통이 없고 트로포닌이 변하지 않으면 경색이 아니다. 기전 — 늦게 깨는 좌심실 정상에서는 좌각에서 시작한 중격 탈분극이 왼쪽→오른쪽으로 가서 V1 의 작은 r, V6 의 작은 중격 q 를 만든다. 좌각이 막히면 우각이 먼저 우심실과 중격을 깨우고, 중격 탈분극은 오른쪽→왼쪽으로 바뀐다. 좌심실은 근육을 따라 천천히 늦게 탈분극하므로 주 QRS 벡터가 왼쪽·뒤로 향한다 — V1 은 넓은 QS, V6 은 중격 q 없이 넓고 갈라진 R 이 된다 [[harrison 22: 247장 p.1871]]. 탈분극 순서가 바뀌면 재분극 순서도 바뀌어 ST T 가 QRS 마지막 굴절과 반대로 선다 — 이것이 「이차성」 변화다. 허혈·전해질·디곡신처럼 심근 자체의 전기 성질이 바뀐 「일차성」 변화와 다르다 [[harrison 22: 247장 p.1872]]. 가르는 소견 — 폭·중격 q·ST 방향 V1·V2 의 ST 상승과 큰 양성 T파는 허혈이 없어도 좌각차단·좌심실 비대에서 흔하다 [[harrison 22: 247장 p.1873]]. 표 247 1 의 ST 상승 감별에도 「좌심실 비대/좌각차단」이 들어 있다 [[harrison 22: 247장 p.1874]]. 좌심실 비대는 QRS 가 0.12초 미만이고 중격 q 가 남는다. 좌심실 비대는 흔히 불완전·완전 좌각차단으로 진행한다 [[harrison 22: 247장 p.1871]]. 우심실 조율은 좌각차단과 같은 모양이므로 QRS 앞의 조율 스파이크를 찾는다 [[harrison 22: 247장 p.1871]]. 권고와 예외 좌각차단은 급성 허혈·경색의 심전도 변화를 가린다 — 흉통과 트로포닌 상승이 있으면 심전도만으로 경색을 배제하지 않는다 [[harrison 22: 247장 p.1873]]. 좌각차단에서 오른쪽 가슴 유도의 T파 역위(기대되는 방향과 다름)는 허혈 등 다른 이상의 표지일 수 있다 [[harrison 22: 247장 p.1872]]. 좌각차단은 관상동맥질환(흔히 좌심실 기능 저하 동반)·고혈압성 심질환·대동맥판 질환(경피 대동맥판 치환 뒤 포함)·심근병증의 표지다 — 원인 심질환을 평가한다 [[harrison 22: 247장 p.1871–1872]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 247장 p.1871–1874). 좌각차단 속 급성 경색을 가르는 Sgarbossa 기준은 해리슨 이 장에 없어 대조하지 않았다."
   },
   {
    "id": "kmle-2026-1698",

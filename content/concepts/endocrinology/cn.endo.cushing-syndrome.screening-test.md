@@ -4,8 +4,8 @@ type: concept
 topic: Endocrinology
 see_also: [Internal Medicine]
 date: 2026-09-23
-updated: 2026-10-02
-version: 2
+updated: 2026-11-03
+version: 3
 outline: h386            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -154,16 +154,28 @@ variants:
     answer: "C"
     explanation: "젊은 남자의 골다공증성 골절·근위부 근병증·쉽게 드는 멍·넓은 보라색 선조는 코르티솔 과잉을 시사하고, 외부 스테로이드는 배제되었다. 먼저 선별검사(심야 타액 코르티솔 — 1 mg DST·24시간 소변 유리코르티솔도 가능)로 코르티솔 과잉을 확인한다. ACTH·뇌하수체 MRI 는 확인 뒤 원인 감별 단계이고, 메타네프린은 카테콜아민 과잉 검사다. 겉모습(나이·성별·골절로 발견)이 바뀌어도 결정적 단서가 같아 답이 같다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 쿠싱증후군의 넓은 자주색 선조(얼굴 없는 부위)
-  query: '"Cushing" AND striae AND "case report"'
-  caption_terms:
-  - striae
-  modality: CLINICAL_PHOTO
 figures_rejected:
 - asset: PMC-PMC12602253_FIGURE1
   reason: 선조 패널이 약 280×230 픽셀로 작고 얼굴 패널이 있다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13718705_figure4.jpg
+  kind: photo
+  at: 가르는 소견 — 어느 호르몬 과잉인가
+  shows: 의인성 쿠싱증후군(장기 국소 스테로이드) — 허벅지 안쪽의 넓은 자주색 선조
+  look_for:
+  - 허벅지 안쪽을 가로지르는 넓고 자주색인 줄무늬
+  - 줄무늬 사이의 얇아 보이는 피부
+  label: 「Extensive violaceous striae affecting left inner thigh after six months of topical clobetasol treatment.」 — Iatrogenic Cushing Syndrome With Glucocorticoid-Induced Adrenal Insufficiency Following Prolonged Topical Clobetasol Use in an Adolescent
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Iatrogenic Cushing Syndrome With Glucocorticoid-Induced Adrenal Insufficiency Following Prolonged Topical Clobetasol Use in an Adolescent. Cureus
+  doi: 10.7759/cureus.117155
+  credit: 'Iatrogenic Cushing Syndrome With Glucocorticoid-Induced Adrenal Insufficiency Following Prolonged Topical Clobetasol Use in an Adolescent. Cureus. 2026 Sep 29;18(9):e117155. doi: 10.7759/cureus.117155 (CC BY) — Figure 4'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13718705/
+  asset: PMC-PMC13718705_Figure4
+  privacy_check: 허벅지·다리만 — 얼굴·문신·이름·병원 표지 없음(손가락 일부만 보임)
 ---
 
 ## 판단 — 왜 코르티솔 선별검사가 먼저인가

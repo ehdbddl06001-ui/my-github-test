@@ -130,6 +130,9 @@ figures_wanted:
   caption_terms:
   - hemorrhage
   modality: FUNDUS
+figures_rejected:
+- asset: PMC-PMC11868628_Fig1
+  reason: AI 선별 모델 구조 흐름도 — 안저 사진은 작은 입력 썸네일뿐이고 날짜 표지가 있으며, 캡션은 유두 출혈 증례 라벨이 아니라 모델 설명이다
 ---
 
 ## 판단 — 왜 시야검사가 먼저인가

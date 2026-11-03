@@ -4436,6 +4436,801 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.cardio.complete-lbbb.discordant-st-not-stemi": {
+  "id": "cn.cardio.complete-lbbb.discordant-st-not-stemi",
+  "title": "완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화",
+  "objective": "심전도에서 넓은 QRS·V1 넓은 QS·V6 q 없는 넓은 R 으로 완전 좌각차단을 읽고, QRS 와 반대 방향인 V1~V3 ST 상승을 급성 전벽 경색과 가른다",
+  "objectiveKind": "진단",
+  "condition": "완전 좌각차단(complete left bundle branch block, LBBB)",
+  "topic": "Cardiology",
+  "seeAlso": [],
+  "version": 2,
+  "updated": "2026-11-03",
+  "reviewStatus": "unreviewed",
+  "hash": "3385d3dbeda59cfb",
+  "summary": [
+   "결론: QRS ≥ 0.12초 + V1 넓은 QS + I·aVL·V6 q 없는 넓은 R = 완전 좌각차단, V1~V3 ST 상승은 이차 변화.",
+   "시험 단서: 고령·고혈압·심부전, 흉통 없음·트로포닌 정상인데 V1~V3 ST 상승(discordant ST elevation in LBBB).",
+   "왜: 탈분극 순서가 바뀌면 재분극도 바뀌어 ST-T 가 QRS 주 방향과 반대로 선다 — 깊은 QS 유도에서는 ST 가 올라간다.",
+   "좌각차단은 관상동맥질환·고혈압성 심질환·대동맥판 질환·심근병증의 표지 — 원인 심질환을 찾는다.",
+   "좌각차단은 급성 허혈의 심전도 변화를 가린다 — 경색 판단은 증상·트로포닌과 함께 한다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 경색이 아니라 좌각차단인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>폭부터</strong>: QRS ≥ 120 ms 면 각차단을 먼저 읽는다 <sup>[1 247장 p.1871]</sup>. 각차단이 있으면 ST-T 는 QRS 에 끌려간다.</li>\n<li><strong>모양</strong>: V1 넓은 QS(주로 음성), I·aVL·V6 q 없는 넓은 R(전부 양성)은 좌각차단이다 <sup>[1 247장 p.1871]</sup>.</li>\n<li><strong>ST 방향</strong>: 깊은 QS 유도(V1~V3)의 ST 상승은 QRS 와 반대 방향인 이차 변화다 <sup>[1 247장 p.1872]</sup>. 흉통이 없고 트로포닌이 변하지 않으면 경색이 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 늦게 깨는 좌심실",
+    "deep": false,
+    "html": "<p>정상에서는 좌각에서 시작한 중격 탈분극이 왼쪽→오른쪽으로 가서 V1 의 작은 r, V6 의 작은 중격 q 를 만든다. 좌각이 막히면 우각이 먼저 우심실과 중격을 깨우고, 중격 탈분극은 오른쪽→왼쪽으로 바뀐다. 좌심실은 근육을 따라 천천히 늦게 탈분극하므로 주 QRS 벡터가 왼쪽·뒤로 향한다 — V1 은 넓은 QS, V6 은 중격 q 없이 넓고 갈라진 R 이 된다 <sup>[1 247장 p.1871]</sup>. 탈분극 순서가 바뀌면 재분극 순서도 바뀌어 ST-T 가 QRS 마지막 굴절과 반대로 선다 — 이것이 「이차성」 변화다. 허혈·전해질·디곡신처럼 심근 자체의 전기 성질이 바뀐 「일차성」 변화와 다르다 <sup>[1 247장 p.1872]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 폭·중격 q·ST 방향",
+    "deep": false,
+    "html": "<ul>\n<li>V1·V2 의 ST 상승과 큰 양성 T파는 허혈이 없어도 좌각차단·좌심실 비대에서 흔하다 <sup>[1 247장 p.1873]</sup>. 표 247-1 의 ST 상승 감별에도 「좌심실 비대/좌각차단」이 들어 있다 <sup>[1 247장 p.1874]</sup>.</li>\n<li>좌심실 비대는 QRS 가 0.12초 미만이고 중격 q 가 남는다. 좌심실 비대는 흔히 불완전·완전 좌각차단으로 진행한다 <sup>[1 247장 p.1871]</sup>.</li>\n<li>우심실 조율은 좌각차단과 같은 모양이므로 QRS 앞의 조율 스파이크를 찾는다 <sup>[1 247장 p.1871]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>좌각차단은 급성 허혈·경색의 심전도 변화를 가린다 — 흉통과 트로포닌 상승이 있으면 심전도만으로 경색을 배제하지 않는다 <sup>[1 247장 p.1873]</sup>.</li>\n<li>좌각차단에서 오른쪽 가슴 유도의 T파 역위(기대되는 방향과 다름)는 허혈 등 다른 이상의 표지일 수 있다 <sup>[1 247장 p.1872]</sup>.</li>\n<li>좌각차단은 관상동맥질환(흔히 좌심실 기능 저하 동반)·고혈압성 심질환·대동맥판 질환(경피 대동맥판 치환 뒤 포함)·심근병증의 표지다 — 원인 심질환을 평가한다 <sup>[1 247장 p.1871–1872]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 247장 p.1871–1874). 좌각차단 속 급성 경색을 가르는 Sgarbossa 기준은 해리슨 이 장에 없어 대조하지 않았다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "V1~V3 ST 상승 — 무엇이 가르나",
+    "columns": [
+     "판독",
+     "QRS",
+     "ST·임상"
+    ],
+    "rows": [
+     [
+      "완전 좌각차단",
+      "≥ 120 ms, V1 넓은 QS, V6 q 없는 넓은 R <sup>[1 247장 p.1871]</sup>",
+      "ST-T 가 QRS 마지막 굴절과 반대 — V1~V3 ST 상승은 이차 변화 <sup>[1 247장 p.1872]</sup>"
+     ],
+     [
+      "급성 전벽 경색",
+      "대개 넓지 않음",
+      "흉통·트로포닌 상승, ST 상승은 일차 변화(원문 미대조: 상호 하강 양상)"
+     ],
+     [
+      "좌심실 비대",
+      "&lt; 120 ms, 전압 증가, 중격 q 유지",
+      "R 큰 유도에 ST 하강·T 역위, V1~V2 ST 상승 흔함 <sup>[1 247장 p.1873]</sup>"
+     ],
+     [
+      "우심실 조율",
+      "좌각차단과 같은 모양 + 앞의 조율 스파이크 <sup>[1 247장 p.1871]</sup>",
+      "이차 ST-T 변화 <sup>[1 247장 p.1872]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "급성 전벽 ST 상승 경색 vs 좌각차단의 V1~V3 ST 상승",
+    "point": "좌각차단에서 V1~V3 의 ST 상승은 깊은 QS 와 반대 방향인 기대되는 이차 변화다. QRS 가 넓고 V6 에 q 없는 넓은 R 이 있으면 먼저 좌각차단을 읽고, 흉통·트로포닌 상승이 없으면 경색으로 읽지 않는다.",
+    "exception": "좌각차단은 급성 허혈 변화를 가리므로, 흉통과 트로포닌 상승이 있으면 좌각차단이 있어도 급성 경색을 배제하지 않는다.",
+    "cites": "<sup>[1 247장 p.1872]</sup> <sup>[1 247장 p.1873]</sup>"
+   },
+   {
+    "contrast": "좌심실 비대(strain) vs 좌각차단",
+    "point": "좌심실 비대는 전압이 크고 R 이 큰 유도에 ST 하강·T파 역위가 붙지만 QRS 는 0.12초 미만이고 중격 q 가 남는다. QRS ≥ 0.12초에 중격 q 가 사라졌으면 좌각차단이다. 좌심실 비대는 흔히 좌각차단으로 진행한다.",
+    "exception": "",
+    "cites": "<sup>[1 247장 p.1871]</sup>"
+   },
+   {
+    "contrast": "완전 우각차단 vs 완전 좌각차단",
+    "point": "둘 다 QRS ≥ 0.12초. V1 끝이 위로 서는 rsR′·V6 넓은 S 면 우각차단, V1 넓은 QS·V6 q 없는 넓은 R 이면 좌각차단.",
+    "exception": "",
+    "cites": "<sup>[1 247장 p.1871]</sup>"
+   },
+   {
+    "contrast": "인공 심박동기 리듬 vs 좌각차단",
+    "point": "우심실 조율은 좌각차단과 같은 QRS 모양을 만든다 — QRS 앞의 뾰족한(때로 아주 작은) 조율 스파이크를 찾는다.",
+    "exception": "",
+    "cites": "<sup>[1 247장 p.1871]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "QRS 앞에 뾰족한 스파이크가 있으면 우심실 조율 — 좌각차단과 같은 모양이다 <sup>[1 247장 p.1871]</sup>.",
+   "좌각차단은 급성 허혈 변화를 가린다 — 흉통·트로포닌이 있으면 좌각차단이 있어도 경색을 배제하지 않는다 <sup>[1 247장 p.1873]</sup>.",
+   "좌각차단을 읽었으면 원인 심질환(관상동맥질환·고혈압성 심질환·대동맥판 질환·심근병증)을 찾는다 <sup>[1 247장 p.1871–1872]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "lbbb-pattern",
+    "name": "좌각차단의 모양",
+    "kind": "진단 기준",
+    "population": "넓은 QRS 의 12유도 심전도",
+    "statement": "완전 각차단은 가장 넓은 QRS 가 120 ms 이상이다. 좌각차단은 주 QRS 벡터가 왼쪽·뒤로 향하고 중격 탈분극이 오른쪽에서 왼쪽으로 바뀌어 V1 에 넓고 주로 음성인 QS, V6 에 전부 양성인 R 을 만든다 [[harrison-22: 247장 p.1871]]",
+    "exceptions": "우심실 조율도 같은 모양을 만들며 조율 스파이크가 앞선다 [[harrison-22: 247장 p.1871]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "secondary-st",
+    "name": "이차성 ST-T 변화",
+    "kind": "진단 기준",
+    "population": "각차단의 심전도",
+    "statement": "각차단에서는 T파가 QRS 마지막 굴절과 반대 극성이다 — 바뀐 탈분극 순서가 재분극 순서를 바꾼 결과다. 좌각차단의 V1·V2 ST 상승·큰 T파는 허혈 없이도 흔하다 [[harrison-22: 247장 p.1872]] [[harrison-22: 247장 p.1873]]",
+    "exceptions": "일차 변화(허혈·전해질·디곡신)가 함께 있을 수 있다 — 좌각차단에서 오른쪽 가슴 유도의 T파 역위는 허혈의 표지일 수 있다 [[harrison-22: 247장 p.1872]]. 좌각차단은 급성 허혈 변화를 가린다 [[harrison-22: 247장 p.1873]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 247: Electrocardiography",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 247장 p.1871–1874",
+    "checked": "드라이브 22판 장별 문서 H22_247 본문 대조 — 좌심실 비대의 strain(R 큰 유도 ST 하강·T 역위), 좌심실 비대는 흔히 불완전·완전 좌각차단으로 진행, 완전 각차단 QRS ≥ 120 ms, 좌각차단 주 벡터 왼쪽·뒤·중격 탈분극 오른쪽→왼쪽, V1 넓은 QS·V6 R, 우심실 조율이 같은 모양+스파이크, 좌각차단은 관상동맥질환·고혈압성 심질환·대동맥판 질환·심근병증의 표지(p.1871–1872) · 각차단의 이차 ST-T(T파는 QRS 마지막 굴절과 반대), 좌각차단에서 오른쪽 가슴 유도 T파 역위는 허혈 표지일 수 있음(p.1872) · 좌각차단·조율·WPW 가 급성 허혈 변화를 가림, V1·V2 ST 상승·큰 T파는 좌각차단·좌심실 비대에서 허혈 없이도 흔함(p.1873) · 표 247-1 ST 상승 감별에 좌심실 비대/좌각차단(p.1874). Sgarbossa 기준·급성 경색의 상호 하강은 이 장에서 확인하지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-03",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "QRS 0.14초, V1 깊은 QS 에 ST 상승, V6 q 없는 넓은 R 에 ST 하강·T 역위. 흉통 없음·트로포닌 정상. 판독은?",
+    "a": "완전 좌각차단. ST-T 가 QRS 주 방향과 반대로 선 이차 변화라 전벽 경색으로 읽지 않는다."
+   },
+   {
+    "q": "좌각차단에서 V6 의 중격 q 파가 사라지는 이유는?",
+    "a": "좌각이 막히면 중격 탈분극이 오른쪽에서 왼쪽으로 바뀌어, 정상의 왼쪽→오른쪽 초기 벡터가 만들던 작은 q 가 없어진다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.complete-lbbb.discordant-st-not-stemi#v1",
+    "context": "같은 고령 남성, 소견을 글로 바꾼 변형(그림 없음)",
+    "stem": "An 84-year-old man is brought to the emergency department 1 hour after the onset of crushing substernal chest pain with diaphoresis. He has hypertension treated with amlodipine. Blood pressure is 102/64 mm Hg and pulse is 96/min. Crackles are heard at both lung bases. Serum troponin concentration is increased and is higher on repeat measurement 1 hour later. A 12-lead ECG shows sinus rhythm with a QRS duration of 90 ms, ST-segment elevation of 3–4 mm in leads V1 through V4 over upright R waves, and ST-segment depression in leads II, III and aVF. Small q waves are present in leads I and V6. Which of the following is the most likely interpretation of this ECG?",
+    "options": [
+     "Left bundle branch block",
+     "Acute anterior ST-elevation myocardial infarction",
+     "Right bundle branch block",
+     "Left ventricular hypertrophy with strain pattern",
+     "Ventricular preexcitation"
+    ],
+    "answer": 2,
+    "explanation": "The QRS is narrow (90 ms) and septal q waves are preserved, so there is no bundle branch block to explain the ST changes. ST elevation in V1–V4 with inferior ST depression, ongoing chest pain and a rising troponin indicate acute anterior ST-elevation infarction — here the ST elevation is a primary change, not a secondary change to abnormal depolarization.",
+    "of": "imaging-2026-0527",
+    "changed": "흉통 없음·트로포닌 정상·QRS 0.14초 V1 QS → 1시간 지속 흉통·트로포닌 상승·QRS 0.09초에 V1~V4 ST 상승과 하벽 ST 하강 ⇒ 정답이 좌각차단에서 급성 전벽 ST 상승 경색으로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.complete-lbbb.discordant-st-not-stemi#v2",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "A 72-year-old woman comes to the physician for a preoperative evaluation before elective hip replacement. She has had severe aortic stenosis treated with transcatheter aortic valve replacement 1 year ago. She has no chest pain and walks 1 km daily without symptoms. Blood pressure is 132/78 mm Hg and pulse is 72/min. Serum troponin concentration is within the reference range. A 12-lead ECG shows sinus rhythm with a QRS duration of 150 ms and no pacing spikes. Leads V1 through V3 show deep, wide QS complexes with 2-mm ST-segment elevation, and leads I, aVL and V6 show broad, notched R waves without q waves, with ST-segment depression and T-wave inversion. Which of the following is the most likely interpretation of this ECG?",
+    "options": [
+     "Acute anterior ST-elevation myocardial infarction",
+     "Right bundle branch block",
+     "Left bundle branch block",
+     "Left ventricular hypertrophy with strain pattern",
+     "Ventricular paced rhythm"
+    ],
+    "answer": 3,
+    "explanation": "The age, sex and setting differ, but the deciding clues are the same: QRS ≥ 120 ms, deep wide QS in V1–V3 and broad notched R without q in I, aVL and V6. The ST-T changes point opposite to the main QRS deflection, the expected secondary change of LBBB; she has no chest pain and a normal troponin. No pacing spikes precede the QRS, so this is not a paced rhythm. Aortic valve disease, including after transcatheter replacement, is a recognized setting for LBBB.",
+    "of": "imaging-2026-0527",
+    "changed": "85세 남자·3개월 운동 시 호흡곤란 → 72세 여자·수술 전 검사, 심전도 소견을 글로 제시 ⇒ QRS ≥ 0.12초·V1 넓은 QS 에 반대 방향 ST 상승·V6 q 없는 넓은 R·흉통 없음·트로포닌 정상이라는 결정 단서는 같아 답은 그대로 좌각차단",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-06661.png",
+    "kind": "ecg",
+    "at": "기전 — 늦게 깨는 좌심실",
+    "shows": "완전 좌각차단 — 넓은 QRS, V1~V3 깊은 QS 와 반대 방향 ST 상승",
+    "look": [
+     "V1~V3 의 깊고 넓은 QS 와 그 뒤 위로 솟은 ST·T",
+     "I·aVL 의 q 없이 넓고 갈라진 R"
+    ],
+    "label": "complete left bundle branch block (SCP CLBBB, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6661",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/06000/#files-panel",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "넓은 QRS 와 V1~V3 ST 상승 — 경색인가 좌각차단인가",
+  "geo": {
+   "title": "넓은 QRS 와 V1~V3 ST 상승 — 경색인가 좌각차단인가",
+   "w": 680.0,
+   "h": 596.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "V1~V3 ST 상승이 있는 심전도"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 16.0
+    },
+    {
+     "id": "width",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "QRS 가 120 ms 이상인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 85.0
+    },
+    {
+     "id": "measure",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "가장 넓은 유도에서 QRS 폭을",
+      "잰다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 195.0
+    },
+    {
+     "id": "narrow",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "좁은 QRS ST 상승 — 급성",
+      "경색 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 302.0
+    },
+    {
+     "id": "shape",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "V1 넓은 QS, V6 q 없는 넓은",
+      "R?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 302.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 넓은 QRS — 우각차단·",
+      "조율 등"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 409.0
+    },
+    {
+     "id": "clin",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "흉통이나 트로포닌 상승이",
+      "있나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 409.0
+    },
+    {
+     "id": "lbbb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "좌각차단 — ST 상승은 이차",
+      "변화"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 516.0
+    },
+    {
+     "id": "acs",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "좌각차단 + 급성 경색 의심 —",
+      "응급 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 516.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "width",
+     "points": [
+      [
+       453.0,
+       63.0
+      ],
+      [
+       453.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "width",
+     "to": "shape",
+     "points": [
+      [
+       404.0,
+       132.0
+      ],
+      [
+       404.0,
+       181.0
+      ],
+      [
+       339.0,
+       181.0
+      ],
+      [
+       339.0,
+       288.0
+      ],
+      [
+       307.3,
+       288.0
+      ],
+      [
+       307.3,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 394.5,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "width",
+     "to": "narrow",
+     "points": [
+      [
+       502.0,
+       132.0
+      ],
+      [
+       502.0,
+       181.0
+      ],
+      [
+       567.0,
+       181.0
+      ],
+      [
+       567.0,
+       288.0
+      ],
+      [
+       598.7,
+       288.0
+      ],
+      [
+       598.7,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 481.5,
+      "y": 156.0
+     }
+    },
+    {
+     "from": "width",
+     "to": "measure",
+     "points": [
+      [
+       453.0,
+       132.0
+      ],
+      [
+       453.0,
+       195.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모르겠음"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 427.0,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "measure",
+     "to": "shape",
+     "points": [
+      [
+       420.3,
+       259.0
+      ],
+      [
+       420.3,
+       288.0
+      ],
+      [
+       372.7,
+       288.0
+      ],
+      [
+       372.7,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "≥ 120 ms"
+      ],
+      "w": 53.8,
+      "h": 17,
+      "x": 393.5,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "measure",
+     "to": "narrow",
+     "points": [
+      [
+       485.7,
+       259.0
+      ],
+      [
+       485.7,
+       288.0
+      ],
+      [
+       533.3,
+       288.0
+      ],
+      [
+       533.3,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "< 120 ms"
+      ],
+      "w": 53.8,
+      "h": 17,
+      "x": 458.8,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "shape",
+     "to": "clin",
+     "points": [
+      [
+       307.3,
+       366.0
+      ],
+      [
+       307.3,
+       395.0
+      ],
+      [
+       227.0,
+       395.0
+      ],
+      [
+       227.0,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "shape",
+     "to": "other",
+     "points": [
+      [
+       372.7,
+       366.0
+      ],
+      [
+       372.7,
+       395.0
+      ],
+      [
+       453.0,
+       395.0
+      ],
+      [
+       453.0,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "clin",
+     "to": "lbbb",
+     "points": [
+      [
+       194.3,
+       473.0
+      ],
+      [
+       194.3,
+       502.0
+      ],
+      [
+       114.0,
+       502.0
+      ],
+      [
+       114.0,
+       516.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 477.0
+     }
+    },
+    {
+     "from": "clin",
+     "to": "acs",
+     "points": [
+      [
+       259.7,
+       473.0
+      ],
+      [
+       259.7,
+       502.0
+      ],
+      [
+       340.0,
+       502.0
+      ],
+      [
+       340.0,
+       516.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 477.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "V1~V3 ST 상승이 있는 심전도",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "QRS 가 120 ms 이상인가?"
+     }
+    ]
+   },
+   {
+    "id": "width",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "QRS 가 120 ms 이상인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "V1 넓은 QS, V6 q 없는 넓은 R?"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "좁은 QRS ST 상승 — 급성 경색 평가"
+     },
+     {
+      "label": "모르겠음",
+      "to": 3,
+      "toText": "가장 넓은 유도에서 QRS 폭을 잰다"
+     }
+    ]
+   },
+   {
+    "id": "measure",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "가장 넓은 유도에서 QRS 폭을 잰다",
+    "note": "",
+    "branches": [
+     {
+      "label": "≥ 120 ms",
+      "to": 4,
+      "toText": "V1 넓은 QS, V6 q 없는 넓은 R?"
+     },
+     {
+      "label": "< 120 ms",
+      "to": 5,
+      "toText": "좁은 QRS ST 상승 — 급성 경색 평가"
+     }
+    ]
+   },
+   {
+    "id": "shape",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "V1 넓은 QS, V6 q 없는 넓은 R?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "흉통이나 트로포닌 상승이 있나?"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "다른 넓은 QRS — 우각차단·조율 등"
+     }
+    ]
+   },
+   {
+    "id": "narrow",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "좁은 QRS ST 상승 — 급성 경색 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "clin",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "흉통이나 트로포닌 상승이 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 8,
+      "toText": "좌각차단 — ST 상승은 이차 변화"
+     },
+     {
+      "label": "있음",
+      "to": 9,
+      "toText": "좌각차단 + 급성 경색 의심 — 응급 평가"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 넓은 QRS — 우각차단·조율 등",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lbbb",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "좌각차단 — ST 상승은 이차 변화",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "acs",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "좌각차단 + 급성 경색 의심 — 응급 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0527"
+  ],
+  "hasErrors": false
+ },
  "cn.cardio.complete-rbbb.ecg-recognition": {
   "id": "cn.cardio.complete-rbbb.ecg-recognition",
   "title": "완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S",
@@ -23129,10 +23924,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Internal Medicine"
   ],
-  "version": 2,
-  "updated": "2026-10-02",
+  "version": 3,
+  "updated": "2026-11-03",
   "reviewStatus": "unreviewed",
-  "hash": "108f0605037f8ad3",
+  "hash": "2c49ae16a91ce864",
   "summary": [
    "결론: 쿠싱 특이 소견이면 심야 타액 코르티솔·1 mg 야간 덱사메타손 억제검사·24시간 소변 유리코르티솔로 선별.",
    "시험 단서: 넓은 보라색 선조(striae)·멍·근위부 근병증(proximal myopathy)·젊은 나이 골다공증 = 쿠싱증후군.",
@@ -23373,7 +24168,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13718705_figure4.jpg",
+    "kind": "photo",
+    "at": "가르는 소견 — 어느 호르몬 과잉인가",
+    "shows": "의인성 쿠싱증후군(장기 국소 스테로이드) — 허벅지 안쪽의 넓은 자주색 선조",
+    "look": [
+     "허벅지 안쪽을 가로지르는 넓고 자주색인 줄무늬",
+     "줄무늬 사이의 얇아 보이는 피부"
+    ],
+    "label": "「Extensive violaceous striae affecting left inner thigh after six months of topical clobetasol treatment.」 — Iatrogenic Cushing Syndrome With Glucocorticoid-Induced Adrenal Insufficiency Following Prolonged Topical Clobetasol Use in an Adolescent",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Iatrogenic Cushing Syndrome With Glucocorticoid-Induced Adrenal Insufficiency Following Prolonged Topical Clobetasol Use in an Adolescent. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.117155",
+    "citedBy": null,
+    "credit": "Iatrogenic Cushing Syndrome With Glucocorticoid-Induced Adrenal Insufficiency Following Prolonged Topical Clobetasol Use in an Adolescent. Cureus. 2026 Sep 29;18(9):e117155. doi: 10.7759/cureus.117155 (CC BY) — Figure 4",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13718705/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "쿠싱 의심 — 선별에서 원인 감별로",
   "geo": {
    "title": "쿠싱 의심 — 선별에서 원인 감별로",
@@ -35822,6 +36639,818 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "usmle-2026-0045"
+  ],
+  "hasErrors": false
+ },
+ "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d": {
+  "id": "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d",
+  "title": "신장 이식 거부 — C4d·공여자 특이 항체는 항체 매개",
+  "objective": "신장 이식 뒤 크레아티닌 상승에서 생검의 모세혈관 C4d 침착·공여자 특이 항체로 항체 매개 거부의 기전을 설명하고 T 세포 매개 거부·초급성 거부와 가른다",
+  "objectiveKind": "기전",
+  "condition": "신장 이식 항체 매개 거부(antibody-mediated rejection, AMR)",
+  "topic": "Nephrology",
+  "seeAlso": [
+   "Immunology"
+  ],
+  "version": 1,
+  "updated": "2026-11-03",
+  "reviewStatus": "unreviewed",
+  "hash": "3496615de68d88d3",
+  "summary": [
+   "결론: 세관주위 모세혈관 C4d + 순환 공여자 특이 항체(DSA) = 항체가 내피의 공여자 항원에 붙어 보체를 켠 항체 매개 거부.",
+   "시험 단서: 이식 수개월~수년 뒤 면역억제제 복용 누락, 크레아티닌 상승, 생검 모세혈관염·C4d 양성(peritubular capillary C4d).",
+   "왜: C4d 는 고전 경로 보체 활성화의 발자국이라 항체가 손상의 주체임을 보여 준다 — T 세포 매개 거부에는 없다.",
+   "T 세포 매개 거부는 간질·세관·혈관의 면역세포 침윤(세관염)이 진단 소견이다.",
+   "초급성 거부는 이식 때 이미 있던 항체로 생긴다 — 이식 전 교차시험 양성이 유일한 절대 면역학적 금기다."
+  ],
+  "sections": [
+   {
+    "title": "기전 — 공여자 항원에서 모세혈관 손상까지",
+    "deep": false,
+    "html": "<p>이식 뒤 공여자 항원이 수용자의 배액 림프절로 옮겨져 동종면역 반응을 켠다. 여포 보조 T 세포(Tfh)가 B 세포를 형질세포로 분화시키고, 형질세포가 공여자 HLA·비HLA 항원에 대한 항체를 만든다. 이 항체가 이식 신장에 침착해 보체 의존·비의존 기전으로 손상을 준다 <sup>[1 325장 p.2407]</sup>. 항체가 내피에 붙어 고전 경로 보체가 켜지면 C4 가 쪼개진 조각 C4d 가 세관주위 모세혈관·사구체 기저막에 공유결합으로 남는다 — 그래서 C4d 는 보체 활성의 「발자국」이다 <sup>[1 325장 p.2407]</sup>. 손상이 내피에 몰리므로 생검에서는 모세혈관 안 염증세포(모세혈관염)가 보이고 세관 염증은 적다.</p>"
+   },
+   {
+    "title": "판단 — 왜 T 세포가 아니라 항체인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>C4d + DSA</strong>: 세관주위 모세혈관 C4d 와 순환 공여자 특이 항체는 항체 매개 거부의 진단 기준이다 <sup>[1 325장 p.2407]</sup>.</li>\n<li><strong>세관염이 적다</strong>: T 세포 매개 거부의 진단 소견은 간질·세관·혈관의 면역세포 침윤이다 <sup>[1 325장 p.2410]</sup> — 이것이 적으면 T 세포가 주체가 아니다.</li>\n<li><strong>새로 생긴 항체</strong>: 교차시험 음성으로 이식하고 오래 안정했다면 항체는 이식 뒤 생겼다. 이식 전부터 있던 항체(교차시험 양성)는 초급성 거부를 예측한다 <sup>[1 325장 p.2407]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 생검과 혈액 항체",
+    "deep": false,
+    "html": "<ul>\n<li>거부는 발열·이식편 압통 없이 크레아티닌 상승만으로 나타날 수 있다. 먼저 급성 세관 손상·칼시뉴린 억제제 독성·BK 신병증·재발 사구체병을 배제하고, 도플러 초음파로 혈관·요로 폐쇄를 본다 <sup>[1 325장 p.2410]</sup>.</li>\n<li>이식편 생검이 T 세포 매개·항체 매개 거부 진단의 표준이다 <sup>[1 325장 p.2410]</sup>.</li>\n<li>칼시뉴린 억제제는 신독성이 있고 치료 범위가 좁아 농도를 감시한다 <sup>[1 325장 p.2409]</sup> — 농도가 낮으면 독성보다 면역억제 부족을 생각한다.</li>\n<li>BK 바이러스 재활성은 면역억제가 <strong>과할 때</strong> 생긴다 <sup>[1 325장 p.2410]</sup> — 면역억제가 부족한 환자와 방향이 반대다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>감작(공여자 항체를 만드는 계기)의 알려진 원인은 수혈·이전 이식·임신이다 <sup>[1 325장 p.2407]</sup>.</li>\n<li>항체 매개 거부의 치료는 여전히 어렵고 혈장교환·IVIG·리툭시맙(B 세포)·보르테조밉(형질세포)을 적극적으로 쓴다. T 세포 매개 거부는 고용량 스테로이드, 반응이 없으면 ATG <sup>[1 325장 p.2410]</sup>.</li>\n<li>만성 이식 기능 저하의 원인에 만성 활동성 항체 매개 거부가 들어간다 <sup>[1 325장 p.2410]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 325장 p.2407–2410)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "이식 신장 거부 — 기전과 소견",
+    "columns": [
+     "거부",
+     "기전",
+     "가르는 소견"
+    ],
+    "rows": [
+     [
+      "초급성",
+      "이식 전부터 있던 공여자 HLA 항체 <sup>[1 325장 p.2407]</sup>",
+      "교차시험 양성(이식 금기), 혈관염성 사건 <sup>[1 325장 p.2407]</sup>"
+     ],
+     [
+      "T 세포 매개",
+      "수용자 CD4+(class II)·CD8+(class I) T 세포가 공여자 HLA 에 반응 <sup>[1 325장 p.2407]</sup>",
+      "간질·세관·혈관의 면역세포 침윤(Banff) <sup>[1 325장 p.2410]</sup>"
+     ],
+     [
+      "항체 매개",
+      "형질세포가 만든 공여자 HLA·비HLA 항체가 이식편에 침착, 보체 의존·비의존 손상 <sup>[1 325장 p.2407]</sup>",
+      "내피 손상 + 세관주위 모세혈관 C4d + 순환 DSA <sup>[1 325장 p.2407]</sup> <sup>[1 325장 p.2410]</sup>"
+     ],
+     [
+      "BK 바이러스 신병증",
+      "면역억제 정도와 관련된 잠복 폴리오마바이러스 재활성 <sup>[1 325장 p.2410]</sup>",
+      "BK 바이러스 양, 생검의 세관 세포병변·바이러스 항원 <sup>[1 325장 p.2410]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "T 세포 매개 거부 vs 항체 매개 거부",
+    "point": "둘 다 면역억제 부족 뒤 크레아티닌만 오를 수 있다. T 세포 매개는 수용자 T 세포가 공여자 HLA 에 반응해 간질·세관에 침윤하는 것(세관염)이 소견이고, 항체 매개는 모세혈관 내피 손상·C4d 침착·순환 DSA 가 소견이다. 세관 염증이 적고 C4d 가 미만성이면 항체 매개다.",
+    "exception": "두 기전이 함께 있을 수 있다 — 생검이 두 소견을 다 보이면 둘 다 읽는다.",
+    "cites": "<sup>[1 325장 p.2407]</sup> <sup>[1 325장 p.2410]</sup>"
+   },
+   {
+    "contrast": "초급성 거부 vs 새로 생긴 항체의 항체 매개 거부",
+    "point": "초급성 거부는 이식 전부터 있던 공여자 특이 항체(교차시험 양성)로 이식 직후에 온다. 교차시험 음성으로 이식하고 1년 넘게 안정했다면 항체는 이식 뒤 새로 생겼다.",
+    "exception": "",
+    "cites": "<sup>[1 325장 p.2407]</sup>"
+   },
+   {
+    "contrast": "칼시뉴린 억제제 신독성 vs 거부",
+    "point": "칼시뉴린 억제제는 치료 범위가 좁고 신독성이 있어 농도를 감시한다. 농도가 목표보다 낮고 복용을 빼먹었다면 독성보다 거부를 먼저 생각한다.",
+    "exception": "",
+    "cites": "<sup>[1 325장 p.2409]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "이식 때 이미 교차시험 양성이면 초급성 거부 위험 — 교차시험 양성은 이식의 유일한 절대 면역학적 금기다 <sup>[1 325장 p.2407]</sup>.",
+   "T 세포 매개와 항체 매개가 함께 있으면 둘 다 읽는다.",
+   "치료: T 세포 매개는 고용량 스테로이드→ATG, 항체 매개는 혈장교환·IVIG·리툭시맙·보르테조밉 <sup>[1 325장 p.2410]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "amr-dx",
+    "name": "항체 매개 거부의 진단 근거",
+    "kind": "진단 기준",
+    "population": "신장 이식 뒤 기능 저하",
+    "statement": "세관주위 모세혈관·사구체 기저막의 C4d 침착은 보체 활성화의 흔적이며, 순환 공여자 특이 항체와 함께 항체 매개 거부의 진단 기준이다 [[harrison-22: 325장 p.2407]]. 내피 손상과 세관주위 모세혈관 C4d 가 보이면 항체 매개 거부의 증거이고 대개 순환 DSA 가 함께 검출된다 [[harrison-22: 325장 p.2410]]",
+    "exceptions": "이식편 생검이 T 세포 매개·항체 매개 거부 진단의 표준이다 [[harrison-22: 325장 p.2410]]. C4d 음성 항체 매개 거부의 기준은 이 장에서 다루지 않는다",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "rejection-tx",
+    "name": "거부의 치료",
+    "kind": "치료 권고",
+    "population": "생검으로 확인한 급성 거부",
+    "statement": "T 세포 매개 거부는 고용량 스테로이드(정맥 메틸프레드니솔론 500~1000 mg 3일), 반응이 없으면 ATG. 항체 매개 거부는 혈장교환·IVIG·리툭시맙·보르테조밉을 적극적으로 쓴다 [[harrison-22: 325장 p.2410]]",
+    "exceptions": "항체 매개 거부의 치료는 여전히 어렵다 [[harrison-22: 325장 p.2410]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 325: Kidney Transplantation",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 325장 p.2407–2410",
+    "checked": "드라이브 22판 장별 문서 H22_325 본문 대조 — 교차시험 양성 = 기존 공여자 특이 class I 항체, 초급성(혈관염성) 거부 예측, 유일한 절대 면역학적 금기 · 감작 원인(수혈·이전 이식·임신) · T 세포 매개 거부(CD4+ class II, CD8+ class I 세포독성) · 항체 매개 거부: 이식 뒤 공여자 항원이 림프절에서 Tfh→B 세포→형질세포, HLA·비HLA 항체 침착, 보체 의존·비의존 손상, 세관주위 모세혈관·사구체 기저막 C4d = 보체 활성 흔적, 순환 DSA 와 함께 진단 기준(p.2407) · 칼시뉴린 억제제 신독성·좁은 치료 범위로 농도 감시(p.2409) · 거부는 크레아티닌 상승만으로 나타날 수 있고 급성 세관 손상·칼시뉴린 독성·BK 신병증·재발 사구체병을 배제, 도플러로 혈관·폐쇄 확인, 생검이 표준, T 세포 매개 = 간질·세관·혈관 침윤(Banff)·치료 스테로이드→ATG, 항체 매개 = 내피 손상+세관주위 모세혈관 C4d+대개 DSA·치료 혈장교환·IVIG·리툭시맙·보르테조밉, BK 는 면역억제 정도와 관련(p.2409–2410). 초급성 거부의 발생 시간(분~시간)은 이 장에서 수치로 확인하지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-03",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "이식 신장 생검의 세관주위 모세혈관 C4d 침착은 무엇을 뜻하나?",
+    "a": "항체가 내피의 공여자 항원에 붙어 고전 경로 보체를 활성화한 흔적 — 순환 DSA 와 함께 항체 매개 거부의 진단 근거."
+   },
+   {
+    "q": "교차시험 음성으로 이식한 뒤 14개월째 항체 매개 거부가 생겼다. 항체는 언제 생겼나?",
+    "a": "이식 뒤 새로(de novo). 면역억제 부족이 계기가 되어 공여자 항원에 대한 B 세포·형질세포 반응이 생겼다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d#v1",
+    "context": "같은 복용 누락 이식 환자, 생검 소견만 바꾼 변형",
+    "stem": "A 52-year-old woman comes to the transplant clinic 8 months after receiving a living-donor kidney transplant for diabetic nephropathy. The pretransplant crossmatch was negative, and her serum creatinine concentration had been stable at 1.1 mg/dL. She says she ran out of her medications 3 weeks ago and has not refilled them. She has no fever or pain over the graft. Serum creatinine concentration is 1.9 mg/dL, and the tacrolimus trough level is below the target range. Plasma BK virus PCR is negative, and no donor-specific anti-HLA antibodies are detected. Doppler ultrasonography shows normal graft perfusion without hydronephrosis. A biopsy of the graft shows dense interstitial infiltrates of lymphocytes with lymphocytes invading the tubular epithelium; the peritubular capillaries show no C4d staining. Which of the following is the most likely mechanism of this graft dysfunction?",
+    "options": [
+     "Preformed recipient antibodies against donor antigens present at surgery",
+     "Recipient CD8+ T cells recognizing donor MHC class I on tubular cells",
+     "Calcineurin inhibitor–induced constriction of the afferent arterioles",
+     "Newly formed recipient antibodies against donor HLA on graft endothelium",
+     "Donor T lymphocytes in the graft reacting against recipient tissue antigens"
+    ],
+    "answer": 2,
+    "explanation": "Missed doses again lowered immunosuppression, but the biopsy now shows tubulitis and interstitial lymphocytic infiltration with negative C4d and no donor-specific antibody. This is T cell–mediated rejection: recipient cytotoxic CD8+ T cells recognize donor class I HLA on tubular cells. Without C4d and DSA there is no evidence that antibody and complement drive the injury.",
+    "of": "usmle-2026-0237",
+    "changed": "모세혈관염·미만성 C4d·공여자 특이 항체 검출 → 세관 상피 안 림프구(세관염)·간질 림프구 침윤, C4d 음성, 공여자 특이 항체 없음 ⇒ 정답이 새 항체의 항체 매개 거부에서 CD8+ T 세포의 T 세포 매개 거부로",
+    "flip": true
+   },
+   {
+    "id": "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d#v2",
+    "context": "겉모습만 바꾼 변형",
+    "stem": "A 34-year-old woman comes to the physician because of a rising serum creatinine concentration found on routine testing. Three years ago she received a living-related kidney transplant from her brother for lupus nephritis; the pretransplant crossmatch was negative, and her creatinine concentration had remained at 0.9 mg/dL. Six months ago, after delivering a healthy child, she stopped taking mycophenolate on her own and has taken tacrolimus irregularly. She has no fever, dysuria or graft tenderness. Serum creatinine concentration is 1.8 mg/dL. Urinalysis shows 1+ protein and no leukocytes. Plasma BK virus PCR is negative. Donor-specific anti-HLA class II antibodies are detected; none were present before transplantation. A graft biopsy shows margination of mononuclear cells and neutrophils in peritubular capillaries and glomeruli with diffuse C4d staining of the peritubular capillaries; tubulitis is minimal and there are no viral inclusions. Which of the following is the most likely mechanism of this graft dysfunction?",
+    "options": [
+     "Newly formed recipient antibodies against donor HLA on graft endothelium",
+     "Preformed recipient antibodies against donor antigens present at surgery",
+     "Recipient CD8+ T cells recognizing donor MHC class I on tubular cells",
+     "Recurrent immune complex deposition from lupus nephritis",
+     "Reactivation of latent polyomavirus in tubular epithelium"
+    ],
+    "answer": 1,
+    "explanation": "Age, sex, donor type and the reason for nonadherence differ, but the deciding clues are the same: negative pretransplant crossmatch with years of stable function, then capillaritis with diffuse peritubular capillary C4d and newly detected donor-specific antibody. Antibodies formed after transplantation bind donor HLA on graft endothelium and activate complement. Minimal tubulitis argues against T cell–mediated rejection, and the negative BK PCR without inclusions argues against BK nephropathy. Pregnancy is also a known sensitizing event.",
+    "of": "usmle-2026-0237",
+    "changed": "46세 남자·사망자 기증·비용 때문의 저녁 복용 누락 → 34세 여자·생체 기증·임신 뒤 자가 중단, 크레아티닌·생검 소견을 다른 말로 ⇒ 교차시험 음성·늦은 상승·모세혈관염·세관주위 모세혈관 C4d·새 공여자 특이 항체라는 결정 단서는 같아 답은 그대로 항체 매개 거부",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "이식 신장 크레아티닌 상승 — 거부의 기전 가르기",
+  "geo": {
+   "title": "이식 신장 크레아티닌 상승 — 거부의 기전 가르기",
+   "w": 680.0,
+   "h": 679.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "이식 뒤 크레아티닌 상승"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "other",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "폐쇄·혈관·약물 농도·BK 로",
+      "설명되나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 85.0
+    },
+    {
+     "id": "checkoth",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "도플러 초음파·약물 농도·BK",
+      "PCR 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 192.0
+    },
+    {
+     "id": "nonrej",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "거부 외 원인 — 그 원인을",
+      "치료"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 299.0
+    },
+    {
+     "id": "biopsy",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "이식편 생검 + 공여자 특이",
+      "항체 검사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 299.0
+    },
+    {
+     "id": "c4d",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "모세혈관염·C4d 침착과 DSA",
+      "가 있나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 385.0
+    },
+    {
+     "id": "amr",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "항체 매개 거부 — 새 항체·",
+      "보체"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 492.0
+    },
+    {
+     "id": "tcell",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "세관염·간질 림프구 침윤이",
+      "주인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 492.0
+    },
+    {
+     "id": "tcmr",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "T 세포 매개 거부"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 599.0
+    },
+    {
+     "id": "more",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "다른 원인 재검토 — 재발",
+      "사구체병 등"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 599.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "other",
+     "points": [
+      [
+       227.0,
+       63.0
+      ],
+      [
+       227.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "other",
+     "to": "nonrej",
+     "points": [
+      [
+       178.0,
+       149.0
+      ],
+      [
+       178.0,
+       178.0
+      ],
+      [
+       113.0,
+       178.0
+      ],
+      [
+       113.0,
+       285.0
+      ],
+      [
+       81.3,
+       285.0
+      ],
+      [
+       81.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 168.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "other",
+     "to": "biopsy",
+     "points": [
+      [
+       276.0,
+       149.0
+      ],
+      [
+       276.0,
+       178.0
+      ],
+      [
+       341.0,
+       178.0
+      ],
+      [
+       341.0,
+       285.0
+      ],
+      [
+       372.7,
+       285.0
+      ],
+      [
+       372.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 255.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "other",
+     "to": "checkoth",
+     "points": [
+      [
+       227.0,
+       149.0
+      ],
+      [
+       227.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "checkoth",
+     "to": "nonrej",
+     "points": [
+      [
+       194.3,
+       256.0
+      ],
+      [
+       194.3,
+       285.0
+      ],
+      [
+       146.7,
+       285.0
+      ],
+      [
+       146.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "원인 있음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 166.5,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "checkoth",
+     "to": "biopsy",
+     "points": [
+      [
+       259.7,
+       256.0
+      ],
+      [
+       259.7,
+       285.0
+      ],
+      [
+       307.3,
+       285.0
+      ],
+      [
+       307.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "원인 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "biopsy",
+     "to": "c4d",
+     "points": [
+      [
+       340.0,
+       363.0
+      ],
+      [
+       340.0,
+       385.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "c4d",
+     "to": "amr",
+     "points": [
+      [
+       307.3,
+       449.0
+      ],
+      [
+       307.3,
+       478.0
+      ],
+      [
+       227.0,
+       478.0
+      ],
+      [
+       227.0,
+       492.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 453.0
+     }
+    },
+    {
+     "from": "c4d",
+     "to": "tcell",
+     "points": [
+      [
+       372.7,
+       449.0
+      ],
+      [
+       372.7,
+       478.0
+      ],
+      [
+       453.0,
+       478.0
+      ],
+      [
+       453.0,
+       492.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 453.0
+     }
+    },
+    {
+     "from": "tcell",
+     "to": "tcmr",
+     "points": [
+      [
+       420.3,
+       556.0
+      ],
+      [
+       420.3,
+       585.0
+      ],
+      [
+       340.0,
+       585.0
+      ],
+      [
+       340.0,
+       599.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 560.0
+     }
+    },
+    {
+     "from": "tcell",
+     "to": "more",
+     "points": [
+      [
+       485.7,
+       556.0
+      ],
+      [
+       485.7,
+       585.0
+      ],
+      [
+       566.0,
+       585.0
+      ],
+      [
+       566.0,
+       599.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 560.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "이식 뒤 크레아티닌 상승",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "폐쇄·혈관·약물 농도·BK 로 설명되나?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "폐쇄·혈관·약물 농도·BK 로 설명되나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "거부 외 원인 — 그 원인을 치료"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "이식편 생검 + 공여자 특이 항체 검사"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "도플러 초음파·약물 농도·BK PCR 확인"
+     }
+    ]
+   },
+   {
+    "id": "checkoth",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "도플러 초음파·약물 농도·BK PCR 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "원인 있음",
+      "to": 4,
+      "toText": "거부 외 원인 — 그 원인을 치료"
+     },
+     {
+      "label": "원인 없음",
+      "to": 5,
+      "toText": "이식편 생검 + 공여자 특이 항체 검사"
+     }
+    ]
+   },
+   {
+    "id": "nonrej",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "거부 외 원인 — 그 원인을 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "biopsy",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "이식편 생검 + 공여자 특이 항체 검사",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "모세혈관염·C4d 침착과 DSA 가 있나?"
+     }
+    ]
+   },
+   {
+    "id": "c4d",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "모세혈관염·C4d 침착과 DSA 가 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "항체 매개 거부 — 새 항체·보체"
+     },
+     {
+      "label": "아니오",
+      "to": 8,
+      "toText": "세관염·간질 림프구 침윤이 주인가?"
+     }
+    ]
+   },
+   {
+    "id": "amr",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "항체 매개 거부 — 새 항체·보체",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tcell",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "세관염·간질 림프구 침윤이 주인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "T 세포 매개 거부"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "다른 원인 재검토 — 재발 사구체병 등"
+     }
+    ]
+   },
+   {
+    "id": "tcmr",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "T 세포 매개 거부",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "more",
+    "num": 10,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "다른 원인 재검토 — 재발 사구체병 등",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0237"
   ],
   "hasErrors": false
  },
@@ -55998,7 +57627,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-02",
   "reviewStatus": "unreviewed",
-  "hash": "002ae314f2f3c3d5",
+  "hash": "5cc9854416465069",
   "summary": [
    "결론: 안압 정상 + 녹내장성 시신경유두 변화 = 정상안압 녹내장 의심 → 다음은 자동 정적 시야검사.",
    "시험 단서: 검진 안저사진의 비대칭 함몰비, 테두리 패임·유두 출혈(disc hemorrhage), 쐐기 모양 신경섬유층 결손.",
@@ -79430,6 +81059,784 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "usmle-2026-0172"
+  ],
+  "hasErrors": false
+ },
+ "cn.physio.distal-rta.alpha-intercalated-h-secretion": {
+  "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion",
+  "title": "원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다",
+  "objective": "정상 음이온 차 대사산증에서 소변 음이온 차·소변 pH·혈청 칼륨으로 원위(1형) 신세관산증을 가려 집합관 H+ 분비 장애로 설명하고 근위(2형)·4형과 구별한다",
+  "objectiveKind": "기전",
+  "condition": "원위(1형) 신세관산증(distal renal tubular acidosis, type 1 RTA)",
+  "topic": "Nephrology",
+  "seeAlso": [
+   "Physiology",
+   "Rheumatology"
+  ],
+  "version": 1,
+  "updated": "2026-11-03",
+  "reviewStatus": "unreviewed",
+  "hash": "6f967ab623d0de04",
+  "summary": [
+   "결론: 정상 음이온 차 산증 + 소변 음이온 차 양수 + 소변 pH > 5.5 + 저칼륨 = 원위(1형) 신세관산증.",
+   "시험 단서: 신석회화·결석, 근력 저하(저칼륨), 쇼그렌병·암포테리신 B — distal (type 1) RTA.",
+   "왜: 집합관이 H+ 를 내보내지 못해 산혈증에도 소변을 산성화하지 못하고 암모늄 배설이 낮다.",
+   "근위(2형)는 혈청 중탄산이 낮아진 상태에서 소변 pH < 5.5 로 산성화된다 — 흔히 Fanconi(포도당뇨·인산뇨).",
+   "4형은 고칼륨혈증 — 알도스테론 결핍·저항, 고칼륨이 암모니아 생성을 억제한다."
+  ],
+  "sections": [
+   {
+    "title": "기전 — 집합관이 산을 내보내지 못하면",
+    "deep": false,
+    "html": "<p>콩팥은 매일 생기는 비휘발성 산을 근위세관의 중탄산 재흡수와 원위 네프론의 H+ 분비(적정산·암모늄으로 배설)로 처리한다. 원위(1형)에서는 집합관의 H+ 분비가 떨어져 산혈증인데도 소변을 산성화하지 못하고(pH &gt; 5.5), H+ 를 가둘 암모늄 배설도 낮다(소변 음이온 차 양수) <sup>[1 58장 p.372]</sup>. H+ 를 내보내는 세포가 집합관의 α-사이세포(H+-ATPase)라는 세포 수준의 설명은 해리슨 이 장에서 확인하지 않았다. 대부분 저구연산뇨·고칼슘뇨가 함께 생겨 알칼리 소변에서 인산칼슘이 가라앉아 신결석·신석회화·뼈 질환이 흔하고, 저칼륨혈증이 근력 저하를 낸다 <sup>[1 58장 p.372]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 소변 음이온 차·소변 pH·칼륨",
+    "deep": false,
+    "html": "<ul>\n<li><strong>음이온 차가 정상인가</strong>: 정상 음이온 차 산증에서는 Cl 상승이 HCO3 감소와 거의 같다 — 어긋나면 혼합 장애를 생각한다 <sup>[1 58장 p.372]</sup>.</li>\n<li><strong>위장관인가 콩팥인가</strong>: 소변 음이온 차 [Na+ + K+]u − [Cl−]u 가 음수면 암모늄 배설이 늘어 위장관, 양수면 신세관이다. 설사에서도 소변 pH 는 대개 6 을 넘으므로 pH 만으로 가르지 않는다 <sup>[1 58장 p.372]</sup>.</li>\n<li><strong>어느 신세관인가</strong>: 칼륨이 높으면 4형, 낮으면 소변 pH 를 본다 — 중탄산이 이미 낮은데 pH &gt; 5.5 면 원위, &lt; 5.5 면 근위 <sup>[1 58장 p.372]</sup>.</li>\n<li>호흡 보상은 Winter 식(1.5 × HCO3 + 8 ± 2)으로 확인한다 <sup>[1 58장 p.367]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>원위형은 먼저 저칼륨을 교정한 뒤 알칼리로 중탄산 24~26 meq/L 를 유지하면 결석이 줄고 골밀도·성장·신기능이 지켜진다 <sup>[1 58장 p.373]</sup>.</li>\n<li>쇼그렌병은 간질 신염으로 신세관 기능 장애와 산증을 일으킬 수 있고, 신세관산증 증상은 쇼그렌병을 의심할 단서다. 신세관산증 환자에게 경구 NaHCO3 를 준다 <sup>[1 373장 p.2877]</sup> <sup>[1 373장 p.2878]</sup> <sup>[1 373장 p.2879]</sup>.</li>\n<li>약물(암포테리신 B·이포스파미드)도 원위형을 일으킨다 <sup>[1 58장 p.372]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 소변 음이온 차의 신뢰도</strong> — 시험 기준: 소변 음이온 차 양수 = 암모늄 배설 낮음 = 신세관 원인 <sup>[1 58장 p.372]</sup> / 다른 기준: 계산값과 실제 소변 암모늄의 상관이 약해 소변 암모늄을 직접 재자는 제안 <sup>[1 58장 p.372]</sup> / 왜 다른가: 소변에 다른 음이온(케톤 등)이 많으면 계산이 암모늄을 반영하지 못한다(원문 미대조) / 시험에서는: KMLE · USMLE 모두 소변 음이온 차 해석을 그대로 묻는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "정상 음이온 차 대사산증 — 어디서 산이 남나",
+    "columns": [
+     "원인",
+     "소변 음이온 차·pH",
+     "칼륨·동반 소견"
+    ],
+    "rows": [
+     [
+      "설사(위장관 중탄산 손실)",
+      "음수(암모늄↑), pH 대개 &gt; 6 <sup>[1 58장 p.372]</sup>",
+      "저칼륨, 설사 병력"
+     ],
+     [
+      "원위(1형) 신세관산증",
+      "양수(암모늄↓), 산혈증에도 pH &gt; 5.5 <sup>[1 58장 p.372]</sup>",
+      "저칼륨, 저구연산뇨·고칼슘뇨 → 결석·신석회화·뼈 질환 <sup>[1 58장 p.372]</sup>"
+     ],
+     [
+      "근위(2형) 신세관산증",
+      "중탄산 낮을 때 pH &lt; 5.5, 알칼리 투여 시 &gt; 5.5 <sup>[1 58장 p.372]</sup>",
+      "포도당뇨·아미노산뇨·인산뇨(Fanconi), 알칼리 치료 중 저칼륨 <sup>[1 58장 p.372]</sup>"
+     ],
+     [
+      "4형(전반적 원위 네프론 장애)",
+      "암모늄 배설 늘 감소 <sup>[1 58장 p.372]</sup>",
+      "GFR 에 비해 큰 고칼륨, 당뇨병성 신증·폐쇄성 요로병증·간질 질환 <sup>[1 58장 p.372]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "근위(2형) vs 원위(1형) — 둘 다 저칼륨에 소변 pH 가 높을 수 있다?",
+    "point": "근위형의 소변 pH 는 혈청 중탄산이 낮아진 상태에서는 5.5 아래로 내려가고, 알칼리를 투여할 때만 5.5 를 넘는다. 이미 산혈증(중탄산 낮음)인데 소변 pH 가 5.5 를 넘으면 원위형이다. 신석회화·결석도 원위형의 특징이다(저구연산뇨·고칼슘뇨).",
+    "exception": "근위형은 흔히 포도당뇨·아미노산뇨·인산뇨(Fanconi)를 동반한다 — 정상 혈당의 포도당뇨가 보이면 근위형 쪽이다.",
+    "cites": "<sup>[1 58장 p.372]</sup>"
+   },
+   {
+    "contrast": "4형 vs 1형",
+    "point": "4형은 칼륨·산 분비가 함께 떨어져 GFR 저하에 비해 고칼륨혈증이 크다. 칼륨이 낮으면 4형이 아니다.",
+    "exception": "",
+    "cites": "<sup>[1 58장 p.372]</sup>"
+   },
+   {
+    "contrast": "설사 vs 신세관산증 — 소변 pH 가 6 을 넘으면 신장 탓?",
+    "point": "설사에서도 산혈증·저칼륨이 암모늄 생성을 늘려 소변 pH 가 6 을 넘을 수 있다. 소변 음이온 차가 음수(암모늄 많음)면 위장관, 양수(암모늄 적음)면 신세관이다.",
+    "exception": "소변 음이온 차는 실제 소변 암모늄과의 상관이 약하다는 연구가 있다 — 가능하면 소변 암모늄을 잰다.",
+    "cites": "<sup>[1 58장 p.372]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "근위형은 흔히 포도당뇨·아미노산뇨·인산뇨(Fanconi)를 동반한다 — 소변 음이온 차만으로 원위형과 늘 갈리지는 않는다 <sup>[1 58장 p.372]</sup>.",
+   "원위형의 신결석·신석회화는 저구연산뇨·고칼슘뇨 때문이다 <sup>[1 58장 p.372]</sup>.",
+   "원인: 쇼그렌병(간질 신염) <sup>[1 373장 p.2877]</sup>, 약물(암포테리신 B·이포스파미드) <sup>[1 58장 p.372]</sup>.",
+   "호흡 보상 확인: 예상 Paco2 = 1.5 × HCO3 + 8 ± 2(Winter 식) <sup>[1 58장 p.367]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "drta",
+    "name": "원위(1형) 신세관산증의 특징",
+    "kind": "진단 기준",
+    "population": "정상 음이온 차 대사산증",
+    "statement": "저칼륨혈증, 정상 음이온 차 대사산증, 낮은 소변 암모늄 배설(소변 음이온 차 양수), 그 산혈증에 맞지 않게 높은 소변 pH(> 5.5). 대부분 저구연산뇨·고칼슘뇨가 있어 신결석·신석회화·뼈 질환이 흔하다 [[harrison-22: 58장 p.372]]",
+    "exceptions": "약물(암포테리신 B·이포스파미드)과 유전 원인이 있다 [[harrison-22: 58장 p.372]]. 쇼그렌병의 간질 신염이 신세관 기능 장애와 산증을 일으키고, 치료하지 않은 산증은 신석회화로 갈 수 있다 [[harrison-22: 373장 p.2877]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "uag",
+    "name": "소변 음이온 차",
+    "kind": "계산",
+    "population": "정상 음이온 차 대사산증",
+    "statement": "소변 음이온 차 = [Na+ + K+]u − [Cl−]u. 음수면 소변 암모늄이 적절히 늘어 신장 밖 원인, 양수면 암모늄이 낮아 신세관 원인을 시사한다 [[harrison-22: 58장 p.372]]",
+    "exceptions": "계산값과 실제 소변 암모늄의 상관이 약하다는 연구가 있어 소변 암모늄 직접 측정을 권한다 [[harrison-22: 58장 p.372]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "drta-tx",
+    "name": "원위 신세관산증의 치료",
+    "kind": "치료 권고",
+    "population": "원위(1형) 신세관산증",
+    "statement": "먼저 저칼륨혈증을 교정하고, 그 뒤 구연산 나트륨이나 NaHCO3 로 혈청 중탄산을 24~26 meq/L 로 유지한다 — 결석 빈도 감소·골밀도 개선·성장 회복·신기능 보존 [[harrison-22: 58장 p.373]]",
+    "exceptions": "근위형은 알칼리가 소변 중탄산·칼륨 배설을 늘려 칼륨 보충이 거의 늘 필요하다 [[harrison-22: 58장 p.373]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 58: Acidosis and Alkalosis; Chapter 373: Sjögren's Disease",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 58장 p.367, 372–373; 373장 p.2877–2879",
+    "checked": "드라이브 22판 장별 문서 H22_58·H22_373 본문 대조 — Winter 식 Paco2 = 1.5×HCO3 + 8 ± 2(58장 p.367) · 정상 음이온 차 산증은 Cl·HCO3 상호 변화, 설사에서 소변 pH 대개 > 6(암모늄↑), 소변 음이온 차 정의·해석·상관 한계, 근위형(Fanconi, 중탄산 낮을 때 pH < 5.5·알칼리 시 > 5.5, 알칼리 치료 시 저칼륨), 원위형 특징(저칼륨·정상 음이온 차·암모늄↓·pH > 5.5·저구연산뇨·고칼슘뇨·결석·신석회화·뼈 질환), 4형(고칼륨 불균형, 암모늄 감소), 표 58-5 약물 원인(암포테리신 B·이포스파미드)(58장 p.372) · 치료: 원위형 칼륨 먼저 교정 뒤 알칼리로 HCO3 24–26, 근위형 칼륨 보충, 4형 고칼륨이 암모니아 생성 억제(58장 p.373) · 쇼그렌병 간질 신염·신세관 기능 장애 ± 산증·치료 안 한 산증의 신석회화(373장 p.2877), 신세관산증 증상이 쇼그렌병을 의심할 단서(373장 p.2878), 신세관산증 환자에 경구 NaHCO3(373장 p.2879). 집합관 α-사이세포 H+-ATPase 라는 세포 수준 기전은 이 두 장에서 확인하지 않았다(표 58-5 의 유전자 설명은 대조에 쓰지 않음)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-03",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "중탄산 15, 음이온 차 9, 소변 음이온 차 +29, 소변 pH 6.6, 칼륨 2.9. 어느 신세관산증인가?",
+    "a": "원위(1형). 산혈증인데 소변을 산성화하지 못하고(pH > 5.5) 암모늄 배설이 낮으며(음이온 차 양수) 칼륨이 낮다."
+   },
+   {
+    "q": "근위형도 소변 pH 가 높을 수 있는데 원위형과 무엇으로 가르나?",
+    "a": "혈청 중탄산이 이미 낮을 때의 소변 pH. 근위형은 그때 5.5 아래로 산성화되고, 알칼리를 줄 때만 5.5 를 넘는다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion#v1",
+    "context": "같은 정상 음이온 차 산증, 원인과 소변 소견을 바꾼 변형",
+    "stem": "A 63-year-old man comes to the physician because of fatigue and low back pain for 4 months. He has not had vomiting or diarrhea and takes no medications. Examination shows tenderness over the lumbar spine. Serum studies show sodium 138 mEq/L, potassium 3.1 mEq/L, chloride 113 mEq/L, bicarbonate 16 mEq/L, glucose 94 mg/dL, phosphorus 1.9 mg/dL and creatinine 1.1 mg/dL. Arterial pH is 7.32. Urinalysis shows pH 5.1 and 2+ glucose, and urine amino acids are increased. Serum protein electrophoresis shows a monoclonal spike, and urine immunofixation shows free κ light chains. An x-ray of the abdomen shows no renal calcifications. Which of the following best explains his acid-base disturbance?",
+    "options": [
+     "Decreased bicarbonate reabsorption in the proximal tubule",
+     "Impaired hydrogen ion secretion by α-intercalated cells of the collecting duct",
+     "Reduced aldosterone effect on the cortical collecting duct",
+     "Loss of bicarbonate from the gastrointestinal tract",
+     "Accumulation of unmeasured organic acids in the plasma"
+    ],
+    "answer": 1,
+    "explanation": "The anion gap is normal (138 − 113 − 16 = 9). With bicarbonate already low, he can acidify the urine to pH 5.1, so distal H+ secretion is intact. Glucosuria with a normal serum glucose, hypophosphatemia and aminoaciduria indicate generalized proximal tubular dysfunction (Fanconi syndrome) from light chains — proximal (type 2) RTA with reduced bicarbonate reabsorption. Potassium is low, so this is not type 4.",
+    "of": "usmle-2026-0236",
+    "changed": "결석·신수질 석회화·쇼그렌병·산혈증에도 소변 pH 6.6·포도당뇨 없음 → 다발골수종 경쇄·정상 혈당의 포도당뇨·저인산혈증·아미노산뇨·산혈증에서 소변 pH 5.1 ⇒ 정답이 원위 H+ 분비 장애에서 근위 중탄산 재흡수 감소로",
+    "flip": true
+   },
+   {
+    "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion#v2",
+    "context": "겉모습만 바꾼 변형",
+    "stem": "A 29-year-old woman is being treated in the hospital for disseminated cryptococcal infection. On day 12 of amphotericin B therapy, she reports leg weakness. She has not had vomiting or diarrhea. Serum studies show sodium 140 mEq/L, potassium 2.8 mEq/L, chloride 116 mEq/L, bicarbonate 16 mEq/L, glucose 101 mg/dL, phosphorus 3.4 mg/dL and creatinine 1.0 mg/dL. Arterial pH is 7.32. Urine studies show pH 6.4, sodium 50 mEq/L, potassium 35 mEq/L, chloride 55 mEq/L, and no glucose. Which of the following best explains her acid-base disturbance?",
+    "options": [
+     "Loss of bicarbonate from the gastrointestinal tract",
+     "Reduced aldosterone effect on the cortical collecting duct",
+     "Decreased bicarbonate reabsorption in the proximal tubule",
+     "Impaired hydrogen ion secretion by α-intercalated cells of the collecting duct",
+     "Accumulation of unmeasured organic acids in the plasma"
+    ],
+    "answer": 4,
+    "explanation": "The cause and patient differ, but the deciding clues are the same: normal anion gap (140 − 116 − 16 = 8), positive urine anion gap (50 + 35 − 55 = +30, low ammonium), urine pH above 5.5 despite acidemia, and hypokalemia. This is distal (type 1) RTA; amphotericin B is a recognized drug cause. No glucosuria and a normal phosphorus argue against proximal RTA, and the low potassium argues against type 4.",
+    "of": "usmle-2026-0236",
+    "changed": "41세 여자·쇼그렌병·결석 → 29세 여자·암포테리신 B 치료 중, 결석 대신 신석회화만, 수치를 바꿈 ⇒ 정상 음이온 차·소변 음이온 차 양수·산혈증에도 소변 pH > 5.5·저칼륨이라는 결정 단서는 같아 답은 그대로 원위 H+ 분비 장애",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "정상 음이온 차 대사산증 — 어느 신세관인가",
+  "geo": {
+   "title": "정상 음이온 차 대사산증 — 어느 신세관인가",
+   "w": 567.0,
+   "h": 559.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "정상 음이온 차 대사산증"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "uag",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "소변 음이온 차가 양수인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 85.0
+    },
+    {
+     "id": "calc",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "소변 Na·K·Cl 로 음이온 차",
+      "계산"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 175.0
+    },
+    {
+     "id": "gi",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "신장 밖 원인 — 설사 등",
+      "위장관 손실"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 282.0
+    },
+    {
+     "id": "k",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈청 칼륨이 높은가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 282.0
+    },
+    {
+     "id": "type4",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "4형 — 알도스테론 결핍·저항"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 372.0
+    },
+    {
+     "id": "uph",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "산혈증에서 소변 pH > 5.5",
+      "인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 372.0
+    },
+    {
+     "id": "distal",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "원위(1형) — 집합관 H+ 분비",
+      "장애"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 479.0
+    },
+    {
+     "id": "prox",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "근위(2형) — 중탄산 재흡수",
+      "장애"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 479.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "uag",
+     "points": [
+      [
+       340.0,
+       63.0
+      ],
+      [
+       340.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "uag",
+     "to": "k",
+     "points": [
+      [
+       291.0,
+       132.0
+      ],
+      [
+       291.0,
+       161.0
+      ],
+      [
+       226.0,
+       161.0
+      ],
+      [
+       226.0,
+       268.0
+      ],
+      [
+       194.3,
+       268.0
+      ],
+      [
+       194.3,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양수"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 276.0,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "uag",
+     "to": "gi",
+     "points": [
+      [
+       389.0,
+       132.0
+      ],
+      [
+       389.0,
+       161.0
+      ],
+      [
+       454.0,
+       161.0
+      ],
+      [
+       454.0,
+       268.0
+      ],
+      [
+       485.7,
+       268.0
+      ],
+      [
+       485.7,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음수"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 374.0,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "uag",
+     "to": "calc",
+     "points": [
+      [
+       340.0,
+       132.0
+      ],
+      [
+       340.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "calc",
+     "to": "k",
+     "points": [
+      [
+       307.3,
+       239.0
+      ],
+      [
+       307.3,
+       268.0
+      ],
+      [
+       259.7,
+       268.0
+      ],
+      [
+       259.7,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양수"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "calc",
+     "to": "gi",
+     "points": [
+      [
+       372.7,
+       239.0
+      ],
+      [
+       372.7,
+       268.0
+      ],
+      [
+       420.3,
+       268.0
+      ],
+      [
+       420.3,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음수"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "k",
+     "to": "type4",
+     "points": [
+      [
+       194.3,
+       329.0
+      ],
+      [
+       194.3,
+       358.0
+      ],
+      [
+       114.0,
+       358.0
+      ],
+      [
+       114.0,
+       372.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "k",
+     "to": "uph",
+     "points": [
+      [
+       259.7,
+       329.0
+      ],
+      [
+       259.7,
+       358.0
+      ],
+      [
+       340.0,
+       358.0
+      ],
+      [
+       340.0,
+       372.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "uph",
+     "to": "distal",
+     "points": [
+      [
+       307.3,
+       436.0
+      ],
+      [
+       307.3,
+       465.0
+      ],
+      [
+       227.0,
+       465.0
+      ],
+      [
+       227.0,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 440.0
+     }
+    },
+    {
+     "from": "uph",
+     "to": "prox",
+     "points": [
+      [
+       372.7,
+       436.0
+      ],
+      [
+       372.7,
+       465.0
+      ],
+      [
+       453.0,
+       465.0
+      ],
+      [
+       453.0,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 440.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "정상 음이온 차 대사산증",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "소변 음이온 차가 양수인가?"
+     }
+    ]
+   },
+   {
+    "id": "uag",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "소변 음이온 차가 양수인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양수",
+      "to": 4,
+      "toText": "혈청 칼륨이 높은가?"
+     },
+     {
+      "label": "음수",
+      "to": 5,
+      "toText": "신장 밖 원인 — 설사 등 위장관 손실"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "소변 Na·K·Cl 로 음이온 차 계산"
+     }
+    ]
+   },
+   {
+    "id": "calc",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "소변 Na·K·Cl 로 음이온 차 계산",
+    "note": "",
+    "branches": [
+     {
+      "label": "양수",
+      "to": 4,
+      "toText": "혈청 칼륨이 높은가?"
+     },
+     {
+      "label": "음수",
+      "to": 5,
+      "toText": "신장 밖 원인 — 설사 등 위장관 손실"
+     }
+    ]
+   },
+   {
+    "id": "k",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈청 칼륨이 높은가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "높음",
+      "to": 6,
+      "toText": "4형 — 알도스테론 결핍·저항"
+     },
+     {
+      "label": "낮음",
+      "to": 7,
+      "toText": "산혈증에서 소변 pH > 5.5 인가?"
+     }
+    ]
+   },
+   {
+    "id": "gi",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "신장 밖 원인 — 설사 등 위장관 손실",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "type4",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "4형 — 알도스테론 결핍·저항",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "uph",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "산혈증에서 소변 pH > 5.5 인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "원위(1형) — 집합관 H+ 분비 장애"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "근위(2형) — 중탄산 재흡수 장애"
+     }
+    ]
+   },
+   {
+    "id": "distal",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "원위(1형) — 집합관 H+ 분비 장애",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "prox",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "근위(2형) — 중탄산 재흡수 장애",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0236"
   ],
   "hasErrors": false
  },
