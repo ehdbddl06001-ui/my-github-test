@@ -412,3 +412,11 @@
 - 류마티스내과 판 35 (52쪽, 판형 11): 내용 갱신: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI (정리본 v1 → v2)
 - 기초의학 판 7 (5쪽, 판형 11): 새 단원: Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate
 - 신장내과 판 11 (8쪽, 판형 11): 내용 변경 없음
+
+## 2026-11-04T10:33:56+09:00
+
+- 순환기내과 판 20 (35쪽, 판형 11): 새 단원: 1회 박출량 — 전부하·후부하·수축력 중 무엇이 바뀌었나; 새 단원: 완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화
+- 내분비내과 판 10 (11쪽, 판형 11): 내용 갱신: 쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터 (정리본 v2 → v3)
+- 안과 판 13 (11쪽, 판형 11): 내용 수정: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인
+- 신장내과 판 12 (12쪽, 판형 11): 새 단원: 원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다; 새 단원: 신장 이식 거부 — C4d·공여자 특이 항체는 항체 매개
+- 기초의학 판 8 (4쪽, 판형 11): 빠진 단원(다른 권으로 이동 등): Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate

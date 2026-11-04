@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "4c3e25c0a088abca0b49",
-   "version": 19,
-   "date": "2026-11-03",
+   "hash": "70fe0b6985a7d764a37f",
+   "version": 20,
+   "date": "2026-11-04",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 31,
+   "pages": 35,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -34,82 +34,94 @@
     },
     "cn.cardio.nyha-class.functional-assessment": {
      "title": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
-     "page": 7,
+     "page": 8,
      "concept_hash": "3d981114fa201cda",
+     "concept_version": 1
+    },
+    "cn.cardio.stroke-volume.preload-afterload-contractility": {
+     "title": "1회 박출량 — 전부하·후부하·수축력 중 무엇이 바뀌었나",
+     "page": 9,
+     "concept_hash": "dbe09a5bf3118a68",
      "concept_version": 1
     },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 9,
+     "page": 11,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.complete-rbbb.ecg-recognition": {
      "title": "완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S",
-     "page": 10,
+     "page": 12,
      "concept_hash": "61e5dd306a69c419",
+     "concept_version": 2
+    },
+    "cn.cardio.complete-lbbb.discordant-st-not-stemi": {
+     "title": "완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화",
+     "page": 14,
+     "concept_hash": "3385d3dbeda59cfb",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 12,
+     "page": 15,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-     "page": 14,
+     "page": 18,
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 15,
+     "page": 19,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 17,
+     "page": 21,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 19,
+     "page": 23,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 22,
+     "page": 26,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 24,
+     "page": 28,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 27,
+     "page": 31,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 30,
+     "page": 34,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "ebab5ab5e0b41c09371437d7c830c22a",
-    "version": 19,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "e3435f1e7eb8a217b4822f7dc7eee2e4",
+    "version": 20,
+    "uploaded": "2026-11-04T11:01:35+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -130,11 +142,12 @@
     "MedKOS_학습서_순환기내과_v16_2026-10-30.pdf",
     "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf",
     "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf",
-    "MedKOS_학습서_순환기내과_v19_2026-11-03.pdf"
+    "MedKOS_학습서_순환기내과_v19_2026-11-03.pdf",
+    "MedKOS_학습서_순환기내과_v20_2026-11-04.pdf"
    ],
    "changes": [
-    "새 단원: NYHA 기능 등급 — 증상을 부르는 활동 수준",
-    "새 단원: 완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S"
+    "새 단원: 1회 박출량 — 전부하·후부하·수축력 중 무엇이 바뀌었나",
+    "새 단원: 완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화"
    ]
   },
   "피부과": {
@@ -208,11 +221,11 @@
    ]
   },
   "신장내과": {
-   "hash": "1d1c5e6658f4d33ddc42",
-   "version": 11,
-   "date": "2026-11-03",
+   "hash": "92bf11a3b9351276b3dc",
+   "version": 12,
+   "date": "2026-11-04",
    "file": "MedKOS_학습서_신장내과.pdf",
-   "pages": 8,
+   "pages": 12,
    "template_version": 11,
    "units": {
     "cn.neph.siadh.chronic-mild-fluid-restriction": {
@@ -227,18 +240,30 @@
      "concept_hash": "e536c16f8e6a0d35",
      "concept_version": 4
     },
+    "cn.physio.distal-rta.alpha-intercalated-h-secretion": {
+     "title": "원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다",
+     "page": 7,
+     "concept_hash": "6f967ab623d0de04",
+     "concept_version": 1
+    },
+    "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d": {
+     "title": "신장 이식 거부 — C4d·공여자 특이 항체는 항체 매개",
+     "page": 9,
+     "concept_hash": "3496615de68d88d3",
+     "concept_version": 1
+    },
     "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
      "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 가른다",
-     "page": 7,
+     "page": 10,
      "concept_hash": "b659324742ec563f",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "8def90c805c2a5a6f3e533dd58ef2258",
-    "version": 11,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "ec09a7a9025de55d260c762f181e1a3e",
+    "version": 12,
+    "uploaded": "2026-11-04T11:01:35+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -251,9 +276,13 @@
     "MedKOS_학습서_신장내과_v8_2026-10-05.pdf",
     "MedKOS_학습서_신장내과_v9_2026-10-06.pdf",
     "MedKOS_학습서_신장내과_v10_2026-10-16.pdf",
-    "MedKOS_학습서_신장내과_v11_2026-11-03.pdf"
+    "MedKOS_학습서_신장내과_v11_2026-11-03.pdf",
+    "MedKOS_학습서_신장내과_v12_2026-11-04.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다",
+    "새 단원: 신장 이식 거부 — C4d·공여자 특이 항체는 항체 매개"
+   ]
   },
   "소아청소년과": {
    "hash": "c061a278dab2f615dc86",
@@ -347,9 +376,9 @@
    ]
   },
   "안과": {
-   "hash": "1e39df9dcbf0f03d34e9",
-   "version": 12,
-   "date": "2026-11-03",
+   "hash": "a96fb962e7612d6c0a2b",
+   "version": 13,
+   "date": "2026-11-04",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 11,
    "template_version": 11,
@@ -375,7 +404,7 @@
     "cn.ophth.normal-tension-glaucoma.visual-field": {
      "title": "정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인",
      "page": 8,
-     "concept_hash": "002ae314f2f3c3d5",
+     "concept_hash": "5cc9854416465069",
      "concept_version": 1
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
@@ -387,9 +416,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "1632fbb4af4a20297b70b757194a6730",
-    "version": 12,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "1c376c1110b60e0324766678e7489646",
+    "version": 13,
+    "uploaded": "2026-11-04T11:01:35+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -403,10 +432,11 @@
     "MedKOS_학습서_안과_v9_2026-10-06.pdf",
     "MedKOS_학습서_안과_v10_2026-10-08.pdf",
     "MedKOS_학습서_안과_v11_2026-11-02.pdf",
-    "MedKOS_학습서_안과_v12_2026-11-03.pdf"
+    "MedKOS_학습서_안과_v12_2026-11-03.pdf",
+    "MedKOS_학습서_안과_v13_2026-11-04.pdf"
    ],
    "changes": [
-    "내용 갱신: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인 (정리본 vNone → v1)"
+    "내용 수정: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인"
    ]
   },
   "정형외과": {
@@ -1068,9 +1098,9 @@
    "changes": []
   },
   "내분비내과": {
-   "hash": "9852878d0d3b04239e0b",
-   "version": 9,
-   "date": "2026-10-27",
+   "hash": "576315f8e74d1c9d0909",
+   "version": 10,
+   "date": "2026-11-04",
    "file": "MedKOS_학습서_내분비내과.pdf",
    "pages": 11,
    "template_version": 11,
@@ -1090,8 +1120,8 @@
     "cn.endo.cushing-syndrome.screening-test": {
      "title": "쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터",
      "page": 6,
-     "concept_hash": "108f0605037f8ad3",
-     "concept_version": 2
+     "concept_hash": "2c49ae16a91ce864",
+     "concept_version": 3
     },
     "cn.endo.pheochromocytoma.preoperative-alpha-blockade": {
      "title": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
@@ -1108,9 +1138,9 @@
    },
    "drive": {
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
-    "md5": "5316fd650a2791e13528a2cafa8642e9",
-    "version": 9,
-    "uploaded": "2026-10-27T09:46:28+09:00"
+    "md5": "e0a4964a759f36795bf730470de299d6",
+    "version": 10,
+    "uploaded": "2026-11-04T11:01:35+09:00"
    },
    "archive": [
     "MedKOS_학습서_내분비내과_v1_2026-09-25.pdf",
@@ -1121,10 +1151,11 @@
     "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf",
     "MedKOS_학습서_내분비내과_v7_2026-10-03.pdf",
     "MedKOS_학습서_내분비내과_v8_2026-10-04.pdf",
-    "MedKOS_학습서_내분비내과_v9_2026-10-27.pdf"
+    "MedKOS_학습서_내분비내과_v9_2026-10-27.pdf",
+    "MedKOS_학습서_내분비내과_v10_2026-11-04.pdf"
    ],
    "changes": [
-    "새 단원: 갑상샘 여포세포 — 염색 세포를 직접 움직이는 것은 TSH"
+    "내용 갱신: 쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터 (정리본 v2 → v3)"
    ]
   },
   "혈액종양내과": {
@@ -1217,11 +1248,11 @@
    "changes": []
   },
   "기초의학": {
-   "hash": "8f0e773c5fa3d2bb2d0d",
-   "version": 7,
-   "date": "2026-11-03",
+   "hash": "ac77b2ce35a351dd91a2",
+   "version": 8,
+   "date": "2026-11-04",
    "file": "MedKOS_학습서_기초의학.pdf",
-   "pages": 5,
+   "pages": 4,
    "template_version": 11,
    "units": {
     "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia": {
@@ -1235,19 +1266,13 @@
      "page": 4,
      "concept_hash": "b2049fc3c5214548",
      "concept_version": 2
-    },
-    "cn.physio.distal-rta.alpha-intercalated-h-secretion": {
-     "title": "Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate",
-     "page": 5,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1794tdNS1sPYC9DlfZq-FYa68q_CpBmkw",
-    "md5": "f91bf6fd0481a4bccdfc5005c7667773",
-    "version": 7,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "3394cc2fe930d66ea24819d49f593fcc",
+    "version": 8,
+    "uploaded": "2026-11-04T11:01:35+09:00"
    },
    "archive": [
     "MedKOS_학습서_기초의학_v1_2026-09-25.pdf",
@@ -1256,10 +1281,11 @@
     "MedKOS_학습서_기초의학_v4_2026-09-27.pdf",
     "MedKOS_학습서_기초의학_v5_2026-09-28.pdf",
     "MedKOS_학습서_기초의학_v6_2026-10-12.pdf",
-    "MedKOS_학습서_기초의학_v7_2026-11-03.pdf"
+    "MedKOS_학습서_기초의학_v7_2026-11-03.pdf",
+    "MedKOS_학습서_기초의학_v8_2026-11-04.pdf"
    ],
    "changes": [
-    "새 단원: Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate"
+    "빠진 단원(다른 권으로 이동 등): Flank Pain With Small Stones, Weakness and Dry Eyes for Three Years in a 41-Year-Old Woman With a Low Bicarbonate"
    ]
   },
   "감염내과": {
@@ -1508,13 +1534,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "b082255938c4bef88da06071206b1cb8",
+   "md5": "77a5de9c9a51b193cb78327d12609885",
    "version": null,
-   "uploaded": "2026-11-03T13:31:29+09:00"
+   "uploaded": "2026-11-04T11:01:35+09:00"
   }
  },
- "updated": "2026-11-03"
+ "updated": "2026-11-04"
 }
