@@ -54383,7 +54383,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-1090"
+   "kmle-2026-1090",
+   "usmle-2026-0252"
   ],
   "hasErrors": false
  },
