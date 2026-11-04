@@ -1217,8 +1217,29 @@
    "date": "2026-11-02",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1730": {
+   "id": "kmle-2026-1730",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Thigh and Knee Ache with an Out-toeing Limp in a Heavy 11-year-old Girl",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 진단은?",
+   "chosen": 0,
+   "chosenText": "레그-칼베-페르테스병",
+   "answer": 4,
+   "answerText": "대퇴골두골단분리증",
+   "coreNote": "",
+   "differ": "",
+   "decision": "무릎 진찰과 X선이 정상인 무릎·허벅지 통증은 엉덩관절 연관통이고, 열이 없고 염증 수치가 정상이며 5주 경과라 감염·일과성 활막염은 가능성이 낮다. 11세 비만 아이의 굽힐 때 저절로 바깥돌림·안쪽 돌림 제한과 뼈끝판이 넓고 흐린 X선은 대퇴골두골단분리증을 가리킨다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-04",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-02T00:41:08.943Z"
+ "updated": "2026-11-04T13:24:21.483Z"
 }
