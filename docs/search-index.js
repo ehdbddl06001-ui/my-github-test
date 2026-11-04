@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-03",
+ "generated": "2026-11-04",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4350,
+  "total": 4357,
   "byType": {
+   "paper": 895,
    "kmle": 1696,
    "concept": 138,
    "usmle": 228,
-   "paper": 888,
    "imaging": 537,
    "anatomy": 846,
    "ailab": 14,
@@ -18,26 +18,26 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 301,
-   "Nephrology": 237,
+   "Cardiology": 302,
+   "Nephrology": 238,
    "Infectious Disease": 217,
-   "Pediatrics": 203,
+   "Pediatrics": 204,
    "Obstetrics & Gynecology": 150,
+   "Pathology": 132,
    "Rheumatology": 132,
-   "Pathology": 131,
+   "Hematology-Oncology": 127,
    "Psychiatry": 127,
-   "Hematology-Oncology": 126,
    "Neurology": 125,
    "Orthopedics": 115,
    "General Surgery": 114,
    "Endocrinology": 112,
+   "Surgery": 111,
    "Dermatology": 110,
-   "Surgery": 110,
    "Gastroenterology": 109,
    "Ophthalmology": 109,
    "Pulmonology": 109,
    "Hematology": 103,
-   "Laboratory Medicine": 91,
+   "Laboratory Medicine": 92,
    "산부인과": 73,
    "순환기": 57,
    "호흡기": 36,
@@ -79,13 +79,132 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1247,
    "high": 3057,
-   "medium": 1240,
    "low": 53
   },
   "tagCount": 5242
  },
  "docs": [
+  {
+   "id": "paper-2026-0895",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The American surgeon",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0895_age_and_complicated_presentation_in_adult_femoral_hernia_a_c.md",
+   "snippet": "Title Age and Complicated Presentation in Adult Femoral Hernia: A Cross Sectional Analysis of a 12 Year Surgical Case Series From a Colombian Referral Center Authors Londoño Barrientos Mateo, Álvarez Herrera Laura, Ramírez Ana Sofía, Luna M",
+   "text": "Surgery scraped pubmed PubMed / The American surgeon Title Age and Complicated Presentation in Adult Femoral Hernia: A Cross Sectional Analysis of a 12 Year Surgical Case Series From a Colombian Referral Center Authors Londoño Barrientos Mateo, Álvarez Herrera Laura, Ramírez Ana Sofía, Luna María Del Mar, Suárez Mayorga Paulina, Melguizo María Mercedes, Delgado López Carlos Andrés Journal / DOI The American surgeon · DOI: 10.1177/00031348261504538 · PMID: 42976051 https://pubmed.ncbi.nlm.nih.gov/42976051/ Abstract BackgroundFemoral hernias are uncommon but disproportionately morbid because of their propensity to incarceration and strangulation. Characteristics accompanying a complicated presentation are poorly defined, and Latin American data are scarce.MethodsThis is a cross sectional analysis of a single center retrospective case series of consecutive adults undergoing surgery for intraoperatively confirmed femoral hernia at a Colombian referral center (2013 2024). The outcome, complicated (incarcerated/strangulated) vs reducible presentation, was established at operation, not followed over time; analyses are exploratory. Associations were estimated with Firth penalized logistic regression, with restricted cubic splines for non linearity; reporting followed STROBE.ResultsOf 64 operated patients (79.7% women; median age 74), 41 (64.1%) had a complicated hernia at operation. Complicated cases were older (median: 82 vs 63 years; P < 0.001), with more comorbidity and higher ASA class. Age was the only characteristic independently associated with complicated presentation (adjusted odds ratio per 10 year increase: 3.29; 95% CI, 1.75 7.33); the gradient was monotonic, and age alone discriminated as well as the three variable model (area under the curve: 0.85 vs 0.86). Intervals were wide, reflecting the small sample. Complicated presentation was accompanied by bowel resection (24.4% vs 0%), postoperative morbidity (36.6% vs 4.3%; P = 0.006), longer stay, and the only death.DiscussionOlder age was the characteristic most strongly associated with incarceration or strangulation at operation. Because eligibility required surgery and the outcome was ascertained at that operation, these are associations within a surgically selected series; they cannot establish prospective prediction, causation, or progression from a reducible to a complicated hernia, and are hypothesis generating. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0894",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0894_pain_sensory_acceptability_and_treatment_compliance_followin.md",
+   "snippet": "Title Pain, sensory acceptability, and treatment compliance following cryotherapy and topical anesthetics in children: A randomized clinical trial Authors Aydın Çetin Emine Zehra, Özmen Bilal Journal / DOI PloS one · DOI: 10.1371/journal.po",
+   "text": "Pediatrics scraped pubmed PubMed / PloS one Title Pain, sensory acceptability, and treatment compliance following cryotherapy and topical anesthetics in children: A randomized clinical trial Authors Aydın Çetin Emine Zehra, Özmen Bilal Journal / DOI PloS one · DOI: 10.1371/journal.pone.0362074 · PMID: 42976146 https://pubmed.ncbi.nlm.nih.gov/42976146/ Abstract UNLABELLED: This randomized clinical trial aimed to compare the effects of cryotherapy, anesthetic spray, and gel on pain, anxiety, physiological responses, taste acceptability, and treatment compliance in children aged 7 10 years undergoing their first dental treatment. 100 healthy children were randomly allocated into four groups: 10% lidocaine spray, 20% benzocaine gel, cryotherapy with distilled water cooled to +4 °C, and lidocaine spray cooled to +4 °C. Following topical application, buccal infiltration anesthesia was administered. Anxiety, pain, and physiological responses were assessed using the Modified Dental Anxiety Scale and Facial Image Scale, Wong Baker FACES Pain Rating Scale, and pulse oximeter. Taste acceptability and treatment compliance were evaluated using a three point Hedonic Scale and the FRANKL Scale. Repeated Measures ANOVA, Mann Whitney U, and Kruskal Wallis tests were applied. No significant differences were observed among the groups in anxiety, pain, pulse rate, oxygen saturation, or taste acceptability (p 0.05). Pulse rate increased from the pre operative to the post operative period in all groups (p = 0.006), with no significant group × time interaction. FRANKL scores were significantly higher in the cryotherapy distilled water group compared with the gel and cooled spray groups (p = 0.001), a finding considered exploratory. Pain and anxiety outcomes following cryotherapy did not differ significantly from those of the topical anesthetic agents, while treatment compliance was higher, suggesting that cryotherapy may be a promising non pharmacological option, pending confirmation in non inferiority trials. TRIAL REGISTRATION: ClinicalTrials.gov NCT07198022. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0893",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0893_vivaray_hb_pro_non_invasive_hemoglobin_device_a_prospective_.md",
+   "snippet": "Title Vivaray Hb pro non invasive hemoglobin device: A prospective diagnostic accuracy study measuring agreement with a calibrated blood cell counter Authors Kumar Devesh, Kapoor Sunita, Gowda Ambanna, Gupta Dipti, Mittal Harsh, Sood Suneet",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PloS one Title Vivaray Hb pro non invasive hemoglobin device: A prospective diagnostic accuracy study measuring agreement with a calibrated blood cell counter Authors Kumar Devesh, Kapoor Sunita, Gowda Ambanna, Gupta Dipti, Mittal Harsh, Sood Suneet Journal / DOI PloS one · DOI: 10.1371/journal.pone.0353640 · PMID: 42976121 https://pubmed.ncbi.nlm.nih.gov/42976121/ Abstract BACKGROUND: Non invasive hemoglobin measurement offers a painless and rapid alternative to conventional blood based testing. The Vivaray Hb pro is a handheld photoplethysmography based device designed for point of care hemoglobin assessment without blood sampling. We evaluated the clinical performance of the Vivaray Hb pro by comparing device generated hemoglobin values with those obtained from a calibrated laboratory blood cell counter. METHODS: In this cross sectional, non randomized clinical performance study, participants aged ≥8 years were prospectively recruited. Hemoglobin was measured non invasively using the Vivaray Hb pro and compared with venous blood samples analyzed on a calibrated Coulter counter. Agreement between methods was assessed using Bland Altman analysis, including regression based evaluation for proportional bias. Mean difference, mean absolute error (MAE) and proportions of measurements within tolerance limits were also calculated. Complete paired measurements were available for 763 individuals. RESULTS: Bland Altman analysis returned a mean difference of 0.40 g/dL. The bias was hemoglobin dependent, being higher than the true value at low hemoglobin levels and underestimation at higher levels. Regression based analysis showed proportional bias (β1 = 0.178), indicating decreasing difference with increasing hemoglobin concentration. The MAE was 1.5 g/dL but was lower (1.2) in the clinically predominant ranges of 8.1 13 g/dL. CONCLUSION: The Vivaray Hb pro can function as a useful non invsive screening and point of care assessment device for measuring hemoglobin, particularly in settings where rapid, painless and repeatable measurements are desirable. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0892",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / IEEE journal of biomedical and health informatics",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0892_vq_csdn_a_vector_quantized_content_stain_decoupling_network_.md",
+   "snippet": "Title VQ CSDN: A Vector Quantized Content Stain Decoupling Network for Stain Normalization of H&E Histopathology Images Authors Luo Jiawei, Li Yan, Zhou Yuanpin, Che Shuanlong, Ding Xiangdong, Zhang Zhikui, Lu Yao Journal / DOI IEEE journal",
+   "text": "Pathology scraped pubmed PubMed / IEEE journal of biomedical and health informatics Title VQ CSDN: A Vector Quantized Content Stain Decoupling Network for Stain Normalization of H&E Histopathology Images Authors Luo Jiawei, Li Yan, Zhou Yuanpin, Che Shuanlong, Ding Xiangdong, Zhang Zhikui, Lu Yao Journal / DOI IEEE journal of biomedical and health informatics · DOI: 10.1109/JBHI.2026.3750116 · PMID: 42976068 https://pubmed.ncbi.nlm.nih.gov/42976068/ Abstract Stain normalization is a fundamental preprocessing technique in digital and computational pathology, and it is important for improving the consistency of clinical diagnosis by reducing color heterogeneity. However, existing stain normalization methods are often limited by content stain entanglement and an ambiguously modeled content stain relationship, resulting in unstable structural preservation, cross center adaptation burden, and sensitivity to template selection. To address these limitations, we propose a Vector Quantized Content Stain Decoupling Network (VQ CSDN) that decouples structure defining content from stain appearance and learns a center specific content to stain mapping, enabling structure preserving, template free stain transfer from unseen source centers without source specific retraining. VQ CSDN employs two independent encoders to extract content and stain features respectively and a generator for reconstruction. To better characterize cross center content feature spaces and capture staining styles, we introduce vector quantization with a global content codebook shared across centers and center specific stain codebooks. Moreover, a content to stain module directly infers stain features from the content feature and a target staining style, enabling end to end stain transfer without template selection. To further promote structural fidelity and enhance staining style separability, we propose center specific gradient driven discriminators that jointly assess center level stain conformity and the morphological consistency of generated images. Extensive experiments on multiple public and private pathology datasets show that VQ CSDN consistently enhances normalization quality, reflected by increased SSIM/PSNR and decreased FID, and further improves downstream benign malignant classification performance (AUC 0.9738) over state of the art methods. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0891",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Technology in cancer research & treatment",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0891_extracellular_matrix_stiffness_regulates_mechanical_metaboli.md",
+   "snippet": "Title Extracellular Matrix Stiffness Regulates Mechanical Metabolic Coupling in Tumors: Mechanisms and Therapeutic Opportunities Authors Liu Xiaolin, Wang Yingjie, Qi Fei, Li Xiaomi, Jiang Peng, Wang Yixuan, Li Sen, Zhang Tongmei Journal / ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Technology in cancer research & treatment Title Extracellular Matrix Stiffness Regulates Mechanical Metabolic Coupling in Tumors: Mechanisms and Therapeutic Opportunities Authors Liu Xiaolin, Wang Yingjie, Qi Fei, Li Xiaomi, Jiang Peng, Wang Yixuan, Li Sen, Zhang Tongmei Journal / DOI Technology in cancer research & treatment · DOI: 10.1177/15330338261500555 · PMID: 42976003 https://pubmed.ncbi.nlm.nih.gov/42976003/ Abstract The extracellular matrix (ECM) stiffening in the tumor microenvironment (TME) is an important physical characteristic of solid tumors and can serve as an active signaling hub that regulates the biological behavior of tumors. Abnormal deposition, cross linking, and remodeling of collagen not only alter the mechanical properties and structure of tissues but also convert mechanical stimuli into intracellular signals through mechanosensitive ion channels such as integrin FAK, Hippo YAP/TAZ, Piezo1/2, and Transient receptor potential vanilloid subtype 4 (TRPV4), thereby reprogramming tumor cell metabolism, including enhancing the Warburg effect, lipid synthesis, and glutamine catabolism, forming a malignant cycle of \"matrix stiffening metabolic reprogramming\" that promotes tumor progression and treatment tolerance. Mechanical signals can also create an immunosuppressive TME by restricting CD8+ T cell infiltration and promoting tumor associated macrophage polarization toward an M2 like state. Metabolites generated by reprogrammed cells, including lactate, can further remodel and stiffen the ECM, creating a positive feedback loop. Genetic and epigenetic heterogeneity, hypoxia, nutrient availability, and oncogenic signaling may uncouple mechanical regulation from metabolic output and complicate therapeutic targeting. Non coding RNAs (ncRNAs) add a regulatory layer that may connect mechanotransduction with metabolic plasticity and immune remodeling, although their effects remain context dependent. This review integrates the existing evidence on the regulation of tumor metabolism and immune microenvironment by ECM mechanical signals, focuses on summarizing the key mechanical sensing pathways, feedback mechanisms, and therapeutic targets, and proposes research directions for precisely identifying key regulatory nodes of the mechanical metabolic axis by combining spatial omics, metabolic flux analysis, and mechanical imaging techniques, providing a conceptual framework for developing novel therapeutic strategies targeting the biomechanical processes of tumors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0890",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS medicine",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0890_risk_of_cardiovascular_events_and_mortality_associated_with_.md",
+   "snippet": "Title Risk of cardiovascular events and mortality associated with LDL and non HDL cholesterol levels after statin initiation for primary prevention: A multiregional cohort study Authors Blais Joseph Edgar, Akyea Ralph Kwame, Harrison Willia",
+   "text": "Nephrology scraped pubmed PubMed / PLoS medicine Title Risk of cardiovascular events and mortality associated with LDL and non HDL cholesterol levels after statin initiation for primary prevention: A multiregional cohort study Authors Blais Joseph Edgar, Akyea Ralph Kwame, Harrison William, Chan Amy Hai Yan, Zhong Wenfang, Weng Stephen Franklin, Beyene Kebede Abera, Lau Wallis C Y, et al. Journal / DOI PLoS medicine · DOI: 10.1371/journal.pmed.1005012 · PMID: 42976215 https://pubmed.ncbi.nlm.nih.gov/42976215/ Abstract BACKGROUND: The cardiovascular and mortality benefits of achieving guideline recommended concentrations of low density lipoprotein (LDL) and non high density lipoprotein (non HDL) cholesterol with statins in primary prevention remain uncertain. METHODS AND FINDINGS: In this new user cohort study, we used electronic healthcare databases from Hong Kong (HK), New Zealand (NZ) and the United Kingdom (UK) to identify 185,237 patients initiating statins between 1 January 2007 and 31 December 2012 (with follow up to 31 December 2017) without atherosclerotic cardiovascular disease, heart failure, or chronic kidney disease. Associations between LDL and non HDL cholesterol measured within 2 years post initiation with the outcomes of major adverse cardiovascular events (MACE) or all cause mortality were assessed in landmark analyses using multivariable Cox regression adjusted for age, sex, hypertension, atrial fibrillation, diabetes mellitus, dyslipidaemia, obesity, smoking, alcohol misuse, rheumatoid arthritis, systemic lupus erythematosus and connective tissue disorders, severe mental illness, antihypertensive drugs, antidiabetic drugs, antiplatelet drugs, and anticoagulant drugs. Estimates were pooled using random effects meta analysis. At 2 years, LDL cholesterol was <1.4 mmol/L in 7,084 (3.8%), 1.4 1.7 mmol/L in 21,893 (11.8%), 1.8 2.5 mmol/L in 81,941 (44.2%) and ≥2.6 mmol/L in 74,294 (40.1%) patients. Mean duration of follow up for the primary outcome of MACE was 6.5 years in HK, 5.6 years in NZ and 5.4 years in UK. versus an LDL cholesterol ≥2.6 mmol/L, adjusted hazard ratios (HR) for MACE were 0.80 (95% CI [0.77,0.83]) for 1.8 2.5 mmol/L, 0.79 (0.66,0.94) for 1.4 1.7 mmol/L and 0.82 (0.60,1.12) for <1.4 mmol/L. Non HDL cholesterol showed similar estimates for MACE (e.g., HR 0.75, [0.72,0.79] for 2.6 3.3 mmol/L versus ≥3.4 mmol/L). In continuous analysis, the association with MACE was approximately log linear across achieved LDL and non HDL cholesterol in HK and the UK, whereas in NZ estimates were less consistent and imprecise at the lowest concentrations. After adjustment for confounding factors, very low LDL (HR 1.06, [0.96,1.16]) and non HDL cholesterol (HR 0.98, [0.84,1.14]) were not associated with all cause mortality. Limitations include heterogeneity across cohorts, which may reflect confounding by indication where treatment intensity was guided by cardiovascular risk, and residual confounding from comorbidities, lifestyle interventions and disease severity. Estimates are also conditional on patients having initiated statins, survived to the landmark, and undergone follow up lipid testing. CONCLUSIONS: Lower achieved LDL and non HDL cholesterol after statin initiation was associated with a reduction in MACE, with limited evidence of an increase in all cause mortality at very low concentrations after adjustment for confounding. Additional reductions in cardiovascular events could be obtained by achieving guideline recommended non HDL cholesterol levels of at least <3.4 mmol/L after statin initiation for primary prevention. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0889",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Analyst",
+   "confidence": "medium",
+   "date": "2026-11-04",
+   "path": "content/papers/2026/2026-11-04_paper-2026-0889_toward_detection_of_heart_failure_development_of_a_sensitive.md",
+   "snippet": "Title Toward detection of heart failure: development of a sensitive fluorescent kit for clinical sST2 detection Authors Ping Zhou, Chen Menghan, Jin Yage, Gu Mengke, Pan Liang, Zang Jinzhi, Nai Shanshan, Song Ting, et al. Journal / DOI The ",
+   "text": "Cardiology scraped pubmed PubMed / The Analyst Title Toward detection of heart failure: development of a sensitive fluorescent kit for clinical sST2 detection Authors Ping Zhou, Chen Menghan, Jin Yage, Gu Mengke, Pan Liang, Zang Jinzhi, Nai Shanshan, Song Ting, et al. Journal / DOI The Analyst · DOI: 10.1039/d6an00857g · PMID: 42976326 https://pubmed.ncbi.nlm.nih.gov/42976326/ Abstract Heart failure, the terminal stage of various cardiovascular diseases, typically presents with subtle early symptoms that are difficult to detect. Consequently, developing fast and accurate diagnostic tools is essential for effective early diagnosis and disease management. Soluble suppression of tumorigenicity 2 (sST2) is recognized as a valuable biomarker for predicting disease severity and mortality in cardiovascular disease, making it a promising target for developing a detection kit for early heart failure diagnosis. Recently, the CRISPR Cas12a system has been increasingly used for quick and sensitive nucleic acid detection. However, its application in protein detection remains limited. In this study, we combined nanotechnology mediated protein capture with the CRISPR Cas12a system and developed a fluorescence based method for rapid and sensitive detection of sST2. The presence of sST2 triggers the formation of a ternary complex, which can activate the trans cleavage activity of Cas12a, resulting in cleavage of the response DNA single strand and the production of a fluorescent signal. Importantly, when tested on serum samples, this method can effectively distinguish patients with heart failure from healthy controls. This method offers a promising alternative to traditional enzyme linked immunosorbent assays (ELISAs), with potential advantages in operational simplicity and detection speed. Therefore, this innovative fluorescence based sST2 detection technique has significant potential for the clinical diagnosis of heart failure. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1730",
    "type": "kmle",

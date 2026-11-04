@@ -58263,7 +58263,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-02",
   "reviewStatus": "unreviewed",
-  "hash": "5cc9854416465069",
+  "hash": "3a14b7ad8c2c91ce",
   "summary": [
    "결론: 안압 정상 + 녹내장성 시신경유두 변화 = 정상안압 녹내장 의심 → 다음은 자동 정적 시야검사.",
    "시험 단서: 검진 안저사진의 비대칭 함몰비, 테두리 패임·유두 출혈(disc hemorrhage), 쐐기 모양 신경섬유층 결손.",
