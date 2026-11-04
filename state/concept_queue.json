@@ -2,42 +2,187 @@
  "generated": "",
  "note": [],
  "link": [],
+ "touch": [],
+ "variant": [],
+ "dist": [],
+ "restyle": [],
+ "figure": [],
  "gap": [
+  {
+   "book": "순환기내과",
+   "slot": "h239",
+   "title": "Physical Examination of the Cardiovascular System",
+   "source": "해리슨 22판 246장",
+   "chapters": [
+    239
+   ],
+   "have": 19
+  },
+  {
+   "book": "산부인과",
+   "slot": "ob.prenatal-dx",
+   "title": "산전 진단과 태아 안녕 평가",
+   "source": "",
+   "chapters": [],
+   "have": 14
+  },
+  {
+   "book": "정형외과",
+   "slot": "ortho.infection-tumor",
+   "title": "골수염·화농성 관절염과 골종양",
+   "source": "",
+   "chapters": [],
+   "have": 11
+  },
   {
    "book": "소아청소년과",
    "slot": "peds.hemonc",
    "title": "소아 혈액종양 — 빈혈·백혈병·고형종양",
    "source": "",
    "chapters": [],
-   "have": 1
+   "have": 9
   },
   {
-   "book": "순환기내과",
-   "slot": "h256",
-   "title": "Electrical Storm and Incessant Ventricular Tachycardia",
-   "source": "해리슨 21판 256장",
+   "book": "감염내과",
+   "slot": "h218",
+   "title": "Mucormycosis",
+   "source": "해리슨 22판 224장",
    "chapters": [
-    256
+    218
    ],
-   "have": 1
-  },
-  {
-   "book": "신장내과",
-   "slot": "h54",
-   "title": "Hypercalcemia and Hypocalcemia",
-   "source": "해리슨 21판 54장",
-   "chapters": [
-    54
-   ],
-   "have": 1
+   "have": 6
   },
   {
    "book": "피부과",
-   "slot": "h58",
-   "title": "Skin Manifestations of Internal Disease",
-   "source": "해리슨 21판 58장",
+   "slot": "h59",
+   "title": "Immunologically Mediated Skin Diseases",
+   "source": "해리슨 22판 62장",
    "chapters": [
-    58
+    59
+   ],
+   "have": 6
+  },
+  {
+   "book": "내분비내과",
+   "slot": "h405",
+   "title": "Diabetes Mellitus: Complications",
+   "source": "해리슨 22판 417장",
+   "chapters": [
+    405
+   ],
+   "have": 5
+  },
+  {
+   "book": "신장내과",
+   "slot": "h315",
+   "title": "Polycystic Kidney Disease and Other Inherited Disorders of Tubule Growth and Development",
+   "source": "해리슨 22판 327장",
+   "chapters": [
+    315
+   ],
+   "have": 5
+  },
+  {
+   "book": "안과",
+   "slot": "ophth.strabismus",
+   "title": "사시·약시와 소아 안과",
+   "source": "",
+   "chapters": [],
+   "have": 5
+  },
+  {
+   "book": "소화기내과",
+   "slot": "h345",
+   "title": "Liver Transplantation",
+   "source": "해리슨 22판 356장",
+   "chapters": [
+    345
+   ],
+   "have": 4
+  },
+  {
+   "book": "응급의학과",
+   "slot": "h462",
+   "title": "Altitude Illness",
+   "source": "해리슨 22판 475장",
+   "chapters": [
+    462
+   ],
+   "have": 4
+  },
+  {
+   "book": "정신건강의학과",
+   "slot": "h455",
+   "title": "Marijuana and Marijuana Use Disorders",
+   "source": "해리슨 22판 466장",
+   "chapters": [
+    455
+   ],
+   "have": 4
+  },
+  {
+   "book": "혈액종양내과",
+   "slot": "h93",
+   "title": "Paraneoplastic Syndromes: Endocrinologic/ Hematologic",
+   "source": "해리슨 22판 98장",
+   "chapters": [
+    93
+   ],
+   "have": 4
+  },
+  {
+   "book": "호흡기내과",
+   "slot": "h295",
+   "title": "Disorders of the Mediastinum",
+   "source": "해리슨 22판 306장",
+   "chapters": [
+    295
+   ],
+   "have": 4
+  },
+  {
+   "book": "기초의학",
+   "slot": "basic.pathology",
+   "title": "병리 총론 — 손상·염증·종양",
+   "source": "",
+   "chapters": [],
+   "have": 2
+  },
+  {
+   "book": "신경과",
+   "slot": "h448",
+   "title": "Myasthenia Gravis and Other Diseases of the Neuromuscular Junction",
+   "source": "해리슨 22판 459장",
+   "chapters": [
+    448
+   ],
+   "have": 2
+  },
+  {
+   "book": "알레르기내과",
+   "slot": "h354",
+   "title": "Mastocytosis",
+   "source": "해리슨 22판 366장",
+   "chapters": [
+    354
+   ],
+   "have": 2
+  },
+  {
+   "book": "외과",
+   "slot": "surg.vascular",
+   "title": "혈관 외과 — 동맥류·말초동맥질환·정맥",
+   "source": "",
+   "chapters": [],
+   "have": 2
+  },
+  {
+   "book": "비뇨의학과",
+   "slot": "uro.mens-health",
+   "title": "남성 건강과 선별검사",
+   "source": "해리슨 22판 411장",
+   "chapters": [
+    399
    ],
    "have": 1
   }
@@ -45,7 +190,13 @@
  "counts": {
   "note": 0,
   "link": 0,
-  "gap": 4,
-  "wrong_objectives_with_note": 1
+  "touch": 0,
+  "gap": 19,
+  "restyle": 0,
+  "variant": 0,
+  "dist": 0,
+  "figure": 0,
+  "wrong_objectives_with_note": 111,
+  "from_wrongnote": 56
  }
 }
