@@ -306,6 +306,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.ortho.scaphoid-fracture.occult-imaging",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "첫 X선이 정상인 주상골 골절 의심에는 MRI가 가장 민감하다고 배운다.",
@@ -319,6 +320,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "재촬영은 결론까지 2주가 걸리고 그동안 불필요한 고정이 이어질 수 있다. 빨리 결론을 내야 하면 단면 영상을 지금 찍는다.",
     "discriminator": "다음 주 일정을 정하려고 골절 여부를 빨리 알아야 한다.",
     "when_right": "단면 영상을 바로 찍을 수 없거나 환자가 2주 고정을 받아들일 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "초음파는 방사선이 없고 금속·기기와 상관없이 바로 찍을 수 있어 MRI 를 못 쓸 때의 대안처럼 보인다.",
+    "answer_first": "초음파는 검사자 의존적이고 비스듬히 놓인 작은 뼈의 골절선을 다 훑지 못해 주상골 골절 확인 검사로 확립되지 않았다. CT 는 골절선을 직접 보여 주어 바로 결론을 낼 수 있다.",
+    "discriminator": "「골절 여부를 확인」해야 한다 — 확인 검사로 확립된 것은 MRI 다음 CT 다.",
+    "when_right": "",
     "split": ""
    }
   },

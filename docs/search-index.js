@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4381,
+  "total": 4382,
   "byType": {
    "usmle": 240,
+   "concept": 139,
    "paper": 895,
    "kmle": 1696,
    "imaging": 549,
-   "concept": 138,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -28,7 +28,7 @@ window.MEDKOS_INDEX = {
    "Psychiatry": 128,
    "Hematology-Oncology": 127,
    "Neurology": 126,
-   "Orthopedics": 115,
+   "Orthopedics": 116,
    "General Surgery": 114,
    "Endocrinology": 112,
    "Surgery": 112,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3080,
-   "medium": 1248,
+   "medium": 1249,
    "low": 53
   },
   "tagCount": 5279
@@ -359,6 +359,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0242.md",
    "snippet": "A 19 year old man is undergoing open reduction and internal fixation of a forearm fracture. Anesthesia was induced with propofol and succinylcholine and is being maintained with sevoflurane. The anesthesiologist noted that the jaw was diffi",
    "text": "Pharmacology Jaw Rigidity at Intubation, a Climbing End-Tidal CO2 and a Temperature of 39.4 °C Forty Minutes Into Forearm Surgery in a 19-Year-Old malignant-hyperthermia dantrolene ryanodine-receptor succinylcholine volatile-anesthetic mechanism pharmacology USMLE-style / MedKOS (Malignant Hyperthermia Association of the United States (MHAUS) emergency treatment protocol; Harrison's Principles of Internal Medicine, 22e. 478장 Heat-Related Illnesses) A 19 year old man is undergoing open reduction and internal fixation of a forearm fracture. Anesthesia was induced with propofol and succinylcholine and is being maintained with sevoflurane. The anesthesiologist noted that the jaw was difficult to open at intubation. Forty minutes into the operation, the end tidal CO2 has risen steadily despite doubling the minute ventilation, and the muscles of the trunk and limbs have become rigid. He took no medications before surgery and has never taken antipsychotic or antidepressant drugs. A cousin had an unexplained high fever during an operation several years ago. His vital signs and laboratory results are shown. The sevoflurane is discontinued, and the anesthesia circuit is changed. Which of the following best describes the mechanism of action of the drug that should be administered next? A. Antagonism of serotonin 5 HT2A receptors in the central nervous system B. Stimulation of dopamine D2 receptors in the hypothalamus C. Competitive blockade of nicotinic receptors at the motor end plate D. Blockade of calcium release from the sarcoplasmic reticulum of skeletal muscle E. Inhibition of prostaglandin E2 synthesis in the preoptic hypothalamus 숙시닐콜린과 흡입마취제(세보플루란) 노출 뒤의 교근 경직, 환기를 두 배로 늘려도 오르는 호기말 이산화탄소, 전신 경직, 빈맥·고체온·고칼륨혈증·혼합 산증 — 악성 고열증(malignant hyperthermia)이다. 사촌의 수술 중 원인 모를 고열은 상염색체 우성 RYR1 변이의 가족력을 시사한다. 병태는 골격근 소포체의 리아노딘 수용체(RyR1)를 통한 칼슘의 통제 안 되는 방출 — 신경근접합부 뒤, 근세포 안의 문제다. 그래서 유발제를 끊은 뒤 쓰는 단트롤렌(dantrolene)은 RyR1 에 결합해 소포체 칼슘 방출을 막는다. 항정신병약·항우울제 복용이 없어 신경이완제 악성 증후군·세로토닌 증후군의 가능성은 낮다."
+  },
+  {
+   "id": "cn.ortho.scfe.adolescent-limp-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-05",
+   "path": "content/concepts/orthopedics/cn.ortho.scfe.adolescent-limp-diagnosis.md",
+   "snippet": "판단 — 왜 대퇴골두골단분리증을 먼저 생각하나 무릎 진찰과 무릎 X선이 정상인 무릎·허벅지 통증은 엉덩관절의 연관통(referred pain) 을 먼저 생각하고 엉덩관절을 진찰한다 [[?peck 2017]]. 10–16세 비만아 가 외상 없이 수주 절뚝이고, 엉덩관절을 굽히면 넓적다리가 저절로 바깥으로 돌며 안쪽 돌림이 제한 되면 대퇴골두골단분리증(slipped capital femoral epiphysis, SCFE)을 의심",
+   "text": "Orthopedics 판단 — 왜 대퇴골두골단분리증을 먼저 생각하나 무릎 진찰과 무릎 X선이 정상인 무릎·허벅지 통증은 엉덩관절의 연관통(referred pain) 을 먼저 생각하고 엉덩관절을 진찰한다 [[?peck 2017]]. 10–16세 비만아 가 외상 없이 수주 절뚝이고, 엉덩관절을 굽히면 넓적다리가 저절로 바깥으로 돌며 안쪽 돌림이 제한 되면 대퇴골두골단분리증(slipped capital femoral epiphysis, SCFE)을 의심해 양쪽 엉덩관절 X선을 찍는다 [[?nelson 22: The Hip — Slipped Capital Femoral Epiphysis]]. 열이 없고 염증 수치가 정상이며 걸을 수 있고 수주 경과면 화농성 관절염·일과성 활막염 가능성은 낮다. 페르테스병과는 나이·체형과 X선의 병변 자리 (넙다리뼈머리 자체 vs 성장판)로 가른다(표). 기전 — 넓어진 성장판에서 뒤로 미끄러진 뼈끝으로 정상 : 넙다리뼈머리 뼈끝(capital femoral epiphysis)은 성장판으로 목에 붙어 있고, 성장판의 비대층은 세포가 크고 기질이 적어 기계적으로 가장 약하다. 이상 : 사춘기 성장 급증기에는 성장판이 넓어지고 아직 닫히지 않는다. 여기에 체중(비만) 이 실은 전단력이 비대층에 몰리면 뼈끝이 목에 대해 뒤·아래로 미끄러진다 [[?peck 2017]]. 갑상선저하증 같은 내분비 이상은 성장판을 더 약하게 한다 — 10세 미만이거나 비만이 아닌 아이에게 생기면 이를 찾는다. 무릎·허벅지 통증 — 엉덩관절의 감각이 폐쇄신경을 따라 무릎 안쪽·허벅지로 간다. 그래서 무릎 진찰·X선은 정상이다. 굽힘 시 저절로 바깥돌림·안쪽 돌림 제한, 걸을 때 발끝이 바깥으로 — 뼈끝이 뒤로 밀려 목이 앞으로 튀어나오고, 굽힐 때 비구 앞 테두리에 걸려 넓적다리가 바깥으로 돈다. X선 — 미끄러짐 초기에는 뼈끝판이 넓고 흐리게 보이고, 진행하면 앞뒤 사진에서 넙다리뼈 목 바깥 가장자리 연장선이 머리를 지나지 않으며 측면 사진에서 뼈끝의 뒤쪽 전위가 보인다. 가르는 소견 — 나이·염증·X선 무릎 국소 소견 : 정강뼈 결절의 부종·압통이 있으면 오스굿 슐라터병, 없고 엉덩관절 진찰이 비정상이면 엉덩관절 병변이다. 염증 : 열·체중 부하 거부·백혈구·적혈구침강속도·CRP 상승은 화농성 관절염 — 응급으로 배제한다. 정상 염증 수치는 그 가능성을 낮추지만 단독으로 배제하지는 않는다. X선의 병변 자리 : 넙다리뼈머리 자체가 작고 납작·경화면 페르테스병, 머리 모양은 정상이고 성장판이 넓고 흐리거나 뼈끝이 미끄러졌으면 대퇴골두골단분리증. 정상 X선의 한계 : 앞뒤 사진만으로는 초기 미끄러짐을 놓칠 수 있다 — 측면(개구리자세) 사진을 함께 보고, 그래도 정상이면 MRI 에서 성장판 부종을 찾을 수 있다. 무릎 X선만 찍으면 진단이 늦어진다. 권고와 예외 진단되면 즉시 체중 부하를 멈추고 정복 없이 제자리 나사로 고정한다 — 치료 선택은 정리본 「대퇴골두골단분리증 — 정복 없이 제자리 나사 고정」(cn.ortho.scfe.in situ fixation)이 다룬다. 불안정형(목발로도 걸을 수 없음)이 의심되면 개구리자세를 강제로 잡지 않는다. 이 슬롯(ortho.pediatric)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. Peck 2017·Nelson 22판은 원문을 열지 못해 서지만 남겼다(†, 검토 항목)."
   },
   {
    "id": "paper-2026-0895",
@@ -16634,7 +16648,7 @@ window.MEDKOS_INDEX = {
    "date": "2026-10-09",
    "path": "content/concepts/orthopedics/cn.ortho.scaphoid-fracture.occult-imaging.md",
    "snippet": "판단 — 왜 정상 X선이어도 엄지 포함 고정이 먼저인가 손을 짚고 넘어진 뒤 해부학적 코담배갑(anatomical snuffbox) 압통 과 엄지 축 방향 압박통 은 주상골(scaphoid) 골절을 의심하게 하는 진찰 소견이다 [[?campbell 14: Fractures and dislocations of the wrist — scaphoid]]. 전위 없는 주상골 골절은 첫 X선에서 보이지 않는 일이 흔하다 — 정상 X선은",
-   "text": "Orthopedics 판단 — 왜 정상 X선이어도 엄지 포함 고정이 먼저인가 손을 짚고 넘어진 뒤 해부학적 코담배갑(anatomical snuffbox) 압통 과 엄지 축 방향 압박통 은 주상골(scaphoid) 골절을 의심하게 하는 진찰 소견이다 [[?campbell 14: Fractures and dislocations of the wrist — scaphoid]]. 전위 없는 주상골 골절은 첫 X선에서 보이지 않는 일이 흔하다 — 정상 X선은 「골절 없음」이 아니다. 놓치고 움직이면 불유합(nonunion)·무혈성 괴사(avascular necrosis)로 갈 수 있으므로, 확인 전에는 엄지 포함 부목(thumb spica splint) 으로 고정하고 10~14일 뒤 재촬영하거나 MRI 로 확인한다 [[?acr hand wrist 2018]]. 수술은 영상으로 전위·근위부 골절이 확인된 뒤의 선택이다. 기전 — 역행성 혈류에서 불유합으로 정상 : 주상골은 근위·원위 손목뼈 줄을 잇는 막대처럼 비스듬히 놓여 있어, 손목을 뒤로 젖힌 채 손을 짚으면 요골 끝과 손바닥 사이에서 허리(중간부)에 굽힘 힘이 몰린다. 표면 대부분이 관절 연골이라 혈관이 들어올 자리가 좁고, 혈액은 주로 원위부(결절 쪽)에서 들어와 근위부로 거꾸로 흐른다. 이상 : 허리나 근위부가 부러지면 근위 조각으로 가는 혈류가 끊긴다. 고정하지 않은 채 손목을 움직이면 골절면이 계속 움직여 붙지 못하고(불유합), 근위 조각은 무혈성 괴사에 빠진다. 불유합이 진행하면 손목뼈 배열이 무너지는 관절염(SNAC 손목, scaphoid nonunion advanced collapse)으로 이어진다. 왜 첫 X선이 정상인가 : 비스듬히 놓인 작은 뼈의 전위 없는 골절선은 머리카락처럼 가늘어 전후면·측면에서 다른 뼈와 겹친다. 1~2주 지나면 골절선 가장자리가 흡수되어 넓어지므로 재촬영에서 드러난다. MRI 는 첫날에도 골수 부종으로 골절을 보여 준다. 가르는 소견 — 압통 자리와 정상 X선의 한계 압통 자리 가 의심 부위와 고정 범위를 정한다(표). 코담배갑·엄지 축 방향 압박통이면 엄지까지 고정하고 주상골을 다시 본다. 청소년 : 성장판이 열려 있어 원위 요골 성장판 손상(Salter Harris I 형)을 떠올리기 쉽지만, 성장판 둘레에 압통·부종이 없으면 그쪽 가능성은 낮다. 이 나이에도 성인형 주상골 골절이 생긴다. 신경혈관 정상·변형 없음 은 응급 정복이 필요한 전위 골절·탈구가 아님을 보여 줄 뿐, 주상골 골절을 배제하지 않는다. 정상 X선의 한계 : 임상 의심이 있으면 정상 X선을 근거로 고정을 생략하지 않는다. 재촬영·MRI 가 정상이어야 배제한다. 선택 — 확인 전에는 고정, 확인 뒤에는 전위가 정한다 확인 전 : 엄지 포함 부목 고정 → 10~14일 뒤 재촬영, 가능하면 MRI [[?acr hand wrist 2018]]. 골절 확인, 전위 없음 : 엄지 포함 석고 고정. 전위 1 mm 초과 또는 근위부 골절 : 관혈적 정복·내고정 [[?campbell 14: Fractures and dislocations of the wrist — scaphoid]]. 재평가 : 재촬영·MRI 가 정상이면 고정을 풀고 활동을 재개한다. 압통이 계속되면 다시 평가한다. 하지 않는 것 : 확인 전 탄력붕대·진통제만으로 활동 복귀, 확인 전 수술 — 이유는 표 「주상골 골절 — 영상 결과에 따른 처치」. 권고와 예외 재촬영과 MRI 중 무엇을 먼저 쓸지(MRI 를 바로 쓸 수 있는가)는 기관 여건에 따라 다르다. ACR 적합성 기준의 세부 권고 순서는 원문을 대조하지 못했다(검토 항목). 문항의 정답 기준은 「엄지 포함 부목 → 10~14일 뒤 재촬영(또는 MRI)」이다. 전위 기준 1 mm 는 문항 해설의 서술이며 교과서 원문은 대조하지 못했다(검토 항목). 이 슬롯(ortho.upper limb)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. Campbell·ACR 은 서지만 남겼다(†)."
+   "text": "Orthopedics 판단 — 왜 정상 X선이어도 엄지 포함 고정이 먼저인가 손을 짚고 넘어진 뒤 해부학적 코담배갑(anatomical snuffbox) 압통 과 엄지 축 방향 압박통 은 주상골(scaphoid) 골절을 의심하게 하는 진찰 소견이다 [[?campbell 14: Fractures and dislocations of the wrist — scaphoid]]. 전위 없는 주상골 골절은 첫 X선에서 보이지 않는 일이 흔하다 — 정상 X선은 「골절 없음」이 아니다. 놓치고 움직이면 불유합(nonunion)·무혈성 괴사(avascular necrosis)로 갈 수 있으므로, 확인 전에는 엄지 포함 부목(thumb spica splint) 으로 고정하고 10~14일 뒤 재촬영하거나 MRI 로 확인한다 [[?acr hand wrist 2018]]. 수술은 영상으로 전위·근위부 골절이 확인된 뒤의 선택이다. 기전 — 역행성 혈류에서 불유합으로 정상 : 주상골은 근위·원위 손목뼈 줄을 잇는 막대처럼 비스듬히 놓여 있어, 손목을 뒤로 젖힌 채 손을 짚으면 요골 끝과 손바닥 사이에서 허리(중간부)에 굽힘 힘이 몰린다. 표면 대부분이 관절 연골이라 혈관이 들어올 자리가 좁고, 혈액은 주로 원위부(결절 쪽)에서 들어와 근위부로 거꾸로 흐른다. 이상 : 허리나 근위부가 부러지면 근위 조각으로 가는 혈류가 끊긴다. 고정하지 않은 채 손목을 움직이면 골절면이 계속 움직여 붙지 못하고(불유합), 근위 조각은 무혈성 괴사에 빠진다. 불유합이 진행하면 손목뼈 배열이 무너지는 관절염(SNAC 손목, scaphoid nonunion advanced collapse)으로 이어진다. 왜 첫 X선이 정상인가 : 비스듬히 놓인 작은 뼈의 전위 없는 골절선은 머리카락처럼 가늘어 전후면·측면에서 다른 뼈와 겹친다. 1~2주 지나면 골절선 가장자리가 흡수되어 넓어지므로 재촬영에서 드러난다. MRI 는 첫날에도 골수 부종으로 골절을 보여 준다. 가르는 소견 — 압통 자리와 정상 X선의 한계 압통 자리 가 의심 부위와 고정 범위를 정한다(표). 코담배갑·엄지 축 방향 압박통이면 엄지까지 고정하고 주상골을 다시 본다. 청소년 : 성장판이 열려 있어 원위 요골 성장판 손상(Salter Harris I 형)을 떠올리기 쉽지만, 성장판 둘레에 압통·부종이 없으면 그쪽 가능성은 낮다. 이 나이에도 성인형 주상골 골절이 생긴다. 신경혈관 정상·변형 없음 은 응급 정복이 필요한 전위 골절·탈구가 아님을 보여 줄 뿐, 주상골 골절을 배제하지 않는다. 정상 X선의 한계 : 임상 의심이 있으면 정상 X선을 근거로 고정을 생략하지 않는다. 재촬영·MRI 가 정상이어야 배제한다. 선택 — 확인 전에는 고정, 확인 뒤에는 전위가 정한다 확인 전 : 엄지 포함 부목 고정 → 10~14일 뒤 재촬영, 가능하면 MRI [[?acr hand wrist 2018]]. MRI 를 못 찍을 때 : MRI 불가 기기·금속이 있는데 빨리 결론을 내야 하면 얇은 절편 손목 CT(주상골 장축 재구성)로 골절선을 본다 [[?acr hand wrist 2018]]. 초음파는 검사자 의존적이라 확인 검사로 쓰지 않는다. 골절 확인, 전위 없음 : 엄지 포함 석고 고정. 전위 1 mm 초과 또는 근위부 골절 : 관혈적 정복·내고정 [[?campbell 14: Fractures and dislocations of the wrist — scaphoid]]. 재평가 : 재촬영·MRI 가 정상이면 고정을 풀고 활동을 재개한다. 압통이 계속되면 다시 평가한다. 하지 않는 것 : 확인 전 탄력붕대·진통제만으로 활동 복귀, 확인 전 수술 — 이유는 표 「주상골 골절 — 영상 결과에 따른 처치」. 권고와 예외 재촬영과 MRI 중 무엇을 먼저 쓸지(MRI 를 바로 쓸 수 있는가)는 기관 여건에 따라 다르다. ACR 적합성 기준의 세부 권고 순서는 원문을 대조하지 못했다(검토 항목). 문항의 정답 기준은 「엄지 포함 부목 → 10~14일 뒤 재촬영(또는 MRI)」이다. 전위 기준 1 mm 는 문항 해설의 서술이며 교과서 원문은 대조하지 못했다(검토 항목). 이 슬롯(ortho.upper limb)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. Campbell·ACR 은 서지만 남겼다(†)."
   },
   {
    "id": "anatomy-daily-2026-10-09",
