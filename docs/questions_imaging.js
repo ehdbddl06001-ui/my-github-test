@@ -2,6 +2,1566 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0550",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 맥이 가끔 건너뛰는 남성의 좁은 조기 박동",
+  "type": "심전도 판독 — 맥이 가끔 건너뛰는 남성의 좁은 조기 박동",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-04",
+  "vignette": "A 71-year-old man comes to the physician because of an occasional sensation that his heart skips a beat for the past 3 weeks. He has no chest pain, dyspnea, dizziness, or syncope. He drinks two cups of coffee daily and does not smoke. Blood pressure is 128/80 mm Hg and pulse is 70/min and slightly irregular. Cardiac examination shows no murmurs. Serum electrolytes and thyroid-stimulating hormone are within normal limits. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Premature atrial contractions",
+   "Premature ventricular contractions",
+   "Second-degree atrioventricular block, Mobitz type I",
+   "Atrial fibrillation",
+   "Sinus arrhythmia"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The lead II rhythm strip shows sinus rhythm at about 70/min interrupted three times by an early beat with a narrow QRS identical to the sinus beats. Each early beat is preceded by a P wave of different shape, and the pause after it is noncompensatory — the two intervals around it add up to less than two sinus cycles. Early, narrow beats with an abnormal P wave and a reset sinus node are premature atrial contractions.\n- 원리: <b>Why the QRS stays narrow</b>: An atrial premature beat starts in atrial tissue outside the sinus node, so its P wave has a different shape or axis. The impulse then reaches the AV node and travels down the normal His-Purkinje system, producing a QRS identical to the sinus beats — unless it arrives so early that one bundle branch is still refractory (aberrant conduction).<br> <b>Why the pause is noncompensatory</b>: The premature atrial impulse also enters and depolarizes the sinus node, resetting its timing. The next sinus beat comes one cycle after the premature beat, so the interval spanning it is shorter than two normal cycles. A ventricular premature beat usually does not reach the sinus node, so the sinus rhythm continues undisturbed and the pause is fully compensatory.<br> <b>Clinical meaning</b>: Isolated premature atrial contractions are common and benign in older adults. Caffeine, alcohol, and stress increase them; frequent ones may be a marker of later atrial fibrillation, but they themselves need treatment only when symptoms are troublesome.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Premature atrial contraction (answer)</th><th>Mobitz type I block (closest distractor)</th></tr></thead><tbody> <tr><td>Pause cause</td><td>An <b>early</b> beat followed by reset</td><td>A P wave that is <b>not conducted</b> (no QRS after it)</td></tr> <tr><td>PR interval</td><td>Constant in sinus beats</td><td>Progressively lengthens before the dropped beat</td></tr> <tr><td>P wave before pause</td><td>Early, different shape, followed by QRS</td><td>On time, normal shape, not followed by QRS</td></tr> </tbody></table> Both produce grouped beating; look for whether the beat before the pause came early (atrial premature) or a P wave was dropped (block).\n- 오답 이유:\n  - (B) Premature ventricular contractions would be correct if the early beats had a wide, bizarre QRS without a preceding P wave and a compensatory pause.\n  - (C) Mobitz type I block would be correct if the PR interval lengthened progressively until a sinus P wave appeared on time without a following QRS.\n  - (D) Atrial fibrillation would be correct if there were no organized P waves and the RR intervals were irregularly irregular throughout the tracing.\n  - (E) Sinus arrhythmia would be correct if the RR intervals varied gradually with respiration and every P wave had the same sinus shape.\n- 함정: Calling grouped beating Mobitz I without checking the PR interval — here the beat before each pause comes early with a different P wave.\n- 학습목표: 좁은 QRS 의 조기 박동 앞에 모양이 다른 P파가 있고 휴지가 비보상성이면 심방조기수축으로 읽고 모비츠 1형 방실차단·심실조기수축과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 896 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The lead II rhythm strip shows sinus rhythm at about 70/min interrupted three times by an early beat with a narrow QRS identical to the sinus beats. Each early beat is preceded by a P wave of different shape, and the pause after it is noncompensatory — the two intervals around it add up to less than two sinus cycles. Early, narrow beats with an abnormal P wave and a reset sinus node are premature atrial contractions."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the QRS stays narrow</b>: An atrial premature beat starts in atrial tissue outside the sinus node, so its P wave has a different shape or axis. The impulse then reaches the AV node and travels down the normal His-Purkinje system, producing a QRS identical to the sinus beats — unless it arrives so early that one bundle branch is still refractory (aberrant conduction).<br> <b>Why the pause is noncompensatory</b>: The premature atrial impulse also enters and depolarizes the sinus node, resetting its timing. The next sinus beat comes one cycle after the premature beat, so the interval spanning it is shorter than two normal cycles. A ventricular premature beat usually does not reach the sinus node, so the sinus rhythm continues undisturbed and the pause is fully compensatory.<br> <b>Clinical meaning</b>: Isolated premature atrial contractions are common and benign in older adults. Caffeine, alcohol, and stress increase them; frequent ones may be a marker of later atrial fibrillation, but they themselves need treatment only when symptoms are troublesome."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Premature atrial contraction (answer)</th><th>Mobitz type I block (closest distractor)</th></tr></thead><tbody> <tr><td>Pause cause</td><td>An <b>early</b> beat followed by reset</td><td>A P wave that is <b>not conducted</b> (no QRS after it)</td></tr> <tr><td>PR interval</td><td>Constant in sinus beats</td><td>Progressively lengthens before the dropped beat</td></tr> <tr><td>P wave before pause</td><td>Early, different shape, followed by QRS</td><td>On time, normal shape, not followed by QRS</td></tr> </tbody></table> Both produce grouped beating; look for whether the beat before the pause came early (atrial premature) or a P wave was dropped (block)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Premature ventricular contractions would be correct if the early beats had a wide, bizarre QRS without a preceding P wave and a compensatory pause.\n(C) Mobitz type I block would be correct if the PR interval lengthened progressively until a sinus P wave appeared on time without a following QRS.\n(D) Atrial fibrillation would be correct if there were no organized P waves and the RR intervals were irregularly irregular throughout the tracing.\n(E) Sinus arrhythmia would be correct if the RR intervals varied gradually with respiration and every P wave had the same sinus shape."
+   },
+   {
+    "k": "함정",
+    "v": "Calling grouped beating Mobitz I without checking the PR interval — here the beat before each pause comes early with a different P wave."
+   },
+   {
+    "k": "학습목표",
+    "v": "좁은 QRS 의 조기 박동 앞에 모양이 다른 P파가 있고 휴지가 비보상성이면 심방조기수축으로 읽고 모비츠 1형 방실차단·심실조기수축과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 896 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Early narrow beats with a differently shaped P wave and a noncompensatory pause are premature atrial contractions",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "The beat before each pause comes early and is conducted; no on-time P wave is dropped and the PR does not lengthen",
+   "steps": 2,
+   "chain": [
+    "영상: early beats with narrow QRS identical to sinus beats, preceded by a P wave of different shape",
+    "Noncompensatory pause and constant PR in sinus beats -> premature atrial contractions"
+   ],
+   "key": [
+    {
+     "item": "영상: three early narrow beats interrupting sinus rhythm",
+     "why": "Premature supraventricular beats",
+     "also": []
+    },
+    {
+     "item": "영상: noncompensatory pause after each early beat",
+     "why": "Sinus node reset — atrial origin",
+     "also": []
+    },
+    {
+     "item": "his heart skips a beat",
+     "why": "Symptom of the pause after premature beats",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: constant PR interval in the sinus beats",
+     "why": "Lowers the likelihood of Mobitz type I block",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Serum electrolytes and thyroid-stimulating hormone are within normal limits",
+     "why": "Excludes common triggers — does not change the reading",
+     "also": []
+    },
+    {
+     "item": "two cups of coffee daily",
+     "why": "Possible trigger — does not change the reading",
+     "also": []
+    }
+   ],
+   "summary": "Early, narrow beats with a differently shaped P wave interrupt sinus rhythm and are followed by noncompensatory pauses. These are premature atrial contractions.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the PR lengthened progressively until an on-time P wave was not followed by a QRS, Mobitz type I block"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0550.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+   "asset_id": "PTBXL-00896",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 896"
+  },
+  "run_id": "20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0549",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 가슴 통증이 가라앉은 여성의 측벽 ST 하강과 트로포닌 상승",
+  "type": "심전도 처치 — 가슴 통증이 가라앉은 여성의 측벽 ST 하강과 트로포닌 상승",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-04",
+  "vignette": "72세 여자가 2시간 전 집안일을 하다 생긴 가슴 압박감으로 응급실에 왔다. 통증은 왼팔로 퍼졌고 설하 니트로글리세린을 먹은 뒤 가라앉아 지금은 없다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 76회/분이고 폐에서 수포음은 들리지 않는다. 고감도 트로포닌 I 는 처음 측정에서 기준치의 6배이고 1시간 뒤 더 올랐다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "베타차단제만 투여하고 외래 추적",
+   "흉부 CT 혈관조영술로 대동맥박리를 확인한 뒤 결정",
+   "아스피린·P2Y12 억제제·헤파린 투여 후 24시간 안에 관상동맥조영술",
+   "알테플라제 정맥 투여",
+   "운동부하 심전도를 하고 이상이 없으면 귀가"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: V5·V6 에 하향경사 ST 하강과 T파 역전이 있고 II·III·aVF 에도 경한 ST 하강이 있으나 ST 상승은 없다. 전형적 흉통과 트로포닌 상승·증가를 합치면 비ST분절상승 심근경색(NSTEMI)이다. 통증이 가라앉았고 혈역학적으로 안정하므로 아스피린·P2Y12 억제제·항응고제를 시작하고 트로포닌 상승이라는 고위험 소견에 따라 24시간 안에 관상동맥조영술을 한다. 혈전용해제는 이득이 없다.\n- 원리: <b>왜 ST 가 내려가는가</b>: 관상동맥이 완전히 막히지 않고 부분 폐쇄되면 혈류가 가장 먼저 부족해지는 곳은 압력이 높은 심내막하층이다. 손상 전류가 심내막 쪽을 향하므로 그 위의 표면 전극에서는 ST 가 내려간다. ST 하강의 위치는 막힌 혈관을 정확히 가리키지 않는다 — ST 상승과 달리 부위 진단 가치가 낮다.<br> <b>왜 혈전용해제를 쓰지 않나</b>: NSTEMI 의 원인 혈전은 혈소판이 풍부한 「흰 혈전」으로 동맥을 완전히 막지 않는다. 섬유소를 녹이는 혈전용해제는 막힌 혈관을 다시 열어 주는 STEMI 에서만 이득이 있고, NSTE-ACS 에서는 오히려 출혈과 사망을 늘렸다. 대신 혈소판을 막는 이중 항혈소판제와 트롬빈을 막는 항응고제가 기본이다.<br> <b>침습 시점</b>: 지속되는 흉통·혈역학 불안정·심부전·악성 부정맥이 있으면 2시간 안에, 트로포닌으로 확인된 NSTEMI 처럼 고위험이면 24시간 안에 관상동맥조영술을 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">NSTEMI(정답)</th><th>STEMI(가장 가까운 오답의 적응)</th></tr></thead><tbody> <tr><td>심전도</td><td><b>ST 하강</b>·T파 역전, 또는 정상</td><td>인접 두 유도의 ST 상승, 새 좌각차단</td></tr> <tr><td>혈전</td><td>부분 폐쇄, 혈소판 풍부</td><td>완전 폐쇄, 섬유소 풍부</td></tr> <tr><td>재관류</td><td>항혈소판·항응고 후 2~24시간 안 조영술</td><td>일차 중재술(불가하면 혈전용해제)</td></tr> </tbody></table> 같은 트로포닌 상승이라도 ST 가 올라갔는지 내려갔는지가 혈전용해제 적응을 가른다.\n- 오답 이유:\n  - ① 베타차단제 단독과 외래 추적은 트로포닌이 정상인 안정 협심증에서 정답이 될 수 있지만 급성 심근경색에는 부족하다.\n  - ② 흉부 CT 혈관조영술은 찢어지는 등 통증·양팔 혈압 차이·종격동 확장으로 대동맥박리가 의심될 때 정답이 된다.\n  - ④ 알테플라제는 ST 상승 심근경색에서 120분 안에 일차 중재술을 할 수 없을 때 정답이 되며 ST 하강에서는 이득이 없다.\n  - ⑤ 운동부하 심전도는 트로포닌과 심전도가 정상인 저위험 흉통에서 정답이 되며 심근경색 급성기에는 금기다.\n- 함정: 트로포닌이 오른 심근경색이면 혈전용해제를 쓰는 것 — 혈전용해제는 ST 상승일 때만 이득이 있다.\n- 학습목표: ST 상승 없이 측벽·하벽 유도의 ST 하강과 트로포닌 상승을 비ST분절상승 심근경색으로 판단하고 혈전용해제가 아닌 항혈소판·항응고 치료와 조기 관상동맥조영술을 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12615 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "V5·V6 에 하향경사 ST 하강과 T파 역전이 있고 II·III·aVF 에도 경한 ST 하강이 있으나 ST 상승은 없다. 전형적 흉통과 트로포닌 상승·증가를 합치면 비ST분절상승 심근경색(NSTEMI)이다. 통증이 가라앉았고 혈역학적으로 안정하므로 아스피린·P2Y12 억제제·항응고제를 시작하고 트로포닌 상승이라는 고위험 소견에 따라 24시간 안에 관상동맥조영술을 한다. 혈전용해제는 이득이 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 ST 가 내려가는가</b>: 관상동맥이 완전히 막히지 않고 부분 폐쇄되면 혈류가 가장 먼저 부족해지는 곳은 압력이 높은 심내막하층이다. 손상 전류가 심내막 쪽을 향하므로 그 위의 표면 전극에서는 ST 가 내려간다. ST 하강의 위치는 막힌 혈관을 정확히 가리키지 않는다 — ST 상승과 달리 부위 진단 가치가 낮다.<br> <b>왜 혈전용해제를 쓰지 않나</b>: NSTEMI 의 원인 혈전은 혈소판이 풍부한 「흰 혈전」으로 동맥을 완전히 막지 않는다. 섬유소를 녹이는 혈전용해제는 막힌 혈관을 다시 열어 주는 STEMI 에서만 이득이 있고, NSTE-ACS 에서는 오히려 출혈과 사망을 늘렸다. 대신 혈소판을 막는 이중 항혈소판제와 트롬빈을 막는 항응고제가 기본이다.<br> <b>침습 시점</b>: 지속되는 흉통·혈역학 불안정·심부전·악성 부정맥이 있으면 2시간 안에, 트로포닌으로 확인된 NSTEMI 처럼 고위험이면 24시간 안에 관상동맥조영술을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">NSTEMI(정답)</th><th>STEMI(가장 가까운 오답의 적응)</th></tr></thead><tbody> <tr><td>심전도</td><td><b>ST 하강</b>·T파 역전, 또는 정상</td><td>인접 두 유도의 ST 상승, 새 좌각차단</td></tr> <tr><td>혈전</td><td>부분 폐쇄, 혈소판 풍부</td><td>완전 폐쇄, 섬유소 풍부</td></tr> <tr><td>재관류</td><td>항혈소판·항응고 후 2~24시간 안 조영술</td><td>일차 중재술(불가하면 혈전용해제)</td></tr> </tbody></table> 같은 트로포닌 상승이라도 ST 가 올라갔는지 내려갔는지가 혈전용해제 적응을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 베타차단제 단독과 외래 추적은 트로포닌이 정상인 안정 협심증에서 정답이 될 수 있지만 급성 심근경색에는 부족하다.\n② 흉부 CT 혈관조영술은 찢어지는 등 통증·양팔 혈압 차이·종격동 확장으로 대동맥박리가 의심될 때 정답이 된다.\n④ 알테플라제는 ST 상승 심근경색에서 120분 안에 일차 중재술을 할 수 없을 때 정답이 되며 ST 하강에서는 이득이 없다.\n⑤ 운동부하 심전도는 트로포닌과 심전도가 정상인 저위험 흉통에서 정답이 되며 심근경색 급성기에는 금기다."
+   },
+   {
+    "k": "함정",
+    "v": "트로포닌이 오른 심근경색이면 혈전용해제를 쓰는 것 — 혈전용해제는 ST 상승일 때만 이득이 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "ST 상승 없이 측벽·하벽 유도의 ST 하강과 트로포닌 상승을 비ST분절상승 심근경색으로 판단하고 혈전용해제가 아닌 항혈소판·항응고 치료와 조기 관상동맥조영술을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12615 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "ST 상승 없이 측벽·하벽 ST 하강과 트로포닌 상승이 있으면 NSTEMI 이고, 항혈소판·항응고 후 24시간 안 조영술이 다음 처치다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "ST 상승이 없다 — 혈전용해제의 적응이 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: V5·V6 하향경사 ST 하강·T파 역전, II·III·aVF 경한 ST 하강, ST 상승 없음",
+    "전형적 흉통 + 트로포닌 상승·증가 → 비ST분절상승 심근경색",
+    "안정 상태의 고위험 NSTEMI → 항혈소판·항응고 후 24시간 안 관상동맥조영술"
+   ],
+   "key": [
+    {
+     "item": "영상: V5·V6 하향경사 ST 하강과 T파 역전",
+     "why": "심내막하 허혈",
+     "also": []
+    },
+    {
+     "item": "고감도 트로포닌 I 는 처음 측정에서 기준치의 6배이고 1시간 뒤 더 올랐다",
+     "why": "급성 심근 손상 — 불안정 협심증이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: ST 상승 없음",
+     "why": "STEMI 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "지금은 없다",
+     "why": "지속 흉통이 없어 2시간 안 응급 조영술까지는 필요 없다",
+     "also": []
+    },
+    {
+     "item": "폐에서 수포음은 들리지 않는다",
+     "why": "심부전이 없어 초고위험이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압과 이상지질혈증",
+     "why": "위험인자 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "측벽·하벽 ST 하강과 오르는 트로포닌은 NSTEMI 다. 안정 상태이므로 항혈소판·항응고 치료 후 24시간 안에 관상동맥조영술을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "인접 유도에 ST 상승이 있고 120분 안에 일차 중재술을 할 수 없으면 혈전용해제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0549.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12615",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12615"
+  },
+  "run_id": "20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0548",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 오래된 고혈압 여성의 흉부 유도 큰 R파",
+  "type": "심전도 판독 — 오래된 고혈압 여성의 흉부 유도 큰 R파",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-04",
+  "vignette": "73세 여자가 20년 동안 고혈압으로 약을 먹어 왔는데 최근 1년 동안 혈압이 잘 조절되지 않아 왔다. 가슴 통증과 실신은 없고 빠르게 걸으면 약간 숨이 차다. 혈압 168/94 mmHg, 맥박 70회/분이다. 심첨박동이 넓게 만져지고 제4심음이 들린다. 혈청 크레아티닌 1.0 mg/dL, 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "정상 심전도",
+   "좌심실 비대",
+   "우심실 비대",
+   "완전 좌각차단",
+   "오래된 측벽 심근경색"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 동리듬 약 70회/분, QRS 는 좁다. V4·V5 의 R파가 매우 커서 V5 R 이 약 26 mm, V1 S 가 약 11 mm 로 둘을 합친 Sokolow-Lyon 전압이 약 37 mm(기준 35 mm 초과)다. 축은 정상이고 V1 에 우세한 R 이 없으며 Q파·ST-T 긴장형 변화는 없다. 오래된 고혈압·제4심음·넓은 심첨박동과 함께 좌심실 비대로 읽는다.\n- 원리: <b>왜 전압이 커지는가</b>: QRS 의 크기는 탈분극하는 심근의 양과 전극까지의 거리에 비례한다. 좌심실 벽이 두꺼워지면 왼쪽·뒤쪽으로 향하는 탈분극 벡터가 커져 그쪽을 보는 V5·V6 에서는 R파가, 반대쪽에서 보는 V1·V2 에서는 S파가 깊어진다. 그래서 두 값을 더한 Sokolow-Lyon(SV1 + RV5 또는 RV6 ≥ 35 mm)이 대표 기준이다.<br> <b>기준의 한계</b>: 전압 기준은 특이도는 높지만 민감도가 낮다(대개 50 % 미만). 비만·폐기종·심낭삼출은 전압을 낮추고, 마른 젊은 사람은 비대 없이 전압이 높을 수 있다 — 그래서 35세 미만에서는 전압만으로 진단하지 않는다. 여성에서는 Cornell 전압(R aVL + S V3 > 20 mm)도 쓴다. 확진과 정도 평가는 심초음파로 한다.<br> <b>긴장형 변화</b>: 비대가 진행해 심내막하 허혈과 재분극 이상이 생기면 V5·V6 에 비대칭 ST 하강과 T파 역전이 붙는다. 이 기록에는 아직 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">좌심실 비대(정답)</th><th>완전 좌각차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 폭</td><td><b>좁다</b>(0.12 s 미만)</td><td>0.12 s 이상</td></tr> <tr><td>V5·V6</td><td>높고 뾰족한 R</td><td>넓고 갈라진(M 모양) R, q 파 없음</td></tr> <tr><td>ST-T</td><td>정상 또는 긴장형 변화</td><td>QRS 와 반대 방향의 ST-T 가 항상 동반</td></tr> </tbody></table> 둘 다 V5 R·V1 S 가 크게 보이지만 QRS 폭을 먼저 재면 갈린다 — 좌각차단이 있으면 전압 기준으로 비대를 판정하지 않는다.\n- 오답 이유:\n  - ① 정상 심전도는 SV1 + RV5 가 35 mm 미만이거나 35세 미만의 마른 사람에서 다른 이상 없이 전압만 높을 때 정답이 될 수 있다.\n  - ③ 우심실 비대는 V1 에 R 이 S 보다 큰 우세 R 파, 우축 편위, V5·V6 의 깊은 S 파가 있을 때 정답이 된다.\n  - ④ 완전 좌각차단은 QRS 가 0.12 s 이상 넓고 I·aVL·V6 에 넓고 갈라진 R 이 있을 때 정답이며 이 기록의 QRS 는 좁다.\n  - ⑤ 오래된 측벽 심근경색은 I·aVL·V5·V6 에 폭 0.04 s 이상의 깊은 Q 파가 남아 있을 때 정답이 된다.\n- 함정: 큰 R파만 보고 좌각차단이나 정상 변이로 넘기는 것 — QRS 폭과 SV1 + RV5 를 직접 재야 한다.\n- 학습목표: V1 의 S파와 V5 의 R파를 합한 전압이 35 mm 를 넘고 QRS 가 좁으면 좌심실 비대로 읽고 좌각차단·우심실 비대와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14300 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 70회/분, QRS 는 좁다. V4·V5 의 R파가 매우 커서 V5 R 이 약 26 mm, V1 S 가 약 11 mm 로 둘을 합친 Sokolow-Lyon 전압이 약 37 mm(기준 35 mm 초과)다. 축은 정상이고 V1 에 우세한 R 이 없으며 Q파·ST-T 긴장형 변화는 없다. 오래된 고혈압·제4심음·넓은 심첨박동과 함께 좌심실 비대로 읽는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전압이 커지는가</b>: QRS 의 크기는 탈분극하는 심근의 양과 전극까지의 거리에 비례한다. 좌심실 벽이 두꺼워지면 왼쪽·뒤쪽으로 향하는 탈분극 벡터가 커져 그쪽을 보는 V5·V6 에서는 R파가, 반대쪽에서 보는 V1·V2 에서는 S파가 깊어진다. 그래서 두 값을 더한 Sokolow-Lyon(SV1 + RV5 또는 RV6 ≥ 35 mm)이 대표 기준이다.<br> <b>기준의 한계</b>: 전압 기준은 특이도는 높지만 민감도가 낮다(대개 50 % 미만). 비만·폐기종·심낭삼출은 전압을 낮추고, 마른 젊은 사람은 비대 없이 전압이 높을 수 있다 — 그래서 35세 미만에서는 전압만으로 진단하지 않는다. 여성에서는 Cornell 전압(R aVL + S V3 > 20 mm)도 쓴다. 확진과 정도 평가는 심초음파로 한다.<br> <b>긴장형 변화</b>: 비대가 진행해 심내막하 허혈과 재분극 이상이 생기면 V5·V6 에 비대칭 ST 하강과 T파 역전이 붙는다. 이 기록에는 아직 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">좌심실 비대(정답)</th><th>완전 좌각차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 폭</td><td><b>좁다</b>(0.12 s 미만)</td><td>0.12 s 이상</td></tr> <tr><td>V5·V6</td><td>높고 뾰족한 R</td><td>넓고 갈라진(M 모양) R, q 파 없음</td></tr> <tr><td>ST-T</td><td>정상 또는 긴장형 변화</td><td>QRS 와 반대 방향의 ST-T 가 항상 동반</td></tr> </tbody></table> 둘 다 V5 R·V1 S 가 크게 보이지만 QRS 폭을 먼저 재면 갈린다 — 좌각차단이 있으면 전압 기준으로 비대를 판정하지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정상 심전도는 SV1 + RV5 가 35 mm 미만이거나 35세 미만의 마른 사람에서 다른 이상 없이 전압만 높을 때 정답이 될 수 있다.\n③ 우심실 비대는 V1 에 R 이 S 보다 큰 우세 R 파, 우축 편위, V5·V6 의 깊은 S 파가 있을 때 정답이 된다.\n④ 완전 좌각차단은 QRS 가 0.12 s 이상 넓고 I·aVL·V6 에 넓고 갈라진 R 이 있을 때 정답이며 이 기록의 QRS 는 좁다.\n⑤ 오래된 측벽 심근경색은 I·aVL·V5·V6 에 폭 0.04 s 이상의 깊은 Q 파가 남아 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "큰 R파만 보고 좌각차단이나 정상 변이로 넘기는 것 — QRS 폭과 SV1 + RV5 를 직접 재야 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "V1 의 S파와 V5 의 R파를 합한 전압이 35 mm 를 넘고 QRS 가 좁으면 좌심실 비대로 읽고 좌각차단·우심실 비대와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14300 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 에서 SV1 + RV5 가 35 mm 를 넘고 오래된 고혈압이 있으면 좌심실 비대다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "QRS 가 좁고 V6 의 R 이 갈라지지 않았다 — 좌각차단이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: V5 R 약 26 mm + V1 S 약 11 mm = 약 37 mm, QRS 좁음",
+    "오래된 고혈압 + 제4심음·넓은 심첨박동 → 좌심실 비대"
+   ],
+   "key": [
+    {
+     "item": "영상: V5 의 큰 R파와 V1 의 깊은 S파(합 약 37 mm)",
+     "why": "Sokolow-Lyon 기준 충족",
+     "also": []
+    },
+    {
+     "item": "20년 동안 고혈압",
+     "why": "압력 과부하 — 비대의 원인",
+     "also": []
+    },
+    {
+     "item": "제4심음",
+     "why": "두꺼워져 뻣뻣한 좌심실",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 좁은 QRS",
+     "why": "좌각차단 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "칼륨 4.1 mEq/L",
+     "why": "정상 — 판독에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "좁은 QRS 에서 SV1 + RV5 가 약 37 mm 로 35 mm 를 넘는다. 오래된 고혈압과 제4심음을 합쳐 좌심실 비대로 읽는다.",
+   "switch": {
+    "choice": "D",
+    "condition": "QRS 가 0.12 s 이상 넓고 V6 의 R 이 갈라져 있으면 완전 좌각차단"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0548.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/14000/#files-panel",
+   "asset_id": "PTBXL-14300",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14300"
+  },
+  "run_id": "20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0542",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "소화기 — 선별 대장내시경에서 발견된 용종",
+  "type": "소화기 — 선별 대장내시경에서 발견된 용종",
+  "modality": "ENDOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-04",
+  "vignette": "An asymptomatic patient at average risk for colorectal cancer undergoes screening colonoscopy. There is no family history of colorectal cancer or polyposis syndromes, and the bowel preparation is excellent. The cecum is reached. A colonoscopic photograph of the single lesion found in the colon is shown. No other lesions are seen.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "CT colonography",
+   "Endoscopic polypectomy with histologic examination",
+   "Segmental colectomy",
+   "Serum carcinoembryonic antigen measurement",
+   "Repeat colonoscopy in 10 years"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The photograph shows a round, smooth-surfaced, semipedunculated polyp rising from otherwise normal colonic mucosa, without ulceration, central depression, or spontaneous bleeding. The appearance alone cannot tell an adenoma from a hyperplastic polyp, and adenomas are the precursor of most colorectal cancers, so the polyp should be removed endoscopically during the same colonoscopy and sent for histology; the surveillance interval is then set by the pathology.\n- 원리: <b>Why remove rather than watch</b>: Most colorectal cancers arise through the adenoma-carcinoma sequence, in which an adenoma accumulates APC, KRAS, and TP53 mutations over about 10 years. Removing adenomas interrupts this sequence, which is why screening colonoscopy lowers both incidence and mortality of colorectal cancer. A polyp cannot be reliably classified by its outside appearance, so it is removed and examined.<br> <b>Why endoscopic, not surgical</b>: A smooth polyp without ulceration, depression, or a non-lifting sign has a low chance of deep submucosal invasion and can be resected completely with a snare. Surgery is for lesions that are not endoscopically resectable or that show invasive cancer with high-risk features on histology.<br> <b>Why histology sets the next step</b>: Number, size, and type (tubular, villous, sessile serrated, high-grade dysplasia) determine whether the next colonoscopy is in 3, 5-10, or 7-10 years.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endoscopic polypectomy (answer)</th><th>Segmental colectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Lesion</td><td><b>Smooth polyp</b>, no ulceration or depression</td><td>Mass that cannot be removed endoscopically or invasive cancer with high-risk histology</td></tr> <tr><td>Diagnosis</td><td>Gives the histology and treats at once</td><td>Requires a tissue diagnosis first</td></tr> <tr><td>Risk</td><td>Low (bleeding, perforation are rare)</td><td>Anesthesia, anastomotic leak</td></tr> </tbody></table> A polyp found at screening is removed and read under the microscope first; surgery depends on what the pathology shows.\n- 오답 이유:\n  - (A) CT colonography would be correct as a screening alternative for a patient who cannot or will not undergo colonoscopy.\n  - (C) Segmental colectomy would be correct for a lesion that cannot be resected endoscopically or for a polyp showing invasive cancer with high-risk features.\n  - (D) Serum CEA would be useful after a colorectal cancer diagnosis to monitor recurrence, but it is not a test for evaluating a polyp.\n  - (E) Repeat colonoscopy in 10 years would be correct after a complete, high-quality colonoscopy that found no polyps at all.\n- 함정: Leaving a smooth, benign-looking polyp in place — its histology cannot be judged by appearance, so it is removed at the same session.\n- 제작 가정: HyperKvasir 는 내시경 사진과 소견 분류만 있고 나이·성별·병력이 없다 — 평균 위험군의 무증상 선별 대장내시경 상황을 가정했다 (가정한 정보: asymptomatic patient at average risk for colorectal cancer · screening colonoscopy)\n- 학습목표: 선별 대장내시경에서 발견한 매끈한 용종은 육안으로 조직형을 확정할 수 없으므로 내시경 절제 후 조직검사가 다음 단계임을 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 86: Colorectal Cancer · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 333: Gastrointestinal Endoscopy\n\n## 출처\n- HyperKvasir (OSF, CC BY 4.0) · ebecb670-0071-4a53-ae55-bc1df538e0ca.jpg · Creative Commons Attribution 4.0 International · https://datasets.simula.no/hyper-kvasir/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photograph shows a round, smooth-surfaced, semipedunculated polyp rising from otherwise normal colonic mucosa, without ulceration, central depression, or spontaneous bleeding. The appearance alone cannot tell an adenoma from a hyperplastic polyp, and adenomas are the precursor of most colorectal cancers, so the polyp should be removed endoscopically during the same colonoscopy and sent for histology; the surveillance interval is then set by the pathology."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why remove rather than watch</b>: Most colorectal cancers arise through the adenoma-carcinoma sequence, in which an adenoma accumulates APC, KRAS, and TP53 mutations over about 10 years. Removing adenomas interrupts this sequence, which is why screening colonoscopy lowers both incidence and mortality of colorectal cancer. A polyp cannot be reliably classified by its outside appearance, so it is removed and examined.<br> <b>Why endoscopic, not surgical</b>: A smooth polyp without ulceration, depression, or a non-lifting sign has a low chance of deep submucosal invasion and can be resected completely with a snare. Surgery is for lesions that are not endoscopically resectable or that show invasive cancer with high-risk features on histology.<br> <b>Why histology sets the next step</b>: Number, size, and type (tubular, villous, sessile serrated, high-grade dysplasia) determine whether the next colonoscopy is in 3, 5-10, or 7-10 years."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endoscopic polypectomy (answer)</th><th>Segmental colectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Lesion</td><td><b>Smooth polyp</b>, no ulceration or depression</td><td>Mass that cannot be removed endoscopically or invasive cancer with high-risk histology</td></tr> <tr><td>Diagnosis</td><td>Gives the histology and treats at once</td><td>Requires a tissue diagnosis first</td></tr> <tr><td>Risk</td><td>Low (bleeding, perforation are rare)</td><td>Anesthesia, anastomotic leak</td></tr> </tbody></table> A polyp found at screening is removed and read under the microscope first; surgery depends on what the pathology shows."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) CT colonography would be correct as a screening alternative for a patient who cannot or will not undergo colonoscopy.\n(C) Segmental colectomy would be correct for a lesion that cannot be resected endoscopically or for a polyp showing invasive cancer with high-risk features.\n(D) Serum CEA would be useful after a colorectal cancer diagnosis to monitor recurrence, but it is not a test for evaluating a polyp.\n(E) Repeat colonoscopy in 10 years would be correct after a complete, high-quality colonoscopy that found no polyps at all."
+   },
+   {
+    "k": "함정",
+    "v": "Leaving a smooth, benign-looking polyp in place — its histology cannot be judged by appearance, so it is removed at the same session."
+   },
+   {
+    "k": "제작 가정",
+    "v": "HyperKvasir 는 내시경 사진과 소견 분류만 있고 나이·성별·병력이 없다 — 평균 위험군의 무증상 선별 대장내시경 상황을 가정했다 (가정한 정보: asymptomatic patient at average risk for colorectal cancer · screening colonoscopy)"
+   },
+   {
+    "k": "학습목표",
+    "v": "선별 대장내시경에서 발견한 매끈한 용종은 육안으로 조직형을 확정할 수 없으므로 내시경 절제 후 조직검사가 다음 단계임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 86: Colorectal Cancer · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 333: Gastrointestinal Endoscopy ## 출처 HyperKvasir (OSF, CC BY 4.0) · ebecb670-0071-4a53-ae55-bc1df538e0ca.jpg · Creative Commons Attribution 4.0 International · https://datasets.simula.no/hyper-kvasir/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "A polyp found at screening colonoscopy is removed endoscopically at the same session and sent for histology",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "The polyp is smooth, without ulceration or depression, so it is endoscopically resectable",
+   "steps": 2,
+   "chain": [
+    "영상: smooth, round, semipedunculated colonic polyp without ulceration or depression",
+    "Histology cannot be judged by appearance and the lesion is resectable -> endoscopic polypectomy with histology"
+   ],
+   "key": [
+    {
+     "item": "영상: smooth semipedunculated polyp without ulceration or central depression",
+     "why": "Features of an endoscopically resectable lesion",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "No other lesions are seen",
+     "why": "Single lesion — histology alone will decide surveillance",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "the bowel preparation is excellent",
+     "why": "Means the examination is adequate — does not change the next step",
+     "also": []
+    },
+    {
+     "item": "There is no family history of colorectal cancer or polyposis syndromes",
+     "why": "Average risk — relevant to screening, not to this polyp's removal",
+     "also": []
+    }
+   ],
+   "summary": "A smooth, semipedunculated colonic polyp found at screening colonoscopy cannot be classified by appearance. It is removed endoscopically and sent for histology.",
+   "switch": {
+    "choice": "C",
+    "condition": "If biopsy showed invasive cancer with deep submucosal invasion or the lesion could not be lifted and removed endoscopically, segmental colectomy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0542.jpg",
+   "caption": "Colonoscopic photograph as provided by the dataset, downscaled only (HyperKvasir, OSF, CC BY 4.0; no cropping or color adjustment) ※ The clinical scenario in the stem is an authoring assumption — the source dataset has no age or clinical history",
+   "alt": "ENDOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "HyperKvasir (위장관 내시경 — 상부 · 하부 소견 분류 영상)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://datasets.simula.no/hyper-kvasir/",
+   "url": "https://osf.io/mh9sj/files/osfstorage/5dfbe7c50236b8000973f1e4",
+   "asset_id": "HYPERKVASIR-ebecb670-0071-4a53-a",
+   "text": "HyperKvasir (OSF, CC BY 4.0) · ebecb670-0071-4a53-ae55-bc1df538e0ca.jpg"
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0541",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "산과 — 만삭이 지난 경산부의 분만 1기 태아심박동 기록",
+  "type": "산과 — 만삭이 지난 경산부의 분만 1기 태아심박동 기록",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-04",
+  "vignette": "30세 경산부(2회 분만)가 임신 41주에 규칙적인 진통으로 입원하였다. 임신 중 특이 병력은 없고 두 번 모두 질식분만을 하였다. 입원 때 혈압 118/74 mmHg, 체온 36.8 °C 이고 자궁경부는 5 cm 열려 있으며 양막은 터지지 않았다. 옥시토신은 쓰지 않았다. 입원 30분 뒤부터의 태아심박동과 자궁수축 전자감시 기록은 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "산모에게 산소를 주고 좌측위로 눕힌다",
+   "태아 두피 혈액으로 pH 를 잰다",
+   "흡인분만을 준비한다",
+   "진통 진행을 지켜보며 태아감시를 계속한다",
+   "즉시 제왕절개술을 한다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 태아심박동 기저치는 약 130회/분으로 정상(110~160)이고, 변이도는 약 10~15회/분으로 중등도이며, 34분과 38분에 15회/분 이상·15초 이상 올라가는 가속이 있고, 10분 동안 세 번의 자궁수축에 뒤따르는 감속이 없다. 이는 범주 I(정상) 기록으로, 태아의 산염기 상태가 정상임을 강하게 시사한다. 따라서 특별한 처치 없이 진통 진행을 지켜보며 감시를 계속하면 된다.\n- 원리: <b>왜 변이도와 가속이 안심 신호인가</b>: 태아심박동의 박동 간 변동은 산소를 충분히 받는 태아 뇌간에서 교감·부교감 신경이 끊임없이 조율한 결과다. 저산소증과 산증이 깊어지면 이 조율이 무너져 변이도가 줄고 가속이 사라진다. 그래서 중등도 변이도나 가속이 있으면 <b>그 순간 태아가 대사성 산증이 아니라는 것</b>을 높은 신뢰도로 말해 준다.<br> <b>3단계 분류</b>: 범주 I 은 기저 110~160, 중등도 변이도, 후기·변이성 감속 없음 — 일상 감시. 범주 III 는 변이도 소실과 함께 반복 후기·변이성 감속이나 서맥, 또는 사인파 — 즉시 분만 준비. 그 사이 모든 것이 범주 II 로, 자궁내 소생술(체위 변경, 수액, 옥시토신 중단)과 재평가를 한다.<br> <b>왜 다른 처치를 하지 않나</b>: 정상 기록에서 개입하면 이득 없이 불필요한 수술·기구 분만만 늘어난다. 자궁경부 5 cm 인 분만 1기 활동기이므로 흡인분만은 조건(자궁경부 완전 개대)부터 맞지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">범주 I — 감시 계속(정답)</th><th>범주 II — 자궁내 소생술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>변이도</td><td><b>중등도(6~25회/분)</b></td><td>최소·소실(사인파 없음) 또는 현저</td></tr> <tr><td>감속</td><td>후기·변이성 감속 없음</td><td>반복 후기감속, 오래가는 감속 등</td></tr> <tr><td>처치</td><td>일상 감시</td><td>좌측위, 산소·수액, 옥시토신 중단 후 재평가</td></tr> </tbody></table> 감속이 나타나도 변이도와 가속이 유지되면 산증 가능성은 낮다 — 판단의 축은 변이도다.\n- 오답 이유:\n  - ① 산소와 좌측위 같은 자궁내 소생술은 반복 후기감속이나 변이성 감속, 변이도 감소가 보이는 범주 II 기록일 때 정답이 된다.\n  - ② 태아 두피 pH 측정은 범주 II 기록이 이어져 산증 여부를 확인해야 할 때 쓰는 검사로, 정상 기록에서는 할 필요가 없다.\n  - ③ 흡인분만은 자궁경부가 완전히 열리고 아두가 충분히 내려온 분만 2기에 태아 상태가 나쁠 때 정답이 된다.\n  - ⑤ 즉시 제왕절개술은 변이도가 사라진 채 반복 후기감속이나 지속 서맥이 이어지는 범주 III 기록이 소생술에도 회복되지 않을 때 정답이다.\n- 함정: 수축 사이 작은 흔들림을 감속으로 읽거나 41주라는 사실만으로 개입하려는 것 — 정상 변이도와 가속이 있으면 범주 I 이다.\n- 학습목표: 분만 중 태아심박동에서 정상 기저심박동·중등도 변이도·가속·감속 없음을 범주 I 으로 판정하고 분만 진행을 지켜보는 처치를 고른다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol. 2009;114(1):192-202\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1231 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "태아심박동 기저치는 약 130회/분으로 정상(110~160)이고, 변이도는 약 10~15회/분으로 중등도이며, 34분과 38분에 15회/분 이상·15초 이상 올라가는 가속이 있고, 10분 동안 세 번의 자궁수축에 뒤따르는 감속이 없다. 이는 범주 I(정상) 기록으로, 태아의 산염기 상태가 정상임을 강하게 시사한다. 따라서 특별한 처치 없이 진통 진행을 지켜보며 감시를 계속하면 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 변이도와 가속이 안심 신호인가</b>: 태아심박동의 박동 간 변동은 산소를 충분히 받는 태아 뇌간에서 교감·부교감 신경이 끊임없이 조율한 결과다. 저산소증과 산증이 깊어지면 이 조율이 무너져 변이도가 줄고 가속이 사라진다. 그래서 중등도 변이도나 가속이 있으면 <b>그 순간 태아가 대사성 산증이 아니라는 것</b>을 높은 신뢰도로 말해 준다.<br> <b>3단계 분류</b>: 범주 I 은 기저 110~160, 중등도 변이도, 후기·변이성 감속 없음 — 일상 감시. 범주 III 는 변이도 소실과 함께 반복 후기·변이성 감속이나 서맥, 또는 사인파 — 즉시 분만 준비. 그 사이 모든 것이 범주 II 로, 자궁내 소생술(체위 변경, 수액, 옥시토신 중단)과 재평가를 한다.<br> <b>왜 다른 처치를 하지 않나</b>: 정상 기록에서 개입하면 이득 없이 불필요한 수술·기구 분만만 늘어난다. 자궁경부 5 cm 인 분만 1기 활동기이므로 흡인분만은 조건(자궁경부 완전 개대)부터 맞지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">범주 I — 감시 계속(정답)</th><th>범주 II — 자궁내 소생술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>변이도</td><td><b>중등도(6~25회/분)</b></td><td>최소·소실(사인파 없음) 또는 현저</td></tr> <tr><td>감속</td><td>후기·변이성 감속 없음</td><td>반복 후기감속, 오래가는 감속 등</td></tr> <tr><td>처치</td><td>일상 감시</td><td>좌측위, 산소·수액, 옥시토신 중단 후 재평가</td></tr> </tbody></table> 감속이 나타나도 변이도와 가속이 유지되면 산증 가능성은 낮다 — 판단의 축은 변이도다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 산소와 좌측위 같은 자궁내 소생술은 반복 후기감속이나 변이성 감속, 변이도 감소가 보이는 범주 II 기록일 때 정답이 된다.\n② 태아 두피 pH 측정은 범주 II 기록이 이어져 산증 여부를 확인해야 할 때 쓰는 검사로, 정상 기록에서는 할 필요가 없다.\n③ 흡인분만은 자궁경부가 완전히 열리고 아두가 충분히 내려온 분만 2기에 태아 상태가 나쁠 때 정답이 된다.\n⑤ 즉시 제왕절개술은 변이도가 사라진 채 반복 후기감속이나 지속 서맥이 이어지는 범주 III 기록이 소생술에도 회복되지 않을 때 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "수축 사이 작은 흔들림을 감속으로 읽거나 41주라는 사실만으로 개입하려는 것 — 정상 변이도와 가속이 있으면 범주 I 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동에서 정상 기저심박동·중등도 변이도·가속·감속 없음을 범주 I 으로 판정하고 분만 진행을 지켜보는 처치를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol. 2009;114(1):192-202 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1231 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "기저 130회/분, 중등도 변이도, 가속이 있고 감속이 없는 범주 I 기록이므로 감시를 계속한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "반복 감속이나 변이도 감소가 없다 — 자궁내 소생술이 필요한 범주 II 가 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 기저 약 130회/분, 변이도 약 10~15회/분, 34분·38분 가속, 세 번의 수축에 감속 없음",
+    "범주 I(정상) → 개입 없이 진통 진행 관찰과 태아감시 계속"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저심박동 약 130회/분과 중등도 변이도",
+     "why": "범주 I 의 필수 조건",
+     "also": []
+    },
+    {
+     "item": "영상: 34분·38분의 가속",
+     "why": "산증이 없음을 시사",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 수축에 뒤따르는 감속 없음",
+     "why": "자궁태반 기능부전·제대 압박 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "자궁경부는 5 cm",
+     "why": "분만 1기 — 흡인분만 조건이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "옥시토신은 쓰지 않았다",
+     "why": "중단할 약이 없다 — 판정 자체는 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "임신 41주",
+     "why": "만삭 이후이나 정상 기록이면 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "정상 기저심박동, 중등도 변이도, 가속이 있고 감속이 없는 범주 I 기록이다. 진통 진행을 지켜보며 감시를 계속한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "수축마다 반복되는 후기감속과 변이도 감소가 보이면 범주 II 로 자궁내 소생술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0541.png",
+   "caption": "분만 중 태아심박동(위)과 자궁활동(아래), 기록 시작 후 30~40분 구간, 굵은 세로선 = 1분 (PhysioNet CTU-UHB, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1231_30m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1231"
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0540",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "신장·비뇨 — 우연히 발견된 신장 고형 종괴의 조영 CT",
+  "type": "신장·비뇨 — 우연히 발견된 신장 고형 종괴의 조영 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-04",
+  "vignette": "An 83-year-old woman comes to the physician for follow-up after a contrast-enhanced abdominal CT scan was performed to evaluate mild epigastric discomfort that has since resolved. She has no flank pain or gross hematuria. She has hypertension controlled with amlodipine. Vital signs are within normal limits, and no abdominal mass is palpable. Serum creatinine is 0.8 mg/dL. Urinalysis shows no red blood cells. An axial image of the contrast-enhanced abdominal CT obtained in the arterial phase is shown. There is no renal vein invasion, no enlarged lymph nodes, and no fat attenuation within the lesion.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Urothelial carcinoma of the renal pelvis",
+   "Renal abscess",
+   "Renal cell carcinoma",
+   "Angiomyolipoma",
+   "Simple renal cyst"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The CT shows a round, solid mass about 4 cm in the mid portion of the right kidney that enhances heterogeneously and expands the renal contour; the left kidney is normal. A solid, enhancing renal mass without macroscopic fat is renal cell carcinoma until proved otherwise — 80-90% of such masses are malignant. In this patient, surgical pathology confirmed renal cell carcinoma (chromophobe type, pT1b).\n- 원리: <b>Why enhancement and fat decide the diagnosis</b>: The first questions about a renal mass are whether it is cystic or solid and whether it contains blood vessels. A lesion that gains more than about 15-20 HU after contrast is vascularized tissue, not fluid. If macroscopic fat (below about -10 HU) is present, the mass is almost always an angiomyolipoma; a solid enhancing mass without fat is renal cell carcinoma in most adults.<br> <b>Why it is usually silent</b>: The kidney sits in the retroperitoneum and the tumor can grow large before it stretches the capsule or invades the collecting system. The classic triad of flank pain, hematuria, and a palpable mass is present in fewer than 10% of patients; most tumors today are found incidentally on CT done for another reason, as in this case.<br> <b>Why not biopsy first</b>: Imaging predicts malignancy well enough that a localized enhancing mass is usually treated surgically (partial or radical nephrectomy) or, in frail elderly patients, managed by active surveillance or ablation. Biopsy is reserved for cases where the result will change management.\n- 비교: <table><thead><tr><th style=\"width:24%\">CT feature</th><th style=\"width:38%\">Renal cell carcinoma (answer)</th><th>Angiomyolipoma (closest distractor)</th></tr></thead><tbody> <tr><td>Fat</td><td>None on CT</td><td><b>Macroscopic fat</b> (below -10 HU)</td></tr> <tr><td>Enhancement</td><td>Solid, heterogeneous (necrosis, hemorrhage)</td><td>Variable; large lesions may bleed</td></tr> <tr><td>Associations</td><td>Smoking, obesity, von Hippel-Lindau</td><td>Tuberous sclerosis (bilateral, multiple)</td></tr> </tbody></table> A fat-poor angiomyolipoma can mimic carcinoma, which is why a solid mass without fat is treated as malignant until pathology says otherwise.\n- 오답 이유:\n  - (A) Urothelial carcinoma of the renal pelvis would be correct for a filling defect in the collecting system with hematuria and positive urine cytology.\n  - (B) A renal abscess would be correct with fever, flank pain, pyuria, and a fluid collection with a rim-enhancing wall.\n  - (D) Angiomyolipoma would be correct if the solid mass contained areas of macroscopic fat attenuation on CT, often in a patient with tuberous sclerosis.\n  - (E) A simple renal cyst would be correct for a thin-walled, homogeneous water-density lesion that does not enhance after contrast.\n- 함정: Expecting the classic triad before considering cancer — most renal cell carcinomas are found incidentally, without pain or hematuria.\n- 학습목표: 조영 CT 에서 지방 없이 불균질하게 조영되는 신장 고형 종괴를 신세포암으로 판단하고 혈관근지방종·단순 낭종·신우 요로상피암과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00013 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a round, solid mass about 4 cm in the mid portion of the right kidney that enhances heterogeneously and expands the renal contour; the left kidney is normal. A solid, enhancing renal mass without macroscopic fat is renal cell carcinoma until proved otherwise — 80-90% of such masses are malignant. In this patient, surgical pathology confirmed renal cell carcinoma (chromophobe type, pT1b)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why enhancement and fat decide the diagnosis</b>: The first questions about a renal mass are whether it is cystic or solid and whether it contains blood vessels. A lesion that gains more than about 15-20 HU after contrast is vascularized tissue, not fluid. If macroscopic fat (below about -10 HU) is present, the mass is almost always an angiomyolipoma; a solid enhancing mass without fat is renal cell carcinoma in most adults.<br> <b>Why it is usually silent</b>: The kidney sits in the retroperitoneum and the tumor can grow large before it stretches the capsule or invades the collecting system. The classic triad of flank pain, hematuria, and a palpable mass is present in fewer than 10% of patients; most tumors today are found incidentally on CT done for another reason, as in this case.<br> <b>Why not biopsy first</b>: Imaging predicts malignancy well enough that a localized enhancing mass is usually treated surgically (partial or radical nephrectomy) or, in frail elderly patients, managed by active surveillance or ablation. Biopsy is reserved for cases where the result will change management."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">CT feature</th><th style=\"width:38%\">Renal cell carcinoma (answer)</th><th>Angiomyolipoma (closest distractor)</th></tr></thead><tbody> <tr><td>Fat</td><td>None on CT</td><td><b>Macroscopic fat</b> (below -10 HU)</td></tr> <tr><td>Enhancement</td><td>Solid, heterogeneous (necrosis, hemorrhage)</td><td>Variable; large lesions may bleed</td></tr> <tr><td>Associations</td><td>Smoking, obesity, von Hippel-Lindau</td><td>Tuberous sclerosis (bilateral, multiple)</td></tr> </tbody></table> A fat-poor angiomyolipoma can mimic carcinoma, which is why a solid mass without fat is treated as malignant until pathology says otherwise."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Urothelial carcinoma of the renal pelvis would be correct for a filling defect in the collecting system with hematuria and positive urine cytology.\n(B) A renal abscess would be correct with fever, flank pain, pyuria, and a fluid collection with a rim-enhancing wall.\n(D) Angiomyolipoma would be correct if the solid mass contained areas of macroscopic fat attenuation on CT, often in a patient with tuberous sclerosis.\n(E) A simple renal cyst would be correct for a thin-walled, homogeneous water-density lesion that does not enhance after contrast."
+   },
+   {
+    "k": "함정",
+    "v": "Expecting the classic triad before considering cancer — most renal cell carcinomas are found incidentally, without pain or hematuria."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영 CT 에서 지방 없이 불균질하게 조영되는 신장 고형 종괴를 신세포암으로 판단하고 혈관근지방종·단순 낭종·신우 요로상피암과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00013 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A solid, heterogeneously enhancing renal mass without macroscopic fat is renal cell carcinoma",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Angiomyolipoma contains macroscopic fat; this mass has no fat attenuation",
+   "steps": 2,
+   "chain": [
+    "영상: solid, heterogeneously enhancing round mass expanding the mid right kidney",
+    "No fat attenuation within the lesion and no cystic water density -> renal cell carcinoma"
+   ],
+   "key": [
+    {
+     "item": "영상: heterogeneously enhancing solid mass of the right kidney",
+     "why": "Vascularized solid tissue, not a cyst",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no fat attenuation within the lesion",
+     "why": "Lowers the likelihood of angiomyolipoma",
+     "also": []
+    },
+    {
+     "item": "Urinalysis shows no red blood cells",
+     "why": "Makes a collecting-system urothelial tumor less likely",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no renal vein invasion, no enlarged lymph nodes",
+     "why": "Staging information that guides treatment, not the diagnosis",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has no flank pain or gross hematuria",
+     "why": "Most renal cell carcinomas are incidental — absence of the triad does not exclude cancer",
+     "also": []
+    },
+    {
+     "item": "mild epigastric discomfort that has since resolved",
+     "why": "Reason the CT was done — unrelated to the renal mass",
+     "also": []
+    }
+   ],
+   "summary": "An incidental, solid, heterogeneously enhancing right renal mass without fat is renal cell carcinoma until proved otherwise.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the mass contained macroscopic fat below -10 HU, angiomyolipoma"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0540.png",
+   "caption": "Contrast-enhanced abdominal CT, arterial phase, single axial image, soft-tissue window, standard display orientation (TCIA, CC BY 3.0; no cropping, adjustment, or segmentation overlay)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.116611286563714520615276995338",
+   "asset_id": "TCIA-KITS-00013_72010720",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00013"
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0539",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "순환기 — 두근거림을 호소하는 노인 여성의 규칙적으로 끼어드는 넓은 박동",
+  "type": "순환기 — 두근거림을 호소하는 노인 여성의 규칙적으로 끼어드는 넓은 박동",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-04",
+  "vignette": "76세 여자가 한 달 전부터 가슴이 덜컥 내려앉는 듯하고 맥이 건너뛰는 느낌이 자주 들어 왔다. 실신·흉통·호흡곤란은 없고, 커피를 하루 세 잔 마신다. 고혈압으로 약을 먹고 있다. 혈압 136/78 mmHg 이고 맥박은 불규칙하게 만져진다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "심실조기수축(심실 삼중맥)",
+   "변행전도된 심방조기수축",
+   "간헐적 좌각차단",
+   "2도 방실차단(모비츠 1형)",
+   "비지속성 심실빈맥"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 P파가 앞선 좁은 QRS 두 개 뒤에 넓고 모양이 전혀 다른 조기 QRS 가 하나씩 규칙적으로 끼어든다 — 정상 2 : 조기 1 의 삼중맥이다. 조기 박동 앞에는 P파가 없고, T파가 QRS 와 반대 방향이며, 조기 박동 앞뒤 간격을 합치면 정상 RR 의 두 배에 가까운 보상성 휴지가 있다. 넓은 QRS·선행 P파 없음·보상성 휴지는 심실에서 생긴 조기수축(PVC)의 특징이다.\n- 원리: <b>왜 넓은가</b>: 정상 박동은 히스-푸르키니에 계통을 타고 양쪽 심실을 거의 동시에(0.08~0.10 s) 탈분극한다. 심실 근육 한 점에서 시작한 조기 박동은 이 빠른 길을 쓰지 못하고 심근세포끼리 천천히 전도되므로 QRS 가 0.12 s 이상 넓어지고, 탈분극 순서가 비정상이라 재분극(T파)도 QRS 와 반대 방향을 향한다.<br> <b>왜 보상성 휴지인가</b>: 심실 조기 박동은 대개 동방결절까지 거꾸로 올라가 리셋하지 못한다. 동방결절은 제 박자대로 뛰고, 조기 박동 직후의 P파는 불응기에 걸려 전도되지 않으므로 다음 정상 박동은 원래 박자에 맞춰 온다 — 조기 박동을 끼운 두 간격의 합이 정상 RR 의 두 배가 된다. 심방조기수축은 동방결절을 리셋해 이 합이 두 배보다 짧다(비보상성).<br> <b>삼중맥의 의미</b>: 정상 1 : PVC 1 이 이단맥, 정상 2 : PVC 1 이 삼중맥이다. 구조적 심질환이 없고 증상이 견딜 만하면 카페인 줄이기 등 유발요인 교정과 경과 관찰이 먼저이며, 부담이 크면(대개 하루 박동의 10 % 이상) 심초음파로 심실 기능을 확인한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">심실조기수축(정답)</th><th>변행전도된 심방조기수축(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>선행 P파</td><td><b>없음</b>(또는 QRS 뒤 역행 P)</td><td>조기 P파가 앞선다(T파 위에 겹쳐 모양이 바뀜)</td></tr> <tr><td>QRS 모양</td><td>넓고 기괴함, T파 반대 방향</td><td>대개 우각차단 꼴(우각의 불응기가 길어서)</td></tr> <tr><td>휴지</td><td>보상성(두 간격 합 = RR × 2)</td><td>비보상성 — 동방결절이 리셋된다</td></tr> </tbody></table> 넓은 조기 박동을 보면 앞의 T파가 다른 T파와 모양이 다른지(숨은 P파)와 휴지 길이를 재어 기원을 정한다.\n- 오답 이유:\n  - ② 변행전도된 심방조기수축은 넓은 조기 QRS 앞 T파에 조기 P파가 숨어 있고 휴지가 비보상성일 때 정답이 된다.\n  - ③ 간헐적 좌각차단은 넓은 QRS 가 조기에 오지 않고 정상 박동과 같은 PR 간격의 P파 뒤에 제때 나타날 때 정답이다.\n  - ④ 모비츠 1형 2도 방실차단은 PR 이 점점 길어지다 P파 뒤 QRS 가 하나 빠지는 묶음 박동이 보일 때 정답이다.\n  - ⑤ 비지속성 심실빈맥은 넓은 QRS 가 3개 이상 연달아 100회/분 넘게 이어지다 30초 안에 멈출 때 정답이다.\n- 함정: 넓은 QRS 면 모두 심실성이라고 단정하는 것 — 앞의 T파에 숨은 P파와 휴지의 길이를 확인해야 변행전도를 거른다.\n- 학습목표: 리듬 스트립에서 정상 박동 두 개마다 끼어드는 넓은 조기 박동을 심실조기수축(삼중맥)으로 읽고 변행전도된 심방조기수축과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11861 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 P파가 앞선 좁은 QRS 두 개 뒤에 넓고 모양이 전혀 다른 조기 QRS 가 하나씩 규칙적으로 끼어든다 — 정상 2 : 조기 1 의 삼중맥이다. 조기 박동 앞에는 P파가 없고, T파가 QRS 와 반대 방향이며, 조기 박동 앞뒤 간격을 합치면 정상 RR 의 두 배에 가까운 보상성 휴지가 있다. 넓은 QRS·선행 P파 없음·보상성 휴지는 심실에서 생긴 조기수축(PVC)의 특징이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 넓은가</b>: 정상 박동은 히스-푸르키니에 계통을 타고 양쪽 심실을 거의 동시에(0.08~0.10 s) 탈분극한다. 심실 근육 한 점에서 시작한 조기 박동은 이 빠른 길을 쓰지 못하고 심근세포끼리 천천히 전도되므로 QRS 가 0.12 s 이상 넓어지고, 탈분극 순서가 비정상이라 재분극(T파)도 QRS 와 반대 방향을 향한다.<br> <b>왜 보상성 휴지인가</b>: 심실 조기 박동은 대개 동방결절까지 거꾸로 올라가 리셋하지 못한다. 동방결절은 제 박자대로 뛰고, 조기 박동 직후의 P파는 불응기에 걸려 전도되지 않으므로 다음 정상 박동은 원래 박자에 맞춰 온다 — 조기 박동을 끼운 두 간격의 합이 정상 RR 의 두 배가 된다. 심방조기수축은 동방결절을 리셋해 이 합이 두 배보다 짧다(비보상성).<br> <b>삼중맥의 의미</b>: 정상 1 : PVC 1 이 이단맥, 정상 2 : PVC 1 이 삼중맥이다. 구조적 심질환이 없고 증상이 견딜 만하면 카페인 줄이기 등 유발요인 교정과 경과 관찰이 먼저이며, 부담이 크면(대개 하루 박동의 10 % 이상) 심초음파로 심실 기능을 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">심실조기수축(정답)</th><th>변행전도된 심방조기수축(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>선행 P파</td><td><b>없음</b>(또는 QRS 뒤 역행 P)</td><td>조기 P파가 앞선다(T파 위에 겹쳐 모양이 바뀜)</td></tr> <tr><td>QRS 모양</td><td>넓고 기괴함, T파 반대 방향</td><td>대개 우각차단 꼴(우각의 불응기가 길어서)</td></tr> <tr><td>휴지</td><td>보상성(두 간격 합 = RR × 2)</td><td>비보상성 — 동방결절이 리셋된다</td></tr> </tbody></table> 넓은 조기 박동을 보면 앞의 T파가 다른 T파와 모양이 다른지(숨은 P파)와 휴지 길이를 재어 기원을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 변행전도된 심방조기수축은 넓은 조기 QRS 앞 T파에 조기 P파가 숨어 있고 휴지가 비보상성일 때 정답이 된다.\n③ 간헐적 좌각차단은 넓은 QRS 가 조기에 오지 않고 정상 박동과 같은 PR 간격의 P파 뒤에 제때 나타날 때 정답이다.\n④ 모비츠 1형 2도 방실차단은 PR 이 점점 길어지다 P파 뒤 QRS 가 하나 빠지는 묶음 박동이 보일 때 정답이다.\n⑤ 비지속성 심실빈맥은 넓은 QRS 가 3개 이상 연달아 100회/분 넘게 이어지다 30초 안에 멈출 때 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "넓은 QRS 면 모두 심실성이라고 단정하는 것 — 앞의 T파에 숨은 P파와 휴지의 길이를 확인해야 변행전도를 거른다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리듬 스트립에서 정상 박동 두 개마다 끼어드는 넓은 조기 박동을 심실조기수축(삼중맥)으로 읽고 변행전도된 심방조기수축과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11861 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "선행 P파 없이 넓고 기괴한 조기 QRS 가 정상 박동 두 개마다 끼어들고 보상성 휴지가 따르면 심실조기수축 삼중맥이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "조기 QRS 앞에 숨은 P파가 없고 휴지가 보상성이다 — 심방에서 시작한 박동이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: II 리듬 스트립에서 정상 좁은 QRS 2개마다 넓고 모양이 다른 조기 QRS 1개, 선행 P파 없음",
+    "T파가 QRS 와 반대 방향 + 보상성 휴지 → 심실 기원 조기수축의 삼중맥"
+   ],
+   "key": [
+    {
+     "item": "영상: 정상 박동 2개마다 넓은 조기 QRS 1개(삼중맥)",
+     "why": "리듬 판독의 핵심",
+     "also": []
+    },
+    {
+     "item": "영상: 조기 QRS 앞에 P파 없음, 뒤에 보상성 휴지",
+     "why": "심방조기수축 변행전도와 가르는 소견",
+     "also": []
+    },
+    {
+     "item": "맥이 건너뛰는 느낌",
+     "why": "조기 박동 뒤 휴지를 환자가 느끼는 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.2 mEq/L",
+     "why": "저칼륨혈증으로 생긴 이소성 박동 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "커피를 하루 세 잔",
+     "why": "교정할 유발요인 — 판독은 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "실신·흉통·호흡곤란은 없고",
+     "why": "위험 신호가 없어 급한 치료가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "정상 박동 두 개마다 선행 P파 없는 넓은 조기 QRS 가 끼어들고 보상성 휴지가 따른다. 심실조기수축 삼중맥이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "넓은 조기 QRS 앞 T파에 조기 P파가 숨어 있고 휴지가 비보상성이면 변행전도된 심방조기수축"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0539.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/11000/#files-panel",
+   "asset_id": "PTBXL-11861",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11861"
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0547",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "내분비·대사 — 복부 CT 에서 우연히 발견된 부신 종괴",
+  "type": "내분비·대사 — 복부 CT 에서 우연히 발견된 부신 종괴",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-04",
+  "vignette": "56세 여자가 담석증으로 찍은 복부 CT 에서 왼쪽 부신 종괴가 우연히 발견되어 왔다. 두근거림·두통·땀남은 없고, 체중 변화나 피부가 얇아지는 증상은 없다. 고혈압·당뇨병은 없고 먹는 약도 없다. 혈압 122/78 mmHg, 맥박 72회/분이고 체질량지수는 23 kg/m² 이다. 둥근 얼굴이나 자색 선조는 없다. 혈청 칼륨 4.3 mEq/L, 공복 혈당 92 mg/dL 이다. 비조영 CT 에서 종괴는 지름 2.8 cm, 경계가 매끈하고 균질하며 감쇠값은 6 HU 이다. 반대쪽 부신은 정상이다.",
+  "question": "다음 검사로 가장 적절한 것은?",
+  "options": [
+   "복강경 부신절제술",
+   "1 mg 덱사메타손 억제검사와 혈장 유리 메타네프린 측정",
+   "혈장 알도스테론/레닌 비 측정만 한다",
+   "CT 유도 부신 생검",
+   "6개월 뒤 CT 재촬영만 한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 2.8 cm, 경계가 매끈하고 균질하며 비조영 CT 감쇠값이 10 HU 이하(6 HU)인 종괴는 지질이 풍부한 양성 부신피질선종이다 — 영상으로 악성 걱정은 덜었다. 남은 질문은 호르몬을 내는가이다. 증상이 없어도 모든 부신 우연종은 자율 코르티솔 분비(1 mg 덱사메타손 억제검사)를 확인하고, 크롬친화세포종은 마취·수술 때 치명적일 수 있어 혈장 메타네프린으로 배제한다. 알도스테론 선별은 고혈압이나 저칼륨혈증이 있을 때 한다.\n- 원리: <b>두 개의 질문</b>: 부신 우연종은 항상 「악성인가」와 「기능성인가」를 따로 묻는다. 악성은 영상으로 답한다 — 선종은 세포 안에 지질이 많아 비조영 CT 에서 10 HU 이하로 낮게 보이고, 4 cm 미만·균질·매끈하면 양성 가능성이 매우 높아 추가 영상이 필요 없다.<br> <b>왜 코르티솔은 모두 검사하나</b>: 선종의 상당수가 쿠싱 징후 없이 코르티솔을 조금씩 자율 분비한다(경도 자율 코르티솔 분비). 이는 고혈압·당뇨병·골다공증·심혈관 위험과 관련된다. 덱사메타손 1 mg 을 밤에 먹으면 정상은 ACTH 가 억제되어 다음 날 아침 코르티솔이 1.8 μg/dL 이하로 떨어지지만, 자율 분비 선종은 억제되지 않는다.<br> <b>왜 메타네프린인가</b>: 크롬친화세포종은 무증상일 수 있고 수술·조영제·약물로 고혈압 위기를 일으킨다. 다만 10 HU 이하의 지방 풍부 종괴는 크롬친화세포종일 가능성이 매우 낮아 최신 지침은 이 경우 생략을 허용하기도 한다 — 보기 중 가장 적절한 조합은 여전히 코르티솔 검사를 포함한 것이다. 알도스테론증은 고혈압(또는 저칼륨혈증)이 없으면 거의 없어 선별하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">검사</th><th style=\"width:38%\">1 mg 덱사메타손 억제검사(정답의 핵심)</th><th>알도스테론/레닌 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>모든</b> 부신 우연종</td><td>고혈압 또는 저칼륨혈증이 있는 경우만</td></tr> <tr><td>찾는 것</td><td>쿠싱 징후 없는 자율 코르티솔 분비</td><td>원발성 알도스테론증</td></tr> <tr><td>이 환자</td><td>필요 — 증상과 무관</td><td>혈압 122/78, 칼륨 4.3 으로 적응 없음</td></tr> </tbody></table> 「증상이 없으니 기능 검사가 필요 없다」도, 「모든 호르몬을 다 잰다」도 틀리다 — 코르티솔은 모두, 알도스테론은 고혈압이 있을 때.\n- 오답 이유:\n  - ① 복강경 부신절제술은 기능성 종양(크롬친화세포종·알도스테론종·자율 코르티솔 분비와 합병증)이나 4 cm 이상·악성 의심일 때 정답이다.\n  - ③ 알도스테론/레닌 비는 부신 우연종 환자에게 고혈압이나 저칼륨혈증이 있을 때 코르티솔 검사와 함께 하면 정답이 된다.\n  - ④ CT 유도 부신 생검은 다른 장기의 암 병력이 있고 크롬친화세포종을 배제한 뒤 전이 여부가 치료를 바꿀 때만 정답이 된다.\n  - ⑤ 6개월 뒤 CT 재촬영은 감쇠값이 10 HU 를 넘는 불확정 종괴로 4 cm 미만이고 기능이 없을 때 추적 방법으로 정답이 된다.\n- 함정: 영상이 양성이고 증상이 없으니 아무 검사도 하지 않거나, 혈압이 정상인데 알도스테론만 재는 것 — 코르티솔 자율 분비는 모든 우연종에서 확인한다.\n- 학습목표: 부신 우연종에서 영상으로 양성(지방 풍부 선종)을 확인한 뒤에도 기능성 여부를 가리는 1 mg 덱사메타손 억제검사와 혈장 메타네프린을 고르고, 알도스테론 선별의 적응을 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Fassnacht M, Tsagarakis S, Terzolo M, et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas, in collaboration with the European Network for the Study of Adrenal Tumors. Eur J Endocrinol. 2023;189(1):G1-G42",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "2.8 cm, 경계가 매끈하고 균질하며 비조영 CT 감쇠값이 10 HU 이하(6 HU)인 종괴는 지질이 풍부한 양성 부신피질선종이다 — 영상으로 악성 걱정은 덜었다. 남은 질문은 호르몬을 내는가이다. 증상이 없어도 모든 부신 우연종은 자율 코르티솔 분비(1 mg 덱사메타손 억제검사)를 확인하고, 크롬친화세포종은 마취·수술 때 치명적일 수 있어 혈장 메타네프린으로 배제한다. 알도스테론 선별은 고혈압이나 저칼륨혈증이 있을 때 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>두 개의 질문</b>: 부신 우연종은 항상 「악성인가」와 「기능성인가」를 따로 묻는다. 악성은 영상으로 답한다 — 선종은 세포 안에 지질이 많아 비조영 CT 에서 10 HU 이하로 낮게 보이고, 4 cm 미만·균질·매끈하면 양성 가능성이 매우 높아 추가 영상이 필요 없다.<br> <b>왜 코르티솔은 모두 검사하나</b>: 선종의 상당수가 쿠싱 징후 없이 코르티솔을 조금씩 자율 분비한다(경도 자율 코르티솔 분비). 이는 고혈압·당뇨병·골다공증·심혈관 위험과 관련된다. 덱사메타손 1 mg 을 밤에 먹으면 정상은 ACTH 가 억제되어 다음 날 아침 코르티솔이 1.8 μg/dL 이하로 떨어지지만, 자율 분비 선종은 억제되지 않는다.<br> <b>왜 메타네프린인가</b>: 크롬친화세포종은 무증상일 수 있고 수술·조영제·약물로 고혈압 위기를 일으킨다. 다만 10 HU 이하의 지방 풍부 종괴는 크롬친화세포종일 가능성이 매우 낮아 최신 지침은 이 경우 생략을 허용하기도 한다 — 보기 중 가장 적절한 조합은 여전히 코르티솔 검사를 포함한 것이다. 알도스테론증은 고혈압(또는 저칼륨혈증)이 없으면 거의 없어 선별하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">검사</th><th style=\"width:38%\">1 mg 덱사메타손 억제검사(정답의 핵심)</th><th>알도스테론/레닌 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>모든</b> 부신 우연종</td><td>고혈압 또는 저칼륨혈증이 있는 경우만</td></tr> <tr><td>찾는 것</td><td>쿠싱 징후 없는 자율 코르티솔 분비</td><td>원발성 알도스테론증</td></tr> <tr><td>이 환자</td><td>필요 — 증상과 무관</td><td>혈압 122/78, 칼륨 4.3 으로 적응 없음</td></tr> </tbody></table> 「증상이 없으니 기능 검사가 필요 없다」도, 「모든 호르몬을 다 잰다」도 틀리다 — 코르티솔은 모두, 알도스테론은 고혈압이 있을 때."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 복강경 부신절제술은 기능성 종양(크롬친화세포종·알도스테론종·자율 코르티솔 분비와 합병증)이나 4 cm 이상·악성 의심일 때 정답이다.\n③ 알도스테론/레닌 비는 부신 우연종 환자에게 고혈압이나 저칼륨혈증이 있을 때 코르티솔 검사와 함께 하면 정답이 된다.\n④ CT 유도 부신 생검은 다른 장기의 암 병력이 있고 크롬친화세포종을 배제한 뒤 전이 여부가 치료를 바꿀 때만 정답이 된다.\n⑤ 6개월 뒤 CT 재촬영은 감쇠값이 10 HU 를 넘는 불확정 종괴로 4 cm 미만이고 기능이 없을 때 추적 방법으로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "영상이 양성이고 증상이 없으니 아무 검사도 하지 않거나, 혈압이 정상인데 알도스테론만 재는 것 — 코르티솔 자율 분비는 모든 우연종에서 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "부신 우연종에서 영상으로 양성(지방 풍부 선종)을 확인한 뒤에도 기능성 여부를 가리는 1 mg 덱사메타손 억제검사와 혈장 메타네프린을 고르고, 알도스테론 선별의 적응을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Fassnacht M, Tsagarakis S, Terzolo M, et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas, in collaboration with the European Network for the Study of Adrenal Tumors. Eur J Endocrinol. 2023;189(1):G1-G42"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "영상으로 양성 선종이 확인된 부신 우연종도 기능 평가가 필요하며, 고혈압이 없으면 코르티솔 억제검사와 메타네프린이 다음 검사다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "고혈압과 저칼륨혈증이 없어 알도스테론 선별의 적응이 없고, 코르티솔 검사는 빠질 수 없다",
+   "steps": 3,
+   "chain": [
+    "2.8 cm, 균질, 매끈, 비조영 6 HU → 지질 풍부 양성 선종 — 추가 영상 불필요",
+    "기능성 여부는 영상으로 알 수 없다 → 모든 우연종에서 1 mg 덱사메타손 억제검사",
+    "크롬친화세포종 배제는 메타네프린, 알도스테론은 고혈압·저칼륨이 없어 생략"
+   ],
+   "key": [
+    {
+     "item": "감쇠값은 6 HU",
+     "why": "지질 풍부 선종 — 악성 걱정을 덜어 준다",
+     "also": []
+    },
+    {
+     "item": "지름 2.8 cm",
+     "why": "4 cm 미만 — 수술 적응이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈압 122/78 mmHg",
+     "why": "알도스테론 선별 적응을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.3 mEq/L",
+     "why": "원발성 알도스테론증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "둥근 얼굴이나 자색 선조는 없다",
+     "why": "쿠싱 징후가 없어도 경도 자율 분비는 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "담석증으로 찍은 복부 CT",
+     "why": "우연히 발견된 경위 — 판단에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "6 HU, 2.8 cm 의 균질한 부신 종괴는 양성 선종이다. 그래도 기능 평가로 1 mg 덱사메타손 억제검사와 메타네프린을 하고, 고혈압이 없으니 알도스테론은 재지 않는다.",
+   "switch": {
+    "choice": "C",
+    "condition": "고혈압이나 저칼륨혈증이 있으면 알도스테론/레닌 비를 코르티솔 검사와 함께 측정"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0546",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "소아청소년 — 닷새째 열이 나는 유아의 결막충혈·입술 갈라짐",
+  "type": "소아청소년 — 닷새째 열이 나는 유아의 결막충혈·입술 갈라짐",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-04",
+  "vignette": "A 3-year-old boy is brought to the physician because of fever for 5 days. His temperature has reached 39.8°C daily despite acetaminophen. His parents report red eyes without discharge, cracked red lips, and swelling of his hands and feet. Temperature is 39.5°C. Examination shows bilateral bulbar conjunctival injection sparing the limbus, a red tongue with prominent papillae, erythema and induration of the palms and soles, a polymorphous rash on the trunk, and a 2-cm nontender right cervical lymph node. A rapid streptococcal antigen test is negative. Leukocyte count is 15,800/mm3, platelet count is 450,000/mm3, and C-reactive protein is 9.6 mg/dL.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral amoxicillin",
+   "Oral prednisolone alone",
+   "Supportive care with antipyretics",
+   "Intramuscular benzathine penicillin",
+   "Intravenous immunoglobulin and aspirin"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Fever for 5 days with all five principal features — bilateral nonexudative limbus-sparing conjunctivitis, oral changes (cracked lips, strawberry tongue), extremity changes, polymorphous rash, and a cervical node of 1.5 cm or more — meets the criteria for Kawasaki disease. Intravenous immunoglobulin (2 g/kg) with aspirin given within the first 10 days of illness reduces the risk of coronary artery aneurysms from about 25% to under 5%; echocardiography is obtained at diagnosis.\n- 원리: <b>Why the coronary arteries</b>: Kawasaki disease is a medium-vessel vasculitis of young children. Inflammatory cells infiltrate the arterial wall, destroy the internal elastic lamina, and weaken it; the coronary arteries are the most affected medium-sized vessels, and aneurysms form in about one-quarter of untreated children, leading to thrombosis, myocardial infarction, or sudden death years later.<br> <b>Why IVIG and aspirin</b>: High-dose IVIG neutralizes the inflammatory response through mechanisms that include Fc-receptor modulation and blocking of cytokines; it shortens fever and prevents aneurysms when given early (ideally within 10 days). Aspirin is anti-inflammatory at higher doses during the febrile phase and antiplatelet at low doses afterward to prevent coronary thrombosis.<br> <b>Why not antibiotics</b>: The disease mimics infection (fever, rash, high CRP), but cultures and streptococcal tests are negative and the fever does not respond to antibiotics.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Kawasaki disease (answer)</th><th>Scarlet fever (closest distractor)</th></tr></thead><tbody> <tr><td>Eyes</td><td><b>Bilateral conjunctival injection</b>, limbus sparing</td><td>Usually no conjunctivitis</td></tr> <tr><td>Throat</td><td>Red lips and tongue, no exudate</td><td>Exudative pharyngitis, positive strep test</td></tr> <tr><td>Hands, feet</td><td>Edema and erythema, later periungual peeling</td><td>Peeling after the sandpaper rash</td></tr> <tr><td>Treatment</td><td>IVIG and aspirin</td><td>Penicillin or amoxicillin</td></tr> </tbody></table> A strawberry tongue occurs in both — conjunctivitis, extremity edema, and a negative strep test point to Kawasaki disease.\n- 오답 이유:\n  - (A) Oral amoxicillin would be correct for streptococcal pharyngitis or scarlet fever with exudative tonsillitis and a positive rapid strep test.\n  - (B) Prednisolone alone is not standard initial therapy; steroids are added to IVIG for high-risk patients or for disease that persists after IVIG.\n  - (C) Supportive care alone would be correct for a self-limited viral illness without the criteria for Kawasaki disease.\n  - (D) Benzathine penicillin would be correct for streptococcal pharyngitis when adherence to oral therapy is a concern or for rheumatic fever prophylaxis.\n- 함정: Treating fever with a strawberry tongue and rash as streptococcal infection — bilateral conjunctivitis, extremity edema, and a negative strep test point to Kawasaki disease.\n- 학습목표: 5일 이상 열과 결막충혈·입술 변화·손발 부종·발진·경부 림프절 비대를 가와사키병으로 판단하고 관상동맥류를 막는 IVIG 와 아스피린을 고른다\n- 근거·출처: McCrindle BW, Rowley AH, Newburger JW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement for health professionals from the American Heart Association. Circulation. 2017;135(17):e927-e999 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 375: The Vasculitis Syndromes",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever for 5 days with all five principal features — bilateral nonexudative limbus-sparing conjunctivitis, oral changes (cracked lips, strawberry tongue), extremity changes, polymorphous rash, and a cervical node of 1.5 cm or more — meets the criteria for Kawasaki disease. Intravenous immunoglobulin (2 g/kg) with aspirin given within the first 10 days of illness reduces the risk of coronary artery aneurysms from about 25% to under 5%; echocardiography is obtained at diagnosis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the coronary arteries</b>: Kawasaki disease is a medium-vessel vasculitis of young children. Inflammatory cells infiltrate the arterial wall, destroy the internal elastic lamina, and weaken it; the coronary arteries are the most affected medium-sized vessels, and aneurysms form in about one-quarter of untreated children, leading to thrombosis, myocardial infarction, or sudden death years later.<br> <b>Why IVIG and aspirin</b>: High-dose IVIG neutralizes the inflammatory response through mechanisms that include Fc-receptor modulation and blocking of cytokines; it shortens fever and prevents aneurysms when given early (ideally within 10 days). Aspirin is anti-inflammatory at higher doses during the febrile phase and antiplatelet at low doses afterward to prevent coronary thrombosis.<br> <b>Why not antibiotics</b>: The disease mimics infection (fever, rash, high CRP), but cultures and streptococcal tests are negative and the fever does not respond to antibiotics."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Kawasaki disease (answer)</th><th>Scarlet fever (closest distractor)</th></tr></thead><tbody> <tr><td>Eyes</td><td><b>Bilateral conjunctival injection</b>, limbus sparing</td><td>Usually no conjunctivitis</td></tr> <tr><td>Throat</td><td>Red lips and tongue, no exudate</td><td>Exudative pharyngitis, positive strep test</td></tr> <tr><td>Hands, feet</td><td>Edema and erythema, later periungual peeling</td><td>Peeling after the sandpaper rash</td></tr> <tr><td>Treatment</td><td>IVIG and aspirin</td><td>Penicillin or amoxicillin</td></tr> </tbody></table> A strawberry tongue occurs in both — conjunctivitis, extremity edema, and a negative strep test point to Kawasaki disease."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral amoxicillin would be correct for streptococcal pharyngitis or scarlet fever with exudative tonsillitis and a positive rapid strep test.\n(B) Prednisolone alone is not standard initial therapy; steroids are added to IVIG for high-risk patients or for disease that persists after IVIG.\n(C) Supportive care alone would be correct for a self-limited viral illness without the criteria for Kawasaki disease.\n(D) Benzathine penicillin would be correct for streptococcal pharyngitis when adherence to oral therapy is a concern or for rheumatic fever prophylaxis."
+   },
+   {
+    "k": "함정",
+    "v": "Treating fever with a strawberry tongue and rash as streptococcal infection — bilateral conjunctivitis, extremity edema, and a negative strep test point to Kawasaki disease."
+   },
+   {
+    "k": "학습목표",
+    "v": "5일 이상 열과 결막충혈·입술 변화·손발 부종·발진·경부 림프절 비대를 가와사키병으로 판단하고 관상동맥류를 막는 IVIG 와 아스피린을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McCrindle BW, Rowley AH, Newburger JW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement for health professionals from the American Heart Association. Circulation. 2017;135(17):e927-e999 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 375: The Vasculitis Syndromes"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Fever for 5 days with all principal features is Kawasaki disease, treated with IVIG and aspirin to prevent coronary aneurysms",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "Bilateral conjunctival injection, extremity edema, and a negative rapid strep test argue against streptococcal infection",
+   "steps": 2,
+   "chain": [
+    "Fever 5 days + conjunctivitis, oral changes, extremity changes, rash, cervical node -> Kawasaki disease",
+    "Prevent coronary artery aneurysms -> IVIG and aspirin within 10 days"
+   ],
+   "key": [
+    {
+     "item": "fever for 5 days",
+     "why": "Required duration for the diagnosis",
+     "also": []
+    },
+    {
+     "item": "bilateral bulbar conjunctival injection sparing the limbus",
+     "why": "Principal feature, unlike most infections",
+     "also": []
+    },
+    {
+     "item": "erythema and induration of the palms and soles",
+     "why": "Extremity change — principal feature",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "A rapid streptococcal antigen test is negative",
+     "why": "Lowers the likelihood of scarlet fever",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "platelet count is 450,000/mm3",
+     "why": "Thrombocytosis is common later in the illness — supports but does not decide",
+     "also": []
+    },
+    {
+     "item": "despite acetaminophen",
+     "why": "Persistent fever — does not choose the treatment",
+     "also": []
+    }
+   ],
+   "summary": "Five days of fever with conjunctivitis, oral and extremity changes, rash, and a cervical node meets the criteria for Kawasaki disease. IVIG and aspirin prevent coronary aneurysms.",
+   "switch": {
+    "choice": "A",
+    "condition": "With exudative tonsillitis, no conjunctivitis, and a positive rapid strep test, amoxicillin for scarlet fever"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0545",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "부인과 — 운동 중 갑자기 생긴 한쪽 하복부 통증과 난소 종대",
+  "type": "부인과 — 운동 중 갑자기 생긴 한쪽 하복부 통증과 난소 종대",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-04",
+  "vignette": "26세 여자가 3시간 전 줄넘기를 하던 중 갑자기 생긴 오른쪽 아랫배 통증과 구토로 응급실에 왔다. 통증은 몇 분 간격으로 심해졌다 덜해지기를 되풀이한다. 마지막 월경은 2주 전이었고 성관계 상대는 한 명이다. 혈압 124/78 mmHg, 맥박 102회/분, 체온 37.2 °C 이다. 오른쪽 아랫배에 압통이 있으나 반발통은 없다. 소변 임신검사는 음성이고 혈색소 13.1 g/dL, 백혈구 10,400/mm³ 이다. 질식 초음파에서 오른쪽 난소가 6 cm 로 커져 있고 그 안에 5 cm 의 낭종이 있으며 난포가 난소 가장자리로 밀려나 있다. 도플러에서 오른쪽 난소의 혈류가 왼쪽보다 뚜렷이 줄어 있다. 골반강 내 액체는 소량이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "진통제를 주고 6주 뒤 초음파를 다시 한다",
+   "정맥 항생제를 시작한다",
+   "메토트렉세이트를 근육주사한다",
+   "응급 복강경으로 염전을 풀고 난소를 보존한다",
+   "응급 개복으로 오른쪽 부속기를 절제한다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 젊은 여성이 운동 중 갑자기 한쪽 하복부 통증과 구토를 보이고, 난소가 낭종과 함께 커져 있으며 난포가 가장자리로 밀리고 도플러 혈류가 줄었다 — 난소(부속기) 염전이다. 진단은 수술 중에 확정되므로 의심되면 바로 복강경으로 들어가 꼬임을 풀고, 검게 보이는 난소도 대부분 기능이 회복되므로 가임기 여성에서는 절제보다 보존한다.\n- 원리: <b>왜 낭종이 있으면 꼬이는가</b>: 난소는 깔때기골반인대와 고유난소인대에 매달린 진자다. 5 cm 이상의 낭종이나 종양이 무게중심을 바꾸면 운동·자세 변화 때 축을 따라 돈다. 먼저 벽이 얇은 정맥과 림프관이 막혀 난소가 붓고(난포가 가장자리로 밀림), 이어 동맥이 막히면 괴사한다. 그래서 통증이 갑자기 오고, 부분적으로 풀렸다 꼬이며 간헐적이 될 수 있다.<br> <b>왜 도플러 정상으로 배제하지 않나</b>: 난소는 난소동맥과 자궁동맥에서 이중으로 혈액을 받고 초기에는 정맥만 막혀 동맥 혈류가 남아 있을 수 있다. 도플러 혈류가 있어도 임상적으로 의심되면 수술적 확인이 원칙이다.<br> <b>왜 보존인가</b>: 꼬임을 푼 뒤 청흑색으로 보이던 난소도 대부분 기능을 회복하고, 꼬임을 푼다고 혈전색전증이 늘지 않는다. 가임력을 지키기 위해 염전 해소(필요하면 낭종 절제)가 표준이며, 절제는 명백히 괴사·부패했거나 악성이 의심될 때만 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">염전 해소·난소 보존(정답)</th><th>부속기 절제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>가임기</b>, 대부분의 염전</td><td>명백한 괴사·부패, 악성 의심, 폐경 후</td></tr> <tr><td>근거</td><td>청흑색 난소도 대부분 기능 회복</td><td>살릴 조직이 없을 때만</td></tr> <tr><td>접근</td><td>복강경</td><td>복강경 또는 개복</td></tr> </tbody></table> 난소의 색깔은 생존 여부를 잘 알려 주지 않는다 — 가임기라면 먼저 풀고 보존한다.\n- 오답 이유:\n  - ① 진통제 후 추적 초음파는 혈류가 정상이고 통증이 가벼운 단순 기능성 낭종일 때 정답이 되며, 염전 의심 시에는 난소를 잃게 된다.\n  - ② 정맥 항생제는 발열·자궁경부 운동 압통·화농성 분비물이 있는 골반염이나 난관난소농양일 때 정답이 된다.\n  - ③ 메토트렉세이트는 임신검사 양성이고 활력징후가 안정된 작은 자궁외임신일 때 정답이며 이 환자는 임신검사가 음성이다.\n  - ⑤ 부속기 절제는 꼬임을 풀어도 조직이 괴사·부패해 있거나 폐경 후 여성에서 악성 종양이 의심될 때 정답이 된다.\n- 함정: 검게 변한 난소는 살릴 수 없다고 여겨 절제하는 것 — 가임기 여성은 꼬임을 풀고 보존하는 것이 원칙이다.\n- 학습목표: 운동 중 갑자기 생긴 한쪽 하복부 통증·구역과 커진 난소를 부속기 염전으로 판단하고 난소를 보존하는 응급 복강경 염전 해소술을 고른다\n- 근거·출처: American College of Obstetricians and Gynecologists. Committee Opinion No. 783: Adnexal torsion in adolescents. Obstet Gynecol. 2019;134(2):e56-e63",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "젊은 여성이 운동 중 갑자기 한쪽 하복부 통증과 구토를 보이고, 난소가 낭종과 함께 커져 있으며 난포가 가장자리로 밀리고 도플러 혈류가 줄었다 — 난소(부속기) 염전이다. 진단은 수술 중에 확정되므로 의심되면 바로 복강경으로 들어가 꼬임을 풀고, 검게 보이는 난소도 대부분 기능이 회복되므로 가임기 여성에서는 절제보다 보존한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 낭종이 있으면 꼬이는가</b>: 난소는 깔때기골반인대와 고유난소인대에 매달린 진자다. 5 cm 이상의 낭종이나 종양이 무게중심을 바꾸면 운동·자세 변화 때 축을 따라 돈다. 먼저 벽이 얇은 정맥과 림프관이 막혀 난소가 붓고(난포가 가장자리로 밀림), 이어 동맥이 막히면 괴사한다. 그래서 통증이 갑자기 오고, 부분적으로 풀렸다 꼬이며 간헐적이 될 수 있다.<br> <b>왜 도플러 정상으로 배제하지 않나</b>: 난소는 난소동맥과 자궁동맥에서 이중으로 혈액을 받고 초기에는 정맥만 막혀 동맥 혈류가 남아 있을 수 있다. 도플러 혈류가 있어도 임상적으로 의심되면 수술적 확인이 원칙이다.<br> <b>왜 보존인가</b>: 꼬임을 푼 뒤 청흑색으로 보이던 난소도 대부분 기능을 회복하고, 꼬임을 푼다고 혈전색전증이 늘지 않는다. 가임력을 지키기 위해 염전 해소(필요하면 낭종 절제)가 표준이며, 절제는 명백히 괴사·부패했거나 악성이 의심될 때만 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">염전 해소·난소 보존(정답)</th><th>부속기 절제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>가임기</b>, 대부분의 염전</td><td>명백한 괴사·부패, 악성 의심, 폐경 후</td></tr> <tr><td>근거</td><td>청흑색 난소도 대부분 기능 회복</td><td>살릴 조직이 없을 때만</td></tr> <tr><td>접근</td><td>복강경</td><td>복강경 또는 개복</td></tr> </tbody></table> 난소의 색깔은 생존 여부를 잘 알려 주지 않는다 — 가임기라면 먼저 풀고 보존한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 진통제 후 추적 초음파는 혈류가 정상이고 통증이 가벼운 단순 기능성 낭종일 때 정답이 되며, 염전 의심 시에는 난소를 잃게 된다.\n② 정맥 항생제는 발열·자궁경부 운동 압통·화농성 분비물이 있는 골반염이나 난관난소농양일 때 정답이 된다.\n③ 메토트렉세이트는 임신검사 양성이고 활력징후가 안정된 작은 자궁외임신일 때 정답이며 이 환자는 임신검사가 음성이다.\n⑤ 부속기 절제는 꼬임을 풀어도 조직이 괴사·부패해 있거나 폐경 후 여성에서 악성 종양이 의심될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "검게 변한 난소는 살릴 수 없다고 여겨 절제하는 것 — 가임기 여성은 꼬임을 풀고 보존하는 것이 원칙이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "운동 중 갑자기 생긴 한쪽 하복부 통증·구역과 커진 난소를 부속기 염전으로 판단하고 난소를 보존하는 응급 복강경 염전 해소술을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Committee Opinion No. 783: Adnexal torsion in adolescents. Obstet Gynecol. 2019;134(2):e56-e63"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "낭종이 있는 난소의 갑작스러운 한쪽 통증과 혈류 감소는 부속기 염전이고, 가임기 여성에서는 복강경으로 풀고 난소를 보존한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "젊은 가임기 여성이고 괴사·악성의 증거가 없다 — 절제가 아니라 보존이다",
+   "steps": 3,
+   "chain": [
+    "운동 중 갑작스러운 한쪽 하복부 통증 + 구토, 임신검사 음성",
+    "낭종을 가진 커진 난소 + 가장자리 난포 + 도플러 혈류 감소 → 부속기 염전",
+    "가임기 → 응급 복강경 염전 해소와 난소 보존"
+   ],
+   "key": [
+    {
+     "item": "줄넘기를 하던 중 갑자기 생긴 오른쪽 아랫배 통증과 구토",
+     "why": "갑작스러운 발생 — 염전의 전형",
+     "also": []
+    },
+    {
+     "item": "5 cm 의 낭종",
+     "why": "염전의 주요 위험인자",
+     "also": []
+    },
+    {
+     "item": "오른쪽 난소의 혈류가 왼쪽보다 뚜렷이 줄어 있다",
+     "why": "혈관 꼬임을 시사",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변 임신검사는 음성",
+     "why": "자궁외임신 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "체온 37.2 °C",
+     "why": "골반염·농양 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "26세",
+     "why": "가임력 보존이 치료 선택을 정한다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "낭종이 있는 난소의 갑작스러운 한쪽 통증과 혈류 감소는 부속기 염전이다. 가임기 여성이므로 응급 복강경으로 꼬임을 풀고 난소를 보존한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "꼬임을 푼 뒤에도 조직이 부패해 있거나 폐경 후 여성에서 악성이 의심되면 부속기 절제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0544",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "혈액·종양 — 허리 통증·빈혈·급성 신장손상을 보이는 노인",
+  "type": "혈액·종양 — 허리 통증·빈혈·급성 신장손상을 보이는 노인",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-04",
+  "vignette": "A 68-year-old man comes to the physician because of low back pain and fatigue for 3 months. He has lost 4 kg. He takes no medications other than occasional acetaminophen. Blood pressure is 128/76 mm Hg. There is tenderness over the lumbar spine. Hemoglobin is 9.1 g/dL, serum calcium is 11.6 mg/dL, total protein is 9.4 g/dL, albumin is 3.4 g/dL, and creatinine is 3.2 mg/dL (it was 0.9 mg/dL 1 year ago). Urine dipstick is negative for protein, but a 24-hour urine collection contains 3.8 g of protein. Urine sediment shows no red blood cells or casts. Renal ultrasonography shows normal-sized kidneys without hydronephrosis.",
+  "question": "Which of the following is the most likely cause of this patient's kidney injury?",
+  "options": [
+   "IgA nephropathy",
+   "Obstructive uropathy",
+   "Light chain cast nephropathy",
+   "AL amyloidosis",
+   "Analgesic nephropathy"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Anemia, hypercalcemia, bone pain, a high total protein with a large protein-albumin gap, and kidney injury point to multiple myeloma. The urine dipstick detects mainly albumin, so a negative dipstick with 3.8 g/day of protein means the urine protein is not albumin — it is free monoclonal light chains (Bence Jones protein). Filtered light chains bind Tamm-Horsfall protein and form obstructing casts in the distal tubules: light chain cast nephropathy (myeloma kidney).\n- 원리: <b>Why the dipstick misses it</b>: The urine dipstick color reaction is sensitive to albumin and much less to other proteins. In glomerular diseases such as amyloidosis, albumin leaks through the damaged filter and the dipstick is strongly positive. In myeloma, the glomerulus is intact but small free light chains (about 22-45 kDa) are filtered in amounts that overwhelm proximal tubular reabsorption, so the urine is full of non-albumin protein — a quantitative test or urine protein electrophoresis detects it, the dipstick does not.<br> <b>How the casts form</b>: In the distal tubule, light chains bind uromodulin (Tamm-Horsfall protein) and precipitate as dense casts surrounded by giant cells. Dehydration, hypercalcemia, NSAIDs, and contrast promote precipitation. Hypercalcemia also causes afferent vasoconstriction and nephrogenic diabetes insipidus, worsening volume depletion.<br> <b>Why it matters</b>: Rapid lowering of the light chain load with anti-myeloma therapy, together with hydration and correction of calcium, is what recovers kidney function.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Light chain cast nephropathy (answer)</th><th>AL amyloidosis (closest distractor)</th></tr></thead><tbody> <tr><td>Site of injury</td><td>Distal tubules (casts)</td><td><b>Glomeruli</b> (amyloid deposits)</td></tr> <tr><td>Urine protein</td><td>Mostly light chains — dipstick negative</td><td>Mostly albumin — dipstick strongly positive, nephrotic syndrome</td></tr> <tr><td>Usual setting</td><td>High tumor burden, hypercalcemia, bone lesions</td><td>Low plasma cell burden, edema, heart or nerve involvement</td></tr> </tbody></table> Comparing the dipstick with the quantitative urine protein tells whether the leaking protein is albumin or light chains.\n- 오답 이유:\n  - (A) IgA nephropathy would be correct with episodes of gross or microscopic hematuria after upper respiratory infections and red cell casts.\n  - (B) Obstructive uropathy would be correct if renal ultrasonography showed hydronephrosis from an obstructing lesion such as prostatic enlargement.\n  - (D) AL amyloidosis would be correct with nephrotic-range albuminuria and a strongly positive dipstick, edema, and often heart or nerve involvement.\n  - (E) Analgesic nephropathy would be correct after years of heavy combination analgesic use with papillary necrosis and small, scarred kidneys.\n- 함정: Assuming a negative urine dipstick means no proteinuria — the dipstick misses light chains.\n- 학습목표: 빈혈·고칼슘혈증·허리 통증과 함께 소변 시험지 단백 음성인데 24시간 소변 단백이 많은 급성 신장손상을 다발골수종의 경쇄 원주 신병증으로 판단한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 116: Plasma Cell Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 321: Acute Kidney Injury",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Anemia, hypercalcemia, bone pain, a high total protein with a large protein-albumin gap, and kidney injury point to multiple myeloma. The urine dipstick detects mainly albumin, so a negative dipstick with 3.8 g/day of protein means the urine protein is not albumin — it is free monoclonal light chains (Bence Jones protein). Filtered light chains bind Tamm-Horsfall protein and form obstructing casts in the distal tubules: light chain cast nephropathy (myeloma kidney)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the dipstick misses it</b>: The urine dipstick color reaction is sensitive to albumin and much less to other proteins. In glomerular diseases such as amyloidosis, albumin leaks through the damaged filter and the dipstick is strongly positive. In myeloma, the glomerulus is intact but small free light chains (about 22-45 kDa) are filtered in amounts that overwhelm proximal tubular reabsorption, so the urine is full of non-albumin protein — a quantitative test or urine protein electrophoresis detects it, the dipstick does not.<br> <b>How the casts form</b>: In the distal tubule, light chains bind uromodulin (Tamm-Horsfall protein) and precipitate as dense casts surrounded by giant cells. Dehydration, hypercalcemia, NSAIDs, and contrast promote precipitation. Hypercalcemia also causes afferent vasoconstriction and nephrogenic diabetes insipidus, worsening volume depletion.<br> <b>Why it matters</b>: Rapid lowering of the light chain load with anti-myeloma therapy, together with hydration and correction of calcium, is what recovers kidney function."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Light chain cast nephropathy (answer)</th><th>AL amyloidosis (closest distractor)</th></tr></thead><tbody> <tr><td>Site of injury</td><td>Distal tubules (casts)</td><td><b>Glomeruli</b> (amyloid deposits)</td></tr> <tr><td>Urine protein</td><td>Mostly light chains — dipstick negative</td><td>Mostly albumin — dipstick strongly positive, nephrotic syndrome</td></tr> <tr><td>Usual setting</td><td>High tumor burden, hypercalcemia, bone lesions</td><td>Low plasma cell burden, edema, heart or nerve involvement</td></tr> </tbody></table> Comparing the dipstick with the quantitative urine protein tells whether the leaking protein is albumin or light chains."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) IgA nephropathy would be correct with episodes of gross or microscopic hematuria after upper respiratory infections and red cell casts.\n(B) Obstructive uropathy would be correct if renal ultrasonography showed hydronephrosis from an obstructing lesion such as prostatic enlargement.\n(D) AL amyloidosis would be correct with nephrotic-range albuminuria and a strongly positive dipstick, edema, and often heart or nerve involvement.\n(E) Analgesic nephropathy would be correct after years of heavy combination analgesic use with papillary necrosis and small, scarred kidneys."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming a negative urine dipstick means no proteinuria — the dipstick misses light chains."
+   },
+   {
+    "k": "학습목표",
+    "v": "빈혈·고칼슘혈증·허리 통증과 함께 소변 시험지 단백 음성인데 24시간 소변 단백이 많은 급성 신장손상을 다발골수종의 경쇄 원주 신병증으로 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 116: Plasma Cell Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 321: Acute Kidney Injury"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "Kidney injury with a negative dipstick but heavy 24-hour proteinuria in a patient with myeloma features is light chain cast nephropathy",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Amyloidosis leaks albumin and makes the dipstick strongly positive; here the dipstick is negative",
+   "steps": 3,
+   "chain": [
+    "Anemia, hypercalcemia, back pain, and a large protein-albumin gap -> multiple myeloma",
+    "Dipstick negative but 3.8 g/day protein -> the urine protein is not albumin but light chains",
+    "Light chains precipitate with Tamm-Horsfall protein in distal tubules -> cast nephropathy"
+   ],
+   "key": [
+    {
+     "item": "Urine dipstick is negative for protein, but a 24-hour urine collection contains 3.8 g of protein",
+     "why": "Non-albumin proteinuria — light chains",
+     "also": []
+    },
+    {
+     "item": "serum calcium is 11.6 mg/dL",
+     "why": "Bone resorption by myeloma; also promotes cast formation",
+     "also": []
+    },
+    {
+     "item": "total protein is 9.4 g/dL, albumin is 3.4 g/dL",
+     "why": "Large gap — excess monoclonal immunoglobulin",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Urine sediment shows no red blood cells or casts",
+     "why": "Lowers the likelihood of glomerulonephritis such as IgA nephropathy",
+     "also": []
+    },
+    {
+     "item": "normal-sized kidneys without hydronephrosis",
+     "why": "Lowers the likelihood of obstruction and chronic analgesic nephropathy",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "occasional acetaminophen",
+     "why": "Too little analgesic exposure to explain the injury",
+     "also": []
+    }
+   ],
+   "summary": "Myeloma features with a negative dipstick but heavy 24-hour proteinuria mean light chains are in the urine. They form distal tubular casts — light chain cast nephropathy.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the dipstick were strongly positive with nephrotic-range albuminuria, edema, and low tumor burden, AL amyloidosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0543",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·신장·산과·소화기·신경·혈액·부인과·소아청소년·내분비)",
+  "subtopic": "신경 — 보행장애·인지저하·요실금을 보이는 노인",
+  "type": "신경 — 보행장애·인지저하·요실금을 보이는 노인",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-04",
+  "vignette": "74세 남자가 1년 전부터 걸음이 느려지고 발이 바닥에 붙은 듯 끌며 걸어 가족과 함께 왔다. 최근 6개월 동안 약속을 자주 잊고 일을 처리하는 속도가 느려졌으며, 두 달 전부터는 화장실에 가기 전에 소변을 지린다. 떨림은 없다. 신경학적 진찰에서 보폭이 짧고 발을 넓게 벌리며 방향을 틀 때 여러 걸음으로 나누어 돈다. 팔의 경축과 안정 시 떨림은 없다. 간이정신상태검사는 24점이다. 혈액검사에서 비타민 B12 와 갑상샘 기능은 정상이다. 뇌 MRI 에서 뇌실이 크게 늘어나 있으나 대뇌 고랑은 넓어지지 않았고 해마 위축은 뚜렷하지 않다.",
+  "question": "다음 검사로 가장 적절한 것은?",
+  "options": [
+   "요추천자로 뇌척수액 30~50 mL 를 뺀 뒤 보행 변화를 본다",
+   "도파민운반체 PET 를 찍는다",
+   "뇌척수액 아밀로이드·타우 측정 후 경과를 관찰한다",
+   "뇌파검사를 한다",
+   "바로 뇌실복강 션트술을 한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 보행장애(자석 보행)가 먼저 오고 인지저하·요실금이 뒤따른 3징후에, MRI 에서 대뇌 고랑 확장 없이 뇌실만 커진 것은 정상압수두증이다. 션트술 전에 요추천자로 뇌척수액 30~50 mL 를 빼고(탭 검사) 보행이 좋아지는지 보면 션트에 반응할 환자를 고를 수 있다.\n- 원리: <b>왜 「정상압」인데 증상이 생기나</b>: 뇌척수액 흡수가 서서히 떨어지면 뇌실이 천천히 늘어나 한 번 잰 압력은 정상 범위로 보이지만, 뇌실 주변 백질이 늘어나고 혈류가 줄어든다. 뇌실 바로 옆을 지나는 다리로 가는 운동섬유와 전두엽-방광 조절 경로가 먼저 영향을 받아 <b>보행장애 → 요실금 → 전두엽형 인지저하</b>가 나타난다.<br> <b>영상의 요점</b>: 뇌 위축이라면 조직이 빠진 만큼 뇌실과 고랑이 함께 넓어진다. 정상압수두증은 뇌실이 고랑에 비해 지나치게 크고(Evans 지수 > 0.3), 정수리 고랑은 오히려 좁아져 있을 수 있다.<br> <b>왜 탭 검사인가</b>: 같은 영상이라도 모두 션트에 반응하지는 않는다. 뇌척수액을 일시적으로 빼서 보행이 나아지면 션트 후 좋아질 가능성이 높고, 반응이 없으면 지속 요추 배액 검사로 한 번 더 확인한다. 보행이 가장 먼저, 가장 잘 회복되고 치매는 덜 회복된다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">정상압수두증(정답 방향)</th><th>알츠하이머병(가장 가까운 오답 방향)</th></tr></thead><tbody> <tr><td>첫 증상</td><td><b>보행장애</b>가 먼저</td><td>기억장애가 먼저, 보행은 늦게</td></tr> <tr><td>MRI</td><td>뇌실 확장 ≫ 고랑 확장</td><td>해마·측두엽 위축, 고랑과 뇌실이 함께 넓음</td></tr> <tr><td>다음 검사</td><td>요추 배액(탭) 검사</td><td>뇌척수액 아밀로이드·타우, 아밀로이드 PET</td></tr> </tbody></table> 「치매 + 보행장애」에서 어느 것이 먼저 왔는지와 뇌실·고랑의 비율이 두 질환을 가른다.\n- 오답 이유:\n  - ② 도파민운반체 PET 는 안정 시 떨림·경축·운동완서가 있어 파킨슨병이나 루이체 치매를 확인해야 할 때 정답이 된다.\n  - ③ 뇌척수액 아밀로이드·타우는 기억장애가 먼저 오고 해마 위축이 뚜렷해 알츠하이머병을 확인할 때 정답이 된다.\n  - ④ 뇌파는 몇 주 사이 빠르게 진행하는 치매와 근간대경련으로 크로이츠펠트-야콥병을 의심할 때 정답이 된다.\n  - ⑤ 뇌실복강 션트는 탭 검사나 지속 배액 검사에서 보행이 뚜렷이 좋아져 반응이 예측될 때 다음 단계로 정답이 된다.\n- 함정: 3징후와 뇌실 확장만 보고 곧바로 션트를 하는 것 — 반응을 예측하는 요추 배액 검사가 먼저다.\n- 학습목표: 보행장애·인지저하·요실금과 뇌고랑 확장 없는 뇌실 확장을 정상압수두증으로 판단하고 션트 반응을 예측하는 요추 배액 검사를 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 31: Dementia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "보행장애(자석 보행)가 먼저 오고 인지저하·요실금이 뒤따른 3징후에, MRI 에서 대뇌 고랑 확장 없이 뇌실만 커진 것은 정상압수두증이다. 션트술 전에 요추천자로 뇌척수액 30~50 mL 를 빼고(탭 검사) 보행이 좋아지는지 보면 션트에 반응할 환자를 고를 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「정상압」인데 증상이 생기나</b>: 뇌척수액 흡수가 서서히 떨어지면 뇌실이 천천히 늘어나 한 번 잰 압력은 정상 범위로 보이지만, 뇌실 주변 백질이 늘어나고 혈류가 줄어든다. 뇌실 바로 옆을 지나는 다리로 가는 운동섬유와 전두엽-방광 조절 경로가 먼저 영향을 받아 <b>보행장애 → 요실금 → 전두엽형 인지저하</b>가 나타난다.<br> <b>영상의 요점</b>: 뇌 위축이라면 조직이 빠진 만큼 뇌실과 고랑이 함께 넓어진다. 정상압수두증은 뇌실이 고랑에 비해 지나치게 크고(Evans 지수 > 0.3), 정수리 고랑은 오히려 좁아져 있을 수 있다.<br> <b>왜 탭 검사인가</b>: 같은 영상이라도 모두 션트에 반응하지는 않는다. 뇌척수액을 일시적으로 빼서 보행이 나아지면 션트 후 좋아질 가능성이 높고, 반응이 없으면 지속 요추 배액 검사로 한 번 더 확인한다. 보행이 가장 먼저, 가장 잘 회복되고 치매는 덜 회복된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">정상압수두증(정답 방향)</th><th>알츠하이머병(가장 가까운 오답 방향)</th></tr></thead><tbody> <tr><td>첫 증상</td><td><b>보행장애</b>가 먼저</td><td>기억장애가 먼저, 보행은 늦게</td></tr> <tr><td>MRI</td><td>뇌실 확장 ≫ 고랑 확장</td><td>해마·측두엽 위축, 고랑과 뇌실이 함께 넓음</td></tr> <tr><td>다음 검사</td><td>요추 배액(탭) 검사</td><td>뇌척수액 아밀로이드·타우, 아밀로이드 PET</td></tr> </tbody></table> 「치매 + 보행장애」에서 어느 것이 먼저 왔는지와 뇌실·고랑의 비율이 두 질환을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 도파민운반체 PET 는 안정 시 떨림·경축·운동완서가 있어 파킨슨병이나 루이체 치매를 확인해야 할 때 정답이 된다.\n③ 뇌척수액 아밀로이드·타우는 기억장애가 먼저 오고 해마 위축이 뚜렷해 알츠하이머병을 확인할 때 정답이 된다.\n④ 뇌파는 몇 주 사이 빠르게 진행하는 치매와 근간대경련으로 크로이츠펠트-야콥병을 의심할 때 정답이 된다.\n⑤ 뇌실복강 션트는 탭 검사나 지속 배액 검사에서 보행이 뚜렷이 좋아져 반응이 예측될 때 다음 단계로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "3징후와 뇌실 확장만 보고 곧바로 션트를 하는 것 — 반응을 예측하는 요추 배액 검사가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "보행장애·인지저하·요실금과 뇌고랑 확장 없는 뇌실 확장을 정상압수두증으로 판단하고 션트 반응을 예측하는 요추 배액 검사를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 31: Dementia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "보행장애가 먼저 온 3징후와 고랑 확장 없는 뇌실 확장은 정상압수두증이고, 션트 전 요추 배액 검사로 반응을 예측한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "션트 반응은 환자마다 달라 배액 검사로 먼저 확인한다 — 아직 반응이 확인되지 않았다",
+   "steps": 3,
+   "chain": [
+    "보행장애 → 인지저하 → 요실금 순서의 3징후",
+    "MRI 에서 대뇌 고랑 확장 없는 뇌실 확장 → 정상압수두증",
+    "션트 반응 예측이 먼저 → 요추천자 뇌척수액 배액 후 보행 변화 확인"
+   ],
+   "key": [
+    {
+     "item": "발이 바닥에 붙은 듯 끌며 걸어",
+     "why": "자석 보행 — 정상압수두증의 첫 증상",
+     "also": []
+    },
+    {
+     "item": "화장실에 가기 전에 소변을 지린다",
+     "why": "절박 요실금 — 3징후의 하나",
+     "also": []
+    },
+    {
+     "item": "뇌실이 크게 늘어나 있으나 대뇌 고랑은 넓어지지 않았고",
+     "why": "위축이 아닌 수두증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "해마 위축은 뚜렷하지 않다",
+     "why": "알츠하이머병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "팔의 경축과 안정 시 떨림은 없다",
+     "why": "파킨슨병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "비타민 B12 와 갑상샘 기능은 정상",
+     "why": "교정 가능한 대사성 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "보행장애가 먼저 온 3징후와 고랑 확장 없는 뇌실 확장은 정상압수두증이다. 션트 전에 요추 배액 검사로 보행이 좋아지는지 본다.",
+   "switch": {
+    "choice": "E",
+    "condition": "요추 배액 검사 뒤 보행이 뚜렷이 좋아졌다면 뇌실복강 션트술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0538",
   "exam": "imaging",
   "style": "usmle_style",

@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4369,
+  "total": 4381,
   "byType": {
    "usmle": 240,
    "paper": 895,
    "kmle": 1696,
+   "imaging": 549,
    "concept": 138,
-   "imaging": 537,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,19 +38,19 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 109,
    "Hematology": 103,
    "Laboratory Medicine": 92,
-   "산부인과": 73,
-   "순환기": 57,
+   "산부인과": 75,
+   "순환기": 61,
    "호흡기": 36,
-   "소화기": 33,
-   "소아과": 29,
+   "소화기": 34,
+   "소아과": 30,
    "Physiology": 26,
+   "혈액·종양": 26,
    "감염": 25,
+   "내분비": 25,
    "병리·조직학": 25,
+   "신경": 25,
+   "신장·비뇨기": 25,
    "응급·중환자": 25,
-   "혈액·종양": 25,
-   "내분비": 24,
-   "신경": 24,
-   "신장·비뇨기": 24,
    "피부과": 22,
    "외과": 21,
    "Pharmacology": 20,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3068,
+   "high": 3080,
    "medium": 1248,
    "low": 53
   },
@@ -1071,6 +1071,220 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1699.md",
    "snippet": "63세 남자가 1시간 전 집에서 텔레비전을 보다가 갑자기 시작된 두근거림으로 응급실에 왔다. 두근거림은 시작부터 지금까지 같은 빠르기로 이어지고, 약간 어지럽지만 가슴 통증이나 실신은 없다. 고혈압과 폐쇄수면무호흡증이 있다. 커피·감기약·다이어트약은 먹지 않았고 열·설사는 없었다. 진찰에서 맥은 규칙적이고 빠르며 폐음은 깨끗하고 다리 부종은 없다. 경동맥동 마사지를 하는 동안의 심전도 변화도 기록했다. 활력징후와 검사 결과는 ",
    "text": "Cardiology Sudden Steady Rapid Palpitations While Watching Television in a Man with Sleep Apnea atrial-flutter narrow-complex-tachycardia ecg KMLE 2026 / Claude 63세 남자가 1시간 전 집에서 텔레비전을 보다가 갑자기 시작된 두근거림으로 응급실에 왔다. 두근거림은 시작부터 지금까지 같은 빠르기로 이어지고, 약간 어지럽지만 가슴 통증이나 실신은 없다. 고혈압과 폐쇄수면무호흡증이 있다. 커피·감기약·다이어트약은 먹지 않았고 열·설사는 없었다. 진찰에서 맥은 규칙적이고 빠르며 폐음은 깨끗하고 다리 부종은 없다. 경동맥동 마사지를 하는 동안의 심전도 변화도 기록했다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성 높은 진단은? A. 동성 빈맥 B. 방실결절 재진입 빈맥 C. 심방조동 D. 심방세동 E. 다소성 심방빈맥 갑자기 시작해 150회/분으로 고정된 규칙적 좁은 QRS 빈맥이고, 경동맥동 마사지로 방실 전도가 잠시 늦춰지자 등전위선 없이 이어지는 분당 약 300회의 심방파가 드러났다가 마사지를 멈추자 150회/분으로 돌아왔다. 2:1 전도의 심방조동이다. 방실결절 재진입 빈맥이라면 마사지에 갑자기 끝나거나 변화가 없고, 동성 빈맥은 서서히 빨라지고 서서히 느려진다."
+  },
+  {
+   "id": "imaging-2026-0550",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 맥이 가끔 건너뛰는 남성의 좁은 조기 박동",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0550.md",
+   "snippet": "A 71 year old man comes to the physician because of an occasional sensation that his heart skips a beat for the past 3 weeks. He has no chest pain, dyspnea, dizziness, or syncope. He drinks two cups of coffee daily and does not smoke. Blood",
+   "text": "순환기 심전도 판독 — 맥이 가끔 건너뛰는 남성의 좁은 조기 박동 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e A 71 year old man comes to the physician because of an occasional sensation that his heart skips a beat for the past 3 weeks. He has no chest pain, dyspnea, dizziness, or syncope. He drinks two cups of coffee daily and does not smoke. Blood pressure is 128/80 mm Hg and pulse is 70/min and slightly irregular. Cardiac examination shows no murmurs. Serum electrolytes and thyroid stimulating hormone are within normal limits. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Premature atrial contractions B. Premature ventricular contractions C. Second degree atrioventricular block, Mobitz type I D. Atrial fibrillation E. Sinus arrhythmia"
+  },
+  {
+   "id": "imaging-2026-0549",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 가슴 통증이 가라앉은 여성의 측벽 ST 하강과 트로포닌 상승",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0549.md",
+   "snippet": "72세 여자가 2시간 전 집안일을 하다 생긴 가슴 압박감으로 응급실에 왔다. 통증은 왼팔로 퍼졌고 설하 니트로글리세린을 먹은 뒤 가라앉아 지금은 없다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 76회/분이고 폐에서 수포음은 들리지 않는다. 고감도 트로포닌 I 는 처음 측정에서 기준치의 6배이고 1시간 뒤 더 올랐다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 베타차",
+   "text": "순환기 심전도 처치 — 가슴 통증이 가라앉은 여성의 측벽 ST 하강과 트로포닌 상승 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e 72세 여자가 2시간 전 집안일을 하다 생긴 가슴 압박감으로 응급실에 왔다. 통증은 왼팔로 퍼졌고 설하 니트로글리세린을 먹은 뒤 가라앉아 지금은 없다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 76회/분이고 폐에서 수포음은 들리지 않는다. 고감도 트로포닌 I 는 처음 측정에서 기준치의 6배이고 1시간 뒤 더 올랐다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 베타차단제만 투여하고 외래 추적 B. 흉부 CT 혈관조영술로 대동맥박리를 확인한 뒤 결정 C. 아스피린·P2Y12 억제제·헤파린 투여 후 24시간 안에 관상동맥조영술 D. 알테플라제 정맥 투여 E. 운동부하 심전도를 하고 이상이 없으면 귀가"
+  },
+  {
+   "id": "imaging-2026-0548",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 오래된 고혈압 여성의 흉부 유도 큰 R파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0548.md",
+   "snippet": "73세 여자가 20년 동안 고혈압으로 약을 먹어 왔는데 최근 1년 동안 혈압이 잘 조절되지 않아 왔다. 가슴 통증과 실신은 없고 빠르게 걸으면 약간 숨이 차다. 혈압 168/94 mmHg, 맥박 70회/분이다. 심첨박동이 넓게 만져지고 제4심음이 들린다. 혈청 크레아티닌 1.0 mg/dL, 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 정상 심전도 B. 좌심실 비대 C.",
+   "text": "순환기 심전도 판독 — 오래된 고혈압 여성의 흉부 유도 큰 R파 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T202408Z_일일심전도_2026-11-05_3units_3q_4265503e 73세 여자가 20년 동안 고혈압으로 약을 먹어 왔는데 최근 1년 동안 혈압이 잘 조절되지 않아 왔다. 가슴 통증과 실신은 없고 빠르게 걸으면 약간 숨이 차다. 혈압 168/94 mmHg, 맥박 70회/분이다. 심첨박동이 넓게 만져지고 제4심음이 들린다. 혈청 크레아티닌 1.0 mg/dL, 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 정상 심전도 B. 좌심실 비대 C. 우심실 비대 D. 완전 좌각차단 E. 오래된 측벽 심근경색"
+  },
+  {
+   "id": "imaging-2026-0547",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 복부 CT 에서 우연히 발견된 부신 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0547.md",
+   "snippet": "56세 여자가 담석증으로 찍은 복부 CT 에서 왼쪽 부신 종괴가 우연히 발견되어 왔다. 두근거림·두통·땀남은 없고, 체중 변화나 피부가 얇아지는 증상은 없다. 고혈압·당뇨병은 없고 먹는 약도 없다. 혈압 122/78 mmHg, 맥박 72회/분이고 체질량지수는 23 kg/m² 이다. 둥근 얼굴이나 자색 선조는 없다. 혈청 칼륨 4.3 mEq/L, 공복 혈당 92 mg/dL 이다. 비조영 CT 에서 종괴는 지름 2.8 cm, 경계",
+   "text": "내분비 내분비·대사 — 복부 CT 에서 우연히 발견된 부신 종괴 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd 56세 여자가 담석증으로 찍은 복부 CT 에서 왼쪽 부신 종괴가 우연히 발견되어 왔다. 두근거림·두통·땀남은 없고, 체중 변화나 피부가 얇아지는 증상은 없다. 고혈압·당뇨병은 없고 먹는 약도 없다. 혈압 122/78 mmHg, 맥박 72회/분이고 체질량지수는 23 kg/m² 이다. 둥근 얼굴이나 자색 선조는 없다. 혈청 칼륨 4.3 mEq/L, 공복 혈당 92 mg/dL 이다. 비조영 CT 에서 종괴는 지름 2.8 cm, 경계가 매끈하고 균질하며 감쇠값은 6 HU 이다. 반대쪽 부신은 정상이다. 다음 검사로 가장 적절한 것은? A. 복강경 부신절제술 B. 1 mg 덱사메타손 억제검사와 혈장 유리 메타네프린 측정 C. 혈장 알도스테론/레닌 비 측정만 한다 D. CT 유도 부신 생검 E. 6개월 뒤 CT 재촬영만 한다"
+  },
+  {
+   "id": "imaging-2026-0546",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 닷새째 열이 나는 유아의 결막충혈·입술 갈라짐",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0546.md",
+   "snippet": "A 3 year old boy is brought to the physician because of fever for 5 days. His temperature has reached 39.8°C daily despite acetaminophen. His parents report red eyes without discharge, cracked red lips, and swelling of his hands and feet. T",
+   "text": "소아과 소아청소년 — 닷새째 열이 나는 유아의 결막충혈·입술 갈라짐 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd A 3 year old boy is brought to the physician because of fever for 5 days. His temperature has reached 39.8°C daily despite acetaminophen. His parents report red eyes without discharge, cracked red lips, and swelling of his hands and feet. Temperature is 39.5°C. Examination shows bilateral bulbar conjunctival injection sparing the limbus, a red tongue with prominent papillae, erythema and induration of the palms and soles, a polymorphous rash on the trunk, and a 2 cm nontender right cervical lymph node. A rapid streptococcal antigen test is negative. Leukocyte count is 15,800/mm3, platelet count is 450,000/mm3, and C reactive protein is 9.6 mg/dL. Which of the following is the most appropriate next step in management? A. Oral amoxicillin B. Oral prednisolone alone C. Supportive care with antipyretics D. Intramuscular benzathine penicillin E. Intravenous immunoglobulin and aspirin"
+  },
+  {
+   "id": "imaging-2026-0545",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 운동 중 갑자기 생긴 한쪽 하복부 통증과 난소 종대",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0545.md",
+   "snippet": "26세 여자가 3시간 전 줄넘기를 하던 중 갑자기 생긴 오른쪽 아랫배 통증과 구토로 응급실에 왔다. 통증은 몇 분 간격으로 심해졌다 덜해지기를 되풀이한다. 마지막 월경은 2주 전이었고 성관계 상대는 한 명이다. 혈압 124/78 mmHg, 맥박 102회/분, 체온 37.2 °C 이다. 오른쪽 아랫배에 압통이 있으나 반발통은 없다. 소변 임신검사는 음성이고 혈색소 13.1 g/dL, 백혈구 10,400/mm³ 이다. 질식 초음파",
+   "text": "산부인과 부인과 — 운동 중 갑자기 생긴 한쪽 하복부 통증과 난소 종대 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd 26세 여자가 3시간 전 줄넘기를 하던 중 갑자기 생긴 오른쪽 아랫배 통증과 구토로 응급실에 왔다. 통증은 몇 분 간격으로 심해졌다 덜해지기를 되풀이한다. 마지막 월경은 2주 전이었고 성관계 상대는 한 명이다. 혈압 124/78 mmHg, 맥박 102회/분, 체온 37.2 °C 이다. 오른쪽 아랫배에 압통이 있으나 반발통은 없다. 소변 임신검사는 음성이고 혈색소 13.1 g/dL, 백혈구 10,400/mm³ 이다. 질식 초음파에서 오른쪽 난소가 6 cm 로 커져 있고 그 안에 5 cm 의 낭종이 있으며 난포가 난소 가장자리로 밀려나 있다. 도플러에서 오른쪽 난소의 혈류가 왼쪽보다 뚜렷이 줄어 있다. 골반강 내 액체는 소량이다. 가장 적절한 처치는? A. 진통제를 주고 6주 뒤 초음파를 다시 한다 B. 정맥 항생제를 시작한다 C. 메토트렉세이트를 근육주사한다 D. 응급 복강경으로 염전을 풀고 난소를 보존한다 E. 응급 개복으로 오른쪽 부속기를 절제한다"
+  },
+  {
+   "id": "imaging-2026-0544",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 허리 통증·빈혈·급성 신장손상을 보이는 노인",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0544.md",
+   "snippet": "A 68 year old man comes to the physician because of low back pain and fatigue for 3 months. He has lost 4 kg. He takes no medications other than occasional acetaminophen. Blood pressure is 128/76 mm Hg. There is tenderness over the lumbar s",
+   "text": "혈액·종양 혈액·종양 — 허리 통증·빈혈·급성 신장손상을 보이는 노인 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd A 68 year old man comes to the physician because of low back pain and fatigue for 3 months. He has lost 4 kg. He takes no medications other than occasional acetaminophen. Blood pressure is 128/76 mm Hg. There is tenderness over the lumbar spine. Hemoglobin is 9.1 g/dL, serum calcium is 11.6 mg/dL, total protein is 9.4 g/dL, albumin is 3.4 g/dL, and creatinine is 3.2 mg/dL (it was 0.9 mg/dL 1 year ago). Urine dipstick is negative for protein, but a 24 hour urine collection contains 3.8 g of protein. Urine sediment shows no red blood cells or casts. Renal ultrasonography shows normal sized kidneys without hydronephrosis. Which of the following is the most likely cause of this patient's kidney injury? A. IgA nephropathy B. Obstructive uropathy C. Light chain cast nephropathy D. AL amyloidosis E. Analgesic nephropathy"
+  },
+  {
+   "id": "imaging-2026-0543",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 보행장애·인지저하·요실금을 보이는 노인",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0543.md",
+   "snippet": "74세 남자가 1년 전부터 걸음이 느려지고 발이 바닥에 붙은 듯 끌며 걸어 가족과 함께 왔다. 최근 6개월 동안 약속을 자주 잊고 일을 처리하는 속도가 느려졌으며, 두 달 전부터는 화장실에 가기 전에 소변을 지린다. 떨림은 없다. 신경학적 진찰에서 보폭이 짧고 발을 넓게 벌리며 방향을 틀 때 여러 걸음으로 나누어 돈다. 팔의 경축과 안정 시 떨림은 없다. 간이정신상태검사는 24점이다. 혈액검사에서 비타민 B12 와 갑상샘 기능",
+   "text": "신경 신경 — 보행장애·인지저하·요실금을 보이는 노인 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd 74세 남자가 1년 전부터 걸음이 느려지고 발이 바닥에 붙은 듯 끌며 걸어 가족과 함께 왔다. 최근 6개월 동안 약속을 자주 잊고 일을 처리하는 속도가 느려졌으며, 두 달 전부터는 화장실에 가기 전에 소변을 지린다. 떨림은 없다. 신경학적 진찰에서 보폭이 짧고 발을 넓게 벌리며 방향을 틀 때 여러 걸음으로 나누어 돈다. 팔의 경축과 안정 시 떨림은 없다. 간이정신상태검사는 24점이다. 혈액검사에서 비타민 B12 와 갑상샘 기능은 정상이다. 뇌 MRI 에서 뇌실이 크게 늘어나 있으나 대뇌 고랑은 넓어지지 않았고 해마 위축은 뚜렷하지 않다. 다음 검사로 가장 적절한 것은? A. 요추천자로 뇌척수액 30~50 mL 를 뺀 뒤 보행 변화를 본다 B. 도파민운반체 PET 를 찍는다 C. 뇌척수액 아밀로이드·타우 측정 후 경과를 관찰한다 D. 뇌파검사를 한다 E. 바로 뇌실복강 션트술을 한다"
+  },
+  {
+   "id": "imaging-2026-0542",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 선별 대장내시경에서 발견된 용종",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "endoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0542.md",
+   "snippet": "An asymptomatic patient at average risk for colorectal cancer undergoes screening colonoscopy. There is no family history of colorectal cancer or polyposis syndromes, and the bowel preparation is excellent. The cecum is reached. A colonosco",
+   "text": "소화기 소화기 — 선별 대장내시경에서 발견된 용종 opendata usmle_style endoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd An asymptomatic patient at average risk for colorectal cancer undergoes screening colonoscopy. There is no family history of colorectal cancer or polyposis syndromes, and the bowel preparation is excellent. The cecum is reached. A colonoscopic photograph of the single lesion found in the colon is shown. No other lesions are seen. Which of the following is the most appropriate next step in management? A. CT colonography B. Endoscopic polypectomy with histologic examination C. Segmental colectomy D. Serum carcinoembryonic antigen measurement E. Repeat colonoscopy in 10 years"
+  },
+  {
+   "id": "imaging-2026-0541",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 만삭이 지난 경산부의 분만 1기 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0541.md",
+   "snippet": "30세 경산부(2회 분만)가 임신 41주에 규칙적인 진통으로 입원하였다. 임신 중 특이 병력은 없고 두 번 모두 질식분만을 하였다. 입원 때 혈압 118/74 mmHg, 체온 36.8 °C 이고 자궁경부는 5 cm 열려 있으며 양막은 터지지 않았다. 옥시토신은 쓰지 않았다. 입원 30분 뒤부터의 태아심박동과 자궁수축 전자감시 기록은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 산모에게 산소를 주고 좌측위로 눕힌다 B. ",
+   "text": "산부인과 산과 — 만삭이 지난 경산부의 분만 1기 태아심박동 기록 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd 30세 경산부(2회 분만)가 임신 41주에 규칙적인 진통으로 입원하였다. 임신 중 특이 병력은 없고 두 번 모두 질식분만을 하였다. 입원 때 혈압 118/74 mmHg, 체온 36.8 °C 이고 자궁경부는 5 cm 열려 있으며 양막은 터지지 않았다. 옥시토신은 쓰지 않았다. 입원 30분 뒤부터의 태아심박동과 자궁수축 전자감시 기록은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 산모에게 산소를 주고 좌측위로 눕힌다 B. 태아 두피 혈액으로 pH 를 잰다 C. 흡인분만을 준비한다 D. 진통 진행을 지켜보며 태아감시를 계속한다 E. 즉시 제왕절개술을 한다"
+  },
+  {
+   "id": "imaging-2026-0540",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 우연히 발견된 신장 고형 종괴의 조영 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0540.md",
+   "snippet": "An 83 year old woman comes to the physician for follow up after a contrast enhanced abdominal CT scan was performed to evaluate mild epigastric discomfort that has since resolved. She has no flank pain or gross hematuria. She has hypertensi",
+   "text": "신장·비뇨기 신장·비뇨 — 우연히 발견된 신장 고형 종괴의 조영 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd An 83 year old woman comes to the physician for follow up after a contrast enhanced abdominal CT scan was performed to evaluate mild epigastric discomfort that has since resolved. She has no flank pain or gross hematuria. She has hypertension controlled with amlodipine. Vital signs are within normal limits, and no abdominal mass is palpable. Serum creatinine is 0.8 mg/dL. Urinalysis shows no red blood cells. An axial image of the contrast enhanced abdominal CT obtained in the arterial phase is shown. There is no renal vein invasion, no enlarged lymph nodes, and no fat attenuation within the lesion. Which of the following is the most likely diagnosis? A. Urothelial carcinoma of the renal pelvis B. Renal abscess C. Renal cell carcinoma D. Angiomyolipoma E. Simple renal cyst"
+  },
+  {
+   "id": "imaging-2026-0539",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 두근거림을 호소하는 노인 여성의 규칙적으로 끼어드는 넓은 박동",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd",
+   "confidence": "high",
+   "date": "2026-11-04",
+   "path": "content/imaging/2026/imaging-2026-0539.md",
+   "snippet": "76세 여자가 한 달 전부터 가슴이 덜컥 내려앉는 듯하고 맥이 건너뛰는 느낌이 자주 들어 왔다. 실신·흉통·호흡곤란은 없고, 커피를 하루 세 잔 마신다. 고혈압으로 약을 먹고 있다. 혈압 136/78 mmHg 이고 맥박은 불규칙하게 만져진다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심실조기수축(심실 삼중맥) ",
+   "text": "순환기 순환기 — 두근거림을 호소하는 노인 여성의 규칙적으로 끼어드는 넓은 박동 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261104T201941Z_일일영상_2026-11-05_9units_9q_a05a63dd 76세 여자가 한 달 전부터 가슴이 덜컥 내려앉는 듯하고 맥이 건너뛰는 느낌이 자주 들어 왔다. 실신·흉통·호흡곤란은 없고, 커피를 하루 세 잔 마신다. 고혈압으로 약을 먹고 있다. 혈압 136/78 mmHg 이고 맥박은 불규칙하게 만져진다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 마그네슘과 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심실조기수축(심실 삼중맥) B. 변행전도된 심방조기수축 C. 간헐적 좌각차단 D. 2도 방실차단(모비츠 1형) E. 비지속성 심실빈맥"
   },
   {
    "id": "cn.cardio.stroke-volume.preload-afterload-contractility",
