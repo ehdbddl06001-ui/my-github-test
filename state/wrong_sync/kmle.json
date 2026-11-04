@@ -1238,8 +1238,29 @@
    "date": "2026-11-04",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1729": {
+   "id": "kmle-2026-1729",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Thumb-side Wrist Pain After a Fall on an Outstretched Hand in a Man with an Implanted Cardiac Device",
+   "style": "",
+   "modality": "",
+   "question": "골절 여부를 확인하기 위해 다음으로 시행할 검사로 가장 적절한 것은?",
+   "chosen": 4,
+   "chosenText": "손목 초음파",
+   "answer": 1,
+   "answerText": "손목 CT",
+   "coreNote": "",
+   "differ": "",
+   "decision": "손을 짚고 넘어진 뒤 코담뱃갑 압통과 엄지 축 압박 통증이 있어 주상골 골절을 의심하며, X선이 정상이어도 배제하지 못한다. MRI 불가 심박조율기가 있고 빨리 결론을 내야 하므로 손목 CT로 숨은 골절을 확인한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-04",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-04T13:24:21.483Z"
+ "updated": "2026-11-04T13:26:13.317Z"
 }
