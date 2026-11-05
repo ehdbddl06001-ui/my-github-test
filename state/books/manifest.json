@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "70fe0b6985a7d764a37f",
-   "version": 20,
-   "date": "2026-11-04",
+   "hash": "cb8ac3f1c32841450a9f",
+   "version": 21,
+   "date": "2026-11-05",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 35,
+   "pages": 36,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -34,7 +34,7 @@
     },
     "cn.cardio.nyha-class.functional-assessment": {
      "title": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
-     "page": 8,
+     "page": 7,
      "concept_hash": "3d981114fa201cda",
      "concept_version": 1
     },
@@ -44,84 +44,90 @@
      "concept_hash": "dbe09a5bf3118a68",
      "concept_version": 1
     },
+    "cn.cardio.cvd-epidemiology.transition-risk-burden": {
+     "title": "심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다",
+     "page": 10,
+     "concept_hash": "b19d1af9e9503e49",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 11,
+     "page": 12,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.complete-rbbb.ecg-recognition": {
      "title": "완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S",
-     "page": 12,
+     "page": 13,
      "concept_hash": "61e5dd306a69c419",
      "concept_version": 2
     },
     "cn.cardio.complete-lbbb.discordant-st-not-stemi": {
      "title": "완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화",
-     "page": 14,
+     "page": 15,
      "concept_hash": "3385d3dbeda59cfb",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 15,
+     "page": 16,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-     "page": 18,
+     "page": 19,
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 19,
+     "page": 20,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 21,
+     "page": 22,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 23,
+     "page": 24,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 26,
+     "page": 27,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 28,
+     "page": 29,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 31,
+     "page": 32,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 34,
+     "page": 35,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "e3435f1e7eb8a217b4822f7dc7eee2e4",
-    "version": 20,
-    "uploaded": "2026-11-04T11:01:35+09:00"
+    "md5": "db20bc48a5e9c3090aacea914cd417d6",
+    "version": 21,
+    "uploaded": "2026-11-05T11:05:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -143,11 +149,11 @@
     "MedKOS_학습서_순환기내과_v17_2026-11-01.pdf",
     "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf",
     "MedKOS_학습서_순환기내과_v19_2026-11-03.pdf",
-    "MedKOS_학습서_순환기내과_v20_2026-11-04.pdf"
+    "MedKOS_학습서_순환기내과_v20_2026-11-04.pdf",
+    "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf"
    ],
    "changes": [
-    "새 단원: 1회 박출량 — 전부하·후부하·수축력 중 무엇이 바뀌었나",
-    "새 단원: 완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화"
+    "새 단원: 심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다"
    ]
   },
   "피부과": {
@@ -376,9 +382,9 @@
    ]
   },
   "안과": {
-   "hash": "a96fb962e7612d6c0a2b",
-   "version": 13,
-   "date": "2026-11-04",
+   "hash": "cfc7e753c44db953e2b9",
+   "version": 14,
+   "date": "2026-11-05",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 11,
    "template_version": 11,
@@ -404,7 +410,7 @@
     "cn.ophth.normal-tension-glaucoma.visual-field": {
      "title": "정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인",
      "page": 8,
-     "concept_hash": "5cc9854416465069",
+     "concept_hash": "3a14b7ad8c2c91ce",
      "concept_version": 1
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
@@ -416,9 +422,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "1c376c1110b60e0324766678e7489646",
-    "version": 13,
-    "uploaded": "2026-11-04T11:01:35+09:00"
+    "md5": "23a9f7973d1fbfb833703099116f556d",
+    "version": 14,
+    "uploaded": "2026-11-05T11:05:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -433,25 +439,26 @@
     "MedKOS_학습서_안과_v10_2026-10-08.pdf",
     "MedKOS_학습서_안과_v11_2026-11-02.pdf",
     "MedKOS_학습서_안과_v12_2026-11-03.pdf",
-    "MedKOS_학습서_안과_v13_2026-11-04.pdf"
+    "MedKOS_학습서_안과_v13_2026-11-04.pdf",
+    "MedKOS_학습서_안과_v14_2026-11-05.pdf"
    ],
    "changes": [
     "내용 수정: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인"
    ]
   },
   "정형외과": {
-   "hash": "b9cb8ab582dc850294ee",
-   "version": 17,
-   "date": "2026-11-03",
+   "hash": "ad4b81f2163cf7f3cd50",
+   "version": 18,
+   "date": "2026-11-05",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 21,
+   "pages": 23,
    "template_version": 11,
    "units": {
     "cn.ortho.scaphoid-fracture.occult-imaging": {
      "title": "잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
      "page": 2,
-     "concept_hash": "e3ca64f2f1155187",
-     "concept_version": 2
+     "concept_hash": "16943d8e2ec08cbe",
+     "concept_version": 3
     },
     "cn.ortho.ulnar-neuropathy.localization": {
      "title": "척골신경병증 — 손등·아래팔 감각이 병변 높이를 정한다",
@@ -495,24 +502,30 @@
      "concept_hash": "2e8e17a29fd1ce6f",
      "concept_version": 1
     },
+    "cn.ortho.scfe.adolescent-limp-diagnosis": {
+     "title": "대퇴골두골단분리증 — 무릎 통증은 엉덩관절에서 찾는다",
+     "page": 16,
+     "concept_hash": "8ee8f0054783bbcf",
+     "concept_version": 2
+    },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 16,
+     "page": 18,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
-     "page": 18,
+     "page": 20,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "c45986bd7f76bae25adf33a5d15c463c",
-    "version": 17,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "2935f60431634b2e819ee4e5db035f98",
+    "version": 18,
+    "uploaded": "2026-11-05T11:05:15+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -531,12 +544,12 @@
     "MedKOS_학습서_정형외과_v14_2026-10-27.pdf",
     "MedKOS_학습서_정형외과_v15_2026-10-28.pdf",
     "MedKOS_학습서_정형외과_v16_2026-11-02.pdf",
-    "MedKOS_학습서_정형외과_v17_2026-11-03.pdf"
+    "MedKOS_학습서_정형외과_v17_2026-11-03.pdf",
+    "MedKOS_학습서_정형외과_v18_2026-11-05.pdf"
    ],
    "changes": [
-    "내용 갱신: 척골신경병증 — 손등·아래팔 감각이 병변 높이를 정한다 (정리본 vNone → v1)",
-    "새 단원: 고리뼈 파열 — 앞·뒤고리가 다 끊기면 축성 압박",
-    "내용 갱신: 아킬레스힘줄병증 — 스테로이드 주사는 파열을 부른다 (정리본 vNone → v1)"
+    "내용 갱신: 잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정 (정리본 v2 → v3)",
+    "새 단원: 대퇴골두골단분리증 — 무릎 통증은 엉덩관절에서 찾는다"
    ]
   },
   "외과": {
@@ -1534,13 +1547,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "77a5de9c9a51b193cb78327d12609885",
+   "md5": "e24e79fc9c010f581c4fdf0c8cdae2a7",
    "version": null,
-   "uploaded": "2026-11-04T11:01:35+09:00"
+   "uploaded": "2026-11-05T11:05:15+09:00"
   }
  },
- "updated": "2026-11-04"
+ "updated": "2026-11-05"
 }
