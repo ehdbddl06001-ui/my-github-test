@@ -10,13 +10,13 @@
  "gap": [
   {
    "book": "순환기내과",
-   "slot": "h239",
-   "title": "Physical Examination of the Cardiovascular System",
-   "source": "해리슨 22판 246장",
+   "slot": "h241",
+   "title": "Noninvasive Cardiac Imaging: Echocardiography, Nuclear Cardiology, and Magnetic Resonance/ Computed Tomography Imaging",
+   "source": "해리슨 22판 248장",
    "chapters": [
-    239
+    241
    ],
-   "have": 19
+   "have": 20
   },
   {
    "book": "산부인과",
