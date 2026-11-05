@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-04",
+ "generated": "2026-11-05",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4383,
+  "total": 4384,
   "byType": {
    "usmle": 240,
+   "paper": 896,
    "concept": 140,
-   "paper": 895,
    "kmle": 1696,
    "imaging": 549,
    "anatomy": 846,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 303,
+   "Cardiology": 304,
    "Nephrology": 238,
    "Infectious Disease": 217,
    "Pediatrics": 205,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3081,
-   "medium": 1249,
+   "medium": 1250,
    "low": 53
   },
   "tagCount": 5279
@@ -359,6 +359,23 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0242.md",
    "snippet": "A 19 year old man is undergoing open reduction and internal fixation of a forearm fracture. Anesthesia was induced with propofol and succinylcholine and is being maintained with sevoflurane. The anesthesiologist noted that the jaw was diffi",
    "text": "Pharmacology Jaw Rigidity at Intubation, a Climbing End-Tidal CO2 and a Temperature of 39.4 °C Forty Minutes Into Forearm Surgery in a 19-Year-Old malignant-hyperthermia dantrolene ryanodine-receptor succinylcholine volatile-anesthetic mechanism pharmacology USMLE-style / MedKOS (Malignant Hyperthermia Association of the United States (MHAUS) emergency treatment protocol; Harrison's Principles of Internal Medicine, 22e. 478장 Heat-Related Illnesses) A 19 year old man is undergoing open reduction and internal fixation of a forearm fracture. Anesthesia was induced with propofol and succinylcholine and is being maintained with sevoflurane. The anesthesiologist noted that the jaw was difficult to open at intubation. Forty minutes into the operation, the end tidal CO2 has risen steadily despite doubling the minute ventilation, and the muscles of the trunk and limbs have become rigid. He took no medications before surgery and has never taken antipsychotic or antidepressant drugs. A cousin had an unexplained high fever during an operation several years ago. His vital signs and laboratory results are shown. The sevoflurane is discontinued, and the anesthesia circuit is changed. Which of the following best describes the mechanism of action of the drug that should be administered next? A. Antagonism of serotonin 5 HT2A receptors in the central nervous system B. Stimulation of dopamine D2 receptors in the hypothalamus C. Competitive blockade of nicotinic receptors at the motor end plate D. Blockade of calcium release from the sarcoplasmic reticulum of skeletal muscle E. Inhibition of prostaglandin E2 synthesis in the preoptic hypothalamus 숙시닐콜린과 흡입마취제(세보플루란) 노출 뒤의 교근 경직, 환기를 두 배로 늘려도 오르는 호기말 이산화탄소, 전신 경직, 빈맥·고체온·고칼륨혈증·혼합 산증 — 악성 고열증(malignant hyperthermia)이다. 사촌의 수술 중 원인 모를 고열은 상염색체 우성 RYR1 변이의 가족력을 시사한다. 병태는 골격근 소포체의 리아노딘 수용체(RyR1)를 통한 칼슘의 통제 안 되는 방출 — 신경근접합부 뒤, 근세포 안의 문제다. 그래서 유발제를 끊은 뒤 쓰는 단트롤렌(dantrolene)은 RyR1 에 결합해 소포체 칼슘 방출을 막는다. 항정신병약·항우울제 복용이 없어 신경이완제 악성 증후군·세로토닌 증후군의 가능성은 낮다."
+  },
+  {
+   "id": "paper-2026-0896",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS medicine",
+   "confidence": "medium",
+   "date": "2026-11-05",
+   "path": "content/papers/2026/2026-11-05_paper-2026-0896_a_metabolomic_signature_of_weight_loss_and_its_associations_.md",
+   "snippet": "Title A metabolomic signature of weight loss and its associations with BMI linked diseases: A post hoc analysis of two intervention trials and a mendelian randomisation study Authors Sunderland Nicholas, Smith Madeleine L, McConnachie Alex,",
+   "text": "Cardiology scraped pubmed PubMed / PLoS medicine Title A metabolomic signature of weight loss and its associations with BMI linked diseases: A post hoc analysis of two intervention trials and a mendelian randomisation study Authors Sunderland Nicholas, Smith Madeleine L, McConnachie Alex, Welsh Paul, Taylor Roy, Lean Michael E J, Rogers Chris A, Blazeby Jane M, et al. Journal / DOI PLoS medicine · DOI: 10.1371/journal.pmed.1005290 · PMID: 42981445 https://pubmed.ncbi.nlm.nih.gov/42981445/ Abstract BACKGROUND: Obesity is a major risk factor for a broad spectrum of diseases, yet the molecular pathways underlying this risk remains poorly understood. Individual analytical approaches interventional trials, observational data, and genetic methods are each susceptible to distinct sources of bias. We aimed to identify a common metabolic perturbation signature of adiposity by triangulating evidence across multiple sources of body mass index (BMI) variation, and to characterise associations between this signature and contrasting adiposity linked disease outcomes. METHODS AND FINDINGS: We integrated mass spectrometry and nuclear magnetic resonance metabolomic profiling from two weight loss interventions a structured diet programme (DiRECT trial, ISRCTN03267836) and metabolic and bariatric surgery (By Band Sleeve trial, ISRCTN00786323) with mendelian randomisation (MR) estimates of the effect of lifetime BMI exposure on metabolite levels, in order to identify a consistent BMI associated metabolite signature across sources with distinct error structures. Weight loss associated metabolites were then instrumented using genetic variants and their associations with heart failure (HF), osteoarthritis, and kidney cancer estimated in a two sample MR framework, with instruments grouped into clusters based on genetic similarity to aid biological interpretation. 242 metabolites were consistently altered across weight loss interventions, predominantly comprising lipids, lipoproteins, and amino acids. The majority of these showed concordant associations with lifetime BMI in MR, consistent with regulation by adiposity. Differential components of this signature were associated with disease specific outcomes. For HF, low density lipoprotein (LDL) measures were strongly associated with increased risk, consistent with ischaemic aetiology enrichment, whilst high density lipoprotein (HDL) cholesterol enrichment traits were protective, and markers of dysfunctional HDL remodelling were associated with increased risk. For osteoarthritis, lipoprotein associations were again associated with disease risk but in the opposite direction to that seen with HF; additional signals were observed in glycine metabolism pathways. For kidney cancer, the adiposity metabolite signature translated poorly into disease associations, with only 5 methyluridine and ursodeoxycholate associations identified. The main limitations of our study include the potential for residual horizontal pleiotropy with metabolite instruments despite multiple sensitivity analyses and the rank normalised scale of metabolite measures, which limits direct physiological interpretability. CONCLUSIONS: Triangulating evidence across dietary intervention, metabolic and bariatric surgery, and MR of lifetime BMI identified a robust metabolic signature of adiposity. The association of components of this signature with obesity related outcomes was disease specific, supporting the notion that not all adiposity associated metabolic perturbations are uniformly relevant across the spectrum of obesity related diseases. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "cn.ortho.scfe.adolescent-limp-diagnosis",
