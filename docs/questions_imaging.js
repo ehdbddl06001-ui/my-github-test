@@ -2,6 +2,1447 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0561",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 운동 전 검사를 받은 증상 없는 남성의 느린 맥",
+  "type": "심전도 판독 — 운동 전 검사를 받은 증상 없는 남성의 느린 맥",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-05",
+  "vignette": "A 39-year-old man comes to the physician for a preparticipation evaluation before joining an amateur marathon club. He runs 50 km per week and has no dizziness, syncope, chest pain, or exercise intolerance. He takes no medications and does not use stimulants. Pulse is 50/min and regular, and blood pressure is 118/70 mm Hg. Cardiac examination shows no murmurs. Serum potassium and thyroid-stimulating hormone concentrations are within normal limits. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Sinus bradycardia",
+   "Junctional escape rhythm",
+   "Second-degree atrioventricular block, Mobitz type I",
+   "First-degree atrioventricular block",
+   "Sinoatrial exit block"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: On the lead II rhythm strip, the RR interval is about 1.2 seconds (6 large boxes), giving a rate of about 49/min. Every QRS complex is preceded by an upright P wave of the same shape with a constant, normal PR interval, the QRS is narrow, and there are no dropped beats or pauses. This is sinus bradycardia. The J-point elevation with prominent T waves in V2-V3 is an early repolarization pattern, which, like the bradycardia, is common in endurance athletes.\n- 원리: <b>Why athletes are bradycardic</b>: Endurance training increases stroke volume, so the same cardiac output is achieved with fewer beats, and vagal tone on the sinoatrial node rises. The sinus node itself also remodels and fires more slowly. Resting rates of 40-50/min are therefore normal in trained athletes and need no treatment if they are asymptomatic and the rate increases appropriately with exercise.<br> <b>How to prove the rhythm is sinus</b>: The sinus node is in the high right atrium, so atrial depolarization spreads downward and leftward and the P wave is upright in leads I and II. If each QRS is preceded by such a P wave at a constant PR interval, the impulse is coming from the sinus node. A junctional pacemaker activates the atria backward from below, so the P wave is absent, inverted in II, or appears just after the QRS.<br> <b>When bradycardia is a disease</b>: Sinus node dysfunction is suspected when slow rates cause dizziness, syncope, or fatigue, when the rate fails to rise with exercise (chronotropic incompetence), or when pauses occur. Drugs (beta-blockers, calcium-channel blockers), hypothyroidism, hyperkalemia, and raised intracranial pressure are reversible causes to exclude.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Sinus bradycardia (answer)</th><th>Junctional escape rhythm (closest distractor)</th></tr></thead><tbody> <tr><td>P wave</td><td><b>Upright in II before every QRS</b></td><td>Absent, inverted in II, or just after the QRS</td></tr> <tr><td>PR interval</td><td>Constant, 0.12-0.20 s</td><td>Short (below 0.12 s) or none</td></tr> <tr><td>Rate</td><td>Below 60/min</td><td>Usually 40-60/min</td></tr> </tbody></table> Both are slow and narrow; the position and direction of the P wave decide where the beat started.\n- 오답 이유:\n  - (B) Junctional escape rhythm would be correct if P waves were absent or inverted in lead II, appearing just before with a short PR interval or after each narrow QRS.\n  - (C) Mobitz type I block would be correct if the PR interval lengthened progressively until a P wave was not followed by a QRS, producing grouped beats.\n  - (D) First-degree atrioventricular block would be correct if every P wave were conducted but with a constant PR interval longer than 0.20 seconds.\n  - (E) Sinoatrial exit block would be correct if a whole P-QRS-T complex were suddenly missing, with a pause equal to an exact multiple of the preceding PP interval.\n- 함정: Calling every slow regular rhythm in an athlete a junctional or block rhythm — first find the P wave in lead II and check that the PR interval is constant.\n- 학습목표: 모든 QRS 앞에 같은 모양의 양성 P파와 일정한 PR 이 있는 50회/분 미만 리듬을 동서맥으로 읽고 접합부 리듬·방실차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 3616 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On the lead II rhythm strip, the RR interval is about 1.2 seconds (6 large boxes), giving a rate of about 49/min. Every QRS complex is preceded by an upright P wave of the same shape with a constant, normal PR interval, the QRS is narrow, and there are no dropped beats or pauses. This is sinus bradycardia. The J-point elevation with prominent T waves in V2-V3 is an early repolarization pattern, which, like the bradycardia, is common in endurance athletes."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why athletes are bradycardic</b>: Endurance training increases stroke volume, so the same cardiac output is achieved with fewer beats, and vagal tone on the sinoatrial node rises. The sinus node itself also remodels and fires more slowly. Resting rates of 40-50/min are therefore normal in trained athletes and need no treatment if they are asymptomatic and the rate increases appropriately with exercise.<br> <b>How to prove the rhythm is sinus</b>: The sinus node is in the high right atrium, so atrial depolarization spreads downward and leftward and the P wave is upright in leads I and II. If each QRS is preceded by such a P wave at a constant PR interval, the impulse is coming from the sinus node. A junctional pacemaker activates the atria backward from below, so the P wave is absent, inverted in II, or appears just after the QRS.<br> <b>When bradycardia is a disease</b>: Sinus node dysfunction is suspected when slow rates cause dizziness, syncope, or fatigue, when the rate fails to rise with exercise (chronotropic incompetence), or when pauses occur. Drugs (beta-blockers, calcium-channel blockers), hypothyroidism, hyperkalemia, and raised intracranial pressure are reversible causes to exclude."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Sinus bradycardia (answer)</th><th>Junctional escape rhythm (closest distractor)</th></tr></thead><tbody> <tr><td>P wave</td><td><b>Upright in II before every QRS</b></td><td>Absent, inverted in II, or just after the QRS</td></tr> <tr><td>PR interval</td><td>Constant, 0.12-0.20 s</td><td>Short (below 0.12 s) or none</td></tr> <tr><td>Rate</td><td>Below 60/min</td><td>Usually 40-60/min</td></tr> </tbody></table> Both are slow and narrow; the position and direction of the P wave decide where the beat started."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Junctional escape rhythm would be correct if P waves were absent or inverted in lead II, appearing just before with a short PR interval or after each narrow QRS.\n(C) Mobitz type I block would be correct if the PR interval lengthened progressively until a P wave was not followed by a QRS, producing grouped beats.\n(D) First-degree atrioventricular block would be correct if every P wave were conducted but with a constant PR interval longer than 0.20 seconds.\n(E) Sinoatrial exit block would be correct if a whole P-QRS-T complex were suddenly missing, with a pause equal to an exact multiple of the preceding PP interval."
+   },
+   {
+    "k": "함정",
+    "v": "Calling every slow regular rhythm in an athlete a junctional or block rhythm — first find the P wave in lead II and check that the PR interval is constant."
+   },
+   {
+    "k": "학습목표",
+    "v": "모든 QRS 앞에 같은 모양의 양성 P파와 일정한 PR 이 있는 50회/분 미만 리듬을 동서맥으로 읽고 접합부 리듬·방실차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 3616 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A regular narrow-complex rhythm under 60/min with an upright P wave and constant normal PR before every QRS is sinus bradycardia",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Each QRS is preceded by an upright P wave in lead II at a constant normal PR interval — the beat starts in the sinus node, not the junction",
+   "steps": 2,
+   "chain": [
+    "영상: lead II RR interval about 1.2 s -> rate about 49/min, narrow QRS",
+    "영상: upright P wave with constant normal PR before every QRS, no dropped beats -> sinus bradycardia"
+   ],
+   "key": [
+    {
+     "item": "영상: upright P waves with a constant PR before every QRS in lead II",
+     "why": "Proves sinus origin",
+     "also": []
+    },
+    {
+     "item": "영상: rate about 49/min with no pauses or dropped beats",
+     "why": "Bradycardia without block",
+     "also": []
+    },
+    {
+     "item": "He runs 50 km per week",
+     "why": "Explains physiologic bradycardia",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum potassium and thyroid-stimulating hormone concentrations are within normal limits",
+     "why": "Lowers the likelihood of hyperkalemia or hypothyroidism as a cause",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no dizziness, syncope, chest pain, or exercise intolerance",
+     "why": "Asymptomatic — no treatment is needed",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "영상: J-point elevation with prominent T waves in V2-V3",
+     "why": "Early repolarization common in athletes — not the question being asked",
+     "also": []
+    }
+   ],
+   "summary": "A slow regular rhythm at about 49/min with an upright P wave and constant PR before every QRS. This is sinus bradycardia of an endurance athlete.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the P waves were inverted in lead II or hidden after each QRS, the diagnosis would be a junctional escape rhythm"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0561.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/03000/#files-panel",
+   "asset_id": "PTBXL-03616",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 3616"
+  },
+  "run_id": "20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0560",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 백내장 수술 전 검사에서 넓은 QRS 가 발견된 무증상 노인",
+  "type": "심전도 처치 — 백내장 수술 전 검사에서 넓은 QRS 가 발견된 무증상 노인",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-05",
+  "vignette": "79세 남자가 다음 주 백내장 수술을 앞두고 수술 전 검사를 받았다. 어지럼·실신·흉통·호흡곤란은 없고 하루 한 시간씩 산책을 한다. 고혈압으로 암로디핀을 먹고 있다. 혈압 132/78 mmHg, 맥박 84회/분이고 규칙적이다. 심잡음은 없고 폐음은 깨끗하다. 혈청 칼륨 4.3 mEq/L 이다. 이전 심전도는 없다. 12유도 심전도는 그림과 같다.",
+  "question": "처치로 가장 적절한 것은?",
+  "options": [
+   "수술 중 이소프로테레놀을 지속 주입한다",
+   "추가 처치 없이 예정대로 수술한다",
+   "영구 심박동기를 삽입한 뒤 수술한다",
+   "임시 경정맥 심박조율을 하고 수술한다",
+   "관상동맥조영술을 먼저 한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 동리듬 약 85회/분이고 PR 은 정상이다. QRS 는 약 0.12 s 로 넓고 V1 에 늦게 오는 큰 R(rsR')과 그에 따르는 ST 하강·T 역전이 있으며, V2·V3 에 rSR' 모양, I·V6 에 넓고 끌리는 S파가 있다 — 완전 우각차단이다. 사지유도에서 축이 왼쪽으로 기울어 좌전속차단이 겹쳤을 수 있다. 그러나 실신·어지럼이 없고 PR 연장이나 2도 이상 방실차단이 없으면 심박동기 적응이 아니며, 증상 없는 각차단은 수술 위험을 높이지 않는다. 저위험 수술(백내장)은 예정대로 한다.\n- 원리: <b>왜 QRS 가 넓어지나</b>: 우각이 막히면 좌심실은 좌각으로 정상 탈분극하지만 우심실은 좌심실에서 심근을 타고 천천히 넘어온 흥분으로 늦게 탈분극한다. 이 늦은 우심실 성분이 오른쪽·앞쪽을 향하므로 V1 에 두 번째 R(R')이, 왼쪽을 보는 I·V6 에는 넓은 S파가 생기고 QRS 가 0.12 s 이상 넓어진다. 재분극도 늦게 끝나는 우심실 쪽 순서를 따라 V1~V3 의 ST-T 가 QRS 마지막 성분과 반대로 향한다(2차성 변화).<br> <b>왜 대개 치료가 필요 없나</b>: 우각차단만으로는 심실 전체가 여전히 좌각으로 전도받으므로 심박수는 유지된다. 심박동기는 증상이 있는 서맥, 3도·Mobitz 2형 방실차단, 또는 실신과 함께 전도계 질환의 근거가 있을 때 넣는다. 좌전속차단까지 겹친 2속차단도 증상이 없으면 완전 방실차단으로 넘어가는 비율이 해마다 1~2 % 정도라 예방적 심박동기를 넣지 않는다.<br> <b>언제 더 보나</b>: 새로 생긴 우각차단이 흉통·호흡곤란과 함께 오면 폐색전증이나 심근경색을 생각하고, 젊은 사람에서 우심실 부하 소견이 있으면 심방중격결손을 찾는다. 실신이 있으면 전기생리검사나 장기 감시가 필요하다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">무증상 우각차단(정답: 수술 진행)</th><th>심박동기가 필요한 전도장애(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>없음</b> — 어지럼·실신 없음</td><td>실신, 어지럼, 운동 불내성</td></tr> <tr><td>방실전도</td><td>PR 정상, 모든 P파가 전도</td><td>3도 또는 Mobitz 2형 방실차단, 교대 각차단</td></tr> <tr><td>처치</td><td>관찰, 수술 연기 불필요</td><td>영구 심박동기</td></tr> </tbody></table> 심박동기는 「각이 막혔다」가 아니라 「심실로 전도가 끊기거나 증상이 있다」로 결정한다.\n- 오답 이유:\n  - ① 이소프로테레놀 지속 주입은 아트로핀에 반응하지 않는 증상성 서맥에서 심박조율을 준비하는 동안 잠시 쓸 때 정답이 된다.\n  - ③ 영구 심박동기는 각차단 환자에게 원인 모를 실신이 있거나 Mobitz 2형·3도 방실차단, 좌우가 번갈아 막히는 교대 각차단이 기록될 때 정답이 된다.\n  - ④ 임시 경정맥 심박조율은 혈역학이 불안정한 서맥이나 급성 심근경색 중 새로 생긴 고도 방실차단처럼 당장 박동이 위험할 때 정답이 된다.\n  - ⑤ 관상동맥조영술은 전형적 흉통이 있고 새로 생긴 각차단이나 트로포닌 상승으로 급성 관상동맥증후군이 의심될 때 정답이 된다.\n- 함정: 넓은 QRS 와 좌측 축을 보고 「2속차단이니 심박동기」라고 생각하는 것 — 증상과 방실차단이 없으면 예방적 삽입 적응이 아니다.\n- 학습목표: 무증상 환자의 수술 전 심전도에서 완전 우각차단을 읽고, 실신이나 방실차단이 없으면 심박동기·추가 시술 없이 예정 수술을 진행한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19444 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 85회/분이고 PR 은 정상이다. QRS 는 약 0.12 s 로 넓고 V1 에 늦게 오는 큰 R(rsR')과 그에 따르는 ST 하강·T 역전이 있으며, V2·V3 에 rSR' 모양, I·V6 에 넓고 끌리는 S파가 있다 — 완전 우각차단이다. 사지유도에서 축이 왼쪽으로 기울어 좌전속차단이 겹쳤을 수 있다. 그러나 실신·어지럼이 없고 PR 연장이나 2도 이상 방실차단이 없으면 심박동기 적응이 아니며, 증상 없는 각차단은 수술 위험을 높이지 않는다. 저위험 수술(백내장)은 예정대로 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 QRS 가 넓어지나</b>: 우각이 막히면 좌심실은 좌각으로 정상 탈분극하지만 우심실은 좌심실에서 심근을 타고 천천히 넘어온 흥분으로 늦게 탈분극한다. 이 늦은 우심실 성분이 오른쪽·앞쪽을 향하므로 V1 에 두 번째 R(R')이, 왼쪽을 보는 I·V6 에는 넓은 S파가 생기고 QRS 가 0.12 s 이상 넓어진다. 재분극도 늦게 끝나는 우심실 쪽 순서를 따라 V1~V3 의 ST-T 가 QRS 마지막 성분과 반대로 향한다(2차성 변화).<br> <b>왜 대개 치료가 필요 없나</b>: 우각차단만으로는 심실 전체가 여전히 좌각으로 전도받으므로 심박수는 유지된다. 심박동기는 증상이 있는 서맥, 3도·Mobitz 2형 방실차단, 또는 실신과 함께 전도계 질환의 근거가 있을 때 넣는다. 좌전속차단까지 겹친 2속차단도 증상이 없으면 완전 방실차단으로 넘어가는 비율이 해마다 1~2 % 정도라 예방적 심박동기를 넣지 않는다.<br> <b>언제 더 보나</b>: 새로 생긴 우각차단이 흉통·호흡곤란과 함께 오면 폐색전증이나 심근경색을 생각하고, 젊은 사람에서 우심실 부하 소견이 있으면 심방중격결손을 찾는다. 실신이 있으면 전기생리검사나 장기 감시가 필요하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">무증상 우각차단(정답: 수술 진행)</th><th>심박동기가 필요한 전도장애(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>없음</b> — 어지럼·실신 없음</td><td>실신, 어지럼, 운동 불내성</td></tr> <tr><td>방실전도</td><td>PR 정상, 모든 P파가 전도</td><td>3도 또는 Mobitz 2형 방실차단, 교대 각차단</td></tr> <tr><td>처치</td><td>관찰, 수술 연기 불필요</td><td>영구 심박동기</td></tr> </tbody></table> 심박동기는 「각이 막혔다」가 아니라 「심실로 전도가 끊기거나 증상이 있다」로 결정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 이소프로테레놀 지속 주입은 아트로핀에 반응하지 않는 증상성 서맥에서 심박조율을 준비하는 동안 잠시 쓸 때 정답이 된다.\n③ 영구 심박동기는 각차단 환자에게 원인 모를 실신이 있거나 Mobitz 2형·3도 방실차단, 좌우가 번갈아 막히는 교대 각차단이 기록될 때 정답이 된다.\n④ 임시 경정맥 심박조율은 혈역학이 불안정한 서맥이나 급성 심근경색 중 새로 생긴 고도 방실차단처럼 당장 박동이 위험할 때 정답이 된다.\n⑤ 관상동맥조영술은 전형적 흉통이 있고 새로 생긴 각차단이나 트로포닌 상승으로 급성 관상동맥증후군이 의심될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "넓은 QRS 와 좌측 축을 보고 「2속차단이니 심박동기」라고 생각하는 것 — 증상과 방실차단이 없으면 예방적 삽입 적응이 아니다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무증상 환자의 수술 전 심전도에서 완전 우각차단을 읽고, 실신이나 방실차단이 없으면 심박동기·추가 시술 없이 예정 수술을 진행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19444 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "증상과 방실차단이 없는 완전 우각차단(좌측 축 동반 가능)은 치료가 필요 없고 저위험 수술을 미루지 않는다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "실신·어지럼이 없고 PR 이 정상이며 모든 P파가 전도된다 — 심박동기 적응이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: QRS 약 0.12 s, V1 rsR' 과 ST-T 역전, I·V6 넓은 S파 → 완전 우각차단",
+    "영상: 동리듬, PR 정상, 모든 P파 뒤 QRS → 방실차단 없음",
+    "어지럼·실신 없음 → 심박동기 적응 없음, 백내장 수술 진행"
+   ],
+   "key": [
+    {
+     "item": "영상: V1 의 rsR' 과 I·V6 의 넓은 S파, QRS 약 0.12 s",
+     "why": "완전 우각차단 판독",
+     "also": []
+    },
+    {
+     "item": "영상: PR 정상, 모든 P파 뒤에 QRS",
+     "why": "방실차단이 없다",
+     "also": []
+    },
+    {
+     "item": "어지럼·실신·흉통·호흡곤란은 없고",
+     "why": "증상성 전도장애가 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.3 mEq/L",
+     "why": "전해질 이상으로 생긴 전도 지연 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "백내장 수술",
+     "why": "저위험 수술 — 무증상 각차단으로 미룰 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "이전 심전도는 없다",
+     "why": "새로 생긴 것인지 알 수 없지만 증상이 없어 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "증상 없는 노인의 완전 우각차단이다. 방실차단과 실신이 없으니 심박동기 없이 예정대로 수술한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 심전도에 원인 모를 실신이 있거나 Mobitz 2형 방실차단이 기록되면 영구 심박동기"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0560.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/19000/#files-panel",
+   "asset_id": "PTBXL-19444",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19444"
+  },
+  "run_id": "20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0554",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "안과 — 오래된 당뇨병 환자의 정기 안저 검사",
+  "type": "안과 — 오래된 당뇨병 환자의 정기 안저 검사",
+  "modality": "FUNDUS",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-05",
+  "vignette": "A patient with type 2 diabetes mellitus for 18 years comes to the ophthalmologist for a routine dilated eye examination. The patient has no visual symptoms. Current medications are metformin and empagliflozin. Blood pressure is 136/82 mm Hg. Visual acuity is 20/25 in both eyes. Intraocular pressure is normal, and there is no relative afferent pupillary defect. A color fundus photograph of the right eye is shown. Similar findings are present in the left eye.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Central retinal artery occlusion",
+   "Nonproliferative diabetic retinopathy",
+   "Proliferative diabetic retinopathy",
+   "Central retinal vein occlusion",
+   "Hypertensive retinopathy"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The photograph shows many dot-and-blot intraretinal hemorrhages temporal to the macula and outside the inferior arcade, with a few flame-shaped hemorrhages. There are no new vessels on the optic disc or elsewhere and no preretinal or vitreous hemorrhage. Intraretinal hemorrhages without neovascularization in a patient with long-standing diabetes are nonproliferative diabetic retinopathy; the number of hemorrhages places it at the more advanced end of the nonproliferative stage.\n- 원리: <b>Why the retina bleeds</b>: Chronic hyperglycemia damages retinal capillaries — pericytes are lost, the basement membrane thickens, and the capillary wall bulges into microaneurysms. These leak plasma (hard exudates, macular edema) and rupture into the retina as dot-and-blot hemorrhages in the deeper layers or flame hemorrhages in the nerve fiber layer.<br> <b>Why neovascularization is the dividing line</b>: As capillaries close, the retina becomes ischemic and releases VEGF. Once new vessels grow from the disc or the retina into the vitreous, the disease is proliferative; these fragile vessels bleed into the vitreous and pull on the retina, which can cause sudden blindness. Before that point the disease is nonproliferative, graded mild, moderate, or severe by the number and distribution of hemorrhages, venous beading, and intraretinal microvascular abnormalities.<br> <b>Why it matters for management</b>: Nonproliferative disease is treated by controlling glucose, blood pressure, and lipids and by follow-up at intervals that shorten as severity increases. Proliferative disease or center-involving macular edema needs treatment with panretinal photocoagulation or anti-VEGF injections.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Nonproliferative DR (answer)</th><th>Proliferative DR (closest distractor)</th></tr></thead><tbody> <tr><td>Hemorrhages</td><td>Intraretinal dot-blot and flame</td><td>May also be preretinal (boat-shaped) or vitreous</td></tr> <tr><td>New vessels</td><td><b>None</b></td><td>On the disc (NVD) or elsewhere (NVE)</td></tr> <tr><td>Treatment</td><td>Risk-factor control and close follow-up</td><td>Panretinal photocoagulation or anti-VEGF</td></tr> </tbody></table> The number of hemorrhages grades the nonproliferative stage, but only new vessels or preretinal blood make it proliferative.\n- 오답 이유:\n  - (A) Central retinal artery occlusion would be correct for sudden painless loss of vision with a pale, whitened retina and a cherry-red spot at the fovea.\n  - (C) Proliferative diabetic retinopathy would be correct if fine new vessels were seen on the optic disc or along the arcades, or if there were preretinal or vitreous hemorrhage.\n  - (D) Central retinal vein occlusion would be correct for a unilateral, sudden painless visual loss with hemorrhages in all four quadrants, dilated tortuous veins, and disc swelling.\n  - (E) Hypertensive retinopathy would be correct with arteriolar narrowing and arteriovenous nicking, and flame hemorrhages with disc edema in a patient with severely elevated blood pressure.\n- 함정: Equating many hemorrhages with proliferative disease — the stage changes only when new vessels or preretinal blood appear.\n- 제작 가정: IDRiD 는 안저 사진과 망막병증 등급만 있고 나이·성별·병력이 없다 — 당뇨병 유병 기간·증상·시력·혈압을 가정했다 (가정한 정보: type 2 diabetes mellitus for 18 years · has no visual symptoms · Visual acuity is 20/25 in both eyes · Blood pressure is 136/82 mm Hg)\n- 학습목표: 당뇨병 환자의 안저 사진에서 다수의 망막내 출혈이 있고 신생혈관이 없음을 읽어 비증식 당뇨망막병증으로 판단하고 증식 망막병증·망막정맥폐쇄와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 34: Disorders of the Eye · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 417: Diabetes Mellitus: Complications\n\n## 출처\n- IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_004 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photograph shows many dot-and-blot intraretinal hemorrhages temporal to the macula and outside the inferior arcade, with a few flame-shaped hemorrhages. There are no new vessels on the optic disc or elsewhere and no preretinal or vitreous hemorrhage. Intraretinal hemorrhages without neovascularization in a patient with long-standing diabetes are nonproliferative diabetic retinopathy; the number of hemorrhages places it at the more advanced end of the nonproliferative stage."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the retina bleeds</b>: Chronic hyperglycemia damages retinal capillaries — pericytes are lost, the basement membrane thickens, and the capillary wall bulges into microaneurysms. These leak plasma (hard exudates, macular edema) and rupture into the retina as dot-and-blot hemorrhages in the deeper layers or flame hemorrhages in the nerve fiber layer.<br> <b>Why neovascularization is the dividing line</b>: As capillaries close, the retina becomes ischemic and releases VEGF. Once new vessels grow from the disc or the retina into the vitreous, the disease is proliferative; these fragile vessels bleed into the vitreous and pull on the retina, which can cause sudden blindness. Before that point the disease is nonproliferative, graded mild, moderate, or severe by the number and distribution of hemorrhages, venous beading, and intraretinal microvascular abnormalities.<br> <b>Why it matters for management</b>: Nonproliferative disease is treated by controlling glucose, blood pressure, and lipids and by follow-up at intervals that shorten as severity increases. Proliferative disease or center-involving macular edema needs treatment with panretinal photocoagulation or anti-VEGF injections."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Nonproliferative DR (answer)</th><th>Proliferative DR (closest distractor)</th></tr></thead><tbody> <tr><td>Hemorrhages</td><td>Intraretinal dot-blot and flame</td><td>May also be preretinal (boat-shaped) or vitreous</td></tr> <tr><td>New vessels</td><td><b>None</b></td><td>On the disc (NVD) or elsewhere (NVE)</td></tr> <tr><td>Treatment</td><td>Risk-factor control and close follow-up</td><td>Panretinal photocoagulation or anti-VEGF</td></tr> </tbody></table> The number of hemorrhages grades the nonproliferative stage, but only new vessels or preretinal blood make it proliferative."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Central retinal artery occlusion would be correct for sudden painless loss of vision with a pale, whitened retina and a cherry-red spot at the fovea.\n(C) Proliferative diabetic retinopathy would be correct if fine new vessels were seen on the optic disc or along the arcades, or if there were preretinal or vitreous hemorrhage.\n(D) Central retinal vein occlusion would be correct for a unilateral, sudden painless visual loss with hemorrhages in all four quadrants, dilated tortuous veins, and disc swelling.\n(E) Hypertensive retinopathy would be correct with arteriolar narrowing and arteriovenous nicking, and flame hemorrhages with disc edema in a patient with severely elevated blood pressure."
+   },
+   {
+    "k": "함정",
+    "v": "Equating many hemorrhages with proliferative disease — the stage changes only when new vessels or preretinal blood appear."
+   },
+   {
+    "k": "제작 가정",
+    "v": "IDRiD 는 안저 사진과 망막병증 등급만 있고 나이·성별·병력이 없다 — 당뇨병 유병 기간·증상·시력·혈압을 가정했다 (가정한 정보: type 2 diabetes mellitus for 18 years · has no visual symptoms · Visual acuity is 20/25 in both eyes · Blood pressure is 136/82 mm Hg)"
+   },
+   {
+    "k": "학습목표",
+    "v": "당뇨병 환자의 안저 사진에서 다수의 망막내 출혈이 있고 신생혈관이 없음을 읽어 비증식 당뇨망막병증으로 판단하고 증식 망막병증·망막정맥폐쇄와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 34: Disorders of the Eye · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 417: Diabetes Mellitus: Complications ## 출처 IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_004 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Intraretinal hemorrhages without neovascularization in long-standing diabetes are nonproliferative diabetic retinopathy",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "No new vessels on the disc or elsewhere and no preretinal or vitreous hemorrhage",
+   "steps": 2,
+   "chain": [
+    "영상: many dot-and-blot intraretinal hemorrhages and a few flame hemorrhages in the right eye",
+    "No neovascularization and no preretinal or vitreous blood -> nonproliferative diabetic retinopathy"
+   ],
+   "key": [
+    {
+     "item": "영상: multiple dot-and-blot intraretinal hemorrhages",
+     "why": "Microvascular damage from diabetes",
+     "also": []
+    },
+    {
+     "item": "영상: no new vessels on the disc or elsewhere",
+     "why": "Separates nonproliferative from proliferative disease",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Similar findings are present in the left eye",
+     "why": "Bilateral involvement lowers the likelihood of a retinal vein occlusion",
+     "also": []
+    },
+    {
+     "item": "Blood pressure is 136/82 mm Hg",
+     "why": "Makes hypertensive retinopathy less likely",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Visual acuity is 20/25 in both eyes",
+     "why": "Good vision does not exclude retinopathy; it argues against macular involvement",
+     "also": []
+    }
+   ],
+   "summary": "Many intraretinal hemorrhages but no new vessels in both eyes of a long-standing diabetic patient. This is nonproliferative diabetic retinopathy.",
+   "switch": {
+    "choice": "C",
+    "condition": "If fronds of new vessels arose from the optic disc or preretinal blood were present, the diagnosis would be proliferative diabetic retinopathy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0554.jpg",
+   "caption": "Color fundus photograph, unaltered apart from scaling (IDRiD, IEEE DataPort, CC BY 4.0 — no crop or adjustment) ※ The clinical scenario in the stem is an authoring assumption — the source dataset has no age or clinical history",
+   "alt": "FUNDUS 영상"
+  },
+  "attribution": {
+   "dataset": "Indian Diabetic Retinopathy Image Dataset (IDRiD)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://idrid.grand-challenge.org/Data/",
+   "asset_id": "IDRID-IDRiD_004",
+   "text": "IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_004"
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0553",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "외과계 — 만성 신장병이 있는 노인 여성의 작은 신장 고형 종괴",
+  "type": "외과계 — 만성 신장병이 있는 노인 여성의 작은 신장 고형 종괴",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-05",
+  "vignette": "73세 여자가 건강검진 복부 초음파에서 왼쪽 신장 종괴가 발견되어 왔다. 옆구리 통증과 육안 혈뇨는 없다. 고혈압과 제2형 당뇨병으로 약을 먹고 있으며 혼자 일상생활을 하고 매일 한 시간씩 걷는다. 혈압 134/80 mmHg, 체질량지수 36 kg/m² 이다. 혈청 크레아티닌 1.1 mg/dL, 추정 사구체여과율 50 mL/min/1.73m² 이고 요검사에서 적혈구는 없다. 조영 증강 복부 CT 동맥기 영상은 그림과 같다. 종괴는 지름 3.9 cm 이고 종괴 안에 지방 감쇠는 없으며, 신정맥 침범·림프절 비대는 없고 흉부 CT 는 정상이다. 오른쪽 신장은 정상이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "체외 방사선치료",
+   "1년 뒤 CT 재촬영만 한다",
+   "신장부분절제술",
+   "근치적 신장절제술",
+   "수니티닙 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: CT 에서 왼쪽 신장 앞내측에 약 4 cm 둥글고 지방 없는 고형 종괴가 조영된다 — 성인에서 이런 종괴는 다른 근거가 없는 한 신세포암으로 다룬다. 지름 4 cm 이하로 신장에 국한되고 정맥 침범·림프절·원격전이가 없으므로 cT1a 다. T1a 는 신장부분절제술이 표준이며, 이 환자는 추정 사구체여과율 50 의 만성 신장병과 당뇨병·고혈압이 있어 신장 기능을 아끼는 것이 특히 중요하다. 수술 병리는 유두상 신세포암 pT1a 였다.\n- 원리: <b>왜 신장을 아끼나</b>: 신장 하나를 통째로 떼면 남은 신장이 과여과로 버티게 되고, 이미 사구체여과율이 떨어진 사람에서는 만성 신장병이 진행하고 심혈관 사건이 늘어난다. 작은 신세포암은 부분절제와 근치절제의 암 조절 성적이 비슷하므로, 기술적으로 가능하면 종양만 떼는 신장부분절제술이 표준이다.<br> <b>T1a 의 기준</b>: 지름 4 cm 이하로 신장에 국한된 종양이 T1a 다. 이 크기에서는 전이 위험이 낮고 신장 보존 수술의 이득이 가장 크다. 종양이 크거나(T2 이상) 신장 깊이 중앙에 있어 부분절제가 어렵거나 신정맥을 침범하면 근치적 신장절제술을 고른다.<br> <b>관찰과 소작은 언제</b>: 기대여명이 짧거나 수술 위험이 큰 환자의 작은 종괴(대개 3 cm 이하)는 능동 감시나 고주파·냉동 소작을 할 수 있다. 이 환자는 혼자 생활하고 활동적이어서 수술 위험이 금기 수준이 아니고, 종양도 4 cm 에 가까워 근치 치료를 미룰 이유가 적다. 국소 신세포암에는 보조 표적치료나 방사선이 첫 치료가 아니다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">신장부분절제술(정답)</th><th>근치적 신장절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>T1a(≤ 4 cm)</b>, 가능하면 T1b 도</td><td>T2 이상, 신정맥 침범, 중앙부 종양으로 부분절제 불가</td></tr> <tr><td>신기능</td><td>남는 신실질이 많다 — 만성 신장병 환자에게 유리</td><td>사구체여과율이 크게 떨어질 수 있다</td></tr> <tr><td>암 조절</td><td>T1a 에서 근치술과 비슷</td><td>비슷 — 작은 종양에서는 이득 없이 신장만 잃는다</td></tr> </tbody></table> 크기와 위치가 부분절제를 허락하면 신장을 아끼고, 종양이 크거나 혈관을 침범하면 신장 전체를 뗀다.\n- 오답 이유:\n  - ① 체외 방사선치료는 수술을 받을 수 없는 환자의 뼈·뇌 전이 통증 조절이나 정위 방사선 대안을 고를 때 정답이 될 수 있다.\n  - ② 1년 뒤 재촬영만 하는 것은 기대여명이 짧거나 수술 위험이 큰 환자의 3 cm 이하 작은 종괴에서 능동 감시를 고를 때 정답이 된다.\n  - ④ 근치적 신장절제술은 종양이 7 cm 를 넘거나 신정맥을 침범하거나 신장 중앙에 있어 부분절제가 기술적으로 어려울 때 정답이 된다.\n  - ⑤ 수니티닙 같은 표적치료는 원격전이가 있는 진행성 신세포암의 전신 치료로 정답이 되며 국소 T1a 종양의 첫 치료가 아니다.\n- 함정: 고령이라는 이유만으로 관찰을 고르거나, 암이니 신장 전체를 떼는 것이 안전하다고 생각하는 것 — T1a 는 신장 보존이 표준이다.\n- 학습목표: 지방 없이 조영되는 4 cm 이하 신장 고형 종괴를 T1a 신세포암으로 보고, 만성 신장병이 있는 환자에서 신장부분절제술을 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00021 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 왼쪽 신장 앞내측에 약 4 cm 둥글고 지방 없는 고형 종괴가 조영된다 — 성인에서 이런 종괴는 다른 근거가 없는 한 신세포암으로 다룬다. 지름 4 cm 이하로 신장에 국한되고 정맥 침범·림프절·원격전이가 없으므로 cT1a 다. T1a 는 신장부분절제술이 표준이며, 이 환자는 추정 사구체여과율 50 의 만성 신장병과 당뇨병·고혈압이 있어 신장 기능을 아끼는 것이 특히 중요하다. 수술 병리는 유두상 신세포암 pT1a 였다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 신장을 아끼나</b>: 신장 하나를 통째로 떼면 남은 신장이 과여과로 버티게 되고, 이미 사구체여과율이 떨어진 사람에서는 만성 신장병이 진행하고 심혈관 사건이 늘어난다. 작은 신세포암은 부분절제와 근치절제의 암 조절 성적이 비슷하므로, 기술적으로 가능하면 종양만 떼는 신장부분절제술이 표준이다.<br> <b>T1a 의 기준</b>: 지름 4 cm 이하로 신장에 국한된 종양이 T1a 다. 이 크기에서는 전이 위험이 낮고 신장 보존 수술의 이득이 가장 크다. 종양이 크거나(T2 이상) 신장 깊이 중앙에 있어 부분절제가 어렵거나 신정맥을 침범하면 근치적 신장절제술을 고른다.<br> <b>관찰과 소작은 언제</b>: 기대여명이 짧거나 수술 위험이 큰 환자의 작은 종괴(대개 3 cm 이하)는 능동 감시나 고주파·냉동 소작을 할 수 있다. 이 환자는 혼자 생활하고 활동적이어서 수술 위험이 금기 수준이 아니고, 종양도 4 cm 에 가까워 근치 치료를 미룰 이유가 적다. 국소 신세포암에는 보조 표적치료나 방사선이 첫 치료가 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">신장부분절제술(정답)</th><th>근치적 신장절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>T1a(≤ 4 cm)</b>, 가능하면 T1b 도</td><td>T2 이상, 신정맥 침범, 중앙부 종양으로 부분절제 불가</td></tr> <tr><td>신기능</td><td>남는 신실질이 많다 — 만성 신장병 환자에게 유리</td><td>사구체여과율이 크게 떨어질 수 있다</td></tr> <tr><td>암 조절</td><td>T1a 에서 근치술과 비슷</td><td>비슷 — 작은 종양에서는 이득 없이 신장만 잃는다</td></tr> </tbody></table> 크기와 위치가 부분절제를 허락하면 신장을 아끼고, 종양이 크거나 혈관을 침범하면 신장 전체를 뗀다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 체외 방사선치료는 수술을 받을 수 없는 환자의 뼈·뇌 전이 통증 조절이나 정위 방사선 대안을 고를 때 정답이 될 수 있다.\n② 1년 뒤 재촬영만 하는 것은 기대여명이 짧거나 수술 위험이 큰 환자의 3 cm 이하 작은 종괴에서 능동 감시를 고를 때 정답이 된다.\n④ 근치적 신장절제술은 종양이 7 cm 를 넘거나 신정맥을 침범하거나 신장 중앙에 있어 부분절제가 기술적으로 어려울 때 정답이 된다.\n⑤ 수니티닙 같은 표적치료는 원격전이가 있는 진행성 신세포암의 전신 치료로 정답이 되며 국소 T1a 종양의 첫 치료가 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "고령이라는 이유만으로 관찰을 고르거나, 암이니 신장 전체를 떼는 것이 안전하다고 생각하는 것 — T1a 는 신장 보존이 표준이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "지방 없이 조영되는 4 cm 이하 신장 고형 종괴를 T1a 신세포암으로 보고, 만성 신장병이 있는 환자에서 신장부분절제술을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00021 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "지방 없이 조영되는 4 cm 이하 국한성 신장 종괴(cT1a)는 신장부분절제술이 표준이고, 만성 신장병이 있으면 더욱 그렇다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "종양이 3.9 cm 로 T1a 이고 정맥 침범이 없으며, 신기능이 떨어져 있어 근치 절제의 이득이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 왼쪽 신장 앞내측의 지방 없는 둥근 고형 종괴가 조영된다 → 신세포암으로 다룬다",
+    "지름 3.9 cm, 정맥·림프절·원격전이 없음 → cT1a",
+    "추정 사구체여과율 50 의 만성 신장병 → 신장부분절제술"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 신장의 조영되는 둥근 고형 종괴",
+     "why": "낭종이 아닌 혈관이 있는 고형 종양",
+     "also": []
+    },
+    {
+     "item": "지름 3.9 cm",
+     "why": "T1a — 신장 보존 수술의 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "종괴 안에 지방 감쇠는 없으며",
+     "why": "혈관근지방종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "추정 사구체여과율 50 mL/min/1.73m²",
+     "why": "신장을 아껴야 할 이유",
+     "also": []
+    },
+    {
+     "item": "혼자 일상생활을 하고 매일 한 시간씩 걷는다",
+     "why": "수술을 견딜 수 있어 능동 감시보다 수술을 고른다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "체질량지수 36 kg/m²",
+     "why": "신세포암의 위험 인자이지만 치료 선택을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "지방 없이 조영되는 3.9 cm 신장 고형 종괴는 cT1a 신세포암이다. 만성 신장병이 있어 신장부분절제술을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "종양이 신정맥까지 자라 들어가거나 7 cm 를 넘으면 근치적 신장절제술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0553.png",
+   "caption": "조영 증강 복부 CT 동맥기 축상면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 자르기·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.654375711050908645984901357164",
+   "asset_id": "TCIA-KITS-00021_13489627",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00021"
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0552",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "피부 — 커지는 발바닥 색소 반점의 피부확대경 소견",
+  "type": "피부 — 커지는 발바닥 색소 반점의 피부확대경 소견",
+  "modality": "DERMOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-05",
+  "vignette": "An 80-year-old woman comes to the physician because of a brown patch on the sole of her left foot that her daughter noticed a year ago and that seems to have become larger. It does not itch, bleed, or hurt, and she does not recall any injury. She has no personal or family history of skin cancer. Examination shows a flat, irregularly pigmented brown patch measuring 14 x 9 mm on the plantar surface of the foot, with uneven borders and no palpable nodule. There is no inguinal or popliteal lymphadenopathy. A dermoscopic photograph of the lesion is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Wide local excision with 2-cm margins and sentinel lymph node biopsy",
+   "Excisional biopsy with narrow (1-3 mm) margins",
+   "Clinical and dermoscopic follow-up in 6 months",
+   "Cryotherapy with liquid nitrogen",
+   "Topical antifungal therapy for 4 weeks"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Dermoscopy of the acral skin shows brown pigment arranged in broad bands parallel to the skin markings, with uneven width, color, and intensity, and an irregular overall distribution. A growing, irregular acral pigmented lesion larger than 7 mm in an older adult must be assumed to be acral lentiginous melanoma until histology says otherwise. The next step is a complete excisional biopsy with narrow margins so that the pathologist can measure thickness, which then determines definitive margins and the need for sentinel node biopsy. Histology showed melanoma in situ.\n- 원리: <b>Why acral skin looks different</b>: The palms and soles have thick skin arranged in parallel ridges and furrows (dermatoglyphics), and eccrine ducts open on the ridges. Melanocytic lesions therefore show linear, parallel patterns rather than the reticular network seen elsewhere. Benign acral nevi typically place thin, regular lines of pigment in the furrows, whereas melanoma tends to produce broader, irregular bands with uneven color and asymmetric distribution.<br> <b>Why biopsy and not watch</b>: Acral lentiginous melanoma is the most common melanoma subtype in Asian and Black patients and is often diagnosed late because the sole is not looked at. A lesion that is enlarging, larger than 7 mm, irregular in color, or new in an older adult should be removed for histology rather than followed.<br> <b>Why narrow margins first</b>: Treatment margins depend on Breslow thickness, which only histology can provide. An excisional biopsy with 1-3 mm margins removes the whole lesion for accurate staging without disrupting lymphatic drainage, so that a later wide excision (0.5-1 cm for in situ, 1-2 cm for invasive tumors) and sentinel node mapping remain accurate.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Acral melanoma (answer)</th><th>Acral nevus (closest distractor)</th></tr></thead><tbody> <tr><td>Pigment pattern</td><td><b>Broad, irregular bands</b>, uneven color and width</td><td>Thin, regular parallel lines of uniform color</td></tr> <tr><td>Size and course</td><td>Often over 7 mm, enlarging</td><td>Usually small and stable</td></tr> <tr><td>Typical patient</td><td>Older adult</td><td>Child or young adult</td></tr> </tbody></table> Regularity and change are the deciding features — a small, stable, regular lesion can be followed, but a growing irregular one is excised.\n- 오답 이유:\n  - (A) Wide excision with 2-cm margins and sentinel node biopsy would be correct after a biopsy has shown invasive melanoma thicker than 2 mm, not before the thickness is known.\n  - (C) Follow-up in 6 months would be correct for a small, stable acral lesion with thin, regular, uniformly colored parallel lines in a young patient.\n  - (D) Cryotherapy would be correct for a benign lesion such as a plantar wart or seborrheic keratosis, but it destroys melanocytic tissue without allowing histology.\n  - (E) Topical antifungal therapy would be correct for tinea nigra, a superficial brown macule on the palm with hyphae on potassium hydroxide preparation and no pigment network.\n- 함정: Following a pigmented lesion of the sole because it is flat and painless — growth, size, and irregular color call for excision.\n- 학습목표: 발바닥 색소 병변의 피부확대경에서 폭과 색이 고르지 않은 넓은 갈색 띠를 읽고 커지는 병변이면 경과 관찰이 아니라 절제 생검을 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin\n\n## 출처\n- ISIC Archive ISIC_0021382 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Dermoscopy of the acral skin shows brown pigment arranged in broad bands parallel to the skin markings, with uneven width, color, and intensity, and an irregular overall distribution. A growing, irregular acral pigmented lesion larger than 7 mm in an older adult must be assumed to be acral lentiginous melanoma until histology says otherwise. The next step is a complete excisional biopsy with narrow margins so that the pathologist can measure thickness, which then determines definitive margins and the need for sentinel node biopsy. Histology showed melanoma in situ."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why acral skin looks different</b>: The palms and soles have thick skin arranged in parallel ridges and furrows (dermatoglyphics), and eccrine ducts open on the ridges. Melanocytic lesions therefore show linear, parallel patterns rather than the reticular network seen elsewhere. Benign acral nevi typically place thin, regular lines of pigment in the furrows, whereas melanoma tends to produce broader, irregular bands with uneven color and asymmetric distribution.<br> <b>Why biopsy and not watch</b>: Acral lentiginous melanoma is the most common melanoma subtype in Asian and Black patients and is often diagnosed late because the sole is not looked at. A lesion that is enlarging, larger than 7 mm, irregular in color, or new in an older adult should be removed for histology rather than followed.<br> <b>Why narrow margins first</b>: Treatment margins depend on Breslow thickness, which only histology can provide. An excisional biopsy with 1-3 mm margins removes the whole lesion for accurate staging without disrupting lymphatic drainage, so that a later wide excision (0.5-1 cm for in situ, 1-2 cm for invasive tumors) and sentinel node mapping remain accurate."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Acral melanoma (answer)</th><th>Acral nevus (closest distractor)</th></tr></thead><tbody> <tr><td>Pigment pattern</td><td><b>Broad, irregular bands</b>, uneven color and width</td><td>Thin, regular parallel lines of uniform color</td></tr> <tr><td>Size and course</td><td>Often over 7 mm, enlarging</td><td>Usually small and stable</td></tr> <tr><td>Typical patient</td><td>Older adult</td><td>Child or young adult</td></tr> </tbody></table> Regularity and change are the deciding features — a small, stable, regular lesion can be followed, but a growing irregular one is excised."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Wide excision with 2-cm margins and sentinel node biopsy would be correct after a biopsy has shown invasive melanoma thicker than 2 mm, not before the thickness is known.\n(C) Follow-up in 6 months would be correct for a small, stable acral lesion with thin, regular, uniformly colored parallel lines in a young patient.\n(D) Cryotherapy would be correct for a benign lesion such as a plantar wart or seborrheic keratosis, but it destroys melanocytic tissue without allowing histology.\n(E) Topical antifungal therapy would be correct for tinea nigra, a superficial brown macule on the palm with hyphae on potassium hydroxide preparation and no pigment network."
+   },
+   {
+    "k": "함정",
+    "v": "Following a pigmented lesion of the sole because it is flat and painless — growth, size, and irregular color call for excision."
+   },
+   {
+    "k": "학습목표",
+    "v": "발바닥 색소 병변의 피부확대경에서 폭과 색이 고르지 않은 넓은 갈색 띠를 읽고 커지는 병변이면 경과 관찰이 아니라 절제 생검을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin ## 출처 ISIC Archive ISIC_0021382 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "An enlarging, irregular acral pigmented lesion with broad uneven pigment bands on dermoscopy is excised with narrow margins for diagnosis",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "The pigment forms broad, irregular bands of uneven color and the lesion is enlarging and 14 mm — features that exclude simple follow-up",
+   "steps": 2,
+   "chain": [
+    "영상: broad brown bands of uneven width and color running parallel to the skin markings on acral skin",
+    "Enlarging 14 x 9 mm irregular lesion in an older adult -> suspected acral melanoma -> excisional biopsy with narrow margins"
+   ],
+   "key": [
+    {
+     "item": "영상: broad, irregular parallel bands of uneven brown pigment",
+     "why": "Pattern suggesting acral melanoma rather than a nevus",
+     "also": []
+    },
+    {
+     "item": "seems to have become larger",
+     "why": "Change is a major warning sign",
+     "also": []
+    },
+    {
+     "item": "measuring 14 x 9 mm",
+     "why": "Larger than 7 mm",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "does not recall any injury",
+     "why": "Lowers the likelihood of a traumatic hemorrhage (black heel)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no palpable nodule",
+     "why": "No clinical sign of thick invasion — biopsy first, staging later",
+     "also": []
+    },
+    {
+     "item": "There is no inguinal or popliteal lymphadenopathy",
+     "why": "No clinical nodal disease",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "A growing, irregular plantar pigmented lesion with broad uneven pigment bands is suspicious for acral melanoma. Remove it completely with narrow margins for histology.",
+   "switch": {
+    "choice": "C",
+    "condition": "A small, stable lesion in a young patient with thin, regular furrow lines of uniform color could be followed with dermoscopy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0552.jpg",
+   "caption": "Dermoscopic photograph of the skin lesion, downscaled only (ISIC Archive, CC0; no cropping or color adjustment)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0021382",
+   "asset_id": "ISIC-ISIC_0021382",
+   "text": "ISIC Archive ISIC_0021382 (CC-0)"
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0551",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "산과 — 양막이 터진 지 오래된 산모의 분만 중 태아심박동 기록",
+  "type": "산과 — 양막이 터진 지 오래된 산모의 분만 중 태아심박동 기록",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-05",
+  "vignette": "29세 경산부(1회 분만)가 임신 39주에 규칙적인 진통으로 입원하였다. 양막은 16시간 전에 터졌다. 분만 1기 활동기이며 자궁경부는 6 cm 열려 있다. 체온 38.3 °C, 혈압 116/72 mmHg, 맥박 108회/분이다. 자궁 압통은 뚜렷하지 않고 양수는 맑다. 경막외 진통은 하지 않았다. 입원 후 30분부터 기록한 태아심박동·자궁수축 기록은 그림과 같다.",
+  "question": "태아심박동 기록의 판독으로 가장 적절한 것은?",
+  "options": [
+   "범주 II — 반복되는 후기감속",
+   "범주 III — 사인곡선 양상",
+   "범주 II — 태아빈맥과 변동성 감속",
+   "범주 I — 정상 기저심박동과 가속",
+   "범주 III — 변이도 소실과 반복 후기감속"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 가속과 감속을 뺀 구간에서 약 165회/분으로 160회/분을 넘는 태아빈맥이다. 변이도는 진폭 6~10회/분으로 중등도이고, 190회/분까지 오르는 가속이 두 번 있으며, 35분 무렵 자궁수축과 함께 급격히 약 125회/분까지 떨어졌다 빠르게 회복하는 변동성 감속이 한 번 있다. 후기·지연 감속은 없다. 변이도와 가속이 안심 소견이지만 기저심박동이 정상 범위를 벗어났으므로 범주 I 이 아니라 범주 II 다. 산모 발열과 오래된 양막 파열은 태아빈맥의 원인(자궁내 감염)을 시사한다.\n- 원리: <b>왜 기저심박동을 먼저 정하나</b>: 범주는 기저심박동 · 변이도 · 가속 · 감속 네 요소를 차례로 읽어 정한다. 기저심박동은 10분 동안 가속·감속·현저한 변이 구간을 빼고 2분 이상 지속되는 평균값을 5회/분 단위로 읽는다. 이 기록처럼 가속이 길게 이어지면 그 높이를 기저로 착각하기 쉬운데, 1분 남짓 올라갔다가 돌아오는 구간은 가속이다.<br> <b>왜 태아빈맥이 생기나</b>: 태아 심박수는 교감·부교감 균형으로 정해지며, 산모 발열은 태아의 체온과 대사율을 올려 교감 신호를 강하게 만든다. 융모양막염 · 산모 탈수 · 베타 작용제 · 태아 빈혈 · 태아 빈맥성 부정맥도 원인이다. 그래서 160회/분 초과는 그 자체로 「정상 아님」이고, 원인을 찾아 교정하면서 감시를 이어 간다.<br> <b>범주 II 의 의미</b>: 범주 II 는 범주 I(정상)도 범주 III(비정상)도 아닌 모든 기록이다. 중등도 변이도나 가속이 있으면 그 순간 태아 산증 가능성은 낮지만, 원인(여기서는 산모 발열)을 평가하고 항생제·해열제 같은 교정 조치를 하며 재평가한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">요소</th><th style=\"width:38%\">이 기록(범주 II)</th><th>범주 I(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기저심박동</td><td><b>약 165회/분</b> — 160 초과</td><td>110~160회/분</td></tr> <tr><td>변이도</td><td>중등도(6~25회/분)</td><td>중등도</td></tr> <tr><td>감속</td><td>변동성 감속 1회</td><td>후기·변동성 감속 없음(조기감속은 허용)</td></tr> </tbody></table> 변이도·가속이 좋아도 기저심박동 하나가 범위를 벗어나면 범주 I 이 될 수 없다 — 네 요소 가운데 하나라도 어긋나면 범주 II 부터 생각한다.\n- 오답 이유:\n  - ① 반복 후기감속은 수축 정점 뒤에 서서히 시작해 수축이 끝난 뒤에야 회복하는 대칭 감속이 수축의 절반 이상에서 보일 때 정답이다.\n  - ② 사인곡선 양상은 분당 3~5주기의 매끈한 물결이 20분 이상 이어지고 가속이 없을 때 정답이며 태아 빈혈을 시사한다.\n  - ④ 범주 I 은 기저심박동이 110~160회/분 안에 있고 중등도 변이도에 후기·변동성 감속이 없을 때 정답이 된다.\n  - ⑤ 범주 III 는 변이도가 사라진(진폭 검출 안 됨) 상태에서 후기감속이나 변동성 감속이 반복되거나 서맥이 있을 때 정답이다.\n- 함정: 가속과 중등도 변이도를 보고 바로 범주 I 로 판정하는 것 — 기저심박동이 160회/분을 넘는지 먼저 재야 한다.\n- 학습목표: 분만 중 태아심박동에서 가속과 중등도 변이도가 있어도 기저심박동이 160회/분을 넘으면 범주 II 로 판정하고 범주 I 과 가른다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol. 2009;114(1):192-202\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1085 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 가속과 감속을 뺀 구간에서 약 165회/분으로 160회/분을 넘는 태아빈맥이다. 변이도는 진폭 6~10회/분으로 중등도이고, 190회/분까지 오르는 가속이 두 번 있으며, 35분 무렵 자궁수축과 함께 급격히 약 125회/분까지 떨어졌다 빠르게 회복하는 변동성 감속이 한 번 있다. 후기·지연 감속은 없다. 변이도와 가속이 안심 소견이지만 기저심박동이 정상 범위를 벗어났으므로 범주 I 이 아니라 범주 II 다. 산모 발열과 오래된 양막 파열은 태아빈맥의 원인(자궁내 감염)을 시사한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 기저심박동을 먼저 정하나</b>: 범주는 기저심박동 · 변이도 · 가속 · 감속 네 요소를 차례로 읽어 정한다. 기저심박동은 10분 동안 가속·감속·현저한 변이 구간을 빼고 2분 이상 지속되는 평균값을 5회/분 단위로 읽는다. 이 기록처럼 가속이 길게 이어지면 그 높이를 기저로 착각하기 쉬운데, 1분 남짓 올라갔다가 돌아오는 구간은 가속이다.<br> <b>왜 태아빈맥이 생기나</b>: 태아 심박수는 교감·부교감 균형으로 정해지며, 산모 발열은 태아의 체온과 대사율을 올려 교감 신호를 강하게 만든다. 융모양막염 · 산모 탈수 · 베타 작용제 · 태아 빈혈 · 태아 빈맥성 부정맥도 원인이다. 그래서 160회/분 초과는 그 자체로 「정상 아님」이고, 원인을 찾아 교정하면서 감시를 이어 간다.<br> <b>범주 II 의 의미</b>: 범주 II 는 범주 I(정상)도 범주 III(비정상)도 아닌 모든 기록이다. 중등도 변이도나 가속이 있으면 그 순간 태아 산증 가능성은 낮지만, 원인(여기서는 산모 발열)을 평가하고 항생제·해열제 같은 교정 조치를 하며 재평가한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">요소</th><th style=\"width:38%\">이 기록(범주 II)</th><th>범주 I(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기저심박동</td><td><b>약 165회/분</b> — 160 초과</td><td>110~160회/분</td></tr> <tr><td>변이도</td><td>중등도(6~25회/분)</td><td>중등도</td></tr> <tr><td>감속</td><td>변동성 감속 1회</td><td>후기·변동성 감속 없음(조기감속은 허용)</td></tr> </tbody></table> 변이도·가속이 좋아도 기저심박동 하나가 범위를 벗어나면 범주 I 이 될 수 없다 — 네 요소 가운데 하나라도 어긋나면 범주 II 부터 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 반복 후기감속은 수축 정점 뒤에 서서히 시작해 수축이 끝난 뒤에야 회복하는 대칭 감속이 수축의 절반 이상에서 보일 때 정답이다.\n② 사인곡선 양상은 분당 3~5주기의 매끈한 물결이 20분 이상 이어지고 가속이 없을 때 정답이며 태아 빈혈을 시사한다.\n④ 범주 I 은 기저심박동이 110~160회/분 안에 있고 중등도 변이도에 후기·변동성 감속이 없을 때 정답이 된다.\n⑤ 범주 III 는 변이도가 사라진(진폭 검출 안 됨) 상태에서 후기감속이나 변동성 감속이 반복되거나 서맥이 있을 때 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "가속과 중등도 변이도를 보고 바로 범주 I 로 판정하는 것 — 기저심박동이 160회/분을 넘는지 먼저 재야 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동에서 가속과 중등도 변이도가 있어도 기저심박동이 160회/분을 넘으면 범주 II 로 판정하고 범주 I 과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol. 2009;114(1):192-202 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1085 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "가속과 중등도 변이도가 있어도 기저심박동이 160회/분을 넘으면 태아빈맥으로 범주 II 다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "기저심박동이 약 165회/분으로 정상 범위(110~160)를 벗어났다",
+   "steps": 2,
+   "chain": [
+    "영상: 가속·감속을 뺀 기저심박동 약 165회/분, 변이도 중등도, 가속 2회",
+    "35분 무렵 수축과 함께 급격히 떨어졌다 회복하는 변동성 감속 → 기저 빈맥이 있어 범주 II"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저 태아심박동 약 165회/분",
+     "why": "범주 I 을 벗어나게 하는 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 수축과 함께 급격히 떨어졌다 회복하는 감속 1회",
+     "why": "변동성 감속 — 후기감속이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 중등도 변이도와 가속 2회",
+     "why": "태아 산증 가능성을 낮춰 범주 III 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "체온 38.3 °C",
+     "why": "태아빈맥의 원인(자궁내 감염)을 찾아 치료해야 한다",
+     "also": []
+    },
+    {
+     "item": "양막은 16시간 전에 터졌다",
+     "why": "융모양막염 위험 인자 — 항생제 판단에 쓰인다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "양수는 맑다",
+     "why": "태변이 없다는 정보지만 범주 판정에는 들어가지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "기저심박동이 약 165회/분으로 빠르고 변동성 감속이 한 번 있다. 변이도와 가속이 좋아도 범주 II 다.",
+   "switch": {
+    "choice": "D",
+    "condition": "기저심박동이 160회/분 이하이고 감속이 없으면 같은 변이도·가속으로 범주 I"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0551.png",
+   "caption": "분만 중 태아심박동(위)과 자궁활동(아래), 기록 시작 후 30~40분 구간, 굵은 세로선 = 1분 (PhysioNet CTU-UHB, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1085_30m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1085"
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0559",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "감염 — TNF 억제제 시작 전 인터페론감마 분비검사 양성",
+  "type": "감염 — TNF 억제제 시작 전 인터페론감마 분비검사 양성",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-05",
+  "vignette": "45세 남자가 크론병으로 인플릭시맙 치료를 시작하기 전에 왔다. 메살라진과 아자티오프린으로 조절되지 않아 생물학제제를 쓰기로 하였다. 기침·발열·체중 감소·식은땀은 없다. 결핵 치료 병력은 없고, 10년 전 결핵 환자와 같은 사무실에서 일한 적이 있다. 체온 36.6 °C 이고 폐 청진은 정상이다. 인터페론감마 분비검사는 양성이고 흉부 X선 검사는 정상이다. 인체면역결핍바이러스 항체 음성, 간기능 검사는 정상이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "리팜핀을 4개월 투여하기 시작하고 약 1개월 뒤 인플릭시맙을 시작한다",
+   "인플릭시맙을 바로 시작하고 6개월마다 인터페론감마 분비검사를 다시 한다",
+   "이소니아지드·리팜핀·에탐부톨·피라진아미드 4제 요법을 시작한다",
+   "객담 항산균 도말·배양 3회 결과가 나올 때까지 모든 치료를 미룬다",
+   "인플릭시맙 대신 경구 스테로이드를 장기 투여한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 인터페론감마 분비검사 양성에 증상이 없고 흉부 X선이 정상이므로 활동 결핵이 아니라 잠복결핵 감염이다. TNF 억제제는 육아종을 유지하는 TNF-α 를 막아 잠복결핵을 재활성화하므로, 시작 전에 잠복결핵 치료를 해야 한다. 리팜핀 4개월(또는 이소니아지드 9개월, 이소니아지드·리팜핀 3개월 등) 요법을 시작하고, 대개 적어도 3주~1개월 뒤 인플릭시맙을 시작한다. 활동 결핵이 아니므로 4제 요법은 필요 없고, 증상과 X선 이상이 없어 객담 검사로 치료를 미룰 이유도 없다.\n- 원리: <b>왜 TNF 를 막으면 결핵이 깨어나나</b>: 결핵균을 가두는 육아종은 대식세포와 T 세포가 TNF-α 와 인터페론감마를 주고받으며 유지된다. TNF-α 를 막으면 육아종이 무너지고 잠들어 있던 균이 증식해, 흔히 치료 시작 몇 달 안에 폐외·파종성 결핵으로 나타난다. 그래서 모든 TNF 억제제 시작 전에 인터페론감마 분비검사(또는 투베르쿨린 반응검사)와 흉부 X선으로 선별한다.<br> <b>잠복과 활동의 구분</b>: 면역검사 양성은 균에 노출되었다는 뜻일 뿐 병이 있다는 뜻이 아니다. 증상과 흉부 X선 이상이 없으면 잠복결핵이며, 이때는 균 수가 적어 한두 가지 약으로 충분하다. 증상이나 X선 이상이 있으면 객담 검사로 활동 결핵을 찾고, 활동 결핵이면 내성을 막기 위해 4제로 치료한다 — 잠복결핵 치료를 하면 안 된다.<br> <b>언제 생물학제제를 시작하나</b>: 잠복결핵 치료를 모두 끝낼 필요는 없고, 시작 후 일정 기간(대개 3주~1개월) 뒤 TNF 억제제를 시작하면서 잠복결핵 치료를 마저 끝낸다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">잠복결핵 치료(정답)</th><th>활동 결핵 4제 요법(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>면역검사 양성 + <b>증상·X선 이상 없음</b></td><td>증상, X선 이상, 객담 항산균 양성</td></tr> <tr><td>약</td><td>리팜핀 4개월, 이소니아지드 9개월 등</td><td>이소니아지드·리팜핀·에탐부톨·피라진아미드 2개월 후 2제 4개월</td></tr> <tr><td>생물학제제</td><td>약 1개월 뒤 시작 가능</td><td>결핵 치료가 상당히 진행될 때까지 미룬다</td></tr> </tbody></table> 면역검사 결과보다 「증상과 X선」이 잠복과 활동을 가르고, 그 구분이 약 수를 정한다.\n- 오답 이유:\n  - ② 인플릭시맙을 바로 시작하는 것은 인터페론감마 분비검사와 흉부 X선이 모두 음성이고 노출 위험이 없을 때 정답이 된다.\n  - ③ 4제 요법은 기침·발열·체중 감소가 있거나 흉부 X선에 공동·침윤이 있어 객담으로 활동 결핵이 확인될 때 정답이 된다.\n  - ④ 객담 검사 결과를 기다리는 것은 증상이 있거나 흉부 X선에 이상 음영이 있어 활동 결핵을 배제해야 할 때 정답이 된다.\n  - ⑤ 경구 스테로이드 장기 투여는 크론병 관해 유지 효과가 없고 결핵 재활성화 위험도 있어, 짧은 관해 유도로만 쓸 때 고려된다.\n- 함정: IGRA 양성이면 결핵 환자라고 생각해 4제 요법을 고르는 것 — 증상과 흉부 X선이 정상이면 잠복결핵이다.\n- 학습목표: TNF 억제제 시작 전 잠복결핵(IGRA 양성, 흉부 X선 정상, 증상 없음)을 확인하면 잠복결핵 치료를 먼저 시작하고 일정 기간 뒤 생물학제제를 시작하며, 활동 결핵 4제 요법과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 183: Tuberculosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "인터페론감마 분비검사 양성에 증상이 없고 흉부 X선이 정상이므로 활동 결핵이 아니라 잠복결핵 감염이다. TNF 억제제는 육아종을 유지하는 TNF-α 를 막아 잠복결핵을 재활성화하므로, 시작 전에 잠복결핵 치료를 해야 한다. 리팜핀 4개월(또는 이소니아지드 9개월, 이소니아지드·리팜핀 3개월 등) 요법을 시작하고, 대개 적어도 3주~1개월 뒤 인플릭시맙을 시작한다. 활동 결핵이 아니므로 4제 요법은 필요 없고, 증상과 X선 이상이 없어 객담 검사로 치료를 미룰 이유도 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 TNF 를 막으면 결핵이 깨어나나</b>: 결핵균을 가두는 육아종은 대식세포와 T 세포가 TNF-α 와 인터페론감마를 주고받으며 유지된다. TNF-α 를 막으면 육아종이 무너지고 잠들어 있던 균이 증식해, 흔히 치료 시작 몇 달 안에 폐외·파종성 결핵으로 나타난다. 그래서 모든 TNF 억제제 시작 전에 인터페론감마 분비검사(또는 투베르쿨린 반응검사)와 흉부 X선으로 선별한다.<br> <b>잠복과 활동의 구분</b>: 면역검사 양성은 균에 노출되었다는 뜻일 뿐 병이 있다는 뜻이 아니다. 증상과 흉부 X선 이상이 없으면 잠복결핵이며, 이때는 균 수가 적어 한두 가지 약으로 충분하다. 증상이나 X선 이상이 있으면 객담 검사로 활동 결핵을 찾고, 활동 결핵이면 내성을 막기 위해 4제로 치료한다 — 잠복결핵 치료를 하면 안 된다.<br> <b>언제 생물학제제를 시작하나</b>: 잠복결핵 치료를 모두 끝낼 필요는 없고, 시작 후 일정 기간(대개 3주~1개월) 뒤 TNF 억제제를 시작하면서 잠복결핵 치료를 마저 끝낸다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">잠복결핵 치료(정답)</th><th>활동 결핵 4제 요법(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>면역검사 양성 + <b>증상·X선 이상 없음</b></td><td>증상, X선 이상, 객담 항산균 양성</td></tr> <tr><td>약</td><td>리팜핀 4개월, 이소니아지드 9개월 등</td><td>이소니아지드·리팜핀·에탐부톨·피라진아미드 2개월 후 2제 4개월</td></tr> <tr><td>생물학제제</td><td>약 1개월 뒤 시작 가능</td><td>결핵 치료가 상당히 진행될 때까지 미룬다</td></tr> </tbody></table> 면역검사 결과보다 「증상과 X선」이 잠복과 활동을 가르고, 그 구분이 약 수를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 인플릭시맙을 바로 시작하는 것은 인터페론감마 분비검사와 흉부 X선이 모두 음성이고 노출 위험이 없을 때 정답이 된다.\n③ 4제 요법은 기침·발열·체중 감소가 있거나 흉부 X선에 공동·침윤이 있어 객담으로 활동 결핵이 확인될 때 정답이 된다.\n④ 객담 검사 결과를 기다리는 것은 증상이 있거나 흉부 X선에 이상 음영이 있어 활동 결핵을 배제해야 할 때 정답이 된다.\n⑤ 경구 스테로이드 장기 투여는 크론병 관해 유지 효과가 없고 결핵 재활성화 위험도 있어, 짧은 관해 유도로만 쓸 때 고려된다."
+   },
+   {
+    "k": "함정",
+    "v": "IGRA 양성이면 결핵 환자라고 생각해 4제 요법을 고르는 것 — 증상과 흉부 X선이 정상이면 잠복결핵이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "TNF 억제제 시작 전 잠복결핵(IGRA 양성, 흉부 X선 정상, 증상 없음)을 확인하면 잠복결핵 치료를 먼저 시작하고 일정 기간 뒤 생물학제제를 시작하며, 활동 결핵 4제 요법과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 183: Tuberculosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "TNF 억제제 시작 전 발견된 잠복결핵은 잠복결핵 치료를 먼저 시작하고 일정 기간 뒤 생물학제제를 시작한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "증상이 없고 흉부 X선이 정상이라 활동 결핵이 아니다 — 4제 요법이 필요 없다",
+   "steps": 3,
+   "chain": [
+    "인터페론감마 분비검사는 양성 → 결핵균 감염(노출) 확인",
+    "기침·발열·체중 감소 없음 + 흉부 X선 정상 → 활동 결핵이 아닌 잠복결핵",
+    "TNF 억제제는 재활성화 위험 → 잠복결핵 치료를 시작하고 약 1개월 뒤 인플릭시맙"
+   ],
+   "key": [
+    {
+     "item": "인터페론감마 분비검사는 양성",
+     "why": "결핵균 감염 확인",
+     "also": []
+    },
+    {
+     "item": "흉부 X선 검사는 정상",
+     "why": "활동 결핵이 아님",
+     "also": []
+    },
+    {
+     "item": "인플릭시맙 치료를 시작하기 전",
+     "why": "재활성화 위험이 큰 상황 — 치료가 필요한 이유",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "기침·발열·체중 감소·식은땀은 없다",
+     "why": "활동 결핵 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "간기능 검사는 정상",
+     "why": "잠복결핵 약을 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "10년 전 결핵 환자와 같은 사무실",
+     "why": "양성 결과의 설명 — 치료 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "인터페론감마 분비검사 양성에 증상과 X선 이상이 없어 잠복결핵이다. 인플릭시맙 전에 리팜핀 4개월을 시작하고 약 1개월 뒤 생물학제제를 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "기침·체중 감소가 있고 흉부 X선에 공동이 있어 객담 항산균이 양성이면 활동 결핵 4제 요법"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0558",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "신경 — 설사 뒤 걷지 못하게 된 젊은 남성의 상행성 마비",
+  "type": "신경 — 설사 뒤 걷지 못하게 된 젊은 남성의 상행성 마비",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-05",
+  "vignette": "A 34-year-old man comes to the emergency department because of progressive weakness for 5 days. It began with tingling in his feet and then weakness of both legs that has ascended to his hips; since this morning he cannot walk without assistance. Two weeks ago, he had a self-limited episode of diarrhea. Temperature is 36.9°C, pulse is 92/min, and blood pressure is 128/76 mm Hg. Strength is 3/5 in the hip flexors and 4/5 in the hands. Deep tendon reflexes are absent throughout. Sensation to vibration is mildly decreased in the toes. Forced vital capacity is 2.8 L (65% of predicted), and he can swallow without difficulty. Cerebrospinal fluid shows 2 cells/μL and protein 120 mg/dL.",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Intravenous immune globulin",
+   "Intravenous methylprednisolone",
+   "Pyridostigmine",
+   "Plasma exchange followed by intravenous immune globulin",
+   "Supportive care and observation only"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Ascending symmetric weakness with areflexia after a diarrheal illness, with an elevated CSF protein and normal cell count (albuminocytologic dissociation), is Guillain-Barré syndrome. He can no longer walk unaided, which is the usual threshold for disease-modifying treatment. Intravenous immune globulin (2 g/kg over 5 days) or plasma exchange shortens the time to recovery when started within 2 weeks of onset; IVIG is easier to give. Glucocorticoids do not help, and giving plasma exchange followed by IVIG adds no benefit over either alone.\n- 원리: <b>What goes wrong</b>: In Guillain-Barré syndrome, an infection (often Campylobacter jejuni) induces antibodies that cross-react with gangliosides on peripheral nerve myelin or axons (molecular mimicry). Complement and macrophages strip myelin from nerve roots and proximal nerves, so conduction slows or blocks. Roots are affected first, which explains early areflexia and the rise in CSF protein without inflammatory cells.<br> <b>Why IVIG or plasma exchange</b>: Plasma exchange removes the pathogenic antibodies and complement; IVIG is thought to neutralize antibodies, block Fc receptors, and inhibit complement. Both, started within about 2 weeks, speed recovery to equal degrees. Because the inflammation is antibody- and complement-driven rather than T-cell steroid-responsive, glucocorticoids given alone have not improved outcome in trials.<br> <b>Why monitor breathing</b>: The phrenic nerves and bulbar nerves can be involved. Forced vital capacity below about 20 mL/kg, rapid progression, bulbar weakness, or autonomic instability predict the need for mechanical ventilation and admission to an intensive care unit.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">IVIG (answer)</th><th>IV methylprednisolone (closest distractor)</th></tr></thead><tbody> <tr><td>Guillain-Barré syndrome</td><td><b>Effective</b> if started within 2 weeks</td><td>No benefit alone</td></tr> <tr><td>Chronic inflammatory demyelinating polyneuropathy</td><td>Effective</td><td><b>Effective</b> — first-line option</td></tr> <tr><td>Course</td><td>Nadir within 4 weeks</td><td>CIDP progresses for more than 8 weeks</td></tr> </tbody></table> The time course separates the two diseases, and the disease decides whether steroids work.\n- 오답 이유:\n  - (B) Intravenous methylprednisolone would be correct for chronic inflammatory demyelinating polyneuropathy, whose weakness keeps progressing for more than 8 weeks.\n  - (C) Pyridostigmine would be correct for myasthenia gravis, with fatigable ptosis and diplopia, normal reflexes, and no sensory symptoms.\n  - (D) Sequential plasma exchange followed by IVIG would be correct only if trials had shown added benefit; they did not, so either one alone is preferred.\n  - (E) Supportive care alone would be correct for a mildly affected patient who can still walk unaided and is improving more than 2 weeks after onset.\n- 함정: Treating an inflammatory neuropathy with steroids — they help CIDP but not Guillain-Barré syndrome.\n- 학습목표: 걷지 못하는 길랭-바레 증후군에서 정맥 면역글로불린(또는 혈장교환)을 고르고 스테로이드가 효과 없음을 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 458: Guillain-Barré Syndrome and Other Immune-Mediated Neuropathies",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Ascending symmetric weakness with areflexia after a diarrheal illness, with an elevated CSF protein and normal cell count (albuminocytologic dissociation), is Guillain-Barré syndrome. He can no longer walk unaided, which is the usual threshold for disease-modifying treatment. Intravenous immune globulin (2 g/kg over 5 days) or plasma exchange shortens the time to recovery when started within 2 weeks of onset; IVIG is easier to give. Glucocorticoids do not help, and giving plasma exchange followed by IVIG adds no benefit over either alone."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What goes wrong</b>: In Guillain-Barré syndrome, an infection (often Campylobacter jejuni) induces antibodies that cross-react with gangliosides on peripheral nerve myelin or axons (molecular mimicry). Complement and macrophages strip myelin from nerve roots and proximal nerves, so conduction slows or blocks. Roots are affected first, which explains early areflexia and the rise in CSF protein without inflammatory cells.<br> <b>Why IVIG or plasma exchange</b>: Plasma exchange removes the pathogenic antibodies and complement; IVIG is thought to neutralize antibodies, block Fc receptors, and inhibit complement. Both, started within about 2 weeks, speed recovery to equal degrees. Because the inflammation is antibody- and complement-driven rather than T-cell steroid-responsive, glucocorticoids given alone have not improved outcome in trials.<br> <b>Why monitor breathing</b>: The phrenic nerves and bulbar nerves can be involved. Forced vital capacity below about 20 mL/kg, rapid progression, bulbar weakness, or autonomic instability predict the need for mechanical ventilation and admission to an intensive care unit."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">IVIG (answer)</th><th>IV methylprednisolone (closest distractor)</th></tr></thead><tbody> <tr><td>Guillain-Barré syndrome</td><td><b>Effective</b> if started within 2 weeks</td><td>No benefit alone</td></tr> <tr><td>Chronic inflammatory demyelinating polyneuropathy</td><td>Effective</td><td><b>Effective</b> — first-line option</td></tr> <tr><td>Course</td><td>Nadir within 4 weeks</td><td>CIDP progresses for more than 8 weeks</td></tr> </tbody></table> The time course separates the two diseases, and the disease decides whether steroids work."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Intravenous methylprednisolone would be correct for chronic inflammatory demyelinating polyneuropathy, whose weakness keeps progressing for more than 8 weeks.\n(C) Pyridostigmine would be correct for myasthenia gravis, with fatigable ptosis and diplopia, normal reflexes, and no sensory symptoms.\n(D) Sequential plasma exchange followed by IVIG would be correct only if trials had shown added benefit; they did not, so either one alone is preferred.\n(E) Supportive care alone would be correct for a mildly affected patient who can still walk unaided and is improving more than 2 weeks after onset."
+   },
+   {
+    "k": "함정",
+    "v": "Treating an inflammatory neuropathy with steroids — they help CIDP but not Guillain-Barré syndrome."
+   },
+   {
+    "k": "학습목표",
+    "v": "걷지 못하는 길랭-바레 증후군에서 정맥 면역글로불린(또는 혈장교환)을 고르고 스테로이드가 효과 없음을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 458: Guillain-Barré Syndrome and Other Immune-Mediated Neuropathies"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Guillain-Barré syndrome in a patient who cannot walk unaided within 2 weeks of onset is treated with IVIG or plasma exchange, not steroids",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Glucocorticoids are ineffective in Guillain-Barré syndrome; they treat CIDP, which progresses for more than 8 weeks",
+   "steps": 2,
+   "chain": [
+    "Ascending weakness with areflexia after diarrhea and CSF protein 120 mg/dL with 2 cells/μL -> Guillain-Barré syndrome",
+    "cannot walk without assistance at day 5 -> start IVIG"
+   ],
+   "key": [
+    {
+     "item": "Deep tendon reflexes are absent throughout",
+     "why": "Peripheral demyelination of roots",
+     "also": []
+    },
+    {
+     "item": "2 cells/μL and protein 120 mg/dL",
+     "why": "Albuminocytologic dissociation",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "he can swallow without difficulty",
+     "why": "No bulbar weakness now — lowers the immediate airway risk",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "he cannot walk without assistance",
+     "why": "Threshold for disease-modifying therapy",
+     "also": []
+    },
+    {
+     "item": "Forced vital capacity is 2.8 L (65% of predicted)",
+     "why": "Not yet requiring ventilation but must be monitored",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "self-limited episode of diarrhea",
+     "why": "Typical trigger (Campylobacter) — does not change treatment",
+     "also": []
+    }
+   ],
+   "summary": "Ascending areflexic weakness after diarrhea with albuminocytologic dissociation is Guillain-Barré syndrome. He cannot walk, so IVIG is given; steroids do not help.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the same weakness had progressed slowly for more than 8 weeks (CIDP), glucocorticoids would be appropriate"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0557",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "소화기 — 경증 담석 췌장염이 회복된 뒤의 담낭절제 시기",
+  "type": "소화기 — 경증 담석 췌장염이 회복된 뒤의 담낭절제 시기",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-05",
+  "vignette": "52세 여자가 하루 전부터 시작된 심한 상복부 통증과 구토로 왔다. 통증은 등으로 뻗친다. 술은 마시지 않는다. 체온 37.4 °C, 혈압 124/76 mmHg, 맥박 96회/분이다. 혈청 리파제는 정상 상한의 8배, 총빌리루빈 1.0 mg/dL, 알칼리성 인산분해효소 90 IU/L, 크레아티닌 0.8 mg/dL 이다. 복부 초음파에서 담낭 안에 여러 개의 담석이 있고 총담관 지름은 5 mm 이다. 수액과 진통제로 치료하자 사흘째 통증이 사라졌고 일반식을 잘 먹으며 장기 부전 소견은 없다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "내시경 역행 담췌관조영술(ERCP)",
+   "우르소데옥시콜산을 먹으며 경과를 본다",
+   "예방적 항생제를 주고 퇴원한다",
+   "같은 입원 중 복강경 담낭절제술",
+   "퇴원 후 6~8주 뒤 담낭절제술"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 술을 마시지 않는 사람에서 리파제가 정상 상한의 3배를 넘고 담석이 있으므로 담석 췌장염이다. 장기 부전과 국소 합병증 없이 사흘 만에 회복되어 경증이다. 담낭을 남겨 두면 몇 주 안에 췌장염·담관염·담낭염이 재발할 위험이 높아, 경증이면 퇴원 전 같은 입원 중에 복강경 담낭절제술을 한다. 빌리루빈과 알칼리성 인산분해효소가 정상이고 총담관이 넓지 않아 남은 총담관 결석·담관염 근거가 없으므로 ERCP 는 필요 없다.\n- 원리: <b>왜 담석이 췌장염을 일으키나</b>: 작은 담석이 담낭에서 빠져나와 총담관을 내려가다 바터 팽대부에 잠시 끼면 췌관 출구가 막히고 담즙이 췌관으로 역류하거나 췌관 압력이 올라 선세포 안에서 효소가 활성화된다. 대부분의 결석은 곧 십이지장으로 빠져나가므로 증상이 가라앉는다 — 그러나 담낭에는 같은 결석이 남아 있다.<br> <b>왜 같은 입원 중인가</b>: 담낭절제를 퇴원 후로 미루면 기다리는 몇 주 동안 담석 관련 사건(췌장염 재발·담관염·담낭염)이 상당수에서 생기고 재입원이 늘어난다. 경증 담석 췌장염에서 같은 입원 중 수술한 무작위 연구는 재발을 크게 줄이면서 수술 합병증을 늘리지 않았다.<br> <b>언제 미루나</b>: 괴사성 췌장염이나 액체 저류가 있는 중증은 염증이 가라앉고 저류가 정리될 때까지(대개 6주 이상) 담낭절제를 미룬다. ERCP 는 담관염이 동반되거나 총담관 결석이 남아 담관 폐쇄가 지속될 때 하며, 단순 담석 췌장염에 일상적으로 하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">같은 입원 중 담낭절제(정답)</th><th>6~8주 뒤 담낭절제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>경증</b> 담석 췌장염, 회복 후</td><td>괴사·액체 저류가 있는 중등증·중증</td></tr> <tr><td>기다리는 동안</td><td>재발 위험이 없다</td><td>담석 사건이 재발할 수 있으나 염증이 가라앉을 시간을 번다</td></tr> <tr><td>수술 난이도</td><td>경증이라 염증이 적어 가능</td><td>급성기 수술은 괴사 조직 때문에 감염·합병증 위험</td></tr> </tbody></table> 중증도가 시기를 정한다 — 경증이면 지금, 국소 합병증이 있으면 가라앉은 뒤에.\n- 오답 이유:\n  - ① ERCP 는 발열·황달·우상복부 통증의 담관염이 동반되거나 빌리루빈이 계속 오르고 총담관이 넓어 결석이 남아 있을 때 정답이 된다.\n  - ② 우르소데옥시콜산은 수술이 매우 위험한 환자의 작은 콜레스테롤 담석에서 일부 고려할 수 있으나, 재발 위험이 큰 담석 췌장염 뒤의 표준 치료가 아니다.\n  - ③ 예방적 항생제는 감염된 괴사가 의심될 때만 쓰며, 감염 근거가 없는 경증 췌장염에서는 정답이 아니다.\n  - ⑤ 퇴원 후 6~8주 뒤 담낭절제는 괴사성 췌장염이나 췌장 주위 액체 저류가 있는 중등증·중증일 때 염증이 가라앉기를 기다리는 방법으로 정답이 된다.\n- 함정: 췌장염이 가라앉았으니 몇 주 뒤에 수술하자는 것 — 경증이면 기다리는 동안의 재발이 더 위험하다.\n- 학습목표: 경증 담석 췌장염이 회복되면 재발을 막기 위해 같은 입원 중 담낭절제술을 하고, 담관 폐쇄·담관염이 없으면 ERCP 가 필요 없음을 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 359: Acute and Chronic Pancreatitis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "술을 마시지 않는 사람에서 리파제가 정상 상한의 3배를 넘고 담석이 있으므로 담석 췌장염이다. 장기 부전과 국소 합병증 없이 사흘 만에 회복되어 경증이다. 담낭을 남겨 두면 몇 주 안에 췌장염·담관염·담낭염이 재발할 위험이 높아, 경증이면 퇴원 전 같은 입원 중에 복강경 담낭절제술을 한다. 빌리루빈과 알칼리성 인산분해효소가 정상이고 총담관이 넓지 않아 남은 총담관 결석·담관염 근거가 없으므로 ERCP 는 필요 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 담석이 췌장염을 일으키나</b>: 작은 담석이 담낭에서 빠져나와 총담관을 내려가다 바터 팽대부에 잠시 끼면 췌관 출구가 막히고 담즙이 췌관으로 역류하거나 췌관 압력이 올라 선세포 안에서 효소가 활성화된다. 대부분의 결석은 곧 십이지장으로 빠져나가므로 증상이 가라앉는다 — 그러나 담낭에는 같은 결석이 남아 있다.<br> <b>왜 같은 입원 중인가</b>: 담낭절제를 퇴원 후로 미루면 기다리는 몇 주 동안 담석 관련 사건(췌장염 재발·담관염·담낭염)이 상당수에서 생기고 재입원이 늘어난다. 경증 담석 췌장염에서 같은 입원 중 수술한 무작위 연구는 재발을 크게 줄이면서 수술 합병증을 늘리지 않았다.<br> <b>언제 미루나</b>: 괴사성 췌장염이나 액체 저류가 있는 중증은 염증이 가라앉고 저류가 정리될 때까지(대개 6주 이상) 담낭절제를 미룬다. ERCP 는 담관염이 동반되거나 총담관 결석이 남아 담관 폐쇄가 지속될 때 하며, 단순 담석 췌장염에 일상적으로 하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">같은 입원 중 담낭절제(정답)</th><th>6~8주 뒤 담낭절제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>경증</b> 담석 췌장염, 회복 후</td><td>괴사·액체 저류가 있는 중등증·중증</td></tr> <tr><td>기다리는 동안</td><td>재발 위험이 없다</td><td>담석 사건이 재발할 수 있으나 염증이 가라앉을 시간을 번다</td></tr> <tr><td>수술 난이도</td><td>경증이라 염증이 적어 가능</td><td>급성기 수술은 괴사 조직 때문에 감염·합병증 위험</td></tr> </tbody></table> 중증도가 시기를 정한다 — 경증이면 지금, 국소 합병증이 있으면 가라앉은 뒤에."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① ERCP 는 발열·황달·우상복부 통증의 담관염이 동반되거나 빌리루빈이 계속 오르고 총담관이 넓어 결석이 남아 있을 때 정답이 된다.\n② 우르소데옥시콜산은 수술이 매우 위험한 환자의 작은 콜레스테롤 담석에서 일부 고려할 수 있으나, 재발 위험이 큰 담석 췌장염 뒤의 표준 치료가 아니다.\n③ 예방적 항생제는 감염된 괴사가 의심될 때만 쓰며, 감염 근거가 없는 경증 췌장염에서는 정답이 아니다.\n⑤ 퇴원 후 6~8주 뒤 담낭절제는 괴사성 췌장염이나 췌장 주위 액체 저류가 있는 중등증·중증일 때 염증이 가라앉기를 기다리는 방법으로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "췌장염이 가라앉았으니 몇 주 뒤에 수술하자는 것 — 경증이면 기다리는 동안의 재발이 더 위험하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경증 담석 췌장염이 회복되면 재발을 막기 위해 같은 입원 중 담낭절제술을 하고, 담관 폐쇄·담관염이 없으면 ERCP 가 필요 없음을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 359: Acute and Chronic Pancreatitis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "경증 담석 췌장염은 회복 뒤 같은 입원 중 담낭절제술을 하고, 담관 폐쇄 근거가 없으면 ERCP 를 하지 않는다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "장기 부전·국소 합병증이 없는 경증이라 수술을 미룰 이유가 없다",
+   "steps": 2,
+   "chain": [
+    "리파제 상한 8배 + 담석 + 술 마시지 않음 → 담석 췌장염, 사흘 만에 회복·장기 부전 없음 → 경증",
+    "빌리루빈·알칼리성 인산분해효소 정상, 총담관 5 mm → ERCP 불필요, 같은 입원 중 담낭절제"
+   ],
+   "key": [
+    {
+     "item": "혈청 리파제는 정상 상한의 8배",
+     "why": "급성 췌장염 진단",
+     "also": []
+    },
+    {
+     "item": "담낭 안에 여러 개의 담석",
+     "why": "원인이 담석",
+     "also": []
+    },
+    {
+     "item": "장기 부전 소견은 없다",
+     "why": "경증 — 같은 입원 중 수술",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "총빌리루빈 1.0 mg/dL",
+     "why": "총담관 결석 지속·담관염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "총담관 지름은 5 mm",
+     "why": "담관 폐쇄 근거가 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "체온 37.4 °C",
+     "why": "미열은 췌장염 자체로 흔하다 — 담관염을 뜻하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "경증 담석 췌장염이 회복되었다. 재발을 막으려 같은 입원 중 복강경 담낭절제술을 하고, 담관 폐쇄 근거가 없으니 ERCP 는 하지 않는다.",
+   "switch": {
+    "choice": "E",
+    "condition": "CT 에서 췌장 괴사나 췌장 주위 액체 저류가 있으면 염증이 가라앉을 때까지 담낭절제를 미룬다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0556",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "호흡기 — 이뇨제를 쓰는 심부전 환자의 흉막삼출 해석",
+  "type": "호흡기 — 이뇨제를 쓰는 심부전 환자의 흉막삼출 해석",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-05",
+  "vignette": "A 74-year-old man with heart failure with reduced ejection fraction comes to the physician because of worsening shortness of breath for 2 weeks. Three days ago, his furosemide dose was doubled, and his dyspnea has improved. He has no fever, cough, chest pain, or weight loss. Temperature is 36.8°C, pulse is 84/min, and blood pressure is 118/72 mm Hg. There are decreased breath sounds and dullness at both lung bases, more on the right. Chest x-ray shows cardiomegaly and bilateral pleural effusions. Thoracentesis on the right yields straw-colored fluid. Results: pleural fluid protein 3.7 g/dL (serum 6.1 g/dL); pleural fluid LDH 150 U/L (serum 210 U/L; upper limit of normal 220 U/L); pleural fluid albumin 1.6 g/dL (serum 3.3 g/dL); pleural fluid nucleated cells 600/μL, 80% lymphocytes; glucose 110 mg/dL; Gram stain negative.",
+  "question": "Which of the following is the most likely cause of the effusion?",
+  "options": [
+   "Malignant pleural effusion",
+   "Tuberculous pleuritis",
+   "Pulmonary embolism",
+   "Heart failure",
+   "Parapneumonic effusion"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: By Light's criteria the fluid is an exudate only because the pleural-to-serum protein ratio is 0.61 (above 0.5); the LDH ratio is 0.71, but the pleural LDH (150 U/L) is below two-thirds of the upper limit of normal. Diuresis removes water from the pleural space faster than protein and concentrates the fluid. In a patient with heart failure on recently increased diuretics, a serum-to-pleural albumin gradient greater than 1.2 g/dL (here 1.7 g/dL) indicates a transudate. Bilateral effusions, cardiomegaly, improvement with diuretics, and bland fluid all point to heart failure.\n- 원리: <b>Why Light's criteria misfire here</b>: Light's criteria were designed to be sensitive for exudates — an effusion is called an exudate if any one of three criteria is met (protein ratio above 0.5, LDH ratio above 0.6, or pleural LDH above two-thirds of the upper limit of normal). The price is that about a quarter of heart-failure effusions are misclassified as exudates, especially after diuresis, which removes water from the pleural space and concentrates protein and LDH.<br> <b>Why the albumin gradient helps</b>: In a transudate, the pleural fluid is an ultrafiltrate formed by increased hydrostatic pressure, so albumin stays largely in the plasma and the serum-minus-pleural difference is large. When it exceeds 1.2 g/dL, the effusion behaves like a transudate even if Light's criteria are borderline. A high pleural fluid NT-proBNP gives the same answer.<br> <b>What this spares the patient</b>: Recognizing a pseudoexudate avoids an unnecessary search for cancer or tuberculosis (pleural biopsy, CT) in a patient whose effusion will resolve with treatment of heart failure.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Heart failure after diuresis (answer)</th><th>Malignant effusion (closest distractor)</th></tr></thead><tbody> <tr><td>Light's criteria</td><td>Borderline exudate (protein ratio just over 0.5)</td><td>Clear exudate, often high LDH</td></tr> <tr><td>Serum - pleural albumin</td><td><b>Above 1.2 g/dL</b></td><td>Below 1.2 g/dL</td></tr> <tr><td>Setting</td><td>Bilateral, cardiomegaly, improves with diuretics</td><td>Often unilateral, weight loss, positive cytology</td></tr> </tbody></table> When only one Light criterion is barely met in a patient on diuretics, check the albumin gradient before chasing an exudate.\n- 오답 이유:\n  - (A) Malignant pleural effusion would be correct with weight loss, a unilateral large effusion, a serum-pleural albumin gradient below 1.2 g/dL, and positive cytology.\n  - (B) Tuberculous pleuritis would be correct for a unilateral lymphocytic exudate with high adenosine deaminase, fever, and night sweats in a patient with exposure risk.\n  - (C) Pulmonary embolism would be correct with sudden pleuritic chest pain, tachycardia, hypoxemia, and a small, often bloody exudative effusion.\n  - (E) Parapneumonic effusion would be correct with fever, cough, a pulmonary infiltrate, and neutrophil-predominant fluid, often with low glucose and pH.\n- 함정: Stopping at Light's criteria — after diuresis a heart-failure effusion can meet one exudate criterion and lead to an unnecessary cancer or TB work-up.\n- 학습목표: 이뇨제를 쓰는 심부전 환자의 흉막액이 Light 기준으로 삼출액처럼 보여도 혈청-흉막액 알부민 차이가 1.2 g/dL 를 넘으면 여출액으로 해석한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 305: Disorders of the Pleura",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "By Light's criteria the fluid is an exudate only because the pleural-to-serum protein ratio is 0.61 (above 0.5); the LDH ratio is 0.71, but the pleural LDH (150 U/L) is below two-thirds of the upper limit of normal. Diuresis removes water from the pleural space faster than protein and concentrates the fluid. In a patient with heart failure on recently increased diuretics, a serum-to-pleural albumin gradient greater than 1.2 g/dL (here 1.7 g/dL) indicates a transudate. Bilateral effusions, cardiomegaly, improvement with diuretics, and bland fluid all point to heart failure."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why Light's criteria misfire here</b>: Light's criteria were designed to be sensitive for exudates — an effusion is called an exudate if any one of three criteria is met (protein ratio above 0.5, LDH ratio above 0.6, or pleural LDH above two-thirds of the upper limit of normal). The price is that about a quarter of heart-failure effusions are misclassified as exudates, especially after diuresis, which removes water from the pleural space and concentrates protein and LDH.<br> <b>Why the albumin gradient helps</b>: In a transudate, the pleural fluid is an ultrafiltrate formed by increased hydrostatic pressure, so albumin stays largely in the plasma and the serum-minus-pleural difference is large. When it exceeds 1.2 g/dL, the effusion behaves like a transudate even if Light's criteria are borderline. A high pleural fluid NT-proBNP gives the same answer.<br> <b>What this spares the patient</b>: Recognizing a pseudoexudate avoids an unnecessary search for cancer or tuberculosis (pleural biopsy, CT) in a patient whose effusion will resolve with treatment of heart failure."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Heart failure after diuresis (answer)</th><th>Malignant effusion (closest distractor)</th></tr></thead><tbody> <tr><td>Light's criteria</td><td>Borderline exudate (protein ratio just over 0.5)</td><td>Clear exudate, often high LDH</td></tr> <tr><td>Serum - pleural albumin</td><td><b>Above 1.2 g/dL</b></td><td>Below 1.2 g/dL</td></tr> <tr><td>Setting</td><td>Bilateral, cardiomegaly, improves with diuretics</td><td>Often unilateral, weight loss, positive cytology</td></tr> </tbody></table> When only one Light criterion is barely met in a patient on diuretics, check the albumin gradient before chasing an exudate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Malignant pleural effusion would be correct with weight loss, a unilateral large effusion, a serum-pleural albumin gradient below 1.2 g/dL, and positive cytology.\n(B) Tuberculous pleuritis would be correct for a unilateral lymphocytic exudate with high adenosine deaminase, fever, and night sweats in a patient with exposure risk.\n(C) Pulmonary embolism would be correct with sudden pleuritic chest pain, tachycardia, hypoxemia, and a small, often bloody exudative effusion.\n(E) Parapneumonic effusion would be correct with fever, cough, a pulmonary infiltrate, and neutrophil-predominant fluid, often with low glucose and pH."
+   },
+   {
+    "k": "함정",
+    "v": "Stopping at Light's criteria — after diuresis a heart-failure effusion can meet one exudate criterion and lead to an unnecessary cancer or TB work-up."
+   },
+   {
+    "k": "학습목표",
+    "v": "이뇨제를 쓰는 심부전 환자의 흉막액이 Light 기준으로 삼출액처럼 보여도 혈청-흉막액 알부민 차이가 1.2 g/dL 를 넘으면 여출액으로 해석한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 305: Disorders of the Pleura"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "A borderline exudate by Light's criteria in a patient on recently increased diuretics is a transudate when the serum-pleural albumin gradient exceeds 1.2 g/dL",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "The albumin gradient is 1.7 g/dL, typical of a transudate concentrated by diuresis",
+   "steps": 3,
+   "chain": [
+    "Protein ratio 0.61 meets one Light criterion, but pleural LDH 150 U/L is below two-thirds of the upper limit",
+    "furosemide dose was doubled three days ago -> diuresis can concentrate a transudate",
+    "Serum minus pleural albumin 3.3 - 1.6 = 1.7 g/dL (> 1.2) -> transudate from heart failure"
+   ],
+   "key": [
+    {
+     "item": "furosemide dose was doubled",
+     "why": "Explains the pseudoexudate",
+     "also": []
+    },
+    {
+     "item": "pleural fluid albumin 1.6 g/dL (serum 3.3 g/dL)",
+     "why": "Gradient 1.7 g/dL — transudate",
+     "also": []
+    },
+    {
+     "item": "pleural fluid protein 3.7 g/dL (serum 6.1 g/dL)",
+     "why": "The one criterion that looks like an exudate",
+     "also": []
+    },
+    {
+     "item": "bilateral pleural effusions",
+     "why": "Typical of heart failure",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no fever, cough, chest pain, or weight loss",
+     "why": "Lowers the likelihood of infection, embolism, or cancer",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "80% lymphocytes",
+     "why": "Transudates are often lymphocytic — not specific for tuberculosis or cancer",
+     "also": []
+    }
+   ],
+   "summary": "Light's criteria are only barely met after diuresis, and the serum-pleural albumin gradient is 1.7 g/dL. The effusion is a transudate from heart failure.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the albumin gradient were below 1.2 g/dL with weight loss and a unilateral effusion, malignancy would need to be excluded with cytology"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0555",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·피부·외과계·안과·순환기·호흡기·소화기·신경·감염)",
+  "subtopic": "순환기 — 새로 발견된 비판막성 심방세동의 뇌졸중 예방",
+  "type": "순환기 — 새로 발견된 비판막성 심방세동의 뇌졸중 예방",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-05",
+  "vignette": "72세 남자가 2주 전부터 가끔 가슴이 두근거려 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 뇌졸중·출혈 병력은 없고 술은 마시지 않는다. 혈압 132/78 mmHg, 맥박은 불규칙하게 88회/분이다. 심잡음은 없다. 심전도에서 P파 없이 RR 간격이 불규칙한 좁은 QRS 리듬이 보인다. 심초음파에서 좌심실 박출률은 58 % 이고 판막 이상은 없다. 혈청 크레아티닌 0.9 mg/dL, 혈색소 14.1 g/dL, 혈소판 23만/μL 이다.",
+  "question": "뇌졸중 예방을 위한 약물로 가장 적절한 것은?",
+  "options": [
+   "와파린",
+   "아스피린",
+   "아스피린과 클로피도그렐",
+   "항혈전제를 쓰지 않는다",
+   "아픽사반"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 심전도는 심방세동이다. 판막 이상이 없는 비판막성 심방세동이고, CHA2DS2-VASc 는 나이 65~74세 1점, 고혈압 1점, 당뇨병 1점으로 3점이다. 남자 2점 이상이면 경구 항응고가 권고된다. 기계판막이나 중등도 이상 승모판 협착이 없으므로 와파린보다 뇌출혈이 적고 감시가 필요 없는 직접 경구항응고제(아픽사반)를 먼저 고른다. 신기능과 혈소판이 정상이라 용량 조절 이유도 없다.\n- 원리: <b>왜 심방세동에서 혈전이 생기나</b>: 심방이 수축하지 못하고 떨기만 하면 좌심방이, 특히 좌심방이 혈액이 고여 천천히 흐른다. 고인 혈액에서는 응고 인자가 활성화되어 적색 혈전이 생기고, 떨어져 나가면 뇌동맥을 막는다. 이 혈전은 응고 계통이 만든 것이라 혈소판을 막는 아스피린으로는 거의 예방되지 않고, 응고 인자를 막아야 한다.<br> <b>CHA2DS2-VASc</b>: 심부전·고혈압·당뇨병·혈관질환·나이 65~74세·여성은 1점, 75세 이상과 뇌졸중·일과성 허혈발작 병력은 2점이다. 남자 2점 이상(여자 3점 이상)이면 항응고를 권고하고, 남자 1점이면 고려한다. 점수는 위험을 나누는 도구일 뿐 성별 점수만으로 항응고를 시작하지는 않는다.<br> <b>왜 직접 경구항응고제인가</b>: 아픽사반·리바록사반·에독사반(Xa 억제)과 다비가트란(트롬빈 억제)은 와파린과 뇌졸중 예방 효과가 같거나 낫고 두개내출혈이 절반 정도다. 다만 기계판막과 중등도 이상 승모판 협착에서는 효과가 입증되지 않아 와파린을 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">아픽사반(정답)</th><th>와파린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>비판막성</b> 심방세동</td><td>기계판막, 중등도 이상 승모판 협착</td></tr> <tr><td>두개내출혈</td><td>와파린의 약 절반</td><td>더 많다</td></tr> <tr><td>감시</td><td>INR 감시 불필요, 신기능에 맞춰 용량</td><td>INR 2~3 유지, 음식·약물 상호작용 많음</td></tr> </tbody></table> 「항응고를 할지」는 점수가, 「무엇으로 할지」는 판막 상태와 신기능이 정한다.\n- 오답 이유:\n  - ① 와파린은 기계판막을 달았거나 중등도 이상 승모판 협착이 있는 심방세동, 또는 크레아티닌 청소율이 매우 낮아 직접 경구항응고제를 쓸 수 없을 때 정답이 된다.\n  - ② 아스피린은 심방세동의 뇌졸중 예방에 효과가 거의 없어, 관상동맥 질환 같은 다른 적응이 있을 때만 쓰며 이 상황의 정답은 아니다.\n  - ③ 아스피린과 클로피도그렐 병용은 최근 관상동맥 스텐트를 넣은 사람에게 항응고와 함께 단기간 쓸 때 정답이 될 수 있다.\n  - ④ 항혈전제를 쓰지 않는 것은 CHA2DS2-VASc 가 남자 0점(여자 1점)인 저위험 심방세동일 때 정답이 된다.\n- 함정: 「노인은 출혈이 걱정되니 아스피린이 안전하다」 — 아스피린은 출혈은 줄지 않으면서 뇌졸중 예방 효과가 거의 없다.\n- 학습목표: 비판막성 심방세동에서 CHA2DS2-VASc 점수로 항응고 적응을 정하고, 기계판막·중등도 이상 승모판 협착이 없으면 와파린보다 직접 경구항응고제를 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 258: Atrial Fibrillation",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도는 심방세동이다. 판막 이상이 없는 비판막성 심방세동이고, CHA2DS2-VASc 는 나이 65~74세 1점, 고혈압 1점, 당뇨병 1점으로 3점이다. 남자 2점 이상이면 경구 항응고가 권고된다. 기계판막이나 중등도 이상 승모판 협착이 없으므로 와파린보다 뇌출혈이 적고 감시가 필요 없는 직접 경구항응고제(아픽사반)를 먼저 고른다. 신기능과 혈소판이 정상이라 용량 조절 이유도 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 심방세동에서 혈전이 생기나</b>: 심방이 수축하지 못하고 떨기만 하면 좌심방이, 특히 좌심방이 혈액이 고여 천천히 흐른다. 고인 혈액에서는 응고 인자가 활성화되어 적색 혈전이 생기고, 떨어져 나가면 뇌동맥을 막는다. 이 혈전은 응고 계통이 만든 것이라 혈소판을 막는 아스피린으로는 거의 예방되지 않고, 응고 인자를 막아야 한다.<br> <b>CHA2DS2-VASc</b>: 심부전·고혈압·당뇨병·혈관질환·나이 65~74세·여성은 1점, 75세 이상과 뇌졸중·일과성 허혈발작 병력은 2점이다. 남자 2점 이상(여자 3점 이상)이면 항응고를 권고하고, 남자 1점이면 고려한다. 점수는 위험을 나누는 도구일 뿐 성별 점수만으로 항응고를 시작하지는 않는다.<br> <b>왜 직접 경구항응고제인가</b>: 아픽사반·리바록사반·에독사반(Xa 억제)과 다비가트란(트롬빈 억제)은 와파린과 뇌졸중 예방 효과가 같거나 낫고 두개내출혈이 절반 정도다. 다만 기계판막과 중등도 이상 승모판 협착에서는 효과가 입증되지 않아 와파린을 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">아픽사반(정답)</th><th>와파린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>비판막성</b> 심방세동</td><td>기계판막, 중등도 이상 승모판 협착</td></tr> <tr><td>두개내출혈</td><td>와파린의 약 절반</td><td>더 많다</td></tr> <tr><td>감시</td><td>INR 감시 불필요, 신기능에 맞춰 용량</td><td>INR 2~3 유지, 음식·약물 상호작용 많음</td></tr> </tbody></table> 「항응고를 할지」는 점수가, 「무엇으로 할지」는 판막 상태와 신기능이 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 와파린은 기계판막을 달았거나 중등도 이상 승모판 협착이 있는 심방세동, 또는 크레아티닌 청소율이 매우 낮아 직접 경구항응고제를 쓸 수 없을 때 정답이 된다.\n② 아스피린은 심방세동의 뇌졸중 예방에 효과가 거의 없어, 관상동맥 질환 같은 다른 적응이 있을 때만 쓰며 이 상황의 정답은 아니다.\n③ 아스피린과 클로피도그렐 병용은 최근 관상동맥 스텐트를 넣은 사람에게 항응고와 함께 단기간 쓸 때 정답이 될 수 있다.\n④ 항혈전제를 쓰지 않는 것은 CHA2DS2-VASc 가 남자 0점(여자 1점)인 저위험 심방세동일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「노인은 출혈이 걱정되니 아스피린이 안전하다」 — 아스피린은 출혈은 줄지 않으면서 뇌졸중 예방 효과가 거의 없다."
+   },
+   {
+    "k": "학습목표",
+    "v": "비판막성 심방세동에서 CHA2DS2-VASc 점수로 항응고 적응을 정하고, 기계판막·중등도 이상 승모판 협착이 없으면 와파린보다 직접 경구항응고제를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 258: Atrial Fibrillation"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CHA2DS2-VASc 3점의 비판막성 심방세동은 직접 경구항응고제로 항응고한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "판막 이상이 없어 와파린을 꼭 써야 할 이유가 없다",
+   "steps": 2,
+   "chain": [
+    "P파 없이 불규칙한 RR → 심방세동, 나이·고혈압·당뇨병으로 CHA2DS2-VASc 3점 → 항응고 적응",
+    "판막 이상 없음(비판막성), 신기능 정상 → 직접 경구항응고제"
+   ],
+   "key": [
+    {
+     "item": "P파 없이 RR 간격이 불규칙한",
+     "why": "심방세동 진단",
+     "also": []
+    },
+    {
+     "item": "고혈압과 제2형 당뇨병",
+     "why": "CHA2DS2-VASc 점수에 들어간다",
+     "also": []
+    },
+    {
+     "item": "72세 남자",
+     "why": "65~74세 1점",
+     "also": []
+    },
+    {
+     "item": "판막 이상은 없다",
+     "why": "비판막성 — 와파린을 꼭 쓸 이유가 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 박출률은 58 %",
+     "why": "심부전 점수는 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈청 크레아티닌 0.9 mg/dL",
+     "why": "용량 감량이 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "CHA2DS2-VASc 3점의 비판막성 심방세동이다. 판막 이상과 신기능 저하가 없으니 아픽사반으로 항응고한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "기계판막을 달았거나 중등도 이상 승모판 협착이 있으면 와파린"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0550",
   "exam": "imaging",
   "style": "usmle_style",
