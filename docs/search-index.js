@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4416,
+  "total": 4427,
   "byType": {
    "kmle": 1728,
    "usmle": 240,
    "paper": 896,
+   "imaging": 560,
    "concept": 140,
-   "imaging": 549,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,21 +38,21 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 111,
    "Hematology": 105,
    "Laboratory Medicine": 92,
-   "산부인과": 75,
-   "순환기": 61,
-   "호흡기": 36,
-   "소화기": 34,
+   "산부인과": 76,
+   "순환기": 64,
+   "호흡기": 37,
+   "소화기": 35,
    "소아과": 30,
    "Physiology": 26,
+   "감염": 26,
+   "신경": 26,
    "혈액·종양": 26,
-   "감염": 25,
    "내분비": 25,
    "병리·조직학": 25,
-   "신경": 25,
    "신장·비뇨기": 25,
    "응급·중환자": 25,
-   "피부과": 22,
-   "외과": 21,
+   "피부과": 23,
+   "외과": 22,
    "Pharmacology": 20,
    "예방의학·역학": 20,
    "Biochemistry": 19,
@@ -62,7 +62,7 @@ window.MEDKOS_INDEX = {
    "약리": 15,
    "근골격·류마티스": 14,
    "정신과": 14,
-   "안과": 11,
+   "안과": 12,
    "영상의학": 10,
    "이비인후과": 10,
    "Allergy": 4,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3110,
+   "high": 3121,
    "medium": 1253,
    "low": 53
   },
@@ -977,6 +977,201 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-05_paper-2026-0896_a_metabolomic_signature_of_weight_loss_and_its_associations_.md",
    "snippet": "Title A metabolomic signature of weight loss and its associations with BMI linked diseases: A post hoc analysis of two intervention trials and a mendelian randomisation study Authors Sunderland Nicholas, Smith Madeleine L, McConnachie Alex,",
    "text": "Cardiology scraped pubmed PubMed / PLoS medicine Title A metabolomic signature of weight loss and its associations with BMI linked diseases: A post hoc analysis of two intervention trials and a mendelian randomisation study Authors Sunderland Nicholas, Smith Madeleine L, McConnachie Alex, Welsh Paul, Taylor Roy, Lean Michael E J, Rogers Chris A, Blazeby Jane M, et al. Journal / DOI PLoS medicine · DOI: 10.1371/journal.pmed.1005290 · PMID: 42981445 https://pubmed.ncbi.nlm.nih.gov/42981445/ Abstract BACKGROUND: Obesity is a major risk factor for a broad spectrum of diseases, yet the molecular pathways underlying this risk remains poorly understood. Individual analytical approaches interventional trials, observational data, and genetic methods are each susceptible to distinct sources of bias. We aimed to identify a common metabolic perturbation signature of adiposity by triangulating evidence across multiple sources of body mass index (BMI) variation, and to characterise associations between this signature and contrasting adiposity linked disease outcomes. METHODS AND FINDINGS: We integrated mass spectrometry and nuclear magnetic resonance metabolomic profiling from two weight loss interventions a structured diet programme (DiRECT trial, ISRCTN03267836) and metabolic and bariatric surgery (By Band Sleeve trial, ISRCTN00786323) with mendelian randomisation (MR) estimates of the effect of lifetime BMI exposure on metabolite levels, in order to identify a consistent BMI associated metabolite signature across sources with distinct error structures. Weight loss associated metabolites were then instrumented using genetic variants and their associations with heart failure (HF), osteoarthritis, and kidney cancer estimated in a two sample MR framework, with instruments grouped into clusters based on genetic similarity to aid biological interpretation. 242 metabolites were consistently altered across weight loss interventions, predominantly comprising lipids, lipoproteins, and amino acids. The majority of these showed concordant associations with lifetime BMI in MR, consistent with regulation by adiposity. Differential components of this signature were associated with disease specific outcomes. For HF, low density lipoprotein (LDL) measures were strongly associated with increased risk, consistent with ischaemic aetiology enrichment, whilst high density lipoprotein (HDL) cholesterol enrichment traits were protective, and markers of dysfunctional HDL remodelling were associated with increased risk. For osteoarthritis, lipoprotein associations were again associated with disease risk but in the opposite direction to that seen with HF; additional signals were observed in glycine metabolism pathways. For kidney cancer, the adiposity metabolite signature translated poorly into disease associations, with only 5 methyluridine and ursodeoxycholate associations identified. The main limitations of our study include the potential for residual horizontal pleiotropy with metabolite instruments despite multiple sensitivity analyses and the rank normalised scale of metabolite measures, which limits direct physiological interpretability. CONCLUSIONS: Triangulating evidence across dietary intervention, metabolic and bariatric surgery, and MR of lifetime BMI identified a robust metabolic signature of adiposity. The association of components of this signature with obesity related outcomes was disease specific, supporting the notion that not all adiposity associated metabolic perturbations are uniformly relevant across the spectrum of obesity related diseases. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0561",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 운동 전 검사를 받은 증상 없는 남성의 느린 맥",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0561.md",
+   "snippet": "A 39 year old man comes to the physician for a preparticipation evaluation before joining an amateur marathon club. He runs 50 km per week and has no dizziness, syncope, chest pain, or exercise intolerance. He takes no medications and does ",
+   "text": "순환기 심전도 판독 — 운동 전 검사를 받은 증상 없는 남성의 느린 맥 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66 A 39 year old man comes to the physician for a preparticipation evaluation before joining an amateur marathon club. He runs 50 km per week and has no dizziness, syncope, chest pain, or exercise intolerance. He takes no medications and does not use stimulants. Pulse is 50/min and regular, and blood pressure is 118/70 mm Hg. Cardiac examination shows no murmurs. Serum potassium and thyroid stimulating hormone concentrations are within normal limits. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Sinus bradycardia B. Junctional escape rhythm C. Second degree atrioventricular block, Mobitz type I D. First degree atrioventricular block E. Sinoatrial exit block"
+  },
+  {
+   "id": "imaging-2026-0560",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 백내장 수술 전 검사에서 넓은 QRS 가 발견된 무증상 노인",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0560.md",
+   "snippet": "79세 남자가 다음 주 백내장 수술을 앞두고 수술 전 검사를 받았다. 어지럼·실신·흉통·호흡곤란은 없고 하루 한 시간씩 산책을 한다. 고혈압으로 암로디핀을 먹고 있다. 혈압 132/78 mmHg, 맥박 84회/분이고 규칙적이다. 심잡음은 없고 폐음은 깨끗하다. 혈청 칼륨 4.3 mEq/L 이다. 이전 심전도는 없다. 12유도 심전도는 그림과 같다. 처치로 가장 적절한 것은? A. 수술 중 이소프로테레놀을 지속 주입한다 B. 추",
+   "text": "순환기 심전도 처치 — 백내장 수술 전 검사에서 넓은 QRS 가 발견된 무증상 노인 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202701Z_일일심전도_2026-11-06_2units_2q_8deb5a66 79세 남자가 다음 주 백내장 수술을 앞두고 수술 전 검사를 받았다. 어지럼·실신·흉통·호흡곤란은 없고 하루 한 시간씩 산책을 한다. 고혈압으로 암로디핀을 먹고 있다. 혈압 132/78 mmHg, 맥박 84회/분이고 규칙적이다. 심잡음은 없고 폐음은 깨끗하다. 혈청 칼륨 4.3 mEq/L 이다. 이전 심전도는 없다. 12유도 심전도는 그림과 같다. 처치로 가장 적절한 것은? A. 수술 중 이소프로테레놀을 지속 주입한다 B. 추가 처치 없이 예정대로 수술한다 C. 영구 심박동기를 삽입한 뒤 수술한다 D. 임시 경정맥 심박조율을 하고 수술한다 E. 관상동맥조영술을 먼저 한다"
+  },
+  {
+   "id": "imaging-2026-0559",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — TNF 억제제 시작 전 인터페론감마 분비검사 양성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0559.md",
+   "snippet": "45세 남자가 크론병으로 인플릭시맙 치료를 시작하기 전에 왔다. 메살라진과 아자티오프린으로 조절되지 않아 생물학제제를 쓰기로 하였다. 기침·발열·체중 감소·식은땀은 없다. 결핵 치료 병력은 없고, 10년 전 결핵 환자와 같은 사무실에서 일한 적이 있다. 체온 36.6 °C 이고 폐 청진은 정상이다. 인터페론감마 분비검사는 양성이고 흉부 X선 검사는 정상이다. 인체면역결핍바이러스 항체 음성, 간기능 검사는 정상이다. 다음 처치로",
+   "text": "감염 감염 — TNF 억제제 시작 전 인터페론감마 분비검사 양성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a 45세 남자가 크론병으로 인플릭시맙 치료를 시작하기 전에 왔다. 메살라진과 아자티오프린으로 조절되지 않아 생물학제제를 쓰기로 하였다. 기침·발열·체중 감소·식은땀은 없다. 결핵 치료 병력은 없고, 10년 전 결핵 환자와 같은 사무실에서 일한 적이 있다. 체온 36.6 °C 이고 폐 청진은 정상이다. 인터페론감마 분비검사는 양성이고 흉부 X선 검사는 정상이다. 인체면역결핍바이러스 항체 음성, 간기능 검사는 정상이다. 다음 처치로 가장 적절한 것은? A. 리팜핀을 4개월 투여하기 시작하고 약 1개월 뒤 인플릭시맙을 시작한다 B. 인플릭시맙을 바로 시작하고 6개월마다 인터페론감마 분비검사를 다시 한다 C. 이소니아지드·리팜핀·에탐부톨·피라진아미드 4제 요법을 시작한다 D. 객담 항산균 도말·배양 3회 결과가 나올 때까지 모든 치료를 미룬다 E. 인플릭시맙 대신 경구 스테로이드를 장기 투여한다"
+  },
+  {
+   "id": "imaging-2026-0558",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 설사 뒤 걷지 못하게 된 젊은 남성의 상행성 마비",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0558.md",
+   "snippet": "A 34 year old man comes to the emergency department because of progressive weakness for 5 days. It began with tingling in his feet and then weakness of both legs that has ascended to his hips; since this morning he cannot walk without assis",
+   "text": "신경 신경 — 설사 뒤 걷지 못하게 된 젊은 남성의 상행성 마비 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a A 34 year old man comes to the emergency department because of progressive weakness for 5 days. It began with tingling in his feet and then weakness of both legs that has ascended to his hips; since this morning he cannot walk without assistance. Two weeks ago, he had a self limited episode of diarrhea. Temperature is 36.9°C, pulse is 92/min, and blood pressure is 128/76 mm Hg. Strength is 3/5 in the hip flexors and 4/5 in the hands. Deep tendon reflexes are absent throughout. Sensation to vibration is mildly decreased in the toes. Forced vital capacity is 2.8 L (65% of predicted), and he can swallow without difficulty. Cerebrospinal fluid shows 2 cells/μL and protein 120 mg/dL. Which of the following is the most appropriate treatment? A. Intravenous immune globulin B. Intravenous methylprednisolone C. Pyridostigmine D. Plasma exchange followed by intravenous immune globulin E. Supportive care and observation only"
+  },
+  {
+   "id": "imaging-2026-0557",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 경증 담석 췌장염이 회복된 뒤의 담낭절제 시기",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0557.md",
+   "snippet": "52세 여자가 하루 전부터 시작된 심한 상복부 통증과 구토로 왔다. 통증은 등으로 뻗친다. 술은 마시지 않는다. 체온 37.4 °C, 혈압 124/76 mmHg, 맥박 96회/분이다. 혈청 리파제는 정상 상한의 8배, 총빌리루빈 1.0 mg/dL, 알칼리성 인산분해효소 90 IU/L, 크레아티닌 0.8 mg/dL 이다. 복부 초음파에서 담낭 안에 여러 개의 담석이 있고 총담관 지름은 5 mm 이다. 수액과 진통제로 치료하자 사",
+   "text": "소화기 소화기 — 경증 담석 췌장염이 회복된 뒤의 담낭절제 시기 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a 52세 여자가 하루 전부터 시작된 심한 상복부 통증과 구토로 왔다. 통증은 등으로 뻗친다. 술은 마시지 않는다. 체온 37.4 °C, 혈압 124/76 mmHg, 맥박 96회/분이다. 혈청 리파제는 정상 상한의 8배, 총빌리루빈 1.0 mg/dL, 알칼리성 인산분해효소 90 IU/L, 크레아티닌 0.8 mg/dL 이다. 복부 초음파에서 담낭 안에 여러 개의 담석이 있고 총담관 지름은 5 mm 이다. 수액과 진통제로 치료하자 사흘째 통증이 사라졌고 일반식을 잘 먹으며 장기 부전 소견은 없다. 다음 처치로 가장 적절한 것은? A. 내시경 역행 담췌관조영술(ERCP) B. 우르소데옥시콜산을 먹으며 경과를 본다 C. 예방적 항생제를 주고 퇴원한다 D. 같은 입원 중 복강경 담낭절제술 E. 퇴원 후 6~8주 뒤 담낭절제술"
+  },
+  {
+   "id": "imaging-2026-0556",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 이뇨제를 쓰는 심부전 환자의 흉막삼출 해석",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0556.md",
+   "snippet": "A 74 year old man with heart failure with reduced ejection fraction comes to the physician because of worsening shortness of breath for 2 weeks. Three days ago, his furosemide dose was doubled, and his dyspnea has improved. He has no fever,",
+   "text": "호흡기 호흡기 — 이뇨제를 쓰는 심부전 환자의 흉막삼출 해석 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a A 74 year old man with heart failure with reduced ejection fraction comes to the physician because of worsening shortness of breath for 2 weeks. Three days ago, his furosemide dose was doubled, and his dyspnea has improved. He has no fever, cough, chest pain, or weight loss. Temperature is 36.8°C, pulse is 84/min, and blood pressure is 118/72 mm Hg. There are decreased breath sounds and dullness at both lung bases, more on the right. Chest x ray shows cardiomegaly and bilateral pleural effusions. Thoracentesis on the right yields straw colored fluid. Results: pleural fluid protein 3.7 g/dL (serum 6.1 g/dL); pleural fluid LDH 150 U/L (serum 210 U/L; upper limit of normal 220 U/L); pleural fluid albumin 1.6 g/dL (serum 3.3 g/dL); pleural fluid nucleated cells 600/μL, 80% lymphocytes; glucose 110 mg/dL; Gram stain negative. Which of the following is the most likely cause of the effusion? A. Malignant pleural effusion B. Tuberculous pleuritis C. Pulmonary embolism D. Heart failure E. Parapneumonic effusion"
+  },
+  {
+   "id": "imaging-2026-0555",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 새로 발견된 비판막성 심방세동의 뇌졸중 예방",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0555.md",
+   "snippet": "72세 남자가 2주 전부터 가끔 가슴이 두근거려 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 뇌졸중·출혈 병력은 없고 술은 마시지 않는다. 혈압 132/78 mmHg, 맥박은 불규칙하게 88회/분이다. 심잡음은 없다. 심전도에서 P파 없이 RR 간격이 불규칙한 좁은 QRS 리듬이 보인다. 심초음파에서 좌심실 박출률은 58 % 이고 판막 이상은 없다. 혈청 크레아티닌 0.9 mg/dL, 혈색소 14.1 g/dL, 혈소판 ",
+   "text": "순환기 순환기 — 새로 발견된 비판막성 심방세동의 뇌졸중 예방 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a 72세 남자가 2주 전부터 가끔 가슴이 두근거려 왔다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 뇌졸중·출혈 병력은 없고 술은 마시지 않는다. 혈압 132/78 mmHg, 맥박은 불규칙하게 88회/분이다. 심잡음은 없다. 심전도에서 P파 없이 RR 간격이 불규칙한 좁은 QRS 리듬이 보인다. 심초음파에서 좌심실 박출률은 58 % 이고 판막 이상은 없다. 혈청 크레아티닌 0.9 mg/dL, 혈색소 14.1 g/dL, 혈소판 23만/μL 이다. 뇌졸중 예방을 위한 약물로 가장 적절한 것은? A. 와파린 B. 아스피린 C. 아스피린과 클로피도그렐 D. 항혈전제를 쓰지 않는다 E. 아픽사반"
+  },
+  {
+   "id": "imaging-2026-0554",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 오래된 당뇨병 환자의 정기 안저 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "fundus"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0554.md",
+   "snippet": "A patient with type 2 diabetes mellitus for 18 years comes to the ophthalmologist for a routine dilated eye examination. The patient has no visual symptoms. Current medications are metformin and empagliflozin. Blood pressure is 136/82 mm Hg",
+   "text": "안과 안과 — 오래된 당뇨병 환자의 정기 안저 검사 opendata usmle_style fundus 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a A patient with type 2 diabetes mellitus for 18 years comes to the ophthalmologist for a routine dilated eye examination. The patient has no visual symptoms. Current medications are metformin and empagliflozin. Blood pressure is 136/82 mm Hg. Visual acuity is 20/25 in both eyes. Intraocular pressure is normal, and there is no relative afferent pupillary defect. A color fundus photograph of the right eye is shown. Similar findings are present in the left eye. Which of the following is the most likely diagnosis? A. Central retinal artery occlusion B. Nonproliferative diabetic retinopathy C. Proliferative diabetic retinopathy D. Central retinal vein occlusion E. Hypertensive retinopathy"
+  },
+  {
+   "id": "imaging-2026-0553",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 만성 신장병이 있는 노인 여성의 작은 신장 고형 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0553.md",
+   "snippet": "73세 여자가 건강검진 복부 초음파에서 왼쪽 신장 종괴가 발견되어 왔다. 옆구리 통증과 육안 혈뇨는 없다. 고혈압과 제2형 당뇨병으로 약을 먹고 있으며 혼자 일상생활을 하고 매일 한 시간씩 걷는다. 혈압 134/80 mmHg, 체질량지수 36 kg/m² 이다. 혈청 크레아티닌 1.1 mg/dL, 추정 사구체여과율 50 mL/min/1.73m² 이고 요검사에서 적혈구는 없다. 조영 증강 복부 CT 동맥기 영상은 그림과 같다. 종",
+   "text": "외과 외과계 — 만성 신장병이 있는 노인 여성의 작은 신장 고형 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a 73세 여자가 건강검진 복부 초음파에서 왼쪽 신장 종괴가 발견되어 왔다. 옆구리 통증과 육안 혈뇨는 없다. 고혈압과 제2형 당뇨병으로 약을 먹고 있으며 혼자 일상생활을 하고 매일 한 시간씩 걷는다. 혈압 134/80 mmHg, 체질량지수 36 kg/m² 이다. 혈청 크레아티닌 1.1 mg/dL, 추정 사구체여과율 50 mL/min/1.73m² 이고 요검사에서 적혈구는 없다. 조영 증강 복부 CT 동맥기 영상은 그림과 같다. 종괴는 지름 3.9 cm 이고 종괴 안에 지방 감쇠는 없으며, 신정맥 침범·림프절 비대는 없고 흉부 CT 는 정상이다. 오른쪽 신장은 정상이다. 치료로 가장 적절한 것은? A. 체외 방사선치료 B. 1년 뒤 CT 재촬영만 한다 C. 신장부분절제술 D. 근치적 신장절제술 E. 수니티닙 투여"
+  },
+  {
+   "id": "imaging-2026-0552",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 커지는 발바닥 색소 반점의 피부확대경 소견",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0552.md",
+   "snippet": "An 80 year old woman comes to the physician because of a brown patch on the sole of her left foot that her daughter noticed a year ago and that seems to have become larger. It does not itch, bleed, or hurt, and she does not recall any injur",
+   "text": "피부과 피부 — 커지는 발바닥 색소 반점의 피부확대경 소견 opendata usmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a An 80 year old woman comes to the physician because of a brown patch on the sole of her left foot that her daughter noticed a year ago and that seems to have become larger. It does not itch, bleed, or hurt, and she does not recall any injury. She has no personal or family history of skin cancer. Examination shows a flat, irregularly pigmented brown patch measuring 14 x 9 mm on the plantar surface of the foot, with uneven borders and no palpable nodule. There is no inguinal or popliteal lymphadenopathy. A dermoscopic photograph of the lesion is shown. Which of the following is the most appropriate next step in management? A. Wide local excision with 2 cm margins and sentinel lymph node biopsy B. Excisional biopsy with narrow (1 3 mm) margins C. Clinical and dermoscopic follow up in 6 months D. Cryotherapy with liquid nitrogen E. Topical antifungal therapy for 4 weeks"
+  },
+  {
+   "id": "imaging-2026-0551",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 양막이 터진 지 오래된 산모의 분만 중 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a",
+   "confidence": "high",
+   "date": "2026-11-05",
+   "path": "content/imaging/2026/imaging-2026-0551.md",
+   "snippet": "29세 경산부(1회 분만)가 임신 39주에 규칙적인 진통으로 입원하였다. 양막은 16시간 전에 터졌다. 분만 1기 활동기이며 자궁경부는 6 cm 열려 있다. 체온 38.3 °C, 혈압 116/72 mmHg, 맥박 108회/분이다. 자궁 압통은 뚜렷하지 않고 양수는 맑다. 경막외 진통은 하지 않았다. 입원 후 30분부터 기록한 태아심박동·자궁수축 기록은 그림과 같다. 태아심박동 기록의 판독으로 가장 적절한 것은? A. 범주 II",
+   "text": "산부인과 산과 — 양막이 터진 지 오래된 산모의 분만 중 태아심박동 기록 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261105T202540Z_일일영상_2026-11-06_9units_9q_e112ea3a 29세 경산부(1회 분만)가 임신 39주에 규칙적인 진통으로 입원하였다. 양막은 16시간 전에 터졌다. 분만 1기 활동기이며 자궁경부는 6 cm 열려 있다. 체온 38.3 °C, 혈압 116/72 mmHg, 맥박 108회/분이다. 자궁 압통은 뚜렷하지 않고 양수는 맑다. 경막외 진통은 하지 않았다. 입원 후 30분부터 기록한 태아심박동·자궁수축 기록은 그림과 같다. 태아심박동 기록의 판독으로 가장 적절한 것은? A. 범주 II — 반복되는 후기감속 B. 범주 III — 사인곡선 양상 C. 범주 II — 태아빈맥과 변동성 감속 D. 범주 I — 정상 기저심박동과 가속 E. 범주 III — 변이도 소실과 반복 후기감속"
   },
   {
    "id": "cn.ortho.scfe.adolescent-limp-diagnosis",
