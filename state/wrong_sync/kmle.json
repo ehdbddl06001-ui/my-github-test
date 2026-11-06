@@ -1280,8 +1280,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1761": {
+   "id": "kmle-2026-1761",
+   "exam": "kmle",
+   "subject": "Ophthalmology",
+   "step": "",
+   "type": "Blisters on the Forehead and the Tip of the Nose with a Mildly Red Eye in an Older Woman",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 처치는?",
+   "chosen": 1,
+   "chosenText": "항생제 안연고 도포 후 경과 관찰",
+   "answer": 2,
+   "answerText": "경구 항바이러스제 투여와 세극등 검사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "코끝까지 이어지는 삼차신경 첫째 가지 대상포진은 눈 침범 위험이 높고, 결막 충혈은 손전등 진찰로 정리할 수 없다. 발진 72시간 안이므로 경구 항바이러스제를 바로 시작하고 세극등 검사로 눈 침범을 확인한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:20:39.289Z"
+ "updated": "2026-11-06T05:22:57.690Z"
 }
