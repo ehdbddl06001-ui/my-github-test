@@ -1,12 +1,12 @@
 {
- "started": "2026-11-05T10:35:23+09:00",
+ "started": "2026-11-06T10:45:27+09:00",
  "built": [
-  "정형외과",
   "순환기내과",
   "안과"
  ],
  "skipped": [
   "응급의학과",
+  "정형외과",
   "피부과",
   "내분비내과",
   "외과",
@@ -29,18 +29,11 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "정형외과": [],
   "순환기내과": [],
   "안과": []
  },
  "notes": {
-  "정형외과": [
-   "마지막 쪽 내용이 적다(7%)"
-  ],
-  "순환기내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 8쪽 왼쪽 단 아래가 비어 있다(빈 공간 37%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 8쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)"
-  ],
+  "순환기내과": [],
   "안과": []
  },
  "concept_errors": [
@@ -55,42 +48,8 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "정형외과": {
-   "tried": 207,
-   "diagram_after_section": {
-    "u-cn-ortho-scaphoid-fracture-occult-imaging": 12,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 0,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
-    "u-cn-ortho-ulnar-neuropathy-localization": 11,
-    "u-cn-ortho-ulnar-neuropathy-localization#shrink": 0.88,
-    "u-cn-ortho-ulnar-neuropathy-localization#pad": 0,
-    "u-cn-ortho-ulnar-neuropathy-localization#col": false,
-    "u-cn-ortho-odontoid-fracture-diagnosis#figscale:f1": 0.85,
-    "u-cn-ortho-odontoid-fracture-diagnosis": 7,
-    "u-cn-ortho-odontoid-fracture-diagnosis#shrink": 1.0,
-    "u-cn-ortho-odontoid-fracture-diagnosis#pad": 0,
-    "u-cn-ortho-odontoid-fracture-diagnosis#col": false,
-    "u-cn-ortho-achilles-rupture-thompson-test": 14,
-    "u-cn-ortho-achilles-rupture-thompson-test#shrink": 1.0,
-    "u-cn-ortho-achilles-rupture-thompson-test#pad": 0,
-    "u-cn-ortho-achilles-rupture-thompson-test#col": true,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication": 14,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication#shrink": 1.0,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication#pad": 28,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication#col": false,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis": 11,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis#shrink": 1.0,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis#pad": 0,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis#col": false,
-    "u-cn-ortho-scfe-in-situ-fixation": 17,
-    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
-    "u-cn-ortho-scfe-in-situ-fixation#pad": 0,
-    "u-cn-ortho-scfe-in-situ-fixation#col": true
-   }
-  },
   "순환기내과": {
-   "tried": 374,
+   "tried": 295,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -104,14 +63,10 @@
     "u-cn-cardio-palpitations-arrhythmia-evaluation#shrink": 1.0,
     "u-cn-cardio-palpitations-arrhythmia-evaluation#pad": 42,
     "u-cn-cardio-palpitations-arrhythmia-evaluation#col": false,
-    "u-cn-cardio-nyha-class-functional-assessment": 16,
-    "u-cn-cardio-nyha-class-functional-assessment#shrink": 1.0,
-    "u-cn-cardio-nyha-class-functional-assessment#pad": 0,
-    "u-cn-cardio-nyha-class-functional-assessment#col": false,
-    "u-cn-cardio-stroke-volume-preload-afterload-contractility": 13,
-    "u-cn-cardio-stroke-volume-preload-afterload-contractility#shrink": 1.0,
-    "u-cn-cardio-stroke-volume-preload-afterload-contractility#pad": 0,
-    "u-cn-cardio-stroke-volume-preload-afterload-contractility#col": true,
+    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis": 12,
+    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis#shrink": 1.0,
+    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis#pad": 14,
+    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis#col": false,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi": 11,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#shrink": 1.0,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#pad": 0,
@@ -157,42 +112,34 @@
   }
  },
  "result": "ok",
- "finished": "2026-11-05T11:05:15+09:00",
+ "finished": "2026-11-06T11:22:13+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "정형외과": {
-    "file": "MedKOS_학습서_정형외과.pdf",
-    "status": "uploaded",
-    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "kept_id": true,
-    "md5": "2935f60431634b2e819ee4e5db035f98",
-    "archive": "MedKOS_학습서_정형외과_v18_2026-11-05.pdf"
-   },
    "순환기내과": {
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "db20bc48a5e9c3090aacea914cd417d6",
-    "archive": "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf"
+    "md5": "648a6afc8d7f0e2074b86e048b975c0f",
+    "archive": "MedKOS_학습서_순환기내과_v22_2026-11-06.pdf"
    },
    "안과": {
     "file": "MedKOS_학습서_안과.pdf",
     "status": "uploaded",
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
     "kept_id": true,
-    "md5": "23a9f7973d1fbfb833703099116f556d",
-    "archive": "MedKOS_학습서_안과_v14_2026-11-05.pdf"
+    "md5": "0b9e0cadfe9387d40f77aa6dcbe5483c",
+    "archive": "MedKOS_학습서_안과_v15_2026-11-06.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "e24e79fc9c010f581c4fdf0c8cdae2a7"
+    "md5": "fae0c3fd78883fce4ee8a8596f2182a4"
    }
   },
-  "at": "2026-11-05T11:05:15+09:00"
+  "at": "2026-11-06T11:22:13+09:00"
  }
 }

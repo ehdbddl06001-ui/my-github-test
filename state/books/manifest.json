@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "cb8ac3f1c32841450a9f",
-   "version": 21,
-   "date": "2026-11-05",
+   "hash": "5083e66723847451262d",
+   "version": 22,
+   "date": "2026-11-06",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 36,
+   "pages": 38,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -50,84 +50,90 @@
      "concept_hash": "b19d1af9e9503e49",
      "concept_version": 1
     },
+    "cn.cardio.jugular-venous-pulse.waveform-diagnosis": {
+     "title": "경정맥 파형 — a파·v파·y 하강이 원인을 가른다",
+     "page": 12,
+     "concept_hash": "3365da2068c59196",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 12,
+     "page": 14,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.complete-rbbb.ecg-recognition": {
      "title": "완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S",
-     "page": 13,
+     "page": 15,
      "concept_hash": "61e5dd306a69c419",
      "concept_version": 2
     },
     "cn.cardio.complete-lbbb.discordant-st-not-stemi": {
      "title": "완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화",
-     "page": 15,
+     "page": 17,
      "concept_hash": "3385d3dbeda59cfb",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 16,
+     "page": 18,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-     "page": 19,
+     "page": 21,
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 20,
+     "page": 22,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 22,
+     "page": 24,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 24,
+     "page": 26,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 27,
+     "page": 29,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 29,
+     "page": 31,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 32,
+     "page": 34,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 35,
+     "page": 37,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "db20bc48a5e9c3090aacea914cd417d6",
-    "version": 21,
-    "uploaded": "2026-11-05T11:05:15+09:00"
+    "md5": "648a6afc8d7f0e2074b86e048b975c0f",
+    "version": 22,
+    "uploaded": "2026-11-06T11:22:13+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -150,10 +156,11 @@
     "MedKOS_학습서_순환기내과_v18_2026-11-02.pdf",
     "MedKOS_학습서_순환기내과_v19_2026-11-03.pdf",
     "MedKOS_학습서_순환기내과_v20_2026-11-04.pdf",
-    "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf"
+    "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf",
+    "MedKOS_학습서_순환기내과_v22_2026-11-06.pdf"
    ],
    "changes": [
-    "새 단원: 심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다"
+    "새 단원: 경정맥 파형 — a파·v파·y 하강이 원인을 가른다"
    ]
   },
   "피부과": {
@@ -382,9 +389,9 @@
    ]
   },
   "안과": {
-   "hash": "cfc7e753c44db953e2b9",
-   "version": 14,
-   "date": "2026-11-05",
+   "hash": "9f40cf17d100154127c6",
+   "version": 15,
+   "date": "2026-11-06",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 11,
    "template_version": 11,
@@ -410,7 +417,7 @@
     "cn.ophth.normal-tension-glaucoma.visual-field": {
      "title": "정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인",
      "page": 8,
-     "concept_hash": "3a14b7ad8c2c91ce",
+     "concept_hash": "54b97ef726b644be",
      "concept_version": 1
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
@@ -422,9 +429,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "23a9f7973d1fbfb833703099116f556d",
-    "version": 14,
-    "uploaded": "2026-11-05T11:05:15+09:00"
+    "md5": "0b9e0cadfe9387d40f77aa6dcbe5483c",
+    "version": 15,
+    "uploaded": "2026-11-06T11:22:13+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -440,7 +447,8 @@
     "MedKOS_학습서_안과_v11_2026-11-02.pdf",
     "MedKOS_학습서_안과_v12_2026-11-03.pdf",
     "MedKOS_학습서_안과_v13_2026-11-04.pdf",
-    "MedKOS_학습서_안과_v14_2026-11-05.pdf"
+    "MedKOS_학습서_안과_v14_2026-11-05.pdf",
+    "MedKOS_학습서_안과_v15_2026-11-06.pdf"
    ],
    "changes": [
     "내용 수정: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인"
@@ -1547,13 +1555,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "e24e79fc9c010f581c4fdf0c8cdae2a7",
+   "md5": "fae0c3fd78883fce4ee8a8596f2182a4",
    "version": null,
-   "uploaded": "2026-11-05T11:05:15+09:00"
+   "uploaded": "2026-11-06T11:22:13+09:00"
   }
  },
- "updated": "2026-11-05"
+ "updated": "2026-11-06"
 }
