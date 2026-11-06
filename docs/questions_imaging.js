@@ -2,6 +2,1167 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0567",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "피부 — 걸을 때 아픈 발바닥의 각질성 병변",
+  "type": "피부 — 걸을 때 아픈 발바닥의 각질성 병변",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-06",
+  "vignette": "70세 남자가 4개월 전부터 발바닥에 생긴 아픈 병변으로 왔다. 걸을 때 아프고, 특히 양옆에서 꼬집듯 누르면 더 아프다. 일주일에 몇 번 공공 수영장에서 맨발로 다닌다. 당뇨병이나 말초혈관 질환은 없다. 진찰에서 발바닥에 지름 6 mm 의 단단한 각질성 구진이 있다. 메스로 표면을 깎아 내자 바늘 끝 같은 출혈점이 생긴다. 발등동맥 맥박은 정상이다. 병변의 더모스코피(피부확대경) 사진은 그림과 같다.",
+  "question": "진단으로 가장 적절한 것은?",
+  "options": [
+   "발바닥 사마귀",
+   "티눈",
+   "말단 흑자 흑색종",
+   "굳은살",
+   "지루각화증"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 피부확대경에서 노란빛 각질성 구진이 발바닥의 정상 피부선(지문 능선)을 끊고 있고, 그 위에 붉은갈색~검은 점과 짧은 선이 흩어져 있다. 이 점들은 길어진 진피유두 안의 늘어난 모세혈관이 눌려 혈전이 생긴 것으로 바이러스 사마귀의 특징이며, 표면을 깎으면 같은 혈관에서 바늘 끝 출혈이 난다. 양옆에서 누를 때 아픈 통증, 공공장소 맨발 노출, 끊긴 피부선은 사람유두종바이러스(1·2·4형)에 의한 발바닥 사마귀에 맞는다.\n- 원리: <b>왜 피부선이 끊기나</b>: 지문 능선은 표피 능선의 규칙적인 배열이 만든다. 사람유두종바이러스는 기저 각질형성세포를 감염해 표피 증식과 유두종증을 일으키므로, 감염된 부분이 따로 덩어리로 자라 능선 배열을 대체한다. 티눈·굳은살은 정상 각질층이 두꺼워진 것이라 피부선이 병변을 그대로 지나간다.<br> <b>왜 검은 점이 보이나</b>: 사마귀에서는 진피유두가 길어지고 그 안의 모세혈관이 표면 가까이 늘어나 있다. 걸을 때의 압력으로 이 모세혈관에 혈전이 생겨 피부확대경에서 붉은갈색·검은 점과 선으로 보이고, 표면을 깎으면 바늘 끝처럼 피가 난다.<br> <b>왜 양옆에서 누를 때 아픈가</b>: 사마귀는 주변 조직과 함께 안쪽으로 밀려 들어가 있어 양옆에서 꼬집으면 눌리고, 티눈은 단단한 중심 핵이 깊은 조직을 누르므로 바로 위에서 누를 때 가장 아프다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발바닥 사마귀(정답)</th><th>티눈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>피부선</td><td>병변에서 <b>끊김</b></td><td>병변을 그대로 지나감</td></tr> <tr><td>피부확대경</td><td>붉은갈색·검은 점(혈전 모세혈관)</td><td>반투명한 중심 핵, 혈관 없음</td></tr> <tr><td>통증</td><td>양옆에서 꼬집을 때</td><td>뼈 돌출부 위를 바로 누를 때</td></tr> <tr><td>깎아 냈을 때</td><td>바늘 끝 출혈</td><td>출혈 없는 단단한 핵</td></tr> </tbody></table> 피부선이 병변을 지나가는지, 깎았을 때 피가 나는지 두 가지가 감염과 압박성 각화를 가른다.\n- 오답 이유:\n  - ② 티눈은 피부선이 병변을 그대로 지나가고, 깎았을 때 뼈 돌출부 위에 출혈 없는 반투명한 단단한 핵이 드러날 때 정답이 된다.\n  - ③ 말단 흑자 흑색종은 각질성 구진이 아니라 피부능선을 따라 넓고 불규칙한 갈색 색소(평행 능선 양상)가 보이고 커질 때 정답이 된다.\n  - ④ 굳은살은 체중이 실리는 넓은 부위의 통증 없는 미만성 각질 비후로, 피부선이 보존될 때 정답이 된다.\n  - ⑤ 지루각화증은 붙인 듯한 밀랍 같은 병변에 비립종 같은 낭종·면포 같은 구멍이 보일 때 정답이며, 털 없는 발바닥 피부에는 거의 생기지 않는다.\n- 함정: 검은 점을 멜라닌 색소로 읽어 흑색종을 고르는 것 — 피부선을 끊는 각질성 구진 안의 혈전 모세혈관이다.\n- 학습목표: 발바닥 각질성 병변의 피부확대경에서 끊긴 피부선과 혈전 모세혈관의 붉은갈색 점을 읽어 발바닥 사마귀로 진단하고 티눈·말단 흑색종과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 203: Human Papillomavirus Infections · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 60: Eczema, Psoriasis, Cutaneous Infections, Acne, and Other Common Skin Disorders\n\n## 출처\n- ISIC Archive ISIC_0013536 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "피부확대경에서 노란빛 각질성 구진이 발바닥의 정상 피부선(지문 능선)을 끊고 있고, 그 위에 붉은갈색~검은 점과 짧은 선이 흩어져 있다. 이 점들은 길어진 진피유두 안의 늘어난 모세혈관이 눌려 혈전이 생긴 것으로 바이러스 사마귀의 특징이며, 표면을 깎으면 같은 혈관에서 바늘 끝 출혈이 난다. 양옆에서 누를 때 아픈 통증, 공공장소 맨발 노출, 끊긴 피부선은 사람유두종바이러스(1·2·4형)에 의한 발바닥 사마귀에 맞는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 피부선이 끊기나</b>: 지문 능선은 표피 능선의 규칙적인 배열이 만든다. 사람유두종바이러스는 기저 각질형성세포를 감염해 표피 증식과 유두종증을 일으키므로, 감염된 부분이 따로 덩어리로 자라 능선 배열을 대체한다. 티눈·굳은살은 정상 각질층이 두꺼워진 것이라 피부선이 병변을 그대로 지나간다.<br> <b>왜 검은 점이 보이나</b>: 사마귀에서는 진피유두가 길어지고 그 안의 모세혈관이 표면 가까이 늘어나 있다. 걸을 때의 압력으로 이 모세혈관에 혈전이 생겨 피부확대경에서 붉은갈색·검은 점과 선으로 보이고, 표면을 깎으면 바늘 끝처럼 피가 난다.<br> <b>왜 양옆에서 누를 때 아픈가</b>: 사마귀는 주변 조직과 함께 안쪽으로 밀려 들어가 있어 양옆에서 꼬집으면 눌리고, 티눈은 단단한 중심 핵이 깊은 조직을 누르므로 바로 위에서 누를 때 가장 아프다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발바닥 사마귀(정답)</th><th>티눈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>피부선</td><td>병변에서 <b>끊김</b></td><td>병변을 그대로 지나감</td></tr> <tr><td>피부확대경</td><td>붉은갈색·검은 점(혈전 모세혈관)</td><td>반투명한 중심 핵, 혈관 없음</td></tr> <tr><td>통증</td><td>양옆에서 꼬집을 때</td><td>뼈 돌출부 위를 바로 누를 때</td></tr> <tr><td>깎아 냈을 때</td><td>바늘 끝 출혈</td><td>출혈 없는 단단한 핵</td></tr> </tbody></table> 피부선이 병변을 지나가는지, 깎았을 때 피가 나는지 두 가지가 감염과 압박성 각화를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 티눈은 피부선이 병변을 그대로 지나가고, 깎았을 때 뼈 돌출부 위에 출혈 없는 반투명한 단단한 핵이 드러날 때 정답이 된다.\n③ 말단 흑자 흑색종은 각질성 구진이 아니라 피부능선을 따라 넓고 불규칙한 갈색 색소(평행 능선 양상)가 보이고 커질 때 정답이 된다.\n④ 굳은살은 체중이 실리는 넓은 부위의 통증 없는 미만성 각질 비후로, 피부선이 보존될 때 정답이 된다.\n⑤ 지루각화증은 붙인 듯한 밀랍 같은 병변에 비립종 같은 낭종·면포 같은 구멍이 보일 때 정답이며, 털 없는 발바닥 피부에는 거의 생기지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "검은 점을 멜라닌 색소로 읽어 흑색종을 고르는 것 — 피부선을 끊는 각질성 구진 안의 혈전 모세혈관이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "발바닥 각질성 병변의 피부확대경에서 끊긴 피부선과 혈전 모세혈관의 붉은갈색 점을 읽어 발바닥 사마귀로 진단하고 티눈·말단 흑색종과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 203: Human Papillomavirus Infections · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 60: Eczema, Psoriasis, Cutaneous Infections, Acne, and Other Common Skin Disorders ## 출처 ISIC Archive ISIC_0013536 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "피부선을 끊는 발바닥 각질성 구진에 혈전 모세혈관 점이 보이면 발바닥 사마귀다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "피부선이 끊기고 깎으면 모세혈관에서 바늘 끝 출혈이 난다 — 티눈은 피부선이 보존되고 핵에서 피가 나지 않는다",
+   "steps": 2,
+   "chain": [
+    "영상: 피부선을 끊는 각질성 구진 위에 흩어진 붉은갈색~검은 점과 짧은 선",
+    "혈전 모세혈관 + 깎을 때 바늘 끝 출혈 + 양옆 압통 → 티눈·흑색종이 아닌 발바닥 사마귀"
+   ],
+   "key": [
+    {
+     "item": "영상: 피부선을 끊는 각질성 구진과 붉은갈색~검은 점",
+     "why": "바이러스 사마귀의 혈전 모세혈관",
+     "also": []
+    },
+    {
+     "item": "바늘 끝 같은 출혈점이 생긴다",
+     "why": "유두 안 모세혈관 — 티눈에는 없다",
+     "also": []
+    },
+    {
+     "item": "양옆에서 꼬집듯 누르면 더 아프다",
+     "why": "사마귀의 전형적 통증 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "공공 수영장에서 맨발로 다닌다",
+     "why": "사람유두종바이러스 노출 — 뒷받침하지만 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "당뇨병이나 말초혈관 질환은 없다",
+     "why": "신경병성 궤양 걱정을 줄이지만 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "아픈 발바닥 각질성 구진이 피부선을 끊고, 깎으면 피가 나는 혈전 모세혈관 점이 보인다. 발바닥 사마귀다.",
+   "switch": {
+    "choice": "B",
+    "condition": "피부선이 병변을 지나가고 중족골두 위에서 깎았을 때 출혈 없는 반투명 핵이 드러나면 티눈"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0567.jpg",
+   "caption": "피부확대경 사진, 피부 표시와 자를 포함한 원본 그대로 크기 조정만 (ISIC Archive, CC0 — 크롭·색보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0013536",
+   "asset_id": "ISIC-ISIC_0013536",
+   "text": "ISIC Archive ISIC_0013536 (CC-0)"
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0566",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "외과계 — 혈뇨로 발견된 노인 남성의 신장 고형 종괴",
+  "type": "외과계 — 혈뇨로 발견된 노인 남성의 신장 고형 종괴",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-06",
+  "vignette": "73세 남자가 일주일 전 한 차례 통증 없는 붉은 소변을 보아 비뇨의학과에 왔다. 옆구리 통증·체중 감소·발열은 없다. 고혈압으로 약을 먹고 있으며 40갑년 흡연력이 있다. 혈압 138/84 mmHg 이고 복부 진찰에서 만져지는 종괴는 없다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL, 칼슘·간기능은 정상이다. 소변검사에서 적혈구 10~19/고배율시야이다. 조영 증강 복부 CT 축상면 영상은 그림과 같으며, 림프절 비대·신정맥 침범은 없고 반대쪽 신장은 정상이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "흉부 CT 로 병기를 확인한 뒤 신장 절제술(가능하면 부분절제)을 한다",
+   "경피적 바늘 생검으로 조직을 확인한 뒤 치료를 정한다",
+   "6개월 뒤 CT 를 다시 찍어 크기 변화를 본다",
+   "면역관문억제제 전신 치료를 시작한다",
+   "방광경과 요세포검사만 하고 신장 종괴는 추적한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 오른쪽 신장 앞쪽에 약 5 cm 의 둥근 고형 종괴가 피질만큼 강하게 조영증강되고 중심부에 저음영 부위가 있으며, 지방·석회는 보이지 않는다. 지방이 없는 강한 조영증강 고형 신장 종괴는 다른 근거가 없는 한 신세포암으로 다루며, 4~7 cm 로 cT1b 다. 영상이 전형적이고 수술할 수 있는 환자라면 생검이 치료를 바꾸지 않으므로, 흉부 CT 로 폐 전이를 확인한 뒤 수술로 제거한다(기술적으로 가능하면 신기능을 보존하는 부분절제). 흡연력 있는 노인의 육안적 혈뇨이므로 방광경으로 요로상피암도 함께 확인한다. 이 종괴는 수술 병리에서 호산성 과립세포종으로 밝혀졌다 — 영상으로는 신세포암과 구별할 수 없다.\n- 원리: <b>왜 지방과 조영증강을 보나</b>: 신장 종괴의 첫 갈림은 낭성인가 고형인가, 그다음은 육안적 지방이 있는가다. 거시적 지방(-10 HU 이하)이 있으면 혈관근지방종으로 진단이 끝나지만, 지방 없이 15~20 HU 이상 조영증강되는 고형 종괴는 80~90 % 가 악성(대부분 투명세포 신세포암)이다.<br> <b>왜 생검 없이 수술하나</b>: 생검은 진단적 정확도가 높지만 음성이어도 악성을 배제하지 못하고, 호산성 과립세포종과 호산성 신세포암(혐색소형)은 작은 조직으로 구별이 어렵다. 수술할 수 있는 환자에서 전형적 영상이면 결과가 치료를 바꾸지 않는다. 생검은 수술 후보가 아니거나, 림프종·전이암·감염이 의심되거나, 능동 감시·열치료를 고를 때 쓴다.<br> <b>왜 흉부 CT 인가</b>: 신세포암은 혈행성으로 폐에 가장 흔히 전이한다. 병기(T1b N0 M0 인지)를 정해야 국소 수술로 완치를 노릴지, 전신 치료를 고려할지 정할 수 있다. 뼈스캔·뇌 MRI 는 증상이나 혈청 칼슘·ALP 상승이 있을 때만 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">수술(정답)</th><th>경피적 생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td>전형적 고형 종괴 + <b>수술 가능한 환자</b></td><td>수술 불가·고위험, 림프종·전이·감염 의심, 감시나 열치료 계획</td></tr> <tr><td>결과가 치료를 바꾸나</td><td>병리로 최종 확인</td><td>음성이어도 악성 배제 못 함 — 이 환자에서는 바꾸지 않음</td></tr> <tr><td>크기 기준</td><td>4~7 cm(cT1b) — 부분절제 가능하면 우선</td><td>1~3 cm 의 작은 종괴에서 더 자주 고려</td></tr> </tbody></table> 생검은 「결과에 따라 치료가 달라질 때」만 한다 — 수술할 사람의 전형적 종괴에서는 수술 병리가 진단이다.\n- 오답 이유:\n  - ② 경피적 생검은 고령·동반 질환으로 수술 후보가 아니거나 림프종·전이암이 의심될 때, 또는 능동 감시·열치료를 택할 때 정답이 된다.\n  - ③ 6개월 추적 CT 는 기대여명이 짧거나 수술 위험이 큰 환자의 2 cm 안팎 작은 고형 종괴에서 능동 감시를 택할 때 정답이 된다.\n  - ④ 면역관문억제제는 폐·뼈 전이가 있는 진행성 신세포암에서 정답이며, 국소 병변은 수술로 완치를 노린다.\n  - ⑤ 방광경·요세포검사만 하는 것은 영상에서 신장 종괴가 없고 혈뇨의 원인으로 방광암을 찾을 때 정답이 되며, 이 종괴를 추적할 근거는 없다.\n- 함정: 수술 전에 반드시 조직 진단이 필요하다고 생각해 생검을 고르는 것 — 수술할 환자의 전형적 고형 신장 종괴는 생검이 치료를 바꾸지 않는다.\n- 학습목표: 조영 CT 에서 지방 없이 강하게 조영되는 5 cm 신장 고형 종괴(cT1b)를 신세포암으로 보고 생검 없이 흉부 CT 로 병기를 정한 뒤 수술로 제거한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00104 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 오른쪽 신장 앞쪽에 약 5 cm 의 둥근 고형 종괴가 피질만큼 강하게 조영증강되고 중심부에 저음영 부위가 있으며, 지방·석회는 보이지 않는다. 지방이 없는 강한 조영증강 고형 신장 종괴는 다른 근거가 없는 한 신세포암으로 다루며, 4~7 cm 로 cT1b 다. 영상이 전형적이고 수술할 수 있는 환자라면 생검이 치료를 바꾸지 않으므로, 흉부 CT 로 폐 전이를 확인한 뒤 수술로 제거한다(기술적으로 가능하면 신기능을 보존하는 부분절제). 흡연력 있는 노인의 육안적 혈뇨이므로 방광경으로 요로상피암도 함께 확인한다. 이 종괴는 수술 병리에서 호산성 과립세포종으로 밝혀졌다 — 영상으로는 신세포암과 구별할 수 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 지방과 조영증강을 보나</b>: 신장 종괴의 첫 갈림은 낭성인가 고형인가, 그다음은 육안적 지방이 있는가다. 거시적 지방(-10 HU 이하)이 있으면 혈관근지방종으로 진단이 끝나지만, 지방 없이 15~20 HU 이상 조영증강되는 고형 종괴는 80~90 % 가 악성(대부분 투명세포 신세포암)이다.<br> <b>왜 생검 없이 수술하나</b>: 생검은 진단적 정확도가 높지만 음성이어도 악성을 배제하지 못하고, 호산성 과립세포종과 호산성 신세포암(혐색소형)은 작은 조직으로 구별이 어렵다. 수술할 수 있는 환자에서 전형적 영상이면 결과가 치료를 바꾸지 않는다. 생검은 수술 후보가 아니거나, 림프종·전이암·감염이 의심되거나, 능동 감시·열치료를 고를 때 쓴다.<br> <b>왜 흉부 CT 인가</b>: 신세포암은 혈행성으로 폐에 가장 흔히 전이한다. 병기(T1b N0 M0 인지)를 정해야 국소 수술로 완치를 노릴지, 전신 치료를 고려할지 정할 수 있다. 뼈스캔·뇌 MRI 는 증상이나 혈청 칼슘·ALP 상승이 있을 때만 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">수술(정답)</th><th>경피적 생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td>전형적 고형 종괴 + <b>수술 가능한 환자</b></td><td>수술 불가·고위험, 림프종·전이·감염 의심, 감시나 열치료 계획</td></tr> <tr><td>결과가 치료를 바꾸나</td><td>병리로 최종 확인</td><td>음성이어도 악성 배제 못 함 — 이 환자에서는 바꾸지 않음</td></tr> <tr><td>크기 기준</td><td>4~7 cm(cT1b) — 부분절제 가능하면 우선</td><td>1~3 cm 의 작은 종괴에서 더 자주 고려</td></tr> </tbody></table> 생검은 「결과에 따라 치료가 달라질 때」만 한다 — 수술할 사람의 전형적 종괴에서는 수술 병리가 진단이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 경피적 생검은 고령·동반 질환으로 수술 후보가 아니거나 림프종·전이암이 의심될 때, 또는 능동 감시·열치료를 택할 때 정답이 된다.\n③ 6개월 추적 CT 는 기대여명이 짧거나 수술 위험이 큰 환자의 2 cm 안팎 작은 고형 종괴에서 능동 감시를 택할 때 정답이 된다.\n④ 면역관문억제제는 폐·뼈 전이가 있는 진행성 신세포암에서 정답이며, 국소 병변은 수술로 완치를 노린다.\n⑤ 방광경·요세포검사만 하는 것은 영상에서 신장 종괴가 없고 혈뇨의 원인으로 방광암을 찾을 때 정답이 되며, 이 종괴를 추적할 근거는 없다."
+   },
+   {
+    "k": "함정",
+    "v": "수술 전에 반드시 조직 진단이 필요하다고 생각해 생검을 고르는 것 — 수술할 환자의 전형적 고형 신장 종괴는 생검이 치료를 바꾸지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영 CT 에서 지방 없이 강하게 조영되는 5 cm 신장 고형 종괴(cT1b)를 신세포암으로 보고 생검 없이 흉부 CT 로 병기를 정한 뒤 수술로 제거한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00104 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "수술할 수 있는 환자의 지방 없는 조영증강 5 cm 신장 고형 종괴는 흉부 CT 로 병기를 정한 뒤 생검 없이 제거한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "영상이 지방 없는 강한 조영증강 고형 종괴로 전형적이고 환자가 수술 가능해 생검 결과가 치료를 바꾸지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: 오른쪽 신장 약 5 cm 고형 종괴, 강한 조영증강·중심 저음영, 지방 없음",
+    "지방 없는 조영증강 고형 신장 종괴 → 신세포암으로 다룸, 4~7 cm 로 cT1b",
+    "수술 가능 + 림프절·신정맥 침범 없음 → 흉부 CT 병기 후 (부분)신장절제술"
+   ],
+   "key": [
+    {
+     "item": "영상: 지방 없이 강하게 조영되는 약 5 cm 고형 종괴",
+     "why": "신세포암으로 다루는 근거와 T 병기",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼슘·간기능은 정상",
+     "why": "뼈·간 전이 가능성을 낮춰 추가 영상이 필요 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "림프절 비대·신정맥 침범은 없고",
+     "why": "국소 병변 — 수술로 완치를 노린다",
+     "also": []
+    },
+    {
+     "item": "반대쪽 신장은 정상",
+     "why": "부분·근치 절제를 모두 고려할 수 있다",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아티닌 1.0 mg/dL",
+     "why": "신기능이 정상이라 수술 후보다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "40갑년 흡연력",
+     "why": "신세포암·요로상피암 위험 인자 — 방광경 필요성은 남지만 이 종괴 처치는 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "지방 없이 강하게 조영되는 5 cm 신장 고형 종괴는 신세포암(cT1b)으로 다룬다. 수술할 수 있는 환자라 생검 없이 흉부 CT 로 병기를 정하고 제거한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "환자가 수술 후보가 아니거나 림프종·다른 암의 전이가 의심되면 경피적 생검"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0566.png",
+   "caption": "조영 증강 복부 CT 동맥기 축상면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 자르기·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.234221540834884064176172125065",
+   "asset_id": "TCIA-KITS-00104_87394256",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00104"
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0565",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "소화기 — 오래된 가슴쓰림으로 받은 상부 내시경",
+  "type": "소화기 — 오래된 가슴쓰림으로 받은 상부 내시경",
+  "modality": "ENDOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-06",
+  "vignette": "A patient with long-standing heartburn that occurs several times a week despite intermittent over-the-counter antacid use is referred for upper endoscopy. There is no dysphagia, weight loss, vomiting, or melena. Physical examination shows no abnormalities. Hemoglobin concentration is within the reference range. During upper endoscopy, a photograph of the gastroesophageal junction region is obtained and is shown. No ulcer, nodule, or mass is seen elsewhere in the esophagus or stomach.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Laparoscopic fundoplication, no biopsy",
+   "Mucosal biopsies and a daily proton pump inhibitor",
+   "Transhiatal esophagectomy after staging CT",
+   "Endoscopic mucosal resection of the segment",
+   "Repeat endoscopy in 6 months, no biopsy"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The photograph shows salmon-colored mucosa extending above the gastroesophageal junction as a short tongue into the paler squamous lining, without ulcer or nodule. This appearance suggests Barrett esophagus, but the diagnosis requires histologic confirmation of intestinal metaplasia with goblet cells. Biopsies are taken from the abnormal segment (four-quadrant biopsies every 1-2 cm, plus any visible lesion), and a proton pump inhibitor is given for reflux and to allow accurate grading of dysplasia. Histology then sets surveillance or endoscopic therapy.\n- 원리: <b>Why the mucosa turns salmon-colored</b>: Chronic acid and bile reflux injure the stratified squamous epithelium of the distal esophagus. During healing, the epithelium can be replaced by columnar epithelium that resists acid better; when it contains goblet cells it is called intestinal metaplasia. Endoscopically, this columnar lining looks reddish-orange (salmon) compared with the pale pink squamous mucosa and extends above the top of the gastric folds.<br> <b>Why biopsy is mandatory</b>: The color change alone is not diagnostic — an irregular Z-line or a hiatal hernia can look similar. Barrett esophagus is defined histologically, and its cancer risk depends on dysplasia: nondysplastic Barrett progresses to adenocarcinoma in roughly 0.2-0.5% per year, whereas high-grade dysplasia carries a much higher risk.<br> <b>Why acid suppression first</b>: Active inflammation can mimic dysplasia under the microscope. A proton pump inhibitor heals esophagitis so that pathologists can grade dysplasia accurately, and it controls symptoms.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Biopsy + PPI (answer)</th><th>Endoscopic mucosal resection (closest distractor)</th></tr></thead><tbody> <tr><td>Lesion</td><td><b>Flat</b> salmon-colored mucosa, no nodule</td><td>Visible nodule or raised lesion within Barrett mucosa</td></tr> <tr><td>Histology known?</td><td>No — must be established</td><td>Usually after dysplasia or early cancer is suspected</td></tr> <tr><td>Next decision</td><td>Surveillance interval or ablation by dysplasia grade</td><td>Staging of the resected lesion, then ablation</td></tr> </tbody></table> Flat Barrett-appearing mucosa is first sampled; resection is reserved for nodular lesions or confirmed dysplasia.\n- 오답 이유:\n  - (A) Fundoplication would be correct for well-documented reflux not controlled by or intolerant of a PPI, and it does not replace biopsy of the abnormal segment.\n  - (C) Esophagectomy would be correct for invasive adenocarcinoma beyond the submucosa that cannot be treated endoscopically, not for unbiopsied flat mucosa.\n  - (D) Endoscopic mucosal resection would be correct for a visible nodule within Barrett mucosa or for confirmed high-grade dysplasia with a raised lesion.\n  - (E) Repeat endoscopy without biopsy would never establish the diagnosis; repeat endoscopy at 3-5 years is correct only after biopsy shows nondysplastic Barrett.\n- 함정: Treating the salmon-colored mucosa as a diagnosis by appearance — Barrett esophagus requires biopsy showing intestinal metaplasia.\n- 제작 가정: HyperKvasir 는 내시경 사진과 소견 분류만 있고 나이·성별·병력이 없다 — 오래된 위식도역류 증상으로 내시경을 받는 상황을 가정했다 (가정한 정보: long-standing heartburn · upper endoscopy)\n- 학습목표: 상부 내시경에서 위식도 접합부 위로 올라온 연어빛 점막을 바렛식도 의심 소견으로 읽고, 장상피화생과 이형성 여부를 정하는 체계적 생검을 다음 단계로 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 334: Diseases of the Esophagus · Shaheen NJ, Falk GW, Iyer PG, et al. Diagnosis and management of Barrett's esophagus: an updated ACG guideline. Am J Gastroenterol. 2022;117(4):559-587\n\n## 출처\n- HyperKvasir (OSF, CC BY 4.0) · 237b6b27-a102-46b7-9aa5-ba99c7bcb6c7.jpg · Creative Commons Attribution 4.0 International · https://datasets.simula.no/hyper-kvasir/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photograph shows salmon-colored mucosa extending above the gastroesophageal junction as a short tongue into the paler squamous lining, without ulcer or nodule. This appearance suggests Barrett esophagus, but the diagnosis requires histologic confirmation of intestinal metaplasia with goblet cells. Biopsies are taken from the abnormal segment (four-quadrant biopsies every 1-2 cm, plus any visible lesion), and a proton pump inhibitor is given for reflux and to allow accurate grading of dysplasia. Histology then sets surveillance or endoscopic therapy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the mucosa turns salmon-colored</b>: Chronic acid and bile reflux injure the stratified squamous epithelium of the distal esophagus. During healing, the epithelium can be replaced by columnar epithelium that resists acid better; when it contains goblet cells it is called intestinal metaplasia. Endoscopically, this columnar lining looks reddish-orange (salmon) compared with the pale pink squamous mucosa and extends above the top of the gastric folds.<br> <b>Why biopsy is mandatory</b>: The color change alone is not diagnostic — an irregular Z-line or a hiatal hernia can look similar. Barrett esophagus is defined histologically, and its cancer risk depends on dysplasia: nondysplastic Barrett progresses to adenocarcinoma in roughly 0.2-0.5% per year, whereas high-grade dysplasia carries a much higher risk.<br> <b>Why acid suppression first</b>: Active inflammation can mimic dysplasia under the microscope. A proton pump inhibitor heals esophagitis so that pathologists can grade dysplasia accurately, and it controls symptoms."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Biopsy + PPI (answer)</th><th>Endoscopic mucosal resection (closest distractor)</th></tr></thead><tbody> <tr><td>Lesion</td><td><b>Flat</b> salmon-colored mucosa, no nodule</td><td>Visible nodule or raised lesion within Barrett mucosa</td></tr> <tr><td>Histology known?</td><td>No — must be established</td><td>Usually after dysplasia or early cancer is suspected</td></tr> <tr><td>Next decision</td><td>Surveillance interval or ablation by dysplasia grade</td><td>Staging of the resected lesion, then ablation</td></tr> </tbody></table> Flat Barrett-appearing mucosa is first sampled; resection is reserved for nodular lesions or confirmed dysplasia."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Fundoplication would be correct for well-documented reflux not controlled by or intolerant of a PPI, and it does not replace biopsy of the abnormal segment.\n(C) Esophagectomy would be correct for invasive adenocarcinoma beyond the submucosa that cannot be treated endoscopically, not for unbiopsied flat mucosa.\n(D) Endoscopic mucosal resection would be correct for a visible nodule within Barrett mucosa or for confirmed high-grade dysplasia with a raised lesion.\n(E) Repeat endoscopy without biopsy would never establish the diagnosis; repeat endoscopy at 3-5 years is correct only after biopsy shows nondysplastic Barrett."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the salmon-colored mucosa as a diagnosis by appearance — Barrett esophagus requires biopsy showing intestinal metaplasia."
+   },
+   {
+    "k": "제작 가정",
+    "v": "HyperKvasir 는 내시경 사진과 소견 분류만 있고 나이·성별·병력이 없다 — 오래된 위식도역류 증상으로 내시경을 받는 상황을 가정했다 (가정한 정보: long-standing heartburn · upper endoscopy)"
+   },
+   {
+    "k": "학습목표",
+    "v": "상부 내시경에서 위식도 접합부 위로 올라온 연어빛 점막을 바렛식도 의심 소견으로 읽고, 장상피화생과 이형성 여부를 정하는 체계적 생검을 다음 단계로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 334: Diseases of the Esophagus · Shaheen NJ, Falk GW, Iyer PG, et al. Diagnosis and management of Barrett's esophagus: an updated ACG guideline. Am J Gastroenterol. 2022;117(4):559-587 ## 출처 HyperKvasir (OSF, CC BY 4.0) · 237b6b27-a102-46b7-9aa5-ba99c7bcb6c7.jpg · Creative Commons Attribution 4.0 International · https://datasets.simula.no/hyper-kvasir/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Salmon-colored mucosa extending above the gastroesophageal junction is biopsied to confirm intestinal metaplasia and grade dysplasia, with a PPI started",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "The abnormal mucosa is flat with no nodule or mass, so there is no lesion to resect yet",
+   "steps": 2,
+   "chain": [
+    "영상: salmon-colored mucosa extending as a short tongue above the gastroesophageal junction, no ulcer or nodule",
+    "Suspected Barrett esophagus without a visible lesion -> biopsies to confirm intestinal metaplasia and grade dysplasia + PPI"
+   ],
+   "key": [
+    {
+     "item": "영상: salmon-colored tongue of mucosa above the gastroesophageal junction",
+     "why": "Endoscopic appearance of Barrett esophagus",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no dysphagia, weight loss, vomiting, or melena",
+     "why": "Alarm features of cancer are absent",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "No ulcer, nodule, or mass is seen",
+     "why": "No visible lesion — biopsy rather than resection",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "long-standing heartburn",
+     "why": "Risk factor that explains the finding; does not choose the step",
+     "also": []
+    }
+   ],
+   "summary": "Salmon-colored mucosa rising above the gastroesophageal junction suggests Barrett esophagus. Without a nodule, biopsies and a PPI come first.",
+   "switch": {
+    "choice": "D",
+    "condition": "If a raised nodule were seen within the salmon-colored segment, endoscopic mucosal resection of the nodule"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0565.jpg",
+   "caption": "Upper endoscopic photograph as provided by the dataset, downscaled only (HyperKvasir, OSF, CC BY 4.0; no cropping or color adjustment) ※ The clinical scenario in the stem is an authoring assumption — the source dataset has no age or clinical history",
+   "alt": "ENDOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "HyperKvasir (위장관 내시경 — 상부 · 하부 소견 분류 영상)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://datasets.simula.no/hyper-kvasir/",
+   "url": "https://osf.io/mh9sj/files/osfstorage/5dfbc739fad251000c6abf84",
+   "asset_id": "HYPERKVASIR-237b6b27-a102-46b7-9",
+   "text": "HyperKvasir (OSF, CC BY 4.0) · 237b6b27-a102-46b7-9aa5-ba99c7bcb6c7.jpg"
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0563",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "응급 — 코로나19 확진 일주일째 숨이 차는 중년 여성의 흉부 X선",
+  "type": "응급 — 코로나19 확진 일주일째 숨이 차는 중년 여성의 흉부 X선",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-06",
+  "vignette": "A 57-year-old woman comes to the emergency department because of fever, cough, and increasing shortness of breath for 7 days. A nasal swab test for SARS-CoV-2 was positive 6 days ago. She has hypertension treated with amlodipine. Her temperature is 38.4°C (101.1°F), pulse is 104/min, respirations are 26/min, and blood pressure is 128/80 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 89%. Crackles are heard at both lung bases. She is alert and able to speak in full sentences. Serum creatinine and liver function tests are within normal limits. A chest radiograph is shown.",
+  "question": "In addition to supplemental oxygen, which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Oseltamivir",
+   "Dexamethasone",
+   "Azithromycin",
+   "Hydroxychloroquine",
+   "Ivermectin"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The radiograph shows ill-defined opacities in both lower lung zones, more extensive on the left, with low lung volumes and no pneumothorax or cavity. In a patient with confirmed SARS-CoV-2 infection in the second week of illness, bilateral opacities with an oxygen saturation of 89% on room air indicate severe COVID-19 pneumonia. Dexamethasone 6 mg daily for up to 10 days reduces mortality in patients who need supplemental oxygen, and remdesivir may be added early in the oxygen-requiring phase.\n- 원리: <b>Why a corticosteroid now</b>: COVID-19 has two phases. In the first week, viral replication dominates, and antivirals help most. From the second week, lung injury is driven largely by the host inflammatory response, producing bilateral, often lower-zone and peripheral opacities and hypoxemia. Dexamethasone dampens this response and lowered 28-day mortality in hospitalized patients who required oxygen or mechanical ventilation, but not in patients who did not need oxygen.<br> <b>Why oxygen saturation is the switch</b>: The benefit of dexamethasone depends on disease severity. A saturation below 94% on room air or infiltrates involving much of the lung define severe disease, and this is exactly the group in which steroids save lives. Giving steroids to a patient without hypoxemia may cause harm by delaying viral clearance.<br> <b>Why the radiograph matters</b>: Bilateral airspace opacities confirm parenchymal involvement rather than airway disease alone, and they help exclude alternatives such as lobar bacterial pneumonia with a single dense consolidation or pneumothorax.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Severe COVID-19 pneumonia (answer)</th><th>Bacterial lobar pneumonia (azithromycin distractor)</th></tr></thead><tbody> <tr><td>Radiograph</td><td><b>Bilateral</b>, ill-defined lower-zone opacities</td><td>One dense lobar consolidation with air bronchograms</td></tr> <tr><td>Course</td><td>Worsening in week 2 after a positive test</td><td>Abrupt onset, purulent sputum</td></tr> <tr><td>Key drug</td><td>Dexamethasone (+ remdesivir)</td><td>Beta-lactam plus macrolide</td></tr> </tbody></table> Routine antibiotics are not given in COVID-19 pneumonia unless bacterial coinfection is suspected; the hypoxemia from bilateral viral pneumonitis is what calls for steroids.\n- 오답 이유:\n  - (A) Oseltamivir would be correct for confirmed or suspected influenza with a positive influenza test, not for SARS-CoV-2 pneumonia.\n  - (C) Azithromycin would be correct, together with a beta-lactam, for community-acquired bacterial pneumonia with a lobar consolidation and purulent sputum.\n  - (D) Hydroxychloroquine would be correct for systemic lupus erythematosus or malaria; trials showed no benefit and possible harm in COVID-19.\n  - (E) Ivermectin would be correct for strongyloidiasis or scabies; randomized trials showed no benefit for COVID-19 outcomes.\n- 함정: Choosing an antibiotic because the radiograph shows opacities — bilateral opacities in confirmed COVID-19 with hypoxemia call for dexamethasone.\n- 학습목표: 코로나19 확진 환자의 흉부 X선에서 양측 하폐야 음영을 읽고, 실내 공기에서 산소포화도가 94 % 미만이면 산소와 덱사메타손을 시작한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …16258715 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows ill-defined opacities in both lower lung zones, more extensive on the left, with low lung volumes and no pneumothorax or cavity. In a patient with confirmed SARS-CoV-2 infection in the second week of illness, bilateral opacities with an oxygen saturation of 89% on room air indicate severe COVID-19 pneumonia. Dexamethasone 6 mg daily for up to 10 days reduces mortality in patients who need supplemental oxygen, and remdesivir may be added early in the oxygen-requiring phase."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a corticosteroid now</b>: COVID-19 has two phases. In the first week, viral replication dominates, and antivirals help most. From the second week, lung injury is driven largely by the host inflammatory response, producing bilateral, often lower-zone and peripheral opacities and hypoxemia. Dexamethasone dampens this response and lowered 28-day mortality in hospitalized patients who required oxygen or mechanical ventilation, but not in patients who did not need oxygen.<br> <b>Why oxygen saturation is the switch</b>: The benefit of dexamethasone depends on disease severity. A saturation below 94% on room air or infiltrates involving much of the lung define severe disease, and this is exactly the group in which steroids save lives. Giving steroids to a patient without hypoxemia may cause harm by delaying viral clearance.<br> <b>Why the radiograph matters</b>: Bilateral airspace opacities confirm parenchymal involvement rather than airway disease alone, and they help exclude alternatives such as lobar bacterial pneumonia with a single dense consolidation or pneumothorax."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Severe COVID-19 pneumonia (answer)</th><th>Bacterial lobar pneumonia (azithromycin distractor)</th></tr></thead><tbody> <tr><td>Radiograph</td><td><b>Bilateral</b>, ill-defined lower-zone opacities</td><td>One dense lobar consolidation with air bronchograms</td></tr> <tr><td>Course</td><td>Worsening in week 2 after a positive test</td><td>Abrupt onset, purulent sputum</td></tr> <tr><td>Key drug</td><td>Dexamethasone (+ remdesivir)</td><td>Beta-lactam plus macrolide</td></tr> </tbody></table> Routine antibiotics are not given in COVID-19 pneumonia unless bacterial coinfection is suspected; the hypoxemia from bilateral viral pneumonitis is what calls for steroids."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oseltamivir would be correct for confirmed or suspected influenza with a positive influenza test, not for SARS-CoV-2 pneumonia.\n(C) Azithromycin would be correct, together with a beta-lactam, for community-acquired bacterial pneumonia with a lobar consolidation and purulent sputum.\n(D) Hydroxychloroquine would be correct for systemic lupus erythematosus or malaria; trials showed no benefit and possible harm in COVID-19.\n(E) Ivermectin would be correct for strongyloidiasis or scabies; randomized trials showed no benefit for COVID-19 outcomes."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing an antibiotic because the radiograph shows opacities — bilateral opacities in confirmed COVID-19 with hypoxemia call for dexamethasone."
+   },
+   {
+    "k": "학습목표",
+    "v": "코로나19 확진 환자의 흉부 X선에서 양측 하폐야 음영을 읽고, 실내 공기에서 산소포화도가 94 % 미만이면 산소와 덱사메타손을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …16258715 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Confirmed COVID-19 with bilateral pulmonary opacities and room-air saturation below 94% is severe disease that is treated with oxygen and dexamethasone",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "The opacities are bilateral and ill-defined rather than a single lobar consolidation, in a patient with a positive SARS-CoV-2 test in the second week",
+   "steps": 2,
+   "chain": [
+    "영상: bilateral ill-defined lower-zone opacities, left more extensive, no cavity or pneumothorax",
+    "Oxygen saturation of 89% on room air in confirmed COVID-19 -> severe disease -> dexamethasone"
+   ],
+   "key": [
+    {
+     "item": "영상: bilateral ill-defined lower-zone opacities",
+     "why": "Shows viral pneumonia involving both lungs",
+     "also": []
+    },
+    {
+     "item": "oxygen saturation of 89%",
+     "why": "Hypoxemia defines the group that benefits from dexamethasone",
+     "also": []
+    },
+    {
+     "item": "A nasal swab test for SARS-CoV-2 was positive 6 days ago",
+     "why": "Confirms the cause and places her in the inflammatory phase",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "She is alert and able to speak in full sentences",
+     "why": "No immediate need for intubation",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum creatinine and liver function tests are within normal limits",
+     "why": "Allows remdesivir use but does not change the steroid choice",
+     "also": []
+    }
+   ],
+   "summary": "Confirmed COVID-19 with bilateral lower-zone opacities and a saturation of 89% is severe pneumonia. Oxygen plus dexamethasone is the treatment.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the radiograph showed a single dense lobar consolidation with purulent sputum and a negative SARS-CoV-2 test, a beta-lactam plus azithromycin"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0563.png",
+   "caption": "Frontal chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1158563462361505433262016258715",
+   "asset_id": "TCIA-COVID19_AR-98289950237339",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …16258715"
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0570",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "정신 — 두 가지 항정신병약에 반응하지 않은 조현병",
+  "type": "정신 — 두 가지 항정신병약에 반응하지 않은 조현병",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-06",
+  "vignette": "24세 남자가 3년 전 조현병을 진단받은 뒤 환청과 피해망상이 계속되어 왔다. 리스페리돈 6 mg/일을 8주, 이어서 올란자핀 20 mg/일을 10주 복용하였고 약국 기록과 혈중 농도로 복약이 확인되었으나 증상은 거의 줄지 않았다. 한 달 전 「죽으라」는 환청을 듣고 손목을 그어 입원한 적이 있다. 물질 사용은 없다. 현재 혈압 122/78 mmHg, 맥박 80회/분이다. 혈액검사에서 백혈구 6,800/mm³, 절대호중구수 4,100/mm³ 이고 공복 혈당·지질은 정상이다. 심전도는 정상이다.",
+  "question": "다음 치료로 가장 적절한 것은?",
+  "options": [
+   "올란자핀에 리스페리돈을 더해 두 약을 함께 쓴다",
+   "할로페리돌로 바꾼다",
+   "올란자핀을 유지하고 리튬을 더한다",
+   "클로자핀으로 바꾸고 절대호중구수를 정기적으로 확인한다",
+   "아리피프라졸 장기지속형 주사제로 바꾼다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 서로 다른 두 항정신병약을 충분한 용량으로 6주 이상 쓰고, 복약이 확인되었는데도 반응이 없으므로 치료저항 조현병이다. 클로자핀은 치료저항 조현병에서 효과가 입증된 유일한 약이고, 자살 행동을 줄이는 근거도 있어 이 환자에게 특히 적절하다. 무과립구증 위험 때문에 시작 전 절대호중구수(1,500/mm³ 이상)를 확인하고 처음 6개월은 매주, 이후 간격을 늘려 감시하며, 심근염·발작·변비·대사 부작용도 살핀다. 복약 불이행이 원인이 아니므로 장기지속형 주사제는 해결책이 아니다.\n- 원리: <b>왜 클로자핀만 다른가</b>: 대부분의 항정신병약은 선조체 D2 수용체를 60~80 % 차지해야 효과가 난다. 치료저항 조현병의 상당수는 도파민 합성이 높지 않은 「비도파민형」 병태로 생각되며, 그래서 D2 를 더 세게 막아도 반응하지 않는다. 클로자핀은 D2 결합이 약하고 빨리 풀리는 대신 5-HT2A·D4·무스카린·아드레날린 수용체 등에 넓게 작용하며, 글루탐산 신호에도 영향을 주어 다른 약에 반응하지 않는 환자의 30~60 % 에서 효과를 낸다.<br> <b>왜 자살 행동이 근거를 더하나</b>: 무작위 연구(InterSePT)에서 클로자핀은 올란자핀보다 조현병 환자의 자살 시도를 줄였다. 자살 위험이 큰 환자에게는 치료저항이 아니어도 클로자핀을 고려한다.<br> <b>왜 호중구를 보나</b>: 클로자핀은 약 1 % 에서 면역 매개 무과립구증을 일으키며 대부분 처음 18주 안에 생긴다. 정기적 절대호중구수 감시로 조기 발견하면 대부분 회복된다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">클로자핀(정답)</th><th>장기지속형 주사제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해결하는 문제</td><td><b>약이 듣지 않음</b>(치료저항)</td><td>약을 먹지 않음(복약 불이행)</td></tr> <tr><td>이 환자</td><td>복약 확인됨 + 두 약 실패 + 자살 행동</td><td>혈중 농도로 복약이 확인되어 해당 없음</td></tr> <tr><td>감시</td><td>절대호중구수, 심근염, 발작, 대사</td><td>주사 부위, 추체외로 증상</td></tr> </tbody></table> 반응이 없을 때 먼저 묻는 것은 「먹었는가」다 — 먹었는데 듣지 않았으면 클로자핀, 먹지 않았으면 주사제다.\n- 오답 이유:\n  - ① 두 항정신병약 병용은 클로자핀을 충분히 써도 부분 반응에 그친 환자에서 증강 전략으로 고려되며, 클로자핀 전 단계로 권하지 않는다.\n  - ② 할로페리돌로 바꾸는 것은 첫 항정신병약 하나에만 반응하지 않았을 때 다른 약으로 시도하는 단계에서 정답이 될 수 있다.\n  - ③ 리튬 추가는 조증 삽화가 있는 조현정동장애 양극형에서 기분 증상을 조절할 때 정답이 되며, 조현병의 양성 증상을 줄이지 못한다.\n  - ⑤ 장기지속형 주사제는 증상 재발이 복약 불이행 때문이고 경구약으로 반응을 보인 적이 있는 환자에서 정답이 된다.\n- 함정: 반응하지 않으니 복약 문제라 보고 주사제를 고르는 것 — 혈중 농도로 복약이 확인된 두 약 실패는 치료저항이고 클로자핀의 적응증이다.\n- 학습목표: 충분한 용량·기간의 두 항정신병약에 반응하지 않은 치료저항 조현병, 특히 자살 행동이 있으면 클로자핀을 쓰고 절대호중구수를 감시한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 463: Psychiatric Disorders",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "서로 다른 두 항정신병약을 충분한 용량으로 6주 이상 쓰고, 복약이 확인되었는데도 반응이 없으므로 치료저항 조현병이다. 클로자핀은 치료저항 조현병에서 효과가 입증된 유일한 약이고, 자살 행동을 줄이는 근거도 있어 이 환자에게 특히 적절하다. 무과립구증 위험 때문에 시작 전 절대호중구수(1,500/mm³ 이상)를 확인하고 처음 6개월은 매주, 이후 간격을 늘려 감시하며, 심근염·발작·변비·대사 부작용도 살핀다. 복약 불이행이 원인이 아니므로 장기지속형 주사제는 해결책이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 클로자핀만 다른가</b>: 대부분의 항정신병약은 선조체 D2 수용체를 60~80 % 차지해야 효과가 난다. 치료저항 조현병의 상당수는 도파민 합성이 높지 않은 「비도파민형」 병태로 생각되며, 그래서 D2 를 더 세게 막아도 반응하지 않는다. 클로자핀은 D2 결합이 약하고 빨리 풀리는 대신 5-HT2A·D4·무스카린·아드레날린 수용체 등에 넓게 작용하며, 글루탐산 신호에도 영향을 주어 다른 약에 반응하지 않는 환자의 30~60 % 에서 효과를 낸다.<br> <b>왜 자살 행동이 근거를 더하나</b>: 무작위 연구(InterSePT)에서 클로자핀은 올란자핀보다 조현병 환자의 자살 시도를 줄였다. 자살 위험이 큰 환자에게는 치료저항이 아니어도 클로자핀을 고려한다.<br> <b>왜 호중구를 보나</b>: 클로자핀은 약 1 % 에서 면역 매개 무과립구증을 일으키며 대부분 처음 18주 안에 생긴다. 정기적 절대호중구수 감시로 조기 발견하면 대부분 회복된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">클로자핀(정답)</th><th>장기지속형 주사제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해결하는 문제</td><td><b>약이 듣지 않음</b>(치료저항)</td><td>약을 먹지 않음(복약 불이행)</td></tr> <tr><td>이 환자</td><td>복약 확인됨 + 두 약 실패 + 자살 행동</td><td>혈중 농도로 복약이 확인되어 해당 없음</td></tr> <tr><td>감시</td><td>절대호중구수, 심근염, 발작, 대사</td><td>주사 부위, 추체외로 증상</td></tr> </tbody></table> 반응이 없을 때 먼저 묻는 것은 「먹었는가」다 — 먹었는데 듣지 않았으면 클로자핀, 먹지 않았으면 주사제다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 두 항정신병약 병용은 클로자핀을 충분히 써도 부분 반응에 그친 환자에서 증강 전략으로 고려되며, 클로자핀 전 단계로 권하지 않는다.\n② 할로페리돌로 바꾸는 것은 첫 항정신병약 하나에만 반응하지 않았을 때 다른 약으로 시도하는 단계에서 정답이 될 수 있다.\n③ 리튬 추가는 조증 삽화가 있는 조현정동장애 양극형에서 기분 증상을 조절할 때 정답이 되며, 조현병의 양성 증상을 줄이지 못한다.\n⑤ 장기지속형 주사제는 증상 재발이 복약 불이행 때문이고 경구약으로 반응을 보인 적이 있는 환자에서 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "반응하지 않으니 복약 문제라 보고 주사제를 고르는 것 — 혈중 농도로 복약이 확인된 두 약 실패는 치료저항이고 클로자핀의 적응증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "충분한 용량·기간의 두 항정신병약에 반응하지 않은 치료저항 조현병, 특히 자살 행동이 있으면 클로자핀을 쓰고 절대호중구수를 감시한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 463: Psychiatric Disorders"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "복약이 확인된 두 항정신병약 충분 시도에 반응하지 않은 치료저항 조현병, 특히 자살 행동이 있으면 클로자핀으로 바꾼다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "약국 기록과 혈중 농도로 복약이 확인되어 실패 원인이 불이행이 아니라 약효 부족이다",
+   "steps": 3,
+   "chain": [
+    "리스페리돈 8주·올란자핀 10주를 충분한 용량으로 썼으나 반응 없음",
+    "약국 기록과 혈중 농도로 복약 확인 → 불이행이 아닌 치료저항 조현병",
+    "자살 행동 + 치료저항 + 절대호중구수 정상 → 클로자핀과 호중구 감시"
+   ],
+   "key": [
+    {
+     "item": "리스페리돈 6 mg/일을 8주, 이어서 올란자핀 20 mg/일을 10주",
+     "why": "충분한 용량·기간의 두 약 실패",
+     "also": []
+    },
+    {
+     "item": "약국 기록과 혈중 농도로 복약이 확인되었으나",
+     "why": "불이행을 배제해 주사제 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "손목을 그어 입원한 적이 있다",
+     "why": "자살 행동 — 클로자핀의 추가 적응",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "물질 사용은 없다",
+     "why": "물질 유발 정신병·치료 반응 방해 요인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "절대호중구수 4,100/mm³",
+     "why": "1,500 이상이라 클로자핀을 시작할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "공복 혈당·지질은 정상",
+     "why": "대사 부작용 감시의 기준값 — 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "복약이 확인된 두 항정신병약에 반응하지 않아 치료저항 조현병이고 자살 행동도 있다. 클로자핀으로 바꾸고 절대호중구수를 감시한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈중 농도가 측정되지 않을 만큼 낮아 복약 불이행이 원인이면 장기지속형 주사제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0569",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "약리 — 타목시펜 복용자의 항우울제 선택",
+  "type": "약리 — 타목시펜 복용자의 항우울제 선택",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-06",
+  "vignette": "A 46-year-old woman comes to the physician because of low mood, loss of interest, poor sleep, and difficulty concentrating for 2 months. She is premenopausal and also has frequent hot flashes. Four months ago, she underwent lumpectomy for estrogen receptor-positive invasive ductal carcinoma of the breast and began adjuvant tamoxifen. She takes no other medications. She has no history of mania or suicide attempts and denies suicidal thoughts. Vital signs are within normal limits. Physical examination shows no abnormalities. The physician decides to begin an antidepressant.",
+  "question": "Which of the following is the most appropriate choice to avoid reducing the effectiveness of her cancer therapy?",
+  "options": [
+   "Fluoxetine",
+   "Bupropion",
+   "Duloxetine",
+   "Venlafaxine",
+   "Paroxetine"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Tamoxifen is a prodrug: CYP2D6 converts it (via N-desmethyltamoxifen) to endoxifen, the metabolite responsible for most of its antiestrogenic effect. Strong CYP2D6 inhibitors such as paroxetine, fluoxetine, and bupropion lower endoxifen concentrations, and duloxetine is a moderate inhibitor. Venlafaxine is a weak inhibitor of CYP2D6, treats depression, and also reduces hot flashes, so it is preferred in women taking tamoxifen.\n- 원리: <b>Why the liver enzyme decides drug efficacy</b>: Tamoxifen itself binds the estrogen receptor weakly. Its effect depends on hepatic conversion, mainly through CYP2D6, to endoxifen, which has about 30-100 times greater affinity for the receptor and circulates at much higher levels than 4-hydroxytamoxifen. Anything that blocks CYP2D6 lowers endoxifen — a pharmacologic version of being a poor metabolizer.<br> <b>Why some antidepressants and not others</b>: SSRIs and SNRIs differ greatly in their inhibition of CYP2D6. Paroxetine and fluoxetine (with its long-lived metabolite norfluoxetine) are potent inhibitors; bupropion is also strong. Venlafaxine, desvenlafaxine, citalopram, escitalopram, and mirtazapine have weak or minimal effects.<br> <b>Why hot flashes matter</b>: Tamoxifen worsens vasomotor symptoms, and the same serotonergic-noradrenergic agents that are weak CYP2D6 inhibitors (venlafaxine, low-dose escitalopram) reduce hot flashes, solving two problems with one drug.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Venlafaxine (answer)</th><th>Paroxetine (closest distractor)</th></tr></thead><tbody> <tr><td>CYP2D6 inhibition</td><td><b>Weak</b></td><td>Strong — lowers endoxifen</td></tr> <tr><td>Hot flashes</td><td>Reduces them</td><td>Reduces them (low-dose formulation is approved)</td></tr> <tr><td>Use with tamoxifen</td><td>Preferred</td><td>Avoid</td></tr> </tbody></table> Both drugs treat depression and hot flashes; only their effect on the enzyme that activates tamoxifen separates them.\n- 오답 이유:\n  - (A) Fluoxetine would be correct for depression in a patient without CYP2D6-dependent drugs; its long half-life makes it a poor choice with tamoxifen.\n  - (B) Bupropion would be correct for depression with fatigue or for smoking cessation in a patient not taking tamoxifen, since it strongly inhibits CYP2D6.\n  - (C) Duloxetine would be correct for depression with neuropathic pain, but as a moderate CYP2D6 inhibitor it is less preferred with tamoxifen.\n  - (E) Paroxetine would be correct for hot flashes or depression in a woman not taking tamoxifen, or after switching to an aromatase inhibitor in postmenopausal women.\n- 함정: Choosing paroxetine because it treats hot flashes — its strong CYP2D6 inhibition reduces formation of active tamoxifen.\n- 학습목표: 타목시펜은 CYP2D6 로 활성 대사물 엔독시펜이 되므로 강한 CYP2D6 억제제(파록세틴·플루옥세틴)를 피하고 영향이 적은 항우울제를 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 72: Pharmacogenomics · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 84: Breast Cancer",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Tamoxifen is a prodrug: CYP2D6 converts it (via N-desmethyltamoxifen) to endoxifen, the metabolite responsible for most of its antiestrogenic effect. Strong CYP2D6 inhibitors such as paroxetine, fluoxetine, and bupropion lower endoxifen concentrations, and duloxetine is a moderate inhibitor. Venlafaxine is a weak inhibitor of CYP2D6, treats depression, and also reduces hot flashes, so it is preferred in women taking tamoxifen."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the liver enzyme decides drug efficacy</b>: Tamoxifen itself binds the estrogen receptor weakly. Its effect depends on hepatic conversion, mainly through CYP2D6, to endoxifen, which has about 30-100 times greater affinity for the receptor and circulates at much higher levels than 4-hydroxytamoxifen. Anything that blocks CYP2D6 lowers endoxifen — a pharmacologic version of being a poor metabolizer.<br> <b>Why some antidepressants and not others</b>: SSRIs and SNRIs differ greatly in their inhibition of CYP2D6. Paroxetine and fluoxetine (with its long-lived metabolite norfluoxetine) are potent inhibitors; bupropion is also strong. Venlafaxine, desvenlafaxine, citalopram, escitalopram, and mirtazapine have weak or minimal effects.<br> <b>Why hot flashes matter</b>: Tamoxifen worsens vasomotor symptoms, and the same serotonergic-noradrenergic agents that are weak CYP2D6 inhibitors (venlafaxine, low-dose escitalopram) reduce hot flashes, solving two problems with one drug."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Venlafaxine (answer)</th><th>Paroxetine (closest distractor)</th></tr></thead><tbody> <tr><td>CYP2D6 inhibition</td><td><b>Weak</b></td><td>Strong — lowers endoxifen</td></tr> <tr><td>Hot flashes</td><td>Reduces them</td><td>Reduces them (low-dose formulation is approved)</td></tr> <tr><td>Use with tamoxifen</td><td>Preferred</td><td>Avoid</td></tr> </tbody></table> Both drugs treat depression and hot flashes; only their effect on the enzyme that activates tamoxifen separates them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Fluoxetine would be correct for depression in a patient without CYP2D6-dependent drugs; its long half-life makes it a poor choice with tamoxifen.\n(B) Bupropion would be correct for depression with fatigue or for smoking cessation in a patient not taking tamoxifen, since it strongly inhibits CYP2D6.\n(C) Duloxetine would be correct for depression with neuropathic pain, but as a moderate CYP2D6 inhibitor it is less preferred with tamoxifen.\n(E) Paroxetine would be correct for hot flashes or depression in a woman not taking tamoxifen, or after switching to an aromatase inhibitor in postmenopausal women."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing paroxetine because it treats hot flashes — its strong CYP2D6 inhibition reduces formation of active tamoxifen."
+   },
+   {
+    "k": "학습목표",
+    "v": "타목시펜은 CYP2D6 로 활성 대사물 엔독시펜이 되므로 강한 CYP2D6 억제제(파록세틴·플루옥세틴)를 피하고 영향이 적은 항우울제를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 72: Pharmacogenomics · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 84: Breast Cancer"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "Tamoxifen requires CYP2D6 activation to endoxifen, so an antidepressant with weak CYP2D6 inhibition such as venlafaxine is chosen",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Paroxetine is a strong CYP2D6 inhibitor that lowers endoxifen, whereas venlafaxine is weak",
+   "steps": 2,
+   "chain": [
+    "Tamoxifen is a prodrug activated by CYP2D6 to endoxifen",
+    "Strong CYP2D6 inhibitors lower endoxifen -> choose venlafaxine, a weak inhibitor that also eases hot flashes"
+   ],
+   "key": [
+    {
+     "item": "began adjuvant tamoxifen",
+     "why": "The drug whose activation must be preserved",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no history of mania",
+     "why": "Lowers concern for bipolar disorder, allowing an antidepressant alone",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "frequent hot flashes",
+     "why": "Venlafaxine also treats this symptom",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "low mood, loss of interest, poor sleep, and difficulty concentrating for 2 months",
+     "why": "Establishes depression requiring treatment",
+     "also": []
+    },
+    {
+     "item": "estrogen receptor-positive",
+     "why": "Explains why tamoxifen is used; does not choose among antidepressants",
+     "also": []
+    }
+   ],
+   "summary": "Tamoxifen becomes active endoxifen through CYP2D6. A weak CYP2D6 inhibitor, venlafaxine, treats depression and hot flashes without reducing that activation.",
+   "switch": {
+    "choice": "E",
+    "condition": "If she were postmenopausal and switched to an aromatase inhibitor, which does not need CYP2D6, paroxetine would be acceptable"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0568",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "소아청소년 — 콧물 뒤 쌕쌕거리는 영아",
+  "type": "소아청소년 — 콧물 뒤 쌕쌕거리는 영아",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-06",
+  "vignette": "생후 4개월 남아가 사흘 전 콧물과 기침이 시작된 뒤 어제부터 숨을 빨리 쉬고 쌕쌕거려 왔다. 젖은 평소의 절반 정도 먹고 소변은 하루 4번 보았다. 재태 39주에 태어났고 심장·폐 질환은 없다. 형이 감기를 앓고 있다. 체온 37.9 °C, 맥박 156회/분, 호흡 58회/분이며 실내 공기에서 산소포화도는 93 % 이다. 코가 막혀 있고 약한 늑골 아래 함몰이 있으며, 양쪽 폐에서 수포음과 호기 쌕쌕거림이 들린다. 콧속 흡인 뒤 함몰과 호흡수가 조금 줄었다.",
+  "question": "처치로 가장 적절한 것은?",
+  "options": [
+   "살부타몰 흡입을 정해진 간격으로 반복한다",
+   "경구 덱사메타손을 투여한다",
+   "흉부 X선을 찍고 아목시실린을 투여한다",
+   "고유량 비강 캐뉼라로 산소를 준다",
+   "콧속 흡인과 수분 공급을 하며 경과를 관찰한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 2세 미만 영아에서 상기도 감염 증상 2~3일 뒤 빠른 호흡·흉곽 함몰·수포음·호기 쌕쌕거림이 생긴 것은 세기관지염(주로 RSV)이다. 실내 공기 산소포화도가 90 % 이상이고 먹는 양이 평소 절반 이상이며 탈수가 없으므로 치료는 콧속 흡인·수분 공급의 지지 치료다. 기관지확장제·스테로이드·항생제는 경과를 바꾸지 못해 일상적으로 쓰지 않는다. 증상은 3~5일째 가장 심하므로 악화 징후(먹는 양 감소, 무호흡, 함몰 악화)를 보호자에게 교육한다.\n- 원리: <b>왜 기관지확장제가 듣지 않나</b>: 천식의 기도 폐쇄는 기관지 평활근 수축이 중심이라 베타 작용제가 바로 푼다. 세기관지염은 바이러스가 세기관지 상피를 괴사시키고 점액·탈락 세포·부종이 지름 1~2 mm 의 작은 기도를 막는 병이다. 평활근 수축이 주된 기전이 아니므로 살부타몰·에피네프린·스테로이드가 입원 기간이나 중증도를 줄이지 못했다.<br> <b>왜 콧속 흡인인가</b>: 영아는 주로 코로 숨을 쉬므로 콧물만으로도 호흡 일이 크게 는다. 흡인으로 비강을 열면 함몰과 호흡수가 줄고 수유가 나아진다(이 아이처럼).<br> <b>언제 산소인가</b>: 미국소아과학회 지침은 산소포화도가 지속적으로 90 % 미만일 때 산소를 주도록 한다. 경계값보다 조금 낮은 수치를 쫓아 산소를 주면 입원만 길어진다. 고유량 비강 캐뉼라는 저산소증이나 호흡 부전이 진행할 때 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">세기관지염(정답 — 지지 치료)</th><th>천식·반응성 기도(살부타몰 오답)</th></tr></thead><tbody> <tr><td>나이</td><td><b>2세 미만</b>, 첫 쌕쌕거림</td><td>대개 2세 이상, 반복 쌕쌕거림·아토피</td></tr> <tr><td>청진</td><td>수포음 + 쌕쌕거림</td><td>쌕쌕거림 위주</td></tr> <tr><td>기관지확장제</td><td>효과 없음 — 일상적으로 안 씀</td><td>즉시 호전</td></tr> </tbody></table> 첫 쌕쌕거림의 영아는 「흡입제에 반응할 기도」가 아니라 「막힌 작은 기도」다 — 산소포화도와 수유가 입원·산소 여부를 정한다.\n- 오답 이유:\n  - ① 살부타몰 반복 흡입은 반복되는 쌕쌕거림·아토피 가족력이 있는 2세 이상 아이의 천식 악화에서 정답이 된다.\n  - ② 경구 덱사메타손은 컹컹 짖는 기침과 흡기 그렁거림이 있는 크룹이나 천식 악화에서 정답이 된다.\n  - ③ 흉부 X선과 아목시실린은 고열·한쪽 국소 수포음·호흡음 감소로 세균성 폐렴이 의심될 때 정답이 된다.\n  - ④ 고유량 비강 캐뉼라 산소는 산소포화도가 지속적으로 90 % 미만이거나 흡인 뒤에도 함몰·호흡 부전이 진행할 때 정답이 된다.\n- 함정: 쌕쌕거림이 들리면 기관지확장제를 고르는 것 — 2세 미만 첫 쌕쌕거림의 세기관지염은 지지 치료가 표준이다.\n- 학습목표: 콧물 뒤 생긴 쌕쌕거림·흉곽 함몰의 영아 세기관지염에서 산소포화도 90 % 이상이면 기관지확장제·스테로이드 없이 흡인·수분 공급의 지지 치료를 한다\n- 근거·출처: Ralston SL, Lieberthal AS, Meissner HC, et al. Clinical practice guideline: the diagnosis, management, and prevention of bronchiolitis. Pediatrics. 2014;134(5):e1474-e1502",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "2세 미만 영아에서 상기도 감염 증상 2~3일 뒤 빠른 호흡·흉곽 함몰·수포음·호기 쌕쌕거림이 생긴 것은 세기관지염(주로 RSV)이다. 실내 공기 산소포화도가 90 % 이상이고 먹는 양이 평소 절반 이상이며 탈수가 없으므로 치료는 콧속 흡인·수분 공급의 지지 치료다. 기관지확장제·스테로이드·항생제는 경과를 바꾸지 못해 일상적으로 쓰지 않는다. 증상은 3~5일째 가장 심하므로 악화 징후(먹는 양 감소, 무호흡, 함몰 악화)를 보호자에게 교육한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 기관지확장제가 듣지 않나</b>: 천식의 기도 폐쇄는 기관지 평활근 수축이 중심이라 베타 작용제가 바로 푼다. 세기관지염은 바이러스가 세기관지 상피를 괴사시키고 점액·탈락 세포·부종이 지름 1~2 mm 의 작은 기도를 막는 병이다. 평활근 수축이 주된 기전이 아니므로 살부타몰·에피네프린·스테로이드가 입원 기간이나 중증도를 줄이지 못했다.<br> <b>왜 콧속 흡인인가</b>: 영아는 주로 코로 숨을 쉬므로 콧물만으로도 호흡 일이 크게 는다. 흡인으로 비강을 열면 함몰과 호흡수가 줄고 수유가 나아진다(이 아이처럼).<br> <b>언제 산소인가</b>: 미국소아과학회 지침은 산소포화도가 지속적으로 90 % 미만일 때 산소를 주도록 한다. 경계값보다 조금 낮은 수치를 쫓아 산소를 주면 입원만 길어진다. 고유량 비강 캐뉼라는 저산소증이나 호흡 부전이 진행할 때 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">세기관지염(정답 — 지지 치료)</th><th>천식·반응성 기도(살부타몰 오답)</th></tr></thead><tbody> <tr><td>나이</td><td><b>2세 미만</b>, 첫 쌕쌕거림</td><td>대개 2세 이상, 반복 쌕쌕거림·아토피</td></tr> <tr><td>청진</td><td>수포음 + 쌕쌕거림</td><td>쌕쌕거림 위주</td></tr> <tr><td>기관지확장제</td><td>효과 없음 — 일상적으로 안 씀</td><td>즉시 호전</td></tr> </tbody></table> 첫 쌕쌕거림의 영아는 「흡입제에 반응할 기도」가 아니라 「막힌 작은 기도」다 — 산소포화도와 수유가 입원·산소 여부를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 살부타몰 반복 흡입은 반복되는 쌕쌕거림·아토피 가족력이 있는 2세 이상 아이의 천식 악화에서 정답이 된다.\n② 경구 덱사메타손은 컹컹 짖는 기침과 흡기 그렁거림이 있는 크룹이나 천식 악화에서 정답이 된다.\n③ 흉부 X선과 아목시실린은 고열·한쪽 국소 수포음·호흡음 감소로 세균성 폐렴이 의심될 때 정답이 된다.\n④ 고유량 비강 캐뉼라 산소는 산소포화도가 지속적으로 90 % 미만이거나 흡인 뒤에도 함몰·호흡 부전이 진행할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "쌕쌕거림이 들리면 기관지확장제를 고르는 것 — 2세 미만 첫 쌕쌕거림의 세기관지염은 지지 치료가 표준이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "콧물 뒤 생긴 쌕쌕거림·흉곽 함몰의 영아 세기관지염에서 산소포화도 90 % 이상이면 기관지확장제·스테로이드 없이 흡인·수분 공급의 지지 치료를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ralston SL, Lieberthal AS, Meissner HC, et al. Clinical practice guideline: the diagnosis, management, and prevention of bronchiolitis. Pediatrics. 2014;134(5):e1474-e1502"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "산소포화도 90 % 이상이고 수유가 유지되는 영아 세기관지염은 콧속 흡인과 수분 공급의 지지 치료만 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "2세 미만의 첫 쌕쌕거림이 상기도 감염 뒤 수포음과 함께 생겨 기관지 평활근 수축이 아닌 세기관지 폐쇄다",
+   "steps": 3,
+   "chain": [
+    "생후 4개월 + 콧물 뒤 빠른 호흡·수포음·호기 쌕쌕거림 → 세기관지염",
+    "기관지확장제·스테로이드는 세기관지 폐쇄를 풀지 못함",
+    "산소포화도 93 % · 수유 절반 · 소변 유지 → 지지 치료"
+   ],
+   "key": [
+    {
+     "item": "사흘 전 콧물과 기침이 시작된 뒤",
+     "why": "세기관지염의 전형적 경과",
+     "also": []
+    },
+    {
+     "item": "양쪽 폐에서 수포음과 호기 쌕쌕거림",
+     "why": "작은 기도 침범",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "재태 39주에 태어났고 심장·폐 질환은 없다",
+     "why": "중증 위험 인자가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "산소포화도는 93 %",
+     "why": "90 % 이상이라 산소가 필요 없다",
+     "also": []
+    },
+    {
+     "item": "젖은 평소의 절반 정도 먹고 소변은 하루 4번",
+     "why": "탈수가 없어 외래·경구 수분 공급 가능",
+     "also": []
+    },
+    {
+     "item": "콧속 흡인 뒤 함몰과 호흡수가 조금 줄었다",
+     "why": "흡인이 효과적인 지지 치료임을 보여 준다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "형이 감기를 앓고 있다",
+     "why": "감염 경로 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "생후 4개월 영아의 콧물 뒤 쌕쌕거림·수포음은 세기관지염이다. 산소포화도 93 %, 수유 유지로 흡인과 수분 공급의 지지 치료만 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "흡인 뒤에도 산소포화도가 지속적으로 90 % 미만이거나 함몰·무호흡이 진행하면 고유량 비강 캐뉼라 산소"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0564",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "산과 — 임신 35주 두통과 고혈압",
+  "type": "산과 — 임신 35주 두통과 고혈압",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-06",
+  "vignette": "31세 초산부가 임신 35주에 하루 전부터 시작된 이마 쪽 두통과 눈앞이 번쩍거리는 증상으로 왔다. 정기 진찰에서 임신 전 혈압은 정상이었다. 혈압 166/112 mmHg(15분 뒤 다시 재어 164/110 mmHg), 맥박 88회/분이다. 다리에 오목부종이 있고 무릎반사는 항진되어 있다. 경련은 없었다. 소변 단백/크레아티닌 비는 0.9 이다. 혈소판 92,000/mm³, AST 48 U/L, ALT 52 U/L, 혈청 크레아티닌 0.8 mg/dL 이다. 태아심박동 기록은 범주 I 이고 초음파에서 태아 체중은 50 백분위수다.",
+  "question": "처치로 가장 적절한 것은?",
+  "options": [
+   "외래에서 라베탈롤을 처방하고 매주 진찰한다",
+   "즉시 제왕절개술을 한다",
+   "황산마그네슘 정주와 혈압 조절 후 분만한다",
+   "베타메타손을 투여하고 48시간 뒤 분만한다",
+   "입원하여 혈압약만 쓰며 37주까지 기다린다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 임신 20주 이후 새로 생긴 고혈압과 단백뇨(단백/크레아티닌 비 0.3 이상)로 자간전증이고, 수축기 160 mmHg 이상이 15분 간격으로 지속되며 두통·시각 증상·혈소판 감소(100,000 미만)가 있어 중증 양상이다. 34주 이후의 중증 자간전증은 기다려서 얻는 태아 이득이 산모 위험(자간증·뇌출혈·태반조기박리)보다 작으므로 안정화 후 분만한다. 경련 예방으로 황산마그네슘을 주고, 라베탈롤·히드랄라진 정주나 니페디핀 경구로 혈압을 낮추며, 태아 상태가 안정적이고 산과적 금기가 없으면 유도분만을 시도한다.\n- 원리: <b>왜 분만이 치료인가</b>: 자간전증은 태반의 나선동맥 재형성이 불완전해 생긴 태반 허혈이 sFlt-1 같은 항혈관신생 인자를 내보내 산모 혈관내피를 손상시키는 병이다. 원인이 태반이므로 태반을 내보내야 진행이 멈춘다. 혈압약은 뇌출혈을 막을 뿐 병의 진행은 막지 못한다.<br> <b>왜 34주가 경계인가</b>: 34주 전에는 조산의 위험이 크므로 산모가 안정적이면 스테로이드로 폐 성숙을 돕고 면밀히 감시하며 기다릴 수 있다. 34주 이후에는 신생아 예후가 충분히 좋아 기다릴 이유가 없고, 중증 양상이 있으면 분만한다(중증 양상이 없으면 37주에 분만).<br> <b>왜 황산마그네슘인가</b>: 마그네슘은 NMDA 수용체와 칼슘 통로를 막아 대뇌 피질의 흥분을 낮추고 뇌혈관 경련을 줄여 자간증을 예방한다. 무릎반사 소실·호흡 저하가 독성의 첫 신호이며, 해독제는 글루콘산칼슘이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">34주 이후 중증 자간전증(정답)</th><th>34주 전 중증 자간전증(베타메타손 오답)</th></tr></thead><tbody> <tr><td>재태 주수</td><td><b>35주</b></td><td>24~33주 6일</td></tr> <tr><td>스테로이드</td><td>대개 필요 없음</td><td>베타메타손 후 48시간 내 분만 고려</td></tr> <tr><td>분만</td><td>안정화 후 바로</td><td>산모·태아가 안정적이면 34주까지 기다리기도 함</td></tr> </tbody></table> 같은 중증 양상이라도 재태 주수가 「기다릴 이득」의 크기를 정한다 — 34주를 넘으면 분만, 전이면 스테로이드와 감시를 저울질한다.\n- 오답 이유:\n  - ① 외래 라베탈롤과 주 1회 진찰은 단백뇨·중증 소견이 없는 임신 전부터 있던 만성 고혈압에서 정답이 된다.\n  - ② 즉시 제왕절개는 태반조기박리·지속되는 태아 서맥처럼 산과적 응급 적응증이 있을 때 정답이며, 자간전증 자체는 제왕절개 적응증이 아니다.\n  - ④ 베타메타손 후 48시간 뒤 분만은 34주 전의 중증 자간전증에서 산모·태아가 안정적일 때 정답이 된다.\n  - ⑤ 혈압약만 쓰며 37주까지 기다리는 것은 중증 양상이 없는 자간전증이나 임신고혈압에서 정답이 된다.\n- 함정: 혈압을 낮추면 기다려도 된다고 생각하는 것 — 34주 이후 중증 양상이면 안정화 후 분만이 치료다.\n- 학습목표: 임신 34주 이후 중증 양상의 자간전증(수축기 160 mmHg 이상, 두통, 혈소판 감소)에서 황산마그네슘과 혈압 조절 뒤 분만을 결정한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational hypertension and preeclampsia. Obstet Gynecol. 2020;135(6):e237-e260",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "임신 20주 이후 새로 생긴 고혈압과 단백뇨(단백/크레아티닌 비 0.3 이상)로 자간전증이고, 수축기 160 mmHg 이상이 15분 간격으로 지속되며 두통·시각 증상·혈소판 감소(100,000 미만)가 있어 중증 양상이다. 34주 이후의 중증 자간전증은 기다려서 얻는 태아 이득이 산모 위험(자간증·뇌출혈·태반조기박리)보다 작으므로 안정화 후 분만한다. 경련 예방으로 황산마그네슘을 주고, 라베탈롤·히드랄라진 정주나 니페디핀 경구로 혈압을 낮추며, 태아 상태가 안정적이고 산과적 금기가 없으면 유도분만을 시도한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 분만이 치료인가</b>: 자간전증은 태반의 나선동맥 재형성이 불완전해 생긴 태반 허혈이 sFlt-1 같은 항혈관신생 인자를 내보내 산모 혈관내피를 손상시키는 병이다. 원인이 태반이므로 태반을 내보내야 진행이 멈춘다. 혈압약은 뇌출혈을 막을 뿐 병의 진행은 막지 못한다.<br> <b>왜 34주가 경계인가</b>: 34주 전에는 조산의 위험이 크므로 산모가 안정적이면 스테로이드로 폐 성숙을 돕고 면밀히 감시하며 기다릴 수 있다. 34주 이후에는 신생아 예후가 충분히 좋아 기다릴 이유가 없고, 중증 양상이 있으면 분만한다(중증 양상이 없으면 37주에 분만).<br> <b>왜 황산마그네슘인가</b>: 마그네슘은 NMDA 수용체와 칼슘 통로를 막아 대뇌 피질의 흥분을 낮추고 뇌혈관 경련을 줄여 자간증을 예방한다. 무릎반사 소실·호흡 저하가 독성의 첫 신호이며, 해독제는 글루콘산칼슘이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">34주 이후 중증 자간전증(정답)</th><th>34주 전 중증 자간전증(베타메타손 오답)</th></tr></thead><tbody> <tr><td>재태 주수</td><td><b>35주</b></td><td>24~33주 6일</td></tr> <tr><td>스테로이드</td><td>대개 필요 없음</td><td>베타메타손 후 48시간 내 분만 고려</td></tr> <tr><td>분만</td><td>안정화 후 바로</td><td>산모·태아가 안정적이면 34주까지 기다리기도 함</td></tr> </tbody></table> 같은 중증 양상이라도 재태 주수가 「기다릴 이득」의 크기를 정한다 — 34주를 넘으면 분만, 전이면 스테로이드와 감시를 저울질한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 외래 라베탈롤과 주 1회 진찰은 단백뇨·중증 소견이 없는 임신 전부터 있던 만성 고혈압에서 정답이 된다.\n② 즉시 제왕절개는 태반조기박리·지속되는 태아 서맥처럼 산과적 응급 적응증이 있을 때 정답이며, 자간전증 자체는 제왕절개 적응증이 아니다.\n④ 베타메타손 후 48시간 뒤 분만은 34주 전의 중증 자간전증에서 산모·태아가 안정적일 때 정답이 된다.\n⑤ 혈압약만 쓰며 37주까지 기다리는 것은 중증 양상이 없는 자간전증이나 임신고혈압에서 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈압을 낮추면 기다려도 된다고 생각하는 것 — 34주 이후 중증 양상이면 안정화 후 분만이 치료다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 34주 이후 중증 양상의 자간전증(수축기 160 mmHg 이상, 두통, 혈소판 감소)에서 황산마그네슘과 혈압 조절 뒤 분만을 결정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational hypertension and preeclampsia. Obstet Gynecol. 2020;135(6):e237-e260"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "임신 34주 이후 중증 양상의 자간전증은 황산마그네슘과 혈압 조절로 안정화한 뒤 분만한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "재태 주수가 35주로 34주를 넘어 스테로이드를 위해 분만을 늦출 이득이 없다",
+   "steps": 3,
+   "chain": [
+    "새로 생긴 고혈압 + 단백/크레아티닌 비 0.9 → 자간전증",
+    "혈압 166/112 mmHg 지속 + 두통·시각 증상 + 혈소판 92,000 → 중증 양상",
+    "35주(34주 이후) → 황산마그네슘·혈압 조절 후 분만"
+   ],
+   "key": [
+    {
+     "item": "혈압 166/112 mmHg(15분 뒤 다시 재어 164/110 mmHg)",
+     "why": "중증 범위 고혈압의 지속",
+     "also": []
+    },
+    {
+     "item": "소변 단백/크레아티닌 비는 0.9",
+     "why": "자간전증 진단 기준",
+     "also": []
+    },
+    {
+     "item": "혈소판 92,000/mm³",
+     "why": "중증 양상(100,000 미만)",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "임신 35주",
+     "why": "34주 이후라 분만을 정한다",
+     "also": []
+    },
+    {
+     "item": "태아심박동 기록은 범주 I",
+     "why": "응급 제왕절개가 필요 없어 유도분만을 시도할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 크레아티닌 0.8 mg/dL",
+     "why": "신기능은 정상 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "새 고혈압과 단백뇨, 중증 범위 혈압·두통·혈소판 감소로 중증 자간전증이다. 35주이므로 황산마그네슘과 혈압 조절 뒤 분만한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 소견이 임신 31주에 있고 산모·태아가 안정적이면 베타메타손 후 분만 시기 결정"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0562",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·피부·소아·약리·정신)",
+  "subtopic": "순환기 — 감기 뒤 생긴 앉으면 나아지는 가슴 통증",
+  "type": "순환기 — 감기 뒤 생긴 앉으면 나아지는 가슴 통증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-06",
+  "vignette": "A 27-year-old man comes to the emergency department because of chest pain for 2 days. The pain is sharp, worsens when he breathes in or lies down, and improves when he sits up and leans forward. Ten days ago, he had a runny nose and sore throat. His temperature is 37.8°C (100°F), pulse is 96/min, respirations are 18/min, and blood pressure is 124/76 mm Hg. There is no jugular venous distention. A three-component scratching sound is heard at the left lower sternal border. An ECG shows concave ST-segment elevation and PR-segment depression in multiple leads. High-sensitivity troponin is below the upper reference limit. Echocardiography shows a small pericardial effusion with normal wall motion.",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Pericardiocentesis",
+   "Intravenous heparin",
+   "Ibuprofen and colchicine",
+   "High-dose prednisone",
+   "Aspirin, clopidogrel, and coronary angiography"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Positional pleuritic chest pain, a pericardial friction rub, diffuse concave ST elevation with PR depression, and a small effusion meet the diagnostic criteria for acute pericarditis (at least two of four). The preceding upper respiratory infection suggests a viral (idiopathic) cause, and normal troponin and wall motion make myocardial involvement or infarction unlikely. With no high-risk features (fever above 38°C, large effusion, tamponade, immunosuppression, anticoagulation), he is treated as an outpatient with a high-dose NSAID (or aspirin) plus colchicine for 3 months; colchicine speeds symptom relief and roughly halves recurrence.\n- 원리: <b>Why ST rises in many leads</b>: The inflammation of pericarditis spreads over the whole epicardial surface of the myocardium, so it is not limited to one coronary territory. Concave ST elevation appears in nearly all leads except aVR and V1, and atrial surface injury produces PR depression (with PR elevation in aVR). The absence of reciprocal ST depression and Q waves separates it from infarction.<br> <b>Why sitting forward helps</b>: Pain and the rub arise when the inflamed parietal and visceral pericardium rub against each other. Leaning forward moves the heart away from the anterior pericardium and lessens friction.<br> <b>Why an NSAID plus colchicine</b>: NSAIDs reduce prostaglandins and relieve pain and inflammation, while colchicine blocks neutrophil microtubule assembly and inflammasome activation, breaking the inflammatory loop that underlies recurrence. Early glucocorticoids increase recurrences and are reserved for NSAID contraindications or autoimmune causes.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Acute pericarditis (answer)</th><th>ST-elevation MI (closest distractor)</th></tr></thead><tbody> <tr><td>Pain</td><td>Sharp, changes with <b>position and breathing</b></td><td>Pressure-like, unrelated to position</td></tr> <tr><td>ST change</td><td>Diffuse concave elevation + PR depression, no reciprocal change</td><td>Convex elevation in one territory + reciprocal depression</td></tr> <tr><td>Troponin, wall motion</td><td>Normal (elevated if myocarditis coexists)</td><td>Elevated, regional wall-motion abnormality</td></tr> </tbody></table> The same ST elevation means different things: its distribution, PR change, troponin, and wall motion decide whether the patient goes to the catheterization laboratory.\n- 오답 이유:\n  - (A) Pericardiocentesis would be correct for a large effusion with tamponade (hypotension, jugular venous distention, pulsus paradoxus) or suspected purulent or malignant effusion.\n  - (B) Heparin would be correct for pulmonary embolism or acute coronary syndrome; in pericarditis it risks hemorrhage into the pericardial space.\n  - (D) High-dose prednisone would be correct when NSAIDs and colchicine are contraindicated or when pericarditis is due to autoimmune disease; used first, it increases recurrence.\n  - (E) Antiplatelet therapy and angiography would be correct for convex ST elevation in one coronary territory with reciprocal depression, elevated troponin, and regional wall-motion loss.\n- 함정: Treating the ST elevation as myocardial infarction — diffuse distribution, PR depression, and normal troponin and wall motion indicate pericarditis.\n- 학습목표: 감기 뒤 앉아서 앞으로 숙이면 나아지는 흉통·심막마찰음·광범위 ST 상승과 PR 하강을 급성 심막염으로 판단하고 NSAID 와 콜히친을 함께 쓴다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 281: Pericardial Disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Positional pleuritic chest pain, a pericardial friction rub, diffuse concave ST elevation with PR depression, and a small effusion meet the diagnostic criteria for acute pericarditis (at least two of four). The preceding upper respiratory infection suggests a viral (idiopathic) cause, and normal troponin and wall motion make myocardial involvement or infarction unlikely. With no high-risk features (fever above 38°C, large effusion, tamponade, immunosuppression, anticoagulation), he is treated as an outpatient with a high-dose NSAID (or aspirin) plus colchicine for 3 months; colchicine speeds symptom relief and roughly halves recurrence."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ST rises in many leads</b>: The inflammation of pericarditis spreads over the whole epicardial surface of the myocardium, so it is not limited to one coronary territory. Concave ST elevation appears in nearly all leads except aVR and V1, and atrial surface injury produces PR depression (with PR elevation in aVR). The absence of reciprocal ST depression and Q waves separates it from infarction.<br> <b>Why sitting forward helps</b>: Pain and the rub arise when the inflamed parietal and visceral pericardium rub against each other. Leaning forward moves the heart away from the anterior pericardium and lessens friction.<br> <b>Why an NSAID plus colchicine</b>: NSAIDs reduce prostaglandins and relieve pain and inflammation, while colchicine blocks neutrophil microtubule assembly and inflammasome activation, breaking the inflammatory loop that underlies recurrence. Early glucocorticoids increase recurrences and are reserved for NSAID contraindications or autoimmune causes."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Acute pericarditis (answer)</th><th>ST-elevation MI (closest distractor)</th></tr></thead><tbody> <tr><td>Pain</td><td>Sharp, changes with <b>position and breathing</b></td><td>Pressure-like, unrelated to position</td></tr> <tr><td>ST change</td><td>Diffuse concave elevation + PR depression, no reciprocal change</td><td>Convex elevation in one territory + reciprocal depression</td></tr> <tr><td>Troponin, wall motion</td><td>Normal (elevated if myocarditis coexists)</td><td>Elevated, regional wall-motion abnormality</td></tr> </tbody></table> The same ST elevation means different things: its distribution, PR change, troponin, and wall motion decide whether the patient goes to the catheterization laboratory."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Pericardiocentesis would be correct for a large effusion with tamponade (hypotension, jugular venous distention, pulsus paradoxus) or suspected purulent or malignant effusion.\n(B) Heparin would be correct for pulmonary embolism or acute coronary syndrome; in pericarditis it risks hemorrhage into the pericardial space.\n(D) High-dose prednisone would be correct when NSAIDs and colchicine are contraindicated or when pericarditis is due to autoimmune disease; used first, it increases recurrence.\n(E) Antiplatelet therapy and angiography would be correct for convex ST elevation in one coronary territory with reciprocal depression, elevated troponin, and regional wall-motion loss."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the ST elevation as myocardial infarction — diffuse distribution, PR depression, and normal troponin and wall motion indicate pericarditis."
+   },
+   {
+    "k": "학습목표",
+    "v": "감기 뒤 앉아서 앞으로 숙이면 나아지는 흉통·심막마찰음·광범위 ST 상승과 PR 하강을 급성 심막염으로 판단하고 NSAID 와 콜히친을 함께 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 281: Pericardial Disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Acute pericarditis without high-risk features is treated with an NSAID plus colchicine",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "ST elevation spans multiple leads with PR depression, and troponin and wall motion are normal",
+   "steps": 2,
+   "chain": [
+    "Positional chest pain + friction rub + diffuse ST elevation with PR depression -> acute pericarditis",
+    "Normal troponin and no high-risk features -> NSAID plus colchicine"
+   ],
+   "key": [
+    {
+     "item": "improves when he sits up and leans forward",
+     "why": "Typical pericardial pain",
+     "also": []
+    },
+    {
+     "item": "A three-component scratching sound",
+     "why": "Pericardial friction rub — a diagnostic criterion",
+     "also": []
+    },
+    {
+     "item": "concave ST-segment elevation and PR-segment depression in multiple leads",
+     "why": "ECG of pericarditis rather than infarction",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "High-sensitivity troponin is below the upper reference limit",
+     "why": "Lowers the likelihood of infarction or myocarditis",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "There is no jugular venous distention",
+     "why": "No tamponade, so pericardiocentesis is not needed",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Ten days ago, he had a runny nose and sore throat",
+     "why": "Suggests a viral cause but does not change treatment",
+     "also": []
+    }
+   ],
+   "summary": "Positional chest pain, a friction rub, and diffuse ST elevation with PR depression indicate acute pericarditis. With normal troponin and no high-risk features, an NSAID plus colchicine is given.",
+   "switch": {
+    "choice": "A",
+    "condition": "With hypotension, jugular venous distention, pulsus paradoxus, and a large effusion, pericardiocentesis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0561",
   "exam": "imaging",
   "style": "usmle_style",

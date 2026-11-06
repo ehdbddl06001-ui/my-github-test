@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4442,
+  "total": 4451,
   "byType": {
    "paper": 902,
    "kmle": 1728,
+   "imaging": 569,
    "concept": 149,
    "usmle": 240,
-   "imaging": 560,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 111,
    "Hematology": 105,
    "Laboratory Medicine": 93,
-   "산부인과": 76,
-   "순환기": 64,
+   "산부인과": 77,
+   "순환기": 65,
    "호흡기": 37,
-   "소화기": 35,
-   "소아과": 30,
+   "소화기": 36,
+   "소아과": 31,
    "Physiology": 26,
    "감염": 26,
    "신경": 26,
+   "응급·중환자": 26,
    "혈액·종양": 26,
    "내분비": 25,
    "병리·조직학": 25,
    "신장·비뇨기": 25,
-   "응급·중환자": 25,
-   "피부과": 23,
-   "외과": 22,
+   "피부과": 24,
+   "외과": 23,
    "Pharmacology": 20,
    "예방의학·역학": 20,
    "Biochemistry": 19,
    "Microbiology": 18,
+   "약리": 16,
    "Immunology": 15,
    "Internal Medicine": 15,
-   "약리": 15,
+   "정신과": 15,
    "근골격·류마티스": 14,
-   "정신과": 14,
    "안과": 12,
    "영상의학": 10,
    "이비인후과": 10,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1267,
-   "high": 3122,
+   "high": 3131,
    "low": 53
   },
   "tagCount": 5318
@@ -788,6 +788,163 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1732.md",
    "snippet": "68세 여자가 당뇨병 정기 진료에서 맥이 불규칙하다는 말을 듣고 심전도를 찍었다. 2주 전부터 가끔 가슴이 두근거렸지만 숨참·가슴 통증·실신은 없었다. 고혈압과 제2형 당뇨병으로 암로디핀과 메트포르민을 먹고 있다. 뇌졸중·일과성 허혈발작·위장관 출혈의 과거력은 없고, 술은 마시지 않는다. 진찰에서 심잡음은 없고 폐음은 깨끗하며 다리 부종은 없다. 심박수 조절을 위해 베타차단제를 시작했다. 활력징후와 검사 결과는 자료와 같다. ",
    "text": "Cardiology An Irregular Pulse Found at a Diabetes Clinic Visit in a Woman in Her Late Sixties atrial-fibrillation stroke-prevention anticoagulation ecg KMLE 2026 / Claude 68세 여자가 당뇨병 정기 진료에서 맥이 불규칙하다는 말을 듣고 심전도를 찍었다. 2주 전부터 가끔 가슴이 두근거렸지만 숨참·가슴 통증·실신은 없었다. 고혈압과 제2형 당뇨병으로 암로디핀과 메트포르민을 먹고 있다. 뇌졸중·일과성 허혈발작·위장관 출혈의 과거력은 없고, 술은 마시지 않는다. 진찰에서 심잡음은 없고 폐음은 깨끗하며 다리 부종은 없다. 심박수 조절을 위해 베타차단제를 시작했다. 활력징후와 검사 결과는 자료와 같다. 뇌졸중 예방을 위해 함께 시작할 가장 적절한 약은? A. 아스피린 경구 투여 B. 와파린 경구 투여 C. 아픽사반 경구 투여 D. 아스피린·클로피도그렐 병용 E. 저분자량 헤파린 주사 심전도는 P파가 없고 RR 간격이 불규칙한 심방세동이다. 고혈압·당뇨병·65–74세·여성으로 CHA2DS2 VASc 점수가 4점이라 항응고가 필요하다. 중등도 이상의 승모판 협착이나 기계판막이 없고 신장·간 기능이 정상이므로 와파린보다 직접 경구 항응고제(아픽사반)를 먼저 쓴다."
+  },
+  {
+   "id": "imaging-2026-0570",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 두 가지 항정신병약에 반응하지 않은 조현병",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0570.md",
+   "snippet": "24세 남자가 3년 전 조현병을 진단받은 뒤 환청과 피해망상이 계속되어 왔다. 리스페리돈 6 mg/일을 8주, 이어서 올란자핀 20 mg/일을 10주 복용하였고 약국 기록과 혈중 농도로 복약이 확인되었으나 증상은 거의 줄지 않았다. 한 달 전 「죽으라」는 환청을 듣고 손목을 그어 입원한 적이 있다. 물질 사용은 없다. 현재 혈압 122/78 mmHg, 맥박 80회/분이다. 혈액검사에서 백혈구 6,800/mm³, 절대호중구수 4",
+   "text": "정신과 정신 — 두 가지 항정신병약에 반응하지 않은 조현병 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 24세 남자가 3년 전 조현병을 진단받은 뒤 환청과 피해망상이 계속되어 왔다. 리스페리돈 6 mg/일을 8주, 이어서 올란자핀 20 mg/일을 10주 복용하였고 약국 기록과 혈중 농도로 복약이 확인되었으나 증상은 거의 줄지 않았다. 한 달 전 「죽으라」는 환청을 듣고 손목을 그어 입원한 적이 있다. 물질 사용은 없다. 현재 혈압 122/78 mmHg, 맥박 80회/분이다. 혈액검사에서 백혈구 6,800/mm³, 절대호중구수 4,100/mm³ 이고 공복 혈당·지질은 정상이다. 심전도는 정상이다. 다음 치료로 가장 적절한 것은? A. 올란자핀에 리스페리돈을 더해 두 약을 함께 쓴다 B. 할로페리돌로 바꾼다 C. 올란자핀을 유지하고 리튬을 더한다 D. 클로자핀으로 바꾸고 절대호중구수를 정기적으로 확인한다 E. 아리피프라졸 장기지속형 주사제로 바꾼다"
+  },
+  {
+   "id": "imaging-2026-0569",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 타목시펜 복용자의 항우울제 선택",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0569.md",
+   "snippet": "A 46 year old woman comes to the physician because of low mood, loss of interest, poor sleep, and difficulty concentrating for 2 months. She is premenopausal and also has frequent hot flashes. Four months ago, she underwent lumpectomy for e",
+   "text": "약리 약리 — 타목시펜 복용자의 항우울제 선택 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 A 46 year old woman comes to the physician because of low mood, loss of interest, poor sleep, and difficulty concentrating for 2 months. She is premenopausal and also has frequent hot flashes. Four months ago, she underwent lumpectomy for estrogen receptor positive invasive ductal carcinoma of the breast and began adjuvant tamoxifen. She takes no other medications. She has no history of mania or suicide attempts and denies suicidal thoughts. Vital signs are within normal limits. Physical examination shows no abnormalities. The physician decides to begin an antidepressant. Which of the following is the most appropriate choice to avoid reducing the effectiveness of her cancer therapy? A. Fluoxetine B. Bupropion C. Duloxetine D. Venlafaxine E. Paroxetine"
+  },
+  {
+   "id": "imaging-2026-0568",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 콧물 뒤 쌕쌕거리는 영아",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0568.md",
+   "snippet": "생후 4개월 남아가 사흘 전 콧물과 기침이 시작된 뒤 어제부터 숨을 빨리 쉬고 쌕쌕거려 왔다. 젖은 평소의 절반 정도 먹고 소변은 하루 4번 보았다. 재태 39주에 태어났고 심장·폐 질환은 없다. 형이 감기를 앓고 있다. 체온 37.9 °C, 맥박 156회/분, 호흡 58회/분이며 실내 공기에서 산소포화도는 93 % 이다. 코가 막혀 있고 약한 늑골 아래 함몰이 있으며, 양쪽 폐에서 수포음과 호기 쌕쌕거림이 들린다. 콧속 흡인",
+   "text": "소아과 소아청소년 — 콧물 뒤 쌕쌕거리는 영아 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 생후 4개월 남아가 사흘 전 콧물과 기침이 시작된 뒤 어제부터 숨을 빨리 쉬고 쌕쌕거려 왔다. 젖은 평소의 절반 정도 먹고 소변은 하루 4번 보았다. 재태 39주에 태어났고 심장·폐 질환은 없다. 형이 감기를 앓고 있다. 체온 37.9 °C, 맥박 156회/분, 호흡 58회/분이며 실내 공기에서 산소포화도는 93 % 이다. 코가 막혀 있고 약한 늑골 아래 함몰이 있으며, 양쪽 폐에서 수포음과 호기 쌕쌕거림이 들린다. 콧속 흡인 뒤 함몰과 호흡수가 조금 줄었다. 처치로 가장 적절한 것은? A. 살부타몰 흡입을 정해진 간격으로 반복한다 B. 경구 덱사메타손을 투여한다 C. 흉부 X선을 찍고 아목시실린을 투여한다 D. 고유량 비강 캐뉼라로 산소를 준다 E. 콧속 흡인과 수분 공급을 하며 경과를 관찰한다"
+  },
+  {
+   "id": "imaging-2026-0567",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 걸을 때 아픈 발바닥의 각질성 병변",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0567.md",
+   "snippet": "70세 남자가 4개월 전부터 발바닥에 생긴 아픈 병변으로 왔다. 걸을 때 아프고, 특히 양옆에서 꼬집듯 누르면 더 아프다. 일주일에 몇 번 공공 수영장에서 맨발로 다닌다. 당뇨병이나 말초혈관 질환은 없다. 진찰에서 발바닥에 지름 6 mm 의 단단한 각질성 구진이 있다. 메스로 표면을 깎아 내자 바늘 끝 같은 출혈점이 생긴다. 발등동맥 맥박은 정상이다. 병변의 더모스코피(피부확대경) 사진은 그림과 같다. 진단으로 가장 적절한 것",
+   "text": "피부과 피부 — 걸을 때 아픈 발바닥의 각질성 병변 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 70세 남자가 4개월 전부터 발바닥에 생긴 아픈 병변으로 왔다. 걸을 때 아프고, 특히 양옆에서 꼬집듯 누르면 더 아프다. 일주일에 몇 번 공공 수영장에서 맨발로 다닌다. 당뇨병이나 말초혈관 질환은 없다. 진찰에서 발바닥에 지름 6 mm 의 단단한 각질성 구진이 있다. 메스로 표면을 깎아 내자 바늘 끝 같은 출혈점이 생긴다. 발등동맥 맥박은 정상이다. 병변의 더모스코피(피부확대경) 사진은 그림과 같다. 진단으로 가장 적절한 것은? A. 발바닥 사마귀 B. 티눈 C. 말단 흑자 흑색종 D. 굳은살 E. 지루각화증"
+  },
+  {
+   "id": "imaging-2026-0566",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 혈뇨로 발견된 노인 남성의 신장 고형 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0566.md",
+   "snippet": "73세 남자가 일주일 전 한 차례 통증 없는 붉은 소변을 보아 비뇨의학과에 왔다. 옆구리 통증·체중 감소·발열은 없다. 고혈압으로 약을 먹고 있으며 40갑년 흡연력이 있다. 혈압 138/84 mmHg 이고 복부 진찰에서 만져지는 종괴는 없다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL, 칼슘·간기능은 정상이다. 소변검사에서 적혈구 10~19/고배율시야이다. 조영 증강 복부 CT 축상면 영상은 그림과 같으며, ",
+   "text": "외과 외과계 — 혈뇨로 발견된 노인 남성의 신장 고형 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 73세 남자가 일주일 전 한 차례 통증 없는 붉은 소변을 보아 비뇨의학과에 왔다. 옆구리 통증·체중 감소·발열은 없다. 고혈압으로 약을 먹고 있으며 40갑년 흡연력이 있다. 혈압 138/84 mmHg 이고 복부 진찰에서 만져지는 종괴는 없다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL, 칼슘·간기능은 정상이다. 소변검사에서 적혈구 10~19/고배율시야이다. 조영 증강 복부 CT 축상면 영상은 그림과 같으며, 림프절 비대·신정맥 침범은 없고 반대쪽 신장은 정상이다. 다음 처치로 가장 적절한 것은? A. 흉부 CT 로 병기를 확인한 뒤 신장 절제술(가능하면 부분절제)을 한다 B. 경피적 바늘 생검으로 조직을 확인한 뒤 치료를 정한다 C. 6개월 뒤 CT 를 다시 찍어 크기 변화를 본다 D. 면역관문억제제 전신 치료를 시작한다 E. 방광경과 요세포검사만 하고 신장 종괴는 추적한다"
+  },
+  {
+   "id": "imaging-2026-0565",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 오래된 가슴쓰림으로 받은 상부 내시경",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "endoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0565.md",
+   "snippet": "A patient with long standing heartburn that occurs several times a week despite intermittent over the counter antacid use is referred for upper endoscopy. There is no dysphagia, weight loss, vomiting, or melena. Physical examination shows n",
+   "text": "소화기 소화기 — 오래된 가슴쓰림으로 받은 상부 내시경 opendata usmle_style endoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 A patient with long standing heartburn that occurs several times a week despite intermittent over the counter antacid use is referred for upper endoscopy. There is no dysphagia, weight loss, vomiting, or melena. Physical examination shows no abnormalities. Hemoglobin concentration is within the reference range. During upper endoscopy, a photograph of the gastroesophageal junction region is obtained and is shown. No ulcer, nodule, or mass is seen elsewhere in the esophagus or stomach. Which of the following is the most appropriate next step in management? A. Laparoscopic fundoplication, no biopsy B. Mucosal biopsies and a daily proton pump inhibitor C. Transhiatal esophagectomy after staging CT D. Endoscopic mucosal resection of the segment E. Repeat endoscopy in 6 months, no biopsy"
+  },
+  {
+   "id": "imaging-2026-0564",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 35주 두통과 고혈압",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0564.md",
+   "snippet": "31세 초산부가 임신 35주에 하루 전부터 시작된 이마 쪽 두통과 눈앞이 번쩍거리는 증상으로 왔다. 정기 진찰에서 임신 전 혈압은 정상이었다. 혈압 166/112 mmHg(15분 뒤 다시 재어 164/110 mmHg), 맥박 88회/분이다. 다리에 오목부종이 있고 무릎반사는 항진되어 있다. 경련은 없었다. 소변 단백/크레아티닌 비는 0.9 이다. 혈소판 92,000/mm³, AST 48 U/L, ALT 52 U/L, 혈청 크레",
+   "text": "산부인과 산과 — 임신 35주 두통과 고혈압 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 31세 초산부가 임신 35주에 하루 전부터 시작된 이마 쪽 두통과 눈앞이 번쩍거리는 증상으로 왔다. 정기 진찰에서 임신 전 혈압은 정상이었다. 혈압 166/112 mmHg(15분 뒤 다시 재어 164/110 mmHg), 맥박 88회/분이다. 다리에 오목부종이 있고 무릎반사는 항진되어 있다. 경련은 없었다. 소변 단백/크레아티닌 비는 0.9 이다. 혈소판 92,000/mm³, AST 48 U/L, ALT 52 U/L, 혈청 크레아티닌 0.8 mg/dL 이다. 태아심박동 기록은 범주 I 이고 초음파에서 태아 체중은 50 백분위수다. 처치로 가장 적절한 것은? A. 외래에서 라베탈롤을 처방하고 매주 진찰한다 B. 즉시 제왕절개술을 한다 C. 황산마그네슘 정주와 혈압 조절 후 분만한다 D. 베타메타손을 투여하고 48시간 뒤 분만한다 E. 입원하여 혈압약만 쓰며 37주까지 기다린다"
+  },
+  {
+   "id": "imaging-2026-0563",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 코로나19 확진 일주일째 숨이 차는 중년 여성의 흉부 X선",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0563.md",
+   "snippet": "A 57 year old woman comes to the emergency department because of fever, cough, and increasing shortness of breath for 7 days. A nasal swab test for SARS CoV 2 was positive 6 days ago. She has hypertension treated with amlodipine. Her temper",
+   "text": "응급·중환자 응급 — 코로나19 확진 일주일째 숨이 차는 중년 여성의 흉부 X선 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 A 57 year old woman comes to the emergency department because of fever, cough, and increasing shortness of breath for 7 days. A nasal swab test for SARS CoV 2 was positive 6 days ago. She has hypertension treated with amlodipine. Her temperature is 38.4°C (101.1°F), pulse is 104/min, respirations are 26/min, and blood pressure is 128/80 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 89%. Crackles are heard at both lung bases. She is alert and able to speak in full sentences. Serum creatinine and liver function tests are within normal limits. A chest radiograph is shown. In addition to supplemental oxygen, which of the following is the most appropriate pharmacotherapy? A. Oseltamivir B. Dexamethasone C. Azithromycin D. Hydroxychloroquine E. Ivermectin"
+  },
+  {
+   "id": "imaging-2026-0562",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 감기 뒤 생긴 앉으면 나아지는 가슴 통증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3",
+   "confidence": "high",
+   "date": "2026-11-06",
+   "path": "content/imaging/2026/imaging-2026-0562.md",
+   "snippet": "A 27 year old man comes to the emergency department because of chest pain for 2 days. The pain is sharp, worsens when he breathes in or lies down, and improves when he sits up and leans forward. Ten days ago, he had a runny nose and sore th",
+   "text": "순환기 순환기 — 감기 뒤 생긴 앉으면 나아지는 가슴 통증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202149Z_일일영상_2026-11-07_9units_9q_6aefb6e3 A 27 year old man comes to the emergency department because of chest pain for 2 days. The pain is sharp, worsens when he breathes in or lies down, and improves when he sits up and leans forward. Ten days ago, he had a runny nose and sore throat. His temperature is 37.8°C (100°F), pulse is 96/min, respirations are 18/min, and blood pressure is 124/76 mm Hg. There is no jugular venous distention. A three component scratching sound is heard at the left lower sternal border. An ECG shows concave ST segment elevation and PR segment depression in multiple leads. High sensitivity troponin is below the upper reference limit. Echocardiography shows a small pericardial effusion with normal wall motion. Which of the following is the most appropriate treatment? A. Pericardiocentesis B. Intravenous heparin C. Ibuprofen and colchicine D. High dose prednisone E. Aspirin, clopidogrel, and coronary angiography"
   },
   {
    "id": "cn.ortho.shoulder-dislocation-older.rotator-cuff-tear",
