@@ -1406,8 +1406,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1754": {
+   "id": "kmle-2026-1754",
+   "exam": "kmle",
+   "subject": "Obstetrics & Gynecology",
+   "step": "",
+   "type": "Severe Headache and Flashing Lights Six Days after an Uncomplicated Delivery under Epidural Anesthesia",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 처치는?",
+   "chosen": 3,
+   "chosenText": "푸로세미드 정주 후 관찰",
+   "answer": 4,
+   "answerText": "황산마그네슘과 라베탈롤 정주",
+   "coreNote": "",
+   "differ": "",
+   "decision": "분만 6일 뒤 새로 생긴 중증 범위 혈압과 단백뇨는 산후 전자간증이고, 자세와 무관한 심한 두통과 시각 증상은 경막 천자 후 두통이 아닌 중증 소견이다. 정맥 라베탈롤로 혈압을 빨리 낮추고 황산마그네슘으로 경련을 예방한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:38:10.730Z"
+ "updated": "2026-11-06T05:43:06.061Z"
 }
