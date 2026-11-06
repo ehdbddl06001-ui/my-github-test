@@ -2,6 +2,271 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0572",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 두근거림을 호소하는 노인 여성의 규칙적으로 끼어드는 좁은 박동",
+  "type": "심전도 처치 — 두근거림을 호소하는 노인 여성의 규칙적으로 끼어드는 좁은 박동",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-06",
+  "vignette": "75세 여자가 두 달 전부터 가끔 심장이 「한 번씩 건너뛰는」 느낌이 들어 왔다. 어지럼·실신·흉통·호흡곤란은 없고 하루 30분씩 걷는다. 하루 커피 4잔을 마시고, 최근 잠을 잘 못 잔다. 복용하는 약은 없다. 혈압 134/82 mmHg, 맥박 84회/분이고 불규칙하다. 심잡음은 없다. 갑상샘자극호르몬·혈청 칼륨·마그네슘은 정상이다. 심장초음파에서 좌심실 박출률 62 % 이고 판막 이상·좌심방 확대는 없다. 12유도 심전도는 그림과 같다.",
+  "question": "처치로 가장 적절한 것은?",
+  "options": [
+   "영구 심박동기를 삽입한다",
+   "카페인을 줄이게 하고 경과를 관찰한다",
+   "와파린으로 항응고를 시작한다",
+   "아미오다론을 투여한다",
+   "동기화 전기 심율동전환을 한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 동박동 두 번 뒤마다 일찍 오는 박동이 규칙적으로 반복되는 삼단맥이다. 끼어드는 박동의 QRS 는 동박동과 같은 모양으로 좁고, 뒤따르는 휴지는 보상성이 불완전하다 — 심방(상심실) 기외수축이다. 심방세동처럼 RR 이 완전히 불규칙하지 않고 기저 P파가 있으며, 넓은 QRS 의 심실 기외수축도 아니다. 구조적 심질환이 없고 증상이 가볍고 전해질·갑상샘 기능이 정상이므로 치료는 카페인·수면 부족 같은 유발 요인을 줄이고 안심시키는 것이다. 증상이 견디기 어려우면 베타차단제를 쓴다.\n- 원리: <b>왜 좁은 QRS 인가</b>: 심방 기외수축은 동결절이 아닌 심방의 다른 자리에서 일찍 생긴 흥분이 정상 방실결절-히스-푸르키니에 경로로 내려가므로 QRS 모양이 동박동과 같다(아주 일찍 오면 변행전도로 넓어지거나 전도되지 않을 수 있다). P파는 일찍 오고 모양이 다르며 앞 박동의 T파에 묻히기도 한다. 심실 기외수축은 심실에서 시작해 근육을 타고 퍼지므로 넓고 이상한 QRS 를 만든다.<br> <b>왜 휴지가 불완전한가</b>: 심방 기외수축은 동결절까지 거꾸로 들어가 동결절 주기를 다시 맞춘다. 그래서 기외수축 앞뒤 RR 을 더하면 정상 RR 두 개보다 짧다(불완전 보상휴지). 심실 기외수축은 대개 동결절을 건드리지 않아 완전 보상휴지가 생긴다.<br> <b>왜 대개 치료하지 않나</b>: 구조적으로 정상인 심장의 심방 기외수축은 흔하고 양성이다. 카페인·알코올·수면 부족·스트레스·갑상샘항진증·저칼륨혈증이 늘린다. 매우 잦으면 장기적으로 심방세동 위험과 관련되지만, 항부정맥제로 숫자를 줄이는 것이 예후를 바꾼다는 근거는 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심방 기외수축 삼단맥(정답 판독)</th><th>심방세동(와파린 오답의 근거)</th></tr></thead><tbody> <tr><td>RR 간격</td><td><b>규칙적으로 반복되는</b> 짧은-긴 묶음</td><td>완전히 불규칙(불규칙하게 불규칙)</td></tr> <tr><td>P파</td><td>동박동마다 일정한 P파, 기외수축 앞 다른 모양 P</td><td>P파 없음, 잔물결 같은 f파</td></tr> <tr><td>처치</td><td>유발 요인 교정·안심, 증상 시 베타차단제</td><td>CHA₂DS₂-VASc 로 항응고 판단, 박동수 조절</td></tr> </tbody></table> 「불규칙한 맥」이라는 같은 진찰 소견이라도 묶음이 규칙적으로 반복되고 P파가 있으면 기외수축이다 — 항응고는 심방세동에서 결정한다.\n- 오답 이유:\n  - ① 영구 심박동기는 증상이 있는 동기능부전이나 2도 Mobitz 2형·3도 방실차단처럼 박동이 느려지거나 끊길 때 정답이 된다.\n  - ③ 와파린 항응고는 P파 없이 RR 이 완전히 불규칙한 심방세동이 기록되고 CHA₂DS₂-VASc 점수가 높을 때 정답이 된다(이 나이와 성별이면 대개 해당).\n  - ④ 아미오다론은 구조적 심질환이 있는 환자의 지속성 심실빈맥이나 다른 약이 듣지 않는 심방세동의 리듬 조절에서 정답이 된다.\n  - ⑤ 동기화 전기 심율동전환은 혈역학이 불안정한 빈맥(심방세동·조동·심실빈맥)에서 정답이 되며, 기외수축은 지속 리듬이 아니라 대상이 아니다.\n- 함정: 불규칙한 맥과 75세 여자라는 정보로 심방세동이라 보고 항응고를 고르는 것 — 리듬 스트립의 반복되는 묶음과 P파가 기외수축을 말한다.\n- 학습목표: 리듬 스트립에서 두 동박동 뒤마다 일찍 오는 좁은 QRS 를 심방 기외수축 삼단맥으로 판독하고, 구조적 심질환 없이 증상이 가벼우면 유발 요인 교정과 안심으로 처치한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16425 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 동박동 두 번 뒤마다 일찍 오는 박동이 규칙적으로 반복되는 삼단맥이다. 끼어드는 박동의 QRS 는 동박동과 같은 모양으로 좁고, 뒤따르는 휴지는 보상성이 불완전하다 — 심방(상심실) 기외수축이다. 심방세동처럼 RR 이 완전히 불규칙하지 않고 기저 P파가 있으며, 넓은 QRS 의 심실 기외수축도 아니다. 구조적 심질환이 없고 증상이 가볍고 전해질·갑상샘 기능이 정상이므로 치료는 카페인·수면 부족 같은 유발 요인을 줄이고 안심시키는 것이다. 증상이 견디기 어려우면 베타차단제를 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 좁은 QRS 인가</b>: 심방 기외수축은 동결절이 아닌 심방의 다른 자리에서 일찍 생긴 흥분이 정상 방실결절-히스-푸르키니에 경로로 내려가므로 QRS 모양이 동박동과 같다(아주 일찍 오면 변행전도로 넓어지거나 전도되지 않을 수 있다). P파는 일찍 오고 모양이 다르며 앞 박동의 T파에 묻히기도 한다. 심실 기외수축은 심실에서 시작해 근육을 타고 퍼지므로 넓고 이상한 QRS 를 만든다.<br> <b>왜 휴지가 불완전한가</b>: 심방 기외수축은 동결절까지 거꾸로 들어가 동결절 주기를 다시 맞춘다. 그래서 기외수축 앞뒤 RR 을 더하면 정상 RR 두 개보다 짧다(불완전 보상휴지). 심실 기외수축은 대개 동결절을 건드리지 않아 완전 보상휴지가 생긴다.<br> <b>왜 대개 치료하지 않나</b>: 구조적으로 정상인 심장의 심방 기외수축은 흔하고 양성이다. 카페인·알코올·수면 부족·스트레스·갑상샘항진증·저칼륨혈증이 늘린다. 매우 잦으면 장기적으로 심방세동 위험과 관련되지만, 항부정맥제로 숫자를 줄이는 것이 예후를 바꾼다는 근거는 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심방 기외수축 삼단맥(정답 판독)</th><th>심방세동(와파린 오답의 근거)</th></tr></thead><tbody> <tr><td>RR 간격</td><td><b>규칙적으로 반복되는</b> 짧은-긴 묶음</td><td>완전히 불규칙(불규칙하게 불규칙)</td></tr> <tr><td>P파</td><td>동박동마다 일정한 P파, 기외수축 앞 다른 모양 P</td><td>P파 없음, 잔물결 같은 f파</td></tr> <tr><td>처치</td><td>유발 요인 교정·안심, 증상 시 베타차단제</td><td>CHA₂DS₂-VASc 로 항응고 판단, 박동수 조절</td></tr> </tbody></table> 「불규칙한 맥」이라는 같은 진찰 소견이라도 묶음이 규칙적으로 반복되고 P파가 있으면 기외수축이다 — 항응고는 심방세동에서 결정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 영구 심박동기는 증상이 있는 동기능부전이나 2도 Mobitz 2형·3도 방실차단처럼 박동이 느려지거나 끊길 때 정답이 된다.\n③ 와파린 항응고는 P파 없이 RR 이 완전히 불규칙한 심방세동이 기록되고 CHA₂DS₂-VASc 점수가 높을 때 정답이 된다(이 나이와 성별이면 대개 해당).\n④ 아미오다론은 구조적 심질환이 있는 환자의 지속성 심실빈맥이나 다른 약이 듣지 않는 심방세동의 리듬 조절에서 정답이 된다.\n⑤ 동기화 전기 심율동전환은 혈역학이 불안정한 빈맥(심방세동·조동·심실빈맥)에서 정답이 되며, 기외수축은 지속 리듬이 아니라 대상이 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "불규칙한 맥과 75세 여자라는 정보로 심방세동이라 보고 항응고를 고르는 것 — 리듬 스트립의 반복되는 묶음과 P파가 기외수축을 말한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리듬 스트립에서 두 동박동 뒤마다 일찍 오는 좁은 QRS 를 심방 기외수축 삼단맥으로 판독하고, 구조적 심질환 없이 증상이 가벼우면 유발 요인 교정과 안심으로 처치한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16425 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202409Z_일일심전도_2026-11-07_2units_2q_f3452007",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "구조적 심질환 없이 증상이 가벼운 심방 기외수축 삼단맥은 유발 요인을 줄이고 안심시키며 경과를 본다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "RR 불규칙이 두 동박동 뒤 기외수축이라는 반복 묶음이고 기저 P파가 있어 심방세동이 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: 두 동박동 뒤마다 일찍 오는 박동이 규칙적으로 반복 → 삼단맥",
+    "영상: 끼어드는 QRS 가 동박동과 같은 좁은 모양, 불완전 보상휴지 → 심방 기외수축",
+    "박출률 정상·판막 이상 없음·전해질과 갑상샘 정상·가벼운 증상 → 카페인 감량과 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 두 동박동 뒤마다 끼어드는 좁은 QRS 의 조기 박동",
+     "why": "심방 기외수축 삼단맥",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 기저 동박동의 양성 P파",
+     "why": "심방세동 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘자극호르몬·혈청 칼륨·마그네슘은 정상",
+     "why": "갑상샘항진증·전해질 이상 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "좌심실 박출률 62 % 이고 판막 이상·좌심방 확대는 없다",
+     "why": "구조적 심질환이 없어 치료가 필요 없다",
+     "also": []
+    },
+    {
+     "item": "하루 커피 4잔",
+     "why": "교정할 수 있는 유발 요인",
+     "also": []
+    },
+    {
+     "item": "어지럼·실신·흉통·호흡곤란은 없고",
+     "why": "증상이 가벼워 약물 치료가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "리듬 스트립에서 두 동박동 뒤마다 좁은 조기 박동이 반복되는 심방 기외수축 삼단맥이다. 심장 구조와 검사가 정상이고 증상이 가벼워 카페인을 줄이고 경과를 본다.",
+   "switch": {
+    "choice": "C",
+    "condition": "P파 없이 RR 이 완전히 불규칙한 심방세동이 기록되면 CHA₂DS₂-VASc 에 따라 항응고"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0572.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16425",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16425"
+  },
+  "run_id": "20261106T202409Z_일일심전도_2026-11-07_2units_2q_f3452007",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0571",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 고혈압 진단을 받은 중년 여성의 첫 심전도",
+  "type": "심전도 판독 — 고혈압 진단을 받은 중년 여성의 첫 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-06",
+  "vignette": "59세 여자가 건강검진에서 혈압이 높다는 말을 듣고 왔다. 두통·흉통·호흡곤란은 없고 계단을 오를 때도 불편하지 않다. 복용하는 약은 없다. 키 160 cm, 몸무게 62 kg 이다. 혈압 152/94 mmHg(두 번 잰 평균), 맥박 80회/분이고 규칙적이다. 심잡음은 없고 폐음은 깨끗하다. 혈청 칼륨 4.2 mEq/L, 크레아티닌 0.8 mg/dL 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "동리듬, 흉부유도 QRS 고전압(좌심실 비대 전압 기준 충족), ST-T 변화 없음",
+   "동리듬, 완전 좌각차단",
+   "동리듬, 전중격 심근경색",
+   "동리듬, 우심실 비대와 우축 편위",
+   "동리듬, 사지유도 저전압"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: II 유도에서 모든 QRS 앞에 양성 P파와 일정한 PR 이 있는 동리듬 약 80회/분이다. QRS 폭은 정상(0.10 s 미만)이고 V1 의 S파 약 16 mm 와 V5 의 R파 약 20 mm 를 더하면 약 36 mm 로 Sokolow-Lyon 기준(35 mm 초과)을 넘는다. 그러나 V5·V6 의 ST 하강·비대칭 T 역전(긴장형 변화)이나 좌심방 확대는 없고, V1~V3 에 r파가 있어 경색의 Q파도 없다. 따라서 판독은 「QRS 고전압, 좌심실 비대 전압 기준만 충족」이다. 전압 기준은 민감도가 낮고 마른 사람·젊은 사람에서 위양성이 많아, 고혈압 환자에서는 심장초음파로 실제 좌심실 비대를 확인한다.\n- 원리: <b>왜 진폭이 커지나</b>: QRS 진폭은 탈분극하는 심근의 양과 전극까지의 거리로 정해진다. 좌심실 벽이 두꺼워지면 왼쪽·뒤쪽을 향하는 힘이 커져 왼쪽을 보는 V5·V6 의 R파와 반대쪽인 V1·V2 의 S파가 함께 깊어진다. 그래서 Sokolow-Lyon(S V1 + R V5 또는 V6 > 35 mm)과 Cornell(R aVL + S V3, 여자 > 20 mm, 남자 > 28 mm)은 「한쪽의 R + 반대쪽의 S」를 더한다.<br> <b>왜 전압만으로는 비대라 하지 않나</b>: 가슴벽이 얇거나(마른 체형, 젊은 사람) 유방 조직이 적으면 전극이 심장에 가까워져 진폭만 커진다. 반대로 비만·폐기종·심막삼출은 진폭을 줄인다. 그래서 전압 기준은 특이도는 높지만 민감도가 낮고, 심초음파가 확인 검사다.<br> <b>무엇이 「진짜 비대」를 더하나</b>: 두꺼운 벽은 재분극 순서도 바꿔 V5·V6 에 내려가는 ST 하강과 비대칭 T 역전(긴장형)을 만들고, 좌심방 확대(V1 P파 후반 음성 성분)와 좌측 축을 동반한다. 이 소견이 함께 있으면 예후도 나쁘다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">고전압만(정답)</th><th>완전 좌각차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 폭</td><td><b>정상(0.10 s 미만)</b></td><td>0.12 s 이상</td></tr> <tr><td>V6·I 모양</td><td>날카로운 큰 R, 작은 중격 q</td><td>넓고 끝이 갈라진 R, 중격 q 없음</td></tr> <tr><td>ST-T</td><td>정상</td><td>QRS 와 반대 방향의 2차성 ST-T 변화</td></tr> </tbody></table> 두 경우 모두 V1 의 S파가 깊지만, QRS 폭과 V6 의 q파가 「크기만 큰 정상 전도」와 「늦게 퍼지는 비정상 전도」를 가른다.\n- 오답 이유:\n  - ② 완전 좌각차단은 QRS 가 0.12 s 이상 넓고 I·V6 에 중격 q 없이 끝이 갈라진 R파, 반대 방향 ST-T 변화가 있을 때 정답이 된다.\n  - ③ 전중격 심근경색은 V1~V3 에 r파 없이 QS 가 있거나 Q파와 함께 ST 상승·T 역전이 남아 있을 때 정답이 된다.\n  - ④ 우심실 비대는 V1 에 R/S 비가 1 이상인 큰 R파, 우축 편위(+110° 이상), V1~V3 의 ST 하강·T 역전이 있을 때 정답이 된다.\n  - ⑤ 사지유도 저전압은 모든 사지유도의 QRS 진폭이 5 mm 미만일 때 정답이며, 비만·폐기종·심막삼출·갑상샘저하증에서 본다.\n- 함정: V1 의 깊은 S파를 보고 좌각차단이나 경색으로 읽는 것 — QRS 폭이 정상이고 V1 에 r파가 있으면 진폭만 큰 것이다.\n- 학습목표: 흉부유도의 QRS 진폭을 재어 좌심실 비대 전압 기준(Sokolow-Lyon)만 충족하고 ST-T 변화가 없음을 판독하고, 각차단·경색·우심실 비대와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 288: Hypertension\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6388 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 유도에서 모든 QRS 앞에 양성 P파와 일정한 PR 이 있는 동리듬 약 80회/분이다. QRS 폭은 정상(0.10 s 미만)이고 V1 의 S파 약 16 mm 와 V5 의 R파 약 20 mm 를 더하면 약 36 mm 로 Sokolow-Lyon 기준(35 mm 초과)을 넘는다. 그러나 V5·V6 의 ST 하강·비대칭 T 역전(긴장형 변화)이나 좌심방 확대는 없고, V1~V3 에 r파가 있어 경색의 Q파도 없다. 따라서 판독은 「QRS 고전압, 좌심실 비대 전압 기준만 충족」이다. 전압 기준은 민감도가 낮고 마른 사람·젊은 사람에서 위양성이 많아, 고혈압 환자에서는 심장초음파로 실제 좌심실 비대를 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 진폭이 커지나</b>: QRS 진폭은 탈분극하는 심근의 양과 전극까지의 거리로 정해진다. 좌심실 벽이 두꺼워지면 왼쪽·뒤쪽을 향하는 힘이 커져 왼쪽을 보는 V5·V6 의 R파와 반대쪽인 V1·V2 의 S파가 함께 깊어진다. 그래서 Sokolow-Lyon(S V1 + R V5 또는 V6 > 35 mm)과 Cornell(R aVL + S V3, 여자 > 20 mm, 남자 > 28 mm)은 「한쪽의 R + 반대쪽의 S」를 더한다.<br> <b>왜 전압만으로는 비대라 하지 않나</b>: 가슴벽이 얇거나(마른 체형, 젊은 사람) 유방 조직이 적으면 전극이 심장에 가까워져 진폭만 커진다. 반대로 비만·폐기종·심막삼출은 진폭을 줄인다. 그래서 전압 기준은 특이도는 높지만 민감도가 낮고, 심초음파가 확인 검사다.<br> <b>무엇이 「진짜 비대」를 더하나</b>: 두꺼운 벽은 재분극 순서도 바꿔 V5·V6 에 내려가는 ST 하강과 비대칭 T 역전(긴장형)을 만들고, 좌심방 확대(V1 P파 후반 음성 성분)와 좌측 축을 동반한다. 이 소견이 함께 있으면 예후도 나쁘다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">고전압만(정답)</th><th>완전 좌각차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 폭</td><td><b>정상(0.10 s 미만)</b></td><td>0.12 s 이상</td></tr> <tr><td>V6·I 모양</td><td>날카로운 큰 R, 작은 중격 q</td><td>넓고 끝이 갈라진 R, 중격 q 없음</td></tr> <tr><td>ST-T</td><td>정상</td><td>QRS 와 반대 방향의 2차성 ST-T 변화</td></tr> </tbody></table> 두 경우 모두 V1 의 S파가 깊지만, QRS 폭과 V6 의 q파가 「크기만 큰 정상 전도」와 「늦게 퍼지는 비정상 전도」를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 완전 좌각차단은 QRS 가 0.12 s 이상 넓고 I·V6 에 중격 q 없이 끝이 갈라진 R파, 반대 방향 ST-T 변화가 있을 때 정답이 된다.\n③ 전중격 심근경색은 V1~V3 에 r파 없이 QS 가 있거나 Q파와 함께 ST 상승·T 역전이 남아 있을 때 정답이 된다.\n④ 우심실 비대는 V1 에 R/S 비가 1 이상인 큰 R파, 우축 편위(+110° 이상), V1~V3 의 ST 하강·T 역전이 있을 때 정답이 된다.\n⑤ 사지유도 저전압은 모든 사지유도의 QRS 진폭이 5 mm 미만일 때 정답이며, 비만·폐기종·심막삼출·갑상샘저하증에서 본다."
+   },
+   {
+    "k": "함정",
+    "v": "V1 의 깊은 S파를 보고 좌각차단이나 경색으로 읽는 것 — QRS 폭이 정상이고 V1 에 r파가 있으면 진폭만 큰 것이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부유도의 QRS 진폭을 재어 좌심실 비대 전압 기준(Sokolow-Lyon)만 충족하고 ST-T 변화가 없음을 판독하고, 각차단·경색·우심실 비대와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 288: Hypertension ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6388 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261106T202409Z_일일심전도_2026-11-07_2units_2q_f3452007",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "QRS 폭이 정상이고 ST-T 변화 없이 흉부유도 진폭만 커서 좌심실 비대 전압 기준만 충족한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "QRS 폭이 0.10 s 미만이고 V6 에 날카로운 R파가 있어 좌각차단이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬, QRS 폭 정상, V1 S 약 16 mm + V5 R 약 20 mm ≈ 36 mm",
+    "영상: V5·V6 ST 하강·T 역전 없음, V1~V3 r파 있음 → 전압 기준만 충족한 고전압"
+   ],
+   "key": [
+    {
+     "item": "영상: V1 의 깊은 S파와 V5 의 큰 R파(합 약 36 mm)",
+     "why": "Sokolow-Lyon 기준 충족",
+     "also": []
+    },
+    {
+     "item": "영상: QRS 폭 정상, ST-T 변화 없음",
+     "why": "좌각차단·긴장형 비대 소견이 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: V1~V3 의 작은 r파",
+     "why": "전중격 경색의 QS 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.2 mEq/L",
+     "why": "고칼륨혈증의 뾰족한 T 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈압 152/94 mmHg(두 번 잰 평균)",
+     "why": "좌심실 비대를 찾는 이유 — 판독 자체는 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "몸무게 62 kg",
+     "why": "마르지 않은 체형 — 위양성 가능성 판단에 참고",
+     "also": []
+    }
+   ],
+   "summary": "동리듬에 QRS 폭은 정상이고 흉부유도 진폭 합이 약 36 mm 로 Sokolow-Lyon 기준을 넘지만 ST-T 변화는 없다. 판독은 좌심실 비대 전압 기준만 충족한 고전압이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "QRS 가 0.12 s 이상 넓고 I·V6 에 q파 없이 갈라진 R파가 있으면 완전 좌각차단"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0571.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/06000/#files-panel",
+   "asset_id": "PTBXL-06388",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6388"
+  },
+  "run_id": "20261106T202409Z_일일심전도_2026-11-07_2units_2q_f3452007",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0567",
   "exam": "imaging",
   "style": "kmle_style",
