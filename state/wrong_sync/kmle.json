@@ -1364,8 +1364,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1756": {
+   "id": "kmle-2026-1756",
+   "exam": "kmle",
+   "subject": "General Surgery",
+   "step": "",
+   "type": "Epigastric Pain Radiating to the Back after a Fatty Dinner in a Nondrinking Woman",
+   "style": "",
+   "modality": "",
+   "question": "이 환자에게 먼저 시행할 영상 검사로 가장 적절한 것은?",
+   "chosen": 0,
+   "chosenText": "복부 조영증강 CT",
+   "answer": 3,
+   "answerText": "복부 초음파",
+   "coreNote": "",
+   "differ": "",
+   "decision": "증상과 리파아제로 급성 췌장염은 진단되었고, 음주 없음·중성지방 정상·ALT 상승·담석 산통 병력은 담석 원인을 가리킨다. 담관염 소견이 없으므로 첫 영상은 담낭 담석을 찾는 복부 초음파다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:33:45.751Z"
+ "updated": "2026-11-06T05:36:07.060Z"
 }
