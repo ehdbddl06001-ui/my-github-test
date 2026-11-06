@@ -1322,8 +1322,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1759": {
+   "id": "kmle-2026-1759",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Unable to Lift the Arm Two Weeks after a Reduced Shoulder Dislocation in a Man in His Sixties",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 원인은?",
+   "chosen": 0,
+   "chosenText": "겨드랑신경 손상",
+   "answer": 1,
+   "answerText": "회전근개 파열",
+   "coreNote": "",
+   "differ": "",
+   "decision": "X선으로 재탈구·골절은 배제되었고 수동 운동 범위가 정상이라 구축이 아니다. 삼각근 감각·수축이 보존되어 신경 손상보다는, 64세의 탈구 뒤 들어 준 팔을 버티지 못하고 바깥돌림이 약한 회전근개 파열이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:24:58.912Z"
+ "updated": "2026-11-06T05:28:12.794Z"
 }
