@@ -1301,8 +1301,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1760": {
+   "id": "kmle-2026-1760",
+   "exam": "kmle",
+   "subject": "Ophthalmology",
+   "step": "",
+   "type": "Wavy Door Frames and a Blurred Center in One Eye of an Older Smoker",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 4,
+   "chosenText": "백내장 수술 후 시력 재평가",
+   "answer": 3,
+   "answerText": "유리체강 내 혈관내피성장인자 억제제 주사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "노인의 변형시·중심 시력 저하와 드루젠은 나이관련 황반변성이고, 망막 아래 출혈·액체와 신생혈관막은 활동성 습성형이다. 시력을 빠르게 잃는 습성형은 유리체강 내 VEGF 억제제를 바로 시작한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:22:57.690Z"
+ "updated": "2026-11-06T05:24:58.912Z"
 }
