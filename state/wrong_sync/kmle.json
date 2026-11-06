@@ -1259,8 +1259,29 @@
    "date": "2026-11-04",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1762": {
+   "id": "kmle-2026-1762",
+   "exam": "kmle",
+   "subject": "Dermatology",
+   "step": "",
+   "type": "Fever and Tender Swollen Red Plaques on the Face and Arms Two Weeks after a Cold",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 진단은?",
+   "chosen": 0,
+   "chosenText": "결절홍반",
+   "answer": 1,
+   "answerText": "스위트증후군",
+   "coreNote": "",
+   "differ": "",
+   "decision": "열·호중구 증가와 감기 뒤 생긴 아프고 부어오른 판은 호중구 피부병을 시사하고, 항생제 무반응·배양 음성은 감염을 낮춘다. 혈관염·지방층염 없이 진피에 호중구가 침윤하면 스위트증후군이며, 진단 뒤에는 혈액암 등 동반 질환을 찾는다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-04T13:26:13.317Z"
+ "updated": "2026-11-06T05:20:39.289Z"
 }
