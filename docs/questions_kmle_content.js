@@ -462,6 +462,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.ophth.herpes-zoster-ophthalmicus.antiviral-slit-lamp",
+  "qversion": 2,
   "distractors": {
    "D": {
     "tempting": "눈 주위 헤르페스 병변이라 아시클로버 안연고면 충분하다고 생각한다.",
@@ -475,6 +476,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "세극등으로 상피 각막염을 배제하지 않고 스테로이드를 점안하면 각막 병변을 악화시킬 수 있다. 먼저 항바이러스제와 세극등 검사다.",
     "discriminator": "세극등 검사를 하지 않았다.",
     "when_right": "세극등 검사에서 상피 결손 없는 각막 실질염이나 포도막염이 확인되고 항바이러스제를 함께 쓸 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "결막 충혈과 눈꺼풀 물집이 있어 세균성 결막염이나 물집의 이차 감염을 막는 안연고가 처치처럼 보인다.",
+    "answer_first": "원인은 수두-대상포진 바이러스라 항생제는 바이러스 복제를 막지 못한다. 코끝까지 침범한 삼차신경 첫째 가지 대상포진은 72시간 안에 경구 항바이러스제를 시작하고, 각막염·포도막염은 세극등으로 확인해야 한다.",
+    "discriminator": "삼차신경 첫째 가지 분포의 군집 물집과 코끝 침범, 고름 분비물 없는 가벼운 충혈.",
+    "when_right": "대상포진 물집에 고름·딱지가 생긴 이차 세균 감염이 확인될 때 — 그때도 경구 항바이러스제에 더해 쓴다.",
     "split": ""
    }
   },
@@ -1641,6 +1649,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.obgyn.postpartum-preeclampsia.magnesium-antihypertensive",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "경막외 마취를 받은 산모가 며칠 뒤 심한 두통을 호소하면 경막 천자 후 두통을 먼저 떠올린다.",
@@ -1654,6 +1663,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "편두통 병력이 없고 혈압·단백뇨가 있어 산후 전자간증이다. 혈관 수축제인 수마트립탄은 조절 안 된 고혈압에서 피한다.",
     "discriminator": "편두통 병력 없음, 중증 범위 혈압.",
     "when_right": "",
+    "split": ""
+   },
+   "D": {
+    "tempting": "양쪽 다리 오목 부종이 있어 이뇨제로 체액을 빼면 혈압도 내려갈 것처럼 보인다.",
+    "answer_first": "이 환자의 위험은 중증 범위 혈압과 두통·시각 증상(뇌 증상)이다 — 경련 예방은 황산마그네슘, 중증 혈압은 정맥 라베탈롤 같은 속효성 항고혈압제가 맡는다. 푸로세미드는 둘 다 하지 못한다.",
+    "discriminator": "15분 간격 두 번 ≥160/110 mmHg와 두통·섬광, 호흡 18회/분으로 폐부종을 시사하는 소견이 없다.",
+    "when_right": "산후 전자간증에 호흡곤란·수포음·산소포화도 저하 같은 폐부종이 겹칠 때 — 그때도 황산마그네슘과 항고혈압제에 더해 쓴다.",
     "split": ""
    }
   },

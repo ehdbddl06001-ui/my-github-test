@@ -2,6 +2,7 @@
 # 약 = RxNorm 정확 일치, 약군 = MeSH 표목(check)으로 확인한 것만 verified.json 에 들어가고, 조판은 verified.json 만 쓴다.
 # 추가·수정 뒤: python pipelines/verify_glossary.py (NLM RxNav·MeSH API 조회 — 네트워크 필요)
 drugs:
+  판토프라졸: pantoprazole
   코신트로핀: cosyntropin
   드로스피레논: drospirenone
   두타스테리드: dutasteride
@@ -24,6 +25,14 @@ drugs:
   메틸프레드니솔론: methylprednisolone
   멕실레틴: mexiletine
   메실레틴: mexiletine
+  발라시클로버: valacyclovir
+  아시클로버: acyclovir
+  팜시클로버: famciclovir
+  세팔렉신: cephalexin
+  트리플루리딘: trifluridine
+  간시클로버: ganciclovir
+  리도카인: lidocaine
+  메트포르민: metformin
   설파살라진: sulfasalazine
   딜티아젬: diltiazem
   프로프라놀롤: propranolol
@@ -44,6 +53,10 @@ drugs:
   라베탈롤: labetalol
   하이드랄라진: hydralazine
   히드랄라진: hydralazine
+  황산마그네슘: magnesium sulfate
+  니페디핀: nifedipine
+  푸로세미드: furosemide
+  수마트립탄: sumatriptan
   아미트립틸린: amitriptyline
   벨리무맙: belimumab
   아달리무맙: adalimumab
@@ -149,6 +162,10 @@ drugs:
   카페인: caffeine
   코카인: cocaine
   암페타민: amphetamine
+  애플리버셉트: aflibercept
+  라니비주맙: ranibizumab
+  베바시주맙: bevacizumab
+  브롤루시주맙: brolucizumab
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
   칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}
