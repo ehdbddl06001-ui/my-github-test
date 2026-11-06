@@ -1385,8 +1385,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1755": {
+   "id": "kmle-2026-1755",
+   "exam": "kmle",
+   "subject": "Obstetrics & Gynecology",
+   "step": "",
+   "type": "Irregular Periods since Puberty and Slowly Increasing Facial Hair in a Slim Young Woman",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 진단은?",
+   "chosen": 0,
+   "chosenText": "다낭난소증후군",
+   "answer": 1,
+   "answerText": "비고전형 선천부신과형성",
+   "coreNote": "",
+   "differ": "",
+   "decision": "사춘기부터 이어진 희발월경과 서서히 진행한 다모증은 만성 고안드로겐 상태이고, 남성화가 없고 테스토스테론이 약간만 높아 종양 가능성은 낮다. 다낭성 난소 모양이 있어도 아침 17-수산화프로게스테론이 크게 높아 비고전형 선천부신과형성이며, 다낭난소증후군은 이를 배제한 뒤에 내리는 진단이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-06",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:36:07.060Z"
+ "updated": "2026-11-06T05:38:10.730Z"
 }
