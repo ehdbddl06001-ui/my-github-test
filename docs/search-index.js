@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4461,
+  "total": 4473,
   "byType": {
    "paper": 909,
+   "imaging": 583,
    "concept": 150,
    "kmle": 1728,
-   "imaging": 571,
    "usmle": 240,
    "anatomy": 846,
    "ailab": 14,
@@ -38,18 +38,18 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 111,
    "Hematology": 105,
    "Laboratory Medicine": 94,
-   "산부인과": 77,
-   "순환기": 67,
-   "호흡기": 37,
-   "소화기": 36,
+   "산부인과": 78,
+   "순환기": 70,
+   "호흡기": 38,
+   "소화기": 37,
    "소아과": 31,
+   "응급·중환자": 27,
+   "혈액·종양": 27,
    "Physiology": 26,
    "감염": 26,
+   "내분비": 26,
+   "병리·조직학": 26,
    "신경": 26,
-   "응급·중환자": 26,
-   "혈액·종양": 26,
-   "내분비": 25,
-   "병리·조직학": 25,
    "신장·비뇨기": 25,
    "피부과": 24,
    "외과": 23,
@@ -60,10 +60,10 @@ window.MEDKOS_INDEX = {
    "약리": 16,
    "Immunology": 15,
    "Internal Medicine": 15,
+   "근골격·류마티스": 15,
    "정신과": 15,
-   "근골격·류마티스": 14,
    "안과": 12,
-   "영상의학": 10,
+   "영상의학": 11,
    "이비인후과": 10,
    "Obstetrics and Gynecology": 5,
    "Allergy": 4,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1274,
-   "high": 3134,
+   "high": 3146,
    "low": 53
   },
   "tagCount": 5318
@@ -204,6 +204,220 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-07_paper-2026-0903_reduced_apelin_expression_and_atrial_fibrosis_in_postoperati.md",
    "snippet": "Title Reduced apelin expression and atrial fibrosis in postoperative atrial fibrillation following coronary artery bypass grafting Authors Xu Yijun, Chen Zhiqiang, Liu Peng, Wen Wen, Li Xiaowei, Wang Hao Journal / DOI Biomolecules & biomedi",
    "text": "Cardiology scraped pubmed PubMed / Biomolecules & biomedicine Title Reduced apelin expression and atrial fibrosis in postoperative atrial fibrillation following coronary artery bypass grafting Authors Xu Yijun, Chen Zhiqiang, Liu Peng, Wen Wen, Li Xiaowei, Wang Hao Journal / DOI Biomolecules & biomedicine · DOI: 10.17305/bb.2026.14946 · PMID: 42993807 https://pubmed.ncbi.nlm.nih.gov/42993807/ Abstract The role of apelin in atrial fibrosis linked to postoperative atrial fibrillation (POAF) following coronary artery bypass grafting (CABG) is not fully understood. This exploratory study investigated apelin's association with POAF related atrial fibrosis and its impact on profibrotic signaling. The study included 18 patients: six CABG patients with POAF, six CABG patients without POAF, and six patients with congenital heart disease in sinus rhythm (serving as a secondary reference). Left atrial appendage tissue was analyzed histologically and molecularly, and serum apelin levels were measured on postoperative day 2 in CABG patients. Primary neonatal rat atrial fibroblasts were treated with transforming growth factor β1 (TGF β1) both with and without apelin, or subjected to apelin silencing. Compared with CABG patients without POAF, the POAF group exhibited lower atrial apelin expression and serum concentrations, increased collagen deposition, elevated TGF β1 expression, and enhanced phosphorylation of mothers against decapentaplegic homolog 2 (Smad2), while total Smad2 remained unchanged. Experimentally, apelin attenuated TGF β1 induced fibroblast activation, collagen expression, and Smad2 phosphorylation. Conversely, apelin silencing increased the expression of fibrosis associated proteins. These preliminary findings suggest a link between reduced apelin and atrial fibrosis, as well as POAF after CABG. They also indicate antifibrotic effects of apelin, potentially mediated through TGF β1/Smad2 signaling. Further research with larger clinical cohorts and complementary experimental models is necessary to fully elucidate the pathway mediation and clinical significance of these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0584",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 증상 없는 젊은 남성의 입사 검진 심전도",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0584.md",
+   "snippet": "A 37 year old man undergoes a preemployment medical examination. He has no symptoms and runs 5 km three times a week without difficulty. He has never had palpitations or syncope, and there is no family history of sudden cardiac death. He ta",
+   "text": "순환기 심전도 판독 — 증상 없는 젊은 남성의 입사 검진 심전도 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0 A 37 year old man undergoes a preemployment medical examination. He has no symptoms and runs 5 km three times a week without difficulty. He has never had palpitations or syncope, and there is no family history of sudden cardiac death. He takes no medications. His pulse is 80/min, and blood pressure is 124/78 mm Hg. Cardiac examination shows a normal first heart sound and physiologic splitting of the second heart sound without murmurs. Serum electrolyte concentrations are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most likely interpretation of this ECG? A. Left anterior fascicular block B. Sinus rhythm with incomplete RBBB C. Sinus rhythm with complete RBBB D. Type 1 Brugada pattern E. Wolff Parkinson White pattern"
+  },
+  {
+   "id": "imaging-2026-0583",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 설사·구토 뒤 어지러운 노인 남성의 빠른 맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0583.md",
+   "snippet": "68세 남자가 이틀 전부터 하루 10번 넘는 물설사와 구토가 있고 일어서면 어지러워 응급실에 왔다. 고혈압으로 암로디핀을 먹고 있다. 체온 37.6℃, 혈압 102/64 mmHg(일어서면 84/56 mmHg), 맥박 116회/분, 호흡 18회/분이다. 혀와 입안이 말라 있고 피부 긴장도가 떨어져 있다. 혈액요소질소 42 mg/dL, 크레아티닌 1.5 mg/dL(평소 0.9), 나트륨 141 mEq/L, 칼륨 3.6 mEq/L ",
+   "text": "순환기 심전도 처치 — 설사·구토 뒤 어지러운 노인 남성의 빠른 맥 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0 68세 남자가 이틀 전부터 하루 10번 넘는 물설사와 구토가 있고 일어서면 어지러워 응급실에 왔다. 고혈압으로 암로디핀을 먹고 있다. 체온 37.6℃, 혈압 102/64 mmHg(일어서면 84/56 mmHg), 맥박 116회/분, 호흡 18회/분이다. 혀와 입안이 말라 있고 피부 긴장도가 떨어져 있다. 혈액요소질소 42 mg/dL, 크레아티닌 1.5 mg/dL(평소 0.9), 나트륨 141 mEq/L, 칼륨 3.6 mEq/L 이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 동기화 심율동전환 B. 아미오다론 정맥 주사 C. 생리식염수 정맥 주입 D. 아데노신 정맥 주사 E. 메토프롤롤 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0582",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 갑자기 두근거림이 시작된 노인 여성의 규칙적인 빠른 맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0582.md",
+   "snippet": "74세 여자가 30분 전 텔레비전을 보다가 갑자기 가슴이 빠르게 뛰기 시작해 응급실에 왔다. 비슷한 두근거림이 몇 년에 한 번씩 있었고 저절로 멎었다고 한다. 흉통과 호흡곤란은 없고 어지럼이 약간 있다. 혈압 128/76 mmHg, 호흡 18회/분, 산소포화도 97 % 이다. 맥은 빠르고 규칙적이다. 혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? ",
+   "text": "순환기 심전도 판독 — 갑자기 두근거림이 시작된 노인 여성의 규칙적인 빠른 맥 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0 74세 여자가 30분 전 텔레비전을 보다가 갑자기 가슴이 빠르게 뛰기 시작해 응급실에 왔다. 비슷한 두근거림이 몇 년에 한 번씩 있었고 저절로 멎었다고 한다. 흉통과 호흡곤란은 없고 어지럼이 약간 있다. 혈압 128/76 mmHg, 호흡 18회/분, 산소포화도 97 % 이다. 맥은 빠르고 규칙적이다. 혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 발작성 상심실빈맥 B. 동빈맥 C. 2:1 전도의 심방조동 D. 빠른 심실 반응의 심방세동 E. 심실빈맥"
+  },
+  {
+   "id": "imaging-2026-0581",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 의료인의 반복 저혈당과 인슐린·C-펩타이드",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0581.md",
+   "snippet": "31세 여자 간호사가 지난 한 달 동안 세 번 식은땀·떨림·혼동이 생겨 왔다. 증상은 식사와 관계없이 생겼고, 지난번에는 직장에서 의식이 흐려져 측정한 혈당이 38 mg/dL 였으며 포도당 정맥주사 후 곧 회복되었다. 당뇨병은 없고 어머니가 2형 당뇨병으로 인슐린을 쓰고 있다. 체질량지수는 22 kg/m² 이다. 입원 중 다시 증상이 생겼을 때 채혈한 결과는 혈당 36 mg/dL, 인슐린 48 μU/mL, C 펩타이드 0.1 ",
+   "text": "내분비 내분비·대사 — 의료인의 반복 저혈당과 인슐린·C-펩타이드 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 31세 여자 간호사가 지난 한 달 동안 세 번 식은땀·떨림·혼동이 생겨 왔다. 증상은 식사와 관계없이 생겼고, 지난번에는 직장에서 의식이 흐려져 측정한 혈당이 38 mg/dL 였으며 포도당 정맥주사 후 곧 회복되었다. 당뇨병은 없고 어머니가 2형 당뇨병으로 인슐린을 쓰고 있다. 체질량지수는 22 kg/m² 이다. 입원 중 다시 증상이 생겼을 때 채혈한 결과는 혈당 36 mg/dL, 인슐린 48 μU/mL, C 펩타이드 0.1 ng/mL, 프로인슐린 2 pmol/L 미만, β 하이드록시뷰티르산 0.1 mmol/L 이고, 혈장 설폰요소제·메글리티나이드 선별검사는 음성이다. 이어서 글루카곤 1 mg 을 정맥 주사하자 30분 만에 혈당이 42 mg/dL 올랐다. 가장 가능성이 높은 진단은? A. 인슐린 자가면역 저혈당 B. 부신기능저하증 C. 외인성 인슐린 투여 D. 인슐린종 E. 설폰요소제 복용"
+  },
+  {
+   "id": "imaging-2026-0580",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 이차성징은 정상인 원발 무월경과 질의 맹관",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0580.md",
+   "snippet": "A 17 year old girl is brought to the physician because she has never had a menstrual period. She has no cyclic pelvic pain. She is on the school swim team and has had normal growth. Her height is 165 cm (5 ft 5 in), and BMI is 21 kg/m2. Bre",
+   "text": "산부인과 부인과 — 이차성징은 정상인 원발 무월경과 질의 맹관 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 A 17 year old girl is brought to the physician because she has never had a menstrual period. She has no cyclic pelvic pain. She is on the school swim team and has had normal growth. Her height is 165 cm (5 ft 5 in), and BMI is 21 kg/m2. Breast and pubic hair development are Tanner stage 5. Pelvic examination shows normal external genitalia and a short vagina ending in a blind pouch; the cervix cannot be seen. Serum follicle stimulating hormone and prolactin concentrations are within the reference ranges, and serum total testosterone concentration is within the reference range for adult women. Pelvic ultrasonography shows normal appearing ovaries and no uterus. Further evaluation of this patient is most likely to show which of the following? A. Inguinal masses containing testicular tissue B. Elevated serum luteinizing hormone with low estradiol C. Hematocolpos on pelvic MRI D. Unilateral renal agenesis E. 46,XY karyotype"
+  },
+  {
+   "id": "imaging-2026-0579",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사 — 증상 없는 갑상샘항진증 검사값과 보충제",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0579.md",
+   "snippet": "42세 여자가 건강검진 갑상샘 기능검사에서 이상이 있다는 말을 듣고 왔다. 두근거림·체중 감소·더위 못 참음·손 떨림은 없다. 6개월 전부터 탈모 때문에 고용량 비오틴 보충제(하루 10 mg)를 먹고 있다. 혈압 118/74 mmHg, 맥박 72회/분이다. 갑상샘은 커져 있지 않고 안구 돌출은 없다. 검사 결과 갑상샘자극호르몬 0.02 mIU/L(참고치 0.4~4.0), 유리 T4 3.1 ng/dL(참고치 0.8~1.8), 총",
+   "text": "영상의학 진단검사 — 증상 없는 갑상샘항진증 검사값과 보충제 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 42세 여자가 건강검진 갑상샘 기능검사에서 이상이 있다는 말을 듣고 왔다. 두근거림·체중 감소·더위 못 참음·손 떨림은 없다. 6개월 전부터 탈모 때문에 고용량 비오틴 보충제(하루 10 mg)를 먹고 있다. 혈압 118/74 mmHg, 맥박 72회/분이다. 갑상샘은 커져 있지 않고 안구 돌출은 없다. 검사 결과 갑상샘자극호르몬 0.02 mIU/L(참고치 0.4~4.0), 유리 T4 3.1 ng/dL(참고치 0.8~1.8), 총 T3 230 ng/dL(참고치 80~180) 이고 TSH 수용체 항체 양성이다. 가장 적절한 다음 단계는? A. 비오틴을 끊고 며칠 뒤 같은 검사를 다시 한다 B. 메티마졸을 시작한다 C. 갑상샘 스캔과 방사성 요오드 섭취율을 측정한다 D. 프로프라놀롤을 시작한다 E. 방사성 요오드 치료를 한다"
+  },
+  {
+   "id": "imaging-2026-0578",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 쿰스 음성 용혈·혈구감소와 간정맥 혈전",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0578.md",
+   "snippet": "A 34 year old man comes to the physician because of fatigue and episodes of dark urine for 4 months. The urine is darkest in the morning. Two weeks ago, he was evaluated for abdominal pain and was found to have thrombosis of the hepatic vei",
+   "text": "혈액·종양 혈액·종양 — 쿰스 음성 용혈·혈구감소와 간정맥 혈전 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 A 34 year old man comes to the physician because of fatigue and episodes of dark urine for 4 months. The urine is darkest in the morning. Two weeks ago, he was evaluated for abdominal pain and was found to have thrombosis of the hepatic veins on Doppler ultrasonography. He takes no medications. His pulse is 96/min, and blood pressure is 122/76 mm Hg. Examination shows conjunctival pallor and mild scleral icterus; the liver is palpable 3 cm below the right costal margin. Hemoglobin is 8.9 g/dL, mean corpuscular volume is 104 μm3, leukocyte count is 3,100/mm3, platelet count is 88,000/mm3, and reticulocyte count is 6%. Serum lactate dehydrogenase is 1,850 U/L, and haptoglobin is undetectable. A direct antiglobulin (Coombs) test is negative. A peripheral blood smear shows no schistocytes or spherocytes. Urinalysis shows a positive dipstick test for blood with no red blood cells on microscopy. Which of the following is the most appropriate test to confirm the diagnosis? A. Bone marrow biopsy B. Flow cytometry for CD55 and CD59 on peripheral blood cells C. JAK2 V617F mutation analysis D. Osmotic fragility test E. ADAMTS13 activity assay"
+  },
+  {
+   "id": "imaging-2026-0577",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 오래 술을 마신 남성의 황달과 판별함수",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0577.md",
+   "snippet": "48세 남자가 3주 전부터 눈이 노래지고 배가 불러 온다고 병원에 왔다. 20년 동안 하루 소주 2병을 마셨고 마지막 음주는 10일 전이다. 체온 37.9℃, 혈압 112/70 mmHg, 맥박 104회/분이다. 공막 황달과 압통을 동반한 간비대가 있고 복수가 약간 있다. 혈액검사에서 백혈구 14,800/mm³(중성구 82 %), 혈색소 11.8 g/dL, 혈소판 142,000/mm³, AST 182 U/L, ALT 64 U/L",
+   "text": "소화기 소화기·간담췌 — 오래 술을 마신 남성의 황달과 판별함수 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 48세 남자가 3주 전부터 눈이 노래지고 배가 불러 온다고 병원에 왔다. 20년 동안 하루 소주 2병을 마셨고 마지막 음주는 10일 전이다. 체온 37.9℃, 혈압 112/70 mmHg, 맥박 104회/분이다. 공막 황달과 압통을 동반한 간비대가 있고 복수가 약간 있다. 혈액검사에서 백혈구 14,800/mm³(중성구 82 %), 혈색소 11.8 g/dL, 혈소판 142,000/mm³, AST 182 U/L, ALT 64 U/L, 총빌리루빈 14.2 mg/dL, 프로트롬빈시간 21초(대조 12초), 알부민 2.9 g/dL, 크레아티닌 0.9 mg/dL 이다. 혈액·소변 배양과 복수 천자에서 감염은 없었고 위장관 출혈 소견도 없다. 가장 적절한 치료는? A. 광범위 항생제 정맥 투여 B. 프레드니솔론 40 mg/일 경구 투여 C. 펜톡시필린 경구 투여 D. N 아세틸시스테인 단독 정맥 투여 E. 즉시 간이식 대기 등록"
+  },
+  {
+   "id": "imaging-2026-0576",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 넘어진 지 2주 지나도 아픈 소아의 손목 측면 X선",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0576.md",
+   "snippet": "A 12 year old girl is brought to the physician because of persistent pain in her left wrist for 2 weeks. She fell onto her outstretched hand while roller skating; at an urgent care center that day, she was told her wrist was sprained and wa",
+   "text": "근골격·류마티스 류마티스·근골격 — 넘어진 지 2주 지나도 아픈 소아의 손목 측면 X선 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 A 12 year old girl is brought to the physician because of persistent pain in her left wrist for 2 weeks. She fell onto her outstretched hand while roller skating; at an urgent care center that day, she was told her wrist was sprained and was given an elastic bandage. Since then, the pain has decreased but recurs when she pushes up from a chair. She has no fever. Examination shows mild swelling and point tenderness over the dorsal aspect of the distal radius just proximal to the wrist crease. Range of motion is mildly limited by pain, and sensation and capillary refill in the hand are normal. Serum C reactive protein concentration is within the reference range. A lateral radiograph of the left wrist is shown. Which of the following is the most appropriate next step in management? A. Short arm cast immobilization for 3 to 4 weeks B. Intravenous cefazolin and bone biopsy C. Closed reduction and percutaneous pinning D. MRI of the wrist E. Skeletal survey for suspected physical abuse"
+  },
+  {
+   "id": "imaging-2026-0575",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·외상 — 정면 충돌 뒤 목 통증을 호소하는 젊은 여성의 경추 측면 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0575.md",
+   "snippet": "21세 여자가 승용차 조수석에 타고 있다가 정면 충돌 사고를 당해 응급실로 이송되었다. 경추 보호대를 한 상태이며 목 뒤쪽이 아프다고 한다. 의식은 명료하고, 혈압 118/72 mmHg, 맥박 92회/분, 호흡 18회/분이다. 사지의 근력과 감각은 정상이고 항문 괄약근 긴장도도 정상이다. 복부와 흉부 진찰에서 이상은 없다. 경추 측면 단순 X선은 그림과 같다. 가장 적절한 처치는? A. 두개골 집게로 경추 견인을 시작한다 B.",
+   "text": "응급·중환자 응급·외상 — 정면 충돌 뒤 목 통증을 호소하는 젊은 여성의 경추 측면 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 21세 여자가 승용차 조수석에 타고 있다가 정면 충돌 사고를 당해 응급실로 이송되었다. 경추 보호대를 한 상태이며 목 뒤쪽이 아프다고 한다. 의식은 명료하고, 혈압 118/72 mmHg, 맥박 92회/분, 호흡 18회/분이다. 사지의 근력과 감각은 정상이고 항문 괄약근 긴장도도 정상이다. 복부와 흉부 진찰에서 이상은 없다. 경추 측면 단순 X선은 그림과 같다. 가장 적절한 처치는? A. 두개골 집게로 경추 견인을 시작한다 B. 도수 정복 후 연성 경추 보호대로 바꾼다 C. 보호대를 풀고 굴곡·신전 X선을 찍는다 D. 고용량 메틸프레드니솔론을 정맥 투여한다 E. 경추를 엄격히 고정한 채 후두골 경추 유합술을 준비한다"
+  },
+  {
+   "id": "imaging-2026-0574",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 후각 소실 뒤 숨이 차는 중년 여성의 흉부 X선과 확진 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0574.md",
+   "snippet": "A 61 year old woman comes to the emergency department because of fever, dry cough, and increasing shortness of breath for 8 days. She noticed loss of smell on the second day of illness. Her husband had similar symptoms 2 weeks ago. She has ",
+   "text": "호흡기 호흡기 — 후각 소실 뒤 숨이 차는 중년 여성의 흉부 X선과 확진 검사 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 A 61 year old woman comes to the emergency department because of fever, dry cough, and increasing shortness of breath for 8 days. She noticed loss of smell on the second day of illness. Her husband had similar symptoms 2 weeks ago. She has type 2 diabetes mellitus treated with metformin. Her temperature is 38.3°C (100.9°F), pulse is 98/min, respirations are 24/min, and blood pressure is 132/78 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 92%. Fine crackles are heard at both lung bases. Leukocyte count is 5,200/mm3 with a lymphocyte count of 650/mm3, and serum sodium is 138 mEq/L. A chest radiograph is shown. Which of the following is the most appropriate test to confirm the diagnosis? A. Serum (1→3) β D glucan assay B. Sputum Gram stain and culture C. CT pulmonary angiography D. Nucleic acid amplification test of a nasopharyngeal swab for SARS CoV 2 E. Urinary antigen test for Legionella pneumophila"
+  },
+  {
+   "id": "imaging-2026-0573",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 뇌전증 수술로 얻은 대뇌피질의 면역조직화학염색",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "confidence": "high",
+   "date": "2026-11-07",
+   "path": "content/imaging/2026/imaging-2026-0573.md",
+   "snippet": "37세 남자가 10년 동안 약으로 조절되지 않는 측두엽 뇌전증으로 앞쪽 측두엽 절제술을 받았다. 수술 전 자기공명영상에서 종괴는 없었다. 절제 검체 가운데 병변이 없는 대뇌피질 조직에 한 가지 단백질에 대한 면역조직화학염색을 하였고, 결과는 그림과 같다. 갈색으로 염색된 가는 섬유 구조물로 가장 적절한 것은? A. 미세아교세포의 돌기 B. 모세혈관 내피세포 C. 신경세포의 축삭 D. 별아교세포의 돌기 E. 희소돌기아교세포가 만",
+   "text": "병리·조직학 병리·조직 — 뇌전증 수술로 얻은 대뇌피질의 면역조직화학염색 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98 37세 남자가 10년 동안 약으로 조절되지 않는 측두엽 뇌전증으로 앞쪽 측두엽 절제술을 받았다. 수술 전 자기공명영상에서 종괴는 없었다. 절제 검체 가운데 병변이 없는 대뇌피질 조직에 한 가지 단백질에 대한 면역조직화학염색을 하였고, 결과는 그림과 같다. 갈색으로 염색된 가는 섬유 구조물로 가장 적절한 것은? A. 미세아교세포의 돌기 B. 모세혈관 내피세포 C. 신경세포의 축삭 D. 별아교세포의 돌기 E. 희소돌기아교세포가 만든 수초"
   },
   {
    "id": "cn.cardio.cardiac-mri-lge.pattern-etiology",

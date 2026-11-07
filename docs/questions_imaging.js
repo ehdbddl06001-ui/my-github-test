@@ -2,6 +2,1613 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0584",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 증상 없는 젊은 남성의 입사 검진 심전도",
+  "type": "심전도 판독 — 증상 없는 젊은 남성의 입사 검진 심전도",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-07",
+  "vignette": "A 37-year-old man undergoes a preemployment medical examination. He has no symptoms and runs 5 km three times a week without difficulty. He has never had palpitations or syncope, and there is no family history of sudden cardiac death. He takes no medications. His pulse is 80/min, and blood pressure is 124/78 mm Hg. Cardiac examination shows a normal first heart sound and physiologic splitting of the second heart sound without murmurs. Serum electrolyte concentrations are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely interpretation of this ECG?",
+  "options": [
+   "Left anterior fascicular block",
+   "Sinus rhythm with incomplete RBBB",
+   "Sinus rhythm with complete RBBB",
+   "Type 1 Brugada pattern",
+   "Wolff-Parkinson-White pattern"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The rhythm strip shows sinus rhythm at about 80/min with an upright P wave before every QRS in lead II and a normal PR interval. In V1, the QRS has an rSr′ shape, and there is a terminal positive deflection in aVR, but the QRS duration is less than 0.12 seconds, and the terminal S waves in I and V6 are small and not broad. The axis is normal (positive QRS in I, II, and aVF), there is no delta wave or short PR, and there is no coved ST elevation in V1 and V2. This is incomplete right bundle branch block, a common finding in healthy young adults; in the absence of a fixed split S2 or murmur, no further testing is needed.\n- 원리: <b>Why the terminal r′ appears in V1</b>: Normally the right and left ventricles depolarize together, and the larger left ventricle dominates, giving V1 an rS complex. When conduction in the right bundle is slowed, the right ventricle is activated slightly late, after the left has finished. That late rightward, anterior force produces a second positive wave (r′) in V1, a terminal R in aVR, and a terminal s in I and V6.<br> <b>Why width decides complete versus incomplete</b>: If the right bundle is fully blocked, the right ventricle is activated slowly through muscle from the left side, and the QRS widens to 0.12 seconds or more with a broad, slurred S in I and V6. If conduction is only delayed, the late force is brief, and the QRS stays between 0.10 and 0.12 seconds.<br> <b>When it matters</b>: Isolated incomplete RBBB in a healthy person carries no prognostic weight. It becomes a clue when combined with a fixed split S2 and a systolic flow murmur (secundum atrial septal defect causing right ventricular volume overload), or with right ventricular hypertrophy.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Incomplete RBBB (answer)</th><th>Complete RBBB (closest distractor)</th></tr></thead><tbody> <tr><td>QRS duration</td><td><b>Less than 0.12 s</b></td><td>0.12 s or more</td></tr> <tr><td>V1</td><td>rSr′ with a small r′</td><td>rsR′ with a tall, broad R′ (\"M\" shape)</td></tr> <tr><td>I and V6</td><td>Small terminal s</td><td>Wide, slurred S wave</td></tr> <tr><td>ST-T in V1</td><td>Usually normal</td><td>Secondary T-wave inversion</td></tr> </tbody></table> The same rSr′ shape is read differently by width: measure the QRS before naming the block.\n- 오답 이유:\n  - (A) Left anterior fascicular block would be correct for left axis deviation beyond −45° with qR in I and aVL and rS in II, III, and aVF.\n  - (C) Complete RBBB would be correct if the QRS were 0.12 s or wider with a tall, broad R′ in V1 and wide, slurred S waves in I and V6.\n  - (D) A type 1 Brugada pattern would be correct for coved ST elevation of 2 mm or more with T-wave inversion in V1 and V2, often with syncope or a family history of sudden death.\n  - (E) A Wolff-Parkinson-White pattern would be correct for a PR interval under 0.12 s with a slurred delta wave at the start of a widened QRS.\n- 함정: Calling any rSr′ in V1 a complete bundle branch block or Brugada pattern — a QRS under 0.12 s without coved ST elevation is incomplete RBBB.\n- 학습목표: V1 의 rSr′ 과 0.12 s 미만의 QRS 폭으로 불완전 우각차단을 판독하고, 완전 우각차단·Brugada 양상·WPW·좌전섬유속차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5455 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm strip shows sinus rhythm at about 80/min with an upright P wave before every QRS in lead II and a normal PR interval. In V1, the QRS has an rSr′ shape, and there is a terminal positive deflection in aVR, but the QRS duration is less than 0.12 seconds, and the terminal S waves in I and V6 are small and not broad. The axis is normal (positive QRS in I, II, and aVF), there is no delta wave or short PR, and there is no coved ST elevation in V1 and V2. This is incomplete right bundle branch block, a common finding in healthy young adults; in the absence of a fixed split S2 or murmur, no further testing is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the terminal r′ appears in V1</b>: Normally the right and left ventricles depolarize together, and the larger left ventricle dominates, giving V1 an rS complex. When conduction in the right bundle is slowed, the right ventricle is activated slightly late, after the left has finished. That late rightward, anterior force produces a second positive wave (r′) in V1, a terminal R in aVR, and a terminal s in I and V6.<br> <b>Why width decides complete versus incomplete</b>: If the right bundle is fully blocked, the right ventricle is activated slowly through muscle from the left side, and the QRS widens to 0.12 seconds or more with a broad, slurred S in I and V6. If conduction is only delayed, the late force is brief, and the QRS stays between 0.10 and 0.12 seconds.<br> <b>When it matters</b>: Isolated incomplete RBBB in a healthy person carries no prognostic weight. It becomes a clue when combined with a fixed split S2 and a systolic flow murmur (secundum atrial septal defect causing right ventricular volume overload), or with right ventricular hypertrophy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Incomplete RBBB (answer)</th><th>Complete RBBB (closest distractor)</th></tr></thead><tbody> <tr><td>QRS duration</td><td><b>Less than 0.12 s</b></td><td>0.12 s or more</td></tr> <tr><td>V1</td><td>rSr′ with a small r′</td><td>rsR′ with a tall, broad R′ (\"M\" shape)</td></tr> <tr><td>I and V6</td><td>Small terminal s</td><td>Wide, slurred S wave</td></tr> <tr><td>ST-T in V1</td><td>Usually normal</td><td>Secondary T-wave inversion</td></tr> </tbody></table> The same rSr′ shape is read differently by width: measure the QRS before naming the block."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Left anterior fascicular block would be correct for left axis deviation beyond −45° with qR in I and aVL and rS in II, III, and aVF.\n(C) Complete RBBB would be correct if the QRS were 0.12 s or wider with a tall, broad R′ in V1 and wide, slurred S waves in I and V6.\n(D) A type 1 Brugada pattern would be correct for coved ST elevation of 2 mm or more with T-wave inversion in V1 and V2, often with syncope or a family history of sudden death.\n(E) A Wolff-Parkinson-White pattern would be correct for a PR interval under 0.12 s with a slurred delta wave at the start of a widened QRS."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any rSr′ in V1 a complete bundle branch block or Brugada pattern — a QRS under 0.12 s without coved ST elevation is incomplete RBBB."
+   },
+   {
+    "k": "학습목표",
+    "v": "V1 의 rSr′ 과 0.12 s 미만의 QRS 폭으로 불완전 우각차단을 판독하고, 완전 우각차단·Brugada 양상·WPW·좌전섬유속차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5455 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "An rSr′ in V1 with a QRS duration under 0.12 s and normal axis is incomplete right bundle branch block",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "The QRS is narrower than 0.12 s with small, not broad, terminal S waves in I and V6",
+   "steps": 2,
+   "chain": [
+    "영상: sinus rhythm with rSr′ in V1 and a terminal R in aVR",
+    "QRS under 0.12 s, normal axis, no delta wave, no coved ST elevation -> incomplete RBBB"
+   ],
+   "key": [
+    {
+     "item": "영상: rSr′ in V1 with a QRS duration under 0.12 s",
+     "why": "Defines incomplete RBBB",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: no coved ST elevation in V1 and V2 and no delta wave",
+     "why": "Lowers the likelihood of Brugada and WPW patterns",
+     "also": []
+    },
+    {
+     "item": "He has never had palpitations or syncope",
+     "why": "No arrhythmic symptoms that would raise concern for Brugada or WPW",
+     "also": []
+    },
+    {
+     "item": "there is no family history of sudden cardiac death",
+     "why": "Lowers concern for an inherited channelopathy",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "physiologic splitting of the second heart sound without murmurs",
+     "why": "No fixed split S2 or flow murmur, so no atrial septal defect work-up is needed",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "runs 5 km three times a week",
+     "why": "Healthy, active adult — does not change the interpretation",
+     "also": []
+    }
+   ],
+   "summary": "Sinus rhythm with an rSr′ in V1, a QRS under 0.12 s, and a normal axis is incomplete right bundle branch block. Without a fixed split S2 or murmur, it is a benign variant.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the QRS were 0.12 s or wider with a broad R′ in V1 and slurred S waves in I and V6, complete RBBB"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0584.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05455",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5455"
+  },
+  "run_id": "20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0583",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 설사·구토 뒤 어지러운 노인 남성의 빠른 맥",
+  "type": "심전도 처치 — 설사·구토 뒤 어지러운 노인 남성의 빠른 맥",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-07",
+  "vignette": "68세 남자가 이틀 전부터 하루 10번 넘는 물설사와 구토가 있고 일어서면 어지러워 응급실에 왔다. 고혈압으로 암로디핀을 먹고 있다. 체온 37.6℃, 혈압 102/64 mmHg(일어서면 84/56 mmHg), 맥박 116회/분, 호흡 18회/분이다. 혀와 입안이 말라 있고 피부 긴장도가 떨어져 있다. 혈액요소질소 42 mg/dL, 크레아티닌 1.5 mg/dL(평소 0.9), 나트륨 141 mEq/L, 칼륨 3.6 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "동기화 심율동전환",
+   "아미오다론 정맥 주사",
+   "생리식염수 정맥 주입",
+   "아데노신 정맥 주사",
+   "메토프롤롤 정맥 주사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 모든 QRS 앞에 양성 P파가 일정한 PR 로 있고, 좁은 QRS 가 규칙적으로 약 115회/분이다 — 동빈맥이다. 동빈맥은 그 자체가 부정맥이 아니라 몸의 요구에 대한 정상 반응이므로, 원인을 고치는 것이 치료다. 이 환자는 설사·구토, 기립성 저혈압, 입마름, BUN/크레아티닌 비 28 의 신전성 급성 신장손상이 있어 체액 소실이 원인이다. 생리식염수로 혈관 내 용적을 채우면 박동수가 저절로 내려간다.\n- 원리: <b>왜 박동수를 낮추면 안 되나</b>: 심박출량 = 일회박출량 × 심박수다. 체액이 빠지면 정맥환류와 일회박출량이 줄고, 압수용체 반사가 교감신경을 올려 심박수를 늘려 심박출량과 혈압을 지킨다. 이때 β차단제로 박동수를 떨어뜨리면 마지막 보상이 사라져 혈압이 무너진다.<br> <b>왜 동빈맥이라 단정하나</b>: 동방결절에서 시작한 박동은 심방을 위에서 아래·오른쪽에서 왼쪽으로 탈분극해 I·II 에서 양성 P파를 만든다. 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 로 있으면 동결절 기원이다. 박동수는 원인에 따라 서서히 오르내리고, 아데노신을 주면 잠시 느려질 뿐 멎지 않는다.<br> <b>원인 찾기</b>: 열·통증·불안·빈혈·저혈량·저산소증·갑상샘항진증·폐색전증·약물(β작용제·카페인)·금단이 흔하다. 원인을 못 찾고 지속되면 부적절 동빈맥·동결절 재진입을 생각한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">원인이 있는 동빈맥(정답)</th><th>박동수 조절이 맞는 경우(메토프롤롤 오답)</th></tr></thead><tbody> <tr><td>리듬</td><td>정상 P파가 모든 QRS 앞에</td><td>심방세동·조동처럼 심방 리듬이 비정상</td></tr> <tr><td>혈역학</td><td><b>저혈량·기립성 저혈압</b> — 빈맥이 보상</td><td>혈압 유지, 빈맥 자체가 증상의 원인</td></tr> <tr><td>치료</td><td>수액 등 원인 교정</td><td>β차단제·칼슘통로차단제</td></tr> </tbody></table> 빈맥이 원인인지 결과인지를 먼저 묻는다 — 결과라면 박동수를 직접 낮추는 약은 보상을 빼앗는다.\n- 오답 이유:\n  - ① 동기화 심율동전환은 쇼크·의식 저하·허혈성 흉통이 있는 불안정한 재진입 빈맥(상심실빈맥·조동·맥박 있는 심실빈맥)에서 정답이 된다.\n  - ② 아미오다론은 혈역학적으로 안정한 단형 심실빈맥이나 심기능이 낮은 환자의 심방세동 박동수·리듬 조절에서 정답이 된다.\n  - ④ 아데노신은 P파가 보이지 않는 규칙적인 좁은 QRS 빈맥(발작성 상심실빈맥)에서 미주신경 자극이 실패했을 때 정답이 된다.\n  - ⑤ 메토프롤롤은 혈압이 유지되는 빠른 심실 반응의 심방세동·조동에서 박동수 조절용으로 정답이 된다.\n- 함정: 빠른 맥을 부정맥으로 보고 박동수를 낮추는 약을 고르는 것 — 정상 P파가 앞선 동빈맥은 저혈량의 보상이며 수액이 치료다.\n- 학습목표: 모든 QRS 앞에 정상 P파가 있는 동빈맥을 읽고, 체액 소실이라는 원인을 찾아 박동수 조절이 아니라 수액으로 교정한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17848 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 모든 QRS 앞에 양성 P파가 일정한 PR 로 있고, 좁은 QRS 가 규칙적으로 약 115회/분이다 — 동빈맥이다. 동빈맥은 그 자체가 부정맥이 아니라 몸의 요구에 대한 정상 반응이므로, 원인을 고치는 것이 치료다. 이 환자는 설사·구토, 기립성 저혈압, 입마름, BUN/크레아티닌 비 28 의 신전성 급성 신장손상이 있어 체액 소실이 원인이다. 생리식염수로 혈관 내 용적을 채우면 박동수가 저절로 내려간다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 박동수를 낮추면 안 되나</b>: 심박출량 = 일회박출량 × 심박수다. 체액이 빠지면 정맥환류와 일회박출량이 줄고, 압수용체 반사가 교감신경을 올려 심박수를 늘려 심박출량과 혈압을 지킨다. 이때 β차단제로 박동수를 떨어뜨리면 마지막 보상이 사라져 혈압이 무너진다.<br> <b>왜 동빈맥이라 단정하나</b>: 동방결절에서 시작한 박동은 심방을 위에서 아래·오른쪽에서 왼쪽으로 탈분극해 I·II 에서 양성 P파를 만든다. 모든 QRS 앞에 같은 모양의 P파가 일정한 PR 로 있으면 동결절 기원이다. 박동수는 원인에 따라 서서히 오르내리고, 아데노신을 주면 잠시 느려질 뿐 멎지 않는다.<br> <b>원인 찾기</b>: 열·통증·불안·빈혈·저혈량·저산소증·갑상샘항진증·폐색전증·약물(β작용제·카페인)·금단이 흔하다. 원인을 못 찾고 지속되면 부적절 동빈맥·동결절 재진입을 생각한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">원인이 있는 동빈맥(정답)</th><th>박동수 조절이 맞는 경우(메토프롤롤 오답)</th></tr></thead><tbody> <tr><td>리듬</td><td>정상 P파가 모든 QRS 앞에</td><td>심방세동·조동처럼 심방 리듬이 비정상</td></tr> <tr><td>혈역학</td><td><b>저혈량·기립성 저혈압</b> — 빈맥이 보상</td><td>혈압 유지, 빈맥 자체가 증상의 원인</td></tr> <tr><td>치료</td><td>수액 등 원인 교정</td><td>β차단제·칼슘통로차단제</td></tr> </tbody></table> 빈맥이 원인인지 결과인지를 먼저 묻는다 — 결과라면 박동수를 직접 낮추는 약은 보상을 빼앗는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 동기화 심율동전환은 쇼크·의식 저하·허혈성 흉통이 있는 불안정한 재진입 빈맥(상심실빈맥·조동·맥박 있는 심실빈맥)에서 정답이 된다.\n② 아미오다론은 혈역학적으로 안정한 단형 심실빈맥이나 심기능이 낮은 환자의 심방세동 박동수·리듬 조절에서 정답이 된다.\n④ 아데노신은 P파가 보이지 않는 규칙적인 좁은 QRS 빈맥(발작성 상심실빈맥)에서 미주신경 자극이 실패했을 때 정답이 된다.\n⑤ 메토프롤롤은 혈압이 유지되는 빠른 심실 반응의 심방세동·조동에서 박동수 조절용으로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빠른 맥을 부정맥으로 보고 박동수를 낮추는 약을 고르는 것 — 정상 P파가 앞선 동빈맥은 저혈량의 보상이며 수액이 치료다."
+   },
+   {
+    "k": "학습목표",
+    "v": "모든 QRS 앞에 정상 P파가 있는 동빈맥을 읽고, 체액 소실이라는 원인을 찾아 박동수 조절이 아니라 수액으로 교정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17848 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "정상 P파가 앞서는 동빈맥이 체액 소실의 보상이면 박동수를 낮추지 않고 수액으로 원인을 교정한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "모든 QRS 앞에 정상 P파가 있고 기립성 저혈압·신전성 신장손상으로 저혈량이 원인이다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞 II 양성 P파, 일정한 PR, 규칙적 좁은 QRS 약 115회/분 → 동빈맥",
+    "설사·구토 + 기립성 저혈압 + 입마름 + BUN/크레아티닌 28 → 저혈량",
+    "동빈맥은 저혈량의 보상 → 박동수 조절 대신 생리식염수 주입"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞 II 양성 P파와 일정한 PR",
+     "why": "동결절 기원 리듬",
+     "also": []
+    },
+    {
+     "item": "하루 10번 넘는 물설사와 구토",
+     "why": "체액 소실의 원인",
+     "also": []
+    },
+    {
+     "item": "일어서면 84/56 mmHg",
+     "why": "기립성 저혈압 — 저혈량",
+     "also": []
+    },
+    {
+     "item": "혈액요소질소 42 mg/dL, 크레아티닌 1.5 mg/dL(평소 0.9)",
+     "why": "신전성 급성 신장손상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "고혈압으로 암로디핀을 먹고 있다",
+     "why": "저혈압 동안 강압제는 쉬어야 한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "칼륨 3.6 mEq/L",
+     "why": "정상 하한 — 부정맥 원인이 아니며 처치 선택을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "체온 37.6℃",
+     "why": "미열 — 빈맥에 조금 더할 뿐 주 원인은 저혈량",
+     "also": []
+    }
+   ],
+   "summary": "정상 P파가 앞서는 동빈맥 약 115회/분이다. 설사·구토로 인한 저혈량의 보상이므로 생리식염수로 교정한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "P파가 보이지 않는 규칙적인 좁은 QRS 빈맥이 갑자기 시작했고 미주신경 자극에 반응하지 않으면 아데노신"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0583.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/17000/#files-panel",
+   "asset_id": "PTBXL-17848",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17848"
+  },
+  "run_id": "20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0582",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 갑자기 두근거림이 시작된 노인 여성의 규칙적인 빠른 맥",
+  "type": "심전도 판독 — 갑자기 두근거림이 시작된 노인 여성의 규칙적인 빠른 맥",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-07",
+  "vignette": "74세 여자가 30분 전 텔레비전을 보다가 갑자기 가슴이 빠르게 뛰기 시작해 응급실에 왔다. 비슷한 두근거림이 몇 년에 한 번씩 있었고 저절로 멎었다고 한다. 흉통과 호흡곤란은 없고 어지럼이 약간 있다. 혈압 128/76 mmHg, 호흡 18회/분, 산소포화도 97 % 이다. 맥은 빠르고 규칙적이다. 혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "발작성 상심실빈맥",
+   "동빈맥",
+   "2:1 전도의 심방조동",
+   "빠른 심실 반응의 심방세동",
+   "심실빈맥"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 RR 간격이 일정한 좁은 QRS(0.12 s 미만) 빈맥이 약 170회/분이다. 어느 유도에서도 QRS 앞에 뚜렷한 P파가 없고, II·III·aVF 에 톱니 모양의 조동파가 없으며, 기선이 불규칙하게 흔들리는 세동파도 없다. 갑자기 시작해 갑자기 멎는 병력과 함께 이는 발작성 상심실빈맥(대개 방실결절 재진입 빈맥)이다. 일부 유도의 ST 하강은 빠른 맥에 따른 변화로, 빈맥이 멎으면 사라진다.\n- 원리: <b>왜 P파가 사라지나</b>: 가장 흔한 방실결절 재진입 빈맥은 결절 안의 빠른 길과 느린 길이 고리를 이룬다. 전기가 느린 길로 내려가 빠른 길로 거슬러 올라가므로 심방과 심실이 거의 <b>동시에</b> 탈분극한다. 그래서 역행 P파가 QRS 속에 숨거나 QRS 끝에 작은 패임(V1 의 가성 r′, 하벽 유도의 가성 s)으로만 보인다.<br> <b>왜 갑자기 시작하고 멎나</b>: 조기 심방 수축이 빠른 길이 아직 불응기일 때 들어오면 느린 길로만 내려가 고리가 시작된다. 고리에 결절이 포함되므로 미주신경 자극이나 아데노신으로 결절 전도를 잠시 막으면 고리가 끊어져 한 박동 만에 멎는다.<br> <b>왜 좁은가</b>: 심실은 정상 히스-푸르키니에 경로로 탈분극하므로 QRS 가 좁다. 넓다면 변행 전도·부전도로 전도·심실빈맥을 먼저 생각한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발작성 상심실빈맥(정답)</th><th>2:1 심방조동(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심박수</td><td>대개 150~250회/분, 이 기록 약 170</td><td><b>약 150회/분 근처에 고정</b>(심방 300 의 절반)</td></tr> <tr><td>심방 활동</td><td>보이지 않거나 QRS 끝에 숨음</td><td>II·III·aVF 의 톱니 모양 조동파, V1 의 규칙적 F파</td></tr> <tr><td>아데노신</td><td>대개 멎는다</td><td>멎지 않고 전도가 줄어 조동파가 드러난다</td></tr> </tbody></table> 둘 다 규칙적인 좁은 QRS 빈맥이다 — 박동수가 150 에 붙어 있는지, 하벽 유도에 톱니가 있는지를 먼저 본다.\n- 오답 이유:\n  - ② 동빈맥은 모든 QRS 앞에 II 유도 양성 P파가 일정한 PR 로 있고, 열·탈수·통증처럼 서서히 빨라지는 원인이 있을 때 정답이 된다.\n  - ③ 2:1 심방조동은 심박수가 약 150회/분에 고정되고 II·III·aVF 에 톱니 모양 조동파가 보일 때 정답이 된다.\n  - ④ 빠른 심실 반응의 심방세동은 RR 간격이 완전히 불규칙하고 P파 대신 기선이 불규칙하게 흔들릴 때 정답이 된다.\n  - ⑤ 심실빈맥은 QRS 가 0.12 s 이상 넓고 방실 해리·포착 박동·융합 박동이 보일 때 정답이 된다.\n- 함정: 빠르고 규칙적인 맥을 모두 동빈맥으로 읽는 것 — 갑작스런 시작과 QRS 앞 P파가 없는 것이 상심실빈맥을 가른다.\n- 학습목표: 규칙적인 좁은 QRS 빈맥(약 170회/분)에서 QRS 앞 P파와 조동파가 없음을 읽어 발작성 상심실빈맥으로 판독하고 동빈맥·심방조동·심방세동·심실빈맥과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7889 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 RR 간격이 일정한 좁은 QRS(0.12 s 미만) 빈맥이 약 170회/분이다. 어느 유도에서도 QRS 앞에 뚜렷한 P파가 없고, II·III·aVF 에 톱니 모양의 조동파가 없으며, 기선이 불규칙하게 흔들리는 세동파도 없다. 갑자기 시작해 갑자기 멎는 병력과 함께 이는 발작성 상심실빈맥(대개 방실결절 재진입 빈맥)이다. 일부 유도의 ST 하강은 빠른 맥에 따른 변화로, 빈맥이 멎으면 사라진다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 P파가 사라지나</b>: 가장 흔한 방실결절 재진입 빈맥은 결절 안의 빠른 길과 느린 길이 고리를 이룬다. 전기가 느린 길로 내려가 빠른 길로 거슬러 올라가므로 심방과 심실이 거의 <b>동시에</b> 탈분극한다. 그래서 역행 P파가 QRS 속에 숨거나 QRS 끝에 작은 패임(V1 의 가성 r′, 하벽 유도의 가성 s)으로만 보인다.<br> <b>왜 갑자기 시작하고 멎나</b>: 조기 심방 수축이 빠른 길이 아직 불응기일 때 들어오면 느린 길로만 내려가 고리가 시작된다. 고리에 결절이 포함되므로 미주신경 자극이나 아데노신으로 결절 전도를 잠시 막으면 고리가 끊어져 한 박동 만에 멎는다.<br> <b>왜 좁은가</b>: 심실은 정상 히스-푸르키니에 경로로 탈분극하므로 QRS 가 좁다. 넓다면 변행 전도·부전도로 전도·심실빈맥을 먼저 생각한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발작성 상심실빈맥(정답)</th><th>2:1 심방조동(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심박수</td><td>대개 150~250회/분, 이 기록 약 170</td><td><b>약 150회/분 근처에 고정</b>(심방 300 의 절반)</td></tr> <tr><td>심방 활동</td><td>보이지 않거나 QRS 끝에 숨음</td><td>II·III·aVF 의 톱니 모양 조동파, V1 의 규칙적 F파</td></tr> <tr><td>아데노신</td><td>대개 멎는다</td><td>멎지 않고 전도가 줄어 조동파가 드러난다</td></tr> </tbody></table> 둘 다 규칙적인 좁은 QRS 빈맥이다 — 박동수가 150 에 붙어 있는지, 하벽 유도에 톱니가 있는지를 먼저 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 동빈맥은 모든 QRS 앞에 II 유도 양성 P파가 일정한 PR 로 있고, 열·탈수·통증처럼 서서히 빨라지는 원인이 있을 때 정답이 된다.\n③ 2:1 심방조동은 심박수가 약 150회/분에 고정되고 II·III·aVF 에 톱니 모양 조동파가 보일 때 정답이 된다.\n④ 빠른 심실 반응의 심방세동은 RR 간격이 완전히 불규칙하고 P파 대신 기선이 불규칙하게 흔들릴 때 정답이 된다.\n⑤ 심실빈맥은 QRS 가 0.12 s 이상 넓고 방실 해리·포착 박동·융합 박동이 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빠르고 규칙적인 맥을 모두 동빈맥으로 읽는 것 — 갑작스런 시작과 QRS 앞 P파가 없는 것이 상심실빈맥을 가른다."
+   },
+   {
+    "k": "학습목표",
+    "v": "규칙적인 좁은 QRS 빈맥(약 170회/분)에서 QRS 앞 P파와 조동파가 없음을 읽어 발작성 상심실빈맥으로 판독하고 동빈맥·심방조동·심방세동·심실빈맥과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7889 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "P파가 보이지 않는 규칙적인 좁은 QRS 빈맥 약 170회/분이 갑자기 시작했으면 발작성 상심실빈맥이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "박동수가 150 에 고정되지 않고 하벽 유도에 조동파가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: RR 이 일정한 좁은 QRS 빈맥 약 170회/분, QRS 앞 P파 없음",
+    "조동파·세동파 없음 + 갑작스런 시작과 저절로 멎은 과거 삽화 → 발작성 상심실빈맥"
+   ],
+   "key": [
+    {
+     "item": "영상: RR 이 일정한 좁은 QRS 빈맥 약 170회/분",
+     "why": "규칙적인 좁은 QRS 빈맥",
+     "also": []
+    },
+    {
+     "item": "갑자기 가슴이 빠르게 뛰기 시작해",
+     "why": "재진입 빈맥의 갑작스런 시작",
+     "also": []
+    },
+    {
+     "item": "몇 년에 한 번씩 있었고 저절로 멎었다",
+     "why": "발작성 경과",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: QRS 앞 P파와 하벽 유도 조동파가 없음",
+     "why": "동빈맥·심방조동 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 정상",
+     "why": "전해질·갑상샘 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 128/76 mmHg",
+     "why": "혈역학적으로 안정 — 미주신경 자극·아데노신부터",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "P파가 보이지 않는 규칙적인 좁은 QRS 빈맥 약 170회/분이 갑자기 시작했다. 조동파·세동파가 없어 발작성 상심실빈맥이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "박동수가 150회/분 근처에 고정되고 II·III·aVF 에 톱니 모양 파형이 보이면 2:1 심방조동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0582.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/07000/#files-panel",
+   "asset_id": "PTBXL-07889",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7889"
+  },
+  "run_id": "20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0576",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "류마티스·근골격 — 넘어진 지 2주 지나도 아픈 소아의 손목 측면 X선",
+  "type": "류마티스·근골격 — 넘어진 지 2주 지나도 아픈 소아의 손목 측면 X선",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-07",
+  "vignette": "A 12-year-old girl is brought to the physician because of persistent pain in her left wrist for 2 weeks. She fell onto her outstretched hand while roller-skating; at an urgent care center that day, she was told her wrist was sprained and was given an elastic bandage. Since then, the pain has decreased but recurs when she pushes up from a chair. She has no fever. Examination shows mild swelling and point tenderness over the dorsal aspect of the distal radius just proximal to the wrist crease. Range of motion is mildly limited by pain, and sensation and capillary refill in the hand are normal. Serum C-reactive protein concentration is within the reference range. A lateral radiograph of the left wrist is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Short arm cast immobilization for 3 to 4 weeks",
+   "Intravenous cefazolin and bone biopsy",
+   "Closed reduction and percutaneous pinning",
+   "MRI of the wrist",
+   "Skeletal survey for suspected physical abuse"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The lateral radiograph shows an open distal radial physis with an oblique fracture line that runs from the physis into the dorsal metaphysis, isolating a small metaphyseal fragment, and a thin layer of periosteal new bone along the dorsal cortex. Displacement and angulation are minimal. This is a Salter-Harris type II fracture of the distal radius that was missed on the day of injury and is now 2 weeks into healing; the periosteal reaction is callus, not infection. A nondisplaced healing type II fracture is treated with cast immobilization for a further 3 to 4 weeks, and growth disturbance is uncommon.\n- 원리: <b>Why the physis breaks first</b>: In children, the cartilaginous growth plate is weaker than the surrounding ligaments and bone, so a fall on an outstretched hand that would sprain an adult wrist instead separates the physis. In type II, the most common pattern, the fracture travels through the hypertrophic zone of the physis and exits through the metaphysis, leaving a triangular metaphyseal (Thurston Holland) fragment attached to the epiphysis.<br> <b>Why periosteal new bone appears at 2 weeks</b>: Children's periosteum is thick and highly osteogenic. Within 7 to 14 days after a fracture, it lifts and lays down a thin shell of new bone along the cortex. On a delayed radiograph, this callus often makes a subtle fracture visible for the first time.<br> <b>Why the prognosis is good</b>: In type II injuries, the germinal (resting) layer on the epiphyseal side is usually spared, so growth arrest is rare, unlike types III to V that cross or crush the germinal layer.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Healing type II fracture (answer)</th><th>Acute osteomyelitis (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td>Clear fall, pain improving</td><td>No or trivial trauma, pain worsening</td></tr> <tr><td>Systemic signs</td><td>No fever, <b>normal CRP</b></td><td>Fever, elevated CRP and ESR</td></tr> <tr><td>Radiograph</td><td>Fracture line through physis and metaphysis + smooth callus</td><td>Metaphyseal lytic area, permeative destruction</td></tr> </tbody></table> Periosteal new bone is common to both; trauma, a fracture line, and normal inflammatory markers mark healing rather than infection.\n- 오답 이유:\n  - (B) Intravenous cefazolin and bone biopsy would be correct for fever, worsening pain, elevated CRP, and a lytic metaphyseal lesion suggesting osteomyelitis.\n  - (C) Closed reduction and pinning would be correct for an acute, markedly displaced or angulated physeal fracture, not for a healing nondisplaced one.\n  - (D) MRI would be correct when radiographs remain normal despite persistent snuffbox or physeal tenderness, to detect an occult fracture.\n  - (E) A skeletal survey would be correct for a child younger than 2 years, an inconsistent history, or multiple fractures at different stages of healing.\n- 함정: Reading periosteal new bone as infection — in a child with a clear fall, normal CRP, and a fracture line through the physis, it is fracture callus.\n- 학습목표: 넘어진 지 2주 된 소아 손목 측면 X선에서 성장판을 지나 골간단으로 이어지는 골절선과 골막 신생골을 치유 중인 Salter-Harris II 골절로 읽고, 골수염과 가른 뒤 석고 고정한다\n- 근거·출처: Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am. 1963;45(3):587-622 · Waters PM, Skaggs DL, Flynn JM, eds. Rockwood and Wilkins' Fractures in Children, 9th ed. Wolters Kluwer; 2019. Ch. Fractures of the distal radius and ulna\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The lateral radiograph shows an open distal radial physis with an oblique fracture line that runs from the physis into the dorsal metaphysis, isolating a small metaphyseal fragment, and a thin layer of periosteal new bone along the dorsal cortex. Displacement and angulation are minimal. This is a Salter-Harris type II fracture of the distal radius that was missed on the day of injury and is now 2 weeks into healing; the periosteal reaction is callus, not infection. A nondisplaced healing type II fracture is treated with cast immobilization for a further 3 to 4 weeks, and growth disturbance is uncommon."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the physis breaks first</b>: In children, the cartilaginous growth plate is weaker than the surrounding ligaments and bone, so a fall on an outstretched hand that would sprain an adult wrist instead separates the physis. In type II, the most common pattern, the fracture travels through the hypertrophic zone of the physis and exits through the metaphysis, leaving a triangular metaphyseal (Thurston Holland) fragment attached to the epiphysis.<br> <b>Why periosteal new bone appears at 2 weeks</b>: Children's periosteum is thick and highly osteogenic. Within 7 to 14 days after a fracture, it lifts and lays down a thin shell of new bone along the cortex. On a delayed radiograph, this callus often makes a subtle fracture visible for the first time.<br> <b>Why the prognosis is good</b>: In type II injuries, the germinal (resting) layer on the epiphyseal side is usually spared, so growth arrest is rare, unlike types III to V that cross or crush the germinal layer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Healing type II fracture (answer)</th><th>Acute osteomyelitis (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td>Clear fall, pain improving</td><td>No or trivial trauma, pain worsening</td></tr> <tr><td>Systemic signs</td><td>No fever, <b>normal CRP</b></td><td>Fever, elevated CRP and ESR</td></tr> <tr><td>Radiograph</td><td>Fracture line through physis and metaphysis + smooth callus</td><td>Metaphyseal lytic area, permeative destruction</td></tr> </tbody></table> Periosteal new bone is common to both; trauma, a fracture line, and normal inflammatory markers mark healing rather than infection."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Intravenous cefazolin and bone biopsy would be correct for fever, worsening pain, elevated CRP, and a lytic metaphyseal lesion suggesting osteomyelitis.\n(C) Closed reduction and pinning would be correct for an acute, markedly displaced or angulated physeal fracture, not for a healing nondisplaced one.\n(D) MRI would be correct when radiographs remain normal despite persistent snuffbox or physeal tenderness, to detect an occult fracture.\n(E) A skeletal survey would be correct for a child younger than 2 years, an inconsistent history, or multiple fractures at different stages of healing."
+   },
+   {
+    "k": "함정",
+    "v": "Reading periosteal new bone as infection — in a child with a clear fall, normal CRP, and a fracture line through the physis, it is fracture callus."
+   },
+   {
+    "k": "학습목표",
+    "v": "넘어진 지 2주 된 소아 손목 측면 X선에서 성장판을 지나 골간단으로 이어지는 골절선과 골막 신생골을 치유 중인 Salter-Harris II 골절로 읽고, 골수염과 가른 뒤 석고 고정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am. 1963;45(3):587-622 · Waters PM, Skaggs DL, Flynn JM, eds. Rockwood and Wilkins' Fractures in Children, 9th ed. Wolters Kluwer; 2019. Ch. Fractures of the distal radius and ulna ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "A fracture line through the distal radial physis into the metaphysis with smooth periosteal new bone 2 weeks after a fall is a healing Salter-Harris II fracture treated with cast immobilization",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "There is a clear fall, no fever, a normal C-reactive protein, and a visible fracture line rather than a lytic lesion",
+   "steps": 2,
+   "chain": [
+    "영상: open physis with an oblique physis-to-dorsal-metaphysis fracture line and thin dorsal periosteal new bone",
+    "Clear trauma + no fever + normal CRP -> healing Salter-Harris II fracture rather than osteomyelitis -> cast immobilization"
+   ],
+   "key": [
+    {
+     "item": "영상: oblique fracture line from the physis into the dorsal metaphysis",
+     "why": "Defines a Salter-Harris type II fracture",
+     "also": []
+    },
+    {
+     "item": "영상: thin periosteal new bone along the dorsal cortex",
+     "why": "Callus showing the fracture is about 2 weeks old",
+     "also": []
+    },
+    {
+     "item": "She fell onto her outstretched hand",
+     "why": "Mechanism of distal radial physeal injury",
+     "also": []
+    },
+    {
+     "item": "point tenderness over the dorsal aspect of the distal radius",
+     "why": "Localizes the injury to the physis",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no fever",
+     "why": "Lowers the likelihood of osteomyelitis",
+     "also": []
+    },
+    {
+     "item": "Serum C-reactive protein concentration is within the reference range",
+     "why": "Lowers the likelihood of osteomyelitis",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "sensation and capillary refill in the hand are normal",
+     "why": "No neurovascular compromise requiring urgent reduction",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "A fracture line through the physis into the dorsal metaphysis with smooth periosteal new bone 2 weeks after a fall is a healing Salter-Harris II fracture. With normal CRP and no fever, it is treated with a short arm cast.",
+   "switch": {
+    "choice": "B",
+    "condition": "With fever, worsening pain, an elevated CRP, and a lytic metaphyseal lesion without trauma, intravenous antibiotics and biopsy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0576.png",
+   "caption": "Lateral radiograph of the left wrist and distal forearm; side marker as in the original, resized only (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0819_0768805556_02_WRI-L2_F012",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0575",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "응급·외상 — 정면 충돌 뒤 목 통증을 호소하는 젊은 여성의 경추 측면 X선",
+  "type": "응급·외상 — 정면 충돌 뒤 목 통증을 호소하는 젊은 여성의 경추 측면 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-07",
+  "vignette": "21세 여자가 승용차 조수석에 타고 있다가 정면 충돌 사고를 당해 응급실로 이송되었다. 경추 보호대를 한 상태이며 목 뒤쪽이 아프다고 한다. 의식은 명료하고, 혈압 118/72 mmHg, 맥박 92회/분, 호흡 18회/분이다. 사지의 근력과 감각은 정상이고 항문 괄약근 긴장도도 정상이다. 복부와 흉부 진찰에서 이상은 없다. 경추 측면 단순 X선은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "두개골 집게로 경추 견인을 시작한다",
+   "도수 정복 후 연성 경추 보호대로 바꾼다",
+   "보호대를 풀고 굴곡·신전 X선을 찍는다",
+   "고용량 메틸프레드니솔론을 정맥 투여한다",
+   "경추를 엄격히 고정한 채 후두골-경추 유합술을 준비한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 측면 X선에서 머리뼈 기저(basion)가 치돌기 끝보다 훨씬 위에 떨어져 있어 기저-치돌기 간격이 크게 넓어졌고(가는 화살표), 고리뼈 앞고리에 골절 조각(굵은 화살표)과 척추앞 연부조직 부종이 있다. 두개골과 위쪽 경추를 잇는 인대(덮개막·날개인대)가 끊어진 두개경추(고리뒤통수) 탈구다. 이 손상은 인대성이라 저절로 붙지 않으며, 견인을 하면 수직 분리가 더 벌어져 뇌간·척수가 늘어난다. 신경학적 결손이 없어도 모래주머니·테이프로 머리를 엄격히 고정하고 견인 없이 후두골-경추 내고정 유합술을 한다.\n- 원리: <b>왜 인대가 생명선인가</b>: 후두골-고리뼈-중쇠뼈 이음부의 안정성은 뼈가 아니라 인대(덮개막, 날개인대, 가로인대)가 만든다. 고속 감속 손상에서 머리가 몸통보다 늦게 멈추며 이 인대가 끊어지면 머리뼈가 경추에서 위로·앞으로 분리되고, 그 사이를 지나는 연수·위쪽 척수와 척추동맥이 늘어난다. 그래서 많은 환자가 현장에서 사망하고, 살아서 온 환자도 작은 움직임에 사지마비·호흡정지가 올 수 있다.<br> <b>왜 견인이 금기인가</b>: 다른 경추 탈구(예: 아래 경추 관절돌기 탈구)는 견인으로 정복하지만, 두개경추 탈구는 이미 <b>세로로 벌어진</b> 손상이라 견인이 분리를 더 키운다.<br> <b>왜 수술인가</b>: 끊어진 인대는 보조기로 고정해도 안정성을 되찾지 못해 할로 단독 치료 후 재탈구가 흔하다. 후두골에서 위쪽 경추까지 내고정해 뼈로 이어 붙이는 것이 확정 치료다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">두개경추 탈구(정답)</th><th>아래 경추 관절돌기 탈구(견인 오답이 정답이 되는 경우)</th></tr></thead><tbody> <tr><td>손상 방향</td><td><b>세로 분리</b> — 기저와 치돌기 사이가 벌어짐</td><td>앞으로 미끄러진 척추체, 관절돌기가 걸림</td></tr> <tr><td>견인</td><td>금기 — 분리를 키운다</td><td>의식 있는 환자에서 정복 방법</td></tr> <tr><td>확정 치료</td><td>후두골-경추 내고정 유합술</td><td>정복 후 경추 고정술</td></tr> </tbody></table> 같은 「경추 탈구」라도 벌어진 방향이 견인의 적응과 금기를 가른다.\n- 오답 이유:\n  - ① 두개골 집게 견인은 의식이 명료한 환자의 아래 경추 관절돌기 탈구를 닫힌 정복할 때 정답이 되며, 두개경추 탈구에서는 분리를 키운다.\n  - ② 도수 정복과 연성 보호대는 인대 손상이 없는 근육 염좌에서나 적절하고, 불안정 손상에서 보호대를 바꾸면 이차 척수 손상을 부른다.\n  - ③ 굴곡·신전 X선은 의식이 명료하고 CT 가 정상인데 목 통증이 남아 숨은 인대 손상을 찾을 때 고려하며, 명백한 탈구에서는 위험하다.\n  - ④ 고용량 메틸프레드니솔론은 일부 기관이 급성 척수손상 8시간 안에 선택적으로 쓰지만 근거가 약하고, 신경 결손이 없는 이 환자에게는 해당하지 않는다.\n- 함정: 신경학적으로 정상이니 보호대만으로 충분하다고 보거나 탈구니 견인한다고 보는 것 — 세로 분리 인대 손상은 견인 금기이고 유합술이 필요하다.\n- 학습목표: 경추 측면 X선에서 기저와 치돌기 끝이 크게 떨어진 두개경추 탈구를 읽고, 견인을 금기로 두고 엄격한 고정과 후두-경추 유합술을 준비한다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Spine and Spinal Cord Trauma · Bellabarba C, Mirza SK, West GA, et al. Diagnosis and treatment of craniocervical dislocation in a series of 17 consecutive survivors during an 8-year period. J Neurosurg Spine. 2006;4(6):429-440 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 453: Diseases of the Spinal Cord\n\n## 출처\n- Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "측면 X선에서 머리뼈 기저(basion)가 치돌기 끝보다 훨씬 위에 떨어져 있어 기저-치돌기 간격이 크게 넓어졌고(가는 화살표), 고리뼈 앞고리에 골절 조각(굵은 화살표)과 척추앞 연부조직 부종이 있다. 두개골과 위쪽 경추를 잇는 인대(덮개막·날개인대)가 끊어진 두개경추(고리뒤통수) 탈구다. 이 손상은 인대성이라 저절로 붙지 않으며, 견인을 하면 수직 분리가 더 벌어져 뇌간·척수가 늘어난다. 신경학적 결손이 없어도 모래주머니·테이프로 머리를 엄격히 고정하고 견인 없이 후두골-경추 내고정 유합술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 인대가 생명선인가</b>: 후두골-고리뼈-중쇠뼈 이음부의 안정성은 뼈가 아니라 인대(덮개막, 날개인대, 가로인대)가 만든다. 고속 감속 손상에서 머리가 몸통보다 늦게 멈추며 이 인대가 끊어지면 머리뼈가 경추에서 위로·앞으로 분리되고, 그 사이를 지나는 연수·위쪽 척수와 척추동맥이 늘어난다. 그래서 많은 환자가 현장에서 사망하고, 살아서 온 환자도 작은 움직임에 사지마비·호흡정지가 올 수 있다.<br> <b>왜 견인이 금기인가</b>: 다른 경추 탈구(예: 아래 경추 관절돌기 탈구)는 견인으로 정복하지만, 두개경추 탈구는 이미 <b>세로로 벌어진</b> 손상이라 견인이 분리를 더 키운다.<br> <b>왜 수술인가</b>: 끊어진 인대는 보조기로 고정해도 안정성을 되찾지 못해 할로 단독 치료 후 재탈구가 흔하다. 후두골에서 위쪽 경추까지 내고정해 뼈로 이어 붙이는 것이 확정 치료다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">두개경추 탈구(정답)</th><th>아래 경추 관절돌기 탈구(견인 오답이 정답이 되는 경우)</th></tr></thead><tbody> <tr><td>손상 방향</td><td><b>세로 분리</b> — 기저와 치돌기 사이가 벌어짐</td><td>앞으로 미끄러진 척추체, 관절돌기가 걸림</td></tr> <tr><td>견인</td><td>금기 — 분리를 키운다</td><td>의식 있는 환자에서 정복 방법</td></tr> <tr><td>확정 치료</td><td>후두골-경추 내고정 유합술</td><td>정복 후 경추 고정술</td></tr> </tbody></table> 같은 「경추 탈구」라도 벌어진 방향이 견인의 적응과 금기를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 두개골 집게 견인은 의식이 명료한 환자의 아래 경추 관절돌기 탈구를 닫힌 정복할 때 정답이 되며, 두개경추 탈구에서는 분리를 키운다.\n② 도수 정복과 연성 보호대는 인대 손상이 없는 근육 염좌에서나 적절하고, 불안정 손상에서 보호대를 바꾸면 이차 척수 손상을 부른다.\n③ 굴곡·신전 X선은 의식이 명료하고 CT 가 정상인데 목 통증이 남아 숨은 인대 손상을 찾을 때 고려하며, 명백한 탈구에서는 위험하다.\n④ 고용량 메틸프레드니솔론은 일부 기관이 급성 척수손상 8시간 안에 선택적으로 쓰지만 근거가 약하고, 신경 결손이 없는 이 환자에게는 해당하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "신경학적으로 정상이니 보호대만으로 충분하다고 보거나 탈구니 견인한다고 보는 것 — 세로 분리 인대 손상은 견인 금기이고 유합술이 필요하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경추 측면 X선에서 기저와 치돌기 끝이 크게 떨어진 두개경추 탈구를 읽고, 견인을 금기로 두고 엄격한 고정과 후두-경추 유합술을 준비한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Spine and Spinal Cord Trauma · Bellabarba C, Mirza SK, West GA, et al. Diagnosis and treatment of craniocervical dislocation in a series of 17 consecutive survivors during an 8-year period. J Neurosurg Spine. 2006;4(6):429-440 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 453: Diseases of the Spinal Cord ## 출처 Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "기저와 치돌기 끝이 크게 떨어진 두개경추 탈구는 견인 없이 엄격히 고정하고 후두골-경추 유합술을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "탈구가 세로 분리(기저-치돌기 간격 확대)라 견인이 분리를 키운다",
+   "steps": 2,
+   "chain": [
+    "영상: 기저가 치돌기 끝보다 훨씬 위 + 고리뼈 앞고리 골절 조각 + 척추앞 연부조직 부종 → 두개경추 탈구",
+    "세로 분리 인대 손상 → 견인 금기, 신경 결손이 없어도 엄격한 고정과 후두골-경추 유합술"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저가 치돌기 끝보다 훨씬 위에 있어 기저-치돌기 간격이 넓어짐",
+     "why": "두개경추 탈구의 핵심 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 고리뼈 앞고리의 골절 조각과 척추앞 연부조직 부종",
+     "why": "고에너지 위쪽 경추 손상의 동반 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈압 118/72 mmHg, 맥박 92회/분",
+     "why": "신경인성·출혈성 쇼크 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "사지의 근력과 감각은 정상이고 항문 괄약근 긴장도도 정상이다",
+     "why": "신경 결손이 없어도 불안정 손상이라 수술이 필요하고, 스테로이드 적응이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "정면 충돌",
+     "why": "고속 감속 손상 기전 — 진단은 영상이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "경추 측면 X선에서 기저와 치돌기 끝이 크게 떨어진 두개경추 탈구다. 견인은 분리를 키우므로 엄격히 고정하고 후두골-경추 유합술을 준비한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "아래 경추에서 한쪽 척추체가 앞으로 미끄러진 관절돌기 탈구이고 의식이 명료하면 두개골 집게 견인으로 정복"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0575.png",
+   "caption": "경추 측면 단순 X선, 화살표·패널 글자는 원 논문 그림의 것 — 한 패널만 잘라냄, 그 밖의 변경 없음 (PMC Open Access Subset, CC BY)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6946329/",
+   "asset_id": "PMC-PMC6946329_Figure2_A",
+   "text": "Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 2"
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0574",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "호흡기 — 후각 소실 뒤 숨이 차는 중년 여성의 흉부 X선과 확진 검사",
+  "type": "호흡기 — 후각 소실 뒤 숨이 차는 중년 여성의 흉부 X선과 확진 검사",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-07",
+  "vignette": "A 61-year-old woman comes to the emergency department because of fever, dry cough, and increasing shortness of breath for 8 days. She noticed loss of smell on the second day of illness. Her husband had similar symptoms 2 weeks ago. She has type 2 diabetes mellitus treated with metformin. Her temperature is 38.3°C (100.9°F), pulse is 98/min, respirations are 24/min, and blood pressure is 132/78 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 92%. Fine crackles are heard at both lung bases. Leukocyte count is 5,200/mm3 with a lymphocyte count of 650/mm3, and serum sodium is 138 mEq/L. A chest radiograph is shown.",
+  "question": "Which of the following is the most appropriate test to confirm the diagnosis?",
+  "options": [
+   "Serum (1→3)-β-D-glucan assay",
+   "Sputum Gram stain and culture",
+   "CT pulmonary angiography",
+   "Nucleic acid amplification test of a nasopharyngeal swab for SARS-CoV-2",
+   "Urinary antigen test for Legionella pneumophila"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The radiograph shows ill-defined opacities in both lower lung zones with low lung volumes and no lobar consolidation, cavity, or effusion. Together with early loss of smell, a household contact with a similar illness, lymphopenia, and hypoxemia in the second week of illness, this pattern indicates COVID-19 pneumonia. A nucleic acid amplification test (RT-PCR) of a nasopharyngeal swab is the reference test for confirming SARS-CoV-2 infection; a negative result with high suspicion is repeated or a lower respiratory sample is tested.\n- 원리: <b>Why the lower zones of both lungs</b>: SARS-CoV-2 enters type II pneumocytes through ACE2, which is abundant in the peripheral, dependent alveoli. Injury produces patchy ground-glass and reticular opacities that are bilateral, peripheral, and lower-zone predominant, unlike the single dense lobe of pneumococcal pneumonia.<br> <b>Why lymphopenia and anosmia point to it</b>: The virus causes lymphocyte redistribution and apoptosis, so an absolute lymphocyte count below 1,000/mm3 is common and correlates with severity. Infection of the olfactory epithelium's supporting cells causes sudden smell loss, a symptom far less typical of other viral or bacterial pneumonias.<br> <b>Why a nucleic acid test</b>: Viral RNA is most abundant in the upper airway during the first two weeks. NAAT has the highest sensitivity and specificity; antigen tests are faster but less sensitive, and antibody tests reflect past infection and are not used for acute diagnosis.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">COVID-19 pneumonia (answer)</th><th>Legionella pneumonia (closest distractor)</th></tr></thead><tbody> <tr><td>Clues</td><td>Anosmia, household contact, lymphopenia</td><td>Diarrhea, confusion, high fever, water-system exposure</td></tr> <tr><td>Laboratory</td><td>Normal sodium, normal leukocyte count</td><td><b>Hyponatremia</b>, elevated liver enzymes, leukocytosis</td></tr> <tr><td>Confirming test</td><td>Nasopharyngeal NAAT</td><td>Urinary antigen (serogroup 1)</td></tr> </tbody></table> Both can give bilateral opacities with a dry cough; the sodium level, diarrhea, and smell loss decide which test is ordered.\n- 오답 이유:\n  - (A) Serum β-D-glucan would be correct for suspected Pneumocystis pneumonia in a patient with HIV (CD4 below 200/mm3) or chronic glucocorticoid use.\n  - (B) Sputum Gram stain and culture would be correct for a lobar consolidation with purulent sputum, suggesting bacterial community-acquired pneumonia.\n  - (C) CT pulmonary angiography would be correct for sudden dyspnea with pleuritic pain, tachycardia, and a clear radiograph suggesting pulmonary embolism.\n  - (E) A Legionella urinary antigen test would be correct for pneumonia with hyponatremia, diarrhea, confusion, and exposure to contaminated water systems.\n- 함정: Ordering a bacterial or Legionella test because the radiograph shows bilateral opacities — anosmia, lymphopenia, and normal sodium point to SARS-CoV-2.\n- 학습목표: 후각 소실·림프구감소·양측 하폐야 음영으로 코로나19 폐렴을 의심하고 비인두 핵산증폭검사로 확진하며, 레지오넬라·주폐포자충 폐렴과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …23610568 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows ill-defined opacities in both lower lung zones with low lung volumes and no lobar consolidation, cavity, or effusion. Together with early loss of smell, a household contact with a similar illness, lymphopenia, and hypoxemia in the second week of illness, this pattern indicates COVID-19 pneumonia. A nucleic acid amplification test (RT-PCR) of a nasopharyngeal swab is the reference test for confirming SARS-CoV-2 infection; a negative result with high suspicion is repeated or a lower respiratory sample is tested."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the lower zones of both lungs</b>: SARS-CoV-2 enters type II pneumocytes through ACE2, which is abundant in the peripheral, dependent alveoli. Injury produces patchy ground-glass and reticular opacities that are bilateral, peripheral, and lower-zone predominant, unlike the single dense lobe of pneumococcal pneumonia.<br> <b>Why lymphopenia and anosmia point to it</b>: The virus causes lymphocyte redistribution and apoptosis, so an absolute lymphocyte count below 1,000/mm3 is common and correlates with severity. Infection of the olfactory epithelium's supporting cells causes sudden smell loss, a symptom far less typical of other viral or bacterial pneumonias.<br> <b>Why a nucleic acid test</b>: Viral RNA is most abundant in the upper airway during the first two weeks. NAAT has the highest sensitivity and specificity; antigen tests are faster but less sensitive, and antibody tests reflect past infection and are not used for acute diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">COVID-19 pneumonia (answer)</th><th>Legionella pneumonia (closest distractor)</th></tr></thead><tbody> <tr><td>Clues</td><td>Anosmia, household contact, lymphopenia</td><td>Diarrhea, confusion, high fever, water-system exposure</td></tr> <tr><td>Laboratory</td><td>Normal sodium, normal leukocyte count</td><td><b>Hyponatremia</b>, elevated liver enzymes, leukocytosis</td></tr> <tr><td>Confirming test</td><td>Nasopharyngeal NAAT</td><td>Urinary antigen (serogroup 1)</td></tr> </tbody></table> Both can give bilateral opacities with a dry cough; the sodium level, diarrhea, and smell loss decide which test is ordered."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Serum β-D-glucan would be correct for suspected Pneumocystis pneumonia in a patient with HIV (CD4 below 200/mm3) or chronic glucocorticoid use.\n(B) Sputum Gram stain and culture would be correct for a lobar consolidation with purulent sputum, suggesting bacterial community-acquired pneumonia.\n(C) CT pulmonary angiography would be correct for sudden dyspnea with pleuritic pain, tachycardia, and a clear radiograph suggesting pulmonary embolism.\n(E) A Legionella urinary antigen test would be correct for pneumonia with hyponatremia, diarrhea, confusion, and exposure to contaminated water systems."
+   },
+   {
+    "k": "함정",
+    "v": "Ordering a bacterial or Legionella test because the radiograph shows bilateral opacities — anosmia, lymphopenia, and normal sodium point to SARS-CoV-2."
+   },
+   {
+    "k": "학습목표",
+    "v": "후각 소실·림프구감소·양측 하폐야 음영으로 코로나19 폐렴을 의심하고 비인두 핵산증폭검사로 확진하며, 레지오넬라·주폐포자충 폐렴과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …23610568 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "Bilateral lower-zone opacities with anosmia, lymphopenia, and a sick contact indicate COVID-19 pneumonia, confirmed by nasopharyngeal NAAT",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Serum sodium is normal and there is anosmia and lymphopenia rather than hyponatremia and diarrhea",
+   "steps": 2,
+   "chain": [
+    "영상: bilateral ill-defined lower-zone opacities without lobar consolidation or cavity",
+    "Anosmia + sick contact + lymphopenia + normal sodium -> COVID-19 pneumonia -> nasopharyngeal NAAT"
+   ],
+   "key": [
+    {
+     "item": "영상: bilateral ill-defined lower-zone opacities",
+     "why": "Pattern of viral pneumonia rather than lobar bacterial pneumonia",
+     "also": []
+    },
+    {
+     "item": "loss of smell",
+     "why": "Characteristic early symptom of SARS-CoV-2 infection",
+     "also": []
+    },
+    {
+     "item": "lymphocyte count of 650/mm3",
+     "why": "Lymphopenia is typical of COVID-19",
+     "also": []
+    },
+    {
+     "item": "Her husband had similar symptoms 2 weeks ago",
+     "why": "Household transmission",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum sodium is 138 mEq/L",
+     "why": "Lowers the likelihood of Legionella, which often causes hyponatremia",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "oxygen saturation of 92%",
+     "why": "Indicates severe disease needing admission and oxygen",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "type 2 diabetes mellitus treated with metformin",
+     "why": "A risk factor for severe disease but does not change the confirming test",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral lower-zone opacities with anosmia, a sick contact, and lymphopenia point to COVID-19 pneumonia. A nasopharyngeal nucleic acid amplification test confirms it.",
+   "switch": {
+    "choice": "E",
+    "condition": "With hyponatremia, diarrhea, confusion, and recent hot-tub or hotel water exposure, a Legionella urinary antigen test"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0574.png",
+   "caption": "Frontal chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1721155101315476692410023610568",
+   "asset_id": "TCIA-COVID19_AR-77404304477590",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …23610568"
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0573",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "병리·조직 — 뇌전증 수술로 얻은 대뇌피질의 면역조직화학염색",
+  "type": "병리·조직 — 뇌전증 수술로 얻은 대뇌피질의 면역조직화학염색",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-07",
+  "vignette": "37세 남자가 10년 동안 약으로 조절되지 않는 측두엽 뇌전증으로 앞쪽 측두엽 절제술을 받았다. 수술 전 자기공명영상에서 종괴는 없었다. 절제 검체 가운데 병변이 없는 대뇌피질 조직에 한 가지 단백질에 대한 면역조직화학염색을 하였고, 결과는 그림과 같다.",
+  "question": "갈색으로 염색된 가는 섬유 구조물로 가장 적절한 것은?",
+  "options": [
+   "미세아교세포의 돌기",
+   "모세혈관 내피세포",
+   "신경세포의 축삭",
+   "별아교세포의 돌기",
+   "희소돌기아교세포가 만든 수초"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 회색질의 신경그물 전체에 가늘고 긴 갈색 섬유가 여러 방향으로 곧게 지나가지만, 섬유가 어느 세포체에서 별 모양으로 뻗어 나오지 않고, 작은 아교세포 핵 주위와 혈관벽은 염색되지 않았다. 신경세포체 자체도 거의 비어 있다. 이 분포는 신경세포의 중간섬유인 신경미세섬유(neurofilament)가 축삭에 모여 있는 모습과 맞는다. 별아교세포 표지(GFAP)라면 세포체에서 굵은 돌기가 사방으로 뻗고 혈관 주위 발돌기가 진하게 물든다.\n- 원리: <b>왜 축삭에만 모이나</b>: 세포마다 고유한 중간섬유가 있다 — 상피는 케라틴, 간엽은 비멘틴, 근육은 데스민, 별아교세포는 GFAP, 신경세포는 신경미세섬유(경쇄·중간쇄·중쇄 — NEFL·NEFM·NEFH)다. 신경미세섬유는 세포체에서 만들어진 뒤 느린 축삭 수송으로 축삭에 쌓이며, 축삭의 굵기(따라서 전도 속도)를 정한다. 그래서 염색하면 세포체보다 <b>가늘고 긴 축삭</b>이 두드러진다.<br> <b>왜 진단에 쓰이나</b>: 중간섬유 면역염색은 미분화 종양의 기원 세포를 가르는 도구다(신경모세포종·신경내분비종양의 신경 분화). 또 축삭이 손상되면 신경미세섬유 경쇄가 뇌척수액·혈액으로 새어 나와, 다발경화증·외상성 뇌손상·근위축측삭경화증에서 축삭 손상 표지자로 측정한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">신경세포 축삭(정답)</th><th>별아교세포 돌기(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>중간섬유</td><td>신경미세섬유</td><td>GFAP</td></tr> <tr><td>염색 모양</td><td><b>세포체와 떨어져 길게 곧게 지나는 가는 선</b></td><td>작은 세포체에서 사방으로 뻗는 굵은 별 모양 돌기</td></tr> <tr><td>혈관 주위</td><td>염색 없음</td><td>혈관을 감싸는 발돌기가 진하게 염색</td></tr> </tbody></table> 둘 다 신경그물의 「섬유」로 보이지만, 섬유가 세포체에서 별처럼 퍼지는지, 혈관을 감싸는지가 둘을 가른다.\n- 오답 이유:\n  - ① 미세아교세포의 돌기는 작고 길쭉한 핵 주위에 가지가 많은 짧은 돌기가 물드는 Iba1·CD68 염색일 때 정답이 된다.\n  - ② 모세혈관 내피세포는 관 모양 구조의 안쪽 벽만 선형으로 물드는 CD31·CD34 염색일 때 정답이 된다.\n  - ④ 별아교세포의 돌기는 작은 세포체에서 굵은 돌기가 별 모양으로 퍼지고 혈관 주위 발돌기가 진하게 물드는 GFAP 염색일 때 정답이 된다.\n  - ⑤ 수초는 백질에서 축삭을 둘러싼 고리·관 모양으로 염색되는 수초 염색(LFB, MBP 면역염색)일 때 정답이 된다.\n- 함정: 신경그물의 섬유라면 모두 아교세포 돌기라고 보는 것 — 세포체에서 별처럼 퍼지지 않고 혈관을 감싸지 않는 긴 선은 축삭이다.\n- 학습목표: 대뇌피질 면역조직화학염색에서 신경그물을 가로지르는 가는 섬유만 염색되고 세포체·아교세포·혈관이 비어 있음을 읽어 신경세포 축삭(신경미세섬유)으로 판단한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2020. Chapter 28: The Central Nervous System · Khalil M, Teunissen CE, Otto M, et al. Neurofilaments as biomarkers in neurological disorders. Nat Rev Neurol. 2018;14(10):577-589 · Uhlén M, Fagerberg L, Hallström BM, et al. Tissue-based map of the human proteome. Science. 2015;347(6220):1260419\n\n## 출처\n- Human Protein Atlas, NEFL / Cerebral cortex (CC BY 4.0), https://images.proteinatlas.org/14850/165171_B_9_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "회색질의 신경그물 전체에 가늘고 긴 갈색 섬유가 여러 방향으로 곧게 지나가지만, 섬유가 어느 세포체에서 별 모양으로 뻗어 나오지 않고, 작은 아교세포 핵 주위와 혈관벽은 염색되지 않았다. 신경세포체 자체도 거의 비어 있다. 이 분포는 신경세포의 중간섬유인 신경미세섬유(neurofilament)가 축삭에 모여 있는 모습과 맞는다. 별아교세포 표지(GFAP)라면 세포체에서 굵은 돌기가 사방으로 뻗고 혈관 주위 발돌기가 진하게 물든다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 축삭에만 모이나</b>: 세포마다 고유한 중간섬유가 있다 — 상피는 케라틴, 간엽은 비멘틴, 근육은 데스민, 별아교세포는 GFAP, 신경세포는 신경미세섬유(경쇄·중간쇄·중쇄 — NEFL·NEFM·NEFH)다. 신경미세섬유는 세포체에서 만들어진 뒤 느린 축삭 수송으로 축삭에 쌓이며, 축삭의 굵기(따라서 전도 속도)를 정한다. 그래서 염색하면 세포체보다 <b>가늘고 긴 축삭</b>이 두드러진다.<br> <b>왜 진단에 쓰이나</b>: 중간섬유 면역염색은 미분화 종양의 기원 세포를 가르는 도구다(신경모세포종·신경내분비종양의 신경 분화). 또 축삭이 손상되면 신경미세섬유 경쇄가 뇌척수액·혈액으로 새어 나와, 다발경화증·외상성 뇌손상·근위축측삭경화증에서 축삭 손상 표지자로 측정한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">신경세포 축삭(정답)</th><th>별아교세포 돌기(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>중간섬유</td><td>신경미세섬유</td><td>GFAP</td></tr> <tr><td>염색 모양</td><td><b>세포체와 떨어져 길게 곧게 지나는 가는 선</b></td><td>작은 세포체에서 사방으로 뻗는 굵은 별 모양 돌기</td></tr> <tr><td>혈관 주위</td><td>염색 없음</td><td>혈관을 감싸는 발돌기가 진하게 염색</td></tr> </tbody></table> 둘 다 신경그물의 「섬유」로 보이지만, 섬유가 세포체에서 별처럼 퍼지는지, 혈관을 감싸는지가 둘을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 미세아교세포의 돌기는 작고 길쭉한 핵 주위에 가지가 많은 짧은 돌기가 물드는 Iba1·CD68 염색일 때 정답이 된다.\n② 모세혈관 내피세포는 관 모양 구조의 안쪽 벽만 선형으로 물드는 CD31·CD34 염색일 때 정답이 된다.\n④ 별아교세포의 돌기는 작은 세포체에서 굵은 돌기가 별 모양으로 퍼지고 혈관 주위 발돌기가 진하게 물드는 GFAP 염색일 때 정답이 된다.\n⑤ 수초는 백질에서 축삭을 둘러싼 고리·관 모양으로 염색되는 수초 염색(LFB, MBP 면역염색)일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "신경그물의 섬유라면 모두 아교세포 돌기라고 보는 것 — 세포체에서 별처럼 퍼지지 않고 혈관을 감싸지 않는 긴 선은 축삭이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "대뇌피질 면역조직화학염색에서 신경그물을 가로지르는 가는 섬유만 염색되고 세포체·아교세포·혈관이 비어 있음을 읽어 신경세포 축삭(신경미세섬유)으로 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2020. Chapter 28: The Central Nervous System · Khalil M, Teunissen CE, Otto M, et al. Neurofilaments as biomarkers in neurological disorders. Nat Rev Neurol. 2018;14(10):577-589 · Uhlén M, Fagerberg L, Hallström BM, et al. Tissue-based map of the human proteome. Science. 2015;347(6220):1260419 ## 출처 Human Protein Atlas, NEFL / Cerebral cortex (CC BY 4.0), https://images.proteinatlas.org/14850/165171_B_9_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "대뇌피질에서 세포체와 떨어져 길게 지나는 가는 섬유만 염색되면 신경세포 축삭의 중간섬유 표지다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "섬유가 세포체에서 별 모양으로 퍼지지 않고 혈관 주위 발돌기 염색이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 신경그물을 가로지르는 가늘고 긴 갈색 섬유, 세포체·혈관벽은 무염색",
+    "별 모양 돌기·혈관 주위 발돌기 없음 → 별아교세포가 아닌 신경세포 축삭"
+   ],
+   "key": [
+    {
+     "item": "영상: 신경그물을 가로지르는 가늘고 긴 갈색 섬유",
+     "why": "축삭 분포",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 아교세포 핵 주위와 혈관벽은 염색되지 않음",
+     "why": "별아교세포·내피세포 표지 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "병변이 없는 대뇌피질 조직",
+     "why": "정상 회색질이라는 맥락 — 판독 자체는 영상이 정한다",
+     "also": []
+    },
+    {
+     "item": "수술 전 자기공명영상에서 종괴는 없었다",
+     "why": "종양 표지 염색이 아니라는 맥락",
+     "also": []
+    }
+   ],
+   "summary": "회색질 신경그물을 가로지르는 가는 섬유만 갈색이고 세포체·혈관은 비어 있다. 신경미세섬유가 모인 신경세포 축삭이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "작은 세포체에서 굵은 돌기가 별처럼 퍼지고 혈관을 감싸는 발돌기가 진하게 물들면 별아교세포(GFAP)"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0573.jpg",
+   "caption": "조직미세배열 코어의 면역조직화학염색(DAB 갈색 발색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000277586-NEFL/tissue/Cerebral+cortex",
+   "asset_id": "HPA-NEFL_165171_B_9_5",
+   "text": "Human Protein Atlas, NEFL / Cerebral cortex (CC BY 4.0), https://images.proteinatlas.org/14850/165171_B_9_5.jpg"
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0581",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "내분비·대사 — 의료인의 반복 저혈당과 인슐린·C-펩타이드",
+  "type": "내분비·대사 — 의료인의 반복 저혈당과 인슐린·C-펩타이드",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-07",
+  "vignette": "31세 여자 간호사가 지난 한 달 동안 세 번 식은땀·떨림·혼동이 생겨 왔다. 증상은 식사와 관계없이 생겼고, 지난번에는 직장에서 의식이 흐려져 측정한 혈당이 38 mg/dL 였으며 포도당 정맥주사 후 곧 회복되었다. 당뇨병은 없고 어머니가 2형 당뇨병으로 인슐린을 쓰고 있다. 체질량지수는 22 kg/m² 이다. 입원 중 다시 증상이 생겼을 때 채혈한 결과는 혈당 36 mg/dL, 인슐린 48 μU/mL, C-펩타이드 0.1 ng/mL, 프로인슐린 2 pmol/L 미만, β-하이드록시뷰티르산 0.1 mmol/L 이고, 혈장 설폰요소제·메글리티나이드 선별검사는 음성이다. 이어서 글루카곤 1 mg 을 정맥 주사하자 30분 만에 혈당이 42 mg/dL 올랐다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "인슐린 자가면역 저혈당",
+   "부신기능저하증",
+   "외인성 인슐린 투여",
+   "인슐린종",
+   "설폰요소제 복용"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 저혈당(36 mg/dL) 시점에 인슐린이 3 μU/mL 이상, β-하이드록시뷰티르산이 2.7 mmol/L 이하로 억제되어 있고 글루카곤 후 혈당이 25 mg/dL 이상 오른 것은 인슐린(또는 인슐린 유사 물질)이 일으킨 저혈당이라는 뜻이다. 그런데 내인성 인슐린이라면 같은 양의 C-펩타이드와 프로인슐린이 함께 나와야 하는데, C-펩타이드(0.6 ng/mL 미만)와 프로인슐린(5 pmol/L 미만)이 억제되어 있다. 따라서 인슐린은 몸 밖에서 들어왔다. 인슐린에 접근할 수 있는 의료인, 가족의 인슐린, 식사와 무관한 발작이 이를 뒷받침한다.\n- 원리: <b>왜 C-펩타이드가 출처를 알려 주나</b>: 베타세포는 프로인슐린을 잘라 인슐린과 C-펩타이드를 <b>1:1</b> 로 분비한다. 내인성 인슐린 과다(인슐린종, 설폰요소제·메글리티나이드)는 C-펩타이드와 프로인슐린이 함께 높다. 상업용 인슐린에는 C-펩타이드가 없고, 주사한 인슐린이 혈당을 떨어뜨리면 정상 베타세포는 분비를 멈추므로 C-펩타이드가 억제된다.<br> <b>왜 케톤과 글루카곤 반응을 보나</b>: 인슐린은 지방분해와 케톤 생성을 막으므로 인슐린성 저혈당에서는 β-하이드록시뷰티르산이 낮다. 또 인슐린이 간의 글리코겐 분해를 막아 글리코겐이 그대로 남아 있어 글루카곤을 주면 혈당이 25 mg/dL 이상 오른다. 부신기능저하·기아·간부전처럼 인슐린과 무관한 저혈당에서는 케톤이 높고 글루카곤 반응이 작다.<br> <b>왜 순서가 중요한가</b>: ① 인슐린 매개인가(인슐린·케톤·글루카곤) → ② 내인성인가 외인성인가(C-펩타이드·프로인슐린) → ③ 내인성이면 약물(선별검사)인가 종양인가. 이 순서를 건너뛰면 영상 검사로 없는 종양을 찾게 된다.\n- 비교: <table><thead><tr><th style=\"width:24%\">저혈당 시점</th><th style=\"width:19%\">외인성 인슐린(정답)</th><th style=\"width:19%\">인슐린종</th><th>설폰요소제</th></tr></thead><tbody> <tr><td>인슐린</td><td>높음</td><td>높음</td><td>높음</td></tr> <tr><td>C-펩타이드</td><td><b>억제</b></td><td>높음</td><td>높음</td></tr> <tr><td>프로인슐린</td><td>억제</td><td>높음</td><td>높음</td></tr> <tr><td>약물 선별</td><td>음성</td><td>음성</td><td>양성</td></tr> </tbody></table> 세 가지 모두 인슐린 매개 저혈당이라 인슐린 수치만으로는 가를 수 없다 — C-펩타이드·프로인슐린이 외인성과 내인성을 가르고, 혈장 약물 선별검사가 내인성 둘(종양과 분비촉진제)을 가른다.\n- 오답 이유:\n  - ① 인슐린 자가면역 저혈당은 인슐린이 매우 높고(흔히 100 μU/mL 이상) C-펩타이드가 억제되지 않으며 인슐린 항체가 양성이고 식후 저혈당이 흔할 때 정답이 된다.\n  - ② 부신기능저하증은 인슐린이 억제되고 케톤이 높으며 글루카곤 반응이 작고, 저나트륨·고칼륨·색소침착이 있을 때 정답이 된다.\n  - ④ 인슐린종은 저혈당 시점에 인슐린과 함께 C-펩타이드(0.6 ng/mL 이상)·프로인슐린(5 pmol/L 이상)이 높고 약물 선별이 음성일 때 정답이 된다.\n  - ⑤ 설폰요소제 복용은 인슐린·C-펩타이드·프로인슐린이 모두 높아 인슐린종과 같아 보이지만 혈장 약물 선별검사가 양성일 때 정답이 된다.\n- 함정: 인슐린이 높으니 인슐린종이라고 보고 영상 검사로 가는 것 — 저혈당 시점의 C-펩타이드·프로인슐린이 억제되어 있으면 인슐린은 몸 밖에서 왔다.\n- 학습목표: 저혈당 시점의 높은 인슐린·억제된 C-펩타이드·낮은 프로인슐린·음성 설폰요소제 선별을 외인성 인슐린 투여로 판단하고 인슐린종·설폰요소제·인슐린 자가면역과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 418: Hypoglycemia · Cryer PE, Axelrod L, Grossman AB, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2009;94(3):709-728",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "저혈당(36 mg/dL) 시점에 인슐린이 3 μU/mL 이상, β-하이드록시뷰티르산이 2.7 mmol/L 이하로 억제되어 있고 글루카곤 후 혈당이 25 mg/dL 이상 오른 것은 인슐린(또는 인슐린 유사 물질)이 일으킨 저혈당이라는 뜻이다. 그런데 내인성 인슐린이라면 같은 양의 C-펩타이드와 프로인슐린이 함께 나와야 하는데, C-펩타이드(0.6 ng/mL 미만)와 프로인슐린(5 pmol/L 미만)이 억제되어 있다. 따라서 인슐린은 몸 밖에서 들어왔다. 인슐린에 접근할 수 있는 의료인, 가족의 인슐린, 식사와 무관한 발작이 이를 뒷받침한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 C-펩타이드가 출처를 알려 주나</b>: 베타세포는 프로인슐린을 잘라 인슐린과 C-펩타이드를 <b>1:1</b> 로 분비한다. 내인성 인슐린 과다(인슐린종, 설폰요소제·메글리티나이드)는 C-펩타이드와 프로인슐린이 함께 높다. 상업용 인슐린에는 C-펩타이드가 없고, 주사한 인슐린이 혈당을 떨어뜨리면 정상 베타세포는 분비를 멈추므로 C-펩타이드가 억제된다.<br> <b>왜 케톤과 글루카곤 반응을 보나</b>: 인슐린은 지방분해와 케톤 생성을 막으므로 인슐린성 저혈당에서는 β-하이드록시뷰티르산이 낮다. 또 인슐린이 간의 글리코겐 분해를 막아 글리코겐이 그대로 남아 있어 글루카곤을 주면 혈당이 25 mg/dL 이상 오른다. 부신기능저하·기아·간부전처럼 인슐린과 무관한 저혈당에서는 케톤이 높고 글루카곤 반응이 작다.<br> <b>왜 순서가 중요한가</b>: ① 인슐린 매개인가(인슐린·케톤·글루카곤) → ② 내인성인가 외인성인가(C-펩타이드·프로인슐린) → ③ 내인성이면 약물(선별검사)인가 종양인가. 이 순서를 건너뛰면 영상 검사로 없는 종양을 찾게 된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">저혈당 시점</th><th style=\"width:19%\">외인성 인슐린(정답)</th><th style=\"width:19%\">인슐린종</th><th>설폰요소제</th></tr></thead><tbody> <tr><td>인슐린</td><td>높음</td><td>높음</td><td>높음</td></tr> <tr><td>C-펩타이드</td><td><b>억제</b></td><td>높음</td><td>높음</td></tr> <tr><td>프로인슐린</td><td>억제</td><td>높음</td><td>높음</td></tr> <tr><td>약물 선별</td><td>음성</td><td>음성</td><td>양성</td></tr> </tbody></table> 세 가지 모두 인슐린 매개 저혈당이라 인슐린 수치만으로는 가를 수 없다 — C-펩타이드·프로인슐린이 외인성과 내인성을 가르고, 혈장 약물 선별검사가 내인성 둘(종양과 분비촉진제)을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 인슐린 자가면역 저혈당은 인슐린이 매우 높고(흔히 100 μU/mL 이상) C-펩타이드가 억제되지 않으며 인슐린 항체가 양성이고 식후 저혈당이 흔할 때 정답이 된다.\n② 부신기능저하증은 인슐린이 억제되고 케톤이 높으며 글루카곤 반응이 작고, 저나트륨·고칼륨·색소침착이 있을 때 정답이 된다.\n④ 인슐린종은 저혈당 시점에 인슐린과 함께 C-펩타이드(0.6 ng/mL 이상)·프로인슐린(5 pmol/L 이상)이 높고 약물 선별이 음성일 때 정답이 된다.\n⑤ 설폰요소제 복용은 인슐린·C-펩타이드·프로인슐린이 모두 높아 인슐린종과 같아 보이지만 혈장 약물 선별검사가 양성일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "인슐린이 높으니 인슐린종이라고 보고 영상 검사로 가는 것 — 저혈당 시점의 C-펩타이드·프로인슐린이 억제되어 있으면 인슐린은 몸 밖에서 왔다."
+   },
+   {
+    "k": "학습목표",
+    "v": "저혈당 시점의 높은 인슐린·억제된 C-펩타이드·낮은 프로인슐린·음성 설폰요소제 선별을 외인성 인슐린 투여로 판단하고 인슐린종·설폰요소제·인슐린 자가면역과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 418: Hypoglycemia · Cryer PE, Axelrod L, Grossman AB, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2009;94(3):709-728"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "저혈당 시점의 높은 인슐린과 억제된 C-펩타이드·프로인슐린, 음성 약물 선별은 외인성 인슐린 투여다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "C-펩타이드와 프로인슐린이 억제되어 내인성 인슐린 분비가 아니다",
+   "steps": 3,
+   "chain": [
+    "저혈당 시점 인슐린 높음 + β-하이드록시뷰티르산 억제 + 글루카곤 후 혈당 42 mg/dL 상승 → 인슐린 매개 저혈당",
+    "C-펩타이드 0.1 ng/mL·프로인슐린 2 pmol/L 미만 억제 → 내인성 분비가 아님",
+    "설폰요소제 선별 음성 + 인슐린 접근(간호사·어머니의 인슐린) → 외인성 인슐린 투여"
+   ],
+   "key": [
+    {
+     "item": "인슐린 48 μU/mL",
+     "why": "저혈당 시점에 억제되지 않은 인슐린",
+     "also": []
+    },
+    {
+     "item": "C-펩타이드 0.1 ng/mL",
+     "why": "내인성 분비 억제 — 외인성 인슐린",
+     "also": []
+    },
+    {
+     "item": "β-하이드록시뷰티르산 0.1 mmol/L",
+     "why": "인슐린이 케톤 생성을 막고 있다",
+     "also": []
+    },
+    {
+     "item": "글루카곤 1 mg 을 정맥 주사하자 30분 만에 혈당이 42 mg/dL 올랐다",
+     "why": "인슐린 매개 저혈당의 간 글리코겐 보존",
+     "also": []
+    },
+    {
+     "item": "어머니가 2형 당뇨병으로 인슐린을 쓰고 있다",
+     "why": "인슐린에 접근할 수 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로인슐린 2 pmol/L 미만",
+     "why": "인슐린종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈장 설폰요소제·메글리티나이드 선별검사는 음성이다",
+     "why": "분비촉진제 복용 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "간호사",
+     "why": "의료인이라는 맥락 — 진단은 검사값이 정한다",
+     "also": []
+    },
+    {
+     "item": "체질량지수는 22 kg/m² 이다",
+     "why": "판단에 영향이 적은 배경",
+     "also": []
+    }
+   ],
+   "summary": "저혈당 시점에 인슐린은 높은데 C-펩타이드·프로인슐린이 억제되어 있고 약물 선별이 음성이다. 몸 밖에서 들어온 인슐린 때문이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "저혈당 시점에 C-펩타이드 0.6 ng/mL 이상·프로인슐린 5 pmol/L 이상이고 약물 선별이 음성이면 인슐린종"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0580",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "부인과 — 이차성징은 정상인 원발 무월경과 질의 맹관",
+  "type": "부인과 — 이차성징은 정상인 원발 무월경과 질의 맹관",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-07",
+  "vignette": "A 17-year-old girl is brought to the physician because she has never had a menstrual period. She has no cyclic pelvic pain. She is on the school swim team and has had normal growth. Her height is 165 cm (5 ft 5 in), and BMI is 21 kg/m2. Breast and pubic hair development are Tanner stage 5. Pelvic examination shows normal external genitalia and a short vagina ending in a blind pouch; the cervix cannot be seen. Serum follicle-stimulating hormone and prolactin concentrations are within the reference ranges, and serum total testosterone concentration is within the reference range for adult women. Pelvic ultrasonography shows normal-appearing ovaries and no uterus.",
+  "question": "Further evaluation of this patient is most likely to show which of the following?",
+  "options": [
+   "Inguinal masses containing testicular tissue",
+   "Elevated serum luteinizing hormone with low estradiol",
+   "Hematocolpos on pelvic MRI",
+   "Unilateral renal agenesis",
+   "46,XY karyotype"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Normal breast development and normal FSH show functioning ovaries, and Tanner 5 pubic hair with a female-range testosterone shows normal androgen production and action. Absence of the uterus and cervix with a short, blind vagina therefore indicates Müllerian agenesis (Mayer-Rokitansky-Küster-Hauser syndrome) with a 46,XX karyotype. Because the Müllerian ducts develop in close association with the mesonephric (Wolffian) ducts that induce the kidney, renal anomalies, most often unilateral renal agenesis, occur in roughly a third of patients, so renal ultrasonography is part of the evaluation; skeletal anomalies are also common.\n- 원리: <b>Why the ovaries are normal but the uterus is absent</b>: The ovaries come from the gonadal ridge and germ cells, whereas the uterus, cervix, and upper vagina come from the paired paramesonephric (Müllerian) ducts. In Müllerian agenesis, the ducts fail to develop or fuse, so ovarian estrogen drives normal breast development and ovulation, but there is no uterus to menstruate.<br> <b>Why the kidneys are involved</b>: The Müllerian ducts form alongside and depend on the mesonephric ducts, which also give rise to the ureteric bud. A shared disturbance of intermediate mesoderm explains associated unilateral renal agenesis, pelvic kidney, and vertebral anomalies.<br> <b>Why androgen insensitivity looks similar but differs</b>: In 46,XY complete androgen insensitivity, testes secrete anti-Müllerian hormone, so the uterus is also absent and the vagina is short. But testosterone is in the male range, and because androgen receptors do not work, pubic and axillary hair are sparse.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Müllerian agenesis (answer)</th><th>Complete androgen insensitivity (closest distractor)</th></tr></thead><tbody> <tr><td>Karyotype, gonad</td><td>46,XX, normal ovaries</td><td>46,XY, testes (often inguinal)</td></tr> <tr><td>Pubic and axillary hair</td><td><b>Normal (Tanner 5)</b></td><td>Sparse or absent</td></tr> <tr><td>Testosterone</td><td>Female range</td><td>Male range or higher</td></tr> <tr><td>Associated finding</td><td>Renal and skeletal anomalies</td><td>Gonadal malignancy risk</td></tr> </tbody></table> Both lack a uterus with a blind vagina; pubic hair and the testosterone level separate them.\n- 오답 이유:\n  - (A) Inguinal masses containing testicular tissue would be correct in complete androgen insensitivity, where testes often lie in the inguinal canals or labia.\n  - (B) Elevated LH with low estradiol would be correct for primary ovarian insufficiency such as Turner syndrome, which shows absent breast development and high FSH.\n  - (C) Hematocolpos would be correct for imperforate hymen or transverse vaginal septum, which present with cyclic pelvic pain and a uterus present.\n  - (E) A 46,XY karyotype would be correct if pubic and axillary hair were sparse and serum testosterone were in the male range, indicating androgen insensitivity.\n- 함정: Choosing a 46,XY karyotype because the uterus is absent — Tanner 5 pubic hair and female-range testosterone show normal androgen action, pointing to Müllerian agenesis.\n- 학습목표: 이차성징 정상·여성 범위 테스토스테론·질 맹관·자궁 없음을 뮐러관 무형성으로 판단하고, 동반 신장 기형을 찾는다(안드로겐 무감응과 가른다)\n- 근거·출처: American College of Obstetricians and Gynecologists. Committee Opinion No. 728: Müllerian agenesis: diagnosis, management, and treatment. Obstet Gynecol. 2018;131(1):e35-e42 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 404: Disorders of the Female Reproductive System",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Normal breast development and normal FSH show functioning ovaries, and Tanner 5 pubic hair with a female-range testosterone shows normal androgen production and action. Absence of the uterus and cervix with a short, blind vagina therefore indicates Müllerian agenesis (Mayer-Rokitansky-Küster-Hauser syndrome) with a 46,XX karyotype. Because the Müllerian ducts develop in close association with the mesonephric (Wolffian) ducts that induce the kidney, renal anomalies, most often unilateral renal agenesis, occur in roughly a third of patients, so renal ultrasonography is part of the evaluation; skeletal anomalies are also common."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the ovaries are normal but the uterus is absent</b>: The ovaries come from the gonadal ridge and germ cells, whereas the uterus, cervix, and upper vagina come from the paired paramesonephric (Müllerian) ducts. In Müllerian agenesis, the ducts fail to develop or fuse, so ovarian estrogen drives normal breast development and ovulation, but there is no uterus to menstruate.<br> <b>Why the kidneys are involved</b>: The Müllerian ducts form alongside and depend on the mesonephric ducts, which also give rise to the ureteric bud. A shared disturbance of intermediate mesoderm explains associated unilateral renal agenesis, pelvic kidney, and vertebral anomalies.<br> <b>Why androgen insensitivity looks similar but differs</b>: In 46,XY complete androgen insensitivity, testes secrete anti-Müllerian hormone, so the uterus is also absent and the vagina is short. But testosterone is in the male range, and because androgen receptors do not work, pubic and axillary hair are sparse."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Müllerian agenesis (answer)</th><th>Complete androgen insensitivity (closest distractor)</th></tr></thead><tbody> <tr><td>Karyotype, gonad</td><td>46,XX, normal ovaries</td><td>46,XY, testes (often inguinal)</td></tr> <tr><td>Pubic and axillary hair</td><td><b>Normal (Tanner 5)</b></td><td>Sparse or absent</td></tr> <tr><td>Testosterone</td><td>Female range</td><td>Male range or higher</td></tr> <tr><td>Associated finding</td><td>Renal and skeletal anomalies</td><td>Gonadal malignancy risk</td></tr> </tbody></table> Both lack a uterus with a blind vagina; pubic hair and the testosterone level separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Inguinal masses containing testicular tissue would be correct in complete androgen insensitivity, where testes often lie in the inguinal canals or labia.\n(B) Elevated LH with low estradiol would be correct for primary ovarian insufficiency such as Turner syndrome, which shows absent breast development and high FSH.\n(C) Hematocolpos would be correct for imperforate hymen or transverse vaginal septum, which present with cyclic pelvic pain and a uterus present.\n(E) A 46,XY karyotype would be correct if pubic and axillary hair were sparse and serum testosterone were in the male range, indicating androgen insensitivity."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a 46,XY karyotype because the uterus is absent — Tanner 5 pubic hair and female-range testosterone show normal androgen action, pointing to Müllerian agenesis."
+   },
+   {
+    "k": "학습목표",
+    "v": "이차성징 정상·여성 범위 테스토스테론·질 맹관·자궁 없음을 뮐러관 무형성으로 판단하고, 동반 신장 기형을 찾는다(안드로겐 무감응과 가른다)"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Committee Opinion No. 728: Müllerian agenesis: diagnosis, management, and treatment. Obstet Gynecol. 2018;131(1):e35-e42 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 404: Disorders of the Female Reproductive System"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Primary amenorrhea with normal secondary sexual characteristics, female-range testosterone, a blind vagina, and no uterus is Müllerian agenesis, which is associated with renal anomalies",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Pubic hair is Tanner 5 and testosterone is in the female range, showing normal androgen production and action",
+   "steps": 3,
+   "chain": [
+    "Normal breast development and FSH -> functioning ovaries",
+    "Tanner 5 pubic hair + female-range testosterone -> not androgen insensitivity",
+    "Blind vagina + absent uterus -> Müllerian agenesis -> associated unilateral renal agenesis"
+   ],
+   "key": [
+    {
+     "item": "Breast and pubic hair development are Tanner stage 5",
+     "why": "Normal estrogen and androgen action",
+     "also": []
+    },
+    {
+     "item": "serum total testosterone concentration is within the reference range for adult women",
+     "why": "Lowers the likelihood of 46,XY androgen insensitivity",
+     "also": []
+    },
+    {
+     "item": "a short vagina ending in a blind pouch",
+     "why": "Absent upper vagina from Müllerian failure",
+     "also": []
+    },
+    {
+     "item": "normal-appearing ovaries and no uterus",
+     "why": "Ovaries are not Müllerian derivatives",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum follicle-stimulating hormone and prolactin concentrations are within the reference ranges",
+     "why": "Lowers the likelihood of ovarian insufficiency and hyperprolactinemia",
+     "also": []
+    },
+    {
+     "item": "She has no cyclic pelvic pain",
+     "why": "Lowers the likelihood of an outflow obstruction with a functioning uterus",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She is on the school swim team",
+     "why": "Normal BMI argues against functional hypothalamic amenorrhea, but the absent uterus decides",
+     "also": []
+    }
+   ],
+   "summary": "Normal breasts, Tanner 5 pubic hair, and female-range testosterone with a blind vagina and no uterus indicate Müllerian agenesis. About a third have renal anomalies such as unilateral renal agenesis.",
+   "switch": {
+    "choice": "E",
+    "condition": "With sparse pubic and axillary hair and male-range testosterone, a 46,XY karyotype (complete androgen insensitivity)"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0579",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "진단검사 — 증상 없는 갑상샘항진증 검사값과 보충제",
+  "type": "진단검사 — 증상 없는 갑상샘항진증 검사값과 보충제",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-07",
+  "vignette": "42세 여자가 건강검진 갑상샘 기능검사에서 이상이 있다는 말을 듣고 왔다. 두근거림·체중 감소·더위 못 참음·손 떨림은 없다. 6개월 전부터 탈모 때문에 고용량 비오틴 보충제(하루 10 mg)를 먹고 있다. 혈압 118/74 mmHg, 맥박 72회/분이다. 갑상샘은 커져 있지 않고 안구 돌출은 없다. 검사 결과 갑상샘자극호르몬 0.02 mIU/L(참고치 0.4~4.0), 유리 T4 3.1 ng/dL(참고치 0.8~1.8), 총 T3 230 ng/dL(참고치 80~180) 이고 TSH 수용체 항체 양성이다.",
+  "question": "가장 적절한 다음 단계는?",
+  "options": [
+   "비오틴을 끊고 며칠 뒤 같은 검사를 다시 한다",
+   "메티마졸을 시작한다",
+   "갑상샘 스캔과 방사성 요오드 섭취율을 측정한다",
+   "프로프라놀롤을 시작한다",
+   "방사성 요오드 치료를 한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 검사값만 보면 그레이브스병이지만, 증상·맥박·갑상샘 크기·안구 소견이 모두 정상이어서 임상과 검사가 맞지 않는다. 많은 면역측정법은 스트렙타비딘-비오틴 결합을 쓰기 때문에, 혈중 비오틴이 많으면 샌드위치법인 TSH 는 거짓으로 낮게, 경쟁법인 유리 T4·T3·TSH 수용체 항체는 거짓으로 높게 나온다 — 그레이브스병과 똑같은 모양이다. 치료를 시작하기 전에 비오틴을 적어도 2~3일(고용량이면 더 길게) 끊고 다시 검사하거나, 비오틴 간섭이 없는 방법으로 측정한다.\n- 원리: <b>왜 방향이 반대로 틀리나</b>: 샌드위치 면역측정(TSH)은 비오틴이 붙은 포획항체가 스트렙타비딘 판에 붙어야 신호가 난다. 혈중 비오틴이 스트렙타비딘 자리를 먼저 차지하면 항체-TSH 복합체가 판에 붙지 못해 신호가 줄고 → TSH 가 <b>낮게</b> 나온다. 경쟁 면역측정(유리 T4·T3·TRAb)은 신호가 클수록 검체 농도가 낮다는 뜻인데, 같은 방해로 신호가 줄어 → 농도가 <b>높게</b> 계산된다.<br> <b>왜 그레이브스와 똑같아 보이나</b>: 낮은 TSH, 높은 T4·T3, TRAb 양성이 한꺼번에 생겨 기계적으로는 가장 「확실한」 그레이브스 양상이 된다. 그래서 검사 모양이 아니라 <b>임상과의 불일치</b>가 단서다.<br> <b>왜 중요한가</b>: 하루 5~10 mg 이상의 머리카락·손톱용 보충제는 권장량(30 μg)의 수백 배다. 같은 간섭이 트로포닌을 거짓으로 낮춰 심근경색을 놓친 사례도 보고되었다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비오틴 간섭(정답)</th><th>실제 그레이브스병(메티마졸 오답이 정답이 되는 경우)</th></tr></thead><tbody> <tr><td>증상·징후</td><td><b>없음</b>, 맥박 72회/분, 갑상샘 정상</td><td>두근거림·체중 감소·빈맥·미만성 갑상샘종·안병증</td></tr> <tr><td>검사</td><td>TSH↓, T4·T3↑, TRAb 양성 — 모두 거짓</td><td>같은 모양 — 모두 진짜</td></tr> <tr><td>확인</td><td>비오틴을 끊고 재검하면 정상화</td><td>재검해도 같고 섭취율이 미만성으로 증가</td></tr> </tbody></table> 검사값은 같다 — 임상이 맞는지, 보충제를 먹는지가 치료와 재검을 가른다.\n- 오답 이유:\n  - ② 메티마졸은 증상·빈맥·갑상샘종이 있고 간섭 요인 없이 재검해도 갑상샘항진증과 TSH 수용체 항체 양성이 확인된 그레이브스병에서 정답이 된다.\n  - ③ 갑상샘 스캔과 섭취율은 진짜 갑상샘항진증이 확인된 뒤 그레이브스병·결절·갑상샘염을 가를 때 쓰며, 검사값 자체를 의심할 때의 첫 단계가 아니다.\n  - ④ 프로프라놀롤은 두근거림·떨림·빈맥 같은 아드레날린 증상이 있는 실제 갑상샘중독증에서 증상 조절용으로 정답이 된다.\n  - ⑤ 방사성 요오드 치료는 확진된 그레이브스병이나 독성 결절에서 약물 치료 대신 선택하며, 검사 오류 가능성이 남은 상태에서는 하지 않는다.\n- 함정: TRAb 까지 양성이니 그레이브스라고 확신하는 것 — 비오틴은 TSH 를 낮추고 T4·T3·TRAb 를 모두 높여 그레이브스 모양을 만든다.\n- 학습목표: 증상·진찰과 맞지 않는 갑상샘항진증 검사 양상(낮은 TSH·높은 T4·T3·TSH 수용체 항체 양성)에서 고용량 비오틴의 면역측정 간섭을 의심하고, 끊은 뒤 다시 검사한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 394: Thyroid Gland Physiology and Testing · Li D, Radulescu A, Shrestha RT, et al. Association of biotin ingestion with performance of hormone and nonhormone assays in healthy adults. JAMA. 2017;318(12):1150-1160",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "검사값만 보면 그레이브스병이지만, 증상·맥박·갑상샘 크기·안구 소견이 모두 정상이어서 임상과 검사가 맞지 않는다. 많은 면역측정법은 스트렙타비딘-비오틴 결합을 쓰기 때문에, 혈중 비오틴이 많으면 샌드위치법인 TSH 는 거짓으로 낮게, 경쟁법인 유리 T4·T3·TSH 수용체 항체는 거짓으로 높게 나온다 — 그레이브스병과 똑같은 모양이다. 치료를 시작하기 전에 비오틴을 적어도 2~3일(고용량이면 더 길게) 끊고 다시 검사하거나, 비오틴 간섭이 없는 방법으로 측정한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 방향이 반대로 틀리나</b>: 샌드위치 면역측정(TSH)은 비오틴이 붙은 포획항체가 스트렙타비딘 판에 붙어야 신호가 난다. 혈중 비오틴이 스트렙타비딘 자리를 먼저 차지하면 항체-TSH 복합체가 판에 붙지 못해 신호가 줄고 → TSH 가 <b>낮게</b> 나온다. 경쟁 면역측정(유리 T4·T3·TRAb)은 신호가 클수록 검체 농도가 낮다는 뜻인데, 같은 방해로 신호가 줄어 → 농도가 <b>높게</b> 계산된다.<br> <b>왜 그레이브스와 똑같아 보이나</b>: 낮은 TSH, 높은 T4·T3, TRAb 양성이 한꺼번에 생겨 기계적으로는 가장 「확실한」 그레이브스 양상이 된다. 그래서 검사 모양이 아니라 <b>임상과의 불일치</b>가 단서다.<br> <b>왜 중요한가</b>: 하루 5~10 mg 이상의 머리카락·손톱용 보충제는 권장량(30 μg)의 수백 배다. 같은 간섭이 트로포닌을 거짓으로 낮춰 심근경색을 놓친 사례도 보고되었다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비오틴 간섭(정답)</th><th>실제 그레이브스병(메티마졸 오답이 정답이 되는 경우)</th></tr></thead><tbody> <tr><td>증상·징후</td><td><b>없음</b>, 맥박 72회/분, 갑상샘 정상</td><td>두근거림·체중 감소·빈맥·미만성 갑상샘종·안병증</td></tr> <tr><td>검사</td><td>TSH↓, T4·T3↑, TRAb 양성 — 모두 거짓</td><td>같은 모양 — 모두 진짜</td></tr> <tr><td>확인</td><td>비오틴을 끊고 재검하면 정상화</td><td>재검해도 같고 섭취율이 미만성으로 증가</td></tr> </tbody></table> 검사값은 같다 — 임상이 맞는지, 보충제를 먹는지가 치료와 재검을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 메티마졸은 증상·빈맥·갑상샘종이 있고 간섭 요인 없이 재검해도 갑상샘항진증과 TSH 수용체 항체 양성이 확인된 그레이브스병에서 정답이 된다.\n③ 갑상샘 스캔과 섭취율은 진짜 갑상샘항진증이 확인된 뒤 그레이브스병·결절·갑상샘염을 가를 때 쓰며, 검사값 자체를 의심할 때의 첫 단계가 아니다.\n④ 프로프라놀롤은 두근거림·떨림·빈맥 같은 아드레날린 증상이 있는 실제 갑상샘중독증에서 증상 조절용으로 정답이 된다.\n⑤ 방사성 요오드 치료는 확진된 그레이브스병이나 독성 결절에서 약물 치료 대신 선택하며, 검사 오류 가능성이 남은 상태에서는 하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "TRAb 까지 양성이니 그레이브스라고 확신하는 것 — 비오틴은 TSH 를 낮추고 T4·T3·TRAb 를 모두 높여 그레이브스 모양을 만든다."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상·진찰과 맞지 않는 갑상샘항진증 검사 양상(낮은 TSH·높은 T4·T3·TSH 수용체 항체 양성)에서 고용량 비오틴의 면역측정 간섭을 의심하고, 끊은 뒤 다시 검사한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 394: Thyroid Gland Physiology and Testing · Li D, Radulescu A, Shrestha RT, et al. Association of biotin ingestion with performance of hormone and nonhormone assays in healthy adults. JAMA. 2017;318(12):1150-1160"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "임상과 맞지 않는 그레이브스 모양의 검사값에서 고용량 비오틴 복용이 있으면 끊고 다시 검사한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "증상·맥박·갑상샘·안구가 모두 정상이고 고용량 비오틴을 먹는다",
+   "steps": 2,
+   "chain": [
+    "TSH↓·T4·T3↑·TRAb 양성인데 증상·맥박·갑상샘·안구 정상 → 검사와 임상 불일치",
+    "하루 10 mg 비오틴 → 스트렙타비딘-비오틴 면역측정 간섭 → 끊고 재검"
+   ],
+   "key": [
+    {
+     "item": "고용량 비오틴 보충제(하루 10 mg)",
+     "why": "면역측정 간섭의 원인",
+     "also": []
+    },
+    {
+     "item": "두근거림·체중 감소·더위 못 참음·손 떨림은 없다",
+     "why": "검사값과 임상의 불일치",
+     "also": []
+    },
+    {
+     "item": "맥박 72회/분",
+     "why": "T4 가 이만큼 높으면 대개 빈맥이 있다",
+     "also": []
+    },
+    {
+     "item": "TSH 수용체 항체 양성",
+     "why": "경쟁법이라 비오틴이 거짓 양성을 만든다 — 그레이브스로 끌리는 함정",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "갑상샘은 커져 있지 않고 안구 돌출은 없다",
+     "why": "그레이브스병의 징후가 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "탈모 때문에",
+     "why": "보충제를 먹는 이유 — 판단에는 복용 사실만 쓴다",
+     "also": []
+    }
+   ],
+   "summary": "그레이브스 모양의 검사값이 증상·진찰과 맞지 않고 고용량 비오틴을 먹고 있다. 면역측정 간섭이므로 끊고 다시 검사한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "비오틴을 끊고 재검해도 같은 값이고 빈맥·갑상샘종·안병증이 있으면 메티마졸"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0578",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "혈액·종양 — 쿰스 음성 용혈·혈구감소와 간정맥 혈전",
+  "type": "혈액·종양 — 쿰스 음성 용혈·혈구감소와 간정맥 혈전",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-07",
+  "vignette": "A 34-year-old man comes to the physician because of fatigue and episodes of dark urine for 4 months. The urine is darkest in the morning. Two weeks ago, he was evaluated for abdominal pain and was found to have thrombosis of the hepatic veins on Doppler ultrasonography. He takes no medications. His pulse is 96/min, and blood pressure is 122/76 mm Hg. Examination shows conjunctival pallor and mild scleral icterus; the liver is palpable 3 cm below the right costal margin. Hemoglobin is 8.9 g/dL, mean corpuscular volume is 104 μm3, leukocyte count is 3,100/mm3, platelet count is 88,000/mm3, and reticulocyte count is 6%. Serum lactate dehydrogenase is 1,850 U/L, and haptoglobin is undetectable. A direct antiglobulin (Coombs) test is negative. A peripheral blood smear shows no schistocytes or spherocytes. Urinalysis shows a positive dipstick test for blood with no red blood cells on microscopy.",
+  "question": "Which of the following is the most appropriate test to confirm the diagnosis?",
+  "options": [
+   "Bone marrow biopsy",
+   "Flow cytometry for CD55 and CD59 on peripheral blood cells",
+   "JAK2 V617F mutation analysis",
+   "Osmotic fragility test",
+   "ADAMTS13 activity assay"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Hemoglobinuria (positive dipstick without red cells), very high LDH, and absent haptoglobin indicate intravascular hemolysis; the direct antiglobulin test is negative, and the smear shows neither schistocytes nor spherocytes. Hemolysis together with leukopenia and thrombocytopenia and thrombosis at an unusual site (hepatic veins) is the classic triad of paroxysmal nocturnal hemoglobinuria. Flow cytometry showing loss of GPI-anchored proteins (CD55, CD59) on red cells and of FLAER binding on granulocytes and monocytes confirms the diagnosis and quantifies the clone.\n- 원리: <b>Why complement attacks the cells</b>: PNH arises from an acquired somatic mutation of PIGA in a hematopoietic stem cell. PIGA is needed to build the glycosylphosphatidylinositol (GPI) anchor, so the clone's progeny lack all GPI-anchored proteins, including CD55 (decay-accelerating factor) and CD59 (membrane inhibitor of reactive lysis). Without CD59, the membrane attack complex assembles on red cells and lyses them inside vessels, releasing free hemoglobin into the urine.<br> <b>Why thrombosis</b>: Free hemoglobin scavenges nitric oxide, and complement-activated platelets and monocytes release procoagulant microparticles. Thrombosis occurs at unusual sites such as the hepatic, portal, mesenteric, and cerebral veins, and is the leading cause of death.<br> <b>Why cytopenias</b>: The PIGA clone often expands in a marrow injured by immune attack, so PNH frequently overlaps with aplastic anemia, producing leukopenia and thrombocytopenia. Complement C5 inhibitors (eculizumab, ravulizumab) stop intravascular hemolysis and reduce thrombosis.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">PNH (answer)</th><th>Myeloproliferative neoplasm with Budd-Chiari (JAK2 distractor)</th></tr></thead><tbody> <tr><td>Blood counts</td><td>Anemia + <b>leukopenia + thrombocytopenia</b></td><td>Often high hemoglobin, platelets, or leukocytes</td></tr> <tr><td>Hemolysis</td><td>Intravascular, Coombs negative, hemoglobinuria</td><td>Absent</td></tr> <tr><td>Confirming test</td><td>Flow cytometry (CD55, CD59, FLAER)</td><td>JAK2 V617F</td></tr> </tbody></table> Both cause hepatic vein thrombosis in young adults; hemolysis and low counts send the work-up to flow cytometry rather than JAK2.\n- 오답 이유:\n  - (A) Bone marrow biopsy would be correct for unexplained pancytopenia without hemolysis to assess aplastic anemia, myelodysplasia, or infiltration.\n  - (C) JAK2 V617F analysis would be correct for hepatic vein thrombosis with high hematocrit or platelet count and no hemolysis, suggesting a myeloproliferative neoplasm.\n  - (D) An osmotic fragility test (or EMA binding) would be correct for extravascular hemolysis with spherocytes, splenomegaly, and a family history.\n  - (E) ADAMTS13 activity would be correct for microangiopathic hemolysis with schistocytes, severe thrombocytopenia, and neurologic or renal involvement.\n- 함정: Ordering JAK2 because of hepatic vein thrombosis — Coombs-negative intravascular hemolysis with low leukocyte and platelet counts points to PNH.\n- 학습목표: 쿰스 음성 혈관내 용혈·혈구감소·간정맥 혈전을 발작야간혈색소뇨증으로 판단하고 유세포분석(CD55·CD59, FLAER)으로 확진한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 105: Hemolytic Anemias · Brodsky RA. Paroxysmal nocturnal hemoglobinuria. Blood. 2014;124(18):2804-2811",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Hemoglobinuria (positive dipstick without red cells), very high LDH, and absent haptoglobin indicate intravascular hemolysis; the direct antiglobulin test is negative, and the smear shows neither schistocytes nor spherocytes. Hemolysis together with leukopenia and thrombocytopenia and thrombosis at an unusual site (hepatic veins) is the classic triad of paroxysmal nocturnal hemoglobinuria. Flow cytometry showing loss of GPI-anchored proteins (CD55, CD59) on red cells and of FLAER binding on granulocytes and monocytes confirms the diagnosis and quantifies the clone."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why complement attacks the cells</b>: PNH arises from an acquired somatic mutation of PIGA in a hematopoietic stem cell. PIGA is needed to build the glycosylphosphatidylinositol (GPI) anchor, so the clone's progeny lack all GPI-anchored proteins, including CD55 (decay-accelerating factor) and CD59 (membrane inhibitor of reactive lysis). Without CD59, the membrane attack complex assembles on red cells and lyses them inside vessels, releasing free hemoglobin into the urine.<br> <b>Why thrombosis</b>: Free hemoglobin scavenges nitric oxide, and complement-activated platelets and monocytes release procoagulant microparticles. Thrombosis occurs at unusual sites such as the hepatic, portal, mesenteric, and cerebral veins, and is the leading cause of death.<br> <b>Why cytopenias</b>: The PIGA clone often expands in a marrow injured by immune attack, so PNH frequently overlaps with aplastic anemia, producing leukopenia and thrombocytopenia. Complement C5 inhibitors (eculizumab, ravulizumab) stop intravascular hemolysis and reduce thrombosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">PNH (answer)</th><th>Myeloproliferative neoplasm with Budd-Chiari (JAK2 distractor)</th></tr></thead><tbody> <tr><td>Blood counts</td><td>Anemia + <b>leukopenia + thrombocytopenia</b></td><td>Often high hemoglobin, platelets, or leukocytes</td></tr> <tr><td>Hemolysis</td><td>Intravascular, Coombs negative, hemoglobinuria</td><td>Absent</td></tr> <tr><td>Confirming test</td><td>Flow cytometry (CD55, CD59, FLAER)</td><td>JAK2 V617F</td></tr> </tbody></table> Both cause hepatic vein thrombosis in young adults; hemolysis and low counts send the work-up to flow cytometry rather than JAK2."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Bone marrow biopsy would be correct for unexplained pancytopenia without hemolysis to assess aplastic anemia, myelodysplasia, or infiltration.\n(C) JAK2 V617F analysis would be correct for hepatic vein thrombosis with high hematocrit or platelet count and no hemolysis, suggesting a myeloproliferative neoplasm.\n(D) An osmotic fragility test (or EMA binding) would be correct for extravascular hemolysis with spherocytes, splenomegaly, and a family history.\n(E) ADAMTS13 activity would be correct for microangiopathic hemolysis with schistocytes, severe thrombocytopenia, and neurologic or renal involvement."
+   },
+   {
+    "k": "함정",
+    "v": "Ordering JAK2 because of hepatic vein thrombosis — Coombs-negative intravascular hemolysis with low leukocyte and platelet counts points to PNH."
+   },
+   {
+    "k": "학습목표",
+    "v": "쿰스 음성 혈관내 용혈·혈구감소·간정맥 혈전을 발작야간혈색소뇨증으로 판단하고 유세포분석(CD55·CD59, FLAER)으로 확진한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 105: Hemolytic Anemias · Brodsky RA. Paroxysmal nocturnal hemoglobinuria. Blood. 2014;124(18):2804-2811"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "Coombs-negative intravascular hemolysis with cytopenias and hepatic vein thrombosis is PNH, confirmed by flow cytometry for GPI-anchored proteins",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "There is intravascular hemolysis with leukopenia and thrombocytopenia rather than elevated blood counts",
+   "steps": 3,
+   "chain": [
+    "Hemoglobinuria + high LDH + absent haptoglobin -> intravascular hemolysis",
+    "Negative Coombs test, no schistocytes or spherocytes -> not immune, microangiopathic, or membrane-structural",
+    "Hemolysis + cytopenias + hepatic vein thrombosis -> PNH -> CD55/CD59 flow cytometry"
+   ],
+   "key": [
+    {
+     "item": "positive dipstick test for blood with no red blood cells on microscopy",
+     "why": "Hemoglobinuria from intravascular hemolysis",
+     "also": []
+    },
+    {
+     "item": "haptoglobin is undetectable",
+     "why": "Free hemoglobin consumes haptoglobin",
+     "also": []
+    },
+    {
+     "item": "thrombosis of the hepatic veins",
+     "why": "Thrombosis at an unusual site, typical of PNH",
+     "also": []
+    },
+    {
+     "item": "leukocyte count is 3,100/mm3, platelet count is 88,000/mm3",
+     "why": "Cytopenias from marrow failure",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "A direct antiglobulin (Coombs) test is negative",
+     "why": "Lowers the likelihood of autoimmune hemolysis",
+     "also": []
+    },
+    {
+     "item": "no schistocytes or spherocytes",
+     "why": "Lowers the likelihood of TTP and hereditary spherocytosis",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "mean corpuscular volume is 104 μm3",
+     "why": "Reflects reticulocytosis; does not select the test",
+     "also": []
+    }
+   ],
+   "summary": "Coombs-negative intravascular hemolysis, leukopenia and thrombocytopenia, and hepatic vein thrombosis form the triad of PNH. Flow cytometry for CD55 and CD59 confirms it.",
+   "switch": {
+    "choice": "C",
+    "condition": "With hepatic vein thrombosis, a high hematocrit or platelet count, and no hemolysis, JAK2 V617F testing"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0577",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·근골격·소화기·혈액종양·진단검사·부인과·내분비)",
+  "subtopic": "소화기·간담췌 — 오래 술을 마신 남성의 황달과 판별함수",
+  "type": "소화기·간담췌 — 오래 술을 마신 남성의 황달과 판별함수",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-07",
+  "vignette": "48세 남자가 3주 전부터 눈이 노래지고 배가 불러 온다고 병원에 왔다. 20년 동안 하루 소주 2병을 마셨고 마지막 음주는 10일 전이다. 체온 37.9℃, 혈압 112/70 mmHg, 맥박 104회/분이다. 공막 황달과 압통을 동반한 간비대가 있고 복수가 약간 있다. 혈액검사에서 백혈구 14,800/mm³(중성구 82 %), 혈색소 11.8 g/dL, 혈소판 142,000/mm³, AST 182 U/L, ALT 64 U/L, 총빌리루빈 14.2 mg/dL, 프로트롬빈시간 21초(대조 12초), 알부민 2.9 g/dL, 크레아티닌 0.9 mg/dL 이다. 혈액·소변 배양과 복수 천자에서 감염은 없었고 위장관 출혈 소견도 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "광범위 항생제 정맥 투여",
+   "프레드니솔론 40 mg/일 경구 투여",
+   "펜톡시필린 경구 투여",
+   "N-아세틸시스테인 단독 정맥 투여",
+   "즉시 간이식 대기 등록"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 장기 과음, 마지막 음주 후 8주 안에 생긴 황달, AST 가 ALT 의 2배 이상이면서 400 U/L 미만, 발열과 중성구 우세 백혈구증가, 압통 있는 간비대는 알코올 간염이다. Maddrey 판별함수 = 4.6 × (21 − 12) + 14.2 ≈ 55.6 으로 32 이상인 중증이다. 배양과 복수 천자로 감염을 확인했고 출혈·신부전이 없으므로 프레드니솔론 40 mg/일을 쓰고, 7일째 Lille 점수로 반응을 판정해 반응이 없으면 중단한다.\n- 원리: <b>왜 AST 가 더 오르나</b>: 알코올은 간세포 미토콘드리아를 손상해 미토콘드리아에 많은 AST 를 내보내고, ALT 합성에 필요한 피리독살 인산(비타민 B6)을 고갈시킨다. 그래서 AST/ALT 비가 2 이상이고 수치는 바이러스·허혈성 간염과 달리 대개 300~400 U/L 를 넘지 않는다.<br> <b>왜 열과 백혈구가 오르나</b>: 장 투과성 증가로 들어온 내독소가 쿠퍼세포를 자극해 TNF-α·IL-8 이 나오고, 중성구가 간소엽으로 몰려든다. 감염 없이도 발열·백혈구증가가 흔하다 — 그래서 스테로이드 전에 감염을 반드시 찾는다.<br> <b>왜 판별함수 32 인가</b>: 프로트롬빈시간 연장(합성능 저하)과 빌리루빈(배설능 저하)을 합친 지표가 32 이상이면 치료 없이 1개월 사망률이 30~50 % 에 이른다. 이 군에서만 스테로이드가 단기 사망을 줄였다(STOPAH 등). 감염·위장관 출혈·신부전·조절되지 않는 당뇨는 스테로이드 금기다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">프레드니솔론(정답)</th><th>펜톡시필린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>염증 사이토카인·중성구 침윤 억제</td><td>TNF-α 생성 억제(포스포다이에스터레이스 억제)</td></tr> <tr><td>근거</td><td><b>판별함수 ≥ 32</b> 에서 28일 사망 감소</td><td>대규모 무작위 연구에서 사망 감소 없음</td></tr> <tr><td>쓰는 경우</td><td>감염·출혈·신부전 없음</td><td>과거 스테로이드 금기일 때 대안이었으나 지금은 권하지 않음</td></tr> </tbody></table> 같은 TNF 경로를 겨누지만 생존 이득이 확인된 것은 스테로이드뿐이다 — 금기를 먼저 확인하는 이유다.\n- 오답 이유:\n  - ① 광범위 항생제는 배양이나 복수 천자에서 자발세균복막염·균혈증이 확인되었을 때 정답이며, 감염이 없으면 발열만으로 쓰지 않는다.\n  - ③ 펜톡시필린은 과거 스테로이드 금기(활동성 감염 등)인 중증 알코올 간염에 대안으로 썼으나, 사망을 줄이지 못해 지금은 권하지 않는다.\n  - ④ N-아세틸시스테인 단독은 아세트아미노펜 과다복용 간손상에서 정답이며, 알코올 간염에서는 스테로이드에 더할 때만 이득이 보고되었다.\n  - ⑤ 간이식은 스테로이드에 반응하지 않고(7일째 Lille 0.45 이상) 금주 의지·사회적 지지가 확인된 선택된 환자에서 고려된다.\n- 함정: 발열과 백혈구증가를 감염으로 보고 항생제를 고르는 것 — 감염이 확인되지 않은 알코올 간염의 발열이며, 판별함수가 32 이상이라 스테로이드가 적응이다.\n- 학습목표: 장기 음주자의 황달·AST 우세 아미노전이효소 상승·발열 백혈구증가를 알코올 간염으로 판단하고, Maddrey 판별함수 32 이상이며 감염·출혈이 없으면 프레드니솔론을 쓴다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 353: Alcohol-Associated Liver Disease · Crabb DW, Im GY, Szabo G, Mellinger JL, Lucey MR. Diagnosis and treatment of alcohol-associated liver diseases: 2019 practice guidance from the American Association for the Study of Liver Diseases. Hepatology. 2020;71(1):306-333",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "장기 과음, 마지막 음주 후 8주 안에 생긴 황달, AST 가 ALT 의 2배 이상이면서 400 U/L 미만, 발열과 중성구 우세 백혈구증가, 압통 있는 간비대는 알코올 간염이다. Maddrey 판별함수 = 4.6 × (21 − 12) + 14.2 ≈ 55.6 으로 32 이상인 중증이다. 배양과 복수 천자로 감염을 확인했고 출혈·신부전이 없으므로 프레드니솔론 40 mg/일을 쓰고, 7일째 Lille 점수로 반응을 판정해 반응이 없으면 중단한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 AST 가 더 오르나</b>: 알코올은 간세포 미토콘드리아를 손상해 미토콘드리아에 많은 AST 를 내보내고, ALT 합성에 필요한 피리독살 인산(비타민 B6)을 고갈시킨다. 그래서 AST/ALT 비가 2 이상이고 수치는 바이러스·허혈성 간염과 달리 대개 300~400 U/L 를 넘지 않는다.<br> <b>왜 열과 백혈구가 오르나</b>: 장 투과성 증가로 들어온 내독소가 쿠퍼세포를 자극해 TNF-α·IL-8 이 나오고, 중성구가 간소엽으로 몰려든다. 감염 없이도 발열·백혈구증가가 흔하다 — 그래서 스테로이드 전에 감염을 반드시 찾는다.<br> <b>왜 판별함수 32 인가</b>: 프로트롬빈시간 연장(합성능 저하)과 빌리루빈(배설능 저하)을 합친 지표가 32 이상이면 치료 없이 1개월 사망률이 30~50 % 에 이른다. 이 군에서만 스테로이드가 단기 사망을 줄였다(STOPAH 등). 감염·위장관 출혈·신부전·조절되지 않는 당뇨는 스테로이드 금기다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">프레드니솔론(정답)</th><th>펜톡시필린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>염증 사이토카인·중성구 침윤 억제</td><td>TNF-α 생성 억제(포스포다이에스터레이스 억제)</td></tr> <tr><td>근거</td><td><b>판별함수 ≥ 32</b> 에서 28일 사망 감소</td><td>대규모 무작위 연구에서 사망 감소 없음</td></tr> <tr><td>쓰는 경우</td><td>감염·출혈·신부전 없음</td><td>과거 스테로이드 금기일 때 대안이었으나 지금은 권하지 않음</td></tr> </tbody></table> 같은 TNF 경로를 겨누지만 생존 이득이 확인된 것은 스테로이드뿐이다 — 금기를 먼저 확인하는 이유다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 광범위 항생제는 배양이나 복수 천자에서 자발세균복막염·균혈증이 확인되었을 때 정답이며, 감염이 없으면 발열만으로 쓰지 않는다.\n③ 펜톡시필린은 과거 스테로이드 금기(활동성 감염 등)인 중증 알코올 간염에 대안으로 썼으나, 사망을 줄이지 못해 지금은 권하지 않는다.\n④ N-아세틸시스테인 단독은 아세트아미노펜 과다복용 간손상에서 정답이며, 알코올 간염에서는 스테로이드에 더할 때만 이득이 보고되었다.\n⑤ 간이식은 스테로이드에 반응하지 않고(7일째 Lille 0.45 이상) 금주 의지·사회적 지지가 확인된 선택된 환자에서 고려된다."
+   },
+   {
+    "k": "함정",
+    "v": "발열과 백혈구증가를 감염으로 보고 항생제를 고르는 것 — 감염이 확인되지 않은 알코올 간염의 발열이며, 판별함수가 32 이상이라 스테로이드가 적응이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "장기 음주자의 황달·AST 우세 아미노전이효소 상승·발열 백혈구증가를 알코올 간염으로 판단하고, Maddrey 판별함수 32 이상이며 감염·출혈이 없으면 프레드니솔론을 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 353: Alcohol-Associated Liver Disease · Crabb DW, Im GY, Szabo G, Mellinger JL, Lucey MR. Diagnosis and treatment of alcohol-associated liver diseases: 2019 practice guidance from the American Association for the Study of Liver Diseases. Hepatology. 2020;71(1):306-333"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "중증(판별함수 ≥ 32) 알코올 간염에서 감염·출혈·신부전이 없으면 프레드니솔론을 쓴다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "판별함수가 약 56 으로 중증이고 감염·위장관 출혈·신부전이 배제되어 스테로이드 금기가 없다",
+   "steps": 3,
+   "chain": [
+    "장기 과음 + 황달 + AST/ALT 2 이상(400 미만) + 발열·백혈구증가 → 알코올 간염",
+    "4.6 × (21 − 12) + 14.2 ≈ 55.6 → 판별함수 32 이상의 중증",
+    "배양·복수 천자 음성, 출혈·신부전 없음 → 프레드니솔론 40 mg/일, 7일째 Lille 점수로 반응 판정"
+   ],
+   "key": [
+    {
+     "item": "20년 동안 하루 소주 2병",
+     "why": "알코올 간염의 전제",
+     "also": []
+    },
+    {
+     "item": "AST 182 U/L, ALT 64 U/L",
+     "why": "AST 우세, 400 미만 — 알코올 간손상 양상",
+     "also": []
+    },
+    {
+     "item": "총빌리루빈 14.2 mg/dL",
+     "why": "판별함수 계산값",
+     "also": []
+    },
+    {
+     "item": "프로트롬빈시간 21초(대조 12초)",
+     "why": "판별함수 계산값",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "혈액·소변 배양과 복수 천자에서 감염은 없었고",
+     "why": "스테로이드 금기인 감염을 배제",
+     "also": []
+    },
+    {
+     "item": "위장관 출혈 소견도 없다",
+     "why": "스테로이드 금기인 출혈을 배제",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 0.9 mg/dL",
+     "why": "간신증후군이 없어 스테로이드를 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "백혈구 14,800/mm³(중성구 82 %)",
+     "why": "알코올 간염 자체의 소견 — 감염으로 오인하기 쉽다",
+     "also": []
+    }
+   ],
+   "summary": "장기 과음 뒤 황달·AST 우세 상승·발열이 있는 알코올 간염이고 판별함수가 약 56 이다. 감염·출혈·신부전이 없어 프레드니솔론을 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "복수 천자에서 중성구가 250/mm³ 이상이거나 혈액배양이 양성이면 먼저 항생제로 감염을 치료"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0572",
   "exam": "imaging",
   "style": "kmle_style",
