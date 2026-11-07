@@ -2,6 +2,166 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0914",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Is virtual planning using standardized temporomandibular joint prostheses appropriate? Case series",
+  "authors": [
+   "Bengtsson M"
+  ],
+  "journal": "International journal of oral and maxillofacial surgery",
+  "doi": "10.1016/j.ijom.2026.10.011",
+  "pmid": "42995066",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42995066/",
+  "pubdate": "2026-11-06",
+  "date": "2026-11-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "The evolution of virtual surgical planning of advanced corrections of the temporomandibular joint with a total joint replacement (TJR), and with simultaneous corrections of dentofacial deformities, has contributed to a profound improvement of treatment possibilities. However, in cases where virtual surgical planning has been desirable, a customized TJR has up to now been preferred. As such, a customized patient-specific implant always comes with a higher cost compared to a standardized total joint replacement design. The present technical note illustrates how virtual surgical planning is possible to perform using available standardized total temporomandibular joint replacement. In detail, workflow, and all features of valuable image information, such as resection models, drilling depths, and occlusal, splints are presented. The largest distances of movements in this sample were 37 mm anterior reposition of the chin together with 22 mm vertical reposition of the mandibular angle. The suggested method combines the advantages of virtual surgical planning with the economic advantages of standardized design of TJR. However, a future comparison of the outcome with the patient-specific TJR is warranted.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0913",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "A cross-domain geometric-temporal correlation network for bearing fault diagnosis under varying operating conditions",
+  "authors": [
+   "Zhu Jing",
+   "Liang Shilei",
+   "Liao Ting",
+   "Chen Minghui",
+   "Cao Siyuan"
+  ],
+  "journal": "ISA transactions",
+  "doi": "10.1016/j.isatra.2026.10.023",
+  "pmid": "42995130",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42995130/",
+  "pubdate": "2026-11-02",
+  "date": "2026-11-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Under varying speed and load conditions, vibration signals often exhibit nonstationary responses and spectral energy redistribution, which can reorganize latent fault representations and degrade diagnostic performance under unlabeled target operating conditions. Existing cross-domain diagnosis methods mainly rely on statistical distribution alignment, but they do not explicitly account for condition-induced representation reorganization, which may limit the stability of learned fault representations across operating conditions. To address this issue, this paper proposes a Cross-domain Geometric-Temporal Correlation Network (CrossGTCN) for cross-condition bearing fault diagnosis from a representation-stability perspective. CrossGTCN coordinates relational modeling, cross-view interaction, and geometry-aware discrimination to improve the stability of condition-sensitive representations. Specifically, a topology-conditioned temporal modulation mechanism converts graph-derived neighborhood information into feature-wise modulation parameters to recalibrate temporal representations, while a frequency-domain energy-relation branch captures complementary spectral relationships associated with multi-band energy redistribution. The resulting temporal-structural and frequency-domain representations are further coordinated through a mutual-evidence cross-view fusion mechanism, and the fused representation is regularized in an angular space to preserve class-discriminative geometry across operating conditions. Experiments on 20 transfer tasks across the JNU, HUST, and SEU datasets show that CrossGTCN achieves an average diagnostic accuracy above 98%. Ablation and visualization results further demonstrate the effectiveness of the proposed framework in improving representation stability and cross-condition discriminability.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0912",
+  "topic": "Hematology-Oncology",
+  "subtopic": "",
+  "title": "Second Allogeneic Hematopoietic Cell Transplantation for Post-Transplant Relapsed Acute Lymphoblastic Leukemia: Outcomes, Competing Risks, and the Impact of Bridging Salvage Therapy",
+  "authors": [
+   "Hur Joon Young",
+   "Choi Yunsuk",
+   "Lee Jung-Hee"
+  ],
+  "journal": "Clinical lymphoma, myeloma & leukemia",
+  "doi": "10.1016/j.clml.2026.09.017",
+  "pmid": "42995137",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42995137/",
+  "pubdate": "2026-09-22",
+  "date": "2026-11-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0911",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Triptonide alleviates sepsis-associated acute lung injury by suppressing the STAT3/HIF-1α-mediated aerobic glycolysis in macrophages",
+  "authors": [
+   "Zhu Junjie",
+   "Ou Zhuoyao",
+   "Ma Haochen",
+   "Huang Qiang",
+   "Pan Linmin",
+   "Xie Huating",
+   "Pan Guoquan",
+   "Jin Shengwei"
+  ],
+  "journal": "British journal of pharmacology",
+  "doi": "10.1111/bph.70725",
+  "pmid": "42995143",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42995143/",
+  "pubdate": "2026-11-06",
+  "date": "2026-11-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND AND PURPOSE:** Sepsis-associated acute lung injury (SA-ALI), represents a major contributor to mortality among septic patients during the early hyperinflammatory phase. Triptonide, a diterpenoids extract from Tripterygium wilfordii Hook f has anticancer and contraceptive effects. However, its potential and mechanism in SA-ALI are largely unknown. This study aims to evaluate the therapeutic efficacy and elucidate underlying mechanisms of triptonide in SA-ALI to identify new clinical strategies.\n\n**EXPERIMENTAL APPROACH:** Lipopolysaccharide (LPS)-induced endotoxemia model or caecal ligation and puncture (CLP) model was used to induce SA-ALI in mice, accompanied by treatment with triptonide, triptolide and 2-methoxyestradiol. Parallel in vitro experiments involved LPS-treated mouse primary macrophages cultured with or without triptonide. Transcriptomic sequencing of macrophages was performed to explore the anti-inflammatory mechanisms of triptonide, which were further substantiated using specific activators, inhibitors and adeno-associated virus (AAV)-mediated gene targeting.\n\n**KEY RESULTS:** Our data shows that triptonide effectively inhibits macrophage pro-inflammatory activation, reduces pulmonary inflammation and alleviates SA-ALI pathology (i.e. inflammatory cell infiltration, oedema and cell apoptosis), thereby improving the survival of septic mice. Transcriptomic sequencing combined with metabolic analysis shows that triptonide suppresses aerobic glycolysis in pro-inflammatory macrophages by inhibiting the Signal Transducer and Activator of Transcription 3 (STAT3)/Hypoxia inducible factor-1α (HIF-1α) axis. Notably, the therapeutic efficacy of triptonide against SA-ALI was abolished in myeloid cell-specific HIF-1α overexpressed mice (LyzM-CreDIO-hif1a mice).\n\n**CONCLUSIONS AND IMPLICATIONS:** Triptonide protects against SA-ALI by suppressing the STAT3/HIF-1α signalling axis, thereby inhibiting aerobic glycolysis-mediated pro-inflammatory macrophage activation, which suggests that triptonide is a promising therapeutic strategy for SA-ALI.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0910",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Reply to: \"Lung Hyperinflation Beyond COPD is Associated with Proxies of Systemic Fluid Overload and Functional Impairment in Patients with Chronic Heart Failure\"",
+  "authors": [
+   "Núñez Julio",
+   "Miñana Gema",
+   "González Cruz"
+  ],
+  "journal": "Archivos de bronconeumologia",
+  "doi": "10.1016/j.arbres.2026.10.008",
+  "pmid": "42995111",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42995111/",
+  "pubdate": "2026-11-06",
+  "date": "2026-11-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0909",
   "topic": "Surgery",
   "subtopic": "",
