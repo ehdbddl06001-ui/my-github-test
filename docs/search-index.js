@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4473,
+  "total": 4474,
   "byType": {
+   "concept": 151,
    "paper": 909,
    "imaging": 583,
-   "concept": 150,
    "kmle": 1728,
    "usmle": 240,
    "anatomy": 846,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 310,
+   "Cardiology": 311,
    "Nephrology": 242,
    "Infectious Disease": 220,
    "Pediatrics": 208,
@@ -79,13 +79,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 3147,
    "medium": 1274,
-   "high": 3146,
    "low": 53
   },
   "tagCount": 5318
  },
  "docs": [
+  {
+   "id": "cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/concepts/cardiology/cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential.md",
+   "snippet": "판단 — 흡기 때 두 심실을 함께 본다 먼저 우심방 곡선의 y 하강을 본다. y 가 약하거나 없고 모든 방의 확장기압이 같아지면 심장눌림증이다 [[harrison 22: 249장 p.1905]]. y 가 깊고 dip and plateau 가 있으면 수축 아니면 제한이다. 이 곡선 모양만으로는 둘을 가르지 못한다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 흡기 때 우심실 수축기압이 오르고 좌심실은 내",
+   "text": "Cardiology 판단 — 흡기 때 두 심실을 함께 본다 먼저 우심방 곡선의 y 하강을 본다. y 가 약하거나 없고 모든 방의 확장기압이 같아지면 심장눌림증이다 [[harrison 22: 249장 p.1905]]. y 가 깊고 dip and plateau 가 있으면 수축 아니면 제한이다. 이 곡선 모양만으로는 둘을 가르지 못한다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 흡기 때 우심실 수축기압이 오르고 좌심실은 내리면(불일치) 수축성 심낭염이다. 해리슨은 이것을 수축에 가장 특이적인 소견으로 둔다 [[harrison 22: 249장 p.1906]]. 두 심실이 같이 움직이고, 확장기말압 차가 5 mmHg 를 넘고, 우심실 수축기압이 60 mmHg 를 넘으면 제한성 심근병증이다 [[harrison 22: 249장 p.1906]]. 기전 — 굳은 심낭은 두 심실을 한 부피로 묶는다 판막이 열린 확장기에는 심방과 심실이 「한 방」처럼 압력이 같다 [[harrison 22: 249장 p.1905]]. 그래서 우심방 곡선이 우심실 충만을 그대로 비춘다. 수축성 심낭염에서는 초기 확장기에 심실이 빠르게 차다가 굳은 심낭에 닿는 순간 충만이 갑자기 멈춘다. 빠른 충만이 깊은 y 하강을, 갑작스러운 멈춤이 dip and plateau(square root sign)를 만든다 [[harrison 22: 249장 p.1905–1906]]. 심낭이 두 심실의 전체 부피를 묶고 있으므로 흡기에 우심실로 피가 더 들어오면 좌심실 몫이 줄어 두 심실 수축기압이 반대로 움직인다(심실 상호의존). 심낭 안 압력이 두 심실에 똑같이 걸리므로 확장기말압도 5 mmHg 안으로 같아진다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 제한성 심근병증은 심근 자체가 굳은 것이다. 초기 충만이 막히는 곡선은 비슷하지만 심낭이 정상이라 두 심실이 따로 움직이고 흡기 변화가 일치한다. 좌심실이 더 굳어 확장기말압이 우심실보다 5 mmHg 이상 높고, 폐동맥·우심실 수축기압이 크게 오른다 [[harrison 22: 249장 p.1906]]. 심장눌림증은 액체가 확장기 내내 심장을 누른다. 우심방이 비지 못하므로 y 하강이 약해지고, 모든 방의 확장기압이 심낭압과 같아진다 [[harrison 22: 249장 p.1905]]. 가르는 소견 — 흡기 때 두 심실 정상값과 견주어 읽는다 — 우심방 평균 1–8 mmHg, 우심실 15–30/1–8 mmHg, 폐모세혈관쐐기 평균 4–12 mmHg, 좌심실 90–129/5–12 mmHg [[harrison 22: 249장 p.1905 · 표 249 2]]. 음성 결과의 한계: 기저에 확장기말압 차가 없더라도 급속 수액 부하 때 벌어질 수 있어 다시 본다 [[harrison 22: 249장 p.1906]]. 심낭압은 눌림·수축·삼출 수축에서 오르고 제한에서는 정상이다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 권고와 예외 우심도자는 일상 검사가 아니지만 원인 미상 호흡곤란·폐고혈압·심낭 질환·심실 기능 저하에서는 합당하다 [[harrison 22: 249장 p.1904]]. 심낭천자 뒤에도 우심방압이 50 % 이상 또는 10 mmHg 아래로 떨어지지 않으면 삼출 수축성 심낭염이다 — 눌림을 풀어도 굳은 심낭이 남은 것이다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 249장 p.1904~1906)"
+  },
   {
    "id": "paper-2026-0909",
    "type": "paper",
