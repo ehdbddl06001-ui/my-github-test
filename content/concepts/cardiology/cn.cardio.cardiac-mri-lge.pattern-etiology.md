@@ -5,7 +5,7 @@ topic: Cardiology
 see_also: []
 date: 2026-11-07
 updated: 2026-11-07
-version: 1
+version: 2
 outline: h241            # 기본틀 슬롯 — 해리슨 22판 248장 Noninvasive Cardiac Imaging
 confidence: high
 review_status: unreviewed
@@ -115,15 +115,25 @@ checks:
     a: "뼈 스캔(99mTc) — ATTR 은 섭취가 강하고 AL 은 약하다."
   - q: "투석 환자에게 CMR 이 필요하다. 가돌리늄 조영제를 쓸 수 있나?"
     a: "group II(대환형) 조영제는 안전하다고 본다 — NSF 는 옛 group I 의 문제였다."
-figures_wanted:
-- source: PMC_OA
-  shows: 급성 심근염의 심외막하·중층 LGE(심내막 보존)
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13654238_figure6-150-95-1600-1098.jpg
+  kind: mri
   at: 가르는 소견 — 층과 분포
-  query: '"myocarditis" AND "late gadolinium enhancement" AND "case report"'
-  caption_terms:
-  - late gadolinium
-  - myocarditis
-  modality: MR
+  shows: 좌심실 전외측벽의 심외막하 LGE — 관상동맥 영역을 따르지 않는 비허혈 패턴(루푸스 심근염 의심 증례)
+  look_for:
+  - '빨간 화살표: 좌심실 측벽 바깥 가장자리(심외막 쪽)의 가는 밝은 띠'
+  label: '「Cardiac magnetic resonance late gadolinium enhancement (LGE) imaging. Four-chamber late gadolinium enhancement (LGE) image demonstrates subepicardial enhancement involving the anterolateral left ventricular wall (red arrow), consistent with a non-ischemic pattern of myocardial injury. In the appropriate clinical and immunological context, this finding supports clinically suspected lupus myocarditis.」 — When the Heart Reveals Lupus: Severe Dilated Cardiomyopathy as the Initial Manifestation of Systemic Lupus Erythematosus'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'When the Heart Reveals Lupus: Severe Dilated Cardiomyopathy as the Initial Manifestation of Systemic Lupus Erythematosus. Cureus'
+  doi: 10.7759/cureus.116094
+  credit: 'When the Heart Reveals Lupus: Severe Dilated Cardiomyopathy as the Initial Manifestation of Systemic Lupus Erythematosus. Cureus. 2026 Sep 11;18(9):e116094. doi: 10.7759/cureus.116094 (CC BY) — Figure 6'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13654238/
+  asset: PMC-PMC13654238_Figure6
+  privacy_check: 그림 전체를 열어 봄 — 얼굴·문신·이름·병원 표지 없음. 오른쪽 위 촬영 장비 표시 글자(시퀀스명·심박수)는 크롭으로 잘라 냄
+  crop: 150,95,1600,1098
 ---
 
 ## 판단 — 층을 먼저, 분포를 다음에

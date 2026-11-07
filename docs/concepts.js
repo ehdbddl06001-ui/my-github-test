@@ -4444,10 +4444,10 @@ window.MEDKOS_CONCEPTS = {
   "condition": "심장 자기공명영상(cardiac magnetic resonance, CMR)의 지연 가돌리늄 조영증강(late gadolinium enhancement, LGE)",
   "topic": "Cardiology",
   "seeAlso": [],
-  "version": 1,
+  "version": 2,
   "updated": "2026-11-07",
   "reviewStatus": "unreviewed",
-  "hash": "649c80024e8d0a97",
+  "hash": "becb45d171549d0a",
   "summary": [
    "결론: 심내막하에서 시작해 관상동맥 영역을 따르는 LGE 는 경색, 중층·심외막하에 영역을 따르지 않으면 비허혈성이다 [[harrison-22: 248장 p.1894]]",
    "시험 단서: 흉통·트로포닌 상승, 관상동맥 정상인 젊은 환자의 심외막하·중층 다발 LGE(late gadolinium enhancement) = 심근염.",
@@ -4616,7 +4616,28 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "variants": [],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13654238_figure6-150-95-1600-1098.jpg",
+    "kind": "mri",
+    "at": "가르는 소견 — 층과 분포",
+    "shows": "좌심실 전외측벽의 심외막하 LGE — 관상동맥 영역을 따르지 않는 비허혈 패턴(루푸스 심근염 의심 증례)",
+    "look": [
+     "빨간 화살표: 좌심실 측벽 바깥 가장자리(심외막 쪽)의 가는 밝은 띠"
+    ],
+    "label": "「Cardiac magnetic resonance late gadolinium enhancement (LGE) imaging. Four-chamber late gadolinium enhancement (LGE) image demonstrates subepicardial enhancement involving the anterolateral left ventricular wall (red arrow), consistent with a non-ischemic pattern of myocardial injury. In the appropriate clinical and immunological context, this finding supports clinically suspected lupus myocarditis.」 — When the Heart Reveals Lupus: Severe Dilated Cardiomyopathy as the Initial Manifestation of Systemic Lupus Erythematosus",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "When the Heart Reveals Lupus: Severe Dilated Cardiomyopathy as the Initial Manifestation of Systemic Lupus Erythematosus. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.116094",
+    "citedBy": null,
+    "credit": "When the Heart Reveals Lupus: Severe Dilated Cardiomyopathy as the Initial Manifestation of Systemic Lupus Erythematosus. Cureus. 2026 Sep 11;18(9):e116094. doi: 10.7759/cureus.116094 (CC BY) — Figure 6",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13654238/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "심장 MRI LGE — 층과 분포로 원인 가르기",
   "geo": {
    "title": "심장 MRI LGE — 층과 분포로 원인 가르기",

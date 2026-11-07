@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-06",
+ "generated": "2026-11-07",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4454,
+  "total": 4461,
   "byType": {
+   "paper": 909,
    "concept": 150,
-   "paper": 902,
    "kmle": 1728,
    "imaging": 571,
    "usmle": 240,
@@ -18,12 +18,12 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 309,
-   "Nephrology": 241,
-   "Infectious Disease": 219,
-   "Pediatrics": 207,
+   "Cardiology": 310,
+   "Nephrology": 242,
+   "Infectious Disease": 220,
+   "Pediatrics": 208,
    "Obstetrics & Gynecology": 153,
-   "Pathology": 134,
+   "Pathology": 135,
    "Rheumatology": 134,
    "Psychiatry": 130,
    "Hematology-Oncology": 128,
@@ -31,13 +31,13 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 119,
    "General Surgery": 116,
    "Endocrinology": 114,
+   "Surgery": 114,
    "Dermatology": 113,
    "Gastroenterology": 113,
    "Ophthalmology": 113,
-   "Surgery": 113,
    "Pulmonology": 111,
    "Hematology": 105,
-   "Laboratory Medicine": 93,
+   "Laboratory Medicine": 94,
    "산부인과": 77,
    "순환기": 67,
    "호흡기": 37,
@@ -79,13 +79,132 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1274,
    "high": 3134,
-   "medium": 1267,
    "low": 53
   },
   "tagCount": 5318
  },
  "docs": [
+  {
+   "id": "paper-2026-0909",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurosurgery. Pediatrics",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0909_trends_in_the_body_of_literature_on_selective_dorsal_rhizoto.md",
+   "snippet": "Title Trends in the body of literature on selective dorsal rhizotomy: a bibliometric analysis spanning 12 decades Authors Carter Camiren, Palla Adhith, Eremiev Alexander, Kurland David B, Cheung Alexander T M, Dastagirzada Yosef, Harter Dav",
+   "text": "Surgery scraped pubmed PubMed / Journal of neurosurgery. Pediatrics Title Trends in the body of literature on selective dorsal rhizotomy: a bibliometric analysis spanning 12 decades Authors Carter Camiren, Palla Adhith, Eremiev Alexander, Kurland David B, Cheung Alexander T M, Dastagirzada Yosef, Harter David H Journal / DOI Journal of neurosurgery. Pediatrics · DOI: 10.3171/2026.3.PEDS25303 · PMID: 42993962 https://pubmed.ncbi.nlm.nih.gov/42993962/ Abstract OBJECTIVE: The aim of this study was to report the results of a bibliometric analysis of the 12 decade body of literature on selective dorsal rhizotomy (SDR). METHODS: The authors queried the Web of Science database for English language articles relevant to SDR. Article authorship, keywords, and citations were captured with high fidelity and extracted using analyses performed primarily using the Bibliometrix tool in the R statistical package. Reference publication year spectroscopy (RPYS) was used to explore high impact years with seminal papers advancing the understanding of the SDR technique and applications. RESULTS: Between 1912 and 2025, the mean annual growth rate of publications on SDR was 0.98%, leading to a comprehensive corpus of 1184 documents (793 articles) from 3747 unique authors. International co authorship increased over the 12 decade period analyzed, with contemporary analysis demonstrating international collaboration on 20.47% of articles published from 2010 to 2025. The Journal of Neurosurgery, and later the Journal of Neurosurgery: Pediatrics, demonstrated consistent impact, while the journal Developmental Medicine and Child Neurology published the most articles, published articles that were cited most frequently, and published articles that had the highest impact. Early in the publication record, etiologic and technical terms such as pain, stimulation, and gait analysis were prominent. More recently, research focus has shifted toward unified outcome measures, including gross motor function, along with procedure reliability, follow up, and surgical outcomes. The terms \"children,\" \"cerebral palsy,\" and \"spasticity\" have remained constant areas of interest measured via keyword analysis. Using RPYS, 31 foundational articles on SDR were identified, with contemporary RPYS articles highlighting cross discipline discussion and patient selection strategies. CONCLUSIONS: Interest in SDR increased in the late 1980s and early 1990s, coinciding with advances in cerebral palsy classification and improvements in gross motor function scales. The focus of SDR research demonstrated a shift from technique and etiology to outcomes and cross disciplinary patient selection. The modern era is characterized by collaborative research that spans international borders and involves neurosurgical patient selection in collaboration with colleagues in rehabilitative fields. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0908",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Primary health care research & development",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0908_effect_of_a_dietary_behaviour_change_education_intervention_.md",
+   "snippet": "Title Effect of a dietary behaviour change education intervention on iron status and linear growth in children aged 6 to 59 months: a cluster randomised controlled trial in rural Ethiopia Authors Abebe Ferede, Abera Muluemebet, Belachew Tef",
+   "text": "Pediatrics scraped pubmed PubMed / Primary health care research & development Title Effect of a dietary behaviour change education intervention on iron status and linear growth in children aged 6 to 59 months: a cluster randomised controlled trial in rural Ethiopia Authors Abebe Ferede, Abera Muluemebet, Belachew Tefera Journal / DOI Primary health care research & development · DOI: 10.1017/S1463423626101960 · PMID: 42992423 https://pubmed.ncbi.nlm.nih.gov/42992423/ Abstract BACKGROUND: Food insecurity and limited maternal nutrition knowledge contribute to childhood iron deficiency anaemia (IDA) and stunting. This study evaluated community based Dietary Intake Behaviour Education (DIBE) for improving iron status and linear growth among children aged 6 59 months in rural central Ethiopia. METHODS: A cluster randomized controlled trial with 1:1 allocation was conducted across 16 community units from April 2021 to January 2023, enrolling 1,012 mother child pairs. Structured assessments collected data on nutritional status, maternal nutrition knowledge, feeding practices, and related factors. IDA was defined as a haemoglobin concentration below 110 g/L, while stunting was defined as a height for age Z score (HAZ) below 2 SD from the WHO child growth standards. Independent samples t tests and generalized estimating equations assessed intervention effects and associated factors. RESULTS: Baseline IDA prevalence was 18.2%, higher in the intervention group (22.13%) than the control group (14.2%). At endline, IDA prevalence decreased to 6.5% in the intervention group but increased to 20.4% in controls. Baseline stunting prevalence was comparable between intervention (41.5%) and control (40.7%) groups. At endline, stunting decreased to 15.0% in the intervention group but increased to 51.8% in controls. DIBE was positively associated with HAZ (B = 0.744, p = 0.003). Maternal food preparation practices (B = 0.242, p = 0.020) and IDA awareness (B = 0.237) were also positively associated with HAZ. CONCLUSIONS: Community based DIBE improved linear growth and coincided with reductions in IDA and stunting. Integrating practical nutrition education into routine child health services may improve nutritional outcomes in resource limited settings.Trial registration: ClinicalTrials.gov:NCT04846062.Registered: 15 April 2021, View at: https://clinicaltrials.gov/ct2/show/NCT04846062. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0907",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0907_endogenous_vitamin_c_interference_in_routine_clinical_chemis.md",
+   "snippet": "Title Endogenous vitamin C interference in routine clinical chemistry assays: evaluation of ascorbate oxidase pretreatment across 19 analytes Authors Yoo Dong Won, Kim Hyung Hoi Journal / DOI Laboratory medicine · DOI: 10.1093/labmed/lmag05",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Laboratory medicine Title Endogenous vitamin C interference in routine clinical chemistry assays: evaluation of ascorbate oxidase pretreatment across 19 analytes Authors Yoo Dong Won, Kim Hyung Hoi Journal / DOI Laboratory medicine · DOI: 10.1093/labmed/lmag058 · PMID: 42993860 https://pubmed.ncbi.nlm.nih.gov/42993860/ Abstract INTRODUCTION: Ascorbic acid (vitamin C) interferes with oxidase peroxidase based clinical chemistry assays. We evaluated endogenous ascorbic acid interference across 19 routine analytes and ascorbate oxidase (AOx) pretreatment efficacy. METHODS: Plasma from 100 patients with ascorbate containing bowel preparation exposure was split into untreated and AOx treated aliquots. The untreated aliquot received an equal volume 0.9% sodium chloride vehicle under identical incubation (37 °C, 15 minutes), controlling for dilution and handling. Both aliquots were analyzed on a Roche cobas c702 Chemistry Analyzer. Lipid profiles were compared before and after colonoscopy in 176 patients. Bias was assessed against European Federation of Clinical Chemistry and Laboratory Medicine allowable bias; reference change values used local imprecision. Concentration dependence was assessed by correlation, regression, and tertile analysis. RESULTS: Lipid changes stayed within reference change values; only triglyceride (TG) reduction with the high ascorbate solution exceeded the Clinical Laboratory Improvement Amendments 2025 criterion ( 27.21% vs ±15%). After AOx, TG levels changed markedly (+28.48%), with alanine aminotransferase ( 45.15%) and aspartate aminotransferase (+46.43%) showing larger opposite changes. Concentration did not predict individual TG bias (R² = 0.056); no analyte survived Bonferroni correction. DISCUSSION: Ascorbate oxidase altered several analytes, TG most clearly, with an opposite aspartate aminotransferase/alanine aminotransferase pattern. Because concentration did not predict interference, concentration based screening is an ineffective gatekeeper; exposure triggered selective AOx pretreatment appears to be more practical, pending assay specific local validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0906",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Hepatology communications",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0906_ai_assisted_single_fiber_digital_pathology_quantification_of.md",
+   "snippet": "Title AI assisted, single fiber digital pathology quantification of changes in liver fibrosis after bariatric surgery Authors Ratziu Vlad, Petitjean Louis, Pais Raluca, Aron Wisnevsky Judith, Charlotte Fréderic, Bedossa Pierre, Thabut Domin",
+   "text": "Pathology scraped pubmed PubMed / Hepatology communications Title AI assisted, single fiber digital pathology quantification of changes in liver fibrosis after bariatric surgery Authors Ratziu Vlad, Petitjean Louis, Pais Raluca, Aron Wisnevsky Judith, Charlotte Fréderic, Bedossa Pierre, Thabut Dominique, Kara Leila, et al. Journal / DOI Hepatology communications · DOI: 10.1097/HC9.0000000000000900 · PMID: 42993745 https://pubmed.ncbi.nlm.nih.gov/42993745/ Abstract BACKGROUND: In steatohepatitis trials, antifibrotic effects are measured by conventional histology, albeit with significant limitations. We assessed how artificial intelligence assisted, single fiber quantitative image analysis of hepatic fibrosis matrix measures fibrosis reversal following an intervention that results in major histological improvement. METHODS: Fifty eight patients underwent bariatric surgery with preoperative and follow up ( 1 y) liver biopsies. High resolution, single fiber quantitative image analysis extracted quantitative traits of fibrosis, which were combined in a continuous phenotypic fibrosis composite score (Ph FCS) of fibrosis severity. Changes in Ph FCS were compared between patients with increasing, decreasing, or stable histological fibrosis stage. RESULTS: The mean follow up between biopsies was 5.84 years (SD 2.59). Forty patients improved in histological fibrosis stage, 12 were unchanged, and 6 progressed. Median Ph FCS was reduced from 5.25 at baseline to 3.75 at follow up (p<0.001). Baseline Ph FCS was correlated with Ph FCS reduction after surgery (r=0.72, p<0.001). Ph FCS reduction was higher in patients with a histological ≥1 stage reduction ( 1.78, 95% CI: 2.15 to 1.04) than in those unchanged ( 1.08, 95% CI: 1.93 to 0.01) or with progression ( 0.28, 95% CI: 1.26 to 0.71) (p<0.02 for differences between groups). The Ph FCS identified intrastage fibrosis reduction in 9 patients labeled unchanged by conventional histology. Of 34 patients with advanced fibrosis at baseline, 15 still had advanced fibrosis according to histological staging. Despite similar histological staging, their follow up Ph FCS was reduced from baseline, although it remained higher than that of the 19 who regressed. CONCLUSIONS: Artificial intelligence assisted, single fiber image analysis provides an automated measurement of fibrosis changes, which is quantitative and more sensitive to change than conventional pathology and thus can improve the feasibility of antifibrotic trials. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0905",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Jornal brasileiro de nefrologia",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0905_epidemiology_of_376_383_arteriovenous_fistula_creations_for_.md",
+   "snippet": "Title Epidemiology of 376,383 arteriovenous fistula creations for hemodialysis over 9 years within the Brazilian Unified Public Health System and the Private Healthcare Sector Authors Ferreira Júlia Freire Castanheira de Paiva, Teani Thaís ",
+   "text": "Nephrology scraped pubmed PubMed / Jornal brasileiro de nefrologia Title Epidemiology of 376,383 arteriovenous fistula creations for hemodialysis over 9 years within the Brazilian Unified Public Health System and the Private Healthcare Sector Authors Ferreira Júlia Freire Castanheira de Paiva, Teani Thaís de Jesus, Bueno Clara Sanches, Ponte Bruno Jeronimo, Portela Felipe Soares Oliveira, Silva Marcelo Fiorelli Alexandrino da, Teivelis Marcelo Passos, Cendoroglo Neto Miguel, et al. Journal / DOI Jornal brasileiro de nefrologia · DOI: 10.1590/2175 8239 JBN 2025 0338en · PMID: 42993939 https://pubmed.ncbi.nlm.nih.gov/42993939/ Abstract BACKGROUND: Chronic kidney disease represents a growing public health challenge worldwide, particularly in low and middleincome countries. In Brazil, where most patients with end stage renal disease depend on the public healthcare system for dialysis and transplantation, ensuring adequate vascular access with arteriovenous fistula (AVF) being one of the available options is critical to sustaining treatment. Despite its clinical relevance, comprehensive national data on vascular access patterns across both sectors have historically been limited. OBJECTIVE: This study aimed to examine trends in AVF creation for hemodialysis across Brazil from 2015 to 2023, assessing differences in frequency, geographic distribution, and sectoral disparities between the public and private healthcare sectors. METHODS: A retrospective population based analysis was conducted using anonymized data from national administrative databases: DATASUS (public sector) and D TISS (private sector). The majority of AVF creation procedures were included. Statistical analyses considered regional adjustments and were performed using SPSS v.20, with significance set at p < 0.001. RESULTS: Over the nine year period, 376,383 AVF procedures were recorded, with 90.57% occurring in the public sector. While the absolute number of AVF creations increased, the ratio of AVFs per 1,000 dialysis patients showed a declining trend. Regional disparities were evident, with the Southeast and South regions presenting higher procedure rates compared to other areas. The private sector consistently reported lower creation rates. CONCLUSION: Although, separately, dialysis and AVF rates have risen steadily in Brazil, the relative rate between them has shown a decreasing trend over the years. The predominance of AVF procedures in the public system is more pronounced. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0904",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLOS global public health",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0904_a_coupled_model_to_value_indirect_impacts_of_maternal_newbor.md",
+   "snippet": "Title A coupled model to value indirect impacts of maternal, newborn and child health interventions Authors Walsh Tom, Vogel Joshua P, Makama Maureen, Abeysuriya Romesh, Scott Nick Journal / DOI PLOS global public health · DOI: 10.1371/jour",
+   "text": "Infectious Disease scraped pubmed PubMed / PLOS global public health Title A coupled model to value indirect impacts of maternal, newborn and child health interventions Authors Walsh Tom, Vogel Joshua P, Makama Maureen, Abeysuriya Romesh, Scott Nick Journal / DOI PLOS global public health · DOI: 10.1371/journal.pgph.0005507 · PMID: 42993779 https://pubmed.ncbi.nlm.nih.gov/42993779/ Abstract Outcomes associated with maternal, newborn and child health (MNCH) conditions have improved significantly over the past 20 years, however, they are not on track to meet the global SDG targets by 2030. Emerging interventions have the potential to greatly increase access to care, but estimating their impacts is difficult due to complicated interactions between interventions. Models exist to quantify outcomes and costs associated with scaling up interventions related to MNCH (e.g., The Lives saved tool (LiST)), but none have been designed to flexibly integrate novel interventions. This study aimed to develop a model that can estimate the impact of standard of care (SOC) and novel interventions on MNCH conditions, and present an example use case. We developed a compartment based model with 15 interconnected population and condition specific modules for pregnant women (in different trimesters), newborns and children <5 years to quantify impacts of bespoke novel interventions. The model included modules for anemia, pre eclampsia, obstructed labour, hemorrhage, maternal sepsis, preterm, small for gestation age (SGA), respiratory distress syndrome (RDS), neonatal sepsis, birth asphyxia, wasting (neonates and children), stunting and modules that captures neonatal and childhood conditions not captured elsewhere in the model. The model captures dynamic interactions between MNCH conditions, including across trimesters, and accounts for the full impact of early detection and prevention of conditions during pregnancy. In an example use case, the model identified that scaling up standard of care and novel diagnostic interventions for anemia and pre eclampsia plus AI ultrasound (for early detection of obstructed labour, hemorrhage and birth outcome risks, leading to facility referrals) to 60% could avert 207 million DALYs globally over 2024 2040. We have developed a modelling tool which can be flexibly adapted to assess the impacts of novel interventions for MNCH conditions, and can be applied at a global, regional, national or sub national level. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0903",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Biomolecules & biomedicine",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0903_reduced_apelin_expression_and_atrial_fibrosis_in_postoperati.md",
+   "snippet": "Title Reduced apelin expression and atrial fibrosis in postoperative atrial fibrillation following coronary artery bypass grafting Authors Xu Yijun, Chen Zhiqiang, Liu Peng, Wen Wen, Li Xiaowei, Wang Hao Journal / DOI Biomolecules & biomedi",
+   "text": "Cardiology scraped pubmed PubMed / Biomolecules & biomedicine Title Reduced apelin expression and atrial fibrosis in postoperative atrial fibrillation following coronary artery bypass grafting Authors Xu Yijun, Chen Zhiqiang, Liu Peng, Wen Wen, Li Xiaowei, Wang Hao Journal / DOI Biomolecules & biomedicine · DOI: 10.17305/bb.2026.14946 · PMID: 42993807 https://pubmed.ncbi.nlm.nih.gov/42993807/ Abstract The role of apelin in atrial fibrosis linked to postoperative atrial fibrillation (POAF) following coronary artery bypass grafting (CABG) is not fully understood. This exploratory study investigated apelin's association with POAF related atrial fibrosis and its impact on profibrotic signaling. The study included 18 patients: six CABG patients with POAF, six CABG patients without POAF, and six patients with congenital heart disease in sinus rhythm (serving as a secondary reference). Left atrial appendage tissue was analyzed histologically and molecularly, and serum apelin levels were measured on postoperative day 2 in CABG patients. Primary neonatal rat atrial fibroblasts were treated with transforming growth factor β1 (TGF β1) both with and without apelin, or subjected to apelin silencing. Compared with CABG patients without POAF, the POAF group exhibited lower atrial apelin expression and serum concentrations, increased collagen deposition, elevated TGF β1 expression, and enhanced phosphorylation of mothers against decapentaplegic homolog 2 (Smad2), while total Smad2 remained unchanged. Experimentally, apelin attenuated TGF β1 induced fibroblast activation, collagen expression, and Smad2 phosphorylation. Conversely, apelin silencing increased the expression of fibrosis associated proteins. These preliminary findings suggest a link between reduced apelin and atrial fibrosis, as well as POAF after CABG. They also indicate antifibrotic effects of apelin, potentially mediated through TGF β1/Smad2 signaling. Further research with larger clinical cohorts and complementary experimental models is necessary to fully elucidate the pathway mediation and clinical significance of these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "cn.cardio.cardiac-mri-lge.pattern-etiology",
    "type": "concept",
