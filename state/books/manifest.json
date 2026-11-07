@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "5083e66723847451262d",
-   "version": 22,
-   "date": "2026-11-06",
+   "hash": "d4be506575dbae37ec1d",
+   "version": 23,
+   "date": "2026-11-07",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 38,
+   "pages": 40,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -86,54 +86,60 @@
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
+    "cn.cardio.cardiac-mri-lge.pattern-etiology": {
+     "title": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
+     "page": 22,
+     "concept_hash": "649c80024e8d0a97",
+     "concept_version": 1
+    },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 22,
+     "page": 24,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 24,
+     "page": 26,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 26,
+     "page": 28,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 29,
+     "page": 31,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 31,
+     "page": 33,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 34,
+     "page": 36,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 37,
+     "page": 39,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "648a6afc8d7f0e2074b86e048b975c0f",
-    "version": 22,
-    "uploaded": "2026-11-06T11:22:13+09:00"
+    "md5": "8d46b57a7fb20930214176342eef2709",
+    "version": 23,
+    "uploaded": "2026-11-07T10:59:14+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -157,18 +163,19 @@
     "MedKOS_학습서_순환기내과_v19_2026-11-03.pdf",
     "MedKOS_학습서_순환기내과_v20_2026-11-04.pdf",
     "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf",
-    "MedKOS_학습서_순환기내과_v22_2026-11-06.pdf"
+    "MedKOS_학습서_순환기내과_v22_2026-11-06.pdf",
+    "MedKOS_학습서_순환기내과_v23_2026-11-07.pdf"
    ],
    "changes": [
-    "새 단원: 경정맥 파형 — a파·v파·y 하강이 원인을 가른다"
+    "새 단원: 심장 MRI 지연조영 — 층과 분포가 원인을 가른다"
    ]
   },
   "피부과": {
-   "hash": "51dc42a17495b998df34",
-   "version": 13,
-   "date": "2026-10-16",
+   "hash": "64dc4e8c8ea8c0da4197",
+   "version": 14,
+   "date": "2026-11-07",
    "file": "MedKOS_학습서_피부과.pdf",
-   "pages": 14,
+   "pages": 16,
    "template_version": 11,
    "units": {
     "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin": {
@@ -195,24 +202,30 @@
      "concept_hash": "817db24b4502cb85",
      "concept_version": 3
     },
+    "cn.derm.sweet-syndrome.diagnosis": {
+     "title": "스위트증후군 — 열과 아픈 부은 판, 진피 호중구",
+     "page": 9,
+     "concept_hash": "fa6d357e80e5eb20",
+     "concept_version": 1
+    },
     "cn.derm.scabies.treat-with-contacts": {
      "title": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
-     "page": 9,
+     "page": 11,
      "concept_hash": "f952cfb87c7ab5a6",
      "concept_version": 3
     },
     "cn.derm.regressing-pigmented-lesion.biopsy-first": {
      "title": "퇴행 구조 색소 병변 — 양성 같아도 조직검사가 먼저",
-     "page": 12,
+     "page": 14,
      "concept_hash": "f8554779edc646cf",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "730fdd1e4021133c3fa446d2c7aaf01d",
-    "version": 13,
-    "uploaded": "2026-10-16T09:33:29+09:00"
+    "md5": "a9d84d48f13920d9aea1c2ca7afdebe0",
+    "version": 14,
+    "uploaded": "2026-11-07T10:59:14+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -227,10 +240,11 @@
     "MedKOS_학습서_피부과_v10_2026-09-30.pdf",
     "MedKOS_학습서_피부과_v11_2026-10-05.pdf",
     "MedKOS_학습서_피부과_v12_2026-10-06.pdf",
-    "MedKOS_학습서_피부과_v13_2026-10-16.pdf"
+    "MedKOS_학습서_피부과_v13_2026-10-16.pdf",
+    "MedKOS_학습서_피부과_v14_2026-11-07.pdf"
    ],
    "changes": [
-    "내용 갱신: 퇴행 구조 색소 병변 — 양성 같아도 조직검사가 먼저 (정리본 v2 → v3)"
+    "새 단원: 스위트증후군 — 열과 아픈 부은 판, 진피 호중구"
    ]
   },
   "신장내과": {
@@ -389,11 +403,11 @@
    ]
   },
   "안과": {
-   "hash": "9f40cf17d100154127c6",
-   "version": 15,
-   "date": "2026-11-06",
+   "hash": "3fe479d510db66ecebc1",
+   "version": 16,
+   "date": "2026-11-07",
    "file": "MedKOS_학습서_안과.pdf",
-   "pages": 11,
+   "pages": 15,
    "template_version": 11,
    "units": {
     "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
@@ -402,36 +416,48 @@
      "concept_hash": "99950f7c321bc098",
      "concept_version": 4
     },
+    "cn.ophth.herpes-zoster-ophthalmicus.antiviral-slit-lamp": {
+     "title": "눈 대상포진 — 경구 항바이러스제와 세극등이 먼저",
+     "page": 4,
+     "concept_hash": "8757da5f807e0171",
+     "concept_version": 1
+    },
     "cn.ophth.crao.arteritic-workup": {
      "title": "망막중심동맥폐쇄 — 50세 이상은 동맥염부터 가린다",
-     "page": 4,
+     "page": 6,
      "concept_hash": "d4640372e89b6ffd",
      "concept_version": 4
     },
+    "cn.ophth.neovascular-amd.anti-vegf": {
+     "title": "습성 황반변성 — 출혈·액체면 바로 VEGF 억제제",
+     "page": 8,
+     "concept_hash": "851caca983aa2b99",
+     "concept_version": 1
+    },
     "cn.ophth.chemical-burn.immediate-irrigation": {
      "title": "안구 화학화상 — 검사보다 세척이 먼저",
-     "page": 6,
+     "page": 10,
      "concept_hash": "9b74781b3d476ea0",
      "concept_version": 2
     },
     "cn.ophth.normal-tension-glaucoma.visual-field": {
      "title": "정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인",
-     "page": 8,
+     "page": 11,
      "concept_hash": "54b97ef726b644be",
      "concept_version": 1
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
      "title": "중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다",
-     "page": 9,
+     "page": 13,
      "concept_hash": "bedc5753c750574e",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "0b9e0cadfe9387d40f77aa6dcbe5483c",
-    "version": 15,
-    "uploaded": "2026-11-06T11:22:13+09:00"
+    "md5": "6ab7789971868c9ff56fda2148a0bce6",
+    "version": 16,
+    "uploaded": "2026-11-07T10:59:14+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -448,92 +474,100 @@
     "MedKOS_학습서_안과_v12_2026-11-03.pdf",
     "MedKOS_학습서_안과_v13_2026-11-04.pdf",
     "MedKOS_학습서_안과_v14_2026-11-05.pdf",
-    "MedKOS_학습서_안과_v15_2026-11-06.pdf"
+    "MedKOS_학습서_안과_v15_2026-11-06.pdf",
+    "MedKOS_학습서_안과_v16_2026-11-07.pdf"
    ],
    "changes": [
-    "내용 수정: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인"
+    "새 단원: 눈 대상포진 — 경구 항바이러스제와 세극등이 먼저",
+    "새 단원: 습성 황반변성 — 출혈·액체면 바로 VEGF 억제제"
    ]
   },
   "정형외과": {
-   "hash": "ad4b81f2163cf7f3cd50",
-   "version": 18,
-   "date": "2026-11-05",
+   "hash": "33d467cf5adfccc9b3ae",
+   "version": 19,
+   "date": "2026-11-07",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 23,
+   "pages": 25,
    "template_version": 11,
    "units": {
+    "cn.ortho.shoulder-dislocation-older.rotator-cuff-tear": {
+     "title": "노인 어깨 탈구 뒤 거상 불가 — 회전근개부터",
+     "page": 2,
+     "concept_hash": "ff034b1be8cf5e4b",
+     "concept_version": 1
+    },
     "cn.ortho.scaphoid-fracture.occult-imaging": {
      "title": "잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
-     "page": 2,
+     "page": 4,
      "concept_hash": "16943d8e2ec08cbe",
      "concept_version": 3
     },
     "cn.ortho.ulnar-neuropathy.localization": {
      "title": "척골신경병증 — 손등·아래팔 감각이 병변 높이를 정한다",
-     "page": 4,
+     "page": 6,
      "concept_hash": "f36d42ad555a9fa8",
      "concept_version": 1
     },
     "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
      "title": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
-     "page": 5,
+     "page": 7,
      "concept_hash": "ffd2be60f94fba93",
      "concept_version": 4
     },
     "cn.ortho.atlas-burst-fracture.mechanism": {
      "title": "고리뼈 파열 — 앞·뒤고리가 다 끊기면 축성 압박",
-     "page": 8,
+     "page": 10,
      "concept_hash": "90d718277d9a5f80",
      "concept_version": 2
     },
     "cn.ortho.odontoid-fracture.diagnosis": {
      "title": "치아돌기 골절 — 골절선이 허리에 머무나, 몸통으로 가나",
-     "page": 10,
+     "page": 12,
      "concept_hash": "bc5041f727e2b115",
      "concept_version": 2
     },
     "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis": {
      "title": "환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나",
-     "page": 12,
+     "page": 14,
      "concept_hash": "327d614915e416f7",
      "concept_version": 2
     },
     "cn.ortho.achilles-rupture.thompson-test": {
      "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
-     "page": 14,
+     "page": 16,
      "concept_hash": "c55a14c1972e4b5a",
      "concept_version": 2
     },
     "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication": {
      "title": "아킬레스힘줄병증 — 스테로이드 주사는 파열을 부른다",
-     "page": 15,
+     "page": 17,
      "concept_hash": "2e8e17a29fd1ce6f",
      "concept_version": 1
     },
     "cn.ortho.scfe.adolescent-limp-diagnosis": {
      "title": "대퇴골두골단분리증 — 무릎 통증은 엉덩관절에서 찾는다",
-     "page": 16,
+     "page": 18,
      "concept_hash": "8ee8f0054783bbcf",
      "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 18,
+     "page": 20,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
-     "page": 20,
+     "page": 22,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "2935f60431634b2e819ee4e5db035f98",
-    "version": 18,
-    "uploaded": "2026-11-05T11:05:15+09:00"
+    "md5": "3104abc77be4075aadde06917101def6",
+    "version": 19,
+    "uploaded": "2026-11-07T10:59:14+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -553,11 +587,11 @@
     "MedKOS_학습서_정형외과_v15_2026-10-28.pdf",
     "MedKOS_학습서_정형외과_v16_2026-11-02.pdf",
     "MedKOS_학습서_정형외과_v17_2026-11-03.pdf",
-    "MedKOS_학습서_정형외과_v18_2026-11-05.pdf"
+    "MedKOS_학습서_정형외과_v18_2026-11-05.pdf",
+    "MedKOS_학습서_정형외과_v19_2026-11-07.pdf"
    ],
    "changes": [
-    "내용 갱신: 잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정 (정리본 v2 → v3)",
-    "새 단원: 대퇴골두골단분리증 — 무릎 통증은 엉덩관절에서 찾는다"
+    "새 단원: 노인 어깨 탈구 뒤 거상 불가 — 회전근개부터"
    ]
   },
   "외과": {
@@ -1380,13 +1414,19 @@
    ]
   },
   "소화기내과": {
-   "hash": "d9a1189e1b644121ead7",
-   "version": 14,
-   "date": "2026-10-18",
+   "hash": "7343dd80304851698576",
+   "version": 15,
+   "date": "2026-11-07",
    "file": "MedKOS_학습서_소화기내과.pdf",
-   "pages": 8,
+   "pages": 10,
    "template_version": 11,
    "units": {
+    "cn.gs.cushing-ulcer.vagal-acid-mechanism": {
+     "title": "쿠싱 궤양 — 뇌손상이 미주신경으로 위산을 늘린다",
+     "page": 2,
+     "concept_hash": "877130c7c4e94ae9",
+     "concept_version": 1
+    },
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
@@ -1395,13 +1435,13 @@
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
      "title": "게실 농양 — 큰 농양·안정이면 경피 배농",
-     "page": 3,
+     "page": 4,
      "concept_hash": "dd08285d0193dc56",
      "concept_version": 2
     },
     "cn.gi.acetaminophen-toxicity.nac-mechanism": {
      "title": "acetaminophen(아세트아미노펜) 중독 — NAC 는 글루타티온을 다시 채운다",
-     "page": 5,
+     "page": 6,
      "concept_hash": "3902073767b85dbb",
      "concept_version": 2
     },
@@ -1410,13 +1450,19 @@
      "page": 7,
      "concept_hash": "fd6d4dfc3d309879",
      "concept_version": 2
+    },
+    "cn.gs.acute-pancreatitis.biliary-etiology-ultrasound": {
+     "title": "급성 췌장염 — 원인 찾기의 첫 영상은 복부 초음파",
+     "page": 9,
+     "concept_hash": "397835d9d877c517",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "1bc3eac2494a9b1d7e68a37b6d53cccd",
-    "version": 14,
-    "uploaded": "2026-10-18T09:13:15+09:00"
+    "md5": "53e286ad8752711ccb29dcecc396b0bc",
+    "version": 15,
+    "uploaded": "2026-11-07T10:59:14+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1432,10 +1478,12 @@
     "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf",
     "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf",
     "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf",
-    "MedKOS_학습서_소화기내과_v14_2026-10-18.pdf"
+    "MedKOS_학습서_소화기내과_v14_2026-10-18.pdf",
+    "MedKOS_학습서_소화기내과_v15_2026-11-07.pdf"
    ],
    "changes": [
-    "내용 갱신: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기 (정리본 v2 → v3)"
+    "새 단원: 쿠싱 궤양 — 뇌손상이 미주신경으로 위산을 늘린다",
+    "새 단원: 급성 췌장염 — 원인 찾기의 첫 영상은 복부 초음파"
    ]
   },
   "신경과": {
@@ -1511,11 +1559,11 @@
    ]
   },
   "Obstetrics and Gynecology": {
-   "hash": "2bed0b6c9e6e45c2f29e",
-   "version": 3,
-   "date": "2026-10-27",
+   "hash": "ec2904169d3b2f5989b6",
+   "version": 4,
+   "date": "2026-11-07",
    "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
-   "pages": 6,
+   "pages": 9,
    "template_version": 11,
    "units": {
     "cn.obgyn.menstrual-cycle.ovulation-confirmation": {
@@ -1530,38 +1578,52 @@
      "concept_hash": "9af1b5e2fcc07cf9",
      "concept_version": 1
     },
+    "cn.obgyn.hirsutism.ncah-17ohp-exclusion": {
+     "title": "다모증 — 17-OHP 가 높으면 PCOS 가 아니다",
+     "page": 5,
+     "concept_hash": "22022bf1bf139bd6",
+     "concept_version": 1
+    },
     "cn.obgyn.hirsutism.evaluation-tumor-vs-pcos": {
      "title": "다모증 — 급속 진행·남성화면 종양부터 찾는다",
-     "page": 5,
+     "page": 6,
      "concept_hash": "e1a9b7651898ad63",
+     "concept_version": 1
+    },
+    "cn.obgyn.postpartum-preeclampsia.magnesium-antihypertensive": {
+     "title": "산후 전자간증 — 마그네슘과 정맥 강압제를 함께",
+     "page": 8,
+     "concept_hash": "d7a841a78e470768",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
-    "md5": "b827c3dda1621f825d361f18df9bc400",
-    "version": 3,
-    "uploaded": "2026-10-27T09:46:28+09:00"
+    "md5": "3fce3b0be7f0a5d40ecec303c2075f90",
+    "version": 4,
+    "uploaded": "2026-11-07T10:59:14+09:00"
    },
    "archive": [
     "MedKOS_학습서_Obstetrics_and_Gynecology_v1_2026-10-25.pdf",
     "MedKOS_학습서_Obstetrics_and_Gynecology_v2_2026-10-26.pdf",
-    "MedKOS_학습서_Obstetrics_and_Gynecology_v3_2026-10-27.pdf"
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v3_2026-10-27.pdf",
+    "MedKOS_학습서_Obstetrics_and_Gynecology_v4_2026-11-07.pdf"
    ],
    "changes": [
-    "새 단원: 다모증 — 급속 진행·남성화면 종양부터 찾는다"
+    "새 단원: 다모증 — 17-OHP 가 높으면 PCOS 가 아니다",
+    "새 단원: 산후 전자간증 — 마그네슘과 정맥 강압제를 함께"
    ]
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "fae0c3fd78883fce4ee8a8596f2182a4",
+   "md5": "e4695c01db29ff24ffb963822e1ba62b",
    "version": null,
-   "uploaded": "2026-11-06T11:22:13+09:00"
+   "uploaded": "2026-11-07T10:59:14+09:00"
   }
  },
- "updated": "2026-11-06"
+ "updated": "2026-11-07"
 }
