@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4511,
+  "total": 4523,
   "byType": {
    "kmle": 1760,
+   "imaging": 595,
    "concept": 151,
    "paper": 914,
-   "imaging": 583,
    "usmle": 240,
    "anatomy": 846,
    "ailab": 14,
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 113,
    "Hematology": 107,
    "Laboratory Medicine": 95,
-   "산부인과": 78,
-   "순환기": 70,
+   "산부인과": 80,
+   "순환기": 74,
    "호흡기": 38,
    "소화기": 37,
-   "소아과": 31,
-   "응급·중환자": 27,
+   "소아과": 32,
+   "응급·중환자": 28,
+   "내분비": 27,
    "혈액·종양": 27,
    "Physiology": 26,
    "감염": 26,
-   "내분비": 26,
    "병리·조직학": 26,
    "신경": 26,
    "신장·비뇨기": 25,
+   "외과": 24,
    "피부과": 24,
-   "외과": 23,
+   "예방의학·역학": 21,
    "Pharmacology": 20,
-   "예방의학·역학": 20,
    "Biochemistry": 19,
    "Microbiology": 18,
    "약리": 16,
+   "정신과": 16,
    "Immunology": 15,
    "Internal Medicine": 15,
    "근골격·류마티스": 15,
-   "정신과": 15,
    "안과": 12,
    "영상의학": 11,
    "이비인후과": 10,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3179,
+   "high": 3191,
    "medium": 1279,
    "low": 53
   },
@@ -693,6 +693,220 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1764.md",
    "snippet": "67세 남자가 40분 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 6년 전 전벽 심근경색으로 스텐트를 넣었고 그 뒤 심부전 약을 먹고 있다. 응급실에 도착한 뒤 말이 어눌해지고 묻는 말에 엉뚱하게 대답하며, 이름을 부르면 눈을 뜬다. 피부는 차고 축축하다. 목동맥 맥박은 약하지만 규칙적으로 만져진다. 양쪽 폐 아래쪽에서 수포음이 들린다. 심전도 리듬은 그림과 같고 활력징후와 검사 결과는 자료와 같다. 정맥로는 확보되",
    "text": "Cardiology Sudden Palpitations, Hypotension and Confusion in a Man with an Old Anterior Infarction wide-complex-tachycardia hemodynamic-instability post-mi ecg KMLE 2026 / Claude 67세 남자가 40분 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 6년 전 전벽 심근경색으로 스텐트를 넣었고 그 뒤 심부전 약을 먹고 있다. 응급실에 도착한 뒤 말이 어눌해지고 묻는 말에 엉뚱하게 대답하며, 이름을 부르면 눈을 뜬다. 피부는 차고 축축하다. 목동맥 맥박은 약하지만 규칙적으로 만져진다. 양쪽 폐 아래쪽에서 수포음이 들린다. 심전도 리듬은 그림과 같고 활력징후와 검사 결과는 자료와 같다. 정맥로는 확보되어 있고 산소를 투여하기 시작했다. 다음 처치로 가장 적절한 것은? A. 아미오다론 150 mg 정맥 주입 B. 비동기 제세동 200 J 시행 C. 동기화 심율동전환 100 J 시행 D. 아데노신 6 mg 정맥 급속 주사 E. 베라파밀 5 mg 정맥 주사 심근경색 병력이 있는 환자의 규칙적인 넓은 QRS 빈맥은 반증되기 전까지 심실빈맥으로 다룬다. 저혈압·의식 변화·차고 축축한 피부·폐부종은 불안정의 징후라 약물로 시간을 쓰지 않고 즉시 전기충격을 준다. 목동맥 맥박이 만져지므로 비동기 제세동이 아니라 QRS 에 맞춘 동기화 심율동전환을 한다(가능하면 짧은 진정 후)."
+  },
+  {
+   "id": "imaging-2026-0596",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 맥이 건너뛴다고 느끼는 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0596.md",
+   "snippet": "A 63 year old man comes to the physician because of a sensation that his heart is skipping beats for 2 weeks. He has had no chest pain, dyspnea, or syncope. He drinks 3 to 4 cups of coffee daily and recently started a decongestant for a col",
+   "text": "순환기 심전도 판독 — 맥이 건너뛴다고 느끼는 남성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c A 63 year old man comes to the physician because of a sensation that his heart is skipping beats for 2 weeks. He has had no chest pain, dyspnea, or syncope. He drinks 3 to 4 cups of coffee daily and recently started a decongestant for a cold. He takes no other medications. His pulse is 70/min and irregular, and blood pressure is 134/80 mm Hg. Cardiac examination shows no murmurs. Serum electrolyte concentrations and thyroid stimulating hormone level are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Atrial bigeminy from premature atrial contractions B. Second degree atrioventricular block, Mobitz type I C. Ventricular bigeminy D. Atrial fibrillation E. Sinus arrhythmia"
+  },
+  {
+   "id": "imaging-2026-0595",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 심박동기를 가진 고령 남성의 정기 진료",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0595.md",
+   "snippet": "87세 남자가 심박동기 정기 점검을 위해 순환기내과 외래에 왔다. 4년 전 실신과 완전방실차단으로 단방 심실 심박동기(VVI, 하한 심박수 70회/분)를 삽입하였다. 그 뒤 실신·어지럼은 없었고 일상생활에서 숨이 차지 않는다. 혈압 128/70 mmHg, 맥박 70회/분(규칙적) 이다. 심박동기 주머니 부위는 깨끗하고 다리 부종은 없다. 혈청 칼륨 4.4 mEq/L, 크레아티닌 1.1 mg/dL 이다. 12유도 심전도는 그림과",
+   "text": "순환기 심전도 처치 — 심박동기를 가진 고령 남성의 정기 진료 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c 87세 남자가 심박동기 정기 점검을 위해 순환기내과 외래에 왔다. 4년 전 실신과 완전방실차단으로 단방 심실 심박동기(VVI, 하한 심박수 70회/분)를 삽입하였다. 그 뒤 실신·어지럼은 없었고 일상생활에서 숨이 차지 않는다. 혈압 128/70 mmHg, 맥박 70회/분(규칙적) 이다. 심박동기 주머니 부위는 깨끗하고 다리 부종은 없다. 혈청 칼륨 4.4 mEq/L, 크레아티닌 1.1 mg/dL 이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 관상동맥조영술을 한다 B. 경피적 체외 심박조율을 시작한다 C. 현재 설정을 유지하고 정기 추적한다 D. 아트로핀을 정맥 주사한다 E. 심박동기 발생기를 교체한다"
+  },
+  {
+   "id": "imaging-2026-0594",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 쉴 때 가슴이 조여 온 중년 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0594.md",
+   "snippet": "63세 여자가 2시간 전 집에서 쉬던 중 가슴이 조이는 통증이 20분 동안 생겼다가 지금은 약하게 남아 있어 응급실에 왔다. 고혈압과 2형 당뇨병이 있고 체질량지수는 30 kg/m² 이다. 혈압 148/88 mmHg, 맥박 72회/분(가끔 건너뜀), 산소포화도 97 % 이다. 폐는 깨끗하고 심잡음은 없다. 혈청 칼륨 4.2 mEq/L 이며, 고감도 트로포닌 I 는 결과를 기다리고 있다. 12유도 심전도는 그림과 같다. 심전도 ",
+   "text": "순환기 심전도 판독 — 쉴 때 가슴이 조여 온 중년 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c 63세 여자가 2시간 전 집에서 쉬던 중 가슴이 조이는 통증이 20분 동안 생겼다가 지금은 약하게 남아 있어 응급실에 왔다. 고혈압과 2형 당뇨병이 있고 체질량지수는 30 kg/m² 이다. 혈압 148/88 mmHg, 맥박 72회/분(가끔 건너뜀), 산소포화도 97 % 이다. 폐는 깨끗하고 심잡음은 없다. 혈청 칼륨 4.2 mEq/L 이며, 고감도 트로포닌 I 는 결과를 기다리고 있다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 급성 섬유소성 심낭염 B. 심내막하 허혈 C. 전벽 ST 분절 상승 심근경색 D. 완전 좌각차단 E. 좌심실비대의 재분극 이상"
+  },
+  {
+   "id": "imaging-2026-0593",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 이뇨제를 시작한 뒤 생긴 리튬 중독의 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0593.md",
+   "snippet": "68세 여자가 사흘 전부터 손 떨림이 심해지고 말이 어눌하며 비틀거려 가족이 데려왔다. 양극성 장애로 15년째 탄산리튬을 같은 용량으로 먹고 있고, 3주 전 고혈압으로 하이드로클로로티아자이드를 시작하였다. 약을 더 먹은 적은 없다고 한다. 혈압 132/78 mmHg, 맥박 64회/분, 체온 36.8 ℃ 이다. 의식은 혼미하고 묻는 말에 늦게 대답하며, 굵은 떨림·근간대경련·실조성 보행이 있다. 혈청 리튬 4.1 mEq/L(치료",
+   "text": "정신과 정신 — 이뇨제를 시작한 뒤 생긴 리튬 중독의 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf 68세 여자가 사흘 전부터 손 떨림이 심해지고 말이 어눌하며 비틀거려 가족이 데려왔다. 양극성 장애로 15년째 탄산리튬을 같은 용량으로 먹고 있고, 3주 전 고혈압으로 하이드로클로로티아자이드를 시작하였다. 약을 더 먹은 적은 없다고 한다. 혈압 132/78 mmHg, 맥박 64회/분, 체온 36.8 ℃ 이다. 의식은 혼미하고 묻는 말에 늦게 대답하며, 굵은 떨림·근간대경련·실조성 보행이 있다. 혈청 리튬 4.1 mEq/L(치료 범위 0.6~1.2), 나트륨 136 mEq/L, 칼륨 4.0 mEq/L, 크레아티닌 2.1 mg/dL(6개월 전 1.0), 혈당 104 mg/dL 이다. 심전도는 동서맥 이외 특이 소견이 없다. 탄산리튬과 하이드로클로로티아자이드를 끊고 생리식염수를 투여하기 시작하였다. 다음 처치로 가장 적절한 것은? A. 아세타졸아마이드를 정맥 투여한다 B. 혈액투석을 한다 C. 생리식염수만 계속 투여하며 6시간마다 리튬 농도를 측정한다 D. 활성탄을 경구 투여한다 E. 다량의 폴리에틸렌글라이콜로 전장 세척을 한다"
+  },
+  {
+   "id": "imaging-2026-0592",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 유병률이 낮을 때 양성예측도",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0592.md",
+   "snippet": "A 58 year old man comes to the physician for a routine health maintenance examination. He feels well and has no symptoms. He asks about a new blood test for a cancer that his community plans to offer as a screening test to asymptomatic adul",
+   "text": "예방의학·역학 예방의학 — 유병률이 낮을 때 양성예측도 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf A 58 year old man comes to the physician for a routine health maintenance examination. He feels well and has no symptoms. He asks about a new blood test for a cancer that his community plans to offer as a screening test to asymptomatic adults aged 50 to 75 years. In a validation study, the test has a sensitivity of 90% and a specificity of 95%. The prevalence of the cancer in the target population is estimated to be 2%. He wants to know how likely he is to have the cancer if his test result is positive. Which of the following is closest to the positive predictive value of the test in this population? A. 27% B. 18% C. 47% D. 90% E. 95%"
+  },
+  {
+   "id": "imaging-2026-0591",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 저칼륨 고혈압의 선별검사",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0591.md",
+   "snippet": "44세 남자가 3년 전 진단된 고혈압이 세 가지 약(암로디핀, 로사르탄, 하이드로클로로티아자이드)을 충분히 써도 조절되지 않아 왔다. 최근 다리에 쥐가 자주 나고 기운이 없다. 두통·발한·두근거림의 발작은 없다. 혈압 162/98 mmHg, 맥박 72회/분 이고 체질량지수는 25 kg/m² 이다. 쿠싱 증후군을 시사하는 외모는 없다. 혈청 나트륨 143 mEq/L, 칼륨 2.9 mEq/L, 중탄산 31 mEq/L, 크레아티닌 ",
+   "text": "내분비 내분비 — 저칼륨 고혈압의 선별검사 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf 44세 남자가 3년 전 진단된 고혈압이 세 가지 약(암로디핀, 로사르탄, 하이드로클로로티아자이드)을 충분히 써도 조절되지 않아 왔다. 최근 다리에 쥐가 자주 나고 기운이 없다. 두통·발한·두근거림의 발작은 없다. 혈압 162/98 mmHg, 맥박 72회/분 이고 체질량지수는 25 kg/m² 이다. 쿠싱 증후군을 시사하는 외모는 없다. 혈청 나트륨 143 mEq/L, 칼륨 2.9 mEq/L, 중탄산 31 mEq/L, 크레아티닌 0.9 mg/dL 이다. 소변 칼륨 배설은 하루 45 mEq 이다. 수면무호흡 증상은 없다. 원인을 찾기 위한 첫 검사로 가장 적절한 것은? A. 부신 정맥 채혈 B. 혈장 알도스테론 농도와 레닌 활성의 비 C. 24시간 소변 메타네프린 D. 1 mg 덱사메타손 억제 검사 E. 신동맥 도플러 초음파"
+  },
+  {
+   "id": "imaging-2026-0590",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 사출성 구토 영아의 대사 이상과 첫 처치",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0590.md",
+   "snippet": "A 5 week old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is hungry immediately after vomiting. He was born at term and is formula fed. He has had fewer wet diapers. ",
+   "text": "소아과 소아 — 사출성 구토 영아의 대사 이상과 첫 처치 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf A 5 week old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is hungry immediately after vomiting. He was born at term and is formula fed. He has had fewer wet diapers. He appears thin; the anterior fontanelle is slightly sunken, and capillary refill time is 3 seconds. A firm, mobile, olive shaped mass is palpated in the epigastrium. Serum studies show sodium 133 mEq/L, potassium 3.0 mEq/L, chloride 86 mEq/L, bicarbonate 34 mEq/L, and glucose 82 mg/dL. Abdominal ultrasonography shows a pyloric muscle thickness of 5 mm. Which of the following is the most appropriate next step in management? A. Immediate pyloromyotomy B. Intravenous sodium bicarbonate C. Oral rehydration solution feeds every 2 hours D. Intravenous atropine E. Intravenous 0.9% saline bolus followed by dextrose saline with potassium chloride"
+  },
+  {
+   "id": "imaging-2026-0589",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 혈역학적으로 안정한 난관 임신의 치료 선택",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0589.md",
+   "snippet": "29세 여자가 마지막 월경 후 6주째에 이틀 전부터 생긴 왼쪽 아랫배의 약한 통증과 소량의 질출혈로 왔다. 2년 전 클라미디아 골반염을 치료받았다. 혈압 118/74 mmHg, 맥박 78회/분 이다. 복부는 부드럽고 반발압통이 없으며, 왼쪽 부속기에 경미한 압통이 있다. 혈청 β hCG 는 2,600 mIU/mL 이고 48시간 전 2,400 mIU/mL 였다. 질초음파에서 자궁 안에 임신낭이 없고, 왼쪽 부속기에 2.8 cm ",
+   "text": "산부인과 부인과 — 혈역학적으로 안정한 난관 임신의 치료 선택 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf 29세 여자가 마지막 월경 후 6주째에 이틀 전부터 생긴 왼쪽 아랫배의 약한 통증과 소량의 질출혈로 왔다. 2년 전 클라미디아 골반염을 치료받았다. 혈압 118/74 mmHg, 맥박 78회/분 이다. 복부는 부드럽고 반발압통이 없으며, 왼쪽 부속기에 경미한 압통이 있다. 혈청 β hCG 는 2,600 mIU/mL 이고 48시간 전 2,400 mIU/mL 였다. 질초음파에서 자궁 안에 임신낭이 없고, 왼쪽 부속기에 2.8 cm 종괴가 있으며 태아 심박동은 없고 골반 안 액체는 소량이다. 혈색소 12.8 g/dL, 혈청 크레아티닌과 간기능은 정상이다. 앞으로 임신을 원한다. 가장 적절한 치료는? A. 자궁 내막 흡인술을 한다 B. 개복하여 난관 문합술을 한다 C. 메토트렉세이트를 근육 주사한다 D. 복강경 난관절제술을 한다 E. 48시간 뒤 β hCG 를 다시 측정하며 기대요법을 한다"
+  },
+  {
+   "id": "imaging-2026-0588",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과 — 큰 신장 고형 종괴의 수술 방법",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0588.md",
+   "snippet": "A 58 year old man comes to the physician because of a dull right flank ache and a 5 kg (11 lb) weight loss over 3 months. He has smoked one pack of cigarettes daily for 35 years. His blood pressure is 142/86 mm Hg. A firm mass is palpable i",
+   "text": "외과 외과 — 큰 신장 고형 종괴의 수술 방법 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf A 58 year old man comes to the physician because of a dull right flank ache and a 5 kg (11 lb) weight loss over 3 months. He has smoked one pack of cigarettes daily for 35 years. His blood pressure is 142/86 mm Hg. A firm mass is palpable in the right upper quadrant. Hemoglobin is 11.9 g/dL, and serum creatinine is 0.9 mg/dL. Urinalysis shows 5 to 9 erythrocytes per high power field. A contrast enhanced CT scan of the abdomen is shown; the left kidney is normal, and a CT scan of the chest shows no metastases. Which of the following is the most appropriate next step in management? A. Radical nephrectomy B. Partial nephrectomy C. Percutaneous biopsy of the mass D. Active surveillance with repeat imaging in 3 months E. Percutaneous radiofrequency ablation"
+  },
+  {
+   "id": "imaging-2026-0587",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 저산소증으로 온 코로나19 폐렴 노인 여성의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0587.md",
+   "snippet": "67세 여자가 9일 전부터 열·마른기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 증상 첫날 시행한 신속항원검사에서 코로나19 양성이었다. 고혈압과 비만이 있다. 체온 38.1 ℃, 맥박 104회/분, 호흡 26회/분, 혈압 128/74 mmHg 이고, 실내 공기에서 산소포화도 89 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 백혈구 6,100/mm³(림프구 9 %), 프로칼시토닌 0.08 ng/mL, 사구체여과율 7",
+   "text": "응급·중환자 응급 — 저산소증으로 온 코로나19 폐렴 노인 여성의 치료 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf 67세 여자가 9일 전부터 열·마른기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 증상 첫날 시행한 신속항원검사에서 코로나19 양성이었다. 고혈압과 비만이 있다. 체온 38.1 ℃, 맥박 104회/분, 호흡 26회/분, 혈압 128/74 mmHg 이고, 실내 공기에서 산소포화도 89 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 백혈구 6,100/mm³(림프구 9 %), 프로칼시토닌 0.08 ng/mL, 사구체여과율 72 mL/min/1.73 m² 이다. 비강 캐뉼라 4 L/분으로 산소포화도가 94 % 가 되었다. 흉부 X선은 그림과 같다. 산소 치료와 함께 가장 적절한 약물 치료는? A. 반코마이신과 피페라실린 타조박탐을 정맥 투여한다 B. 하이드록시클로로퀸을 5일 동안 복용시킨다 C. 메틸프레드니솔론 1 g 을 사흘 동안 정맥 투여한다 D. 덱사메타손 6 mg 을 하루 한 번 투여한다 E. 니르마트렐비르 리토나비르를 5일 동안 복용시킨다"
+  },
+  {
+   "id": "imaging-2026-0586",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 1기 초산부의 태아심박동 감속",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0586.md",
+   "snippet": "A 23 year old woman, gravida 1, para 0, at 40 weeks' gestation is admitted in active labor. Her pregnancy has been uncomplicated. The membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear. Her temperature is 36.9°C (",
+   "text": "산부인과 산과 — 분만 1기 초산부의 태아심박동 감속 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf A 23 year old woman, gravida 1, para 0, at 40 weeks' gestation is admitted in active labor. Her pregnancy has been uncomplicated. The membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear. Her temperature is 36.9°C (98.4°F), pulse is 88/min, and blood pressure is 118/72 mm Hg. The cervix is 6 cm dilated. Continuous external fetal heart rate and uterine activity monitoring is started; a 10 minute segment is shown. Which of the following is the most likely cause of the fetal heart rate change that begins at 11 minutes? A. Maternal hypotension from regional anesthesia B. Fetal anemia C. Umbilical cord compression D. Fetal head compression E. Uteroplacental insufficiency"
+  },
+  {
+   "id": "imaging-2026-0585",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 두근거림으로 온 노인 남성의 12유도 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+   "confidence": "high",
+   "date": "2026-11-08",
+   "path": "content/imaging/2026/imaging-2026-0585.md",
+   "snippet": "65세 남자가 사흘 전부터 두근거림과 계단을 오를 때 숨이 차서 왔다. 고혈압과 만성폐쇄폐질환으로 약을 먹고 있다. 흉통과 실신은 없었다. 혈압 134/82 mmHg, 맥박 76회/분(불규칙), 호흡 18회/분, 산소포화도 95 % 이다. 혈청 칼륨 4.3 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 다소성 심방빈맥 B. 동부정맥 C. 가속 접합부 리듬 D.",
+   "text": "순환기 순환기 — 두근거림으로 온 노인 남성의 12유도 심전도 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf 65세 남자가 사흘 전부터 두근거림과 계단을 오를 때 숨이 차서 왔다. 고혈압과 만성폐쇄폐질환으로 약을 먹고 있다. 흉통과 실신은 없었다. 혈압 134/82 mmHg, 맥박 76회/분(불규칙), 호흡 18회/분, 산소포화도 95 % 이다. 혈청 칼륨 4.3 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 다소성 심방빈맥 B. 동부정맥 C. 가속 접합부 리듬 D. 심방조동 E. 심방세동"
   },
   {
    "id": "cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential",

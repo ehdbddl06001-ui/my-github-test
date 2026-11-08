@@ -2,6 +2,1593 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0596",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 맥이 건너뛴다고 느끼는 남성",
+  "type": "심전도 판독 — 맥이 건너뛴다고 느끼는 남성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-08",
+  "vignette": "A 63-year-old man comes to the physician because of a sensation that his heart is skipping beats for 2 weeks. He has had no chest pain, dyspnea, or syncope. He drinks 3 to 4 cups of coffee daily and recently started a decongestant for a cold. He takes no other medications. His pulse is 70/min and irregular, and blood pressure is 134/80 mm Hg. Cardiac examination shows no murmurs. Serum electrolyte concentrations and thyroid-stimulating hormone level are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Atrial bigeminy from premature atrial contractions",
+   "Second-degree atrioventricular block, Mobitz type I",
+   "Ventricular bigeminy",
+   "Atrial fibrillation",
+   "Sinus arrhythmia"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The rhythm strip shows beats in pairs: a sinus beat followed by an early beat, then a pause, repeating. The early beats have narrow QRS complexes identical to the sinus beats, so they are conducted through the normal His-Purkinje system and arise above the ventricles. The pause after each early beat is less than compensatory, as expected when a premature atrial beat resets the sinus node. This alternating pattern of normal and premature atrial beats is atrial bigeminy. Caffeine and sympathomimetic decongestants are common triggers.\n- 원리: <b>Why the early beat is narrow</b>: A premature atrial contraction arises from an ectopic atrial focus, so its impulse still passes through the AV node and the bundle branches, producing a QRS identical to sinus beats (unless it arrives so early that a bundle branch is refractory, causing aberrancy). A premature ventricular contraction bypasses the conduction system and spreads cell to cell, producing a wide, bizarre QRS with discordant ST-T.<br> <b>Why the pause is noncompensatory</b>: The ectopic atrial impulse enters and resets the sinus node, so the next sinus beat comes one sinus cycle after the premature beat. The interval surrounding the PAC is therefore shorter than two sinus cycles. A PVC usually does not reach the sinus node, so the sinus rhythm continues on schedule and the pause is fully compensatory.<br> <b>Why it is not Mobitz I</b>: Grouped beating also occurs in Wenckebach block, but there the PR interval lengthens progressively until a P wave is not conducted; every P wave is on time. In atrial bigeminy, the second beat of each pair is early, and no P wave is dropped.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Atrial bigeminy (answer)</th><th>Mobitz I AV block (closest distractor)</th></tr></thead><tbody> <tr><td>Grouping</td><td>Pairs: sinus beat + early beat</td><td>Groups ending in a nonconducted P wave</td></tr> <tr><td>P waves</td><td><b>Second P wave of the pair is premature</b> (often different shape)</td><td>All P waves on time at a regular PP interval</td></tr> <tr><td>PR interval</td><td>Roughly constant</td><td>Progressively lengthens before the dropped beat</td></tr> <tr><td>Pause</td><td>Less than compensatory, no dropped P</td><td>Contains a P wave not followed by QRS</td></tr> </tbody></table> Both produce grouped beating with pauses; look in the pause for a nonconducted P wave and check whether the second beat came early.\n- 오답 이유:\n  - (B) Mobitz type I block would be correct if the PR interval lengthened beat by beat until a regularly timed P wave failed to conduct.\n  - (C) Ventricular bigeminy would be correct if every other beat were a wide, bizarre QRS without a preceding P wave, followed by a fully compensatory pause.\n  - (D) Atrial fibrillation would be correct if the baseline showed fibrillatory waves with no discrete P waves and the RR intervals were irregularly irregular without pairing.\n  - (E) Sinus arrhythmia would be correct if every QRS were preceded by an identical sinus P wave and the RR intervals varied gradually with respiration.\n- 함정: Calling grouped beating Wenckebach — when the second beat of each pair comes early with a narrow QRS and no P wave is dropped, it is atrial bigeminy.\n- 학습목표: 동박동과 좁은 QRS 조기수축이 하나 걸러 반복되는 묶음 박동을 심방 이단맥으로 판독하고 Mobitz I 방실차단·심실 이단맥과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2204 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm strip shows beats in pairs: a sinus beat followed by an early beat, then a pause, repeating. The early beats have narrow QRS complexes identical to the sinus beats, so they are conducted through the normal His-Purkinje system and arise above the ventricles. The pause after each early beat is less than compensatory, as expected when a premature atrial beat resets the sinus node. This alternating pattern of normal and premature atrial beats is atrial bigeminy. Caffeine and sympathomimetic decongestants are common triggers."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the early beat is narrow</b>: A premature atrial contraction arises from an ectopic atrial focus, so its impulse still passes through the AV node and the bundle branches, producing a QRS identical to sinus beats (unless it arrives so early that a bundle branch is refractory, causing aberrancy). A premature ventricular contraction bypasses the conduction system and spreads cell to cell, producing a wide, bizarre QRS with discordant ST-T.<br> <b>Why the pause is noncompensatory</b>: The ectopic atrial impulse enters and resets the sinus node, so the next sinus beat comes one sinus cycle after the premature beat. The interval surrounding the PAC is therefore shorter than two sinus cycles. A PVC usually does not reach the sinus node, so the sinus rhythm continues on schedule and the pause is fully compensatory.<br> <b>Why it is not Mobitz I</b>: Grouped beating also occurs in Wenckebach block, but there the PR interval lengthens progressively until a P wave is not conducted; every P wave is on time. In atrial bigeminy, the second beat of each pair is early, and no P wave is dropped."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Atrial bigeminy (answer)</th><th>Mobitz I AV block (closest distractor)</th></tr></thead><tbody> <tr><td>Grouping</td><td>Pairs: sinus beat + early beat</td><td>Groups ending in a nonconducted P wave</td></tr> <tr><td>P waves</td><td><b>Second P wave of the pair is premature</b> (often different shape)</td><td>All P waves on time at a regular PP interval</td></tr> <tr><td>PR interval</td><td>Roughly constant</td><td>Progressively lengthens before the dropped beat</td></tr> <tr><td>Pause</td><td>Less than compensatory, no dropped P</td><td>Contains a P wave not followed by QRS</td></tr> </tbody></table> Both produce grouped beating with pauses; look in the pause for a nonconducted P wave and check whether the second beat came early."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Mobitz type I block would be correct if the PR interval lengthened beat by beat until a regularly timed P wave failed to conduct.\n(C) Ventricular bigeminy would be correct if every other beat were a wide, bizarre QRS without a preceding P wave, followed by a fully compensatory pause.\n(D) Atrial fibrillation would be correct if the baseline showed fibrillatory waves with no discrete P waves and the RR intervals were irregularly irregular without pairing.\n(E) Sinus arrhythmia would be correct if every QRS were preceded by an identical sinus P wave and the RR intervals varied gradually with respiration."
+   },
+   {
+    "k": "함정",
+    "v": "Calling grouped beating Wenckebach — when the second beat of each pair comes early with a narrow QRS and no P wave is dropped, it is atrial bigeminy."
+   },
+   {
+    "k": "학습목표",
+    "v": "동박동과 좁은 QRS 조기수축이 하나 걸러 반복되는 묶음 박동을 심방 이단맥으로 판독하고 Mobitz I 방실차단·심실 이단맥과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2204 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Pairs of a sinus beat and an early narrow-QRS beat with a less-than-compensatory pause and no dropped P wave are atrial bigeminy",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The second beat of each pair is premature and no regularly timed P wave is blocked",
+   "steps": 2,
+   "chain": [
+    "영상: beats in pairs — a sinus beat followed by an early beat with an identical narrow QRS, then a pause",
+    "Early narrow beat + no dropped P wave -> premature atrial contractions in bigeminy rather than Wenckebach or PVCs"
+   ],
+   "key": [
+    {
+     "item": "영상: early beats with narrow QRS complexes identical to the sinus beats",
+     "why": "Supraventricular origin of the premature beats",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: pairs of beats separated by a pause without a nonconducted P wave",
+     "why": "Lowers the likelihood of Mobitz I block",
+     "also": []
+    },
+    {
+     "item": "Serum electrolyte concentrations and thyroid-stimulating hormone level are within the reference ranges",
+     "why": "Lowers the likelihood of an electrolyte or thyroid cause",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has had no chest pain, dyspnea, or syncope",
+     "why": "Benign presentation — reassurance and trigger avoidance",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He drinks 3 to 4 cups of coffee daily and recently started a decongestant",
+     "why": "Common triggers that support but do not establish the reading",
+     "also": []
+    }
+   ],
+   "summary": "A sinus beat and an early beat with the same narrow QRS alternate, with no dropped P wave. This is atrial bigeminy from premature atrial contractions.",
+   "switch": {
+    "choice": "C",
+    "condition": "If every other beat were wide and bizarre without a preceding P wave and followed by a compensatory pause, ventricular bigeminy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0596.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02204",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2204"
+  },
+  "run_id": "20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0595",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 심박동기를 가진 고령 남성의 정기 진료",
+  "type": "심전도 처치 — 심박동기를 가진 고령 남성의 정기 진료",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-08",
+  "vignette": "87세 남자가 심박동기 정기 점검을 위해 순환기내과 외래에 왔다. 4년 전 실신과 완전방실차단으로 단방 심실 심박동기(VVI, 하한 심박수 70회/분)를 삽입하였다. 그 뒤 실신·어지럼은 없었고 일상생활에서 숨이 차지 않는다. 혈압 128/70 mmHg, 맥박 70회/분(규칙적) 이다. 심박동기 주머니 부위는 깨끗하고 다리 부종은 없다. 혈청 칼륨 4.4 mEq/L, 크레아티닌 1.1 mg/dL 이다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "관상동맥조영술을 한다",
+   "경피적 체외 심박조율을 시작한다",
+   "현재 설정을 유지하고 정기 추적한다",
+   "아트로핀을 정맥 주사한다",
+   "심박동기 발생기를 교체한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 좁은 조율 스파이크가 있고 바로 뒤에 넓은 QRS 가 따라오며(포착 성공), QRS 는 V1~V4 에서 깊은 음성, II·III·aVF 에서도 음성이다. 우심실 첨부에서 시작된 탈분극이 좌각차단 모양과 상방 축을 만드는 전형적인 우심실 조율이다. 심박수 약 70회/분으로 설정한 하한과 같고 규칙적이며, 스파이크 뒤 QRS 가 빠지거나(포착 실패) 자기 박동 직후 엉뚱한 스파이크(감지 실패)가 없다. 증상이 없으므로 심박동기는 정상 작동 중이고 처치 없이 정기 추적한다.\n- 원리: <b>왜 조율 박동은 좌각차단 모양인가</b>: 리드 끝은 우심실 첨부에 있다. 흥분이 히스-퍼킨예 전도계를 타지 않고 심근을 세포에서 세포로 천천히 퍼져 QRS 가 넓어진다. 오른쪽에서 왼쪽으로, 첨부에서 기저부로 퍼지므로 V1 은 깊은 음성(좌각차단 모양), 하벽 유도는 음성(상방 축)이 된다. 이 모양은 <b>리드 위치가 맞다는 증거</b>이기도 하다 — 우각차단 모양이 나오면 리드가 좌심실 쪽(관상정맥동·중격 천공)에 있는지 의심한다.<br> <b>왜 정상 작동이라 하나</b>: 심박동기 심전도는 세 가지를 본다. ① 포착 — 스파이크마다 QRS 가 따라오는가 ② 감지 — 자기 박동이 있으면 조율을 멈추는가(엉뚱한 자리 스파이크가 없는가) ③ 심박수 — 설정 하한과 맞는가. 셋 다 맞고 증상이 없으면 이상이 없다.<br> <b>왜 조율 박동에서 허혈을 판독하지 않나</b>: 조율 QRS 는 원래 ST-T 가 QRS 반대 방향으로 기운 이차 변화를 보여, 일반 허혈 기준을 쓸 수 없다(급성 흉통이 있을 때만 변형 Sgarbossa 기준을 쓴다).\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">정상 작동(정답)</th><th>발생기 교체가 필요한 경우(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>스파이크와 QRS</td><td><b>스파이크마다 넓은 QRS</b>가 따라옴</td><td>스파이크 뒤 QRS 가 빠짐(포착 실패)</td></tr> <tr><td>심박수</td><td>설정 하한(70회/분)과 같음</td><td>설정보다 느려짐 — 배터리 교체 지시(ERI) 시 심박수 저하</td></tr> <tr><td>증상</td><td>없음</td><td>어지럼·실신·피로</td></tr> </tbody></table> 배터리 고갈·리드 문제는 심전도에서 포착 실패나 심박수 저하로 드러나고, 기기 점검(프로그래머)으로 확인한 뒤 교체한다.\n- 오답 이유:\n  - ① 관상동맥조영술은 급성 흉통과 함께 조율 리듬에서 변형 Sgarbossa 기준(QRS 와 같은 방향의 ST 상승 1 mm 이상 등)을 만족할 때 정답이 된다.\n  - ② 경피적 체외 심박조율은 심박동기가 포착에 실패해 심한 서맥과 저혈압·실신이 생긴 응급 상황일 때 정답이 된다.\n  - ④ 아트로핀 정맥 주사는 심박동기가 없는 환자의 증상 있는 동서맥이나 결절 수준 방실차단일 때 정답이 되며, 조율 리듬에는 쓸 일이 없다.\n  - ⑤ 발생기 교체는 점검에서 배터리가 교체 지시 수준에 이르렀거나, 심전도에서 심박수가 설정보다 느려지고 포착 실패가 보일 때 정답이 된다.\n- 함정: 넓은 QRS 와 하벽 음성 QRS 를 보고 각차단·경색으로 놀라는 것 — 모든 QRS 앞에 스파이크가 있고 설정 심박수로 규칙적이면 정상 작동하는 우심실 조율이다.\n- 학습목표: 모든 QRS 앞의 조율 스파이크와 넓은 QRS·상방 축을 우심실 조율로 읽고, 포착·감지 실패가 없으면 정상 작동으로 판단해 처치 없이 추적한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 21572 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 좁은 조율 스파이크가 있고 바로 뒤에 넓은 QRS 가 따라오며(포착 성공), QRS 는 V1~V4 에서 깊은 음성, II·III·aVF 에서도 음성이다. 우심실 첨부에서 시작된 탈분극이 좌각차단 모양과 상방 축을 만드는 전형적인 우심실 조율이다. 심박수 약 70회/분으로 설정한 하한과 같고 규칙적이며, 스파이크 뒤 QRS 가 빠지거나(포착 실패) 자기 박동 직후 엉뚱한 스파이크(감지 실패)가 없다. 증상이 없으므로 심박동기는 정상 작동 중이고 처치 없이 정기 추적한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 조율 박동은 좌각차단 모양인가</b>: 리드 끝은 우심실 첨부에 있다. 흥분이 히스-퍼킨예 전도계를 타지 않고 심근을 세포에서 세포로 천천히 퍼져 QRS 가 넓어진다. 오른쪽에서 왼쪽으로, 첨부에서 기저부로 퍼지므로 V1 은 깊은 음성(좌각차단 모양), 하벽 유도는 음성(상방 축)이 된다. 이 모양은 <b>리드 위치가 맞다는 증거</b>이기도 하다 — 우각차단 모양이 나오면 리드가 좌심실 쪽(관상정맥동·중격 천공)에 있는지 의심한다.<br> <b>왜 정상 작동이라 하나</b>: 심박동기 심전도는 세 가지를 본다. ① 포착 — 스파이크마다 QRS 가 따라오는가 ② 감지 — 자기 박동이 있으면 조율을 멈추는가(엉뚱한 자리 스파이크가 없는가) ③ 심박수 — 설정 하한과 맞는가. 셋 다 맞고 증상이 없으면 이상이 없다.<br> <b>왜 조율 박동에서 허혈을 판독하지 않나</b>: 조율 QRS 는 원래 ST-T 가 QRS 반대 방향으로 기운 이차 변화를 보여, 일반 허혈 기준을 쓸 수 없다(급성 흉통이 있을 때만 변형 Sgarbossa 기준을 쓴다)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">정상 작동(정답)</th><th>발생기 교체가 필요한 경우(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>스파이크와 QRS</td><td><b>스파이크마다 넓은 QRS</b>가 따라옴</td><td>스파이크 뒤 QRS 가 빠짐(포착 실패)</td></tr> <tr><td>심박수</td><td>설정 하한(70회/분)과 같음</td><td>설정보다 느려짐 — 배터리 교체 지시(ERI) 시 심박수 저하</td></tr> <tr><td>증상</td><td>없음</td><td>어지럼·실신·피로</td></tr> </tbody></table> 배터리 고갈·리드 문제는 심전도에서 포착 실패나 심박수 저하로 드러나고, 기기 점검(프로그래머)으로 확인한 뒤 교체한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 관상동맥조영술은 급성 흉통과 함께 조율 리듬에서 변형 Sgarbossa 기준(QRS 와 같은 방향의 ST 상승 1 mm 이상 등)을 만족할 때 정답이 된다.\n② 경피적 체외 심박조율은 심박동기가 포착에 실패해 심한 서맥과 저혈압·실신이 생긴 응급 상황일 때 정답이 된다.\n④ 아트로핀 정맥 주사는 심박동기가 없는 환자의 증상 있는 동서맥이나 결절 수준 방실차단일 때 정답이 되며, 조율 리듬에는 쓸 일이 없다.\n⑤ 발생기 교체는 점검에서 배터리가 교체 지시 수준에 이르렀거나, 심전도에서 심박수가 설정보다 느려지고 포착 실패가 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "넓은 QRS 와 하벽 음성 QRS 를 보고 각차단·경색으로 놀라는 것 — 모든 QRS 앞에 스파이크가 있고 설정 심박수로 규칙적이면 정상 작동하는 우심실 조율이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "모든 QRS 앞의 조율 스파이크와 넓은 QRS·상방 축을 우심실 조율로 읽고, 포착·감지 실패가 없으면 정상 작동으로 판단해 처치 없이 추적한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 21572 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "모든 QRS 앞 스파이크와 포착이 확인되고 설정 심박수로 규칙적이며 증상이 없으면 심박동기는 정상 작동이므로 추적한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "포착 실패가 없고 심박수가 설정 하한 70회/분과 같다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞 조율 스파이크, 넓은 QRS, V1~V4·하벽 음성 → 우심실 첨부 조율",
+    "스파이크마다 QRS 포착 + 엉뚱한 스파이크 없음 + 약 70회/분 → 포착·감지·심박수 정상",
+    "증상 없음 → 설정 유지·정기 추적"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞의 조율 스파이크와 뒤따르는 넓은 QRS",
+     "why": "포착 성공",
+     "also": []
+    },
+    {
+     "item": "영상: V1~V4 깊은 음성, II·III·aVF 음성 QRS",
+     "why": "우심실 첨부 리드 위치의 정상 모양",
+     "also": []
+    },
+    {
+     "item": "하한 심박수 70회/분",
+     "why": "심전도 심박수와 일치 — 배터리 저하 신호 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심박동기 주머니 부위는 깨끗하고",
+     "why": "기기 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.4 mEq/L",
+     "why": "고칼륨혈증에 의한 포착 역치 상승 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "실신·어지럼은 없었고",
+     "why": "증상이 없어 처치가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "모든 QRS 앞에 스파이크가 있고 포착·감지 실패 없이 설정 심박수 70회/분으로 조율된다. 증상이 없으니 정상 작동이며 추적한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "스파이크 뒤 QRS 가 빠지고 심박수가 설정보다 느려지며 점검에서 배터리 교체 지시가 뜨면 발생기 교체"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0595.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/21000/#files-panel",
+   "asset_id": "PTBXL-21572",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 21572"
+  },
+  "run_id": "20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0594",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 쉴 때 가슴이 조여 온 중년 여성",
+  "type": "심전도 판독 — 쉴 때 가슴이 조여 온 중년 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-08",
+  "vignette": "63세 여자가 2시간 전 집에서 쉬던 중 가슴이 조이는 통증이 20분 동안 생겼다가 지금은 약하게 남아 있어 응급실에 왔다. 고혈압과 2형 당뇨병이 있고 체질량지수는 30 kg/m² 이다. 혈압 148/88 mmHg, 맥박 72회/분(가끔 건너뜀), 산소포화도 97 % 이다. 폐는 깨끗하고 심잡음은 없다. 혈청 칼륨 4.2 mEq/L 이며, 고감도 트로포닌 I 는 결과를 기다리고 있다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "급성 섬유소성 심낭염",
+   "심내막하 허혈",
+   "전벽 ST 분절 상승 심근경색",
+   "완전 좌각차단",
+   "좌심실비대의 재분극 이상"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 동리듬 약 70회/분 사이에 넓은 QRS 의 심실조기수축이 산발적으로 끼어 있다(맥이 가끔 건너뛰는 이유). 조기수축이 아닌 동박동에서 QRS 폭은 정상이고, V2~V6 에서 ST 분절이 기저선 아래로 내려가며 T파가 역위되어 있다. 어느 유도에도 ST 분절 상승은 없고 R파 전압이 비대 기준에 이르지 않는다. 휴식 흉통과 함께 여러 유도의 ST 하강·T파 역위는 심내막하 허혈 — 비 ST 분절 상승 급성 관동맥 증후군 — 의 변화이며, 트로포닌으로 불안정협심증과 심근경색을 가른다.\n- 원리: <b>왜 심내막하 허혈은 ST 가 내려가나</b>: 관상동맥은 심외막에서 들어와 심내막 쪽으로 가므로, 혈류가 줄면 가장 먼저 <b>심내막하층</b>이 허혈에 빠진다. 허혈 부위는 휴지기 막전위가 덜 음성이 되어 정상 부위와 전위차(손상 전류)가 생기는데, 이 전류가 심내막에서 심외막 방향의 반대로 흘러 그 부위를 바라보는 유도에서 ST 분절이 <b>내려간다</b>. 심근 전층이 막히면(경벽 허혈) 손상 전류가 바깥을 향해 ST 가 올라간다.<br> <b>왜 위치를 정하기 어렵나</b>: ST 상승은 막힌 혈관의 영역을 비교적 정확히 가리키지만, ST 하강은 넓은 심내막하가 동시에 허혈에 빠져 여러 유도에 퍼지므로 막힌 혈관을 정하지 못한다. 그래서 판독은 「어느 유도에서 얼마나」를 적고, 위험도는 트로포닌·GRACE 점수로 나눈다.<br> <b>왜 조기수축 박동에서는 판독하지 않나</b>: 심실조기수축은 탈분극 순서가 달라 원래 ST-T 가 반대 방향으로 기울어진다. ST 변화는 정상 전도된 동박동에서만 읽는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심내막하 허혈(정답)</th><th>ST 분절 상승 심근경색(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>ST 분절</td><td><b>하강</b>(수평·하향 경사), T파 역위</td><td>J점에서 이웃한 두 유도 이상 상승</td></tr> <tr><td>위치</td><td>여러 유도에 넓게 — 혈관 영역 특정이 어렵다</td><td>막힌 혈관 영역에 국한, 반대편 거울상 하강</td></tr> <tr><td>처치</td><td>항혈소판·항응고 후 위험도에 따라 조기 침습</td><td>즉시 재관류(일차 관상동맥중재술)</td></tr> </tbody></table> 같은 허혈이라도 ST 가 올라가는지 내려가는지가 재관류를 서두를지를 정한다. 단 V1~V3 만의 ST 하강은 후벽 ST 상승의 거울상일 수 있어 V7~V9 를 확인한다.\n- 오답 이유:\n  - ① 급성 심낭염은 자세에 따라 달라지는 흉통과 함께 여러 유도의 오목한 ST 상승과 PR 하강이 있을 때 정답이 된다.\n  - ③ 전벽 ST 분절 상승 심근경색은 V1~V4 중 이웃한 두 유도 이상에서 J점 ST 가 기준 이상 올라가고 하벽에 거울상 하강이 있을 때 정답이 된다.\n  - ④ 좌각차단은 동박동의 QRS 폭이 0.12초 이상이고 V1 깊은 QS·I·V6 넓고 끝이 갈라진 R파가 모든 박동에 있을 때 정답이 된다.\n  - ⑤ 좌심실비대의 strain 은 SV1+RV5(V6) 가 35 mm 이상처럼 전압 기준을 넘고 높은 R파 유도(V5·V6)에서 비대칭 ST 하강이 있을 때 정답이 된다.\n- 함정: ST 상승이 없으니 정상이라고 넘기는 것 — 휴식 흉통과 함께 전흉부 유도에서 ST 가 내려가고 T파가 뒤집히면 심내막하 허혈이다.\n- 학습목표: 흉통 환자의 전흉부 유도 ST 하강·T파 역위와 산발 심실조기수축을 읽어 심내막하 허혈로 판독하고 ST 분절 상승 심근경색·좌각차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16641 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 70회/분 사이에 넓은 QRS 의 심실조기수축이 산발적으로 끼어 있다(맥이 가끔 건너뛰는 이유). 조기수축이 아닌 동박동에서 QRS 폭은 정상이고, V2~V6 에서 ST 분절이 기저선 아래로 내려가며 T파가 역위되어 있다. 어느 유도에도 ST 분절 상승은 없고 R파 전압이 비대 기준에 이르지 않는다. 휴식 흉통과 함께 여러 유도의 ST 하강·T파 역위는 심내막하 허혈 — 비 ST 분절 상승 급성 관동맥 증후군 — 의 변화이며, 트로포닌으로 불안정협심증과 심근경색을 가른다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 심내막하 허혈은 ST 가 내려가나</b>: 관상동맥은 심외막에서 들어와 심내막 쪽으로 가므로, 혈류가 줄면 가장 먼저 <b>심내막하층</b>이 허혈에 빠진다. 허혈 부위는 휴지기 막전위가 덜 음성이 되어 정상 부위와 전위차(손상 전류)가 생기는데, 이 전류가 심내막에서 심외막 방향의 반대로 흘러 그 부위를 바라보는 유도에서 ST 분절이 <b>내려간다</b>. 심근 전층이 막히면(경벽 허혈) 손상 전류가 바깥을 향해 ST 가 올라간다.<br> <b>왜 위치를 정하기 어렵나</b>: ST 상승은 막힌 혈관의 영역을 비교적 정확히 가리키지만, ST 하강은 넓은 심내막하가 동시에 허혈에 빠져 여러 유도에 퍼지므로 막힌 혈관을 정하지 못한다. 그래서 판독은 「어느 유도에서 얼마나」를 적고, 위험도는 트로포닌·GRACE 점수로 나눈다.<br> <b>왜 조기수축 박동에서는 판독하지 않나</b>: 심실조기수축은 탈분극 순서가 달라 원래 ST-T 가 반대 방향으로 기울어진다. ST 변화는 정상 전도된 동박동에서만 읽는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심내막하 허혈(정답)</th><th>ST 분절 상승 심근경색(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>ST 분절</td><td><b>하강</b>(수평·하향 경사), T파 역위</td><td>J점에서 이웃한 두 유도 이상 상승</td></tr> <tr><td>위치</td><td>여러 유도에 넓게 — 혈관 영역 특정이 어렵다</td><td>막힌 혈관 영역에 국한, 반대편 거울상 하강</td></tr> <tr><td>처치</td><td>항혈소판·항응고 후 위험도에 따라 조기 침습</td><td>즉시 재관류(일차 관상동맥중재술)</td></tr> </tbody></table> 같은 허혈이라도 ST 가 올라가는지 내려가는지가 재관류를 서두를지를 정한다. 단 V1~V3 만의 ST 하강은 후벽 ST 상승의 거울상일 수 있어 V7~V9 를 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 급성 심낭염은 자세에 따라 달라지는 흉통과 함께 여러 유도의 오목한 ST 상승과 PR 하강이 있을 때 정답이 된다.\n③ 전벽 ST 분절 상승 심근경색은 V1~V4 중 이웃한 두 유도 이상에서 J점 ST 가 기준 이상 올라가고 하벽에 거울상 하강이 있을 때 정답이 된다.\n④ 좌각차단은 동박동의 QRS 폭이 0.12초 이상이고 V1 깊은 QS·I·V6 넓고 끝이 갈라진 R파가 모든 박동에 있을 때 정답이 된다.\n⑤ 좌심실비대의 strain 은 SV1+RV5(V6) 가 35 mm 이상처럼 전압 기준을 넘고 높은 R파 유도(V5·V6)에서 비대칭 ST 하강이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "ST 상승이 없으니 정상이라고 넘기는 것 — 휴식 흉통과 함께 전흉부 유도에서 ST 가 내려가고 T파가 뒤집히면 심내막하 허혈이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉통 환자의 전흉부 유도 ST 하강·T파 역위와 산발 심실조기수축을 읽어 심내막하 허혈로 판독하고 ST 분절 상승 심근경색·좌각차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16641 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "휴식 흉통과 함께 V2~V6 의 ST 하강·T파 역위가 있고 ST 상승이 없으면 심내막하 허혈이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "ST 분절이 올라가지 않고 내려가 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 동박동에서 V2~V6 ST 하강·T파 역위, 어느 유도에도 ST 상승 없음",
+    "휴식 흉통 + ST 하강 → 심내막하 허혈(비 ST 분절 상승 급성 관동맥 증후군)"
+   ],
+   "key": [
+    {
+     "item": "영상: V2~V6 의 ST 하강과 T파 역위",
+     "why": "심내막하 허혈의 변화",
+     "also": []
+    },
+    {
+     "item": "쉬던 중 가슴이 조이는 통증이 20분 동안",
+     "why": "휴식 협심증 — 급성 관동맥 증후군",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 어느 유도에도 ST 분절 상승 없음",
+     "why": "ST 분절 상승 심근경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.2 mEq/L",
+     "why": "전해질 이상에 의한 ST-T 변화 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "고감도 트로포닌 I 는 결과를 기다리고 있다",
+     "why": "불안정협심증과 심근경색은 트로포닌이 가른다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "영상: 넓은 QRS 의 심실조기수축 산발",
+     "why": "맥이 건너뛰는 이유 — ST 판독은 동박동에서 한다",
+     "also": []
+    },
+    {
+     "item": "맥박 72회/분(가끔 건너뜀)",
+     "why": "조기수축의 진찰 소견",
+     "also": []
+    }
+   ],
+   "summary": "휴식 흉통과 함께 전흉부 유도의 ST 하강·T파 역위가 있고 ST 상승은 없다. 심내막하 허혈이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "V1~V4 의 이웃한 유도에서 J점 ST 가 올라가 있으면 전벽 ST 분절 상승 심근경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0594.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16641",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16641"
+  },
+  "run_id": "20261108T202904Z_일일심전도_2026-11-09_3units_3q_d6d1899c",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0588",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "외과 — 큰 신장 고형 종괴의 수술 방법",
+  "type": "외과 — 큰 신장 고형 종괴의 수술 방법",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-08",
+  "vignette": "A 58-year-old man comes to the physician because of a dull right flank ache and a 5-kg (11-lb) weight loss over 3 months. He has smoked one pack of cigarettes daily for 35 years. His blood pressure is 142/86 mm Hg. A firm mass is palpable in the right upper quadrant. Hemoglobin is 11.9 g/dL, and serum creatinine is 0.9 mg/dL. Urinalysis shows 5 to 9 erythrocytes per high-power field. A contrast-enhanced CT scan of the abdomen is shown; the left kidney is normal, and a CT scan of the chest shows no metastases.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Radical nephrectomy",
+   "Partial nephrectomy",
+   "Percutaneous biopsy of the mass",
+   "Active surveillance with repeat imaging in 3 months",
+   "Percutaneous radiofrequency ablation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The CT shows a large (about 13 cm), heterogeneously enhancing solid mass arising from the right kidney, with central calcification and no macroscopic fat. An enhancing solid renal mass without fat in a smoker with flank pain, hematuria, and weight loss is renal cell carcinoma until proven otherwise. Because the tumor is far larger than 7 cm, the contralateral kidney is normal, and no metastases are seen, radical nephrectomy is the treatment of choice. Biopsy rarely changes management when imaging is this typical and the patient is a surgical candidate.\n- 원리: <b>Why imaging is enough</b>: More than 85% of solid, enhancing renal masses without macroscopic fat are renal cell carcinoma. Enhancement on contrast CT (an increase of more than 15–20 HU) indicates vascular tissue rather than cyst fluid, and the absence of fat argues against angiomyolipoma. In a fit patient with a typical mass, surgery provides both diagnosis and treatment, so biopsy is reserved for when the result would change management (suspected lymphoma, metastasis, or before ablation or surveillance).<br> <b>Why size decides radical versus partial</b>: Partial nephrectomy preserves nephrons and is preferred for T1a tumors (up to 4 cm) and often T1b (4–7 cm) when technically feasible, because chronic kidney disease raises cardiovascular mortality. Tumors larger than 7 cm (T2 or beyond) usually replace much of the kidney and abut the hilum, so partial resection risks positive margins without saving meaningful function; with a normal opposite kidney, radical nephrectomy is standard.<br> <b>Why ablation and surveillance are not used here</b>: They are options for small (under 3–4 cm) masses in elderly or frail patients, not for a symptomatic 13-cm tumor.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Radical nephrectomy (answer)</th><th>Partial nephrectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Tumor size</td><td><b>Larger than 7 cm</b> (T2) or central/hilar</td><td>T1a (up to 4 cm), often T1b (4–7 cm)</td></tr> <tr><td>Contralateral kidney</td><td>Normal</td><td>Absent, diseased, or bilateral tumors (imperative indication)</td></tr> <tr><td>Goal</td><td>Complete oncologic removal</td><td>Cancer control while preserving nephrons</td></tr> </tbody></table> Both remove the tumor; size, location, and the function of the other kidney decide how much kidney is taken.\n- 오답 이유:\n  - (B) Partial nephrectomy would be correct for a tumor of 4 cm or less, or for a larger tumor in a solitary kidney or with bilateral tumors.\n  - (C) Percutaneous biopsy would be correct if lymphoma or metastasis were suspected, or before ablation or surveillance of a small renal mass.\n  - (D) Active surveillance would be correct for a small renal mass under 3 cm in an elderly patient with major comorbidities and limited life expectancy.\n  - (E) Radiofrequency ablation would be correct for a mass under 3 cm in a patient who is a poor surgical candidate, after biopsy confirmation.\n- 함정: Choosing partial nephrectomy because nephron sparing is generally preferred — at 13 cm with a normal opposite kidney, the kidney is removed whole.\n- 학습목표: 7 cm 를 크게 넘는 신장 고형 종괴는 신세포암으로 보고 근치적 신장절제술을 하며, 부분절제·생검·감시의 적응과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00139 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a large (about 13 cm), heterogeneously enhancing solid mass arising from the right kidney, with central calcification and no macroscopic fat. An enhancing solid renal mass without fat in a smoker with flank pain, hematuria, and weight loss is renal cell carcinoma until proven otherwise. Because the tumor is far larger than 7 cm, the contralateral kidney is normal, and no metastases are seen, radical nephrectomy is the treatment of choice. Biopsy rarely changes management when imaging is this typical and the patient is a surgical candidate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why imaging is enough</b>: More than 85% of solid, enhancing renal masses without macroscopic fat are renal cell carcinoma. Enhancement on contrast CT (an increase of more than 15–20 HU) indicates vascular tissue rather than cyst fluid, and the absence of fat argues against angiomyolipoma. In a fit patient with a typical mass, surgery provides both diagnosis and treatment, so biopsy is reserved for when the result would change management (suspected lymphoma, metastasis, or before ablation or surveillance).<br> <b>Why size decides radical versus partial</b>: Partial nephrectomy preserves nephrons and is preferred for T1a tumors (up to 4 cm) and often T1b (4–7 cm) when technically feasible, because chronic kidney disease raises cardiovascular mortality. Tumors larger than 7 cm (T2 or beyond) usually replace much of the kidney and abut the hilum, so partial resection risks positive margins without saving meaningful function; with a normal opposite kidney, radical nephrectomy is standard.<br> <b>Why ablation and surveillance are not used here</b>: They are options for small (under 3–4 cm) masses in elderly or frail patients, not for a symptomatic 13-cm tumor."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Radical nephrectomy (answer)</th><th>Partial nephrectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Tumor size</td><td><b>Larger than 7 cm</b> (T2) or central/hilar</td><td>T1a (up to 4 cm), often T1b (4–7 cm)</td></tr> <tr><td>Contralateral kidney</td><td>Normal</td><td>Absent, diseased, or bilateral tumors (imperative indication)</td></tr> <tr><td>Goal</td><td>Complete oncologic removal</td><td>Cancer control while preserving nephrons</td></tr> </tbody></table> Both remove the tumor; size, location, and the function of the other kidney decide how much kidney is taken."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Partial nephrectomy would be correct for a tumor of 4 cm or less, or for a larger tumor in a solitary kidney or with bilateral tumors.\n(C) Percutaneous biopsy would be correct if lymphoma or metastasis were suspected, or before ablation or surveillance of a small renal mass.\n(D) Active surveillance would be correct for a small renal mass under 3 cm in an elderly patient with major comorbidities and limited life expectancy.\n(E) Radiofrequency ablation would be correct for a mass under 3 cm in a patient who is a poor surgical candidate, after biopsy confirmation."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing partial nephrectomy because nephron sparing is generally preferred — at 13 cm with a normal opposite kidney, the kidney is removed whole."
+   },
+   {
+    "k": "학습목표",
+    "v": "7 cm 를 크게 넘는 신장 고형 종괴는 신세포암으로 보고 근치적 신장절제술을 하며, 부분절제·생검·감시의 적응과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00139 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "A 13-cm enhancing solid renal mass with a normal contralateral kidney and no metastases is treated by radical nephrectomy",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The tumor is far larger than 7 cm and the opposite kidney is normal",
+   "steps": 2,
+   "chain": [
+    "영상: about 13-cm heterogeneously enhancing solid mass from the right kidney without fat -> renal cell carcinoma",
+    "Larger than 7 cm + normal left kidney + no metastases -> radical nephrectomy"
+   ],
+   "key": [
+    {
+     "item": "영상: about 13-cm heterogeneously enhancing solid right renal mass without fat",
+     "why": "Typical renal cell carcinoma, T2 by size",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "the left kidney is normal",
+     "why": "No need for nephron sparing",
+     "also": []
+    },
+    {
+     "item": "a CT scan of the chest shows no metastases",
+     "why": "Localized disease — surgery is curative in intent",
+     "also": []
+    },
+    {
+     "item": "serum creatinine is 0.9 mg/dL",
+     "why": "Normal renal function tolerates removal of one kidney",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has smoked one pack of cigarettes daily for 35 years",
+     "why": "A risk factor that supports but does not change management",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin is 11.9 g/dL",
+     "why": "Mild anemia from the tumor — does not change the operation",
+     "also": []
+    }
+   ],
+   "summary": "A 13-cm enhancing solid mass of the right kidney is renal cell carcinoma. With a normal left kidney and no metastases, radical nephrectomy is performed.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the mass were 3.5 cm, or the patient had a solitary kidney, partial nephrectomy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0588.png",
+   "caption": "Contrast-enhanced abdominal CT, arterial phase, single axial image, soft-tissue window, standard display orientation (TCIA, CC BY 3.0; no cropping, adjustment, or segmentation overlay)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.540203921740718442224676507394",
+   "asset_id": "TCIA-KITS-00139_59807104",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00139"
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0587",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "응급 — 저산소증으로 온 코로나19 폐렴 노인 여성의 치료",
+  "type": "응급 — 저산소증으로 온 코로나19 폐렴 노인 여성의 치료",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-08",
+  "vignette": "67세 여자가 9일 전부터 열·마른기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 증상 첫날 시행한 신속항원검사에서 코로나19 양성이었다. 고혈압과 비만이 있다. 체온 38.1 ℃, 맥박 104회/분, 호흡 26회/분, 혈압 128/74 mmHg 이고, 실내 공기에서 산소포화도 89 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 백혈구 6,100/mm³(림프구 9 %), 프로칼시토닌 0.08 ng/mL, 사구체여과율 72 mL/min/1.73 m² 이다. 비강 캐뉼라 4 L/분으로 산소포화도가 94 % 가 되었다. 흉부 X선은 그림과 같다.",
+  "question": "산소 치료와 함께 가장 적절한 약물 치료는?",
+  "options": [
+   "반코마이신과 피페라실린-타조박탐을 정맥 투여한다",
+   "하이드록시클로로퀸을 5일 동안 복용시킨다",
+   "메틸프레드니솔론 1 g 을 사흘 동안 정맥 투여한다",
+   "덱사메타손 6 mg 을 하루 한 번 투여한다",
+   "니르마트렐비르-리토나비르를 5일 동안 복용시킨다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 왼쪽 중·하폐야가 우세한 경계 불분명한 음영과 오른쪽 폐기저부의 옅은 음영이 보이고 엽성 경화·흉수는 없다. 증상 9일째에 실내 공기 산소포화도 89 % 로 산소가 필요한 코로나19 폐렴이다. 이 시기는 바이러스 증식보다 염증 반응이 폐 손상을 이끄므로, 산소가 필요한 입원 환자에게는 덱사메타손 6 mg 을 하루 한 번(최대 10일) 투여하면 사망률이 줄어든다. 프로칼시토닌이 낮아 세균 중복감염 근거는 약하다.\n- 원리: <b>왜 시기에 따라 약이 다른가</b>: 코로나19는 첫 주에 상기도·폐에서 바이러스가 많이 증식하고(이때 항바이러스제가 듣는다), 둘째 주에는 바이러스량이 줄면서 사이토카인·보체·응고 활성이 폐포 손상을 이끈다. <b>산소가 필요해지는 때</b>가 대개 이 염증기이므로, 면역을 누르는 치료가 이득이 된다.<br> <b>왜 덱사메타손 6 mg 인가</b>: 대규모 무작위 시험(RECOVERY)에서 덱사메타손 6 mg 10일은 산소 보충·기계환기 환자의 28일 사망률을 낮췄지만, 산소가 필요 없는 환자에서는 이득이 없고 해로울 수 있었다. 효과는 용량보다 「산소가 필요한 염증기」라는 조건에 달려 있다.<br> <b>왜 경구 항바이러스제가 아닌가</b>: 니르마트렐비르-리토나비르는 증상 5일 안에 시작한 <b>산소가 필요 없는 외래 고위험군</b>에서 입원을 줄이는 약이다. 이미 저산소증으로 입원한 증상 9일째 환자에게는 적응이 아니다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">덱사메타손(정답)</th><th>니르마트렐비르-리토나비르(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>산소가 필요한 입원 환자</b></td><td>산소가 필요 없는 외래 고위험군</td></tr> <tr><td>시기</td><td>염증기(대개 증상 둘째 주)</td><td>증상 5일 안</td></tr> <tr><td>목표</td><td>염증성 폐 손상 억제 → 사망 감소</td><td>바이러스 증식 억제 → 입원 예방</td></tr> </tbody></table> 같은 코로나19라도 산소포화도(94 % 이하로 산소 필요 여부)와 증상 일수가 약을 정한다.\n- 오답 이유:\n  - ① 반코마이신과 피페라실린-타조박탐은 엽성 경화·화농성 객담·프로칼시토닌 상승으로 세균성 원내 폐렴이나 패혈쇼크가 의심될 때 정답이 된다.\n  - ② 하이드록시클로로퀸은 코로나19에서 이득이 없어 쓰지 않고, 전신홍반루푸스·류마티스관절염을 치료할 때 정답이 된다.\n  - ③ 메틸프레드니솔론 1 g 사흘 정맥 투여(펄스)는 루푸스신염이나 혈관염의 급성 악화처럼 고용량 펄스가 필요한 질환일 때 정답이 된다.\n  - ⑤ 니르마트렐비르-리토나비르는 증상 5일 안이고 산소가 필요 없는 고위험 외래 환자(고령·비만 등)일 때 정답이 된다.\n- 함정: 코로나19 양성이면 항바이러스제부터 떠올리는 것 — 증상 9일째 산소가 필요한 염증기에는 덱사메타손이 사망을 줄인다.\n- 학습목표: 산소 보충이 필요한 코로나19 폐렴에서 덱사메타손을 투여하고, 외래 고위험군의 경구 항바이러스제 적응과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …94387055 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 왼쪽 중·하폐야가 우세한 경계 불분명한 음영과 오른쪽 폐기저부의 옅은 음영이 보이고 엽성 경화·흉수는 없다. 증상 9일째에 실내 공기 산소포화도 89 % 로 산소가 필요한 코로나19 폐렴이다. 이 시기는 바이러스 증식보다 염증 반응이 폐 손상을 이끄므로, 산소가 필요한 입원 환자에게는 덱사메타손 6 mg 을 하루 한 번(최대 10일) 투여하면 사망률이 줄어든다. 프로칼시토닌이 낮아 세균 중복감염 근거는 약하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 시기에 따라 약이 다른가</b>: 코로나19는 첫 주에 상기도·폐에서 바이러스가 많이 증식하고(이때 항바이러스제가 듣는다), 둘째 주에는 바이러스량이 줄면서 사이토카인·보체·응고 활성이 폐포 손상을 이끈다. <b>산소가 필요해지는 때</b>가 대개 이 염증기이므로, 면역을 누르는 치료가 이득이 된다.<br> <b>왜 덱사메타손 6 mg 인가</b>: 대규모 무작위 시험(RECOVERY)에서 덱사메타손 6 mg 10일은 산소 보충·기계환기 환자의 28일 사망률을 낮췄지만, 산소가 필요 없는 환자에서는 이득이 없고 해로울 수 있었다. 효과는 용량보다 「산소가 필요한 염증기」라는 조건에 달려 있다.<br> <b>왜 경구 항바이러스제가 아닌가</b>: 니르마트렐비르-리토나비르는 증상 5일 안에 시작한 <b>산소가 필요 없는 외래 고위험군</b>에서 입원을 줄이는 약이다. 이미 저산소증으로 입원한 증상 9일째 환자에게는 적응이 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">덱사메타손(정답)</th><th>니르마트렐비르-리토나비르(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>산소가 필요한 입원 환자</b></td><td>산소가 필요 없는 외래 고위험군</td></tr> <tr><td>시기</td><td>염증기(대개 증상 둘째 주)</td><td>증상 5일 안</td></tr> <tr><td>목표</td><td>염증성 폐 손상 억제 → 사망 감소</td><td>바이러스 증식 억제 → 입원 예방</td></tr> </tbody></table> 같은 코로나19라도 산소포화도(94 % 이하로 산소 필요 여부)와 증상 일수가 약을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 반코마이신과 피페라실린-타조박탐은 엽성 경화·화농성 객담·프로칼시토닌 상승으로 세균성 원내 폐렴이나 패혈쇼크가 의심될 때 정답이 된다.\n② 하이드록시클로로퀸은 코로나19에서 이득이 없어 쓰지 않고, 전신홍반루푸스·류마티스관절염을 치료할 때 정답이 된다.\n③ 메틸프레드니솔론 1 g 사흘 정맥 투여(펄스)는 루푸스신염이나 혈관염의 급성 악화처럼 고용량 펄스가 필요한 질환일 때 정답이 된다.\n⑤ 니르마트렐비르-리토나비르는 증상 5일 안이고 산소가 필요 없는 고위험 외래 환자(고령·비만 등)일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "코로나19 양성이면 항바이러스제부터 떠올리는 것 — 증상 9일째 산소가 필요한 염증기에는 덱사메타손이 사망을 줄인다."
+   },
+   {
+    "k": "학습목표",
+    "v": "산소 보충이 필요한 코로나19 폐렴에서 덱사메타손을 투여하고, 외래 고위험군의 경구 항바이러스제 적응과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …94387055 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "증상 9일째 산소가 필요한 코로나19 폐렴은 염증기이므로 덱사메타손을 투여한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "실내 공기 산소포화도 89 % 로 산소가 필요하고 증상 5일이 지났다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 우세 양쪽 하폐야의 경계 불분명한 음영 + 실내 공기 산소포화도 89 % → 산소가 필요한 코로나19 폐렴",
+    "증상 9일째 염증기·산소 필요 → 경구 항바이러스제가 아닌 덱사메타손"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 중·하폐야 우세의 경계 불분명한 음영, 엽성 경화 없음",
+     "why": "바이러스 폐렴 양상",
+     "also": []
+    },
+    {
+     "item": "실내 공기에서 산소포화도 89 % 이다",
+     "why": "산소가 필요한 중증 — 덱사메타손 적응",
+     "also": []
+    },
+    {
+     "item": "9일 전부터",
+     "why": "증상 5일이 지나 경구 항바이러스제 적응 시기를 넘었다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로칼시토닌 0.08 ng/mL",
+     "why": "세균 중복감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압과 비만이 있다",
+     "why": "중증화 위험인자 — 오늘 치료 선택은 산소 필요 여부가 정한다",
+     "also": []
+    },
+    {
+     "item": "사구체여과율 72 mL/min/1.73 m²",
+     "why": "신기능 — 이 약 선택에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "증상 9일째 산소가 필요한 코로나19 폐렴이다. 염증기이므로 산소와 함께 덱사메타손 6 mg 을 준다.",
+   "switch": {
+    "choice": "E",
+    "condition": "증상 3일째이고 산소포화도가 정상인 고위험 외래 환자라면 니르마트렐비르-리토나비르"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0587.png",
+   "caption": "이동식 전후면 흉부 X선, 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·윈도우 조정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1872422609734061818944294387055",
+   "asset_id": "TCIA-COVID19_AR-79256765912393",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …94387055"
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0586",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "산과 — 분만 1기 초산부의 태아심박동 감속",
+  "type": "산과 — 분만 1기 초산부의 태아심박동 감속",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-08",
+  "vignette": "A 23-year-old woman, gravida 1, para 0, at 40 weeks' gestation is admitted in active labor. Her pregnancy has been uncomplicated. The membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear. Her temperature is 36.9°C (98.4°F), pulse is 88/min, and blood pressure is 118/72 mm Hg. The cervix is 6 cm dilated. Continuous external fetal heart rate and uterine activity monitoring is started; a 10-minute segment is shown.",
+  "question": "Which of the following is the most likely cause of the fetal heart rate change that begins at 11 minutes?",
+  "options": [
+   "Maternal hypotension from regional anesthesia",
+   "Fetal anemia",
+   "Umbilical cord compression",
+   "Fetal head compression",
+   "Uteroplacental insufficiency"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The baseline is about 125/min with moderate variability. At 11 minutes, with the onset of a contraction, the fetal heart rate falls abruptly from about 150/min to 105/min, reaching the nadir within 30 seconds, and recovers about a minute later. An abrupt decrease of at least 15/min lasting 15 seconds to 2 minutes is a variable deceleration, which reflects umbilical cord compression. Ruptured membranes, which reduce the fluid cushion around the cord, make cord compression more likely.\n- 원리: <b>Why cord compression gives an abrupt drop</b>: Squeezing the umbilical cord first occludes the thin-walled vein (reducing return and causing a brief acceleration, the \"shoulder\") and then the arteries. Sudden arterial occlusion raises fetal systemic resistance and blood pressure, triggering a baroreceptor-mediated vagal reflex that slows the heart within seconds. When the cord is released the rate returns just as fast. The speed of onset — less than 30 seconds to the nadir — is the defining feature.<br> <b>Why the other decelerations look different</b>: Head compression raises intracranial pressure and causes a gradual, vagally mediated decrease that mirrors the contraction (early deceleration). Uteroplacental insufficiency lowers fetal oxygen tension only after the contraction has reduced intervillous flow, so the gradual decrease begins late and its nadir follows the contraction peak (late deceleration).<br> <b>Why it matters</b>: Occasional variable decelerations with moderate variability are common and are managed with maternal repositioning; recurrent ones, especially with lost variability, warrant amnioinfusion or expedited delivery.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Variable deceleration (answer)</th><th>Early deceleration (closest distractor)</th></tr></thead><tbody> <tr><td>Onset to nadir</td><td><b>Abrupt, under 30 seconds</b></td><td>Gradual, 30 seconds or longer</td></tr> <tr><td>Timing</td><td>Variable relation to contractions</td><td>Nadir coincides with the contraction peak (mirror image)</td></tr> <tr><td>Mechanism</td><td>Umbilical cord compression</td><td>Fetal head compression</td></tr> <tr><td>Significance</td><td>Benign if occasional with moderate variability</td><td>Benign, no intervention</td></tr> </tbody></table> Both occur with contractions; the shape of the descent — a sharp V or U versus a smooth mirror of the contraction — separates them.\n- 오답 이유:\n  - (A) Maternal hypotension would be correct if a prolonged deceleration followed epidural placement with a fall in maternal blood pressure.\n  - (B) Fetal anemia would be correct if the tracing showed a sinusoidal pattern of smooth undulations at 3 to 5 cycles per minute.\n  - (D) Fetal head compression would be correct if the decrease were gradual and mirrored the contraction, with its nadir at the contraction peak.\n  - (E) Uteroplacental insufficiency would be correct if a gradual decrease began after the contraction started and its nadir came after the contraction peak.\n- 함정: Calling any contraction-associated deceleration early or late — the abrupt fall to the nadir within 30 seconds makes it variable, from cord compression.\n- 학습목표: 자궁수축과 함께 30초 안에 급히 떨어졌다가 빠르게 회복하는 태아심박동 감속을 변동성 감속으로 읽고 제대 압박을 원인으로 판단한다\n- 근거·출처: Macones GA, Hankins GD, Spong CY, et al. The 2008 National Institute of Child Health and Human Development workshop report on electronic fetal monitoring. Obstet Gynecol. 2008;112(3):661-666 · Cunningham FG, Leveno KJ, Dashe JS, et al., eds. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 24: Intrapartum Assessment\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1466 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The baseline is about 125/min with moderate variability. At 11 minutes, with the onset of a contraction, the fetal heart rate falls abruptly from about 150/min to 105/min, reaching the nadir within 30 seconds, and recovers about a minute later. An abrupt decrease of at least 15/min lasting 15 seconds to 2 minutes is a variable deceleration, which reflects umbilical cord compression. Ruptured membranes, which reduce the fluid cushion around the cord, make cord compression more likely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why cord compression gives an abrupt drop</b>: Squeezing the umbilical cord first occludes the thin-walled vein (reducing return and causing a brief acceleration, the \"shoulder\") and then the arteries. Sudden arterial occlusion raises fetal systemic resistance and blood pressure, triggering a baroreceptor-mediated vagal reflex that slows the heart within seconds. When the cord is released the rate returns just as fast. The speed of onset — less than 30 seconds to the nadir — is the defining feature.<br> <b>Why the other decelerations look different</b>: Head compression raises intracranial pressure and causes a gradual, vagally mediated decrease that mirrors the contraction (early deceleration). Uteroplacental insufficiency lowers fetal oxygen tension only after the contraction has reduced intervillous flow, so the gradual decrease begins late and its nadir follows the contraction peak (late deceleration).<br> <b>Why it matters</b>: Occasional variable decelerations with moderate variability are common and are managed with maternal repositioning; recurrent ones, especially with lost variability, warrant amnioinfusion or expedited delivery."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Variable deceleration (answer)</th><th>Early deceleration (closest distractor)</th></tr></thead><tbody> <tr><td>Onset to nadir</td><td><b>Abrupt, under 30 seconds</b></td><td>Gradual, 30 seconds or longer</td></tr> <tr><td>Timing</td><td>Variable relation to contractions</td><td>Nadir coincides with the contraction peak (mirror image)</td></tr> <tr><td>Mechanism</td><td>Umbilical cord compression</td><td>Fetal head compression</td></tr> <tr><td>Significance</td><td>Benign if occasional with moderate variability</td><td>Benign, no intervention</td></tr> </tbody></table> Both occur with contractions; the shape of the descent — a sharp V or U versus a smooth mirror of the contraction — separates them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Maternal hypotension would be correct if a prolonged deceleration followed epidural placement with a fall in maternal blood pressure.\n(B) Fetal anemia would be correct if the tracing showed a sinusoidal pattern of smooth undulations at 3 to 5 cycles per minute.\n(D) Fetal head compression would be correct if the decrease were gradual and mirrored the contraction, with its nadir at the contraction peak.\n(E) Uteroplacental insufficiency would be correct if a gradual decrease began after the contraction started and its nadir came after the contraction peak."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any contraction-associated deceleration early or late — the abrupt fall to the nadir within 30 seconds makes it variable, from cord compression."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁수축과 함께 30초 안에 급히 떨어졌다가 빠르게 회복하는 태아심박동 감속을 변동성 감속으로 읽고 제대 압박을 원인으로 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Macones GA, Hankins GD, Spong CY, et al. The 2008 National Institute of Child Health and Human Development workshop report on electronic fetal monitoring. Obstet Gynecol. 2008;112(3):661-666 · Cunningham FG, Leveno KJ, Dashe JS, et al., eds. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 24: Intrapartum Assessment ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1466 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "An abrupt fetal heart rate fall reaching the nadir within 30 seconds and recovering quickly is a variable deceleration from cord compression",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "The descent is abrupt rather than a gradual mirror image of the contraction",
+   "steps": 2,
+   "chain": [
+    "영상: at 11 minutes the FHR falls from about 150/min to 105/min within 30 seconds and recovers in about a minute",
+    "Abrupt onset -> variable deceleration -> umbilical cord compression"
+   ],
+   "key": [
+    {
+     "item": "영상: abrupt FHR fall to 105/min within 30 seconds with quick recovery",
+     "why": "Defines a variable deceleration",
+     "also": []
+    },
+    {
+     "item": "The membranes ruptured spontaneously 3 hours ago",
+     "why": "Less amniotic fluid around the cord favors compression",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "blood pressure is 118/72 mm Hg",
+     "why": "Lowers the likelihood of a deceleration from maternal hypotension",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "영상: baseline about 125/min with moderate variability",
+     "why": "Indicates no current acidemia, so the tracing is not category III",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "the amniotic fluid is clear",
+     "why": "No meconium — does not change the mechanism",
+     "also": []
+    }
+   ],
+   "summary": "With a contraction, the fetal heart rate drops abruptly within 30 seconds and recovers quickly. This variable deceleration reflects umbilical cord compression.",
+   "switch": {
+    "choice": "E",
+    "condition": "If a gradual decrease began after each contraction started with its nadir after the contraction peak, uteroplacental insufficiency (late deceleration)"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0586.png",
+   "caption": "Fetal heart rate (top) and uterine activity (bottom) during labor, a 10-minute segment, bold vertical lines = 1 min (PhysioNet CTU-UHB, ODC-BY 1.0; 4 Hz raw data, no smoothing; gaps are signal loss)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1466_10m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1466"
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0585",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "순환기 — 두근거림으로 온 노인 남성의 12유도 심전도",
+  "type": "순환기 — 두근거림으로 온 노인 남성의 12유도 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-08",
+  "vignette": "65세 남자가 사흘 전부터 두근거림과 계단을 오를 때 숨이 차서 왔다. 고혈압과 만성폐쇄폐질환으로 약을 먹고 있다. 흉통과 실신은 없었다. 혈압 134/82 mmHg, 맥박 76회/분(불규칙), 호흡 18회/분, 산소포화도 95 % 이다. 혈청 칼륨 4.3 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "다소성 심방빈맥",
+   "동부정맥",
+   "가속 접합부 리듬",
+   "심방조동",
+   "심방세동"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: II·III·aVF 의 기저선이 평탄한 곳 없이 일정한 간격의 톱니 모양 음성 파(조동파)로 채워져 있고, 리듬 스트립에서도 조동파는 규칙적인데 QRS 만 2:1·3:1·4:1 로 바뀌며 불규칙하게 따라온다. QRS 는 좁다. 규칙적인 심방 활동과 변동 방실전도의 조합은 심방조동이다. 심방세동이라면 기저선이 불규칙한 잔물결이고 일정한 주기의 파가 없다.\n- 원리: <b>왜 톱니 모양인가</b>: 전형적 심방조동은 우심방 안에서 삼첨판륜을 따라 도는 큰 재진입 회로다. 회로가 하대정맥과 삼첨판 사이의 협부(cavotricuspid isthmus)를 지나므로 흥분이 심방중격을 아래에서 위로 올라가고, 그래서 하벽 유도(II·III·aVF)에 <b>음성 톱니 파</b>가 분당 약 300회로 끊임없이 나타난다. 등전위 기저선이 없는 것이 특징이다.<br> <b>왜 맥이 불규칙할 수 있나</b>: 방실결절은 300회/분을 다 통과시키지 못해 보통 2:1(심실 약 150회/분)로 전도한다. 전도비가 2:1·4:1 사이에서 바뀌면(변동 전도) 맥이 불규칙해져 진찰로는 심방세동처럼 느껴진다. 규칙적인 150회/분 좁은 QRS 빈맥을 보면 늘 2:1 조동을 의심하는 이유이기도 하다.<br> <b>왜 구분이 중요한가</b>: 혈전색전 위험과 항응고 기준은 심방세동과 같지만, 협부를 끊는 도자절제술의 성공률이 90 % 이상으로 높아 재발하면 약보다 절제를 우선 고려한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심방조동(정답)</th><th>심방세동(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심방 활동</td><td><b>규칙적인 톱니 파 약 300회/분</b>, II·III·aVF 에서 뚜렷</td><td>불규칙한 잔물결(f파) 350~600회/분, 일정한 주기 없음</td></tr> <tr><td>QRS 간격</td><td>전도비가 일정하면 규칙, 변동하면 몇 가지 간격이 반복</td><td>완전히 불규칙(irregularly irregular)</td></tr> <tr><td>근치 치료</td><td>삼첨판-하대정맥 협부 절제(성공률 높음)</td><td>폐정맥 격리</td></tr> </tbody></table> 맥이 불규칙해도 심방 파가 일정한 주기로 반복되면 조동이다. 기저선에 일정한 간격의 파가 보이는지를 먼저 본다.\n- 오답 이유:\n  - ① 다소성 심방빈맥은 한 유도에서 모양이 다른 P파가 3가지 이상 보이고 그 사이에 등전위 기저선이 있으며 심박수 100회/분 이상일 때 정답이 된다.\n  - ② 동부정맥은 모든 QRS 앞에 같은 모양의 양성 P파가 일정한 PR 로 있고 호흡에 따라 PP 간격만 바뀔 때 정답이 된다.\n  - ③ 가속 접합부 리듬은 P파가 없거나 역행성이고 좁은 QRS 가 60~100회/분으로 규칙적일 때 정답이 된다.\n  - ⑤ 심방세동은 기저선이 주기 없는 잔물결이고 QRS 간격이 완전히 불규칙하며 반복되는 톱니 파가 없을 때 정답이 된다.\n- 함정: 맥이 불규칙하니 심방세동으로 읽는 것 — 하벽 유도의 기저선이 일정한 주기의 톱니 파로 채워져 있으면 변동 전도의 심방조동이다.\n- 학습목표: 하벽 유도의 톱니 모양 조동파와 변동 방실전도를 읽어 심방조동으로 판독하고 심방세동·다소성 심방빈맥·동리듬과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 257: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1773 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II·III·aVF 의 기저선이 평탄한 곳 없이 일정한 간격의 톱니 모양 음성 파(조동파)로 채워져 있고, 리듬 스트립에서도 조동파는 규칙적인데 QRS 만 2:1·3:1·4:1 로 바뀌며 불규칙하게 따라온다. QRS 는 좁다. 규칙적인 심방 활동과 변동 방실전도의 조합은 심방조동이다. 심방세동이라면 기저선이 불규칙한 잔물결이고 일정한 주기의 파가 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 톱니 모양인가</b>: 전형적 심방조동은 우심방 안에서 삼첨판륜을 따라 도는 큰 재진입 회로다. 회로가 하대정맥과 삼첨판 사이의 협부(cavotricuspid isthmus)를 지나므로 흥분이 심방중격을 아래에서 위로 올라가고, 그래서 하벽 유도(II·III·aVF)에 <b>음성 톱니 파</b>가 분당 약 300회로 끊임없이 나타난다. 등전위 기저선이 없는 것이 특징이다.<br> <b>왜 맥이 불규칙할 수 있나</b>: 방실결절은 300회/분을 다 통과시키지 못해 보통 2:1(심실 약 150회/분)로 전도한다. 전도비가 2:1·4:1 사이에서 바뀌면(변동 전도) 맥이 불규칙해져 진찰로는 심방세동처럼 느껴진다. 규칙적인 150회/분 좁은 QRS 빈맥을 보면 늘 2:1 조동을 의심하는 이유이기도 하다.<br> <b>왜 구분이 중요한가</b>: 혈전색전 위험과 항응고 기준은 심방세동과 같지만, 협부를 끊는 도자절제술의 성공률이 90 % 이상으로 높아 재발하면 약보다 절제를 우선 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심방조동(정답)</th><th>심방세동(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심방 활동</td><td><b>규칙적인 톱니 파 약 300회/분</b>, II·III·aVF 에서 뚜렷</td><td>불규칙한 잔물결(f파) 350~600회/분, 일정한 주기 없음</td></tr> <tr><td>QRS 간격</td><td>전도비가 일정하면 규칙, 변동하면 몇 가지 간격이 반복</td><td>완전히 불규칙(irregularly irregular)</td></tr> <tr><td>근치 치료</td><td>삼첨판-하대정맥 협부 절제(성공률 높음)</td><td>폐정맥 격리</td></tr> </tbody></table> 맥이 불규칙해도 심방 파가 일정한 주기로 반복되면 조동이다. 기저선에 일정한 간격의 파가 보이는지를 먼저 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 다소성 심방빈맥은 한 유도에서 모양이 다른 P파가 3가지 이상 보이고 그 사이에 등전위 기저선이 있으며 심박수 100회/분 이상일 때 정답이 된다.\n② 동부정맥은 모든 QRS 앞에 같은 모양의 양성 P파가 일정한 PR 로 있고 호흡에 따라 PP 간격만 바뀔 때 정답이 된다.\n③ 가속 접합부 리듬은 P파가 없거나 역행성이고 좁은 QRS 가 60~100회/분으로 규칙적일 때 정답이 된다.\n⑤ 심방세동은 기저선이 주기 없는 잔물결이고 QRS 간격이 완전히 불규칙하며 반복되는 톱니 파가 없을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "맥이 불규칙하니 심방세동으로 읽는 것 — 하벽 유도의 기저선이 일정한 주기의 톱니 파로 채워져 있으면 변동 전도의 심방조동이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "하벽 유도의 톱니 모양 조동파와 변동 방실전도를 읽어 심방조동으로 판독하고 심방세동·다소성 심방빈맥·동리듬과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 257: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1773 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "하벽 유도의 규칙적인 톱니 모양 조동파와 변동 방실전도는 심방조동이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "불규칙한 잔물결이 아니라 일정한 주기의 톱니 파가 기저선을 채운다",
+   "steps": 2,
+   "chain": [
+    "영상: II·III·aVF 의 기저선이 일정한 간격의 톱니 모양 음성 파로 채워짐",
+    "조동파는 규칙적이고 QRS 만 전도비에 따라 불규칙 → 변동 전도의 심방조동"
+   ],
+   "key": [
+    {
+     "item": "영상: II·III·aVF 의 톱니 모양 조동파",
+     "why": "전형적 심방조동의 심방 활동",
+     "also": []
+    },
+    {
+     "item": "영상: 좁은 QRS 가 2:1~4:1 로 바뀌며 불규칙하게 따라옴",
+     "why": "변동 방실전도",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 76회/분(불규칙)",
+     "why": "불규칙한 맥만으로는 심방세동과 가를 수 없어 심전도로 판단해야 함을 보여 준다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "만성폐쇄폐질환",
+     "why": "다소성 심방빈맥을 떠올리게 하는 배경 — 판독은 심전도가 정한다",
+     "also": []
+    },
+    {
+     "item": "갑상샘자극호르몬은 정상이다",
+     "why": "빈맥성 부정맥의 이차 원인 검사 — 판독에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "하벽 유도 기저선이 규칙적인 톱니 파로 채워지고 QRS 는 변동 전도로 불규칙하다. 심방조동이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "기저선이 주기 없는 잔물결이고 QRS 간격이 완전히 불규칙하면 심방세동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0585.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01773",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1773"
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0593",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "정신 — 이뇨제를 시작한 뒤 생긴 리튬 중독의 처치",
+  "type": "정신 — 이뇨제를 시작한 뒤 생긴 리튬 중독의 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-08",
+  "vignette": "68세 여자가 사흘 전부터 손 떨림이 심해지고 말이 어눌하며 비틀거려 가족이 데려왔다. 양극성 장애로 15년째 탄산리튬을 같은 용량으로 먹고 있고, 3주 전 고혈압으로 하이드로클로로티아자이드를 시작하였다. 약을 더 먹은 적은 없다고 한다. 혈압 132/78 mmHg, 맥박 64회/분, 체온 36.8 ℃ 이다. 의식은 혼미하고 묻는 말에 늦게 대답하며, 굵은 떨림·근간대경련·실조성 보행이 있다. 혈청 리튬 4.1 mEq/L(치료 범위 0.6~1.2), 나트륨 136 mEq/L, 칼륨 4.0 mEq/L, 크레아티닌 2.1 mg/dL(6개월 전 1.0), 혈당 104 mg/dL 이다. 심전도는 동서맥 이외 특이 소견이 없다. 탄산리튬과 하이드로클로로티아자이드를 끊고 생리식염수를 투여하기 시작하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "아세타졸아마이드를 정맥 투여한다",
+   "혈액투석을 한다",
+   "생리식염수만 계속 투여하며 6시간마다 리튬 농도를 측정한다",
+   "활성탄을 경구 투여한다",
+   "다량의 폴리에틸렌글라이콜로 전장 세척을 한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 15년 동안 같은 용량을 먹다가 티아자이드를 시작한 뒤 생긴 만성 리튬 중독이다. 티아자이드가 원위 세뇨관 나트륨 재흡수를 막아 체액이 줄면 근위 세뇨관이 나트륨과 함께 리튬을 더 재흡수해 리튬이 쌓인다. 혈중 리튬 4.1 mEq/L(4.0 초과)이고 크레아티닌이 2.1 mg/dL 로 신기능이 떨어져 있으며 의식 저하·근간대경련 같은 중증 신경 증상이 있으므로, 수액만으로는 제거가 느려 영구 신경 손상(SILENT) 위험이 크다. 리튬은 작고 단백 결합이 없어 혈액투석으로 잘 빠지므로 즉시 혈액투석을 한다.\n- 원리: <b>왜 리튬은 투석이 잘 되나</b>: 리튬 이온은 분자량이 7로 매우 작고 단백질에 결합하지 않으며 분포 용적이 작다(약 0.6~0.9 L/kg). 이 세 성질 때문에 혈액투석으로 거의 신장 수준 이상으로 빠르게 제거된다. 반대로 활성탄은 리튬 같은 금속 이온을 흡착하지 못한다.<br> <b>왜 만성 중독이 더 위험한가</b>: 리튬은 세포 안, 특히 뇌로 천천히 들어가고 천천히 나온다. 급성 과량 복용은 처음 혈중 농도가 높아도 뇌 농도가 아직 낮지만, 몇 주에 걸쳐 쌓인 만성 중독은 혈중 농도가 같아도 뇌 농도가 이미 높아 신경 증상이 심하다. 그래서 만성 중독에서는 농도가 비교적 낮아도 신경 증상이 있으면 투석을 서두른다.<br> <b>투석 기준(EXTRIP)</b>: 신기능 저하가 있으면서 리튬 4.0 mEq/L 초과, 또는 의식 저하·경련·생명을 위협하는 부정맥이 있으면 농도와 관계없이 권고한다. 신기능이 정상이고 증상이 가벼우면 식염수로 신장 배설을 늘리며 지켜볼 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">혈액투석(정답)</th><th>생리식염수 + 반복 측정(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리튬 농도</td><td><b>4.0 mEq/L 초과</b>(신기능 저하 시) 또는 5.0 초과</td><td>대개 2.5 미만</td></tr> <tr><td>신기능</td><td>떨어져 있음(크레아티닌 2.1)</td><td>정상 — 신장이 스스로 리튬을 내보낸다</td></tr> <tr><td>신경 증상</td><td>의식 저하·근간대경련·경련</td><td>가벼운 떨림·구역</td></tr> </tbody></table> 식염수는 둘 다에 쓰지만, 신장이 리튬을 충분히 내보내지 못하고 뇌 증상이 심하면 투석으로 직접 제거한다.\n- 오답 이유:\n  - ① 아세타졸아마이드는 고산병 예방이나 녹내장 치료일 때 정답이 되며, 리튬 배설을 의미 있게 늘리지 못하고 산증을 일으킬 수 있다.\n  - ③ 생리식염수와 반복 측정은 신기능이 정상이고 리튬 농도가 2.5 mEq/L 미만이며 떨림·구역 정도의 가벼운 증상만 있을 때 정답이 된다.\n  - ④ 활성탄은 리튬을 흡착하지 못해 쓰지 않고, 아세트아미노펜·삼환계 항우울제처럼 흡착되는 약을 1시간 안에 많이 먹었을 때 정답이 된다.\n  - ⑤ 폴리에틸렌글라이콜 전장 세척은 서방형 리튬을 대량으로 막 삼킨 급성 중독에서 장 안의 약을 빼낼 때 정답이 되며, 만성 축적에는 쓸모가 없다.\n- 함정: 수액만 주면 된다고 보는 것 — 신기능 저하와 함께 리튬 4.0 mEq/L 를 넘고 의식 저하·근간대경련이 있으면 투석으로 직접 뺀다.\n- 학습목표: 티아자이드 시작 뒤 생긴 만성 리튬 중독에서 혈중 농도·신경 증상·신기능을 보고 혈액투석 적응을 판단하고, 수액만 주는 처치와 가른다\n- 근거·출처: Decker BS, Goldfarb DS, Dargan PI, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol. 2015;10(5):875-887 · Baird-Gunning J, Lea-Henry T, Hoegberg LCG, Gosselin S, Roberts DM. Lithium poisoning. J Intensive Care Med. 2017;32(4):249-263",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "15년 동안 같은 용량을 먹다가 티아자이드를 시작한 뒤 생긴 만성 리튬 중독이다. 티아자이드가 원위 세뇨관 나트륨 재흡수를 막아 체액이 줄면 근위 세뇨관이 나트륨과 함께 리튬을 더 재흡수해 리튬이 쌓인다. 혈중 리튬 4.1 mEq/L(4.0 초과)이고 크레아티닌이 2.1 mg/dL 로 신기능이 떨어져 있으며 의식 저하·근간대경련 같은 중증 신경 증상이 있으므로, 수액만으로는 제거가 느려 영구 신경 손상(SILENT) 위험이 크다. 리튬은 작고 단백 결합이 없어 혈액투석으로 잘 빠지므로 즉시 혈액투석을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 리튬은 투석이 잘 되나</b>: 리튬 이온은 분자량이 7로 매우 작고 단백질에 결합하지 않으며 분포 용적이 작다(약 0.6~0.9 L/kg). 이 세 성질 때문에 혈액투석으로 거의 신장 수준 이상으로 빠르게 제거된다. 반대로 활성탄은 리튬 같은 금속 이온을 흡착하지 못한다.<br> <b>왜 만성 중독이 더 위험한가</b>: 리튬은 세포 안, 특히 뇌로 천천히 들어가고 천천히 나온다. 급성 과량 복용은 처음 혈중 농도가 높아도 뇌 농도가 아직 낮지만, 몇 주에 걸쳐 쌓인 만성 중독은 혈중 농도가 같아도 뇌 농도가 이미 높아 신경 증상이 심하다. 그래서 만성 중독에서는 농도가 비교적 낮아도 신경 증상이 있으면 투석을 서두른다.<br> <b>투석 기준(EXTRIP)</b>: 신기능 저하가 있으면서 리튬 4.0 mEq/L 초과, 또는 의식 저하·경련·생명을 위협하는 부정맥이 있으면 농도와 관계없이 권고한다. 신기능이 정상이고 증상이 가벼우면 식염수로 신장 배설을 늘리며 지켜볼 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">혈액투석(정답)</th><th>생리식염수 + 반복 측정(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>리튬 농도</td><td><b>4.0 mEq/L 초과</b>(신기능 저하 시) 또는 5.0 초과</td><td>대개 2.5 미만</td></tr> <tr><td>신기능</td><td>떨어져 있음(크레아티닌 2.1)</td><td>정상 — 신장이 스스로 리튬을 내보낸다</td></tr> <tr><td>신경 증상</td><td>의식 저하·근간대경련·경련</td><td>가벼운 떨림·구역</td></tr> </tbody></table> 식염수는 둘 다에 쓰지만, 신장이 리튬을 충분히 내보내지 못하고 뇌 증상이 심하면 투석으로 직접 제거한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아세타졸아마이드는 고산병 예방이나 녹내장 치료일 때 정답이 되며, 리튬 배설을 의미 있게 늘리지 못하고 산증을 일으킬 수 있다.\n③ 생리식염수와 반복 측정은 신기능이 정상이고 리튬 농도가 2.5 mEq/L 미만이며 떨림·구역 정도의 가벼운 증상만 있을 때 정답이 된다.\n④ 활성탄은 리튬을 흡착하지 못해 쓰지 않고, 아세트아미노펜·삼환계 항우울제처럼 흡착되는 약을 1시간 안에 많이 먹었을 때 정답이 된다.\n⑤ 폴리에틸렌글라이콜 전장 세척은 서방형 리튬을 대량으로 막 삼킨 급성 중독에서 장 안의 약을 빼낼 때 정답이 되며, 만성 축적에는 쓸모가 없다."
+   },
+   {
+    "k": "함정",
+    "v": "수액만 주면 된다고 보는 것 — 신기능 저하와 함께 리튬 4.0 mEq/L 를 넘고 의식 저하·근간대경련이 있으면 투석으로 직접 뺀다."
+   },
+   {
+    "k": "학습목표",
+    "v": "티아자이드 시작 뒤 생긴 만성 리튬 중독에서 혈중 농도·신경 증상·신기능을 보고 혈액투석 적응을 판단하고, 수액만 주는 처치와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Decker BS, Goldfarb DS, Dargan PI, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol. 2015;10(5):875-887 · Baird-Gunning J, Lea-Henry T, Hoegberg LCG, Gosselin S, Roberts DM. Lithium poisoning. J Intensive Care Med. 2017;32(4):249-263"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "신기능 저하와 함께 리튬 4.0 mEq/L 를 넘고 중증 신경 증상이 있는 만성 리튬 중독은 혈액투석으로 제거한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "크레아티닌이 2.1 mg/dL 로 떨어져 신장 배설에 기댈 수 없고 의식 저하·근간대경련이 있다",
+   "steps": 3,
+   "chain": [
+    "같은 용량 15년 + 티아자이드 시작 3주 뒤 떨림·실조·혼미 → 만성 리튬 중독",
+    "리튬 4.1 mEq/L + 크레아티닌 2.1(6개월 전 1.0) → 신장 제거 저하",
+    "의식 저하·근간대경련 + EXTRIP 기준 충족 → 혈액투석"
+   ],
+   "key": [
+    {
+     "item": "3주 전 고혈압으로 하이드로클로로티아자이드를 시작하였다",
+     "why": "리튬 재흡수를 늘려 만성 축적을 일으킨 원인",
+     "also": []
+    },
+    {
+     "item": "혈청 리튬 4.1 mEq/L",
+     "why": "신기능 저하와 함께면 투석 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "약을 더 먹은 적은 없다고 한다",
+     "why": "급성 과량 복용 가능성을 낮춰 장 세척의 근거가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 2.1 mg/dL(6개월 전 1.0)",
+     "why": "신장 배설에 기댈 수 없다",
+     "also": []
+    },
+    {
+     "item": "의식은 혼미하고",
+     "why": "중증 신경 독성 — 농도와 별개로 투석 적응",
+     "also": []
+    },
+    {
+     "item": "근간대경련",
+     "why": "중증 신경 독성",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "심전도는 동서맥 이외 특이 소견이 없다",
+     "why": "리튬의 흔한 심전도 변화 — 처치 결정에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "나트륨 136 mEq/L",
+     "why": "정상 — 신성 요붕증으로 인한 고나트륨은 없다",
+     "also": []
+    }
+   ],
+   "summary": "티아자이드 뒤 생긴 만성 리튬 중독으로 농도 4.1, 신기능 저하, 의식 저하·근간대경련이 있다. 수액만으로는 부족해 혈액투석을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "신기능이 정상이고 리튬 2.0 mEq/L 에 가벼운 떨림만 있으면 생리식염수와 반복 측정"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0592",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "예방의학 — 유병률이 낮을 때 양성예측도",
+  "type": "예방의학 — 유병률이 낮을 때 양성예측도",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-08",
+  "vignette": "A 58-year-old man comes to the physician for a routine health maintenance examination. He feels well and has no symptoms. He asks about a new blood test for a cancer that his community plans to offer as a screening test to asymptomatic adults aged 50 to 75 years. In a validation study, the test has a sensitivity of 90% and a specificity of 95%. The prevalence of the cancer in the target population is estimated to be 2%. He wants to know how likely he is to have the cancer if his test result is positive.",
+  "question": "Which of the following is closest to the positive predictive value of the test in this population?",
+  "options": [
+   "27%",
+   "18%",
+   "47%",
+   "90%",
+   "95%"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: In 10,000 people, 200 have the cancer and 9,800 do not. The test detects 90% of the 200 (180 true positives) and falsely labels 5% of the 9,800 (490 false positives). Positive predictive value is true positives divided by all positives: 180 ÷ (180 + 490) = 180 ÷ 670 ≈ 27%. Even with high sensitivity and specificity, most positive results are false when the disease is rare.\n- 원리: <b>Why the predictive value depends on prevalence</b>: Sensitivity and specificity are properties of the test measured within groups that do or do not have the disease. Predictive values describe the people who received a given result, so they depend on how many diseased and nondiseased people are tested. When prevalence is low, the nondiseased group is huge, and even a small false-positive rate (1 − specificity) generates more false positives than there are true positives.<br> <b>Why specificity matters most for screening rare diseases</b>: With 2% prevalence, raising specificity from 95% to 99% would cut false positives from 490 to 98 and raise PPV to about 65%; raising sensitivity to 100% would barely change PPV (200 ÷ 690 ≈ 29%). That is why screening programs target higher-risk groups (raising prevalence) or use a highly specific confirmatory test after a positive screen.<br> <b>Bayes in one line</b>: PPV = (Se × P) ÷ [Se × P + (1 − Sp) × (1 − P)].\n- 비교: <table><thead><tr><th style=\"width:26%\">Measure</th><th style=\"width:37%\">Positive predictive value (asked)</th><th>Sensitivity (closest distractor)</th></tr></thead><tbody> <tr><td>Question it answers</td><td><b>\"I tested positive — do I have it?\"</b></td><td>\"I have it — will the test be positive?\"</td></tr> <tr><td>Denominator</td><td>All positive results (TP + FP = 670)</td><td>All diseased people (TP + FN = 200)</td></tr> <tr><td>Depends on prevalence</td><td>Yes</td><td>No</td></tr> <tr><td>Value here</td><td>180 ÷ 670 ≈ 27%</td><td>180 ÷ 200 = 90%</td></tr> </tbody></table> The numerator is the same 180 true positives; choosing the right denominator is the whole question.\n- 오답 이유:\n  - (B) 18% would be correct if the specificity were about 92% at the same prevalence, or if prevalence were about 1.2% with the same test characteristics.\n  - (C) 47% would be correct if prevalence were about 5% with the same sensitivity and specificity (450 ÷ 925 true among positives in 10,000).\n  - (D) 90% is the sensitivity; it would be correct if the question asked what proportion of people with the cancer test positive.\n  - (E) 95% is the specificity; it would be correct if the question asked what proportion of people without the cancer test negative.\n- 함정: Reading the sensitivity as the chance that a positive person has the disease — at 2% prevalence, false positives outnumber true positives.\n- 학습목표: 민감도·특이도·유병률로 양성예측도를 계산하고 유병률이 낮을 때 양성예측도가 낮아지는 이유를 설명한다\n- 근거·출처: Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019. Chapter 5: Assessing the Validity and Reliability of Diagnostic and Screening Tests",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "In 10,000 people, 200 have the cancer and 9,800 do not. The test detects 90% of the 200 (180 true positives) and falsely labels 5% of the 9,800 (490 false positives). Positive predictive value is true positives divided by all positives: 180 ÷ (180 + 490) = 180 ÷ 670 ≈ 27%. Even with high sensitivity and specificity, most positive results are false when the disease is rare."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the predictive value depends on prevalence</b>: Sensitivity and specificity are properties of the test measured within groups that do or do not have the disease. Predictive values describe the people who received a given result, so they depend on how many diseased and nondiseased people are tested. When prevalence is low, the nondiseased group is huge, and even a small false-positive rate (1 − specificity) generates more false positives than there are true positives.<br> <b>Why specificity matters most for screening rare diseases</b>: With 2% prevalence, raising specificity from 95% to 99% would cut false positives from 490 to 98 and raise PPV to about 65%; raising sensitivity to 100% would barely change PPV (200 ÷ 690 ≈ 29%). That is why screening programs target higher-risk groups (raising prevalence) or use a highly specific confirmatory test after a positive screen.<br> <b>Bayes in one line</b>: PPV = (Se × P) ÷ [Se × P + (1 − Sp) × (1 − P)]."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Measure</th><th style=\"width:37%\">Positive predictive value (asked)</th><th>Sensitivity (closest distractor)</th></tr></thead><tbody> <tr><td>Question it answers</td><td><b>\"I tested positive — do I have it?\"</b></td><td>\"I have it — will the test be positive?\"</td></tr> <tr><td>Denominator</td><td>All positive results (TP + FP = 670)</td><td>All diseased people (TP + FN = 200)</td></tr> <tr><td>Depends on prevalence</td><td>Yes</td><td>No</td></tr> <tr><td>Value here</td><td>180 ÷ 670 ≈ 27%</td><td>180 ÷ 200 = 90%</td></tr> </tbody></table> The numerator is the same 180 true positives; choosing the right denominator is the whole question."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) 18% would be correct if the specificity were about 92% at the same prevalence, or if prevalence were about 1.2% with the same test characteristics.\n(C) 47% would be correct if prevalence were about 5% with the same sensitivity and specificity (450 ÷ 925 true among positives in 10,000).\n(D) 90% is the sensitivity; it would be correct if the question asked what proportion of people with the cancer test positive.\n(E) 95% is the specificity; it would be correct if the question asked what proportion of people without the cancer test negative."
+   },
+   {
+    "k": "함정",
+    "v": "Reading the sensitivity as the chance that a positive person has the disease — at 2% prevalence, false positives outnumber true positives."
+   },
+   {
+    "k": "학습목표",
+    "v": "민감도·특이도·유병률로 양성예측도를 계산하고 유병률이 낮을 때 양성예측도가 낮아지는 이유를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019. Chapter 5: Assessing the Validity and Reliability of Diagnostic and Screening Tests"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "With 2% prevalence, 90% sensitivity, and 95% specificity, true positives are 180 and false positives 490 per 10,000, so PPV is about 27%",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "PPV uses all positive results as the denominator, not all diseased people",
+   "steps": 2,
+   "chain": [
+    "2% prevalence in 10,000 -> 200 diseased: 180 true positives; 9,800 nondiseased: 490 false positives",
+    "PPV = 180 ÷ 670 ≈ 27%"
+   ],
+   "key": [
+    {
+     "item": "sensitivity of 90%",
+     "why": "Gives 180 true positives",
+     "also": []
+    },
+    {
+     "item": "specificity of 95%",
+     "why": "Gives a 5% false-positive rate, 490 false positives",
+     "also": []
+    },
+    {
+     "item": "prevalence of the cancer in the target population is estimated to be 2%",
+     "why": "Low prevalence drives down PPV",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "asymptomatic adults aged 50 to 75 years",
+     "why": "Screening context — the calculation uses only the given numbers",
+     "also": []
+    }
+   ],
+   "summary": "At 2% prevalence, 180 true positives and 490 false positives arise per 10,000 people. The positive predictive value is about 27%.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the test were offered only to a high-risk group with 5% prevalence, the PPV would rise to about 47%"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0591",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "내분비 — 저칼륨 고혈압의 선별검사",
+  "type": "내분비 — 저칼륨 고혈압의 선별검사",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-08",
+  "vignette": "44세 남자가 3년 전 진단된 고혈압이 세 가지 약(암로디핀, 로사르탄, 하이드로클로로티아자이드)을 충분히 써도 조절되지 않아 왔다. 최근 다리에 쥐가 자주 나고 기운이 없다. 두통·발한·두근거림의 발작은 없다. 혈압 162/98 mmHg, 맥박 72회/분 이고 체질량지수는 25 kg/m² 이다. 쿠싱 증후군을 시사하는 외모는 없다. 혈청 나트륨 143 mEq/L, 칼륨 2.9 mEq/L, 중탄산 31 mEq/L, 크레아티닌 0.9 mg/dL 이다. 소변 칼륨 배설은 하루 45 mEq 이다. 수면무호흡 증상은 없다.",
+  "question": "원인을 찾기 위한 첫 검사로 가장 적절한 것은?",
+  "options": [
+   "부신 정맥 채혈",
+   "혈장 알도스테론 농도와 레닌 활성의 비",
+   "24시간 소변 메타네프린",
+   "1 mg 덱사메타손 억제 검사",
+   "신동맥 도플러 초음파"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 세 가지 약(이뇨제 포함)으로도 조절되지 않는 고혈압, 저칼륨혈증(2.9 mEq/L)과 대사성 알칼리증, 저칼륨혈증인데도 소변 칼륨 배설이 하루 30 mEq 이상인 신장 칼륨 소실, 정상보다 약간 높은 나트륨은 미네랄코르티코이드 과다를 가리킨다. 가장 흔한 원인은 원발알도스테론증이므로 첫 검사는 혈장 알도스테론 농도와 레닌 활성의 비(ARR)다. 알도스테론이 높고 레닌이 억제되어 비가 높으면 확진 검사(식염 부하) → 부신 CT → 부신 정맥 채혈 순으로 진행한다.\n- 원리: <b>왜 비를 보나</b>: 알도스테론은 피질집합관의 상피 나트륨 통로(ENaC)를 늘려 나트륨을 재흡수하고 그 대가로 칼륨과 수소 이온을 소변으로 내보낸다. 그래서 과다하면 고혈압·저칼륨혈증·대사성 알칼리증이 함께 온다. 알도스테론이 <b>자율적으로</b> 나오면(선종·양측 과형성) 늘어난 체액량이 레닌을 억제하므로 「알도스테론 높음 + 레닌 낮음」이 된다. 신혈관 고혈압·이뇨제처럼 레닌이 먼저 오르는 이차 알도스테론증은 둘 다 높아 비가 정상이다.<br> <b>왜 지금 측정해도 되나</b>: 칼륨이 낮으면 알도스테론 분비가 줄어 위음성이 생기므로 칼륨을 먼저 보충한다. 앤지오텐신 수용체 차단제·이뇨제는 레닌을 올려 비를 낮추지만(위음성 방향), 레닌이 그래도 억제되어 있으면 진단적 의미가 커서 대개 약을 유지한 채 선별한다.<br> <b>왜 순서가 중요한가</b>: 부신 우연종은 흔해서, 생화학적 확진 없이 CT 를 먼저 하면 기능 없는 혹을 원인으로 오인한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">원발알도스테론증(정답 검사: ARR)</th><th>갈색세포종(24시간 소변 메타네프린)</th></tr></thead><tbody> <tr><td>혈압 양상</td><td>지속적, 치료저항</td><td><b>발작성</b> 두통·발한·두근거림</td></tr> <tr><td>칼륨</td><td>낮음(신장 소실)</td><td>대개 정상</td></tr> <tr><td>대사</td><td>대사성 알칼리증, 나트륨 높은 정상</td><td>고혈당·체중 감소</td></tr> </tbody></table> 둘 다 이차성 고혈압의 부신 원인이지만, 저칼륨혈증과 알칼리증은 미네랄코르티코이드 쪽을, 발작성 교감신경 증상은 카테콜아민 쪽을 가리킨다.\n- 오답 이유:\n  - ① 부신 정맥 채혈은 알도스테론 과다가 확진되고 수술을 원하는 환자에서 한쪽 선종과 양측 과형성을 가를 때 정답이 된다.\n  - ③ 24시간 소변 메타네프린은 두통·발한·두근거림이 발작적으로 오고 혈압이 크게 오르내리거나 부신 종괴가 발견되었을 때 정답이 된다.\n  - ④ 1 mg 덱사메타손 억제 검사는 중심비만·자색 선조·근위부 근력 약화처럼 쿠싱 증후군을 시사하는 소견이 있을 때 정답이 된다.\n  - ⑤ 신동맥 도플러 초음파는 레닌이 높고, ACE 억제제·수용체 차단제 뒤 크레아티닌이 30 % 넘게 오르거나 복부 잡음이 들릴 때 정답이 된다.\n- 함정: 이뇨제 탓으로 저칼륨혈증을 넘기는 것 — 치료저항 고혈압에 신장 칼륨 소실과 알칼리증이 있으면 알도스테론·레닌 비부터 본다.\n- 학습목표: 저칼륨혈증을 동반한 젊은 나이의 치료저항 고혈압에서 원발알도스테론증을 의심하고 혈장 알도스테론·레닌 비로 선별한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Funder JW, Carey RM, Mantero F, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "세 가지 약(이뇨제 포함)으로도 조절되지 않는 고혈압, 저칼륨혈증(2.9 mEq/L)과 대사성 알칼리증, 저칼륨혈증인데도 소변 칼륨 배설이 하루 30 mEq 이상인 신장 칼륨 소실, 정상보다 약간 높은 나트륨은 미네랄코르티코이드 과다를 가리킨다. 가장 흔한 원인은 원발알도스테론증이므로 첫 검사는 혈장 알도스테론 농도와 레닌 활성의 비(ARR)다. 알도스테론이 높고 레닌이 억제되어 비가 높으면 확진 검사(식염 부하) → 부신 CT → 부신 정맥 채혈 순으로 진행한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 비를 보나</b>: 알도스테론은 피질집합관의 상피 나트륨 통로(ENaC)를 늘려 나트륨을 재흡수하고 그 대가로 칼륨과 수소 이온을 소변으로 내보낸다. 그래서 과다하면 고혈압·저칼륨혈증·대사성 알칼리증이 함께 온다. 알도스테론이 <b>자율적으로</b> 나오면(선종·양측 과형성) 늘어난 체액량이 레닌을 억제하므로 「알도스테론 높음 + 레닌 낮음」이 된다. 신혈관 고혈압·이뇨제처럼 레닌이 먼저 오르는 이차 알도스테론증은 둘 다 높아 비가 정상이다.<br> <b>왜 지금 측정해도 되나</b>: 칼륨이 낮으면 알도스테론 분비가 줄어 위음성이 생기므로 칼륨을 먼저 보충한다. 앤지오텐신 수용체 차단제·이뇨제는 레닌을 올려 비를 낮추지만(위음성 방향), 레닌이 그래도 억제되어 있으면 진단적 의미가 커서 대개 약을 유지한 채 선별한다.<br> <b>왜 순서가 중요한가</b>: 부신 우연종은 흔해서, 생화학적 확진 없이 CT 를 먼저 하면 기능 없는 혹을 원인으로 오인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">원발알도스테론증(정답 검사: ARR)</th><th>갈색세포종(24시간 소변 메타네프린)</th></tr></thead><tbody> <tr><td>혈압 양상</td><td>지속적, 치료저항</td><td><b>발작성</b> 두통·발한·두근거림</td></tr> <tr><td>칼륨</td><td>낮음(신장 소실)</td><td>대개 정상</td></tr> <tr><td>대사</td><td>대사성 알칼리증, 나트륨 높은 정상</td><td>고혈당·체중 감소</td></tr> </tbody></table> 둘 다 이차성 고혈압의 부신 원인이지만, 저칼륨혈증과 알칼리증은 미네랄코르티코이드 쪽을, 발작성 교감신경 증상은 카테콜아민 쪽을 가리킨다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 부신 정맥 채혈은 알도스테론 과다가 확진되고 수술을 원하는 환자에서 한쪽 선종과 양측 과형성을 가를 때 정답이 된다.\n③ 24시간 소변 메타네프린은 두통·발한·두근거림이 발작적으로 오고 혈압이 크게 오르내리거나 부신 종괴가 발견되었을 때 정답이 된다.\n④ 1 mg 덱사메타손 억제 검사는 중심비만·자색 선조·근위부 근력 약화처럼 쿠싱 증후군을 시사하는 소견이 있을 때 정답이 된다.\n⑤ 신동맥 도플러 초음파는 레닌이 높고, ACE 억제제·수용체 차단제 뒤 크레아티닌이 30 % 넘게 오르거나 복부 잡음이 들릴 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "이뇨제 탓으로 저칼륨혈증을 넘기는 것 — 치료저항 고혈압에 신장 칼륨 소실과 알칼리증이 있으면 알도스테론·레닌 비부터 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "저칼륨혈증을 동반한 젊은 나이의 치료저항 고혈압에서 원발알도스테론증을 의심하고 혈장 알도스테론·레닌 비로 선별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Funder JW, Carey RM, Mantero F, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "치료저항 고혈압에 신장성 저칼륨혈증과 대사성 알칼리증이 있으면 원발알도스테론증을 의심해 알도스테론·레닌 비로 선별한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "발작성 교감신경 증상이 없고 저칼륨혈증·알칼리증이 미네랄코르티코이드 과다를 가리킨다",
+   "steps": 2,
+   "chain": [
+    "세 약으로 조절 안 되는 고혈압 + 칼륨 2.9·중탄산 31·소변 칼륨 하루 45 mEq → 미네랄코르티코이드 과다",
+    "가장 흔한 원인 원발알도스테론증 → 첫 검사는 알도스테론·레닌 비"
+   ],
+   "key": [
+    {
+     "item": "세 가지 약(암로디핀, 로사르탄, 하이드로클로로티아자이드)을 충분히 써도 조절되지 않아",
+     "why": "치료저항 고혈압 — 이차성 원인 선별 대상",
+     "also": []
+    },
+    {
+     "item": "칼륨 2.9 mEq/L",
+     "why": "미네랄코르티코이드 과다의 핵심 단서",
+     "also": []
+    },
+    {
+     "item": "중탄산 31 mEq/L",
+     "why": "대사성 알칼리증 동반",
+     "also": []
+    },
+    {
+     "item": "소변 칼륨 배설은 하루 45 mEq 이다",
+     "why": "저칼륨혈증인데도 신장이 칼륨을 잃고 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "두통·발한·두근거림의 발작은 없다",
+     "why": "갈색세포종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "쿠싱 증후군을 시사하는 외모는 없다",
+     "why": "쿠싱 증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "수면무호흡 증상은 없다",
+     "why": "치료저항 고혈압의 흔한 다른 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "하이드로클로로티아자이드",
+     "why": "저칼륨혈증의 다른 설명이 될 수 있지만 신장 칼륨 소실·치료저항과 함께면 선별을 미루지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "치료저항 고혈압에 신장성 저칼륨혈증과 대사성 알칼리증이 있다. 원발알도스테론증을 의심해 알도스테론·레닌 비를 먼저 측정한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "발작성 두통·발한·두근거림과 함께 혈압이 크게 오르내리면 24시간 소변 메타네프린"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0590",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "소아 — 사출성 구토 영아의 대사 이상과 첫 처치",
+  "type": "소아 — 사출성 구토 영아의 대사 이상과 첫 처치",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-08",
+  "vignette": "A 5-week-old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is hungry immediately after vomiting. He was born at term and is formula-fed. He has had fewer wet diapers. He appears thin; the anterior fontanelle is slightly sunken, and capillary refill time is 3 seconds. A firm, mobile, olive-shaped mass is palpated in the epigastrium. Serum studies show sodium 133 mEq/L, potassium 3.0 mEq/L, chloride 86 mEq/L, bicarbonate 34 mEq/L, and glucose 82 mg/dL. Abdominal ultrasonography shows a pyloric muscle thickness of 5 mm.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Immediate pyloromyotomy",
+   "Intravenous sodium bicarbonate",
+   "Oral rehydration solution feeds every 2 hours",
+   "Intravenous atropine",
+   "Intravenous 0.9% saline bolus followed by dextrose-saline with potassium chloride"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Projectile nonbilious vomiting in a 5-week-old boy, a palpable olive, and a pyloric muscle thickness of 5 mm (3 mm or more is diagnostic) establish hypertrophic pyloric stenosis. Loss of gastric hydrochloric acid has produced hypochloremic, hypokalemic metabolic alkalosis with dehydration. Pyloromyotomy is not an emergency; the alkalosis must first be corrected with isotonic saline and then dextrose-containing maintenance fluid with potassium chloride, because an alkalotic infant is at risk of postoperative apnea from anesthesia.\n- 원리: <b>Why the alkalosis develops</b>: Vomited gastric juice contains hydrochloric acid. Each lost hydrogen ion leaves a bicarbonate ion in the blood, and loss of chloride removes the anion the kidney needs to excrete bicarbonate. Volume depletion activates the renin-angiotensin-aldosterone system, so the kidney reabsorbs sodium in exchange for potassium and hydrogen — worsening hypokalemia and producing a paradoxical aciduria that sustains the alkalosis.<br> <b>Why saline corrects it</b>: Restoring volume removes the stimulus for sodium avidity, and supplying chloride allows the kidney to excrete bicarbonate (chloride-responsive alkalosis). Potassium is added once urine output is established. Surgery is delayed until chloride and bicarbonate approach normal (for example, chloride above 100 mEq/L and bicarbonate below 30 mEq/L).<br> <b>Why not operate immediately</b>: Metabolic alkalosis causes compensatory hypoventilation, and anesthetic agents further depress the respiratory drive, so infants operated on while alkalotic have a higher risk of postoperative apnea.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fluid and electrolyte correction (answer)</th><th>Immediate pyloromyotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td><b>First</b>, over 24–48 hours</td><td>After chloride and bicarbonate normalize</td></tr> <tr><td>Rationale</td><td>Chloride-responsive alkalosis and dehydration</td><td>Definitive treatment of the obstruction</td></tr> <tr><td>Risk if skipped</td><td>Postoperative apnea, arrhythmia from hypokalemia</td><td>None — the obstruction is not an emergency</td></tr> </tbody></table> Both are part of treatment; the sequence matters — the metabolic derangement, not the pyloric muscle, is the urgent problem.\n- 오답 이유:\n  - (A) Immediate pyloromyotomy would be correct once electrolytes are normal (chloride above 100 mEq/L, bicarbonate below 30 mEq/L) and the infant is rehydrated.\n  - (B) Intravenous sodium bicarbonate would be correct for severe metabolic acidosis, as in sepsis with shock, not for an infant who is already alkalotic.\n  - (C) Oral rehydration solution would be correct for mild dehydration from viral gastroenteritis, not for gastric outlet obstruction with persistent vomiting.\n  - (D) Intravenous atropine would be correct for symptomatic bradycardia or as a historical nonsurgical option in some regions, not as the first step here.\n- 함정: Rushing to pyloromyotomy because the diagnosis is confirmed — the hypochloremic alkalosis is corrected with saline and potassium first.\n- 학습목표: 비대날문협착 영아의 저염소성 저칼륨성 대사성 알칼리증을 읽고 수술 전에 염화나트륨·칼륨 수액으로 교정하는 것을 첫 처치로 고른다\n- 근거·출처: Kliegman RM, St Geme JW, Blum NJ, et al., eds. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Pyloric Stenosis and Other Congenital Anomalies of the Stomach",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Projectile nonbilious vomiting in a 5-week-old boy, a palpable olive, and a pyloric muscle thickness of 5 mm (3 mm or more is diagnostic) establish hypertrophic pyloric stenosis. Loss of gastric hydrochloric acid has produced hypochloremic, hypokalemic metabolic alkalosis with dehydration. Pyloromyotomy is not an emergency; the alkalosis must first be corrected with isotonic saline and then dextrose-containing maintenance fluid with potassium chloride, because an alkalotic infant is at risk of postoperative apnea from anesthesia."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the alkalosis develops</b>: Vomited gastric juice contains hydrochloric acid. Each lost hydrogen ion leaves a bicarbonate ion in the blood, and loss of chloride removes the anion the kidney needs to excrete bicarbonate. Volume depletion activates the renin-angiotensin-aldosterone system, so the kidney reabsorbs sodium in exchange for potassium and hydrogen — worsening hypokalemia and producing a paradoxical aciduria that sustains the alkalosis.<br> <b>Why saline corrects it</b>: Restoring volume removes the stimulus for sodium avidity, and supplying chloride allows the kidney to excrete bicarbonate (chloride-responsive alkalosis). Potassium is added once urine output is established. Surgery is delayed until chloride and bicarbonate approach normal (for example, chloride above 100 mEq/L and bicarbonate below 30 mEq/L).<br> <b>Why not operate immediately</b>: Metabolic alkalosis causes compensatory hypoventilation, and anesthetic agents further depress the respiratory drive, so infants operated on while alkalotic have a higher risk of postoperative apnea."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fluid and electrolyte correction (answer)</th><th>Immediate pyloromyotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td><b>First</b>, over 24–48 hours</td><td>After chloride and bicarbonate normalize</td></tr> <tr><td>Rationale</td><td>Chloride-responsive alkalosis and dehydration</td><td>Definitive treatment of the obstruction</td></tr> <tr><td>Risk if skipped</td><td>Postoperative apnea, arrhythmia from hypokalemia</td><td>None — the obstruction is not an emergency</td></tr> </tbody></table> Both are part of treatment; the sequence matters — the metabolic derangement, not the pyloric muscle, is the urgent problem."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Immediate pyloromyotomy would be correct once electrolytes are normal (chloride above 100 mEq/L, bicarbonate below 30 mEq/L) and the infant is rehydrated.\n(B) Intravenous sodium bicarbonate would be correct for severe metabolic acidosis, as in sepsis with shock, not for an infant who is already alkalotic.\n(C) Oral rehydration solution would be correct for mild dehydration from viral gastroenteritis, not for gastric outlet obstruction with persistent vomiting.\n(D) Intravenous atropine would be correct for symptomatic bradycardia or as a historical nonsurgical option in some regions, not as the first step here."
+   },
+   {
+    "k": "함정",
+    "v": "Rushing to pyloromyotomy because the diagnosis is confirmed — the hypochloremic alkalosis is corrected with saline and potassium first."
+   },
+   {
+    "k": "학습목표",
+    "v": "비대날문협착 영아의 저염소성 저칼륨성 대사성 알칼리증을 읽고 수술 전에 염화나트륨·칼륨 수액으로 교정하는 것을 첫 처치로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, St Geme JW, Blum NJ, et al., eds. Nelson Textbook of Pediatrics, 21st ed. Elsevier; 2020. Pyloric Stenosis and Other Congenital Anomalies of the Stomach"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Hypertrophic pyloric stenosis with hypochloremic hypokalemic alkalosis is first treated with saline and potassium before pyloromyotomy",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "Chloride 86 mEq/L and bicarbonate 34 mEq/L show an uncorrected alkalosis that makes immediate surgery unsafe",
+   "steps": 3,
+   "chain": [
+    "Projectile nonbilious vomiting at 5 weeks + olive mass + pyloric muscle 5 mm -> hypertrophic pyloric stenosis",
+    "Chloride 86, potassium 3.0, bicarbonate 34 -> hypochloremic hypokalemic metabolic alkalosis with dehydration",
+    "Alkalosis raises postoperative apnea risk -> saline and potassium first, surgery later"
+   ],
+   "key": [
+    {
+     "item": "forceful, nonbilious vomiting after every feeding",
+     "why": "Gastric outlet obstruction above the ampulla",
+     "also": []
+    },
+    {
+     "item": "olive-shaped mass",
+     "why": "Hypertrophied pylorus",
+     "also": []
+    },
+    {
+     "item": "pyloric muscle thickness of 5 mm",
+     "why": "Diagnostic of pyloric stenosis",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "chloride 86 mEq/L, bicarbonate 34 mEq/L",
+     "why": "Alkalosis must be corrected before surgery",
+     "also": []
+    },
+    {
+     "item": "potassium 3.0 mEq/L",
+     "why": "Potassium is added to the fluid",
+     "also": []
+    },
+    {
+     "item": "capillary refill time is 3 seconds",
+     "why": "Dehydration needing a saline bolus",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "glucose 82 mg/dL",
+     "why": "Normal — dextrose is still included in maintenance fluid",
+     "also": []
+    }
+   ],
+   "summary": "Pyloric stenosis has caused hypochloremic hypokalemic alkalosis with dehydration. Saline and then potassium-containing fluid come first; pyloromyotomy follows after correction.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the infant were rehydrated with chloride above 100 mEq/L and bicarbonate below 30 mEq/L, pyloromyotomy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0589",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·산과·응급·외과·부인과·소아·내분비·예방의학·정신)",
+  "subtopic": "부인과 — 혈역학적으로 안정한 난관 임신의 치료 선택",
+  "type": "부인과 — 혈역학적으로 안정한 난관 임신의 치료 선택",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-08",
+  "vignette": "29세 여자가 마지막 월경 후 6주째에 이틀 전부터 생긴 왼쪽 아랫배의 약한 통증과 소량의 질출혈로 왔다. 2년 전 클라미디아 골반염을 치료받았다. 혈압 118/74 mmHg, 맥박 78회/분 이다. 복부는 부드럽고 반발압통이 없으며, 왼쪽 부속기에 경미한 압통이 있다. 혈청 β-hCG 는 2,600 mIU/mL 이고 48시간 전 2,400 mIU/mL 였다. 질초음파에서 자궁 안에 임신낭이 없고, 왼쪽 부속기에 2.8 cm 종괴가 있으며 태아 심박동은 없고 골반 안 액체는 소량이다. 혈색소 12.8 g/dL, 혈청 크레아티닌과 간기능은 정상이다. 앞으로 임신을 원한다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "자궁 내막 흡인술을 한다",
+   "개복하여 난관 문합술을 한다",
+   "메토트렉세이트를 근육 주사한다",
+   "복강경 난관절제술을 한다",
+   "48시간 뒤 β-hCG 를 다시 측정하며 기대요법을 한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: β-hCG 가 판별역(약 3,500 mIU/mL)에 가까운데도 자궁 안에 임신낭이 없고 부속기에 종괴가 있으며 β-hCG 가 48시간에 8 % 만 올랐다 — 정상 자궁 내 임신의 최소 상승폭(약 35 %)에 못 미치므로 난관 임신이다. 활력징후가 안정적이고 복막 자극 증상이 없어 파열 근거가 없으며, β-hCG 5,000 mIU/mL 미만·종괴 3.5 cm 미만·태아 심박동 없음·간신장 기능 정상이므로 메토트렉세이트의 좋은 대상이다. 다음 임신을 원하는 환자에서 수술 없이 난관을 보존한다.\n- 원리: <b>왜 메토트렉세이트가 듣나</b>: 메토트렉세이트는 엽산 대사 효소(디하이드로엽산 환원효소)를 막아 빠르게 분열하는 영양막세포의 DNA 합성을 멈춘다. 영양막이 적을수록, 즉 <b>β-hCG 가 낮고 종괴가 작고 심박동이 없을수록</b> 성공률이 높다. β-hCG 5,000 mIU/mL 미만에서 단회 요법 성공률이 약 90 % 이고, 그 이상에서는 실패가 늘어 수술이나 다회 요법을 고려한다.<br> <b>왜 활력징후가 먼저인가</b>: 난관 임신의 가장 위험한 결과는 파열에 의한 복강 내 출혈이다. 저혈압·빈맥·반발압통·많은 혈복강이 있으면 약을 기다릴 시간이 없어 즉시 수술한다. 안정적일 때만 약물이나 기대요법을 논의할 수 있다.<br> <b>왜 기대요법이 아닌가</b>: 기대요법은 β-hCG 가 낮고(대개 200~1,500 mIU/mL 이하) <b>저절로 떨어지는</b> 경우에 쓴다. 이 환자는 β-hCG 가 여전히 오르고 있어 영양막이 살아 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">메토트렉세이트(정답)</th><th>복강경 난관절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>활력징후</td><td>안정, 파열 근거 없음</td><td><b>불안정</b>, 복막 자극, 많은 혈복강</td></tr> <tr><td>β-hCG</td><td>5,000 mIU/mL 미만</td><td>높음(실패 위험)</td></tr> <tr><td>종괴·심박동</td><td>3.5 cm 미만, 심박동 없음</td><td>크거나 심박동 있음</td></tr> <tr><td>추적</td><td>4·7일째 β-hCG 15 % 감소 확인 가능</td><td>추적 불가·약 금기(간신장 질환, 수유)</td></tr> </tbody></table> 같은 난관 임신이라도 파열 여부와 영양막의 양(β-hCG·크기·심박동), 그리고 추적 가능성이 수술과 약을 가른다.\n- 오답 이유:\n  - ① 자궁 내막 흡인술은 자궁 내 임신 실패와 위치 불명 임신을 가르려고 융모 조직을 확인할 때, 즉 부속기 종괴가 보이지 않을 때 정답이 된다.\n  - ② 개복 난관 문합술은 과거 난관 결찰 뒤 임신을 원할 때 하는 복원 수술일 때 정답이 되며, 급성 난관 임신의 치료가 아니다.\n  - ④ 복강경 난관절제술은 저혈압·반발압통·많은 혈복강으로 파열이 의심되거나, β-hCG 가 높거나 태아 심박동이 있어 약물 실패 위험이 클 때 정답이 된다.\n  - ⑤ 기대요법은 β-hCG 가 낮고(대개 1,500 mIU/mL 이하) 반복 측정에서 저절로 떨어지며 증상이 거의 없을 때 정답이 된다.\n- 함정: 부속기 종괴만 보면 수술로 가는 것 — 활력징후가 안정적이고 β-hCG 5,000 미만·3.5 cm 미만·심박동 없음이면 메토트렉세이트로 난관을 보존한다.\n- 학습목표: 혈역학적으로 안정하고 β-hCG 가 낮으며 태아 심박동이 없는 작은 난관 임신을 메토트렉세이트로 치료하고, 수술과 기대요법의 적응과 가른다\n- 근거·출처: American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol. 2018;131(3):e91-e103",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "β-hCG 가 판별역(약 3,500 mIU/mL)에 가까운데도 자궁 안에 임신낭이 없고 부속기에 종괴가 있으며 β-hCG 가 48시간에 8 % 만 올랐다 — 정상 자궁 내 임신의 최소 상승폭(약 35 %)에 못 미치므로 난관 임신이다. 활력징후가 안정적이고 복막 자극 증상이 없어 파열 근거가 없으며, β-hCG 5,000 mIU/mL 미만·종괴 3.5 cm 미만·태아 심박동 없음·간신장 기능 정상이므로 메토트렉세이트의 좋은 대상이다. 다음 임신을 원하는 환자에서 수술 없이 난관을 보존한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 메토트렉세이트가 듣나</b>: 메토트렉세이트는 엽산 대사 효소(디하이드로엽산 환원효소)를 막아 빠르게 분열하는 영양막세포의 DNA 합성을 멈춘다. 영양막이 적을수록, 즉 <b>β-hCG 가 낮고 종괴가 작고 심박동이 없을수록</b> 성공률이 높다. β-hCG 5,000 mIU/mL 미만에서 단회 요법 성공률이 약 90 % 이고, 그 이상에서는 실패가 늘어 수술이나 다회 요법을 고려한다.<br> <b>왜 활력징후가 먼저인가</b>: 난관 임신의 가장 위험한 결과는 파열에 의한 복강 내 출혈이다. 저혈압·빈맥·반발압통·많은 혈복강이 있으면 약을 기다릴 시간이 없어 즉시 수술한다. 안정적일 때만 약물이나 기대요법을 논의할 수 있다.<br> <b>왜 기대요법이 아닌가</b>: 기대요법은 β-hCG 가 낮고(대개 200~1,500 mIU/mL 이하) <b>저절로 떨어지는</b> 경우에 쓴다. 이 환자는 β-hCG 가 여전히 오르고 있어 영양막이 살아 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">메토트렉세이트(정답)</th><th>복강경 난관절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>활력징후</td><td>안정, 파열 근거 없음</td><td><b>불안정</b>, 복막 자극, 많은 혈복강</td></tr> <tr><td>β-hCG</td><td>5,000 mIU/mL 미만</td><td>높음(실패 위험)</td></tr> <tr><td>종괴·심박동</td><td>3.5 cm 미만, 심박동 없음</td><td>크거나 심박동 있음</td></tr> <tr><td>추적</td><td>4·7일째 β-hCG 15 % 감소 확인 가능</td><td>추적 불가·약 금기(간신장 질환, 수유)</td></tr> </tbody></table> 같은 난관 임신이라도 파열 여부와 영양막의 양(β-hCG·크기·심박동), 그리고 추적 가능성이 수술과 약을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 자궁 내막 흡인술은 자궁 내 임신 실패와 위치 불명 임신을 가르려고 융모 조직을 확인할 때, 즉 부속기 종괴가 보이지 않을 때 정답이 된다.\n② 개복 난관 문합술은 과거 난관 결찰 뒤 임신을 원할 때 하는 복원 수술일 때 정답이 되며, 급성 난관 임신의 치료가 아니다.\n④ 복강경 난관절제술은 저혈압·반발압통·많은 혈복강으로 파열이 의심되거나, β-hCG 가 높거나 태아 심박동이 있어 약물 실패 위험이 클 때 정답이 된다.\n⑤ 기대요법은 β-hCG 가 낮고(대개 1,500 mIU/mL 이하) 반복 측정에서 저절로 떨어지며 증상이 거의 없을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "부속기 종괴만 보면 수술로 가는 것 — 활력징후가 안정적이고 β-hCG 5,000 미만·3.5 cm 미만·심박동 없음이면 메토트렉세이트로 난관을 보존한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈역학적으로 안정하고 β-hCG 가 낮으며 태아 심박동이 없는 작은 난관 임신을 메토트렉세이트로 치료하고, 수술과 기대요법의 적응과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol. 2018;131(3):e91-e103"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "혈역학적으로 안정하고 β-hCG 5,000 미만·종괴 3.5 cm 미만·심박동이 없는 난관 임신은 메토트렉세이트로 치료한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "활력징후가 안정적이고 반발압통이 없으며 메토트렉세이트 적응 기준을 모두 만족한다",
+   "steps": 3,
+   "chain": [
+    "자궁 안 임신낭 없음 + 부속기 종괴 + β-hCG 48시간 상승 8 % → 난관 임신",
+    "혈압 안정·반발압통 없음·골반 액체 소량 → 파열 근거 없음",
+    "β-hCG 2,600·종괴 2.8 cm·심박동 없음·간신장 정상 → 메토트렉세이트"
+   ],
+   "key": [
+    {
+     "item": "자궁 안에 임신낭이 없고, 왼쪽 부속기에 2.8 cm 종괴가 있으며",
+     "why": "난관 임신의 직접 근거",
+     "also": []
+    },
+    {
+     "item": "혈청 β-hCG 는 2,600 mIU/mL 이고 48시간 전 2,400 mIU/mL 였다",
+     "why": "상승이 부족한 비정상 임신 + 메토트렉세이트 기준 이하",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "반발압통이 없으며",
+     "why": "파열에 의한 복강 내 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "태아 심박동은 없고",
+     "why": "약물 성공률이 높다",
+     "also": []
+    },
+    {
+     "item": "혈압 118/74 mmHg, 맥박 78회/분",
+     "why": "혈역학적으로 안정 — 즉시 수술이 필요 없다",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아티닌과 간기능은 정상이다",
+     "why": "메토트렉세이트 금기가 없다",
+     "also": []
+    },
+    {
+     "item": "앞으로 임신을 원한다",
+     "why": "난관 보존의 이득",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "2년 전 클라미디아 골반염을 치료받았다",
+     "why": "난관 임신 위험인자 — 치료 선택은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "자궁 안 임신낭 없이 부속기 종괴와 상승이 부족한 β-hCG 로 난관 임신이다. 안정적이고 기준을 만족하므로 메토트렉세이트를 준다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈압이 떨어지고 반발압통과 많은 혈복강이 있으면 복강경 수술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261108T202711Z_일일영상_2026-11-09_9units_9q_644be9cf",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0584",
   "exam": "imaging",
   "style": "usmle_style",
