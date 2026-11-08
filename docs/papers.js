@@ -2,6 +2,43 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0915",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Effects of Sotatercept on Cardiac Structure and Function in Combined Post- and Precapillary Pulmonary Hypertension in Heart Failure With Preserved Ejection Fraction: Analysis of the CADENCE Study",
+  "authors": [
+   "Tedford Ryan J",
+   "Badagliacca Roberto",
+   "Asleh Rabea",
+   "Urbinati Alessia",
+   "Kopeć Grzegorz",
+   "Langleben David",
+   "Rosenkranz Stephan",
+   "Rubinshtein Ronen",
+   "et al."
+  ],
+  "journal": "Circulation",
+  "doi": "10.1161/CIRCULATIONAHA.126.083993",
+  "pmid": "42999959",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42999959/",
+  "pubdate": "2026-11-08",
+  "date": "2026-11-08",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0914",
   "topic": "Surgery",
   "subtopic": "",
