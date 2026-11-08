@@ -23416,7 +23416,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-06",
   "reviewStatus": "unreviewed",
-  "hash": "fa6d357e80e5eb20",
+  "hash": "f6a99f66de0b5b5e",
   "summary": [
    "결론: 열·호중구 증가 + 갑자기 생긴 아프고 부은 붉은 판 + 혈관염 없는 진피 호중구 침윤 = 스위트증후군.",
    "시험 단서: 상기도 감염 뒤 중년 여자, 얼굴·목·팔의 가짜 물집 판, 항생제 무반응 (Sweet syndrome).",
@@ -106678,10 +106678,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Orthopedics"
   ],
-  "version": 1,
-  "updated": "2026-09-28",
+  "version": 2,
+  "updated": "2026-11-08",
   "reviewStatus": "unreviewed",
-  "hash": "6295d1fb01e16a3b",
+  "hash": "b80334e0828d60e6",
   "summary": [
    "결론: 마름모·막대 모양의 약한 양성(또는 무) 복굴절 결정 = 칼슘피로인산(CPP) 결정 관절염(pseudogout).",
    "시험 단서: 고령자 + 수술·중병 뒤 급성 무릎 단관절염 + X선 반달연골 선형 석회화(chondrocalcinosis).",
@@ -106851,7 +106851,28 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13730182_figure8-705-45-1064-631.jpg",
+    "kind": "radiograph",
+    "at": "가르는 소견 — 결정·영상·배양",
+    "shows": "손목 X선 — 삼각섬유연골복합체(TFCC)의 석회 침착(연골석회화증)",
+    "look": [
+     "자쪽 손목, 자뼈 머리와 세모뼈 사이(화살촉)의 가는 석회 음영"
+    ],
+    "label": "「Differential diagnosis. Wrist chondrocalcinosis. (A, B) Sagittal volar (A) and ulnar coronal (B) sonograms, with wrist X‐ray (B) in a 70‐year‐old female patient with CTS and episodes of acute wrist pain. In (A), B‐mode sonogram shows bulging of the volar capsule and ligaments of the wrist due to diffuse calcific deposits (black arrowheads). Note the appearance of the deposits: Diffuse, linear, punctate (black arrowheads). In (B), the same deposits can be found at the level of the TFCC. (C) the X‐ray image shows calcific deposits within the TFCC (open arrowheads), typical of chondrocalcinosis.」 — Ultrasound Findings in Symptomatic HADD of the Hand and Wrist. A Case Series of 37 Patients",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Ultrasound Findings in Symptomatic HADD of the Hand and Wrist. A Case Series of 37 Patients. Journal of Clinical Ultrasound",
+    "doiUrl": "https://doi.org/10.1002/jcu.70312",
+    "citedBy": null,
+    "credit": "Ultrasound Findings in Symptomatic HADD of the Hand and Wrist. A Case Series of 37 Patients. J Clin Ultrasound. 2026 Jul 13;54(9):2163–76. doi: 10.1002/jcu.70312 (CC BY) — FIGURE 8",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13730182/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "고령자의 급성 단관절염 — 감염 확인에서 결정 진단까지",
   "geo": {
    "title": "고령자의 급성 단관절염 — 감염 확인에서 결정 진단까지",

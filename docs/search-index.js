@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-07",
+ "generated": "2026-11-08",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4474,
+  "total": 4479,
   "byType": {
    "concept": 151,
-   "paper": 909,
+   "paper": 914,
    "imaging": 583,
    "kmle": 1728,
    "usmle": 240,
@@ -18,26 +18,26 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 311,
+   "Cardiology": 312,
    "Nephrology": 242,
-   "Infectious Disease": 220,
+   "Infectious Disease": 221,
    "Pediatrics": 208,
    "Obstetrics & Gynecology": 153,
    "Pathology": 135,
    "Rheumatology": 134,
    "Psychiatry": 130,
-   "Hematology-Oncology": 128,
+   "Hematology-Oncology": 129,
    "Neurology": 128,
    "Orthopedics": 119,
    "General Surgery": 116,
+   "Surgery": 115,
    "Endocrinology": 114,
-   "Surgery": 114,
    "Dermatology": 113,
    "Gastroenterology": 113,
    "Ophthalmology": 113,
    "Pulmonology": 111,
    "Hematology": 105,
-   "Laboratory Medicine": 94,
+   "Laboratory Medicine": 95,
    "산부인과": 78,
    "순환기": 70,
    "호흡기": 38,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3147,
-   "medium": 1274,
+   "medium": 1279,
    "low": 53
   },
   "tagCount": 5318
@@ -99,6 +99,91 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential.md",
    "snippet": "판단 — 흡기 때 두 심실을 함께 본다 먼저 우심방 곡선의 y 하강을 본다. y 가 약하거나 없고 모든 방의 확장기압이 같아지면 심장눌림증이다 [[harrison 22: 249장 p.1905]]. y 가 깊고 dip and plateau 가 있으면 수축 아니면 제한이다. 이 곡선 모양만으로는 둘을 가르지 못한다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 흡기 때 우심실 수축기압이 오르고 좌심실은 내",
    "text": "Cardiology 판단 — 흡기 때 두 심실을 함께 본다 먼저 우심방 곡선의 y 하강을 본다. y 가 약하거나 없고 모든 방의 확장기압이 같아지면 심장눌림증이다 [[harrison 22: 249장 p.1905]]. y 가 깊고 dip and plateau 가 있으면 수축 아니면 제한이다. 이 곡선 모양만으로는 둘을 가르지 못한다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 흡기 때 우심실 수축기압이 오르고 좌심실은 내리면(불일치) 수축성 심낭염이다. 해리슨은 이것을 수축에 가장 특이적인 소견으로 둔다 [[harrison 22: 249장 p.1906]]. 두 심실이 같이 움직이고, 확장기말압 차가 5 mmHg 를 넘고, 우심실 수축기압이 60 mmHg 를 넘으면 제한성 심근병증이다 [[harrison 22: 249장 p.1906]]. 기전 — 굳은 심낭은 두 심실을 한 부피로 묶는다 판막이 열린 확장기에는 심방과 심실이 「한 방」처럼 압력이 같다 [[harrison 22: 249장 p.1905]]. 그래서 우심방 곡선이 우심실 충만을 그대로 비춘다. 수축성 심낭염에서는 초기 확장기에 심실이 빠르게 차다가 굳은 심낭에 닿는 순간 충만이 갑자기 멈춘다. 빠른 충만이 깊은 y 하강을, 갑작스러운 멈춤이 dip and plateau(square root sign)를 만든다 [[harrison 22: 249장 p.1905–1906]]. 심낭이 두 심실의 전체 부피를 묶고 있으므로 흡기에 우심실로 피가 더 들어오면 좌심실 몫이 줄어 두 심실 수축기압이 반대로 움직인다(심실 상호의존). 심낭 안 압력이 두 심실에 똑같이 걸리므로 확장기말압도 5 mmHg 안으로 같아진다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 제한성 심근병증은 심근 자체가 굳은 것이다. 초기 충만이 막히는 곡선은 비슷하지만 심낭이 정상이라 두 심실이 따로 움직이고 흡기 변화가 일치한다. 좌심실이 더 굳어 확장기말압이 우심실보다 5 mmHg 이상 높고, 폐동맥·우심실 수축기압이 크게 오른다 [[harrison 22: 249장 p.1906]]. 심장눌림증은 액체가 확장기 내내 심장을 누른다. 우심방이 비지 못하므로 y 하강이 약해지고, 모든 방의 확장기압이 심낭압과 같아진다 [[harrison 22: 249장 p.1905]]. 가르는 소견 — 흡기 때 두 심실 정상값과 견주어 읽는다 — 우심방 평균 1–8 mmHg, 우심실 15–30/1–8 mmHg, 폐모세혈관쐐기 평균 4–12 mmHg, 좌심실 90–129/5–12 mmHg [[harrison 22: 249장 p.1905 · 표 249 2]]. 음성 결과의 한계: 기저에 확장기말압 차가 없더라도 급속 수액 부하 때 벌어질 수 있어 다시 본다 [[harrison 22: 249장 p.1906]]. 심낭압은 눌림·수축·삼출 수축에서 오르고 제한에서는 정상이다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 권고와 예외 우심도자는 일상 검사가 아니지만 원인 미상 호흡곤란·폐고혈압·심낭 질환·심실 기능 저하에서는 합당하다 [[harrison 22: 249장 p.1904]]. 심낭천자 뒤에도 우심방압이 50 % 이상 또는 10 mmHg 아래로 떨어지지 않으면 삼출 수축성 심낭염이다 — 눌림을 풀어도 굳은 심낭이 남은 것이다 [[harrison 22: 249장 p.1906 · 표 249 3]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 249장 p.1904~1906)"
+  },
+  {
+   "id": "paper-2026-0914",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of oral and maxillofacial surgery",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0914_is_virtual_planning_using_standardized_temporomandibular_joi.md",
+   "snippet": "Title Is virtual planning using standardized temporomandibular joint prostheses appropriate? Case series Authors Bengtsson M Journal / DOI International journal of oral and maxillofacial surgery · DOI: 10.1016/j.ijom.2026.10.011 · PMID: 429",
+   "text": "Surgery scraped pubmed PubMed / International journal of oral and maxillofacial surgery Title Is virtual planning using standardized temporomandibular joint prostheses appropriate? Case series Authors Bengtsson M Journal / DOI International journal of oral and maxillofacial surgery · DOI: 10.1016/j.ijom.2026.10.011 · PMID: 42995066 https://pubmed.ncbi.nlm.nih.gov/42995066/ Abstract The evolution of virtual surgical planning of advanced corrections of the temporomandibular joint with a total joint replacement (TJR), and with simultaneous corrections of dentofacial deformities, has contributed to a profound improvement of treatment possibilities. However, in cases where virtual surgical planning has been desirable, a customized TJR has up to now been preferred. As such, a customized patient specific implant always comes with a higher cost compared to a standardized total joint replacement design. The present technical note illustrates how virtual surgical planning is possible to perform using available standardized total temporomandibular joint replacement. In detail, workflow, and all features of valuable image information, such as resection models, drilling depths, and occlusal, splints are presented. The largest distances of movements in this sample were 37 mm anterior reposition of the chin together with 22 mm vertical reposition of the mandibular angle. The suggested method combines the advantages of virtual surgical planning with the economic advantages of standardized design of TJR. However, a future comparison of the outcome with the patient specific TJR is warranted. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0913",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ISA transactions",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0913_a_cross_domain_geometric_temporal_correlation_network_for_be.md",
+   "snippet": "Title A cross domain geometric temporal correlation network for bearing fault diagnosis under varying operating conditions Authors Zhu Jing, Liang Shilei, Liao Ting, Chen Minghui, Cao Siyuan Journal / DOI ISA transactions · DOI: 10.1016/j.i",
+   "text": "Laboratory Medicine scraped pubmed PubMed / ISA transactions Title A cross domain geometric temporal correlation network for bearing fault diagnosis under varying operating conditions Authors Zhu Jing, Liang Shilei, Liao Ting, Chen Minghui, Cao Siyuan Journal / DOI ISA transactions · DOI: 10.1016/j.isatra.2026.10.023 · PMID: 42995130 https://pubmed.ncbi.nlm.nih.gov/42995130/ Abstract Under varying speed and load conditions, vibration signals often exhibit nonstationary responses and spectral energy redistribution, which can reorganize latent fault representations and degrade diagnostic performance under unlabeled target operating conditions. Existing cross domain diagnosis methods mainly rely on statistical distribution alignment, but they do not explicitly account for condition induced representation reorganization, which may limit the stability of learned fault representations across operating conditions. To address this issue, this paper proposes a Cross domain Geometric Temporal Correlation Network (CrossGTCN) for cross condition bearing fault diagnosis from a representation stability perspective. CrossGTCN coordinates relational modeling, cross view interaction, and geometry aware discrimination to improve the stability of condition sensitive representations. Specifically, a topology conditioned temporal modulation mechanism converts graph derived neighborhood information into feature wise modulation parameters to recalibrate temporal representations, while a frequency domain energy relation branch captures complementary spectral relationships associated with multi band energy redistribution. The resulting temporal structural and frequency domain representations are further coordinated through a mutual evidence cross view fusion mechanism, and the fused representation is regularized in an angular space to preserve class discriminative geometry across operating conditions. Experiments on 20 transfer tasks across the JNU, HUST, and SEU datasets show that CrossGTCN achieves an average diagnostic accuracy above 98%. Ablation and visualization results further demonstrate the effectiveness of the proposed framework in improving representation stability and cross condition discriminability. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0912",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical lymphoma, myeloma & leukemia",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0912_second_allogeneic_hematopoietic_cell_transplantation_for_pos.md",
+   "snippet": "Title Second Allogeneic Hematopoietic Cell Transplantation for Post Transplant Relapsed Acute Lymphoblastic Leukemia: Outcomes, Competing Risks, and the Impact of Bridging Salvage Therapy Authors Hur Joon Young, Choi Yunsuk, Lee Jung Hee Jo",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Clinical lymphoma, myeloma & leukemia Title Second Allogeneic Hematopoietic Cell Transplantation for Post Transplant Relapsed Acute Lymphoblastic Leukemia: Outcomes, Competing Risks, and the Impact of Bridging Salvage Therapy Authors Hur Joon Young, Choi Yunsuk, Lee Jung Hee Journal / DOI Clinical lymphoma, myeloma & leukemia · DOI: 10.1016/j.clml.2026.09.017 · PMID: 42995137 https://pubmed.ncbi.nlm.nih.gov/42995137/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0911",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / British journal of pharmacology",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0911_triptonide_alleviates_sepsis_associated_acute_lung_injury_by.md",
+   "snippet": "Title Triptonide alleviates sepsis associated acute lung injury by suppressing the STAT3/HIF 1α mediated aerobic glycolysis in macrophages Authors Zhu Junjie, Ou Zhuoyao, Ma Haochen, Huang Qiang, Pan Linmin, Xie Huating, Pan Guoquan, Jin Sh",
+   "text": "Infectious Disease scraped pubmed PubMed / British journal of pharmacology Title Triptonide alleviates sepsis associated acute lung injury by suppressing the STAT3/HIF 1α mediated aerobic glycolysis in macrophages Authors Zhu Junjie, Ou Zhuoyao, Ma Haochen, Huang Qiang, Pan Linmin, Xie Huating, Pan Guoquan, Jin Shengwei Journal / DOI British journal of pharmacology · DOI: 10.1111/bph.70725 · PMID: 42995143 https://pubmed.ncbi.nlm.nih.gov/42995143/ Abstract BACKGROUND AND PURPOSE: Sepsis associated acute lung injury (SA ALI), represents a major contributor to mortality among septic patients during the early hyperinflammatory phase. Triptonide, a diterpenoids extract from Tripterygium wilfordii Hook f has anticancer and contraceptive effects. However, its potential and mechanism in SA ALI are largely unknown. This study aims to evaluate the therapeutic efficacy and elucidate underlying mechanisms of triptonide in SA ALI to identify new clinical strategies. EXPERIMENTAL APPROACH: Lipopolysaccharide (LPS) induced endotoxemia model or caecal ligation and puncture (CLP) model was used to induce SA ALI in mice, accompanied by treatment with triptonide, triptolide and 2 methoxyestradiol. Parallel in vitro experiments involved LPS treated mouse primary macrophages cultured with or without triptonide. Transcriptomic sequencing of macrophages was performed to explore the anti inflammatory mechanisms of triptonide, which were further substantiated using specific activators, inhibitors and adeno associated virus (AAV) mediated gene targeting. KEY RESULTS: Our data shows that triptonide effectively inhibits macrophage pro inflammatory activation, reduces pulmonary inflammation and alleviates SA ALI pathology (i.e. inflammatory cell infiltration, oedema and cell apoptosis), thereby improving the survival of septic mice. Transcriptomic sequencing combined with metabolic analysis shows that triptonide suppresses aerobic glycolysis in pro inflammatory macrophages by inhibiting the Signal Transducer and Activator of Transcription 3 (STAT3)/Hypoxia inducible factor 1α (HIF 1α) axis. Notably, the therapeutic efficacy of triptonide against SA ALI was abolished in myeloid cell specific HIF 1α overexpressed mice (LyzM CreDIO hif1a mice). CONCLUSIONS AND IMPLICATIONS: Triptonide protects against SA ALI by suppressing the STAT3/HIF 1α signalling axis, thereby inhibiting aerobic glycolysis mediated pro inflammatory macrophage activation, which suggests that triptonide is a promising therapeutic strategy for SA ALI. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0910",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Archivos de bronconeumologia",
+   "confidence": "medium",
+   "date": "2026-11-07",
+   "path": "content/papers/2026/2026-11-07_paper-2026-0910_reply_to_lung_hyperinflation_beyond_copd_is_associated_with_.md",
+   "snippet": "Title Reply to: \"Lung Hyperinflation Beyond COPD is Associated with Proxies of Systemic Fluid Overload and Functional Impairment in Patients with Chronic Heart Failure\" Authors Núñez Julio, Miñana Gema, González Cruz Journal / DOI Archivos ",
+   "text": "Cardiology scraped pubmed PubMed / Archivos de bronconeumologia Title Reply to: \"Lung Hyperinflation Beyond COPD is Associated with Proxies of Systemic Fluid Overload and Functional Impairment in Patients with Chronic Heart Failure\" Authors Núñez Julio, Miñana Gema, González Cruz Journal / DOI Archivos de bronconeumologia · DOI: 10.1016/j.arbres.2026.10.008 · PMID: 42995111 https://pubmed.ncbi.nlm.nih.gov/42995111/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0909",

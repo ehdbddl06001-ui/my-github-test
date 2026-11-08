@@ -165,6 +165,9 @@ figures_wanted:
   - neutrophil
   - dermis
   modality: HISTOLOGY_HE
+figures_rejected:
+- asset: PMC-PMC13196428_Fig1
+  reason: 조직 패널(B)이 237×157 픽셀로 너무 작다 — 소견은 맞으나 인쇄 해상도 미달, 더 큰 조직 그림 필요
 ---
 
 ## 가르는 소견 — 자리·모양·조직

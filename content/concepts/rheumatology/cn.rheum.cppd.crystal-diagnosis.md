@@ -4,8 +4,8 @@ type: concept
 topic: Rheumatology
 see_also: [Orthopedics]
 date: 2026-09-28
-updated: 2026-09-28
-version: 1
+updated: 2026-11-08
+version: 2
 outline: h372            # 해리슨 21판 372장 Gout and Other Crystal-Associated Arthropathies
 confidence: medium
 review_status: unreviewed
@@ -103,13 +103,6 @@ variants:
     answer: "A"
     explanation: "폐렴 입원 중이라는 유발 상황, 손목이라는 자리, 성별이 달라도 결정 단서(약한 양성 복굴절 마름모·막대 결정, 연골석회화, 그람염색 음성)가 같다. 손목은 무릎 다음으로 흔한 가성통풍 자리이고 [[harrison-21: 372장 p.2865]], 중병이 유발한다. 요산이 약간 높아도 결정이 바늘 모양·음성 복굴절이 아니므로 통풍이 아니다. 배양 결과는 확인한다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 무릎 X선 — 반달연골의 선형 석회화(연골석회화증)
-  query: '"chondrocalcinosis" AND "calcium pyrophosphate" AND radiograph'
-  caption_terms:
-  - chondrocalcinosis
-  modality: XR_MSK
 figures_rejected:
 - asset: PMC-PMC12915063_FIGURE1
   reason: 그림 설명이 연골석회화증이 '없음'이라고 말하는 팔꿈치 X선(두 패널) — 무릎 반달연골 석회화 소견이 보이지 않음
@@ -127,6 +120,25 @@ figures_rejected:
   reason: 요청은 무릎 반달연골 선형 석회화인데 이 그림은 어깨(오목위팔관절) X선이고, 화살표 자리의 석회화가 흐려 연골석회화로 읽히지 않는다(회전근개 석회와 구분 불가) — 시험 단서 소견을 보여 주지 못함
 - asset: PMC-PMC9498090_Figure10
   reason: 요청은 무릎 X선 반달연골 선형 석회화인데 이 그림은 손 X선이고, 손목 연골석회화(파란 화살표)가 이 해상도에서 뚜렷이 보이지 않으며 좌우 표지에 이니셜(JLM)이 찍혀 있음 — 무릎 반달연골 석회화 그림을 다시 받는다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13730182_figure8-705-45-1064-631.jpg
+  kind: radiograph
+  at: 가르는 소견 — 결정·영상·배양
+  shows: 손목 X선 — 삼각섬유연골복합체(TFCC)의 석회 침착(연골석회화증)
+  look_for:
+  - 자쪽 손목, 자뼈 머리와 세모뼈 사이(화살촉)의 가는 석회 음영
+  label: '「Differential diagnosis. Wrist chondrocalcinosis. (A, B) Sagittal volar (A) and ulnar coronal (B) sonograms, with wrist X‐ray (B) in a 70‐year‐old female patient with CTS and episodes of acute wrist pain. In (A), B‐mode sonogram shows bulging of the volar capsule and ligaments of the wrist due to diffuse calcific deposits (black arrowheads). Note the appearance of the deposits: Diffuse, linear, punctate (black arrowheads). In (B), the same deposits can be found at the level of the TFCC. (C) the X‐ray image shows calcific deposits within the TFCC (open arrowheads), typical of chondrocalcinosis.」 — Ultrasound Findings in Symptomatic HADD of the Hand and Wrist. A Case Series of 37 Patients'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Ultrasound Findings in Symptomatic HADD of the Hand and Wrist. A Case Series of 37 Patients. Journal of Clinical Ultrasound
+  doi: 10.1002/jcu.70312
+  credit: 'Ultrasound Findings in Symptomatic HADD of the Hand and Wrist. A Case Series of 37 Patients. J Clin Ultrasound. 2026 Jul 13;54(9):2163–76. doi: 10.1002/jcu.70312 (CC BY) — FIGURE 8'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13730182/
+  asset: PMC-PMC13730182_FIGURE8
+  privacy_check: C 패널(손목 X선)만 잘라 냄 — 얼굴·문신·이름·병원 표지 없음, 패널 문자 제외
+  crop: 705,45,1064,631
 ---
 
 ## 판단 — 왜 가성통풍이 먼저인가
