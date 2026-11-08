@@ -1705,6 +1705,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.complete-rbbb.ecg-recognition",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0584.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -1975,6 +1976,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.psvt.narrow-regular-tachycardia-ecg",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0582.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -2112,6 +2114,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.salter-harris-ii.healing-callus-cast",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0576.png",
    "caption": "Lateral radiograph of the left wrist and distal forearm; side marker as in the original, resized only (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
@@ -2240,6 +2243,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.craniocervical-dislocation.no-traction-fusion",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0575.png",
    "caption": "경추 측면 단순 X선, 화살표·패널 글자는 원 논문 그림의 것 — 한 패널만 잘라냄, 그 밖의 변경 없음 (PMC Open Access Subset, CC BY)",

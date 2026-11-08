@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4523,
+  "total": 4527,
   "byType": {
    "kmle": 1760,
+   "concept": 155,
    "imaging": 595,
-   "concept": 151,
    "paper": 914,
    "usmle": 240,
    "anatomy": 846,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 314,
+   "Cardiology": 316,
    "Nephrology": 244,
    "Infectious Disease": 223,
    "Pediatrics": 210,
@@ -28,7 +28,7 @@ window.MEDKOS_INDEX = {
    "Psychiatry": 132,
    "Neurology": 130,
    "Hematology-Oncology": 129,
-   "Orthopedics": 121,
+   "Orthopedics": 123,
    "General Surgery": 118,
    "Endocrinology": 116,
    "Dermatology": 115,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3191,
-   "medium": 1279,
+   "medium": 1283,
    "low": 53
   },
   "tagCount": 5362
@@ -693,6 +693,62 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1764.md",
    "snippet": "67세 남자가 40분 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 6년 전 전벽 심근경색으로 스텐트를 넣었고 그 뒤 심부전 약을 먹고 있다. 응급실에 도착한 뒤 말이 어눌해지고 묻는 말에 엉뚱하게 대답하며, 이름을 부르면 눈을 뜬다. 피부는 차고 축축하다. 목동맥 맥박은 약하지만 규칙적으로 만져진다. 양쪽 폐 아래쪽에서 수포음이 들린다. 심전도 리듬은 그림과 같고 활력징후와 검사 결과는 자료와 같다. 정맥로는 확보되",
    "text": "Cardiology Sudden Palpitations, Hypotension and Confusion in a Man with an Old Anterior Infarction wide-complex-tachycardia hemodynamic-instability post-mi ecg KMLE 2026 / Claude 67세 남자가 40분 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 6년 전 전벽 심근경색으로 스텐트를 넣었고 그 뒤 심부전 약을 먹고 있다. 응급실에 도착한 뒤 말이 어눌해지고 묻는 말에 엉뚱하게 대답하며, 이름을 부르면 눈을 뜬다. 피부는 차고 축축하다. 목동맥 맥박은 약하지만 규칙적으로 만져진다. 양쪽 폐 아래쪽에서 수포음이 들린다. 심전도 리듬은 그림과 같고 활력징후와 검사 결과는 자료와 같다. 정맥로는 확보되어 있고 산소를 투여하기 시작했다. 다음 처치로 가장 적절한 것은? A. 아미오다론 150 mg 정맥 주입 B. 비동기 제세동 200 J 시행 C. 동기화 심율동전환 100 J 시행 D. 아데노신 6 mg 정맥 급속 주사 E. 베라파밀 5 mg 정맥 주사 심근경색 병력이 있는 환자의 규칙적인 넓은 QRS 빈맥은 반증되기 전까지 심실빈맥으로 다룬다. 저혈압·의식 변화·차고 축축한 피부·폐부종은 불안정의 징후라 약물로 시간을 쓰지 않고 즉시 전기충격을 준다. 목동맥 맥박이 만져지므로 비동기 제세동이 아니라 QRS 에 맞춘 동기화 심율동전환을 한다(가능하면 짧은 진정 후)."
+  },
+  {
+   "id": "cn.ortho.salter-harris-ii.healing-callus-cast",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-09",
+   "path": "content/concepts/orthopedics/cn.ortho.salter-harris-ii.healing-callus-cast.md",
+   "snippet": "판단 — 왜 석고 고정이 먼저인가 진단은 X선이 끝냈다 : 골절선이 성장판을 지나 골간단으로 나가면 Salter Harris II 형이다 [[?salter harris 1963]]. 추가 영상은 치료를 바꾸지 않는다. 골막 신생골은 시간표다 : 외상 2주 뒤 매끈한 골막 반응은 가골이다 — 열·CRP 가 정상이면 감염을 먼저 생각할 이유가 없다. 전위가 없으면 정복하지 않는다 : 이미 붙기 시작한 비전위 골절은 석고로 3~4주",
+   "text": "Orthopedics 판단 — 왜 석고 고정이 먼저인가 진단은 X선이 끝냈다 : 골절선이 성장판을 지나 골간단으로 나가면 Salter Harris II 형이다 [[?salter harris 1963]]. 추가 영상은 치료를 바꾸지 않는다. 골막 신생골은 시간표다 : 외상 2주 뒤 매끈한 골막 반응은 가골이다 — 열·CRP 가 정상이면 감염을 먼저 생각할 이유가 없다. 전위가 없으면 정복하지 않는다 : 이미 붙기 시작한 비전위 골절은 석고로 3~4주 더 고정한다 [[?rockwood 9: Fractures of the distal radius and ulna]]. 기전 — 약한 성장판에서 두꺼운 골막의 가골로 소아의 연골 성장판은 주변 인대·뼈보다 약해서, 어른이라면 손목 염좌가 될 손 짚고 넘어짐(fall on an outstretched hand, FOOSH)이 성장판을 떼어 낸다. II 형은 골절선이 성장판의 비대층을 따라가다 골간단으로 빠져나가, 골단에 붙은 골간단 삼각 조각(Thurston Holland 조각)을 남긴다 [[?salter harris 1963]]. 소아 골막은 두껍고 골형성 능력이 커서 외상 뒤 1~2주면 골막 아래 새 뼈(가골)가 X선에 보인다 [[?rockwood 9: Fractures of the distal radius and ulna]]. 첫날 X선에서 골절선이 미묘해 염좌로 보냈다가, 2주 뒤 가골로 골절이 드러나는 경우가 흔하다. 가르는 소견 — 골절선이 어디를 지나는가 다섯 유형은 골절선이 성장판·골간단·골단 중 어디를 지나는지로 나뉜다(표). 관절면을 지나는 III·IV 형은 해부학적 정복이 필요하다 [[?salter harris 1963]]. 정상 X선의 해석 한계: I·V 형은 처음 X선이 정상일 수 있다 — 성장판 위 압통이 남으면 고정 후 재평가하고, 그때 MRI 가 의미를 가진다. 골수염과의 구분은 영상만이 아니라 외상력·통증 경과·발열·CRP 를 함께 본다. 권고와 예외 성장판 골절은 고정 뒤 성장 정지·각 변형이 생길 수 있어 추적한다 [[?rockwood 9: Fractures of the distal radius and ulna]]. 2세 미만, 설명과 맞지 않는 손상, 시기가 다른 여러 골절이면 학대를 평가한다."
+  },
+  {
+   "id": "cn.ortho.craniocervical-dislocation.no-traction-fusion",
+   "type": "concept",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-09",
+   "path": "content/concepts/orthopedics/cn.ortho.craniocervical-dislocation.no-traction-fusion.md",
+   "snippet": "판단 — 왜 고정·유합이 먼저인가 분리 방향 : 기저가 치돌기 끝보다 크게 위로 떨어졌으면 머리뼈와 경추를 잇는 인대가 끊긴 세로 분리다 — 견인 금기 [[?bellabarba 2006]]. 신경 정상의 의미 : 신경 결손이 없다는 것은 아직 척수가 다치지 않았다는 뜻일 뿐, 안정하다는 뜻이 아니다. 외상성 경추 탈구는 고정이 필수다 [[harrison 22: 19장 p.132]]. 확정 처치 : 인대 손상은 저절로 붙지 않으",
+   "text": "Orthopedics 판단 — 왜 고정·유합이 먼저인가 분리 방향 : 기저가 치돌기 끝보다 크게 위로 떨어졌으면 머리뼈와 경추를 잇는 인대가 끊긴 세로 분리다 — 견인 금기 [[?bellabarba 2006]]. 신경 정상의 의미 : 신경 결손이 없다는 것은 아직 척수가 다치지 않았다는 뜻일 뿐, 안정하다는 뜻이 아니다. 외상성 경추 탈구는 고정이 필수다 [[harrison 22: 19장 p.132]]. 확정 처치 : 인대 손상은 저절로 붙지 않으므로 후두골과 위쪽 경추를 내고정해 유합한다 [[?bellabarba 2006]]. 기전 — 인대가 끊긴 세로 분리에서 척수 신장으로 후두골 고리뼈 중쇠뼈 이음부의 안정은 뼈가 아니라 덮개막(tectorial membrane)·날개인대(alar ligament) 같은 인대가 만든다. 고속 감속 손상에서 머리가 몸통보다 늦게 멈추며 이 인대가 끊어지면 머리뼈가 경추에서 위로·앞으로 떨어지고, 그 사이를 지나는 연수·위쪽 척수가 늘어난다 [[?bellabarba 2006]]. 그래서 측면 X선에서 기저 치돌기 간격이 넓어지고 출혈로 척추앞 연부조직이 두꺼워진다. 경추 운동의 절반이 고리중쇠관절(C1 C2)에서 나올 만큼 이 이음부는 원래 움직임이 크다 [[harrison 22: 19장 p.129]] — 인대가 없으면 붙잡을 것이 없다. 가르는 소견 — 분리 방향이 처치를 정한다 아래 경추 관절돌기 탈구는 척추체가 앞으로 미끄러지고 관절돌기가 걸린 것이라, 길이 방향으로 당기면 걸림이 풀려 제자리로 돌아온다 [[?atls 10]]. 같은 「탈구」라도 두개경추 탈구에서는 당기는 방향이 곧 손상 방향이다. 골절은 CT 로, 인대·척수는 MRI 로 본다 — CT 는 연부조직을 잘 보지 못한다 [[harrison 22: 19장 p.130]]. 정상 X선의 한계: 측면 X선에서 분리가 미묘하면 놓칠 수 있다 — 고에너지 손상에서 척추앞 부종이 있으면 CT·MRI 로 확인한다 [[harrison 22: 19장 p.130]]. 권고와 예외 영상 전부터, 그리고 수술 전까지 엄격한 고정을 유지한다 [[harrison 22: 19장 p.132]]. 굴곡·신전 X선은 불안정성 선별 검사지만 [[harrison 22: 19장 p.130]], 명백한 탈구에서는 찍지 않는다. 연성 보호대는 신경 소견 없는 급성 목 통증의 통증 완화용이다 [[harrison 22: 19장 p.132]] — 불안정 손상의 고정 수단이 아니다."
+  },
+  {
+   "id": "cn.cardio.psvt.narrow-regular-tachycardia-ecg",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-09",
+   "path": "content/concepts/cardiology/cn.cardio.psvt.narrow-regular-tachycardia-ecg.md",
+   "snippet": "판단 — 왜 발작성 상심실빈맥이 먼저인가 규칙성 : R R 이 고르면 심방세동이 아니다. 폭 : QRS < 120 ms 면 흥분이 히스 푸르키네 계로 내려온 상심실성 빈맥이다 [[harrison 22: 256장 p.1943]]. P파 : QRS 마다 앞에 정상 P파가 있으면 동빈맥, 없으면 P파가 QRS 안·뒤에 숨은 회귀빈맥을 먼저 생각한다 [[harrison 22: 256장 p.1939]]. 박동수와 톱니파 : 140~15",
+   "text": "Cardiology 판단 — 왜 발작성 상심실빈맥이 먼저인가 규칙성 : R R 이 고르면 심방세동이 아니다. 폭 : QRS < 120 ms 면 흥분이 히스 푸르키네 계로 내려온 상심실성 빈맥이다 [[harrison 22: 256장 p.1943]]. P파 : QRS 마다 앞에 정상 P파가 있으면 동빈맥, 없으면 P파가 QRS 안·뒤에 숨은 회귀빈맥을 먼저 생각한다 [[harrison 22: 256장 p.1939]]. 박동수와 톱니파 : 140~150회/분에 고정되고 하벽에 톱니파가 있으면 2:1 심방조동, 그렇지 않으면 PSVT [[harrison 22: 257장 p.1943]]. 애매하면 미주신경 자극·아데노신을 주며 기록한다 — 빈맥이 갑자기 멎으면 방실결절 의존(PSVT), 잠깐 느려지며 심방파가 드러나면 심방빈맥·조동 [[harrison 22: 256장 p.1942]]. 기전 — 방실결절 안의 두 길에서 숨은 P파로 방실결절로 들어가는 길이 둘(느린 길·빠른 길)이면, 흥분이 느린 길로 내려가 빠른 길로 거꾸로 올라오는 회귀가 생긴다 — 방실결절 회귀빈맥(atrioventricular nodal reentry tachycardia, AVNRT)으로 PSVT 의 가장 흔한 형태이고 20~40대·여성에 많다 [[harrison 22: 256장 p.1939]]. 결절에서 심방까지와 심실까지의 시간이 비슷해 심방과 심실이 거의 동시에 탈분극하므로 P파가 QRS 속에 묻히거나 끝에 붙어 V1 의 가성 r′, II·III·aVF 의 가성 S파로 보인다 [[harrison 22: 256장 p.1939]]. 닫힌 삼첨판에 심방이 수축하면 목정맥에 cannon a파가 생겨 목이 두근거린다 [[harrison 22: 256장 p.1939]]. 부전도로를 거꾸로 올라오는 정방향 방실 회귀빈맥(atrioventricular reciprocating tachycardia, AVRT)은 심실이 먼저 깨야 하므로 P파가 늘 QRS 뒤, ST 분절 안에 온다 [[harrison 22: 256장 p.1941]]. 가르는 소견 — 박동수·P파·톱니파 전형적 심방조동은 삼첨판륜을 도는 거대 회귀로 심방 240~300회/분, II·III·aVF 음성 톱니파를 만든다. 2:1 이면 심실 140~150회/분이고 조동파가 T파와 겹쳐 놓치기 쉽다 [[harrison 22: 257장 p.1943]]. 회로가 심방 안에서 닫혀 있는 심방빈맥·조동은 방실차단을 일으켜도 멎지 않고 심방파만 드러난다. 방실결절이 회로에 들어 있는 AVNRT·AVRT 는 방실차단이 빈맥을 끝낸다 [[harrison 22: 256장 p.1939]]. 정상 소견의 해석 한계: 한 유도에서 P파가 안 보여도 없는 것이 아니다 — V1 끝·하벽 끝부분과 T파 안을 같이 본다 [[harrison 22: 256장 p.1939]]. 권고와 예외 판독을 위해 12유도를 기록하되, 저혈압과 의식저하·호흡곤란이 있으면 QRS 동기화 전기적 동율동전환이 먼저다 [[harrison 22: 256장 p.1942]]. 안정하면 미주신경 자극(경동맥 잡음·뇌졸중 병력이 없을 때 경동맥동 마사지, 협조되면 발살바) → 정맥 아데노신 순서다 [[harrison 22: 256장 p.1942]]. 아데노신은 심장이식 환자에서 금기이고, 최대 15 % 에서 짧은 심방세동을 일으켜 WPW 에서는 조심한다 [[harrison 22: 256장 p.1943]]. 노인에서 빠른 PSVT 는 협심증·폐부종·저혈압·실신을 일으킬 수 있다 [[harrison 22: 256장 p.1939]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 256장 p.1938–1943, 257장 p.1943)"
+  },
+  {
+   "id": "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-09",
+   "path": "content/concepts/cardiology/cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry.md",
+   "snippet": "기전 — 정상 활동전위에서 세 가지 이상으로 심방·심실 근육세포의 활동전위는 0기(빠른 상승, Na 유입) → 1기(초기 재분극) → 2기(고원기, Ca 유입과 K 유출의 균형) → 3기(재분극, 주로 IKr·IKs) → 4기(휴지기)로 이어지고, 심실의 0기는 QRS, 1~2기는 ST, 3기는 T파에 대응한다 [[harrison 22: 250장 p.1910]] [[harrison 22: 250장 p.1911]]. 동결절은 4",
+   "text": "Cardiology 기전 — 정상 활동전위에서 세 가지 이상으로 심방·심실 근육세포의 활동전위는 0기(빠른 상승, Na 유입) → 1기(초기 재분극) → 2기(고원기, Ca 유입과 K 유출의 균형) → 3기(재분극, 주로 IKr·IKs) → 4기(휴지기)로 이어지고, 심실의 0기는 QRS, 1~2기는 ST, 3기는 T파에 대응한다 [[harrison 22: 250장 p.1910]] [[harrison 22: 250장 p.1911]]. 동결절은 4기에 If(funny current)로 천천히 탈분극해 스스로 박동을 만들고(자동능), 미주신경(IKACh 개방 → 과분극)은 이를 늦추며 β1 자극(L형 Ca 통로)은 빠르게 한다 [[harrison 22: 250장 p.1912]] [[harrison 22: 250장 p.1913]]. 자동능 항진(enhanced automaticity) : 4기 탈분극이 비정상적으로 빨라지거나, 폐정맥·관상정맥동·유출로·경색 경계부처럼 평소에는 자동능이 없는 곳이 박동을 만든다 [[harrison 22: 250장 p.1913]]. 촉발 활동(triggered activity) : 앞선 활동전위 끝의 후탈분극이 역치에 닿아 새 박동을 일으킨다. 조기 후탈분극(early afterdepolarization, EAD)은 2~3기, 지연 후탈분극(delayed afterdepolarization, DAD)은 4기에 생긴다 [[harrison 22: 250장 p.1913]]. 회귀(reentry) : 흥분파가 원을 돌며 다시 깨운다. 일방향 차단과 느린 전도가 필요하고, 회로 길이가 파장(λ = 전도속도 θ × 불응기 tr)보다 길어 흥분 간극이 남을 때 유지된다 [[harrison 22: 250장 p.1914]]. 가르는 소견 — 기전별 원인·예·치료 결절 조직은 Ca 가, 심방·심실은 Na 가 상승기를 이끈다 — 그래서 Ca 통로 차단제는 결절 빈맥에, Na 통로 차단제는 심방·심실 빈맥에 듣는다 [[harrison 22: 250장 p.1912]]. 해부학적 회귀는 흉터·부전도로·판륜 같은 고정 장벽을 돌아 안정하고, 기능적 회귀(심방세동·심실세동)는 불응 조직 둘레를 돌아 불안정하며 여러 회로가 떠돈다 [[harrison 22: 250장 p.1914]]. 허혈·경색은 흉터 섬(해부학적 회귀 기질)과 경계부 손상 심근(자동능·촉발)을 함께 만들고, 커넥신 감소로 전도를 늦춘다 [[harrison 22: 250장 p.1914]]. 선택 — 기전에 맞춘 치료 자동능: 4기 탈분극을 늦춘다(Ca 통로 차단제·β 차단제·이바브라딘), 병소를 찾아 절제·격리한다 [[harrison 22: 250장 p.1914]]. 촉발 활동: 유발 요인 교정이 가장 효과적이다 [[harrison 22: 250장 p.1914]]. 회귀: 불응기를 늘려(K 통로 차단제) 파장을 회로보다 길게 한다. Na 통로 차단제는 전도를 충분히 늦춰 회로를 끊을 만큼 써야 하며, 어중간하면 흥분 간극을 넓혀 부정맥을 부른다 [[harrison 22: 250장 p.1914]]. 해부학적 회로는 절제선으로 끊는다 [[harrison 22: 250장 p.1914]]. 정상 결과의 해석 한계: 자동능 빈맥은 일시적·다인성이라 전기생리검사에서 유발되지 않을 수 있다 — 유발되지 않았다고 배제하지 않는다 [[harrison 22: 250장 p.1915]]. 권고와 예외 휴식 심전도는 약 6초만 기록하므로 간헐적 부정맥은 증상 빈도에 맞춘 장시간 감시로 잡는다(매일 증상이면 24~48시간 Holter) [[harrison 22: 250장 p.1915]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 250장 p.1910–1915)"
   },
   {
    "id": "imaging-2026-0596",

@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: []
 date: 2026-11-02
-updated: 2026-11-02
-version: 2
+updated: 2026-11-09
+version: 4
 outline: h240
 confidence: medium
 review_status: unreviewed
@@ -27,6 +27,11 @@ pitfalls:
     exception: "둘이 함께 있을 수 있다(우각차단 + 좌전섬유속 차단 = 이섬유속 차단) — 넓은 V1 rsR′ 에 축이 −45° 보다 왼쪽이면 둘 다 읽는다."
     cites: ["harrison-22: 247장 p.1872"]
     covers: ["imaging-2026-0514:D"]
+  - contrast: "불완전 우각차단 vs 완전 우각차단"
+    point: "V1 rsR′ 모양만으로는 둘을 가르지 못한다 — 폭이 가른다. 가장 넓은 유도의 QRS 가 120 ms 이상이면 완전, 약 110~120 ms 면 불완전 우각차단이다. 불완전형은 I·V6 끝 S파도 작고 좁다."
+    exception: "심방중격결손의 우심실 용적 과부하도 불완전·완전 우각차단 양상을 만든다 — S2 고정 분열·우심실 확장 소견이 함께면 구조 질환을 찾는다."
+    cites: ["harrison-22: 247장 p.1871"]
+    covers: ["imaging-2026-0584:C"]
   - contrast: "완전 좌각차단 vs 완전 우각차단"
     point: "둘 다 QRS ≥ 0.12초. 좌각차단은 V1 이 넓고 깊은 QS(끝이 아래로), V6 은 q 없는 넓은 R 이다. V1 끝이 위로 서는 R′ 이면 우각차단이다."
     cites: ["harrison-22: 247장 p.1871"]
@@ -132,6 +137,26 @@ variants:
     answer: "D"
     explanation: "나이·성별·검사 경위가 바뀌었지만 결정 단서는 같다 — QRS ≥ 0.12초, V1 끝이 위로 서는 rsR′, I·V6 넓은 S파. 축은 정상이라 좌전섬유속 차단은 함께 있지 않고, ST 상승이 없어 브루가다 양상도 아니다. S2 분열이 들숨에 더 벌어져 고정 분열(심방중격결손)이 아니다."
     kind: application
+  - id: v3
+    of: imaging-2026-0584
+    flip: true
+    changed: "QRS 0.10초·I·V6 작은 S → QRS 0.13초·I·V6 넓고 둔한 S ⇒ 정답이 불완전 우각차단에서 완전 우각차단으로"
+    context: "같은 입사 검진 상황, 소견을 글로 바꾼 변형(그림 없음)"
+    stem: "A 37-year-old man undergoes a preemployment medical examination. He has no symptoms and jogs regularly. He has never had palpitations or syncope, and there is no family history of sudden cardiac death. His pulse is 76/min, and blood pressure is 122/76 mm Hg. Cardiac examination shows wide splitting of the second heart sound that increases with inspiration; there are no murmurs. Serum electrolyte concentrations are within the reference range. A 12-lead ECG shows sinus rhythm with a PR interval of 0.16 seconds, a QRS duration of 0.13 seconds, an rsR′ pattern in lead V1 with a broad terminal R′, broad slurred S waves in leads I and V6, no ST-segment elevation in V1 or V2, and a frontal-plane QRS axis of +60°. Which of the following is the most likely interpretation of this ECG?"
+    choices: ["A. Left anterior fascicular block", "B. Sinus rhythm with incomplete RBBB", "C. Sinus rhythm with complete RBBB", "D. Type 1 Brugada pattern", "E. Wolff-Parkinson-White pattern"]
+    answer: "C"
+    explanation: "The V1 rsR′ shape is the same as in the original item, but the QRS is now 0.13 seconds with broad S waves in I and V6. A QRS of 120 ms or more with this morphology is complete RBBB; 110 to 120 ms would be incomplete. There is no ST elevation (not Brugada), the PR interval is normal without a delta wave (not WPW), and the axis is normal (no left anterior fascicular block)."
+    kind: application
+  - id: v4
+    of: imaging-2026-0584
+    flip: false
+    changed: "37세 남자 입사 검진·심전도 그림 → 24세 여자 대학 체육 특기생 검진·소견을 글로 제시 ⇒ V1 rsR′·QRS 0.10초라는 결정 단서는 같아 답은 그대로 불완전 우각차단"
+    context: "겉모습만 바꾼 글 변형(그림 없음)"
+    stem: "A 24-year-old woman comes for a preparticipation sports examination before joining her university rowing team. She has no symptoms and trains 6 days a week. She has never fainted, and there is no family history of sudden death. She takes no medications. Her pulse is 58/min, and blood pressure is 112/70 mm Hg. Cardiac examination shows physiologic splitting of the second heart sound and no murmurs. A 12-lead ECG shows sinus bradycardia with a PR interval of 0.18 seconds, a QRS duration of 0.10 seconds, an rSr′ pattern in lead V1 with a small, narrow terminal r′, small narrow S waves in leads I and V6, no ST-segment elevation in V1 or V2, and a QRS axis of +75°. Which of the following is the most likely interpretation of this ECG?"
+    choices: ["A. Type 1 Brugada pattern", "B. Sinus rhythm with complete RBBB", "C. Wolff-Parkinson-White pattern", "D. Sinus rhythm with incomplete RBBB", "E. Left posterior fascicular block"]
+    answer: "D"
+    explanation: "Age, sex, and the reason for the ECG changed, but the deciding findings did not: an rSr′ in V1 with a QRS under 0.12 seconds is incomplete RBBB. Complete RBBB needs a QRS of 120 ms or more. There is no coved ST elevation (Brugada), no short PR or delta wave (WPW), and the axis is not right of +110° (left posterior fascicular block)."
+    kind: application
 figures:
 - id: f1
   file: docs/assets/figures/ptbxl-00903.png
@@ -152,6 +177,24 @@ figures:
   asset: PTBXL-00903
   paper_cited_by: 1213
   from_question: imaging-2026-0514
+- id: f2
+  file: docs/assets/figures/ptbxl-05455.png
+  kind: ecg
+  at: 가르는 소견 — 폭·V1 끝·축
+  shows: 불완전 우각차단 — QRS 가 넓지 않은 우각차단 양상
+  look_for:
+  - 모든 유도의 QRS 폭이 0.12초(작은 칸 3개)에 못 미침
+  - V5·V6 끝부분의 작고 좁은 S파
+  label: incomplete right bundle branch block (SCP IRBBB, 가능도 100)
+  label_basis: dataset_expert
+  reference: 심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만
+  paper: Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154
+  doi: 10.1038/s41597-020-0495-6
+  credit: PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5455
+  license: Creative Commons Attribution 4.0 International
+  url: https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel
+  asset: PTBXL-05455
+  paper_cited_by: 1213
 ---
 
 ## 판단 — 넓은 QRS 를 읽는 순서

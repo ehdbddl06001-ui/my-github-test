@@ -3552,6 +3552,654 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry": {
+  "id": "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry",
+  "title": "빈맥의 세 기전 — 자동능·촉발·회귀가 치료를 정한다",
+  "objective": "빈맥을 자동능 항진·촉발 활동(조기·지연 후탈분극)·회귀로 나누고 기전마다 맞는 치료(4기 억제·유발 요인 교정·불응기 연장·회로 절제)를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "빈맥성 부정맥의 기전(mechanisms of tachyarrhythmias)",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Pharmacology",
+   "Physiology"
+  ],
+  "version": 1,
+  "updated": "2026-11-09",
+  "reviewStatus": "unreviewed",
+  "hash": "2ac159dfa791c257",
+  "summary": [
+   "결론: 자동능 항진은 4기 억제, 촉발 활동은 유발 요인 교정, 회귀는 불응기 연장·회로 절제로 다스린다.",
+   "시험 단서: QT 연장+저칼륨·저마그네슘·서맥 → 조기 후탈분극(EAD)·염전성 심실빈맥(TdP), 디곡신 중독 → 지연 후탈분극(DAD).",
+   "왜: 회귀는 일방향 차단과 느린 전도가 있어야 돌고, 회로 길이가 파장(전도속도 × 불응기)보다 길 때 유지된다.",
+   "전도만 늦추는 약(Na 통로 차단제)은 흥분 간극을 넓혀 오히려 회귀를 부를 수 있다 — 항부정맥제의 부정맥 유발.",
+   "해부학적 회귀(조동·AVNRT·AVRT·흉터 VT)는 절제로 끊기고, 기능적 회귀(심방세동·심실세동)는 절제로 잘 안 끊긴다."
+  ],
+  "sections": [
+   {
+    "title": "기전 — 정상 활동전위에서 세 가지 이상으로",
+    "deep": false,
+    "html": "<p>심방·심실 근육세포의 활동전위는 0기(빠른 상승, Na 유입) → 1기(초기 재분극) → 2기(고원기, Ca 유입과 K 유출의 균형) → 3기(재분극, 주로 IKr·IKs) → 4기(휴지기)로 이어지고, 심실의 0기는 QRS, 1~2기는 ST, 3기는 T파에 대응한다 <sup>[1 250장 p.1910]</sup> <sup>[1 250장 p.1911]</sup>. 동결절은 4기에 If(funny current)로 천천히 탈분극해 스스로 박동을 만들고(자동능), 미주신경(IKACh 개방 → 과분극)은 이를 늦추며 β1 자극(L형 Ca 통로)은 빠르게 한다 <sup>[1 250장 p.1912]</sup> <sup>[1 250장 p.1913]</sup>.</p>\n<ul>\n<li><strong>자동능 항진(enhanced automaticity)</strong>: 4기 탈분극이 비정상적으로 빨라지거나, 폐정맥·관상정맥동·유출로·경색 경계부처럼 평소에는 자동능이 없는 곳이 박동을 만든다 <sup>[1 250장 p.1913]</sup>.</li>\n<li><strong>촉발 활동(triggered activity)</strong>: 앞선 활동전위 끝의 후탈분극이 역치에 닿아 새 박동을 일으킨다. 조기 후탈분극(early afterdepolarization, EAD)은 2~3기, 지연 후탈분극(delayed afterdepolarization, DAD)은 4기에 생긴다 <sup>[1 250장 p.1913]</sup>.</li>\n<li><strong>회귀(reentry)</strong>: 흥분파가 원을 돌며 다시 깨운다. 일방향 차단과 느린 전도가 필요하고, 회로 길이가 파장(λ = 전도속도 θ × 불응기 tr)보다 길어 흥분 간극이 남을 때 유지된다 <sup>[1 250장 p.1914]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 기전별 원인·예·치료",
+    "deep": false,
+    "html": "<ul>\n<li>결절 조직은 Ca 가, 심방·심실은 Na 가 상승기를 이끈다 — 그래서 Ca 통로 차단제는 결절 빈맥에, Na 통로 차단제는 심방·심실 빈맥에 듣는다 <sup>[1 250장 p.1912]</sup>.</li>\n<li>해부학적 회귀는 흉터·부전도로·판륜 같은 고정 장벽을 돌아 안정하고, 기능적 회귀(심방세동·심실세동)는 불응 조직 둘레를 돌아 불안정하며 여러 회로가 떠돈다 <sup>[1 250장 p.1914]</sup>.</li>\n<li>허혈·경색은 흉터 섬(해부학적 회귀 기질)과 경계부 손상 심근(자동능·촉발)을 함께 만들고, 커넥신 감소로 전도를 늦춘다 <sup>[1 250장 p.1914]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 기전에 맞춘 치료",
+    "deep": false,
+    "html": "<ul>\n<li>자동능: 4기 탈분극을 늦춘다(Ca 통로 차단제·β 차단제·이바브라딘), 병소를 찾아 절제·격리한다 <sup>[1 250장 p.1914]</sup>.</li>\n<li>촉발 활동: 유발 요인 교정이 가장 효과적이다 <sup>[1 250장 p.1914]</sup>.</li>\n<li>회귀: 불응기를 늘려(K 통로 차단제) 파장을 회로보다 길게 한다. Na 통로 차단제는 전도를 충분히 늦춰 회로를 끊을 만큼 써야 하며, 어중간하면 흥분 간극을 넓혀 부정맥을 부른다 <sup>[1 250장 p.1914]</sup>. 해부학적 회로는 절제선으로 끊는다 <sup>[1 250장 p.1914]</sup>.</li>\n<li>정상 결과의 해석 한계: 자동능 빈맥은 일시적·다인성이라 전기생리검사에서 유발되지 않을 수 있다 — 유발되지 않았다고 배제하지 않는다 <sup>[1 250장 p.1915]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>휴식 심전도는 약 6초만 기록하므로 간헐적 부정맥은 증상 빈도에 맞춘 장시간 감시로 잡는다(매일 증상이면 24~48시간 Holter) <sup>[1 250장 p.1915]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 250장 p.1910–1915)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "빈맥의 세 기전",
+    "columns": [
+     "기전",
+     "생기는 곳·원인",
+     "예 · 치료"
+    ],
+    "rows": [
+     [
+      "자동능 항진",
+      "4기 자발 탈분극이 빨라짐 — 동결절·방실결절·히스-푸르키네, 폐정맥, 경색 경계부",
+      "특발성 VT·심방빈맥·재관류 PVC · Ca 통로 차단제·β 차단제·이바브라딘, 병소 절제 <sup>[1 250장 p.1913]</sup> <sup>[1 250장 p.1914]</sup>"
+     ],
+     [
+      "촉발 — EAD",
+      "2~3기, QT 연장(약·저칼륨·저마그네슘·서맥)",
+      "TdP · 유발 요인 교정, 심박수 올리기 <sup>[1 250장 p.1913]</sup> <sup>[1 250장 p.1914]</sup>"
+     ],
+     [
+      "촉발 — DAD",
+      "4기, 세포 안 Ca 과부하(디곡신·허혈·카테콜아민)",
+      "양방향 VT · 디곡신 제거 <sup>[1 250장 p.1913]</sup> <sup>[1 250장 p.1914]</sup>"
+     ],
+     [
+      "회귀",
+      "일방향 차단 + 느린 전도, 회로 &gt; 파장",
+      "조동·AVNRT·AVRT·흉터 VT · 불응기 연장(K 통로 차단), 회로 절제 <sup>[1 250장 p.1914]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "느린 전도 = 항부정맥 효과?",
+    "point": "회귀를 끊는 것은 파장(전도속도 × 불응기)을 회로보다 길게 만드는 것이다. 불응기를 늘리는 K 통로 차단제는 파장을 늘리지만, 전도만 늦추면 파장이 짧아져 흥분 간극이 커지고 회귀가 쉬워진다 <sup>[1 250장 p.1914]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 250장 p.1914]</sup>"
+   },
+   {
+    "contrast": "EAD vs DAD",
+    "point": "조기 후탈분극은 2~3기(재분극 중)에 생기고 QT 연장이 바탕이라 염전성 심실빈맥을 부른다. 지연 후탈분극은 4기에 세포 안 Ca 과부하로 생기고 디곡신 중독·허혈·카테콜아민이 원인이며 양방향 심실빈맥이 대표다 <sup>[1 250장 p.1913]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 250장 p.1913]</sup>"
+   },
+   {
+    "contrast": "촉발 활동 = 항부정맥제?",
+    "point": "촉발 활동은 유발 요인을 없애는 것이 가장 효과적이다 — 디곡신 제거, QT 연장 약 중단, 필요하면 심박수를 올려 QT 를 줄인다 <sup>[1 250장 p.1914]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 250장 p.1914]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "4기 억제 = Ca 통로 차단제·β 차단제(교감 입력 차단)·이바브라딘(If 차단) <sup>[1 250장 p.1914]</sup>.",
+   "촉발 활동의 교정 = 디곡신 제거, QT 연장 약 중단, 심박수를 올려 QT 단축 <sup>[1 250장 p.1914]</sup>.",
+   "자동능 빈맥은 전기생리검사에서 유발되지 않을 수 있다 <sup>[1 250장 p.1915]</sup>.",
+   "기능적 회귀(심방세동·심실세동)는 고정 회로가 없어 절제로 기질을 끊기 어렵다 <sup>[1 250장 p.1914]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 250: Principles of Clinical Cardiac Electrophysiology",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 250장 p.1910–1917",
+    "checked": "드라이브 22판 장별 문서 H22_250 본문 대조 — 활동전위 0~4기와 심전도 대응(p.1910–1911) · Na·Ca 통로가 탈분극, K 통로가 재분극, K 통로 변이가 긴 QT(p.1911) · 심방·심실은 Na, 결절은 Ca 가 상승기를 이끌어 Na 차단제는 심방·심실, Ca 차단제는 결절에 듣는다, 동결절 4기 If(이바브라딘 표적), 푸르키네 2~3 m/s vs 심근 0.3~0.4 m/s(p.1912) · 기전 분류(자동능·촉발·회귀, 표 250-1), 미주신경 IKACh 과분극·β1 L형 Ca, 폐정맥·경색 경계부 자동능, EAD 2~3기·QT 연장·저칼륨·저마그네슘·서맥·TdP, DAD 4기·세포 안 Ca·디곡신·허혈·카테콜아민·양방향 VT(p.1913) · 회귀의 일방향 차단·느린 전도, 파장 = 전도속도 × 불응기, 흥분 간극, 해부학적(조동·AVNRT·AVRT·흉터 VT) vs 기능적(AF·VF) 회귀, 치료: 자동능 4기 억제, 촉발 유발 요인 교정, 회귀 불응기 연장(K 차단), 전도만 늦추면 부정맥 유발, 해부학적 회로는 절제로 끊기고 기능적 회귀는 절제가 비효과적(p.1914) · 자동능 빈맥은 전기생리검사에서 유발되지 않을 수 있음(p.1915)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-09",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "회귀가 시작·유지되는 두 조건은?",
+    "a": "일방향 차단과 느린 전도. 회로 길이가 파장(전도속도 × 불응기)보다 길면 흥분 간극이 생겨 계속 돈다."
+   },
+   {
+    "q": "디곡신 중독의 양방향 심실빈맥은 어떤 기전인가?",
+    "a": "지연 후탈분극(4기, 세포 안 Ca 과부하)에 의한 촉발 활동."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "빈맥 기전에서 치료로",
+  "geo": {
+   "title": "빈맥 기전에서 치료로",
+   "w": 678.1,
+   "h": 447.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "빈맥, 기전을 생각한다"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 207.1,
+     "y": 16.0
+    },
+    {
+     "id": "mech",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "어떤 기전인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 207.1,
+     "y": 85.0
+    },
+    {
+     "id": "ep",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "기전 불명 → 전기생리검사"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 94.1,
+     "y": 204.0
+    },
+    {
+     "id": "auto",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "자동능 — 4기 억제·병소 절제"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 294.0
+    },
+    {
+     "id": "trig",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "촉발 — 유발 요인 교정"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 320.1,
+     "y": 204.0
+    },
+    {
+     "id": "anat",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "고정된 회로가 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 353.1,
+     "y": 294.0
+    },
+    {
+     "id": "ablate",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "해부학적 회귀 — 회로 절제"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 240.1,
+     "y": 384.0
+    },
+    {
+     "id": "func",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "기능적 회귀 — 약·전기충격"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 466.1,
+     "y": 384.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "mech",
+     "points": [
+      [
+       305.1,
+       63.0
+      ],
+      [
+       305.1,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "mech",
+     "to": "auto",
+     "points": [
+      [
+       246.3,
+       132.0
+      ],
+      [
+       246.3,
+       181.0
+      ],
+      [
+       78.1,
+       181.0
+      ],
+      [
+       78.1,
+       280.0
+      ],
+      [
+       81.3,
+       280.0
+      ],
+      [
+       81.3,
+       294.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "자동능"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 225.8,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "mech",
+     "to": "trig",
+     "points": [
+      [
+       324.7,
+       132.0
+      ],
+      [
+       324.7,
+       190.0
+      ],
+      [
+       418.1,
+       190.0
+      ],
+      [
+       418.1,
+       204.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "후탈분극"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 298.7,
+      "y": 156.0
+     }
+    },
+    {
+     "from": "mech",
+     "to": "anat",
+     "points": [
+      [
+       363.9,
+       132.0
+      ],
+      [
+       363.9,
+       181.0
+      ],
+      [
+       532.1,
+       181.0
+      ],
+      [
+       532.1,
+       280.0
+      ],
+      [
+       483.7,
+       280.0
+      ],
+      [
+       483.7,
+       294.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "회귀"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 348.9,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "mech",
+     "to": "ep",
+     "points": [
+      [
+       285.5,
+       132.0
+      ],
+      [
+       285.5,
+       190.0
+      ],
+      [
+       192.1,
+       190.0
+      ],
+      [
+       192.1,
+       204.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 270.5,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "ep",
+     "to": "anat",
+     "points": [
+      [
+       224.8,
+       251.0
+      ],
+      [
+       224.8,
+       280.0
+      ],
+      [
+       418.4,
+       280.0
+      ],
+      [
+       418.4,
+       294.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "회귀 유발"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 196.9,
+      "y": 255.0
+     }
+    },
+    {
+     "from": "ep",
+     "to": "auto",
+     "points": [
+      [
+       159.5,
+       251.0
+      ],
+      [
+       159.5,
+       280.0
+      ],
+      [
+       146.7,
+       280.0
+      ],
+      [
+       146.7,
+       294.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "병소 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 131.6,
+      "y": 255.0
+     }
+    },
+    {
+     "from": "anat",
+     "to": "ablate",
+     "points": [
+      [
+       418.4,
+       341.0
+      ],
+      [
+       418.4,
+       370.0
+      ],
+      [
+       338.1,
+       370.0
+      ],
+      [
+       338.1,
+       384.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 408.9,
+      "y": 345.0
+     }
+    },
+    {
+     "from": "anat",
+     "to": "func",
+     "points": [
+      [
+       483.7,
+       341.0
+      ],
+      [
+       483.7,
+       370.0
+      ],
+      [
+       564.1,
+       370.0
+      ],
+      [
+       564.1,
+       384.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 463.2,
+      "y": 345.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "빈맥, 기전을 생각한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "어떤 기전인가?"
+     }
+    ]
+   },
+   {
+    "id": "mech",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "어떤 기전인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "자동능",
+      "to": 6,
+      "toText": "자동능 — 4기 억제·병소 절제"
+     },
+     {
+      "label": "후탈분극",
+      "to": 3,
+      "toText": "촉발 — 유발 요인 교정"
+     },
+     {
+      "label": "회귀",
+      "to": 5,
+      "toText": "고정된 회로가 있나?"
+     },
+     {
+      "label": "모름",
+      "to": 4,
+      "toText": "기전 불명 → 전기생리검사"
+     }
+    ]
+   },
+   {
+    "id": "trig",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "촉발 — 유발 요인 교정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ep",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "기전 불명 → 전기생리검사",
+    "note": "",
+    "branches": [
+     {
+      "label": "회귀 유발",
+      "to": 5,
+      "toText": "고정된 회로가 있나?"
+     },
+     {
+      "label": "병소 확인",
+      "to": 6,
+      "toText": "자동능 — 4기 억제·병소 절제"
+     }
+    ]
+   },
+   {
+    "id": "anat",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "고정된 회로가 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "해부학적 회귀 — 회로 절제"
+     },
+     {
+      "label": "아니오",
+      "to": 8,
+      "toText": "기능적 회귀 — 약·전기충격"
+     }
+    ]
+   },
+   {
+    "id": "auto",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "자동능 — 4기 억제·병소 절제",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ablate",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "해부학적 회귀 — 회로 절제",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "func",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "기능적 회귀 — 약·전기충격",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.cardio.atrial-flutter.stable-rate-control-first": {
   "id": "cn.cardio.atrial-flutter.stable-rate-control-first",
   "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
@@ -6043,10 +6691,10 @@ window.MEDKOS_CONCEPTS = {
   "condition": "완전 우각차단(complete right bundle branch block, RBBB)",
   "topic": "Cardiology",
   "seeAlso": [],
-  "version": 2,
-  "updated": "2026-11-02",
+  "version": 4,
+  "updated": "2026-11-09",
   "reviewStatus": "unreviewed",
-  "hash": "61e5dd306a69c419",
+  "hash": "7027023e57ac71bf",
   "summary": [
    "결론: QRS ≥ 0.12초 + V1 rsR′(끝이 위로) + I·V6 넓은 S파 = 완전 우각차단.",
    "시험 단서: 수술 전·검진 심전도, 넓게 분열된 S2, V1 의 「토끼 귀」 모양(RSR′, complete RBBB).",
@@ -6125,6 +6773,12 @@ window.MEDKOS_CONCEPTS = {
     "point": "섬유속 차단은 QRS 폭을 크게 늘리지 않고 전두면 축만 옮긴다 — 좌전섬유속 차단은 축이 −45° 보다 왼쪽이다. QRS 가 0.12초 이상 넓고 V1 끝이 위로(R′) 서면 우각차단이다. 먼저 폭을, 다음에 V1 끝 방향을, 마지막에 축을 본다.",
     "exception": "둘이 함께 있을 수 있다(우각차단 + 좌전섬유속 차단 = 이섬유속 차단) — 넓은 V1 rsR′ 에 축이 −45° 보다 왼쪽이면 둘 다 읽는다.",
     "cites": "<sup>[1 247장 p.1872]</sup>"
+   },
+   {
+    "contrast": "불완전 우각차단 vs 완전 우각차단",
+    "point": "V1 rsR′ 모양만으로는 둘을 가르지 못한다 — 폭이 가른다. 가장 넓은 유도의 QRS 가 120 ms 이상이면 완전, 약 110~120 ms 면 불완전 우각차단이다. 불완전형은 I·V6 끝 S파도 작고 좁다.",
+    "exception": "심방중격결손의 우심실 용적 과부하도 불완전·완전 우각차단 양상을 만든다 — S2 고정 분열·우심실 확장 소견이 함께면 구조 질환을 찾는다.",
+    "cites": "<sup>[1 247장 p.1871]</sup>"
    },
    {
     "contrast": "완전 좌각차단 vs 완전 우각차단",
@@ -6241,6 +6895,40 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0514",
     "changed": "66세 남자·탈장 수술 전 검사 → 54세 여자·직장 건강검진, 소견을 글로 제시 ⇒ QRS ≥ 0.12초·V1 rsR′·I·V6 넓은 S파라는 결정 단서는 같아 답은 그대로 완전 우각차단",
     "flip": false
+   },
+   {
+    "id": "cn.cardio.complete-rbbb.ecg-recognition#v3",
+    "context": "같은 입사 검진 상황, 소견을 글로 바꾼 변형(그림 없음)",
+    "stem": "A 37-year-old man undergoes a preemployment medical examination. He has no symptoms and jogs regularly. He has never had palpitations or syncope, and there is no family history of sudden cardiac death. His pulse is 76/min, and blood pressure is 122/76 mm Hg. Cardiac examination shows wide splitting of the second heart sound that increases with inspiration; there are no murmurs. Serum electrolyte concentrations are within the reference range. A 12-lead ECG shows sinus rhythm with a PR interval of 0.16 seconds, a QRS duration of 0.13 seconds, an rsR′ pattern in lead V1 with a broad terminal R′, broad slurred S waves in leads I and V6, no ST-segment elevation in V1 or V2, and a frontal-plane QRS axis of +60°. Which of the following is the most likely interpretation of this ECG?",
+    "options": [
+     "Left anterior fascicular block",
+     "Sinus rhythm with incomplete RBBB",
+     "Sinus rhythm with complete RBBB",
+     "Type 1 Brugada pattern",
+     "Wolff-Parkinson-White pattern"
+    ],
+    "answer": 3,
+    "explanation": "The V1 rsR′ shape is the same as in the original item, but the QRS is now 0.13 seconds with broad S waves in I and V6. A QRS of 120 ms or more with this morphology is complete RBBB; 110 to 120 ms would be incomplete. There is no ST elevation (not Brugada), the PR interval is normal without a delta wave (not WPW), and the axis is normal (no left anterior fascicular block).",
+    "of": "imaging-2026-0584",
+    "changed": "QRS 0.10초·I·V6 작은 S → QRS 0.13초·I·V6 넓고 둔한 S ⇒ 정답이 불완전 우각차단에서 완전 우각차단으로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.complete-rbbb.ecg-recognition#v4",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "A 24-year-old woman comes for a preparticipation sports examination before joining her university rowing team. She has no symptoms and trains 6 days a week. She has never fainted, and there is no family history of sudden death. She takes no medications. Her pulse is 58/min, and blood pressure is 112/70 mm Hg. Cardiac examination shows physiologic splitting of the second heart sound and no murmurs. A 12-lead ECG shows sinus bradycardia with a PR interval of 0.18 seconds, a QRS duration of 0.10 seconds, an rSr′ pattern in lead V1 with a small, narrow terminal r′, small narrow S waves in leads I and V6, no ST-segment elevation in V1 or V2, and a QRS axis of +75°. Which of the following is the most likely interpretation of this ECG?",
+    "options": [
+     "Type 1 Brugada pattern",
+     "Sinus rhythm with complete RBBB",
+     "Wolff-Parkinson-White pattern",
+     "Sinus rhythm with incomplete RBBB",
+     "Left posterior fascicular block"
+    ],
+    "answer": 4,
+    "explanation": "Age, sex, and the reason for the ECG changed, but the deciding findings did not: an rSr′ in V1 with a QRS under 0.12 seconds is incomplete RBBB. Complete RBBB needs a QRS of 120 ms or more. There is no coved ST elevation (Brugada), no short PR or delta wave (WPW), and the axis is not right of +110° (left posterior fascicular block).",
+    "of": "imaging-2026-0584",
+    "changed": "37세 남자 입사 검진·심전도 그림 → 24세 여자 대학 체육 특기생 검진·소견을 글로 제시 ⇒ V1 rsR′·QRS 0.10초라는 결정 단서는 같아 답은 그대로 불완전 우각차단",
+    "flip": false
    }
   ],
   "figures": [
@@ -6263,6 +6951,27 @@ window.MEDKOS_CONCEPTS = {
     "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 903",
     "license": "Creative Commons Attribution 4.0 International",
     "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+    "marked": ""
+   },
+   {
+    "id": "f2",
+    "src": "assets/figures/ptbxl-05455.png",
+    "kind": "ecg",
+    "at": "가르는 소견 — 폭·V1 끝·축",
+    "shows": "불완전 우각차단 — QRS 가 넓지 않은 우각차단 양상",
+    "look": [
+     "모든 유도의 QRS 폭이 0.12초(작은 칸 3개)에 못 미침",
+     "V5·V6 끝부분의 작고 좁은 S파"
+    ],
+    "label": "incomplete right bundle branch block (SCP IRBBB, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5455",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
     "marked": ""
    }
   ],
@@ -6831,7 +7540,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "imaging-2026-0514"
+   "imaging-2026-0514",
+   "imaging-2026-0584"
   ],
   "hasErrors": false
  },
@@ -14028,6 +14738,802 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "imaging-2026-0491"
+  ],
+  "hasErrors": false
+ },
+ "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
+  "id": "cn.cardio.psvt.narrow-regular-tachycardia-ecg",
+  "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
+  "objective": "규칙적인 좁은 QRS 빈맥에서 박동수·P파 위치·조동파 유무로 발작성 상심실빈맥을 판독하고 2:1 심방조동·심방세동·동빈맥·심실빈맥과 가른다",
+  "objectiveKind": "진단",
+  "condition": "발작성 상심실빈맥(paroxysmal supraventricular tachycardia, PSVT) — 방실결절 회귀빈맥(AVNRT)·방실 회귀빈맥(AVRT)",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 2,
+  "updated": "2026-11-09",
+  "reviewStatus": "unreviewed",
+  "hash": "d685cd64da546109",
+  "summary": [
+   "결론: 갑자기 시작한 규칙적 좁은 QRS 빈맥 + QRS 앞 P파 없음 + 조동파 없음 = 발작성 상심실빈맥(PSVT).",
+   "시험 단서: 「갑자기 시작·저절로 멎은 두근거림」, 목의 두근거림(cannon a파), 박동수 150 에 고정되지 않음.",
+   "왜: 방실결절 회귀에서는 심방과 심실이 거의 동시에 탈분극해 역행 P파가 QRS 안이나 바로 끝에 숨는다.",
+   "2:1 심방조동은 심방 240~300회/분의 절반 — 심실 140~150회/분에 고정, II·III·aVF 톱니파.",
+   "불규칙하면 심방세동, QRS 가 넓으면 넓은 QRS 빈맥(심실빈맥으로 보고 처치)으로 따로 판단한다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 발작성 상심실빈맥이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>규칙성</strong>: R-R 이 고르면 심방세동이 아니다. <strong>폭</strong>: QRS &lt; 120 ms 면 흥분이 히스-푸르키네 계로 내려온 상심실성 빈맥이다 <sup>[1 256장 p.1943]</sup>.</li>\n<li><strong>P파</strong>: QRS 마다 앞에 정상 P파가 있으면 동빈맥, 없으면 P파가 QRS 안·뒤에 숨은 회귀빈맥을 먼저 생각한다 <sup>[1 256장 p.1939]</sup>.</li>\n<li><strong>박동수와 톱니파</strong>: 140~150회/분에 고정되고 하벽에 톱니파가 있으면 2:1 심방조동, 그렇지 않으면 PSVT <sup>[1 257장 p.1943]</sup>.</li>\n<li>애매하면 미주신경 자극·아데노신을 주며 기록한다 — 빈맥이 갑자기 멎으면 방실결절 의존(PSVT), 잠깐 느려지며 심방파가 드러나면 심방빈맥·조동 <sup>[1 256장 p.1942]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 방실결절 안의 두 길에서 숨은 P파로",
+    "deep": false,
+    "html": "<p>방실결절로 들어가는 길이 둘(느린 길·빠른 길)이면, 흥분이 느린 길로 내려가 빠른 길로 거꾸로 올라오는 회귀가 생긴다 — 방실결절 회귀빈맥(atrioventricular nodal reentry tachycardia, AVNRT)으로 PSVT 의 가장 흔한 형태이고 20~40대·여성에 많다 <sup>[1 256장 p.1939]</sup>. 결절에서 심방까지와 심실까지의 시간이 비슷해 심방과 심실이 거의 동시에 탈분극하므로 P파가 QRS 속에 묻히거나 끝에 붙어 V1 의 가성 r′, II·III·aVF 의 가성 S파로 보인다 <sup>[1 256장 p.1939]</sup>. 닫힌 삼첨판에 심방이 수축하면 목정맥에 cannon a파가 생겨 목이 두근거린다 <sup>[1 256장 p.1939]</sup>. 부전도로를 거꾸로 올라오는 정방향 방실 회귀빈맥(atrioventricular reciprocating tachycardia, AVRT)은 심실이 먼저 깨야 하므로 P파가 늘 QRS 뒤, ST 분절 안에 온다 <sup>[1 256장 p.1941]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 박동수·P파·톱니파",
+    "deep": false,
+    "html": "<ul>\n<li>전형적 심방조동은 삼첨판륜을 도는 거대 회귀로 심방 240~300회/분, II·III·aVF 음성 톱니파를 만든다. 2:1 이면 심실 140~150회/분이고 조동파가 T파와 겹쳐 놓치기 쉽다 <sup>[1 257장 p.1943]</sup>.</li>\n<li>회로가 심방 안에서 닫혀 있는 심방빈맥·조동은 방실차단을 일으켜도 멎지 않고 심방파만 드러난다. 방실결절이 회로에 들어 있는 AVNRT·AVRT 는 방실차단이 빈맥을 끝낸다 <sup>[1 256장 p.1939]</sup>.</li>\n<li>정상 소견의 해석 한계: 한 유도에서 P파가 안 보여도 없는 것이 아니다 — V1 끝·하벽 끝부분과 T파 안을 같이 본다 <sup>[1 256장 p.1939]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>판독을 위해 12유도를 기록하되, 저혈압과 의식저하·호흡곤란이 있으면 QRS 동기화 전기적 동율동전환이 먼저다 <sup>[1 256장 p.1942]</sup>.</li>\n<li>안정하면 미주신경 자극(경동맥 잡음·뇌졸중 병력이 없을 때 경동맥동 마사지, 협조되면 발살바) → 정맥 아데노신 순서다 <sup>[1 256장 p.1942]</sup>. 아데노신은 심장이식 환자에서 금기이고, 최대 15 % 에서 짧은 심방세동을 일으켜 WPW 에서는 조심한다 <sup>[1 256장 p.1943]</sup>.</li>\n<li>노인에서 빠른 PSVT 는 협심증·폐부종·저혈압·실신을 일으킬 수 있다 <sup>[1 256장 p.1939]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 256장 p.1938–1943, 257장 p.1943)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "규칙적 좁은 QRS 빈맥 — 무엇이 가르나",
+    "columns": [
+     "판독",
+     "박동수·시작",
+     "P파 · 심방파"
+    ],
+    "rows": [
+     [
+      "방실결절 회귀빈맥(AVNRT)",
+      "갑자기 시작·종료",
+      "QRS 안이나 끝 — V1 가성 r′·II·III·aVF 가성 S <sup>[1 256장 p.1939]</sup>"
+     ],
+     [
+      "정방향 방실 회귀빈맥(AVRT)",
+      "갑자기 시작·종료",
+      "QRS 뒤 ST 분절 안(R-P &lt; P-R) <sup>[1 256장 p.1941]</sup>"
+     ],
+     [
+      "2:1 심방조동",
+      "140~150회/분에 고정",
+      "II·III·aVF 음성 톱니파, 심방 240~300회/분 <sup>[1 257장 p.1943]</sup>"
+     ],
+     [
+      "심방빈맥",
+      "다양",
+      "QRS 앞 다른 모양 P파, 등전위 구간 <sup>[1 256장 p.1938]</sup>"
+     ],
+     [
+      "동빈맥",
+      "서서히 변함",
+      "QRS 앞 정상 P파"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "2:1 심방조동 vs 발작성 상심실빈맥",
+    "point": "둘 다 규칙적 좁은 QRS 빈맥이다. 전형적 조동은 심방 240~300회/분이 2:1 로 내려와 심실 140~150회/분에 머물고, II·III·aVF 에 음성 톱니파가 T파와 겹쳐 숨는다. 박동수가 150 에서 벗어나고(예: 170~200) 하벽 유도 기준선에 톱니가 없으면 PSVT 가 먼저다.",
+    "exception": "항부정맥제·심방 질환이 있으면 조동의 심방 박동수가 느려질 수 있다 — 애매하면 미주신경 자극·아데노신으로 방실전도를 잠깐 막아 조동파를 드러낸다.",
+    "cites": "<sup>[1 257장 p.1943]</sup> <sup>[1 256장 p.1942]</sup>"
+   },
+   {
+    "contrast": "빠른 심실 반응의 심방세동 vs PSVT",
+    "point": "심방세동은 R-R 간격이 불규칙하다. 박동수가 빨라 언뜻 규칙적으로 보여도 긴 리듬 띠에서 간격을 재 보면 가를 수 있다. PSVT 는 R-R 이 고르다.",
+    "exception": "",
+    "cites": "<sup>[1 256장 p.1943]</sup>"
+   },
+   {
+    "contrast": "동빈맥 vs PSVT",
+    "point": "동빈맥은 QRS 마다 앞에 II 양성 P파가 있고, 서서히 빨라지고 서서히 느려진다(발열·빈혈·통증 같은 원인). PSVT 는 갑자기 켜지고 꺼지며 QRS 앞 P파가 없다.",
+    "exception": "",
+    "cites": "<sup>[1 256장 p.1939]</sup>"
+   },
+   {
+    "contrast": "심실빈맥 vs PSVT",
+    "point": "QRS 가 좁으면(&lt; 120 ms) 흥분이 히스-푸르키네 계를 타고 내려온 것이다 — 심실빈맥이 아니다. 넓은 QRS 빈맥은 각차단 변행전도·조기흥분 빈맥과 함께 감별하되 증명되기 전까지 심실빈맥으로 다룬다.",
+    "exception": "",
+    "cites": "<sup>[1 256장 p.1943]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "방실차단으로 잠깐 느려졌다 다시 빨라지며 P파가 계속 보이면 심방빈맥이나 심방조동이다 <sup>[1 256장 p.1942]</sup>.",
+   "QRS ≥ 120 ms 인 빈맥은 이 도식 밖 — 증명되기 전까지 심실빈맥으로 다룬다 <sup>[1 256장 p.1943]</sup>.",
+   "불안정(저혈압과 의식저하·호흡곤란)하면 판독보다 QRS 동기화 전기적 동율동전환이 먼저다 <sup>[1 256장 p.1942]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "avnrt-p",
+    "name": "방실결절 회귀빈맥의 P파 위치",
+    "kind": "진단 소견",
+    "population": "규칙적 좁은 QRS 빈맥",
+    "statement": "전형적 방실결절 회귀빈맥은 심방과 심실이 거의 동시에 활성화되어 P파가 QRS 중·직전·직후에 그려져 잘 안 보이고, 흔히 QRS 끝에서 V1 가성 r′·II·III·aVF 가성 S파로 보인다 [[harrison-22: 256장 p.1939]]",
+    "exceptions": "비전형 형태는 P파가 QRS 사이 아무 곳에나 늦게 와 하벽 유도 역위 P파가 다음 T파 안에 보인다 [[harrison-22: 256장 p.1939]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "flutter-21",
+    "name": "2:1 심방조동",
+    "kind": "진단 소견",
+    "population": "규칙적 좁은 QRS 빈맥",
+    "statement": "전형적 심방조동은 심방 240~300회/분, 흔히 2:1 방실전도로 심실 140~150회/분의 규칙적 빈맥이 되고 조동파가 T파와 구별하기 어렵다. 방실전도를 늘리는 조작이 조동파를 드러낸다 [[harrison-22: 257장 p.1943]]",
+    "exceptions": "심방 질환·항부정맥제가 있으면 심방 박동수가 더 느릴 수 있다 [[harrison-22: 257장 p.1943]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 256: Paroxysmal Supraventricular Tachycardias (p.1938–1943, 257장 첫 쪽 포함)",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 256장 p.1938–1943",
+    "checked": "드라이브 22판 장별 문서 H22_256 본문 대조 — 심방빈맥은 등전위 구간이 있는 뚜렷한 P파, 방실차단 조작이 P파를 드러냄(p.1938) · AVNRT 가 PSVT 의 가장 흔한 형태, 20~40대·여성에 흔함, 노인에서 빠르면 협심증·저혈압·실신, 심방·심실 동시 활성화로 P파가 QRS 안·끝에 숨어 V1 가성 r′·하벽 가성 S, 비전형은 T파 안 역위 P파, cannon a파로 목 두근거림, 방실결절 차단이 빈맥을 끝냄(p.1939) · 정방향 AVRT 는 P파가 항상 QRS 뒤 ST 분절 안(R-P < P-R)(p.1941) · 급성 처치: 12유도 기록, 불안정하면 동기화 전기충격, 안정하면 미주신경 자극 → 아데노신, 방실차단으로 잠깐 느려지며 P파가 드러나면 심방빈맥·조동(p.1942) · 넓은 QRS 빈맥은 증명 전까지 심실빈맥으로, 매우 불규칙한 넓은 QRS 는 조기흥분 심방세동(p.1943) · 257장: 조동 심방 240~300회/분, 2:1 전도로 140~150회/분, 하벽 음성 톱니파(p.1943)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-09",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "규칙적 좁은 QRS 빈맥 170회/분, QRS 앞 P파 없음, V1 끝에 작은 r′, 하벽 톱니파 없음. 판독은?",
+    "a": "발작성 상심실빈맥(전형적 방실결절 회귀빈맥). V1 의 r′ 은 QRS 끝에 숨은 역행 P파다."
+   },
+   {
+    "q": "2:1 심방조동을 의심하게 하는 박동수와 유도는?",
+    "a": "심실 140~150회/분에 고정, II·III·aVF 의 음성 톱니파(심방 240~300회/분)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.psvt.narrow-regular-tachycardia-ecg#v1",
+    "context": "같은 응급실 상황, 소견을 글로 바꾼 변형(그림 없음)",
+    "stem": "76세 여자가 2시간 전부터 가슴이 빠르게 뛴다며 응급실에 왔다. 고혈압과 만성 폐쇄성 폐질환으로 치료받고 있다. 흉통은 없고 약간 숨이 차다. 혈압 132/78 mmHg, 호흡 20회/분, 산소포화도 94 % 이다. 맥은 빠르고 규칙적이다. 혈청 칼륨 4.2 mEq/L 이다. 12유도 심전도에서 QRS 폭은 0.08초, 심실 박동수는 150회/분으로 기록 내내 변하지 않으며, II·III·aVF 에서 기준선이 등전위 구간 없이 음성 톱니 모양으로 이어지고 그 톱니의 주기는 300회/분이다. 심전도 판독으로 가장 적절한 것은?",
+    "options": [
+     "발작성 상심실빈맥",
+     "동빈맥",
+     "2:1 전도의 심방조동",
+     "빠른 심실 반응의 심방세동",
+     "심실빈맥"
+    ],
+    "answer": 3,
+    "explanation": "하벽 유도의 음성 톱니파가 300회/분이고 심실이 그 절반인 150회/분에 고정되어 있으니 2:1 전도의 전형적 심방조동이다. 원래 문항은 박동수가 150 에서 벗어난 170회/분이고 톱니파가 없어 발작성 상심실빈맥이었다. R-R 이 규칙적이라 심방세동이 아니고, QRS 가 좁아 심실빈맥이 아니다.",
+    "of": "imaging-2026-0582",
+    "changed": "박동수 170회/분·하벽 톱니파 없음 → 150회/분에 고정·II·III·aVF 음성 톱니파·심방 300회/분 ⇒ 정답이 발작성 상심실빈맥에서 2:1 전도의 심방조동으로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.psvt.narrow-regular-tachycardia-ecg#v2",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "28세 남자가 회사 계단을 오르다가 갑자기 가슴이 빠르게 뛰기 시작해 40분 뒤 응급실에 왔다. 고등학생 때부터 비슷한 일이 몇 번 있었는데 숨을 참으면 멎었다고 한다. 목이 두근거리는 느낌이 있다. 혈압 122/74 mmHg, 호흡 18회/분이다. 맥은 빠르고 규칙적이다. 혈청 칼륨 4.0 mEq/L 이다. 12유도 심전도에서 QRS 폭은 0.08초, 심실 박동수는 190회/분으로 규칙적이며, QRS 앞에 P파가 보이지 않고 V1 의 QRS 끝에 작은 r′ 이, II·III·aVF 에 작은 S파가 있다. 기준선에 톱니 모양 파형은 없다. 심전도 판독으로 가장 적절한 것은?",
+    "options": [
+     "심실빈맥",
+     "2:1 전도의 심방조동",
+     "빠른 심실 반응의 심방세동",
+     "동빈맥",
+     "발작성 상심실빈맥"
+    ],
+    "answer": 5,
+    "explanation": "나이·성별·발생 상황이 바뀌었지만 결정 단서는 같다 — 갑자기 시작한 규칙적 좁은 QRS 빈맥, QRS 앞 P파 없음, 톱니파 없음, 박동수가 150 에 고정되지 않음. V1 끝의 r′ 과 하벽의 작은 S 는 QRS 끝에 숨은 역행 P파로 전형적 방실결절 회귀빈맥의 모습이다. 목 두근거림은 닫힌 삼첨판에 심방이 수축해 생기는 cannon a파다.",
+    "of": "imaging-2026-0582",
+    "changed": "74세 여자·텔레비전 시청 중·심전도 그림 → 28세 남자·계단을 오르다가·소견을 글로 제시 ⇒ 갑작스런 시작·규칙적 좁은 QRS·P파 없음·톱니파 없음이라는 결정 단서는 같아 답은 그대로 발작성 상심실빈맥",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-07889.png",
+    "kind": "ecg",
+    "at": "기전 — 방실결절 안의 두 길에서 숨은 P파로",
+    "shows": "발작성 상심실빈맥 — 규칙적인 좁은 QRS 빈맥, QRS 앞 P파 없음",
+    "look": [
+     "긴 II 리듬 띠의 고른 R-R 간격과 좁은 QRS",
+     "II·III·aVF 기준선에 톱니 모양 조동파가 없음"
+    ],
+    "label": "paroxysmal supraventricular tachycardia (SCP PSVT, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7889",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/07000/#files-panel",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "규칙적 좁은 QRS 빈맥 — 무엇인가",
+  "geo": {
+   "title": "규칙적 좁은 QRS 빈맥 — 무엇인가",
+   "w": 680.0,
+   "h": 545.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "빠른 맥, QRS < 120 ms"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "regular",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "R-R 간격이 고른가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 85.0
+    },
+    {
+     "id": "af",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "심방세동(빠른 심실 반응)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 175.0
+    },
+    {
+     "id": "pwave",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "QRS 앞에 정상 P파가 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 175.0
+    },
+    {
+     "id": "sinus",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "동빈맥 — 원인을 찾는다"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 265.0
+    },
+    {
+     "id": "saw",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "하벽 톱니파·150회/분 고정?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 265.0
+    },
+    {
+     "id": "vagal",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "미주신경 자극·아데노신 중",
+      "기록"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 355.0
+    },
+    {
+     "id": "flutter",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "2:1 심방조동"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 482.0
+    },
+    {
+     "id": "psvt",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "발작성 상심실빈맥"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 482.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "regular",
+     "points": [
+      [
+       227.0,
+       63.0
+      ],
+      [
+       227.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "regular",
+     "to": "af",
+     "points": [
+      [
+       194.3,
+       132.0
+      ],
+      [
+       194.3,
+       161.0
+      ],
+      [
+       114.0,
+       161.0
+      ],
+      [
+       114.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불규칙"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 173.8,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "regular",
+     "to": "pwave",
+     "points": [
+      [
+       259.7,
+       132.0
+      ],
+      [
+       259.7,
+       161.0
+      ],
+      [
+       340.0,
+       161.0
+      ],
+      [
+       340.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "규칙"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "pwave",
+     "to": "sinus",
+     "points": [
+      [
+       307.3,
+       222.0
+      ],
+      [
+       307.3,
+       251.0
+      ],
+      [
+       227.0,
+       251.0
+      ],
+      [
+       227.0,
+       265.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 226.0
+     }
+    },
+    {
+     "from": "pwave",
+     "to": "saw",
+     "points": [
+      [
+       372.7,
+       222.0
+      ],
+      [
+       372.7,
+       251.0
+      ],
+      [
+       453.0,
+       251.0
+      ],
+      [
+       453.0,
+       265.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 226.0
+     }
+    },
+    {
+     "from": "saw",
+     "to": "flutter",
+     "points": [
+      [
+       404.0,
+       312.0
+      ],
+      [
+       404.0,
+       341.0
+      ],
+      [
+       339.0,
+       341.0
+      ],
+      [
+       339.0,
+       468.0
+      ],
+      [
+       307.3,
+       468.0
+      ],
+      [
+       307.3,
+       482.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 394.5,
+      "y": 316.0
+     }
+    },
+    {
+     "from": "saw",
+     "to": "psvt",
+     "points": [
+      [
+       502.0,
+       312.0
+      ],
+      [
+       502.0,
+       341.0
+      ],
+      [
+       567.0,
+       341.0
+      ],
+      [
+       567.0,
+       468.0
+      ],
+      [
+       598.7,
+       468.0
+      ],
+      [
+       598.7,
+       482.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 481.5,
+      "y": 316.0
+     }
+    },
+    {
+     "from": "saw",
+     "to": "vagal",
+     "points": [
+      [
+       453.0,
+       312.0
+      ],
+      [
+       453.0,
+       355.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "애매"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 316.0
+     }
+    },
+    {
+     "from": "vagal",
+     "to": "psvt",
+     "points": [
+      [
+       485.7,
+       419.0
+      ],
+      [
+       485.7,
+       468.0
+      ],
+      [
+       533.3,
+       468.0
+      ],
+      [
+       533.3,
+       482.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "갑자기 멎음"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 452.3,
+      "y": 443.0
+     }
+    },
+    {
+     "from": "vagal",
+     "to": "flutter",
+     "points": [
+      [
+       420.3,
+       419.0
+      ],
+      [
+       420.3,
+       468.0
+      ],
+      [
+       372.7,
+       468.0
+      ],
+      [
+       372.7,
+       482.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "톱니파 드러남"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 381.5,
+      "y": 423.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "빠른 맥, QRS < 120 ms",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "R-R 간격이 고른가?"
+     }
+    ]
+   },
+   {
+    "id": "regular",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "R-R 간격이 고른가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "불규칙",
+      "to": 3,
+      "toText": "심방세동(빠른 심실 반응)"
+     },
+     {
+      "label": "규칙",
+      "to": 4,
+      "toText": "QRS 앞에 정상 P파가 있나?"
+     }
+    ]
+   },
+   {
+    "id": "af",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "심방세동(빠른 심실 반응)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pwave",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "QRS 앞에 정상 P파가 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 5,
+      "toText": "동빈맥 — 원인을 찾는다"
+     },
+     {
+      "label": "없음",
+      "to": 6,
+      "toText": "하벽 톱니파·150회/분 고정?"
+     }
+    ]
+   },
+   {
+    "id": "sinus",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "동빈맥 — 원인을 찾는다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "saw",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "하벽 톱니파·150회/분 고정?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "2:1 심방조동"
+     },
+     {
+      "label": "아니오",
+      "to": 8,
+      "toText": "발작성 상심실빈맥"
+     },
+     {
+      "label": "애매",
+      "to": 7,
+      "toText": "미주신경 자극·아데노신 중 기록"
+     }
+    ]
+   },
+   {
+    "id": "vagal",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "미주신경 자극·아데노신 중 기록",
+    "note": "",
+    "branches": [
+     {
+      "label": "갑자기 멎음",
+      "to": 8,
+      "toText": "발작성 상심실빈맥"
+     },
+     {
+      "label": "톱니파 드러남",
+      "to": 9,
+      "toText": "2:1 심방조동"
+     }
+    ]
+   },
+   {
+    "id": "psvt",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "발작성 상심실빈맥",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "flutter",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "2:1 심방조동",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0582"
   ],
   "hasErrors": false
  },
@@ -70582,6 +72088,669 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.ortho.craniocervical-dislocation.no-traction-fusion": {
+  "id": "cn.ortho.craniocervical-dislocation.no-traction-fusion",
+  "title": "두개경추 탈구 — 견인하지 말고 고정 후 유합",
+  "objective": "경추 측면 X선에서 기저-치돌기 간격이 크게 벌어진 두개경추 탈구를 읽고, 견인·연성 보호대를 피해 엄격한 고정과 후두골-경추 유합술을 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "두개경추 탈구(craniocervical dislocation) · 고리뒤통수 탈구(atlanto-occipital dislocation)",
+  "topic": "Orthopedics",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Neurosurgery"
+  ],
+  "version": 2,
+  "updated": "2026-11-09",
+  "reviewStatus": "unreviewed",
+  "hash": "803c8c8f867a9848",
+  "summary": [
+   "결론: 기저-치돌기 간격이 크게 벌어진 두개경추 탈구는 견인 없이 엄격히 고정하고 후두골-경추 유합술을 한다.",
+   "시험 단서: 고속 감속 손상 + 경추 측면에서 기저(basion)가 치돌기 끝보다 훨씬 위 + 척추앞 연부조직 부종.",
+   "왜: 손상이 뼈가 아닌 인대(덮개막·날개인대)의 세로 분리라 견인은 분리를 키우고 인대는 저절로 붙지 않는다.",
+   "신경 진찰이 정상이어도 불안정 손상이다 — 보호대를 풀거나 연성 보호대로 바꾸지 않는다.",
+   "견인 정복이 맞는 것은 의식이 명료한 아래 경추 관절돌기 탈구 — 방향이 세로가 아니라 앞으로 미끄러짐."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 고정·유합이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>분리 방향</strong>: 기저가 치돌기 끝보다 크게 위로 떨어졌으면 머리뼈와 경추를 잇는 인대가 끊긴 세로 분리다 — 견인 금기 <sup>[2†]</sup>.</li>\n<li><strong>신경 정상의 의미</strong>: 신경 결손이 없다는 것은 아직 척수가 다치지 않았다는 뜻일 뿐, 안정하다는 뜻이 아니다. 외상성 경추 탈구는 고정이 필수다 <sup>[1 19장 p.132]</sup>.</li>\n<li><strong>확정 처치</strong>: 인대 손상은 저절로 붙지 않으므로 후두골과 위쪽 경추를 내고정해 유합한다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 인대가 끊긴 세로 분리에서 척수 신장으로",
+    "deep": false,
+    "html": "<p>후두골-고리뼈-중쇠뼈 이음부의 안정은 뼈가 아니라 덮개막(tectorial membrane)·날개인대(alar ligament) 같은 인대가 만든다. 고속 감속 손상에서 머리가 몸통보다 늦게 멈추며 이 인대가 끊어지면 머리뼈가 경추에서 위로·앞으로 떨어지고, 그 사이를 지나는 연수·위쪽 척수가 늘어난다 <sup>[2†]</sup>. 그래서 측면 X선에서 기저-치돌기 간격이 넓어지고 출혈로 척추앞 연부조직이 두꺼워진다. 경추 운동의 절반이 고리중쇠관절(C1-C2)에서 나올 만큼 이 이음부는 원래 움직임이 크다 <sup>[1 19장 p.129]</sup> — 인대가 없으면 붙잡을 것이 없다.</p>"
+   },
+   {
+    "title": "가르는 소견 — 분리 방향이 처치를 정한다",
+    "deep": false,
+    "html": "<ul>\n<li>아래 경추 관절돌기 탈구는 척추체가 앞으로 미끄러지고 관절돌기가 걸린 것이라, 길이 방향으로 당기면 걸림이 풀려 제자리로 돌아온다 <sup>[3†]</sup>. 같은 「탈구」라도 두개경추 탈구에서는 당기는 방향이 곧 손상 방향이다.</li>\n<li>골절은 CT 로, 인대·척수는 MRI 로 본다 — CT 는 연부조직을 잘 보지 못한다 <sup>[1 19장 p.130]</sup>.</li>\n<li>정상 X선의 한계: 측면 X선에서 분리가 미묘하면 놓칠 수 있다 — 고에너지 손상에서 척추앞 부종이 있으면 CT·MRI 로 확인한다 <sup>[1 19장 p.130]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>영상 전부터, 그리고 수술 전까지 엄격한 고정을 유지한다 <sup>[1 19장 p.132]</sup>.</li>\n<li>굴곡·신전 X선은 불안정성 선별 검사지만 <sup>[1 19장 p.130]</sup>, 명백한 탈구에서는 찍지 않는다.</li>\n<li>연성 보호대는 신경 소견 없는 급성 목 통증의 통증 완화용이다 <sup>[1 19장 p.132]</sup> — 불안정 손상의 고정 수단이 아니다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "경추 탈구 — 견인할 것과 하지 말 것",
+    "columns": [
+     "손상",
+     "X선",
+     "처치"
+    ],
+    "rows": [
+     [
+      "두개경추 탈구",
+      "기저-치돌기 간격 확대(세로 분리), 척추앞 부종",
+      "견인 금기 · 엄격한 고정 → 후두골-경추 유합술 <sup>[2†]</sup>"
+     ],
+     [
+      "아래 경추 관절돌기 탈구",
+      "척추체가 앞으로 미끄러짐, 관절돌기 걸림",
+      "의식 명료하면 두개골 집게 견인으로 정복 → 고정 <sup>[3†]</sup>"
+     ],
+     [
+      "근육 염좌(골절·탈구 없음)",
+      "정상",
+      "진통제, 필요하면 연성 보호대 <sup>[1 19장 p.132]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "신경 정상 = 연성 보호대로 충분?",
+    "point": "연성 보호대는 불안정 손상이 없는 급성 목 통증에서 움직임을 줄여 통증을 덜 뿐이다 <sup>[1 19장 p.132]</sup>. 외상성 경추 골절·탈구는 불안정성으로 인한 추가 척수 손상을 막도록 고정이 필수다 <sup>[1 19장 p.132]</sup>. 두개경추 탈구는 인대가 끊긴 세로 분리라 신경 진찰이 정상이어도 작은 움직임으로 연수·위쪽 척수가 늘어난다 — 「정복」할 대상도 아니고 보호대를 바꿀 대상도 아니다 <sup>[2†]</sup>.",
+    "exception": "X선·CT 에 골절·탈구가 없고 신경 정상인 근육 염좌라면 연성 보호대·진통제가 맞다 <sup>[1 19장 p.132]</sup>.",
+    "cites": "<sup>[1 19장 p.132]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "탈구면 견인 vs 두개경추 탈구",
+    "point": "견인은 관절돌기가 걸려 앞으로 미끄러진 아래 경추 탈구를 되돌리는 방법이다. 두개경추 탈구는 머리뼈가 경추에서 위로 떨어진 세로 분리라, 견인하면 간격이 더 벌어진다 <sup>[2†]</sup>.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "굴곡·신전 X선으로 불안정성 확인?",
+    "point": "굴곡·신전 X선은 불안정성을 선별하는 검사다 <sup>[1 19장 p.130]</sup>. 이미 탈구가 보이는 환자에게 목을 굽히고 펴게 하면 그 자체가 손상을 키운다 — 명백한 탈구에서는 하지 않는다.",
+    "exception": "",
+    "cites": "<sup>[1 19장 p.130]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "외상성 경추 골절·탈구는 영상 전부터 목을 고정한다 — 불안정 분절로 인한 추가 척수 손상을 막는다 <sup>[1 19장 p.132]</sup>.",
+   "골절은 CT, 척수·인대는 MRI — CT 는 연부조직을 잘 보지 못한다 <sup>[1 19장 p.130]</sup>.",
+   "견인 정복은 의식이 명료해 신경 변화를 바로 말할 수 있는 환자에서만 한다 <sup>[3†]</sup>.",
+   "명백한 탈구에서 굴곡·신전 X선은 찍지 않는다."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 19: Neck Pain",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 19장 p.129–133",
+    "checked": "드라이브 H22_019 문서 대조 — p.130: 경추 X선(전후·측면·굴곡-신전)은 골절·불안정성 선별, 골절 의심 시 CT, CT 는 연부조직이 잘 안 보여 척수 평가에 부적합, MRI 가 연부조직 표준. p.132: 외상성 경추 골절·탈구는 척수 손상이 동반되면 생명을 위협하고 불안정성으로 인한 추가 손상을 막도록 목 고정이 필수 · 신경 소견 없는 급성 목 통증에 연성 보호대가 일부에서 통증을 덜어 줌. 두개경추 탈구의 진단 기준·치료는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-09",
+    "url": ""
+   },
+   {
+    "id": "bellabarba-2006",
+    "org": "J Neurosurg Spine",
+    "title": "Diagnosis and treatment of craniocervical dislocation in a series of 17 consecutive survivors during an 8-year period",
+    "kind": "other",
+    "citation": "Bellabarba C, Mirza SK, West GA, et al. J Neurosurg Spine. 2006;4(6):429-440",
+    "checked": "서지만(원문 미대조 — 검토 항목). 문항 해설의 근거 목록에서 옮겼고 이 컨테이너는 PubMed·doi 접근이 막혀 초록을 열지 못했다. PMID 미확인, DOI 는 기억으로 적은 값(학술지 DOI 형식) — 학습서 워크플로가 확인한다",
+    "doi": "10.3171/spi.2006.4.6.429",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2006",
+    "checkedAt": "2026-11-09",
+    "url": "https://doi.org/10.3171/spi.2006.4.6.429"
+   },
+   {
+    "id": "atls-10",
+    "org": "American College of Surgeons",
+    "title": "ATLS Advanced Trauma Life Support, 10th ed. — Spine and Spinal Cord Trauma",
+    "kind": "textbook",
+    "citation": "American College of Surgeons. ATLS Student Course Manual, 10th ed. Ch. Spine and Spinal Cord Trauma(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목). 문항 해설의 근거 목록에서 옮겼다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-11-09",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "기저-치돌기 간격이 크게 벌어진 경추 측면 X선, 신경 정상. 다음 처치는?",
+    "a": "견인하지 않고 엄격히 고정한 채 후두골-경추 유합술을 준비한다."
+   },
+   {
+    "q": "두개경추 탈구에서 견인이 금기인 이유는?",
+    "a": "인대가 끊긴 세로 분리라 견인이 간격을 더 벌려 연수·위쪽 척수를 늘린다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.craniocervical-dislocation.no-traction-fusion#v1",
+    "context": "같은 교통사고 상황, 소견을 글로 바꾼 변형(그림 없음)",
+    "stem": "34세 남자가 승용차 운전 중 정면 충돌 사고를 당해 응급실로 이송되었다. 경추 보호대를 한 상태이며 목이 아프고 양손이 저리다고 한다. 의식은 명료하고 질문에 정확히 답한다. 혈압 124/78 mmHg, 맥박 88회/분, 호흡 18회/분이다. 양쪽 손가락 벌림 근력이 약간 떨어져 있고 하지 근력과 항문 괄약근 긴장도는 정상이다. 경추 측면 단순 X선에서 기저와 치돌기 끝의 간격은 정상이고, C5 척추체가 C6 위로 앞쪽으로 척추체 앞뒤 길이의 절반 넘게 미끄러져 있으며 양쪽 관절돌기가 서로 걸려 있다. 가장 적절한 처치는?",
+    "options": [
+     "의식이 명료한 상태에서 두개골 집게로 경추 견인을 시작한다",
+     "도수 정복 후 연성 경추 보호대로 바꾼다",
+     "보호대를 풀고 굴곡·신전 X선을 찍는다",
+     "고용량 메틸프레드니솔론만 정맥 투여한다",
+     "견인 없이 후두골-경추 유합술을 준비한다"
+    ],
+    "answer": 1,
+    "explanation": "이번에는 두개경추 부위가 정상이고 아래 경추에서 척추체가 앞으로 미끄러진 양쪽 관절돌기 탈구다. 방향이 세로 분리가 아니라 앞 미끄러짐이라, 의식이 명료해 신경 변화를 바로 말할 수 있는 환자에서는 두개골 집게 견인으로 걸린 관절돌기를 풀어 정복한다. 원래 문항은 기저-치돌기 간격이 벌어진 세로 분리라 견인이 금기였다. 굴곡·신전 X선과 연성 보호대는 불안정 손상에서 위험하다.",
+    "of": "imaging-2026-0575",
+    "changed": "기저-치돌기 간격 확대(세로 분리) → C5 척추체가 C6 위로 앞으로 절반 넘게 미끄러진 양쪽 관절돌기 탈구, 의식 명료 ⇒ 정답이 후두골-경추 유합술 준비에서 두개골 집게 견인 정복으로",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.craniocervical-dislocation.no-traction-fusion#v2",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "45세 남자가 오토바이를 타다 넘어지며 머리부터 땅에 부딪혀 응급실로 이송되었다. 헬멧을 쓰고 있었고 경추 보호대를 한 상태이며 뒷목이 아프다고 한다. 의식은 명료하다. 혈압 130/80 mmHg, 맥박 96회/분, 호흡 18회/분이다. 사지의 근력·감각과 항문 괄약근 긴장도는 정상이다. 경추 측면 단순 X선에서 머리뼈 기저와 치돌기 끝 사이 간격이 정상보다 크게 넓어져 기저가 치돌기보다 훨씬 위에 있고 척추앞 연부조직이 두꺼워져 있다. 아래 경추 정렬은 정상이다. 가장 적절한 처치는?",
+    "options": [
+     "보호대를 풀고 굴곡·신전 X선을 찍는다",
+     "경추를 엄격히 고정한 채 후두골-경추 유합술을 준비한다",
+     "두개골 집게로 경추 견인을 시작한다",
+     "신경 결손이 없으므로 연성 경추 보호대로 바꾸고 퇴원시킨다",
+     "고용량 메틸프레드니솔론을 정맥 투여한다"
+    ],
+    "answer": 2,
+    "explanation": "사고 기전과 환자가 바뀌었지만 결정 단서는 같다 — 기저-치돌기 간격이 크게 벌어진 세로 분리(두개경추 탈구)와 척추앞 부종. 인대 손상이라 저절로 붙지 않고 견인은 간격을 더 벌린다. 신경 진찰이 정상이어도 불안정 손상이므로 엄격히 고정하고 후두골-경추 유합술을 준비한다. 연성 보호대·굴곡-신전 촬영은 추가 척수 손상을 부른다.",
+    "of": "imaging-2026-0575",
+    "changed": "21세 여자 조수석 정면 충돌·X선 그림 → 45세 남자 오토바이 추락·소견을 글로 제시 ⇒ 기저-치돌기 간격 확대·척추앞 연부조직 부종·신경 정상이라는 결정 단서는 같아 답은 그대로 견인 없이 고정·유합술",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc6946329_figure2_a.jpg",
+    "kind": "radiograph",
+    "at": "기전 — 인대가 끊긴 세로 분리에서 척수 신장으로",
+    "shows": "외상성 고리뒤통수·고리중쇠 세로 탈구 — 기저-치돌기 간격 확대와 고리뼈 앞고리 골절 조각",
+    "look": [
+     "가는 화살표: 치돌기 끝보다 훨씬 위에 떨어진 기저",
+     "굵은 화살표: 고리뼈 앞고리의 골절 조각"
+    ],
+    "label": "「Lateral radiograph of the cervical spine revealed increased soft tissue swelling, horizontal split fracture of the anterior arch of the atlas (thick arrow), and increased basion-dental interval of 24 mm (arrow) (A). Sagittal MRI revealed complete rupture of the ligamentous complex (white arrows) and severe intramedullary cord hemorrhage at the occipito-cervical junction (thick arrow) (B). Coronal 2-D CT revealed vertical displacement of the occipital condyles (asterisks), and increased atlanto-axial joints (dotted arrows) (C). Sagittal 2-D CT revealed horizontal split fracture of the anterior arch of the atlas (thick arrows), increased atlanto-axial joints (dotted arrows), and increased basion-dental interval of 24 mm (arrow) (D). Axial CT revealed 2-part fracture of the atlas, including anterior arch fracture (thick arrow) and posterior arch fracture (arrow) (E and F). Parasagittal 2-D CT scans demonstrated vertical displacement of the occipital condyles (asterisks) with respect to the lateral mass of the atlas and posterior arch fracture of the atlas (arrowhead) (G and H). At 1 year post-surgery, plain radiographs of the cervical spine revealed solid fusion of the occipitocervical junction (I and J).」 — Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine",
+    "doiUrl": "https://doi.org/10.1097/MD.0000000000017776",
+    "citedBy": null,
+    "credit": "Traumatic combined vertical atlanto-occipital and atlanto-axial dislocations with 2-part fracture of the atlas: Two case reports. Medicine (Baltimore). 2019 Nov 1;98(44):e17776. doi: 10.1097/MD.0000000000017776 (CC BY) — Figure 2",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6946329/",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "목 외상 측면 X선 — 견인할까",
+  "geo": {
+   "title": "목 외상 측면 X선 — 견인할까",
+   "w": 567.0,
+   "h": 489.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "고에너지 외상, 경추 보호대",
+      "착용"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "unstable",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "골절·탈구가 보이나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "ct",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "CT 로 골절, MRI 로 인대·",
+      "척수"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "sprain",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "염좌 — 진통제·연성 보호대"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 299.0
+    },
+    {
+     "id": "dir",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "분리 방향은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 299.0
+    },
+    {
+     "id": "occ",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "고정 유지 → 후두골-경추",
+      "유합술"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 409.0
+    },
+    {
+     "id": "facet",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "두개골 집게 견인으로 정복"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 409.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "unstable",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "unstable",
+     "to": "dir",
+     "points": [
+      [
+       291.0,
+       149.0
+      ],
+      [
+       291.0,
+       178.0
+      ],
+      [
+       226.0,
+       178.0
+      ],
+      [
+       226.0,
+       285.0
+      ],
+      [
+       194.3,
+       285.0
+      ],
+      [
+       194.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 281.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "unstable",
+     "to": "sprain",
+     "points": [
+      [
+       389.0,
+       149.0
+      ],
+      [
+       389.0,
+       178.0
+      ],
+      [
+       454.0,
+       178.0
+      ],
+      [
+       454.0,
+       285.0
+      ],
+      [
+       485.7,
+       285.0
+      ],
+      [
+       485.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 368.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "unstable",
+     "to": "ct",
+     "points": [
+      [
+       340.0,
+       149.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "애매"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "dir",
+     "points": [
+      [
+       307.3,
+       256.0
+      ],
+      [
+       307.3,
+       285.0
+      ],
+      [
+       259.7,
+       285.0
+      ],
+      [
+       259.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "손상 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 279.5,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "sprain",
+     "points": [
+      [
+       372.7,
+       256.0
+      ],
+      [
+       372.7,
+       285.0
+      ],
+      [
+       420.3,
+       285.0
+      ],
+      [
+       420.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "dir",
+     "to": "occ",
+     "points": [
+      [
+       194.3,
+       346.0
+      ],
+      [
+       194.3,
+       395.0
+      ],
+      [
+       114.0,
+       395.0
+      ],
+      [
+       114.0,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "세로(기저-치돌기)"
+      ],
+      "w": 104.1,
+      "h": 17,
+      "x": 142.3,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "dir",
+     "to": "facet",
+     "points": [
+      [
+       259.7,
+       346.0
+      ],
+      [
+       259.7,
+       395.0
+      ],
+      [
+       340.0,
+       395.0
+      ],
+      [
+       340.0,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "앞 미끄러짐"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 226.3,
+      "y": 370.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "고에너지 외상, 경추 보호대 착용",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "골절·탈구가 보이나?"
+     }
+    ]
+   },
+   {
+    "id": "unstable",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "골절·탈구가 보이나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "분리 방향은?"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "염좌 — 진통제·연성 보호대"
+     },
+     {
+      "label": "애매",
+      "to": 3,
+      "toText": "CT 로 골절, MRI 로 인대·척수"
+     }
+    ]
+   },
+   {
+    "id": "ct",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "CT 로 골절, MRI 로 인대·척수",
+    "note": "",
+    "branches": [
+     {
+      "label": "손상 확인",
+      "to": 4,
+      "toText": "분리 방향은?"
+     },
+     {
+      "label": "정상",
+      "to": 5,
+      "toText": "염좌 — 진통제·연성 보호대"
+     }
+    ]
+   },
+   {
+    "id": "dir",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "분리 방향은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "세로(기저-치돌기)",
+      "to": 6,
+      "toText": "고정 유지 → 후두골-경추 유합술"
+     },
+     {
+      "label": "앞 미끄러짐",
+      "to": 7,
+      "toText": "두개골 집게 견인으로 정복"
+     }
+    ]
+   },
+   {
+    "id": "sprain",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "염좌 — 진통제·연성 보호대",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "occ",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "고정 유지 → 후두골-경추 유합술",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "facet",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "두개골 집게 견인으로 정복",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0575"
+  ],
+  "hasErrors": false
+ },
  "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
   "id": "cn.ortho.femoral-neck-fracture.arthroplasty-rationale",
   "title": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
@@ -72440,6 +74609,642 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "imaging-2026-0445"
+  ],
+  "hasErrors": false
+ },
+ "cn.ortho.salter-harris-ii.healing-callus-cast": {
+  "id": "cn.ortho.salter-harris-ii.healing-callus-cast",
+  "title": "놓친 Salter-Harris II — 골막 신생골은 가골, 석고 고정",
+  "objective": "넘어진 지 2주 된 소아 손목 X선에서 성장판을 지나 골간단으로 이어지는 골절선과 골막 신생골을 치유 중인 Salter-Harris II 골절로 읽고 석고 고정을 고른다",
+  "objectiveKind": "치료",
+  "condition": "소아 원위 요골 Salter-Harris II 형 골절(치유기)",
+  "topic": "Orthopedics",
+  "seeAlso": [
+   "Pediatrics",
+   "Emergency Medicine"
+  ],
+  "version": 2,
+  "updated": "2026-11-09",
+  "reviewStatus": "unreviewed",
+  "hash": "7b2e868f3b44f464",
+  "summary": [
+   "결론: 외상 2주 뒤 성장판→골간단 골절선 + 매끈한 골막 신생골 = 치유 중 Salter-Harris II, 전위 없으면 석고 고정.",
+   "시험 단서: 「염좌」로 보낸 소아 손목(FOOSH), 원위 요골 성장판 위 국소 압통, 열 없음·CRP 정상.",
+   "왜: 골막이 두껍고 골형성이 활발한 소아는 1~2주에 골막 가골이 생긴다 — 감염이 아니라 치유의 증거다.",
+   "X선이 이미 골절을 보여 주므로 MRI 는 치료를 바꾸지 않는다 — MRI 는 X선이 정상인데 압통이 남을 때.",
+   "급성·크게 전위된 골절은 정복(필요하면 핀), 외상 없이 열·CRP 상승·용해성 병변이면 골수염 평가."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 석고 고정이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>진단은 X선이 끝냈다</strong>: 골절선이 성장판을 지나 골간단으로 나가면 Salter-Harris II 형이다 <sup>[2†]</sup>. 추가 영상은 치료를 바꾸지 않는다.</li>\n<li><strong>골막 신생골은 시간표다</strong>: 외상 2주 뒤 매끈한 골막 반응은 가골이다 — 열·CRP 가 정상이면 감염을 먼저 생각할 이유가 없다.</li>\n<li><strong>전위가 없으면 정복하지 않는다</strong>: 이미 붙기 시작한 비전위 골절은 석고로 3~4주 더 고정한다 <sup>[1† Fractures of the distal radius and ulna]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 약한 성장판에서 두꺼운 골막의 가골로",
+    "deep": false,
+    "html": "<p>소아의 연골 성장판은 주변 인대·뼈보다 약해서, 어른이라면 손목 염좌가 될 손 짚고 넘어짐(fall on an outstretched hand, FOOSH)이 성장판을 떼어 낸다. II 형은 골절선이 성장판의 비대층을 따라가다 골간단으로 빠져나가, 골단에 붙은 골간단 삼각 조각(Thurston Holland 조각)을 남긴다 <sup>[2†]</sup>. 소아 골막은 두껍고 골형성 능력이 커서 외상 뒤 1~2주면 골막 아래 새 뼈(가골)가 X선에 보인다 <sup>[1† Fractures of the distal radius and ulna]</sup>. 첫날 X선에서 골절선이 미묘해 염좌로 보냈다가, 2주 뒤 가골로 골절이 드러나는 경우가 흔하다.</p>"
+   },
+   {
+    "title": "가르는 소견 — 골절선이 어디를 지나는가",
+    "deep": false,
+    "html": "<ul>\n<li>다섯 유형은 골절선이 성장판·골간단·골단 중 어디를 지나는지로 나뉜다(표). 관절면을 지나는 III·IV 형은 해부학적 정복이 필요하다 <sup>[2†]</sup>.</li>\n<li>정상 X선의 해석 한계: I·V 형은 처음 X선이 정상일 수 있다 — 성장판 위 압통이 남으면 고정 후 재평가하고, 그때 MRI 가 의미를 가진다.</li>\n<li>골수염과의 구분은 영상만이 아니라 외상력·통증 경과·발열·CRP 를 함께 본다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>성장판 골절은 고정 뒤 성장 정지·각 변형이 생길 수 있어 추적한다 <sup>[1† Fractures of the distal radius and ulna]</sup>.</li>\n<li>2세 미만, 설명과 맞지 않는 손상, 시기가 다른 여러 골절이면 학대를 평가한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "Salter-Harris 분류 — 골절선의 경로",
+    "columns": [
+     "유형",
+     "골절선",
+     "특징"
+    ],
+    "rows": [
+     [
+      "I",
+      "성장판만 가로지름",
+      "X선이 정상일 수 있음 — 압통으로 의심 <sup>[2†]</sup>"
+     ],
+     [
+      "II",
+      "성장판 → 골간단",
+      "가장 흔함, 골간단 삼각 조각(Thurston Holland) <sup>[2†]</sup>"
+     ],
+     [
+      "III",
+      "성장판 → 골단(관절면)",
+      "관절면 침범 — 해부학적 정복 <sup>[2†]</sup>"
+     ],
+     [
+      "IV",
+      "골간단 → 성장판 → 골단",
+      "관절면·성장판 모두 — 정복·고정 <sup>[2†]</sup>"
+     ],
+     [
+      "V",
+      "성장판 압궤",
+      "처음 X선은 정상일 수 있고 나중에 성장 장애 <sup>[2†]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "영상 추가(MRI) vs X선으로 끝난 진단",
+    "point": "MRI 는 X선에 골절선이 없는데 성장판·주상골 압통이 계속될 때 숨은 골절을 찾는 검사다. 이 X선은 이미 성장판을 지나 골간단으로 나가는 골절선과 가골을 보여 준다 — 진단이 끝났으니 추가 영상은 치료(석고 고정)를 바꾸지 않는다 <sup>[1† Fractures of the distal radius and ulna]</sup>.",
+    "exception": "X선이 정상이고 성장판 위 압통이 뚜렷하면 Salter-Harris I 형을 배제하지 못해 고정 후 재평가하거나 MRI 를 고려한다.",
+    "cites": "<sup>[1† Fractures of the distal radius and ulna]</sup>"
+   },
+   {
+    "contrast": "골막 신생골 = 골수염?",
+    "point": "분명한 외상, 좋아지는 통증, 열 없음·CRP 정상, 성장판을 지나는 골절선이 있으면 골막 신생골은 골절 가골이다. 골수염은 외상이 없거나 사소하고, 통증이 나빠지며, 열·CRP 상승과 골간단 용해성 병변을 보인다.",
+    "exception": "",
+    "cites": "<sup>[1† Fractures of the distal radius and ulna]</sup>"
+   },
+   {
+    "contrast": "성장판 골절 = 정복·핀?",
+    "point": "도수 정복·경피 핀은 급성이고 전위·각형성이 큰 골절의 처치다. 2주가 지나 가골이 생긴 비전위 골절을 늦게 정복하면 성장판을 더 다치게 한다 — 그대로 석고로 고정한다 <sup>[1† Fractures of the distal radius and ulna]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1† Fractures of the distal radius and ulna]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "2주가 지나 가골이 생긴 골절을 늦게 정복하면 성장판을 더 다칠 수 있다 — 정복 여부는 정형외과가 정한다 <sup>[1† Fractures of the distal radius and ulna]</sup>.",
+   "성장판 골절은 고정 뒤 성장 장애(성장 정지·각 변형)를 추적한다 <sup>[1† Fractures of the distal radius and ulna]</sup>.",
+   "2세 미만, 설명과 맞지 않는 손상, 시기가 다른 여러 골절이면 학대 평가(골격 조사)를 한다 — 이 도식 밖."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "rockwood-9",
+    "org": "Wolters Kluwer",
+    "title": "Rockwood and Wilkins' Fractures in Children, 9th ed. — Fractures of the distal radius and ulna",
+    "kind": "textbook",
+    "citation": "Waters PM, Skaggs DL, Flynn JM (eds). Rockwood and Wilkins' Fractures in Children, 9th ed. 장 'Fractures of the distal radius and ulna'(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목). 문항 해설의 근거 목록에서 옮겼고 이 컨테이너에서 교과서 본문을 열지 못했다. 고정 기간·늦은 정복의 위험은 원문 미대조",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2019",
+    "checkedAt": "2026-11-09",
+    "url": ""
+   },
+   {
+    "id": "salter-harris-1963",
+    "org": "J Bone Joint Surg Am",
+    "title": "Injuries involving the epiphyseal plate",
+    "kind": "other",
+    "citation": "Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am. 1963;45(3):587-622",
+    "checked": "서지만(원문 미대조 — 검토 항목). 분류의 다섯 유형은 이 원 논문의 것이다. PMID·DOI 미확인 — url 은 학술지 누리집이다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "1963",
+    "checkedAt": "2026-11-09",
+    "url": "https://journals.lww.com/jbjsjournal/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "넘어진 지 2주, 원위 요골 성장판에서 배측 골간단으로 나가는 골절선과 얇은 골막 신생골, 열 없음·CRP 정상. 다음 처치는?",
+    "a": "치유 중인 Salter-Harris II 골절 — 단상지 석고 고정 3~4주."
+   },
+   {
+    "q": "이 소견을 골수염과 무엇으로 가르나?",
+    "a": "분명한 외상·좋아지는 통증·열 없음·CRP 정상·성장판을 지나는 골절선(용해성 병변 아님)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.salter-harris-ii.healing-callus-cast#v1",
+    "context": "같은 소아 손목 통증, 소견을 글로 바꾼 변형(그림 없음)",
+    "stem": "A 9-year-old boy is brought to the physician because of left wrist pain that has worsened over 2 weeks. There was no injury. He has had a temperature of 38.9°C (102°F) for 4 days and now refuses to use his hand. Examination shows warmth, swelling, and point tenderness over the dorsal aspect of the distal radius. Sensation and capillary refill in the hand are normal. Serum C-reactive protein concentration is markedly elevated. A lateral radiograph of the wrist shows an ill-defined lytic area in the distal radial metaphysis with periosteal new bone along the dorsal cortex; no fracture line crosses the physis. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Short arm cast immobilization for 3 to 4 weeks",
+     "Intravenous cefazolin and bone biopsy",
+     "Closed reduction and percutaneous pinning",
+     "Repeat radiograph in 2 weeks",
+     "Skeletal survey for suspected physical abuse"
+    ],
+    "answer": 2,
+    "explanation": "Without trauma, with fever, worsening pain, an elevated CRP, and a lytic metaphyseal area, the periosteal new bone now signals infection rather than fracture healing — acute hematogenous osteomyelitis, treated with intravenous antistaphylococcal antibiotics and bone sampling. In the original item, a clear fall, normal CRP, and a fracture line through the physis made the periosteal reaction fracture callus, treated with a cast.",
+    "of": "imaging-2026-0576",
+    "changed": "분명한 넘어짐·열 없음·CRP 정상·성장판 골절선 → 외상 없음·38.9 °C 발열·CRP 상승·골간단 용해성 병변과 골막 반응 ⇒ 정답이 석고 고정에서 정맥 항생제와 골생검으로",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.salter-harris-ii.healing-callus-cast#v2",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "13세 남자가 2주 전 축구를 하다 손을 짚고 넘어진 뒤 오른쪽 손목 통증이 계속되어 왔다. 넘어진 날 동네 의원에서 염좌라는 말을 듣고 압박 붕대를 감았다. 통증은 줄었지만 팔굽혀펴기를 하면 다시 아프다. 열은 없다. 원위 요골 배측, 손목 주름 바로 위에 국소 압통과 약간의 부종이 있고 손의 감각과 모세혈관 재충만은 정상이다. 혈청 C 반응단백은 정상이다. 손목 측면 단순 X선에서 열려 있는 원위 요골 성장판에서 배측 골간단으로 비스듬히 나가는 골절선과 배측 피질을 따라 얇고 매끈한 골막 신생골이 보이며 전위·각형성은 거의 없다. 가장 적절한 처치는?",
+    "options": [
+     "손목 MRI 를 찍는다",
+     "정맥 세파졸린을 투여하고 골생검을 한다",
+     "도수 정복 후 경피 핀 고정을 한다",
+     "단상지 석고로 3~4주 고정한다",
+     "신체 학대를 의심해 골격 조사를 한다"
+    ],
+    "answer": 4,
+    "explanation": "환자와 사고 상황이 바뀌었지만 결정 단서는 같다 — 분명한 외상 2주 뒤, 열 없음·CRP 정상, 성장판을 지나 골간단으로 나가는 골절선(Salter-Harris II)과 매끈한 골막 신생골(가골), 전위 없음. 치유 중인 비전위 골절이라 석고로 고정한다. X선이 이미 진단을 했으므로 MRI 는 치료를 바꾸지 않고, 늦은 정복은 성장판을 더 다치게 한다.",
+    "of": "imaging-2026-0576",
+    "changed": "12세 여아·롤러스케이트·X선 그림 → 13세 남아·축구 중 손 짚고 넘어짐·소견을 글로 제시 ⇒ 2주 경과·열 없음·CRP 정상·성장판→골간단 골절선과 매끈한 골막 신생골·전위 없음이라는 결정 단서는 같아 답은 그대로 석고 고정",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/graz-0819_0768805556_02_wri-l2_f012.jpg",
+    "kind": "radiograph",
+    "at": "기전 — 약한 성장판에서 두꺼운 골막의 가골로",
+    "shows": "소아 원위 요골 성장판 골절(AO 소아 23r-E/2.1 — Salter-Harris II 형), 손목 측면",
+    "look": [
+     "열린 원위 요골 성장판과 그 바로 위 배측 골간단의 골절 부위",
+     "배측 피질을 따라 얇게 붙은 골막 신생골"
+    ],
+    "label": "healing pediatric wrist fracture (periosteal reaction) · AO/OTA 소아 분류 23r-E/2.1; 23u-E/7 — 골절 주석 상자 1개",
+    "basis": "dataset_expert",
+    "reference": "소아 손목 X선의 골절·골막반응 등을 전문가가 상자로 주석",
+    "paper": "Nagy E 외. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222",
+    "doiUrl": "https://doi.org/10.1038/s41597-022-01328-z",
+    "citedBy": 101,
+    "credit": "GRAZPEDWRI-DX (figshare, CC BY 4.0)",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "소아 손목 외상 2주 뒤 — 무엇을 할까",
+  "geo": {
+   "title": "소아 손목 외상 2주 뒤 — 무엇을 할까",
+   "w": 567.0,
+   "h": 452.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "넘어진 뒤 2주 지속되는 손목",
+      "통증"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "sys",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "열·CRP 상승·악화하는 통증?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "osteo",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "골수염 평가 — 영상·항생제·",
+      "생검"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 192.0
+    },
+    {
+     "id": "xr",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "X선에 성장판 골절선이",
+      "보이나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "occult",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "압통 지속 → 고정 후 재평가·",
+      "MRI"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 299.0
+    },
+    {
+     "id": "disp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "전위·각형성이 큰가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 299.0
+    },
+    {
+     "id": "cast",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "석고 고정 3~4주"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 389.0
+    },
+    {
+     "id": "ortho",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "정형외과 — 정복 여부 판단"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 389.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sys",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sys",
+     "to": "osteo",
+     "points": [
+      [
+       194.3,
+       149.0
+      ],
+      [
+       194.3,
+       178.0
+      ],
+      [
+       114.0,
+       178.0
+      ],
+      [
+       114.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "sys",
+     "to": "xr",
+     "points": [
+      [
+       259.7,
+       149.0
+      ],
+      [
+       259.7,
+       178.0
+      ],
+      [
+       340.0,
+       178.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "xr",
+     "to": "disp",
+     "points": [
+      [
+       307.3,
+       256.0
+      ],
+      [
+       307.3,
+       285.0
+      ],
+      [
+       227.0,
+       285.0
+      ],
+      [
+       227.0,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "xr",
+     "to": "occult",
+     "points": [
+      [
+       372.7,
+       256.0
+      ],
+      [
+       372.7,
+       285.0
+      ],
+      [
+       453.0,
+       285.0
+      ],
+      [
+       453.0,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "disp",
+     "to": "cast",
+     "points": [
+      [
+       194.3,
+       346.0
+      ],
+      [
+       194.3,
+       375.0
+      ],
+      [
+       114.0,
+       375.0
+      ],
+      [
+       114.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 173.8,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "disp",
+     "to": "ortho",
+     "points": [
+      [
+       259.7,
+       346.0
+      ],
+      [
+       259.7,
+       375.0
+      ],
+      [
+       340.0,
+       375.0
+      ],
+      [
+       340.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 250.2,
+      "y": 350.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "넘어진 뒤 2주 지속되는 손목 통증",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "열·CRP 상승·악화하는 통증?"
+     }
+    ]
+   },
+   {
+    "id": "sys",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "열·CRP 상승·악화하는 통증?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "골수염 평가 — 영상·항생제·생검"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "X선에 성장판 골절선이 보이나?"
+     }
+    ]
+   },
+   {
+    "id": "osteo",
+    "num": 3,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "골수염 평가 — 영상·항생제·생검",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "xr",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "X선에 성장판 골절선이 보이나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "전위·각형성이 큰가?"
+     },
+     {
+      "label": "아니오",
+      "to": 6,
+      "toText": "압통 지속 → 고정 후 재평가·MRI"
+     }
+    ]
+   },
+   {
+    "id": "disp",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "전위·각형성이 큰가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "석고 고정 3~4주"
+     },
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "정형외과 — 정복 여부 판단"
+     }
+    ]
+   },
+   {
+    "id": "occult",
+    "num": 6,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "압통 지속 → 고정 후 재평가·MRI",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cast",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "석고 고정 3~4주",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ortho",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "정형외과 — 정복 여부 판단",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0576"
   ],
   "hasErrors": false
  },
