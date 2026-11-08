@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "d4be506575dbae37ec1d",
-   "version": 23,
-   "date": "2026-11-07",
+   "hash": "ad1a7a37fc2e48ab2c9c",
+   "version": 24,
+   "date": "2026-11-08",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 40,
+   "pages": 41,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -89,57 +89,63 @@
     "cn.cardio.cardiac-mri-lge.pattern-etiology": {
      "title": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
      "page": 22,
-     "concept_hash": "649c80024e8d0a97",
+     "concept_hash": "becb45d171549d0a",
+     "concept_version": 2
+    },
+    "cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential": {
+     "title": "심도자 압력 — 흡기 때 두 심실이 엇갈리면 수축성 심낭염",
+     "page": 24,
+     "concept_hash": "77a81492665ebd5a",
      "concept_version": 1
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 24,
+     "page": 25,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 26,
+     "page": 27,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 28,
+     "page": 29,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 31,
+     "page": 32,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 33,
+     "page": 34,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 36,
+     "page": 37,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 39,
+     "page": 40,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "8d46b57a7fb20930214176342eef2709",
-    "version": 23,
-    "uploaded": "2026-11-07T10:59:14+09:00"
+    "md5": "aa2fa344375d110c7548b690d770f818",
+    "version": 24,
+    "uploaded": "2026-11-08T10:27:13+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -164,10 +170,12 @@
     "MedKOS_학습서_순환기내과_v20_2026-11-04.pdf",
     "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf",
     "MedKOS_학습서_순환기내과_v22_2026-11-06.pdf",
-    "MedKOS_학습서_순환기내과_v23_2026-11-07.pdf"
+    "MedKOS_학습서_순환기내과_v23_2026-11-07.pdf",
+    "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf"
    ],
    "changes": [
-    "새 단원: 심장 MRI 지연조영 — 층과 분포가 원인을 가른다"
+    "내용 갱신: 심장 MRI 지연조영 — 층과 분포가 원인을 가른다 (정리본 v1 → v2)",
+    "새 단원: 심도자 압력 — 흡기 때 두 심실이 엇갈리면 수축성 심낭염"
    ]
   },
   "피부과": {
@@ -1617,13 +1625,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "e4695c01db29ff24ffb963822e1ba62b",
+   "md5": "0b23485fd13de9f81ddfeac115cef3cb",
    "version": null,
-   "uploaded": "2026-11-07T10:59:14+09:00"
+   "uploaded": "2026-11-08T10:27:13+09:00"
   }
  },
- "updated": "2026-11-07"
+ "updated": "2026-11-08"
 }

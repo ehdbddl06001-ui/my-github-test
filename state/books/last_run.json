@@ -1,16 +1,14 @@
 {
- "started": "2026-11-07T10:04:41+09:00",
+ "started": "2026-11-08T09:52:05+09:00",
  "built": [
-  "정형외과",
-  "피부과",
-  "순환기내과",
-  "안과",
-  "소화기내과",
-  "Obstetrics and Gynecology"
+  "순환기내과"
  ],
  "skipped": [
   "응급의학과",
+  "정형외과",
+  "피부과",
   "내분비내과",
+  "안과",
   "외과",
   "산부인과",
   "소아청소년과",
@@ -19,7 +17,9 @@
   "류마티스내과",
   "호흡기내과",
   "감염내과",
+  "소화기내과",
   "신장내과",
+  "Obstetrics and Gynecology",
   "알레르기내과",
   "기초의학",
   "신경과",
@@ -29,26 +29,12 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "정형외과": [],
-  "피부과": [],
-  "순환기내과": [],
-  "안과": [],
-  "소화기내과": [],
-  "Obstetrics and Gynecology": []
+  "순환기내과": []
  },
  "notes": {
-  "정형외과": [
-   "마지막 쪽 내용이 적다(7%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 왼쪽 단 아래가 비어 있다(빈 공간 41%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)"
-  ],
-  "피부과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 35%)"
-  ],
-  "순환기내과": [],
-  "안과": [],
-  "소화기내과": [],
-  "Obstetrics and Gynecology": []
+  "순환기내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 23쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 5%) — 좌우로 오가며 읽힌다"
+  ]
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -64,63 +50,8 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "정형외과": {
-   "tried": 253,
-   "diagram_after_section": {
-    "u-cn-ortho-scaphoid-fracture-occult-imaging": 12,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 0,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
-    "u-cn-ortho-ulnar-neuropathy-localization": 11,
-    "u-cn-ortho-ulnar-neuropathy-localization#shrink": 0.88,
-    "u-cn-ortho-ulnar-neuropathy-localization#pad": 0,
-    "u-cn-ortho-ulnar-neuropathy-localization#col": false,
-    "u-cn-ortho-odontoid-fracture-diagnosis#figscale:f1": 0.85,
-    "u-cn-ortho-odontoid-fracture-diagnosis": 7,
-    "u-cn-ortho-odontoid-fracture-diagnosis#shrink": 1.0,
-    "u-cn-ortho-odontoid-fracture-diagnosis#pad": 0,
-    "u-cn-ortho-odontoid-fracture-diagnosis#col": false,
-    "u-cn-ortho-achilles-rupture-thompson-test": 14,
-    "u-cn-ortho-achilles-rupture-thompson-test#shrink": 1.0,
-    "u-cn-ortho-achilles-rupture-thompson-test#pad": 0,
-    "u-cn-ortho-achilles-rupture-thompson-test#col": true,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication": 14,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication#shrink": 1.0,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication#pad": 28,
-    "u-cn-ortho-achilles-tendinopathy-steroid-injection-contraindication#col": false,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis": 11,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis#shrink": 1.0,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis#pad": 0,
-    "u-cn-ortho-scfe-adolescent-limp-diagnosis#col": false,
-    "u-cn-ortho-scfe-in-situ-fixation": 17,
-    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
-    "u-cn-ortho-scfe-in-situ-fixation#pad": 0,
-    "u-cn-ortho-scfe-in-situ-fixation#col": true
-   }
-  },
-  "피부과": {
-   "tried": 152,
-   "diagram_after_section": {
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 12,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 17,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup": 15,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#shrink": 1.0,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#pad": 0,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#col": false,
-    "u-cn-derm-sweet-syndrome-diagnosis": 17,
-    "u-cn-derm-sweet-syndrome-diagnosis#shrink": 1.0,
-    "u-cn-derm-sweet-syndrome-diagnosis#pad": 0,
-    "u-cn-derm-sweet-syndrome-diagnosis#col": false
-   }
-  },
   "순환기내과": {
-   "tried": 313,
+   "tried": 486,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -147,13 +78,13 @@
     "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 42,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
     "u-cn-cardio-ischemic-ecg-localization-culprit-artery": 11,
-    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#shrink": 0.88,
+    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#shrink": 0.76,
     "u-cn-cardio-ischemic-ecg-localization-culprit-artery#pad": 0,
     "u-cn-cardio-ischemic-ecg-localization-culprit-artery#col": false,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 7,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 16,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first#pad": 0,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": false,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": true,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition": 11,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition#shrink": 1.0,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 42,
@@ -163,130 +94,29 @@
     "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 0,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false
    }
-  },
-  "안과": {
-   "tried": 119,
-   "diagram_after_section": {
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#figscale:f1": 0.75,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 8,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp": 2,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#shrink": 1.0,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#pad": 0,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#col": false,
-    "u-cn-ophth-crao-arteritic-workup#fig:f1": 7,
-    "u-cn-ophth-crao-arteritic-workup": 14,
-    "u-cn-ophth-crao-arteritic-workup#shrink": 1.0,
-    "u-cn-ophth-crao-arteritic-workup#pad": 0,
-    "u-cn-ophth-crao-arteritic-workup#col": true,
-    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 0.88,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 0,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#col": false,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field": 14,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#shrink": 1.0,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#pad": 0,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#col": false
-   }
-  },
-  "소화기내과": {
-   "tried": 67,
-   "diagram_after_section": {
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis": 14,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#shrink": 1.0,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#pad": 0,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#col": true,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage": 12,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#shrink": 1.0,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#pad": 28,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#col": false,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism": 15,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism#shrink": 1.0,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism#pad": 0,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism#col": true,
-    "u-cn-path-hepatic-congestion-zone3-mechanism": 15,
-    "u-cn-path-hepatic-congestion-zone3-mechanism#shrink": 1.0,
-    "u-cn-path-hepatic-congestion-zone3-mechanism#pad": 14,
-    "u-cn-path-hepatic-congestion-zone3-mechanism#col": false
-   }
-  },
-  "Obstetrics and Gynecology": {
-   "tried": 48,
-   "diagram_after_section": {
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 6,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#shrink": 1.0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#pad": 0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#col": false,
-    "u-cn-obgyn-hirsutism-ncah-17ohp-exclusion": 11,
-    "u-cn-obgyn-hirsutism-ncah-17ohp-exclusion#shrink": 1.0,
-    "u-cn-obgyn-hirsutism-ncah-17ohp-exclusion#pad": 0,
-    "u-cn-obgyn-hirsutism-ncah-17ohp-exclusion#col": true
-   }
   }
  },
  "result": "ok",
- "finished": "2026-11-07T10:59:14+09:00",
+ "finished": "2026-11-08T10:27:13+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "정형외과": {
-    "file": "MedKOS_학습서_정형외과.pdf",
-    "status": "uploaded",
-    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "kept_id": true,
-    "md5": "3104abc77be4075aadde06917101def6",
-    "archive": "MedKOS_학습서_정형외과_v19_2026-11-07.pdf"
-   },
-   "피부과": {
-    "file": "MedKOS_학습서_피부과.pdf",
-    "status": "uploaded",
-    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "kept_id": true,
-    "md5": "a9d84d48f13920d9aea1c2ca7afdebe0",
-    "archive": "MedKOS_학습서_피부과_v14_2026-11-07.pdf"
-   },
    "순환기내과": {
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "8d46b57a7fb20930214176342eef2709",
-    "archive": "MedKOS_학습서_순환기내과_v23_2026-11-07.pdf"
-   },
-   "안과": {
-    "file": "MedKOS_학습서_안과.pdf",
-    "status": "uploaded",
-    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "kept_id": true,
-    "md5": "6ab7789971868c9ff56fda2148a0bce6",
-    "archive": "MedKOS_학습서_안과_v16_2026-11-07.pdf"
-   },
-   "소화기내과": {
-    "file": "MedKOS_학습서_소화기내과.pdf",
-    "status": "uploaded",
-    "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "kept_id": true,
-    "md5": "53e286ad8752711ccb29dcecc396b0bc",
-    "archive": "MedKOS_학습서_소화기내과_v15_2026-11-07.pdf"
-   },
-   "Obstetrics and Gynecology": {
-    "file": "MedKOS_학습서_Obstetrics_and_Gynecology.pdf",
-    "status": "uploaded",
-    "id": "1ARhPNMJD8bSsM1hLWLIiBiPyd3pOuZdP",
-    "kept_id": true,
-    "md5": "3fce3b0be7f0a5d40ecec303c2075f90",
-    "archive": "MedKOS_학습서_Obstetrics_and_Gynecology_v4_2026-11-07.pdf"
+    "md5": "aa2fa344375d110c7548b690d770f818",
+    "archive": "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "e4695c01db29ff24ffb963822e1ba62b"
+    "md5": "0b23485fd13de9f81ddfeac115cef3cb"
    }
   },
-  "at": "2026-11-07T10:59:14+09:00"
+  "at": "2026-11-08T10:27:13+09:00"
  }
 }
