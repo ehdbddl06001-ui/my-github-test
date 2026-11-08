@@ -664,8 +664,29 @@
    "date": "2026-11-03",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0582": {
+   "id": "imaging-2026-0582",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "",
+   "type": "심전도 판독 — 갑자기 두근거림이 시작된 노인 여성의 규칙적인 빠른 맥",
+   "style": "kmle_style",
+   "modality": "ECG",
+   "question": "심전도 판독으로 가장 적절한 것은?",
+   "chosen": 2,
+   "chosenText": "2:1 전도의 심방조동",
+   "answer": 0,
+   "answerText": "발작성 상심실빈맥",
+   "coreNote": "",
+   "differ": "",
+   "decision": "P파가 보이지 않는 규칙적인 좁은 QRS 빈맥 약 170회/분이 갑자기 시작했다. 조동파·세동파가 없어 발작성 상심실빈맥이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+   "date": "2026-11-08",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:09:27.886Z"
+ "updated": "2026-11-08T10:46:25.917Z"
 }
