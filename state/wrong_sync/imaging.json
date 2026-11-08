@@ -706,8 +706,29 @@
    "date": "2026-11-08",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "imaging-2026-0575": {
+   "id": "imaging-2026-0575",
+   "exam": "imaging",
+   "subject": "응급·중환자",
+   "step": "",
+   "type": "응급·외상 — 정면 충돌 뒤 목 통증을 호소하는 젊은 여성의 경추 측면 X선",
+   "style": "kmle_style",
+   "modality": "XR_MSK",
+   "question": "가장 적절한 처치는?",
+   "chosen": 1,
+   "chosenText": "도수 정복 후 연성 경추 보호대로 바꾼다",
+   "answer": 4,
+   "answerText": "경추를 엄격히 고정한 채 후두골-경추 유합술을 준비한다",
+   "coreNote": "",
+   "differ": "",
+   "decision": "경추 측면 X선에서 기저와 치돌기 끝이 크게 떨어진 두개경추 탈구다. 견인은 분리를 키우므로 엄격히 고정하고 후두골-경추 유합술을 준비한다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "date": "2026-11-08",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-08T10:49:37.522Z"
+ "updated": "2026-11-08T10:55:48.402Z"
 }
