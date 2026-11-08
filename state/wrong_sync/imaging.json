@@ -727,8 +727,29 @@
    "date": "2026-11-08",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "imaging-2026-0584": {
+   "id": "imaging-2026-0584",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "Step 2",
+   "type": "심전도 판독 — 증상 없는 젊은 남성의 입사 검진 심전도",
+   "style": "usmle_style",
+   "modality": "ECG",
+   "question": "Which of the following is the most likely interpretation of this ECG?",
+   "chosen": 2,
+   "chosenText": "Sinus rhythm with complete RBBB",
+   "answer": 1,
+   "answerText": "Sinus rhythm with incomplete RBBB",
+   "coreNote": "",
+   "differ": "",
+   "decision": "Sinus rhythm with an rSr′ in V1, a QRS under 0.12 s, and a normal axis is incomplete right bundle branch block. Without a fixed split S2 or murmur, it is a benign variant.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203813Z_일일심전도_2026-11-08_3units_3q_3d6a18a0",
+   "date": "2026-11-08",
+   "device": "android-9buhos",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-08T13:25:04.208Z"
+ "updated": "2026-11-08T13:26:01.299Z"
 }
