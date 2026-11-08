@@ -43418,7 +43418,8 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "kmle-2026-0008",
    "kmle-2026-0131",
-   "kmle-2026-1295"
+   "kmle-2026-1295",
+   "kmle-2026-1778"
   ],
   "hasErrors": false
  },
@@ -63331,7 +63332,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-1095"
+   "kmle-2026-1095",
+   "kmle-2026-1785"
   ],
   "hasErrors": false
  },
@@ -85954,7 +85956,8 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "kmle-2026-0962",
    "kmle-2026-1305",
-   "kmle-2026-1562"
+   "kmle-2026-1562",
+   "kmle-2026-1788"
   ],
   "hasErrors": false
  },
@@ -100285,7 +100288,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-1128"
+   "kmle-2026-1128",
+   "kmle-2026-1792"
   ],
   "hasErrors": false
  },
