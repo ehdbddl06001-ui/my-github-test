@@ -685,8 +685,29 @@
    "date": "2026-11-08",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "imaging-2026-0576": {
+   "id": "imaging-2026-0576",
+   "exam": "imaging",
+   "subject": "근골격·류마티스",
+   "step": "Step 2",
+   "type": "류마티스·근골격 — 넘어진 지 2주 지나도 아픈 소아의 손목 측면 X선",
+   "style": "usmle_style",
+   "modality": "XR_MSK",
+   "question": "Which of the following is the most appropriate next step in management?",
+   "chosen": 3,
+   "chosenText": "MRI of the wrist",
+   "answer": 0,
+   "answerText": "Short arm cast immobilization for 3 to 4 weeks",
+   "coreNote": "",
+   "differ": "",
+   "decision": "A fracture line through the physis into the dorsal metaphysis with smooth periosteal new bone 2 weeks after a fall is a healing Salter-Harris II fracture. With normal CRP and no fever, it is treated with a short arm cast.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261107T203533Z_일일영상_2026-11-08_9units_9q_172f9b98",
+   "date": "2026-11-08",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-08T10:46:25.917Z"
+ "updated": "2026-11-08T10:49:37.522Z"
 }
