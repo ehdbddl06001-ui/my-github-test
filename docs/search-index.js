@@ -1,17 +1,17 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-09",
+ "generated": "2026-11-10",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4540,
+  "total": 4552,
   "byType": {
    "usmle": 252,
+   "imaging": 607,
    "kmle": 1760,
    "concept": 155,
    "paper": 915,
-   "imaging": 595,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,23 +38,23 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 113,
    "Hematology": 107,
    "Laboratory Medicine": 95,
-   "산부인과": 80,
-   "순환기": 74,
+   "산부인과": 81,
+   "순환기": 78,
    "호흡기": 38,
    "소화기": 37,
-   "소아과": 32,
-   "응급·중환자": 28,
+   "소아과": 33,
+   "응급·중환자": 29,
+   "혈액·종양": 28,
    "Physiology": 27,
+   "감염": 27,
    "내분비": 27,
-   "혈액·종양": 27,
-   "감염": 26,
+   "신경": 27,
    "병리·조직학": 26,
-   "신경": 26,
    "신장·비뇨기": 25,
-   "외과": 24,
+   "외과": 25,
    "피부과": 24,
+   "예방의학·역학": 22,
    "Pharmacology": 21,
-   "예방의학·역학": 21,
    "Biochemistry": 20,
    "Microbiology": 19,
    "Immunology": 16,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3203,
+   "high": 3215,
    "medium": 1284,
    "low": 53
   },
@@ -359,6 +359,220 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0254.md",
    "snippet": "A 46 year old man is brought to the emergency department because of headache, nausea, epigastric pain and blurred vision that began this morning. He says everything looks \"like being in a snowstorm.\" Twenty hours ago he drank a large amount",
    "text": "Pharmacology Blurred Vision Like a Snowstorm, Rapid Breathing and a Bicarbonate of 8 the Morning After Home-Distilled Liquor in a 46-Year-Old Man methanol toxic-alcohol fomepizole alcohol-dehydrogenase osmolal-gap anion-gap-metabolic-acidosis mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose; Goldfrank's Toxicologic Emergencies, 11e) A 46 year old man is brought to the emergency department because of headache, nausea, epigastric pain and blurred vision that began this morning. He says everything looks \"like being in a snowstorm.\" Twenty hours ago he drank a large amount of home distilled liquor at a party; he usually drinks 2 beers daily. He has no history of diabetes and takes no medications. His vital signs are shown. He is alert and oriented. The pupils are 6 mm and react sluggishly to light. Funduscopic examination shows hyperemia of both optic discs with peripapillary retinal edema. The remainder of the examination shows no abnormalities. Laboratory results are shown. Intravenous sodium bicarbonate is started. The most appropriate antidote for this patient acts by which of the following mechanisms? A. Inhibition of aldehyde dehydrogenase B. Acceleration of formate oxidation to carbon dioxide C. Competitive inhibition of alcohol dehydrogenase D. Replenishment of hepatic glutathione stores E. Competitive displacement of formate from cytochrome c oxidase 하루 전 밀주(home distilled liquor)를 많이 마신 뒤 늦게 시작된 시야 흐림(「눈보라 속」), 산동·대광반사 저하, 시신경 유두 충혈·부종, 그리고 음이온 차 30(140−102−8)의 심한 대사성 산증 — 메탄올 중독이다. 계산 삼투압 ≈ 2×140 + 98/18 + 14/2.8 ≈ 290 이라 삼투압 차가 약 28 남아 있다: 아직 대사되지 않은 메탄올이 혈중에 많다는 뜻이고, 따라서 대사를 막는 해독제가 아직 효과를 낸다. 에탄올은 검출되지 않고, 젖산은 2.4 로 산증을 설명하지 못하며, 케톤·옥살산 결정이 없어 알코올성 케톤산증·에틸렌글리콜 가능성은 낮다. 메탄올 자체보다 그 대사물인 포름산이 망막·시신경 미토콘드리아(시토크롬 c 산화효소)를 망가뜨린다. 해독제 fomepizole 은 알코올 탈수소효소(ADH)를 경쟁적으로 억제해 메탄올 → 포름알데히드 → 포름산 생성을 막는다(에탄올도 같은 원리의 대안). 엽산·폴린산은 포름산을 CO2 로 산화시키는 보조 치료이고, 이미 생긴 포름산·심한 산증·시력 이상에는 혈액투석을 함께 고려한다."
+  },
+  {
+   "id": "imaging-2026-0608",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 맥이 고르지 않다고 느끼는 젊은 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0608.md",
+   "snippet": "A 28 year old woman comes to the physician because she has noticed that her pulse seems irregular when she checks it during yoga breathing exercises. She has no palpitations, chest pain, dyspnea, or syncope. She runs 5 km three times weekly",
+   "text": "순환기 심전도 판독 — 맥이 고르지 않다고 느끼는 젊은 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b A 28 year old woman comes to the physician because she has noticed that her pulse seems irregular when she checks it during yoga breathing exercises. She has no palpitations, chest pain, dyspnea, or syncope. She runs 5 km three times weekly and takes no medications. She drinks one cup of coffee daily. Her pulse is 64/min and irregular, and blood pressure is 108/68 mm Hg. Cardiac examination shows no murmurs. Serum electrolyte concentrations and thyroid stimulating hormone level are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Atrial fibrillation B. Sinus arrhythmia C. Premature atrial contractions D. Second degree atrioventricular block, Mobitz type I E. Wandering atrial pacemaker"
+  },
+  {
+   "id": "imaging-2026-0607",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 우연히 발견된 불규칙한 맥박의 고혈압 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0607.md",
+   "snippet": "73세 남자가 고혈압 정기 진료 때 맥박이 불규칙하다는 말을 듣고 심전도를 찍었다. 가끔 두근거리지만 흉통·호흡곤란·어지럼은 없고, 증상이 언제 시작되었는지 모른다. 고혈압으로 암로디핀을 먹고 있고 당뇨병·심부전·뇌졸중 병력은 없다. 혈압 132/80 mmHg, 맥박 76회/분(불규칙)이다. 심초음파에서 좌심실 박출률 60 %, 승모판 협착이나 인공판막은 없다. 혈청 크레아티닌 1.0 mg/dL, 혈색소 14.2 g/dL 이다",
+   "text": "순환기 심전도 처치 — 우연히 발견된 불규칙한 맥박의 고혈압 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b 73세 남자가 고혈압 정기 진료 때 맥박이 불규칙하다는 말을 듣고 심전도를 찍었다. 가끔 두근거리지만 흉통·호흡곤란·어지럼은 없고, 증상이 언제 시작되었는지 모른다. 고혈압으로 암로디핀을 먹고 있고 당뇨병·심부전·뇌졸중 병력은 없다. 혈압 132/80 mmHg, 맥박 76회/분(불규칙)이다. 심초음파에서 좌심실 박출률 60 %, 승모판 협착이나 인공판막은 없다. 혈청 크레아티닌 1.0 mg/dL, 혈색소 14.2 g/dL 이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 아픽사반 경구 투여를 시작한다 B. 아스피린 경구 투여를 시작한다 C. 즉시 전기 율동전환을 한다 D. 항응고 없이 1년 뒤 다시 평가한다 E. 와파린과 아스피린을 함께 시작한다"
+  },
+  {
+   "id": "imaging-2026-0606",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 두 시간째 가슴이 짓눌리는 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0606.md",
+   "snippet": "87세 여자가 두 시간 전부터 가슴 한가운데가 짓눌리듯 아프고 식은땀이 나서 응급실에 왔다. 통증은 숨을 쉬거나 자세를 바꿔도 달라지지 않는다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 104/66 mmHg, 맥박 90회/분, 호흡 20회/분, 산소포화도 95 % 이다. 심낭 마찰음은 들리지 않는다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 비ST분절 상승 심근경색 B. 조기 재분극 C.",
+   "text": "순환기 심전도 판독 — 두 시간째 가슴이 짓눌리는 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b 87세 여자가 두 시간 전부터 가슴 한가운데가 짓눌리듯 아프고 식은땀이 나서 응급실에 왔다. 통증은 숨을 쉬거나 자세를 바꿔도 달라지지 않는다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 104/66 mmHg, 맥박 90회/분, 호흡 20회/분, 산소포화도 95 % 이다. 심낭 마찰음은 들리지 않는다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 비ST분절 상승 심근경색 B. 조기 재분극 C. 하벽 ST분절 상승 심근경색 D. 전벽 ST분절 상승 심근경색 E. 급성 심낭염"
+  },
+  {
+   "id": "imaging-2026-0605",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 환자-대조군 연구의 교차비 계산",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0605.md",
+   "snippet": "62세 남자가 육안적 혈뇨로 검사를 받고 방광암으로 진단받았다. 젊었을 때 염색 공장에서 8년 일했다며 직업과 관련이 있는지 물었다. 의사는 관련 연구를 찾아보았다. 한 연구자가 방광암과 염색 공장 근무의 관련성을 알아보려고 환자 대조군 연구를 하였다. 한 대학병원에서 새로 진단된 방광암 환자 200명과, 같은 병원의 다른 진료과에 입원한 나이·성별을 맞춘 방광암이 없는 환자 400명을 모았다. 면담으로 과거 직업을 조사한 결",
+   "text": "예방의학·역학 예방의학 — 환자-대조군 연구의 교차비 계산 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 62세 남자가 육안적 혈뇨로 검사를 받고 방광암으로 진단받았다. 젊었을 때 염색 공장에서 8년 일했다며 직업과 관련이 있는지 물었다. 의사는 관련 연구를 찾아보았다. 한 연구자가 방광암과 염색 공장 근무의 관련성을 알아보려고 환자 대조군 연구를 하였다. 한 대학병원에서 새로 진단된 방광암 환자 200명과, 같은 병원의 다른 진료과에 입원한 나이·성별을 맞춘 방광암이 없는 환자 400명을 모았다. 면담으로 과거 직업을 조사한 결과 환자군 200명 중 60명, 대조군 400명 중 40명이 염색 공장에서 5년 이상 일한 적이 있었다. 흡연력은 두 군에서 비슷하였다. 염색 공장 근무와 방광암의 관련성을 나타내는 지표로 가장 적절한 것은? A. 기여위험도 20 % B. 상대위험도 3.9 C. 교차비 3.9 D. 상대위험도 3.0 E. 교차비 3.0"
+  },
+  {
+   "id": "imaging-2026-0604",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 열이 오르며 처음 생긴 짧은 전신 경련",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0604.md",
+   "snippet": "A 20 month old boy is brought to the emergency department 1 hour after a seizure at home. His mother says he had a fever since the morning and then his whole body stiffened and jerked for about 2 minutes; afterward he was sleepy for 20 minu",
+   "text": "소아과 소아 — 열이 오르며 처음 생긴 짧은 전신 경련 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 A 20 month old boy is brought to the emergency department 1 hour after a seizure at home. His mother says he had a fever since the morning and then his whole body stiffened and jerked for about 2 minutes; afterward he was sleepy for 20 minutes. This is his first seizure. He is fully immunized, including Haemophilus influenzae type b and pneumococcal vaccines, and has not received antibiotics. His development is normal. His father had a similar seizure as a toddler. His temperature is 39.4°C (102.9°F). He is now alert, playful, and has clear rhinorrhea. His neck is supple, and the anterior fontanelle is closed. Neurologic examination shows no focal findings. Which of the following is the most appropriate next step in management? A. Daily oral levetiracetam prophylaxis B. Reassurance and parental education C. Lumbar puncture for CSF analysis D. Electroencephalography within 24 hours E. MRI of the brain with contrast"
+  },
+  {
+   "id": "imaging-2026-0603",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 비린내 나는 회백색 질 분비물",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0603.md",
+   "snippet": "29세 여자가 일주일 전부터 질 분비물이 많아지고 성관계 뒤 비린내가 심해져서 왔다. 가려움과 성교통은 없다. 최근 새로운 성 파트너가 생겼고 콘돔은 쓰지 않는다. 임신은 하지 않았다. 체온 36.7 ℃ 이다. 질경 검사에서 질벽에 고르게 묻은 얇은 회백색 분비물이 보이고 질 점막과 자궁경부는 발적이 없다. 질 분비물의 pH 는 5.2 이고 10 % 수산화칼륨을 떨어뜨리자 비린내가 났다. 생리식염수 습식 표본에서 경계가 흐릿한",
+   "text": "산부인과 부인과 — 비린내 나는 회백색 질 분비물 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 29세 여자가 일주일 전부터 질 분비물이 많아지고 성관계 뒤 비린내가 심해져서 왔다. 가려움과 성교통은 없다. 최근 새로운 성 파트너가 생겼고 콘돔은 쓰지 않는다. 임신은 하지 않았다. 체온 36.7 ℃ 이다. 질경 검사에서 질벽에 고르게 묻은 얇은 회백색 분비물이 보이고 질 점막과 자궁경부는 발적이 없다. 질 분비물의 pH 는 5.2 이고 10 % 수산화칼륨을 떨어뜨리자 비린내가 났다. 생리식염수 습식 표본에서 경계가 흐릿한 상피세포가 많이 보이고 운동성 원충과 가성균사는 없다. 가장 적절한 치료는? A. 플루코나졸 1회 경구 투여 B. 메트로니다졸 경구 투여(본인과 성 파트너) C. 세프트리악손 근육주사와 독시사이클린 경구 투여 D. 질 내 에스트로겐 크림 E. 메트로니다졸 경구 투여(본인만)"
+  },
+  {
+   "id": "imaging-2026-0602",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 등산 뒤 생긴 과녁 모양 홍반",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0602.md",
+   "snippet": "A 34 year old man comes to the physician because of a rash on his right thigh for 5 days. Ten days ago he went hiking in the woods of Connecticut in June. He has mild fatigue and myalgia but no joint swelling, facial weakness, or palpitatio",
+   "text": "감염 감염 — 등산 뒤 생긴 과녁 모양 홍반 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 A 34 year old man comes to the physician because of a rash on his right thigh for 5 days. Ten days ago he went hiking in the woods of Connecticut in June. He has mild fatigue and myalgia but no joint swelling, facial weakness, or palpitations. His temperature is 37.8°C (100°F), pulse is 76/min, and blood pressure is 122/78 mm Hg. Examination shows a 9 cm, warm, nontender, annular erythematous patch with central clearing on the right thigh that has enlarged over the past 3 days. There is no vesicle or necrosis. Neurologic and cardiac examinations show no abnormalities. Which of the following is the most appropriate next step in management? A. Intravenous ceftriaxone for 14 days B. Topical clotrimazole for 2 weeks C. Oral doxycycline for 10 days D. Serologic testing for Borrelia burgdorferi before treatment E. Oral cephalexin for 7 days"
+  },
+  {
+   "id": "imaging-2026-0601",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 감각 이상과 대구성 빈혈의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0601.md",
+   "snippet": "68세 여자가 넉 달 전부터 양쪽 발끝이 저리고 어두운 곳에서 비틀거려서 왔다. 쉽게 피곤하다. 갑상샘기능저하증으로 레보티록신을 먹고 있다. 혈압 118/70 mmHg, 맥박 92회/분이다. 양쪽 발의 진동감각과 위치감각이 떨어져 있고 롬베르그 징후 양성이다. 혈색소 9.4 g/dL, 평균적혈구용적 116 fL, 백혈구 3,900/mm³, 혈소판 142,000/mm³ 이다. 말초혈액도말에서 분엽이 6개 이상인 호중구가 보인다.",
+   "text": "혈액·종양 혈액·종양 — 감각 이상과 대구성 빈혈의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 68세 여자가 넉 달 전부터 양쪽 발끝이 저리고 어두운 곳에서 비틀거려서 왔다. 쉽게 피곤하다. 갑상샘기능저하증으로 레보티록신을 먹고 있다. 혈압 118/70 mmHg, 맥박 92회/분이다. 양쪽 발의 진동감각과 위치감각이 떨어져 있고 롬베르그 징후 양성이다. 혈색소 9.4 g/dL, 평균적혈구용적 116 fL, 백혈구 3,900/mm³, 혈소판 142,000/mm³ 이다. 말초혈액도말에서 분엽이 6개 이상인 호중구가 보인다. 혈청 비타민 B12 160 pg/mL(참고 200~900), 엽산 정상, 메틸말론산과 호모시스테인 모두 증가, 항내인자항체 양성이다. 가장 적절한 치료는? A. 피리독신 경구 투여 B. 비타민 B12 근육주사 C. 엽산 경구 투여 D. 철분 경구 투여 E. 적혈구 수혈"
+  },
+  {
+   "id": "imaging-2026-0600",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 두통으로 찍은 뇌 MRI 의 시퀀스 판별",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0600.md",
+   "snippet": "A 29 year old man comes to the physician because of headaches that have worsened over 6 weeks and are most severe on awakening. He has no fever or history of head trauma. Neurologic examination shows mild weakness of the left hand. Fundosco",
+   "text": "신경 신경 — 두통으로 찍은 뇌 MRI 의 시퀀스 판별 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 A 29 year old man comes to the physician because of headaches that have worsened over 6 weeks and are most severe on awakening. He has no fever or history of head trauma. Neurologic examination shows mild weakness of the left hand. Fundoscopic examination shows no papilledema. MRI of the brain with several sequences is ordered. One axial image at the level of the orbits and midbrain is shown. Which of the following sequences is most likely shown? A. Fluid attenuated inversion recovery (FLAIR) B. Diffusion weighted imaging C. Susceptibility weighted imaging D. T1 weighted E. T2 weighted"
+  },
+  {
+   "id": "imaging-2026-0599",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과 — 검진에서 발견된 노인 남성의 큰 다방성 신장 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0599.md",
+   "snippet": "75세 남자가 건강검진 복부 초음파에서 오른쪽 신장 종괴가 발견되어 왔다. 옆구리 통증·혈뇨·체중 감소는 없다. 고혈압으로 약을 먹고 있고 40갑년 흡연자이다. 혈압 136/80 mmHg 이다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL 이고 소변검사에서 적혈구는 보이지 않는다. 조영증강 복부 CT 는 그림과 같다. 왼쪽 신장은 정상이고 흉부 CT 에서 전이는 없다. 가장 적절한 처치는? A. 오른쪽 근치 신",
+   "text": "외과 외과 — 검진에서 발견된 노인 남성의 큰 다방성 신장 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 75세 남자가 건강검진 복부 초음파에서 오른쪽 신장 종괴가 발견되어 왔다. 옆구리 통증·혈뇨·체중 감소는 없다. 고혈압으로 약을 먹고 있고 40갑년 흡연자이다. 혈압 136/80 mmHg 이다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL 이고 소변검사에서 적혈구는 보이지 않는다. 조영증강 복부 CT 는 그림과 같다. 왼쪽 신장은 정상이고 흉부 CT 에서 전이는 없다. 가장 적절한 처치는? A. 오른쪽 근치 신장절제술 B. 6개월 뒤 복부 CT 로 추적 C. 초음파 유도 낭종 흡인 D. 에탄올 경화요법 E. 항생제 투여와 경피 배액"
+  },
+  {
+   "id": "imaging-2026-0598",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 기관삽관한 코로나19 중증 저산소증의 인공호흡 설정",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0598.md",
+   "snippet": "A 72 year old woman is brought to the emergency department because of worsening shortness of breath. Eight days ago she developed fever and cough, and a nasal swab was positive for SARS CoV 2. Despite high flow nasal oxygen, her oxygen satu",
+   "text": "응급·중환자 응급 — 기관삽관한 코로나19 중증 저산소증의 인공호흡 설정 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 A 72 year old woman is brought to the emergency department because of worsening shortness of breath. Eight days ago she developed fever and cough, and a nasal swab was positive for SARS CoV 2. Despite high flow nasal oxygen, her oxygen saturation falls to 82%, and she is intubated. She is 160 cm (5 ft 3 in) tall and weighs 78 kg (172 lb). Arterial blood gas analysis on an FiO2 of 0.8 and PEEP of 10 cm H2O shows a PaO2 of 72 mm Hg. Bedside echocardiography shows normal left ventricular function. A portable chest x ray is shown. Which of the following is the most appropriate ventilator strategy? A. Tidal volume of 6 mL/kg of predicted body weight with plateau pressure 30 cm H2O or less B. Tidal volume of 10 mL/kg of actual body weight to normalize arterial PCO2 C. Tidal volume of 6 mL/kg of actual body weight with PEEP reduced to zero D. Tidal volume of 12 mL/kg of predicted body weight with plateau pressure 40 cm H2O or less E. Tidal volume of 8 mL/kg of actual body weight with daily paralysis for 7 days"
+  },
+  {
+   "id": "imaging-2026-0597",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 수술 전 검사에서 받은 중년 여성의 12유도 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0597.md",
+   "snippet": "56세 여자가 담석증으로 복강경 담낭절제술을 받기 전에 검사를 받았다. 흉통·호흡곤란·실신은 없고 계단 두 층을 쉬지 않고 오른다. 고혈압·당뇨병은 없다. 혈압 124/78 mmHg, 맥박 80회/분, 심음은 정상이고 잡음은 없다. 혈청 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 오래된 측벽 심근경색 B. 좌심실비대 C. 좌각차단 D. 정상 심전도 E. 오래된 하벽 ",
+   "text": "순환기 순환기 — 수술 전 검사에서 받은 중년 여성의 12유도 심전도 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106 56세 여자가 담석증으로 복강경 담낭절제술을 받기 전에 검사를 받았다. 흉통·호흡곤란·실신은 없고 계단 두 층을 쉬지 않고 오른다. 고혈압·당뇨병은 없다. 혈압 124/78 mmHg, 맥박 80회/분, 심음은 정상이고 잡음은 없다. 혈청 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 오래된 측벽 심근경색 B. 좌심실비대 C. 좌각차단 D. 정상 심전도 E. 오래된 하벽 심근경색"
   },
   {
    "id": "kmle-2026-1795",

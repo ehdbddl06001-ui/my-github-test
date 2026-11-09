@@ -2,6 +2,1580 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0608",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 맥이 고르지 않다고 느끼는 젊은 여성",
+  "type": "심전도 판독 — 맥이 고르지 않다고 느끼는 젊은 여성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "A 28-year-old woman comes to the physician because she has noticed that her pulse seems irregular when she checks it during yoga breathing exercises. She has no palpitations, chest pain, dyspnea, or syncope. She runs 5 km three times weekly and takes no medications. She drinks one cup of coffee daily. Her pulse is 64/min and irregular, and blood pressure is 108/68 mm Hg. Cardiac examination shows no murmurs. Serum electrolyte concentrations and thyroid-stimulating hormone level are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Atrial fibrillation",
+   "Sinus arrhythmia",
+   "Premature atrial contractions",
+   "Second-degree atrioventricular block, Mobitz type I",
+   "Wandering atrial pacemaker"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Every QRS complex is preceded by an upright P wave of the same shape in lead II with a constant PR interval, and the QRS complexes and ST-T waves are normal. The P-P intervals lengthen and shorten gradually, from about 0.84 to 1.1 seconds, without early beats or dropped P waves. A gradual, cyclic variation in sinus rate with identical P waves is sinus arrhythmia, a normal finding in young, fit people that follows breathing.\n- 원리: <b>Why the sinus rate changes with breathing</b>: During inspiration, intrathoracic pressure falls, venous return to the right heart rises, and stretch receptors and baroreflex input transiently reduce vagal outflow to the sinus node, so the rate speeds up. During expiration, vagal tone returns and the rate slows. The sinus node is still the only pacemaker, so the P-wave shape and the PR interval stay the same; only the timing changes, gradually and cyclically.<br> <b>Why it is common in young, fit people</b>: Endurance training raises resting vagal tone, which amplifies the respiratory swing. The variation diminishes with age and with autonomic neuropathy, so its presence is a sign of a healthy autonomic system rather than disease.<br> <b>How to separate it from other irregular rhythms</b>: Premature atrial contractions are sudden early beats, usually with a differently shaped P wave. Mobitz I block lengthens the PR interval until a P wave is not conducted. Wandering atrial pacemaker changes the P-wave shape among at least three forms. Atrial fibrillation has no organized P waves.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Sinus arrhythmia (answer)</th><th>Premature atrial contractions (closest distractor)</th></tr></thead><tbody> <tr><td>P-wave shape</td><td><b>Identical in every beat</b></td><td>Early beat has a different P wave</td></tr> <tr><td>Change in R-R</td><td>Gradual, cyclic with breathing</td><td>Abrupt early beat followed by a pause</td></tr> <tr><td>PR interval</td><td>Constant</td><td>Often different in the early beat</td></tr> <tr><td>Significance</td><td>Normal, especially in the young</td><td>Usually benign; triggers include caffeine and stimulants</td></tr> </tbody></table> Ask whether any single beat is premature: if the intervals drift smoothly with the same P wave, the sinus node is simply changing its rate.\n- 오답 이유:\n  - (A) Atrial fibrillation would be correct if no discrete P waves were visible and the R-R intervals were irregularly irregular without a cyclic pattern.\n  - (C) Premature atrial contractions would be correct if isolated beats came abruptly early with a differently shaped P wave and were followed by a pause.\n  - (D) Mobitz type I block would be correct if the PR interval progressively lengthened until a P wave failed to conduct, producing grouped beating.\n  - (E) Wandering atrial pacemaker would be correct if the P-wave morphology varied among at least three shapes with changing PR intervals at a rate under 100/min.\n- 함정: Calling an irregular pulse an arrhythmia needing evaluation — identical P waves with a constant PR and smoothly varying P-P intervals in a fit young woman are sinus arrhythmia.\n- 학습목표: 모든 QRS 앞에 같은 P파와 일정한 PR 이 있으면서 PP 간격만 서서히 변하는 리듬을 동부정맥으로 판독하고 심방조기수축·Mobitz I 차단·이소성 심방 리듬과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2325 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Every QRS complex is preceded by an upright P wave of the same shape in lead II with a constant PR interval, and the QRS complexes and ST-T waves are normal. The P-P intervals lengthen and shorten gradually, from about 0.84 to 1.1 seconds, without early beats or dropped P waves. A gradual, cyclic variation in sinus rate with identical P waves is sinus arrhythmia, a normal finding in young, fit people that follows breathing."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the sinus rate changes with breathing</b>: During inspiration, intrathoracic pressure falls, venous return to the right heart rises, and stretch receptors and baroreflex input transiently reduce vagal outflow to the sinus node, so the rate speeds up. During expiration, vagal tone returns and the rate slows. The sinus node is still the only pacemaker, so the P-wave shape and the PR interval stay the same; only the timing changes, gradually and cyclically.<br> <b>Why it is common in young, fit people</b>: Endurance training raises resting vagal tone, which amplifies the respiratory swing. The variation diminishes with age and with autonomic neuropathy, so its presence is a sign of a healthy autonomic system rather than disease.<br> <b>How to separate it from other irregular rhythms</b>: Premature atrial contractions are sudden early beats, usually with a differently shaped P wave. Mobitz I block lengthens the PR interval until a P wave is not conducted. Wandering atrial pacemaker changes the P-wave shape among at least three forms. Atrial fibrillation has no organized P waves."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Sinus arrhythmia (answer)</th><th>Premature atrial contractions (closest distractor)</th></tr></thead><tbody> <tr><td>P-wave shape</td><td><b>Identical in every beat</b></td><td>Early beat has a different P wave</td></tr> <tr><td>Change in R-R</td><td>Gradual, cyclic with breathing</td><td>Abrupt early beat followed by a pause</td></tr> <tr><td>PR interval</td><td>Constant</td><td>Often different in the early beat</td></tr> <tr><td>Significance</td><td>Normal, especially in the young</td><td>Usually benign; triggers include caffeine and stimulants</td></tr> </tbody></table> Ask whether any single beat is premature: if the intervals drift smoothly with the same P wave, the sinus node is simply changing its rate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Atrial fibrillation would be correct if no discrete P waves were visible and the R-R intervals were irregularly irregular without a cyclic pattern.\n(C) Premature atrial contractions would be correct if isolated beats came abruptly early with a differently shaped P wave and were followed by a pause.\n(D) Mobitz type I block would be correct if the PR interval progressively lengthened until a P wave failed to conduct, producing grouped beating.\n(E) Wandering atrial pacemaker would be correct if the P-wave morphology varied among at least three shapes with changing PR intervals at a rate under 100/min."
+   },
+   {
+    "k": "함정",
+    "v": "Calling an irregular pulse an arrhythmia needing evaluation — identical P waves with a constant PR and smoothly varying P-P intervals in a fit young woman are sinus arrhythmia."
+   },
+   {
+    "k": "학습목표",
+    "v": "모든 QRS 앞에 같은 P파와 일정한 PR 이 있으면서 PP 간격만 서서히 변하는 리듬을 동부정맥으로 판독하고 심방조기수축·Mobitz I 차단·이소성 심방 리듬과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2325 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Identical P waves with a constant PR interval and gradually varying P-P intervals indicate sinus arrhythmia",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "No beat is abruptly premature and the P-wave shape never changes",
+   "steps": 2,
+   "chain": [
+    "영상: same upright P wave before every QRS with constant PR; P-P intervals drift between about 0.84 and 1.1 seconds",
+    "Gradual cyclic variation without premature beats or dropped P waves -> sinus arrhythmia"
+   ],
+   "key": [
+    {
+     "item": "영상: identical P waves with a constant PR interval before every QRS",
+     "why": "The sinus node is the only pacemaker",
+     "also": []
+    },
+    {
+     "item": "영상: gradual lengthening and shortening of P-P intervals",
+     "why": "Cyclic variation in sinus rate",
+     "also": []
+    },
+    {
+     "item": "during yoga breathing exercises",
+     "why": "Deep breathing accentuates respiratory sinus arrhythmia",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum electrolyte concentrations and thyroid-stimulating hormone level are within the reference ranges",
+     "why": "Lowers the likelihood of a metabolic cause of arrhythmia",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She runs 5 km three times weekly",
+     "why": "High vagal tone in fit people — supports the benign reading",
+     "also": []
+    },
+    {
+     "item": "She drinks one cup of coffee daily",
+     "why": "Modest caffeine intake suggests premature beats but does not explain this pattern",
+     "also": []
+    }
+   ],
+   "summary": "The same P wave precedes every QRS with a constant PR, and the rate varies smoothly with breathing. This is sinus arrhythmia, a normal finding.",
+   "switch": {
+    "choice": "C",
+    "condition": "If single beats came abruptly early with a different P wave and a following pause, premature atrial contractions"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0608.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02325",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2325"
+  },
+  "run_id": "20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0607",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 우연히 발견된 불규칙한 맥박의 고혈압 남성",
+  "type": "심전도 처치 — 우연히 발견된 불규칙한 맥박의 고혈압 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "73세 남자가 고혈압 정기 진료 때 맥박이 불규칙하다는 말을 듣고 심전도를 찍었다. 가끔 두근거리지만 흉통·호흡곤란·어지럼은 없고, 증상이 언제 시작되었는지 모른다. 고혈압으로 암로디핀을 먹고 있고 당뇨병·심부전·뇌졸중 병력은 없다. 혈압 132/80 mmHg, 맥박 76회/분(불규칙)이다. 심초음파에서 좌심실 박출률 60 %, 승모판 협착이나 인공판막은 없다. 혈청 크레아티닌 1.0 mg/dL, 혈색소 14.2 g/dL 이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "아픽사반 경구 투여를 시작한다",
+   "아스피린 경구 투여를 시작한다",
+   "즉시 전기 율동전환을 한다",
+   "항응고 없이 1년 뒤 다시 평가한다",
+   "와파린과 아스피린을 함께 시작한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: P파가 없고 기저선이 잔물결이며 RR 간격이 완전히 불규칙한 좁은 QRS 리듬으로 심방세동이다(I 양성·II·III 음성의 좌축 편위 동반). 심박수는 76회/분으로 조절되어 있고 혈역학적으로 안정하다. 승모판 협착·인공판막이 없는 비판막성 심방세동이고 CHA₂DS₂-VASc 점수는 나이 65~74세 1점 + 고혈압 1점 = 2점이다. 남자에서 2점 이상이면 경구 항응고제가 권고되며, 와파린보다 두개내출혈이 적은 직접 경구 항응고제(아픽사반)가 우선이다.\n- 원리: <b>왜 심방세동이 뇌졸중을 일으키나</b>: 심방이 1분에 400회 넘게 잔떨림만 하면 실제로 수축하지 못해 좌심방이, 특히 막다른 주머니인 <b>좌심방이(left atrial appendage)</b>에 피가 고인다. 정체·내피 손상·과응고(Virchow 세 요소)가 겹쳐 혈전이 생기고, 떨어져 나가면 뇌동맥을 막는다. 그래서 항혈소판제가 아니라 응고 연쇄를 막는 항응고제가 필요하다 — 정체 혈전은 피브린이 주성분인 「붉은 혈전」이기 때문이다.<br> <b>왜 점수를 매기나</b>: 뇌졸중 위험은 사람마다 연 1 % 미만에서 10 % 넘게까지 다르고, 항응고에는 출혈 위험이 따른다. CHA₂DS₂-VASc(심부전·고혈압·75세 이상 2점·당뇨·뇌졸중 2점·혈관질환·65~74세·여성)는 이득이 출혈을 넘는 사람을 고르는 도구다. 남자 2점 이상(여자 3점 이상)이면 항응고를 권한다.<br> <b>왜 아스피린이 아닌가</b>: 아스피린의 뇌졸중 예방 효과는 미미한데 대출혈은 항응고제와 비슷하게 늘어 심방세동 뇌졸중 예방에는 쓰지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">직접 경구 항응고제(정답)</th><th>아스피린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td><b>Xa 인자·트롬빈 억제 → 피브린 혈전 차단</b></td><td>혈소판 COX-1 억제</td></tr> <tr><td>심방세동 뇌졸중 감소</td><td>약 2/3 감소(와파린과 같거나 더 좋음)</td><td>미미함</td></tr> <tr><td>출혈</td><td>와파린보다 두개내출혈 적음</td><td>대출혈이 적지 않음</td></tr> <tr><td>적응</td><td>남자 CHA₂DS₂-VASc ≥ 2</td><td>심방세동 단독 적응 없음</td></tr> </tbody></table> 점수가 2점인 이 남자는 항응고 대상이고, 약은 혈소판이 아니라 응고 연쇄를 겨냥해야 한다.\n- 오답 이유:\n  - ② 아스피린은 심방세동이 아니라 안정 협심증이나 심근경색 뒤 관상동맥질환의 이차 예방이 목적일 때 정답이 된다.\n  - ③ 즉시 전기 율동전환은 심방세동으로 저혈압·쇼크·폐부종·진행 중인 허혈처럼 혈역학적으로 불안정할 때 정답이 된다.\n  - ④ 항응고 없이 재평가는 65세 미만이고 위험인자가 없어 CHA₂DS₂-VASc 가 남자 0점(여자 1점)일 때 정답이 된다.\n  - ⑤ 와파린과 아스피린 병용은 출혈만 늘어 권하지 않으며, 최근 관상동맥 스텐트를 넣어 짧게 병용이 필요한 경우처럼 따로 적응이 있을 때만 정답이 된다.\n- 함정: 증상이 거의 없고 심박수가 정상이니 지켜보는 것 — 심방세동의 뇌졸중 위험은 증상과 무관하고, 남자 CHA₂DS₂-VASc 2점이면 항응고를 시작한다.\n- 학습목표: 심박수가 조절된 비판막성 심방세동에서 CHA₂DS₂-VASc 점수로 뇌졸중 위험을 매겨 직접 경구 항응고제를 고르고 아스피린·즉시 율동전환과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 258: Atrial Fibrillation · Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17794 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "P파가 없고 기저선이 잔물결이며 RR 간격이 완전히 불규칙한 좁은 QRS 리듬으로 심방세동이다(I 양성·II·III 음성의 좌축 편위 동반). 심박수는 76회/분으로 조절되어 있고 혈역학적으로 안정하다. 승모판 협착·인공판막이 없는 비판막성 심방세동이고 CHA₂DS₂-VASc 점수는 나이 65~74세 1점 + 고혈압 1점 = 2점이다. 남자에서 2점 이상이면 경구 항응고제가 권고되며, 와파린보다 두개내출혈이 적은 직접 경구 항응고제(아픽사반)가 우선이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 심방세동이 뇌졸중을 일으키나</b>: 심방이 1분에 400회 넘게 잔떨림만 하면 실제로 수축하지 못해 좌심방이, 특히 막다른 주머니인 <b>좌심방이(left atrial appendage)</b>에 피가 고인다. 정체·내피 손상·과응고(Virchow 세 요소)가 겹쳐 혈전이 생기고, 떨어져 나가면 뇌동맥을 막는다. 그래서 항혈소판제가 아니라 응고 연쇄를 막는 항응고제가 필요하다 — 정체 혈전은 피브린이 주성분인 「붉은 혈전」이기 때문이다.<br> <b>왜 점수를 매기나</b>: 뇌졸중 위험은 사람마다 연 1 % 미만에서 10 % 넘게까지 다르고, 항응고에는 출혈 위험이 따른다. CHA₂DS₂-VASc(심부전·고혈압·75세 이상 2점·당뇨·뇌졸중 2점·혈관질환·65~74세·여성)는 이득이 출혈을 넘는 사람을 고르는 도구다. 남자 2점 이상(여자 3점 이상)이면 항응고를 권한다.<br> <b>왜 아스피린이 아닌가</b>: 아스피린의 뇌졸중 예방 효과는 미미한데 대출혈은 항응고제와 비슷하게 늘어 심방세동 뇌졸중 예방에는 쓰지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">직접 경구 항응고제(정답)</th><th>아스피린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td><b>Xa 인자·트롬빈 억제 → 피브린 혈전 차단</b></td><td>혈소판 COX-1 억제</td></tr> <tr><td>심방세동 뇌졸중 감소</td><td>약 2/3 감소(와파린과 같거나 더 좋음)</td><td>미미함</td></tr> <tr><td>출혈</td><td>와파린보다 두개내출혈 적음</td><td>대출혈이 적지 않음</td></tr> <tr><td>적응</td><td>남자 CHA₂DS₂-VASc ≥ 2</td><td>심방세동 단독 적응 없음</td></tr> </tbody></table> 점수가 2점인 이 남자는 항응고 대상이고, 약은 혈소판이 아니라 응고 연쇄를 겨냥해야 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 아스피린은 심방세동이 아니라 안정 협심증이나 심근경색 뒤 관상동맥질환의 이차 예방이 목적일 때 정답이 된다.\n③ 즉시 전기 율동전환은 심방세동으로 저혈압·쇼크·폐부종·진행 중인 허혈처럼 혈역학적으로 불안정할 때 정답이 된다.\n④ 항응고 없이 재평가는 65세 미만이고 위험인자가 없어 CHA₂DS₂-VASc 가 남자 0점(여자 1점)일 때 정답이 된다.\n⑤ 와파린과 아스피린 병용은 출혈만 늘어 권하지 않으며, 최근 관상동맥 스텐트를 넣어 짧게 병용이 필요한 경우처럼 따로 적응이 있을 때만 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "증상이 거의 없고 심박수가 정상이니 지켜보는 것 — 심방세동의 뇌졸중 위험은 증상과 무관하고, 남자 CHA₂DS₂-VASc 2점이면 항응고를 시작한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심박수가 조절된 비판막성 심방세동에서 CHA₂DS₂-VASc 점수로 뇌졸중 위험을 매겨 직접 경구 항응고제를 고르고 아스피린·즉시 율동전환과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 258: Atrial Fibrillation · Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17794 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CHA₂DS₂-VASc 2점인 남자의 비판막성 심방세동은 직접 경구 항응고제로 뇌졸중을 예방한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "남자에서 점수 2점 이상이고 아스피린은 뇌졸중 예방 효과가 미미하다",
+   "steps": 3,
+   "chain": [
+    "영상: P파 없이 기저선 잔물결, RR 완전히 불규칙한 좁은 QRS → 심방세동",
+    "승모판 협착·인공판막 없음 → 비판막성, 나이 73세 1점 + 고혈압 1점 = CHA₂DS₂-VASc 2점",
+    "남자 2점 이상·혈역학 안정 → 직접 경구 항응고제(아픽사반)"
+   ],
+   "key": [
+    {
+     "item": "영상: P파 없이 잔물결 기저선과 완전히 불규칙한 RR",
+     "why": "심방세동",
+     "also": []
+    },
+    {
+     "item": "고혈압으로 암로디핀",
+     "why": "CHA₂DS₂-VASc 1점",
+     "also": []
+    },
+    {
+     "item": "73세 남자",
+     "why": "65~74세 1점, 남자라 성별 점수 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉통·호흡곤란·어지럼은 없고",
+     "why": "불안정 징후가 없어 즉시 율동전환 적응이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "승모판 협착이나 인공판막은 없다",
+     "why": "비판막성 — 직접 경구 항응고제 사용 가능",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아티닌 1.0 mg/dL",
+     "why": "신기능 정상 — 표준 용량 가능",
+     "also": []
+    },
+    {
+     "item": "맥박 76회/분(불규칙)",
+     "why": "심박수 조절이 되어 있어 오늘의 핵심은 뇌졸중 예방",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "심박수가 조절된 비판막성 심방세동이고 CHA₂DS₂-VASc 가 2점이다. 직접 경구 항응고제(아픽사반)를 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 리듬에 저혈압·폐부종·허혈성 흉통이 있어 혈역학적으로 불안정하면 즉시 전기 율동전환"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0607.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/17000/#files-panel",
+   "asset_id": "PTBXL-17794",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17794"
+  },
+  "run_id": "20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0606",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 두 시간째 가슴이 짓눌리는 고령 여성",
+  "type": "심전도 판독 — 두 시간째 가슴이 짓눌리는 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "87세 여자가 두 시간 전부터 가슴 한가운데가 짓눌리듯 아프고 식은땀이 나서 응급실에 왔다. 통증은 숨을 쉬거나 자세를 바꿔도 달라지지 않는다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 104/66 mmHg, 맥박 90회/분, 호흡 20회/분, 산소포화도 95 % 이다. 심낭 마찰음은 들리지 않는다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "비ST분절 상승 심근경색",
+   "조기 재분극",
+   "하벽 ST분절 상승 심근경색",
+   "전벽 ST분절 상승 심근경색",
+   "급성 심낭염"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: II·III·aVF 에서 ST 분절이 볼록하게 올라가 있고 III 의 상승이 II 보다 크다. 같은 순간 I·aVL 에서는 ST 가 내려가 있다(거울상 변화). V1~V4 에는 의미 있는 ST 상승이 없고 V5·V6 에 경미한 상승만 있다. 이웃한 하벽 유도 묶음의 ST 상승과 반대쪽 고측벽 유도의 거울상 하강은 하벽 ST분절 상승 심근경색이다. 전형적 흉통 두 시간째이므로 즉시 재관류 치료가 필요하다.\n- 원리: <b>왜 하벽 유도에서 오르고 aVL 에서 내려가는가</b>: 관상동맥이 막혀 심근 전층이 손상되면 손상 부위는 정상 심근과 전위 차이(손상 전류)를 만들어 ST 벡터가 <b>손상 부위 쪽</b>을 향한다. 하벽은 II·III·aVF 가 바라보므로 이 유도에서 ST 가 올라가고, 하벽과 정반대 방향을 보는 aVL·I 에서는 같은 벡터가 멀어지는 방향이라 ST 가 내려간다. 이 거울상 하강이 있으면 경색일 가능성이 크게 높아진다.<br> <b>왜 III 이 II 보다 높은가</b>: III 은 오른쪽 아래(+120°)를 본다. ST 벡터가 오른쪽으로 치우치면(우관상동맥 폐쇄) III 의 상승이 II 보다 커진다. 그래서 III > II 이면 우관상동맥, 그리고 우심실 경색 동반 가능성을 생각해 V4R 을 찍고 질산염을 조심한다.<br> <b>왜 심낭염이 아닌가</b>: 심낭염은 심외막 전체에 염증이 있어 ST 벡터가 특정 영역이 아니라 심첨 방향으로 향하므로 aVR·V1 을 뺀 대부분의 유도에서 오목하게 오르고 거울상 하강이 없다(aVR 에서만 하강).\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">하벽 STEMI(정답)</th><th>급성 심낭염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>ST 상승 분포</td><td><b>II·III·aVF 한 영역</b>, III > II</td><td>여러 영역에 걸쳐 광범위</td></tr> <tr><td>거울상 하강</td><td><b>I·aVL 에서 하강</b></td><td>aVR·V1 에서만</td></tr> <tr><td>ST 모양</td><td>볼록·수평</td><td>오목(안장 모양)</td></tr> <tr><td>PR 분절</td><td>변화 없음</td><td>하강(aVR 에서 상승)</td></tr> <tr><td>흉통</td><td>호흡·자세와 무관</td><td>숨 들이쉴 때·누우면 심해짐</td></tr> </tbody></table> ST 상승이 한 관상동맥 영역에 모이고 반대편에 거울상 하강이 있으면 경색으로 읽는다.\n- 오답 이유:\n  - ① 비ST분절 상승 심근경색은 ST 상승 없이 ST 하강이나 T파 역위만 있고 트로포닌이 올라갈 때 정답이 된다.\n  - ② 조기 재분극은 증상 없는 젊은이에게서 J점이 올라간 오목한 ST 상승이 전흉부 유도에 보이고 거울상 하강이 없을 때 정답이 된다.\n  - ④ 전벽 ST분절 상승 심근경색은 V1~V4 에서 ST 가 볼록하게 올라가고 하벽 유도에 거울상 하강이 있을 때 정답이 된다.\n  - ⑤ 급성 심낭염은 거울상 하강 없이 여러 영역에서 오목한 ST 상승과 PR 하강이 보이고 흉통이 자세·호흡에 따라 변할 때 정답이 된다.\n- 함정: 고령이라 증상이 모호하다고 비ST분절 상승 경색으로 읽는 것 — II·III·aVF 의 ST 상승과 I·aVL 의 거울상 하강이 있으면 하벽 STEMI 이다.\n- 학습목표: II·III·aVF 의 ST 상승과 I·aVL 의 거울상 ST 하강을 하벽 ST분절 상승 심근경색으로 판독하고 심낭염·전벽 경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19269 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II·III·aVF 에서 ST 분절이 볼록하게 올라가 있고 III 의 상승이 II 보다 크다. 같은 순간 I·aVL 에서는 ST 가 내려가 있다(거울상 변화). V1~V4 에는 의미 있는 ST 상승이 없고 V5·V6 에 경미한 상승만 있다. 이웃한 하벽 유도 묶음의 ST 상승과 반대쪽 고측벽 유도의 거울상 하강은 하벽 ST분절 상승 심근경색이다. 전형적 흉통 두 시간째이므로 즉시 재관류 치료가 필요하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 하벽 유도에서 오르고 aVL 에서 내려가는가</b>: 관상동맥이 막혀 심근 전층이 손상되면 손상 부위는 정상 심근과 전위 차이(손상 전류)를 만들어 ST 벡터가 <b>손상 부위 쪽</b>을 향한다. 하벽은 II·III·aVF 가 바라보므로 이 유도에서 ST 가 올라가고, 하벽과 정반대 방향을 보는 aVL·I 에서는 같은 벡터가 멀어지는 방향이라 ST 가 내려간다. 이 거울상 하강이 있으면 경색일 가능성이 크게 높아진다.<br> <b>왜 III 이 II 보다 높은가</b>: III 은 오른쪽 아래(+120°)를 본다. ST 벡터가 오른쪽으로 치우치면(우관상동맥 폐쇄) III 의 상승이 II 보다 커진다. 그래서 III > II 이면 우관상동맥, 그리고 우심실 경색 동반 가능성을 생각해 V4R 을 찍고 질산염을 조심한다.<br> <b>왜 심낭염이 아닌가</b>: 심낭염은 심외막 전체에 염증이 있어 ST 벡터가 특정 영역이 아니라 심첨 방향으로 향하므로 aVR·V1 을 뺀 대부분의 유도에서 오목하게 오르고 거울상 하강이 없다(aVR 에서만 하강)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">하벽 STEMI(정답)</th><th>급성 심낭염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>ST 상승 분포</td><td><b>II·III·aVF 한 영역</b>, III > II</td><td>여러 영역에 걸쳐 광범위</td></tr> <tr><td>거울상 하강</td><td><b>I·aVL 에서 하강</b></td><td>aVR·V1 에서만</td></tr> <tr><td>ST 모양</td><td>볼록·수평</td><td>오목(안장 모양)</td></tr> <tr><td>PR 분절</td><td>변화 없음</td><td>하강(aVR 에서 상승)</td></tr> <tr><td>흉통</td><td>호흡·자세와 무관</td><td>숨 들이쉴 때·누우면 심해짐</td></tr> </tbody></table> ST 상승이 한 관상동맥 영역에 모이고 반대편에 거울상 하강이 있으면 경색으로 읽는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 비ST분절 상승 심근경색은 ST 상승 없이 ST 하강이나 T파 역위만 있고 트로포닌이 올라갈 때 정답이 된다.\n② 조기 재분극은 증상 없는 젊은이에게서 J점이 올라간 오목한 ST 상승이 전흉부 유도에 보이고 거울상 하강이 없을 때 정답이 된다.\n④ 전벽 ST분절 상승 심근경색은 V1~V4 에서 ST 가 볼록하게 올라가고 하벽 유도에 거울상 하강이 있을 때 정답이 된다.\n⑤ 급성 심낭염은 거울상 하강 없이 여러 영역에서 오목한 ST 상승과 PR 하강이 보이고 흉통이 자세·호흡에 따라 변할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고령이라 증상이 모호하다고 비ST분절 상승 경색으로 읽는 것 — II·III·aVF 의 ST 상승과 I·aVL 의 거울상 하강이 있으면 하벽 STEMI 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "II·III·aVF 의 ST 상승과 I·aVL 의 거울상 ST 하강을 하벽 ST분절 상승 심근경색으로 판독하고 심낭염·전벽 경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19269 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "II·III·aVF 의 ST 상승과 I·aVL 의 거울상 ST 하강은 하벽 ST분절 상승 심근경색이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "ST 상승이 하벽 한 영역에 모이고 I·aVL 에 거울상 하강이 있다",
+   "steps": 2,
+   "chain": [
+    "영상: II·III·aVF 에서 볼록한 ST 상승(III > II), I·aVL 에서 ST 하강",
+    "한 영역의 ST 상승 + 거울상 하강 + 전형적 흉통 → 하벽 STEMI"
+   ],
+   "key": [
+    {
+     "item": "영상: II·III·aVF 의 ST 상승(III 이 가장 큼)",
+     "why": "하벽 손상 전류 — 우관상동맥 폐쇄 시사",
+     "also": []
+    },
+    {
+     "item": "영상: I·aVL 의 ST 하강",
+     "why": "거울상 변화 — 심낭염·조기 재분극과 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "숨을 쉬거나 자세를 바꿔도 달라지지 않는다",
+     "why": "심낭염의 흉막성·자세성 흉통 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심낭 마찰음은 들리지 않는다",
+     "why": "심낭염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 104/66 mmHg",
+     "why": "경계성 저혈압 — 우심실 경색 동반 시 질산염 주의",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압과 이상지질혈증",
+     "why": "관상동맥질환 위험인자 — 판독은 심전도가 정한다",
+     "also": []
+    }
+   ],
+   "summary": "II·III·aVF 의 ST 상승과 I·aVL 의 거울상 하강이 전형적 흉통과 함께 있다. 하벽 ST분절 상승 심근경색이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "거울상 하강 없이 여러 영역에서 오목한 ST 상승과 PR 하강이 보이고 통증이 자세에 따라 변하면 급성 심낭염"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0606.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/19000/#files-panel",
+   "asset_id": "PTBXL-19269",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19269"
+  },
+  "run_id": "20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0600",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "신경 — 두통으로 찍은 뇌 MRI 의 시퀀스 판별",
+  "type": "신경 — 두통으로 찍은 뇌 MRI 의 시퀀스 판별",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "A 29-year-old man comes to the physician because of headaches that have worsened over 6 weeks and are most severe on awakening. He has no fever or history of head trauma. Neurologic examination shows mild weakness of the left hand. Fundoscopic examination shows no papilledema. MRI of the brain with several sequences is ordered. One axial image at the level of the orbits and midbrain is shown.",
+  "question": "Which of the following sequences is most likely shown?",
+  "options": [
+   "Fluid-attenuated inversion recovery (FLAIR)",
+   "Diffusion-weighted imaging",
+   "Susceptibility-weighted imaging",
+   "T1-weighted",
+   "T2-weighted"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The CSF around the midbrain and in the sulci is dark, the orbital and subcutaneous fat is bright, the vitreous is dark, and the white matter is slightly brighter than the gray matter. Dark fluid with bright fat and white matter brighter than cortex is the contrast of a T1-weighted image. On FLAIR the CSF is also dark, but gray matter is brighter than white matter; on T2-weighted images the CSF and vitreous are bright.\n- 원리: <b>Why fat is bright and water is dark on T1</b>: T1 is the time protons take to realign with the magnet after a pulse. Protons in fat realign quickly (short T1) and give strong signal on a short-repetition-time sequence; free water in CSF and vitreous realigns slowly (long T1) and stays dark.<br> <b>Why white matter is brighter than gray matter on T1</b>: Myelin is lipid-rich and has less free water, so white matter has a shorter T1 than cortex. The result is an image that \"looks like anatomy\" — white matter bright, cortex gray, fluid black.<br> <b>Why FLAIR also has dark CSF but different tissue contrast</b>: FLAIR is a T2-weighted sequence with an inversion pulse timed to null the signal of free water. CSF is suppressed, but the tissues keep T2 contrast: gray matter (more water) is brighter than white matter, and edema or demyelination near the ventricles stands out. Thus dark CSF alone does not identify T1; the gray-white relationship and the bright fat do.\n- 비교: <table><thead><tr><th style=\"width:22%\">Structure</th><th style=\"width:39%\">T1-weighted (answer)</th><th>FLAIR (closest distractor)</th></tr></thead><tbody> <tr><td>CSF</td><td>Dark</td><td>Dark (nulled by inversion)</td></tr> <tr><td>Gray vs white matter</td><td><b>White brighter than gray</b></td><td>Gray brighter than white</td></tr> <tr><td>Edema</td><td>Slightly dark, inconspicuous</td><td>Bright, conspicuous</td></tr> <tr><td>Main use</td><td>Anatomy; with gadolinium, enhancement</td><td>Periventricular and cortical lesions</td></tr> </tbody></table> Both darken fluid, so look at the brain itself: if white matter is brighter than cortex, it is T1.\n- 오답 이유:\n  - (A) FLAIR would be correct if the CSF were dark but the gray matter were brighter than the white matter and edema appeared bright.\n  - (B) Diffusion-weighted imaging would be correct if the image were low-resolution with dark CSF and bright regions of restricted diffusion such as acute infarction.\n  - (C) Susceptibility-weighted imaging would be correct if veins and blood products appeared as prominent dark foci and signal loss near the skull base were exaggerated.\n  - (E) T2-weighted imaging would be correct if the CSF, vitreous, and edema were bright and the gray matter were brighter than the white matter.\n- 함정: Choosing FLAIR because the CSF is dark — FLAIR keeps T2 tissue contrast with gray brighter than white, whereas here white matter is brighter and fat is bright.\n- 학습목표: 뇌척수액 저신호·지방 고신호·백질이 회백질보다 밝은 대조로 T1 강조 영상을 판별하고 FLAIR·T2 강조 영상과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …22648522 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CSF around the midbrain and in the sulci is dark, the orbital and subcutaneous fat is bright, the vitreous is dark, and the white matter is slightly brighter than the gray matter. Dark fluid with bright fat and white matter brighter than cortex is the contrast of a T1-weighted image. On FLAIR the CSF is also dark, but gray matter is brighter than white matter; on T2-weighted images the CSF and vitreous are bright."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why fat is bright and water is dark on T1</b>: T1 is the time protons take to realign with the magnet after a pulse. Protons in fat realign quickly (short T1) and give strong signal on a short-repetition-time sequence; free water in CSF and vitreous realigns slowly (long T1) and stays dark.<br> <b>Why white matter is brighter than gray matter on T1</b>: Myelin is lipid-rich and has less free water, so white matter has a shorter T1 than cortex. The result is an image that \"looks like anatomy\" — white matter bright, cortex gray, fluid black.<br> <b>Why FLAIR also has dark CSF but different tissue contrast</b>: FLAIR is a T2-weighted sequence with an inversion pulse timed to null the signal of free water. CSF is suppressed, but the tissues keep T2 contrast: gray matter (more water) is brighter than white matter, and edema or demyelination near the ventricles stands out. Thus dark CSF alone does not identify T1; the gray-white relationship and the bright fat do."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Structure</th><th style=\"width:39%\">T1-weighted (answer)</th><th>FLAIR (closest distractor)</th></tr></thead><tbody> <tr><td>CSF</td><td>Dark</td><td>Dark (nulled by inversion)</td></tr> <tr><td>Gray vs white matter</td><td><b>White brighter than gray</b></td><td>Gray brighter than white</td></tr> <tr><td>Edema</td><td>Slightly dark, inconspicuous</td><td>Bright, conspicuous</td></tr> <tr><td>Main use</td><td>Anatomy; with gadolinium, enhancement</td><td>Periventricular and cortical lesions</td></tr> </tbody></table> Both darken fluid, so look at the brain itself: if white matter is brighter than cortex, it is T1."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) FLAIR would be correct if the CSF were dark but the gray matter were brighter than the white matter and edema appeared bright.\n(B) Diffusion-weighted imaging would be correct if the image were low-resolution with dark CSF and bright regions of restricted diffusion such as acute infarction.\n(C) Susceptibility-weighted imaging would be correct if veins and blood products appeared as prominent dark foci and signal loss near the skull base were exaggerated.\n(E) T2-weighted imaging would be correct if the CSF, vitreous, and edema were bright and the gray matter were brighter than the white matter."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing FLAIR because the CSF is dark — FLAIR keeps T2 tissue contrast with gray brighter than white, whereas here white matter is brighter and fat is bright."
+   },
+   {
+    "k": "학습목표",
+    "v": "뇌척수액 저신호·지방 고신호·백질이 회백질보다 밝은 대조로 T1 강조 영상을 판별하고 FLAIR·T2 강조 영상과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …22648522 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Dark CSF with bright fat and white matter brighter than gray matter identifies a T1-weighted image",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "White matter is brighter than gray matter, which FLAIR does not show",
+   "steps": 2,
+   "chain": [
+    "영상: dark CSF and vitreous, bright orbital fat, white matter slightly brighter than cortex",
+    "Dark fluid alone fits T1 or FLAIR; white brighter than gray -> T1-weighted"
+   ],
+   "key": [
+    {
+     "item": "영상: dark CSF and vitreous with bright orbital fat",
+     "why": "Long-T1 fluid and short-T1 fat",
+     "also": []
+    },
+    {
+     "item": "영상: white matter slightly brighter than gray matter",
+     "why": "Separates T1 from FLAIR",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "headaches that have worsened over 6 weeks and are most severe on awakening",
+     "why": "Reason for the MRI — does not determine the sequence",
+     "also": []
+    },
+    {
+     "item": "mild weakness of the left hand",
+     "why": "Suggests a focal lesion elsewhere; this slice is asked for its contrast only",
+     "also": []
+    },
+    {
+     "item": "no papilledema",
+     "why": "Clinical detail that does not affect sequence identification",
+     "also": []
+    }
+   ],
+   "summary": "Fluid is dark, fat is bright, and white matter is brighter than cortex. This is a T1-weighted image.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the CSF were dark but the cortex were brighter than the white matter, the image would be FLAIR"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0600.png",
+   "caption": "Axial brain MRI, single image from a standard clinical protocol, DICOM converted without cropping (The Cancer Imaging Archive, CC BY 4.0; no window adjustment beyond default)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.28765316630832210541359355751422648522",
+   "asset_id": "TCIA-UPENN_GBM-48092181867490",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …22648522"
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0599",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "외과 — 검진에서 발견된 노인 남성의 큰 다방성 신장 종괴",
+  "type": "외과 — 검진에서 발견된 노인 남성의 큰 다방성 신장 종괴",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "75세 남자가 건강검진 복부 초음파에서 오른쪽 신장 종괴가 발견되어 왔다. 옆구리 통증·혈뇨·체중 감소는 없다. 고혈압으로 약을 먹고 있고 40갑년 흡연자이다. 혈압 136/80 mmHg 이다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL 이고 소변검사에서 적혈구는 보이지 않는다. 조영증강 복부 CT 는 그림과 같다. 왼쪽 신장은 정상이고 흉부 CT 에서 전이는 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "오른쪽 근치 신장절제술",
+   "6개월 뒤 복부 CT 로 추적",
+   "초음파 유도 낭종 흡인",
+   "에탄올 경화요법",
+   "항생제 투여와 경피 배액"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 오른쪽 신장 뒤쪽으로 크게 튀어나온 다방성 종괴가 보이고, 두꺼운 격막으로 나뉜 여러 방의 감쇠가 서로 다르며 지방은 없다. 얇은 벽·물 감쇠의 단순 낭종이 아니라 두꺼운 격막과 고형 성분이 있는 복잡 낭성 종괴로, 낭성 신세포암의 가능성이 높아 수술로 떼어 낸다. 종괴가 크고(약 9 cm) 신장 상당 부분을 차지하며 반대쪽 신장과 신기능이 정상이므로 근치 신장절제술이 적절하다. 이 증례의 수술 병리는 유두상 신세포암이었다.\n- 원리: <b>왜 낭종의 「벽과 격막」이 결정하는가</b>: 단순 신낭종은 세뇨관에서 생긴 얇은 상피 주머니라 벽이 머리카락처럼 얇고 안이 물(0~20 HU)이며 조영증강되지 않는다. 암은 혈관을 가진 <b>살아 있는 조직</b>이므로 두꺼워진 벽·격막·결절로 나타나고 그 부분이 조영증강된다. 그래서 Bosniak 분류는 크기가 아니라 벽·격막의 두께와 조영증강, 고형 결절의 유무로 악성 가능성을 매긴다(I·II 는 거의 0 %, IIF 는 추적, III 는 약 50 %, IV 는 약 90 %).<br> <b>왜 흡인·경화가 답이 아닌가</b>: 복잡 낭성 종괴를 바늘로 찌르면 진단 정확도가 낮고(낭액 세포검사는 위음성이 많다) 종양을 퍼뜨릴 위험이 있다. 경화요법은 증상 있는 단순 낭종의 치료다.<br> <b>왜 근치 절제인가</b>: 7 cm 이하이고 위치가 좋으면 신장 기능을 지키는 부분 절제가 우선이지만, 신장 대부분을 차지하는 큰 종괴는 신장과 주위 지방을 함께 떼어 내는 근치 절제가 표준이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">복잡 낭성 종괴(정답 — 절제)</th><th>단순 신낭종(가장 가까운 오답 — 추적·흡인)</th></tr></thead><tbody> <tr><td>벽·격막</td><td><b>두껍고 불규칙, 여러 방</b></td><td>머리카락처럼 얇고 격막 없음</td></tr> <tr><td>내용물</td><td>방마다 감쇠가 다름(출혈·단백질·고형 성분)</td><td>균일한 물 감쇠(0~20 HU)</td></tr> <tr><td>조영증강</td><td>벽·격막·결절이 증강</td><td>증강 없음</td></tr> <tr><td>처치</td><td>수술 절제</td><td>무증상이면 추적 불필요, 증상 있으면 흡인·경화</td></tr> </tbody></table> 「낭종」이라는 말에 끌리지 말고 벽과 격막을 본다. 두꺼운 격막과 고형 성분이 보이면 악성으로 보고 절제한다.\n- 오답 이유:\n  - ② 6개월 뒤 CT 추적은 얇은 격막이 몇 개 있거나 벽이 약간 두꺼운 Bosniak IIF 낭종처럼 악성 가능성이 낮을 때 정답이 된다.\n  - ③ 초음파 유도 낭종 흡인은 얇은 벽·물 감쇠의 단순 낭종이 커서 옆구리 통증이나 요관 압박을 일으킬 때 정답이 된다.\n  - ④ 에탄올 경화요법은 증상 있는 단순 신낭종이 흡인 뒤에도 다시 차오를 때 재발을 막는 치료로 정답이 된다.\n  - ⑤ 항생제와 경피 배액은 열·옆구리 압통·농뇨가 있고 CT 에서 벽이 증강되는 액체 저류(신농양)가 보일 때 정답이 된다.\n- 함정: 낭성 병변이니 흡인이나 추적을 고르는 것 — 두꺼운 격막과 감쇠가 다른 여러 방은 복잡 낭성 종괴로 절제한다.\n- 학습목표: 두꺼운 격막으로 나뉜 큰 다방성 신장 종괴를 낭성 신세포암 가능성이 높은 병변으로 보고 수술적 절제를 고르며, 단순 낭종의 추적·흡인과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Silverman SG, Pedrosa I, Ellis JH, et al. Bosniak classification of cystic renal masses, version 2019: an update proposal and needs assessment. Radiology. 2019;292(2):475-488\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00028 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 오른쪽 신장 뒤쪽으로 크게 튀어나온 다방성 종괴가 보이고, 두꺼운 격막으로 나뉜 여러 방의 감쇠가 서로 다르며 지방은 없다. 얇은 벽·물 감쇠의 단순 낭종이 아니라 두꺼운 격막과 고형 성분이 있는 복잡 낭성 종괴로, 낭성 신세포암의 가능성이 높아 수술로 떼어 낸다. 종괴가 크고(약 9 cm) 신장 상당 부분을 차지하며 반대쪽 신장과 신기능이 정상이므로 근치 신장절제술이 적절하다. 이 증례의 수술 병리는 유두상 신세포암이었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 낭종의 「벽과 격막」이 결정하는가</b>: 단순 신낭종은 세뇨관에서 생긴 얇은 상피 주머니라 벽이 머리카락처럼 얇고 안이 물(0~20 HU)이며 조영증강되지 않는다. 암은 혈관을 가진 <b>살아 있는 조직</b>이므로 두꺼워진 벽·격막·결절로 나타나고 그 부분이 조영증강된다. 그래서 Bosniak 분류는 크기가 아니라 벽·격막의 두께와 조영증강, 고형 결절의 유무로 악성 가능성을 매긴다(I·II 는 거의 0 %, IIF 는 추적, III 는 약 50 %, IV 는 약 90 %).<br> <b>왜 흡인·경화가 답이 아닌가</b>: 복잡 낭성 종괴를 바늘로 찌르면 진단 정확도가 낮고(낭액 세포검사는 위음성이 많다) 종양을 퍼뜨릴 위험이 있다. 경화요법은 증상 있는 단순 낭종의 치료다.<br> <b>왜 근치 절제인가</b>: 7 cm 이하이고 위치가 좋으면 신장 기능을 지키는 부분 절제가 우선이지만, 신장 대부분을 차지하는 큰 종괴는 신장과 주위 지방을 함께 떼어 내는 근치 절제가 표준이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">복잡 낭성 종괴(정답 — 절제)</th><th>단순 신낭종(가장 가까운 오답 — 추적·흡인)</th></tr></thead><tbody> <tr><td>벽·격막</td><td><b>두껍고 불규칙, 여러 방</b></td><td>머리카락처럼 얇고 격막 없음</td></tr> <tr><td>내용물</td><td>방마다 감쇠가 다름(출혈·단백질·고형 성분)</td><td>균일한 물 감쇠(0~20 HU)</td></tr> <tr><td>조영증강</td><td>벽·격막·결절이 증강</td><td>증강 없음</td></tr> <tr><td>처치</td><td>수술 절제</td><td>무증상이면 추적 불필요, 증상 있으면 흡인·경화</td></tr> </tbody></table> 「낭종」이라는 말에 끌리지 말고 벽과 격막을 본다. 두꺼운 격막과 고형 성분이 보이면 악성으로 보고 절제한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 6개월 뒤 CT 추적은 얇은 격막이 몇 개 있거나 벽이 약간 두꺼운 Bosniak IIF 낭종처럼 악성 가능성이 낮을 때 정답이 된다.\n③ 초음파 유도 낭종 흡인은 얇은 벽·물 감쇠의 단순 낭종이 커서 옆구리 통증이나 요관 압박을 일으킬 때 정답이 된다.\n④ 에탄올 경화요법은 증상 있는 단순 신낭종이 흡인 뒤에도 다시 차오를 때 재발을 막는 치료로 정답이 된다.\n⑤ 항생제와 경피 배액은 열·옆구리 압통·농뇨가 있고 CT 에서 벽이 증강되는 액체 저류(신농양)가 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "낭성 병변이니 흡인이나 추적을 고르는 것 — 두꺼운 격막과 감쇠가 다른 여러 방은 복잡 낭성 종괴로 절제한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "두꺼운 격막으로 나뉜 큰 다방성 신장 종괴를 낭성 신세포암 가능성이 높은 병변으로 보고 수술적 절제를 고르며, 단순 낭종의 추적·흡인과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Silverman SG, Pedrosa I, Ellis JH, et al. Bosniak classification of cystic renal masses, version 2019: an update proposal and needs assessment. Radiology. 2019;292(2):475-488 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00028 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "두꺼운 격막과 감쇠가 다른 여러 방을 가진 큰 신장 종괴는 악성 가능성이 높아 근치 신장절제술을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "얇은 격막의 IIF 낭종이 아니라 두꺼운 격막과 고형 성분이 있는 큰 종괴다",
+   "steps": 2,
+   "chain": [
+    "영상: 오른쪽 신장의 큰 다방성 종괴, 두꺼운 격막과 감쇠가 다른 여러 방",
+    "복잡 낭성 종괴(악성 가능성 높음) + 반대쪽 신장 정상 + 전이 없음 → 근치 신장절제술"
+   ],
+   "key": [
+    {
+     "item": "영상: 두꺼운 격막으로 나뉜 감쇠가 다른 여러 방",
+     "why": "복잡 낭성 종괴 — 악성 가능성이 높다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "옆구리 통증·혈뇨·체중 감소는 없다",
+     "why": "증상이 없어도 악성을 배제하지 못한다 — 영상이 정한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "영상: 신장 뒤쪽으로 크게 튀어나온 종괴",
+     "why": "크기가 커서 부분 절제보다 근치 절제",
+     "also": []
+    },
+    {
+     "item": "왼쪽 신장은 정상이고 흉부 CT 에서 전이는 없다",
+     "why": "근치 절제 후 신기능이 유지되고 국소 병변이다",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아티닌 1.0 mg/dL",
+     "why": "신기능이 정상이라 한쪽 신장절제를 견딘다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "40갑년 흡연자",
+     "why": "신세포암 위험인자 — 처치 선택은 영상 소견이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "두꺼운 격막과 감쇠가 다른 여러 방을 가진 큰 신장 종괴로 악성 가능성이 높다. 반대쪽 신장이 정상이므로 근치 신장절제술을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "얇은 격막 몇 개와 약간 두꺼운 벽만 있고 증강되는 고형 성분이 없다면(Bosniak IIF) 영상 추적"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0599.png",
+   "caption": "조영증강 복부 CT, 동맥기 축상 단면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 크롭·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.170287866412540660606800504577",
+   "asset_id": "TCIA-KITS-00028_93861887",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00028"
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0598",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "응급 — 기관삽관한 코로나19 중증 저산소증의 인공호흡 설정",
+  "type": "응급 — 기관삽관한 코로나19 중증 저산소증의 인공호흡 설정",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "A 72-year-old woman is brought to the emergency department because of worsening shortness of breath. Eight days ago she developed fever and cough, and a nasal swab was positive for SARS-CoV-2. Despite high-flow nasal oxygen, her oxygen saturation falls to 82%, and she is intubated. She is 160 cm (5 ft 3 in) tall and weighs 78 kg (172 lb). Arterial blood gas analysis on an FiO2 of 0.8 and PEEP of 10 cm H2O shows a PaO2 of 72 mm Hg. Bedside echocardiography shows normal left ventricular function. A portable chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate ventilator strategy?",
+  "options": [
+   "Tidal volume of 6 mL/kg of predicted body weight with plateau pressure 30 cm H2O or less",
+   "Tidal volume of 10 mL/kg of actual body weight to normalize arterial PCO2",
+   "Tidal volume of 6 mL/kg of actual body weight with PEEP reduced to zero",
+   "Tidal volume of 12 mL/kg of predicted body weight with plateau pressure 40 cm H2O or less",
+   "Tidal volume of 8 mL/kg of actual body weight with daily paralysis for 7 days"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The radiograph shows bilateral patchy consolidation and ground-glass opacities, worse in the right mid and lower zones, without a large effusion. With acute onset within a week, bilateral opacities, normal left ventricular function, and a PaO2/FiO2 ratio of 90 on PEEP 10, she meets criteria for severe ARDS. Lung-protective ventilation uses a tidal volume of about 6 mL/kg of predicted body weight (about 52 kg for a 160-cm woman, so roughly 315 mL) while keeping plateau pressure at 30 cm H2O or less; this strategy lowered mortality in randomized trials.\n- 원리: <b>Why predicted, not actual, body weight</b>: Lung size is set by height and sex, not by fat mass. A 160-cm woman has the lungs of a 52-kg person whether she weighs 52 or 78 kg. Calculating tidal volume from actual weight would deliver about 470 mL at 6 mL/kg — 9 mL/kg of her real lung — and overdistend it.<br> <b>Why small breaths protect the ARDS lung</b>: In ARDS, large dependent regions are flooded or collapsed, so the aerated \"baby lung\" may be only a third of normal. A conventional breath delivered into that small volume overstretches the open alveoli (volutrauma), and repeated opening and closing of unstable units adds shear injury (atelectrauma). This injury releases cytokines that spread to other organs. Limiting tidal volume and plateau pressure reduces this ventilator-induced lung injury; PEEP keeps recruited units open.<br> <b>What is accepted in exchange</b>: Smaller breaths raise PaCO2 (permissive hypercapnia), which is tolerated if the pH stays above about 7.20, and oxygenation targets are a PaO2 of 55-80 mm Hg rather than normal values.\n- 비교: <table><thead><tr><th style=\"width:24%\">Setting</th><th style=\"width:38%\">Lung-protective ventilation (answer)</th><th>Conventional ventilation by actual weight (closest distractor)</th></tr></thead><tbody> <tr><td>Tidal volume</td><td><b>6 mL/kg predicted body weight</b> (about 315 mL here)</td><td>10 mL/kg actual body weight (780 mL here)</td></tr> <tr><td>Plateau pressure</td><td>30 cm H2O or less</td><td>Often above 30 cm H2O in stiff lungs</td></tr> <tr><td>PaCO2</td><td>Allowed to rise (pH above 7.20)</td><td>Normalized</td></tr> <tr><td>Outcome</td><td>Lower mortality (ARDS Network)</td><td>More ventilator-induced lung injury</td></tr> </tbody></table> The goal in ARDS is to limit stretch of the remaining aerated lung, not to normalize blood gases; using height-based predicted weight is what makes the number meaningful.\n- 오답 이유:\n  - (B) A tidal volume of 10 mL/kg of actual body weight was once standard and would only be acceptable in a patient with normal lungs, and even then predicted weight is preferred.\n  - (C) Removing PEEP would be wrong in ARDS; low PEEP is chosen only when hypoxemia is mild and the lung is not recruitable, never zero in severe ARDS.\n  - (D) A tidal volume of 12 mL/kg with plateau pressure up to 40 cm H2O was the control arm that increased mortality, so it would never be the correct choice in ARDS.\n  - (E) Neuromuscular blockade is reserved for refractory dyssynchrony or severe hypoxemia for up to 48 hours, not for 7 days, and still uses predicted-weight tidal volumes.\n- 함정: Calculating tidal volume from actual body weight in an obese patient — lung size follows height and sex, so predicted body weight sets the 6 mL/kg target.\n- 학습목표: 양쪽 음영과 심한 저산소증을 보이는 코로나19 ARDS 에서 예측 체중 기준 저일회호흡량 환기를 고르고 실제 체중 기준 큰 일회호흡량과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome · Acute Respiratory Distress Syndrome Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and the acute respiratory distress syndrome. N Engl J Med. 2000;342(18):1301-1308\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …63861413 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows bilateral patchy consolidation and ground-glass opacities, worse in the right mid and lower zones, without a large effusion. With acute onset within a week, bilateral opacities, normal left ventricular function, and a PaO2/FiO2 ratio of 90 on PEEP 10, she meets criteria for severe ARDS. Lung-protective ventilation uses a tidal volume of about 6 mL/kg of predicted body weight (about 52 kg for a 160-cm woman, so roughly 315 mL) while keeping plateau pressure at 30 cm H2O or less; this strategy lowered mortality in randomized trials."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why predicted, not actual, body weight</b>: Lung size is set by height and sex, not by fat mass. A 160-cm woman has the lungs of a 52-kg person whether she weighs 52 or 78 kg. Calculating tidal volume from actual weight would deliver about 470 mL at 6 mL/kg — 9 mL/kg of her real lung — and overdistend it.<br> <b>Why small breaths protect the ARDS lung</b>: In ARDS, large dependent regions are flooded or collapsed, so the aerated \"baby lung\" may be only a third of normal. A conventional breath delivered into that small volume overstretches the open alveoli (volutrauma), and repeated opening and closing of unstable units adds shear injury (atelectrauma). This injury releases cytokines that spread to other organs. Limiting tidal volume and plateau pressure reduces this ventilator-induced lung injury; PEEP keeps recruited units open.<br> <b>What is accepted in exchange</b>: Smaller breaths raise PaCO2 (permissive hypercapnia), which is tolerated if the pH stays above about 7.20, and oxygenation targets are a PaO2 of 55-80 mm Hg rather than normal values."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Setting</th><th style=\"width:38%\">Lung-protective ventilation (answer)</th><th>Conventional ventilation by actual weight (closest distractor)</th></tr></thead><tbody> <tr><td>Tidal volume</td><td><b>6 mL/kg predicted body weight</b> (about 315 mL here)</td><td>10 mL/kg actual body weight (780 mL here)</td></tr> <tr><td>Plateau pressure</td><td>30 cm H2O or less</td><td>Often above 30 cm H2O in stiff lungs</td></tr> <tr><td>PaCO2</td><td>Allowed to rise (pH above 7.20)</td><td>Normalized</td></tr> <tr><td>Outcome</td><td>Lower mortality (ARDS Network)</td><td>More ventilator-induced lung injury</td></tr> </tbody></table> The goal in ARDS is to limit stretch of the remaining aerated lung, not to normalize blood gases; using height-based predicted weight is what makes the number meaningful."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A tidal volume of 10 mL/kg of actual body weight was once standard and would only be acceptable in a patient with normal lungs, and even then predicted weight is preferred.\n(C) Removing PEEP would be wrong in ARDS; low PEEP is chosen only when hypoxemia is mild and the lung is not recruitable, never zero in severe ARDS.\n(D) A tidal volume of 12 mL/kg with plateau pressure up to 40 cm H2O was the control arm that increased mortality, so it would never be the correct choice in ARDS.\n(E) Neuromuscular blockade is reserved for refractory dyssynchrony or severe hypoxemia for up to 48 hours, not for 7 days, and still uses predicted-weight tidal volumes."
+   },
+   {
+    "k": "함정",
+    "v": "Calculating tidal volume from actual body weight in an obese patient — lung size follows height and sex, so predicted body weight sets the 6 mL/kg target."
+   },
+   {
+    "k": "학습목표",
+    "v": "양쪽 음영과 심한 저산소증을 보이는 코로나19 ARDS 에서 예측 체중 기준 저일회호흡량 환기를 고르고 실제 체중 기준 큰 일회호흡량과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome · Acute Respiratory Distress Syndrome Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and the acute respiratory distress syndrome. N Engl J Med. 2000;342(18):1301-1308 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …63861413 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Bilateral opacities with a PaO2/FiO2 ratio of 90 and normal ventricular function define severe ARDS, treated with 6 mL/kg predicted body weight tidal volume",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Tidal volume is based on predicted body weight from height, with plateau pressure limited to 30 cm H2O",
+   "steps": 3,
+   "chain": [
+    "영상: bilateral patchy consolidation and ground-glass opacities without a large effusion",
+    "PaO2 72 on FiO2 0.8 with PEEP 10 and normal left ventricular function -> severe ARDS",
+    "ARDS -> lung-protective ventilation with 6 mL/kg predicted body weight and plateau pressure 30 or less"
+   ],
+   "key": [
+    {
+     "item": "영상: bilateral patchy consolidation and ground-glass opacities",
+     "why": "Bilateral opacities required for ARDS",
+     "also": []
+    },
+    {
+     "item": "PaO2 of 72 mm Hg",
+     "why": "With FiO2 0.8 the ratio is 90, severe ARDS",
+     "also": []
+    },
+    {
+     "item": "Eight days ago she developed fever and cough",
+     "why": "Onset within one week of a known insult",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "normal left ventricular function",
+     "why": "Makes cardiogenic pulmonary edema less likely as the cause of opacities",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She is 160 cm (5 ft 3 in) tall and weighs 78 kg (172 lb)",
+     "why": "Height sets predicted body weight; actual weight would overestimate tidal volume",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "Bilateral opacities and severe hypoxemia within a week of COVID-19 onset, with normal cardiac function, indicate severe ARDS. Ventilate with 6 mL/kg of predicted body weight and plateau pressure 30 cm H2O or less.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the lungs were normal (for example, intubation for airway protection after an overdose), larger tidal volumes would be less harmful, though predicted weight is still preferred"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0598.png",
+   "caption": "Portable anteroposterior chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment; ECG electrodes visible)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1604597588966309813493763861413",
+   "asset_id": "TCIA-COVID19_AR-49186243048696",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …63861413"
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0597",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "순환기 — 수술 전 검사에서 받은 중년 여성의 12유도 심전도",
+  "type": "순환기 — 수술 전 검사에서 받은 중년 여성의 12유도 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "56세 여자가 담석증으로 복강경 담낭절제술을 받기 전에 검사를 받았다. 흉통·호흡곤란·실신은 없고 계단 두 층을 쉬지 않고 오른다. 고혈압·당뇨병은 없다. 혈압 124/78 mmHg, 맥박 80회/분, 심음은 정상이고 잡음은 없다. 혈청 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "오래된 측벽 심근경색",
+   "좌심실비대",
+   "좌각차단",
+   "정상 심전도",
+   "오래된 하벽 심근경색"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 동리듬 약 80회/분, PR 과 QRS 가 정상 범위이고 축도 정상이다. I·II·aVF·V4~V6 에 q파가 있지만 폭이 1 mm(40 ms) 미만이고 깊이도 뒤따르는 R파의 1/4 에 못 미친다. 이런 좁고 작은 q파는 심실중격이 왼쪽에서 오른쪽으로 먼저 흥분하면서 생기는 정상 중격 q파다. ST 분절과 T파도 정상이어서 판독은 정상 심전도다. 판독 전문의의 판독도 「중격 활성화를 반영하는 작은 q파, 그 밖에 정상」이었다.\n- 원리: <b>왜 정상에서도 q파가 있는가</b>: 심실 흥분은 왼쪽 각지에서 먼저 심실중격으로 퍼지므로, 중격은 <b>왼쪽에서 오른쪽으로</b> 먼저 탈분극한다. 이 첫 0.02~0.03초의 벡터는 왼쪽을 보는 유도(I·aVL·V5·V6)와 아래를 보는 유도(II·aVF) 에서 멀어지는 방향이라 작고 좁은 음성 파, 즉 <b>중격 q파</b>로 기록된다. 그래서 좌각차단에서는 중격이 오른쪽에서 왼쪽으로 흥분해 이 q파가 오히려 사라진다.<br> <b>병적 q파는 왜 넓고 깊은가</b>: 경색으로 심근이 전기적으로 죽으면 그 자리를 보는 유도는 반대편 벽의 흥분이 멀어지는 것을 그대로 「창문」처럼 보게 된다. 그 벽 전체의 흥분 시간만큼 음성 파가 이어지므로 폭 40 ms 이상, 깊이 R파의 1/4 이상이 되고, 서로 이웃한 두 유도 이상에서 함께 보인다.<br> <b>왜 구분이 중요한가</b>: 정상 q파를 경색으로 읽으면 증상 없는 수술 전 환자에게 불필요한 부하검사와 수술 지연이 생긴다. 기능 용량이 4 METs 이상이고 증상이 없으면 저위험 수술 전에 추가 심장 검사가 필요 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">중격 q파(정답 — 정상)</th><th>오래된 심근경색의 병적 q파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>폭</td><td><b>40 ms(1 mm) 미만</b> — 중격 흥분 시간만</td><td>40 ms 이상 — 반대 벽 흥분 시간 전체</td></tr> <tr><td>깊이</td><td>R파의 1/4 미만</td><td>R파의 1/4 이상, R파가 작아지거나 QS</td></tr> <tr><td>분포</td><td>I·aVL·II·aVF·V5·V6 에 흔함, V1~V3 에는 없음</td><td>관상동맥 영역에 맞는 이웃한 유도 묶음</td></tr> <tr><td>동반 소견</td><td>ST-T 정상</td><td>T파 역위·R파 소실이 흔히 동반</td></tr> </tbody></table> q파의 「있음」이 아니라 폭·깊이·분포로 판단한다. V1~V3 에 q파가 있으면 그것은 정상에서 보이지 않는다.\n- 오답 이유:\n  - ① 오래된 측벽 심근경색은 I·aVL·V5·V6 에 넓고 깊은 q파와 R파 감소가 함께 있을 때 정답이 된다.\n  - ② 좌심실비대는 V1 의 S파와 V5·V6 의 R파 합이 35 mm 를 넘거나 좌측 흉부 유도의 스트레인형 ST-T 변화가 있을 때 정답이 된다.\n  - ③ 좌각차단은 QRS 가 120 ms 이상으로 넓고 I·V6 의 중격 q파가 사라지며 넓고 패인 R파가 보일 때 정답이 된다.\n  - ⑤ 오래된 하벽 심근경색은 II·III·aVF 에 폭 40 ms 이상이거나 R파 1/4 이상 깊은 q파가 함께 있을 때 정답이 된다.\n- 함정: q파가 여러 유도에 보인다고 오래된 경색으로 읽는 것 — 폭 40 ms 미만·깊이 R파 1/4 미만의 q파는 중격 활성화의 정상 소견이다.\n- 학습목표: I·II·aVF·V4~V6 의 좁고 작은 q파를 중격 활성화의 정상 q파로 읽고, 병적 q파(오래된 심근경색)·좌심실비대와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5105 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 80회/분, PR 과 QRS 가 정상 범위이고 축도 정상이다. I·II·aVF·V4~V6 에 q파가 있지만 폭이 1 mm(40 ms) 미만이고 깊이도 뒤따르는 R파의 1/4 에 못 미친다. 이런 좁고 작은 q파는 심실중격이 왼쪽에서 오른쪽으로 먼저 흥분하면서 생기는 정상 중격 q파다. ST 분절과 T파도 정상이어서 판독은 정상 심전도다. 판독 전문의의 판독도 「중격 활성화를 반영하는 작은 q파, 그 밖에 정상」이었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 정상에서도 q파가 있는가</b>: 심실 흥분은 왼쪽 각지에서 먼저 심실중격으로 퍼지므로, 중격은 <b>왼쪽에서 오른쪽으로</b> 먼저 탈분극한다. 이 첫 0.02~0.03초의 벡터는 왼쪽을 보는 유도(I·aVL·V5·V6)와 아래를 보는 유도(II·aVF) 에서 멀어지는 방향이라 작고 좁은 음성 파, 즉 <b>중격 q파</b>로 기록된다. 그래서 좌각차단에서는 중격이 오른쪽에서 왼쪽으로 흥분해 이 q파가 오히려 사라진다.<br> <b>병적 q파는 왜 넓고 깊은가</b>: 경색으로 심근이 전기적으로 죽으면 그 자리를 보는 유도는 반대편 벽의 흥분이 멀어지는 것을 그대로 「창문」처럼 보게 된다. 그 벽 전체의 흥분 시간만큼 음성 파가 이어지므로 폭 40 ms 이상, 깊이 R파의 1/4 이상이 되고, 서로 이웃한 두 유도 이상에서 함께 보인다.<br> <b>왜 구분이 중요한가</b>: 정상 q파를 경색으로 읽으면 증상 없는 수술 전 환자에게 불필요한 부하검사와 수술 지연이 생긴다. 기능 용량이 4 METs 이상이고 증상이 없으면 저위험 수술 전에 추가 심장 검사가 필요 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">중격 q파(정답 — 정상)</th><th>오래된 심근경색의 병적 q파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>폭</td><td><b>40 ms(1 mm) 미만</b> — 중격 흥분 시간만</td><td>40 ms 이상 — 반대 벽 흥분 시간 전체</td></tr> <tr><td>깊이</td><td>R파의 1/4 미만</td><td>R파의 1/4 이상, R파가 작아지거나 QS</td></tr> <tr><td>분포</td><td>I·aVL·II·aVF·V5·V6 에 흔함, V1~V3 에는 없음</td><td>관상동맥 영역에 맞는 이웃한 유도 묶음</td></tr> <tr><td>동반 소견</td><td>ST-T 정상</td><td>T파 역위·R파 소실이 흔히 동반</td></tr> </tbody></table> q파의 「있음」이 아니라 폭·깊이·분포로 판단한다. V1~V3 에 q파가 있으면 그것은 정상에서 보이지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 오래된 측벽 심근경색은 I·aVL·V5·V6 에 넓고 깊은 q파와 R파 감소가 함께 있을 때 정답이 된다.\n② 좌심실비대는 V1 의 S파와 V5·V6 의 R파 합이 35 mm 를 넘거나 좌측 흉부 유도의 스트레인형 ST-T 변화가 있을 때 정답이 된다.\n③ 좌각차단은 QRS 가 120 ms 이상으로 넓고 I·V6 의 중격 q파가 사라지며 넓고 패인 R파가 보일 때 정답이 된다.\n⑤ 오래된 하벽 심근경색은 II·III·aVF 에 폭 40 ms 이상이거나 R파 1/4 이상 깊은 q파가 함께 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "q파가 여러 유도에 보인다고 오래된 경색으로 읽는 것 — 폭 40 ms 미만·깊이 R파 1/4 미만의 q파는 중격 활성화의 정상 소견이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "I·II·aVF·V4~V6 의 좁고 작은 q파를 중격 활성화의 정상 q파로 읽고, 병적 q파(오래된 심근경색)·좌심실비대와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5105 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁고 작은 q파와 정상 ST-T 는 중격 활성화의 정상 소견이므로 정상 심전도로 판독한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "q파 폭이 40 ms 미만이고 깊이가 R파의 1/4 미만이다",
+   "steps": 2,
+   "chain": [
+    "영상: I·II·aVF·V4~V6 의 q파가 좁고 작으며 ST-T 는 정상",
+    "병적 q파 기준(폭 40 ms·깊이 R파 1/4)에 못 미침 → 중격 q파, 정상 심전도"
+   ],
+   "key": [
+    {
+     "item": "영상: I·II·aVF·V4~V6 의 폭 1 mm 미만 작은 q파",
+     "why": "정상 중격 q파의 모양과 분포",
+     "also": []
+    },
+    {
+     "item": "영상: 좁은 QRS, 정상 축, ST-T 정상",
+     "why": "각차단·비대·허혈 소견이 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉통·호흡곤란·실신은 없고",
+     "why": "허혈성 심질환을 시사하는 증상이 없어 경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "고혈압·당뇨병은 없다",
+     "why": "좌심실비대·무증상 경색의 배경 위험이 낮다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "계단 두 층을 쉬지 않고 오른다",
+     "why": "기능 용량 4 METs 이상 — 추가 심장 검사 없이 수술 진행 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "담석증으로 복강경 담낭절제술",
+     "why": "검사를 받은 이유 — 판독 자체에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "여러 유도의 q파가 좁고 얕으며 ST-T 가 정상이다. 중격 q파이므로 정상 심전도다.",
+   "switch": {
+    "choice": "E",
+    "condition": "II·III·aVF 의 q파가 폭 40 ms 이상이고 R파 1/4 이상 깊다면 오래된 하벽 심근경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0597.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05105",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5105"
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0605",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "예방의학 — 환자-대조군 연구의 교차비 계산",
+  "type": "예방의학 — 환자-대조군 연구의 교차비 계산",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-10",
+  "vignette": "62세 남자가 육안적 혈뇨로 검사를 받고 방광암으로 진단받았다. 젊었을 때 염색 공장에서 8년 일했다며 직업과 관련이 있는지 물었다. 의사는 관련 연구를 찾아보았다. 한 연구자가 방광암과 염색 공장 근무의 관련성을 알아보려고 환자-대조군 연구를 하였다. 한 대학병원에서 새로 진단된 방광암 환자 200명과, 같은 병원의 다른 진료과에 입원한 나이·성별을 맞춘 방광암이 없는 환자 400명을 모았다. 면담으로 과거 직업을 조사한 결과 환자군 200명 중 60명, 대조군 400명 중 40명이 염색 공장에서 5년 이상 일한 적이 있었다. 흡연력은 두 군에서 비슷하였다.",
+  "question": "염색 공장 근무와 방광암의 관련성을 나타내는 지표로 가장 적절한 것은?",
+  "options": [
+   "기여위험도 20 %",
+   "상대위험도 3.9",
+   "교차비 3.9",
+   "상대위험도 3.0",
+   "교차비 3.0"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 환자-대조군 연구는 질병 유무로 대상자를 먼저 고르므로 노출군·비노출군의 발생률을 구할 수 없어 상대위험도 대신 교차비를 쓴다. 2×2 표에서 a(환자·노출)=60, b(대조·노출)=40, c(환자·비노출)=140, d(대조·비노출)=360 이다. 교차비 = (a×d)/(b×c) = (60×360)/(40×140) = 21,600/5,600 ≈ 3.9 이다. 노출 비율의 비(60/200 ÷ 40/400 = 0.30/0.10 = 3.0)는 교차비가 아니다.\n- 원리: <b>왜 환자-대조군 연구에서는 발생률을 못 구하는가</b>: 상대위험도는 노출군의 발생률 ÷ 비노출군의 발생률이다. 발생률을 알려면 노출 여부로 사람들을 모은 뒤 누가 병에 걸리는지 세어야 한다(코호트). 환자-대조군 연구는 연구자가 환자 200명·대조군 400명을 <b>정해서</b> 모았으므로, 노출군 100명 중 60명이 환자라는 비율(60 %)은 연구자가 정한 환자:대조 비(1:2)에 따라 달라지는 인공적인 숫자다.<br> <b>왜 교차비는 쓸 수 있는가</b>: 교차비는 「환자군에서 노출의 오즈(60/140)」÷「대조군에서 노출의 오즈(40/360)」로 계산하며, 대조군을 몇 명 뽑든 값이 같다. 그리고 노출 오즈비는 수학적으로 질병 오즈비와 같아서 질병이 드물면(방광암처럼 10 % 미만) 상대위험도에 가까워진다(희귀질환 가정).<br> <b>흔한 계산 실수</b>: 노출 비율의 비(30 % ÷ 10 % = 3.0)를 교차비로 착각하는 것이다. 비율이 아니라 오즈(노출된 수 ÷ 노출 안 된 수)를 나눠야 한다. 오즈는 비율보다 값이 크게 벌어지므로 교차비(3.9)가 비율의 비(3.0)보다 크다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">교차비 3.9(정답)</th><th>상대위험도 3.0 / 비율의 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계산</td><td><b>(60/140) ÷ (40/360)</b> = (60×360)/(40×140)</td><td>(60/200) ÷ (40/400) — 노출 비율의 비</td></tr> <tr><td>나누는 것</td><td>오즈(노출 ÷ 비노출)</td><td>비율(노출 ÷ 전체)</td></tr> <tr><td>적합한 설계</td><td>환자-대조군 연구</td><td>상대위험도는 코호트 연구(발생률)</td></tr> <tr><td>표본 비의 영향</td><td>대조군 수를 바꿔도 같음</td><td>환자:대조 비에 따라 달라짐</td></tr> </tbody></table> 설계가 지표를 정하고(환자-대조군 → 교차비), 교차비는 비율이 아니라 오즈로 계산한다.\n- 오답 이유:\n  - ① 기여위험도 20 % 는 코호트 연구에서 노출군과 비노출군의 발생률 차이가 20 % 포인트일 때 정답이 된다.\n  - ② 상대위험도 3.9 는 같은 수치라도 이 설계에서 발생률을 구할 수 없으므로, 코호트 연구에서 발생률의 비가 3.9 일 때만 정답이 된다.\n  - ④ 상대위험도 3.0 은 노출군과 비노출군을 추적해 발생률을 직접 센 코호트 연구에서 두 발생률의 비가 3.0 일 때 정답이 된다.\n  - ⑤ 교차비 3.0 은 오즈가 아니라 노출 비율을 나눈 계산 실수로, 2×2 표의 값이 (a×d)/(b×c)=3.0 이 되도록 주어졌을 때만 정답이 된다.\n- 함정: 노출 비율(30 % 대 10 %)을 나눠 3.0 을 고르는 것 — 환자-대조군 연구의 지표는 교차비이고, 비율이 아니라 오즈를 나눠 3.9 가 된다.\n- 학습목표: 환자-대조군 연구에서 교차비를 (a×d)/(b×c) 로 계산하고, 이 설계에서 상대위험도·발생률을 직접 구할 수 없는 이유를 안다\n- 근거·출처: Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019 · Rothman KJ, Lash TL, VanderWeele TJ, Haneuse S. Modern Epidemiology, 4th ed. Wolters Kluwer; 2021",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "환자-대조군 연구는 질병 유무로 대상자를 먼저 고르므로 노출군·비노출군의 발생률을 구할 수 없어 상대위험도 대신 교차비를 쓴다. 2×2 표에서 a(환자·노출)=60, b(대조·노출)=40, c(환자·비노출)=140, d(대조·비노출)=360 이다. 교차비 = (a×d)/(b×c) = (60×360)/(40×140) = 21,600/5,600 ≈ 3.9 이다. 노출 비율의 비(60/200 ÷ 40/400 = 0.30/0.10 = 3.0)는 교차비가 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 환자-대조군 연구에서는 발생률을 못 구하는가</b>: 상대위험도는 노출군의 발생률 ÷ 비노출군의 발생률이다. 발생률을 알려면 노출 여부로 사람들을 모은 뒤 누가 병에 걸리는지 세어야 한다(코호트). 환자-대조군 연구는 연구자가 환자 200명·대조군 400명을 <b>정해서</b> 모았으므로, 노출군 100명 중 60명이 환자라는 비율(60 %)은 연구자가 정한 환자:대조 비(1:2)에 따라 달라지는 인공적인 숫자다.<br> <b>왜 교차비는 쓸 수 있는가</b>: 교차비는 「환자군에서 노출의 오즈(60/140)」÷「대조군에서 노출의 오즈(40/360)」로 계산하며, 대조군을 몇 명 뽑든 값이 같다. 그리고 노출 오즈비는 수학적으로 질병 오즈비와 같아서 질병이 드물면(방광암처럼 10 % 미만) 상대위험도에 가까워진다(희귀질환 가정).<br> <b>흔한 계산 실수</b>: 노출 비율의 비(30 % ÷ 10 % = 3.0)를 교차비로 착각하는 것이다. 비율이 아니라 오즈(노출된 수 ÷ 노출 안 된 수)를 나눠야 한다. 오즈는 비율보다 값이 크게 벌어지므로 교차비(3.9)가 비율의 비(3.0)보다 크다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">교차비 3.9(정답)</th><th>상대위험도 3.0 / 비율의 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계산</td><td><b>(60/140) ÷ (40/360)</b> = (60×360)/(40×140)</td><td>(60/200) ÷ (40/400) — 노출 비율의 비</td></tr> <tr><td>나누는 것</td><td>오즈(노출 ÷ 비노출)</td><td>비율(노출 ÷ 전체)</td></tr> <tr><td>적합한 설계</td><td>환자-대조군 연구</td><td>상대위험도는 코호트 연구(발생률)</td></tr> <tr><td>표본 비의 영향</td><td>대조군 수를 바꿔도 같음</td><td>환자:대조 비에 따라 달라짐</td></tr> </tbody></table> 설계가 지표를 정하고(환자-대조군 → 교차비), 교차비는 비율이 아니라 오즈로 계산한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 기여위험도 20 % 는 코호트 연구에서 노출군과 비노출군의 발생률 차이가 20 % 포인트일 때 정답이 된다.\n② 상대위험도 3.9 는 같은 수치라도 이 설계에서 발생률을 구할 수 없으므로, 코호트 연구에서 발생률의 비가 3.9 일 때만 정답이 된다.\n④ 상대위험도 3.0 은 노출군과 비노출군을 추적해 발생률을 직접 센 코호트 연구에서 두 발생률의 비가 3.0 일 때 정답이 된다.\n⑤ 교차비 3.0 은 오즈가 아니라 노출 비율을 나눈 계산 실수로, 2×2 표의 값이 (a×d)/(b×c)=3.0 이 되도록 주어졌을 때만 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "노출 비율(30 % 대 10 %)을 나눠 3.0 을 고르는 것 — 환자-대조군 연구의 지표는 교차비이고, 비율이 아니라 오즈를 나눠 3.9 가 된다."
+   },
+   {
+    "k": "학습목표",
+    "v": "환자-대조군 연구에서 교차비를 (a×d)/(b×c) 로 계산하고, 이 설계에서 상대위험도·발생률을 직접 구할 수 없는 이유를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Elsevier; 2019 · Rothman KJ, Lash TL, VanderWeele TJ, Haneuse S. Modern Epidemiology, 4th ed. Wolters Kluwer; 2021"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "환자-대조군 연구의 관련성 지표는 교차비이고 (60×360)/(40×140) ≈ 3.9 이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "노출 비율이 아니라 노출 오즈를 나눈다",
+   "steps": 3,
+   "chain": [
+    "질병 유무로 대상을 먼저 모았다 → 환자-대조군 연구 → 발생률·상대위험도 불가, 교차비 사용",
+    "2×2 표: a=60, b=40, c=140, d=360",
+    "교차비 = (60×360)/(40×140) = 21,600/5,600 ≈ 3.9"
+   ],
+   "key": [
+    {
+     "item": "환자-대조군 연구",
+     "why": "설계가 지표(교차비)를 정한다",
+     "also": []
+    },
+    {
+     "item": "환자군 200명 중 60명, 대조군 400명 중 40명",
+     "why": "2×2 표의 값",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흡연력은 두 군에서 비슷하였다",
+     "why": "주요 교란변수인 흡연의 영향 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "나이·성별을 맞춘",
+     "why": "짝짓기 — 이 계산(비짝 분석)에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "같은 병원의 다른 진료과에 입원한",
+     "why": "병원 대조군 — 선택 비뚤림 가능성이 있으나 계산에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "질병 유무로 대상을 모은 환자-대조군 연구이므로 교차비를 쓴다. (60×360)/(40×140) 로 약 3.9 다.",
+   "switch": {
+    "choice": "D",
+    "condition": "노출 여부로 사람들을 모아 추적해 발생률이 30 % 와 10 % 였다면(코호트 연구) 상대위험도 3.0"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0604",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "소아 — 열이 오르며 처음 생긴 짧은 전신 경련",
+  "type": "소아 — 열이 오르며 처음 생긴 짧은 전신 경련",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "A 20-month-old boy is brought to the emergency department 1 hour after a seizure at home. His mother says he had a fever since the morning and then his whole body stiffened and jerked for about 2 minutes; afterward he was sleepy for 20 minutes. This is his first seizure. He is fully immunized, including Haemophilus influenzae type b and pneumococcal vaccines, and has not received antibiotics. His development is normal. His father had a similar seizure as a toddler. His temperature is 39.4°C (102.9°F). He is now alert, playful, and has clear rhinorrhea. His neck is supple, and the anterior fontanelle is closed. Neurologic examination shows no focal findings.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Daily oral levetiracetam prophylaxis",
+   "Reassurance and parental education",
+   "Lumbar puncture for CSF analysis",
+   "Electroencephalography within 24 hours",
+   "MRI of the brain with contrast"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: A generalized seizure lasting less than 15 minutes, occurring once in 24 hours with fever, in a developmentally normal child aged 6 months to 5 years who has returned to baseline, is a simple febrile seizure. A family history is common. With a supple neck, full immunization, no prior antibiotics, and a normal examination, meningitis is unlikely and lumbar puncture is not routinely needed. EEG, neuroimaging, and anticonvulsants do not change the prognosis; the appropriate step is reassurance and education.\n- 원리: <b>Why young children seize with fever</b>: Between 6 months and 5 years, the brain's excitatory networks mature faster than its inhibitory GABA circuits, and the seizure threshold is temperature-sensitive. A rapid rise in temperature, often from a viral illness, can trigger a brief generalized seizure. Genetic susceptibility is strong — a first-degree relative raises the risk.<br> <b>Why tests add nothing in the simple form</b>: A simple febrile seizure is a provoked event in a normal brain. EEG abnormalities after it do not predict epilepsy, imaging is normal, and the risk of later epilepsy (about 1%) is barely above that of the general population. Daily anticonvulsants reduce recurrence slightly but do not prevent epilepsy, and their side effects outweigh this benefit.<br> <b>When to look harder</b>: Features of a complex febrile seizure (focal, longer than 15 minutes, or recurrent within 24 hours) or signs of meningitis (meningismus, persistent altered consciousness, incomplete immunization, or pretreatment with antibiotics that can mask signs) shift the balance toward lumbar puncture or imaging.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Simple febrile seizure (answer — reassure)</th><th>Suspected meningitis (closest distractor — lumbar puncture)</th></tr></thead><tbody> <tr><td>After the seizure</td><td><b>Returns to baseline quickly</b></td><td>Persistent lethargy or irritability</td></tr> <tr><td>Neck</td><td>Supple</td><td>Meningismus (may be absent in infants)</td></tr> <tr><td>Immunization and antibiotics</td><td>Fully immunized, no antibiotics</td><td>Incomplete Hib/pneumococcal vaccination or recent antibiotics</td></tr> <tr><td>Seizure features</td><td>Generalized, under 15 minutes, single</td><td>Often complex or prolonged</td></tr> </tbody></table> Fever with a seizure is not by itself an indication for lumbar puncture; the child's state after the seizure and the immunization history decide.\n- 오답 이유:\n  - (A) Daily levetiracetam would be correct only for recurrent unprovoked seizures that meet the definition of epilepsy, not for simple febrile seizures.\n  - (C) Lumbar puncture would be correct if the child had meningismus, did not return to baseline, was incompletely immunized, or had been pretreated with antibiotics.\n  - (D) Electroencephalography would be correct if the seizure were afebrile or focal, or if there were developmental regression suggesting an epilepsy syndrome.\n  - (E) MRI of the brain would be correct if there were a focal neurologic deficit, a focal seizure, macrocephaly, or signs of increased intracranial pressure.\n- 함정: Performing a lumbar puncture because fever and seizure occurred together — in a fully immunized toddler back to baseline with a supple neck, a simple febrile seizure needs only reassurance.\n- 학습목표: 15분 미만·전신성·24시간 안 1회의 단순 열성경련을 진단하고 뇌파·영상·요추천자 없이 보호자 교육으로 끝내며 복합 열성경련·수막염의 검사 적응과 가른다\n- 근거·출처: Subcommittee on Febrile Seizures; American Academy of Pediatrics. Neurodiagnostic evaluation of the child with a simple febrile seizure. Pediatrics. 2011;127(2):389-394 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 436: Seizures and Epilepsy",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A generalized seizure lasting less than 15 minutes, occurring once in 24 hours with fever, in a developmentally normal child aged 6 months to 5 years who has returned to baseline, is a simple febrile seizure. A family history is common. With a supple neck, full immunization, no prior antibiotics, and a normal examination, meningitis is unlikely and lumbar puncture is not routinely needed. EEG, neuroimaging, and anticonvulsants do not change the prognosis; the appropriate step is reassurance and education."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why young children seize with fever</b>: Between 6 months and 5 years, the brain's excitatory networks mature faster than its inhibitory GABA circuits, and the seizure threshold is temperature-sensitive. A rapid rise in temperature, often from a viral illness, can trigger a brief generalized seizure. Genetic susceptibility is strong — a first-degree relative raises the risk.<br> <b>Why tests add nothing in the simple form</b>: A simple febrile seizure is a provoked event in a normal brain. EEG abnormalities after it do not predict epilepsy, imaging is normal, and the risk of later epilepsy (about 1%) is barely above that of the general population. Daily anticonvulsants reduce recurrence slightly but do not prevent epilepsy, and their side effects outweigh this benefit.<br> <b>When to look harder</b>: Features of a complex febrile seizure (focal, longer than 15 minutes, or recurrent within 24 hours) or signs of meningitis (meningismus, persistent altered consciousness, incomplete immunization, or pretreatment with antibiotics that can mask signs) shift the balance toward lumbar puncture or imaging."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Simple febrile seizure (answer — reassure)</th><th>Suspected meningitis (closest distractor — lumbar puncture)</th></tr></thead><tbody> <tr><td>After the seizure</td><td><b>Returns to baseline quickly</b></td><td>Persistent lethargy or irritability</td></tr> <tr><td>Neck</td><td>Supple</td><td>Meningismus (may be absent in infants)</td></tr> <tr><td>Immunization and antibiotics</td><td>Fully immunized, no antibiotics</td><td>Incomplete Hib/pneumococcal vaccination or recent antibiotics</td></tr> <tr><td>Seizure features</td><td>Generalized, under 15 minutes, single</td><td>Often complex or prolonged</td></tr> </tbody></table> Fever with a seizure is not by itself an indication for lumbar puncture; the child's state after the seizure and the immunization history decide."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Daily levetiracetam would be correct only for recurrent unprovoked seizures that meet the definition of epilepsy, not for simple febrile seizures.\n(C) Lumbar puncture would be correct if the child had meningismus, did not return to baseline, was incompletely immunized, or had been pretreated with antibiotics.\n(D) Electroencephalography would be correct if the seizure were afebrile or focal, or if there were developmental regression suggesting an epilepsy syndrome.\n(E) MRI of the brain would be correct if there were a focal neurologic deficit, a focal seizure, macrocephaly, or signs of increased intracranial pressure."
+   },
+   {
+    "k": "함정",
+    "v": "Performing a lumbar puncture because fever and seizure occurred together — in a fully immunized toddler back to baseline with a supple neck, a simple febrile seizure needs only reassurance."
+   },
+   {
+    "k": "학습목표",
+    "v": "15분 미만·전신성·24시간 안 1회의 단순 열성경련을 진단하고 뇌파·영상·요추천자 없이 보호자 교육으로 끝내며 복합 열성경련·수막염의 검사 적응과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Subcommittee on Febrile Seizures; American Academy of Pediatrics. Neurodiagnostic evaluation of the child with a simple febrile seizure. Pediatrics. 2011;127(2):389-394 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 436: Seizures and Epilepsy"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "A single brief generalized seizure with fever in a normal, fully immunized toddler back to baseline is a simple febrile seizure managed with reassurance",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "He is alert with a supple neck, fully immunized, and not pretreated with antibiotics",
+   "steps": 3,
+   "chain": [
+    "Generalized, about 2 minutes, first in 24 hours, age 20 months, fever -> simple febrile seizure",
+    "Alert and playful, supple neck, fully immunized, no antibiotics -> meningitis unlikely",
+    "Simple febrile seizure without red flags -> no LP, EEG, imaging, or medication; reassurance"
+   ],
+   "key": [
+    {
+     "item": "his whole body stiffened and jerked for about 2 minutes",
+     "why": "Generalized and brief — simple",
+     "also": []
+    },
+    {
+     "item": "This is his first seizure",
+     "why": "Single event",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He is now alert, playful",
+     "why": "Return to baseline lowers the likelihood of meningitis or encephalitis",
+     "also": []
+    },
+    {
+     "item": "His neck is supple",
+     "why": "No meningismus",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "including Haemophilus influenzae type b and pneumococcal vaccines, and has not received antibiotics",
+     "why": "Criteria under which lumbar puncture is not routinely needed",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "His father had a similar seizure as a toddler",
+     "why": "Common genetic predisposition — supports but does not decide",
+     "also": []
+    },
+    {
+     "item": "clear rhinorrhea",
+     "why": "Likely viral source of fever",
+     "also": []
+    }
+   ],
+   "summary": "A brief, single, generalized seizure with fever in a normal 20-month-old who is back to baseline is a simple febrile seizure. With no red flags for meningitis, reassure and educate.",
+   "switch": {
+    "choice": "C",
+    "condition": "If he remained lethargic with a stiff neck, or were unimmunized or pretreated with antibiotics, lumbar puncture"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0603",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "부인과 — 비린내 나는 회백색 질 분비물",
+  "type": "부인과 — 비린내 나는 회백색 질 분비물",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "29세 여자가 일주일 전부터 질 분비물이 많아지고 성관계 뒤 비린내가 심해져서 왔다. 가려움과 성교통은 없다. 최근 새로운 성 파트너가 생겼고 콘돔은 쓰지 않는다. 임신은 하지 않았다. 체온 36.7 ℃ 이다. 질경 검사에서 질벽에 고르게 묻은 얇은 회백색 분비물이 보이고 질 점막과 자궁경부는 발적이 없다. 질 분비물의 pH 는 5.2 이고 10 % 수산화칼륨을 떨어뜨리자 비린내가 났다. 생리식염수 습식 표본에서 경계가 흐릿한 상피세포가 많이 보이고 운동성 원충과 가성균사는 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "플루코나졸 1회 경구 투여",
+   "메트로니다졸 경구 투여(본인과 성 파트너)",
+   "세프트리악손 근육주사와 독시사이클린 경구 투여",
+   "질 내 에스트로겐 크림",
+   "메트로니다졸 경구 투여(본인만)"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 얇은 회백색 균질 분비물, 질 pH 4.5 초과, 수산화칼륨 아민 냄새 검사 양성, 단서세포(경계가 흐릿한 상피세포) 가운데 3가지 이상을 만족해 Amsel 기준으로 세균질증이다. 증상이 있으므로 메트로니다졸(500 mg 하루 두 번 7일)로 치료한다. 세균질증은 성매개 감염이 아니라 질 세균총의 불균형이므로 남성 파트너 치료는 재발을 줄이지 못해 권하지 않는다. 운동성 원충이 없어 트리코모나스, 가성균사·가려움이 없어 칸디다 가능성은 낮다.\n- 원리: <b>왜 pH 가 오르고 비린내가 나는가</b>: 정상 질은 젖산간균(Lactobacillus)이 글리코겐을 젖산으로 바꾸고 과산화수소를 만들어 pH 를 4.5 이하로 지킨다. 젖산간균이 줄면 Gardnerella vaginalis 와 혐기성 세균이 수백 배 늘고, 이들이 단백질을 분해해 트리메틸아민 같은 <b>아민</b>을 만든다. 아민은 알칼리에서 휘발하므로 수산화칼륨을 떨어뜨리거나 알칼리성인 정액이 닿는 성관계 뒤에 비린내가 심해진다.<br> <b>단서세포는 무엇인가</b>: 질 상피세포 표면이 작은 막대균으로 덮여 세포 경계가 흐릿하게 보이는 것이다. 세균막(biofilm)이 상피에 붙어 있다는 직접 증거다.<br> <b>왜 염증이 없는가</b>: 세균질증은 「질염」이라기보다 세균총의 교체라서 백혈구가 적고 점막 발적·가려움이 거의 없다. 반대로 칸디다는 점막 염증과 가려움이, 트리코모나스는 거품 섞인 분비물과 딸기 모양 자궁경부가 특징이다.<br> <b>왜 파트너를 치료하지 않는가</b>: 남성 파트너를 함께 치료한 무작위 시험에서 여성의 재발이 줄지 않았다. 반면 트리코모나스는 성매개 감염이라 파트너를 함께 치료한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">세균질증(정답)</th><th>트리코모나스 질염(가장 가까운 오답 — 파트너 치료)</th></tr></thead><tbody> <tr><td>분비물</td><td>얇은 회백색, 균질</td><td>황록색, 거품</td></tr> <tr><td>pH</td><td>4.5 초과</td><td>4.5 초과</td></tr> <tr><td>습식 표본</td><td><b>단서세포</b>, 백혈구 적음</td><td><b>운동성 편모 원충</b>, 백혈구 많음</td></tr> <tr><td>파트너 치료</td><td>권하지 않음(재발 감소 없음)</td><td>함께 치료(성매개 감염)</td></tr> </tbody></table> 두 질환 모두 pH 가 높고 메트로니다졸로 치료하므로, 습식 표본에서 무엇이 보이는지가 파트너 치료 여부를 정한다.\n- 오답 이유:\n  - ① 플루코나졸 1회 투여는 가려움과 두껍고 흰 치즈 같은 분비물, pH 4.5 이하, 수산화칼륨 표본의 가성균사가 보이는 칸디다 질염일 때 정답이 된다.\n  - ② 본인과 성 파트너의 메트로니다졸 투여는 습식 표본에 운동성 원충이 보이는 트리코모나스 질염일 때 정답이 된다.\n  - ③ 세프트리악손과 독시사이클린은 자궁경부 화농성 분비물이나 자궁경부 운동 압통이 있어 임질·클라미디아 자궁경부염이나 골반염이 의심될 때 정답이 된다.\n  - ④ 질 내 에스트로겐 크림은 폐경 뒤 질 건조·성교통과 얇고 창백한 질 점막을 보이는 위축성 질염일 때 정답이 된다.\n- 함정: 새 성 파트너가 있으니 파트너도 치료하는 것 — 세균질증은 세균총 불균형이라 파트너 치료가 재발을 줄이지 못하고, 파트너 치료는 트리코모나스에서 한다.\n- 학습목표: Amsel 기준(얇은 회백색 분비물·pH 4.5 초과·아민 냄새·단서세포)으로 세균질증을 진단하고 메트로니다졸을 고르며 칸디다·트리코모나스 질염과 가른다\n- 근거·출처: Workowski KA, Bachmann LH, Chan PA, et al. Sexually transmitted infections treatment guidelines, 2021. MMWR Recomm Rep. 2021;70(4):1-187 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 141: Sexually Transmitted Infections: Overview and Clinical Approach",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "얇은 회백색 균질 분비물, 질 pH 4.5 초과, 수산화칼륨 아민 냄새 검사 양성, 단서세포(경계가 흐릿한 상피세포) 가운데 3가지 이상을 만족해 Amsel 기준으로 세균질증이다. 증상이 있으므로 메트로니다졸(500 mg 하루 두 번 7일)로 치료한다. 세균질증은 성매개 감염이 아니라 질 세균총의 불균형이므로 남성 파트너 치료는 재발을 줄이지 못해 권하지 않는다. 운동성 원충이 없어 트리코모나스, 가성균사·가려움이 없어 칸디다 가능성은 낮다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 pH 가 오르고 비린내가 나는가</b>: 정상 질은 젖산간균(Lactobacillus)이 글리코겐을 젖산으로 바꾸고 과산화수소를 만들어 pH 를 4.5 이하로 지킨다. 젖산간균이 줄면 Gardnerella vaginalis 와 혐기성 세균이 수백 배 늘고, 이들이 단백질을 분해해 트리메틸아민 같은 <b>아민</b>을 만든다. 아민은 알칼리에서 휘발하므로 수산화칼륨을 떨어뜨리거나 알칼리성인 정액이 닿는 성관계 뒤에 비린내가 심해진다.<br> <b>단서세포는 무엇인가</b>: 질 상피세포 표면이 작은 막대균으로 덮여 세포 경계가 흐릿하게 보이는 것이다. 세균막(biofilm)이 상피에 붙어 있다는 직접 증거다.<br> <b>왜 염증이 없는가</b>: 세균질증은 「질염」이라기보다 세균총의 교체라서 백혈구가 적고 점막 발적·가려움이 거의 없다. 반대로 칸디다는 점막 염증과 가려움이, 트리코모나스는 거품 섞인 분비물과 딸기 모양 자궁경부가 특징이다.<br> <b>왜 파트너를 치료하지 않는가</b>: 남성 파트너를 함께 치료한 무작위 시험에서 여성의 재발이 줄지 않았다. 반면 트리코모나스는 성매개 감염이라 파트너를 함께 치료한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">세균질증(정답)</th><th>트리코모나스 질염(가장 가까운 오답 — 파트너 치료)</th></tr></thead><tbody> <tr><td>분비물</td><td>얇은 회백색, 균질</td><td>황록색, 거품</td></tr> <tr><td>pH</td><td>4.5 초과</td><td>4.5 초과</td></tr> <tr><td>습식 표본</td><td><b>단서세포</b>, 백혈구 적음</td><td><b>운동성 편모 원충</b>, 백혈구 많음</td></tr> <tr><td>파트너 치료</td><td>권하지 않음(재발 감소 없음)</td><td>함께 치료(성매개 감염)</td></tr> </tbody></table> 두 질환 모두 pH 가 높고 메트로니다졸로 치료하므로, 습식 표본에서 무엇이 보이는지가 파트너 치료 여부를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 플루코나졸 1회 투여는 가려움과 두껍고 흰 치즈 같은 분비물, pH 4.5 이하, 수산화칼륨 표본의 가성균사가 보이는 칸디다 질염일 때 정답이 된다.\n② 본인과 성 파트너의 메트로니다졸 투여는 습식 표본에 운동성 원충이 보이는 트리코모나스 질염일 때 정답이 된다.\n③ 세프트리악손과 독시사이클린은 자궁경부 화농성 분비물이나 자궁경부 운동 압통이 있어 임질·클라미디아 자궁경부염이나 골반염이 의심될 때 정답이 된다.\n④ 질 내 에스트로겐 크림은 폐경 뒤 질 건조·성교통과 얇고 창백한 질 점막을 보이는 위축성 질염일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "새 성 파트너가 있으니 파트너도 치료하는 것 — 세균질증은 세균총 불균형이라 파트너 치료가 재발을 줄이지 못하고, 파트너 치료는 트리코모나스에서 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "Amsel 기준(얇은 회백색 분비물·pH 4.5 초과·아민 냄새·단서세포)으로 세균질증을 진단하고 메트로니다졸을 고르며 칸디다·트리코모나스 질염과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA, Bachmann LH, Chan PA, et al. Sexually transmitted infections treatment guidelines, 2021. MMWR Recomm Rep. 2021;70(4):1-187 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 141: Sexually Transmitted Infections: Overview and Clinical Approach"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Amsel 기준을 만족하는 세균질증은 본인만 메트로니다졸로 치료한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "습식 표본에 운동성 원충이 없고 단서세포가 보인다",
+   "steps": 2,
+   "chain": [
+    "얇은 회백색 분비물·pH 5.2·아민 냄새·단서세포 → Amsel 기준 4가지 모두 → 세균질증",
+    "운동성 원충 없음 → 성매개 감염이 아니므로 파트너 치료 없이 본인만 메트로니다졸"
+   ],
+   "key": [
+    {
+     "item": "얇은 회백색 분비물",
+     "why": "세균질증의 균질한 분비물",
+     "also": []
+    },
+    {
+     "item": "pH 는 5.2",
+     "why": "젖산간균 감소",
+     "also": []
+    },
+    {
+     "item": "수산화칼륨을 떨어뜨리자 비린내가 났다",
+     "why": "아민 냄새 검사 양성",
+     "also": []
+    },
+    {
+     "item": "경계가 흐릿한 상피세포",
+     "why": "단서세포",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "운동성 원충과 가성균사는 없다",
+     "why": "트리코모나스·칸디다 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "최근 새로운 성 파트너가 생겼고",
+     "why": "파트너 치료를 떠올리게 하지만 세균질증에서는 권하지 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "임신은 하지 않았다",
+     "why": "임신이면 치료 적응이 넓어지지만 약 선택은 같다",
+     "also": []
+    }
+   ],
+   "summary": "Amsel 기준을 모두 만족하는 세균질증이다. 증상이 있으므로 본인만 메트로니다졸로 치료한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "습식 표본에 운동성 편모 원충이 보였다면 트리코모나스 질염으로 본인과 파트너를 함께 치료"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0602",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "감염 — 등산 뒤 생긴 과녁 모양 홍반",
+  "type": "감염 — 등산 뒤 생긴 과녁 모양 홍반",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "A 34-year-old man comes to the physician because of a rash on his right thigh for 5 days. Ten days ago he went hiking in the woods of Connecticut in June. He has mild fatigue and myalgia but no joint swelling, facial weakness, or palpitations. His temperature is 37.8°C (100°F), pulse is 76/min, and blood pressure is 122/78 mm Hg. Examination shows a 9-cm, warm, nontender, annular erythematous patch with central clearing on the right thigh that has enlarged over the past 3 days. There is no vesicle or necrosis. Neurologic and cardiac examinations show no abnormalities.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous ceftriaxone for 14 days",
+   "Topical clotrimazole for 2 weeks",
+   "Oral doxycycline for 10 days",
+   "Serologic testing for Borrelia burgdorferi before treatment",
+   "Oral cephalexin for 7 days"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: An expanding annular erythema larger than 5 cm with central clearing, appearing days after outdoor exposure in a Lyme-endemic area in summer, is erythema migrans. This is clinically diagnostic of early localized Lyme disease; serology is often negative in the first weeks and is not needed. Without neurologic or cardiac involvement, oral doxycycline for 10 days is the treatment.\n- 원리: <b>Why the rash is the diagnosis</b>: After an infected Ixodes tick feeds for more than about 36 hours, Borrelia burgdorferi multiplies in the skin and spreads outward from the bite. The inflammatory front moves with the spirochetes, so the erythema expands day by day, often clearing in the center as the organisms move outward. A lesion this typical in an endemic area has a much higher predictive value than any test.<br> <b>Why serology is not helpful now</b>: IgM antibodies take 2 to 4 weeks to appear, so in the first days of erythema migrans the two-tier test is negative in most patients. Waiting for or relying on serology delays treatment, and a negative result would not change management.<br> <b>Why oral doxycycline</b>: Doxycycline reaches skin and blood well and also covers Anaplasma, which the same tick transmits. Intravenous ceftriaxone is reserved for disease that has reached the central nervous system with meningitis or radiculopathy, or for high-degree heart block.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Erythema migrans (answer — treat)</th><th>Need for serology (closest distractor)</th></tr></thead><tbody> <tr><td>Typical setting</td><td><b>Expanding rash at least 5 cm, days to 1 month after exposure</b></td><td>Later manifestations: arthritis, carditis, neuropathy without a rash</td></tr> <tr><td>Sensitivity of serology</td><td>Low in the first 2 to 4 weeks</td><td>High once disseminated (IgG positive)</td></tr> <tr><td>Basis of diagnosis</td><td>Clinical</td><td>Clinical syndrome plus positive two-tier test</td></tr> </tbody></table> Test when the picture is late or atypical; treat directly when the classic rash is present.\n- 오답 이유:\n  - (A) Intravenous ceftriaxone would be correct for Lyme meningitis or radiculopathy, or carditis with high-degree atrioventricular block.\n  - (B) Topical clotrimazole would be correct for tinea corporis, which has a scaly, advancing border and enlarges slowly over weeks rather than days.\n  - (D) Serologic testing would be correct for suspected later Lyme disease, such as monoarthritis of the knee or facial palsy weeks to months after exposure without a rash.\n  - (E) Oral cephalexin would be correct for cellulitis, which is tender, spreads with ill-defined margins, and lacks central clearing after a skin break.\n- 함정: Ordering Lyme serology before treating a classic erythema migrans — antibodies are usually absent in the first weeks, and the rash itself is diagnostic.\n- 학습목표: 진드기 노출 뒤 커지는 과녁 모양 홍반을 초기 국소 라임병의 유주성 홍반으로 진단하고 혈청검사 없이 독시사이클린을 시작한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 191: Lyme Borreliosis · Lantos PM, Rumbaugh J, Bockenstedt LK, et al. Clinical practice guidelines by the Infectious Diseases Society of America (IDSA), American Academy of Neurology (AAN), and American College of Rheumatology (ACR): 2020 guidelines for the prevention, diagnosis and treatment of Lyme disease. Clin Infect Dis. 2021;72(1):e1-e48",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An expanding annular erythema larger than 5 cm with central clearing, appearing days after outdoor exposure in a Lyme-endemic area in summer, is erythema migrans. This is clinically diagnostic of early localized Lyme disease; serology is often negative in the first weeks and is not needed. Without neurologic or cardiac involvement, oral doxycycline for 10 days is the treatment."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the rash is the diagnosis</b>: After an infected Ixodes tick feeds for more than about 36 hours, Borrelia burgdorferi multiplies in the skin and spreads outward from the bite. The inflammatory front moves with the spirochetes, so the erythema expands day by day, often clearing in the center as the organisms move outward. A lesion this typical in an endemic area has a much higher predictive value than any test.<br> <b>Why serology is not helpful now</b>: IgM antibodies take 2 to 4 weeks to appear, so in the first days of erythema migrans the two-tier test is negative in most patients. Waiting for or relying on serology delays treatment, and a negative result would not change management.<br> <b>Why oral doxycycline</b>: Doxycycline reaches skin and blood well and also covers Anaplasma, which the same tick transmits. Intravenous ceftriaxone is reserved for disease that has reached the central nervous system with meningitis or radiculopathy, or for high-degree heart block."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Erythema migrans (answer — treat)</th><th>Need for serology (closest distractor)</th></tr></thead><tbody> <tr><td>Typical setting</td><td><b>Expanding rash at least 5 cm, days to 1 month after exposure</b></td><td>Later manifestations: arthritis, carditis, neuropathy without a rash</td></tr> <tr><td>Sensitivity of serology</td><td>Low in the first 2 to 4 weeks</td><td>High once disseminated (IgG positive)</td></tr> <tr><td>Basis of diagnosis</td><td>Clinical</td><td>Clinical syndrome plus positive two-tier test</td></tr> </tbody></table> Test when the picture is late or atypical; treat directly when the classic rash is present."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intravenous ceftriaxone would be correct for Lyme meningitis or radiculopathy, or carditis with high-degree atrioventricular block.\n(B) Topical clotrimazole would be correct for tinea corporis, which has a scaly, advancing border and enlarges slowly over weeks rather than days.\n(D) Serologic testing would be correct for suspected later Lyme disease, such as monoarthritis of the knee or facial palsy weeks to months after exposure without a rash.\n(E) Oral cephalexin would be correct for cellulitis, which is tender, spreads with ill-defined margins, and lacks central clearing after a skin break."
+   },
+   {
+    "k": "함정",
+    "v": "Ordering Lyme serology before treating a classic erythema migrans — antibodies are usually absent in the first weeks, and the rash itself is diagnostic."
+   },
+   {
+    "k": "학습목표",
+    "v": "진드기 노출 뒤 커지는 과녁 모양 홍반을 초기 국소 라임병의 유주성 홍반으로 진단하고 혈청검사 없이 독시사이클린을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 191: Lyme Borreliosis · Lantos PM, Rumbaugh J, Bockenstedt LK, et al. Clinical practice guidelines by the Infectious Diseases Society of America (IDSA), American Academy of Neurology (AAN), and American College of Rheumatology (ACR): 2020 guidelines for the prevention, diagnosis and treatment of Lyme disease. Clin Infect Dis. 2021;72(1):e1-e48"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "An expanding annular rash over 5 cm after summer exposure in an endemic area is erythema migrans, treated with oral doxycycline without serology",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Classic erythema migrans is diagnosed clinically because early serology is usually negative",
+   "steps": 2,
+   "chain": [
+    "Expanding 9-cm annular erythema with central clearing after hiking in Connecticut in June -> erythema migrans",
+    "No neurologic or cardiac involvement -> early localized disease -> oral doxycycline without serology"
+   ],
+   "key": [
+    {
+     "item": "a 9-cm, warm, nontender, annular erythematous patch with central clearing",
+     "why": "Classic erythema migrans",
+     "also": []
+    },
+    {
+     "item": "enlarged over the past 3 days",
+     "why": "Expansion separates it from a tick-bite hypersensitivity reaction",
+     "also": []
+    },
+    {
+     "item": "hiking in the woods of Connecticut in June",
+     "why": "Endemic area and season for Ixodes ticks",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "nontender",
+     "why": "Makes bacterial cellulitis less likely",
+     "also": []
+    },
+    {
+     "item": "no vesicle or necrosis",
+     "why": "Lowers the likelihood of herpes zoster or a spider bite",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no joint swelling, facial weakness, or palpitations",
+     "why": "No dissemination, so oral therapy suffices",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "An expanding ring-shaped rash with central clearing after summer hiking in an endemic area is erythema migrans. Without dissemination, start oral doxycycline without waiting for serology.",
+   "switch": {
+    "choice": "A",
+    "condition": "If he had facial palsy with meningitis or third-degree heart block, intravenous ceftriaxone"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0601",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "혈액·종양 — 감각 이상과 대구성 빈혈의 치료",
+  "type": "혈액·종양 — 감각 이상과 대구성 빈혈의 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "68세 여자가 넉 달 전부터 양쪽 발끝이 저리고 어두운 곳에서 비틀거려서 왔다. 쉽게 피곤하다. 갑상샘기능저하증으로 레보티록신을 먹고 있다. 혈압 118/70 mmHg, 맥박 92회/분이다. 양쪽 발의 진동감각과 위치감각이 떨어져 있고 롬베르그 징후 양성이다. 혈색소 9.4 g/dL, 평균적혈구용적 116 fL, 백혈구 3,900/mm³, 혈소판 142,000/mm³ 이다. 말초혈액도말에서 분엽이 6개 이상인 호중구가 보인다. 혈청 비타민 B12 160 pg/mL(참고 200~900), 엽산 정상, 메틸말론산과 호모시스테인 모두 증가, 항내인자항체 양성이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "피리독신 경구 투여",
+   "비타민 B12 근육주사",
+   "엽산 경구 투여",
+   "철분 경구 투여",
+   "적혈구 수혈"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 대구성 빈혈과 과분엽 호중구, 낮은 비타민 B12, 메틸말론산·호모시스테인 동시 증가, 항내인자항체 양성은 악성빈혈에 의한 비타민 B12 결핍이다. 후색(진동·위치감각) 침범과 롬베르그 징후 양성은 아급성 연합 변성이다. 신경 증상이 있으면 흡수 장애를 우회하도록 비타민 B12 근육주사로 빠르게 보충한다. 엽산만 주면 빈혈은 일부 좋아져도 신경 손상은 진행한다.\n- 원리: <b>왜 두 대사물이 함께 오르는가</b>: 비타민 B12 는 두 효소의 보조인자다. ① 메티오닌 합성효소는 호모시스테인을 메티오닌으로 바꾸면서 메틸테트라히드로엽산을 다시 쓸 수 있는 엽산으로 되돌린다. ② 메틸말로닐-CoA 변이효소는 메틸말로닐-CoA 를 숙시닐-CoA 로 바꾼다. 그래서 B12 결핍은 <b>호모시스테인과 메틸말론산을 모두</b> 올리고, 엽산 결핍은 호모시스테인만 올린다.<br> <b>왜 대구성 빈혈과 신경 손상이 따로 노는가</b>: 빈혈은 ①이 막혀 엽산이 「메틸 함정」에 갇혀 DNA 합성이 늦어지는 결과라, 많은 엽산을 주면 우회되어 좋아진다. 그러나 신경 손상은 ②가 막혀 비정상 지방산이 수초에 들어가고 메티오닌·S-아데노실메티오닌이 부족해 생기므로 엽산으로 고쳐지지 않는다. 엽산만 주면 빈혈이 가려진 채 아급성 연합 변성이 진행한다.<br> <b>왜 주사인가</b>: 악성빈혈은 내인자가 없어 회장 흡수가 막힌다. 고용량 경구제도 수동 확산으로 일부 흡수되지만, 신경 증상이 있으면 근육주사로 저장고를 빨리 채운다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비타민 B12 결핍(정답 — B12 주사)</th><th>엽산 결핍(가장 가까운 오답 — 엽산)</th></tr></thead><tbody> <tr><td>호모시스테인</td><td>증가</td><td>증가</td></tr> <tr><td>메틸말론산</td><td><b>증가</b></td><td>정상</td></tr> <tr><td>신경 증상</td><td>후색·측색 침범(진동·위치감각 저하)</td><td>없음</td></tr> <tr><td>흔한 원인</td><td>악성빈혈(항내인자항체), 위절제, 메트포르민</td><td>알코올 사용, 영양 부족, 임신, 메토트렉세이트</td></tr> </tbody></table> 메틸말론산이 둘을 가른다. 대구성 빈혈에 신경 증상이 있으면 원인이 밝혀질 때까지 엽산만 따로 주지 않는다.\n- 오답 이유:\n  - ① 피리독신 경구 투여는 이소니아지드 복용 중 생긴 철모세포빈혈이나 말초신경병일 때 정답이 된다.\n  - ③ 엽산 경구 투여는 메틸말론산이 정상이고 엽산이 낮으며 신경 증상이 없는 엽산 결핍(알코올 사용·영양 부족)일 때 정답이 된다.\n  - ④ 철분 경구 투여는 평균적혈구용적이 낮은 소구성 빈혈에 페리틴이 낮은 철결핍빈혈일 때 정답이 된다.\n  - ⑤ 적혈구 수혈은 혈색소가 7 g/dL 미만이거나 흉통·심부전 같은 혈역학적 불안정이 있을 때 정답이 된다.\n- 함정: 대구성 빈혈이니 엽산을 고르는 것 — 메틸말론산 증가와 후색 침범은 B12 결핍이고, 엽산만 주면 신경 손상이 진행한다.\n- 학습목표: 고호모시스테인·고메틸말론산과 신경 증상을 동반한 비타민 B12 결핍에 비타민 B12 근육주사를 고르고 엽산 단독 투여의 위험과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 104: Megaloblastic Anemias",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "대구성 빈혈과 과분엽 호중구, 낮은 비타민 B12, 메틸말론산·호모시스테인 동시 증가, 항내인자항체 양성은 악성빈혈에 의한 비타민 B12 결핍이다. 후색(진동·위치감각) 침범과 롬베르그 징후 양성은 아급성 연합 변성이다. 신경 증상이 있으면 흡수 장애를 우회하도록 비타민 B12 근육주사로 빠르게 보충한다. 엽산만 주면 빈혈은 일부 좋아져도 신경 손상은 진행한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 두 대사물이 함께 오르는가</b>: 비타민 B12 는 두 효소의 보조인자다. ① 메티오닌 합성효소는 호모시스테인을 메티오닌으로 바꾸면서 메틸테트라히드로엽산을 다시 쓸 수 있는 엽산으로 되돌린다. ② 메틸말로닐-CoA 변이효소는 메틸말로닐-CoA 를 숙시닐-CoA 로 바꾼다. 그래서 B12 결핍은 <b>호모시스테인과 메틸말론산을 모두</b> 올리고, 엽산 결핍은 호모시스테인만 올린다.<br> <b>왜 대구성 빈혈과 신경 손상이 따로 노는가</b>: 빈혈은 ①이 막혀 엽산이 「메틸 함정」에 갇혀 DNA 합성이 늦어지는 결과라, 많은 엽산을 주면 우회되어 좋아진다. 그러나 신경 손상은 ②가 막혀 비정상 지방산이 수초에 들어가고 메티오닌·S-아데노실메티오닌이 부족해 생기므로 엽산으로 고쳐지지 않는다. 엽산만 주면 빈혈이 가려진 채 아급성 연합 변성이 진행한다.<br> <b>왜 주사인가</b>: 악성빈혈은 내인자가 없어 회장 흡수가 막힌다. 고용량 경구제도 수동 확산으로 일부 흡수되지만, 신경 증상이 있으면 근육주사로 저장고를 빨리 채운다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비타민 B12 결핍(정답 — B12 주사)</th><th>엽산 결핍(가장 가까운 오답 — 엽산)</th></tr></thead><tbody> <tr><td>호모시스테인</td><td>증가</td><td>증가</td></tr> <tr><td>메틸말론산</td><td><b>증가</b></td><td>정상</td></tr> <tr><td>신경 증상</td><td>후색·측색 침범(진동·위치감각 저하)</td><td>없음</td></tr> <tr><td>흔한 원인</td><td>악성빈혈(항내인자항체), 위절제, 메트포르민</td><td>알코올 사용, 영양 부족, 임신, 메토트렉세이트</td></tr> </tbody></table> 메틸말론산이 둘을 가른다. 대구성 빈혈에 신경 증상이 있으면 원인이 밝혀질 때까지 엽산만 따로 주지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 피리독신 경구 투여는 이소니아지드 복용 중 생긴 철모세포빈혈이나 말초신경병일 때 정답이 된다.\n③ 엽산 경구 투여는 메틸말론산이 정상이고 엽산이 낮으며 신경 증상이 없는 엽산 결핍(알코올 사용·영양 부족)일 때 정답이 된다.\n④ 철분 경구 투여는 평균적혈구용적이 낮은 소구성 빈혈에 페리틴이 낮은 철결핍빈혈일 때 정답이 된다.\n⑤ 적혈구 수혈은 혈색소가 7 g/dL 미만이거나 흉통·심부전 같은 혈역학적 불안정이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "대구성 빈혈이니 엽산을 고르는 것 — 메틸말론산 증가와 후색 침범은 B12 결핍이고, 엽산만 주면 신경 손상이 진행한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고호모시스테인·고메틸말론산과 신경 증상을 동반한 비타민 B12 결핍에 비타민 B12 근육주사를 고르고 엽산 단독 투여의 위험과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 104: Megaloblastic Anemias"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "메틸말론산·호모시스테인 증가와 후색 침범을 동반한 악성빈혈에는 비타민 B12 근육주사를 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "메틸말론산이 증가하고 신경 증상이 있다",
+   "steps": 3,
+   "chain": [
+    "평균적혈구용적 116 fL·과분엽 호중구 → 거대적혈모구빈혈",
+    "메틸말론산과 호모시스테인 모두 증가·항내인자항체 양성 → 악성빈혈의 비타민 B12 결핍",
+    "진동·위치감각 저하(아급성 연합 변성) → 비타민 B12 근육주사"
+   ],
+   "key": [
+    {
+     "item": "메틸말론산과 호모시스테인 모두 증가",
+     "why": "B12 결핍과 엽산 결핍을 가르는 검사",
+     "also": []
+    },
+    {
+     "item": "항내인자항체 양성",
+     "why": "악성빈혈 — 흡수 장애라 주사로 보충",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "엽산 정상",
+     "why": "엽산 결핍 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "진동감각과 위치감각이 떨어져 있고 롬베르그 징후 양성",
+     "why": "신경 침범 — 빠른 비경구 보충과 엽산 단독 금지의 근거",
+     "also": []
+    },
+    {
+     "item": "혈색소 9.4 g/dL",
+     "why": "수혈 기준에 이르지 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "갑상샘기능저하증으로 레보티록신",
+     "why": "자가면역 동반 질환 — 악성빈혈과 잘 겹치지만 치료 선택은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "대구성 빈혈에 메틸말론산·호모시스테인이 함께 오르고 항내인자항체가 양성이며 후색이 침범되었다. 악성빈혈이므로 비타민 B12 근육주사를 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "메틸말론산이 정상이고 엽산이 낮으며 신경 증상이 없다면 엽산 경구 투여"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0596",
   "exam": "imaging",
   "style": "usmle_style",
