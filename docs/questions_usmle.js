@@ -30508,5 +30508,2219 @@ window.USMLE_QUESTIONS = [
    }
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0254",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pharmacology",
+  "subject_file": "Pharmacology",
+  "subtopic": "Blurred Vision Like a Snowstorm, Rapid Breathing and a Bicarbonate of 8 the Morning After Home-Distilled Liquor in a 46-Year-Old Man",
+  "type": "Blurred Vision Like a Snowstorm, Rapid Breathing and a Bicarbonate of 8 the Morning After Home-Distilled Liquor in a 46-Year-Old Man",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 46-year-old man is brought to the emergency department because of headache, nausea, epigastric pain and blurred vision that began this morning. He says everything looks \"like being in a snowstorm.\" Twenty hours ago he drank a large amount of home-distilled liquor at a party; he usually drinks 2 beers daily. He has no history of diabetes and takes no medications. His vital signs are shown. He is alert and oriented. The pupils are 6 mm and react sluggishly to light. Funduscopic examination shows hyperemia of both optic discs with peripapillary retinal edema. The remainder of the examination shows no abnormalities. Laboratory results are shown. Intravenous sodium bicarbonate is started.",
+  "question": "The most appropriate antidote for this patient acts by which of the following mechanisms?",
+  "options": [
+   "Inhibition of aldehyde dehydrogenase",
+   "Acceleration of formate oxidation to carbon dioxide",
+   "Competitive inhibition of alcohol dehydrogenase",
+   "Replenishment of hepatic glutathione stores",
+   "Competitive displacement of formate from cytochrome c oxidase"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계 추론. ① 밀주 뒤 늦게 시작된 「눈보라」 시야 + 시신경 유두 충혈 → 메탄올 중독. ② 음이온 차 30 + 삼투압 차 ≈ 28(계산 ≈ 290) → 대사 안 된 메탄올이 아직 많아 대사를 막는 해독제가 효과적. ③ fomepizole → 알코올 탈수소효소 경쟁 억제 → 포름알데히드·포름산 생성 차단.\n- 오답감별:\n  - (A) 알데히드 탈수소효소 억제(disulfiram)는 포름알데히드를 쌓을 뿐 해독이 아니다.\n  - (B) 엽산·폴린산이 포름산을 CO2 로 산화시키는 것은 보조 치료다 — 해독제는 포름산이 생기기 전 단계(ADH)를 막는다.\n  - (D) 간 글루타티온 보충은 아세트아미노펜 중독의 N-아세틸시스테인 기전이다 — 여기서는 NAPQI 가 문제가 아니다.\n  - (E) 포름산이 시토크롬 c 산화효소를 억제하는 것은 독성 기전이지만, 그 자리에서 포름산을 밀어내는 해독제는 없다.\n- 임상핵심: 음이온 차 + 삼투압 차 산증 + 시야 이상 → 메탄올 → fomepizole(ADH 경쟁 억제) + 탄산수소나트륨 ± 폴린산 ± 투석.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose. Goldfrank's Toxicologic Emergencies, 11e(Toxic alcohols).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 밀주 뒤 늦게 시작된 「눈보라」 시야 + 시신경 유두 충혈 → 메탄올 중독. ② 음이온 차 30 + 삼투압 차 ≈ 28(계산 ≈ 290) → 대사 안 된 메탄올이 아직 많아 대사를 막는 해독제가 효과적. ③ fomepizole → 알코올 탈수소효소 경쟁 억제 → 포름알데히드·포름산 생성 차단."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 알데히드 탈수소효소 억제(disulfiram)는 포름알데히드를 쌓을 뿐 해독이 아니다.\n(B) 엽산·폴린산이 포름산을 CO2 로 산화시키는 것은 보조 치료다 — 해독제는 포름산이 생기기 전 단계(ADH)를 막는다.\n(D) 간 글루타티온 보충은 아세트아미노펜 중독의 N-아세틸시스테인 기전이다 — 여기서는 NAPQI 가 문제가 아니다.\n(E) 포름산이 시토크롬 c 산화효소를 억제하는 것은 독성 기전이지만, 그 자리에서 포름산을 밀어내는 해독제는 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "음이온 차 + 삼투압 차 산증 + 시야 이상 → 메탄올 → fomepizole(ADH 경쟁 억제) + 탄산수소나트륨 ± 폴린산 ± 투석."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose. Goldfrank's Toxicologic Emergencies, 11e(Toxic alcohols)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose; Goldfrank's Toxicologic Emergencies, 11e)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.0 °C (98.6 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "104 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "28 /min, deep"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "132/84 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum sodium",
+    "value": "140 mEq/L",
+    "ref": "135–145 mEq/L"
+   },
+   {
+    "name": "Serum chloride",
+    "value": "102 mEq/L",
+    "ref": "98–106 mEq/L"
+   },
+   {
+    "name": "Serum bicarbonate",
+    "value": "8 mEq/L",
+    "ref": "22–28 mEq/L"
+   },
+   {
+    "name": "Blood urea nitrogen",
+    "value": "14 mg/dL",
+    "ref": "7–20 mg/dL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "98 mg/dL",
+    "ref": "70–100 mg/dL"
+   },
+   {
+    "name": "Serum osmolality (measured)",
+    "value": "318 mOsm/kg H2O",
+    "ref": "275–295 mOsm/kg H2O"
+   },
+   {
+    "name": "Serum ethanol",
+    "value": "Undetectable",
+    "ref": "Undetectable"
+   },
+   {
+    "name": "Arterial pH",
+    "value": "7.12",
+    "ref": "7.35–7.45"
+   },
+   {
+    "name": "Serum lactate",
+    "value": "2.4 mmol/L",
+    "ref": "0.5–2.0 mmol/L"
+   },
+   {
+    "name": "Urinalysis",
+    "value": "No crystals; ketones negative",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "독성 알코올 중독 — 판단 순서\n─────────────────────────────────────────────\n음이온 차 대사성 산증 + 삼투압 차(측정 − [2Na + 포도당/18 + BUN/2.8]) → 독성 알코올 의심\n  시야 이상·시신경 유두 충혈 → 메탄올 · 옥살산칼슘 결정·급성 신손상 → 에틸렌글리콜\n  삼투압 차는 초기에 크고(모 알코올) 시간이 지나면 줄며 음이온 차가 커진다(대사물)\n해독제: fomepizole(ADH 경쟁 억제) — 없으면 에탄올\n보조: 탄산수소나트륨(pH 교정) · 메탄올이면 엽산/폴린산 · 에틸렌글리콜이면 티아민·피리독신\n혈액투석: 심한 산증, 시력 이상, 급성 신손상, 높은 혈중 농도",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose",
+    "Nelson LS, et al., eds. Goldfrank's Toxicologic Emergencies, 11e. McGraw Hill; 2019. Toxic alcohols."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "삼투압 차가 남아 있는 메탄올 중독에서 해독제(fomepizole)는 알코올 탈수소효소를 경쟁적으로 억제해 독성 대사물(포름산) 생성을 막는다.",
+   "rival": [
+    "B",
+    "A"
+   ],
+   "discriminator": "엽산·폴린산(B)은 이미 생긴 포름산을 CO2 로 바꾸는 보조 치료이고, 알데히드 탈수소효소 억제(A, disulfiram)는 해독이 아니라 독성 중간산물을 쌓는다. 해독제의 표적은 첫 단계 효소 ADH 다.",
+   "steps": 3,
+   "chain": [
+    "밀주 후 늦게 시작된 「눈보라」 시야 + 시신경 유두 충혈 → 메탄올(포름산의 시신경 독성)",
+    "음이온 차 30 + 삼투압 차 ≈ 28 + 에탄올·케톤·결정 없음 → 대사 안 된 메탄올이 아직 많다 — 대사를 막으면 이득",
+    "해독제 fomepizole → 알코올 탈수소효소 경쟁 억제 → 포름알데히드·포름산 생성 차단"
+   ],
+   "key": [
+    {
+     "item": "everything looks \"like being in a snowstorm.\"",
+     "why": "포름산의 망막·시신경 독성 — 메탄올을 가리킨다",
+     "also": []
+    },
+    {
+     "item": "Funduscopic examination shows hyperemia of both optic discs with peripapillary retinal edema",
+     "why": "메탄올 시신경병증",
+     "also": []
+    },
+    {
+     "item": "Serum bicarbonate",
+     "why": "8 — 음이온 차 30의 심한 대사성 산증",
+     "also": []
+    },
+    {
+     "item": "Serum osmolality (measured)",
+     "why": "318 — 계산값 ≈ 290, 삼투압 차 ≈ 28: 모(母) 알코올이 아직 남아 ADH 차단이 효과를 낸다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum ethanol",
+     "why": "검출 안 됨 — 삼투압 차를 에탄올이 설명하지 못한다(에탄올이 ADH 를 이미 막고 있지도 않다)",
+     "also": []
+    },
+    {
+     "item": "Urinalysis",
+     "why": "결정·케톤 없음 — 에틸렌글리콜(옥살산칼슘 결정)·알코올성 케톤산증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum lactate",
+     "why": "2.4 — 젖산으로는 음이온 차 30을 설명하지 못한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Intravenous sodium bicarbonate is started",
+     "why": "산증 교정은 포름산의 조직 침투를 줄이지만 해독제를 대신하지 못한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "he usually drinks 2 beers daily",
+     "why": "평소 음주 — 알코올성 케톤산증을 떠올리게 하지만 케톤 음성",
+     "also": []
+    }
+   ],
+   "summary": "밀주 뒤 늦게 온 「눈보라」 시야·시신경 유두 충혈과 음이온 차·삼투압 차가 모두 큰 산증은 메탄올 중독이다. 삼투압 차가 남아 있어 대사를 막는 해독제가 효과적이며, fomepizole 은 알코올 탈수소효소를 경쟁 억제해 포름산 생성을 막는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 환자에게 fomepizole 이 이미 들어갔고 「포름산 제거를 돕는 보조 약물의 기전」을 묻는다면, 엽산·폴린산이 10-포르밀-THF 경로로 포름산을 CO2 로 산화시키는 기전(B)이 답이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.pharm.methanol-poisoning.fomepizole-mechanism",
+  "distractors": {
+   "B": {
+    "tempting": "독성의 주범이 포름산이니, 포름산을 빨리 없애는 약이 해독제일 것 같다.",
+    "answer_first": "엽산·폴린산은 포름산 산화를 돕는 보조 치료다. 해독제(fomepizole)는 그보다 앞에서 메탄올이 포름산이 되지 않게 ADH 를 막는다 — 삼투압 차가 아직 커서 막을 메탄올이 많이 남아 있다.",
+    "discriminator": "「Serum osmolality (measured)」 318 — 삼투압 차 ≈ 28, 대사 안 된 메탄올이 많다.",
+    "when_right": "fomepizole 투여 뒤 포름산 제거를 돕는 보조 약물의 기전을 물을 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "알코올 대사 경로의 효소를 막는 약 — disulfiram 이 떠오른다.",
+    "answer_first": "알데히드 탈수소효소 억제는 메탄올에서 포름알데히드를 쌓을 뿐 해독이 아니다. 해독제는 첫 단계인 ADH 를 막는다.",
+    "discriminator": "메탄올 → (ADH) 포름알데히드 → (ALDH) 포름산 — 첫 단계를 막아야 두 독성 대사물이 모두 줄어든다.",
+    "when_right": "",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0255",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "A Red, Hard Ring Around a Cord Stump That Has Not Fallen Off at 3 Weeks and a Leukocyte Count of 48,000 in a Febrile Newborn Boy",
+  "type": "A Red, Hard Ring Around a Cord Stump That Has Not Fallen Off at 3 Weeks and a Leukocyte Count of 48,000 in a Febrile Newborn Boy",
+  "difficulty": 3,
+  "created": "2026-11-10",
+  "vignette": "A 3-week-old boy is brought to the physician because of redness around his umbilicus for 2 days and a fever since this morning. He was born at term after an uncomplicated pregnancy and delivery and has been breastfeeding well. The umbilical cord is still attached. His parents are first cousins. His vital signs are shown. The skin and hair are normally pigmented, and there is no rash. There is a 4-cm area of warm, indurated erythema around the base of the cord; there is no fluctuance, and no pus can be expressed. Laboratory results are shown.",
+  "question": "Which of the following is the most likely underlying immune defect?",
+  "options": [
+   "Absent β2-integrin (CD18) expression on leukocytes",
+   "Defective NADPH oxidase in phagocytes",
+   "Mutated lysosomal trafficking regulator protein",
+   "Absent Bruton tyrosine kinase in B-cell precursors",
+   "Defective STAT3 signaling in T lymphocytes"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 2단계 추론. ① 탯줄 분리 지연 + 고름 없는 경결성 오말염 + 감염 중 백혈구 48,000 → 호중구가 조직으로 나가지 못하는 부착·이동 결함. ② 정상 색소·정상 과립·습진 없음·모체 IgG 가 있는 생후 3주 → CD18(β2 integrin) 결핍 = LAD-1.\n- 오답감별:\n  - (B) NADPH 산화효소 결함(만성 육아종병)은 호중구 이동은 정상이라 고름·농양이 생기고 탯줄 분리가 늦지 않는다.\n  - (C) LYST 변이(Chédiák–Higashi)는 부분 백색증과 거대 과립이 있어야 한다 — 색소·도말이 정상이다.\n  - (D) BTK 결핍(X 연관 무감마글로불린혈증)은 모체 IgG 가 사라지는 생후 6개월 뒤 피막균 감염으로 드러나고 호중구 이동과 무관하다.\n  - (E) STAT3 결함(고IgE 증후군)은 습진·냉농양·젖니 유지가 특징이고 탯줄 분리 지연을 일으키지 않는다.\n- 임상핵심: 탯줄 분리 지연 + 고름 없는 감염 + 호중구 증가 → LAD-1(CD18) · 고름 찬 카탈라제 양성균 농양 → 만성 육아종병.\n- 출처: Nelson Textbook of Pediatrics, 21e(Leukocyte adhesion defects). Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 탯줄 분리 지연 + 고름 없는 경결성 오말염 + 감염 중 백혈구 48,000 → 호중구가 조직으로 나가지 못하는 부착·이동 결함. ② 정상 색소·정상 과립·습진 없음·모체 IgG 가 있는 생후 3주 → CD18(β2 integrin) 결핍 = LAD-1."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) NADPH 산화효소 결함(만성 육아종병)은 호중구 이동은 정상이라 고름·농양이 생기고 탯줄 분리가 늦지 않는다.\n(C) LYST 변이(Chédiák–Higashi)는 부분 백색증과 거대 과립이 있어야 한다 — 색소·도말이 정상이다.\n(D) BTK 결핍(X 연관 무감마글로불린혈증)은 모체 IgG 가 사라지는 생후 6개월 뒤 피막균 감염으로 드러나고 호중구 이동과 무관하다.\n(E) STAT3 결함(고IgE 증후군)은 습진·냉농양·젖니 유지가 특징이고 탯줄 분리 지연을 일으키지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "탯줄 분리 지연 + 고름 없는 감염 + 호중구 증가 → LAD-1(CD18) · 고름 찬 카탈라제 양성균 농양 → 만성 육아종병."
+   },
+   {
+    "k": "출처",
+    "v": "Nelson Textbook of Pediatrics, 21e(Leukocyte adhesion defects). Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics, 21e; Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "38.3 °C (100.9 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "162 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "44 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "78/46 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "48,000 /μL (neutrophils 85%)",
+    "ref": "5,000–19,500 /μL"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "14.6 g/dL",
+    "ref": "13.5–19.5 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "310,000 /μL",
+    "ref": "150,000–450,000 /μL"
+   },
+   {
+    "name": "Peripheral blood smear",
+    "value": "Neutrophils of normal size and granulation",
+    "ref": "—"
+   },
+   {
+    "name": "Swab culture of the umbilical base",
+    "value": "Staphylococcus aureus",
+    "ref": "—"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "식세포 결함 — 감별 단서\n─────────────────────────────────────────────\nLAD-1(CD18/β2 integrin): 탯줄 분리 지연·오말염, 고름 없음, 감염 중 현저한 호중구 증가, 치주염 · 치료 조혈모세포이식\n만성 육아종병(NADPH 산화효소): 카탈라제 양성균(S. aureus·Serratia·Burkholderia·Aspergillus) 농양·육아종, DHR 검사 비정상\nChédiák–Higashi(LYST): 부분 백색증, 거대 과립, 말초신경병, 출혈 경향\n고IgE 증후군(STAT3): 습진, 냉농양, 젖니 유지, IgE 매우 높음, 폐 기낭\nB세포 결함(BTK): 생후 6개월 뒤 반복 피막균 감염(모체 IgG 소실 뒤)",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes",
+    "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21e. Elsevier; 2020. Leukocyte adhesion defects."
+   ]
+  },
+  "design": {
+   "target": "감별",
+   "decision": "탯줄 분리 지연 + 고름 없는 감염 + 감염 중 현저한 호중구 증가는 호중구가 혈관 밖으로 나가지 못하는 결함 — CD18(β2 integrin) 결핍(LAD-1)을 가리킨다.",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "만성 육아종병(B)도 신생아·유아 세균 감염을 일으키지만 호중구 이동은 정상이라 감염 부위에 고름·농양이 생기고 탯줄 분리가 늦지 않는다. 이 환자는 고름이 없고 혈중 호중구가 쌓여 있다.",
+   "steps": 2,
+   "chain": [
+    "탯줄이 3주에도 붙어 있음 + 고름 없는 경결성 오말염 + 백혈구 48,000 → 호중구가 조직으로 못 나가는 이동(부착) 결함",
+    "정상 색소·정상 과립·생후 3주(모체 IgG 있음) → Chédiák–Higashi·STAT3·B세포 결함보다 CD18 결핍(LAD-1)"
+   ],
+   "key": [
+    {
+     "item": "The umbilical cord is still attached",
+     "why": "생후 3주 — 탯줄 분리 지연(정상은 대개 1–2주): 호중구 침윤이 필요하다",
+     "also": []
+    },
+    {
+     "item": "no pus can be expressed",
+     "why": "감염인데 고름이 없다 — 호중구가 조직에 도착하지 못한다",
+     "also": []
+    },
+    {
+     "item": "Leukocyte count",
+     "why": "48,000, 호중구 85% — 혈관 안에 호중구가 갇혀 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The skin and hair are normally pigmented",
+     "why": "부분 백색증이 없어 Chédiák–Higashi 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Peripheral blood smear",
+     "why": "거대 과립 없음 — Chédiák–Higashi 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "there is no rash",
+     "why": "습진이 없어 고IgE 증후군(STAT3) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "His parents are first cousins",
+     "why": "상염색체 열성 질환의 단서(LAD-1·만성 육아종병 일부 모두) — 둘을 가르지는 못한다",
+     "also": []
+    },
+    {
+     "item": "Swab culture of the umbilical base",
+     "why": "황색포도알균 — 여러 식세포 결함에서 흔해 결함을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "생후 3주에도 붙어 있는 탯줄, 고름이 없는 오말염, 감염 중 백혈구 48,000 은 호중구가 혈관 밖으로 나가지 못한다는 뜻이다. 색소·과립·피부가 정상이고 아직 모체 IgG 가 있는 나이라 CD18(β2 integrin) 결핍(LAD-1)이 가장 맞는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 영아가 탯줄은 제때 떨어졌고 피부·림프절에 고름이 찬 농양이 반복되며 Serratia·Aspergillus 같은 카탈라제 양성균이 자라고 dihydrorhodamine 검사에서 형광이 증가하지 않는다면, NADPH 산화효소 결함(만성 육아종병)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.immuno.leukocyte-adhesion-deficiency.phagocyte-defect-differential",
+  "distractors": {
+   "B": {
+    "tempting": "근친혼 가정의 신생아에게 황색포도알균 감염 — 식세포 결함이니 만성 육아종병이 먼저 떠오른다.",
+    "answer_first": "만성 육아종병은 호중구가 조직으로 잘 이동해 고름·농양을 만든다 — 죽이지 못할 뿐이다. 이 아기는 고름이 없고 호중구가 혈중에 쌓여 있으며 탯줄이 떨어지지 않았다: 이동 자체의 결함이다.",
+    "discriminator": "「no pus can be expressed」 + 「The umbilical cord is still attached」 + 백혈구 48,000.",
+    "when_right": "탯줄 분리가 정상이고 카탈라제 양성균 농양(고름)이 반복되며 DHR 검사가 비정상일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0256",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "A Lactate of 14, a PaO2 of 412 and Bright Red Venous Blood After Fifteen Minutes in a Burning Apartment in a 52-Year-Old Woman",
+  "type": "A Lactate of 14, a PaO2 of 412 and Bright Red Venous Blood After Fifteen Minutes in a Burning Apartment in a 52-Year-Old Woman",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 52-year-old woman is brought to the emergency department 30 minutes after firefighters carried her out of a burning apartment, where she had been trapped in a smoke-filled room for about 15 minutes; the fire involved upholstered furniture and plastics. She has no medical history, does not smoke or drink alcohol, and takes no medications. On arrival, she is confused and has a generalized seizure that stops after intravenous lorazepam. Her vital signs are shown. There is soot in the nares and oropharynx, but there is no stridor and no skin burns. Breath sounds are equal with scattered wheezes. Blood drawn from a central venous catheter is bright red. Laboratory results are shown.",
+  "question": "Which of the following best explains the severity of her lactic acidosis?",
+  "options": [
+   "Reduced oxygen-carrying capacity from carbon monoxide bound to hemoglobin",
+   "Impaired oxygen release from oxidized ferric heme in hemoglobin",
+   "Hypoxemia from smoke-induced injury to the alveolar membrane",
+   "Blocked electron transfer to oxygen at cytochrome c oxidase",
+   "Decreased pyruvate dehydrogenase activity from thiamine deficiency"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계 추론. ① PaO2 412·메트헤모글로빈 1% → 폐 산소 교환·헤모글로빈 산화로는 설명 안 됨. ② 일산화탄소헤모글로빈 8% → 젖산 14·쇼크를 설명하기엔 작다. ③ 정맥 산소포화도 88%·선홍색 정맥혈 + 플라스틱 화재 → 조직의 산소 이용 차단 = 시안화물의 시토크롬 c 산화효소(복합체 IV) 억제.\n- 오답감별:\n  - (A) 일산화탄소헤모글로빈 8% 는 운반능을 조금 줄일 뿐 — 젖산 14 와 높은 정맥 산소포화도를 설명하지 못한다.\n  - (B) Fe³⁺ 헤모글로빈(메트헤모글로빈)은 산소 결합·방출을 망가뜨리지만 측정값이 1% 로 정상이다.\n  - (C) PaO2 412 — 폐의 산소 교환은 유지된다. 산증은 공급이 아니라 이용의 문제다.\n  - (E) 티아민 결핍에 의한 피루브산 탈수소효소 저하는 젖산을 올리지만, 술·영양 결핍 병력이 없고 화재 직후의 급성 경과와 맞지 않는다.\n- 임상핵심: 화재 피해자 + 젖산 크게 상승 + 정맥혈 산소포화도 높음 → 시안화물(복합체 IV 차단) → hydroxocobalamin.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose. Lippincott Illustrated Reviews: Biochemistry, 8e.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① PaO2 412·메트헤모글로빈 1% → 폐 산소 교환·헤모글로빈 산화로는 설명 안 됨. ② 일산화탄소헤모글로빈 8% → 젖산 14·쇼크를 설명하기엔 작다. ③ 정맥 산소포화도 88%·선홍색 정맥혈 + 플라스틱 화재 → 조직의 산소 이용 차단 = 시안화물의 시토크롬 c 산화효소(복합체 IV) 억제."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 일산화탄소헤모글로빈 8% 는 운반능을 조금 줄일 뿐 — 젖산 14 와 높은 정맥 산소포화도를 설명하지 못한다.\n(B) Fe³⁺ 헤모글로빈(메트헤모글로빈)은 산소 결합·방출을 망가뜨리지만 측정값이 1% 로 정상이다.\n(C) PaO2 412 — 폐의 산소 교환은 유지된다. 산증은 공급이 아니라 이용의 문제다.\n(E) 티아민 결핍에 의한 피루브산 탈수소효소 저하는 젖산을 올리지만, 술·영양 결핍 병력이 없고 화재 직후의 급성 경과와 맞지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "화재 피해자 + 젖산 크게 상승 + 정맥혈 산소포화도 높음 → 시안화물(복합체 IV 차단) → hydroxocobalamin."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose. Lippincott Illustrated Reviews: Biochemistry, 8e."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose; Lippincott Illustrated Reviews: Biochemistry, 8e)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.2 °C (99.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "128 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "30 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "86/52 mm Hg"
+   },
+   {
+    "name": "Pulse oximetry",
+    "value": "98% on 100% oxygen by nonrebreather mask"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Arterial pH",
+    "value": "7.08",
+    "ref": "7.35–7.45"
+   },
+   {
+    "name": "Arterial PaO2",
+    "value": "412 mm Hg (on 100% oxygen)",
+    "ref": "75–100 mm Hg (room air)"
+   },
+   {
+    "name": "Arterial PaCO2",
+    "value": "28 mm Hg",
+    "ref": "35–45 mm Hg"
+   },
+   {
+    "name": "Serum bicarbonate",
+    "value": "9 mEq/L",
+    "ref": "22–28 mEq/L"
+   },
+   {
+    "name": "Serum lactate",
+    "value": "14 mmol/L",
+    "ref": "0.5–2.0 mmol/L"
+   },
+   {
+    "name": "Carboxyhemoglobin",
+    "value": "8%",
+    "ref": "< 3% (nonsmoker)"
+   },
+   {
+    "name": "Methemoglobin",
+    "value": "1%",
+    "ref": "< 2%"
+   },
+   {
+    "name": "Central venous oxygen saturation",
+    "value": "88%",
+    "ref": "65–75%"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "142 mg/dL",
+    "ref": "70–100 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "화재 피해자의 산증 — 판단\n─────────────────────────────────────────────\n일산화탄소: CO-Hb(공동산소측정) — 맥박산소측정은 정상처럼 보인다 · 100% 산소, 중증이면 고압산소 고려\n시안화물: 밀폐 공간 + 의식 저하·경련·저혈압 + 젖산 크게 상승(≥ 8–10 mmol/L) + 정맥 산소포화도 높음\n  기전: CN⁻ → 시토크롬 c 산화효소(복합체 IV) Fe³⁺ 결합 → 전자 전달·산화적 인산화 정지 → 해당작용·젖산\n  해독: hydroxocobalamin(시아노코발라민으로 결합) — 혈중 농도를 기다리지 않는다\n  아질산염(메트헤모글로빈 유도)은 CO 가 함께 있는 화재 피해자에게 산소 운반을 더 떨어뜨려 피한다",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose",
+    "Ferrier DR. Lippincott Illustrated Reviews: Biochemistry, 8e. Wolters Kluwer; 2021. Electron transport chain inhibitors."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "화재 피해자에서 산소 공급(PaO2)은 충분한데 젖산이 매우 높고 정맥혈 산소포화도가 높으면, 조직이 산소를 쓰지 못하는 것 — 시안화물의 시토크롬 c 산화효소(복합체 IV) 차단이다.",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "일산화탄소(A)도 화재에서 흔하지만 일산화탄소헤모글로빈 8% 로는 산소 운반능이 조금 줄 뿐이다. 젖산 14 + 정맥 산소포화도 88%(조직이 산소를 꺼내 쓰지 않음)는 세포 호흡 차단을 가리킨다.",
+   "steps": 3,
+   "chain": [
+    "PaO2 412 + 메트헤모글로빈 1% → 폐 산소 교환·헤모글로빈 산화로는 설명 안 됨",
+    "일산화탄소헤모글로빈 8% → 운반능 감소가 작아 젖산 14·쇼크·경련을 설명하지 못함",
+    "정맥 산소포화도 88%·선홍색 정맥혈 + 밀폐 공간 플라스틱 화재 → 조직의 산소 이용 차단 = 시안화물의 복합체 IV 억제"
+   ],
+   "key": [
+    {
+     "item": "Serum lactate",
+     "why": "14 mmol/L — 화재 피해자에서 시안화물을 강하게 시사하는 높이",
+     "also": []
+    },
+    {
+     "item": "Central venous oxygen saturation",
+     "why": "88% — 조직이 산소를 꺼내 쓰지 못한다(산소 이용 장애)",
+     "also": []
+    },
+    {
+     "item": "Blood drawn from a central venous catheter is bright red",
+     "why": "정맥혈이 동맥혈처럼 붉다 — 산소 이용 차단",
+     "also": []
+    },
+    {
+     "item": "the fire involved upholstered furniture and plastics",
+     "why": "질소 함유 합성물질 연소 → 시안화수소 발생",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Carboxyhemoglobin",
+     "why": "8% — 노출은 있으나 이 정도로는 젖산 14·쇼크를 설명하지 못해 CO 단독의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Arterial PaO2",
+     "why": "412 — 폐포 손상으로 인한 저산소혈증(C)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Methemoglobin",
+     "why": "1% — 메트헤모글로빈혈증(B)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "does not smoke or drink alcohol",
+     "why": "티아민 결핍(E) 위험이 낮다 · 흡연이 없어 CO-Hb 8% 는 화재 노출이다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "There is soot in the nares and oropharynx, but there is no stridor",
+     "why": "흡입 손상의 단서 — 기도 부종을 계속 관찰한다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "밀폐 공간 플라스틱 화재 뒤 젖산 14 의 산증·쇼크·경련이 있는데 PaO2 는 높고 메트헤모글로빈은 정상이며 일산화탄소헤모글로빈 8% 로는 이를 설명하지 못한다. 정맥혈 산소포화도 88% 는 조직이 산소를 쓰지 못한다는 뜻 — 시안화물이 시토크롬 c 산화효소를 막았다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 화재 피해자의 일산화탄소헤모글로빈이 35% 이고 젖산이 3 mmol/L 정도에 정맥 산소포화도가 낮다면, 헤모글로빈의 산소 운반·방출 장애(일산화탄소, A)가 주된 기전이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.biochem.cyanide-poisoning.complex-iv-lactic-acidosis",
+  "distractors": {
+   "A": {
+    "tempting": "화재 연기 흡입 + 일산화탄소헤모글로빈 상승 — 화재 중독은 일산화탄소라고 배웠다.",
+    "answer_first": "일산화탄소헤모글로빈 8% 는 노출을 보여 주지만 산소 운반능을 약 8% 줄일 뿐이다. 젖산 14·쇼크와 높은 정맥 산소포화도는 산소가 조직에 도착해도 쓰이지 못한다는 뜻 — 세포 호흡(복합체 IV) 차단이다.",
+    "discriminator": "「Carboxyhemoglobin」 8% vs 「Serum lactate」 14 · 「Central venous oxygen saturation」 88%.",
+    "when_right": "일산화탄소헤모글로빈이 크게 높고(예: 25–40%) 젖산이 그에 비해 낮으며 정맥 산소포화도가 높지 않을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0257",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Four Days of Fever, a Palpable Spleen Tip and a Platelet Count of 62,000 Twelve Days After Returning From Lagos in a 34-Year-Old Man",
+  "type": "Four Days of Fever, a Palpable Spleen Tip and a Platelet Count of 62,000 Twelve Days After Returning From Lagos in a 34-Year-Old Man",
+  "difficulty": 3,
+  "created": "2026-11-10",
+  "vignette": "A 34-year-old man comes to the emergency department because of fever, shaking chills, headache and muscle aches for 4 days. Twelve days ago he returned from a 3-week visit with family in Lagos, Nigeria. He grew up there but has lived in the United States for 15 years; he did not take any medication to prevent infection during the trip and recalls many mosquito bites. He has had no diarrhea, cough, rash or sexual contacts during travel. His vital signs are shown. He is alert and oriented. There is mild scleral icterus. The neck is supple. The lungs are clear. The spleen tip is palpable 2 cm below the left costal margin. There is no rash or eschar. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Dengue NS1 antigen testing",
+   "Blood cultures from two separate sites",
+   "Serologic testing for Rickettsia species",
+   "Stool examination for ova and parasites",
+   "Giemsa-stained thick and thin blood smears"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 2단계 추론. ① 나이지리아 3주 + 예방약 없음 + 귀국 12일 뒤 발열 → 열대열 말라리아를 먼저 배제. ② 용혈(간접 빌리루빈·LDH)·혈소판 감소·비장 비대 → 적혈구 내 기생충 — Giemsa 두꺼운·얇은 혈액 도말로 확인하고 종·기생충혈 비율을 잰다.\n- 오답감별:\n  - (A) 뎅기 NS1 은 혈소판 감소 발열에서 떠올리지만, 용혈·비장 비대·서아프리카 노출은 말라리아가 먼저다 — 도말이 음성일 때 다음 검사.\n  - (B) 혈액 배양은 장티푸스 감별로 함께 낼 수 있으나 결과가 늦고, 그날 확인해야 할 진단은 말라리아다.\n  - (C) 리케치아 혈청은 가피·발진이 있을 때 생각하며, 급성기에는 대개 음성이라 진단을 늦춘다.\n  - (D) 대변 충란·기생충 검사는 설사·호산구 증가가 있을 때다 — 설사가 없고 혈액 기생충이 의심된다.\n- 임상핵심: 말라리아 유행지에서 돌아온 발열 + 용혈·혈소판 감소·비장 비대 → 그날 바로 두꺼운·얇은 혈액 도말(음성이면 반복).\n- 출처: Harrison's Principles of Internal Medicine, 22e. 231장 Malaria. CDC Yellow Book 2024, Malaria.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 나이지리아 3주 + 예방약 없음 + 귀국 12일 뒤 발열 → 열대열 말라리아를 먼저 배제. ② 용혈(간접 빌리루빈·LDH)·혈소판 감소·비장 비대 → 적혈구 내 기생충 — Giemsa 두꺼운·얇은 혈액 도말로 확인하고 종·기생충혈 비율을 잰다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 뎅기 NS1 은 혈소판 감소 발열에서 떠올리지만, 용혈·비장 비대·서아프리카 노출은 말라리아가 먼저다 — 도말이 음성일 때 다음 검사.\n(B) 혈액 배양은 장티푸스 감별로 함께 낼 수 있으나 결과가 늦고, 그날 확인해야 할 진단은 말라리아다.\n(C) 리케치아 혈청은 가피·발진이 있을 때 생각하며, 급성기에는 대개 음성이라 진단을 늦춘다.\n(D) 대변 충란·기생충 검사는 설사·호산구 증가가 있을 때다 — 설사가 없고 혈액 기생충이 의심된다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "말라리아 유행지에서 돌아온 발열 + 용혈·혈소판 감소·비장 비대 → 그날 바로 두꺼운·얇은 혈액 도말(음성이면 반복)."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 231장 Malaria. CDC Yellow Book 2024, Malaria."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 231장 Malaria; CDC Yellow Book 2024, Malaria)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "39.6 °C (103.3 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "112 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "20 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "112/70 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "11.2 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Leukocyte count",
+    "value": "5,200 /μL",
+    "ref": "4,500–11,000 /μL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "62,000 /μL",
+    "ref": "150,000–400,000 /μL"
+   },
+   {
+    "name": "Serum total bilirubin",
+    "value": "2.6 mg/dL",
+    "ref": "0.1–1.0 mg/dL"
+   },
+   {
+    "name": "Serum direct bilirubin",
+    "value": "0.4 mg/dL",
+    "ref": "0.0–0.3 mg/dL"
+   },
+   {
+    "name": "Serum lactate dehydrogenase",
+    "value": "520 U/L",
+    "ref": "45–200 U/L"
+   },
+   {
+    "name": "Serum AST",
+    "value": "48 U/L",
+    "ref": "12–38 U/L"
+   },
+   {
+    "name": "Serum ALT",
+    "value": "52 U/L",
+    "ref": "10–40 U/L"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "1.0 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "92 mg/dL",
+    "ref": "70–100 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "귀국 여행자의 발열 — 첫 검사\n─────────────────────────────────────────────\n말라리아 유행지(특히 사하라 이남 아프리카) 방문 뒤 1년 안의 발열 → 말라리아를 먼저 배제\n  Giemsa 두꺼운 도말(검출) + 얇은 도말(종·기생충혈 %) · 음성이면 12–24시간마다 총 3회\n  빠른 항원 검사(HRP2)는 보조 — 양성·음성 모두 도말로 확인\n중증(기생충혈 ≥ 5%, 의식 변화, 신부전, 저혈당, 쇼크 등) → 정맥 artesunate\n그다음 감별: 뎅기(NS1·PCR), 장티푸스(혈액 배양), 리케치아(가피·혈청), 렙토스피라",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 231장 Malaria",
+    "Centers for Disease Control and Prevention. CDC Yellow Book 2024: Health Information for International Travel. Malaria."
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "사하라 이남 아프리카에서 돌아온 발열 여행자, 특히 예방약을 먹지 않았고 용혈·혈소판 감소·비장 비대가 있으면 열대열 말라리아를 먼저 배제해야 하며, 그 검사는 두꺼운·얇은 혈액 도말이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "뎅기(A)도 혈소판 감소·발열을 일으키지만 용혈(간접 빌리루빈·LDH 상승)과 비장 비대는 말라리아를 가리키고, 열대열 말라리아는 몇 시간 만에 치명적이 될 수 있어 먼저 확인한다. 혈액 배양(B)은 장티푸스 감별용으로 함께 낼 수 있지만 첫 진단 검사가 아니다.",
+   "steps": 2,
+   "chain": [
+    "나이지리아 3주 + 예방약 없음 + 귀국 12일 뒤 발열 → 열대열 말라리아 잠복기에 맞음 — 가장 먼저 배제",
+    "간접 빌리루빈·LDH 상승 + 혈소판 62,000 + 비장 비대 → 적혈구 내 기생충의 용혈 — 확인은 두꺼운·얇은 혈액 도말(종·기생충혈 비율)"
+   ],
+   "key": [
+    {
+     "item": "he did not take any medication to prevent infection during the trip",
+     "why": "화학 예방 없음 — 말라리아 위험이 높다",
+     "also": []
+    },
+    {
+     "item": "Twelve days ago he returned from a 3-week visit with family in Lagos, Nigeria",
+     "why": "열대열 말라리아 유행지·잠복기(대개 귀국 1개월 안)",
+     "also": []
+    },
+    {
+     "item": "The spleen tip is palpable 2 cm below the left costal margin",
+     "why": "비장 비대 — 말라리아",
+     "also": []
+    },
+    {
+     "item": "Serum lactate dehydrogenase",
+     "why": "520 — 간접 빌리루빈 상승과 함께 용혈",
+     "also": []
+    },
+    {
+     "item": "Platelet count",
+     "why": "62,000 — 말라리아에서 흔하다(뎅기에서도 흔해 둘을 가르지는 못한다)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no rash or eschar",
+     "why": "가피가 없어 리케치아(아프리카 진드기열) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He has had no diarrhea, cough, rash or sexual contacts during travel",
+     "why": "설사가 없어 장 기생충(D) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He is alert and oriented",
+     "why": "아직 중증(뇌 말라리아) 징후는 없다 — 그러나 도말 결과로 중증 여부를 다시 판정한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He grew up there but has lived in the United States for 15 years",
+     "why": "고향 방문 이민자 — 부분 면역이 사라져 위험이 높다",
+     "also": []
+    }
+   ],
+   "summary": "나이지리아에서 예방약 없이 머문 뒤 12일 만의 발열, 비장 비대, 혈소판 감소, 용혈은 열대열 말라리아를 먼저 확인하라는 뜻이다. 몇 시간 만에 중증이 될 수 있으므로 그날 바로 Giemsa 두꺼운·얇은 혈액 도말로 기생충·종·기생충혈 비율을 본다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 증상이 동남아시아 여행 5일 뒤 시작됐고 눈 뒤 통증·발진이 있으며 용혈·비장 비대가 없고 혈액 도말이 세 번 음성이라면, 다음은 뎅기 NS1 항원 검사다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.id.malaria.returned-traveler-blood-smear",
+  "distractors": {
+   "A": {
+    "tempting": "고열·근육통·혈소판 감소 — 여행 후 발열에 혈소판이 떨어지면 뎅기가 떠오른다.",
+    "answer_first": "뎅기도 혈소판을 떨어뜨리지만, 사하라 이남 아프리카·예방약 없음·용혈·비장 비대는 말라리아를 가리키고 열대열 말라리아는 치료가 늦으면 몇 시간 만에 중증이 된다 — 도말로 먼저 확인한다.",
+    "discriminator": "「Serum lactate dehydrogenase」 520 + 간접 빌리루빈 상승 + 「The spleen tip is palpable」.",
+    "when_right": "동남아·중남미 여행 뒤 짧은 잠복기(4–7일)의 발열에 눈 뒤 통증·발진이 있고 혈액 도말이 반복 음성일 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "여행 후 고열·서맥이 없는 빈맥·간효소 상승 — 장티푸스를 생각해 배양부터 낸다.",
+    "answer_first": "혈액 배양은 장티푸스 감별로 함께 낼 수 있지만 결과가 며칠 걸린다. 이 환자에서 그날 바로 생사를 가르는 것은 말라리아 도말이다.",
+    "discriminator": "용혈·혈소판 감소·비장 비대 + 예방약 없이 서아프리카 체류 → 말라리아가 먼저.",
+    "when_right": "혈액 도말이 반복 음성이고 발열이 지속되며 복통·변비·장미진 같은 장티푸스 단서가 있을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0258",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pathology",
+  "subject_file": "Pathology",
+  "subtopic": "Four Years of Wandering Joint Pain, Then Greasy Stools, a 9-kg Weight Loss and New Forgetfulness in a 54-Year-Old Farmer",
+  "type": "Four Years of Wandering Joint Pain, Then Greasy Stools, a 9-kg Weight Loss and New Forgetfulness in a 54-Year-Old Farmer",
+  "difficulty": 3,
+  "created": "2026-11-10",
+  "vignette": "A 54-year-old man comes to the physician because of diarrhea for 8 months. He passes 4 to 6 bulky, greasy, foul-smelling stools daily and has lost 9 kg (20 lb). For 4 years before the diarrhea began, he had episodes of pain and swelling that moved between his knees, ankles and wrists and resolved within days. His wife says he has become forgetful over the past 3 months. He has worked on a dairy farm all his life. His vital signs are shown. The skin over the face and forearms is diffusely darker than in photographs from 2 years ago. There is nontender lymphadenopathy in the cervical, axillary and inguinal regions. The abdomen is mildly distended and nontender. There is no joint swelling at this visit. Laboratory results are shown. Upper endoscopy shows pale yellow, shaggy mucosa with scattered white plaques in the distal duodenum.",
+  "question": "A biopsy specimen of the duodenum is most likely to show which of the following?",
+  "options": [
+   "Villous atrophy with crypt hyperplasia and intraepithelial lymphocytes",
+   "Foamy macrophages filled with PAS-positive granules in the lamina propria",
+   "Noncaseating granulomas extending through all layers of the bowel wall",
+   "Pear-shaped binucleate trophozoites lying on the villous surface",
+   "Markedly dilated lacteals in an otherwise uninflamed lamina propria"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 2단계 추론. ① 지방변·체중 감소·저알부민 + 총 IgA 정상인데 tTG IgA 음성·Giardia 항원 음성 → 셀리악·람블편모충보다 다른 흡수 장애. ② 수년 선행한 이동성 관절염 + 미열·전신 림프절 비대·색소 침착·인지 저하 → Whipple 병 → 생검에 고유판의 PAS 양성 거품 대식세포.\n- 오답감별:\n  - (A) 융모 위축·움 증식·상피내 림프구는 셀리악병 — tTG IgA 음성(총 IgA 정상)이고 전신 증상이 맞지 않는다.\n  - (C) 전층의 비건락 육아종은 Crohn 병 — 누공·회장 말단 염증·복통이 주이고 이동성 관절염 뒤 신경 증상이 오는 경과가 아니다.\n  - (D) 서양배 모양 2핵 영양형은 람블편모충 — 대변 Giardia 항원이 음성이다.\n  - (E) 확장된 유미관만 있는 고유판은 장 림프관 확장증 — 저알부민은 맞지만 발열·림프절 비대·관절염·인지 저하를 설명하지 못한다.\n- 임상핵심: 관절염 선행 + 흡수 장애 + 발열·림프절·신경 증상 → Whipple 병 → 고유판 PAS 양성 거품 대식세포.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 181장 Whipple Disease. Robbins and Cotran Pathologic Basis of Disease, 10e.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 지방변·체중 감소·저알부민 + 총 IgA 정상인데 tTG IgA 음성·Giardia 항원 음성 → 셀리악·람블편모충보다 다른 흡수 장애. ② 수년 선행한 이동성 관절염 + 미열·전신 림프절 비대·색소 침착·인지 저하 → Whipple 병 → 생검에 고유판의 PAS 양성 거품 대식세포."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 융모 위축·움 증식·상피내 림프구는 셀리악병 — tTG IgA 음성(총 IgA 정상)이고 전신 증상이 맞지 않는다.\n(C) 전층의 비건락 육아종은 Crohn 병 — 누공·회장 말단 염증·복통이 주이고 이동성 관절염 뒤 신경 증상이 오는 경과가 아니다.\n(D) 서양배 모양 2핵 영양형은 람블편모충 — 대변 Giardia 항원이 음성이다.\n(E) 확장된 유미관만 있는 고유판은 장 림프관 확장증 — 저알부민은 맞지만 발열·림프절 비대·관절염·인지 저하를 설명하지 못한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "관절염 선행 + 흡수 장애 + 발열·림프절·신경 증상 → Whipple 병 → 고유판 PAS 양성 거품 대식세포."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 181장 Whipple Disease. Robbins and Cotran Pathologic Basis of Disease, 10e."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 181장 Whipple Disease; Robbins and Cotran Pathologic Basis of Disease, 10e)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.9 °C (100.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "92 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "108/68 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "10.8 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Mean corpuscular volume",
+    "value": "84 μm3",
+    "ref": "80–100 μm3"
+   },
+   {
+    "name": "Serum albumin",
+    "value": "2.6 g/dL",
+    "ref": "3.5–5.5 g/dL"
+   },
+   {
+    "name": "Tissue transglutaminase IgA",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Serum total IgA",
+    "value": "Normal",
+    "ref": "—"
+   },
+   {
+    "name": "Stool qualitative fat (Sudan stain)",
+    "value": "Increased",
+    "ref": "Normal"
+   },
+   {
+    "name": "Stool Giardia antigen",
+    "value": "Negative",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "흡수 장애 + 소장 생검 — 소견으로 가르기\n─────────────────────────────────────────────\n셀리악병: 융모 위축 + 움 증식 + 상피내 림프구 증가 · tTG IgA 양성(총 IgA 확인)\nWhipple 병: 고유판 PAS 양성 거품 대식세포(ZN 음성) · 관절염 선행, 발열, 림프절, 신경·심장 침범 · PCR 로 확인\n  치료: ceftriaxone 2주 → TMP-SMX 1년\nCrohn 병: 전층 염증 + 비건락 육아종 · 회장 말단, 누공\n람블편모충: 융모 표면의 서양배 모양 2핵 영양형 · 대변 항원\n장 림프관 확장증: 확장된 유미관, 염증 세포 거의 없음 · 저알부민·림프구 감소",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 181장 Whipple Disease",
+    "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10e. Elsevier; 2020. Malabsorptive diarrhea."
+   ]
+  },
+  "design": {
+   "target": "진단",
+   "decision": "관절염이 선행한 흡수 장애에 발열·림프절 비대·색소 침착·인지 저하가 있는 중년 남성은 Whipple 병이며, 소장 생검에 PAS 양성 거품 대식세포가 보인다.",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "셀리악병(A)도 지방변·체중 감소·융모 이상을 일으키지만 총 IgA 정상에서 항tTG IgA 음성이고, 수년 선행한 이동성 관절염·발열·전신 림프절 비대·인지 저하는 Whipple 의 전신 감염을 가리킨다.",
+   "steps": 2,
+   "chain": [
+    "지방변·체중 감소·저알부민 + 총 IgA 정상인데 tTG IgA 음성·Giardia 항원 음성 → 셀리악·람블편모충보다 다른 흡수 장애",
+    "수년 선행한 이동성 관절염 + 미열·전신 림프절 비대·색소 침착·인지 저하(중년 남성 농부) → Whipple 병 → 고유판의 PAS 양성 거품 대식세포"
+   ],
+   "key": [
+    {
+     "item": "For 4 years before the diarrhea began, he had episodes of pain and swelling that moved between his knees, ankles and wrists",
+     "why": "장 증상보다 수년 앞선 이동성 비변형 관절염 — Whipple 의 흔한 첫 증상",
+     "also": []
+    },
+    {
+     "item": "His wife says he has become forgetful over the past 3 months",
+     "why": "중추신경계 침범 — 전신 감염의 단서",
+     "also": []
+    },
+    {
+     "item": "There is nontender lymphadenopathy in the cervical, axillary and inguinal regions",
+     "why": "전신 림프절 비대 — 셀리악보다 Whipple",
+     "also": []
+    },
+    {
+     "item": "The skin over the face and forearms is diffusely darker",
+     "why": "피부 색소 침착 — Whipple 에서 보고된다",
+     "also": []
+    },
+    {
+     "item": "Upper endoscopy shows pale yellow, shaggy mucosa with scattered white plaques in the distal duodenum",
+     "why": "대식세포로 채워진 융모와 막힌 림프관의 내시경 모습",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Tissue transglutaminase IgA",
+     "why": "음성(총 IgA 정상) — 셀리악병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum total IgA",
+     "why": "정상 — tTG IgA 음성을 믿을 수 있게 한다",
+     "also": []
+    },
+    {
+     "item": "Stool Giardia antigen",
+     "why": "음성 — 람블편모충(D) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He has worked on a dairy farm all his life",
+     "why": "농업·토양 노출과 연관이 보고되지만 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "장 증상보다 4년 앞선 이동성 관절염, 지방변·체중 감소, 미열·전신 림프절 비대·색소 침착·인지 저하는 Whipple 병의 전신 감염 양상이다. tTG IgA 음성(총 IgA 정상)으로 셀리악병 가능성이 낮고, 생검에는 고유판의 PAS 양성 거품 대식세포가 보인다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 흡수 장애 환자가 발열·림프절 비대·관절염·신경 증상이 없고 철 결핍 빈혈·포진상 피부염이 있으며 tTG IgA 가 강양성이라면, 생검은 융모 위축·움 증식·상피내 림프구 증가(셀리악병)다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.path.whipple-disease.pas-macrophage-biopsy",
+  "distractors": {
+   "A": {
+    "tempting": "지방변·체중 감소·저알부민 — 소장 흡수 장애의 대표는 셀리악병이고, 생검의 융모 위축을 떠올린다.",
+    "answer_first": "셀리악병이면 총 IgA 정상에서 tTG IgA 가 대개 양성이다. 게다가 이 환자는 관절염이 수년 앞섰고 발열·전신 림프절 비대·인지 저하가 있다 — 장에 국한되지 않은 전신 감염(Whipple)이다.",
+    "discriminator": "「Tissue transglutaminase IgA」 음성 + 「Serum total IgA」 정상 + 이동성 관절염·림프절 비대·건망.",
+    "when_right": "tTG IgA 가 양성이고 발열·림프절 비대·신경 증상이 없으며 글루텐 제거로 좋아지는 흡수 장애일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0259",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "Irregular Giant Pulsations in the Neck, a First Heart Sound That Keeps Changing and a Pulse of 38 in a 78-Year-Old Woman Whose Monitor Shows the Rhythm Below",
+  "type": "Irregular Giant Pulsations in the Neck, a First Heart Sound That Keeps Changing and a Pulse of 38 in a 78-Year-Old Woman Whose Monitor Shows the Rhythm Below",
+  "difficulty": 3,
+  "created": "2026-11-10",
+  "vignette": "A 78-year-old woman comes to the physician because of fatigue for 2 weeks and two episodes of lightheadedness while walking. She has hypertension treated with amlodipine and takes no β-blockers, nondihydropyridine calcium-channel blockers or digoxin. Her vital signs are shown. With the patient reclining at 45 degrees, the jugular venous pressure is 7 cm H2O; at irregular intervals, a very large, abrupt outward pulsation appears in the neck, and its timing relative to the carotid pulse changes from beat to beat. The intensity of the first heart sound varies from beat to beat. The lungs are clear. There is no peripheral edema. Laboratory results are shown. A rhythm strip is shown.",
+  "question": "Which of the following best explains the intermittent giant pulsations in the neck?",
+  "options": [
+   "Regurgitation of blood into the right atrium during ventricular systole",
+   "Rapid emptying of the right atrium after the tricuspid valve opens",
+   "Impaired right ventricular filling from a stiff, noncompliant pericardium",
+   "Right atrial contraction against a closed tricuspid valve",
+   "Increased right ventricular stroke volume from prolonged diastolic filling"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 2단계 추론. ① 심전도의 방실 해리(P 와 QRS 가 무관하게 각자 규칙적) + 맥박 38 + S1 세기 변동 → 완전 방실차단. ② 심방 수축이 가끔 심실 수축기와 겹침 → 닫힌 삼첨판에 대한 우심방 수축 → 불규칙한 거대 a 파.\n- 오답감별:\n  - (A) 수축기 삼첨판 역류의 큰 v 파는 매 박동 규칙적이다 — 이 파동은 불규칙하고 경동맥과의 시점이 바뀐다.\n  - (B) 삼첨판이 열린 뒤 우심방이 빠르게 비는 것은 y 하강(수축성 심막염에서 가파름) — 솟는 파동이 아니다.\n  - (C) 굳은 심막에 의한 충만 장애는 Kussmaul 징후·가파른 y 하강을 만들고 부종·간 울혈을 동반한다 — 부종이 없고 방실 해리가 있다.\n  - (E) 긴 확장기 충만에 따른 박출량 증가는 넓은 맥압을 설명하지만, 정맥의 불규칙한 거대 파동은 설명하지 못한다.\n- 임상핵심: 불규칙한 거대 a 파 + 박동마다 바뀌는 S1 → 방실 해리(완전 방실차단): 닫힌 삼첨판에 심방이 수축한다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 252장 The Bradyarrhythmias: Disorders of the Atrioventricular Node. Costanzo Physiology, 7e.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 심전도의 방실 해리(P 와 QRS 가 무관하게 각자 규칙적) + 맥박 38 + S1 세기 변동 → 완전 방실차단. ② 심방 수축이 가끔 심실 수축기와 겹침 → 닫힌 삼첨판에 대한 우심방 수축 → 불규칙한 거대 a 파."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 수축기 삼첨판 역류의 큰 v 파는 매 박동 규칙적이다 — 이 파동은 불규칙하고 경동맥과의 시점이 바뀐다.\n(B) 삼첨판이 열린 뒤 우심방이 빠르게 비는 것은 y 하강(수축성 심막염에서 가파름) — 솟는 파동이 아니다.\n(C) 굳은 심막에 의한 충만 장애는 Kussmaul 징후·가파른 y 하강을 만들고 부종·간 울혈을 동반한다 — 부종이 없고 방실 해리가 있다.\n(E) 긴 확장기 충만에 따른 박출량 증가는 넓은 맥압을 설명하지만, 정맥의 불규칙한 거대 파동은 설명하지 못한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "불규칙한 거대 a 파 + 박동마다 바뀌는 S1 → 방실 해리(완전 방실차단): 닫힌 삼첨판에 심방이 수축한다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 252장 The Bradyarrhythmias: Disorders of the Atrioventricular Node. Costanzo Physiology, 7e."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 252장 The Bradyarrhythmias: Disorders of the Atrioventricular Node; Costanzo Physiology, 7e)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.7 °C (98.1 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "38 /min, regular"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "152/58 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum potassium",
+    "value": "4.3 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Thyroid-stimulating hormone",
+    "value": "2.0 μU/mL",
+    "ref": "0.5–4.5 μU/mL"
+   },
+   {
+    "name": "Serum troponin I",
+    "value": "< 0.01 ng/mL",
+    "ref": "< 0.04 ng/mL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "경정맥 파형 — 큰 파동의 원인\n─────────────────────────────────────────────\na 파: 심방 수축 · 거대(cannon) a 파 = 닫힌 삼첨판에 심방 수축\n  불규칙: 방실 해리(완전 방실차단, 심실빈맥) · 규칙적: 접합부 리듬(역행 P), 일부 SVT\n  지속적으로 큰 a 파(불규칙 아님): 삼첨판 협착, 폐고혈압·우심실 비대\n  a 파 없음: 심방세동\nv 파: 수축기 심방 충만 · 큰 cv 파 = 삼첨판 역류\ny 하강 가파름: 수축성 심막염 · y 하강 소실: 심장눌림증\n완전 방실차단(가역 원인 없음) → 영구 심박조율기",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 252장 The Bradyarrhythmias: Disorders of the Atrioventricular Node",
+    "Costanzo LS. Physiology, 7e. Elsevier; 2022. Cardiac cycle and venous pulse."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "완전 방실차단에서는 방실 해리로 심방 수축이 가끔 닫힌 삼첨판에 부딪히고, 그 박동에 경정맥의 거대 a 파(cannon a wave)가 생긴다.",
+   "rival": [
+    "A",
+    "E"
+   ],
+   "discriminator": "삼첨판 역류(A)의 큰 v 파는 매 박동 수축기마다 규칙적으로 나타난다. 이 파동은 불규칙하게, 경동맥 맥박과의 시점이 바뀌며 나온다 — 방실 해리다. 박출량 증가(E)는 넓은 맥압을 설명하지만 경정맥 파동은 아니다.",
+   "steps": 2,
+   "chain": [
+    "심전도: P 파와 QRS 가 서로 무관하게 각자 규칙적 + 맥박 38 + S1 세기 변동 → 방실 해리를 동반한 완전 방실차단",
+    "심방 수축이 가끔 심실 수축기(삼첨판 닫힘)와 겹침 → 불규칙한 거대 a 파"
+   ],
+   "key": [
+    {
+     "item": "심전도: P 파가 QRS 와 무관하게 더 빠르고 규칙적으로 나오며 QRS 가 분당 약 38회로 규칙적",
+     "why": "방실 해리 — 완전 방실차단",
+     "also": []
+    },
+    {
+     "item": "at irregular intervals, a very large, abrupt outward pulsation appears in the neck",
+     "why": "불규칙한 거대 a 파",
+     "also": []
+    },
+    {
+     "item": "its timing relative to the carotid pulse changes from beat to beat",
+     "why": "심방·심실 수축의 관계가 박동마다 다르다 — 방실 해리",
+     "also": []
+    },
+    {
+     "item": "The intensity of the first heart sound varies from beat to beat",
+     "why": "PR 간격이 매번 달라 판막이 닫힐 때의 위치가 다르다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "takes no β-blockers, nondihydropyridine calcium-channel blockers or digoxin",
+     "why": "약물에 의한 가역적 방실차단 가능성을 낮춘다(amlodipine 은 방실결절에 거의 영향이 없다)",
+     "also": []
+    },
+    {
+     "item": "Serum potassium",
+     "why": "4.3 — 고칼륨혈증에 의한 전도 장애 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no peripheral edema",
+     "why": "우심부전·심낭 질환(C)의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Blood pressure",
+     "why": "152/58 — 넓은 맥압은 긴 확장기 충만에 따른 박출량 증가(E 가 설명하는 소견)",
+     "also": []
+    }
+   ],
+   "summary": "심전도의 방실 해리와 맥박 38, 박동마다 바뀌는 S1 은 완전 방실차단이다. 심방 수축이 가끔 닫힌 삼첨판에 부딪힐 때 피가 경정맥으로 역류해 불규칙한 거대 a 파가 생긴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 노인이 동성 리듬이고 매 박동 수축기에 규칙적으로 커지는 경정맥 파동과 흡기 때 커지는 범수축기 잡음, 박동성 간이 있다면, 수축기 삼첨판 역류(큰 cv 파, A)다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.physio.complete-av-block.cannon-a-waves",
+  "distractors": {
+   "A": {
+    "tempting": "경정맥에 크게 솟는 파동 — 삼첨판 역류의 큰 v 파가 먼저 떠오른다.",
+    "answer_first": "삼첨판 역류의 큰 v 파는 매 수축기마다 규칙적으로 나타난다. 이 파동은 불규칙하고 경동맥과의 시점이 바뀐다 — 심방이 닫힌 판막에 부딪히는 cannon a 파다.",
+    "discriminator": "「at irregular intervals」 · 「its timing relative to the carotid pulse changes from beat to beat」 + 심전도의 방실 해리.",
+    "when_right": "동성 리듬에서 매 박동 규칙적인 큰 cv 파와 흡기 때 커지는 범수축기 잡음이 있을 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "심박이 느리면 확장기가 길어 박출량이 커진다 — 그 큰 박출이 목에서 뛰는 것 같다.",
+    "answer_first": "긴 확장기 충만에 따른 박출량 증가는 넓은 맥압(152/58)과 경동맥의 강한 박동을 설명한다. 경정맥의 불규칙한 거대 파동은 심방 수축의 시점 문제다.",
+    "discriminator": "경정맥(정맥) 파동이 「불규칙하게」 나온다 — 박출량은 매 박동 비슷하게 커야 한다.",
+    "when_right": "",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG cavb · 38 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,90.0 0.6,90.0 1.2,90.0 1.8,90.0 2.4,90.0 3.0,90.0 3.6,90.0 4.2,90.0 4.8,90.0 5.4,90.0 6.0,90.0 6.6,90.0 7.2,90.0 7.8,90.0 8.4,90.0 9.0,90.0 9.6,90.0 10.2,90.0 10.8,90.0 11.4,90.0 12.0,90.0 12.6,90.0 13.2,90.0 13.8,90.0 14.4,90.0 15.0,90.0 15.6,90.0 16.2,90.0 16.8,90.0 17.4,90.0 18.0,90.0 18.6,90.0 19.2,90.0 19.8,90.0 20.4,90.0 21.0,90.0 21.6,90.0 22.2,90.0 22.8,90.0 23.4,90.0 24.0,90.0 24.6,89.9 25.2,89.9 25.8,89.9 26.4,89.8 27.0,89.7 27.6,89.6 28.2,89.4 28.8,89.2 29.4,88.9 30.0,88.5 30.6,88.1 31.2,87.7 31.8,87.1 32.4,86.6 33.0,85.9 33.6,85.3 34.2,84.7 34.8,84.1 35.4,83.6 36.0,83.2 36.6,83.0 37.2,82.8 37.8,82.8 38.4,83.0 39.0,83.2 39.6,83.6 40.2,84.1 40.8,84.7 41.4,85.3 42.0,85.9 42.6,86.6 43.2,87.1 43.8,87.7 44.4,88.1 45.0,88.5 45.6,88.9 46.2,89.2 46.8,89.4 47.4,89.6 48.0,89.7 48.6,89.8 49.2,89.9 49.8,89.9 50.4,89.9 51.0,90.0 51.6,90.0 52.2,90.0 52.8,90.0 53.4,90.0 54.0,90.0 54.6,90.0 55.2,90.0 55.8,90.0 56.4,90.0 57.0,90.0 57.6,90.0 58.2,90.0 58.8,90.0 59.4,90.0 60.0,89.9 60.6,89.9 61.2,89.9 61.8,89.8 62.4,89.8 63.0,89.7 63.6,89.6 64.2,89.4 64.8,89.2 65.4,89.0 66.0,88.6 66.6,88.2 67.2,87.7 67.8,87.0 68.4,86.2 69.0,85.2 69.6,84.1 70.2,82.7 70.8,81.0 71.4,79.2 72.0,77.0 72.6,74.6 73.2,72.0 73.8,69.0 74.4,65.9 75.0,62.5 75.6,59.0 76.2,55.5 76.8,51.8 77.4,48.2 78.0,44.8 78.6,41.5 79.2,38.5 79.8,35.9 80.4,33.7 81.0,32.0 81.6,30.8 82.2,30.3 82.8,30.3 83.4,30.9 84.0,32.1 84.6,33.9 85.2,36.2 85.8,38.9 86.4,42.0 87.0,45.4 87.6,49.0 88.2,52.7 88.8,56.5 89.4,60.3 90.0,63.9 90.6,67.5 91.2,70.9 91.8,74.1 92.4,77.0 93.0,79.7 93.6,82.2 94.2,84.5 94.8,86.5 95.4,88.4 96.0,90.0 96.6,91.6 97.2,92.9 97.8,94.2 98.4,95.4 99.0,96.5 99.6,97.5 100.2,98.6 100.8,99.6 101.4,100.5 102.0,101.5 102.6,102.5 103.2,103.4 103.8,104.4 104.4,105.4 105.0,106.3 105.6,107.3 106.2,108.2 106.8,109.1 107.4,110.0 108.0,110.9 108.6,111.8 109.2,112.5 109.8,113.3 110.4,114.0 111.0,114.6 111.6,115.2 112.2,115.7 112.8,116.1 113.4,116.5 114.0,116.7 114.6,116.9 115.2,117.0 115.8,117.0 116.4,116.9 117.0,116.7 117.6,116.5 118.2,116.1 118.8,115.7 119.4,115.2 120.0,114.6 120.6,114.0 121.2,113.3 121.8,112.5 122.4,111.7 123.0,110.9 123.6,110.0 124.2,109.1 124.8,108.2 125.4,107.2 126.0,106.2 126.6,105.2 127.2,104.2 127.8,103.1 128.4,102.0 129.0,100.9 129.6,99.7 130.2,98.5 130.8,97.3 131.4,96.1 132.0,94.8 132.6,93.5 133.2,92.3 133.8,91.0 134.4,89.9 135.0,88.8 135.6,87.8 136.2,87.0 136.8,86.3 137.4,85.9 138.0,85.6 138.6,85.4 139.2,85.5 139.8,85.7 140.4,85.9 141.0,86.3 141.6,86.8 142.2,87.2 142.8,87.7 143.4,88.1 144.0,88.5 144.6,88.9 145.2,89.2 145.8,89.4 146.4,89.6 147.0,89.7 147.6,89.9 148.2,89.9 148.8,90.0 149.4,90.0 150.0,90.0 150.6,89.9 151.2,90.0 151.8,90.0 152.4,90.0 153.0,90.0 153.6,90.0 154.2,90.0 154.8,90.0 155.4,90.0 156.0,90.0 156.6,90.0 157.2,90.0 157.8,90.0 158.4,90.0 159.0,90.0 159.6,90.0 160.2,90.0 160.8,90.0 161.4,90.0 162.0,90.0 162.6,90.0 163.2,90.0 163.8,90.0 164.4,90.0 165.0,90.0 165.6,90.0 166.2,90.0 166.8,90.0 167.4,90.0 168.0,90.0 168.6,90.0 169.2,90.0 169.8,90.0 170.4,90.0 171.0,90.0 171.6,90.0 172.2,90.0 172.8,90.0 173.4,90.0 174.0,90.0 174.6,90.0 175.2,90.0 175.8,90.0 176.4,90.0 177.0,90.0 177.6,90.0 178.2,90.0 178.8,90.0 179.4,90.0 180.0,90.0 180.6,90.0 181.2,90.0 181.8,90.0 182.4,90.0 183.0,90.0 183.6,90.0 184.2,90.0 184.8,90.0 185.4,90.0 186.0,90.0 186.6,90.0 187.2,90.0 187.8,90.0 188.4,90.0 189.0,90.0 189.6,90.0 190.2,90.0 190.8,90.0 191.4,90.0 192.0,90.0 192.6,90.0 193.2,90.0 193.8,90.0 194.4,90.0 195.0,90.0 195.6,90.0 196.2,90.0 196.8,90.0 197.4,90.0 198.0,90.0 198.6,90.0 199.2,90.0 199.8,90.0 200.4,90.0 201.0,90.0 201.6,90.0 202.2,90.0 202.8,90.0 203.4,90.0 204.0,90.0 204.6,90.0 205.2,90.0 205.8,90.0 206.4,90.0 207.0,90.0 207.6,90.0 208.2,90.0 208.8,90.0 209.4,90.0 210.0,90.0 210.6,90.0 211.2,90.0 211.8,90.0 212.4,90.0 213.0,90.0 213.6,90.0 214.2,90.0 214.8,90.0 215.4,90.0 216.0,90.0 216.6,90.0 217.2,90.0 217.8,90.0 218.4,90.0 219.0,90.0 219.6,90.0 220.2,90.0 220.8,90.0 221.4,90.0 222.0,90.0 222.6,90.0 223.2,90.0 223.8,90.0 224.4,89.9 225.0,89.9 225.6,89.9 226.2,89.8 226.8,89.7 227.4,89.6 228.0,89.4 228.6,89.2 229.2,89.0 229.8,88.7 230.4,88.3 231.0,87.8 231.6,87.3 232.2,86.8 232.8,86.2 233.4,85.5 234.0,84.9 234.6,84.3 235.2,83.8 235.8,83.4 236.4,83.0 237.0,82.9 237.6,82.8 238.2,82.9 238.8,83.1 239.4,83.5 240.0,84.0 240.6,84.5 241.2,85.1 241.8,85.7 242.4,86.4 243.0,86.9 243.6,87.5 244.2,88.0 244.8,88.4 245.4,88.8 246.0,89.1 246.6,89.3 247.2,89.5 247.8,89.6 248.4,89.8 249.0,89.8 249.6,89.9 250.2,89.9 250.8,90.0 251.4,90.0 252.0,90.0 252.6,90.0 253.2,90.0 253.8,90.0 254.4,90.0 255.0,90.0 255.6,90.0 256.2,90.0 256.8,90.0 257.4,90.0 258.0,90.0 258.6,90.0 259.2,90.0 259.8,90.0 260.4,90.0 261.0,90.0 261.6,90.0 262.2,90.0 262.8,90.0 263.4,90.0 264.0,90.0 264.6,90.0 265.2,90.0 265.8,90.0 266.4,90.0 267.0,90.0 267.6,90.0 268.2,90.0 268.8,90.0 269.4,90.0 270.0,90.0 270.6,90.0 271.2,90.0 271.8,90.0 272.4,90.0 273.0,90.0 273.6,90.0 274.2,90.0 274.8,90.0 275.4,90.0 276.0,90.0 276.6,90.0 277.2,90.0 277.8,90.0 278.4,90.0 279.0,90.0 279.6,90.0 280.2,90.0 280.8,90.0 281.4,90.0 282.0,90.0 282.6,90.0 283.2,90.0 283.8,90.0 284.4,90.0 285.0,90.0 285.6,90.0 286.2,90.0 286.8,90.0 287.4,90.0 288.0,90.0 288.6,90.0 289.2,90.0 289.8,90.0 290.4,90.0 291.0,90.0 291.6,90.0 292.2,90.0 292.8,90.0 293.4,90.0 294.0,90.0 294.6,90.0 295.2,90.0 295.8,90.0 296.4,90.0 297.0,89.9 297.6,89.9 298.2,89.9 298.8,89.8 299.4,89.8 300.0,89.7 300.6,89.5 301.2,89.4 301.8,89.2 302.4,88.9 303.0,88.5 303.6,88.1 304.2,87.5 304.8,86.8 305.4,86.0 306.0,84.9 306.6,83.7 307.2,82.3 307.8,80.6 308.4,78.6 309.0,76.4 309.6,73.9 310.2,71.2 310.8,68.2 311.4,65.0 312.0,61.6 312.6,58.1 313.2,54.5 313.8,50.9 314.4,47.3 315.0,43.9 315.6,40.7 316.2,37.8 316.8,35.2 317.4,33.2 318.0,31.6 318.6,30.6 319.2,30.2 319.8,30.4 320.4,31.2 321.0,32.6 321.6,34.5 322.2,36.9 322.8,39.7 323.4,42.8 324.0,46.3 324.6,49.9 325.2,53.6 325.8,57.3 326.4,61.0 327.0,64.6 327.6,68.0 328.2,71.1 328.8,74.0 329.4,76.6 330.0,79.0 330.6,81.0 331.2,82.7 331.8,84.2 332.4,85.4 333.0,86.4 333.6,87.2 334.2,88.0 334.8,88.7 335.4,89.3 336.0,90.0 336.6,90.8 337.2,91.6 337.8,92.6 338.4,93.8 339.0,95.0 339.6,96.4 340.2,97.8 340.8,99.4 341.4,100.9 342.0,102.5 342.6,104.1 343.2,105.6 343.8,107.0 344.4,108.4 345.0,109.7 345.6,110.8 346.2,111.9 346.8,112.9 347.4,113.7 348.0,114.5 348.6,115.1 349.2,115.7 349.8,116.1 350.4,116.5 351.0,116.7 351.6,116.9 352.2,117.0 352.8,117.0 353.4,116.9 354.0,116.7 354.6,116.4 355.2,116.0 355.8,115.6 356.4,115.1 357.0,114.5 357.6,113.8 358.2,113.1 358.8,112.3 359.4,111.5 360.0,110.7 360.6,109.8 361.2,108.9 361.8,108.0 362.4,107.1 363.0,106.1 363.6,105.2 364.2,104.3 364.8,103.4 365.4,102.5 366.0,101.6 366.6,100.7 367.2,99.9 367.8,99.1 368.4,98.4 369.0,97.7 369.6,97.0 370.2,96.4 370.8,95.8 371.4,95.2 372.0,94.7 372.6,94.2 373.2,93.8 373.8,93.3 374.4,93.0 375.0,92.6 375.6,92.3 376.2,92.0 376.8,91.8 377.4,91.6 378.0,91.4 378.6,91.2 379.2,91.0 379.8,90.9 380.4,90.8 381.0,90.7 381.6,90.6 382.2,90.5 382.8,90.4 383.4,90.3 384.0,90.3 384.6,90.2 385.2,90.2 385.8,90.2 386.4,90.1 387.0,90.0 387.6,90.0 388.2,90.0 388.8,90.0 389.4,90.0 390.0,90.0 390.6,90.0 391.2,90.0 391.8,90.0 392.4,90.0 393.0,90.0 393.6,90.0 394.2,90.0 394.8,90.0 395.4,90.0 396.0,90.0 396.6,90.0 397.2,90.0 397.8,90.0 398.4,90.0 399.0,90.0 399.6,90.0 400.2,90.0 400.8,90.0 401.4,90.0 402.0,90.0 402.6,90.0 403.2,90.0 403.8,90.0 404.4,90.0 405.0,90.0 405.6,90.0 406.2,90.0 406.8,90.0 407.4,90.0 408.0,90.0 408.6,90.0 409.2,90.0 409.8,90.0 410.4,90.0 411.0,90.0 411.6,90.0 412.2,90.0 412.8,90.0 413.4,90.0 414.0,90.0 414.6,90.0 415.2,90.0 415.8,90.0 416.4,90.0 417.0,90.0 417.6,90.0 418.2,90.0 418.8,90.0 419.4,90.0 420.0,90.0 420.6,90.0 421.2,90.0 421.8,90.0 422.4,90.0 423.0,90.0 423.6,90.0 424.2,90.0 424.8,89.9 425.4,89.9 426.0,89.8 426.6,89.8 427.2,89.6 427.8,89.5 428.4,89.3 429.0,89.1 429.6,88.8 430.2,88.4 430.8,88.0 431.4,87.5 432.0,86.9 432.6,86.4 433.2,85.7 433.8,85.1 434.4,84.5 435.0,84.0 435.6,83.5 436.2,83.1 436.8,82.9 437.4,82.8 438.0,82.9 438.6,83.0 439.2,83.4 439.8,83.8 440.4,84.3 441.0,84.9 441.6,85.5 442.2,86.2 442.8,86.8 443.4,87.3 444.0,87.8 444.6,88.3 445.2,88.7 445.8,89.0 446.4,89.2 447.0,89.4 447.6,89.6 448.2,89.7 448.8,89.8 449.4,89.9 450.0,89.9 450.6,89.9 451.2,90.0 451.8,90.0 452.4,90.0 453.0,90.0 453.6,90.0 454.2,90.0 454.8,90.0 455.4,90.0 456.0,90.0 456.6,90.0 457.2,90.0 457.8,90.0 458.4,90.0 459.0,90.0 459.6,90.0 460.2,90.0 460.8,90.0 461.4,90.0 462.0,90.0 462.6,90.0 463.2,90.0 463.8,90.0 464.4,90.0 465.0,90.0 465.6,90.0 466.2,90.0 466.8,90.0 467.4,90.0 468.0,90.0 468.6,90.0 469.2,90.0 469.8,90.0 470.4,90.0 471.0,90.0 471.6,90.0 472.2,90.0 472.8,90.0 473.4,90.0 474.0,90.0 474.6,90.0 475.2,90.0 475.8,90.0 476.4,90.0 477.0,90.0 477.6,90.0 478.2,90.0 478.8,90.0 479.4,90.0 480.0,90.0 480.6,90.0 481.2,90.0 481.8,90.0 482.4,90.0 483.0,90.0 483.6,90.0 484.2,90.0 484.8,90.0 485.4,90.0 486.0,90.0 486.6,90.0 487.2,90.0 487.8,90.0 488.4,90.0 489.0,90.0 489.6,90.0 490.2,90.0 490.8,90.0 491.4,90.0 492.0,90.0 492.6,90.0 493.2,90.0 493.8,90.0 494.4,90.0 495.0,90.0 495.6,90.0 496.2,90.0 496.8,90.0 497.4,90.0 498.0,90.0 498.6,90.0 499.2,90.0 499.8,90.0 500.4,90.0 501.0,90.0 501.6,90.0 502.2,90.0 502.8,90.0 503.4,90.0 504.0,90.0 504.6,90.0 505.2,90.0 505.8,90.0 506.4,90.0 507.0,90.0 507.6,90.0 508.2,90.0 508.8,90.0 509.4,90.0 510.0,90.0 510.6,90.0 511.2,90.0 511.8,90.0 512.4,90.0 513.0,90.0 513.6,90.0 514.2,90.0 514.8,90.0 515.4,90.0 516.0,90.0 516.6,90.0 517.2,90.0 517.8,90.0 518.4,90.0 519.0,90.0 519.6,90.0 520.2,90.0 520.8,90.0 521.4,90.0 522.0,90.0 522.6,90.0 523.2,90.0 523.8,90.0 524.4,89.9 525.0,89.9 525.6,89.9 526.2,89.8 526.8,89.7 527.4,89.6 528.0,89.4 528.6,89.2 529.2,89.0 529.8,88.7 530.4,88.3 531.0,87.8 531.6,87.3 532.2,86.7 532.8,86.1 533.4,85.5 534.0,84.8 534.6,84.2 535.2,83.7 535.8,83.2 536.4,82.8 537.0,82.5 537.6,82.3 538.2,82.2 538.8,82.2 539.4,82.3 540.0,82.4 540.6,82.5 541.2,82.5 541.8,82.3 542.4,82.1 543.0,81.6 543.6,80.8 544.2,79.8 544.8,78.5 545.4,76.8 546.0,74.9 546.6,72.6 547.2,70.0 547.8,67.1 548.4,63.9 549.0,60.6 549.6,57.0 550.2,53.5 550.8,49.9 551.4,46.4 552.0,43.0 552.6,39.9 553.2,37.1 553.8,34.6 554.4,32.7 555.0,31.3 555.6,30.4 556.2,30.2 556.8,30.5 557.4,31.5 558.0,33.0 558.6,35.1 559.2,37.6 559.8,40.5 560.4,43.8 561.0,47.3 561.6,50.9 562.2,54.7 562.8,58.5 563.4,62.2 564.0,65.8 564.6,69.3 565.2,72.6 565.8,75.6 566.4,78.5 567.0,81.1 567.6,83.4 568.2,85.6 568.8,87.5 569.4,89.3 570.0,90.9 570.6,92.3 571.2,93.6 571.8,94.8 572.4,96.0 573.0,97.0 573.6,98.1 574.2,99.1 574.8,100.1 575.4,101.1 576.0,102.0 576.6,103.0 577.2,103.9 577.8,104.9 578.4,105.9 579.0,106.8 579.6,107.8 580.2,108.7 580.8,109.6 581.4,110.5 582.0,111.4 582.6,112.2 583.2,113.0 583.8,113.7 584.4,114.3 585.0,114.9 585.6,115.5 586.2,115.9 586.8,116.3 587.4,116.6 588.0,116.8 588.6,117.0 589.2,117.0 589.8,117.0 590.4,116.8 591.0,116.6 591.6,116.3 592.2,115.9 592.8,115.4 593.4,114.9 594.0,114.3 594.6,113.6 595.2,112.9 595.8,112.1 596.4,111.3 597.0,110.5 597.6,109.6 598.2,108.7 598.8,107.8 599.4,106.8 600.0,105.9 600.6,105.0 601.2,104.0 601.8,103.1 602.4,102.2 603.0,101.4 603.6,100.5 604.2,99.7 604.8,98.9 605.4,98.2 606.0,97.5 606.6,96.8 607.2,96.2 607.8,95.6 608.4,95.1 609.0,94.5 609.6,94.1 610.2,93.6 610.8,93.2 611.4,92.9 612.0,92.5 612.6,92.2 613.2,92.0 613.8,91.7 614.4,91.5 615.0,91.3 615.6,91.1 616.2,91.0 616.8,90.8 617.4,90.7 618.0,90.6 618.6,90.5 619.2,90.5 619.8,90.4 620.4,90.3 621.0,90.3 621.6,90.2 622.2,90.2 622.8,90.1 623.4,90.1 624.0,90.0 624.6,89.9 625.2,89.9 625.8,89.9 626.4,89.8 627.0,89.7 627.6,89.6 628.2,89.4 628.8,89.2 629.4,88.9 630.0,88.5 630.6,88.1 631.2,87.7 631.8,87.1 632.4,86.6 633.0,85.9 633.6,85.3 634.2,84.7 634.8,84.1 635.4,83.6 636.0,83.2 636.6,83.0 637.2,82.8 637.8,82.8 638.4,83.0 639.0,83.2 639.6,83.6 640.2,84.1 640.8,84.7 641.4,85.3 642.0,85.9 642.6,86.6 643.2,87.1 643.8,87.7 644.4,88.1 645.0,88.5 645.6,88.9 646.2,89.2 646.8,89.4 647.4,89.6 648.0,89.7 648.6,89.8 649.2,89.9 649.8,89.9 650.4,89.9 651.0,90.0 651.6,90.0 652.2,90.0 652.8,90.0 653.4,90.0 654.0,90.0 654.6,90.0 655.2,90.0 655.8,90.0 656.4,90.0 657.0,90.0 657.6,90.0 658.2,90.0 658.8,90.0 659.4,90.0 660.0,90.0 660.6,90.0 661.2,90.0 661.8,90.0 662.4,90.0 663.0,90.0 663.6,90.0 664.2,90.0 664.8,90.0 665.4,90.0 666.0,90.0 666.6,90.0 667.2,90.0 667.8,90.0 668.4,90.0 669.0,90.0 669.6,90.0 670.2,90.0 670.8,90.0 671.4,90.0 672.0,90.0 672.6,90.0 673.2,90.0 673.8,90.0 674.4,90.0 675.0,90.0 675.6,90.0 676.2,90.0 676.8,90.0 677.4,90.0 678.0,90.0 678.6,90.0 679.2,90.0 679.8,90.0 680.4,90.0 681.0,90.0 681.6,90.0 682.2,90.0 682.8,90.0 683.4,90.0 684.0,90.0 684.6,90.0 685.2,90.0 685.8,90.0 686.4,90.0 687.0,90.0 687.6,90.0 688.2,90.0 688.8,90.0 689.4,90.0 690.0,90.0 690.6,90.0 691.2,90.0 691.8,90.0 692.4,90.0 693.0,90.0 693.6,90.0 694.2,90.0 694.8,90.0 695.4,90.0 696.0,90.0 696.6,90.0 697.2,90.0 697.8,90.0 698.4,90.0 699.0,90.0 699.6,90.0 700.2,90.0 700.8,90.0 701.4,90.0 702.0,90.0 702.6,90.0 703.2,90.0 703.8,90.0 704.4,90.0 705.0,90.0 705.6,90.0 706.2,90.0 706.8,90.0 707.4,90.0 708.0,90.0 708.6,90.0 709.2,90.0 709.8,90.0 710.4,90.0 711.0,90.0 711.6,90.0 712.2,90.0 712.8,90.0 713.4,90.0 714.0,90.0 714.6,90.0 715.2,90.0 715.8,90.0 716.4,90.0 717.0,90.0 717.6,90.0 718.2,90.0 718.8,90.0 719.4,90.0 720.0,90.0 720.6,90.0 721.2,90.0 721.8,90.0 722.4,90.0 723.0,90.0 723.6,90.0 724.2,90.0 724.8,89.9 725.4,89.9 726.0,89.8 726.6,89.8 727.2,89.6 727.8,89.5 728.4,89.3 729.0,89.1 729.6,88.8 730.2,88.4 730.8,88.0 731.4,87.5 732.0,86.9 732.6,86.4 733.2,85.7 733.8,85.1 734.4,84.5 735.0,84.0 735.6,83.5 736.2,83.1 736.8,82.9 737.4,82.8 738.0,82.9 738.6,83.0 739.2,83.4 739.8,83.8 740.4,84.3 741.0,84.9 741.6,85.5 742.2,86.2 742.8,86.8 743.4,87.3 744.0,87.8 744.6,88.3 745.2,88.7 745.8,89.0 746.4,89.2 747.0,89.4 747.6,89.6 748.2,89.7 748.8,89.8 749.4,89.9 750.0,89.9 750.6,89.9 751.2,90.0 751.8,90.0 752.4,90.0 753.0,90.0 753.6,90.0 754.2,90.0 754.8,90.0 755.4,90.0 756.0,90.0 756.6,90.0 757.2,90.0 757.8,90.0 758.4,90.0 759.0,90.0 759.6,90.0 760.2,90.0 760.8,90.0 761.4,90.0 762.0,90.0 762.6,90.0 763.2,90.0 763.8,90.0 764.4,90.0 765.0,90.0 765.6,90.0 766.2,90.0 766.8,90.0 767.4,90.0 768.0,90.0 768.6,90.0 769.2,90.0 769.8,90.0 770.4,90.0 771.0,89.9 771.6,89.9 772.2,89.9 772.8,89.8 773.4,89.7 774.0,89.6 774.6,89.5 775.2,89.3 775.8,89.0 776.4,88.7 777.0,88.3 777.6,87.8 778.2,87.2 778.8,86.4 779.4,85.4 780.0,84.3 780.6,83.0 781.2,81.4 781.8,79.6 782.4,77.5 783.0,75.2 783.6,72.5 784.2,69.7 784.8,66.6 785.4,63.3 786.0,59.8 786.6,56.2 787.2,52.6 787.8,49.0 788.4,45.5 789.0,42.2 789.6,39.1 790.2,36.4 790.8,34.1 791.4,32.3 792.0,31.0 792.6,30.3 793.2,30.2 793.8,30.7 794.4,31.8 795.0,33.5 795.6,35.7 796.2,38.3 796.8,41.3 797.4,44.7 798.0,48.2 798.6,51.9 799.2,55.7 799.8,59.5 800.4,63.2 801.0,66.8 801.6,70.2 802.2,73.4 802.8,76.4 803.4,79.2 804.0,81.7 804.6,84.0 805.2,86.1 805.8,88.0 806.4,89.7 807.0,91.2 807.6,92.6 808.2,93.9 808.8,95.1 809.4,96.3 810.0,97.3 810.6,98.4 811.2,99.4 811.8,100.3 812.4,101.3 813.0,102.3 813.6,103.2 814.2,104.2 814.8,105.2 815.4,106.1 816.0,107.1 816.6,108.0 817.2,108.9 817.8,109.9 818.4,110.7 819.0,111.6 819.6,112.4 820.2,113.1 820.8,113.9 821.4,114.5 822.0,115.1 822.6,115.6 823.2,116.0 823.8,116.4 824.4,116.6 825.0,116.8 825.6,116.8 826.2,116.8 826.8,116.6 827.4,116.4 828.0,116.0 828.6,115.4 829.2,114.8 829.8,114.0 830.4,113.0 831.0,112.0 831.6,110.8 832.2,109.5 832.8,108.1 833.4,106.6 834.0,105.1 834.6,103.7 835.2,102.2 835.8,100.9 836.4,99.6 837.0,98.5 837.6,97.5 838.2,96.7 838.8,96.0 839.4,95.5 840.0,95.1 840.6,94.8 841.2,94.6 841.8,94.5 842.4,94.4 843.0,94.3 843.6,94.1 844.2,94.0 844.8,93.9 845.4,93.7 846.0,93.5 846.6,93.3 847.2,93.0 847.8,92.8 848.4,92.5 849.0,92.3 849.6,92.1 850.2,91.8 850.8,91.6 851.4,91.4 852.0,91.2 852.6,91.1 853.2,90.9 853.8,90.8 854.4,90.7 855.0,90.6 855.6,90.5 856.2,90.4 856.8,90.4 857.4,90.3 858.0,90.3 858.6,90.2 859.2,90.2 859.8,90.2 860.4,90.1 861.0,90.0 861.6,90.0 862.2,90.0 862.8,90.0 863.4,90.0 864.0,90.0 864.6,90.0 865.2,90.0 865.8,90.0 866.4,90.0 867.0,90.0 867.6,90.0 868.2,90.0 868.8,90.0 869.4,90.0 870.0,90.0 870.6,90.0 871.2,90.0 871.8,90.0 872.4,90.0 873.0,90.0 873.6,90.0 874.2,90.0 874.8,90.0 875.4,90.0 876.0,90.0 876.6,90.0 877.2,90.0 877.8,90.0 878.4,90.0 879.0,90.0 879.6,90.0 880.2,90.0 880.8,90.0 881.4,90.0 882.0,90.0 882.6,90.0 883.2,90.0 883.8,90.0 884.4,90.0 885.0,90.0 885.6,90.0 886.2,90.0 886.8,90.0 887.4,90.0 888.0,90.0 888.6,90.0 889.2,90.0 889.8,90.0 890.4,90.0 891.0,90.0 891.6,90.0 892.2,90.0 892.8,90.0 893.4,90.0 894.0,90.0 894.6,90.0 895.2,90.0 895.8,90.0 896.4,90.0 897.0,90.0 897.6,90.0 898.2,90.0 898.8,90.0 899.4,90.0 900.0,90.0\"/><text class=\"cap\" x=\"4\" y=\"193\">cavb · 38 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0260",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "A Calcium of 10.9 on Routine Labs in a Well 34-Year-Old Woman Whose Father's Calcium Stayed High After Neck Surgery",
+  "type": "A Calcium of 10.9 on Routine Labs in a Well 34-Year-Old Woman Whose Father's Calcium Stayed High After Neck Surgery",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 34-year-old woman comes to the physician because her calcium level was high on laboratory studies obtained for a life insurance application; a measurement 1 year ago was 10.8 mg/dL. She feels well. She has had no kidney stones, fractures, abdominal pain, constipation, polyuria or mood changes. She takes no medications or supplements, including thiazides, lithium, or calcium or vitamin D tablets. Her father has had a \"high calcium level\" for as long as he can remember; he underwent neck surgery at age 45 years for a presumed parathyroid tumor, and his calcium level did not change afterward. Her vital signs are shown. There is no neck mass. Physical examination shows no abnormalities. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate next step in evaluation?",
+  "options": [
+   "Technetium-99m sestamibi scan of the neck",
+   "Dual-energy x-ray absorptiometry of the spine and hip",
+   "Serum parathyroid hormone–related protein measurement",
+   "Referral to an endocrine surgeon for parathyroidectomy",
+   "Measurement of 24-hour urine calcium and creatinine"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계 추론. ① 칼슘 10.9(알부민 정상) + PTH 58 → PTH 의존성 고칼슘혈증. ② 젊고 무증상·수년간 같은 값 + 아버지의 평생 고칼슘·수술 무효 + 마그네슘 약간 높음 → FHH 가능성. ③ 비타민 D 충분·thiazide·리튬 없음 → 24시간 소변 칼슘/크레아티닌으로 청소율 비를 구해 가른다(< 0.01 FHH) — 영상·수술은 그 뒤.\n- 오답감별:\n  - (A) sestamibi 는 원발성 부갑상선기능항진증으로 수술을 정한 뒤 위치를 찾는 검사다 — 진단 검사가 아니다.\n  - (B) DXA 는 원발성 부갑상선기능항진증의 수술 적응을 정할 때 쓴다 — FHH 를 가르지 못한다.\n  - (C) PTHrP 는 PTH 가 억제된 고칼슘혈증(악성 종양)에서 잰다 — 이 환자는 PTH 가 억제되지 않았다.\n  - (D) FHH 라면 수술이 칼슘을 낮추지 못한다(아버지의 경과) — 진단 확정 전 수술은 이르다.\n- 임상핵심: 고칼슘 + PTH 억제 안 됨 + 가족력·무증상 → 영상·수술 전에 24시간 소변 Ca/Cr 청소율 비(< 0.01 = FHH).\n- 출처: Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis. Fifth International Workshop on Primary Hyperparathyroidism(J Bone Miner Res 2022).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 칼슘 10.9(알부민 정상) + PTH 58 → PTH 의존성 고칼슘혈증. ② 젊고 무증상·수년간 같은 값 + 아버지의 평생 고칼슘·수술 무효 + 마그네슘 약간 높음 → FHH 가능성. ③ 비타민 D 충분·thiazide·리튬 없음 → 24시간 소변 칼슘/크레아티닌으로 청소율 비를 구해 가른다(< 0.01 FHH) — 영상·수술은 그 뒤."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) sestamibi 는 원발성 부갑상선기능항진증으로 수술을 정한 뒤 위치를 찾는 검사다 — 진단 검사가 아니다.\n(B) DXA 는 원발성 부갑상선기능항진증의 수술 적응을 정할 때 쓴다 — FHH 를 가르지 못한다.\n(C) PTHrP 는 PTH 가 억제된 고칼슘혈증(악성 종양)에서 잰다 — 이 환자는 PTH 가 억제되지 않았다.\n(D) FHH 라면 수술이 칼슘을 낮추지 못한다(아버지의 경과) — 진단 확정 전 수술은 이르다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "고칼슘 + PTH 억제 안 됨 + 가족력·무증상 → 영상·수술 전에 24시간 소변 Ca/Cr 청소율 비(< 0.01 = FHH)."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis. Fifth International Workshop on Primary Hyperparathyroidism(J Bone Miner Res 2022)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis; Fifth International Workshop on Primary Hyperparathyroidism, J Bone Miner Res 2022)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "72 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "14 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "118/74 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum calcium",
+    "value": "10.9 mg/dL",
+    "ref": "8.6–10.2 mg/dL"
+   },
+   {
+    "name": "Serum albumin",
+    "value": "4.3 g/dL",
+    "ref": "3.5–5.5 g/dL"
+   },
+   {
+    "name": "Serum phosphorus",
+    "value": "2.7 mg/dL",
+    "ref": "2.5–4.5 mg/dL"
+   },
+   {
+    "name": "Serum magnesium",
+    "value": "2.5 mg/dL",
+    "ref": "1.7–2.4 mg/dL"
+   },
+   {
+    "name": "Serum parathyroid hormone (intact)",
+    "value": "58 pg/mL",
+    "ref": "10–65 pg/mL"
+   },
+   {
+    "name": "Serum 25-hydroxyvitamin D",
+    "value": "34 ng/mL",
+    "ref": "30–100 ng/mL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "0.8 mg/dL",
+    "ref": "0.6–1.1 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "PTH 의존성 고칼슘혈증 — 다음 검사\n─────────────────────────────────────────────\n칼슘 ↑ + PTH 정상–높음 → 25-OH 비타민 D 확인(결핍이면 보충 뒤 재평가)·thiazide/리튬 중단 여부\n24시간 소변 칼슘·크레아티닌 → Ca/Cr 청소율 비 = (U_Ca × S_Cr) / (S_Ca × U_Cr)\n  < 0.01 → FHH 가능성 높음 → CASR 유전자 검사·가족 검사, 수술하지 않는다\n  > 0.02 → 원발성 부갑상선기능항진증 · 0.01–0.02 → 유전자 검사 고려\n원발성 확정 → 수술 적응 평가(증상, 칼슘 > 상한+1, 나이 < 50, DXA 골다공증, 결석·고칼슘뇨, eGFR < 60)\n  → 수술 결정 뒤 위치 영상(sestamibi, 초음파, 4D-CT)",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis",
+    "Bilezikian JP, et al. Evaluation and Management of Primary Hyperparathyroidism: Summary Statement and Guidelines from the Fifth International Workshop. J Bone Miner Res. 2022."
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "PTH 가 억제되지 않은 무증상 고칼슘혈증에서 가족력(수술로 낫지 않은 고칼슘혈증)이 있으면, 위치 영상·수술 전에 24시간 소변 칼슘/크레아티닌 청소율 비로 FHH 를 가려야 한다.",
+   "rival": [
+    "A",
+    "D"
+   ],
+   "discriminator": "sestamibi(A)·부갑상선 절제술(D)은 원발성 부갑상선기능항진증이 확정된 뒤의 단계다. 아버지가 수술 뒤에도 고칼슘혈증이 그대로였다는 가족력과 높은 마그네슘은 수술이 듣지 않는 FHH 를 먼저 배제하라는 신호다.",
+   "steps": 3,
+   "chain": [
+    "칼슘 10.9(알부민 정상) + PTH 58(억제 안 됨) → PTH 의존성 고칼슘혈증",
+    "젊고 무증상·수년간 같은 값 + 아버지의 평생 고칼슘·수술 무효 + 마그네슘 약간 높음 → 가족성 저칼슘뇨 고칼슘혈증 가능성",
+    "비타민 D 충분·thiazide·리튬 없음 → 24시간 소변 칼슘/크레아티닌 청소율 비로 가른다(< 0.01 FHH) — 영상·수술은 그 뒤"
+   ],
+   "key": [
+    {
+     "item": "Serum calcium",
+     "why": "10.9 — 알부민 정상이라 실제 고칼슘혈증",
+     "also": []
+    },
+    {
+     "item": "Serum parathyroid hormone (intact)",
+     "why": "58 — 고칼슘에서 억제되지 않음: PTH 의존성",
+     "also": []
+    },
+    {
+     "item": "he underwent neck surgery at age 45 years for a presumed parathyroid tumor, and his calcium level did not change afterward",
+     "why": "수술이 듣지 않은 가족성 고칼슘혈증 — FHH 를 시사",
+     "also": []
+    },
+    {
+     "item": "a measurement 1 year ago was 10.8 mg/dL",
+     "why": "수년간 같은 값·무증상 — FHH 의 경과와 맞다",
+     "also": []
+    },
+    {
+     "item": "Serum magnesium",
+     "why": "2.5 — 약간 높다: FHH 에서 흔하다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Serum 25-hydroxyvitamin D",
+     "why": "34 — 충분해 소변 칼슘이 낮게 나와도 비타민 D 결핍 탓이 아니다(청소율 비 해석 가능)",
+     "also": []
+    },
+    {
+     "item": "She takes no medications or supplements, including thiazides, lithium, or calcium or vitamin D tablets",
+     "why": "thiazide·리튬은 소변 칼슘을 낮추거나 PTH 를 올려 해석을 흐린다 — 없으므로 검사가 유효하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has had no kidney stones, fractures, abdominal pain, constipation, polyuria or mood changes",
+     "why": "무증상 — 원발성이라도 수술 적응을 정하는 정보(DXA 는 그때)",
+     "also": []
+    }
+   ],
+   "summary": "PTH 가 억제되지 않은 고칼슘혈증이지만, 젊고 무증상이며 아버지가 평생 고칼슘혈증이었고 수술로 낫지 않았다. 원발성 부갑상선기능항진증으로 영상·수술을 진행하기 전에 24시간 소변 칼슘/크레아티닌 청소율 비로 FHH(< 0.01)를 가린다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 환자의 칼슘/크레아티닌 청소율 비가 0.03 이고 가족력이 없으며 신장결석이 있어 원발성 부갑상선기능항진증으로 수술을 결정했다면, 다음은 수술 전 위치 확인 영상(sestamibi)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.endo.familial-hypocalciuric-hypercalcemia.urine-calcium-clearance-ratio",
+  "distractors": {
+   "A": {
+    "tempting": "고칼슘 + PTH 정상–높음 = 원발성 부갑상선기능항진증 — 선종 위치를 찾는 영상이 다음이라고 외웠다.",
+    "answer_first": "영상은 진단 검사가 아니라 수술을 정한 뒤 위치를 찾는 검사다. 수술이 듣지 않는 FHH 를 아직 배제하지 않았다 — 아버지의 실패한 수술이 그 경고다.",
+    "discriminator": "「his calcium level did not change afterward」 + 「Serum magnesium」 2.5 — 소변 칼슘으로 먼저 FHH 를 가린다.",
+    "when_right": "청소율 비가 > 0.02 로 원발성 부갑상선기능항진증이 확인되고 수술 적응이 있을 때.",
+    "split": ""
+   },
+   "D": {
+    "tempting": "PTH 의존성 고칼슘혈증의 근본 치료는 부갑상선 절제술이다.",
+    "answer_first": "FHH 라면 수술은 칼슘을 낮추지 못하고 합병증만 남긴다. 게다가 무증상 원발성이라도 수술 적응(나이 < 50 등)은 진단을 확정한 뒤 판단한다.",
+    "discriminator": "아버지의 수술 뒤에도 그대로인 고칼슘혈증 — 수술 전에 FHH 배제.",
+    "when_right": "원발성 부갑상선기능항진증이 확정되고 50세 미만·결석·골다공증 같은 수술 적응이 있을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0261",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Scrotal Pain That Woke Him Three Hours Ago, Two Bouts of Vomiting and a High-Riding Left Testis in a 15-Year-Old Boy",
+  "type": "Scrotal Pain That Woke Him Three Hours Ago, Two Bouts of Vomiting and a High-Riding Left Testis in a 15-Year-Old Boy",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 15-year-old boy is brought to the emergency department 3 hours after he awoke with severe pain in the left side of his scrotum. He has vomited twice since then. He has had no trauma, fever or dysuria and has never been sexually active. He had a brief, similar pain 2 months ago that resolved on its own within 20 minutes. His vital signs are shown. The left hemiscrotum is swollen and red. The left testis is firm, exquisitely tender, lies higher than the right testis, and has a horizontal axis. Stroking the inner left thigh does not elevate the left testis; the reflex is present on the right. Lifting the left testis does not lessen the pain. There is no inguinal bulge or penile discharge. Laboratory results are shown. The hospital's ultrasonography technician will arrive in 90 minutes.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Surgical exploration of the scrotum now",
+   "Doppler ultrasonography of the scrotum",
+   "Intramuscular ceftriaxone and oral doxycycline",
+   "Scrotal support, ice packs and oral ibuprofen",
+   "Radionuclide scintigraphy of the scrotum"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계 추론. ① 갑작스러운 통증 + 단단하고 높이 올라간 가로 고환 + 그쪽 고환올림근 반사 소실 + 구토 → 고환 염전. ② 소변 검사 정상·성 접촉 없음·발열 없음 → 부고환염 가능성 낮음. ③ 통증 3시간, 임상적으로 고위험 → 영상을 기다리지 않고 즉시 음낭 탐색술(풀고 양쪽 고정).\n- 오답감별:\n  - (B) 도플러 초음파는 진단이 애매할 때의 검사다 — 전형적 소견에서 90분 대기는 허혈 시간만 늘린다.\n  - (C) ceftriaxone + doxycycline 은 성매개 부고환염의 치료 — 성 접촉이 없고 소변 검사가 정상이며 통증이 갑작스럽다.\n  - (D) 음낭 지지·냉찜질·진통제는 고환 부속기 염전이나 경한 부고환염의 처치 — 염전을 풀지 못한다.\n  - (E) 방사성 핵종 스캔은 시간이 오래 걸려 급성 음낭에서 거의 쓰지 않는다 — 지체만 늘린다.\n- 임상핵심: 전형적 고환 염전(갑작스러운 통증·구토·높은 가로 고환·반사 소실) → 영상을 기다리지 않고 즉시 음낭 탐색술 + 양쪽 고정.\n- 출처: Sabiston Textbook of Surgery, 21e(Pediatric surgery — the acute scrotum). Campbell-Walsh-Wein Urology, 12e(Testicular torsion).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 갑작스러운 통증 + 단단하고 높이 올라간 가로 고환 + 그쪽 고환올림근 반사 소실 + 구토 → 고환 염전. ② 소변 검사 정상·성 접촉 없음·발열 없음 → 부고환염 가능성 낮음. ③ 통증 3시간, 임상적으로 고위험 → 영상을 기다리지 않고 즉시 음낭 탐색술(풀고 양쪽 고정)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 도플러 초음파는 진단이 애매할 때의 검사다 — 전형적 소견에서 90분 대기는 허혈 시간만 늘린다.\n(C) ceftriaxone + doxycycline 은 성매개 부고환염의 치료 — 성 접촉이 없고 소변 검사가 정상이며 통증이 갑작스럽다.\n(D) 음낭 지지·냉찜질·진통제는 고환 부속기 염전이나 경한 부고환염의 처치 — 염전을 풀지 못한다.\n(E) 방사성 핵종 스캔은 시간이 오래 걸려 급성 음낭에서 거의 쓰지 않는다 — 지체만 늘린다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "전형적 고환 염전(갑작스러운 통증·구토·높은 가로 고환·반사 소실) → 영상을 기다리지 않고 즉시 음낭 탐색술 + 양쪽 고정."
+   },
+   {
+    "k": "출처",
+    "v": "Sabiston Textbook of Surgery, 21e(Pediatric surgery — the acute scrotum). Campbell-Walsh-Wein Urology, 12e(Testicular torsion)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Sabiston Textbook of Surgery, 21e. Pediatric surgery — acute scrotum; Campbell-Walsh-Wein Urology, 12e)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.1 °C (98.8 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "108 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "128/76 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Urinalysis: leukocyte esterase",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urinalysis: nitrite",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urinalysis: leukocytes",
+    "value": "0–2 /hpf",
+    "ref": "0–5 /hpf"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "급성 음낭 — 판단\n─────────────────────────────────────────────\n고환 염전: 갑작스러운 통증, 구토, 단단·높은·가로 고환, 고환올림근 반사 소실\n  임상적으로 고위험 → 영상 없이 즉시 음낭 탐색술(풀기 + 양쪽 고환 고정)\n  애매함 → 도플러 초음파(지체 없이 가능할 때)\n  수술을 기다리는 동안 손으로 풀기(바깥쪽으로)를 시도할 수 있으나 수술을 대신하지 않는다\n  구제율: 6시간 안 대부분 · 12–24시간 뒤 급감\n고환 부속기 염전: 위극의 국소 압통, 「blue dot」, 반사 유지 → 진통제\n부고환염: 서서히, 발열·배뇨통·농뇨, 반사 유지 → 성 접촉이 있으면 ceftriaxone + doxycycline",
+   "참고문헌": [
+    "Townsend CM, et al. Sabiston Textbook of Surgery, 21e. Elsevier; 2022. Pediatric surgery: the acute scrotum.",
+    "Partin AW, et al. Campbell-Walsh-Wein Urology, 12e. Elsevier; 2021. Testicular torsion."
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "임상적으로 전형적인 고환 염전은 영상으로 확인하느라 지체하지 않고 즉시 음낭 탐색술을 한다.",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "도플러 초음파(B)는 진단이 애매할 때의 검사다. 단단하고 높이 올라간 가로 고환·고환올림근 반사 소실·구토가 모두 있는 고위험 소견에서 90분을 기다리면 허혈 시간만 늘어난다.",
+   "steps": 3,
+   "chain": [
+    "갑작스러운 통증 + 단단하고 높이 올라간 가로 고환 + 그쪽 고환올림근 반사 소실 + 구토 → 고환 염전",
+    "소변 검사 정상 + 성 접촉 없음 + 발열 없음 + 들어 올려도 통증 그대로 → 부고환염 가능성 낮음",
+    "통증 3시간·영상 90분 대기 + 임상적으로 고위험 → 영상 없이 즉시 음낭 탐색술(풀고 양쪽 고정)"
+   ],
+   "key": [
+    {
+     "item": "The left testis is firm, exquisitely tender, lies higher than the right testis, and has a horizontal axis",
+     "why": "정삭이 꼬여 짧아진 고환 — 염전",
+     "also": []
+    },
+    {
+     "item": "Stroking the inner left thigh does not elevate the left testis; the reflex is present on the right",
+     "why": "한쪽 고환올림근 반사 소실 — 염전에서 흔하다",
+     "also": []
+    },
+    {
+     "item": "He has vomited twice since then",
+     "why": "구토 — 염전을 시사(TWIST 항목)",
+     "also": []
+    },
+    {
+     "item": "He had a brief, similar pain 2 months ago that resolved on its own within 20 minutes",
+     "why": "간헐적 염전·자연 해소의 병력",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Lifting the left testis does not lessen the pain",
+     "why": "들어 올려도 통증이 줄지 않음 — 부고환염 가능성을 낮춘다(결정적이지는 않다)",
+     "also": []
+    },
+    {
+     "item": "Urinalysis: leukocyte esterase",
+     "why": "음성 — 부고환염·요로감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "has never been sexually active",
+     "why": "성매개 부고환염(C) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "The hospital's ultrasonography technician will arrive in 90 minutes",
+     "why": "영상을 기다리면 허혈 시간이 늘어난다 — 지체할 이유가 아니다",
+     "also": []
+    },
+    {
+     "item": "3 hours after he awoke with severe pain",
+     "why": "6시간 안 — 구제 가능성이 높아 즉시 수술의 이득이 크다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "갑작스러운 음낭 통증·구토, 단단하고 위로 올라간 가로 고환, 한쪽 고환올림근 반사 소실은 고환 염전이며 소변 검사 정상·성 접촉 없음으로 부고환염 가능성은 낮다. 임상적으로 고위험이면 영상을 기다리지 않고 바로 음낭 탐색술로 풀고 양쪽을 고정한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 소년이 통증이 하루에 걸쳐 서서히 왔고 고환 위치는 정상이며 고환올림근 반사가 있고 고환 위쪽 한 점만 아프다면(진단이 애매하다), 도플러 초음파로 혈류를 확인한다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.uro.testicular-torsion.immediate-exploration",
+  "distractors": {
+   "B": {
+    "tempting": "수술 전에 혈류가 없는지 영상으로 확인하는 것이 안전해 보인다.",
+    "answer_first": "임상 소견이 전형적이면 초음파는 진단을 바꾸지 못하고 허혈 시간만 늘린다(여기선 90분). 고환 구제율은 시간에 달려 있다 — 바로 탐색술이다.",
+    "discriminator": "단단·높은·가로 고환 + 고환올림근 반사 소실 + 구토 — 고위험 임상 진단, 「The hospital's ultrasonography technician will arrive in 90 minutes」.",
+    "when_right": "통증이 서서히 왔거나 소견이 애매해 염전과 부고환염·고환 부속기 염전을 가를 수 없을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0262",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Six Weeks of Tingling Feet and Hands and Falling Over in the Shower in a 23-Year-Old Who Empties Whipped-Cream Chargers Most Weekends",
+  "type": "Six Weeks of Tingling Feet and Hands and Falling Over in the Shower in a 23-Year-Old Who Empties Whipped-Cream Chargers Most Weekends",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 23-year-old man comes to the physician because of tingling and numbness that began in his feet 6 weeks ago and has spread to his fingers. He has become unsteady when walking, especially in the dark, and fell twice while washing his hair in the shower. For the past year he has inhaled nitrous oxide from whipped-cream chargers at parties on most weekends, about 50 cartridges each time. He eats meat and dairy daily and drinks alcohol occasionally. He takes no medications. His vital signs are shown. Mental status is normal. Muscle strength is 5/5 throughout. Vibration and joint position sense are markedly decreased in the toes and mildly decreased in the fingers. Knee reflexes are 3+, ankle reflexes are absent, and the plantar responses are extensor. He sways and nearly falls when he stands with his feet together and closes his eyes. Laboratory results are shown. T2-weighted MRI of the cervical spine shows symmetric hyperintensity in the posterior columns from C2 to C6.",
+  "question": "Which of the following is the most appropriate next step to confirm the cause of his symptoms?",
+  "options": [
+   "Nerve conduction studies and electromyography",
+   "Serum copper and ceruloplasmin measurement",
+   "Serum methylmalonic acid and homocysteine measurement",
+   "Serum anti–intrinsic factor antibody measurement",
+   "Cerebrospinal fluid analysis with oligoclonal bands"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계 추론. ① 후삭(진동·위치 감각 저하·Romberg) + 측삭(반사 항진·발바닥 신전) + MRI 후삭 고신호 → 아급성 연합 변성 양상. ② 매주 대량 아산화질소 → 코발라민 비활성화(기능적 B12 결핍). ③ 혈청 B12 312 는 결핍을 배제하지 못함 → 메틸말론산·호모시스테인으로 확인.\n- 오답감별:\n  - (A) 신경전도 검사는 동반 말초신경병을 보여 줄 수 있지만 원인(B12 기능 결핍)을 확인하지 못한다.\n  - (B) 구리 결핍도 같은 척수병증을 만들지만 원인(위 수술·아연 과다)이 없고 N2O 노출이 뚜렷하다 — 대사물 검사가 정상일 때 다음.\n  - (D) 내인자 항체는 악성 빈혈의 흡수 장애를 찾는다 — N2O 는 흡수된 B12 를 비활성화한다.\n  - (E) 올리고클론띠는 다발경화증을 찾는다 — 대칭적·길게 이어진 후삭 병변과 N2O 노출은 대사성 척수병증을 가리킨다.\n- 임상핵심: N2O 남용 + 후삭·측삭 척수병증 → 혈청 B12 가 정상이어도 메틸말론산·호모시스테인으로 기능적 결핍 확인 → N2O 중단 + B12.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 104장 Megaloblastic Anemias; 453장 Diseases of the Spinal Cord.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 후삭(진동·위치 감각 저하·Romberg) + 측삭(반사 항진·발바닥 신전) + MRI 후삭 고신호 → 아급성 연합 변성 양상. ② 매주 대량 아산화질소 → 코발라민 비활성화(기능적 B12 결핍). ③ 혈청 B12 312 는 결핍을 배제하지 못함 → 메틸말론산·호모시스테인으로 확인."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 신경전도 검사는 동반 말초신경병을 보여 줄 수 있지만 원인(B12 기능 결핍)을 확인하지 못한다.\n(B) 구리 결핍도 같은 척수병증을 만들지만 원인(위 수술·아연 과다)이 없고 N2O 노출이 뚜렷하다 — 대사물 검사가 정상일 때 다음.\n(D) 내인자 항체는 악성 빈혈의 흡수 장애를 찾는다 — N2O 는 흡수된 B12 를 비활성화한다.\n(E) 올리고클론띠는 다발경화증을 찾는다 — 대칭적·길게 이어진 후삭 병변과 N2O 노출은 대사성 척수병증을 가리킨다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "N2O 남용 + 후삭·측삭 척수병증 → 혈청 B12 가 정상이어도 메틸말론산·호모시스테인으로 기능적 결핍 확인 → N2O 중단 + B12."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 104장 Megaloblastic Anemias; 453장 Diseases of the Spinal Cord."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 104장 Megaloblastic Anemias; 453장 Diseases of the Spinal Cord)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "78 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "14 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "122/76 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "13.9 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Mean corpuscular volume",
+    "value": "97 μm3",
+    "ref": "80–100 μm3"
+   },
+   {
+    "name": "Serum vitamin B12",
+    "value": "312 pg/mL",
+    "ref": "200–900 pg/mL"
+   },
+   {
+    "name": "Serum folate",
+    "value": "11 ng/mL",
+    "ref": "> 4 ng/mL"
+   },
+   {
+    "name": "Hemoglobin A1c",
+    "value": "5.1%",
+    "ref": "< 5.7%"
+   },
+   {
+    "name": "Thyroid-stimulating hormone",
+    "value": "1.8 μU/mL",
+    "ref": "0.5–4.5 μU/mL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "척수병증 + B12 의심 — 검사 순서\n─────────────────────────────────────────────\n혈청 B12 < 200 pg/mL → 결핍 · 200–400 또는 강한 의심(N2O 노출) → 메틸말론산 + 호모시스테인\n  둘 다 ↑ → B12 결핍 · 호모시스테인만 ↑ → 엽산 결핍 쪽\n원인: 악성 빈혈(내인자 항체·벽세포 항체), 위·회장 수술, metformin, 식이(채식), N2O(비활성화)\nN2O 척수병증: N2O 중단 + 근주 B12 ± 메티오닌 · 엽산 단독 투여로 신경 증상을 덮지 않는다\nB12·대사물 정상 → 구리·세룰로플라스민(위 수술·아연 과다), HIV, HTLV-1, 매독",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 104장 Megaloblastic Anemias",
+    "Harrison's Principles of Internal Medicine, 22e. 453장 Diseases of the Spinal Cord"
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "아산화질소 남용자의 후삭·측삭 척수병증은 혈청 B12 가 정상이어도 기능적 B12 결핍일 수 있어, 메틸말론산·호모시스테인으로 확인한다.",
+   "rival": [
+    "B",
+    "D"
+   ],
+   "discriminator": "구리 결핍(B)도 같은 척수병증을 만들지만 위 수술·아연 과다 같은 원인이 없고 N2O 노출이 뚜렷하다. 내인자 항체(D)는 흡수 장애(악성 빈혈)를 찾는 것으로, N2O 는 흡수가 아니라 이미 흡수된 B12 를 비활성화한다.",
+   "steps": 3,
+   "chain": [
+    "진동·위치 감각 저하·Romberg 양성 + 무릎 반사 항진·발바닥 신전 + MRI 후삭 고신호 → 아급성 연합 변성 양상의 척수병증",
+    "매주 대량 아산화질소 흡입 → 코발라민 산화로 기능적 B12 결핍(혈청 B12 정상·빈혈 없음도 가능)",
+    "혈청 B12 312(정상 범위)로는 배제 못 함 → 메틸말론산·호모시스테인으로 조직 수준의 결핍을 확인"
+   ],
+   "key": [
+    {
+     "item": "Vibration and joint position sense are markedly decreased in the toes and mildly decreased in the fingers",
+     "why": "후삭 침범",
+     "also": []
+    },
+    {
+     "item": "Knee reflexes are 3+, ankle reflexes are absent, and the plantar responses are extensor",
+     "why": "측삭(상위운동신경원) + 말초신경병 — 아급성 연합 변성의 전형",
+     "also": []
+    },
+    {
+     "item": "T2-weighted MRI of the cervical spine shows symmetric hyperintensity in the posterior columns from C2 to C6",
+     "why": "후삭 대칭 고신호",
+     "also": []
+    },
+    {
+     "item": "he has inhaled nitrous oxide from whipped-cream chargers at parties on most weekends, about 50 cartridges each time",
+     "why": "N2O — 코발라민 비활성화",
+     "also": []
+    },
+    {
+     "item": "Serum vitamin B12",
+     "why": "312 — 정상 범위지만 기능적 결핍을 배제하지 못한다: 대사물 검사가 필요",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He eats meat and dairy daily",
+     "why": "식이성 B12 결핍 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin A1c",
+     "why": "5.1% — 당뇨병성 신경병증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Mean corpuscular volume",
+     "why": "97 — 대구성·빈혈이 없어도 신경 증상이 먼저 올 수 있다",
+     "also": []
+    },
+    {
+     "item": "Mental status is normal",
+     "why": "인지 저하가 없다 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "후삭·측삭 징후와 MRI 후삭 고신호는 아급성 연합 변성이고, 매주 대량의 아산화질소 흡입이 코발라민을 비활성화한다. 혈청 B12 가 정상이어도 기능적 결핍일 수 있으므로 메틸말론산·호모시스테인으로 확인한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 척수병증 환자가 N2O 노출이 없고 위 우회술 병력·아연 보충제(또는 아연 함유 의치 접착제) 과다 사용이 있으며 메틸말론산·호모시스테인이 정상이라면, 구리·세룰로플라스민을 잰다(구리 결핍 척수병증)."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.neuro.nitrous-oxide-myelopathy.methylmalonic-acid",
+  "distractors": {
+   "B": {
+    "tempting": "B12 가 정상인 아급성 연합 변성 모양 척수병증 — 구리 결핍을 떠올린다.",
+    "answer_first": "구리 결핍도 같은 모양을 만들지만 위 수술·아연 과다 같은 원인이 있어야 하고, 이 환자에겐 B12 를 비활성화하는 N2O 노출이 뚜렷하다. 혈청 B12 정상은 기능적 결핍을 배제하지 못한다 — 대사물부터 본다.",
+    "discriminator": "「about 50 cartridges each time」 + 「Serum vitamin B12」 312 — 기능적 결핍 확인이 먼저.",
+    "when_right": "N2O 노출이 없고 위 수술·아연 과다가 있으며 메틸말론산·호모시스테인이 정상일 때.",
+    "split": ""
+   },
+   "D": {
+    "tempting": "B12 결핍의 가장 흔한 원인은 악성 빈혈 — 내인자 항체를 본다.",
+    "answer_first": "내인자 항체는 흡수 장애를 찾는다. N2O 는 이미 흡수된 B12 의 코발트를 산화시키는 것이라 흡수 검사로는 원인을 확인할 수 없고, 먼저 결핍 자체를 대사물로 확인한다.",
+    "discriminator": "젊은 남성 + 「he has inhaled nitrous oxide」 — 흡수가 아니라 비활성화.",
+    "when_right": "",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0263",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Turning Deep Blue After a Long Crying Fit on Waking, an SpO2 of 66% and a Murmur Much Softer Than Last Time in a 14-Month-Old Boy",
+  "type": "Turning Deep Blue After a Long Crying Fit on Waking, an SpO2 of 66% and a Murmur Much Softer Than Last Time in a 14-Month-Old Boy",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 14-month-old boy is brought to the emergency department by his parents 15 minutes after he became deeply blue and began breathing rapidly during a long crying fit on waking from a nap. A heart murmur was noted at 2 months of age; the family missed the scheduled cardiology follow-up after moving. He has had no fever, cough or wheezing, and he fed well this morning. His vital signs are shown. He is irritable and crying, with deep cyanosis of the lips and nail beds. There is no nasal flaring or grunting. The lungs are clear to auscultation. A grade 2/6 systolic ejection murmur is heard at the left upper sternal border; at the clinic visit 3 months ago it was recorded as grade 4/6. The liver edge is palpable 1 cm below the right costal margin. Capillary refill time is 2 seconds.",
+  "question": "Which of the following is the most appropriate initial step in management?",
+  "options": [
+   "Intravenous furosemide",
+   "Nebulized albuterol",
+   "Intravenous dobutamine",
+   "Knee-to-chest positioning",
+   "Intravenous adenosine"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계 추론. ① 영아기 심잡음 + 평소 청색증 + 좌상부 흉골연 박출 잡음 → 교정 안 된 팔로 4징. ② 울음 뒤 SpO2 66% + 과호흡 + 잡음이 작아짐 + 폐 맑음 → 과청색증 발작(폐 혈류 감소). ③ 첫 처치 → 무릎-가슴 자세로 전신 혈관 저항을 올려 우→좌 단락을 줄인다.\n- 오답감별:\n  - (A) furosemide 는 폐혈류 과다·심부전의 처치 — 폐가 맑고 간 비대가 없으며 전부하를 줄이면 단락이 악화될 수 있다.\n  - (B) albuterol 은 기관지 연축 처치 — 천명이 없고 폐가 맑다; β 작용이 빈맥을 더한다.\n  - (C) dobutamine 등 강심제는 누두부 수축을 강화해 우심실 유출로를 더 좁힌다 — 금물이다.\n  - (E) adenosine 은 회귀성 SVT 처치 — 심박 168 은 울음·저산소에 대한 동성 빈맥이다.\n- 임상핵심: 팔로 4징 + 울음 뒤 깊어진 청색증 + 잡음 감소 → 과청색증 발작 → 무릎-가슴 자세 → 산소·morphine·수액 → phenylephrine(강심제 금물).\n- 출처: Nelson Textbook of Pediatrics, 21e(Tetralogy of Fallot). Harrison's Principles of Internal Medicine, 22e. 280장 Congenital Heart Disease in the Adult.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 영아기 심잡음 + 평소 청색증 + 좌상부 흉골연 박출 잡음 → 교정 안 된 팔로 4징. ② 울음 뒤 SpO2 66% + 과호흡 + 잡음이 작아짐 + 폐 맑음 → 과청색증 발작(폐 혈류 감소). ③ 첫 처치 → 무릎-가슴 자세로 전신 혈관 저항을 올려 우→좌 단락을 줄인다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) furosemide 는 폐혈류 과다·심부전의 처치 — 폐가 맑고 간 비대가 없으며 전부하를 줄이면 단락이 악화될 수 있다.\n(B) albuterol 은 기관지 연축 처치 — 천명이 없고 폐가 맑다; β 작용이 빈맥을 더한다.\n(C) dobutamine 등 강심제는 누두부 수축을 강화해 우심실 유출로를 더 좁힌다 — 금물이다.\n(E) adenosine 은 회귀성 SVT 처치 — 심박 168 은 울음·저산소에 대한 동성 빈맥이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "팔로 4징 + 울음 뒤 깊어진 청색증 + 잡음 감소 → 과청색증 발작 → 무릎-가슴 자세 → 산소·morphine·수액 → phenylephrine(강심제 금물)."
+   },
+   {
+    "k": "출처",
+    "v": "Nelson Textbook of Pediatrics, 21e(Tetralogy of Fallot). Harrison's Principles of Internal Medicine, 22e. 280장 Congenital Heart Disease in the Adult."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics, 21e. Tetralogy of Fallot; Harrison's Principles of Internal Medicine, 22e. 280장 Congenital Heart Disease in the Adult)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "168 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "56 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "84/50 mm Hg"
+   },
+   {
+    "name": "Pulse oximetry",
+    "value": "66% on room air (88% at a clinic visit 3 months ago)"
+   }
+  ],
+  "labs": [],
+  "appendix": {
+   "가이드라인": "과청색증 발작(tet spell) — 단계\n─────────────────────────────────────────────\n1. 달래기 + 무릎-가슴 자세(전신 혈관 저항↑, 정맥 환류↑)\n2. 산소(폐혈관 이완, 효과는 제한적)\n3. morphine(진정·과호흡 억제) · 생리식염수 볼루스(전부하)\n4. 반응 없으면 phenylephrine(전신 혈관 저항↑) · propranolol/esmolol(누두부 이완·심박↓)\n5. 대사성 산증 교정 · 그래도 지속 → 응급 단락 수술·완전 교정\n피할 것: 강심제(dobutamine, epinephrine 등) — 누두부 수축 악화\n발작이 한 번이라도 있으면 → 조기 완전 교정 수술 평가",
+   "참고문헌": [
+    "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21e. Elsevier; 2020. Tetralogy of Fallot.",
+    "Harrison's Principles of Internal Medicine, 22e. 280장 Congenital Heart Disease in the Adult"
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "팔로 4징 영아가 울다가 청색증이 깊어지고 잡음이 작아지면 과청색증 발작이며, 첫 처치는 전신 혈관 저항을 올리는 무릎-가슴 자세다.",
+   "rival": [
+    "C",
+    "A"
+   ],
+   "discriminator": "dobutamine(C) 같은 강심제는 누두부 수축을 더 세게 해 우심실 유출로를 더 좁힌다. 폐가 맑고 간이 1 cm 라 심부전(A) 가능성은 낮다 — 문제는 펌프가 아니라 폐로 가는 혈류다.",
+   "steps": 3,
+   "chain": [
+    "영아기 심잡음 + 평소 청색증(88%) + 좌상부 흉골연 박출 잡음 → 팔로 4징(치료받지 않음)",
+    "울음 뒤 청색증 66% + 과호흡 + 잡음이 4/6 → 2/6 로 작아짐 + 폐 맑음 → 과청색증 발작(폐 혈류 감소), 심부전·기관지 연축 아님",
+    "첫 처치 → 전신 혈관 저항↑·정맥 환류↑로 우→좌 단락을 줄이는 무릎-가슴 자세(강심제는 금물)"
+   ],
+   "key": [
+    {
+     "item": "A heart murmur was noted at 2 months of age; the family missed the scheduled cardiology follow-up",
+     "why": "교정되지 않은 선천 심질환",
+     "also": []
+    },
+    {
+     "item": "Pulse oximetry",
+     "why": "66%(평소 88%) — 평소 청색증 심질환에서 급성 악화",
+     "also": []
+    },
+    {
+     "item": "during a long crying fit on waking from a nap",
+     "why": "울음·각성 — 발작의 전형적 유발",
+     "also": []
+    },
+    {
+     "item": "at the clinic visit 3 months ago it was recorded as grade 4/6",
+     "why": "잡음이 작아짐(2/6) — 폐동맥 쪽 혈류 감소: 발작의 핵심 단서",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The lungs are clear to auscultation",
+     "why": "폐부종·기관지 연축(B) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He has had no fever, cough or wheezing",
+     "why": "호흡기 감염·천식 발작 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The liver edge is palpable 1 cm below the right costal margin",
+     "why": "영아에서 정상 범위 — 심부전(A) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Pulse",
+     "why": "168 — 울음·저산소에 대한 동성 빈맥, SVT(E) 같은 고정된 빠른 리듬이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "교정되지 않은 팔로 4징 영아가 울다가 청색증이 깊어지고 박출 잡음이 오히려 작아졌다 — 폐로 가는 혈류가 줄어든 과청색증 발작이다. 첫 처치는 무릎-가슴 자세로 전신 혈관 저항을 올려 우→좌 단락을 줄이는 것이고, 강심제는 누두부 수축을 악화시킨다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 영아가 큰 심실중격결손으로 청색증 없이 수유 중 땀·빠른 호흡이 늘고 수포음·간 4 cm 비대가 있다면, 폐혈류 과다에 의한 심부전 — 이뇨제(furosemide)가 맞다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.peds.tetralogy-of-fallot.hypercyanotic-spell-positioning",
+  "distractors": {
+   "C": {
+    "tempting": "저혈압·빈맥·청색증 — 심장이 못 짜는 것 같아 강심제로 박출을 올리고 싶다.",
+    "answer_first": "과청색증 발작은 펌프 실패가 아니라 우심실 유출로 수축·전신 혈관 저항 저하로 피가 폐를 건너뛰는 것이다. 강심제는 누두부를 더 세게 조여 폐 혈류를 더 줄인다 — 금물이다.",
+    "discriminator": "잡음이 작아짐(「grade 4/6」 → 2/6) + 「The lungs are clear」 — 폐 혈류 감소.",
+    "when_right": "청색증 발작이 아닌 심근 기능 저하의 저심박출 쇼크(예: 심근염)일 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "선천 심질환 영아의 호흡곤란 — 심부전이라 생각해 이뇨제를 떠올린다.",
+    "answer_first": "폐가 맑고 간이 1 cm 로 울혈이 없다. 이 아이의 문제는 폐로 가는 혈류가 너무 적은 것이다 — 이뇨제는 전부하를 줄여 단락을 악화시킬 수 있다.",
+    "discriminator": "「The lungs are clear to auscultation」 · 「The liver edge is palpable 1 cm」.",
+    "when_right": "",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0264",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "Sudden Right Lower Abdominal Pain While Lifting Weights, Three Bouts of Vomiting and a 7-cm Ovarian Cyst With Normal Doppler Flow in a 26-Year-Old Woman",
+  "type": "Sudden Right Lower Abdominal Pain While Lifting Weights, Three Bouts of Vomiting and a 7-cm Ovarian Cyst With Normal Doppler Flow in a 26-Year-Old Woman",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 26-year-old woman comes to the emergency department 5 hours after the sudden onset of severe right lower abdominal pain that began while she was lifting weights at the gym. The pain was intermittent at first and has become constant; she has vomited three times. Her last menstrual period was 2 weeks ago, and her menses are regular. She is sexually active with one male partner, and they use condoms consistently. She has no vaginal discharge or dysuria. Her vital signs are shown. The abdomen is tender in the right lower quadrant with voluntary guarding and no rebound. Pelvic examination shows a tender, mobile right adnexal mass; there is no cervical motion tenderness or cervical discharge. Laboratory results are shown. Transvaginal ultrasonography shows a 7-cm echogenic right ovarian cyst with an enlarged right ovary; color Doppler shows arterial and venous flow in the right ovary. The appendix is not visualized, and there is a small amount of free fluid in the pelvis.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "CT scan of the abdomen and pelvis with contrast",
+   "Diagnostic laparoscopy",
+   "Intravenous cefoxitin and oral doxycycline",
+   "Repeat transvaginal ultrasonography in 6 weeks",
+   "Oral combined hormonal contraceptive therapy"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계 추론. ① 운동 중 갑작스러운 한쪽 통증(간헐 → 지속) + 구토 + 7 cm 난소 낭종 → 부속기 염전 의심. ② hCG 음성 + 발열·자궁경부 운동 압통·분비물 없음 → 자궁외 임신·골반염 가능성 낮음. ③ 도플러 혈류 정상은 염전을 배제하지 못함 → 진단적 복강경(해염·난소 보존).\n- 오답감별:\n  - (A) CT 는 난소 염전을 정확히 가르지 못하고 수술을 늦춘다 — 복강경이 염전과 충수를 함께 확인한다.\n  - (C) cefoxitin + doxycycline 은 골반염 처치 — 발열·자궁경부 운동 압통·분비물이 없다.\n  - (D) 6주 뒤 재검은 증상이 가벼운 단순 기능성 낭종의 처치 — 갑작스러운 통증·구토·7 cm 낭종은 염전 소견이고 혈류는 배제 근거가 아니다.\n  - (E) 경구 피임제는 새 기능성 낭종을 예방할 뿐 기존 낭종·염전을 치료하지 못한다.\n- 임상핵심: 갑작스러운 한쪽 골반 통증 + 구토 + ≥ 5 cm 부속기 종괴 → 도플러 혈류와 무관하게 진단적 복강경(해염·난소 보존).\n- 출처: ACOG Committee Opinion No. 783: Adnexal Torsion in Adolescents(2019). Williams Gynecology, 4e(Adnexal torsion).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 운동 중 갑작스러운 한쪽 통증(간헐 → 지속) + 구토 + 7 cm 난소 낭종 → 부속기 염전 의심. ② hCG 음성 + 발열·자궁경부 운동 압통·분비물 없음 → 자궁외 임신·골반염 가능성 낮음. ③ 도플러 혈류 정상은 염전을 배제하지 못함 → 진단적 복강경(해염·난소 보존)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) CT 는 난소 염전을 정확히 가르지 못하고 수술을 늦춘다 — 복강경이 염전과 충수를 함께 확인한다.\n(C) cefoxitin + doxycycline 은 골반염 처치 — 발열·자궁경부 운동 압통·분비물이 없다.\n(D) 6주 뒤 재검은 증상이 가벼운 단순 기능성 낭종의 처치 — 갑작스러운 통증·구토·7 cm 낭종은 염전 소견이고 혈류는 배제 근거가 아니다.\n(E) 경구 피임제는 새 기능성 낭종을 예방할 뿐 기존 낭종·염전을 치료하지 못한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "갑작스러운 한쪽 골반 통증 + 구토 + ≥ 5 cm 부속기 종괴 → 도플러 혈류와 무관하게 진단적 복강경(해염·난소 보존)."
+   },
+   {
+    "k": "출처",
+    "v": "ACOG Committee Opinion No. 783: Adnexal Torsion in Adolescents(2019). Williams Gynecology, 4e(Adnexal torsion)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (ACOG Committee Opinion No. 783: Adnexal Torsion in Adolescents, 2019; Williams Gynecology, 4e)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.4 °C (99.3 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "104 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "124/78 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Urine hCG",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "13.2 g/dL",
+    "ref": "12.0–16.0 g/dL"
+   },
+   {
+    "name": "Leukocyte count",
+    "value": "11,200 /μL",
+    "ref": "4,500–11,000 /μL"
+   },
+   {
+    "name": "Urinalysis",
+    "value": "No leukocytes, nitrite or blood",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "부속기 염전 — 판단\n─────────────────────────────────────────────\n의심: 갑작스러운 한쪽 하복부 통증(간헐 → 지속), 구토, 부속기 종괴(대개 ≥ 5 cm), 임신·배란 유도 시 위험↑\n초음파: 난소 비대·주변부 난포·소용돌이 징후 · 도플러 혈류 정상이어도 배제 불가\n임상적으로 의심 → 진단적 복강경: 해염 + 난소 보존(검푸르게 보여도 대개 회복) · 낭종 절제는 상황에 따라\n감별: 자궁외 임신(hCG), 골반염·난관난소 농양(발열, 자궁경부 운동 압통), 충수염, 출혈성 낭종 파열",
+   "참고문헌": [
+    "American College of Obstetricians and Gynecologists. Committee Opinion No. 783: Adnexal Torsion in Adolescents. Obstet Gynecol. 2019.",
+    "Hoffman BL, et al. Williams Gynecology, 4e. McGraw Hill; 2020. Adnexal torsion."
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "임상적으로 난소 염전이 의심되면 도플러 혈류가 정상이어도 배제하지 말고 진단적 복강경으로 확인·해염한다.",
+   "rival": [
+    "D",
+    "A"
+   ],
+   "discriminator": "6주 뒤 재검(D)은 단순 기능성 낭종의 처치다 — 갑작스러운 통증·구토·5 cm 이상 낭종은 염전 소견이고, 도플러 혈류는 이중 혈류·부분 염전 때문에 염전을 배제하지 못한다. CT(A)는 지연만 늘린다.",
+   "steps": 3,
+   "chain": [
+    "운동 중 갑작스러운 한쪽 통증(간헐 → 지속) + 반복 구토 + 7 cm 난소 낭종 → 부속기 염전 의심",
+    "hCG 음성 + 발열·자궁경부 운동 압통·분비물 없음 → 자궁외 임신·골반염 가능성 낮음",
+    "도플러 동·정맥 혈류 있음 → 염전을 배제하지 못함 → 진단적 복강경(해염·난소 보존)"
+   ],
+   "key": [
+    {
+     "item": "5 hours after the sudden onset of severe right lower abdominal pain that began while she was lifting weights",
+     "why": "갑작스러운 발병·운동 유발 — 염전",
+     "also": []
+    },
+    {
+     "item": "The pain was intermittent at first and has become constant; she has vomited three times",
+     "why": "간헐 염전 → 지속 + 구토 — 염전에서 흔하다",
+     "also": []
+    },
+    {
+     "item": "Transvaginal ultrasonography shows a 7-cm echogenic right ovarian cyst with an enlarged right ovary",
+     "why": "5 cm 이상 낭종·난소 비대 — 염전의 주요 위험 인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Urine hCG",
+     "why": "음성 — 자궁외 임신 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "there is no cervical motion tenderness or cervical discharge",
+     "why": "골반염·난관난소 농양(C) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Temperature",
+     "why": "37.4 °C — 발열 없음, 감염성 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "color Doppler shows arterial and venous flow in the right ovary",
+     "why": "정상 혈류도 염전을 배제하지 못한다 — 수술 결정을 바꾸지 않는다(D·A 로 끌리게 하는 정보)",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The appendix is not visualized",
+     "why": "충수염을 완전히 가르지 못하지만, 복강경이 둘 다 확인할 수 있다",
+     "also": []
+    },
+    {
+     "item": "Leukocyte count",
+     "why": "11,200 — 경한 상승, 염전·충수염 모두에서 가능해 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "운동 중 갑자기 시작된 한쪽 하복부 통증과 반복 구토, 7 cm 난소 낭종은 부속기 염전을 가리키며 hCG 음성·골반염 소견 없음으로 다른 원인의 가능성은 낮다. 도플러 혈류는 이중 혈류·부분 염전 때문에 염전을 배제하지 못하므로 진단적 복강경으로 확인하고 풀어 난소를 보존한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 여성이 통증이 가볍고 하루 사이에 좋아졌으며 구토가 없고 낭종이 4 cm 의 단순(얇은 벽·무에코) 낭종이라면, 6–8주 뒤 재검 초음파로 기능성 낭종의 소실을 확인한다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.adnexal-torsion.laparoscopy-despite-doppler-flow",
+  "distractors": {
+   "D": {
+    "tempting": "도플러에 혈류가 있으니 염전은 아니고, 젊은 여성의 낭종은 대부분 기능성이라 기다려 보면 된다.",
+    "answer_first": "도플러 혈류는 염전을 배제하지 못한다 — 난소는 두 동맥에서 혈류를 받고 부분 염전에서는 동맥 혈류가 남는다. 갑작스러운 통증·구토·7 cm 낭종이면 기다리는 동안 난소를 잃을 수 있다.",
+    "discriminator": "「color Doppler shows arterial and venous flow」 에도 「sudden onset」 + 「she has vomited three times」 + 7 cm 낭종.",
+    "when_right": "통증이 가볍고 좋아지며 구토가 없고 4–5 cm 미만의 단순 낭종일 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "충수가 안 보이니 CT 로 충수염과 난소 질환을 한 번에 보고 싶다.",
+    "answer_first": "CT 는 난소 염전을 정확히 가르지 못하고 수술을 늦춘다. 복강경은 염전을 확인·해염하면서 충수도 볼 수 있다.",
+    "discriminator": "임상적 염전 의심 + 「The appendix is not visualized」 — 복강경이 두 질문에 모두 답한다.",
+    "when_right": "",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0265",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "A Third Episode of Sweating and Confusion With a Glucose of 36 in Two Months in a 31-Year-Old ICU Nurse Who Wants to Get Back to Her Shifts",
+  "type": "A Third Episode of Sweating and Confusion With a Glucose of 36 in Two Months in a 31-Year-Old ICU Nurse Who Wants to Get Back to Her Shifts",
+  "difficulty": 4,
+  "created": "2026-11-10",
+  "vignette": "A 31-year-old woman is brought to the emergency department by her coworkers because of sweating, tremor and confusion that began during her shift as an intensive care unit nurse. Blood was drawn before intravenous dextrose was given, and her symptoms resolved within minutes of the infusion. This is her third similar episode in 2 months; each time her glucose was below 40 mg/dL. She does not have diabetes; her younger sister has type 1 diabetes and uses an insulin pump. She has had four emergency department visits in the past year for recurrent skin abscesses on her thighs that grew mixed bowel flora. She says she has never injected insulin. She asks to be discharged quickly so she will not miss her next shift; she has declined offers of medical leave and has no pending disability, insurance or legal claims. She appears calm and cooperative now. Her vital signs are shown. There are several healed puncture marks on the lower abdomen. Laboratory results are shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Factitious disorder imposed on self",
+   "Malingering",
+   "Functional neurological symptom disorder",
+   "Somatic symptom disorder",
+   "Illness anxiety disorder"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계 추론. ① 저혈당 중 인슐린 98 + C-펩타이드 0.1·프로인슐린 억제 + 설폰요소제 음성 → 외인성 인슐린. ② 사용을 부인 + 주사 자국·장내 세균 농양 반복 → 증상을 의도적으로 만들고 숨긴다(비의도적 장애가 아님). ③ 병가 거절·청구 없음·근무 복귀 희망 → 외적 보상 없음 → 인위성 장애(꾀병 아님).\n- 오답감별:\n  - (B) 꾀병도 의도적이지만 외적 보상이 목적이다 — 병가를 거절했고 청구가 없다.\n  - (C) 기능성 신경학적 증상 장애는 비의도적 신경 증상이고 검사로 확인되는 실제 저혈당을 만들지 않는다.\n  - (D) 신체 증상 장애는 증상에 대한 과도한 생각·불안이 핵심이며 의도적으로 징후를 만들지 않는다.\n  - (E) 질병 불안 장애는 증상이 없거나 경미한데 심각한 병을 걱정하는 것 — 이 환자는 실제 저혈당을 만들고 부인한다.\n- 임상핵심: 의도적으로 만든 징후 + 외적 보상 없음 → 인위성 장애 · 외적 보상 있음 → 꾀병 · 비의도적 → 신체 증상 관련 장애.\n- 출처: DSM-5-TR(American Psychiatric Association, 2022). Harrison's Principles of Internal Medicine, 22e. 418장 Hypoglycemia.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 저혈당 중 인슐린 98 + C-펩타이드 0.1·프로인슐린 억제 + 설폰요소제 음성 → 외인성 인슐린. ② 사용을 부인 + 주사 자국·장내 세균 농양 반복 → 증상을 의도적으로 만들고 숨긴다(비의도적 장애가 아님). ③ 병가 거절·청구 없음·근무 복귀 희망 → 외적 보상 없음 → 인위성 장애(꾀병 아님)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 꾀병도 의도적이지만 외적 보상이 목적이다 — 병가를 거절했고 청구가 없다.\n(C) 기능성 신경학적 증상 장애는 비의도적 신경 증상이고 검사로 확인되는 실제 저혈당을 만들지 않는다.\n(D) 신체 증상 장애는 증상에 대한 과도한 생각·불안이 핵심이며 의도적으로 징후를 만들지 않는다.\n(E) 질병 불안 장애는 증상이 없거나 경미한데 심각한 병을 걱정하는 것 — 이 환자는 실제 저혈당을 만들고 부인한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "의도적으로 만든 징후 + 외적 보상 없음 → 인위성 장애 · 외적 보상 있음 → 꾀병 · 비의도적 → 신체 증상 관련 장애."
+   },
+   {
+    "k": "출처",
+    "v": "DSM-5-TR(American Psychiatric Association, 2022). Harrison's Principles of Internal Medicine, 22e. 418장 Hypoglycemia."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (American Psychiatric Association. DSM-5-TR, 2022; Harrison's Principles of Internal Medicine, 22e. 418장 Hypoglycemia)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "96 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "124/80 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum glucose (before dextrose)",
+    "value": "36 mg/dL",
+    "ref": "70–100 mg/dL"
+   },
+   {
+    "name": "Serum insulin (same sample)",
+    "value": "98 μU/mL",
+    "ref": "< 3 μU/mL during hypoglycemia"
+   },
+   {
+    "name": "Serum C-peptide (same sample)",
+    "value": "0.1 ng/mL",
+    "ref": "≥ 0.6 ng/mL expected if insulin is endogenous"
+   },
+   {
+    "name": "Serum proinsulin (same sample)",
+    "value": "< 2 pmol/L",
+    "ref": "≥ 5 pmol/L expected if insulin is endogenous"
+   },
+   {
+    "name": "Plasma sulfonylurea and meglitinide screen",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Serum β-hydroxybutyrate",
+    "value": "0.1 mmol/L",
+    "ref": "< 2.7 mmol/L during hypoglycemia suggests insulin effect"
+   },
+   {
+    "name": "Hemoglobin A1c",
+    "value": "5.0%",
+    "ref": "< 5.7%"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "의도·동기로 가르는 신체 증상 관련 장애\n─────────────────────────────────────────────\n                    증상 생성      동기\n인위성 장애          의도적(기만)    내적 — 환자 역할\n꾀병(진단 아님)       의도적(기만)    외적 보상(돈·휴가·약물·법적)\n기능성 신경학적 증상   비의도적        — (신경학적 소견과 불일치)\n신체 증상 장애        비의도적        — (증상에 대한 과도한 생각·불안·행동)\n질병 불안 장애        증상 없거나 경미  — (병에 걸렸을까 하는 집착)\n외인성 인슐린: 인슐린 ↑ · C-펩타이드 ↓ · 프로인슐린 ↓ · 설폰요소제 음성\n인슐린종·설폰요소제: 인슐린 ↑ · C-펩타이드 ↑ · 프로인슐린 ↑ (설폰요소제는 선별 양성)",
+   "참고문헌": [
+    "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR). 2022.",
+    "Harrison's Principles of Internal Medicine, 22e. 418장 Hypoglycemia"
+   ]
+  },
+  "design": {
+   "target": "감별",
+   "decision": "외인성 인슐린으로 저혈당을 일으키면서 부인하고 외적 보상이 없으면, 꾀병이 아니라 자신에게 부과된 인위성 장애다.",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "꾀병(B)도 증상을 의도적으로 만들지만 목적이 외적 보상이다. 이 환자는 병가를 거절하고 청구가 없으며 오히려 근무로 돌아가려 한다 — 동기가 내적(환자 역할)이다.",
+   "steps": 3,
+   "chain": [
+    "저혈당 중 인슐린 98 + C-펩타이드 0.1·프로인슐린 억제 + 설폰요소제 음성 → 외인성 인슐린",
+    "인슐린 사용을 부인 + 복부 주사 자국·장내 세균 농양 반복 → 증상을 의도적으로 만들고 숨긴다(전환·신체 증상·질병 불안 장애가 아님)",
+    "병가 거절·청구 없음·근무 복귀를 원함 → 외적 보상 없음 → 꾀병이 아니라 인위성 장애"
+   ],
+   "key": [
+    {
+     "item": "Serum C-peptide (same sample)",
+     "why": "0.1 — 인슐린이 높은데 억제: 외인성 인슐린",
+     "also": []
+    },
+    {
+     "item": "Serum insulin (same sample)",
+     "why": "98 — 저혈당 중 부적절하게 높다",
+     "also": []
+    },
+    {
+     "item": "She says she has never injected insulin",
+     "why": "부인 — 기만적 행동",
+     "also": []
+    },
+    {
+     "item": "There are several healed puncture marks on the lower abdomen",
+     "why": "자가 주사의 흔적",
+     "also": []
+    },
+    {
+     "item": "recurrent skin abscesses on her thighs that grew mixed bowel flora",
+     "why": "오염 물질 자가 주입을 시사하는 반복 감염",
+     "also": []
+    },
+    {
+     "item": "she has declined offers of medical leave and has no pending disability, insurance or legal claims",
+     "why": "외적 보상 없음 — 꾀병 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Plasma sulfonylurea and meglitinide screen",
+     "why": "음성 — 인슐린 분비 촉진제 복용 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin A1c",
+     "why": "5.0% — 당뇨병 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "her younger sister has type 1 diabetes and uses an insulin pump",
+     "why": "인슐린 접근 경로(직업 외에도)",
+     "also": []
+    }
+   ],
+   "summary": "저혈당 중 인슐린이 높고 C-펩타이드가 억제된 것은 외인성 인슐린이며, 환자는 이를 부인하고 주사 자국·자가 주입 감염이 있다 — 의도적으로 증상을 만든다. 병가를 거절하고 청구가 없어 외적 보상이 없으므로 꾀병이 아니라 자신에게 부과된 인위성 장애다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 검사 결과에 환자가 근무 배치 전환을 피하려고 장기 병가와 산재 보상을 신청해 둔 상태라면, 외적 보상이 목적인 꾀병이 더 맞다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.psy.factitious-disorder.malingering-differential",
+  "distractors": {
+   "B": {
+    "tempting": "증상을 일부러 만들고 거짓말까지 한다 — 꾀병이다.",
+    "answer_first": "꾀병과 인위성 장애는 둘 다 의도적이지만 동기가 다르다. 꾀병은 외적 보상(돈·휴가·약·법적 이득)이 목적인데, 이 환자는 병가를 거절했고 청구가 없으며 오히려 근무로 돌아가려 한다 — 동기는 환자 역할 자체다.",
+    "discriminator": "「she has declined offers of medical leave and has no pending disability, insurance or legal claims」.",
+    "when_right": "같은 행동이 병가·보상금·소송·약물 같은 외적 이득을 노릴 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
  }
 ];
