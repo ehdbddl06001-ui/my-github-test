@@ -176,6 +176,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.rheum.methotrexate-toxicity.leucovorin-rescue",
+  "qversion": 2,
   "distractors": {
    "C": {
     "tempting": "메토트렉세이트 복용자에게 엽산을 함께 주므로 엽산 보충이 해독이라고 생각하기 쉽다.",
@@ -189,6 +190,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "글루카르피다아제는 고용량 메토트렉세이트에서 신기능 저하로 배설이 늦을 때 쓴다. 저용량 투약 오류이고 신기능이 정상인 이 환자의 표준 해독제는 류코보린이다.",
     "discriminator": "크레아티닌 0.8 mg/dL, 저용량 경구 복용.",
     "when_right": "고용량 메토트렉세이트 뒤 급성 신손상으로 혈중 농도가 높게 지속될 때.",
+    "split": ""
+   },
+   "D": {
+    "tempting": "고용량 메토트렉세이트 요법에서 실제로 소변을 알칼리화하므로 메토트렉세이트에 쓰는 처치로 익숙하고, 약을 빨리 내보내면 해독될 것처럼 보인다.",
+    "answer_first": "소변 알칼리화와 수액은 고용량 요법에서 세뇨관 결정 침착(신부전)을 막는 처치다. 골수·점막 독성은 디히드로엽산 환원효소 차단으로 환원형 엽산이 고갈된 결과라 그 차단을 우회하는 류코보린이 해독제다.",
+    "discriminator": "15 mg 경구 저용량 복용, 크레아티닌 0.8 mg/dL 로 신기능 정상 — 결정 침착을 막을 고용량 정맥 투여 상황이 아니다.",
+    "when_right": "고용량 메토트렉세이트를 정맥으로 투여할 때 신장 손상을 막으려 수액과 함께 시행하는 처치의 기전을 물을 때.",
     "split": ""
    }
   },

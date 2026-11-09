@@ -166,6 +166,20 @@ drugs:
   라니비주맙: ranibizumab
   베바시주맙: bevacizumab
   브롤루시주맙: brolucizumab
+  류코보린: leucovorin
+  모르핀: morphine
+  날록손: naloxone
+  플루오로우라실: fluorouracil
+  탄산수소나트륨: sodium bicarbonate
+  메틸도파: methyldopa
+  소탈롤: sotalol
+  이바브라딘: ivabradine
+  리튬: lithium
+  도네페질: donepezil
+  프로포폴: propofol
+  테오필린: theophylline
+  테르부탈린: terbutaline
+
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
   칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}
