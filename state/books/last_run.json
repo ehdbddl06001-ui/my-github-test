@@ -1,12 +1,13 @@
 {
- "started": "2026-11-08T09:52:05+09:00",
+ "started": "2026-11-09T10:08:29+09:00",
  "built": [
-  "순환기내과"
+  "정형외과",
+  "피부과",
+  "순환기내과",
+  "류마티스내과"
  ],
  "skipped": [
   "응급의학과",
-  "정형외과",
-  "피부과",
   "내분비내과",
   "안과",
   "외과",
@@ -14,7 +15,6 @@
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
-  "류마티스내과",
   "호흡기내과",
   "감염내과",
   "소화기내과",
@@ -29,11 +29,23 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "순환기내과": []
+  "정형외과": [],
+  "피부과": [],
+  "순환기내과": [],
+  "류마티스내과": []
  },
  "notes": {
-  "순환기내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 23쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 5%) — 좌우로 오가며 읽힌다"
+  "정형외과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 왼쪽 단 아래가 비어 있다(빈 공간 41%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)"
+  ],
+  "피부과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 35%)"
+  ],
+  "순환기내과": [],
+  "류마티스내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 47쪽 왼쪽 단 아래가 비어 있다(빈 공간 43%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 47쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
   ]
  },
  "concept_errors": [
@@ -45,13 +57,77 @@
   "content/concepts/obstetrics-gynecology/cn.obgyn.gestational-diabetes.insulin-indication.md: [WARN] 해리슨 대조 없음 — 슬롯 ob.medical-complications = 해리슨 22판 410장. `outline.py --harrison ob.medical-complications` 로 그 장을 읽고 harrison-22 출처(verified: text)와 [[harrison-22: 장 p.N]] 을 단다",
   "content/concepts/obstetrics-gynecology/cn.obgyn.hirsutism.ncah-17ohp-exclusion.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/obstetrics-gynecology/cn.obgyn.hirsutism.ncah-17ohp-exclusion.md: [WARN] sources[3] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
+  "content/concepts/orthopedics/cn.ortho.craniocervical-dislocation.no-traction-fusion.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/pathology/cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type.md: [WARN] sources[1] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/rheumatology/cn.rheum.behcet.clinical-diagnosis.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
+  "정형외과": {
+   "tried": 295,
+   "diagram_after_section": {
+    "u-cn-ortho-scaphoid-fracture-occult-imaging": 12,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 0,
+    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
+    "u-cn-ortho-ulnar-neuropathy-localization": 11,
+    "u-cn-ortho-ulnar-neuropathy-localization#shrink": 0.88,
+    "u-cn-ortho-ulnar-neuropathy-localization#pad": 0,
+    "u-cn-ortho-ulnar-neuropathy-localization#col": false,
+    "u-cn-ortho-craniocervical-dislocation-no-traction-fusion": 4,
+    "u-cn-ortho-craniocervical-dislocation-no-traction-fusion#shrink": 1.0,
+    "u-cn-ortho-craniocervical-dislocation-no-traction-fusion#pad": 0,
+    "u-cn-ortho-craniocervical-dislocation-no-traction-fusion#col": false,
+    "u-cn-ortho-odontoid-fracture-diagnosis#figscale:f1": 0.85,
+    "u-cn-ortho-odontoid-fracture-diagnosis": 14,
+    "u-cn-ortho-odontoid-fracture-diagnosis#shrink": 1.0,
+    "u-cn-ortho-odontoid-fracture-diagnosis#pad": 42,
+    "u-cn-ortho-odontoid-fracture-diagnosis#col": false,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis": 14,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis#shrink": 1.0,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis#pad": 0,
+    "u-cn-ortho-atlantoaxial-rotatory-subluxation-diagnosis#col": false,
+    "u-cn-ortho-achilles-rupture-thompson-test": 14,
+    "u-cn-ortho-achilles-rupture-thompson-test#shrink": 1.0,
+    "u-cn-ortho-achilles-rupture-thompson-test#pad": 28,
+    "u-cn-ortho-achilles-rupture-thompson-test#col": false,
+    "u-cn-ortho-salter-harris-ii-healing-callus-cast": 9,
+    "u-cn-ortho-salter-harris-ii-healing-callus-cast#shrink": 1.0,
+    "u-cn-ortho-salter-harris-ii-healing-callus-cast#pad": 0,
+    "u-cn-ortho-salter-harris-ii-healing-callus-cast#col": true,
+    "u-cn-ortho-scfe-in-situ-fixation": 16,
+    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
+    "u-cn-ortho-scfe-in-situ-fixation#pad": 28,
+    "u-cn-ortho-scfe-in-situ-fixation#col": false,
+    "u-cn-ortho-torus-fracture-splint-no-reduction": 17,
+    "u-cn-ortho-torus-fracture-splint-no-reduction#shrink": 1.0,
+    "u-cn-ortho-torus-fracture-splint-no-reduction#pad": 0,
+    "u-cn-ortho-torus-fracture-splint-no-reduction#col": false
+   }
+  },
+  "피부과": {
+   "tried": 152,
+   "diagram_after_section": {
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 12,
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 17,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 0,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup": 15,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup#shrink": 1.0,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup#pad": 0,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup#col": false,
+    "u-cn-derm-sweet-syndrome-diagnosis": 17,
+    "u-cn-derm-sweet-syndrome-diagnosis#shrink": 1.0,
+    "u-cn-derm-sweet-syndrome-diagnosis#pad": 0,
+    "u-cn-derm-sweet-syndrome-diagnosis#col": false
+   }
+  },
   "순환기내과": {
-   "tried": 486,
+   "tried": 382,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -65,58 +141,151 @@
     "u-cn-cardio-palpitations-arrhythmia-evaluation#shrink": 1.0,
     "u-cn-cardio-palpitations-arrhythmia-evaluation#pad": 42,
     "u-cn-cardio-palpitations-arrhythmia-evaluation#col": false,
-    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis": 12,
-    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis#shrink": 1.0,
-    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis#pad": 14,
-    "u-cn-cardio-jugular-venous-pulse-waveform-diagnosis#col": false,
+    "u-cn-cardio-stroke-volume-preload-afterload-contractility": 13,
+    "u-cn-cardio-stroke-volume-preload-afterload-contractility#shrink": 1.0,
+    "u-cn-cardio-stroke-volume-preload-afterload-contractility#pad": 0,
+    "u-cn-cardio-stroke-volume-preload-afterload-contractility#col": true,
+    "u-cn-cardio-complete-rbbb-ecg-recognition#fig:f2": 7,
+    "u-cn-cardio-complete-rbbb-ecg-recognition": 2,
+    "u-cn-cardio-complete-rbbb-ecg-recognition#shrink": 1.0,
+    "u-cn-cardio-complete-rbbb-ecg-recognition#pad": 0,
+    "u-cn-cardio-complete-rbbb-ecg-recognition#col": false,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi": 11,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#shrink": 1.0,
-    "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#pad": 0,
-    "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#col": true,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity": 18,
+    "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#pad": 14,
+    "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#col": false,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity": 10,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 1.0,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 42,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 0,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
-    "u-cn-cardio-ischemic-ecg-localization-culprit-artery": 11,
-    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#shrink": 0.76,
+    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#figscale:f1": 0.85,
+    "u-cn-cardio-ischemic-ecg-localization-culprit-artery": 9,
+    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#shrink": 1.0,
     "u-cn-cardio-ischemic-ecg-localization-culprit-artery#pad": 0,
-    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#col": false,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 16,
+    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#col": true,
+    "u-cn-cardio-cardiac-mri-lge-pattern-etiology": 16,
+    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#shrink": 0.88,
+    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#pad": 0,
+    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#col": false,
+    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential": 15,
+    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#shrink": 1.0,
+    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#pad": 0,
+    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#col": false,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 15,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first#pad": 0,
     "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": true,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition": 11,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition#shrink": 1.0,
-    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 42,
+    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 14,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition#col": false,
     "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 0.76,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 0,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false
    }
+  },
+  "류마티스내과": {
+   "tried": 576,
+   "diagram_after_section": {
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#pad": 42,
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#col": false,
+    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis": 16,
+    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#shrink": 1.0,
+    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#pad": 28,
+    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#col": false,
+    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#fig:f1": 6,
+    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis": 12,
+    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#shrink": 0.76,
+    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#pad": 0,
+    "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#col": false,
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic": 17,
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic#shrink": 1.0,
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic#pad": 14,
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic#col": false,
+    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri": 11,
+    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri#shrink": 1.0,
+    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri#pad": 0,
+    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri#col": true,
+    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa": 17,
+    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#shrink": 0.88,
+    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#pad": 0,
+    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#col": false,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy": 16,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#shrink": 1.0,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#pad": 0,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#col": true,
+    "u-cn-rheum-behcet-clinical-diagnosis": 14,
+    "u-cn-rheum-behcet-clinical-diagnosis#shrink": 1.0,
+    "u-cn-rheum-behcet-clinical-diagnosis#pad": 42,
+    "u-cn-rheum-behcet-clinical-diagnosis#col": false,
+    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis": 12,
+    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#shrink": 1.0,
+    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#pad": 0,
+    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#col": false,
+    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first": 13,
+    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#shrink": 1.0,
+    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#pad": 28,
+    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#col": false,
+    "u-cn-rheum-cppd-crystal-diagnosis#fig:f1": 7,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 4,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#col": false,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 15,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 0,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": true
+   }
   }
  },
  "result": "ok",
- "finished": "2026-11-08T10:27:13+09:00",
+ "finished": "2026-11-09T12:09:36+09:00",
  "upload": {
   "result": "ok",
   "items": {
+   "정형외과": {
+    "file": "MedKOS_학습서_정형외과.pdf",
+    "status": "uploaded",
+    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
+    "kept_id": true,
+    "md5": "f52508dcc0888818e5a8045fb7f1970f",
+    "archive": "MedKOS_학습서_정형외과_v20_2026-11-09.pdf"
+   },
+   "피부과": {
+    "file": "MedKOS_학습서_피부과.pdf",
+    "status": "uploaded",
+    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "kept_id": true,
+    "md5": "c87705d252948187582be0a64d0e2047",
+    "archive": "MedKOS_학습서_피부과_v15_2026-11-09.pdf"
+   },
    "순환기내과": {
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "aa2fa344375d110c7548b690d770f818",
-    "archive": "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf"
+    "md5": "2a2b37153c830d60068ca68f97d6bb4b",
+    "archive": "MedKOS_학습서_순환기내과_v25_2026-11-09.pdf"
+   },
+   "류마티스내과": {
+    "file": "MedKOS_학습서_류마티스내과.pdf",
+    "status": "uploaded",
+    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
+    "kept_id": true,
+    "md5": "eec367f45409cd26bc71478879940c1c",
+    "archive": "MedKOS_학습서_류마티스내과_v36_2026-11-09.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "0b23485fd13de9f81ddfeac115cef3cb"
+    "md5": "4c46f663e0850f38b343db37313df6f0"
    }
   },
-  "at": "2026-11-08T10:27:13+09:00"
+  "at": "2026-11-09T12:09:36+09:00"
  }
 }

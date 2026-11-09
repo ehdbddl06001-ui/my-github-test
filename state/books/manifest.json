@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "ad1a7a37fc2e48ab2c9c",
-   "version": 24,
-   "date": "2026-11-08",
+   "hash": "801aaa89b8ea035e2aa9",
+   "version": 25,
+   "date": "2026-11-09",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 41,
+   "pages": 44,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -52,21 +52,21 @@
     },
     "cn.cardio.jugular-venous-pulse.waveform-diagnosis": {
      "title": "경정맥 파형 — a파·v파·y 하강이 원인을 가른다",
-     "page": 12,
+     "page": 11,
      "concept_hash": "3365da2068c59196",
      "concept_version": 1
     },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 14,
+     "page": 13,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.complete-rbbb.ecg-recognition": {
      "title": "완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S",
      "page": 15,
-     "concept_hash": "61e5dd306a69c419",
-     "concept_version": 2
+     "concept_hash": "7027023e57ac71bf",
+     "concept_version": 4
     },
     "cn.cardio.complete-lbbb.discordant-st-not-stemi": {
      "title": "완전 좌각차단 — V1~V3 ST 상승은 반대 방향 이차 변화",
@@ -98,54 +98,66 @@
      "concept_hash": "77a81492665ebd5a",
      "concept_version": 1
     },
+    "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry": {
+     "title": "빈맥의 세 기전 — 자동능·촉발·회귀가 치료를 정한다",
+     "page": 25,
+     "concept_hash": "2ac159dfa791c257",
+     "concept_version": 1
+    },
+    "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
+     "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
+     "page": 27,
+     "concept_hash": "d685cd64da546109",
+     "concept_version": 2
+    },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 25,
+     "page": 28,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 27,
+     "page": 30,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 29,
+     "page": 32,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 32,
+     "page": 35,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 34,
+     "page": 37,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 37,
+     "page": 40,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 40,
+     "page": 43,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "aa2fa344375d110c7548b690d770f818",
-    "version": 24,
-    "uploaded": "2026-11-08T10:27:13+09:00"
+    "md5": "2a2b37153c830d60068ca68f97d6bb4b",
+    "version": 25,
+    "uploaded": "2026-11-09T12:09:36+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -171,17 +183,19 @@
     "MedKOS_학습서_순환기내과_v21_2026-11-05.pdf",
     "MedKOS_학습서_순환기내과_v22_2026-11-06.pdf",
     "MedKOS_학습서_순환기내과_v23_2026-11-07.pdf",
-    "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf"
+    "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf",
+    "MedKOS_학습서_순환기내과_v25_2026-11-09.pdf"
    ],
    "changes": [
-    "내용 갱신: 심장 MRI 지연조영 — 층과 분포가 원인을 가른다 (정리본 v1 → v2)",
-    "새 단원: 심도자 압력 — 흡기 때 두 심실이 엇갈리면 수축성 심낭염"
+    "내용 갱신: 완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S (정리본 v2 → v4)",
+    "새 단원: 빈맥의 세 기전 — 자동능·촉발·회귀가 치료를 정한다",
+    "새 단원: 발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥"
    ]
   },
   "피부과": {
-   "hash": "64dc4e8c8ea8c0da4197",
-   "version": 14,
-   "date": "2026-11-07",
+   "hash": "ad1bff85f9648cc1e0f7",
+   "version": 15,
+   "date": "2026-11-09",
    "file": "MedKOS_학습서_피부과.pdf",
    "pages": 16,
    "template_version": 11,
@@ -213,7 +227,7 @@
     "cn.derm.sweet-syndrome.diagnosis": {
      "title": "스위트증후군 — 열과 아픈 부은 판, 진피 호중구",
      "page": 9,
-     "concept_hash": "fa6d357e80e5eb20",
+     "concept_hash": "f6a99f66de0b5b5e",
      "concept_version": 1
     },
     "cn.derm.scabies.treat-with-contacts": {
@@ -231,9 +245,9 @@
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "a9d84d48f13920d9aea1c2ca7afdebe0",
-    "version": 14,
-    "uploaded": "2026-11-07T10:59:14+09:00"
+    "md5": "c87705d252948187582be0a64d0e2047",
+    "version": 15,
+    "uploaded": "2026-11-09T12:09:36+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -249,10 +263,11 @@
     "MedKOS_학습서_피부과_v11_2026-10-05.pdf",
     "MedKOS_학습서_피부과_v12_2026-10-06.pdf",
     "MedKOS_학습서_피부과_v13_2026-10-16.pdf",
-    "MedKOS_학습서_피부과_v14_2026-11-07.pdf"
+    "MedKOS_학습서_피부과_v14_2026-11-07.pdf",
+    "MedKOS_학습서_피부과_v15_2026-11-09.pdf"
    ],
    "changes": [
-    "새 단원: 스위트증후군 — 열과 아픈 부은 판, 진피 호중구"
+    "내용 수정: 스위트증후군 — 열과 아픈 부은 판, 진피 호중구"
    ]
   },
   "신장내과": {
@@ -491,11 +506,11 @@
    ]
   },
   "정형외과": {
-   "hash": "33d467cf5adfccc9b3ae",
-   "version": 19,
-   "date": "2026-11-07",
+   "hash": "ef0fff563298a1e7698d",
+   "version": 20,
+   "date": "2026-11-09",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 25,
+   "pages": 28,
    "template_version": 11,
    "units": {
     "cn.ortho.shoulder-dislocation-older.rotator-cuff-tear": {
@@ -528,54 +543,66 @@
      "concept_hash": "90d718277d9a5f80",
      "concept_version": 2
     },
+    "cn.ortho.craniocervical-dislocation.no-traction-fusion": {
+     "title": "두개경추 탈구 — 견인하지 말고 고정 후 유합",
+     "page": 12,
+     "concept_hash": "803c8c8f867a9848",
+     "concept_version": 2
+    },
     "cn.ortho.odontoid-fracture.diagnosis": {
      "title": "치아돌기 골절 — 골절선이 허리에 머무나, 몸통으로 가나",
-     "page": 12,
+     "page": 14,
      "concept_hash": "bc5041f727e2b115",
      "concept_version": 2
     },
     "cn.ortho.atlantoaxial-rotatory-subluxation.diagnosis": {
      "title": "환축추 회전 아탈구 — 고리가 통째로 돌았나, 끊어졌나",
-     "page": 14,
+     "page": 16,
      "concept_hash": "327d614915e416f7",
      "concept_version": 2
     },
     "cn.ortho.achilles-rupture.thompson-test": {
      "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
-     "page": 16,
+     "page": 18,
      "concept_hash": "c55a14c1972e4b5a",
      "concept_version": 2
     },
     "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication": {
      "title": "아킬레스힘줄병증 — 스테로이드 주사는 파열을 부른다",
-     "page": 17,
+     "page": 19,
      "concept_hash": "2e8e17a29fd1ce6f",
      "concept_version": 1
     },
+    "cn.ortho.salter-harris-ii.healing-callus-cast": {
+     "title": "놓친 Salter-Harris II — 골막 신생골은 가골, 석고 고정",
+     "page": 21,
+     "concept_hash": "7b2e868f3b44f464",
+     "concept_version": 2
+    },
     "cn.ortho.scfe.adolescent-limp-diagnosis": {
      "title": "대퇴골두골단분리증 — 무릎 통증은 엉덩관절에서 찾는다",
-     "page": 18,
+     "page": 22,
      "concept_hash": "8ee8f0054783bbcf",
      "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 20,
+     "page": 24,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
-     "page": 22,
+     "page": 26,
      "concept_hash": "9b5d855ad7a5d677",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "3104abc77be4075aadde06917101def6",
-    "version": 19,
-    "uploaded": "2026-11-07T10:59:14+09:00"
+    "md5": "f52508dcc0888818e5a8045fb7f1970f",
+    "version": 20,
+    "uploaded": "2026-11-09T12:09:36+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -596,10 +623,12 @@
     "MedKOS_학습서_정형외과_v16_2026-11-02.pdf",
     "MedKOS_학습서_정형외과_v17_2026-11-03.pdf",
     "MedKOS_학습서_정형외과_v18_2026-11-05.pdf",
-    "MedKOS_학습서_정형외과_v19_2026-11-07.pdf"
+    "MedKOS_학습서_정형외과_v19_2026-11-07.pdf",
+    "MedKOS_학습서_정형외과_v20_2026-11-09.pdf"
    ],
    "changes": [
-    "새 단원: 노인 어깨 탈구 뒤 거상 불가 — 회전근개부터"
+    "새 단원: 두개경추 탈구 — 견인하지 말고 고정 후 유합",
+    "새 단원: 놓친 Salter-Harris II — 골막 신생골은 가골, 석고 고정"
    ]
   },
   "외과": {
@@ -821,11 +850,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "8792f42b1fe250a9e4e4",
-   "version": 35,
-   "date": "2026-11-03",
+   "hash": "ea7043a971aa3c3d9720",
+   "version": 36,
+   "date": "2026-11-09",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 52,
+   "pages": 53,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -956,52 +985,52 @@
     },
     "cn.rheum.osteoarthritis.exercise-weight-loss-first": {
      "title": "골관절염 — 운동·체중 감량이 바탕, 약은 보조",
-     "page": 41,
+     "page": 42,
      "concept_hash": "4f81357b47a8bc91",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 43,
-     "concept_hash": "6295d1fb01e16a3b",
-     "concept_version": 1
+     "page": 44,
+     "concept_hash": "b80334e0828d60e6",
+     "concept_version": 2
     },
     "cn.rheum.gout.hla-b5801-before-allopurinol": {
      "title": "통풍 — allopurinol(알로푸리놀) 전 HLA-B*58:01 검사",
-     "page": 44,
+     "page": 45,
      "concept_hash": "1c3a85b4be944c24",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 46,
+     "page": 47,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 48,
+     "page": 49,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 50,
+     "page": 51,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 51,
+     "page": 52,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "cecbdabe749ead7f142a4513dfbabe29",
-    "version": 35,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "eec367f45409cd26bc71478879940c1c",
+    "version": 36,
+    "uploaded": "2026-11-09T12:09:36+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -1038,10 +1067,11 @@
     "MedKOS_학습서_류마티스내과_v32_2026-10-30.pdf",
     "MedKOS_학습서_류마티스내과_v33_2026-11-01.pdf",
     "MedKOS_학습서_류마티스내과_v34_2026-11-02.pdf",
-    "MedKOS_학습서_류마티스내과_v35_2026-11-03.pdf"
+    "MedKOS_학습서_류마티스내과_v35_2026-11-03.pdf",
+    "MedKOS_학습서_류마티스내과_v36_2026-11-09.pdf"
    ],
    "changes": [
-    "내용 갱신: 축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI (정리본 v1 → v2)"
+    "내용 갱신: 가성통풍 — 약한 양성 복굴절 마름모 결정 (정리본 v1 → v2)"
    ]
   },
   "호흡기내과": {
@@ -1625,13 +1655,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "0b23485fd13de9f81ddfeac115cef3cb",
+   "md5": "4c46f663e0850f38b343db37313df6f0",
    "version": null,
-   "uploaded": "2026-11-08T10:27:13+09:00"
+   "uploaded": "2026-11-09T12:09:36+09:00"
   }
  },
- "updated": "2026-11-08"
+ "updated": "2026-11-09"
 }
