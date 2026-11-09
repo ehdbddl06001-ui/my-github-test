@@ -1427,8 +1427,29 @@
    "date": "2026-11-06",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1795": {
+   "id": "kmle-2026-1795",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Mouth Ulcers and Falling Blood Counts after a Dosing Error in a Woman with Rheumatoid Arthritis",
+   "style": "",
+   "modality": "",
+   "question": "이 환자에게 해독 목적으로 투여할 약물의 작용 기전은?",
+   "chosen": 3,
+   "chosenText": "소변을 알칼리화해 메토트렉세이트의 신장 배설을 늘린다",
+   "answer": 0,
+   "answerText": "디히드로엽산 환원효소를 거치지 않고 환원형 엽산을 공급한다",
+   "coreNote": "",
+   "differ": "",
+   "decision": "주 1회 메토트렉세이트를 매일 먹어 생긴 점막염과 범혈구감소다. 메토트렉세이트가 디히드로엽산 환원효소를 막아 테트라히드로엽산이 고갈되므로, 해독제는 그 효소를 거치지 않는 환원형 엽산이며 엽산은 같은 효소가 필요해 해독제가 되지 못한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-09",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-06T05:43:06.061Z"
+ "updated": "2026-11-09T12:54:07.405Z"
 }
