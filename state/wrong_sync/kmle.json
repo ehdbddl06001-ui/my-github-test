@@ -1448,8 +1448,29 @@
    "date": "2026-11-09",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1793": {
+   "id": "kmle-2026-1793",
+   "exam": "kmle",
+   "subject": "Pulmonology",
+   "step": "",
+   "type": "Drowsiness, Slow Breathing and Low Oxygen on the First Night after Knee Replacement",
+   "style": "",
+   "modality": "",
+   "question": "이 환자 저산소혈증의 주된 기전은?",
+   "chosen": 4,
+   "chosenText": "흡입 산소 분압 저하",
+   "answer": 1,
+   "answerText": "폐포 저환기",
+   "coreNote": "",
+   "differ": "",
+   "decision": "오피오이드 과량으로 호흡이 느려져 PaCO2 가 64 mmHg 로 오른 급성 호흡산증이다. 폐포 기체 방정식으로 계산한 폐포-동맥 산소분압차가 약 10 mmHg 로 정상이고 해수면 실내공기이므로, 저산소혈증은 폐 실질 문제가 아니라 폐포 저환기로 PAO2 가 낮아진 결과다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-09",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-09T12:54:07.405Z"
+ "updated": "2026-11-09T13:10:00.266Z"
 }
