@@ -4,8 +4,8 @@ type: concept
 topic: Dermatology
 see_also: [Hematology-Oncology]
 date: 2026-11-06
-updated: 2026-11-06
-version: 1
+updated: 2026-11-10
+version: 2
 outline: h58            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 22판 61장 Skin Manifestations of Internal Disease
 confidence: medium
 review_status: unreviewed
@@ -155,19 +155,29 @@ variants:
     answer: "B"
     explanation: "나이·성별·앞선 감염·병변 자리·제시 순서가 달라도 결정 단서는 같다 — 열·호중구 증가, 갑자기 생긴 아프고 부은 가짜 물집 판, 항생제 무반응·배양·염색 음성, 혈관염·지방층염 없는 진피 호중구 침윤 [[harrison-22: 61장 p.405]]. 스위트증후군이고, 고령 남자라 숨은 혈액암(급성 골수백혈병·골수이형성)을 혈구 검사·말초혈액 도말로 먼저 찾는다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 스위트증후군 — 진피 위쪽 부종과 진피의 촘촘한 호중구 침윤(혈관염 없음)
-  at: 가르는 소견 — 자리·모양·조직
-  note: 얼굴 사진이 아닌 조직 사진만 — 임상 사진이 들어오면 얼굴·식별 표지가 없는 팔 사진만 받는다
-  query: '"Sweet syndrome" AND "neutrophilic infiltrate" AND "case report"'
-  caption_terms:
-  - neutrophil
-  - dermis
-  modality: HISTOLOGY_HE
 figures_rejected:
 - asset: PMC-PMC13196428_Fig1
   reason: 조직 패널(B)이 237×157 픽셀로 너무 작다 — 소견은 맞으나 인쇄 해상도 미달, 더 큰 조직 그림 필요
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12643761_figure3-2-264-322-519.jpg
+  kind: histology
+  at: 가르는 소견 — 자리·모양·조직
+  shows: 스위트증후군 — 진피 위쪽 부종과 호중구 위주의 간질·혈관 주위 염증 세포 침윤(H&E ×100)
+  look_for:
+  - 표피 바로 아래 엷게 비어 보이는 진피 위쪽(부종)
+  - 그 아래 진피를 촘촘히 채운 작은 염증 세포(호중구 위주)
+  label: 「(A) Punch biopsy showing superficial and deep inflammatory infiltrate (hematoxylin-eosin, original magnification ×20). (B) Dermal edema is present (hematoxylin-eosin, original magnification ×40). (C) The inflammatory infiltrate is predominantly neutrophilic, with lymphocytes and histiocytes, in an interstitial and perivascular distribution (hematoxylin-eosin, original magnification ×100). (D) The infiltrate extends into the deeper dermis in a periadnexal distribution (hematoxylin-eosin, original magnification ×40).」 — A Case of Sweet Syndrome Complicating Ulcerative Colitis Treated With Upadacitinib
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: A Case of Sweet Syndrome Complicating Ulcerative Colitis Treated With Upadacitinib. ACG Case Reports Journal
+  doi: 10.14309/crj.0000000000001904
+  credit: 'A Case of Sweet Syndrome Complicating Ulcerative Colitis Treated With Upadacitinib. ACG Case Rep J. 2025 Nov 24;12(11):e01904. doi: 10.14309/crj.0000000000001904 (CC BY) — Figure 3.'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12643761/
+  asset: PMC-PMC12643761_Figure3
+  privacy_check: 4패널 모두 H&E 조직 절편뿐 — 얼굴·문신·이름·병원 표지·글자 없음(패널 문자 A–D 만, 크롭으로 C 만 남김)
+  crop: 2,264,322,519
 ---
 
 ## 가르는 소견 — 자리·모양·조직

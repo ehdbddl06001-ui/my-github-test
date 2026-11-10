@@ -179,6 +179,8 @@ drugs:
   프로포폴: propofol
   테오필린: theophylline
   테르부탈린: terbutaline
+  포메피졸: fomepizole
+  디설피람: disulfiram
 
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}

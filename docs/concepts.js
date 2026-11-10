@@ -25625,10 +25625,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Hematology-Oncology"
   ],
-  "version": 1,
-  "updated": "2026-11-06",
+  "version": 2,
+  "updated": "2026-11-10",
   "reviewStatus": "unreviewed",
-  "hash": "f6a99f66de0b5b5e",
+  "hash": "c684f167bb3c76e6",
   "summary": [
    "결론: 열·호중구 증가 + 갑자기 생긴 아프고 부은 붉은 판 + 혈관염 없는 진피 호중구 침윤 = 스위트증후군.",
    "시험 단서: 상기도 감염 뒤 중년 여자, 얼굴·목·팔의 가짜 물집 판, 항생제 무반응 (Sweet syndrome).",
@@ -25866,7 +25866,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12643761_figure3-2-264-322-519.jpg",
+    "kind": "histology",
+    "at": "가르는 소견 — 자리·모양·조직",
+    "shows": "스위트증후군 — 진피 위쪽 부종과 호중구 위주의 간질·혈관 주위 염증 세포 침윤(H&E ×100)",
+    "look": [
+     "표피 바로 아래 엷게 비어 보이는 진피 위쪽(부종)",
+     "그 아래 진피를 촘촘히 채운 작은 염증 세포(호중구 위주)"
+    ],
+    "label": "「(A) Punch biopsy showing superficial and deep inflammatory infiltrate (hematoxylin-eosin, original magnification ×20). (B) Dermal edema is present (hematoxylin-eosin, original magnification ×40). (C) The inflammatory infiltrate is predominantly neutrophilic, with lymphocytes and histiocytes, in an interstitial and perivascular distribution (hematoxylin-eosin, original magnification ×100). (D) The infiltrate extends into the deeper dermis in a periadnexal distribution (hematoxylin-eosin, original magnification ×40).」 — A Case of Sweet Syndrome Complicating Ulcerative Colitis Treated With Upadacitinib",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "A Case of Sweet Syndrome Complicating Ulcerative Colitis Treated With Upadacitinib. ACG Case Reports Journal",
+    "doiUrl": "https://doi.org/10.14309/crj.0000000000001904",
+    "citedBy": null,
+    "credit": "A Case of Sweet Syndrome Complicating Ulcerative Colitis Treated With Upadacitinib. ACG Case Rep J. 2025 Nov 24;12(11):e01904. doi: 10.14309/crj.0000000000001904 (CC BY) — Figure 3.",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12643761/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "열과 아픈 붉은 판 — 감염에서 호중구 피부병까지",
   "geo": {
    "title": "열과 아픈 붉은 판 — 감염에서 호중구 피부병까지",
@@ -93639,6 +93661,928 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "usmle-2026-0030"
+  ],
+  "hasErrors": false
+ },
+ "cn.pharm.methanol-poisoning.fomepizole-mechanism": {
+  "id": "cn.pharm.methanol-poisoning.fomepizole-mechanism",
+  "title": "메탄올 중독 — 해독제는 첫 효소 ADH 를 막는다",
+  "objective": "메탄올 중독에서 포메피졸이 알코올 탈수소효소를 경쟁적으로 억제해 포름산 생성을 막는 기전을 보조 치료의 기전과 구별한다",
+  "objectiveKind": "기전",
+  "condition": "메탄올 중독(methanol poisoning)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Pharmacology",
+   "Nephrology",
+   "Ophthalmology"
+  ],
+  "version": 1,
+  "updated": "2026-11-10",
+  "reviewStatus": "unreviewed",
+  "hash": "4159b812dc26afc6",
+  "summary": [
+   "결론: 포메피졸(fomepizole)은 알코올 탈수소효소(ADH)를 경쟁 억제해 메탄올이 포름산이 되는 첫 단계를 막는다.",
+   "시험 단서: 밀주·워셔액 뒤 늦게 온 「눈보라」 시야·시신경 유두 충혈 + 음이온 차·삼투압 차 모두 큰 산증(osmolal gap).",
+   "왜: 독은 메탄올이 아니라 대사물 포름산이다 — 삼투압 차가 남아 있으면 막을 메탄올이 아직 많다.",
+   "엽산·폴린산은 이미 생긴 포름산의 대사를 돕는 보조 치료, 탄산수소나트륨은 산증 교정 — 해독제가 아니다.",
+   "삼투압 차 = 측정 − (2Na + BUN/2.8 + 포도당/18), 10 넘으면 의미 있다. 늦게 오면 차는 줄고 음이온 차가 커진다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 ADH 억제가 해독제인가",
+    "deep": false,
+    "html": "<ul>\n<li>메탄올 자체는 에탄올처럼 중추신경을 누를 뿐이고, 산증과 망막 독성은 대사물 <strong>포름산</strong>이 만든다 <sup>[1 470장 p.3714]</sup>.</li>\n<li>포메피졸과 에탄올은 <strong>알코올 탈수소효소(alcohol dehydrogenase, ADH)</strong> 를 두고 메탄올과 경쟁해 그 첫 단계를 막는다 <sup>[1 58장 p.371]</sup> — 포름알데히드도 포름산도 생기지 않는다.</li>\n<li>삼투압 차가 크다 = 아직 대사되지 않은 모 알코올이 많다 = 막으면 앞으로 생길 독을 막는다.</li>\n<li>엽산·폴린산(대사 촉진)·탄산수소나트륨(산증 교정)은 보조 치료다 <sup>[1 470장 p.3714]</sup> — 표 「메탄올 대사의 단계와 약의 자리」.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 메탄올에서 포름산으로",
+    "deep": false,
+    "html": "<p>메탄올(분자량 32)은 흡수되면 혈장 삼투압을 올린다 — 그래서 삼투압 차가 음이온 차보다 먼저 나타난다 <sup>[1 58장 p.371]</sup>. 간의 ADH 가 메탄올을 포름알데히드로, 알데히드 탈수소효소가 포름산으로 바꾼다 <sup>[2†]</sup>. 해리슨은 포름알데히드와 포름산이 시신경·중추신경을 심하게 손상한다고 적는다 <sup>[1 58장 p.371]</sup>. 포름산은 미토콘드리아 호흡(시토크롬 c 산화효소)을 억제해 대사 요구가 큰 시신경·망막을 먼저 망가뜨리고 <sup>[2†]</sup>, 젖산·케톤산이 더해져 산증이 깊어진다 <sup>[1 58장 p.371]</sup>. 포름산은 엽산 의존 경로로 CO2 가 되는데 사람에서는 이 경로가 느려 쌓인다 <sup>[2†]</sup> — 폴린산·엽산이 「대사를 돕는」 이유다 <sup>[1 470장 p.3714]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 메탄올이라는 근거와 시점",
+    "deep": false,
+    "html": "<ul>\n<li>초기: 에탄올 유사 중독·구역·구토와 삼투압 차. 늦게: 음이온 차 산증, 시야 흐림·점·실명, 망막 부종·충혈 <sup>[1 470장 p.3714]</sup>. 섭취 뒤 수 시간~하루 늦게 증상이 오는 것은 독이 대사물이기 때문이다.</li>\n<li>높은 음이온 차 + 삼투압 차 → 에틸렌글리콜·메탄올을 강하게 시사 <sup>[1 58장 p.371]</sup>. 에틸렌글리콜은 옥살산칼슘 결정뇨·신부전, 메탄올은 시야·망막 이상이 가른다 <sup>[1 470장 p.3714]</sup>. 아이소프로필 알코올은 삼투압 차만 있고 음이온 차 산증이 없다 <sup>[1 58장 p.371]</sup>.</li>\n<li>음성 결과의 한계: 삼투압 차는 시간이 지나면 줄어든다 — 늦게 온 환자에서 차가 작아도 메탄올을 배제하지 못한다. 에탄올이 함께 있으면 차의 일부를 에탄올이 설명한다.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 해독제·보조·투석",
+    "deep": false,
+    "html": "<ul>\n<li>해독제: 포메피졸이 1차, 에탄올은 없을 때 <sup>[1 58장 p.371]</sup>. 적응 기준은 표 대신 기준 「포메피졸·에탄올 적응」.</li>\n<li>보조: 탄산수소나트륨, 고용량 폴린산·엽산, 최근 섭취면 위 흡인 <sup>[1 470장 p.3714]</sup>.</li>\n<li>투석: 지속 산증·호전 없음·신기능 저하, 또는 메탄올 &gt; 50 mg/dL 로 제거를 앞당길 때 <sup>[1 470장 p.3714]</sup>. 포메피졸은 메탄올을 없애지 않고 대사만 멈추므로, 남은 메탄올·포름산을 치우는 것은 투석이다.</li>\n<li>재평가: pH·음이온 차·삼투압 차의 추이, 시력. 포메피졸은 pH 정상 또는 삼투압 차 &lt; 10 까지 <sup>[1 58장 p.371]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>삼투압 차와 음이온 차가 모두 크면 농도를 기다리지 않는다 <sup>[1 58장 p.371]</sup>.</li>\n<li>ALDH 단계·엽산 의존 포름산 산화·시토크롬 c 산화효소 억제는 해리슨 두 장에 없다 — 독성학 교과서 근거이며 원문 미대조(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 에탄올을 해독제로 쓰는가</strong> — 시험 기준: 포메피졸이 1차, 에탄올은 포메피졸이 없을 때 <sup>[1 58장 p.371]</sup> / 다른 기준: 해리슨 표 470-4 는 「에탄올 또는 포메피졸」로 나란히 적는다 <sup>[1 470장 p.3714]</sup> / 왜 다른가: 같은 원리(ADH 경쟁)이고 에탄올은 의식 저하·혈중 농도 조절이 어렵다는 차이를 58장이 적는다 / 시험에서는: USMLE·KMLE 모두 「가장 적절한 해독제」는 포메피졸, 기전은 둘 다 ADH 경쟁 억제.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "메탄올 대사의 단계와 약의 자리",
+    "columns": [
+     "단계",
+     "효소·작용",
+     "약",
+     "역할"
+    ],
+    "rows": [
+     [
+      "메탄올 → 포름알데히드",
+      "알코올 탈수소효소(ADH) <sup>[1 58장 p.371]</sup>",
+      "포메피졸·에탄올 — 경쟁 억제 <sup>[1 58장 p.371]</sup>",
+      "해독제 — 독성 대사물 생성 차단"
+     ],
+     [
+      "포름알데히드 → 포름산",
+      "알데히드 탈수소효소(ALDH) <sup>[2†]</sup>",
+      "(디설피람이 막는 자리)",
+      "해독 아님 — 막으면 포름알데히드가 쌓인다"
+     ],
+     [
+      "포름산 → CO2",
+      "엽산 의존 산화 <sup>[2†]</sup>",
+      "고용량 폴린산·엽산 <sup>[1 470장 p.3714]</sup>",
+      "보조 — 대사를 돕는다"
+     ],
+     [
+      "포름산의 독성",
+      "산증·망막/시신경 독성 <sup>[1 470장 p.3714]</sup>",
+      "탄산수소나트륨·혈액투석 <sup>[1 470장 p.3714]</sup>",
+      "산증 교정·메탄올과 포름산 제거"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "엽산·폴린산(포름산 산화 촉진) vs 포메피졸(ADH 억제) — 독이 포름산이니 그걸 없애는 약이 해독제?",
+    "point": "해리슨은 고용량 폴린산·엽산을 「대사를 돕는」 보조 치료로, 포메피졸·에탄올을 따로 적는다 <sup>[1 470장 p.3714]</sup>. 포메피졸은 ADH 를 두고 메탄올과 경쟁해 포름산이 생기는 것 자체를 막는다 <sup>[1 58장 p.371]</sup>. 삼투압 차가 남아 있으면 아직 대사되지 않은 메탄올이 많다는 뜻이라 첫 단계를 막는 쪽이 해독의 중심이다.",
+    "exception": "포메피졸이 이미 들어간 뒤 「포름산 제거를 돕는 보조 약물의 기전」을 묻는다면 엽산 의존 경로로 포름산을 CO2 로 산화시키는 것이 답이다 <sup>[2†]</sup>.",
+    "cites": "<sup>[1 470장 p.3714]</sup> <sup>[1 58장 p.371]</sup>"
+   },
+   {
+    "contrast": "알데히드 탈수소효소(ALDH) 억제 — 같은 경로의 효소를 막으면 해독?",
+    "point": "메탄올 → (ADH) 포름알데히드 → (ALDH) 포름산. 둘째 효소를 막으면(디설피람의 작용점) 포름알데히드가 쌓일 뿐이다. 해리슨도 포름알데히드와 포름산을 모두 독성 대사물로 적는다 <sup>[1 58장 p.371]</sup> — 첫 단계를 막아야 둘 다 줄어든다.",
+    "exception": "",
+    "cites": "<sup>[1 58장 p.371]</sup>"
+   },
+   {
+    "contrast": "삼투압 차가 정상이면 독성 알코올이 아니다?",
+    "point": "삼투압 차는 모 알코올을 반영해 먼저 오르고, 대사가 진행되면 줄면서 음이온 차가 커진다 <sup>[1 58장 p.371]</sup>. 늦게 온 환자에서 차가 작아도 메탄올을 배제하지 못한다 — 그때는 포메피졸의 이득이 줄고 투석의 몫이 커진다.",
+    "exception": "",
+    "cites": "<sup>[1 58장 p.371]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "삼투압 차 = 측정 삼투압 − (2Na + BUN/2.8 + 포도당/18) <sup>[1 58장 p.371]</sup>. 10 넘으면 저분자 용질을 시사한다 <sup>[1 470장 p.3705]</sup> — 에탄올도 차를 만들므로 에탄올 농도를 함께 본다.",
+   "삼투압 차와 음이온 차가 함께 크면 농도 결과를 기다리지 않고 포메피졸을 시작한다 <sup>[1 58장 p.371]</sup>.",
+   "메탄올 치료의 보조: 탄산수소나트륨(산증 교정), 고용량 폴린산·엽산(대사 촉진), 최근 섭취면 위 흡인 <sup>[1 470장 p.3714]</sup>.",
+   "포메피졸 용량: 부하 15 mg/kg 정주 뒤 10 mg/kg 12시간마다, pH 정상 또는 삼투압 차 &lt; 10 까지 — 해리슨은 에틸렌글리콜 절에 적고 메탄올은 같다고 한다 <sup>[1 58장 p.371]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "meoh-antidote",
+    "name": "포메피졸·에탄올 적응",
+    "kind": "치료 권고",
+    "population": "메탄올 중독(의심 포함)",
+    "statement": "음이온 차 대사성 산증, 시력 증상, 메탄올 농도 > 6 mmol/L(20 mg/dL), 또는 농도를 곧 잴 수 없을 때 에탄올 유사 중독·삼투압 차 증가가 있으면 에탄올이나 포메피졸을 준다 [[harrison-22: 470장 p.3714]]. 포메피졸이 우선이고 에탄올은 포메피졸이 없을 때 쓴다 [[harrison-22: 58장 p.371]]",
+    "exceptions": "삼투압 차·음이온 차가 함께 크면 농도 결과를 기다리느라 치료를 늦추지 않는다 [[harrison-22: 58장 p.371]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "meoh-hd",
+    "name": "혈액투석 적응",
+    "kind": "치료 권고",
+    "population": "메탄올 중독",
+    "statement": "지속되는 음이온 차 산증, 임상 호전 없음, 신기능 저하에 혈액투석. 메탄올 > 15 mmol/L(50 mg/dL)이면 제거를 앞당기고 치료 기간을 줄이려고 투석한다 [[harrison-22: 470장 p.3714]]",
+    "exceptions": "해리슨 58장의 pH < 7.3 · 삼투압 차 > 20 기준은 에틸렌글리콜 절에 적힌 것이다(메탄올은 「치료가 비슷하다」고만 적는다) [[harrison-22: 58장 p.371]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 470: Poisoning and Drug Overdose; Chapter 58: Acidosis and Alkalosis",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 470장 p.3705, 3714(표 470-4) · 58장 p.371",
+    "checked": "본문 대조(드라이브 H22_470·H22_58 문서). 470장 p.3705 — 삼투압 차 > 10 mmol/L 은 저분자 용질(메탄올 포함)을 시사, 진행된 메탄올 중독에서 음이온 차 산증이 흔함. p.3714 표 470-4 메탄올 행 — 에탄올 유사 CNS 억제·삼투압 증가, 대사물 포름산이 음이온 차 산증·망막 독성; 초기 삼투압 차, 늦은 산증, 시야(흐림·점·실명)·망막(부종·충혈) 이상; 치료: 최근 섭취면 위 흡인, 탄산수소나트륨, 대사를 돕는 고용량 폴린산·엽산, 산증·시력 증상·농도 > 6 mmol/L(20 mg/dL)·농도 미확인 시 삼투압 차에 에탄올 또는 포메피졸, 지속 산증·호전 없음·신기능 저하에 투석, > 15 mmol/L(50 mg/dL)이면 투석으로 제거 단축. 58장 p.371 — 삼투압 계산식 2Na + BUN/2.8 + 포도당/18, 높은 음이온 차 + 삼투압 차는 에틸렌글리콜·메탄올 강력 시사, 농도를 기다리며 치료를 늦추지 않음, 삼투압 차가 먼저 오르고 줄면서 음이온 차가 커짐; 포메피졸과 에탄올 모두 ADH 대사를 두고 경쟁, 포메피졸이 1차(에탄올은 없을 때), 부하 15 mg/kg 뒤 10 mg/kg 12시간마다, pH 정상 또는 삼투압 차 < 10 까지; 메탄올 대사물 포름알데히드·포름산이 시신경·CNS 손상, 메탄올 치료는 에틸렌글리콜과 비슷. ALDH 단계·엽산 의존 포름산 산화·시토크롬 산화효소 기전은 두 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-10",
+    "url": ""
+   },
+   {
+    "id": "goldfrank-11",
+    "org": "McGraw Hill",
+    "title": "Goldfrank's Toxicologic Emergencies, 11th ed. — Toxic alcohols",
+    "kind": "textbook",
+    "citation": "Nelson LS, Howland MA, Lewin NA, et al (eds). Goldfrank's Toxicologic Emergencies, 11e. Toxic alcohols(장·쪽 미대조)",
+    "checked": "서지만 — 문항 출처로 적힌 교과서. 이 세션에서 원문 미대조(ALDH 단계, 엽산 의존 포름산 산화, 포름산의 시토크롬 c 산화효소 억제 서술의 근거)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2019",
+    "checkedAt": "2026-11-10",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "메탄올 중독에서 포메피졸의 작용점과 그 결과는?",
+    "a": "알코올 탈수소효소를 경쟁 억제 → 메탄올이 포름알데히드·포름산으로 바뀌지 않는다. 메탄올은 그대로 남아 투석·폐로 천천히 제거된다."
+   },
+   {
+    "q": "엽산·폴린산과 포메피졸의 역할 차이는?",
+    "a": "엽산·폴린산은 이미 생긴 포름산을 CO2 로 대사하도록 돕는 보조 치료, 포메피졸은 포름산이 생기기 전 첫 단계를 막는 해독제."
+   },
+   {
+    "q": "삼투압 차가 큰 것이 해독제 선택에 주는 정보는?",
+    "a": "대사되지 않은 모 알코올이 아직 많다 — ADH 를 막으면 앞으로 생길 독성 대사물을 막을 수 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pharm.methanol-poisoning.fomepizole-mechanism#v1",
+    "context": "Same poisoning; the antidote has already been given and the adjunct drug's mechanism is asked",
+    "stem": "A 39-year-old man is brought to the emergency department 18 hours after drinking several cups of windshield washer fluid during a suicide attempt. He reports blurred vision with 'spots' in both eyes. Pulse is 110/min and respirations are 30/min and deep. Funduscopic examination shows bilateral optic disc hyperemia. Arterial pH is 7.08, serum bicarbonate 6 mEq/L, anion gap 32 mEq/L, and the osmolal gap 24 mOsm/kg H2O. Serum ethanol is undetectable. Intravenous fomepizole and sodium bicarbonate are started, and hemodialysis is arranged. The toxicologist also recommends high-dose intravenous leucovorin. This additional drug most likely benefits the patient by which of the following mechanisms?",
+    "options": [
+     "Competitive inhibition of alcohol dehydrogenase",
+     "Inhibition of aldehyde dehydrogenase",
+     "Enhancement of folate-dependent oxidation of formate to carbon dioxide",
+     "Replenishment of hepatic glutathione stores",
+     "Chelation of formate for renal excretion"
+    ],
+    "answer": 3,
+    "explanation": "바뀐 단서는 해독제 포메피졸이 이미 들어갔고 「추가한 폴린산」의 기전을 묻는다는 점이다. 해리슨은 고용량 폴린산·엽산을 메탄올 대사를 돕는 보조 치료로 적는다(470장 p.3714) — 엽산 의존 경로로 포름산을 CO2 로 산화시켜 독성 대사물의 제거를 앞당긴다. ADH 경쟁 억제(A)는 이미 준 포메피졸의 기전이고, ALDH 억제(B)는 포름알데히드를 쌓을 뿐이며, 글루타티온 보충(D)은 아세트아미노펜 해독제, 포름산을 킬레이트하는 약(E)은 없다.",
+    "of": "usmle-2026-0254",
+    "changed": "fomepizole already running and the question asks for the mechanism of the added vitamin (leucovorin) → answer shifts from competitive inhibition of alcohol dehydrogenase to folate-dependent oxidation of formate to CO2",
+    "flip": true
+   },
+   {
+    "id": "cn.pharm.methanol-poisoning.fomepizole-mechanism#v2",
+    "context": "Different patient and source; same poisoning and same antidote question",
+    "stem": "A 52-year-old woman who restores furniture is brought to the emergency department by her husband because she has had vomiting, abdominal pain, and 'cloudy, dim' vision since waking. He found an open bottle of solvent labeled as containing methanol on the kitchen table. Respirations are 26/min. The pupils are dilated and react poorly to light. Serum sodium is 138 mEq/L, chloride 100 mEq/L, bicarbonate 10 mEq/L, glucose 90 mg/dL, and BUN 12 mg/dL; measured serum osmolality is 322 mOsm/kg H2O. Serum ethanol is undetectable and lactate is 2.1 mmol/L. The specific antidote recommended for this patient acts by which of the following mechanisms?",
+    "options": [
+     "Acceleration of formate oxidation to carbon dioxide",
+     "Competitive inhibition of alcohol dehydrogenase",
+     "Inhibition of aldehyde dehydrogenase",
+     "Alkalinization of urine to trap formate",
+     "Regeneration of reduced glutathione"
+    ],
+    "answer": 2,
+    "explanation": "환자·노출 경로·시야 호소·제시 순서는 바뀌었지만 결정적 단서는 그대로다 — 음이온 차 28(138−100−10)의 산증, 계산 삼투압 ≈ 286 이라 삼투압 차 ≈ 36(대사되지 않은 메탄올이 많다), 시야 이상, 에탄올 음성. 해독제 포메피졸은 메탄올과 ADH 를 두고 경쟁해 포름알데히드·포름산 생성을 막는다(해리슨 58장 p.371). 포름산 산화 촉진(A)은 폴린산의 보조 작용, ALDH 억제(C)는 해독이 아니며, 소변 알칼리화(D)는 살리실산 치료, 글루타티온 재생(E)은 아세트아미노펜 해독제다.",
+    "of": "usmle-2026-0254",
+    "changed": "patient (52-year-old woman), source (methanol-containing solvent in a workshop), visual complaint (dim, cloudy vision) and lab presentation changed; the antidote mechanism is still asked while the osmolal gap remains high → answer unchanged (competitive inhibition of alcohol dehydrogenase)",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "독성 알코올 의심 산증 — 해독제까지",
+  "geo": {
+   "title": "독성 알코올 의심 산증 — 해독제까지",
+   "w": 567.0,
+   "h": 748.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "음이온 차 대사성 산증 +",
+      "알코올 섭취 의심"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "gap",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "삼투압 차가 10을 넘는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "gapask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "측정·계산 삼투압 · 에탄올 ·",
+      "독성 알코올 농도"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 원인 평가 — 늦은",
+      "내원은 차가 줄 수 있다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 299.0
+    },
+    {
+     "id": "clue",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "시야 이상·시신경 유두 충혈?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 299.0
+    },
+    {
+     "id": "meoh",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "메탄올 — 포름산이 시신경",
+      "독성"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 389.0
+    },
+    {
+     "id": "eg",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "에틸렌글리콜 — 옥살산 결정·",
+      "신손상"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 389.0
+    },
+    {
+     "id": "block",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "포메피졸: ADH 경쟁 억제 →",
+      "대사물 차단"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 475.0
+    },
+    {
+     "id": "hd",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "산증 지속·호전 없음·신기능",
+      "저하?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 561.0
+    },
+    {
+     "id": "dial",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "혈액투석 + 포메피졸 지속"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 668.0
+    },
+    {
+     "id": "keep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "포메피졸·탄산수소나트륨",
+      "지속, 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 668.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "gap",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "gap",
+     "to": "clue",
+     "points": [
+      [
+       291.0,
+       149.0
+      ],
+      [
+       291.0,
+       178.0
+      ],
+      [
+       226.0,
+       178.0
+      ],
+      [
+       226.0,
+       285.0
+      ],
+      [
+       194.3,
+       285.0
+      ],
+      [
+       194.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 281.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "gap",
+     "to": "other",
+     "points": [
+      [
+       389.0,
+       149.0
+      ],
+      [
+       389.0,
+       178.0
+      ],
+      [
+       454.0,
+       178.0
+      ],
+      [
+       454.0,
+       285.0
+      ],
+      [
+       485.7,
+       285.0
+      ],
+      [
+       485.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 368.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "gap",
+     "to": "gapask",
+     "points": [
+      [
+       340.0,
+       149.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "gapask",
+     "to": "clue",
+     "points": [
+      [
+       307.3,
+       256.0
+      ],
+      [
+       307.3,
+       285.0
+      ],
+      [
+       259.7,
+       285.0
+      ],
+      [
+       259.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "차 > 10"
+      ],
+      "w": 45.6,
+      "h": 17,
+      "x": 284.5,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "gapask",
+     "to": "other",
+     "points": [
+      [
+       372.7,
+       256.0
+      ],
+      [
+       372.7,
+       285.0
+      ],
+      [
+       420.3,
+       285.0
+      ],
+      [
+       420.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "차 정상"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 350.3,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "clue",
+     "to": "meoh",
+     "points": [
+      [
+       194.3,
+       346.0
+      ],
+      [
+       194.3,
+       375.0
+      ],
+      [
+       114.0,
+       375.0
+      ],
+      [
+       114.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "clue",
+     "to": "eg",
+     "points": [
+      [
+       259.7,
+       346.0
+      ],
+      [
+       259.7,
+       375.0
+      ],
+      [
+       340.0,
+       375.0
+      ],
+      [
+       340.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "meoh",
+     "to": "block",
+     "points": [
+      [
+       114.0,
+       453.0
+      ],
+      [
+       114.0,
+       461.0
+      ],
+      [
+       194.3,
+       461.0
+      ],
+      [
+       194.3,
+       475.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "eg",
+     "to": "block",
+     "points": [
+      [
+       340.0,
+       453.0
+      ],
+      [
+       340.0,
+       461.0
+      ],
+      [
+       259.7,
+       461.0
+      ],
+      [
+       259.7,
+       475.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "block",
+     "to": "hd",
+     "points": [
+      [
+       227.0,
+       539.0
+      ],
+      [
+       227.0,
+       561.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hd",
+     "to": "dial",
+     "points": [
+      [
+       194.3,
+       625.0
+      ],
+      [
+       194.3,
+       654.0
+      ],
+      [
+       114.0,
+       654.0
+      ],
+      [
+       114.0,
+       668.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 629.0
+     }
+    },
+    {
+     "from": "hd",
+     "to": "keep",
+     "points": [
+      [
+       259.7,
+       625.0
+      ],
+      [
+       259.7,
+       654.0
+      ],
+      [
+       340.0,
+       654.0
+      ],
+      [
+       340.0,
+       668.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 629.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "음이온 차 대사성 산증 + 알코올 섭취 의심",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "삼투압 차가 10을 넘는가?"
+     }
+    ]
+   },
+   {
+    "id": "gap",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "삼투압 차가 10을 넘는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "시야 이상·시신경 유두 충혈?"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "다른 원인 평가 — 늦은 내원은 차가 줄 수 있다"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "측정·계산 삼투압 · 에탄올 · 독성 알코올 농도"
+     }
+    ]
+   },
+   {
+    "id": "gapask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "측정·계산 삼투압 · 에탄올 · 독성 알코올 농도",
+    "note": "",
+    "branches": [
+     {
+      "label": "차 > 10",
+      "to": 4,
+      "toText": "시야 이상·시신경 유두 충혈?"
+     },
+     {
+      "label": "차 정상",
+      "to": 5,
+      "toText": "다른 원인 평가 — 늦은 내원은 차가 줄 수 있다"
+     }
+    ]
+   },
+   {
+    "id": "clue",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "시야 이상·시신경 유두 충혈?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "메탄올 — 포름산이 시신경 독성"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "에틸렌글리콜 — 옥살산 결정·신손상"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 원인 평가 — 늦은 내원은 차가 줄 수 있다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "meoh",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "메탄올 — 포름산이 시신경 독성",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "포메피졸: ADH 경쟁 억제 → 대사물 차단"
+     }
+    ]
+   },
+   {
+    "id": "eg",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "에틸렌글리콜 — 옥살산 결정·신손상",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "포메피졸: ADH 경쟁 억제 → 대사물 차단"
+     }
+    ]
+   },
+   {
+    "id": "block",
+    "num": 8,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "포메피졸: ADH 경쟁 억제 → 대사물 차단",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "산증 지속·호전 없음·신기능 저하?"
+     }
+    ]
+   },
+   {
+    "id": "hd",
+    "num": 9,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "산증 지속·호전 없음·신기능 저하?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 10,
+      "toText": "혈액투석 + 포메피졸 지속"
+     },
+     {
+      "label": "아니오",
+      "to": 11,
+      "toText": "포메피졸·탄산수소나트륨 지속, 재평가"
+     }
+    ]
+   },
+   {
+    "id": "dial",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "혈액투석 + 포메피졸 지속",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "keep",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "포메피졸·탄산수소나트륨 지속, 재평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0254"
   ],
   "hasErrors": false
  },

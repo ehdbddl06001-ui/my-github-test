@@ -1,24 +1,24 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-09",
+ "generated": "2026-11-10",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4555,
+  "total": 4557,
   "byType": {
    "usmle": 252,
+   "paper": 916,
    "imaging": 607,
-   "concept": 158,
+   "concept": 159,
    "kmle": 1760,
-   "paper": 915,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 318,
+   "Cardiology": 319,
    "Nephrology": 244,
    "Infectious Disease": 223,
    "Pediatrics": 211,
@@ -65,9 +65,9 @@ window.MEDKOS_INDEX = {
    "안과": 12,
    "영상의학": 11,
    "이비인후과": 10,
+   "Emergency Medicine": 5,
    "Obstetrics and Gynecology": 5,
    "Allergy": 4,
-   "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3215,
-   "medium": 1287,
+   "medium": 1289,
    "low": 53
   },
   "tagCount": 5391
@@ -361,6 +361,23 @@ window.MEDKOS_INDEX = {
    "text": "Pharmacology Blurred Vision Like a Snowstorm, Rapid Breathing and a Bicarbonate of 8 the Morning After Home-Distilled Liquor in a 46-Year-Old Man methanol toxic-alcohol fomepizole alcohol-dehydrogenase osmolal-gap anion-gap-metabolic-acidosis mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose; Goldfrank's Toxicologic Emergencies, 11e) A 46 year old man is brought to the emergency department because of headache, nausea, epigastric pain and blurred vision that began this morning. He says everything looks \"like being in a snowstorm.\" Twenty hours ago he drank a large amount of home distilled liquor at a party; he usually drinks 2 beers daily. He has no history of diabetes and takes no medications. His vital signs are shown. He is alert and oriented. The pupils are 6 mm and react sluggishly to light. Funduscopic examination shows hyperemia of both optic discs with peripapillary retinal edema. The remainder of the examination shows no abnormalities. Laboratory results are shown. Intravenous sodium bicarbonate is started. The most appropriate antidote for this patient acts by which of the following mechanisms? A. Inhibition of aldehyde dehydrogenase B. Acceleration of formate oxidation to carbon dioxide C. Competitive inhibition of alcohol dehydrogenase D. Replenishment of hepatic glutathione stores E. Competitive displacement of formate from cytochrome c oxidase 하루 전 밀주(home distilled liquor)를 많이 마신 뒤 늦게 시작된 시야 흐림(「눈보라 속」), 산동·대광반사 저하, 시신경 유두 충혈·부종, 그리고 음이온 차 30(140−102−8)의 심한 대사성 산증 — 메탄올 중독이다. 계산 삼투압 ≈ 2×140 + 98/18 + 14/2.8 ≈ 290 이라 삼투압 차가 약 28 남아 있다: 아직 대사되지 않은 메탄올이 혈중에 많다는 뜻이고, 따라서 대사를 막는 해독제가 아직 효과를 낸다. 에탄올은 검출되지 않고, 젖산은 2.4 로 산증을 설명하지 못하며, 케톤·옥살산 결정이 없어 알코올성 케톤산증·에틸렌글리콜 가능성은 낮다. 메탄올 자체보다 그 대사물인 포름산이 망막·시신경 미토콘드리아(시토크롬 c 산화효소)를 망가뜨린다. 해독제 fomepizole 은 알코올 탈수소효소(ADH)를 경쟁적으로 억제해 메탄올 → 포름알데히드 → 포름산 생성을 막는다(에탄올도 같은 원리의 대안). 엽산·폴린산은 포름산을 CO2 로 산화시키는 보조 치료이고, 이미 생긴 포름산·심한 산증·시력 이상에는 혈액투석을 함께 고려한다."
   },
   {
+   "id": "paper-2026-0916",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurosurgery. Case lessons",
+   "confidence": "medium",
+   "date": "2026-11-10",
+   "path": "content/papers/2026/2026-11-10_paper-2026-0916_bow_hunter_s_syndrome_presenting_with_embolism_in_an_older_p.md",
+   "snippet": "Title Bow hunter's syndrome presenting with embolism in an older patient treated with C1 2 posterior fixation using intraoperative digital subtraction angiography: illustrative case Authors Kakimoto Takayuki, Ogihara Kotaro, Okamoto Yusei, ",
+   "text": "Cardiology scraped pubmed PubMed / Journal of neurosurgery. Case lessons Title Bow hunter's syndrome presenting with embolism in an older patient treated with C1 2 posterior fixation using intraoperative digital subtraction angiography: illustrative case Authors Kakimoto Takayuki, Ogihara Kotaro, Okamoto Yusei, Kotani Hayato, Nishi Kazuhiko, Kawauchi Satoshi, Itami Hisakazu, Otsuka Shinji, et al. Journal / DOI Journal of neurosurgery. Case lessons · DOI: 10.3171/CASE26750 · PMID: 43002770 https://pubmed.ncbi.nlm.nih.gov/43002770/ Abstract BACKGROUND: Bow hunter's syndrome (BHS) is a rare cause of vertebrobasilar insufficiency (VBI) or artery to artery embolism resulting from vertebral artery (VA) occlusion during head rotation due to cervical instability. VBI predominates, whereas embolic BHS is rare. OBSERVATIONS: A 77 year old man presented with recurrent posterior circulation ischemic strokes. A cardiac embolism was initially suspected, and a brief episode of paroxysmal atrial fibrillation (AF) was detected via an insertable cardiac monitor. However, wall irregularity was noted in the left VA at the C1 2 level, together with atlantoaxial subluxation associated with os odontoideum. Dynamic digital subtraction angiography (DSA) with head rotation demonstrated left VA occlusion at C1 2 in the right rotational flexion position, with distal flow maintained via collateral circulation. The patient was diagnosed with a cerebral embolism due to BHS. Given the recurrent strokes, atlantoaxial fixation was performed, and intraoperative DSA confirmed a cervical alignment preserving VA flow. No recurrence occurred during postoperative follow up. LESSONS: BHS should be considered in the differential diagnosis of infarction confined to the posterior circulation, even in older patients with AF. C1 2 posterior fixation effectively prevents recurrent infarction, and intraoperative DSA is useful for determining a cervical alignment that preserves VA blood flow. https://thejns.org/doi/10.3171/CASE26750. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
    "id": "imaging-2026-0608",
    "type": "imaging",
    "unit": "",
@@ -601,6 +618,20 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/pulmonology/cn.pulm.hypoxemia.hypoventilation-normal-aa-gradient.md",
    "snippet": "기전 — 환기가 줄면 폐포 산소가 밀려난다 폐포의 CO2 분압은 대사로 생긴 CO2 를 폐포 환기가 얼마나 씻어 내느냐로 정해져, PaCO2 가 곧 환기의 적절성을 보여 준다 — 40 mmHg 를 넘으면 폐포 저환기다 [[harrison 22: 296장 p.2204]]. 폐포 안에서 CO2 가 쌓인 만큼 산소 자리가 줄어드는 관계가 폐포 기체 방정식 PAO2 = FiO2 × (Pbar − 47) − PaCO2/R 이다 [[ha",
    "text": "Pulmonology 기전 — 환기가 줄면 폐포 산소가 밀려난다 폐포의 CO2 분압은 대사로 생긴 CO2 를 폐포 환기가 얼마나 씻어 내느냐로 정해져, PaCO2 가 곧 환기의 적절성을 보여 준다 — 40 mmHg 를 넘으면 폐포 저환기다 [[harrison 22: 296장 p.2204]]. 폐포 안에서 CO2 가 쌓인 만큼 산소 자리가 줄어드는 관계가 폐포 기체 방정식 PAO2 = FiO2 × (Pbar − 47) − PaCO2/R 이다 [[harrison 22: 296장 p.2204]]. 폐 자체는 정상이므로 폐포를 떠나는 혈액의 산소 분압은 낮아진 폐포 산소 분압과 거의 같고, 그래서 폐포 동맥 차가 정상으로 남는다. 오피오이드는 호흡 중추를 눌러 호흡수와 일회 환기량을 줄인다 — 작은 동공과 느린 호흡이 단서다. 저환기에 의한 저산소혈증은 산소 투여로 교정된다 [[harrison 22: 42장 p.277]]. 가르는 소견 — 폐포 동맥 차와 PaCO2 먼저 차를 계산한다 : 환기 관류 불균형·단락은 안정 시 폐포 동맥 차를 넓힌다 [[harrison 22: 296장 p.2201]]. 차가 정상이면 폐 실질이 아니라 PAO2 가 낮은 것이다. 차가 정상이면 PaCO2 를 본다 : 높으면 폐포 저환기, 낮으면 흡입 산소 분압 저하 — 흡입 산소가 낮으면 저산소 자체가 과환기를 일으켜 PaCO2 가 떨어진다 [[harrison 22: 42장 p.277]]. 환경을 확인한다 : 해수면 실내공기면 흡입 산소 분압은 정상이다. 고지대에서는 대기압이 낮아 3000 m 에서 PAO2 가 약 60 mmHg 까지 떨어진다 [[harrison 22: 42장 p.277]]. 차가 넓으면 산소 반응을 본다 : 환기 관류 불균형은 산소에 잘 오르고, 단락은 100 % 산소로도 일부만 교정된다 [[harrison 22: 42장 p.277]] [[harrison 22: 296장 p.2204]]. 정상 결과의 한계 : 차가 정상이어도 폐 질환이 없다는 뜻은 아니다 — 저환기에 흡인이 더해지면 PaCO2 도 높고 차도 넓어진다. 나이가 들면 정상 차의 상한이 올라간다. 권고와 예외 해수면 실내공기에서는 순수한 저환기만으로 심한 저산소혈증이 드물다. 고지대에서는 같은 저환기가 정상 폐에서도 심한 저산소혈증을 만들 수 있다 [[harrison 22: 296장 p.2204]]. 저환기가 원인이면 산소만으로 PaO2 는 오르지만 PaCO2 는 그대로다 — 환기 자체(원인 약 중단·환기 보조)를 해결해야 한다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 호흡 지수 R 의 값 — 시험 기준: 문항이 주는 값(흔히 0.8)으로 PAO2 를 계산한다 / 다른 기준: 해리슨은 미국 식사 기준 R 약 0.85 로 적는다 [[harrison 22: 296장 p.2204]] / 왜 다른가: R 은 대사하는 연료에 따라 달라지고, 0.8 은 계산을 쉽게 하는 관례값이다 / 시험에서는: KMLE · USMLE 모두 주어진 값을 쓴다 — 0.8 과 0.85 의 차이(PaCO2 64 에서 약 5 mmHg)는 차가 정상인지 넓은지의 판단을 바꾸지 않는다."
+  },
+  {
+   "id": "cn.pharm.methanol-poisoning.fomepizole-mechanism",
+   "type": "concept",
+   "unit": "",
+   "topic": "Emergency Medicine",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-10",
+   "path": "content/concepts/pharmacology/cn.pharm.methanol-poisoning.fomepizole-mechanism.md",
+   "snippet": "판단 — 왜 ADH 억제가 해독제인가 메탄올 자체는 에탄올처럼 중추신경을 누를 뿐이고, 산증과 망막 독성은 대사물 포름산 이 만든다 [[harrison 22: 470장 p.3714]]. 포메피졸과 에탄올은 알코올 탈수소효소(alcohol dehydrogenase, ADH) 를 두고 메탄올과 경쟁해 그 첫 단계를 막는다 [[harrison 22: 58장 p.371]] — 포름알데히드도 포름산도 생기지 않는다. 삼투압 차가 크다 ",
+   "text": "Emergency Medicine 판단 — 왜 ADH 억제가 해독제인가 메탄올 자체는 에탄올처럼 중추신경을 누를 뿐이고, 산증과 망막 독성은 대사물 포름산 이 만든다 [[harrison 22: 470장 p.3714]]. 포메피졸과 에탄올은 알코올 탈수소효소(alcohol dehydrogenase, ADH) 를 두고 메탄올과 경쟁해 그 첫 단계를 막는다 [[harrison 22: 58장 p.371]] — 포름알데히드도 포름산도 생기지 않는다. 삼투압 차가 크다 = 아직 대사되지 않은 모 알코올이 많다 = 막으면 앞으로 생길 독을 막는다. 엽산·폴린산(대사 촉진)·탄산수소나트륨(산증 교정)은 보조 치료다 [[harrison 22: 470장 p.3714]] — 표 「메탄올 대사의 단계와 약의 자리」. 기전 — 메탄올에서 포름산으로 메탄올(분자량 32)은 흡수되면 혈장 삼투압을 올린다 — 그래서 삼투압 차가 음이온 차보다 먼저 나타난다 [[harrison 22: 58장 p.371]]. 간의 ADH 가 메탄올을 포름알데히드로, 알데히드 탈수소효소가 포름산으로 바꾼다 [[?goldfrank 11]]. 해리슨은 포름알데히드와 포름산이 시신경·중추신경을 심하게 손상한다고 적는다 [[harrison 22: 58장 p.371]]. 포름산은 미토콘드리아 호흡(시토크롬 c 산화효소)을 억제해 대사 요구가 큰 시신경·망막을 먼저 망가뜨리고 [[?goldfrank 11]], 젖산·케톤산이 더해져 산증이 깊어진다 [[harrison 22: 58장 p.371]]. 포름산은 엽산 의존 경로로 CO2 가 되는데 사람에서는 이 경로가 느려 쌓인다 [[?goldfrank 11]] — 폴린산·엽산이 「대사를 돕는」 이유다 [[harrison 22: 470장 p.3714]]. 가르는 소견 — 메탄올이라는 근거와 시점 초기: 에탄올 유사 중독·구역·구토와 삼투압 차. 늦게: 음이온 차 산증, 시야 흐림·점·실명, 망막 부종·충혈 [[harrison 22: 470장 p.3714]]. 섭취 뒤 수 시간~하루 늦게 증상이 오는 것은 독이 대사물이기 때문이다. 높은 음이온 차 + 삼투압 차 → 에틸렌글리콜·메탄올을 강하게 시사 [[harrison 22: 58장 p.371]]. 에틸렌글리콜은 옥살산칼슘 결정뇨·신부전, 메탄올은 시야·망막 이상이 가른다 [[harrison 22: 470장 p.3714]]. 아이소프로필 알코올은 삼투압 차만 있고 음이온 차 산증이 없다 [[harrison 22: 58장 p.371]]. 음성 결과의 한계: 삼투압 차는 시간이 지나면 줄어든다 — 늦게 온 환자에서 차가 작아도 메탄올을 배제하지 못한다. 에탄올이 함께 있으면 차의 일부를 에탄올이 설명한다. 선택 — 해독제·보조·투석 해독제: 포메피졸이 1차, 에탄올은 없을 때 [[harrison 22: 58장 p.371]]. 적응 기준은 표 대신 기준 「포메피졸·에탄올 적응」. 보조: 탄산수소나트륨, 고용량 폴린산·엽산, 최근 섭취면 위 흡인 [[harrison 22: 470장 p.3714]]. 투석: 지속 산증·호전 없음·신기능 저하, 또는 메탄올 50 mg/dL 로 제거를 앞당길 때 [[harrison 22: 470장 p.3714]]. 포메피졸은 메탄올을 없애지 않고 대사만 멈추므로, 남은 메탄올·포름산을 치우는 것은 투석이다. 재평가: pH·음이온 차·삼투압 차의 추이, 시력. 포메피졸은 pH 정상 또는 삼투압 차 < 10 까지 [[harrison 22: 58장 p.371]]. 권고와 예외 삼투압 차와 음이온 차가 모두 크면 농도를 기다리지 않는다 [[harrison 22: 58장 p.371]]. ALDH 단계·엽산 의존 포름산 산화·시토크롬 c 산화효소 억제는 해리슨 두 장에 없다 — 독성학 교과서 근거이며 원문 미대조(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 에탄올을 해독제로 쓰는가 — 시험 기준: 포메피졸이 1차, 에탄올은 포메피졸이 없을 때 [[harrison 22: 58장 p.371]] / 다른 기준: 해리슨 표 470 4 는 「에탄올 또는 포메피졸」로 나란히 적는다 [[harrison 22: 470장 p.3714]] / 왜 다른가: 같은 원리(ADH 경쟁)이고 에탄올은 의식 저하·혈중 농도 조절이 어렵다는 차이를 58장이 적는다 / 시험에서는: USMLE·KMLE 모두 「가장 적절한 해독제」는 포메피졸, 기전은 둘 다 ADH 경쟁 억제."
   },
   {
    "id": "cn.cardio.sinus-node-dysfunction.symptom-correlated-pacing",
