@@ -749,5 +749,5 @@ const LEARN = (() => {
   }
 
   return { onAnswer, onVariantAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
-    syncLearning, learnSyncState, states, schedule, dueKeys, reviewSteps, load, concept, STATUS };
+    syncLearning, learnSyncState, states, schedule, dueKeys, pickRetest, reviewSteps, load, concept, STATUS };
 })();

@@ -17,7 +17,7 @@
 | 정리본 그림(심전도·조직·영상) | `/gen-concept` 「[figure]」 — **확실한 라벨만**(전문가 데이터셋 라벨·논문 그림 설명) | `concept_figures.py find/add/want/none/reject/status` · 수확은 exam-builder `opendata demand` |
 | 오픈데이터 영상 문항 | **여기서 만들지 않는다** — 빌더(`exam-builder`)의 `opendata medkos-export` | `content/imaging/`, `export_imaging_web.py` |
 | 매일 심전도(🫀 덱) | 여기서 만들지 않는다 — 빌더의 매일 심전도 트랙(`ecg_daily.yaml` · `opendata ecg-plan`, run `일일심전도_<날짜>`). 덱 = 영상 카드 중 `modality: ECG`, 오답은 `wrong_imaging` 공유 | `docs/app.js` `ECG` · `deckWrong()` |
-| 해부학(3Q, ~2026-10-19) | `/anatomy-daily` + **`docs/ANATOMY_RULES.md` 먼저** | `docs/ANATOMY_VISUALS.md` |
+| 해부학(3Q — 2026-10-19 종료, 자료 보존) | `/anatomy-daily` + **`docs/ANATOMY_RULES.md` 먼저** | `docs/ANATOMY_VISUALS.md` |
 | AI·코딩 학습 | `/gen-ailab` `/ai-weekly` `/deepen-week` `/gen-quest` `/ai-mentor` `/ai-debug` | 아래 「실행 로그 루프」 |
 | 커밋 | `python pipelines/publish.py -m "…"` (콘텐츠 = main, 코드 = `--branch claude/…` + PR) | 아래 「커밋 전 필수 순서」 |
 
@@ -28,10 +28,11 @@
 | USMLE 콘텐츠 생성 | 화·목 05:00 | Step 1·2 각 6문항(과목마다 1개, 2026-11-03~) | `prompts/routine_usmle.md` |
 | 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산) → `[figure]` → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
 | 오픈데이터 영상 세트 | 매일 05:00 | exam-builder → MedKOS 내보내기 | exam-builder 저장소 |
-| anatomy-daily | 매일 05:00(~10-19) | 해부 서브노트 | `/anatomy-daily` |
+| anatomy-daily | 종료(2026-10-19 · 마지막 커밋 10-18) | 해부 서브노트 | `/anatomy-daily` |
 
 GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2시간 넘게 늦다** — 09-23·24 모두 08:50 무렵),
 `wrong-sync.yml`(오답 동기화), `drive-sync.yml`, `scrape-papers.yml`·`landmark-papers.yml`, `pages.yml`.
+`tests.yml`(2026-11-10) — **PR 마다 코드 시험**(books.yml 관문 묶음 + `test_question_design.py`·`test_state.py`·`indexer.py --check`). 실제 콘텐츠 전수 검사는 넣지 않는다.
 루틴 컨테이너는 **PubMed·doi.org·NCBI 를 막는다**(출처 원문 대조·PMID 찾기는 PC 세션이나 Actions 가 한다).
 
 ### 검증 — 무엇을 돌리나
@@ -155,6 +156,9 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   커밋) 또는 앱의 「학습 기록 내보내기」 파일을 드라이브 `MedKOS/학습기록` 에 두면 books.yml 이 가져와 합친다.
 - **다시 풀 날 · 변형 · 보정(2026-09-23 사용자 채택)**: ① `learning_log.schedule()` = learn.js `schedule()` — 틀린 날 +1일·+7일
   (기본값일 뿐 최적값이 아니다, 앱 「개념 복습」에서 바꿈)에 「오늘 다시 풀 것」, 그 문항에서 나온 변형(`variants[].of`)을 먼저 낸다.
+  **퀴즈 덱(2026-11-10)**: 첫 화면 「🔔 오늘 다시 풀 것 N개 풀기」 = 학습 구역 `due`(`docs/app.js` `dueList()` → learn.js `pickRetest`,
+  종목 선택과 무관 · 오래 밀린 순, 홈 화면 바로가기 `?mode=due`). 그 전에는 개념 복습 화면에서 하나씩 눌러야만 나와
+  예정 74개가 전부 밀리고 끝난 것이 0이었다 — 복습 흐름을 고칠 때는 「일정이 실제로 소화되는가」를 `item_stats`·기록으로 본다.
   ② `concept_queue.py` — `[note]`·`[link]`·`[touch]`·`[variant]`(틀린 문항마다 flip true/false 2개)·`[dist]`(고른 오답 보기 설명)·
   `[restyle]`(판형 2로 옮길 옛 정리본)·`[gap]`(기본틀 빈 자리). 규칙은 모두 `/gen-concept`.
   ③ 판단 사슬 `design.chain`(2026-09-24 이후 필수) · 하루 세트 구성(3단계 이상 40 %↑, 한 목표 50 %↓, 치료+다음 처치 55 %↓,
