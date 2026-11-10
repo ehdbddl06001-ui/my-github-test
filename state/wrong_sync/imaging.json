@@ -769,8 +769,29 @@
    "date": "2026-11-10",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0607": {
+   "id": "imaging-2026-0607",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "",
+   "type": "심전도 처치 — 우연히 발견된 불규칙한 맥박의 고혈압 남성",
+   "style": "kmle_style",
+   "modality": "ECG",
+   "question": "가장 적절한 처치는?",
+   "chosen": 1,
+   "chosenText": "아스피린 경구 투여를 시작한다",
+   "answer": 0,
+   "answerText": "아픽사반 경구 투여를 시작한다",
+   "coreNote": "",
+   "differ": "",
+   "decision": "심박수가 조절된 비판막성 심방세동이고 CHA₂DS₂-VASc 가 2점이다. 직접 경구 항응고제(아픽사반)를 시작한다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261109T202822Z_일일심전도_2026-11-10_3units_3q_03de036b",
+   "date": "2026-11-10",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-10T11:08:53.529Z"
+ "updated": "2026-11-10T11:09:03.226Z"
 }
