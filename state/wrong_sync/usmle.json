@@ -339,8 +339,29 @@
    "date": "2026-11-03",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "usmle-2026-0254": {
+   "id": "usmle-2026-0254",
+   "exam": "usmle",
+   "subject": "Pharmacology",
+   "step": "Step 1",
+   "type": "Blurred Vision Like a Snowstorm, Rapid Breathing and a Bicarbonate of 8 the Morning After Home-Distilled Liquor in a 46-Year-Old Man",
+   "style": "",
+   "modality": "",
+   "question": "The most appropriate antidote for this patient acts by which of the following mechanisms?",
+   "chosen": 1,
+   "chosenText": "Acceleration of formate oxidation to carbon dioxide",
+   "answer": 2,
+   "answerText": "Competitive inhibition of alcohol dehydrogenase",
+   "coreNote": "",
+   "differ": "",
+   "decision": "밀주 뒤 늦게 온 「눈보라」 시야·시신경 유두 충혈과 음이온 차·삼투압 차가 모두 큰 산증은 메탄올 중독이다. 삼투압 차가 남아 있어 대사를 막는 해독제가 효과적이며, fomepizole 은 알코올 탈수소효소를 경쟁 억제해 포름산 생성을 막는다.",
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose; Goldfrank's Toxicologic Emergencies, 11e)",
+   "date": "2026-11-10",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-03T02:59:40.262Z"
+ "updated": "2026-11-10T05:05:28.182Z"
 }
