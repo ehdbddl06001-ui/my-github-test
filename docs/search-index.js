@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4589,
+  "total": 4601,
   "byType": {
    "kmle": 1792,
    "usmle": 252,
    "paper": 916,
-   "imaging": 607,
+   "imaging": 619,
    "concept": 159,
    "anatomy": 846,
    "ailab": 14,
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Surgery": 116,
    "Hematology": 109,
    "Laboratory Medicine": 95,
+   "순환기": 82,
    "산부인과": 81,
-   "순환기": 78,
-   "호흡기": 38,
+   "호흡기": 39,
    "소화기": 37,
-   "소아과": 33,
-   "응급·중환자": 29,
+   "소아과": 34,
+   "응급·중환자": 30,
+   "감염": 28,
+   "내분비": 28,
    "혈액·종양": 28,
    "Physiology": 27,
-   "감염": 27,
-   "내분비": 27,
    "신경": 27,
    "병리·조직학": 26,
-   "신장·비뇨기": 25,
+   "신장·비뇨기": 26,
    "외과": 25,
    "피부과": 24,
    "예방의학·역학": 22,
    "Pharmacology": 21,
    "Biochemistry": 20,
    "Microbiology": 19,
+   "약리": 17,
    "Immunology": 16,
    "Internal Medicine": 16,
-   "약리": 16,
+   "근골격·류마티스": 16,
    "정신과": 16,
-   "근골격·류마티스": 15,
    "안과": 12,
    "영상의학": 11,
    "이비인후과": 10,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3242,
+   "high": 3254,
    "medium": 1294,
    "low": 53
   },
@@ -983,6 +983,220 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-10_paper-2026-0916_bow_hunter_s_syndrome_presenting_with_embolism_in_an_older_p.md",
    "snippet": "Title Bow hunter's syndrome presenting with embolism in an older patient treated with C1 2 posterior fixation using intraoperative digital subtraction angiography: illustrative case Authors Kakimoto Takayuki, Ogihara Kotaro, Okamoto Yusei, ",
    "text": "Cardiology scraped pubmed PubMed / Journal of neurosurgery. Case lessons Title Bow hunter's syndrome presenting with embolism in an older patient treated with C1 2 posterior fixation using intraoperative digital subtraction angiography: illustrative case Authors Kakimoto Takayuki, Ogihara Kotaro, Okamoto Yusei, Kotani Hayato, Nishi Kazuhiko, Kawauchi Satoshi, Itami Hisakazu, Otsuka Shinji, et al. Journal / DOI Journal of neurosurgery. Case lessons · DOI: 10.3171/CASE26750 · PMID: 43002770 https://pubmed.ncbi.nlm.nih.gov/43002770/ Abstract BACKGROUND: Bow hunter's syndrome (BHS) is a rare cause of vertebrobasilar insufficiency (VBI) or artery to artery embolism resulting from vertebral artery (VA) occlusion during head rotation due to cervical instability. VBI predominates, whereas embolic BHS is rare. OBSERVATIONS: A 77 year old man presented with recurrent posterior circulation ischemic strokes. A cardiac embolism was initially suspected, and a brief episode of paroxysmal atrial fibrillation (AF) was detected via an insertable cardiac monitor. However, wall irregularity was noted in the left VA at the C1 2 level, together with atlantoaxial subluxation associated with os odontoideum. Dynamic digital subtraction angiography (DSA) with head rotation demonstrated left VA occlusion at C1 2 in the right rotational flexion position, with distal flow maintained via collateral circulation. The patient was diagnosed with a cerebral embolism due to BHS. Given the recurrent strokes, atlantoaxial fixation was performed, and intraoperative DSA confirmed a cervical alignment preserving VA flow. No recurrence occurred during postoperative follow up. LESSONS: BHS should be considered in the differential diagnosis of infarction confined to the posterior circulation, even in older patients with AF. C1 2 posterior fixation effectively prevents recurrent infarction, and intraoperative DSA is useful for determining a cervical alignment that preserves VA blood flow. https://thejns.org/doi/10.3171/CASE26750. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0620",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 가끔 맥이 건너뛴다고 느끼는 고령 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0620.md",
+   "snippet": "An 80 year old man comes to the physician because he occasionally feels that his heart skips a beat while resting in the evening. He has no chest pain, dyspnea, or syncope. He has hypertension treated with amlodipine. His pulse is 70/min an",
+   "text": "순환기 심전도 판독 — 가끔 맥이 건너뛴다고 느끼는 고령 남성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9 An 80 year old man comes to the physician because he occasionally feels that his heart skips a beat while resting in the evening. He has no chest pain, dyspnea, or syncope. He has hypertension treated with amlodipine. His pulse is 70/min and irregular at times, and blood pressure is 134/78 mm Hg. Cardiac examination shows no murmurs. Serum potassium and magnesium concentrations are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most likely cause of the single wide complex in the rhythm strip? A. Ventricular pacing artifact B. Premature ventricular contraction C. Premature atrial contraction with aberrant conduction D. Intermittent left bundle branch block E. Ventricular escape beat"
+  },
+  {
+   "id": "imaging-2026-0619",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 정기 외래에 온 고령 남성의 넓은 QRS",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0619.md",
+   "snippet": "75세 남자가 정기 외래 진료를 받으러 왔다. 3년 전 완전 방실차단으로 실신해 오른쪽 심실에 전극을 둔 인공 심박동기를 삽입하였다. 그 뒤 실신·어지럼·두근거림은 없고 일상생활에 불편이 없다. 혈압 128/74 mmHg, 맥박 85회/분이고 규칙적이다. 왼쪽 앞가슴의 기기 삽입 부위는 깨끗하다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 임시 경정맥 심박조율기를 삽입한다 B",
+   "text": "순환기 심전도 처치 — 정기 외래에 온 고령 남성의 넓은 QRS opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9 75세 남자가 정기 외래 진료를 받으러 왔다. 3년 전 완전 방실차단으로 실신해 오른쪽 심실에 전극을 둔 인공 심박동기를 삽입하였다. 그 뒤 실신·어지럼·두근거림은 없고 일상생활에 불편이 없다. 혈압 128/74 mmHg, 맥박 85회/분이고 규칙적이다. 왼쪽 앞가슴의 기기 삽입 부위는 깨끗하다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 임시 경정맥 심박조율기를 삽입한다 B. 아트로핀을 정맥 투여한다 C. 현재 설정을 유지하고 정기 기기 점검을 계속한다 D. 아미오다론을 정맥 투여한다 E. 동기화 심율동전환을 시행한다"
+  },
+  {
+   "id": "imaging-2026-0618",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 대학 입학 검진에서 찍은 젊은 여성의 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0618.md",
+   "snippet": "18세 여자가 대학 입학 건강검진에서 심전도 이상이 있다고 하여 왔다. 증상은 없고 운동할 때 숨이 차지 않는다. 키 163 cm, 체중 56 kg 이다. 혈압 112/70 mmHg, 맥박 75회/분이다. 심음은 정상이고 잡음은 없으며 폐음은 깨끗하다. 흉부 X선과 심장초음파에서 우심실 크기·벽 두께와 추정 폐동맥압은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 좌후속지차단 B. 좌전속지",
+   "text": "순환기 심전도 판독 — 대학 입학 검진에서 찍은 젊은 여성의 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9 18세 여자가 대학 입학 건강검진에서 심전도 이상이 있다고 하여 왔다. 증상은 없고 운동할 때 숨이 차지 않는다. 키 163 cm, 체중 56 kg 이다. 혈압 112/70 mmHg, 맥박 75회/분이다. 심음은 정상이고 잡음은 없으며 폐음은 깨끗하다. 흉부 X선과 심장초음파에서 우심실 크기·벽 두께와 추정 폐동맥압은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 좌후속지차단 B. 좌전속지차단 C. 우심실비대 D. 우각차단 E. 좌각차단"
+  },
+  {
+   "id": "imaging-2026-0617",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 트리메토프림-설파메톡사졸을 함께 먹은 뒤 오른 INR",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0617.md",
+   "snippet": "71세 여자가 정기 진료에서 INR 이 높게 나와 왔다. 심방세동으로 3년째 와파린 하루 5 mg 을 먹고 있고 INR 은 2.0~3.0 으로 안정적이었다. 6일 전 방광염으로 트리메토프림 설파메톡사졸을 처방받아 먹고 있다. 식사량과 녹색 채소 섭취는 평소와 같고 술은 마시지 않는다. 출혈 증상은 없다. 혈압 128/76 mmHg, 맥박 82회/분이다. INR 5.8, 아스파르테이트아미노전달효소와 빌리루빈은 정상이다. 이 IN",
+   "text": "약리 약리 — 트리메토프림-설파메톡사졸을 함께 먹은 뒤 오른 INR opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 71세 여자가 정기 진료에서 INR 이 높게 나와 왔다. 심방세동으로 3년째 와파린 하루 5 mg 을 먹고 있고 INR 은 2.0~3.0 으로 안정적이었다. 6일 전 방광염으로 트리메토프림 설파메톡사졸을 처방받아 먹고 있다. 식사량과 녹색 채소 섭취는 평소와 같고 술은 마시지 않는다. 출혈 증상은 없다. 혈압 128/76 mmHg, 맥박 82회/분이다. INR 5.8, 아스파르테이트아미노전달효소와 빌리루빈은 정상이다. 이 INR 상승의 주된 기전으로 가장 적절한 것은? A. CYP2C9 유도로 S 와파린 대사 증가 B. 비타민 K 에폭시드 환원효소 발현 증가 C. 와파린 신장 배설 감소 D. CYP2C9 억제로 S 와파린 대사 감소 E. CYP3A4 억제로 R 와파린 대사 감소"
+  },
+  {
+   "id": "imaging-2026-0616",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 인슐린을 끊은 1형 당뇨병 환자의 구토·복통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0616.md",
+   "snippet": "A 22 year old woman with type 1 diabetes mellitus is brought to the emergency department because of nausea, vomiting, and abdominal pain for 2 days. She ran out of insulin 4 days ago. Her pulse is 118/min, respirations are 30/min and deep, ",
+   "text": "내분비 내분비 — 인슐린을 끊은 1형 당뇨병 환자의 구토·복통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 A 22 year old woman with type 1 diabetes mellitus is brought to the emergency department because of nausea, vomiting, and abdominal pain for 2 days. She ran out of insulin 4 days ago. Her pulse is 118/min, respirations are 30/min and deep, and blood pressure is 98/62 mm Hg. Mucous membranes are dry. Laboratory studies show a glucose of 520 mg/dL, sodium 132 mEq/L, potassium 3.0 mEq/L, chloride 96 mEq/L, bicarbonate 8 mEq/L, and creatinine 1.3 mg/dL; arterial pH is 7.10, and serum β hydroxybutyrate is markedly elevated. An infusion of 0.9% saline is started at 1 L/h. Which of the following is the most appropriate next step in management? A. Subcutaneous insulin glargine B. Intravenous 5% dextrose in water C. Intravenous potassium chloride before starting insulin D. Intravenous regular insulin infusion at 0.1 U/kg/h immediately E. Intravenous sodium bicarbonate infusion"
+  },
+  {
+   "id": "imaging-2026-0615",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 5일 넘는 발열과 결막 충혈·입술 갈라짐",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0615.md",
+   "snippet": "3세 남아가 6일째 39 ℃ 가 넘는 열이 내리지 않아 왔다. 해열제를 먹으면 잠깐 내렸다가 다시 오른다. 진찰에서 눈곱 없는 양쪽 눈 결막 충혈, 붉고 갈라진 입술과 딸기혀, 손발 등의 단단한 부종과 손바닥 홍반, 몸통의 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 압통 있는 림프절이 만져진다. 백혈구 15,800/mm³, 혈소판 420,000/mm³, C 반응단백 9.6 mg/dL, 알부민 3.1 g/dL 이다. 신속",
+   "text": "소아과 소아 — 5일 넘는 발열과 결막 충혈·입술 갈라짐 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 3세 남아가 6일째 39 ℃ 가 넘는 열이 내리지 않아 왔다. 해열제를 먹으면 잠깐 내렸다가 다시 오른다. 진찰에서 눈곱 없는 양쪽 눈 결막 충혈, 붉고 갈라진 입술과 딸기혀, 손발 등의 단단한 부종과 손바닥 홍반, 몸통의 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 압통 있는 림프절이 만져진다. 백혈구 15,800/mm³, 혈소판 420,000/mm³, C 반응단백 9.6 mg/dL, 알부민 3.1 g/dL 이다. 신속 A군 연쇄알균 항원 검사는 음성이다. 가장 적절한 치료는? A. 벤자틴 페니실린 근육주사 B. 정맥 면역글로불린과 아스피린 C. 경구 아목시실린 D. 경구 프레드니솔론 단독 E. 이부프로펜 해열 후 경과 관찰"
+  },
+  {
+   "id": "imaging-2026-0614",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 검진 소변검사의 현미경적 혈뇨",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0614.md",
+   "snippet": "75세 남자가 건강검진 소변검사에서 현미경적 혈뇨가 나와 비뇨의학과에 왔다. 육안적 혈뇨·옆구리 통증·체중 감소는 없다. 흡연력은 40갑년이고 고혈압으로 약을 먹고 있다. 혈압 136/82 mmHg 이고 옆구리에 만져지는 종괴는 없다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL 이고 소변 세포검사는 음성이다. 복부 조영증강 CT 는 그림과 같다. 가장 가능성이 높은 진단은? A. 신세포암 B. 혈관근지방종 C",
+   "text": "신장·비뇨기 신장·비뇨 — 검진 소변검사의 현미경적 혈뇨 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 75세 남자가 건강검진 소변검사에서 현미경적 혈뇨가 나와 비뇨의학과에 왔다. 육안적 혈뇨·옆구리 통증·체중 감소는 없다. 흡연력은 40갑년이고 고혈압으로 약을 먹고 있다. 혈압 136/82 mmHg 이고 옆구리에 만져지는 종괴는 없다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL 이고 소변 세포검사는 음성이다. 복부 조영증강 CT 는 그림과 같다. 가장 가능성이 높은 진단은? A. 신세포암 B. 혈관근지방종 C. 단순 신낭종 D. 신우 요로상피암 E. 신장 농양"
+  },
+  {
+   "id": "imaging-2026-0613",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 인터페론감마 분비검사 양성인 무증상 의료인",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0613.md",
+   "snippet": "A 29 year old woman who works as a nurse is evaluated after a routine employee screening interferon gamma release assay is positive; her test 1 year ago was negative. She has no cough, fever, night sweats, or weight loss. She has no history",
+   "text": "감염 감염 — 인터페론감마 분비검사 양성인 무증상 의료인 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 A 29 year old woman who works as a nurse is evaluated after a routine employee screening interferon gamma release assay is positive; her test 1 year ago was negative. She has no cough, fever, night sweats, or weight loss. She has no history of tuberculosis or HIV infection and takes no medications. She does not drink alcohol. Physical examination shows no abnormalities. Serum aminotransferase levels are within the reference ranges, and an HIV test is negative. A chest x ray shows no abnormalities. Which of the following is the most appropriate next step in management? A. Bacille Calmette Guérin revaccination B. Daily rifampin for 4 months C. Isoniazid, rifampin, pyrazinamide, and ethambutol for 2 months D. No treatment and repeat testing in 1 year E. Sputum acid fast bacilli smear and culture before any decision"
+  },
+  {
+   "id": "imaging-2026-0612",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "근골격 — 손을 짚고 넘어진 뒤 손목 바깥쪽 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0612.md",
+   "snippet": "A 17 year old boy comes to the emergency department 3 hours after falling onto his outstretched right hand while playing basketball. He has pain on the radial side of the wrist. Examination shows mild swelling and tenderness to palpation in",
+   "text": "근골격·류마티스 근골격 — 손을 짚고 넘어진 뒤 손목 바깥쪽 통증 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 A 17 year old boy comes to the emergency department 3 hours after falling onto his outstretched right hand while playing basketball. He has pain on the radial side of the wrist. Examination shows mild swelling and tenderness to palpation in the anatomic snuffbox; there is pain with axial loading of the thumb. There is no deformity, and distal sensation and capillary refill are normal. The distal radius and ulna are not tender. A radiograph of the right wrist is shown. Which of the following is the most appropriate next step in management? A. Closed reduction and sugar tong splint of the distal radius B. Open reduction and internal fixation of the wrist C. Short arm cast for 3 weeks for a buckle fracture D. Thumb spica immobilization with repeat imaging in 10 to 14 days E. Reassurance with an elastic bandage and return to sports"
+  },
+  {
+   "id": "imaging-2026-0611",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 새우를 먹은 뒤 생긴 저혈압·천명",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0611.md",
+   "snippet": "34세 남자가 식당에서 새우 요리를 먹은 지 15분 뒤 온몸이 가렵고 목이 조이며 숨이 차서 응급실에 왔다. 이전에 새우를 먹고 두드러기가 난 적이 있다. 혈압 82/50 mmHg, 맥박 124회/분, 호흡 28회/분, 산소포화도 90 % 이다. 몸통과 팔에 팽진이 퍼져 있고 입술이 부어 있으며 양쪽 폐에서 천명음이 들린다. 복통이나 설사는 없다. 정맥로를 확보하고 산소를 투여하였다. 다음으로 가장 적절한 처치는? A. 클로르",
+   "text": "응급·중환자 응급 — 새우를 먹은 뒤 생긴 저혈압·천명 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 34세 남자가 식당에서 새우 요리를 먹은 지 15분 뒤 온몸이 가렵고 목이 조이며 숨이 차서 응급실에 왔다. 이전에 새우를 먹고 두드러기가 난 적이 있다. 혈압 82/50 mmHg, 맥박 124회/분, 호흡 28회/분, 산소포화도 90 % 이다. 몸통과 팔에 팽진이 퍼져 있고 입술이 부어 있으며 양쪽 폐에서 천명음이 들린다. 복통이나 설사는 없다. 정맥로를 확보하고 산소를 투여하였다. 다음으로 가장 적절한 처치는? A. 클로르페니라민 정맥 주사 B. 메틸프레드니솔론 정맥 주사 C. 살부타몰 흡입 D. 에피네프린 1 mg 정맥 급속 주사 E. 에피네프린 0.5 mg 근육주사"
+  },
+  {
+   "id": "imaging-2026-0610",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 저일회호흡량에도 저산소증이 지속되는 코로나19 ARDS",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0610.md",
+   "snippet": "A 56 year old man with COVID 19 pneumonia was intubated in the intensive care unit 14 hours ago for worsening hypoxemia. He is receiving volume controlled ventilation with a tidal volume of 6 mL/kg of predicted body weight, PEEP of 14 cm H2",
+   "text": "호흡기 호흡기 — 저일회호흡량에도 저산소증이 지속되는 코로나19 ARDS opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 A 56 year old man with COVID 19 pneumonia was intubated in the intensive care unit 14 hours ago for worsening hypoxemia. He is receiving volume controlled ventilation with a tidal volume of 6 mL/kg of predicted body weight, PEEP of 14 cm H2O, and FiO2 of 0.9; plateau pressure is 28 cm H2O. He is sedated and synchronous with the ventilator. Blood pressure is 112/68 mm Hg on a low dose of norepinephrine. Arterial blood gas analysis shows a PaO2 of 72 mm Hg. Bedside echocardiography shows normal left ventricular function. A portable chest x ray is shown. Which of the following is the most appropriate next step in management? A. Prone positioning for at least 16 hours per day B. Inhaled nitric oxide at 20 parts per million C. High frequency oscillatory ventilation D. Intravenous furosemide bolus E. Increase tidal volume to 10 mL/kg of predicted body weight"
+  },
+  {
+   "id": "imaging-2026-0609",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 베타차단제 증량 뒤 피곤한 중년 여성의 서맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+   "confidence": "high",
+   "date": "2026-11-10",
+   "path": "content/imaging/2026/imaging-2026-0609.md",
+   "snippet": "53세 여자가 2주 전부터 쉽게 피곤하고 계단을 오를 때 숨이 차서 외래에 왔다. 실신이나 흉통은 없다. 3주 전 고혈압과 두근거림으로 메토프롤롤 용량을 하루 50 mg 에서 200 mg 으로 올렸다. 혈압 118/74 mmHg, 맥박 48회/분, 호흡 16회/분이다. 의식은 명료하고 폐음은 깨끗하며 다리 부종은 없다. 혈청 칼륨 4.2 mEq/L 이고 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 ",
+   "text": "순환기 순환기 — 베타차단제 증량 뒤 피곤한 중년 여성의 서맥 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7 53세 여자가 2주 전부터 쉽게 피곤하고 계단을 오를 때 숨이 차서 외래에 왔다. 실신이나 흉통은 없다. 3주 전 고혈압과 두근거림으로 메토프롤롤 용량을 하루 50 mg 에서 200 mg 으로 올렸다. 혈압 118/74 mmHg, 맥박 48회/분, 호흡 16회/분이다. 의식은 명료하고 폐음은 깨끗하며 다리 부종은 없다. 혈청 칼륨 4.2 mEq/L 이고 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 경피 심박조율 B. 이소프로테레놀 지속 정맥 주입 C. 메토프롤롤 감량 D. 영구 심박동기 삽입 E. 아트로핀 정맥 주사"
   },
   {
    "id": "imaging-2026-0608",

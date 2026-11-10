@@ -2,6 +2,933 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0620",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 가끔 맥이 건너뛴다고 느끼는 고령 남성",
+  "type": "심전도 판독 — 가끔 맥이 건너뛴다고 느끼는 고령 남성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "An 80-year-old man comes to the physician because he occasionally feels that his heart skips a beat while resting in the evening. He has no chest pain, dyspnea, or syncope. He has hypertension treated with amlodipine. His pulse is 70/min and irregular at times, and blood pressure is 134/78 mm Hg. Cardiac examination shows no murmurs. Serum potassium and magnesium concentrations are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely cause of the single wide complex in the rhythm strip?",
+  "options": [
+   "Ventricular pacing artifact",
+   "Premature ventricular contraction",
+   "Premature atrial contraction with aberrant conduction",
+   "Intermittent left bundle branch block",
+   "Ventricular escape beat"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The underlying rhythm is sinus at about 70/min with a mildly prolonged PR interval (about 220 ms). In the lead II rhythm strip, one complex arrives early, is wide and bizarre with a T wave in the opposite direction to its QRS, and has no preceding premature P wave. It is followed by a full compensatory pause: the interval surrounding it equals two normal sinus cycles, because the sinus node was not reset. These features identify a premature ventricular contraction.\n- 원리: <b>Why the PVC is wide and its T wave is opposite</b>: A ventricular focus fires before the next sinus impulse and spreads cell to cell through ventricular muscle instead of the His-Purkinje system, so depolarization is slow and the QRS exceeds 120 ms. Because the order of repolarization follows the abnormal order of depolarization, the ST segment and T wave point opposite to the main QRS deflection (secondary ST-T change).<br> <b>Why the pause is fully compensatory</b>: The ventricular impulse usually does not conduct backward into the atria in time to discharge the sinus node. The sinus node keeps its rhythm; its next P wave falls while the ventricles are refractory and is not conducted, and the following P wave conducts on schedule. The R-R interval around the PVC therefore equals exactly two sinus cycles. A premature atrial contraction, by contrast, enters and resets the sinus node, so the pause is usually less than compensatory.<br> <b>Why it matters</b>: Isolated PVCs in a person without structural heart disease are usually benign; frequent PVCs (over about 10% of beats) warrant echocardiography to look for cardiomyopathy.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Premature ventricular contraction (answer)</th><th>Premature atrial contraction with aberrancy (closest distractor)</th></tr></thead><tbody> <tr><td>Preceding P wave</td><td><b>None</b> (sinus P may hide in the QRS or ST)</td><td>Early, differently shaped P wave, often in the previous T wave</td></tr> <tr><td>QRS</td><td>Wide, bizarre, unlike any bundle branch pattern</td><td>Typical right or left bundle branch block shape</td></tr> <tr><td>Pause</td><td>Fully compensatory (two sinus cycles)</td><td>Usually less than compensatory (sinus node reset)</td></tr> <tr><td>Initial QRS deflection</td><td>Differs from the sinus beats</td><td>Same initial vector as the sinus beats</td></tr> </tbody></table> Look first for an early P wave before the wide beat and then measure the pause; absence of the P wave plus a full compensatory pause points to a ventricular origin.\n- 오답 이유:\n  - (A) A pacing artifact would be correct only in a patient with a pacemaker, where a sharp spike precedes each paced wide complex.\n  - (C) A premature atrial contraction with aberrancy would be correct if an early, differently shaped P wave preceded the wide beat and the pause reset the sinus cycle.\n  - (D) Intermittent left bundle branch block would be correct if the wide complexes appeared at the normal sinus timing, each preceded by a sinus P wave with a constant PR interval.\n  - (E) A ventricular escape beat would be correct if the wide complex came late, after a pause longer than the sinus cycle, not early.\n- 함정: Calling every early wide beat aberrancy or bundle branch block — no premature P wave and a full compensatory pause identify a ventricular origin.\n- 학습목표: P파 없이 일찍 온 넓은 QRS 와 반대 방향 T파, 완전 보상휴지를 심실 기외수축으로 판독하고 변행전도를 동반한 심방 기외수축과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 259: Approach to Ventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17672 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The underlying rhythm is sinus at about 70/min with a mildly prolonged PR interval (about 220 ms). In the lead II rhythm strip, one complex arrives early, is wide and bizarre with a T wave in the opposite direction to its QRS, and has no preceding premature P wave. It is followed by a full compensatory pause: the interval surrounding it equals two normal sinus cycles, because the sinus node was not reset. These features identify a premature ventricular contraction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the PVC is wide and its T wave is opposite</b>: A ventricular focus fires before the next sinus impulse and spreads cell to cell through ventricular muscle instead of the His-Purkinje system, so depolarization is slow and the QRS exceeds 120 ms. Because the order of repolarization follows the abnormal order of depolarization, the ST segment and T wave point opposite to the main QRS deflection (secondary ST-T change).<br> <b>Why the pause is fully compensatory</b>: The ventricular impulse usually does not conduct backward into the atria in time to discharge the sinus node. The sinus node keeps its rhythm; its next P wave falls while the ventricles are refractory and is not conducted, and the following P wave conducts on schedule. The R-R interval around the PVC therefore equals exactly two sinus cycles. A premature atrial contraction, by contrast, enters and resets the sinus node, so the pause is usually less than compensatory.<br> <b>Why it matters</b>: Isolated PVCs in a person without structural heart disease are usually benign; frequent PVCs (over about 10% of beats) warrant echocardiography to look for cardiomyopathy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Premature ventricular contraction (answer)</th><th>Premature atrial contraction with aberrancy (closest distractor)</th></tr></thead><tbody> <tr><td>Preceding P wave</td><td><b>None</b> (sinus P may hide in the QRS or ST)</td><td>Early, differently shaped P wave, often in the previous T wave</td></tr> <tr><td>QRS</td><td>Wide, bizarre, unlike any bundle branch pattern</td><td>Typical right or left bundle branch block shape</td></tr> <tr><td>Pause</td><td>Fully compensatory (two sinus cycles)</td><td>Usually less than compensatory (sinus node reset)</td></tr> <tr><td>Initial QRS deflection</td><td>Differs from the sinus beats</td><td>Same initial vector as the sinus beats</td></tr> </tbody></table> Look first for an early P wave before the wide beat and then measure the pause; absence of the P wave plus a full compensatory pause points to a ventricular origin."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A pacing artifact would be correct only in a patient with a pacemaker, where a sharp spike precedes each paced wide complex.\n(C) A premature atrial contraction with aberrancy would be correct if an early, differently shaped P wave preceded the wide beat and the pause reset the sinus cycle.\n(D) Intermittent left bundle branch block would be correct if the wide complexes appeared at the normal sinus timing, each preceded by a sinus P wave with a constant PR interval.\n(E) A ventricular escape beat would be correct if the wide complex came late, after a pause longer than the sinus cycle, not early."
+   },
+   {
+    "k": "함정",
+    "v": "Calling every early wide beat aberrancy or bundle branch block — no premature P wave and a full compensatory pause identify a ventricular origin."
+   },
+   {
+    "k": "학습목표",
+    "v": "P파 없이 일찍 온 넓은 QRS 와 반대 방향 T파, 완전 보상휴지를 심실 기외수축으로 판독하고 변행전도를 동반한 심방 기외수축과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 259: Approach to Ventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17672 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "An early wide complex without a preceding P wave, with a discordant T wave and a full compensatory pause, is a premature ventricular contraction",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "No premature P wave precedes the wide beat, and the pause equals two sinus cycles",
+   "steps": 3,
+   "chain": [
+    "영상: one early, wide, bizarre QRS with an opposite T wave in the lead II rhythm strip",
+    "No premature P wave before it -> not an atrial premature beat with aberrancy",
+    "Full compensatory pause (sinus node not reset) -> premature ventricular contraction"
+   ],
+   "key": [
+    {
+     "item": "영상: an early, wide complex with an opposite-direction T wave and no preceding P wave",
+     "why": "Ventricular origin of the premature beat",
+     "also": []
+    },
+    {
+     "item": "영상: a full compensatory pause after the wide complex",
+     "why": "Sinus node not reset — typical of a PVC",
+     "also": []
+    },
+    {
+     "item": "feels that his heart skips a beat",
+     "why": "Typical symptom of the pause after a premature beat",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum potassium and magnesium concentrations are within the reference ranges",
+     "why": "Lowers the likelihood of an electrolyte cause of ectopy",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has no chest pain, dyspnea, or syncope",
+     "why": "Benign presentation — no urgent treatment",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "hypertension treated with amlodipine",
+     "why": "Common comorbidity; amlodipine does not cause ventricular ectopy",
+     "also": []
+    }
+   ],
+   "summary": "One early wide beat has no preceding P wave, a discordant T wave, and a full compensatory pause. This is a premature ventricular contraction.",
+   "switch": {
+    "choice": "C",
+    "condition": "If an early, differently shaped P wave preceded the wide beat with a right bundle branch block pattern and a reset pause, premature atrial contraction with aberrancy"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0620.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/17000/#files-panel",
+   "asset_id": "PTBXL-17672",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17672"
+  },
+  "run_id": "20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0619",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 정기 외래에 온 고령 남성의 넓은 QRS",
+  "type": "심전도 처치 — 정기 외래에 온 고령 남성의 넓은 QRS",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "75세 남자가 정기 외래 진료를 받으러 왔다. 3년 전 완전 방실차단으로 실신해 오른쪽 심실에 전극을 둔 인공 심박동기를 삽입하였다. 그 뒤 실신·어지럼·두근거림은 없고 일상생활에 불편이 없다. 혈압 128/74 mmHg, 맥박 85회/분이고 규칙적이다. 왼쪽 앞가슴의 기기 삽입 부위는 깨끗하다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "임시 경정맥 심박조율기를 삽입한다",
+   "아트로핀을 정맥 투여한다",
+   "현재 설정을 유지하고 정기 기기 점검을 계속한다",
+   "아미오다론을 정맥 투여한다",
+   "동기화 심율동전환을 시행한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 거의 모든 QRS 바로 앞에 좁고 날카로운 박동기 스파이크가 있고, 스파이크마다 넓은 QRS(약 160 ms)가 바로 따라온다(포획). II·III·aVF 의 QRS 가 음성인 상방 축이고 흉부 유도도 음성 우세여서 오른쪽 심실 첨부에서 시작한 흥분의 모양이다. 박동수는 약 85회/분으로 일정하고, 스파이크 뒤 QRS 가 빠지거나(포획 실패) 자기 박동 뒤에 부적절한 스파이크가 나오는(감지 실패) 곳이 없다. 증상도 없으므로 정상 작동하는 심실 조율이다 — 설정을 유지하고 정기 점검을 계속한다.\n- 원리: <b>왜 조율 박동은 넓은가</b>: 정상 흥분은 히스-푸르키니에 섬유를 타고 1초에 수 m 속도로 양쪽 심실에 동시에 퍼진다. 박동기 전극은 오른쪽 심실 첨부 심근을 직접 자극하므로 흥분이 전도계를 거치지 않고 심근 세포에서 세포로 느리게 퍼진다. 그래서 QRS 가 넓어지고, 오른쪽 심실이 먼저·왼쪽이 나중에 흥분해 <b>좌각차단 모양</b>이 되며, 첨부(아래)에서 위로 퍼지므로 하벽 유도가 음성인 상방 축이 된다. 넓은 QRS 와 반대 방향의 ST-T 도 이 비정상 흥분 순서의 이차 변화다.<br> <b>정상 작동의 세 확인</b>: ① 스파이크마다 QRS 가 따라오는가(포획), ② 자기 박동이 있을 때 스파이크가 억제되는가(감지), ③ 박동수가 설정 범위인가. 셋 모두 맞으면 기기 문제는 없다.<br> <b>왜 심실빈맥이 아닌가</b>: 심실빈맥은 스파이크 없이 넓은 QRS 가 빠르게(대개 120회/분 이상) 이어진다. 스파이크가 매번 QRS 를 이끌면 박동기가 만든 리듬이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">정상 심실 조율(정답)</th><th>심실빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 앞</td><td><b>박동기 스파이크</b>가 매번 있음</td><td>스파이크 없음, 방실해리·융합박동</td></tr> <tr><td>박동수</td><td>설정값(대개 60~90회/분)으로 일정</td><td>대개 120회/분 이상</td></tr> <tr><td>QRS 모양</td><td>좌각차단형·상방 축(우심실 첨부)</td><td>다양 — 북서축·흉부 유도 동방향성</td></tr> <tr><td>환자 상태</td><td>무증상</td><td>두근거림·어지럼·저혈압</td></tr> <tr><td>처치</td><td>정기 점검</td><td>안정 시 아미오다론, 불안정 시 심율동전환</td></tr> </tbody></table> 넓은 QRS 리듬을 보면 먼저 QRS 바로 앞의 좁은 스파이크를 찾는다. 있으면 박동기 리듬이고, 포획과 감지를 확인한 뒤 처치를 정한다.\n- 오답 이유:\n  - ① 임시 경정맥 심박조율기는 스파이크 뒤 QRS 가 따라오지 않는 포획 실패로 서맥·실신이 생겼다면 정답이 된다.\n  - ② 아트로핀 정맥 주사는 박동기가 없는 환자의 불안정 동서맥이나 방실결절 차단이라면 첫 약물로 정답이 된다.\n  - ④ 아미오다론 정맥 투여는 스파이크 없이 넓은 QRS 가 빠르게 이어지는 혈역학적으로 안정한 심실빈맥이라면 정답이 된다.\n  - ⑤ 동기화 심율동전환은 맥박이 있으나 저혈압·의식 저하를 동반한 불안정 심실빈맥이라면 정답이 된다.\n- 함정: 넓은 QRS 와 상방 축만 보고 심실빈맥으로 처치하는 것 — QRS 앞의 박동기 스파이크와 설정 범위의 박동수, 무증상이면 정상 작동하는 조율 리듬이다.\n- 학습목표: 박동기 스파이크 뒤 넓은 QRS 가 매 박동 따라오는 정상 심실 조율을 심실빈맥과 구분하고 정기 기기 점검을 처치로 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation. 2019;140(8):e382-e482\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16582 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "거의 모든 QRS 바로 앞에 좁고 날카로운 박동기 스파이크가 있고, 스파이크마다 넓은 QRS(약 160 ms)가 바로 따라온다(포획). II·III·aVF 의 QRS 가 음성인 상방 축이고 흉부 유도도 음성 우세여서 오른쪽 심실 첨부에서 시작한 흥분의 모양이다. 박동수는 약 85회/분으로 일정하고, 스파이크 뒤 QRS 가 빠지거나(포획 실패) 자기 박동 뒤에 부적절한 스파이크가 나오는(감지 실패) 곳이 없다. 증상도 없으므로 정상 작동하는 심실 조율이다 — 설정을 유지하고 정기 점검을 계속한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 조율 박동은 넓은가</b>: 정상 흥분은 히스-푸르키니에 섬유를 타고 1초에 수 m 속도로 양쪽 심실에 동시에 퍼진다. 박동기 전극은 오른쪽 심실 첨부 심근을 직접 자극하므로 흥분이 전도계를 거치지 않고 심근 세포에서 세포로 느리게 퍼진다. 그래서 QRS 가 넓어지고, 오른쪽 심실이 먼저·왼쪽이 나중에 흥분해 <b>좌각차단 모양</b>이 되며, 첨부(아래)에서 위로 퍼지므로 하벽 유도가 음성인 상방 축이 된다. 넓은 QRS 와 반대 방향의 ST-T 도 이 비정상 흥분 순서의 이차 변화다.<br> <b>정상 작동의 세 확인</b>: ① 스파이크마다 QRS 가 따라오는가(포획), ② 자기 박동이 있을 때 스파이크가 억제되는가(감지), ③ 박동수가 설정 범위인가. 셋 모두 맞으면 기기 문제는 없다.<br> <b>왜 심실빈맥이 아닌가</b>: 심실빈맥은 스파이크 없이 넓은 QRS 가 빠르게(대개 120회/분 이상) 이어진다. 스파이크가 매번 QRS 를 이끌면 박동기가 만든 리듬이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">정상 심실 조율(정답)</th><th>심실빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 앞</td><td><b>박동기 스파이크</b>가 매번 있음</td><td>스파이크 없음, 방실해리·융합박동</td></tr> <tr><td>박동수</td><td>설정값(대개 60~90회/분)으로 일정</td><td>대개 120회/분 이상</td></tr> <tr><td>QRS 모양</td><td>좌각차단형·상방 축(우심실 첨부)</td><td>다양 — 북서축·흉부 유도 동방향성</td></tr> <tr><td>환자 상태</td><td>무증상</td><td>두근거림·어지럼·저혈압</td></tr> <tr><td>처치</td><td>정기 점검</td><td>안정 시 아미오다론, 불안정 시 심율동전환</td></tr> </tbody></table> 넓은 QRS 리듬을 보면 먼저 QRS 바로 앞의 좁은 스파이크를 찾는다. 있으면 박동기 리듬이고, 포획과 감지를 확인한 뒤 처치를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 임시 경정맥 심박조율기는 스파이크 뒤 QRS 가 따라오지 않는 포획 실패로 서맥·실신이 생겼다면 정답이 된다.\n② 아트로핀 정맥 주사는 박동기가 없는 환자의 불안정 동서맥이나 방실결절 차단이라면 첫 약물로 정답이 된다.\n④ 아미오다론 정맥 투여는 스파이크 없이 넓은 QRS 가 빠르게 이어지는 혈역학적으로 안정한 심실빈맥이라면 정답이 된다.\n⑤ 동기화 심율동전환은 맥박이 있으나 저혈압·의식 저하를 동반한 불안정 심실빈맥이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "넓은 QRS 와 상방 축만 보고 심실빈맥으로 처치하는 것 — QRS 앞의 박동기 스파이크와 설정 범위의 박동수, 무증상이면 정상 작동하는 조율 리듬이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "박동기 스파이크 뒤 넓은 QRS 가 매 박동 따라오는 정상 심실 조율을 심실빈맥과 구분하고 정기 기기 점검을 처치로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation. 2019;140(8):e382-e482 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16582 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "스파이크마다 넓은 QRS 가 따라오고 감지 실패가 없는 정상 심실 조율이므로 설정을 유지하고 정기 점검한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "넓은 QRS 바로 앞에 박동기 스파이크가 매번 있고 박동수가 85회/분으로 일정하다",
+   "steps": 3,
+   "chain": [
+    "영상: QRS 마다 앞선 좁은 박동기 스파이크, 넓은 QRS·상방 축 → 우심실 조율 리듬",
+    "스파이크마다 QRS 포획, 부적절한 스파이크 없음 → 포획·감지 정상",
+    "무증상·혈역학 안정 → 기기 정상 작동 → 설정 유지와 정기 점검"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 박동 앞의 날카로운 박동기 스파이크와 뒤따르는 넓은 QRS",
+     "why": "박동기가 만든 리듬 — 심실빈맥이 아니다",
+     "also": []
+    },
+    {
+     "item": "영상: II·III·aVF 음성의 상방 축, 좌각차단형 QRS",
+     "why": "오른쪽 심실 첨부 조율의 예상 모양",
+     "also": []
+    },
+    {
+     "item": "오른쪽 심실에 전극을 둔 인공 심박동기",
+     "why": "QRS 모양과 맞는 기기 위치",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 85회/분이고 규칙적",
+     "why": "빠른 심실빈맥의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "실신·어지럼·두근거림은 없고",
+     "why": "무증상 — 응급 처치가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 칼륨 4.3 mEq/L",
+     "why": "고칼륨에 의한 포획 실패 우려가 없다는 배경",
+     "also": []
+    }
+   ],
+   "summary": "넓은 QRS 마다 박동기 스파이크가 앞서고 포획·감지가 정상이며 환자는 무증상이다. 정상 작동하는 심실 조율이므로 설정을 유지하고 정기 점검한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "스파이크 뒤 QRS 가 자주 빠지며(포획 실패) 맥박 30회/분으로 실신했다면 임시 경정맥 심박조율"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0619.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16582",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16582"
+  },
+  "run_id": "20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0618",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 대학 입학 검진에서 찍은 젊은 여성의 심전도",
+  "type": "심전도 판독 — 대학 입학 검진에서 찍은 젊은 여성의 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "18세 여자가 대학 입학 건강검진에서 심전도 이상이 있다고 하여 왔다. 증상은 없고 운동할 때 숨이 차지 않는다. 키 163 cm, 체중 56 kg 이다. 혈압 112/70 mmHg, 맥박 75회/분이다. 심음은 정상이고 잡음은 없으며 폐음은 깨끗하다. 흉부 X선과 심장초음파에서 우심실 크기·벽 두께와 추정 폐동맥압은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "좌후속지차단",
+   "좌전속지차단",
+   "우심실비대",
+   "우각차단",
+   "좌각차단"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 동리듬 약 75회/분이고 QRS 폭은 좁다. I 유도는 작은 r 뒤 그보다 깊은 S(rS)로 음성 우세이고, II·III·aVF 에서는 큰 R 파가 보이며 III 이 가장 크다 — 축이 +90° 를 넘는 우축 편위다. V1 은 rS 로 우측 흉부 유도의 큰 R 이 없고 V5·V6 의 깊은 S 도 없어 우심실비대 근거가 없으며, 심장초음파도 우심실이 정상이다. 우심실비대·폐질환·측벽 경색 같은 다른 우축 원인이 없는 좁은 QRS 의 우축 편위이므로 좌후속지차단이다. 판독 전문의의 판독도 「동리듬, 우축, 좌후속지차단」이었다.\n- 원리: <b>왜 속지차단은 축을 바꾸는가</b>: 좌각은 앞위쪽으로 가는 <b>좌전속지</b>와 뒤아래쪽으로 가는 <b>좌후속지</b>로 나뉜다. 좌후속지가 막히면 흥분은 좌전속지를 따라 앞위쪽 벽부터 시작해, 늦게 흥분하는 뒤아래쪽 벽으로 퍼진다. QRS 후반의 주 벡터가 아래·오른쪽을 향하므로 III·aVF 에서 큰 R, I·aVL 에서 깊은 S 가 생기고 축이 +90~+180° 로 옮겨 간다. 두 속지는 같은 좌각 안의 가지라 전체 전도 시간은 거의 늘지 않아 QRS 는 120 ms 미만이다.<br> <b>왜 배제 진단인가</b>: 좌후속지는 짧고 굵으며 두 관상동맥에서 혈액을 받아 단독으로 막히는 일이 드물다. 그래서 우축 편위를 보면 먼저 우심실비대·폐성심·측벽 경색·마른 체형의 정상 변이를 찾고, 이런 원인이 없을 때만 좌후속지차단으로 판독한다.<br> <b>임상적 의미</b>: 단독 좌후속지차단은 대개 무증상이지만 우각차단과 함께 있으면 이속지차단이 되어 고도 방실차단으로 진행할 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">좌후속지차단(정답)</th><th>우심실비대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전두면 축</td><td>우축(+90~+180°)</td><td>우축</td></tr> <tr><td>V1</td><td><b>rS — 큰 R 없음</b></td><td>R/S > 1, 큰 R 또는 qR</td></tr> <tr><td>V5·V6</td><td>정상 R</td><td>깊은 S, R/S < 1</td></tr> <tr><td>동반 소견</td><td>없음</td><td>우심방 확대(II 의 높은 P), 우측 흉부 유도의 ST-T 스트레인</td></tr> <tr><td>심장초음파</td><td>우심실 정상</td><td>우심실 비대·폐동맥압 상승</td></tr> </tbody></table> 두 진단 모두 우축이다. 흉부 유도가 정상이고 우심실 부하 근거가 없을 때만 좌후속지차단으로 남는다.\n- 오답 이유:\n  - ② 좌전속지차단은 I·aVL 의 qR 과 II·III·aVF 의 rS 로 축이 −45° 보다 왼쪽인 좌축 편위일 때 정답이 된다.\n  - ③ 우심실비대는 우축에 더해 V1 의 큰 R(R/S > 1)이나 V5·V6 의 깊은 S, 심장초음파의 우심실 비대가 있을 때 정답이 된다.\n  - ④ 우각차단은 QRS 가 120 ms 이상으로 넓고 V1 의 rsR′ 과 I·V6 의 넓고 끌리는 S 가 있을 때 정답이 된다.\n  - ⑤ 좌각차단은 QRS 가 120 ms 이상이고 I·V6 의 중격 q파 소실과 넓고 패인 R 이 있을 때 정답이 된다.\n- 함정: 우축 편위를 보면 바로 우심실비대로 읽는 것 — V1 의 R 파와 심장초음파로 우심실 부하를 먼저 확인하고, 없을 때 좌후속지차단으로 판독한다.\n- 학습목표: 좁은 QRS 의 우축 편위(I 의 rS, III·aVF 의 큰 R)를 우심실비대 근거 없이 좌후속지차단으로 판독하고 좌전속지차단·우심실비대와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. Circulation. 2009;119(10):e235-e240\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7419 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 75회/분이고 QRS 폭은 좁다. I 유도는 작은 r 뒤 그보다 깊은 S(rS)로 음성 우세이고, II·III·aVF 에서는 큰 R 파가 보이며 III 이 가장 크다 — 축이 +90° 를 넘는 우축 편위다. V1 은 rS 로 우측 흉부 유도의 큰 R 이 없고 V5·V6 의 깊은 S 도 없어 우심실비대 근거가 없으며, 심장초음파도 우심실이 정상이다. 우심실비대·폐질환·측벽 경색 같은 다른 우축 원인이 없는 좁은 QRS 의 우축 편위이므로 좌후속지차단이다. 판독 전문의의 판독도 「동리듬, 우축, 좌후속지차단」이었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 속지차단은 축을 바꾸는가</b>: 좌각은 앞위쪽으로 가는 <b>좌전속지</b>와 뒤아래쪽으로 가는 <b>좌후속지</b>로 나뉜다. 좌후속지가 막히면 흥분은 좌전속지를 따라 앞위쪽 벽부터 시작해, 늦게 흥분하는 뒤아래쪽 벽으로 퍼진다. QRS 후반의 주 벡터가 아래·오른쪽을 향하므로 III·aVF 에서 큰 R, I·aVL 에서 깊은 S 가 생기고 축이 +90~+180° 로 옮겨 간다. 두 속지는 같은 좌각 안의 가지라 전체 전도 시간은 거의 늘지 않아 QRS 는 120 ms 미만이다.<br> <b>왜 배제 진단인가</b>: 좌후속지는 짧고 굵으며 두 관상동맥에서 혈액을 받아 단독으로 막히는 일이 드물다. 그래서 우축 편위를 보면 먼저 우심실비대·폐성심·측벽 경색·마른 체형의 정상 변이를 찾고, 이런 원인이 없을 때만 좌후속지차단으로 판독한다.<br> <b>임상적 의미</b>: 단독 좌후속지차단은 대개 무증상이지만 우각차단과 함께 있으면 이속지차단이 되어 고도 방실차단으로 진행할 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">좌후속지차단(정답)</th><th>우심실비대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전두면 축</td><td>우축(+90~+180°)</td><td>우축</td></tr> <tr><td>V1</td><td><b>rS — 큰 R 없음</b></td><td>R/S > 1, 큰 R 또는 qR</td></tr> <tr><td>V5·V6</td><td>정상 R</td><td>깊은 S, R/S < 1</td></tr> <tr><td>동반 소견</td><td>없음</td><td>우심방 확대(II 의 높은 P), 우측 흉부 유도의 ST-T 스트레인</td></tr> <tr><td>심장초음파</td><td>우심실 정상</td><td>우심실 비대·폐동맥압 상승</td></tr> </tbody></table> 두 진단 모두 우축이다. 흉부 유도가 정상이고 우심실 부하 근거가 없을 때만 좌후속지차단으로 남는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 좌전속지차단은 I·aVL 의 qR 과 II·III·aVF 의 rS 로 축이 −45° 보다 왼쪽인 좌축 편위일 때 정답이 된다.\n③ 우심실비대는 우축에 더해 V1 의 큰 R(R/S > 1)이나 V5·V6 의 깊은 S, 심장초음파의 우심실 비대가 있을 때 정답이 된다.\n④ 우각차단은 QRS 가 120 ms 이상으로 넓고 V1 의 rsR′ 과 I·V6 의 넓고 끌리는 S 가 있을 때 정답이 된다.\n⑤ 좌각차단은 QRS 가 120 ms 이상이고 I·V6 의 중격 q파 소실과 넓고 패인 R 이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "우축 편위를 보면 바로 우심실비대로 읽는 것 — V1 의 R 파와 심장초음파로 우심실 부하를 먼저 확인하고, 없을 때 좌후속지차단으로 판독한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "좁은 QRS 의 우축 편위(I 의 rS, III·aVF 의 큰 R)를 우심실비대 근거 없이 좌후속지차단으로 판독하고 좌전속지차단·우심실비대와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. Circulation. 2009;119(10):e235-e240 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7419 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 의 우축 편위이고 우심실비대 근거가 없으므로 좌후속지차단으로 판독한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "V1 이 rS 이고 심장초음파의 우심실이 정상이다",
+   "steps": 2,
+   "chain": [
+    "영상: I 의 rS, II·III·aVF 의 큰 R(III 최대), 좁은 QRS → 우축 편위",
+    "V1 rS·우심실 정상 → 우심실비대 등 다른 원인 없음 → 좌후속지차단"
+   ],
+   "key": [
+    {
+     "item": "영상: I 유도 rS, III·aVF 의 큰 R — 우축 편위",
+     "why": "좌후속지차단의 축 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 좁은 QRS, V1 rS",
+     "why": "각차단이 아니고 우심실비대의 V1 큰 R 이 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "우심실 크기·벽 두께와 추정 폐동맥압은 정상",
+     "why": "우심실비대·폐성심의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "키 163 cm, 체중 56 kg",
+     "why": "매우 마른 체형의 수직 심장(정상 변이) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "증상은 없고 운동할 때 숨이 차지 않는다",
+     "why": "무증상 검진 소견 — 판독 자체에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "좁은 QRS 에 우축 편위가 있고 V1·심장초음파에서 우심실 부하가 없다. 좌후속지차단이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "V1 에 R/S > 1 인 큰 R 이 있고 심장초음파에서 우심실 벽이 두껍다면 우심실비대"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0618.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/07000/#files-panel",
+   "asset_id": "PTBXL-07419",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7419"
+  },
+  "run_id": "20261110T202553Z_일일심전도_2026-11-11_3units_3q_0349e3c9",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0614",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "신장·비뇨 — 검진 소변검사의 현미경적 혈뇨",
+  "type": "신장·비뇨 — 검진 소변검사의 현미경적 혈뇨",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "75세 남자가 건강검진 소변검사에서 현미경적 혈뇨가 나와 비뇨의학과에 왔다. 육안적 혈뇨·옆구리 통증·체중 감소는 없다. 흡연력은 40갑년이고 고혈압으로 약을 먹고 있다. 혈압 136/82 mmHg 이고 옆구리에 만져지는 종괴는 없다. 혈색소 13.8 g/dL, 혈청 크레아티닌 1.0 mg/dL 이고 소변 세포검사는 음성이다. 복부 조영증강 CT 는 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "신세포암",
+   "혈관근지방종",
+   "단순 신낭종",
+   "신우 요로상피암",
+   "신장 농양"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 왼쪽 신장 앞안쪽에 약 4~5 cm 의 불균질하게 조영증강되는 고형 종괴가 있고, 가운데는 괴사로 보이는 저음영이며 거시적 지방이나 석회화는 없다. 오른쪽 신장은 정상이다. 조영증강되는 고형 신장 종괴에서 지방이 보이지 않으면 신세포암을 가장 먼저 생각한다. 고령 남성·중증 흡연·현미경적 혈뇨도 위험 요인과 증상으로 맞고, 열·백혈구 증가가 없어 농양은 가능성이 낮다.\n- 원리: <b>CT 로 신장 종괴를 가르는 두 질문</b>: 첫째, <b>조영증강이 되는가</b> — 조영제 전후 감쇠가 15~20 HU 넘게 오르면 혈관이 있는 살아 있는 조직이다. 액체만 든 단순 낭종은 증강되지 않고 벽이 얇고 매끈하다. 둘째, <b>거시적 지방이 있는가</b> — −10 HU 이하의 지방이 보이면 혈관근지방종으로 진단할 수 있다. 지방 없이 증강되는 고형 종괴는 80 % 이상이 신세포암이다.<br> <b>왜 투명세포 신세포암은 불균질한가</b>: VHL 유전자 소실로 HIF 가 쌓여 VEGF 가 많이 만들어지므로 종양은 혈관이 풍부해 동맥기에 강하게 증강된다. 그러나 혈관 성장이 종양 성장을 따라가지 못하는 중심부는 괴사·출혈이 생겨 저음영으로 남는다.<br> <b>요로상피암과의 위치 차이</b>: 신우 요로상피암은 집합관계 점막에서 생겨 신동 안쪽에서 신우를 채우는 결손으로 보이고, 신실질 종괴보다 증강이 약하다. 소변 세포검사가 양성인 경우가 많다.\n- 비교: <table><thead><tr><th style=\"width:24%\">CT 소견</th><th style=\"width:38%\">신세포암(정답)</th><th>혈관근지방종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>지방</td><td>거시적 지방 없음(드물게 예외)</td><td><b>−10 HU 이하 거시적 지방</b></td></tr> <tr><td>조영증강</td><td>강하고 불균질, 중심 괴사</td><td>혈관 성분은 증강, 지방은 증강 없음</td></tr> <tr><td>석회화</td><td>있을 수 있음</td><td>거의 없음</td></tr> <tr><td>호발</td><td>고령 남성·흡연·비만</td><td>중년 여성, 결절성 경화증</td></tr> </tbody></table> 지방이 보이면 혈관근지방종, 지방 없이 증강되면 신세포암으로 다룬다. 지방이 적은 혈관근지방종은 영상만으로 가려지지 않아 수술 후 병리로 확정된다.\n- 오답 이유:\n  - ② 혈관근지방종은 종괴 안에 −10 HU 이하의 거시적 지방 음영이 뚜렷이 보일 때 정답이 된다.\n  - ③ 단순 신낭종은 물과 같은 감쇠에 조영증강이 없고 벽이 얇고 매끈한 둥근 병변일 때 정답이 된다.\n  - ④ 신우 요로상피암은 신동 안쪽 집합관계를 채우는 약하게 증강되는 결손과 양성 소변 세포검사가 있을 때 정답이 된다.\n  - ⑤ 신장 농양은 열·옆구리 압통·백혈구 증가와 함께 테두리만 증강되는 액체 저류가 보일 때 정답이 된다.\n- 함정: 가운데 저음영을 보고 낭종이나 농양으로 읽는 것 — 테두리가 아니라 두꺼운 고형 부분이 불균질하게 증강되면 괴사를 동반한 신세포암이다.\n- 학습목표: 거시적 지방이 없는 불균질 조영증강 고형 신장 종괴를 신세포암으로 진단하고 혈관근지방종·단순 신낭종과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00200 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 왼쪽 신장 앞안쪽에 약 4~5 cm 의 불균질하게 조영증강되는 고형 종괴가 있고, 가운데는 괴사로 보이는 저음영이며 거시적 지방이나 석회화는 없다. 오른쪽 신장은 정상이다. 조영증강되는 고형 신장 종괴에서 지방이 보이지 않으면 신세포암을 가장 먼저 생각한다. 고령 남성·중증 흡연·현미경적 혈뇨도 위험 요인과 증상으로 맞고, 열·백혈구 증가가 없어 농양은 가능성이 낮다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>CT 로 신장 종괴를 가르는 두 질문</b>: 첫째, <b>조영증강이 되는가</b> — 조영제 전후 감쇠가 15~20 HU 넘게 오르면 혈관이 있는 살아 있는 조직이다. 액체만 든 단순 낭종은 증강되지 않고 벽이 얇고 매끈하다. 둘째, <b>거시적 지방이 있는가</b> — −10 HU 이하의 지방이 보이면 혈관근지방종으로 진단할 수 있다. 지방 없이 증강되는 고형 종괴는 80 % 이상이 신세포암이다.<br> <b>왜 투명세포 신세포암은 불균질한가</b>: VHL 유전자 소실로 HIF 가 쌓여 VEGF 가 많이 만들어지므로 종양은 혈관이 풍부해 동맥기에 강하게 증강된다. 그러나 혈관 성장이 종양 성장을 따라가지 못하는 중심부는 괴사·출혈이 생겨 저음영으로 남는다.<br> <b>요로상피암과의 위치 차이</b>: 신우 요로상피암은 집합관계 점막에서 생겨 신동 안쪽에서 신우를 채우는 결손으로 보이고, 신실질 종괴보다 증강이 약하다. 소변 세포검사가 양성인 경우가 많다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">CT 소견</th><th style=\"width:38%\">신세포암(정답)</th><th>혈관근지방종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>지방</td><td>거시적 지방 없음(드물게 예외)</td><td><b>−10 HU 이하 거시적 지방</b></td></tr> <tr><td>조영증강</td><td>강하고 불균질, 중심 괴사</td><td>혈관 성분은 증강, 지방은 증강 없음</td></tr> <tr><td>석회화</td><td>있을 수 있음</td><td>거의 없음</td></tr> <tr><td>호발</td><td>고령 남성·흡연·비만</td><td>중년 여성, 결절성 경화증</td></tr> </tbody></table> 지방이 보이면 혈관근지방종, 지방 없이 증강되면 신세포암으로 다룬다. 지방이 적은 혈관근지방종은 영상만으로 가려지지 않아 수술 후 병리로 확정된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 혈관근지방종은 종괴 안에 −10 HU 이하의 거시적 지방 음영이 뚜렷이 보일 때 정답이 된다.\n③ 단순 신낭종은 물과 같은 감쇠에 조영증강이 없고 벽이 얇고 매끈한 둥근 병변일 때 정답이 된다.\n④ 신우 요로상피암은 신동 안쪽 집합관계를 채우는 약하게 증강되는 결손과 양성 소변 세포검사가 있을 때 정답이 된다.\n⑤ 신장 농양은 열·옆구리 압통·백혈구 증가와 함께 테두리만 증강되는 액체 저류가 보일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "가운데 저음영을 보고 낭종이나 농양으로 읽는 것 — 테두리가 아니라 두꺼운 고형 부분이 불균질하게 증강되면 괴사를 동반한 신세포암이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "거시적 지방이 없는 불균질 조영증강 고형 신장 종괴를 신세포암으로 진단하고 혈관근지방종·단순 신낭종과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00200 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "거시적 지방 없이 불균질하게 조영증강되는 고형 신장 종괴는 신세포암이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "종괴 안에 거시적 지방 음영이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 신장의 불균질 조영증강 고형 종괴, 중심 저음영, 거시적 지방 없음",
+    "지방 없는 조영증강 고형 종괴 + 고령·흡연·현미경적 혈뇨 → 신세포암"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 신장의 불균질 조영증강 고형 종괴, 거시적 지방·석회화 없음",
+     "why": "신세포암의 영상 소견 — 지방이 없어 혈관근지방종이 아니다",
+     "also": []
+    },
+    {
+     "item": "현미경적 혈뇨",
+     "why": "신세포암의 흔한 발현",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 중심부 저음영(괴사)",
+     "why": "두꺼운 고형부가 증강되어 단순 낭종·농양의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "소변 세포검사는 음성",
+     "why": "요로상피암의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "흡연력은 40갑년",
+     "why": "위험 인자 — 진단을 정하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "육안적 혈뇨·옆구리 통증·체중 감소는 없다",
+     "why": "고전적 삼징은 드물어 없어도 진단을 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "왼쪽 신장에 지방 없이 불균질하게 증강되는 고형 종괴가 있다. 고령·흡연·혈뇨와 함께 신세포암이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "종괴 안에 −10 HU 이하의 거시적 지방이 뚜렷하다면 혈관근지방종"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0614.png",
+   "caption": "조영증강 복부 CT, 축상 단면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 크롭·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.102212264585598679920349005328",
+   "asset_id": "TCIA-KITS-00200_43655632",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00200"
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0612",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "근골격 — 손을 짚고 넘어진 뒤 손목 바깥쪽 통증",
+  "type": "근골격 — 손을 짚고 넘어진 뒤 손목 바깥쪽 통증",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "A 17-year-old boy comes to the emergency department 3 hours after falling onto his outstretched right hand while playing basketball. He has pain on the radial side of the wrist. Examination shows mild swelling and tenderness to palpation in the anatomic snuffbox; there is pain with axial loading of the thumb. There is no deformity, and distal sensation and capillary refill are normal. The distal radius and ulna are not tender. A radiograph of the right wrist is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Closed reduction and sugar-tong splint of the distal radius",
+   "Open reduction and internal fixation of the wrist",
+   "Short arm cast for 3 weeks for a buckle fracture",
+   "Thumb spica immobilization with repeat imaging in 10 to 14 days",
+   "Reassurance with an elastic bandage and return to sports"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The radiograph shows intact cortices of the distal radius and ulna with no fracture line, displacement, or periosteal reaction; the physes are nearly closed. Tenderness in the anatomic snuffbox and pain on axial loading of the thumb after a fall on an outstretched hand strongly suggest a scaphoid fracture, which is often invisible on initial radiographs. Such a clinically suspected fracture is immobilized in a thumb spica splint and re-imaged in 10 to 14 days (or evaluated earlier with MRI or CT if available).\n- 원리: <b>Why the first radiograph can be normal</b>: Scaphoid fractures are often nondisplaced and run in a plane oblique to the x-ray beam. In the first days, the fracture line is a hairline crack that only becomes visible after bone resorption along it in 1-2 weeks. Up to about a fifth of scaphoid fractures are missed on initial views.<br> <b>Why missing it matters — the blood supply</b>: The scaphoid is supplied mainly by branches of the radial artery that enter the dorsal ridge distally and flow <b>retrograde</b> to the proximal pole. A waist fracture cuts the proximal pole off from this supply, leading to nonunion and avascular necrosis, and eventually wrist arthritis (scaphoid nonunion advanced collapse).<br> <b>Why immobilize before proof</b>: Treating every suspected case with a thumb spica for 10-14 days costs little, whereas an untreated fracture risks permanent disability. Repeat radiographs, or MRI as the most sensitive early test, then confirm or exclude the fracture.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Suspected scaphoid fracture (answer)</th><th>Wrist sprain (closest distractor)</th></tr></thead><tbody> <tr><td>Point tenderness</td><td><b>Anatomic snuffbox</b>, scaphoid tubercle</td><td>Diffuse or ligament line without snuffbox pain</td></tr> <tr><td>Axial thumb loading</td><td>Painful</td><td>Usually painless</td></tr> <tr><td>Initial radiograph</td><td>Often normal</td><td>Normal</td></tr> <tr><td>Management</td><td>Thumb spica, re-image in 10-14 days or MRI</td><td>Brief support and early motion</td></tr> </tbody></table> A normal radiograph does not exclude a scaphoid fracture; the decision is driven by snuffbox findings, not by the film.\n- 오답 이유:\n  - (A) Closed reduction and a sugar-tong splint would be correct for a displaced distal radius fracture with deformity, which the radiograph does not show.\n  - (B) Open reduction and internal fixation would be chosen for a displaced or proximal pole scaphoid fracture confirmed on imaging, not for a normal radiograph.\n  - (C) A short arm cast would treat a buckle fracture of the distal radius metaphysis, which would show cortical bulging that is absent here.\n  - (E) Reassurance and return to sports would be appropriate only if there were no snuffbox tenderness and no pain with thumb loading, that is, a simple sprain.\n- 함정: Sending the patient home because the radiograph is normal — snuffbox tenderness after a fall on an outstretched hand means a scaphoid fracture until proven otherwise.\n- 학습목표: 손을 짚고 넘어진 뒤 해부학적 코담배갑 압통이 있으나 첫 X선이 정상일 때 주상골 골절 의증으로 엄지 고정과 추적 영상을 고른다\n- 근거·출처: Clementson M, Björkman A, Thomsen NOB. Acute scaphoid fractures: guidelines for diagnosis and treatment. EFORT Open Rev. 2020;5(2):96-103 · Mallee WH, Wang J, Poolman RW, et al. Computed tomography versus magnetic resonance imaging versus bone scintigraphy for clinically suspected scaphoid fractures in patients with negative plain radiographs. Cochrane Database Syst Rev. 2015;(6):CD010023\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows intact cortices of the distal radius and ulna with no fracture line, displacement, or periosteal reaction; the physes are nearly closed. Tenderness in the anatomic snuffbox and pain on axial loading of the thumb after a fall on an outstretched hand strongly suggest a scaphoid fracture, which is often invisible on initial radiographs. Such a clinically suspected fracture is immobilized in a thumb spica splint and re-imaged in 10 to 14 days (or evaluated earlier with MRI or CT if available)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the first radiograph can be normal</b>: Scaphoid fractures are often nondisplaced and run in a plane oblique to the x-ray beam. In the first days, the fracture line is a hairline crack that only becomes visible after bone resorption along it in 1-2 weeks. Up to about a fifth of scaphoid fractures are missed on initial views.<br> <b>Why missing it matters — the blood supply</b>: The scaphoid is supplied mainly by branches of the radial artery that enter the dorsal ridge distally and flow <b>retrograde</b> to the proximal pole. A waist fracture cuts the proximal pole off from this supply, leading to nonunion and avascular necrosis, and eventually wrist arthritis (scaphoid nonunion advanced collapse).<br> <b>Why immobilize before proof</b>: Treating every suspected case with a thumb spica for 10-14 days costs little, whereas an untreated fracture risks permanent disability. Repeat radiographs, or MRI as the most sensitive early test, then confirm or exclude the fracture."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Suspected scaphoid fracture (answer)</th><th>Wrist sprain (closest distractor)</th></tr></thead><tbody> <tr><td>Point tenderness</td><td><b>Anatomic snuffbox</b>, scaphoid tubercle</td><td>Diffuse or ligament line without snuffbox pain</td></tr> <tr><td>Axial thumb loading</td><td>Painful</td><td>Usually painless</td></tr> <tr><td>Initial radiograph</td><td>Often normal</td><td>Normal</td></tr> <tr><td>Management</td><td>Thumb spica, re-image in 10-14 days or MRI</td><td>Brief support and early motion</td></tr> </tbody></table> A normal radiograph does not exclude a scaphoid fracture; the decision is driven by snuffbox findings, not by the film."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Closed reduction and a sugar-tong splint would be correct for a displaced distal radius fracture with deformity, which the radiograph does not show.\n(B) Open reduction and internal fixation would be chosen for a displaced or proximal pole scaphoid fracture confirmed on imaging, not for a normal radiograph.\n(C) A short arm cast would treat a buckle fracture of the distal radius metaphysis, which would show cortical bulging that is absent here.\n(E) Reassurance and return to sports would be appropriate only if there were no snuffbox tenderness and no pain with thumb loading, that is, a simple sprain."
+   },
+   {
+    "k": "함정",
+    "v": "Sending the patient home because the radiograph is normal — snuffbox tenderness after a fall on an outstretched hand means a scaphoid fracture until proven otherwise."
+   },
+   {
+    "k": "학습목표",
+    "v": "손을 짚고 넘어진 뒤 해부학적 코담배갑 압통이 있으나 첫 X선이 정상일 때 주상골 골절 의증으로 엄지 고정과 추적 영상을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Clementson M, Björkman A, Thomsen NOB. Acute scaphoid fractures: guidelines for diagnosis and treatment. EFORT Open Rev. 2020;5(2):96-103 · Mallee WH, Wang J, Poolman RW, et al. Computed tomography versus magnetic resonance imaging versus bone scintigraphy for clinically suspected scaphoid fractures in patients with negative plain radiographs. Cochrane Database Syst Rev. 2015;(6):CD010023 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Snuffbox tenderness with a normal radiograph means a clinically suspected scaphoid fracture, managed with thumb spica immobilization and repeat imaging",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Tenderness in the anatomic snuffbox and pain with axial loading of the thumb despite a normal radiograph",
+   "steps": 2,
+   "chain": [
+    "영상: intact cortices of the distal radius and ulna with no fracture line, displacement, or periosteal reaction",
+    "Snuffbox tenderness and pain on thumb loading after a fall -> occult scaphoid fracture suspected -> thumb spica and re-image"
+   ],
+   "key": [
+    {
+     "item": "영상: no fracture line, displacement, or periosteal reaction",
+     "why": "Initial radiograph is normal, which is typical of an occult scaphoid fracture",
+     "also": []
+    },
+    {
+     "item": "tenderness to palpation in the anatomic snuffbox",
+     "why": "Most suggestive sign of a scaphoid fracture",
+     "also": []
+    },
+    {
+     "item": "pain with axial loading of the thumb",
+     "why": "Supports scaphoid injury",
+     "also": []
+    },
+    {
+     "item": "falling onto his outstretched right hand",
+     "why": "Typical mechanism",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The distal radius and ulna are not tender",
+     "why": "Makes a distal radius or buckle fracture less likely",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "distal sensation and capillary refill are normal",
+     "why": "Neurovascularly intact — does not change the plan",
+     "also": []
+    }
+   ],
+   "summary": "The radiograph is normal, but snuffbox tenderness and thumb-loading pain after a fall suggest an occult scaphoid fracture. Immobilize in a thumb spica and re-image in 10-14 days.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the radiograph showed a dorsally angulated distal radius fracture with deformity, closed reduction and a sugar-tong splint"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0612.png",
+   "caption": "Frontal radiograph of the right wrist and distal forearm; side marker as in the original, resized only (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0312_0795914876_01_WRI-R1_M017",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0610",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "호흡기 — 저일회호흡량에도 저산소증이 지속되는 코로나19 ARDS",
+  "type": "호흡기 — 저일회호흡량에도 저산소증이 지속되는 코로나19 ARDS",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "A 56-year-old man with COVID-19 pneumonia was intubated in the intensive care unit 14 hours ago for worsening hypoxemia. He is receiving volume-controlled ventilation with a tidal volume of 6 mL/kg of predicted body weight, PEEP of 14 cm H2O, and FiO2 of 0.9; plateau pressure is 28 cm H2O. He is sedated and synchronous with the ventilator. Blood pressure is 112/68 mm Hg on a low dose of norepinephrine. Arterial blood gas analysis shows a PaO2 of 72 mm Hg. Bedside echocardiography shows normal left ventricular function. A portable chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Prone positioning for at least 16 hours per day",
+   "Inhaled nitric oxide at 20 parts per million",
+   "High-frequency oscillatory ventilation",
+   "Intravenous furosemide bolus",
+   "Increase tidal volume to 10 mL/kg of predicted body weight"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The radiograph shows bilateral diffuse ground-glass and patchy consolidative opacities, worse in the lower zones, with an endotracheal tube, nasogastric tube, and central venous catheter in place. With normal left ventricular function, the opacities are not cardiogenic. His PaO2/FiO2 ratio is 72/0.9 = 80 despite lung-protective settings and PEEP 14, which is severe ARDS. When the ratio stays below 150 after initial stabilization, prone positioning for at least 16 hours a day lowers mortality and should be started early, within the first 36 hours of ventilation.\n- 원리: <b>Why turning the patient over helps</b>: In the supine position, the weight of the heart and the edematous lung compresses the dorsal regions, which contain most of the lung tissue. These collapsed dorsal units still receive most of the blood flow, so shunt is large. Prone positioning makes the pleural pressure gradient more uniform from front to back, reopens the dorsal lung, and keeps perfusion largely dorsal, so ventilation and perfusion match better.<br> <b>Why it also protects the lung</b>: Because aeration becomes more even, the same tidal volume is spread over more open alveoli. Regional overdistension and cyclic opening and closing fall, which reduces ventilator-induced lung injury. This explains why proning lowered mortality, while drugs that only raise PaO2 did not.<br> <b>Why duration matters</b>: The benefit was shown with long sessions of at least 16 hours a day started early in severe ARDS; short sessions in older trials did not change survival.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Prone positioning (answer)</th><th>Inhaled nitric oxide (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Recruits dorsal lung, more uniform aeration</td><td>Selective pulmonary vasodilation in ventilated units</td></tr> <tr><td>Effect on PaO2</td><td>Improves, often sustained</td><td>Improves transiently (24-48 h)</td></tr> <tr><td>Mortality</td><td><b>Lower</b> in severe ARDS (PaO2/FiO2 below 150)</td><td>No reduction; possible kidney injury</td></tr> <tr><td>Role</td><td>Standard step after lung-protective ventilation</td><td>Rescue only when other measures fail</td></tr> </tbody></table> A treatment that raises PaO2 is not the same as a treatment that saves lives; in severe ARDS, the measures that reduce lung stretch (low tidal volume, proning) are the ones with mortality benefit.\n- 오답 이유:\n  - (B) Inhaled nitric oxide could be chosen only as a short rescue for refractory hypoxemia after proning has failed, because it raises PaO2 without lowering mortality.\n  - (C) High-frequency oscillatory ventilation would only be considered in a specialized center when conventional strategies fail; trials showed no benefit or harm in early ARDS.\n  - (D) Intravenous furosemide would be the answer if the opacities were from cardiogenic pulmonary edema or clear volume overload, which the normal echocardiogram argues against.\n  - (E) A tidal volume of 10 mL/kg would be acceptable only in a patient without lung injury; in ARDS it overstretches the small aerated lung and increases mortality.\n- 함정: Choosing the therapy that raises PaO2 fastest (inhaled nitric oxide) — in severe ARDS the step with proven mortality benefit after low tidal volume ventilation is prone positioning.\n- 학습목표: 저일회호흡량·적정 PEEP 에도 PaO2/FiO2 150 미만이 지속되는 중증 ARDS 에서 복와위 환기를 고르고 흡입 산화질소와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome · Guérin C, Reignier J, Richard JC, et al. Prone positioning in severe acute respiratory distress syndrome. N Engl J Med. 2013;368(23):2159-2168\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …17995007 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows bilateral diffuse ground-glass and patchy consolidative opacities, worse in the lower zones, with an endotracheal tube, nasogastric tube, and central venous catheter in place. With normal left ventricular function, the opacities are not cardiogenic. His PaO2/FiO2 ratio is 72/0.9 = 80 despite lung-protective settings and PEEP 14, which is severe ARDS. When the ratio stays below 150 after initial stabilization, prone positioning for at least 16 hours a day lowers mortality and should be started early, within the first 36 hours of ventilation."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why turning the patient over helps</b>: In the supine position, the weight of the heart and the edematous lung compresses the dorsal regions, which contain most of the lung tissue. These collapsed dorsal units still receive most of the blood flow, so shunt is large. Prone positioning makes the pleural pressure gradient more uniform from front to back, reopens the dorsal lung, and keeps perfusion largely dorsal, so ventilation and perfusion match better.<br> <b>Why it also protects the lung</b>: Because aeration becomes more even, the same tidal volume is spread over more open alveoli. Regional overdistension and cyclic opening and closing fall, which reduces ventilator-induced lung injury. This explains why proning lowered mortality, while drugs that only raise PaO2 did not.<br> <b>Why duration matters</b>: The benefit was shown with long sessions of at least 16 hours a day started early in severe ARDS; short sessions in older trials did not change survival."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Prone positioning (answer)</th><th>Inhaled nitric oxide (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Recruits dorsal lung, more uniform aeration</td><td>Selective pulmonary vasodilation in ventilated units</td></tr> <tr><td>Effect on PaO2</td><td>Improves, often sustained</td><td>Improves transiently (24-48 h)</td></tr> <tr><td>Mortality</td><td><b>Lower</b> in severe ARDS (PaO2/FiO2 below 150)</td><td>No reduction; possible kidney injury</td></tr> <tr><td>Role</td><td>Standard step after lung-protective ventilation</td><td>Rescue only when other measures fail</td></tr> </tbody></table> A treatment that raises PaO2 is not the same as a treatment that saves lives; in severe ARDS, the measures that reduce lung stretch (low tidal volume, proning) are the ones with mortality benefit."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Inhaled nitric oxide could be chosen only as a short rescue for refractory hypoxemia after proning has failed, because it raises PaO2 without lowering mortality.\n(C) High-frequency oscillatory ventilation would only be considered in a specialized center when conventional strategies fail; trials showed no benefit or harm in early ARDS.\n(D) Intravenous furosemide would be the answer if the opacities were from cardiogenic pulmonary edema or clear volume overload, which the normal echocardiogram argues against.\n(E) A tidal volume of 10 mL/kg would be acceptable only in a patient without lung injury; in ARDS it overstretches the small aerated lung and increases mortality."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the therapy that raises PaO2 fastest (inhaled nitric oxide) — in severe ARDS the step with proven mortality benefit after low tidal volume ventilation is prone positioning."
+   },
+   {
+    "k": "학습목표",
+    "v": "저일회호흡량·적정 PEEP 에도 PaO2/FiO2 150 미만이 지속되는 중증 ARDS 에서 복와위 환기를 고르고 흡입 산화질소와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome · Guérin C, Reignier J, Richard JC, et al. Prone positioning in severe acute respiratory distress syndrome. N Engl J Med. 2013;368(23):2159-2168 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …17995007 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Severe ARDS with a PaO2/FiO2 ratio of 80 despite lung-protective ventilation calls for prolonged prone positioning",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Prone positioning lowers mortality in severe ARDS, whereas inhaled nitric oxide only transiently raises PaO2",
+   "steps": 3,
+   "chain": [
+    "영상: bilateral diffuse ground-glass and patchy consolidative opacities with lines and tubes",
+    "PaO2 72 on FiO2 0.9 with PEEP 14 and normal left ventricular function -> severe ARDS (ratio 80)",
+    "Already on 6 mL/kg and plateau 28 -> next evidence-based step is prone positioning at least 16 h/day"
+   ],
+   "key": [
+    {
+     "item": "영상: bilateral diffuse ground-glass and patchy consolidative opacities",
+     "why": "Bilateral opacities required for ARDS",
+     "also": []
+    },
+    {
+     "item": "PaO2 of 72 mm Hg",
+     "why": "With FiO2 0.9 the ratio is 80, below the proning threshold of 150",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "normal left ventricular function",
+     "why": "Makes cardiogenic pulmonary edema less likely, arguing against diuresis",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "tidal volume of 6 mL/kg of predicted body weight, PEEP of 14 cm H2O",
+     "why": "Lung-protective ventilation is already in place, so the next step is proning",
+     "also": []
+    },
+    {
+     "item": "plateau pressure is 28 cm H2O",
+     "why": "Within the 30 cm H2O limit — no room to increase tidal volume",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "low dose of norepinephrine",
+     "why": "Mild vasopressor need does not contraindicate proning",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral opacities with a PaO2/FiO2 ratio of 80 despite 6 mL/kg and PEEP 14 mean severe ARDS. The next step is prone positioning for at least 16 hours a day.",
+   "switch": {
+    "choice": "D",
+    "condition": "If echocardiography showed a reduced ejection fraction with high filling pressures and recent weight gain, diuresis with furosemide"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0610.png",
+   "caption": "Portable supine anteroposterior chest radiograph; text and side markers as in the original, resized only (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1681487890324054962587217995007",
+   "asset_id": "TCIA-COVID19_AR-95456696413660",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …17995007"
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0609",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "순환기 — 베타차단제 증량 뒤 피곤한 중년 여성의 서맥",
+  "type": "순환기 — 베타차단제 증량 뒤 피곤한 중년 여성의 서맥",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "53세 여자가 2주 전부터 쉽게 피곤하고 계단을 오를 때 숨이 차서 외래에 왔다. 실신이나 흉통은 없다. 3주 전 고혈압과 두근거림으로 메토프롤롤 용량을 하루 50 mg 에서 200 mg 으로 올렸다. 혈압 118/74 mmHg, 맥박 48회/분, 호흡 16회/분이다. 의식은 명료하고 폐음은 깨끗하며 다리 부종은 없다. 혈청 칼륨 4.2 mEq/L 이고 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경피 심박조율",
+   "이소프로테레놀 지속 정맥 주입",
+   "메토프롤롤 감량",
+   "영구 심박동기 삽입",
+   "아트로핀 정맥 주사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 같은 모양의 양성 P파가 있고 PR 간격이 일정하며 RR 간격은 약 1.25초(약 48회/분)다. 방실 전도는 보존된 동서맥이다. 증상은 피로와 운동 시 호흡곤란으로 가볍고 혈압이 유지되어 혈역학적으로 안정하다. 서맥이 메토프롤롤을 네 배로 올린 뒤 시작됐고 칼륨·갑상샘 기능은 정상이므로 가장 그럴듯한 원인은 약물이다. 가역적 원인이 있는 증상성 동서맥은 원인을 먼저 없앤다 — 메토프롤롤을 줄이고 맥박과 증상을 다시 본다.\n- 원리: <b>왜 베타차단제가 동결절을 느리게 하는가</b>: 동결절 세포의 자동능은 4기 탈분극의 기울기로 정해지고, 이 기울기는 과분극 활성 전류(I<sub>f</sub>)와 L형 칼슘 전류가 만든다. 교감신경의 β1 자극은 cAMP 를 올려 두 전류를 키우므로, 베타차단제는 기울기를 낮춰 박동수를 줄인다. 용량이 오를수록 이 효과가 커져 안정 시 50회/분 아래로 떨어질 수 있다.<br> <b>왜 원인 제거가 먼저인가</b>: 동결절 질환이 아니라 약물에 의한 것이면 약을 줄이면 며칠 안에 회복된다. 영구 심박동기는 가역적 원인을 없앤 뒤에도 증상성 서맥이 남거나, 그 약을 꼭 계속 써야 할 때 고려한다.<br> <b>언제 응급 처치로 넘어가는가</b>: 저혈압·의식 변화·쇼크·급성 심부전 같은 불안정 징후가 있으면 아트로핀 → 경피 심박조율·도파민/에피네프린 주입 순으로 즉시 박동수를 올린다. 이 환자는 안정하므로 해당하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">원인 약물 감량(정답)</th><th>영구 심박동기 삽입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>서맥의 원인</td><td><b>가역적</b> — 약물·전해질·갑상샘저하증</td><td>비가역적 동결절 기능부전·고도 방실차단</td></tr> <tr><td>혈역학</td><td>안정, 경한 증상</td><td>원인 교정 뒤에도 증상 지속</td></tr> <tr><td>시점</td><td>먼저 시도하고 재평가</td><td>교정 뒤 재평가에서 결정</td></tr> <tr><td>예외</td><td>—</td><td>그 약이 꼭 필요하면(예: 빈맥-서맥 증후군의 심박수 조절) 처음부터 고려</td></tr> </tbody></table> 서맥의 처치는 「안정한가」와 「되돌릴 수 있는가」 두 질문으로 정한다. 불안정하면 아트로핀·조율, 안정하고 가역적이면 원인 제거다.\n- 오답 이유:\n  - ① 경피 심박조율은 아트로핀에 반응하지 않는 불안정 서맥이나 고도 방실차단에서 임시 처치로 정답이 된다.\n  - ② 이소프로테레놀 지속 정맥 주입은 불안정 서맥에서 조율을 기다리는 동안 쓰는 가교 약물로 정답이 될 수 있다.\n  - ④ 영구 심박동기 삽입은 약을 줄인 뒤에도 증상성 서맥이 남거나 베타차단제를 반드시 유지해야 할 때 정답이 된다.\n  - ⑤ 아트로핀 정맥 주사는 저혈압·의식 저하 같은 불안정 징후를 동반한 서맥의 첫 약물로 정답이 된다.\n- 함정: 맥박 48회/분과 증상만 보고 심박동기로 가는 것 — 혈역학이 안정하고 약물이라는 가역적 원인이 있으면 원인 제거가 먼저다.\n- 학습목표: 베타차단제 증량 뒤 생긴 증상성 동서맥을 가역적 원인으로 보고 원인 약물 감량을 고르며 영구 심박동기 삽입과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation. 2019;140(8):e382-e482\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19310 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 같은 모양의 양성 P파가 있고 PR 간격이 일정하며 RR 간격은 약 1.25초(약 48회/분)다. 방실 전도는 보존된 동서맥이다. 증상은 피로와 운동 시 호흡곤란으로 가볍고 혈압이 유지되어 혈역학적으로 안정하다. 서맥이 메토프롤롤을 네 배로 올린 뒤 시작됐고 칼륨·갑상샘 기능은 정상이므로 가장 그럴듯한 원인은 약물이다. 가역적 원인이 있는 증상성 동서맥은 원인을 먼저 없앤다 — 메토프롤롤을 줄이고 맥박과 증상을 다시 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 베타차단제가 동결절을 느리게 하는가</b>: 동결절 세포의 자동능은 4기 탈분극의 기울기로 정해지고, 이 기울기는 과분극 활성 전류(I<sub>f</sub>)와 L형 칼슘 전류가 만든다. 교감신경의 β1 자극은 cAMP 를 올려 두 전류를 키우므로, 베타차단제는 기울기를 낮춰 박동수를 줄인다. 용량이 오를수록 이 효과가 커져 안정 시 50회/분 아래로 떨어질 수 있다.<br> <b>왜 원인 제거가 먼저인가</b>: 동결절 질환이 아니라 약물에 의한 것이면 약을 줄이면 며칠 안에 회복된다. 영구 심박동기는 가역적 원인을 없앤 뒤에도 증상성 서맥이 남거나, 그 약을 꼭 계속 써야 할 때 고려한다.<br> <b>언제 응급 처치로 넘어가는가</b>: 저혈압·의식 변화·쇼크·급성 심부전 같은 불안정 징후가 있으면 아트로핀 → 경피 심박조율·도파민/에피네프린 주입 순으로 즉시 박동수를 올린다. 이 환자는 안정하므로 해당하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">원인 약물 감량(정답)</th><th>영구 심박동기 삽입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>서맥의 원인</td><td><b>가역적</b> — 약물·전해질·갑상샘저하증</td><td>비가역적 동결절 기능부전·고도 방실차단</td></tr> <tr><td>혈역학</td><td>안정, 경한 증상</td><td>원인 교정 뒤에도 증상 지속</td></tr> <tr><td>시점</td><td>먼저 시도하고 재평가</td><td>교정 뒤 재평가에서 결정</td></tr> <tr><td>예외</td><td>—</td><td>그 약이 꼭 필요하면(예: 빈맥-서맥 증후군의 심박수 조절) 처음부터 고려</td></tr> </tbody></table> 서맥의 처치는 「안정한가」와 「되돌릴 수 있는가」 두 질문으로 정한다. 불안정하면 아트로핀·조율, 안정하고 가역적이면 원인 제거다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경피 심박조율은 아트로핀에 반응하지 않는 불안정 서맥이나 고도 방실차단에서 임시 처치로 정답이 된다.\n② 이소프로테레놀 지속 정맥 주입은 불안정 서맥에서 조율을 기다리는 동안 쓰는 가교 약물로 정답이 될 수 있다.\n④ 영구 심박동기 삽입은 약을 줄인 뒤에도 증상성 서맥이 남거나 베타차단제를 반드시 유지해야 할 때 정답이 된다.\n⑤ 아트로핀 정맥 주사는 저혈압·의식 저하 같은 불안정 징후를 동반한 서맥의 첫 약물로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "맥박 48회/분과 증상만 보고 심박동기로 가는 것 — 혈역학이 안정하고 약물이라는 가역적 원인이 있으면 원인 제거가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "베타차단제 증량 뒤 생긴 증상성 동서맥을 가역적 원인으로 보고 원인 약물 감량을 고르며 영구 심박동기 삽입과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation. 2019;140(8):e382-e482 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19310 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "혈역학적으로 안정한 약물 유발 동서맥이므로 원인 약물인 메토프롤롤을 줄인다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "서맥이 메토프롤롤 증량 뒤 시작됐고 혈압이 유지되는 안정 상태다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞 같은 P파, 일정한 PR, 약 48회/분 → 동서맥",
+    "혈압 118/74 mmHg 로 안정, 실신 없음 → 응급 박동수 상승 처치 불필요",
+    "메토프롤롤 4배 증량 뒤 발생, 칼륨·갑상샘 정상 → 가역적 약물 원인 → 감량"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞 같은 모양의 P파와 일정한 PR, 약 48회/분",
+     "why": "방실 전도가 보존된 동서맥",
+     "also": []
+    },
+    {
+     "item": "메토프롤롤 용량을 하루 50 mg 에서 200 mg 으로 올렸다",
+     "why": "서맥의 가역적 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.2 mEq/L 이고 갑상샘자극호르몬은 정상",
+     "why": "전해질·갑상샘저하증 원인의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 118/74 mmHg",
+     "why": "혈역학적으로 안정 — 아트로핀·조율이 필요 없다",
+     "also": []
+    },
+    {
+     "item": "실신이나 흉통은 없다",
+     "why": "불안정 징후가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "다리 부종은 없다",
+     "why": "심부전 징후가 없다는 배경 — 결정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "동서맥이 베타차단제 증량 뒤 생겼고 혈역학은 안정하다. 가역적 원인이므로 메토프롤롤을 줄인다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈압이 78/40 mmHg 이고 의식이 처지는 불안정 서맥이라면 아트로핀 정맥 주사가 먼저"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0609.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/19000/#files-panel",
+   "asset_id": "PTBXL-19310",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19310"
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0608",
   "exam": "imaging",
   "style": "usmle_style",
@@ -923,6 +1850,651 @@ window.IMAGING_QUESTIONS = [
   },
   "run_id": "20261109T202026Z_일일영상_2026-11-10_9units_9q_45267106",
   "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0617",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "약리 — 트리메토프림-설파메톡사졸을 함께 먹은 뒤 오른 INR",
+  "type": "약리 — 트리메토프림-설파메톡사졸을 함께 먹은 뒤 오른 INR",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-10",
+  "vignette": "71세 여자가 정기 진료에서 INR 이 높게 나와 왔다. 심방세동으로 3년째 와파린 하루 5 mg 을 먹고 있고 INR 은 2.0~3.0 으로 안정적이었다. 6일 전 방광염으로 트리메토프림-설파메톡사졸을 처방받아 먹고 있다. 식사량과 녹색 채소 섭취는 평소와 같고 술은 마시지 않는다. 출혈 증상은 없다. 혈압 128/76 mmHg, 맥박 82회/분이다. INR 5.8, 아스파르테이트아미노전달효소와 빌리루빈은 정상이다.",
+  "question": "이 INR 상승의 주된 기전으로 가장 적절한 것은?",
+  "options": [
+   "CYP2C9 유도로 S-와파린 대사 증가",
+   "비타민 K 에폭시드 환원효소 발현 증가",
+   "와파린 신장 배설 감소",
+   "CYP2C9 억제로 S-와파린 대사 감소",
+   "CYP3A4 억제로 R-와파린 대사 감소"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 와파린은 S-와 R-거울상체의 혼합물이고, 비타민 K 에폭시드 환원효소를 더 강하게 억제하는 것은 S-와파린이다(R-형의 3~5배). S-와파린은 주로 간의 CYP2C9 로 대사된다. 설파메톡사졸은 CYP2C9 의 강한 억제제여서 S-와파린 농도를 올리고 항응고 효과를 키운다. 식사·간기능·음주 변화가 없고 항생제 시작 6일 뒤 INR 이 올랐으므로 이 약물 상호작용이 주된 기전이다.\n- 원리: <b>왜 어느 CYP 인지가 중요한가</b>: 와파린의 두 거울상체는 효력과 대사 경로가 다르다. 효력이 강한 <b>S-와파린</b>은 CYP2C9 로, 약한 R-와파린은 CYP3A4·CYP1A2 로 주로 대사된다. 그래서 CYP2C9 억제제(설파메톡사졸·메트로니다졸·플루코나졸·아미오다론)는 INR 을 크게 올리고, CYP3A4 만 억제하는 약은 R-형만 늘려 영향이 작다.<br> <b>시간 경과의 의미</b>: 와파린의 반감기는 약 40시간이고, 효과는 이미 만들어진 응고인자(특히 반감기 60시간인 프로트롬빈)가 바뀌어야 나타난다. 그래서 억제제를 시작하고 3~7일 뒤에 INR 이 오른다 — 이 환자의 6일과 맞다.<br> <b>대처</b>: 출혈이 없고 INR 이 4.5~10 이면 와파린을 한두 번 거르고 자주 재측정한다. 가능하면 상호작용이 적은 항생제(예: 니트로푸란토인·포스포마이신)를 고른다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">CYP2C9 억제(정답)</th><th>CYP3A4 억제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>영향받는 거울상체</td><td><b>S-와파린</b>(효력 3~5배)</td><td>R-와파린(효력 약함)</td></tr> <tr><td>INR 변화</td><td>크다</td><td>작다</td></tr> <tr><td>대표 약물</td><td>설파메톡사졸, 메트로니다졸, 플루코나졸, 아미오다론</td><td>클래리스로마이신, 이트라코나졸, 리토나비르</td></tr> </tbody></table> INR 을 크게 바꾸는 상호작용은 대부분 CYP2C9(S-형) 경로다. 반대로 리팜핀·카르바마제핀 같은 유도제는 대사를 늘려 INR 을 낮춘다.\n- 오답 이유:\n  - ① CYP2C9 유도로 S-와파린 대사 증가는 리팜핀을 함께 먹고 INR 이 떨어진 경우라면 정답이 된다.\n  - ② 비타민 K 에폭시드 환원효소 발현 증가(VKORC1 변이·과발현)는 와파린 저항성으로 INR 이 낮을 때의 기전으로 정답이 된다.\n  - ③ 와파린 신장 배설 감소는 와파린이 거의 간에서 대사되어 신장으로 그대로 나가지 않으므로 이 상황의 기전이 되지 않는다.\n  - ⑤ CYP3A4 억제로 R-와파린 대사 감소는 클래리스로마이신처럼 CYP3A4 만 억제하는 약에서 작은 INR 상승의 기전으로 정답이 된다.\n- 함정: 모든 CYP 억제를 같게 보는 것 — INR 을 크게 올리는 것은 효력이 강한 S-와파린을 대사하는 CYP2C9 억제다.\n- 학습목표: 트리메토프림-설파메톡사졸 병용 뒤 INR 상승의 주 기전을 CYP2C9 억제에 의한 S-와파린 대사 감소로 설명하고 CYP3A4 경로와 가른다\n- 근거·출처: Holbrook AM, Pereira JA, Labiris R, et al. Systematic overview of warfarin and its drug and food interactions. Arch Intern Med. 2005;165(10):1095-1106 · Ageno W, Gallus AS, Wittkowsky A, et al. Oral anticoagulant therapy: antithrombotic therapy and prevention of thrombosis, 9th ed: ACCP evidence-based clinical practice guidelines. Chest. 2012;141(2 Suppl):e44S-e88S",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "와파린은 S-와 R-거울상체의 혼합물이고, 비타민 K 에폭시드 환원효소를 더 강하게 억제하는 것은 S-와파린이다(R-형의 3~5배). S-와파린은 주로 간의 CYP2C9 로 대사된다. 설파메톡사졸은 CYP2C9 의 강한 억제제여서 S-와파린 농도를 올리고 항응고 효과를 키운다. 식사·간기능·음주 변화가 없고 항생제 시작 6일 뒤 INR 이 올랐으므로 이 약물 상호작용이 주된 기전이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 어느 CYP 인지가 중요한가</b>: 와파린의 두 거울상체는 효력과 대사 경로가 다르다. 효력이 강한 <b>S-와파린</b>은 CYP2C9 로, 약한 R-와파린은 CYP3A4·CYP1A2 로 주로 대사된다. 그래서 CYP2C9 억제제(설파메톡사졸·메트로니다졸·플루코나졸·아미오다론)는 INR 을 크게 올리고, CYP3A4 만 억제하는 약은 R-형만 늘려 영향이 작다.<br> <b>시간 경과의 의미</b>: 와파린의 반감기는 약 40시간이고, 효과는 이미 만들어진 응고인자(특히 반감기 60시간인 프로트롬빈)가 바뀌어야 나타난다. 그래서 억제제를 시작하고 3~7일 뒤에 INR 이 오른다 — 이 환자의 6일과 맞다.<br> <b>대처</b>: 출혈이 없고 INR 이 4.5~10 이면 와파린을 한두 번 거르고 자주 재측정한다. 가능하면 상호작용이 적은 항생제(예: 니트로푸란토인·포스포마이신)를 고른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">CYP2C9 억제(정답)</th><th>CYP3A4 억제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>영향받는 거울상체</td><td><b>S-와파린</b>(효력 3~5배)</td><td>R-와파린(효력 약함)</td></tr> <tr><td>INR 변화</td><td>크다</td><td>작다</td></tr> <tr><td>대표 약물</td><td>설파메톡사졸, 메트로니다졸, 플루코나졸, 아미오다론</td><td>클래리스로마이신, 이트라코나졸, 리토나비르</td></tr> </tbody></table> INR 을 크게 바꾸는 상호작용은 대부분 CYP2C9(S-형) 경로다. 반대로 리팜핀·카르바마제핀 같은 유도제는 대사를 늘려 INR 을 낮춘다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① CYP2C9 유도로 S-와파린 대사 증가는 리팜핀을 함께 먹고 INR 이 떨어진 경우라면 정답이 된다.\n② 비타민 K 에폭시드 환원효소 발현 증가(VKORC1 변이·과발현)는 와파린 저항성으로 INR 이 낮을 때의 기전으로 정답이 된다.\n③ 와파린 신장 배설 감소는 와파린이 거의 간에서 대사되어 신장으로 그대로 나가지 않으므로 이 상황의 기전이 되지 않는다.\n⑤ CYP3A4 억제로 R-와파린 대사 감소는 클래리스로마이신처럼 CYP3A4 만 억제하는 약에서 작은 INR 상승의 기전으로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "모든 CYP 억제를 같게 보는 것 — INR 을 크게 올리는 것은 효력이 강한 S-와파린을 대사하는 CYP2C9 억제다."
+   },
+   {
+    "k": "학습목표",
+    "v": "트리메토프림-설파메톡사졸 병용 뒤 INR 상승의 주 기전을 CYP2C9 억제에 의한 S-와파린 대사 감소로 설명하고 CYP3A4 경로와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Holbrook AM, Pereira JA, Labiris R, et al. Systematic overview of warfarin and its drug and food interactions. Arch Intern Med. 2005;165(10):1095-1106 · Ageno W, Gallus AS, Wittkowsky A, et al. Oral anticoagulant therapy: antithrombotic therapy and prevention of thrombosis, 9th ed: ACCP evidence-based clinical practice guidelines. Chest. 2012;141(2 Suppl):e44S-e88S"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "설파메톡사졸이 CYP2C9 를 억제해 효력이 강한 S-와파린의 대사를 줄여 INR 이 올랐다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "INR 을 크게 바꾸는 것은 S-와파린을 대사하는 CYP2C9 이고 설파메톡사졸은 그 억제제다",
+   "steps": 3,
+   "chain": [
+    "안정적이던 INR 이 트리메토프림-설파메톡사졸 시작 6일 뒤 5.8 로 상승, 식사·간기능 변화 없음 → 약물 상호작용",
+    "와파린의 효력은 주로 S-거울상체, S-와파린은 CYP2C9 로 대사",
+    "설파메톡사졸 = CYP2C9 억제제 → S-와파린 대사 감소"
+   ],
+   "key": [
+    {
+     "item": "6일 전 방광염으로 트리메토프림-설파메톡사졸을 처방받아",
+     "why": "시간 경과가 상호작용과 맞다",
+     "also": []
+    },
+    {
+     "item": "INR 은 2.0~3.0 으로 안정적이었다",
+     "why": "새로 생긴 변화임을 보여 준다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "식사량과 녹색 채소 섭취는 평소와 같고",
+     "why": "비타민 K 섭취 감소의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "아스파르테이트아미노전달효소와 빌리루빈은 정상",
+     "why": "간기능 저하로 인한 응고인자 감소 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "출혈 증상은 없다",
+     "why": "비타민 K 정맥 투여가 아니라 와파린 일시 중단으로 대처",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "심방세동으로 3년째",
+     "why": "와파린을 쓰는 이유 — 기전에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "다른 원인 없이 설파메톡사졸 시작 뒤 INR 이 올랐다. CYP2C9 억제로 효력이 강한 S-와파린이 쌓인 것이 주된 기전이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "리팜핀을 함께 시작한 뒤 INR 이 1.3 으로 떨어졌다면 CYP2C9 유도로 S-와파린 대사 증가"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0616",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "내분비 — 인슐린을 끊은 1형 당뇨병 환자의 구토·복통",
+  "type": "내분비 — 인슐린을 끊은 1형 당뇨병 환자의 구토·복통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "A 22-year-old woman with type 1 diabetes mellitus is brought to the emergency department because of nausea, vomiting, and abdominal pain for 2 days. She ran out of insulin 4 days ago. Her pulse is 118/min, respirations are 30/min and deep, and blood pressure is 98/62 mm Hg. Mucous membranes are dry. Laboratory studies show a glucose of 520 mg/dL, sodium 132 mEq/L, potassium 3.0 mEq/L, chloride 96 mEq/L, bicarbonate 8 mEq/L, and creatinine 1.3 mg/dL; arterial pH is 7.10, and serum β-hydroxybutyrate is markedly elevated. An infusion of 0.9% saline is started at 1 L/h.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Subcutaneous insulin glargine",
+   "Intravenous 5% dextrose in water",
+   "Intravenous potassium chloride before starting insulin",
+   "Intravenous regular insulin infusion at 0.1 U/kg/h immediately",
+   "Intravenous sodium bicarbonate infusion"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: She has diabetic ketoacidosis: glucose 520 mg/dL, pH 7.10, bicarbonate 8 mEq/L, an anion gap of 132 − (96 + 8) = 28, and elevated β-hydroxybutyrate after stopping insulin. Fluids have been started. Her serum potassium is 3.0 mEq/L despite acidosis, which means total body potassium is severely depleted. Insulin drives potassium into cells and would cause dangerous hypokalemia and arrhythmia, so when potassium is below 3.3 mEq/L, insulin is held and potassium is replaced intravenously (about 20-30 mEq/h) until it rises above 3.3 mEq/L.\n- 원리: <b>Why a \"normal or low\" potassium in DKA is alarming</b>: In DKA, insulin deficiency and hyperosmolality shift potassium out of cells, and acidosis contributes to the shift. At the same time, osmotic diuresis and vomiting waste large amounts of potassium in urine and gastric fluid. Total body deficits are typically 3-5 mEq/kg, yet the serum level is usually normal or high at presentation. A low serum level therefore reveals an even larger deficit.<br> <b>What insulin does next</b>: Insulin activates the Na+/K+-ATPase and moves potassium back into cells within minutes; correcting acidosis adds to the shift. Starting insulin at a potassium of 3.0 can drop it below 2.5, causing respiratory muscle weakness and ventricular arrhythmias.<br> <b>The sequence</b>: Fluids first, then check potassium: below 3.3 → replace potassium and delay insulin; 3.3-5.2 → give insulin and add potassium to fluids; above 5.2 → insulin without potassium, recheck every 2 hours.\n- 비교: <table><thead><tr><th style=\"width:24%\">Serum potassium</th><th style=\"width:38%\">Below 3.3 mEq/L (this patient)</th><th>3.3-5.2 mEq/L (closest distractor scenario)</th></tr></thead><tbody> <tr><td>Insulin</td><td><b>Hold</b> until potassium is above 3.3</td><td>Start 0.1 U/kg/h infusion</td></tr> <tr><td>Potassium</td><td>20-30 mEq/h IV</td><td>20-30 mEq per liter of fluid</td></tr> <tr><td>Main danger</td><td>Severe hypokalemia, arrhythmia, respiratory muscle weakness</td><td>Ongoing ketosis if insulin is delayed</td></tr> </tbody></table> The serum potassium decides the order: insulin is the cornerstone of DKA treatment, but only after potassium is high enough to absorb the intracellular shift.\n- 오답 이유:\n  - (A) Subcutaneous glargine is given when ketoacidosis has resolved and the patient can eat, overlapping 2 hours with the infusion, not as initial therapy.\n  - (B) Dextrose is added once glucose falls to about 200-250 mg/dL so insulin can continue clearing ketones, not at a glucose of 520 mg/dL.\n  - (D) An immediate insulin infusion would be correct if the serum potassium were 3.3 mEq/L or higher, with potassium added to the fluids.\n  - (E) Sodium bicarbonate is considered only when pH is below 6.9, and it would further lower potassium by driving it into cells.\n- 함정: Starting insulin right away because the glucose is high — with potassium below 3.3 mEq/L, insulin must wait until potassium is replaced.\n- 학습목표: 혈청 칼륨 3.3 mEq/L 미만인 당뇨병케톤산증에서 인슐린보다 칼륨 보충을 먼저 고르고 즉시 인슐린 투여와 가른다\n- 근거·출처: Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care. 2024;47(8):1257-1275 · Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care. 2009;32(7):1335-1343",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "She has diabetic ketoacidosis: glucose 520 mg/dL, pH 7.10, bicarbonate 8 mEq/L, an anion gap of 132 − (96 + 8) = 28, and elevated β-hydroxybutyrate after stopping insulin. Fluids have been started. Her serum potassium is 3.0 mEq/L despite acidosis, which means total body potassium is severely depleted. Insulin drives potassium into cells and would cause dangerous hypokalemia and arrhythmia, so when potassium is below 3.3 mEq/L, insulin is held and potassium is replaced intravenously (about 20-30 mEq/h) until it rises above 3.3 mEq/L."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a \"normal or low\" potassium in DKA is alarming</b>: In DKA, insulin deficiency and hyperosmolality shift potassium out of cells, and acidosis contributes to the shift. At the same time, osmotic diuresis and vomiting waste large amounts of potassium in urine and gastric fluid. Total body deficits are typically 3-5 mEq/kg, yet the serum level is usually normal or high at presentation. A low serum level therefore reveals an even larger deficit.<br> <b>What insulin does next</b>: Insulin activates the Na+/K+-ATPase and moves potassium back into cells within minutes; correcting acidosis adds to the shift. Starting insulin at a potassium of 3.0 can drop it below 2.5, causing respiratory muscle weakness and ventricular arrhythmias.<br> <b>The sequence</b>: Fluids first, then check potassium: below 3.3 → replace potassium and delay insulin; 3.3-5.2 → give insulin and add potassium to fluids; above 5.2 → insulin without potassium, recheck every 2 hours."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Serum potassium</th><th style=\"width:38%\">Below 3.3 mEq/L (this patient)</th><th>3.3-5.2 mEq/L (closest distractor scenario)</th></tr></thead><tbody> <tr><td>Insulin</td><td><b>Hold</b> until potassium is above 3.3</td><td>Start 0.1 U/kg/h infusion</td></tr> <tr><td>Potassium</td><td>20-30 mEq/h IV</td><td>20-30 mEq per liter of fluid</td></tr> <tr><td>Main danger</td><td>Severe hypokalemia, arrhythmia, respiratory muscle weakness</td><td>Ongoing ketosis if insulin is delayed</td></tr> </tbody></table> The serum potassium decides the order: insulin is the cornerstone of DKA treatment, but only after potassium is high enough to absorb the intracellular shift."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Subcutaneous glargine is given when ketoacidosis has resolved and the patient can eat, overlapping 2 hours with the infusion, not as initial therapy.\n(B) Dextrose is added once glucose falls to about 200-250 mg/dL so insulin can continue clearing ketones, not at a glucose of 520 mg/dL.\n(D) An immediate insulin infusion would be correct if the serum potassium were 3.3 mEq/L or higher, with potassium added to the fluids.\n(E) Sodium bicarbonate is considered only when pH is below 6.9, and it would further lower potassium by driving it into cells."
+   },
+   {
+    "k": "함정",
+    "v": "Starting insulin right away because the glucose is high — with potassium below 3.3 mEq/L, insulin must wait until potassium is replaced."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈청 칼륨 3.3 mEq/L 미만인 당뇨병케톤산증에서 인슐린보다 칼륨 보충을 먼저 고르고 즉시 인슐린 투여와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care. 2024;47(8):1257-1275 · Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care. 2009;32(7):1335-1343"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Diabetic ketoacidosis with a serum potassium of 3.0 mEq/L requires potassium replacement before insulin",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Serum potassium is below 3.3 mEq/L, so insulin would cause life-threatening hypokalemia",
+   "steps": 3,
+   "chain": [
+    "Glucose 520, pH 7.10, bicarbonate 8, anion gap 28, elevated β-hydroxybutyrate -> diabetic ketoacidosis",
+    "Low serum potassium despite acidosis -> severe total body potassium depletion",
+    "Potassium below 3.3 -> hold insulin and give IV potassium first"
+   ],
+   "key": [
+    {
+     "item": "potassium 3.0 mEq/L",
+     "why": "Below 3.3 — determines that potassium comes before insulin",
+     "also": []
+    },
+    {
+     "item": "arterial pH is 7.10",
+     "why": "Acidemia of DKA; above 6.9 so bicarbonate is not indicated",
+     "also": []
+    },
+    {
+     "item": "bicarbonate 8 mEq/L",
+     "why": "With sodium and chloride gives an anion gap of 28",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "glucose of 520 mg/dL",
+     "why": "Too high for dextrose; insulin will be needed once potassium is safe",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She ran out of insulin 4 days ago",
+     "why": "The precipitant — does not change the next step",
+     "also": []
+    },
+    {
+     "item": "creatinine 1.3 mg/dL",
+     "why": "Prerenal azotemia from volume loss; urine output allows potassium replacement",
+     "also": []
+    }
+   ],
+   "summary": "This is DKA with a serum potassium of 3.0 mEq/L. Replace potassium intravenously and start insulin only after it exceeds 3.3 mEq/L.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the serum potassium were 4.5 mEq/L, start the insulin infusion at 0.1 U/kg/h with potassium in the fluids"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0615",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "소아 — 5일 넘는 발열과 결막 충혈·입술 갈라짐",
+  "type": "소아 — 5일 넘는 발열과 결막 충혈·입술 갈라짐",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "3세 남아가 6일째 39 ℃ 가 넘는 열이 내리지 않아 왔다. 해열제를 먹으면 잠깐 내렸다가 다시 오른다. 진찰에서 눈곱 없는 양쪽 눈 결막 충혈, 붉고 갈라진 입술과 딸기혀, 손발 등의 단단한 부종과 손바닥 홍반, 몸통의 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 압통 있는 림프절이 만져진다. 백혈구 15,800/mm³, 혈소판 420,000/mm³, C-반응단백 9.6 mg/dL, 알부민 3.1 g/dL 이다. 신속 A군 연쇄알균 항원 검사는 음성이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "벤자틴 페니실린 근육주사",
+   "정맥 면역글로불린과 아스피린",
+   "경구 아목시실린",
+   "경구 프레드니솔론 단독",
+   "이부프로펜 해열 후 경과 관찰"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 5일 이상의 발열에 주요 기준 다섯 가지 중 다섯 가지(양쪽 비화농성 결막 충혈, 입술·구강 변화, 말단 부종·홍반, 다형 발진, 1.5 cm 이상의 한쪽 경부 림프절)가 모두 있어 전형적 가와사키병이다. 염증 수치 상승과 저알부민혈증도 이를 뒷받침하고, 신속 항원 검사 음성은 성홍열 가능성을 낮춘다. 관상동맥류를 막기 위해 발병 10일 이내에 정맥 면역글로불린 2 g/kg 을 한 번에 주고 아스피린을 함께 쓴다.\n- 원리: <b>왜 서둘러 치료하는가</b>: 가와사키병은 중간 크기 동맥, 특히 관상동맥을 침범하는 소아의 급성 전신 혈관염이다. 치료하지 않으면 약 25 % 에서 관상동맥류가 생기고, 이것이 혈전·협착으로 이어져 소아 후천성 심질환의 가장 흔한 원인이 된다. 발병 10일 이내에 정맥 면역글로불린을 주면 그 빈도가 약 4 % 로 줄어든다.<br> <b>면역글로불린은 어떻게 작용하는가</b>: 대량의 IgG 가 Fc 수용체를 포화시키고 억제성 FcγRIIB 를 늘리며, 염증성 사이토카인과 활성화된 면역세포를 억눌러 혈관벽 염증을 빨리 가라앉힌다.<br> <b>아스피린의 두 얼굴</b>: 급성기에는 항염증 용량(30~50 또는 80~100 mg/kg/일), 열이 내린 뒤에는 혈소판 억제용 저용량(3~5 mg/kg/일)으로 바꿔 관상동맥 이상이 없음을 확인할 때까지 6~8주 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">가와사키병(정답)</th><th>성홍열(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>5세 미만 영유아</td><td>5~15세 학령기</td></tr> <tr><td>눈</td><td><b>비화농성 양쪽 결막 충혈</b></td><td>결막 충혈 드묾</td></tr> <tr><td>손발</td><td>단단한 부종·홍반 → 2~3주 뒤 손끝 낙설</td><td>부종 없음, 회복기 낙설</td></tr> <tr><td>목</td><td>한쪽 1.5 cm 이상 림프절</td><td>삼출성 인두염, 앞목 림프절</td></tr> <tr><td>검사·치료</td><td>항원 음성 → 면역글로불린 + 아스피린</td><td>항원·배양 양성 → 페니실린/아목시실린</td></tr> </tbody></table> 딸기혀와 발진은 두 병에 모두 있다. 결막 충혈과 손발 부종, 항생제에 반응하지 않는 5일 이상의 열이 가와사키병 쪽으로 가른다.\n- 오답 이유:\n  - ① 벤자틴 페니실린 근육주사는 A군 연쇄알균 인두염이나 류마티스열의 이차 예방이라면 정답이 된다.\n  - ③ 경구 아목시실린은 신속 항원 검사 양성인 A군 연쇄알균 인두염·성홍열이라면 정답이 된다.\n  - ④ 프레드니솔론은 관상동맥류 고위험군에서 면역글로불린에 더하는 보조 치료일 뿐 단독 첫 치료로는 정답이 되지 않는다.\n  - ⑤ 해열 후 관찰은 기준을 채우지 못하는 짧은 바이러스성 발열이라면 정답이 되지만 이 아이는 기준을 모두 채웠다.\n- 함정: 딸기혀와 발진만 보고 성홍열로 항생제를 주는 것 — 비화농성 결막 충혈, 손발 부종, 5일 넘는 열은 가와사키병이고 항원 검사도 음성이다.\n- 학습목표: 5일 이상 발열과 결막 충혈·입술 변화·손발 부종·경부 림프절병증을 가와사키병으로 진단하고 정맥 면역글로불린과 아스피린을 고르며 성홍열과 가른다\n- 근거·출처: McCrindle BW, Rowley AH, Newburger JW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement for health professionals from the American Heart Association. Circulation. 2017;135(17):e927-e999 · Newburger JW, Takahashi M, Gerber MA, et al. Diagnosis, treatment, and long-term management of Kawasaki disease. Circulation. 2004;110(17):2747-2771",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "5일 이상의 발열에 주요 기준 다섯 가지 중 다섯 가지(양쪽 비화농성 결막 충혈, 입술·구강 변화, 말단 부종·홍반, 다형 발진, 1.5 cm 이상의 한쪽 경부 림프절)가 모두 있어 전형적 가와사키병이다. 염증 수치 상승과 저알부민혈증도 이를 뒷받침하고, 신속 항원 검사 음성은 성홍열 가능성을 낮춘다. 관상동맥류를 막기 위해 발병 10일 이내에 정맥 면역글로불린 2 g/kg 을 한 번에 주고 아스피린을 함께 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 서둘러 치료하는가</b>: 가와사키병은 중간 크기 동맥, 특히 관상동맥을 침범하는 소아의 급성 전신 혈관염이다. 치료하지 않으면 약 25 % 에서 관상동맥류가 생기고, 이것이 혈전·협착으로 이어져 소아 후천성 심질환의 가장 흔한 원인이 된다. 발병 10일 이내에 정맥 면역글로불린을 주면 그 빈도가 약 4 % 로 줄어든다.<br> <b>면역글로불린은 어떻게 작용하는가</b>: 대량의 IgG 가 Fc 수용체를 포화시키고 억제성 FcγRIIB 를 늘리며, 염증성 사이토카인과 활성화된 면역세포를 억눌러 혈관벽 염증을 빨리 가라앉힌다.<br> <b>아스피린의 두 얼굴</b>: 급성기에는 항염증 용량(30~50 또는 80~100 mg/kg/일), 열이 내린 뒤에는 혈소판 억제용 저용량(3~5 mg/kg/일)으로 바꿔 관상동맥 이상이 없음을 확인할 때까지 6~8주 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">가와사키병(정답)</th><th>성홍열(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>5세 미만 영유아</td><td>5~15세 학령기</td></tr> <tr><td>눈</td><td><b>비화농성 양쪽 결막 충혈</b></td><td>결막 충혈 드묾</td></tr> <tr><td>손발</td><td>단단한 부종·홍반 → 2~3주 뒤 손끝 낙설</td><td>부종 없음, 회복기 낙설</td></tr> <tr><td>목</td><td>한쪽 1.5 cm 이상 림프절</td><td>삼출성 인두염, 앞목 림프절</td></tr> <tr><td>검사·치료</td><td>항원 음성 → 면역글로불린 + 아스피린</td><td>항원·배양 양성 → 페니실린/아목시실린</td></tr> </tbody></table> 딸기혀와 발진은 두 병에 모두 있다. 결막 충혈과 손발 부종, 항생제에 반응하지 않는 5일 이상의 열이 가와사키병 쪽으로 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 벤자틴 페니실린 근육주사는 A군 연쇄알균 인두염이나 류마티스열의 이차 예방이라면 정답이 된다.\n③ 경구 아목시실린은 신속 항원 검사 양성인 A군 연쇄알균 인두염·성홍열이라면 정답이 된다.\n④ 프레드니솔론은 관상동맥류 고위험군에서 면역글로불린에 더하는 보조 치료일 뿐 단독 첫 치료로는 정답이 되지 않는다.\n⑤ 해열 후 관찰은 기준을 채우지 못하는 짧은 바이러스성 발열이라면 정답이 되지만 이 아이는 기준을 모두 채웠다."
+   },
+   {
+    "k": "함정",
+    "v": "딸기혀와 발진만 보고 성홍열로 항생제를 주는 것 — 비화농성 결막 충혈, 손발 부종, 5일 넘는 열은 가와사키병이고 항원 검사도 음성이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "5일 이상 발열과 결막 충혈·입술 변화·손발 부종·경부 림프절병증을 가와사키병으로 진단하고 정맥 면역글로불린과 아스피린을 고르며 성홍열과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McCrindle BW, Rowley AH, Newburger JW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement for health professionals from the American Heart Association. Circulation. 2017;135(17):e927-e999 · Newburger JW, Takahashi M, Gerber MA, et al. Diagnosis, treatment, and long-term management of Kawasaki disease. Circulation. 2004;110(17):2747-2771"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "5일 넘는 발열과 주요 기준 5개를 모두 채운 가와사키병이므로 정맥 면역글로불린과 아스피린을 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "눈곱 없는 결막 충혈과 손발 부종, 신속 항원 검사 음성이 성홍열을 가른다",
+   "steps": 2,
+   "chain": [
+    "6일 발열 + 결막 충혈·입술 변화·손발 부종·다형 발진·경부 림프절 → 가와사키병 진단 기준 충족",
+    "발병 10일 이내 → 관상동맥류 예방을 위해 정맥 면역글로불린 2 g/kg + 아스피린"
+   ],
+   "key": [
+    {
+     "item": "6일째 39 ℃ 가 넘는 열",
+     "why": "5일 이상 발열 — 진단의 필수 조건",
+     "also": []
+    },
+    {
+     "item": "눈곱 없는 양쪽 눈 결막 충혈",
+     "why": "비화농성 결막염 — 성홍열·아데노바이러스와 가른다",
+     "also": []
+    },
+    {
+     "item": "손발 등의 단단한 부종과 손바닥 홍반",
+     "why": "말단 변화 — 가와사키병의 특징",
+     "also": []
+    },
+    {
+     "item": "오른쪽 목에 지름 2 cm 의 압통 있는 림프절",
+     "why": "한쪽 1.5 cm 이상 경부 림프절병증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "신속 A군 연쇄알균 항원 검사는 음성",
+     "why": "성홍열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈소판 420,000/mm³",
+     "why": "급성기에는 정상~경도 증가 — 진단을 정하지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "5일 넘는 열에 주요 기준 다섯 가지를 모두 갖췄고 연쇄알균 검사는 음성이다. 가와사키병이므로 정맥 면역글로불린과 아스피린을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "결막 충혈과 손발 부종 없이 삼출성 인두염과 사포 같은 발진이 있고 신속 항원 검사가 양성이라면 경구 아목시실린"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0613",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "감염 — 인터페론감마 분비검사 양성인 무증상 의료인",
+  "type": "감염 — 인터페론감마 분비검사 양성인 무증상 의료인",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-10",
+  "vignette": "A 29-year-old woman who works as a nurse is evaluated after a routine employee screening interferon-gamma release assay is positive; her test 1 year ago was negative. She has no cough, fever, night sweats, or weight loss. She has no history of tuberculosis or HIV infection and takes no medications. She does not drink alcohol. Physical examination shows no abnormalities. Serum aminotransferase levels are within the reference ranges, and an HIV test is negative. A chest x-ray shows no abnormalities.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Bacille Calmette-Guérin revaccination",
+   "Daily rifampin for 4 months",
+   "Isoniazid, rifampin, pyrazinamide, and ethambutol for 2 months",
+   "No treatment and repeat testing in 1 year",
+   "Sputum acid-fast bacilli smear and culture before any decision"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: A newly positive interferon-gamma release assay (conversion within 1 year) in a health care worker indicates recent infection with Mycobacterium tuberculosis. She has no symptoms, a normal examination, and a normal chest radiograph, so active disease is excluded clinically and she has latent tuberculosis infection. Recent converters have the highest risk of progression, so treatment is indicated. A rifamycin-based short regimen — daily rifampin for 4 months — is preferred because it is as effective as 9 months of isoniazid, with better completion and less hepatotoxicity.\n- 원리: <b>Why latent infection needs treatment</b>: In latent infection, a small number of bacilli are contained in granulomas by T-cell immunity. They divide slowly or not at all, so a single drug is enough to sterilize them without selecting resistance — unlike active disease, where the large, replicating population contains spontaneous resistant mutants and needs multiple drugs.<br> <b>Why recent conversion matters</b>: About half of the lifetime risk of progression (5-10% overall) occurs in the first 2 years after infection. A documented conversion therefore identifies someone at the peak of risk.<br> <b>Why rifampin is preferred</b>: Rifampin kills semi-dormant bacilli quickly, so 4 months suffices; shorter courses are completed more often, and hepatotoxicity is lower than with isoniazid. Its main drawback is CYP induction, so drug interactions (for example, hormonal contraception, anticoagulants) must be checked.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Latent infection — rifampin 4 months (answer)</th><th>Active disease — four-drug regimen (closest distractor)</th></tr></thead><tbody> <tr><td>Symptoms</td><td>None</td><td>Cough, fever, night sweats, weight loss</td></tr> <tr><td>Chest radiograph</td><td><b>Normal</b></td><td>Infiltrate, cavity, effusion, or lymphadenopathy</td></tr> <tr><td>Bacillary burden</td><td>Small, semi-dormant</td><td>Large, replicating — resistant mutants present</td></tr> <tr><td>Regimen</td><td>Single rifamycin (or rifapentine-isoniazid)</td><td>Four drugs for 2 months, then two drugs for 4 months</td></tr> </tbody></table> The decision hinges on excluding active disease; once symptoms and chest imaging are normal, multidrug therapy is unnecessary and single-drug preventive therapy is enough.\n- 오답 이유:\n  - (A) BCG revaccination is not used to treat or prevent progression of established infection in adults and would never be the answer here.\n  - (C) A four-drug regimen would be correct if she had symptoms or an abnormal chest radiograph suggesting active tuberculosis.\n  - (D) Observation without treatment would be reasonable only for a low-risk person with a likely false-positive result, not for a documented recent converter.\n  - (E) Sputum smear and culture would be needed if she had respiratory symptoms or an abnormal radiograph; with both normal they add little.\n- 함정: Starting four-drug therapy for any positive test — with no symptoms and a normal chest radiograph the diagnosis is latent infection, treated with a single rifamycin.\n- 학습목표: 증상과 흉부 X선 이상이 없는 IGRA 양성 의료인을 잠복결핵감염으로 판단해 4개월 리팜핀을 고르고 활동성 결핵 4제 요법과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 183: Tuberculosis · Sterling TR, Njie G, Zenner D, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from the National Tuberculosis Controllers Association and CDC, 2020. MMWR Recomm Rep. 2020;69(1):1-11",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A newly positive interferon-gamma release assay (conversion within 1 year) in a health care worker indicates recent infection with Mycobacterium tuberculosis. She has no symptoms, a normal examination, and a normal chest radiograph, so active disease is excluded clinically and she has latent tuberculosis infection. Recent converters have the highest risk of progression, so treatment is indicated. A rifamycin-based short regimen — daily rifampin for 4 months — is preferred because it is as effective as 9 months of isoniazid, with better completion and less hepatotoxicity."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why latent infection needs treatment</b>: In latent infection, a small number of bacilli are contained in granulomas by T-cell immunity. They divide slowly or not at all, so a single drug is enough to sterilize them without selecting resistance — unlike active disease, where the large, replicating population contains spontaneous resistant mutants and needs multiple drugs.<br> <b>Why recent conversion matters</b>: About half of the lifetime risk of progression (5-10% overall) occurs in the first 2 years after infection. A documented conversion therefore identifies someone at the peak of risk.<br> <b>Why rifampin is preferred</b>: Rifampin kills semi-dormant bacilli quickly, so 4 months suffices; shorter courses are completed more often, and hepatotoxicity is lower than with isoniazid. Its main drawback is CYP induction, so drug interactions (for example, hormonal contraception, anticoagulants) must be checked."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Latent infection — rifampin 4 months (answer)</th><th>Active disease — four-drug regimen (closest distractor)</th></tr></thead><tbody> <tr><td>Symptoms</td><td>None</td><td>Cough, fever, night sweats, weight loss</td></tr> <tr><td>Chest radiograph</td><td><b>Normal</b></td><td>Infiltrate, cavity, effusion, or lymphadenopathy</td></tr> <tr><td>Bacillary burden</td><td>Small, semi-dormant</td><td>Large, replicating — resistant mutants present</td></tr> <tr><td>Regimen</td><td>Single rifamycin (or rifapentine-isoniazid)</td><td>Four drugs for 2 months, then two drugs for 4 months</td></tr> </tbody></table> The decision hinges on excluding active disease; once symptoms and chest imaging are normal, multidrug therapy is unnecessary and single-drug preventive therapy is enough."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) BCG revaccination is not used to treat or prevent progression of established infection in adults and would never be the answer here.\n(C) A four-drug regimen would be correct if she had symptoms or an abnormal chest radiograph suggesting active tuberculosis.\n(D) Observation without treatment would be reasonable only for a low-risk person with a likely false-positive result, not for a documented recent converter.\n(E) Sputum smear and culture would be needed if she had respiratory symptoms or an abnormal radiograph; with both normal they add little."
+   },
+   {
+    "k": "함정",
+    "v": "Starting four-drug therapy for any positive test — with no symptoms and a normal chest radiograph the diagnosis is latent infection, treated with a single rifamycin."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상과 흉부 X선 이상이 없는 IGRA 양성 의료인을 잠복결핵감염으로 판단해 4개월 리팜핀을 고르고 활동성 결핵 4제 요법과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 183: Tuberculosis · Sterling TR, Njie G, Zenner D, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from the National Tuberculosis Controllers Association and CDC, 2020. MMWR Recomm Rep. 2020;69(1):1-11"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "A recent IGRA converter with no symptoms and a normal chest radiograph has latent tuberculosis infection and should receive 4 months of rifampin",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "No symptoms and a normal chest x-ray exclude active disease, so multidrug therapy is not needed",
+   "steps": 3,
+   "chain": [
+    "Positive IGRA after a negative test 1 year ago -> recent M. tuberculosis infection",
+    "No symptoms and normal chest x-ray -> active tuberculosis unlikely -> latent infection",
+    "Recent converter at high risk of progression with normal liver tests -> treat with rifampin for 4 months"
+   ],
+   "key": [
+    {
+     "item": "her test 1 year ago was negative",
+     "why": "Conversion identifies recent infection with the highest risk of progression",
+     "also": []
+    },
+    {
+     "item": "A chest x-ray shows no abnormalities",
+     "why": "Argues against active pulmonary tuberculosis",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no cough, fever, night sweats, or weight loss",
+     "why": "Lowers the likelihood of active disease",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Serum aminotransferase levels are within the reference ranges",
+     "why": "Baseline liver function allows a rifamycin regimen",
+     "also": []
+    },
+    {
+     "item": "takes no medications",
+     "why": "No interactions with rifampin's CYP induction",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "works as a nurse",
+     "why": "Explains the screening; occupation itself does not change the regimen",
+     "also": []
+    }
+   ],
+   "summary": "A recent IGRA conversion without symptoms or radiographic disease is latent tuberculosis infection. Treat with daily rifampin for 4 months.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the chest x-ray showed an upper lobe cavity and she had night sweats, four-drug therapy for active tuberculosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0611",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "응급 — 새우를 먹은 뒤 생긴 저혈압·천명",
+  "type": "응급 — 새우를 먹은 뒤 생긴 저혈압·천명",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-10",
+  "vignette": "34세 남자가 식당에서 새우 요리를 먹은 지 15분 뒤 온몸이 가렵고 목이 조이며 숨이 차서 응급실에 왔다. 이전에 새우를 먹고 두드러기가 난 적이 있다. 혈압 82/50 mmHg, 맥박 124회/분, 호흡 28회/분, 산소포화도 90 % 이다. 몸통과 팔에 팽진이 퍼져 있고 입술이 부어 있으며 양쪽 폐에서 천명음이 들린다. 복통이나 설사는 없다. 정맥로를 확보하고 산소를 투여하였다.",
+  "question": "다음으로 가장 적절한 처치는?",
+  "options": [
+   "클로르페니라민 정맥 주사",
+   "메틸프레드니솔론 정맥 주사",
+   "살부타몰 흡입",
+   "에피네프린 1 mg 정맥 급속 주사",
+   "에피네프린 0.5 mg 근육주사"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 알레르겐(새우) 노출 수 분 뒤 피부·점막 증상(전신 팽진, 입술 부종)에 호흡기 증상(천명, 산소포화도 90 %)과 저혈압(82/50 mmHg)이 함께 생겼다. 아나필락시스다. 첫 약물은 에피네프린 근육주사로, 성인은 1:1,000 용액 0.01 mg/kg(최대 0.5 mg)을 넓적다리 앞가쪽에 주사하고 반응이 없으면 5~15분마다 반복한다. 항히스타민제·스테로이드·기관지확장제는 보조 치료일 뿐 에피네프린을 대신하거나 늦추게 해서는 안 된다.\n- 원리: <b>왜 에피네프린만이 첫 약물인가</b>: 아나필락시스의 사망 원인은 혈관 확장·혈관 투과성 증가로 인한 분포성 쇼크와 기도 부종·기관지 연축이다. 에피네프린은 <b>α1 작용</b>으로 혈관을 수축시켜 혈압을 올리고 점막 부종을 줄이며, <b>β2 작용</b>으로 기관지를 넓히고 비만세포·호염기구의 매개물질 방출을 억제한다. 이 세 경로를 한 번에 되돌리는 약은 에피네프린뿐이다.<br> <b>왜 근육주사인가</b>: 넓적다리 근육은 혈류가 풍부해 피하주사보다 빨리 최고 농도에 이른다. 정맥 급속 주사(1 mg)는 심정지 용량이라 맥박이 있는 환자에게는 심실빈맥·심근허혈·고혈압 위기를 일으킨다. 정맥 투여는 반복 근육주사에도 반응하지 않는 쇼크에서 희석 용액의 지속 주입으로만 쓴다.<br> <b>항히스타민제의 한계</b>: H1 차단제는 가려움·두드러기를 줄이지만 혈압과 기도 폐쇄를 되돌리지 못하고 작용도 느리다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">에피네프린 근육주사(정답)</th><th>H1 항히스타민제 정맥 주사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>저혈압</td><td><b>α1 혈관 수축으로 교정</b></td><td>효과 없음(오히려 저혈압 가능)</td></tr> <tr><td>기관지 연축·기도 부종</td><td>β2 확장 + α1 점막 부종 감소</td><td>효과 없음</td></tr> <tr><td>매개물질 방출</td><td>억제</td><td>이미 나온 히스타민의 H1 작용만 차단</td></tr> <tr><td>사망률</td><td>지연 투여가 사망 위험 인자</td><td>단독으로는 사망을 줄이지 못함</td></tr> </tbody></table> 피부 증상만 있는 알레르기 반응은 항히스타민제로 충분하지만, 호흡기나 순환기 증상이 하나라도 있으면 아나필락시스이므로 에피네프린이 먼저다.\n- 오답 이유:\n  - ① 클로르페니라민 정맥 주사는 호흡·순환 증상 없이 가려움과 두드러기만 있는 알레르기 반응이라면 정답이 된다.\n  - ② 메틸프레드니솔론은 이상성 반응 예방 효과가 불확실한 보조 약물이며 에피네프린 투여 뒤에야 고려한다.\n  - ③ 살부타몰 흡입은 에피네프린 투여 뒤에도 남는 기관지 연축의 보조 치료로는 정답이 될 수 있다.\n  - ④ 에피네프린 1 mg 정맥 급속 주사는 맥박이 없는 심정지 상태가 되었을 때의 용량으로 정답이 된다.\n- 함정: 두드러기가 보인다고 항히스타민제부터 주는 것 — 저혈압이나 천명이 있으면 아나필락시스이고 첫 약물은 에피네프린 근육주사다.\n- 학습목표: 음식 섭취 뒤 저혈압·기관지연축을 동반한 아나필락시스에 에피네프린 근육주사를 첫 약물로 고르고 항히스타민제와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 364: Anaphylaxis · Shaker MS, Wallace DV, Golden DBK, et al. Anaphylaxis — a 2020 practice parameter update, systematic review, and GRADE analysis. J Allergy Clin Immunol. 2020;145(4):1082-1123",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "알레르겐(새우) 노출 수 분 뒤 피부·점막 증상(전신 팽진, 입술 부종)에 호흡기 증상(천명, 산소포화도 90 %)과 저혈압(82/50 mmHg)이 함께 생겼다. 아나필락시스다. 첫 약물은 에피네프린 근육주사로, 성인은 1:1,000 용액 0.01 mg/kg(최대 0.5 mg)을 넓적다리 앞가쪽에 주사하고 반응이 없으면 5~15분마다 반복한다. 항히스타민제·스테로이드·기관지확장제는 보조 치료일 뿐 에피네프린을 대신하거나 늦추게 해서는 안 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 에피네프린만이 첫 약물인가</b>: 아나필락시스의 사망 원인은 혈관 확장·혈관 투과성 증가로 인한 분포성 쇼크와 기도 부종·기관지 연축이다. 에피네프린은 <b>α1 작용</b>으로 혈관을 수축시켜 혈압을 올리고 점막 부종을 줄이며, <b>β2 작용</b>으로 기관지를 넓히고 비만세포·호염기구의 매개물질 방출을 억제한다. 이 세 경로를 한 번에 되돌리는 약은 에피네프린뿐이다.<br> <b>왜 근육주사인가</b>: 넓적다리 근육은 혈류가 풍부해 피하주사보다 빨리 최고 농도에 이른다. 정맥 급속 주사(1 mg)는 심정지 용량이라 맥박이 있는 환자에게는 심실빈맥·심근허혈·고혈압 위기를 일으킨다. 정맥 투여는 반복 근육주사에도 반응하지 않는 쇼크에서 희석 용액의 지속 주입으로만 쓴다.<br> <b>항히스타민제의 한계</b>: H1 차단제는 가려움·두드러기를 줄이지만 혈압과 기도 폐쇄를 되돌리지 못하고 작용도 느리다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">에피네프린 근육주사(정답)</th><th>H1 항히스타민제 정맥 주사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>저혈압</td><td><b>α1 혈관 수축으로 교정</b></td><td>효과 없음(오히려 저혈압 가능)</td></tr> <tr><td>기관지 연축·기도 부종</td><td>β2 확장 + α1 점막 부종 감소</td><td>효과 없음</td></tr> <tr><td>매개물질 방출</td><td>억제</td><td>이미 나온 히스타민의 H1 작용만 차단</td></tr> <tr><td>사망률</td><td>지연 투여가 사망 위험 인자</td><td>단독으로는 사망을 줄이지 못함</td></tr> </tbody></table> 피부 증상만 있는 알레르기 반응은 항히스타민제로 충분하지만, 호흡기나 순환기 증상이 하나라도 있으면 아나필락시스이므로 에피네프린이 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 클로르페니라민 정맥 주사는 호흡·순환 증상 없이 가려움과 두드러기만 있는 알레르기 반응이라면 정답이 된다.\n② 메틸프레드니솔론은 이상성 반응 예방 효과가 불확실한 보조 약물이며 에피네프린 투여 뒤에야 고려한다.\n③ 살부타몰 흡입은 에피네프린 투여 뒤에도 남는 기관지 연축의 보조 치료로는 정답이 될 수 있다.\n④ 에피네프린 1 mg 정맥 급속 주사는 맥박이 없는 심정지 상태가 되었을 때의 용량으로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "두드러기가 보인다고 항히스타민제부터 주는 것 — 저혈압이나 천명이 있으면 아나필락시스이고 첫 약물은 에피네프린 근육주사다."
+   },
+   {
+    "k": "학습목표",
+    "v": "음식 섭취 뒤 저혈압·기관지연축을 동반한 아나필락시스에 에피네프린 근육주사를 첫 약물로 고르고 항히스타민제와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 364: Anaphylaxis · Shaker MS, Wallace DV, Golden DBK, et al. Anaphylaxis — a 2020 practice parameter update, systematic review, and GRADE analysis. J Allergy Clin Immunol. 2020;145(4):1082-1123"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "피부·점막 증상에 저혈압과 천명이 함께 있는 아나필락시스이므로 에피네프린 근육주사를 먼저 준다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "혈압 82/50 mmHg 와 천명 — 항히스타민제로 되돌릴 수 없는 순환·호흡 증상이다",
+   "steps": 2,
+   "chain": [
+    "새우 섭취 15분 뒤 전신 팽진·입술 부종 + 천명·저산소 + 저혈압 → 아나필락시스",
+    "맥박이 있는 아나필락시스의 첫 약물 → 에피네프린 0.5 mg 근육주사(정맥 급속 주사 아님)"
+   ],
+   "key": [
+    {
+     "item": "새우 요리를 먹은 지 15분 뒤",
+     "why": "알레르겐 노출 직후 발생",
+     "also": []
+    },
+    {
+     "item": "혈압 82/50 mmHg",
+     "why": "순환 증상 — 아나필락시스 진단 기준",
+     "also": []
+    },
+    {
+     "item": "양쪽 폐에서 천명음이 들린다",
+     "why": "호흡기 증상 — 기관지 연축",
+     "also": []
+    },
+    {
+     "item": "몸통과 팔에 팽진이 퍼져 있고 입술이 부어 있으며",
+     "why": "피부·점막 침범",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "맥박 124회/분",
+     "why": "맥박이 있으므로 정맥 급속 1 mg(심정지 용량)이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "복통이나 설사는 없다",
+     "why": "위장관 증상은 없어도 진단에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "음식 노출 뒤 피부 증상에 저혈압과 천명이 겹쳤다. 아나필락시스이므로 에피네프린 0.5 mg 을 넓적다리에 근육주사한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "반응이 없어 맥박이 사라지고 심정지가 되었다면 에피네프린 1 mg 정맥 주사"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261110T202413Z_일일영상_2026-11-11_9units_9q_3cd924b7",
+  "qid": "Q0003"
  },
  {
   "id": "imaging-2026-0605",
