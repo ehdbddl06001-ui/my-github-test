@@ -2,6 +2,43 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0916",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Bow hunter's syndrome presenting with embolism in an older patient treated with C1-2 posterior fixation using intraoperative digital subtraction angiography: illustrative case",
+  "authors": [
+   "Kakimoto Takayuki",
+   "Ogihara Kotaro",
+   "Okamoto Yusei",
+   "Kotani Hayato",
+   "Nishi Kazuhiko",
+   "Kawauchi Satoshi",
+   "Itami Hisakazu",
+   "Otsuka Shinji",
+   "et al."
+  ],
+  "journal": "Journal of neurosurgery. Case lessons",
+  "doi": "10.3171/CASE26750",
+  "pmid": "43002770",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43002770/",
+  "pubdate": "2026-11-09",
+  "date": "2026-11-10",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Bow hunter's syndrome (BHS) is a rare cause of vertebrobasilar insufficiency (VBI) or artery-to-artery embolism resulting from vertebral artery (VA) occlusion during head rotation due to cervical instability. VBI predominates, whereas embolic BHS is rare.\n\n**OBSERVATIONS:** A 77-year-old man presented with recurrent posterior circulation ischemic strokes. A cardiac embolism was initially suspected, and a brief episode of paroxysmal atrial fibrillation (AF) was detected via an insertable cardiac monitor. However, wall irregularity was noted in the left VA at the C1-2 level, together with atlantoaxial subluxation associated with os odontoideum. Dynamic digital subtraction angiography (DSA) with head rotation demonstrated left VA occlusion at C1-2 in the right rotational flexion position, with distal flow maintained via collateral circulation. The patient was diagnosed with a cerebral embolism due to BHS. Given the recurrent strokes, atlantoaxial fixation was performed, and intraoperative DSA confirmed a cervical alignment preserving VA flow. No recurrence occurred during postoperative follow-up.\n\n**LESSONS:** BHS should be considered in the differential diagnosis of infarction confined to the posterior circulation, even in older patients with AF. C1-2 posterior fixation effectively prevents recurrent infarction, and intraoperative DSA is useful for determining a cervical alignment that preserves VA blood flow. https://thejns.org/doi/10.3171/CASE26750.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0915",
   "topic": "Cardiology",
   "subtopic": "",
