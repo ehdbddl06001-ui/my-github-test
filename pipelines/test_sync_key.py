@@ -101,6 +101,21 @@ class Wiring(unittest.TestCase):
         for n in ("style.css", "synckey.js", "learn.js", "app.js", "pwa.js"):
             self.assertIn(f'{n}?v={ver}"', html, n)
 
+    def test_due_deck_is_wired(self):
+        # 「오늘 다시 풀 것」 덱(2026-11-10) — 학습 구역 선택지 · 첫 화면 버튼 · learn.js 내보내기가 서로 맞물려 있다.
+        # 복습 일정은 계산되고 있었지만 퀴즈 화면에 덱이 없어 예정 74개가 전부 밀렸다.
+        html = (DOCS / "index.html").read_text(encoding="utf-8")
+        app = (DOCS / "app.js").read_text(encoding="utf-8")
+        learn = (DOCS / "learn.js").read_text(encoding="utf-8")
+        self.assertIn('<option value="due">', html)
+        self.assertIn('id="dueStartBtn"', html)
+        self.assertIn('if (mode === "due") return ctx.dueQs.slice();', app)      # 종목 선택과 무관하게 전부
+        self.assertIn("LEARN.pickRetest(k)", app)                                # 고르는 규칙은 개념 복습 화면과 같다
+        self.assertIn('$("mode").value = "due"', app)
+        self.assertIn("dueKeys, pickRetest, reviewSteps", learn)                 # learn.js 가 pickRetest 를 내보낸다
+        manifest = (DOCS / "manifest.webmanifest").read_text(encoding="utf-8")
+        self.assertIn("./index.html?mode=due", manifest)
+
     def test_service_worker_caches_synckey(self):
         self.assertIn('"./synckey.js"', (DOCS / "sw.js").read_text(encoding="utf-8"))
 

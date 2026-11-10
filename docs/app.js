@@ -221,6 +221,28 @@ function solvedIds() {
   return ids;
 }
 
+// 오늘 다시 풀 것(2026-11-10) — 복습 예정일이 된 학습 목표마다 다시 풀 문항 하나를 덱으로 모은다.
+// 고르는 규칙은 개념 복습 화면과 같다(learn.js pickRetest: 안 푼 변형 → 같은 목표의 안 푼 문항 → 틀린 문항 그대로).
+// 왜: 복습 일정(틀린 다음 날 · 그 뒤 7일)은 계산되고 있었지만 개념 복습 화면에서 하나씩 눌러야만 나와서
+// 예정 74개가 전부 밀리고(중앙값 37일) 끝난 것이 0이었다. 종목 선택과 무관하게 전부 모은다 — 다시 풀 문항이
+// 대부분 변형 문제라 종목에 묶으면 빠진다. 오래 밀린 것부터.
+function dueList() {
+  if (typeof LEARN !== "object" || !LEARN.dueKeys || !LEARN.pickRetest || !LEARN.schedule) return [];
+  let keys, sc;
+  try { sc = LEARN.schedule(); keys = LEARN.dueKeys(); } catch (e) { return []; }
+  const byId = {};
+  [].concat(KMLE, USMLE, IMAGING, VARIANT).forEach((q) => { if (q && q.id && !byId[q.id]) byId[q.id] = q; });
+  const seen = new Set(), out = [];
+  keys.sort((a, b) => String((sc[a] || {}).due).localeCompare(String((sc[b] || {}).due)) || String(a).localeCompare(String(b)))
+    .forEach((k) => {
+      let p = null;
+      try { p = LEARN.pickRetest(k); } catch (e) { p = null; }
+      const q = p ? byId[p.type === "variant" ? p.v.id : p.id] : null;
+      if (q && !seen.has(q.id)) { seen.add(q.id); out.push(q); }
+    });
+  return out;
+}
+
 /* ---------- 오답 동기화(/api/wrong) ---------- */
 const SYNC = {
   url: (window.MEDKOS_API_BASE || "") + "api/wrong",   // 옛 GitHub Pages 주소면 Cloudflare 서버로(learn.js)
@@ -442,9 +464,10 @@ function inRange(q, lo, hi) {
 }
 
 // 학습 구역별 문항 — 덱마다 고른 뒤 합친다(최신 세트는 덱마다 그 덱의 최신 날짜).
-//   latest 최신 세트 · unsolved 안 푼 문항 · review 오답노트 · solved 푼 문항 전부 · range 기간 · all 전체
+//   latest 최신 세트 · unsolved 안 푼 문항 · due 오늘 다시 풀 것 · review 오답노트 · solved 푼 문항 전부 · range 기간 · all 전체
 function modeListOf(list, mode, ctx) {
   if (mode === "latest") return latestSet(list);
+  if (mode === "due") return list.filter((q) => ctx.due.has(q.id));     // 칩 숫자용 — 덱 자체는 modeList 가 종목과 무관하게 낸다
   if (mode === "range") return list.filter((q) => inRange(q, ctx.lo, ctx.hi));
   if (mode === "review") return list.filter((q) => ctx.wrong.has(q.id));
   if (mode === "solved") return list.filter((q) => ctx.solved.has(q.id));
@@ -452,11 +475,15 @@ function modeListOf(list, mode, ctx) {
   return list;
 }
 function modeCtx(mode) {
-  const ctx = { wrong: wrongIds(), solved: solvedIds(), lo: "", hi: "" };
+  const ctx = { wrong: wrongIds(), solved: solvedIds(), lo: "", hi: "", dueQs: [], due: new Set() };
   if (mode === "range") Object.assign(ctx, rangeBounds(baseList()));
+  if (mode === "due") { ctx.dueQs = dueList(); ctx.due = new Set(ctx.dueQs.map((q) => q.id)); }
   return ctx;
 }
-function modeList(mode, ctx) { return unionLists(SEL.map((d) => modeListOf(deckList(d), mode, ctx))); }
+function modeList(mode, ctx) {
+  if (mode === "due") return ctx.dueQs.slice();                          // 종목 선택과 무관 · 오래 밀린 순
+  return unionLists(SEL.map((d) => modeListOf(deckList(d), mode, ctx)));
+}
 // 지금 설정(종목·학습 구역·과목)으로 풀 문항 — 섞기 전 순서
 function currentList(ctx) {
   const mode = $("mode").value;
@@ -485,6 +512,8 @@ function startQuiz() {
       ? "아직 생성된 문항이 없습니다."
       : mode === "range"
       ? "선택한 기간에 생성된 문항이 없습니다. 날짜 범위를 조정해 보세요."
+      : mode === "due"
+      ? "오늘 다시 풀 것이 없습니다. 👏 틀린 문항은 다음 날, 그다음은 7일 뒤에 여기로 돌아옵니다."
       : mode === "review"
       ? "고른 종목의 오답노트에 쌓인 문항이 없습니다. 먼저 문항을 풀어보세요."
       : mode === "unsolved"
@@ -1108,6 +1137,14 @@ function updateReviewBadge() {
   let n = 0;
   try { n = LEARN.dueKeys().length; } catch (e) { n = 0; }
   b.textContent = n ? `개념 복습 · 오늘 다시 풀 것 ${n}` : "개념 복습";
+  // 첫 화면 맨 위의 「오늘 다시 풀 것 N개 풀기」 — 예정일이 된 것이 있을 때만 보인다
+  const d = $("dueStartBtn");
+  if (d) {
+    let m = 0;
+    try { m = dueList().length; } catch (e) { m = 0; }
+    d.textContent = `🔔 오늘 다시 풀 것 ${m}개 풀기`;
+    d.classList.toggle("hidden", !m);
+  }
 }
 function renderReview(openConcept) {
   ["setup", "quiz", "result", "wrongbook"].forEach((s) => hide($(s)));
@@ -1293,6 +1330,9 @@ function onModeChange() {
     hint = `${ctx.lo} ~ ${ctx.hi} 사이에 만든 ${names} ${n}개를 풉니다.`;
   } else if (mode === "all") {
     hint = `${names} 누적 ${n}개 전체(또는 선택 과목)를 풉니다.`;
+  } else if (mode === "due") {
+    hint = `복습 예정일이 된 학습 목표 ${n}개 — 목표마다 한 문항(안 푼 변형 → 같은 목표의 다른 문항 → 틀린 문항 순)을 오래 밀린 것부터 풉니다. `
+      + "종목 선택과 무관하게 전부 모읍니다(칩 숫자는 그 종목에 속한 수). 예정일 뒤에 맞히면 다음 간격으로 넘어가고, 틀리면 내일 다시 나옵니다.";
   } else if (mode === "review") {
     hint = `${names} 오답노트에 쌓인 ${n}개만 다시 풉니다.`
       + (has("variant") ? " 변형 문제는 마지막으로 풀었을 때 틀린 것이 들어갑니다." : "");
@@ -1302,7 +1342,7 @@ function onModeChange() {
     hint = `${names}에서 이미 푼 ${n}개(맞힌 것 포함)를 다시 풉니다.`;
   }
   // 영상 세트 문항은 그 형식(국시형·USMLE형)의 KMLE·USMLE 덱에도 들어 있어 칩 숫자의 합이 총수보다 클 수 있다
-  if (SEL.length > 1) {
+  if (SEL.length > 1 && mode !== "due") {
     const sum = SEL.reduce((a, d) => a + modeListOf(deckList(d), mode, ctx).length, 0);
     if (sum > n) hint += " (영상 세트 문항은 KMLE·USMLE 칩에도 함께 세어지지만, 풀 때는 한 번만 나옵니다.)";
   }
@@ -1412,6 +1452,7 @@ function init() {
   $("restartBtn").onclick = () => { hide($("result")); show($("setup")); onModeChange(); updateWrongCount(); refreshResume(); };
   refreshResume();
   $("reviewBtn").onclick = () => { $("mode").value = "review"; hide($("result")); startQuiz(); };
+  if ($("dueStartBtn")) $("dueStartBtn").onclick = () => { $("mode").value = "due"; onModeChange(); startQuiz(); };
   $("backBtn").onclick = () => { hide($("wrongbook")); show($("setup")); onModeChange(); updateWrongCount(); };
   $("exportMdBtn").onclick = exportMarkdown;
   $("exportCsvBtn").onclick = exportCsv;
