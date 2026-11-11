@@ -125,6 +125,9 @@ figures_wanted:
   caption_terms:
   - sinus arrhythmia
   modality: ECG
+figures_rejected:
+- asset: PMC-PMC13420558_Figure1
+  reason: 그림은 2:1 방실차단 + 심실위상성(ventriculophasic) 동부정맥·우각차단 — 전도 안 된 P파가 끼어 있어 목표(모든 P파가 전도되고 PP가 호흡에 따라 서서히 변하는 호흡성 동부정맥)와 다르고 방실차단과 혼동을 준다
 ---
 
 ## 판단 — P파와 간격 변화로 읽는 순서

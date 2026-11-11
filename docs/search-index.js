@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-10",
+ "generated": "2026-11-11",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4604,
+  "total": 4612,
   "byType": {
+   "paper": 924,
    "kmle": 1792,
    "concept": 162,
    "usmle": 252,
-   "paper": 916,
    "imaging": 619,
    "anatomy": 846,
    "ailab": 14,
@@ -18,26 +18,26 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 324,
-   "Nephrology": 246,
-   "Infectious Disease": 225,
-   "Pediatrics": 213,
+   "Cardiology": 325,
+   "Nephrology": 247,
+   "Infectious Disease": 226,
+   "Pediatrics": 214,
    "Obstetrics & Gynecology": 158,
    "Rheumatology": 139,
-   "Pathology": 136,
+   "Pathology": 137,
    "Psychiatry": 135,
    "Neurology": 133,
-   "Hematology-Oncology": 129,
+   "Hematology-Oncology": 130,
    "Orthopedics": 125,
    "General Surgery": 120,
    "Endocrinology": 118,
    "Dermatology": 117,
    "Gastroenterology": 117,
    "Ophthalmology": 117,
+   "Surgery": 117,
    "Pulmonology": 116,
-   "Surgery": 116,
    "Hematology": 109,
-   "Laboratory Medicine": 95,
+   "Laboratory Medicine": 96,
    "순환기": 82,
    "산부인과": 81,
    "호흡기": 39,
@@ -79,13 +79,149 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1305,
    "high": 3254,
-   "medium": 1297,
    "low": 53
   },
   "tagCount": 5448
  },
  "docs": [
+  {
+   "id": "paper-2026-0924",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Spine",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0924_predictors_of_discordance_between_neurological_and_quality_o.md",
+   "snippet": "Title Predictors of Discordance Between Neurological and Quality of Life Recovery After Surgery for Degenerative Cervical Myelopathy: A Retrospective Cohort Study Authors Bougadis Joshua, Alvi Mohammed Ali, Pedro Karlo M, Bidari Ava, Fehlin",
+   "text": "Surgery scraped pubmed PubMed / Spine Title Predictors of Discordance Between Neurological and Quality of Life Recovery After Surgery for Degenerative Cervical Myelopathy: A Retrospective Cohort Study Authors Bougadis Joshua, Alvi Mohammed Ali, Pedro Karlo M, Bidari Ava, Fehlings Michael G Journal / DOI Spine · DOI: 10.1097/BRS.0000000000005924 · PMID: 43008133 https://pubmed.ncbi.nlm.nih.gov/43008133/ Abstract STUDY DESIGN: Retrospective analysis of prospectively collected multicentre cohort data. OBJECTIVE: Quantify discordance between neurological recovery (modified Japanese Orthopaedic Association [mJOA]) and quality of life (QoL) recovery (SF 36 PCS) after surgery for degenerative cervical myelopathy (DCM) and identify predictors of each profile. SUMMARY OF BACKGROUND DATA: Neurological and patient reported outcomes capture different dimensions of recovery after DCM surgery, but the frequency, structure, and baseline correlates of discordance between these outcome domains remain incompletely characterized. METHODS: Retrospective analysis of prospective multicentre AO Spine CSM NA and CSM I cohorts. Recovery used published minimum clinically important differences (MCID) for mJOA and SF 36 PCS at 12 months, with 6 month values carried forward when unavailable. Patients were classified as concordant recovery, neurological only recovery, QoL only recovery, or no recovery. Discordant recovery was defined as achieving one MCID without the other. Baseline predictors were estimated by multinomial logistic regression using multiple imputation (m=20) for missing covariates. RESULTS: Of 353 patients, 310 were classifiable: 88 (28.4%) concordant, 50 (16.1%) neurological only, 82 (26.5%) QoL only, 90 (29.0%) no recovery; 132 (42.6%) discordant. Higher baseline PCS predicted neurological only versus concordant recovery (OR 4.42 per SD, 95% CI 2.34 8.35), whereas higher baseline mJOA predicted QoL only (OR 5.67, 2.95 10.90) and no recovery (OR 4.23, 2.25 7.95; all P <0.001). Older age, higher Nurick grade, lower mental component score and greater frailty also predicted non concordant profiles. In exploratory models, ossification of the posterior longitudinal ligament predicted no recovery (OR 5.71, 2.17 15.0) and number of compressed levels predicted neurological only recovery (OR 1.85, 1.17 2.92). Neurological only patients improved less in pain related disability (NDI Q1) than concordant or QoL only patients (P <0.02). CONCLUSIONS: Neurological and QoL recovery were discordant in over 40% of patients and governed by different baseline variables. Neurological only recovery reflects limited room for measurable QoL gain, compounded by persistent pain, rather than surgical failure. LEVEL OF EVIDENCE: III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0923",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical oral investigations",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0923_effect_of_oral_vitamin_d_supplementation_on_salivary_vitamin.md",
+   "snippet": "Title Effect of oral vitamin D₃₃ supplementation on salivary vitamin D levels and orthodontic treatment duration: a randomized controlled trial Authors Sagar Sandra, Ramani Pratibha, Moses Sagar, Jeyaraj Genickson Journal / DOI Clinical ora",
+   "text": "Pediatrics scraped pubmed PubMed / Clinical oral investigations Title Effect of oral vitamin D₃₃ supplementation on salivary vitamin D levels and orthodontic treatment duration: a randomized controlled trial Authors Sagar Sandra, Ramani Pratibha, Moses Sagar, Jeyaraj Genickson Journal / DOI Clinical oral investigations · DOI: 10.1007/s00784 026 07254 3 · PMID: 43007448 https://pubmed.ncbi.nlm.nih.gov/43007448/ Abstract OBJECTIVES: To evaluate the effect of systemic oral vitamin D₃ supplementation on salivary vitamin D₃ levels during different phases of orthodontic treatment and on the overall orthodontic treatment duration in adolescents undergoing fixed orthodontic treatment. MATERIALS AND METHODS: A randomized controlled trial was conducted among 52 adolescents (13 18 years) with Angle's Class I malocclusion requiring extraction of all four first premolars. Participants were randomly allocated into two groups: Group 1 (control; n = 26) received no vitamin D₃ supplementation, while Group 2 (supplementation; n = 26) received oral vitamin D₃ (60,000 IU every 20 days). Allocation concealment was achieved using the Sequentially Numbered Opaque Sealed Envelope (SNOSE) method. Unstimulated saliva samples were collected at three treatment phases: T1 (archwire insertion), T2 (extraction space closure), and T3 (debonding). Salivary vitamin D₃ concentrations were quantified using enzyme linked immunosorbent assay (ELISA). Overall orthodontic treatment duration was recorded from initial archwire placement to appliance debonding. Statistical analysis was performed using independent samples t tests, with statistical significance set at p ≤ 0.05. RESULTS: Baseline salivary vitamin D₃ levels were comparable between the two groups. Participants receiving vitamin D₃ supplementation demonstrated significantly higher salivary vitamin D₃ concentrations during extraction space closure (44.39 ± 5.22 ng/mL vs. 38.19 ± 8.65 ng/mL; p = 0.003) and at debonding (48.31 ± 4.86 ng/mL vs. 39.91 ± 8.04 ng/mL; p < 0.001) compared with the control group. The supplementation group also demonstrated a significantly shorter overall orthodontic treatment duration (17.81 ± 1.12 months) than the control group (19.50 ± 1.35 months), corresponding to a mean reduction of 1.69 months (approximately 51 days; p < 0.001). No significant gender related differences in salivary vitamin D₃ levels were observed. CONCLUSION: Oral vitamin D₃ supplementation was associated with higher salivary vitamin D₃ levels during key phases of orthodontic treatment and a significant reduction in overall treatment duration. Salivary monitoring of vitamin D₃ may have potential as a useful non invasive biomarker to guide targeted supplementation strategies aimed at improving orthodontic treatment efficiency, however, further studies are required to establish its clinical utility in guiding supplementation. CLINICAL RELEVANCE: Vitamin D₃ supplementation may represent a simple, minimally invasive adjunctive strategy for improving orthodontic treatment efficiency. Monitoring salivary vitamin D₃ levels offers a practical, non invasive method for assessing vitamin D status, particularly in children and adolescents undergoing prolonged orthodontic treatment. However, supplementation should be individualized and guided by clinical assessment, and further studies are required before routine clinical implementation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0922",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal. Cardiovascular Imaging",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0922_tricuspid_inflow_e_wave_velocity_for_the_assessment_of_sever.md",
+   "snippet": "Title Tricuspid inflow E wave velocity for the assessment of severe or greater tricuspid regurgitation: derivation and external validation of threshold values Authors Fisicaro Samantha, Moldovan Madalina Patricia, Kawada Yuka, Penso Marco, ",
+   "text": "Laboratory Medicine scraped pubmed PubMed / European heart journal. Cardiovascular Imaging Title Tricuspid inflow E wave velocity for the assessment of severe or greater tricuspid regurgitation: derivation and external validation of threshold values Authors Fisicaro Samantha, Moldovan Madalina Patricia, Kawada Yuka, Penso Marco, Simonato Matheus, Buta Alexandra Simona, Negru Andra, Clement Alexandra, et al. Journal / DOI European heart journal. Cardiovascular Imaging · DOI: 10.1093/ehjci/jeag304 · PMID: 43008201 https://pubmed.ncbi.nlm.nih.gov/43008201/ Abstract AIMS: Current guidelines include tricuspid inflow E wave ( 100 cm/s by pulsed wave Doppler) as a semiquantitative criterion for diagnosing severe tricuspid regurgitation (TR), despite limited supporting evidence. We assessed its diagnostic performance for identifying severe or greater TR, deriving and externally validating practical thresholds. METHODS AND RESULTS: Tricuspid inflow E wave velocity was measured by pulsed wave Doppler in consecutive patients with at least mild TR between December 2024 and February 2026. Among 178 patients (77±13 years, 65% women), TR was mild in 44, moderate in 61, severe in 44, massive in 15, and torrential in 14. Mean tricuspid E wave velocity was 56±16 cm/s and increased with TR severity: 47±8, 50±10, 62±16, 67±13, and 77±21 cm/s for mild, moderate, severe, massive, and torrential TR. Only three patients had E wave velocity 100 cm/s (one with severe and two with torrential TR). Using multiparametric echocardiographic grading as the reference standard, the 100 cm/s threshold showed 5.5% sensitivity, 100% specificity, and kappa 0.25 for severe or greater TR. As a continuous variable, E wave velocity discriminated severe or greater TR with an AUC of 0.81. A lower threshold of 52 cm/s yielded 81% sensitivity and 67% specificity, whereas 47 cm/s provided 90% sensitivity and 43% specificity. External validation resulted in 94% sensitivity and 47% specificity. CONCLUSION: The guideline recommended threshold of 100 cm/s is highly insensitive for detecting severe or greater TR. Lower cut offs, particularly 47 cm/s, may be useful for screening to trigger a comprehensive multiparametric assessment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0921",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood advances",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0921_idiopathic_multicentric_castleman_disease_unresponsive_to_on.md",
+   "snippet": "Title Idiopathic Multicentric Castleman Disease Unresponsive to One IL 6 Inhibitor May Respond to Another IL 6 Inhibitor Authors McHugh Kayla, Huang Yuan, Austin Bridget, Borys Larissa, Irvine Abiola H, Alapat Daisy V, Bagg Adam, Chadburn A",
+   "text": "Pathology scraped pubmed PubMed / Blood advances Title Idiopathic Multicentric Castleman Disease Unresponsive to One IL 6 Inhibitor May Respond to Another IL 6 Inhibitor Authors McHugh Kayla, Huang Yuan, Austin Bridget, Borys Larissa, Irvine Abiola H, Alapat Daisy V, Bagg Adam, Chadburn Amy, et al. Journal / DOI Blood advances · DOI: 10.1182/bloodadvances.2026020893 · PMID: 43008264 https://pubmed.ncbi.nlm.nih.gov/43008264/ Abstract Idiopathic multicentric Castleman disease (iMCD) is a rare hematologic disorder defined by lymphadenopathy with distinctive histopathology and systemic inflammation that can progress to multiorgan failure. Siltuximab, a monoclonal antibody targeting the interleukin 6 (IL 6) cytokine, is the only FDA approved treatment for iMCD and is considered first line therapy. Tocilizumab, an IL 6 receptor antagonist, approved for iMCD in Japan and used off label is often viewed as clinically interchangeable with siltuximab due to shared pathway inhibition. Limited treatment alternatives exist for patients whose disease is refractory to IL 6 inhibition. Using two independent iMCD patient registries, we identified patients who received siltuximab and tocilizumab at different periods and had an assessable response to each inhibitor. Eight out of 14 patients who received both therapies were refractory to the first and then responsive to the second IL 6 inhibitor; six patients were refractory to both IL 6 inhibitors. Responses were durable over available follow up and were accompanied by significant improvements in inflammatory markers and disease severity scores. While a subset of patients may have had improved response to the second IL 6 inhibitor due to shorter treatment durations or the use of other medications, all were refractory after receiving at least three doses of the first IL 6 inhibitor. These findings suggest that there may be different IL 6 related mechanisms across patients and that selected patients who do not respond to an initial IL 6 inhibitor should be considered for a second IL 6 inhibitor. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0920",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Neurology",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0920_performance_of_diagnostic_criteria_for_autoimmune_encephalit.md",
+   "snippet": "Title Performance of Diagnostic Criteria for Autoimmune Encephalitis in Patients With Suspected Rapidly Progressive Dementia Authors Piura Yoav D, Elgenidi Anas, Tipton Philip W, Satyadev Nihal, Graff Radford Neill R, Day Gregory S Journal ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Neurology Title Performance of Diagnostic Criteria for Autoimmune Encephalitis in Patients With Suspected Rapidly Progressive Dementia Authors Piura Yoav D, Elgenidi Anas, Tipton Philip W, Satyadev Nihal, Graff Radford Neill R, Day Gregory S Journal / DOI Neurology · DOI: 10.1212/WNL.0000000000218783 · PMID: 43008255 https://pubmed.ncbi.nlm.nih.gov/43008255/ Abstract BACKGROUND AND OBJECTIVES: The Graus criteria for possible autoimmune encephalitis (AE) are increasingly used to identify patients most likely to benefit from autoantibody testing and empiric immunotherapy. However, the performance of Graus criteria in patients with suspected rapidly progressive dementia (RPD) is unknown. We aimed to determine the diagnostic performance of the Graus criteria for possible AE in patients with suspected RPD and to identify the factors associated with progression to autoimmune dementia (AiD). METHODS: In this observational cohort study, patients ≥18 years with suspected RPD were enrolled and evaluated at 2 tertiary care centers (Washington University in St. Louis, MO, and Mayo Clinic Jacksonville, FL) from 2016 to 2024. Clinical data, brain imaging, electroencephalograms, and biofluid measures were reviewed, and consensus diagnoses were assigned by independent reviewers. We evaluated the diagnostic performance of the Graus criteria for possible AE against the consensus diagnosis. Among patients with AE, multivariable logistic regression models were used to identify factors independently associated with progression to AiD. RESULTS: Two hundred sixty one patients with suspected RPD were enrolled (mean age 61.1 years, 46% female, 83% non Hispanic White), including 74 patients (28%) with AE. The Graus criteria for possible AE demonstrated 89% sensitivity, 96% specificity, and 94% accuracy for the diagnosis of AE in patients with suspected RPD. Two patients with AE died within 3 months of symptom onset. Cognitive impairment persisted beyond 3 months in 47 of 72 surviving patients with AE (65%), meeting proposed criteria for AiD. In multivariable analysis, older age (odds ratio [OR] 1.4 per decade, 95% CI 1.0 1.9), longer time to initiation of immunomodulatory treatments (OR 1.4 per month, 95% CI 1.1 1.9), and treatment with rituximab (OR 4.3, 95% CI 1.2 15.1) were independently associated with AiD. DISCUSSION: The Graus criteria for possible AE reliably identified patients with suspected RPD due to AE. In patients with AE, older age, delays in the initiation of immunomodulatory therapies, and rituximab use (a proxy for severe/refractory AE) were independently associated with progression to AiD. These findings apply to patients evaluated at specialized referral centers and warrant confirmation in broader settings. CLASSIFICATION OF EVIDENCE: This study provides Class III evidence that the Graus criteria accurately distinguish AE from other causes of RPD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0919",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Archivos de cardiologia de Mexico",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0919_chronic_kidney_disease_in_heart_failure_results_from_an_ecua.md",
+   "snippet": "Title Chronic kidney disease in heart failure: results from an Ecuadorian registry Authors Pucha Pesántez Ronald E, Moreno Rondón Luis, Ortega Armas María E, Alarcón Cedeño Robert, Pulla Diego, Gómez Mario D, Villavicencio Diego, Castro Mej",
+   "text": "Nephrology scraped pubmed PubMed / Archivos de cardiologia de Mexico Title Chronic kidney disease in heart failure: results from an Ecuadorian registry Authors Pucha Pesántez Ronald E, Moreno Rondón Luis, Ortega Armas María E, Alarcón Cedeño Robert, Pulla Diego, Gómez Mario D, Villavicencio Diego, Castro Mejía Alex F Journal / DOI Archivos de cardiologia de Mexico · DOI: 10.24875/ACM.25000259 · PMID: 43008197 https://pubmed.ncbi.nlm.nih.gov/43008197/ Abstract OBJECTIVES: Heart failure (HF) frequently coexists with chronic kidney disease (CKD), a combination that is associated with worse outcomes. Data from Ecuador remain limited. We estimated the prevalence of CKD among patients with HF and described prognostic impact according to left ventricular ejection fraction (LVEF). METHODS: A retrospective study was conducted using a single center HF registry in Ecuador. CKD was defined as an estimated glomerular filtration rate (eGFR) < 60 mL/min/1.73m2. HF was categorized by LVEF into reduced (HF with reduced ejection fraction [HFrEF], ≤ 40%), mildly reduced (HF with mildly reduced ejection fraction [HFmrEF], 41 49%), and preserved (HF with preserved ejection fraction [HFpEF], ≥ 50%). The median follow up was 2.28 years. RESULTS: Among 706 patients (age 69.9 ± 13.3 years; 31.4% women), 50.3% had an eGFR ≥ 60, 33.1% had an eGFR of 30 59, and 16.6% had an eGFR < 30 mL/min/1.73m2. CKD prevalence was 57.8% in HFrEF, 41.8% in HFmrEF, and 53.5% in HFpEF (p = 0.003). CKD patients were older and had higher rates of hypertension (HT), atrial fibrillation, and cerebrovascular disease, with higher NT proBNP levels, larger diastolic diameters, lower LVEF, more tricuspid regurgitation, and pulmonary HT (all p < 0.05). CKD was associated with increased all cause mortality (49.3 vs. 26.8%), cardiovascular mortality (28.8 vs. 11.8%), all cause hospitalizations (47.6 vs. 25.9%), and HF hospitalizations (22.2 vs. 11.0%). Predictors of mortality were LVEF ≤ 40% (Hazard ratio [HR] 1.5, 95% confidence interval [CI] 1.1 2.2; p = 0.048), moderate/severe tricuspid regurgitation (HR 1.6, 95% CI 1.1 2.2; p = 0.008), and prior HF hospitalization (HR 2.2, 95% CI 1.6 3.1; p < 0.001). CONCLUSIONS: CKD was highly prevalent among patients with HF, particularly among those with LVEF < 50%. Its presence was associated with a more adverse clinical and echocardiographic profile, as well as higher hospitalization, all cause mortality, and cardiovascular mortality. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0918",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Wiadomosci lekarskie (Warsaw, Poland : 1960)",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0918_vancomycin_resistant_enterococci_local_epidemiology_and_clin.md",
+   "snippet": "Title Vancomycin resistant Enterococci: Local epidemiology and clinical outcomes Authors Chaloob Rasool, Al Shaeer Majeed N Abdul, Alaasam Maryam K, Almasodi Aeman Yaakob, Kadhim Salim Journal / DOI Wiadomosci lekarskie (Warsaw, Poland : 19",
+   "text": "Infectious Disease scraped pubmed PubMed / Wiadomosci lekarskie (Warsaw, Poland : 1960) Title Vancomycin resistant Enterococci: Local epidemiology and clinical outcomes Authors Chaloob Rasool, Al Shaeer Majeed N Abdul, Alaasam Maryam K, Almasodi Aeman Yaakob, Kadhim Salim Journal / DOI Wiadomosci lekarskie (Warsaw, Poland : 1960) · DOI: 10.36740/WLek/231648 · PMID: 43007959 https://pubmed.ncbi.nlm.nih.gov/43007959/ Abstract OBJECTIVE: Aim: To study local epidemiology, antimicrobial susceptibility patterns, and clinical outcomes of VRE infections among inpatients. PATIENTS AND METHODS: Materials and Methods: A retrospective observational study was carried out on all patients admitted with culture confirmed Vancomycin resistant enterococci infections between July 2025 and January 2026 in Najaf, Iraq. Data on demographic characteristics, clinical information, antimicrobial exposure, microbiological findings, and outcomes were obtained from medical records. RESULTS: Results: A total of 84 patients with Vancomycin resistant enterococci infection were included. The mean age was 56 ± 18 years, and 57.1% were male. Prior antibiotic exposure was seen in 75.0% of the patients, while 33.3% had previously received Vancomycin therapy. Enterococcus faecium was the predominant species 73.8%, followed by Enterococcus faecalis 21.4%. All isolates were resistant to Vancomycin, while resistance rates against ampicillin, ciprofloxacin, and high level gentamicin were 70.2%, 63.1%, and 52.4% respectively. Susceptibility to linezolid and daptomycin was still high (97.6% and 98.8% respectively). Urine was the most common specimen source 40.5%, followed by blood cultures 26.2%. In terms of clinical outcomes, 36.9% were admitted to the ICU, 26.2% had a bloodstream infection, 21.4% needed mechanical ventilation, 14.3% had septic shock, and there was an overall mortality rate of 23.8%. CONCLUSION: Conclusions: infections due to Vancomycin resistant enterococci impose a huge healthcare burden in our setting; E. faecium is the leading species and is multidrug resistant. It was, however, associated with significant mortality despite preserved susceptibility to linezolid and daptomycin. Therefore, continuous surveillance coupled with antimicrobial stewardship and strict infection control practices is needed to contain the spread and impact of VRE infections. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0917",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Archivos de cardiologia de Mexico",
+   "confidence": "medium",
+   "date": "2026-11-11",
+   "path": "content/papers/2026/2026-11-11_paper-2026-0917_atrial_myxoma_with_endocarditis_like_clinical_presentation_a.md",
+   "snippet": "Title [Atrial myxoma with endocarditis like clinical presentation and neurological event] Authors Cárdenas Flores Norma P, Pacheco López Sandra L, Valdéz Perales María F, Rodríguez Durán Laura E, Franco Díaz Miriam G Journal / DOI Archivos ",
+   "text": "Cardiology scraped pubmed PubMed / Archivos de cardiologia de Mexico Title [Atrial myxoma with endocarditis like clinical presentation and neurological event] Authors Cárdenas Flores Norma P, Pacheco López Sandra L, Valdéz Perales María F, Rodríguez Durán Laura E, Franco Díaz Miriam G Journal / DOI Archivos de cardiologia de Mexico · DOI: 10.24875/ACM.25000211 · PMID: 43008227 https://pubmed.ncbi.nlm.nih.gov/43008227/ Abstract Cardiac myxomas are benign tumors that typically arise in the left atrium and account for 50% of all primary cardiac tumors. They can induce symptoms by obstructing blood flow, causing embolism, or producing general systemic symptoms. Cardiac myxomas derive from multipotent mesenchymal cells, which develop into a gelatinous mass. These tumors are usually solitary and pedunculated, often attached to the atrial septum via a stalk. Because cardiac myxomas pose a significant risk of life threatening complications, such as embolism, heart failure, or sudden death, timely and effective care and treatment are essential. We present the case of a 16 year old patient diagnosed with cardiac myxoma by histopathology. She presented clinically with cutaneous involvement consistent with systemic embolism secondary to suspected infective endocarditis. She was referred to a tertiary care center for diagnostic evaluation and to rule out rheumatological conditions such as lupus. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1827",
    "type": "kmle",

@@ -18266,7 +18266,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-11",
   "reviewStatus": "unreviewed",
-  "hash": "c33bf65efbc049cd",
+  "hash": "3701ae6e488aec85",
   "summary": [
    "결론: P파 모양이 모두 같고 PP 간격만 0.12초 넘게 서서히 늘었다 줄었다 하면 동부정맥 — 정상 소견이다.",
    "시험 단서: 젊고 건강한 사람, 쉴 때·깊은 호흡 때 「맥이 고르지 않다」, 증상 없음, 검사 정상(respiratory sinus arrhythmia).",
