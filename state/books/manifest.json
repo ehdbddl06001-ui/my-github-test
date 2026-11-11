@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "00e7b3ae91c78f5fb778",
-   "version": 26,
-   "date": "2026-11-10",
+   "hash": "6bb27fefe7bbbe32a669",
+   "version": 27,
+   "date": "2026-11-11",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 46,
+   "pages": 51,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -110,60 +110,78 @@
      "concept_hash": "e93c059b1e63e90c",
      "concept_version": 1
     },
+    "cn.cardio.complete-av-block.permanent-pacemaker": {
+     "title": "완전 방실차단 — 되돌릴 원인 없으면 영구 조율",
+     "page": 29,
+     "concept_hash": "b675c7e79f0a68e2",
+     "concept_version": 1
+    },
+    "cn.cardio.sinus-arrhythmia.ecg-recognition": {
+     "title": "동부정맥 — 같은 P파, 서서히 변하는 PP",
+     "page": 30,
+     "concept_hash": "c33bf65efbc049cd",
+     "concept_version": 1
+    },
     "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
      "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
-     "page": 29,
+     "page": 32,
      "concept_hash": "d685cd64da546109",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 30,
+     "page": 33,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": {
+     "title": "심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)",
+     "page": 36,
+     "concept_hash": "be4911c141b1d12c",
+     "concept_version": 2
+    },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 32,
+     "page": 37,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 34,
+     "page": 39,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 37,
+     "page": 42,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 39,
+     "page": 44,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 42,
+     "page": 47,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 45,
+     "page": 50,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "83d6fb63fef15fa2aa5262fc33bc6309",
-    "version": 26,
-    "uploaded": "2026-11-10T14:16:33+09:00"
+    "md5": "626a6d7edd72101851d80bb16afef137",
+    "version": 27,
+    "uploaded": "2026-11-11T11:38:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -191,18 +209,21 @@
     "MedKOS_학습서_순환기내과_v23_2026-11-07.pdf",
     "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf",
     "MedKOS_학습서_순환기내과_v25_2026-11-09.pdf",
-    "MedKOS_학습서_순환기내과_v26_2026-11-10.pdf"
+    "MedKOS_학습서_순환기내과_v26_2026-11-10.pdf",
+    "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf"
    ],
    "changes": [
-    "새 단원: 동결절 기능 장애 — 증상과 서맥이 맞아야 심박조율기"
+    "새 단원: 완전 방실차단 — 되돌릴 원인 없으면 영구 조율",
+    "새 단원: 동부정맥 — 같은 P파, 서서히 변하는 PP",
+    "새 단원: 심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)"
    ]
   },
   "피부과": {
-   "hash": "ad1bff85f9648cc1e0f7",
-   "version": 15,
-   "date": "2026-11-09",
+   "hash": "6f9a3d51ed4647707d6f",
+   "version": 16,
+   "date": "2026-11-11",
    "file": "MedKOS_학습서_피부과.pdf",
-   "pages": 16,
+   "pages": 17,
    "template_version": 11,
    "units": {
     "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin": {
@@ -231,28 +252,28 @@
     },
     "cn.derm.sweet-syndrome.diagnosis": {
      "title": "스위트증후군 — 열과 아픈 부은 판, 진피 호중구",
-     "page": 9,
-     "concept_hash": "f6a99f66de0b5b5e",
-     "concept_version": 1
+     "page": 10,
+     "concept_hash": "c684f167bb3c76e6",
+     "concept_version": 2
     },
     "cn.derm.scabies.treat-with-contacts": {
      "title": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
-     "page": 11,
+     "page": 12,
      "concept_hash": "f952cfb87c7ab5a6",
      "concept_version": 3
     },
     "cn.derm.regressing-pigmented-lesion.biopsy-first": {
      "title": "퇴행 구조 색소 병변 — 양성 같아도 조직검사가 먼저",
-     "page": 14,
+     "page": 15,
      "concept_hash": "f8554779edc646cf",
      "concept_version": 3
     }
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "c87705d252948187582be0a64d0e2047",
-    "version": 15,
-    "uploaded": "2026-11-09T12:09:36+09:00"
+    "md5": "9e89dd92da8a47578ce6f588c7eacd79",
+    "version": 16,
+    "uploaded": "2026-11-11T11:38:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -269,10 +290,11 @@
     "MedKOS_학습서_피부과_v12_2026-10-06.pdf",
     "MedKOS_학습서_피부과_v13_2026-10-16.pdf",
     "MedKOS_학습서_피부과_v14_2026-11-07.pdf",
-    "MedKOS_학습서_피부과_v15_2026-11-09.pdf"
+    "MedKOS_학습서_피부과_v15_2026-11-09.pdf",
+    "MedKOS_학습서_피부과_v16_2026-11-11.pdf"
    ],
    "changes": [
-    "내용 수정: 스위트증후군 — 열과 아픈 부은 판, 진피 호중구"
+    "내용 갱신: 스위트증후군 — 열과 아픈 부은 판, 진피 호중구 (정리본 v1 → v2)"
    ]
   },
   "신장내과": {
@@ -1158,11 +1180,11 @@
    ]
   },
   "응급의학과": {
-   "hash": "11c06cd6cd725cf92b07",
-   "version": 9,
-   "date": "2026-10-06",
+   "hash": "8d7530d8d63eeba33d3c",
+   "version": 10,
+   "date": "2026-11-11",
    "file": "MedKOS_학습서_응급의학과.pdf",
-   "pages": 10,
+   "pages": 12,
    "template_version": 11,
    "units": {
     "cn.em.ards.lung-protective-ventilation": {
@@ -1183,18 +1205,24 @@
      "concept_hash": "6867174d94309717",
      "concept_version": 2
     },
+    "cn.pharm.methanol-poisoning.fomepizole-mechanism": {
+     "title": "메탄올 중독 — 해독제는 첫 효소 ADH 를 막는다",
+     "page": 9,
+     "concept_hash": "4159b812dc26afc6",
+     "concept_version": 1
+    },
     "cn.em.beta-blocker-overdose.glucagon-mechanism": {
      "title": "beta-blocker(베타차단제) 중독 — 글루카곤은 다른 입구로 cAMP를 올린다",
-     "page": 9,
+     "page": 11,
      "concept_hash": "275a56269847e79d",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
-    "md5": "271bcc0164d72db58add099c8886e229",
-    "version": 9,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "4d42fc46bd61499dd1491370e743c629",
+    "version": 10,
+    "uploaded": "2026-11-11T11:38:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_응급의학과_v1_2026-09-25.pdf",
@@ -1205,9 +1233,12 @@
     "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf",
     "MedKOS_학습서_응급의학과_v7_2026-10-02.pdf",
     "MedKOS_학습서_응급의학과_v8_2026-10-05.pdf",
-    "MedKOS_학습서_응급의학과_v9_2026-10-06.pdf"
+    "MedKOS_학습서_응급의학과_v9_2026-10-06.pdf",
+    "MedKOS_학습서_응급의학과_v10_2026-11-11.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 메탄올 중독 — 해독제는 첫 효소 ADH 를 막는다"
+   ]
   },
   "내분비내과": {
    "hash": "576315f8e74d1c9d0909",
@@ -1674,13 +1705,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "22acf784afe1dc330c785855430985b3",
+   "md5": "75fca841dee475b8d2aa07c5c6ccdc46",
    "version": null,
-   "uploaded": "2026-11-10T14:16:33+09:00"
+   "uploaded": "2026-11-11T11:38:43+09:00"
   }
  },
- "updated": "2026-11-10"
+ "updated": "2026-11-11"
 }

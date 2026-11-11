@@ -1,14 +1,12 @@
 {
- "started": "2026-11-10T12:44:38+09:00",
+ "started": "2026-11-11T10:25:32+09:00",
  "built": [
-  "순환기내과",
-  "류마티스내과",
-  "호흡기내과"
+  "응급의학과",
+  "피부과",
+  "순환기내과"
  ],
  "skipped": [
-  "응급의학과",
   "정형외과",
-  "피부과",
   "내분비내과",
   "안과",
   "외과",
@@ -16,6 +14,8 @@
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
+  "류마티스내과",
+  "호흡기내과",
   "감염내과",
   "소화기내과",
   "신장내과",
@@ -29,20 +29,22 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "순환기내과": [],
-  "류마티스내과": [],
-  "호흡기내과": []
+  "응급의학과": [],
+  "피부과": [],
+  "순환기내과": []
  },
  "notes": {
-  "순환기내과": [],
-  "류마티스내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 15쪽 오른쪽 단 아래가 비어 있다(빈 공간 31%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 48쪽 왼쪽 단 아래가 비어 있다(빈 공간 43%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 48쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
+  "응급의학과": [],
+  "피부과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 35%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 왼쪽 단 아래가 비어 있다(빈 공간 42%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 12쪽 오른쪽 단 아래가 비어 있다(빈 공간 43%)"
   ],
-  "호흡기내과": []
+  "순환기내과": []
  },
  "concept_errors": [
+  "content/concepts/cardiology/cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/cardiology/cn.cardio.syncope.high-risk-admit.md: [WARN] 해리슨 대조 없음 — 슬롯 h21 = 해리슨 22판 23장. `outline.py --harrison h21` 로 그 장을 읽고 harrison-22 출처(verified: text)와 [[harrison-22: 장 p.N]] 을 단다",
   "content/concepts/dermatology/cn.derm.regressing-pigmented-lesion.biopsy-first.md: [WARN] outline 'h76' 는 혈액종양내과 의 자리인데 이 정리본의 과는 피부과 다",
@@ -57,8 +59,51 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
+  "응급의학과": {
+   "tried": 70,
+   "diagram_after_section": {
+    "u-cn-em-ards-lung-protective-ventilation#fig:f1": 5,
+    "u-cn-em-ards-lung-protective-ventilation": 19,
+    "u-cn-em-ards-lung-protective-ventilation#shrink": 1.0,
+    "u-cn-em-ards-lung-protective-ventilation#pad": 0,
+    "u-cn-em-ards-lung-protective-ventilation#col": true,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 16,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#shrink": 1.0,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#pad": 0,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#col": true,
+    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism": 13,
+    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism#shrink": 1.0,
+    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism#pad": 14,
+    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism#col": false
+   }
+  },
+  "피부과": {
+   "tried": 155,
+   "diagram_after_section": {
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 12,
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
+    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
+    "u-cn-derm-pityriasis-versicolor-treatment": 2,
+    "u-cn-derm-pityriasis-versicolor-treatment#shrink": 1.0,
+    "u-cn-derm-pityriasis-versicolor-treatment#pad": 0,
+    "u-cn-derm-pityriasis-versicolor-treatment#col": false,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 16,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 14,
+    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup": 17,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup#shrink": 1.0,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup#pad": 42,
+    "u-cn-derm-erythema-nodosum-underlying-cause-workup#col": false,
+    "u-cn-derm-sweet-syndrome-diagnosis": 2,
+    "u-cn-derm-sweet-syndrome-diagnosis#shrink": 1.0,
+    "u-cn-derm-sweet-syndrome-diagnosis#pad": 0,
+    "u-cn-derm-sweet-syndrome-diagnosis#col": false
+   }
+  },
   "순환기내과": {
-   "tried": 400,
+   "tried": 460,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -94,137 +139,62 @@
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#shrink": 1.0,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#pad": 0,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#col": false,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 15,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#pad": 0,
-    "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": true,
-    "u-cn-cardio-premature-ventricular-complex-ecg-recognition": 11,
-    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#shrink": 1.0,
-    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 14,
-    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#col": false,
+    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry": 12,
+    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#shrink": 1.0,
+    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#pad": 42,
+    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#col": false,
+    "u-cn-cardio-complete-av-block-permanent-pacemaker": 13,
+    "u-cn-cardio-complete-av-block-permanent-pacemaker#shrink": 0.88,
+    "u-cn-cardio-complete-av-block-permanent-pacemaker#pad": 0,
+    "u-cn-cardio-complete-av-block-permanent-pacemaker#col": false,
+    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation": 11,
+    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#shrink": 1.0,
+    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#pad": 28,
+    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#col": false,
     "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 0.76,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 0,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false
    }
-  },
-  "류마티스내과": {
-   "tried": 596,
-   "diagram_after_section": {
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#pad": 42,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#col": false,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor": 13,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#shrink": 1.0,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#pad": 28,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#col": false,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue": 12,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#shrink": 1.0,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#pad": 0,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#col": false,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis": 12,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#shrink": 1.0,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#pad": 0,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#col": false,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor": 14,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor#shrink": 1.0,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor#pad": 0,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor#col": true,
-    "u-cn-rheum-sjogren-sicca-workup": 7,
-    "u-cn-rheum-sjogren-sicca-workup#shrink": 1.0,
-    "u-cn-rheum-sjogren-sicca-workup#pad": 0,
-    "u-cn-rheum-sjogren-sicca-workup#col": false,
-    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri": 11,
-    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri#shrink": 1.0,
-    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri#pad": 0,
-    "u-cn-ortho-axial-spondyloarthritis-sacroiliac-mri#col": true,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa": 17,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#shrink": 0.88,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#pad": 0,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#col": false,
-    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy": 16,
-    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#shrink": 1.0,
-    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#pad": 0,
-    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#col": true,
-    "u-cn-rheum-behcet-clinical-diagnosis": 14,
-    "u-cn-rheum-behcet-clinical-diagnosis#shrink": 1.0,
-    "u-cn-rheum-behcet-clinical-diagnosis#pad": 42,
-    "u-cn-rheum-behcet-clinical-diagnosis#col": false,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis": 12,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#shrink": 1.0,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#pad": 0,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#col": false,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first": 13,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#shrink": 1.0,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#pad": 28,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#col": false,
-    "u-cn-rheum-cppd-crystal-diagnosis#fig:f1": 7,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 4,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#col": false,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 15,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": true
-   }
-  },
-  "호흡기내과": {
-   "tried": 38,
-   "diagram_after_section": {
-    "u-cn-pulm-methemoglobinemia-mechanism": 11,
-    "u-cn-pulm-methemoglobinemia-mechanism#shrink": 1.0,
-    "u-cn-pulm-methemoglobinemia-mechanism#pad": 0,
-    "u-cn-pulm-methemoglobinemia-mechanism#col": true,
-    "u-cn-pulm-hypoxemia-hypoventilation-normal-aa-gradient": 7,
-    "u-cn-pulm-hypoxemia-hypoventilation-normal-aa-gradient#shrink": 1.0,
-    "u-cn-pulm-hypoxemia-hypoventilation-normal-aa-gradient#pad": 0,
-    "u-cn-pulm-hypoxemia-hypoventilation-normal-aa-gradient#col": false,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures": 16,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#shrink": 1.0,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#pad": 14,
-    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#col": false
-   }
   }
  },
  "result": "ok",
- "finished": "2026-11-10T14:16:33+09:00",
+ "finished": "2026-11-11T11:38:43+09:00",
  "upload": {
   "result": "ok",
   "items": {
+   "응급의학과": {
+    "file": "MedKOS_학습서_응급의학과.pdf",
+    "status": "uploaded",
+    "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
+    "kept_id": true,
+    "md5": "4d42fc46bd61499dd1491370e743c629",
+    "archive": "MedKOS_학습서_응급의학과_v10_2026-11-11.pdf"
+   },
+   "피부과": {
+    "file": "MedKOS_학습서_피부과.pdf",
+    "status": "uploaded",
+    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "kept_id": true,
+    "md5": "9e89dd92da8a47578ce6f588c7eacd79",
+    "archive": "MedKOS_학습서_피부과_v16_2026-11-11.pdf"
+   },
    "순환기내과": {
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "83d6fb63fef15fa2aa5262fc33bc6309",
-    "archive": "MedKOS_학습서_순환기내과_v26_2026-11-10.pdf"
-   },
-   "류마티스내과": {
-    "file": "MedKOS_학습서_류마티스내과.pdf",
-    "status": "uploaded",
-    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "kept_id": true,
-    "md5": "d2e8fe5f94eb62a40dd0d5df9eda26e9",
-    "archive": "MedKOS_학습서_류마티스내과_v37_2026-11-10.pdf"
-   },
-   "호흡기내과": {
-    "file": "MedKOS_학습서_호흡기내과.pdf",
-    "status": "uploaded",
-    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "kept_id": true,
-    "md5": "50065a4d552263a543c94949d0d858bf",
-    "archive": "MedKOS_학습서_호흡기내과_v14_2026-11-10.pdf"
+    "md5": "626a6d7edd72101851d80bb16afef137",
+    "archive": "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "22acf784afe1dc330c785855430985b3"
+    "md5": "75fca841dee475b8d2aa07c5c6ccdc46"
    }
   },
-  "at": "2026-11-10T14:16:33+09:00"
+  "at": "2026-11-11T11:38:43+09:00"
  }
 }
