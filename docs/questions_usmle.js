@@ -32722,5 +32722,2309 @@ window.USMLE_QUESTIONS = [
    }
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0266",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pharmacology",
+  "subject_file": "Pharmacology",
+  "subtopic": "Nausea, Yellow-Tinged Vision and a Slow Irregular Pulse Two Weeks After a New Rhythm Drug in a 74-Year-Old Woman With Heart Failure",
+  "type": "Nausea, Yellow-Tinged Vision and a Slow Irregular Pulse Two Weeks After a New Rhythm Drug in a 74-Year-Old Woman With Heart Failure",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 74-year-old woman comes to the physician because of nausea, loss of appetite and fatigue for 5 days. She says that over the past 2 days, white objects have looked yellow to her. She has heart failure with reduced ejection fraction and permanent atrial fibrillation. Her medications for 3 years have been carvedilol, furosemide, apixaban and digoxin 0.125 mg daily, and she has taken them as prescribed. Two weeks ago, amiodarone was added because of episodes of rapid ventricular rate. Her vital signs are shown. She is alert and oriented. There is no jugular venous distention, the lungs are clear to auscultation and there is trace ankle edema. An ECG shows atrial fibrillation with a slow ventricular response and scooped ST-segment depression in the lateral leads. Laboratory results are shown.",
+  "question": "Which of the following best explains the change in this patient's serum drug concentration?",
+  "options": [
+   "Induction of CYP3A4 that converts the drug to an active metabolite",
+   "Displacement of the drug from its binding sites on plasma albumin",
+   "Low extracellular potassium that enhances binding to Na+/K+-ATPase",
+   "Inhibition of P-glycoprotein–mediated renal and intestinal efflux",
+   "Inhibition of CYP2C9 that slows hepatic oxidative metabolism"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계. ① 황시증·위장 증상·느린 심실 반응 + digoxin 3.1 → digoxin 독성. ② 용량·복약·신기능(크레아티닌 1.0, 변화 없음)이 그대로이고 2주 전 amiodarone 추가 → 상호작용으로 농도 상승. ③ digoxin 은 대사보다 P-glycoprotein 으로 신세뇨관 분비·장 배출 → amiodarone 의 P-gp 억제가 청소율을 낮춘다.\n- 오답감별:\n  - (A) CYP3A4 유도는 농도를 낮추는 쪽이고, digoxin 에는 의미 있는 활성 대사물이 없다. amiodarone 은 유도제가 아니라 억제제다.\n  - (B) digoxin 은 단백 결합률이 낮고(약 25 %) 알부민도 정상이다 — 결합 치환으로 총 농도가 오르지는 않는다.\n  - (C) 저칼륨은 독성을 키우는 요인이지만 농도를 올리지 않는다. 이 환자는 칼륨 5.4 로 높다(Na+/K+-ATPase 억제의 결과).\n  - (E) amiodarone 의 CYP2C9 억제는 warfarin 상호작용의 기전이다 — digoxin 은 거의 대사되지 않는다.\n- 임상핵심: digoxin + amiodarone·verapamil·quinidine·clarithromycin → P-gp 억제 → digoxin 농도 상승 — 시작할 때 digoxin 을 줄이고 농도를 본다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 71장 Principles of Clinical Pharmacology; Harrison's Principles of Internal Medicine, 22e. 265장 Heart Failure: Management. Basic & Clinical Pharmacology, 15e.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 황시증·위장 증상·느린 심실 반응 + digoxin 3.1 → digoxin 독성. ② 용량·복약·신기능(크레아티닌 1.0, 변화 없음)이 그대로이고 2주 전 amiodarone 추가 → 상호작용으로 농도 상승. ③ digoxin 은 대사보다 P-glycoprotein 으로 신세뇨관 분비·장 배출 → amiodarone 의 P-gp 억제가 청소율을 낮춘다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) CYP3A4 유도는 농도를 낮추는 쪽이고, digoxin 에는 의미 있는 활성 대사물이 없다. amiodarone 은 유도제가 아니라 억제제다.\n(B) digoxin 은 단백 결합률이 낮고(약 25 %) 알부민도 정상이다 — 결합 치환으로 총 농도가 오르지는 않는다.\n(C) 저칼륨은 독성을 키우는 요인이지만 농도를 올리지 않는다. 이 환자는 칼륨 5.4 로 높다(Na+/K+-ATPase 억제의 결과).\n(E) amiodarone 의 CYP2C9 억제는 warfarin 상호작용의 기전이다 — digoxin 은 거의 대사되지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "digoxin + amiodarone·verapamil·quinidine·clarithromycin → P-gp 억제 → digoxin 농도 상승 — 시작할 때 digoxin 을 줄이고 농도를 본다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 71장 Principles of Clinical Pharmacology; Harrison's Principles of Internal Medicine, 22e. 265장 Heart Failure: Management. Basic & Clinical Pharmacology, 15e."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 71장 Principles of Clinical Pharmacology; Harrison's Principles of Internal Medicine, 22e. 265장 Heart Failure: Management)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "54 /min, irregular"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "112/68 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum sodium",
+    "value": "137 mEq/L",
+    "ref": "135–145 mEq/L"
+   },
+   {
+    "name": "Serum potassium",
+    "value": "5.4 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Serum magnesium",
+    "value": "2.0 mg/dL",
+    "ref": "1.7–2.2 mg/dL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "1.0 mg/dL (1.0 mg/dL 3 months ago)",
+    "ref": "0.6–1.1 mg/dL"
+   },
+   {
+    "name": "Serum albumin",
+    "value": "3.9 g/dL",
+    "ref": "3.5–5.0 g/dL"
+   },
+   {
+    "name": "Serum digoxin",
+    "value": "3.1 ng/mL",
+    "ref": "0.5–2.0 ng/mL"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 71장 Principles of Clinical Pharmacology",
+    "Harrison's Principles of Internal Medicine, 22e. 265장 Heart Failure: Management",
+    "Katzung BG, Vanderah TW, eds. Basic & Clinical Pharmacology, 15e. McGraw Hill; 2021. Drugs used in heart failure."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "신기능이 그대로인데 amiodarone 시작 뒤 digoxin 농도가 오른 것은 P-glycoprotein 억제로 digoxin 의 신세뇨관 분비·장 배출이 줄었기 때문이다.",
+   "rival": [
+    "E",
+    "C"
+   ],
+   "discriminator": "amiodarone 의 CYP2C9 억제(E)는 warfarin 상호작용이고 digoxin 은 거의 대사되지 않는다. 저칼륨(C)은 독성을 키우지만 이 환자는 칼륨이 5.4 로 높다 — 농도 자체를 올린 것은 P-gp 억제다.",
+   "steps": 3,
+   "chain": [
+    "황시증 + 메스꺼움 + 느린 심실 반응 + digoxin 3.1 ng/mL → digoxin 독성",
+    "같은 용량 3년 + 크레아티닌 변화 없음 + 2주 전 amiodarone 추가 → 약물 상호작용으로 농도 상승",
+    "digoxin 은 대사보다 P-gp 로 배설 → amiodarone 의 P-gp 억제 → 신·장 배출 감소"
+   ],
+   "key": [
+    {
+     "item": "white objects have looked yellow to her",
+     "why": "황시증 — digoxin 독성의 시각 증상",
+     "also": []
+    },
+    {
+     "item": "Serum digoxin",
+     "why": "3.1 ng/mL — 치료 범위를 넘는다",
+     "also": []
+    },
+    {
+     "item": "Two weeks ago, amiodarone was added",
+     "why": "농도를 올린 새 변수 — P-gp 억제제",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum creatinine",
+     "why": "3개월 전과 같다 — 신기능 저하로 청소율이 떨어진 것이 아니다",
+     "also": []
+    },
+    {
+     "item": "Serum potassium",
+     "why": "5.4 — 저칼륨혈증(C)이 아니라 Na+/K+-ATPase 억제에 따른 고칼륨이다",
+     "also": []
+    },
+    {
+     "item": "Serum albumin",
+     "why": "정상 — 단백 결합 치환(B)이 설명이 되기 어렵다",
+     "also": []
+    },
+    {
+     "item": "she has taken them as prescribed",
+     "why": "과다 복용이 아니다 — 같은 용량에서 농도가 올랐다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "scooped ST-segment depression in the lateral leads",
+     "why": "digoxin 효과(복용만 해도 나타남) — 독성의 증거는 아니다",
+     "also": []
+    }
+   ],
+   "summary": "황시증·위장 증상·느린 심실 반응과 높은 digoxin 농도는 독성이다. 용량·신기능이 그대로이고 바뀐 것은 amiodarone 추가뿐이므로, P-glycoprotein 억제로 digoxin 배설이 줄어든 상호작용이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 환자가 digoxin 이 아니라 warfarin 을 복용 중이고 amiodarone 시작 뒤 INR 이 올랐다면, CYP2C9 억제(E)가 기전이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.pharm.digoxin-toxicity.p-glycoprotein-interaction",
+  "distractors": {
+   "E": {
+    "tempting": "amiodarone 은 대표적인 CYP 억제제라 농도 상승을 대사 억제로 설명하고 싶어진다.",
+    "answer_first": "digoxin 은 거의 대사되지 않고 콩팥으로 그대로 나간다 — 그 분비를 맡는 것이 P-glycoprotein 이고 amiodarone 이 이를 억제한다.",
+    "discriminator": "배설 경로: digoxin = 신세뇨관 P-gp 분비, warfarin = CYP2C9 대사.",
+    "when_right": "상호작용 대상이 warfarin(CYP2C9 기질)일 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "furosemide 를 쓰는 심부전 환자 — 저칼륨혈증이 digoxin 독성의 흔한 유발 요인이다.",
+    "answer_first": "저칼륨은 같은 농도에서 독성을 키우지만 농도를 올리지는 않는다. 이 환자는 칼륨이 5.4 로 오히려 높다.",
+    "discriminator": "「Serum potassium」 5.4 mEq/L — 고칼륨(독성의 결과), 그리고 농도 자체가 3.1 로 올라 있다.",
+    "when_right": "농도는 치료 범위인데 이뇨제로 칼륨이 낮아져 독성 증상이 생겼을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0267",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "A Liver Abscess, Two Drained Neck Nodes and a Perianal Abscess by Age 3 in a Boy Whose Maternal Uncle Died of a Fungal Pneumonia",
+  "type": "A Liver Abscess, Two Drained Neck Nodes and a Perianal Abscess by Age 3 in a Boy Whose Maternal Uncle Died of a Fungal Pneumonia",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 3-year-old boy is brought to the emergency department because of fever and right upper abdominal pain for 6 days. At 14 months of age, he had cervical lymphadenitis that required surgical drainage and grew Serratia marcescens; at 2 years of age, a second neck node and a perianal abscess were drained. His umbilical cord separated at 9 days of age. He has had no eczema. His immunizations are up to date. His mother's brother died at age 19 of a pneumonia caused by a mold. His vital signs are shown. Height and weight are at the 15th percentile. There is a healed scar on each side of the neck. The liver edge is tender and is palpated 3 cm below the right costal margin. Abdominal CT shows a 4-cm multiloculated hepatic abscess. Percutaneous drainage yields thick yellow pus. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate test to confirm the underlying disorder?",
+  "options": [
+   "Flow cytometry for CD18 expression on neutrophils",
+   "Dihydrorhodamine 123 flow cytometry of stimulated neutrophils",
+   "Serum IgG subclass concentrations",
+   "Flow cytometry for CD19-positive B cells",
+   "Serum IgE concentration"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계. ① S. aureus 간농양·Serratia 림프절염·항문 주위 농양 반복 + 외삼촌 곰팡이 폐렴 → 카탈라아제 양성균에 취약한 식세포 살균 결손(X 연관). ② 탯줄 9일 분리·고름 형성·습진 없음·면역글로불린 정상 → LAD·고-IgE·체액 결손 가능성 낮음 → CGD. ③ NADPH oxidase 결손 → DHR 123 유세포 검사로 산화 폭발이 없음을 확인.\n- 오답감별:\n  - (A) CD18 유세포는 LAD-1 검사다 — 탯줄이 9일에 떨어졌고 고름이 형성돼 호중구 이동은 정상이다.\n  - (C) IgG 아형 결핍은 피막 세균의 부비동·폐 감염을 일으키고 간농양·Serratia 는 설명하지 못한다. IgG 는 오히려 높다.\n  - (D) B 세포 수(CD19)는 X 연관 무감마글로불린혈증 검사다 — 면역글로불린이 정상~높아 맞지 않는다.\n  - (E) 혈청 IgE 는 고-IgE 증후군 검사다 — 습진이 없고, 원인균·가족력은 CGD 쪽이다.\n- 임상핵심: 카탈라아제 양성균의 반복 심부 농양 + 고름은 잘 생김 → CGD → DHR 123 유세포(산화 폭발 없음).\n- 출처: Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes; Harrison's Principles of Internal Medicine, 22e. 362장 Primary Immune Deficiency Diseases.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① S. aureus 간농양·Serratia 림프절염·항문 주위 농양 반복 + 외삼촌 곰팡이 폐렴 → 카탈라아제 양성균에 취약한 식세포 살균 결손(X 연관). ② 탯줄 9일 분리·고름 형성·습진 없음·면역글로불린 정상 → LAD·고-IgE·체액 결손 가능성 낮음 → CGD. ③ NADPH oxidase 결손 → DHR 123 유세포 검사로 산화 폭발이 없음을 확인."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) CD18 유세포는 LAD-1 검사다 — 탯줄이 9일에 떨어졌고 고름이 형성돼 호중구 이동은 정상이다.\n(C) IgG 아형 결핍은 피막 세균의 부비동·폐 감염을 일으키고 간농양·Serratia 는 설명하지 못한다. IgG 는 오히려 높다.\n(D) B 세포 수(CD19)는 X 연관 무감마글로불린혈증 검사다 — 면역글로불린이 정상~높아 맞지 않는다.\n(E) 혈청 IgE 는 고-IgE 증후군 검사다 — 습진이 없고, 원인균·가족력은 CGD 쪽이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "카탈라아제 양성균의 반복 심부 농양 + 고름은 잘 생김 → CGD → DHR 123 유세포(산화 폭발 없음)."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes; Harrison's Principles of Internal Medicine, 22e. 362장 Primary Immune Deficiency Diseases."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes; Harrison's Principles of Internal Medicine, 22e. 362장 Primary Immune Deficiency Diseases)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "39.1 °C (102.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "134 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "28 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "96/58 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "17,600 /mm3",
+    "ref": "5,500–15,500 /mm3 (age 3)"
+   },
+   {
+    "name": "Segmented neutrophils",
+    "value": "74%",
+    "ref": "30–60%"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "11.2 g/dL",
+    "ref": "11.0–14.0 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "412,000 /mm3",
+    "ref": "150,000–450,000 /mm3"
+   },
+   {
+    "name": "Serum IgG",
+    "value": "1,420 mg/dL",
+    "ref": "450–1,200 mg/dL"
+   },
+   {
+    "name": "Serum IgA",
+    "value": "138 mg/dL",
+    "ref": "20–150 mg/dL"
+   },
+   {
+    "name": "Serum IgM",
+    "value": "96 mg/dL",
+    "ref": "40–180 mg/dL"
+   },
+   {
+    "name": "Liver abscess aspirate culture",
+    "value": "Staphylococcus aureus",
+    "ref": "No growth"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "반복 세균·진균 감염 — 식세포 결손 감별\n─────────────────────────────\nCGD: 카탈라아제 양성균(S. aureus·Serratia·Burkholderia·Nocardia·Aspergillus), 육아종·농양 → DHR 123 유세포(산화 폭발 없음)\nLAD-1: 탯줄 분리 지연·고름 없음·호중구 극도 증가 → CD18 유세포\n고-IgE(STAT3): 습진·냉농양·폐기류·유치 잔존 → IgE·STAT3\n체액 결손(XLA 등): 6개월 뒤 피막 세균 부비동·폐 감염, 면역글로불린 낮음 → 면역글로불린·CD19",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 67장 Disorders of Granulocytes and Monocytes",
+    "Harrison's Principles of Internal Medicine, 22e. 362장 Primary Immune Deficiency Diseases"
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "카탈라아제 양성균의 반복 심부 농양과 X 연관 가족력은 식세포 살균 결손(CGD)을 가리키고, 확진은 호중구 산화 폭발을 보는 DHR 유세포 검사다.",
+   "rival": [
+    "A",
+    "E"
+   ],
+   "discriminator": "LAD(A)는 탯줄 분리 지연·고름 없는 감염·극심한 호중구 증가가 특징인데 탯줄은 9일에 떨어졌고 고름이 나왔다. 고-IgE 증후군(E)은 습진·냉농양·폐기류가 특징인데 습진이 없다.",
+   "steps": 3,
+   "chain": [
+    "S. aureus 간농양 + Serratia 림프절염 + 항문 주위 농양 반복 → 카탈라아제 양성균에 취약한 식세포 살균 결손",
+    "탯줄 9일 분리 + 고름 형성 + 습진 없음 + 면역글로불린 정상 → LAD·고-IgE·체액 면역 결손 가능성 낮음 → CGD",
+    "CGD = NADPH oxidase 결손 → 호중구 산화 폭발 검사(DHR 123 유세포)로 확진"
+   ],
+   "key": [
+    {
+     "item": "grew Serratia marcescens",
+     "why": "카탈라아제 양성균 — CGD 의 전형 원인균",
+     "also": []
+    },
+    {
+     "item": "Liver abscess aspirate culture",
+     "why": "S. aureus 간농양 — CGD 에서 흔하다",
+     "also": []
+    },
+    {
+     "item": "His mother's brother died at age 19 of a pneumonia caused by a mold",
+     "why": "X 연관 유전 + 아스페르길루스 — CGD 사망의 주원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "His umbilical cord separated at 9 days of age",
+     "why": "정상 분리 — LAD(A)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Percutaneous drainage yields thick yellow pus",
+     "why": "호중구가 감염 부위로 이동한다 — 부착 결손(LAD)과 맞지 않는다",
+     "also": []
+    },
+    {
+     "item": "He has had no eczema",
+     "why": "고-IgE 증후군(E)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum IgG",
+     "why": "정상~높음 — 체액 면역 결손(C·D)과 맞지 않는다",
+     "also": []
+    },
+    {
+     "item": "Segmented neutrophils",
+     "why": "74 % — 호중구는 수와 이동이 보존된다: 극심한 호중구 증가의 LAD 와 다르다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Height and weight are at the 15th percentile",
+     "why": "반복 감염 아동의 흔한 성장 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "카탈라아제 양성균(S. aureus·Serratia)의 반복 심부 농양과 외삼촌의 곰팡이 폐렴은 X 연관 CGD 를 가리킨다. 정상 탯줄 분리·고름 형성·습진 없음·정상 면역글로불린이 다른 면역 결손을 낮추고, 확진은 DHR 유세포 검사다.",
+   "switch": {
+    "choice": "A",
+    "condition": "탯줄이 4주 넘게 떨어지지 않았고 감염 부위에 고름이 없으며 호중구가 극도로 높았다면 LAD 를 보는 CD18 유세포 검사(A)가 맞다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.immuno.chronic-granulomatous-disease.dhr-flow-cytometry",
+  "distractors": {
+   "A": {
+    "tempting": "반복 세균 감염과 호중구 증가 — 식세포 결손이라면 LAD 를 먼저 떠올린다.",
+    "answer_first": "LAD 는 호중구가 혈관 밖으로 나오지 못해 고름이 없고 탯줄이 늦게 떨어진다. 이 아이는 고름이 많고 탯줄은 9일에 떨어졌다 — 이동은 되지만 죽이지 못하는 CGD 다.",
+    "discriminator": "「His umbilical cord separated at 9 days of age」 + 「thick yellow pus」.",
+    "when_right": "탯줄 분리 지연·고름 없는 괴사성 감염·심한 호중구 증가가 있을 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "반복 포도알균 농양 — 고-IgE(Job) 증후군의 「냉농양」이 떠오른다.",
+    "answer_first": "고-IgE 증후군은 신생아기부터 습진, 냉농양, 폐렴 뒤 폐기류, 유치 잔존이 함께 온다. 습진이 없고 Serratia·곰팡이 가족력은 CGD 쪽이다.",
+    "discriminator": "「He has had no eczema」 + Serratia(카탈라아제 양성 그람 음성균).",
+    "when_right": "습진·냉농양·폐기류·특징적 얼굴이 함께 있을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0268",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Poor Feeding, Fast Breathing and Increasing Sleepiness on the Third Day of Life in a Boy Whose Maternal Uncle Died in His First Week",
+  "type": "Poor Feeding, Fast Breathing and Increasing Sleepiness on the Third Day of Life in a Boy Whose Maternal Uncle Died in His First Week",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 3-day-old boy is brought to the emergency department because of poor feeding, vomiting and increasing sleepiness since yesterday. He was born at term after an uncomplicated pregnancy and vaginal delivery and breastfed well for the first day. His mother's only brother died in the first week of life of an illness that was never diagnosed. His vital signs are shown. He is lethargic and responds only to vigorous stimulation. Breathing is rapid and unlabored. The anterior fontanelle is full. Muscle tone is decreased. The liver is palpated 2 cm below the right costal margin. There is no rash or jaundice. Laboratory results are shown.",
+  "question": "A deficiency of which of the following enzymes is the most likely cause of this patient's condition?",
+  "options": [
+   "Carbamoyl phosphate synthetase I",
+   "Argininosuccinate synthetase",
+   "Propionyl-CoA carboxylase",
+   "Uridine monophosphate synthase",
+   "Ornithine transcarbamylase"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계. ① 신생아 뇌병증 + 암모니아 410 + 호흡성 알칼리증, 음이온 차·케톤·혈당 정상 → 유기산혈증이 아닌 요소 회로 이상. ② 시트룰린 매우 낮음 → CPS I 또는 OTC(ASS 아님). ③ orotic acid 크게 증가 + 외삼촌의 신생아 사망(X 연관) → OTC 결손.\n- 오답감별:\n  - (A) CPS I 결손도 시트룰린이 낮지만 carbamoyl phosphate 가 만들어지지 않아 orotic acid 가 오르지 않는다. 상염색체 열성이다.\n  - (B) argininosuccinate synthetase 결손(시트룰린혈증)은 시트룰린이 크게 오른다 — 여기는 매우 낮다.\n  - (C) propionyl-CoA carboxylase 결손(propionic acidemia)도 신생아 고암모니아혈증을 일으키지만 음이온 차 대사성 산증·케톤증이 동반된다 — 여기는 호흡성 알칼리증이다.\n  - (D) UMP synthase 결손은 orotic acid 가 오르지만 암모니아는 정상이고 거대적아구성 빈혈이 주 소견이다.\n- 임상핵심: 고암모니아혈증 + 산증 없음 → 요소 회로. 시트룰린 낮음 + orotic acid 높음 = OTC, orotic acid 정상 = CPS I.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 431장 Inherited Disorders of Amino Acid Metabolism in Adults; Nelson Textbook of Pediatrics, 22e(Urea cycle disorders).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 신생아 뇌병증 + 암모니아 410 + 호흡성 알칼리증, 음이온 차·케톤·혈당 정상 → 유기산혈증이 아닌 요소 회로 이상. ② 시트룰린 매우 낮음 → CPS I 또는 OTC(ASS 아님). ③ orotic acid 크게 증가 + 외삼촌의 신생아 사망(X 연관) → OTC 결손."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) CPS I 결손도 시트룰린이 낮지만 carbamoyl phosphate 가 만들어지지 않아 orotic acid 가 오르지 않는다. 상염색체 열성이다.\n(B) argininosuccinate synthetase 결손(시트룰린혈증)은 시트룰린이 크게 오른다 — 여기는 매우 낮다.\n(C) propionyl-CoA carboxylase 결손(propionic acidemia)도 신생아 고암모니아혈증을 일으키지만 음이온 차 대사성 산증·케톤증이 동반된다 — 여기는 호흡성 알칼리증이다.\n(D) UMP synthase 결손은 orotic acid 가 오르지만 암모니아는 정상이고 거대적아구성 빈혈이 주 소견이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "고암모니아혈증 + 산증 없음 → 요소 회로. 시트룰린 낮음 + orotic acid 높음 = OTC, orotic acid 정상 = CPS I."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 431장 Inherited Disorders of Amino Acid Metabolism in Adults; Nelson Textbook of Pediatrics, 22e(Urea cycle disorders)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 431장 Inherited Disorders of Amino Acid Metabolism in Adults; Nelson Textbook of Pediatrics, 22e — Urea cycle disorders)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.7 °C (98.1 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "162 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "68 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "70/42 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Plasma ammonia",
+    "value": "410 μmol/L",
+    "ref": "< 100 μmol/L (neonate)"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "82 mg/dL",
+    "ref": "50–90 mg/dL (neonate)"
+   },
+   {
+    "name": "Serum sodium",
+    "value": "138 mEq/L",
+    "ref": "135–145 mEq/L"
+   },
+   {
+    "name": "Serum chloride",
+    "value": "104 mEq/L",
+    "ref": "98–106 mEq/L"
+   },
+   {
+    "name": "Serum bicarbonate",
+    "value": "22 mEq/L",
+    "ref": "18–26 mEq/L"
+   },
+   {
+    "name": "Venous pH",
+    "value": "7.51",
+    "ref": "7.32–7.42"
+   },
+   {
+    "name": "Venous PCO2",
+    "value": "27 mm Hg",
+    "ref": "40–50 mm Hg"
+   },
+   {
+    "name": "Urine ketones",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Plasma citrulline",
+    "value": "3 μmol/L",
+    "ref": "10–45 μmol/L"
+   },
+   {
+    "name": "Plasma glutamine",
+    "value": "1,480 μmol/L",
+    "ref": "380–800 μmol/L"
+   },
+   {
+    "name": "Urine orotic acid",
+    "value": "Markedly increased",
+    "ref": "Normal for age"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "신생아 고암모니아혈증 감별\n─────────────────────────────\n대사성 산증·케톤·음이온 차 증가 → 유기산혈증(propionic·methylmalonic)\n산증 없음·호흡성 알칼리증 → 요소 회로 이상\n  시트룰린 낮음 + orotic acid 증가 → OTC(X 연관)\n  시트룰린 낮음 + orotic acid 정상·낮음 → CPS I(또는 NAGS)\n  시트룰린 매우 높음 → ASS(시트룰린혈증 1형)\n  시트룰린 중등도 증가 + argininosuccinic acid → ASL\n고암모니아 없이 orotic acid + 거대적아구성 빈혈 → UMP synthase 결손",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 431장 Inherited Disorders of Amino Acid Metabolism in Adults",
+    "Kliegman RM, et al., eds. Nelson Textbook of Pediatrics, 22e. Elsevier; 2024. Urea cycle disorders."
+   ]
+  },
+  "design": {
+   "target": "감별",
+   "decision": "신생아 고암모니아혈증 + 호흡성 알칼리증 + 낮은 시트룰린 + 높은 orotic acid 는 OTC 결손이다(CPS I 결손은 orotic acid 가 오르지 않는다).",
+   "rival": [
+    "A",
+    "D"
+   ],
+   "discriminator": "CPS I 결손(A)도 시트룰린이 낮지만 carbamoyl phosphate 가 없어 orotic acid 가 오르지 않는다. UMP synthase 결손(D)은 orotic acid 가 오르지만 암모니아는 정상이다.",
+   "steps": 3,
+   "chain": [
+    "신생아 뇌병증 + 암모니아 410 + 호흡성 알칼리증 + 음이온 차·케톤 정상 → 유기산혈증이 아닌 요소 회로 이상",
+    "시트룰린 매우 낮음 → 시트룰린 생성 전 단계(CPS I 또는 OTC) 결손 — ASS 아님",
+    "소변 orotic acid 크게 증가(+ 외삼촌 신생아 사망, X 연관) → OTC 결손"
+   ],
+   "key": [
+    {
+     "item": "Plasma ammonia",
+     "why": "410 μmol/L — 신생아 고암모니아혈증",
+     "also": []
+    },
+    {
+     "item": "Venous PCO2",
+     "why": "27 — 고암모니아혈증의 호흡 자극에 따른 호흡성 알칼리증",
+     "also": []
+    },
+    {
+     "item": "Plasma citrulline",
+     "why": "매우 낮음 — 근위부(CPS I·OTC) 결손, ASS(B) 결손이면 크게 높다",
+     "also": []
+    },
+    {
+     "item": "Urine orotic acid",
+     "why": "크게 증가 — carbamoyl phosphate 가 피리미딘 합성으로 넘친다 → OTC, CPS I(A) 아님",
+     "also": []
+    },
+    {
+     "item": "His mother's only brother died in the first week of life",
+     "why": "모계 남성 사망 — X 연관(OTC) 유전과 맞다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum bicarbonate",
+     "why": "22 · 음이온 차 12 — 유기산혈증(C)의 대사성 산증이 없다",
+     "also": []
+    },
+    {
+     "item": "Urine ketones",
+     "why": "음성 — 유기산혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum glucose",
+     "why": "정상 — 저혈당 뇌병증이 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "breastfed well for the first day",
+     "why": "단백 섭취 시작 뒤 증상 — 요소 회로 이상의 전형적 시간 경과",
+     "also": []
+    }
+   ],
+   "summary": "신생아 고암모니아혈증에 호흡성 알칼리증이 있고 산증·케톤이 없어 요소 회로 이상이다. 시트룰린이 낮아 근위부 결손이고, orotic acid 가 크게 올라 CPS I 이 아니라 OTC 결손이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 신생아에서 시트룰린이 낮은데 소변 orotic acid 가 정상~낮다면 carbamoyl phosphate 가 만들어지지 않는 CPS I 결손(A)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.biochem.urea-cycle-disorders.otc-vs-cps1-orotic-acid",
+  "distractors": {
+   "A": {
+    "tempting": "고암모니아혈증 + 낮은 시트룰린 — 요소 회로 첫 효소 CPS I 결손도 똑같이 보인다.",
+    "answer_first": "CPS I 이 막히면 carbamoyl phosphate 자체가 없어 orotic acid 가 오르지 않는다. orotic acid 가 크게 오른 것은 carbamoyl phosphate 가 OTC 앞에서 쌓였다는 뜻이다.",
+    "discriminator": "「Urine orotic acid」 크게 증가.",
+    "when_right": "시트룰린이 낮고 orotic acid 가 정상~낮을 때.",
+    "split": ""
+   },
+   "D": {
+    "tempting": "orotic acid 증가 — 「orotic aciduria」라는 이름의 병이 떠오른다.",
+    "answer_first": "UMP synthase 결손은 피리미딘 합성 장애로 거대적아구성 빈혈·성장 지연을 일으키고 암모니아는 정상이다. 이 아이는 암모니아 410 이다.",
+    "discriminator": "「Plasma ammonia」 410 μmol/L — orotic acid 증가 + 고암모니아혈증 = OTC.",
+    "when_right": "고암모니아혈증 없이 orotic acid 증가 + 엽산·B12 에 반응하지 않는 거대적아구성 빈혈일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0269",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Coughing Fits That End in Vomiting and Turning Blue, No Fever and a Leukocyte Count of 42,000 in a 2-Month-Old Girl Whose Brother Has Coughed for 3 Weeks",
+  "type": "Coughing Fits That End in Vomiting and Turning Blue, No Fever and a Leukocyte Count of 42,000 in a 2-Month-Old Girl Whose Brother Has Coughed for 3 Weeks",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 2-month-old girl is brought to the emergency department because of coughing spells for 10 days. The cough began with a runny nose and has become worse; during the spells she coughs many times without catching her breath, her face turns blue, and the spells often end with vomiting. Between spells she feeds and appears comfortable. She has not had fever. She has not yet received any immunizations; her 2-month visit is scheduled for next week. Her 9-year-old brother has had a cough for 3 weeks. Her vital signs are shown; oxygen saturation is 97% on room air between spells. During the examination, she has a coughing spell with perioral cyanosis lasting 40 seconds. There are petechiae over the forehead. The lungs are clear between spells. Laboratory results are shown. A chest x-ray shows no infiltrates.",
+  "question": "The marked increase in this patient's leukocyte count is most likely caused by which of the following actions of a bacterial toxin?",
+  "options": [
+   "ADP-ribosylation of Gi proteins, blocking chemokine signals for lymphocytes to leave the blood",
+   "ADP-ribosylation of Gs proteins, locking adenylate cyclase in the active state",
+   "Calmodulin-activated adenylate cyclase entering phagocytes and raising their cAMP",
+   "Cleavage of 28S ribosomal RNA in the 60S subunit, halting host protein synthesis",
+   "Cross-linking of MHC class II molecules with T-cell receptors, driving polyclonal T-cell proliferation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계. ① 예방접종 전 영아 + 발작성 기침·청색증·기침 뒤 구토 + 무열 + 형 3주 기침 → 백일해. ② 백혈구 42,000 · 작고 성숙한 림프구 · 폐 깨끗 → 림프구 재분포(증식·감염 반응 아님). ③ 백일해 독소 → Gi ADP-리보실화 → 케모카인 수용체 신호 차단 → 림프구가 혈중에 머묾.\n- 오답감별:\n  - (B) Gs ADP-리보실화는 콜레라·장독소성 대장균 이열성 독소다 — 백일해 독소는 Gi 를 표적으로 한다.\n  - (C) 백일해의 adenylate cyclase toxin 은 실제 독력 인자로 식세포의 살균을 떨어뜨리지만, 림프구 증가를 일으키지는 않는다.\n  - (D) 28S rRNA 절단은 시가 독소·시가 유사 독소의 기전이다 — 출혈성 설사·용혈성 요독 증후군과 연결된다.\n  - (E) 초항원은 다클론 T 세포 증식과 독소 쇼크(고열·저혈압)를 일으킨다 — 열이 없고 림프구가 성숙해 증식과 맞지 않는다.\n- 임상핵심: 백일해 영아의 극심한 림프구 증가 = 백일해 독소의 Gi ADP-리보실화 → 림프구 귀소 차단(재분포). 콜레라 = Gs.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 165장 Pertussis and Other Bordetella Infections.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 예방접종 전 영아 + 발작성 기침·청색증·기침 뒤 구토 + 무열 + 형 3주 기침 → 백일해. ② 백혈구 42,000 · 작고 성숙한 림프구 · 폐 깨끗 → 림프구 재분포(증식·감염 반응 아님). ③ 백일해 독소 → Gi ADP-리보실화 → 케모카인 수용체 신호 차단 → 림프구가 혈중에 머묾."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) Gs ADP-리보실화는 콜레라·장독소성 대장균 이열성 독소다 — 백일해 독소는 Gi 를 표적으로 한다.\n(C) 백일해의 adenylate cyclase toxin 은 실제 독력 인자로 식세포의 살균을 떨어뜨리지만, 림프구 증가를 일으키지는 않는다.\n(D) 28S rRNA 절단은 시가 독소·시가 유사 독소의 기전이다 — 출혈성 설사·용혈성 요독 증후군과 연결된다.\n(E) 초항원은 다클론 T 세포 증식과 독소 쇼크(고열·저혈압)를 일으킨다 — 열이 없고 림프구가 성숙해 증식과 맞지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "백일해 영아의 극심한 림프구 증가 = 백일해 독소의 Gi ADP-리보실화 → 림프구 귀소 차단(재분포). 콜레라 = Gs."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 165장 Pertussis and Other Bordetella Infections."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 165장 Pertussis and Other Bordetella Infections)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.2 °C (99.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "148 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "44 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "84/52 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "42,000 /mm3",
+    "ref": "5,000–19,500 /mm3 (age 2 months)"
+   },
+   {
+    "name": "Lymphocytes",
+    "value": "78%",
+    "ref": "40–70%"
+   },
+   {
+    "name": "Segmented neutrophils",
+    "value": "18%",
+    "ref": "15–35%"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "10.4 g/dL",
+    "ref": "9.0–14.0 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "520,000 /mm3",
+    "ref": "150,000–450,000 /mm3"
+   },
+   {
+    "name": "Peripheral blood smear",
+    "value": "Small, mature-appearing lymphocytes; no blasts",
+    "ref": "Normal morphology"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 165장 Pertussis and Other Bordetella Infections"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "백일해 영아의 림프구 증가는 백일해 독소가 Gi 단백을 ADP-리보실화해 케모카인 수용체 신호를 막아 림프구가 혈액 밖으로 나가지 못하기 때문이다(증식이 아니다).",
+   "rival": [
+    "B",
+    "E"
+   ],
+   "discriminator": "Gs ADP-리보실화(B)는 콜레라 독소다 — 백일해 독소의 표적은 Gi 다. 초항원(E)은 다클론 T 세포 증식과 쇼크를 일으키는데, 이 아이의 림프구는 작고 성숙해 재분포를 시사하며 열·저혈압이 없다.",
+   "steps": 3,
+   "chain": [
+    "예방접종 전 영아 + 몰아치는 기침 발작·청색증·기침 뒤 구토 + 열 없음 + 형 3주 기침 → 백일해",
+    "백혈구 42,000 · 작고 성숙한 림프구 + 폐 깨끗 → 감염 반응 호중구 증가나 증식이 아닌 림프구 재분포",
+    "백일해 독소 → Gi ADP-리보실화 → 케모카인 수용체 신호 차단 → 림프구가 혈중에 머묾"
+   ],
+   "key": [
+    {
+     "item": "the spells often end with vomiting",
+     "why": "기침 뒤 구토 — 백일해 경해기",
+     "also": []
+    },
+    {
+     "item": "She has not yet received any immunizations",
+     "why": "예방접종 전 영아 — 중증 백일해 고위험",
+     "also": []
+    },
+    {
+     "item": "Her 9-year-old brother has had a cough for 3 weeks",
+     "why": "가족 내 지속 기침 — 흔한 전파원",
+     "also": []
+    },
+    {
+     "item": "Lymphocytes",
+     "why": "78 % — 림프구 우세 백혈구 증가",
+     "also": []
+    },
+    {
+     "item": "Peripheral blood smear",
+     "why": "작고 성숙한 림프구·모세포 없음 — 증식(백혈병·초항원)보다 재분포",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has not had fever",
+     "why": "세균성 폐렴·초항원 독소 질환의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "A chest x-ray shows no infiltrates",
+     "why": "폐렴 침윤 없음 — 호중구성 감염 반응이 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "There are petechiae over the forehead",
+     "why": "기침 발작의 정맥압 상승 — 혈소판은 오히려 높다",
+     "also": []
+    }
+   ],
+   "summary": "예방접종 전 영아의 발작성 기침·기침 뒤 구토와 가족의 지속 기침은 백일해다. 작고 성숙한 림프구가 크게 늘어난 것은 증식이 아니라 백일해 독소의 Gi ADP-리보실화로 림프구가 혈관을 떠나지 못한 결과다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 「ADP-리보실화」 질문이 쌀뜨물 같은 대량 수양성 설사(콜레라)의 cAMP 상승 기전을 묻는다면 Gs 를 활성 상태로 고정하는 기전(B)이 답이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.id.pertussis.toxin-lymphocytosis-mechanism",
+  "distractors": {
+   "B": {
+    "tempting": "세균 독소 + ADP-리보실화 + 아데닐산 고리화효소 — 콜레라 독소와 백일해 독소가 같은 묶음으로 외워진다.",
+    "answer_first": "콜레라 독소는 Gs 를 켜고, 백일해 독소는 Gi 를 끈다. 림프구의 케모카인 수용체는 Gi 연결이라 Gi 차단이 림프구 이동을 막는다.",
+    "discriminator": "표적 G 단백: 콜레라 = Gs(켜짐 고정), 백일해 = Gi(억제 신호 차단).",
+    "when_right": "콜레라·장독소성 대장균의 수양성 설사 기전을 물을 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "림프구가 많이 늘었으니 T 세포를 대량으로 증식시키는 독소 — 초항원이 떠오른다.",
+    "answer_first": "초항원은 고열·발진·저혈압의 독소 쇼크를 일으킨다. 이 아이는 열이 없고 림프구가 작고 성숙해 증식이 아니라 혈중에 갇힌 것이다.",
+    "discriminator": "「She has not had fever」 + 「Small, mature-appearing lymphocytes」.",
+    "when_right": "고열·미만성 홍반·저혈압의 독소 쇼크 증후군 기전을 물을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0270",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pathology",
+  "subject_file": "Pathology",
+  "subtopic": "Three Months of Thirst, Constipation and a Dry Cough With a Calcium of 12.1 and Enlarged Nodes at Both Lung Roots in a 38-Year-Old Nonsmoker",
+  "type": "Three Months of Thirst, Constipation and a Dry Cough With a Calcium of 12.1 and Enlarged Nodes at Both Lung Roots in a 38-Year-Old Nonsmoker",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 38-year-old woman comes to the physician because of fatigue, increased thirst and urination, and constipation for 3 months. She has also had a dry cough for 2 months. She has never smoked and does not drink alcohol. She takes a multivitamin containing 600 IU of vitamin D daily and no other medications or supplements. She works as an elementary school teacher. Her vital signs are shown. There are several 1-cm firm, nontender, red-brown papules around the nostrils. The lungs are clear to auscultation. There is no lymphadenopathy in the neck, axillae or groin, and there is no hepatosplenomegaly. Laboratory results are shown. A chest x-ray shows bilateral, symmetric hilar and right paratracheal lymphadenopathy with clear lung fields.",
+  "question": "Which of the following is the most likely mechanism of this patient's hypercalcemia?",
+  "options": [
+   "Secretion of parathyroid hormone–related peptide by tumor cells",
+   "Excess intake of cholecalciferol with saturation of storage capacity",
+   "Autonomous parathyroid hormone secretion by a parathyroid adenoma",
+   "Extrarenal 1α-hydroxylation of vitamin D by activated macrophages",
+   "Osteoclast activation by cytokines from osteolytic bone lesions"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계. ① 칼슘 12.1 + PTH 7(억제) → PTH 비의존성. ② PTHrP 음성 + 25-OH D 정상 + 1,25-(OH)2 D 증가 → 칼시트리올 매개(비타민 D 과다·악성 체액성 아님). ③ 비흡연자의 대칭성 양측 폐문 림프절 + 콧방울 구진 + 다클론 감마글로불린 → 사르코이드증 육아종 대식세포의 신장 외 1α-hydroxylation.\n- 오답감별:\n  - (A) PTHrP 가 검출되지 않고 칼시트리올이 높다 — 악성 체액성 고칼슘혈증은 칼시트리올이 낮은 것이 보통이다. 비흡연자다.\n  - (B) 비타민 D 중독은 25-OH D 가 크게 오른다 — 26 으로 정상이고 600 IU 는 통상 용량이다.\n  - (C) 부갑상선 선종이면 PTH 가 높거나 부적절하게 정상이다 — 여기는 7 로 억제됐다.\n  - (E) 골용해 병변(골수종·전이)의 고칼슘혈증은 칼시트리올이 낮거나 정상이다. 단클론 띠가 없고 ALP 도 정상이다.\n- 임상핵심: PTH 억제 + PTHrP 음성 + 25-OH D 정상 + 1,25-(OH)2 D 증가 → 육아종(사르코이드증)의 신장 외 1α-hydroxylase → 글루코코르티코이드.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 379장 Sarcoidosis; Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 칼슘 12.1 + PTH 7(억제) → PTH 비의존성. ② PTHrP 음성 + 25-OH D 정상 + 1,25-(OH)2 D 증가 → 칼시트리올 매개(비타민 D 과다·악성 체액성 아님). ③ 비흡연자의 대칭성 양측 폐문 림프절 + 콧방울 구진 + 다클론 감마글로불린 → 사르코이드증 육아종 대식세포의 신장 외 1α-hydroxylation."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) PTHrP 가 검출되지 않고 칼시트리올이 높다 — 악성 체액성 고칼슘혈증은 칼시트리올이 낮은 것이 보통이다. 비흡연자다.\n(B) 비타민 D 중독은 25-OH D 가 크게 오른다 — 26 으로 정상이고 600 IU 는 통상 용량이다.\n(C) 부갑상선 선종이면 PTH 가 높거나 부적절하게 정상이다 — 여기는 7 로 억제됐다.\n(E) 골용해 병변(골수종·전이)의 고칼슘혈증은 칼시트리올이 낮거나 정상이다. 단클론 띠가 없고 ALP 도 정상이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "PTH 억제 + PTHrP 음성 + 25-OH D 정상 + 1,25-(OH)2 D 증가 → 육아종(사르코이드증)의 신장 외 1α-hydroxylase → 글루코코르티코이드."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 379장 Sarcoidosis; Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 379장 Sarcoidosis; Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.1 °C (98.8 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "84 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "124/78 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum calcium",
+    "value": "12.1 mg/dL",
+    "ref": "8.6–10.2 mg/dL"
+   },
+   {
+    "name": "Serum phosphorus",
+    "value": "4.3 mg/dL",
+    "ref": "2.5–4.5 mg/dL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "1.3 mg/dL",
+    "ref": "0.6–1.1 mg/dL"
+   },
+   {
+    "name": "Serum albumin",
+    "value": "4.1 g/dL",
+    "ref": "3.5–5.0 g/dL"
+   },
+   {
+    "name": "Serum alkaline phosphatase",
+    "value": "88 U/L",
+    "ref": "35–104 U/L"
+   },
+   {
+    "name": "Serum parathyroid hormone (intact)",
+    "value": "7 pg/mL",
+    "ref": "10–65 pg/mL"
+   },
+   {
+    "name": "Serum PTH-related peptide",
+    "value": "Undetectable",
+    "ref": "Undetectable"
+   },
+   {
+    "name": "Serum 25-hydroxyvitamin D",
+    "value": "26 ng/mL",
+    "ref": "20–50 ng/mL"
+   },
+   {
+    "name": "Serum 1,25-dihydroxyvitamin D",
+    "value": "94 pg/mL",
+    "ref": "18–64 pg/mL"
+   },
+   {
+    "name": "Serum protein electrophoresis",
+    "value": "Polyclonal increase in gamma globulins; no monoclonal band",
+    "ref": "No monoclonal band"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "PTH 억제 고칼슘혈증 — 무엇을 보나\n─────────────────────────────\nPTHrP ↑ (1,25-D ↓) → 악성 체액성(편평상피암·신세포암)\n25-OH D ↑↑ → 비타민 D 중독\n1,25-(OH)2 D ↑ (25-OH D 정상) → 육아종(사르코이드증·결핵·진균)·림프종의 신장 외 1α-hydroxylase\n둘 다 정상 → 골용해(골수종: 단클론 띠, 전이), 갑상선 기능 항진, 비타민 A, 부동\nPTH ↑·부적절 정상 → 원발성 부갑상선 항진(뇨 칼슘 낮으면 FHH)",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 379장 Sarcoidosis",
+    "Harrison's Principles of Internal Medicine, 22e. 422장 Disorders of the Parathyroid Gland and Calcium Homeostasis"
+   ]
+  },
+  "design": {
+   "target": "감별",
+   "decision": "PTH 억제·PTHrP 음성·25-OH D 정상인데 1,25-(OH)2 D 가 높은 고칼슘혈증은 육아종 대식세포의 신장 외 1α-hydroxylation(사르코이드증)이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "폐문 림프절 비대 + 고칼슘은 PTHrP 를 내는 폐암(A)을 떠올리게 하지만 PTHrP 가 없고 비흡연자이며 칼시트리올이 높다. 비타민 D 과다(B)는 25-OH D 가 크게 오르는데 정상이다.",
+   "steps": 3,
+   "chain": [
+    "칼슘 12.1 + PTH 7(억제) → PTH 비의존성 고칼슘혈증 — 부갑상선 선종 아님",
+    "PTHrP 검출 안 됨 + 25-OH D 정상 + 1,25-(OH)2 D 높음 → 칼시트리올 매개, 비타민 D 과다·악성 체액성 아님",
+    "비흡연자의 대칭성 양측 폐문 림프절 + 콧방울 구진 + 다클론 감마글로불린 → 사르코이드증 육아종 대식세포의 1α-hydroxylase"
+   ],
+   "key": [
+    {
+     "item": "Serum parathyroid hormone (intact)",
+     "why": "7 — 억제됨: PTH 비의존성",
+     "also": []
+    },
+    {
+     "item": "Serum 1,25-dihydroxyvitamin D",
+     "why": "94 — PTH 가 억제됐는데 높다: 신장 외 칼시트리올 생성",
+     "also": []
+    },
+    {
+     "item": "bilateral, symmetric hilar and right paratracheal lymphadenopathy",
+     "why": "사르코이드증의 전형 흉부 영상",
+     "also": []
+    },
+    {
+     "item": "red-brown papules around the nostrils",
+     "why": "피부 사르코이드증 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum PTH-related peptide",
+     "why": "검출 안 됨 — 악성 체액성 고칼슘혈증(A) 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "Serum 25-hydroxyvitamin D",
+     "why": "정상 — 비타민 D 중독(B)이면 크게 높다",
+     "also": []
+    },
+    {
+     "item": "She has never smoked",
+     "why": "폐 편평상피암(PTHrP)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum protein electrophoresis",
+     "why": "단클론 띠 없음 — 골수종의 골용해(E) 가능성 낮음",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She takes a multivitamin containing 600 IU of vitamin D daily",
+     "why": "통상 용량 — 비타민 D 과다로 끌릴 수 있지만 원인이 아니다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine",
+     "why": "1.3 — 고칼슘혈증에 따른 신기능 저하, 원인 판정과는 무관",
+     "also": []
+    }
+   ],
+   "summary": "PTH 가 억제된 고칼슘혈증에서 PTHrP 음성·25-OH D 정상·1,25-(OH)2 D 증가는 신장 밖 칼시트리올 생성을 뜻한다. 비흡연자의 대칭성 양측 폐문 림프절 비대와 피부 구진은 사르코이드증이고, 육아종 대식세포의 1α-hydroxylase 가 원인이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 PTH 억제 고칼슘혈증에서 PTHrP 가 높고 1,25-(OH)2 D 가 낮으며, 흡연자의 중심성 폐 종괴가 보인다면 악성 체액성 고칼슘혈증(A)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.path.sarcoidosis.calcitriol-mediated-hypercalcemia",
+  "distractors": {
+   "A": {
+    "tempting": "폐문 림프절 비대 + 고칼슘혈증 — 폐암의 PTHrP 가 먼저 떠오른다.",
+    "answer_first": "PTHrP 가 검출되지 않고, PTHrP 는 신장 1α-hydroxylase 를 충분히 켜지 못해 칼시트리올이 보통 낮다. 칼시트리올이 높은 것은 육아종 대식세포의 생성이다.",
+    "discriminator": "「Serum PTH-related peptide」 검출 안 됨 + 「Serum 1,25-dihydroxyvitamin D」 94.",
+    "when_right": "PTHrP 가 높고 칼시트리올이 낮은 흡연자의 편평상피암일 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "비타민 D 가 들어간 종합비타민을 먹고 있고 활성형 비타민 D 도 높다.",
+    "answer_first": "비타민 D 중독은 저장형 25-OH D 가 크게(> 150 ng/mL) 오른다. 25-OH D 가 26 으로 정상이고 600 IU 는 통상 용량이다 — 활성화 단계가 조절을 벗어났다.",
+    "discriminator": "「Serum 25-hydroxyvitamin D」 26 ng/mL(정상).",
+    "when_right": "고용량 보충제를 장기 복용해 25-OH D 가 크게 오른 경우.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0271",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "Sudden Breathlessness at Rest and Lightheadedness in a 76-Year-Old Man Awaiting Valve Replacement Whose Monitor Shows the Rhythm Below",
+  "type": "Sudden Breathlessness at Rest and Lightheadedness in a 76-Year-Old Man Awaiting Valve Replacement Whose Monitor Shows the Rhythm Below",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 76-year-old man is brought to the emergency department 5 hours after the sudden onset of shortness of breath at rest and lightheadedness. He has severe aortic stenosis and is scheduled for transcatheter valve replacement next month; until today, he became short of breath only after climbing one flight of stairs. He has hypertension treated with lisinopril. His vital signs are shown; oxygen saturation is 89% on room air. There is a grade 3/6 late-peaking systolic murmur at the right upper sternal border radiating to both carotid arteries; the intensity is unchanged from his last visit. There are crackles over both lower lung fields. Jugular venous pressure is 9 cm H2O. The rhythm strip is shown. Laboratory results are shown. Transthoracic echocardiography shows an aortic valve area of 0.8 cm2, unchanged from 2 months ago, concentric left ventricular hypertrophy with a wall thickness of 15 mm, a left ventricular ejection fraction of 60%, and no mitral regurgitation.",
+  "question": "Which of the following best explains the abrupt worsening of this patient's condition?",
+  "options": [
+   "Increased left ventricular afterload from progression of the valve obstruction",
+   "Decreased contractility from tachycardia-induced cardiomyopathy",
+   "Decreased filling of a stiff hypertrophied left ventricle after loss of atrial contraction",
+   "Acute mitral regurgitation from ischemic papillary muscle dysfunction",
+   "Decreased systemic vascular resistance from baroreceptor withdrawal"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계. ① 리듬 띠: P 파 없음 + 불규칙한 RR → 새 심방세동. ② 판막 면적 불변·박출률 60 %·승모판 역류 없음·트로포닌 정상 → 후부하 증가·수축력 저하·허혈 아님. ③ 동심성 비대의 뻣뻣한 좌심실 + 심방 수축 소실 + 짧은 이완기 → 좌심실 충만(전부하) 급감 → 1회 박출량↓(저혈압) + 좌심방압↑(폐부종).\n- 오답감별:\n  - (A) 판막 면적이 2개월 전과 같다 — 협착이 진행한 것이 아니다.\n  - (B) 빈맥 유발 심근병증은 수주 이상의 빈맥 뒤 박출률이 떨어진다 — 5시간 전 시작, 박출률 60 %.\n  - (D) 승모판 역류가 없고 트로포닌이 정상이다 — 허혈성 유두근 기능 이상의 근거가 없다.\n  - (E) 저혈압에서 압수용체 반사는 교감 신경을 올려 혈관 저항을 높인다 — 저항 감소로 설명할 수 없다.\n- 임상핵심: 대동맥판 협착·비대성 심근병증처럼 뻣뻣한 좌심실은 「심방 수축(atrial kick)」에 기댄다 — 새 심방세동은 급격한 박출량 감소·폐부종을 일으킨다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 272장 Aortic Stenosis; Harrison's Principles of Internal Medicine, 22e. 258장 Atrial Fibrillation.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 리듬 띠: P 파 없음 + 불규칙한 RR → 새 심방세동. ② 판막 면적 불변·박출률 60 %·승모판 역류 없음·트로포닌 정상 → 후부하 증가·수축력 저하·허혈 아님. ③ 동심성 비대의 뻣뻣한 좌심실 + 심방 수축 소실 + 짧은 이완기 → 좌심실 충만(전부하) 급감 → 1회 박출량↓(저혈압) + 좌심방압↑(폐부종)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 판막 면적이 2개월 전과 같다 — 협착이 진행한 것이 아니다.\n(B) 빈맥 유발 심근병증은 수주 이상의 빈맥 뒤 박출률이 떨어진다 — 5시간 전 시작, 박출률 60 %.\n(D) 승모판 역류가 없고 트로포닌이 정상이다 — 허혈성 유두근 기능 이상의 근거가 없다.\n(E) 저혈압에서 압수용체 반사는 교감 신경을 올려 혈관 저항을 높인다 — 저항 감소로 설명할 수 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "대동맥판 협착·비대성 심근병증처럼 뻣뻣한 좌심실은 「심방 수축(atrial kick)」에 기댄다 — 새 심방세동은 급격한 박출량 감소·폐부종을 일으킨다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 272장 Aortic Stenosis; Harrison's Principles of Internal Medicine, 22e. 258장 Atrial Fibrillation."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 272장 Aortic Stenosis; Harrison's Principles of Internal Medicine, 22e. 258장 Atrial Fibrillation)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "132 /min, irregularly irregular"
+   },
+   {
+    "name": "Respirations",
+    "value": "26 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "92/64 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum troponin I",
+    "value": "0.02 ng/mL",
+    "ref": "< 0.04 ng/mL"
+   },
+   {
+    "name": "Serum potassium",
+    "value": "4.2 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "13.6 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Serum TSH",
+    "value": "1.9 μU/mL",
+    "ref": "0.4–4.0 μU/mL"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 272장 Aortic Stenosis",
+    "Harrison's Principles of Internal Medicine, 22e. 258장 Atrial Fibrillation"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "중증 대동맥판 협착의 비대·뻣뻣한 좌심실은 이완기 충만을 심방 수축에 크게 기대므로, 새 심방세동이 심방 수축을 없애고 이완기를 줄여 전부하·1회 박출량이 급감한다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "판막 면적이 2개월 전과 같고(A 아님) 박출률이 60 % 로 보존돼(B 아님) 있다 — 바뀐 것은 리듬뿐이다.",
+   "steps": 3,
+   "chain": [
+    "심전도: P 파 없음 + 불규칙한 RR → 새 심방세동",
+    "판막 면적 불변 + 박출률 60 % + 승모판 역류 없음 + 트로포닌 정상 → 후부하 증가·수축력 저하·허혈 아님",
+    "동심성 좌심실 비대(뻣뻣한 심실) + 심방 수축 소실 + 짧은 이완기 → 충만 감소 → 1회 박출량↓(저혈압), 좌심방압↑(폐부종)"
+   ],
+   "key": [
+    {
+     "item": "심전도: P 파 없이 불규칙하게 불규칙한 RR 간격, 심실 반응 약 130/분",
+     "why": "심방세동 — 심방 수축이 사라졌다",
+     "also": []
+    },
+    {
+     "item": "concentric left ventricular hypertrophy with a wall thickness of 15 mm",
+     "why": "뻣뻣한 심실 — 이완기 충만을 심방 수축에 크게 기댄다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "an aortic valve area of 0.8 cm2, unchanged from 2 months ago",
+     "why": "협착 진행(A)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "a left ventricular ejection fraction of 60%",
+     "why": "수축력 보존 — 빈맥 유발 심근병증(B)이 아니다",
+     "also": []
+    },
+    {
+     "item": "no mitral regurgitation",
+     "why": "급성 승모판 역류(D) 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "Serum troponin I",
+     "why": "정상 — 허혈성 유두근 기능 이상(D) 가능성 낮음",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "the intensity is unchanged from his last visit",
+     "why": "잡음 세기 — 협착 정도를 추정하기 어렵지만 변화가 없다는 정보",
+     "also": []
+    },
+    {
+     "item": "Serum TSH",
+     "why": "정상 — 심방세동의 유발 원인 탐색, 기전 판단과는 무관",
+     "also": []
+    }
+   ],
+   "summary": "새 심방세동 말고는 판막·수축력·승모판이 그대로다. 중증 대동맥판 협착의 비대·뻣뻣한 좌심실은 이완기 충만을 심방 수축에 기대므로, 심방 수축 소실과 짧은 이완기가 전부하를 떨어뜨려 저혈압과 폐부종을 일으켰다.",
+   "switch": {
+    "choice": "A",
+    "condition": "리듬이 동율동 그대로이고 2개월 사이 판막 면적이 0.8 에서 0.5 cm2 로 줄었다면 판막 협착 진행에 따른 후부하 증가(A)가 설명이 된다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.physio.atrial-contraction.lvh-preload-loss-in-af",
+  "distractors": {
+   "A": {
+    "tempting": "중증 대동맥판 협착 환자가 갑자기 나빠졌으니 협착이 심해졌다고 생각하기 쉽다.",
+    "answer_first": "판막 면적은 2개월 전과 같은 0.8 cm2 다. 바뀐 것은 리듬 — 심방 수축이 사라져 뻣뻣한 심실이 덜 채워진다.",
+    "discriminator": "「an aortic valve area of 0.8 cm2, unchanged from 2 months ago」 + 리듬 띠의 심방세동.",
+    "when_right": "동율동이 유지된 채 판막 면적이 줄어 증상이 진행할 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "빠른 심방세동 — 빈맥이 심근을 지치게 한다는 설명이 떠오른다.",
+    "answer_first": "빈맥 유발 심근병증은 수주~수개월 지속된 빈맥 뒤에 박출률이 떨어진다. 5시간 전에 시작했고 박출률은 60 % 다.",
+    "discriminator": "「a left ventricular ejection fraction of 60%」 + 발병 5시간.",
+    "when_right": "수주 이상 조절되지 않은 빈맥 뒤 박출률이 떨어졌을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG afib · 132 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,88.8 0.6,88.5 1.2,88.2 1.8,88.0 2.4,88.0 3.0,88.1 3.6,88.2 4.2,88.4 4.8,88.7 5.4,89.0 6.0,89.2 6.6,89.5 7.2,89.7 7.8,89.9 8.4,90.1 9.0,90.2 9.6,90.2 10.2,90.2 10.8,90.2 11.4,90.2 12.0,90.2 12.6,90.3 13.2,90.3 13.8,90.4 14.4,90.5 15.0,90.7 15.6,90.9 16.2,91.1 16.8,91.3 17.4,91.4 18.0,91.6 18.6,91.6 19.2,91.6 19.8,91.5 20.4,91.3 21.0,90.9 21.6,90.6 22.2,90.1 22.8,89.6 23.4,89.1 24.0,88.6 24.6,88.1 25.2,87.7 25.8,87.4 26.4,87.2 27.0,87.2 27.6,87.3 28.2,87.6 28.8,87.9 29.4,88.4 30.0,89.0 30.6,89.7 31.2,90.3 31.8,91.0 32.4,91.6 33.0,92.1 33.6,92.5 34.2,92.9 34.8,93.5 35.4,94.3 36.0,94.8 36.6,93.9 37.2,90.2 37.8,82.9 38.4,72.1 39.0,58.5 39.6,44.0 40.2,32.0 40.8,26.3 41.4,28.9 42.0,39.1 42.6,53.5 43.2,68.6 43.8,81.4 44.4,90.7 45.0,96.2 45.6,98.4 46.2,98.3 46.8,96.7 47.4,94.7 48.0,92.8 48.6,91.4 49.2,90.6 49.8,90.2 50.4,90.1 51.0,90.0 51.6,89.9 52.2,89.9 52.8,90.0 53.4,90.0 54.0,90.1 54.6,90.3 55.2,90.5 55.8,90.7 56.4,91.0 57.0,91.2 57.6,91.5 58.2,91.7 58.8,91.8 59.4,91.9 60.0,91.8 60.6,91.7 61.2,91.4 61.8,91.1 62.4,90.6 63.0,90.1 63.6,89.5 64.2,89.0 64.8,88.4 65.4,87.8 66.0,87.4 66.6,87.0 67.2,86.8 67.8,86.6 68.4,86.6 69.0,86.8 69.6,87.0 70.2,87.3 70.8,87.6 71.4,88.0 72.0,88.3 72.6,88.5 73.2,88.7 73.8,88.7 74.4,88.5 75.0,88.1 75.6,87.5 76.2,86.8 76.8,85.8 77.4,84.7 78.0,83.4 78.6,82.1 79.2,80.7 79.8,79.3 80.4,77.9 81.0,76.6 81.6,75.4 82.2,74.4 82.8,73.5 83.4,72.8 84.0,72.4 84.6,72.1 85.2,71.9 85.8,72.0 86.4,72.2 87.0,72.6 87.6,73.0 88.2,73.6 88.8,74.2 89.4,74.9 90.0,75.7 90.6,76.5 91.2,77.3 91.8,78.2 92.4,79.1 93.0,80.0 93.6,80.9 94.2,81.9 94.8,82.9 95.4,84.0 96.0,85.0 96.6,86.0 97.2,86.9 97.8,87.8 98.4,88.6 99.0,89.3 99.6,89.9 100.2,90.3 100.8,90.6 101.4,90.7 102.0,90.6 102.6,90.4 103.2,90.1 103.8,89.7 104.4,89.2 105.0,88.7 105.6,88.2 106.2,87.8 106.8,87.4 107.4,87.1 108.0,87.0 108.6,87.0 109.2,87.2 109.8,87.5 110.4,87.9 111.0,88.4 111.6,89.0 112.2,89.6 112.8,90.3 113.4,90.9 114.0,91.5 114.6,91.9 115.2,92.3 115.8,92.5 116.4,92.6 117.0,92.6 117.6,92.4 118.2,92.1 118.8,91.8 119.4,91.4 120.0,90.9 120.6,90.4 121.2,90.0 121.8,89.6 122.4,89.3 123.0,89.0 123.6,88.9 124.2,88.8 124.8,88.8 125.4,88.8 126.0,88.9 126.6,89.0 127.2,89.2 127.8,89.4 128.4,90.0 129.0,90.8 129.6,91.6 130.2,91.0 130.8,87.8 131.4,81.2 132.0,71.0 132.6,58.0 133.2,44.0 133.8,32.4 134.4,26.9 135.0,29.6 135.6,40.0 136.2,54.8 136.8,70.2 137.4,83.5 138.0,93.1 138.6,98.9 139.2,101.4 139.8,101.4 140.4,99.8 141.0,97.6 141.6,95.5 142.2,93.8 142.8,92.5 143.4,91.7 144.0,90.9 144.6,90.3 145.2,89.6 145.8,89.0 146.4,88.4 147.0,87.9 147.6,87.5 148.2,87.2 148.8,87.0 149.4,87.0 150.0,87.2 150.6,87.5 151.2,87.9 151.8,88.4 152.4,89.0 153.0,89.6 153.6,90.2 154.2,90.8 154.8,91.4 155.4,91.8 156.0,92.1 156.6,92.3 157.2,92.4 157.8,92.3 158.4,92.1 159.0,91.8 159.6,91.4 160.2,91.0 160.8,90.5 161.4,90.0 162.0,89.5 162.6,89.0 163.2,88.6 163.8,88.2 164.4,87.8 165.0,87.4 165.6,87.1 166.2,86.7 166.8,86.3 167.4,85.9 168.0,85.4 168.6,84.8 169.2,84.2 169.8,83.5 170.4,82.6 171.0,81.7 171.6,80.8 172.2,79.8 172.8,78.9 173.4,77.9 174.0,77.0 174.6,76.2 175.2,75.6 175.8,75.0 176.4,74.6 177.0,74.4 177.6,74.3 178.2,74.4 178.8,74.6 179.4,74.9 180.0,75.2 180.6,75.7 181.2,76.1 181.8,76.6 182.4,77.1 183.0,77.5 183.6,77.9 184.2,78.2 184.8,78.5 185.4,78.8 186.0,79.0 186.6,79.3 187.2,79.6 187.8,79.9 188.4,80.4 189.0,80.9 189.6,81.5 190.2,82.2 190.8,83.0 191.4,83.9 192.0,84.9 192.6,86.0 193.2,87.3 193.8,89.0 194.4,90.7 195.0,91.5 195.6,89.8 196.2,84.7 196.8,75.9 197.4,63.8 198.0,50.0 198.6,37.4 199.2,29.9 199.8,30.2 200.4,38.4 201.0,51.9 201.6,66.9 202.2,80.3 202.8,90.1 203.4,96.3 204.0,99.0 204.6,99.1 205.2,97.5 205.8,95.2 206.4,93.0 207.0,91.4 207.6,90.4 208.2,89.9 208.8,89.6 209.4,89.5 210.0,89.4 210.6,89.4 211.2,89.3 211.8,89.1 212.4,89.0 213.0,88.9 213.6,88.8 214.2,88.8 214.8,88.8 215.4,88.8 216.0,89.0 216.6,89.3 217.2,89.6 217.8,90.0 218.4,90.4 219.0,90.9 219.6,91.3 220.2,91.7 220.8,92.1 221.4,92.4 222.0,92.5 222.6,92.6 223.2,92.4 223.8,92.2 224.4,91.8 225.0,91.2 225.6,90.6 226.2,89.9 226.8,89.1 227.4,88.3 228.0,87.6 228.6,86.8 229.2,86.2 229.8,85.6 230.4,85.1 231.0,84.8 231.6,84.5 232.2,84.3 232.8,84.2 233.4,84.1 234.0,84.1 234.6,84.4 235.2,84.9 235.8,85.4 236.4,84.7 237.0,81.4 237.6,74.6 238.2,64.1 238.8,50.5 239.4,35.5 240.0,22.5 240.6,15.1 241.2,15.8 241.8,24.3 242.4,37.7 243.0,52.3 243.6,65.0 244.2,74.3 244.8,80.0 245.4,82.6 246.0,82.7 246.6,81.4 247.2,79.7 247.8,78.2 248.4,77.3 249.0,77.1 249.6,77.4 250.2,78.0 250.8,78.7 251.4,79.4 252.0,80.1 252.6,80.8 253.2,81.5 253.8,82.2 254.4,82.8 255.0,83.5 255.6,84.2 256.2,84.9 256.8,85.6 257.4,86.4 258.0,87.2 258.6,88.0 259.2,88.8 259.8,89.6 260.4,90.4 261.0,91.0 261.6,91.6 262.2,92.0 262.8,92.3 263.4,92.4 264.0,92.3 264.6,92.1 265.2,91.7 265.8,91.2 266.4,90.6 267.0,90.0 267.6,89.2 268.2,88.5 268.8,87.7 269.4,87.0 270.0,86.4 270.6,85.9 271.2,85.5 271.8,85.2 272.4,85.0 273.0,84.8 273.6,84.7 274.2,84.7 274.8,84.6 275.4,84.5 276.0,84.3 276.6,84.0 277.2,83.6 277.8,83.1 278.4,82.5 279.0,81.7 279.6,80.8 280.2,79.9 280.8,78.9 281.4,77.9 282.0,76.9 282.6,76.0 283.2,75.1 283.8,74.4 284.4,73.9 285.0,73.5 285.6,73.3 286.2,73.2 286.8,73.3 287.4,73.6 288.0,74.0 288.6,74.5 289.2,75.1 289.8,75.8 290.4,76.5 291.0,77.2 291.6,77.9 292.2,78.6 292.8,79.2 293.4,79.9 294.0,80.6 294.6,81.2 295.2,81.9 295.8,82.6 296.4,83.4 297.0,84.1 297.6,85.0 298.2,85.8 298.8,86.7 299.4,87.7 300.0,88.6 300.6,89.4 301.2,90.2 301.8,91.0 302.4,91.6 303.0,92.0 303.6,92.3 304.2,92.5 304.8,92.4 305.4,92.2 306.0,91.9 306.6,91.4 307.2,90.9 307.8,90.3 308.4,89.7 309.0,89.0 309.6,88.5 310.2,88.0 310.8,87.6 311.4,87.3 312.0,87.2 312.6,87.2 313.2,87.4 313.8,87.7 314.4,88.1 315.0,88.5 315.6,89.1 316.2,89.6 316.8,90.1 317.4,90.5 318.0,90.9 318.6,91.2 319.2,91.4 319.8,91.6 320.4,91.6 321.0,91.5 321.6,91.4 322.2,91.3 322.8,91.1 323.4,90.9 324.0,90.7 324.6,90.7 325.2,90.9 325.8,91.6 326.4,92.3 327.0,92.0 327.6,89.2 328.2,82.9 328.8,73.2 329.4,60.4 330.0,46.3 330.6,34.2 331.2,27.6 331.8,29.1 332.4,38.2 333.0,52.2 333.6,67.2 334.2,80.1 334.8,89.5 335.4,95.2 336.0,97.5 336.6,97.4 337.2,95.8 337.8,93.7 338.4,91.9 339.0,90.7 339.6,90.2 340.2,90.2 340.8,90.5 341.4,91.0 342.0,91.5 342.6,92.0 343.2,92.4 343.8,92.8 344.4,92.9 345.0,92.9 345.6,92.8 346.2,92.5 346.8,92.1 347.4,91.6 348.0,91.0 348.6,90.4 349.2,89.7 349.8,89.1 350.4,88.5 351.0,88.0 351.6,87.6 352.2,87.4 352.8,87.3 353.4,87.3 354.0,87.5 354.6,87.7 355.2,88.1 355.8,88.5 356.4,88.9 357.0,89.3 357.6,89.7 358.2,90.0 358.8,90.2 359.4,90.3 360.0,90.3 360.6,90.2 361.2,90.0 361.8,89.7 362.4,89.2 363.0,88.7 363.6,88.1 364.2,87.5 364.8,86.8 365.4,86.1 366.0,85.4 366.6,84.6 367.2,83.8 367.8,83.0 368.4,82.2 369.0,81.4 369.6,80.5 370.2,79.5 370.8,78.5 371.4,77.5 372.0,76.5 372.6,75.5 373.2,74.5 373.8,73.6 374.4,72.8 375.0,72.1 375.6,71.5 376.2,71.2 376.8,71.1 377.4,71.1 378.0,71.5 378.6,72.1 379.2,72.9 379.8,73.9 380.4,75.1 381.0,76.5 381.6,77.9 382.2,79.4 382.8,80.8 383.4,82.3 384.0,83.6 384.6,84.8 385.2,85.8 385.8,86.6 386.4,87.2 387.0,87.7 387.6,87.9 388.2,88.0 388.8,87.9 389.4,87.7 390.0,87.5 390.6,87.3 391.2,87.1 391.8,86.9 392.4,86.8 393.0,86.7 393.6,86.8 394.2,87.0 394.8,87.3 395.4,87.6 396.0,88.1 396.6,88.5 397.2,89.0 397.8,89.4 398.4,89.9 399.0,90.3 399.6,90.6 400.2,90.8 400.8,91.0 401.4,91.0 402.0,91.0 402.6,91.0 403.2,90.9 403.8,90.8 404.4,90.7 405.0,90.7 405.6,90.6 406.2,90.6 406.8,90.6 407.4,90.6 408.0,90.7 408.6,90.8 409.2,90.8 409.8,90.9 410.4,90.9 411.0,90.8 411.6,90.7 412.2,90.5 412.8,90.2 413.4,89.9 414.0,89.6 414.6,89.2 415.2,88.8 415.8,88.4 416.4,88.1 417.0,88.1 417.6,88.4 418.2,89.2 418.8,89.8 419.4,88.7 420.0,84.8 420.6,77.5 421.2,66.9 421.8,53.9 422.4,40.8 423.0,31.4 423.6,28.9 424.2,34.7 424.8,47.0 425.4,62.4 426.0,77.2 426.6,89.1 427.2,96.9 427.8,101.0 428.4,101.8 429.0,100.5 429.6,97.8 430.2,95.0 430.8,92.4 431.4,90.5 432.0,89.3 432.6,88.5 433.2,88.0 433.8,87.7 434.4,87.7 435.0,87.7 435.6,87.9 436.2,88.1 436.8,88.4 437.4,88.8 438.0,89.2 438.6,89.5 439.2,89.9 439.8,90.2 440.4,90.4 441.0,90.6 441.6,90.7 442.2,90.7 442.8,90.7 443.4,90.7 444.0,90.6 444.6,90.6 445.2,90.5 445.8,90.5 446.4,90.5 447.0,90.5 447.6,90.6 448.2,90.6 448.8,90.7 449.4,90.7 450.0,90.7 450.6,90.7 451.2,90.5 451.8,90.3 452.4,89.9 453.0,89.5 453.6,88.9 454.2,88.2 454.8,87.5 455.4,86.6 456.0,85.7 456.6,84.8 457.2,83.8 457.8,82.9 458.4,82.0 459.0,81.2 459.6,80.5 460.2,79.9 460.8,79.4 461.4,78.9 462.0,78.6 462.6,78.3 463.2,78.1 463.8,77.9 464.4,77.7 465.0,77.5 465.6,77.3 466.2,77.0 466.8,76.7 467.4,76.4 468.0,76.0 468.6,75.7 469.2,75.4 469.8,75.1 470.4,74.8 471.0,74.7 471.6,74.6 472.2,74.7 472.8,75.0 473.4,75.4 474.0,76.0 474.6,76.7 475.2,77.5 475.8,78.5 476.4,79.5 477.0,80.6 477.6,81.7 478.2,82.8 478.8,83.9 479.4,84.9 480.0,85.8 480.6,86.6 481.2,87.3 481.8,87.9 482.4,88.4 483.0,88.8 483.6,89.1 484.2,89.3 484.8,89.5 485.4,89.7 486.0,89.8 486.6,90.0 487.2,90.2 487.8,90.4 488.4,90.6 489.0,90.9 489.6,91.2 490.2,91.9 490.8,92.9 491.4,93.6 492.0,92.6 492.6,88.6 493.2,81.1 493.8,70.0 494.4,56.2 495.0,42.0 495.6,30.8 496.2,26.4 496.8,30.2 497.4,41.1 498.0,55.6 498.6,70.2 499.2,82.2 499.8,90.7 500.4,95.5 501.0,97.3 501.6,97.0 502.2,95.6 502.8,93.9 503.4,92.5 504.0,91.8 504.6,91.7 505.2,91.8 505.8,92.2 506.4,92.5 507.0,92.8 507.6,92.9 508.2,92.9 508.8,92.7 509.4,92.4 510.0,92.0 510.6,91.5 511.2,91.0 511.8,90.4 512.4,89.8 513.0,89.3 513.6,88.9 514.2,88.5 514.8,88.3 515.4,88.1 516.0,88.1 516.6,88.1 517.2,88.2 517.8,88.4 518.4,88.7 519.0,88.9 519.6,89.2 520.2,89.4 520.8,89.5 521.4,89.7 522.0,89.7 522.6,89.7 523.2,89.7 523.8,89.5 524.4,89.4 525.0,89.2 525.6,89.0 526.2,88.8 526.8,88.5 527.4,88.3 528.0,88.0 528.6,87.8 529.2,87.5 529.8,87.1 530.4,86.7 531.0,86.2 531.6,85.5 532.2,84.8 532.8,83.9 533.4,82.9 534.0,81.8 534.6,80.6 535.2,79.3 535.8,77.9 536.4,76.6 537.0,75.2 537.6,74.0 538.2,72.9 538.8,71.9 539.4,71.2 540.0,70.7 540.6,70.4 541.2,70.5 541.8,70.8 542.4,71.4 543.0,72.2 543.6,73.2 544.2,74.4 544.8,75.7 545.4,77.1 546.0,78.5 546.6,79.9 547.2,81.1 547.8,82.3 548.4,83.3 549.0,84.2 549.6,84.9 550.2,85.4 550.8,85.8 551.4,86.1 552.0,86.3 552.6,86.4 553.2,86.4 553.8,86.5 554.4,86.5 555.0,86.6 555.6,86.7 556.2,86.9 556.8,87.2 557.4,87.4 558.0,87.7 558.6,88.1 559.2,88.4 559.8,88.7 560.4,89.0 561.0,89.2 561.6,89.4 562.2,89.6 562.8,89.7 563.4,89.8 564.0,89.8 564.6,89.8 565.2,89.8 565.8,89.9 566.4,89.9 567.0,90.1 567.6,90.7 568.2,91.6 568.8,92.6 569.4,92.4 570.0,89.5 570.6,83.3 571.2,73.5 571.8,60.7 572.4,46.9 573.0,35.2 573.6,29.4 574.2,31.6 574.8,41.3 575.4,55.4 576.0,70.1 576.6,82.6 577.2,91.4 577.8,96.4 578.4,98.1 579.0,97.3 579.6,95.2 580.2,92.6 580.8,90.4 581.4,88.8 582.0,88.0 582.6,87.8 583.2,88.0 583.8,88.4 584.4,89.0 585.0,89.6 585.6,90.3 586.2,90.9 586.8,91.5 587.4,92.0 588.0,92.4 588.6,92.6 589.2,92.7 589.8,92.7 590.4,92.5 591.0,92.2 591.6,91.8 592.2,91.4 592.8,90.9 593.4,90.4 594.0,89.9 594.6,89.5 595.2,89.1 595.8,88.8 596.4,88.6 597.0,88.5 597.6,88.5 598.2,88.5 598.8,88.5 599.4,88.6 600.0,88.7 600.6,88.7 601.2,88.8 601.8,88.7 602.4,88.6 603.0,88.5 603.6,88.2 604.2,87.9 604.8,87.6 605.4,87.2 606.0,86.7 606.6,86.2 607.2,85.7 607.8,85.3 608.4,84.8 609.0,84.3 609.6,83.8 610.2,83.2 610.8,82.7 611.4,82.2 612.0,81.6 612.6,81.1 613.2,80.8 613.8,80.8 614.4,80.6 615.0,78.8 615.6,74.1 616.2,66.0 616.8,54.3 617.4,40.1 618.0,25.4 618.6,13.8 619.2,8.9 619.8,12.5 620.4,23.5 621.0,38.5 621.6,53.8 622.2,66.8 622.8,76.2 623.4,82.2 624.0,85.1 624.6,85.9 625.2,85.5 625.8,84.8 626.4,84.4 627.0,84.5 627.6,85.0 628.2,85.9 628.8,86.8 629.4,87.7 630.0,88.4 630.6,88.9 631.2,89.3 631.8,89.5 632.4,89.6 633.0,89.5 633.6,89.4 634.2,89.2 634.8,89.0 635.4,88.8 636.0,88.7 636.6,88.6 637.2,88.6 637.8,88.6 638.4,88.6 639.0,88.7 639.6,88.8 640.2,89.0 640.8,89.1 641.4,89.2 642.0,89.3 642.6,89.3 643.2,89.3 643.8,89.2 644.4,89.1 645.0,89.0 645.6,88.9 646.2,88.8 646.8,88.6 647.4,88.5 648.0,88.5 648.6,88.4 649.2,88.4 649.8,88.4 650.4,88.4 651.0,88.4 651.6,88.3 652.2,88.1 652.8,87.9 653.4,87.5 654.0,87.0 654.6,86.3 655.2,85.4 655.8,84.4 656.4,83.2 657.0,81.9 657.6,80.5 658.2,79.0 658.8,77.5 659.4,76.0 660.0,74.6 660.6,73.4 661.2,72.3 661.8,71.4 662.4,70.8 663.0,70.5 663.6,70.4 664.2,70.7 664.8,71.1 665.4,71.8 666.0,72.8 666.6,73.8 667.2,75.0 667.8,76.2 668.4,77.5 669.0,78.7 669.6,79.9 670.2,81.0 670.8,81.9 671.4,82.8 672.0,83.5 672.6,84.1 673.2,84.7 673.8,85.1 674.4,85.4 675.0,85.7 675.6,86.0 676.2,86.3 676.8,86.6 677.4,86.8 678.0,87.1 678.6,87.4 679.2,87.7 679.8,88.0 680.4,88.3 681.0,88.5 681.6,88.8 682.2,88.9 682.8,89.0 683.4,89.1 684.0,89.1 684.6,89.1 685.2,89.0 685.8,89.0 686.4,88.9 687.0,88.9 687.6,88.9 688.2,89.0 688.8,89.2 689.4,89.4 690.0,89.7 690.6,90.0 691.2,90.4 691.8,90.9 692.4,91.3 693.0,91.7 693.6,92.0 694.2,92.3 694.8,92.6 695.4,92.8 696.0,93.3 696.6,93.9 697.2,94.0 697.8,92.4 698.4,87.7 699.0,79.4 699.6,67.6 700.2,53.4 700.8,39.1 701.4,28.4 702.0,24.8 702.6,29.5 703.2,41.2 703.8,56.3 704.4,71.2 705.0,83.4 705.6,91.9 706.2,96.8 706.8,98.7 707.4,98.5 708.0,97.1 708.6,95.4 709.2,94.0 709.8,93.1 710.4,92.6 711.0,92.4 711.6,92.3 712.2,92.2 712.8,92.0 713.4,91.8 714.0,91.5 714.6,91.1 715.2,90.8 715.8,90.5 716.4,90.2 717.0,89.9 717.6,89.7 718.2,89.6 718.8,89.5 719.4,89.4 720.0,89.4 720.6,89.5 721.2,89.5 721.8,89.5 722.4,89.5 723.0,89.5 723.6,89.4 724.2,89.3 724.8,89.1 725.4,89.0 726.0,88.8 726.6,88.6 727.2,88.5 727.8,88.4 728.4,88.3 729.0,88.3 729.6,88.3 730.2,88.4 730.8,88.6 731.4,88.8 732.0,89.0 732.6,89.1 733.2,89.3 733.8,89.3 734.4,89.2 735.0,89.0 735.6,88.6 736.2,88.0 736.8,87.2 737.4,86.2 738.0,85.0 738.6,83.7 739.2,82.3 739.8,80.7 740.4,79.2 741.0,77.6 741.6,76.1 742.2,74.8 742.8,73.6 743.4,72.6 744.0,71.8 744.6,71.3 745.2,71.0 745.8,71.0 746.4,71.2 747.0,71.7 747.6,72.3 748.2,73.1 748.8,74.1 749.4,75.3 750.0,77.0 750.6,78.9 751.2,80.0 751.8,79.1 752.4,74.8 753.0,66.9 753.6,55.7 754.2,42.5 754.8,30.0 755.4,22.2 756.0,21.9 756.6,29.7 757.2,43.4 757.8,59.2 758.4,73.7 759.0,85.0 759.6,92.5 760.2,96.4 760.8,97.4 761.4,96.4 762.0,94.6 762.6,92.6 763.2,91.0 763.8,90.0 764.4,89.4 765.0,89.0 765.6,88.8 766.2,88.7 766.8,88.5 767.4,88.4 768.0,88.3 768.6,88.3 769.2,88.3 769.8,88.5 770.4,88.7 771.0,89.0 771.6,89.4 772.2,89.9 772.8,90.4 773.4,90.9 774.0,91.4 774.6,91.9 775.2,92.3 775.8,92.6 776.4,92.7 777.0,92.8 777.6,92.7 778.2,92.4 778.8,92.0 779.4,91.5 780.0,90.8 780.6,90.1 781.2,89.4 781.8,88.7 782.4,88.0 783.0,87.4 783.6,86.9 784.2,86.4 784.8,86.1 785.4,85.9 786.0,85.8 786.6,85.8 787.2,85.8 787.8,85.9 788.4,85.9 789.0,85.9 789.6,85.9 790.2,85.7 790.8,85.4 791.4,85.1 792.0,84.8 792.6,84.7 793.2,84.7 793.8,83.9 794.4,80.9 795.0,74.5 795.6,64.7 796.2,51.6 796.8,36.7 797.4,22.7 798.0,13.6 798.6,12.3 799.2,19.2 799.8,32.1 800.4,47.3 801.0,61.3 801.6,72.2 802.2,79.3 802.8,83.0 803.4,84.0 804.0,83.2 804.6,81.6 805.2,79.9 805.8,78.8 806.4,78.2 807.0,78.2 807.6,78.6 808.2,79.2 808.8,79.9 809.4,80.7 810.0,81.6 810.6,82.5 811.2,83.5 811.8,84.5 812.4,85.5 813.0,86.6 813.6,87.6 814.2,88.6 814.8,89.6 815.4,90.4 816.0,91.1 816.6,91.6 817.2,92.0 817.8,92.2 818.4,92.2 819.0,92.0 819.6,91.7 820.2,91.3 820.8,90.7 821.4,90.1 822.0,89.5 822.6,88.8 823.2,88.2 823.8,87.7 824.4,87.3 825.0,86.9 825.6,86.7 826.2,86.6 826.8,86.6 827.4,86.7 828.0,86.9 828.6,87.0 829.2,87.2 829.8,87.3 830.4,87.4 831.0,87.4 831.6,87.2 832.2,86.9 832.8,86.4 833.4,85.8 834.0,85.1 834.6,84.2 835.2,83.3 835.8,82.2 836.4,81.2 837.0,80.1 837.6,79.0 838.2,78.0 838.8,77.1 839.4,76.2 840.0,75.5 840.6,74.9 841.2,74.4 841.8,74.0 842.4,73.7 843.0,73.6 843.6,73.5 844.2,73.5 844.8,73.6 845.4,73.7 846.0,74.0 846.6,74.2 847.2,74.6 847.8,75.1 848.4,75.6 849.0,76.3 849.6,77.0 850.2,77.8 850.8,78.8 851.4,79.8 852.0,81.0 852.6,82.2 853.2,83.4 853.8,84.7 854.4,86.0 855.0,87.2 855.6,88.3 856.2,89.3 856.8,90.1 857.4,90.8 858.0,91.3 858.6,91.6 859.2,91.7 859.8,91.7 860.4,91.4 861.0,91.1 861.6,90.6 862.2,90.0 862.8,89.5 863.4,88.9 864.0,88.4 864.6,87.9 865.2,87.6 865.8,87.4 866.4,87.4 867.0,87.4 867.6,87.6 868.2,87.9 868.8,88.2 869.4,88.6 870.0,89.1 870.6,89.6 871.2,90.0 871.8,90.4 872.4,90.7 873.0,91.0 873.6,91.1 874.2,91.2 874.8,91.3 875.4,91.3 876.0,91.5 876.6,92.1 877.2,92.8 877.8,92.7 878.4,90.3 879.0,84.6 879.6,75.3 880.2,63.0 880.8,49.1 881.4,36.4 882.0,28.8 882.6,29.1 883.2,37.3 883.8,51.0 884.4,66.2 885.0,79.8 885.6,89.9 886.2,96.1 886.8,98.8 887.4,98.8 888.0,97.0 888.6,94.4 889.2,91.9 889.8,90.0 890.4,88.8 891.0,88.1 891.6,87.9 892.2,88.0 892.8,88.3 893.4,88.7 894.0,89.2 894.6,89.8 895.2,90.4 895.8,91.0 896.4,91.6 897.0,92.1 897.6,92.5 898.2,92.8 898.8,93.0 899.4,93.0 900.0,92.8\"/><text class=\"cap\" x=\"4\" y=\"193\">afib · 132 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0272",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "Pounding Headaches, Drenching Sweats and a Racing Heart in Spells for 6 Months With Blood Pressure Still High on Two Drugs in a 44-Year-Old Woman",
+  "type": "Pounding Headaches, Drenching Sweats and a Racing Heart in Spells for 6 Months With Blood Pressure Still High on Two Drugs in a 44-Year-Old Woman",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 44-year-old woman comes to the physician because of episodes of pounding headache, heavy sweating and a racing heart for 6 months. The episodes occur two or three times weekly, begin without warning, last 15 to 30 minutes and leave her pale and exhausted; one began while she was bending to tie her shoes. Hypertension was diagnosed 8 months ago; her blood pressure has remained high despite amlodipine and hydrochlorothiazide at full doses, which she takes as prescribed. She does not use alcohol, caffeine supplements or illicit drugs. Her mother had hypertension. Her vital signs are shown. She is thin and has a fine tremor of the outstretched hands. There is no thyroid enlargement. She has no facial plethora, abdominal striae or proximal muscle weakness. Cardiac examination shows no murmurs. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "CT scan of the abdomen with adrenal protocol",
+   "24-hour urine vanillylmandelic acid",
+   "Plasma aldosterone concentration and renin activity",
+   "Overnight 1-mg dexamethasone suppression test",
+   "Plasma free metanephrines"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계. ① 발작성 두통·발한·두근거림 + 두 약에도 높은 혈압 + 고혈당 → 갈색세포종 의심. ② 칼륨·중탄산 정상, 쿠싱 징후 없음, TSH 정상 → 알도스테론증·쿠싱·갑상선 중독증 가능성 낮음. ③ 갈색세포종은 생화학 확인이 영상보다 먼저 → 가장 민감한 혈장 유리 metanephrine.\n- 오답감별:\n  - (A) 부신 CT 는 생화학 진단 뒤 위치 확인용이다 — 먼저 찍으면 흔한 비기능 우연종에 끌린다.\n  - (B) 소변 VMA 는 민감도가 낮아 선별 검사로 쓰지 않는다 — 분획 metanephrine 으로 대체됐다.\n  - (C) 저항성 고혈압이면 알도스테론증 선별도 하지만, 이 환자의 발작성 아드레날린 증상은 갈색세포종을 가리키고 칼륨·중탄산이 정상이다.\n  - (D) 덱사메타손 억제 검사는 쿠싱 증후군 선별이다 — 얼굴 홍조·선조·근위부 근력 저하가 없다.\n- 임상핵심: 발작성 두통·발한·두근거림 + 고혈압 → 혈장 유리 metanephrine(생화학) 먼저 → 그 뒤 영상 → 수술 전 α 차단 먼저.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 399장 Pheochromocytoma.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 발작성 두통·발한·두근거림 + 두 약에도 높은 혈압 + 고혈당 → 갈색세포종 의심. ② 칼륨·중탄산 정상, 쿠싱 징후 없음, TSH 정상 → 알도스테론증·쿠싱·갑상선 중독증 가능성 낮음. ③ 갈색세포종은 생화학 확인이 영상보다 먼저 → 가장 민감한 혈장 유리 metanephrine."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 부신 CT 는 생화학 진단 뒤 위치 확인용이다 — 먼저 찍으면 흔한 비기능 우연종에 끌린다.\n(B) 소변 VMA 는 민감도가 낮아 선별 검사로 쓰지 않는다 — 분획 metanephrine 으로 대체됐다.\n(C) 저항성 고혈압이면 알도스테론증 선별도 하지만, 이 환자의 발작성 아드레날린 증상은 갈색세포종을 가리키고 칼륨·중탄산이 정상이다.\n(D) 덱사메타손 억제 검사는 쿠싱 증후군 선별이다 — 얼굴 홍조·선조·근위부 근력 저하가 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "발작성 두통·발한·두근거림 + 고혈압 → 혈장 유리 metanephrine(생화학) 먼저 → 그 뒤 영상 → 수술 전 α 차단 먼저."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 399장 Pheochromocytoma."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 399장 Pheochromocytoma)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.0 °C (98.6 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "102 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "172/104 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum sodium",
+    "value": "141 mEq/L",
+    "ref": "135–145 mEq/L"
+   },
+   {
+    "name": "Serum potassium",
+    "value": "4.4 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Serum bicarbonate",
+    "value": "25 mEq/L",
+    "ref": "22–28 mEq/L"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "0.8 mg/dL",
+    "ref": "0.6–1.1 mg/dL"
+   },
+   {
+    "name": "Fasting serum glucose",
+    "value": "128 mg/dL",
+    "ref": "70–99 mg/dL"
+   },
+   {
+    "name": "Hemoglobin A1c",
+    "value": "6.1%",
+    "ref": "< 5.7%"
+   },
+   {
+    "name": "Serum TSH",
+    "value": "1.6 μU/mL",
+    "ref": "0.4–4.0 μU/mL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "갈색세포종 진단 순서\n─────────────────────────────\n의심: 발작성 두통·발한·두근거림, 저항성·발작성 고혈압, 부신 우연종, 유전 증후군(MEN2·VHL·NF1·SDH)\n1) 생화학: 혈장 유리 metanephrine(누운 자세 채혈) 또는 24시간 소변 분획 metanephrine — VMA 는 쓰지 않는다\n   정상 상한 3~4배 ↑ → 거의 확진 · 경계 → clonidine 억제 검사·재검\n2) 위치: 복부·골반 CT 또는 MRI → 없으면 기능 영상(68Ga-DOTATATE PET, MIBG)\n3) 수술 전 α 차단(phenoxybenzamine·doxazosin) 10~14일 → 그 뒤 β 차단(먼저 β 차단 금지)\n4) 유전자 검사 권고",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 399장 Pheochromocytoma"
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "발작성 두통·발한·두근거림을 동반한 저항성 고혈압은 갈색세포종을 의심하고, 영상 전에 민감도가 가장 높은 혈장 유리 metanephrine 으로 생화학 확인을 먼저 한다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "영상(A)은 생화학 확인 뒤 위치 확인용이다 — 우연종이 흔해 먼저 찍지 않는다. 저항성 고혈압이면 알도스테론증 선별(C)도 흔히 하지만, 이 환자는 발작성 아드레날린 증상이 결정적이고 칼륨이 정상이다.",
+   "steps": 3,
+   "chain": [
+    "발작성 두통 + 발한 + 두근거림 + 창백 + 두 약에도 높은 혈압 + 고혈당 → 갈색세포종 의심",
+    "칼륨·중탄산 정상, 쿠싱 징후 없음, TSH 정상 → 알도스테론증·쿠싱·갑상선 중독증 가능성 낮음",
+    "갈색세포종은 생화학 확인이 영상보다 먼저 → 가장 민감한 혈장 유리 metanephrine"
+   ],
+   "key": [
+    {
+     "item": "episodes of pounding headache, heavy sweating and a racing heart",
+     "why": "갈색세포종의 고전적 세 증상",
+     "also": []
+    },
+    {
+     "item": "her blood pressure has remained high despite amlodipine and hydrochlorothiazide at full doses",
+     "why": "저항성 고혈압 — 이차성 고혈압 평가의 근거",
+     "also": []
+    },
+    {
+     "item": "Fasting serum glucose",
+     "why": "128 — 카테콜아민 과다에 따른 고혈당",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum potassium",
+     "why": "정상 — 원발성 알도스테론증(C)의 가능성을 낮춘다(배제는 아님)",
+     "also": []
+    },
+    {
+     "item": "She has no facial plethora, abdominal striae or proximal muscle weakness",
+     "why": "쿠싱 증후군(D) 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "Serum TSH",
+     "why": "정상 — 떨림·빈맥의 갑상선 중독증 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "She does not use alcohol, caffeine supplements or illicit drugs",
+     "why": "교감 신경 흥분 약물(코카인·암페타민)에 의한 발작 가능성 낮음",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Her mother had hypertension",
+     "why": "흔한 가족력 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "발작성 두통·발한·두근거림, 저항성 고혈압, 고혈당은 갈색세포종을 의심하게 한다. 다른 이차성 원인의 단서가 없고, 갈색세포종은 영상보다 생화학 확인이 먼저이므로 가장 민감한 혈장 유리 metanephrine 을 잰다.",
+   "switch": {
+    "choice": "A",
+    "condition": "혈장 유리 metanephrine 이 정상 상한의 3~4배 이상으로 이미 확인됐다면 다음 단계는 종양 위치를 찾는 복부 CT(A)다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.endo.pheochromocytoma.biochemical-testing-before-imaging",
+  "distractors": {
+   "A": {
+    "tempting": "부신 종양을 의심하니 바로 부신 CT 로 종괴를 찾고 싶어진다.",
+    "answer_first": "부신 우연종은 흔해 영상만으로는 기능 종양인지 알 수 없다. 갈색세포종은 생화학으로 먼저 확인하고 그 뒤에 위치를 찾는다.",
+    "discriminator": "검사 순서: 혈장 유리 metanephrine(기능) → CT/MRI(위치).",
+    "when_right": "metanephrine 이 크게 올라 생화학 진단이 이미 내려진 뒤.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "두 약에도 조절되지 않는 저항성 고혈압 — 가장 흔한 이차성 원인은 원발성 알도스테론증이다.",
+    "answer_first": "저항성 고혈압이면 알도스테론증 선별도 의미가 있지만, 이 환자의 발작성 두통·발한·두근거림·창백은 카테콜아민 과다를 가리키며 이를 확인하는 검사가 먼저다. 칼륨·중탄산도 정상이다.",
+    "discriminator": "발작성 아드레날린 증상 + 「Serum potassium」 4.4.",
+    "when_right": "발작성 증상 없이 저칼륨·대사성 알칼리증을 동반한 저항성 고혈압일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0273",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Blood Pressure Still 78/50 After Two Liters of Fluid and Two Units of Blood With Fluid Around the Liver and Spleen in a 29-Year-Old Motorcyclist",
+  "type": "Blood Pressure Still 78/50 After Two Liters of Fluid and Two Units of Blood With Fluid Around the Liver and Spleen in a 29-Year-Old Motorcyclist",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 29-year-old man is brought to the emergency department 30 minutes after he lost control of his motorcycle and struck a guardrail. He was wearing a helmet. On arrival, his airway is patent and he is speaking; Glasgow Coma Scale score is 14. Breath sounds are equal bilaterally. Two large-bore intravenous catheters are placed; 2 L of crystalloid and 2 units of uncrossmatched packed red blood cells are given, and the massive transfusion protocol is activated. Fifteen minutes later, his vital signs are those shown; oxygen saturation is 97% on 4 L/min of oxygen by nasal cannula. His skin is cool and mottled. There is an abrasion over the left lower ribs. The abdomen is distended and diffusely tender with guarding. The pelvis is stable to compression. There is no external bleeding, and the extremities show no deformities. Portable chest and pelvic x-rays show no fractures, pneumothorax or hemothorax. Focused assessment with sonography for trauma (FAST) shows free fluid in the hepatorenal and splenorenal spaces; the pericardial view shows no effusion. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Exploratory laparotomy in the operating room",
+   "Contrast-enhanced CT scan of the abdomen and pelvis",
+   "Diagnostic peritoneal lavage at the bedside",
+   "Angiography with splenic artery embolization",
+   "Needle pericardiocentesis at the bedside"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계. ① 수액 2 L + 적혈구 2단위 뒤에도 78/50·맥박 138·젖산 6.2 → 소생술 무반응 출혈성 쇼크. ② 흉부 X선·골반·심낭 창·외부 출혈 모두 음성 → 출혈원은 복강(FAST 양성). ③ 불안정 + FAST 양성 → 즉시 개복술(CT·색전술은 안정 환자의 선택지).\n- 오답감별:\n  - (B) 조영 CT 는 혈역학적으로 안정된 환자에게 손상 장기·등급을 보기 위한 검사다 — 소생술 무반응 환자는 CT 실로 보내지 않는다.\n  - (C) 진단적 복강 세척은 FAST 가 없거나 애매할 때 쓰는 대안이다 — 이미 FAST 가 복강 출혈을 보였다.\n  - (D) 비장 색전술은 안정적이거나 일시 반응하는 환자의 비수술 치료다 — 이 환자는 소생술에 반응하지 않는다.\n  - (E) FAST 심낭 창에 삼출이 없다 — 심장 눌림증의 근거가 없다.\n- 임상핵심: 둔상 + 소생술 무반응 쇼크 + FAST 양성 → 즉시 개복술. CT·색전술은 안정(또는 반응) 환자에게만.\n- 출처: ATLS Student Course Manual, 10e(Abdominal and pelvic trauma); Sabiston Textbook of Surgery, 21e.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 수액 2 L + 적혈구 2단위 뒤에도 78/50·맥박 138·젖산 6.2 → 소생술 무반응 출혈성 쇼크. ② 흉부 X선·골반·심낭 창·외부 출혈 모두 음성 → 출혈원은 복강(FAST 양성). ③ 불안정 + FAST 양성 → 즉시 개복술(CT·색전술은 안정 환자의 선택지)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 조영 CT 는 혈역학적으로 안정된 환자에게 손상 장기·등급을 보기 위한 검사다 — 소생술 무반응 환자는 CT 실로 보내지 않는다.\n(C) 진단적 복강 세척은 FAST 가 없거나 애매할 때 쓰는 대안이다 — 이미 FAST 가 복강 출혈을 보였다.\n(D) 비장 색전술은 안정적이거나 일시 반응하는 환자의 비수술 치료다 — 이 환자는 소생술에 반응하지 않는다.\n(E) FAST 심낭 창에 삼출이 없다 — 심장 눌림증의 근거가 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "둔상 + 소생술 무반응 쇼크 + FAST 양성 → 즉시 개복술. CT·색전술은 안정(또는 반응) 환자에게만."
+   },
+   {
+    "k": "출처",
+    "v": "ATLS Student Course Manual, 10e(Abdominal and pelvic trauma); Sabiston Textbook of Surgery, 21e."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual, 10e; Sabiston Textbook of Surgery, 21e — Abdominal trauma)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.1 °C (97.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "138 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "28 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "78/50 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "9.1 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Arterial pH",
+    "value": "7.24",
+    "ref": "7.35–7.45"
+   },
+   {
+    "name": "Serum lactate",
+    "value": "6.2 mmol/L",
+    "ref": "0.5–2.0 mmol/L"
+   },
+   {
+    "name": "Base deficit",
+    "value": "9 mEq/L",
+    "ref": "-2 to +2 mEq/L"
+   },
+   {
+    "name": "Blood ethanol",
+    "value": "Undetectable",
+    "ref": "Undetectable"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "둔상 복부 손상 — 혈역학으로 가른다(ATLS)\n─────────────────────────────\n불안정 + FAST 양성 → 즉시 개복술\n불안정 + FAST 음성/애매 → 다른 출혈원(흉부·골반·장골·외부) 재평가, 필요시 DPL·반복 FAST\n안정(또는 소생술 반응) + FAST 양성 → 조영 CT → 고형 장기 손상은 비수술·색전술 고려\n복막염·장기 탈출·총상(복막 관통) → 개복술",
+   "참고문헌": [
+    "American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS) Student Course Manual, 10e. 2018. Abdominal and pelvic trauma.",
+    "Townsend CM, et al., eds. Sabiston Textbook of Surgery, 21e. Elsevier; 2022. The management of acute trauma."
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "수액·수혈에 반응하지 않는 둔상 출혈성 쇼크에서 흉부·골반·심낭이 원인이 아니고 FAST 에 복강 내 자유 액체가 있으면 CT 없이 즉시 개복술이다.",
+   "rival": [
+    "B",
+    "D"
+   ],
+   "discriminator": "CT(B)와 혈관 색전술(D)은 혈역학적으로 안정되거나 소생술에 반응하는 환자의 선택지다 — 이 환자는 2 L + 2단위 뒤에도 78/50 이다.",
+   "steps": 3,
+   "chain": [
+    "수액 2 L + 적혈구 2단위 뒤에도 78/50 · 맥박 138 · 젖산 6.2 → 소생술 무반응 출혈성 쇼크",
+    "흉부 X선 혈흉 없음 + 골반 안정·골절 없음 + 심낭 삼출 없음 + 외부 출혈 없음 → 출혈원은 복강",
+    "불안정 + FAST 양성 → CT·색전술이 아닌 즉시 개복술"
+   ],
+   "key": [
+    {
+     "item": "2 L of crystalloid and 2 units of uncrossmatched packed red blood cells are given",
+     "why": "그 뒤에도 저혈압 — 소생술 무반응",
+     "also": []
+    },
+    {
+     "item": "Blood pressure",
+     "why": "78/50 — 불안정: CT·색전술 대상이 아니다",
+     "also": []
+    },
+    {
+     "item": "free fluid in the hepatorenal and splenorenal spaces",
+     "why": "FAST 양성 — 복강 출혈",
+     "also": []
+    },
+    {
+     "item": "Serum lactate",
+     "why": "6.2 — 조직 저관류(쇼크)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Portable chest and pelvic x-rays show no fractures, pneumothorax or hemothorax",
+     "why": "흉강·골반 출혈원과 긴장성 기흉 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "the pericardial view shows no effusion",
+     "why": "심장 눌림증 가능성 낮음 — 심낭 천자(E) 근거 없음",
+     "also": []
+    },
+    {
+     "item": "The pelvis is stable to compression",
+     "why": "골반 출혈 가능성 낮음",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Glasgow Coma Scale score is 14",
+     "why": "경미한 의식 저하 — 쇼크·두부 손상 가능, 개복 결정을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "There is an abrasion over the left lower ribs",
+     "why": "좌하부 늑골 손상 — 비장 손상을 시사하지만 처치 결정은 혈역학이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "수액·수혈 뒤에도 저혈압이 지속되는 둔상 출혈성 쇼크다. 흉부·골반·심낭이 원인이 아니고 FAST 에서 복강 액체가 보이므로, 불안정한 환자에서는 CT·색전술 없이 즉시 개복술로 지혈한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 FAST 양성 환자가 초기 수액 뒤 혈압 118/72·맥박 92 로 안정을 유지한다면, 손상 장기·등급을 보는 조영 CT(B)가 다음 단계다(비장 손상이면 비수술·색전술 고려)."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.gs.blunt-abdominal-trauma.unstable-fast-positive-laparotomy",
+  "distractors": {
+   "B": {
+    "tempting": "손상 장기와 정도를 정확히 알아야 수술·비수술을 고를 수 있으니 CT 가 먼저일 것 같다.",
+    "answer_first": "CT 는 혈역학적으로 안정된 환자의 검사다. 2 L + 2단위 뒤에도 78/50 인 환자는 CT 실에서 무너질 수 있고, FAST 가 이미 복강 출혈을 보였다.",
+    "discriminator": "「Blood pressure」 78/50 after 2 L + 2 units.",
+    "when_right": "FAST 양성이어도 소생술 뒤 혈역학이 안정될 때.",
+    "split": ""
+   },
+   "D": {
+    "tempting": "좌하부 늑골 찰과상 + 비신 공간 액체 — 비장 손상은 요즘 색전술로 많이 살린다.",
+    "answer_first": "비장 색전술은 안정적인(또는 일시 반응) 환자의 비수술 치료다. 소생술에 반응하지 않는 쇼크에서는 개복해 지혈한다.",
+    "discriminator": "소생술 무반응 — 「78/50」 · 「Serum lactate」 6.2.",
+    "when_right": "CT 에서 비장 조영제 유출이 보이지만 혈역학이 안정된 환자.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0274",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Four Months of Trouble Climbing Stairs, a Dry Mouth and Knee Reflexes That Appear Only After He Pushes Hard in a 61-Year-Old Who Smokes",
+  "type": "Four Months of Trouble Climbing Stairs, a Dry Mouth and Knee Reflexes That Appear Only After He Pushes Hard in a 61-Year-Old Who Smokes",
+  "difficulty": 3,
+  "created": "2026-11-12",
+  "vignette": "A 61-year-old man comes to the physician because of difficulty climbing stairs and getting up from low chairs for 4 months. He also has a dry mouth, constipation and erectile dysfunction that began over the same period. In the past 3 weeks, his eyelids have occasionally felt heavy late in the day. He has not had double vision, difficulty swallowing, muscle pain or numbness. He has smoked 1.5 packs of cigarettes daily for 40 years. He has lost 5 kg over 4 months. His vital signs are shown. There is mild bilateral ptosis. Strength is 4/5 in the hip flexors and shoulder abductors and 5/5 distally; handgrip is weak at first and becomes stronger over several seconds of sustained effort. Knee and ankle reflexes are absent at rest; after 10 seconds of maximal quadriceps contraction, the knee reflexes can be elicited. There are no fasciculations, and muscle bulk is normal. Plantar responses are flexor. Sensation to pinprick, vibration and joint position is normal. Laboratory results are shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Generalized myasthenia gravis",
+   "Inflammatory myopathy (polymyositis)",
+   "Amyotrophic lateral sclerosis",
+   "Lambert-Eaton myasthenic syndrome",
+   "Chronic inflammatory demyelinating neuropathy"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 2단계. ① 근위부 근력 저하 + 입 마름·변비·발기부전 + 사라진 반사가 최대 수축 뒤 나타남 + 지속 노력에 세지는 악력 → 시냅스 앞 신경근 접합부 장애(LEMS). ② 감각 정상·CK 정상·근섬유다발수축 없음 → CIDP·다발근염·ALS 가능성 낮음. 흡연력 → 소세포 폐암 탐색(흉부 CT).\n- 오답감별:\n  - (A) 중증 근무력증은 반복할수록 약해지고 반사·자율신경이 정상이다 — 이 환자는 지속 수축 뒤 반사가 나타나고 자율신경 증상이 있다.\n  - (B) 다발근염은 근위부 근력 저하에 CK 가 오르고 반사는 보존된다 — CK 정상, 반사 소실.\n  - (C) ALS 는 상·하위 운동신경원 징후(근섬유다발수축·위축·과반사)가 섞이고 자율신경은 보존된다.\n  - (E) CIDP 는 반사가 없지만 감각 이상이 동반되고 수축 뒤 반사가 돌아오지 않는다.\n- 임상핵심: 근위부 근력 저하 + 자율신경 증상 + 운동 후 촉진(반사·근력) = LEMS → 소세포 폐암을 찾는다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 459장 Myasthenia Gravis and Other Diseases of the Neuromuscular Junction.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계. ① 근위부 근력 저하 + 입 마름·변비·발기부전 + 사라진 반사가 최대 수축 뒤 나타남 + 지속 노력에 세지는 악력 → 시냅스 앞 신경근 접합부 장애(LEMS). ② 감각 정상·CK 정상·근섬유다발수축 없음 → CIDP·다발근염·ALS 가능성 낮음. 흡연력 → 소세포 폐암 탐색(흉부 CT)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 중증 근무력증은 반복할수록 약해지고 반사·자율신경이 정상이다 — 이 환자는 지속 수축 뒤 반사가 나타나고 자율신경 증상이 있다.\n(B) 다발근염은 근위부 근력 저하에 CK 가 오르고 반사는 보존된다 — CK 정상, 반사 소실.\n(C) ALS 는 상·하위 운동신경원 징후(근섬유다발수축·위축·과반사)가 섞이고 자율신경은 보존된다.\n(E) CIDP 는 반사가 없지만 감각 이상이 동반되고 수축 뒤 반사가 돌아오지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "근위부 근력 저하 + 자율신경 증상 + 운동 후 촉진(반사·근력) = LEMS → 소세포 폐암을 찾는다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 459장 Myasthenia Gravis and Other Diseases of the Neuromuscular Junction."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 459장 Myasthenia Gravis and Other Diseases of the Neuromuscular Junction)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "82 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "14 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "134/80 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum creatine kinase",
+    "value": "96 U/L",
+    "ref": "39–308 U/L"
+   },
+   {
+    "name": "Serum TSH",
+    "value": "2.2 μU/mL",
+    "ref": "0.4–4.0 μU/mL"
+   },
+   {
+    "name": "Serum calcium",
+    "value": "9.4 mg/dL",
+    "ref": "8.6–10.2 mg/dL"
+   },
+   {
+    "name": "Hemoglobin A1c",
+    "value": "5.5%",
+    "ref": "< 5.7%"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 459장 Myasthenia Gravis and Other Diseases of the Neuromuscular Junction"
+   ]
+  },
+  "design": {
+   "target": "진단",
+   "decision": "근위부 근력 저하 + 자율신경 증상 + 지속 수축 뒤 나타나는 반사·세지는 악력은 시냅스 앞 신경근 접합부 장애(LEMS)다.",
+   "rival": [
+    "A",
+    "E"
+   ],
+   "discriminator": "중증 근무력증(A)은 반복할수록 약해지고 반사·자율신경이 정상이다 — 이 환자는 힘을 줄수록 세지고 반사가 나타나며 자율신경 증상이 있다. CIDP(E)도 반사가 없지만 감각 이상이 있고 운동 후 촉진이 없다.",
+   "steps": 2,
+   "chain": [
+    "근위부 근력 저하 + 입 마름·변비·발기부전 + 사라진 반사가 최대 수축 뒤 나타남 + 악력이 지속 노력에 세짐 → 시냅스 앞 신경근 접합부(LEMS)",
+    "감각 정상 + CK 정상 + 근섬유다발수축·상위운동신경원 징후 없음 → CIDP·다발근염·ALS 가능성 낮음"
+   ],
+   "key": [
+    {
+     "item": "after 10 seconds of maximal quadriceps contraction, the knee reflexes can be elicited",
+     "why": "운동 후 촉진 — 시냅스 앞 칼슘 축적",
+     "also": []
+    },
+    {
+     "item": "handgrip is weak at first and becomes stronger over several seconds of sustained effort",
+     "why": "지속 노력에 세지는 근력 — 근무력증과 반대",
+     "also": []
+    },
+    {
+     "item": "He also has a dry mouth, constipation and erectile dysfunction",
+     "why": "콜린성 자율신경 장애 — 칼슘 통로 항체의 자율신경 침범",
+     "also": []
+    },
+    {
+     "item": "Strength is 4/5 in the hip flexors and shoulder abductors and 5/5 distally",
+     "why": "근위부 우세 근력 저하",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Sensation to pinprick, vibration and joint position is normal",
+     "why": "CIDP(E) 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "Serum creatine kinase",
+     "why": "정상 — 다발근염(B) 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "There are no fasciculations, and muscle bulk is normal",
+     "why": "ALS(C) 가능성 낮음",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has smoked 1.5 packs of cigarettes daily for 40 years",
+     "why": "소세포 폐암 동반 의심 — 흉부 CT 로 이어진다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "There is mild bilateral ptosis",
+     "why": "중증 근무력증(A)으로 끌리게 하지만 LEMS 에서도 경미하게 올 수 있다",
+     "also": []
+    }
+   ],
+   "summary": "근위부 근력 저하, 자율신경 증상, 지속 수축 뒤 나타나는 반사와 세지는 악력은 시냅스 앞 신경근 접합부 장애인 LEMS 다. 감각·CK 정상과 운동신경원 징후 부재가 다른 진단을 낮추고, 흡연력은 소세포 폐암 탐색으로 이어진다.",
+   "switch": {
+    "choice": "A",
+    "condition": "근력이 반복할수록 약해지고 반사·자율신경이 정상이며 복시·연하 곤란이 두드러졌다면 중증 근무력증(A)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.neuro.lambert-eaton.presynaptic-facilitation-diagnosis",
+  "distractors": {
+   "A": {
+    "tempting": "눈꺼풀 처짐과 「근무력」이 있는 근력 저하 — 중증 근무력증이 가장 먼저 떠오른다.",
+    "answer_first": "중증 근무력증은 쓸수록 약해지고 반사·자율신경은 정상이다. 이 환자는 힘을 줄수록 세지고 사라진 반사가 수축 뒤 나타나며 입 마름·발기부전이 있다 — 시냅스 앞 장애다.",
+    "discriminator": "「the knee reflexes can be elicited」 after contraction + 자율신경 증상.",
+    "when_right": "복시·눈꺼풀 처짐·연하 곤란이 주이고 반복할수록 약해지며 반사가 정상일 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "근력 저하 + 반사 소실 — 탈수초성 다발신경병증을 떠올린다.",
+    "answer_first": "CIDP 는 감각 이상이 거의 항상 있고, 수축 뒤 반사가 다시 나타나지 않는다. 감각이 정상이다.",
+    "discriminator": "「Sensation to pinprick, vibration and joint position is normal」 + 운동 후 촉진.",
+    "when_right": "두 달 넘게 진행하는 대칭성 근위·원위 근력 저하에 감각 이상과 뇌척수액 단백 상승이 있을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0275",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Forceful Milky Vomiting After Every Feed for 4 Days, a Hungry Cry and a Sunken Fontanelle in a 5-Week-Old Boy",
+  "type": "Forceful Milky Vomiting After Every Feed for 4 Days, a Hungry Cry and a Sunken Fontanelle in a 5-Week-Old Boy",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 5-week-old boy is brought to the emergency department because of vomiting for 4 days. The vomiting occurs within minutes of every feed, is forceful enough to reach the floor and contains curdled milk without green material; immediately afterward he cries and wants to feed again. He has had two wet diapers in the past 24 hours. He was born at term and is his parents' first child. His vital signs are shown. He weighs 140 g less than at his 2-week visit. He is fussy but consolable. The anterior fontanelle is sunken, the mucous membranes are dry, and capillary refill time is 3 seconds. The abdomen is soft and not distended; there is no hepatosplenomegaly. Laboratory results are shown. Abdominal ultrasonography shows a pyloric muscle thickness of 5 mm and a pyloric channel length of 19 mm.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Pyloromyotomy within the next few hours",
+   "Rapid intravenous potassium chloride infusion",
+   "Intravenous isotonic saline and electrolyte correction",
+   "Oral electrolyte solution and observation",
+   "Endoscopic balloon dilation of the pylorus"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계. ① 담즙 없는 분출성 구토 + 토한 뒤 배고픔 + 유문근 5 mm·길이 19 mm → 비후성 유문 협착. ② Cl 82·K 2.9·HCO3 36·pH 7.54 + 탈수 징후 → 저염소성·저칼륨성 대사성 알칼리증 + 중등도 탈수 — 마취 뒤 무호흡 위험으로 수술 전 교정. ③ 염소 반응성 → 정맥 등장성 식염수 볼루스 → 포도당 식염수 + 소변 확인 뒤 칼륨 → 교정 뒤 유문근 절개.\n- 오답감별:\n  - (A) 유문근 절개술은 근본 치료지만 탈수·알칼리증 교정 뒤에 한다 — 알칼리증이 남으면 마취 뒤 무호흡 위험이 크다.\n  - (B) 칼륨 급속 주입은 영아에서 부정맥 위험이 있고, 소변이 줄어 있어 순환 회복과 소변 확인이 먼저다.\n  - (D) 매 수유 직후 분출성 구토 — 경구 보충은 유지되지 않고 중등도 탈수는 정맥 수액이 필요하다.\n  - (E) 내시경 풍선 확장은 영아 유문 협착의 표준 치료가 아니다 — 표준은 유문근 절개술이다.\n- 임상핵심: 유문 협착은 내과적 응급부터: 식염수로 탈수·저염소성 알칼리증 교정 → 소변 확인 뒤 칼륨 → 그 뒤 유문근 절개술.\n- 출처: Nelson Textbook of Pediatrics, 22e(Pyloric stenosis); Sabiston Textbook of Surgery, 21e(Pediatric surgery).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 담즙 없는 분출성 구토 + 토한 뒤 배고픔 + 유문근 5 mm·길이 19 mm → 비후성 유문 협착. ② Cl 82·K 2.9·HCO3 36·pH 7.54 + 탈수 징후 → 저염소성·저칼륨성 대사성 알칼리증 + 중등도 탈수 — 마취 뒤 무호흡 위험으로 수술 전 교정. ③ 염소 반응성 → 정맥 등장성 식염수 볼루스 → 포도당 식염수 + 소변 확인 뒤 칼륨 → 교정 뒤 유문근 절개."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 유문근 절개술은 근본 치료지만 탈수·알칼리증 교정 뒤에 한다 — 알칼리증이 남으면 마취 뒤 무호흡 위험이 크다.\n(B) 칼륨 급속 주입은 영아에서 부정맥 위험이 있고, 소변이 줄어 있어 순환 회복과 소변 확인이 먼저다.\n(D) 매 수유 직후 분출성 구토 — 경구 보충은 유지되지 않고 중등도 탈수는 정맥 수액이 필요하다.\n(E) 내시경 풍선 확장은 영아 유문 협착의 표준 치료가 아니다 — 표준은 유문근 절개술이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "유문 협착은 내과적 응급부터: 식염수로 탈수·저염소성 알칼리증 교정 → 소변 확인 뒤 칼륨 → 그 뒤 유문근 절개술."
+   },
+   {
+    "k": "출처",
+    "v": "Nelson Textbook of Pediatrics, 22e(Pyloric stenosis); Sabiston Textbook of Surgery, 21e(Pediatric surgery)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics, 22e — Pyloric stenosis; Sabiston Textbook of Surgery, 21e — Pediatric surgery)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.0 °C (98.6 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "172 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "30 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "72/44 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum sodium",
+    "value": "131 mEq/L",
+    "ref": "135–145 mEq/L"
+   },
+   {
+    "name": "Serum potassium",
+    "value": "2.9 mEq/L",
+    "ref": "3.5–5.5 mEq/L"
+   },
+   {
+    "name": "Serum chloride",
+    "value": "82 mEq/L",
+    "ref": "98–106 mEq/L"
+   },
+   {
+    "name": "Serum bicarbonate",
+    "value": "36 mEq/L",
+    "ref": "18–26 mEq/L"
+   },
+   {
+    "name": "Blood urea nitrogen",
+    "value": "27 mg/dL",
+    "ref": "5–18 mg/dL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "0.5 mg/dL",
+    "ref": "0.2–0.4 mg/dL"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "74 mg/dL",
+    "ref": "60–100 mg/dL"
+   },
+   {
+    "name": "Venous pH",
+    "value": "7.54",
+    "ref": "7.32–7.42"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "비후성 유문 협착 — 순서\n─────────────────────────────\n진단: 초음파(근육 두께 ≥ 3~4 mm, 길이 ≥ 15~16 mm)\n1) 등장성 식염수 볼루스(탈수 시 10~20 mL/kg)\n2) 유지 수액: 포도당 포함 식염수 + 소변 확인 뒤 KCl\n3) 목표: Cl ≥ 100, HCO3 < 30 정도, 소변 충분 → 그 뒤 유문근 절개술(개복·복강경)\n알칼리증이 남은 채 마취 → 수술 뒤 무호흡 위험",
+   "참고문헌": [
+    "Kliegman RM, et al., eds. Nelson Textbook of Pediatrics, 22e. Elsevier; 2024. Pyloric stenosis and other congenital anomalies of the stomach.",
+    "Townsend CM, et al., eds. Sabiston Textbook of Surgery, 21e. Elsevier; 2022. Pediatric surgery."
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "진단된 유문 협착이라도 탈수와 저염소성·저칼륨성 대사성 알칼리증을 정맥 등장성 식염수로 먼저 교정한 뒤 유문근 절개술을 한다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "수술(A)은 확진됐어도 알칼리증·탈수 교정 뒤다 — HCO3 36, pH 7.54 로 마취 뒤 무호흡 위험이 높다. 칼륨(B)은 필요하지만 급속 주입은 위험하고 소변 확인 뒤 수액에 섞어 준다 — 알칼리증을 푸는 열쇠는 염소(식염수)다.",
+   "steps": 3,
+   "chain": [
+    "담즙 없는 분출성 구토 + 토한 뒤 배고픔 + 유문근 5 mm·길이 19 mm → 비후성 유문 협착",
+    "Cl 82 · K 2.9 · HCO3 36 · pH 7.54 + 맥박 172·대천문 함몰·소변 감소 → 저염소성 대사성 알칼리증 + 중등도 탈수: 수술 전 교정 필요",
+    "염소 반응성 알칼리증 → 등장성 식염수 볼루스 후 포도당 식염수, 소변이 나오면 칼륨 → 교정 뒤 유문근 절개"
+   ],
+   "key": [
+    {
+     "item": "contains curdled milk without green material",
+     "why": "담즙 없음 — 유문(십이지장 앞) 폐쇄",
+     "also": []
+    },
+    {
+     "item": "a pyloric muscle thickness of 5 mm and a pyloric channel length of 19 mm",
+     "why": "유문 협착 진단 기준 충족",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Serum chloride",
+     "why": "82 — 저염소혈증: 식염수로 염소를 채워야 알칼리증이 풀린다",
+     "also": []
+    },
+    {
+     "item": "Serum bicarbonate",
+     "why": "36 — 알칼리증이 남으면 마취 뒤 무호흡 위험: 즉시 수술(A)을 미룬다",
+     "also": []
+    },
+    {
+     "item": "Serum potassium",
+     "why": "2.9 — 보충 필요하지만 소변 확인 뒤 수액에 섞어 천천히(B 급속 주입 아님)",
+     "also": []
+    },
+    {
+     "item": "He has had two wet diapers in the past 24 hours",
+     "why": "소변 감소 — 칼륨 투여 전 소변을 확인해야 한다",
+     "also": []
+    },
+    {
+     "item": "the anterior fontanelle is sunken",
+     "why": "중등도 탈수 — 정맥 볼루스가 필요, 경구 보충(D)으로는 부족",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "immediately afterward he cries and wants to feed again",
+     "why": "유문 협착의 전형적 「배고픈 구토 아기」",
+     "also": []
+    },
+    {
+     "item": "his parents' first child",
+     "why": "첫째 남아 — 위험 인자, 처치 결정과는 무관",
+     "also": []
+    }
+   ],
+   "summary": "유문 협착이 확진됐지만 탈수와 저염소성·저칼륨성 대사성 알칼리증이 있다. 알칼리증은 마취 뒤 무호흡 위험이 있어 수술보다 먼저 정맥 등장성 식염수로 순환과 염소를 채우고, 소변이 나오면 칼륨을 더해 교정한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 아기가 24시간 수액 치료 뒤 Cl 102·HCO3 26·K 4.0 으로 교정되고 소변이 충분하다면 유문근 절개술(A)이 다음 단계다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.peds.pyloric-stenosis.correct-alkalosis-before-pyloromyotomy",
+  "distractors": {
+   "A": {
+    "tempting": "초음파로 확진됐고 근본 치료는 유문근 절개술이니 빨리 수술하고 싶어진다.",
+    "answer_first": "유문 협착은 외과적 응급이 아니다. HCO3 36·pH 7.54 의 알칼리증과 탈수를 교정하지 않고 마취하면 수술 뒤 무호흡 위험이 크다 — 식염수로 먼저 교정한다.",
+    "discriminator": "「Serum bicarbonate」 36 · 「Venous pH」 7.54 · 대천문 함몰.",
+    "when_right": "수액 치료로 전해질·산염기와 탈수가 교정된 뒤.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "칼륨이 2.9 로 낮다 — 저칼륨혈증부터 빨리 올려야 할 것 같다.",
+    "answer_first": "칼륨은 보충하지만 영아에게 급속 주입은 위험하고, 소변이 줄어 있어 먼저 순환을 회복해야 한다. 알칼리증을 푸는 것은 염소(식염수)다.",
+    "discriminator": "「He has had two wet diapers in the past 24 hours」 + 「Serum chloride」 82.",
+    "when_right": "해당 없음 — 영아 저칼륨혈증은 소변 확인 뒤 수액에 섞어 천천히 보충한다.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0276",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "A Soft Uterus Above the Umbilicus and 1,200 mL of Bleeding 30 Minutes After a 4.3-kg Birth in a 32-Year-Old With Asthma",
+  "type": "A Soft Uterus Above the Umbilicus and 1,200 mL of Bleeding 30 Minutes After a 4.3-kg Birth in a 32-Year-Old With Asthma",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 32-year-old woman, gravida 2, para 2, has heavy vaginal bleeding 30 minutes after a spontaneous vaginal delivery of a 4.3-kg (9.5-lb) boy at 40 weeks' gestation. Labor lasted 19 hours and was augmented with oxytocin. The placenta delivered spontaneously and was inspected and found to be complete. Estimated blood loss is 1,200 mL. She has moderate persistent asthma treated with inhaled fluticasone-salmeterol and was hospitalized for an asthma exacerbation 1 year ago; she has no wheezing today. Her blood pressure throughout pregnancy and labor ranged from 108/66 to 122/78 mm Hg. She has no history of liver disease. Her vital signs are shown. The uterine fundus is soft and boggy and is palpated 3 cm above the umbilicus; it firms briefly with bimanual massage. Inspection of the cervix and vagina shows no lacerations or hematoma. An oxytocin infusion is running, and two large-bore intravenous catheters are in place. Laboratory results are shown. Further pharmacologic treatment is planned.",
+  "question": "Administration of which of the following agents should be avoided in this patient?",
+  "options": [
+   "Methylergonovine",
+   "Carboprost tromethamine",
+   "Misoprostol",
+   "Tranexamic acid",
+   "Additional oxytocin"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계. ① 태반 완전·열상 없음·응고 정상 + 물렁하고 큰 자궁 → 자궁 이완성 산후 출혈. ② 임신·진통 중 혈압 정상 → methylergonovine 사용 가능. ③ 중등도 지속성 천식 → carboprost(PGF2α)는 기관지 경련 위험으로 피한다.\n- 오답감별:\n  - (A) methylergonovine 은 고혈압·전자간증에서 금기다 — 이 환자는 혈압이 정상이라 쓸 수 있다.\n  - (C) misoprostol 은 PGE1 이라 기관지 수축이 없어 천식에서도 쓸 수 있다.\n  - (D) tranexamic acid 는 산후 출혈 진단 뒤 3시간 안에 권고된다 — 천식과 무관하다.\n  - (E) 옥시토신은 1차 약으로 계속한다 — 천식과 무관하다.\n- 임상핵심: 자궁 이완 2차 약 — 천식이면 carboprost(PGF2α) 피하고, 고혈압·전자간증이면 methylergonovine 피한다.\n- 출처: Williams Obstetrics, 26e(Obstetrical hemorrhage); Gabbe's Obstetrics, 8e(Postpartum hemorrhage).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 태반 완전·열상 없음·응고 정상 + 물렁하고 큰 자궁 → 자궁 이완성 산후 출혈. ② 임신·진통 중 혈압 정상 → methylergonovine 사용 가능. ③ 중등도 지속성 천식 → carboprost(PGF2α)는 기관지 경련 위험으로 피한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) methylergonovine 은 고혈압·전자간증에서 금기다 — 이 환자는 혈압이 정상이라 쓸 수 있다.\n(C) misoprostol 은 PGE1 이라 기관지 수축이 없어 천식에서도 쓸 수 있다.\n(D) tranexamic acid 는 산후 출혈 진단 뒤 3시간 안에 권고된다 — 천식과 무관하다.\n(E) 옥시토신은 1차 약으로 계속한다 — 천식과 무관하다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "자궁 이완 2차 약 — 천식이면 carboprost(PGF2α) 피하고, 고혈압·전자간증이면 methylergonovine 피한다."
+   },
+   {
+    "k": "출처",
+    "v": "Williams Obstetrics, 26e(Obstetrical hemorrhage); Gabbe's Obstetrics, 8e(Postpartum hemorrhage)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Williams Obstetrics, 26e — Obstetrical hemorrhage; Gabbe's Obstetrics: Normal and Problem Pregnancies, 8e — Postpartum hemorrhage)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.4 °C (99.3 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "118 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "22 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "104/64 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin (before delivery)",
+    "value": "12.1 g/dL",
+    "ref": "11.0–14.0 g/dL (third trimester)"
+   },
+   {
+    "name": "Hemoglobin (now)",
+    "value": "9.4 g/dL",
+    "ref": "11.0–14.0 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "214,000 /mm3",
+    "ref": "150,000–400,000 /mm3"
+   },
+   {
+    "name": "Fibrinogen",
+    "value": "390 mg/dL",
+    "ref": "300–600 mg/dL (pregnancy)"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "자궁 이완성 산후 출혈 — 자궁수축제와 금기\n─────────────────────────────\n옥시토신: 1차 — 빠른 정맥 볼루스 시 저혈압\nmethylergonovine(맥각): 고혈압·전자간증·관상동맥 질환 금기\ncarboprost(15-methyl PGF2α): 천식 금기(기관지 경련), 설사 흔함\nmisoprostol(PGE1): 금기 적음 — 발열·떨림\ntranexamic acid: 진단 뒤 3시간 안에 1 g 정맥(10분 뒤 재투여 가능)\n약으로 안 되면: 자궁 내 풍선 탐폰 → 색전술·수술(B-Lynch·혈관 결찰·자궁 절제)",
+   "참고문헌": [
+    "Cunningham FG, et al., eds. Williams Obstetrics, 26e. McGraw Hill; 2022. Obstetrical hemorrhage.",
+    "Landon MB, et al., eds. Gabbe's Obstetrics: Normal and Problem Pregnancies, 8e. Elsevier; 2021. Postpartum hemorrhage."
+   ]
+  },
+  "design": {
+   "target": "금기",
+   "decision": "자궁 이완성 산후 출혈의 2차 자궁수축제는 환자의 동반 질환으로 고른다 — 천식이면 carboprost(PGF2α)를 피하고, 혈압이 정상이면 methylergonovine 은 쓸 수 있다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "methylergonovine(A)의 금기는 고혈압·전자간증인데 혈압은 임신 내내 정상이었다. misoprostol(C)은 프로스타글란딘이지만 PGE1 이라 기관지 수축이 없다 — 천식에서 피할 약은 PGF2α 인 carboprost 다.",
+   "steps": 3,
+   "chain": [
+    "태반 완전 + 열상·혈종 없음 + 응고 정상 + 물렁하고 큰 자궁 → 자궁 이완성 산후 출혈",
+    "임신·진통 중 혈압 108/66~122/78 → 고혈압·전자간증 없음 → methylergonovine 사용 가능",
+    "중등도 지속성 천식(입원력) → PGF2α(carboprost)의 기관지 경련 위험 → 피할 약"
+   ],
+   "key": [
+    {
+     "item": "The uterine fundus is soft and boggy and is palpated 3 cm above the umbilicus",
+     "why": "자궁 이완",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The placenta delivered spontaneously and was inspected and found to be complete",
+     "why": "태반 잔류 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "Inspection of the cervix and vagina shows no lacerations or hematoma",
+     "why": "산도 손상 출혈 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "Fibrinogen",
+     "why": "정상 — 응고 장애가 주원인이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has moderate persistent asthma",
+     "why": "carboprost(B) 금기 — 기관지 경련",
+     "also": []
+    },
+    {
+     "item": "Her blood pressure throughout pregnancy and labor ranged from 108/66 to 122/78 mm Hg",
+     "why": "고혈압·전자간증 없음 — methylergonovine(A) 사용 가능",
+     "also": []
+    },
+    {
+     "item": "she has no wheezing today",
+     "why": "지금 증상이 없어도 천식 병력 자체가 carboprost 를 피할 이유다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "a 4.3-kg (9.5-lb) boy",
+     "why": "거대아 — 자궁 과다 신전, 이완의 위험 인자",
+     "also": []
+    },
+    {
+     "item": "She has no history of liver disease",
+     "why": "판단을 바꾸지 않는 병력",
+     "also": []
+    }
+   ],
+   "summary": "태반·산도·응고가 원인이 아니고 자궁이 물렁해 자궁 이완성 산후 출혈이다. 혈압이 정상이라 methylergonovine 은 쓸 수 있지만, 천식이 있어 기관지 경련을 일으키는 PGF2α 인 carboprost 는 피한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 환자가 천식이 없고 전자간증(혈압 160/110)이 있었다면 피해야 할 약은 혈관 수축제 methylergonovine(A)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.postpartum-hemorrhage.uterotonic-contraindications",
+  "distractors": {
+   "A": {
+    "tempting": "methylergonovine 은 산후 출혈 약 가운데 금기가 가장 유명하다 — 먼저 피할 약으로 떠오른다.",
+    "answer_first": "methylergonovine 의 금기는 고혈압·전자간증·관상동맥 질환이다. 이 환자는 임신·진통 내내 혈압이 정상이었다 — 피할 것은 천식 때문에 carboprost 다.",
+    "discriminator": "「Her blood pressure throughout pregnancy and labor ranged from 108/66 to 122/78 mm Hg」.",
+    "when_right": "고혈압·전자간증이 있는 산모일 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "천식 환자에게 프로스타글란딘을 피하라고 배웠다 — misoprostol 도 프로스타글란딘이다.",
+    "answer_first": "기관지 수축은 PGF2α(carboprost)의 작용이다. misoprostol 은 PGE1 유사체라 기관지 수축이 없어 천식에서도 쓸 수 있다.",
+    "discriminator": "약리 계열: carboprost = 15-methyl PGF2α, misoprostol = PGE1.",
+    "when_right": "해당 없음 — misoprostol 은 천식에서 피할 약이 아니다(발열·떨림이 흔한 부작용).",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0277",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Shaking Hands, Drenching Sweats and Insects on the Wall Two Days Into a Hospital Stay for Leg Cellulitis in a 54-Year-Old Man With Ascites",
+  "type": "Shaking Hands, Drenching Sweats and Insects on the Wall Two Days Into a Hospital Stay for Leg Cellulitis in a 54-Year-Old Man With Ascites",
+  "difficulty": 4,
+  "created": "2026-11-12",
+  "vignette": "A 54-year-old man is evaluated in the hospital because of tremor, sweating and anxiety that began this morning. He was admitted 2 days ago for cellulitis of the left leg and is receiving intravenous cefazolin. He has drunk 12 to 15 cans of beer daily for 20 years; his last drink was shortly before admission, about 48 hours ago. Alcohol-related cirrhosis was diagnosed 1 year ago. He has never had a withdrawal seizure. He says that he sees insects crawling on the wall and asks that the room be sprayed. His vital signs are shown. He is alert and oriented to person, place and time and can name the days of the week backward. There is a coarse tremor of the outstretched hands, and his skin is diaphoretic. There are spider angiomas on the chest, and the abdomen is distended with shifting dullness. There is no asterixis. The left leg erythema is receding within its marked borders. The Clinical Institute Withdrawal Assessment for Alcohol (CIWA-Ar) score is 21. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate pharmacotherapy at this time?",
+  "options": [
+   "Lorazepam",
+   "Chlordiazepoxide",
+   "Haloperidol",
+   "Clonidine",
+   "Naltrexone"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계. ① 마지막 음주 48시간 + 떨림·발한·빈맥·고혈압 + CIWA-Ar 21 → 중등도~중증 알코올 금단. ② 지남력·주의력 보존 + 환시 → 진전 섬망이 아닌 금단 환각증 — 항정신병약이 아니라 벤조디아제핀. ③ 복수·알부민 2.6·빌리루빈 3.4·INR 1.8 → 비대상성 간경변 → 글루쿠로니드 포합만 거치는 lorazepam.\n- 오답감별:\n  - (B) chlordiazepoxide 는 간 산화 대사·긴 활성 대사물로 비대상성 간경변에서 쌓여 과진정·간성 뇌병증을 부른다 — 간 기능이 정상이면 적절하다.\n  - (C) haloperidol 은 금단 환시에 끌리지만 발작 역치를 낮추고 금단을 치료하지 못한다 — 벤조디아제핀 뒤 보조로만.\n  - (D) clonidine 은 빈맥·고혈압·발한만 줄이고 발작·진전 섬망을 막지 못한다.\n  - (E) naltrexone 은 금단이 끝난 뒤 금주 유지 약이고 비대상성 간경변에서 피한다.\n- 임상핵심: 알코올 금단 = 벤조디아제핀. 간경변·고령이면 lorazepam·oxazepam(포합만), 간이 정상이면 chlordiazepoxide·diazepam.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 464장 Alcohol and Alcohol Use Disorders; ASAM Clinical Practice Guideline on Alcohol Withdrawal Management(2020).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 마지막 음주 48시간 + 떨림·발한·빈맥·고혈압 + CIWA-Ar 21 → 중등도~중증 알코올 금단. ② 지남력·주의력 보존 + 환시 → 진전 섬망이 아닌 금단 환각증 — 항정신병약이 아니라 벤조디아제핀. ③ 복수·알부민 2.6·빌리루빈 3.4·INR 1.8 → 비대상성 간경변 → 글루쿠로니드 포합만 거치는 lorazepam."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) chlordiazepoxide 는 간 산화 대사·긴 활성 대사물로 비대상성 간경변에서 쌓여 과진정·간성 뇌병증을 부른다 — 간 기능이 정상이면 적절하다.\n(C) haloperidol 은 금단 환시에 끌리지만 발작 역치를 낮추고 금단을 치료하지 못한다 — 벤조디아제핀 뒤 보조로만.\n(D) clonidine 은 빈맥·고혈압·발한만 줄이고 발작·진전 섬망을 막지 못한다.\n(E) naltrexone 은 금단이 끝난 뒤 금주 유지 약이고 비대상성 간경변에서 피한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "알코올 금단 = 벤조디아제핀. 간경변·고령이면 lorazepam·oxazepam(포합만), 간이 정상이면 chlordiazepoxide·diazepam."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 464장 Alcohol and Alcohol Use Disorders; ASAM Clinical Practice Guideline on Alcohol Withdrawal Management(2020)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 464장 Alcohol and Alcohol Use Disorders; ASAM Clinical Practice Guideline on Alcohol Withdrawal Management, 2020)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.8 °C (100.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "118 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "20 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "164/96 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum sodium",
+    "value": "134 mEq/L",
+    "ref": "135–145 mEq/L"
+   },
+   {
+    "name": "Serum potassium",
+    "value": "3.7 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "112 mg/dL",
+    "ref": "70–100 mg/dL"
+   },
+   {
+    "name": "Serum albumin",
+    "value": "2.6 g/dL",
+    "ref": "3.5–5.0 g/dL"
+   },
+   {
+    "name": "Serum total bilirubin",
+    "value": "3.4 mg/dL",
+    "ref": "0.1–1.2 mg/dL"
+   },
+   {
+    "name": "Serum AST",
+    "value": "138 U/L",
+    "ref": "10–40 U/L"
+   },
+   {
+    "name": "Serum ALT",
+    "value": "56 U/L",
+    "ref": "7–56 U/L"
+   },
+   {
+    "name": "INR",
+    "value": "1.8",
+    "ref": "0.8–1.1"
+   },
+   {
+    "name": "Platelet count",
+    "value": "92,000 /mm3",
+    "ref": "150,000–400,000 /mm3"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "알코올 금단 — 약 고르기\n─────────────────────────────\n중등도~중증(CIWA-Ar ≥ 10~15·발작·진전 섬망 위험) → 벤조디아제핀(증상 유발 투여)\n  간 기능 정상: chlordiazepoxide·diazepam(긴 반감기, 저절로 감량)\n  간경변·고령·폐 질환: lorazepam·oxazepam(글루쿠로니드 포합, 활성 대사물 없음)\n보조: thiamine(포도당 전), haloperidol 은 벤조디아제핀 뒤 남는 초조에만\nclonidine·β 차단제: 자율신경 증상만 — 발작·섬망 예방 효과 없음\n금주 유지(금단 뒤): acamprosate·naltrexone(비대상성 간경변에서 naltrexone 피함)·baclofen",
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 464장 Alcohol and Alcohol Use Disorders",
+    "American Society of Addiction Medicine. The ASAM Clinical Practice Guideline on Alcohol Withdrawal Management. J Addict Med. 2020;14(3S Suppl 1):1-72."
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "의식이 맑은 환시를 동반한 중등도~중증 알코올 금단은 벤조디아제핀으로 치료하고, 비대상성 간경변에서는 글루쿠로니드 포합만 거치는 lorazepam 을 고른다.",
+   "rival": [
+    "B",
+    "C"
+   ],
+   "discriminator": "chlordiazepoxide(B)는 금단 치료의 고전적 약이지만 간 산화 대사·긴 활성 대사물로 간경변에서 쌓인다. haloperidol(C)은 환시에 끌리지만 금단 환시는 정신병이 아니며 발작 역치를 낮춘다.",
+   "steps": 3,
+   "chain": [
+    "마지막 음주 48시간 + 떨림·발한·빈맥·고혈압 + CIWA-Ar 21 → 중등도~중증 알코올 금단",
+    "지남력·주의력 보존 + 벌레 환시 → 진전 섬망이 아닌 금단 환각증 — 항정신병약이 아니라 벤조디아제핀",
+    "복수 + 알부민 2.6 · 빌리루빈 3.4 · INR 1.8(비대상성 간경변) → 간 산화 대사가 없는 lorazepam"
+   ],
+   "key": [
+    {
+     "item": "his last drink was shortly before admission, about 48 hours ago",
+     "why": "금단 시간 경과",
+     "also": []
+    },
+    {
+     "item": "The Clinical Institute Withdrawal Assessment for Alcohol (CIWA-Ar) score is 21",
+     "why": "중등도~중증 금단 — 약물 치료 필요",
+     "also": []
+    },
+    {
+     "item": "he sees insects crawling on the wall",
+     "why": "금단 환각증 — haloperidol(C)로 끌리는 정보",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He is alert and oriented to person, place and time and can name the days of the week backward",
+     "why": "주의력 보존 — 진전 섬망 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "There is no asterixis",
+     "why": "간성 뇌병증 가능성 낮음 — 증상은 금단으로 설명된다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "INR",
+     "why": "1.8 — 간 합성 기능 저하: 간 산화 대사 약(B) 축적",
+     "also": []
+    },
+    {
+     "item": "Serum albumin",
+     "why": "2.6 — 비대상성 간경변",
+     "also": []
+    },
+    {
+     "item": "the abdomen is distended with shifting dullness",
+     "why": "복수 — 비대상성 간경변, naltrexone(E)도 피한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has never had a withdrawal seizure",
+     "why": "발작 병력 없음 — 그래도 CIWA 21 은 치료 대상",
+     "also": []
+    },
+    {
+     "item": "receiving intravenous cefazolin",
+     "why": "입원 사유 치료 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "마지막 음주 48시간 뒤 자율신경 항진과 의식이 맑은 환시, CIWA-Ar 21 은 벤조디아제핀이 필요한 알코올 금단이다. 비대상성 간경변이 있어 간 산화로 대사되고 활성 대사물이 긴 chlordiazepoxide 대신 글루쿠로니드 포합만 거치는 lorazepam 을 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 금단 환자의 간 기능이 정상(알부민·빌리루빈·INR 정상, 복수 없음)이라면 반감기가 길어 저절로 감량되는 chlordiazepoxide(B)도 적절하다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.psy.alcohol-withdrawal.short-acting-benzodiazepine-in-cirrhosis",
+  "distractors": {
+   "B": {
+    "tempting": "알코올 금단의 교과서 약 — chlordiazepoxide 는 반감기가 길어 금단을 부드럽게 덮는다.",
+    "answer_first": "chlordiazepoxide 는 간의 산화로 대사되고 활성 대사물의 반감기가 길다. 복수·INR 1.8·빌리루빈 3.4 의 간경변에서는 쌓여 과진정·뇌병증을 부른다 — 포합만 거치는 lorazepam 이 맞다.",
+    "discriminator": "「INR」 1.8 + 「Serum albumin」 2.6 + 복수.",
+    "when_right": "간 기능이 정상인 젊은 금단 환자.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "벌레가 벽을 기어 다닌다는 환시 — 항정신병약이 떠오른다.",
+    "answer_first": "의식이 맑은 상태의 금단 환시는 정신병이 아니라 금단 증상이다. haloperidol 은 발작 역치를 낮추고 금단 자체를 치료하지 못한다 — 벤조디아제핀이 먼저다.",
+    "discriminator": "「CIWA-Ar score is 21」 + 마지막 음주 48시간 — 금단 경과.",
+    "when_right": "벤조디아제핀을 충분히 쓴 뒤에도 남는 초조·환각에 보조로.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
  }
 ];
