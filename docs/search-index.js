@@ -5,20 +5,20 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4636,
+  "total": 4637,
   "byType": {
    "usmle": 264,
+   "concept": 163,
    "paper": 924,
    "kmle": 1792,
    "imaging": 631,
-   "concept": 162,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 325,
+   "Cardiology": 326,
    "Nephrology": 247,
    "Infectious Disease": 226,
    "Pediatrics": 215,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3278,
-   "medium": 1305,
+   "medium": 1306,
    "low": 53
   },
   "tagCount": 5467
@@ -353,6 +353,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0266.md",
    "snippet": "A 74 year old woman comes to the physician because of nausea, loss of appetite and fatigue for 5 days. She says that over the past 2 days, white objects have looked yellow to her. She has heart failure with reduced ejection fraction and per",
    "text": "Pharmacology Nausea, Yellow-Tinged Vision and a Slow Irregular Pulse Two Weeks After a New Rhythm Drug in a 74-Year-Old Woman With Heart Failure digoxin amiodarone p-glycoprotein drug-interaction digoxin-toxicity mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 71장 Principles of Clinical Pharmacology; Harrison's Principles of Internal Medicine, 22e. 265장 Heart Failure: Management) A 74 year old woman comes to the physician because of nausea, loss of appetite and fatigue for 5 days. She says that over the past 2 days, white objects have looked yellow to her. She has heart failure with reduced ejection fraction and permanent atrial fibrillation. Her medications for 3 years have been carvedilol, furosemide, apixaban and digoxin 0.125 mg daily, and she has taken them as prescribed. Two weeks ago, amiodarone was added because of episodes of rapid ventricular rate. Her vital signs are shown. She is alert and oriented. There is no jugular venous distention, the lungs are clear to auscultation and there is trace ankle edema. An ECG shows atrial fibrillation with a slow ventricular response and scooped ST segment depression in the lateral leads. Laboratory results are shown. Which of the following best explains the change in this patient's serum drug concentration? A. Induction of CYP3A4 that converts the drug to an active metabolite B. Displacement of the drug from its binding sites on plasma albumin C. Low extracellular potassium that enhances binding to Na+/K+ ATPase D. Inhibition of P glycoprotein–mediated renal and intestinal efflux E. Inhibition of CYP2C9 that slows hepatic oxidative metabolism 메스꺼움·식욕부진·피로에 「흰 것이 노랗게 보인다」(황시증)와 느린 심실 반응의 심방세동, 혈중 digoxin 3.1 ng/mL 는 digoxin 독성이다. 3년 동안 같은 용량을 복용해 왔고 크레아티닌은 3개월 전과 같아(1.0) 신기능 저하로는 설명되지 않는다 — 바뀐 것은 2주 전 시작한 amiodarone 이다. digoxin 은 대부분 대사되지 않고 신세뇨관의 P glycoprotein(P gp)으로 분비·배설되며 장에서도 P gp 가 흡수를 제한한다. amiodarone(그리고 verapamil·quinidine·clarithromycin 등)은 P gp 를 억제해 digoxin 청소율을 떨어뜨리고 혈중 농도를 대략 두 배 가까이 올린다 — amiodarone 시작 때 digoxin 용량을 줄이는(흔히 절반) 이유다. 칼륨은 5.4 로 높아(Na+/K+ ATPase 억제의 결과) 저칼륨혈증이 독성을 키운 것은 아니다. 알부민은 정상이고 digoxin 은 단백 결합률이 낮아 결합 치환은 의미가 없으며, CYP2C9 억제는 warfarin 상호작용의 기전이다."
+  },
+  {
+   "id": "cn.cardio.svt.av-nodal-blockade-response",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-12",
+   "path": "content/concepts/cardiology/cn.cardio.svt.av-nodal-blockade-response.md",
+   "snippet": "판단 — 왜 방실결절 차단 반응이 먼저인가 동빈맥부터 지운다 : 가장 흔한 상심실빈맥은 운동·스트레스·급성 질환에 따른 동빈맥이고, 그때는 원인을 치료한다 [[harrison 22: 253장 p.1935]]. 불안정하면 기다리지 않는다 : 저혈압·의식 저하·협심증·심부전이 있으면 리듬 종류에 맞춘 즉시 치료가 먼저다 [[harrison 22: 253장 p.1935]]. 증상이 있을 때 심전도 : 진단에는 증상 때의 12유도 심",
+   "text": "Cardiology 판단 — 왜 방실결절 차단 반응이 먼저인가 동빈맥부터 지운다 : 가장 흔한 상심실빈맥은 운동·스트레스·급성 질환에 따른 동빈맥이고, 그때는 원인을 치료한다 [[harrison 22: 253장 p.1935]]. 불안정하면 기다리지 않는다 : 저혈압·의식 저하·협심증·심부전이 있으면 리듬 종류에 맞춘 즉시 치료가 먼저다 [[harrison 22: 253장 p.1935]]. 증상이 있을 때 심전도 : 진단에는 증상 때의 12유도 심전도와 긴 리듬 띠가 필요하다. 지나가는 부정맥은 활동 심전도나 손목시계·스마트폰 심전도로 잡는다 [[harrison 22: 253장 p.1933]]. 안정된 규칙적 좁은 QRS 빈맥이면 : 미주신경 자극, 안 되면 아데노신 6 또는 12 mg 으로 방실결절을 잠깐 막는다 — 결절 의존 빈맥은 끝나고, 결절 밖 빈맥은 정체가 드러난다 [[harrison 22: 253장 p.1933]]. 기전 — 회로에 방실결절이 있는가 상심실빈맥(SVT)은 심실보다 위에서 시작하거나 심방·방실결절을 거치는 전도에 의존하는 빈맥이다. 흥분이 히스 푸르키네 계를 타고 내려오므로 대부분 QRS 가 120 ms 보다 좁고 동리듬 때와 모양이 같다 [[harrison 22: 253장 p.1932]]. 병적 빈맥은 회로의 위치로 나뉜다 — 방실결절에 의존하는 회귀(방실결절 회귀빈맥 AVNRT, 부전도로를 쓰는 방실 회귀빈맥 AVRT), 심방 안의 큰 회귀(심방조동), 자동능이나 작은 회귀로 생기는 국소 심방빈맥이다 [[harrison 22: 253장 p.1932]]. 결절이 회로의 한 고리면 결절을 잠깐 막는 순간 회로가 끊긴다. 결절이 회로 밖이면 심방은 계속 돌고 심실로 내려가는 박동만 줄어 심방파가 드러난다 — 그래서 심실로 전도되지 않는 박동에도 빈맥이 이어지면 심방 기원이다 [[harrison 22: 253장 p.1932]]. 가르는 소견 — 방실결절을 막았을 때의 반응 먼저 리듬 띠의 규칙성과 심방·심실 박동 비를 본다. 심방·심실이 모두 불규칙하면 심방세동(여러 모양 P파면 다초점 심방빈맥), 1:1 이면 접합부 빈맥·방실결절 회귀빈맥·정방향 방실 회귀빈맥·심방빈맥, 심방이 심실보다 많으면 심방조동·심방빈맥을 생각한다 [[harrison 22: 253장 p.1933]]. 방실결절 회귀빈맥은 P파가 QRS 끝에 보이거나 아예 안 보이고, 건강한 젊은 성인에서 가장 흔한 발작성 지속 빈맥이며 여자에 많다 [[harrison 22: 253장 p.1932]]. 동리듬 심전도에 심실 조기흥분이 있으면 부전도로를 쓰는 방실 회귀빈맥을 시사한다 [[harrison 22: 253장 p.1933]]. 반응의 해석 한계: 종료는 결절 의존을 시사할 뿐이고, 변화 없음은 먼저 용량·효과 부족이다 [[harrison 22: 253장 p.1933]]. 선택 — 미주신경 자극에서 아데노신으로 미주신경 자극으로 방실 차단을 먼저 시도하고, 실패하면 아데노신 6 또는 12 mg 을 준다 — 결절 의존 빈맥은 대개 끝나고, 심방빈맥·심방조동은 진단된다 [[harrison 22: 253장 p.1933]]. 같은 진단 효과는 베라파밀·베타차단제로 결절 차단을 늘려도 얻는다(그림 253 2) [[harrison 22: 253장 p.1933]]. 전기생리검사는 기전 확인·위험 평가가 필요할 때 하지만 대개 카테터 절제 때 함께 한다 [[harrison 22: 253장 p.1933]]. 권고와 예외 무증상으로 우연히 찍힌 상심실 부정맥은 대부분 치료나 추가 평가가 필요 없다 [[harrison 22: 253장 p.1933]]. 발작성 상심실빈맥은 구조 심질환이 없는 사람에 흔하고, 심방세동은 여러 심장병과 동반된다 — 병력·진찰에서 이상이 있으면 심장 평가를 더한다 [[harrison 22: 253장 p.1933]]. 조기흥분 심방세동은 불규칙한 넓은 QRS 빈맥으로 분당 250회를 넘을 수 있다 — 좁은 QRS 도식으로 다루지 않는다 [[harrison 22: 253장 p.1932]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 253장 p.1932~1935)"
   },
   {
    "id": "paper-2026-0924",
