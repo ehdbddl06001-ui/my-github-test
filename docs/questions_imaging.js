@@ -2,6 +2,1551 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0632",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 갑자기 시작된 두근거림의 고령 남성",
+  "type": "심전도 판독 — 갑자기 시작된 두근거림의 고령 남성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-11",
+  "vignette": "A 76-year-old man comes to the emergency department because of palpitations that began suddenly 3 hours ago while he was watching television. He has mild lightheadedness but no chest pain or syncope. He has hypertension and chronic obstructive pulmonary disease. His temperature is 36.8°C, blood pressure is 128/80 mm Hg, pulse is 160/min and regular, and respirations are 18/min. Oxygen saturation is 95% on room air. Hemoglobin concentration and serum thyroid-stimulating hormone concentration are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Atrial flutter with 2:1 atrioventricular conduction",
+   "Sinus tachycardia",
+   "Atrial fibrillation with rapid ventricular response",
+   "Multifocal atrial tachycardia",
+   "Ventricular tachycardia"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The rhythm is a regular, narrow-complex tachycardia at about 160/min. In leads II, III, and aVF, the baseline between QRS complexes is not flat but shows regular undulating atrial waves, about two for each QRS complex, consistent with flutter waves at roughly 320/min. A regular ventricular rate near 150 to 160/min with inferior flutter waves is the classic presentation of typical atrial flutter with 2:1 conduction. The abrupt onset, fixed rate, and absence of fever, anemia, or hyperthyroidism argue against sinus tachycardia. The cardiologist's report read a rapid regular supraventricular tachycardia with inferior lead appearances of atrial flutter.\n- 원리: <b>Why flutter waves are best seen inferiorly</b>: Typical atrial flutter is a macroreentrant circuit around the tricuspid annulus, usually running counterclockwise: up the interatrial septum and down the right atrial free wall, through the cavotricuspid isthmus. Because activation sweeps continuously, there is no isoelectric baseline, and the large septal component directed away from the inferior leads gives negative sawtooth waves in II, III, and aVF, with a positive deflection in V1.<br> <b>Why the ventricular rate is about 150</b>: The circuit fires at about 250 to 350/min. The atrioventricular node cannot conduct every impulse and usually lets through every second one, so the ventricles beat at half the atrial rate, typically near 150/min and regular. Any regular narrow-complex tachycardia fixed near this rate should prompt a search for hidden flutter waves.<br> <b>Why it matters</b>: Adenosine or vagal maneuvers transiently increase block and unmask the flutter waves. Stroke risk and anticoagulation are handled as in atrial fibrillation, and catheter ablation of the cavotricuspid isthmus is highly effective.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Atrial flutter with 2:1 conduction (answer)</th><th>Sinus tachycardia (closest distractor)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Abrupt</b></td><td>Gradual, tracks a cause</td></tr> <tr><td>Rate</td><td>Fixed, often 140–160/min</td><td>Varies with fever, pain, volume, activity</td></tr> <tr><td>Atrial activity</td><td>Sawtooth waves in II, III, aVF, two per QRS</td><td>One upright P wave in II before each QRS</td></tr> <tr><td>Response to adenosine</td><td>Transient higher-grade block unmasks flutter waves</td><td>Gradual slowing, then return</td></tr> </tbody></table> A regular narrow-complex rhythm stuck near 150/min in a patient without a cause for sinus tachycardia is atrial flutter until proved otherwise.\n- 오답 이유:\n  - (B) Sinus tachycardia would be correct if one upright P wave preceded each QRS in lead II and the rate rose gradually with a cause such as fever, bleeding, or pain.\n  - (C) Atrial fibrillation with rapid ventricular response would be correct if the RR intervals were irregularly irregular with no organized atrial waves.\n  - (D) Multifocal atrial tachycardia would be correct in a patient with lung disease if at least three different P-wave morphologies and irregular RR intervals were seen.\n  - (E) Ventricular tachycardia would be correct if the QRS complexes were wide (120 ms or more) with atrioventricular dissociation or fusion beats.\n- 함정: Calling a regular narrow tachycardia at about 160/min sinus tachycardia — with abrupt onset and inferior sawtooth waves, it is atrial flutter with 2:1 conduction.\n- 학습목표: 약 160회/분의 규칙적인 좁은 QRS 빈맥에서 하벽 유도의 규칙적 조동파를 읽어 2:1 전도 심방조동으로 판독하고 동빈맥·심방세동과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 257: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1173 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm is a regular, narrow-complex tachycardia at about 160/min. In leads II, III, and aVF, the baseline between QRS complexes is not flat but shows regular undulating atrial waves, about two for each QRS complex, consistent with flutter waves at roughly 320/min. A regular ventricular rate near 150 to 160/min with inferior flutter waves is the classic presentation of typical atrial flutter with 2:1 conduction. The abrupt onset, fixed rate, and absence of fever, anemia, or hyperthyroidism argue against sinus tachycardia. The cardiologist's report read a rapid regular supraventricular tachycardia with inferior lead appearances of atrial flutter."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why flutter waves are best seen inferiorly</b>: Typical atrial flutter is a macroreentrant circuit around the tricuspid annulus, usually running counterclockwise: up the interatrial septum and down the right atrial free wall, through the cavotricuspid isthmus. Because activation sweeps continuously, there is no isoelectric baseline, and the large septal component directed away from the inferior leads gives negative sawtooth waves in II, III, and aVF, with a positive deflection in V1.<br> <b>Why the ventricular rate is about 150</b>: The circuit fires at about 250 to 350/min. The atrioventricular node cannot conduct every impulse and usually lets through every second one, so the ventricles beat at half the atrial rate, typically near 150/min and regular. Any regular narrow-complex tachycardia fixed near this rate should prompt a search for hidden flutter waves.<br> <b>Why it matters</b>: Adenosine or vagal maneuvers transiently increase block and unmask the flutter waves. Stroke risk and anticoagulation are handled as in atrial fibrillation, and catheter ablation of the cavotricuspid isthmus is highly effective."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Atrial flutter with 2:1 conduction (answer)</th><th>Sinus tachycardia (closest distractor)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Abrupt</b></td><td>Gradual, tracks a cause</td></tr> <tr><td>Rate</td><td>Fixed, often 140–160/min</td><td>Varies with fever, pain, volume, activity</td></tr> <tr><td>Atrial activity</td><td>Sawtooth waves in II, III, aVF, two per QRS</td><td>One upright P wave in II before each QRS</td></tr> <tr><td>Response to adenosine</td><td>Transient higher-grade block unmasks flutter waves</td><td>Gradual slowing, then return</td></tr> </tbody></table> A regular narrow-complex rhythm stuck near 150/min in a patient without a cause for sinus tachycardia is atrial flutter until proved otherwise."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Sinus tachycardia would be correct if one upright P wave preceded each QRS in lead II and the rate rose gradually with a cause such as fever, bleeding, or pain.\n(C) Atrial fibrillation with rapid ventricular response would be correct if the RR intervals were irregularly irregular with no organized atrial waves.\n(D) Multifocal atrial tachycardia would be correct in a patient with lung disease if at least three different P-wave morphologies and irregular RR intervals were seen.\n(E) Ventricular tachycardia would be correct if the QRS complexes were wide (120 ms or more) with atrioventricular dissociation or fusion beats."
+   },
+   {
+    "k": "함정",
+    "v": "Calling a regular narrow tachycardia at about 160/min sinus tachycardia — with abrupt onset and inferior sawtooth waves, it is atrial flutter with 2:1 conduction."
+   },
+   {
+    "k": "학습목표",
+    "v": "약 160회/분의 규칙적인 좁은 QRS 빈맥에서 하벽 유도의 규칙적 조동파를 읽어 2:1 전도 심방조동으로 판독하고 동빈맥·심방세동과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 257: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1173 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A regular narrow-complex tachycardia at about 160/min with inferior flutter waves is atrial flutter with 2:1 conduction",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The onset was abrupt with a fixed rate, and the inferior leads show regular atrial waves at twice the ventricular rate instead of one P wave per QRS",
+   "steps": 3,
+   "chain": [
+    "영상: regular narrow-complex tachycardia at about 160/min in the lead II rhythm strip",
+    "영상: regular undulating atrial waves in II, III, and aVF, about two per QRS -> flutter waves",
+    "Abrupt onset without fever, anemia, or hyperthyroidism -> not sinus tachycardia -> atrial flutter with 2:1 conduction"
+   ],
+   "key": [
+    {
+     "item": "영상: regular narrow QRS complexes at about 160/min",
+     "why": "Regular supraventricular rhythm near 150/min",
+     "also": []
+    },
+    {
+     "item": "영상: regular undulating atrial waves in the inferior leads",
+     "why": "Flutter waves of typical atrial flutter",
+     "also": []
+    },
+    {
+     "item": "palpitations that began suddenly 3 hours ago",
+     "why": "Abrupt onset of a reentrant rhythm",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "pulse is 160/min and regular",
+     "why": "Lowers the likelihood of atrial fibrillation and multifocal atrial tachycardia",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin concentration and serum thyroid-stimulating hormone concentration are within the reference ranges",
+     "why": "Lowers the likelihood of a cause of sinus tachycardia",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "blood pressure is 128/80 mm Hg",
+     "why": "Hemodynamically stable — affects management, not the diagnosis",
+     "also": []
+    },
+    {
+     "item": "chronic obstructive pulmonary disease",
+     "why": "Associated with atrial arrhythmias including multifocal atrial tachycardia, which the regular rhythm makes unlikely",
+     "also": []
+    }
+   ],
+   "summary": "The rhythm is a regular narrow tachycardia at about 160/min with flutter waves in the inferior leads and an abrupt onset. This is atrial flutter with 2:1 conduction.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the RR intervals were irregularly irregular with no organized atrial waves, atrial fibrillation with rapid ventricular response"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0632.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01173",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1173"
+  },
+  "run_id": "20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0631",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 여성",
+  "type": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-11",
+  "vignette": "67세 여자가 건강검진에서 맥이 불규칙하다는 말을 듣고 걱정이 되어 왔다. 두근거림, 어지럼, 실신, 흉통은 없고 일상생활에 불편이 없다. 고혈압으로 암로디핀을 먹고 있다. 혈압 128/76 mmHg, 맥박 76회/분으로 약간 불규칙하다. 심음은 정상이고 잡음은 없다. 갑상샘 기능과 혈청 전해질은 정상이다. 심장초음파에서 좌심방 크기와 좌심실 박출률은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "영구 심박동기 삽입",
+   "전기적 심율동전환",
+   "추가 치료 없이 경과 관찰",
+   "경구 항응고제 시작",
+   "비소프롤롤 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 리듬 스트립에서 모든 QRS 앞에 같은 모양의 양성 P파가 있고 PR 간격이 일정하다. RR 간격은 약 0.63~0.89 초 사이에서 갑자기가 아니라 서서히 늘었다 줄었다 한다. 동결절에서 나온 리듬의 박동수가 주기적으로 변하는 동성 부정맥이다. P파가 뚜렷하므로 심방세동이 아니고, 증상과 구조적 심질환이 없으므로 치료할 대상이 아니다 — 안심시키고 경과를 본다.\n- 원리: <b>왜 동성 부정맥이 생기는가</b>: 들숨 때 흉강 내압이 떨어져 정맥 환류가 늘고, 폐의 신장 수용체와 압수용체 반사를 거쳐 미주신경 긴장이 줄어 동결절 박동이 빨라진다. 날숨 때는 반대로 느려진다. 그래서 RR 간격이 호흡 주기에 맞춰 서서히 변하고, P파 모양·PR 간격은 그대로다. 젊은 사람일수록 뚜렷하고, 나이가 들면 자율신경 반응이 둔해져 줄어든다.<br> <b>왜 심방세동과 가르는가</b>: 심방세동은 조직된 심방 흥분이 없어 P파가 없고 기저선이 불규칙하게 떨리며, RR 간격이 무작위로(불규칙하게 불규칙) 변한다. 뇌졸중 위험 때문에 CHA<sub>2</sub>DS<sub>2</sub>-VASc 점수로 항응고를 정하는 리듬이다. 동성 부정맥에 항응고제를 쓰면 이득 없이 출혈 위험만 진다.<br> <b>언제 더 볼 것인가</b>: 호흡과 무관한 동성 부정맥(비호흡성)이 고령에서 서맥·휴지기와 함께 나타나면 동기능부전의 일부일 수 있어 증상이 있을 때 홀터 검사를 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">동성 부정맥(정답 — 경과 관찰)</th><th>심방세동(가장 가까운 오답 — 항응고)</th></tr></thead><tbody> <tr><td>P파</td><td><b>모든 QRS 앞에 같은 모양</b></td><td>없음, 불규칙한 f파</td></tr> <tr><td>PR 간격</td><td>일정</td><td>측정 불가</td></tr> <tr><td>RR 변화</td><td>서서히, 주기적(호흡)</td><td>무작위</td></tr> <tr><td>뇌졸중 위험</td><td>증가 없음</td><td>증가 — CHA<sub>2</sub>DS<sub>2</sub>-VASc 로 항응고 결정</td></tr> </tbody></table> 「맥이 불규칙하다」는 같은 호소라도 P파가 있는지가 처치를 가른다. P파가 매번 있으면 동성 리듬이고, 없으면 심방세동을 생각한다.\n- 오답 이유:\n  - ① 영구 심박동기 삽입은 증상성 동서맥·동정지 같은 동기능부전이나 고도 방실차단이 확인될 때 정답이 된다.\n  - ② 전기적 심율동전환은 혈역학적으로 불안정한 빈맥성 부정맥이나 리듬 조절을 택한 심방세동·조동일 때 정답이 된다.\n  - ④ 경구 항응고제 시작은 P파가 없고 RR 이 불규칙하게 불규칙한 심방세동이며 CHA2DS2-VASc 점수가 높을 때 정답이 된다.\n  - ⑤ 비소프롤롤 투여는 빠른 심실 반응의 심방세동이나 증상성 동빈맥에서 박동수 조절이 필요할 때 정답이 된다.\n- 함정: 「불규칙한 맥 = 심방세동」으로 보고 항응고제를 시작하는 것 — 모든 QRS 앞에 같은 P파가 있으면 동성 리듬이다.\n- 학습목표: RR 간격이 서서히 변하지만 모든 QRS 앞에 같은 P파가 있는 동성 부정맥을 심방세동과 구분하고 치료 없이 경과 관찰을 처치로 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 254: Physiologic and Nonphysiologic Sinus Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7096 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립에서 모든 QRS 앞에 같은 모양의 양성 P파가 있고 PR 간격이 일정하다. RR 간격은 약 0.63~0.89 초 사이에서 갑자기가 아니라 서서히 늘었다 줄었다 한다. 동결절에서 나온 리듬의 박동수가 주기적으로 변하는 동성 부정맥이다. P파가 뚜렷하므로 심방세동이 아니고, 증상과 구조적 심질환이 없으므로 치료할 대상이 아니다 — 안심시키고 경과를 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 동성 부정맥이 생기는가</b>: 들숨 때 흉강 내압이 떨어져 정맥 환류가 늘고, 폐의 신장 수용체와 압수용체 반사를 거쳐 미주신경 긴장이 줄어 동결절 박동이 빨라진다. 날숨 때는 반대로 느려진다. 그래서 RR 간격이 호흡 주기에 맞춰 서서히 변하고, P파 모양·PR 간격은 그대로다. 젊은 사람일수록 뚜렷하고, 나이가 들면 자율신경 반응이 둔해져 줄어든다.<br> <b>왜 심방세동과 가르는가</b>: 심방세동은 조직된 심방 흥분이 없어 P파가 없고 기저선이 불규칙하게 떨리며, RR 간격이 무작위로(불규칙하게 불규칙) 변한다. 뇌졸중 위험 때문에 CHA<sub>2</sub>DS<sub>2</sub>-VASc 점수로 항응고를 정하는 리듬이다. 동성 부정맥에 항응고제를 쓰면 이득 없이 출혈 위험만 진다.<br> <b>언제 더 볼 것인가</b>: 호흡과 무관한 동성 부정맥(비호흡성)이 고령에서 서맥·휴지기와 함께 나타나면 동기능부전의 일부일 수 있어 증상이 있을 때 홀터 검사를 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">동성 부정맥(정답 — 경과 관찰)</th><th>심방세동(가장 가까운 오답 — 항응고)</th></tr></thead><tbody> <tr><td>P파</td><td><b>모든 QRS 앞에 같은 모양</b></td><td>없음, 불규칙한 f파</td></tr> <tr><td>PR 간격</td><td>일정</td><td>측정 불가</td></tr> <tr><td>RR 변화</td><td>서서히, 주기적(호흡)</td><td>무작위</td></tr> <tr><td>뇌졸중 위험</td><td>증가 없음</td><td>증가 — CHA<sub>2</sub>DS<sub>2</sub>-VASc 로 항응고 결정</td></tr> </tbody></table> 「맥이 불규칙하다」는 같은 호소라도 P파가 있는지가 처치를 가른다. P파가 매번 있으면 동성 리듬이고, 없으면 심방세동을 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 영구 심박동기 삽입은 증상성 동서맥·동정지 같은 동기능부전이나 고도 방실차단이 확인될 때 정답이 된다.\n② 전기적 심율동전환은 혈역학적으로 불안정한 빈맥성 부정맥이나 리듬 조절을 택한 심방세동·조동일 때 정답이 된다.\n④ 경구 항응고제 시작은 P파가 없고 RR 이 불규칙하게 불규칙한 심방세동이며 CHA2DS2-VASc 점수가 높을 때 정답이 된다.\n⑤ 비소프롤롤 투여는 빠른 심실 반응의 심방세동이나 증상성 동빈맥에서 박동수 조절이 필요할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「불규칙한 맥 = 심방세동」으로 보고 항응고제를 시작하는 것 — 모든 QRS 앞에 같은 P파가 있으면 동성 리듬이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "RR 간격이 서서히 변하지만 모든 QRS 앞에 같은 P파가 있는 동성 부정맥을 심방세동과 구분하고 치료 없이 경과 관찰을 처치로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 254: Physiologic and Nonphysiologic Sinus Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7096 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "모든 QRS 앞에 같은 P파가 있고 RR 이 서서히 변하는 무증상 동성 부정맥이므로 치료 없이 경과를 본다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "P파가 매번 있고 PR 이 일정해 심방세동이 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞 같은 모양의 양성 P파, 일정한 PR",
+    "영상: RR 간격이 서서히 늘었다 줄었다 함 → 동성 부정맥",
+    "증상·구조적 심질환 없음 → 치료 없이 경과 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞에 같은 모양의 P파와 일정한 PR 간격",
+     "why": "동결절 리듬 — 심방세동이 아니다",
+     "also": []
+    },
+    {
+     "item": "영상: RR 간격이 서서히 변함",
+     "why": "동성 부정맥의 리듬 변동",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심방 크기와 좌심실 박출률은 정상",
+     "why": "구조적 심질환 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘 기능과 혈청 전해질은 정상",
+     "why": "이차적 부정맥 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "두근거림, 어지럼, 실신, 흉통은 없고",
+     "why": "증상이 없어 치료가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압으로 암로디핀을 먹고 있다",
+     "why": "암로디핀은 동결절에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "P파가 매번 있고 PR 이 일정하며 RR 만 서서히 변하는 동성 부정맥이다. 증상이 없으므로 치료하지 않고 경과를 본다.",
+   "switch": {
+    "choice": "D",
+    "condition": "P파가 없고 RR 이 무작위로 불규칙한 심방세동이었다면 CHA2DS2-VASc 3점(나이·여성·고혈압)으로 경구 항응고제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0631.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/07000/#files-panel",
+   "asset_id": "PTBXL-07096",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7096"
+  },
+  "run_id": "20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0630",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 계단을 오르면 가슴이 답답한 고령 여성",
+  "type": "심전도 판독 — 계단을 오르면 가슴이 답답한 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-11",
+  "vignette": "81세 여자가 2개월 전부터 계단을 오르면 가슴이 답답하고 쉬면 5분 안에 좋아져서 외래에 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 136/78 mmHg, 맥박 78회/분이다. 심음은 정상이고 잡음은 없다. 지금은 흉통이 없으며 혈청 트로포닌은 기준치 이하이다. 심장초음파에서 좌심실 벽 두께는 정상이고 박출률은 60 % 이다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "저칼륨혈증에 의한 U파",
+   "측벽 유도의 허혈성 T파 변화",
+   "좌심실비대와 긴장형 ST-T 변화",
+   "급성 하벽 ST분절상승 심근경색",
+   "좌각차단"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 동리듬 약 78회/분이고 리듬 스트립 끝 무렵 이른 박동이 하나 있다(심방 기외수축). QRS 는 좁다. V5·V6 에서 T파가 얕게 뒤집혀 있고 I·II·aVL 등 사지 유도의 T파는 평탄하다. II·III·aVF 의 ST 상승은 없다. 노작성 흉통이 있고 트로포닌이 정상이며 심장초음파의 좌심실 벽 두께가 정상이므로 좌심실비대의 긴장형 변화가 아니라 측벽(V5·V6·I·aVL)의 허혈성 T파 변화로 판독한다. 판독 전문의도 「V5·V6 T파 역위, 허혈성 심질환 가능」으로 읽었다.\n- 원리: <b>왜 허혈은 T파를 뒤집는가</b>: 재분극은 정상적으로 심외막에서 먼저 끝나 심내막 쪽으로 진행하므로 T파는 QRS 와 같은 방향(양성)이다. 만성적이거나 간헐적인 허혈은 허혈 부위 심근의 활동전위 기간을 바꿔 재분극 순서를 뒤집고, 그 부위를 바라보는 유도에서 T파가 평탄해지거나 대칭적으로 역위된다. V5·V6·I·aVL 은 좌심실 측벽을 보는 유도라, 이곳의 T파 변화는 왼회선동맥이나 대각지 영역의 허혈을 시사한다.<br> <b>왜 비대와 가르는가</b>: 좌심실비대에서도 V5·V6 에 비대칭 T파 역위와 ST 하강(긴장형)이 생긴다. 이는 두꺼운 벽의 재분극 지연 때문이므로, 높은 QRS 전압이 진짜 비대를 반영하는지를 심장초음파의 벽 두께로 확인해야 한다. 고령 마른 여성은 흉벽이 얇아 전압이 경계값까지 오를 수 있다.<br> <b>임상 의미</b>: 안정 협심증 환자의 안정 시 T파 역위는 급성 경색이 아니라 허혈성 심질환의 근거이며, 위험도 평가와 부하 검사·관상동맥 평가로 이어진다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">측벽 허혈성 T파 변화(정답)</th><th>좌심실비대의 긴장형 변화(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 전압</td><td>정상~경계</td><td><b>뚜렷이 높음</b>(Sokolow-Lyon ≥ 35 mm 등)</td></tr> <tr><td>T파 모양</td><td>평탄하거나 대칭적 역위</td><td>비대칭(천천히 내려가고 빨리 올라옴), ST 하강 동반</td></tr> <tr><td>심장초음파</td><td>벽 두께 정상</td><td>좌심실 벽 두께 증가</td></tr> <tr><td>동반 임상</td><td>노작성 흉통</td><td>오래된 고혈압·대동맥판협착</td></tr> </tbody></table> V5·V6 T파 역위는 두 질환에 모두 나온다. 전압이 경계값이면 심장초음파의 벽 두께가 해석을 정한다.\n- 오답 이유:\n  - ① 저칼륨혈증에 의한 U파는 칼륨이 3.0 mEq/L 아래이고 T파 뒤에 뚜렷한 U파와 긴 QU 간격이 보일 때 정답이 된다.\n  - ③ 좌심실비대와 긴장형 ST-T 변화는 V5·V6 의 R파가 뚜렷이 높고 심장초음파에서 좌심실 벽이 두꺼울 때 정답이 된다.\n  - ④ 급성 하벽 ST분절상승 심근경색은 II·III·aVF 에서 ST 가 1 mm 이상 올라가고 흉통이 지속되며 트로포닌이 오를 때 정답이 된다.\n  - ⑤ 좌각차단은 QRS 가 120 ms 이상으로 넓고 V5·V6 에서 넓고 패인 R 과 중격 q파 소실이 있을 때 정답이 된다.\n- 함정: V5·V6 의 T파 역위를 보면 비대의 긴장형으로 넘기는 것 — 심장초음파 벽 두께가 정상이고 노작성 흉통이 있으면 허혈성 T파 변화다.\n- 학습목표: 안정 협심증 환자의 심전도에서 V5·V6 의 T파 역위와 사지 유도의 평탄한 T파를 측벽 허혈성 T파 변화로 판독하고 좌심실비대의 긴장형 변화·급성 ST분절상승 심근경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 284: Ischemic Heart Disease\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 3531 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 78회/분이고 리듬 스트립 끝 무렵 이른 박동이 하나 있다(심방 기외수축). QRS 는 좁다. V5·V6 에서 T파가 얕게 뒤집혀 있고 I·II·aVL 등 사지 유도의 T파는 평탄하다. II·III·aVF 의 ST 상승은 없다. 노작성 흉통이 있고 트로포닌이 정상이며 심장초음파의 좌심실 벽 두께가 정상이므로 좌심실비대의 긴장형 변화가 아니라 측벽(V5·V6·I·aVL)의 허혈성 T파 변화로 판독한다. 판독 전문의도 「V5·V6 T파 역위, 허혈성 심질환 가능」으로 읽었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 허혈은 T파를 뒤집는가</b>: 재분극은 정상적으로 심외막에서 먼저 끝나 심내막 쪽으로 진행하므로 T파는 QRS 와 같은 방향(양성)이다. 만성적이거나 간헐적인 허혈은 허혈 부위 심근의 활동전위 기간을 바꿔 재분극 순서를 뒤집고, 그 부위를 바라보는 유도에서 T파가 평탄해지거나 대칭적으로 역위된다. V5·V6·I·aVL 은 좌심실 측벽을 보는 유도라, 이곳의 T파 변화는 왼회선동맥이나 대각지 영역의 허혈을 시사한다.<br> <b>왜 비대와 가르는가</b>: 좌심실비대에서도 V5·V6 에 비대칭 T파 역위와 ST 하강(긴장형)이 생긴다. 이는 두꺼운 벽의 재분극 지연 때문이므로, 높은 QRS 전압이 진짜 비대를 반영하는지를 심장초음파의 벽 두께로 확인해야 한다. 고령 마른 여성은 흉벽이 얇아 전압이 경계값까지 오를 수 있다.<br> <b>임상 의미</b>: 안정 협심증 환자의 안정 시 T파 역위는 급성 경색이 아니라 허혈성 심질환의 근거이며, 위험도 평가와 부하 검사·관상동맥 평가로 이어진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">측벽 허혈성 T파 변화(정답)</th><th>좌심실비대의 긴장형 변화(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 전압</td><td>정상~경계</td><td><b>뚜렷이 높음</b>(Sokolow-Lyon ≥ 35 mm 등)</td></tr> <tr><td>T파 모양</td><td>평탄하거나 대칭적 역위</td><td>비대칭(천천히 내려가고 빨리 올라옴), ST 하강 동반</td></tr> <tr><td>심장초음파</td><td>벽 두께 정상</td><td>좌심실 벽 두께 증가</td></tr> <tr><td>동반 임상</td><td>노작성 흉통</td><td>오래된 고혈압·대동맥판협착</td></tr> </tbody></table> V5·V6 T파 역위는 두 질환에 모두 나온다. 전압이 경계값이면 심장초음파의 벽 두께가 해석을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 저칼륨혈증에 의한 U파는 칼륨이 3.0 mEq/L 아래이고 T파 뒤에 뚜렷한 U파와 긴 QU 간격이 보일 때 정답이 된다.\n③ 좌심실비대와 긴장형 ST-T 변화는 V5·V6 의 R파가 뚜렷이 높고 심장초음파에서 좌심실 벽이 두꺼울 때 정답이 된다.\n④ 급성 하벽 ST분절상승 심근경색은 II·III·aVF 에서 ST 가 1 mm 이상 올라가고 흉통이 지속되며 트로포닌이 오를 때 정답이 된다.\n⑤ 좌각차단은 QRS 가 120 ms 이상으로 넓고 V5·V6 에서 넓고 패인 R 과 중격 q파 소실이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "V5·V6 의 T파 역위를 보면 비대의 긴장형으로 넘기는 것 — 심장초음파 벽 두께가 정상이고 노작성 흉통이 있으면 허혈성 T파 변화다."
+   },
+   {
+    "k": "학습목표",
+    "v": "안정 협심증 환자의 심전도에서 V5·V6 의 T파 역위와 사지 유도의 평탄한 T파를 측벽 허혈성 T파 변화로 판독하고 좌심실비대의 긴장형 변화·급성 ST분절상승 심근경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 284: Ischemic Heart Disease ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 3531 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "V5·V6 의 T파 역위와 사지 유도의 평탄한 T파가 있고 좌심실비대 근거가 없으므로 측벽 허혈성 T파 변화로 판독한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "심장초음파의 좌심실 벽 두께가 정상이다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬, 좁은 QRS, V5·V6 의 얕은 T파 역위, 사지 유도 T파 평탄, II·III·aVF 의 ST 상승 없음",
+    "심장초음파 벽 두께 정상 + 노작성 흉통 → 비대가 아닌 측벽 허혈성 T파 변화"
+   ],
+   "key": [
+    {
+     "item": "영상: V5·V6 의 얕은 T파 역위와 사지 유도의 평탄한 T파",
+     "why": "측벽 유도의 재분극 이상",
+     "also": []
+    },
+    {
+     "item": "계단을 오르면 가슴이 답답하고 쉬면 5분 안에 좋아져서",
+     "why": "안정 협심증 — 허혈성 해석을 지지",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심장초음파에서 좌심실 벽 두께는 정상",
+     "why": "좌심실비대의 긴장형 변화 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 트로포닌은 기준치 이하",
+     "why": "급성 심근경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.3 mEq/L",
+     "why": "저칼륨혈증의 T파 변화 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압과 이상지질혈증",
+     "why": "위험 인자 — 판독 자체에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "V5·V6 의 T파 역위와 사지 유도의 평탄한 T파가 있고, 벽 두께가 정상이라 비대가 아니다. 측벽 허혈성 T파 변화다.",
+   "switch": {
+    "choice": "C",
+    "condition": "심장초음파에서 좌심실 벽이 14 mm 로 두껍고 V5 의 R파가 30 mm 를 넘는다면 좌심실비대와 긴장형 변화"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0630.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/03000/#files-panel",
+   "asset_id": "PTBXL-03531",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 3531"
+  },
+  "run_id": "20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0625",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "외과계 — 검진 초음파에서 발견된 신장 고형 종괴",
+  "type": "외과계 — 검진 초음파에서 발견된 신장 고형 종괴",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-11",
+  "vignette": "83세 여자가 건강검진 복부 초음파에서 오른쪽 신장 종괴가 발견되어 왔다. 육안적 혈뇨, 옆구리 통증, 체중 감소는 없다. 고혈압 외 다른 질환은 없고 혼자 장을 보러 다닐 만큼 활동적이며, 수술을 원한다. 혈압 132/78 mmHg 이다. 혈색소 12.8 g/dL, 혈청 크레아티닌 0.8 mg/dL, 칼슘 9.4 mg/dL, 알칼리인산분해효소는 정상이다. 뼈 통증이나 신경학적 이상은 없다. 조영증강 복부 CT 는 그림과 같다.",
+  "question": "수술 전 병기 결정을 위해 추가로 시행할 검사로 가장 적절한 것은?",
+  "options": [
+   "흉부 CT",
+   "뼈 스캔",
+   "뇌 MRI",
+   "전신 PET-CT",
+   "신장 동위원소 스캔"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 오른쪽 신장 뒤가쪽에서 바깥으로 튀어나온 약 5 cm 의 불균질하게 조영증강되는 고형 종괴가 있고, 육안상 지방 음영이 없어 혈관근지방종으로 보기 어렵다. 조영증강되는 신장 고형 종괴는 영상만으로 양성(호산성 과립세포종)과 신세포암을 가를 수 없으므로 신세포암으로 간주해 병기를 정한다. 신세포암은 폐로 가장 흔히 전이하므로 수술 전 흉부 CT 가 표준 병기 검사다. 뼈 통증·알칼리인산분해효소 상승·고칼슘혈증, 신경 증상이 없으므로 뼈 스캔과 뇌 MRI 는 필요하지 않다.\n- 원리: <b>왜 신장 고형 종괴는 암으로 다루는가</b>: 조영증강되는 신장 고형 종괴의 대부분은 신세포암이고, 양성인 호산성 과립세포종이나 지방이 적은 혈관근지방종은 CT 에서 서로 겹쳐 보인다. 수술 병리에서야 확정되는 경우가 많아, 수술을 계획할 때는 신세포암을 전제로 병기를 정한다(이 증례의 수술 병리는 호산성 과립세포종이었다).<br> <b>왜 흉부인가</b>: 신세포암은 혈관이 풍부하고 신정맥·하대정맥으로 자라 들어가는 성향이 있어 혈행성으로 퍼지며, 가장 흔한 원격 전이 장소가 폐다. 그래서 병기 결정은 복부 CT(국소 범위·림프절·정맥 침범)와 흉부 CT 로 한다.<br> <b>왜 다른 검사는 선택적인가</b>: 뼈 전이는 증상·알칼리인산분해효소 상승·고칼슘혈증이 있을 때 확률이 올라가고, 뇌 전이는 신경 증상이 있을 때 찾는다. 신세포암은 FDG 섭취가 낮은 경우가 많아 PET-CT 는 일상 병기 검사가 아니다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">흉부 CT(정답)</th><th>뼈 스캔(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>모든 신세포암 의심 고형 종괴</td><td>뼈 통증, 알칼리인산분해효소 상승, 고칼슘혈증</td></tr> <tr><td>이유</td><td><b>폐가 가장 흔한 원격 전이 장소</b></td><td>무증상 뼈 전이는 드물어 검사 이득이 작다</td></tr> <tr><td>이 환자</td><td>시행</td><td>칼슘·알칼리인산분해효소 정상, 뼈 통증 없음 → 생략</td></tr> </tbody></table> 신세포암 병기의 기본은 복부와 흉부의 CT 다. 뼈와 뇌는 증상·검사 이상이 길을 열 때만 추가한다.\n- 오답 이유:\n  - ② 뼈 스캔은 뼈 통증이 있거나 알칼리인산분해효소·칼슘이 올라 있어 뼈 전이가 의심될 때 정답이 된다.\n  - ③ 뇌 MRI 는 두통·국소 신경 결손·경련처럼 뇌 전이를 시사하는 증상이 있을 때 정답이 된다.\n  - ④ 전신 PET-CT 는 신세포암의 FDG 섭취가 낮아 일상 병기에 쓰지 않으며, 다른 원발 암을 함께 찾아야 하는 특별한 상황에서나 고려된다.\n  - ⑤ 신장 동위원소 스캔은 근치적 신절제술 뒤 남는 신장 기능이 걱정되는 만성 신장병 환자에서 분할 신기능을 볼 때 정답이 된다.\n- 함정: 고령이라 전신 전이 검사를 모두 하려는 것 — 신세포암 병기의 표준은 흉부 CT 이고, 뼈·뇌 검사는 증상·검사 이상이 있을 때만이다.\n- 학습목표: 조영증강되는 신장 고형 종괴를 신세포암으로 간주해 수술 전 병기 결정에 흉부 CT 를 고르고, 증상·검사 이상이 없을 때의 뼈 스캔·뇌 MRI·PET 와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00116 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "오른쪽 신장 뒤가쪽에서 바깥으로 튀어나온 약 5 cm 의 불균질하게 조영증강되는 고형 종괴가 있고, 육안상 지방 음영이 없어 혈관근지방종으로 보기 어렵다. 조영증강되는 신장 고형 종괴는 영상만으로 양성(호산성 과립세포종)과 신세포암을 가를 수 없으므로 신세포암으로 간주해 병기를 정한다. 신세포암은 폐로 가장 흔히 전이하므로 수술 전 흉부 CT 가 표준 병기 검사다. 뼈 통증·알칼리인산분해효소 상승·고칼슘혈증, 신경 증상이 없으므로 뼈 스캔과 뇌 MRI 는 필요하지 않다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 신장 고형 종괴는 암으로 다루는가</b>: 조영증강되는 신장 고형 종괴의 대부분은 신세포암이고, 양성인 호산성 과립세포종이나 지방이 적은 혈관근지방종은 CT 에서 서로 겹쳐 보인다. 수술 병리에서야 확정되는 경우가 많아, 수술을 계획할 때는 신세포암을 전제로 병기를 정한다(이 증례의 수술 병리는 호산성 과립세포종이었다).<br> <b>왜 흉부인가</b>: 신세포암은 혈관이 풍부하고 신정맥·하대정맥으로 자라 들어가는 성향이 있어 혈행성으로 퍼지며, 가장 흔한 원격 전이 장소가 폐다. 그래서 병기 결정은 복부 CT(국소 범위·림프절·정맥 침범)와 흉부 CT 로 한다.<br> <b>왜 다른 검사는 선택적인가</b>: 뼈 전이는 증상·알칼리인산분해효소 상승·고칼슘혈증이 있을 때 확률이 올라가고, 뇌 전이는 신경 증상이 있을 때 찾는다. 신세포암은 FDG 섭취가 낮은 경우가 많아 PET-CT 는 일상 병기 검사가 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">흉부 CT(정답)</th><th>뼈 스캔(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>모든 신세포암 의심 고형 종괴</td><td>뼈 통증, 알칼리인산분해효소 상승, 고칼슘혈증</td></tr> <tr><td>이유</td><td><b>폐가 가장 흔한 원격 전이 장소</b></td><td>무증상 뼈 전이는 드물어 검사 이득이 작다</td></tr> <tr><td>이 환자</td><td>시행</td><td>칼슘·알칼리인산분해효소 정상, 뼈 통증 없음 → 생략</td></tr> </tbody></table> 신세포암 병기의 기본은 복부와 흉부의 CT 다. 뼈와 뇌는 증상·검사 이상이 길을 열 때만 추가한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 뼈 스캔은 뼈 통증이 있거나 알칼리인산분해효소·칼슘이 올라 있어 뼈 전이가 의심될 때 정답이 된다.\n③ 뇌 MRI 는 두통·국소 신경 결손·경련처럼 뇌 전이를 시사하는 증상이 있을 때 정답이 된다.\n④ 전신 PET-CT 는 신세포암의 FDG 섭취가 낮아 일상 병기에 쓰지 않으며, 다른 원발 암을 함께 찾아야 하는 특별한 상황에서나 고려된다.\n⑤ 신장 동위원소 스캔은 근치적 신절제술 뒤 남는 신장 기능이 걱정되는 만성 신장병 환자에서 분할 신기능을 볼 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고령이라 전신 전이 검사를 모두 하려는 것 — 신세포암 병기의 표준은 흉부 CT 이고, 뼈·뇌 검사는 증상·검사 이상이 있을 때만이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영증강되는 신장 고형 종괴를 신세포암으로 간주해 수술 전 병기 결정에 흉부 CT 를 고르고, 증상·검사 이상이 없을 때의 뼈 스캔·뇌 MRI·PET 와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00116 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "조영증강되는 신장 고형 종괴는 신세포암으로 간주하고 가장 흔한 전이 장소인 폐를 흉부 CT 로 평가한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "뼈 통증이 없고 칼슘·알칼리인산분해효소가 정상이라 뼈 스캔의 근거가 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 오른쪽 신장의 약 5 cm 불균질 조영증강 고형 종괴, 지방 음영 없음 → 신세포암 의심 고형 종괴",
+    "수술을 계획하므로 병기 결정이 필요, 신세포암의 가장 흔한 원격 전이는 폐 → 흉부 CT",
+    "뼈 통증·칼슘·알칼리인산분해효소 이상과 신경 증상 없음 → 뼈 스캔·뇌 MRI 불필요"
+   ],
+   "key": [
+    {
+     "item": "영상: 오른쪽 신장 뒤가쪽의 약 5 cm 불균질 조영증강 고형 종괴, 지방 음영 없음",
+     "why": "신세포암을 전제로 병기를 정할 고형 종괴",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼슘 9.4 mg/dL, 알칼리인산분해효소는 정상",
+     "why": "뼈 전이 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "뼈 통증이나 신경학적 이상은 없다",
+     "why": "뼈 스캔·뇌 MRI 의 근거가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "수술을 원한다",
+     "why": "병기 결정이 필요한 상황",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 크레아티닌 0.8 mg/dL",
+     "why": "신기능 정상 — 동위원소 스캔이 필요하지 않다",
+     "also": []
+    },
+    {
+     "item": "83세 여자",
+     "why": "고령이지만 활동적이고 수술을 원해 병기 결정은 그대로",
+     "also": []
+    }
+   ],
+   "summary": "조영증강되는 신장 고형 종괴는 신세포암으로 간주해 병기를 정한다. 증상·검사 이상이 없으므로 추가 병기 검사는 흉부 CT 다.",
+   "switch": {
+    "choice": "B",
+    "condition": "허리뼈 통증이 있고 알칼리인산분해효소가 올라 있었다면 뼈 스캔을 추가"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0625.png",
+   "caption": "조영증강 복부 CT, 동맥기 축상 단면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 크롭·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.320102787772145413009918411296",
+   "asset_id": "TCIA-KITS-00116_78934230",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00116"
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0624",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "신경 — 처음 생긴 경련으로 뇌 MRI 를 찍은 중년 남성",
+  "type": "신경 — 처음 생긴 경련으로 뇌 MRI 를 찍은 중년 남성",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-11",
+  "vignette": "A 57-year-old man is brought to the emergency department after his wife saw him have a generalized tonic-clonic seizure at home. He has never had a seizure before and does not drink alcohol. He is now drowsy but oriented and follows commands. Vital signs are within normal limits. Serum glucose and sodium concentrations are within the reference ranges. MRI of the brain with a standard protocol is performed, and one axial image near the vertex is shown.",
+  "question": "Which of the following sequences is most likely shown?",
+  "options": [
+   "T2-weighted",
+   "Fluid-attenuated inversion recovery (FLAIR)",
+   "T1-weighted without contrast",
+   "T1-weighted after gadolinium",
+   "Diffusion-weighted imaging"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Cerebrospinal fluid in the sulci and along the falx is bright, and the cortical gray matter is brighter than the underlying white matter. Bright fluid with gray matter brighter than white matter is the signature of a T2-weighted image. On FLAIR the fluid signal is nulled, so the sulci would be dark; on T1-weighted images, fluid is dark and white matter is brighter than gray matter. Diffusion-weighted images also show dark cerebrospinal fluid and have much lower spatial detail.\n- 원리: <b>Why water is bright on T2</b>: T2 relaxation reflects how quickly protons lose phase coherence. Free water, as in cerebrospinal fluid, keeps its coherence for a long time, so it retains signal on a long-echo-time sequence and appears bright. Myelinated white matter has more lipid and less free water than gray matter, so its T2 is shorter and it appears darker than the cortex.<br> <b>Why FLAIR looks similar but differs in one place</b>: FLAIR is a T2-weighted sequence with an inversion pulse timed to null the signal of free water. Tissue water remains bright, but cerebrospinal fluid becomes dark, so periventricular and cortical lesions stand out against dark sulci.<br> <b>Why T1 is the reverse</b>: On T1-weighted images, fluid with a long T1 is dark and fat-rich white matter is brighter than gray matter, giving an image that resembles gross anatomy. Gadolinium shortens T1, so enhancing lesions and vessels become bright.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">T2-weighted (answer)</th><th>FLAIR (closest distractor)</th></tr></thead><tbody> <tr><td>Cerebrospinal fluid</td><td><b>Bright</b></td><td>Dark (nulled)</td></tr> <tr><td>Gray vs white matter</td><td>Gray brighter</td><td>Gray brighter</td></tr> <tr><td>Edema, most lesions</td><td>Bright</td><td>Bright, more conspicuous near CSF</td></tr> <tr><td>Best use</td><td>Fluid, cysts, flow voids</td><td>Periventricular and cortical lesions</td></tr> </tbody></table> Both sequences show gray matter brighter than white matter; the single discriminator is the cerebrospinal fluid — bright on T2, dark on FLAIR.\n- 오답 이유:\n  - (B) FLAIR would be correct if the sulci and ventricles were dark while gray matter stayed brighter than white matter.\n  - (C) T1-weighted without contrast would be correct if cerebrospinal fluid were dark and white matter were brighter than the cortex.\n  - (D) T1-weighted after gadolinium would be correct if the image had T1 contrast with bright vessels, dura, or enhancing lesions.\n  - (E) Diffusion-weighted imaging would be correct if the image were low resolution with dark cerebrospinal fluid, as used to detect acute infarction.\n- 함정: Calling any image with bright brain parenchyma FLAIR — check the cerebrospinal fluid first: bright fluid means T2, dark fluid means FLAIR or T1.\n- 학습목표: 축상 뇌 MRI 에서 뇌척수액이 밝고 회색질이 백색질보다 밝은 신호를 T2 강조영상으로 읽고 FLAIR·T1 과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 436: Seizures and Epilepsy\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …03846774 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Cerebrospinal fluid in the sulci and along the falx is bright, and the cortical gray matter is brighter than the underlying white matter. Bright fluid with gray matter brighter than white matter is the signature of a T2-weighted image. On FLAIR the fluid signal is nulled, so the sulci would be dark; on T1-weighted images, fluid is dark and white matter is brighter than gray matter. Diffusion-weighted images also show dark cerebrospinal fluid and have much lower spatial detail."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why water is bright on T2</b>: T2 relaxation reflects how quickly protons lose phase coherence. Free water, as in cerebrospinal fluid, keeps its coherence for a long time, so it retains signal on a long-echo-time sequence and appears bright. Myelinated white matter has more lipid and less free water than gray matter, so its T2 is shorter and it appears darker than the cortex.<br> <b>Why FLAIR looks similar but differs in one place</b>: FLAIR is a T2-weighted sequence with an inversion pulse timed to null the signal of free water. Tissue water remains bright, but cerebrospinal fluid becomes dark, so periventricular and cortical lesions stand out against dark sulci.<br> <b>Why T1 is the reverse</b>: On T1-weighted images, fluid with a long T1 is dark and fat-rich white matter is brighter than gray matter, giving an image that resembles gross anatomy. Gadolinium shortens T1, so enhancing lesions and vessels become bright."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">T2-weighted (answer)</th><th>FLAIR (closest distractor)</th></tr></thead><tbody> <tr><td>Cerebrospinal fluid</td><td><b>Bright</b></td><td>Dark (nulled)</td></tr> <tr><td>Gray vs white matter</td><td>Gray brighter</td><td>Gray brighter</td></tr> <tr><td>Edema, most lesions</td><td>Bright</td><td>Bright, more conspicuous near CSF</td></tr> <tr><td>Best use</td><td>Fluid, cysts, flow voids</td><td>Periventricular and cortical lesions</td></tr> </tbody></table> Both sequences show gray matter brighter than white matter; the single discriminator is the cerebrospinal fluid — bright on T2, dark on FLAIR."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) FLAIR would be correct if the sulci and ventricles were dark while gray matter stayed brighter than white matter.\n(C) T1-weighted without contrast would be correct if cerebrospinal fluid were dark and white matter were brighter than the cortex.\n(D) T1-weighted after gadolinium would be correct if the image had T1 contrast with bright vessels, dura, or enhancing lesions.\n(E) Diffusion-weighted imaging would be correct if the image were low resolution with dark cerebrospinal fluid, as used to detect acute infarction."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any image with bright brain parenchyma FLAIR — check the cerebrospinal fluid first: bright fluid means T2, dark fluid means FLAIR or T1."
+   },
+   {
+    "k": "학습목표",
+    "v": "축상 뇌 MRI 에서 뇌척수액이 밝고 회색질이 백색질보다 밝은 신호를 T2 강조영상으로 읽고 FLAIR·T1 과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 436: Seizures and Epilepsy ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …03846774 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "Bright cerebrospinal fluid with gray matter brighter than white matter identifies a T2-weighted image",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The sulcal cerebrospinal fluid is bright, whereas FLAIR nulls it",
+   "steps": 2,
+   "chain": [
+    "영상: bright cerebrospinal fluid in the sulci and along the falx, cortex brighter than white matter",
+    "Bright fluid excludes FLAIR, T1, and diffusion imaging -> T2-weighted"
+   ],
+   "key": [
+    {
+     "item": "영상: bright cerebrospinal fluid in the sulci and along the falx",
+     "why": "Fluid is bright only on T2 among these sequences",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: cortical gray matter brighter than the underlying white matter",
+     "why": "Lowers the likelihood of a T1-weighted image",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "generalized tonic-clonic seizure",
+     "why": "Reason for the MRI; does not determine the sequence",
+     "also": []
+    },
+    {
+     "item": "Serum glucose and sodium concentrations are within the reference ranges",
+     "why": "Excludes provoked metabolic seizure context; not relevant to the sequence",
+     "also": []
+    }
+   ],
+   "summary": "The cerebrospinal fluid is bright and the gray matter is brighter than white matter. This is a T2-weighted image.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the sulci were dark while the cortex remained brighter than the white matter, FLAIR"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0624.png",
+   "caption": "Axial brain MRI, single image from a standard clinical protocol, DICOM converted without cropping (The Cancer Imaging Archive, CC BY 4.0; no window adjustment beyond default)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.110081796003394943623110805999303846774",
+   "asset_id": "TCIA-UPENN_GBM-51333032330995",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …03846774"
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0622",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "산과 — 자궁저 높이가 작은 임신부의 초음파 생체계측",
+  "type": "산과 — 자궁저 높이가 작은 임신부의 초음파 생체계측",
+  "modality": "ULTRASOUND",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-11",
+  "vignette": "A woman at 32 weeks' gestation comes for a routine prenatal visit. She feels the fetus moving normally. Her blood pressure is 118/72 mm Hg, and urinalysis shows no protein. Her fundal height is 28 cm. An ultrasound examination is performed to assess fetal growth, and one of the standard biometry planes is shown.",
+  "question": "Which of the following measurements is obtained in this plane?",
+  "options": [
+   "Femur length",
+   "Transverse cerebellar diameter",
+   "Abdominal circumference",
+   "Biparietal diameter",
+   "Head circumference"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The image is a transverse section of the fetal abdomen: a round outline with the echogenic spine at one side, the homogeneous liver, and an anechoic stomach bubble, with no heart or kidneys in the section. This is the standard plane for the abdominal circumference, measured at the level of the stomach and the intrahepatic umbilical vein. Because the liver stores glycogen and shrinks first when fetal nutrition is limited, the abdominal circumference is the biometric parameter that falls earliest in growth restriction, which is why it is measured when the fundal height lags.\n- 원리: <b>Why each biometric plane has fixed landmarks</b>: A measurement is only reproducible if it is taken at the same anatomic level every time. The <b>abdominal circumference</b> is measured in a true transverse section at the level of the stomach and the umbilical vein deep in the liver, with the spine seen in cross-section; the kidneys and heart must not be in the section, because they mean the plane is too low or too high. Head measurements use a separate plane through the thalami and cavum septi pellucidi, and the femur length uses a long-axis view of the bone.<br> <b>Why the abdomen falls first</b>: When placental supply is limited, the fetus redistributes blood to the brain and stores less glycogen in the liver. Liver size, and therefore the abdominal circumference, declines while head growth is relatively spared. An abdominal circumference below the 10th percentile is one of the defining criteria for fetal growth restriction.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Abdominal circumference (answer)</th><th>Biparietal diameter (closest distractor)</th></tr></thead><tbody> <tr><td>Plane</td><td>Transverse abdomen: spine, stomach, intrahepatic umbilical vein</td><td>Transverse head: thalami, cavum septi pellucidi</td></tr> <tr><td>Must not be seen</td><td>Kidneys, heart</td><td>Cerebellum (too low)</td></tr> <tr><td>In growth restriction</td><td><b>Falls first</b> (liver glycogen)</td><td>Relatively spared (brain sparing)</td></tr> <tr><td>Best use</td><td>Detecting growth restriction and macrosomia</td><td>Dating in the second trimester</td></tr> </tbody></table> If the image shows a skull outline with midline structures, the head measurements apply; a section with the stomach and spine means the abdominal circumference.\n- 오답 이유:\n  - (A) Femur length would be correct if the image showed the long axis of the femoral diaphysis with the beam perpendicular to it.\n  - (B) Transverse cerebellar diameter would be correct in an angled posterior head plane showing the cerebellar hemispheres and cisterna magna.\n  - (D) Biparietal diameter would be correct if the image showed a transverse section of the fetal skull at the level of the thalami.\n  - (E) Head circumference would be correct for the same skull plane as the biparietal diameter, traced around the outer table.\n- 함정: Choosing a head measurement because growth is in question — growth restriction is screened by the abdominal plane, and this image shows the stomach and spine, not a skull.\n- 제작 가정: FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신 32주 산전진찰과 작은 자궁저 높이를 가정했다 (가정한 정보: 32 weeks' gestation · fundal height is 28 cm)\n- 학습목표: 태아 복부 가로단면(척추·위포·간)을 복부둘레 측정 단면으로 읽고, 성장제한 평가에서 가장 먼저 줄어드는 지표임을 머리 계측과 가른다\n- 근거·출처: Cunningham FG, Leveno KJ, Dashe JS, et al. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 14: Fetal Imaging; Chapter 47: Fetal-Growth Disorders · Salomon LJ, Alfirevic Z, Da Silva Costa F, et al. ISUOG Practice Guidelines: ultrasound assessment of fetal biometry and growth. Ultrasound Obstet Gynecol. 2019;53(6):715-723\n\n## 출처\n- FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01410_Plane2_1_of_1 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The image is a transverse section of the fetal abdomen: a round outline with the echogenic spine at one side, the homogeneous liver, and an anechoic stomach bubble, with no heart or kidneys in the section. This is the standard plane for the abdominal circumference, measured at the level of the stomach and the intrahepatic umbilical vein. Because the liver stores glycogen and shrinks first when fetal nutrition is limited, the abdominal circumference is the biometric parameter that falls earliest in growth restriction, which is why it is measured when the fundal height lags."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why each biometric plane has fixed landmarks</b>: A measurement is only reproducible if it is taken at the same anatomic level every time. The <b>abdominal circumference</b> is measured in a true transverse section at the level of the stomach and the umbilical vein deep in the liver, with the spine seen in cross-section; the kidneys and heart must not be in the section, because they mean the plane is too low or too high. Head measurements use a separate plane through the thalami and cavum septi pellucidi, and the femur length uses a long-axis view of the bone.<br> <b>Why the abdomen falls first</b>: When placental supply is limited, the fetus redistributes blood to the brain and stores less glycogen in the liver. Liver size, and therefore the abdominal circumference, declines while head growth is relatively spared. An abdominal circumference below the 10th percentile is one of the defining criteria for fetal growth restriction."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Abdominal circumference (answer)</th><th>Biparietal diameter (closest distractor)</th></tr></thead><tbody> <tr><td>Plane</td><td>Transverse abdomen: spine, stomach, intrahepatic umbilical vein</td><td>Transverse head: thalami, cavum septi pellucidi</td></tr> <tr><td>Must not be seen</td><td>Kidneys, heart</td><td>Cerebellum (too low)</td></tr> <tr><td>In growth restriction</td><td><b>Falls first</b> (liver glycogen)</td><td>Relatively spared (brain sparing)</td></tr> <tr><td>Best use</td><td>Detecting growth restriction and macrosomia</td><td>Dating in the second trimester</td></tr> </tbody></table> If the image shows a skull outline with midline structures, the head measurements apply; a section with the stomach and spine means the abdominal circumference."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Femur length would be correct if the image showed the long axis of the femoral diaphysis with the beam perpendicular to it.\n(B) Transverse cerebellar diameter would be correct in an angled posterior head plane showing the cerebellar hemispheres and cisterna magna.\n(D) Biparietal diameter would be correct if the image showed a transverse section of the fetal skull at the level of the thalami.\n(E) Head circumference would be correct for the same skull plane as the biparietal diameter, traced around the outer table."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a head measurement because growth is in question — growth restriction is screened by the abdominal plane, and this image shows the stomach and spine, not a skull."
+   },
+   {
+    "k": "제작 가정",
+    "v": "FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신 32주 산전진찰과 작은 자궁저 높이를 가정했다 (가정한 정보: 32 weeks' gestation · fundal height is 28 cm)"
+   },
+   {
+    "k": "학습목표",
+    "v": "태아 복부 가로단면(척추·위포·간)을 복부둘레 측정 단면으로 읽고, 성장제한 평가에서 가장 먼저 줄어드는 지표임을 머리 계측과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cunningham FG, Leveno KJ, Dashe JS, et al. Williams Obstetrics, 26th ed. McGraw Hill; 2022. Chapter 14: Fetal Imaging; Chapter 47: Fetal-Growth Disorders · Salomon LJ, Alfirevic Z, Da Silva Costa F, et al. ISUOG Practice Guidelines: ultrasound assessment of fetal biometry and growth. Ultrasound Obstet Gynecol. 2019;53(6):715-723 ## 출처 FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01410_Plane2_1_of_1 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "A transverse fetal abdominal section with the spine, liver, and stomach bubble is the plane for the abdominal circumference",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "The section contains the stomach and spine, not a skull with thalami",
+   "steps": 2,
+   "chain": [
+    "영상: transverse fetal abdomen with spine, liver, and anechoic stomach; no heart or kidneys",
+    "This is the standard abdominal circumference plane, the earliest parameter to fall in growth restriction"
+   ],
+   "key": [
+    {
+     "item": "영상: round transverse fetal abdomen with the spine, liver, and an anechoic stomach bubble",
+     "why": "Landmarks of the abdominal circumference plane",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: no skull outline or midline brain structures",
+     "why": "Lowers the likelihood that a head measurement plane is shown",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "fundal height is 28 cm",
+     "why": "Explains why growth is assessed; does not identify the plane",
+     "also": []
+    },
+    {
+     "item": "urinalysis shows no protein",
+     "why": "Natural context of a prenatal visit; not decisive",
+     "also": []
+    }
+   ],
+   "summary": "The section shows the spine, liver, and stomach bubble without the heart or kidneys. It is the abdominal circumference plane.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the image showed the fetal skull with the thalami and cavum septi pellucidi, the biparietal diameter"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0622.png",
+   "caption": "Fetal ultrasound still image; text at the upper right is the machine setting, unaltered apart from scaling (FETAL_PLANES_DB, Zenodo, CC BY 4.0) ※ The clinical scenario in the stem is an authoring assumption — the source dataset has no age or clinical history",
+   "alt": "ULTRASOUND 영상"
+  },
+  "attribution": {
+   "dataset": "FETAL_PLANES_DB: Common maternal-fetal ultrasound images",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://zenodo.org/records/3904280",
+   "asset_id": "FETALPLANES-Patient01410_Plane2_1_of_1",
+   "text": "FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01410_Plane2_1_of_1"
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0621",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "병리·기초 — 피부 절편에서 바닥층에 띄엄띄엄 염색된 세포",
+  "type": "병리·기초 — 피부 절편에서 바닥층에 띄엄띄엄 염색된 세포",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-11",
+  "vignette": "90세 여자가 등에 생긴 피부 병변을 절제하였다. 절제 검체 가장자리의 정상 피부에서 얻은 조직 절편에 한 효소 단백질에 대한 면역조직화학염색을 하였다. 사진은 그림과 같다(갈색 = 양성, 파란색 = 헤마톡실린 대조염색). 표피의 각질형성세포와 진피의 섬유모세포는 염색되지 않았다.",
+  "question": "갈색으로 염색된 세포의 발생 기원으로 가장 적절한 것은?",
+  "options": [
+   "신경관",
+   "신경능선",
+   "골수 조혈모세포",
+   "표면외배엽",
+   "중배엽"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 사진 아래쪽 가장자리의 얇은 표피에서 갈색 양성 세포는 바닥층에만 한 줄로 띄엄띄엄 놓여 있고, 그 위의 각질형성세포와 진피 세포는 음성이다. 표피 바닥층에 4~10개의 바닥세포마다 하나씩 끼어 있는 세포는 멜라닌세포이고, 이 절편의 염색 대상도 멜라닌 합성 효소(티로시네이스)다. 멜라닌세포는 배아기 신경능선에서 나와 피부로 이동해 바닥층에 자리 잡는다.\n- 원리: <b>왜 위치가 세포를 알려 주는가</b>: 표피의 네 가지 세포는 자리가 다르다. <b>멜라닌세포</b>는 바닥층에 띄엄띄엄 끼어 있고 가지돌기를 위쪽 각질형성세포 사이로 뻗어 멜라닌소체를 넘겨준다. <b>랑게르한스세포</b>는 그보다 위인 가시층에 흩어져 있고, <b>메르켈세포</b>는 바닥층에 있지만 손바닥·입술처럼 촉각이 예민한 곳에 몰려 있다. 각질형성세포는 표피 전 층을 채운다.<br> <b>왜 신경능선인가</b>: 신경관이 닫힐 때 그 가장자리에서 떨어져 나온 신경능선 세포는 몸 곳곳으로 이동해 멜라닌세포·말초신경절·슈반세포·부신속질·심장 유출로 일부가 된다. 멜라닌세포의 전구세포(멜라닌모세포)는 배아 피부로 이동해 바닥층에 자리 잡는다. 그래서 신경능선 이동 장애(예: KIT 변이의 얼룩증)는 피부 탈색반으로 나타난다.<br> <b>임상 연결</b>: 흑색종은 이 멜라닌세포에서 생기며, 면역염색(S100·SOX10·Melan-A·HMB-45·티로시네이스)으로 기원을 확인한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">멜라닌세포(정답 — 신경능선)</th><th>랑게르한스세포(가장 가까운 오답 — 골수)</th></tr></thead><tbody> <tr><td>표피 안 위치</td><td><b>바닥층</b>, 바닥세포 사이에 띄엄띄엄</td><td>가시층(바닥층 위)에 흩어져 있음</td></tr> <tr><td>기능</td><td>멜라닌 합성·전달</td><td>항원 포착·림프절로 이동해 제시</td></tr> <tr><td>대표 표지자</td><td>티로시네이스, Melan-A, SOX10, S100</td><td>CD1a, 랑게린(CD207), S100</td></tr> <tr><td>전자현미경</td><td>멜라닌소체</td><td>버벡과립(테니스 라켓 모양)</td></tr> </tbody></table> 둘 다 가지돌기가 있고 S100 양성이라 헷갈린다. 바닥층에 붙어 있고 멜라닌 합성 효소에 양성이면 멜라닌세포, 그 위층에 있고 CD1a 양성이면 랑게르한스세포다.\n- 오답 이유:\n  - ① 신경관은 중추신경계의 신경세포·별아교세포를 물었다면 정답이 되며, 신경관에서 떨어져 나온 신경능선과는 다르다.\n  - ③ 골수 조혈모세포는 가시층에 흩어진 CD1a·랑게린 양성 랑게르한스세포를 물었다면 정답이 된다.\n  - ④ 표면외배엽은 염색된 세포가 표피 전 층을 채우는 각질형성세포였다면 정답이 된다.\n  - ⑤ 중배엽은 염색된 세포가 진피의 섬유모세포나 혈관 내피세포·평활근세포였다면 정답이 된다.\n- 함정: 가지돌기가 있는 표피 세포를 모두 면역세포로 보는 것 — 바닥층에 끼어 있으면 멜라닌세포이고 기원은 신경능선이다.\n- 학습목표: 피부 면역조직화학 절편에서 표피 바닥층에 띄엄띄엄 놓인 양성 세포를 멜라닌세포로 읽고 그 발생 기원을 신경능선으로 연결하며 랑게르한스세포와 가른다\n- 근거·출처: Human Protein Atlas. TYR (ENSG00000077498) tissue expression — skin. https://www.proteinatlas.org (CC BY 4.0) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 59: Approach to the Patient with a Skin Disorder\n\n## 출처\n- Human Protein Atlas, TYR / Skin 1 (CC BY 4.0), https://images.proteinatlas.org/79/994_B_8_1.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "사진 아래쪽 가장자리의 얇은 표피에서 갈색 양성 세포는 바닥층에만 한 줄로 띄엄띄엄 놓여 있고, 그 위의 각질형성세포와 진피 세포는 음성이다. 표피 바닥층에 4~10개의 바닥세포마다 하나씩 끼어 있는 세포는 멜라닌세포이고, 이 절편의 염색 대상도 멜라닌 합성 효소(티로시네이스)다. 멜라닌세포는 배아기 신경능선에서 나와 피부로 이동해 바닥층에 자리 잡는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 위치가 세포를 알려 주는가</b>: 표피의 네 가지 세포는 자리가 다르다. <b>멜라닌세포</b>는 바닥층에 띄엄띄엄 끼어 있고 가지돌기를 위쪽 각질형성세포 사이로 뻗어 멜라닌소체를 넘겨준다. <b>랑게르한스세포</b>는 그보다 위인 가시층에 흩어져 있고, <b>메르켈세포</b>는 바닥층에 있지만 손바닥·입술처럼 촉각이 예민한 곳에 몰려 있다. 각질형성세포는 표피 전 층을 채운다.<br> <b>왜 신경능선인가</b>: 신경관이 닫힐 때 그 가장자리에서 떨어져 나온 신경능선 세포는 몸 곳곳으로 이동해 멜라닌세포·말초신경절·슈반세포·부신속질·심장 유출로 일부가 된다. 멜라닌세포의 전구세포(멜라닌모세포)는 배아 피부로 이동해 바닥층에 자리 잡는다. 그래서 신경능선 이동 장애(예: KIT 변이의 얼룩증)는 피부 탈색반으로 나타난다.<br> <b>임상 연결</b>: 흑색종은 이 멜라닌세포에서 생기며, 면역염색(S100·SOX10·Melan-A·HMB-45·티로시네이스)으로 기원을 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">멜라닌세포(정답 — 신경능선)</th><th>랑게르한스세포(가장 가까운 오답 — 골수)</th></tr></thead><tbody> <tr><td>표피 안 위치</td><td><b>바닥층</b>, 바닥세포 사이에 띄엄띄엄</td><td>가시층(바닥층 위)에 흩어져 있음</td></tr> <tr><td>기능</td><td>멜라닌 합성·전달</td><td>항원 포착·림프절로 이동해 제시</td></tr> <tr><td>대표 표지자</td><td>티로시네이스, Melan-A, SOX10, S100</td><td>CD1a, 랑게린(CD207), S100</td></tr> <tr><td>전자현미경</td><td>멜라닌소체</td><td>버벡과립(테니스 라켓 모양)</td></tr> </tbody></table> 둘 다 가지돌기가 있고 S100 양성이라 헷갈린다. 바닥층에 붙어 있고 멜라닌 합성 효소에 양성이면 멜라닌세포, 그 위층에 있고 CD1a 양성이면 랑게르한스세포다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 신경관은 중추신경계의 신경세포·별아교세포를 물었다면 정답이 되며, 신경관에서 떨어져 나온 신경능선과는 다르다.\n③ 골수 조혈모세포는 가시층에 흩어진 CD1a·랑게린 양성 랑게르한스세포를 물었다면 정답이 된다.\n④ 표면외배엽은 염색된 세포가 표피 전 층을 채우는 각질형성세포였다면 정답이 된다.\n⑤ 중배엽은 염색된 세포가 진피의 섬유모세포나 혈관 내피세포·평활근세포였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "가지돌기가 있는 표피 세포를 모두 면역세포로 보는 것 — 바닥층에 끼어 있으면 멜라닌세포이고 기원은 신경능선이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "피부 면역조직화학 절편에서 표피 바닥층에 띄엄띄엄 놓인 양성 세포를 멜라닌세포로 읽고 그 발생 기원을 신경능선으로 연결하며 랑게르한스세포와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas. TYR (ENSG00000077498) tissue expression — skin. https://www.proteinatlas.org (CC BY 4.0) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 59: Approach to the Patient with a Skin Disorder ## 출처 Human Protein Atlas, TYR / Skin 1 (CC BY 4.0), https://images.proteinatlas.org/79/994_B_8_1.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "표피 바닥층에 띄엄띄엄 놓인 양성 세포는 멜라닌세포이고 멜라닌세포는 신경능선에서 기원한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "양성 세포가 가시층이 아니라 바닥층에 붙어 있고 멜라닌 합성 효소에 양성이다",
+   "steps": 2,
+   "chain": [
+    "영상: 표피 바닥층에만 한 줄로 띄엄띄엄 놓인 갈색 양성 세포, 각질형성세포·진피 음성 → 멜라닌세포",
+    "멜라닌세포는 배아기 신경능선에서 이동해 온 세포 → 신경능선"
+   ],
+   "key": [
+    {
+     "item": "영상: 표피 바닥층에 띄엄띄엄 놓인 갈색 양성 세포",
+     "why": "바닥층 위치가 멜라닌세포를 가리킨다",
+     "also": []
+    },
+    {
+     "item": "한 효소 단백질에 대한 면역조직화학염색",
+     "why": "멜라닌 합성 효소처럼 세포 특이 효소를 본다는 단서",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "표피의 각질형성세포와 진피의 섬유모세포는 염색되지 않았다",
+     "why": "표면외배엽·중배엽 기원 세포가 염색 대상일 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "90세 여자",
+     "why": "나이는 세포 기원 판단에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "양성 세포가 표피 바닥층에 띄엄띄엄 놓여 있어 멜라닌세포다. 멜라닌세포는 신경능선에서 기원한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "양성 세포가 가시층에 흩어져 있고 CD1a 염색이었다면 골수 유래 랑게르한스세포"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0621.jpg",
+   "caption": "면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색) 조직 마이크로어레이 코어, 원본 배율 그대로 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000077498-TYR/tissue/Skin",
+   "asset_id": "HPA-TYR_994_B_8_1",
+   "text": "Human Protein Atlas, TYR / Skin 1 (CC BY 4.0), https://images.proteinatlas.org/79/994_B_8_1.jpg"
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0629",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미",
+  "type": "예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-11",
+  "vignette": "55세 남자가 보건소 주민 선별검사에서 어떤 질환의 검사 결과가 양성으로 나와 걱정이 되어 왔다. 증상은 없고 가족력도 없다. 이 보건소는 유병률이 1 % 인 지역 주민 10,000 명에게 이 검사를 시행했다. 검사의 민감도는 90 %, 특이도는 95 % 이다. 병원 고위험 클리닉 환자(유병률 10 %)에서 이 검사의 양성예측도는 약 67 % 로 보고되었다.",
+  "question": "이 남자가 실제로 이 질환을 가지고 있을 확률(양성예측도)에 가장 가까운 것은?",
+  "options": [
+   "약 50 %",
+   "약 15 %",
+   "약 67 %",
+   "약 90 %",
+   "약 95 %"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 10,000 명 중 환자는 1 % 인 100 명, 비환자는 9,900 명이다. 민감도 90 % 이므로 참양성은 90 명, 특이도 95 % 이므로 비환자의 5 % 인 495 명이 위양성이다. 양성예측도 = 90 / (90 + 495) = 약 15 % 다. 민감도·특이도는 검사 자체의 성질이라 그대로지만, 유병률이 10 % 에서 1 % 로 낮아지면 위양성이 참양성보다 훨씬 많아져 양성예측도가 크게 떨어진다.\n- 원리: <b>왜 같은 검사인데 값이 바뀌는가</b>: 민감도(환자 중 양성 비율)와 특이도(비환자 중 음성 비율)는 각각 환자 집단과 비환자 집단 안에서만 계산하므로 유병률과 무관하다. 그러나 양성예측도는 「양성인 사람 전체」 중 환자의 비율이라 두 집단의 크기 비, 즉 유병률이 분모에 들어간다. 유병률이 낮으면 비환자 집단이 압도적으로 커서, 특이도가 95 % 로 높아도 그 5 % 가 만드는 위양성의 수가 소수 환자의 참양성보다 많아진다.<br> <b>베이즈 정리로 보면</b>: 양성 결과의 양성 우도비 = 민감도 / (1 − 특이도) = 0.90 / 0.05 = 18 이다. 사전 오즈 1/99 에 18 을 곱하면 사후 오즈 약 0.18, 확률로 약 15 % 다. 사전 확률 10 % 에서는 오즈 1/9 × 18 = 2, 확률 약 67 % 로 제시된 값과 맞는다.<br> <b>정책 의미</b>: 저유병 집단의 선별검사는 양성자 대부분이 위양성이므로 확진 검사 비용·불안·과잉 진단을 함께 계획해야 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">지역 주민(유병률 1 % — 정답 약 15 %)</th><th>고위험 클리닉(유병률 10 % — 약 67 %)</th></tr></thead><tbody> <tr><td>환자 / 비환자 (10,000 명당)</td><td>100 / 9,900</td><td>1,000 / 9,000</td></tr> <tr><td>참양성(민감도 90 %)</td><td>90</td><td>900</td></tr> <tr><td>위양성(1 − 특이도 5 %)</td><td><b>495</b></td><td>450</td></tr> <tr><td>양성예측도</td><td>90 / 585 ≈ 15 %</td><td>900 / 1,350 ≈ 67 %</td></tr> </tbody></table> 유병률이 낮아지면 양성예측도는 내려가고 음성예측도는 올라간다. 민감도·특이도를 답으로 고르는 것은 「검사의 성질」과 「결과의 의미」를 섞은 것이다.\n- 오답 이유:\n  - ① 약 50 % 는 위양성과 참양성의 수가 같아지는 유병률(약 5 %)의 집단이라면 정답이 된다.\n  - ③ 약 67 % 는 유병률이 10 % 인 고위험 클리닉 환자에서의 양성예측도로, 대상 집단이 그 클리닉이라면 정답이 된다.\n  - ④ 약 90 % 는 이 검사의 민감도로, 「환자 중 검사 양성의 비율」을 물었다면 정답이 된다.\n  - ⑤ 약 95 % 는 이 검사의 특이도로, 「비환자 중 검사 음성의 비율」을 물었다면 정답이 된다.\n- 함정: 고위험군의 양성예측도나 민감도를 그대로 옮기는 것 — 유병률이 바뀌면 같은 검사라도 양성예측도는 다시 계산해야 한다.\n- 학습목표: 민감도·특이도가 같은 선별검사라도 유병률이 낮으면 양성예측도가 크게 떨어짐을 2×2 표로 계산하고 고위험군의 값과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 4: Decision-Making in Clinical Medicine · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 6: Screening and Prevention of Disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "10,000 명 중 환자는 1 % 인 100 명, 비환자는 9,900 명이다. 민감도 90 % 이므로 참양성은 90 명, 특이도 95 % 이므로 비환자의 5 % 인 495 명이 위양성이다. 양성예측도 = 90 / (90 + 495) = 약 15 % 다. 민감도·특이도는 검사 자체의 성질이라 그대로지만, 유병률이 10 % 에서 1 % 로 낮아지면 위양성이 참양성보다 훨씬 많아져 양성예측도가 크게 떨어진다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 같은 검사인데 값이 바뀌는가</b>: 민감도(환자 중 양성 비율)와 특이도(비환자 중 음성 비율)는 각각 환자 집단과 비환자 집단 안에서만 계산하므로 유병률과 무관하다. 그러나 양성예측도는 「양성인 사람 전체」 중 환자의 비율이라 두 집단의 크기 비, 즉 유병률이 분모에 들어간다. 유병률이 낮으면 비환자 집단이 압도적으로 커서, 특이도가 95 % 로 높아도 그 5 % 가 만드는 위양성의 수가 소수 환자의 참양성보다 많아진다.<br> <b>베이즈 정리로 보면</b>: 양성 결과의 양성 우도비 = 민감도 / (1 − 특이도) = 0.90 / 0.05 = 18 이다. 사전 오즈 1/99 에 18 을 곱하면 사후 오즈 약 0.18, 확률로 약 15 % 다. 사전 확률 10 % 에서는 오즈 1/9 × 18 = 2, 확률 약 67 % 로 제시된 값과 맞는다.<br> <b>정책 의미</b>: 저유병 집단의 선별검사는 양성자 대부분이 위양성이므로 확진 검사 비용·불안·과잉 진단을 함께 계획해야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">지역 주민(유병률 1 % — 정답 약 15 %)</th><th>고위험 클리닉(유병률 10 % — 약 67 %)</th></tr></thead><tbody> <tr><td>환자 / 비환자 (10,000 명당)</td><td>100 / 9,900</td><td>1,000 / 9,000</td></tr> <tr><td>참양성(민감도 90 %)</td><td>90</td><td>900</td></tr> <tr><td>위양성(1 − 특이도 5 %)</td><td><b>495</b></td><td>450</td></tr> <tr><td>양성예측도</td><td>90 / 585 ≈ 15 %</td><td>900 / 1,350 ≈ 67 %</td></tr> </tbody></table> 유병률이 낮아지면 양성예측도는 내려가고 음성예측도는 올라간다. 민감도·특이도를 답으로 고르는 것은 「검사의 성질」과 「결과의 의미」를 섞은 것이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 약 50 % 는 위양성과 참양성의 수가 같아지는 유병률(약 5 %)의 집단이라면 정답이 된다.\n③ 약 67 % 는 유병률이 10 % 인 고위험 클리닉 환자에서의 양성예측도로, 대상 집단이 그 클리닉이라면 정답이 된다.\n④ 약 90 % 는 이 검사의 민감도로, 「환자 중 검사 양성의 비율」을 물었다면 정답이 된다.\n⑤ 약 95 % 는 이 검사의 특이도로, 「비환자 중 검사 음성의 비율」을 물었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고위험군의 양성예측도나 민감도를 그대로 옮기는 것 — 유병률이 바뀌면 같은 검사라도 양성예측도는 다시 계산해야 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "민감도·특이도가 같은 선별검사라도 유병률이 낮으면 양성예측도가 크게 떨어짐을 2×2 표로 계산하고 고위험군의 값과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 4: Decision-Making in Clinical Medicine · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 6: Screening and Prevention of Disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "유병률 1 % 집단에서 참양성 90 명, 위양성 495 명이므로 양성예측도는 약 15 % 다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "양성예측도는 유병률에 따라 달라지므로 고위험군의 67 % 를 옮길 수 없다",
+   "steps": 3,
+   "chain": [
+    "10,000 명 × 유병률 1 % → 환자 100 명, 비환자 9,900 명",
+    "민감도 90 % → 참양성 90 명, 1 − 특이도 5 % → 위양성 495 명",
+    "양성예측도 = 90 / 585 ≈ 15 %"
+   ],
+   "key": [
+    {
+     "item": "민감도는 90 %, 특이도는 95 %",
+     "why": "참양성·위양성 계산에 쓴다",
+     "also": []
+    },
+    {
+     "item": "유병률이 1 % 인 지역 주민 10,000 명",
+     "why": "2×2 표의 행 크기를 정한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양성예측도는 약 67 % 로 보고되었다",
+     "why": "다른 유병률의 값 — 그대로 옮길 수 없음을 보여 준다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "증상은 없고 가족력도 없다",
+     "why": "사전 확률을 지역 유병률보다 높일 근거가 없다는 배경",
+     "also": []
+    }
+   ],
+   "summary": "유병률 1 % 에서 참양성 90 명, 위양성 495 명이다. 양성예측도는 약 15 % 로 고위험군의 67 % 보다 훨씬 낮다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 검사를 유병률 10 % 인 고위험 클리닉 환자에게 시행한다면 약 67 %"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0628",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "감염 — 치료받지 않은 HIV 감염인의 2주 두통",
+  "type": "감염 — 치료받지 않은 HIV 감염인의 2주 두통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-11",
+  "vignette": "A 34-year-old man with HIV infection who has not taken antiretroviral therapy comes to the emergency department because of a headache that has gradually worsened over 2 weeks. He has had low-grade fevers and nausea. His temperature is 38.1°C, blood pressure is 124/76 mm Hg, and pulse is 92/min. He is oriented, with mild neck stiffness and no focal neurologic deficits. CD4+ T-lymphocyte count is 38/mm3. CT of the head shows no mass lesion. Lumbar puncture shows an opening pressure of 32 cm H2O; cerebrospinal fluid analysis shows a leukocyte count of 18/mm3 (90% lymphocytes), glucose concentration of 32 mg/dL, and a positive cryptococcal antigen test.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy?",
+  "options": [
+   "Fluconazole alone",
+   "Immediate initiation of antiretroviral therapy",
+   "Ceftriaxone, vancomycin, and ampicillin",
+   "Dexamethasone and fluconazole",
+   "Amphotericin B and flucytosine"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: A subacute headache with fever, a CD4+ count below 100/mm3, a high opening pressure, lymphocytic cerebrospinal fluid with low glucose, and a positive cryptococcal antigen establish cryptococcal meningitis. Induction therapy with an amphotericin B formulation plus flucytosine sterilizes the cerebrospinal fluid fastest and lowers mortality, followed by fluconazole consolidation and maintenance. The high opening pressure also requires therapeutic lumbar drainage, and antiretroviral therapy is deferred for 4 to 6 weeks.\n- 원리: <b>Why combination induction</b>: Cryptococcus neoformans in cerebrospinal fluid reaches very high burdens in advanced HIV. Amphotericin B binds ergosterol and kills the yeast; flucytosine is converted inside fungal cells to 5-fluorouracil and blocks nucleic acid synthesis. Together they clear the organism faster than either alone, and the speed of clearance predicts survival. Fluconazole is fungistatic and clears the fluid slowly, so it is used only after induction or when the combination is unavailable.<br> <b>Why antiretroviral therapy waits</b>: Restoring CD4 cells early unmasks a strong inflammatory response against cryptococcal antigens in a closed space, the immune reconstitution inflammatory syndrome. Starting antiretroviral therapy within the first weeks increased mortality in a randomized trial, so it is started 4 to 6 weeks after antifungal therapy begins.<br> <b>Why pressure matters</b>: Polysaccharide capsule blocks the arachnoid villi and raises intracranial pressure; repeated lumbar drainage to below 20 cm H2O reduces death and blindness, whereas corticosteroids increased harm.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Amphotericin B and flucytosine (answer)</th><th>Fluconazole alone (closest distractor)</th></tr></thead><tbody> <tr><td>Action</td><td>Fungicidal combination</td><td>Fungistatic</td></tr> <tr><td>CSF clearance</td><td><b>Fastest</b></td><td>Slow</td></tr> <tr><td>Phase</td><td>Induction (1–2 weeks)</td><td>Consolidation and maintenance; induction only if no alternative</td></tr> <tr><td>Mortality</td><td>Lowest</td><td>Higher as induction monotherapy</td></tr> </tbody></table> Both drugs belong in the treatment course, but in different phases: the fungicidal combination first, fluconazole afterward.\n- 오답 이유:\n  - (A) Fluconazole alone would be used for consolidation after induction, or as induction only where amphotericin B and flucytosine are unavailable.\n  - (B) Immediate antiretroviral therapy would be correct for most opportunistic infections, but in cryptococcal meningitis it is deferred 4 to 6 weeks because early start increased mortality.\n  - (C) Ceftriaxone, vancomycin, and ampicillin would be the empiric regimen for acute bacterial meningitis with neutrophilic cerebrospinal fluid before the cryptococcal antigen result.\n  - (D) Dexamethasone and fluconazole would be wrong because adjunctive corticosteroids increased disability and adverse events in HIV-associated cryptococcal meningitis.\n- 함정: Starting antiretroviral therapy right away because the CD4+ count is very low — in cryptococcal meningitis early antiretroviral therapy increases mortality.\n- 학습목표: CD4 가 낮은 HIV 감염인의 크립토콕쿠스 수막염에서 암포테리신 B 와 플루시토신 유도요법을 고르고 플루코나졸 단독·즉시 항레트로바이러스 치료와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 221: Cryptococcosis · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 208: Human Immunodeficiency Virus Disease: AIDS and Related Disorders",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A subacute headache with fever, a CD4+ count below 100/mm3, a high opening pressure, lymphocytic cerebrospinal fluid with low glucose, and a positive cryptococcal antigen establish cryptococcal meningitis. Induction therapy with an amphotericin B formulation plus flucytosine sterilizes the cerebrospinal fluid fastest and lowers mortality, followed by fluconazole consolidation and maintenance. The high opening pressure also requires therapeutic lumbar drainage, and antiretroviral therapy is deferred for 4 to 6 weeks."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why combination induction</b>: Cryptococcus neoformans in cerebrospinal fluid reaches very high burdens in advanced HIV. Amphotericin B binds ergosterol and kills the yeast; flucytosine is converted inside fungal cells to 5-fluorouracil and blocks nucleic acid synthesis. Together they clear the organism faster than either alone, and the speed of clearance predicts survival. Fluconazole is fungistatic and clears the fluid slowly, so it is used only after induction or when the combination is unavailable.<br> <b>Why antiretroviral therapy waits</b>: Restoring CD4 cells early unmasks a strong inflammatory response against cryptococcal antigens in a closed space, the immune reconstitution inflammatory syndrome. Starting antiretroviral therapy within the first weeks increased mortality in a randomized trial, so it is started 4 to 6 weeks after antifungal therapy begins.<br> <b>Why pressure matters</b>: Polysaccharide capsule blocks the arachnoid villi and raises intracranial pressure; repeated lumbar drainage to below 20 cm H2O reduces death and blindness, whereas corticosteroids increased harm."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Amphotericin B and flucytosine (answer)</th><th>Fluconazole alone (closest distractor)</th></tr></thead><tbody> <tr><td>Action</td><td>Fungicidal combination</td><td>Fungistatic</td></tr> <tr><td>CSF clearance</td><td><b>Fastest</b></td><td>Slow</td></tr> <tr><td>Phase</td><td>Induction (1–2 weeks)</td><td>Consolidation and maintenance; induction only if no alternative</td></tr> <tr><td>Mortality</td><td>Lowest</td><td>Higher as induction monotherapy</td></tr> </tbody></table> Both drugs belong in the treatment course, but in different phases: the fungicidal combination first, fluconazole afterward."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Fluconazole alone would be used for consolidation after induction, or as induction only where amphotericin B and flucytosine are unavailable.\n(B) Immediate antiretroviral therapy would be correct for most opportunistic infections, but in cryptococcal meningitis it is deferred 4 to 6 weeks because early start increased mortality.\n(C) Ceftriaxone, vancomycin, and ampicillin would be the empiric regimen for acute bacterial meningitis with neutrophilic cerebrospinal fluid before the cryptococcal antigen result.\n(D) Dexamethasone and fluconazole would be wrong because adjunctive corticosteroids increased disability and adverse events in HIV-associated cryptococcal meningitis."
+   },
+   {
+    "k": "함정",
+    "v": "Starting antiretroviral therapy right away because the CD4+ count is very low — in cryptococcal meningitis early antiretroviral therapy increases mortality."
+   },
+   {
+    "k": "학습목표",
+    "v": "CD4 가 낮은 HIV 감염인의 크립토콕쿠스 수막염에서 암포테리신 B 와 플루시토신 유도요법을 고르고 플루코나졸 단독·즉시 항레트로바이러스 치료와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 221: Cryptococcosis · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 208: Human Immunodeficiency Virus Disease: AIDS and Related Disorders"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "HIV-associated cryptococcal meningitis is treated with induction amphotericin B plus flucytosine, with antiretroviral therapy deferred",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "Induction requires fungicidal combination therapy; fluconazole alone clears the fluid too slowly",
+   "steps": 3,
+   "chain": [
+    "2-week headache and fever with CD4+ count 38/mm3 -> opportunistic central nervous system infection",
+    "Opening pressure 32, lymphocytic low-glucose CSF, positive cryptococcal antigen -> cryptococcal meningitis",
+    "Induction with amphotericin B plus flucytosine; defer antiretroviral therapy 4 to 6 weeks"
+   ],
+   "key": [
+    {
+     "item": "CD4+ T-lymphocyte count is 38/mm3",
+     "why": "Risk for cryptococcal meningitis",
+     "also": []
+    },
+    {
+     "item": "positive cryptococcal antigen test",
+     "why": "Establishes the diagnosis",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "CT of the head shows no mass lesion",
+     "why": "Lowers the likelihood of toxoplasmosis or lymphoma",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "opening pressure of 32 cm H2O",
+     "why": "Requires therapeutic lumbar drainage",
+     "also": []
+    },
+    {
+     "item": "has not taken antiretroviral therapy",
+     "why": "ART will be started, but only after 4 to 6 weeks",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "glucose concentration of 32 mg/dL",
+     "why": "Consistent with fungal meningitis; not specific",
+     "also": []
+    }
+   ],
+   "summary": "Advanced HIV with a positive CSF cryptococcal antigen and high opening pressure is cryptococcal meningitis. Begin amphotericin B plus flucytosine and defer antiretroviral therapy.",
+   "switch": {
+    "choice": "A",
+    "condition": "After 2 weeks of induction with a sterile cerebrospinal fluid culture, switch to fluconazole consolidation"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0627",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "류마티스 — 관자놀이 두통과 일시적 시력 흐림이 있는 고령 여성",
+  "type": "류마티스 — 관자놀이 두통과 일시적 시력 흐림이 있는 고령 여성",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-11",
+  "vignette": "74세 여자가 3주 전부터 오른쪽 관자놀이가 욱신거리고 음식을 씹을 때 턱이 아파 쉬어야 한다며 왔다. 오늘 아침 오른눈이 10분 동안 커튼이 내려오듯 흐려졌다가 돌아왔다. 양쪽 어깨가 뻣뻣해 아침에 옷 입기가 힘들다. 체온 37.6 ℃, 혈압 138/80 mmHg 이다. 오른쪽 얕은관자동맥이 굵어져 있고 누르면 아프며 맥박이 약하다. 현재 시력은 양쪽 0.8 이고 상대구심동공운동장애는 없다. 적혈구침강속도 96 mm/시, C-반응단백 8.4 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경구 프레드니솔론 하루 15 mg",
+   "아스피린 단독 투여",
+   "토실리주맙 단독 투여",
+   "즉시 고용량 메틸프레드니솔론 정맥 주사",
+   "측두동맥 생검 결과를 확인한 뒤 스테로이드 시작"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 50세 이상의 새로운 관자놀이 두통, 턱 파행, 굵고 압통이 있는 얕은관자동맥, 크게 오른 염증 수치, 동반된 류마티스다발근통 증상으로 거대세포동맥염이 강하게 의심된다. 오늘 아침의 일시적 단안 시력 소실(일과성 흑암시)은 후섬모체동맥 허혈의 경고로, 치료하지 않으면 며칠 안에 영구 실명이 올 수 있다. 시력 위협 증상이 있으면 생검을 기다리지 않고 즉시 고용량 메틸프레드니솔론 정맥 주사(하루 0.5~1 g, 3일)를 시작한다. 생검은 스테로이드 시작 뒤 1~2주 안에 해도 진단적 가치가 유지된다.\n- 원리: <b>왜 눈이 위험한가</b>: 거대세포동맥염은 대동맥과 그 큰 가지, 특히 바깥목동맥 가지의 벽을 침범하는 육아종성 혈관염이다. 안동맥에서 갈라지는 후섬모체동맥이 막히면 시신경 앞부분의 동맥염성 전방허혈시신경병증이 생겨 갑작스럽고 대개 회복되지 않는 시력 소실이 온다. 일과성 흑암시는 그 직전 단계의 경고 증상이다.<br> <b>왜 생검을 기다리지 않는가</b>: 혈관 벽의 육아종성 염증과 거대세포는 스테로이드를 시작해도 2주 정도는 조직에 남아 있어 생검 진단율이 크게 떨어지지 않는다. 반면 한쪽 눈이 실명되면 다른 쪽도 며칠 안에 따라갈 수 있다. 그래서 의심이 강하면 치료가 먼저다.<br> <b>왜 고용량인가</b>: 시력 증상이 없으면 경구 프레드니솔론 40~60 mg 으로 시작하지만, 시력 위협이 있으면 정맥 펄스로 빠르게 혈관 염증을 누른다. 토실리주맙은 스테로이드 감량을 돕는 보조 약이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">즉시 정맥 메틸프레드니솔론(정답)</th><th>생검 확인 후 스테로이드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적용</td><td><b>시력 위협 증상</b>(일과성 흑암시·시력 저하)</td><td>진단이 정말 불확실하고 증상이 경할 때도 생검은 빨리 — 치료를 미루지는 않는다</td></tr> <tr><td>생검 진단율</td><td>시작 후 1~2주 안이면 유지</td><td>—</td></tr> <tr><td>지연의 위험</td><td>—</td><td>며칠 안 영구 실명, 반대쪽 눈 침범</td></tr> <tr><td>용량</td><td>하루 0.5~1 g, 3일 → 경구 1 mg/kg</td><td>—</td></tr> </tbody></table> 류마티스다발근통 단독이면 프레드니솔론 15 mg 이 맞지만, 두통·턱 파행·시력 증상이 더해지면 거대세포동맥염의 용량과 속도로 바뀐다.\n- 오답 이유:\n  - ① 경구 프레드니솔론 하루 15 mg 은 두통·턱 파행·시력 증상이 없는 류마티스다발근통 단독일 때 정답이 된다.\n  - ② 아스피린 단독은 거대세포동맥염의 염증을 억제하지 못하며, 허혈 위험이 높을 때 스테로이드에 더하는 보조 약으로만 고려된다.\n  - ③ 토실리주맙 단독은 스테로이드를 대신하지 못하며, 스테로이드 감량이 어렵거나 재발하는 거대세포동맥염에 병용할 때 정답이 된다.\n  - ⑤ 측두동맥 생검 결과 확인 후 시작은 의심이 낮아 진단을 먼저 확정해야 하는 경우의 순서이지만, 시력 증상이 있으면 치료를 미루어서는 안 된다.\n- 함정: 진단 확정을 위해 생검부터 하려는 것 — 시력 위협 증상이 있는 거대세포동맥염은 생검을 기다리지 않고 즉시 고용량 스테로이드다.\n- 학습목표: 일시적 시력 흐림을 동반한 거대세포동맥염에서 생검을 기다리지 않고 고용량 정맥 메틸프레드니솔론을 즉시 시작하며 생검 후 치료·저용량 스테로이드와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 375: The Vasculitis Syndromes · Maz M, Chung SA, Abril A, et al. 2021 American College of Rheumatology/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. Arthritis Rheumatol. 2021;73(8):1349-1365",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "50세 이상의 새로운 관자놀이 두통, 턱 파행, 굵고 압통이 있는 얕은관자동맥, 크게 오른 염증 수치, 동반된 류마티스다발근통 증상으로 거대세포동맥염이 강하게 의심된다. 오늘 아침의 일시적 단안 시력 소실(일과성 흑암시)은 후섬모체동맥 허혈의 경고로, 치료하지 않으면 며칠 안에 영구 실명이 올 수 있다. 시력 위협 증상이 있으면 생검을 기다리지 않고 즉시 고용량 메틸프레드니솔론 정맥 주사(하루 0.5~1 g, 3일)를 시작한다. 생검은 스테로이드 시작 뒤 1~2주 안에 해도 진단적 가치가 유지된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 눈이 위험한가</b>: 거대세포동맥염은 대동맥과 그 큰 가지, 특히 바깥목동맥 가지의 벽을 침범하는 육아종성 혈관염이다. 안동맥에서 갈라지는 후섬모체동맥이 막히면 시신경 앞부분의 동맥염성 전방허혈시신경병증이 생겨 갑작스럽고 대개 회복되지 않는 시력 소실이 온다. 일과성 흑암시는 그 직전 단계의 경고 증상이다.<br> <b>왜 생검을 기다리지 않는가</b>: 혈관 벽의 육아종성 염증과 거대세포는 스테로이드를 시작해도 2주 정도는 조직에 남아 있어 생검 진단율이 크게 떨어지지 않는다. 반면 한쪽 눈이 실명되면 다른 쪽도 며칠 안에 따라갈 수 있다. 그래서 의심이 강하면 치료가 먼저다.<br> <b>왜 고용량인가</b>: 시력 증상이 없으면 경구 프레드니솔론 40~60 mg 으로 시작하지만, 시력 위협이 있으면 정맥 펄스로 빠르게 혈관 염증을 누른다. 토실리주맙은 스테로이드 감량을 돕는 보조 약이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">즉시 정맥 메틸프레드니솔론(정답)</th><th>생검 확인 후 스테로이드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적용</td><td><b>시력 위협 증상</b>(일과성 흑암시·시력 저하)</td><td>진단이 정말 불확실하고 증상이 경할 때도 생검은 빨리 — 치료를 미루지는 않는다</td></tr> <tr><td>생검 진단율</td><td>시작 후 1~2주 안이면 유지</td><td>—</td></tr> <tr><td>지연의 위험</td><td>—</td><td>며칠 안 영구 실명, 반대쪽 눈 침범</td></tr> <tr><td>용량</td><td>하루 0.5~1 g, 3일 → 경구 1 mg/kg</td><td>—</td></tr> </tbody></table> 류마티스다발근통 단독이면 프레드니솔론 15 mg 이 맞지만, 두통·턱 파행·시력 증상이 더해지면 거대세포동맥염의 용량과 속도로 바뀐다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 프레드니솔론 하루 15 mg 은 두통·턱 파행·시력 증상이 없는 류마티스다발근통 단독일 때 정답이 된다.\n② 아스피린 단독은 거대세포동맥염의 염증을 억제하지 못하며, 허혈 위험이 높을 때 스테로이드에 더하는 보조 약으로만 고려된다.\n③ 토실리주맙 단독은 스테로이드를 대신하지 못하며, 스테로이드 감량이 어렵거나 재발하는 거대세포동맥염에 병용할 때 정답이 된다.\n⑤ 측두동맥 생검 결과 확인 후 시작은 의심이 낮아 진단을 먼저 확정해야 하는 경우의 순서이지만, 시력 증상이 있으면 치료를 미루어서는 안 된다."
+   },
+   {
+    "k": "함정",
+    "v": "진단 확정을 위해 생검부터 하려는 것 — 시력 위협 증상이 있는 거대세포동맥염은 생검을 기다리지 않고 즉시 고용량 스테로이드다."
+   },
+   {
+    "k": "학습목표",
+    "v": "일시적 시력 흐림을 동반한 거대세포동맥염에서 생검을 기다리지 않고 고용량 정맥 메틸프레드니솔론을 즉시 시작하며 생검 후 치료·저용량 스테로이드와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 375: The Vasculitis Syndromes · Maz M, Chung SA, Abril A, et al. 2021 American College of Rheumatology/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. Arthritis Rheumatol. 2021;73(8):1349-1365"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "시력 위협 증상이 있는 거대세포동맥염 의심이므로 생검을 기다리지 않고 즉시 고용량 정맥 메틸프레드니솔론을 시작한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "일과성 흑암시가 있어 지연하면 영구 실명 위험이 있고, 생검 진단율은 스테로이드 시작 뒤에도 1~2주 유지된다",
+   "steps": 3,
+   "chain": [
+    "74세의 새 관자놀이 두통·턱 파행·굵은 얕은관자동맥·적혈구침강속도 96 → 거대세포동맥염 의심",
+    "오늘 아침 10분간 단안 시력 흐림 → 시력 위협(일과성 흑암시)",
+    "생검 결과를 기다리지 않고 즉시 고용량 정맥 스테로이드"
+   ],
+   "key": [
+    {
+     "item": "음식을 씹을 때 턱이 아파 쉬어야 한다",
+     "why": "턱 파행 — 거대세포동맥염의 특이도 높은 증상",
+     "also": []
+    },
+    {
+     "item": "오른쪽 얕은관자동맥이 굵어져 있고 누르면 아프며 맥박이 약하다",
+     "why": "측두동맥 침범 소견",
+     "also": []
+    },
+    {
+     "item": "적혈구침강속도 96 mm/시",
+     "why": "전신 염증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 어깨가 뻣뻣해 아침에 옷 입기가 힘들다",
+     "why": "류마티스다발근통 동반 — 단독이라면 저용량 스테로이드였을 것",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "오늘 아침 오른눈이 10분 동안 커튼이 내려오듯 흐려졌다가 돌아왔다",
+     "why": "시력 위협 — 정맥 펄스 스테로이드의 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "현재 시력은 양쪽 0.8 이고 상대구심동공운동장애는 없다",
+     "why": "아직 영구 손상이 없다는 것 — 그래서 더 서둘러야 한다",
+     "also": []
+    }
+   ],
+   "summary": "고령의 새 두통·턱 파행·측두동맥 이상·높은 염증 수치로 거대세포동맥염이고 일과성 흑암시가 있다. 생검을 기다리지 않고 즉시 고용량 정맥 메틸프레드니솔론을 시작한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "두통·턱 파행·시력 증상 없이 어깨·골반 뻣뻣함만 있었다면 류마티스다발근통으로 프레드니솔론 하루 15 mg"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0626",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "소화기 — 간경변 환자의 토혈",
+  "type": "소화기 — 간경변 환자의 토혈",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-11",
+  "vignette": "A 54-year-old man with alcohol-associated cirrhosis is brought to the emergency department 2 hours after vomiting a large amount of bright red blood. His blood pressure is 92/58 mm Hg, and pulse is 118/min. He is alert. Abdominal examination shows shifting dullness. Hemoglobin concentration is 7.1 g/dL, platelet count is 78,000/mm3, and INR is 1.8. Two large-bore intravenous catheters are placed, packed red blood cells are transfused to a target hemoglobin of 7 to 8 g/dL, and an intravenous octreotide infusion is started. Endoscopy is planned within 12 hours.",
+  "question": "Which of the following should also be administered now?",
+  "options": [
+   "Oral propranolol",
+   "Intravenous vitamin K",
+   "Intravenous ceftriaxone",
+   "Intravenous tranexamic acid",
+   "Fresh frozen plasma to correct the INR"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: A patient with cirrhosis and ascites who has upper gastrointestinal bleeding most likely has variceal hemorrhage. He has received restrictive transfusion and a vasoactive drug, and endoscopy is planned. The remaining evidence-based step is short-term antibiotic prophylaxis, preferably intravenous ceftriaxone 1 g daily for up to 7 days in advanced cirrhosis. Bacterial infection develops in many cirrhotic patients with gastrointestinal bleeding and is linked to rebleeding and death; prophylaxis lowers infection, rebleeding, and mortality.\n- 원리: <b>Why bleeding cirrhotic patients become infected</b>: Portal hypertension makes the intestinal wall more permeable, and gut bacteria translocate to mesenteric lymph nodes and ascites. Bleeding and hypotension worsen intestinal ischemia, and cirrhosis impairs neutrophil and complement function. Infection then releases cytokines and endotoxin that raise portal pressure and impair hemostasis, which explains its link with early rebleeding.<br> <b>Why ceftriaxone</b>: The usual pathogens are gut gram-negative bacilli. In advanced cirrhosis and in areas with quinolone resistance, intravenous ceftriaxone was more effective than oral norfloxacin.<br> <b>Why the other treatments do not help</b>: The INR in cirrhosis does not reflect bleeding risk because both procoagulant and anticoagulant factors are reduced; plasma adds volume and raises portal pressure. Tranexamic acid did not reduce death in gastrointestinal bleeding and increased venous thrombosis. Beta-blockers lower blood pressure in acute bleeding and are started only after the bleeding is controlled.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intravenous ceftriaxone (answer)</th><th>Fresh frozen plasma (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Bacterial infection from translocation</td><td>Elevated INR</td></tr> <tr><td>Evidence</td><td><b>Lower infection, rebleeding, and mortality</b></td><td>No benefit; volume load raises portal pressure</td></tr> <tr><td>Why the INR misleads</td><td>—</td><td>Rebalanced hemostasis: anticoagulant proteins are also low</td></tr> <tr><td>Timing</td><td>At admission, before endoscopy</td><td>Not recommended routinely</td></tr> </tbody></table> In variceal bleeding, the core bundle is restrictive transfusion, a vasoactive drug, antibiotics, and endoscopy within 12 hours; correcting laboratory numbers is not part of it.\n- 오답 이유:\n  - (A) Oral propranolol would be correct after the acute bleed is controlled, as secondary prophylaxis combined with endoscopic band ligation.\n  - (B) Intravenous vitamin K would help if the prolonged INR were from vitamin K deficiency, such as cholestasis or poor intake, not from reduced hepatic synthesis.\n  - (D) Intravenous tranexamic acid would be chosen only in a trial setting; in gastrointestinal bleeding it did not lower mortality and increased venous thrombosis.\n  - (E) Fresh frozen plasma would be considered only for a specific factor deficiency or warfarin-associated bleeding; in cirrhosis the INR does not predict bleeding.\n- 함정: Treating the INR of 1.8 with plasma — in cirrhosis the INR does not measure bleeding risk, whereas antibiotics reduce mortality.\n- 학습목표: 간경변 환자의 급성 정맥류 출혈에서 소생과 옥트레오타이드에 더해 예방적 항생제(세프트리악손)를 고르고 트라넥삼산·혈장 교정과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 355: Cirrhosis and Its Complications · de Franchis R, Bosch J, Garcia-Tsao G, et al. Baveno VII — renewing consensus in portal hypertension. J Hepatol. 2022;76(4):959-974",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A patient with cirrhosis and ascites who has upper gastrointestinal bleeding most likely has variceal hemorrhage. He has received restrictive transfusion and a vasoactive drug, and endoscopy is planned. The remaining evidence-based step is short-term antibiotic prophylaxis, preferably intravenous ceftriaxone 1 g daily for up to 7 days in advanced cirrhosis. Bacterial infection develops in many cirrhotic patients with gastrointestinal bleeding and is linked to rebleeding and death; prophylaxis lowers infection, rebleeding, and mortality."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why bleeding cirrhotic patients become infected</b>: Portal hypertension makes the intestinal wall more permeable, and gut bacteria translocate to mesenteric lymph nodes and ascites. Bleeding and hypotension worsen intestinal ischemia, and cirrhosis impairs neutrophil and complement function. Infection then releases cytokines and endotoxin that raise portal pressure and impair hemostasis, which explains its link with early rebleeding.<br> <b>Why ceftriaxone</b>: The usual pathogens are gut gram-negative bacilli. In advanced cirrhosis and in areas with quinolone resistance, intravenous ceftriaxone was more effective than oral norfloxacin.<br> <b>Why the other treatments do not help</b>: The INR in cirrhosis does not reflect bleeding risk because both procoagulant and anticoagulant factors are reduced; plasma adds volume and raises portal pressure. Tranexamic acid did not reduce death in gastrointestinal bleeding and increased venous thrombosis. Beta-blockers lower blood pressure in acute bleeding and are started only after the bleeding is controlled."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intravenous ceftriaxone (answer)</th><th>Fresh frozen plasma (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Bacterial infection from translocation</td><td>Elevated INR</td></tr> <tr><td>Evidence</td><td><b>Lower infection, rebleeding, and mortality</b></td><td>No benefit; volume load raises portal pressure</td></tr> <tr><td>Why the INR misleads</td><td>—</td><td>Rebalanced hemostasis: anticoagulant proteins are also low</td></tr> <tr><td>Timing</td><td>At admission, before endoscopy</td><td>Not recommended routinely</td></tr> </tbody></table> In variceal bleeding, the core bundle is restrictive transfusion, a vasoactive drug, antibiotics, and endoscopy within 12 hours; correcting laboratory numbers is not part of it."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral propranolol would be correct after the acute bleed is controlled, as secondary prophylaxis combined with endoscopic band ligation.\n(B) Intravenous vitamin K would help if the prolonged INR were from vitamin K deficiency, such as cholestasis or poor intake, not from reduced hepatic synthesis.\n(D) Intravenous tranexamic acid would be chosen only in a trial setting; in gastrointestinal bleeding it did not lower mortality and increased venous thrombosis.\n(E) Fresh frozen plasma would be considered only for a specific factor deficiency or warfarin-associated bleeding; in cirrhosis the INR does not predict bleeding."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the INR of 1.8 with plasma — in cirrhosis the INR does not measure bleeding risk, whereas antibiotics reduce mortality."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 환자의 급성 정맥류 출혈에서 소생과 옥트레오타이드에 더해 예방적 항생제(세프트리악손)를 고르고 트라넥삼산·혈장 교정과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 355: Cirrhosis and Its Complications · de Franchis R, Bosch J, Garcia-Tsao G, et al. Baveno VII — renewing consensus in portal hypertension. J Hepatol. 2022;76(4):959-974"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Acute variceal bleeding in cirrhosis requires antibiotic prophylaxis with intravenous ceftriaxone in addition to a vasoactive drug and endoscopy",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "The INR in cirrhosis does not predict bleeding, whereas antibiotics lower infection and mortality",
+   "steps": 3,
+   "chain": [
+    "Hematemesis in alcohol-associated cirrhosis with ascites -> likely variceal hemorrhage",
+    "Restrictive transfusion, octreotide, and endoscopy within 12 hours already arranged",
+    "Remaining bundle element with mortality benefit -> intravenous ceftriaxone"
+   ],
+   "key": [
+    {
+     "item": "alcohol-associated cirrhosis",
+     "why": "Variceal source and infection risk",
+     "also": []
+    },
+    {
+     "item": "vomiting a large amount of bright red blood",
+     "why": "Acute upper gastrointestinal bleeding",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "INR is 1.8",
+     "why": "Lures toward plasma; does not reflect bleeding risk in cirrhosis",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "shifting dullness",
+     "why": "Ascites marks advanced cirrhosis — ceftriaxone preferred",
+     "also": []
+    },
+    {
+     "item": "intravenous octreotide infusion is started",
+     "why": "Vasoactive therapy already given",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 92/58 mm Hg",
+     "why": "Hypotension makes a beta-blocker inappropriate now",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "This is likely variceal hemorrhage in decompensated cirrhosis, already on octreotide with endoscopy planned. The remaining step is intravenous ceftriaxone prophylaxis.",
+   "switch": {
+    "choice": "A",
+    "condition": "Several days later, after the bleeding has been controlled by band ligation and blood pressure is normal, start propranolol for secondary prophylaxis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0623",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·이비인후과·신경·외과·소화기·류마티스·감염·예방의학)",
+  "subtopic": "이비인후과 — 자고 일어나니 한쪽 귀가 먹먹해진 중년 남성",
+  "type": "이비인후과 — 자고 일어나니 한쪽 귀가 먹먹해진 중년 남성",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-11",
+  "vignette": "42세 남자가 어제 아침 일어나니 오른쪽 귀가 먹먹하고 잘 들리지 않아 왔다. 오른쪽 귀에서 '삐' 소리가 들린다. 어지럼, 귀 통증, 귀 분비물은 없고 최근 감기를 앓지 않았다. 체온 36.6 ℃ 이다. 이경 검사에서 양쪽 고막은 정상이다. 웨버 검사에서 소리가 왼쪽으로 치우치고, 린네 검사는 양쪽 모두 양성이다. 순음청력검사에서 오른쪽 귀에 연속한 세 주파수 이상에서 40 dB 의 감각신경성 청력 손실이 있다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "고막절개 및 환기관 삽입",
+   "보청기 착용",
+   "경과 관찰 후 1개월 뒤 청력 재검",
+   "고용량 경구 스테로이드",
+   "경구 아목시실린"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 72시간 안에 생긴 편측 청력 저하이고, 순음청력검사에서 연속한 세 주파수 이상에서 30 dB 이상의 감각신경성 손실이 있다 — 돌발성 감각신경성 난청의 정의에 맞는다. 고막이 정상이고 린네 검사가 양성이며 웨버 검사가 건강한 왼쪽으로 치우쳐 전음성이 아닌 감각신경성 손실이다. 원인을 모르는 돌발성 감각신경성 난청은 가능한 한 빨리(2주 안에) 전신 스테로이드를 시작하는 것이 표준 초기 치료이고, 청신경종 등을 찾기 위한 MRI 를 함께 계획한다.\n- 원리: <b>왜 소리굽쇠 검사로 갈리는가</b>: 린네 검사는 공기전도와 골전도를 비교한다. 정상이나 감각신경성 난청에서는 공기전도가 더 길어 양성이고, 전음성 난청에서는 골전도가 더 길어 음성이 된다. 웨버 검사에서 소리는 전음성이면 나쁜 쪽(주변 소음이 가려지지 않으므로), 감각신경성이면 좋은 쪽으로 치우친다. 이 환자는 린네 양성·웨버 건측 편위로 오른쪽 감각신경성이다.<br> <b>왜 스테로이드이고 왜 서두르는가</b>: 돌발성 감각신경성 난청의 대부분은 원인이 밝혀지지 않으며, 달팽이관의 바이러스성 염증·미세순환 장애가 거론된다. 스테로이드는 달팽이관의 염증과 부종을 줄이는 것으로 생각되고, 효과는 발병 직후 시작할수록 크다. 경구로 듣지 않거나 금기이면 고실 내 주입을 쓴다.<br> <b>함께 할 일</b>: 편측 감각신경성 난청은 청신경종(전정신경집종)을 배제하기 위해 조영증강 MRI 를 찍는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">돌발성 감각신경성 난청(정답 — 스테로이드)</th><th>중이삼출(가장 가까운 오답 — 항생제·환기관)</th></tr></thead><tbody> <tr><td>고막</td><td><b>정상</b></td><td>혼탁·함몰, 공기-액체선</td></tr> <tr><td>린네 검사(患側)</td><td>양성</td><td>음성</td></tr> <tr><td>웨버 검사</td><td>건강한 쪽으로</td><td>나쁜 쪽으로</td></tr> <tr><td>청력검사</td><td>골도·기도 함께 저하</td><td>기도-골도 차이</td></tr> <tr><td>치료</td><td>빠른 전신 스테로이드, MRI</td><td>관찰 → 3개월 지속 시 환기관</td></tr> </tbody></table> 「귀가 먹먹하다」는 두 질환 모두의 호소다. 고막과 소리굽쇠 검사가 전음성인지 감각신경성인지를 정하고, 그것이 치료를 가른다.\n- 오답 이유:\n  - ① 고막절개 및 환기관 삽입은 고막 뒤 삼출로 전음성 난청이 3개월 넘게 지속될 때 정답이 된다.\n  - ② 보청기 착용은 치료 기간이 지난 뒤에도 감각신경성 난청이 고정되어 남았을 때 정답이 된다.\n  - ③ 경과 관찰은 청력검사에서 감각신경성 손실이 확인되지 않은 일시적 이충만감이라면 고려할 수 있지만, 이 환자는 지체하면 회복률이 떨어진다.\n  - ⑤ 경구 아목시실린은 고막이 붉고 부풀어 오른 급성 중이염으로 귀 통증·발열이 있을 때 정답이 된다.\n- 함정: 이충만감을 중이삼출로 보고 항생제를 고르는 것 — 고막 정상·린네 양성·웨버 건측 편위는 감각신경성이고, 돌발성이면 스테로이드가 급하다.\n- 학습목표: 편측 돌발성 감각신경성 난청을 소리굽쇠 검사와 순음청력검사로 확인하고 전신 스테로이드를 고르며 중이삼출의 항생제·환기관 처치와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 36: Disorders of Hearing · Chandrasekhar SS, Tsai Do BS, Schwartz SR, et al. Clinical practice guideline: sudden hearing loss (update). Otolaryngol Head Neck Surg. 2019;161(1 Suppl):S1-S45",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "72시간 안에 생긴 편측 청력 저하이고, 순음청력검사에서 연속한 세 주파수 이상에서 30 dB 이상의 감각신경성 손실이 있다 — 돌발성 감각신경성 난청의 정의에 맞는다. 고막이 정상이고 린네 검사가 양성이며 웨버 검사가 건강한 왼쪽으로 치우쳐 전음성이 아닌 감각신경성 손실이다. 원인을 모르는 돌발성 감각신경성 난청은 가능한 한 빨리(2주 안에) 전신 스테로이드를 시작하는 것이 표준 초기 치료이고, 청신경종 등을 찾기 위한 MRI 를 함께 계획한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 소리굽쇠 검사로 갈리는가</b>: 린네 검사는 공기전도와 골전도를 비교한다. 정상이나 감각신경성 난청에서는 공기전도가 더 길어 양성이고, 전음성 난청에서는 골전도가 더 길어 음성이 된다. 웨버 검사에서 소리는 전음성이면 나쁜 쪽(주변 소음이 가려지지 않으므로), 감각신경성이면 좋은 쪽으로 치우친다. 이 환자는 린네 양성·웨버 건측 편위로 오른쪽 감각신경성이다.<br> <b>왜 스테로이드이고 왜 서두르는가</b>: 돌발성 감각신경성 난청의 대부분은 원인이 밝혀지지 않으며, 달팽이관의 바이러스성 염증·미세순환 장애가 거론된다. 스테로이드는 달팽이관의 염증과 부종을 줄이는 것으로 생각되고, 효과는 발병 직후 시작할수록 크다. 경구로 듣지 않거나 금기이면 고실 내 주입을 쓴다.<br> <b>함께 할 일</b>: 편측 감각신경성 난청은 청신경종(전정신경집종)을 배제하기 위해 조영증강 MRI 를 찍는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">돌발성 감각신경성 난청(정답 — 스테로이드)</th><th>중이삼출(가장 가까운 오답 — 항생제·환기관)</th></tr></thead><tbody> <tr><td>고막</td><td><b>정상</b></td><td>혼탁·함몰, 공기-액체선</td></tr> <tr><td>린네 검사(患側)</td><td>양성</td><td>음성</td></tr> <tr><td>웨버 검사</td><td>건강한 쪽으로</td><td>나쁜 쪽으로</td></tr> <tr><td>청력검사</td><td>골도·기도 함께 저하</td><td>기도-골도 차이</td></tr> <tr><td>치료</td><td>빠른 전신 스테로이드, MRI</td><td>관찰 → 3개월 지속 시 환기관</td></tr> </tbody></table> 「귀가 먹먹하다」는 두 질환 모두의 호소다. 고막과 소리굽쇠 검사가 전음성인지 감각신경성인지를 정하고, 그것이 치료를 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 고막절개 및 환기관 삽입은 고막 뒤 삼출로 전음성 난청이 3개월 넘게 지속될 때 정답이 된다.\n② 보청기 착용은 치료 기간이 지난 뒤에도 감각신경성 난청이 고정되어 남았을 때 정답이 된다.\n③ 경과 관찰은 청력검사에서 감각신경성 손실이 확인되지 않은 일시적 이충만감이라면 고려할 수 있지만, 이 환자는 지체하면 회복률이 떨어진다.\n⑤ 경구 아목시실린은 고막이 붉고 부풀어 오른 급성 중이염으로 귀 통증·발열이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "이충만감을 중이삼출로 보고 항생제를 고르는 것 — 고막 정상·린네 양성·웨버 건측 편위는 감각신경성이고, 돌발성이면 스테로이드가 급하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "편측 돌발성 감각신경성 난청을 소리굽쇠 검사와 순음청력검사로 확인하고 전신 스테로이드를 고르며 중이삼출의 항생제·환기관 처치와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 36: Disorders of Hearing · Chandrasekhar SS, Tsai Do BS, Schwartz SR, et al. Clinical practice guideline: sudden hearing loss (update). Otolaryngol Head Neck Surg. 2019;161(1 Suppl):S1-S45"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "72시간 안에 생긴 편측 감각신경성 난청이므로 돌발성 감각신경성 난청으로 보고 고용량 전신 스테로이드를 시작한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "고막이 정상이고 린네 양성·웨버 건측 편위로 전음성이 아닌 감각신경성 손실이다",
+   "steps": 3,
+   "chain": [
+    "어제 아침 갑자기 생긴 오른쪽 청력 저하·이명 → 급성 편측 난청",
+    "고막 정상, 린네 양성, 웨버 왼쪽 편위, 청력검사 감각신경성 손실 → 돌발성 감각신경성 난청",
+    "가능한 빨리 전신 스테로이드(+ MRI) → 고용량 경구 스테로이드"
+   ],
+   "key": [
+    {
+     "item": "어제 아침 일어나니 오른쪽 귀가 먹먹하고 잘 들리지 않아",
+     "why": "72시간 안에 생긴 돌발성 난청",
+     "also": []
+    },
+    {
+     "item": "웨버 검사에서 소리가 왼쪽으로 치우치고",
+     "why": "오른쪽 감각신경성 손실",
+     "also": []
+    },
+    {
+     "item": "연속한 세 주파수 이상에서 40 dB 의 감각신경성 청력 손실",
+     "why": "돌발성 감각신경성 난청의 진단 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "린네 검사는 양쪽 모두 양성",
+     "why": "전음성 난청 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "양쪽 고막은 정상",
+     "why": "중이염·중이삼출 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "어지럼, 귀 통증, 귀 분비물은 없고",
+     "why": "동반 증상 확인 — 치료 선택은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "갑자기 생긴 편측 감각신경성 난청으로 기준에 맞는다. 고막은 정상이고 전음성이 아니므로 고용량 전신 스테로이드를 빨리 시작한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "고막 뒤 삼출로 린네 음성·웨버 患側 편위의 전음성 난청이 3개월 넘게 지속되었다면 환기관 삽입"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0620",
   "exam": "imaging",
   "style": "usmle_style",

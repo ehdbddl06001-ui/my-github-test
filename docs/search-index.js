@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4624,
+  "total": 4636,
   "byType": {
    "usmle": 264,
    "paper": 924,
    "kmle": 1792,
+   "imaging": 631,
    "concept": 162,
-   "imaging": 619,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,33 +38,33 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 116,
    "Hematology": 109,
    "Laboratory Medicine": 96,
-   "순환기": 82,
-   "산부인과": 81,
+   "순환기": 85,
+   "산부인과": 82,
    "호흡기": 39,
-   "소화기": 37,
+   "소화기": 38,
    "소아과": 34,
    "응급·중환자": 30,
+   "감염": 29,
    "Physiology": 28,
-   "감염": 28,
    "내분비": 28,
+   "신경": 28,
    "혈액·종양": 28,
-   "신경": 27,
-   "병리·조직학": 26,
+   "병리·조직학": 27,
    "신장·비뇨기": 26,
-   "외과": 25,
+   "외과": 26,
    "피부과": 24,
+   "예방의학·역학": 23,
    "Pharmacology": 22,
-   "예방의학·역학": 22,
    "Biochemistry": 21,
    "Microbiology": 20,
    "Immunology": 17,
    "Internal Medicine": 17,
+   "근골격·류마티스": 17,
    "약리": 17,
-   "근골격·류마티스": 16,
    "정신과": 16,
    "안과": 12,
    "영상의학": 11,
-   "이비인후과": 10,
+   "이비인후과": 11,
    "Emergency Medicine": 5,
    "Obstetrics and Gynecology": 5,
    "Allergy": 4,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3266,
+   "high": 3278,
    "medium": 1305,
    "low": 53
   },
@@ -1096,6 +1096,220 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1796.md",
    "snippet": "61세 남자가 1시간 전 시작된, 가슴 한가운데를 짓누르는 통증과 식은땀으로 응급실에 왔다. 통증은 턱으로 뻗치고 쉬어도 가라앉지 않으며, 자세를 바꾸거나 숨을 깊이 쉬어도 달라지지 않는다. 당뇨병과 고혈압으로 약을 먹고 있고 하루 한 갑씩 30년 흡연했다. 진찰에서 폐음은 깨끗하고 경정맥 확장은 없으며 새로 들리는 심잡음은 없다. 손발은 따뜻하다. 도착 직후 찍은 12유도 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와",
    "text": "Cardiology Crushing Central Chest Pain with Sweating for an Hour in a Smoker with Diabetes acute-coronary-syndrome ecg ecg-localization coronary-anatomy KMLE 2026 / Claude 61세 남자가 1시간 전 시작된, 가슴 한가운데를 짓누르는 통증과 식은땀으로 응급실에 왔다. 통증은 턱으로 뻗치고 쉬어도 가라앉지 않으며, 자세를 바꾸거나 숨을 깊이 쉬어도 달라지지 않는다. 당뇨병과 고혈압으로 약을 먹고 있고 하루 한 갑씩 30년 흡연했다. 진찰에서 폐음은 깨끗하고 경정맥 확장은 없으며 새로 들리는 심잡음은 없다. 손발은 따뜻하다. 도착 직후 찍은 12유도 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 막혔을 가능성이 가장 높은 관상동맥은? A. 우관상동맥 B. 좌전하행지 C. 좌회선지 D. 좌주간부 E. 후하행지 지속 흉통·트로포닌 상승과 함께 심전도에서 V1–V3 에 ST분절 상승이 모여 있고 하벽(II·III·aVF)·측벽(I·aVL·V5·V6) 유도에는 상승이 없다. 중격·전벽을 보는 흉부 유도의 ST 상승은 그 벽에 피를 주는 좌전하행지 폐색을 가리킨다. aVR 의 ST 상승은 V1 보다 작고 혈압이 유지돼 좌주간부 폐색 양상은 아니다."
+  },
+  {
+   "id": "imaging-2026-0632",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 갑자기 시작된 두근거림의 고령 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0632.md",
+   "snippet": "A 76 year old man comes to the emergency department because of palpitations that began suddenly 3 hours ago while he was watching television. He has mild lightheadedness but no chest pain or syncope. He has hypertension and chronic obstruct",
+   "text": "순환기 심전도 판독 — 갑자기 시작된 두근거림의 고령 남성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af A 76 year old man comes to the emergency department because of palpitations that began suddenly 3 hours ago while he was watching television. He has mild lightheadedness but no chest pain or syncope. He has hypertension and chronic obstructive pulmonary disease. His temperature is 36.8°C, blood pressure is 128/80 mm Hg, pulse is 160/min and regular, and respirations are 18/min. Oxygen saturation is 95% on room air. Hemoglobin concentration and serum thyroid stimulating hormone concentration are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Atrial flutter with 2:1 atrioventricular conduction B. Sinus tachycardia C. Atrial fibrillation with rapid ventricular response D. Multifocal atrial tachycardia E. Ventricular tachycardia"
+  },
+  {
+   "id": "imaging-2026-0631",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0631.md",
+   "snippet": "67세 여자가 건강검진에서 맥이 불규칙하다는 말을 듣고 걱정이 되어 왔다. 두근거림, 어지럼, 실신, 흉통은 없고 일상생활에 불편이 없다. 고혈압으로 암로디핀을 먹고 있다. 혈압 128/76 mmHg, 맥박 76회/분으로 약간 불규칙하다. 심음은 정상이고 잡음은 없다. 갑상샘 기능과 혈청 전해질은 정상이다. 심장초음파에서 좌심방 크기와 좌심실 박출률은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 영구 ",
+   "text": "순환기 심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af 67세 여자가 건강검진에서 맥이 불규칙하다는 말을 듣고 걱정이 되어 왔다. 두근거림, 어지럼, 실신, 흉통은 없고 일상생활에 불편이 없다. 고혈압으로 암로디핀을 먹고 있다. 혈압 128/76 mmHg, 맥박 76회/분으로 약간 불규칙하다. 심음은 정상이고 잡음은 없다. 갑상샘 기능과 혈청 전해질은 정상이다. 심장초음파에서 좌심방 크기와 좌심실 박출률은 정상이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 영구 심박동기 삽입 B. 전기적 심율동전환 C. 추가 치료 없이 경과 관찰 D. 경구 항응고제 시작 E. 비소프롤롤 투여"
+  },
+  {
+   "id": "imaging-2026-0630",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 계단을 오르면 가슴이 답답한 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0630.md",
+   "snippet": "81세 여자가 2개월 전부터 계단을 오르면 가슴이 답답하고 쉬면 5분 안에 좋아져서 외래에 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 136/78 mmHg, 맥박 78회/분이다. 심음은 정상이고 잡음은 없다. 지금은 흉통이 없으며 혈청 트로포닌은 기준치 이하이다. 심장초음파에서 좌심실 벽 두께는 정상이고 박출률은 60 % 이다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가",
+   "text": "순환기 심전도 판독 — 계단을 오르면 가슴이 답답한 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T202257Z_일일심전도_2026-11-12_3units_3q_5c8d85af 81세 여자가 2개월 전부터 계단을 오르면 가슴이 답답하고 쉬면 5분 안에 좋아져서 외래에 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 136/78 mmHg, 맥박 78회/분이다. 심음은 정상이고 잡음은 없다. 지금은 흉통이 없으며 혈청 트로포닌은 기준치 이하이다. 심장초음파에서 좌심실 벽 두께는 정상이고 박출률은 60 % 이다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 저칼륨혈증에 의한 U파 B. 측벽 유도의 허혈성 T파 변화 C. 좌심실비대와 긴장형 ST T 변화 D. 급성 하벽 ST분절상승 심근경색 E. 좌각차단"
+  },
+  {
+   "id": "imaging-2026-0629",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0629.md",
+   "snippet": "55세 남자가 보건소 주민 선별검사에서 어떤 질환의 검사 결과가 양성으로 나와 걱정이 되어 왔다. 증상은 없고 가족력도 없다. 이 보건소는 유병률이 1 % 인 지역 주민 10,000 명에게 이 검사를 시행했다. 검사의 민감도는 90 %, 특이도는 95 % 이다. 병원 고위험 클리닉 환자(유병률 10 %)에서 이 검사의 양성예측도는 약 67 % 로 보고되었다. 이 남자가 실제로 이 질환을 가지고 있을 확률(양성예측도)에 가장 가",
+   "text": "예방의학·역학 예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 55세 남자가 보건소 주민 선별검사에서 어떤 질환의 검사 결과가 양성으로 나와 걱정이 되어 왔다. 증상은 없고 가족력도 없다. 이 보건소는 유병률이 1 % 인 지역 주민 10,000 명에게 이 검사를 시행했다. 검사의 민감도는 90 %, 특이도는 95 % 이다. 병원 고위험 클리닉 환자(유병률 10 %)에서 이 검사의 양성예측도는 약 67 % 로 보고되었다. 이 남자가 실제로 이 질환을 가지고 있을 확률(양성예측도)에 가장 가까운 것은? A. 약 50 % B. 약 15 % C. 약 67 % D. 약 90 % E. 약 95 %"
+  },
+  {
+   "id": "imaging-2026-0628",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 치료받지 않은 HIV 감염인의 2주 두통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0628.md",
+   "snippet": "A 34 year old man with HIV infection who has not taken antiretroviral therapy comes to the emergency department because of a headache that has gradually worsened over 2 weeks. He has had low grade fevers and nausea. His temperature is 38.1°",
+   "text": "감염 감염 — 치료받지 않은 HIV 감염인의 2주 두통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 A 34 year old man with HIV infection who has not taken antiretroviral therapy comes to the emergency department because of a headache that has gradually worsened over 2 weeks. He has had low grade fevers and nausea. His temperature is 38.1°C, blood pressure is 124/76 mm Hg, and pulse is 92/min. He is oriented, with mild neck stiffness and no focal neurologic deficits. CD4+ T lymphocyte count is 38/mm3. CT of the head shows no mass lesion. Lumbar puncture shows an opening pressure of 32 cm H2O; cerebrospinal fluid analysis shows a leukocyte count of 18/mm3 (90% lymphocytes), glucose concentration of 32 mg/dL, and a positive cryptococcal antigen test. Which of the following is the most appropriate initial pharmacotherapy? A. Fluconazole alone B. Immediate initiation of antiretroviral therapy C. Ceftriaxone, vancomycin, and ampicillin D. Dexamethasone and fluconazole E. Amphotericin B and flucytosine"
+  },
+  {
+   "id": "imaging-2026-0627",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스 — 관자놀이 두통과 일시적 시력 흐림이 있는 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0627.md",
+   "snippet": "74세 여자가 3주 전부터 오른쪽 관자놀이가 욱신거리고 음식을 씹을 때 턱이 아파 쉬어야 한다며 왔다. 오늘 아침 오른눈이 10분 동안 커튼이 내려오듯 흐려졌다가 돌아왔다. 양쪽 어깨가 뻣뻣해 아침에 옷 입기가 힘들다. 체온 37.6 ℃, 혈압 138/80 mmHg 이다. 오른쪽 얕은관자동맥이 굵어져 있고 누르면 아프며 맥박이 약하다. 현재 시력은 양쪽 0.8 이고 상대구심동공운동장애는 없다. 적혈구침강속도 96 mm/시, C",
+   "text": "근골격·류마티스 류마티스 — 관자놀이 두통과 일시적 시력 흐림이 있는 고령 여성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 74세 여자가 3주 전부터 오른쪽 관자놀이가 욱신거리고 음식을 씹을 때 턱이 아파 쉬어야 한다며 왔다. 오늘 아침 오른눈이 10분 동안 커튼이 내려오듯 흐려졌다가 돌아왔다. 양쪽 어깨가 뻣뻣해 아침에 옷 입기가 힘들다. 체온 37.6 ℃, 혈압 138/80 mmHg 이다. 오른쪽 얕은관자동맥이 굵어져 있고 누르면 아프며 맥박이 약하다. 현재 시력은 양쪽 0.8 이고 상대구심동공운동장애는 없다. 적혈구침강속도 96 mm/시, C 반응단백 8.4 mg/dL 이다. 가장 적절한 처치는? A. 경구 프레드니솔론 하루 15 mg B. 아스피린 단독 투여 C. 토실리주맙 단독 투여 D. 즉시 고용량 메틸프레드니솔론 정맥 주사 E. 측두동맥 생검 결과를 확인한 뒤 스테로이드 시작"
+  },
+  {
+   "id": "imaging-2026-0626",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 간경변 환자의 토혈",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0626.md",
+   "snippet": "A 54 year old man with alcohol associated cirrhosis is brought to the emergency department 2 hours after vomiting a large amount of bright red blood. His blood pressure is 92/58 mm Hg, and pulse is 118/min. He is alert. Abdominal examinatio",
+   "text": "소화기 소화기 — 간경변 환자의 토혈 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 A 54 year old man with alcohol associated cirrhosis is brought to the emergency department 2 hours after vomiting a large amount of bright red blood. His blood pressure is 92/58 mm Hg, and pulse is 118/min. He is alert. Abdominal examination shows shifting dullness. Hemoglobin concentration is 7.1 g/dL, platelet count is 78,000/mm3, and INR is 1.8. Two large bore intravenous catheters are placed, packed red blood cells are transfused to a target hemoglobin of 7 to 8 g/dL, and an intravenous octreotide infusion is started. Endoscopy is planned within 12 hours. Which of the following should also be administered now? A. Oral propranolol B. Intravenous vitamin K C. Intravenous ceftriaxone D. Intravenous tranexamic acid E. Fresh frozen plasma to correct the INR"
+  },
+  {
+   "id": "imaging-2026-0625",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 검진 초음파에서 발견된 신장 고형 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0625.md",
+   "snippet": "83세 여자가 건강검진 복부 초음파에서 오른쪽 신장 종괴가 발견되어 왔다. 육안적 혈뇨, 옆구리 통증, 체중 감소는 없다. 고혈압 외 다른 질환은 없고 혼자 장을 보러 다닐 만큼 활동적이며, 수술을 원한다. 혈압 132/78 mmHg 이다. 혈색소 12.8 g/dL, 혈청 크레아티닌 0.8 mg/dL, 칼슘 9.4 mg/dL, 알칼리인산분해효소는 정상이다. 뼈 통증이나 신경학적 이상은 없다. 조영증강 복부 CT 는 그림과 같다",
+   "text": "외과 외과계 — 검진 초음파에서 발견된 신장 고형 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 83세 여자가 건강검진 복부 초음파에서 오른쪽 신장 종괴가 발견되어 왔다. 육안적 혈뇨, 옆구리 통증, 체중 감소는 없다. 고혈압 외 다른 질환은 없고 혼자 장을 보러 다닐 만큼 활동적이며, 수술을 원한다. 혈압 132/78 mmHg 이다. 혈색소 12.8 g/dL, 혈청 크레아티닌 0.8 mg/dL, 칼슘 9.4 mg/dL, 알칼리인산분해효소는 정상이다. 뼈 통증이나 신경학적 이상은 없다. 조영증강 복부 CT 는 그림과 같다. 수술 전 병기 결정을 위해 추가로 시행할 검사로 가장 적절한 것은? A. 흉부 CT B. 뼈 스캔 C. 뇌 MRI D. 전신 PET CT E. 신장 동위원소 스캔"
+  },
+  {
+   "id": "imaging-2026-0624",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 처음 생긴 경련으로 뇌 MRI 를 찍은 중년 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0624.md",
+   "snippet": "A 57 year old man is brought to the emergency department after his wife saw him have a generalized tonic clonic seizure at home. He has never had a seizure before and does not drink alcohol. He is now drowsy but oriented and follows command",
+   "text": "신경 신경 — 처음 생긴 경련으로 뇌 MRI 를 찍은 중년 남성 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 A 57 year old man is brought to the emergency department after his wife saw him have a generalized tonic clonic seizure at home. He has never had a seizure before and does not drink alcohol. He is now drowsy but oriented and follows commands. Vital signs are within normal limits. Serum glucose and sodium concentrations are within the reference ranges. MRI of the brain with a standard protocol is performed, and one axial image near the vertex is shown. Which of the following sequences is most likely shown? A. T2 weighted B. Fluid attenuated inversion recovery (FLAIR) C. T1 weighted without contrast D. T1 weighted after gadolinium E. Diffusion weighted imaging"
+  },
+  {
+   "id": "imaging-2026-0623",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 자고 일어나니 한쪽 귀가 먹먹해진 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0623.md",
+   "snippet": "42세 남자가 어제 아침 일어나니 오른쪽 귀가 먹먹하고 잘 들리지 않아 왔다. 오른쪽 귀에서 '삐' 소리가 들린다. 어지럼, 귀 통증, 귀 분비물은 없고 최근 감기를 앓지 않았다. 체온 36.6 ℃ 이다. 이경 검사에서 양쪽 고막은 정상이다. 웨버 검사에서 소리가 왼쪽으로 치우치고, 린네 검사는 양쪽 모두 양성이다. 순음청력검사에서 오른쪽 귀에 연속한 세 주파수 이상에서 40 dB 의 감각신경성 청력 손실이 있다. 가장 적절한",
+   "text": "이비인후과 이비인후과 — 자고 일어나니 한쪽 귀가 먹먹해진 중년 남성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 42세 남자가 어제 아침 일어나니 오른쪽 귀가 먹먹하고 잘 들리지 않아 왔다. 오른쪽 귀에서 '삐' 소리가 들린다. 어지럼, 귀 통증, 귀 분비물은 없고 최근 감기를 앓지 않았다. 체온 36.6 ℃ 이다. 이경 검사에서 양쪽 고막은 정상이다. 웨버 검사에서 소리가 왼쪽으로 치우치고, 린네 검사는 양쪽 모두 양성이다. 순음청력검사에서 오른쪽 귀에 연속한 세 주파수 이상에서 40 dB 의 감각신경성 청력 손실이 있다. 가장 적절한 치료는? A. 고막절개 및 환기관 삽입 B. 보청기 착용 C. 경과 관찰 후 1개월 뒤 청력 재검 D. 고용량 경구 스테로이드 E. 경구 아목시실린"
+  },
+  {
+   "id": "imaging-2026-0622",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 자궁저 높이가 작은 임신부의 초음파 생체계측",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0622.md",
+   "snippet": "A woman at 32 weeks' gestation comes for a routine prenatal visit. She feels the fetus moving normally. Her blood pressure is 118/72 mm Hg, and urinalysis shows no protein. Her fundal height is 28 cm. An ultrasound examination is performed ",
+   "text": "산부인과 산과 — 자궁저 높이가 작은 임신부의 초음파 생체계측 opendata usmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 A woman at 32 weeks' gestation comes for a routine prenatal visit. She feels the fetus moving normally. Her blood pressure is 118/72 mm Hg, and urinalysis shows no protein. Her fundal height is 28 cm. An ultrasound examination is performed to assess fetal growth, and one of the standard biometry planes is shown. Which of the following measurements is obtained in this plane? A. Femur length B. Transverse cerebellar diameter C. Abdominal circumference D. Biparietal diameter E. Head circumference"
+  },
+  {
+   "id": "imaging-2026-0621",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·기초 — 피부 절편에서 바닥층에 띄엄띄엄 염색된 세포",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786",
+   "confidence": "high",
+   "date": "2026-11-11",
+   "path": "content/imaging/2026/imaging-2026-0621.md",
+   "snippet": "90세 여자가 등에 생긴 피부 병변을 절제하였다. 절제 검체 가장자리의 정상 피부에서 얻은 조직 절편에 한 효소 단백질에 대한 면역조직화학염색을 하였다. 사진은 그림과 같다(갈색 = 양성, 파란색 = 헤마톡실린 대조염색). 표피의 각질형성세포와 진피의 섬유모세포는 염색되지 않았다. 갈색으로 염색된 세포의 발생 기원으로 가장 적절한 것은? A. 신경관 B. 신경능선 C. 골수 조혈모세포 D. 표면외배엽 E. 중배엽",
+   "text": "병리·조직학 병리·기초 — 피부 절편에서 바닥층에 띄엄띄엄 염색된 세포 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261111T201950Z_일일영상_2026-11-12_9units_9q_1e7a5786 90세 여자가 등에 생긴 피부 병변을 절제하였다. 절제 검체 가장자리의 정상 피부에서 얻은 조직 절편에 한 효소 단백질에 대한 면역조직화학염색을 하였다. 사진은 그림과 같다(갈색 = 양성, 파란색 = 헤마톡실린 대조염색). 표피의 각질형성세포와 진피의 섬유모세포는 염색되지 않았다. 갈색으로 염색된 세포의 발생 기원으로 가장 적절한 것은? A. 신경관 B. 신경능선 C. 골수 조혈모세포 D. 표면외배엽 E. 중배엽"
   },
   {
    "id": "cn.cardio.sinus-arrhythmia.ecg-recognition",
