@@ -1,12 +1,12 @@
 {
- "started": "2026-11-11T10:25:32+09:00",
+ "started": "2026-11-12T11:26:33+09:00",
  "built": [
-  "응급의학과",
-  "피부과",
   "순환기내과"
  ],
  "skipped": [
+  "응급의학과",
   "정형외과",
+  "피부과",
   "내분비내과",
   "안과",
   "외과",
@@ -29,19 +29,15 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "응급의학과": [],
-  "피부과": [],
   "순환기내과": []
  },
  "notes": {
-  "응급의학과": [],
-  "피부과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 35%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 왼쪽 단 아래가 비어 있다(빈 공간 42%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 12쪽 오른쪽 단 아래가 비어 있다(빈 공간 43%)"
-  ],
-  "순환기내과": []
+  "순환기내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 19쪽 왼쪽 단 아래가 비어 있다(빈 공간 33%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 19쪽 오른쪽 단 아래가 비어 있다(빈 공간 56%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 29쪽 왼쪽 단 아래가 비어 있다(빈 공간 39%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 29쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)"
+  ]
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -59,51 +55,8 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "응급의학과": {
-   "tried": 70,
-   "diagram_after_section": {
-    "u-cn-em-ards-lung-protective-ventilation#fig:f1": 5,
-    "u-cn-em-ards-lung-protective-ventilation": 19,
-    "u-cn-em-ards-lung-protective-ventilation#shrink": 1.0,
-    "u-cn-em-ards-lung-protective-ventilation#pad": 0,
-    "u-cn-em-ards-lung-protective-ventilation#col": true,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 16,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#shrink": 1.0,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#pad": 0,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#col": true,
-    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism": 13,
-    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism#shrink": 1.0,
-    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism#pad": 14,
-    "u-cn-pharm-methanol-poisoning-fomepizole-mechanism#col": false
-   }
-  },
-  "피부과": {
-   "tried": 155,
-   "diagram_after_section": {
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 12,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
-    "u-cn-derm-pityriasis-versicolor-treatment": 2,
-    "u-cn-derm-pityriasis-versicolor-treatment#shrink": 1.0,
-    "u-cn-derm-pityriasis-versicolor-treatment#pad": 0,
-    "u-cn-derm-pityriasis-versicolor-treatment#col": false,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 16,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 14,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup": 17,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#shrink": 1.0,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#pad": 42,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#col": false,
-    "u-cn-derm-sweet-syndrome-diagnosis": 2,
-    "u-cn-derm-sweet-syndrome-diagnosis#shrink": 1.0,
-    "u-cn-derm-sweet-syndrome-diagnosis#pad": 0,
-    "u-cn-derm-sweet-syndrome-diagnosis#col": false
-   }
-  },
   "순환기내과": {
-   "tried": 460,
+   "tried": 575,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -121,8 +74,12 @@
     "u-cn-cardio-stroke-volume-preload-afterload-contractility#shrink": 1.0,
     "u-cn-cardio-stroke-volume-preload-afterload-contractility#pad": 0,
     "u-cn-cardio-stroke-volume-preload-afterload-contractility#col": true,
+    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery": 11,
+    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#shrink": 1.0,
+    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#pad": 28,
+    "u-cn-cardio-incomplete-rbbb-preop-proceed-surgery#col": false,
     "u-cn-cardio-complete-rbbb-ecg-recognition#fig:f2": 7,
-    "u-cn-cardio-complete-rbbb-ecg-recognition": 2,
+    "u-cn-cardio-complete-rbbb-ecg-recognition": 6,
     "u-cn-cardio-complete-rbbb-ecg-recognition#shrink": 1.0,
     "u-cn-cardio-complete-rbbb-ecg-recognition#pad": 0,
     "u-cn-cardio-complete-rbbb-ecg-recognition#col": false,
@@ -130,23 +87,26 @@
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#shrink": 1.0,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#pad": 14,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#col": false,
-    "u-cn-cardio-qrs-axis-limb-lead-polarity": 10,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity": 8,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 1.0,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 0,
     "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
-    "u-cn-cardio-ischemic-ecg-localization-culprit-artery#figscale:f1": 0.85,
-    "u-cn-cardio-cardiac-mri-lge-pattern-etiology": 13,
-    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#shrink": 1.0,
-    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#pad": 0,
-    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#col": false,
     "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry": 12,
     "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#shrink": 1.0,
-    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#pad": 42,
-    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#col": false,
-    "u-cn-cardio-complete-av-block-permanent-pacemaker": 13,
-    "u-cn-cardio-complete-av-block-permanent-pacemaker#shrink": 0.88,
+    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#pad": 0,
+    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#col": true,
+    "u-cn-cardio-complete-av-block-permanent-pacemaker": 17,
+    "u-cn-cardio-complete-av-block-permanent-pacemaker#shrink": 1.0,
     "u-cn-cardio-complete-av-block-permanent-pacemaker#pad": 0,
     "u-cn-cardio-complete-av-block-permanent-pacemaker#col": false,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition": 11,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#shrink": 1.0,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#pad": 42,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#col": false,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg": 12,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#shrink": 1.0,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#pad": 0,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#col": false,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation": 11,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#shrink": 1.0,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#pad": 28,
@@ -159,42 +119,26 @@
   }
  },
  "result": "ok",
- "finished": "2026-11-11T11:38:43+09:00",
+ "finished": "2026-11-12T12:52:57+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "응급의학과": {
-    "file": "MedKOS_학습서_응급의학과.pdf",
-    "status": "uploaded",
-    "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
-    "kept_id": true,
-    "md5": "4d42fc46bd61499dd1491370e743c629",
-    "archive": "MedKOS_학습서_응급의학과_v10_2026-11-11.pdf"
-   },
-   "피부과": {
-    "file": "MedKOS_학습서_피부과.pdf",
-    "status": "uploaded",
-    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "kept_id": true,
-    "md5": "9e89dd92da8a47578ce6f588c7eacd79",
-    "archive": "MedKOS_학습서_피부과_v16_2026-11-11.pdf"
-   },
    "순환기내과": {
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "626a6d7edd72101851d80bb16afef137",
-    "archive": "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf"
+    "md5": "50c3db0e6f0cdb7fce8228593dca3ff2",
+    "archive": "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "75fca841dee475b8d2aa07c5c6ccdc46"
+    "md5": "32d9a8c985c787f0f10f0a1548144a7e"
    }
   },
-  "at": "2026-11-11T11:38:43+09:00"
+  "at": "2026-11-12T12:52:57+09:00"
  }
 }

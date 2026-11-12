@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "6bb27fefe7bbbe32a669",
-   "version": 27,
-   "date": "2026-11-11",
+   "hash": "d7ba0c513bdeb2f32101",
+   "version": 28,
+   "date": "2026-11-12",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 51,
+   "pages": 53,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -112,76 +112,82 @@
     },
     "cn.cardio.complete-av-block.permanent-pacemaker": {
      "title": "완전 방실차단 — 되돌릴 원인 없으면 영구 조율",
-     "page": 29,
+     "page": 28,
      "concept_hash": "b675c7e79f0a68e2",
+     "concept_version": 1
+    },
+    "cn.cardio.svt.av-nodal-blockade-response": {
+     "title": "좁은 QRS 빈맥 — 방실결절을 막아 기전을 가른다",
+     "page": 30,
+     "concept_hash": "2f7d8dc3de4fc8c3",
      "concept_version": 1
     },
     "cn.cardio.sinus-arrhythmia.ecg-recognition": {
      "title": "동부정맥 — 같은 P파, 서서히 변하는 PP",
-     "page": 30,
-     "concept_hash": "c33bf65efbc049cd",
+     "page": 32,
+     "concept_hash": "3701ae6e488aec85",
      "concept_version": 1
     },
     "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
      "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
-     "page": 32,
+     "page": 33,
      "concept_hash": "d685cd64da546109",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 33,
+     "page": 35,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": {
      "title": "심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)",
-     "page": 36,
+     "page": 38,
      "concept_hash": "be4911c141b1d12c",
      "concept_version": 2
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 37,
+     "page": 39,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 39,
+     "page": 41,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 42,
+     "page": 44,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 44,
+     "page": 46,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 47,
+     "page": 49,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 50,
+     "page": 52,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "626a6d7edd72101851d80bb16afef137",
-    "version": 27,
-    "uploaded": "2026-11-11T11:38:43+09:00"
+    "md5": "50c3db0e6f0cdb7fce8228593dca3ff2",
+    "version": 28,
+    "uploaded": "2026-11-12T12:52:57+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -210,12 +216,12 @@
     "MedKOS_학습서_순환기내과_v24_2026-11-08.pdf",
     "MedKOS_학습서_순환기내과_v25_2026-11-09.pdf",
     "MedKOS_학습서_순환기내과_v26_2026-11-10.pdf",
-    "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf"
+    "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf",
+    "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf"
    ],
    "changes": [
-    "새 단원: 완전 방실차단 — 되돌릴 원인 없으면 영구 조율",
-    "새 단원: 동부정맥 — 같은 P파, 서서히 변하는 PP",
-    "새 단원: 심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)"
+    "새 단원: 좁은 QRS 빈맥 — 방실결절을 막아 기전을 가른다",
+    "내용 수정: 동부정맥 — 같은 P파, 서서히 변하는 PP"
    ]
   },
   "피부과": {
@@ -1705,13 +1711,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "75fca841dee475b8d2aa07c5c6ccdc46",
+   "md5": "32d9a8c985c787f0f10f0a1548144a7e",
    "version": null,
-   "uploaded": "2026-11-11T11:38:43+09:00"
+   "uploaded": "2026-11-12T12:52:57+09:00"
   }
  },
- "updated": "2026-11-11"
+ "updated": "2026-11-12"
 }
