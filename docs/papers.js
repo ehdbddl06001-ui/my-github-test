@@ -2,6 +2,74 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0926",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Methotrexate use in ectopic pregnancy with baseline transaminase elevation",
+  "authors": [
+   "Powers Edward",
+   "Nguyen Alyssa",
+   "Rashid Yushra"
+  ],
+  "journal": "Proceedings (Baylor University. Medical Center)",
+  "doi": "10.1080/08998280.2026.2756187",
+  "pmid": "43013711",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43013711/",
+  "pubdate": "2026-11-11",
+  "date": "2026-11-12",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Ectopic pregnancy is a common complication in early pregnancy and remains a leading cause of first-trimester maternal morbidity (0.5 deaths per 100,000 live births). In hemodynamically stable patients, methotrexate is widely used as a fertility-preserving alternative to surgery. However, clinically significant hepatic disease is considered an absolute contraindication for methotrexate therapy. Current guidelines lack clarity concerning the management of patients with elevated liver enzymes, particularly those with metabolic risk factors such as polycystic ovary syndrome and nonalcoholic fatty liver disease, which are growing presentations in reproductive-aged women. We present a case of a tubal ectopic pregnancy managed with reduced-dose methotrexate in the setting of elevated liver enzymes, not seen previously in literature, followed by surgical intervention after medical management failure.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0925",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Mechanical forces enable human stem cell modeling of protein aggregation cardiomyopathy",
+  "authors": [
+   "Kooh Yasaman Kargar Gaz",
+   "Bahmani Bahareh",
+   "Zhao Chen",
+   "Malayath Ganesh",
+   "Khokhlova Anastasia",
+   "Hayem Leah",
+   "Umuragwa Hertier",
+   "Jin Hanxun",
+   "et al."
+  ],
+  "journal": "Science advances",
+  "doi": "10.1126/sciadv.aee9464",
+  "pmid": "43013638",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43013638/",
+  "pubdate": "2026-11-13",
+  "date": "2026-11-12",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Inherited cardiomyopathies are the leading cause of heart failure in young adults, with limited therapeutic options. Desmin-related cardiomyopathy (DRM), caused by mutations to cytoskeletal proteins and their chaperones, exemplifies this challenge: Here, protein quality control is compromised, leading to toxic protein aggregates that destroy cardiomyocyte contractile machinery. One of the deadliest DRM mutations in the chaperone protein αB crystallin (CRYAB-R120G) lacks a genetically matched preclinical model: Mouse models require massive overexpression of mutant CRYAB, raising questions about physiological relevance. Here, we establish a human model of CRYAB-linked DRM, using induced pluripotent stem cells expressing CRYAB-R120G at near-endogenous levels. We show that three-dimensional mechanical loading, but not fatty acid-based metabolic maturation media, is essential for expressing Desmin, whose aggregation defines DRM. Using microengineered heart tissues, we found that contractile deficits are associated with impaired calcium handling, pointing to electromechanical uncoupling in DRM. Treatment with the Janus kinase 1 inhibitor itacitinib partially rescued contractility, providing a functional validation of this emerging therapeutic strategy.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0924",
   "topic": "Surgery",
   "subtopic": "",
