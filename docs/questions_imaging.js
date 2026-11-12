@@ -2,6 +2,1556 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0644",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 계단을 오를 때 가슴이 조이는 젊은 흡연자",
+  "type": "심전도 판독 — 계단을 오를 때 가슴이 조이는 젊은 흡연자",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-12",
+  "vignette": "A 40-year-old man comes to the emergency department because of 2 episodes of chest tightness during the past 2 days. Each episode began while he was climbing stairs, lasted about 10 minutes, and resolved with rest. He has never had such symptoms before. He has smoked 1 pack of cigarettes daily for 20 years. His father had a myocardial infarction at the age of 48 years. He is now pain-free. His blood pressure is 138/84 mm Hg, and pulse is 70/min. Heart sounds are normal, and there is no friction rub. High-sensitivity troponin I concentrations at arrival and 3 hours later are within the reference range. Echocardiography shows normal left ventricular wall thickness and wall motion. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Unstable angina",
+   "Non-ST-elevation myocardial infarction",
+   "Acute pericarditis",
+   "Hypertrophic cardiomyopathy",
+   "Acute pulmonary embolism"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The ECG shows sinus rhythm at about 70/min with narrow QRS complexes. The T waves are inverted in leads I, aVL, V5, and V6, the leads facing the lateral wall, and there is no ST elevation. New-onset exertional chest pain within days (an accelerating pattern) with ischemic lateral T-wave changes indicates an acute coronary syndrome. Because high-sensitivity troponin is normal on serial measurement, there is no myocardial necrosis, so the diagnosis is unstable angina rather than non-ST-elevation myocardial infarction.\n- 원리: <b>Why ischemia inverts the T wave</b>: Normally the epicardium repolarizes before the endocardium, so the T wave points in the same direction as the QRS. Ischemia prolongs or alters action potentials in the affected region and reverses this sequence, producing flat or symmetrically inverted T waves in the leads facing that wall. Leads I, aVL, V5, and V6 face the lateral left ventricle, supplied by the left circumflex or diagonal branches.<br> <b>Why troponin separates the diagnoses</b>: Unstable angina and NSTEMI share the same mechanism, a nonocclusive thrombus on a ruptured plaque. The difference is whether myocytes have died: troponin above the 99th percentile with a rise or fall defines infarction. With high-sensitivity assays, a normal value at presentation and 3 hours later makes infarction unlikely, but the patient still has a high-risk acute coronary syndrome.<br> <b>Why it still matters</b>: New-onset angina in the past 2 days is classified as unstable. He needs antiplatelet therapy, anticoagulation, and an early invasive or stress evaluation, not discharge.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Unstable angina (answer)</th><th>NSTEMI (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Nonocclusive coronary thrombus</td><td>Same</td></tr> <tr><td>ECG</td><td>ST depression, T-wave inversion, or normal</td><td>Same</td></tr> <tr><td>Serial troponin</td><td><b>Within the reference range</b></td><td><b>Rise or fall above the 99th percentile</b></td></tr> <tr><td>Myocyte necrosis</td><td>None</td><td>Present</td></tr> </tbody></table> The ECG cannot tell the two apart; only serial troponin does. ST elevation would move the case to STEMI regardless of troponin.\n- 오답 이유:\n  - (B) Non-ST-elevation myocardial infarction would be correct if serial high-sensitivity troponin rose above the 99th percentile with the same ECG.\n  - (C) Acute pericarditis would be correct with diffuse concave ST elevation and PR depression, pleuritic pain relieved by sitting forward, or a friction rub.\n  - (D) Hypertrophic cardiomyopathy would be correct if echocardiography showed asymmetric septal thickening, which this normal wall thickness rules against.\n  - (E) Acute pulmonary embolism would be correct with sudden dyspnea, tachycardia, hypoxemia, and right precordial T-wave inversion or an S1Q3T3 pattern.\n- 함정: Calling ischemic T-wave inversion an infarction — without a troponin rise, the acute coronary syndrome is unstable angina.\n- 학습목표: Read T-wave inversion in I, aVL, V5, and V6 without ST elevation in a man with new exertional chest pain and normal serial troponins as unstable angina, and separate it from NSTEMI and acute pericarditis\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. Circulation. 2025;151(13):e771-e862\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18213 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows sinus rhythm at about 70/min with narrow QRS complexes. The T waves are inverted in leads I, aVL, V5, and V6, the leads facing the lateral wall, and there is no ST elevation. New-onset exertional chest pain within days (an accelerating pattern) with ischemic lateral T-wave changes indicates an acute coronary syndrome. Because high-sensitivity troponin is normal on serial measurement, there is no myocardial necrosis, so the diagnosis is unstable angina rather than non-ST-elevation myocardial infarction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ischemia inverts the T wave</b>: Normally the epicardium repolarizes before the endocardium, so the T wave points in the same direction as the QRS. Ischemia prolongs or alters action potentials in the affected region and reverses this sequence, producing flat or symmetrically inverted T waves in the leads facing that wall. Leads I, aVL, V5, and V6 face the lateral left ventricle, supplied by the left circumflex or diagonal branches.<br> <b>Why troponin separates the diagnoses</b>: Unstable angina and NSTEMI share the same mechanism, a nonocclusive thrombus on a ruptured plaque. The difference is whether myocytes have died: troponin above the 99th percentile with a rise or fall defines infarction. With high-sensitivity assays, a normal value at presentation and 3 hours later makes infarction unlikely, but the patient still has a high-risk acute coronary syndrome.<br> <b>Why it still matters</b>: New-onset angina in the past 2 days is classified as unstable. He needs antiplatelet therapy, anticoagulation, and an early invasive or stress evaluation, not discharge."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Unstable angina (answer)</th><th>NSTEMI (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Nonocclusive coronary thrombus</td><td>Same</td></tr> <tr><td>ECG</td><td>ST depression, T-wave inversion, or normal</td><td>Same</td></tr> <tr><td>Serial troponin</td><td><b>Within the reference range</b></td><td><b>Rise or fall above the 99th percentile</b></td></tr> <tr><td>Myocyte necrosis</td><td>None</td><td>Present</td></tr> </tbody></table> The ECG cannot tell the two apart; only serial troponin does. ST elevation would move the case to STEMI regardless of troponin."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Non-ST-elevation myocardial infarction would be correct if serial high-sensitivity troponin rose above the 99th percentile with the same ECG.\n(C) Acute pericarditis would be correct with diffuse concave ST elevation and PR depression, pleuritic pain relieved by sitting forward, or a friction rub.\n(D) Hypertrophic cardiomyopathy would be correct if echocardiography showed asymmetric septal thickening, which this normal wall thickness rules against.\n(E) Acute pulmonary embolism would be correct with sudden dyspnea, tachycardia, hypoxemia, and right precordial T-wave inversion or an S1Q3T3 pattern."
+   },
+   {
+    "k": "함정",
+    "v": "Calling ischemic T-wave inversion an infarction — without a troponin rise, the acute coronary syndrome is unstable angina."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read T-wave inversion in I, aVL, V5, and V6 without ST elevation in a man with new exertional chest pain and normal serial troponins as unstable angina, and separate it from NSTEMI and acute pericarditis"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. Circulation. 2025;151(13):e771-e862 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18213 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "New exertional chest pain with lateral ischemic T-wave inversion and normal serial troponin is unstable angina",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "High-sensitivity troponin is normal at arrival and at 3 hours",
+   "steps": 3,
+   "chain": [
+    "영상: T-wave inversion in I, aVL, V5, and V6 without ST elevation → lateral ischemic T-wave changes",
+    "New-onset exertional chest pain within 2 days + ischemic ECG → non-ST-elevation acute coronary syndrome",
+    "Normal serial high-sensitivity troponin → no necrosis → unstable angina"
+   ],
+   "key": [
+    {
+     "item": "영상: T-wave inversion in I, aVL, V5, and V6 with no ST elevation",
+     "why": "Lateral ischemic repolarization change",
+     "also": []
+    },
+    {
+     "item": "began while he was climbing stairs, lasted about 10 minutes, and resolved with rest",
+     "why": "Ischemic chest pain",
+     "also": []
+    },
+    {
+     "item": "He has never had such symptoms before",
+     "why": "New-onset angina is unstable",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "High-sensitivity troponin I concentrations at arrival and 3 hours later are within the reference range",
+     "why": "Lowers the likelihood of myocardial infarction",
+     "also": []
+    },
+    {
+     "item": "there is no friction rub",
+     "why": "Lowers the likelihood of pericarditis",
+     "also": []
+    },
+    {
+     "item": "Echocardiography shows normal left ventricular wall thickness and wall motion",
+     "why": "Lowers the likelihood of hypertrophic cardiomyopathy",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "smoked 1 pack of cigarettes daily for 20 years",
+     "why": "Raises pretest probability of coronary disease",
+     "also": []
+    }
+   ],
+   "summary": "New exertional chest pain with lateral T-wave inversion indicates an acute coronary syndrome. Normal serial troponin makes it unstable angina.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the 3-hour high-sensitivity troponin rose above the 99th percentile, non-ST-elevation myocardial infarction"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0644.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/18000/#files-panel",
+   "asset_id": "PTBXL-18213",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18213"
+  },
+  "run_id": "20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0643",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 검진 심전도에서 축 편위를 들은 중년 남성",
+  "type": "심전도 처치 — 검진 심전도에서 축 편위를 들은 중년 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-12",
+  "vignette": "54세 남자가 회사 건강검진 심전도에서 「축이 왼쪽으로 치우쳐 있다」는 말을 듣고 왔다. 두근거림, 어지럼, 실신, 흉통은 없고 주 3회 1시간씩 달리기를 한다. 복용하는 약은 없다. 혈압 124/78 mmHg, 맥박 56회/분이다. 심음은 정상이고 잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 심장초음파에서 좌심실 벽 두께와 벽 운동은 정상이고 박출률은 62 % 이며 판막 이상은 없다. 12유도 심전도는 그림과 같다.",
+  "question": "이 심전도 소견에 대한 처치로 가장 적절한 것은?",
+  "options": [
+   "24시간 이내 전기생리 검사",
+   "베타차단제 투여",
+   "추가 치료 없이 경과 관찰",
+   "영구 심박동기 삽입",
+   "관상동맥 조영술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 동리듬 약 55회/분이다. I 은 양성이고 II·III·aVF 는 작은 r 뒤 깊은 S 의 rS 형태로 음성이 우세해 축이 −45° 보다 왼쪽(좌축 편위)이다. aVL 은 qR 이고 QRS 폭은 정상(< 120 ms)이다. 이는 좌전섬유속 차단이다. 증상이 없고 심장초음파가 정상이며 다른 전도 이상(우각차단, 1도 이상의 방실차단)이 함께 있지 않으므로 이 소견만으로 할 치료는 없고 경과 관찰한다. 운동하는 사람의 맥박 56회/분 동서맥도 생리적이다.\n- 원리: <b>왜 축이 왼쪽으로 가는가</b>: 좌각은 앞섬유속과 뒤섬유속으로 갈라진다. 앞섬유속은 좌심실 앞·위쪽 벽을 먼저 흥분시킨다. 이 섬유속이 막히면 흥분이 뒤섬유속을 따라 아래·뒤에서 시작해 위·왼쪽으로 늦게 퍼지므로, 처음 힘은 아래로(II·III·aVF 의 작은 r, aVL 의 q) 가다가 큰 힘이 위·왼쪽으로 향해(II·III·aVF 의 깊은 S, aVL 의 큰 R) 축이 −45° 이상 왼쪽으로 돈다. 섬유속 하나만 막히면 나머지 전도계로 금방 돌아가므로 QRS 는 거의 넓어지지 않는다.<br> <b>왜 치료하지 않는가</b>: 단독 좌전섬유속 차단은 그 자체로 서맥이나 방실차단을 일으키지 않는다. 심박동기는 증상이 있는 서맥이나 진행된 방실차단, 또는 섬유속 차단 + 실신처럼 완전 방실차단 위험이 높을 때의 적응증이다. 대신 이 소견은 고혈압·관상동맥질환·심근병증·대동맥판 질환의 표지일 수 있어 <b>구조적 심질환을 한 번 확인</b>하는 것이 의미가 있다 — 이 환자는 이미 확인되어 정상이다.<br> <b>추적</b>: 이후 우각차단이 더해지면(이섬유속 차단) 정기적으로 PR 간격과 증상을 본다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">단독 좌전섬유속 차단 — 경과 관찰(정답)</th><th>심박동기가 필요한 전도 장애(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심전도</td><td>좌축 편위, II·III·aVF rS, aVL qR, QRS 좁음</td><td>2도 Mobitz II · 3도 방실차단, 또는 교대 각차단</td></tr> <tr><td>증상</td><td>없음</td><td><b>실신·어지럼</b>, 운동 불내성</td></tr> <tr><td>심박수</td><td>정상 또는 생리적 동서맥</td><td>방실 해리에 의한 서맥</td></tr> <tr><td>처치</td><td>원인 심질환 확인 뒤 관찰</td><td>영구 심박동기</td></tr> </tbody></table> 축 편위는 전도로의 「우회」일 뿐 심박수를 떨어뜨리지 않는다. 심박동기는 방실 전도가 끊기거나 그 위험이 증상으로 드러날 때만이다.\n- 오답 이유:\n  - ① 24시간 이내 전기생리 검사는 섬유속 차단 환자가 설명되지 않는 실신을 겪어 숨은 His-Purkinje 전도 장애를 찾아야 할 때 정답이 될 수 있다.\n  - ② 베타차단제 투여는 증상이 있는 기외수축이나 빈맥, 고혈압이 있을 때 정답이 되며, 이 환자에서는 서맥을 악화시킬 수 있다.\n  - ④ 영구 심박동기 삽입은 섬유속 차단에 실신이 있거나 2도 Mobitz II·3도 방실차단, 교대 각차단이 기록될 때 정답이 된다.\n  - ⑤ 관상동맥 조영술은 노작성 흉통이나 부하 검사의 허혈 소견, 심장초음파의 국소 벽운동 이상이 있을 때 정답이 된다.\n- 함정: 축 편위나 맥박 56회/분을 보고 심박동기를 고르는 것 — 단독 섬유속 차단과 운동선수의 동서맥은 치료 대상이 아니다.\n- 학습목표: 무증상 성인의 좌축 편위·II·III·aVF rS·aVL qR 을 좌전섬유속 차단으로 판독하고, 구조적 심질환이 없으면 추가 치료 없이 경과 관찰함을 심박동기 적응증과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation. 2019;140(8):e382-e482\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12018 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 55회/분이다. I 은 양성이고 II·III·aVF 는 작은 r 뒤 깊은 S 의 rS 형태로 음성이 우세해 축이 −45° 보다 왼쪽(좌축 편위)이다. aVL 은 qR 이고 QRS 폭은 정상(< 120 ms)이다. 이는 좌전섬유속 차단이다. 증상이 없고 심장초음파가 정상이며 다른 전도 이상(우각차단, 1도 이상의 방실차단)이 함께 있지 않으므로 이 소견만으로 할 치료는 없고 경과 관찰한다. 운동하는 사람의 맥박 56회/분 동서맥도 생리적이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 축이 왼쪽으로 가는가</b>: 좌각은 앞섬유속과 뒤섬유속으로 갈라진다. 앞섬유속은 좌심실 앞·위쪽 벽을 먼저 흥분시킨다. 이 섬유속이 막히면 흥분이 뒤섬유속을 따라 아래·뒤에서 시작해 위·왼쪽으로 늦게 퍼지므로, 처음 힘은 아래로(II·III·aVF 의 작은 r, aVL 의 q) 가다가 큰 힘이 위·왼쪽으로 향해(II·III·aVF 의 깊은 S, aVL 의 큰 R) 축이 −45° 이상 왼쪽으로 돈다. 섬유속 하나만 막히면 나머지 전도계로 금방 돌아가므로 QRS 는 거의 넓어지지 않는다.<br> <b>왜 치료하지 않는가</b>: 단독 좌전섬유속 차단은 그 자체로 서맥이나 방실차단을 일으키지 않는다. 심박동기는 증상이 있는 서맥이나 진행된 방실차단, 또는 섬유속 차단 + 실신처럼 완전 방실차단 위험이 높을 때의 적응증이다. 대신 이 소견은 고혈압·관상동맥질환·심근병증·대동맥판 질환의 표지일 수 있어 <b>구조적 심질환을 한 번 확인</b>하는 것이 의미가 있다 — 이 환자는 이미 확인되어 정상이다.<br> <b>추적</b>: 이후 우각차단이 더해지면(이섬유속 차단) 정기적으로 PR 간격과 증상을 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">단독 좌전섬유속 차단 — 경과 관찰(정답)</th><th>심박동기가 필요한 전도 장애(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심전도</td><td>좌축 편위, II·III·aVF rS, aVL qR, QRS 좁음</td><td>2도 Mobitz II · 3도 방실차단, 또는 교대 각차단</td></tr> <tr><td>증상</td><td>없음</td><td><b>실신·어지럼</b>, 운동 불내성</td></tr> <tr><td>심박수</td><td>정상 또는 생리적 동서맥</td><td>방실 해리에 의한 서맥</td></tr> <tr><td>처치</td><td>원인 심질환 확인 뒤 관찰</td><td>영구 심박동기</td></tr> </tbody></table> 축 편위는 전도로의 「우회」일 뿐 심박수를 떨어뜨리지 않는다. 심박동기는 방실 전도가 끊기거나 그 위험이 증상으로 드러날 때만이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 24시간 이내 전기생리 검사는 섬유속 차단 환자가 설명되지 않는 실신을 겪어 숨은 His-Purkinje 전도 장애를 찾아야 할 때 정답이 될 수 있다.\n② 베타차단제 투여는 증상이 있는 기외수축이나 빈맥, 고혈압이 있을 때 정답이 되며, 이 환자에서는 서맥을 악화시킬 수 있다.\n④ 영구 심박동기 삽입은 섬유속 차단에 실신이 있거나 2도 Mobitz II·3도 방실차단, 교대 각차단이 기록될 때 정답이 된다.\n⑤ 관상동맥 조영술은 노작성 흉통이나 부하 검사의 허혈 소견, 심장초음파의 국소 벽운동 이상이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "축 편위나 맥박 56회/분을 보고 심박동기를 고르는 것 — 단독 섬유속 차단과 운동선수의 동서맥은 치료 대상이 아니다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무증상 성인의 좌축 편위·II·III·aVF rS·aVL qR 을 좌전섬유속 차단으로 판독하고, 구조적 심질환이 없으면 추가 치료 없이 경과 관찰함을 심박동기 적응증과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation. 2019;140(8):e382-e482 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12018 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "구조적 심질환과 증상이 없는 단독 좌전섬유속 차단은 추가 치료 없이 경과 관찰한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "실신·어지럼이 없고 방실차단이나 우각차단이 동반되지 않으며 심장초음파가 정상이다",
+   "steps": 2,
+   "chain": [
+    "영상: I 양성, II·III·aVF rS, aVL qR, QRS 좁음 → 좌축 편위의 좌전섬유속 차단",
+    "증상 없음 + 심장초음파 정상 + 방실차단 없음 → 추가 치료 없이 경과 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: II·III·aVF 의 rS 와 aVL 의 qR, 좁은 QRS",
+     "why": "좌전섬유속 차단의 정의",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심장초음파에서 좌심실 벽 두께와 벽 운동은 정상이고 박출률은 62 %",
+     "why": "원인이 되는 구조적 심질환의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 전해질과 갑상샘 기능은 정상",
+     "why": "가역적 전도 장애 원인의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "두근거림, 어지럼, 실신, 흉통은 없고",
+     "why": "심박동기 적응증이 되는 증상이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "맥박 56회/분",
+     "why": "규칙적으로 운동하는 사람의 생리적 동서맥 — 치료 대상이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "좌축 편위·II·III·aVF rS·aVL qR 은 좌전섬유속 차단이다. 증상과 구조적 심질환이 없어 추가 치료 없이 경과 관찰한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 심전도에 우각차단이 더해지고 설명되지 않는 실신이 있었다면 영구 심박동기 삽입을 검토"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0643.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12018",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12018"
+  },
+  "run_id": "20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0642",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 수술 전 검사에서 받은 고령 남성의 심전도",
+  "type": "심전도 판독 — 수술 전 검사에서 받은 고령 남성의 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-12",
+  "vignette": "69세 남자가 서혜부 탈장 수술을 앞두고 수술 전 검사를 받으러 왔다. 지금은 흉통이나 숨참이 없고 계단 두 층을 쉬지 않고 오른다. 6년 전 밤에 가슴을 짓누르는 통증이 1시간 넘게 이어진 적이 있었으나 저절로 나아 병원에 가지 않았다. 고혈압과 2형 당뇨병으로 약을 먹고 있다. 혈압 132/80 mmHg, 맥박 70회/분이다. 심음은 정상이고 잡음은 없다. 혈청 트로포닌 I 는 기준치 이하이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "전벽 심근경색",
+   "오래된 하벽 심근경색",
+   "급성 하벽 ST분절상승 심근경색",
+   "좌전섬유속 차단",
+   "급성 심낭염"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 동리듬 약 70회/분이다. III 와 aVF 에 넓고 깊은 Q파(III 는 QS 에 가까움)가 있고, 같은 유도에 ST 상승이나 과급성 T파는 없다. V1~V4 의 R파 진행은 보존되어 있다. 하벽을 보는 유도(II·III·aVF)의 병적 Q파는 하벽의 경색 흉터를 뜻하고, ST 가 기저선에 있고 흉통이 없으며 트로포닌이 정상이므로 급성이 아니라 오래된 하벽 심근경색이다. 6년 전 치료받지 않은 긴 흉통이 그 경색이었을 가능성이 높다. 판독 전문의도 「하벽 경색, 아마 오래된 것」으로 읽었다.\n- 원리: <b>왜 Q파가 흉터를 뜻하는가</b>: 정상 심실은 중격이 왼쪽에서 오른쪽으로 먼저 탈분극해 작은 중격 q파를 만들고, 이어서 두꺼운 좌심실벽이 큰 R파를 만든다. 경색으로 한 벽이 전기적으로 죽으면 그 벽을 바라보는 유도는 「창문」처럼 반대편 벽이 멀어지는 전류만 보게 되어 깊고 넓은 Q파(≥ 40 ms 또는 R파의 25 % 이상)가 생긴다. 흉터는 사라지지 않으므로 Q파는 몇 년이 지나도 남는다.<br> <b>시간 순서</b>: 급성 경색은 과급성 T파 → ST 상승(분~시간) → Q파 형성(시간~일) → ST 가 기저선으로 돌아오고 T파 역위(일~주) → Q파만 남음(수개월 이후)의 순서다. 그래서 <b>Q파 + ST 기저선 + 증상 없음 + 트로포닌 정상</b>이면 오래된 경색이다.<br> <b>하벽의 혈관</b>: 하벽은 대개 오른관상동맥(약 80 %), 나머지는 왼회선동맥이 공급한다. 무증상 당뇨병 환자는 경색을 알아채지 못하고 지나가는 경우가 많아 수술 전 심전도에서 처음 발견된다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">오래된 하벽 심근경색(정답)</th><th>급성 하벽 ST분절상승 심근경색(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>II·III·aVF 의 ST</td><td><b>기저선</b></td><td>1 mm 이상 상승, I·aVL 거울상 하강</td></tr> <tr><td>Q파</td><td>깊고 넓게 굳어 있음</td><td>처음 몇 시간은 없거나 생기는 중</td></tr> <tr><td>증상·트로포닌</td><td>흉통 없음, 트로포닌 정상</td><td>지속 흉통, 트로포닌 상승</td></tr> <tr><td>처치</td><td>이차 예방, 수술 전 위험도 평가</td><td>즉시 재관류</td></tr> </tbody></table> Q파는 「언제든 있었던 경색」, ST 상승은 「지금 진행 중인 손상」이다. 둘을 따로 읽어야 시점을 정할 수 있다.\n- 오답 이유:\n  - ① 전벽 심근경색은 V1~V4 에 병적 Q파가 있거나 R파 진행이 소실되었을 때 정답이 되며, 이 심전도는 흉부 유도 R파가 보존되어 있다.\n  - ③ 급성 하벽 ST분절상승 심근경색은 II·III·aVF 에서 ST 가 1 mm 이상 올라가고 흉통이 지속되며 트로포닌이 오를 때 정답이 된다.\n  - ④ 좌전섬유속 차단은 II·III·aVF 에 Q파가 아니라 작은 r 뒤의 깊은 S(rS)가 있고 aVL 에 qR 이 보일 때 정답이 된다.\n  - ⑤ 급성 심낭염은 여러 유도에 걸친 오목한 ST 상승과 PR 하강이 있고 앉으면 나아지는 흉통이 있을 때 정답이 된다.\n- 함정: Q파를 보고 급성 경색으로 읽는 것 — 시점은 Q파가 아니라 ST 분절과 증상·트로포닌이 정한다.\n- 학습목표: III·aVF 의 병적 Q파와 ST 상승 없음을 오래된 하벽 심근경색으로 판독하고, 급성 하벽 ST분절상승 심근경색과 좌전섬유속 차단을 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20):e618-e651\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13313 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 70회/분이다. III 와 aVF 에 넓고 깊은 Q파(III 는 QS 에 가까움)가 있고, 같은 유도에 ST 상승이나 과급성 T파는 없다. V1~V4 의 R파 진행은 보존되어 있다. 하벽을 보는 유도(II·III·aVF)의 병적 Q파는 하벽의 경색 흉터를 뜻하고, ST 가 기저선에 있고 흉통이 없으며 트로포닌이 정상이므로 급성이 아니라 오래된 하벽 심근경색이다. 6년 전 치료받지 않은 긴 흉통이 그 경색이었을 가능성이 높다. 판독 전문의도 「하벽 경색, 아마 오래된 것」으로 읽었다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 Q파가 흉터를 뜻하는가</b>: 정상 심실은 중격이 왼쪽에서 오른쪽으로 먼저 탈분극해 작은 중격 q파를 만들고, 이어서 두꺼운 좌심실벽이 큰 R파를 만든다. 경색으로 한 벽이 전기적으로 죽으면 그 벽을 바라보는 유도는 「창문」처럼 반대편 벽이 멀어지는 전류만 보게 되어 깊고 넓은 Q파(≥ 40 ms 또는 R파의 25 % 이상)가 생긴다. 흉터는 사라지지 않으므로 Q파는 몇 년이 지나도 남는다.<br> <b>시간 순서</b>: 급성 경색은 과급성 T파 → ST 상승(분~시간) → Q파 형성(시간~일) → ST 가 기저선으로 돌아오고 T파 역위(일~주) → Q파만 남음(수개월 이후)의 순서다. 그래서 <b>Q파 + ST 기저선 + 증상 없음 + 트로포닌 정상</b>이면 오래된 경색이다.<br> <b>하벽의 혈관</b>: 하벽은 대개 오른관상동맥(약 80 %), 나머지는 왼회선동맥이 공급한다. 무증상 당뇨병 환자는 경색을 알아채지 못하고 지나가는 경우가 많아 수술 전 심전도에서 처음 발견된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">오래된 하벽 심근경색(정답)</th><th>급성 하벽 ST분절상승 심근경색(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>II·III·aVF 의 ST</td><td><b>기저선</b></td><td>1 mm 이상 상승, I·aVL 거울상 하강</td></tr> <tr><td>Q파</td><td>깊고 넓게 굳어 있음</td><td>처음 몇 시간은 없거나 생기는 중</td></tr> <tr><td>증상·트로포닌</td><td>흉통 없음, 트로포닌 정상</td><td>지속 흉통, 트로포닌 상승</td></tr> <tr><td>처치</td><td>이차 예방, 수술 전 위험도 평가</td><td>즉시 재관류</td></tr> </tbody></table> Q파는 「언제든 있었던 경색」, ST 상승은 「지금 진행 중인 손상」이다. 둘을 따로 읽어야 시점을 정할 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 전벽 심근경색은 V1~V4 에 병적 Q파가 있거나 R파 진행이 소실되었을 때 정답이 되며, 이 심전도는 흉부 유도 R파가 보존되어 있다.\n③ 급성 하벽 ST분절상승 심근경색은 II·III·aVF 에서 ST 가 1 mm 이상 올라가고 흉통이 지속되며 트로포닌이 오를 때 정답이 된다.\n④ 좌전섬유속 차단은 II·III·aVF 에 Q파가 아니라 작은 r 뒤의 깊은 S(rS)가 있고 aVL 에 qR 이 보일 때 정답이 된다.\n⑤ 급성 심낭염은 여러 유도에 걸친 오목한 ST 상승과 PR 하강이 있고 앉으면 나아지는 흉통이 있을 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "Q파를 보고 급성 경색으로 읽는 것 — 시점은 Q파가 아니라 ST 분절과 증상·트로포닌이 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "III·aVF 의 병적 Q파와 ST 상승 없음을 오래된 하벽 심근경색으로 판독하고, 급성 하벽 ST분절상승 심근경색과 좌전섬유속 차단을 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20):e618-e651 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13313 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "III·aVF 의 병적 Q파에 ST 상승이 없고 증상·트로포닌이 정상이면 오래된 하벽 심근경색이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "II·III·aVF 의 ST 가 기저선이고 흉통이 없으며 트로포닌이 정상이다",
+   "steps": 2,
+   "chain": [
+    "영상: III·aVF 의 깊고 넓은 Q파 → 하벽 경색 흉터",
+    "ST 기저선 + 흉통 없음 + 트로포닌 정상 → 급성이 아닌 오래된 하벽 심근경색"
+   ],
+   "key": [
+    {
+     "item": "영상: III·aVF 의 깊고 넓은 Q파, 같은 유도의 ST 상승 없음",
+     "why": "하벽 경색 흉터이며 급성 손상이 아니다",
+     "also": []
+    },
+    {
+     "item": "가슴을 짓누르는 통증이 1시간 넘게 이어진 적이 있었으나 저절로 나아 병원에 가지 않았다",
+     "why": "치료받지 않은 과거 경색의 병력",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 트로포닌 I 는 기준치 이하",
+     "why": "급성 심근 손상의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "지금은 흉통이나 숨참이 없고",
+     "why": "진행 중인 경색의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "2형 당뇨병",
+     "why": "무증상 경색이 흔한 배경 — 판독 자체를 정하지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "III·aVF 에 병적 Q파가 있지만 ST 상승이 없고 흉통·트로포닌이 정상이다. 오래된 하벽 심근경색이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 Q파에 II·III·aVF 의 ST 상승과 지속되는 흉통, 트로포닌 상승이 있다면 급성 하벽 ST분절상승 심근경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0642.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/13000/#files-panel",
+   "asset_id": "PTBXL-13313",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13313"
+  },
+  "run_id": "20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0636",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "응급·외상 — 손을 짚고 넘어진 뒤 팔을 못 움직이는 중년 여성",
+  "type": "응급·외상 — 손을 짚고 넘어진 뒤 팔을 못 움직이는 중년 여성",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-12",
+  "vignette": "A 61-year-old woman is brought to the emergency department 1 hour after she slipped on an icy sidewalk and fell onto her outstretched right hand. She has severe right shoulder pain and cannot move the arm. She holds the right arm slightly abducted and externally rotated and resists any movement. Her blood pressure is 142/86 mm Hg, and pulse is 92/min. The normal rounded contour of the right shoulder is lost, and the acromion is prominent. The right radial pulse is palpable, and capillary refill is normal. A radiograph of the right shoulder is shown.",
+  "question": "Before closed reduction, documentation of which of the following is most important?",
+  "options": [
+   "Sensation over the little finger",
+   "Sensation over the lateral forearm",
+   "Sensation over the medial aspect of the upper arm",
+   "Sensation over the lateral aspect of the upper arm",
+   "Sensation over the dorsum of the first web space"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The radiograph shows the humeral head displaced out of the glenoid fossa, lying inferior and medial to it beneath the coracoid process, with an empty glenoid and a small bony fragment at the inferior glenoid rim. With the arm held in abduction and external rotation and a squared-off shoulder, this is an anterior (subcoracoid) dislocation. The axillary nerve winds around the surgical neck just below the joint capsule and is the nerve most often stretched by an anterior dislocation. Its sensory territory is the skin over the lateral upper arm (regimental badge area), which must be documented before reduction so a deficit is not attributed to the maneuver.\n- 원리: <b>Why the axillary nerve</b>: The axillary nerve (C5–C6) leaves the posterior cord, passes through the quadrangular space just below the inferior joint capsule, and wraps around the surgical neck of the humerus to supply the deltoid and teres minor and the skin over the lower deltoid. In an anterior dislocation the humeral head is driven forward and down, directly stretching the nerve against the capsule. Deltoid strength cannot be tested in a painful dislocated shoulder, so <b>sensation over the lateral upper arm</b> is the practical bedside test.<br> <b>Why before reduction</b>: Nerve injury can be caused by the dislocation or by the reduction maneuver. Documenting function before and after reduction distinguishes the two, guides follow-up, and is a medicolegal standard. Most axillary neuropraxias recover over months.<br> <b>Age matters</b>: In patients older than 40, anterior dislocation is more often accompanied by rotator cuff tear and nerve injury, and a glenoid rim fragment (bony Bankart lesion) may change management after reduction.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Axillary nerve — lateral upper arm (answer)</th><th>Radial nerve — first dorsal web space (closest distractor)</th></tr></thead><tbody> <tr><td>Course</td><td>Quadrangular space, around the <b>surgical neck</b></td><td>Spiral groove of the <b>humeral shaft</b></td></tr> <tr><td>Typical injury</td><td>Anterior shoulder dislocation, surgical neck fracture</td><td>Midshaft humerus fracture</td></tr> <tr><td>Motor loss</td><td>Deltoid, teres minor (abduction beyond 15°)</td><td>Wrist and finger extensors (wrist drop)</td></tr> <tr><td>Sensory test</td><td>Skin over the lower deltoid</td><td>Dorsum of the first web space</td></tr> </tbody></table> The injured level picks the nerve: joint and surgical neck → axillary; shaft → radial.\n- 오답 이유:\n  - (A) Sensation over the little finger tests the ulnar nerve and would be the priority with a medial epicondyle fracture or elbow dislocation.\n  - (B) Sensation over the lateral forearm tests the musculocutaneous nerve, injured occasionally by anterior dislocation but much less often than the axillary nerve.\n  - (C) Sensation over the medial aspect of the upper arm tests the medial brachial cutaneous and intercostobrachial nerves, which are rarely affected in this injury.\n  - (E) Sensation over the dorsum of the first web space tests the radial nerve and would be the priority with a midshaft humerus fracture.\n- 함정: Checking only the radial pulse and hand sensation — the nerve stretched by an anterior dislocation supplies the skin over the deltoid, not the hand.\n- 학습목표: Read an inferomedially displaced humeral head with an empty glenoid as anterior shoulder dislocation and document axillary nerve function before reduction\n- 근거·출처: Tintinalli JE, Ma OJ, Yealy DM, et al., eds. Tintinalli's Emergency Medicine: A Comprehensive Study Guide, 9th ed. McGraw Hill; 2020. Chapter 268: Shoulder and Humerus Injuries · PMC Open Access Subset case figure (CC BY) — author caption: X-ray imaging at the time of injury; source article in the post-grading appendix\n\n## 출처\n- Concurrent Rotator Cuff Tear and Axillary Nerve Palsy Associated with Anterior Dislocation of the Shoulder and Large Glenoid Rim Fracture: A “Terrible Tetrad”. Case Rep Orthop. 2014 Jun 12;2014:312968. doi: 10.1155/2014/312968 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows the humeral head displaced out of the glenoid fossa, lying inferior and medial to it beneath the coracoid process, with an empty glenoid and a small bony fragment at the inferior glenoid rim. With the arm held in abduction and external rotation and a squared-off shoulder, this is an anterior (subcoracoid) dislocation. The axillary nerve winds around the surgical neck just below the joint capsule and is the nerve most often stretched by an anterior dislocation. Its sensory territory is the skin over the lateral upper arm (regimental badge area), which must be documented before reduction so a deficit is not attributed to the maneuver."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the axillary nerve</b>: The axillary nerve (C5–C6) leaves the posterior cord, passes through the quadrangular space just below the inferior joint capsule, and wraps around the surgical neck of the humerus to supply the deltoid and teres minor and the skin over the lower deltoid. In an anterior dislocation the humeral head is driven forward and down, directly stretching the nerve against the capsule. Deltoid strength cannot be tested in a painful dislocated shoulder, so <b>sensation over the lateral upper arm</b> is the practical bedside test.<br> <b>Why before reduction</b>: Nerve injury can be caused by the dislocation or by the reduction maneuver. Documenting function before and after reduction distinguishes the two, guides follow-up, and is a medicolegal standard. Most axillary neuropraxias recover over months.<br> <b>Age matters</b>: In patients older than 40, anterior dislocation is more often accompanied by rotator cuff tear and nerve injury, and a glenoid rim fragment (bony Bankart lesion) may change management after reduction."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Axillary nerve — lateral upper arm (answer)</th><th>Radial nerve — first dorsal web space (closest distractor)</th></tr></thead><tbody> <tr><td>Course</td><td>Quadrangular space, around the <b>surgical neck</b></td><td>Spiral groove of the <b>humeral shaft</b></td></tr> <tr><td>Typical injury</td><td>Anterior shoulder dislocation, surgical neck fracture</td><td>Midshaft humerus fracture</td></tr> <tr><td>Motor loss</td><td>Deltoid, teres minor (abduction beyond 15°)</td><td>Wrist and finger extensors (wrist drop)</td></tr> <tr><td>Sensory test</td><td>Skin over the lower deltoid</td><td>Dorsum of the first web space</td></tr> </tbody></table> The injured level picks the nerve: joint and surgical neck → axillary; shaft → radial."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Sensation over the little finger tests the ulnar nerve and would be the priority with a medial epicondyle fracture or elbow dislocation.\n(B) Sensation over the lateral forearm tests the musculocutaneous nerve, injured occasionally by anterior dislocation but much less often than the axillary nerve.\n(C) Sensation over the medial aspect of the upper arm tests the medial brachial cutaneous and intercostobrachial nerves, which are rarely affected in this injury.\n(E) Sensation over the dorsum of the first web space tests the radial nerve and would be the priority with a midshaft humerus fracture."
+   },
+   {
+    "k": "함정",
+    "v": "Checking only the radial pulse and hand sensation — the nerve stretched by an anterior dislocation supplies the skin over the deltoid, not the hand."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read an inferomedially displaced humeral head with an empty glenoid as anterior shoulder dislocation and document axillary nerve function before reduction"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tintinalli JE, Ma OJ, Yealy DM, et al., eds. Tintinalli's Emergency Medicine: A Comprehensive Study Guide, 9th ed. McGraw Hill; 2020. Chapter 268: Shoulder and Humerus Injuries · PMC Open Access Subset case figure (CC BY) — author caption: X-ray imaging at the time of injury; source article in the post-grading appendix ## 출처 Concurrent Rotator Cuff Tear and Axillary Nerve Palsy Associated with Anterior Dislocation of the Shoulder and Large Glenoid Rim Fracture: A “Terrible Tetrad”. Case Rep Orthop. 2014 Jun 12;2014:312968. doi: 10.1155/2014/312968 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "An anterior shoulder dislocation stretches the axillary nerve, so lateral upper arm sensation must be documented before reduction",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "The injury is at the glenohumeral joint and surgical neck, not the humeral shaft",
+   "steps": 2,
+   "chain": [
+    "영상: humeral head inferior and medial to an empty glenoid, beneath the coracoid → anterior dislocation",
+    "Anterior dislocation stretches the axillary nerve around the surgical neck → document sensation over the lateral upper arm before reduction"
+   ],
+   "key": [
+    {
+     "item": "영상: humeral head displaced inferomedially beneath the coracoid with an empty glenoid",
+     "why": "Defines an anterior dislocation",
+     "also": []
+    },
+    {
+     "item": "holds the right arm slightly abducted and externally rotated",
+     "why": "Classic posture of anterior dislocation",
+     "also": []
+    },
+    {
+     "item": "The normal rounded contour of the right shoulder is lost, and the acromion is prominent",
+     "why": "The head has left the joint",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The right radial pulse is palpable, and capillary refill is normal",
+     "why": "Lowers the likelihood of axillary artery injury",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "61-year-old woman",
+     "why": "Older age raises the risk of associated nerve and rotator cuff injury",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "The radiograph shows an anterior shoulder dislocation. The axillary nerve is most at risk, so sensation over the lateral upper arm is documented before reduction.",
+   "switch": {
+    "choice": "E",
+    "condition": "If the radiograph showed a displaced midshaft humerus fracture instead, radial nerve sensation over the first dorsal web space"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0636.png",
+   "caption": "Anteroposterior radiograph of the shoulder at the time of injury; one panel of the published case figure, no other change (PMC Open Access Subset, CC BY)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4082929/",
+   "asset_id": "PMC-PMC4082929_Figure1_a",
+   "text": "Concurrent Rotator Cuff Tear and Axillary Nerve Palsy Associated with Anterior Dislocation of the Shoulder and Large Glenoid Rim Fracture: A “Terrible Tetrad”. Case Rep Orthop. 2014 Jun 12;2014:312968. doi: 10.1155/2014/312968 (CC BY) — Figure 1"
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0635",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "호흡기 — 3년째 같은 쪽 폐렴이 반복되는 청소년",
+  "type": "호흡기 — 3년째 같은 쪽 폐렴이 반복되는 청소년",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-12",
+  "vignette": "16세 남자가 1주 전부터 기침과 누런 가래, 열이 있어 왔다. 3년 전부터 1년에 3~4번씩 기관지염과 폐렴으로 항생제 치료를 받았고, 그때마다 오른쪽 아래 폐에 염증이 있다는 말을 들었다. 천식과 부비동염은 없고 체중 증가와 키 성장은 정상이며 예방접종은 모두 받았다. 체온 37.9℃, 호흡 20회/분, 산소포화도 97 %(실내 공기)이다. 오른쪽 아래 등에서 수포음이 들린다. 흉부 X선 사진은 그림과 같다(화살표).",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "3개월 장기 마크로라이드 치료",
+   "흡입 코르티코스테로이드 시작",
+   "기관지내시경으로 이물 제거",
+   "땀 염화물 검사",
+   "오른쪽 하엽 절제술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 오른쪽 심장 경계 뒤, 오른쪽 하엽 기관지가 지나는 자리에 가늘고 곧은 금속성 방사선 비투과성 음영(화살표)이 있다. 같은 폐엽(오른쪽 아래)에만 3년간 폐렴이 반복된 것은 국소 기관지 폐쇄를 뜻하고, 그 원인이 보이는 이물이다. 이물이 남아 있는 한 감염이 되풀이되고 기관지확장증이 진행하므로 기관지내시경으로 이물을 꺼내는 것이 다음 단계다.\n- 원리: <b>왜 「같은 자리」가 단서인가</b>: 반복 폐렴은 자리가 매번 같은지 다른지로 원인이 갈린다. <b>같은 폐엽</b>에 되풀이되면 그 엽의 기관지가 막혀 있다는 뜻이다(이물·기관지 안 종양·외부 압박·선천 기형). <b>여러 폐엽</b>을 옮겨 다니면 전신 방어 장애(낭성섬유증·섬모운동이상증·면역결핍·흡인)를 먼저 찾는다.<br> <b>왜 이물이 기관지확장증을 만드는가</b>: 기관지가 막히면 그 아래 분비물이 빠지지 못해 세균이 자라고, 반복 염증이 기관지벽의 근육·탄력섬유를 파괴해 기관지가 늘어난다(낭상 기관지확장증). 오른쪽 주기관지는 왼쪽보다 짧고 넓으며 수직에 가까워 흡인된 이물이 오른쪽 하엽으로 잘 들어간다.<br> <b>처치 순서</b>: 원인 제거가 먼저다. 이물을 꺼낸 뒤에도 손상된 폐엽이 감염을 되풀이할 때만 폐엽 절제를 고려한다. 오래된 금속 이물은 육아조직에 묻혀 있어 경성 기관지내시경이 필요할 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">기관지내시경 이물 제거(정답)</th><th>땀 염화물 검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>찾는 원인</td><td><b>국소 기관지 폐쇄</b></td><td>전신 점액 청소 장애(낭성섬유증)</td></tr> <tr><td>폐렴 위치</td><td>같은 폐엽에 반복</td><td>여러 폐엽, 양쪽 위엽 우세</td></tr> <tr><td>동반 소견</td><td>영상의 이물·국소 소견</td><td>부비동염·성장 부진·췌장 기능부전</td></tr> <tr><td>이 환자</td><td>오른쪽 하엽만, 금속성 이물이 보임</td><td>부비동염 없고 성장 정상</td></tr> </tbody></table> 반복 폐렴의 자리가 하나면 그 기관지를 보고, 여러 곳이면 전신 원인을 검사한다.\n- 오답 이유:\n  - ① 3개월 장기 마크로라이드 치료는 원인이 제거된 기관지확장증에서 1년에 3번 이상 악화가 반복될 때 악화 예방으로 정답이 된다.\n  - ② 흡입 코르티코스테로이드 시작은 천명·가역적 기류 제한이 있는 천식이 반복 증상의 원인일 때 정답이 된다.\n  - ④ 땀 염화물 검사는 폐렴이 여러 폐엽에 반복되고 부비동염·성장 부진·지방변이 함께 있을 때 낭성섬유증을 찾는 검사로 정답이 된다.\n  - ⑤ 오른쪽 하엽 절제술은 이물을 꺼낸 뒤에도 파괴된 하엽이 감염을 되풀이하거나 객혈이 반복될 때 정답이 된다.\n- 함정: 반복 폐렴을 보자마자 낭성섬유증 검사를 하는 것 — 같은 폐엽에만 반복되고 영상에 이물이 보이면 그 기관지를 연다.\n- 학습목표: 같은 폐엽에 반복되는 폐렴이 있는 청소년의 흉부 X선에서 기관지 안 금속성 이물을 읽고, 기관지내시경 제거를 원인 질환 검사·폐엽 절제와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 301: Bronchiectasis · PMC Open Access Subset 증례 그림(CC BY) — 저자 캡션: radiopaque foreign body (arrow). 원 논문은 채점 후 부록\n\n## 출처\n- Three-Year Retained Endobronchial Push Pin in an Adolescent Causing Saccular Bronchiectasis: A Case Report and Review of the Literature. Children (Basel). 2026 Oct 13;13(10):1395. doi: 10.3390/children13101395 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 오른쪽 심장 경계 뒤, 오른쪽 하엽 기관지가 지나는 자리에 가늘고 곧은 금속성 방사선 비투과성 음영(화살표)이 있다. 같은 폐엽(오른쪽 아래)에만 3년간 폐렴이 반복된 것은 국소 기관지 폐쇄를 뜻하고, 그 원인이 보이는 이물이다. 이물이 남아 있는 한 감염이 되풀이되고 기관지확장증이 진행하므로 기관지내시경으로 이물을 꺼내는 것이 다음 단계다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「같은 자리」가 단서인가</b>: 반복 폐렴은 자리가 매번 같은지 다른지로 원인이 갈린다. <b>같은 폐엽</b>에 되풀이되면 그 엽의 기관지가 막혀 있다는 뜻이다(이물·기관지 안 종양·외부 압박·선천 기형). <b>여러 폐엽</b>을 옮겨 다니면 전신 방어 장애(낭성섬유증·섬모운동이상증·면역결핍·흡인)를 먼저 찾는다.<br> <b>왜 이물이 기관지확장증을 만드는가</b>: 기관지가 막히면 그 아래 분비물이 빠지지 못해 세균이 자라고, 반복 염증이 기관지벽의 근육·탄력섬유를 파괴해 기관지가 늘어난다(낭상 기관지확장증). 오른쪽 주기관지는 왼쪽보다 짧고 넓으며 수직에 가까워 흡인된 이물이 오른쪽 하엽으로 잘 들어간다.<br> <b>처치 순서</b>: 원인 제거가 먼저다. 이물을 꺼낸 뒤에도 손상된 폐엽이 감염을 되풀이할 때만 폐엽 절제를 고려한다. 오래된 금속 이물은 육아조직에 묻혀 있어 경성 기관지내시경이 필요할 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">기관지내시경 이물 제거(정답)</th><th>땀 염화물 검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>찾는 원인</td><td><b>국소 기관지 폐쇄</b></td><td>전신 점액 청소 장애(낭성섬유증)</td></tr> <tr><td>폐렴 위치</td><td>같은 폐엽에 반복</td><td>여러 폐엽, 양쪽 위엽 우세</td></tr> <tr><td>동반 소견</td><td>영상의 이물·국소 소견</td><td>부비동염·성장 부진·췌장 기능부전</td></tr> <tr><td>이 환자</td><td>오른쪽 하엽만, 금속성 이물이 보임</td><td>부비동염 없고 성장 정상</td></tr> </tbody></table> 반복 폐렴의 자리가 하나면 그 기관지를 보고, 여러 곳이면 전신 원인을 검사한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 3개월 장기 마크로라이드 치료는 원인이 제거된 기관지확장증에서 1년에 3번 이상 악화가 반복될 때 악화 예방으로 정답이 된다.\n② 흡입 코르티코스테로이드 시작은 천명·가역적 기류 제한이 있는 천식이 반복 증상의 원인일 때 정답이 된다.\n④ 땀 염화물 검사는 폐렴이 여러 폐엽에 반복되고 부비동염·성장 부진·지방변이 함께 있을 때 낭성섬유증을 찾는 검사로 정답이 된다.\n⑤ 오른쪽 하엽 절제술은 이물을 꺼낸 뒤에도 파괴된 하엽이 감염을 되풀이하거나 객혈이 반복될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "반복 폐렴을 보자마자 낭성섬유증 검사를 하는 것 — 같은 폐엽에만 반복되고 영상에 이물이 보이면 그 기관지를 연다."
+   },
+   {
+    "k": "학습목표",
+    "v": "같은 폐엽에 반복되는 폐렴이 있는 청소년의 흉부 X선에서 기관지 안 금속성 이물을 읽고, 기관지내시경 제거를 원인 질환 검사·폐엽 절제와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 301: Bronchiectasis · PMC Open Access Subset 증례 그림(CC BY) — 저자 캡션: radiopaque foreign body (arrow). 원 논문은 채점 후 부록 ## 출처 Three-Year Retained Endobronchial Push Pin in an Adolescent Causing Saccular Bronchiectasis: A Case Report and Review of the Literature. Children (Basel). 2026 Oct 13;13(10):1395. doi: 10.3390/children13101395 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "같은 폐엽에 반복되는 폐렴과 그 기관지의 금속성 이물은 기관지내시경 제거가 다음 단계다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "폐렴이 오른쪽 하엽에만 반복되고 영상에 이물이 보이며 부비동염·성장 부진이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 오른쪽 하엽 기관지 자리의 가늘고 곧은 금속성 음영 + 같은 폐엽의 반복 폐렴 → 기관지 이물",
+    "원인인 국소 폐쇄를 없애야 감염과 기관지확장증 진행이 멈춘다 → 기관지내시경 이물 제거"
+   ],
+   "key": [
+    {
+     "item": "영상: 오른쪽 심장 경계 뒤 하엽 기관지 자리의 가늘고 곧은 금속성 음영",
+     "why": "기관지 이물 자체",
+     "also": []
+    },
+    {
+     "item": "그때마다 오른쪽 아래 폐에 염증이 있다는 말을 들었다",
+     "why": "같은 폐엽의 반복은 국소 폐쇄를 뜻한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "천식과 부비동염은 없고 체중 증가와 키 성장은 정상",
+     "why": "천식·낭성섬유증 등 전신 원인의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "산소포화도 97 %(실내 공기)",
+     "why": "안정적이라 응급 처치보다 계획된 내시경이 가능하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "예방접종은 모두 받았다",
+     "why": "면역결핍 의심을 높이지 않는 배경",
+     "also": []
+    }
+   ],
+   "summary": "오른쪽 하엽에만 3년간 폐렴이 반복되고 그 기관지에 금속성 이물이 보인다. 다음 단계는 기관지내시경 이물 제거다.",
+   "switch": {
+    "choice": "D",
+    "condition": "폐렴이 여러 폐엽을 옮겨 다니고 부비동염과 성장 부진이 있다면 땀 염화물 검사"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0635.jpg",
+   "caption": "흉부 전후면 X선, 화살표는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13703675/",
+   "asset_id": "PMC-PMC13703675_Figure1",
+   "text": "Three-Year Retained Endobronchial Push Pin in an Adolescent Causing Saccular Bronchiectasis: A Case Report and Review of the Literature. Children (Basel). 2026 Oct 13;13(10):1395. doi: 10.3390/children13101395 (CC BY) — Figure 1"
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0634",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "순환기 — 건너뛰는 맥박을 느끼는 고령 남성의 심전도와 다음 검사",
+  "type": "순환기 — 건너뛰는 맥박을 느끼는 고령 남성의 심전도와 다음 검사",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-12",
+  "vignette": "A 74-year-old man comes to the physician because of a 3-week history of a sensation that his heart is skipping beats. He has had no chest pain, shortness of breath, dizziness, or syncope, and he walks 3 km daily without difficulty. He has hypertension treated with amlodipine. He drinks 2 cups of coffee daily. His blood pressure is 134/80 mm Hg, and pulse is 72/min and irregular. The lungs are clear. Heart sounds are normal, and there are no murmurs. There is no leg edema. Serum potassium, magnesium, and thyroid-stimulating hormone concentrations are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Synchronized cardioversion",
+   "Transthoracic echocardiography",
+   "Catheter ablation",
+   "Amiodarone therapy",
+   "Implantable cardioverter-defibrillator placement"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Every other beat is a premature, wide (>120 ms), bizarre QRS complex that is not preceded by a P wave and has a T wave pointing opposite to the QRS, alternating with normally conducted sinus beats with narrow QRS complexes. This is ventricular bigeminy. In a patient with premature ventricular contractions, the first question is whether there is structural heart disease, because that determines prognosis and treatment. Transthoracic echocardiography is the next step; antiarrhythmic drugs, ablation, or a defibrillator are not chosen before the heart's structure and function are known.\n- 원리: <b>Why the beat looks wide and bizarre</b>: A premature ventricular contraction starts in ventricular myocardium outside the His-Purkinje system, so depolarization spreads slowly from cell to cell. The QRS is wide, and because repolarization follows the same abnormal path, the T wave points opposite to the QRS. The sinus node is usually not reset, so a compensatory pause follows. When every second beat is a PVC, the pattern is <b>bigeminy</b>; the pulse can feel irregular or even slow because a premature beat may eject little blood.<br> <b>Why echocardiography comes first</b>: In a structurally normal heart, PVCs are usually benign and are treated only if symptoms are bothersome or if a very high burden (often > 10–15 %) causes PVC-induced cardiomyopathy. In a heart with prior infarction or reduced ejection fraction, PVCs mark risk of sustained ventricular arrhythmia, and management shifts to the underlying disease. Echocardiography separates these two groups; ambulatory monitoring quantifies burden alongside it.<br> <b>Treatment ladder</b>: reassurance and removal of triggers → β-blocker or nondihydropyridine calcium-channel blocker for symptoms → catheter ablation for drug-refractory symptoms or high-burden cardiomyopathy.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Transthoracic echocardiography (answer)</th><th>Catheter ablation (closest distractor)</th></tr></thead><tbody> <tr><td>When it is chosen</td><td><b>First evaluation</b> of any patient with frequent PVCs</td><td>After evaluation, for drug-refractory symptoms or PVC-induced cardiomyopathy</td></tr> <tr><td>Information needed beforehand</td><td>None</td><td>PVC burden, structural assessment, failed medical therapy</td></tr> <tr><td>Risk</td><td>None</td><td>Invasive procedure risks</td></tr> <tr><td>This patient</td><td>Structure and ejection fraction unknown</td><td>Not yet indicated</td></tr> </tbody></table> Whatever the PVC pattern, the order is the same: look for structural disease first, then decide whether the PVCs themselves need treatment.\n- 오답 이유:\n  - (A) Synchronized cardioversion would be used for an unstable sustained tachyarrhythmia, which this hemodynamically stable intermittent ectopy is not.\n  - (C) Catheter ablation would be appropriate if symptoms persisted despite β-blockers or a high PVC burden had already reduced the ejection fraction.\n  - (D) Amiodarone therapy would be considered for recurrent sustained ventricular tachycardia in structural heart disease, not for first-presentation PVCs.\n  - (E) Implantable cardioverter-defibrillator placement would be indicated if echocardiography showed an ejection fraction ≤ 35 % despite therapy or after sustained ventricular tachycardia.\n- 함정: Treating the arrhythmia before assessing the heart — premature ventricular beats are judged by the structure of the heart they come from.\n- 학습목표: Read alternating sinus beats and wide premature beats without preceding P waves as ventricular bigeminy and choose echocardiography to look for structural heart disease before any antiarrhythmic therapy\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Al-Khatib SM, Stevenson WG, Ackerman MJ, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation. 2018;138(13):e272-e391\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12644 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Every other beat is a premature, wide (>120 ms), bizarre QRS complex that is not preceded by a P wave and has a T wave pointing opposite to the QRS, alternating with normally conducted sinus beats with narrow QRS complexes. This is ventricular bigeminy. In a patient with premature ventricular contractions, the first question is whether there is structural heart disease, because that determines prognosis and treatment. Transthoracic echocardiography is the next step; antiarrhythmic drugs, ablation, or a defibrillator are not chosen before the heart's structure and function are known."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the beat looks wide and bizarre</b>: A premature ventricular contraction starts in ventricular myocardium outside the His-Purkinje system, so depolarization spreads slowly from cell to cell. The QRS is wide, and because repolarization follows the same abnormal path, the T wave points opposite to the QRS. The sinus node is usually not reset, so a compensatory pause follows. When every second beat is a PVC, the pattern is <b>bigeminy</b>; the pulse can feel irregular or even slow because a premature beat may eject little blood.<br> <b>Why echocardiography comes first</b>: In a structurally normal heart, PVCs are usually benign and are treated only if symptoms are bothersome or if a very high burden (often > 10–15 %) causes PVC-induced cardiomyopathy. In a heart with prior infarction or reduced ejection fraction, PVCs mark risk of sustained ventricular arrhythmia, and management shifts to the underlying disease. Echocardiography separates these two groups; ambulatory monitoring quantifies burden alongside it.<br> <b>Treatment ladder</b>: reassurance and removal of triggers → β-blocker or nondihydropyridine calcium-channel blocker for symptoms → catheter ablation for drug-refractory symptoms or high-burden cardiomyopathy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Transthoracic echocardiography (answer)</th><th>Catheter ablation (closest distractor)</th></tr></thead><tbody> <tr><td>When it is chosen</td><td><b>First evaluation</b> of any patient with frequent PVCs</td><td>After evaluation, for drug-refractory symptoms or PVC-induced cardiomyopathy</td></tr> <tr><td>Information needed beforehand</td><td>None</td><td>PVC burden, structural assessment, failed medical therapy</td></tr> <tr><td>Risk</td><td>None</td><td>Invasive procedure risks</td></tr> <tr><td>This patient</td><td>Structure and ejection fraction unknown</td><td>Not yet indicated</td></tr> </tbody></table> Whatever the PVC pattern, the order is the same: look for structural disease first, then decide whether the PVCs themselves need treatment."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Synchronized cardioversion would be used for an unstable sustained tachyarrhythmia, which this hemodynamically stable intermittent ectopy is not.\n(C) Catheter ablation would be appropriate if symptoms persisted despite β-blockers or a high PVC burden had already reduced the ejection fraction.\n(D) Amiodarone therapy would be considered for recurrent sustained ventricular tachycardia in structural heart disease, not for first-presentation PVCs.\n(E) Implantable cardioverter-defibrillator placement would be indicated if echocardiography showed an ejection fraction ≤ 35 % despite therapy or after sustained ventricular tachycardia."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the arrhythmia before assessing the heart — premature ventricular beats are judged by the structure of the heart they come from."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read alternating sinus beats and wide premature beats without preceding P waves as ventricular bigeminy and choose echocardiography to look for structural heart disease before any antiarrhythmic therapy"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Al-Khatib SM, Stevenson WG, Ackerman MJ, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation. 2018;138(13):e272-e391 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12644 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Ventricular bigeminy in a stable patient is first evaluated with echocardiography for structural heart disease",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "Structural heart disease and ejection fraction have not yet been assessed, and symptoms are mild",
+   "steps": 2,
+   "chain": [
+    "영상: wide premature QRS without a preceding P wave alternating with sinus beats → ventricular bigeminy",
+    "Frequent PVCs → assess structural heart disease with transthoracic echocardiography before any rhythm-directed therapy"
+   ],
+   "key": [
+    {
+     "item": "영상: every other beat is a wide premature QRS with an opposite T wave and no preceding P wave",
+     "why": "Defines ventricular bigeminy",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum potassium, magnesium, and thyroid-stimulating hormone concentrations are within the reference ranges",
+     "why": "Lowers the likelihood of a reversible metabolic trigger",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no chest pain, shortness of breath, dizziness, or syncope",
+     "why": "Stable and mildly symptomatic — no urgent rhythm therapy",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "there are no murmurs",
+     "why": "Does not exclude cardiomyopathy or prior infarction — imaging is still needed",
+     "also": []
+    },
+    {
+     "item": "2 cups of coffee daily",
+     "why": "Moderate caffeine is not an established cause of PVCs",
+     "also": []
+    }
+   ],
+   "summary": "The ECG shows ventricular bigeminy in a stable man. The next step is echocardiography to look for structural heart disease.",
+   "switch": {
+    "choice": "C",
+    "condition": "If echocardiography showed a reduced ejection fraction with a high PVC burden despite β-blockers, catheter ablation"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0634.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12644",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12644"
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0633",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "병리·기초 — 어린이 정상 피부의 케라틴 면역염색과 유전 피부질환",
+  "type": "병리·기초 — 어린이 정상 피부의 케라틴 면역염색과 유전 피부질환",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-12",
+  "vignette": "4세 여아가 배꼽 탈장 수술을 받으면서 절개 부위의 정상 피부를 조금 절제하였다. 이 피부 조직 절편에 한 세포골격 중간섬유 단백질에 대한 면역조직화학염색을 하였다. 사진은 그림과 같다(갈색 = 양성, 파란색 = 헤마톡실린 대조염색). 진피와 표피 맨 아래 한 줄의 세포는 염색되지 않았다.",
+  "question": "이 단백질을 만드는 유전자의 변이로 생기는 질환으로 가장 적절한 것은?",
+  "options": [
+   "심상성 천포창",
+   "수포성 유사천포창",
+   "표피박리성 어린선",
+   "단순 수포표피박리증",
+   "심상성 어린선"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 갈색 양성은 표피의 가시층·과립층 각질형성세포 세포질 전체에 있고, 진피와 맞닿은 바닥층 한 줄과 진피는 음성이다. 바닥층 위에서만 켜지는 중간섬유는 분화 케라틴 K1·K10 이다(바닥층은 K5·K14). 이 절편의 염색 대상은 K10 이고, K1 또는 K10 유전자의 우성 변이는 바닥층 위 세포의 중간섬유 망을 무너뜨려 출생 때 물집·짓무름, 이후 두꺼운 과각화가 생기는 표피박리성 어린선을 일으킨다.\n- 원리: <b>왜 층마다 다른 케라틴이 켜지는가</b>: 각질형성세포는 바닥층에서 분열하고 위로 올라가며 분화한다. 분열하는 <b>바닥층 세포는 K5·K14</b> 쌍을, 바닥층을 떠나 가시층에 들어선 세포는 <b>K1·K10</b> 쌍으로 바꿔 만든다. 케라틴은 산성(제1형, K10·K14)과 염기성(제2형, K1·K5) 하나씩이 짝을 지어야 중간섬유가 된다.<br> <b>왜 변이 위치가 물집 높이를 정하는가</b>: 변이 케라틴은 정상 짝까지 망가뜨리는 우성 음성 방식으로 작용해, 그 케라틴을 쓰는 층의 세포를 기계적 힘에 약하게 만든다. K5·K14 변이는 바닥층 세포가 터져 물집이 바닥층에서 생기고(단순 수포표피박리증), K1·K10 변이는 바닥층 위 세포가 망가져 가시층에서 세포 용해(표피박리성 과각화)가 보이고 과각화로 이어진다(표피박리성 어린선).<br> <b>임상 연결</b>: 같은 「물집 + 유전」이라도 염색되는 층을 보면 어느 케라틴 쌍의 질환인지 알 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">표피박리성 어린선(정답 — K1/K10)</th><th>단순 수포표피박리증(가장 가까운 오답 — K5/K14)</th></tr></thead><tbody> <tr><td>케라틴이 있는 층</td><td><b>바닥층 위</b>(가시층·과립층)</td><td>바닥층</td></tr> <tr><td>조직 소견</td><td>가시층 이상의 세포 용해·과립층 거친 과립</td><td>바닥층 세포 안에서 갈라지는 물집</td></tr> <tr><td>임상 경과</td><td>신생아 물집·짓무름 → 두꺼운 과각화(어린선)</td><td>마찰 부위 물집, 흉터 없이 낫는다</td></tr> <tr><td>이 절편의 염색 양상</td><td>바닥층 음성 · 위층 양성 — 일치</td><td>바닥층 양성이어야 한다 — 불일치</td></tr> </tbody></table> 바닥층이 비어 있고 위층이 채워져 있으면 분화 케라틴, 바닥층 한 줄만 채워져 있으면 바닥 케라틴이다.\n- 오답 이유:\n  - ① 심상성 천포창은 표피세포 사이 데스모글레인 3 에 대한 자가항체를 물었다면 정답이 되며, 유전자 변이 질환이 아니다.\n  - ② 수포성 유사천포창은 반데스모솜의 BP180·BP230 에 대한 자가항체를 물었다면 정답이 되며, 고령의 후천 질환이다.\n  - ④ 단순 수포표피박리증은 염색이 바닥층 한 줄에만 있는 K5·K14 를 물었다면 정답이 되며, 이 절편처럼 바닥층이 음성이면 맞지 않는다.\n  - ⑤ 심상성 어린선은 과립층의 필라그린 단백질을 염색했을 때 그 결손 질환으로 정답이 되며, 중간섬유 단백질의 변이가 아니다.\n- 함정: 물집이 생기는 유전 케라틴 질환을 모두 수포표피박리증으로 묶는 것 — 염색이 바닥층 위에만 있으면 K1/K10, 표피박리성 어린선이다.\n- 학습목표: 피부 면역조직화학 절편에서 바닥층은 음성이고 바닥층 위 각질형성세포만 양성인 양상을 분화 케라틴(K1/K10) 발현으로 읽고, 그 유전자 변이 질환을 바닥층 케라틴(K5/K14) 질환과 가른다\n- 근거·출처: Human Protein Atlas. KRT10 (ENSG00000186395) tissue expression — skin. https://www.proteinatlas.org (CC BY 4.0) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 59: Approach to the Patient with a Skin Disorder · Bolognia JL, Schaffer JV, Cerroni L, eds. Dermatology, 5th ed. Elsevier; 2024. Chapter 57: Ichthyoses, Erythrokeratodermas, and Related Disorders\n\n## 출처\n- Human Protein Atlas, KRT10 / Skin 1 (CC BY 4.0), https://images.proteinatlas.org/132/2531_B_7_1.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "갈색 양성은 표피의 가시층·과립층 각질형성세포 세포질 전체에 있고, 진피와 맞닿은 바닥층 한 줄과 진피는 음성이다. 바닥층 위에서만 켜지는 중간섬유는 분화 케라틴 K1·K10 이다(바닥층은 K5·K14). 이 절편의 염색 대상은 K10 이고, K1 또는 K10 유전자의 우성 변이는 바닥층 위 세포의 중간섬유 망을 무너뜨려 출생 때 물집·짓무름, 이후 두꺼운 과각화가 생기는 표피박리성 어린선을 일으킨다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 층마다 다른 케라틴이 켜지는가</b>: 각질형성세포는 바닥층에서 분열하고 위로 올라가며 분화한다. 분열하는 <b>바닥층 세포는 K5·K14</b> 쌍을, 바닥층을 떠나 가시층에 들어선 세포는 <b>K1·K10</b> 쌍으로 바꿔 만든다. 케라틴은 산성(제1형, K10·K14)과 염기성(제2형, K1·K5) 하나씩이 짝을 지어야 중간섬유가 된다.<br> <b>왜 변이 위치가 물집 높이를 정하는가</b>: 변이 케라틴은 정상 짝까지 망가뜨리는 우성 음성 방식으로 작용해, 그 케라틴을 쓰는 층의 세포를 기계적 힘에 약하게 만든다. K5·K14 변이는 바닥층 세포가 터져 물집이 바닥층에서 생기고(단순 수포표피박리증), K1·K10 변이는 바닥층 위 세포가 망가져 가시층에서 세포 용해(표피박리성 과각화)가 보이고 과각화로 이어진다(표피박리성 어린선).<br> <b>임상 연결</b>: 같은 「물집 + 유전」이라도 염색되는 층을 보면 어느 케라틴 쌍의 질환인지 알 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">표피박리성 어린선(정답 — K1/K10)</th><th>단순 수포표피박리증(가장 가까운 오답 — K5/K14)</th></tr></thead><tbody> <tr><td>케라틴이 있는 층</td><td><b>바닥층 위</b>(가시층·과립층)</td><td>바닥층</td></tr> <tr><td>조직 소견</td><td>가시층 이상의 세포 용해·과립층 거친 과립</td><td>바닥층 세포 안에서 갈라지는 물집</td></tr> <tr><td>임상 경과</td><td>신생아 물집·짓무름 → 두꺼운 과각화(어린선)</td><td>마찰 부위 물집, 흉터 없이 낫는다</td></tr> <tr><td>이 절편의 염색 양상</td><td>바닥층 음성 · 위층 양성 — 일치</td><td>바닥층 양성이어야 한다 — 불일치</td></tr> </tbody></table> 바닥층이 비어 있고 위층이 채워져 있으면 분화 케라틴, 바닥층 한 줄만 채워져 있으면 바닥 케라틴이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심상성 천포창은 표피세포 사이 데스모글레인 3 에 대한 자가항체를 물었다면 정답이 되며, 유전자 변이 질환이 아니다.\n② 수포성 유사천포창은 반데스모솜의 BP180·BP230 에 대한 자가항체를 물었다면 정답이 되며, 고령의 후천 질환이다.\n④ 단순 수포표피박리증은 염색이 바닥층 한 줄에만 있는 K5·K14 를 물었다면 정답이 되며, 이 절편처럼 바닥층이 음성이면 맞지 않는다.\n⑤ 심상성 어린선은 과립층의 필라그린 단백질을 염색했을 때 그 결손 질환으로 정답이 되며, 중간섬유 단백질의 변이가 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "물집이 생기는 유전 케라틴 질환을 모두 수포표피박리증으로 묶는 것 — 염색이 바닥층 위에만 있으면 K1/K10, 표피박리성 어린선이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "피부 면역조직화학 절편에서 바닥층은 음성이고 바닥층 위 각질형성세포만 양성인 양상을 분화 케라틴(K1/K10) 발현으로 읽고, 그 유전자 변이 질환을 바닥층 케라틴(K5/K14) 질환과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas. KRT10 (ENSG00000186395) tissue expression — skin. https://www.proteinatlas.org (CC BY 4.0) · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 59: Approach to the Patient with a Skin Disorder · Bolognia JL, Schaffer JV, Cerroni L, eds. Dermatology, 5th ed. Elsevier; 2024. Chapter 57: Ichthyoses, Erythrokeratodermas, and Related Disorders ## 출처 Human Protein Atlas, KRT10 / Skin 1 (CC BY 4.0), https://images.proteinatlas.org/132/2531_B_7_1.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "바닥층이 음성이고 바닥층 위 각질형성세포만 양성인 중간섬유는 K1/K10 이고 그 변이 질환은 표피박리성 어린선이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "염색이 바닥층이 아니라 바닥층 위 가시층·과립층에 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 바닥층 위 가시층·과립층 각질형성세포만 갈색 양성, 바닥층 한 줄과 진피 음성 → 분화 케라틴 K1/K10",
+    "K1/K10 유전자의 우성 변이 → 바닥층 위 세포가 약해져 물집과 과각화 → 표피박리성 어린선"
+   ],
+   "key": [
+    {
+     "item": "영상: 가시층·과립층 각질형성세포 세포질의 강한 갈색 양성",
+     "why": "바닥층 위에서 켜지는 분화 케라틴의 양상",
+     "also": []
+    },
+    {
+     "item": "진피와 표피 맨 아래 한 줄의 세포는 염색되지 않았다",
+     "why": "바닥층 케라틴(K5/K14)이 아니라는 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "세포골격 중간섬유 단백질",
+     "why": "필라그린·데스모글레인·반데스모솜 단백질 질환의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "배꼽 탈장 수술",
+     "why": "정상 피부를 얻은 경로일 뿐 판단에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "염색이 바닥층 위에만 있어 분화 케라틴 K1/K10 이다. 이 유전자의 변이는 표피박리성 어린선을 일으킨다.",
+   "switch": {
+    "choice": "D",
+    "condition": "염색이 바닥층 한 줄에만 있는 K14 염색이었다면 그 변이 질환은 단순 수포표피박리증"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0633.jpg",
+   "caption": "면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색) 조직 마이크로어레이 코어, 원본 배율 그대로 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000186395-KRT10/tissue/Skin",
+   "asset_id": "HPA-KRT10_2531_B_7_1",
+   "text": "Human Protein Atlas, KRT10 / Skin 1 (CC BY 4.0), https://images.proteinatlas.org/132/2531_B_7_1.jpg"
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0641",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "내분비·대사 — 검진에서 발견된 무증상 고칼슘혈증의 수술 적응증",
+  "type": "내분비·대사 — 검진에서 발견된 무증상 고칼슘혈증의 수술 적응증",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-12",
+  "vignette": "45세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 콩팥돌이나 골절은 없었다. 약은 먹지 않고 가족 중 고칼슘혈증이 있는 사람은 없다. 혈압 122/78 mmHg 이다. 혈액검사에서 칼슘 11.1 mg/dL(참고치 8.6~10.4), 인 2.4 mg/dL, 부갑상샘호르몬 98 pg/mL(참고치 15~65), 25-하이드록시비타민 D 34 ng/mL, 크레아티닌 0.7 mg/dL(추정 사구체여과율 104 mL/min/1.73 m²)이다. 24시간 소변 칼슘은 260 mg 이고 칼슘/크레아티닌 청소율 비는 0.024 이다. 이중에너지 X선 흡수계측에서 요추 T-점수 −1.6, 대퇴골 경부 −1.4, 원위 요골 −1.7 이고, 콩팥 초음파에서 돌은 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "칼슘 섭취 제한과 수분 섭취 증가",
+   "부갑상샘 절제술",
+   "1년마다 혈청 칼슘과 골밀도 추적 관찰",
+   "시나칼셋 투여",
+   "알렌드로네이트 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 칼슘이 높은데 부갑상샘호르몬이 억제되지 않고 오히려 높아 원발성 부갑상샘기능항진증이다. 칼슘/크레아티닌 청소율 비가 0.024 로 0.01 보다 커서 가족성 저칼슘뇨 고칼슘혈증의 가능성은 낮다. 무증상이라도 수술 적응증 하나만 있으면 부갑상샘 절제술을 권한다. 이 환자는 칼슘 상승폭 0.7 mg/dL(< 1), T-점수 > −2.5, 사구체여과율 ≥ 60, 소변 칼슘 < 400 mg, 콩팥돌 없음으로 다른 기준은 모두 해당하지 않지만, 나이가 50세 미만이어서 적응증이 된다.\n- 원리: <b>왜 무증상인데 수술하는가</b>: 원발성 부갑상샘기능항진증은 부갑상샘 선종(약 85 %)이 칼슘에 대한 되먹임 없이 부갑상샘호르몬을 만드는 병이다. 무증상이어도 수십 년에 걸쳐 피질골 소실, 콩팥돌·신석회증, 신기능 저하가 진행한다. 수술은 유일한 완치 치료이고 성공률이 95 % 이상이다.<br> <b>무증상 환자의 수술 적응증(제5차 국제 워크숍, 2022)</b>: 하나만 있어도 수술 — ① 혈청 칼슘이 참고치 상한보다 1 mg/dL 넘게 높음 ② 골밀도 T-점수 ≤ −2.5(요추·고관절·원위 요골 어디든) 또는 척추 골절 ③ 사구체여과율 < 60 ④ 콩팥돌·신석회증 또는 24시간 소변 칼슘 > 400 mg ⑤ <b>나이 < 50세</b>. 젊은 환자는 남은 일생 동안 합병증이 쌓일 시간이 길고 추적 관찰을 오래 지키기 어렵기 때문이다.<br> <b>먼저 배제할 것</b>: 가족성 저칼슘뇨 고칼슘혈증(CASR 변이)은 칼슘·부갑상샘호르몬이 비슷하게 보이지만 칼슘/크레아티닌 청소율 비가 < 0.01 이고 수술해도 낫지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">기준</th><th style=\"width:38%\">이 환자</th><th>수술 적응 기준</th></tr></thead><tbody> <tr><td>칼슘 상승폭</td><td>11.1 − 10.4 = 0.7</td><td>> 1 mg/dL — 해당 없음</td></tr> <tr><td>골밀도</td><td>최저 T-점수 −1.7</td><td>≤ −2.5 — 해당 없음</td></tr> <tr><td>신장</td><td>사구체여과율 104, 소변 칼슘 260 mg, 돌 없음</td><td>< 60 / > 400 mg / 돌 — 해당 없음</td></tr> <tr><td><b>나이</b></td><td><b>45세</b></td><td><b>< 50세 — 해당</b></td></tr> </tbody></table> 네 기준이 모두 「아니요」여도 나이 하나가 「예」이면 수술이다. 같은 검사값의 60세 환자라면 추적 관찰이 정답이 된다.\n- 오답 이유:\n  - ① 칼슘 섭취 제한은 오히려 부갑상샘호르몬 분비를 더 자극하므로 권하지 않으며, 수분 섭취 증가는 보조 조치로만 정답이 될 수 있다.\n  - ③ 1년마다 혈청 칼슘과 골밀도 추적 관찰은 같은 검사값이라도 나이가 50세 이상이어서 수술 적응증이 하나도 없을 때 정답이 된다.\n  - ④ 시나칼셋 투여는 수술 적응증이 있지만 수술을 할 수 없거나 거부하는 환자에서 칼슘을 낮추는 목적으로 정답이 된다.\n  - ⑤ 알렌드로네이트 투여는 수술을 할 수 없는 환자에서 T-점수 ≤ −2.5 의 골다공증이 있을 때 골밀도 보호 목적으로 정답이 된다.\n- 함정: 검사 기준만 하나씩 대조하고 나이를 빠뜨리는 것 — 50세 미만은 그 자체로 수술 적응증이다.\n- 학습목표: 무증상 원발성 부갑상샘기능항진증에서 수술 적응증(나이 < 50세 등)을 하나씩 확인하고 가족성 저칼슘뇨 고칼슘혈증을 소변 칼슘으로 배제한 뒤 부갑상샘 절제술을 경과 관찰과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 422: Disorders of the Parathyroid Gland and Calcium Homeostasis · Bilezikian JP, Khan AA, Silverberg SJ, et al. Evaluation and Management of Primary Hyperparathyroidism: Summary Statement and Guidelines from the Fifth International Workshop. J Bone Miner Res. 2022;37(11):2293-2314",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "칼슘이 높은데 부갑상샘호르몬이 억제되지 않고 오히려 높아 원발성 부갑상샘기능항진증이다. 칼슘/크레아티닌 청소율 비가 0.024 로 0.01 보다 커서 가족성 저칼슘뇨 고칼슘혈증의 가능성은 낮다. 무증상이라도 수술 적응증 하나만 있으면 부갑상샘 절제술을 권한다. 이 환자는 칼슘 상승폭 0.7 mg/dL(< 1), T-점수 > −2.5, 사구체여과율 ≥ 60, 소변 칼슘 < 400 mg, 콩팥돌 없음으로 다른 기준은 모두 해당하지 않지만, 나이가 50세 미만이어서 적응증이 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 무증상인데 수술하는가</b>: 원발성 부갑상샘기능항진증은 부갑상샘 선종(약 85 %)이 칼슘에 대한 되먹임 없이 부갑상샘호르몬을 만드는 병이다. 무증상이어도 수십 년에 걸쳐 피질골 소실, 콩팥돌·신석회증, 신기능 저하가 진행한다. 수술은 유일한 완치 치료이고 성공률이 95 % 이상이다.<br> <b>무증상 환자의 수술 적응증(제5차 국제 워크숍, 2022)</b>: 하나만 있어도 수술 — ① 혈청 칼슘이 참고치 상한보다 1 mg/dL 넘게 높음 ② 골밀도 T-점수 ≤ −2.5(요추·고관절·원위 요골 어디든) 또는 척추 골절 ③ 사구체여과율 < 60 ④ 콩팥돌·신석회증 또는 24시간 소변 칼슘 > 400 mg ⑤ <b>나이 < 50세</b>. 젊은 환자는 남은 일생 동안 합병증이 쌓일 시간이 길고 추적 관찰을 오래 지키기 어렵기 때문이다.<br> <b>먼저 배제할 것</b>: 가족성 저칼슘뇨 고칼슘혈증(CASR 변이)은 칼슘·부갑상샘호르몬이 비슷하게 보이지만 칼슘/크레아티닌 청소율 비가 < 0.01 이고 수술해도 낫지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">기준</th><th style=\"width:38%\">이 환자</th><th>수술 적응 기준</th></tr></thead><tbody> <tr><td>칼슘 상승폭</td><td>11.1 − 10.4 = 0.7</td><td>> 1 mg/dL — 해당 없음</td></tr> <tr><td>골밀도</td><td>최저 T-점수 −1.7</td><td>≤ −2.5 — 해당 없음</td></tr> <tr><td>신장</td><td>사구체여과율 104, 소변 칼슘 260 mg, 돌 없음</td><td>< 60 / > 400 mg / 돌 — 해당 없음</td></tr> <tr><td><b>나이</b></td><td><b>45세</b></td><td><b>< 50세 — 해당</b></td></tr> </tbody></table> 네 기준이 모두 「아니요」여도 나이 하나가 「예」이면 수술이다. 같은 검사값의 60세 환자라면 추적 관찰이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 칼슘 섭취 제한은 오히려 부갑상샘호르몬 분비를 더 자극하므로 권하지 않으며, 수분 섭취 증가는 보조 조치로만 정답이 될 수 있다.\n③ 1년마다 혈청 칼슘과 골밀도 추적 관찰은 같은 검사값이라도 나이가 50세 이상이어서 수술 적응증이 하나도 없을 때 정답이 된다.\n④ 시나칼셋 투여는 수술 적응증이 있지만 수술을 할 수 없거나 거부하는 환자에서 칼슘을 낮추는 목적으로 정답이 된다.\n⑤ 알렌드로네이트 투여는 수술을 할 수 없는 환자에서 T-점수 ≤ −2.5 의 골다공증이 있을 때 골밀도 보호 목적으로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "검사 기준만 하나씩 대조하고 나이를 빠뜨리는 것 — 50세 미만은 그 자체로 수술 적응증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무증상 원발성 부갑상샘기능항진증에서 수술 적응증(나이 < 50세 등)을 하나씩 확인하고 가족성 저칼슘뇨 고칼슘혈증을 소변 칼슘으로 배제한 뒤 부갑상샘 절제술을 경과 관찰과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 422: Disorders of the Parathyroid Gland and Calcium Homeostasis · Bilezikian JP, Khan AA, Silverberg SJ, et al. Evaluation and Management of Primary Hyperparathyroidism: Summary Statement and Guidelines from the Fifth International Workshop. J Bone Miner Res. 2022;37(11):2293-2314"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "무증상 원발성 부갑상샘기능항진증에서 나이가 50세 미만이면 다른 기준이 없어도 부갑상샘 절제술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "칼슘·골밀도·신장 기준은 모두 해당하지 않지만 나이가 45세다",
+   "steps": 3,
+   "chain": [
+    "고칼슘혈증 + 억제되지 않은 부갑상샘호르몬 → 원발성 부갑상샘기능항진증",
+    "칼슘/크레아티닌 청소율 비 0.024(> 0.01) → 가족성 저칼슘뇨 고칼슘혈증 배제",
+    "칼슘·골밀도·신장 기준은 해당 없지만 나이 < 50세 → 부갑상샘 절제술"
+   ],
+   "key": [
+    {
+     "item": "부갑상샘호르몬 98 pg/mL",
+     "why": "고칼슘혈증에서 억제되지 않은 부갑상샘호르몬",
+     "also": []
+    },
+    {
+     "item": "45세 여자",
+     "why": "나이 < 50세 — 수술 적응증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼슘/크레아티닌 청소율 비는 0.024",
+     "why": "가족성 저칼슘뇨 고칼슘혈증의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "칼슘 11.1 mg/dL",
+     "why": "상한보다 1 mg/dL 미만 상승 — 칼슘 기준은 해당 없음",
+     "also": []
+    },
+    {
+     "item": "원위 요골 −1.7",
+     "why": "T-점수 기준(≤ −2.5)은 해당 없음",
+     "also": []
+    },
+    {
+     "item": "24시간 소변 칼슘은 260 mg",
+     "why": "소변 칼슘 기준(> 400 mg)은 해당 없음",
+     "also": []
+    },
+    {
+     "item": "25-하이드록시비타민 D 34 ng/mL",
+     "why": "비타민 D 결핍에 의한 이차성 상승 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "원발성 부갑상샘기능항진증이고 가족성 저칼슘뇨 고칼슘혈증은 배제된다. 다른 기준은 없지만 50세 미만이어서 부갑상샘 절제술을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 검사값에 나이가 62세라면 수술 적응증이 없어 추적 관찰"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0640",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "부인과 — 폐경 뒤 질출혈과 두꺼운 자궁내막",
+  "type": "부인과 — 폐경 뒤 질출혈과 두꺼운 자궁내막",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-12",
+  "vignette": "A 58-year-old woman comes to the physician because of 3 episodes of vaginal spotting during the past month. Her last menstrual period was 7 years ago, and she has not taken hormone therapy. She has type 2 diabetes mellitus and hypertension. Her body mass index is 34 kg/m². Her blood pressure is 136/84 mm Hg. Pelvic examination shows a normal-appearing cervix and a small amount of blood in the vaginal vault; the uterus is normal in size, and there are no adnexal masses. A cervical cytology test 1 year ago was negative for intraepithelial lesion and malignancy, with negative human papillomavirus testing. Transvaginal ultrasonography shows a homogeneous endometrial stripe of 9 mm and normal ovaries.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Endometrial biopsy",
+   "Repeat transvaginal ultrasonography in 3 months",
+   "Total hysterectomy with bilateral salpingo-oophorectomy",
+   "Cyclic progestin therapy",
+   "Repeat cervical cytology"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Any bleeding after menopause must be evaluated for endometrial carcinoma. On transvaginal ultrasonography, an endometrial thickness of 4 mm or less has a very high negative predictive value, but her stripe is 9 mm, and she has risk factors for unopposed estrogen (obesity, diabetes). Tissue sampling is therefore required, and office endometrial biopsy is the next step; hysteroscopy with dilation and curettage follows if the biopsy is nondiagnostic or bleeding persists.\n- 원리: <b>Why the 4-mm threshold</b>: After menopause, the endometrium is no longer stimulated by cyclic estrogen and becomes thin and atrophic. In women with postmenopausal bleeding, an endometrial thickness ≤ 4 mm on transvaginal ultrasonography makes carcinoma very unlikely (negative predictive value > 99 %), so atrophy is the presumed cause. A thicker stripe means hyperplasia, polyp, or carcinoma cannot be excluded and tissue is needed.<br> <b>Why this patient is at risk</b>: Adipose tissue converts androstenedione to estrone by aromatase, producing estrogen unopposed by progesterone. Obesity, diabetes, nulliparity, late menopause, and tamoxifen raise the risk of endometrial hyperplasia and type I (endometrioid) carcinoma.<br> <b>Sampling sequence</b>: office endometrial biopsy (pipelle) first; if nondiagnostic, insufficient, or bleeding recurs despite a benign result, hysteroscopy with directed biopsy or dilation and curettage. Surgery is planned only after a tissue diagnosis.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endometrial biopsy (answer)</th><th>Repeat ultrasonography in 3 months (closest distractor)</th></tr></thead><tbody> <tr><td>Endometrial thickness</td><td><b>> 4 mm</b></td><td>≤ 4 mm</td></tr> <tr><td>Bleeding</td><td>Present, any amount</td><td>Single episode that has stopped</td></tr> <tr><td>Presumed cause</td><td>Hyperplasia, polyp, or carcinoma possible</td><td>Endometrial atrophy</td></tr> <tr><td>This patient</td><td>9 mm, recurrent spotting, obesity and diabetes</td><td>Does not apply</td></tr> </tbody></table> A thin stripe with one episode can be watched; a thick stripe or persistent bleeding requires tissue.\n- 오답 이유:\n  - (B) Repeat transvaginal ultrasonography in 3 months would be reasonable only if the endometrial stripe were 4 mm or less and bleeding did not recur.\n  - (C) Total hysterectomy with bilateral salpingo-oophorectomy would be appropriate after biopsy confirmed endometrial carcinoma or atypical hyperplasia.\n  - (D) Cyclic progestin therapy would be used for anovulatory bleeding in a premenopausal woman or for hyperplasia without atypia after tissue diagnosis.\n  - (E) Repeat cervical cytology would be indicated if the cervix appeared abnormal or cervical screening were overdue, which is not the case here.\n- 함정: Attributing postmenopausal bleeding to atrophy without measuring the endometrium — a stripe over 4 mm requires tissue sampling.\n- 학습목표: Evaluate postmenopausal bleeding with an endometrial thickness above 4 mm by endometrial sampling, and separate it from expectant management appropriate for a thin endometrium\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 94: Gynecologic Malignancies · American College of Obstetricians and Gynecologists. ACOG Committee Opinion No. 734: The Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Women With Postmenopausal Bleeding. Obstet Gynecol. 2018;131(5):e124-e129",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Any bleeding after menopause must be evaluated for endometrial carcinoma. On transvaginal ultrasonography, an endometrial thickness of 4 mm or less has a very high negative predictive value, but her stripe is 9 mm, and she has risk factors for unopposed estrogen (obesity, diabetes). Tissue sampling is therefore required, and office endometrial biopsy is the next step; hysteroscopy with dilation and curettage follows if the biopsy is nondiagnostic or bleeding persists."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the 4-mm threshold</b>: After menopause, the endometrium is no longer stimulated by cyclic estrogen and becomes thin and atrophic. In women with postmenopausal bleeding, an endometrial thickness ≤ 4 mm on transvaginal ultrasonography makes carcinoma very unlikely (negative predictive value > 99 %), so atrophy is the presumed cause. A thicker stripe means hyperplasia, polyp, or carcinoma cannot be excluded and tissue is needed.<br> <b>Why this patient is at risk</b>: Adipose tissue converts androstenedione to estrone by aromatase, producing estrogen unopposed by progesterone. Obesity, diabetes, nulliparity, late menopause, and tamoxifen raise the risk of endometrial hyperplasia and type I (endometrioid) carcinoma.<br> <b>Sampling sequence</b>: office endometrial biopsy (pipelle) first; if nondiagnostic, insufficient, or bleeding recurs despite a benign result, hysteroscopy with directed biopsy or dilation and curettage. Surgery is planned only after a tissue diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endometrial biopsy (answer)</th><th>Repeat ultrasonography in 3 months (closest distractor)</th></tr></thead><tbody> <tr><td>Endometrial thickness</td><td><b>> 4 mm</b></td><td>≤ 4 mm</td></tr> <tr><td>Bleeding</td><td>Present, any amount</td><td>Single episode that has stopped</td></tr> <tr><td>Presumed cause</td><td>Hyperplasia, polyp, or carcinoma possible</td><td>Endometrial atrophy</td></tr> <tr><td>This patient</td><td>9 mm, recurrent spotting, obesity and diabetes</td><td>Does not apply</td></tr> </tbody></table> A thin stripe with one episode can be watched; a thick stripe or persistent bleeding requires tissue."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Repeat transvaginal ultrasonography in 3 months would be reasonable only if the endometrial stripe were 4 mm or less and bleeding did not recur.\n(C) Total hysterectomy with bilateral salpingo-oophorectomy would be appropriate after biopsy confirmed endometrial carcinoma or atypical hyperplasia.\n(D) Cyclic progestin therapy would be used for anovulatory bleeding in a premenopausal woman or for hyperplasia without atypia after tissue diagnosis.\n(E) Repeat cervical cytology would be indicated if the cervix appeared abnormal or cervical screening were overdue, which is not the case here."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing postmenopausal bleeding to atrophy without measuring the endometrium — a stripe over 4 mm requires tissue sampling."
+   },
+   {
+    "k": "학습목표",
+    "v": "Evaluate postmenopausal bleeding with an endometrial thickness above 4 mm by endometrial sampling, and separate it from expectant management appropriate for a thin endometrium"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 94: Gynecologic Malignancies · American College of Obstetricians and Gynecologists. ACOG Committee Opinion No. 734: The Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Women With Postmenopausal Bleeding. Obstet Gynecol. 2018;131(5):e124-e129"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "Postmenopausal bleeding with an endometrial stripe above 4 mm requires endometrial biopsy",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The endometrial stripe is 9 mm, not 4 mm or less, and bleeding has recurred",
+   "steps": 2,
+   "chain": [
+    "Postmenopausal bleeding + endometrial stripe 9 mm (> 4 mm) → carcinoma or hyperplasia not excluded",
+    "Tissue diagnosis is required → office endometrial biopsy"
+   ],
+   "key": [
+    {
+     "item": "3 episodes of vaginal spotting during the past month",
+     "why": "Recurrent postmenopausal bleeding",
+     "also": []
+    },
+    {
+     "item": "homogeneous endometrial stripe of 9 mm",
+     "why": "Above the 4-mm threshold — sampling needed",
+     "also": []
+    },
+    {
+     "item": "Her body mass index is 34 kg/m²",
+     "why": "Unopposed estrogen raises cancer risk",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "normal-appearing cervix",
+     "why": "Lowers the likelihood of a cervical source of bleeding",
+     "also": []
+    },
+    {
+     "item": "negative human papillomavirus testing",
+     "why": "Cervical screening is up to date",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "she has not taken hormone therapy",
+     "why": "Excludes hormone-induced withdrawal bleeding as an explanation",
+     "also": []
+    }
+   ],
+   "summary": "Recurrent postmenopausal spotting with a 9-mm endometrial stripe requires tissue sampling. Endometrial biopsy is the next step.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the endometrial stripe were 3 mm after a single episode of bleeding, expectant management with repeat ultrasonography"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0639",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "신장·비뇨 — 고칼륨혈증과 심전도 변화가 있는 만성 신장병 환자",
+  "type": "신장·비뇨 — 고칼륨혈증과 심전도 변화가 있는 만성 신장병 환자",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-12",
+  "vignette": "72세 남자가 하루 전부터 다리에 힘이 빠져 응급실에 왔다. 만성 신장병(평소 크레아티닌 2.1 mg/dL)과 심부전으로 리시노프릴과 스피로놀락톤을 먹고 있고, 1주 전 무릎 통증으로 이부프로펜을 먹기 시작하였다. 혈압 118/70 mmHg, 맥박 52회/분이다. 소변은 하루 800 mL 정도 나온다. 혈액검사에서 칼륨 7.4 mEq/L(용혈 없음), 나트륨 134 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.0 mg/dL, 혈당 112 mg/dL 이다. 심전도에서 끝이 뾰족하고 높은 T파, P파 평탄화와 QRS 폭 넓어짐(140 ms)이 보인다.",
+  "question": "가장 먼저 할 처치는?",
+  "options": [
+   "살부타몰 분무 흡입",
+   "소듐 지르코늄 사이클로실리케이트 경구 투여",
+   "응급 혈액투석",
+   "10 % 칼슘 글루코네이트 정맥 주사",
+   "속효성 인슐린과 포도당 정맥 주사"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 칼륨 7.4 mEq/L 이고 용혈이 없어 진짜 고칼륨혈증이며, 심전도에 뾰족한 T파·P파 평탄화·넓은 QRS 가 있어 심정지 직전 단계다. 이때 가장 먼저 하는 것은 혈중 칼륨을 낮추는 것이 아니라 심근 세포막을 안정시키는 칼슘 정맥 주사다. 칼슘은 1~3분 안에 작용하고 30~60분 지속되며, 그동안 인슐린·포도당으로 칼륨을 세포 안으로 옮기고, 원인 약(ACE 억제제·스피로놀락톤·이부프로펜)을 끊고 몸 밖으로 칼륨을 뺀다.\n- 원리: <b>왜 칼슘이 먼저인가</b>: 세포 밖 칼륨이 오르면 안정막 전위가 덜 음성으로 올라가 나트륨 통로가 일부 불활성화되고, 전도가 느려져(넓은 QRS) 결국 심실세동이나 무수축으로 간다. 칼슘은 칼륨 농도는 그대로 두고 <b>역치 전위를 높여</b> 안정막 전위와 역치 사이 간격을 되돌린다. 그래서 칼륨 수치를 바꾸지 않으면서 가장 빨리(분 단위) 부정맥 위험을 줄인다.<br> <b>처치의 세 단계</b>: ① 막 안정화(칼슘, 분 단위, 일시적) → ② 세포 안 이동(인슐린 10 단위 + 포도당, 살부타몰; 15~30분 작용, 칼륨 0.5~1.2 mEq/L 감소, 몇 시간 지속) → ③ 몸 밖 제거(칼륨 결합제·루프이뇨제·투석). 앞 단계는 시간을 벌 뿐이므로 뒤 단계를 반드시 이어 간다.<br> <b>이 환자의 원인</b>: 만성 신장병 + ACE 억제제 + 알도스테론 길항제 + NSAID 는 알도스테론 작용과 신혈류를 동시에 줄여 칼륨 배설을 막는 대표적 조합이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">칼슘 글루코네이트(정답)</th><th>인슐린·포도당(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기전</td><td><b>심근 막 안정화</b> — 칼륨 수치 불변</td><td>Na⁺/K⁺-ATPase 활성 → 칼륨 세포 안 이동</td></tr> <tr><td>작용 시작</td><td>1~3분</td><td>15~30분</td></tr> <tr><td>지속</td><td>30~60분(반복 가능)</td><td>4~6시간</td></tr> <tr><td>언제 첫 번째인가</td><td>심전도 변화가 있을 때</td><td>심전도 변화가 없을 때 첫 약물</td></tr> </tbody></table> 심전도가 변했으면 먼저 칼슘, 그다음 곧바로 인슐린·포도당이다. 칼슘만 주고 멈추면 30~60분 뒤 위험이 돌아온다.\n- 오답 이유:\n  - ① 살부타몰 분무 흡입은 인슐린과 함께 칼륨을 세포 안으로 옮기는 보조 처치로, 칼슘 투여 뒤 추가로는 정답이 될 수 있다.\n  - ② 소듐 지르코늄 사이클로실리케이트 경구 투여는 응급 처치 뒤 칼륨을 몸 밖으로 빼거나 만성 고칼륨혈증을 조절할 때 정답이 된다.\n  - ③ 응급 혈액투석은 약물 처치에도 칼륨이 내려가지 않거나 소변이 없는 말기 신부전에서 정답이 되며, 준비에 시간이 걸려 첫 처치가 아니다.\n  - ⑤ 속효성 인슐린과 포도당 정맥 주사는 심전도 변화가 없는 고칼륨혈증의 첫 약물이거나, 칼슘을 준 직후 바로 이어서 할 처치로 정답이 된다.\n- 함정: 칼륨 수치를 낮추는 약을 먼저 고르는 것 — 심전도가 변했으면 수치보다 심장을 먼저 지킨다.\n- 학습목표: 심전도 변화가 있는 고칼륨혈증에서 첫 처치가 칼슘 정맥 주사의 심근 막 안정화임을 판단하고, 칼륨을 세포 안으로 옮기는 인슐린·포도당과 순서를 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Palmer BF, Clegg DJ. Diagnosis and treatment of hyperkalemia. Cleve Clin J Med. 2017;84(12):934-942",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "칼륨 7.4 mEq/L 이고 용혈이 없어 진짜 고칼륨혈증이며, 심전도에 뾰족한 T파·P파 평탄화·넓은 QRS 가 있어 심정지 직전 단계다. 이때 가장 먼저 하는 것은 혈중 칼륨을 낮추는 것이 아니라 심근 세포막을 안정시키는 칼슘 정맥 주사다. 칼슘은 1~3분 안에 작용하고 30~60분 지속되며, 그동안 인슐린·포도당으로 칼륨을 세포 안으로 옮기고, 원인 약(ACE 억제제·스피로놀락톤·이부프로펜)을 끊고 몸 밖으로 칼륨을 뺀다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 칼슘이 먼저인가</b>: 세포 밖 칼륨이 오르면 안정막 전위가 덜 음성으로 올라가 나트륨 통로가 일부 불활성화되고, 전도가 느려져(넓은 QRS) 결국 심실세동이나 무수축으로 간다. 칼슘은 칼륨 농도는 그대로 두고 <b>역치 전위를 높여</b> 안정막 전위와 역치 사이 간격을 되돌린다. 그래서 칼륨 수치를 바꾸지 않으면서 가장 빨리(분 단위) 부정맥 위험을 줄인다.<br> <b>처치의 세 단계</b>: ① 막 안정화(칼슘, 분 단위, 일시적) → ② 세포 안 이동(인슐린 10 단위 + 포도당, 살부타몰; 15~30분 작용, 칼륨 0.5~1.2 mEq/L 감소, 몇 시간 지속) → ③ 몸 밖 제거(칼륨 결합제·루프이뇨제·투석). 앞 단계는 시간을 벌 뿐이므로 뒤 단계를 반드시 이어 간다.<br> <b>이 환자의 원인</b>: 만성 신장병 + ACE 억제제 + 알도스테론 길항제 + NSAID 는 알도스테론 작용과 신혈류를 동시에 줄여 칼륨 배설을 막는 대표적 조합이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">칼슘 글루코네이트(정답)</th><th>인슐린·포도당(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기전</td><td><b>심근 막 안정화</b> — 칼륨 수치 불변</td><td>Na⁺/K⁺-ATPase 활성 → 칼륨 세포 안 이동</td></tr> <tr><td>작용 시작</td><td>1~3분</td><td>15~30분</td></tr> <tr><td>지속</td><td>30~60분(반복 가능)</td><td>4~6시간</td></tr> <tr><td>언제 첫 번째인가</td><td>심전도 변화가 있을 때</td><td>심전도 변화가 없을 때 첫 약물</td></tr> </tbody></table> 심전도가 변했으면 먼저 칼슘, 그다음 곧바로 인슐린·포도당이다. 칼슘만 주고 멈추면 30~60분 뒤 위험이 돌아온다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 살부타몰 분무 흡입은 인슐린과 함께 칼륨을 세포 안으로 옮기는 보조 처치로, 칼슘 투여 뒤 추가로는 정답이 될 수 있다.\n② 소듐 지르코늄 사이클로실리케이트 경구 투여는 응급 처치 뒤 칼륨을 몸 밖으로 빼거나 만성 고칼륨혈증을 조절할 때 정답이 된다.\n③ 응급 혈액투석은 약물 처치에도 칼륨이 내려가지 않거나 소변이 없는 말기 신부전에서 정답이 되며, 준비에 시간이 걸려 첫 처치가 아니다.\n⑤ 속효성 인슐린과 포도당 정맥 주사는 심전도 변화가 없는 고칼륨혈증의 첫 약물이거나, 칼슘을 준 직후 바로 이어서 할 처치로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "칼륨 수치를 낮추는 약을 먼저 고르는 것 — 심전도가 변했으면 수치보다 심장을 먼저 지킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심전도 변화가 있는 고칼륨혈증에서 첫 처치가 칼슘 정맥 주사의 심근 막 안정화임을 판단하고, 칼륨을 세포 안으로 옮기는 인슐린·포도당과 순서를 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Palmer BF, Clegg DJ. Diagnosis and treatment of hyperkalemia. Cleve Clin J Med. 2017;84(12):934-942"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "심전도 변화가 있는 고칼륨혈증은 칼슘 정맥 주사로 심근 막을 먼저 안정시킨다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "심전도에 넓은 QRS 와 P파 평탄화가 있어 분 단위로 작용하는 처치가 필요하다",
+   "steps": 2,
+   "chain": [
+    "칼륨 7.4(용혈 없음) + 뾰족한 T파·P파 평탄화·넓은 QRS → 심독성이 있는 고칼륨혈증",
+    "부정맥 위험을 분 단위로 줄이는 처치가 먼저 → 칼슘 글루코네이트 정맥 주사"
+   ],
+   "key": [
+    {
+     "item": "칼륨 7.4 mEq/L(용혈 없음)",
+     "why": "가성 고칼륨혈증이 아니다",
+     "also": []
+    },
+    {
+     "item": "QRS 폭 넓어짐(140 ms)",
+     "why": "심정지 직전의 전도 지연 — 막 안정화가 먼저",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변은 하루 800 mL 정도 나온다",
+     "why": "무뇨 말기 신부전이 아니어서 즉시 투석이 첫 선택일 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈당 112 mg/dL",
+     "why": "인슐린을 줄 때 포도당을 함께 주어야 한다는 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "리시노프릴과 스피로놀락톤",
+     "why": "원인 약 — 끊어야 하지만 첫 처치를 정하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "이부프로펜을 먹기 시작하였다",
+     "why": "악화 원인 — 중단 대상",
+     "also": []
+    }
+   ],
+   "summary": "칼륨 7.4 와 넓은 QRS 는 심독성 고칼륨혈증이다. 가장 먼저 칼슘 글루코네이트를 정맥 주사하고 이어 인슐린·포도당을 준다.",
+   "switch": {
+    "choice": "E",
+    "condition": "심전도가 정상이고 칼륨이 6.5 mEq/L 였다면 첫 약물은 인슐린과 포도당"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0638",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "혈액·종양 — 혼돈·점상출혈·혈소판감소의 젊은 여성",
+  "type": "혈액·종양 — 혼돈·점상출혈·혈소판감소의 젊은 여성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-12",
+  "vignette": "A 34-year-old woman is brought to the emergency department by her husband because of 2 days of headache and episodes of confusion. She has had fatigue for 1 week and noticed small red spots on her legs. She has no diarrhea. She takes no medications. Her temperature is 37.4°C, blood pressure is 128/78 mm Hg, and pulse is 102/min. She is oriented to person only. Petechiae are present on the lower extremities. There is no lymphadenopathy or splenomegaly. Laboratory studies show a hemoglobin concentration of 7.9 g/dL, reticulocyte count of 6%, platelet count of 14,000/mm³, serum lactate dehydrogenase of 1,480 U/L, undetectable haptoglobin, indirect bilirubin of 2.6 mg/dL, and creatinine of 1.1 mg/dL. Prothrombin time, partial thromboplastin time, and fibrinogen are within the reference ranges. A direct antiglobulin test is negative. A peripheral blood smear shows numerous schistocytes. An ADAMTS13 activity assay has been sent.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Plasma exchange",
+   "Eculizumab therapy",
+   "Platelet transfusion",
+   "Hemodialysis",
+   "Intravenous immune globulin"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: She has microangiopathic hemolytic anemia (schistocytes, high LDH, undetectable haptoglobin, negative direct antiglobulin test), severe thrombocytopenia, and neurologic signs, with normal coagulation studies that exclude disseminated intravascular coagulation and only mild renal involvement. This picture, with a high PLASMIC score, is thrombotic thrombocytopenic purpura caused by severe ADAMTS13 deficiency, usually from an autoantibody. Untreated mortality is about 90 %, so plasma exchange with glucocorticoids is started immediately without waiting for the ADAMTS13 result; caplacizumab and rituximab are added in immune TTP.\n- 원리: <b>Why ADAMTS13 deficiency causes clots</b>: Endothelial cells release von Willebrand factor as ultralarge multimers. ADAMTS13 cleaves them into smaller forms. When an autoantibody blocks ADAMTS13 (activity < 10 %), ultralarge multimers bind platelets spontaneously under high shear, forming platelet-rich microthrombi in small vessels of the brain, heart, and kidneys. Platelets are consumed, and red cells shear across the thrombi to form schistocytes.<br> <b>Why plasma exchange works</b>: Exchange removes the autoantibody and ultralarge multimers and replaces ADAMTS13 with donor plasma. Glucocorticoids and rituximab suppress antibody production, and caplacizumab blocks the von Willebrand factor–platelet interaction.<br> <b>Why not wait</b>: Death can follow within days from cerebral or myocardial microthrombi. Clinical scores such as PLASMIC (platelets < 30,000, hemolysis, no active cancer, no transplant, MCV < 90, INR < 1.5, creatinine < 2.0) identify likely TTP before the assay returns.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">TTP — plasma exchange (answer)</th><th>Complement-mediated HUS — eculizumab (closest distractor)</th></tr></thead><tbody> <tr><td>Platelet count</td><td><b>Very low</b> (often < 30,000)</td><td>Moderately low</td></tr> <tr><td>Kidney</td><td>Mild creatinine rise</td><td><b>Severe acute kidney injury</b>, often dialysis</td></tr> <tr><td>Brain</td><td>Confusion, headache, focal signs common</td><td>Less common</td></tr> <tr><td>ADAMTS13 activity</td><td>< 10 %</td><td>> 10 %</td></tr> </tbody></table> Severe thrombocytopenia with neurologic signs and preserved kidney function points to TTP; severe kidney injury with a less profound platelet drop points to complement-mediated HUS.\n- 오답 이유:\n  - (B) Eculizumab therapy would be appropriate for complement-mediated HUS with severe acute kidney injury and ADAMTS13 activity above 10 %.\n  - (C) Platelet transfusion is avoided in TTP because it may fuel microthrombi; it is reserved for life-threatening bleeding or a required procedure.\n  - (D) Hemodialysis would be indicated for severe acute kidney injury with volume overload or hyperkalemia, which her creatinine of 1.1 mg/dL does not show.\n  - (E) Intravenous immune globulin would be first-line for immune thrombocytopenia with isolated thrombocytopenia and no schistocytes or hemolysis.\n- 함정: Transfusing platelets for a count of 14,000 or waiting for the ADAMTS13 result — suspected TTP is treated with plasma exchange at once.\n- 학습목표: Recognize thrombotic thrombocytopenic purpura from microangiopathic hemolytic anemia, severe thrombocytopenia, and neurologic signs with normal coagulation, and start plasma exchange without waiting for ADAMTS13 results\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2020;18(10):2496-2502",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "She has microangiopathic hemolytic anemia (schistocytes, high LDH, undetectable haptoglobin, negative direct antiglobulin test), severe thrombocytopenia, and neurologic signs, with normal coagulation studies that exclude disseminated intravascular coagulation and only mild renal involvement. This picture, with a high PLASMIC score, is thrombotic thrombocytopenic purpura caused by severe ADAMTS13 deficiency, usually from an autoantibody. Untreated mortality is about 90 %, so plasma exchange with glucocorticoids is started immediately without waiting for the ADAMTS13 result; caplacizumab and rituximab are added in immune TTP."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ADAMTS13 deficiency causes clots</b>: Endothelial cells release von Willebrand factor as ultralarge multimers. ADAMTS13 cleaves them into smaller forms. When an autoantibody blocks ADAMTS13 (activity < 10 %), ultralarge multimers bind platelets spontaneously under high shear, forming platelet-rich microthrombi in small vessels of the brain, heart, and kidneys. Platelets are consumed, and red cells shear across the thrombi to form schistocytes.<br> <b>Why plasma exchange works</b>: Exchange removes the autoantibody and ultralarge multimers and replaces ADAMTS13 with donor plasma. Glucocorticoids and rituximab suppress antibody production, and caplacizumab blocks the von Willebrand factor–platelet interaction.<br> <b>Why not wait</b>: Death can follow within days from cerebral or myocardial microthrombi. Clinical scores such as PLASMIC (platelets < 30,000, hemolysis, no active cancer, no transplant, MCV < 90, INR < 1.5, creatinine < 2.0) identify likely TTP before the assay returns."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">TTP — plasma exchange (answer)</th><th>Complement-mediated HUS — eculizumab (closest distractor)</th></tr></thead><tbody> <tr><td>Platelet count</td><td><b>Very low</b> (often < 30,000)</td><td>Moderately low</td></tr> <tr><td>Kidney</td><td>Mild creatinine rise</td><td><b>Severe acute kidney injury</b>, often dialysis</td></tr> <tr><td>Brain</td><td>Confusion, headache, focal signs common</td><td>Less common</td></tr> <tr><td>ADAMTS13 activity</td><td>< 10 %</td><td>> 10 %</td></tr> </tbody></table> Severe thrombocytopenia with neurologic signs and preserved kidney function points to TTP; severe kidney injury with a less profound platelet drop points to complement-mediated HUS."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Eculizumab therapy would be appropriate for complement-mediated HUS with severe acute kidney injury and ADAMTS13 activity above 10 %.\n(C) Platelet transfusion is avoided in TTP because it may fuel microthrombi; it is reserved for life-threatening bleeding or a required procedure.\n(D) Hemodialysis would be indicated for severe acute kidney injury with volume overload or hyperkalemia, which her creatinine of 1.1 mg/dL does not show.\n(E) Intravenous immune globulin would be first-line for immune thrombocytopenia with isolated thrombocytopenia and no schistocytes or hemolysis."
+   },
+   {
+    "k": "함정",
+    "v": "Transfusing platelets for a count of 14,000 or waiting for the ADAMTS13 result — suspected TTP is treated with plasma exchange at once."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize thrombotic thrombocytopenic purpura from microangiopathic hemolytic anemia, severe thrombocytopenia, and neurologic signs with normal coagulation, and start plasma exchange without waiting for ADAMTS13 results"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2020;18(10):2496-2502"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Microangiopathic hemolysis, severe thrombocytopenia, neurologic signs, and normal coagulation indicate TTP, which requires immediate plasma exchange",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Platelets are very low with confusion and only mild renal involvement",
+   "steps": 3,
+   "chain": [
+    "Schistocytes, high LDH, undetectable haptoglobin, negative direct antiglobulin test → microangiopathic hemolytic anemia",
+    "Platelets 14,000, confusion, creatinine 1.1, normal coagulation → TTP rather than HUS or DIC",
+    "Untreated TTP is rapidly fatal → plasma exchange without waiting for ADAMTS13"
+   ],
+   "key": [
+    {
+     "item": "numerous schistocytes",
+     "why": "Microangiopathic hemolysis",
+     "also": []
+    },
+    {
+     "item": "platelet count of 14,000/mm³",
+     "why": "Severe consumption typical of TTP",
+     "also": []
+    },
+    {
+     "item": "oriented to person only",
+     "why": "Neurologic involvement from microthrombi",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Prothrombin time, partial thromboplastin time, and fibrinogen are within the reference ranges",
+     "why": "Lowers the likelihood of disseminated intravascular coagulation",
+     "also": []
+    },
+    {
+     "item": "A direct antiglobulin test is negative",
+     "why": "Lowers the likelihood of autoimmune hemolysis",
+     "also": []
+    },
+    {
+     "item": "creatinine of 1.1 mg/dL",
+     "why": "Mild renal involvement makes complement-mediated HUS less likely",
+     "also": []
+    },
+    {
+     "item": "She has no diarrhea",
+     "why": "Lowers the likelihood of Shiga toxin–associated HUS",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "Schistocytic hemolysis, platelets of 14,000, confusion, and normal coagulation with mild renal involvement indicate TTP. Plasma exchange is started immediately.",
+   "switch": {
+    "choice": "B",
+    "condition": "If severe acute kidney injury dominated and ADAMTS13 activity were above 10 %, eculizumab for complement-mediated HUS"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0637",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·호흡기·응급·소화기·혈액·신장·부인과·내분비)",
+  "subtopic": "소화기 — 항생제 치료 뒤 설사와 저혈압·장마비",
+  "type": "소화기 — 항생제 치료 뒤 설사와 저혈압·장마비",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-12",
+  "vignette": "72세 여자가 4일 전부터 하루 8~10번의 물설사와 복통이 있었는데 오늘은 배가 불러 오고 설사가 줄어 응급실에 왔다. 3주 전 폐렴으로 입원하여 세프트리악손을 7일 동안 맞았다. 체온 38.6℃, 혈압 84/50 mmHg(수액 2 L 투여 후에도 88/52 mmHg), 맥박 118회/분이다. 복부는 팽만하고 전반적 압통이 있으며 장음이 거의 들리지 않는다. 혈액검사에서 백혈구 24,800/mm³, 젖산 3.8 mmol/L, 크레아티닌 1.9 mg/dL(기저 0.8)이다. 대변 Clostridioides difficile 독소 유전자 검사와 독소 검사가 양성이다. 복부 X선에서 대장이 늘어나 있으나 복강 내 공기는 없다.",
+  "question": "수액과 승압제에 더해 가장 적절한 약물 치료는?",
+  "options": [
+   "경구 피닥소마이신 단독",
+   "정맥 반코마이신 단독",
+   "경구 메트로니다졸 단독",
+   "로페라마이드와 경구 수분 보충",
+   "경구 반코마이신 고용량과 정맥 메트로니다졸 병용"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 항생제 노출 뒤 설사가 있고 독소가 양성인 C. difficile 감염이다. 수액에도 낮은 혈압, 장음 소실과 대장 팽창(장마비), 백혈구 24,800, 젖산 상승, 크레아티닌의 2배 이상 상승이 있어 전격성 감염이다. 전격성에서는 경구(또는 비위관) 반코마이신 500 mg 하루 4번에 정맥 메트로니다졸을 더한다. 장마비가 있으면 경구약이 대장에 닿지 못할 수 있어 반코마이신 관장을 더하고, 외과에 대장절제를 함께 상의한다.\n- 원리: <b>왜 중증도가 약을 바꾸는가</b>: C. difficile 은 대장 내강에서 독소를 만들어 점막을 손상한다. 그래서 약은 <b>대장 내강에 도달</b>해야 한다. 경구 반코마이신·피닥소마이신은 거의 흡수되지 않아 대장 농도가 높다. 정맥 반코마이신은 대장 내강으로 분비되지 않아 효과가 없다. 반대로 정맥 메트로니다졸은 염증이 있는 대장벽을 통해 내강으로 나오므로, 장마비로 경구약이 대장에 못 갈 때 보완이 된다.<br> <b>중증도 구분</b>: 비중증(백혈구 ≤ 15,000, 크레아티닌 < 1.5) · 중증(백혈구 > 15,000 또는 크레아티닌 > 1.5) · <b>전격성</b>(저혈압·쇼크, 장마비, 거대결장). 비중증과 중증의 첫 치료는 경구 피닥소마이신(또는 경구 반코마이신 125 mg 하루 4번)이다. 전격성은 경구 반코마이신 500 mg 하루 4번 + 정맥 메트로니다졸이고, 장마비면 반코마이신 관장을 더한다.<br> <b>수술</b>: 쇼크가 계속되거나 천공·젖산 상승이 진행하면 대장아전절제(또는 회장루와 대장 세척)를 늦추지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">전격성 — 경구 반코마이신 고용량 + 정맥 메트로니다졸(정답)</th><th>비중증·중증 — 경구 피닥소마이신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>저혈압·쇼크</b></td><td>안정</td></tr> <tr><td>장 운동</td><td>장마비·거대결장 — 경구약 도달 불확실</td><td>설사 지속 — 경구약 도달</td></tr> <tr><td>약물 경로</td><td>경구·관장 + 정맥(대장벽 통해 내강으로)</td><td>경구 단독</td></tr> <tr><td>추가 처치</td><td>외과 협진(대장절제)</td><td>필요 없음</td></tr> </tbody></table> 설사가 줄었다고 좋아진 것이 아니다 — 쇼크와 함께 설사가 줄고 배가 불러 오면 장마비를 먼저 생각한다.\n- 오답 이유:\n  - ① 경구 피닥소마이신 단독은 혈압이 안정되고 장마비가 없는 첫 비중증·중증 감염에서 정답이 된다.\n  - ② 정맥 반코마이신 단독은 대장 내강으로 분비되지 않아 C. difficile 에는 쓰지 않으며, MRSA 균혈증이었다면 정답이 된다.\n  - ③ 경구 메트로니다졸 단독은 경구 반코마이신·피닥소마이신을 쓸 수 없는 비중증 감염에서만 대안으로 정답이 될 수 있다.\n  - ④ 로페라마이드와 경구 수분 보충은 감염이 배제된 기능성 설사라면 정답이 되며, 이 감염에서는 장마비를 악화시킨다.\n- 함정: 설사가 줄어든 것을 호전으로 보는 것 — 쇼크와 복부 팽만, 장음 소실은 전격성 감염의 장마비다.\n- 학습목표: 항생제 노출 뒤 설사가 있는 환자에서 저혈압·장마비를 전격성 C. difficile 감염으로 판정하고 경구 반코마이신 고용량에 정맥 메트로니다졸을 더하는 치료를 비중증 첫 치료와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 139: Clostridioides difficile Infection, Including Pseudomembranous Colitis · Johnson S, Lavergne V, Skinner AM, et al. Clinical Practice Guideline by IDSA and SHEA: 2021 Focused Update Guidelines on Management of Clostridioides difficile Infection in Adults. Clin Infect Dis. 2021;73(5):e1029-e1044",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항생제 노출 뒤 설사가 있고 독소가 양성인 C. difficile 감염이다. 수액에도 낮은 혈압, 장음 소실과 대장 팽창(장마비), 백혈구 24,800, 젖산 상승, 크레아티닌의 2배 이상 상승이 있어 전격성 감염이다. 전격성에서는 경구(또는 비위관) 반코마이신 500 mg 하루 4번에 정맥 메트로니다졸을 더한다. 장마비가 있으면 경구약이 대장에 닿지 못할 수 있어 반코마이신 관장을 더하고, 외과에 대장절제를 함께 상의한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 중증도가 약을 바꾸는가</b>: C. difficile 은 대장 내강에서 독소를 만들어 점막을 손상한다. 그래서 약은 <b>대장 내강에 도달</b>해야 한다. 경구 반코마이신·피닥소마이신은 거의 흡수되지 않아 대장 농도가 높다. 정맥 반코마이신은 대장 내강으로 분비되지 않아 효과가 없다. 반대로 정맥 메트로니다졸은 염증이 있는 대장벽을 통해 내강으로 나오므로, 장마비로 경구약이 대장에 못 갈 때 보완이 된다.<br> <b>중증도 구분</b>: 비중증(백혈구 ≤ 15,000, 크레아티닌 < 1.5) · 중증(백혈구 > 15,000 또는 크레아티닌 > 1.5) · <b>전격성</b>(저혈압·쇼크, 장마비, 거대결장). 비중증과 중증의 첫 치료는 경구 피닥소마이신(또는 경구 반코마이신 125 mg 하루 4번)이다. 전격성은 경구 반코마이신 500 mg 하루 4번 + 정맥 메트로니다졸이고, 장마비면 반코마이신 관장을 더한다.<br> <b>수술</b>: 쇼크가 계속되거나 천공·젖산 상승이 진행하면 대장아전절제(또는 회장루와 대장 세척)를 늦추지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">전격성 — 경구 반코마이신 고용량 + 정맥 메트로니다졸(정답)</th><th>비중증·중증 — 경구 피닥소마이신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>저혈압·쇼크</b></td><td>안정</td></tr> <tr><td>장 운동</td><td>장마비·거대결장 — 경구약 도달 불확실</td><td>설사 지속 — 경구약 도달</td></tr> <tr><td>약물 경로</td><td>경구·관장 + 정맥(대장벽 통해 내강으로)</td><td>경구 단독</td></tr> <tr><td>추가 처치</td><td>외과 협진(대장절제)</td><td>필요 없음</td></tr> </tbody></table> 설사가 줄었다고 좋아진 것이 아니다 — 쇼크와 함께 설사가 줄고 배가 불러 오면 장마비를 먼저 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 피닥소마이신 단독은 혈압이 안정되고 장마비가 없는 첫 비중증·중증 감염에서 정답이 된다.\n② 정맥 반코마이신 단독은 대장 내강으로 분비되지 않아 C. difficile 에는 쓰지 않으며, MRSA 균혈증이었다면 정답이 된다.\n③ 경구 메트로니다졸 단독은 경구 반코마이신·피닥소마이신을 쓸 수 없는 비중증 감염에서만 대안으로 정답이 될 수 있다.\n④ 로페라마이드와 경구 수분 보충은 감염이 배제된 기능성 설사라면 정답이 되며, 이 감염에서는 장마비를 악화시킨다."
+   },
+   {
+    "k": "함정",
+    "v": "설사가 줄어든 것을 호전으로 보는 것 — 쇼크와 복부 팽만, 장음 소실은 전격성 감염의 장마비다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항생제 노출 뒤 설사가 있는 환자에서 저혈압·장마비를 전격성 C. difficile 감염으로 판정하고 경구 반코마이신 고용량에 정맥 메트로니다졸을 더하는 치료를 비중증 첫 치료와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 139: Clostridioides difficile Infection, Including Pseudomembranous Colitis · Johnson S, Lavergne V, Skinner AM, et al. Clinical Practice Guideline by IDSA and SHEA: 2021 Focused Update Guidelines on Management of Clostridioides difficile Infection in Adults. Clin Infect Dis. 2021;73(5):e1029-e1044"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "저혈압과 장마비가 있는 C. difficile 감염은 전격성이라 경구 반코마이신 고용량과 정맥 메트로니다졸을 함께 쓴다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "수액에도 계속되는 저혈압과 장음 소실·대장 팽창",
+   "steps": 3,
+   "chain": [
+    "항생제 노출 뒤 설사 + 독소 양성 → C. difficile 감염",
+    "수액 후에도 저혈압, 장음 소실·대장 팽창 → 전격성",
+    "장마비로 경구약 도달이 불확실 → 경구 반코마이신 고용량 + 정맥 메트로니다졸"
+   ],
+   "key": [
+    {
+     "item": "세프트리악손을 7일 동안 맞았다",
+     "why": "C. difficile 감염의 위험 인자",
+     "also": []
+    },
+    {
+     "item": "독소 유전자 검사와 독소 검사가 양성",
+     "why": "진단 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "복강 내 공기는 없다",
+     "why": "천공 가능성을 낮춰 즉시 개복보다 약물 치료를 먼저 시작한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 84/50 mmHg(수액 2 L 투여 후에도 88/52 mmHg)",
+     "why": "쇼크 — 전격성 기준",
+     "also": []
+    },
+    {
+     "item": "장음이 거의 들리지 않는다",
+     "why": "장마비 — 경구약 도달 불확실, 정맥 메트로니다졸 추가 근거",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.9 mg/dL(기저 0.8)",
+     "why": "중증 이상의 지표",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "항생제 뒤 독소 양성 설사에 쇼크와 장마비가 있어 전격성 C. difficile 감염이다. 경구 반코마이신 고용량에 정맥 메트로니다졸을 더한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "혈압이 안정되고 장음이 정상이며 첫 감염이라면 경구 피닥소마이신 단독"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0632",
   "exam": "imaging",
   "style": "usmle_style",

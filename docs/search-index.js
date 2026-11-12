@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4639,
+  "total": 4651,
   "byType": {
    "usmle": 264,
    "paper": 926,
+   "imaging": 643,
    "concept": 163,
    "kmle": 1792,
-   "imaging": 631,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,19 +38,19 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 116,
    "Hematology": 109,
    "Laboratory Medicine": 96,
-   "순환기": 85,
-   "산부인과": 82,
-   "호흡기": 39,
-   "소화기": 38,
+   "순환기": 90,
+   "산부인과": 83,
+   "호흡기": 40,
+   "소화기": 39,
    "소아과": 34,
-   "응급·중환자": 30,
+   "응급·중환자": 31,
    "감염": 29,
+   "혈액·종양": 29,
    "Physiology": 28,
    "내분비": 28,
+   "병리·조직학": 28,
    "신경": 28,
-   "혈액·종양": 28,
-   "병리·조직학": 27,
-   "신장·비뇨기": 26,
+   "신장·비뇨기": 27,
    "외과": 26,
    "피부과": 24,
    "예방의학·역학": 23,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3278,
+   "high": 3290,
    "medium": 1308,
    "low": 53
   },
@@ -387,6 +387,220 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-12_paper-2026-0925_mechanical_forces_enable_human_stem_cell_modeling_of_protein.md",
    "snippet": "Title Mechanical forces enable human stem cell modeling of protein aggregation cardiomyopathy Authors Kooh Yasaman Kargar Gaz, Bahmani Bahareh, Zhao Chen, Malayath Ganesh, Khokhlova Anastasia, Hayem Leah, Umuragwa Hertier, Jin Hanxun, et al",
    "text": "Cardiology scraped pubmed PubMed / Science advances Title Mechanical forces enable human stem cell modeling of protein aggregation cardiomyopathy Authors Kooh Yasaman Kargar Gaz, Bahmani Bahareh, Zhao Chen, Malayath Ganesh, Khokhlova Anastasia, Hayem Leah, Umuragwa Hertier, Jin Hanxun, et al. Journal / DOI Science advances · DOI: 10.1126/sciadv.aee9464 · PMID: 43013638 https://pubmed.ncbi.nlm.nih.gov/43013638/ Abstract Inherited cardiomyopathies are the leading cause of heart failure in young adults, with limited therapeutic options. Desmin related cardiomyopathy (DRM), caused by mutations to cytoskeletal proteins and their chaperones, exemplifies this challenge: Here, protein quality control is compromised, leading to toxic protein aggregates that destroy cardiomyocyte contractile machinery. One of the deadliest DRM mutations in the chaperone protein αB crystallin (CRYAB R120G) lacks a genetically matched preclinical model: Mouse models require massive overexpression of mutant CRYAB, raising questions about physiological relevance. Here, we establish a human model of CRYAB linked DRM, using induced pluripotent stem cells expressing CRYAB R120G at near endogenous levels. We show that three dimensional mechanical loading, but not fatty acid based metabolic maturation media, is essential for expressing Desmin, whose aggregation defines DRM. Using microengineered heart tissues, we found that contractile deficits are associated with impaired calcium handling, pointing to electromechanical uncoupling in DRM. Treatment with the Janus kinase 1 inhibitor itacitinib partially rescued contractility, providing a functional validation of this emerging therapeutic strategy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0644",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 계단을 오를 때 가슴이 조이는 젊은 흡연자",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0644.md",
+   "snippet": "A 40 year old man comes to the emergency department because of 2 episodes of chest tightness during the past 2 days. Each episode began while he was climbing stairs, lasted about 10 minutes, and resolved with rest. He has never had such sym",
+   "text": "순환기 심전도 판독 — 계단을 오를 때 가슴이 조이는 젊은 흡연자 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829 A 40 year old man comes to the emergency department because of 2 episodes of chest tightness during the past 2 days. Each episode began while he was climbing stairs, lasted about 10 minutes, and resolved with rest. He has never had such symptoms before. He has smoked 1 pack of cigarettes daily for 20 years. His father had a myocardial infarction at the age of 48 years. He is now pain free. His blood pressure is 138/84 mm Hg, and pulse is 70/min. Heart sounds are normal, and there is no friction rub. High sensitivity troponin I concentrations at arrival and 3 hours later are within the reference range. Echocardiography shows normal left ventricular wall thickness and wall motion. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Unstable angina B. Non ST elevation myocardial infarction C. Acute pericarditis D. Hypertrophic cardiomyopathy E. Acute pulmonary embolism"
+  },
+  {
+   "id": "imaging-2026-0643",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 검진 심전도에서 축 편위를 들은 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0643.md",
+   "snippet": "54세 남자가 회사 건강검진 심전도에서 「축이 왼쪽으로 치우쳐 있다」는 말을 듣고 왔다. 두근거림, 어지럼, 실신, 흉통은 없고 주 3회 1시간씩 달리기를 한다. 복용하는 약은 없다. 혈압 124/78 mmHg, 맥박 56회/분이다. 심음은 정상이고 잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 심장초음파에서 좌심실 벽 두께와 벽 운동은 정상이고 박출률은 62 % 이며 판막 이상은 없다. 12유도 심전도는 그림과 같다.",
+   "text": "순환기 심전도 처치 — 검진 심전도에서 축 편위를 들은 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829 54세 남자가 회사 건강검진 심전도에서 「축이 왼쪽으로 치우쳐 있다」는 말을 듣고 왔다. 두근거림, 어지럼, 실신, 흉통은 없고 주 3회 1시간씩 달리기를 한다. 복용하는 약은 없다. 혈압 124/78 mmHg, 맥박 56회/분이다. 심음은 정상이고 잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 심장초음파에서 좌심실 벽 두께와 벽 운동은 정상이고 박출률은 62 % 이며 판막 이상은 없다. 12유도 심전도는 그림과 같다. 이 심전도 소견에 대한 처치로 가장 적절한 것은? A. 24시간 이내 전기생리 검사 B. 베타차단제 투여 C. 추가 치료 없이 경과 관찰 D. 영구 심박동기 삽입 E. 관상동맥 조영술"
+  },
+  {
+   "id": "imaging-2026-0642",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 수술 전 검사에서 받은 고령 남성의 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0642.md",
+   "snippet": "69세 남자가 서혜부 탈장 수술을 앞두고 수술 전 검사를 받으러 왔다. 지금은 흉통이나 숨참이 없고 계단 두 층을 쉬지 않고 오른다. 6년 전 밤에 가슴을 짓누르는 통증이 1시간 넘게 이어진 적이 있었으나 저절로 나아 병원에 가지 않았다. 고혈압과 2형 당뇨병으로 약을 먹고 있다. 혈압 132/80 mmHg, 맥박 70회/분이다. 심음은 정상이고 잡음은 없다. 혈청 트로포닌 I 는 기준치 이하이다. 12유도 심전도는 그림과 같",
+   "text": "순환기 심전도 판독 — 수술 전 검사에서 받은 고령 남성의 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202335Z_일일심전도_2026-11-13_3units_3q_2ef67829 69세 남자가 서혜부 탈장 수술을 앞두고 수술 전 검사를 받으러 왔다. 지금은 흉통이나 숨참이 없고 계단 두 층을 쉬지 않고 오른다. 6년 전 밤에 가슴을 짓누르는 통증이 1시간 넘게 이어진 적이 있었으나 저절로 나아 병원에 가지 않았다. 고혈압과 2형 당뇨병으로 약을 먹고 있다. 혈압 132/80 mmHg, 맥박 70회/분이다. 심음은 정상이고 잡음은 없다. 혈청 트로포닌 I 는 기준치 이하이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 전벽 심근경색 B. 오래된 하벽 심근경색 C. 급성 하벽 ST분절상승 심근경색 D. 좌전섬유속 차단 E. 급성 심낭염"
+  },
+  {
+   "id": "imaging-2026-0641",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "내분비·대사 — 검진에서 발견된 무증상 고칼슘혈증의 수술 적응증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0641.md",
+   "snippet": "45세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 콩팥돌이나 골절은 없었다. 약은 먹지 않고 가족 중 고칼슘혈증이 있는 사람은 없다. 혈압 122/78 mmHg 이다. 혈액검사에서 칼슘 11.1 mg/dL(참고치 8.6~10.4), 인 2.4 mg/dL, 부갑상샘호르몬 98 pg/mL(참고치 15~65), 25 하이드록시비타민 D 34 ng/mL, 크레아티닌 0.7 mg/dL(추정 사구체여과율 104",
+   "text": "신장·비뇨기 내분비·대사 — 검진에서 발견된 무증상 고칼슘혈증의 수술 적응증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 45세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 콩팥돌이나 골절은 없었다. 약은 먹지 않고 가족 중 고칼슘혈증이 있는 사람은 없다. 혈압 122/78 mmHg 이다. 혈액검사에서 칼슘 11.1 mg/dL(참고치 8.6~10.4), 인 2.4 mg/dL, 부갑상샘호르몬 98 pg/mL(참고치 15~65), 25 하이드록시비타민 D 34 ng/mL, 크레아티닌 0.7 mg/dL(추정 사구체여과율 104 mL/min/1.73 m²)이다. 24시간 소변 칼슘은 260 mg 이고 칼슘/크레아티닌 청소율 비는 0.024 이다. 이중에너지 X선 흡수계측에서 요추 T 점수 −1.6, 대퇴골 경부 −1.4, 원위 요골 −1.7 이고, 콩팥 초음파에서 돌은 없다. 가장 적절한 처치는? A. 칼슘 섭취 제한과 수분 섭취 증가 B. 부갑상샘 절제술 C. 1년마다 혈청 칼슘과 골밀도 추적 관찰 D. 시나칼셋 투여 E. 알렌드로네이트 투여"
+  },
+  {
+   "id": "imaging-2026-0640",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 폐경 뒤 질출혈과 두꺼운 자궁내막",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0640.md",
+   "snippet": "A 58 year old woman comes to the physician because of 3 episodes of vaginal spotting during the past month. Her last menstrual period was 7 years ago, and she has not taken hormone therapy. She has type 2 diabetes mellitus and hypertension.",
+   "text": "산부인과 부인과 — 폐경 뒤 질출혈과 두꺼운 자궁내막 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 A 58 year old woman comes to the physician because of 3 episodes of vaginal spotting during the past month. Her last menstrual period was 7 years ago, and she has not taken hormone therapy. She has type 2 diabetes mellitus and hypertension. Her body mass index is 34 kg/m². Her blood pressure is 136/84 mm Hg. Pelvic examination shows a normal appearing cervix and a small amount of blood in the vaginal vault; the uterus is normal in size, and there are no adnexal masses. A cervical cytology test 1 year ago was negative for intraepithelial lesion and malignancy, with negative human papillomavirus testing. Transvaginal ultrasonography shows a homogeneous endometrial stripe of 9 mm and normal ovaries. Which of the following is the most appropriate next step in management? A. Endometrial biopsy B. Repeat transvaginal ultrasonography in 3 months C. Total hysterectomy with bilateral salpingo oophorectomy D. Cyclic progestin therapy E. Repeat cervical cytology"
+  },
+  {
+   "id": "imaging-2026-0639",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "신장·비뇨 — 고칼륨혈증과 심전도 변화가 있는 만성 신장병 환자",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0639.md",
+   "snippet": "72세 남자가 하루 전부터 다리에 힘이 빠져 응급실에 왔다. 만성 신장병(평소 크레아티닌 2.1 mg/dL)과 심부전으로 리시노프릴과 스피로놀락톤을 먹고 있고, 1주 전 무릎 통증으로 이부프로펜을 먹기 시작하였다. 혈압 118/70 mmHg, 맥박 52회/분이다. 소변은 하루 800 mL 정도 나온다. 혈액검사에서 칼륨 7.4 mEq/L(용혈 없음), 나트륨 134 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.0 mg/",
+   "text": "순환기 신장·비뇨 — 고칼륨혈증과 심전도 변화가 있는 만성 신장병 환자 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 72세 남자가 하루 전부터 다리에 힘이 빠져 응급실에 왔다. 만성 신장병(평소 크레아티닌 2.1 mg/dL)과 심부전으로 리시노프릴과 스피로놀락톤을 먹고 있고, 1주 전 무릎 통증으로 이부프로펜을 먹기 시작하였다. 혈압 118/70 mmHg, 맥박 52회/분이다. 소변은 하루 800 mL 정도 나온다. 혈액검사에서 칼륨 7.4 mEq/L(용혈 없음), 나트륨 134 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.0 mg/dL, 혈당 112 mg/dL 이다. 심전도에서 끝이 뾰족하고 높은 T파, P파 평탄화와 QRS 폭 넓어짐(140 ms)이 보인다. 가장 먼저 할 처치는? A. 살부타몰 분무 흡입 B. 소듐 지르코늄 사이클로실리케이트 경구 투여 C. 응급 혈액투석 D. 10 % 칼슘 글루코네이트 정맥 주사 E. 속효성 인슐린과 포도당 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0638",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 혼돈·점상출혈·혈소판감소의 젊은 여성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0638.md",
+   "snippet": "A 34 year old woman is brought to the emergency department by her husband because of 2 days of headache and episodes of confusion. She has had fatigue for 1 week and noticed small red spots on her legs. She has no diarrhea. She takes no med",
+   "text": "혈액·종양 혈액·종양 — 혼돈·점상출혈·혈소판감소의 젊은 여성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 A 34 year old woman is brought to the emergency department by her husband because of 2 days of headache and episodes of confusion. She has had fatigue for 1 week and noticed small red spots on her legs. She has no diarrhea. She takes no medications. Her temperature is 37.4°C, blood pressure is 128/78 mm Hg, and pulse is 102/min. She is oriented to person only. Petechiae are present on the lower extremities. There is no lymphadenopathy or splenomegaly. Laboratory studies show a hemoglobin concentration of 7.9 g/dL, reticulocyte count of 6%, platelet count of 14,000/mm³, serum lactate dehydrogenase of 1,480 U/L, undetectable haptoglobin, indirect bilirubin of 2.6 mg/dL, and creatinine of 1.1 mg/dL. Prothrombin time, partial thromboplastin time, and fibrinogen are within the reference ranges. A direct antiglobulin test is negative. A peripheral blood smear shows numerous schistocytes. An ADAMTS13 activity assay has been sent. Which of the following is the most appropriate next step in management? A. Plasma exchange B. Eculizumab therapy C. Platelet transfusion D. Hemodialysis E. Intravenous immune globulin"
+  },
+  {
+   "id": "imaging-2026-0637",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 항생제 치료 뒤 설사와 저혈압·장마비",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0637.md",
+   "snippet": "72세 여자가 4일 전부터 하루 8~10번의 물설사와 복통이 있었는데 오늘은 배가 불러 오고 설사가 줄어 응급실에 왔다. 3주 전 폐렴으로 입원하여 세프트리악손을 7일 동안 맞았다. 체온 38.6℃, 혈압 84/50 mmHg(수액 2 L 투여 후에도 88/52 mmHg), 맥박 118회/분이다. 복부는 팽만하고 전반적 압통이 있으며 장음이 거의 들리지 않는다. 혈액검사에서 백혈구 24,800/mm³, 젖산 3.8 mmol/L,",
+   "text": "소화기 소화기 — 항생제 치료 뒤 설사와 저혈압·장마비 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 72세 여자가 4일 전부터 하루 8~10번의 물설사와 복통이 있었는데 오늘은 배가 불러 오고 설사가 줄어 응급실에 왔다. 3주 전 폐렴으로 입원하여 세프트리악손을 7일 동안 맞았다. 체온 38.6℃, 혈압 84/50 mmHg(수액 2 L 투여 후에도 88/52 mmHg), 맥박 118회/분이다. 복부는 팽만하고 전반적 압통이 있으며 장음이 거의 들리지 않는다. 혈액검사에서 백혈구 24,800/mm³, 젖산 3.8 mmol/L, 크레아티닌 1.9 mg/dL(기저 0.8)이다. 대변 Clostridioides difficile 독소 유전자 검사와 독소 검사가 양성이다. 복부 X선에서 대장이 늘어나 있으나 복강 내 공기는 없다. 수액과 승압제에 더해 가장 적절한 약물 치료는? A. 경구 피닥소마이신 단독 B. 정맥 반코마이신 단독 C. 경구 메트로니다졸 단독 D. 로페라마이드와 경구 수분 보충 E. 경구 반코마이신 고용량과 정맥 메트로니다졸 병용"
+  },
+  {
+   "id": "imaging-2026-0636",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·외상 — 손을 짚고 넘어진 뒤 팔을 못 움직이는 중년 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0636.md",
+   "snippet": "A 61 year old woman is brought to the emergency department 1 hour after she slipped on an icy sidewalk and fell onto her outstretched right hand. She has severe right shoulder pain and cannot move the arm. She holds the right arm slightly a",
+   "text": "응급·중환자 응급·외상 — 손을 짚고 넘어진 뒤 팔을 못 움직이는 중년 여성 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 A 61 year old woman is brought to the emergency department 1 hour after she slipped on an icy sidewalk and fell onto her outstretched right hand. She has severe right shoulder pain and cannot move the arm. She holds the right arm slightly abducted and externally rotated and resists any movement. Her blood pressure is 142/86 mm Hg, and pulse is 92/min. The normal rounded contour of the right shoulder is lost, and the acromion is prominent. The right radial pulse is palpable, and capillary refill is normal. A radiograph of the right shoulder is shown. Before closed reduction, documentation of which of the following is most important? A. Sensation over the little finger B. Sensation over the lateral forearm C. Sensation over the medial aspect of the upper arm D. Sensation over the lateral aspect of the upper arm E. Sensation over the dorsum of the first web space"
+  },
+  {
+   "id": "imaging-2026-0635",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 3년째 같은 쪽 폐렴이 반복되는 청소년",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0635.md",
+   "snippet": "16세 남자가 1주 전부터 기침과 누런 가래, 열이 있어 왔다. 3년 전부터 1년에 3~4번씩 기관지염과 폐렴으로 항생제 치료를 받았고, 그때마다 오른쪽 아래 폐에 염증이 있다는 말을 들었다. 천식과 부비동염은 없고 체중 증가와 키 성장은 정상이며 예방접종은 모두 받았다. 체온 37.9℃, 호흡 20회/분, 산소포화도 97 %(실내 공기)이다. 오른쪽 아래 등에서 수포음이 들린다. 흉부 X선 사진은 그림과 같다(화살표). 다음",
+   "text": "호흡기 호흡기 — 3년째 같은 쪽 폐렴이 반복되는 청소년 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 16세 남자가 1주 전부터 기침과 누런 가래, 열이 있어 왔다. 3년 전부터 1년에 3~4번씩 기관지염과 폐렴으로 항생제 치료를 받았고, 그때마다 오른쪽 아래 폐에 염증이 있다는 말을 들었다. 천식과 부비동염은 없고 체중 증가와 키 성장은 정상이며 예방접종은 모두 받았다. 체온 37.9℃, 호흡 20회/분, 산소포화도 97 %(실내 공기)이다. 오른쪽 아래 등에서 수포음이 들린다. 흉부 X선 사진은 그림과 같다(화살표). 다음 단계로 가장 적절한 것은? A. 3개월 장기 마크로라이드 치료 B. 흡입 코르티코스테로이드 시작 C. 기관지내시경으로 이물 제거 D. 땀 염화물 검사 E. 오른쪽 하엽 절제술"
+  },
+  {
+   "id": "imaging-2026-0634",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 건너뛰는 맥박을 느끼는 고령 남성의 심전도와 다음 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0634.md",
+   "snippet": "A 74 year old man comes to the physician because of a 3 week history of a sensation that his heart is skipping beats. He has had no chest pain, shortness of breath, dizziness, or syncope, and he walks 3 km daily without difficulty. He has h",
+   "text": "순환기 순환기 — 건너뛰는 맥박을 느끼는 고령 남성의 심전도와 다음 검사 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 A 74 year old man comes to the physician because of a 3 week history of a sensation that his heart is skipping beats. He has had no chest pain, shortness of breath, dizziness, or syncope, and he walks 3 km daily without difficulty. He has hypertension treated with amlodipine. He drinks 2 cups of coffee daily. His blood pressure is 134/80 mm Hg, and pulse is 72/min and irregular. The lungs are clear. Heart sounds are normal, and there are no murmurs. There is no leg edema. Serum potassium, magnesium, and thyroid stimulating hormone concentrations are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most appropriate next step in management? A. Synchronized cardioversion B. Transthoracic echocardiography C. Catheter ablation D. Amiodarone therapy E. Implantable cardioverter defibrillator placement"
+  },
+  {
+   "id": "imaging-2026-0633",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·기초 — 어린이 정상 피부의 케라틴 면역염색과 유전 피부질환",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43",
+   "confidence": "high",
+   "date": "2026-11-12",
+   "path": "content/imaging/2026/imaging-2026-0633.md",
+   "snippet": "4세 여아가 배꼽 탈장 수술을 받으면서 절개 부위의 정상 피부를 조금 절제하였다. 이 피부 조직 절편에 한 세포골격 중간섬유 단백질에 대한 면역조직화학염색을 하였다. 사진은 그림과 같다(갈색 = 양성, 파란색 = 헤마톡실린 대조염색). 진피와 표피 맨 아래 한 줄의 세포는 염색되지 않았다. 이 단백질을 만드는 유전자의 변이로 생기는 질환으로 가장 적절한 것은? A. 심상성 천포창 B. 수포성 유사천포창 C. 표피박리성 어린선 ",
+   "text": "병리·조직학 병리·기초 — 어린이 정상 피부의 케라틴 면역염색과 유전 피부질환 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261112T202145Z_일일영상_2026-11-13_9units_9q_2bdb3c43 4세 여아가 배꼽 탈장 수술을 받으면서 절개 부위의 정상 피부를 조금 절제하였다. 이 피부 조직 절편에 한 세포골격 중간섬유 단백질에 대한 면역조직화학염색을 하였다. 사진은 그림과 같다(갈색 = 양성, 파란색 = 헤마톡실린 대조염색). 진피와 표피 맨 아래 한 줄의 세포는 염색되지 않았다. 이 단백질을 만드는 유전자의 변이로 생기는 질환으로 가장 적절한 것은? A. 심상성 천포창 B. 수포성 유사천포창 C. 표피박리성 어린선 D. 단순 수포표피박리증 E. 심상성 어린선"
   },
   {
    "id": "cn.cardio.svt.av-nodal-blockade-response",
