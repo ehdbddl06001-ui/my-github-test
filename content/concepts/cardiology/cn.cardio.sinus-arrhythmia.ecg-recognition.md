@@ -128,6 +128,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13420558_Figure1
   reason: 그림은 2:1 방실차단 + 심실위상성(ventriculophasic) 동부정맥·우각차단 — 전도 안 된 P파가 끼어 있어 목표(모든 P파가 전도되고 PP가 호흡에 따라 서서히 변하는 호흡성 동부정맥)와 다르고 방실차단과 혼동을 준다
+- asset: PMC-PMC13713283_FIGURE3
+  reason: 심전도가 아니라 호흡 빈도별 RSA 평균±SD 통계 그래프(임산부·비임산부 비교) — P파·PP 간격을 보여 주지 않는다
 ---
 
 ## 판단 — P파와 간격 변화로 읽는 순서

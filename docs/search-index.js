@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4637,
+  "total": 4639,
   "byType": {
    "usmle": 264,
+   "paper": 926,
    "concept": 163,
-   "paper": 924,
    "kmle": 1792,
    "imaging": 631,
    "anatomy": 846,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 326,
+   "Cardiology": 327,
    "Nephrology": 247,
    "Infectious Disease": 226,
    "Pediatrics": 215,
@@ -30,8 +30,8 @@ window.MEDKOS_INDEX = {
    "Hematology-Oncology": 130,
    "Orthopedics": 125,
    "General Surgery": 120,
+   "Surgery": 119,
    "Endocrinology": 118,
-   "Surgery": 118,
    "Dermatology": 117,
    "Gastroenterology": 117,
    "Ophthalmology": 117,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3278,
-   "medium": 1306,
+   "medium": 1308,
    "low": 53
   },
   "tagCount": 5467
@@ -353,6 +353,40 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0266.md",
    "snippet": "A 74 year old woman comes to the physician because of nausea, loss of appetite and fatigue for 5 days. She says that over the past 2 days, white objects have looked yellow to her. She has heart failure with reduced ejection fraction and per",
    "text": "Pharmacology Nausea, Yellow-Tinged Vision and a Slow Irregular Pulse Two Weeks After a New Rhythm Drug in a 74-Year-Old Woman With Heart Failure digoxin amiodarone p-glycoprotein drug-interaction digoxin-toxicity mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 71장 Principles of Clinical Pharmacology; Harrison's Principles of Internal Medicine, 22e. 265장 Heart Failure: Management) A 74 year old woman comes to the physician because of nausea, loss of appetite and fatigue for 5 days. She says that over the past 2 days, white objects have looked yellow to her. She has heart failure with reduced ejection fraction and permanent atrial fibrillation. Her medications for 3 years have been carvedilol, furosemide, apixaban and digoxin 0.125 mg daily, and she has taken them as prescribed. Two weeks ago, amiodarone was added because of episodes of rapid ventricular rate. Her vital signs are shown. She is alert and oriented. There is no jugular venous distention, the lungs are clear to auscultation and there is trace ankle edema. An ECG shows atrial fibrillation with a slow ventricular response and scooped ST segment depression in the lateral leads. Laboratory results are shown. Which of the following best explains the change in this patient's serum drug concentration? A. Induction of CYP3A4 that converts the drug to an active metabolite B. Displacement of the drug from its binding sites on plasma albumin C. Low extracellular potassium that enhances binding to Na+/K+ ATPase D. Inhibition of P glycoprotein–mediated renal and intestinal efflux E. Inhibition of CYP2C9 that slows hepatic oxidative metabolism 메스꺼움·식욕부진·피로에 「흰 것이 노랗게 보인다」(황시증)와 느린 심실 반응의 심방세동, 혈중 digoxin 3.1 ng/mL 는 digoxin 독성이다. 3년 동안 같은 용량을 복용해 왔고 크레아티닌은 3개월 전과 같아(1.0) 신기능 저하로는 설명되지 않는다 — 바뀐 것은 2주 전 시작한 amiodarone 이다. digoxin 은 대부분 대사되지 않고 신세뇨관의 P glycoprotein(P gp)으로 분비·배설되며 장에서도 P gp 가 흡수를 제한한다. amiodarone(그리고 verapamil·quinidine·clarithromycin 등)은 P gp 를 억제해 digoxin 청소율을 떨어뜨리고 혈중 농도를 대략 두 배 가까이 올린다 — amiodarone 시작 때 digoxin 용량을 줄이는(흔히 절반) 이유다. 칼륨은 5.4 로 높아(Na+/K+ ATPase 억제의 결과) 저칼륨혈증이 독성을 키운 것은 아니다. 알부민은 정상이고 digoxin 은 단백 결합률이 낮아 결합 치환은 의미가 없으며, CYP2C9 억제는 warfarin 상호작용의 기전이다."
+  },
+  {
+   "id": "paper-2026-0926",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Proceedings (Baylor University. Medical Center)",
+   "confidence": "medium",
+   "date": "2026-11-12",
+   "path": "content/papers/2026/2026-11-12_paper-2026-0926_methotrexate_use_in_ectopic_pregnancy_with_baseline_transami.md",
+   "snippet": "Title Methotrexate use in ectopic pregnancy with baseline transaminase elevation Authors Powers Edward, Nguyen Alyssa, Rashid Yushra Journal / DOI Proceedings (Baylor University. Medical Center) · DOI: 10.1080/08998280.2026.2756187 · PMID: ",
+   "text": "Surgery scraped pubmed PubMed / Proceedings (Baylor University. Medical Center) Title Methotrexate use in ectopic pregnancy with baseline transaminase elevation Authors Powers Edward, Nguyen Alyssa, Rashid Yushra Journal / DOI Proceedings (Baylor University. Medical Center) · DOI: 10.1080/08998280.2026.2756187 · PMID: 43013711 https://pubmed.ncbi.nlm.nih.gov/43013711/ Abstract Ectopic pregnancy is a common complication in early pregnancy and remains a leading cause of first trimester maternal morbidity (0.5 deaths per 100,000 live births). In hemodynamically stable patients, methotrexate is widely used as a fertility preserving alternative to surgery. However, clinically significant hepatic disease is considered an absolute contraindication for methotrexate therapy. Current guidelines lack clarity concerning the management of patients with elevated liver enzymes, particularly those with metabolic risk factors such as polycystic ovary syndrome and nonalcoholic fatty liver disease, which are growing presentations in reproductive aged women. We present a case of a tubal ectopic pregnancy managed with reduced dose methotrexate in the setting of elevated liver enzymes, not seen previously in literature, followed by surgical intervention after medical management failure. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0925",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Science advances",
+   "confidence": "medium",
+   "date": "2026-11-12",
+   "path": "content/papers/2026/2026-11-12_paper-2026-0925_mechanical_forces_enable_human_stem_cell_modeling_of_protein.md",
+   "snippet": "Title Mechanical forces enable human stem cell modeling of protein aggregation cardiomyopathy Authors Kooh Yasaman Kargar Gaz, Bahmani Bahareh, Zhao Chen, Malayath Ganesh, Khokhlova Anastasia, Hayem Leah, Umuragwa Hertier, Jin Hanxun, et al",
+   "text": "Cardiology scraped pubmed PubMed / Science advances Title Mechanical forces enable human stem cell modeling of protein aggregation cardiomyopathy Authors Kooh Yasaman Kargar Gaz, Bahmani Bahareh, Zhao Chen, Malayath Ganesh, Khokhlova Anastasia, Hayem Leah, Umuragwa Hertier, Jin Hanxun, et al. Journal / DOI Science advances · DOI: 10.1126/sciadv.aee9464 · PMID: 43013638 https://pubmed.ncbi.nlm.nih.gov/43013638/ Abstract Inherited cardiomyopathies are the leading cause of heart failure in young adults, with limited therapeutic options. Desmin related cardiomyopathy (DRM), caused by mutations to cytoskeletal proteins and their chaperones, exemplifies this challenge: Here, protein quality control is compromised, leading to toxic protein aggregates that destroy cardiomyocyte contractile machinery. One of the deadliest DRM mutations in the chaperone protein αB crystallin (CRYAB R120G) lacks a genetically matched preclinical model: Mouse models require massive overexpression of mutant CRYAB, raising questions about physiological relevance. Here, we establish a human model of CRYAB linked DRM, using induced pluripotent stem cells expressing CRYAB R120G at near endogenous levels. We show that three dimensional mechanical loading, but not fatty acid based metabolic maturation media, is essential for expressing Desmin, whose aggregation defines DRM. Using microengineered heart tissues, we found that contractile deficits are associated with impaired calcium handling, pointing to electromechanical uncoupling in DRM. Treatment with the Janus kinase 1 inhibitor itacitinib partially rescued contractility, providing a functional validation of this emerging therapeutic strategy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "cn.cardio.svt.av-nodal-blockade-response",
