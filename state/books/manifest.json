@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "d7ba0c513bdeb2f32101",
-   "version": 28,
-   "date": "2026-11-12",
+   "hash": "156ee95b96b7e84c6a73",
+   "version": 29,
+   "date": "2026-11-13",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 53,
+   "pages": 54,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -125,69 +125,75 @@
     "cn.cardio.sinus-arrhythmia.ecg-recognition": {
      "title": "동부정맥 — 같은 P파, 서서히 변하는 PP",
      "page": 32,
-     "concept_hash": "3701ae6e488aec85",
+     "concept_hash": "9e874574883bd47a",
+     "concept_version": 1
+    },
+    "cn.cardio.focal-atrial-tachycardia.ecg-differential": {
+     "title": "국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다",
+     "page": 33,
+     "concept_hash": "64b62a39725a8c49",
      "concept_version": 1
     },
     "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
      "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
-     "page": 33,
+     "page": 35,
      "concept_hash": "d685cd64da546109",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 35,
+     "page": 36,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": {
      "title": "심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)",
-     "page": 38,
+     "page": 39,
      "concept_hash": "be4911c141b1d12c",
      "concept_version": 2
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 39,
+     "page": 40,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 41,
+     "page": 42,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 44,
+     "page": 45,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 46,
+     "page": 47,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 49,
+     "page": 50,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 52,
+     "page": 53,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "50c3db0e6f0cdb7fce8228593dca3ff2",
-    "version": 28,
-    "uploaded": "2026-11-12T12:52:57+09:00"
+    "md5": "8cb0950736cfc814565b930642667263",
+    "version": 29,
+    "uploaded": "2026-11-13T12:18:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -217,11 +223,12 @@
     "MedKOS_학습서_순환기내과_v25_2026-11-09.pdf",
     "MedKOS_학습서_순환기내과_v26_2026-11-10.pdf",
     "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf",
-    "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf"
+    "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf",
+    "MedKOS_학습서_순환기내과_v29_2026-11-13.pdf"
    ],
    "changes": [
-    "새 단원: 좁은 QRS 빈맥 — 방실결절을 막아 기전을 가른다",
-    "내용 수정: 동부정맥 — 같은 P파, 서서히 변하는 PP"
+    "내용 수정: 동부정맥 — 같은 P파, 서서히 변하는 PP",
+    "새 단원: 국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다"
    ]
   },
   "피부과": {
@@ -1711,13 +1718,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "32d9a8c985c787f0f10f0a1548144a7e",
+   "md5": "a122dbfbd01e49ddcfc76fe454a70e90",
    "version": null,
-   "uploaded": "2026-11-12T12:52:57+09:00"
+   "uploaded": "2026-11-13T12:18:04+09:00"
   }
  },
- "updated": "2026-11-12"
+ "updated": "2026-11-13"
 }

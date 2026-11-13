@@ -1,5 +1,5 @@
 {
- "started": "2026-11-12T11:26:33+09:00",
+ "started": "2026-11-13T11:03:40+09:00",
  "built": [
   "순환기내과"
  ],
@@ -56,7 +56,7 @@
  ],
  "layout_trials": {
   "순환기내과": {
-   "tried": 575,
+   "tried": 595,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -99,14 +99,18 @@
     "u-cn-cardio-complete-av-block-permanent-pacemaker#shrink": 1.0,
     "u-cn-cardio-complete-av-block-permanent-pacemaker#pad": 0,
     "u-cn-cardio-complete-av-block-permanent-pacemaker#col": false,
-    "u-cn-cardio-sinus-arrhythmia-ecg-recognition": 11,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition": 14,
     "u-cn-cardio-sinus-arrhythmia-ecg-recognition#shrink": 1.0,
-    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#pad": 42,
-    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#col": false,
-    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg": 12,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#pad": 0,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#col": true,
+    "u-cn-cardio-focal-atrial-tachycardia-ecg-differential": 8,
+    "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#shrink": 1.0,
+    "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#pad": 0,
+    "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#col": false,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg": 11,
     "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#shrink": 1.0,
     "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#pad": 0,
-    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#col": false,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#col": true,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation": 11,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#shrink": 1.0,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#pad": 28,
@@ -119,7 +123,7 @@
   }
  },
  "result": "ok",
- "finished": "2026-11-12T12:52:57+09:00",
+ "finished": "2026-11-13T12:18:04+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -128,17 +132,17 @@
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "50c3db0e6f0cdb7fce8228593dca3ff2",
-    "archive": "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf"
+    "md5": "8cb0950736cfc814565b930642667263",
+    "archive": "MedKOS_학습서_순환기내과_v29_2026-11-13.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "32d9a8c985c787f0f10f0a1548144a7e"
+    "md5": "a122dbfbd01e49ddcfc76fe454a70e90"
    }
   },
-  "at": "2026-11-12T12:52:57+09:00"
+  "at": "2026-11-13T12:18:04+09:00"
  }
 }
