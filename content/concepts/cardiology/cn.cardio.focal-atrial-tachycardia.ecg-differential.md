@@ -145,6 +145,9 @@ figures_wanted:
   caption_terms:
   - atrial tachycardia
   modality: ECG
+figures_rejected:
+- asset: PMC-PMC13530901_Figure3
+  reason: 체표 12유도 심전도가 아니라 심장내 전기생리 기록(CS·RV 전극) — 체표 유도에서 P파가 보이지 않아 요청한 소견(등전위선 사이 뚜렷한 P파)이 없다
 ---
 
 ## 판단 — 왜 P파와 방실 차단 반응을 먼저 보나

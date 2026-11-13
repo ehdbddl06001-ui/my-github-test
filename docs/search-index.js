@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4684,
+  "total": 4690,
   "byType": {
+   "paper": 932,
    "kmle": 1824,
    "concept": 164,
    "usmle": 264,
-   "paper": 926,
    "imaging": 643,
    "anatomy": 846,
    "ailab": 14,
@@ -18,23 +18,23 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 330,
+   "Cardiology": 331,
    "Nephrology": 249,
-   "Infectious Disease": 228,
-   "Pediatrics": 217,
+   "Infectious Disease": 229,
+   "Pediatrics": 218,
    "Obstetrics & Gynecology": 161,
    "Rheumatology": 141,
-   "Pathology": 138,
+   "Pathology": 139,
    "Psychiatry": 138,
    "Neurology": 136,
-   "Hematology-Oncology": 130,
+   "Hematology-Oncology": 131,
    "Orthopedics": 127,
    "General Surgery": 122,
    "Endocrinology": 120,
+   "Surgery": 120,
    "Dermatology": 119,
    "Gastroenterology": 119,
    "Ophthalmology": 119,
-   "Surgery": 119,
    "Pulmonology": 118,
    "Hematology": 111,
    "Laboratory Medicine": 96,
@@ -79,13 +79,115 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1315,
    "high": 3322,
-   "medium": 1309,
    "low": 53
   },
   "tagCount": 5492
  },
  "docs": [
+  {
+   "id": "paper-2026-0932",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JCO clinical cancer informatics",
+   "confidence": "medium",
+   "date": "2026-11-13",
+   "path": "content/papers/2026/2026-11-13_paper-2026-0932_multimodal_deep_learning_prognostic_model_for_predicting_tre.md",
+   "snippet": "Title Multimodal Deep Learning Prognostic Model for Predicting Treatment Outcomes for Oropharyngeal Carcinoma Authors Zhu Simeng, Gilbert Marissa, Siddiqui Farzan Journal / DOI JCO clinical cancer informatics · DOI: 10.1200/CCI 26 00226 · P",
+   "text": "Surgery scraped pubmed PubMed / JCO clinical cancer informatics Title Multimodal Deep Learning Prognostic Model for Predicting Treatment Outcomes for Oropharyngeal Carcinoma Authors Zhu Simeng, Gilbert Marissa, Siddiqui Farzan Journal / DOI JCO clinical cancer informatics · DOI: 10.1200/CCI 26 00226 · PMID: 43019507 https://pubmed.ncbi.nlm.nih.gov/43019507/ Abstract PURPOSE: Accurate prediction of locoregional recurrence (LRR) in oropharyngeal squamous cell carcinoma (OPSCC) is needed to guide treatment de escalation decisions, but validated prognostic models integrating imaging and clinical data are lacking. We developed and evaluated a multimodal deep learning model combining pretreatment computed tomography (CT) with clinical variables to predict LRR. METHODS: In this retrospective multicenter prognostic study, we assembled 1,384 patients with histologically confirmed OPSCC treated with definitive radiotherapy with or without concurrent chemotherapy and without surgical resection of the primary tumor. Data were drawn from 1 private institutional archive and five publicly available archives. A cross attention model fusing CT and clinical features was compared with feature concatenation, clinical only, and imaging only models. The primary outcome was LRR. Discrimination was assessed by Harrell Concordance Index (C index) across 3 fold cross validation, and risk stratification by Kaplan Meier analysis with log rank testing. Attribution analysis was used to identify influential predictors. RESULTS: LRR occurred in 161 of 1,384 patients (11.6%) over a median follow up of 59.8 months (interquartile range, 25.8 89.0 months). The cross attention model achieved the highest mean C index, 0.718 (range, 0.699 0.734), followed by the clinical only (0.705; range, 0.680 0.735), feature concatenation (0.697; range, 0.673 0.721), and imaging only (0.674; range, 0.666 0.680) models. High risk patients had significantly shorter LRR free survival than low risk patients in all three folds (log rank P < .001 for each). Smoking history and human papillomavirus status were the most influential clinical predictors. CONCLUSION: A multimodal cross attention deep learning model integrating CT with clinical variables showed numerically better discrimination for LRR prediction in OPSCC than unimodal approaches. Prospective external validation is required before such models inform individualized treatment decisions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0931",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA network open",
+   "confidence": "medium",
+   "date": "2026-11-13",
+   "path": "content/papers/2026/2026-11-13_paper-2026-0931_hand_arm_bimanual_intensive_therapy_including_lower_extremit.md",
+   "snippet": "Title Hand Arm Bimanual Intensive Therapy Including Lower Extremities in Preschoolers With Bilateral Cerebral Palsy: A Randomized Clinical Trial Authors Araneda Rodrigo, Ebner Karestinos Daniela, Paradis Julie, Saussez Geoffroy, Demas Josse",
+   "text": "Pediatrics scraped pubmed PubMed / JAMA network open Title Hand Arm Bimanual Intensive Therapy Including Lower Extremities in Preschoolers With Bilateral Cerebral Palsy: A Randomized Clinical Trial Authors Araneda Rodrigo, Ebner Karestinos Daniela, Paradis Julie, Saussez Geoffroy, Demas Josselin, Bailly Rodolphe, Bouvier Sandra, Carton de Tournai Astrid, et al. Journal / DOI JAMA network open · DOI: 10.1001/jamanetworkopen.2026.43492 · PMID: 43018972 https://pubmed.ncbi.nlm.nih.gov/43018972/ Abstract IMPORTANCE: Intensive interventions for children with cerebral palsy (CP) have traditionally focused on the upper extremities, despite frequent impairments in gross motor function and the critical period of motor development occurring before age 5 years. Hand Arm Bimanual Intensive Therapy Including Lower Extremities (HABIT ILE) has demonstrated efficacy in improving manual dexterity and gross motor function in school aged children, but evidence in preschool children with bilateral CP remains limited. OBJECTIVE: To determine whether early HABIT ILE improves gross motor function more than usual unstructured motor activities in preschool aged children with bilateral CP. DESIGN, SETTING, AND PARTICIPANTS: This multicenter randomized clinical trial was conducted between December 2019 and December 2021. Recruitment was from European university hospitals, CP specialized centers, and spontaneous applications at 4 sites: Brussels, Belgium; Brest and Angers, France; and Pisa, Italy. Children aged 12 to 59 months with spastic or dyskinetic bilateral CP who were able to follow instructions were included. Exclusion criteria were uncontrolled seizures, scheduled botulinum toxin injections or orthopedic surgery during the 6 months before or during the study period, severe visual or cognitive impairments, and contraindications to magnetic resonance imaging. Data were analyzed in May 2024. INTERVENTIONS: Children were randomly assigned (1:1) to receive 2 weeks of usual motor activity, including usual rehabilitation (control group), or 2 weeks (50 hours) of HABIT ILE (HABIT ILE group). MAIN OUTCOMES AND MEASURES: The primary outcome was Gross Motor Function Measure 66 (GMFM 66; range, 0 100, with lower scores indicating lesser gross motor ability). Secondary outcomes included Both Hand Assessment (BoHA), Melbourne Assessment 2, Pediatric Evaluation of Disability Inventory Computer Adaptive Test (PEDI CAT), and Canadian Occupational Performance Measure (COPM). Assessments were performed at baseline (immediately before intervention) and 2 weeks and 3 months after baseline. RESULTS: Among 49 preschool children with CP (mean [SD] age, 40.18 [11.53] months; 18 girls [36.7%] and 31 boys [63.3%]), Gross Motor Function Classification levels were I in 5 children, II in 14 children, III in 17 children, and IV or V in 13 children and Mini Manual Ability Classification levels were I in 10 children, II in 27 children, III in 7 children, and IV or V in 6 children. Change in mean (SD) GMFM 66 score from baseline to 3 months was significantly greater in the HABIT ILE group (5.01 [2.52] logits) than the control group (0.70 [1.98] logits) (adjusted mean difference [aMD] in score, 4.33 logits; 95% CI, 3.03 5.62 logits; P < .001). Likewise, mean (SD) scores favored the HABIT ILE group vs the control group for secondary outcomes of BoHA (5.32 [4.47] vs 0.13 [5.16]; aMD, 5.15; 95% CI, 2.23 8.08; P < .001), PEDI CAT mobility domain (1.70 [2.18] vs 0.40 [4.38]; aMD, 2.27; 95% CI, 0.20 4.33; P = .03), and COPM performance (4.22 [1.61] vs 1.14 [1.35]; aMD, 3.55; 95% CI, 2.86 4.24; P < .001) and satisfaction (4.37 [1.38] vs 1.15 [1.63]; aMD, 3.11; 95% CI, 2.25 3.97; P < .001). CONCLUSIONS AND RELEVANCE: In this randomized clinical trial, early HABIT ILE significantly improved upper and lower extremities motor performance in preschool aged children with bilateral CP at 3 months after the intervention. These findings suggest that HABIT ILE is effective in improving gross motor function in preschool aged children with bilateral CP. TRIAL REGISTRATION: Clinicaltrial.gov Identifier: NCT04020354. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0930",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The American surgeon",
+   "confidence": "medium",
+   "date": "2026-11-13",
+   "path": "content/papers/2026/2026-11-13_paper-2026-0930_when_a_pannet_is_not_a_pannet_avoiding_the_diagnostic_pitfal.md",
+   "snippet": "Title When a PanNET Is Not a PanNET: Avoiding the Diagnostic Pitfalls of Peripancreatic Paraganglioma A Case Based Review Authors Coffin Mackenzie L, McCrea Grace E, Songtanin Busara, Das Kanak, Ullah Asad, Mouw Tyler J Journal / DOI The Am",
+   "text": "Pathology scraped pubmed PubMed / The American surgeon Title When a PanNET Is Not a PanNET: Avoiding the Diagnostic Pitfalls of Peripancreatic Paraganglioma A Case Based Review Authors Coffin Mackenzie L, McCrea Grace E, Songtanin Busara, Das Kanak, Ullah Asad, Mouw Tyler J Journal / DOI The American surgeon · DOI: 10.1177/00031348261508229 · PMID: 43019451 https://pubmed.ncbi.nlm.nih.gov/43019451/ Abstract Paragangliomas are rare extra adrenal neuroendocrine tumors, with pancreas involvement being extremely uncommon. Their clinical and radiologic similarity with other more common pancreatic neoplasms can cause diagnostic uncertainty. We present a 70 year old man who presented with acute cholangitis, and a 4.4 cm pancreatic tail mass was found incidentally. Biopsy suggested a well differentiated neuroendocrine tumor. Despite imaging and biopsy, the diagnosis was made postoperatively with histopathology revealing a paraganglioma in the peripancreatic fat. This case and brief review highlights the limitations of current diagnostic modalities and the need for a comprehensive evaluation in distinguishing paragangliomas from pancreatic neuroendocrine tumors, which is essential for surgery, genetic counseling, and long term management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0929",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-11-13",
+   "path": "content/papers/2026/2026-11-13_paper-2026-0929_second_cancer_risk_in_female_survivors_of_hodgkin_lymphoma_a.md",
+   "snippet": "Title Second Cancer Risk in Female Survivors of Hodgkin Lymphoma: A National Cohort Analysis Across Treatment Eras Authors Macklin Doherty Aislinn, Cunningham David, Chau Ian, Bates Andrew, Benstead Kim, Bower Mark, Brunt Murray, Fields Pau",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Second Cancer Risk in Female Survivors of Hodgkin Lymphoma: A National Cohort Analysis Across Treatment Eras Authors Macklin Doherty Aislinn, Cunningham David, Chau Ian, Bates Andrew, Benstead Kim, Bower Mark, Brunt Murray, Fields Paul, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO 26 00418 · PMID: 43019503 https://pubmed.ncbi.nlm.nih.gov/43019503/ Abstract PURPOSE: Subsequent primary malignancies (SPMs) are the leading cause of long term treatment related mortality in Hodgkin lymphoma (HL). Although treatments have evolved substantially over recent decades, few studies have demonstrated reductions in SPM risks following modern treatments, nor how such changes should inform survivorship care and screening. We analyzed SPM risks in a large female cohort of childhood and adult patients with HL treated over a 60 year period. MATERIALS AND METHODS: This population based cohort study included 7,428 women diagnosed with HL before age 36 years in England and Wales from 1954 to 2010, with follow up through 2018. SPMs were ascertained via national cancer registry linkages. Standardized incidence ratios (SIRs), absolute excess risks, and multivariable models were used to assess temporal trends and associations with treatment. RESULTS: During a median follow up of 20.2 years, 1,200 women developed 1,467 invasive cancers (SIR, 3.3 [95% CI, 3.1 to 3.5]), most commonly breast, lung, and thyroid cancers. Solid tumor risks were the highest following radiotherapy, with a strong dose dependent response. Alkylator use with radiotherapy was associated with reduced risks of breast cancer but increased risks of GI cancers. Solid cancer risks decreased by 25% between treatment periods 1954 1989 and 2000 2010. The decrease was attenuated and nonsignificant after adjustment for radiotherapy but not affected by adjustment for chemotherapy. No decline was observed for hematologic malignancies. Cumulative incidence of SPMs reached 36% at 50 years. CONCLUSION: Female patients treated in more recent eras have a substantially lower long term risk of solid SPMs largely attributable to the reduced use, dose, and improvement in radiotherapy. Nevertheless, persistently elevated risks remained beyond 50 years of follow up, particularly for lung and breast cancer, underscoring the need for lifelong surveillance and targeted screening of survivors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0928",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-11-13",
+   "path": "content/papers/2026/2026-11-13_paper-2026-0928_paired_neutrophil_association_and_ex_vivo_perturbation_sensi.md",
+   "snippet": "Title Paired neutrophil association and ex vivo perturbation sensitivity define a bounded myeloid activation model in ARDS Authors Wei Wei, Liu Jing, Zhou Ying, Zhao Rui, Zhang LinGang Journal / DOI PloS one · DOI: 10.1371/journal.pone.0362",
+   "text": "Infectious Disease scraped pubmed PubMed / PloS one Title Paired neutrophil association and ex vivo perturbation sensitivity define a bounded myeloid activation model in ARDS Authors Wei Wei, Liu Jing, Zhou Ying, Zhao Rui, Zhang LinGang Journal / DOI PloS one · DOI: 10.1371/journal.pone.0362747 · PMID: 43019329 https://pubmed.ncbi.nlm.nih.gov/43019329/ Abstract BACKGROUND: Acute respiratory distress syndrome (ARDS) is biologically heterogeneous, but how myeloid transcriptional programmes relate across blood and lung compartments remains uncertain. We examined whether a pre specified neutrophil effector/degranulation programme and a separately derived perturbation response module provide convergent, boundary aware evidence across public cohorts. METHODS: Patient level analyses descriptively localized programmes in a seven patient peripheral blood mononuclear cell cohort and assessed paired bronchoalveolar lavage fluid and longitudinal alveolar macrophage profiles. PBMC disease groups were severely confounded with expression inferred sex. In purified neutrophils, paired ARDS healthy volunteer comparisons and healthy donor granulocyte macrophage colony stimulating factor (GM CSF)/broad phosphoinositide 3 kinase (PI3K) perturbations were analysed separately. A donor adjusted whole transcriptome weighted gene coexpression network analysis (WGCNA) derived a module under frozen retention rules, which was externally projected using fixed loadings and a pre specified coverage gate. RESULTS: The neutrophil degranulation programme was higher in all 12 ARDS healthy volunteer pairs (mean paired difference, 0.0321; Benjamini Hochberg false discovery rate [BH FDR] = 0.000977), increased after GM CSF in 9 of 10 donors (BH FDR = 0.0276) and decreased after broad pan PI3K inhibition in all 10 donors (BH FDR = 0.00469). No gene passed the genome wide three direction conjunction threshold; SERPINB1, PNP and TLR2 were retained only as pathway restricted directional response anchors. A separate 627 gene green module met the perturbation response rule (conjunction BH FDR = 3.50 × 10⁻⁴) and showed functional convergence with limited gene level overlap. PBMC localization was descriptive, without an interpretable ARDS sepsis contrast. External green projection showed post hoc monocyte/macrophage biased ordering rather than neutrophil specificity. In eight paired BALF patients, the pre specified contrast was directionally opposite but inconclusive (P = 0.571); longitudinal outcome evidence was inconsistent. CONCLUSIONS: These data support an ARDS associated myeloid/neutrophil effector programme with paired disease association and ex vivo GM CSF/pan PI3K sensitivity. They support mechanistic prioritization of compartment dependent myeloid biology, but not a prognostic signature, a causal programme to outcome mechanism, PI3K isoform specificity or PI3K directed therapeutic efficacy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0927",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-11-13",
+   "path": "content/papers/2026/2026-11-13_paper-2026-0927_relaxin_2_reverses_diastolic_dysfunction_and_suppresses_sust.md",
+   "snippet": "Title Relaxin 2 reverses diastolic dysfunction and suppresses sustained arrhythmias in a rat model of Heart Failure with preserved Ejection Fraction (HFpEF) Authors Palma Joshua B, Gabris Weber Bethann, McMahon Brenda, Mauro Anthony J, St H",
+   "text": "Cardiology scraped pubmed PubMed / PloS one Title Relaxin 2 reverses diastolic dysfunction and suppresses sustained arrhythmias in a rat model of Heart Failure with preserved Ejection Fraction (HFpEF) Authors Palma Joshua B, Gabris Weber Bethann, McMahon Brenda, Mauro Anthony J, St Hilaire Cynthia, Cuevas Rolando A, Dschietzig Thomas B, Romero Guillermo, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0350373 · PMID: 43019361 https://pubmed.ncbi.nlm.nih.gov/43019361/ Abstract AIMS: Heart failure with preserved ejection fraction (HFpEF) afflicts millions annually and current treatments provide symptomatic relief. The goal is to test the effects of synthetic human Relaxin 2 (RLX) on diastolic dysfunction (DD) and arrhythmia vulnerability. METHODS AND RESULTS: Male ZSF1 rats were placed on a normal diet (ND, N = 8 controls) or a high fat diet (HFD, N = 11), resulting in the development of DD in 11 weeks, based on serial echocardiograms (enlarged left atrium (LA), wall thickness, doppler flow: E/e'). Once HFpEF was confirmed, ND and HFpEF rats were randomly treated with Relaxin (400 µg/kg/day RLX, N = 6) or the vehicle (N = 5) for 2 weeks using implanted minipumps. Echocardiograms were repeated for 2 more weeks, then hearts were isolated, optically mapped, subjected to programmed electrical stimulation (PES) and tissues dissected for immuno fluorescence (IF), and qPCR analysis. Circulating levels of glucose, RLX and NT pro ANP were measured, pre and post treatment. Echocardiograms indicated that RLX reversed DD by reducing LA dimensions and E/e'. Optical mapping showed that vehicle treated, ND rats (N = 3) had non sustained atrial (1/3), and ventricular (3/3) arrhythmias and RLX treatment reduced them to 0/3 and 1/3, respectively. Vehicle treated, HFD rats had non sustained (2/5) and sustained (2/5) atrial and ventricular arrhythmias (N = 5). RLX treatment (N = 6) suppressed sustained atrial and ventricular arrhythmias (0/6) but not non sustained atrial (2/6) and ventricular (3/6) arrhythmias. RLX tended to increase conduction velocity (CV), particularly at short cycle lengths consistent with increased Nav1.5, Connexin 43, β catenin and Wnt1 expression, based on IF. There were no significant changes in fibrosis in this HFpEF model. NT pro ANP was elevated in HFpEF and reduced towards control values by RLX. qPCR analysis showed that RLX decreased Dickkopf (DKK1) and Matrix Metallopeptidase 1a (MMP1A) genes and increased SCN5A expression compared to vehicle (N = 6 and 5, respectively). CONCLUSIONS: The ZSF1 model showed indications of HFpEF, including DD, enlargement of the LA, hemodynamic stress, increased vulnerability to sustained AF and VF, and elevated glucose and blood pressure. RLX treatment largely reversed DD, hemodynamic stress, and suppressed sustained arrhythmias. RLX elicited cardiac genomic changes, most likely through Wnt/canonical signaling, demonstrating RLX's potential as a therapy for HFpEF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1859",
    "type": "kmle",

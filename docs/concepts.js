@@ -10115,7 +10115,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-13",
   "reviewStatus": "unreviewed",
-  "hash": "64b62a39725a8c49",
+  "hash": "662ffacb256c1ec9",
   "summary": [
    "결론: 동리듬과 다른 모양의 뚜렷한 P파가 빠르게 이어지고, 방실 차단이 생겨도 심방 박동이 그대로면 국소 심방빈맥이다.",
    "시험 단서: P파 사이 등전위선(isoelectric line), RP > PR, 방실 차단 동반(특히 디곡신 복용), 갑작스런 시작·끝 또는 warm-up.",
@@ -19251,7 +19251,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-11",
   "reviewStatus": "unreviewed",
-  "hash": "9e874574883bd47a",
+  "hash": "def75fe8afb94f87",
   "summary": [
    "결론: P파 모양이 모두 같고 PP 간격만 0.12초 넘게 서서히 늘었다 줄었다 하면 동부정맥 — 정상 소견이다.",
    "시험 단서: 젊고 건강한 사람, 쉴 때·깊은 호흡 때 「맥이 고르지 않다」, 증상 없음, 검사 정상(respiratory sinus arrhythmia).",
@@ -72376,7 +72376,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-02",
   "reviewStatus": "unreviewed",
-  "hash": "54b97ef726b644be",
+  "hash": "1bc16a20f5b28885",
   "summary": [
    "결론: 안압 정상 + 녹내장성 시신경유두 변화 = 정상안압 녹내장 의심 → 다음은 자동 정적 시야검사.",
    "시험 단서: 검진 안저사진의 비대칭 함몰비, 테두리 패임·유두 출혈(disc hemorrhage), 쐐기 모양 신경섬유층 결손.",
