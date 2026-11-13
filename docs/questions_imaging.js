@@ -2,6 +2,1582 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0656",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 몇 주 전 오래 이어진 가슴 통증이 있었던 여성",
+  "type": "심전도 판독 — 몇 주 전 오래 이어진 가슴 통증이 있었던 여성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-13",
+  "vignette": "A 43-year-old woman comes to the physician for a follow-up visit. Five weeks ago, she had severe chest pressure for several hours that she attributed to stress and did not seek care. Since then she has had mild dyspnea when climbing two flights of stairs. She has type 1 diabetes mellitus and smokes 1 pack of cigarettes daily. Her blood pressure is 122/76 mm Hg, and pulse is 62/min. The lungs are clear, and there is no jugular venous distention. High-sensitivity troponin I concentration is within the reference range. A 12-lead ECG is shown.",
+  "question": "Occlusion of which of the following arteries is the most likely cause of these findings?",
+  "options": [
+   "Left anterior descending artery",
+   "Left circumflex artery",
+   "Right coronary artery",
+   "Left main coronary artery",
+   "Posterior descending artery"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The rhythm is sinus at about 62/min. V1 and V2 show QS complexes with no initial r wave, and V3 has only a tiny r wave followed by a deep S wave, so R-wave progression is lost across the septal–anterior leads. There is no ST elevation, and the limb leads and V5–V6 have normal R waves. Pathologic Q waves in V1–V3 indicate an anteroseptal infarction, which is supplied by the septal and proximal diagonal branches of the left anterior descending artery. With a normal troponin and an event 5 weeks ago, it is an established (old) infarction.\n- 원리: <b>Why a Q wave appears</b>: Normally the septum depolarizes left to right first, producing a small r in V1–V2. When the septum and anterior wall are replaced by scar, that tissue no longer generates forward-pointing forces; the electrode then \"looks through\" the electrically silent window to the opposite wall, whose forces point away, recording a QS complex. In the precordial leads, any Q wave in V1–V3, or loss of the expected increase in R amplitude from V1 to V4, suggests anteroseptal infarction.<br> <b>Why it maps to the LAD</b>: The LAD runs in the anterior interventricular groove, sending septal perforators to the anterior two-thirds of the septum and diagonals to the anterior wall. V1–V2 face the septum, V3–V4 the anterior wall, and V5–V6 with I and aVL the lateral wall (circumflex/diagonals). The inferior leads (II, III, aVF) reflect the RCA in most people.<br> <b>Dating the infarct</b>: ST elevation that persists more than a few weeks after the event suggests a ventricular aneurysm; its absence with stable Q waves and normal troponin indicates a completed, healed infarct. The exertional dyspnea warrants echocardiography for left ventricular function.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Left anterior descending (answer)</th><th>Left circumflex (closest distractor)</th></tr></thead><tbody> <tr><td>Territory</td><td><b>Anterior septum and anterior wall</b></td><td>Lateral and posterolateral wall</td></tr> <tr><td>Leads with Q waves</td><td>V1–V3 (± V4)</td><td>I, aVL, V5–V6; posterior infarct shows tall R in V1–V2</td></tr> <tr><td>V1–V2 appearance</td><td>QS — septal r wave lost</td><td>Normal or tall R (mirror of posterior Q)</td></tr> <tr><td>This tracing</td><td>QS in V1–V2, tiny r in V3 — consistent</td><td>Normal R in I, aVL, V5–V6 — inconsistent</td></tr> </tbody></table> Q waves in V1–V3 mean the septum is lost, and the septum belongs to the LAD.\n- 오답 이유:\n  - (B) The left circumflex artery would be the answer if Q waves were in I, aVL, V5, and V6, or if tall R waves in V1–V2 indicated a posterior infarction.\n  - (C) The right coronary artery would be the answer if pathologic Q waves were in II, III, and aVF, since it supplies the inferior wall in most people.\n  - (D) Left main occlusion would cause extensive anterior and lateral damage, usually with shock, rather than Q waves confined to V1–V3 in a stable patient.\n  - (E) The posterior descending artery would be the answer for an isolated inferior or inferoposterior infarction with Q waves in II, III, and aVF.\n- 함정: Expecting ST elevation to make the diagnosis — weeks after an infarction, only the Q waves remain to localize it.\n- 학습목표: Read QS complexes in V1–V2 with loss of R-wave progression into V3 and no ST elevation as an established anteroseptal infarction and identify the left anterior descending artery as the culprit vessel\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5793 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm is sinus at about 62/min. V1 and V2 show QS complexes with no initial r wave, and V3 has only a tiny r wave followed by a deep S wave, so R-wave progression is lost across the septal–anterior leads. There is no ST elevation, and the limb leads and V5–V6 have normal R waves. Pathologic Q waves in V1–V3 indicate an anteroseptal infarction, which is supplied by the septal and proximal diagonal branches of the left anterior descending artery. With a normal troponin and an event 5 weeks ago, it is an established (old) infarction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a Q wave appears</b>: Normally the septum depolarizes left to right first, producing a small r in V1–V2. When the septum and anterior wall are replaced by scar, that tissue no longer generates forward-pointing forces; the electrode then \"looks through\" the electrically silent window to the opposite wall, whose forces point away, recording a QS complex. In the precordial leads, any Q wave in V1–V3, or loss of the expected increase in R amplitude from V1 to V4, suggests anteroseptal infarction.<br> <b>Why it maps to the LAD</b>: The LAD runs in the anterior interventricular groove, sending septal perforators to the anterior two-thirds of the septum and diagonals to the anterior wall. V1–V2 face the septum, V3–V4 the anterior wall, and V5–V6 with I and aVL the lateral wall (circumflex/diagonals). The inferior leads (II, III, aVF) reflect the RCA in most people.<br> <b>Dating the infarct</b>: ST elevation that persists more than a few weeks after the event suggests a ventricular aneurysm; its absence with stable Q waves and normal troponin indicates a completed, healed infarct. The exertional dyspnea warrants echocardiography for left ventricular function."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Left anterior descending (answer)</th><th>Left circumflex (closest distractor)</th></tr></thead><tbody> <tr><td>Territory</td><td><b>Anterior septum and anterior wall</b></td><td>Lateral and posterolateral wall</td></tr> <tr><td>Leads with Q waves</td><td>V1–V3 (± V4)</td><td>I, aVL, V5–V6; posterior infarct shows tall R in V1–V2</td></tr> <tr><td>V1–V2 appearance</td><td>QS — septal r wave lost</td><td>Normal or tall R (mirror of posterior Q)</td></tr> <tr><td>This tracing</td><td>QS in V1–V2, tiny r in V3 — consistent</td><td>Normal R in I, aVL, V5–V6 — inconsistent</td></tr> </tbody></table> Q waves in V1–V3 mean the septum is lost, and the septum belongs to the LAD."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) The left circumflex artery would be the answer if Q waves were in I, aVL, V5, and V6, or if tall R waves in V1–V2 indicated a posterior infarction.\n(C) The right coronary artery would be the answer if pathologic Q waves were in II, III, and aVF, since it supplies the inferior wall in most people.\n(D) Left main occlusion would cause extensive anterior and lateral damage, usually with shock, rather than Q waves confined to V1–V3 in a stable patient.\n(E) The posterior descending artery would be the answer for an isolated inferior or inferoposterior infarction with Q waves in II, III, and aVF."
+   },
+   {
+    "k": "함정",
+    "v": "Expecting ST elevation to make the diagnosis — weeks after an infarction, only the Q waves remain to localize it."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read QS complexes in V1–V2 with loss of R-wave progression into V3 and no ST elevation as an established anteroseptal infarction and identify the left anterior descending artery as the culprit vessel"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5793 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "QS complexes in V1–V2 with lost R-wave progression indicate an anteroseptal infarction from LAD occlusion",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The Q waves are in V1–V3, not in the lateral leads I, aVL, V5–V6",
+   "steps": 2,
+   "chain": [
+    "영상: QS in V1–V2, tiny r with deep S in V3, normal R in V5–V6, no ST elevation → established anteroseptal infarction",
+    "Anteroseptal territory is supplied by the septal and diagonal branches of the left anterior descending artery"
+   ],
+   "key": [
+    {
+     "item": "영상: QS complexes in V1 and V2 and a tiny r wave with deep S in V3",
+     "why": "Anteroseptal pathologic Q waves",
+     "also": []
+    },
+    {
+     "item": "Five weeks ago, she had severe chest pressure for several hours",
+     "why": "The missed infarction event",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: normal R waves in I, aVL, V5 and V6 and no Q waves in II, III, aVF",
+     "why": "Lowers the likelihood of circumflex or RCA territory infarction",
+     "also": []
+    },
+    {
+     "item": "High-sensitivity troponin I concentration is within the reference range",
+     "why": "Lowers the likelihood of an acute infarction now",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "type 1 diabetes mellitus",
+     "why": "Explains atypical or delayed presentation — does not change the territory",
+     "also": []
+    }
+   ],
+   "summary": "Q waves confined to V1–V3 with no ST elevation are an old anteroseptal infarction. That territory is supplied by the left anterior descending artery.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the pathologic Q waves were in II, III, and aVF instead, the right coronary artery"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0656.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05793",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5793"
+  },
+  "run_id": "20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0655",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 쉬면서도 가슴이 조였다가 지금은 통증이 없는 고령 남성",
+  "type": "심전도 처치 — 쉬면서도 가슴이 조였다가 지금은 통증이 없는 고령 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-13",
+  "vignette": "62세 남자가 오늘 새벽 쉬고 있을 때 가슴이 조이는 통증이 20분 동안 이어져 응급실에 왔다. 이틀 전에도 같은 통증이 있었다. 지금은 통증이 없다. 고혈압과 이상지질혈증으로 약을 먹고 있고 30년간 담배를 피웠다. 혈압 138/84 mmHg, 맥박 56회/분이다. 심음은 규칙적이고 잡음은 없으며 폐는 깨끗하다. 고감도 트로포닌 I 는 처음 기준치 이하였고 2시간 뒤 기준치의 4배로 올랐다. 12유도 심전도는 그림과 같다.",
+  "question": "아스피린을 투여한 뒤 가장 적절한 처치는?",
+  "options": [
+   "통증이 없으므로 외래에서 추적",
+   "흉부 CT 혈관조영술로 대동맥박리 확인",
+   "입원해 항응고제를 쓰고 24시간 안에 관상동맥조영술",
+   "즉시 혈전용해제 정맥 투여",
+   "당일 트레드밀 운동부하검사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)은 규칙적 동리듬 약 56회/분이다. V4 에 깊고 좌우 대칭인 T파 역위, V5 에 편평·얕은 T파 역위가 있고, V1·V2 는 QS 형이며 어느 유도에도 ST 상승은 없다 — 전벽 허혈 소견이다. 안정 시 반복된 흉통과 고감도 트로포닌의 상승·하강 패턴은 비ST분절상승 심근경색이며, 트로포닌 상승과 동적 T파 변화로 고위험군이다. 항혈소판 2제와 항응고제를 쓰고 24시간 안에 조기 침습적 관상동맥조영술을 한다. 운동부하검사는 불안정한 관상동맥 병변에 위험하다.\n- 원리: <b>왜 T파가 뒤집히는가</b>: 정상에서는 심외막이 심내막보다 먼저 재분극해 재분극 파면이 탈분극과 반대 방향으로 움직이고, 그래서 T파가 QRS 와 같은 방향(양성)이 된다. 허혈이 일어나면 그 부위의 활동전위 지속이 바뀌어 재분극 순서가 뒤집히고, 해당 영역을 보는 유도에서 <b>깊고 대칭인 T파 역위</b>가 나타난다. 전흉부(V2~V5)는 좌전하행지가 공급하는 전벽을 본다.<br> <b>왜 ST 상승이 없으면 혈전용해제를 쓰지 않는가</b>: ST 상승은 관상동맥이 완전히 막혀 심근 전층이 손상될 때 나타난다. 비ST분절상승 급성관상동맥증후군은 대개 부분 폐쇄·혈소판 풍부 혈전이라, 혈전용해제는 이득 없이 출혈과 혈소판 활성화만 늘린다.<br> <b>침습적 전략의 시기</b>: 혈역학 불안정·지속 통증·심부전·악성 부정맥 → 2시간 이내, 트로포닌으로 확진된 심근경색·동적 ST-T 변화·GRACE > 140 → 24시간 이내, 나머지 → 입원 중 선택적. 이 환자는 24시간 이내 군이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">조기 관상동맥조영술(정답)</th><th>운동부하검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>트로포닌 상승 · 동적 ST-T 변화</b>가 있는 급성관상동맥증후군</td><td>트로포닌 정상 · 심전도 정상인 저위험 흉통</td></tr> <tr><td>목적</td><td>원인 병변을 찾아 바로 재관류</td><td>안정형 협심증의 허혈 유발 여부 확인</td></tr> <tr><td>왜 그 기준인가</td><td>불안정 판막(플라크)이 이미 파열돼 있다</td><td>운동이 파열된 플라크에 부하를 줘 경색을 일으킬 수 있다</td></tr> <tr><td>이 환자</td><td>트로포닌 4배 상승 · V4 깊은 T파 역위 — 해당</td><td>금기</td></tr> </tbody></table> 트로포닌이 오르면 「부하 검사로 확인」이 아니라 「혈관을 직접 본다」로 넘어간다.\n- 오답 이유:\n  - ① 외래 추적은 고감도 트로포닌이 두 번 모두 정상이고 심전도 변화가 없는 저위험 흉통이라면 고려할 수 있다.\n  - ② 흉부 CT 혈관조영술은 등으로 찢어지는 통증·양팔 혈압 차·종격동 확장이 있어 대동맥박리를 의심할 때 정답이 된다.\n  - ④ 혈전용해제는 두 개 이상의 인접 유도에서 ST 상승이 있고 120분 안에 경피적 관상동맥중재술을 할 수 없을 때 정답이 된다.\n  - ⑤ 트레드밀 운동부하검사는 연속 트로포닌과 심전도가 정상인 저위험 흉통 환자를 퇴원 전에 평가할 때 정답이 된다.\n- 함정: 통증이 없으니 안정형으로 보고 부하검사를 고르는 것 — 트로포닌 상승과 전흉부 T파 역위는 고위험 급성관상동맥증후군이다.\n- 학습목표: 안정 시 흉통 뒤 통증이 없는 환자의 전흉부 깊고 대칭인 T파 역위를 고위험 비ST분절상승 급성관상동맥증후군으로 보고, 운동부하검사가 아니라 입원·항혈소판·항응고와 조기 관상동맥조영술을 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6120 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)은 규칙적 동리듬 약 56회/분이다. V4 에 깊고 좌우 대칭인 T파 역위, V5 에 편평·얕은 T파 역위가 있고, V1·V2 는 QS 형이며 어느 유도에도 ST 상승은 없다 — 전벽 허혈 소견이다. 안정 시 반복된 흉통과 고감도 트로포닌의 상승·하강 패턴은 비ST분절상승 심근경색이며, 트로포닌 상승과 동적 T파 변화로 고위험군이다. 항혈소판 2제와 항응고제를 쓰고 24시간 안에 조기 침습적 관상동맥조영술을 한다. 운동부하검사는 불안정한 관상동맥 병변에 위험하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 T파가 뒤집히는가</b>: 정상에서는 심외막이 심내막보다 먼저 재분극해 재분극 파면이 탈분극과 반대 방향으로 움직이고, 그래서 T파가 QRS 와 같은 방향(양성)이 된다. 허혈이 일어나면 그 부위의 활동전위 지속이 바뀌어 재분극 순서가 뒤집히고, 해당 영역을 보는 유도에서 <b>깊고 대칭인 T파 역위</b>가 나타난다. 전흉부(V2~V5)는 좌전하행지가 공급하는 전벽을 본다.<br> <b>왜 ST 상승이 없으면 혈전용해제를 쓰지 않는가</b>: ST 상승은 관상동맥이 완전히 막혀 심근 전층이 손상될 때 나타난다. 비ST분절상승 급성관상동맥증후군은 대개 부분 폐쇄·혈소판 풍부 혈전이라, 혈전용해제는 이득 없이 출혈과 혈소판 활성화만 늘린다.<br> <b>침습적 전략의 시기</b>: 혈역학 불안정·지속 통증·심부전·악성 부정맥 → 2시간 이내, 트로포닌으로 확진된 심근경색·동적 ST-T 변화·GRACE > 140 → 24시간 이내, 나머지 → 입원 중 선택적. 이 환자는 24시간 이내 군이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">조기 관상동맥조영술(정답)</th><th>운동부하검사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>트로포닌 상승 · 동적 ST-T 변화</b>가 있는 급성관상동맥증후군</td><td>트로포닌 정상 · 심전도 정상인 저위험 흉통</td></tr> <tr><td>목적</td><td>원인 병변을 찾아 바로 재관류</td><td>안정형 협심증의 허혈 유발 여부 확인</td></tr> <tr><td>왜 그 기준인가</td><td>불안정 판막(플라크)이 이미 파열돼 있다</td><td>운동이 파열된 플라크에 부하를 줘 경색을 일으킬 수 있다</td></tr> <tr><td>이 환자</td><td>트로포닌 4배 상승 · V4 깊은 T파 역위 — 해당</td><td>금기</td></tr> </tbody></table> 트로포닌이 오르면 「부하 검사로 확인」이 아니라 「혈관을 직접 본다」로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 외래 추적은 고감도 트로포닌이 두 번 모두 정상이고 심전도 변화가 없는 저위험 흉통이라면 고려할 수 있다.\n② 흉부 CT 혈관조영술은 등으로 찢어지는 통증·양팔 혈압 차·종격동 확장이 있어 대동맥박리를 의심할 때 정답이 된다.\n④ 혈전용해제는 두 개 이상의 인접 유도에서 ST 상승이 있고 120분 안에 경피적 관상동맥중재술을 할 수 없을 때 정답이 된다.\n⑤ 트레드밀 운동부하검사는 연속 트로포닌과 심전도가 정상인 저위험 흉통 환자를 퇴원 전에 평가할 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "통증이 없으니 안정형으로 보고 부하검사를 고르는 것 — 트로포닌 상승과 전흉부 T파 역위는 고위험 급성관상동맥증후군이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "안정 시 흉통 뒤 통증이 없는 환자의 전흉부 깊고 대칭인 T파 역위를 고위험 비ST분절상승 급성관상동맥증후군으로 보고, 운동부하검사가 아니라 입원·항혈소판·항응고와 조기 관상동맥조영술을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6120 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "트로포닌 상승과 전흉부 깊은 T파 역위의 비ST분절상승 심근경색은 항응고 후 24시간 안에 관상동맥조영술을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "고감도 트로포닌이 기준치의 4배로 올랐고 V4 에 동적 T파 역위가 있다",
+   "steps": 3,
+   "chain": [
+    "영상: V4 깊고 대칭인 T파 역위, V5 T파 역위, ST 상승 없음 → 전벽 허혈, ST분절상승 심근경색 아님",
+    "안정 시 반복 흉통 + 고감도 트로포닌 상승 → 비ST분절상승 심근경색",
+    "트로포닌 확진 심근경색 = 고위험 → 항응고 후 24시간 안 관상동맥조영술"
+   ],
+   "key": [
+    {
+     "item": "영상: V4 깊고 좌우 대칭인 T파 역위, V5 얕은 T파 역위",
+     "why": "전벽 허혈",
+     "also": []
+    },
+    {
+     "item": "2시간 뒤 기준치의 4배로 올랐다",
+     "why": "심근경색 확진 · 고위험",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 어느 유도에도 ST 상승 없음",
+     "why": "ST분절상승 심근경색 가능성을 낮춘다 — 혈전용해 대상 아님",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "지금은 통증이 없다",
+     "why": "즉시(2시간 이내)가 아니라 24시간 이내 군",
+     "also": []
+    },
+    {
+     "item": "혈압 138/84 mmHg",
+     "why": "혈역학 안정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "30년간 담배를 피웠다",
+     "why": "위험인자 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "전흉부 T파 역위와 트로포닌 상승으로 비ST분절상승 심근경색이다. 고위험이고 통증은 멎었으므로 항응고 후 24시간 안에 관상동맥조영술을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "V1~V4 에 ST 상승이 있고 2시간 안에 중재술을 할 수 없는 병원이라면 혈전용해제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0655.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/06000/#files-panel",
+   "asset_id": "PTBXL-06120",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 6120"
+  },
+  "run_id": "20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0654",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 열이 나고 두근거리는 중년 남성",
+  "type": "심전도 판독 — 열이 나고 두근거리는 중년 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-13",
+  "vignette": "53세 남자가 2일 전부터 열이 나고 가슴이 두근거려 응급실에 왔다. 두근거림은 갑자기 시작하거나 갑자기 멈추지 않았고 열이 오를 때 심해졌다. 기침과 누런 가래가 있다. 체온 38.9°C, 혈압 128/76 mmHg, 맥박 128회/분, 호흡 22회/분이다. 오른쪽 아래 폐에서 수포음이 들린다. 혈청 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "심방세동",
+   "동빈맥",
+   "발작성 상심실빈맥",
+   "2:1 전도 심방조동",
+   "다소성 심방빈맥"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)에서 RR 간격이 일정하고 박동수는 약 128회/분이다. 모든 QRS 앞에 II 에서 양성인 P파가 같은 PR 간격으로 있고 QRS 는 좁다 — 동결절에서 시작한 빈맥, 즉 동빈맥이다. 열이 오를 때 심해지고 서서히 시작한 경과도 원인(발열·폐렴)에 대한 생리적 반응과 맞는다. 치료는 리듬이 아니라 원인이다.\n- 원리: <b>왜 P파의 축과 모양이 리듬을 정하는가</b>: 동결절은 우심방 위·바깥쪽에 있어 흥분이 위→아래, 오른쪽→왼쪽으로 퍼진다. 그래서 동리듬의 P파는 <b>I·II·aVF 에서 양성, aVR 에서 음성</b>이다. 같은 모양의 P파가 모든 QRS 앞에 같은 PR 로 오면 동결절이 지휘하고 있다는 뜻이다. 접합부·역행 전도 리듬은 II·III·aVF 에서 P파가 음성이거나 QRS 뒤에 숨는다.<br> <b>왜 박동수만으로는 부족한가</b>: 130~150회/분의 규칙적 좁은 QRS 빈맥은 동빈맥·2:1 심방조동·발작성 상심실빈맥이 모두 가능하다. 조동은 II·III·aVF 에서 톱니 모양 조동파(약 300회/분)가 보이고 하나는 QRS 에 묻힌다. 발작성 상심실빈맥은 갑자기 시작·종료하고 P파가 보이지 않거나 QRS 바로 뒤에 있다.<br> <b>동빈맥의 원인 찾기</b>: 발열(1°C 마다 약 10회/분), 탈수·출혈, 통증, 저산소증, 빈혈, 갑상샘항진증, 폐색전증, 약물을 차례로 본다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">동빈맥(정답)</th><th>발작성 상심실빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>P파</td><td><b>모든 QRS 앞, II 양성, 일정한 PR</b></td><td>보이지 않거나 QRS 바로 뒤(II 음성 역행 P)</td></tr> <tr><td>시작·종료</td><td>서서히(원인에 따라 오르내림)</td><td>갑자기 시작하고 갑자기 멈춘다</td></tr> <tr><td>박동수</td><td>대개 &lt; 150회/분, 원인 따라 변동</td><td>150~250회/분으로 고정</td></tr> <tr><td>치료</td><td>원인 치료(해열·수액·항생제)</td><td>미주신경 자극 → 아데노신</td></tr> </tbody></table> P파가 앞에 있고 모양이 정상이면 빠르기와 상관없이 동리듬이다.\n- 오답 이유:\n  - ① 심방세동은 P파 없이 기저선이 불규칙하게 떨리고 RR 간격이 완전히 불규칙하다면 정답이 된다.\n  - ③ 발작성 상심실빈맥은 P파가 보이지 않는 150회/분 이상의 규칙적 좁은 QRS 빈맥이 갑자기 시작하고 멈췄다면 정답이 된다.\n  - ④ 2:1 전도 심방조동은 II·III·aVF 에서 톱니 모양 조동파가 보이고 심실박동이 약 150회/분으로 고정돼 있다면 정답이 된다.\n  - ⑤ 다소성 심방빈맥은 모양이 다른 P파가 3가지 이상이고 PR·RR 이 불규칙하다면(중증 폐질환 환자에서) 정답이 된다.\n- 함정: 빠르면 상심실빈맥이라고 부르는 것 — 모든 QRS 앞에 정상 축의 P파가 있으면 동빈맥이다.\n- 학습목표: 모든 QRS 앞에 II 양성 P파가 일정한 PR 로 오는 규칙적 빈맥을 동빈맥으로 판독하고, 발열이라는 원인과 연결해 발작성 상심실빈맥·심방조동과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 254: Physiologic and Nonphysiologic Sinus Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14306 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)에서 RR 간격이 일정하고 박동수는 약 128회/분이다. 모든 QRS 앞에 II 에서 양성인 P파가 같은 PR 간격으로 있고 QRS 는 좁다 — 동결절에서 시작한 빈맥, 즉 동빈맥이다. 열이 오를 때 심해지고 서서히 시작한 경과도 원인(발열·폐렴)에 대한 생리적 반응과 맞는다. 치료는 리듬이 아니라 원인이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 P파의 축과 모양이 리듬을 정하는가</b>: 동결절은 우심방 위·바깥쪽에 있어 흥분이 위→아래, 오른쪽→왼쪽으로 퍼진다. 그래서 동리듬의 P파는 <b>I·II·aVF 에서 양성, aVR 에서 음성</b>이다. 같은 모양의 P파가 모든 QRS 앞에 같은 PR 로 오면 동결절이 지휘하고 있다는 뜻이다. 접합부·역행 전도 리듬은 II·III·aVF 에서 P파가 음성이거나 QRS 뒤에 숨는다.<br> <b>왜 박동수만으로는 부족한가</b>: 130~150회/분의 규칙적 좁은 QRS 빈맥은 동빈맥·2:1 심방조동·발작성 상심실빈맥이 모두 가능하다. 조동은 II·III·aVF 에서 톱니 모양 조동파(약 300회/분)가 보이고 하나는 QRS 에 묻힌다. 발작성 상심실빈맥은 갑자기 시작·종료하고 P파가 보이지 않거나 QRS 바로 뒤에 있다.<br> <b>동빈맥의 원인 찾기</b>: 발열(1°C 마다 약 10회/분), 탈수·출혈, 통증, 저산소증, 빈혈, 갑상샘항진증, 폐색전증, 약물을 차례로 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">동빈맥(정답)</th><th>발작성 상심실빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>P파</td><td><b>모든 QRS 앞, II 양성, 일정한 PR</b></td><td>보이지 않거나 QRS 바로 뒤(II 음성 역행 P)</td></tr> <tr><td>시작·종료</td><td>서서히(원인에 따라 오르내림)</td><td>갑자기 시작하고 갑자기 멈춘다</td></tr> <tr><td>박동수</td><td>대개 &lt; 150회/분, 원인 따라 변동</td><td>150~250회/분으로 고정</td></tr> <tr><td>치료</td><td>원인 치료(해열·수액·항생제)</td><td>미주신경 자극 → 아데노신</td></tr> </tbody></table> P파가 앞에 있고 모양이 정상이면 빠르기와 상관없이 동리듬이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심방세동은 P파 없이 기저선이 불규칙하게 떨리고 RR 간격이 완전히 불규칙하다면 정답이 된다.\n③ 발작성 상심실빈맥은 P파가 보이지 않는 150회/분 이상의 규칙적 좁은 QRS 빈맥이 갑자기 시작하고 멈췄다면 정답이 된다.\n④ 2:1 전도 심방조동은 II·III·aVF 에서 톱니 모양 조동파가 보이고 심실박동이 약 150회/분으로 고정돼 있다면 정답이 된다.\n⑤ 다소성 심방빈맥은 모양이 다른 P파가 3가지 이상이고 PR·RR 이 불규칙하다면(중증 폐질환 환자에서) 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빠르면 상심실빈맥이라고 부르는 것 — 모든 QRS 앞에 정상 축의 P파가 있으면 동빈맥이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "모든 QRS 앞에 II 양성 P파가 일정한 PR 로 오는 규칙적 빈맥을 동빈맥으로 판독하고, 발열이라는 원인과 연결해 발작성 상심실빈맥·심방조동과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 254: Physiologic and Nonphysiologic Sinus Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14306 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "모든 QRS 앞에 II 양성 P파가 같은 PR 로 있는 규칙적 좁은 QRS 빈맥은 동빈맥이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "P파가 모든 QRS 앞에 정상 축으로 있고 시작이 서서히다",
+   "steps": 2,
+   "chain": [
+    "영상: 규칙적 약 128회/분, 모든 QRS 앞 II 양성 P파·일정 PR, 좁은 QRS → 동빈맥",
+    "열이 오를 때 심해지는 서서히 시작한 두근거림 → 발열·폐렴에 대한 생리적 동빈맥"
+   ],
+   "key": [
+    {
+     "item": "영상: 리듬 스트립 II 에서 모든 QRS 앞 양성 P파, 일정한 PR, RR 규칙",
+     "why": "동결절 기원",
+     "also": []
+    },
+    {
+     "item": "체온 38.9°C",
+     "why": "동빈맥의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "갑자기 시작하거나 갑자기 멈추지 않았고",
+     "why": "발작성 상심실빈맥 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 갑상샘자극호르몬은 정상",
+     "why": "갑상샘항진증 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "오른쪽 아래 폐에서 수포음",
+     "why": "원인(폐렴)의 단서 — 판독 자체에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "모든 QRS 앞에 정상 축 P파가 있는 규칙적 빈맥이라 동빈맥이다. 열이 오를 때 심해져 발열에 대한 반응으로 본다.",
+   "switch": {
+    "choice": "D",
+    "condition": "II·III·aVF 에 톱니 모양 조동파가 있고 박동수가 150회/분으로 고정돼 있다면 2:1 심방조동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0654.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/14000/#files-panel",
+   "asset_id": "PTBXL-14306",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14306"
+  },
+  "run_id": "20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0649",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "감염 — 산소가 필요한 코로나바이러스감염증-19 폐렴의 치료",
+  "type": "감염 — 산소가 필요한 코로나바이러스감염증-19 폐렴의 치료",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-13",
+  "vignette": "60세 남자가 7일 전부터 열과 기침이 나고 3일 전부터 숨이 차서 응급실에 왔다. 확장성 심근병증으로 4년 전 이식형 제세동기를 넣었다. 체온 38.4°C, 맥박 102회/분, 호흡 28회/분, 혈압 118/70 mmHg 이고, 실내 공기에서 산소포화도는 88 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 비인두 검체의 SARS-CoV-2 핵산증폭검사는 양성이고, 인플루엔자 검사는 음성이다. 혈청 C-반응단백질은 9.8 mg/dL, 프로칼시토닌은 0.08 ng/mL 이다. 비강 캐뉼라로 산소 4 L/분을 시작해 산소포화도가 94 % 가 되었다. 이동형 흉부 X선 사진은 그림과 같다.",
+  "question": "산소 투여와 함께 가장 적절한 약물은?",
+  "options": [
+   "오셀타미비르",
+   "이버멕틴",
+   "로피나비르·리토나비르",
+   "덱사메타손",
+   "하이드록시클로로퀸"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 폐야, 특히 중·하폐야 말초에 반점·망상형 공기공간 음영이 넓게 퍼져 있다(왼쪽 앞가슴의 기기·유도선과 중심정맥관·비위관은 원래 있던 장치다). SARS-CoV-2 양성, 발병 7일째, 실내 공기 산소포화도 88 % 로 산소가 필요한 중증 코로나바이러스감염증-19 폐렴이다. 이 단계의 폐 손상은 바이러스 증식보다 과도한 염증 반응이 주도하므로, 산소가 필요한 환자에게 덱사메타손 6 mg 을 최대 10일 쓰면 사망률이 줄었다(RECOVERY 시험).\n- 원리: <b>왜 병의 시기에 따라 약이 다른가</b>: 코로나바이러스감염증-19 는 대개 두 단계로 진행한다. 첫 5~7일은 <b>바이러스 증식</b>이 주도해 항바이러스제(니르마트렐비르·렘데시비르)가 효과적이다. 그 뒤 일부 환자는 바이러스 양이 줄어도 사이토카인 분비·폐포 손상·혈관 내피 염증이 계속되는 <b>염증 단계</b>로 넘어가 저산소증이 생긴다. 이때 사망을 줄이는 것은 염증을 누르는 약이다.<br> <b>왜 덱사메타손이고 왜 산소가 기준인가</b>: RECOVERY 시험에서 덱사메타손 6 mg 은 기계환기 환자의 사망률을 약 3분의 1, 산소만 받는 환자는 약 5분의 1 줄였지만, <b>산소가 필요 없는 환자에서는 이득이 없고 해로울 수 있었다</b>. 그래서 산소 필요 여부가 투여 기준이다. 산소 요구가 빠르게 늘면 토실리주맙·바리시티닙을 더한다.<br> <b>영상의 역할</b>: 양쪽 말초·하폐야 우세의 다발성 음영은 바이러스 폐렴의 전형이며, 한 엽에 모인 경화가 아니어서 세균성 폐렴의 가능성을 낮춘다(낮은 프로칼시토닌도 같은 방향).\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">덱사메타손(정답)</th><th>하이드록시클로로퀸(가장 가까운 오답 — 대유행 초기 쓰였던 약)</th></tr></thead><tbody> <tr><td>작용</td><td><b>염증 반응 억제</b>(글루코코르티코이드)</td><td>시험관 내 바이러스 진입 억제(엔도솜 pH 상승)</td></tr> <tr><td>무작위 시험 결과</td><td>산소 필요 환자의 사망률 감소</td><td>사망·입원 기간 이득 없음, QT 연장</td></tr> <tr><td>대상</td><td>산소 또는 환기가 필요한 환자</td><td>권고 대상 없음(쓰지 않음)</td></tr> <tr><td>이 환자</td><td>실내 공기 88 %, 산소 필요 — 일치</td><td>이식형 제세동기 환자에서 QT 연장은 더 위험</td></tr> </tbody></table> 산소가 필요한가가 스테로이드를 정하고, 발병 시기가 항바이러스제를 정한다 — 어느 쪽으로 물어도 이 두 축으로 답한다.\n- 오답 이유:\n  - ① 오셀타미비르는 인플루엔자 검사가 양성이거나 유행기에 결과를 기다리는 중이라면 정답이 되며, 이 환자는 음성이다.\n  - ② 이버멕틴은 분선충 같은 기생충 감염이라면 정답이 되며, 무작위 시험에서 코로나바이러스감염증-19 의 회복을 앞당기지 못했다.\n  - ③ 로피나비르·리토나비르는 인간면역결핍바이러스 감염의 병합요법이라면 정답이 되며, 입원 코로나바이러스감염증-19 에서 사망률 이득이 없었다.\n  - ⑤ 하이드록시클로로퀸은 대규모 무작위 시험에서 사망률 이득이 없고 QT 를 늘려, 어떤 단계의 코로나바이러스감염증-19 에서도 정답이 되지 않는다.\n- 함정: 바이러스 감염이니 항바이러스·항기생충 약을 고르는 것 — 산소가 필요한 시기에는 염증을 누르는 덱사메타손이 사망률을 줄인다.\n- 학습목표: 이동형 흉부 X선의 양쪽 말초·하폐야 우세 다발성 음영과 저산소증으로 산소가 필요한 코로나바이러스감염증-19 폐렴을 판단하고 덱사메타손을 고른다\n- 근거·출처: RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704 · WHO Solidarity Trial Consortium. Repurposed antiviral drugs for Covid-19 — interim WHO Solidarity Trial results. N Engl J Med. 2021;384(6):497-511 · Desai SB, Pareek A, Lungren MP. Chest imaging representing a COVID-19 positive rural U.S. population. Sci Data. 2020;7:414\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …78050475 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 폐야, 특히 중·하폐야 말초에 반점·망상형 공기공간 음영이 넓게 퍼져 있다(왼쪽 앞가슴의 기기·유도선과 중심정맥관·비위관은 원래 있던 장치다). SARS-CoV-2 양성, 발병 7일째, 실내 공기 산소포화도 88 % 로 산소가 필요한 중증 코로나바이러스감염증-19 폐렴이다. 이 단계의 폐 손상은 바이러스 증식보다 과도한 염증 반응이 주도하므로, 산소가 필요한 환자에게 덱사메타손 6 mg 을 최대 10일 쓰면 사망률이 줄었다(RECOVERY 시험)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 병의 시기에 따라 약이 다른가</b>: 코로나바이러스감염증-19 는 대개 두 단계로 진행한다. 첫 5~7일은 <b>바이러스 증식</b>이 주도해 항바이러스제(니르마트렐비르·렘데시비르)가 효과적이다. 그 뒤 일부 환자는 바이러스 양이 줄어도 사이토카인 분비·폐포 손상·혈관 내피 염증이 계속되는 <b>염증 단계</b>로 넘어가 저산소증이 생긴다. 이때 사망을 줄이는 것은 염증을 누르는 약이다.<br> <b>왜 덱사메타손이고 왜 산소가 기준인가</b>: RECOVERY 시험에서 덱사메타손 6 mg 은 기계환기 환자의 사망률을 약 3분의 1, 산소만 받는 환자는 약 5분의 1 줄였지만, <b>산소가 필요 없는 환자에서는 이득이 없고 해로울 수 있었다</b>. 그래서 산소 필요 여부가 투여 기준이다. 산소 요구가 빠르게 늘면 토실리주맙·바리시티닙을 더한다.<br> <b>영상의 역할</b>: 양쪽 말초·하폐야 우세의 다발성 음영은 바이러스 폐렴의 전형이며, 한 엽에 모인 경화가 아니어서 세균성 폐렴의 가능성을 낮춘다(낮은 프로칼시토닌도 같은 방향)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">덱사메타손(정답)</th><th>하이드록시클로로퀸(가장 가까운 오답 — 대유행 초기 쓰였던 약)</th></tr></thead><tbody> <tr><td>작용</td><td><b>염증 반응 억제</b>(글루코코르티코이드)</td><td>시험관 내 바이러스 진입 억제(엔도솜 pH 상승)</td></tr> <tr><td>무작위 시험 결과</td><td>산소 필요 환자의 사망률 감소</td><td>사망·입원 기간 이득 없음, QT 연장</td></tr> <tr><td>대상</td><td>산소 또는 환기가 필요한 환자</td><td>권고 대상 없음(쓰지 않음)</td></tr> <tr><td>이 환자</td><td>실내 공기 88 %, 산소 필요 — 일치</td><td>이식형 제세동기 환자에서 QT 연장은 더 위험</td></tr> </tbody></table> 산소가 필요한가가 스테로이드를 정하고, 발병 시기가 항바이러스제를 정한다 — 어느 쪽으로 물어도 이 두 축으로 답한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 오셀타미비르는 인플루엔자 검사가 양성이거나 유행기에 결과를 기다리는 중이라면 정답이 되며, 이 환자는 음성이다.\n② 이버멕틴은 분선충 같은 기생충 감염이라면 정답이 되며, 무작위 시험에서 코로나바이러스감염증-19 의 회복을 앞당기지 못했다.\n③ 로피나비르·리토나비르는 인간면역결핍바이러스 감염의 병합요법이라면 정답이 되며, 입원 코로나바이러스감염증-19 에서 사망률 이득이 없었다.\n⑤ 하이드록시클로로퀸은 대규모 무작위 시험에서 사망률 이득이 없고 QT 를 늘려, 어떤 단계의 코로나바이러스감염증-19 에서도 정답이 되지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "바이러스 감염이니 항바이러스·항기생충 약을 고르는 것 — 산소가 필요한 시기에는 염증을 누르는 덱사메타손이 사망률을 줄인다."
+   },
+   {
+    "k": "학습목표",
+    "v": "이동형 흉부 X선의 양쪽 말초·하폐야 우세 다발성 음영과 저산소증으로 산소가 필요한 코로나바이러스감염증-19 폐렴을 판단하고 덱사메타손을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704 · WHO Solidarity Trial Consortium. Repurposed antiviral drugs for Covid-19 — interim WHO Solidarity Trial results. N Engl J Med. 2021;384(6):497-511 · Desai SB, Pareek A, Lungren MP. Chest imaging representing a COVID-19 positive rural U.S. population. Sci Data. 2020;7:414 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …78050475 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "산소가 필요한 코로나바이러스감염증-19 폐렴에서는 덱사메타손이 사망률을 줄인다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "실내 공기 산소포화도 88 % 로 산소가 필요한 염증 단계다",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 중·하폐야 말초 우세의 다발성 반점·망상 음영 + SARS-CoV-2 양성 → 코로나바이러스감염증-19 폐렴",
+    "발병 7일째 + 실내 공기 산소포화도 88 % → 산소가 필요한 염증 단계",
+    "산소 필요 → 덱사메타손(무작위 시험에서 사망률 감소)"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 중·하폐야 말초 우세의 다발성 반점·망상형 공기공간 음영",
+     "why": "양측 바이러스 폐렴 양상",
+     "also": []
+    },
+    {
+     "item": "SARS-CoV-2 핵산증폭검사는 양성",
+     "why": "원인 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "인플루엔자 검사는 음성",
+     "why": "오셀타미비르 적응증의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "프로칼시토닌은 0.08 ng/mL",
+     "why": "세균성 폐렴 동반 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "실내 공기에서 산소포화도는 88 %",
+     "why": "덱사메타손 투여 기준(산소 필요)",
+     "also": []
+    },
+    {
+     "item": "7일 전부터",
+     "why": "바이러스 증식기를 지나 염증 단계",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "이식형 제세동기",
+     "why": "영상의 기기 음영을 설명할 뿐 약 선택을 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 다발성 음영과 SARS-CoV-2 양성으로 코로나바이러스감염증-19 폐렴이다. 발병 7일째 산소가 필요하므로 덱사메타손을 쓴다.",
+   "switch": {
+    "choice": "E",
+    "condition": "정답이 바뀌지 않는다 — 산소가 필요 없는 발병 초기 고위험 외래 환자라면 니르마트렐비르·리토나비르(보기에 없음)"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0649.png",
+   "caption": "반좌위 이동형 흉부 전후면 X선, 원 픽셀 그대로 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조절 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1674064854637802115076378050475",
+   "asset_id": "TCIA-COVID19_AR-78057757468189",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …78050475"
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0647",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "산과 — 분만 중 태아심박동 감속의 판독과 처치",
+  "type": "산과 — 분만 중 태아심박동 감속의 판독과 처치",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-13",
+  "vignette": "40세 경산부가 임신 38주에 규칙적인 진통으로 입원하였다. 임신 중 합병증은 없었다. 자궁경부는 6 cm 열렸고 양막은 1시간 전에 저절로 터졌으며 양수는 맑다. 산모의 혈압은 118/72 mmHg, 맥박은 84회/분, 체온은 36.9°C 이다. 옥시토신은 쓰지 않았다. 입원 40분 뒤부터 10분간의 태아심박동·자궁수축 기록은 그림과 같다.",
+  "question": "이때 가장 적절한 처치는?",
+  "options": [
+   "겸자로 즉시 분만한다",
+   "분만이 끝날 때까지 감시를 멈춘다",
+   "산모 체위를 바꾸고 감시를 계속한다",
+   "즉시 제왕절개술을 한다",
+   "옥시토신을 시작해 분만을 앞당긴다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 기저 태아심박수는 약 145회/분으로 정상이고 변이는 중등도(진폭 6~25회/분)로 유지된다. 41~42분, 43~44분, 47분에 심박수가 30초 안에 급격히 떨어져 90회/분 전후까지 내려갔다가 1분 안에 빠르게 회복하는 감속이 간헐적으로 있다 — 변이성 감속이다. 중등도 변이가 유지되는 간헐적 변이성 감속은 범주 II 이며 태아 산증 가능성이 낮으므로, 탯줄 압박을 줄이는 체위 변경 등 자궁내 소생술을 하며 감시를 계속한다.\n- 원리: <b>왜 변이성 감속은 모양이 급한가</b>: 변이성 감속은 탯줄 압박 때문이다. 탯줄 정맥이 먼저 눌리면 태아 혈량이 줄어 잠깐 심박수가 오르고(어깨), 동맥까지 눌리면 태아 혈압이 갑자기 올라 압수용체 → 미주신경 반사로 <b>심박수가 몇 초 만에 뚝 떨어진다</b>. 압박이 풀리면 반사도 즉시 사라져 회복도 빠르다. 그래서 시작이 30초 미만으로 급하고, 모양·깊이·수축과의 관계가 매번 다르다.<br> <b>왜 변이가 판단의 중심인가</b>: 중등도 변이는 태아 뇌간이 산소를 충분히 받고 있다는 가장 믿을 만한 표지다. 변이가 유지되면 감속이 있어도 대사성 산증 가능성은 낮다. 변이가 없어지거나 감속이 반복·심해지면 범주 III 로 가고 즉시 분만을 준비한다.<br> <b>자궁내 소생술</b>: 산모를 옆으로 눕히거나 체위를 바꿔 탯줄 압박을 풀고, 저혈압을 교정하고, 자궁 과다수축이 있으면 옥시토신을 줄인다. 반복되는 변이성 감속이 계속되면 양수주입을 고려한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">간헐적 변이성 감속 + 중등도 변이(정답 — 범주 II)</th><th>즉시 분만이 필요한 기록(가장 가까운 오답 — 범주 III)</th></tr></thead><tbody> <tr><td>변이</td><td><b>중등도(6~25회/분) 유지</b></td><td>소실(≤ 2회/분)</td></tr> <tr><td>감속</td><td>간헐적, 빠른 회복</td><td>반복되는 후기·변이성 감속, 또는 서맥, 또는 사인곡선</td></tr> <tr><td>태아 산증 가능성</td><td>낮다 — 뇌간 산소 공급 유지</td><td>높다</td></tr> <tr><td>처치</td><td>체위 변경·자궁내 소생술, 감시 지속</td><td>자궁내 소생술과 동시에 신속 분만</td></tr> </tbody></table> 감속의 종류보다 「변이가 남아 있는가」가 분만을 서두를지를 정한다.\n- 오답 이유:\n  - ① 겸자 분만은 자궁경부가 완전히 열리고 태아 머리가 충분히 내려온 2기에서 태아 상태가 나쁠 때 정답이 되며, 지금은 6 cm 다.\n  - ② 감시 중단은 감속이 없는 범주 I 에서도 분만 중에는 하지 않으며, 감속이 있는 이 기록에서는 더욱 맞지 않는다.\n  - ④ 즉시 제왕절개술은 변이가 소실된 채 반복되는 후기·변이성 감속이나 지속 서맥(범주 III)이 보이면 정답이 된다.\n  - ⑤ 옥시토신 시작은 진통이 멈춰 분만이 진행하지 않을 때 고려하며, 감속이 있는 지금은 수축을 늘려 탯줄 압박을 더 키울 수 있다.\n- 함정: 감속만 보고 바로 수술을 고르는 것 — 중등도 변이가 남은 간헐적 변이성 감속은 범주 II 로 자궁내 소생술 대상이다.\n- 학습목표: 분만 중 태아심박동에서 기저 심박수·중등도 변이와 급격히 시작해 빨리 회복하는 간헐적 감속을 읽고 범주 II 로 분류해 자궁내 소생술과 감시 지속을 고른다\n- 근거·출처: Macones GA, Hankins GDV, Spong CY, et al. The 2008 National Institute of Child Health and Human Development workshop report on electronic fetal monitoring. Obstet Gynecol. 2008;112(3):661-666 · American College of Obstetricians and Gynecologists. Practice Bulletin No. 116: Management of intrapartum fetal heart rate tracings. Obstet Gynecol. 2010;116(5):1232-1240 · Chudáček V, Spilka J, Burša M, et al. Open access intrapartum CTG database. BMC Pregnancy Childbirth. 2014;14:16\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1420 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박수는 약 145회/분으로 정상이고 변이는 중등도(진폭 6~25회/분)로 유지된다. 41~42분, 43~44분, 47분에 심박수가 30초 안에 급격히 떨어져 90회/분 전후까지 내려갔다가 1분 안에 빠르게 회복하는 감속이 간헐적으로 있다 — 변이성 감속이다. 중등도 변이가 유지되는 간헐적 변이성 감속은 범주 II 이며 태아 산증 가능성이 낮으므로, 탯줄 압박을 줄이는 체위 변경 등 자궁내 소생술을 하며 감시를 계속한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 변이성 감속은 모양이 급한가</b>: 변이성 감속은 탯줄 압박 때문이다. 탯줄 정맥이 먼저 눌리면 태아 혈량이 줄어 잠깐 심박수가 오르고(어깨), 동맥까지 눌리면 태아 혈압이 갑자기 올라 압수용체 → 미주신경 반사로 <b>심박수가 몇 초 만에 뚝 떨어진다</b>. 압박이 풀리면 반사도 즉시 사라져 회복도 빠르다. 그래서 시작이 30초 미만으로 급하고, 모양·깊이·수축과의 관계가 매번 다르다.<br> <b>왜 변이가 판단의 중심인가</b>: 중등도 변이는 태아 뇌간이 산소를 충분히 받고 있다는 가장 믿을 만한 표지다. 변이가 유지되면 감속이 있어도 대사성 산증 가능성은 낮다. 변이가 없어지거나 감속이 반복·심해지면 범주 III 로 가고 즉시 분만을 준비한다.<br> <b>자궁내 소생술</b>: 산모를 옆으로 눕히거나 체위를 바꿔 탯줄 압박을 풀고, 저혈압을 교정하고, 자궁 과다수축이 있으면 옥시토신을 줄인다. 반복되는 변이성 감속이 계속되면 양수주입을 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">간헐적 변이성 감속 + 중등도 변이(정답 — 범주 II)</th><th>즉시 분만이 필요한 기록(가장 가까운 오답 — 범주 III)</th></tr></thead><tbody> <tr><td>변이</td><td><b>중등도(6~25회/분) 유지</b></td><td>소실(≤ 2회/분)</td></tr> <tr><td>감속</td><td>간헐적, 빠른 회복</td><td>반복되는 후기·변이성 감속, 또는 서맥, 또는 사인곡선</td></tr> <tr><td>태아 산증 가능성</td><td>낮다 — 뇌간 산소 공급 유지</td><td>높다</td></tr> <tr><td>처치</td><td>체위 변경·자궁내 소생술, 감시 지속</td><td>자궁내 소생술과 동시에 신속 분만</td></tr> </tbody></table> 감속의 종류보다 「변이가 남아 있는가」가 분만을 서두를지를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 겸자 분만은 자궁경부가 완전히 열리고 태아 머리가 충분히 내려온 2기에서 태아 상태가 나쁠 때 정답이 되며, 지금은 6 cm 다.\n② 감시 중단은 감속이 없는 범주 I 에서도 분만 중에는 하지 않으며, 감속이 있는 이 기록에서는 더욱 맞지 않는다.\n④ 즉시 제왕절개술은 변이가 소실된 채 반복되는 후기·변이성 감속이나 지속 서맥(범주 III)이 보이면 정답이 된다.\n⑤ 옥시토신 시작은 진통이 멈춰 분만이 진행하지 않을 때 고려하며, 감속이 있는 지금은 수축을 늘려 탯줄 압박을 더 키울 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "감속만 보고 바로 수술을 고르는 것 — 중등도 변이가 남은 간헐적 변이성 감속은 범주 II 로 자궁내 소생술 대상이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동에서 기저 심박수·중등도 변이와 급격히 시작해 빨리 회복하는 간헐적 감속을 읽고 범주 II 로 분류해 자궁내 소생술과 감시 지속을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Macones GA, Hankins GDV, Spong CY, et al. The 2008 National Institute of Child Health and Human Development workshop report on electronic fetal monitoring. Obstet Gynecol. 2008;112(3):661-666 · American College of Obstetricians and Gynecologists. Practice Bulletin No. 116: Management of intrapartum fetal heart rate tracings. Obstet Gynecol. 2010;116(5):1232-1240 · Chudáček V, Spilka J, Burša M, et al. Open access intrapartum CTG database. BMC Pregnancy Childbirth. 2014;14:16 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1420 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "중등도 변이가 유지되는 간헐적 변이성 감속은 범주 II 로 체위 변경 등 자궁내 소생술을 하며 감시를 계속한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "변이가 중등도로 유지되고 감속이 간헐적이며 빨리 회복한다",
+   "steps": 2,
+   "chain": [
+    "영상: 기저 약 145회/분, 중등도 변이, 급격히 시작해 빨리 회복하는 간헐적 감속 → 변이성 감속, 범주 II",
+    "범주 II + 중등도 변이 → 태아 산증 가능성 낮음 → 체위 변경하고 감시 지속"
+   ],
+   "key": [
+    {
+     "item": "영상: 30초 안에 급격히 떨어져 90회/분 전후까지 내려갔다 빨리 회복하는 간헐적 감속",
+     "why": "탯줄 압박에 의한 변이성 감속",
+     "also": []
+    },
+    {
+     "item": "영상: 감속 사이 기저 약 145회/분, 중등도 변이 유지",
+     "why": "범주 III 가 아니라는 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "옥시토신은 쓰지 않았다",
+     "why": "과다수축이 원인이 아니며 줄일 약물이 없다",
+     "also": []
+    },
+    {
+     "item": "자궁경부는 6 cm",
+     "why": "기계 분만(겸자)을 할 수 없는 1기",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "양막은 1시간 전에 저절로 터졌으며",
+     "why": "양수가 줄면 탯줄 압박이 쉬워진다 — 감속의 맥락",
+     "also": []
+    }
+   ],
+   "summary": "중등도 변이가 유지되는 간헐적 변이성 감속이라 범주 II 다. 체위를 바꿔 탯줄 압박을 줄이고 감시를 계속한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "변이가 소실되고 감속이 매 수축마다 반복된다면 범주 III 로 신속 분만"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0647.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 40~50분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1420_40m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1420"
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0646",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "호흡기·흉부 영상 — 동전을 삼킨 뒤 침을 흘리는 어린이",
+  "type": "호흡기·흉부 영상 — 동전을 삼킨 뒤 침을 흘리는 어린이",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-13",
+  "vignette": "A 6-year-old boy is brought to the emergency department 4 hours after he swallowed a coin while playing. Since then he has been drooling, has refused to drink, and points to the middle of his chest when he swallows. He has had no coughing spells, stridor, or wheezing. His temperature is 36.8°C, pulse is 104/min, respirations are 20/min, and oxygen saturation is 99% on room air. He is drooling but speaks in full sentences. The lungs are clear to auscultation. The abdomen is soft and nontender. A frontal radiograph of the chest and upper abdomen is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Endoscopic removal within hours",
+   "Rigid bronchoscopy",
+   "Repeat radiograph in 24 hours",
+   "Intravenous glucagon and discharge",
+   "Ipecac-induced emesis"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The radiograph shows a smooth, round, uniformly radiopaque disk projected over the midline of the upper chest. A coin appears as a full circle on a frontal view when it lies in the coronal plane, which is how it sits in the esophagus, whose lumen is widest from side to side; a coin in the trachea would usually lie sagittally and look like a line on the frontal view. With clear lungs and no stridor, the coin is in the esophagus. Because the boy cannot swallow his saliva, it must be removed endoscopically without waiting.\n- 원리: <b>Why the orientation localizes the coin</b>: The esophagus is flattened front-to-back, so a coin settles with its face toward the front (coronal plane) and appears as a full circle on a frontal radiograph and edge-on on the lateral. The trachea is held open by C-shaped cartilage rings that are incomplete posteriorly, so a coin there tends to align sagittally, appearing as a line on the frontal view. Airway coins also cause cough, stridor, or unilateral wheeze.<br> <b>Why drooling changes the timing</b>: The esophagus narrows at three points — the upper sphincter (most common site in children), the aortic arch, and the lower sphincter. A coin that stays at one of these points can cause pressure necrosis, perforation, or fistula. An <b>asymptomatic</b> child with an esophageal coin may be observed for up to 12–24 hours because many pass spontaneously; a child who <b>cannot manage secretions</b> has a complete obstruction and needs urgent removal because of aspiration risk.<br> <b>Why button batteries are different</b>: A disk battery shows a double-ring (halo) on the frontal view and causes caustic injury within 2 hours — it is removed immediately regardless of symptoms.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Esophageal coin (answer — endoscopy)</th><th>Tracheal coin (closest distractor — bronchoscopy)</th></tr></thead><tbody> <tr><td>Frontal radiograph</td><td><b>Full circle</b> (coronal orientation)</td><td>Thin line (sagittal orientation)</td></tr> <tr><td>Why</td><td>The esophageal lumen is widest side to side</td><td>The posterior membranous trachea lets the coin align front to back</td></tr> <tr><td>Symptoms</td><td>Drooling, odynophagia, food refusal</td><td>Cough, stridor, wheeze, respiratory distress</td></tr> <tr><td>This patient</td><td>Drooling, clear lungs, no stridor — consistent</td><td>No respiratory symptoms — inconsistent</td></tr> </tbody></table> Shape on the frontal view plus the symptom pattern locates the coin; the ability to handle secretions decides how fast it must come out.\n- 오답 이유:\n  - (B) Rigid bronchoscopy would be correct if the coin appeared edge-on on the frontal view with stridor or cough, indicating an airway foreign body.\n  - (C) Repeat radiograph in 24 hours would be acceptable for an asymptomatic child who can swallow saliva, since many esophageal coins pass on their own.\n  - (D) Intravenous glucagon relaxes the lower esophageal sphincter in some adult food impactions but is unreliable for coins and would not justify discharge here.\n  - (E) Ipecac-induced emesis was abandoned because vomiting can push the coin into the airway and does not reliably dislodge esophageal objects.\n- 함정: Equating a coin over the chest with an airway foreign body — a round coin on the frontal view lies in the esophagus.\n- 학습목표: Read a round radiopaque disk seen en face in the midline of the upper chest as a coin lodged in the esophagus rather than the trachea, and choose urgent endoscopic removal for a child who cannot handle secretions\n- 근거·출처: Kramer RE, Lerner DG, Lin T, et al. Management of ingested foreign bodies in children: a clinical report of the NASPGHAN Endoscopy Committee. J Pediatr Gastroenterol Nutr. 2015;60(4):562-574 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 334: Diseases of the Esophagus · Front Pediatr. 2026;14:1936681. doi:10.3389/fped.2026.1936681 (PMC Open Access, CC BY) — source of the radiograph\n\n## 출처\n- A novel, non-invasive approach to esophageal coin removal in a child using oral olive oil: case report. Front Pediatr. 2026 Sep 4;14:1936681. doi: 10.3389/fped.2026.1936681 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows a smooth, round, uniformly radiopaque disk projected over the midline of the upper chest. A coin appears as a full circle on a frontal view when it lies in the coronal plane, which is how it sits in the esophagus, whose lumen is widest from side to side; a coin in the trachea would usually lie sagittally and look like a line on the frontal view. With clear lungs and no stridor, the coin is in the esophagus. Because the boy cannot swallow his saliva, it must be removed endoscopically without waiting."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the orientation localizes the coin</b>: The esophagus is flattened front-to-back, so a coin settles with its face toward the front (coronal plane) and appears as a full circle on a frontal radiograph and edge-on on the lateral. The trachea is held open by C-shaped cartilage rings that are incomplete posteriorly, so a coin there tends to align sagittally, appearing as a line on the frontal view. Airway coins also cause cough, stridor, or unilateral wheeze.<br> <b>Why drooling changes the timing</b>: The esophagus narrows at three points — the upper sphincter (most common site in children), the aortic arch, and the lower sphincter. A coin that stays at one of these points can cause pressure necrosis, perforation, or fistula. An <b>asymptomatic</b> child with an esophageal coin may be observed for up to 12–24 hours because many pass spontaneously; a child who <b>cannot manage secretions</b> has a complete obstruction and needs urgent removal because of aspiration risk.<br> <b>Why button batteries are different</b>: A disk battery shows a double-ring (halo) on the frontal view and causes caustic injury within 2 hours — it is removed immediately regardless of symptoms."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Esophageal coin (answer — endoscopy)</th><th>Tracheal coin (closest distractor — bronchoscopy)</th></tr></thead><tbody> <tr><td>Frontal radiograph</td><td><b>Full circle</b> (coronal orientation)</td><td>Thin line (sagittal orientation)</td></tr> <tr><td>Why</td><td>The esophageal lumen is widest side to side</td><td>The posterior membranous trachea lets the coin align front to back</td></tr> <tr><td>Symptoms</td><td>Drooling, odynophagia, food refusal</td><td>Cough, stridor, wheeze, respiratory distress</td></tr> <tr><td>This patient</td><td>Drooling, clear lungs, no stridor — consistent</td><td>No respiratory symptoms — inconsistent</td></tr> </tbody></table> Shape on the frontal view plus the symptom pattern locates the coin; the ability to handle secretions decides how fast it must come out."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Rigid bronchoscopy would be correct if the coin appeared edge-on on the frontal view with stridor or cough, indicating an airway foreign body.\n(C) Repeat radiograph in 24 hours would be acceptable for an asymptomatic child who can swallow saliva, since many esophageal coins pass on their own.\n(D) Intravenous glucagon relaxes the lower esophageal sphincter in some adult food impactions but is unreliable for coins and would not justify discharge here.\n(E) Ipecac-induced emesis was abandoned because vomiting can push the coin into the airway and does not reliably dislodge esophageal objects."
+   },
+   {
+    "k": "함정",
+    "v": "Equating a coin over the chest with an airway foreign body — a round coin on the frontal view lies in the esophagus."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a round radiopaque disk seen en face in the midline of the upper chest as a coin lodged in the esophagus rather than the trachea, and choose urgent endoscopic removal for a child who cannot handle secretions"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kramer RE, Lerner DG, Lin T, et al. Management of ingested foreign bodies in children: a clinical report of the NASPGHAN Endoscopy Committee. J Pediatr Gastroenterol Nutr. 2015;60(4):562-574 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 334: Diseases of the Esophagus · Front Pediatr. 2026;14:1936681. doi:10.3389/fped.2026.1936681 (PMC Open Access, CC BY) — source of the radiograph ## 출처 A novel, non-invasive approach to esophageal coin removal in a child using oral olive oil: case report. Front Pediatr. 2026 Sep 4;14:1936681. doi: 10.3389/fped.2026.1936681 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "A coin seen en face in the midline is esophageal, and inability to handle secretions requires urgent endoscopic removal",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The coin appears as a full circle and there are no airway symptoms",
+   "steps": 2,
+   "chain": [
+    "영상: a round radiopaque disk seen en face over the midline of the upper chest → coin in the esophagus, not the trachea",
+    "Esophageal coin with drooling and inability to swallow → urgent endoscopic removal"
+   ],
+   "key": [
+    {
+     "item": "영상: a smooth round radiopaque disk seen as a full circle in the upper chest midline",
+     "why": "Coronal orientation localizes it to the esophagus",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no coughing spells, stridor, or wheezing",
+     "why": "Lowers the likelihood of an airway foreign body",
+     "also": []
+    },
+    {
+     "item": "oxygen saturation is 99% on room air",
+     "why": "No respiratory compromise",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "drooling",
+     "why": "Cannot handle secretions — removal cannot wait",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The abdomen is soft and nontender",
+     "why": "No sign of perforation or distal obstruction",
+     "also": []
+    }
+   ],
+   "summary": "The coin is round on the frontal view and the child has no airway symptoms, so it is esophageal. Drooling means he cannot handle secretions, so it is removed endoscopically now.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the child were asymptomatic and swallowing saliva normally, observation with a repeat radiograph"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0646.png",
+   "caption": "Frontal radiograph of the chest and upper abdomen; left panel of the published two-panel case figure, side marker as in the original (PMC Open Access Subset, CC BY)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13585960/",
+   "asset_id": "PMC-PMC13585960_Figure1_PA",
+   "text": "A novel, non-invasive approach to esophageal coin removal in a child using oral olive oil: case report. Front Pediatr. 2026 Sep 4;14:1936681. doi: 10.3389/fped.2026.1936681 (CC BY) — Figure 1"
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0645",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "안과 — 당뇨병 환자의 첫 안저 선별검사와 다음 검사 간격",
+  "type": "안과 — 당뇨병 환자의 첫 안저 선별검사와 다음 검사 간격",
+  "modality": "FUNDUS",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-13",
+  "vignette": "3주 전 건강검진에서 제2형 당뇨병을 진단받은 환자가 내과의 의뢰로 안과에 왔다. 눈 증상은 없다. 메트포르민을 시작하였고 당화혈색소는 7.4 % 이다. 혈압은 128/78 mmHg 이다. 양눈 교정시력은 1.0 이고 안압은 정상이다. 산동 후 오른눈의 안저 사진은 그림과 같다. 왼눈 안저도 같은 소견이다.",
+  "question": "이 환자에게 가장 적절한 다음 조치는?",
+  "options": [
+   "유리체강내 항혈관내피성장인자 주사",
+   "1년 뒤 산동 안저검사",
+   "3개월 뒤 산동 안저검사",
+   "지금 형광안저혈관조영술",
+   "범망막광응고술"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 시신경유두 경계가 뚜렷하고 혈관의 주행·굵기가 정상이며, 미세동맥류·점상출혈·경성삼출물·면화반·신생혈관이 없고 황반도 깨끗하다 — 당뇨망막병증이 없는 정상 안저다. 제2형 당뇨병은 진단 시점에 이미 망막병증이 있을 수 있어 진단 즉시 첫 검사를 하고, 망막병증이 없으면 1년(혈당 조절이 좋으면 1~2년)마다 다시 본다.\n- 원리: <b>왜 제2형은 진단 즉시, 제1형은 5년 뒤에 보는가</b>: 망막병증은 고혈당에 노출된 기간에 비례한다. 제1형은 발병 시점이 분명해 5년 안에는 망막병증이 거의 없지만, 제2형은 진단 전 몇 년간 모르는 채 고혈당이 지속된 경우가 많아 <b>진단 때 이미 망막병증이 있는 환자</b>가 적지 않다. 그래서 제2형은 진단 직후 산동 검사를 한다.<br> <b>왜 1년 간격인가</b>: 망막병증이 없는 눈이 1년 안에 치료가 필요한 단계(중증 비증식·증식·황반부종)로 넘어갈 확률은 매우 낮다. 반대로 비증식 망막병증이 있으면 중증도에 따라 3~12개월로 간격을 줄인다. 검사 간격은 「지금 단계에서 다음 치료 단계까지 걸리는 시간」으로 정해진다.<br> <b>치료는 언제</b>: 레이저(범망막광응고술)는 증식 망막병증, 항VEGF 주사는 중심부 황반부종에서 쓴다 — 망막병증이 없는 눈에는 혈당·혈압·지질 조절이 유일한 예방책이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">1년 뒤 재검(정답 — 망막병증 없음)</th><th>3개월 뒤 재검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해당 단계</td><td><b>망막병증 없음</b> 또는 경미한 비증식(일부 지침)</td><td>중등도~중증 비증식 망막병증</td></tr> <tr><td>안저 소견</td><td>미세동맥류·출혈·삼출물 없음</td><td>여러 사분면의 출혈·정맥 염주 모양·망막내 미세혈관 이상</td></tr> <tr><td>왜 그 간격인가</td><td>1년 안에 치료 단계로 진행할 위험이 매우 낮다</td><td>1년 안 증식 단계 진행 위험이 높다</td></tr> <tr><td>이 환자</td><td>안저 정상 — 일치</td><td>병변 없음 — 불일치</td></tr> </tbody></table> 검사 간격은 「보이는 망막병증 단계」로 정하고, 당뇨병의 종류는 「첫 검사 시점」을 정한다.\n- 오답 이유:\n  - ① 유리체강내 항VEGF 주사는 중심부를 침범한 당뇨황반부종으로 시력이 떨어졌다면 정답이 된다.\n  - ③ 3개월 뒤 재검은 중등도 이상의 비증식 망막병증(여러 곳 출혈·정맥 염주 모양)이 보였다면 정답이 된다.\n  - ④ 형광안저혈관조영술은 원인 모를 시력 저하나 황반부종·신생혈관의 범위를 확인해야 할 때 정답이 되며, 정상 선별검사에는 쓰지 않는다.\n  - ⑤ 범망막광응고술은 시신경유두·망막의 신생혈관이 있는 증식 당뇨망막병증이라면 정답이 된다.\n- 함정: 당뇨병 환자의 안저 사진이면 무언가 치료해야 한다고 생각하는 것 — 정상 안저는 간격을 정하는 문제다.\n- 제작 가정: IDRiD 는 안저 사진과 망막병증 등급만 있고 나이·성별·병력이 없다 — 제2형 당뇨병 진단 직후 첫 선별검사 상황과 시력·혈당 수치를 가정했다 (가정한 정보: 제2형 당뇨병을 진단받은 · 당화혈색소는 7.4 % 이다 · 양눈 교정시력은 1.0)\n- 학습목표: 제2형 당뇨병 진단 시 첫 안저검사에서 미세동맥류·출혈·삼출물이 없는 정상 안저를 확인하고 다음 선별검사 간격을 정한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 417: Diabetes Mellitus: Complications · American Diabetes Association Professional Practice Committee. 12. Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2025. Diabetes Care. 2025;48(Suppl 1):S252-S265 · Porwal P, Pachade S, Kamble R, et al. Indian Diabetic Retinopathy Image Dataset (IDRiD): a database for diabetic retinopathy screening research. Data. 2018;3(3):25\n\n## 출처\n- IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_359 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "시신경유두 경계가 뚜렷하고 혈관의 주행·굵기가 정상이며, 미세동맥류·점상출혈·경성삼출물·면화반·신생혈관이 없고 황반도 깨끗하다 — 당뇨망막병증이 없는 정상 안저다. 제2형 당뇨병은 진단 시점에 이미 망막병증이 있을 수 있어 진단 즉시 첫 검사를 하고, 망막병증이 없으면 1년(혈당 조절이 좋으면 1~2년)마다 다시 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 제2형은 진단 즉시, 제1형은 5년 뒤에 보는가</b>: 망막병증은 고혈당에 노출된 기간에 비례한다. 제1형은 발병 시점이 분명해 5년 안에는 망막병증이 거의 없지만, 제2형은 진단 전 몇 년간 모르는 채 고혈당이 지속된 경우가 많아 <b>진단 때 이미 망막병증이 있는 환자</b>가 적지 않다. 그래서 제2형은 진단 직후 산동 검사를 한다.<br> <b>왜 1년 간격인가</b>: 망막병증이 없는 눈이 1년 안에 치료가 필요한 단계(중증 비증식·증식·황반부종)로 넘어갈 확률은 매우 낮다. 반대로 비증식 망막병증이 있으면 중증도에 따라 3~12개월로 간격을 줄인다. 검사 간격은 「지금 단계에서 다음 치료 단계까지 걸리는 시간」으로 정해진다.<br> <b>치료는 언제</b>: 레이저(범망막광응고술)는 증식 망막병증, 항VEGF 주사는 중심부 황반부종에서 쓴다 — 망막병증이 없는 눈에는 혈당·혈압·지질 조절이 유일한 예방책이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">1년 뒤 재검(정답 — 망막병증 없음)</th><th>3개월 뒤 재검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해당 단계</td><td><b>망막병증 없음</b> 또는 경미한 비증식(일부 지침)</td><td>중등도~중증 비증식 망막병증</td></tr> <tr><td>안저 소견</td><td>미세동맥류·출혈·삼출물 없음</td><td>여러 사분면의 출혈·정맥 염주 모양·망막내 미세혈관 이상</td></tr> <tr><td>왜 그 간격인가</td><td>1년 안에 치료 단계로 진행할 위험이 매우 낮다</td><td>1년 안 증식 단계 진행 위험이 높다</td></tr> <tr><td>이 환자</td><td>안저 정상 — 일치</td><td>병변 없음 — 불일치</td></tr> </tbody></table> 검사 간격은 「보이는 망막병증 단계」로 정하고, 당뇨병의 종류는 「첫 검사 시점」을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 유리체강내 항VEGF 주사는 중심부를 침범한 당뇨황반부종으로 시력이 떨어졌다면 정답이 된다.\n③ 3개월 뒤 재검은 중등도 이상의 비증식 망막병증(여러 곳 출혈·정맥 염주 모양)이 보였다면 정답이 된다.\n④ 형광안저혈관조영술은 원인 모를 시력 저하나 황반부종·신생혈관의 범위를 확인해야 할 때 정답이 되며, 정상 선별검사에는 쓰지 않는다.\n⑤ 범망막광응고술은 시신경유두·망막의 신생혈관이 있는 증식 당뇨망막병증이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "당뇨병 환자의 안저 사진이면 무언가 치료해야 한다고 생각하는 것 — 정상 안저는 간격을 정하는 문제다."
+   },
+   {
+    "k": "제작 가정",
+    "v": "IDRiD 는 안저 사진과 망막병증 등급만 있고 나이·성별·병력이 없다 — 제2형 당뇨병 진단 직후 첫 선별검사 상황과 시력·혈당 수치를 가정했다 (가정한 정보: 제2형 당뇨병을 진단받은 · 당화혈색소는 7.4 % 이다 · 양눈 교정시력은 1.0)"
+   },
+   {
+    "k": "학습목표",
+    "v": "제2형 당뇨병 진단 시 첫 안저검사에서 미세동맥류·출혈·삼출물이 없는 정상 안저를 확인하고 다음 선별검사 간격을 정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 417: Diabetes Mellitus: Complications · American Diabetes Association Professional Practice Committee. 12. Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2025. Diabetes Care. 2025;48(Suppl 1):S252-S265 · Porwal P, Pachade S, Kamble R, et al. Indian Diabetic Retinopathy Image Dataset (IDRiD): a database for diabetic retinopathy screening research. Data. 2018;3(3):25 ## 출처 IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_359 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "망막병증이 없는 제2형 당뇨병 환자의 다음 선별 안저검사는 1년 뒤다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "미세동맥류·출혈·삼출물이 하나도 없는 정상 안저다",
+   "steps": 2,
+   "chain": [
+    "영상: 미세동맥류·출혈·경성삼출물·신생혈관이 없고 황반이 깨끗하다 → 당뇨망막병증 없음",
+    "망막병증 없음 → 치료 대상 아님, 1년 뒤 산동 안저검사"
+   ],
+   "key": [
+    {
+     "item": "영상: 미세동맥류·점상출혈·경성삼출물·신생혈관 없음",
+     "why": "망막병증 단계 = 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "눈 증상은 없다",
+     "why": "황반부종에 의한 시력 저하 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "양눈 교정시력은 1.0",
+     "why": "중심부 황반부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "제2형 당뇨병을 진단받은",
+     "why": "진단 즉시 첫 검사를 하는 이유 — 이미 시행됨",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "당화혈색소는 7.4 % 이다",
+     "why": "조절 정도는 간격을 1~2년 중에서 고를 때만 영향",
+     "also": []
+    }
+   ],
+   "summary": "안저에 망막병증이 없다. 치료할 병변이 없으므로 1년 뒤 산동 안저검사로 선별을 이어 간다.",
+   "switch": {
+    "choice": "C",
+    "condition": "여러 사분면의 망막내 출혈과 정맥 염주 모양이 보이는 중증 비증식 망막병증이라면 3개월 뒤 재검"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0645.jpg",
+   "caption": "안저 사진, 원본 그대로 축소만 (IEEE DataPort, CC BY 4.0) ※ 발문의 임상 상황은 문항 구성을 위한 가정이다 — 원 데이터에는 나이·병력이 없다",
+   "alt": "FUNDUS 영상"
+  },
+  "attribution": {
+   "dataset": "Indian Diabetic Retinopathy Image Dataset (IDRiD)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://idrid.grand-challenge.org/Data/",
+   "asset_id": "IDRID-IDRiD_359",
+   "text": "IDRiD (IEEE DataPort, CC BY 4.0) · IDRiD_359"
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0653",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "내분비·대사 — 우연히 발견된 부신 종괴의 기능 평가",
+  "type": "내분비·대사 — 우연히 발견된 부신 종괴의 기능 평가",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-13",
+  "vignette": "52세 남자가 신장 결석으로 찍은 비조영 복부 CT 에서 오른쪽 부신에 종괴가 발견되어 왔다. 종괴는 지름 2.4 cm, 경계가 매끈하고 감쇠값은 6 하운스필드 단위이다. 두근거림·두통·땀 흘림은 없고 체중 변화도 없다. 고혈압·당뇨병 병력이 없다. 혈압 124/78 mmHg, 맥박 72회/분, 체질량지수 24 kg/m² 이다. 보름달 얼굴이나 자색 선조는 없다. 혈청 나트륨 140 mEq/L, 칼륨 4.3 mEq/L, 공복 혈당 92 mg/dL 이다.",
+  "question": "다음으로 가장 적절한 검사는?",
+  "options": [
+   "1 mg 야간 덱사메타손 억제검사와 혈장 유리 메타네프린",
+   "혈장 알도스테론 농도와 레닌 활성도 비",
+   "CT 유도 부신 경피 생검",
+   "부신정맥 채혈",
+   "6개월 뒤 조영 CT 재촬영만 시행"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 2.4 cm, 경계가 매끈하고 비조영 CT 감쇠값이 10 하운스필드 단위 이하인 종괴는 지질이 많은 양성 선종에 합당해 영상 추가 검사가 필요 없다. 그러나 우연종의 일부는 증상 없이 호르몬을 만든다. 모든 부신 우연종에서 코르티솔 자율 분비(1 mg 덱사메타손 억제검사)를 확인하고, 갈색세포종은 영상으로 완전히 배제되지 않는 한 혈장 유리 메타네프린을 잰다(감쇠값 ≤ 10 이면 갈색세포종 가능성은 매우 낮아 생략을 허용하는 지침도 있다). 알도스테론 선별은 고혈압이나 저칼륨혈증이 있을 때만 한다.\n- 원리: <b>왜 감쇠값이 양성을 가르는가</b>: 부신피질 선종은 세포질에 지질(콜레스테롤 에스터)이 많아 비조영 CT 에서 물에 가까운 낮은 감쇠값(≤ 10 하운스필드 단위)을 보인다. 부신피질암·전이·갈색세포종은 지질이 적어 감쇠값이 높다. 그래서 감쇠값 ≤ 10, 4 cm 미만이면 악성 가능성이 매우 낮아 생검이나 추적 영상이 필요 없다.<br> <b>왜 영상이 양성이어도 호르몬 검사를 하는가</b>: 양성 선종의 약 5~30 %(정의에 따라)는 코르티솔을 ACTH 와 무관하게 조금씩 만든다(경도 자율 코르티솔 분비). 쿠싱 징후가 없어도 고혈압·당뇨병·골다공증·심혈관 사건 위험을 높인다. 1 mg 덱사메타손으로 ACTH 를 눌렀는데도 아침 코르티솔이 1.8 μg/dL 를 넘으면 자율 분비다.<br> <b>왜 알도스테론은 조건부인가</b>: 원발성 알도스테론증은 거의 항상 고혈압을 만들기 때문에, 혈압과 칼륨이 정상인 사람에서 선별 검사는 얻는 것이 거의 없고 위양성만 늘린다.<br> <b>생검을 하지 않는 이유</b>: 갈색세포종이면 생검이 고혈압 위기를 일으킬 수 있고, 부신피질암은 생검으로 양성과 구별하기 어렵다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">덱사메타손 억제검사 ± 메타네프린(정답)</th><th>알도스테론/레닌 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>모든 부신 우연종</b>(메타네프린은 영상이 양성 선종이 아닐 때 필수)</td><td>고혈압 또는 저칼륨혈증이 있는 우연종</td></tr> <tr><td>찾는 것</td><td>경도 자율 코르티솔 분비 · 갈색세포종</td><td>원발성 알도스테론증</td></tr> <tr><td>왜 그 기준인가</td><td>코르티솔 과다는 징후 없이도 대사·심혈관 위험을 높인다</td><td>알도스테론 과다는 거의 항상 고혈압을 동반한다</td></tr> <tr><td>이 환자</td><td>무증상 우연종 — 해당</td><td>혈압 124/78 · 칼륨 4.3 — 해당 없음</td></tr> </tbody></table> 「누구에게나 하는 검사」(코르티솔)와 「조건이 있을 때만 하는 검사」(알도스테론)를 혈압·칼륨으로 가른다.\n- 오답 이유:\n  - ② 알도스테론/레닌 비는 같은 종괴에 고혈압이나 저칼륨혈증이 있었다면 정답이 된다.\n  - ③ CT 유도 생검은 부신 외 원발암이 있어 전이를 확인해야 하고 갈색세포종이 배제된 경우에만 정답이 된다.\n  - ④ 부신정맥 채혈은 원발성 알도스테론증이 확진된 뒤 수술 전에 어느 쪽에서 분비하는지 가릴 때 정답이 된다.\n  - ⑤ 추적 영상만 하는 것은 감쇠값이 10 을 넘거나 크기가 애매해 영상 성질이 불확실할 때 고려하며, 기능 검사를 대신하지 못한다.\n- 함정: 영상이 양성이니 끝났다고 보는 것, 또는 모든 호르몬을 한꺼번에 재는 것 — 코르티솔은 모두에게, 알도스테론은 고혈압·저칼륨이 있을 때만 본다.\n- 학습목표: 영상으로 양성 선종에 합당한 부신 우연종에서 혈압·칼륨이 정상이면 모든 환자에게 필요한 기능 검사(코르티솔 자율 분비·갈색세포종)를 고르고, 알도스테론 선별의 적응증과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 399: Pheochromocytoma · Fassnacht M, Tsagarakis S, Terzolo M, et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas, in collaboration with the European Network for the Study of Adrenal Tumors. Eur J Endocrinol. 2023;189(1):G1-G42",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "2.4 cm, 경계가 매끈하고 비조영 CT 감쇠값이 10 하운스필드 단위 이하인 종괴는 지질이 많은 양성 선종에 합당해 영상 추가 검사가 필요 없다. 그러나 우연종의 일부는 증상 없이 호르몬을 만든다. 모든 부신 우연종에서 코르티솔 자율 분비(1 mg 덱사메타손 억제검사)를 확인하고, 갈색세포종은 영상으로 완전히 배제되지 않는 한 혈장 유리 메타네프린을 잰다(감쇠값 ≤ 10 이면 갈색세포종 가능성은 매우 낮아 생략을 허용하는 지침도 있다). 알도스테론 선별은 고혈압이나 저칼륨혈증이 있을 때만 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 감쇠값이 양성을 가르는가</b>: 부신피질 선종은 세포질에 지질(콜레스테롤 에스터)이 많아 비조영 CT 에서 물에 가까운 낮은 감쇠값(≤ 10 하운스필드 단위)을 보인다. 부신피질암·전이·갈색세포종은 지질이 적어 감쇠값이 높다. 그래서 감쇠값 ≤ 10, 4 cm 미만이면 악성 가능성이 매우 낮아 생검이나 추적 영상이 필요 없다.<br> <b>왜 영상이 양성이어도 호르몬 검사를 하는가</b>: 양성 선종의 약 5~30 %(정의에 따라)는 코르티솔을 ACTH 와 무관하게 조금씩 만든다(경도 자율 코르티솔 분비). 쿠싱 징후가 없어도 고혈압·당뇨병·골다공증·심혈관 사건 위험을 높인다. 1 mg 덱사메타손으로 ACTH 를 눌렀는데도 아침 코르티솔이 1.8 μg/dL 를 넘으면 자율 분비다.<br> <b>왜 알도스테론은 조건부인가</b>: 원발성 알도스테론증은 거의 항상 고혈압을 만들기 때문에, 혈압과 칼륨이 정상인 사람에서 선별 검사는 얻는 것이 거의 없고 위양성만 늘린다.<br> <b>생검을 하지 않는 이유</b>: 갈색세포종이면 생검이 고혈압 위기를 일으킬 수 있고, 부신피질암은 생검으로 양성과 구별하기 어렵다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">덱사메타손 억제검사 ± 메타네프린(정답)</th><th>알도스테론/레닌 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>모든 부신 우연종</b>(메타네프린은 영상이 양성 선종이 아닐 때 필수)</td><td>고혈압 또는 저칼륨혈증이 있는 우연종</td></tr> <tr><td>찾는 것</td><td>경도 자율 코르티솔 분비 · 갈색세포종</td><td>원발성 알도스테론증</td></tr> <tr><td>왜 그 기준인가</td><td>코르티솔 과다는 징후 없이도 대사·심혈관 위험을 높인다</td><td>알도스테론 과다는 거의 항상 고혈압을 동반한다</td></tr> <tr><td>이 환자</td><td>무증상 우연종 — 해당</td><td>혈압 124/78 · 칼륨 4.3 — 해당 없음</td></tr> </tbody></table> 「누구에게나 하는 검사」(코르티솔)와 「조건이 있을 때만 하는 검사」(알도스테론)를 혈압·칼륨으로 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 알도스테론/레닌 비는 같은 종괴에 고혈압이나 저칼륨혈증이 있었다면 정답이 된다.\n③ CT 유도 생검은 부신 외 원발암이 있어 전이를 확인해야 하고 갈색세포종이 배제된 경우에만 정답이 된다.\n④ 부신정맥 채혈은 원발성 알도스테론증이 확진된 뒤 수술 전에 어느 쪽에서 분비하는지 가릴 때 정답이 된다.\n⑤ 추적 영상만 하는 것은 감쇠값이 10 을 넘거나 크기가 애매해 영상 성질이 불확실할 때 고려하며, 기능 검사를 대신하지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "영상이 양성이니 끝났다고 보는 것, 또는 모든 호르몬을 한꺼번에 재는 것 — 코르티솔은 모두에게, 알도스테론은 고혈압·저칼륨이 있을 때만 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "영상으로 양성 선종에 합당한 부신 우연종에서 혈압·칼륨이 정상이면 모든 환자에게 필요한 기능 검사(코르티솔 자율 분비·갈색세포종)를 고르고, 알도스테론 선별의 적응증과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 399: Pheochromocytoma · Fassnacht M, Tsagarakis S, Terzolo M, et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas, in collaboration with the European Network for the Study of Adrenal Tumors. Eur J Endocrinol. 2023;189(1):G1-G42"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "영상이 양성 선종인 부신 우연종도 코르티솔 자율 분비를 확인하고, 혈압·칼륨이 정상이면 알도스테론 선별은 하지 않는다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "혈압 124/78 mmHg 와 칼륨 4.3 mEq/L 로 알도스테론 선별 적응증이 없다",
+   "steps": 3,
+   "chain": [
+    "2.4 cm · 매끈한 경계 · 감쇠값 6 하운스필드 단위 → 양성 선종, 영상 추가 검사·생검 불필요",
+    "무증상이어도 모든 우연종 → 코르티솔 자율 분비 검사(± 메타네프린)",
+    "혈압·칼륨 정상 → 알도스테론/레닌 비는 적응증 없음"
+   ],
+   "key": [
+    {
+     "item": "감쇠값은 6 하운스필드 단위",
+     "why": "지질이 많은 양성 선종",
+     "also": []
+    },
+    {
+     "item": "지름 2.4 cm",
+     "why": "4 cm 미만 — 악성 가능성 낮음",
+     "also": []
+    },
+    {
+     "item": "혈압 124/78 mmHg",
+     "why": "알도스테론 선별 적응증 없음",
+     "also": []
+    },
+    {
+     "item": "칼륨 4.3 mEq/L",
+     "why": "저칼륨혈증 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "보름달 얼굴이나 자색 선조는 없다",
+     "why": "명백한 쿠싱 증후군 가능성을 낮춘다 — 경도 자율 분비는 남는다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "두근거림·두통·땀 흘림은 없고",
+     "why": "갈색세포종의 증상 부재 — 무증상 갈색세포종을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "신장 결석으로",
+     "why": "우연히 발견된 경위",
+     "also": []
+    }
+   ],
+   "summary": "영상은 양성 선종이지만 무증상 호르몬 분비를 확인해야 한다. 혈압·칼륨이 정상이라 덱사메타손 억제검사와 메타네프린을 하고 알도스테론 선별은 하지 않는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 종괴에 고혈압과 칼륨 3.1 mEq/L 이 있었다면 알도스테론/레닌 비도 함께"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0652",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "소아청소년 — 5일 넘는 발열과 결막 충혈·입술 갈라짐의 영아",
+  "type": "소아청소년 — 5일 넘는 발열과 결막 충혈·입술 갈라짐의 영아",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-13",
+  "vignette": "A 2-year-old boy is brought to the physician because of fever for 6 days that has not responded to acetaminophen. His mother reports that his eyes have been red without discharge for 4 days and that his hands and feet are swollen. His temperature is 39.6°C, and pulse is 150/min. He is irritable. Examination shows bilateral nonexudative conjunctival injection, red cracked lips, and a strawberry tongue. There is a polymorphous maculopapular rash on the trunk. The hands and feet are diffusely red and swollen. There is no lymphadenopathy. Leukocyte count is 17,500/mm3, platelet count is 450,000/mm3, C-reactive protein is 12 mg/dL, and serum albumin is 2.9 g/dL. A rapid streptococcal antigen test is negative. Echocardiography shows no coronary artery dilation.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Supportive care and reevaluation in 5 days",
+   "Intravenous immunoglobulin and aspirin",
+   "Aspirin alone and repeat echocardiography in 2 weeks",
+   "Oral amoxicillin",
+   "Intravenous methylprednisolone alone"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Fever for 6 days with four of the five principal features — bilateral nonexudative conjunctival injection, oral changes (cracked lips, strawberry tongue), polymorphous rash, and swollen red hands and feet — fulfills the criteria for Kawasaki disease even without lymphadenopathy. A normal echocardiogram does not remove the need for treatment: intravenous immunoglobulin 2 g/kg with aspirin within the first 10 days of fever lowers the risk of coronary artery aneurysms from about 25% to about 5%.\n- 원리: <b>What happens to the coronaries</b>: Kawasaki disease is a medium-vessel vasculitis of young children. Neutrophils, then lymphocytes and plasma cells, infiltrate the coronary artery wall and destroy the internal elastic lamina and media, so the artery dilates into an aneurysm. Aneurysms usually begin to form in the second week, which is why the treatment window is the first 10 days.<br> <b>Why IVIG works</b>: High-dose IVIG modulates the immune response (Fc-receptor blockade, neutralization of toxins and cytokines, regulatory T-cell effects), quickly ending the fever and the arterial inflammation. Aspirin is given at moderate–high dose for its anti-inflammatory effect and then at low dose for its antiplatelet effect until echocardiography is normal at 6–8 weeks.<br> <b>Why a normal first echocardiogram does not change treatment</b>: The diagnosis is clinical, and the purpose of treatment is to <b>prevent</b> aneurysms that have not formed yet. A strawberry tongue and rash also occur in scarlet fever, but the negative streptococcal test, nonexudative conjunctivitis, and extremity changes point away from it.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">IVIG + aspirin (answer)</th><th>Aspirin alone, recheck later (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on aneurysm risk</td><td><b>~25% → ~5%</b></td><td>No proven reduction in aneurysms</td></tr> <tr><td>Why</td><td>Stops arterial wall inflammation before the elastic lamina is destroyed</td><td>Controls fever and platelets but not the vasculitis</td></tr> <tr><td>Timing</td><td>Within 10 days of fever onset (ideally 5–7)</td><td>Waiting lets the window close</td></tr> <tr><td>This patient</td><td>Day 6, criteria met — treat now</td><td>Normal echo is not a reason to delay</td></tr> </tbody></table> Diagnose clinically, treat early, and use echocardiography to follow — not to decide whether to treat.\n- 오답 이유:\n  - (A) Supportive care and reevaluation would suit a self-limited viral exanthem, but delaying here lets coronary aneurysms form.\n  - (C) Aspirin alone with later echocardiography would be inadequate even after day 10; IVIG is still given beyond 10 days if fever or inflammation persists.\n  - (D) Oral amoxicillin would be correct if the rapid streptococcal test were positive for scarlet fever, with sandpaper rash and exudative pharyngitis.\n  - (E) Corticosteroids are added to IVIG for high-risk patients or for IVIG-resistant disease, not given alone as first-line therapy.\n- 함정: Withholding treatment because the first echocardiogram is normal — IVIG is given to prevent aneurysms, not to treat existing ones.\n- 학습목표: Diagnose Kawasaki disease from ≥5 days of fever with four principal features and treat with intravenous immunoglobulin plus aspirin within 10 days to prevent coronary aneurysms\n- 근거·출처: McCrindle BW, Rowley AH, Newburger JW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement for health professionals from the American Heart Association. Circulation. 2017;135(17):e927-e999 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 375: The Vasculitis Syndromes · Newburger JW, Takahashi M, Burns JC, et al. The treatment of Kawasaki syndrome with intravenous gamma globulin. N Engl J Med. 1986;315(6):341-347",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever for 6 days with four of the five principal features — bilateral nonexudative conjunctival injection, oral changes (cracked lips, strawberry tongue), polymorphous rash, and swollen red hands and feet — fulfills the criteria for Kawasaki disease even without lymphadenopathy. A normal echocardiogram does not remove the need for treatment: intravenous immunoglobulin 2 g/kg with aspirin within the first 10 days of fever lowers the risk of coronary artery aneurysms from about 25% to about 5%."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What happens to the coronaries</b>: Kawasaki disease is a medium-vessel vasculitis of young children. Neutrophils, then lymphocytes and plasma cells, infiltrate the coronary artery wall and destroy the internal elastic lamina and media, so the artery dilates into an aneurysm. Aneurysms usually begin to form in the second week, which is why the treatment window is the first 10 days.<br> <b>Why IVIG works</b>: High-dose IVIG modulates the immune response (Fc-receptor blockade, neutralization of toxins and cytokines, regulatory T-cell effects), quickly ending the fever and the arterial inflammation. Aspirin is given at moderate–high dose for its anti-inflammatory effect and then at low dose for its antiplatelet effect until echocardiography is normal at 6–8 weeks.<br> <b>Why a normal first echocardiogram does not change treatment</b>: The diagnosis is clinical, and the purpose of treatment is to <b>prevent</b> aneurysms that have not formed yet. A strawberry tongue and rash also occur in scarlet fever, but the negative streptococcal test, nonexudative conjunctivitis, and extremity changes point away from it."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">IVIG + aspirin (answer)</th><th>Aspirin alone, recheck later (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on aneurysm risk</td><td><b>~25% → ~5%</b></td><td>No proven reduction in aneurysms</td></tr> <tr><td>Why</td><td>Stops arterial wall inflammation before the elastic lamina is destroyed</td><td>Controls fever and platelets but not the vasculitis</td></tr> <tr><td>Timing</td><td>Within 10 days of fever onset (ideally 5–7)</td><td>Waiting lets the window close</td></tr> <tr><td>This patient</td><td>Day 6, criteria met — treat now</td><td>Normal echo is not a reason to delay</td></tr> </tbody></table> Diagnose clinically, treat early, and use echocardiography to follow — not to decide whether to treat."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Supportive care and reevaluation would suit a self-limited viral exanthem, but delaying here lets coronary aneurysms form.\n(C) Aspirin alone with later echocardiography would be inadequate even after day 10; IVIG is still given beyond 10 days if fever or inflammation persists.\n(D) Oral amoxicillin would be correct if the rapid streptococcal test were positive for scarlet fever, with sandpaper rash and exudative pharyngitis.\n(E) Corticosteroids are added to IVIG for high-risk patients or for IVIG-resistant disease, not given alone as first-line therapy."
+   },
+   {
+    "k": "함정",
+    "v": "Withholding treatment because the first echocardiogram is normal — IVIG is given to prevent aneurysms, not to treat existing ones."
+   },
+   {
+    "k": "학습목표",
+    "v": "Diagnose Kawasaki disease from ≥5 days of fever with four principal features and treat with intravenous immunoglobulin plus aspirin within 10 days to prevent coronary aneurysms"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McCrindle BW, Rowley AH, Newburger JW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement for health professionals from the American Heart Association. Circulation. 2017;135(17):e927-e999 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 375: The Vasculitis Syndromes · Newburger JW, Takahashi M, Burns JC, et al. The treatment of Kawasaki syndrome with intravenous gamma globulin. N Engl J Med. 1986;315(6):341-347"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Fever ≥ 5 days with four principal features is Kawasaki disease and is treated with IVIG plus aspirin within 10 days regardless of the first echocardiogram",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "IVIG, not aspirin, prevents coronary aneurysms, and a normal echo does not defer treatment",
+   "steps": 3,
+   "chain": [
+    "Fever 6 days + conjunctival injection, oral changes, rash, extremity changes (4 of 5) → Kawasaki disease",
+    "Negative streptococcal test and nonexudative conjunctivitis → scarlet fever less likely",
+    "Day 6 of fever, normal echo → IVIG plus aspirin now to prevent aneurysms"
+   ],
+   "key": [
+    {
+     "item": "fever for 6 days",
+     "why": "≥ 5 days of fever is required",
+     "also": []
+    },
+    {
+     "item": "bilateral nonexudative conjunctival injection",
+     "why": "Principal feature",
+     "also": []
+    },
+    {
+     "item": "red cracked lips, and a strawberry tongue",
+     "why": "Oral mucosal changes",
+     "also": []
+    },
+    {
+     "item": "The hands and feet are diffusely red and swollen",
+     "why": "Extremity changes",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "A rapid streptococcal antigen test is negative",
+     "why": "Lowers the likelihood of scarlet fever",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Echocardiography shows no coronary artery dilation",
+     "why": "Does not defer treatment",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "There is no lymphadenopathy",
+     "why": "The least frequent criterion — four of five are enough",
+     "also": []
+    }
+   ],
+   "summary": "Six days of fever with four principal features is Kawasaki disease. IVIG plus aspirin is given now to prevent coronary aneurysms, even though the first echocardiogram is normal.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the rapid streptococcal test were positive with exudative pharyngitis and a sandpaper rash, scarlet fever treated with amoxicillin"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0651",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "신장·비뇨 — 반복 구토 뒤 대사알칼리증과 소변 염소",
+  "type": "신장·비뇨 — 반복 구토 뒤 대사알칼리증과 소변 염소",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-13",
+  "vignette": "34세 여자가 1주일 전부터 하루 여러 번 토하고 기운이 없어 응급실에 왔다. 이뇨제나 완하제는 먹지 않는다고 한다. 혈압은 누운 자세 102/64 mmHg, 선 자세 86/58 mmHg 이고 맥박은 112회/분이다. 혀가 말라 있다. 혈청 나트륨 136 mEq/L, 칼륨 2.9 mEq/L, 염소 84 mEq/L, 중탄산염 38 mEq/L, 크레아티닌 1.2 mg/dL 이다. 동맥혈 pH 7.54, PaCO2 47 mmHg 이다. 소변 나트륨은 46 mEq/L, 소변 염소는 6 mEq/L, 소변 칼륨은 38 mEq/L 이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "0.1 N 염산 중심정맥 주입",
+   "수분 제한과 경과 관찰",
+   "염화칼륨을 넣은 생리식염수 정맥 주입",
+   "아세타졸아마이드 정맥 주사",
+   "스피로놀락톤 경구 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: pH 7.54 와 중탄산염 38 mEq/L 은 대사알칼리증이고, PaCO2 47 mmHg 는 예상 보상(0.7 × 14 + 40 ≈ 50 mmHg)에 가까운 호흡 보상이다. 구토로 위산(HCl)을 잃어 알칼리증이 생기고, 용적이 줄어 기립성 저혈압이 있다. 소변 나트륨이 46 mEq/L 로 높은 것은 소변에 중탄산염이 빠져나가며 나트륨을 끌고 나가기 때문이고, 진짜 용적 상태는 소변 염소 6 mEq/L(< 20)가 보여 준다 — 식염 반응성 알칼리증이다. 생리식염수로 용적과 염소를 채우고 저칼륨을 함께 교정하면 신장이 남는 중탄산염을 내보낸다.\n- 원리: <b>왜 구토 뒤 알칼리증이 지속되는가</b>: 위산을 잃으면 중탄산염이 생기지만(생성 단계), 신장은 보통 남는 중탄산염을 쉽게 버린다. 알칼리증이 <b>유지</b>되는 것은 ① 용적 감소로 사구체 여과가 줄고 근위세관 나트륨·중탄산염 재흡수가 늘며 ② 레닌-알도스테론이 켜져 원위에서 수소·칼륨 분비가 늘고 ③ 염소가 부족해 집합관의 펜드린(염소-중탄산염 교환체)이 중탄산염을 내보내지 못하기 때문이다. 저칼륨은 세포 안 산증을 만들어 수소 분비를 더 키운다.<br> <b>왜 소변 나트륨보다 소변 염소인가</b>: 알칼리증 초기에는 여과된 중탄산염이 재흡수 한계를 넘어 소변으로 나가며, 음이온을 따라 나트륨·칼륨이 함께 빠져 소변 나트륨이 높게 나온다. 염소는 그런 짝 이동이 없어 용적 감소 때 거의 0 으로 떨어진다. 그래서 구토 환자의 용적은 <b>소변 염소 < 20 mEq/L</b> 로 판단한다.<br> <b>교정</b>: 생리식염수는 용적과 염소를 동시에 채워 세 유지 기전을 모두 끊는다. 칼륨은 염화칼륨으로 준다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">식염 반응성(정답 — 구토)</th><th>식염 불응성(가장 가까운 오답 — 광물부신피질호르몬 과다)</th></tr></thead><tbody> <tr><td>소변 염소</td><td><b>&lt; 20 mEq/L</b>(용적 감소로 염소를 붙잡는다)</td><td>&gt; 20 mEq/L</td></tr> <tr><td>혈압·용적</td><td>낮다 · 기립성 저혈압</td><td>높다(알도스테론증) 또는 정상(바터·기텔만)</td></tr> <tr><td>대표 원인</td><td>구토·위 흡인·이전 이뇨제 사용</td><td>원발성 알도스테론증, 쿠싱, 이뇨제 사용 중, 바터·기텔만</td></tr> <tr><td>치료</td><td>생리식염수 + 염화칼륨</td><td>원인 교정, 칼륨보존 이뇨제(스피로놀락톤)</td></tr> </tbody></table> 소변 염소가 낮으면 「소금을 주면 낫는다」, 높으면 「소금으로 안 낫는다」 — 혈압이 둘을 한 번 더 가른다.\n- 오답 이유:\n  - ① 염산 주입은 pH 7.6 을 넘는 생명을 위협하는 알칼리증이 식염수·아세타졸아마이드에 반응하지 않을 때만 정답이 된다.\n  - ② 수분 제한은 용적 과다의 저나트륨혈증이라면 정답이 되며, 이 환자는 기립성 저혈압으로 용적이 부족하다.\n  - ④ 아세타졸아마이드는 용적이 과다한 대사알칼리증(심부전 환자의 이뇨 뒤 등)에서 식염수를 줄 수 없을 때 정답이 된다.\n  - ⑤ 스피로놀락톤은 고혈압과 소변 염소 > 20 mEq/L 의 원발성 알도스테론증이라면 정답이 되며, 저혈압 환자의 용적을 더 줄인다.\n- 함정: 소변 나트륨이 높아 용적이 충분하다고 읽는 것 — 대사알칼리증에서는 중탄산염이 나트륨을 끌고 나가 소변 염소로 용적을 판단한다.\n- 학습목표: 반복 구토 뒤 대사알칼리증에서 소변 염소가 낮은 식염 반응성 알칼리증을 판단하고, 소변 나트륨이 아니라 소변 염소로 용적 상태를 읽어 생리식염수 투여를 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 58: Acidosis and Alkalosis · Luke RG, Galla JH. It is chloride depletion alkalosis, not contraction alkalosis. J Am Soc Nephrol. 2012;23(2):204-207 · Seifter JL. Integration of acid-base and electrolyte disorders. N Engl J Med. 2014;371(19):1821-1831",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "pH 7.54 와 중탄산염 38 mEq/L 은 대사알칼리증이고, PaCO2 47 mmHg 는 예상 보상(0.7 × 14 + 40 ≈ 50 mmHg)에 가까운 호흡 보상이다. 구토로 위산(HCl)을 잃어 알칼리증이 생기고, 용적이 줄어 기립성 저혈압이 있다. 소변 나트륨이 46 mEq/L 로 높은 것은 소변에 중탄산염이 빠져나가며 나트륨을 끌고 나가기 때문이고, 진짜 용적 상태는 소변 염소 6 mEq/L(< 20)가 보여 준다 — 식염 반응성 알칼리증이다. 생리식염수로 용적과 염소를 채우고 저칼륨을 함께 교정하면 신장이 남는 중탄산염을 내보낸다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 구토 뒤 알칼리증이 지속되는가</b>: 위산을 잃으면 중탄산염이 생기지만(생성 단계), 신장은 보통 남는 중탄산염을 쉽게 버린다. 알칼리증이 <b>유지</b>되는 것은 ① 용적 감소로 사구체 여과가 줄고 근위세관 나트륨·중탄산염 재흡수가 늘며 ② 레닌-알도스테론이 켜져 원위에서 수소·칼륨 분비가 늘고 ③ 염소가 부족해 집합관의 펜드린(염소-중탄산염 교환체)이 중탄산염을 내보내지 못하기 때문이다. 저칼륨은 세포 안 산증을 만들어 수소 분비를 더 키운다.<br> <b>왜 소변 나트륨보다 소변 염소인가</b>: 알칼리증 초기에는 여과된 중탄산염이 재흡수 한계를 넘어 소변으로 나가며, 음이온을 따라 나트륨·칼륨이 함께 빠져 소변 나트륨이 높게 나온다. 염소는 그런 짝 이동이 없어 용적 감소 때 거의 0 으로 떨어진다. 그래서 구토 환자의 용적은 <b>소변 염소 < 20 mEq/L</b> 로 판단한다.<br> <b>교정</b>: 생리식염수는 용적과 염소를 동시에 채워 세 유지 기전을 모두 끊는다. 칼륨은 염화칼륨으로 준다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">식염 반응성(정답 — 구토)</th><th>식염 불응성(가장 가까운 오답 — 광물부신피질호르몬 과다)</th></tr></thead><tbody> <tr><td>소변 염소</td><td><b>&lt; 20 mEq/L</b>(용적 감소로 염소를 붙잡는다)</td><td>&gt; 20 mEq/L</td></tr> <tr><td>혈압·용적</td><td>낮다 · 기립성 저혈압</td><td>높다(알도스테론증) 또는 정상(바터·기텔만)</td></tr> <tr><td>대표 원인</td><td>구토·위 흡인·이전 이뇨제 사용</td><td>원발성 알도스테론증, 쿠싱, 이뇨제 사용 중, 바터·기텔만</td></tr> <tr><td>치료</td><td>생리식염수 + 염화칼륨</td><td>원인 교정, 칼륨보존 이뇨제(스피로놀락톤)</td></tr> </tbody></table> 소변 염소가 낮으면 「소금을 주면 낫는다」, 높으면 「소금으로 안 낫는다」 — 혈압이 둘을 한 번 더 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 염산 주입은 pH 7.6 을 넘는 생명을 위협하는 알칼리증이 식염수·아세타졸아마이드에 반응하지 않을 때만 정답이 된다.\n② 수분 제한은 용적 과다의 저나트륨혈증이라면 정답이 되며, 이 환자는 기립성 저혈압으로 용적이 부족하다.\n④ 아세타졸아마이드는 용적이 과다한 대사알칼리증(심부전 환자의 이뇨 뒤 등)에서 식염수를 줄 수 없을 때 정답이 된다.\n⑤ 스피로놀락톤은 고혈압과 소변 염소 > 20 mEq/L 의 원발성 알도스테론증이라면 정답이 되며, 저혈압 환자의 용적을 더 줄인다."
+   },
+   {
+    "k": "함정",
+    "v": "소변 나트륨이 높아 용적이 충분하다고 읽는 것 — 대사알칼리증에서는 중탄산염이 나트륨을 끌고 나가 소변 염소로 용적을 판단한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "반복 구토 뒤 대사알칼리증에서 소변 염소가 낮은 식염 반응성 알칼리증을 판단하고, 소변 나트륨이 아니라 소변 염소로 용적 상태를 읽어 생리식염수 투여를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 58: Acidosis and Alkalosis · Luke RG, Galla JH. It is chloride depletion alkalosis, not contraction alkalosis. J Am Soc Nephrol. 2012;23(2):204-207 · Seifter JL. Integration of acid-base and electrolyte disorders. N Engl J Med. 2014;371(19):1821-1831"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "소변 염소가 낮은 대사알칼리증은 식염 반응성이며 생리식염수와 염화칼륨으로 교정한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "저혈압과 소변 염소 6 mEq/L — 광물부신피질호르몬 과다(고혈압·소변 염소 높음)가 아니다",
+   "steps": 3,
+   "chain": [
+    "pH 7.54 · 중탄산염 38 · PaCO2 47 → 대사알칼리증과 적절한 호흡 보상",
+    "소변 나트륨은 높지만 소변 염소 6 mEq/L 과 기립성 저혈압 → 용적 감소, 식염 반응성",
+    "식염 반응성 + 저칼륨 → 염화칼륨을 넣은 생리식염수"
+   ],
+   "key": [
+    {
+     "item": "중탄산염 38 mEq/L",
+     "why": "대사알칼리증",
+     "also": []
+    },
+    {
+     "item": "소변 염소는 6 mEq/L",
+     "why": "식염 반응성의 판단 기준",
+     "also": []
+    },
+    {
+     "item": "선 자세 86/58 mmHg",
+     "why": "용적 감소",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변 나트륨은 46 mEq/L",
+     "why": "중탄산염뇨로 높게 나온 값 — 용적 충분을 뜻하지 않는다",
+     "also": []
+    },
+    {
+     "item": "PaCO2 47 mmHg",
+     "why": "예상 보상 범위 — 동반 호흡 장애 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "칼륨 2.9 mEq/L",
+     "why": "식염수에 염화칼륨을 함께 넣는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "이뇨제나 완하제는 먹지 않는다고",
+     "why": "병력 진술 — 소변 염소가 낮아 현재 이뇨제 사용 가능성도 낮다",
+     "also": []
+    }
+   ],
+   "summary": "구토로 생긴 대사알칼리증이고 소변 염소가 6 mEq/L 로 낮아 식염 반응성이다. 생리식염수와 염화칼륨으로 교정한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈압이 높고 소변 염소가 40 mEq/L 이며 레닌이 억제돼 있다면 원발성 알도스테론증 — 스피로놀락톤"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0650",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "혈액·종양 — 헤파린 투여 뒤 혈소판 감소와 정맥 혈전",
+  "type": "혈액·종양 — 헤파린 투여 뒤 혈소판 감소와 정맥 혈전",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-13",
+  "vignette": "A 64-year-old man is evaluated on postoperative day 7 after a total knee arthroplasty because of new pain and swelling of the left calf. Since surgery he has received subcutaneous unfractionated heparin 5000 units every 8 hours for thromboprophylaxis. He has no bleeding. His temperature is 37.0°C, pulse is 88/min, and blood pressure is 136/82 mm Hg. The left calf is swollen and tender. Platelet count was 260,000/mm3 before surgery and is 98,000/mm3 today. Hemoglobin is 12.1 g/dL. Prothrombin time and fibrinogen are within the reference ranges. Duplex ultrasonography shows a thrombus in the left popliteal vein. An immunoassay for platelet factor 4–heparin antibodies has been sent.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Continue heparin at treatment doses",
+   "Transfuse platelets and continue heparin",
+   "Start warfarin and stop heparin",
+   "Stop heparin and start argatroban",
+   "Switch to enoxaparin at treatment doses"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: A 62% fall in platelet count beginning 5–10 days after heparin exposure, with a new venous thrombosis and no other cause, gives a high 4T score for heparin-induced thrombocytopenia. Because HIT is prothrombotic, all heparin is stopped immediately and a non-heparin anticoagulant such as argatroban is started without waiting for the antibody result. Low-molecular-weight heparin cross-reacts with the antibodies, warfarin alone can cause venous limb gangrene, and platelet transfusion adds fuel to thrombosis.\n- 원리: <b>Why a low platelet count causes clots</b>: Heparin binds platelet factor 4 (PF4) released from platelets, exposing new epitopes. Some patients form IgG against the PF4–heparin complex. The immune complexes cross-link FcγRIIa receptors on platelets, activating them — platelets are consumed (thrombocytopenia) and release procoagulant microparticles, and monocytes and endothelium generate thrombin. The result is a <b>hypercoagulable state despite thrombocytopenia</b>, with venous more than arterial thrombosis.<br> <b>Why the timing is 5–10 days</b>: It takes that long to make IgG on first exposure. A fall within 24 hours occurs only if heparin was given in the previous 100 days and antibodies are still present.<br> <b>Why argatroban and not warfarin</b>: Direct thrombin inhibitors (argatroban, bivalirudin) or fondaparinux block thrombin without needing heparin. Warfarin started alone first depletes protein C (short half-life) before prothrombin, tipping toward thrombosis and causing venous limb gangrene; it is started only after platelets recover to ≥ 150,000/mm3, overlapping with the parenteral agent.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Argatroban (answer)</th><th>Enoxaparin (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Direct thrombin inhibitor</b> — no heparin structure</td><td>Low-molecular-weight heparin — still binds PF4</td></tr> <tr><td>Reaction with HIT antibodies</td><td>None</td><td>Cross-reacts in most patients</td></tr> <tr><td>Clearance</td><td>Hepatic — usable in renal failure</td><td>Renal</td></tr> <tr><td>Use in suspected HIT</td><td>Start immediately when the 4T score is intermediate or high</td><td>Contraindicated</td></tr> </tbody></table> In suspected HIT the rule is \"no heparin of any kind, but still anticoagulate\".\n- 오답 이유:\n  - (A) Continuing heparin at treatment doses would be appropriate if the thrombocytopenia had another clear cause and HIT were unlikely; here it drives thrombosis.\n  - (B) Platelet transfusion would be considered for severe bleeding or before an invasive procedure, but this patient is not bleeding and transfusion can worsen thrombosis.\n  - (C) Warfarin is started only after the platelet count recovers, overlapping with a non-heparin anticoagulant; starting it alone now risks venous limb gangrene.\n  - (E) Enoxaparin at treatment doses would be correct for a postoperative deep venous thrombosis with a stable platelet count, but it cross-reacts with HIT antibodies.\n- 함정: Treating thrombocytopenia as a bleeding risk — in HIT the danger is thrombosis, so anticoagulation continues with a non-heparin agent.\n- 학습목표: Recognize heparin-induced thrombocytopenia from a >50% platelet fall 5–10 days after heparin with new thrombosis, and stop all heparin and start a non-heparin anticoagulant before test results\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Cuker A, Arepally GM, Chong BH, et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv. 2018;2(22):3360-3392 · Greinacher A. Heparin-induced thrombocytopenia. N Engl J Med. 2015;373(3):252-261",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A 62% fall in platelet count beginning 5–10 days after heparin exposure, with a new venous thrombosis and no other cause, gives a high 4T score for heparin-induced thrombocytopenia. Because HIT is prothrombotic, all heparin is stopped immediately and a non-heparin anticoagulant such as argatroban is started without waiting for the antibody result. Low-molecular-weight heparin cross-reacts with the antibodies, warfarin alone can cause venous limb gangrene, and platelet transfusion adds fuel to thrombosis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a low platelet count causes clots</b>: Heparin binds platelet factor 4 (PF4) released from platelets, exposing new epitopes. Some patients form IgG against the PF4–heparin complex. The immune complexes cross-link FcγRIIa receptors on platelets, activating them — platelets are consumed (thrombocytopenia) and release procoagulant microparticles, and monocytes and endothelium generate thrombin. The result is a <b>hypercoagulable state despite thrombocytopenia</b>, with venous more than arterial thrombosis.<br> <b>Why the timing is 5–10 days</b>: It takes that long to make IgG on first exposure. A fall within 24 hours occurs only if heparin was given in the previous 100 days and antibodies are still present.<br> <b>Why argatroban and not warfarin</b>: Direct thrombin inhibitors (argatroban, bivalirudin) or fondaparinux block thrombin without needing heparin. Warfarin started alone first depletes protein C (short half-life) before prothrombin, tipping toward thrombosis and causing venous limb gangrene; it is started only after platelets recover to ≥ 150,000/mm3, overlapping with the parenteral agent."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Argatroban (answer)</th><th>Enoxaparin (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Direct thrombin inhibitor</b> — no heparin structure</td><td>Low-molecular-weight heparin — still binds PF4</td></tr> <tr><td>Reaction with HIT antibodies</td><td>None</td><td>Cross-reacts in most patients</td></tr> <tr><td>Clearance</td><td>Hepatic — usable in renal failure</td><td>Renal</td></tr> <tr><td>Use in suspected HIT</td><td>Start immediately when the 4T score is intermediate or high</td><td>Contraindicated</td></tr> </tbody></table> In suspected HIT the rule is \"no heparin of any kind, but still anticoagulate\"."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Continuing heparin at treatment doses would be appropriate if the thrombocytopenia had another clear cause and HIT were unlikely; here it drives thrombosis.\n(B) Platelet transfusion would be considered for severe bleeding or before an invasive procedure, but this patient is not bleeding and transfusion can worsen thrombosis.\n(C) Warfarin is started only after the platelet count recovers, overlapping with a non-heparin anticoagulant; starting it alone now risks venous limb gangrene.\n(E) Enoxaparin at treatment doses would be correct for a postoperative deep venous thrombosis with a stable platelet count, but it cross-reacts with HIT antibodies."
+   },
+   {
+    "k": "함정",
+    "v": "Treating thrombocytopenia as a bleeding risk — in HIT the danger is thrombosis, so anticoagulation continues with a non-heparin agent."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize heparin-induced thrombocytopenia from a >50% platelet fall 5–10 days after heparin with new thrombosis, and stop all heparin and start a non-heparin anticoagulant before test results"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Cuker A, Arepally GM, Chong BH, et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv. 2018;2(22):3360-3392 · Greinacher A. Heparin-induced thrombocytopenia. N Engl J Med. 2015;373(3):252-261"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "With a high 4T score, all heparin is stopped and a non-heparin anticoagulant is started before the antibody result",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Low-molecular-weight heparin cross-reacts with PF4–heparin antibodies",
+   "steps": 3,
+   "chain": [
+    "Platelets 260,000 → 98,000/mm3 (62% fall) on day 7 of heparin + new popliteal vein thrombus → high 4T score",
+    "High pretest probability → treat as HIT before antibody results",
+    "Stop every form of heparin, including LMWH → start argatroban"
+   ],
+   "key": [
+    {
+     "item": "Platelet count was 260,000/mm3 before surgery and is 98,000/mm3 today",
+     "why": "> 50% fall — 4T thrombocytopenia criterion",
+     "also": []
+    },
+    {
+     "item": "postoperative day 7",
+     "why": "Typical 5–10 day timing",
+     "also": []
+    },
+    {
+     "item": "a thrombus in the left popliteal vein",
+     "why": "New thrombosis — 4T thrombosis criterion",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Prothrombin time and fibrinogen are within the reference ranges",
+     "why": "Lowers the likelihood of disseminated intravascular coagulation",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has no bleeding",
+     "why": "No indication for platelet transfusion",
+     "also": []
+    },
+    {
+     "item": "An immunoassay for platelet factor 4–heparin antibodies has been sent",
+     "why": "Treatment does not wait for the result",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "A >50% platelet fall on day 7 of heparin with a new thrombosis gives a high 4T score. All heparin, including LMWH, is stopped and argatroban is started now.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the platelet count had fallen by 30% on day 2 after surgery without thrombosis, a low 4T score — heparin can be continued"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0648",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·산과·소화기·감염·혈액·신장·소아·내분비)",
+  "subtopic": "소화기 — 발열·황달·우상복부 통증과 담관 확장",
+  "type": "소화기 — 발열·황달·우상복부 통증과 담관 확장",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-13",
+  "vignette": "A 72-year-old woman is brought to the emergency department because of a 2-day history of fever, chills, and right upper quadrant abdominal pain. She has had dark urine since yesterday. She has a history of gallstones. Her temperature is 39.1°C, pulse is 108/min, and blood pressure is 104/66 mm Hg. She is alert and oriented. The sclerae are icteric, and there is tenderness in the right upper quadrant without guarding. Leukocyte count is 16,800/mm3. Serum total bilirubin is 4.6 mg/dL, alkaline phosphatase is 420 U/L, ALT is 210 U/L, lipase is 40 U/L, and creatinine is 0.9 mg/dL. Ultrasonography shows gallstones and a common bile duct dilated to 11 mm. Intravenous fluids and piperacillin-tazobactam are begun.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Laparoscopic cholecystectomy within 24 hours",
+   "Magnetic resonance cholangiopancreatography before any intervention",
+   "Hepatobiliary iminodiacetic acid scan",
+   "Continue antibiotics alone for 14 days",
+   "Endoscopic retrograde cholangiopancreatography within 24 to 48 hours"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Fever with chills, jaundice, and right upper quadrant pain (Charcot triad) with cholestatic liver tests and a dilated common bile duct in a patient with gallstones indicate acute cholangitis from an obstructing duct stone. Antibiotics do not penetrate an obstructed duct well, so the infected bile must be drained. With tachycardia and borderline blood pressure but normal mentation and creatinine, this is moderate cholangitis, for which ERCP drainage within 24–48 hours is recommended (urgently if she does not respond).\n- 원리: <b>Why drainage, not antibiotics alone</b>: Cholangitis needs two things — bacteria in bile and raised pressure in the duct. When pressure exceeds about 20–25 cm H2O, bacteria and endotoxin reflux from bile into hepatic veins and lymphatics (cholangiovenous reflux), causing bacteremia. Antibiotic secretion into bile also falls when the duct is obstructed. Only relieving the obstruction lowers the pressure and stops the reflux.<br> <b>Why ERCP</b>: ERCP both confirms the stone and treats it — sphincterotomy and stone extraction, or a stent if the patient is too unstable. Percutaneous transhepatic drainage is the alternative if ERCP fails or anatomy prevents it.<br> <b>Timing by severity (Tokyo guidelines)</b>: severe (organ dysfunction — hypotension needing vasopressors, confusion, creatinine > 2, INR > 1.5, platelets < 100,000) → drainage as soon as possible; moderate (e.g., WBC > 12,000, fever ≥ 39°C, age ≥ 75, bilirubin ≥ 5, hypoalbuminemia) → early drainage; mild → may start with antibiotics. Cholecystectomy follows later in the same admission to prevent recurrence.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">ERCP (answer — drain the duct)</th><th>Cholecystectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Problem it solves</td><td><b>Common bile duct obstruction</b> and infected bile under pressure</td><td>Gallbladder inflammation (acute cholecystitis) and future stones</td></tr> <tr><td>Typical clinical picture</td><td>Fever + jaundice + RUQ pain, dilated duct, high bilirubin</td><td>RUQ pain, Murphy sign, gallbladder wall thickening, mild bilirubin rise</td></tr> <tr><td>Timing here</td><td>Within 24–48 hours (moderate cholangitis)</td><td>After the duct is cleared, same admission</td></tr> <tr><td>This patient</td><td>Jaundice, bilirubin 4.6, duct 11 mm — consistent</td><td>Removes the gallbladder but leaves the duct stone</td></tr> </tbody></table> A dilated duct with jaundice and fever means the duct must be opened first; the gallbladder can wait.\n- 오답 이유:\n  - (A) Laparoscopic cholecystectomy within 24 hours would be correct for acute calculous cholecystitis without duct obstruction; here it comes after ERCP.\n  - (B) Magnetic resonance cholangiopancreatography would be appropriate when duct stones are only of intermediate probability; this dilated duct with jaundice is high probability.\n  - (C) A hepatobiliary iminodiacetic acid scan would confirm acute cholecystitis when ultrasonography is equivocal, but it does not drain an obstructed duct.\n  - (D) Antibiotics alone would be acceptable initially only for mild cholangitis responding promptly; her fever 39.1°C and leukocytosis make this moderate disease.\n- 함정: Treating every gallstone emergency with cholecystectomy — jaundice with a dilated duct means the obstruction must be drained first.\n- 학습목표: Recognize acute cholangitis from fever, jaundice, and right upper quadrant pain with a dilated common bile duct, and choose biliary drainage by ERCP after antibiotics and fluids\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 357: Diseases of the Gallbladder and Bile Ducts · Kiriyama S, Kozaka K, Takada T, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. J Hepatobiliary Pancreat Sci. 2018;25(1):17-30 · Buxbaum JL, Abbas Fehmi SM, Sultan S, et al. ASGE guideline on the role of endoscopy in the evaluation and management of choledocholithiasis. Gastrointest Endosc. 2019;89(6):1075-1105",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever with chills, jaundice, and right upper quadrant pain (Charcot triad) with cholestatic liver tests and a dilated common bile duct in a patient with gallstones indicate acute cholangitis from an obstructing duct stone. Antibiotics do not penetrate an obstructed duct well, so the infected bile must be drained. With tachycardia and borderline blood pressure but normal mentation and creatinine, this is moderate cholangitis, for which ERCP drainage within 24–48 hours is recommended (urgently if she does not respond)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why drainage, not antibiotics alone</b>: Cholangitis needs two things — bacteria in bile and raised pressure in the duct. When pressure exceeds about 20–25 cm H2O, bacteria and endotoxin reflux from bile into hepatic veins and lymphatics (cholangiovenous reflux), causing bacteremia. Antibiotic secretion into bile also falls when the duct is obstructed. Only relieving the obstruction lowers the pressure and stops the reflux.<br> <b>Why ERCP</b>: ERCP both confirms the stone and treats it — sphincterotomy and stone extraction, or a stent if the patient is too unstable. Percutaneous transhepatic drainage is the alternative if ERCP fails or anatomy prevents it.<br> <b>Timing by severity (Tokyo guidelines)</b>: severe (organ dysfunction — hypotension needing vasopressors, confusion, creatinine > 2, INR > 1.5, platelets < 100,000) → drainage as soon as possible; moderate (e.g., WBC > 12,000, fever ≥ 39°C, age ≥ 75, bilirubin ≥ 5, hypoalbuminemia) → early drainage; mild → may start with antibiotics. Cholecystectomy follows later in the same admission to prevent recurrence."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">ERCP (answer — drain the duct)</th><th>Cholecystectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Problem it solves</td><td><b>Common bile duct obstruction</b> and infected bile under pressure</td><td>Gallbladder inflammation (acute cholecystitis) and future stones</td></tr> <tr><td>Typical clinical picture</td><td>Fever + jaundice + RUQ pain, dilated duct, high bilirubin</td><td>RUQ pain, Murphy sign, gallbladder wall thickening, mild bilirubin rise</td></tr> <tr><td>Timing here</td><td>Within 24–48 hours (moderate cholangitis)</td><td>After the duct is cleared, same admission</td></tr> <tr><td>This patient</td><td>Jaundice, bilirubin 4.6, duct 11 mm — consistent</td><td>Removes the gallbladder but leaves the duct stone</td></tr> </tbody></table> A dilated duct with jaundice and fever means the duct must be opened first; the gallbladder can wait."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Laparoscopic cholecystectomy within 24 hours would be correct for acute calculous cholecystitis without duct obstruction; here it comes after ERCP.\n(B) Magnetic resonance cholangiopancreatography would be appropriate when duct stones are only of intermediate probability; this dilated duct with jaundice is high probability.\n(C) A hepatobiliary iminodiacetic acid scan would confirm acute cholecystitis when ultrasonography is equivocal, but it does not drain an obstructed duct.\n(D) Antibiotics alone would be acceptable initially only for mild cholangitis responding promptly; her fever 39.1°C and leukocytosis make this moderate disease."
+   },
+   {
+    "k": "함정",
+    "v": "Treating every gallstone emergency with cholecystectomy — jaundice with a dilated duct means the obstruction must be drained first."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize acute cholangitis from fever, jaundice, and right upper quadrant pain with a dilated common bile duct, and choose biliary drainage by ERCP after antibiotics and fluids"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 357: Diseases of the Gallbladder and Bile Ducts · Kiriyama S, Kozaka K, Takada T, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. J Hepatobiliary Pancreat Sci. 2018;25(1):17-30 · Buxbaum JL, Abbas Fehmi SM, Sultan S, et al. ASGE guideline on the role of endoscopy in the evaluation and management of choledocholithiasis. Gastrointest Endosc. 2019;89(6):1075-1105"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Acute cholangitis from a duct stone requires biliary drainage by ERCP, which antibiotics cannot replace",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "Jaundice, bilirubin 4.6 mg/dL, and a dilated common bile duct place the problem in the duct, not the gallbladder",
+   "steps": 3,
+   "chain": [
+    "Fever, jaundice, RUQ pain + dilated common bile duct → acute cholangitis from choledocholithiasis",
+    "Fever ≥ 39°C and leukocytosis without organ dysfunction → moderate severity",
+    "Moderate cholangitis → antibiotics plus ERCP drainage within 24–48 hours"
+   ],
+   "key": [
+    {
+     "item": "common bile duct dilated to 11 mm",
+     "why": "Places the obstruction in the duct",
+     "also": []
+    },
+    {
+     "item": "Serum total bilirubin is 4.6 mg/dL",
+     "why": "Obstructive jaundice",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "lipase is 40 U/L",
+     "why": "Lowers the likelihood of gallstone pancreatitis",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Her temperature is 39.1°C",
+     "why": "Moderate-severity criterion",
+     "also": []
+    },
+    {
+     "item": "She is alert and oriented",
+     "why": "No neurologic dysfunction — not severe",
+     "also": []
+    },
+    {
+     "item": "creatinine is 0.9 mg/dL",
+     "why": "No renal dysfunction — not severe",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "Charcot triad with a dilated duct indicates cholangitis from a duct stone. It is moderate in severity, so after antibiotics and fluids the duct is drained by ERCP within 24–48 hours.",
+   "switch": {
+    "choice": "A",
+    "condition": "If bilirubin were normal and the duct not dilated, with gallbladder wall thickening and a Murphy sign, early cholecystectomy for acute cholecystitis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+  "qid": "Q0004"
+ },
+ {
   "id": "imaging-2026-0644",
   "exam": "imaging",
   "style": "usmle_style",

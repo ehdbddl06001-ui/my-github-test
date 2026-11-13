@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4690,
+  "total": 4702,
   "byType": {
    "paper": 932,
    "kmle": 1824,
+   "imaging": 655,
    "concept": 164,
    "usmle": 264,
-   "imaging": 643,
    "anatomy": 846,
    "ailab": 14,
    "basic": 3
@@ -38,19 +38,19 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 118,
    "Hematology": 111,
    "Laboratory Medicine": 96,
-   "순환기": 90,
-   "산부인과": 83,
-   "호흡기": 40,
-   "소화기": 39,
-   "소아과": 34,
+   "순환기": 93,
+   "산부인과": 84,
+   "호흡기": 41,
+   "소화기": 40,
+   "소아과": 35,
    "응급·중환자": 31,
-   "감염": 29,
-   "혈액·종양": 29,
+   "감염": 30,
+   "혈액·종양": 30,
+   "내분비": 29,
    "Physiology": 28,
-   "내분비": 28,
    "병리·조직학": 28,
    "신경": 28,
-   "신장·비뇨기": 27,
+   "신장·비뇨기": 28,
    "외과": 26,
    "피부과": 24,
    "예방의학·역학": 23,
@@ -62,7 +62,7 @@ window.MEDKOS_INDEX = {
    "근골격·류마티스": 17,
    "약리": 17,
    "정신과": 16,
-   "안과": 12,
+   "안과": 13,
    "영상의학": 11,
    "이비인후과": 11,
    "Emergency Medicine": 5,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1315,
-   "high": 3322,
+   "high": 3334,
    "low": 53
   },
   "tagCount": 5492
@@ -796,6 +796,220 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1828.md",
    "snippet": "72세 남자가 폐렴으로 입원한 지 3일째 되는 밤, 병동 심전도 감시 장치의 경보가 울렸다. 간호사가 가 보니 불러도 반응이 없고 숨을 쉬지 않으며 목동맥 맥박이 만져지지 않는다. 즉시 가슴압박을 시작했고 백 밸브 마스크로 환기하고 있다. 감시 장치 화면은 그림과 같으며, 전극은 제대로 붙어 있고 유도를 바꾸고 화면 증폭을 높여도 같은 모양이다. 정맥로는 확보되어 있다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 ",
    "text": "Cardiology A Flat Monitor Trace and No Pulse on the Third Hospital Day in an Older Man with Pneumonia cardiac-arrest ecg advanced-life-support nonshockable-rhythm KMLE 2026 / Claude 72세 남자가 폐렴으로 입원한 지 3일째 되는 밤, 병동 심전도 감시 장치의 경보가 울렸다. 간호사가 가 보니 불러도 반응이 없고 숨을 쉬지 않으며 목동맥 맥박이 만져지지 않는다. 즉시 가슴압박을 시작했고 백 밸브 마스크로 환기하고 있다. 감시 장치 화면은 그림과 같으며, 전극은 제대로 붙어 있고 유도를 바꾸고 화면 증폭을 높여도 같은 모양이다. 정맥로는 확보되어 있다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 다음 처치는? A. 이상성 제세동기로 200 J 즉시 전기충격 B. 경피 심박조율 시작 C. 아미오다론 300 mg 정맥 주사 D. 가슴압박을 이어가며 에피네프린 1 mg 정맥 주사 E. 아트로핀 1 mg 정맥 주사 반응·호흡·맥박이 없어 심정지이고, 전극·유도·증폭을 확인해도 평탄한 선이므로 무수축이다. 무수축은 제세동 비적응 리듬이라 전기충격 없이 고품질 가슴압박을 이어가며 가능한 한 빨리 에피네프린 1 mg 을 정맥 주사하고 3~5분마다 반복하면서 가역적 원인을 찾는다."
+  },
+  {
+   "id": "imaging-2026-0656",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 몇 주 전 오래 이어진 가슴 통증이 있었던 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0656.md",
+   "snippet": "A 43 year old woman comes to the physician for a follow up visit. Five weeks ago, she had severe chest pressure for several hours that she attributed to stress and did not seek care. Since then she has had mild dyspnea when climbing two fli",
+   "text": "순환기 심전도 판독 — 몇 주 전 오래 이어진 가슴 통증이 있었던 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10 A 43 year old woman comes to the physician for a follow up visit. Five weeks ago, she had severe chest pressure for several hours that she attributed to stress and did not seek care. Since then she has had mild dyspnea when climbing two flights of stairs. She has type 1 diabetes mellitus and smokes 1 pack of cigarettes daily. Her blood pressure is 122/76 mm Hg, and pulse is 62/min. The lungs are clear, and there is no jugular venous distention. High sensitivity troponin I concentration is within the reference range. A 12 lead ECG is shown. Occlusion of which of the following arteries is the most likely cause of these findings? A. Left anterior descending artery B. Left circumflex artery C. Right coronary artery D. Left main coronary artery E. Posterior descending artery"
+  },
+  {
+   "id": "imaging-2026-0655",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 쉬면서도 가슴이 조였다가 지금은 통증이 없는 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0655.md",
+   "snippet": "62세 남자가 오늘 새벽 쉬고 있을 때 가슴이 조이는 통증이 20분 동안 이어져 응급실에 왔다. 이틀 전에도 같은 통증이 있었다. 지금은 통증이 없다. 고혈압과 이상지질혈증으로 약을 먹고 있고 30년간 담배를 피웠다. 혈압 138/84 mmHg, 맥박 56회/분이다. 심음은 규칙적이고 잡음은 없으며 폐는 깨끗하다. 고감도 트로포닌 I 는 처음 기준치 이하였고 2시간 뒤 기준치의 4배로 올랐다. 12유도 심전도는 그림과 같다. ",
+   "text": "순환기 심전도 처치 — 쉬면서도 가슴이 조였다가 지금은 통증이 없는 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10 62세 남자가 오늘 새벽 쉬고 있을 때 가슴이 조이는 통증이 20분 동안 이어져 응급실에 왔다. 이틀 전에도 같은 통증이 있었다. 지금은 통증이 없다. 고혈압과 이상지질혈증으로 약을 먹고 있고 30년간 담배를 피웠다. 혈압 138/84 mmHg, 맥박 56회/분이다. 심음은 규칙적이고 잡음은 없으며 폐는 깨끗하다. 고감도 트로포닌 I 는 처음 기준치 이하였고 2시간 뒤 기준치의 4배로 올랐다. 12유도 심전도는 그림과 같다. 아스피린을 투여한 뒤 가장 적절한 처치는? A. 통증이 없으므로 외래에서 추적 B. 흉부 CT 혈관조영술로 대동맥박리 확인 C. 입원해 항응고제를 쓰고 24시간 안에 관상동맥조영술 D. 즉시 혈전용해제 정맥 투여 E. 당일 트레드밀 운동부하검사"
+  },
+  {
+   "id": "imaging-2026-0654",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 열이 나고 두근거리는 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0654.md",
+   "snippet": "53세 남자가 2일 전부터 열이 나고 가슴이 두근거려 응급실에 왔다. 두근거림은 갑자기 시작하거나 갑자기 멈추지 않았고 열이 오를 때 심해졌다. 기침과 누런 가래가 있다. 체온 38.9°C, 혈압 128/76 mmHg, 맥박 128회/분, 호흡 22회/분이다. 오른쪽 아래 폐에서 수포음이 들린다. 혈청 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심방세동 B. 동빈맥 C",
+   "text": "순환기 심전도 판독 — 열이 나고 두근거리는 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202431Z_일일심전도_2026-11-14_3units_3q_eac56a10 53세 남자가 2일 전부터 열이 나고 가슴이 두근거려 응급실에 왔다. 두근거림은 갑자기 시작하거나 갑자기 멈추지 않았고 열이 오를 때 심해졌다. 기침과 누런 가래가 있다. 체온 38.9°C, 혈압 128/76 mmHg, 맥박 128회/분, 호흡 22회/분이다. 오른쪽 아래 폐에서 수포음이 들린다. 혈청 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심방세동 B. 동빈맥 C. 발작성 상심실빈맥 D. 2:1 전도 심방조동 E. 다소성 심방빈맥"
+  },
+  {
+   "id": "imaging-2026-0653",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 우연히 발견된 부신 종괴의 기능 평가",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0653.md",
+   "snippet": "52세 남자가 신장 결석으로 찍은 비조영 복부 CT 에서 오른쪽 부신에 종괴가 발견되어 왔다. 종괴는 지름 2.4 cm, 경계가 매끈하고 감쇠값은 6 하운스필드 단위이다. 두근거림·두통·땀 흘림은 없고 체중 변화도 없다. 고혈압·당뇨병 병력이 없다. 혈압 124/78 mmHg, 맥박 72회/분, 체질량지수 24 kg/m² 이다. 보름달 얼굴이나 자색 선조는 없다. 혈청 나트륨 140 mEq/L, 칼륨 4.3 mEq/L, 공복 ",
+   "text": "내분비 내분비·대사 — 우연히 발견된 부신 종괴의 기능 평가 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 52세 남자가 신장 결석으로 찍은 비조영 복부 CT 에서 오른쪽 부신에 종괴가 발견되어 왔다. 종괴는 지름 2.4 cm, 경계가 매끈하고 감쇠값은 6 하운스필드 단위이다. 두근거림·두통·땀 흘림은 없고 체중 변화도 없다. 고혈압·당뇨병 병력이 없다. 혈압 124/78 mmHg, 맥박 72회/분, 체질량지수 24 kg/m² 이다. 보름달 얼굴이나 자색 선조는 없다. 혈청 나트륨 140 mEq/L, 칼륨 4.3 mEq/L, 공복 혈당 92 mg/dL 이다. 다음으로 가장 적절한 검사는? A. 1 mg 야간 덱사메타손 억제검사와 혈장 유리 메타네프린 B. 혈장 알도스테론 농도와 레닌 활성도 비 C. CT 유도 부신 경피 생검 D. 부신정맥 채혈 E. 6개월 뒤 조영 CT 재촬영만 시행"
+  },
+  {
+   "id": "imaging-2026-0652",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 5일 넘는 발열과 결막 충혈·입술 갈라짐의 영아",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0652.md",
+   "snippet": "A 2 year old boy is brought to the physician because of fever for 6 days that has not responded to acetaminophen. His mother reports that his eyes have been red without discharge for 4 days and that his hands and feet are swollen. His tempe",
+   "text": "소아과 소아청소년 — 5일 넘는 발열과 결막 충혈·입술 갈라짐의 영아 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 A 2 year old boy is brought to the physician because of fever for 6 days that has not responded to acetaminophen. His mother reports that his eyes have been red without discharge for 4 days and that his hands and feet are swollen. His temperature is 39.6°C, and pulse is 150/min. He is irritable. Examination shows bilateral nonexudative conjunctival injection, red cracked lips, and a strawberry tongue. There is a polymorphous maculopapular rash on the trunk. The hands and feet are diffusely red and swollen. There is no lymphadenopathy. Leukocyte count is 17,500/mm3, platelet count is 450,000/mm3, C reactive protein is 12 mg/dL, and serum albumin is 2.9 g/dL. A rapid streptococcal antigen test is negative. Echocardiography shows no coronary artery dilation. Which of the following is the most appropriate next step in management? A. Supportive care and reevaluation in 5 days B. Intravenous immunoglobulin and aspirin C. Aspirin alone and repeat echocardiography in 2 weeks D. Oral amoxicillin E. Intravenous methylprednisolone alone"
+  },
+  {
+   "id": "imaging-2026-0651",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 반복 구토 뒤 대사알칼리증과 소변 염소",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0651.md",
+   "snippet": "34세 여자가 1주일 전부터 하루 여러 번 토하고 기운이 없어 응급실에 왔다. 이뇨제나 완하제는 먹지 않는다고 한다. 혈압은 누운 자세 102/64 mmHg, 선 자세 86/58 mmHg 이고 맥박은 112회/분이다. 혀가 말라 있다. 혈청 나트륨 136 mEq/L, 칼륨 2.9 mEq/L, 염소 84 mEq/L, 중탄산염 38 mEq/L, 크레아티닌 1.2 mg/dL 이다. 동맥혈 pH 7.54, PaCO2 47 mmHg 이",
+   "text": "신장·비뇨기 신장·비뇨 — 반복 구토 뒤 대사알칼리증과 소변 염소 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 34세 여자가 1주일 전부터 하루 여러 번 토하고 기운이 없어 응급실에 왔다. 이뇨제나 완하제는 먹지 않는다고 한다. 혈압은 누운 자세 102/64 mmHg, 선 자세 86/58 mmHg 이고 맥박은 112회/분이다. 혀가 말라 있다. 혈청 나트륨 136 mEq/L, 칼륨 2.9 mEq/L, 염소 84 mEq/L, 중탄산염 38 mEq/L, 크레아티닌 1.2 mg/dL 이다. 동맥혈 pH 7.54, PaCO2 47 mmHg 이다. 소변 나트륨은 46 mEq/L, 소변 염소는 6 mEq/L, 소변 칼륨은 38 mEq/L 이다. 가장 적절한 치료는? A. 0.1 N 염산 중심정맥 주입 B. 수분 제한과 경과 관찰 C. 염화칼륨을 넣은 생리식염수 정맥 주입 D. 아세타졸아마이드 정맥 주사 E. 스피로놀락톤 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0650",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 헤파린 투여 뒤 혈소판 감소와 정맥 혈전",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0650.md",
+   "snippet": "A 64 year old man is evaluated on postoperative day 7 after a total knee arthroplasty because of new pain and swelling of the left calf. Since surgery he has received subcutaneous unfractionated heparin 5000 units every 8 hours for thrombop",
+   "text": "혈액·종양 혈액·종양 — 헤파린 투여 뒤 혈소판 감소와 정맥 혈전 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 A 64 year old man is evaluated on postoperative day 7 after a total knee arthroplasty because of new pain and swelling of the left calf. Since surgery he has received subcutaneous unfractionated heparin 5000 units every 8 hours for thromboprophylaxis. He has no bleeding. His temperature is 37.0°C, pulse is 88/min, and blood pressure is 136/82 mm Hg. The left calf is swollen and tender. Platelet count was 260,000/mm3 before surgery and is 98,000/mm3 today. Hemoglobin is 12.1 g/dL. Prothrombin time and fibrinogen are within the reference ranges. Duplex ultrasonography shows a thrombus in the left popliteal vein. An immunoassay for platelet factor 4–heparin antibodies has been sent. Which of the following is the most appropriate next step in management? A. Continue heparin at treatment doses B. Transfuse platelets and continue heparin C. Start warfarin and stop heparin D. Stop heparin and start argatroban E. Switch to enoxaparin at treatment doses"
+  },
+  {
+   "id": "imaging-2026-0649",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 산소가 필요한 코로나바이러스감염증-19 폐렴의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0649.md",
+   "snippet": "60세 남자가 7일 전부터 열과 기침이 나고 3일 전부터 숨이 차서 응급실에 왔다. 확장성 심근병증으로 4년 전 이식형 제세동기를 넣었다. 체온 38.4°C, 맥박 102회/분, 호흡 28회/분, 혈압 118/70 mmHg 이고, 실내 공기에서 산소포화도는 88 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 비인두 검체의 SARS CoV 2 핵산증폭검사는 양성이고, 인플루엔자 검사는 음성이다. 혈청 C 반응단백질은 9.8 m",
+   "text": "감염 감염 — 산소가 필요한 코로나바이러스감염증-19 폐렴의 치료 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 60세 남자가 7일 전부터 열과 기침이 나고 3일 전부터 숨이 차서 응급실에 왔다. 확장성 심근병증으로 4년 전 이식형 제세동기를 넣었다. 체온 38.4°C, 맥박 102회/분, 호흡 28회/분, 혈압 118/70 mmHg 이고, 실내 공기에서 산소포화도는 88 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 비인두 검체의 SARS CoV 2 핵산증폭검사는 양성이고, 인플루엔자 검사는 음성이다. 혈청 C 반응단백질은 9.8 mg/dL, 프로칼시토닌은 0.08 ng/mL 이다. 비강 캐뉼라로 산소 4 L/분을 시작해 산소포화도가 94 % 가 되었다. 이동형 흉부 X선 사진은 그림과 같다. 산소 투여와 함께 가장 적절한 약물은? A. 오셀타미비르 B. 이버멕틴 C. 로피나비르·리토나비르 D. 덱사메타손 E. 하이드록시클로로퀸"
+  },
+  {
+   "id": "imaging-2026-0648",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 발열·황달·우상복부 통증과 담관 확장",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0648.md",
+   "snippet": "A 72 year old woman is brought to the emergency department because of a 2 day history of fever, chills, and right upper quadrant abdominal pain. She has had dark urine since yesterday. She has a history of gallstones. Her temperature is 39.",
+   "text": "소화기 소화기 — 발열·황달·우상복부 통증과 담관 확장 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 A 72 year old woman is brought to the emergency department because of a 2 day history of fever, chills, and right upper quadrant abdominal pain. She has had dark urine since yesterday. She has a history of gallstones. Her temperature is 39.1°C, pulse is 108/min, and blood pressure is 104/66 mm Hg. She is alert and oriented. The sclerae are icteric, and there is tenderness in the right upper quadrant without guarding. Leukocyte count is 16,800/mm3. Serum total bilirubin is 4.6 mg/dL, alkaline phosphatase is 420 U/L, ALT is 210 U/L, lipase is 40 U/L, and creatinine is 0.9 mg/dL. Ultrasonography shows gallstones and a common bile duct dilated to 11 mm. Intravenous fluids and piperacillin tazobactam are begun. Which of the following is the most appropriate next step in management? A. Laparoscopic cholecystectomy within 24 hours B. Magnetic resonance cholangiopancreatography before any intervention C. Hepatobiliary iminodiacetic acid scan D. Continue antibiotics alone for 14 days E. Endoscopic retrograde cholangiopancreatography within 24 to 48 hours"
+  },
+  {
+   "id": "imaging-2026-0647",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아심박동 감속의 판독과 처치",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0647.md",
+   "snippet": "40세 경산부가 임신 38주에 규칙적인 진통으로 입원하였다. 임신 중 합병증은 없었다. 자궁경부는 6 cm 열렸고 양막은 1시간 전에 저절로 터졌으며 양수는 맑다. 산모의 혈압은 118/72 mmHg, 맥박은 84회/분, 체온은 36.9°C 이다. 옥시토신은 쓰지 않았다. 입원 40분 뒤부터 10분간의 태아심박동·자궁수축 기록은 그림과 같다. 이때 가장 적절한 처치는? A. 겸자로 즉시 분만한다 B. 분만이 끝날 때까지 감시를",
+   "text": "산부인과 산과 — 분만 중 태아심박동 감속의 판독과 처치 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 40세 경산부가 임신 38주에 규칙적인 진통으로 입원하였다. 임신 중 합병증은 없었다. 자궁경부는 6 cm 열렸고 양막은 1시간 전에 저절로 터졌으며 양수는 맑다. 산모의 혈압은 118/72 mmHg, 맥박은 84회/분, 체온은 36.9°C 이다. 옥시토신은 쓰지 않았다. 입원 40분 뒤부터 10분간의 태아심박동·자궁수축 기록은 그림과 같다. 이때 가장 적절한 처치는? A. 겸자로 즉시 분만한다 B. 분만이 끝날 때까지 감시를 멈춘다 C. 산모 체위를 바꾸고 감시를 계속한다 D. 즉시 제왕절개술을 한다 E. 옥시토신을 시작해 분만을 앞당긴다"
+  },
+  {
+   "id": "imaging-2026-0646",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기·흉부 영상 — 동전을 삼킨 뒤 침을 흘리는 어린이",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0646.md",
+   "snippet": "A 6 year old boy is brought to the emergency department 4 hours after he swallowed a coin while playing. Since then he has been drooling, has refused to drink, and points to the middle of his chest when he swallows. He has had no coughing s",
+   "text": "호흡기 호흡기·흉부 영상 — 동전을 삼킨 뒤 침을 흘리는 어린이 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 A 6 year old boy is brought to the emergency department 4 hours after he swallowed a coin while playing. Since then he has been drooling, has refused to drink, and points to the middle of his chest when he swallows. He has had no coughing spells, stridor, or wheezing. His temperature is 36.8°C, pulse is 104/min, respirations are 20/min, and oxygen saturation is 99% on room air. He is drooling but speaks in full sentences. The lungs are clear to auscultation. The abdomen is soft and nontender. A frontal radiograph of the chest and upper abdomen is shown. Which of the following is the most appropriate next step in management? A. Endoscopic removal within hours B. Rigid bronchoscopy C. Repeat radiograph in 24 hours D. Intravenous glucagon and discharge E. Ipecac induced emesis"
+  },
+  {
+   "id": "imaging-2026-0645",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 당뇨병 환자의 첫 안저 선별검사와 다음 검사 간격",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "fundus"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305",
+   "confidence": "high",
+   "date": "2026-11-13",
+   "path": "content/imaging/2026/imaging-2026-0645.md",
+   "snippet": "3주 전 건강검진에서 제2형 당뇨병을 진단받은 환자가 내과의 의뢰로 안과에 왔다. 눈 증상은 없다. 메트포르민을 시작하였고 당화혈색소는 7.4 % 이다. 혈압은 128/78 mmHg 이다. 양눈 교정시력은 1.0 이고 안압은 정상이다. 산동 후 오른눈의 안저 사진은 그림과 같다. 왼눈 안저도 같은 소견이다. 이 환자에게 가장 적절한 다음 조치는? A. 유리체강내 항혈관내피성장인자 주사 B. 1년 뒤 산동 안저검사 C. 3개월 ",
+   "text": "안과 안과 — 당뇨병 환자의 첫 안저 선별검사와 다음 검사 간격 opendata kmle_style fundus 의대_시험지_제작 오픈데이터 영상 세트 / 20261113T202238Z_일일영상_2026-11-14_9units_9q_61cd6305 3주 전 건강검진에서 제2형 당뇨병을 진단받은 환자가 내과의 의뢰로 안과에 왔다. 눈 증상은 없다. 메트포르민을 시작하였고 당화혈색소는 7.4 % 이다. 혈압은 128/78 mmHg 이다. 양눈 교정시력은 1.0 이고 안압은 정상이다. 산동 후 오른눈의 안저 사진은 그림과 같다. 왼눈 안저도 같은 소견이다. 이 환자에게 가장 적절한 다음 조치는? A. 유리체강내 항혈관내피성장인자 주사 B. 1년 뒤 산동 안저검사 C. 3개월 뒤 산동 안저검사 D. 지금 형광안저혈관조영술 E. 범망막광응고술"
   },
   {
    "id": "cn.cardio.focal-atrial-tachycardia.ecg-differential",
