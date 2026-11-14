@@ -2,6 +2,77 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0934",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Assessing outcomes and recovery following anterior cervical discectomy and fusion in patients aged 75 years and older: a propensity score-matched review with 2-year follow-up",
+  "authors": [
+   "Rezner Aidan C",
+   "Hannon Kathleen M",
+   "Tippins Nicholas P",
+   "Alentado Vincent J",
+   "Mobasser Jean-Pierre",
+   "DePowell John J",
+   "Potts Eric A",
+   "Anokwute Miracle C"
+  ],
+  "journal": "Journal of neurosurgery. Spine",
+  "doi": "10.3171/2026.4.SPINE26195",
+  "pmid": "43024881",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43024881/",
+  "pubdate": "2026-11-13",
+  "date": "2026-11-14",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVE:** The longitudinal efficacy of anterior cervical discectomy and fusion (ACDF) in the population of older individuals is debated. The authors aimed to determine the long-term outcomes of patients aged ≥ 75 years compared to those of their younger peers.\n\n**METHODS:** A prospectively collected quality registry of patients undergoing elective ACDF was retrospectively reviewed. Cohorts included patients who were ≥ 75 years compared to < 75 years of age. Patient-reported outcome measures (PROMs) were collected at baseline and 3, 12, and 24 months postoperatively. Demographics, surgical characteristics, complications, Eating Assessment Tool-10 (EAT-10) dysphagia rates, North American Spine Society satisfaction, and PROMs were compared between groups. All analyses were repeated following 1:1 propensity score matching by demographics, baseline PROMs, comorbidities, symptoms, and surgical factors.\n\n**RESULTS:** A total of 1155 patients met inclusion criteria with 1082 (94%) aged < 75 years and 73 (6%) ≥ 75 years. Prior to propensity score matching, the ≥ 75-year cohort had a lower mean BMI (29.0 ± 4.3 vs 30.9 ± 6.6 kg/m2, p = 0.028), fewer daily smokers (4.1% vs 16%, p = 0.005), fewer currently employed workers (5.5% vs 52%, p < 0.001), and lower rates of anxiety (15% vs 28%, p = 0.017) and depression (12% vs 23%, p = 0.041). The ≥ 75-year cohort had more osteoarthritis (47% vs 24%, p < 0.001) and coronary artery disease (23% vs 6.5%, p < 0.001). The ≥ 75-year cohort had significantly better neck pain visual analog scale, arm pain visual analog scale (AP-VAS), Neck Disability Index, EuroQol 5-Dimension, and EuroQol visual analog scale baseline scores (all p < 0.05), but similar modified Japanese Orthopaedic Association scores (p = 0.2). By the 2-year follow-up, all PROM scores were similar except for the AP-VAS score, for which the ≥ 75-year cohort reported less arm pain (1.2 ± 2.5 vs 1.7 ± 2.7, p = 0.044). Propensity score matching yielded 138 patients, with 69 in each cohort. Residual demographic differences included the ≥ 75-year cohort having fewer employed workers (5.8% vs 42%, p < 0.001) and more individuals with a professional degree (25% vs 8.7%, p = 0.012). The propensity score-matched cohorts achieved parity in all baseline, postoperative, and change-from-baseline PROM scores through the 2-year follow-up.\n\n**CONCLUSIONS:** Patients aged ≥ 75 years experience benefit comparable to that of younger patients across outcome measures following propensity score matching. Age alone does not predict worsened outcomes in carefully selected older patients undergoing elective ACDF, and older patients may benefit from knowledge of comparable favorable outcomes.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0933",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Left Ventricular Unloading With Self-Expanding Pump During Venoarterial Extracorporeal Membrane Oxygenation in Acute Myocardial Infarction",
+  "authors": [
+   "Cai Weiting",
+   "Ma Juan",
+   "Bai Nan",
+   "Xi Qianlan",
+   "Wang I-Wen",
+   "Bai Ming",
+   "Lu Andong"
+  ],
+  "journal": "ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+  "doi": "10.1097/MAT.0000000000002920",
+  "pmid": "43024931",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43024931/",
+  "pubdate": "2026-11-13",
+  "date": "2026-11-14",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Increased left ventricular (LV) afterload and distension during venoarterial extracorporeal membrane oxygenation (VA-ECMO) support may impede myocardial perfusion in acute myocardial infarction (AMI). Active LV unloading has been associated with improved outcomes. We report the first clinical use of a self-expanding percutaneous ventricular assist device (NyokAssist; magAssist, Suzhou, China) for LV unloading during VA-ECMO in a 56 year old man with AMI-related cardiogenic shock (CS). Successful coronary angiography and percutaneous coronary intervention (PCI) of the culprit left circumflex (LCx) lesion were performed with NyokAssist + VA-ECMO support. The patient was successfully weaned from VA-ECMO on post-procedure day 5 and remained on NyokAssist support alone for an additional 7 days before being transferred on VA-ECMO to a heart transplant center for consideration of advanced heart failure therapies due to limited myocardial recovery. No device-related complications were observed. This case demonstrates the technical feasibility of early implementation of a combined VA-ECMO and NyokAssist support strategy, enabling LV unloading, temporary hemodynamic stabilization, end-organ improvement, and VA-ECMO decannulation in a patient with AMI-related CS. As this report describes a single-patient experience, further clinical studies are warranted to define the safety, efficacy, and potential role of the use of NyokAssist in combination with VA-ECMO in the management of AMI-related CS.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0932",
   "topic": "Surgery",
   "subtopic": "",
