@@ -2,6 +2,1598 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0668",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 건강검진에서 축 이상을 들은 고령 여성",
+  "type": "심전도 판독 — 건강검진에서 축 이상을 들은 고령 여성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-14",
+  "vignette": "A 66-year-old woman comes to the clinic because a screening ECG at a health fair was reported as having an abnormal axis. She has hypertension treated with amlodipine. She has no chest pain, dyspnea, palpitations, or syncope and has never had a myocardial infarction. Her blood pressure is 134/80 mm Hg and pulse is 70/min. Cardiac examination shows no murmurs or gallops. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely interpretation of this ECG?",
+  "options": [
+   "Left ventricular hypertrophy with strain",
+   "Left anterior fascicular block",
+   "Left posterior fascicular block",
+   "Left bundle branch block",
+   "Old inferior myocardial infarction"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The rhythm is sinus at about 70/min with a narrow QRS. Lead I is positive while II, III, and aVF are predominantly negative with an rS pattern (a small initial r followed by a deep S), giving left axis deviation beyond −45°; aVL shows a qR complex. Narrow QRS with marked left axis deviation, inferior rS, and lateral qR is left anterior fascicular block. The small initial r waves in the inferior leads exclude the Q waves of an old inferior infarction.\n- 원리: <b>Why blocking the anterior fascicle swings the axis up and left</b>: The left bundle divides into a thin anterior fascicle (to the anterosuperior wall) and a broad posterior fascicle (to the inferoposterior wall). When the anterior fascicle fails, the inferoposterior wall activates first — producing a small initial vector downward (small r in II, III, aVF; small q in I and aVL) — and then the anterosuperior wall activates late through the myocardium, so the dominant vector points up and to the left (deep S in the inferior leads, tall R in aVL). Because the main bundles still work, the QRS stays narrow or is only slightly widened.<br> <b>Why it is common and usually benign</b>: The anterior fascicle is long, thin, and supplied by a single artery, so fibrosis with age and hypertension often affects it. In isolation it rarely progresses to complete heart block.<br> <b>Why it can mimic an inferior infarction</b>: Both make the inferior leads look negative. An infarct removes the initial inferior forces, producing Q waves (QS or Qr) in II, III, and aVF; a fascicular block preserves them, so an initial r remains.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Left anterior fascicular block (answer)</th><th>Old inferior MI (closest distractor)</th></tr></thead><tbody> <tr><td>II, III, aVF</td><td><b>rS</b> — small initial r, deep S</td><td>Q waves (QS or Qr)</td></tr> <tr><td>aVL</td><td>qR</td><td>Tall R, often reciprocal changes</td></tr> <tr><td>Why</td><td>Initial inferior forces preserved; late forces turn superior</td><td>Necrotic inferior wall removes initial inferior forces</td></tr> <tr><td>Axis</td><td>−45° to −90°</td><td>Can be leftward but from loss of inferior forces</td></tr> <tr><td>This patient</td><td>Inferior rS, no infarction history — consistent</td><td>No inferior Q waves — inconsistent</td></tr> </tbody></table> When the inferior leads are negative, look at the very first deflection: r means fascicular block, Q means infarction.\n- 오답 이유:\n  - (A) Left ventricular hypertrophy with strain would be correct with very tall left precordial R waves plus downsloping ST depression and asymmetric T-wave inversion in V5 and V6.\n  - (C) Left posterior fascicular block would be correct with right axis deviation (+90° to +180°), rS in I and aVL, and qR in II, III, and aVF, after excluding right ventricular hypertrophy.\n  - (D) Left bundle branch block would be correct if the QRS were ≥ 120 ms with broad notched R waves in I, aVL, V5, and V6 and no septal q waves.\n  - (E) Old inferior myocardial infarction would be correct if II, III, and aVF began with pathologic Q waves (QS or Qr) instead of a small r wave.\n- 함정: Calling negative inferior complexes an old inferior infarction — the small initial r wave in II, III, and aVF marks a fascicular block.\n- 학습목표: Read a narrow-QRS ECG with left axis deviation, rS complexes in II, III, and aVF, and qR in aVL as left anterior fascicular block, and distinguish it from an old inferior infarction, which produces Q waves in the inferior leads\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1766 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm is sinus at about 70/min with a narrow QRS. Lead I is positive while II, III, and aVF are predominantly negative with an rS pattern (a small initial r followed by a deep S), giving left axis deviation beyond −45°; aVL shows a qR complex. Narrow QRS with marked left axis deviation, inferior rS, and lateral qR is left anterior fascicular block. The small initial r waves in the inferior leads exclude the Q waves of an old inferior infarction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why blocking the anterior fascicle swings the axis up and left</b>: The left bundle divides into a thin anterior fascicle (to the anterosuperior wall) and a broad posterior fascicle (to the inferoposterior wall). When the anterior fascicle fails, the inferoposterior wall activates first — producing a small initial vector downward (small r in II, III, aVF; small q in I and aVL) — and then the anterosuperior wall activates late through the myocardium, so the dominant vector points up and to the left (deep S in the inferior leads, tall R in aVL). Because the main bundles still work, the QRS stays narrow or is only slightly widened.<br> <b>Why it is common and usually benign</b>: The anterior fascicle is long, thin, and supplied by a single artery, so fibrosis with age and hypertension often affects it. In isolation it rarely progresses to complete heart block.<br> <b>Why it can mimic an inferior infarction</b>: Both make the inferior leads look negative. An infarct removes the initial inferior forces, producing Q waves (QS or Qr) in II, III, and aVF; a fascicular block preserves them, so an initial r remains."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Left anterior fascicular block (answer)</th><th>Old inferior MI (closest distractor)</th></tr></thead><tbody> <tr><td>II, III, aVF</td><td><b>rS</b> — small initial r, deep S</td><td>Q waves (QS or Qr)</td></tr> <tr><td>aVL</td><td>qR</td><td>Tall R, often reciprocal changes</td></tr> <tr><td>Why</td><td>Initial inferior forces preserved; late forces turn superior</td><td>Necrotic inferior wall removes initial inferior forces</td></tr> <tr><td>Axis</td><td>−45° to −90°</td><td>Can be leftward but from loss of inferior forces</td></tr> <tr><td>This patient</td><td>Inferior rS, no infarction history — consistent</td><td>No inferior Q waves — inconsistent</td></tr> </tbody></table> When the inferior leads are negative, look at the very first deflection: r means fascicular block, Q means infarction."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Left ventricular hypertrophy with strain would be correct with very tall left precordial R waves plus downsloping ST depression and asymmetric T-wave inversion in V5 and V6.\n(C) Left posterior fascicular block would be correct with right axis deviation (+90° to +180°), rS in I and aVL, and qR in II, III, and aVF, after excluding right ventricular hypertrophy.\n(D) Left bundle branch block would be correct if the QRS were ≥ 120 ms with broad notched R waves in I, aVL, V5, and V6 and no septal q waves.\n(E) Old inferior myocardial infarction would be correct if II, III, and aVF began with pathologic Q waves (QS or Qr) instead of a small r wave."
+   },
+   {
+    "k": "함정",
+    "v": "Calling negative inferior complexes an old inferior infarction — the small initial r wave in II, III, and aVF marks a fascicular block."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a narrow-QRS ECG with left axis deviation, rS complexes in II, III, and aVF, and qR in aVL as left anterior fascicular block, and distinguish it from an old inferior infarction, which produces Q waves in the inferior leads"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1766 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Narrow QRS with marked left axis deviation, inferior rS, and qR in aVL is left anterior fascicular block",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "II, III, and aVF begin with a small r wave rather than a pathologic Q wave",
+   "steps": 2,
+   "chain": [
+    "영상: lead I positive, II, III, aVF rS with deep S, aVL qR, narrow QRS → marked left axis deviation from a fascicular pattern",
+    "Initial r preserved in the inferior leads and no infarction history → left anterior fascicular block rather than old inferior MI"
+   ],
+   "key": [
+    {
+     "item": "영상: rS complexes in II, III, and aVF with a deep S wave",
+     "why": "Left anterior fascicular pattern",
+     "also": []
+    },
+    {
+     "item": "영상: qR in aVL and a narrow QRS",
+     "why": "Fascicular, not bundle branch, block",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "has never had a myocardial infarction",
+     "why": "Lowers the likelihood of an old inferior infarction",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has no chest pain, dyspnea, palpitations, or syncope",
+     "why": "No evaluation for conduction disease is urgent",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has hypertension treated with amlodipine",
+     "why": "Common substrate for fascicular fibrosis — not decisive",
+     "also": []
+    }
+   ],
+   "summary": "Lead I is positive and II, III, and aVF show rS with a deep S, with qR in aVL and a narrow QRS. This is left anterior fascicular block; the preserved initial r excludes an inferior infarction.",
+   "switch": {
+    "choice": "E",
+    "condition": "If II, III, and aVF began with pathologic Q waves (QS or Qr), an old inferior myocardial infarction"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0668.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01766",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1766"
+  },
+  "run_id": "20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0667",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 수술 전 검사에서 이상 소견을 들은 마른 여성",
+  "type": "심전도 처치 — 수술 전 검사에서 이상 소견을 들은 마른 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-14",
+  "vignette": "41세 여자가 담석증으로 복강경 담낭절제술을 받기 전 시행한 심전도에서 이상 소견이 있다는 말을 듣고 마취과 외래에 왔다. 계단 두 층을 쉬지 않고 오르며 주 3회 달리기를 한다. 가슴 통증·호흡곤란·실신은 없다. 고혈압·당뇨병·심장병 병력이 없다. 키 162 cm, 몸무게 52 kg 이다. 혈압 114/72 mmHg, 맥박 74회/분이다. 심잡음은 없고 심첨박동은 정상 위치이다. 혈색소 13.1 g/dL, 크레아티닌 0.7 mg/dL 이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 다음 처치는?",
+  "options": [
+   "추가 심장 검사 없이 예정대로 수술",
+   "수술 전 경흉부 심장초음파",
+   "수술 전 운동부하 심전도",
+   "수술 전 관상동맥 CT 혈관조영",
+   "수술을 미루고 베타차단제 시작"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 동리듬 약 75회/분, 축·간격은 정상이고, 흉부유도 전압이 커서(V1 S + V5 R 약 36 mm, V2 S 약 27 mm) Sokolow-Lyon 기준을 겨우 넘지만 ST 하강·비대칭 T파 역위 같은 긴장 형태가 없다. 흉벽이 얇은 마르고 젊은 여성에서 전압만 높은 것은 흔한 정상 변이다. 고혈압·심잡음·증상이 없고 활동 능력이 4 METs 이상이며 수술은 저위험 복강경 수술이므로 추가 심장 검사 없이 예정대로 수술한다.\n- 원리: <b>왜 전압만으로는 좌심실비대를 말하지 못하는가</b>: QRS 전압은 심근량뿐 아니라 전극과 심장 사이의 거리·조직에 좌우된다. 흉벽이 얇고 지방이 적은 젊은 사람, 운동선수는 전극이 심장에 가까워 정상 심장에서도 전압이 크다. 그래서 전압 기준은 젊은 사람에서 위양성이 많고, 반대로 비만·폐기종에서는 진짜 비대를 놓친다.<br> <b>무엇이 진짜 비대를 시사하는가</b>: 비대한 심근은 재분극이 비정상이라 V5·V6 의 하향 ST 하강과 비대칭 T파 역위(「긴장 형태」), 좌심방 확대(V1 의 깊은 음성 P), 좌축편위를 동반한다. 또 비대에는 원인 — 고혈압, 대동맥판 협착(심잡음), 비후성 심근병증(가족력·실신·심잡음) — 이 있다. 이 환자는 그 어느 것도 없다.<br> <b>왜 수술 전 검사가 필요 없는가</b>: 수술 전 심장 평가는 「결과가 처치를 바꿀 때」만 한다. 저위험 수술(주요 심장 사건 위험 &lt; 1 %)이고 활동 능력이 4 METs 이상이면, 어떤 추가 검사도 수술 결정이나 결과를 바꾸지 못하므로 지침은 검사 없이 수술을 권한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">예정대로 수술(정답)</th><th>수술 전 심장초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>저위험 수술 · 활동 능력 ≥ 4 METs · 증상 없음</b></td><td>원인 모를 호흡곤란, 심잡음, 심부전 의심·악화</td></tr> <tr><td>심전도</td><td>전압만 높고 ST-T 정상</td><td>긴장 형태·좌심방 확대·병적 Q파</td></tr> <tr><td>왜 그런가</td><td>결과가 수술 계획을 바꾸지 못한다</td><td>판막 질환·심근병증이 마취 계획을 바꾼다</td></tr> <tr><td>이 환자</td><td>마른 41세 · 무증상 · 정상 혈압 — 해당</td><td>심잡음·증상 없음 — 해당 없음</td></tr> </tbody></table> 「전압이 높다」보다 「왜 높을 수 있는가(체형)와 비대의 원인·재분극 이상이 있는가」를 먼저 본다.\n- 오답 이유:\n  - ② 수술 전 경흉부 심장초음파는 같은 심전도에 수축기 심잡음이나 원인 모를 호흡곤란, 긴장 형태의 ST-T 변화가 있다면 정답이 된다.\n  - ③ 수술 전 운동부하 심전도는 고위험 수술을 앞두고 활동 능력이 4 METs 미만이거나 알 수 없고 결과가 처치를 바꿀 때 고려된다.\n  - ④ 관상동맥 CT 혈관조영은 협심증이 의심되는 중간 위험 환자의 진단 목적이라면 쓰이지만, 무증상 환자의 수술 전 선별로는 쓰지 않는다.\n  - ⑤ 수술을 미루고 베타차단제를 시작하는 것은 수술 직전에 처음 시작하면 오히려 뇌졸중·사망을 늘려 권하지 않으며, 이미 복용 중인 환자는 계속한다.\n- 함정: 심전도 「이상」이라는 말에 검사를 더하는 것 — 마른 젊은 여성의 전압 증가만으로는 비대가 아니고, 저위험 수술 전 검사는 결과를 바꾸지 못한다.\n- 학습목표: 고혈압·심잡음·증상이 없는 마르고 젊은 여성의 수술 전 심전도에서 흉부유도 고전압만 있고 ST-T 긴장 형태가 없으면 정상 변이로 보고, 저위험 수술을 추가 심장 검사 없이 진행한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thompson A, Fleischmann KE, Smilowitz NR, et al. 2024 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM guideline for perioperative cardiovascular management for noncardiac surgery. Circulation. 2024;150(19):e351-e442 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16065 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬 약 75회/분, 축·간격은 정상이고, 흉부유도 전압이 커서(V1 S + V5 R 약 36 mm, V2 S 약 27 mm) Sokolow-Lyon 기준을 겨우 넘지만 ST 하강·비대칭 T파 역위 같은 긴장 형태가 없다. 흉벽이 얇은 마르고 젊은 여성에서 전압만 높은 것은 흔한 정상 변이다. 고혈압·심잡음·증상이 없고 활동 능력이 4 METs 이상이며 수술은 저위험 복강경 수술이므로 추가 심장 검사 없이 예정대로 수술한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전압만으로는 좌심실비대를 말하지 못하는가</b>: QRS 전압은 심근량뿐 아니라 전극과 심장 사이의 거리·조직에 좌우된다. 흉벽이 얇고 지방이 적은 젊은 사람, 운동선수는 전극이 심장에 가까워 정상 심장에서도 전압이 크다. 그래서 전압 기준은 젊은 사람에서 위양성이 많고, 반대로 비만·폐기종에서는 진짜 비대를 놓친다.<br> <b>무엇이 진짜 비대를 시사하는가</b>: 비대한 심근은 재분극이 비정상이라 V5·V6 의 하향 ST 하강과 비대칭 T파 역위(「긴장 형태」), 좌심방 확대(V1 의 깊은 음성 P), 좌축편위를 동반한다. 또 비대에는 원인 — 고혈압, 대동맥판 협착(심잡음), 비후성 심근병증(가족력·실신·심잡음) — 이 있다. 이 환자는 그 어느 것도 없다.<br> <b>왜 수술 전 검사가 필요 없는가</b>: 수술 전 심장 평가는 「결과가 처치를 바꿀 때」만 한다. 저위험 수술(주요 심장 사건 위험 &lt; 1 %)이고 활동 능력이 4 METs 이상이면, 어떤 추가 검사도 수술 결정이나 결과를 바꾸지 못하므로 지침은 검사 없이 수술을 권한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">예정대로 수술(정답)</th><th>수술 전 심장초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>저위험 수술 · 활동 능력 ≥ 4 METs · 증상 없음</b></td><td>원인 모를 호흡곤란, 심잡음, 심부전 의심·악화</td></tr> <tr><td>심전도</td><td>전압만 높고 ST-T 정상</td><td>긴장 형태·좌심방 확대·병적 Q파</td></tr> <tr><td>왜 그런가</td><td>결과가 수술 계획을 바꾸지 못한다</td><td>판막 질환·심근병증이 마취 계획을 바꾼다</td></tr> <tr><td>이 환자</td><td>마른 41세 · 무증상 · 정상 혈압 — 해당</td><td>심잡음·증상 없음 — 해당 없음</td></tr> </tbody></table> 「전압이 높다」보다 「왜 높을 수 있는가(체형)와 비대의 원인·재분극 이상이 있는가」를 먼저 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 수술 전 경흉부 심장초음파는 같은 심전도에 수축기 심잡음이나 원인 모를 호흡곤란, 긴장 형태의 ST-T 변화가 있다면 정답이 된다.\n③ 수술 전 운동부하 심전도는 고위험 수술을 앞두고 활동 능력이 4 METs 미만이거나 알 수 없고 결과가 처치를 바꿀 때 고려된다.\n④ 관상동맥 CT 혈관조영은 협심증이 의심되는 중간 위험 환자의 진단 목적이라면 쓰이지만, 무증상 환자의 수술 전 선별로는 쓰지 않는다.\n⑤ 수술을 미루고 베타차단제를 시작하는 것은 수술 직전에 처음 시작하면 오히려 뇌졸중·사망을 늘려 권하지 않으며, 이미 복용 중인 환자는 계속한다."
+   },
+   {
+    "k": "함정",
+    "v": "심전도 「이상」이라는 말에 검사를 더하는 것 — 마른 젊은 여성의 전압 증가만으로는 비대가 아니고, 저위험 수술 전 검사는 결과를 바꾸지 못한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고혈압·심잡음·증상이 없는 마르고 젊은 여성의 수술 전 심전도에서 흉부유도 고전압만 있고 ST-T 긴장 형태가 없으면 정상 변이로 보고, 저위험 수술을 추가 심장 검사 없이 진행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thompson A, Fleischmann KE, Smilowitz NR, et al. 2024 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM guideline for perioperative cardiovascular management for noncardiac surgery. Circulation. 2024;150(19):e351-e442 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16065 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "무증상·정상 혈압의 마른 젊은 여성에서 ST-T 정상인 흉부유도 고전압은 정상 변이이고, 저위험 수술은 추가 검사 없이 진행한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "긴장 형태 ST-T·심잡음·고혈압·증상이 없고 활동 능력이 4 METs 이상이다",
+   "steps": 3,
+   "chain": [
+    "영상: 흉부유도 전압 증가(V1 S + V5 R 약 36 mm), ST 하강·T파 역위 없음 → 전압만 높은 심전도",
+    "키 162 cm·52 kg, 정상 혈압, 심잡음 없음 → 체형에 의한 정상 변이(비대의 원인·재분극 이상 없음)",
+    "저위험 수술 · 활동 능력 ≥ 4 METs · 무증상 → 추가 심장 검사 없이 수술"
+   ],
+   "key": [
+    {
+     "item": "영상: 흉부유도 전압 증가, ST 하강·비대칭 T파 역위 없음",
+     "why": "긴장 형태가 없는 고전압",
+     "also": []
+    },
+    {
+     "item": "키 162 cm, 몸무게 52 kg",
+     "why": "얇은 흉벽 — 위양성 전압",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈압 114/72 mmHg",
+     "why": "고혈압성 비대 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심잡음은 없고",
+     "why": "대동맥판 협착·비후성 심근병증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "계단 두 층을 쉬지 않고 오르며",
+     "why": "활동 능력 ≥ 4 METs",
+     "also": []
+    },
+    {
+     "item": "복강경 담낭절제술",
+     "why": "저위험 수술",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈색소 13.1 g/dL",
+     "why": "수술 전 일상 검사 — 판단에 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "흉부유도 전압만 높고 재분극 이상·원인 질환이 없는 마른 젊은 여성의 정상 변이다. 저위험 수술이고 활동 능력이 좋아 추가 검사 없이 수술한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 심전도에 V5·V6 의 하향 ST 하강·T파 역위와 수축기 심잡음이 있었다면 수술 전 심장초음파"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0667.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16065",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16065"
+  },
+  "run_id": "20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0666",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 맥이 규칙적으로 건너뛰는 느낌의 중년 남성",
+  "type": "심전도 판독 — 맥이 규칙적으로 건너뛰는 느낌의 중년 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-14",
+  "vignette": "63세 남자가 2주 전부터 맥이 규칙적으로 한 번씩 건너뛰는 느낌이 들어 외래에 왔다. 커피를 하루 4잔 마시고 최근 잠을 잘 자지 못했다. 가슴 통증·호흡곤란·실신은 없다. 혈압 132/82 mmHg, 맥박 72회/분으로 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "심방세동",
+   "동부정맥",
+   "심방조기수축 삼단맥",
+   "심실조기수축 삼단맥",
+   "Mobitz I 형 2도 방실차단"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)에서 두 번의 동박동 뒤 세 번째 박동이 예정보다 일찍 오고, 그 뒤에 조금 긴 쉼이 오는 묶음이 끝까지 반복된다 — 삼단맥이다. 조기 박동의 QRS 는 동박동과 같은 좁은 모양이어서 심실이 아니라 심방(상심실)에서 시작한 조기수축이다. 조기 박동 뒤의 쉼은 완전 보상휴지보다 짧다(동결절이 재설정됨). 심방조기수축 삼단맥이고, 카페인·수면 부족 같은 유발 요인을 줄이면 된다.\n- 원리: <b>왜 QRS 모양이 기원을 가르는가</b>: 심방에서 시작한 조기 흥분도 방실결절과 히스-푸르키네 계통을 그대로 타고 내려가므로 심실은 동박동과 똑같이 빠르게 탈분극한다 — QRS 가 좁고 같은 모양이다. 심실에서 시작한 흥분은 전도계를 거치지 않고 심근을 세포에서 세포로 느리게 퍼지므로 QRS 가 넓고(≥ 120 ms) 기괴하며 T파가 반대 방향이다.<br> <b>왜 쉼의 길이가 다른가</b>: 심방조기수축은 동결절까지 역행해 동결절 주기를 재설정하므로 조기 박동 앞뒤 RR 의 합이 동주기 두 배보다 짧다(불완전 보상휴지). 심실조기수축은 대개 동결절을 건드리지 않아 다음 동흥분이 제때 나오지만 심실이 불응기라 하나를 건너뛰어, 앞뒤 합이 정확히 두 배가 된다(완전 보상휴지).<br> <b>묶음 박동이 모두 차단은 아니다</b>: Mobitz I 형도 박동이 묶여 보이지만, 그것은 PR 이 점점 길어지다가 P파 하나가 QRS 없이 남는 것이다 — 일찍 오는 박동이 아니라 「빠지는」 박동이 묶음을 만든다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심방조기수축 삼단맥(정답)</th><th>Mobitz I 형 방실차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>묶음을 만드는 것</td><td><b>세 번째 박동이 일찍 온다</b></td><td>P파 하나가 전도되지 않고 빠진다</td></tr> <tr><td>PR 간격</td><td>동박동은 일정</td><td>박동마다 길어지다 탈락</td></tr> <tr><td>쉼 동안</td><td>전도되지 않은 P파 없음</td><td>QRS 없이 남은 P파가 보인다</td></tr> <tr><td>QRS</td><td>좁고 동박동과 같다</td><td>좁고 같다(결절 차단)</td></tr> <tr><td>이 환자</td><td>일찍 오는 좁은 박동 — 일치</td><td>PR 연장·탈락 P파 없음 — 불일치</td></tr> </tbody></table> 묶음 박동을 보면 「일찍 온 박동이 있는가, 빠진 박동이 있는가」를 먼저 묻는다.\n- 오답 이유:\n  - ① 심방세동은 P파 없이 기저선이 불규칙하게 떨리고 RR 간격이 묶음 없이 완전히 불규칙하다면 정답이 된다.\n  - ② 동부정맥은 젊은 사람에서 들숨에 RR 이 짧아지고 날숨에 길어지는 점진적 변화가 있고 모든 P파가 같은 모양이라면 정답이 된다.\n  - ④ 심실조기수축 삼단맥은 세 번째마다 오는 조기 박동의 QRS 가 넓고(≥ 120 ms) 기괴하며 T파가 반대 방향이고 완전 보상휴지가 온다면 정답이 된다.\n  - ⑤ Mobitz I 형 2도 방실차단은 PR 이 박동마다 길어지다가 QRS 없이 P파 하나가 남는 묶음이 반복된다면 정답이 된다.\n- 함정: 규칙적으로 건너뛰는 맥을 방실차단의 묶음 박동으로 읽는 것 — 조기 박동이 일찍 오는지, P파가 빠지는지를 본다.\n- 학습목표: 두 번의 동박동 뒤 세 번째마다 일찍 오는 좁은 QRS 박동을 심방조기수축 삼단맥으로 판독하고, 넓은 QRS 의 심실조기수축과 PR 이 길어지다 탈락하는 Mobitz I 형 방실차단의 묶음 박동과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14885 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)에서 두 번의 동박동 뒤 세 번째 박동이 예정보다 일찍 오고, 그 뒤에 조금 긴 쉼이 오는 묶음이 끝까지 반복된다 — 삼단맥이다. 조기 박동의 QRS 는 동박동과 같은 좁은 모양이어서 심실이 아니라 심방(상심실)에서 시작한 조기수축이다. 조기 박동 뒤의 쉼은 완전 보상휴지보다 짧다(동결절이 재설정됨). 심방조기수축 삼단맥이고, 카페인·수면 부족 같은 유발 요인을 줄이면 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 QRS 모양이 기원을 가르는가</b>: 심방에서 시작한 조기 흥분도 방실결절과 히스-푸르키네 계통을 그대로 타고 내려가므로 심실은 동박동과 똑같이 빠르게 탈분극한다 — QRS 가 좁고 같은 모양이다. 심실에서 시작한 흥분은 전도계를 거치지 않고 심근을 세포에서 세포로 느리게 퍼지므로 QRS 가 넓고(≥ 120 ms) 기괴하며 T파가 반대 방향이다.<br> <b>왜 쉼의 길이가 다른가</b>: 심방조기수축은 동결절까지 역행해 동결절 주기를 재설정하므로 조기 박동 앞뒤 RR 의 합이 동주기 두 배보다 짧다(불완전 보상휴지). 심실조기수축은 대개 동결절을 건드리지 않아 다음 동흥분이 제때 나오지만 심실이 불응기라 하나를 건너뛰어, 앞뒤 합이 정확히 두 배가 된다(완전 보상휴지).<br> <b>묶음 박동이 모두 차단은 아니다</b>: Mobitz I 형도 박동이 묶여 보이지만, 그것은 PR 이 점점 길어지다가 P파 하나가 QRS 없이 남는 것이다 — 일찍 오는 박동이 아니라 「빠지는」 박동이 묶음을 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심방조기수축 삼단맥(정답)</th><th>Mobitz I 형 방실차단(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>묶음을 만드는 것</td><td><b>세 번째 박동이 일찍 온다</b></td><td>P파 하나가 전도되지 않고 빠진다</td></tr> <tr><td>PR 간격</td><td>동박동은 일정</td><td>박동마다 길어지다 탈락</td></tr> <tr><td>쉼 동안</td><td>전도되지 않은 P파 없음</td><td>QRS 없이 남은 P파가 보인다</td></tr> <tr><td>QRS</td><td>좁고 동박동과 같다</td><td>좁고 같다(결절 차단)</td></tr> <tr><td>이 환자</td><td>일찍 오는 좁은 박동 — 일치</td><td>PR 연장·탈락 P파 없음 — 불일치</td></tr> </tbody></table> 묶음 박동을 보면 「일찍 온 박동이 있는가, 빠진 박동이 있는가」를 먼저 묻는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심방세동은 P파 없이 기저선이 불규칙하게 떨리고 RR 간격이 묶음 없이 완전히 불규칙하다면 정답이 된다.\n② 동부정맥은 젊은 사람에서 들숨에 RR 이 짧아지고 날숨에 길어지는 점진적 변화가 있고 모든 P파가 같은 모양이라면 정답이 된다.\n④ 심실조기수축 삼단맥은 세 번째마다 오는 조기 박동의 QRS 가 넓고(≥ 120 ms) 기괴하며 T파가 반대 방향이고 완전 보상휴지가 온다면 정답이 된다.\n⑤ Mobitz I 형 2도 방실차단은 PR 이 박동마다 길어지다가 QRS 없이 P파 하나가 남는 묶음이 반복된다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "규칙적으로 건너뛰는 맥을 방실차단의 묶음 박동으로 읽는 것 — 조기 박동이 일찍 오는지, P파가 빠지는지를 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "두 번의 동박동 뒤 세 번째마다 일찍 오는 좁은 QRS 박동을 심방조기수축 삼단맥으로 판독하고, 넓은 QRS 의 심실조기수축과 PR 이 길어지다 탈락하는 Mobitz I 형 방실차단의 묶음 박동과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14885 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "두 동박동 뒤 세 번째마다 일찍 오는 좁은 QRS 박동은 심방조기수축 삼단맥이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "박동이 빠지는 것이 아니라 일찍 오며 PR 연장·탈락 P파가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 리듬 스트립 II 에서 두 동박동 뒤 세 번째 박동이 일찍 오고 짧은 쉼이 반복 → 삼단맥",
+    "조기 박동의 QRS 가 좁고 동박동과 같다 → 심방(상심실) 기원 — 심방조기수축 삼단맥"
+   ],
+   "key": [
+    {
+     "item": "영상: 두 번의 동박동 뒤 세 번째 박동이 일찍 오는 묶음이 반복",
+     "why": "삼단맥",
+     "also": []
+    },
+    {
+     "item": "영상: 조기 박동의 QRS 가 동박동과 같은 좁은 모양",
+     "why": "심실 기원 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "맥이 규칙적으로 한 번씩 건너뛰는 느낌",
+     "why": "규칙적 조기 박동의 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.2 mEq/L",
+     "why": "전해질 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "가슴 통증·호흡곤란·실신은 없다",
+     "why": "추가 검사·치료가 급하지 않다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "커피를 하루 4잔 마시고",
+     "why": "유발 요인 — 판독 자체는 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "세 번째마다 일찍 오는 좁은 QRS 박동이 반복되는 삼단맥이다. QRS 가 동박동과 같아 심방조기수축 삼단맥이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "세 번째마다 오는 조기 박동의 QRS 가 넓고 기괴하며 완전 보상휴지가 온다면 심실조기수축 삼단맥"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0666.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/14000/#files-panel",
+   "asset_id": "PTBXL-14885",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 14885"
+  },
+  "run_id": "20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0660",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "신경 — 한쪽 다리로 뻗치는 허리 통증과 요추 MRI",
+  "type": "신경 — 한쪽 다리로 뻗치는 허리 통증과 요추 MRI",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-14",
+  "vignette": "A 55-year-old woman comes to the clinic because of low back pain radiating down the back of her right leg to the lateral foot for 3 months. The pain began after she lifted a heavy box and is worse with sitting and coughing. Six weeks of nonsteroidal anti-inflammatory drugs and physical therapy have not helped. She has no fever, weight loss, history of cancer, or urinary or bowel incontinence. Her temperature is 36.6°C. Straight-leg raising on the right reproduces the leg pain at 40 degrees. Muscle strength is normal, and perianal sensation is intact. An axial T2-weighted MRI of the lumbar spine is shown.",
+  "question": "Which of the following is the most likely cause of this patient's symptoms?",
+  "options": [
+   "Posterolateral herniation of the nucleus pulposus",
+   "Lumbar spinal stenosis from ligamentum flavum hypertrophy",
+   "Spinal epidural abscess",
+   "Vertebral body metastasis",
+   "Facet joint synovial cyst"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The axial T2-weighted image shows low-signal disc material extending posteriorly from the right posterolateral margin of the disc (arrow), indenting the right anterior thecal sac and filling the right lateral recess, while the left side is normal. The vertebral body signal is preserved and there is no fluid collection. Radicular pain after lifting, worsened by sitting and coughing, with a positive straight-leg raise matches a posterolateral disc herniation compressing a nerve root.\n- 원리: <b>Why herniations go posterolateral</b>: The annulus fibrosus is thinnest posterolaterally, and the posterior longitudinal ligament is strongest in the midline. Nucleus pulposus therefore escapes beside the ligament into the lateral recess, where it compresses the <b>traversing</b> root (the root that exits one level below); a far-lateral herniation compresses the exiting root instead.<br> <b>Why sitting and coughing make it worse</b>: Sitting raises intradiscal pressure, and coughing raises epidural venous and intrathecal pressure — both push the herniated material harder against the root. Straight-leg raising tensions the L5 and S1 roots across the fragment, which is why it reproduces the pain between 30 and 70 degrees.<br> <b>Why low signal on T2</b>: Herniated disc material is dehydrated compared with cerebrospinal fluid, so it appears dark against the bright thecal sac. An epidural abscess is a T2-bright fluid collection with enhancement, and a metastasis replaces the marrow signal of the vertebral body.<br> <b>Why most patients still avoid surgery</b>: Extruded fragments often regress as macrophages resorb them; surgery is reserved for persistent disabling pain or progressive deficit, and is urgent only with cauda equina syndrome.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Disc herniation (answer)</th><th>Spinal stenosis (closest distractor)</th></tr></thead><tbody> <tr><td>MRI</td><td><b>Focal</b> disc material in one lateral recess</td><td>Circumferential narrowing from ligamentum flavum, facet, and disc bulge</td></tr> <tr><td>Symptoms</td><td>Unilateral radicular pain, worse sitting and coughing</td><td>Bilateral neurogenic claudication, worse standing and walking</td></tr> <tr><td>Why</td><td>Sitting increases disc pressure</td><td>Lumbar flexion (sitting, leaning forward) widens the canal and relieves it</td></tr> <tr><td>Straight-leg raise</td><td>Often positive</td><td>Usually negative</td></tr> <tr><td>This patient</td><td>Focal right-sided lesion, worse sitting — consistent</td><td>No claudication, contralateral canal normal — inconsistent</td></tr> </tbody></table> Posture is the bedside clue in both directions: sitting hurts a herniation and relieves stenosis.\n- 오답 이유:\n  - (B) Lumbar spinal stenosis would be correct in an older patient with bilateral leg pain on walking relieved by sitting and circumferential canal narrowing on MRI.\n  - (C) Spinal epidural abscess would be correct with fever, injection drug use or bacteremia, focal spinal tenderness, and a T2-bright enhancing epidural collection.\n  - (D) Vertebral body metastasis would be correct with a cancer history, night pain or weight loss, and replacement of normal vertebral marrow signal.\n  - (E) A facet joint synovial cyst would be correct if a round fluid-signal lesion arose from a degenerated facet joint posterolateral to the thecal sac.\n- 함정: Picking spinal stenosis because the patient is middle-aged — stenosis is a circumferential, posture-relieved disease; this lesion is focal and worse with sitting.\n- 학습목표: Read an axial T2-weighted lumbar MRI showing low-signal disc material protruding posterolaterally into the right lateral recess and compressing the thecal sac as a herniated nucleus pulposus, and separate it from spinal stenosis, epidural abscess, and metastasis\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 18: Low Back Pain · Deyo RA, Mirza SK. Herniated lumbar intervertebral disk. N Engl J Med. 2016;374(18):1763-1772 · J Med Case Rep. 2023;17:82. doi:10.1186/s13256-022-03749-1 (PMC Open Access, CC BY) — source of the MRI\n\n## 출처\n- Conjoined nerve root in a patient with lumbar disc herniation accompanied by a lumbosacral spine anomaly: a case report. J Med Case Rep. 2023 Feb 24;17:82. doi: 10.1186/s13256-022-03749-1 (CC BY) — Fig. 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The axial T2-weighted image shows low-signal disc material extending posteriorly from the right posterolateral margin of the disc (arrow), indenting the right anterior thecal sac and filling the right lateral recess, while the left side is normal. The vertebral body signal is preserved and there is no fluid collection. Radicular pain after lifting, worsened by sitting and coughing, with a positive straight-leg raise matches a posterolateral disc herniation compressing a nerve root."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why herniations go posterolateral</b>: The annulus fibrosus is thinnest posterolaterally, and the posterior longitudinal ligament is strongest in the midline. Nucleus pulposus therefore escapes beside the ligament into the lateral recess, where it compresses the <b>traversing</b> root (the root that exits one level below); a far-lateral herniation compresses the exiting root instead.<br> <b>Why sitting and coughing make it worse</b>: Sitting raises intradiscal pressure, and coughing raises epidural venous and intrathecal pressure — both push the herniated material harder against the root. Straight-leg raising tensions the L5 and S1 roots across the fragment, which is why it reproduces the pain between 30 and 70 degrees.<br> <b>Why low signal on T2</b>: Herniated disc material is dehydrated compared with cerebrospinal fluid, so it appears dark against the bright thecal sac. An epidural abscess is a T2-bright fluid collection with enhancement, and a metastasis replaces the marrow signal of the vertebral body.<br> <b>Why most patients still avoid surgery</b>: Extruded fragments often regress as macrophages resorb them; surgery is reserved for persistent disabling pain or progressive deficit, and is urgent only with cauda equina syndrome."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Disc herniation (answer)</th><th>Spinal stenosis (closest distractor)</th></tr></thead><tbody> <tr><td>MRI</td><td><b>Focal</b> disc material in one lateral recess</td><td>Circumferential narrowing from ligamentum flavum, facet, and disc bulge</td></tr> <tr><td>Symptoms</td><td>Unilateral radicular pain, worse sitting and coughing</td><td>Bilateral neurogenic claudication, worse standing and walking</td></tr> <tr><td>Why</td><td>Sitting increases disc pressure</td><td>Lumbar flexion (sitting, leaning forward) widens the canal and relieves it</td></tr> <tr><td>Straight-leg raise</td><td>Often positive</td><td>Usually negative</td></tr> <tr><td>This patient</td><td>Focal right-sided lesion, worse sitting — consistent</td><td>No claudication, contralateral canal normal — inconsistent</td></tr> </tbody></table> Posture is the bedside clue in both directions: sitting hurts a herniation and relieves stenosis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Lumbar spinal stenosis would be correct in an older patient with bilateral leg pain on walking relieved by sitting and circumferential canal narrowing on MRI.\n(C) Spinal epidural abscess would be correct with fever, injection drug use or bacteremia, focal spinal tenderness, and a T2-bright enhancing epidural collection.\n(D) Vertebral body metastasis would be correct with a cancer history, night pain or weight loss, and replacement of normal vertebral marrow signal.\n(E) A facet joint synovial cyst would be correct if a round fluid-signal lesion arose from a degenerated facet joint posterolateral to the thecal sac."
+   },
+   {
+    "k": "함정",
+    "v": "Picking spinal stenosis because the patient is middle-aged — stenosis is a circumferential, posture-relieved disease; this lesion is focal and worse with sitting."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read an axial T2-weighted lumbar MRI showing low-signal disc material protruding posterolaterally into the right lateral recess and compressing the thecal sac as a herniated nucleus pulposus, and separate it from spinal stenosis, epidural abscess, and metastasis"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 18: Low Back Pain · Deyo RA, Mirza SK. Herniated lumbar intervertebral disk. N Engl J Med. 2016;374(18):1763-1772 · J Med Case Rep. 2023;17:82. doi:10.1186/s13256-022-03749-1 (PMC Open Access, CC BY) — source of the MRI ## 출처 Conjoined nerve root in a patient with lumbar disc herniation accompanied by a lumbosacral spine anomaly: a case report. J Med Case Rep. 2023 Feb 24;17:82. doi: 10.1186/s13256-022-03749-1 (CC BY) — Fig. 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Focal low-signal disc material in one lateral recess with unilateral radicular pain is a posterolateral disc herniation",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The narrowing is focal and right-sided, and the pain worsens with sitting rather than walking",
+   "steps": 2,
+   "chain": [
+    "영상: low-signal disc material protruding from the right posterolateral disc into the right lateral recess, left side normal → focal disc herniation",
+    "Unilateral radicular pain worse with sitting and coughing, positive straight-leg raise → symptomatic posterolateral herniation"
+   ],
+   "key": [
+    {
+     "item": "영상: low-signal disc material indenting the right anterior thecal sac and filling the right lateral recess",
+     "why": "Focal herniation",
+     "also": []
+    },
+    {
+     "item": "worse with sitting and coughing",
+     "why": "Raised disc and epidural pressure",
+     "also": []
+    },
+    {
+     "item": "Straight-leg raising on the right reproduces the leg pain at 40 degrees",
+     "why": "Root tension sign",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: preserved vertebral marrow signal and no epidural fluid collection",
+     "why": "Lowers the likelihood of metastasis and abscess",
+     "also": []
+    },
+    {
+     "item": "She has no fever, weight loss, history of cancer, or urinary or bowel incontinence",
+     "why": "Lowers the likelihood of red-flag causes and cauda equina syndrome",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Six weeks of nonsteroidal anti-inflammatory drugs and physical therapy have not helped",
+     "why": "Explains why MRI was obtained — does not change the diagnosis",
+     "also": []
+    }
+   ],
+   "summary": "The MRI shows focal disc material in the right lateral recess. With unilateral radicular pain that worsens with sitting and a positive straight-leg raise, the cause is a posterolateral disc herniation.",
+   "switch": {
+    "choice": "B",
+    "condition": "If both legs ached on walking, eased on sitting, and MRI showed circumferential canal narrowing, lumbar spinal stenosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0660.png",
+   "caption": "Axial T2-weighted MRI of the lumbar spine at the lowest disc level; one panel of a published case figure, the arrow and R/L markers are the authors' original markings (PMC Open Access Subset, CC BY — no adjustment)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9960683/",
+   "asset_id": "PMC-PMC9960683_Fig3_d",
+   "text": "Conjoined nerve root in a patient with lumbar disc herniation accompanied by a lumbosacral spine anomaly: a case report. J Med Case Rep. 2023 Feb 24;17:82. doi: 10.1186/s13256-022-03749-1 (CC BY) — Fig. 3"
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0659",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "호흡기 — 발열·근육통 뒤 숨이 차는 중년 남성의 흉부 X선",
+  "type": "호흡기 — 발열·근육통 뒤 숨이 차는 중년 남성의 흉부 X선",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-14",
+  "vignette": "55세 남자가 8일 전부터 열·근육통·마른기침이 있었고 3일 전부터 숨이 차서 응급실에 왔다. 증상이 시작되기 이틀 전 같이 사는 아내가 비슷한 증상을 앓았다. 냄새를 잘 맡지 못한다. 심장병 병력은 없다. 체온 38.4°C, 혈압 132/80 mmHg, 맥박 102회/분, 호흡 26회/분, 실내 공기에서 산소포화도 89 % 이다. 양쪽 아래 폐에서 미세 수포음이 들린다. 경정맥 확장과 다리 부종은 없다. 백혈구 5,200/mm³(림프구 9 %), C-반응단백 9.8 mg/dL 이다. 흉부 X선 사진은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "폐렴구균 대엽성 폐렴",
+   "활동성 폐결핵",
+   "주폐포자충 폐렴",
+   "코로나바이러스감염증-19 폐렴",
+   "심인성 폐부종"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 폐의 중·하폐야에 말초(흉막 쪽)에 치우친 다발성 반점상·망상 음영과 경화가 있고, 심장 크기는 정상이며 흉수가 없다. 가족 접촉 뒤 발열·근육통·후각 저하가 먼저 오고 1주일쯤 지나 저산소증이 생긴 경과, 림프구 감소가 함께 있어 코로나바이러스감염증-19 폐렴이 가장 가능성이 높다. 확진은 비인두 검체의 핵산증폭검사로 한다.\n- 원리: <b>왜 말초·하폐야·양쪽인가</b>: SARS-CoV-2 는 폐포 상피(제2형 폐포세포)의 ACE2 수용체에 붙어 들어가 미만성 폐포 손상을 만든다. 폐포가 많은 흉막 아래 말초와 혈류·환기가 많은 하엽에서 먼저, 양쪽에 여러 군데 동시에 생겨 CT 에서는 말초 간유리음영, X선에서는 말초 우세의 반점상 음영으로 보인다.<br> <b>왜 1주일 뒤 숨이 차는가</b>: 초기 1주는 바이러스 증식기(발열·근육통·후각 저하), 그 뒤는 염증기다 — 숙주 면역 반응이 폐포 손상을 키워 저산소증이 이 시기에 나타난다. 그래서 산소가 필요한 시기에는 항염증 치료(덱사메타손)가 사망률을 낮춘다.<br> <b>림프구 감소</b>는 바이러스 폐렴, 특히 코로나바이러스감염증-19의 흔한 소견이고, 호중구 증가가 두드러진 세균 폐렴과 다르다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">코로나바이러스감염증-19 폐렴(정답)</th><th>심인성 폐부종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>음영 분포</td><td><b>말초·하폐야 우세</b>, 양쪽 다발성</td><td>폐문 주위 중심성(나비 모양)</td></tr> <tr><td>심장·흉수</td><td>심장 크기 정상, 흉수 드묾</td><td>심장 비대, 양쪽 흉수, Kerley B 선</td></tr> <tr><td>왜 그런가</td><td>폐포 상피 손상이 흉막 아래 폐포에서 시작</td><td>정수압이 높은 폐문 주위 간질부터 물이 찬다</td></tr> <tr><td>임상</td><td>발열·근육통·림프구 감소·접촉력</td><td>경정맥 확장·다리 부종·심장병</td></tr> <tr><td>이 환자</td><td>말초 음영 · 정상 심장 · 발열 — 일치</td><td>경정맥 확장·부종·흉수 없음 — 불일치</td></tr> </tbody></table> 양쪽 음영은 「어디에 몰렸는가(말초 대 중심)」와 「심장·흉수」로 가른다.\n- 오답 이유:\n  - ① 폐렴구균 대엽성 폐렴은 갑작스러운 오한·화농성 가래와 함께 한 엽에 국한된 공기기관지조영 경화가 보였다면 정답이 된다.\n  - ② 활동성 폐결핵은 수주 이상의 기침·체중 감소·야간 발한과 함께 위엽 첨부의 공동·결절이 보였다면 정답이 된다.\n  - ③ 주폐포자충 폐렴은 HIV 감염이나 장기 스테로이드 같은 면역저하가 있고 폐문 주위 양쪽 간유리음영이 보였다면 정답이 된다.\n  - ⑤ 심인성 폐부종은 심장 비대·양쪽 흉수·폐문 주위 음영과 함께 경정맥 확장·다리 부종이 있었다면 정답이 된다.\n- 함정: 양쪽 폐 음영을 모두 폐부종으로 읽는 것 — 말초 분포, 정상 심장, 발열·림프구 감소가 감염을 가리킨다.\n- 학습목표: 흉부 X선에서 양쪽 중·하폐야 말초 우세의 다발성 반점상 음영을 바이러스 폐렴(코로나바이러스감염증-19)으로 판독하고, 심인성 폐부종·대엽성 세균 폐렴과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 131: Pneumonia · Desai S, Baghal A, Wongsurawat T, et al. Chest imaging representing a COVID-19 positive rural U.S. population. Sci Data. 2020;7(1):414\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …07979850 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 폐의 중·하폐야에 말초(흉막 쪽)에 치우친 다발성 반점상·망상 음영과 경화가 있고, 심장 크기는 정상이며 흉수가 없다. 가족 접촉 뒤 발열·근육통·후각 저하가 먼저 오고 1주일쯤 지나 저산소증이 생긴 경과, 림프구 감소가 함께 있어 코로나바이러스감염증-19 폐렴이 가장 가능성이 높다. 확진은 비인두 검체의 핵산증폭검사로 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 말초·하폐야·양쪽인가</b>: SARS-CoV-2 는 폐포 상피(제2형 폐포세포)의 ACE2 수용체에 붙어 들어가 미만성 폐포 손상을 만든다. 폐포가 많은 흉막 아래 말초와 혈류·환기가 많은 하엽에서 먼저, 양쪽에 여러 군데 동시에 생겨 CT 에서는 말초 간유리음영, X선에서는 말초 우세의 반점상 음영으로 보인다.<br> <b>왜 1주일 뒤 숨이 차는가</b>: 초기 1주는 바이러스 증식기(발열·근육통·후각 저하), 그 뒤는 염증기다 — 숙주 면역 반응이 폐포 손상을 키워 저산소증이 이 시기에 나타난다. 그래서 산소가 필요한 시기에는 항염증 치료(덱사메타손)가 사망률을 낮춘다.<br> <b>림프구 감소</b>는 바이러스 폐렴, 특히 코로나바이러스감염증-19의 흔한 소견이고, 호중구 증가가 두드러진 세균 폐렴과 다르다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">코로나바이러스감염증-19 폐렴(정답)</th><th>심인성 폐부종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>음영 분포</td><td><b>말초·하폐야 우세</b>, 양쪽 다발성</td><td>폐문 주위 중심성(나비 모양)</td></tr> <tr><td>심장·흉수</td><td>심장 크기 정상, 흉수 드묾</td><td>심장 비대, 양쪽 흉수, Kerley B 선</td></tr> <tr><td>왜 그런가</td><td>폐포 상피 손상이 흉막 아래 폐포에서 시작</td><td>정수압이 높은 폐문 주위 간질부터 물이 찬다</td></tr> <tr><td>임상</td><td>발열·근육통·림프구 감소·접촉력</td><td>경정맥 확장·다리 부종·심장병</td></tr> <tr><td>이 환자</td><td>말초 음영 · 정상 심장 · 발열 — 일치</td><td>경정맥 확장·부종·흉수 없음 — 불일치</td></tr> </tbody></table> 양쪽 음영은 「어디에 몰렸는가(말초 대 중심)」와 「심장·흉수」로 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폐렴구균 대엽성 폐렴은 갑작스러운 오한·화농성 가래와 함께 한 엽에 국한된 공기기관지조영 경화가 보였다면 정답이 된다.\n② 활동성 폐결핵은 수주 이상의 기침·체중 감소·야간 발한과 함께 위엽 첨부의 공동·결절이 보였다면 정답이 된다.\n③ 주폐포자충 폐렴은 HIV 감염이나 장기 스테로이드 같은 면역저하가 있고 폐문 주위 양쪽 간유리음영이 보였다면 정답이 된다.\n⑤ 심인성 폐부종은 심장 비대·양쪽 흉수·폐문 주위 음영과 함께 경정맥 확장·다리 부종이 있었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "양쪽 폐 음영을 모두 폐부종으로 읽는 것 — 말초 분포, 정상 심장, 발열·림프구 감소가 감염을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 X선에서 양쪽 중·하폐야 말초 우세의 다발성 반점상 음영을 바이러스 폐렴(코로나바이러스감염증-19)으로 판독하고, 심인성 폐부종·대엽성 세균 폐렴과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 131: Pneumonia · Desai S, Baghal A, Wongsurawat T, et al. Chest imaging representing a COVID-19 positive rural U.S. population. Sci Data. 2020;7(1):414 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …07979850 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "양쪽 말초·하폐야 우세의 다발성 음영과 바이러스 감염 경과는 코로나바이러스감염증-19 폐렴이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "심장 크기가 정상이고 흉수가 없으며 음영이 말초에 몰려 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 중·하폐야 말초 우세 다발성 반점상 음영, 심장 크기 정상, 흉수 없음 → 비심인성 양측성 폐렴",
+    "가족 접촉 · 후각 저하 · 1주 뒤 저산소증 · 림프구 감소 → 코로나바이러스감염증-19 폐렴"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 중·하폐야 말초 우세의 다발성 반점상 음영과 경화",
+     "why": "바이러스 폐렴 분포",
+     "also": []
+    },
+    {
+     "item": "같이 사는 아내가 비슷한 증상을 앓았다",
+     "why": "전파 경로",
+     "also": []
+    },
+    {
+     "item": "냄새를 잘 맡지 못한다",
+     "why": "코로나바이러스감염증-19에 비교적 특징적",
+     "also": []
+    },
+    {
+     "item": "림프구 9 %",
+     "why": "바이러스 감염의 림프구 감소",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 심장 크기 정상, 흉수 없음",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "경정맥 확장과 다리 부종은 없다",
+     "why": "심부전 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "산소포화도 89 %",
+     "why": "산소·덱사메타손이 필요한 중증도 — 진단 자체는 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "흉부 X선은 양쪽 말초 우세의 다발성 음영이고 심장·흉수는 정상이다. 가족 접촉·후각 저하·림프구 감소와 합쳐 코로나바이러스감염증-19 폐렴이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "심장 비대와 양쪽 흉수, 폐문 주위 음영에 경정맥 확장·다리 부종이 있었다면 심인성 폐부종"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0659.png",
+   "caption": "직립 이동형 흉부 전후면 X선, 글자·좌우 표지는 원본의 것, 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조절 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1503450326089277400251007979850",
+   "asset_id": "TCIA-COVID19_AR-76790355201005",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …07979850"
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0658",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "순환기 — 누르면 아픈 젊은 여성의 가슴 통증",
+  "type": "순환기 — 누르면 아픈 젊은 여성의 가슴 통증",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-14",
+  "vignette": "A 40-year-old woman comes to the emergency department because of sharp left-sided chest pain for 3 days. The pain began after she helped a friend move furniture, worsens with deep breathing and twisting of the trunk, and does not change with sitting forward. She has no fever, dyspnea, leg swelling, or recent travel. She takes no medications. Her temperature is 36.7°C, pulse is 72/min, respirations are 16/min, and blood pressure is 118/74 mm Hg. Pressing on the left second to fourth costosternal junctions reproduces the pain exactly. Heart sounds are normal without a friction rub, and the lungs are clear. High-sensitivity troponin I concentration is below the reference limit. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Inferior ST-elevation myocardial infarction",
+   "Pulmonary embolism",
+   "Vasospastic angina",
+   "Costochondritis",
+   "Acute pericarditis"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The ECG shows sinus rhythm at about 72/min with a normal axis, normal PR, QRS, and QT intervals, no ST elevation or depression, no PR-segment depression, and upright T waves — a normal ECG. Pain that started after lifting, worsens with trunk movement, and is reproduced exactly by pressing on the costosternal junctions, with a normal ECG and troponin, is costochondritis.\n- 원리: <b>Why the ECG is part of the diagnosis even when the answer is musculoskeletal</b>: Chest-wall tenderness lowers but does not exclude cardiac disease — a minority of patients with acute coronary syndrome also have reproducible tenderness. The ECG and troponin are what let you commit to a chest-wall cause. A normal ECG argues against the three dangerous conditions in the options because each leaves a characteristic electrical trace.<br> <b>Pericarditis</b> inflames the epicardium over the whole heart, so the current of injury produces <b>diffuse concave ST elevation with PR-segment depression</b> (atrial injury) in most leads, with reciprocal changes only in aVR and V1. <b>Transmural ischemia</b> produces ST elevation confined to one coronary territory with reciprocal depression. <b>Pulmonary embolism</b> often shows sinus tachycardia and right-heart strain (S1Q3T3, right precordial T inversion).<br> <b>Why costochondritis hurts with movement</b>: Inflammation of the costochondral and costosternal cartilage is loaded by trunk rotation and deep inspiration; pressure reproduces the pain exactly because the source is superficial.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Costochondritis (answer)</th><th>Acute pericarditis (closest distractor)</th></tr></thead><tbody> <tr><td>Pain</td><td>Reproduced by palpation; worse with trunk movement</td><td>Pleuritic; <b>relieved by sitting forward</b></td></tr> <tr><td>ECG</td><td><b>Normal</b></td><td>Diffuse concave ST elevation with PR depression</td></tr> <tr><td>Why</td><td>The source is chest-wall cartilage, not myocardium</td><td>Inflamed epicardium creates a current of injury in all leads</td></tr> <tr><td>Examination</td><td>Focal costosternal tenderness</td><td>Friction rub, often fever</td></tr> <tr><td>This patient</td><td>Exact reproduction, normal ECG — consistent</td><td>No positional relief, no rub, no ST change — inconsistent</td></tr> </tbody></table> Pleuritic pain is shared; posture, palpation, and the ECG pattern separate them.\n- 오답 이유:\n  - (A) Inferior ST-elevation myocardial infarction would be correct if leads II, III, and aVF showed ST elevation with reciprocal depression in I and aVL and troponin rose.\n  - (B) Pulmonary embolism would be correct with dyspnea, tachycardia, hypoxemia, and a risk factor such as recent immobilization or estrogen use.\n  - (C) Vasospastic angina would be correct for recurrent rest pain in the early morning with transient ST elevation that resolves with nitrates.\n  - (E) Acute pericarditis would be correct if the pain eased on sitting forward and the ECG showed diffuse ST elevation with PR depression or a friction rub was heard.\n- 함정: Assuming any pleuritic chest pain is pericarditis — pericarditis needs its ECG pattern or a rub, and exact reproduction by palpation points to the chest wall.\n- 학습목표: Read a normal 12-lead ECG (sinus rhythm, normal axis and intervals, no ST elevation or PR depression) in a patient with chest pain reproduced by palpation and diagnose costochondritis rather than pericarditis or acute coronary syndrome\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 15: Chest Discomfort · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7(1):154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13522 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows sinus rhythm at about 72/min with a normal axis, normal PR, QRS, and QT intervals, no ST elevation or depression, no PR-segment depression, and upright T waves — a normal ECG. Pain that started after lifting, worsens with trunk movement, and is reproduced exactly by pressing on the costosternal junctions, with a normal ECG and troponin, is costochondritis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the ECG is part of the diagnosis even when the answer is musculoskeletal</b>: Chest-wall tenderness lowers but does not exclude cardiac disease — a minority of patients with acute coronary syndrome also have reproducible tenderness. The ECG and troponin are what let you commit to a chest-wall cause. A normal ECG argues against the three dangerous conditions in the options because each leaves a characteristic electrical trace.<br> <b>Pericarditis</b> inflames the epicardium over the whole heart, so the current of injury produces <b>diffuse concave ST elevation with PR-segment depression</b> (atrial injury) in most leads, with reciprocal changes only in aVR and V1. <b>Transmural ischemia</b> produces ST elevation confined to one coronary territory with reciprocal depression. <b>Pulmonary embolism</b> often shows sinus tachycardia and right-heart strain (S1Q3T3, right precordial T inversion).<br> <b>Why costochondritis hurts with movement</b>: Inflammation of the costochondral and costosternal cartilage is loaded by trunk rotation and deep inspiration; pressure reproduces the pain exactly because the source is superficial."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Costochondritis (answer)</th><th>Acute pericarditis (closest distractor)</th></tr></thead><tbody> <tr><td>Pain</td><td>Reproduced by palpation; worse with trunk movement</td><td>Pleuritic; <b>relieved by sitting forward</b></td></tr> <tr><td>ECG</td><td><b>Normal</b></td><td>Diffuse concave ST elevation with PR depression</td></tr> <tr><td>Why</td><td>The source is chest-wall cartilage, not myocardium</td><td>Inflamed epicardium creates a current of injury in all leads</td></tr> <tr><td>Examination</td><td>Focal costosternal tenderness</td><td>Friction rub, often fever</td></tr> <tr><td>This patient</td><td>Exact reproduction, normal ECG — consistent</td><td>No positional relief, no rub, no ST change — inconsistent</td></tr> </tbody></table> Pleuritic pain is shared; posture, palpation, and the ECG pattern separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Inferior ST-elevation myocardial infarction would be correct if leads II, III, and aVF showed ST elevation with reciprocal depression in I and aVL and troponin rose.\n(B) Pulmonary embolism would be correct with dyspnea, tachycardia, hypoxemia, and a risk factor such as recent immobilization or estrogen use.\n(C) Vasospastic angina would be correct for recurrent rest pain in the early morning with transient ST elevation that resolves with nitrates.\n(E) Acute pericarditis would be correct if the pain eased on sitting forward and the ECG showed diffuse ST elevation with PR depression or a friction rub was heard."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming any pleuritic chest pain is pericarditis — pericarditis needs its ECG pattern or a rub, and exact reproduction by palpation points to the chest wall."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a normal 12-lead ECG (sinus rhythm, normal axis and intervals, no ST elevation or PR depression) in a patient with chest pain reproduced by palpation and diagnose costochondritis rather than pericarditis or acute coronary syndrome"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 15: Chest Discomfort · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7(1):154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13522 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Chest pain reproduced exactly by palpation with a normal ECG and troponin is costochondritis",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "No diffuse ST elevation or PR depression, no rub, and no relief on sitting forward",
+   "steps": 2,
+   "chain": [
+    "영상: sinus rhythm about 72/min, normal axis and intervals, no ST elevation or PR depression → normal ECG",
+    "Normal ECG and troponin with pain reproduced exactly by palpation after lifting → costochondritis"
+   ],
+   "key": [
+    {
+     "item": "영상: sinus rhythm with normal intervals, no ST elevation and no PR-segment depression",
+     "why": "Lowers the likelihood of pericarditis and STEMI",
+     "also": []
+    },
+    {
+     "item": "Pressing on the left second to fourth costosternal junctions reproduces the pain exactly",
+     "why": "Chest-wall source",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "does not change with sitting forward",
+     "why": "Lowers the likelihood of pericarditis",
+     "also": []
+    },
+    {
+     "item": "without a friction rub",
+     "why": "Lowers the likelihood of pericarditis",
+     "also": []
+    },
+    {
+     "item": "High-sensitivity troponin I concentration is below the reference limit",
+     "why": "Lowers the likelihood of myocardial injury",
+     "also": []
+    },
+    {
+     "item": "She has no fever, dyspnea, leg swelling, or recent travel",
+     "why": "Lowers the likelihood of pulmonary embolism",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "after she helped a friend move furniture",
+     "why": "Plausible mechanical trigger, not decisive by itself",
+     "also": []
+    }
+   ],
+   "summary": "The ECG is normal and troponin is negative. With pain reproduced exactly by costosternal pressure, the diagnosis is costochondritis.",
+   "switch": {
+    "choice": "E",
+    "condition": "If the ECG showed diffuse concave ST elevation with PR depression and the pain eased on leaning forward, acute pericarditis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0658.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/13000/#files-panel",
+   "asset_id": "PTBXL-13522",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 13522"
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0657",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "피부 — 수년 동안 천천히 커진 정강이의 갈색 반",
+  "type": "피부 — 수년 동안 천천히 커진 정강이의 갈색 반",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-14",
+  "vignette": "55세 남자가 오른쪽 정강이의 갈색 반점이 신경 쓰여 피부과에 왔다. 반점은 수년 전부터 있었고 아주 천천히 커졌다. 가렵거나 피가 난 적은 없다. 젊을 때 야외 작업을 오래 했다. 피부암 가족력은 없다. 병변은 지름 약 1.5 cm 의 편평한 연갈색 반으로 만져지지 않으며 궤양은 없다. 몸의 다른 곳에도 비슷한 작은 갈색 반이 몇 개 있다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "색소성 기저세포암",
+   "흑자",
+   "악성흑색종",
+   "지루각화증",
+   "복합모반"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 병변 전체가 고르게 연한 갈색이고 내부에 색소망·점·선조가 없는 구조 없는 색소반이며, 경계는 좀먹은 듯 불규칙하게 파였지만 뚜렷하다. 중앙에 작은 진갈색 얼룩이 있으나 비정형 색소망·불규칙 선조·청백색 베일·퇴행 구조가 없다. 면포양 개구·비립종양 낭이 없어 지루각화증과도 다르다. 햇빛 노출이 많은 노년층에서 수년간 천천히 커진 편평한 갈색 반 — 흑자(일광흑자)다(이 사진은 조직검사로 확정된 흑자이다).\n- 원리: <b>왜 흑자는 「구조가 없는」가</b>: 흑자는 표피 기저층의 멜라닌세포 수가 약간 늘고 기저 각질세포에 멜라닌이 많아진 병변이다. 멜라닌세포가 둥지(nest)를 만들지 않으므로 더모스코피에서 점·소구(globule)가 생기지 않고, 표피능선을 따라 색소가 고르게 퍼져 균일한 연갈색 바탕이나 가는 지문 모양 선으로 보인다. 경계가 좀먹은 듯(moth-eaten) 파이는 것은 이웃한 정상 피부와 경계가 들쭉날쭉하게 맞닿기 때문이다.<br> <b>왜 흑색종에서는 구조가 깨지는가</b>: 흑색종은 비정형 멜라닌세포가 표피 위쪽과 진피로 퍼지며 불규칙한 둥지를 만든다. 그래서 굵기가 다른 비정형 색소망, 가장자리의 불규칙 선조·위족, 진피 멜라닌과 각화가 겹친 청백색 베일, 면역반응으로 색이 빠진 퇴행 구조가 생긴다 — 「여러 색·여러 구조가 비대칭으로」 섞인다.<br> <b>지루각화증</b>은 각질세포가 증식한 병변이라 각질이 고인 면포양 개구와 비립종양 낭, 뇌회 모양 이랑이 보인다.\n- 비교: <table><thead><tr><th style=\"width:24%\">더모스코피 소견</th><th style=\"width:38%\">흑자(정답)</th><th>악성흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>구조</td><td><b>균일한 연갈색, 구조 없음</b> 또는 지문 모양 선</td><td>비정형 색소망·불규칙 점·소구·선조</td></tr> <tr><td>색</td><td>1~2가지 갈색</td><td>3가지 이상(갈색·검정·청회색·흰색)</td></tr> <tr><td>특이 구조</td><td>좀먹은 듯한 경계</td><td>청백색 베일·퇴행 구조</td></tr> <tr><td>왜 그런가</td><td>멜라닌세포가 둥지 없이 기저층에만 고르게</td><td>비정형 세포가 둥지를 만들며 위·아래로 퍼짐</td></tr> <tr><td>이 환자</td><td>구조 없는 연갈색 · 편평 · 천천히 커짐 — 일치</td><td>청백색 베일·비정형 망 없음 — 불일치</td></tr> </tbody></table> 「색과 구조가 몇 가지인가」가 양성과 악성을 가르는 첫 질문이다 — 중앙의 작은 진한 얼룩 하나만으로 흑색종이라 하지 않지만, 새로 생기거나 변하면 생검한다.\n- 오답 이유:\n  - ① 색소성 기저세포암은 진주 같은 광택과 함께 나뭇가지 모양 혈관·잎 모양 구조·청회색 난원형 덩어리가 보였다면 정답이 된다.\n  - ③ 악성흑색종은 같은 자리에 비정형 색소망·불규칙 선조·청백색 베일이 보이거나 최근 빠르게 모양·색이 변했다면 정답이 된다.\n  - ④ 지루각화증은 병변이 약간 솟아 있고 더모스코피에서 면포양 개구·비립종양 낭·뇌회 모양 이랑이 보였다면 정답이 된다.\n  - ⑤ 복합모반은 젊은 환자의 약간 솟은 병변에서 규칙적인 소구·색소망이 대칭으로 보였다면 정답이 된다.\n- 함정: 갈색 반 중앙의 진한 얼룩 하나만 보고 흑색종을 고르는 것 — 구조의 종류와 색의 수를 먼저 센다.\n- 학습목표: 더모스코피에서 좀먹은 듯한 경계의 균일한 연갈색 구조 없는 색소반을 흑자로 판독하고, 비정형 색소망·청백색 베일이 있는 흑색종, 면포양 개구가 있는 지루각화증과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 59: Approach to the Patient with a Skin Disorder · ISIC Archive, International Skin Imaging Collaboration — histopathology-confirmed dermoscopic image (CC-0)\n\n## 출처\n- ISIC Archive ISIC_0009983 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "병변 전체가 고르게 연한 갈색이고 내부에 색소망·점·선조가 없는 구조 없는 색소반이며, 경계는 좀먹은 듯 불규칙하게 파였지만 뚜렷하다. 중앙에 작은 진갈색 얼룩이 있으나 비정형 색소망·불규칙 선조·청백색 베일·퇴행 구조가 없다. 면포양 개구·비립종양 낭이 없어 지루각화증과도 다르다. 햇빛 노출이 많은 노년층에서 수년간 천천히 커진 편평한 갈색 반 — 흑자(일광흑자)다(이 사진은 조직검사로 확정된 흑자이다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 흑자는 「구조가 없는」가</b>: 흑자는 표피 기저층의 멜라닌세포 수가 약간 늘고 기저 각질세포에 멜라닌이 많아진 병변이다. 멜라닌세포가 둥지(nest)를 만들지 않으므로 더모스코피에서 점·소구(globule)가 생기지 않고, 표피능선을 따라 색소가 고르게 퍼져 균일한 연갈색 바탕이나 가는 지문 모양 선으로 보인다. 경계가 좀먹은 듯(moth-eaten) 파이는 것은 이웃한 정상 피부와 경계가 들쭉날쭉하게 맞닿기 때문이다.<br> <b>왜 흑색종에서는 구조가 깨지는가</b>: 흑색종은 비정형 멜라닌세포가 표피 위쪽과 진피로 퍼지며 불규칙한 둥지를 만든다. 그래서 굵기가 다른 비정형 색소망, 가장자리의 불규칙 선조·위족, 진피 멜라닌과 각화가 겹친 청백색 베일, 면역반응으로 색이 빠진 퇴행 구조가 생긴다 — 「여러 색·여러 구조가 비대칭으로」 섞인다.<br> <b>지루각화증</b>은 각질세포가 증식한 병변이라 각질이 고인 면포양 개구와 비립종양 낭, 뇌회 모양 이랑이 보인다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">더모스코피 소견</th><th style=\"width:38%\">흑자(정답)</th><th>악성흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>구조</td><td><b>균일한 연갈색, 구조 없음</b> 또는 지문 모양 선</td><td>비정형 색소망·불규칙 점·소구·선조</td></tr> <tr><td>색</td><td>1~2가지 갈색</td><td>3가지 이상(갈색·검정·청회색·흰색)</td></tr> <tr><td>특이 구조</td><td>좀먹은 듯한 경계</td><td>청백색 베일·퇴행 구조</td></tr> <tr><td>왜 그런가</td><td>멜라닌세포가 둥지 없이 기저층에만 고르게</td><td>비정형 세포가 둥지를 만들며 위·아래로 퍼짐</td></tr> <tr><td>이 환자</td><td>구조 없는 연갈색 · 편평 · 천천히 커짐 — 일치</td><td>청백색 베일·비정형 망 없음 — 불일치</td></tr> </tbody></table> 「색과 구조가 몇 가지인가」가 양성과 악성을 가르는 첫 질문이다 — 중앙의 작은 진한 얼룩 하나만으로 흑색종이라 하지 않지만, 새로 생기거나 변하면 생검한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 색소성 기저세포암은 진주 같은 광택과 함께 나뭇가지 모양 혈관·잎 모양 구조·청회색 난원형 덩어리가 보였다면 정답이 된다.\n③ 악성흑색종은 같은 자리에 비정형 색소망·불규칙 선조·청백색 베일이 보이거나 최근 빠르게 모양·색이 변했다면 정답이 된다.\n④ 지루각화증은 병변이 약간 솟아 있고 더모스코피에서 면포양 개구·비립종양 낭·뇌회 모양 이랑이 보였다면 정답이 된다.\n⑤ 복합모반은 젊은 환자의 약간 솟은 병변에서 규칙적인 소구·색소망이 대칭으로 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "갈색 반 중앙의 진한 얼룩 하나만 보고 흑색종을 고르는 것 — 구조의 종류와 색의 수를 먼저 센다."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 좀먹은 듯한 경계의 균일한 연갈색 구조 없는 색소반을 흑자로 판독하고, 비정형 색소망·청백색 베일이 있는 흑색종, 면포양 개구가 있는 지루각화증과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 59: Approach to the Patient with a Skin Disorder · ISIC Archive, International Skin Imaging Collaboration — histopathology-confirmed dermoscopic image (CC-0) ## 출처 ISIC Archive ISIC_0009983 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "구조 없는 균일한 연갈색과 좀먹은 듯한 경계는 흑자의 더모스코피 소견이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "비정형 색소망·불규칙 선조·청백색 베일이 없고 색이 한두 가지 갈색뿐이다",
+   "steps": 2,
+   "chain": [
+    "영상: 균일한 연갈색 구조 없는 색소반, 좀먹은 듯한 경계, 비정형 망·베일·면포양 개구 없음 → 양성 멜라닌 색소반",
+    "햇빛 노출 많은 55세 · 수년간 천천히 커진 편평한 반 → 흑자"
+   ],
+   "key": [
+    {
+     "item": "영상: 균일한 연갈색의 구조 없는 색소반과 좀먹은 듯한 경계",
+     "why": "흑자의 전형 소견",
+     "also": []
+    },
+    {
+     "item": "수년 전부터 있었고 아주 천천히 커졌다",
+     "why": "양성 경과",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 비정형 색소망·불규칙 선조·청백색 베일 없음",
+     "why": "흑색종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "편평한 연갈색 반으로 만져지지 않으며",
+     "why": "솟은 지루각화증·모반 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "야외 작업을 오래 했다",
+     "why": "일광흑자의 배경 — 흑색종 위험인자이기도 해 단독으로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "더모스코피에서 색 한두 가지의 구조 없는 연갈색 색소반이고 흑색종 구조가 없다. 오래되어 천천히 커진 편평한 반이므로 흑자다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 반 안에 청백색 베일과 비대칭의 비정형 색소망이 새로 생겼다면 악성흑색종을 의심해 절제 생검"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0657.jpg",
+   "caption": "더모스코피(편광) 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC-0 — 크롭·색 보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0009983",
+   "asset_id": "ISIC-ISIC_0009983",
+   "text": "ISIC Archive ISIC_0009983 (CC-0)"
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0665",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "정신 — 진통제를 추가한 뒤 생긴 고열·떨림·간대성 근경련",
+  "type": "정신 — 진통제를 추가한 뒤 생긴 고열·떨림·간대성 근경련",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-14",
+  "vignette": "36세 여자가 오늘 오후부터 불안하고 몸이 떨리며 땀이 많이 나서 응급실에 왔다. 우울증으로 1년째 에스시탈로프람을 복용 중이고, 어제 허리 통증으로 트라마돌을 처방받아 아침부터 복용하였다. 항정신병약을 복용한 적은 없다. 체온 39.2°C, 혈압 162/96 mmHg, 맥박 128회/분, 호흡 24회/분이다. 초조하고 산동이 있으며 피부가 축축하다. 장음이 항진되어 있다. 무릎반사와 발목반사가 항진되어 있고 양쪽 발목에서 지속적인 간대성 근경련이 유발되며, 팔다리의 납관 강직은 없다. 혈청 크레아틴 인산활성효소는 정상이다.",
+  "question": "벤조디아제핀 정주와 수액 투여 뒤에도 초조와 근경련이 계속될 때 다음으로 투여할 약으로 가장 적절한 것은?",
+  "options": [
+   "할로페리돌",
+   "피소스티그민",
+   "시프로헵타딘",
+   "단트롤렌",
+   "브로모크립틴"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 세로토닌 작용 약(에스시탈로프람)에 세로토닌 재흡수를 억제하는 트라마돌을 더한 지 하루 안에 초조·산동·발한·장음 항진·고열과 함께 하지 우세의 과반사·지속 간대성 근경련이 생겼다 — Hunter 기준에 맞는 세로토닌 증후군이다. 원인 약 중단·벤조디아제핀·수액이 기본이고, 그래도 지속되면 5-HT2A 길항제 시프로헵타딘을 준다. 납관 강직이 없고 크레아틴 인산활성효소가 정상이며 항정신병약 노출이 없어 신경이완제 악성 증후군이 아니다.\n- 원리: <b>왜 간대성 근경련과 과반사인가</b>: 척수 앞뿔과 뇌간의 5-HT1A·5-HT2A 수용체가 과도하게 자극되면 운동 신경원의 흥분성이 올라 반사가 항진되고, 특히 긴 신경로 끝인 하지에서 간대성 근경련(유발·자발·안구)이 나타난다. 자율신경계 세로토닌 과다는 산동·발한·빈맥·고혈압·장음 항진을 만든다. 고열은 근육 활동이 많을수록 높아진다.<br> <b>왜 수 시간 안에 시작하는가</b>: 약물 상호작용으로 시냅스 세로토닌이 빠르게 늘기 때문에 증상은 보통 약을 더한 뒤 24시간 안(대개 6시간 안)에 시작하고, 원인 약을 끊으면 24시간 안에 좋아진다.<br> <b>신경이완제 악성 증후군과 기전이 반대다</b>: 그것은 도파민 D2 차단으로 생겨 서서히(수일) 시작하고, 서동(반응 느림)·납관 강직·반사 감소, 근육 손상으로 크레아틴 인산활성효소가 크게 오른다. 그래서 치료도 근육 이완(단트롤렌)과 도파민 작용(브로모크립틴)이다. 세로토닌 증후군에 브로모크립틴을 주면 세로토닌 작용이 있어 악화될 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">세로토닌 증후군 → 시프로헵타딘(정답)</th><th>신경이완제 악성 증후군 → 단트롤렌(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인 약</td><td>세로토닌 작용 약 2가지 이상(SSRI + 트라마돌·리네졸리드·트립탄)</td><td>도파민 차단제(항정신병약·메토클로프라미드)</td></tr> <tr><td>발병</td><td><b>수 시간</b></td><td>수일</td></tr> <tr><td>신경근 소견</td><td><b>간대성 근경련·과반사</b>(하지 우세)</td><td>납관 강직·반사 감소·서동</td></tr> <tr><td>장·동공</td><td>장음 항진·산동</td><td>장음 정상~감소, 동공 정상</td></tr> <tr><td>크레아틴 인산활성효소</td><td>정상~경도 상승</td><td>현저히 상승</td></tr> <tr><td>이 환자</td><td>근경련·과반사·장음 항진 — 일치</td><td>강직 없음·효소 정상·항정신병약 없음 — 불일치</td></tr> </tbody></table> 「간대성 근경련 대 납관 강직」이 둘을 가르는 가장 빠른 진찰 소견이고, 치료 약은 원인 기전의 반대쪽을 고른다.\n- 오답 이유:\n  - ① 할로페리돌은 초조한 섬망에서 진정 목적으로 쓰지만, 고열을 동반한 이 상황에서는 체온 조절을 방해하고 신경이완제 악성 증후군 위험을 더한다.\n  - ② 피소스티그민은 건조한 피부·요저류·장음 감소를 동반한 항콜린 독성이라면 정답이 된다.\n  - ④ 단트롤렌은 항정신병약 복용 뒤 수일에 걸쳐 납관 강직·고열·크레아틴 인산활성효소 상승이 생긴 신경이완제 악성 증후군이라면 고려된다.\n  - ⑤ 브로모크립틴은 도파민 차단으로 생긴 신경이완제 악성 증후군에서 도파민 작용을 되살리려 쓰며, 세로토닌 증후군은 악화시킬 수 있다.\n- 함정: 고열과 근육 이상을 보고 단트롤렌을 고르는 것 — 간대성 근경련·과반사·장음 항진은 세로토닌 과다를 가리킨다.\n- 학습목표: 선택적 세로토닌 재흡수 억제제에 트라마돌을 더한 뒤 수 시간 안에 생긴 고열·초조·하지 우세 간대성 근경련·과반사를 세로토닌 증후군으로 진단하고, 신경이완제 악성 증후군과 치료(시프로헵타딘 대 단트롤렌)를 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 463: Psychiatric Disorders · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120 · Dunkley EJC, Isbister GK, Sibbritt D, Dawson AH, Whyte IM. The Hunter Serotonin Toxicity Criteria. QJM. 2003;96(9):635-642",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "세로토닌 작용 약(에스시탈로프람)에 세로토닌 재흡수를 억제하는 트라마돌을 더한 지 하루 안에 초조·산동·발한·장음 항진·고열과 함께 하지 우세의 과반사·지속 간대성 근경련이 생겼다 — Hunter 기준에 맞는 세로토닌 증후군이다. 원인 약 중단·벤조디아제핀·수액이 기본이고, 그래도 지속되면 5-HT2A 길항제 시프로헵타딘을 준다. 납관 강직이 없고 크레아틴 인산활성효소가 정상이며 항정신병약 노출이 없어 신경이완제 악성 증후군이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 간대성 근경련과 과반사인가</b>: 척수 앞뿔과 뇌간의 5-HT1A·5-HT2A 수용체가 과도하게 자극되면 운동 신경원의 흥분성이 올라 반사가 항진되고, 특히 긴 신경로 끝인 하지에서 간대성 근경련(유발·자발·안구)이 나타난다. 자율신경계 세로토닌 과다는 산동·발한·빈맥·고혈압·장음 항진을 만든다. 고열은 근육 활동이 많을수록 높아진다.<br> <b>왜 수 시간 안에 시작하는가</b>: 약물 상호작용으로 시냅스 세로토닌이 빠르게 늘기 때문에 증상은 보통 약을 더한 뒤 24시간 안(대개 6시간 안)에 시작하고, 원인 약을 끊으면 24시간 안에 좋아진다.<br> <b>신경이완제 악성 증후군과 기전이 반대다</b>: 그것은 도파민 D2 차단으로 생겨 서서히(수일) 시작하고, 서동(반응 느림)·납관 강직·반사 감소, 근육 손상으로 크레아틴 인산활성효소가 크게 오른다. 그래서 치료도 근육 이완(단트롤렌)과 도파민 작용(브로모크립틴)이다. 세로토닌 증후군에 브로모크립틴을 주면 세로토닌 작용이 있어 악화될 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">세로토닌 증후군 → 시프로헵타딘(정답)</th><th>신경이완제 악성 증후군 → 단트롤렌(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인 약</td><td>세로토닌 작용 약 2가지 이상(SSRI + 트라마돌·리네졸리드·트립탄)</td><td>도파민 차단제(항정신병약·메토클로프라미드)</td></tr> <tr><td>발병</td><td><b>수 시간</b></td><td>수일</td></tr> <tr><td>신경근 소견</td><td><b>간대성 근경련·과반사</b>(하지 우세)</td><td>납관 강직·반사 감소·서동</td></tr> <tr><td>장·동공</td><td>장음 항진·산동</td><td>장음 정상~감소, 동공 정상</td></tr> <tr><td>크레아틴 인산활성효소</td><td>정상~경도 상승</td><td>현저히 상승</td></tr> <tr><td>이 환자</td><td>근경련·과반사·장음 항진 — 일치</td><td>강직 없음·효소 정상·항정신병약 없음 — 불일치</td></tr> </tbody></table> 「간대성 근경련 대 납관 강직」이 둘을 가르는 가장 빠른 진찰 소견이고, 치료 약은 원인 기전의 반대쪽을 고른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 할로페리돌은 초조한 섬망에서 진정 목적으로 쓰지만, 고열을 동반한 이 상황에서는 체온 조절을 방해하고 신경이완제 악성 증후군 위험을 더한다.\n② 피소스티그민은 건조한 피부·요저류·장음 감소를 동반한 항콜린 독성이라면 정답이 된다.\n④ 단트롤렌은 항정신병약 복용 뒤 수일에 걸쳐 납관 강직·고열·크레아틴 인산활성효소 상승이 생긴 신경이완제 악성 증후군이라면 고려된다.\n⑤ 브로모크립틴은 도파민 차단으로 생긴 신경이완제 악성 증후군에서 도파민 작용을 되살리려 쓰며, 세로토닌 증후군은 악화시킬 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "고열과 근육 이상을 보고 단트롤렌을 고르는 것 — 간대성 근경련·과반사·장음 항진은 세로토닌 과다를 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "선택적 세로토닌 재흡수 억제제에 트라마돌을 더한 뒤 수 시간 안에 생긴 고열·초조·하지 우세 간대성 근경련·과반사를 세로토닌 증후군으로 진단하고, 신경이완제 악성 증후군과 치료(시프로헵타딘 대 단트롤렌)를 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 463: Psychiatric Disorders · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120 · Dunkley EJC, Isbister GK, Sibbritt D, Dawson AH, Whyte IM. The Hunter Serotonin Toxicity Criteria. QJM. 2003;96(9):635-642"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "세로토닌 작용 약 병용 뒤 수 시간 안의 간대성 근경련·과반사·고열은 세로토닌 증후군이고, 지속되면 시프로헵타딘을 준다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "납관 강직이 없고 하지 간대성 근경련·과반사·장음 항진이 있으며 크레아틴 인산활성효소가 정상이다",
+   "steps": 3,
+   "chain": [
+    "에스시탈로프람에 트라마돌 추가 후 하루 안 → 세로토닌 작용 약 병용",
+    "지속 간대성 근경련 · 과반사 · 고열 · 산동 · 장음 항진, 강직 없음 → 세로토닌 증후군(신경이완제 악성 증후군 아님)",
+    "벤조디아제핀·수액에도 지속 → 5-HT2A 길항제 시프로헵타딘"
+   ],
+   "key": [
+    {
+     "item": "에스시탈로프람을 복용 중이고",
+     "why": "세로토닌 작용 약",
+     "also": []
+    },
+    {
+     "item": "트라마돌을 처방받아",
+     "why": "두 번째 세로토닌 작용 약",
+     "also": []
+    },
+    {
+     "item": "양쪽 발목에서 지속적인 간대성 근경련이 유발되며",
+     "why": "Hunter 기준 핵심",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "팔다리의 납관 강직은 없다",
+     "why": "신경이완제 악성 증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "항정신병약을 복용한 적은 없다",
+     "why": "신경이완제 악성 증후군의 원인 노출 없음",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아틴 인산활성효소는 정상이다",
+     "why": "심한 근육 손상(신경이완제 악성 증후군) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "장음이 항진되어 있다",
+     "why": "항콜린 독성 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "체온 39.2°C",
+     "why": "중등도 중증 — 41°C 이상이면 진정·삽관·마비가 필요",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "세로토닌 작용 약 두 가지를 함께 먹은 뒤 하지 간대성 근경련·과반사·고열이 생겼고 강직은 없다. 세로토닌 증후군이며, 지지 치료에도 지속되면 시프로헵타딘을 준다.",
+   "switch": {
+    "choice": "D",
+    "condition": "항정신병약을 시작한 뒤 수일에 걸쳐 납관 강직과 크레아틴 인산활성효소 급상승이 생겼다면 신경이완제 악성 증후군으로 단트롤렌"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0664",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "내분비·대사 — 칼륨이 낮은 당뇨병케톤산증의 인슐린 시작 시점",
+  "type": "내분비·대사 — 칼륨이 낮은 당뇨병케톤산증의 인슐린 시작 시점",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-14",
+  "vignette": "A 24-year-old man with type 1 diabetes mellitus is brought to the emergency department because of vomiting and abdominal pain for 2 days. He ran out of insulin 4 days ago. His pulse is 118/min, respirations are 30/min and deep, and blood pressure is 102/64 mm Hg. His mucous membranes are dry. Laboratory studies show glucose 486 mg/dL, sodium 131 mEq/L, potassium 3.1 mEq/L, chloride 94 mEq/L, bicarbonate 8 mEq/L, and β-hydroxybutyrate 7.2 mmol/L. Arterial pH is 7.08. Urine output is 60 mL/h. An intravenous infusion of 0.9% saline is started at 1 L/h.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous potassium chloride before starting insulin",
+   "Intravenous regular insulin infusion at 0.1 U/kg/h",
+   "Intravenous sodium bicarbonate",
+   "Switch the infusion to 5% dextrose in 0.45% saline",
+   "Subcutaneous insulin glargine"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Glucose 486 mg/dL, pH 7.08, bicarbonate 8 mEq/L, an anion gap of 29, and high β-hydroxybutyrate establish severe diabetic ketoacidosis. Total-body potassium is depleted, and the serum level of 3.1 mEq/L is low despite acidosis. Insulin drives potassium into cells and would cause dangerous hypokalemia, so insulin is withheld until potassium is replaced to at least 3.5 mEq/L; fluids continue meanwhile. Urine output confirms that potassium can be given safely.\n- 원리: <b>Why the serum potassium hides a large deficit</b>: Osmotic diuresis and vomiting waste several hundred milliequivalents of potassium, and secondary hyperaldosteronism adds more urinary loss. Yet insulin deficiency and hyperosmolality keep potassium outside cells, so most patients present with a normal or high serum potassium. A <b>low</b> potassium at presentation therefore signals a profound total-body deficit.<br> <b>Why insulin is the dangerous step</b>: Insulin activates Na⁺-K⁺-ATPase and moves potassium into cells within minutes; correcting acidosis adds to the shift. Starting insulin at 3.1 mEq/L can drop potassium below 2.5 mEq/L, causing respiratory muscle weakness and ventricular arrhythmias.<br> <b>The rule by potassium level</b>: < 3.5 — hold insulin and give 10–20 mEq/h of potassium; 3.5–5.0 — give insulin with 20–30 mEq of potassium per liter; > 5.0 — give insulin and recheck every 2 hours without potassium.<br> <b>Why not bicarbonate</b>: Bicarbonate is reserved for pH below about 7.0; it also shifts potassium into cells.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Potassium first (answer)</th><th>Insulin infusion now (closest distractor)</th></tr></thead><tbody> <tr><td>Serum K⁺</td><td><b>&lt; 3.5 mEq/L</b></td><td>≥ 3.5 mEq/L</td></tr> <tr><td>Effect on K⁺</td><td>Rebuilds the extracellular level before the shift</td><td>Moves K⁺ into cells within minutes</td></tr> <tr><td>Why the threshold</td><td>Below 3.5, the insulin shift risks arrhythmia and respiratory weakness</td><td>Above 3.5, insulin with K⁺ in the fluids is safe</td></tr> <tr><td>This patient</td><td>K⁺ 3.1, urine output 60 mL/h — indicated</td><td>Not safe yet</td></tr> </tbody></table> Insulin is the cure for ketoacidosis, but potassium decides when it can start.\n- 오답 이유:\n  - (B) An insulin infusion at 0.1 U/kg/h would be correct once potassium is at least 3.5 mEq/L, together with potassium in the fluids.\n  - (C) Sodium bicarbonate would be considered only if arterial pH were below about 7.0, and it would still worsen hypokalemia.\n  - (D) Dextrose in 0.45% saline would be correct once glucose falls to about 200–250 mg/dL during insulin therapy, to avoid hypoglycemia while ketosis clears.\n  - (E) Subcutaneous glargine would be correct after the anion gap closes and the patient can eat, overlapping intravenous insulin by 1–2 hours.\n- 함정: Starting insulin immediately because it treats ketoacidosis — at a potassium of 3.1 mEq/L insulin is the step that can kill.\n- 학습목표: In diabetic ketoacidosis with an initial potassium below 3.5 mEq/L, hold insulin and replace potassium first, because insulin shifts potassium into cells and can precipitate fatal arrhythmia\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 416: Diabetes Mellitus: Management and Therapies · Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care. 2024;47(8):1257-1275",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Glucose 486 mg/dL, pH 7.08, bicarbonate 8 mEq/L, an anion gap of 29, and high β-hydroxybutyrate establish severe diabetic ketoacidosis. Total-body potassium is depleted, and the serum level of 3.1 mEq/L is low despite acidosis. Insulin drives potassium into cells and would cause dangerous hypokalemia, so insulin is withheld until potassium is replaced to at least 3.5 mEq/L; fluids continue meanwhile. Urine output confirms that potassium can be given safely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the serum potassium hides a large deficit</b>: Osmotic diuresis and vomiting waste several hundred milliequivalents of potassium, and secondary hyperaldosteronism adds more urinary loss. Yet insulin deficiency and hyperosmolality keep potassium outside cells, so most patients present with a normal or high serum potassium. A <b>low</b> potassium at presentation therefore signals a profound total-body deficit.<br> <b>Why insulin is the dangerous step</b>: Insulin activates Na⁺-K⁺-ATPase and moves potassium into cells within minutes; correcting acidosis adds to the shift. Starting insulin at 3.1 mEq/L can drop potassium below 2.5 mEq/L, causing respiratory muscle weakness and ventricular arrhythmias.<br> <b>The rule by potassium level</b>: < 3.5 — hold insulin and give 10–20 mEq/h of potassium; 3.5–5.0 — give insulin with 20–30 mEq of potassium per liter; > 5.0 — give insulin and recheck every 2 hours without potassium.<br> <b>Why not bicarbonate</b>: Bicarbonate is reserved for pH below about 7.0; it also shifts potassium into cells."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Potassium first (answer)</th><th>Insulin infusion now (closest distractor)</th></tr></thead><tbody> <tr><td>Serum K⁺</td><td><b>&lt; 3.5 mEq/L</b></td><td>≥ 3.5 mEq/L</td></tr> <tr><td>Effect on K⁺</td><td>Rebuilds the extracellular level before the shift</td><td>Moves K⁺ into cells within minutes</td></tr> <tr><td>Why the threshold</td><td>Below 3.5, the insulin shift risks arrhythmia and respiratory weakness</td><td>Above 3.5, insulin with K⁺ in the fluids is safe</td></tr> <tr><td>This patient</td><td>K⁺ 3.1, urine output 60 mL/h — indicated</td><td>Not safe yet</td></tr> </tbody></table> Insulin is the cure for ketoacidosis, but potassium decides when it can start."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) An insulin infusion at 0.1 U/kg/h would be correct once potassium is at least 3.5 mEq/L, together with potassium in the fluids.\n(C) Sodium bicarbonate would be considered only if arterial pH were below about 7.0, and it would still worsen hypokalemia.\n(D) Dextrose in 0.45% saline would be correct once glucose falls to about 200–250 mg/dL during insulin therapy, to avoid hypoglycemia while ketosis clears.\n(E) Subcutaneous glargine would be correct after the anion gap closes and the patient can eat, overlapping intravenous insulin by 1–2 hours."
+   },
+   {
+    "k": "함정",
+    "v": "Starting insulin immediately because it treats ketoacidosis — at a potassium of 3.1 mEq/L insulin is the step that can kill."
+   },
+   {
+    "k": "학습목표",
+    "v": "In diabetic ketoacidosis with an initial potassium below 3.5 mEq/L, hold insulin and replace potassium first, because insulin shifts potassium into cells and can precipitate fatal arrhythmia"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 416: Diabetes Mellitus: Management and Therapies · Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care. 2024;47(8):1257-1275"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "In diabetic ketoacidosis with potassium below 3.5 mEq/L, potassium is replaced before insulin is started",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The serum potassium is 3.1 mEq/L, below the 3.5 mEq/L threshold for starting insulin",
+   "steps": 2,
+   "chain": [
+    "Glucose 486, pH 7.08, bicarbonate 8, high β-hydroxybutyrate → severe diabetic ketoacidosis",
+    "Potassium 3.1 mEq/L with adequate urine output → replace potassium and hold insulin until ≥ 3.5"
+   ],
+   "key": [
+    {
+     "item": "potassium 3.1 mEq/L",
+     "why": "Below the insulin threshold",
+     "also": []
+    },
+    {
+     "item": "Arterial pH is 7.08",
+     "why": "Severe ketoacidosis",
+     "also": []
+    },
+    {
+     "item": "bicarbonate 8 mEq/L",
+     "why": "Severe ketoacidosis",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Urine output is 60 mL/h",
+     "why": "Potassium can be given safely",
+     "also": []
+    },
+    {
+     "item": "glucose 486 mg/dL",
+     "why": "Dextrose is not needed yet",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "sodium 131 mEq/L",
+     "why": "Pseudohyponatremia from hyperglycemia — corrected sodium is about 138",
+     "also": []
+    }
+   ],
+   "summary": "This is severe diabetic ketoacidosis with a potassium of 3.1 mEq/L. Potassium is replaced first, and insulin starts once potassium reaches 3.5 mEq/L.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the initial potassium were 4.6 mEq/L, start the insulin infusion with potassium added to the fluids"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0663",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증의 첫 처치",
+  "type": "신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증의 첫 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-14",
+  "vignette": "68세 남자가 이틀 전부터 기운이 없고 다리에 힘이 빠져 응급실에 왔다. 당뇨병성 만성 신장병으로 진료를 받아 왔고, 2주 전 고혈압 때문에 스피로노락톤이 추가되었다. 혈압 142/84 mmHg, 맥박 54회/분이다. 혈청 칼륨 7.4 mEq/L, 나트륨 136 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.2 mg/dL(평소 2.4), 포도당 168 mg/dL 이다. 다시 채혈해도 칼륨은 7.3 mEq/L 이다. 심전도에서 뾰족한 T파와 넓어진 QRS(140 ms)가 보인다.",
+  "question": "가장 먼저 시행할 처치는?",
+  "options": [
+   "응급 혈액투석",
+   "글루콘산칼슘 정주",
+   "속효성 인슐린과 포도당 정주",
+   "살부타몰 흡입",
+   "소듐 지르코늄 사이클로실리케이트 경구 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 칼륨 7.4 mEq/L(재검 7.3)이고 심전도에 뾰족한 T파와 넓어진 QRS 가 있어 언제든 심실세동·무수축으로 넘어갈 수 있다. 가장 먼저 글루콘산칼슘을 정주해 심근 세포막을 안정화한다(수 분 안에 효과, 30~60분 지속, 심전도가 정상화되지 않으면 반복). 칼슘은 칼륨을 낮추지 않으므로 곧바로 인슐린·포도당으로 칼륨을 세포 안으로 옮기고, 원인 약(스피로노락톤)을 끊고 체외 제거를 준비한다.\n- 원리: <b>왜 칼슘이 칼륨을 낮추지 않는데도 먼저인가</b>: 세포 밖 칼륨이 오르면 안정막전위가 덜 음성이 되어(탈분극) 처음엔 흥분성이 오르다가, 더 오르면 빠른 나트륨 통로가 불활성화되어 전도가 느려진다 — QRS 가 넓어지고 사인파·심실세동으로 간다. 칼슘은 역치 전위를 덜 음성 쪽으로 올려 안정막전위와 역치 사이 간격을 되돌리고, 나트륨 통로의 이용 가능성을 회복시켜 전도를 살린다. 즉 <b>원인은 그대로 두고 심장의 위험만 몇십 분 동안 막는다</b>.<br> <b>왜 그다음이 인슐린인가</b>: 인슐린은 Na⁺-K⁺-ATP 분해효소를 활성화해 칼륨을 세포 안으로 옮긴다(15~30분에 0.6~1.0 mEq/L 감소). 베타2 작용제도 같은 펌프를 쓴다. 이것도 몸의 칼륨 총량은 그대로다.<br> <b>왜 마지막이 제거인가</b>: 결합제·이뇨제·투석만 칼륨을 몸 밖으로 뺀다. 효과가 늦으므로 위의 두 단계로 시간을 벌면서 함께 시작한다. 스피로노락톤(알도스테론 길항)과 신기능 악화가 원인이므로 약을 끊는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">단계</th><th style=\"width:38%\">글루콘산칼슘(정답 — 막 안정화)</th><th>인슐린·포도당(가장 가까운 오답 — 세포 내 이동)</th></tr></thead><tbody> <tr><td>혈청 칼륨</td><td><b>변하지 않음</b></td><td>0.6~1.0 mEq/L 감소</td></tr> <tr><td>효과 시작</td><td>1~3분</td><td>15~30분</td></tr> <tr><td>왜 그 순서인가</td><td>넓어진 QRS 는 몇 분 안에 심정지로 갈 수 있다</td><td>효과가 늦어 심장을 즉시 지키지 못한다</td></tr> <tr><td>적응</td><td>심전도 변화가 있는 모든 고칼륨혈증</td><td>칼륨 6.0 이상 또는 심전도 변화</td></tr> </tbody></table> 「심전도 변화가 있다」는 사실이 순서를 정한다 — 변화가 없으면 인슐린·포도당과 제거부터 시작해도 된다.\n- 오답 이유:\n  - ① 응급 혈액투석은 약물 치료에도 칼륨이 내려가지 않거나 무뇨·심한 산증이 동반된 말기 신부전이라면 정답이 된다.\n  - ③ 인슐린과 포도당은 심전도 변화가 없는 칼륨 6.5 mEq/L 처럼 즉각적 막 안정화가 필요 없을 때는 첫 처치가 될 수 있고, 이 환자에서도 칼슘 바로 다음이다.\n  - ④ 살부타몰 흡입은 인슐린의 보조로 세포 내 이동을 더할 때 쓰며, 막 안정화 뒤 두 번째 단계에서 함께 쓴다.\n  - ⑤ 소듐 지르코늄 사이클로실리케이트는 심전도 변화가 없는 만성·중등도 고칼륨혈증에서 칼륨을 몸 밖으로 빼는 처치로 정답이 된다.\n- 함정: 「칼륨을 낮추는」 처치를 먼저 고르는 것 — 넓어진 QRS 앞에서는 칼륨 수치보다 심근막이 먼저다.\n- 학습목표: 심전도 변화가 있는 고칼륨혈증에서 막 안정화를 위해 칼슘을 가장 먼저 주고, 세포 내 이동(인슐린·포도당)과 체외 제거 처치의 순서를 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Palmer BF, Clegg DJ. Diagnosis and treatment of hyperkalemia. Cleve Clin J Med. 2017;84(12):934-942",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "칼륨 7.4 mEq/L(재검 7.3)이고 심전도에 뾰족한 T파와 넓어진 QRS 가 있어 언제든 심실세동·무수축으로 넘어갈 수 있다. 가장 먼저 글루콘산칼슘을 정주해 심근 세포막을 안정화한다(수 분 안에 효과, 30~60분 지속, 심전도가 정상화되지 않으면 반복). 칼슘은 칼륨을 낮추지 않으므로 곧바로 인슐린·포도당으로 칼륨을 세포 안으로 옮기고, 원인 약(스피로노락톤)을 끊고 체외 제거를 준비한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 칼슘이 칼륨을 낮추지 않는데도 먼저인가</b>: 세포 밖 칼륨이 오르면 안정막전위가 덜 음성이 되어(탈분극) 처음엔 흥분성이 오르다가, 더 오르면 빠른 나트륨 통로가 불활성화되어 전도가 느려진다 — QRS 가 넓어지고 사인파·심실세동으로 간다. 칼슘은 역치 전위를 덜 음성 쪽으로 올려 안정막전위와 역치 사이 간격을 되돌리고, 나트륨 통로의 이용 가능성을 회복시켜 전도를 살린다. 즉 <b>원인은 그대로 두고 심장의 위험만 몇십 분 동안 막는다</b>.<br> <b>왜 그다음이 인슐린인가</b>: 인슐린은 Na⁺-K⁺-ATP 분해효소를 활성화해 칼륨을 세포 안으로 옮긴다(15~30분에 0.6~1.0 mEq/L 감소). 베타2 작용제도 같은 펌프를 쓴다. 이것도 몸의 칼륨 총량은 그대로다.<br> <b>왜 마지막이 제거인가</b>: 결합제·이뇨제·투석만 칼륨을 몸 밖으로 뺀다. 효과가 늦으므로 위의 두 단계로 시간을 벌면서 함께 시작한다. 스피로노락톤(알도스테론 길항)과 신기능 악화가 원인이므로 약을 끊는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">단계</th><th style=\"width:38%\">글루콘산칼슘(정답 — 막 안정화)</th><th>인슐린·포도당(가장 가까운 오답 — 세포 내 이동)</th></tr></thead><tbody> <tr><td>혈청 칼륨</td><td><b>변하지 않음</b></td><td>0.6~1.0 mEq/L 감소</td></tr> <tr><td>효과 시작</td><td>1~3분</td><td>15~30분</td></tr> <tr><td>왜 그 순서인가</td><td>넓어진 QRS 는 몇 분 안에 심정지로 갈 수 있다</td><td>효과가 늦어 심장을 즉시 지키지 못한다</td></tr> <tr><td>적응</td><td>심전도 변화가 있는 모든 고칼륨혈증</td><td>칼륨 6.0 이상 또는 심전도 변화</td></tr> </tbody></table> 「심전도 변화가 있다」는 사실이 순서를 정한다 — 변화가 없으면 인슐린·포도당과 제거부터 시작해도 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 응급 혈액투석은 약물 치료에도 칼륨이 내려가지 않거나 무뇨·심한 산증이 동반된 말기 신부전이라면 정답이 된다.\n③ 인슐린과 포도당은 심전도 변화가 없는 칼륨 6.5 mEq/L 처럼 즉각적 막 안정화가 필요 없을 때는 첫 처치가 될 수 있고, 이 환자에서도 칼슘 바로 다음이다.\n④ 살부타몰 흡입은 인슐린의 보조로 세포 내 이동을 더할 때 쓰며, 막 안정화 뒤 두 번째 단계에서 함께 쓴다.\n⑤ 소듐 지르코늄 사이클로실리케이트는 심전도 변화가 없는 만성·중등도 고칼륨혈증에서 칼륨을 몸 밖으로 빼는 처치로 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「칼륨을 낮추는」 처치를 먼저 고르는 것 — 넓어진 QRS 앞에서는 칼륨 수치보다 심근막이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심전도 변화가 있는 고칼륨혈증에서 막 안정화를 위해 칼슘을 가장 먼저 주고, 세포 내 이동(인슐린·포도당)과 체외 제거 처치의 순서를 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Palmer BF, Clegg DJ. Diagnosis and treatment of hyperkalemia. Cleve Clin J Med. 2017;84(12):934-942"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "심전도 변화가 있는 고칼륨혈증은 칼륨을 낮추기 전에 칼슘으로 심근막을 안정화한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "QRS 가 140 ms 로 넓어져 몇 분 안의 심정지 위험이 있다",
+   "steps": 2,
+   "chain": [
+    "칼륨 7.4(재검 7.3) · 뾰족한 T파 · 넓어진 QRS → 생명을 위협하는 고칼륨혈증",
+    "심전도 변화가 있다 → 칼슘으로 막 안정화가 먼저, 이어 인슐린·포도당과 제거"
+   ],
+   "key": [
+    {
+     "item": "넓어진 QRS(140 ms)",
+     "why": "즉각적 막 안정화 적응",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 7.4 mEq/L",
+     "why": "중증 고칼륨혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "다시 채혈해도 칼륨은 7.3 mEq/L 이다",
+     "why": "용혈에 의한 가성 고칼륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "스피로노락톤이 추가되었다",
+     "why": "원인 약 — 중단",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 3.2 mg/dL(평소 2.4)",
+     "why": "배설 감소 — 제거 처치·투석 판단에 쓰인다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "포도당 168 mg/dL",
+     "why": "인슐린 투여 시 포도당 병용량 결정에만 영향",
+     "also": []
+    }
+   ],
+   "summary": "칼륨 7.4 와 넓어진 QRS 는 즉시 심정지 위험이다. 칼슘으로 심근막을 먼저 안정화하고, 이어 인슐린·포도당과 제거 처치를 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 칼륨이어도 심전도가 정상이었다면 인슐린·포도당과 칼륨 제거부터 시작"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0662",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "혈액·종양 — 혈소판 감소·용혈·신경 증상과 응급 치료",
+  "type": "혈액·종양 — 혈소판 감소·용혈·신경 증상과 응급 치료",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-14",
+  "vignette": "A 34-year-old woman is brought to the emergency department because of confusion and slurred speech for 6 hours. For 3 days, she has had fatigue and easy bruising. She takes no medications. Her temperature is 37.9°C, pulse is 104/min, and blood pressure is 128/80 mm Hg. She is disoriented to time, and there are petechiae on her legs. Laboratory studies show a hemoglobin concentration of 8.1 g/dL, platelet count of 14,000/mm³, reticulocyte count of 6%, lactate dehydrogenase of 1450 U/L, haptoglobin below detection, and creatinine of 1.3 mg/dL. Prothrombin time and activated partial thromboplastin time are within the reference ranges. The direct antiglobulin test is negative, and a peripheral blood smear shows many schistocytes.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Hemodialysis",
+   "Cryoprecipitate infusion",
+   "Plasma exchange and glucocorticoids",
+   "Platelet transfusion",
+   "Intravenous immune globulin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Schistocytes, high LDH, undetectable haptoglobin, and reticulocytosis with a negative direct antiglobulin test indicate microangiopathic hemolytic anemia. With severe thrombocytopenia, neurologic symptoms, fever, and only mild renal impairment — and normal PT and aPTT, which argue against DIC — this is thrombotic thrombocytopenic purpura. Untreated mortality exceeds 90%, so plasma exchange with glucocorticoids starts immediately on clinical suspicion, before the ADAMTS13 result returns (caplacizumab is often added).\n- 원리: <b>Why ADAMTS13 deficiency causes the whole picture</b>: ADAMTS13 cleaves ultralarge von Willebrand factor multimers released from endothelium. When an autoantibody inhibits it, these multimers stay attached and spontaneously bind platelets under the high shear of arterioles and capillaries, forming platelet-rich microthrombi. Platelets are consumed (thrombocytopenia), red cells are sheared crossing the strands (schistocytes, LDH, low haptoglobin), and microthrombi in the brain cause fluctuating neurologic deficits.<br> <b>Why plasma exchange</b>: Exchange removes the anti-ADAMTS13 antibody and the ultralarge multimers while replacing functional ADAMTS13 from donor plasma; glucocorticoids (and rituximab) suppress antibody production; caplacizumab blocks the von Willebrand factor–platelet interaction.<br> <b>Why coagulation times are normal</b>: The clotting cascade is not consumed — this is platelet–von Willebrand factor thrombosis, not fibrin generation, which separates TTP from DIC.<br> <b>Why platelets are withheld</b>: Transfused platelets add fuel to ongoing microthrombosis and have been linked to neurologic deterioration; they are given only for life-threatening bleeding.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Plasma exchange (answer — TTP)</th><th>Platelet transfusion (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td><b>Removes the inhibitor and replaces ADAMTS13</b></td><td>Raises the platelet count temporarily</td></tr> <tr><td>Effect on thrombosis</td><td>Stops microthrombus formation</td><td>May worsen microthrombi</td></tr> <tr><td>Why</td><td>The disease is a missing protease, not a production failure</td><td>Platelets are consumed as fast as they are given</td></tr> <tr><td>When indicated</td><td>Suspected TTP, even before ADAMTS13 results</td><td>Only life-threatening bleeding or an unavoidable procedure</td></tr> <tr><td>This patient</td><td>Schistocytes, neurologic signs — indicated</td><td>Petechiae only, no major bleeding — not indicated</td></tr> </tbody></table> A low platelet count with schistocytes is a thrombotic disease, not a bleeding disease — treat the cause, not the number.\n- 오답 이유:\n  - (A) Hemodialysis would be correct for Shiga toxin–associated hemolytic uremic syndrome with oliguric acute kidney injury after bloody diarrhea.\n  - (B) Cryoprecipitate would be correct for DIC with prolonged PT and aPTT and a fibrinogen level below 150 mg/dL.\n  - (D) Platelet transfusion would be correct for thrombocytopenia from marrow failure or for life-threatening bleeding such as intracranial hemorrhage.\n  - (E) Intravenous immune globulin would be correct for immune thrombocytopenia, where the smear shows isolated thrombocytopenia without schistocytes or hemolysis.\n- 함정: Treating the platelet count of 14,000/mm³ with platelets — in TTP that feeds the microthrombi.\n- 학습목표: Recognize thrombotic thrombocytopenic purpura from microangiopathic hemolysis, severe thrombocytopenia, and neurologic symptoms with normal coagulation, and start plasma exchange immediately rather than transfusing platelets\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 105: Hemolytic Anemias · Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2020;18(10):2496-2502",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Schistocytes, high LDH, undetectable haptoglobin, and reticulocytosis with a negative direct antiglobulin test indicate microangiopathic hemolytic anemia. With severe thrombocytopenia, neurologic symptoms, fever, and only mild renal impairment — and normal PT and aPTT, which argue against DIC — this is thrombotic thrombocytopenic purpura. Untreated mortality exceeds 90%, so plasma exchange with glucocorticoids starts immediately on clinical suspicion, before the ADAMTS13 result returns (caplacizumab is often added)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ADAMTS13 deficiency causes the whole picture</b>: ADAMTS13 cleaves ultralarge von Willebrand factor multimers released from endothelium. When an autoantibody inhibits it, these multimers stay attached and spontaneously bind platelets under the high shear of arterioles and capillaries, forming platelet-rich microthrombi. Platelets are consumed (thrombocytopenia), red cells are sheared crossing the strands (schistocytes, LDH, low haptoglobin), and microthrombi in the brain cause fluctuating neurologic deficits.<br> <b>Why plasma exchange</b>: Exchange removes the anti-ADAMTS13 antibody and the ultralarge multimers while replacing functional ADAMTS13 from donor plasma; glucocorticoids (and rituximab) suppress antibody production; caplacizumab blocks the von Willebrand factor–platelet interaction.<br> <b>Why coagulation times are normal</b>: The clotting cascade is not consumed — this is platelet–von Willebrand factor thrombosis, not fibrin generation, which separates TTP from DIC.<br> <b>Why platelets are withheld</b>: Transfused platelets add fuel to ongoing microthrombosis and have been linked to neurologic deterioration; they are given only for life-threatening bleeding."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Plasma exchange (answer — TTP)</th><th>Platelet transfusion (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td><b>Removes the inhibitor and replaces ADAMTS13</b></td><td>Raises the platelet count temporarily</td></tr> <tr><td>Effect on thrombosis</td><td>Stops microthrombus formation</td><td>May worsen microthrombi</td></tr> <tr><td>Why</td><td>The disease is a missing protease, not a production failure</td><td>Platelets are consumed as fast as they are given</td></tr> <tr><td>When indicated</td><td>Suspected TTP, even before ADAMTS13 results</td><td>Only life-threatening bleeding or an unavoidable procedure</td></tr> <tr><td>This patient</td><td>Schistocytes, neurologic signs — indicated</td><td>Petechiae only, no major bleeding — not indicated</td></tr> </tbody></table> A low platelet count with schistocytes is a thrombotic disease, not a bleeding disease — treat the cause, not the number."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hemodialysis would be correct for Shiga toxin–associated hemolytic uremic syndrome with oliguric acute kidney injury after bloody diarrhea.\n(B) Cryoprecipitate would be correct for DIC with prolonged PT and aPTT and a fibrinogen level below 150 mg/dL.\n(D) Platelet transfusion would be correct for thrombocytopenia from marrow failure or for life-threatening bleeding such as intracranial hemorrhage.\n(E) Intravenous immune globulin would be correct for immune thrombocytopenia, where the smear shows isolated thrombocytopenia without schistocytes or hemolysis."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the platelet count of 14,000/mm³ with platelets — in TTP that feeds the microthrombi."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize thrombotic thrombocytopenic purpura from microangiopathic hemolysis, severe thrombocytopenia, and neurologic symptoms with normal coagulation, and start plasma exchange immediately rather than transfusing platelets"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 105: Hemolytic Anemias · Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2020;18(10):2496-2502"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Microangiopathic hemolysis with severe thrombocytopenia, neurologic signs, and normal coagulation is TTP, treated immediately with plasma exchange",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Schistocytes and neurologic signs indicate consumptive microthrombosis rather than a platelet production or bleeding problem",
+   "steps": 3,
+   "chain": [
+    "Schistocytes, high LDH, undetectable haptoglobin, negative direct antiglobulin test → microangiopathic hemolytic anemia",
+    "Severe thrombocytopenia, confusion, normal PT and aPTT → TTP rather than DIC",
+    "TTP is a missing protease → plasma exchange with glucocorticoids now; avoid platelet transfusion"
+   ],
+   "key": [
+    {
+     "item": "a peripheral blood smear shows many schistocytes",
+     "why": "Microangiopathic hemolysis",
+     "also": []
+    },
+    {
+     "item": "platelet count of 14,000/mm³",
+     "why": "Severe consumptive thrombocytopenia",
+     "also": []
+    },
+    {
+     "item": "confusion and slurred speech",
+     "why": "Cerebral microthrombi",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Prothrombin time and activated partial thromboplastin time are within the reference ranges",
+     "why": "Lowers the likelihood of DIC",
+     "also": []
+    },
+    {
+     "item": "The direct antiglobulin test is negative",
+     "why": "Lowers the likelihood of autoimmune hemolysis",
+     "also": []
+    },
+    {
+     "item": "creatinine of 1.3 mg/dL",
+     "why": "Mild renal injury makes HUS less likely",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "there are petechiae on her legs",
+     "why": "Minor bleeding does not justify platelet transfusion",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "Schistocytic hemolysis, severe thrombocytopenia, neurologic signs, and normal coagulation are TTP. Plasma exchange with glucocorticoids is started at once, and platelets are withheld.",
+   "switch": {
+    "choice": "A",
+    "condition": "If bloody diarrhea preceded oliguric acute kidney injury with schistocytes in a child, Shiga toxin HUS managed with supportive care and dialysis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0661",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·신경·소화기·혈액·신장·내분비·정신)",
+  "subtopic": "소화기 — 간경변 환자의 토혈과 첫 처치",
+  "type": "소화기 — 간경변 환자의 토혈과 첫 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-14",
+  "vignette": "58세 남자가 2시간 전부터 선홍색 피를 두 차례 토해 응급실에 왔다. 알코올 간경변으로 진료를 받아 왔다. 혈압 96/60 mmHg, 맥박 112회/분, 체온 36.8°C 이다. 의식은 명료하고 공막에 황달이 있으며 복부 팽만과 이동둔탁음이 있다. 혈색소 8.6 g/dL, 혈소판 78,000/mm³, 프로트롬빈 시간 국제정상화비율 1.6, 총빌리루빈 3.1 mg/dL, 알부민 2.8 g/dL 이다. 정맥로 두 개를 확보하고 수액을 투여하기 시작하였다.",
+  "question": "내시경 전에 추가로 시행할 처치로 가장 적절한 것은?",
+  "options": [
+   "혈색소 10 g/dL 이 되도록 적혈구 수혈",
+   "비선택적 베타차단제 경구 투여",
+   "신선동결혈장으로 국제정상화비율 교정",
+   "경정맥 간내 문맥전신 단락술",
+   "옥트레오타이드 정주와 세프트리악손 투여"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 간경변 환자의 토혈은 정맥류 출혈을 가정하고 처치한다. 내시경 전에 혈관수축제(옥트레오타이드·테를리프레신)를 시작해 문맥압을 낮추고, 예방적 항생제(진행 간경변에서는 세프트리악손)를 주어 세균 감염과 재출혈·사망을 줄인다. 내시경적 정맥류 결찰은 12시간 안에 한다. 수혈은 혈색소 7 g/dL 미만에서 7~9 g/dL 를 목표로 제한적으로 한다.\n- 원리: <b>왜 혈관수축제가 먼저인가</b>: 정맥류 출혈의 원동력은 문맥압이다. 옥트레오타이드(소마토스타틴 유사체)는 글루카곤 등 장관 혈관확장 펩타이드 분비를 억제해 내장 혈류를 줄이고, 테를리프레신은 내장 세동맥을 직접 수축시킨다. 내장 유입이 줄면 문맥압이 떨어져 출혈이 줄고 내시경 시야도 좋아진다.<br> <b>왜 항생제가 「예방」인데도 필수인가</b>: 출혈한 간경변 환자는 장 투과성 증가와 세균 전위로 자발세균복막염·균혈증이 잘 생기고, 감염은 다시 문맥압과 재출혈을 높인다. 예방적 항생제는 감염뿐 아니라 재출혈과 사망을 줄인다는 근거가 있다.<br> <b>왜 수혈을 아끼는가</b>: 혈액량을 정상 이상으로 채우면 문맥압이 다시 올라 재출혈이 늘어난다 — 혈색소 7 g/dL 기준의 제한 수혈이 자유 수혈보다 사망률이 낮았다. 국제정상화비율은 간경변의 응고 상태를 반영하지 못해(항응고 인자도 함께 줄어듦) 혈장으로 교정하면 혈액량만 늘린다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">혈관수축제 + 항생제(정답)</th><th>혈색소 10 g/dL 목표 수혈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목표</td><td><b>문맥압 감소</b> · 감염 예방</td><td>산소 운반 회복</td></tr> <tr><td>근거</td><td>재출혈·사망 감소</td><td>제한 수혈(7 g/dL)보다 재출혈·사망 증가</td></tr> <tr><td>왜 그런가</td><td>내장 혈류 감소 → 문맥압 감소</td><td>혈액량 과다 → 문맥압 재상승</td></tr> <tr><td>이 환자</td><td>정맥류 출혈 의심 · 진행 간경변 — 해당</td><td>혈색소 8.6 — 수혈 기준 미만이 아님</td></tr> </tbody></table> 간경변 출혈에서는 「피를 채우는 것」보다 「압력을 낮추는 것」이 먼저다 — 혈색소 7 미만이거나 심혈관 질환이 있으면 수혈한다.\n- 오답 이유:\n  - ① 혈색소 10 g/dL 목표 수혈은 간경변이 없는 급성 관상동맥 증후군 환자의 위장관 출혈이라면 더 높은 목표로 고려될 수 있다.\n  - ② 비선택적 베타차단제는 출혈이 멈추고 혈역학이 안정된 뒤 재출혈 예방(이차 예방)으로 시작하면 정답이 된다.\n  - ③ 신선동결혈장 교정은 와파린 복용 환자처럼 응고인자 결핍만 있고 문맥고혈압이 없는 출혈이라면 고려된다.\n  - ④ 경정맥 간내 문맥전신 단락술은 혈관수축제와 내시경 결찰에도 출혈이 계속되거나 72시간 안 조기 시행 기준(Child-Pugh C 10~13점)에 해당하면 정답이 된다.\n- 함정: 혈압이 낮으니 수혈과 혈장으로 「검사 수치를 정상화」하려는 것 — 간경변 출혈에서는 문맥압을 올려 해가 된다.\n- 학습목표: 간경변 환자의 급성 정맥류 출혈에서 내시경 전에 혈관수축제와 예방적 항생제를 시작하고, 혈색소 7 g/dL 기준의 제한적 수혈을 적용한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 51: Gastrointestinal Bleeding · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 355: Cirrhosis and Its Complications · de Franchis R, Bosch J, Garcia-Tsao G, et al. Baveno VII — renewing consensus in portal hypertension. J Hepatol. 2022;76(4):959-974 · Villanueva C, Colomo A, Bosch A, et al. Transfusion strategies for acute upper gastrointestinal bleeding. N Engl J Med. 2013;368(1):11-21",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "간경변 환자의 토혈은 정맥류 출혈을 가정하고 처치한다. 내시경 전에 혈관수축제(옥트레오타이드·테를리프레신)를 시작해 문맥압을 낮추고, 예방적 항생제(진행 간경변에서는 세프트리악손)를 주어 세균 감염과 재출혈·사망을 줄인다. 내시경적 정맥류 결찰은 12시간 안에 한다. 수혈은 혈색소 7 g/dL 미만에서 7~9 g/dL 를 목표로 제한적으로 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 혈관수축제가 먼저인가</b>: 정맥류 출혈의 원동력은 문맥압이다. 옥트레오타이드(소마토스타틴 유사체)는 글루카곤 등 장관 혈관확장 펩타이드 분비를 억제해 내장 혈류를 줄이고, 테를리프레신은 내장 세동맥을 직접 수축시킨다. 내장 유입이 줄면 문맥압이 떨어져 출혈이 줄고 내시경 시야도 좋아진다.<br> <b>왜 항생제가 「예방」인데도 필수인가</b>: 출혈한 간경변 환자는 장 투과성 증가와 세균 전위로 자발세균복막염·균혈증이 잘 생기고, 감염은 다시 문맥압과 재출혈을 높인다. 예방적 항생제는 감염뿐 아니라 재출혈과 사망을 줄인다는 근거가 있다.<br> <b>왜 수혈을 아끼는가</b>: 혈액량을 정상 이상으로 채우면 문맥압이 다시 올라 재출혈이 늘어난다 — 혈색소 7 g/dL 기준의 제한 수혈이 자유 수혈보다 사망률이 낮았다. 국제정상화비율은 간경변의 응고 상태를 반영하지 못해(항응고 인자도 함께 줄어듦) 혈장으로 교정하면 혈액량만 늘린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">혈관수축제 + 항생제(정답)</th><th>혈색소 10 g/dL 목표 수혈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목표</td><td><b>문맥압 감소</b> · 감염 예방</td><td>산소 운반 회복</td></tr> <tr><td>근거</td><td>재출혈·사망 감소</td><td>제한 수혈(7 g/dL)보다 재출혈·사망 증가</td></tr> <tr><td>왜 그런가</td><td>내장 혈류 감소 → 문맥압 감소</td><td>혈액량 과다 → 문맥압 재상승</td></tr> <tr><td>이 환자</td><td>정맥류 출혈 의심 · 진행 간경변 — 해당</td><td>혈색소 8.6 — 수혈 기준 미만이 아님</td></tr> </tbody></table> 간경변 출혈에서는 「피를 채우는 것」보다 「압력을 낮추는 것」이 먼저다 — 혈색소 7 미만이거나 심혈관 질환이 있으면 수혈한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 혈색소 10 g/dL 목표 수혈은 간경변이 없는 급성 관상동맥 증후군 환자의 위장관 출혈이라면 더 높은 목표로 고려될 수 있다.\n② 비선택적 베타차단제는 출혈이 멈추고 혈역학이 안정된 뒤 재출혈 예방(이차 예방)으로 시작하면 정답이 된다.\n③ 신선동결혈장 교정은 와파린 복용 환자처럼 응고인자 결핍만 있고 문맥고혈압이 없는 출혈이라면 고려된다.\n④ 경정맥 간내 문맥전신 단락술은 혈관수축제와 내시경 결찰에도 출혈이 계속되거나 72시간 안 조기 시행 기준(Child-Pugh C 10~13점)에 해당하면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈압이 낮으니 수혈과 혈장으로 「검사 수치를 정상화」하려는 것 — 간경변 출혈에서는 문맥압을 올려 해가 된다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 환자의 급성 정맥류 출혈에서 내시경 전에 혈관수축제와 예방적 항생제를 시작하고, 혈색소 7 g/dL 기준의 제한적 수혈을 적용한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 51: Gastrointestinal Bleeding · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 355: Cirrhosis and Its Complications · de Franchis R, Bosch J, Garcia-Tsao G, et al. Baveno VII — renewing consensus in portal hypertension. J Hepatol. 2022;76(4):959-974 · Villanueva C, Colomo A, Bosch A, et al. Transfusion strategies for acute upper gastrointestinal bleeding. N Engl J Med. 2013;368(1):11-21"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "간경변 환자의 급성 정맥류 출혈은 내시경 전에 혈관수축제와 예방적 항생제를 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "혈색소 8.6 g/dL 로 제한 수혈 기준(7 g/dL 미만)에 해당하지 않는다",
+   "steps": 3,
+   "chain": [
+    "알코올 간경변 · 복수 · 선홍색 토혈 → 정맥류 출혈 가정",
+    "문맥압이 출혈을 만든다 → 내시경 전 혈관수축제",
+    "진행 간경변 출혈은 감염 위험이 높다 → 예방적 세프트리악손, 수혈은 혈색소 7 미만에서만"
+   ],
+   "key": [
+    {
+     "item": "알코올 간경변으로 진료를 받아 왔다",
+     "why": "정맥류 출혈 가정",
+     "also": []
+    },
+    {
+     "item": "복부 팽만과 이동둔탁음이 있다",
+     "why": "문맥고혈압의 증거",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "혈색소 8.6 g/dL",
+     "why": "제한 수혈 기준 미만이 아님",
+     "also": []
+    },
+    {
+     "item": "국제정상화비율 1.6",
+     "why": "간경변에서는 혈장 교정 대상이 아님",
+     "also": []
+    },
+    {
+     "item": "혈압 96/60 mmHg, 맥박 112회/분",
+     "why": "수액 소생 중 — 처치 순서를 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈소판 78,000/mm³",
+     "why": "비장 기능 항진 — 수혈 기준(5만 미만 활동성 출혈)이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "간경변 환자의 토혈은 정맥류 출혈로 처치한다. 내시경 전에 옥트레오타이드와 세프트리악손을 시작하고, 혈색소 8.6 이므로 수혈은 미룬다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈관수축제와 내시경 결찰 뒤에도 출혈이 계속되면 경정맥 간내 문맥전신 단락술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0656",
   "exam": "imaging",
   "style": "usmle_style",

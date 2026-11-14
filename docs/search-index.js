@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4705,
+  "total": 4717,
   "byType": {
    "paper": 934,
+   "imaging": 667,
    "concept": 165,
    "kmle": 1824,
-   "imaging": 655,
    "usmle": 264,
    "anatomy": 846,
    "ailab": 14,
@@ -37,22 +37,22 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 119,
    "Pulmonology": 118,
    "Hematology": 111,
+   "순환기": 97,
    "Laboratory Medicine": 96,
-   "순환기": 93,
    "산부인과": 84,
-   "호흡기": 41,
-   "소화기": 40,
+   "호흡기": 42,
+   "소화기": 41,
    "소아과": 35,
    "응급·중환자": 31,
+   "혈액·종양": 31,
    "감염": 30,
-   "혈액·종양": 30,
-   "내분비": 29,
+   "내분비": 30,
+   "신경": 29,
+   "신장·비뇨기": 29,
    "Physiology": 28,
    "병리·조직학": 28,
-   "신경": 28,
-   "신장·비뇨기": 28,
    "외과": 26,
-   "피부과": 24,
+   "피부과": 25,
    "예방의학·역학": 23,
    "Pharmacology": 22,
    "Biochemistry": 21,
@@ -61,7 +61,7 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 17,
    "근골격·류마티스": 17,
    "약리": 17,
-   "정신과": 16,
+   "정신과": 17,
    "안과": 13,
    "영상의학": 11,
    "이비인후과": 11,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1317,
-   "high": 3335,
+   "high": 3347,
    "low": 53
   },
   "tagCount": 5492
@@ -119,6 +119,220 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-14_paper-2026-0933_left_ventricular_unloading_with_self_expanding_pump_during_v.md",
    "snippet": "Title Left Ventricular Unloading With Self Expanding Pump During Venoarterial Extracorporeal Membrane Oxygenation in Acute Myocardial Infarction Authors Cai Weiting, Ma Juan, Bai Nan, Xi Qianlan, Wang I Wen, Bai Ming, Lu Andong Journal / DO",
    "text": "Cardiology scraped pubmed PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992) Title Left Ventricular Unloading With Self Expanding Pump During Venoarterial Extracorporeal Membrane Oxygenation in Acute Myocardial Infarction Authors Cai Weiting, Ma Juan, Bai Nan, Xi Qianlan, Wang I Wen, Bai Ming, Lu Andong Journal / DOI ASAIO journal (American Society for Artificial Internal Organs : 1992) · DOI: 10.1097/MAT.0000000000002920 · PMID: 43024931 https://pubmed.ncbi.nlm.nih.gov/43024931/ Abstract Increased left ventricular (LV) afterload and distension during venoarterial extracorporeal membrane oxygenation (VA ECMO) support may impede myocardial perfusion in acute myocardial infarction (AMI). Active LV unloading has been associated with improved outcomes. We report the first clinical use of a self expanding percutaneous ventricular assist device (NyokAssist; magAssist, Suzhou, China) for LV unloading during VA ECMO in a 56 year old man with AMI related cardiogenic shock (CS). Successful coronary angiography and percutaneous coronary intervention (PCI) of the culprit left circumflex (LCx) lesion were performed with NyokAssist + VA ECMO support. The patient was successfully weaned from VA ECMO on post procedure day 5 and remained on NyokAssist support alone for an additional 7 days before being transferred on VA ECMO to a heart transplant center for consideration of advanced heart failure therapies due to limited myocardial recovery. No device related complications were observed. This case demonstrates the technical feasibility of early implementation of a combined VA ECMO and NyokAssist support strategy, enabling LV unloading, temporary hemodynamic stabilization, end organ improvement, and VA ECMO decannulation in a patient with AMI related CS. As this report describes a single patient experience, further clinical studies are warranted to define the safety, efficacy, and potential role of the use of NyokAssist in combination with VA ECMO in the management of AMI related CS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0668",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 건강검진에서 축 이상을 들은 고령 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0668.md",
+   "snippet": "A 66 year old woman comes to the clinic because a screening ECG at a health fair was reported as having an abnormal axis. She has hypertension treated with amlodipine. She has no chest pain, dyspnea, palpitations, or syncope and has never h",
+   "text": "순환기 심전도 판독 — 건강검진에서 축 이상을 들은 고령 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed A 66 year old woman comes to the clinic because a screening ECG at a health fair was reported as having an abnormal axis. She has hypertension treated with amlodipine. She has no chest pain, dyspnea, palpitations, or syncope and has never had a myocardial infarction. Her blood pressure is 134/80 mm Hg and pulse is 70/min. Cardiac examination shows no murmurs or gallops. A 12 lead ECG is shown. Which of the following is the most likely interpretation of this ECG? A. Left ventricular hypertrophy with strain B. Left anterior fascicular block C. Left posterior fascicular block D. Left bundle branch block E. Old inferior myocardial infarction"
+  },
+  {
+   "id": "imaging-2026-0667",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 수술 전 검사에서 이상 소견을 들은 마른 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0667.md",
+   "snippet": "41세 여자가 담석증으로 복강경 담낭절제술을 받기 전 시행한 심전도에서 이상 소견이 있다는 말을 듣고 마취과 외래에 왔다. 계단 두 층을 쉬지 않고 오르며 주 3회 달리기를 한다. 가슴 통증·호흡곤란·실신은 없다. 고혈압·당뇨병·심장병 병력이 없다. 키 162 cm, 몸무게 52 kg 이다. 혈압 114/72 mmHg, 맥박 74회/분이다. 심잡음은 없고 심첨박동은 정상 위치이다. 혈색소 13.1 g/dL, 크레아티닌 0.7 ",
+   "text": "순환기 심전도 처치 — 수술 전 검사에서 이상 소견을 들은 마른 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed 41세 여자가 담석증으로 복강경 담낭절제술을 받기 전 시행한 심전도에서 이상 소견이 있다는 말을 듣고 마취과 외래에 왔다. 계단 두 층을 쉬지 않고 오르며 주 3회 달리기를 한다. 가슴 통증·호흡곤란·실신은 없다. 고혈압·당뇨병·심장병 병력이 없다. 키 162 cm, 몸무게 52 kg 이다. 혈압 114/72 mmHg, 맥박 74회/분이다. 심잡음은 없고 심첨박동은 정상 위치이다. 혈색소 13.1 g/dL, 크레아티닌 0.7 mg/dL 이다. 12유도 심전도는 그림과 같다. 가장 적절한 다음 처치는? A. 추가 심장 검사 없이 예정대로 수술 B. 수술 전 경흉부 심장초음파 C. 수술 전 운동부하 심전도 D. 수술 전 관상동맥 CT 혈관조영 E. 수술을 미루고 베타차단제 시작"
+  },
+  {
+   "id": "imaging-2026-0666",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 맥이 규칙적으로 건너뛰는 느낌의 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0666.md",
+   "snippet": "63세 남자가 2주 전부터 맥이 규칙적으로 한 번씩 건너뛰는 느낌이 들어 외래에 왔다. 커피를 하루 4잔 마시고 최근 잠을 잘 자지 못했다. 가슴 통증·호흡곤란·실신은 없다. 혈압 132/82 mmHg, 맥박 72회/분으로 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심방세동 B. 동부정맥 C. 심방조기수축 삼단",
+   "text": "순환기 심전도 판독 — 맥이 규칙적으로 건너뛰는 느낌의 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed 63세 남자가 2주 전부터 맥이 규칙적으로 한 번씩 건너뛰는 느낌이 들어 외래에 왔다. 커피를 하루 4잔 마시고 최근 잠을 잘 자지 못했다. 가슴 통증·호흡곤란·실신은 없다. 혈압 132/82 mmHg, 맥박 72회/분으로 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심방세동 B. 동부정맥 C. 심방조기수축 삼단맥 D. 심실조기수축 삼단맥 E. Mobitz I 형 2도 방실차단"
+  },
+  {
+   "id": "imaging-2026-0665",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 진통제를 추가한 뒤 생긴 고열·떨림·간대성 근경련",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0665.md",
+   "snippet": "36세 여자가 오늘 오후부터 불안하고 몸이 떨리며 땀이 많이 나서 응급실에 왔다. 우울증으로 1년째 에스시탈로프람을 복용 중이고, 어제 허리 통증으로 트라마돌을 처방받아 아침부터 복용하였다. 항정신병약을 복용한 적은 없다. 체온 39.2°C, 혈압 162/96 mmHg, 맥박 128회/분, 호흡 24회/분이다. 초조하고 산동이 있으며 피부가 축축하다. 장음이 항진되어 있다. 무릎반사와 발목반사가 항진되어 있고 양쪽 발목에서 지",
+   "text": "정신과 정신 — 진통제를 추가한 뒤 생긴 고열·떨림·간대성 근경련 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf 36세 여자가 오늘 오후부터 불안하고 몸이 떨리며 땀이 많이 나서 응급실에 왔다. 우울증으로 1년째 에스시탈로프람을 복용 중이고, 어제 허리 통증으로 트라마돌을 처방받아 아침부터 복용하였다. 항정신병약을 복용한 적은 없다. 체온 39.2°C, 혈압 162/96 mmHg, 맥박 128회/분, 호흡 24회/분이다. 초조하고 산동이 있으며 피부가 축축하다. 장음이 항진되어 있다. 무릎반사와 발목반사가 항진되어 있고 양쪽 발목에서 지속적인 간대성 근경련이 유발되며, 팔다리의 납관 강직은 없다. 혈청 크레아틴 인산활성효소는 정상이다. 벤조디아제핀 정주와 수액 투여 뒤에도 초조와 근경련이 계속될 때 다음으로 투여할 약으로 가장 적절한 것은? A. 할로페리돌 B. 피소스티그민 C. 시프로헵타딘 D. 단트롤렌 E. 브로모크립틴"
+  },
+  {
+   "id": "imaging-2026-0664",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 칼륨이 낮은 당뇨병케톤산증의 인슐린 시작 시점",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0664.md",
+   "snippet": "A 24 year old man with type 1 diabetes mellitus is brought to the emergency department because of vomiting and abdominal pain for 2 days. He ran out of insulin 4 days ago. His pulse is 118/min, respirations are 30/min and deep, and blood pr",
+   "text": "내분비 내분비·대사 — 칼륨이 낮은 당뇨병케톤산증의 인슐린 시작 시점 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf A 24 year old man with type 1 diabetes mellitus is brought to the emergency department because of vomiting and abdominal pain for 2 days. He ran out of insulin 4 days ago. His pulse is 118/min, respirations are 30/min and deep, and blood pressure is 102/64 mm Hg. His mucous membranes are dry. Laboratory studies show glucose 486 mg/dL, sodium 131 mEq/L, potassium 3.1 mEq/L, chloride 94 mEq/L, bicarbonate 8 mEq/L, and β hydroxybutyrate 7.2 mmol/L. Arterial pH is 7.08. Urine output is 60 mL/h. An intravenous infusion of 0.9% saline is started at 1 L/h. Which of the following is the most appropriate next step in management? A. Intravenous potassium chloride before starting insulin B. Intravenous regular insulin infusion at 0.1 U/kg/h C. Intravenous sodium bicarbonate D. Switch the infusion to 5% dextrose in 0.45% saline E. Subcutaneous insulin glargine"
+  },
+  {
+   "id": "imaging-2026-0663",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증의 첫 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0663.md",
+   "snippet": "68세 남자가 이틀 전부터 기운이 없고 다리에 힘이 빠져 응급실에 왔다. 당뇨병성 만성 신장병으로 진료를 받아 왔고, 2주 전 고혈압 때문에 스피로노락톤이 추가되었다. 혈압 142/84 mmHg, 맥박 54회/분이다. 혈청 칼륨 7.4 mEq/L, 나트륨 136 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.2 mg/dL(평소 2.4), 포도당 168 mg/dL 이다. 다시 채혈해도 칼륨은 7.3 mEq/L 이다. 심전도",
+   "text": "신장·비뇨기 신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증의 첫 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf 68세 남자가 이틀 전부터 기운이 없고 다리에 힘이 빠져 응급실에 왔다. 당뇨병성 만성 신장병으로 진료를 받아 왔고, 2주 전 고혈압 때문에 스피로노락톤이 추가되었다. 혈압 142/84 mmHg, 맥박 54회/분이다. 혈청 칼륨 7.4 mEq/L, 나트륨 136 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.2 mg/dL(평소 2.4), 포도당 168 mg/dL 이다. 다시 채혈해도 칼륨은 7.3 mEq/L 이다. 심전도에서 뾰족한 T파와 넓어진 QRS(140 ms)가 보인다. 가장 먼저 시행할 처치는? A. 응급 혈액투석 B. 글루콘산칼슘 정주 C. 속효성 인슐린과 포도당 정주 D. 살부타몰 흡입 E. 소듐 지르코늄 사이클로실리케이트 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0662",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 혈소판 감소·용혈·신경 증상과 응급 치료",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0662.md",
+   "snippet": "A 34 year old woman is brought to the emergency department because of confusion and slurred speech for 6 hours. For 3 days, she has had fatigue and easy bruising. She takes no medications. Her temperature is 37.9°C, pulse is 104/min, and bl",
+   "text": "혈액·종양 혈액·종양 — 혈소판 감소·용혈·신경 증상과 응급 치료 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf A 34 year old woman is brought to the emergency department because of confusion and slurred speech for 6 hours. For 3 days, she has had fatigue and easy bruising. She takes no medications. Her temperature is 37.9°C, pulse is 104/min, and blood pressure is 128/80 mm Hg. She is disoriented to time, and there are petechiae on her legs. Laboratory studies show a hemoglobin concentration of 8.1 g/dL, platelet count of 14,000/mm³, reticulocyte count of 6%, lactate dehydrogenase of 1450 U/L, haptoglobin below detection, and creatinine of 1.3 mg/dL. Prothrombin time and activated partial thromboplastin time are within the reference ranges. The direct antiglobulin test is negative, and a peripheral blood smear shows many schistocytes. Which of the following is the most appropriate next step in management? A. Hemodialysis B. Cryoprecipitate infusion C. Plasma exchange and glucocorticoids D. Platelet transfusion E. Intravenous immune globulin"
+  },
+  {
+   "id": "imaging-2026-0661",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 간경변 환자의 토혈과 첫 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0661.md",
+   "snippet": "58세 남자가 2시간 전부터 선홍색 피를 두 차례 토해 응급실에 왔다. 알코올 간경변으로 진료를 받아 왔다. 혈압 96/60 mmHg, 맥박 112회/분, 체온 36.8°C 이다. 의식은 명료하고 공막에 황달이 있으며 복부 팽만과 이동둔탁음이 있다. 혈색소 8.6 g/dL, 혈소판 78,000/mm³, 프로트롬빈 시간 국제정상화비율 1.6, 총빌리루빈 3.1 mg/dL, 알부민 2.8 g/dL 이다. 정맥로 두 개를 확보하고 ",
+   "text": "소화기 소화기 — 간경변 환자의 토혈과 첫 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf 58세 남자가 2시간 전부터 선홍색 피를 두 차례 토해 응급실에 왔다. 알코올 간경변으로 진료를 받아 왔다. 혈압 96/60 mmHg, 맥박 112회/분, 체온 36.8°C 이다. 의식은 명료하고 공막에 황달이 있으며 복부 팽만과 이동둔탁음이 있다. 혈색소 8.6 g/dL, 혈소판 78,000/mm³, 프로트롬빈 시간 국제정상화비율 1.6, 총빌리루빈 3.1 mg/dL, 알부민 2.8 g/dL 이다. 정맥로 두 개를 확보하고 수액을 투여하기 시작하였다. 내시경 전에 추가로 시행할 처치로 가장 적절한 것은? A. 혈색소 10 g/dL 이 되도록 적혈구 수혈 B. 비선택적 베타차단제 경구 투여 C. 신선동결혈장으로 국제정상화비율 교정 D. 경정맥 간내 문맥전신 단락술 E. 옥트레오타이드 정주와 세프트리악손 투여"
+  },
+  {
+   "id": "imaging-2026-0660",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 한쪽 다리로 뻗치는 허리 통증과 요추 MRI",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0660.md",
+   "snippet": "A 55 year old woman comes to the clinic because of low back pain radiating down the back of her right leg to the lateral foot for 3 months. The pain began after she lifted a heavy box and is worse with sitting and coughing. Six weeks of non",
+   "text": "신경 신경 — 한쪽 다리로 뻗치는 허리 통증과 요추 MRI opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf A 55 year old woman comes to the clinic because of low back pain radiating down the back of her right leg to the lateral foot for 3 months. The pain began after she lifted a heavy box and is worse with sitting and coughing. Six weeks of nonsteroidal anti inflammatory drugs and physical therapy have not helped. She has no fever, weight loss, history of cancer, or urinary or bowel incontinence. Her temperature is 36.6°C. Straight leg raising on the right reproduces the leg pain at 40 degrees. Muscle strength is normal, and perianal sensation is intact. An axial T2 weighted MRI of the lumbar spine is shown. Which of the following is the most likely cause of this patient's symptoms? A. Posterolateral herniation of the nucleus pulposus B. Lumbar spinal stenosis from ligamentum flavum hypertrophy C. Spinal epidural abscess D. Vertebral body metastasis E. Facet joint synovial cyst"
+  },
+  {
+   "id": "imaging-2026-0659",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 발열·근육통 뒤 숨이 차는 중년 남성의 흉부 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0659.md",
+   "snippet": "55세 남자가 8일 전부터 열·근육통·마른기침이 있었고 3일 전부터 숨이 차서 응급실에 왔다. 증상이 시작되기 이틀 전 같이 사는 아내가 비슷한 증상을 앓았다. 냄새를 잘 맡지 못한다. 심장병 병력은 없다. 체온 38.4°C, 혈압 132/80 mmHg, 맥박 102회/분, 호흡 26회/분, 실내 공기에서 산소포화도 89 % 이다. 양쪽 아래 폐에서 미세 수포음이 들린다. 경정맥 확장과 다리 부종은 없다. 백혈구 5,200/m",
+   "text": "호흡기 호흡기 — 발열·근육통 뒤 숨이 차는 중년 남성의 흉부 X선 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf 55세 남자가 8일 전부터 열·근육통·마른기침이 있었고 3일 전부터 숨이 차서 응급실에 왔다. 증상이 시작되기 이틀 전 같이 사는 아내가 비슷한 증상을 앓았다. 냄새를 잘 맡지 못한다. 심장병 병력은 없다. 체온 38.4°C, 혈압 132/80 mmHg, 맥박 102회/분, 호흡 26회/분, 실내 공기에서 산소포화도 89 % 이다. 양쪽 아래 폐에서 미세 수포음이 들린다. 경정맥 확장과 다리 부종은 없다. 백혈구 5,200/mm³(림프구 9 %), C 반응단백 9.8 mg/dL 이다. 흉부 X선 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 폐렴구균 대엽성 폐렴 B. 활동성 폐결핵 C. 주폐포자충 폐렴 D. 코로나바이러스감염증 19 폐렴 E. 심인성 폐부종"
+  },
+  {
+   "id": "imaging-2026-0658",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 누르면 아픈 젊은 여성의 가슴 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0658.md",
+   "snippet": "A 40 year old woman comes to the emergency department because of sharp left sided chest pain for 3 days. The pain began after she helped a friend move furniture, worsens with deep breathing and twisting of the trunk, and does not change wit",
+   "text": "순환기 순환기 — 누르면 아픈 젊은 여성의 가슴 통증 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf A 40 year old woman comes to the emergency department because of sharp left sided chest pain for 3 days. The pain began after she helped a friend move furniture, worsens with deep breathing and twisting of the trunk, and does not change with sitting forward. She has no fever, dyspnea, leg swelling, or recent travel. She takes no medications. Her temperature is 36.7°C, pulse is 72/min, respirations are 16/min, and blood pressure is 118/74 mm Hg. Pressing on the left second to fourth costosternal junctions reproduces the pain exactly. Heart sounds are normal without a friction rub, and the lungs are clear. High sensitivity troponin I concentration is below the reference limit. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Inferior ST elevation myocardial infarction B. Pulmonary embolism C. Vasospastic angina D. Costochondritis E. Acute pericarditis"
+  },
+  {
+   "id": "imaging-2026-0657",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 수년 동안 천천히 커진 정강이의 갈색 반",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf",
+   "confidence": "high",
+   "date": "2026-11-14",
+   "path": "content/imaging/2026/imaging-2026-0657.md",
+   "snippet": "55세 남자가 오른쪽 정강이의 갈색 반점이 신경 쓰여 피부과에 왔다. 반점은 수년 전부터 있었고 아주 천천히 커졌다. 가렵거나 피가 난 적은 없다. 젊을 때 야외 작업을 오래 했다. 피부암 가족력은 없다. 병변은 지름 약 1.5 cm 의 편평한 연갈색 반으로 만져지지 않으며 궤양은 없다. 몸의 다른 곳에도 비슷한 작은 갈색 반이 몇 개 있다. 병변의 더모스코피 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 색소성 기저",
+   "text": "피부과 피부 — 수년 동안 천천히 커진 정강이의 갈색 반 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202111Z_일일영상_2026-11-15_9units_9q_83a7d3bf 55세 남자가 오른쪽 정강이의 갈색 반점이 신경 쓰여 피부과에 왔다. 반점은 수년 전부터 있었고 아주 천천히 커졌다. 가렵거나 피가 난 적은 없다. 젊을 때 야외 작업을 오래 했다. 피부암 가족력은 없다. 병변은 지름 약 1.5 cm 의 편평한 연갈색 반으로 만져지지 않으며 궤양은 없다. 몸의 다른 곳에도 비슷한 작은 갈색 반이 몇 개 있다. 병변의 더모스코피 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 색소성 기저세포암 B. 흑자 C. 악성흑색종 D. 지루각화증 E. 복합모반"
   },
   {
    "id": "cn.cardio.pvc-nsvt.structural-heart-risk-first",
