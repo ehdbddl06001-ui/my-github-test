@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-13",
+ "generated": "2026-11-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4703,
+  "total": 4705,
   "byType": {
+   "paper": 934,
    "concept": 165,
-   "paper": 932,
    "kmle": 1824,
    "imaging": 655,
    "usmle": 264,
@@ -18,7 +18,7 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 332,
+   "Cardiology": 333,
    "Nephrology": 249,
    "Infectious Disease": 229,
    "Pediatrics": 218,
@@ -30,8 +30,8 @@ window.MEDKOS_INDEX = {
    "Hematology-Oncology": 131,
    "Orthopedics": 127,
    "General Surgery": 122,
+   "Surgery": 121,
    "Endocrinology": 120,
-   "Surgery": 120,
    "Dermatology": 119,
    "Gastroenterology": 119,
    "Ophthalmology": 119,
@@ -79,13 +79,47 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1317,
    "high": 3335,
-   "medium": 1315,
    "low": 53
   },
   "tagCount": 5492
  },
  "docs": [
+  {
+   "id": "paper-2026-0934",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurosurgery. Spine",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0934_assessing_outcomes_and_recovery_following_anterior_cervical_.md",
+   "snippet": "Title Assessing outcomes and recovery following anterior cervical discectomy and fusion in patients aged 75 years and older: a propensity score matched review with 2 year follow up Authors Rezner Aidan C, Hannon Kathleen M, Tippins Nicholas",
+   "text": "Surgery scraped pubmed PubMed / Journal of neurosurgery. Spine Title Assessing outcomes and recovery following anterior cervical discectomy and fusion in patients aged 75 years and older: a propensity score matched review with 2 year follow up Authors Rezner Aidan C, Hannon Kathleen M, Tippins Nicholas P, Alentado Vincent J, Mobasser Jean Pierre, DePowell John J, Potts Eric A, Anokwute Miracle C Journal / DOI Journal of neurosurgery. Spine · DOI: 10.3171/2026.4.SPINE26195 · PMID: 43024881 https://pubmed.ncbi.nlm.nih.gov/43024881/ Abstract OBJECTIVE: The longitudinal efficacy of anterior cervical discectomy and fusion (ACDF) in the population of older individuals is debated. The authors aimed to determine the long term outcomes of patients aged ≥ 75 years compared to those of their younger peers. METHODS: A prospectively collected quality registry of patients undergoing elective ACDF was retrospectively reviewed. Cohorts included patients who were ≥ 75 years compared to < 75 years of age. Patient reported outcome measures (PROMs) were collected at baseline and 3, 12, and 24 months postoperatively. Demographics, surgical characteristics, complications, Eating Assessment Tool 10 (EAT 10) dysphagia rates, North American Spine Society satisfaction, and PROMs were compared between groups. All analyses were repeated following 1:1 propensity score matching by demographics, baseline PROMs, comorbidities, symptoms, and surgical factors. RESULTS: A total of 1155 patients met inclusion criteria with 1082 (94%) aged < 75 years and 73 (6%) ≥ 75 years. Prior to propensity score matching, the ≥ 75 year cohort had a lower mean BMI (29.0 ± 4.3 vs 30.9 ± 6.6 kg/m2, p = 0.028), fewer daily smokers (4.1% vs 16%, p = 0.005), fewer currently employed workers (5.5% vs 52%, p < 0.001), and lower rates of anxiety (15% vs 28%, p = 0.017) and depression (12% vs 23%, p = 0.041). The ≥ 75 year cohort had more osteoarthritis (47% vs 24%, p < 0.001) and coronary artery disease (23% vs 6.5%, p < 0.001). The ≥ 75 year cohort had significantly better neck pain visual analog scale, arm pain visual analog scale (AP VAS), Neck Disability Index, EuroQol 5 Dimension, and EuroQol visual analog scale baseline scores (all p < 0.05), but similar modified Japanese Orthopaedic Association scores (p = 0.2). By the 2 year follow up, all PROM scores were similar except for the AP VAS score, for which the ≥ 75 year cohort reported less arm pain (1.2 ± 2.5 vs 1.7 ± 2.7, p = 0.044). Propensity score matching yielded 138 patients, with 69 in each cohort. Residual demographic differences included the ≥ 75 year cohort having fewer employed workers (5.8% vs 42%, p < 0.001) and more individuals with a professional degree (25% vs 8.7%, p = 0.012). The propensity score matched cohorts achieved parity in all baseline, postoperative, and change from baseline PROM scores through the 2 year follow up. CONCLUSIONS: Patients aged ≥ 75 years experience benefit comparable to that of younger patients across outcome measures following propensity score matching. Age alone does not predict worsened outcomes in carefully selected older patients undergoing elective ACDF, and older patients may benefit from knowledge of comparable favorable outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0933",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0933_left_ventricular_unloading_with_self_expanding_pump_during_v.md",
+   "snippet": "Title Left Ventricular Unloading With Self Expanding Pump During Venoarterial Extracorporeal Membrane Oxygenation in Acute Myocardial Infarction Authors Cai Weiting, Ma Juan, Bai Nan, Xi Qianlan, Wang I Wen, Bai Ming, Lu Andong Journal / DO",
+   "text": "Cardiology scraped pubmed PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992) Title Left Ventricular Unloading With Self Expanding Pump During Venoarterial Extracorporeal Membrane Oxygenation in Acute Myocardial Infarction Authors Cai Weiting, Ma Juan, Bai Nan, Xi Qianlan, Wang I Wen, Bai Ming, Lu Andong Journal / DOI ASAIO journal (American Society for Artificial Internal Organs : 1992) · DOI: 10.1097/MAT.0000000000002920 · PMID: 43024931 https://pubmed.ncbi.nlm.nih.gov/43024931/ Abstract Increased left ventricular (LV) afterload and distension during venoarterial extracorporeal membrane oxygenation (VA ECMO) support may impede myocardial perfusion in acute myocardial infarction (AMI). Active LV unloading has been associated with improved outcomes. We report the first clinical use of a self expanding percutaneous ventricular assist device (NyokAssist; magAssist, Suzhou, China) for LV unloading during VA ECMO in a 56 year old man with AMI related cardiogenic shock (CS). Successful coronary angiography and percutaneous coronary intervention (PCI) of the culprit left circumflex (LCx) lesion were performed with NyokAssist + VA ECMO support. The patient was successfully weaned from VA ECMO on post procedure day 5 and remained on NyokAssist support alone for an additional 7 days before being transferred on VA ECMO to a heart transplant center for consideration of advanced heart failure therapies due to limited myocardial recovery. No device related complications were observed. This case demonstrates the technical feasibility of early implementation of a combined VA ECMO and NyokAssist support strategy, enabling LV unloading, temporary hemodynamic stabilization, end organ improvement, and VA ECMO decannulation in a patient with AMI related CS. As this report describes a single patient experience, further clinical studies are warranted to define the safety, efficacy, and potential role of the use of NyokAssist in combination with VA ECMO in the management of AMI related CS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "cn.cardio.pvc-nsvt.structural-heart-risk-first",
    "type": "concept",

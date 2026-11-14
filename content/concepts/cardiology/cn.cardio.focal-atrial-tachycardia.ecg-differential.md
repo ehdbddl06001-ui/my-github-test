@@ -148,6 +148,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13530901_Figure3
   reason: 체표 12유도 심전도가 아니라 심장내 전기생리 기록(CS·RV 전극) — 체표 유도에서 P파가 보이지 않아 요청한 소견(등전위선 사이 뚜렷한 P파)이 없다
+- asset: PMC-PMC13373045_Figure3
+  reason: 그림이 심장 내 전기생리 기록(전극도)과 3D 전기해부 지도라 체표 12유도의 P파 모양·등전위선 소견을 보여 주지 않는다 — 요청 소견과 다름
 ---
 
 ## 판단 — 왜 P파와 방실 차단 반응을 먼저 보나

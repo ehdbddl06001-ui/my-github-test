@@ -10115,7 +10115,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-13",
   "reviewStatus": "unreviewed",
-  "hash": "662ffacb256c1ec9",
+  "hash": "7b403010261ce94a",
   "summary": [
    "결론: 동리듬과 다른 모양의 뚜렷한 P파가 빠르게 이어지고, 방실 차단이 생겨도 심방 박동이 그대로면 국소 심방빈맥이다.",
    "시험 단서: P파 사이 등전위선(isoelectric line), RP > PR, 방실 차단 동반(특히 디곡신 복용), 갑작스런 시작·끝 또는 warm-up.",
@@ -72343,7 +72343,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-06",
   "reviewStatus": "unreviewed",
-  "hash": "851caca983aa2b99",
+  "hash": "972ba990dc224859",
   "summary": [
    "결론: 망막 아래 출혈·액체·신생혈관막이 있는 습성 황반변성은 유리체강 내 VEGF 억제제를 바로, 매달 시작한다.",
    "시험 단서: 노인 + 한눈 중심 흐림 + 줄이 휘어 보임(변형시, metamorphopsia) + 드루젠(drusen) + 망막 아래 출혈.",

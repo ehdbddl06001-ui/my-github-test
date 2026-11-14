@@ -178,6 +178,9 @@ figures_wanted:
   - macular degeneration
   - hemorrhage
   modality: FUNDUS
+figures_rejected:
+- asset: PMC-PMC12702091_Figure1
+  reason: 안저 사진이 흐리고 대비가 낮아 황반의 노란 융기 병변·출혈이 육안으로 뚜렷하지 않다. 캡션도 드루젠은 말하지 않고 nAMD 를 '강하게 의심'으로만 적는다 — 요청 소견(드루젠·망막 아래 출혈)을 보여 주지 못함
 ---
 
 ## 판단 — 왜 VEGF 억제제가 먼저인가
