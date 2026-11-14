@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "156ee95b96b7e84c6a73",
-   "version": 29,
-   "date": "2026-11-13",
+   "hash": "0002858681a11d297414",
+   "version": 30,
+   "date": "2026-11-14",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 54,
+   "pages": 56,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -125,13 +125,13 @@
     "cn.cardio.sinus-arrhythmia.ecg-recognition": {
      "title": "동부정맥 — 같은 P파, 서서히 변하는 PP",
      "page": 32,
-     "concept_hash": "9e874574883bd47a",
+     "concept_hash": "def75fe8afb94f87",
      "concept_version": 1
     },
     "cn.cardio.focal-atrial-tachycardia.ecg-differential": {
      "title": "국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다",
      "page": 33,
-     "concept_hash": "64b62a39725a8c49",
+     "concept_hash": "662ffacb256c1ec9",
      "concept_version": 1
     },
     "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
@@ -158,42 +158,48 @@
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
+    "cn.cardio.pvc-nsvt.structural-heart-risk-first": {
+     "title": "심실 기외수축·NSVT — 치료는 심장 구조가 정한다",
+     "page": 42,
+     "concept_hash": "81a38caebb849c22",
+     "concept_version": 1
+    },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 42,
+     "page": 44,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 45,
+     "page": 47,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 47,
+     "page": 49,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 50,
+     "page": 52,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 53,
+     "page": 55,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "8cb0950736cfc814565b930642667263",
-    "version": 29,
-    "uploaded": "2026-11-13T12:18:04+09:00"
+    "md5": "845ddc0aaeb88397dbe284f96bb17c32",
+    "version": 30,
+    "uploaded": "2026-11-14T11:54:21+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -224,11 +230,13 @@
     "MedKOS_학습서_순환기내과_v26_2026-11-10.pdf",
     "MedKOS_학습서_순환기내과_v27_2026-11-11.pdf",
     "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf",
-    "MedKOS_학습서_순환기내과_v29_2026-11-13.pdf"
+    "MedKOS_학습서_순환기내과_v29_2026-11-13.pdf",
+    "MedKOS_학습서_순환기내과_v30_2026-11-14.pdf"
    ],
    "changes": [
     "내용 수정: 동부정맥 — 같은 P파, 서서히 변하는 PP",
-    "새 단원: 국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다"
+    "내용 수정: 국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다",
+    "새 단원: 심실 기외수축·NSVT — 치료는 심장 구조가 정한다"
    ]
   },
   "피부과": {
@@ -466,9 +474,9 @@
    ]
   },
   "안과": {
-   "hash": "3fe479d510db66ecebc1",
-   "version": 16,
-   "date": "2026-11-07",
+   "hash": "3803c3f77da8eb815615",
+   "version": 17,
+   "date": "2026-11-14",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 15,
    "template_version": 11,
@@ -506,7 +514,7 @@
     "cn.ophth.normal-tension-glaucoma.visual-field": {
      "title": "정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인",
      "page": 11,
-     "concept_hash": "54b97ef726b644be",
+     "concept_hash": "1bc16a20f5b28885",
      "concept_version": 1
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
@@ -518,9 +526,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "6ab7789971868c9ff56fda2148a0bce6",
-    "version": 16,
-    "uploaded": "2026-11-07T10:59:14+09:00"
+    "md5": "b29d0ea7990676cb8bb7620911a298f2",
+    "version": 17,
+    "uploaded": "2026-11-14T11:54:21+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -538,11 +546,11 @@
     "MedKOS_학습서_안과_v13_2026-11-04.pdf",
     "MedKOS_학습서_안과_v14_2026-11-05.pdf",
     "MedKOS_학습서_안과_v15_2026-11-06.pdf",
-    "MedKOS_학습서_안과_v16_2026-11-07.pdf"
+    "MedKOS_학습서_안과_v16_2026-11-07.pdf",
+    "MedKOS_학습서_안과_v17_2026-11-14.pdf"
    ],
    "changes": [
-    "새 단원: 눈 대상포진 — 경구 항바이러스제와 세극등이 먼저",
-    "새 단원: 습성 황반변성 — 출혈·액체면 바로 VEGF 억제제"
+    "내용 수정: 정상안압 녹내장 — 시신경 모양이 보이면 시야로 확인"
    ]
   },
   "정형외과": {
@@ -1718,13 +1726,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "a122dbfbd01e49ddcfc76fe454a70e90",
+   "md5": "c92468cf58d04829c0e307a3436d9d77",
    "version": null,
-   "uploaded": "2026-11-13T12:18:04+09:00"
+   "uploaded": "2026-11-14T11:54:21+09:00"
   }
  },
- "updated": "2026-11-13"
+ "updated": "2026-11-14"
 }

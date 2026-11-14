@@ -1,14 +1,14 @@
 {
- "started": "2026-11-13T11:03:40+09:00",
+ "started": "2026-11-14T10:35:30+09:00",
  "built": [
-  "순환기내과"
+  "순환기내과",
+  "안과"
  ],
  "skipped": [
   "응급의학과",
   "정형외과",
   "피부과",
   "내분비내과",
-  "안과",
   "외과",
   "산부인과",
   "소아청소년과",
@@ -29,7 +29,8 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "순환기내과": []
+  "순환기내과": [],
+  "안과": []
  },
  "notes": {
   "순환기내과": [
@@ -37,7 +38,8 @@
    "배치 탐색 뒤에도 남은 빈 공간: 19쪽 오른쪽 단 아래가 비어 있다(빈 공간 56%)",
    "배치 탐색 뒤에도 남은 빈 공간: 29쪽 왼쪽 단 아래가 비어 있다(빈 공간 39%)",
    "배치 탐색 뒤에도 남은 빈 공간: 29쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)"
-  ]
+  ],
+  "안과": []
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -56,7 +58,7 @@
  ],
  "layout_trials": {
   "순환기내과": {
-   "tried": 595,
+   "tried": 615,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -111,19 +113,46 @@
     "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#shrink": 1.0,
     "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#pad": 0,
     "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#col": true,
-    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation": 11,
-    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#shrink": 1.0,
-    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#pad": 28,
-    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#col": false,
+    "u-cn-cardio-premature-ventricular-complex-ecg-recognition": 11,
+    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#shrink": 0.88,
+    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 0,
+    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#col": false,
     "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 0.76,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 0,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false
    }
+  },
+  "안과": {
+   "tried": 119,
+   "diagram_after_section": {
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#figscale:f1": 0.75,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 8,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
+    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp": 2,
+    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#shrink": 1.0,
+    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#pad": 0,
+    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#col": false,
+    "u-cn-ophth-crao-arteritic-workup#fig:f1": 7,
+    "u-cn-ophth-crao-arteritic-workup": 14,
+    "u-cn-ophth-crao-arteritic-workup#shrink": 1.0,
+    "u-cn-ophth-crao-arteritic-workup#pad": 0,
+    "u-cn-ophth-crao-arteritic-workup#col": true,
+    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 0.88,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 0,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#col": false,
+    "u-cn-ophth-normal-tension-glaucoma-visual-field": 14,
+    "u-cn-ophth-normal-tension-glaucoma-visual-field#shrink": 1.0,
+    "u-cn-ophth-normal-tension-glaucoma-visual-field#pad": 0,
+    "u-cn-ophth-normal-tension-glaucoma-visual-field#col": false
+   }
   }
  },
  "result": "ok",
- "finished": "2026-11-13T12:18:04+09:00",
+ "finished": "2026-11-14T11:54:21+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -132,17 +161,25 @@
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "8cb0950736cfc814565b930642667263",
-    "archive": "MedKOS_학습서_순환기내과_v29_2026-11-13.pdf"
+    "md5": "845ddc0aaeb88397dbe284f96bb17c32",
+    "archive": "MedKOS_학습서_순환기내과_v30_2026-11-14.pdf"
+   },
+   "안과": {
+    "file": "MedKOS_학습서_안과.pdf",
+    "status": "uploaded",
+    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
+    "kept_id": true,
+    "md5": "b29d0ea7990676cb8bb7620911a298f2",
+    "archive": "MedKOS_학습서_안과_v17_2026-11-14.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "a122dbfbd01e49ddcfc76fe454a70e90"
+    "md5": "c92468cf58d04829c0e307a3436d9d77"
    }
   },
-  "at": "2026-11-13T12:18:04+09:00"
+  "at": "2026-11-14T11:54:21+09:00"
  }
 }
