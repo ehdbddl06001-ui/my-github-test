@@ -1490,8 +1490,29 @@
    "date": "2026-11-15",
    "device": "pc-rrt1bx",
    "note": ""
+  },
+  "kmle-2026-1858": {
+   "id": "kmle-2026-1858",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Six Weeks of Aching Shoulders and Hips with Long Morning Stiffness in an Older Woman Who Cannot Comb Her Hair",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 1,
+   "chosenText": "프레드니솔론 1 mg/kg/일 경구",
+   "answer": 2,
+   "answerText": "프레드니솔론 15 mg/일 경구",
+   "coreNote": "",
+   "differ": "",
+   "decision": "고령의 양쪽 어깨·엉덩이 통증과 긴 아침 뻣뻣함, 염증 수치 상승, CK·근력 정상은 류마티스 다발근통이다. 거대세포동맥염 증상이 없으므로 고용량이 아닌 프레드니솔론 12.5~25 mg/일로 시작한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-15",
+   "device": "pc-rrt1bx",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-15T01:33:35.217Z"
+ "updated": "2026-11-15T01:37:55.271Z"
 }
