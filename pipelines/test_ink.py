@@ -184,6 +184,9 @@ class Wiring(unittest.TestCase):
         self.assertIn("x: b.classList.contains(\"ink-block\") ? (r.left - c0.left) / UI.s : 0", ink)   # 획은 덩이 왼쪽 위 기준
         self.assertIn(".ink-content.side{display:grid; grid-template-columns:820px 820px;", css)
         self.assertIn("async function askKey()", ink)
+        self.assertIn("even: t.even !== false", ink)                  # 기본은 고른 굵기(직선과 같은 선)
+        self.assertIn("if (UI.tool.even) return 0.5;", ink)
+        self.assertIn("const R = ERASE_R, from = UI.erasePrev || p;", ink)   # 보이는 지우개 원과 실제 지우는 범위가 같은 값
 
     def test_function_keeps_main_untouched(self):
         fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")
