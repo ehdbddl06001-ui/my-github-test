@@ -16,10 +16,11 @@ const SHELL = [
   "./", "./index.html", "./style.css", "./app.js", "./ink.js", "./learn.js", "./synckey.js", "./pwa.js", "./manifest.webmanifest",
   "./papers.html", "./papers-app.js", "./ailab.html", "./ailab-app.js",
   "./anatomy.html", "./anatomy.css", "./anatomy-app.js",
+  "./atlas3d.html", "./atlas3d.css", "./atlas3d-app.js",
   "./search.html", "./search-app.js", "./whatsnew.html", "./whatsnew-app.js",
   "./icons/icon-192.png", "./icons/icon-512.png",
 ];
-const DATA_RE = /\/(questions[^/]*\.js|search-index\.js|papers\.js|ailab\.js|anatomy-data\.js|diagrams-data\.js|concepts\.js)$/;
+const DATA_RE = /\/(questions[^/]*\.js|search-index\.js|papers\.js|ailab\.js|anatomy-data\.js|atlas3d-data\.js|diagrams-data\.js|concepts\.js)$/;
 const IMMUTABLE_RE = /\/(assets|icons)\//;
 
 self.addEventListener("install", (e) => {

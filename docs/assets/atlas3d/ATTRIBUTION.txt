@@ -1,0 +1,47 @@
+MedKOS 3D 아틀라스 — 모형 출처 · 라이선스 (학교 제공 자료 아님)
+파생 모형 파일(models/*.js)은 각 원본과 같은 라이선스로 공유한다.
+
+3D: BodyParts3D © The Database Center for Life Science, CC BY-SA 2.1 JP (학교 제공 자료 아님)
+Source: BodyParts3D 4.0 (isa tree, OBJ 99), https://dbarchive.biosciencedbc.jp/en/bodyparts3d/; added 2026-10-17: 33 BodyParts3D 4.3 part_of OBJ meshes (neck and thoracic nerves, external carotid branches; same body and coordinates); added 2026-10-18: 73 more (tongue, pharynx and nasal nerves, thyroid and parathyroid glands, laryngeal and thyroid vessels).
+License: Creative Commons Attribution-Share Alike 2.1 Japan (CC BY-SA 2.1 JP).
+Scenes: heart, suboccipital, orbit-forehead, bp3d-neck
+
+3D: Open 3D Anatomical Model for Education (Open3DModel, anatomytool.org) CC BY-SA 4.0 — based on Z-Anatomy/BodyParts3D · 학교 제공 자료 아님
+Source: Open 3D Anatomical Model for Education (Open3DModel), anatomytool.org / caskanatomy.info, release 2025-07 (upper-limb, hand, lower-limb GLB); added 2026-10-17: inguinal-canal, muscles-thorax-abdomen, spinal-cord GLB. Geometry only - the model textures (CC BY-NC-SA) are not used.
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+Scenes: o3d-gluteal-thigh, o3d-leg-foot, o3d-trunk, o3d-inguinal-femoral
+
+Changes (both sources): meshes selected per scene, simplified (vertex clustering), recentred and quantized; Korean names added (standard Korean anatomical terms). Derived model files are shared under the same licenses. 학교 제공 자료 아님.
+
+3D: About Medicine 여성 골반 · 샅 모형 by Rueben Schmidt (AnatomyTOOL, CC BY 4.0) · 학교 제공 자료 아님
+
+Source: "About Medicine: 3D model female pelvis, pelvic floor muscles, perineum - English labels" (schematic), by Rueben Schmidt (About Medicine), AnatomyTOOL item 59504, https://anatomytool.org/node/59504
+Credit requested by the source: by Rueben Schmidt, license: Creative Commons Attribution.
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Changes: uniformly scaled to approximate millimetres (schematic - not to scale), recentred and quantized; Korean names added (standard Korean anatomical terms). 학교 제공 자료 아님.
+
+3D: Wikimedia Commons (CC0) · 학교 제공 자료 아님
+
+Sources (Wikimedia Commons, CC0 1.0 public domain dedication):
+- File:Clitoris.stl (author: cyberweb) - schematic internal clitoris (scene commons-clitoris)
+- "We Are Beautiful - 426060-VLSN-1 - surface.stl" - real surface scan of the vulva (scene commons-vulva-scan)
+Changes: welded, connected components named (clitoris mesh), axes rotated (scan), simplified (vertex clustering), recentred and quantized; Korean names added. 학교 제공 자료 아님.
+
+3D: NIH Human Reference Atlas (HuBMAP) 3D Reference Organs, CC BY 4.0 · 학교 제공 자료 아님
+
+Source: NIH Human Reference Atlas (HRA, HuBMAP) 3D Reference Organs, https://cdn.humanatlas.io/digital-objects/ref-organ/ (VH male/female, SBU male large intestine; added 2026-10-17: VH male liver and urethra, VH female ligaments of uterus and ovaries, vagina, uterine vasculature, trachea, left mammary gland).
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Changes: meshes selected per scene, spongy-bone duplicates dropped, single meshes split into connected components where noted (menisci, seminal vesicles), left/right labels corrected by position where noted (vas deferens, round ligaments of uterus), simplified (vertex clustering), recentred and quantized; Korean names added (standard Korean anatomical terms).
+
+3D: "Maastricht - 3D model female pelvis" (AnatomyTOOL) by Jill Hikspoors, MUMC+, Yi Wu, ChongqingArmyMedU, Greet Mommen, MUMC+ et al, CC BY-NC-SA 4.0 (비영리) · 학교 제공 자료 아님
+
+Source: "Maastricht - 3D model female pelvis" at AnatomyTOOL.org by Jill Hikspoors, MUMC+, Yi Wu, ChongqingArmyMedU, Greet Mommen, MUMC+ et al (Wout Lamers, MUMC+), https://anatomytool.org/content/maastricht-3d-model-female-pelvis ; viewer file https://fhmloisrv1501.unimaas.nl/anatomie/3dviewer/?model=femalepelvis ; paper: Wu Y et al, Clin Anat 2020;33:275, https://doi.org/10.1002/ca.23508
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) - non-commercial use only; the derived model file (models/maastricht-female-pelvis.js) is shared under the same license.
+Changes: front/back axis flipped to +Z anterior, decimetres -> millimetres, vestibular bulb split into left/right by its two connected pieces, simplified (vertex clustering), recentred and quantized; Korean names added. 학교 제공 자료 아님.
+
+3D: BodyParts3D © The Database Center for Life Science (CC BY-SA 2.1 JP) · Z-Anatomy 수정본 (Z-anatomy.com, CC BY-SA 4.0) · 학교 제공 자료 아님
+
+Source: Z-Anatomy (Z-anatomy.com, https://github.com/Z-Anatomy/The-blend), Blender file of human anatomy derived from BodyParts3D (© The Database Center for Life Science, https://dbarchive.biosciencedbc.jp/en/bodyparts3d/).
+License: Z-Anatomy - Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); BodyParts3D - Creative Commons Attribution-Share Alike 2.1 Japan (CC BY-SA 2.1 JP).
+Changes: objects selected per scene, curves (nerves · vessels) turned into tubes, meshes simplified, recentred and quantized; Korean names added (standard Korean anatomical terms). Derived model files (models/zanat-*.js) are shared under CC BY-SA 4.0. 학교 제공 자료 아님.
+
