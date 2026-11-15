@@ -49,7 +49,9 @@ class Core(unittest.TestCase):
             "const a={v:1,ph:900,s:{a1:{d:[1,2,3]},x:{d:[1,1,1]}},g:{},u:'2026-01-01'};"
             "const b={v:1,ph:1500,s:{b1:{d:[4,5,6]},x:{d:[1,1,1]}},g:{a1:'2026-02-01'},u:'2026-02-01'};"
             "const m=I.mergeDocs(a,b);out.s=Object.keys(m.s).sort();out.g=Object.keys(m.g);out.ph=m.ph;out.u=m.u;"
-            "out.comm=I.sameDoc(I.mergeDocs(b,a),m);out.idem=I.sameDoc(I.mergeDocs(m,m),m)"))
+            "out.comm=I.sameDoc(I.mergeDocs(b,a),m);out.idem=I.sameDoc(I.mergeDocs(m,m),m);"
+            "out.c=[I.mergeDocs(Object.assign({},a,{c:3}),b).c,I.mergeDocs(a,Object.assign({},b,{c:1})).c,I.mergeDocs(a,b).c]"))
+        self.assertEqual(out["c"], [3, 1, None])         # 내가 고른 보기 — 새 쪽 것, 없으면 옛 쪽 것
         self.assertEqual(out["s"], ["b1", "x"])          # a1 은 b 가 지웠다 — a 에 남아 있어도 되살아나지 않는다
         self.assertEqual(out["g"], ["a1"])
         self.assertEqual(out["ph"], 1500)
@@ -89,11 +91,12 @@ class Endpoint(unittest.TestCase):
     def test_only_ciphertext_and_valid_targets_are_accepted(self):
         out = run_node(FN % (
             "out.clean=[!!M.cleanEnvelope(envOk),M.cleanEnvelope({v:1,s:{}}),M.cleanEnvelope({v:1,alg:'A256GCM',iv:'<b>',ct:envOk.ct})];"
-            "out.target=[M.validTarget('kmle','kmle-2026-1859'),M.validTarget('kmle','../x'),M.validTarget('zzz','a')];"
+            "out.target=[M.validTarget('kmle','kmle-2026-1859'),M.validTarget('kmle','../x'),M.validTarget('zzz','a'),"
+            "M.validTarget('concept','cn.allergy.anaphylaxis.im-epinephrine-first'),M.validTarget('variant','cn.a.b--v1'),M.validTarget('variant','cn.a.b#v1')];"
             "r=await M.onRequestPost({request:req('POST','',{exam:'kmle',id:'a',env:{v:1,s:{x:1}}},'secret'),env:ENV});out.plain=r.status;"
             "r=await M.onRequestPost({request:req('POST','',{exam:'kmle',id:'a',env:envOk},'nope'),env:ENV});out.auth=r.status"), module=True)
         self.assertEqual(out["clean"], [True, None, None])
-        self.assertEqual(out["target"], [True, False, False])
+        self.assertEqual(out["target"], [True, False, False, True, True, False])
         self.assertEqual(out["plain"], 400)              # 잠그지 않은 필기는 저장소에 들어가지 않는다
         self.assertEqual(out["auth"], 401)
 
@@ -155,6 +158,20 @@ class Wiring(unittest.TestCase):
         self.assertIn("env: await seal(rec.doc, pass())", posts[0])
         self.assertNotIn("doc:", posts[0])               # 잠그지 않은 필기를 보내지 않는다
         self.assertIn("if (!canSync()) return \"local\";", ink)   # 키 · 서버가 없으면 기기에만
+
+    def test_every_question_and_concept_note_can_be_written_on(self):
+        # 2판(2026-11-15) — 오답만이 아니라 푸는 문항 전부 · 개념 정리본(학습서의 단위)에도 쓴다.
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        learn = (DOCS / "learn.js").read_text(encoding="utf-8")
+        fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")
+        self.assertIn('getElementById("quitBtn")', ink)                 # 문항 화면에 「펜으로 풀기」를 끼우는 자리
+        self.assertIn('querySelectorAll("#options .opt")[i]', ink)      # 채점은 앱의 보기 단추가 한다(기록이 한 곳에서만)
+        self.assertIn("const veiled = (sid) => UI.hideOld && !UI.mine[sid];", ink)   # 푸는 중엔 전에 쓴 필기를 가린다
+        self.assertIn("MEDKOS_INK.conceptButton(box, c.id)", learn)
+        self.assertIn("load, concept, STATUS, flagsOf, setFlag };", learn)
+        self.assertIn('L.setFlag(UI.st.q, "want_note"', ink)            # 맞힌 문항도 정리본 큐로
+        self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept"])', fn)
+        self.assertIn('replace(/#/g, "--")', ink)                       # 변형 문항 id 의 # 은 파일 이름에 못 쓴다
 
     def test_function_keeps_main_untouched(self):
         fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")

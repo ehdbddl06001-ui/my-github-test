@@ -1,7 +1,12 @@
 /* MedKOS 오답노트 필기 — 펜슬로 쓰고, 기기끼리 맞춘다 (2026-11-15)
 
    왜: 오답노트는 자동으로 쌓이지만 「왜 틀렸나」를 손으로 풀어 쓰는 자리가 없었다(글 메모 한 줄뿐).
-   오답 하나마다 필기장을 연다 — 위에 문항 · 내 답 · 정답 · 해설(접힘), 아래에 줄 여백. 그 위 어디에든 쓴다.
+   문항 하나마다 필기장을 연다 — 위에 문항 · 내 답 · 정답 · 해설(접힘), 아래에 줄 여백. 그 위 어디에든 쓴다.
+   여는 곳 넷(2판 — 「오답만이 아니라 전부 · 푸는 것도 패드로 · 학습서도」):
+     ① 오답노트의 「✍ 필기」  ② 문항 화면의 「✍ 펜으로 풀기」 — 필기장 안에서 보기를 톡 쳐 채점하고 다음 문항으로 넘어간다
+        (채점 · 학습 기록 · 오답노트 저장은 앱이 그대로 한다. 전에 쓴 필기는 채점 뒤에 보인다 — 답을 미리 알려 주지 않게)
+     ③ 개념 정리본(학습서의 단위)의 「✍ 이 정리본에 필기」  ④ 첫 화면의 「✍ 필기 모음」 — 필기가 있는 것 전부.
+   맞힌 문항도 「★ 정리본에 넣기」를 누르면 표시(want_note)가 남아 개념 복습 · 정리본 큐에 들어간다(learn.js).
 
    - 펜슬 = 쓰기 · 손가락 = 화면 넘기기(「손가락 쓰기」를 켜면 손가락도 쓴다 — 그때는 두 손가락으로 넘긴다).
    - 필기는 획(벡터)으로 저장한다. 종이 폭을 820 으로 고정해 놓고 화면에 맞춰 통째로 늘이므로 기기가 달라도 같은 자리에 보인다.
@@ -44,11 +49,11 @@ var MEDKOS_INK = (function () {
     }
     return out;
   }
-  function emptyDoc() { return { v: 1, ph: PAPER0, s: {}, g: {}, u: "" }; }
+  function emptyDoc() { return { v: 1, ph: PAPER0, c: null, s: {}, g: {}, u: "" }; }      // c = 내가 고른 보기(맞힌 문항도 다시 열면 보이게)
   function normDoc(d) {
     const o = d && typeof d === "object" ? d : {};
     return {
-      v: 1, ph: Math.max(PAPER0, Math.min(60000, Number(o.ph) || PAPER0)),
+      v: 1, ph: Math.max(PAPER0, Math.min(60000, Number(o.ph) || PAPER0)), c: Number.isInteger(o.c) ? o.c : null,
       s: o.s && typeof o.s === "object" ? o.s : {}, g: o.g && typeof o.g === "object" ? o.g : {}, u: String(o.u || ""),
     };
   }
@@ -59,7 +64,8 @@ var MEDKOS_INK = (function () {
     Object.keys(b.g).forEach((k) => { if (!g[k] || g[k] < b.g[k]) g[k] = b.g[k]; });
     const s = {};
     [a.s, b.s].forEach((m) => Object.keys(m).forEach((k) => { if (!g[k] && !s[k]) s[k] = m[k]; }));
-    return { v: 1, ph: Math.max(a.ph, b.ph), s, g, u: a.u > b.u ? a.u : b.u };
+    const nw = a.u > b.u ? a : b, od = nw === a ? b : a;
+    return { v: 1, ph: Math.max(a.ph, b.ph), c: nw.c != null ? nw.c : od.c, s, g, u: nw.u };
   }
   function sameDoc(a, b) {
     const ka = Object.keys(a.s).sort().join(","), kb = Object.keys(b.s).sort().join(",");
@@ -140,6 +146,9 @@ var MEDKOS_INK = (function () {
     }));
   }
   const keyOf = (exam, id) => exam + ":" + id;
+  const EXAMS = ["kmle", "usmle", "imaging", "variant", "concept"];      // 문항 넷 + 개념 정리본
+  const fid = (id) => String(id).replace(/#/g, "--");                     // 서버 파일 이름(변형 문항 id 의 # → --)
+  const unfid = (exam, f) => (exam === "variant" ? String(f).replace(/--(v\d+)$/, "#$1") : f);
   async function loadRec(exam, id) {
     const k = keyOf(exam, id);
     const r = (await tx("readonly", (s) => s.get(k))) || mem[k];
@@ -167,7 +176,7 @@ var MEDKOS_INK = (function () {
   function noServer(status) { return status === 404 || status === 405 || status === 501; }
 
   async function pull(exam, id) {
-    const r = await fetch(`${NET.url}?exam=${encodeURIComponent(exam)}&id=${encodeURIComponent(id)}`, { headers: headers() });
+    const r = await fetch(`${NET.url}?exam=${encodeURIComponent(exam)}&id=${encodeURIComponent(fid(id))}`, { headers: headers() });
     const ct = r.headers.get("content-type") || "";
     if (r.status === 404 && ct.indexOf("json") >= 0) { NET.available = true; return null; }     // 서버는 있고 이 문항 필기가 없다
     if (noServer(r.status)) { NET.available = false; return null; }
@@ -197,7 +206,7 @@ var MEDKOS_INK = (function () {
         const sent = JSON.stringify(rec.doc);
         const r = await fetch(NET.url, {
           method: "POST", headers: headers(),
-          body: JSON.stringify({ exam: rec.exam, id: rec.id, sha: rec.sha, env: await seal(rec.doc, pass()), device: device() }),
+          body: JSON.stringify({ exam: rec.exam, id: fid(rec.id), sha: rec.sha, env: await seal(rec.doc, pass()), device: device() }),
         });
         if (noServer(r.status)) { NET.available = false; return "local"; }
         if (r.status === 409) continue;                                   // 다른 기기가 먼저 올렸다 → 다시 받아 합친다
@@ -206,7 +215,7 @@ var MEDKOS_INK = (function () {
         rec.sha = out.sha || rec.sha;
         rec.dirty = JSON.stringify(rec.doc) !== sent;                     // 올리는 사이에 더 썼으면 아직 남았다
         await saveRec(rec);
-        (NET.remote[rec.exam] = NET.remote[rec.exam] || {})[rec.id] = rec.sha;
+        (NET.remote[rec.exam] = NET.remote[rec.exam] || {})[fid(rec.id)] = rec.sha;
         return "ok";
       }
       return "error";
@@ -242,7 +251,7 @@ var MEDKOS_INK = (function () {
   /* ───────── 화면 ───────── */
   const UI = {
     el: null, rec: null, rt: {}, tops: {}, tiles: [], s: 1, q: 1, zoom: 1, sheetH: 0,
-    tool: loadTool(), undo: [], saveT: null, pushT: null, raf: 0, lastPen: 0, act: null, dirtyTiles: null,
+    tool: loadTool(), undo: [], mine: {}, st: null, saveT: null, pushT: null, raf: 0, lastPen: 0, act: null, dirtyTiles: null,
   };
   function loadTool() {
     let t = {};
@@ -254,7 +263,7 @@ var MEDKOS_INK = (function () {
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const g = (name) => { try { return (0, eval)("typeof " + name + " !== 'undefined' ? " + name + " : undefined"); } catch (e) { return undefined; } };
   function findQuestion(id) {
-    const lists = ["KMLE", "USMLE", "IMAGING"].map(g).filter(Array.isArray);
+    const lists = ["KMLE", "USMLE", "IMAGING", "VARIANT"].map(g).filter(Array.isArray);
     for (const l of lists) for (const q of l) if (q && q.id === id) return q;
     return null;
   }
@@ -277,9 +286,20 @@ var MEDKOS_INK = (function () {
         .map((k) => `<div class="expl-item"><span class="k">${k}</span>${typeof fmt === "function" ? fmt(ex[k]) : esc(ex[k])}</div>`).join("");
     } catch (e) { return ""; }
   }
-  function sheetHtml(exam, id, q, w) {
+  function examOf(q) {
+    if (!q || !q.id) return "";
+    if (q.isVariant) return "variant";
+    const f = g("wrongExamOf");
+    let e = q.src || "";
+    try { if (typeof f === "function") e = f(q); } catch (_) { /* 아래 검사 */ }
+    return EXAMS.indexOf(e) >= 0 && e !== "concept" ? e : "";
+  }
+  // 문항 종이. solve = 푸는 중(정답 · 해설 · 옛 메모를 싣지 않고, 보기는 톡 쳐서 고르는 단추)
+  function questionHtml(st) {
+    const id = st.id, q = st.q, w = st.w, solve = st.solve;
     const lab = labels(q, w);
-    const head = `<div class="ink-h">#${esc(id)}<span>${esc((q && q.subject) || (w && w.subject) || "")}${w && w.date ? " · 틀린 날 " + esc(w.date) : ""}</span></div>`;
+    const mineIdx = Number.isInteger(st.chosen) ? st.chosen : null;
+    const head = `<div class="ink-h">#${esc(id)}<span>${esc((q && q.subject) || (w && w.subject) || "")}${!solve && w && w.date ? " · 틀린 날 " + esc(w.date) : ""}</span></div>`;
     let qb = head, ob = "", eb = "";
     if (q) {
       const fig = g("figureHtml"), data = g("dataBox");
@@ -287,21 +307,74 @@ var MEDKOS_INK = (function () {
       try { qb += (typeof fig === "function" ? fig(q) : "") + (typeof data === "function" ? data(q) : ""); } catch (e) { /* 그림 없이 */ }
       qb += (q.question || "").trim() ? `<div class="ink-q">Q. ${esc(q.question.trim())}</div>` : "";
       ob = (q.options || []).map((o, i) => {
-        const mine = w && w.chosen === i, ans = q.answer - 1 === i;
-        return `<div class="ink-opt${ans ? " ans" : ""}${mine && !ans ? " mine" : ""}"><span class="num">${lab[i] || i + 1}</span><span class="t">${esc(o)}</span>`
+        const body = `<span class="num">${lab[i] || i + 1}</span><span class="t">${esc(o)}</span>`;
+        if (solve) return `<button type="button" class="ink-opt ink-pick" data-pick="${i}">${body}</button>`;
+        const mine = mineIdx === i, ans = q.answer - 1 === i;
+        return `<div class="ink-opt${ans ? " ans" : ""}${mine && !ans ? " mine" : ""}">${body}`
           + `${ans ? '<span class="tg">정답</span>' : ""}${mine ? '<span class="tg">내 선택</span>' : ""}</div>`;
       }).join("");
-      eb = explHtml(q);
+      if (solve) ob += `<div class="ink-hint">보기를 톡 치면 채점됩니다 · 보기 위에 긋는 것은 필기로 남습니다</div>`;
+      else eb = explHtml(q);
     } else if (w) {                                   // 문항 은행에서 빠진 옛 오답 — 오답노트에 남은 것만 보인다
       qb += `<div class="ink-q">Q. ${esc(w.question || "")}</div>`;
       ob = `<div class="ink-opt mine"><span class="num">${lab[w.chosen] || ""}</span><span class="t">${esc(w.chosenText || "")}</span><span class="tg">내 선택</span></div>`
         + `<div class="ink-opt ans"><span class="num">${lab[w.answer] || ""}</span><span class="t">${esc(w.answerText || "")}</span><span class="tg">정답</span></div>`;
       eb = w.coreNote ? `<div class="expl-item"><span class="k">핵심</span>${esc(w.coreNote)}</div>` : "";
-    }
-    if (w && w.note) ob += `<div class="ink-memo">✍ ${esc(w.note)}</div>`;
+    } else qb += `<div class="ink-q">문항을 찾지 못했습니다 — 필기만 보입니다.</div>`;
+    if (!solve && w && w.note) ob += `<div class="ink-memo">✍ ${esc(w.note)}</div>`;
     return `<div class="ink-block" data-b="q">${qb}</div><div class="ink-block" data-b="o">${ob}</div>`
       + (eb ? `<details class="ink-block ink-ex" data-b="e"><summary>해설 펼치기</summary><div class="ink-exb explanation">${eb}</div></details>` : "")
-      + `<div class="ink-block ink-paper" data-b="p"><span class="ink-ph">여기부터 내 필기 — 왜 틀렸나 · 다음에 볼 단서</span></div>`;
+      + PAPER_HTML;
+  }
+  const PAPER_HTML = `<div class="ink-block ink-paper" data-b="p"><span class="ink-ph">여기부터 내 필기 — 왜 틀렸나 · 헷갈린 점 · 다음에 볼 단서</span></div>`;
+  // 개념 정리본 종이 — 앱의 정리본 그리기(learn.js)를 그대로 쓰고, 접힌 절을 모두 편다. 절마다 덩이 이름을 붙여
+  // 정리본이 고쳐져 절이 늘거나 줄어도 다른 절의 필기가 밀리지 않게 한다(이름이 사라진 절의 필기는 맨 위 덩이로 간다).
+  function conceptInto(st) {
+    UI.content.innerHTML = `<div class="ink-cn"></div>` + PAPER_HTML;
+    const box = UI.content.querySelector(".ink-cn"), L = g("LEARN");
+    try { if (L && typeof L.renderConcept === "function") L.renderConcept(box, st.id, null, null); } catch (e) { /* 아래 안내 */ }
+    const art = box.querySelector("article");
+    if (!art) { box.innerHTML = `<div class="ink-q" data-b="c:none">정리본을 찾지 못했습니다(${esc(st.id)}) — 필기만 보입니다.</div>`; return; }
+    art.querySelectorAll("details").forEach((d) => { d.open = true; });
+    const seen = {};
+    [].forEach.call(art.children, (el) => {
+      const src = el.querySelector(":scope > summary") || el.querySelector(".cn-title, .cn-sec") || el;
+      let k = "c:" + (src.textContent || el.className || "x").replace(/\s*\(\d+\)\s*$/, "").replace(/\s+/g, " ").trim().slice(0, 24);
+      while (seen[k]) k += "_";
+      seen[k] = 1;
+      el.setAttribute("data-b", k);
+    });
+  }
+  function renderSheet(openExpl) {
+    const st = UI.st;
+    if (st.kind === "concept") conceptInto(st); else UI.content.innerHTML = questionHtml(st);
+    UI.content.querySelectorAll("img").forEach((im) => im.addEventListener("load", () => layout(false)));
+    const d = UI.content.querySelector("details.ink-ex");
+    if (d) {
+      d.addEventListener("toggle", () => { d.querySelector("summary").textContent = d.open ? "해설 접기" : "해설 펼치기"; layout(false); UI.tiles.forEach((t) => { t.stale = true; }); ensureTiles(); });
+      if (openExpl) d.open = true;
+    }
+    paintBar();
+    layout(false);
+    UI.tiles.forEach((t) => { t.stale = true; });
+    ensureTiles();
+  }
+  // 푸는 중에 보기를 골랐다 — 채점은 앱의 문항 화면이 한다(학습 기록 · 오답노트 저장이 한 곳에서만 일어나게).
+  function pick(i) {
+    const st = UI.st;
+    if (!st || !st.solve || !UI.rec) return;
+    const deck = g("deck"), pos = g("pos");
+    const cur = Array.isArray(deck) ? deck[pos] : null, btn = document.querySelectorAll("#options .opt")[i];
+    if (!cur || cur.id !== UI.rec.id || !btn) return status("문항 화면과 어긋났습니다 — 닫고 다시 여세요", "bad");
+    btn.click();
+    st.solve = false; st.chosen = i; st.w = wrongEntry(st.exam, st.id);
+    UI.rec.doc.c = i;
+    UI.hideOld = false;
+    if (countStrokes(UI.rec.doc)) touched();
+    renderSheet(true);
+    const ob = UI.content.querySelector('[data-b="o"]');
+    if (ob) UI.scroll.scrollTop = Math.max(0, (UI.tops.o || 0) * UI.s - 60);
+    status(i === cur.answer - 1 ? "정답 — 헷갈렸으면 ★ 정리본에 넣기" : "오답 — 오답노트에 저장됨", i === cur.answer - 1 ? "ok" : "bad");
   }
 
   function build() {
@@ -309,7 +382,7 @@ var MEDKOS_INK = (function () {
     const el = document.createElement("div");
     el.id = "inkOverlay"; el.className = "ink-ov hidden";
     el.innerHTML = `<div class="ink-bar">
-        <button data-a="close" class="ink-x">← 오답노트</button>
+        <button data-a="close" class="ink-x">← 닫기</button>
         <span class="ink-tools">
           ${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}
           <button data-a="width" title="굵기">굵기</button>
@@ -319,6 +392,8 @@ var MEDKOS_INK = (function () {
           <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">☝ 손가락 쓰기</button>
           <button data-a="zout" aria-label="작게">−</button><button data-a="zin" aria-label="크게">＋</button>
           <button data-a="more">여백 ＋</button>
+          <button data-a="flag" title="맞혔어도 헷갈린 문항 — 개념 복습 · 정리본 큐에 넣는다">★ 정리본에 넣기</button>
+          <button data-a="next" class="primary">다음 문항 →</button>
         </span>
         <span class="ink-st" id="inkStatus"></span>
       </div>
@@ -328,6 +403,7 @@ var MEDKOS_INK = (function () {
     UI.scroll = el.querySelector(".ink-scroll"); UI.fit = el.querySelector(".ink-fit"); UI.sheet = el.querySelector(".ink-sheet");
     UI.content = el.querySelector(".ink-content"); UI.layer = el.querySelector(".ink-layer");
     el.querySelector(".ink-bar").addEventListener("click", onBar);
+    UI.content.addEventListener("click", (e) => { const b = e.target.closest("[data-pick]"); if (b) pick(Number(b.getAttribute("data-pick"))); });
     UI.scroll.addEventListener("scroll", () => schedule(ensureTiles), { passive: true });
     // 화면 폭이 바뀌면(돌리기 · 창 크기) 종이를 다시 맞춘다. 스크롤의 조각 그리기와 예약 칸을 따로 쓴다(서로 취소하지 않게).
     const refit = () => {
@@ -351,6 +427,10 @@ var MEDKOS_INK = (function () {
     UI.el.querySelector("[data-a=width]").textContent = ["가늘게", "보통", "굵게"][WIDTHS.indexOf(t.width)] || "보통";
     UI.el.querySelector("[data-a=undo]").disabled = !UI.undo.length;
     UI.layer.style.touchAction = t.finger ? "none" : "pan-x pan-y";
+    const st = UI.st || {}, L = g("LEARN"), fb = UI.el.querySelector("[data-a=flag]"), nb = UI.el.querySelector("[data-a=next]");
+    const canFlag = st.kind === "q" && !st.solve && st.q && !st.q.isVariant && L && typeof L.setFlag === "function";
+    fb.hidden = !canFlag; nb.hidden = !(st.quiz && !st.solve);
+    if (canFlag) fb.classList.toggle("on", !!L.flagsOf(st.q).want_note);
   }
   function onBar(e) {
     const b = e.target.closest("button[data-a]");
@@ -365,6 +445,8 @@ var MEDKOS_INK = (function () {
     else if (a === "undo") undo();
     else if (a === "zin" || a === "zout") { UI.zoom = Math.max(1, Math.min(2.5, UI.zoom + (a === "zin" ? 0.25 : -0.25))); layout(true); }
     else if (a === "more") { UI.rec.doc.ph += PAPER_STEP; touched(); layout(false); }
+    else if (a === "next") return next();
+    else if (a === "flag") { const L = g("LEARN"); L.setFlag(UI.st.q, "want_note", !L.flagsOf(UI.st.q).want_note); }
     saveTool(); paintBar();
   }
 
@@ -379,8 +461,13 @@ var MEDKOS_INK = (function () {
     const q = Math.min(2.5, Math.max(1, UI.s * (window.devicePixelRatio || 1)));
     if (Math.abs(q - UI.q) > 0.01) { UI.q = q; resetTiles = true; }
     UI.sheet.style.transform = `scale(${UI.s})`;
-    UI.tops = {};
-    UI.content.querySelectorAll(".ink-block").forEach((b) => { UI.tops[b.getAttribute("data-b")] = b.offsetTop; });
+    UI.tops = {}; UI.first = "";
+    const c0 = UI.content.getBoundingClientRect().top;
+    UI.content.querySelectorAll("[data-b]").forEach((b) => {
+      const k = b.getAttribute("data-b");
+      UI.tops[k] = (b.getBoundingClientRect().top - c0) / UI.s;
+      if (!UI.first) UI.first = k;
+    });
     UI.sheetH = UI.content.offsetHeight;
     UI.fit.style.width = Math.ceil(W * UI.s) + "px";
     UI.fit.style.height = Math.ceil(UI.sheetH * UI.s) + "px";
@@ -408,8 +495,9 @@ var MEDKOS_INK = (function () {
       if (t.stale) paintTile(i);
     });
   }
+  const topOf = (b) => (b in UI.tops ? UI.tops[b] : UI.tops[UI.first] || 0);      // 이름이 사라진 덩이의 필기는 맨 위 덩이로
+  const veiled = (sid) => UI.hideOld && !UI.mine[sid];                              // 푸는 중 — 전에 쓴 필기는 채점 뒤에
   function hiddenBlock(b) {
-    if (!(b in UI.tops)) return true;
     if (b !== "e") return false;
     const d = UI.content.querySelector("details.ink-ex");
     return !d || !d.open;
@@ -424,8 +512,8 @@ var MEDKOS_INK = (function () {
     const y0 = i * TILE, y1 = y0 + TILE;
     Object.keys(UI.rt).forEach((sid) => {
       const st = UI.rt[sid];
-      if (hiddenBlock(st.b)) return;
-      const top = UI.tops[st.b];
+      if (hiddenBlock(st.b) || veiled(sid)) return;
+      const top = topOf(st.b);
       if (top + st.y1 + 12 < y0 || top + st.y0 - 12 > y1) return;
       drawStroke(ctx, st, top - y0);
     });
@@ -465,8 +553,7 @@ var MEDKOS_INK = (function () {
     Object.keys(UI.rec.doc.s).forEach((sid) => { UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]); });
   }
   function staleFor(st) {
-    if (!(st.b in UI.tops)) return;
-    const top = UI.tops[st.b];
+    const top = topOf(st.b);
     for (let i = Math.max(0, Math.floor((top + st.y0 - 12) / TILE)); i <= Math.floor((top + st.y1 + 12) / TILE) && i < UI.tiles.length; i++) UI.tiles[i].stale = true;
   }
 
@@ -531,14 +618,23 @@ var MEDKOS_INK = (function () {
         L.style.pointerEvents = "none";
         const under = document.elementFromPoint(e.clientX, e.clientY);
         L.style.pointerEvents = "";
-        const hit = under && under.closest && under.closest("summary,a,button");
-        if (hit && UI.content.contains(hit)) { ensureStale(a); hit.click(); return; }
+        const hit = under && under.closest && under.closest(TAPPABLE);
+        if (hit && UI.content.contains(hit)) { ensureStale(a); UI.tapAt = Date.now(); hit.click(); return; }
       }
       commitStroke(a);
     };
     L.addEventListener("pointerup", end);
     L.addEventListener("pointercancel", end);
+    L.addEventListener("click", (e) => {                         // 손가락으로 톡 — 층이 가로채므로 아래 것을 대신 누른다
+      if (Date.now() - (UI.tapAt || 0) < 500) return;
+      L.style.pointerEvents = "none";
+      const under = document.elementFromPoint(e.clientX, e.clientY);
+      L.style.pointerEvents = "";
+      const hit = under && under.closest && under.closest(TAPPABLE);
+      if (hit && UI.content.contains(hit)) { UI.tapAt = Date.now(); hit.click(); }
+    });
   }
+  const TAPPABLE = "[data-pick], details.ink-ex > summary";      // 종이에서 누를 수 있는 것은 이 둘뿐(정리본 안 단추는 누르지 않는다)
   const pressure = (e) => (e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5);
   function liveStyle() {
     const t = UI.tool;
@@ -568,6 +664,7 @@ var MEDKOS_INK = (function () {
     const st = liveStyle(), sid = newId();
     UI.rec.doc.s[sid] = { c: st.c, w: st.w, t: st.t, b: a.b, d: pack(a.pts) };
     UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]);
+    UI.mine[sid] = 1;
     UI.undo.push({ add: sid });
     staleFor(UI.rt[sid]);
     // 여백 끝 가까이까지 썼으면 종이를 늘인다
@@ -588,8 +685,8 @@ var MEDKOS_INK = (function () {
       const ex = from[0] + (p[0] - from[0]) * k / steps, ey = from[1] + (p[1] - from[1]) * k / steps;
       Object.keys(UI.rt).forEach((sid) => {
         const st = UI.rt[sid];
-        if (hiddenBlock(st.b)) return;
-        const x = ex, y = ey - UI.tops[st.b], r = R + st.w / 2;
+        if (hiddenBlock(st.b) || veiled(sid)) return;
+        const x = ex, y = ey - topOf(st.b), r = R + st.w / 2;
         if (x < st.x0 - r || x > st.x1 + r || y < st.y0 - r || y > st.y1 + r) return;
         const q = st.pts;
         for (let i = 0; i < q.length; i += 3) {
@@ -613,7 +710,7 @@ var MEDKOS_INK = (function () {
     const op = UI.undo.pop();
     if (!op) return;
     if (op.add) removeStroke(op.add, false);
-    else { const sid = newId(); UI.rec.doc.s[sid] = op.del; UI.rt[sid] = runtime(sid, op.del); staleFor(UI.rt[sid]); }   // 묘비가 있으니 새 id 로 되살린다
+    else { const sid = newId(); UI.rec.doc.s[sid] = op.del; UI.rt[sid] = runtime(sid, op.del); UI.mine[sid] = 1; staleFor(UI.rt[sid]); }   // 묘비가 있으니 새 id 로 되살린다
     ensureTiles(); touched();
   }
 
@@ -650,32 +747,66 @@ var MEDKOS_INK = (function () {
     if (rec.dirty && res === "ok") UI.pushT = setTimeout(pushNow, 30000);
   }
 
-  async function open(exam, id) {
+  // opts: chosen(내가 고른 보기) · solve(푸는 중) · quiz(문항 화면에서 열었다 — 「다음 문항」이 보인다) · q(문항 객체)
+  async function open(exam, id, opts) {
+    opts = opts || {};
     build();
-    const q = findQuestion(id), w = wrongEntry(exam, id);
+    if (UI.rec) await leave();
+    const isC = exam === "concept";
+    const q = isC ? null : (opts.q || findQuestion(id)), w = isC ? null : wrongEntry(exam, id);
     UI.rec = await loadRec(exam, id);
-    UI.undo = []; UI.zoom = 1;
-    UI.content.innerHTML = sheetHtml(exam, id, q, w);
-    UI.content.querySelectorAll("img").forEach((im) => im.addEventListener("load", () => layout(false)));
-    const d = UI.content.querySelector("details.ink-ex");
-    if (d) d.addEventListener("toggle", () => { d.querySelector("summary").textContent = d.open ? "해설 접기" : "해설 펼치기"; layout(false); UI.tiles.forEach((t) => { t.stale = true; }); ensureTiles(); });
+    if (Number.isInteger(opts.chosen)) UI.rec.doc.c = opts.chosen;
+    const chosen = Number.isInteger(opts.chosen) ? opts.chosen : (w && Number.isInteger(w.chosen) ? w.chosen : UI.rec.doc.c);
+    UI.st = { exam, id, kind: isC ? "concept" : "q", q, w, solve: !!opts.solve && !!q, chosen, quiz: !!opts.quiz };
+    UI.undo = []; UI.zoom = 1; UI.mine = {}; UI.hideOld = UI.st.solve;
     UI.el.classList.remove("hidden"); document.body.classList.add("ink-open");
     UI.scroll.scrollTop = 0;
-    rebuildRuntime(); paintBar(); layout(true);
-    status(countStrokes(UI.rec.doc) ? "기기에 저장된 필기" : "");
+    rebuildRuntime(); renderSheet(false); layout(true);
+    const n = countStrokes(UI.rec.doc);
+    status(UI.hideOld && n ? `전에 쓴 필기 ${n}획은 채점 뒤에 보입니다` : n ? "기기에 저장된 필기" : "");
     pushNow();                                                    // 열면서 서버 것과 맞춘다(다른 기기에서 쓴 것 받기)
   }
-  async function close() {
+  // 지금 연 필기를 저장하고 손에서 놓는다(화면은 그대로) — 닫기 · 다음 문항이 함께 쓴다.
+  async function leave() {
     if (!UI.rec) return;
     await flushLocal();
     const rec = UI.rec;
-    const relist = () => { const l = document.getElementById("wbList"); if (l && !UI.rec) decorate(l); };
-    pushNow(rec).then(() => { relist(); if (rec.dirty) flushAll(); });
+    pushNow(rec).then(() => { if (!UI.rec) refreshLists(); if (rec.dirty) flushAll(); });
     UI.rec = null; UI.act = null;
-    UI.tiles.forEach(dropTile);
-    UI.el.classList.add("hidden"); document.body.classList.remove("ink-open");
+  }
+  function refreshLists() {
     const list = document.getElementById("wbList");
     if (list) decorate(list);
+    const all = document.getElementById("inkList");
+    if (all && !all.classList.contains("hidden")) renderAll();
+    document.querySelectorAll("button[data-ink-concept]").forEach((b) => {
+      const n = loadIdx()[keyOf("concept", b.getAttribute("data-ink-concept"))] || 0;
+      b.textContent = n ? `✍ 이 정리본에 필기 (${n}획)` : "✍ 이 정리본에 필기";
+      b.classList.toggle("has", !!n);
+    });
+  }
+  async function close() {
+    if (!UI.el || UI.el.classList.contains("hidden")) return;
+    await leave();
+    UI.tiles.forEach(dropTile);
+    UI.el.classList.add("hidden"); document.body.classList.remove("ink-open");
+    refreshLists();
+  }
+  // 문항 화면에서 — 지금 문항을 필기장으로. 아직 안 풀었으면 푸는 중으로 연다.
+  function openFromQuiz() {
+    const deck = g("deck"), pos = g("pos"), answers = g("answers");
+    const q = Array.isArray(deck) ? deck[pos] : null, ex = examOf(q);
+    if (!ex) return;
+    const a = Array.isArray(answers) ? answers[pos] : null;
+    open(ex, q.id, { quiz: true, q, solve: a == null, chosen: a == null ? undefined : a });
+  }
+  async function next() {
+    const nb = document.getElementById("nextBtn"), quiz = document.getElementById("quiz");
+    if (!nb || nb.classList.contains("hidden")) return close();
+    await leave();
+    nb.click();                                                   // 앱이 다음 문항을 그리거나(끝이면) 결과 화면으로 간다
+    if (!quiz || quiz.classList.contains("hidden")) return close();
+    openFromQuiz();
   }
 
   /* 오답노트 목록 — 오답마다 「✍ 필기」 단추. 획 수는 기기 색인에서, ☁ 는 다른 기기에서 쓴 필기가 서버에 있을 때. */
@@ -690,7 +821,7 @@ var MEDKOS_INK = (function () {
         b.onclick = () => open(ex, id);
         nb.parentNode.insertBefore(b, nb);
       }
-      const n = idx[keyOf(ex, id)] || 0, remote = (NET.remote[ex] || {})[id];
+      const n = idx[keyOf(ex, id)] || 0, remote = (NET.remote[ex] || {})[fid(id)];
       b.textContent = n ? `✍ 필기 (${n}획)` : remote ? "✍ 필기 ☁" : "✍ 필기";
       b.classList.toggle("has", !!(n || remote));
       exams[ex] = true;
@@ -701,9 +832,80 @@ var MEDKOS_INK = (function () {
     });
   }
 
+  /* 필기 모음 — 필기가 있는 것 전부(이 기기 색인 + 다른 기기에서 올린 것). 문항이든 정리본이든 눌러서 이어 쓴다. */
+  const KIND_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", variant: "변형", concept: "정리본" };
+  function showAll() {
+    let el = document.getElementById("inkList");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "inkList"; el.className = "ink-list hidden";
+      el.innerHTML = `<section class="card"><h2>필기 모음 <span id="inkListCount" class="muted"></span></h2>
+        <div class="row"><button data-a="back">← 돌아가기</button></div><div id="inkListBody"></div></section>`;
+      document.body.appendChild(el);
+      el.addEventListener("click", (e) => {
+        const b = e.target.closest("button");
+        if (!b) return;
+        if (b.getAttribute("data-a") === "back") return el.classList.add("hidden");
+        if (b.hasAttribute("data-open")) open(b.getAttribute("data-ex"), b.getAttribute("data-open"));
+      });
+    }
+    el.classList.remove("hidden");
+    renderAll();
+    EXAMS.forEach((ex) => {
+      const before = JSON.stringify(NET.remote[ex] || {});
+      refreshRemote(ex).then((files) => { if (JSON.stringify(files) !== before && !el.classList.contains("hidden")) renderAll(); });
+    });
+  }
+  function renderAll() {
+    const idx = loadIdx(), items = {}, L = g("LEARN");
+    Object.keys(idx).forEach((k) => { items[k] = { n: idx[k] }; });
+    EXAMS.forEach((ex) => Object.keys(NET.remote[ex] || {}).forEach((f) => {
+      const k = keyOf(ex, unfid(ex, f));
+      (items[k] = items[k] || { n: 0 }).remote = true;
+    }));
+    const keys = Object.keys(items).sort().reverse();
+    document.getElementById("inkListCount").textContent = `(${keys.length}개)`;
+    document.getElementById("inkListBody").innerHTML = keys.length ? keys.map((k) => {
+      const i = k.indexOf(":"), ex = k.slice(0, i), id = k.slice(i + 1), it = items[k];
+      let title = "", sub = "";
+      if (ex === "concept") { const c = L && typeof L.concept === "function" ? L.concept(id) : null; title = c ? c.title : id; sub = c ? c.topic || "" : ""; }
+      else { const q = findQuestion(id); title = q ? (q.question || q.vignette || "").trim().slice(0, 90) : "(문항 은행에 없음)"; sub = q ? q.subject || "" : ""; }
+      return `<div class="w"><div class="whead">${ex === "concept" ? "" : "#" + esc(id) + " "}<span class="muted">${esc(KIND_NAME[ex] || ex)}${sub ? " · " + esc(sub) : ""}</span></div>
+        <div class="wmeta">${esc(title)}</div>
+        <button data-open="${esc(id)}" data-ex="${esc(ex)}" class="ink-open-btn has">✍ 열기${it.n ? ` (${it.n}획)` : " ☁"}</button></div>`;
+    }).join("") : `<p class="muted">아직 필기가 없습니다. 오답노트의 「✍ 필기」, 문항 화면의 「✍ 펜으로 풀기」, 개념 정리본의 「✍ 이 정리본에 필기」에서 시작합니다.</p>`;
+  }
+  // 개념 정리본 머리에 필기 단추(learn.js 의 renderConcept 가 부른다 — 필기장 안에서 그릴 때는 부르지 않는다)
+  function conceptButton(box, cid) {
+    const head = box.querySelector(".cn-h");
+    if (!head || head.querySelector("[data-ink-concept]")) return;
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "small ink-open-btn"; b.setAttribute("data-ink-concept", cid);
+    const n = loadIdx()[keyOf("concept", cid)] || 0;
+    b.textContent = n ? `✍ 이 정리본에 필기 (${n}획)` : "✍ 이 정리본에 필기";
+    b.classList.toggle("has", !!n);
+    b.onclick = () => open("concept", cid);
+    head.appendChild(b);
+  }
+  // 문항 화면의 「✍ 펜으로 풀기」 · 첫 화면의 「✍ 필기 모음」 — 앱 껍데기(index.html)를 건드리지 않고 여기서 끼운다.
+  function addButtons() {
+    const quit = document.getElementById("quitBtn"), vw = document.getElementById("viewWrongBtn");
+    if (quit && !document.getElementById("inkSolveBtn")) {
+      const b = document.createElement("button");
+      b.id = "inkSolveBtn"; b.textContent = "✍ 펜으로 풀기"; b.onclick = openFromQuiz;
+      quit.parentNode.insertBefore(b, quit);
+    }
+    if (vw && !document.getElementById("inkAllBtn")) {
+      const b = document.createElement("button");
+      b.id = "inkAllBtn"; b.textContent = "✍ 필기 모음"; b.onclick = showAll;
+      vw.parentNode.insertBefore(b, vw.nextSibling);
+    }
+  }
+  addButtons();
+
   window.addEventListener("online", () => { flushAll(); });
   setTimeout(flushAll, 5000);
 
-  return Object.assign(core, { open, close, decorate, flushAll, _net: NET });      // _net = 시험용(서버 유무 판정을 되돌릴 때)
+  return Object.assign(core, { open, close, decorate, flushAll, showAll, conceptButton, openFromQuiz, _net: NET });      // _net = 시험용(서버 유무 판정을 되돌릴 때)
 })();
 if (typeof module !== "undefined" && module.exports) module.exports = MEDKOS_INK;

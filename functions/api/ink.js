@@ -1,6 +1,6 @@
 /* Cloudflare Pages Function — 오답노트 필기 동기화 (/api/ink)   (2026-11-15)
  *
- * 왜: 오답노트의 손필기(아이패드 펜슬)는 그 기기 브라우저에만 남는다. 이 함수가 필기를 저장소의
+ * 왜: 문항 · 개념 정리본에 쓴 손필기(아이패드 펜슬)는 그 기기 브라우저에만 남는다. 이 함수가 필기를 저장소의
  * **별도 가지 `ink-data`** 에 `state/ink_sync/<exam>/<문항 id>.json` 으로 커밋해 기기끼리 같은 필기를 보게 한다.
  *
  * 무엇을 저장하나: **암호문만.** 저장소가 공개라서 필기는 기기에서 동기화 키로 잠근 뒤(AES-GCM · docs/ink.js) 올라온다.
@@ -20,7 +20,7 @@
  *        → 200 { exam, id, sha }  |  409 { conflict: true }(sha 가 낡음 — 다시 받아 합쳐서 재시도)
  * env(봉투) = { v:1, alg:"A256GCM", z:0|1, iv:"<base64>", ct:"<base64>", n:<획 수>, updated:"<iso>" } */
 
-const EXAMS = new Set(["kmle", "usmle", "imaging"]);
+const EXAMS = new Set(["kmle", "usmle", "imaging", "variant", "concept"]);   // 문항 넷 + 개념 정리본
 const ID_RE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/;
 const B64_RE = /^[A-Za-z0-9+/]+={0,2}$/;
 const MAX_BODY = 1536 * 1024;                       // 봉투 한 장 상한(GitHub contents API 여유 안)
@@ -99,7 +99,7 @@ export async function onRequestGet({ request, env }) {
   if (!authorized(request, env)) return json({ error: "X-Sync-Key 불일치" }, 401);
   const p = new URL(request.url).searchParams;
   const exam = p.get("exam") || "", id = p.get("id") || "";
-  if (!EXAMS.has(exam)) return json({ error: "exam 은 kmle|usmle|imaging" }, 400);
+  if (!EXAMS.has(exam)) return json({ error: "exam 은 kmle|usmle|imaging|variant|concept" }, 400);
   const br = encodeURIComponent(branchOf(env));
   try {
     if (!id) {                                                    // 목록 — 어느 문항에 필기가 있고 어느 판인지
