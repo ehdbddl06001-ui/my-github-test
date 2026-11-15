@@ -322,8 +322,9 @@ const LEARN = (() => {
   function setPressed(b, on) { b.setAttribute("aria-pressed", on ? "true" : "false"); b.classList.toggle("on", on); }
 
   /* ---------- 개념 정리본 ---------- */
-  function renderConcept(box, cid, q, chosenIdx) {
-    const c = concept(cid);
+  // over = 필기장(ink.js)이 넘기는 「내 필기본」의 고정 사본 — 원본이 고쳐진 뒤에도 내가 쓴 판을 그대로 그린다.
+  function renderConcept(box, cid, q, chosenIdx, over) {
+    const c = over || concept(cid);
     if (!c) { box.innerHTML = `<p class="muted">개념 정리본을 찾지 못했습니다(${escapeHtml(cid)}).</p>`; return; }
     add({ kind: "view", what: "note", objective: cid, qid: q ? q.id : null });
     const L = q && chosenIdx != null && chosenIdx !== q.answer - 1 ? letterOf(chosenIdx) : "";
