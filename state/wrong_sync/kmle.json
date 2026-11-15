@@ -1469,8 +1469,29 @@
    "date": "2026-11-09",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1859": {
+   "id": "kmle-2026-1859",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Fever, Painful Hand Joints and Pleuritic Chest Pain in the Fifth Month of Latent Tuberculosis Treatment in a Middle-aged Man",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 진단은?",
+   "chosen": 0,
+   "chosenText": "전신홍반루푸스",
+   "answer": 1,
+   "answerText": "약물 유발 루푸스",
+   "coreNote": "",
+   "differ": "",
+   "decision": "이소니아지드 복용 중 생긴 발열·관절염·흉막염에 항히스톤 양성, 항dsDNA·항Sm 음성, 보체·신장·혈구 정상이어서 약물 유발 루푸스다. 흉막액 아데노신탈아미나아제가 낮아 결핵성 흉막염 가능성도 낮다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-15",
+   "device": "pc-rrt1bx",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-09T13:10:00.266Z"
+ "updated": "2026-11-15T01:33:35.217Z"
 }
