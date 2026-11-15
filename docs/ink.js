@@ -8,7 +8,7 @@
      ③ 개념 정리본(학습서의 단위)의 「✍ 이 정리본에 필기」  ④ 첫 화면의 「✍ 필기 모음」 — 필기가 있는 것 전부.
    3판(써 본 뒤 — 「펜 해상도 · 색 여러 개 · 촉감 · 직선 · 문제 전체가 한 화면에」): 획을 곡선으로 잇고 잘게 나눠 굵기를 바꿔 가며
    그린다(압력 · 빠르기) · 펜 색 12 + 형광펜 색 5 + 굵기 5 · 직선(단추를 켜거나, 긋다가 멈추면 펴진다 · 수평 · 수직에 맞춘다) ·
-   가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 필기장에서 바로 동기화 키를 넣는다.
+   가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 🔑 로그인(아이디 · 비밀번호로 키를 만든다).
    맞힌 문항도 「★ 정리본에 넣기」를 누르면 표시(want_note)가 남아 개념 복습 · 정리본 큐에 들어간다(learn.js).
 
    - 펜슬 = 쓰기 · 손가락 = 화면 넘기기(「손가락 쓰기」를 켜면 손가락도 쓴다 — 그때는 두 손가락으로 넘긴다).
@@ -120,7 +120,15 @@ var MEDKOS_INK = (function () {
     return normDoc(JSON.parse(new TextDecoder().decode(bytes)));
   }
 
-  const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal };
+  // 아이디 · 비밀번호 → 동기화 키. 아이디는 앞뒤 공백 · 대소문자를 가리지 않는다. 같은 입력이면 어느 기기에서나 같은 키.
+  async function loginKey(id, pw) {
+    const enc = new TextEncoder(), salt = enc.encode("medkos-login-v1:" + String(id).trim().toLowerCase());
+    const base = await subtle.importKey("raw", enc.encode(String(pw)), "PBKDF2", false, ["deriveBits"]);
+    const bits = await subtle.deriveBits({ name: "PBKDF2", salt, iterations: 300000, hash: "SHA-256" }, base, 256);
+    return "lk1-" + b64(new Uint8Array(bits)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
+
+  const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal, loginKey };
   if (typeof document === "undefined") return core;          // node 시험 — 아래는 화면이 있을 때만
 
   /* ───────── 기기 저장소(IndexedDB · 없으면 메모리) ───────── */
@@ -264,7 +272,7 @@ var MEDKOS_INK = (function () {
     const recent = (Array.isArray(t.recent) ? t.recent.filter(hex) : []).concat(QUICK).filter((c, i, l) => l.indexOf(c) === i).slice(0, 4);
     return { kind: t.kind === "hl" || t.kind === "erase" ? t.kind : "pen", color: hex(t.color) ? t.color : COLORS[0],
              hlColor: HLS.indexOf(t.hlColor) >= 0 ? t.hlColor : HLS[0], width: WIDTHS.indexOf(t.width) >= 0 ? t.width : WIDTHS[2],
-             line: !!t.line, side: t.side !== false, finger: !!t.finger, recent };
+             line: !!t.line, side: t.side !== false, even: t.even !== false, finger: !!t.finger, recent };
   }
   function saveTool() { try { localStorage.setItem("medkos_ink_tool", JSON.stringify(UI.tool)); } catch (e) { /* 무시 */ } }
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -401,7 +409,7 @@ var MEDKOS_INK = (function () {
           <button data-a="zout" aria-label="작게">−</button><button data-a="zin" aria-label="크게">＋</button>
           <button data-a="side" title="가로 화면 — 문항 옆에 여백을 나란히">⇆ 나란히</button>
           <button data-a="more">여백 ＋</button>
-          <button data-a="key" title="필기를 다른 기기와 맞추려면 기기마다 같은 동기화 키가 있어야 한다">🔑 동기화 키 넣기</button>
+          <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">🔑 로그인(필기 맞추기)</button>
           <button data-a="flag" title="맞혔어도 헷갈린 문항 — 개념 복습 · 정리본 큐에 넣는다">★ 정리본에 넣기</button>
           <button data-a="next" class="primary">다음 문항 →</button>
         </span>
@@ -409,6 +417,8 @@ var MEDKOS_INK = (function () {
         <div class="ink-pal" hidden>
           <div class="ink-pal-h">펜 색</div>
           <div class="ink-pal-r">${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}</div>
+          <div class="ink-pal-h">획</div>
+          <div class="ink-pal-r"><button data-a="even" data-v="1">고른 굵기</button><button data-a="even" data-v="0">힘 · 빠르기에 따라</button></div>
           <div class="ink-pal-h">굵기</div>
           <div class="ink-pal-r">${WIDTHS.map((w) => `<button data-a="w" data-w="${w}" class="ink-wd" aria-label="굵기"><i style="height:${Math.max(1.5, w * 1.6)}px"></i></button>`).join("")}</div>
           <div class="ink-pal-h">형광펜 색</div>
@@ -445,6 +455,7 @@ var MEDKOS_INK = (function () {
       `<button data-a="color" data-c="${c}" class="ink-dot${t.kind === "pen" && c === t.color ? " on" : ""}" style="--c:${c}" aria-label="펜 색"></button>`).join("");
     UI.pal.querySelectorAll("[data-a=color]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-c") === t.color));
     UI.pal.querySelectorAll("[data-a=hlc]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-c") === t.hlColor));
+    UI.pal.querySelectorAll("[data-a=even]").forEach((b) => b.classList.toggle("on", (b.getAttribute("data-v") === "1") === t.even));
     UI.pal.querySelectorAll("[data-a=w]").forEach((b) => b.classList.toggle("on", Number(b.getAttribute("data-w")) === t.width));
     on("[data-a=hl]", t.kind === "hl"); on("[data-a=erase]", t.kind === "erase"); on("[data-a=line]", t.line);
     on("[data-a=finger]", t.finger); on("[data-a=side]", t.side);
@@ -469,9 +480,10 @@ var MEDKOS_INK = (function () {
       if (t.recent.indexOf(t.color) < 0) t.recent = [t.color].concat(t.recent).slice(0, 4);
     }
     else if (a === "w") { t.width = Number(b.getAttribute("data-w")); if (t.kind === "erase") t.kind = "pen"; }
+    else if (a === "even") t.even = b.getAttribute("data-v") === "1";
     else if (a === "hlc") { t.hlColor = b.getAttribute("data-c"); t.kind = "hl"; }
     else if (a === "hl") t.kind = t.kind === "hl" ? "pen" : "hl";
-    else if (a === "erase") t.kind = t.kind === "erase" ? "pen" : "erase";
+    else if (a === "erase") { t.kind = t.kind === "erase" ? "pen" : "erase"; clearLive(); }
     else if (a === "line") t.line = !t.line;
     else if (a === "finger") t.finger = !t.finger;
     else if (a === "undo") undo();
@@ -479,26 +491,89 @@ var MEDKOS_INK = (function () {
     else if (a === "side") { t.side = !t.side; UI.zoom = 1; layout(true); }
     else if (a === "more") { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round((UI.geo.p || { h: 0 }).h)) + PAPER_STEP; touched(); layout(false); }
     else if (a === "next") return next();
-    else if (a === "key") return askKey();
+    else if (a === "key") return openLogin();
     else if (a === "flag") { const L = g("LEARN"); L.setFlag(UI.st.q, "want_note", !L.flagsOf(UI.st.q).want_note); }
-    if (a !== "color" && a !== "w" && a !== "hlc") closePalette();
+    if (a !== "color" && a !== "w" && a !== "hlc" && a !== "even") closePalette();
     saveTool(); paintBar();
   }
-  // 필기장에서 바로 동기화 키를 넣는다 — 서버가 키를 요구하지 않아도, 필기는 이 키로 잠가야 올라간다.
-  // 다른 기기에도 **같은 키**가 있어야 열린다 → 넣자마자 연결 링크를 권한다.
-  async function askKey() {
-    const sample = Array.from(crypto.getRandomValues(new Uint8Array(12)), (x) => "abcdefghijkmnpqrstuvwxyz23456789"[x % 32]).join("").replace(/(.{4})(?=.)/g, "$1-");
-    const v = prompt("동기화 키를 정합니다(이 기기에 저장 · 필기를 잠그는 열쇠).\n다른 기기에서 이미 쓰는 키가 있으면 그것을 넣고, 없으면 아래 값을 그대로 쓰세요.", sample);
-    if (v === null || !v.trim()) return;
+  /* 로그인 — 아이디 · 비밀번호로 이 기기의 동기화 키를 만든다(2026-11-15 사용자 「아이디 · 비밀번호가 맞으면 키가 자동으로 들어가게」).
+     키는 기기에서 계산한다(loginKey) — 비밀번호도 키도 서버로 가지 않는다. 「맞는지」는 서버에 둔 확인용 암호문(meta/login-check)이
+     그 키로 열리는지로 판정한다. 확인용 암호문이 아직 없으면 처음 만드는 로그인이다(비밀번호를 한 번 더 받는다).
+     어느 기기에서든 같은 아이디 · 비밀번호를 넣으면 같은 키가 나온다 → 연결 링크가 필요 없다. */
+  async function loginTry(id, pw, pw2) {
+    if (!subtle) return { msg: "이 주소에서는 잠그기를 쓸 수 없습니다(https 주소에서 여세요)." };
+    const key = await loginKey(id, pw), h = { "content-type": "application/json" };
+    let r;
+    try { r = await fetch(`${NET.url}?exam=meta&id=login-check`, { headers: h }); }
+    catch (e) { return { msg: "서버에 닿지 않아 확인하지 못했습니다 — 연결된 뒤 다시 하세요." }; }
+    const isJson = (r.headers.get("content-type") || "").indexOf("json") >= 0;
+    if (r.ok) {
+      try { await unseal((await r.json()).env, key); } catch (e) { return { msg: "아이디 또는 비밀번호가 다릅니다." }; }
+      return { key };
+    }
+    if (r.status === 404 && isJson) {                             // 아직 로그인이 만들어진 적이 없다
+      if (pw2 == null) return { first: true, msg: "처음 만드는 로그인입니다 — 비밀번호를 한 번 더 넣고 「연결」을 누르세요." };
+      if (pw2 !== pw) return { first: true, msg: "두 비밀번호가 다릅니다." };
+      const w = await fetch(NET.url, { method: "POST", headers: h,
+        body: JSON.stringify({ exam: "meta", id: "login-check", sha: null, env: await seal(emptyDoc(), key), device: device() }) });
+      if (w.status === 409) return { msg: "방금 다른 기기에서 로그인이 만들어졌습니다 — 다시 「연결」을 누르세요." };
+      if (!w.ok) return { msg: "로그인을 저장하지 못했습니다(" + w.status + ")." };
+      return { key, created: true };
+    }
+    if (noServer(r.status)) return { msg: "이 주소에는 동기화 서버가 없습니다 — my-github-test.pages.dev 에서 여세요." };
+    return { msg: "확인하지 못했습니다(" + r.status + ")." };
+  }
+  async function applyKey(key) {
     const f = g("onSyncKeyChange"), inp = document.getElementById("syncKey");
-    if (inp) inp.value = v.trim();
-    try { if (typeof f === "function") await f(v.trim()); else if (typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(v.trim()); } catch (e) { /* 키는 아래에서 다시 확인 */ }
-    if (!pass() && typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(v.trim());
+    if (inp) inp.value = key;
+    if (typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(key);
+    else try { localStorage.setItem("medkos_sync_key", key); } catch (e) { /* 저장 못 함 — 아래 pass() 가 빈 값 */ }
     NET.available = null;
-    paintBar();
-    pushNow();
-    const share = g("shareSyncLink");
-    if (typeof share === "function" && confirm("다른 기기(PC · 휴대폰)에도 같은 키가 있어야 필기가 열립니다.\n지금 연결 링크를 만들어 보낼까요? 받은 기기에서 그 링크를 한 번 열면 됩니다.")) share();
+    if (UI.el) paintBar();
+    if (UI.rec) pushNow(); else flushAll();
+    try { if (typeof f === "function") await f(key); } catch (e) { /* 오답 · 학습 기록 동기화는 앱이 다시 시도한다 */ }
+  }
+  function openLogin() {
+    closePalette();
+    let el = document.getElementById("inkLogin");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "inkLogin"; el.className = "ink-login hidden";
+      el.innerHTML = `<form class="card" autocomplete="on">
+        <h2>🔑 로그인 — 기기끼리 필기 맞추기</h2>
+        <p class="muted small">아이디와 비밀번호로 이 기기의 동기화 키를 만듭니다. 다른 기기에서도 <b>같은 아이디 · 비밀번호</b>를 넣으면 같은 키가 들어가 필기가 맞춰집니다.
+          비밀번호는 서버로 보내지 않습니다 — 잊으면 되찾을 방법이 없으니 기기의 비밀번호 저장에 맡기세요.</p>
+        <label>아이디<input name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required /></label>
+        <label>비밀번호<input name="password" type="password" autocomplete="current-password" minlength="8" required /></label>
+        <label class="ink-login-2" hidden>비밀번호 한 번 더(처음 만들 때)<input name="password2" type="password" autocomplete="new-password" /></label>
+        <p class="ink-login-m" role="status"></p>
+        <div class="row"><button type="submit" class="primary">연결</button><button type="button" data-a="cancel">닫기</button></div>
+      </form>`;
+      document.body.appendChild(el);
+      const form = el.querySelector("form"), msg = el.querySelector(".ink-login-m"), two = el.querySelector(".ink-login-2");
+      el.querySelector("[data-a=cancel]").onclick = () => el.classList.add("hidden");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const id = form.username.value.trim(), pw = form.password.value, btn = form.querySelector("[type=submit]");
+        if (!id || pw.length < 8) { msg.textContent = "아이디와 8자 이상의 비밀번호를 넣으세요."; return; }
+        btn.disabled = true; msg.textContent = "확인하는 중…";
+        let out;
+        try { out = await loginTry(id, pw, two.hidden ? null : form.password2.value); }
+        catch (err) { out = { msg: "확인하지 못했습니다(" + String((err && err.message) || err) + ")." }; }
+        btn.disabled = false;
+        if (out.first) { two.hidden = false; form.password2.focus(); }
+        if (!out.key) { msg.textContent = out.msg; return; }
+        const old = pass();
+        if (old && old !== out.key && !confirm("이 기기에는 이미 다른 동기화 키가 들어 있습니다.\n바꾸면 예전 키로 올린 필기는 이 로그인으로 열리지 않습니다. 바꿀까요?")) { msg.textContent = "바꾸지 않았습니다."; return; }
+        msg.textContent = out.created ? "로그인을 만들었습니다 — 이 기기의 필기를 올립니다." : "맞습니다 — 이 기기에 키를 넣고 필기를 맞춥니다.";
+        await applyKey(out.key);
+        form.password.value = ""; form.password2.value = ""; two.hidden = true;
+        setTimeout(() => el.classList.add("hidden"), 1200);
+      });
+    }
+    el.querySelector(".ink-login-m").textContent = pass() ? "이 기기에는 이미 키가 들어 있습니다. 다른 로그인으로 바꿀 때만 넣으세요." : "";
+    el.classList.remove("hidden");
+    el.querySelector("input[name=username]").focus();
   }
 
   /* 배치 — 종이를 화면에 맞춘다. 덩이의 자리(왼쪽 · 위)를 다시 재고, 보이는 조각만 다시 그린다.
@@ -601,11 +676,12 @@ var MEDKOS_INK = (function () {
   /* 획 그리기 — 「펜으로 쓴 것처럼」(3판).
      점과 점을 직선으로 잇지 않는다: 이웃한 두 점의 가운데에서 가운데로, 그 사이 점을 당김점으로 하는 곡선을 잇고(모서리가 서지 않는다),
      그 곡선을 화면 1.6 화소 길이로 잘게 나눠 굵기를 조금씩 바꿔 가며 그린다(구슬 꿴 듯한 마디가 없다).
-     굵기 = 압력(펜슬) 또는 빠르기(손가락 · 마우스 — 빠르면 가늘다)를 앞 점과 섞어 고르게 한 값. 쓰는 동안과 다시 그릴 때가 같은 식이다. */
+     굵기 = 기본은 **고른 굵기**(직선으로 그을 때와 같은 선 — 써 본 뒤 「굵기가 달라지는 것보다 이게 낫다」). 「힘 · 빠르기에 따라」를 고르면
+     압력(펜슬) 또는 빠르기(손가락 · 마우스 — 빠르면 가늘다)를 앞 점과 섞은 값. 쓰는 동안과 다시 그릴 때가 같은 식이다. */
   const penW = (w, p) => w * (0.4 + 1.2 * p);
   function widthsOf(pts, w) {
     const n = pts.length / 3, ws = new Array(n);
-    for (let i = 0; i < n; i++) ws[i] = i ? ws[i - 1] * 0.55 + penW(w, pts[i * 3 + 2]) * 0.45 : penW(w, pts[2]) * 0.75;
+    for (let i = 0; i < n; i++) ws[i] = i ? ws[i - 1] * 0.55 + penW(w, pts[i * 3 + 2]) * 0.45 : penW(w, pts[2]);
     return ws;
   }
   function piece(ctx, ax, ay, cx, cy, bx, by, wa, wb) {
@@ -703,6 +779,7 @@ var MEDKOS_INK = (function () {
   }
   // 손가락 · 마우스에는 압력이 없다 — 빠르기로 흉내 낸다(빠르면 가늘게), 앞 값과 섞어 튀지 않게
   function pressureOf(e, a, x, y) {
+    if (UI.tool.even) return 0.5;                                // 고른 굵기 — 직선으로 그을 때와 같은 선
     if (e.pointerType === "pen" && e.pressure > 0) return e.pressure;
     if (!a) return 0.5;
     const n = a.pts.length, dt = Math.max(1, (e.timeStamp || 0) - a.lt), v = Math.hypot(x - a.pts[n - 3], y - a.pts[n - 2]) / dt;
@@ -726,16 +803,17 @@ var MEDKOS_INK = (function () {
       e.preventDefault();
       try { L.setPointerCapture(e.pointerId); } catch (_) { /* 무시 */ }
       const p = pt(e), b = blockAt(p[0], p[1]), o = org(b), st = liveStyle();
-      const pr = e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5;
+      const pr = !UI.tool.even && e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5;
       UI.act = { id: e.pointerId, type: e.pointerType, b, ox: o.x, oy: o.y, t0: Date.now(), lt: e.timeStamp || 0, cx: e.clientX, cy: e.clientY, moved: false,
-                 st, pts: [p[0] - o.x, p[1] - o.y, pr], ws: [penW(st.w, pr) * 0.75], mx: p[0], my: p[1], mw: penW(st.w, pr) * 0.75,
+                 st, pts: [p[0] - o.x, p[1] - o.y, pr], ws: [penW(st.w, pr)], mx: p[0], my: p[1], mw: penW(st.w, pr),
                  erase: UI.tool.kind === "erase", line: !!UI.tool.line, travel: 0, hx: p[0], hy: p[1], hold: 0 };
       if (e.pointerType === "pen") UI.lastPen = Date.now();
-      if (UI.act.erase) eraseAt(p);
+      if (UI.act.erase) { eraseAt(p); drawEraser(p); }
     });
     L.addEventListener("pointermove", (e) => {
       const a = UI.act;
-      if (!a || e.pointerId !== a.id) return;
+      if (!a) { if (UI.tool.kind === "erase" && e.pointerType !== "touch") drawEraser(pt(e)); return; }   // 띄워서 움직일 때도 범위를 보인다
+      if (e.pointerId !== a.id) return;
       e.preventDefault();
       if (a.pan) { UI.scroll.scrollTop += a.y - e.clientY; UI.scroll.scrollLeft += a.x - e.clientX; a.y = e.clientY; a.x = e.clientX; return; }
       if (Math.abs(e.clientX - a.cx) + Math.abs(e.clientY - a.cy) > 4) a.moved = true;
@@ -763,7 +841,7 @@ var MEDKOS_INK = (function () {
           clearTimeout(a.hold); a.hold = setTimeout(() => holdToLine(a), 480);
         }
       });
-      if (!a.erase) drawLive(a);
+      if (a.erase) drawEraser(pt(e)); else drawLive(a);
       if (e.pointerType === "pen") UI.lastPen = Date.now();
     });
     const end = (e) => {
@@ -771,8 +849,8 @@ var MEDKOS_INK = (function () {
       if (!a || e.pointerId !== a.id) return;
       UI.act = null;
       clearTimeout(a.hold);
-      if (a.pan || a.erase) { if (a.erase) flushErase(); return; }
       clearLive();
+      if (a.pan || a.erase) { if (a.erase) flushErase(); return; }
       if (e.type === "pointercancel") { ensureStale(a); return; }
       if (!a.moved && Date.now() - a.t0 < 500) {                 // 톡 — 아래가 누르는 것(해설 펼치기 등)이면 그것을 누른다
         L.style.pointerEvents = "none";
@@ -793,6 +871,7 @@ var MEDKOS_INK = (function () {
       inkPiece(a.st, a.mx, a.my, (a.mx + lx) / 2, (a.my + ly) / 2, lx, ly, a.mw, k === 2 ? a.ws[1] : a.ws[k - 1]);
       commitStroke(a, false);                                     // 쓰는 동안 그린 것이 곧 마지막 모양 — 다시 그리지 않는다
     };
+    L.addEventListener("pointerleave", () => { if (!UI.act) clearLive(); });
     L.addEventListener("pointerup", end);
     L.addEventListener("pointercancel", end);
     L.addEventListener("click", (e) => {                         // 손가락으로 톡 — 층이 가로채므로 아래 것을 대신 누른다
@@ -877,8 +956,16 @@ var MEDKOS_INK = (function () {
     const t = L ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / L)) : 0;
     return Math.hypot(px - ax - t * dx, py - ay - t * dy);
   }
+  const ERASE_R = 9;                                              // 지우개 반지름(종이 좌표) — 화면에 보이는 원과 같은 값
+  function drawEraser(p) {
+    const ctx = liveCtx();
+    ctx.beginPath(); ctx.arc(p[0], p[1], ERASE_R, 0, 6.3);
+    ctx.fillStyle = "rgba(120,130,145,.18)"; ctx.fill();
+    ctx.lineWidth = 1 / (UI.s || 1); ctx.strokeStyle = "rgba(60,70,85,.8)"; ctx.stroke();
+    ctx.restore();
+  }
   function eraseAt(p) {
-    const R = 9, from = UI.erasePrev || p;
+    const R = ERASE_R, from = UI.erasePrev || p;
     UI.erasePrev = p;
     const steps = Math.max(1, Math.ceil(Math.hypot(p[0] - from[0], p[1] - from[1]) / (R / 2)));
     for (let k = 1; k <= steps; k++) {
@@ -1095,6 +1182,12 @@ var MEDKOS_INK = (function () {
       b.id = "inkSolveBtn"; b.textContent = "✍ 펜으로 풀기"; b.onclick = openFromQuiz;
       quit.parentNode.insertBefore(b, quit);
     }
+    const link = document.getElementById("syncLinkBtn");          // 첫 화면 「동기화 설정」에도 로그인 단추
+    if (link && !document.getElementById("inkLoginBtn")) {
+      const b = document.createElement("button");
+      b.id = "inkLoginBtn"; b.type = "button"; b.className = "small"; b.textContent = "🔑 아이디 · 비밀번호로 연결"; b.onclick = openLogin;
+      link.parentNode.insertBefore(b, link);
+    }
     if (vw && !document.getElementById("inkAllBtn")) {
       const b = document.createElement("button");
       b.id = "inkAllBtn"; b.textContent = "✍ 필기 모음"; b.onclick = showAll;
@@ -1106,6 +1199,6 @@ var MEDKOS_INK = (function () {
   window.addEventListener("online", () => { flushAll(); });
   setTimeout(flushAll, 5000);
 
-  return Object.assign(core, { open, close, decorate, flushAll, showAll, conceptButton, openFromQuiz, _net: NET });      // _net = 시험용(서버 유무 판정을 되돌릴 때)
+  return Object.assign(core, { open, close, decorate, flushAll, showAll, conceptButton, openFromQuiz, openLogin, loginTry, _net: NET });      // _net = 시험용(서버 유무 판정을 되돌릴 때)
 })();
 if (typeof module !== "undefined" && module.exports) module.exports = MEDKOS_INK;
