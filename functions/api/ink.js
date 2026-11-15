@@ -20,7 +20,7 @@
  *        → 200 { exam, id, sha }  |  409 { conflict: true }(sha 가 낡음 — 다시 받아 합쳐서 재시도)
  * env(봉투) = { v:1, alg:"A256GCM", z:0|1, iv:"<base64>", ct:"<base64>", n:<획 수>, updated:"<iso>" } */
 
-const EXAMS = new Set(["kmle", "usmle", "imaging", "variant", "concept"]);   // 문항 넷 + 개념 정리본
+const EXAMS = new Set(["kmle", "usmle", "imaging", "variant", "concept", "meta"]);   // 문항 넷 + 개념 정리본 + meta(로그인 확인용 암호문 login-check)
 const ID_RE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/;
 const B64_RE = /^[A-Za-z0-9+/]+={0,2}$/;
 const MAX_BODY = 1536 * 1024;                       // 봉투 한 장 상한(GitHub contents API 여유 안)

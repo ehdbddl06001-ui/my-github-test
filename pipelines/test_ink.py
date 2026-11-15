@@ -92,11 +92,11 @@ class Endpoint(unittest.TestCase):
         out = run_node(FN % (
             "out.clean=[!!M.cleanEnvelope(envOk),M.cleanEnvelope({v:1,s:{}}),M.cleanEnvelope({v:1,alg:'A256GCM',iv:'<b>',ct:envOk.ct})];"
             "out.target=[M.validTarget('kmle','kmle-2026-1859'),M.validTarget('kmle','../x'),M.validTarget('zzz','a'),"
-            "M.validTarget('concept','cn.allergy.anaphylaxis.im-epinephrine-first'),M.validTarget('variant','cn.a.b--v1'),M.validTarget('variant','cn.a.b#v1')];"
+            "M.validTarget('concept','cn.allergy.anaphylaxis.im-epinephrine-first'),M.validTarget('variant','cn.a.b--v1'),M.validTarget('variant','cn.a.b#v1'),M.validTarget('meta','login-check')];"
             "r=await M.onRequestPost({request:req('POST','',{exam:'kmle',id:'a',env:{v:1,s:{x:1}}},'secret'),env:ENV});out.plain=r.status;"
             "r=await M.onRequestPost({request:req('POST','',{exam:'kmle',id:'a',env:envOk},'nope'),env:ENV});out.auth=r.status"), module=True)
         self.assertEqual(out["clean"], [True, None, None])
-        self.assertEqual(out["target"], [True, False, False, True, True, False])
+        self.assertEqual(out["target"], [True, False, False, True, True, False, True])
         self.assertEqual(out["plain"], 400)              # 잠그지 않은 필기는 저장소에 들어가지 않는다
         self.assertEqual(out["auth"], 401)
 
@@ -137,7 +137,39 @@ class Endpoint(unittest.TestCase):
         self.assertEqual(out["none"], [404, True])       # 「필기 없음」은 JSON 404 — 앱이 「서버 없음」과 구별한다
 
 
+@unittest.skipUnless(NODE, "node 없음")
+class Login(unittest.TestCase):
+    def test_same_id_and_password_give_the_same_key_on_any_device(self):
+        # 2026-11-15 — 키를 손으로 옮기지 않는다: 아이디 · 비밀번호에서 기기가 계산한다
+        out = run_node(CORE % (
+            "out.a=await I.loginKey('Dong ','correct horse battery');out.b=await I.loginKey('dong','correct horse battery');"
+            "out.c=await I.loginKey('dong','correct horse batterz');out.d=await I.loginKey('dong2','correct horse battery')"))
+        self.assertEqual(out["a"], out["b"])             # 아이디는 공백 · 대소문자를 가리지 않는다
+        self.assertNotEqual(out["a"], out["c"])
+        self.assertNotEqual(out["a"], out["d"])          # 아이디가 소금이다
+        self.assertRegex(out["a"], r"^lk1-[A-Za-z0-9_-]{43}$")
+
+    def test_check_blob_opens_only_with_the_right_password(self):
+        out = run_node(CORE % (
+            "const k=await I.loginKey('dong','correct horse battery'),bad=await I.loginKey('dong','wrong password!');"
+            "const e=await I.seal(I.emptyDoc(),k);out.ok=!!(await I.unseal(e,k));"
+            "try{await I.unseal(e,bad);out.bad='opened'}catch(x){out.bad='rejected'}"))
+        self.assertTrue(out["ok"])
+        self.assertEqual(out["bad"], "rejected")
+
+
 class Wiring(unittest.TestCase):
+    def test_login_never_sends_the_password(self):
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")
+        body = ink[ink.index("async function loginTry("):ink.index("async function applyKey(")]
+        self.assertNotIn("pw }", body)
+        self.assertNotIn("password", body)               # 서버로 가는 것은 확인용 암호문뿐
+        self.assertIn('env: await seal(emptyDoc(), key)', body)
+        self.assertIn('autocomplete="current-password"', ink)       # 기기의 비밀번호 저장이 채워 주게
+        self.assertIn('"medkos-login-v1:"', ink)
+        self.assertIn('"meta"', fn)
+
     def test_index_loads_ink_after_app_with_the_cache_version(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
         ver = re.search(r'const VERSION = "medkos-v(\d+)"', (DOCS / "sw.js").read_text(encoding="utf-8")).group(1)
@@ -154,9 +186,11 @@ class Wiring(unittest.TestCase):
     def test_app_uploads_only_the_sealed_envelope(self):
         ink = (DOCS / "ink.js").read_text(encoding="utf-8")
         posts = re.findall(r'method: "POST".*?body: JSON\.stringify\((\{.*?\})\)', ink, flags=re.S)
-        self.assertEqual(len(posts), 1)
+        self.assertEqual(len(posts), 2)                  # 필기 올리기 · 로그인 확인용 암호문 — 둘뿐
         self.assertIn("env: await seal(rec.doc, pass())", posts[0])
-        self.assertNotIn("doc:", posts[0])               # 잠그지 않은 필기를 보내지 않는다
+        self.assertIn("env: await seal(emptyDoc(), key)", posts[1])
+        for body in posts:
+            self.assertNotIn("doc:", body)               # 잠그지 않은 필기를 보내지 않는다
         self.assertIn("if (!canSync()) return \"local\";", ink)   # 키 · 서버가 없으면 기기에만
 
     def test_every_question_and_concept_note_can_be_written_on(self):
@@ -170,7 +204,7 @@ class Wiring(unittest.TestCase):
         self.assertIn("MEDKOS_INK.conceptButton(box, c.id)", learn)
         self.assertIn("load, concept, STATUS, flagsOf, setFlag };", learn)
         self.assertIn('L.setFlag(UI.st.q, "want_note"', ink)            # 맞힌 문항도 정리본 큐로
-        self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept"])', fn)
+        self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept", "meta"])', fn)
         self.assertIn('replace(/#/g, "--")', ink)                       # 변형 문항 id 의 # 은 파일 이름에 못 쓴다
 
     def test_pen_feel_and_layout_stay_wired(self):
@@ -183,7 +217,7 @@ class Wiring(unittest.TestCase):
         self.assertIn("function holdToLine(a)", ink)                 # 긋다가 멈추면 직선
         self.assertIn("x: b.classList.contains(\"ink-block\") ? (r.left - c0.left) / UI.s : 0", ink)   # 획은 덩이 왼쪽 위 기준
         self.assertIn(".ink-content.side{display:grid; grid-template-columns:820px 820px;", css)
-        self.assertIn("async function askKey()", ink)
+        self.assertIn("async function loginTry(id, pw, pw2)", ink)
         self.assertIn("even: t.even !== false", ink)                  # 기본은 고른 굵기(직선과 같은 선)
         self.assertIn("if (UI.tool.even) return 0.5;", ink)
         self.assertIn("const R = ERASE_R, from = UI.erasePrev || p;", ink)   # 보이는 지우개 원과 실제 지우는 범위가 같은 값

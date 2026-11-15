@@ -8,7 +8,7 @@
      ③ 개념 정리본(학습서의 단위)의 「✍ 이 정리본에 필기」  ④ 첫 화면의 「✍ 필기 모음」 — 필기가 있는 것 전부.
    3판(써 본 뒤 — 「펜 해상도 · 색 여러 개 · 촉감 · 직선 · 문제 전체가 한 화면에」): 획을 곡선으로 잇고 잘게 나눠 굵기를 바꿔 가며
    그린다(압력 · 빠르기) · 펜 색 12 + 형광펜 색 5 + 굵기 5 · 직선(단추를 켜거나, 긋다가 멈추면 펴진다 · 수평 · 수직에 맞춘다) ·
-   가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 필기장에서 바로 동기화 키를 넣는다.
+   가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 🔑 로그인(아이디 · 비밀번호로 키를 만든다).
    맞힌 문항도 「★ 정리본에 넣기」를 누르면 표시(want_note)가 남아 개념 복습 · 정리본 큐에 들어간다(learn.js).
 
    - 펜슬 = 쓰기 · 손가락 = 화면 넘기기(「손가락 쓰기」를 켜면 손가락도 쓴다 — 그때는 두 손가락으로 넘긴다).
@@ -120,7 +120,15 @@ var MEDKOS_INK = (function () {
     return normDoc(JSON.parse(new TextDecoder().decode(bytes)));
   }
 
-  const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal };
+  // 아이디 · 비밀번호 → 동기화 키. 아이디는 앞뒤 공백 · 대소문자를 가리지 않는다. 같은 입력이면 어느 기기에서나 같은 키.
+  async function loginKey(id, pw) {
+    const enc = new TextEncoder(), salt = enc.encode("medkos-login-v1:" + String(id).trim().toLowerCase());
+    const base = await subtle.importKey("raw", enc.encode(String(pw)), "PBKDF2", false, ["deriveBits"]);
+    const bits = await subtle.deriveBits({ name: "PBKDF2", salt, iterations: 300000, hash: "SHA-256" }, base, 256);
+    return "lk1-" + b64(new Uint8Array(bits)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
+
+  const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal, loginKey };
   if (typeof document === "undefined") return core;          // node 시험 — 아래는 화면이 있을 때만
 
   /* ───────── 기기 저장소(IndexedDB · 없으면 메모리) ───────── */
@@ -401,7 +409,7 @@ var MEDKOS_INK = (function () {
           <button data-a="zout" aria-label="작게">−</button><button data-a="zin" aria-label="크게">＋</button>
           <button data-a="side" title="가로 화면 — 문항 옆에 여백을 나란히">⇆ 나란히</button>
           <button data-a="more">여백 ＋</button>
-          <button data-a="key" title="필기를 다른 기기와 맞추려면 기기마다 같은 동기화 키가 있어야 한다">🔑 동기화 키 넣기</button>
+          <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">🔑 로그인(필기 맞추기)</button>
           <button data-a="flag" title="맞혔어도 헷갈린 문항 — 개념 복습 · 정리본 큐에 넣는다">★ 정리본에 넣기</button>
           <button data-a="next" class="primary">다음 문항 →</button>
         </span>
@@ -483,26 +491,89 @@ var MEDKOS_INK = (function () {
     else if (a === "side") { t.side = !t.side; UI.zoom = 1; layout(true); }
     else if (a === "more") { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round((UI.geo.p || { h: 0 }).h)) + PAPER_STEP; touched(); layout(false); }
     else if (a === "next") return next();
-    else if (a === "key") return askKey();
+    else if (a === "key") return openLogin();
     else if (a === "flag") { const L = g("LEARN"); L.setFlag(UI.st.q, "want_note", !L.flagsOf(UI.st.q).want_note); }
     if (a !== "color" && a !== "w" && a !== "hlc" && a !== "even") closePalette();
     saveTool(); paintBar();
   }
-  // 필기장에서 바로 동기화 키를 넣는다 — 서버가 키를 요구하지 않아도, 필기는 이 키로 잠가야 올라간다.
-  // 다른 기기에도 **같은 키**가 있어야 열린다 → 넣자마자 연결 링크를 권한다.
-  async function askKey() {
-    const sample = Array.from(crypto.getRandomValues(new Uint8Array(12)), (x) => "abcdefghijkmnpqrstuvwxyz23456789"[x % 32]).join("").replace(/(.{4})(?=.)/g, "$1-");
-    const v = prompt("동기화 키를 정합니다(이 기기에 저장 · 필기를 잠그는 열쇠).\n다른 기기에서 이미 쓰는 키가 있으면 그것을 넣고, 없으면 아래 값을 그대로 쓰세요.", sample);
-    if (v === null || !v.trim()) return;
+  /* 로그인 — 아이디 · 비밀번호로 이 기기의 동기화 키를 만든다(2026-11-15 사용자 「아이디 · 비밀번호가 맞으면 키가 자동으로 들어가게」).
+     키는 기기에서 계산한다(loginKey) — 비밀번호도 키도 서버로 가지 않는다. 「맞는지」는 서버에 둔 확인용 암호문(meta/login-check)이
+     그 키로 열리는지로 판정한다. 확인용 암호문이 아직 없으면 처음 만드는 로그인이다(비밀번호를 한 번 더 받는다).
+     어느 기기에서든 같은 아이디 · 비밀번호를 넣으면 같은 키가 나온다 → 연결 링크가 필요 없다. */
+  async function loginTry(id, pw, pw2) {
+    if (!subtle) return { msg: "이 주소에서는 잠그기를 쓸 수 없습니다(https 주소에서 여세요)." };
+    const key = await loginKey(id, pw), h = { "content-type": "application/json" };
+    let r;
+    try { r = await fetch(`${NET.url}?exam=meta&id=login-check`, { headers: h }); }
+    catch (e) { return { msg: "서버에 닿지 않아 확인하지 못했습니다 — 연결된 뒤 다시 하세요." }; }
+    const isJson = (r.headers.get("content-type") || "").indexOf("json") >= 0;
+    if (r.ok) {
+      try { await unseal((await r.json()).env, key); } catch (e) { return { msg: "아이디 또는 비밀번호가 다릅니다." }; }
+      return { key };
+    }
+    if (r.status === 404 && isJson) {                             // 아직 로그인이 만들어진 적이 없다
+      if (pw2 == null) return { first: true, msg: "처음 만드는 로그인입니다 — 비밀번호를 한 번 더 넣고 「연결」을 누르세요." };
+      if (pw2 !== pw) return { first: true, msg: "두 비밀번호가 다릅니다." };
+      const w = await fetch(NET.url, { method: "POST", headers: h,
+        body: JSON.stringify({ exam: "meta", id: "login-check", sha: null, env: await seal(emptyDoc(), key), device: device() }) });
+      if (w.status === 409) return { msg: "방금 다른 기기에서 로그인이 만들어졌습니다 — 다시 「연결」을 누르세요." };
+      if (!w.ok) return { msg: "로그인을 저장하지 못했습니다(" + w.status + ")." };
+      return { key, created: true };
+    }
+    if (noServer(r.status)) return { msg: "이 주소에는 동기화 서버가 없습니다 — my-github-test.pages.dev 에서 여세요." };
+    return { msg: "확인하지 못했습니다(" + r.status + ")." };
+  }
+  async function applyKey(key) {
     const f = g("onSyncKeyChange"), inp = document.getElementById("syncKey");
-    if (inp) inp.value = v.trim();
-    try { if (typeof f === "function") await f(v.trim()); else if (typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(v.trim()); } catch (e) { /* 키는 아래에서 다시 확인 */ }
-    if (!pass() && typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(v.trim());
+    if (inp) inp.value = key;
+    if (typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(key);
+    else try { localStorage.setItem("medkos_sync_key", key); } catch (e) { /* 저장 못 함 — 아래 pass() 가 빈 값 */ }
     NET.available = null;
-    paintBar();
-    pushNow();
-    const share = g("shareSyncLink");
-    if (typeof share === "function" && confirm("다른 기기(PC · 휴대폰)에도 같은 키가 있어야 필기가 열립니다.\n지금 연결 링크를 만들어 보낼까요? 받은 기기에서 그 링크를 한 번 열면 됩니다.")) share();
+    if (UI.el) paintBar();
+    if (UI.rec) pushNow(); else flushAll();
+    try { if (typeof f === "function") await f(key); } catch (e) { /* 오답 · 학습 기록 동기화는 앱이 다시 시도한다 */ }
+  }
+  function openLogin() {
+    closePalette();
+    let el = document.getElementById("inkLogin");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "inkLogin"; el.className = "ink-login hidden";
+      el.innerHTML = `<form class="card" autocomplete="on">
+        <h2>🔑 로그인 — 기기끼리 필기 맞추기</h2>
+        <p class="muted small">아이디와 비밀번호로 이 기기의 동기화 키를 만듭니다. 다른 기기에서도 <b>같은 아이디 · 비밀번호</b>를 넣으면 같은 키가 들어가 필기가 맞춰집니다.
+          비밀번호는 서버로 보내지 않습니다 — 잊으면 되찾을 방법이 없으니 기기의 비밀번호 저장에 맡기세요.</p>
+        <label>아이디<input name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required /></label>
+        <label>비밀번호<input name="password" type="password" autocomplete="current-password" minlength="8" required /></label>
+        <label class="ink-login-2" hidden>비밀번호 한 번 더(처음 만들 때)<input name="password2" type="password" autocomplete="new-password" /></label>
+        <p class="ink-login-m" role="status"></p>
+        <div class="row"><button type="submit" class="primary">연결</button><button type="button" data-a="cancel">닫기</button></div>
+      </form>`;
+      document.body.appendChild(el);
+      const form = el.querySelector("form"), msg = el.querySelector(".ink-login-m"), two = el.querySelector(".ink-login-2");
+      el.querySelector("[data-a=cancel]").onclick = () => el.classList.add("hidden");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const id = form.username.value.trim(), pw = form.password.value, btn = form.querySelector("[type=submit]");
+        if (!id || pw.length < 8) { msg.textContent = "아이디와 8자 이상의 비밀번호를 넣으세요."; return; }
+        btn.disabled = true; msg.textContent = "확인하는 중…";
+        let out;
+        try { out = await loginTry(id, pw, two.hidden ? null : form.password2.value); }
+        catch (err) { out = { msg: "확인하지 못했습니다(" + String((err && err.message) || err) + ")." }; }
+        btn.disabled = false;
+        if (out.first) { two.hidden = false; form.password2.focus(); }
+        if (!out.key) { msg.textContent = out.msg; return; }
+        const old = pass();
+        if (old && old !== out.key && !confirm("이 기기에는 이미 다른 동기화 키가 들어 있습니다.\n바꾸면 예전 키로 올린 필기는 이 로그인으로 열리지 않습니다. 바꿀까요?")) { msg.textContent = "바꾸지 않았습니다."; return; }
+        msg.textContent = out.created ? "로그인을 만들었습니다 — 이 기기의 필기를 올립니다." : "맞습니다 — 이 기기에 키를 넣고 필기를 맞춥니다.";
+        await applyKey(out.key);
+        form.password.value = ""; form.password2.value = ""; two.hidden = true;
+        setTimeout(() => el.classList.add("hidden"), 1200);
+      });
+    }
+    el.querySelector(".ink-login-m").textContent = pass() ? "이 기기에는 이미 키가 들어 있습니다. 다른 로그인으로 바꿀 때만 넣으세요." : "";
+    el.classList.remove("hidden");
+    el.querySelector("input[name=username]").focus();
   }
 
   /* 배치 — 종이를 화면에 맞춘다. 덩이의 자리(왼쪽 · 위)를 다시 재고, 보이는 조각만 다시 그린다.
@@ -1111,6 +1182,12 @@ var MEDKOS_INK = (function () {
       b.id = "inkSolveBtn"; b.textContent = "✍ 펜으로 풀기"; b.onclick = openFromQuiz;
       quit.parentNode.insertBefore(b, quit);
     }
+    const link = document.getElementById("syncLinkBtn");          // 첫 화면 「동기화 설정」에도 로그인 단추
+    if (link && !document.getElementById("inkLoginBtn")) {
+      const b = document.createElement("button");
+      b.id = "inkLoginBtn"; b.type = "button"; b.className = "small"; b.textContent = "🔑 아이디 · 비밀번호로 연결"; b.onclick = openLogin;
+      link.parentNode.insertBefore(b, link);
+    }
     if (vw && !document.getElementById("inkAllBtn")) {
       const b = document.createElement("button");
       b.id = "inkAllBtn"; b.textContent = "✍ 필기 모음"; b.onclick = showAll;
@@ -1122,6 +1199,6 @@ var MEDKOS_INK = (function () {
   window.addEventListener("online", () => { flushAll(); });
   setTimeout(flushAll, 5000);
 
-  return Object.assign(core, { open, close, decorate, flushAll, showAll, conceptButton, openFromQuiz, _net: NET });      // _net = 시험용(서버 유무 판정을 되돌릴 때)
+  return Object.assign(core, { open, close, decorate, flushAll, showAll, conceptButton, openFromQuiz, openLogin, loginTry, _net: NET });      // _net = 시험용(서버 유무 판정을 되돌릴 때)
 })();
 if (typeof module !== "undefined" && module.exports) module.exports = MEDKOS_INK;
