@@ -6,6 +6,9 @@
      ① 오답노트의 「✍ 필기」  ② 문항 화면의 「✍ 펜으로 풀기」 — 필기장 안에서 보기를 톡 쳐 채점하고 다음 문항으로 넘어간다
         (채점 · 학습 기록 · 오답노트 저장은 앱이 그대로 한다. 전에 쓴 필기는 채점 뒤에 보인다 — 답을 미리 알려 주지 않게)
      ③ 개념 정리본(학습서의 단위)의 「✍ 이 정리본에 필기」  ④ 첫 화면의 「✍ 필기 모음」 — 필기가 있는 것 전부.
+   3판(써 본 뒤 — 「펜 해상도 · 색 여러 개 · 촉감 · 직선 · 문제 전체가 한 화면에」): 획을 곡선으로 잇고 잘게 나눠 굵기를 바꿔 가며
+   그린다(압력 · 빠르기) · 펜 색 12 + 형광펜 색 5 + 굵기 5 · 직선(단추를 켜거나, 긋다가 멈추면 펴진다 · 수평 · 수직에 맞춘다) ·
+   가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 필기장에서 바로 동기화 키를 넣는다.
    맞힌 문항도 「★ 정리본에 넣기」를 누르면 표시(want_note)가 남아 개념 복습 · 정리본 큐에 들어간다(learn.js).
 
    - 펜슬 = 쓰기 · 손가락 = 화면 넘기기(「손가락 쓰기」를 켜면 손가락도 쓴다 — 그때는 두 손가락으로 넘긴다).
@@ -21,12 +24,13 @@ var MEDKOS_INK = (function () {
   "use strict";
 
   const W = 820;                 // 종이 폭(논리 px) — 모든 기기 공통
-  const TILE = 900;              // 필기 층을 이 높이의 캔버스 조각으로 나눈다(iOS 캔버스 크기 · 메모리 한도)
+  const TILE = 600;              // 필기 층을 이 높이의 캔버스 조각으로 나눈다(iOS 캔버스 크기 · 메모리 한도)
   const PAPER0 = 900, PAPER_STEP = 600;
   const SALT = "medkos-ink-v1";
-  const COLORS = ["#1b2430", "#d92d20", "#1d4ed8", "#0f8a4f"];
-  const HL = "#f5c518";
-  const WIDTHS = [1.6, 2.6, 4.2];
+  const COLORS = ["#1b2430", "#6b7280", "#d92d20", "#e8710a", "#b7791f", "#0f8a4f", "#0e7490", "#1d4ed8", "#4338ca", "#7c3aed", "#db2777", "#7c4a2d"];
+  const HLS = ["#f5c518", "#7ddc6f", "#ff8fb3", "#7cc4ff", "#ffb347"];      // 형광펜
+  const WIDTHS = [1.0, 1.5, 2.2, 3.2, 4.8];
+  const QUICK = ["#1b2430", "#d92d20", "#1d4ed8", "#0f8a4f"];             // 막대에 늘 보이는 색(쓴 색이 앞으로 온다)
 
   /* ───────── 순수 함수: 획 압축 · 병합 ───────── */
   // pts = [x, y, p, x, y, p, …] (논리 px · 압력 0~1) → 정수 차분 배열(좌표 ×10 · 압력 ×31)
@@ -250,14 +254,17 @@ var MEDKOS_INK = (function () {
 
   /* ───────── 화면 ───────── */
   const UI = {
-    el: null, rec: null, rt: {}, tops: {}, tiles: [], s: 1, q: 1, zoom: 1, sheetH: 0,
+    el: null, rec: null, rt: {}, geo: {}, tiles: [], s: 1, q: 1, zoom: 1, sheetH: 0, SW: W, step: 1,
     tool: loadTool(), undo: [], mine: {}, st: null, saveT: null, pushT: null, raf: 0, lastPen: 0, act: null, dirtyTiles: null,
   };
   function loadTool() {
     let t = {};
     try { t = JSON.parse(localStorage.getItem("medkos_ink_tool") || "{}") || {}; } catch (e) { t = {}; }
-    return { kind: t.kind === "hl" || t.kind === "erase" ? t.kind : "pen", color: COLORS.indexOf(t.color) >= 0 ? t.color : COLORS[0],
-             width: WIDTHS.indexOf(t.width) >= 0 ? t.width : WIDTHS[1], finger: !!t.finger };
+    const hex = (c) => typeof c === "string" && /^#[0-9a-f]{6}$/i.test(c);
+    const recent = (Array.isArray(t.recent) ? t.recent.filter(hex) : []).concat(QUICK).filter((c, i, l) => l.indexOf(c) === i).slice(0, 4);
+    return { kind: t.kind === "hl" || t.kind === "erase" ? t.kind : "pen", color: hex(t.color) ? t.color : COLORS[0],
+             hlColor: HLS.indexOf(t.hlColor) >= 0 ? t.hlColor : HLS[0], width: WIDTHS.indexOf(t.width) >= 0 ? t.width : WIDTHS[2],
+             line: !!t.line, side: t.side !== false, finger: !!t.finger, recent };
   }
   function saveTool() { try { localStorage.setItem("medkos_ink_tool", JSON.stringify(UI.tool)); } catch (e) { /* 무시 */ } }
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -373,7 +380,7 @@ var MEDKOS_INK = (function () {
     if (countStrokes(UI.rec.doc)) touched();
     renderSheet(true);
     const ob = UI.content.querySelector('[data-b="o"]');
-    if (ob) UI.scroll.scrollTop = Math.max(0, (UI.tops.o || 0) * UI.s - 60);
+    if (ob && !UI.content.classList.contains("side")) UI.scroll.scrollTop = Math.max(0, org("o").y * UI.s - 60);
     status(i === cur.answer - 1 ? "정답 — 헷갈렸으면 ★ 정리본에 넣기" : "오답 — 오답노트에 저장됨", i === cur.answer - 1 ? "ok" : "bad");
   }
 
@@ -384,30 +391,43 @@ var MEDKOS_INK = (function () {
     el.innerHTML = `<div class="ink-bar">
         <button data-a="close" class="ink-x">← 닫기</button>
         <span class="ink-tools">
-          ${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}
-          <button data-a="width" title="굵기">굵기</button>
-          <button data-a="hl">형광펜</button>
+          <span class="ink-quick"></span>
+          <button data-a="pal" title="펜 색 · 굵기 · 형광펜 색">🎨 색 · 굵기</button>
+          <button data-a="hl"><i class="ink-sw"></i>형광펜</button>
           <button data-a="erase">지우개</button>
+          <button data-a="line" title="직선 — 켜지 않아도 긋다가 잠깐 멈추면 직선으로 펴진다">📏 직선</button>
           <button data-a="undo">↶</button>
           <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">☝ 손가락 쓰기</button>
           <button data-a="zout" aria-label="작게">−</button><button data-a="zin" aria-label="크게">＋</button>
+          <button data-a="side" title="가로 화면 — 문항 옆에 여백을 나란히">⇆ 나란히</button>
           <button data-a="more">여백 ＋</button>
+          <button data-a="key" title="필기를 다른 기기와 맞추려면 기기마다 같은 동기화 키가 있어야 한다">🔑 동기화 키 넣기</button>
           <button data-a="flag" title="맞혔어도 헷갈린 문항 — 개념 복습 · 정리본 큐에 넣는다">★ 정리본에 넣기</button>
           <button data-a="next" class="primary">다음 문항 →</button>
         </span>
         <span class="ink-st" id="inkStatus"></span>
+        <div class="ink-pal" hidden>
+          <div class="ink-pal-h">펜 색</div>
+          <div class="ink-pal-r">${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}</div>
+          <div class="ink-pal-h">굵기</div>
+          <div class="ink-pal-r">${WIDTHS.map((w) => `<button data-a="w" data-w="${w}" class="ink-wd" aria-label="굵기"><i style="height:${Math.max(1.5, w * 1.6)}px"></i></button>`).join("")}</div>
+          <div class="ink-pal-h">형광펜 색</div>
+          <div class="ink-pal-r">${HLS.map((c) => `<button data-a="hlc" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="형광펜 색"></button>`).join("")}</div>
+        </div>
       </div>
-      <div class="ink-scroll"><div class="ink-fit"><div class="ink-sheet"><div class="ink-content"></div><div class="ink-layer"></div></div></div></div>`;
+      <div class="ink-scroll"><div class="ink-fit"><div class="ink-sheet"><div class="ink-content"></div><div class="ink-layer"></div></div></div></div>
+      <canvas class="ink-live"></canvas>`;
     document.body.appendChild(el);
     UI.el = el;
     UI.scroll = el.querySelector(".ink-scroll"); UI.fit = el.querySelector(".ink-fit"); UI.sheet = el.querySelector(".ink-sheet");
     UI.content = el.querySelector(".ink-content"); UI.layer = el.querySelector(".ink-layer");
+    UI.live = el.querySelector(".ink-live"); UI.pal = el.querySelector(".ink-pal");
     el.querySelector(".ink-bar").addEventListener("click", onBar);
     UI.content.addEventListener("click", (e) => { const b = e.target.closest("[data-pick]"); if (b) pick(Number(b.getAttribute("data-pick"))); });
     UI.scroll.addEventListener("scroll", () => schedule(ensureTiles), { passive: true });
     // 화면 폭이 바뀌면(돌리기 · 창 크기) 종이를 다시 맞춘다. 스크롤의 조각 그리기와 예약 칸을 따로 쓴다(서로 취소하지 않게).
     const refit = () => {
-      if (!UI.rec || UI.scroll.clientWidth === UI.fitW) return;
+      if (!UI.rec || (UI.scroll.clientWidth === UI.fitW && UI.scroll.clientHeight === UI.fitH)) return;
       cancelAnimationFrame(UI.rafL); UI.rafL = requestAnimationFrame(() => layout(true));
     };
     window.addEventListener("resize", refit);
@@ -418,58 +438,110 @@ var MEDKOS_INK = (function () {
   }
   function schedule(fn) { cancelAnimationFrame(UI.raf); UI.raf = requestAnimationFrame(fn); }
   function status(text, cls) { const el = document.getElementById("inkStatus"); if (el) { el.textContent = text; el.className = "ink-st " + (cls || ""); } }
+  function closePalette() { if (UI.pal) UI.pal.hidden = true; }
   function paintBar() {
-    const t = UI.tool;
-    UI.el.querySelectorAll("[data-a=color]").forEach((b) => b.classList.toggle("on", t.kind === "pen" && b.getAttribute("data-c") === t.color));
-    UI.el.querySelector("[data-a=hl]").classList.toggle("on", t.kind === "hl");
-    UI.el.querySelector("[data-a=erase]").classList.toggle("on", t.kind === "erase");
-    UI.el.querySelector("[data-a=finger]").classList.toggle("on", t.finger);
-    UI.el.querySelector("[data-a=width]").textContent = ["가늘게", "보통", "굵게"][WIDTHS.indexOf(t.width)] || "보통";
+    const t = UI.tool, on = (sel, v) => UI.el.querySelector(sel).classList.toggle("on", !!v);
+    UI.el.querySelector(".ink-quick").innerHTML = t.recent.map((c) =>
+      `<button data-a="color" data-c="${c}" class="ink-dot${t.kind === "pen" && c === t.color ? " on" : ""}" style="--c:${c}" aria-label="펜 색"></button>`).join("");
+    UI.pal.querySelectorAll("[data-a=color]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-c") === t.color));
+    UI.pal.querySelectorAll("[data-a=hlc]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-c") === t.hlColor));
+    UI.pal.querySelectorAll("[data-a=w]").forEach((b) => b.classList.toggle("on", Number(b.getAttribute("data-w")) === t.width));
+    on("[data-a=hl]", t.kind === "hl"); on("[data-a=erase]", t.kind === "erase"); on("[data-a=line]", t.line);
+    on("[data-a=finger]", t.finger); on("[data-a=side]", t.side);
+    UI.el.querySelector(".ink-sw").style.background = t.hlColor;
     UI.el.querySelector("[data-a=undo]").disabled = !UI.undo.length;
     UI.layer.style.touchAction = t.finger ? "none" : "pan-x pan-y";
     const st = UI.st || {}, L = g("LEARN"), fb = UI.el.querySelector("[data-a=flag]"), nb = UI.el.querySelector("[data-a=next]");
     const canFlag = st.kind === "q" && !st.solve && st.q && !st.q.isVariant && L && typeof L.setFlag === "function";
     fb.hidden = !canFlag; nb.hidden = !(st.quiz && !st.solve);
     if (canFlag) fb.classList.toggle("on", !!L.flagsOf(st.q).want_note);
+    UI.el.querySelector("[data-a=side]").hidden = !UI.wide;
+    UI.el.querySelector("[data-a=key]").hidden = !!pass() || !subtle;
   }
   function onBar(e) {
     const b = e.target.closest("button[data-a]");
     if (!b) return;
     const a = b.getAttribute("data-a"), t = UI.tool;
     if (a === "close") return close();
-    if (a === "color") { t.kind = "pen"; t.color = b.getAttribute("data-c"); }
-    else if (a === "width") t.width = WIDTHS[(WIDTHS.indexOf(t.width) + 1) % WIDTHS.length];
+    if (a === "pal") { UI.pal.hidden = !UI.pal.hidden; return; }
+    if (a === "color") {
+      t.kind = "pen"; t.color = b.getAttribute("data-c");
+      if (t.recent.indexOf(t.color) < 0) t.recent = [t.color].concat(t.recent).slice(0, 4);
+    }
+    else if (a === "w") { t.width = Number(b.getAttribute("data-w")); if (t.kind === "erase") t.kind = "pen"; }
+    else if (a === "hlc") { t.hlColor = b.getAttribute("data-c"); t.kind = "hl"; }
     else if (a === "hl") t.kind = t.kind === "hl" ? "pen" : "hl";
     else if (a === "erase") t.kind = t.kind === "erase" ? "pen" : "erase";
+    else if (a === "line") t.line = !t.line;
     else if (a === "finger") t.finger = !t.finger;
     else if (a === "undo") undo();
-    else if (a === "zin" || a === "zout") { UI.zoom = Math.max(1, Math.min(2.5, UI.zoom + (a === "zin" ? 0.25 : -0.25))); layout(true); }
-    else if (a === "more") { UI.rec.doc.ph += PAPER_STEP; touched(); layout(false); }
+    else if (a === "zin" || a === "zout") { UI.zoom = Math.max(0.6, Math.min(2.5, UI.zoom + (a === "zin" ? 0.2 : -0.2))); layout(true); }
+    else if (a === "side") { t.side = !t.side; UI.zoom = 1; layout(true); }
+    else if (a === "more") { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round((UI.geo.p || { h: 0 }).h)) + PAPER_STEP; touched(); layout(false); }
     else if (a === "next") return next();
+    else if (a === "key") return askKey();
     else if (a === "flag") { const L = g("LEARN"); L.setFlag(UI.st.q, "want_note", !L.flagsOf(UI.st.q).want_note); }
+    if (a !== "color" && a !== "w" && a !== "hlc") closePalette();
     saveTool(); paintBar();
   }
+  // 필기장에서 바로 동기화 키를 넣는다 — 서버가 키를 요구하지 않아도, 필기는 이 키로 잠가야 올라간다.
+  // 다른 기기에도 **같은 키**가 있어야 열린다 → 넣자마자 연결 링크를 권한다.
+  async function askKey() {
+    const sample = Array.from(crypto.getRandomValues(new Uint8Array(12)), (x) => "abcdefghijkmnpqrstuvwxyz23456789"[x % 32]).join("").replace(/(.{4})(?=.)/g, "$1-");
+    const v = prompt("동기화 키를 정합니다(이 기기에 저장 · 필기를 잠그는 열쇠).\n다른 기기에서 이미 쓰는 키가 있으면 그것을 넣고, 없으면 아래 값을 그대로 쓰세요.", sample);
+    if (v === null || !v.trim()) return;
+    const f = g("onSyncKeyChange"), inp = document.getElementById("syncKey");
+    if (inp) inp.value = v.trim();
+    try { if (typeof f === "function") await f(v.trim()); else if (typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(v.trim()); } catch (e) { /* 키는 아래에서 다시 확인 */ }
+    if (!pass() && typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(v.trim());
+    NET.available = null;
+    paintBar();
+    pushNow();
+    const share = g("shareSyncLink");
+    if (typeof share === "function" && confirm("다른 기기(PC · 휴대폰)에도 같은 키가 있어야 필기가 열립니다.\n지금 연결 링크를 만들어 보낼까요? 받은 기기에서 그 링크를 한 번 열면 됩니다.")) share();
+  }
 
-  /* 배치 — 종이를 화면 폭에 맞춰 통째로 늘인다. 덩이 윗변을 다시 재고, 보이는 조각만 다시 그린다. */
+  /* 배치 — 종이를 화면에 맞춘다. 덩이의 자리(왼쪽 · 위)를 다시 재고, 보이는 조각만 다시 그린다.
+     가로로 넓은 화면(아이패드 가로)에서 문항은 「나란히」 — 왼쪽에 문항 · 보기 · 해설, 오른쪽에 여백 — 로 놓고,
+     문항 + 보기가 한 화면에 담기도록 배율을 낮춘다(3판 — 「문제 전체가 화면에 담겨야」).
+     획은 덩이 왼쪽 위에서 잰 좌표라, 세로로 쌓든 나란히 놓든 같은 덩이의 같은 자리에 그려진다. */
+  const GAP = 20, MIN_S = 0.62;
   function layout(resetTiles) {
+    const st = UI.st || {}, cw = UI.scroll.clientWidth, ch = UI.scroll.clientHeight;
     const paper = UI.content.querySelector('[data-b="p"]');
-    if (paper) paper.style.height = UI.rec.doc.ph + "px";
-    const top = UI.scroll.scrollTop / (UI.s || 1);
-    UI.fitW = UI.scroll.clientWidth;
-    const fitW = Math.min((UI.scroll.clientWidth - 12) / W, 1.5);
-    UI.s = Math.max(0.3, fitW * UI.zoom);
-    const q = Math.min(2.5, Math.max(1, UI.s * (window.devicePixelRatio || 1)));
+    if (paper) paper.style.minHeight = UI.rec.doc.ph + "px";
+    const keepTop = UI.scroll.scrollTop / (UI.s || 1);
+    UI.fitW = cw; UI.fitH = ch;
+    const wide = st.kind === "q" && cw >= 900 && cw > ch * 1.15;
+    const side = wide && UI.tool.side;
+    UI.wide = wide;
+    UI.content.classList.toggle("side", side);
+    UI.el.querySelector("[data-a=side]").hidden = !wide;
+    const SW = side ? 2 * W + GAP : W;
+    if (SW !== UI.SW) { UI.SW = SW; resetTiles = true; }
+    UI.sheet.style.width = UI.layer.style.width = SW + "px";
+    let base = Math.min((cw - 12) / SW, 1.5);
+    const qb = UI.content.querySelector('[data-b="q"]'), ob = UI.content.querySelector('[data-b="o"]');
+    if (st.kind === "q" && qb && ob) {                            // 문항 + 보기가 한 화면에 담기는 배율
+      const sH = (ch - 16) / (qb.offsetHeight + ob.offsetHeight + 8);
+      if (side) base = Math.min(base, Math.max(sH, MIN_S));
+      else if (sH < base && sH >= base * 0.72) base = sH;
+    }
+    UI.s = Math.max(0.3, base * UI.zoom);
+    const q = Math.min(3, Math.max(1, UI.s * (window.devicePixelRatio || 1)));
     if (Math.abs(q - UI.q) > 0.01) { UI.q = q; resetTiles = true; }
+    UI.step = Math.max(0.4, 1.6 / UI.q);                          // 획을 이 길이(논리 px)로 잘게 나눠 그린다 ≈ 화면 1.6 화소
     UI.sheet.style.transform = `scale(${UI.s})`;
-    UI.tops = {}; UI.first = "";
-    const c0 = UI.content.getBoundingClientRect().top;
+    UI.geo = {}; UI.first = "";
+    const c0 = UI.content.getBoundingClientRect();
     UI.content.querySelectorAll("[data-b]").forEach((b) => {
-      const k = b.getAttribute("data-b");
-      UI.tops[k] = (b.getBoundingClientRect().top - c0) / UI.s;
+      const k = b.getAttribute("data-b"), r = b.getBoundingClientRect();
+      // 왼쪽은 종이의 큰 덩이(문항 · 보기 · 해설 · 여백)만 잰다 — 정리본의 절은 늘 왼쪽 끝 기준
+      UI.geo[k] = { x: b.classList.contains("ink-block") ? (r.left - c0.left) / UI.s : 0, y: (r.top - c0.top) / UI.s, w: r.width / UI.s, h: r.height / UI.s };
       if (!UI.first) UI.first = k;
     });
     UI.sheetH = UI.content.offsetHeight;
-    UI.fit.style.width = Math.ceil(W * UI.s) + "px";
+    UI.fit.style.width = Math.ceil(SW * UI.s) + "px";
     UI.fit.style.height = Math.ceil(UI.sheetH * UI.s) + "px";
     UI.layer.style.height = UI.sheetH + "px";
     const need = Math.ceil(UI.sheetH / TILE);
@@ -479,7 +551,8 @@ var MEDKOS_INK = (function () {
       UI.layer.appendChild(c); UI.tiles.push({ c, live: false });
     }
     UI.tiles.forEach((t, i) => { t.c.style.display = i < need ? "" : "none"; if (resetTiles || i >= need) dropTile(t); else t.stale = true; });
-    if (resetTiles) UI.scroll.scrollTop = top * UI.s;
+    if (resetTiles) UI.scroll.scrollTop = keepTop * UI.s;
+    sizeLive();
     ensureTiles();
   }
   function dropTile(t) { if (t.live) { t.c.width = t.c.height = 0; t.live = false; } }
@@ -488,84 +561,152 @@ var MEDKOS_INK = (function () {
     UI.tiles.forEach((t, i) => {
       if (i < lo || i > hi || i * TILE >= UI.sheetH) return dropTile(t);
       if (!t.live) {
-        t.c.style.width = W + "px"; t.c.style.height = TILE + "px";
-        t.c.width = Math.round(W * UI.q); t.c.height = Math.round(TILE * UI.q);
+        t.c.style.width = UI.SW + "px"; t.c.style.height = TILE + "px";
+        t.c.width = Math.round(UI.SW * UI.q); t.c.height = Math.round(TILE * UI.q);
         t.live = true; t.stale = true;
       }
       if (t.stale) paintTile(i);
     });
   }
-  const topOf = (b) => (b in UI.tops ? UI.tops[b] : UI.tops[UI.first] || 0);      // 이름이 사라진 덩이의 필기는 맨 위 덩이로
+  const NOWHERE = { x: 0, y: 0, w: W, h: 0 };
+  const org = (b) => UI.geo[b] || UI.geo[UI.first] || NOWHERE;                     // 이름이 사라진 덩이의 필기는 맨 위 덩이로
   const veiled = (sid) => UI.hideOld && !UI.mine[sid];                              // 푸는 중 — 전에 쓴 필기는 채점 뒤에
   function hiddenBlock(b) {
     if (b !== "e") return false;
     const d = UI.content.querySelector("details.ink-ex");
     return !d || !d.open;
   }
-  function paintTile(i) {
+  function tileCtx(i) {
     const t = UI.tiles[i];
-    if (!t || !t.live) return;
-    t.stale = false;
+    if (!t || !t.live) return null;
     const ctx = t.c.getContext("2d");
     ctx.setTransform(UI.q, 0, 0, UI.q, 0, 0);
-    ctx.clearRect(0, 0, W, TILE);
+    return ctx;
+  }
+  function paintTile(i) {
+    const ctx = tileCtx(i);
+    if (!ctx) return;
+    UI.tiles[i].stale = false;
+    ctx.clearRect(0, 0, UI.SW, TILE);
     const y0 = i * TILE, y1 = y0 + TILE;
     Object.keys(UI.rt).forEach((sid) => {
       const st = UI.rt[sid];
       if (hiddenBlock(st.b) || veiled(sid)) return;
-      const top = topOf(st.b);
-      if (top + st.y1 + 12 < y0 || top + st.y0 - 12 > y1) return;
-      drawStroke(ctx, st, top - y0);
+      const o = org(st.b);
+      if (o.y + st.y1 + 12 < y0 || o.y + st.y0 - 12 > y1) return;
+      drawStroke(ctx, st, o.x, o.y - y0);
     });
   }
-  const widthAt = (w, p) => w * (0.45 + 1.1 * p);
-  function drawStroke(ctx, st, dy) {
+
+  /* 획 그리기 — 「펜으로 쓴 것처럼」(3판).
+     점과 점을 직선으로 잇지 않는다: 이웃한 두 점의 가운데에서 가운데로, 그 사이 점을 당김점으로 하는 곡선을 잇고(모서리가 서지 않는다),
+     그 곡선을 화면 1.6 화소 길이로 잘게 나눠 굵기를 조금씩 바꿔 가며 그린다(구슬 꿴 듯한 마디가 없다).
+     굵기 = 압력(펜슬) 또는 빠르기(손가락 · 마우스 — 빠르면 가늘다)를 앞 점과 섞어 고르게 한 값. 쓰는 동안과 다시 그릴 때가 같은 식이다. */
+  const penW = (w, p) => w * (0.4 + 1.2 * p);
+  function widthsOf(pts, w) {
+    const n = pts.length / 3, ws = new Array(n);
+    for (let i = 0; i < n; i++) ws[i] = i ? ws[i - 1] * 0.55 + penW(w, pts[i * 3 + 2]) * 0.45 : penW(w, pts[2]) * 0.75;
+    return ws;
+  }
+  function piece(ctx, ax, ay, cx, cy, bx, by, wa, wb) {
+    const len = Math.hypot(cx - ax, cy - ay) + Math.hypot(bx - cx, by - cy);
+    const k = Math.max(1, Math.min(96, Math.ceil(len / UI.step)));
+    let px = ax, py = ay;
+    for (let j = 1; j <= k; j++) {
+      const t = j / k, u = 1 - t;
+      const x = u * u * ax + 2 * u * t * cx + t * t * bx, y = u * u * ay + 2 * u * t * cy + t * t * by;
+      ctx.lineWidth = wa + (wb - wa) * (t - 0.5 / k);
+      ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(x, y); ctx.stroke();
+      px = x; py = y;
+    }
+  }
+  function hlPath(ctx, p, dx, dy) {                               // 형광펜 — 굵기가 고르니 한 번에 그려 이음매가 겹쳐 보이지 않게
+    const n = p.length / 3;
+    ctx.beginPath(); ctx.moveTo(p[0] + dx, p[1] + dy);
+    for (let i = 1; i < n - 1; i++) ctx.quadraticCurveTo(p[i * 3] + dx, p[i * 3 + 1] + dy, (p[i * 3] + p[i * 3 + 3]) / 2 + dx, (p[i * 3 + 1] + p[i * 3 + 4]) / 2 + dy);
+    ctx.lineTo(p[(n - 1) * 3] + dx, p[(n - 1) * 3 + 1] + dy);
+    ctx.stroke();
+  }
+  function drawStroke(ctx, st, dx, dy) {
     const p = st.pts, n = p.length / 3;
     ctx.strokeStyle = ctx.fillStyle = st.c;
     ctx.lineJoin = "round";
-    ctx.globalAlpha = st.t === 1 ? 0.3 : 1;
-    ctx.lineCap = st.t === 1 ? "butt" : "round";
-    if (n === 1) { ctx.beginPath(); ctx.arc(p[0], p[1] + dy, Math.max(0.8, st.w * 0.6), 0, 6.3); ctx.fill(); ctx.globalAlpha = 1; return; }
-    if (st.t === 1 || st.flat) {                                 // 굵기가 고른 획 — 한 번에 그려 이음매가 겹쳐 보이지 않게
-      ctx.lineWidth = st.w;
-      ctx.beginPath(); ctx.moveTo(p[0], p[1] + dy);
-      for (let i = 1; i < n - 1; i++) ctx.quadraticCurveTo(p[i * 3], p[i * 3 + 1] + dy, (p[i * 3] + p[i * 3 + 3]) / 2, (p[i * 3 + 1] + p[i * 3 + 4]) / 2 + dy);
-      ctx.lineTo(p[(n - 1) * 3], p[(n - 1) * 3 + 1] + dy); ctx.stroke();
-    } else {
-      for (let i = 1; i < n; i++) {
-        ctx.lineWidth = widthAt(st.w, (p[i * 3 + 2] + p[i * 3 - 1]) / 2);
-        ctx.beginPath(); ctx.moveTo(p[i * 3 - 3], p[i * 3 - 2] + dy); ctx.lineTo(p[i * 3], p[i * 3 + 1] + dy); ctx.stroke();
-      }
+    if (st.t === 1) {
+      ctx.globalAlpha = 0.32; ctx.lineCap = "butt"; ctx.lineWidth = st.w;
+      if (n === 1) { ctx.fillRect(p[0] + dx - st.w / 2, p[1] + dy - st.w / 2, st.w, st.w); } else hlPath(ctx, p, dx, dy);
+      ctx.globalAlpha = 1;
+      return;
     }
-    ctx.globalAlpha = 1;
+    ctx.globalAlpha = 1; ctx.lineCap = "round";
+    const ws = st.ws;
+    if (n === 1) { ctx.beginPath(); ctx.arc(p[0] + dx, p[1] + dy, Math.max(0.7, penW(st.w, p[2]) * 0.55), 0, 6.3); ctx.fill(); return; }
+    let ax = p[0] + dx, ay = p[1] + dy, wa = ws[0];
+    for (let i = 1; i < n - 1; i++) {
+      const mx = (p[i * 3] + p[i * 3 + 3]) / 2 + dx, my = (p[i * 3 + 1] + p[i * 3 + 4]) / 2 + dy, wm = (ws[i] + ws[i + 1]) / 2;
+      piece(ctx, ax, ay, p[i * 3] + dx, p[i * 3 + 1] + dy, mx, my, wa, wm);
+      ax = mx; ay = my; wa = wm;
+    }
+    const lx = p[(n - 1) * 3] + dx, ly = p[(n - 1) * 3 + 1] + dy;
+    piece(ctx, ax, ay, (ax + lx) / 2, (ay + ly) / 2, lx, ly, wa, n === 2 ? ws[1] : ws[n - 1]);
   }
   function runtime(sid, s) {
     const pts = unpack(s.d);
-    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9, flat = true;
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
     for (let i = 0; i < pts.length; i += 3) {
       x0 = Math.min(x0, pts[i]); x1 = Math.max(x1, pts[i]); y0 = Math.min(y0, pts[i + 1]); y1 = Math.max(y1, pts[i + 1]);
-      if (Math.abs(pts[i + 2] - pts[2]) > 0.02) flat = false;
     }
-    return { id: sid, c: s.c || COLORS[0], w: s.w || WIDTHS[1], t: s.t ? 1 : 0, b: s.b || "p", pts, x0, x1, y0, y1, flat };
+    const w = s.w || WIDTHS[2], t = s.t ? 1 : 0;
+    return { id: sid, c: s.c || COLORS[0], w, t, b: s.b || "p", pts, x0, x1, y0, y1, ws: t ? null : widthsOf(pts, w) };
   }
   function rebuildRuntime() {
     UI.rt = {};
     Object.keys(UI.rec.doc.s).forEach((sid) => { UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]); });
   }
   function staleFor(st) {
-    const top = topOf(st.b);
+    const top = org(st.b).y;
     for (let i = Math.max(0, Math.floor((top + st.y0 - 12) / TILE)); i <= Math.floor((top + st.y1 + 12) / TILE) && i < UI.tiles.length; i++) UI.tiles[i].stale = true;
   }
 
+  /* 쓰는 중에만 쓰는 덧층 — 형광펜(한 획을 통째로 다시 그려야 고르다) · 직선 미리보기 · 펜 끝의 마지막 반 마디.
+     화면 크기 한 장이고, 종이 좌표로 그릴 수 있게 변환을 걸어 둔다. */
+  function sizeLive() {
+    const c = UI.live, d = window.devicePixelRatio || 1;
+    const w = Math.round(UI.el.clientWidth * d), h = Math.round(UI.el.clientHeight * d);
+    if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
+  }
+  function liveCtx() {
+    const c = UI.live, d = window.devicePixelRatio || 1, ctx = c.getContext("2d");
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, c.width, c.height);
+    const lr = UI.layer.getBoundingClientRect(), er = UI.el.getBoundingClientRect(), sr = UI.scroll.getBoundingClientRect();
+    ctx.save();
+    ctx.beginPath(); ctx.rect((sr.left - er.left) * d, (sr.top - er.top) * d, sr.width * d, sr.height * d); ctx.clip();   // 도구 막대 위로 번지지 않게
+    const s = lr.width / UI.SW;
+    ctx.setTransform(d * s, 0, 0, d * s, d * (lr.left - er.left), d * (lr.top - er.top));
+    return ctx;
+  }
+  function clearLive() { const c = UI.live, ctx = c.getContext("2d"); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, c.width, c.height); }
+
   /* 입력 — 펜 · 마우스는 쓰고, 손가락은 넘긴다(손가락 쓰기를 켜면 한 손가락 = 쓰기 · 두 손가락 = 넘기기). */
   function pt(e) {
-    const r = UI.layer.getBoundingClientRect(), s = r.width / W;
+    const r = UI.layer.getBoundingClientRect(), s = r.width / UI.SW;
     return [(e.clientX - r.left) / s, (e.clientY - r.top) / s];
   }
-  function blockAt(y) {
-    let best = "p", bt = -1;
-    Object.keys(UI.tops).forEach((b) => { if (UI.tops[b] <= y && UI.tops[b] > bt && !hiddenBlock(b)) { bt = UI.tops[b]; best = b; } });
-    return best;
+  function blockAt(x, y) {
+    let best = "", by = -1;
+    Object.keys(UI.geo).forEach((b) => {
+      const o = UI.geo[b];
+      if (hiddenBlock(b) || y < o.y || o.y <= by || x < o.x - 4 || x > o.x + o.w + 4) return;
+      by = o.y; best = b;
+    });
+    return best || (UI.geo.p ? "p" : UI.first);
+  }
+  // 손가락 · 마우스에는 압력이 없다 — 빠르기로 흉내 낸다(빠르면 가늘게), 앞 값과 섞어 튀지 않게
+  function pressureOf(e, a, x, y) {
+    if (e.pointerType === "pen" && e.pressure > 0) return e.pressure;
+    if (!a) return 0.5;
+    const n = a.pts.length, dt = Math.max(1, (e.timeStamp || 0) - a.lt), v = Math.hypot(x - a.pts[n - 3], y - a.pts[n - 2]) / dt;
+    return a.pts[n - 1] * 0.7 + Math.max(0.22, Math.min(0.72, 0.72 - v * 0.35)) * 0.3;
   }
   function bindInput() {
     const L = UI.layer;
@@ -575,6 +716,7 @@ var MEDKOS_INK = (function () {
       if (stylus || UI.tool.finger || UI.act || Date.now() - UI.lastPen < 500) e.preventDefault();
     }, { passive: false });
     L.addEventListener("pointerdown", (e) => {
+      closePalette();
       if (e.pointerType === "touch" && !UI.tool.finger) return;
       if (e.pointerType === "mouse" && e.button !== 0) return;
       if (UI.act) {                                              // 손가락 쓰기 중 둘째 손가락 → 쓰던 획을 버리고 넘기기로
@@ -583,9 +725,11 @@ var MEDKOS_INK = (function () {
       }
       e.preventDefault();
       try { L.setPointerCapture(e.pointerId); } catch (_) { /* 무시 */ }
-      const p = pt(e), b = blockAt(p[1]);
-      UI.act = { id: e.pointerId, type: e.pointerType, b, top: UI.tops[b], t0: Date.now(), cx: e.clientX, cy: e.clientY, moved: false,
-                 pts: [p[0], p[1] - UI.tops[b], pressure(e)], erase: UI.tool.kind === "erase" };
+      const p = pt(e), b = blockAt(p[0], p[1]), o = org(b), st = liveStyle();
+      const pr = e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5;
+      UI.act = { id: e.pointerId, type: e.pointerType, b, ox: o.x, oy: o.y, t0: Date.now(), lt: e.timeStamp || 0, cx: e.clientX, cy: e.clientY, moved: false,
+                 st, pts: [p[0] - o.x, p[1] - o.y, pr], ws: [penW(st.w, pr) * 0.75], mx: p[0], my: p[1], mw: penW(st.w, pr) * 0.75,
+                 erase: UI.tool.kind === "erase", line: !!UI.tool.line, travel: 0, hx: p[0], hy: p[1], hold: 0 };
       if (e.pointerType === "pen") UI.lastPen = Date.now();
       if (UI.act.erase) eraseAt(p);
     });
@@ -599,20 +743,36 @@ var MEDKOS_INK = (function () {
       (evs.length ? evs : [e]).forEach((ev) => {
         const p = pt(ev);
         if (a.erase) return eraseAt(p);
-        const n = a.pts.length, lx = a.pts[n - 3], ly = a.pts[n - 2];
-        const x = p[0], y = p[1] - a.top;
-        if (Math.abs(x - lx) + Math.abs(y - ly) < 0.4) return;
-        const pr = pressure(ev);
+        if (a.line) { a.ex = p[0] - a.ox; a.ey = p[1] - a.oy; return; }
+        const n = a.pts.length, lx = a.pts[n - 3], ly = a.pts[n - 2], x = p[0] - a.ox, y = p[1] - a.oy;
+        const d = Math.hypot(x - lx, y - ly);
+        if (d < 0.35) return;
+        const pr = pressureOf(ev, a, x, y);
+        a.lt = ev.timeStamp || a.lt; a.travel += d;
         a.pts.push(x, y, pr);
-        liveSegment(lx, ly + a.top, x, y + a.top, (pr + a.pts[n - 1]) / 2);
+        a.ws.push(a.ws[a.ws.length - 1] * 0.55 + penW(a.st.w, pr) * 0.45);
+        const k = a.pts.length / 3;
+        if (!a.st.t && k >= 3) {                                   // 가운데 → 가운데, 앞 점이 당김점
+          const mx = (lx + x) / 2 + a.ox, my = (ly + y) / 2 + a.oy, mw = (a.ws[k - 2] + a.ws[k - 1]) / 2;
+          inkPiece(a.st, a.mx, a.my, lx + a.ox, ly + a.oy, mx, my, a.mw, mw);
+          a.mx = mx; a.my = my; a.mw = mw;
+        }
+        // 멈춰 있으면 직선으로 — 2.5 넘게 움직일 때마다 시계를 다시 건다
+        if (Math.hypot(p[0] - a.hx, p[1] - a.hy) > 2.5) {
+          a.hx = p[0]; a.hy = p[1];
+          clearTimeout(a.hold); a.hold = setTimeout(() => holdToLine(a), 480);
+        }
       });
+      if (!a.erase) drawLive(a);
       if (e.pointerType === "pen") UI.lastPen = Date.now();
     });
     const end = (e) => {
       const a = UI.act;
       if (!a || e.pointerId !== a.id) return;
       UI.act = null;
+      clearTimeout(a.hold);
       if (a.pan || a.erase) { if (a.erase) flushErase(); return; }
+      clearLive();
       if (e.type === "pointercancel") { ensureStale(a); return; }
       if (!a.moved && Date.now() - a.t0 < 500) {                 // 톡 — 아래가 누르는 것(해설 펼치기 등)이면 그것을 누른다
         L.style.pointerEvents = "none";
@@ -621,7 +781,17 @@ var MEDKOS_INK = (function () {
         const hit = under && under.closest && under.closest(TAPPABLE);
         if (hit && UI.content.contains(hit)) { ensureStale(a); UI.tapAt = Date.now(); hit.click(); return; }
       }
-      commitStroke(a);
+      if (a.line && a.ex != null) {                               // 직선 — 처음과 끝 두 점만 남긴다
+        const z = snapLine(a);
+        a.pts = [a.pts[0], a.pts[1], 0.5, z[0], z[1], 0.5];
+        return commitStroke(a, true);
+      }
+      const k = a.pts.length / 3;
+      if (a.st.t) return commitStroke(a, true);                   // 형광펜은 덧층에만 그렸다 → 조각에 옮겨 그린다
+      if (k === 1) return commitStroke(a, true);
+      const lx = a.pts[(k - 1) * 3] + a.ox, ly = a.pts[(k - 1) * 3 + 1] + a.oy;
+      inkPiece(a.st, a.mx, a.my, (a.mx + lx) / 2, (a.my + ly) / 2, lx, ly, a.mw, k === 2 ? a.ws[1] : a.ws[k - 1]);
+      commitStroke(a, false);                                     // 쓰는 동안 그린 것이 곧 마지막 모양 — 다시 그리지 않는다
     };
     L.addEventListener("pointerup", end);
     L.addEventListener("pointercancel", end);
@@ -635,40 +805,70 @@ var MEDKOS_INK = (function () {
     });
   }
   const TAPPABLE = "[data-pick], details.ink-ex > summary";      // 종이에서 누를 수 있는 것은 이 둘뿐(정리본 안 단추는 누르지 않는다)
-  const pressure = (e) => (e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5);
   function liveStyle() {
     const t = UI.tool;
-    return t.kind === "hl" ? { c: HL, w: 16, t: 1 } : { c: t.color, w: t.width, t: 0 };
+    return t.kind === "hl" ? { c: t.hlColor, w: 16, t: 1 } : { c: t.color, w: t.width, t: 0 };
   }
-  function liveSegment(x0, y0, x1, y1, pr) {
-    const st = liveStyle(), w = st.t ? st.w : widthAt(st.w, pr);
-    for (let i = Math.max(0, Math.floor((Math.min(y0, y1) - w) / TILE)); i <= Math.floor((Math.max(y0, y1) + w) / TILE) && i < UI.tiles.length; i++) {
-      const t = UI.tiles[i];
-      if (!t.live) continue;
-      const ctx = t.c.getContext("2d");
-      ctx.setTransform(UI.q, 0, 0, UI.q, 0, 0);
-      ctx.strokeStyle = st.c; ctx.lineWidth = w; ctx.lineJoin = "round";
-      ctx.lineCap = st.t ? "butt" : "round"; ctx.globalAlpha = st.t ? 0.3 : 1;
-      ctx.beginPath(); ctx.moveTo(x0, y0 - i * TILE); ctx.lineTo(x1, y1 - i * TILE); ctx.stroke();
-      ctx.globalAlpha = 1;
+  // 펜 획의 한 마디를 걸친 조각 캔버스마다 그린다(종이 좌표)
+  function inkPiece(st, ax, ay, cx, cy, bx, by, wa, wb) {
+    const pad = Math.max(wa, wb) + 1, lo = Math.min(ay, cy, by) - pad, hi = Math.max(ay, cy, by) + pad;
+    for (let i = Math.max(0, Math.floor(lo / TILE)); i <= Math.floor(hi / TILE) && i < UI.tiles.length; i++) {
+      const ctx = tileCtx(i);
+      if (!ctx) continue;
+      ctx.globalAlpha = 1; ctx.strokeStyle = st.c; ctx.lineCap = "round"; ctx.lineJoin = "round";
+      piece(ctx, ax, ay - i * TILE, cx, cy - i * TILE, bx, by - i * TILE, wa, wb);
     }
+  }
+  // 수평 · 수직에 가까우면(약 4도) 딱 맞춘다
+  function snapLine(a) {
+    let dx = a.ex - a.pts[0], dy = a.ey - a.pts[1];
+    if (Math.abs(dy) < Math.abs(dx) * 0.07) dy = 0; else if (Math.abs(dx) < Math.abs(dy) * 0.07) dx = 0;
+    return [a.pts[0] + dx, a.pts[1] + dy];
+  }
+  function holdToLine(a) {
+    if (UI.act !== a || a.line || a.erase || a.travel < 24) return;
+    const n = a.pts.length;
+    a.line = true; a.ex = a.pts[n - 3]; a.ey = a.pts[n - 2];
+    ensureStale(a);                                               // 지금까지 그린 굽은 선을 지운다
+    drawLive(a);
+    status("직선으로 폈습니다");
+  }
+  function drawLive(a) {
+    const ctx = liveCtx(), st = a.st;
+    ctx.strokeStyle = st.c; ctx.lineJoin = "round";
+    if (a.line) {
+      if (a.ex == null) { ctx.restore(); return; }
+      const z = snapLine(a);
+      ctx.globalAlpha = st.t ? 0.32 : 1; ctx.lineCap = st.t ? "butt" : "round"; ctx.lineWidth = st.t ? st.w : penW(st.w, 0.5);
+      ctx.beginPath(); ctx.moveTo(a.pts[0] + a.ox, a.pts[1] + a.oy); ctx.lineTo(z[0] + a.ox, z[1] + a.oy); ctx.stroke();
+    } else if (st.t) {
+      ctx.globalAlpha = 0.32; ctx.lineCap = "butt"; ctx.lineWidth = st.w;
+      if (a.pts.length > 3) hlPath(ctx, a.pts, a.ox, a.oy);
+    } else {                                                      // 펜 끝 — 마지막 가운데 점에서 지금 점까지(다음 점이 오면 조각에 제대로 그려진다)
+      const n = a.pts.length;
+      ctx.globalAlpha = 1; ctx.lineCap = "round"; ctx.lineWidth = a.ws[a.ws.length - 1];
+      ctx.beginPath(); ctx.moveTo(a.mx, a.my); ctx.lineTo(a.pts[n - 3] + a.ox, a.pts[n - 2] + a.oy); ctx.stroke();
+    }
+    ctx.restore();
   }
   function ensureStale(a) {                                       // 버린 획의 흔적을 지운다
     let y0 = 1e9, y1 = -1e9;
     for (let i = 1; i < a.pts.length; i += 3) { y0 = Math.min(y0, a.pts[i]); y1 = Math.max(y1, a.pts[i]); }
     staleFor({ b: a.b, y0, y1 }); ensureTiles();
   }
-  function cancelStroke() { if (UI.act && UI.act.pts) ensureStale(UI.act); }
+  function cancelStroke() { if (UI.act && UI.act.pts) { clearTimeout(UI.act.hold); clearLive(); ensureStale(UI.act); } }
   function newId() { return device().slice(-8) + "-" + Date.now().toString(36) + "-" + Math.floor(Math.random() * 46656).toString(36); }
-  function commitStroke(a) {
-    const st = liveStyle(), sid = newId();
+  function commitStroke(a, repaint) {
+    const st = a.st, sid = newId();
     UI.rec.doc.s[sid] = { c: st.c, w: st.w, t: st.t, b: a.b, d: pack(a.pts) };
     UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]);
     UI.mine[sid] = 1;
     UI.undo.push({ add: sid });
-    staleFor(UI.rt[sid]);
+    if (repaint) staleFor(UI.rt[sid]);
     // 여백 끝 가까이까지 썼으면 종이를 늘인다
-    if (a.b === "p" && UI.rt[sid].y1 > UI.rec.doc.ph - 160) { UI.rec.doc.ph += PAPER_STEP; layout(false); } else ensureTiles();
+    const pg = UI.geo.p;
+    if (a.b === "p" && pg && UI.rt[sid].y1 > pg.h - 160) { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round(pg.h)) + PAPER_STEP; layout(false); }
+    else if (repaint) ensureTiles();
     touched(); paintBar();
   }
   // 지우개 — 지나간 길(앞 점 → 지금 점)을 촘촘히 나눠, 획의 **선분**까지의 거리로 판정한다(획의 점만 보면 빨리 그은 획을 놓친다).
@@ -686,7 +886,7 @@ var MEDKOS_INK = (function () {
       Object.keys(UI.rt).forEach((sid) => {
         const st = UI.rt[sid];
         if (hiddenBlock(st.b) || veiled(sid)) return;
-        const x = ex, y = ey - topOf(st.b), r = R + st.w / 2;
+        const o = org(st.b), x = ex - o.x, y = ey - o.y, r = R + st.w / 2;
         if (x < st.x0 - r || x > st.x1 + r || y < st.y0 - r || y > st.y1 + r) return;
         const q = st.pts;
         for (let i = 0; i < q.length; i += 3) {

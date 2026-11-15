@@ -173,6 +173,18 @@ class Wiring(unittest.TestCase):
         self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept"])', fn)
         self.assertIn('replace(/#/g, "--")', ink)                       # 변형 문항 id 의 # 은 파일 이름에 못 쓴다
 
+    def test_pen_feel_and_layout_stay_wired(self):
+        # 3판(2026-11-15) — 써 본 뒤의 요청: 획 부드럽게 · 색 여러 개 · 직선 · 문항이 한 화면에 · 필기장에서 키 넣기
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        css = (DOCS / "style.css").read_text(encoding="utf-8")
+        self.assertIn("inkPiece(a.st, a.mx, a.my,", ink)               # 쓰는 동안에도 다시 그릴 때와 같은 곡선 조각으로
+        self.assertIn("function widthsOf(pts, w)", ink)
+        self.assertEqual(len(re.search(r'const COLORS = \[(.*?)\];', ink).group(1).split(',')), 12)
+        self.assertIn("function holdToLine(a)", ink)                 # 긋다가 멈추면 직선
+        self.assertIn("x: b.classList.contains(\"ink-block\") ? (r.left - c0.left) / UI.s : 0", ink)   # 획은 덩이 왼쪽 위 기준
+        self.assertIn(".ink-content.side{display:grid; grid-template-columns:820px 820px;", css)
+        self.assertIn("async function askKey()", ink)
+
     def test_function_keeps_main_untouched(self):
         fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")
         self.assertIn('env.INK_BRANCH || "ink-data"', fn)
