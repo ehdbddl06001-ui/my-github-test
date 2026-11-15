@@ -6,6 +6,10 @@
   "use strict";
   var PAPERS = (window.PAPERS || []).slice();
   var NOTE_KEY = "medkos_paper_notes";
+  // 정리본 ↔ 논문 연결(related.js) · 정리본에서 넘어오면 ?id= 로 그 논문만 띄운다
+  var REL = window.MEDKOS_RELATED || {};
+  var ONLY = "";
+  try { ONLY = new URLSearchParams(location.search).get("id") || ""; } catch (e) { ONLY = ""; }
 
   var $ = function (id) { return document.getElementById(id); };
   var listEl = $("list"), countEl = $("count");
@@ -76,7 +80,14 @@
       + '<button class="notecopy" data-id="' + esc(p.id) + '">📋 복사</button>'
       + "</div></div>";
 
-    var details = "<details><summary>초록·요약·내 생각</summary>" + body + editor + "</details>";
+    var details = "<details" + (ONLY ? " open" : "") + "><summary>초록·요약·내 생각</summary>" + body + editor + "</details>";
+    // 이 논문의 질환을 다룬 개념 정리본(있을 때만)
+    var rc = (REL.papers && REL.papers[p.id] && REL.papers[p.id].c) || [];
+    var related = rc.length
+      ? '<div class="prel">관련 정리본 ' + rc.map(function (cid) {
+          return '<a class="pill" href="index.html?concept=' + encodeURIComponent(cid) + '">📖 ' + esc((REL.titles || {})[cid] || cid) + "</a>";
+        }).join(" ") + "</div>"
+      : "";
     var link = p.url
       ? '<a class="plink" href="' + esc(p.url) + '" target="_blank" rel="noopener">PubMed 원문 →</a>' : "";
 
@@ -85,6 +96,7 @@
       + '<div class="ptitle">' + esc(p.title) + "</div>"
       + (meta.length ? '<div class="pmeta">' + meta.join(" · ") + "</div>" : "")
       + (authors ? '<div class="pauthors">' + esc(authors) + "</div>" : "")
+      + related
       + details
       + (link ? '<div style="margin-top:8px">' + link + "</div>" : "")
       + "</article>";
@@ -147,6 +159,7 @@
     var landmarkOnly = landmarkOnlyEl.checked;
     var sortBy = sortByEl.value;
     var rows = PAPERS.filter(function (p) {
+      if (ONLY) return p.id === ONLY;
       if (topic !== "__ALL__" && p.topic !== topic) return false;
       if (landmarkOnly && !p.landmark) return false;
       if (notesOnly && !(NOTES[p.id] && NOTES[p.id].text)) return false;
@@ -171,6 +184,7 @@
     var noteN = Object.keys(NOTES).length;
     countEl.textContent = "총 " + PAPERS.length + "편 중 " + rows.length + "편 표시"
       + (noteN ? " · 내 노트 " + noteN + "개" : "");
+    if (ONLY) countEl.innerHTML = '정리본에서 고른 논문 1편 · <a href="papers.html">전체 논문 보기</a>';
     listEl.innerHTML = rows.length
       ? (sortBy === "citations" ? rows.map(card).join("") : groupedHTML(rows))
       : '<div class="empty">조건에 맞는 논문이 없습니다.</div>';

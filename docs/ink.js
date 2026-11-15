@@ -11,6 +11,10 @@
    가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 🔑 로그인(아이디 · 비밀번호로 키를 만든다).
    맞힌 문항도 「★ 정리본에 넣기」를 누르면 표시(want_note)가 남아 개념 복습 · 정리본 큐에 들어간다(learn.js).
 
+   5판(「PDF 를 필기 앱으로 연 것만큼 선명하게 · 한 내용이 한 쪽에 · 확대 축소」): 필기 캔버스를 종이(transform) 밖에 두어 글자가
+   흐려지지 않게 하고(Safari 는 캔버스를 품은 transform 층을 저해상도 그림으로 굳혀 늘린다), 조각을 화면 512 px 격자로 바꿔 확대해도
+   선명하다 · 정리본은 두 단으로 한 화면에(▥ 두 단) · 두 손가락 확대 축소(Ctrl + 휠) · 가는 펜(0.5 부터) · 정리본은 늘 최신판 위에 필기.
+
    - 펜슬 = 쓰기 · 손가락 = 화면 넘기기(「손가락 쓰기」를 켜면 손가락도 쓴다 — 그때는 두 손가락으로 넘긴다).
    - 필기는 획(벡터)으로 저장한다. 종이 폭을 820 으로 고정해 놓고 화면에 맞춰 통째로 늘이므로 기기가 달라도 같은 자리에 보인다.
      획의 세로 위치는 「문항 / 선지 / 해설 / 여백」 가운데 시작한 덩이의 윗변에서 잰다 — 글꼴이 달라 문항이 한 줄 길어져도
@@ -24,12 +28,12 @@ var MEDKOS_INK = (function () {
   "use strict";
 
   const W = 820;                 // 종이 폭(논리 px) — 모든 기기 공통
-  const TILE = 600;              // 필기 층을 이 높이의 캔버스 조각으로 나눈다(iOS 캔버스 크기 · 메모리 한도)
+  const TPX = 512;               // 필기 층을 화면 512 px 정사각 캔버스 조각의 격자로 나눈다(확대해도 조각 화소 수가 같다 — iOS 캔버스 한도)
   const PAPER0 = 900, PAPER_STEP = 600;
   const SALT = "medkos-ink-v1";
   const COLORS = ["#1b2430", "#6b7280", "#d92d20", "#e8710a", "#b7791f", "#0f8a4f", "#0e7490", "#1d4ed8", "#4338ca", "#7c3aed", "#db2777", "#7c4a2d"];
   const HLS = ["#f5c518", "#7ddc6f", "#ff8fb3", "#7cc4ff", "#ffb347"];      // 형광펜
-  const WIDTHS = [1.0, 1.5, 2.2, 3.2, 4.8];
+  const WIDTHS = [0.5, 0.8, 1.2, 1.8, 2.6, 4.0];                // 종이 px — 두 단 보기(종이를 줄여 본다)에서도 가는 선이 나오게 0.5 부터
   const QUICK = ["#1b2430", "#d92d20", "#1d4ed8", "#0f8a4f"];             // 막대에 늘 보이는 색(쓴 색이 앞으로 온다)
 
   /* ───────── 순수 함수: 획 압축 · 병합 ───────── */
@@ -54,8 +58,8 @@ var MEDKOS_INK = (function () {
     return out;
   }
   // c = 내가 고른 보기(맞힌 문항도 다시 열면 보이게)
-  // n = 정리본 「내 필기본」의 고정 사본 { at, ver, updated, hash, c: 정리본 } — 처음 쓴 날의 원본을 떠 둔다. 원본(concepts.js)은 매일
-  //     고쳐지지만 내가 밑줄 친 글은 그대로 남아야 하므로 필기는 이 사본 위에 얹는다(2026-11-15 「원본 하나는 남기고 나머지는 필기하면서」).
+  // n = 정리본에 필기할 때의 판 { at, ver, updated, hash, c: 정리본 } — 조용히 떠 둔다. 종이는 늘 최신 정리본을 그리지만(「항상 최신판 위에
+  //     필기」), 정리본이 고쳐지면 이 판과 견줘 바뀐 곳을 알리고 「전에 쓴 판 보기」로 필기가 맞던 글을 다시 볼 수 있게 한다.
   function emptyDoc() { return { v: 1, ph: PAPER0, c: null, n: null, s: {}, g: {}, u: "" }; }
   const sigOf = (c) => String((c && c.hash) || ((c && c.version) || 1) + "|" + ((c && c.updated) || ""));
   function snapOf(c, at) {
@@ -302,7 +306,7 @@ var MEDKOS_INK = (function () {
 
   /* ───────── 화면 ───────── */
   const UI = {
-    el: null, rec: null, rt: {}, geo: {}, tiles: [], s: 1, q: 1, zoom: 1, sheetH: 0, SW: W, step: 1,
+    el: null, rec: null, rt: {}, geo: {}, tiles: new Map(), s: 1, q: 1, zoom: 1, TL: TPX, pinch: null, sheetH: 0, SW: W, step: 1,
     tool: loadTool(), undo: [], mine: {}, st: null, saveT: null, pushT: null, raf: 0, lastPen: 0, act: null, dirtyTiles: null,
   };
   function loadTool() {
@@ -312,7 +316,7 @@ var MEDKOS_INK = (function () {
     const recent = (Array.isArray(t.recent) ? t.recent.filter(hex) : []).concat(QUICK).filter((c, i, l) => l.indexOf(c) === i).slice(0, 4);
     return { kind: t.kind === "hl" || t.kind === "erase" ? t.kind : "pen", color: hex(t.color) ? t.color : COLORS[0],
              hlColor: HLS.indexOf(t.hlColor) >= 0 ? t.hlColor : HLS[0], width: WIDTHS.indexOf(t.width) >= 0 ? t.width : WIDTHS[2],
-             line: !!t.line, side: t.side !== false, even: t.even !== false, finger: !!t.finger, recent };
+             line: !!t.line, side: t.side !== false, cols: t.cols !== false, even: t.even !== false, finger: !!t.finger, recent };
   }
   function saveTool() { try { localStorage.setItem("medkos_ink_tool", JSON.stringify(UI.tool)); } catch (e) { /* 무시 */ } }
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -384,54 +388,43 @@ var MEDKOS_INK = (function () {
   const PAPER_HTML = `<div class="ink-block ink-paper" data-b="p"><span class="ink-ph">여기부터 내 필기 — 왜 틀렸나 · 헷갈린 점 · 다음에 볼 단서</span></div>`;
   // 개념 정리본 종이 — 앱의 정리본 그리기(learn.js)를 그대로 쓰고, 접힌 절을 모두 편다. 절마다 덩이 이름을 붙여
   // 정리본이 고쳐져 절이 늘거나 줄어도 다른 절의 필기가 밀리지 않게 한다(이름이 사라진 절의 필기는 맨 위 덩이로 간다).
-  // 원본 / 내 필기본(2026-11-15) — 필기본(doc.n)이 있으면 **그 판**을 그리고, 없으면 원본을 그린다(쓰기 시작하면 그 판이 필기본이 된다).
-  // 머리띠(.ink-note)가 지금 보는 것이 무엇인지, 원본이 바뀌었으면 어디가 바뀌었는지 알린다. 「원본 보기」는 읽기만(필기 층을 가린다).
+  // 정리본 필기(2026-11-15 2차 — 「항상 최신판 위에 필기」) — 종이는 늘 **최신 정리본**이고 필기는 절 제목을 따라 그 위에 남는다.
+  // 「내 필기본」이라는 구분은 없다. 다만 필기한 뒤 정리본이 고쳐지면 밑줄이 글자와 어긋날 수 있으므로, 필기할 때의 판(doc.n)을 조용히
+  // 떠 두었다가 ① 무엇이 바뀌었는지 머리띠로 알리고 ② 「전에 쓴 판 보기」(읽기만)로 필기가 맞던 글을 다시 볼 수 있게 한다.
+  // 「확인」을 누르면 떠 둔 판을 지금 판으로 바꾼다(머리띠가 사라진다). 정리본이 목록에서 빠지면 떠 둔 판을 그린다.
   const liveConcept = (id) => { const L = g("LEARN"); return (L && typeof L.concept === "function" && L.concept(id)) || null; };
   const verText = (ver, upd) => "v" + ver + (upd ? " · " + upd : "");
   function noteBarHtml(st, n) {
-    const live = st.live, lv = live ? verText(live.version || 1, live.updated) : "", stale = snapStale(n, live);
+    const live = st.live, stale = snapStale(n, live);
     let msg = "", btn = "";
-    if (st.orig) {
-      msg = `<b>원본</b> ${esc(lv)} — 읽기만(필기는 가려 둠)`;
-      btn = `<button type="button" data-note-act="mine">← 내 필기본으로</button>`
-        + (stale ? `<button type="button" data-note-act="rebase">필기본을 이 판으로 옮기기</button>` : "");
-    } else if (!n) {
-      if (live) msg = `<b>원본</b> ${esc(lv)} — 쓰기 시작하면 이 판이 <b>내 필기본</b>으로 고정됩니다(원본이 고쳐져도 그대로).`;
-    } else if (!live) {
-      msg = `<b>내 필기본</b> ${esc(verText(n.ver, n.updated))} 판 — 원본 목록에서는 이 정리본이 빠졌습니다(필기본은 남습니다).`;
+    if (st.old && n) {
+      msg = `<b>전에 쓴 판</b> ${esc(verText(n.ver, n.updated))} — 읽기만`;
+      btn = `<button type="button" data-note-act="live">← 최신판으로</button>`;
+    } else if (n && !live) {
+      msg = `정리본 목록에서 빠진 정리본입니다 — 필기할 때의 판(${esc(verText(n.ver, n.updated))})을 보여 줍니다.`;
     } else if (stale) {
       const ch = changedParts(n.c, live);
-      msg = `<b>내 필기본</b> ${esc(verText(n.ver, n.updated))} 판 — <b>원본이 바뀌었습니다(${esc(lv)}).</b>`
-        + (ch.length ? `<br>바뀐 곳: ${esc(ch.join(" / "))}` : "");
-      btn = `<button type="button" data-note-act="orig">원본(새 판) 보기</button><button type="button" data-note-act="rebase">필기본을 새 판으로 옮기기</button>`;
-    } else {
-      msg = `<b>내 필기본</b> — 원본 ${esc(lv)} 과 같은 판`;
+      msg = `<b>정리본이 고쳐졌습니다</b>(${esc(verText(n.ver, n.updated))} → ${esc(verText(live.version || 1, live.updated))})`
+        + (ch.length ? `<br>바뀐 곳: ${esc(ch.join(" / "))}` : "") + `<br>글이 바뀐 절에서는 필기가 글자와 어긋날 수 있습니다.`;
+      btn = `<button type="button" data-note-act="ack">확인</button><button type="button" data-note-act="old">전에 쓴 판 보기</button>`;
     }
-    return `<div class="ink-note${stale && !st.orig ? " stale" : ""}"><span>${msg}</span>${btn ? `<span class="ink-note-b">${btn}</span>` : ""}</div>`;
+    return msg ? `<div class="ink-note${stale && !st.old ? " stale" : ""}"><span>${msg}</span>${btn ? `<span class="ink-note-b">${btn}</span>` : ""}</div>` : "";
   }
-  // 필기가 생겼는데 필기본이 아직 없으면 지금 원본을 떠 둔다(첫 획 · 예전에 쓴 필기 · 다른 기기에서 받은 필기).
+  // 필기가 생겼는데 떠 둔 판이 아직 없으면 지금 정리본을 떠 둔다(첫 획 · 예전에 쓴 필기 · 다른 기기에서 받은 필기).
   function ensureSnap() {
     const st = UI.st, rec = UI.rec;
-    if (!st || !rec || st.kind !== "concept" || st.orig || rec.doc.n || !st.live || !countStrokes(rec.doc)) return false;
+    if (!st || !rec || st.kind !== "concept" || st.old || rec.doc.n || !st.live || !countStrokes(rec.doc)) return false;
     rec.doc.n = snapOf(st.live); rec.dirty = true;
+    st.snapAt = rec.doc.n.at;
     return true;
-  }
-  function paintNote() {
-    const st = UI.st, old = UI.content.querySelector(".ink-note");
-    if (!st || st.kind !== "concept" || !old) return;
-    const h0 = old.offsetHeight;
-    st.snapAt = UI.rec.doc.n ? UI.rec.doc.n.at : "";
-    old.outerHTML = noteBarHtml(st, UI.rec.doc.n);
-    if (UI.content.querySelector(".ink-note").offsetHeight !== h0) { layout(false); UI.tiles.forEach((t) => { t.stale = true; }); ensureTiles(); }
   }
   function noteAct(a) {
     const st = UI.st;
     if (!st || st.kind !== "concept" || !UI.rec) return;
-    if (a === "orig" || a === "mine") st.orig = a === "orig" && !!st.live;
-    else if (a === "rebase") {
+    if (a === "old" || a === "live") st.old = a === "old" && !!UI.rec.doc.n;
+    else if (a === "ack") {                                       // 바뀐 것을 봤다 — 떠 둔 판을 지금 판으로
       if (!st.live) return;
-      if (!confirm("필기본을 원본의 새 판으로 옮깁니다. 필기는 절 제목을 따라가지만, 글이 바뀐 절에서는 밑줄 · 형광펜이 글자와 어긋날 수 있습니다. 옛 판의 글은 이 필기본에서 사라집니다. 옮길까요?")) return;
-      UI.rec.doc.n = snapOf(st.live); st.orig = false; touched();
+      UI.rec.doc.n = snapOf(st.live); st.old = false; touched();
     } else return;
     closePalette();
     renderSheet(false);
@@ -439,8 +432,8 @@ var MEDKOS_INK = (function () {
   }
   function conceptInto(st) {
     const L = g("LEARN"), n = UI.rec && UI.rec.doc.n;
-    if (st.orig && !st.live) st.orig = false;
-    const use = st.orig ? st.live : (n ? n.c : st.live);
+    if (st.old && !n) st.old = false;
+    const use = st.old ? n.c : (st.live || (n && n.c));
     st.snapAt = n ? n.at : "";
     UI.content.innerHTML = noteBarHtml(st, n) + `<div class="ink-cn"></div>` + PAPER_HTML;
     const box = UI.content.querySelector(".ink-cn");
@@ -459,7 +452,7 @@ var MEDKOS_INK = (function () {
   }
   function renderSheet(openExpl) {
     const st = UI.st;
-    UI.el.classList.toggle("orig", st.kind === "concept" && !!st.orig);
+    UI.el.classList.toggle("old", st.kind === "concept" && !!st.old);
     if (st.kind === "concept") conceptInto(st); else UI.content.innerHTML = questionHtml(st);
     UI.content.querySelectorAll("img").forEach((im) => im.addEventListener("load", () => layout(false)));
     const d = UI.content.querySelector("details.ink-ex");
@@ -504,8 +497,10 @@ var MEDKOS_INK = (function () {
           <button data-a="line" title="직선 — 켜지 않아도 긋다가 잠깐 멈추면 직선으로 펴진다">📏 직선</button>
           <button data-a="undo">↶</button>
           <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">☝ 손가락 쓰기</button>
-          <button data-a="zout" aria-label="작게">−</button><button data-a="zin" aria-label="크게">＋</button>
+          <button data-a="zout" class="ink-nav" aria-label="작게">−</button><button data-a="zin" class="ink-nav" aria-label="크게">＋</button>
+          <button data-a="zfit" class="ink-nav" title="화면 폭에 맞춤 — 두 손가락을 벌리고 오므려 확대 · 축소한다">⤢ 맞춤</button>
           <button data-a="side" title="가로 화면 — 문항 옆에 여백을 나란히">⇆ 나란히</button>
+          <button data-a="cols" title="정리본을 책처럼 두 단으로 — 한 정리본이 한 화면에 들어온다">▥ 두 단</button>
           <button data-a="more">여백 ＋</button>
           <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">🔑 로그인(필기 맞추기)</button>
           <button data-a="flag" title="맞혔어도 헷갈린 문항 — 개념 복습 · 정리본 큐에 넣는다">★ 정리본에 넣기</button>
@@ -525,7 +520,7 @@ var MEDKOS_INK = (function () {
           <div class="ink-pal-r">${HLS.map((c) => `<button data-a="hlc" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="형광펜 색"></button>`).join("")}</div>
         </div>
       </div>
-      <div class="ink-scroll"><div class="ink-fit"><div class="ink-sheet"><div class="ink-content"></div><div class="ink-layer"></div></div></div></div>
+      <div class="ink-scroll"><div class="ink-fit"><div class="ink-sheet"><div class="ink-content"></div></div><div class="ink-layer"></div></div></div>
       <canvas class="ink-live"></canvas>`;
     document.body.appendChild(el);
     UI.el = el;
@@ -549,6 +544,7 @@ var MEDKOS_INK = (function () {
     document.addEventListener("keydown", (e) => { if (UI.rec && e.key === "Escape") close(); });
     document.addEventListener("visibilitychange", () => { if (document.hidden && UI.rec) { flushLocal(); pushNow(); } });
     bindInput();
+    bindZoom();
   }
   function schedule(fn) { cancelAnimationFrame(UI.raf); UI.raf = requestAnimationFrame(fn); }
   function status(text, cls) { const el = document.getElementById("inkStatus"); if (el) { el.textContent = text; el.className = "ink-st " + (cls || ""); } }
@@ -562,7 +558,7 @@ var MEDKOS_INK = (function () {
     UI.pal.querySelectorAll("[data-a=even]").forEach((b) => b.classList.toggle("on", (b.getAttribute("data-v") === "1") === t.even));
     UI.pal.querySelectorAll("[data-a=w]").forEach((b) => b.classList.toggle("on", Number(b.getAttribute("data-w")) === t.width));
     on("[data-a=hl]", t.kind === "hl"); on("[data-a=erase]", t.kind === "erase"); on("[data-a=line]", t.line);
-    on("[data-a=finger]", t.finger); on("[data-a=side]", t.side);
+    on("[data-a=finger]", t.finger); on("[data-a=side]", t.side); on("[data-a=cols]", t.cols);
     UI.el.querySelector(".ink-sw").style.background = t.hlColor;
     UI.el.querySelector("[data-a=undo]").disabled = !UI.undo.length;
     UI.layer.style.touchAction = t.finger ? "none" : "pan-x pan-y";
@@ -594,8 +590,12 @@ var MEDKOS_INK = (function () {
     else if (a === "line") t.line = !t.line;
     else if (a === "finger") t.finger = !t.finger;
     else if (a === "undo") undo();
-    else if (a === "zin" || a === "zout") { UI.zoom = Math.max(0.6, Math.min(2.5, UI.zoom + (a === "zin" ? 0.2 : -0.2))); layout(true); }
+    else if (a === "zin" || a === "zout" || a === "zfit") {
+      const sr = UI.scroll.getBoundingClientRect(), fr = UI.fit.getBoundingClientRect(), cx = sr.left + sr.width / 2, cy = sr.top + sr.height / 3;
+      zoomTo(a === "zfit" ? 1 : UI.zoom * (a === "zin" ? 1.25 : 0.8), (cx - fr.left) / UI.s, (cy - fr.top) / UI.s, cx, cy);
+    }
     else if (a === "side") { t.side = !t.side; UI.zoom = 1; layout(true); }
+    else if (a === "cols") { t.cols = !t.cols; UI.zoom = 1; layout(true); UI.scroll.scrollTop = 0; }
     else if (a === "more") { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round((UI.geo.p || { h: 0 }).h)) + PAPER_STEP; touched(); layout(false); }
     else if (a === "next") return next();
     else if (a === "cprev" || a === "cnext") {
@@ -725,9 +725,15 @@ var MEDKOS_INK = (function () {
     UI.wide = wide;
     UI.content.classList.toggle("side", side);
     UI.el.querySelector("[data-a=side]").hidden = !wide;
-    const SW = side ? 2 * W + GAP : W;
+    // 정리본 두 단(2026-11-15 「한 내용이 한 쪽에」) — 절(덩이)의 폭은 한 단일 때와 같고(764), 단 사이를 56 으로 띄워 둘째 단의 덩이가
+    // 정확히 820 오른쪽에 온다. 덩이는 단 사이에서 쪼개지지 않는다(CSS break-inside) — 획은 덩이 왼쪽 위 기준이라 어느 쪽으로 보든 같은 자리.
+    const canCols = st.kind === "concept" && cw >= 700;
+    const cols = canCols && UI.tool.cols;
+    UI.content.classList.toggle("cols", cols);
+    UI.el.querySelector("[data-a=cols]").hidden = !canCols;
+    const SW = side ? 2 * W + GAP : cols ? 2 * W : W;
     if (SW !== UI.SW) { UI.SW = SW; resetTiles = true; }
-    UI.sheet.style.width = UI.layer.style.width = SW + "px";
+    UI.sheet.style.width = SW + "px";
     let base = Math.min((cw - 12) / SW, 1.5);
     const qb = UI.content.querySelector('[data-b="q"]'), ob = UI.content.querySelector('[data-b="o"]');
     if (st.kind === "q" && qb && ob) {                            // 문항 + 보기가 한 화면에 담기는 배율
@@ -735,46 +741,69 @@ var MEDKOS_INK = (function () {
       if (side) base = Math.min(base, Math.max(sH, MIN_S));
       else if (sH < base && sH >= base * 0.72) base = sH;
     }
-    UI.s = Math.max(0.3, base * UI.zoom);
-    const q = Math.min(3, Math.max(1, UI.s * (window.devicePixelRatio || 1)));
-    if (Math.abs(q - UI.q) > 0.01) { UI.q = q; resetTiles = true; }
-    UI.step = Math.max(0.4, 1.6 / UI.q);                          // 획을 이 길이(논리 px)로 잘게 나눠 그린다 ≈ 화면 1.6 화소
+    UI.zoom = Math.max(ZMIN, Math.min(ZMAX, UI.zoom));
+    const s = Math.max(0.25, Math.min(S_MAX, base * UI.zoom));
+    if (Math.abs(s - UI.s) > 1e-4) resetTiles = true;
+    UI.s = s;
+    // 조각은 화면 px 로 크기가 고정이라(TPX) 배율이 곧 선명도다 — 확대하면 조각이 덮는 종이 넓이가 줄고 화소 밀도는 그만큼 오른다.
+    UI.q = UI.s * (window.devicePixelRatio || 1);
+    UI.TL = TPX / UI.s;                                           // 조각 한 변(종이 px)
+    UI.step = Math.max(0.2, 1.6 / UI.q);                          // 획을 이 길이(종이 px)로 잘게 나눠 그린다 ≈ 화면 1.6 화소
+    // 종이만 transform 으로 맞춘다. 필기 층(캔버스)은 종이 **밖**(형제)에 화면 px 로 둔다 — 캔버스가 transform 안에 있으면 Safari 가
+    // 종이를 통째로 한 장의 그림(저해상도)으로 굳힌 뒤 늘려서 글자가 흐려진다(2026-11-15 「PDF 를 필기 앱으로 열었을 때만큼 선명하게」).
     UI.sheet.style.transform = `scale(${UI.s})`;
     UI.geo = {}; UI.first = "";
-    const c0 = UI.content.getBoundingClientRect();
+    const c0 = UI.content.getBoundingClientRect(), art = UI.content.querySelector(".ink-cn article"), a0 = art ? art.getBoundingClientRect().left : c0.left;
     UI.content.querySelectorAll("[data-b]").forEach((b) => {
-      const k = b.getAttribute("data-b"), r = b.getBoundingClientRect();
-      // 왼쪽은 종이의 큰 덩이(문항 · 보기 · 해설 · 여백)만 잰다 — 정리본의 절은 늘 왼쪽 끝 기준
-      UI.geo[k] = { x: b.classList.contains("ink-block") ? (r.left - c0.left) / UI.s : 0, y: (r.top - c0.top) / UI.s, w: r.width / UI.s, h: r.height / UI.s };
+      const k = b.getAttribute("data-b"), r = b.getBoundingClientRect(), blk = b.classList.contains("ink-block"), left = (r.left - c0.left) / UI.s;
+      // x = 획의 기준점 · hx = 실제 왼쪽(어느 덩이에 쓰는지 고를 때). 종이의 큰 덩이(문항 · 보기 · 해설 · 여백)는 둘이 같고,
+      // 정리본의 절은 기준점이 단의 왼쪽 끝(첫 단 0 · 둘째 단 820)이다 — 한 단일 때 쓴 필기와 같은 좌표.
+      UI.geo[k] = { x: blk ? left : Math.max(0, Math.round((r.left - a0) / UI.s)), hx: left, tol: blk ? 4 : 28, y: (r.top - c0.top) / UI.s, w: r.width / UI.s, h: r.height / UI.s };
       if (!UI.first) UI.first = k;
     });
     UI.sheetH = UI.content.offsetHeight;
     UI.fit.style.width = Math.ceil(SW * UI.s) + "px";
     UI.fit.style.height = Math.ceil(UI.sheetH * UI.s) + "px";
-    UI.layer.style.height = UI.sheetH + "px";
-    const need = Math.ceil(UI.sheetH / TILE);
-    while (UI.tiles.length < need) {
-      const c = document.createElement("canvas");
-      c.className = "ink-tile"; c.style.top = UI.tiles.length * TILE + "px"; c.width = c.height = 0;
-      UI.layer.appendChild(c); UI.tiles.push({ c, live: false });
-    }
-    UI.tiles.forEach((t, i) => { t.c.style.display = i < need ? "" : "none"; if (resetTiles || i >= need) dropTile(t); else t.stale = true; });
-    if (resetTiles) UI.scroll.scrollTop = keepTop * UI.s;
+    UI.layer.style.width = SW * UI.s + "px";
+    UI.layer.style.height = UI.sheetH * UI.s + "px";
+    if (resetTiles) { dropTiles(); UI.scroll.scrollTop = keepTop * UI.s; } else UI.tiles.forEach((t) => { t.stale = true; });
     sizeLive();
     ensureTiles();
   }
-  function dropTile(t) { if (t.live) { t.c.width = t.c.height = 0; t.live = false; } }
+  const ZMIN = 0.5, ZMAX = 6, S_MAX = 4;
+  // 배율을 바꾸되 종이의 (lx, ly) 가 화면의 (cx, cy) 에 그대로 있게 한다(두 손가락 가운데 · 단추는 화면 위쪽 1/3).
+  function zoomTo(z, lx, ly, cx, cy) {
+    UI.zoom = Math.max(ZMIN, Math.min(ZMAX, z));
+    layout(true);
+    const fr = UI.fit.getBoundingClientRect();
+    UI.scroll.scrollLeft += fr.left + lx * UI.s - cx;
+    UI.scroll.scrollTop += fr.top + ly * UI.s - cy;
+    ensureTiles();
+  }
+  function killTile(t) { t.c.width = t.c.height = 0; t.c.remove(); }
+  function dropTiles() { UI.tiles.forEach(killTile); UI.tiles.clear(); }
+  // 보이는 곳(위아래로 한 줄 더)에만 조각을 둔다. 조각 = 화면 TPX 정사각, 화소는 TPX × 기기 배율 — 확대 배율과 무관하게 같은 메모리.
   function ensureTiles() {
-    const lo = Math.floor(UI.scroll.scrollTop / UI.s / TILE) - 1, hi = Math.floor((UI.scroll.scrollTop + UI.scroll.clientHeight) / UI.s / TILE) + 1;
-    UI.tiles.forEach((t, i) => {
-      if (i < lo || i > hi || i * TILE >= UI.sheetH) return dropTile(t);
-      if (!t.live) {
-        t.c.style.width = UI.SW + "px"; t.c.style.height = TILE + "px";
-        t.c.width = Math.round(UI.SW * UI.q); t.c.height = Math.round(TILE * UI.q);
-        t.live = true; t.stale = true;
+    if (!UI.rec || UI.pinch) return;
+    const TL = UI.TL, s = UI.s, fr = UI.fit.getBoundingClientRect(), sr = UI.scroll.getBoundingClientRect();
+    const vx0 = (sr.left - fr.left) / s, vy0 = (sr.top - fr.top) / s, vx1 = vx0 + sr.width / s, vy1 = vy0 + sr.height / s;
+    const x0 = Math.max(0, Math.floor(vx0 / TL)), x1 = Math.min(Math.ceil(UI.SW / TL) - 1, Math.floor(vx1 / TL));
+    const y0 = Math.max(0, Math.floor(vy0 / TL) - 1), y1 = Math.min(Math.ceil(UI.sheetH / TL) - 1, Math.floor(vy1 / TL) + 1);
+    UI.tiles.forEach((t, k) => { if (t.ix < x0 || t.ix > x1 || t.iy < y0 || t.iy > y1) { killTile(t); UI.tiles.delete(k); } });
+    for (let iy = y0; iy <= y1; iy++) for (let ix = x0; ix <= x1; ix++) {
+      const key = ix + "," + iy;
+      let t = UI.tiles.get(key);
+      if (!t) {
+        const c = document.createElement("canvas");
+        c.className = "ink-tile";
+        c.style.left = ix * TPX + "px"; c.style.top = iy * TPX + "px"; c.style.width = c.style.height = TPX + "px";
+        c.width = c.height = Math.max(1, Math.round(TPX * UI.q / s));
+        UI.layer.appendChild(c);
+        t = { c, ix, iy, k: c.width / TL, stale: true };
+        UI.tiles.set(key, t);
       }
-      if (t.stale) paintTile(i);
-    });
+      if (t.stale) paintTile(t);
+    }
   }
   const NOWHERE = { x: 0, y: 0, w: W, h: 0 };
   const org = (b) => UI.geo[b] || UI.geo[UI.first] || NOWHERE;                     // 이름이 사라진 덩이의 필기는 맨 위 덩이로
@@ -784,26 +813,27 @@ var MEDKOS_INK = (function () {
     const d = UI.content.querySelector("details.ink-ex");
     return !d || !d.open;
   }
-  function tileCtx(i) {
-    const t = UI.tiles[i];
-    if (!t || !t.live) return null;
+  // 조각의 그리기 판 — 종이 좌표로 그리면 되게 변환을 걸어 둔다(조각 밖은 저절로 잘린다)
+  function tileCtx(t) {
     const ctx = t.c.getContext("2d");
-    ctx.setTransform(UI.q, 0, 0, UI.q, 0, 0);
+    ctx.setTransform(t.k, 0, 0, t.k, -t.ix * UI.TL * t.k, -t.iy * UI.TL * t.k);
     return ctx;
   }
-  function paintTile(i) {
-    const ctx = tileCtx(i);
-    if (!ctx) return;
-    UI.tiles[i].stale = false;
-    ctx.clearRect(0, 0, UI.SW, TILE);
-    const y0 = i * TILE, y1 = y0 + TILE;
+  function paintTile(t) {
+    const ctx = tileCtx(t), TL = UI.TL, X0 = t.ix * TL, Y0 = t.iy * TL;
+    t.stale = false;
+    ctx.clearRect(X0 - 1, Y0 - 1, TL + 2, TL + 2);
     Object.keys(UI.rt).forEach((sid) => {
       const st = UI.rt[sid];
       if (hiddenBlock(st.b) || veiled(sid)) return;
-      const o = org(st.b);
-      if (o.y + st.y1 + 12 < y0 || o.y + st.y0 - 12 > y1) return;
-      drawStroke(ctx, st, o.x, o.y - y0);
+      const o = org(st.b), m = st.w + 12;
+      if (o.y + st.y1 + m < Y0 || o.y + st.y0 - m > Y0 + TL || o.x + st.x1 + m < X0 || o.x + st.x0 - m > X0 + TL) return;
+      drawStroke(ctx, st, o.x, o.y);
     });
+  }
+  function staleRect(x0, y0, x1, y1) {
+    const TL = UI.TL;
+    UI.tiles.forEach((t) => { if (t.ix * TL <= x1 && (t.ix + 1) * TL >= x0 && t.iy * TL <= y1 && (t.iy + 1) * TL >= y0) t.stale = true; });
   }
 
   /* 획 그리기 — 「펜으로 쓴 것처럼」(3판).
@@ -872,8 +902,8 @@ var MEDKOS_INK = (function () {
     Object.keys(UI.rec.doc.s).forEach((sid) => { UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]); });
   }
   function staleFor(st) {
-    const top = org(st.b).y;
-    for (let i = Math.max(0, Math.floor((top + st.y0 - 12) / TILE)); i <= Math.floor((top + st.y1 + 12) / TILE) && i < UI.tiles.length; i++) UI.tiles[i].stale = true;
+    const o = org(st.b), m = (st.w || 16) + 12;
+    staleRect(o.x + st.x0 - m, o.y + st.y0 - m, o.x + st.x1 + m, o.y + st.y1 + m);
   }
 
   /* 쓰는 중에만 쓰는 덧층 — 형광펜(한 획을 통째로 다시 그려야 고르다) · 직선 미리보기 · 펜 끝의 마지막 반 마디.
@@ -905,7 +935,7 @@ var MEDKOS_INK = (function () {
     let best = "", by = -1;
     Object.keys(UI.geo).forEach((b) => {
       const o = UI.geo[b];
-      if (hiddenBlock(b) || y < o.y || o.y <= by || x < o.x - 4 || x > o.x + o.w + 4) return;
+      if (hiddenBlock(b) || y < o.y || o.y <= by || x < o.hx - o.tol || x > o.hx + o.w + o.tol) return;
       by = o.y; best = b;
     });
     return best || (UI.geo.p ? "p" : UI.first);
@@ -948,7 +978,7 @@ var MEDKOS_INK = (function () {
       if (!a) { if (UI.tool.kind === "erase" && e.pointerType !== "touch") drawEraser(pt(e)); return; }   // 띄워서 움직일 때도 범위를 보인다
       if (e.pointerId !== a.id) return;
       e.preventDefault();
-      if (a.pan) { UI.scroll.scrollTop += a.y - e.clientY; UI.scroll.scrollLeft += a.x - e.clientX; a.y = e.clientY; a.x = e.clientX; return; }
+      if (a.pan) { if (UI.pinch) return; UI.scroll.scrollTop += a.y - e.clientY; UI.scroll.scrollLeft += a.x - e.clientX; a.y = e.clientY; a.x = e.clientX; return; }
       if (Math.abs(e.clientX - a.cx) + Math.abs(e.clientY - a.cy) > 4) a.moved = true;
       const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [];
       (evs.length ? evs : [e]).forEach((ev) => {
@@ -1016,20 +1046,67 @@ var MEDKOS_INK = (function () {
       if (hit && UI.content.contains(hit)) { UI.tapAt = Date.now(); hit.click(); }
     });
   }
-  const TAPPABLE = "[data-pick], details.ink-ex > summary, [data-note-act]";      // 종이에서 누를 수 있는 것은 이 셋뿐(정리본 안 단추는 누르지 않는다)
+  const TAPPABLE = "[data-pick], details.ink-ex > summary, [data-note-act], a[data-paper]";      // 종이에서 누를 수 있는 것은 이것뿐(정리본 안 단추는 누르지 않는다)
   function liveStyle() {
     const t = UI.tool;
     return t.kind === "hl" ? { c: t.hlColor, w: 16, t: 1 } : { c: t.color, w: t.width, t: 0 };
   }
   // 펜 획의 한 마디를 걸친 조각 캔버스마다 그린다(종이 좌표)
   function inkPiece(st, ax, ay, cx, cy, bx, by, wa, wb) {
-    const pad = Math.max(wa, wb) + 1, lo = Math.min(ay, cy, by) - pad, hi = Math.max(ay, cy, by) + pad;
-    for (let i = Math.max(0, Math.floor(lo / TILE)); i <= Math.floor(hi / TILE) && i < UI.tiles.length; i++) {
-      const ctx = tileCtx(i);
-      if (!ctx) continue;
+    const pad = Math.max(wa, wb) + 1, TL = UI.TL;
+    const x0 = Math.min(ax, cx, bx) - pad, x1 = Math.max(ax, cx, bx) + pad, y0 = Math.min(ay, cy, by) - pad, y1 = Math.max(ay, cy, by) + pad;
+    UI.tiles.forEach((t) => {
+      if (t.ix * TL > x1 || (t.ix + 1) * TL < x0 || t.iy * TL > y1 || (t.iy + 1) * TL < y0) return;
+      const ctx = tileCtx(t);
       ctx.globalAlpha = 1; ctx.strokeStyle = st.c; ctx.lineCap = "round"; ctx.lineJoin = "round";
-      piece(ctx, ax, ay - i * TILE, cx, cy - i * TILE, bx, by - i * TILE, wa, wb);
-    }
+      piece(ctx, ax, ay, cx, cy, bx, by, wa, wb);
+    });
+  }
+  /* 두 손가락 확대 · 축소(2026-11-15 「축소 · 확대를 하면 좋겠다」). 오므리고 벌리는 동안은 종이를 통째로 늘여 보이고(빠르다),
+     손을 떼면 그 배율로 다시 배치해 글자와 필기를 선명하게 그린다. 두 손가락을 같이 끌면 넘기기도 된다. 펜을 쓰는 중 · 쓴 직후에는
+     무시한다(손바닥). 마우스 · 트랙패드는 Ctrl + 휠. */
+  function bindZoom() {
+    const sc = UI.scroll;
+    let gz = null, wheelT = 0, wz = null;
+    const two = (e) => {
+      const a = e.touches[0], b = e.touches[1];
+      return { d: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY) || 1, x: (a.clientX + b.clientX) / 2, y: (a.clientY + b.clientY) / 2 };
+    };
+    sc.addEventListener("touchstart", (e) => {
+      if (e.touches.length !== 2 || !UI.rec || gz) return;
+      if ([].some.call(e.touches, (t) => t.touchType === "stylus") || (UI.act && UI.act.type === "pen") || Date.now() - UI.lastPen < 700) return;
+      const m = two(e), fr = UI.fit.getBoundingClientRect();
+      gz = UI.pinch = { d0: m.d, z0: UI.zoom, lx: (m.x - fr.left) / UI.s, ly: (m.y - fr.top) / UI.s, x0: m.x, y0: m.y, x: m.x, y: m.y, k: 1 };
+      UI.fit.style.transformOrigin = (m.x - fr.left) + "px " + (m.y - fr.top) + "px";
+      if (e.cancelable) e.preventDefault();
+    }, { passive: false });
+    sc.addEventListener("touchmove", (e) => {
+      if (!gz || e.touches.length < 2) return;
+      if (e.cancelable) e.preventDefault();
+      const m = two(e);
+      gz.k = Math.max(ZMIN / gz.z0, Math.min(ZMAX / gz.z0, m.d / gz.d0));
+      gz.x = m.x; gz.y = m.y;
+      UI.fit.style.transform = `translate(${m.x - gz.x0}px, ${m.y - gz.y0}px) scale(${gz.k})`;
+    }, { passive: false });
+    const done = (e) => {
+      if (!gz || e.touches.length >= 2) return;
+      const p = gz;
+      gz = UI.pinch = null;
+      UI.fit.style.transform = ""; UI.fit.style.transformOrigin = "";
+      zoomTo(p.z0 * p.k, p.lx, p.ly, p.x, p.y);
+    };
+    sc.addEventListener("touchend", done);
+    sc.addEventListener("touchcancel", done);
+    sc.addEventListener("wheel", (e) => {
+      if (!e.ctrlKey || !UI.rec) return;
+      e.preventDefault();
+      const fr = UI.fit.getBoundingClientRect();
+      if (!wz) wz = { z: UI.zoom, lx: (e.clientX - fr.left) / UI.s, ly: (e.clientY - fr.top) / UI.s };
+      wz.z = Math.max(ZMIN, Math.min(ZMAX, wz.z * Math.exp(-e.deltaY * 0.01)));
+      wz.x = e.clientX; wz.y = e.clientY;
+      cancelAnimationFrame(wheelT);
+      wheelT = requestAnimationFrame(() => { const p = wz; wz = null; zoomTo(p.z, p.lx, p.ly, p.x, p.y); });
+    }, { passive: false });
   }
   // 수평 · 수직에 가까우면(약 4도) 딱 맞춘다
   function snapLine(a) {
@@ -1064,9 +1141,12 @@ var MEDKOS_INK = (function () {
     ctx.restore();
   }
   function ensureStale(a) {                                       // 버린 획의 흔적을 지운다
-    let y0 = 1e9, y1 = -1e9;
-    for (let i = 1; i < a.pts.length; i += 3) { y0 = Math.min(y0, a.pts[i]); y1 = Math.max(y1, a.pts[i]); }
-    staleFor({ b: a.b, y0, y1 }); ensureTiles();
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+    for (let i = 0; i < a.pts.length; i += 3) {
+      x0 = Math.min(x0, a.pts[i]); x1 = Math.max(x1, a.pts[i]); y0 = Math.min(y0, a.pts[i + 1]); y1 = Math.max(y1, a.pts[i + 1]);
+    }
+    if (a.ex != null) { x0 = Math.min(x0, a.ex); x1 = Math.max(x1, a.ex); y0 = Math.min(y0, a.ey); y1 = Math.max(y1, a.ey); }
+    staleFor({ b: a.b, w: a.st.w, x0, x1, y0, y1 }); ensureTiles();
   }
   function cancelStroke() { if (UI.act && UI.act.pts) { clearTimeout(UI.act.hold); clearLive(); ensureStale(UI.act); } }
   function newId() { return device().slice(-8) + "-" + Date.now().toString(36) + "-" + Math.floor(Math.random() * 46656).toString(36); }
@@ -1138,7 +1218,7 @@ var MEDKOS_INK = (function () {
   function touched() {
     UI.rec.doc.u = new Date().toISOString();
     UI.rec.dirty = true;
-    if (ensureSnap()) paintNote();
+    ensureSnap();
     clearTimeout(UI.saveT); UI.saveT = setTimeout(flushLocal, 600);
     clearTimeout(UI.pushT); UI.pushT = setTimeout(pushNow, 30000);
     status(canSync() ? "저장됨 · 곧 올림" : localWhy());
@@ -1186,7 +1266,7 @@ var MEDKOS_INK = (function () {
     if (Number.isInteger(opts.chosen)) UI.rec.doc.c = opts.chosen;
     const chosen = Number.isInteger(opts.chosen) ? opts.chosen : (w && Number.isInteger(w.chosen) ? w.chosen : UI.rec.doc.c);
     UI.st = { exam, id, kind: isC ? "concept" : "q", q, w, solve: !!opts.solve && !!q, chosen, quiz: !!opts.quiz,
-      live: isC ? liveConcept(id) : null, orig: false, list: isC && Array.isArray(opts.list) ? opts.list : null };
+      live: isC ? liveConcept(id) : null, old: false, list: isC && Array.isArray(opts.list) ? opts.list : null };
     if (ensureSnap()) saveRec(UI.rec);
     UI.undo = []; UI.zoom = 1; UI.mine = {}; UI.hideOld = UI.st.solve;
     UI.el.classList.remove("hidden"); document.body.classList.add("ink-open");
@@ -1220,7 +1300,7 @@ var MEDKOS_INK = (function () {
   async function close() {
     if (!UI.el || UI.el.classList.contains("hidden")) return;
     await leave();
-    UI.tiles.forEach(dropTile);
+    dropTiles();
     UI.el.classList.add("hidden"); document.body.classList.remove("ink-open");
     refreshLists();
   }
@@ -1318,24 +1398,23 @@ var MEDKOS_INK = (function () {
     b.onclick = () => open("concept", cid);
     head.appendChild(b);
   }
-  const hasCopy = (cid) => loadSnapIdx()[cid] != null || !!loadIdx()[keyOf("concept", cid)];
+  const hasCopy = (cid) => !!loadIdx()[keyOf("concept", cid)];
   function conceptLabel(cid) {
     const n = loadIdx()[keyOf("concept", cid)] || 0, sx = loadSnapIdx()[cid], live = liveConcept(cid);
-    if (sx == null && !n) return "✍ 이 정리본에 필기";
-    return "✍ 내 필기본" + (n ? ` (${n}획)` : "") + (sx != null && live && sx !== sigOf(live) ? " · 원본 갱신됨" : "");
+    return "✍ 이 정리본에 필기" + (n ? ` (${n}획)` : "") + (n && sx != null && live && sx !== sigOf(live) ? " · 고쳐짐" : "");
   }
 
   /* 학습서 필기(2026-11-15) — 과별 학습서의 단위(개념 정리본)를 책처럼 과목별로 늘어놓고, 눌러서 그 위에 쓴다.
-     원본 = 매일 고쳐지는 정리본(concepts.js · 드라이브의 PDF 도 같은 내용). 내 필기본 = 쓰기 시작한 날의 판을 떠 둔 사본 + 필기.
-     PDF 에 직접 쓰지 않는 까닭: 학습서 PDF 는 매일 다시 만들어져 쪽이 밀리고, 드라이브 쪽 파일을 고치면 「필기 보호」로 새 판이 안 올라온다.
-     과목 → 책 이름은 pipelines/books_config.yaml 의 books 와 같아야 한다(test_ink 가 본다). */
+     종이는 늘 최신 정리본이고 필기는 그 위에 남는다(「내 필기본」 구분 없음 — 여러 번 볼 것이라 필기 유무로 나눌 까닭이 없다).
+     필기한 뒤에 고쳐진 정리본에만 「고쳐짐」을 붙인다. PDF 에 직접 쓰지 않는 까닭: 학습서 PDF 는 매일 다시 만들어져 쪽이 밀리고,
+     드라이브 쪽 파일을 고치면 「필기 보호」로 새 판이 안 올라온다. 과목 → 책 이름은 pipelines/books_config.yaml 의 books 와 같아야 한다. */
   const BOOKS = {"Internal Medicine": "내과 총론", "Cardiology": "순환기내과", "Pulmonology": "호흡기내과", "Gastroenterology": "소화기내과", "Nephrology": "신장내과", "Endocrinology": "내분비내과", "Hematology": "혈액종양내과", "Hematology-Oncology": "혈액종양내과", "Infectious Disease": "감염내과", "Rheumatology": "류마티스내과", "Allergy": "알레르기내과", "Neurology": "신경과", "Psychiatry": "정신건강의학과", "Pediatrics": "소아청소년과", "Obstetrics & Gynecology": "산부인과", "Obstetrics and Gynecology": "산부인과", "General Surgery": "외과", "Surgery": "외과", "Orthopedics": "정형외과", "Dermatology": "피부과", "Ophthalmology": "안과", "Emergency Medicine": "응급의학과", "Otorhinolaryngology": "이비인후과", "ENT": "이비인후과", "Urology": "비뇨의학과", "Preventive Medicine": "예방의학", "Epidemiology": "예방의학", "Biochemistry": "기초의학", "Physiology": "기초의학", "Pathology": "기초의학", "Pharmacology": "기초의학", "Microbiology": "기초의학", "Immunology": "기초의학"};
-  const SHELF = { open: {}, f: "all", q: "" };
+  const SHELF = { open: {}, q: "" };
   function shelfRows() {
     const all = window.MEDKOS_CONCEPTS || {}, idx = loadIdx(), sx = loadSnapIdx(), rem = NET.remote.concept || {};
     return Object.keys(all).map((id) => {
-      const c = all[id], n = idx[keyOf("concept", id)] || 0, mine = sx[id] != null || n > 0;
-      return { id, c, n, mine, cloud: !mine && rem[id] != null, stale: sx[id] != null && sx[id] !== sigOf(c), book: BOOKS[c.topic] || c.topic || "기타" };
+      const c = all[id], n = idx[keyOf("concept", id)] || 0;
+      return { id, c, n, cloud: !n && rem[id] != null, stale: n > 0 && sx[id] != null && sx[id] !== sigOf(c), book: BOOKS[c.topic] || c.topic || "기타" };
     });
   }
   function showShelf() {
@@ -1344,10 +1423,9 @@ var MEDKOS_INK = (function () {
       el = document.createElement("div");
       el.id = "inkShelf"; el.className = "ink-list ink-shelf hidden";
       el.innerHTML = `<section class="card"><h2>학습서 필기 <span id="inkShelfCount" class="muted"></span></h2>
-        <p class="muted small"><b>원본</b>은 매일 고쳐지는 최신 정리본입니다. 쓰기 시작한 정리본은 그날의 판이 <b>내 필기본</b>으로 고정되고,
-          원본이 바뀌면 여기와 필기본 머리에 「원본 갱신됨」이 뜹니다 — 원본을 따로 읽거나, 필기본을 새 판으로 옮길 수 있습니다.</p>
+        <p class="muted small">정리본은 늘 최신판으로 열리고, 필기는 그 위에 그대로 남습니다. 필기한 뒤에 고쳐진 정리본에는 「고쳐짐」이 붙고,
+          열면 무엇이 바뀌었는지 알려 줍니다.</p>
         <div class="row"><button data-a="back">← 돌아가기</button>
-          <button type="button" class="chip" data-f="all">전체</button><button type="button" class="chip" data-f="mine">내 필기본</button><button type="button" class="chip" data-f="stale">원본 갱신됨</button>
           <input id="inkShelfQ" type="search" placeholder="제목으로 찾기" autocomplete="off" /></div>
         <div id="inkShelfBody"></div></section>`;
       document.body.appendChild(el);
@@ -1355,7 +1433,6 @@ var MEDKOS_INK = (function () {
         const b = e.target.closest("button");
         if (!b) return;
         if (b.getAttribute("data-a") === "back") return el.classList.add("hidden");
-        if (b.hasAttribute("data-f")) { SHELF.f = b.getAttribute("data-f"); return renderShelf(); }
         if (b.hasAttribute("data-open")) {
           const grp = b.closest("details");
           const list = [].map.call((grp || el).querySelectorAll("button[data-open]"), (x) => x.getAttribute("data-open"));
@@ -1371,26 +1448,22 @@ var MEDKOS_INK = (function () {
     refreshRemote("concept").then((files) => { if (JSON.stringify(files) !== before && !el.classList.contains("hidden")) renderShelf(); });
   }
   function renderShelf() {
-    const el = document.getElementById("inkShelf"), rows = shelfRows();
-    const mine = rows.filter((r) => r.mine).length, stale = rows.filter((r) => r.stale).length;
-    document.getElementById("inkShelfCount").textContent = `(정리본 ${rows.length}개 · 내 필기본 ${mine}개 · 원본 갱신됨 ${stale}개)`;
-    el.querySelectorAll("button[data-f]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-f") === SHELF.f));
-    const narrowed = SHELF.f !== "all" || !!SHELF.q;
-    const show = rows.filter((r) => (SHELF.f === "mine" ? r.mine || r.cloud : SHELF.f === "stale" ? r.stale : true)
-      && (!SHELF.q || (r.c.title + " " + (r.c.condition || "") + " " + r.book).toLowerCase().indexOf(SHELF.q) >= 0));
+    const rows = shelfRows();
+    document.getElementById("inkShelfCount").textContent = `(정리본 ${rows.length}개)`;
+    const show = rows.filter((r) => !SHELF.q || (r.c.title + " " + (r.c.condition || "") + " " + r.book).toLowerCase().indexOf(SHELF.q) >= 0);
     const by = {};
     show.forEach((r) => { (by[r.book] = by[r.book] || []).push(r); });
     const names = Object.keys(by).sort((a, b) => a.localeCompare(b, "ko"));
     document.getElementById("inkShelfBody").innerHTML = names.length ? names.map((bk) => {
       const rs = by[bk].sort((a, b) => String(a.c.title).localeCompare(String(b.c.title), "ko"));
-      const m = rs.filter((r) => r.mine).length, s = rs.filter((r) => r.stale).length;
-      return `<details data-book="${esc(bk)}"${narrowed || SHELF.open[bk] ? " open" : ""}><summary>${esc(bk)} <span class="muted small">${rs.length}개`
-        + (m ? ` · 내 필기본 ${m}` : "") + (s ? ` · 원본 갱신됨 ${s}` : "") + `</span></summary>`
-        + rs.map((r) => `<div class="w"><div class="wmeta"><b>${esc(r.c.title)}</b>${r.stale ? `<span class="ink-badge">원본 갱신됨</span>` : ""}</div>
-          <div class="whead muted">${esc(r.c.objectiveKind || "")} · 원본 ${esc(verText(r.c.version || 1, r.c.updated))}</div>
-          <button data-open="${esc(r.id)}" class="ink-open-btn${r.mine || r.cloud ? " has" : ""}">${r.mine ? "✍ 내 필기본" + (r.n ? ` (${r.n}획)` : "") : r.cloud ? "✍ 내 필기본 ☁" : "✍ 필기 시작"}</button></div>`).join("")
+      const s = rs.filter((r) => r.stale).length;
+      return `<details data-book="${esc(bk)}"${SHELF.q || SHELF.open[bk] ? " open" : ""}><summary>${esc(bk)} <span class="muted small">${rs.length}개`
+        + (s ? ` · 고쳐짐 ${s}` : "") + `</span></summary>`
+        + rs.map((r) => `<div class="w"><div class="wmeta"><b>${esc(r.c.title)}</b>${r.stale ? `<span class="ink-badge">고쳐짐</span>` : ""}</div>
+          <div class="whead muted">${esc(r.c.objectiveKind || "")} · ${esc(verText(r.c.version || 1, r.c.updated))}</div>
+          <button data-open="${esc(r.id)}" class="ink-open-btn${r.n || r.cloud ? " has" : ""}">✍ 열기${r.n ? ` (${r.n}획)` : r.cloud ? " ☁" : ""}</button></div>`).join("")
         + `</details>`;
-    }).join("") : `<p class="muted">${narrowed ? "조건에 맞는 정리본이 없습니다." : "정리본을 불러오지 못했습니다."}</p>`;
+    }).join("") : `<p class="muted">${SHELF.q ? "조건에 맞는 정리본이 없습니다." : "정리본을 불러오지 못했습니다."}</p>`;
   }
   // 문항 화면의 「✍ 펜으로 풀기」 · 첫 화면의 「✍ 필기 모음」 — 앱 껍데기(index.html)를 건드리지 않고 여기서 끼운다.
   function addButtons() {
@@ -1409,20 +1482,20 @@ var MEDKOS_INK = (function () {
       o.id = "inkLogoutBtn"; o.type = "button"; o.className = "small"; o.textContent = "로그아웃"; o.onclick = logout;
       link.parentNode.insertBefore(o, link);
     }
-    if (vw && !document.getElementById("inkAllBtn")) {
-      const b = document.createElement("button");
-      b.id = "inkAllBtn"; b.textContent = "✍ 필기 모음"; b.onclick = showAll;
-      vw.parentNode.insertBefore(b, vw.nextSibling);
+    const nav = document.getElementById("navInk");               // 메뉴 줄 맨 위의 「✍ 필기 모음」(2026-11-15) — 이 화면에서는 새로 읽지 않고 바로 연다
+    if (nav && !nav.getAttribute("data-bound")) {
+      nav.setAttribute("data-bound", "1");
+      nav.addEventListener("click", (e) => { e.preventDefault(); showAll(); });
     }
-    const all = document.getElementById("inkAllBtn");
-    if (all && !document.getElementById("inkShelfBtn")) {
+    if (vw && !document.getElementById("inkShelfBtn")) {
       const b = document.createElement("button");
       b.id = "inkShelfBtn"; b.textContent = "📖 학습서 필기"; b.onclick = showShelf;
-      all.parentNode.insertBefore(b, all.nextSibling);
+      vw.parentNode.insertBefore(b, vw.nextSibling);
     }
   }
   addButtons();
   gateIfNeeded();
+  try { if (new URLSearchParams(location.search).get("view") === "ink") showAll(); } catch (e) { /* 주소를 못 읽으면 그냥 둔다 */ }
 
   window.addEventListener("online", () => { flushAll(); });
   setTimeout(flushAll, 5000);

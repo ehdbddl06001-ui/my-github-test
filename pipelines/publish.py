@@ -42,7 +42,7 @@ BUNDLES = [
     "indexer.py", "export_search_web.py",
     "export_kmle_web.py", "export_usmle_web.py",
     "export_papers_web.py", "export_ailab_web.py", "export_imaging_web.py",
-    "export_concepts_web.py",
+    "export_concepts_web.py", "export_related_web.py",
 ]
 
 

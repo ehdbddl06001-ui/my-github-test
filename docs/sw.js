@@ -10,7 +10,7 @@
    경로는 전부 상대경로라 GitHub Pages(/my-github-test/)와 Cloudflare Pages(/) 어디서든 같다. */
 "use strict";
 
-const VERSION = "medkos-v30";   // 올리면 index.html 의 ?v= 도 같은 번호로(test_sync_key 가 본다)
+const VERSION = "medkos-v31";   // 올리면 index.html 의 ?v= 도 같은 번호로(test_sync_key 가 본다)
 const DATA_TIMEOUT_MS = 8000;   // 이 시간 안에 네트워크 응답이 없으면 캐시로 먼저 보여 준다
 const SHELL = [
   "./", "./index.html", "./style.css", "./app.js", "./ink.js", "./learn.js", "./synckey.js", "./pwa.js", "./manifest.webmanifest",
@@ -19,7 +19,7 @@ const SHELL = [
   "./search.html", "./search-app.js", "./whatsnew.html", "./whatsnew-app.js",
   "./icons/icon-192.png", "./icons/icon-512.png",
 ];
-const DATA_RE = /\/(questions[^/]*\.js|search-index\.js|papers\.js|ailab\.js|atlas3d-data\.js|concepts\.js)$/;
+const DATA_RE = /\/(questions[^/]*\.js|search-index\.js|papers\.js|ailab\.js|atlas3d-data\.js|concepts\.js|related\.js)$/;
 const IMMUTABLE_RE = /\/(assets|icons)\//;
 
 self.addEventListener("install", (e) => {
