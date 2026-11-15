@@ -28,10 +28,11 @@
   if (!SCENES.length) { root.innerHTML = '<div class="empty">3D 장면 자료(atlas3d-data.js)를 불러오지 못했습니다.</div>'; return; }
 
   root.innerHTML = `
-    <div class="scenepick">
-      <div class="chips sp-groups" id="sp-groups"></div>
-      <div class="chips" id="s-scenes"></div>
-    </div>
+    <div class="at-body">
+    <aside class="at-side" id="at-side">
+      <button class="btn at-sidebtn" id="side-btn" aria-expanded="false">장면 고르기 ▾</button>
+      <nav class="at-areas" id="sp-groups" aria-label="장면 목록"></nav>
+    </aside>
     <div class="three-wrap">
       <div class="tcol"><div class="three" id="three"><div class="hud" id="hud">
           <button class="btn sm" id="t-more" aria-expanded="true" title="조작 단추 펴기 · 접기">⚙ 보기 설정</button>
@@ -66,6 +67,7 @@
         <p class="attr note" id="t-attr"></p>
       </div>
     </div>
+    </div>
     <details class="at-src"><summary>모형 출처 · 라이선스 (${(A.sources || []).length}곳)</summary>
       <ul>${(A.sources || []).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> — ${esc(s.by)} · ${esc(s.lic)}</li>`).join('')}</ul>
       <p>장면마다 쓰인 모형은 장면 이름 옆 꼬리표와 화면 아래 출처 줄에 나옵니다. 고친 내용(부품 고르기 · 단순화 · 한글 이름 붙이기)과 전문은
@@ -81,16 +83,35 @@
   function paintPicker() {
     const gs = groups();
     if (!gs.some(([k]) => k === sp.group)) sp.group = (gs.find(([, l]) => l.some(s => s.id === sceneLoaded)) || gs[0])[0];
-    $('#sp-groups').innerHTML = gs.map(([k, l]) => `<button class="chip" data-spg="${esc(k)}" aria-pressed="${k === sp.group}">${esc(k)} <span class="k">${l.length}</span></button>`).join('');
-    $('#s-scenes').innerHTML = gs.find(([k]) => k === sp.group)[1].map(s =>
-      `<button class="chip" data-sc="${esc(s.id)}" title="${esc(s.note || '')}" aria-pressed="${s.id === sceneLoaded}">${esc(s.title)}<span class="srcchip">${esc(s.src)}</span></button>`).join('');
+    // 왼쪽 세로 목록 — 부위를 누르면 그 아래에 장면이 한 줄씩 펼쳐진다(제목 · 설명 · 출처를 줄 맞춰)
+    const row = s => {
+      const [main, ...rest] = s.title.split(' — ');
+      return `<button class="scrow" data-sc="${esc(s.id)}" title="${esc(s.note || '')}" aria-pressed="${s.id === sceneLoaded}">
+        <span class="t">${esc(main)}${rest.length ? `<small>${esc(rest.join(' — '))}</small>` : ''}</span><span class="srcchip">${esc(s.src)}</span></button>`;
+    };
+    const sexOf = s => (/여성|음핵/.test(s.title) ? '여성' : /남성/.test(s.title) ? '남성' : '남녀 공통 · 주변');
+    const rows = l => {
+      const kinds = ['남성', '여성', '남녀 공통 · 주변'].filter(x => l.some(s => sexOf(s) === x));
+      if (kinds.length < 3) return l.map(row).join('');
+      return kinds.map(x => `<p class="subh">${x}</p>` + l.filter(s => sexOf(s) === x).map(row).join('')).join('');
+    };
+    $('#sp-groups').innerHTML = gs.map(([k, l]) => {
+      const open = k === sp.group, has = l.some(s => s.id === sceneLoaded);
+      return `<div class="area${open ? ' open' : ''}"><button class="areah${has ? ' has' : ''}" data-spg="${esc(k)}" aria-expanded="${open}">${esc(k)}<span class="k">${l.length}</span></button>${open ? `<div class="arealist">${rows(l)}</div>` : ''}</div>`;
+    }).join('');
+    const cur = sceneById.get(sceneLoaded);
+    $('#side-btn').textContent = '장면 고르기' + (cur ? ' — ' + cur.title.split(' — ')[0] : '') + ' ▾';
   }
   function followPicker(id) {
     const g = groups().find(([, l]) => l.some(s => s.id === id)); if (g) sp.group = g[0];
     paintPicker();
   }
-  $('#sp-groups').addEventListener('click', e => { const g = e.target.closest('[data-spg]'); if (g) { sp.group = g.dataset.spg; store.set('group', sp.group); paintPicker(); } });
-  $('#s-scenes').addEventListener('click', e => { const b = e.target.closest('[data-sc]'); if (b) loadScene(b.dataset.sc); });
+  $('#sp-groups').addEventListener('click', e => {
+    const b = e.target.closest('[data-sc]');
+    if (b) { $('#at-side').classList.remove('open'); $('#side-btn').setAttribute('aria-expanded', 'false'); loadScene(b.dataset.sc); return; }
+    const g = e.target.closest('[data-spg]'); if (g) { sp.group = g.dataset.spg; store.set('group', sp.group); paintPicker(); }
+  });
+  $('#side-btn').addEventListener('click', e => { const on = $('#at-side').classList.toggle('open'); e.currentTarget.setAttribute('aria-expanded', String(on)); });
 
   /* ── 뷰어 · 장면 불러오기 ── */
   const scriptP = new Map();

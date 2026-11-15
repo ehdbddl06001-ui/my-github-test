@@ -534,3 +534,27 @@ body.pm-open { overflow: hidden; }
 /* 좁은 화면 — 조작 단추가 모형을 덮지 않게 「보기 설정」 하나로 접는다 */
 .hud.compact > :not(#t-more) { display: none; }
 #t-more[aria-expanded="true"] { background: var(--drape); border-color: var(--drape); color: var(--panel); }
+/* ── 장면 고르기: 왼쪽 세로 목록(부위 → 장면) ── */
+.at-body { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 14px; align-items: start; }
+.at-side { position: sticky; top: 8px; max-height: calc(100vh - 16px); overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 6px; }
+.at-sidebtn { display: none; width: 100%; text-align: left; }
+.at-areas { display: grid; gap: 2px; }
+.areah { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 8px; border: 0; background: none; padding: 8px 10px; border-radius: 6px; font-weight: 600; font-size: .9rem; text-align: left; }
+.areah:hover { background: var(--drape-soft); }
+.areah .k { font: 600 .72rem var(--f-mono); color: var(--muted); }
+.areah.has { color: var(--drape); }
+.area.open > .areah { background: var(--drape-soft); }
+.arealist { display: grid; gap: 2px; padding: 4px 0 8px 8px; margin-left: 8px; border-left: 2px solid var(--line); }
+.subh { margin: 6px 0 2px 8px; font: 700 .7rem var(--f-mono); color: var(--muted); letter-spacing: .04em; }
+.scrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 6px; width: 100%; border: 0; background: none; padding: 6px 8px; border-radius: 6px; text-align: left; font-size: .86rem; line-height: 1.35; }
+.scrow:hover { background: var(--drape-soft); }
+.scrow[aria-pressed="true"] { background: var(--drape); color: var(--panel); }
+.scrow small { display: block; font-size: .74rem; opacity: .75; }
+.scrow .srcchip { margin: 2px 0 0; font-size: .6rem; white-space: nowrap; }
+@media (max-width: 1000px) {
+  .at-body { grid-template-columns: minmax(0, 1fr); }
+  .at-side { position: static; max-height: none; }
+  .at-sidebtn { display: block; }
+  .at-side:not(.open) .at-areas { display: none; }
+  .at-side.open .at-areas { margin-top: 6px; max-height: 60vh; overflow: auto; }
+}
