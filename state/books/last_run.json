@@ -1,5 +1,5 @@
 {
- "started": "2026-11-14T10:35:30+09:00",
+ "started": "2026-11-15T10:12:50+09:00",
  "built": [
   "순환기내과",
   "안과"
@@ -58,7 +58,7 @@
  ],
  "layout_trials": {
   "순환기내과": {
-   "tried": 615,
+   "tried": 635,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -152,7 +152,7 @@
   }
  },
  "result": "ok",
- "finished": "2026-11-14T11:54:21+09:00",
+ "finished": "2026-11-15T11:24:13+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -161,25 +161,25 @@
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "845ddc0aaeb88397dbe284f96bb17c32",
-    "archive": "MedKOS_학습서_순환기내과_v30_2026-11-14.pdf"
+    "md5": "6e98d387f4eecccc692cc46378e16f95",
+    "archive": "MedKOS_학습서_순환기내과_v31_2026-11-15.pdf"
    },
    "안과": {
     "file": "MedKOS_학습서_안과.pdf",
     "status": "uploaded",
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
     "kept_id": true,
-    "md5": "b29d0ea7990676cb8bb7620911a298f2",
-    "archive": "MedKOS_학습서_안과_v17_2026-11-14.pdf"
+    "md5": "0172021da51158c0a4e96f10fb85231f",
+    "archive": "MedKOS_학습서_안과_v18_2026-11-15.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "c92468cf58d04829c0e307a3436d9d77"
+    "md5": "28ef1acbf3d0e347fe378e1fc2c709ce"
    }
   },
-  "at": "2026-11-14T11:54:21+09:00"
+  "at": "2026-11-15T11:24:13+09:00"
  }
 }
