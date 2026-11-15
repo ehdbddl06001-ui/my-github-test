@@ -790,8 +790,29 @@
    "date": "2026-11-10",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0668": {
+   "id": "imaging-2026-0668",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "Step 2",
+   "type": "심전도 판독 — 건강검진에서 축 이상을 들은 고령 여성",
+   "style": "usmle_style",
+   "modality": "ECG",
+   "question": "Which of the following is the most likely interpretation of this ECG?",
+   "chosen": 0,
+   "chosenText": "Left ventricular hypertrophy with strain",
+   "answer": 1,
+   "answerText": "Left anterior fascicular block",
+   "coreNote": "",
+   "differ": "",
+   "decision": "Lead I is positive and II, III, and aVF show rS with a deep S, with qR in aVL and a narrow QRS. This is left anterior fascicular block; the preserved initial r excludes an inferior infarction.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261114T202313Z_일일심전도_2026-11-15_3units_3q_687e66ed",
+   "date": "2026-11-15",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-15T01:24:43.515Z"
+ "updated": "2026-11-15T01:25:30.506Z"
 }
