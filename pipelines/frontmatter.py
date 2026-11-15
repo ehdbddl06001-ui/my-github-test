@@ -23,7 +23,7 @@ except ImportError:  # pragma: no cover
 REQUIRED_COMMON = ["id", "type", "topic", "date", "confidence"]
 # 문제형(kmle/usmle) 문서에 추가로 필수인 필드
 REQUIRED_QUESTION = ["stem", "choices", "answer"]
-VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab", "anatomy", "imaging", "concept"}
+VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab", "imaging", "concept"}
 # concept = 학습 목표 단위 개념 정리본(content/concepts/). 세부 계약은 pipelines/concepts.py 가 본다.
 VALID_CONFIDENCE = {"high", "medium", "low"}
 # imaging = 오픈데이터 실제 영상(ECG·CT·피부·병리·CTG) 문항. 의대_시험지_제작 아침 루틴이
@@ -35,92 +35,6 @@ VALID_IMAGING_STYLE = {"kmle_style", "usmle_style"}
 # USMLE는 웹/CLI 퀴즈에서 Step·과목으로 분류되므로 아래 두 필드를 추가로 요구한다.
 REQUIRED_USMLE = ["step", "exam_subject"]
 VALID_STEP = {"Step 1", "Step 2"}
-
-# ── 해부학(anatomy) 계약 — spec: experiments/specs/anatomy-3q-2026.md ──────
-# kind별 계약이 다르다. source_page/question은 출처(provenance)를 강제한다.
-ANATOMY_KINDS = {
-    "source_doc",    # Drive 원본 파일 1개의 inventory 카드(파일ID·해시·처리상태)
-    "source_page",   # PDF 한 페이지(또는 text-lane 섹션)의 출처·분류·용어 목록
-    "concept",       # 층/분지/주행/공간/인접관계 학습 카드
-    "question",      # 태깅·순서·관계·분지·경로 문항
-    "daily_plan",    # 그날의 학습 큐(결정론 선택 결과)
-    "answer_list",   # 답만 있는 자료(tagging 2차)의 파싱 결과
-    "study_guide",   # 회차 범위 전체를 다루는 종합 학습 정리(근육표·관계도·임상 포인트)
-}
-ANATOMY_REGIONS = {
-    "back", "thorax", "upper-limb", "lower-limb", "head", "neck",
-    "abdomen", "pelvis-perineum", "multi",
-}
-ANATOMY_QUESTION_STYLES = {
-    "spotter", "layer-order", "branch-tree", "course-tracing",
-    "relation", "clinical-application", "distinction",
-}
-ANATOMY_EXAM_PHASES = {"tagging-1", "tagging-2"}
-
-
-def _validate_anatomy(meta: dict[str, Any], errors: list[str]) -> None:
-    kind = meta.get("kind")
-    if kind not in ANATOMY_KINDS:
-        errors.append(f"anatomy kind 값 오류: {kind} (허용: {sorted(ANATOMY_KINDS)})")
-        return
-
-    region = meta.get("region")
-    if region and region not in ANATOMY_REGIONS:
-        errors.append(f"anatomy region 값 오류: {region} (허용: {sorted(ANATOMY_REGIONS)})")
-    phase = meta.get("exam_phase")
-    if phase and phase not in ANATOMY_EXAM_PHASES:
-        errors.append(f"anatomy exam_phase 값 오류: {phase}")
-
-    # 공개 게이트: publishable은 명시된 true만 참(안전 기본값 false).
-    if "publishable" in meta and not isinstance(meta["publishable"], bool):
-        errors.append("anatomy publishable 은 boolean 이어야 함(기본 false)")
-
-    if kind in {"source_page", "source_doc", "answer_list"}:
-        if not meta.get("source_file_id"):
-            errors.append(f"anatomy {kind} 필수 필드 누락: source_file_id")
-    if kind == "source_page":
-        # binary lane은 페이지 번호, text lane은 extraction 마커+section이 필수.
-        page = meta.get("source_page")
-        if page is None and meta.get("extraction") != "drive-mcp-text":
-            errors.append(
-                "anatomy source_page: source_page(번호) 또는 "
-                "extraction: drive-mcp-text(+section)를 명시해야 함"
-            )
-        if page is None and not meta.get("section"):
-            errors.append("anatomy source_page(text-lane): section 필수")
-
-    if kind in {"concept", "question", "study_guide"}:
-        refs = meta.get("source_refs")
-        if not refs or not isinstance(refs, list):
-            errors.append(f"anatomy {kind} 필수 필드 누락: source_refs (리스트)")
-        else:
-            for r in refs:
-                if not isinstance(r, dict) or not r.get("source_file_id"):
-                    errors.append("anatomy source_refs 항목에 source_file_id 필요")
-                    break
-
-    if kind == "question":
-        if meta.get("answer_separated") is not True:
-            errors.append("anatomy question: answer_separated: true 필수(정답 분리 원칙)")
-        if not meta.get("answer"):
-            errors.append("anatomy question 필수 필드 누락: answer")
-        if not meta.get("stem"):
-            errors.append("anatomy question 필수 필드 누락: stem")
-        style = meta.get("question_style")
-        if style not in ANATOMY_QUESTION_STYLES:
-            errors.append(
-                f"anatomy question_style 값 오류: {style} "
-                f"(허용: {sorted(ANATOMY_QUESTION_STYLES)})"
-            )
-        # 객관식이면 choices는 리스트, 자유응답형이면 생략 가능.
-        if "choices" in meta and meta["choices"] is not None \
-                and not isinstance(meta["choices"], list):
-            errors.append("anatomy question choices 는 리스트여야 함")
-        # 정답 문자열이 stem에 그대로 노출되지 않아야 한다(최소 누설 검사).
-        ans, stem = str(meta.get("answer", "")), str(meta.get("stem", ""))
-        if ans and len(ans) > 1 and not meta.get("choices") and ans in stem:
-            errors.append("anatomy question: 정답 문자열이 stem에 노출됨")
-
 
 @dataclass
 class Doc:
@@ -210,8 +124,6 @@ def validate(meta: dict[str, Any]) -> list[str]:
         if isinstance(fig, dict) and fig.get("type") == "image" and not fig.get("src"):
             errors.append("imaging figure.src 누락(docs/ 기준 상대경로)")
 
-    if t == "anatomy":
-        _validate_anatomy(meta, errors)
     return errors
 
 

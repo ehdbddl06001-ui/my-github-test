@@ -5,33 +5,16 @@
   "use strict";
   var DATA = window.MEDKOS_INDEX || {};
   var DOCS = (DATA.docs || []).filter(function (d) { return d.date; });
-  // 도해·트리는 content 카드가 아니라 자산 파일이라 검색 색인에 없다 → 별도 매니페스트를
-  // 같은 타임라인에 합친다(라벨판만 — 퀴즈판까지 넣으면 목록이 두 배가 된다).
-  (function () {
-    var DG = window.MEDKOS_DIAGRAMS || {};
-    (DG.items || []).forEach(function (it) {
-      if (it.variant === "quiz") return;
-      DOCS.push({
-        id: it.base, type: "diagram", date: it.date,
-        unit: it.unit || (it.session ? it.session + "회차" : ""),
-        topic: "",                       // 회차는 unit 배지가 보여준다(오른쪽 중복 제거)
-        subtopic: it.title + " — " + it.kindLabel,
-        tags: [it.kind], path: "docs/assets/anatomy/" + it.file,
-        _href: "anatomy.html#diagrams"
-      });
-    });
-    DOCS.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
-  })();
   var SEEN_KEY = "medkos_whatsnew_seen";   // 마지막으로 "여기까지 봤음" 누른 날짜
   var unitSel = "";                        // 회차 배지로 좁힌 상태("6회차")
 
   var TYPE_LABEL = {
-    anatomy: "해부학", kmle: "KMLE", usmle: "USMLE", paper: "논문",
-    ailab: "AI랩", basic: "기초의학", disease: "질환", drug: "약물", diagram: "도해", imaging: "영상"
+    kmle: "KMLE", usmle: "USMLE", paper: "논문",
+    ailab: "AI랩", basic: "기초의학", disease: "질환", drug: "약물", imaging: "영상"
   };
   var TYPE_HREF = {
-    anatomy: "anatomy.html", kmle: "index.html", usmle: "index.html",
-    paper: "papers.html", ailab: "ailab.html", diagram: "anatomy.html#diagrams", imaging: "index.html"
+    kmle: "index.html", usmle: "index.html",
+    paper: "papers.html", ailab: "ailab.html", imaging: "index.html"
   };
   var REPO = DATA.repo || "";
   var BRANCH = DATA.branch || "main";

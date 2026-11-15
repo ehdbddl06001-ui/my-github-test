@@ -17,7 +17,6 @@
 | 정리본 그림(심전도·조직·영상) | `/gen-concept` 「[figure]」 — **확실한 라벨만**(전문가 데이터셋 라벨·논문 그림 설명) | `concept_figures.py find/add/want/none/reject/status` · 수확은 exam-builder `opendata demand` |
 | 오픈데이터 영상 문항 | **여기서 만들지 않는다** — 빌더(`exam-builder`)의 `opendata medkos-export` | `content/imaging/`, `export_imaging_web.py` |
 | 매일 심전도(🫀 덱) | 여기서 만들지 않는다 — 빌더의 매일 심전도 트랙(`ecg_daily.yaml` · `opendata ecg-plan`, run `일일심전도_<날짜>`). 덱 = 영상 카드 중 `modality: ECG`, 오답은 `wrong_imaging` 공유 | `docs/app.js` `ECG` · `deckWrong()` |
-| 해부학(3Q — 2026-10-19 종료, 자료 보존) | `/anatomy-daily` + **`docs/ANATOMY_RULES.md` 먼저** | `docs/ANATOMY_VISUALS.md` |
 | AI·코딩 학습 | `/gen-ailab` `/ai-weekly` `/deepen-week` `/gen-quest` `/ai-mentor` `/ai-debug` | 아래 「실행 로그 루프」 |
 | 커밋 | `python pipelines/publish.py -m "…"` (콘텐츠 = main, 코드 = `--branch claude/…` + PR) | 아래 「커밋 전 필수 순서」 |
 
@@ -28,7 +27,6 @@
 | USMLE 콘텐츠 생성 | 화·목 05:00 | Step 1·2 각 6문항(과목마다 1개, 2026-11-03~) | `prompts/routine_usmle.md` |
 | 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산) → `[figure]` → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
 | 오픈데이터 영상 세트 | 매일 05:00 | exam-builder → MedKOS 내보내기 | exam-builder 저장소 |
-| anatomy-daily | 종료(2026-10-19 · 마지막 커밋 10-18) | 해부 서브노트 | `/anatomy-daily` |
 
 GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2시간 넘게 늦다** — 09-23·24 모두 08:50 무렵),
 `wrong-sync.yml`(오답 동기화), `drive-sync.yml`, `scrape-papers.yml`·`landmark-papers.yml`, `pages.yml`.
@@ -86,7 +84,8 @@ GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2
   · **여기서 직접 만들지 않는다** — exam-builder 의 `opendata medkos-export` 가 세트를 옮긴다
     (`schemas/frontmatter.md` imaging 계약). 원본은 빌더 run, 카드는 파생물. 문항 수정은 빌더에서
     폐기 후 재생성. 웹 번들은 `pipelines/export_imaging_web.py`(publish.py 가 자동 실행).
-- 해부학(3Q) → `content/anatomy/…` — 규칙 전부는 **`docs/ANATOMY_RULES.md`**(원본 PDF·이미지는 `.private/anatomy/`, 커밋 금지).
+- 해부학(3Q · 임상해부학술기 시험용) 자료는 **2026-11-15 사용자 지시로 모두 지웠다** — `content/anatomy/` · `docs/anatomy*` · `docs/assets/anatomy/` ·
+  `pipelines/anatomy_*.py` 와 도해 · 계보 · 실사 복원 스크립트 · `/anatomy-daily`. 되살릴 일이 있으면 git 기록에서 꺼낸다. **3D 아틀라스(`docs/atlas3d*`)는 남아 있다.**
 
 ## 커밋 전 필수 순서
 
@@ -110,11 +109,9 @@ GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2
    신규 콘텐츠까지 반영하게 한다(병합 직후 번들은 낡아 있음).
 2. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
 3. `python pipelines/indexer.py`          (SQLite 재빌드) → 이어서 `docs/` 번들 재생성
-   (도해·트리 SVG를 건드렸으면 `python pipelines/export_diagrams_web.py` 도 함께 —
-    자산은 검색 색인에 안 잡혀 별도 매니페스트가 갤러리·새 자료 목록의 근거다)
 4. 새 `.md` 와 재생성된 `docs/` 번들을 함께 커밋(id_counter·seen_topics·seen_papers 는
    파생물이라 커밋 대상이 아니다; ailab 진도를 바꿨다면 `state/ailab_progress.json` 만 포함).
-5. 콘텐츠(anatomy·kmle·usmle·paper·disease·drug·ailab)는 **main 직접 커밋**이 기본이다.
+5. 콘텐츠(kmle·usmle·paper·disease·drug·ailab)는 **main 직접 커밋**이 기본이다.
    PR이 병합되지 않으면 `docs/` 번들이 main에 못 올라가 홈페이지에 안 뜨기 때문이다.
    판단이 필요한 변경(파이프라인·스킬·규칙)만 PR로 올리고, 그 PR도 **같은 세션에서 병합**한다.
 
@@ -246,9 +243,6 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   결정론은 `pipelines/deepen.py`(완료했지만 아직 안 판 주차를 자동 선택), 실습 카드·**실제
   노트북**을 실측해 A)무엇을 했나 B)문제점 C)대안 D)모델 심화 E)자율학습 로드맵을 `kind:
   deepdive` 카드로. **낡은 repo 노트북 예측 금지 — 실행 로그(`kind: log`)의 `notebook`이 진짜.**
-- `/anatomy-daily` : **해부학(3Q) 일일 학습 세트** 생성 오케스트레이터(매일 05:00 KST
-  루틴이 호출, ~2026-10-19). Drive 증분 확인 → 결정론 큐(`anatomy_daily.py`) → 출처
-  강제 카드/문항 → 검증 → `docs/anatomy-data.js` 재생성. `/daily-run anatomy`도 위임됨.
 - `/gen-quest` : **주차 밖 독립 '심화 퀘스트'(`kind: quest`) 생성**. 한 주차로 못 끝낼 열린
   문제(예: inter-patient 일반화)를 SMOTE·도메인적응·self-supervised·파운데이션 모델 로드맵으로
   큐잉. `content/ailab/quests/`. 진척은 실험을 `ingest_run.py` 로그로 채우며 쌓는다.

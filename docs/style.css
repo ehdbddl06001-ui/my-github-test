@@ -217,7 +217,6 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
 .wn-item.is-new{background:rgba(124,92,255,.10); box-shadow:inset 2px 0 0 var(--accent)}
 .wn-type{flex:none; font-size:.72rem; font-weight:700; border-radius:5px;
   padding:2px 7px; background:#0e1826; border:1px solid var(--line); color:var(--muted)}
-.wn-anatomy{color:#f0a09c; border-color:#5a4040}
 .wn-kmle,.wn-usmle{color:#9cc3ff; border-color:#3d5166}
 .wn-paper{color:#7fd4a8; border-color:#3f7a5e}
 .wn-ailab{color:#e0c070; border-color:#5a4a20}
