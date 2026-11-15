@@ -58,6 +58,28 @@ class Core(unittest.TestCase):
         self.assertEqual(out["u"], "2026-02-01")
         self.assertTrue(out["comm"] and out["idem"])
 
+    def test_my_copy_of_a_note_is_frozen_and_merges_by_time(self):
+        # 4판(2026-11-15) — 내 필기본은 쓰기 시작한 날의 원본을 떠 둔 사본. 원본이 고쳐져도 그대로이고, 두 기기가 다르면 나중에 뜬 쪽.
+        out = run_node(CORE % (
+            "const c1={id:'cn.x',title:'T',version:1,updated:'2026-11-01',hash:'h1',summary:['a'],sections:[{title:'S1',html:'<p>x</p>'}],pitfalls:[]};"
+            "const c2=Object.assign({},c1,{version:2,hash:'h2',summary:['a','b'],sections:[{title:'S1',html:'<p>y</p>'},{title:'S2',html:'z'}]});"
+            "const n1=I.snapOf(c1,'2026-11-10T00:00:00Z'),n2=I.snapOf(c2,'2026-11-12T00:00:00Z');"
+            "c1.title='changed later';"
+            "out.frozen=n1.c.title;out.stale=[I.snapStale(n1,c2),I.snapStale(n2,c2),I.snapStale(null,c2)];"
+            "out.parts=I.changedParts(n1.c,c2);"
+            "const a={v:1,ph:900,n:n1,s:{a1:{d:[1,2,3]}},g:{},u:'2026-11-10'},b={v:1,ph:900,n:n2,s:{b1:{d:[1,2,3]}},g:{},u:'2026-11-09'};"
+            "const m=I.mergeDocs(a,b);out.ver=[m.n.ver,I.mergeDocs(b,a).n.ver,I.mergeDocs(a,{v:1,s:{},g:{},u:''}).n.ver];"
+            "out.same=[I.sameDoc(m,I.mergeDocs(b,a)),I.sameDoc(I.normDoc(a),I.normDoc(Object.assign({},a,{n:n2})))];"
+            "out.norm=[I.normDoc({n:{at:1}}).n,I.normDoc({}).n];"
+            "out.sealed=(await I.unseal(await I.seal(a,'k'),'k')).n.c.id"))
+        self.assertEqual(out["frozen"], "T")                       # 원본 객체를 나중에 고쳐도 사본은 그대로
+        self.assertEqual(out["stale"], [True, False, False])
+        self.assertEqual(out["parts"], ["빠른 요약", "S1", "S2(새 절)"])
+        self.assertEqual(out["ver"], [2, 2, 1])                    # 나중에 뜬 판 · 한쪽에만 있으면 그것
+        self.assertEqual(out["same"], [True, False])               # 판이 다르면 「같은 문서」가 아니다 → 올린다
+        self.assertEqual(out["norm"], [None, None])
+        self.assertEqual(out["sealed"], "cn.x")                    # 사본도 잠긴 봉투 안에 들어간다
+
     def test_sealed_note_opens_only_with_the_same_key(self):
         out = run_node(CORE % (
             "const d={v:1,ph:900,s:{a:{c:'#1b2430',w:2.6,t:0,b:'p',d:[10,10,15,5,5,15]}},g:{},u:'2026-11-15T00:00:00Z'};"
@@ -234,6 +256,30 @@ class Wiring(unittest.TestCase):
         self.assertIn('L.setFlag(UI.st.q, "want_note"', ink)            # 맞힌 문항도 정리본 큐로
         self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept", "meta"])', fn)
         self.assertIn('replace(/#/g, "--")', ink)                       # 변형 문항 id 의 # 은 파일 이름에 못 쓴다
+
+    def test_study_book_keeps_the_original_and_my_copy_apart(self):
+        # 4판(2026-11-15) — 학습서 필기. 원본 = 매일 고쳐지는 정리본, 내 필기본 = 처음 쓴 날의 판 + 필기. 원본 갱신은 알리기만 하고
+        # 필기본의 글을 바꾸지 않는다(옮기기는 사용자가 누를 때만).
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        learn = (DOCS / "learn.js").read_text(encoding="utf-8")
+        css = (DOCS / "style.css").read_text(encoding="utf-8")
+        self.assertIn("const c = over || concept(cid);", learn)
+        self.assertIn("const use = st.orig ? st.live : (n ? n.c : st.live);", ink)
+        self.assertIn("L.renderConcept(box, st.id, null, null, use)", ink)
+        self.assertIn("if (ensureSnap()) paintNote();", ink)                          # 첫 획에 사본을 뜬다
+        self.assertEqual(ink.count("rec.doc.n = snapOf(st.live)"), 2)                # 사본이 바뀌는 곳은 둘뿐 — 처음 뜰 때 · 옮기기
+        self.assertIn('data-note-act="orig"', ink)
+        self.assertIn('data-note-act="rebase"', ink)
+        self.assertIn('if (!confirm("필기본을 원본의 새 판으로 옮깁니다.', ink)        # 옮기기는 물어본 뒤에만
+        self.assertIn('UI.el.classList.toggle("orig", st.kind === "concept" && !!st.orig);', ink)
+        self.assertIn(".ink-ov.orig .ink-layer, .ink-ov.orig .ink-live{visibility:hidden}", css)   # 원본 보기 = 읽기만
+        self.assertIn('b.id = "inkShelfBtn"', ink)
+        try:
+            import yaml
+        except ImportError:
+            self.skipTest("pyyaml 없음")
+        books = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))["books"]
+        self.assertEqual(json.loads(re.search(r"const BOOKS = (\{.*?\});", ink).group(1)), books)   # 과목 → 책 이름은 PDF 학습서와 같게
 
     def test_pen_feel_and_layout_stay_wired(self):
         # 3판(2026-11-15) — 써 본 뒤의 요청: 획 부드럽게 · 색 여러 개 · 직선 · 문항이 한 화면에 · 필기장에서 키 넣기

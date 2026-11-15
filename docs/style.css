@@ -649,3 +649,19 @@ body.ink-open{overflow:hidden}
 .ink-login input{display:block; width:100%; margin-top:4px; padding:10px 12px; font-size:1rem; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--ink); box-sizing:border-box}
 .ink-login-m{min-height:1.3em; margin:10px 0 4px; font-size:.88rem; color:#f0d68a}
 .ink-login.gate{background:var(--bg); align-items:center}
+/* 필기 4판 — 학습서 필기(원본 / 내 필기본) */
+.ink-note{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap; min-height:38px; box-sizing:border-box;
+  padding:8px 28px; font-size:.8rem; line-height:1.5; color:#5b6878; background:#f3f1ea; border-bottom:1px solid #e2ddd0}
+.ink-note b{color:#1b2430}
+.ink-note.stale{background:#fff3d6; color:#6b4e00; border-bottom-color:#e8cf8a}
+.ink-note-b{display:inline-flex; gap:6px; flex-wrap:wrap}
+.ink-sheet .ink-note button{font:inherit; font-size:.78rem; padding:5px 10px; border-radius:8px; border:1px solid #c9b46a; background:#fff; color:#1b2430; cursor:pointer}
+.ink-ov.orig .ink-layer, .ink-ov.orig .ink-live{visibility:hidden}
+.ink-ov.orig .ink-tools > :not(.ink-nav){display:none !important}
+.ink-ov.orig [data-b="p"]{display:none}
+.ink-shelf details{border:1px solid var(--line); border-radius:10px; margin:8px 0; padding:0 12px; background:#0c1522}
+.ink-shelf summary{cursor:pointer; padding:11px 0; font-weight:700}
+.ink-shelf details .w{margin:8px 0}
+.ink-shelf input[type=search]{flex:1 1 160px; min-width:140px; padding:8px 10px; font-size:.9rem; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--ink)}
+.ink-shelf .chip.on{background:var(--accent); color:#fff}
+.ink-badge{display:inline-block; font-size:.72rem; font-weight:400; padding:1px 8px; border-radius:999px; background:#4a3a10; color:#f0d68a; margin-left:8px; vertical-align:1px}
