@@ -2,6 +2,278 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0679",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 젊은 남성",
+  "type": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 젊은 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-15",
+  "vignette": "38세 남자가 회사 건강검진 심전도에서 「맥이 불규칙하다」는 말을 듣고 외래에 왔다. 두근거림·어지러움·실신·가슴 통증은 없고 일주일에 세 번 달리기를 한다. 가족 중 젊은 나이에 갑자기 사망한 사람은 없다. 혈압 118/72 mmHg, 맥박 64~80회/분이다. 진찰에서 맥박은 숨을 들이쉴 때 빨라지고 내쉴 때 느려지며, 심잡음은 없다. 혈청 칼륨과 갑상샘 기능은 정상이다. 외래에서 다시 찍은 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "추가 검사나 치료 없이 정상 변이임을 설명한다",
+   "24시간 활동 중 심전도(홀터) 감시를 한다",
+   "베타차단제를 시작한다",
+   "경흉부 심장초음파를 시행한다",
+   "전기생리검사를 의뢰한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 II 에서 양성인 같은 모양의 P파가 있고 PR 간격이 일정하다 — 동리듬이다. RR 간격만 약 0.75~0.95초 사이로 서서히 길어졌다 짧아지기를 되풀이하고, 진찰에서 들숨에 빨라지고 날숨에 느려진다. 호흡성 동부정맥이며 QRS·ST-T 도 정상이다. 증상·가족력·구조적 심질환 단서가 없는 젊은 성인의 정상 변이이므로 추가 검사나 치료 없이 설명하고 안심시킨다.\n- 원리: <b>왜 들숨에 빨라지는가</b>: 들숨에 흉강 음압이 커지면 정맥환류가 늘고 폐 신장수용체·심방 수용체의 신호가 미주신경 중추를 억제한다. 동결절에 대한 미주신경 긴장이 줄어 박동이 빨라지고, 날숨에는 반대로 미주신경 긴장이 돌아와 느려진다. 그래서 RR 간격이 호흡 주기에 맞춰 「서서히」 변한다 — 갑자기 끼어드는 박동이 없다.<br> <b>왜 건강의 표지인가</b>: 미주신경 반응이 활발한 젊은 사람·운동선수에서 뚜렷하고, 나이가 들거나 당뇨 자율신경병증·심부전이 있으면 줄어든다. 이 변동이 심박변이도의 가장 큰 부분이다.<br> <b>다른 불규칙 리듬과 가르는 법</b>: P파 모양이 같고 PR 이 일정하며 변화가 점진적이면 동결절 자체의 속도 변화다. 일찍 끼어드는 박동(기외수축), 모양이 바뀌는 P파(이소성 심방 리듬·다소성 심방빈맥), P파 없는 불규칙(심방세동)과 다르다. 비호흡성 동부정맥(호흡과 무관)은 고령·디곡신 독성에서 볼 수 있어 그때는 원인을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">설명·안심(정답)</th><th>24시간 홀터 감시(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>심전도에서 진단이 끝난 <b>무증상</b> 정상 변이</td><td>간헐적 두근거림·실신처럼 <b>증상과 리듬의 관계</b>를 밝혀야 할 때</td></tr> <tr><td>얻는 정보</td><td>추가로 필요한 정보 없음</td><td>증상 시점의 리듬·기외수축 부담·숨은 빈맥/서맥</td></tr> <tr><td>왜</td><td>P파·PR 일정, 호흡 연동 — 이미 진단됨</td><td>표준 심전도 10초에 안 잡히는 간헐 부정맥 때문</td></tr> <tr><td>이 환자</td><td>증상 없음 · 호흡 연동 — 일치</td><td>설명할 증상이 없다 — 이득 없음</td></tr> </tbody></table> 검사는 답할 질문이 있을 때 한다 — 무증상의 호흡성 동부정맥에는 답할 질문이 남아 있지 않다.\n- 오답 이유:\n  - ② 24시간 홀터 감시는 간헐적 두근거림·어지러움·실신이 있어 증상 시점의 리듬을 확인해야 하거나 기외수축 부담을 재야 한다면 정답이 된다.\n  - ③ 베타차단제는 증상이 있는 동빈맥·기외수축이나 부적절 동빈맥이라면 고려하지만, 정상 변이에 쓰면 피로·서맥만 남긴다.\n  - ④ 경흉부 심장초음파는 심잡음·심부전 증상·병적 Q파나 비대 소견처럼 구조적 심질환 단서가 있었다면 정답이 된다.\n  - ⑤ 전기생리검사는 원인 모를 실신·지속 심실빈맥·조기흥분 증후군처럼 급사 위험을 평가해야 할 때라면 정답이 된다.\n- 함정: 「불규칙하다」는 말만 듣고 홀터를 고르는 것 — P파·PR 이 일정하고 호흡에 연동되면 동결절의 정상 변이다.\n- 학습목표: 젊은 무증상 성인에서 모든 QRS 앞에 같은 모양의 P파가 있고 PR 이 일정하며 RR 만 호흡에 따라 서서히 변하는 동부정맥은 생리적 변이이므로 추가 검사·치료 없이 설명한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 45: Palpitations · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2499 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 II 에서 양성인 같은 모양의 P파가 있고 PR 간격이 일정하다 — 동리듬이다. RR 간격만 약 0.75~0.95초 사이로 서서히 길어졌다 짧아지기를 되풀이하고, 진찰에서 들숨에 빨라지고 날숨에 느려진다. 호흡성 동부정맥이며 QRS·ST-T 도 정상이다. 증상·가족력·구조적 심질환 단서가 없는 젊은 성인의 정상 변이이므로 추가 검사나 치료 없이 설명하고 안심시킨다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 들숨에 빨라지는가</b>: 들숨에 흉강 음압이 커지면 정맥환류가 늘고 폐 신장수용체·심방 수용체의 신호가 미주신경 중추를 억제한다. 동결절에 대한 미주신경 긴장이 줄어 박동이 빨라지고, 날숨에는 반대로 미주신경 긴장이 돌아와 느려진다. 그래서 RR 간격이 호흡 주기에 맞춰 「서서히」 변한다 — 갑자기 끼어드는 박동이 없다.<br> <b>왜 건강의 표지인가</b>: 미주신경 반응이 활발한 젊은 사람·운동선수에서 뚜렷하고, 나이가 들거나 당뇨 자율신경병증·심부전이 있으면 줄어든다. 이 변동이 심박변이도의 가장 큰 부분이다.<br> <b>다른 불규칙 리듬과 가르는 법</b>: P파 모양이 같고 PR 이 일정하며 변화가 점진적이면 동결절 자체의 속도 변화다. 일찍 끼어드는 박동(기외수축), 모양이 바뀌는 P파(이소성 심방 리듬·다소성 심방빈맥), P파 없는 불규칙(심방세동)과 다르다. 비호흡성 동부정맥(호흡과 무관)은 고령·디곡신 독성에서 볼 수 있어 그때는 원인을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">설명·안심(정답)</th><th>24시간 홀터 감시(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>심전도에서 진단이 끝난 <b>무증상</b> 정상 변이</td><td>간헐적 두근거림·실신처럼 <b>증상과 리듬의 관계</b>를 밝혀야 할 때</td></tr> <tr><td>얻는 정보</td><td>추가로 필요한 정보 없음</td><td>증상 시점의 리듬·기외수축 부담·숨은 빈맥/서맥</td></tr> <tr><td>왜</td><td>P파·PR 일정, 호흡 연동 — 이미 진단됨</td><td>표준 심전도 10초에 안 잡히는 간헐 부정맥 때문</td></tr> <tr><td>이 환자</td><td>증상 없음 · 호흡 연동 — 일치</td><td>설명할 증상이 없다 — 이득 없음</td></tr> </tbody></table> 검사는 답할 질문이 있을 때 한다 — 무증상의 호흡성 동부정맥에는 답할 질문이 남아 있지 않다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 24시간 홀터 감시는 간헐적 두근거림·어지러움·실신이 있어 증상 시점의 리듬을 확인해야 하거나 기외수축 부담을 재야 한다면 정답이 된다.\n③ 베타차단제는 증상이 있는 동빈맥·기외수축이나 부적절 동빈맥이라면 고려하지만, 정상 변이에 쓰면 피로·서맥만 남긴다.\n④ 경흉부 심장초음파는 심잡음·심부전 증상·병적 Q파나 비대 소견처럼 구조적 심질환 단서가 있었다면 정답이 된다.\n⑤ 전기생리검사는 원인 모를 실신·지속 심실빈맥·조기흥분 증후군처럼 급사 위험을 평가해야 할 때라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「불규칙하다」는 말만 듣고 홀터를 고르는 것 — P파·PR 이 일정하고 호흡에 연동되면 동결절의 정상 변이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 무증상 성인에서 모든 QRS 앞에 같은 모양의 P파가 있고 PR 이 일정하며 RR 만 호흡에 따라 서서히 변하는 동부정맥은 생리적 변이이므로 추가 검사·치료 없이 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 45: Palpitations · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2499 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "무증상 젊은 성인의 호흡성 동부정맥은 정상 변이이므로 추가 검사 없이 설명한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "증상이 없어 홀터로 확인할 증상-리듬 관계가 없고, 심전도에서 이미 동리듬 변이로 진단된다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞에 같은 모양의 P파, PR 일정 → 동리듬",
+    "영상: RR 만 서서히 길어졌다 짧아짐 · 진찰에서 들숨에 빨라지고 날숨에 느려짐 → 호흡성 동부정맥",
+    "무증상 · 가족력 없음 · 구조적 심질환 단서 없음 → 정상 변이, 추가 검사·치료 없음"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞에 같은 모양의 양성 P파와 일정한 PR 간격",
+     "why": "동리듬",
+     "also": []
+    },
+    {
+     "item": "영상: RR 간격이 서서히 길어졌다 짧아지기를 되풀이",
+     "why": "동결절 속도의 점진적 변화",
+     "also": []
+    },
+    {
+     "item": "숨을 들이쉴 때 빨라지고 내쉴 때 느려지며",
+     "why": "호흡성 동부정맥",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "가족 중 젊은 나이에 갑자기 사망한 사람은 없다",
+     "why": "유전성 부정맥 평가 필요성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심잡음은 없다",
+     "why": "심장초음파가 필요한 구조적 질환 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "두근거림·어지러움·실신·가슴 통증은 없고",
+     "why": "홀터로 확인할 증상이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "일주일에 세 번 달리기를 한다",
+     "why": "미주신경 긴장이 높은 배경 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "모든 박동 앞에 같은 P파와 일정한 PR 이 있고 RR 만 호흡에 따라 서서히 변하는 호흡성 동부정맥이다. 무증상 젊은 성인의 정상 변이이므로 설명하고 안심시킨다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 심전도라도 간헐적 실신이나 두근거림이 있었다면 증상 시점의 리듬을 보기 위해 24시간 홀터 감시"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0679.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02499",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2499"
+  },
+  "run_id": "20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0678",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 갑자기 시작된 빠른 두근거림의 고령 여성",
+  "type": "심전도 판독 — 갑자기 시작된 빠른 두근거림의 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-15",
+  "vignette": "82세 여자가 1시간 전 텔레비전을 보다가 갑자기 시작된 빠르고 규칙적인 두근거림으로 응급실에 왔다. 가벼운 어지러움이 있으나 가슴 통증과 실신은 없다. 고혈압약을 복용하고 있다. 혈압 112/70 mmHg, 맥박 152회/분으로 규칙적이며, 호흡 18회/분, 체온 36.6°C 이다. 의식은 명료하고 폐음은 깨끗하다. 혈청 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "다소성 심방빈맥",
+   "발작성 상심실성 빈맥",
+   "동빈맥",
+   "심방세동",
+   "심실빈맥"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)에서 RR 간격이 일정한 약 150회/분의 빈맥이고 QRS 는 좁다(< 120 ms). QRS 앞에 P파가 보이지 않아 동빈맥이 아니다. RR 이 일정해 심방세동·다소성 심방빈맥이 아니며, QRS 가 좁아 심실빈맥이 아니다. 갑자기 시작한 규칙적인 좁은 QRS 빈맥 — 발작성 상심실성 빈맥이다. I 양성·II·III·aVF 음성의 좌축편위는 빈맥과 별개로 있는 전도 소견이다.\n- 원리: <b>왜 QRS 가 좁은가</b>: 빈맥 회로가 히스속 위(방실결절 안, 또는 심방-방실결절-부전도로)에 있으면 심실은 정상 전도계를 따라 탈분극하므로 QRS 가 좁다. 가장 흔한 형태인 방실결절 재진입 빈맥은 결절 안의 빠른 길과 느린 길이 회로를 이룬다 — 느린 길로 내려가고 빠른 길로 거의 동시에 올라가므로 역행 P파가 QRS 안에 묻히거나 QRS 끝에 작은 굴곡(V1 의 가성 r′)으로만 보인다. 그래서 「P파가 안 보인다」가 핵심 소견이 된다.<br> <b>왜 갑자기 시작하고 갑자기 멈추는가</b>: 조기 박동이 한쪽 길의 불응기에 걸려 일방향 차단이 생기는 순간 회로가 열리고, 회로의 한 부분이 차단되는 순간 끝난다. 동빈맥은 자율신경 자극에 따라 서서히 빨라지고 서서히 느려진다.<br> <b>150회/분이면 늘 의심할 것</b>: 2:1 전도 심방조동도 심실 박동수가 정확히 약 150회/분이다. 미주신경 자극이나 아데노신으로 방실 전도를 잠시 막으면 상심실성 빈맥은 끝나고, 조동은 톱니 모양 F파가 드러난다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발작성 상심실성 빈맥(정답)</th><th>동빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시작</td><td><b>갑자기</b>(스위치를 켠 듯)</td><td>서서히(발열·통증·탈수·빈혈에 반응)</td></tr> <tr><td>P파</td><td><b>보이지 않음</b> 또는 QRS 바로 뒤 역행 P</td><td>모든 QRS 앞에 정상 축의 P파(II 양성)</td></tr> <tr><td>박동수</td><td>150~250회/분, 거의 고정</td><td>대개 100~150회/분, 변동</td></tr> <tr><td>미주신경 자극</td><td>갑자기 멈추거나 변화 없음</td><td>서서히 느려졌다 다시 빨라짐</td></tr> <tr><td>이 환자</td><td>갑자기 시작 · P파 없음 · 152회/분 — 일치</td><td>유발 요인 없음 · P파 없음 — 불일치</td></tr> </tbody></table> 좁고 규칙적인 빈맥은 「QRS 앞 P파가 있는가」로 먼저 가른다.\n- 오답 이유:\n  - ① 다소성 심방빈맥은 모양이 다른 P파가 3가지 이상 보이고 RR·PR 간격이 불규칙하며 주로 중증 폐질환 환자라면 정답이 된다.\n  - ③ 동빈맥은 발열·통증·탈수 같은 원인이 있고 모든 QRS 앞에 II 에서 양성인 정상 P파가 보이며 박동수가 서서히 변했다면 정답이 된다.\n  - ④ 심방세동은 RR 간격이 불규칙하게 불규칙하고 P파 대신 기저선이 잔물결처럼 흔들린다면 정답이 된다.\n  - ⑤ 심실빈맥은 QRS 가 120 ms 이상으로 넓고 방실 해리·포착 박동·융합 박동이 보였다면 정답이 된다.\n- 함정: 빈맥이면 일단 동빈맥으로 읽는 것 — QRS 앞에 P파가 없고 갑자기 시작했다면 재진입 빈맥이다.\n- 학습목표: 갑자기 시작한 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 QRS 앞 P파가 보이지 않으면 발작성 상심실성 빈맥으로 판독하고, 동빈맥·심방세동·심실빈맥과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12346 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)에서 RR 간격이 일정한 약 150회/분의 빈맥이고 QRS 는 좁다(< 120 ms). QRS 앞에 P파가 보이지 않아 동빈맥이 아니다. RR 이 일정해 심방세동·다소성 심방빈맥이 아니며, QRS 가 좁아 심실빈맥이 아니다. 갑자기 시작한 규칙적인 좁은 QRS 빈맥 — 발작성 상심실성 빈맥이다. I 양성·II·III·aVF 음성의 좌축편위는 빈맥과 별개로 있는 전도 소견이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 QRS 가 좁은가</b>: 빈맥 회로가 히스속 위(방실결절 안, 또는 심방-방실결절-부전도로)에 있으면 심실은 정상 전도계를 따라 탈분극하므로 QRS 가 좁다. 가장 흔한 형태인 방실결절 재진입 빈맥은 결절 안의 빠른 길과 느린 길이 회로를 이룬다 — 느린 길로 내려가고 빠른 길로 거의 동시에 올라가므로 역행 P파가 QRS 안에 묻히거나 QRS 끝에 작은 굴곡(V1 의 가성 r′)으로만 보인다. 그래서 「P파가 안 보인다」가 핵심 소견이 된다.<br> <b>왜 갑자기 시작하고 갑자기 멈추는가</b>: 조기 박동이 한쪽 길의 불응기에 걸려 일방향 차단이 생기는 순간 회로가 열리고, 회로의 한 부분이 차단되는 순간 끝난다. 동빈맥은 자율신경 자극에 따라 서서히 빨라지고 서서히 느려진다.<br> <b>150회/분이면 늘 의심할 것</b>: 2:1 전도 심방조동도 심실 박동수가 정확히 약 150회/분이다. 미주신경 자극이나 아데노신으로 방실 전도를 잠시 막으면 상심실성 빈맥은 끝나고, 조동은 톱니 모양 F파가 드러난다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발작성 상심실성 빈맥(정답)</th><th>동빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시작</td><td><b>갑자기</b>(스위치를 켠 듯)</td><td>서서히(발열·통증·탈수·빈혈에 반응)</td></tr> <tr><td>P파</td><td><b>보이지 않음</b> 또는 QRS 바로 뒤 역행 P</td><td>모든 QRS 앞에 정상 축의 P파(II 양성)</td></tr> <tr><td>박동수</td><td>150~250회/분, 거의 고정</td><td>대개 100~150회/분, 변동</td></tr> <tr><td>미주신경 자극</td><td>갑자기 멈추거나 변화 없음</td><td>서서히 느려졌다 다시 빨라짐</td></tr> <tr><td>이 환자</td><td>갑자기 시작 · P파 없음 · 152회/분 — 일치</td><td>유발 요인 없음 · P파 없음 — 불일치</td></tr> </tbody></table> 좁고 규칙적인 빈맥은 「QRS 앞 P파가 있는가」로 먼저 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 다소성 심방빈맥은 모양이 다른 P파가 3가지 이상 보이고 RR·PR 간격이 불규칙하며 주로 중증 폐질환 환자라면 정답이 된다.\n③ 동빈맥은 발열·통증·탈수 같은 원인이 있고 모든 QRS 앞에 II 에서 양성인 정상 P파가 보이며 박동수가 서서히 변했다면 정답이 된다.\n④ 심방세동은 RR 간격이 불규칙하게 불규칙하고 P파 대신 기저선이 잔물결처럼 흔들린다면 정답이 된다.\n⑤ 심실빈맥은 QRS 가 120 ms 이상으로 넓고 방실 해리·포착 박동·융합 박동이 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빈맥이면 일단 동빈맥으로 읽는 것 — QRS 앞에 P파가 없고 갑자기 시작했다면 재진입 빈맥이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑자기 시작한 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 QRS 앞 P파가 보이지 않으면 발작성 상심실성 빈맥으로 판독하고, 동빈맥·심방세동·심실빈맥과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12346 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "갑자기 시작한 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 P파가 보이지 않으면 발작성 상심실성 빈맥이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "QRS 앞에 P파가 보이지 않고 유발 요인 없이 갑자기 시작했다",
+   "steps": 2,
+   "chain": [
+    "영상: II 리듬 스트립에서 RR 일정한 약 150회/분, 좁은 QRS → 규칙적인 좁은 QRS 빈맥",
+    "QRS 앞 P파 없음 · 갑작스러운 시작 → 발작성 상심실성 빈맥(동빈맥·심방세동·심실빈맥 아님)"
+   ],
+   "key": [
+    {
+     "item": "영상: II 리듬 스트립에서 RR 간격이 일정한 약 150회/분의 좁은 QRS 빈맥",
+     "why": "규칙적 좁은 QRS 빈맥",
+     "also": []
+    },
+    {
+     "item": "영상: QRS 앞에 P파가 보이지 않음",
+     "why": "동빈맥을 배제하는 방향",
+     "also": []
+    },
+    {
+     "item": "갑자기 시작된 빠르고 규칙적인 두근거림",
+     "why": "재진입 빈맥의 시작 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.1 mEq/L",
+     "why": "전해질 이상에 의한 부정맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 112/70 mmHg",
+     "why": "혈역학 안정 — 미주신경 자극·아데노신을 먼저 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압약을 복용하고 있다",
+     "why": "판독에 영향이 적은 배경 정보",
+     "also": []
+    }
+   ],
+   "summary": "약 150회/분의 규칙적인 좁은 QRS 빈맥이 갑자기 시작했고 QRS 앞에 P파가 보이지 않는다. 발작성 상심실성 빈맥이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 빈맥에서 RR 간격이 불규칙하게 불규칙하고 P파 대신 잔물결 기저선이 보였다면 심방세동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0678.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12346",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12346"
+  },
+  "run_id": "20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0674",
   "exam": "imaging",
   "style": "usmle_style",
