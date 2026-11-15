@@ -8,7 +8,7 @@ content/**/*.md 하나다(대칭: export_usmle_web.py / export_papers_web.py).
 산출물: docs/search-index.js
   window.MEDKOS_INDEX = { generated, repo, branch, stats{...}, docs[ {...} ] }
   각 doc: id, type, unit, topic, subtopic, tags[], source, confidence, date, path, text(검색용)
-  unit — 해부 전용. 'N회차 · 부위'(anatomy_schedule.unit_label). 날짜순 목록에서 소속 표시.
+  unit — 늘 빈 값(해부학 회차 표시에 쓰던 칸 — 2026-11-15 해부학 삭제 뒤 화면 코드와의 약속으로만 남긴다).
 
 사용: python pipelines/export_search_web.py
 """
@@ -19,7 +19,6 @@ import re
 from datetime import date
 from pathlib import Path
 
-from anatomy_schedule import unit_label
 from frontmatter import Doc, load
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -50,8 +49,7 @@ def build_record(d: Doc) -> dict:
     else:
         body = d.body
     clean = _strip_md(body)
-    # 해부는 날짜순 목록에서 '몇 회차의 어느 부위'인지가 바로 보여야 한다(2회차 · 등).
-    unit = unit_label(m) if d.type == "anatomy" else ""
+    unit = ""
     return {
         "id": d.id,
         "type": d.type,

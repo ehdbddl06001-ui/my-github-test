@@ -2,7 +2,7 @@
 
 ## Mission
 This repository is MedKOS: a personal medical knowledge platform (KMLE/USMLE questions,
-paper cards, anatomy, disease/drug cards, and the AI-lab **study** track) plus the
+paper cards, disease/drug cards, and the AI-lab **study** track) plus the
 deterministic pipelines and the static site that publish it.
 
 ECG arrhythmia **research** moved to `ehdbddl06001-ui/ecg-lab` on 2026-08-17.
@@ -12,7 +12,7 @@ Experiment specs, experiment code, research handoffs and quest notebooks live th
 
 | Task | Repository |
 |---|---|
-| Study card, exam question, paper card, anatomy set | **here** |
+| Study card, exam question, paper card | **here** |
 | Pipeline, indexer, exporter, site, skill, routine | **here** |
 | AI-lab weekly card, run log, quest roadmap, mentor note | **here** (`content/ailab/`) |
 | Experiment spec, experiment code, measured result, research conclusion | **ecg-lab** |
@@ -35,7 +35,7 @@ paths do not resolve across repositories.
 - Exam questions keep answers separated from the stem (`answer_separated: true`).
 - Never write to the database directly. Never store content outside `content/`.
 - Never reuse or roll back an id.
-- Anatomy source PDFs, page images and masks stay in `.private/` and are never committed.
+- Anything under `.private/` (old anatomy source PDFs, page images, masks) is never committed.
 - Conflicting sources: keep source/edition/date and lower `confidence` instead of picking one.
 
 ## Required workflow
@@ -58,7 +58,6 @@ paths do not resolve across repositories.
 ## Tests
 ```bash
 python pipelines/indexer.py --check     # frontmatter validation
-python pipelines/test_anatomy.py
 python pipelines/test_state.py
 python pipelines/test_datasets.py
 python pipelines/test_deepen.py

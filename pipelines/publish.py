@@ -39,8 +39,8 @@ CONTENT_FILES = ("state/ailab_progress.json",)
 
 # 번들 재생성 순서(색인 → 각 뷰). 하나라도 빠지면 홈페이지가 낡는다.
 BUNDLES = [
-    "indexer.py", "export_anatomy_web.py", "export_search_web.py",
-    "export_diagrams_web.py", "export_kmle_web.py", "export_usmle_web.py",
+    "indexer.py", "export_search_web.py",
+    "export_kmle_web.py", "export_usmle_web.py",
     "export_papers_web.py", "export_ailab_web.py", "export_imaging_web.py",
     "export_concepts_web.py",
 ]
@@ -230,13 +230,13 @@ def publish(message: str, branch: str, dry: bool, allow_code: bool,
 
 def selftest() -> int:
     content, code = classify([
-        "content/anatomy/questions/tagging-1/anatomy-2026-0096.md",
+        "content/kmle/2026/kmle-2026-0096.md",
         "docs/search-index.js", "state/ailab_progress.json",
-        "pipelines/anatomy_subnote.py", "CLAUDE.md", ".claude/skills/x/SKILL.md",
+        "pipelines/build_books.py", "CLAUDE.md", ".claude/skills/x/SKILL.md",
     ])
-    assert content == ["content/anatomy/questions/tagging-1/anatomy-2026-0096.md",
+    assert content == ["content/kmle/2026/kmle-2026-0096.md",
                        "docs/search-index.js", "state/ailab_progress.json"], content
-    assert code == ["pipelines/anatomy_subnote.py", "CLAUDE.md",
+    assert code == ["pipelines/build_books.py", "CLAUDE.md",
                     ".claude/skills/x/SKILL.md"], code
     # 비공개 렌더는 애초에 gitignore 라 목록에 안 뜨지만, 뜨더라도 코드 레인으로 막힌다
     assert classify([".private/anatomy/render/x.png"])[1], "비공개 경로가 콘텐츠로 샜다"
