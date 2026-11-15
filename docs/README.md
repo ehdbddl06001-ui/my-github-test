@@ -45,6 +45,9 @@ cd kmle/quiz && python3 quiz.py --export   # docs/questions.js 및 kmle/문항/*
   `state/wrong_sync/<exam>.json` 에 커밋한다(환경변수 `GITHUB_TOKEN` 필요 — Contents 쓰기 권한의
   fine-grained PAT, Cloudflare 대시보드에 Secret 으로). 그러면 `wrong-sync.yml` 이 `kmle/오답노트/웹동기화*.md` 를
   자동 생성한다. GitHub Pages 주소에서는 함수가 없어 오답이 기기에만 남는다(내보내기 버튼은 그대로).
+- **필기**: 오답노트의 「✍ 필기」, 문항 화면의 「✍ 펜으로 풀기」(필기장 안에서 풀고 채점), 개념 정리본의 「✍ 이 정리본에 필기」,
+  첫 화면의 「✍ 필기 모음」에서 필기장을 연다(아이패드 펜슬 = 쓰기 · 손가락 = 넘기기). 필기는 기기에 바로
+  저장되고, 동기화 키가 있으면 `functions/api/ink.js` 가 **키로 잠근 암호문**을 가지 `ink-data` 에 올려 다른 기기에서 이어 쓴다.
 - **🩻 영상 덱**: 의대_시험지_제작 아침 루틴이 `opendata medkos-export` 로 옮긴 오픈데이터 영상 문항
   (`content/imaging/`, `docs/assets/imaging/`, 번들 `questions_imaging.js`). 홈 화면 바로가기
   `index.html?exam=imaging&mode=latest` 가 「오늘의 영상」으로 바로 연다.

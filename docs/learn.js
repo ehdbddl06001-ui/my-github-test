@@ -371,7 +371,12 @@ const LEARN = (() => {
     box.innerHTML = h;
     drawDiagram(box.querySelector(".dia-box"), c, q, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
     bindConcept(box, c);
+    // 필기 단추(ink.js) — 필기장 안에서 다시 그릴 때는 달지 않는다
+    if (!box.closest(".ink-sheet") && typeof MEDKOS_INK === "object" && MEDKOS_INK.conceptButton) MEDKOS_INK.conceptButton(box, c.id);
   }
+  // 필기장(ink.js)의 「★ 정리본에 넣기」 — 맞힌 문항에도 표시를 남긴다. 규칙은 바꾸지 않고 기록만 더한다.
+  function flagsOf(q) { const S = states()[keyOf(q)]; return (S && S.flags) || {}; }
+  function setFlag(q, f, on) { return add({ kind: "flag", flag: f, on: !!on, qid: q.id, objective: q.objective || null }); }
   /* ---------- 그림(2026-09-27) — 확실한 라벨만. 소견은 먼저 떠올려 보고 연다(인출) ----------
      src 는 export 가 docs/ 아래 상대경로만 넘긴다. 글은 모두 escape, 링크는 https 만. */
   const BASIS = { dataset_expert: "전문가 판정 데이터셋 라벨", published_figure: "동료 심사 논문의 그림 설명" };
@@ -749,5 +754,5 @@ const LEARN = (() => {
   }
 
   return { onAnswer, onVariantAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
-    syncLearning, learnSyncState, states, schedule, dueKeys, pickRetest, reviewSteps, load, concept, STATUS };
+    syncLearning, learnSyncState, states, schedule, dueKeys, pickRetest, reviewSteps, load, concept, STATUS, flagsOf, setFlag };
 })();
