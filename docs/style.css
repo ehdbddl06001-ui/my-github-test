@@ -644,6 +644,8 @@ body.ink-open{overflow:hidden}
 /* 로그인(아이디 · 비밀번호 → 동기화 키) */
 .ink-login{position:fixed; inset:0; z-index:1100; background:rgba(4,8,14,.72); display:flex; align-items:flex-start; justify-content:center; overflow:auto; padding:calc(24px + env(safe-area-inset-top)) 12px 24px}
 .ink-login .card{max-width:440px; width:100%; margin:0}
+.ink-login [hidden]{display:none !important}
 .ink-login label{display:block; margin:10px 0 0; font-size:.85rem; color:var(--muted)}
 .ink-login input{display:block; width:100%; margin-top:4px; padding:10px 12px; font-size:1rem; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--ink); box-sizing:border-box}
 .ink-login-m{min-height:1.3em; margin:10px 0 4px; font-size:.88rem; color:#f0d68a}
+.ink-login.gate{background:var(--bg); align-items:center}

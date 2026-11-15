@@ -491,7 +491,7 @@ var MEDKOS_INK = (function () {
     else if (a === "side") { t.side = !t.side; UI.zoom = 1; layout(true); }
     else if (a === "more") { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round((UI.geo.p || { h: 0 }).h)) + PAPER_STEP; touched(); layout(false); }
     else if (a === "next") return next();
-    else if (a === "key") return openLogin();
+    else if (a === "key") return openLogin(false);
     else if (a === "flag") { const L = g("LEARN"); L.setFlag(UI.st.q, "want_note", !L.flagsOf(UI.st.q).want_note); }
     if (a !== "color" && a !== "w" && a !== "hlc" && a !== "even") closePalette();
     saveTool(); paintBar();
@@ -533,15 +533,32 @@ var MEDKOS_INK = (function () {
     if (UI.rec) pushNow(); else flushAll();
     try { if (typeof f === "function") await f(key); } catch (e) { /* 오답 · 학습 기록 동기화는 앱이 다시 시도한다 */ }
   }
-  function openLogin() {
+  // gate = 앱을 열 때 띄우는 로그인 화면(뒤가 보이지 않는다). 아니면 필기장 · 동기화 설정에서 연 작은 창.
+  const SKIP = "medkos_login_skip";                              // 이번에 연 동안은 로그인 화면을 다시 띄우지 않는다
+  /* 앱을 열 때 로그인(2026-11-15 사용자 「필기에만 걸지 말고 MedKOS 들어갈 때」) — 이 기기에 키가 없으면 첫 화면 위에 로그인 화면을 띄운다.
+     한 번 로그인하면 키가 기기에 남아 다시 묻지 않는다. 이것은 **기록을 맞추는 문**이지 잠금장치가 아니다 — 문항과 앱은 공개 저장소에 있어
+     화면을 가려도 막지 못한다. 그래서 「로그인 없이 쓰기」를 둔다(연결이 없을 때 · 비밀번호를 잊었을 때 앱에 갇히지 않게). */
+  function gateIfNeeded() {
+    let skipped = false;
+    try { skipped = sessionStorage.getItem(SKIP) === "1"; } catch (e) { /* 저장소 없음 — 띄운다 */ }
+    if (pass() || skipped || !subtle || location.protocol === "file:") return;
+    openLogin(true);
+  }
+  function logout() {
+    if (!pass()) return alert("이 기기는 로그인돼 있지 않습니다.");
+    if (!confirm("이 기기에서 로그아웃합니다(동기화 키를 지웁니다).\n기기에 저장된 오답 · 필기는 남고, 다시 로그인하면 이어서 맞춰집니다.")) return;
+    applyKey("").then(() => { try { sessionStorage.removeItem(SKIP); } catch (e) { /* 무시 */ } gateIfNeeded(); });
+  }
+  function openLogin(gate) {
+    gate = gate === true;
     closePalette();
     let el = document.getElementById("inkLogin");
     if (!el) {
       el = document.createElement("div");
       el.id = "inkLogin"; el.className = "ink-login hidden";
       el.innerHTML = `<form class="card" autocomplete="on">
-        <h2>🔑 로그인 — 기기끼리 필기 맞추기</h2>
-        <p class="muted small">아이디와 비밀번호로 이 기기의 동기화 키를 만듭니다. 다른 기기에서도 <b>같은 아이디 · 비밀번호</b>를 넣으면 같은 키가 들어가 필기가 맞춰집니다.
+        <h2>🔑 MedKOS 로그인</h2>
+        <p class="muted small">아이디와 비밀번호로 이 기기의 동기화 키를 만듭니다. 다른 기기에서도 <b>같은 아이디 · 비밀번호</b>를 넣으면 같은 키가 들어가 오답 · 학습 기록 · 필기가 맞춰집니다.
           비밀번호는 서버로 보내지 않습니다 — 잊으면 되찾을 방법이 없으니 기기의 비밀번호 저장에 맡기세요.</p>
         <label>아이디<input name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required /></label>
         <label>비밀번호<input name="password" type="password" autocomplete="current-password" minlength="8" required /></label>
@@ -551,7 +568,10 @@ var MEDKOS_INK = (function () {
       </form>`;
       document.body.appendChild(el);
       const form = el.querySelector("form"), msg = el.querySelector(".ink-login-m"), two = el.querySelector(".ink-login-2");
-      el.querySelector("[data-a=cancel]").onclick = () => el.classList.add("hidden");
+      el.querySelector("[data-a=cancel]").onclick = () => {
+        if (el.classList.contains("gate")) { try { sessionStorage.setItem(SKIP, "1"); } catch (e) { /* 다음에 또 묻는다 */ } }
+        el.classList.add("hidden");
+      };
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const id = form.username.value.trim(), pw = form.password.value, btn = form.querySelector("[type=submit]");
@@ -572,8 +592,10 @@ var MEDKOS_INK = (function () {
       });
     }
     el.querySelector(".ink-login-m").textContent = pass() ? "이 기기에는 이미 키가 들어 있습니다. 다른 로그인으로 바꿀 때만 넣으세요." : "";
+    el.classList.toggle("gate", gate);
+    el.querySelector("[data-a=cancel]").textContent = gate ? "로그인 없이 쓰기(이 기기에만 저장)" : "닫기";
     el.classList.remove("hidden");
-    el.querySelector("input[name=username]").focus();
+    if (!gate) el.querySelector("input[name=username]").focus();
   }
 
   /* 배치 — 종이를 화면에 맞춘다. 덩이의 자리(왼쪽 · 위)를 다시 재고, 보이는 조각만 다시 그린다.
@@ -1185,8 +1207,11 @@ var MEDKOS_INK = (function () {
     const link = document.getElementById("syncLinkBtn");          // 첫 화면 「동기화 설정」에도 로그인 단추
     if (link && !document.getElementById("inkLoginBtn")) {
       const b = document.createElement("button");
-      b.id = "inkLoginBtn"; b.type = "button"; b.className = "small"; b.textContent = "🔑 아이디 · 비밀번호로 연결"; b.onclick = openLogin;
+      b.id = "inkLoginBtn"; b.type = "button"; b.className = "small"; b.textContent = "🔑 로그인"; b.onclick = () => openLogin();
       link.parentNode.insertBefore(b, link);
+      const o = document.createElement("button");
+      o.id = "inkLogoutBtn"; o.type = "button"; o.className = "small"; o.textContent = "로그아웃"; o.onclick = logout;
+      link.parentNode.insertBefore(o, link);
     }
     if (vw && !document.getElementById("inkAllBtn")) {
       const b = document.createElement("button");
@@ -1195,6 +1220,7 @@ var MEDKOS_INK = (function () {
     }
   }
   addButtons();
+  gateIfNeeded();
 
   window.addEventListener("online", () => { flushAll(); });
   setTimeout(flushAll, 5000);

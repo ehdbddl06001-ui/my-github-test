@@ -158,7 +158,28 @@ class Login(unittest.TestCase):
         self.assertEqual(out["bad"], "rejected")
 
 
+@unittest.skipUnless(NODE, "node 없음")
+class Syntax(unittest.TestCase):
+    def test_app_scripts_parse(self):
+        # 2026-11-15 — 따옴표 안에 줄바꿈 하나가 들어가 ink.js 가 통째로 안 돌았는데 글자 찾기 시험은 전부 통과했다.
+        for name in ("ink.js", "app.js", "learn.js", "synckey.js", "pwa.js", "sw.js"):
+            r = subprocess.run([NODE, "--check", str(DOCS / name)], capture_output=True, text=True, encoding="utf-8")
+            self.assertEqual(r.returncode, 0, name + "\n" + r.stderr[-400:])
+
+
 class Wiring(unittest.TestCase):
+    def test_no_raw_newline_inside_double_quoted_strings(self):
+        # node 가 없는 PC 에서도 잡히게 — 한 줄에 큰따옴표가 홀수 개면 문자열이 줄을 넘은 것이다(주석 · 백틱 줄은 뺀다)
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        bad = []
+        for i, line in enumerate(ink.split("\n"), 1):
+            code = line.split("//")[0]
+            if "`" in code or "/*" in code or code.lstrip().startswith("*"):
+                continue
+            if code.replace('\\"', "").count('"') % 2:
+                bad.append(i)
+        self.assertEqual(bad, [])
+
     def test_login_never_sends_the_password(self):
         ink = (DOCS / "ink.js").read_text(encoding="utf-8")
         fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")
@@ -169,6 +190,13 @@ class Wiring(unittest.TestCase):
         self.assertIn('autocomplete="current-password"', ink)       # 기기의 비밀번호 저장이 채워 주게
         self.assertIn('"medkos-login-v1:"', ink)
         self.assertIn('"meta"', fn)
+
+    def test_app_asks_for_login_on_entry_but_never_traps(self):
+        # 2026-11-15 — 키가 없는 기기는 앱을 열 때 로그인 화면을 본다. 잠금장치가 아니므로 빠져나갈 길을 둔다.
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        self.assertIn("  addButtons();\n  gateIfNeeded();", ink)
+        self.assertIn("if (pass() || skipped || !subtle || location.protocol === \"file:\") return;", ink)
+        self.assertIn("로그인 없이 쓰기(이 기기에만 저장)", ink)
 
     def test_index_loads_ink_after_app_with_the_cache_version(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
