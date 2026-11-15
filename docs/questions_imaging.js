@@ -2,6 +2,1479 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0679",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 젊은 남성",
+  "type": "심전도 처치 — 검진에서 맥이 불규칙하다는 말을 들은 젊은 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-15",
+  "vignette": "38세 남자가 회사 건강검진 심전도에서 「맥이 불규칙하다」는 말을 듣고 외래에 왔다. 두근거림·어지러움·실신·가슴 통증은 없고 일주일에 세 번 달리기를 한다. 가족 중 젊은 나이에 갑자기 사망한 사람은 없다. 혈압 118/72 mmHg, 맥박 64~80회/분이다. 진찰에서 맥박은 숨을 들이쉴 때 빨라지고 내쉴 때 느려지며, 심잡음은 없다. 혈청 칼륨과 갑상샘 기능은 정상이다. 외래에서 다시 찍은 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "추가 검사나 치료 없이 정상 변이임을 설명한다",
+   "24시간 활동 중 심전도(홀터) 감시를 한다",
+   "베타차단제를 시작한다",
+   "경흉부 심장초음파를 시행한다",
+   "전기생리검사를 의뢰한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 II 에서 양성인 같은 모양의 P파가 있고 PR 간격이 일정하다 — 동리듬이다. RR 간격만 약 0.75~0.95초 사이로 서서히 길어졌다 짧아지기를 되풀이하고, 진찰에서 들숨에 빨라지고 날숨에 느려진다. 호흡성 동부정맥이며 QRS·ST-T 도 정상이다. 증상·가족력·구조적 심질환 단서가 없는 젊은 성인의 정상 변이이므로 추가 검사나 치료 없이 설명하고 안심시킨다.\n- 원리: <b>왜 들숨에 빨라지는가</b>: 들숨에 흉강 음압이 커지면 정맥환류가 늘고 폐 신장수용체·심방 수용체의 신호가 미주신경 중추를 억제한다. 동결절에 대한 미주신경 긴장이 줄어 박동이 빨라지고, 날숨에는 반대로 미주신경 긴장이 돌아와 느려진다. 그래서 RR 간격이 호흡 주기에 맞춰 「서서히」 변한다 — 갑자기 끼어드는 박동이 없다.<br> <b>왜 건강의 표지인가</b>: 미주신경 반응이 활발한 젊은 사람·운동선수에서 뚜렷하고, 나이가 들거나 당뇨 자율신경병증·심부전이 있으면 줄어든다. 이 변동이 심박변이도의 가장 큰 부분이다.<br> <b>다른 불규칙 리듬과 가르는 법</b>: P파 모양이 같고 PR 이 일정하며 변화가 점진적이면 동결절 자체의 속도 변화다. 일찍 끼어드는 박동(기외수축), 모양이 바뀌는 P파(이소성 심방 리듬·다소성 심방빈맥), P파 없는 불규칙(심방세동)과 다르다. 비호흡성 동부정맥(호흡과 무관)은 고령·디곡신 독성에서 볼 수 있어 그때는 원인을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">설명·안심(정답)</th><th>24시간 홀터 감시(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>심전도에서 진단이 끝난 <b>무증상</b> 정상 변이</td><td>간헐적 두근거림·실신처럼 <b>증상과 리듬의 관계</b>를 밝혀야 할 때</td></tr> <tr><td>얻는 정보</td><td>추가로 필요한 정보 없음</td><td>증상 시점의 리듬·기외수축 부담·숨은 빈맥/서맥</td></tr> <tr><td>왜</td><td>P파·PR 일정, 호흡 연동 — 이미 진단됨</td><td>표준 심전도 10초에 안 잡히는 간헐 부정맥 때문</td></tr> <tr><td>이 환자</td><td>증상 없음 · 호흡 연동 — 일치</td><td>설명할 증상이 없다 — 이득 없음</td></tr> </tbody></table> 검사는 답할 질문이 있을 때 한다 — 무증상의 호흡성 동부정맥에는 답할 질문이 남아 있지 않다.\n- 오답 이유:\n  - ② 24시간 홀터 감시는 간헐적 두근거림·어지러움·실신이 있어 증상 시점의 리듬을 확인해야 하거나 기외수축 부담을 재야 한다면 정답이 된다.\n  - ③ 베타차단제는 증상이 있는 동빈맥·기외수축이나 부적절 동빈맥이라면 고려하지만, 정상 변이에 쓰면 피로·서맥만 남긴다.\n  - ④ 경흉부 심장초음파는 심잡음·심부전 증상·병적 Q파나 비대 소견처럼 구조적 심질환 단서가 있었다면 정답이 된다.\n  - ⑤ 전기생리검사는 원인 모를 실신·지속 심실빈맥·조기흥분 증후군처럼 급사 위험을 평가해야 할 때라면 정답이 된다.\n- 함정: 「불규칙하다」는 말만 듣고 홀터를 고르는 것 — P파·PR 이 일정하고 호흡에 연동되면 동결절의 정상 변이다.\n- 학습목표: 젊은 무증상 성인에서 모든 QRS 앞에 같은 모양의 P파가 있고 PR 이 일정하며 RR 만 호흡에 따라 서서히 변하는 동부정맥은 생리적 변이이므로 추가 검사·치료 없이 설명한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 45: Palpitations · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2499 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 II 에서 양성인 같은 모양의 P파가 있고 PR 간격이 일정하다 — 동리듬이다. RR 간격만 약 0.75~0.95초 사이로 서서히 길어졌다 짧아지기를 되풀이하고, 진찰에서 들숨에 빨라지고 날숨에 느려진다. 호흡성 동부정맥이며 QRS·ST-T 도 정상이다. 증상·가족력·구조적 심질환 단서가 없는 젊은 성인의 정상 변이이므로 추가 검사나 치료 없이 설명하고 안심시킨다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 들숨에 빨라지는가</b>: 들숨에 흉강 음압이 커지면 정맥환류가 늘고 폐 신장수용체·심방 수용체의 신호가 미주신경 중추를 억제한다. 동결절에 대한 미주신경 긴장이 줄어 박동이 빨라지고, 날숨에는 반대로 미주신경 긴장이 돌아와 느려진다. 그래서 RR 간격이 호흡 주기에 맞춰 「서서히」 변한다 — 갑자기 끼어드는 박동이 없다.<br> <b>왜 건강의 표지인가</b>: 미주신경 반응이 활발한 젊은 사람·운동선수에서 뚜렷하고, 나이가 들거나 당뇨 자율신경병증·심부전이 있으면 줄어든다. 이 변동이 심박변이도의 가장 큰 부분이다.<br> <b>다른 불규칙 리듬과 가르는 법</b>: P파 모양이 같고 PR 이 일정하며 변화가 점진적이면 동결절 자체의 속도 변화다. 일찍 끼어드는 박동(기외수축), 모양이 바뀌는 P파(이소성 심방 리듬·다소성 심방빈맥), P파 없는 불규칙(심방세동)과 다르다. 비호흡성 동부정맥(호흡과 무관)은 고령·디곡신 독성에서 볼 수 있어 그때는 원인을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">설명·안심(정답)</th><th>24시간 홀터 감시(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>심전도에서 진단이 끝난 <b>무증상</b> 정상 변이</td><td>간헐적 두근거림·실신처럼 <b>증상과 리듬의 관계</b>를 밝혀야 할 때</td></tr> <tr><td>얻는 정보</td><td>추가로 필요한 정보 없음</td><td>증상 시점의 리듬·기외수축 부담·숨은 빈맥/서맥</td></tr> <tr><td>왜</td><td>P파·PR 일정, 호흡 연동 — 이미 진단됨</td><td>표준 심전도 10초에 안 잡히는 간헐 부정맥 때문</td></tr> <tr><td>이 환자</td><td>증상 없음 · 호흡 연동 — 일치</td><td>설명할 증상이 없다 — 이득 없음</td></tr> </tbody></table> 검사는 답할 질문이 있을 때 한다 — 무증상의 호흡성 동부정맥에는 답할 질문이 남아 있지 않다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 24시간 홀터 감시는 간헐적 두근거림·어지러움·실신이 있어 증상 시점의 리듬을 확인해야 하거나 기외수축 부담을 재야 한다면 정답이 된다.\n③ 베타차단제는 증상이 있는 동빈맥·기외수축이나 부적절 동빈맥이라면 고려하지만, 정상 변이에 쓰면 피로·서맥만 남긴다.\n④ 경흉부 심장초음파는 심잡음·심부전 증상·병적 Q파나 비대 소견처럼 구조적 심질환 단서가 있었다면 정답이 된다.\n⑤ 전기생리검사는 원인 모를 실신·지속 심실빈맥·조기흥분 증후군처럼 급사 위험을 평가해야 할 때라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「불규칙하다」는 말만 듣고 홀터를 고르는 것 — P파·PR 이 일정하고 호흡에 연동되면 동결절의 정상 변이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 무증상 성인에서 모든 QRS 앞에 같은 모양의 P파가 있고 PR 이 일정하며 RR 만 호흡에 따라 서서히 변하는 동부정맥은 생리적 변이이므로 추가 검사·치료 없이 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 45: Palpitations · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2499 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "무증상 젊은 성인의 호흡성 동부정맥은 정상 변이이므로 추가 검사 없이 설명한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "증상이 없어 홀터로 확인할 증상-리듬 관계가 없고, 심전도에서 이미 동리듬 변이로 진단된다",
+   "steps": 3,
+   "chain": [
+    "영상: 모든 QRS 앞에 같은 모양의 P파, PR 일정 → 동리듬",
+    "영상: RR 만 서서히 길어졌다 짧아짐 · 진찰에서 들숨에 빨라지고 날숨에 느려짐 → 호흡성 동부정맥",
+    "무증상 · 가족력 없음 · 구조적 심질환 단서 없음 → 정상 변이, 추가 검사·치료 없음"
+   ],
+   "key": [
+    {
+     "item": "영상: 모든 QRS 앞에 같은 모양의 양성 P파와 일정한 PR 간격",
+     "why": "동리듬",
+     "also": []
+    },
+    {
+     "item": "영상: RR 간격이 서서히 길어졌다 짧아지기를 되풀이",
+     "why": "동결절 속도의 점진적 변화",
+     "also": []
+    },
+    {
+     "item": "숨을 들이쉴 때 빨라지고 내쉴 때 느려지며",
+     "why": "호흡성 동부정맥",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "가족 중 젊은 나이에 갑자기 사망한 사람은 없다",
+     "why": "유전성 부정맥 평가 필요성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심잡음은 없다",
+     "why": "심장초음파가 필요한 구조적 질환 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "두근거림·어지러움·실신·가슴 통증은 없고",
+     "why": "홀터로 확인할 증상이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "일주일에 세 번 달리기를 한다",
+     "why": "미주신경 긴장이 높은 배경 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "모든 박동 앞에 같은 P파와 일정한 PR 이 있고 RR 만 호흡에 따라 서서히 변하는 호흡성 동부정맥이다. 무증상 젊은 성인의 정상 변이이므로 설명하고 안심시킨다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 심전도라도 간헐적 실신이나 두근거림이 있었다면 증상 시점의 리듬을 보기 위해 24시간 홀터 감시"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0679.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02499",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2499"
+  },
+  "run_id": "20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0678",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독·처치",
+  "subtopic": "심전도 판독 — 갑자기 시작된 빠른 두근거림의 고령 여성",
+  "type": "심전도 판독 — 갑자기 시작된 빠른 두근거림의 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-15",
+  "vignette": "82세 여자가 1시간 전 텔레비전을 보다가 갑자기 시작된 빠르고 규칙적인 두근거림으로 응급실에 왔다. 가벼운 어지러움이 있으나 가슴 통증과 실신은 없다. 고혈압약을 복용하고 있다. 혈압 112/70 mmHg, 맥박 152회/분으로 규칙적이며, 호흡 18회/분, 체온 36.6°C 이다. 의식은 명료하고 폐음은 깨끗하다. 혈청 칼륨 4.1 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "다소성 심방빈맥",
+   "발작성 상심실성 빈맥",
+   "동빈맥",
+   "심방세동",
+   "심실빈맥"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)에서 RR 간격이 일정한 약 150회/분의 빈맥이고 QRS 는 좁다(< 120 ms). QRS 앞에 P파가 보이지 않아 동빈맥이 아니다. RR 이 일정해 심방세동·다소성 심방빈맥이 아니며, QRS 가 좁아 심실빈맥이 아니다. 갑자기 시작한 규칙적인 좁은 QRS 빈맥 — 발작성 상심실성 빈맥이다. I 양성·II·III·aVF 음성의 좌축편위는 빈맥과 별개로 있는 전도 소견이다.\n- 원리: <b>왜 QRS 가 좁은가</b>: 빈맥 회로가 히스속 위(방실결절 안, 또는 심방-방실결절-부전도로)에 있으면 심실은 정상 전도계를 따라 탈분극하므로 QRS 가 좁다. 가장 흔한 형태인 방실결절 재진입 빈맥은 결절 안의 빠른 길과 느린 길이 회로를 이룬다 — 느린 길로 내려가고 빠른 길로 거의 동시에 올라가므로 역행 P파가 QRS 안에 묻히거나 QRS 끝에 작은 굴곡(V1 의 가성 r′)으로만 보인다. 그래서 「P파가 안 보인다」가 핵심 소견이 된다.<br> <b>왜 갑자기 시작하고 갑자기 멈추는가</b>: 조기 박동이 한쪽 길의 불응기에 걸려 일방향 차단이 생기는 순간 회로가 열리고, 회로의 한 부분이 차단되는 순간 끝난다. 동빈맥은 자율신경 자극에 따라 서서히 빨라지고 서서히 느려진다.<br> <b>150회/분이면 늘 의심할 것</b>: 2:1 전도 심방조동도 심실 박동수가 정확히 약 150회/분이다. 미주신경 자극이나 아데노신으로 방실 전도를 잠시 막으면 상심실성 빈맥은 끝나고, 조동은 톱니 모양 F파가 드러난다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발작성 상심실성 빈맥(정답)</th><th>동빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시작</td><td><b>갑자기</b>(스위치를 켠 듯)</td><td>서서히(발열·통증·탈수·빈혈에 반응)</td></tr> <tr><td>P파</td><td><b>보이지 않음</b> 또는 QRS 바로 뒤 역행 P</td><td>모든 QRS 앞에 정상 축의 P파(II 양성)</td></tr> <tr><td>박동수</td><td>150~250회/분, 거의 고정</td><td>대개 100~150회/분, 변동</td></tr> <tr><td>미주신경 자극</td><td>갑자기 멈추거나 변화 없음</td><td>서서히 느려졌다 다시 빨라짐</td></tr> <tr><td>이 환자</td><td>갑자기 시작 · P파 없음 · 152회/분 — 일치</td><td>유발 요인 없음 · P파 없음 — 불일치</td></tr> </tbody></table> 좁고 규칙적인 빈맥은 「QRS 앞 P파가 있는가」로 먼저 가른다.\n- 오답 이유:\n  - ① 다소성 심방빈맥은 모양이 다른 P파가 3가지 이상 보이고 RR·PR 간격이 불규칙하며 주로 중증 폐질환 환자라면 정답이 된다.\n  - ③ 동빈맥은 발열·통증·탈수 같은 원인이 있고 모든 QRS 앞에 II 에서 양성인 정상 P파가 보이며 박동수가 서서히 변했다면 정답이 된다.\n  - ④ 심방세동은 RR 간격이 불규칙하게 불규칙하고 P파 대신 기저선이 잔물결처럼 흔들린다면 정답이 된다.\n  - ⑤ 심실빈맥은 QRS 가 120 ms 이상으로 넓고 방실 해리·포착 박동·융합 박동이 보였다면 정답이 된다.\n- 함정: 빈맥이면 일단 동빈맥으로 읽는 것 — QRS 앞에 P파가 없고 갑자기 시작했다면 재진입 빈맥이다.\n- 학습목표: 갑자기 시작한 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 QRS 앞 P파가 보이지 않으면 발작성 상심실성 빈맥으로 판독하고, 동빈맥·심방세동·심실빈맥과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12346 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)에서 RR 간격이 일정한 약 150회/분의 빈맥이고 QRS 는 좁다(< 120 ms). QRS 앞에 P파가 보이지 않아 동빈맥이 아니다. RR 이 일정해 심방세동·다소성 심방빈맥이 아니며, QRS 가 좁아 심실빈맥이 아니다. 갑자기 시작한 규칙적인 좁은 QRS 빈맥 — 발작성 상심실성 빈맥이다. I 양성·II·III·aVF 음성의 좌축편위는 빈맥과 별개로 있는 전도 소견이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 QRS 가 좁은가</b>: 빈맥 회로가 히스속 위(방실결절 안, 또는 심방-방실결절-부전도로)에 있으면 심실은 정상 전도계를 따라 탈분극하므로 QRS 가 좁다. 가장 흔한 형태인 방실결절 재진입 빈맥은 결절 안의 빠른 길과 느린 길이 회로를 이룬다 — 느린 길로 내려가고 빠른 길로 거의 동시에 올라가므로 역행 P파가 QRS 안에 묻히거나 QRS 끝에 작은 굴곡(V1 의 가성 r′)으로만 보인다. 그래서 「P파가 안 보인다」가 핵심 소견이 된다.<br> <b>왜 갑자기 시작하고 갑자기 멈추는가</b>: 조기 박동이 한쪽 길의 불응기에 걸려 일방향 차단이 생기는 순간 회로가 열리고, 회로의 한 부분이 차단되는 순간 끝난다. 동빈맥은 자율신경 자극에 따라 서서히 빨라지고 서서히 느려진다.<br> <b>150회/분이면 늘 의심할 것</b>: 2:1 전도 심방조동도 심실 박동수가 정확히 약 150회/분이다. 미주신경 자극이나 아데노신으로 방실 전도를 잠시 막으면 상심실성 빈맥은 끝나고, 조동은 톱니 모양 F파가 드러난다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">발작성 상심실성 빈맥(정답)</th><th>동빈맥(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시작</td><td><b>갑자기</b>(스위치를 켠 듯)</td><td>서서히(발열·통증·탈수·빈혈에 반응)</td></tr> <tr><td>P파</td><td><b>보이지 않음</b> 또는 QRS 바로 뒤 역행 P</td><td>모든 QRS 앞에 정상 축의 P파(II 양성)</td></tr> <tr><td>박동수</td><td>150~250회/분, 거의 고정</td><td>대개 100~150회/분, 변동</td></tr> <tr><td>미주신경 자극</td><td>갑자기 멈추거나 변화 없음</td><td>서서히 느려졌다 다시 빨라짐</td></tr> <tr><td>이 환자</td><td>갑자기 시작 · P파 없음 · 152회/분 — 일치</td><td>유발 요인 없음 · P파 없음 — 불일치</td></tr> </tbody></table> 좁고 규칙적인 빈맥은 「QRS 앞 P파가 있는가」로 먼저 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 다소성 심방빈맥은 모양이 다른 P파가 3가지 이상 보이고 RR·PR 간격이 불규칙하며 주로 중증 폐질환 환자라면 정답이 된다.\n③ 동빈맥은 발열·통증·탈수 같은 원인이 있고 모든 QRS 앞에 II 에서 양성인 정상 P파가 보이며 박동수가 서서히 변했다면 정답이 된다.\n④ 심방세동은 RR 간격이 불규칙하게 불규칙하고 P파 대신 기저선이 잔물결처럼 흔들린다면 정답이 된다.\n⑤ 심실빈맥은 QRS 가 120 ms 이상으로 넓고 방실 해리·포착 박동·융합 박동이 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빈맥이면 일단 동빈맥으로 읽는 것 — QRS 앞에 P파가 없고 갑자기 시작했다면 재진입 빈맥이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑자기 시작한 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 QRS 앞 P파가 보이지 않으면 발작성 상심실성 빈맥으로 판독하고, 동빈맥·심방세동·심실빈맥과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12346 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "갑자기 시작한 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 P파가 보이지 않으면 발작성 상심실성 빈맥이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "QRS 앞에 P파가 보이지 않고 유발 요인 없이 갑자기 시작했다",
+   "steps": 2,
+   "chain": [
+    "영상: II 리듬 스트립에서 RR 일정한 약 150회/분, 좁은 QRS → 규칙적인 좁은 QRS 빈맥",
+    "QRS 앞 P파 없음 · 갑작스러운 시작 → 발작성 상심실성 빈맥(동빈맥·심방세동·심실빈맥 아님)"
+   ],
+   "key": [
+    {
+     "item": "영상: II 리듬 스트립에서 RR 간격이 일정한 약 150회/분의 좁은 QRS 빈맥",
+     "why": "규칙적 좁은 QRS 빈맥",
+     "also": []
+    },
+    {
+     "item": "영상: QRS 앞에 P파가 보이지 않음",
+     "why": "동빈맥을 배제하는 방향",
+     "also": []
+    },
+    {
+     "item": "갑자기 시작된 빠르고 규칙적인 두근거림",
+     "why": "재진입 빈맥의 시작 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨 4.1 mEq/L",
+     "why": "전해질 이상에 의한 부정맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 112/70 mmHg",
+     "why": "혈역학 안정 — 미주신경 자극·아데노신을 먼저 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압약을 복용하고 있다",
+     "why": "판독에 영향이 적은 배경 정보",
+     "also": []
+    }
+   ],
+   "summary": "약 150회/분의 규칙적인 좁은 QRS 빈맥이 갑자기 시작했고 QRS 앞에 P파가 보이지 않는다. 발작성 상심실성 빈맥이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 빈맥에서 RR 간격이 불규칙하게 불규칙하고 P파 대신 잔물결 기저선이 보였다면 심방세동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0678.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12346",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12346"
+  },
+  "run_id": "20261115T202437Z_일일심전도_2026-11-16_2units_2q_cfade608",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0674",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "소아 — 넘어진 뒤 호흡곤란이 심해진 걸음마기 아이의 흉부 CT",
+  "type": "소아 — 넘어진 뒤 호흡곤란이 심해진 걸음마기 아이의 흉부 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-15",
+  "vignette": "A 19-month-old boy is brought to the emergency department after he fell from a chair and struck his head. He cried immediately and has had no vomiting. His parents report no known episode of choking, but he has had a mild cough for 2 days without fever. Over the next hour in the emergency department he develops increasing respiratory distress with subcostal retractions, and oxygen saturation decreases to 85% on a non-rebreather mask; he is intubated. Breath sounds are markedly decreased over the left chest. His temperature is 37.2°C and pulse is 150/min. Head CT shows no intracranial injury. A coronal reconstruction of a chest CT scan is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous broad-spectrum antibiotics and repeat imaging in 48 hours",
+   "Chest physiotherapy with postural drainage",
+   "Nebulized albuterol every 20 minutes",
+   "Rigid bronchoscopy",
+   "Left-sided chest tube insertion"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The CT shows air in the trachea and right bronchial tree, but the left main bronchus stops abruptly just below the carina, and the entire left lung is airless and opaque. The mediastinum is pulled toward the opaque left side and the right lung is hyperexpanded — volume loss (complete atelectasis), not a space-occupying effusion or hemothorax. Abrupt bronchial cutoff with lobar or whole-lung collapse in a toddler indicates an endobronchial foreign body until proved otherwise, even without a witnessed choking episode. The diagnostic and therapeutic procedure of choice is rigid bronchoscopy under general anesthesia.\n- 원리: <b>Why the mediastinum moves toward the white lung</b>: When a bronchus is completely obstructed, the air distal to it is absorbed into the blood over hours; the lung collapses and its volume shrinks, so the mediastinum and diaphragm are pulled toward that side. A large pleural effusion or hemothorax adds volume to the hemithorax and pushes the mediastinum away. The direction of shift therefore tells you whether a white hemithorax needs a bronchoscope or a chest tube.<br> <b>Why toddlers</b>: Children 1–3 years old explore by mouth, lack molars to grind food such as nuts, and have immature airway protection; most aspirations are not witnessed or are forgotten. A partial obstruction can act as a check valve (air trapping and hyperinflation), whereas a complete one produces atelectasis, as here. Although the right main bronchus is more vertical in adults, in young children the angles are more similar, and left-sided foreign bodies are common.<br> <b>Why rigid bronchoscopy</b>: The rigid scope secures the airway, allows ventilation through the instrument, and accommodates large forceps to grasp and remove the object; flexible bronchoscopy can confirm the diagnosis but is less reliable for extraction in small children.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endobronchial obstruction → rigid bronchoscopy (answer)</th><th>Hemothorax or effusion → chest tube (closest distractor)</th></tr></thead><tbody> <tr><td>Mediastinal shift</td><td><b>Toward</b> the opaque side (volume loss)</td><td><b>Away from</b> the opaque side (mass effect)</td></tr> <tr><td>Main bronchus</td><td>Abrupt cutoff</td><td>Patent air bronchogram to the periphery</td></tr> <tr><td>Why</td><td>Distal air is absorbed behind a complete obstruction</td><td>Fluid fills the pleural space and compresses the lung</td></tr> <tr><td>This patient</td><td>Left bronchus ends below the carina, mediastinum pulled left — consistent</td><td>No shift away, no pleural fluid — inconsistent</td></tr> </tbody></table> A white hemithorax after trauma is not automatically blood: check which way the mediastinum moved.\n- 오답 이유:\n  - (A) Antibiotics with repeat imaging would suit lobar pneumonia with fever and air bronchograms, but they leave an obstructing object in place and delay removal.\n  - (B) Chest physiotherapy with postural drainage may help mucus-plug atelectasis in a ventilated patient, but it cannot dislodge a solid endobronchial object and may move it.\n  - (C) Nebulized albuterol would be appropriate for diffuse bronchospasm with bilateral wheezing, not for a single bronchus that stops abruptly.\n  - (E) Left-sided chest tube insertion would be correct if the opaque hemithorax were a hemothorax or large effusion pushing the mediastinum to the right.\n- 함정: Assuming a white hemithorax after a fall is a hemothorax — the mediastinum shifted toward it, which means collapse, not fluid.\n- 학습목표: On a pediatric chest CT, recognize abrupt cutoff of the left main bronchus with complete left lung collapse and mediastinal shift toward the opaque side, infer an endobronchial obstruction rather than pleural fluid, and choose rigid bronchoscopy\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 297: Diagnostic Procedures in Respiratory Disease · Foreign Body Aspiration in Children—Diagnostic Clues through a Clinical Case. Pediatr Rep. 2022;14(1):81-85. doi:10.3390/pediatric14010012\n\n## 출처\n- Foreign Body Aspiration in Children—Diagnostic Clues through a Clinical Case. Pediatr Rep. 2022 Feb 10;14(1):81–5. doi: 10.3390/pediatric14010012 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows air in the trachea and right bronchial tree, but the left main bronchus stops abruptly just below the carina, and the entire left lung is airless and opaque. The mediastinum is pulled toward the opaque left side and the right lung is hyperexpanded — volume loss (complete atelectasis), not a space-occupying effusion or hemothorax. Abrupt bronchial cutoff with lobar or whole-lung collapse in a toddler indicates an endobronchial foreign body until proved otherwise, even without a witnessed choking episode. The diagnostic and therapeutic procedure of choice is rigid bronchoscopy under general anesthesia."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the mediastinum moves toward the white lung</b>: When a bronchus is completely obstructed, the air distal to it is absorbed into the blood over hours; the lung collapses and its volume shrinks, so the mediastinum and diaphragm are pulled toward that side. A large pleural effusion or hemothorax adds volume to the hemithorax and pushes the mediastinum away. The direction of shift therefore tells you whether a white hemithorax needs a bronchoscope or a chest tube.<br> <b>Why toddlers</b>: Children 1–3 years old explore by mouth, lack molars to grind food such as nuts, and have immature airway protection; most aspirations are not witnessed or are forgotten. A partial obstruction can act as a check valve (air trapping and hyperinflation), whereas a complete one produces atelectasis, as here. Although the right main bronchus is more vertical in adults, in young children the angles are more similar, and left-sided foreign bodies are common.<br> <b>Why rigid bronchoscopy</b>: The rigid scope secures the airway, allows ventilation through the instrument, and accommodates large forceps to grasp and remove the object; flexible bronchoscopy can confirm the diagnosis but is less reliable for extraction in small children."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endobronchial obstruction → rigid bronchoscopy (answer)</th><th>Hemothorax or effusion → chest tube (closest distractor)</th></tr></thead><tbody> <tr><td>Mediastinal shift</td><td><b>Toward</b> the opaque side (volume loss)</td><td><b>Away from</b> the opaque side (mass effect)</td></tr> <tr><td>Main bronchus</td><td>Abrupt cutoff</td><td>Patent air bronchogram to the periphery</td></tr> <tr><td>Why</td><td>Distal air is absorbed behind a complete obstruction</td><td>Fluid fills the pleural space and compresses the lung</td></tr> <tr><td>This patient</td><td>Left bronchus ends below the carina, mediastinum pulled left — consistent</td><td>No shift away, no pleural fluid — inconsistent</td></tr> </tbody></table> A white hemithorax after trauma is not automatically blood: check which way the mediastinum moved."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Antibiotics with repeat imaging would suit lobar pneumonia with fever and air bronchograms, but they leave an obstructing object in place and delay removal.\n(B) Chest physiotherapy with postural drainage may help mucus-plug atelectasis in a ventilated patient, but it cannot dislodge a solid endobronchial object and may move it.\n(C) Nebulized albuterol would be appropriate for diffuse bronchospasm with bilateral wheezing, not for a single bronchus that stops abruptly.\n(E) Left-sided chest tube insertion would be correct if the opaque hemithorax were a hemothorax or large effusion pushing the mediastinum to the right."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming a white hemithorax after a fall is a hemothorax — the mediastinum shifted toward it, which means collapse, not fluid."
+   },
+   {
+    "k": "학습목표",
+    "v": "On a pediatric chest CT, recognize abrupt cutoff of the left main bronchus with complete left lung collapse and mediastinal shift toward the opaque side, infer an endobronchial obstruction rather than pleural fluid, and choose rigid bronchoscopy"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 297: Diagnostic Procedures in Respiratory Disease · Foreign Body Aspiration in Children—Diagnostic Clues through a Clinical Case. Pediatr Rep. 2022;14(1):81-85. doi:10.3390/pediatric14010012 ## 출처 Foreign Body Aspiration in Children—Diagnostic Clues through a Clinical Case. Pediatr Rep. 2022 Feb 10;14(1):81–5. doi: 10.3390/pediatric14010012 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Abrupt left main bronchus cutoff with complete left lung collapse in a toddler indicates an endobronchial obstruction that needs rigid bronchoscopy",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "The mediastinum is shifted toward the opaque left side (volume loss), not away from it",
+   "steps": 3,
+   "chain": [
+    "영상: left main bronchus ends abruptly below the carina, entire left lung airless",
+    "영상: mediastinum pulled to the left with right lung hyperexpansion → volume loss (atelectasis), not effusion or hemothorax",
+    "Toddler with acute bronchial obstruction → endobronchial foreign body → rigid bronchoscopy"
+   ],
+   "key": [
+    {
+     "item": "영상: abrupt cutoff of the left main bronchus just below the carina",
+     "why": "Endobronchial obstruction",
+     "also": []
+    },
+    {
+     "item": "영상: mediastinum shifted toward the opaque left lung",
+     "why": "Volume loss — rules toward atelectasis rather than fluid",
+     "also": []
+    },
+    {
+     "item": "19-month-old boy",
+     "why": "Peak age for aspiration",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Head CT shows no intracranial injury",
+     "why": "Lowers the likelihood of a central cause of respiratory failure",
+     "also": []
+    },
+    {
+     "item": "without fever",
+     "why": "Makes lobar pneumonia less likely",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "no known episode of choking",
+     "why": "Most aspirations in toddlers are unwitnessed — its absence does not exclude the diagnosis",
+     "also": []
+    },
+    {
+     "item": "fell from a chair and struck his head",
+     "why": "Explains the visit but not the lung collapse",
+     "also": []
+    }
+   ],
+   "summary": "The left main bronchus stops abruptly and the whole left lung has collapsed, pulling the mediastinum to the left. In a toddler this is an endobronchial foreign body, and the next step is rigid bronchoscopy.",
+   "switch": {
+    "choice": "E",
+    "condition": "If the opaque left hemithorax pushed the mediastinum to the right with a patent left bronchus, a hemothorax would need a chest tube"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0674.png",
+   "caption": "Coronal reconstruction of a chest CT scan; one panel of a published case figure, side markers and scale text cropped at the edges, no other adjustment (PMC Open Access Subset, CC BY)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8883880/",
+   "asset_id": "PMC-PMC8883880_Figure2_cor",
+   "text": "Foreign Body Aspiration in Children—Diagnostic Clues through a Clinical Case. Pediatr Rep. 2022 Feb 10;14(1):81–5. doi: 10.3390/pediatric14010012 (CC BY) — Figure 2"
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0672",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "근골격 — 교통사고 뒤 양쪽 고관절 변형과 골반 X선",
+  "type": "근골격 — 교통사고 뒤 양쪽 고관절 변형과 골반 X선",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-15",
+  "vignette": "A 22-year-old man is brought to the emergency department 40 minutes after a high-speed motor vehicle collision in which he was the front-seat passenger. Both knees struck the dashboard. He reports severe pain in both hips and cannot move either leg. His pulse is 112/min, and blood pressure is 118/72 mm Hg. Both lower limbs are deformed, and the distal pulses are palpable bilaterally. An anteroposterior radiograph of the pelvis is shown.",
+  "question": "Injury to which of the following nerves is most likely to be associated with the dislocation of the right hip?",
+  "options": [
+   "Superior gluteal nerve",
+   "Lateral femoral cutaneous nerve",
+   "Sciatic nerve",
+   "Femoral nerve",
+   "Obturator nerve"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: On the radiograph the right acetabulum is empty and the right femoral head lies superior and lateral to it with the femur adducted — a posterior dislocation, the typical dashboard injury (axial load on a flexed, adducted hip). The left femoral head lies inferomedially over the obturator foramen with the femur abducted — an anterior (obturator-type) dislocation. The sciatic nerve runs directly behind the hip joint, so a posteriorly displaced femoral head (and posterior wall fragment) stretches or compresses it; it is injured in roughly 10–20 % of posterior dislocations, usually the peroneal division.\n- 원리: <b>Why the direction is set by hip position at impact</b>: When force travels up the femoral shaft with the hip flexed and adducted (knee hitting the dashboard), the femoral head is driven out of the back of the acetabulum — a posterior dislocation, often with a posterior wall fracture. If the hip is abducted and externally rotated at impact, the head levers out anteriorly; with flexion it lodges over the obturator foramen.<br> <b>Why the sciatic nerve</b>: The sciatic nerve exits the pelvis through the greater sciatic foramen below the piriformis and descends directly behind the posterior capsule and acetabular wall. A posteriorly displaced head lies against it. The peroneal division is more often affected because it is more lateral, tethered at the fibular neck, and has less connective tissue protection — so foot drop and loss of dorsal foot sensation are the typical deficits.<br> <b>Why reduction is urgent</b>: The dislocated head kinks the retinacular vessels from the medial circumflex femoral artery; the risk of osteonecrosis rises sharply when reduction is delayed beyond about 6 hours, and prompt reduction also relieves the nerve.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Right hip: posterior dislocation (answer)</th><th>Left hip: anterior obturator dislocation (closest distractor)</th></tr></thead><tbody> <tr><td>Femoral head on AP film</td><td><b>Superolateral</b> to the empty acetabulum, often looks smaller</td><td><b>Inferomedial</b>, over the obturator foramen, often looks larger</td></tr> <tr><td>Limb position</td><td>Shortened, flexed, adducted, internally rotated</td><td>Abducted, externally rotated, flexed</td></tr> <tr><td>Nerve at risk</td><td><b>Sciatic</b> (peroneal division)</td><td>Obturator or femoral nerve; femoral vessels</td></tr> <tr><td>Why</td><td>Nerve lies behind the posterior wall</td><td>Head moves toward the obturator canal and femoral triangle</td></tr> </tbody></table> Read each hip separately: the nerve at risk follows the direction in which the femoral head left the acetabulum.\n- 오답 이유:\n  - (A) Superior gluteal nerve injury would be expected after a misplaced intramuscular injection or a lateral surgical approach to the hip, causing a Trendelenburg gait.\n  - (B) Lateral femoral cutaneous nerve injury would be correct for compression at the anterior superior iliac spine (meralgia paresthetica), such as from a tight belt or positioning.\n  - (D) Femoral nerve injury would be the best answer for an anterior dislocation with the femoral head displaced toward the femoral triangle in the groin.\n  - (E) Obturator nerve injury would be correct if the question asked about the left hip, whose femoral head lies over the obturator foramen.\n- 함정: Answering for the wrong side — the two hips dislocated in opposite directions, and the question asks about the right hip.\n- 학습목표: Read a pelvic radiograph in which the right femoral head lies superolateral to an empty acetabulum (posterior dislocation) and the left femoral head lies over the obturator foramen (anterior dislocation), and link posterior hip dislocation to sciatic nerve injury\n- 근거·출처: Traumatic Bilateral Asymmetrical Hip Dislocation with Acetabular Fracture: A Case Report and Review of Current Evidence. Life (Basel). 2025;15(4):532. doi:10.3390/life15040532 · Foulk DM, Mullis BH. Hip dislocation: evaluation and management. J Am Acad Orthop Surg. 2010;18(4):199-209\n\n## 출처\n- Traumatic Bilateral Asymmetrical Hip Dislocation with Acetabular Fracture: A Case Report and Review of Current Evidence. Life (Basel). 2025 Mar 24;15(4):532. doi: 10.3390/life15040532 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On the radiograph the right acetabulum is empty and the right femoral head lies superior and lateral to it with the femur adducted — a posterior dislocation, the typical dashboard injury (axial load on a flexed, adducted hip). The left femoral head lies inferomedially over the obturator foramen with the femur abducted — an anterior (obturator-type) dislocation. The sciatic nerve runs directly behind the hip joint, so a posteriorly displaced femoral head (and posterior wall fragment) stretches or compresses it; it is injured in roughly 10–20 % of posterior dislocations, usually the peroneal division."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the direction is set by hip position at impact</b>: When force travels up the femoral shaft with the hip flexed and adducted (knee hitting the dashboard), the femoral head is driven out of the back of the acetabulum — a posterior dislocation, often with a posterior wall fracture. If the hip is abducted and externally rotated at impact, the head levers out anteriorly; with flexion it lodges over the obturator foramen.<br> <b>Why the sciatic nerve</b>: The sciatic nerve exits the pelvis through the greater sciatic foramen below the piriformis and descends directly behind the posterior capsule and acetabular wall. A posteriorly displaced head lies against it. The peroneal division is more often affected because it is more lateral, tethered at the fibular neck, and has less connective tissue protection — so foot drop and loss of dorsal foot sensation are the typical deficits.<br> <b>Why reduction is urgent</b>: The dislocated head kinks the retinacular vessels from the medial circumflex femoral artery; the risk of osteonecrosis rises sharply when reduction is delayed beyond about 6 hours, and prompt reduction also relieves the nerve."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Right hip: posterior dislocation (answer)</th><th>Left hip: anterior obturator dislocation (closest distractor)</th></tr></thead><tbody> <tr><td>Femoral head on AP film</td><td><b>Superolateral</b> to the empty acetabulum, often looks smaller</td><td><b>Inferomedial</b>, over the obturator foramen, often looks larger</td></tr> <tr><td>Limb position</td><td>Shortened, flexed, adducted, internally rotated</td><td>Abducted, externally rotated, flexed</td></tr> <tr><td>Nerve at risk</td><td><b>Sciatic</b> (peroneal division)</td><td>Obturator or femoral nerve; femoral vessels</td></tr> <tr><td>Why</td><td>Nerve lies behind the posterior wall</td><td>Head moves toward the obturator canal and femoral triangle</td></tr> </tbody></table> Read each hip separately: the nerve at risk follows the direction in which the femoral head left the acetabulum."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Superior gluteal nerve injury would be expected after a misplaced intramuscular injection or a lateral surgical approach to the hip, causing a Trendelenburg gait.\n(B) Lateral femoral cutaneous nerve injury would be correct for compression at the anterior superior iliac spine (meralgia paresthetica), such as from a tight belt or positioning.\n(D) Femoral nerve injury would be the best answer for an anterior dislocation with the femoral head displaced toward the femoral triangle in the groin.\n(E) Obturator nerve injury would be correct if the question asked about the left hip, whose femoral head lies over the obturator foramen."
+   },
+   {
+    "k": "함정",
+    "v": "Answering for the wrong side — the two hips dislocated in opposite directions, and the question asks about the right hip."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a pelvic radiograph in which the right femoral head lies superolateral to an empty acetabulum (posterior dislocation) and the left femoral head lies over the obturator foramen (anterior dislocation), and link posterior hip dislocation to sciatic nerve injury"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Traumatic Bilateral Asymmetrical Hip Dislocation with Acetabular Fracture: A Case Report and Review of Current Evidence. Life (Basel). 2025;15(4):532. doi:10.3390/life15040532 · Foulk DM, Mullis BH. Hip dislocation: evaluation and management. J Am Acad Orthop Surg. 2010;18(4):199-209 ## 출처 Traumatic Bilateral Asymmetrical Hip Dislocation with Acetabular Fracture: A Case Report and Review of Current Evidence. Life (Basel). 2025 Mar 24;15(4):532. doi: 10.3390/life15040532 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "The right femoral head lies superolateral to an empty acetabulum — a posterior dislocation, which endangers the sciatic nerve",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "The right femoral head is superolateral (posterior dislocation); only the left head lies over the obturator foramen",
+   "steps": 3,
+   "chain": [
+    "영상: right acetabulum empty, right femoral head superolateral with the femur adducted → right posterior dislocation",
+    "영상: left femoral head over the obturator foramen → left anterior dislocation (not the hip asked about)",
+    "Sciatic nerve lies directly behind the posterior acetabular wall → sciatic nerve injury on the right"
+   ],
+   "key": [
+    {
+     "item": "영상: right femoral head superolateral to an empty acetabulum",
+     "why": "Posterior dislocation",
+     "also": []
+    },
+    {
+     "item": "Both knees struck the dashboard",
+     "why": "Axial load on a flexed hip — the mechanism of posterior dislocation",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: left femoral head over the obturator foramen",
+     "why": "That is the anterior dislocation — relevant to the obturator nerve, not the right hip",
+     "also": []
+    },
+    {
+     "item": "the distal pulses are palpable bilaterally",
+     "why": "Lowers the likelihood of a major vascular injury",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "pulse is 112/min",
+     "why": "Pain and trauma response — does not change the nerve at risk",
+     "also": []
+    }
+   ],
+   "summary": "On the radiograph the right femoral head sits above and lateral to the empty acetabulum, a posterior dislocation, while the left head lies over the obturator foramen. Posterior dislocation places the sciatic nerve at risk.",
+   "switch": {
+    "choice": "E",
+    "condition": "If the question asked about the left hip, whose head lies over the obturator foramen, the obturator nerve would be the nerve at risk"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0672.jpg",
+   "caption": "Anteroposterior radiograph of the pelvis taken on a spine board; the R marker is the original, resized only (PMC Open Access Subset, CC BY — no crop or adjustment)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12028609/",
+   "asset_id": "PMC-PMC12028609_Figure1",
+   "text": "Traumatic Bilateral Asymmetrical Hip Dislocation with Acetabular Fracture: A Case Report and Review of Current Evidence. Life (Basel). 2025 Mar 24;15(4):532. doi: 10.3390/life15040532 (CC BY) — Figure 1"
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0670",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "순환기 — 가끔 맥이 건너뛰는 느낌의 고령 여성",
+  "type": "순환기 — 가끔 맥이 건너뛰는 느낌의 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-15",
+  "vignette": "65세 여자가 2개월 전부터 가끔 심장이 한 번 건너뛰고 쿵 하고 세게 뛰는 느낌이 들어 외래에 왔다. 증상은 1초 정도로 하루 몇 차례, 주로 쉴 때 생긴다. 가슴 통증·호흡곤란·실신은 없다. 복용하는 약은 없고 커피를 하루 2잔 마신다. 맥박 70회/분으로 가끔 불규칙하고 혈압 128/78 mmHg 이다. 심잡음은 없다. 혈청 칼륨·마그네슘과 갑상샘 기능은 정상이다. 증상이 있을 때 찍은 12유도 심전도는 그림과 같다.",
+  "question": "증상의 원인으로 가장 적절한 것은?",
+  "options": [
+   "심실조기수축",
+   "심방조기수축",
+   "Mobitz II 형 2도 방실차단",
+   "간헐적 좌각차단",
+   "비지속 심실빈맥"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 기본 리듬은 약 70회/분의 동리듬이다. 리듬 스트립(II)의 두 번째 박동이 일찍 오는데, 그 앞에 조기 P파가 없고 QRS 가 넓고 기괴하며 T파가 QRS 주된 방향과 반대다. 뒤따르는 쉼까지 합친 간격이 동주기의 정확히 두 배다(완전 보상휴지). 단발 심실조기수축이며, 「쿵」 하는 느낌은 긴 쉼 뒤에 오는 강한 박동이다.\n- 원리: <b>왜 심실에서 시작한 박동은 넓은가</b>: 심실 근육에서 시작한 흥분은 히스-푸르키네 계통을 쓰지 못하고 심근을 세포에서 세포로 느리게 퍼진다. 그래서 QRS 가 120 ms 이상으로 넓고 모양이 기괴하다. 재분극도 비정상 경로를 따라가므로 T파가 QRS 와 반대 방향이 된다.<br> <b>왜 보상휴지가 「완전」한가</b>: 심실 흥분은 대개 동결절까지 거슬러 올라가지 못해 동결절은 제 주기를 그대로 유지한다. 다음 동흥분 P파는 제때 오지만 심실이 불응기라 전도되지 않고, 그다음 P파가 전도된다. 그래서 조기 박동을 사이에 둔 RR 간격이 동주기의 정확히 두 배다. 심방조기수축은 동결절을 재설정하므로 쉼이 보통 두 배보다 짧다(불완전 보상휴지).<br> <b>왜 「쿵」 하고 느끼는가</b>: 긴 쉼 동안 심실이 더 많이 채워지고 기외수축 뒤 수축력 증강이 겹쳐 다음 동박동이 세게 뛴다 — 단발 기외수축의 전형 증상이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심실조기수축(정답)</th><th>변행전도된 심방조기수축(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>조기 P파</td><td><b>없다</b></td><td>모양이 다른 조기 P파(앞 T파에 숨기도 함)</td></tr> <tr><td>QRS</td><td>넓고 기괴, T파 반대 방향</td><td>대개 좁다 — 변행전도 때만 넓다(흔히 우각차단 모양)</td></tr> <tr><td>쉼</td><td><b>완전 보상휴지</b>(동결절 재설정 없음)</td><td>불완전 보상휴지(동결절 재설정)</td></tr> <tr><td>이 환자</td><td>조기 P파 없음 · 넓은 QRS · 완전 휴지 — 일치</td><td>조기 P파가 보이지 않음 — 불일치</td></tr> </tbody></table> 먼저 조기 P파를 찾고, 없으면서 보상휴지가 완전하면 심실 기원이다.\n- 오답 이유:\n  - ② 심방조기수축은 일찍 오는 박동 앞에 모양이 다른 조기 P파가 있고 QRS 가 좁으며 쉼이 동주기 두 배보다 짧았다면 정답이 된다.\n  - ③ Mobitz II 형 2도 방실차단은 제때 온 동 P파 뒤에 QRS 가 갑자기 빠지고 그 앞뒤 PR 간격이 일정했다면 정답이 된다.\n  - ④ 간헐적 좌각차단은 넓은 박동이 일찍 오지 않고 정상 동주기에 정상 P파를 앞세워 나타났다면 정답이 된다.\n  - ⑤ 비지속 심실빈맥은 넓은 박동이 3개 이상 100회/분 넘는 속도로 이어지고 30초 안에 멈췄다면 정답이 된다.\n- 함정: 넓은 박동을 모두 각차단으로 읽는 것 — 일찍 오고 앞에 P파가 없으면 심실 기외수축이다.\n- 학습목표: 앞선 조기 P파 없이 일찍 오는 넓고 기괴한 QRS 와 반대 방향 T파, 완전 보상휴지를 심실조기수축으로 판독하고, 변행전도된 심방조기수축과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7(1):154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16539 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기본 리듬은 약 70회/분의 동리듬이다. 리듬 스트립(II)의 두 번째 박동이 일찍 오는데, 그 앞에 조기 P파가 없고 QRS 가 넓고 기괴하며 T파가 QRS 주된 방향과 반대다. 뒤따르는 쉼까지 합친 간격이 동주기의 정확히 두 배다(완전 보상휴지). 단발 심실조기수축이며, 「쿵」 하는 느낌은 긴 쉼 뒤에 오는 강한 박동이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 심실에서 시작한 박동은 넓은가</b>: 심실 근육에서 시작한 흥분은 히스-푸르키네 계통을 쓰지 못하고 심근을 세포에서 세포로 느리게 퍼진다. 그래서 QRS 가 120 ms 이상으로 넓고 모양이 기괴하다. 재분극도 비정상 경로를 따라가므로 T파가 QRS 와 반대 방향이 된다.<br> <b>왜 보상휴지가 「완전」한가</b>: 심실 흥분은 대개 동결절까지 거슬러 올라가지 못해 동결절은 제 주기를 그대로 유지한다. 다음 동흥분 P파는 제때 오지만 심실이 불응기라 전도되지 않고, 그다음 P파가 전도된다. 그래서 조기 박동을 사이에 둔 RR 간격이 동주기의 정확히 두 배다. 심방조기수축은 동결절을 재설정하므로 쉼이 보통 두 배보다 짧다(불완전 보상휴지).<br> <b>왜 「쿵」 하고 느끼는가</b>: 긴 쉼 동안 심실이 더 많이 채워지고 기외수축 뒤 수축력 증강이 겹쳐 다음 동박동이 세게 뛴다 — 단발 기외수축의 전형 증상이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">심실조기수축(정답)</th><th>변행전도된 심방조기수축(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>조기 P파</td><td><b>없다</b></td><td>모양이 다른 조기 P파(앞 T파에 숨기도 함)</td></tr> <tr><td>QRS</td><td>넓고 기괴, T파 반대 방향</td><td>대개 좁다 — 변행전도 때만 넓다(흔히 우각차단 모양)</td></tr> <tr><td>쉼</td><td><b>완전 보상휴지</b>(동결절 재설정 없음)</td><td>불완전 보상휴지(동결절 재설정)</td></tr> <tr><td>이 환자</td><td>조기 P파 없음 · 넓은 QRS · 완전 휴지 — 일치</td><td>조기 P파가 보이지 않음 — 불일치</td></tr> </tbody></table> 먼저 조기 P파를 찾고, 없으면서 보상휴지가 완전하면 심실 기원이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 심방조기수축은 일찍 오는 박동 앞에 모양이 다른 조기 P파가 있고 QRS 가 좁으며 쉼이 동주기 두 배보다 짧았다면 정답이 된다.\n③ Mobitz II 형 2도 방실차단은 제때 온 동 P파 뒤에 QRS 가 갑자기 빠지고 그 앞뒤 PR 간격이 일정했다면 정답이 된다.\n④ 간헐적 좌각차단은 넓은 박동이 일찍 오지 않고 정상 동주기에 정상 P파를 앞세워 나타났다면 정답이 된다.\n⑤ 비지속 심실빈맥은 넓은 박동이 3개 이상 100회/분 넘는 속도로 이어지고 30초 안에 멈췄다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "넓은 박동을 모두 각차단으로 읽는 것 — 일찍 오고 앞에 P파가 없으면 심실 기외수축이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "앞선 조기 P파 없이 일찍 오는 넓고 기괴한 QRS 와 반대 방향 T파, 완전 보상휴지를 심실조기수축으로 판독하고, 변행전도된 심방조기수축과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7(1):154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16539 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "조기 P파 없이 일찍 오는 넓고 기괴한 QRS 와 완전 보상휴지는 심실조기수축이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "일찍 온 박동 앞에 조기 P파가 없고 보상휴지가 완전하다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬 약 70회/분, 두 번째 박동이 조기 P파 없이 일찍 오는 넓고 기괴한 QRS(반대 방향 T)",
+    "완전 보상휴지 · 건너뛰고 쿵 하는 증상 → 단발 심실조기수축"
+   ],
+   "key": [
+    {
+     "item": "영상: 조기 P파 없이 일찍 오는 넓고 기괴한 QRS 와 반대 방향 T파",
+     "why": "심실 기원",
+     "also": []
+    },
+    {
+     "item": "영상: 조기 박동 뒤 완전 보상휴지",
+     "why": "동결절이 재설정되지 않았다 — 심실 기외수축에 맞는다",
+     "also": []
+    },
+    {
+     "item": "한 번 건너뛰고 쿵 하고 세게 뛰는 느낌",
+     "why": "쉼과 쉼 뒤 강한 박동의 전형 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 칼륨·마그네슘과 갑상샘 기능은 정상이다",
+     "why": "대사성 유발 요인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "가슴 통증·호흡곤란·실신은 없다",
+     "why": "고위험 소견이 없는 양성 경과",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "커피를 하루 2잔",
+     "why": "적은 카페인 — 판단에 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "일찍 온 박동이 넓고 기괴하며 앞에 조기 P파가 없고 완전 보상휴지가 뒤따른다. 심실조기수축이고, 건너뛰고 쿵 하는 증상을 설명한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "일찍 온 좁은 박동 앞에 모양이 다른 조기 P파가 있고 쉼이 불완전 보상이면 심방조기수축"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0670.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16539",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16539"
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0669",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "피부 — 최근 커진 듯한 발의 비대칭 갈색 반",
+  "type": "피부 — 최근 커진 듯한 발의 비대칭 갈색 반",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-15",
+  "vignette": "45세 남자가 발에 있는 갈색 반점이 최근 1년 사이 커진 것 같아 피부과에 왔다. 가렵거나 피가 난 적은 없다. 피부암 가족력은 없고, 몸의 다른 부위에 작은 점이 10개 정도 있다. 병변은 지름 약 1.5 cm 의 편평한 연갈색 반으로 윤곽이 비대칭이고 경계가 들쭉날쭉하며, 만져지는 결절이나 궤양은 없다. 사타구니 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "1~3 mm 경계의 전층 절제생검",
+   "3개월 뒤 더모스코피 사진 비교 관찰",
+   "면도 절제",
+   "액화질소 냉동치료",
+   "색소 레이저 제거"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 더모스코피에서 병변 윤곽이 비대칭이고 가는 갈색 색소망과 점이 고르지 않게 흩어져 있다. 청백색 베일·퇴행 구조는 없어 전형적 흑색종 소견은 아니지만, 비대칭·불규칙 경계·지름 6 mm 초과에 더해 환자가 「최근 커졌다」고 말하는 변화(evolution)가 있다. 변하는 비정형 색소 병변은 흑색종을 배제할 조직 진단이 필요하고, 그 방법은 병변 전체를 1~3 mm 경계로 피하지방까지 떼는 전층 절제생검이다(이 병변은 조직검사로 이형성 모반이 확정되었다).\n- 원리: <b>왜 「전체를, 깊이까지」 떼는가</b>: 흑색종의 병기와 치료(재절제 경계·감시림프절 생검)는 <b>Breslow 두께</b> — 표피 과립층에서 가장 깊은 종양세포까지의 깊이 — 로 정해진다. 병변의 일부만 떼거나(부분 생검) 얕게 깎으면(면도) 가장 깊은 부분이 남아 두께를 과소평가하고, 병변의 가장 비정형적인 부분을 놓칠 수 있다. 그래서 진단 목적의 첫 생검은 병변 전체를 좁은 경계(1~3 mm)로 피하지방까지 떼어 병리의사가 전체 구조와 깊이를 보게 한다.<br> <b>왜 경계는 좁게 하는가</b>: 아직 진단 전이므로 넓은 경계(1~2 cm)로 떼면 림프 흐름이 바뀌어 나중에 감시림프절 생검이 부정확해진다. 넓은 절제는 조직으로 흑색종과 두께가 확인된 뒤에 한다.<br> <b>왜 파괴적 치료는 금기인가</b>: 냉동·레이저는 조직을 남기지 않아 진단을 영원히 잃는다. 색소 병변을 없애는 치료는 양성이 확실할 때만 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">전층 절제생검(정답)</th><th>단기 사진 비교 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>환자가 변화를 말하거나</b> 비정형 구조가 뚜렷한 병변</td><td>편평하고 변화 이력이 없는 경도 비정형 병변</td></tr> <tr><td>목적</td><td>지금 흑색종을 배제·병기 결정</td><td>3개월 사이 변화가 생기는지 확인</td></tr> <tr><td>왜</td><td>이미 변했으므로 관찰로 얻을 정보가 없다</td><td>변화가 없으면 불필요한 절제를 피한다</td></tr> <tr><td>이 환자</td><td>최근 1년 사이 커짐·비대칭·1.5 cm — 일치</td><td>변화 이력이 있어 해당하지 않는다</td></tr> </tbody></table> 「이미 변했는가」가 관찰과 생검을 가른다 — 변화가 있으면 관찰 기간을 둘 이유가 없다.\n- 오답 이유:\n  - ② 3개월 뒤 사진 비교 관찰은 변화 이력이 없는 편평한 경도 비정형 병변으로, 환자가 커졌다고 느끼지 않았다면 고려할 수 있다.\n  - ③ 면도 절제는 표피에 국한된 양성 융기 병변(지루각화증 등)에 쓰며, 깊이를 재야 하는 흑색종 의심 병변에서는 Breslow 두께를 놓친다.\n  - ④ 액화질소 냉동치료는 일광각화증·사마귀처럼 임상적으로 진단이 확실한 표재 병변이라면 정답이 되지만 조직이 남지 않는다.\n  - ⑤ 색소 레이저 제거는 조직검사로 양성이 확인된 미용 목적의 흑자라면 고려할 수 있으나 진단 전 색소 병변에는 쓰지 않는다.\n- 함정: 흑색종의 전형 구조(청백색 베일)가 없다는 이유로 관찰을 고르는 것 — 환자가 말한 「커졌다」는 변화가 생검의 이유다.\n- 학습목표: 더모스코피에서 비대칭 윤곽과 고르지 않은 색소망을 보이며 최근 변한 색소 병변은 단기 관찰이 아니라 좁은 경계의 전층 절제생검으로 조직 진단을 한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin · Swetter SM, Tsao H, Bichakjian CK, et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol. 2019;80(1):208-250 · ISIC Archive, International Skin Imaging Collaboration — histopathology-confirmed dermoscopic image (CC-0)\n\n## 출처\n- ISIC Archive ISIC_0001122 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 병변 윤곽이 비대칭이고 가는 갈색 색소망과 점이 고르지 않게 흩어져 있다. 청백색 베일·퇴행 구조는 없어 전형적 흑색종 소견은 아니지만, 비대칭·불규칙 경계·지름 6 mm 초과에 더해 환자가 「최근 커졌다」고 말하는 변화(evolution)가 있다. 변하는 비정형 색소 병변은 흑색종을 배제할 조직 진단이 필요하고, 그 방법은 병변 전체를 1~3 mm 경계로 피하지방까지 떼는 전층 절제생검이다(이 병변은 조직검사로 이형성 모반이 확정되었다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「전체를, 깊이까지」 떼는가</b>: 흑색종의 병기와 치료(재절제 경계·감시림프절 생검)는 <b>Breslow 두께</b> — 표피 과립층에서 가장 깊은 종양세포까지의 깊이 — 로 정해진다. 병변의 일부만 떼거나(부분 생검) 얕게 깎으면(면도) 가장 깊은 부분이 남아 두께를 과소평가하고, 병변의 가장 비정형적인 부분을 놓칠 수 있다. 그래서 진단 목적의 첫 생검은 병변 전체를 좁은 경계(1~3 mm)로 피하지방까지 떼어 병리의사가 전체 구조와 깊이를 보게 한다.<br> <b>왜 경계는 좁게 하는가</b>: 아직 진단 전이므로 넓은 경계(1~2 cm)로 떼면 림프 흐름이 바뀌어 나중에 감시림프절 생검이 부정확해진다. 넓은 절제는 조직으로 흑색종과 두께가 확인된 뒤에 한다.<br> <b>왜 파괴적 치료는 금기인가</b>: 냉동·레이저는 조직을 남기지 않아 진단을 영원히 잃는다. 색소 병변을 없애는 치료는 양성이 확실할 때만 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">전층 절제생검(정답)</th><th>단기 사진 비교 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>환자가 변화를 말하거나</b> 비정형 구조가 뚜렷한 병변</td><td>편평하고 변화 이력이 없는 경도 비정형 병변</td></tr> <tr><td>목적</td><td>지금 흑색종을 배제·병기 결정</td><td>3개월 사이 변화가 생기는지 확인</td></tr> <tr><td>왜</td><td>이미 변했으므로 관찰로 얻을 정보가 없다</td><td>변화가 없으면 불필요한 절제를 피한다</td></tr> <tr><td>이 환자</td><td>최근 1년 사이 커짐·비대칭·1.5 cm — 일치</td><td>변화 이력이 있어 해당하지 않는다</td></tr> </tbody></table> 「이미 변했는가」가 관찰과 생검을 가른다 — 변화가 있으면 관찰 기간을 둘 이유가 없다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 3개월 뒤 사진 비교 관찰은 변화 이력이 없는 편평한 경도 비정형 병변으로, 환자가 커졌다고 느끼지 않았다면 고려할 수 있다.\n③ 면도 절제는 표피에 국한된 양성 융기 병변(지루각화증 등)에 쓰며, 깊이를 재야 하는 흑색종 의심 병변에서는 Breslow 두께를 놓친다.\n④ 액화질소 냉동치료는 일광각화증·사마귀처럼 임상적으로 진단이 확실한 표재 병변이라면 정답이 되지만 조직이 남지 않는다.\n⑤ 색소 레이저 제거는 조직검사로 양성이 확인된 미용 목적의 흑자라면 고려할 수 있으나 진단 전 색소 병변에는 쓰지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "흑색종의 전형 구조(청백색 베일)가 없다는 이유로 관찰을 고르는 것 — 환자가 말한 「커졌다」는 변화가 생검의 이유다."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 비대칭 윤곽과 고르지 않은 색소망을 보이며 최근 변한 색소 병변은 단기 관찰이 아니라 좁은 경계의 전층 절제생검으로 조직 진단을 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin · Swetter SM, Tsao H, Bichakjian CK, et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol. 2019;80(1):208-250 · ISIC Archive, International Skin Imaging Collaboration — histopathology-confirmed dermoscopic image (CC-0) ## 출처 ISIC Archive ISIC_0001122 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "최근 커진 비대칭 비정형 색소 병변은 1~3 mm 경계의 전층 절제생검으로 조직 진단한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "환자가 최근 1년 사이 커졌다고 말해 이미 변화(evolution)가 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 비대칭 윤곽, 고르지 않은 가는 색소망과 점 → 비정형 멜라닌 색소 병변(흑색종 배제 필요)",
+    "최근 커짐(변화) · 1.5 cm → 관찰이 아니라 병변 전체의 좁은 경계 전층 절제생검"
+   ],
+   "key": [
+    {
+     "item": "영상: 비대칭 윤곽과 고르지 않게 흩어진 가는 갈색 색소망·점",
+     "why": "비정형 멜라닌 병변",
+     "also": []
+    },
+    {
+     "item": "최근 1년 사이 커진 것 같아",
+     "why": "변화 — 생검의 가장 강한 이유",
+     "also": []
+    },
+    {
+     "item": "지름 약 1.5 cm",
+     "why": "6 mm 초과",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "만져지는 결절이나 궤양은 없다",
+     "why": "진행된 결절형 흑색종 가능성을 낮춘다 — 생검 필요성은 그대로",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "사타구니 림프절은 만져지지 않는다",
+     "why": "병기 결정 전 넓은 절제나 림프절 처치가 아직 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "몸의 다른 부위에 작은 점이 10개 정도",
+     "why": "모반 수가 많지 않아 판단에 큰 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "더모스코피에서 비대칭의 비정형 색소 병변이고 환자는 최근 커졌다고 말한다. 흑색종을 배제하려면 병변 전체를 좁은 경계로 깊이까지 떼는 절제생검을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "변화 이력이 없고 비정형 소견이 경미한 편평한 병변이라면 3개월 뒤 사진 비교 관찰"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0669.jpg",
+   "caption": "더모스코피(편광) 사진, 원본 그대로 크기 조정만 — 눈금자는 원본의 것 (ISIC Archive, CC-0 — 크롭·색 보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001122",
+   "asset_id": "ISIC-ISIC_0001122",
+   "text": "ISIC Archive ISIC_0001122 (CC-0)"
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0677",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미",
+  "type": "예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-15",
+  "vignette": "52세 남자가 보건소 선별검사에서 양성 결과를 받고 「이 질병이 있을 가능성이 90% 이상이냐」고 물으러 왔다. 증상은 없고 진찰 소견도 정상이다. 보건소는 40세 이상 주민 10,000명에게 이 검사를 시행했고, 이 질병의 지역 유병률은 2% 로 추정된다. 검사의 민감도는 90%, 특이도는 95% 로 보고되어 있다. 양성이 나온 주민에게는 확진 검사를 권할 예정이다.",
+  "question": "이 남자가 실제로 질병이 있을 확률로 가장 가까운 것은?",
+  "options": [
+   "약 99.8%",
+   "약 27%",
+   "약 49%",
+   "약 90%",
+   "약 95%"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 10,000명 중 환자는 2% 인 200명, 비환자는 9,800명이다. 민감도 90% 이므로 참양성은 200 × 0.9 = 180명, 특이도 95% 이므로 위양성은 9,800 × 0.05 = 490명이다. 양성자 670명 중 실제 환자는 180명 — 양성예측도 = 180 / 670 ≈ 27% 이다. 민감도(90%)는 「환자 중 양성 비율」이지 「양성 중 환자 비율」이 아니다.\n- 원리: <b>왜 민감도와 양성예측도가 다른가</b>: 민감도·특이도는 질병 상태를 기준으로 본 검사의 성질이다 — 환자 집단 안에서 양성이 나올 비율, 비환자 집단 안에서 음성이 나올 비율. 양성예측도는 반대 방향, 즉 「양성 결과」를 기준으로 그 안에 환자가 얼마나 있는가를 묻는다. 그래서 양성예측도에는 두 집단의 크기, 곧 유병률이 들어간다.<br> <b>왜 유병률이 낮으면 위양성이 압도하는가</b>: 위양성 수 = 비환자 수 × (1 − 특이도). 비환자가 9,800명으로 환자의 49배이므로 특이도가 95% 로 높아도 5% 가 490명이 되어 참양성 180명보다 많아진다. 유병률이 10배 낮아지면 양성예측도는 훨씬 더 떨어진다.<br> <b>Bayes 로 보면</b>: 사전 오즈 = 2/98 ≈ 0.02, 양성 우도비 = 민감도/(1 − 특이도) = 0.9/0.05 = 18, 사후 오즈 = 0.02 × 18 ≈ 0.37, 사후 확률 = 0.37/1.37 ≈ 27%. 같은 검사가 고위험군(유병률 20%)에서는 양성예측도가 약 82% 가 된다 — 그래서 선별은 위험군을 골라 하고, 양성은 확진 검사로 확인한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">지표</th><th style=\"width:38%\">양성예측도(정답, 약 27%)</th><th>민감도(가장 가까운 오답, 90%)</th></tr></thead><tbody> <tr><td>분모</td><td><b>검사 양성자</b>(670명)</td><td>실제 환자(200명)</td></tr> <tr><td>질문</td><td>양성이면 병이 있을 확률</td><td>병이 있으면 양성이 나올 확률</td></tr> <tr><td>유병률 영향</td><td><b>크게 받는다</b>(위양성 수가 비환자 수에 비례)</td><td>받지 않는다(검사 고유 성질)</td></tr> <tr><td>이 문제</td><td>180 / 670 ≈ 27%</td><td>180 / 200 = 90%</td></tr> </tbody></table> 「누구를 분모로 두는가」를 먼저 정하면 네 지표가 섞이지 않는다 — 환자에게 말해 줄 확률은 양성예측도다.\n- 오답 이유:\n  - ① 약 99.8% 는 음성예측도이며(9,310/9,330), 「음성인 사람이 실제로 질병이 없을 확률」을 물었다면 정답이 된다.\n  - ③ 약 49% 는 유병률이 5% 인 집단이라면 정답이 된다(참양성 450명, 위양성 475명 — 450/925).\n  - ④ 약 90% 는 민감도이며, 「이 질병이 있는 사람이 양성으로 나올 확률」을 물었다면 정답이 된다.\n  - ⑤ 약 95% 는 특이도이며, 「질병이 없는 사람이 음성으로 나올 확률」을 물었다면 정답이 된다.\n- 함정: 민감도 90% 를 그대로 양성 환자의 질병 확률로 말하는 것 — 유병률이 낮으면 양성의 대부분은 위양성이다.\n- 학습목표: 민감도·특이도가 높은 검사라도 유병률이 낮은 집단에서는 양성예측도가 낮다는 것을 2×2 표로 계산하고, 민감도·특이도·음성예측도와 혼동하지 않는다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 4: Decision-Making in Clinical Medicine · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 6: Screening and Prevention of Disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "10,000명 중 환자는 2% 인 200명, 비환자는 9,800명이다. 민감도 90% 이므로 참양성은 200 × 0.9 = 180명, 특이도 95% 이므로 위양성은 9,800 × 0.05 = 490명이다. 양성자 670명 중 실제 환자는 180명 — 양성예측도 = 180 / 670 ≈ 27% 이다. 민감도(90%)는 「환자 중 양성 비율」이지 「양성 중 환자 비율」이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 민감도와 양성예측도가 다른가</b>: 민감도·특이도는 질병 상태를 기준으로 본 검사의 성질이다 — 환자 집단 안에서 양성이 나올 비율, 비환자 집단 안에서 음성이 나올 비율. 양성예측도는 반대 방향, 즉 「양성 결과」를 기준으로 그 안에 환자가 얼마나 있는가를 묻는다. 그래서 양성예측도에는 두 집단의 크기, 곧 유병률이 들어간다.<br> <b>왜 유병률이 낮으면 위양성이 압도하는가</b>: 위양성 수 = 비환자 수 × (1 − 특이도). 비환자가 9,800명으로 환자의 49배이므로 특이도가 95% 로 높아도 5% 가 490명이 되어 참양성 180명보다 많아진다. 유병률이 10배 낮아지면 양성예측도는 훨씬 더 떨어진다.<br> <b>Bayes 로 보면</b>: 사전 오즈 = 2/98 ≈ 0.02, 양성 우도비 = 민감도/(1 − 특이도) = 0.9/0.05 = 18, 사후 오즈 = 0.02 × 18 ≈ 0.37, 사후 확률 = 0.37/1.37 ≈ 27%. 같은 검사가 고위험군(유병률 20%)에서는 양성예측도가 약 82% 가 된다 — 그래서 선별은 위험군을 골라 하고, 양성은 확진 검사로 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">지표</th><th style=\"width:38%\">양성예측도(정답, 약 27%)</th><th>민감도(가장 가까운 오답, 90%)</th></tr></thead><tbody> <tr><td>분모</td><td><b>검사 양성자</b>(670명)</td><td>실제 환자(200명)</td></tr> <tr><td>질문</td><td>양성이면 병이 있을 확률</td><td>병이 있으면 양성이 나올 확률</td></tr> <tr><td>유병률 영향</td><td><b>크게 받는다</b>(위양성 수가 비환자 수에 비례)</td><td>받지 않는다(검사 고유 성질)</td></tr> <tr><td>이 문제</td><td>180 / 670 ≈ 27%</td><td>180 / 200 = 90%</td></tr> </tbody></table> 「누구를 분모로 두는가」를 먼저 정하면 네 지표가 섞이지 않는다 — 환자에게 말해 줄 확률은 양성예측도다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 약 99.8% 는 음성예측도이며(9,310/9,330), 「음성인 사람이 실제로 질병이 없을 확률」을 물었다면 정답이 된다.\n③ 약 49% 는 유병률이 5% 인 집단이라면 정답이 된다(참양성 450명, 위양성 475명 — 450/925).\n④ 약 90% 는 민감도이며, 「이 질병이 있는 사람이 양성으로 나올 확률」을 물었다면 정답이 된다.\n⑤ 약 95% 는 특이도이며, 「질병이 없는 사람이 음성으로 나올 확률」을 물었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "민감도 90% 를 그대로 양성 환자의 질병 확률로 말하는 것 — 유병률이 낮으면 양성의 대부분은 위양성이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "민감도·특이도가 높은 검사라도 유병률이 낮은 집단에서는 양성예측도가 낮다는 것을 2×2 표로 계산하고, 민감도·특이도·음성예측도와 혼동하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 4: Decision-Making in Clinical Medicine · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 6: Screening and Prevention of Disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "예후",
+   "decision": "유병률 2% 에서 민감도 90% · 특이도 95% 검사의 양성예측도는 2×2 표로 약 27% 이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "환자가 물은 것은 「양성이면 병이 있을 확률」(양성예측도)이지 「병이 있으면 양성일 확률」(민감도)이 아니다",
+   "steps": 3,
+   "chain": [
+    "유병률 2% → 환자 200명 · 비환자 9,800명",
+    "민감도 90% → 참양성 180명, 특이도 95% → 위양성 490명",
+    "양성예측도 = 180 / (180 + 490) ≈ 27%"
+   ],
+   "key": [
+    {
+     "item": "유병률은 2%",
+     "why": "양성예측도를 정하는 사전 확률",
+     "also": []
+    },
+    {
+     "item": "민감도는 90%",
+     "why": "참양성 수 계산",
+     "also": []
+    },
+    {
+     "item": "특이도는 95%",
+     "why": "위양성 수 계산",
+     "also": []
+    },
+    {
+     "item": "이 질병이 있을 가능성이 90% 이상이냐",
+     "why": "환자가 묻는 것은 양성예측도 — 민감도와 혼동하게 만드는 함정",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "확진 검사를 권할 예정",
+     "why": "낮은 양성예측도 때문에 확진 검사가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "40세 이상 주민 10,000명",
+     "why": "계산을 쉽게 하는 인원 — 결과 비율에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "10,000명 중 환자 200명에서 참양성 180명, 비환자 9,800명에서 위양성 490명이 나온다. 양성 670명 중 환자는 180명이므로 양성예측도는 약 27% 다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 검사를 유병률 5% 인 고위험 집단에서 시행했다면 양성예측도는 약 49%"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0676",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "약리 — 와파린 복용 중 항생제를 더한 뒤 오른 INR",
+  "type": "약리 — 와파린 복용 중 항생제를 더한 뒤 오른 INR",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-15",
+  "vignette": "A 74-year-old man comes to the emergency department because of bleeding from his gums and several bruises on his forearms for 2 days. He has taken warfarin for 3 years for atrial fibrillation, and his INR has been stable between 2.0 and 3.0 at monthly checks. Eight days ago he began taking trimethoprim-sulfamethoxazole for a urinary tract infection. He has not changed his diet and drinks no alcohol. His pulse is 84/min and irregularly irregular, and blood pressure is 132/80 mm Hg. Hemoglobin concentration is 12.8 g/dL, platelet count is 230,000/mm3, and INR is 6.9. Liver function tests are within the reference ranges.",
+  "question": "Which of the following is the most likely mechanism of the increase in INR?",
+  "options": [
+   "Displacement of warfarin from plasma albumin",
+   "Induction of cytochrome P450 3A4",
+   "Inhibition of vitamin K epoxide reductase gene expression",
+   "Decreased renal excretion of unchanged warfarin",
+   "Inhibition of cytochrome P450 2C9"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Warfarin is a racemic mixture; the S-enantiomer is 3–5 times more potent and is cleared almost entirely by hepatic CYP2C9. Sulfamethoxazole is a CYP2C9 inhibitor, so S-warfarin clearance falls and its concentration rises over several days until a new, higher steady state is reached — the INR rises from a stable 2–3 to 6.9 about a week after the antibiotic was started. Liver function, diet, and alcohol are unchanged, so the interaction explains the change.\n- 원리: <b>Why the effect takes days</b>: Inhibiting the clearance of a drug raises its steady-state concentration in proportion to the fall in clearance, but the new steady state is reached only after about four to five half-lives. Warfarin's half-life is about 36–42 hours, and the INR also lags because existing clotting factors (especially prothrombin, half-life about 60 hours) must decay. Hence the bleeding appears a week after the antibiotic was added.<br> <b>Why stereochemistry matters</b>: The S-enantiomer drives most of the anticoagulant effect and depends on CYP2C9; the R-enantiomer is cleared by CYP1A2 and CYP3A4. Inhibitors of CYP2C9 (sulfamethoxazole, metronidazole, fluconazole, amiodarone) therefore cause large INR rises, whereas inhibitors affecting only R-warfarin have smaller effects. Patients with reduced-function CYP2C9 variants need lower warfarin doses for the same reason.<br> <b>Why protein displacement is not the main mechanism</b>: Displacement from albumin briefly raises the free fraction, but the extra free drug is also available for metabolism and distribution, so free concentration returns to baseline within a few half-lives. A sustained rise requires a fall in clearance.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP2C9 inhibition (answer)</th><th>Albumin displacement (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on clearance</td><td><b>Decreased</b> intrinsic clearance of S-warfarin</td><td>Unchanged (free fraction rises, clearance of free drug unchanged)</td></tr> <tr><td>Time course</td><td>Rises over days to a new, higher steady state</td><td>Transient; free drug returns to baseline</td></tr> <tr><td>Why</td><td>Steady-state concentration = dosing rate ÷ clearance</td><td>Extra free drug is eliminated faster</td></tr> <tr><td>This patient</td><td>Sustained INR 6.9 after 8 days — consistent</td><td>Would not produce a sustained rise — inconsistent</td></tr> </tbody></table> A sustained change in effect points to a change in clearance; protein binding changes alone rarely matter clinically.\n- 오답 이유:\n  - (A) Displacement from plasma albumin raises free warfarin only transiently and would matter mainly if clearance were also reduced, such as with severe liver disease.\n  - (B) Induction of CYP3A4, as by rifampin or carbamazepine, would increase warfarin clearance and lower the INR, so it would be correct for a falling INR.\n  - (C) Inhibition of vitamin K epoxide reductase is warfarin's own mechanism; a gene variant (VKORC1) changes dose requirement from the start, not after a new antibiotic.\n  - (D) Decreased renal excretion would matter for drugs eliminated unchanged by the kidney, such as dabigatran; warfarin is cleared almost entirely by hepatic metabolism.\n- 함정: Choosing albumin displacement because both drugs are highly protein bound — only reduced clearance produces a sustained INR rise.\n- 학습목표: Explain the sustained rise in INR after adding trimethoprim-sulfamethoxazole to warfarin by sulfamethoxazole inhibition of CYP2C9, which metabolizes the more potent S-enantiomer of warfarin, rather than by plasma protein displacement\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 71: Principles of Clinical Pharmacology · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 123: Antiplatelet, Anticoagulant, and Fibrinolytic Drugs",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Warfarin is a racemic mixture; the S-enantiomer is 3–5 times more potent and is cleared almost entirely by hepatic CYP2C9. Sulfamethoxazole is a CYP2C9 inhibitor, so S-warfarin clearance falls and its concentration rises over several days until a new, higher steady state is reached — the INR rises from a stable 2–3 to 6.9 about a week after the antibiotic was started. Liver function, diet, and alcohol are unchanged, so the interaction explains the change."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the effect takes days</b>: Inhibiting the clearance of a drug raises its steady-state concentration in proportion to the fall in clearance, but the new steady state is reached only after about four to five half-lives. Warfarin's half-life is about 36–42 hours, and the INR also lags because existing clotting factors (especially prothrombin, half-life about 60 hours) must decay. Hence the bleeding appears a week after the antibiotic was added.<br> <b>Why stereochemistry matters</b>: The S-enantiomer drives most of the anticoagulant effect and depends on CYP2C9; the R-enantiomer is cleared by CYP1A2 and CYP3A4. Inhibitors of CYP2C9 (sulfamethoxazole, metronidazole, fluconazole, amiodarone) therefore cause large INR rises, whereas inhibitors affecting only R-warfarin have smaller effects. Patients with reduced-function CYP2C9 variants need lower warfarin doses for the same reason.<br> <b>Why protein displacement is not the main mechanism</b>: Displacement from albumin briefly raises the free fraction, but the extra free drug is also available for metabolism and distribution, so free concentration returns to baseline within a few half-lives. A sustained rise requires a fall in clearance."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP2C9 inhibition (answer)</th><th>Albumin displacement (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on clearance</td><td><b>Decreased</b> intrinsic clearance of S-warfarin</td><td>Unchanged (free fraction rises, clearance of free drug unchanged)</td></tr> <tr><td>Time course</td><td>Rises over days to a new, higher steady state</td><td>Transient; free drug returns to baseline</td></tr> <tr><td>Why</td><td>Steady-state concentration = dosing rate ÷ clearance</td><td>Extra free drug is eliminated faster</td></tr> <tr><td>This patient</td><td>Sustained INR 6.9 after 8 days — consistent</td><td>Would not produce a sustained rise — inconsistent</td></tr> </tbody></table> A sustained change in effect points to a change in clearance; protein binding changes alone rarely matter clinically."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Displacement from plasma albumin raises free warfarin only transiently and would matter mainly if clearance were also reduced, such as with severe liver disease.\n(B) Induction of CYP3A4, as by rifampin or carbamazepine, would increase warfarin clearance and lower the INR, so it would be correct for a falling INR.\n(C) Inhibition of vitamin K epoxide reductase is warfarin's own mechanism; a gene variant (VKORC1) changes dose requirement from the start, not after a new antibiotic.\n(D) Decreased renal excretion would matter for drugs eliminated unchanged by the kidney, such as dabigatran; warfarin is cleared almost entirely by hepatic metabolism."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing albumin displacement because both drugs are highly protein bound — only reduced clearance produces a sustained INR rise."
+   },
+   {
+    "k": "학습목표",
+    "v": "Explain the sustained rise in INR after adding trimethoprim-sulfamethoxazole to warfarin by sulfamethoxazole inhibition of CYP2C9, which metabolizes the more potent S-enantiomer of warfarin, rather than by plasma protein displacement"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 71: Principles of Clinical Pharmacology · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 123: Antiplatelet, Anticoagulant, and Fibrinolytic Drugs"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "Sulfamethoxazole inhibits CYP2C9, reducing clearance of the potent S-enantiomer of warfarin and producing a sustained INR rise",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "The INR rise is sustained after 8 days, which requires a fall in clearance rather than a transient change in protein binding",
+   "steps": 2,
+   "chain": [
+    "INR stable 2.0–3.0 for years, now 6.9 eight days after starting trimethoprim-sulfamethoxazole with no other change → drug interaction",
+    "Sustained rise over days → reduced clearance of S-warfarin by CYP2C9 inhibition"
+   ],
+   "key": [
+    {
+     "item": "began taking trimethoprim-sulfamethoxazole",
+     "why": "CYP2C9 inhibitor",
+     "also": []
+    },
+    {
+     "item": "INR has been stable between 2.0 and 3.0",
+     "why": "Shows the change is new",
+     "also": []
+    },
+    {
+     "item": "INR is 6.9",
+     "why": "Excess anticoagulation",
+     "also": []
+    },
+    {
+     "item": "Eight days ago",
+     "why": "Time course of a clearance interaction",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Liver function tests are within the reference ranges",
+     "why": "Lowers the likelihood of hepatic synthetic failure",
+     "also": []
+    },
+    {
+     "item": "He has not changed his diet and drinks no alcohol",
+     "why": "Lowers the likelihood of reduced vitamin K intake or alcohol effects",
+     "also": []
+    },
+    {
+     "item": "platelet count is 230,000/mm3",
+     "why": "Bleeding is not from thrombocytopenia",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "The INR rose from a stable range to 6.9 a week after trimethoprim-sulfamethoxazole was added. Sulfamethoxazole inhibits CYP2C9, which clears the more potent S-warfarin, so warfarin concentration rises to a new steady state.",
+   "switch": {
+    "choice": "B",
+    "condition": "If rifampin had been added and the INR fell below the therapeutic range, the mechanism would be cytochrome P450 induction"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0675",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "내분비 — 스테로이드를 끊은 뒤 쇼크로 온 환자",
+  "type": "내분비 — 스테로이드를 끊은 뒤 쇼크로 온 환자",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-15",
+  "vignette": "52세 여자가 하루 전부터 토하고 배가 아프며 일어서면 어지러워 응급실에 왔다. 류마티스관절염으로 2년 동안 매일 프레드니솔론 10 mg 을 복용하다가, 체중이 늘어 1주 전 스스로 끊었다. 혈압 78/46 mmHg, 맥박 118회/분, 체온 37.6°C 이다. 의식은 명료하나 처져 있고 피부 색소 침착은 없다. 복부는 부드럽고 반발압통은 없다. 생리식염수 1 L 를 빠르게 투여한 뒤에도 혈압은 84/50 mmHg 이다. 검사 결과 혈청 나트륨 129 mEq/L, 칼륨 4.4 mEq/L, 혈당 58 mg/dL, 크레아티닌 1.1 mg/dL 이다. 코르티솔과 부신피질자극호르몬 측정을 위한 혈액은 채취해 두었다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "노르에피네프린 지속 정주만 시작",
+   "프레드니솔론 10 mg 경구 재개",
+   "히드로코르티손 100 mg 정주",
+   "부신피질자극호르몬 자극검사 결과를 확인한 뒤 치료",
+   "플루드로코르티손 0.1 mg 경구 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 2년 동안 생리 용량 이상의 프레드니솔론을 먹어 시상하부-뇌하수체-부신 축이 억제된 상태에서 약을 갑자기 끊었다. 그 뒤 구토·복통·수액에 반응하지 않는 저혈압·저혈당·저나트륨이 생겼다 — 부신위기다. 진단 검사용 혈액은 이미 채취했으므로 결과를 기다리지 않고 히드로코르티손 100 mg 을 정주하고(이후 하루 200 mg), 포도당이 든 수액을 이어 준다. 색소 침착이 없고 칼륨이 정상인 것은 부신피질자극호르몬이 억제된 이차성(약물성) 부신부전에 맞는다.\n- 원리: <b>왜 끊으면 위기가 오는가</b>: 외부 글루코코르티코이드는 시상하부 CRH 와 뇌하수체 ACTH 분비를 되먹임으로 억제한다. 몇 주 이상 지속되면 ACTH 자극이 없어 부신 속상대가 위축되고, 약을 끊어도 몇 달 동안 코르티솔을 충분히 만들지 못한다.<br> <b>왜 저혈압이 수액에 반응하지 않는가</b>: 코르티솔은 혈관 평활근의 α1 아드레날린 수용체 발현과 카테콜아민 반응을 유지한다(허용 작용). 코르티솔이 없으면 혈관이 승압제와 수액에 잘 반응하지 않는다. 저혈당은 코르티솔의 간 포도당 신생 촉진이 사라져서, 저나트륨은 코르티솔 부족이 항이뇨호르몬 분비를 늘려서 생긴다.<br> <b>왜 칼륨이 정상인가</b>: 알도스테론은 ACTH 가 아니라 레닌-안지오텐신으로 조절된다. 이차성(약물성) 부신부전에서는 사구대가 살아 있어 고칼륨혈증이 드물고, ACTH 가 낮아 색소 침착도 없다. 그래서 무기질코르티코이드(플루드로코르티손)는 필요 없다.<br> <b>왜 히드로코르티손인가</b>: 100 mg 이상의 히드로코르티손은 무기질코르티코이드 작용까지 갖고 즉시 혈중 농도를 올린다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">히드로코르티손 즉시 정주(정답)</th><th>자극검사 후 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>혈역학이 불안정한</b> 부신위기 의심</td><td>안정된 환자의 만성 부신부전 의심</td></tr> <tr><td>검사와의 순서</td><td>코르티솔·ACTH 채혈 후 바로 투여</td><td>검사 결과로 진단을 확정한 뒤 치료</td></tr> <tr><td>왜</td><td>치료 지연이 사망으로 이어진다</td><td>위험이 없을 때는 정확한 진단이 우선</td></tr> <tr><td>이 환자</td><td>수액 뒤에도 84/50 · 혈당 58 — 일치</td><td>쇼크 상태라 기다릴 수 없다</td></tr> </tbody></table> 진단 검사가 필요하면 덱사메타손(코르티솔 측정에 간섭하지 않음)을 대신 주고 검사할 수 있지만, 검사 때문에 치료를 미루지 않는다.\n- 오답 이유:\n  - ① 노르에피네프린 단독 투여는 코르티솔이 정상인 패혈성 쇼크에서 쓰며, 코르티솔이 없으면 승압제에 혈관이 잘 반응하지 않는다.\n  - ② 프레드니솔론 경구 재개는 구토가 없고 혈압이 안정된 상태에서 서서히 감량하던 중 증상이 생겼다면 고려하지만, 지금은 흡수가 불확실하다.\n  - ④ 부신피질자극호르몬 자극검사 후 치료는 혈역학이 안정되고 피로·식욕 저하 같은 만성 증상만 있는 부신부전 의심이라면 정답이 된다.\n  - ⑤ 플루드로코르티손은 칼륨이 높고 레닌이 오른 원발성 부신부전의 장기 유지 치료에 더하는 약으로, 위기 때는 고용량 히드로코르티손이 이 역할을 대신한다.\n- 함정: 진단을 확정하려고 자극검사를 먼저 고르는 것 — 쇼크 상태의 부신위기는 채혈만 하고 바로 치료한다.\n- 학습목표: 장기 글루코코르티코이드를 갑자기 끊은 뒤 생긴 저혈압·저혈당·저나트륨은 부신위기이며, 검사 결과를 기다리지 않고 히드로코르티손 100 mg 정주와 수액으로 치료한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Bornstein SR, Allolio B, Arlt W, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(2):364-389",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "2년 동안 생리 용량 이상의 프레드니솔론을 먹어 시상하부-뇌하수체-부신 축이 억제된 상태에서 약을 갑자기 끊었다. 그 뒤 구토·복통·수액에 반응하지 않는 저혈압·저혈당·저나트륨이 생겼다 — 부신위기다. 진단 검사용 혈액은 이미 채취했으므로 결과를 기다리지 않고 히드로코르티손 100 mg 을 정주하고(이후 하루 200 mg), 포도당이 든 수액을 이어 준다. 색소 침착이 없고 칼륨이 정상인 것은 부신피질자극호르몬이 억제된 이차성(약물성) 부신부전에 맞는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 끊으면 위기가 오는가</b>: 외부 글루코코르티코이드는 시상하부 CRH 와 뇌하수체 ACTH 분비를 되먹임으로 억제한다. 몇 주 이상 지속되면 ACTH 자극이 없어 부신 속상대가 위축되고, 약을 끊어도 몇 달 동안 코르티솔을 충분히 만들지 못한다.<br> <b>왜 저혈압이 수액에 반응하지 않는가</b>: 코르티솔은 혈관 평활근의 α1 아드레날린 수용체 발현과 카테콜아민 반응을 유지한다(허용 작용). 코르티솔이 없으면 혈관이 승압제와 수액에 잘 반응하지 않는다. 저혈당은 코르티솔의 간 포도당 신생 촉진이 사라져서, 저나트륨은 코르티솔 부족이 항이뇨호르몬 분비를 늘려서 생긴다.<br> <b>왜 칼륨이 정상인가</b>: 알도스테론은 ACTH 가 아니라 레닌-안지오텐신으로 조절된다. 이차성(약물성) 부신부전에서는 사구대가 살아 있어 고칼륨혈증이 드물고, ACTH 가 낮아 색소 침착도 없다. 그래서 무기질코르티코이드(플루드로코르티손)는 필요 없다.<br> <b>왜 히드로코르티손인가</b>: 100 mg 이상의 히드로코르티손은 무기질코르티코이드 작용까지 갖고 즉시 혈중 농도를 올린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">히드로코르티손 즉시 정주(정답)</th><th>자극검사 후 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>혈역학이 불안정한</b> 부신위기 의심</td><td>안정된 환자의 만성 부신부전 의심</td></tr> <tr><td>검사와의 순서</td><td>코르티솔·ACTH 채혈 후 바로 투여</td><td>검사 결과로 진단을 확정한 뒤 치료</td></tr> <tr><td>왜</td><td>치료 지연이 사망으로 이어진다</td><td>위험이 없을 때는 정확한 진단이 우선</td></tr> <tr><td>이 환자</td><td>수액 뒤에도 84/50 · 혈당 58 — 일치</td><td>쇼크 상태라 기다릴 수 없다</td></tr> </tbody></table> 진단 검사가 필요하면 덱사메타손(코르티솔 측정에 간섭하지 않음)을 대신 주고 검사할 수 있지만, 검사 때문에 치료를 미루지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 노르에피네프린 단독 투여는 코르티솔이 정상인 패혈성 쇼크에서 쓰며, 코르티솔이 없으면 승압제에 혈관이 잘 반응하지 않는다.\n② 프레드니솔론 경구 재개는 구토가 없고 혈압이 안정된 상태에서 서서히 감량하던 중 증상이 생겼다면 고려하지만, 지금은 흡수가 불확실하다.\n④ 부신피질자극호르몬 자극검사 후 치료는 혈역학이 안정되고 피로·식욕 저하 같은 만성 증상만 있는 부신부전 의심이라면 정답이 된다.\n⑤ 플루드로코르티손은 칼륨이 높고 레닌이 오른 원발성 부신부전의 장기 유지 치료에 더하는 약으로, 위기 때는 고용량 히드로코르티손이 이 역할을 대신한다."
+   },
+   {
+    "k": "함정",
+    "v": "진단을 확정하려고 자극검사를 먼저 고르는 것 — 쇼크 상태의 부신위기는 채혈만 하고 바로 치료한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "장기 글루코코르티코이드를 갑자기 끊은 뒤 생긴 저혈압·저혈당·저나트륨은 부신위기이며, 검사 결과를 기다리지 않고 히드로코르티손 100 mg 정주와 수액으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Bornstein SR, Allolio B, Arlt W, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(2):364-389"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "장기 스테로이드 중단 뒤 수액에 반응하지 않는 저혈압·저혈당은 부신위기이고 히드로코르티손을 즉시 정주한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "생리식염수 1 L 뒤에도 혈압 84/50 mmHg 로 쇼크가 지속되어 검사를 기다릴 수 없다",
+   "steps": 3,
+   "chain": [
+    "프레드니솔론 10 mg 을 2년 복용 후 갑자기 중단 → 시상하부-뇌하수체-부신 축 억제",
+    "구토 · 수액 불응 저혈압 · 저혈당 · 저나트륨 → 부신위기(색소 침착 없음·칼륨 정상 = 이차성)",
+    "혈역학 불안정 → 채혈 후 검사 결과를 기다리지 않고 히드로코르티손 100 mg 정주"
+   ],
+   "key": [
+    {
+     "item": "2년 동안 매일 프레드니솔론 10 mg 을 복용하다가",
+     "why": "축 억제를 일으키는 용량·기간",
+     "also": []
+    },
+    {
+     "item": "1주 전 스스로 끊었다",
+     "why": "갑작스러운 중단",
+     "also": []
+    },
+    {
+     "item": "혈압은 84/50 mmHg",
+     "why": "수액에 반응하지 않는 쇼크",
+     "also": []
+    },
+    {
+     "item": "혈당 58 mg/dL",
+     "why": "코르티솔 결핍의 저혈당",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼륨 4.4 mEq/L",
+     "why": "원발성 부신부전 가능성을 낮춘다 — 플루드로코르티손 불필요",
+     "also": []
+    },
+    {
+     "item": "피부 색소 침착은 없다",
+     "why": "ACTH 가 높지 않다 — 이차성에 맞는다",
+     "also": []
+    },
+    {
+     "item": "복부는 부드럽고 반발압통은 없다",
+     "why": "복막염 등 외과적 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "코르티솔과 부신피질자극호르몬 측정을 위한 혈액은 채취해 두었다",
+     "why": "진단 검사를 해치지 않고 바로 치료할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "장기 복용한 프레드니솔론을 갑자기 끊은 뒤 수액에 반응하지 않는 저혈압과 저혈당이 생긴 부신위기다. 채혈은 끝났으므로 히드로코르티손 100 mg 을 바로 정주한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈압이 안정되고 피로·식욕 저하 같은 만성 증상만 있다면 부신피질자극호르몬 자극검사로 먼저 진단"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0673",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "신장 — 경련을 일으킨 중증 저나트륨혈증의 첫 처치",
+  "type": "신장 — 경련을 일으킨 중증 저나트륨혈증의 첫 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-15",
+  "vignette": "70세 여자가 오늘 아침 전신 강직간대 경련을 한 뒤 응급실에 왔다. 2주 전 폐 소세포암을 진단받고 항암치료를 기다리는 중이다. 이틀 전부터 구역과 두통이 심해졌다고 한다. 응급실에서 다시 경련은 없었으나 의식이 혼미하다. 혈압 128/76 mmHg, 맥박 88회/분, 체온 36.8°C 이다. 피부 긴장도와 점막은 정상이고 부종은 없다. 검사 결과 혈청 나트륨 116 mEq/L, 칼륨 4.0 mEq/L, 혈당 98 mg/dL, 크레아티닌 0.6 mg/dL, 혈장 삼투압 240 mOsm/kg, 소변 삼투압 520 mOsm/kg, 소변 나트륨 60 mEq/L 이다. 갑상샘 기능과 아침 코르티솔은 정상이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "데메클로사이클린 경구 투여",
+   "3% 고장식염수 100 mL 를 10분에 걸쳐 정주",
+   "하루 수분 섭취를 1 L 이하로 제한",
+   "0.9% 생리식염수를 시간당 150 mL 로 정주",
+   "톨밥탄 경구 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 혈장 삼투압이 낮고 소변이 부적절하게 농축되어 있으며(520 mOsm/kg) 소변 나트륨이 높고, 체액량이 정상이고 갑상샘·부신 기능이 정상이다 — 폐 소세포암에 의한 항이뇨호르몬 부적절 분비 증후군이다. 그러나 지금 결정을 가르는 것은 원인이 아니라 증상의 중증도다. 경련과 의식 혼미는 뇌부종의 징후이므로 3% 고장식염수 100 mL(약 2 mL/kg)를 10분에 걸쳐 주고 증상이 남으면 두 번까지 반복해 나트륨을 4~6 mEq/L 빨리 올린다. 이후 24시간 교정은 8~10 mEq/L 이하로 묶는다.\n- 원리: <b>왜 경련이 나는가</b>: 혈장 삼투압이 떨어지면 물이 삼투압이 높은 뇌세포 안으로 들어가 뇌부종이 생긴다. 두개골 안에서 부피가 늘 공간이 없어 두통·구역 → 혼미 → 경련 → 천막 탈출로 진행한다. 뇌세포는 48시간에 걸쳐 칼륨과 유기 삼투질을 내보내 부피를 되돌리지만(적응), 이 환자처럼 증상이 심하면 적응이 끝나기 전이다.<br> <b>왜 「작게, 빨리」 주는가</b>: 나트륨을 4~6 mEq/L 만 올려도 뇌 부피가 줄어 경련과 탈출 위험이 대부분 사라진다. 그래서 정해진 소량을 볼루스로 준다 — 계산된 지속 주입보다 빠르고 예측 가능하다.<br> <b>왜 상한이 있는가</b>: 이미 적응한 뇌세포는 삼투질을 다시 들이는 데 며칠이 걸린다. 혈장 나트륨을 24시간에 10 mEq/L 넘게 올리면 세포가 탈수되어 교뇌 등에서 수초가 녹는 삼투성 탈수초 증후군이 생긴다. 특히 알코올 중독·영양 결핍·저칼륨혈증에서 위험하다.<br> <b>왜 생리식염수가 안 되는가</b>: 항이뇨호르몬 과다에서는 신장이 나트륨은 내보내고 물은 붙잡는다. 소변 삼투압(520)이 수액 삼투압(308)보다 높으면 주입한 나트륨은 진한 소변으로 빠지고 물만 남아 나트륨이 더 떨어진다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">3% 고장식염수 볼루스(정답)</th><th>수분 제한(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>중증 증상</b>(경련·혼미·구토) — 급성 뇌부종</td><td>증상이 없거나 가벼운 만성 항이뇨호르몬 부적절 분비</td></tr> <tr><td>나트륨 상승 속도</td><td>1시간 안에 4~6 mEq/L</td><td>하루 1~2 mEq/L 이하</td></tr> <tr><td>왜</td><td>뇌 부피를 즉시 줄여 탈출을 막는다</td><td>물 섭취를 줄여 천천히 교정 — 응급 상황엔 너무 느리다</td></tr> <tr><td>이 환자</td><td>경련 · 의식 혼미 — 일치</td><td>장기 관리로는 쓰지만 지금은 부족</td></tr> </tbody></table> 같은 원인이라도 처치는 증상의 중증도로 정한다 — 증상이 가라앉은 뒤에 수분 제한·원인 치료로 넘어간다.\n- 오답 이유:\n  - ① 데메클로사이클린은 신장의 항이뇨호르몬 반응을 줄여 만성 항이뇨호르몬 부적절 분비를 장기 관리할 때 쓰며, 효과가 며칠 뒤에 나타난다.\n  - ③ 하루 1 L 이하 수분 제한은 증상이 없거나 가벼운 만성 항이뇨호르몬 부적절 분비 증후군이라면 첫 치료로 정답이 된다.\n  - ④ 0.9% 생리식염수 정주는 구토·설사로 체액량이 줄어 소변 나트륨이 낮은(< 30 mEq/L) 저혈량성 저나트륨혈증이라면 정답이 된다.\n  - ⑤ 톨밥탄은 증상이 가벼운 만성 정상혈량성 저나트륨혈증에서 수분 제한으로 부족할 때 쓰며, 효과가 늦고 과교정 위험이 있어 경련에는 쓰지 않는다.\n- 함정: 원인(항이뇨호르몬 부적절 분비)을 찾고 수분 제한을 고르는 것 — 경련은 원인과 무관하게 고장식염수 볼루스가 먼저다.\n- 학습목표: 경련을 동반한 중증 증상성 저나트륨혈증은 원인 감별을 기다리지 않고 3% 고장식염수 100 mL 를 빠르게 주고, 24시간 교정 폭을 8~10 mEq/L 이하로 제한한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Spasovski G, Vanholder R, Allolio B, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol. 2014;170(3):G1-G47",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "혈장 삼투압이 낮고 소변이 부적절하게 농축되어 있으며(520 mOsm/kg) 소변 나트륨이 높고, 체액량이 정상이고 갑상샘·부신 기능이 정상이다 — 폐 소세포암에 의한 항이뇨호르몬 부적절 분비 증후군이다. 그러나 지금 결정을 가르는 것은 원인이 아니라 증상의 중증도다. 경련과 의식 혼미는 뇌부종의 징후이므로 3% 고장식염수 100 mL(약 2 mL/kg)를 10분에 걸쳐 주고 증상이 남으면 두 번까지 반복해 나트륨을 4~6 mEq/L 빨리 올린다. 이후 24시간 교정은 8~10 mEq/L 이하로 묶는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 경련이 나는가</b>: 혈장 삼투압이 떨어지면 물이 삼투압이 높은 뇌세포 안으로 들어가 뇌부종이 생긴다. 두개골 안에서 부피가 늘 공간이 없어 두통·구역 → 혼미 → 경련 → 천막 탈출로 진행한다. 뇌세포는 48시간에 걸쳐 칼륨과 유기 삼투질을 내보내 부피를 되돌리지만(적응), 이 환자처럼 증상이 심하면 적응이 끝나기 전이다.<br> <b>왜 「작게, 빨리」 주는가</b>: 나트륨을 4~6 mEq/L 만 올려도 뇌 부피가 줄어 경련과 탈출 위험이 대부분 사라진다. 그래서 정해진 소량을 볼루스로 준다 — 계산된 지속 주입보다 빠르고 예측 가능하다.<br> <b>왜 상한이 있는가</b>: 이미 적응한 뇌세포는 삼투질을 다시 들이는 데 며칠이 걸린다. 혈장 나트륨을 24시간에 10 mEq/L 넘게 올리면 세포가 탈수되어 교뇌 등에서 수초가 녹는 삼투성 탈수초 증후군이 생긴다. 특히 알코올 중독·영양 결핍·저칼륨혈증에서 위험하다.<br> <b>왜 생리식염수가 안 되는가</b>: 항이뇨호르몬 과다에서는 신장이 나트륨은 내보내고 물은 붙잡는다. 소변 삼투압(520)이 수액 삼투압(308)보다 높으면 주입한 나트륨은 진한 소변으로 빠지고 물만 남아 나트륨이 더 떨어진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">3% 고장식염수 볼루스(정답)</th><th>수분 제한(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>중증 증상</b>(경련·혼미·구토) — 급성 뇌부종</td><td>증상이 없거나 가벼운 만성 항이뇨호르몬 부적절 분비</td></tr> <tr><td>나트륨 상승 속도</td><td>1시간 안에 4~6 mEq/L</td><td>하루 1~2 mEq/L 이하</td></tr> <tr><td>왜</td><td>뇌 부피를 즉시 줄여 탈출을 막는다</td><td>물 섭취를 줄여 천천히 교정 — 응급 상황엔 너무 느리다</td></tr> <tr><td>이 환자</td><td>경련 · 의식 혼미 — 일치</td><td>장기 관리로는 쓰지만 지금은 부족</td></tr> </tbody></table> 같은 원인이라도 처치는 증상의 중증도로 정한다 — 증상이 가라앉은 뒤에 수분 제한·원인 치료로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 데메클로사이클린은 신장의 항이뇨호르몬 반응을 줄여 만성 항이뇨호르몬 부적절 분비를 장기 관리할 때 쓰며, 효과가 며칠 뒤에 나타난다.\n③ 하루 1 L 이하 수분 제한은 증상이 없거나 가벼운 만성 항이뇨호르몬 부적절 분비 증후군이라면 첫 치료로 정답이 된다.\n④ 0.9% 생리식염수 정주는 구토·설사로 체액량이 줄어 소변 나트륨이 낮은(< 30 mEq/L) 저혈량성 저나트륨혈증이라면 정답이 된다.\n⑤ 톨밥탄은 증상이 가벼운 만성 정상혈량성 저나트륨혈증에서 수분 제한으로 부족할 때 쓰며, 효과가 늦고 과교정 위험이 있어 경련에는 쓰지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "원인(항이뇨호르몬 부적절 분비)을 찾고 수분 제한을 고르는 것 — 경련은 원인과 무관하게 고장식염수 볼루스가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경련을 동반한 중증 증상성 저나트륨혈증은 원인 감별을 기다리지 않고 3% 고장식염수 100 mL 를 빠르게 주고, 24시간 교정 폭을 8~10 mEq/L 이하로 제한한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Spasovski G, Vanholder R, Allolio B, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol. 2014;170(3):G1-G47"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "경련을 동반한 중증 증상성 저나트륨혈증은 원인과 무관하게 3% 고장식염수 볼루스로 먼저 나트륨을 올린다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "경련과 의식 혼미가 있어 뇌부종을 즉시 줄여야 한다",
+   "steps": 3,
+   "chain": [
+    "혈장 삼투압 240 · 소변 삼투압 520 · 소변 나트륨 60 · 정상혈량 · 갑상샘·부신 정상 → 항이뇨호르몬 부적절 분비 증후군(폐 소세포암)",
+    "경련 · 의식 혼미 → 중증 증상(급성 뇌부종)",
+    "중증 증상 → 3% 고장식염수 100 mL 볼루스, 24시간 교정 8~10 mEq/L 이하"
+   ],
+   "key": [
+    {
+     "item": "전신 강직간대 경련",
+     "why": "중증 증상 — 고장식염수 볼루스의 적응",
+     "also": []
+    },
+    {
+     "item": "의식이 혼미하다",
+     "why": "뇌부종이 진행 중",
+     "also": []
+    },
+    {
+     "item": "혈청 나트륨 116 mEq/L",
+     "why": "중증 저나트륨혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변 나트륨 60 mEq/L",
+     "why": "저혈량성 저나트륨혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘 기능과 아침 코르티솔은 정상이다",
+     "why": "갑상샘저하증·부신부전에 의한 저나트륨 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "소변 삼투압 520 mOsm/kg",
+     "why": "생리식염수를 주면 나트륨이 오히려 떨어진다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "폐 소세포암",
+     "why": "항이뇨호르몬 부적절 분비의 원인 — 지금의 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "폐 소세포암에 의한 항이뇨호르몬 부적절 분비 증후군으로 나트륨 116 의 저나트륨혈증이 생겼고 경련·혼미가 있다. 원인과 무관하게 3% 고장식염수 100 mL 볼루스를 먼저 주고 24시간 교정 폭을 제한한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 검사 결과에서 증상이 없거나 가벼운 만성 경과라면 하루 1 L 이하 수분 제한"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0671",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·호흡기·근골격·신장·소아·내분비·약리·예방의학)",
+  "subtopic": "호흡기 — 이산화탄소가 쌓인 만성폐쇄폐질환 급성 악화",
+  "type": "호흡기 — 이산화탄소가 쌓인 만성폐쇄폐질환 급성 악화",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-15",
+  "vignette": "68세 남자가 3일 전부터 기침과 누런 가래가 늘고 숨이 차서 응급실에 왔다. 10년 전 만성폐쇄폐질환을 진단받았고 흡연력은 45갑년이다. 체온 37.8°C, 혈압 138/82 mmHg, 맥박 108회/분, 호흡 28회/분이며 실내공기에서 산소포화도는 86%이다. 의식은 명료하고 말을 할 수 있으며, 목의 보조호흡근을 쓰고 양쪽 폐에서 호기 천명이 들린다. 비강 캐뉼라 산소 2 L/분, 흡입 기관지확장제, 전신 스테로이드를 투여하고 1시간 뒤 시행한 동맥혈가스검사는 pH 7.28, PaCO2 68 mmHg, PaO2 62 mmHg, HCO3- 31 mEq/L 이다. 흉부 X선에서 기흉과 폐경화는 없다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "비재호흡 마스크로 산소 15 L/분",
+   "아미노필린 정주",
+   "탄산수소나트륨 정주",
+   "비침습적 양압환기",
+   "기관내삽관 후 기계환기"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 초기 치료(산소·기관지확장제·스테로이드) 뒤에도 pH 7.28, PaCO2 68 mmHg 의 급성 호흡산증이 남아 있다(HCO3- 31 은 만성 고탄산혈증의 부분 대상). 의식이 명료하고 말을 할 수 있으며 혈역학이 안정되어 있어 비침습적 양압환기의 금기가 없다. 이 상황에서 비침습적 양압환기는 호흡근 부담을 줄이고 이산화탄소를 배출시켜 삽관률과 사망률을 낮춘다.\n- 원리: <b>왜 이산화탄소가 쌓이는가</b>: 만성폐쇄폐질환 급성 악화에서는 기도 저항이 늘고 호기가 끝나기 전에 다음 흡기가 시작되어 폐 안에 공기가 갇힌다(동적 과팽창·내인성 PEEP). 횡격막이 납작해져 효율이 떨어지고, 환자는 빠르고 얕게 숨쉬어 사강 비율이 커진다 — 폐포 환기가 줄어 PaCO2 가 오른다.<br> <b>왜 양압환기가 듣는가</b>: 흡기 양압(IPAP)은 일회호흡량을 늘려 폐포 환기를 회복시키고 호흡근의 일을 대신한다. 호기 양압(EPAP)은 내인성 PEEP 를 상쇄해 환자가 흡기를 시작할 때 넘어야 할 문턱을 낮춘다. 그래서 pH 7.25~7.35 의 고탄산 호흡산증에서 가장 효과가 크고, 그 근거가 가장 강한 적응증이다.<br> <b>왜 산소를 올리면 안 되는가</b>: 고농도 산소는 저산소성 폐혈관 수축을 풀어 환기-관류 불균형을 키우고 Haldane 효과로 이산화탄소를 더 올린다. 목표 산소포화도는 88~92 % 다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비침습적 양압환기(정답)</th><th>기관내삽관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>pH ≤ 7.35 · PaCO2 > 45</b> 의 호흡산증, 의식 명료</td><td>호흡정지·의식 저하·혈역학 불안정·분비물 처리 불가</td></tr> <tr><td>금기 여부</td><td>협조 가능·기도 보호 가능</td><td>비침습적 양압환기 실패(1~2시간 내 pH 악화)</td></tr> <tr><td>왜</td><td>호흡근 휴식·내인성 PEEP 상쇄로 삽관을 피한다</td><td>기도를 확보해야 할 때만 — 삽관 자체가 폐렴·이탈 실패 위험</td></tr> <tr><td>이 환자</td><td>pH 7.28 · 명료 · 혈압 안정 — 일치</td><td>삽관 적응 없음 — 불일치</td></tr> </tbody></table> pH 가 낮을수록 실패 위험이 커지므로 시작 1~2시간 뒤 동맥혈가스를 다시 보고, 나빠지면 지체 없이 삽관한다.\n- 오답 이유:\n  - ① 비재호흡 마스크 고농도 산소는 이산화탄소 저류가 없는 저산소성 호흡부전이라면 쓸 수 있으나 이 환자에서는 고탄산혈증을 악화시킨다.\n  - ② 아미노필린 정주는 치료역이 좁고 부작용이 커서 흡입 기관지확장제에 반응하지 않는 경우에도 이득이 거의 없어 권하지 않는다.\n  - ③ 탄산수소나트륨 정주는 대사산증이 주된 원인일 때 고려하며, 호흡산증에서는 이산화탄소를 더 만들어 교정하지 못한다.\n  - ⑤ 기관내삽관은 의식 저하·호흡정지·쇼크·분비물 처리 불가가 있거나 비침습적 양압환기 1~2시간 뒤 pH 가 더 떨어졌다면 정답이 된다.\n- 함정: PaO2 가 62 mmHg 로 낮지 않다고 안심하거나 산소를 더 올리는 것 — 판단 기준은 pH 와 PaCO2 다.\n- 학습목표: 만성폐쇄폐질환 급성 악화에서 초기 치료 뒤에도 pH < 7.35 · PaCO2 > 45 mmHg 의 호흡산증이 남고 의식이 명료하면 비침습적 양압환기를 시작한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 303: Chronic Obstructive Pulmonary Disease · Rochwerg B, Brochard L, Elliott MW, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J. 2017;50(2):1602426 · Global Initiative for Chronic Obstructive Lung Disease. Global Strategy for the Diagnosis, Management, and Prevention of COPD: 2025 Report",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초기 치료(산소·기관지확장제·스테로이드) 뒤에도 pH 7.28, PaCO2 68 mmHg 의 급성 호흡산증이 남아 있다(HCO3- 31 은 만성 고탄산혈증의 부분 대상). 의식이 명료하고 말을 할 수 있으며 혈역학이 안정되어 있어 비침습적 양압환기의 금기가 없다. 이 상황에서 비침습적 양압환기는 호흡근 부담을 줄이고 이산화탄소를 배출시켜 삽관률과 사망률을 낮춘다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이산화탄소가 쌓이는가</b>: 만성폐쇄폐질환 급성 악화에서는 기도 저항이 늘고 호기가 끝나기 전에 다음 흡기가 시작되어 폐 안에 공기가 갇힌다(동적 과팽창·내인성 PEEP). 횡격막이 납작해져 효율이 떨어지고, 환자는 빠르고 얕게 숨쉬어 사강 비율이 커진다 — 폐포 환기가 줄어 PaCO2 가 오른다.<br> <b>왜 양압환기가 듣는가</b>: 흡기 양압(IPAP)은 일회호흡량을 늘려 폐포 환기를 회복시키고 호흡근의 일을 대신한다. 호기 양압(EPAP)은 내인성 PEEP 를 상쇄해 환자가 흡기를 시작할 때 넘어야 할 문턱을 낮춘다. 그래서 pH 7.25~7.35 의 고탄산 호흡산증에서 가장 효과가 크고, 그 근거가 가장 강한 적응증이다.<br> <b>왜 산소를 올리면 안 되는가</b>: 고농도 산소는 저산소성 폐혈관 수축을 풀어 환기-관류 불균형을 키우고 Haldane 효과로 이산화탄소를 더 올린다. 목표 산소포화도는 88~92 % 다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비침습적 양압환기(정답)</th><th>기관내삽관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>적응</td><td><b>pH ≤ 7.35 · PaCO2 > 45</b> 의 호흡산증, 의식 명료</td><td>호흡정지·의식 저하·혈역학 불안정·분비물 처리 불가</td></tr> <tr><td>금기 여부</td><td>협조 가능·기도 보호 가능</td><td>비침습적 양압환기 실패(1~2시간 내 pH 악화)</td></tr> <tr><td>왜</td><td>호흡근 휴식·내인성 PEEP 상쇄로 삽관을 피한다</td><td>기도를 확보해야 할 때만 — 삽관 자체가 폐렴·이탈 실패 위험</td></tr> <tr><td>이 환자</td><td>pH 7.28 · 명료 · 혈압 안정 — 일치</td><td>삽관 적응 없음 — 불일치</td></tr> </tbody></table> pH 가 낮을수록 실패 위험이 커지므로 시작 1~2시간 뒤 동맥혈가스를 다시 보고, 나빠지면 지체 없이 삽관한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 비재호흡 마스크 고농도 산소는 이산화탄소 저류가 없는 저산소성 호흡부전이라면 쓸 수 있으나 이 환자에서는 고탄산혈증을 악화시킨다.\n② 아미노필린 정주는 치료역이 좁고 부작용이 커서 흡입 기관지확장제에 반응하지 않는 경우에도 이득이 거의 없어 권하지 않는다.\n③ 탄산수소나트륨 정주는 대사산증이 주된 원인일 때 고려하며, 호흡산증에서는 이산화탄소를 더 만들어 교정하지 못한다.\n⑤ 기관내삽관은 의식 저하·호흡정지·쇼크·분비물 처리 불가가 있거나 비침습적 양압환기 1~2시간 뒤 pH 가 더 떨어졌다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "PaO2 가 62 mmHg 로 낮지 않다고 안심하거나 산소를 더 올리는 것 — 판단 기준은 pH 와 PaCO2 다."
+   },
+   {
+    "k": "학습목표",
+    "v": "만성폐쇄폐질환 급성 악화에서 초기 치료 뒤에도 pH < 7.35 · PaCO2 > 45 mmHg 의 호흡산증이 남고 의식이 명료하면 비침습적 양압환기를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 303: Chronic Obstructive Pulmonary Disease · Rochwerg B, Brochard L, Elliott MW, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J. 2017;50(2):1602426 · Global Initiative for Chronic Obstructive Lung Disease. Global Strategy for the Diagnosis, Management, and Prevention of COPD: 2025 Report"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "초기 치료 뒤에도 고탄산 호흡산증이 남은 의식 명료한 만성폐쇄폐질환 악화는 비침습적 양압환기의 적응이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "의식이 명료하고 말을 할 수 있으며 혈역학이 안정되어 삽관 적응이 없다",
+   "steps": 2,
+   "chain": [
+    "pH 7.28 · PaCO2 68 · HCO3- 31 → 만성 위에 겹친 급성 호흡산증",
+    "초기 치료 뒤에도 지속 · 의식 명료 · 혈압 안정 → 비침습적 양압환기(삽관 적응 없음)"
+   ],
+   "key": [
+    {
+     "item": "pH 7.28",
+     "why": "호흡산증 — 비침습적 양압환기 적응",
+     "also": []
+    },
+    {
+     "item": "PaCO2 68 mmHg",
+     "why": "고탄산혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉부 X선에서 기흉과 폐경화는 없다",
+     "why": "흉관이 필요한 기흉 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "의식은 명료하고 말을 할 수 있으며",
+     "why": "비침습적 양압환기의 금기가 없다 — 삽관을 서두를 이유가 없다",
+     "also": []
+    },
+    {
+     "item": "혈압 138/82 mmHg",
+     "why": "혈역학 안정",
+     "also": []
+    },
+    {
+     "item": "PaO2 62 mmHg",
+     "why": "산소를 더 올릴 필요가 없다 — 목표 포화도 88~92 %",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "HCO3- 31 mEq/L",
+     "why": "만성 고탄산혈증의 대상 — 급성 악화가 겹쳤음을 보여 줄 뿐 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "만성폐쇄폐질환 급성 악화로 초기 치료 뒤에도 pH 7.28, PaCO2 68 의 호흡산증이 남았다. 의식이 명료하고 혈역학이 안정되어 비침습적 양압환기를 시작한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "의식이 저하되어 기도를 보호하지 못하거나 비침습적 양압환기 1~2시간 뒤 pH 가 더 떨어졌다면 기관내삽관"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0668",
   "exam": "imaging",
   "style": "usmle_style",
