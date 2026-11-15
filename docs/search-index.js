@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3880,
+  "total": 3889,
   "byType": {
+   "imaging": 676,
    "concept": 169,
    "paper": 939,
-   "imaging": 667,
    "kmle": 1824,
    "usmle": 264,
    "ailab": 14,
@@ -35,30 +35,30 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 119,
    "Pulmonology": 118,
    "Hematology": 111,
-   "순환기": 97,
+   "순환기": 98,
    "Laboratory Medicine": 96,
    "산부인과": 84,
-   "호흡기": 42,
+   "호흡기": 43,
    "소화기": 41,
-   "소아과": 35,
+   "소아과": 36,
+   "내분비": 31,
    "응급·중환자": 31,
    "혈액·종양": 31,
    "감염": 30,
-   "내분비": 30,
+   "신장·비뇨기": 30,
    "신경": 29,
-   "신장·비뇨기": 29,
    "Physiology": 28,
    "병리·조직학": 28,
    "외과": 26,
-   "피부과": 25,
-   "예방의학·역학": 23,
+   "피부과": 26,
+   "예방의학·역학": 24,
    "Pharmacology": 22,
    "Biochemistry": 21,
    "Microbiology": 20,
+   "근골격·류마티스": 18,
+   "약리": 18,
    "Immunology": 17,
    "Internal Medicine": 17,
-   "근골격·류마티스": 17,
-   "약리": 17,
    "정신과": 17,
    "안과": 13,
    "영상의학": 11,
@@ -77,13 +77,170 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 2741,
    "medium": 1144,
-   "high": 2732,
    "low": 4
   },
   "tagCount": 4848
  },
  "docs": [
+  {
+   "id": "imaging-2026-0677",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0677.md",
+   "snippet": "52세 남자가 보건소 선별검사에서 양성 결과를 받고 「이 질병이 있을 가능성이 90% 이상이냐」고 물으러 왔다. 증상은 없고 진찰 소견도 정상이다. 보건소는 40세 이상 주민 10,000명에게 이 검사를 시행했고, 이 질병의 지역 유병률은 2% 로 추정된다. 검사의 민감도는 90%, 특이도는 95% 로 보고되어 있다. 양성이 나온 주민에게는 확진 검사를 권할 예정이다. 이 남자가 실제로 질병이 있을 확률로 가장 가까운 것은? ",
+   "text": "예방의학·역학 예방의학 — 유병률이 낮은 집단에서 선별검사 양성의 의미 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 52세 남자가 보건소 선별검사에서 양성 결과를 받고 「이 질병이 있을 가능성이 90% 이상이냐」고 물으러 왔다. 증상은 없고 진찰 소견도 정상이다. 보건소는 40세 이상 주민 10,000명에게 이 검사를 시행했고, 이 질병의 지역 유병률은 2% 로 추정된다. 검사의 민감도는 90%, 특이도는 95% 로 보고되어 있다. 양성이 나온 주민에게는 확진 검사를 권할 예정이다. 이 남자가 실제로 질병이 있을 확률로 가장 가까운 것은? A. 약 99.8% B. 약 27% C. 약 49% D. 약 90% E. 약 95%"
+  },
+  {
+   "id": "imaging-2026-0676",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 와파린 복용 중 항생제를 더한 뒤 오른 INR",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0676.md",
+   "snippet": "A 74 year old man comes to the emergency department because of bleeding from his gums and several bruises on his forearms for 2 days. He has taken warfarin for 3 years for atrial fibrillation, and his INR has been stable between 2.0 and 3.0",
+   "text": "약리 약리 — 와파린 복용 중 항생제를 더한 뒤 오른 INR opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 A 74 year old man comes to the emergency department because of bleeding from his gums and several bruises on his forearms for 2 days. He has taken warfarin for 3 years for atrial fibrillation, and his INR has been stable between 2.0 and 3.0 at monthly checks. Eight days ago he began taking trimethoprim sulfamethoxazole for a urinary tract infection. He has not changed his diet and drinks no alcohol. His pulse is 84/min and irregularly irregular, and blood pressure is 132/80 mm Hg. Hemoglobin concentration is 12.8 g/dL, platelet count is 230,000/mm3, and INR is 6.9. Liver function tests are within the reference ranges. Which of the following is the most likely mechanism of the increase in INR? A. Displacement of warfarin from plasma albumin B. Induction of cytochrome P450 3A4 C. Inhibition of vitamin K epoxide reductase gene expression D. Decreased renal excretion of unchanged warfarin E. Inhibition of cytochrome P450 2C9"
+  },
+  {
+   "id": "imaging-2026-0675",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 스테로이드를 끊은 뒤 쇼크로 온 환자",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0675.md",
+   "snippet": "52세 여자가 하루 전부터 토하고 배가 아프며 일어서면 어지러워 응급실에 왔다. 류마티스관절염으로 2년 동안 매일 프레드니솔론 10 mg 을 복용하다가, 체중이 늘어 1주 전 스스로 끊었다. 혈압 78/46 mmHg, 맥박 118회/분, 체온 37.6°C 이다. 의식은 명료하나 처져 있고 피부 색소 침착은 없다. 복부는 부드럽고 반발압통은 없다. 생리식염수 1 L 를 빠르게 투여한 뒤에도 혈압은 84/50 mmHg 이다. 검사",
+   "text": "내분비 내분비 — 스테로이드를 끊은 뒤 쇼크로 온 환자 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 52세 여자가 하루 전부터 토하고 배가 아프며 일어서면 어지러워 응급실에 왔다. 류마티스관절염으로 2년 동안 매일 프레드니솔론 10 mg 을 복용하다가, 체중이 늘어 1주 전 스스로 끊었다. 혈압 78/46 mmHg, 맥박 118회/분, 체온 37.6°C 이다. 의식은 명료하나 처져 있고 피부 색소 침착은 없다. 복부는 부드럽고 반발압통은 없다. 생리식염수 1 L 를 빠르게 투여한 뒤에도 혈압은 84/50 mmHg 이다. 검사 결과 혈청 나트륨 129 mEq/L, 칼륨 4.4 mEq/L, 혈당 58 mg/dL, 크레아티닌 1.1 mg/dL 이다. 코르티솔과 부신피질자극호르몬 측정을 위한 혈액은 채취해 두었다. 다음 처치로 가장 적절한 것은? A. 노르에피네프린 지속 정주만 시작 B. 프레드니솔론 10 mg 경구 재개 C. 히드로코르티손 100 mg 정주 D. 부신피질자극호르몬 자극검사 결과를 확인한 뒤 치료 E. 플루드로코르티손 0.1 mg 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0674",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 넘어진 뒤 호흡곤란이 심해진 걸음마기 아이의 흉부 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0674.md",
+   "snippet": "A 19 month old boy is brought to the emergency department after he fell from a chair and struck his head. He cried immediately and has had no vomiting. His parents report no known episode of choking, but he has had a mild cough for 2 days w",
+   "text": "소아과 소아 — 넘어진 뒤 호흡곤란이 심해진 걸음마기 아이의 흉부 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 A 19 month old boy is brought to the emergency department after he fell from a chair and struck his head. He cried immediately and has had no vomiting. His parents report no known episode of choking, but he has had a mild cough for 2 days without fever. Over the next hour in the emergency department he develops increasing respiratory distress with subcostal retractions, and oxygen saturation decreases to 85% on a non rebreather mask; he is intubated. Breath sounds are markedly decreased over the left chest. His temperature is 37.2°C and pulse is 150/min. Head CT shows no intracranial injury. A coronal reconstruction of a chest CT scan is shown. Which of the following is the most appropriate next step in management? A. Intravenous broad spectrum antibiotics and repeat imaging in 48 hours B. Chest physiotherapy with postural drainage C. Nebulized albuterol every 20 minutes D. Rigid bronchoscopy E. Left sided chest tube insertion"
+  },
+  {
+   "id": "imaging-2026-0673",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장 — 경련을 일으킨 중증 저나트륨혈증의 첫 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0673.md",
+   "snippet": "70세 여자가 오늘 아침 전신 강직간대 경련을 한 뒤 응급실에 왔다. 2주 전 폐 소세포암을 진단받고 항암치료를 기다리는 중이다. 이틀 전부터 구역과 두통이 심해졌다고 한다. 응급실에서 다시 경련은 없었으나 의식이 혼미하다. 혈압 128/76 mmHg, 맥박 88회/분, 체온 36.8°C 이다. 피부 긴장도와 점막은 정상이고 부종은 없다. 검사 결과 혈청 나트륨 116 mEq/L, 칼륨 4.0 mEq/L, 혈당 98 mg/dL",
+   "text": "신장·비뇨기 신장 — 경련을 일으킨 중증 저나트륨혈증의 첫 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 70세 여자가 오늘 아침 전신 강직간대 경련을 한 뒤 응급실에 왔다. 2주 전 폐 소세포암을 진단받고 항암치료를 기다리는 중이다. 이틀 전부터 구역과 두통이 심해졌다고 한다. 응급실에서 다시 경련은 없었으나 의식이 혼미하다. 혈압 128/76 mmHg, 맥박 88회/분, 체온 36.8°C 이다. 피부 긴장도와 점막은 정상이고 부종은 없다. 검사 결과 혈청 나트륨 116 mEq/L, 칼륨 4.0 mEq/L, 혈당 98 mg/dL, 크레아티닌 0.6 mg/dL, 혈장 삼투압 240 mOsm/kg, 소변 삼투압 520 mOsm/kg, 소변 나트륨 60 mEq/L 이다. 갑상샘 기능과 아침 코르티솔은 정상이다. 가장 적절한 처치는? A. 데메클로사이클린 경구 투여 B. 3% 고장식염수 100 mL 를 10분에 걸쳐 정주 C. 하루 수분 섭취를 1 L 이하로 제한 D. 0.9% 생리식염수를 시간당 150 mL 로 정주 E. 톨밥탄 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0672",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "근골격 — 교통사고 뒤 양쪽 고관절 변형과 골반 X선",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0672.md",
+   "snippet": "A 22 year old man is brought to the emergency department 40 minutes after a high speed motor vehicle collision in which he was the front seat passenger. Both knees struck the dashboard. He reports severe pain in both hips and cannot move ei",
+   "text": "근골격·류마티스 근골격 — 교통사고 뒤 양쪽 고관절 변형과 골반 X선 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 A 22 year old man is brought to the emergency department 40 minutes after a high speed motor vehicle collision in which he was the front seat passenger. Both knees struck the dashboard. He reports severe pain in both hips and cannot move either leg. His pulse is 112/min, and blood pressure is 118/72 mm Hg. Both lower limbs are deformed, and the distal pulses are palpable bilaterally. An anteroposterior radiograph of the pelvis is shown. Injury to which of the following nerves is most likely to be associated with the dislocation of the right hip? A. Superior gluteal nerve B. Lateral femoral cutaneous nerve C. Sciatic nerve D. Femoral nerve E. Obturator nerve"
+  },
+  {
+   "id": "imaging-2026-0671",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 이산화탄소가 쌓인 만성폐쇄폐질환 급성 악화",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0671.md",
+   "snippet": "68세 남자가 3일 전부터 기침과 누런 가래가 늘고 숨이 차서 응급실에 왔다. 10년 전 만성폐쇄폐질환을 진단받았고 흡연력은 45갑년이다. 체온 37.8°C, 혈압 138/82 mmHg, 맥박 108회/분, 호흡 28회/분이며 실내공기에서 산소포화도는 86%이다. 의식은 명료하고 말을 할 수 있으며, 목의 보조호흡근을 쓰고 양쪽 폐에서 호기 천명이 들린다. 비강 캐뉼라 산소 2 L/분, 흡입 기관지확장제, 전신 스테로이드를 투",
+   "text": "호흡기 호흡기 — 이산화탄소가 쌓인 만성폐쇄폐질환 급성 악화 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 68세 남자가 3일 전부터 기침과 누런 가래가 늘고 숨이 차서 응급실에 왔다. 10년 전 만성폐쇄폐질환을 진단받았고 흡연력은 45갑년이다. 체온 37.8°C, 혈압 138/82 mmHg, 맥박 108회/분, 호흡 28회/분이며 실내공기에서 산소포화도는 86%이다. 의식은 명료하고 말을 할 수 있으며, 목의 보조호흡근을 쓰고 양쪽 폐에서 호기 천명이 들린다. 비강 캐뉼라 산소 2 L/분, 흡입 기관지확장제, 전신 스테로이드를 투여하고 1시간 뒤 시행한 동맥혈가스검사는 pH 7.28, PaCO2 68 mmHg, PaO2 62 mmHg, HCO3 31 mEq/L 이다. 흉부 X선에서 기흉과 폐경화는 없다. 다음 처치로 가장 적절한 것은? A. 비재호흡 마스크로 산소 15 L/분 B. 아미노필린 정주 C. 탄산수소나트륨 정주 D. 비침습적 양압환기 E. 기관내삽관 후 기계환기"
+  },
+  {
+   "id": "imaging-2026-0670",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 가끔 맥이 건너뛰는 느낌의 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0670.md",
+   "snippet": "65세 여자가 2개월 전부터 가끔 심장이 한 번 건너뛰고 쿵 하고 세게 뛰는 느낌이 들어 외래에 왔다. 증상은 1초 정도로 하루 몇 차례, 주로 쉴 때 생긴다. 가슴 통증·호흡곤란·실신은 없다. 복용하는 약은 없고 커피를 하루 2잔 마신다. 맥박 70회/분으로 가끔 불규칙하고 혈압 128/78 mmHg 이다. 심잡음은 없다. 혈청 칼륨·마그네슘과 갑상샘 기능은 정상이다. 증상이 있을 때 찍은 12유도 심전도는 그림과 같다. 증",
+   "text": "순환기 순환기 — 가끔 맥이 건너뛰는 느낌의 고령 여성 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 65세 여자가 2개월 전부터 가끔 심장이 한 번 건너뛰고 쿵 하고 세게 뛰는 느낌이 들어 외래에 왔다. 증상은 1초 정도로 하루 몇 차례, 주로 쉴 때 생긴다. 가슴 통증·호흡곤란·실신은 없다. 복용하는 약은 없고 커피를 하루 2잔 마신다. 맥박 70회/분으로 가끔 불규칙하고 혈압 128/78 mmHg 이다. 심잡음은 없다. 혈청 칼륨·마그네슘과 갑상샘 기능은 정상이다. 증상이 있을 때 찍은 12유도 심전도는 그림과 같다. 증상의 원인으로 가장 적절한 것은? A. 심실조기수축 B. 심방조기수축 C. Mobitz II 형 2도 방실차단 D. 간헐적 좌각차단 E. 비지속 심실빈맥"
+  },
+  {
+   "id": "imaging-2026-0669",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 최근 커진 듯한 발의 비대칭 갈색 반",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3",
+   "confidence": "high",
+   "date": "2026-11-15",
+   "path": "content/imaging/2026/imaging-2026-0669.md",
+   "snippet": "45세 남자가 발에 있는 갈색 반점이 최근 1년 사이 커진 것 같아 피부과에 왔다. 가렵거나 피가 난 적은 없다. 피부암 가족력은 없고, 몸의 다른 부위에 작은 점이 10개 정도 있다. 병변은 지름 약 1.5 cm 의 편평한 연갈색 반으로 윤곽이 비대칭이고 경계가 들쭉날쭉하며, 만져지는 결절이나 궤양은 없다. 사타구니 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 1~3",
+   "text": "피부과 피부 — 최근 커진 듯한 발의 비대칭 갈색 반 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261115T202217Z_일일영상_2026-11-16_9units_9q_e8d378e3 45세 남자가 발에 있는 갈색 반점이 최근 1년 사이 커진 것 같아 피부과에 왔다. 가렵거나 피가 난 적은 없다. 피부암 가족력은 없고, 몸의 다른 부위에 작은 점이 10개 정도 있다. 병변은 지름 약 1.5 cm 의 편평한 연갈색 반으로 윤곽이 비대칭이고 경계가 들쭉날쭉하며, 만져지는 결절이나 궤양은 없다. 사타구니 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 1~3 mm 경계의 전층 절제생검 B. 3개월 뒤 더모스코피 사진 비교 관찰 C. 면도 절제 D. 액화질소 냉동치료 E. 색소 레이저 제거"
+  },
   {
    "id": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid",
    "type": "concept",
