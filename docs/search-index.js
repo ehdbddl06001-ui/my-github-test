@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-14",
+ "generated": "2026-11-15",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4718,
+  "total": 4726,
   "byType": {
-   "concept": 166,
-   "paper": 934,
+   "concept": 169,
+   "paper": 939,
    "imaging": 667,
    "kmle": 1824,
    "usmle": 264,
@@ -18,13 +18,13 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 846,
-   "Cardiology": 334,
-   "Nephrology": 249,
-   "Infectious Disease": 229,
-   "Pediatrics": 218,
+   "Cardiology": 336,
+   "Nephrology": 250,
+   "Infectious Disease": 230,
+   "Pediatrics": 219,
    "Obstetrics & Gynecology": 161,
-   "Rheumatology": 141,
-   "Pathology": 139,
+   "Rheumatology": 143,
+   "Pathology": 140,
    "Psychiatry": 138,
    "Neurology": 136,
    "Hematology-Oncology": 131,
@@ -79,13 +79,41 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1325,
    "high": 3348,
-   "medium": 1317,
    "low": 53
   },
   "tagCount": 5492
  },
  "docs": [
+  {
+   "id": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/concepts/rheumatology/cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid.md",
+   "snippet": "판단 — 왜 저용량 프레드니손이 먼저인가 용량은 실명 위험이 정한다 : 40–60 mg/일·정맥 펄스는 허혈 시신경병증을 막으려는 거대세포동맥염의 용량이다 [[harrison 22: 375장 p.2903]]. 두개 증상을 먼저 묻는다 : 두통·턱 파행·시야 이상·측두동맥 이상이 없으면 단독 류마티스 다발근통이다 [[harrison 22: 375장 p.2903]]. 저용량에 빠르게 반응한다 : 10–20 mg/일에 빠른 반응이 ",
+   "text": "Rheumatology 판단 — 왜 저용량 프레드니손이 먼저인가 용량은 실명 위험이 정한다 : 40–60 mg/일·정맥 펄스는 허혈 시신경병증을 막으려는 거대세포동맥염의 용량이다 [[harrison 22: 375장 p.2903]]. 두개 증상을 먼저 묻는다 : 두통·턱 파행·시야 이상·측두동맥 이상이 없으면 단독 류마티스 다발근통이다 [[harrison 22: 375장 p.2903]]. 저용량에 빠르게 반응한다 : 10–20 mg/일에 빠른 반응이 오고, 그 반응이 임상 진단의 한 요소다 [[harrison 22: 375장 p.2903]]. 절감제는 첫 치료가 아니다 : 메토트렉세이트의 절감 효과는 작다 [[harrison 22: 375장 p.2903]]. 기전 — 같은 스펙트럼, 다른 위험 류마티스 다발근통(polymyalgia rheumatica)은 목·어깨·허리·엉덩이·허벅지 근육의 강직·쑤심·통증이 특징이고, 대개 단독으로 오지만 거대세포동맥염(giant cell arteritis) 환자의 40–50 % 에서 함께 있으며 단독 환자의 10–20 % 는 나중에 거대세포동맥염으로 간다 — 그래서 두 병을 한 질환 과정의 다른 스펙트럼으로 본다 [[harrison 22: 375장 p.2902]]. 류마티스 다발근통의 통증은 근육 자체의 괴사가 아니어서 CK 가 정상이고 근력도 통증을 빼면 정상이다(통증으로 움직임이 제한될 뿐). 차이는 혈관이다 — 거대세포동맥염은 측두동맥 등 두개 동맥의 내강을 좁혀 시신경 허혈로 실명을 일으킬 수 있고, 그 위험 때문에 고용량을 서두른다 [[harrison 22: 375장 p.2902]]. 혈관 허혈이 없는 단독 류마티스 다발근통에는 그 이유가 없어 염증을 누를 만큼의 저용량으로 충분하다. 가르는 소견 — 무엇이 아닌가 근염: CK·근력 정상이면 가능성이 낮다. 류마티스관절염: 류마티스 다발근통에서 RF·항CCP 는 음성이어야 한다. 말초 관절염이 동반될 수 있어, 말초 관절염이 점점 나빠지면 류마티스관절염을 다시 생각한다 [[harrison 22: 375장 p.2903]]. 거대세포동맥염: 새 두통·두피 통증·턱과 혀 파행·측두동맥 압통·비후, 시각 증상 [[harrison 22: 375장 p.2902]]. 선택 — 용량은 두개 증상이 정한다 1. 프레드니손 저용량으로 시작하고 빠른 호전을 확인한다 [[harrison 22: 375장 p.2903]]. 2. 재평가 : 스테로이드만 쓸 때 ESR/CRP 로 감량을 살핀다. 감량 중 대다수가 재발한다 [[harrison 22: 375장 p.2903]]. 3. 프레드니손 ≥7.5 mg/일에서 재발하는 스테로이드 저항군에는 사릴루맙을 더할 수 있다. 메토트렉세이트는 효과가 작고, 인플릭시맙은 재발·용량을 줄이지 못했다 [[harrison 22: 375장 p.2903]]. 4. 매 방문 두개 증상을 다시 묻는다 — 생기면 거대세포동맥염 용량으로 바꾼다 [[harrison 22: 375장 p.2902]]. 권고와 예외 저용량에 반응하지 않으면 진단을 다시 본다(빠른 반응이 진단 요소이므로) [[harrison 22: 375장 p.2903]]. 장기 스테로이드에 따른 골 건강·혈당 관리는 함께 하지만 이 정리본에서 세부를 대조하지 않았다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 저용량의 범위 — 시험 기준: 고용량(40–60 mg·펄스)이 아닌 저용량 [[harrison 22: 375장 p.2903]] / 다른 기준: 해리슨은 10–20 mg/일, EULAR/ACR 2015 권고는 12.5–25 mg/일로 적는다(원문 미대조) [[?eular acr pmr 2015]] / 왜 다른가: 권고가 시작 범위를 위로 넓혔다 / 시험에서는: KMLE · USMLE 모두 15 mg 전후의 저용량이 정답, 1 mg/kg·정맥 펄스는 거대세포동맥염 소견이 있을 때만."
+  },
+  {
+   "id": "cn.rheum.drug-induced-lupus.anti-histone",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/concepts/rheumatology/cn.rheum.drug-induced-lupus.anti-histone.md",
+   "snippet": "판단 — 왜 약물 유발 루푸스가 먼저인가 원인 약 + 시기 : 루푸스 양상이 약 시작 수주~수개월 뒤에 생겼다 — 이소니아지드는 알려진 원인 약이다 [[harrison 22: 368장 p.2835]]. 조용한 곳을 본다 : 약물 유발 루푸스는 신장·뇌 침범이 드물고 항dsDNA 같은 다른 자가항체가 드물다 [[harrison 22: 368장 p.2835]]. 항dsDNA·항Sm 음성, 보체·소변 정상은 이 그림에 맞는다. 항히",
+   "text": "Rheumatology 판단 — 왜 약물 유발 루푸스가 먼저인가 원인 약 + 시기 : 루푸스 양상이 약 시작 수주~수개월 뒤에 생겼다 — 이소니아지드는 알려진 원인 약이다 [[harrison 22: 368장 p.2835]]. 조용한 곳을 본다 : 약물 유발 루푸스는 신장·뇌 침범이 드물고 항dsDNA 같은 다른 자가항체가 드물다 [[harrison 22: 368장 p.2835]]. 항dsDNA·항Sm 음성, 보체·소변 정상은 이 그림에 맞는다. 항히스톤은 보조 : 약 75 % 에서 양성이지만 전신홍반루푸스 다수에서도 양성이다 [[harrison 22: 368장 p.2835]]. 경과가 확인한다 : 원인 약을 끊고 수주 안에 좋아지면 진단이 굳어진다 [[harrison 22: 368장 p.2836]]. 기전 — 약 노출에서 자가항체로 약물 유발 루푸스는 약 노출로 항핵항체와 전신홍반루푸스의 임상 양상이 생기는 자가면역 현상으로, 루푸스의 약 6–12 % 를 차지한다 [[harrison 22: 368장 p.2835]]. 1954년 히드랄라진에서 처음 알려졌고 지금은 100가지 넘는 약이 원인으로 꼽힌다 — 위험이 가장 큰 것은 프로카인아마이드(최대 30 %)다 [[harrison 22: 368장 p.2835]]. 자가항체가 주로 핵 안의 히스톤을 향하고 이중가닥 DNA·Sm 단백을 향하는 일은 드물다. 전신홍반루푸스에서 항dsDNA 와 보체 감소는 면역복합체 침착에 의한 신장 손상 경향을 반영하는데 [[harrison 22: 368장 p.2832]], 약물 유발 루푸스는 이 경로가 약해 병이 가볍고 신장·뇌를 거의 침범하지 않는다 [[harrison 22: 368장 p.2835]]. 원인이 바깥(약)에 있으므로 약을 끊으면 수주 안에 가라앉는다. 가르는 소견 — 무엇이 조용한가 증상: 발열·발진·관절통·근육통·장막염(흉막염·심낭염) [[harrison 22: 368장 p.2835]]. 검사: 항핵항체 대개 균질형, 항히스톤 약 75 %, 혈구감소는 있어도 가볍다 [[harrison 22: 368장 p.2835]]. 음성 결과의 해석 한계 : 약을 먹는 사람에게서 증상 없이 항핵항체만 양성인 일은 흔하다 — 증상이 없으면 약물 유발 루푸스가 아니다 [[harrison 22: 368장 p.2836]]. 피부 생검도 두 루푸스를 가르지 못할 수 있다 [[harrison 22: 368장 p.2835]]. 권고와 예외 원인 약을 끊는다. 잠복결핵 치료라면 다른 약으로 바꾸는 계획을 함께 세운다(대체 약 선택은 결핵 지침의 몫 — 이 정리본에서 대조하지 않음). 항dsDNA·항Sm 양성·보체 감소·신장 침범이 있으면 약을 끊는 것만으로 기다리지 않고 전신홍반루푸스로 평가한다 [[harrison 22: 368장 p.2832]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 368장 p.2827·2832·2835–2836)"
+  },
   {
    "id": "cn.cardio.sustained-vt.wide-complex-tachycardia-management",
    "type": "concept",
@@ -99,6 +127,105 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.sustained-vt.wide-complex-tachycardia-management.md",
    "snippet": "판단 — 왜 「VT 로 보고」가 먼저인가 불안정하면 감별보다 전기 치료가 먼저다. 저혈압·의식 저하·폐부종이 있으면 QRS 동기화 심율동전환(의식이 있으면 진정 뒤)을 한다 [[harrison 22: 261장 p.1964]]. 안정해도 VT 를 배제할 수 없다. 혈역학 안정성은 VT 와 다른 넓은 QRS 빈맥을 가르지 못하고, 심기능이 정상이면 빠른 VT 도 두근거림만으로 버틴다 [[harrison 22: 261장 p.1963",
    "text": "Cardiology 판단 — 왜 「VT 로 보고」가 먼저인가 불안정하면 감별보다 전기 치료가 먼저다. 저혈압·의식 저하·폐부종이 있으면 QRS 동기화 심율동전환(의식이 있으면 진정 뒤)을 한다 [[harrison 22: 261장 p.1964]]. 안정해도 VT 를 배제할 수 없다. 혈역학 안정성은 VT 와 다른 넓은 QRS 빈맥을 가르지 못하고, 심기능이 정상이면 빠른 VT 도 두근거림만으로 버틴다 [[harrison 22: 261장 p.1963–1964]]. 알려진 심질환이면 모양과 관계없이 VT 가 가장 흔하다 — 그래서 심질환 환자의 안정 VT 에는 정맥 아미오다론이 선택 약이다 [[harrison 22: 261장 p.1964]]. 변행 SVT 가 의심되는 안정·규칙적 빈맥 에서는 아데노신 시도가 합리적이다(진단에 도움). 심장이식, 불규칙하거나 불안정한 리듬에는 쓰지 않는다 [[harrison 22: 261장 p.1964]]. 리듬이 돌아온 뒤가 진짜 판단이다 — 입원해 바탕 심질환을 정하고, 구조 심질환이면 ICD 로 2차 예방한다 [[harrison 22: 261장 p.1964]]. 기전 — 흉터가 회로를 만든다 구조 심질환에서 VT 의 기질은 대개 경색·섬유화·염증·심장 수술로 생긴 조각난 치환 섬유화다. 흉터 안에 살아 있는 심근 다발이 느리게 전도하는 통로가 되어 해부적·기능적 회귀 회로를 만들고, 같은 출구에서 반복해 나가므로 QRS 가 모두 같은 단형 VT 가 된다 [[harrison 22: 261장 p.1963]]. 드물게 병든 퍼킨제계의 회귀나 자동능(각차단 회귀 VT 등)도 원인이다 [[harrison 22: 261장 p.1963, p.1967]]. 이 회로는 허혈에 의존하지 않는 고정된 기질이다. 그래서 관동맥질환의 지속성 VT 는 대개 수년 전 큰 경색과 재형성된 심실, 크게 떨어진 박출률에서 생기고, 2년 안에 최대 70 % 가 재발하며, 재관류술로 재발을 막기 어렵다 [[harrison 22: 261장 p.1965]]. 빠르거나 구조 심질환에 동반한 단형 VT 는 심실세동으로 악화할 수 있어 급사 위험과 이어진다 [[harrison 22: 261장 p.1963]]. 반대로 구조가 정상인 특발성 VT 는 한 초점의 유발 자동능(유출로)이나 작은 퍼킨제 회귀(속가지)에서 나와 경과가 양성이다 [[harrison 22: 261장 p.1967]]. 가르는 소견 — VT 쪽으로 기우는 것 감별 대상은 각차단·변행 전도를 동반한 상심실성 빈맥(SVT), 부전도로를 타는 SVT, 조율기·제세동기의 빠른 조율이다 [[harrison 22: 261장 p.1963–1964]]. 흉터의 단서 — 병적 Q파, 심초음파·핵의학의 분절 벽운동 이상, MRI 지연 가돌리늄 증강 [[harrison 22: 261장 p.1964]]. 음성 결과의 한계: 표의 어느 기준도 VT 를 배제하지 못하고, 중증 심질환에서는 모양 기준이 모두 덜 믿을 만하다. 확진이 필요하면 전기생리검사를 하고, 감시 장치의 잡음·움직임 인공물이 VT 를 흉내 낼 수 있음도 기억한다 [[harrison 22: 261장 p.1964]]. 선택 — 회복 뒤 무엇을 하나 지속성 단형 VT 는 대개 한 번 오지만 재발 위험이 높다. 잦거나 끊이지 않으면 항부정맥제나 도자절제로 먼저 안정시킨다 [[harrison 22: 261장 p.1964]]. 허혈 심근병증: ICD 를 넣은 뒤에도 5년 사망이 30 % 를 넘어 베타차단제·ACE 억제제 등 심부전 표준 약물이 중요하다. ICD 충격·항빈맥 조율 자체가 심부전·사망 증가와 연관되므로 재발 VT 는 약물이나 도자절제로 줄인다 — VANISH 에서 절제가 항부정맥제(특히 아미오다론) 증량보다 나았다 [[harrison 22: 261장 p.1965]]. 비허혈 심근병증의 흉터는 벽내·심외막·판륜 근처에 많아 심내막 절제 성공률이 낮고, MRI·CT 로 섬유화를 그려 절제를 이끈다 [[harrison 22: 261장 p.1965]]. 권고와 예외 특발성 VT 는 증상이 있거나 잦은 빈맥이 심기능을 떨어뜨릴 때만 치료한다. 플레카이니드는 구조 심질환에서 보통 권하지 않지만 동율동 심전도가 정상이고 MRI 섬유화가 없으면 쓸 수 있다 [[harrison 22: 261장 p.1967–1968]]. 반복 단형 VT 는 빈맥 유발 심근병증을 일으킬 수 있고, 빈맥을 억제하면 심기능이 회복된다 [[harrison 22: 261장 p.1967]]. 팔로 사징 교정 뒤 VT 는 수술 흉터 둘레 회귀가 흔하다. 자발 VT 가 있으면 대개 ICD, 위험 인자가 여럿이면 ICD 를 고려한다 [[harrison 22: 261장 p.1967]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 261장 p.1963~1968)"
+  },
+  {
+   "id": "cn.cardio.left-anterior-fascicular-block.ecg-recognition",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/concepts/cardiology/cn.cardio.left-anterior-fascicular-block.ecg-recognition.md",
+   "snippet": "판단 — 왜 좌각전섬유속차단인가 폭부터 : QRS 가 좁다 — 섬유속차단은 폭을 크게 늘리지 않고 축만 옮긴다 [[harrison 22: 247장 p.1872]]. 120 ms 를 넘으면 각차단을 먼저 본다. 축의 정도 : I 양성·II·aVF 음성이면 좌축편위이고, −45° 보다 왼쪽이면 좌각전섬유속차단 기준에 든다 [[harrison 22: 247장 p.1870]] [[harrison 22: 247장 p.1872]]. 비대",
+   "text": "Cardiology 판단 — 왜 좌각전섬유속차단인가 폭부터 : QRS 가 좁다 — 섬유속차단은 폭을 크게 늘리지 않고 축만 옮긴다 [[harrison 22: 247장 p.1872]]. 120 ms 를 넘으면 각차단을 먼저 본다. 축의 정도 : I 양성·II·aVF 음성이면 좌축편위이고, −45° 보다 왼쪽이면 좌각전섬유속차단 기준에 든다 [[harrison 22: 247장 p.1870]] [[harrison 22: 247장 p.1872]]. 비대는 따로 확인 : 좌심실비대는 전흉부 전압과 ST T 로 붙인다 — 축만으로 붙이지 않는다 [[harrison 22: 247장 p.1871]]. 경색은 Q파로 : 하벽 유도의 첫 굴절이 Q파면 하벽경색, 작은 r 이면 섬유속차단 쪽이다 [[harrison 22: 247장 p.1873]] [[?aha ivcd 2009]]. 기전 — 앞 섬유속이 막히면 축이 위로 좌다발가지는 앞·뒤 두 섬유속으로 나뉜다 [[harrison 22: 247장 p.1868]]. 앞 섬유속은 좌심실의 앞·위쪽 벽을, 뒤 섬유속은 아래·뒤쪽 벽을 먼저 흥분시킨다. 앞 섬유속이 막히면 아래·뒤쪽 벽이 먼저 흥분해 처음 벡터가 잠깐 아래로 향하고(하벽 유도의 작은 r), 앞·위쪽 벽은 심근을 거쳐 늦게 흥분해 주된 벡터가 왼쪽 위로 향한다(하벽 유도의 깊은 S, I·aVL 양성) — 세부 형태는 권고 원문 미대조 [[?aha ivcd 2009]]. 다발가지 본줄기는 살아 있어 QRS 폭은 크게 늘지 않고 전두면 축만 옮겨 간다 [[harrison 22: 247장 p.1872]]. 반대로 하벽경색은 하벽의 초기 벡터 자체를 없애 비정상 Q파를 남긴다 [[harrison 22: 247장 p.1873]]. 가르는 소견 — 축 다음에 볼 곳 좌축편위 자체는 정상 변이·좌심실비대·좌각전섬유속차단·하벽경색 모두에서 생긴다 [[harrison 22: 247장 p.1870]] — 그래서 축 다음에 폭·첫 굴절·전압·ST T 를 차례로 본다. 음성 결과의 해석 한계 : 좌심실비대의 전압 기준은 중년 이후·비만·흡연자에서 민감도가 낮다 [[harrison 22: 247장 p.1871]] — 전압이 정상이라고 비대가 없다는 뜻은 아니며, 비대 여부는 심초음파로 본다. 권고와 예외 무증상 단독 좌각전섬유속차단은 이 문항처럼 판독 문제다. 진행·처치 판단은 이 정리본에서 대조하지 않았다. 우각차단과 함께 오면(이섬유속차단) 의미가 달라진다 — cn.cardio.complete rbbb.ecg recognition 참고. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 247장 p.1868·1870–1873)"
+  },
+  {
+   "id": "paper-2026-0939",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Nutrients",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0939_effect_of_a_3_month_modified_high_quality_take_home_ration_o.md",
+   "snippet": "Title Effect of a 3 Month Modified, High Quality Take Home Ration on Linear Growth and Body Composition in Rural South Indian Infants Aged 6 9 Months: A Cluster Randomized Controlled Trial Authors Kilpady Chaitra A, Kamath Akshata A, Saji A",
+   "text": "Pediatrics scraped pubmed PubMed / Nutrients Title Effect of a 3 Month Modified, High Quality Take Home Ration on Linear Growth and Body Composition in Rural South Indian Infants Aged 6 9 Months: A Cluster Randomized Controlled Trial Authors Kilpady Chaitra A, Kamath Akshata A, Saji Aswathi, Singh Sridevi Annapurna, Dharmaraj Usha, Arugakeerthy Chakkaravarthi, Vasudeva Vanajakshi, Shivakumar Nirupama, et al. Journal / DOI Nutrients · DOI: 10.3390/nu18213654 · PMID: 43030281 https://pubmed.ncbi.nlm.nih.gov/43030281/ Abstract Background/Objectives: Linear growth faltering remains a major public health concern in low and middle income countries, wherein sub optimal complementary feeding and hygiene practices are key modifiable factors. Inadequate complementary feeding is addressed through government issued Take Home Ration (THR) for <3 year old children. This THR is not consumed regularly and does not bridge deficits in protein quality and fat intake among South Indian rural children. The addition of milk and legumes into a reformulated THR would address these gaps, but its efficacy remains unknown. Methods: In this 3 month cluster randomized controlled trial among rural infants (6 9 months old), the intervention group (12 village clusters; n = 67) received a modified milk and legume based THR along with standard government THR, while the control group (12 village clusters; n = 67) received standard government THR alone. Caregivers of both groups were educated on nutrition and hygiene practices. Anthropometry, body composition (BC), morbidity, diet, and compliance data were collected. The primary outcome (length for age z score (LAZ)) and secondary outcomes were analyzed using cluster adjusted linear mixed models (LMM) in an intention to treat analysis. Results: While LAZ did not differ significantly between groups (β = 0.063 LAZ/month, 95%CI: 0.019, 0.145; p = 0.130), adjusted LMM showed significant differences in length (0.213 cm/month, 95%CI: 0.025, 0.400, p = 0.027), weight (0.040 kg/month, 95%CI: 0.001, 0.079, p = 0.044) and head circumference (0.067 cm/month, 95%CI: 0.005, 0.128, p = 0.033). LAZ decreased in both groups, with a significantly lower decline in the intervention group (slope difference: β = 0.05, 95% CI: 0.006, 0.095, p = 0.027). BC did not differ significantly. Conclusions: Improving protein quality and fat content of the government issued THR showed a favourable LAZ trajectory among infants from rural South India. (Clinical Trial Registry India: CTRI/2020/06/025825). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0938",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in immunology",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0938_6_2_cl_pfesa_induces_sex_dependent_lung_inflammation_through.md",
+   "snippet": "Title 6:2 Cl PFESA induces sex dependent lung inflammation through NLRP12 inflammasome activation and pulmonary microbiota dysbiosis Authors Khan Suliman, Chen Min, Abbas Mubbashar, Chen Zhen, Liang Zhiwei, Ullah Rizwan, Xie Shuyu, Chen Don",
+   "text": "Pathology scraped pubmed PubMed / Frontiers in immunology Title 6:2 Cl PFESA induces sex dependent lung inflammation through NLRP12 inflammasome activation and pulmonary microbiota dysbiosis Authors Khan Suliman, Chen Min, Abbas Mubbashar, Chen Zhen, Liang Zhiwei, Ullah Rizwan, Xie Shuyu, Chen Dongmei Journal / DOI Frontiers in immunology · DOI: 10.3389/fimmu.2026.1939840 · PMID: 43031730 https://pubmed.ncbi.nlm.nih.gov/43031730/ Abstract Widespread detection of 6:2 chlorinated polyfluoroalkyl ether sulfonic acid (6:2 Cl PFESA), a major substitute for perfluorooctane sulfonate (PFOS), has been reported in various environmental and human biological samples. Yet, its lung inflammation and sex dependent effects have not been studied. In this study, mice were orally gavaged a single dose of 10 mg/kg/BW 6:2 Cl PFESA or vehicle control for 28 days. Males exhibited greater susceptibility than females, as evidenced by earlier body weight loss, more severe lung histopathology, elevated inflammatory cytokine expression, and increased pulmonary lipopolysaccharide accumulation. The transcriptomic analysis also showed extensive sexual dimorphism, with a significantly larger number of differentially expressed genes in the female lungs compared with males, with minimal overlap between sexes. The NOD like receptor signaling pathway was identified as a major responsive pathway, with upregulation of NLRP12 in both sexes and sex specific down regulation of Interferon regulatory factor 7 (Irf7) in males and Bcl 2 like protein 1 (Bcl2l1 (Bcl xL) in females. In vitro siRNA mediated knockdown of NLRP12 in A549 and THP 1 cells confirmed its role as a positive mediator of the 6:2 Cl PFESA induced inflammatory response. Furthermore, 6:2 Cl PFESA promoted NLRP12 inflammasome associated activation, characterized by enhanced NLRP12 expression, caspase 1 cleavage, mature IL 1β processing, increased IL 18 secretion, and elevated caspase 1 enzymatic activity. Notably, 6:2 Cl PFESA significantly altered the lung microbial community, enriched by Proteobacteria and depleted by Firmicutes and Bacteroidetes. Pro inflammatory genera, including Stenotrophomonas (e.g., S. maltophilia) and Chryseobacterium (e.g., C. indologenes), were enriched predominantly in males. Collectively, these findings identified NLRP12 inflammasome associated signaling and sex dependent microbial dysbiosis as key mechanisms underlying male biased lung inflammation, informing sex specific risk assessment of PFAS alternatives. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0937",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in pediatrics",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0937_case_report_sodium_glucose_cotransporter_2_inhibitor_use_in_.md",
+   "snippet": "Title Case Report: Sodium glucose cotransporter 2 inhibitor use in a pediatric patient with cancer receiving cisplatin Authors Elsamny Esraa, Elgehiny Amr, Swinford Rita Journal / DOI Frontiers in pediatrics · DOI: 10.3389/fped.2026.1906970",
+   "text": "Nephrology scraped pubmed PubMed / Frontiers in pediatrics Title Case Report: Sodium glucose cotransporter 2 inhibitor use in a pediatric patient with cancer receiving cisplatin Authors Elsamny Esraa, Elgehiny Amr, Swinford Rita Journal / DOI Frontiers in pediatrics · DOI: 10.3389/fped.2026.1906970 · PMID: 43031745 https://pubmed.ncbi.nlm.nih.gov/43031745/ Abstract Cisplatin is a foundation chemotherapeutic for pediatric germ cell tumors; however, its dose dependent nephrotoxicity can limit use. Hypomagnesemia is a challenging side effect, and patients often remain hypomagnesemic despite IV and oral magnesium (Mg) supplementation. Sodium Glucose Cotransporter 2 inhibitors (SGLT2is) have been shown to mitigate cisplatin induced nephrotoxicity (CIN) and reduce urinary Mg wasting in adults, but their use remains off label and limited in pediatrics. We report a case of an adolescent male with metastatic germ cell tumor treated extensively with cisplatin, whose course was complicated by hypertension, hypomagnesemia, and a declining glomerular filtration rate (GFR). An SGLT2i was started three months into treatment. His GFR stabilized and his proteinuria resolved despite continued treatment with cisplatin. Additionally, he discontinued IV Mg supplementation while maintaining adequate levels on oral Mg, and his blood pressure improved with discontinuation of antihypertensives. This case highlights a potential role of SGLT2is in pediatric oncology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0936",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in immunology",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0936_fstl1_aggravates_lps_induced_liver_injury_through_the_nlrp3_.md",
+   "snippet": "Title FSTL1 aggravates LPS induced liver injury through the NLRP3 CASP1 GSDMD and BAX CASP3 GSDME pyroptosis pathways Authors Duan Yu, Shan Zechen, Yao Renqi, Chen Yuguo Journal / DOI Frontiers in immunology · DOI: 10.3389/fimmu.2026.198462",
+   "text": "Infectious Disease scraped pubmed PubMed / Frontiers in immunology Title FSTL1 aggravates LPS induced liver injury through the NLRP3 CASP1 GSDMD and BAX CASP3 GSDME pyroptosis pathways Authors Duan Yu, Shan Zechen, Yao Renqi, Chen Yuguo Journal / DOI Frontiers in immunology · DOI: 10.3389/fimmu.2026.1984625 · PMID: 43031645 https://pubmed.ncbi.nlm.nih.gov/43031645/ Abstract INTRODUCTION: Hepatocellular pyroptosis and its proinflammatory effects critically contribute to the pathology of acute liver injury. FSTL1, a secreted glycoprotein, has been implicated in regulating multiple cell death pathways and promoting inflammatory disease progression. However, the regulatory mechanisms of FSTL1 mediated hepatocellular pyroptosis in sepsis induced liver injury remain poorly understood. This study aimed to investigate the role of FSTL1 in hepatocyte pyroptosis during sepsis and evaluate its therapeutic potential. METHODS: Septic liver injury was induced by intraperitoneal LPS injection in mice. Hepatocyte specific FSTL1 knockdown was achieved via AAV mediated gene silencing prior to LPS challenge. Serum and liver tissues were collected at designated time points. We measured serum FSTL1, liver function markers (AST, ALT), evaluated histopathological changes, ROS production, pyroptosis pathway activation (NLRP3 CASP1 GSDMD and BAX CASP3 GSDME), hepatic inflammation, and survival rates. RESULTS: Serum FSTL1 was significantly elevated and positively correlated with liver injury severity. Hepatic FSTL1 expression progressively increased during sepsis, closely paralleling disease progression. Both NLRP3 CASP1 GSDMD and BAX CASP3 GSDME pyroptosis pathways were time dependently activated in hepatocytes under septic conditions. Notably, hepatocyte specific FSTL1 knockdown attenuated ROS production, suppressed both pyroptotic pathways, reduced hepatic inflammation and tissue damage, and improved survival in septic mice. DISCUSSION: FSTL1 plays a critical role in promoting hepatocellular pyroptosis during sepsis induced liver injury through dual activation of NLRP3 CASP1 GSDMD and BAX CASP3 GSDME pathways. Targeting FSTL1 may represent a promising novel therapeutic strategy for sepsis management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0935",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in cardiovascular medicine",
+   "confidence": "medium",
+   "date": "2026-11-14",
+   "path": "content/papers/2026/2026-11-14_paper-2026-0935_comparative_efficacy_and_safety_of_six_traditional_chinese_m.md",
+   "snippet": "Title Comparative efficacy and safety of six traditional Chinese medicine injections for ischemic heart failure: a systematic review and Bayesian network meta analysis Authors Shang Yu, Wei Penglu, Mao Yue, Tian Jinhao, Lai Xiaolei, Xing We",
+   "text": "Cardiology scraped pubmed PubMed / Frontiers in cardiovascular medicine Title Comparative efficacy and safety of six traditional Chinese medicine injections for ischemic heart failure: a systematic review and Bayesian network meta analysis Authors Shang Yu, Wei Penglu, Mao Yue, Tian Jinhao, Lai Xiaolei, Xing Wenlong, Shang Juju, Liu Hongxu Journal / DOI Frontiers in cardiovascular medicine · DOI: 10.3389/fcvm.2026.1969858 · PMID: 43031806 https://pubmed.ncbi.nlm.nih.gov/43031806/ Abstract BACKGROUND: Traditional Chinese medicine injections (TCMIs) are widely employed by Chinese clinicians as adjuvant therapy for Ischemic Heart Failure(IHF). A Bayesian network meta analysis was conducted to compare the efficacy and safety of conventional treatment (CT) to those that included six TCMIs in patients with IHF. OBJECTIVE: To compare the efficacy and safety of six TCMIs as adjuncts to CT for IHF using Bayesian network meta analysis. METHODS: Eight databases (CNKI, Wanfang, VIP, SinoMed, PubMed, Embase, the Cochrane Library, and Web of Science) were searched from inception to May 6, 2026, for randomized controlled trials (RCTs). Risk of bias was assessed using RoB 2.0, certainty of evidence using CINeMA, and Bayesian analyses using R 4.6.0 and Stata 17.0. RESULTS: A total of 154 RCTs involving 13,756 participants were included. Compared with CT alone, adjunctive TCMIs generally improved clinical response and left ventricular ejection fraction(LVEF), and reduced B type natriuretic peptide(BNP) and left ventricular end diastolic dimension(LVEDD); effects on N terminal pro B type natriuretic peptide(NT pro BNP) were uncertain. Surface under the cumulative ranking curve(SUCRA) estimates Shenmai injection(SMI) had the highest probability of ranking favorably for clinical effectiveness rate(CER) and left ventricular ejection fraction(LVEF), Shengmai injection(SHMI) for B type natriuretic peptide(BNP), Xinmailong injection(XMLI) for N terminal pro B type natriuretic peptide(NT pro BNP), Yiqifumai injection(YQFMI) for left ventricular end diastolic dimension(LVEDD), and Shenfu injection(SFI) for 6 minute walking distance(6MWT). Short term adverse event rates were not increased overall. CONCLUSION: TCMIs combined with CT has potential benefits in the treatment of IHF, but confidence in treatment rankings is limited by low or very low certainty of evidence, substantial heterogeneity for several outcomes, methodological limitations, and the absence of direct head to head trials. Large, rigorously designed RCTs with long term safety follow up are required. SYSTEMATIC REVIEW REGISTRATION: https://www.crd.york.ac.uk/PROSPERO/, identifier (CRD 420261380716). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0934",

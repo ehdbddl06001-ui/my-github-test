@@ -5,7 +5,7 @@ topic: Cardiology
 see_also: [cn.cardio.pvc-nsvt.structural-heart-risk-first, cn.cardio.svt.av-nodal-blockade-response]
 date: 2026-11-15
 updated: 2026-11-15
-version: 1
+version: 2
 outline: h254            # 기본틀 슬롯 — 해리슨 22판 261장 Sustained Ventricular Tachycardia
 confidence: high
 review_status: unreviewed
@@ -125,14 +125,26 @@ checks:
     a: "아니다 — 효소 상승은 대개 2차 손상이고 원인은 오래된 흉터 회귀다. 2차 예방은 ICD."
   - q: "심초음파·MRI·동율동 심전도가 정상인 25세, 운동 중 좌각차단꼴·하방 축 VT. ICD 를 넣나?"
     a: "아니다 — 특발성(유출로) VT 는 급사가 드물다. 증상 조절에 베타차단제·칼슘통로차단제 또는 도자절제. 먼저 ARVC 를 배제한다."
-figures_wanted:
-- source: PMC_OA
-  shows: 넓은 QRS 의 규칙적 단형 심실빈맥
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13581952_figure1-0-115-1600-1085.png
+  kind: ecg
   at: 가르는 소견 — VT 쪽으로 기우는 것
-  query: '"ventricular tachycardia" AND "wide complex" AND "case report"'
-  caption_terms:
-  - ventricular tachycardia
-  modality: ECG
+  shows: 넓은 QRS 의 규칙적 단형 빈맥(심실빈맥)
+  look_for:
+  - 모든 유도에서 QRS 가 넓고 모양이 한결같다
+  - RR 간격이 규칙적이고 빠르다(약 188회/분)
+  label: '「The patient''s ECG showing ventricular tachycardia.」 — Case Report: Left ventricular pseudoaneurysm presenting with ventricular tachycardia'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Case Report: Left ventricular pseudoaneurysm presenting with ventricular tachycardia. Frontiers in Cardiovascular Medicine'
+  doi: 10.3389/fcvm.2026.1903760
+  credit: 'Case Report: Left ventricular pseudoaneurysm presenting with ventricular tachycardia. Front Cardiovasc Med. 2026 Sep 3;13:1903760. doi: 10.3389/fcvm.2026.1903760 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13581952/
+  asset: PMC-PMC13581952_Figure1
+  privacy_check: 얼굴·문신 없음. 이름 칸은 비어 있고 병원명 없음. 날짜·기기 문자가 있는 머리줄과 아래 줄은 잘라냈다
+  crop: 0,115,1600,1085
 ---
 
 ## 판단 — 왜 「VT 로 보고」가 먼저인가

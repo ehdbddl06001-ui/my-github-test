@@ -113,6 +113,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.left-anterior-fascicular-block.ecg-recognition",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0668.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",

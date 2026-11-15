@@ -45500,7 +45500,8 @@ window.KMLE_CONTENT_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
-  "objective": "cn.rheum.polymyalgia-rheumatica.low-dose-steroid",
+  "objective": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "노인의 높은 ESR과 근육통은 거대세포 동맥염과 겹칠 수 있어 고용량이 안전해 보인다.",

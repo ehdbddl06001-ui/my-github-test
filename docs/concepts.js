@@ -10115,7 +10115,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-13",
   "reviewStatus": "unreviewed",
-  "hash": "7b403010261ce94a",
+  "hash": "d42e1c5edb4c67c5",
   "summary": [
    "결론: 동리듬과 다른 모양의 뚜렷한 P파가 빠르게 이어지고, 방실 차단이 생겨도 심방 박동이 그대로면 국소 심방빈맥이다.",
    "시험 단서: P파 사이 등전위선(isoelectric line), RP > PR, 방실 차단 동반(특히 디곡신 복용), 갑작스런 시작·끝 또는 warm-up.",
@@ -13411,6 +13411,831 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [],
+  "hasErrors": false
+ },
+ "cn.cardio.left-anterior-fascicular-block.ecg-recognition": {
+  "id": "cn.cardio.left-anterior-fascicular-block.ecg-recognition",
+  "title": "좌각전섬유속차단 — 좁은 QRS 의 심한 좌축편위",
+  "objective": "좁은 QRS 에 −45° 보다 심한 좌축편위(I 양성, II·III·aVF rS)를 좌각전섬유속차단으로 읽고 좌심실비대·하벽경색과 가른다",
+  "objectiveKind": "진단",
+  "condition": "좌각전섬유속차단(left anterior fascicular block)",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "cn.cardio.qrs-axis.limb-lead-polarity",
+   "cn.cardio.complete-rbbb.ecg-recognition"
+  ],
+  "version": 2,
+  "updated": "2026-11-15",
+  "reviewStatus": "unreviewed",
+  "hash": "05999e16e24074e0",
+  "summary": [
+   "결론: QRS 가 좁은데 축이 −45° 보다 왼쪽이면 좌각전섬유속차단 — 성인의 심한 좌축편위의 가장 흔한 원인이다.",
+   "시험 단서: 무증상 고령·고혈압, 「축 이상」 검진 심전도, I·aVL 양성 + II·III·aVF 깊은 S(left anterior fascicular block).",
+   "왜: 섬유속차단은 QRS 폭을 크게 늘리지 않고 전두면 축만 옮긴다 — 각차단과 달리 QRS 가 좁다.",
+   "좌심실비대는 전흉부 전압(SV1 + RV5/RV6 > 35 mm)과 높은 R 유도의 ST 하강·T 역위로 읽는다 — 축만으로 붙이지 않는다.",
+   "하벽 유도가 음성일 때 첫 굴절이 작은 r 이면 섬유속차단, 병적 Q 면 하벽경색 쪽이다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 좌각전섬유속차단인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>폭부터</strong>: QRS 가 좁다 — 섬유속차단은 폭을 크게 늘리지 않고 축만 옮긴다 <sup>[1 247장 p.1872]</sup>. 120 ms 를 넘으면 각차단을 먼저 본다.</li>\n<li><strong>축의 정도</strong>: I 양성·II·aVF 음성이면 좌축편위이고, −45° 보다 왼쪽이면 좌각전섬유속차단 기준에 든다 <sup>[1 247장 p.1870]</sup> <sup>[1 247장 p.1872]</sup>.</li>\n<li><strong>비대는 따로 확인</strong>: 좌심실비대는 전흉부 전압과 ST-T 로 붙인다 — 축만으로 붙이지 않는다 <sup>[1 247장 p.1871]</sup>.</li>\n<li><strong>경색은 Q파로</strong>: 하벽 유도의 첫 굴절이 Q파면 하벽경색, 작은 r 이면 섬유속차단 쪽이다 <sup>[1 247장 p.1873]</sup> <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 앞 섬유속이 막히면 축이 위로",
+    "deep": false,
+    "html": "<p>좌다발가지는 앞·뒤 두 섬유속으로 나뉜다 <sup>[1 247장 p.1868]</sup>. 앞 섬유속은 좌심실의 앞·위쪽 벽을, 뒤 섬유속은 아래·뒤쪽 벽을 먼저 흥분시킨다. 앞 섬유속이 막히면 아래·뒤쪽 벽이 먼저 흥분해 처음 벡터가 잠깐 아래로 향하고(하벽 유도의 작은 r), 앞·위쪽 벽은 심근을 거쳐 늦게 흥분해 주된 벡터가 왼쪽 위로 향한다(하벽 유도의 깊은 S, I·aVL 양성) — 세부 형태는 권고 원문 미대조 <sup>[2†]</sup>. 다발가지 본줄기는 살아 있어 QRS 폭은 크게 늘지 않고 전두면 축만 옮겨 간다 <sup>[1 247장 p.1872]</sup>. 반대로 하벽경색은 하벽의 초기 벡터 자체를 없애 비정상 Q파를 남긴다 <sup>[1 247장 p.1873]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 축 다음에 볼 곳",
+    "deep": false,
+    "html": "<ul>\n<li>좌축편위 자체는 정상 변이·좌심실비대·좌각전섬유속차단·하벽경색 모두에서 생긴다 <sup>[1 247장 p.1870]</sup> — 그래서 축 다음에 폭·첫 굴절·전압·ST-T 를 차례로 본다.</li>\n<li><strong>음성 결과의 해석 한계</strong>: 좌심실비대의 전압 기준은 중년 이후·비만·흡연자에서 민감도가 낮다 <sup>[1 247장 p.1871]</sup> — 전압이 정상이라고 비대가 없다는 뜻은 아니며, 비대 여부는 심초음파로 본다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>무증상 단독 좌각전섬유속차단은 이 문항처럼 판독 문제다. 진행·처치 판단은 이 정리본에서 대조하지 않았다.</li>\n<li>우각차단과 함께 오면(이섬유속차단) 의미가 달라진다 — 「완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S」 참고.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 247장 p.1868·1870–1873)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "좌축편위 — 무엇이 가르나",
+    "columns": [
+     "판독",
+     "QRS 폭·축",
+     "가르는 소견"
+    ],
+    "rows": [
+     [
+      "좌각전섬유속차단",
+      "좁음, −45° 보다 왼쪽 <sup>[1 247장 p.1872]</sup>",
+      "하벽 유도 rS(첫 굴절 작은 r) <sup>[2†]</sup>"
+     ],
+     [
+      "좌심실비대(strain)",
+      "좁거나 약간 넓음, 축은 다양",
+      "SV1 + RV5/6 &gt; 35 mm, 높은 R 유도 ST 하강·T 역위 <sup>[1 247장 p.1871]</sup>"
+     ],
+     [
+      "하벽경색(오래된)",
+      "좁음, 좌축 쪽일 수 있음 <sup>[1 247장 p.1870]</sup>",
+      "II·III·aVF 비정상 Q파 <sup>[1 247장 p.1873]</sup>"
+     ],
+     [
+      "좌각차단",
+      "≥ 120 ms",
+      "넓은 QRS — 섬유속차단은 폭을 크게 늘리지 않는다 <sup>[1 247장 p.1872]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "좌심실비대(strain) vs 좌각전섬유속차단 — 「고혈압 + 좌축편위 = 좌심실비대」",
+    "point": "좌축편위는 좌심실비대에서도 보이지만 좌심실비대는 전흉부 전압(SV1 + RV5/RV6 &gt; 35 mm)과 높은 R 유도의 ST 하강·T 역위로 붙이는 진단이다 <sup>[1 247장 p.1871]</sup>. 전압·재분극 이상 없이 좁은 QRS 와 −45° 보다 심한 좌축편위만 있으면 좌각전섬유속차단이다 <sup>[1 247장 p.1872]</sup>.",
+    "exception": "둘은 함께 있을 수 있다 — 전압 기준과 ST-T 변화가 있으면 좌심실비대를 따로 붙인다 <sup>[1 247장 p.1871]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "하벽 유도 음성 = 오래된 하벽경색?",
+    "point": "경색은 비정상 Q파를 남긴다 <sup>[1 247장 p.1873]</sup>. 하벽 유도가 작은 r 로 시작해 깊은 S 로 끝나면(rS) 초기 하벽 벡터가 살아 있는 것이라 섬유속차단 쪽이다 <sup>[2†]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "좌축편위면 모두 좌각전섬유속차단?",
+    "point": "−30°~−45° 는 좌축편위이지만 섬유속차단 기준(−45° 초과)에 못 미친다. 정상 변이·좌심실비대·하벽경색도 좌축편위를 만든다 <sup>[1 247장 p.1870]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "좌심실비대 전압: SV1 + (RV5 또는 RV6) &gt; 35 mm, 사지유도 RaVL + SV3 &gt; 20 mm(여자)·&gt; 28 mm(남자). 젊은 사람·운동선수는 정상 변이로 전압이 높다 <sup>[1 247장 p.1871]</sup>.",
+   "좌심실비대와 좌각전섬유속차단은 함께 있을 수 있다 — 갈래가 하나로 끝나지 않으면 둘 다 적는다.",
+   "aVL 의 qR, 하벽 rS 의 세부 기준은 AHA/ACCF/HRS 2009 권고에 있다(원문 미대조) <sup>[2†]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "lafb-axis",
+    "name": "좌각전섬유속차단의 축 기준",
+    "kind": "진단 기준",
+    "population": "QRS 폭이 거의 정상인 좌축편위",
+    "statement": "섬유속차단은 QRS 폭을 크게 늘리지 않고 전두면 축만 옮긴다. 좌각전섬유속차단은 QRS 축이 −45° 보다 음이고, 성인에서 심한 좌축편위의 가장 흔한 원인이다 [[harrison-22: 247장 p.1872]]",
+    "exceptions": "하벽 유도의 rS·aVL 의 qR 같은 세부 형태 기준은 해리슨 본문에 없다 — AHA/ACCF/HRS 2009 권고(원문 미대조) [[?aha-ivcd-2009]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "lad-causes",
+    "name": "좌축편위의 원인",
+    "kind": "정의",
+    "population": "성인 12유도 심전도",
+    "statement": "정상 QRS 축은 −30°~+100°, −30° 보다 음이면 좌축편위. 정상 변이일 수 있으나 좌심실비대·좌각전섬유속차단·하벽경색과 더 자주 연관된다 [[harrison-22: 247장 p.1870]]",
+    "exceptions": "−30°~−45° 의 가벼운 좌축편위는 섬유속차단 기준(−45° 초과)에 못 미친다 [[harrison-22: 247장 p.1872]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 247: Electrocardiography",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 247장 p.1868, 1870–1873",
+    "checked": "드라이브 22판 장별 문서 H22_247 본문 대조 — p.1868 전도계(좌다발가지가 앞·뒤 섬유속으로 나뉨) · p.1870 정상 QRS 축 −30°~+100°, 좌축편위 −30° 초과, 원인(정상 변이·좌심실비대·좌각전섬유속차단·하벽경색), 우축편위 원인 · p.1871 좌심실비대 전압 기준 SV1 + (RV5 또는 RV6) > 35 mm, 높은 R 유도의 ST 하강·T 역위(옛 「strain」), 사지유도 전압 RaVL + SV3 > 20/28 mm, 젊은 사람 정상 변이, 좌각차단으로 진행 · p.1872 섬유속차단은 QRS 폭을 크게 늘리지 않고 축만 옮김, 좌각전섬유속차단 축 −45° 초과·성인 심한 좌축편위 최다 원인, 좌각후섬유속차단 +110–120° 초과 · p.1873 경색 뒤 R파 감소·비정상 Q파(전벽·하벽 유도)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-15",
+    "url": ""
+   },
+   {
+    "id": "aha-ivcd-2009",
+    "org": "American Heart Association / American College of Cardiology Foundation / Heart Rhythm Society",
+    "title": "Recommendations for the Standardization and Interpretation of the Electrocardiogram, Part III: Intraventricular Conduction Disturbances",
+    "kind": "guideline",
+    "citation": "Surawicz B, Childers R, Deal BJ, Gettes LS. Circulation 2009;119:e235-e240 (문항 해설에 적힌 권고)",
+    "checked": "서지만 — 이 컨테이너에서 원문을 열지 못해 섬유속차단 형태 기준 문구를 대조하지 못했다(url 은 학술지 첫 화면, DOI·PMID 미확인)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2009",
+    "checkedAt": "2026-11-15",
+    "url": "https://www.ahajournals.org/journal/circ"
+   }
+  ],
+  "checks": [
+   {
+    "q": "좌각전섬유속차단의 축 기준과 QRS 폭은?",
+    "a": "축 −45° 보다 왼쪽, QRS 폭은 크게 늘지 않는다(좁다)."
+   },
+   {
+    "q": "좌축편위에서 좌심실비대를 붙이려면 무엇이 더 있어야 하나?",
+    "a": "전흉부 전압 기준(SV1 + RV5/6 > 35 mm 등)과 높은 R 유도의 ST 하강·T 역위."
+   },
+   {
+    "q": "하벽 유도 음성 QRS 에서 하벽경색과 섬유속차단을 가르는 것은?",
+    "a": "첫 굴절 — 병적 Q파면 경색, 작은 r 로 시작하면 섬유속차단."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.left-anterior-fascicular-block.ecg-recognition#v1",
+    "context": "같은 고혈압 고령 여성, 전압·재분극 단서를 넣고 축 이상을 뺀 글 변형(그림 없음)",
+    "stem": "A 66-year-old woman comes to the clinic because a screening ECG at a health fair was reported as abnormal. She has had poorly controlled hypertension for 20 years. She has no chest pain, dyspnea, palpitations, or syncope and has never had a myocardial infarction. Her blood pressure is 168/96 mm Hg and pulse is 72/min. A sustained apical impulse is palpated. The ECG shows sinus rhythm, a QRS duration of 100 ms, and a frontal QRS axis of −15°. The S wave in V1 plus the R wave in V5 measures 44 mm, and V5 and V6 show downsloping ST-segment depression with asymmetric T-wave inversion. Leads II, III, and aVF begin with a small r wave. Which of the following is the most likely interpretation of this ECG?",
+    "options": [
+     "Left ventricular hypertrophy with strain",
+     "Left anterior fascicular block",
+     "Left posterior fascicular block",
+     "Left bundle branch block",
+     "Old inferior myocardial infarction"
+    ],
+    "answer": 1,
+    "explanation": "The deciding change is voltage plus repolarization: SV1 + RV5 above 35 mm with downsloping ST depression and asymmetric T inversion in the tall-R leads is left ventricular hypertrophy with the former 'strain' pattern. The axis of −15° is within normal limits, so the criterion for left anterior fascicular block (more negative than −45°) is not met, the QRS is not wide enough for a bundle branch block, and the inferior leads start with r rather than Q.",
+    "of": "imaging-2026-0668",
+    "changed": "좁은 QRS·심한 좌축편위·전흉부 전압 정상 → SV1 + RV5 = 44 mm, V5·V6 의 하향 경사 ST 하강과 비대칭 T 역위, 축 −15° ⇒ 정답이 좌각전섬유속차단에서 좌심실비대(strain)로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.left-anterior-fascicular-block.ecg-recognition#v2",
+    "context": "겉모습만 바꾼 글 변형(그림 없음)",
+    "stem": "A 58-year-old man has a preoperative ECG before elective colon surgery. He has type 2 diabetes mellitus and no cardiac symptoms; he walks 3 miles daily without difficulty. His blood pressure is 128/78 mm Hg and pulse is 66/min. The ECG shows sinus rhythm with a QRS duration of 96 ms and a frontal QRS axis of −60°. Lead I and aVL are predominantly positive, while II, III, and aVF each begin with a small r wave followed by a deep S wave. Precordial voltages are normal, and there are no ST-segment or T-wave abnormalities. Which of the following is the most likely interpretation of this ECG?",
+    "options": [
+     "Left ventricular hypertrophy with strain",
+     "Left anterior fascicular block",
+     "Left posterior fascicular block",
+     "Left bundle branch block",
+     "Old inferior myocardial infarction"
+    ],
+    "answer": 2,
+    "explanation": "The patient and setting changed, but the deciding clues did not: a narrow QRS with an axis more negative than −45°, inferior rS complexes, and no voltage or ST-T criteria for hypertrophy. That is left anterior fascicular block, the most common cause of marked left axis deviation in adults. The preserved initial r in the inferior leads argues against an old inferior infarction.",
+    "of": "imaging-2026-0668",
+    "changed": "66세 여성·검진 심전도 → 58세 남성·대장 수술 전 심전도, 소견을 글로 제시 ⇒ 좁은 QRS·축 −60°·하벽 rS·전압 정상이라는 결정 단서는 같아 답은 그대로 좌각전섬유속차단",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-01766.png",
+    "kind": "ecg",
+    "at": "기전 — 앞 섬유속이 막히면 축이 위로",
+    "shows": "좌각전섬유속차단 — 좁은 QRS 와 심한 좌축편위",
+    "look": [
+     "I·aVL 은 높은 R 로 양성",
+     "II·III·aVF 는 작은 r 뒤 깊은 S(rS)",
+     "QRS 폭이 좁다"
+    ],
+    "label": "left anterior fascicular block (SCP LAFB, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1766",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "좌축편위 심전도 — 어떤 판독인가",
+  "geo": {
+   "title": "좌축편위 심전도 — 어떤 판독인가",
+   "w": 793.0,
+   "h": 611.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "I 양성 · II·aVF",
+      "음성(좌축편위)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "width",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "QRS ≥ 120 ms?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "lbbb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "각차단 쪽(좌각차단 등)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 192.0
+    },
+    {
+     "id": "q",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "II·III·aVF 첫 굴절이 Q파?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "imi",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "오래된 하벽경색"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 282.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "전흉부 전압·ST-T 함께 확인"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 282.0
+    },
+    {
+     "id": "lvh",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "전압 기준 + ST 하강·T 역위?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 351.0
+    },
+    {
+     "id": "lvhend",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "좌심실비대(strain)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 441.0
+    },
+    {
+     "id": "deg",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "축 −45° 보다 왼쪽?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 441.0
+    },
+    {
+     "id": "lafb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "좌각전섬유속차단"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 531.0
+    },
+    {
+     "id": "mild",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "가벼운 좌축편위 — 정상 변이",
+      "등"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 581.0,
+     "y": 531.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "width",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "width",
+     "to": "lbbb",
+     "points": [
+      [
+       194.3,
+       149.0
+      ],
+      [
+       194.3,
+       178.0
+      ],
+      [
+       114.0,
+       178.0
+      ],
+      [
+       114.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "width",
+     "to": "q",
+     "points": [
+      [
+       259.7,
+       149.0
+      ],
+      [
+       259.7,
+       178.0
+      ],
+      [
+       340.0,
+       178.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "q",
+     "to": "imi",
+     "points": [
+      [
+       307.3,
+       239.0
+      ],
+      [
+       307.3,
+       268.0
+      ],
+      [
+       227.0,
+       268.0
+      ],
+      [
+       227.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "Q파"
+      ],
+      "w": 25.4,
+      "h": 17,
+      "x": 294.6,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "q",
+     "to": "info",
+     "points": [
+      [
+       372.7,
+       239.0
+      ],
+      [
+       372.7,
+       268.0
+      ],
+      [
+       453.0,
+       268.0
+      ],
+      [
+       453.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "작은 r"
+      ],
+      "w": 40.1,
+      "h": 17,
+      "x": 352.6,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "lvh",
+     "points": [
+      [
+       453.0,
+       329.0
+      ],
+      [
+       453.0,
+       351.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "lvh",
+     "to": "lvhend",
+     "points": [
+      [
+       420.3,
+       398.0
+      ],
+      [
+       420.3,
+       427.0
+      ],
+      [
+       340.0,
+       427.0
+      ],
+      [
+       340.0,
+       441.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 405.3,
+      "y": 402.0
+     }
+    },
+    {
+     "from": "lvh",
+     "to": "deg",
+     "points": [
+      [
+       485.7,
+       398.0
+      ],
+      [
+       485.7,
+       427.0
+      ],
+      [
+       566.0,
+       427.0
+      ],
+      [
+       566.0,
+       441.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 470.7,
+      "y": 402.0
+     }
+    },
+    {
+     "from": "deg",
+     "to": "lafb",
+     "points": [
+      [
+       533.3,
+       488.0
+      ],
+      [
+       533.3,
+       517.0
+      ],
+      [
+       453.0,
+       517.0
+      ],
+      [
+       453.0,
+       531.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 523.8,
+      "y": 492.0
+     }
+    },
+    {
+     "from": "deg",
+     "to": "mild",
+     "points": [
+      [
+       598.7,
+       488.0
+      ],
+      [
+       598.7,
+       517.0
+      ],
+      [
+       679.0,
+       517.0
+      ],
+      [
+       679.0,
+       531.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 578.2,
+      "y": 492.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "I 양성 · II·aVF 음성(좌축편위)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "QRS ≥ 120 ms?"
+     }
+    ]
+   },
+   {
+    "id": "width",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "QRS ≥ 120 ms?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "각차단 쪽(좌각차단 등)"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "II·III·aVF 첫 굴절이 Q파?"
+     }
+    ]
+   },
+   {
+    "id": "lbbb",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "각차단 쪽(좌각차단 등)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "q",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "II·III·aVF 첫 굴절이 Q파?",
+    "note": "",
+    "branches": [
+     {
+      "label": "Q파",
+      "to": 5,
+      "toText": "오래된 하벽경색"
+     },
+     {
+      "label": "작은 r",
+      "to": 6,
+      "toText": "전흉부 전압·ST-T 함께 확인"
+     }
+    ]
+   },
+   {
+    "id": "imi",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "오래된 하벽경색",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 6,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "전흉부 전압·ST-T 함께 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "전압 기준 + ST 하강·T 역위?"
+     }
+    ]
+   },
+   {
+    "id": "lvh",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "전압 기준 + ST 하강·T 역위?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 8,
+      "toText": "좌심실비대(strain)"
+     },
+     {
+      "label": "없음",
+      "to": 9,
+      "toText": "축 −45° 보다 왼쪽?"
+     }
+    ]
+   },
+   {
+    "id": "lvhend",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "좌심실비대(strain)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "deg",
+    "num": 9,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "축 −45° 보다 왼쪽?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 10,
+      "toText": "좌각전섬유속차단"
+     },
+     {
+      "label": "아니오",
+      "to": 11,
+      "toText": "가벼운 좌축편위 — 정상 변이 등"
+     }
+    ]
+   },
+   {
+    "id": "lafb",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "좌각전섬유속차단",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mild",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "가벼운 좌축편위 — 정상 변이 등",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0668"
+  ],
   "hasErrors": false
  },
  "cn.cardio.long-qt-syndrome.first-line-drug": {
@@ -22157,10 +22982,10 @@ window.MEDKOS_CONCEPTS = {
    "cn.cardio.pvc-nsvt.structural-heart-risk-first",
    "cn.cardio.svt.av-nodal-blockade-response"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-11-15",
   "reviewStatus": "unreviewed",
-  "hash": "4c6106de2342411c",
+  "hash": "9db1147683fc8b24",
   "summary": [
    "결론: 저혈압·의식 저하·폐부종이 있으면 즉시 QRS 동기화 심율동전환, 안정하면 심질환 환자에서 정맥 아미오다론 [[harrison-22: 261장 p.1964]]",
    "시험 단서: 심근경색 병력·박출률 저하 + 넓은 QRS 빈맥, 방실 해리·융합 박동(fusion beat), V1–V6 일치(concordance), aVR 의 R.",
@@ -22359,7 +23184,29 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "variants": [],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13581952_figure1-0-115-1600-1085.png",
+    "kind": "ecg",
+    "at": "가르는 소견 — VT 쪽으로 기우는 것",
+    "shows": "넓은 QRS 의 규칙적 단형 빈맥(심실빈맥)",
+    "look": [
+     "모든 유도에서 QRS 가 넓고 모양이 한결같다",
+     "RR 간격이 규칙적이고 빠르다(약 188회/분)"
+    ],
+    "label": "「The patient's ECG showing ventricular tachycardia.」 — Case Report: Left ventricular pseudoaneurysm presenting with ventricular tachycardia",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Case Report: Left ventricular pseudoaneurysm presenting with ventricular tachycardia. Frontiers in Cardiovascular Medicine",
+    "doiUrl": "https://doi.org/10.3389/fcvm.2026.1903760",
+    "citedBy": null,
+    "credit": "Case Report: Left ventricular pseudoaneurysm presenting with ventricular tachycardia. Front Cardiovasc Med. 2026 Sep 3;13:1903760. doi: 10.3389/fcvm.2026.1903760 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13581952/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "규칙적인 넓은 QRS 빈맥 — 다음 처치",
   "geo": {
    "title": "규칙적인 넓은 QRS 빈맥 — 다음 처치",
@@ -73105,7 +73952,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-06",
   "reviewStatus": "unreviewed",
-  "hash": "972ba990dc224859",
+  "hash": "2dd82d80c6ade64e",
   "summary": [
    "결론: 망막 아래 출혈·액체·신생혈관막이 있는 습성 황반변성은 유리체강 내 VEGF 억제제를 바로, 매달 시작한다.",
    "시험 단서: 노인 + 한눈 중심 흐림 + 줄이 휘어 보임(변형시, metamorphopsia) + 드루젠(drusen) + 망막 아래 출혈.",
@@ -119757,6 +120604,735 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.rheum.drug-induced-lupus.anti-histone": {
+  "id": "cn.rheum.drug-induced-lupus.anti-histone",
+  "title": "약물 유발 루푸스 — 원인 약·항히스톤, 신장·보체는 조용",
+  "objective": "원인 약을 수주~수개월 먹은 뒤 생긴 발열·관절염·장막염에 항히스톤 항체 양성, 항dsDNA·항Sm 음성, 보체·신장·뇌가 정상이면 전신홍반루푸스가 아닌 약물 유발 루푸스로 진단한다",
+  "objectiveKind": "진단",
+  "condition": "약물 유발 루푸스(drug-induced lupus)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "cn.rheum.sle.mild-disease-hydroxychloroquine"
+  ],
+  "version": 1,
+  "updated": "2026-11-15",
+  "reviewStatus": "unreviewed",
+  "hash": "0006413e6a5fd37f",
+  "summary": [
+   "결론: 원인 약 복용 중 루푸스 양상 + 항히스톤 양성 + 항dsDNA·항Sm 음성·보체·신장 정상 = 약물 유발 루푸스.",
+   "시험 단서: 이소니아지드·히드랄라진·프로카인아마이드·TNF 억제제 수주~수개월 뒤 발열·관절통·흉막염(drug-induced lupus).",
+   "왜: 약물 유발 루푸스는 신장·뇌를 거의 침범하지 않고 항dsDNA·항Sm 같은 다른 자가항체가 드물다.",
+   "항히스톤은 약물 유발 루푸스의 약 75 % 에서 양성이지만 전신홍반루푸스 다수에서도 양성 — 단독으로 가르지 않는다.",
+   "원인 약을 끊으면 대개 수주 안에 좋아지고, 끊은 뒤 좋아지는 것이 진단을 굳힌다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 약물 유발 루푸스가 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>원인 약 + 시기</strong>: 루푸스 양상이 약 시작 수주~수개월 뒤에 생겼다 — 이소니아지드는 알려진 원인 약이다 <sup>[1 368장 p.2835]</sup>.</li>\n<li><strong>조용한 곳을 본다</strong>: 약물 유발 루푸스는 신장·뇌 침범이 드물고 항dsDNA 같은 다른 자가항체가 드물다 <sup>[1 368장 p.2835]</sup>. 항dsDNA·항Sm 음성, 보체·소변 정상은 이 그림에 맞는다.</li>\n<li><strong>항히스톤은 보조</strong>: 약 75 % 에서 양성이지만 전신홍반루푸스 다수에서도 양성이다 <sup>[1 368장 p.2835]</sup>.</li>\n<li><strong>경과가 확인한다</strong>: 원인 약을 끊고 수주 안에 좋아지면 진단이 굳어진다 <sup>[1 368장 p.2836]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 약 노출에서 자가항체로",
+    "deep": false,
+    "html": "<p>약물 유발 루푸스는 약 노출로 항핵항체와 전신홍반루푸스의 임상 양상이 생기는 자가면역 현상으로, 루푸스의 약 6–12 % 를 차지한다 <sup>[1 368장 p.2835]</sup>. 1954년 히드랄라진에서 처음 알려졌고 지금은 100가지 넘는 약이 원인으로 꼽힌다 — 위험이 가장 큰 것은 프로카인아마이드(최대 30 %)다 <sup>[1 368장 p.2835]</sup>. 자가항체가 주로 핵 안의 히스톤을 향하고 이중가닥 DNA·Sm 단백을 향하는 일은 드물다. 전신홍반루푸스에서 항dsDNA 와 보체 감소는 면역복합체 침착에 의한 신장 손상 경향을 반영하는데 <sup>[1 368장 p.2832]</sup>, 약물 유발 루푸스는 이 경로가 약해 병이 가볍고 신장·뇌를 거의 침범하지 않는다 <sup>[1 368장 p.2835]</sup>. 원인이 바깥(약)에 있으므로 약을 끊으면 수주 안에 가라앉는다.</p>"
+   },
+   {
+    "title": "가르는 소견 — 무엇이 조용한가",
+    "deep": false,
+    "html": "<ul>\n<li>증상: 발열·발진·관절통·근육통·장막염(흉막염·심낭염) <sup>[1 368장 p.2835]</sup>.</li>\n<li>검사: 항핵항체 대개 균질형, 항히스톤 약 75 %, 혈구감소는 있어도 가볍다 <sup>[1 368장 p.2835]</sup>.</li>\n<li><strong>음성 결과의 해석 한계</strong>: 약을 먹는 사람에게서 증상 없이 항핵항체만 양성인 일은 흔하다 — 증상이 없으면 약물 유발 루푸스가 아니다 <sup>[1 368장 p.2836]</sup>. 피부 생검도 두 루푸스를 가르지 못할 수 있다 <sup>[1 368장 p.2835]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>원인 약을 끊는다. 잠복결핵 치료라면 다른 약으로 바꾸는 계획을 함께 세운다(대체 약 선택은 결핵 지침의 몫 — 이 정리본에서 대조하지 않음).</li>\n<li>항dsDNA·항Sm 양성·보체 감소·신장 침범이 있으면 약을 끊는 것만으로 기다리지 않고 전신홍반루푸스로 평가한다 <sup>[1 368장 p.2832]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 368장 p.2827·2832·2835–2836)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "루푸스 양상 — 약물 유발 루푸스 vs 전신홍반루푸스",
+    "columns": [
+     "소견",
+     "약물 유발 루푸스",
+     "전신홍반루푸스"
+    ],
+    "rows": [
+     [
+      "원인 약",
+      "수주~수개월 복용 뒤 <sup>[1 368장 p.2835]</sup>",
+      "관계없음"
+     ],
+     [
+      "항히스톤",
+      "약 75 % 양성 <sup>[1 368장 p.2835]</sup>",
+      "다수에서 양성 — 가르지 못함 <sup>[1 368장 p.2835]</sup>"
+     ],
+     [
+      "항dsDNA·항Sm",
+      "드묾 <sup>[1 368장 p.2835]</sup>",
+      "특이도 높음, 기준 항목 <sup>[1 368장 p.2832]</sup>"
+     ],
+     [
+      "C3·C4",
+      "—",
+      "감소는 루푸스신염 경향 <sup>[1 368장 p.2832]</sup>"
+     ],
+     [
+      "신장·뇌",
+      "드묾 <sup>[1 368장 p.2835]</sup>",
+      "흔한 중증 침범"
+     ],
+     [
+      "경과",
+      "약을 끊으면 수주 안에 호전 <sup>[1 368장 p.2835]</sup>",
+      "면역조절 치료 필요"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "전신홍반루푸스 vs 약물 유발 루푸스 — 「항핵항체 고역가 + 장막염 = 전신홍반루푸스」",
+    "point": "항핵항체·장막염·관절염은 둘이 같다. 가르는 것은 원인 약 복용 시기와 「조용한 곳」 — 항dsDNA·항Sm 음성, 보체·소변·뇌가 정상이면 약물 유발 루푸스 쪽이다 <sup>[1 368장 p.2835]</sup>. 항dsDNA·항Sm 은 전신홍반루푸스에 특이도가 높은 항체다 <sup>[1 368장 p.2832]</sup>.",
+    "exception": "항dsDNA·항Sm 양성, C3·C4 감소, 단백뇨가 있으면 약을 먹고 있어도 전신홍반루푸스를 먼저 생각한다 <sup>[1 368장 p.2832]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "항히스톤 양성 = 약물 유발 루푸스?",
+    "point": "항히스톤은 전신홍반루푸스 다수에서도 양성이라 단독으로 진단하지 않는다. 약 노출 + 다른 자가항체 음성 + 장기 침범 없음 + 중단 뒤 호전을 함께 본다 <sup>[1 368장 p.2835]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "잠복결핵 치료 중 흉막액 = 결핵성 흉막염?",
+    "point": "이소니아지드 자체가 약물 유발 루푸스의 원인 약이다 <sup>[1 368장 p.2835]</sup>. 다관절염·항히스톤 양성이 함께 있으면 장막염을 약물 유발 루푸스로 설명할 수 있다 — 결핵성 흉막염은 흉막액 검사로 따로 평가한다(이 정리본에서 대조하지 않음).",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "원인 약: 프로카인아마이드(위험 최대 30 %)·히드랄라진·메틸도파·미노사이클린·이소니아지드·리팜피신·니트로푸란토인·설파살라진·페니토인·카르바마제핀·클로르프로마진·TNF 억제제(인플릭시맙·에타너셉트)·IFN-α 등 100가지 넘음 <sup>[1 368장 p.2835]</sup>.",
+   "증상이 없는데 항핵항체만 양성이면 약물 유발 루푸스가 아니다 — 이 약들은 증상 없는 항핵항체 양성을 흔히 만든다 <sup>[1 368장 p.2836]</sup>.",
+   "증상이 심할 때 쓰는 대증 치료(소염제·단기 스테로이드)의 기준은 해리슨 본문에 없다 — 원문 미대조."
+  ],
+  "criteria": [
+   {
+    "id": "dil-features",
+    "name": "약물 유발 루푸스의 모습",
+    "kind": "진단 기준",
+    "population": "원인 약 노출 뒤 루푸스 양상",
+    "statement": "약 노출로 항핵항체 양성과 전신홍반루푸스의 임상 양상(발열·발진·관절통·근육통·장막염)이 생긴다. 항히스톤 항체가 흔하고 항dsDNA 는 드물며, 전신홍반루푸스보다 가볍고 신장·뇌 침범이 드물다 [[harrison-22: 368장 p.2835]]",
+    "exceptions": "증상은 약 시작 수주~수개월 뒤에 시작할 수 있고, 피부 생검은 전신홍반루푸스와 구별되지 않을 수 있다 [[harrison-22: 368장 p.2835]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "dil-labs",
+    "name": "검사로 가르기",
+    "kind": "진단 기준",
+    "population": "약물 유발 루푸스 의심",
+    "statement": "항핵항체는 대개 균질형, 항히스톤 약 75 % 양성. 혈구감소는 가볍다. 다른 자가항체는 약물 유발 루푸스에서 드물어 전신홍반루푸스와 가르는 데 도움이 된다 [[harrison-22: 368장 p.2835]]",
+    "exceptions": "같은 약이 증상 없이 항핵항체만 양성으로 만들기도 한다 — 증상이 없으면 그 자체로 진단이 아니다 [[harrison-22: 368장 p.2836]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 368: Systemic Lupus Erythematosus",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 368장 p.2827, 2832, 2835–2836",
+    "checked": "드라이브 22판 장별 문서 H22_368 본문 대조 — p.2827 약물 유발 자가면역(항생제·항고혈압제·항부정맥제·TNF 억제제·항경련제), 항히스톤, 약 중단으로 호전 · p.2832 항dsDNA(40–60 %, 특이도 높음)·항Sm(~30 %)이 EULAR/ACR 기준에 들어가는 유일한 ANA 아형, 항dsDNA·C3/C4 감소는 루푸스신염 경향, 표의 항히스톤 70 %·약물 유발 루푸스와 연관 · p.2835 약물 유발 루푸스 정의, 루푸스의 6–12 %, 발열·발진·관절통·근육통·장막염, 항히스톤 흔함·dsDNA 드묾, 신장·뇌 드묾, 중단 수주 뒤 호전, 프로카인아마이드 최대 30 %, 히드랄라진·메틸도파·미노사이클린·이소니아지드·리팜피신·니트로푸란토인·설파살라진·페니토인·카르바마제핀·클로르프로마진·TNF 억제제(인플릭시맙·에타너셉트)·IFN-α 등, 증상 시작 수주~수개월, 균질형 ANA·항히스톤 75 %·가벼운 혈구감소·다른 자가항체 드묾 · p.2836 증상 없는 ANA 양성, 중단 뒤 호전이 진단 확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-15",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "약물 유발 루푸스에서 드문 장기 침범 둘은?",
+    "a": "신장과 뇌."
+   },
+   {
+    "q": "항히스톤 항체만으로 약물 유발 루푸스를 진단하지 않는 이유는?",
+    "a": "전신홍반루푸스 다수에서도 양성이기 때문 — 약 노출·다른 자가항체 음성·중단 뒤 호전을 함께 본다."
+   },
+   {
+    "q": "진단을 굳히는 경과는?",
+    "a": "원인 약을 끊은 뒤 수주 안에 증상이 좋아지는 것."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.drug-induced-lupus.anti-histone#v1",
+    "context": "같은 이소니아지드 복용 남자, 자가항체·보체·신장 단서만 바꾼 변형",
+    "stem": "44세 남자가 4주 전부터 열이 나고 양손 관절이 아프며 숨을 들이쉴 때 오른쪽 가슴이 아프다며 왔다. 잠복결핵으로 4개월 전부터 이소니아지드를 매일 먹고 있다. 양손 손가락 관절이 붓고 누르면 아프며 오른쪽 아래 가슴에서 마찰음이 들린다. 항핵항체 1:1,280(균질형), 항히스톤 항체 양성, 항dsDNA 항체 고역가 양성, C3 52 mg/dL(참고치 90–180), C4 6 mg/dL(참고치 10–40)이다. 소변검사에서 단백 2+, 적혈구 원주가 보인다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "전신홍반루푸스",
+     "약물 유발 루푸스",
+     "결핵성 흉막염",
+     "혼합결합조직병",
+     "류마티스관절염"
+    ],
+    "answer": 1,
+    "explanation": "이소니아지드 복용과 항히스톤 양성은 그대로지만, 항dsDNA 양성·보체 감소·적혈구 원주를 동반한 단백뇨는 약물 유발 루푸스에서 드문 소견이다. 항dsDNA 와 C3·C4 감소는 루푸스신염 경향을 반영하므로 약과 관계없이 전신홍반루푸스로 보고 신장 평가와 치료를 해야 한다. 항히스톤은 전신홍반루푸스 다수에서도 양성이라 이 판단을 바꾸지 못한다.",
+    "of": "kmle-2026-1859",
+    "changed": "항dsDNA·항Sm 음성, C3·C4 정상, 소변 정상 → 항dsDNA 고역가 양성, C3·C4 감소, 단백뇨 2+·적혈구 원주 ⇒ 정답이 약물 유발 루푸스에서 전신홍반루푸스로",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.drug-induced-lupus.anti-histone#v2",
+    "context": "원인 약과 장막염 자리만 바꾼 변형",
+    "stem": "68세 여자가 2주 전부터 미열과 손목·손가락 관절통이 있고, 앞으로 숙이면 덜해지는 가슴 통증이 생겨 왔다. 고혈압으로 1년 전부터 히드랄라진을 먹고 있다. 얼굴 발진·구강 궤양·탈모는 없다. 심낭 마찰음이 들리고 심전도에서 여러 유도에 걸친 ST 분절 상승이 있다. 항핵항체 1:640(균질형), 항히스톤 항체 양성, 항dsDNA·항Sm 항체 음성, C3·C4 정상, 소변검사 정상, 백혈구 4,600/μL 이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "전신홍반루푸스",
+     "약물 유발 루푸스",
+     "바이러스 심낭염",
+     "혼합결합조직병",
+     "류마티스관절염"
+    ],
+    "answer": 2,
+    "explanation": "원인 약(히드랄라진)과 장막염(이번에는 심낭염)의 자리가 바뀌었지만 가르는 단서는 같다 — 원인 약 복용 중 생긴 루푸스 양상에 항히스톤 양성, 항dsDNA·항Sm 음성, 보체·소변 정상. 약물 유발 루푸스는 신장 침범과 다른 자가항체가 드물다. 히드랄라진을 끊고 다른 항고혈압제로 바꾸면 대개 수주 안에 좋아진다.",
+    "of": "kmle-2026-1859",
+    "changed": "45세 남자·이소니아지드·흉막염 → 68세 여자·히드랄라진 1년 복용·심낭염 흉통 ⇒ 원인 약 + 항히스톤 양성 + 항dsDNA·항Sm 음성·보체·소변 정상이라는 결정 단서는 같아 답은 그대로 약물 유발 루푸스",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "약 복용 중 루푸스 양상 — 어느 루푸스인가",
+  "geo": {
+   "title": "약 복용 중 루푸스 양상 — 어느 루푸스인가",
+   "w": 680.0,
+   "h": 641.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "발열·관절염·장막염 +",
+      "항핵항체 양성"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "drug",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "원인 약을 수주~수개월",
+      "먹었나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "sle1",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전신홍반루푸스 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 209.0
+    },
+    {
+     "id": "labs",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "항dsDNA·항Sm·C3/C4·소변·",
+      "혈구"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 209.0
+    },
+    {
+     "id": "quiet",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "항dsDNA·항Sm 음성, 신장·",
+      "보체 정상?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 295.0
+    },
+    {
+     "id": "sle2",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "전신홍반루푸스 쪽 — 약과",
+      "별개로 치료"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 402.0
+    },
+    {
+     "id": "stop",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "원인 약 중단(필요하면 대체",
+      "약)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 402.0
+    },
+    {
+     "id": "better",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "수주 안에 좋아지나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 488.0
+    },
+    {
+     "id": "dil",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "약물 유발 루푸스 확인"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 578.0
+    },
+    {
+     "id": "recheck",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전신홍반루푸스 재평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 578.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "drug",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "drug",
+     "to": "sle1",
+     "points": [
+      [
+       194.3,
+       166.0
+      ],
+      [
+       194.3,
+       195.0
+      ],
+      [
+       114.0,
+       195.0
+      ],
+      [
+       114.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 173.8,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "drug",
+     "to": "labs",
+     "points": [
+      [
+       259.7,
+       166.0
+      ],
+      [
+       259.7,
+       195.0
+      ],
+      [
+       340.0,
+       195.0
+      ],
+      [
+       340.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 250.2,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "labs",
+     "to": "quiet",
+     "points": [
+      [
+       340.0,
+       273.0
+      ],
+      [
+       340.0,
+       295.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "quiet",
+     "to": "sle2",
+     "points": [
+      [
+       307.3,
+       359.0
+      ],
+      [
+       307.3,
+       388.0
+      ],
+      [
+       227.0,
+       388.0
+      ],
+      [
+       227.0,
+       402.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 363.0
+     }
+    },
+    {
+     "from": "quiet",
+     "to": "stop",
+     "points": [
+      [
+       372.7,
+       359.0
+      ],
+      [
+       372.7,
+       388.0
+      ],
+      [
+       453.0,
+       388.0
+      ],
+      [
+       453.0,
+       402.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 363.2,
+      "y": 363.0
+     }
+    },
+    {
+     "from": "stop",
+     "to": "better",
+     "points": [
+      [
+       453.0,
+       466.0
+      ],
+      [
+       453.0,
+       488.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "better",
+     "to": "dil",
+     "points": [
+      [
+       420.3,
+       535.0
+      ],
+      [
+       420.3,
+       564.0
+      ],
+      [
+       340.0,
+       564.0
+      ],
+      [
+       340.0,
+       578.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 539.0
+     }
+    },
+    {
+     "from": "better",
+     "to": "recheck",
+     "points": [
+      [
+       485.7,
+       535.0
+      ],
+      [
+       485.7,
+       564.0
+      ],
+      [
+       566.0,
+       564.0
+      ],
+      [
+       566.0,
+       578.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 539.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "발열·관절염·장막염 + 항핵항체 양성",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "원인 약을 수주~수개월 먹었나?"
+     }
+    ]
+   },
+   {
+    "id": "drug",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "원인 약을 수주~수개월 먹었나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오",
+      "to": 3,
+      "toText": "전신홍반루푸스 평가"
+     },
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "항dsDNA·항Sm·C3/C4·소변·혈구"
+     }
+    ]
+   },
+   {
+    "id": "sle1",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전신홍반루푸스 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "labs",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "항dsDNA·항Sm·C3/C4·소변·혈구",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "항dsDNA·항Sm 음성, 신장·보체 정상?"
+     }
+    ]
+   },
+   {
+    "id": "quiet",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "항dsDNA·항Sm 음성, 신장·보체 정상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오",
+      "to": 6,
+      "toText": "전신홍반루푸스 쪽 — 약과 별개로 치료"
+     },
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "원인 약 중단(필요하면 대체 약)"
+     }
+    ]
+   },
+   {
+    "id": "sle2",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "전신홍반루푸스 쪽 — 약과 별개로 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "stop",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "원인 약 중단(필요하면 대체 약)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "수주 안에 좋아지나?"
+     }
+    ]
+   },
+   {
+    "id": "better",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "수주 안에 좋아지나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "약물 유발 루푸스 확인"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "전신홍반루푸스 재평가"
+     }
+    ]
+   },
+   {
+    "id": "dil",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "약물 유발 루푸스 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "recheck",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전신홍반루푸스 재평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1505",
+   "kmle-2026-1859"
+  ],
+  "hasErrors": false
+ },
  "cn.rheum.familial-mediterranean-fever.daily-colchicine": {
   "id": "cn.rheum.familial-mediterranean-fever.daily-colchicine",
   "title": "가족성 지중해열 — 매일 콜히친이 아밀로이드증을 막는다",
@@ -128017,6 +129593,748 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0393"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid": {
+  "id": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid",
+  "title": "류마티스 다발근통 — 두개 증상 없으면 저용량 스테로이드",
+  "objective": "50세 이상 어깨·엉덩이 통증과 아침 강직, ESR/CRP 상승에 거대세포동맥염 증상이 없는 단독 류마티스 다발근통에서 고용량이 아닌 저용량 프레드니손을 고른다",
+  "objectiveKind": "치료",
+  "condition": "단독 류마티스 다발근통(isolated polymyalgia rheumatica)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "cn.rheum.giant-cell-arteritis.steroids-before-biopsy"
+  ],
+  "version": 1,
+  "updated": "2026-11-15",
+  "reviewStatus": "unreviewed",
+  "hash": "82c72a6ccd2fcf68",
+  "summary": [
+   "결론: 두개 증상이 없는 단독 류마티스 다발근통은 프레드니손 저용량(해리슨 10–20 mg/일)으로 시작한다.",
+   "시험 단서: 50세 이상, 어깨·엉덩이 통증·아침 강직, ESR/CRP 상승, CK·근력 정상(polymyalgia rheumatica).",
+   "왜: 40–60 mg·정맥 펄스는 실명을 막는 거대세포동맥염의 용량 — 두통·턱 파행·시야 이상이 없으면 필요 없다.",
+   "저용량에 빠르게 반응하는 것 자체가 진단의 일부다. 메토트렉세이트는 절감 효과가 작다.",
+   "처음과 매 방문마다 두통·턱 파행·시야 증상을 묻는다 — 10–20 % 가 나중에 거대세포동맥염으로 간다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 저용량 프레드니손이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>용량은 실명 위험이 정한다</strong>: 40–60 mg/일·정맥 펄스는 허혈 시신경병증을 막으려는 거대세포동맥염의 용량이다 <sup>[1 375장 p.2903]</sup>.</li>\n<li><strong>두개 증상을 먼저 묻는다</strong>: 두통·턱 파행·시야 이상·측두동맥 이상이 없으면 단독 류마티스 다발근통이다 <sup>[1 375장 p.2903]</sup>.</li>\n<li><strong>저용량에 빠르게 반응한다</strong>: 10–20 mg/일에 빠른 반응이 오고, 그 반응이 임상 진단의 한 요소다 <sup>[1 375장 p.2903]</sup>.</li>\n<li><strong>절감제는 첫 치료가 아니다</strong>: 메토트렉세이트의 절감 효과는 작다 <sup>[1 375장 p.2903]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 같은 스펙트럼, 다른 위험",
+    "deep": false,
+    "html": "<p>류마티스 다발근통(polymyalgia rheumatica)은 목·어깨·허리·엉덩이·허벅지 근육의 강직·쑤심·통증이 특징이고, 대개 단독으로 오지만 거대세포동맥염(giant cell arteritis) 환자의 40–50 % 에서 함께 있으며 단독 환자의 10–20 % 는 나중에 거대세포동맥염으로 간다 — 그래서 두 병을 한 질환 과정의 다른 스펙트럼으로 본다 <sup>[1 375장 p.2902]</sup>. 류마티스 다발근통의 통증은 근육 자체의 괴사가 아니어서 CK 가 정상이고 근력도 통증을 빼면 정상이다(통증으로 움직임이 제한될 뿐). 차이는 혈관이다 — 거대세포동맥염은 측두동맥 등 두개 동맥의 내강을 좁혀 시신경 허혈로 실명을 일으킬 수 있고, 그 위험 때문에 고용량을 서두른다 <sup>[1 375장 p.2902]</sup>. 혈관 허혈이 없는 단독 류마티스 다발근통에는 그 이유가 없어 염증을 누를 만큼의 저용량으로 충분하다.</p>"
+   },
+   {
+    "title": "가르는 소견 — 무엇이 아닌가",
+    "deep": false,
+    "html": "<ul>\n<li>근염: CK·근력 정상이면 가능성이 낮다.</li>\n<li>류마티스관절염: 류마티스 다발근통에서 RF·항CCP 는 음성이어야 한다. 말초 관절염이 동반될 수 있어, 말초 관절염이 점점 나빠지면 류마티스관절염을 다시 생각한다 <sup>[1 375장 p.2903]</sup>.</li>\n<li>거대세포동맥염: 새 두통·두피 통증·턱과 혀 파행·측두동맥 압통·비후, 시각 증상 <sup>[1 375장 p.2902]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 용량은 두개 증상이 정한다",
+    "deep": false,
+    "html": "<ol>\n<li>프레드니손 저용량으로 시작하고 빠른 호전을 확인한다 <sup>[1 375장 p.2903]</sup>.</li>\n<li><strong>재평가</strong>: 스테로이드만 쓸 때 ESR/CRP 로 감량을 살핀다. 감량 중 대다수가 재발한다 <sup>[1 375장 p.2903]</sup>.</li>\n<li>프레드니손 ≥7.5 mg/일에서 재발하는 스테로이드 저항군에는 사릴루맙을 더할 수 있다. 메토트렉세이트는 효과가 작고, 인플릭시맙은 재발·용량을 줄이지 못했다 <sup>[1 375장 p.2903]</sup>.</li>\n<li>매 방문 두개 증상을 다시 묻는다 — 생기면 거대세포동맥염 용량으로 바꾼다 <sup>[1 375장 p.2902]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>저용량에 반응하지 않으면 진단을 다시 본다(빠른 반응이 진단 요소이므로) <sup>[1 375장 p.2903]</sup>.</li>\n<li>장기 스테로이드에 따른 골 건강·혈당 관리는 함께 하지만 이 정리본에서 세부를 대조하지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 저용량의 범위</strong> — 시험 기준: 고용량(40–60 mg·펄스)이 아닌 저용량 <sup>[1 375장 p.2903]</sup> / 다른 기준: 해리슨은 10–20 mg/일, EULAR/ACR 2015 권고는 12.5–25 mg/일로 적는다(원문 미대조) <sup>[2†]</sup> / 왜 다른가: 권고가 시작 범위를 위로 넓혔다 / 시험에서는: KMLE · USMLE 모두 15 mg 전후의 저용량이 정답, 1 mg/kg·정맥 펄스는 거대세포동맥염 소견이 있을 때만.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "근위부 통증 + 염증 수치 — 어떤 용량이 누구의 것인가",
+    "columns": [
+     "선택",
+     "누구의 용량인가",
+     "단독 류마티스 다발근통에서"
+    ],
+    "rows": [
+     [
+      "프레드니손 저용량",
+      "단독 류마티스 다발근통 10–20 mg/일 <sup>[1 375장 p.2903]</sup>",
+      "첫 치료"
+     ],
+     [
+      "프레드니손 40–60 mg/일(≈1 mg/kg)",
+      "거대세포동맥염 <sup>[1 375장 p.2903]</sup>",
+      "아니오 — 두개 증상이 생기면"
+     ],
+     [
+      "메틸프레드니솔론 1,000 mg/일 정맥 3일",
+      "눈 증상이 있는 거대세포동맥염 <sup>[1 375장 p.2903]</sup>",
+      "아니오"
+     ],
+     [
+      "메토트렉세이트",
+      "절감 효과가 작다(평균 1 mg) <sup>[1 375장 p.2903]</sup>",
+      "단독 첫 치료 아님"
+     ],
+     [
+      "사릴루맙",
+      "감량 중 재발·스테로이드 저항 <sup>[1 375장 p.2903]</sup>",
+      "첫 치료 아님"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "거대세포동맥염 용량 vs 류마티스 다발근통 용량 — 「같은 병의 스펙트럼이니 넉넉하게」",
+    "point": "두 병은 한 질환 스펙트럼이지만 용량은 실명 위험이 정한다. 40–60 mg·정맥 펄스는 허혈 시신경병증을 막으려는 거대세포동맥염의 용량이고 <sup>[1 375장 p.2903]</sup>, 두통·턱 파행·시야 이상·측두동맥 이상이 없는 단독 류마티스 다발근통은 10–20 mg/일에 빠르게 반응한다 <sup>[1 375장 p.2903]</sup>. 높은 용량은 이득 없이 장기 스테로이드 부작용만 늘린다.",
+    "exception": "새 두통·턱 파행·시야 증상·측두동맥 압통이 있거나 생기면 거대세포동맥염 용량으로 바꾼다 <sup>[1 375장 p.2902]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "염증 수치가 매우 높다 = 고용량?",
+    "point": "ESR/CRP 높이는 용량을 정하지 않는다 — 진단을 받치고 감량을 살피는 지표다 <sup>[1 375장 p.2903]</sup>. 용량을 가르는 것은 두개 허혈 증상의 유무다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "메토트렉세이트로 시작하면 스테로이드를 피한다?",
+    "point": "메토트렉세이트는 프레드니손을 평균 1 mg 만 줄였고 스테로이드 부작용을 줄이지 못했다 <sup>[1 375장 p.2903]</sup>. 첫 치료는 저용량 스테로이드다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "저용량은 해리슨 10–20 mg/일, EULAR/ACR 2015 권고는 12.5–25 mg/일로 적는다(원문 미대조) <sup>[2†]</sup> — 시험 쟁점 Z1.",
+   "감량 중 대다수가 재발한다. 프레드니손 ≥7.5 mg/일에서 재발하는 스테로이드 저항군에는 사릴루맙(IL-6 수용체 항체)을 더할 수 있다 <sup>[1 375장 p.2903]</sup>.",
+   "류마티스 다발근통의 10–20 % 가 나중에 거대세포동맥염으로 가므로 매 방문 두개 증상을 다시 묻는다 <sup>[1 375장 p.2902]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "pmr-dx",
+    "name": "단독 류마티스 다발근통의 임상 진단",
+    "kind": "진단 기준",
+    "population": "50세 이상 근위부 통증",
+    "statement": "엉덩이·어깨 띠 근육의 강직·쑤심·통증, ESR 또는 CRP 상승, 거대세포동맥염을 시사하는 임상 소견이 없음, 저용량 프레드니손에 빠른 반응으로 임상 진단한다. 류마티스 인자·항CCP 는 음성이어야 한다 [[harrison-22: 375장 p.2903]]",
+    "exceptions": "류마티스관절염을 닮은 말초 관절염이 동반될 수 있다 — 말초 관절염이 나빠지면 류마티스관절염 가능성을 다시 본다 [[harrison-22: 375장 p.2903]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pmr-dose",
+    "name": "시작 용량",
+    "kind": "치료 기준",
+    "population": "단독 류마티스 다발근통",
+    "statement": "프레드니손 10–20 mg/일에 빠르게 반응한다. 스테로이드만 쓸 때는 ESR/CRP 로 감량을 살핀다 [[harrison-22: 375장 p.2903]]",
+    "exceptions": "거대세포동맥염 소견이 함께 있으면 프레드니손 40–60 mg/일, 눈 증상이면 메틸프레드니솔론 1,000 mg/일 3일 고려 [[harrison-22: 375장 p.2903]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 375: The Vasculitis Syndromes",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 375장 p.2902–2903",
+    "checked": "드라이브 22판 장별 문서 H22_375 본문 대조 — p.2902 거대세포동맥염·류마티스 다발근통 정의(목·어깨·허리·엉덩이·허벅지 근육 강직·쑤심·통증), 대개 단독, 거대세포동맥염의 40–50 % 동반, 단독 류마티스 다발근통의 10–20 % 가 나중에 거대세포동맥염, 매 방문 병력·진찰, 50세 초과 · 임상(두통·측두동맥·턱 파행, 허혈 시신경병증 실명은 대개 머리·눈 증상 뒤), 생검·치료 지연 금지 · p.2903 단독 류마티스 다발근통 임상 진단(엉덩이·어깨 띠 증상, ESR/CRP 상승, 거대세포동맥염 소견 없음, 저용량 프레드니손 빠른 반응), RF·항CCP 음성, 말초 관절염 · 거대세포동맥염 프레드니손 40–60 mg/일 ~1개월, 눈 증상 메틸프레드니솔론 1,000 mg/일 3일, ≥2년 · 류마티스 다발근통 프레드니손 10–20 mg/일, ESR/CRP 로 감량 감시, 감량 중 대다수 재발, 사릴루맙(프레드니손 ≥7.5 mg/일에서 재발한 스테로이드 저항군), 메토트렉세이트는 프레드니손을 평균 1 mg 만 줄이고 부작용을 줄이지 못함, 인플릭시맙 무효",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-15",
+    "url": ""
+   },
+   {
+    "id": "eular-acr-pmr-2015",
+    "org": "EULAR / ACR",
+    "title": "2015 Recommendations for the management of polymyalgia rheumatica: a European League Against Rheumatism/American College of Rheumatology collaborative initiative",
+    "kind": "guideline",
+    "citation": "Dejaco C, et al. Ann Rheum Dis 2015;74:1799–1807",
+    "checked": "서지만 — 문항 해설의 출처를 옮겼다. 이 컨테이너는 PubMed·doi 를 막아 원문(시작 용량 12.5–25 mg/일 문구)을 대조하지 못했다. DOI 는 기억으로 적었다(확인 못 함) — 학습서 워크플로가 DOI 로 PMID 를 찾는다",
+    "doi": "10.1136/annrheumdis-2015-207492",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2015",
+    "checkedAt": "2026-11-15",
+    "url": "https://doi.org/10.1136/annrheumdis-2015-207492"
+   }
+  ],
+  "checks": [
+   {
+    "q": "단독 류마티스 다발근통의 시작 용량(해리슨)은?",
+    "a": "프레드니손 10–20 mg/일."
+   },
+   {
+    "q": "40–60 mg/일로 바꾸는 단서는?",
+    "a": "두통·턱 파행·시야 이상·측두동맥 이상 같은 거대세포동맥염 소견."
+   },
+   {
+    "q": "메토트렉세이트의 위치는?",
+    "a": "절감 효과가 작아(평균 1 mg) 단독 첫 치료가 아니다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid#v1",
+    "context": "같은 70대 여자의 근위부 통증에 두개 증상을 더한 변형",
+    "stem": "72세 여자가 6주 전부터 양쪽 어깨와 엉덩이가 아프고 아침마다 1시간 넘게 뻣뻣하다며 왔다. 2주 전부터 오른쪽 관자놀이가 새로 아프고 질긴 음식을 씹으면 턱이 아파 쉬어야 한다. 시야 이상은 없다. 오른쪽 측두동맥이 굵게 만져지고 박동이 약하다. 근력은 정상이다. 적혈구침강속도 84 mm/h, CRP 6.1 mg/dL, CK 정상, 류마티스 인자·항CCP 항체 음성이다. 가장 적절한 치료는?",
+    "options": [
+     "메틸프레드니솔론 1 g/일 정맥 3일",
+     "프레드니솔론 1 mg/kg/일 경구",
+     "프레드니솔론 15 mg/일 경구",
+     "메토트렉세이트 주 1회 경구",
+     "나프록센 하루 두 번 경구"
+    ],
+    "answer": 2,
+    "explanation": "근위부 통증은 그대로지만 새 관자놀이 두통·턱 파행·측두동맥 이상이 더해져 거대세포동맥염이 함께 있다. 이때 용량은 실명을 막기 위한 프레드니손 40–60 mg/일(약 1 mg/kg)이고 생검을 기다리지 않는다. 눈 증상이 없으므로 정맥 펄스까지는 필요하지 않다 — 시야 이상이 생기면 메틸프레드니솔론 1,000 mg/일 3일을 고려한다.",
+    "of": "kmle-2026-1858",
+    "changed": "두통·턱 파행·시야 이상 없음, 측두동맥 정상 → 2주 전부터 새 관자놀이 두통·씹을 때 턱 통증, 오른쪽 측두동맥 굵고 박동 약함(시야는 정상) ⇒ 정답이 프레드니손 저용량에서 프레드니손 40–60 mg/일(1 mg/kg)로",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid#v2",
+    "context": "나이·성별·일상 불편만 바꾼 변형",
+    "stem": "66세 남자가 2개월 전부터 목과 양쪽 어깨, 엉덩이가 아프고 아침마다 1시간 넘게 뻣뻣해 셔츠를 입거나 차에서 내리기 힘들다며 왔다. 두통·씹을 때 턱 통증·시야 이상·두피 압통은 없고 양쪽 측두동맥은 정상이다. 손·무릎 관절은 붓지 않았다. 통증으로 팔을 들기 어렵지만 저항에 대한 근력은 정상이다. 적혈구침강속도 55 mm/h, CRP 2.8 mg/dL, CK 정상, 류마티스 인자·항CCP 항체 음성, 갑상선 기능 정상이다. 가장 적절한 치료는?",
+    "options": [
+     "메틸프레드니솔론 1 g/일 정맥 3일",
+     "프레드니솔론 1 mg/kg/일 경구",
+     "프레드니솔론 15 mg/일 경구",
+     "메토트렉세이트 주 1회 경구",
+     "나프록센 하루 두 번 경구"
+    ],
+    "answer": 3,
+    "explanation": "나이·성별·불편한 동작이 바뀌었지만 가르는 단서는 같다 — 50세 이상 근위부 통증·아침 강직·염증 수치 상승, CK·근력 정상, RF·항CCP 음성, 그리고 두개 증상 없음. 단독 류마티스 다발근통이므로 저용량 프레드니손으로 시작하고 며칠 안의 뚜렷한 호전으로 진단을 확인한다. 고용량은 거대세포동맥염 소견이 있을 때의 용량이다.",
+    "of": "kmle-2026-1858",
+    "changed": "71세 여자·머리 빗기 어려움 → 66세 남자·차에서 내리기·셔츠 입기 어려움, 목 강직도 동반, 말초 관절 부종 없음 ⇒ 두개 증상 없음·CK 정상·RF·항CCP 음성이라는 결정 단서는 같아 답은 그대로 저용량",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "50세 이상 어깨·엉덩이 통증 — 용량 정하기",
+  "geo": {
+   "title": "50세 이상 어깨·엉덩이 통증 — 용량 정하기",
+   "w": 680.0,
+   "h": 624.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "50세 이상 어깨·엉덩이 통증·",
+      "아침 강직"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "ESR/CRP·CK·RF·항CCP·",
+      "갑상선"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "mimic",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "근염·류마티스관절염 소견?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 188.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "그 질환으로 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 278.0
+    },
+    {
+     "id": "cranial",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "두통·턱 파행·시야 이상?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 278.0
+    },
+    {
+     "id": "gca",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "거대세포동맥염 —",
+      "프레드니손 40–60 mg/일"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 368.0
+    },
+    {
+     "id": "low",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "프레드니손 저용량 시작"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 368.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "며칠 안에 뚜렷이 좋아지나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 454.0
+    },
+    {
+     "id": "taper",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "류마티스 다발근통 — 천천히",
+      "감량"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 544.0
+    },
+    {
+     "id": "rethink",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "진단 재검토"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 544.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "mimic",
+     "points": [
+      [
+       227.0,
+       166.0
+      ],
+      [
+       227.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "mimic",
+     "to": "other",
+     "points": [
+      [
+       194.3,
+       235.0
+      ],
+      [
+       194.3,
+       264.0
+      ],
+      [
+       114.0,
+       264.0
+      ],
+      [
+       114.0,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "mimic",
+     "to": "cranial",
+     "points": [
+      [
+       259.7,
+       235.0
+      ],
+      [
+       259.7,
+       264.0
+      ],
+      [
+       340.0,
+       264.0
+      ],
+      [
+       340.0,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "cranial",
+     "to": "gca",
+     "points": [
+      [
+       307.3,
+       325.0
+      ],
+      [
+       307.3,
+       354.0
+      ],
+      [
+       227.0,
+       354.0
+      ],
+      [
+       227.0,
+       368.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "cranial",
+     "to": "low",
+     "points": [
+      [
+       372.7,
+       325.0
+      ],
+      [
+       372.7,
+       354.0
+      ],
+      [
+       453.0,
+       354.0
+      ],
+      [
+       453.0,
+       368.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "low",
+     "to": "resp",
+     "points": [
+      [
+       453.0,
+       415.0
+      ],
+      [
+       453.0,
+       454.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "taper",
+     "points": [
+      [
+       420.3,
+       501.0
+      ],
+      [
+       420.3,
+       530.0
+      ],
+      [
+       340.0,
+       530.0
+      ],
+      [
+       340.0,
+       544.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 505.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "rethink",
+     "points": [
+      [
+       485.7,
+       501.0
+      ],
+      [
+       485.7,
+       530.0
+      ],
+      [
+       566.0,
+       530.0
+      ],
+      [
+       566.0,
+       544.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 505.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "50세 이상 어깨·엉덩이 통증·아침 강직",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "ESR/CRP·CK·RF·항CCP·갑상선"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "ESR/CRP·CK·RF·항CCP·갑상선",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "근염·류마티스관절염 소견?"
+     }
+    ]
+   },
+   {
+    "id": "mimic",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "근염·류마티스관절염 소견?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "그 질환으로 평가"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "두통·턱 파행·시야 이상?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "그 질환으로 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cranial",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "두통·턱 파행·시야 이상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "거대세포동맥염 — 프레드니손 40–60 mg/일"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "프레드니손 저용량 시작"
+     }
+    ]
+   },
+   {
+    "id": "gca",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "거대세포동맥염 — 프레드니손 40–60 mg/일",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "low",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "프레드니손 저용량 시작",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "며칠 안에 뚜렷이 좋아지나?"
+     }
+    ]
+   },
+   {
+    "id": "resp",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "며칠 안에 뚜렷이 좋아지나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "류마티스 다발근통 — 천천히 감량"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "진단 재검토"
+     }
+    ]
+   },
+   {
+    "id": "taper",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "류마티스 다발근통 — 천천히 감량",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "rethink",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "진단 재검토",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1376",
+   "kmle-2026-1600",
+   "kmle-2026-1858"
   ],
   "hasErrors": false
  },
