@@ -53,4 +53,4 @@ jobs:
       - name: Tests (어느 워크플로에도 없던 것 — 출제 설계 · 상태)
         env:
           PYTHONIOENCODING: utf-8
-        run: python pipelines/test_question_design.py && python pipelines/test_state.py
+        run: python pipelines/test_question_design.py && python pipelines/test_state.py && python pipelines/test_ink.py

@@ -1196,6 +1196,8 @@ function renderWrongbook() {
       renderWrongbook();
     };
   });
+  // 오답마다 「✍ 필기」 — 펜슬로 쓰는 필기장(ink.js). 없으면(옛 캐시) 단추만 안 보인다.
+  if (typeof MEDKOS_INK === "object" && MEDKOS_INK.decorate) MEDKOS_INK.decorate(list);
 }
 
 /* ---------- 내보내기 ---------- */
@@ -1410,7 +1412,7 @@ function applyQueryParams() {
   if (e && DECKS[e]) setSel([e]);
   const m = p.get("mode");
   if (m && [...$("mode").options].some((o) => o.value === m)) $("mode").value = m;
-  return { start: p.get("start") === "1", q: p.get("q") || "", concept: p.get("concept") || "" };
+  return { start: p.get("start") === "1", q: p.get("q") || "", concept: p.get("concept") || "", view: p.get("view") || "" };
 }
 
 /* ---------- 초기화 ---------- */
@@ -1504,6 +1506,7 @@ function init() {
   }).catch(() => {});
   if (qp.q) openSingleQuestion(qp.q);
   else if (qp.concept) renderReview(qp.concept);
+  else if (qp.view === "wrong") renderWrongbook();      // 홈 화면 바로가기 「오답노트 필기」
   else if (qp.start) startQuiz();
 }
 

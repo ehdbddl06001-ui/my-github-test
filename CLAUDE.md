@@ -144,6 +144,14 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   `docs/synckey.js` 가 키를 저장하고 주소에서 지운다. 앱은 켜질 때 `functions/api/status.js` 로 키 상태만 묻고(키 값은
   돌려주지 않음) 없거나 틀리면 첫 화면에 경고를 띄운다. 동기화는 연 덱만이 아니라 기록이 있는 모든 시험을 보낸다.
   회귀: `python pipelines/test_sync_key.py`.
+- **오답노트 필기(2026-11-15)** — 오답노트의 오답마다 「✍ 필기」(`docs/ink.js`): 위에 문항 · 내 답 · 정답 · 해설(접힘), 아래 줄 여백,
+  그 위에 펜슬로 쓴다(펜 = 쓰기 · 손가락 = 넘기기). 획은 벡터로 기기 안(IndexedDB)에 바로 저장하고, 동기화 키가 있으면
+  `functions/api/ink.js` 로 올린다 — **저장소가 공개라서 동기화 키로 잠근 암호문만** 나간다(AES-GCM). 서버는 열지 못하므로
+  합치기는 기기가 한다(획 id 합집합 · 지운 획은 묘비 · sha 가 낡으면 409 → 다시 받아 합쳐 재시도).
+  저장 위치는 main 이 아니라 **가지 `ink-data`** 의 `state/ink_sync/<exam>/<id>.json`(첫 저장 때 부모 없는 커밋으로 생긴다 ·
+  커밋 글머리 `[CF-Pages-Skip]` = Pages 빌드 생략). **이 가지를 main 에 병합하지 않고, 루틴 · 파이프라인은 읽지 않는다**(열 수 없다).
+  동기화 키를 바꾸면 옛 필기는 옛 키로만 열린다. 종이 폭은 820 고정(기기마다 같은 자리) — 종이 안 모양을 화면 폭에 따라
+  바꾸는 CSS 를 넣지 않는다(`.ink-sheet` 재정의 참고). 회귀: `python pipelines/test_ink.py`.
 
 ## 오답 뒤 학습 흐름 · 과별 PDF 학습서 (2026-09-18~)
 - 앱: `docs/learn.js` 가 채점 뒤에만 오답 확인·보기 비교·정리본·판단 도식(createElementNS — innerHTML 없음)·
