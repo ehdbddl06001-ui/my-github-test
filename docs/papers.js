@@ -2,6 +2,135 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0943",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Effects of Cooking With Liquefied Petroleum Gas or Biomass on Lung Function Among Pre-School Aged Children in Peru: A Prospective Follow-Up of a Randomized Trial",
+  "authors": [
+   "Nicolaou Laura",
+   "Checkley William",
+   "Rha Jennifer",
+   "McCollum Eric D"
+  ],
+  "journal": "Pediatric pulmonology",
+  "doi": "10.1002/ppul.71901",
+  "pmid": "43033191",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43033191/",
+  "pubdate": "2026-11",
+  "date": "2026-11-15",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**INTRODUCTION:** Billions worldwide are exposed to household air pollution (HAP) from solid fuel use, increasing risk of lung function impairment and chronic respiratory disease. Understanding HAP effects on early life lung function may identify critical windows for intervention.\n\n**METHODS:** We performed respiratory oscillometry in 3-5-year-olds whose mothers participated in a randomized trial of LPG versus usual solid fuel use during pregnancy and infancy. We assessed resistance (R7) and reactance (X7) at 7 Hertz, frequency dependence of resistance (R7-19), resonance frequency (fres) and area above the reactance curve from 7 Hertz (AX7). We computed z-scores for R7, X7, fres, and AX7 from pediatric reference equations. Rigorous quality control was applied. Exposure-response analyses examined the association between R7 or AX7 z-scores and prenatal or postnatal PM2.5 or CO exposures.\n\n**RESULTS:** We tested 101 children (mean [±SD] age 4.4 ± 0.6 years, 51.5% male, 50.5% intervention). Mean R7, X7, fres and AX7 z-scores were similar between intervention and control groups: -0.1 ± 1.0 vs -0.2 ± 1.2, -0.8 ± 1.0 vs -1.0 ± 1.1, 0.9 ± 1.1 vs 0.4 ± 1.1, and 1.2 ± 1.0 vs 1.3 ± 1.3, respectively. Intention-to-treat analysis showed no differences between arms in pre-bronchodilator lung function or bronchodilator response, except for a larger post-bronchodilator decrease in mean fres z-score in the intervention arm (-0.36, 95% CI -0.71 to -0.02). Postnatal CO exposure was associated with higher AX7 z-scores, indicating worse reactance (0.041 per 1 ppm CO increase, 95% CI 0.003 to 0.078). No associations were found for PM2.5 exposure.\n\n**CONCLUSION:** Early-life LPG use did not improve oscillometric lung function compared with those exposed to biomass smoke. An exploratory association between postnatal CO exposure and impaired lung reactance warrants confirmation in larger cohorts.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0942",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Childhood insulinoma after years of recurrent hypoglycemia: the role of GLP-1 receptor imaging",
+  "authors": [
+   "Singh Parminder",
+   "Gupta Divya",
+   "Asima Bushra",
+   "Shukla Rajat",
+   "Kaur Hempreet"
+  ],
+  "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+  "doi": "10.1515/jpem-2026-0696",
+  "pmid": "43034894",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43034894/",
+  "pubdate": "2026-11-16",
+  "date": "2026-11-15",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVES:** To highlight the diagnostic challenges of childhood insulinoma and the complementary role of GLP-1 receptor-targeted imaging in localizing a small pancreatic lesion.\n\n**CASE PRESENTATION:** A 12-year-old boy had a history of recurrent episodes suggestive of hypoglycemia reportedly beginning at approximately 4 years of age, with reported glucose concentrations as low as 15-20 mg/dL and associated night sweats. Diagnostic evaluation was fragmented over several years due to frequent family relocations. During a critical sample, plasma glucose was 37 mg/dL, with insulin 105.2 µIU/mL and C-peptide 5.48 ng/mL, supporting endogenous hyperinsulinemic hypoglycemia. MRI demonstrated a small lesion in the pancreatic body. 68Ga-Exendin-4 PET/CT demonstrated focal GLP-1 receptor-targeted uptake corresponding to the pancreatic lesion, with a delayed SUVmax of 9.1. The patient underwent open surgical enucleation. Histopathology demonstrated a 1.7-cm well-differentiated pancreatic neuroendocrine tumor, WHO Grade 1, with a Ki-67 index of 1 %, negative margins, and no necrosis, lymphovascular, or perineural invasion. Postoperatively, glucose concentrations remained normal.\n\n**CONCLUSIONS:** Persistent or unexplained hypoglycemia in children warrants consideration of insulinoma when endogenous hyperinsulinemic hypoglycemia is demonstrated. In this case, GLP-1 receptor-targeted imaging provided complementary functional localization alongside MRI and supported focused curative surgery.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0941",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Australian Meningococcal Surveillance Programme Annual Report, 2025",
+  "authors": [
+   "Lahra Monica",
+   "Hogan Tiffany"
+  ],
+  "journal": "Communicable diseases intelligence (2018)",
+  "doi": "10.33321/cdi.2026.50.063",
+  "pmid": "43035020",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43035020/",
+  "pubdate": "2026-11-16",
+  "date": "2026-11-15",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "In Australia, both probable and laboratory-confirmed cases of invasive meningococcal disease (IMD) are reported to the National Notifiable Diseases Surveillance System (NNDSS). When compared to 2024, the number of IMD notifications in 2025 decreased by 13% to 118. IMD was confirmed by laboratory testing in 115/118 (97%) of 2025 IMD cases, with 66% (76/115) diagnosed by bacterial culture and 34% (39/115) by nucleic acid amplification testing. The genogroup was determined for 93% of laboratory-confirmed cases (107/115): genogroup B (MenB) accounted for 82.2% of infections (88/107); MenW and MenY for 7.5% of disease (8/107) each; MenC for 1.9% (2/107); and MenA for 0.9% (1/107). Finetyping was available for 67% of the cases for which the genogroup was determined (72/107). In MenB isolates, 28 porA types were detected: the most prevalent from amongst these were P1.7-2,4 (21%; 12/58) and P1.7,16-26 (14%; 8/58). Of the eight MenW isolates in 2025, six were finetyped and identified as porA type P1.5,2, MLST (ST) 11 and belonging to the clonal complex 11, the hypervirulent strain reported in outbreaks in Australia and overseas. In MenY infections, four porA types were detected from the five isolates finetyped: P1.21,16; P1.5,10-1; P1.5-1,10-1; and P1.5-2,10-1, with no dominant porA type detected. One of the two MenC isolates was typed, identifying as P1.5-2,10-1 and the single MenA isolate identified as P1.5-2,10. Peaks of IMD occurred in children aged less than 5 years, in those aged 15-24 years, and in adults aged 25-44 years, accounting for 18% (21/115), 23% (26/115) and 22% (25/115) of laboratory-confirmed cases, respectively. In children aged under 5 years, 100% of IMD (21/21) was MenB; in those aged 15-24 years, 100% of IMD (25/25) was MenB; and in those aged 25-44 years, 82% of IMD (18/22) was MenB, with three MenW cases and one MenC case reported in this age group. IMD was reported in all age groups: < 5 years (18%; 21/115); 5-9 years (5%; 6/115); 10-14 years (2.6%; 3/115); 15-24 years (23%; 26/115); 25-44 years (22%; 25/115); 45-64 years (12%; 14/115); and in those aged 65 years and older (17%; 20/115). Whilst MenB predominated in all age groups, the majority of MenY IMD cases (6/8) were reported in adults aged 65 years and older, among whom it accounted for 6/18 cases (33%). All cultured IMD isolates available for antimicrobial susceptibility testing (n = 76) were tested for ceftriaxone and penicillin. Minimum inhibitory concentration (MIC) values were reported using Clinical Laboratory Standards Institute (CLSI) interpretative criteria: 8% (6/76) were defined as penicillin resistant (MIC value ≥ 0.5mg/L); 64% (49/76) had intermediate susceptibility to penicillin (MIC values 0.125 and 0.25 mg/L); and 28% (21/76) were susceptible to penicillin (MIC values ≤ 0.064 mg/L). All isolates tested were susceptible to ceftriaxone, ciprofloxacin and rifampicin.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0940",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Centrality of the periphery: Small muscle mass to bypass O2 transport limitations and maximize the benefits of exercise training in heart failure",
+  "authors": [
+   "Iannetta Danilo",
+   "Laginestra Fabio Giuseppe",
+   "Broxterman Ryan M",
+   "Simonelli Carla",
+   "Amann Markus",
+   "Paneroni Mara"
+  ],
+  "journal": "Experimental physiology",
+  "doi": "10.1113/EP093476",
+  "pmid": "43035010",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43035010/",
+  "pubdate": "2026-11-15",
+  "date": "2026-11-15",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Heart failure (HF) is a complex, systemic cardiovascular condition characterized by a severe impairment in O2 transport to skeletal muscle that drives exercise intolerance and reduces quality of life. Although exercise training (ET) is a cornerstone of HF clinical management, patients often exhibit limited improvements in peak oxygen uptake (  V ̇ O 2 peak   ) following traditional whole-body, aerobic exercise recruiting a large muscle mass (e.g., cycling). In patients with HF, adaptations within skeletal muscle (e.g., capillarization) exert a proportionally greater influence on changes in  V ̇ O 2 peak   than adaptations in cardiac performance. In this review, we discuss the mechanisms by which traditional ET prescription may be suboptimal to elicit peripheral adaptations and argue that dynamic exercise recruiting only a small muscle mass (e.g., quadriceps) may be more effective in achieving this goal. Indeed, small muscle mass exercise reduces the cardiovascular restraints imposed by the failing heart, allowing the muscle to reach much greater metabolic rates and to be exposed to much larger degrees of homeostatic perturbations, a key factor triggering adaptations in O2 transport and utilization at the peripheral level. The intent of this review is to discuss the influence of muscle mass on exercise tolerance and adaptations to ET in HF, with the ultimate goal of promoting the integration of small muscle mass exercise into contemporary cardiac rehabilitation programmes.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0939",
   "topic": "Pediatrics",
   "subtopic": "",
