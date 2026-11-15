@@ -257,29 +257,46 @@ class Wiring(unittest.TestCase):
         self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept", "meta"])', fn)
         self.assertIn('replace(/#/g, "--")', ink)                       # 변형 문항 id 의 # 은 파일 이름에 못 쓴다
 
-    def test_study_book_keeps_the_original_and_my_copy_apart(self):
-        # 4판(2026-11-15) — 학습서 필기. 원본 = 매일 고쳐지는 정리본, 내 필기본 = 처음 쓴 날의 판 + 필기. 원본 갱신은 알리기만 하고
-        # 필기본의 글을 바꾸지 않는다(옮기기는 사용자가 누를 때만).
+    def test_study_book_writes_on_the_latest_note_and_tells_what_changed(self):
+        # 학습서 필기(2026-11-15 2차 「항상 최신판 위에 필기」) — 종이는 늘 최신 정리본, 필기는 그 위에 남는다. 「내 필기본」 구분은 없다.
+        # 필기할 때의 판은 조용히 떠 두었다가 정리본이 고쳐지면 바뀐 곳을 알리고 「전에 쓴 판 보기」(읽기만)로 다시 볼 수 있게 한다.
         ink = (DOCS / "ink.js").read_text(encoding="utf-8")
         learn = (DOCS / "learn.js").read_text(encoding="utf-8")
         css = (DOCS / "style.css").read_text(encoding="utf-8")
         self.assertIn("const c = over || concept(cid);", learn)
-        self.assertIn("const use = st.orig ? st.live : (n ? n.c : st.live);", ink)
+        self.assertIn("const use = st.old ? n.c : (st.live || (n && n.c));", ink)      # 기본은 최신판 · 목록에서 빠지면 떠 둔 판
         self.assertIn("L.renderConcept(box, st.id, null, null, use)", ink)
-        self.assertIn("if (ensureSnap()) paintNote();", ink)                          # 첫 획에 사본을 뜬다
-        self.assertEqual(ink.count("rec.doc.n = snapOf(st.live)"), 2)                # 사본이 바뀌는 곳은 둘뿐 — 처음 뜰 때 · 옮기기
-        self.assertIn('data-note-act="orig"', ink)
-        self.assertIn('data-note-act="rebase"', ink)
-        self.assertIn('if (!confirm("필기본을 원본의 새 판으로 옮깁니다.', ink)        # 옮기기는 물어본 뒤에만
-        self.assertIn('UI.el.classList.toggle("orig", st.kind === "concept" && !!st.orig);', ink)
-        self.assertIn(".ink-ov.orig .ink-layer, .ink-ov.orig .ink-live{visibility:hidden}", css)   # 원본 보기 = 읽기만
+        self.assertEqual(ink.count("rec.doc.n = snapOf(st.live)"), 2)                # 판을 뜨는 곳은 둘뿐 — 첫 필기 · 「확인」
+        self.assertIn('data-note-act="ack"', ink)
+        self.assertIn('data-note-act="old"', ink)
+        self.assertNotIn("✍ 내 필기본", ink)                                             # 구분을 없앴다
+        self.assertIn('UI.el.classList.toggle("old", st.kind === "concept" && !!st.old);', ink)
+        self.assertIn(".ink-ov.old .ink-layer{pointer-events:none}", css)             # 전에 쓴 판 = 읽기만
         self.assertIn('b.id = "inkShelfBtn"', ink)
+        self.assertIn('document.getElementById("navInk")', ink)                       # 「필기 모음」은 메뉴 줄 맨 위에
+        for page in ("index.html", "papers.html", "search.html", "whatsnew.html", "ailab.html", "atlas3d.html"):
+            self.assertIn('<a href="index.html?view=ink" id="navInk">✍ 필기 모음</a>', (DOCS / page).read_text(encoding="utf-8"), page)
         try:
             import yaml
         except ImportError:
             self.skipTest("pyyaml 없음")
         books = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))["books"]
         self.assertEqual(json.loads(re.search(r"const BOOKS = (\{.*?\});", ink).group(1)), books)   # 과목 → 책 이름은 PDF 학습서와 같게
+
+    def test_paper_stays_sharp_and_fits_one_page(self):
+        # 5판(2026-11-15) — 「PDF 를 필기 앱으로 연 것만큼 선명하게 · 한 내용이 한 쪽에 · 확대 축소」.
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        css = (DOCS / "style.css").read_text(encoding="utf-8")
+        # 필기 캔버스는 transform 을 건 종이의 **밖**(형제)에 둔다 — 안에 두면 Safari 가 종이를 저해상도 그림으로 굳혀 늘린다
+        self.assertIn('<div class="ink-sheet"><div class="ink-content"></div></div><div class="ink-layer"></div>', ink)
+        self.assertIn(".ink-sheet .deep-body table, .ink-sheet .cn-body table{display:table !important; overflow:visible !important}", css)
+        self.assertIn("c.width = c.height = Math.max(1, Math.round(TPX * UI.q / s));", ink)   # 조각 화소 = 화면 px × 기기 배율(확대와 무관)
+        self.assertIn("UI.q = UI.s * (window.devicePixelRatio || 1);", ink)                    # 선명도 상한 없음
+        self.assertIn("function zoomTo(z, lx, ly, cx, cy)", ink)
+        self.assertIn('sc.addEventListener("touchmove"', ink)                                  # 두 손가락 확대 · 축소
+        self.assertIn(".ink-content.cols .ink-cn .concept{column-count:2; column-gap:56px}", css)   # 둘째 단의 덩이가 정확히 820 오른쪽
+        self.assertIn("break-inside:avoid", css)                                               # 덩이는 단 사이에서 쪼개지지 않는다
+        self.assertIn("const WIDTHS = [0.5, 0.8, 1.2, 1.8, 2.6, 4.0];", ink)
 
     def test_pen_feel_and_layout_stay_wired(self):
         # 3판(2026-11-15) — 써 본 뒤의 요청: 획 부드럽게 · 색 여러 개 · 직선 · 문항이 한 화면에 · 필기장에서 키 넣기
@@ -289,7 +306,7 @@ class Wiring(unittest.TestCase):
         self.assertIn("function widthsOf(pts, w)", ink)
         self.assertEqual(len(re.search(r'const COLORS = \[(.*?)\];', ink).group(1).split(',')), 12)
         self.assertIn("function holdToLine(a)", ink)                 # 긋다가 멈추면 직선
-        self.assertIn("x: b.classList.contains(\"ink-block\") ? (r.left - c0.left) / UI.s : 0", ink)   # 획은 덩이 왼쪽 위 기준
+        self.assertIn("x: blk ? left : Math.max(0, Math.round((r.left - a0) / UI.s))", ink)   # 획은 덩이 왼쪽 위 기준(정리본 절은 단의 왼쪽 끝)
         self.assertIn(".ink-content.side{display:grid; grid-template-columns:820px 820px;", css)
         self.assertIn("async function loginTry(id, pw, pw2)", ink)
         self.assertIn("even: t.even !== false", ink)                  # 기본은 고른 굵기(직선과 같은 선)

@@ -368,7 +368,7 @@ const LEARN = (() => {
     if (c.criteria && c.criteria.length) {
       h += `<details class="cn-part"><summary>기준·권고 (${c.criteria.length})</summary>` + c.criteria.map((cr) => criterionHtml(c, cr)).join("") + `</details>`;
     }
-    h += checksHtml(c) + variantsHtml(c) + selfHtml(c) + sourcesHtml(c) + `</article>`;
+    h += checksHtml(c) + variantsHtml(c) + selfHtml(c) + papersHtml(c) + sourcesHtml(c) + `</article>`;
     box.innerHTML = h;
     drawDiagram(box.querySelector(".dia-box"), c, q, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
     bindConcept(box, c);
@@ -533,6 +533,21 @@ const LEARN = (() => {
       + `<label class="muted small" for="memo-${escapeHtml(c.id)}">내 메모(학습서의 「반복 혼동」 옆에 따로 보관)</label>`
       + `<textarea id="memo-${escapeHtml(c.id)}" class="cn-memo" rows="2">${escapeHtml(S.memo)}</textarea>`
       + `<button type="button" class="small" data-memo="1">메모 저장</button></div>`;
+  }
+  // 관련 논문(2026-11-15) — 스크랩한 논문 가운데 이 정리본의 질환 이름이 제목 · 초록에 나오는 것(pipelines/export_related_web.py).
+  // 글자가 겹친다는 사실만 보인다 — 내용을 검토한 추천이 아니다. 누르면 논문 화면이 그 논문만 띄운다.
+  function papersHtml(c) {
+    const R = typeof MEDKOS_RELATED === "object" && MEDKOS_RELATED ? MEDKOS_RELATED : null;
+    const rows = R && R.concepts ? R.concepts[c.id] : null;
+    if (!rows || !rows.length) return "";
+    return `<details class="cn-part cn-papers"><summary>관련 논문 (${rows.length})</summary><div class="cn-body">`
+      + `<p class="muted small">스크랩한 논문 가운데 이 질환 이름이 제목 · 초록에 나오는 것입니다. 글자가 겹친다는 뜻이지 내용을 검토한 추천은 아닙니다.</p><ul class="cn-paperlist">`
+      + rows.map((r) => {
+        const p = (R.papers || {})[r.id] || {};
+        return `<li><a href="papers.html?id=${encodeURIComponent(r.id)}" target="_blank" rel="noopener" data-paper="${escapeHtml(r.id)}">${escapeHtml(p.t || r.id)}</a>`
+          + ` <span class="muted small">${escapeHtml([p.j, p.d].filter(Boolean).join(" · "))} · ${r.how === "t" ? "제목" : "초록"}에 「${escapeHtml(r.term)}」</span></li>`;
+      }).join("")
+      + `</ul></div></details>`;
   }
   function sourcesHtml(c) {
     if (!c.sources || !c.sources.length) return "";

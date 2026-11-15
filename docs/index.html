@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>MedKOS 대화형 퀴즈 (KMLE · USMLE · 영상)</title>
-<link rel="stylesheet" href="style.css?v=30" />
+<link rel="stylesheet" href="style.css?v=31" />
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#0f1620" />
 <meta name="mobile-web-app-capable" content="yes" />
@@ -17,6 +17,7 @@
 <body>
 <nav class="nav">
   <a href="index.html" class="active">🧠 퀴즈</a>
+  <a href="index.html?view=ink" id="navInk">✍ 필기 모음</a>
   <a href="papers.html">📄 논문</a>
   <a href="ailab.html">🤖 AI랩</a>
   <a href="atlas3d.html">🧊 3D 아틀라스</a>
@@ -199,12 +200,13 @@
 <script src="questions_usmle.js"></script>
 <script src="questions_imaging.js"></script>
 <script src="concepts.js"></script>
+<script src="related.js"></script>
 <!-- 앱 코드는 ?v=<sw.js VERSION 번호> 로 부른다(2026-11-02) — GitHub Pages 는 파일마다 10분(max-age=600) 따로 캐시해서
      배포 직후 새 index.html 이 옛 app.js 와 만나 첫 화면이 멈췄다. app.js·learn.js·style.css 등을 고치면 sw.js VERSION 과 함께 올린다. -->
-<script src="synckey.js?v=30"></script>
-<script src="learn.js?v=30"></script>
-<script src="app.js?v=30"></script>
-<script src="ink.js?v=30"></script>
-<script src="pwa.js?v=30"></script>
+<script src="synckey.js?v=31"></script>
+<script src="learn.js?v=31"></script>
+<script src="app.js?v=31"></script>
+<script src="ink.js?v=31"></script>
+<script src="pwa.js?v=31"></script>
 </body>
 </html>
