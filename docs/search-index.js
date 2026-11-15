@@ -5,36 +5,36 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3880,
+  "total": 3912,
   "byType": {
+   "kmle": 1856,
    "concept": 169,
    "paper": 939,
    "imaging": 667,
-   "kmle": 1824,
    "usmle": 264,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 336,
-   "Nephrology": 250,
-   "Infectious Disease": 230,
-   "Pediatrics": 219,
-   "Obstetrics & Gynecology": 161,
-   "Rheumatology": 143,
+   "Cardiology": 338,
+   "Nephrology": 252,
+   "Infectious Disease": 232,
+   "Pediatrics": 221,
+   "Obstetrics & Gynecology": 163,
+   "Rheumatology": 145,
    "Pathology": 140,
-   "Psychiatry": 138,
-   "Neurology": 136,
+   "Psychiatry": 140,
+   "Neurology": 138,
    "Hematology-Oncology": 131,
-   "Orthopedics": 127,
-   "General Surgery": 122,
+   "Orthopedics": 129,
+   "General Surgery": 124,
+   "Endocrinology": 122,
+   "Dermatology": 121,
+   "Gastroenterology": 121,
+   "Ophthalmology": 121,
    "Surgery": 121,
-   "Endocrinology": 120,
-   "Dermatology": 119,
-   "Gastroenterology": 119,
-   "Ophthalmology": 119,
-   "Pulmonology": 118,
-   "Hematology": 111,
+   "Pulmonology": 120,
+   "Hematology": 113,
    "순환기": 97,
    "Laboratory Medicine": 96,
    "산부인과": 84,
@@ -77,13 +77,621 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 2764,
    "medium": 1144,
-   "high": 2732,
    "low": 4
   },
-  "tagCount": 4848
+  "tagCount": 4878
  },
  "docs": [
+  {
+   "id": "kmle-2026-1891",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Neck Pain Spreading to the Back of the Head on Bending Forward before Planned Knee Replacement in a Woman with Long-standing Joint Disease",
+   "tags": [
+    "rheumatoid-arthritis",
+    "atlantoaxial-instability",
+    "preoperative",
+    "cervical-spine"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1891.md",
+   "snippet": "66세 여자가 오른쪽 무릎 인공관절 수술(전신마취)을 앞두고 수술 전 평가를 위해 왔다. 20년 전 류마티스관절염을 진단받아 메토트렉세이트와 저용량 스테로이드를 먹고 있다. 몇 달 전부터 고개를 숙이면 뒷목이 아프고 통증이 뒷머리로 뻗치며, 가끔 양손 끝이 저리다. 양손 손가락이 새끼손가락 쪽으로 휘어 있고 일부 손가락은 백조목 모양으로 변형되어 있다. 팔다리 근력은 정상이고 양쪽 팔다리 심부건반사가 약간 항진되어 있다. 숨이",
+   "text": "Rheumatology Neck Pain Spreading to the Back of the Head on Bending Forward before Planned Knee Replacement in a Woman with Long-standing Joint Disease rheumatoid-arthritis atlantoaxial-instability preoperative cervical-spine KMLE 2026 / Claude 66세 여자가 오른쪽 무릎 인공관절 수술(전신마취)을 앞두고 수술 전 평가를 위해 왔다. 20년 전 류마티스관절염을 진단받아 메토트렉세이트와 저용량 스테로이드를 먹고 있다. 몇 달 전부터 고개를 숙이면 뒷목이 아프고 통증이 뒷머리로 뻗치며, 가끔 양손 끝이 저리다. 양손 손가락이 새끼손가락 쪽으로 휘어 있고 일부 손가락은 백조목 모양으로 변형되어 있다. 팔다리 근력은 정상이고 양쪽 팔다리 심부건반사가 약간 항진되어 있다. 숨이 차지 않고 기침은 없다. 활력징후와 검사 결과는 자료와 같다. 수술 전에 시행할 검사로 가장 적절한 것은? A. 오른쪽 무릎 자기공명영상 B. 이중에너지 골밀도 검사 C. 폐기능 검사 D. 경추 굴곡·신전 X선 E. 양팔 신경전도 검사 오래된 류마티스관절염 환자의 고개를 숙일 때 심해지며 뒷머리로 뻗치는 목 통증, 손 저림, 반사 항진은 고리중쇠 불안정(고리 치아 사이 염증성 파괴)을 의심하게 한다. 전신마취 삽관 때 목을 젖히면 척수가 눌릴 수 있으므로 수술 전에 경추 굴곡·신전 X선으로 불안정을 확인하고, 이상이 있거나 신경 증상이 뚜렷하면 자기공명영상을 찍는다."
+  },
+  {
+   "id": "kmle-2026-1890",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "A Year of Aching All Over, Unrefreshing Sleep and Poor Concentration with Normal Strength in a Woman in Her Forties",
+   "tags": [
+    "fibromyalgia",
+    "chronic-widespread-pain",
+    "differential",
+    "normal-workup"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1890.md",
+   "snippet": "44세 여자가 1년 전부터 온몸이 쑤시고 아프다며 왔다. 목·어깨·허리·양쪽 엉덩이·팔다리가 가리지 않고 아프다. 자고 나도 개운하지 않고 늘 피곤하며, 말하려던 단어가 생각나지 않고 집중이 안 된다. 긴장형 두통과 잦은 복부 팽만도 있다. 아침 뻣뻣함은 10분 안에 풀린다. 관절이 붓지 않고 발진·구강 궤양·발열·체중 감소는 없다. 팔다리 근력은 모두 5/5이고, 몸 여러 곳을 가볍게 눌러도 아파한다. 활력징후와 검사 결과는",
+   "text": "Rheumatology A Year of Aching All Over, Unrefreshing Sleep and Poor Concentration with Normal Strength in a Woman in Her Forties fibromyalgia chronic-widespread-pain differential normal-workup KMLE 2026 / Claude 44세 여자가 1년 전부터 온몸이 쑤시고 아프다며 왔다. 목·어깨·허리·양쪽 엉덩이·팔다리가 가리지 않고 아프다. 자고 나도 개운하지 않고 늘 피곤하며, 말하려던 단어가 생각나지 않고 집중이 안 된다. 긴장형 두통과 잦은 복부 팽만도 있다. 아침 뻣뻣함은 10분 안에 풀린다. 관절이 붓지 않고 발진·구강 궤양·발열·체중 감소는 없다. 팔다리 근력은 모두 5/5이고, 몸 여러 곳을 가볍게 눌러도 아파한다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 섬유근육통 B. 류마티스다발근통 C. 다발근육염 D. 갑상선기능저하증 E. 전신홍반루푸스 3개월 넘게 이어지는 온몸의 통증에 피로·개운하지 않은 잠·인지 증상이 함께 있고 진찰에서 근력·관절이 정상이며 염증 수치·크레아틴키나아제·갑상선 기능·자가항체가 정상이므로 섬유근육통이다. 치료는 질환 설명, 점진적 유산소 운동, 수면 관리, 인지행동치료가 바탕이고 필요하면 둘록세틴·프레가발린·아미트립틸린을 쓴다."
+  },
+  {
+   "id": "kmle-2026-1889",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Headache, Vomiting and Confusion after a Night in a Closed Tent with a Charcoal Heater and a Normal Fingertip Oxygen Reading",
+   "tags": [
+    "carbon-monoxide-poisoning",
+    "oxygen-content",
+    "hypoxia-mechanism",
+    "pulse-oximetry"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1889.md",
+   "snippet": "41세 남자가 겨울 아침 닫힌 캠핑 텐트 안에서 숯불 난로를 켜고 잔 뒤 머리가 깨질 듯 아프고 토하며 횡설수설해 아내가 데려왔다. 함께 잔 아내도 두통이 있다. 담배는 피우지 않는다. 피부와 입술 색은 정상이고 청색증은 없다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 조직 저산소증 기전으로 가장 적절한 것은? A. 폐포 환기 감소로 동맥혈 산소분압 저하 B. 산소 운반량 감소와 산소해리곡선 왼쪽 이동 C. 폐 안 단락",
+   "text": "Pulmonology Headache, Vomiting and Confusion after a Night in a Closed Tent with a Charcoal Heater and a Normal Fingertip Oxygen Reading carbon-monoxide-poisoning oxygen-content hypoxia-mechanism pulse-oximetry KMLE 2026 / Claude 41세 남자가 겨울 아침 닫힌 캠핑 텐트 안에서 숯불 난로를 켜고 잔 뒤 머리가 깨질 듯 아프고 토하며 횡설수설해 아내가 데려왔다. 함께 잔 아내도 두통이 있다. 담배는 피우지 않는다. 피부와 입술 색은 정상이고 청색증은 없다. 활력징후와 검사 결과는 자료와 같다. 이 환자의 조직 저산소증 기전으로 가장 적절한 것은? A. 폐포 환기 감소로 동맥혈 산소분압 저하 B. 산소 운반량 감소와 산소해리곡선 왼쪽 이동 C. 폐 안 단락 증가로 산소분압 저하 D. 환기 관류 불균형으로 산소분압 저하 E. 혈색소 철 산화로 산소 결합 불능 닫힌 공간의 숯불 난로, 함께 잔 사람의 두통, 일산화탄소헤모글로빈 28 %는 일산화탄소 중독이다. 일산화탄소는 산소보다 훨씬 강하게 혈색소에 붙어 산소 운반량을 줄이고, 남은 혈색소의 산소 친화도를 높여 산소해리곡선을 왼쪽으로 옮겨 조직에 산소를 잘 내주지 못하게 한다. 산소분압은 정상이고, 맥박산소측정기는 일산화탄소헤모글로빈을 구별하지 못해 정상으로 나온다."
+  },
+  {
+   "id": "kmle-2026-1888",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Dull Right Chest Pain, Breathlessness and Weight Loss in a Retired Shipyard Insulation Worker with Repeatedly Negative Fluid Cytology",
+   "tags": [
+    "malignant-mesothelioma",
+    "asbestos",
+    "pleural-effusion",
+    "thoracoscopy"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1888.md",
+   "snippet": "67세 남자가 3개월 전부터 오른쪽 가슴이 묵직하게 아프고 숨이 차며 체중이 5 kg 줄었다며 왔다. 30년 동안 조선소에서 배관 단열재를 다루었고 담배는 피운 적이 없다. 열이나 기침·가래는 없다. 오른쪽 아래 가슴에서 타진음이 둔하고 호흡음이 줄어 있다. 흉수 천자를 두 번 했다. 활력징후와 검사 결과는 자료와 같다. 진단을 위해 다음으로 시행할 검사로 가장 적절한 것은? A. 흉수 세포검사 반복 B. 굴곡 기관지내시경 C",
+   "text": "Pulmonology Dull Right Chest Pain, Breathlessness and Weight Loss in a Retired Shipyard Insulation Worker with Repeatedly Negative Fluid Cytology malignant-mesothelioma asbestos pleural-effusion thoracoscopy KMLE 2026 / Claude 67세 남자가 3개월 전부터 오른쪽 가슴이 묵직하게 아프고 숨이 차며 체중이 5 kg 줄었다며 왔다. 30년 동안 조선소에서 배관 단열재를 다루었고 담배는 피운 적이 없다. 열이나 기침·가래는 없다. 오른쪽 아래 가슴에서 타진음이 둔하고 호흡음이 줄어 있다. 흉수 천자를 두 번 했다. 활력징후와 검사 결과는 자료와 같다. 진단을 위해 다음으로 시행할 검사로 가장 적절한 것은? A. 흉수 세포검사 반복 B. 굴곡 기관지내시경 C. 흉수 종양표지자 검사 D. 흉강경 흉막 조직검사 E. 6주 뒤 흉부 CT 재검 석면 노출·석회화 흉막판에 종격동 쪽까지 이어지는 결절성 흉막 비후와 일측성 삼출액이 있어 악성 중피종을 의심한다. 흉수 아데노신탈아미나아제가 낮아 결핵성 흉막염 가능성이 낮고, 중피종은 흉수 세포검사의 민감도가 낮아 두 번 음성이어도 배제하지 못하므로 흉강경으로 흉막을 직접 보고 충분한 조직을 얻는다(동시에 흉막유착술도 할 수 있다)."
+  },
+  {
+   "id": "kmle-2026-1887",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Weeks of Low Mood, Guilt and Sleeplessness Even When the Baby Sleeps Six Weeks after a First Delivery",
+   "tags": [
+    "postpartum-depression",
+    "postpartum-blues",
+    "postpartum-psychosis",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1887.md",
+   "snippet": "32세 여자가 첫 아이를 낳은 지 6주째에 남편과 함께 왔다. 출산 3주 뒤부터 거의 하루 종일 우울하고 아기를 돌보는 일이 즐겁지 않으며, 아기가 잘 때도 잠들지 못한다. 좋은 엄마가 못 된다는 죄책감이 들고 집중이 안 되어 수유 시간을 자주 놓친다. 이런 상태가 3주 넘게 이어지고 있다. 헛것이 보이거나 들리지 않고, 아기를 해치려는 생각이나 자살 생각은 없다고 한다. 기분이 들뜨거나 잠을 안 자도 힘이 넘친 적은 없다. ",
+   "text": "Psychiatry Weeks of Low Mood, Guilt and Sleeplessness Even When the Baby Sleeps Six Weeks after a First Delivery postpartum-depression postpartum-blues postpartum-psychosis differential KMLE 2026 / Claude 32세 여자가 첫 아이를 낳은 지 6주째에 남편과 함께 왔다. 출산 3주 뒤부터 거의 하루 종일 우울하고 아기를 돌보는 일이 즐겁지 않으며, 아기가 잘 때도 잠들지 못한다. 좋은 엄마가 못 된다는 죄책감이 들고 집중이 안 되어 수유 시간을 자주 놓친다. 이런 상태가 3주 넘게 이어지고 있다. 헛것이 보이거나 들리지 않고, 아기를 해치려는 생각이나 자살 생각은 없다고 한다. 기분이 들뜨거나 잠을 안 자도 힘이 넘친 적은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 산후 우울감 B. 산후 정신병 C. 산후 우울증 D. 산후 갑상선염 E. 적응장애 출산 뒤 4주 안에 시작한 우울감·흥미 상실·불면·죄책감·집중력 저하가 2주 넘게 이어지며 기능이 떨어졌으므로 산후 우울증(주산기 발병 주요우울장애)이다. 산후 우울감은 출산 2–3일에 시작해 2주 안에 저절로 좋아지고, 정신병 증상·조증 증상이 없으며, 갑상선 기능이 정상이다."
+  },
+  {
+   "id": "kmle-2026-1886",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Found Unresponsive Next to an Empty Pill Bottle in a Woman Who Has Taken a Sleeping Pill Every Night for Ten Years",
+   "tags": [
+    "benzodiazepine-overdose",
+    "flumazenil",
+    "supportive-care",
+    "toxicology"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1886.md",
+   "snippet": "54세 여자가 집에서 반응 없이 누워 있는 것을 남편이 발견해 1시간 만에 응급실에 왔다. 옆에 알프라졸람 빈 약통이 있었다. 10년 동안 불안·불면으로 알프라졸람을 매일 먹어 왔다. 이전에 경련은 없었다. 큰 소리로 부르면 눈을 잠깐 떴다 감고, 아픈 자극에 손을 뻗어 피한다. 동공은 중간 크기이고 빛에 반응한다. 구역 반사는 남아 있다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 플루마제닐 정맥 주사 ",
+   "text": "Psychiatry Found Unresponsive Next to an Empty Pill Bottle in a Woman Who Has Taken a Sleeping Pill Every Night for Ten Years benzodiazepine-overdose flumazenil supportive-care toxicology KMLE 2026 / Claude 54세 여자가 집에서 반응 없이 누워 있는 것을 남편이 발견해 1시간 만에 응급실에 왔다. 옆에 알프라졸람 빈 약통이 있었다. 10년 동안 불안·불면으로 알프라졸람을 매일 먹어 왔다. 이전에 경련은 없었다. 큰 소리로 부르면 눈을 잠깐 떴다 감고, 아픈 자극에 손을 뻗어 피한다. 동공은 중간 크기이고 빛에 반응한다. 구역 반사는 남아 있다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 플루마제닐 정맥 주사 B. 날록손 정맥 주사 C. 비위관 위세척 시행 D. 탄산수소나트륨 정맥 주사 E. 산소와 기도·호흡 보조 매일 벤조디아제핀을 먹던 사람의 벤조디아제핀 과다복용이다. 장기 복용자에게 플루마제닐을 주면 급성 금단으로 경련이 생길 수 있어 쓰지 않고, 산소 투여와 기도·호흡 보조로 깨어날 때까지 지지 치료한다. 동공이 작지 않고 아편유사제가 음성이어서 날록손의 근거가 약하고, QRS가 좁아 탄산수소나트륨이 필요 없다."
+  },
+  {
+   "id": "kmle-2026-1885",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Many Brief Staring Spells a Day Noticed by a Teacher in a Seven-year-old Girl with Normal Development",
+   "tags": [
+    "childhood-absence-epilepsy",
+    "ethosuximide",
+    "antiseizure",
+    "treatment"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1885.md",
+   "snippet": "7세 여아가 수업 중에 멍하게 허공을 보며 몇 초 동안 불러도 대답하지 않는 일이 하루에 수십 번 있다는 담임 선생님의 말을 듣고 부모와 함께 왔다. 멍한 뒤에는 바로 하던 일을 이어 가며 그 순간을 기억하지 못한다. 쓰러지거나 온몸이 뻣뻣해지며 떠는 발작은 한 번도 없었다. 발달과 학업은 정상이었고 열성 경련 병력은 없다. 진료실에서 3분 동안 과호흡을 시키자 10초가량 멍해지며 눈꺼풀을 깜빡였다. 활력징후와 검사 결과는 자",
+   "text": "Pediatrics Many Brief Staring Spells a Day Noticed by a Teacher in a Seven-year-old Girl with Normal Development childhood-absence-epilepsy ethosuximide antiseizure treatment KMLE 2026 / Claude 7세 여아가 수업 중에 멍하게 허공을 보며 몇 초 동안 불러도 대답하지 않는 일이 하루에 수십 번 있다는 담임 선생님의 말을 듣고 부모와 함께 왔다. 멍한 뒤에는 바로 하던 일을 이어 가며 그 순간을 기억하지 못한다. 쓰러지거나 온몸이 뻣뻣해지며 떠는 발작은 한 번도 없었다. 발달과 학업은 정상이었고 열성 경련 병력은 없다. 진료실에서 3분 동안 과호흡을 시키자 10초가량 멍해지며 눈꺼풀을 깜빡였다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 에토숙시마이드 B. 발프로산 C. 카르바마제핀 D. 라모트리진 E. 페노바르비탈 정상 발달의 학령기 아이에게 하루 수십 번의 짧은 멍함이 과호흡으로 유발되고 뇌파에서 전반적 3 Hz 극서파가 보이며 전신 강직간대발작이 없으므로 소아기 결신 뇌전증이다. 결신발작만 있으면 효과와 주의력 부작용이 가장 유리한 에토숙시마이드가 1차 약이다. 카르바마제핀 같은 나트륨 통로 차단제는 결신을 악화시킨다."
+  },
+  {
+   "id": "kmle-2026-1884",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Four Days of High Fever, Cough and Red Eyes Followed by a Spreading Rash in an Unvaccinated 14-month-old Back from Travel",
+   "tags": [
+    "measles",
+    "exanthem",
+    "unvaccinated",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1884.md",
+   "snippet": "14개월 여아가 4일 전부터 39 ℃가 넘는 열이 나고 기침·콧물이 심하며 눈곱이 끼고 눈이 붉어 왔다. 어제부터 귀 뒤와 이마의 머리카락 경계에서 붉은 반점구진 발진이 시작되어 얼굴·몸통으로 퍼지며 서로 합쳐지고 있다. 발진이 나는 동안에도 열은 떨어지지 않았다. 2주 전 가족과 동남아시아를 여행했다. 홍역·볼거리·풍진 예방접종은 아직 받지 않았다. 아래 어금니 맞은편 볼 점막에 붉은 바탕 위 작은 회백색 반점이 여러 개 있",
+   "text": "Pediatrics Four Days of High Fever, Cough and Red Eyes Followed by a Spreading Rash in an Unvaccinated 14-month-old Back from Travel measles exanthem unvaccinated differential KMLE 2026 / Claude 14개월 여아가 4일 전부터 39 ℃가 넘는 열이 나고 기침·콧물이 심하며 눈곱이 끼고 눈이 붉어 왔다. 어제부터 귀 뒤와 이마의 머리카락 경계에서 붉은 반점구진 발진이 시작되어 얼굴·몸통으로 퍼지며 서로 합쳐지고 있다. 발진이 나는 동안에도 열은 떨어지지 않았다. 2주 전 가족과 동남아시아를 여행했다. 홍역·볼거리·풍진 예방접종은 아직 받지 않았다. 아래 어금니 맞은편 볼 점막에 붉은 바탕 위 작은 회백색 반점이 여러 개 있다. 입술 갈라짐·손발 부종은 없고 목 림프절은 커지지 않았다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 돌발진 B. 풍진 C. 홍역 D. 가와사키병 E. 성홍열 고열·기침·콧물·결막염의 전구기 3–4일 뒤 열이 계속되는 가운데 머리카락 경계에서 시작해 아래로 퍼지며 합쳐지는 반점구진 발진, 볼 점막의 회백색 반점이 있어 홍역이다. 예방접종 전 나이와 유행 지역 여행이 노출을 설명한다. 공기 전파라 격리하고 신고하며, 비타민 A를 주고 접촉자에게 노출 후 예방을 한다."
+  },
+  {
+   "id": "kmle-2026-1883",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Two Months of a Mild Limp and Knee Ache without Fever in a Short Six-year-old Boy",
+   "tags": [
+    "legg-calve-perthes",
+    "pediatric-hip",
+    "limp",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1883.md",
+   "snippet": "6세 남아가 2개월 전부터 오른쪽 다리를 살짝 절고 가끔 오른쪽 무릎 안쪽이 아프다며 왔다. 많이 뛰어논 날 더 절고 쉬면 나아진다. 열·외상·최근 감기는 없다. 키는 같은 나이의 3백분위로 작은 편이고 체중은 정상이다. 오른쪽 고관절의 벌림과 안쪽 돌림이 줄어 있으나 움직일 때 심하게 아파하지는 않는다. 무릎 진찰은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 일과성 활막염 B. 레그 칼",
+   "text": "Orthopedics Two Months of a Mild Limp and Knee Ache without Fever in a Short Six-year-old Boy legg-calve-perthes pediatric-hip limp differential KMLE 2026 / Claude 6세 남아가 2개월 전부터 오른쪽 다리를 살짝 절고 가끔 오른쪽 무릎 안쪽이 아프다며 왔다. 많이 뛰어논 날 더 절고 쉬면 나아진다. 열·외상·최근 감기는 없다. 키는 같은 나이의 3백분위로 작은 편이고 체중은 정상이다. 오른쪽 고관절의 벌림과 안쪽 돌림이 줄어 있으나 움직일 때 심하게 아파하지는 않는다. 무릎 진찰은 정상이다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 일과성 활막염 B. 레그 칼베 페르테스병 C. 넙다리뼈머리 성장판 분리증 D. 화농성 고관절염 E. 발달성 고관절 이형성증 4–8세 남아의 수주–수개월 된 가벼운 절뚝거림과 무릎으로 뻗치는 통증, 고관절 벌림·안쪽 돌림 제한, 정상 염증 수치와 X선의 작고 납작하며 경화된 넙다리뼈머리는 레그 칼베 페르테스병이다. 발열·염증 수치 상승이 없어 화농성 관절염·일과성 활막염 가능성이 낮고, 나이와 정상 체중·성장판 미끄러짐 없음이 성장판 분리증 가능성을 낮춘다."
+  },
+  {
+   "id": "kmle-2026-1882",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Inner Knee Pain after a Twisting Football Injury with Swelling the Next Morning and Episodes of the Knee Getting Stuck",
+   "tags": [
+    "meniscal-tear",
+    "knee-injury",
+    "locking",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1882.md",
+   "snippet": "27세 남자가 2주 전 축구를 하다 오른발을 땅에 딛은 채 몸을 비틀고 난 뒤 오른쪽 무릎 안쪽이 아프다며 왔다. 다친 날은 걸어서 경기를 마쳤고, 다음 날 아침부터 무릎이 서서히 부었다. 그 뒤로 무릎이 걸려 끝까지 펴지지 않다가 다리를 흔들면 풀리는 일이 되풀이된다. 무릎 안쪽 관절선을 누르면 아프고, 무릎을 굽힌 채 경골을 바깥으로 돌리며 펼 때 안쪽에서 딸깍 소리와 통증이 있다. 활력징후와 검사 결과는 자료와 같다. 가",
+   "text": "Orthopedics Inner Knee Pain after a Twisting Football Injury with Swelling the Next Morning and Episodes of the Knee Getting Stuck meniscal-tear knee-injury locking differential KMLE 2026 / Claude 27세 남자가 2주 전 축구를 하다 오른발을 땅에 딛은 채 몸을 비틀고 난 뒤 오른쪽 무릎 안쪽이 아프다며 왔다. 다친 날은 걸어서 경기를 마쳤고, 다음 날 아침부터 무릎이 서서히 부었다. 그 뒤로 무릎이 걸려 끝까지 펴지지 않다가 다리를 흔들면 풀리는 일이 되풀이된다. 무릎 안쪽 관절선을 누르면 아프고, 무릎을 굽힌 채 경골을 바깥으로 돌리며 펼 때 안쪽에서 딸깍 소리와 통증이 있다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 전방십자인대 파열 B. 내측측부인대 파열 C. 슬개골 탈구 D. 내측 반월상연골 파열 E. 후방십자인대 파열 발을 딛고 비튼 뒤 생긴 무릎 안쪽 통증, 다음 날 서서히 생긴 부종, 걸림·풀림, 내측 관절선 압통과 회전시키며 펼 때의 딸깍 소리는 내측 반월상연골 파열이다. 경골 앞·뒤당김과 외반 스트레스가 정상이고 다친 직후 크게 붓지 않아 인대 파열 가능성은 낮다. 확인은 자기공명영상으로 한다."
+  },
+  {
+   "id": "kmle-2026-1881",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "A White Pupil in a Flash Photograph and a New Inward Turn of the Same Eye in an 18-month-old Boy",
+   "tags": [
+    "leukocoria",
+    "retinoblastoma",
+    "dilated-fundus-exam",
+    "pediatric"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1881.md",
+   "snippet": "18개월 남아의 부모가 플래시를 켜고 찍은 사진에서 아이의 왼쪽 눈동자가 하얗게 보인다며 데려왔다. 2주 전부터 왼쪽 눈이 안쪽으로 몰리는 것 같다고 한다. 눈을 아파하거나 비비지 않고 열은 없다. 만삭에 3.3 kg으로 태어났고 발달은 정상이다. 결막 충혈이나 눈곱은 없다. 활력징후와 검사 결과는 자료와 같다. 다음으로 시행할 것으로 가장 적절한 것은? A. 산동 후 안저검사 B. 건강한 눈 가림 치료 C. 3개월 뒤 사시 ",
+   "text": "Ophthalmology A White Pupil in a Flash Photograph and a New Inward Turn of the Same Eye in an 18-month-old Boy leukocoria retinoblastoma dilated-fundus-exam pediatric KMLE 2026 / Claude 18개월 남아의 부모가 플래시를 켜고 찍은 사진에서 아이의 왼쪽 눈동자가 하얗게 보인다며 데려왔다. 2주 전부터 왼쪽 눈이 안쪽으로 몰리는 것 같다고 한다. 눈을 아파하거나 비비지 않고 열은 없다. 만삭에 3.3 kg으로 태어났고 발달은 정상이다. 결막 충혈이나 눈곱은 없다. 활력징후와 검사 결과는 자료와 같다. 다음으로 시행할 것으로 가장 적절한 것은? A. 산동 후 안저검사 B. 건강한 눈 가림 치료 C. 3개월 뒤 사시 재평가 D. 굴절 검사 후 안경 처방 E. 항생제 점안 후 재진 흰 동공 반사에 새로 생긴 사시가 있으면 망막모세포종 같은 안구 안 병변을 먼저 의심해야 한다. 사시나 약시 치료를 먼저 하지 말고 즉시 산동해 안저를 보며(대개 전신마취 아래 검사), 진단되면 방사선 노출을 피해 자기공명영상으로 범위를 본다."
+  },
+  {
+   "id": "kmle-2026-1880",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "A Gritty Watery Light-sensitive Eye a Week after a Cold Sore in a Young Man Who Does Not Wear Contact Lenses",
+   "tags": [
+    "herpes-simplex-keratitis",
+    "epithelial-keratitis",
+    "topical-steroid",
+    "contraindication"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1880.md",
+   "snippet": "34세 남자가 3일 전부터 오른쪽 눈에 모래가 들어간 듯하고 눈물이 나며 눈이 부시다며 왔다. 1주 전 윗입술에 작은 물집이 생겼다가 딱지가 앉았다. 콘택트렌즈는 끼지 않고 눈을 다친 적은 없다. 오른쪽 눈의 결막이 충혈되어 있다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 하지 말아야 할 치료는? A. 아시클로버 안연고 B. 경구 아시클로버 C. 감염된 각막 상피 제거 D. 보존제 없는 인공눈물 E. 스테로이드 점안액",
+   "text": "Ophthalmology A Gritty Watery Light-sensitive Eye a Week after a Cold Sore in a Young Man Who Does Not Wear Contact Lenses herpes-simplex-keratitis epithelial-keratitis topical-steroid contraindication KMLE 2026 / Claude 34세 남자가 3일 전부터 오른쪽 눈에 모래가 들어간 듯하고 눈물이 나며 눈이 부시다며 왔다. 1주 전 윗입술에 작은 물집이 생겼다가 딱지가 앉았다. 콘택트렌즈는 끼지 않고 눈을 다친 적은 없다. 오른쪽 눈의 결막이 충혈되어 있다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 하지 말아야 할 치료는? A. 아시클로버 안연고 B. 경구 아시클로버 C. 감염된 각막 상피 제거 D. 보존제 없는 인공눈물 E. 스테로이드 점안액 입술 물집 뒤 생긴 가지 모양으로 끝이 부푼 각막 상피 결손과 각막 감각 저하는 단순포진바이러스 상피 각막염이다. 실질·전방 염증이 없는 상피 각막염에 스테로이드를 넣으면 바이러스 증식이 늘어 병변이 커지고 지도 모양 궤양·천공으로 갈 수 있으므로 쓰지 않는다. 국소·경구 항바이러스제(필요하면 상피 제거)로 치료한다."
+  },
+  {
+   "id": "kmle-2026-1879",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Severe Night-time Itching of the Palms and Soles without a Rash at 33 Weeks of a First Pregnancy",
+   "tags": [
+    "intrahepatic-cholestasis-of-pregnancy",
+    "bile-acids",
+    "pruritus",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1879.md",
+   "snippet": "31세 초산부가 임신 33주에 2주 전부터 손바닥과 발바닥이 밤에 몹시 가렵다며 왔다. 피부에 발진은 없고 긁은 자국만 있다. 구역·구토·복통·두통은 없고 태동은 잘 느낀다. 이전에 간 질환은 없고 새로 먹은 약은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 임신 급성 지방간 B. HELLP 증후군 C. 임신 간내 담즙정체 D. 급성 바이러스 간염 E. 임신 소양성 두드러기 구진 및 판 임신 ",
+   "text": "Obstetrics & Gynecology Severe Night-time Itching of the Palms and Soles without a Rash at 33 Weeks of a First Pregnancy intrahepatic-cholestasis-of-pregnancy bile-acids pruritus differential KMLE 2026 / Claude 31세 초산부가 임신 33주에 2주 전부터 손바닥과 발바닥이 밤에 몹시 가렵다며 왔다. 피부에 발진은 없고 긁은 자국만 있다. 구역·구토·복통·두통은 없고 태동은 잘 느낀다. 이전에 간 질환은 없고 새로 먹은 약은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 임신 급성 지방간 B. HELLP 증후군 C. 임신 간내 담즙정체 D. 급성 바이러스 간염 E. 임신 소양성 두드러기 구진 및 판 임신 3분기에 발진 없이 손바닥·발바닥이 밤에 심하게 가렵고 공복 담즙산과 아미노전달효소가 올랐으며, 혈압·혈소판·혈당·소변 단백이 정상이고 바이러스 간염 표지자·초음파가 정상이어서 임신 간내 담즙정체다. 담즙산이 높을수록 사산 위험이 커져 우르소데옥시콜산을 쓰고 담즙산 수치에 따라 분만 시기를 정한다(대개 36–39주, 100 μmol/L 이상이면 더 이르게)."
+  },
+  {
+   "id": "kmle-2026-1878",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Bleeding after Intercourse for Three Months in a Woman Who Has Skipped Cervical Screening for Ten Years",
+   "tags": [
+    "cervical-cancer",
+    "postcoital-bleeding",
+    "punch-biopsy",
+    "diagnosis"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1878.md",
+   "snippet": "46세 여자가 3개월 전부터 성관계 뒤 피가 나고 묽은 질 분비물이 늘었다며 왔다. 월경은 규칙적이고 10년 동안 자궁경부암 검진을 받지 않았다. 질경 검사에서 자궁경부 앞쪽에 지름 2 cm의 표면이 거칠고 쉽게 피가 나는 튀어나온 종괴가 보인다. 양손 진찰에서 자궁 크기는 정상이고 자궁옆조직은 부드럽다. 활력징후와 검사 결과는 자료와 같다. 다음으로 시행할 검사로 가장 적절한 것은? A. 자궁경부 세포검사 B. 자궁경부 종괴",
+   "text": "Obstetrics & Gynecology Bleeding after Intercourse for Three Months in a Woman Who Has Skipped Cervical Screening for Ten Years cervical-cancer postcoital-bleeding punch-biopsy diagnosis KMLE 2026 / Claude 46세 여자가 3개월 전부터 성관계 뒤 피가 나고 묽은 질 분비물이 늘었다며 왔다. 월경은 규칙적이고 10년 동안 자궁경부암 검진을 받지 않았다. 질경 검사에서 자궁경부 앞쪽에 지름 2 cm의 표면이 거칠고 쉽게 피가 나는 튀어나온 종괴가 보인다. 양손 진찰에서 자궁 크기는 정상이고 자궁옆조직은 부드럽다. 활력징후와 검사 결과는 자료와 같다. 다음으로 시행할 검사로 가장 적절한 것은? A. 자궁경부 세포검사 B. 자궁경부 종괴 조직검사 C. 고위험 인유두종바이러스 검사 D. 경질 초음파 검사 E. 골반 자기공명영상 성교 후 출혈과 질경으로 보이는 쉽게 피 나는 자궁경부 종괴는 침윤성 자궁경부암을 의심하게 한다. 눈에 보이는 병변은 세포검사가 괴사·출혈 때문에 거짓음성이 많으므로 선별 검사 단계를 건너뛰고 종괴를 직접 조직검사해 진단한다. 진단 뒤 골반 자기공명영상 등으로 병기를 정한다."
+  },
+  {
+   "id": "kmle-2026-1877",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Headache on Most Mornings for Six Months in a Woman with Long-standing Migraine Who Takes Painkillers Almost Daily",
+   "tags": [
+    "medication-overuse-headache",
+    "migraine",
+    "withdrawal",
+    "prophylaxis"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1877.md",
+   "snippet": "38세 여자가 6개월 전부터 거의 매일 아침 깨면서 머리가 아프다며 왔다. 15년 전부터 한 달에 2–3번 한쪽이 욱신거리며 구역·빛 과민을 동반하는 두통이 있었다. 요즘은 한 달에 25일 넘게 아세트아미노펜·카페인 복합 진통제나 이부프로펜을 먹고, 약을 먹으면 몇 시간 나아졌다가 다시 아프다. 신경학적 진찰은 정상이다. 체질량지수는 22 kg/m²다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 트립탄으로",
+   "text": "Neurology Headache on Most Mornings for Six Months in a Woman with Long-standing Migraine Who Takes Painkillers Almost Daily medication-overuse-headache migraine withdrawal prophylaxis KMLE 2026 / Claude 38세 여자가 6개월 전부터 거의 매일 아침 깨면서 머리가 아프다며 왔다. 15년 전부터 한 달에 2–3번 한쪽이 욱신거리며 구역·빛 과민을 동반하는 두통이 있었다. 요즘은 한 달에 25일 넘게 아세트아미노펜·카페인 복합 진통제나 이부프로펜을 먹고, 약을 먹으면 몇 시간 나아졌다가 다시 아프다. 신경학적 진찰은 정상이다. 체질량지수는 22 kg/m²다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 트립탄으로 바꿔 아플 때마다 복용 B. 오피오이드 진통제로 바꿔 복용 C. 지금 진통제 유지하며 경과 관찰 D. 이부프로펜 용량을 늘려 복용 E. 과용 진통제 중단과 예방약 시작 편두통 환자가 한 달 15일 넘게 단순 진통제를 3개월 넘게 먹으면서 두통이 거의 매일로 늘었고 신경학적 진찰·안저·영상이 정상이므로 약물과용두통이다. 과용하는 진통제를 끊고(단순 진통제는 갑자기 끊어도 된다) 예방약을 시작하며, 금단 두통은 수일–수주 동안 일시적으로 나빠질 수 있음을 알린다."
+  },
+  {
+   "id": "kmle-2026-1876",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Three Months of Trouble Climbing Stairs, a Dry Mouth and Reflexes That Return after Effort in a Heavy Smoker",
+   "tags": [
+    "lambert-eaton",
+    "paraneoplastic",
+    "small-cell-lung-cancer",
+    "chest-ct"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1876.md",
+   "snippet": "63세 남자가 3개월 전부터 계단을 오르거나 의자에서 일어나기 힘들다며 왔다. 40갑년 흡연자이고 지금도 피운다. 입이 자주 마르고 최근 발기가 잘 되지 않는다. 눈꺼풀이 조금 처지지만 물체가 둘로 보이지는 않는다. 양쪽 엉덩이·허벅지 근력이 4/5이고 무릎반사가 거의 나오지 않는데, 10초 동안 힘껏 다리를 편 직후에는 반사가 뚜렷해진다. 감각은 정상이다. 활력징후와 검사 결과는 자료와 같다. 다음으로 시행할 검사로 가장 적",
+   "text": "Neurology Three Months of Trouble Climbing Stairs, a Dry Mouth and Reflexes That Return after Effort in a Heavy Smoker lambert-eaton paraneoplastic small-cell-lung-cancer chest-ct KMLE 2026 / Claude 63세 남자가 3개월 전부터 계단을 오르거나 의자에서 일어나기 힘들다며 왔다. 40갑년 흡연자이고 지금도 피운다. 입이 자주 마르고 최근 발기가 잘 되지 않는다. 눈꺼풀이 조금 처지지만 물체가 둘로 보이지는 않는다. 양쪽 엉덩이·허벅지 근력이 4/5이고 무릎반사가 거의 나오지 않는데, 10초 동안 힘껏 다리를 편 직후에는 반사가 뚜렷해진다. 감각은 정상이다. 활력징후와 검사 결과는 자료와 같다. 다음으로 시행할 검사로 가장 적절한 것은? A. 흉부 CT B. 근육 조직검사 C. 아세틸콜린수용체 항체 D. 뇌 자기공명영상 E. 뇌척수액 검사 근위부 근력 약화·자율신경 증상·반사 감소가 있고 힘을 준 뒤 반사와 복합근활동전위가 크게 늘며 P/Q형 전압개폐칼슘통로 항체가 양성이므로 람버트 이튼 근무력증후군이다. 흡연자에서는 절반 이상이 소세포폐암에 동반되므로 단순 X선이 정상이어도 흉부 CT로 종양을 찾고, 음성이면 PET CT와 반복 검사로 추적한다."
+  },
+  {
+   "id": "kmle-2026-1875",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Five Liters of Urine a Day and Nightly Thirst in a Woman Stable on a Mood Stabilizer for Twelve Years",
+   "tags": [
+    "nephrogenic-diabetes-insipidus",
+    "lithium",
+    "amiloride",
+    "mechanism"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1875.md",
+   "snippet": "45세 여자가 1년 전부터 하루에 소변을 5 L가량 보고 밤에도 세 번 넘게 깨서 물을 마신다며 왔다. 양극성장애로 12년째 리튬을 먹고 있고 지난 5년 동안 재발 없이 기분이 안정되어 있다. 정신건강의학과에서는 리튬을 계속 쓰기로 했다. 활력징후와 검사 결과는 자료와 같다. 다뇨를 줄이려고 추가할 약물의 작용 기전으로 가장 적절한 것은? A. 원위세관 나트륨 염소 공동수송체 억제 B. 헨레고리 나트륨 칼륨 염소 공동수송체 억",
+   "text": "Nephrology Five Liters of Urine a Day and Nightly Thirst in a Woman Stable on a Mood Stabilizer for Twelve Years nephrogenic-diabetes-insipidus lithium amiloride mechanism KMLE 2026 / Claude 45세 여자가 1년 전부터 하루에 소변을 5 L가량 보고 밤에도 세 번 넘게 깨서 물을 마신다며 왔다. 양극성장애로 12년째 리튬을 먹고 있고 지난 5년 동안 재발 없이 기분이 안정되어 있다. 정신건강의학과에서는 리튬을 계속 쓰기로 했다. 활력징후와 검사 결과는 자료와 같다. 다뇨를 줄이려고 추가할 약물의 작용 기전으로 가장 적절한 것은? A. 원위세관 나트륨 염소 공동수송체 억제 B. 헨레고리 나트륨 칼륨 염소 공동수송체 억제 C. 집합관 V2 수용체 자극 D. 집합관 상피 나트륨 통로 차단 E. 근위세관 탄산탈수효소 억제 리튬을 오래 먹은 사람의 다뇨가 수분 제한·데스모프레신에도 소변을 농축하지 못하므로 리튬에 의한 신성 요붕증이다. 리튬을 계속 써야 할 때는 아밀로라이드를 더하는데, 아밀로라이드는 집합관 주세포의 상피 나트륨 통로를 막아 리튬이 세포 안으로 들어가는 것을 줄인다. 티아지드도 다뇨를 줄이지만 리튬 농도를 올려 중독 위험이 있다."
+  },
+  {
+   "id": "kmle-2026-1874",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "High Blood Pressure and Enlarged Cystic Kidneys at a Checkup in a Man Whose Uncle Died Suddenly of a Brain Bleed",
+   "tags": [
+    "adpkd",
+    "intracranial-aneurysm",
+    "screening",
+    "mra"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1874.md",
+   "snippet": "34세 남자가 건강검진에서 고혈압과 신장의 혹을 지적받고 왔다. 어머니가 50대에 투석을 시작했고 외삼촌은 40대에 갑작스러운 뇌출혈로 사망했다. 가끔 옆구리가 묵직하고 1년 전 한 번 붉은 소변을 보았다. 두통이나 신경학적 이상은 없다. 양쪽 옆구리에 커진 신장이 만져진다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 추가로 시행할 검사로 가장 적절한 것은? A. 초음파 유도 신장 조직검사 B. 뇌 자기공명혈관조영술 C",
+   "text": "Nephrology High Blood Pressure and Enlarged Cystic Kidneys at a Checkup in a Man Whose Uncle Died Suddenly of a Brain Bleed adpkd intracranial-aneurysm screening mra KMLE 2026 / Claude 34세 남자가 건강검진에서 고혈압과 신장의 혹을 지적받고 왔다. 어머니가 50대에 투석을 시작했고 외삼촌은 40대에 갑작스러운 뇌출혈로 사망했다. 가끔 옆구리가 묵직하고 1년 전 한 번 붉은 소변을 보았다. 두통이나 신경학적 이상은 없다. 양쪽 옆구리에 커진 신장이 만져진다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 추가로 시행할 검사로 가장 적절한 것은? A. 초음파 유도 신장 조직검사 B. 뇌 자기공명혈관조영술 C. 대장내시경 검사 D. 경흉부 심장초음파 검사 E. 신동맥 CT 혈관조영술 어머니의 투석과 양쪽 신장의 여러 낭종·간 낭종은 상염색체 우성 다낭신이다. 다낭신은 두개내 동맥류가 많고 가족 중 동맥류 파열·뇌출혈이 있으면 위험이 더 크므로, 증상이 없어도 조영제·방사선이 없는 뇌 자기공명혈관조영술로 선별한다."
+  },
+  {
+   "id": "kmle-2026-1873",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Three Weeks of Up-and-Down Fever and Drenching Night Sweats in a Cattle Farmer Who Handled a Stillborn Calf",
+   "tags": [
+    "brucellosis",
+    "zoonosis",
+    "combination-therapy",
+    "doxycycline"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1873.md",
+   "snippet": "52세 남자가 3주 전부터 열이 오르내리고 밤에 땀을 흠뻑 흘리며 피곤하다며 왔다. 열은 며칠 오르다 내리기를 되풀이한다. 한우 농장을 운영하고, 한 달 전 사산한 송아지를 맨손으로 치웠다. 허리가 뻐근하지만 국소 압통은 없다. 간·비장이 약간 만져진다. 고환 통증·부종은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손과 아지트로마이신 2주 B. 아목시실린과 클라불란산 4주 C. 레보플록사신",
+   "text": "Infectious Disease Three Weeks of Up-and-Down Fever and Drenching Night Sweats in a Cattle Farmer Who Handled a Stillborn Calf brucellosis zoonosis combination-therapy doxycycline KMLE 2026 / Claude 52세 남자가 3주 전부터 열이 오르내리고 밤에 땀을 흠뻑 흘리며 피곤하다며 왔다. 열은 며칠 오르다 내리기를 되풀이한다. 한우 농장을 운영하고, 한 달 전 사산한 송아지를 맨손으로 치웠다. 허리가 뻐근하지만 국소 압통은 없다. 간·비장이 약간 만져진다. 고환 통증·부종은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손과 아지트로마이신 2주 B. 아목시실린과 클라불란산 4주 C. 레보플록사신과 메트로니다졸 2주 D. 독시사이클린과 리팜핀 6주 E. 반코마이신과 겐타마이신 2주 소 분만·사산 산물을 맨손으로 다룬 뒤 오르내리는 열·야간 발한·간비장비대가 있고, 배양 기간을 늘린 혈액배양에서 작은 그람음성 알막대균이 자라며 응집검사가 1:320이어서 브루셀라증이다. 척추염·심내막염 같은 국소 합병증이 없으므로 독시사이클린 + 리팜핀(또는 독시사이클린 + 스트렙토마이신)을 6주 쓴다. 단독 요법·짧은 치료는 재발이 많다."
+  },
+  {
+   "id": "kmle-2026-1872",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Fever, Diarrhea, Muscle Aches and New Drowsiness in Late May after Garden Work and Wild Herb Picking in an Older Woman",
+   "tags": [
+    "sfts",
+    "tick-borne",
+    "thrombocytopenia",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1872.md",
+   "snippet": "68세 여자가 5월 말에 5일 전부터 열이 나고 물설사·구역이 있으며 온몸 근육이 아프다며 왔다. 2주 전부터 텃밭 일을 하고 산에서 나물을 뜯었다. 어제부터 말이 어눌하고 자꾸 졸려 한다. 온몸 피부를 꼼꼼히 살폈으나 딱지 앉은 궤양이나 발진은 없다. 왼쪽 겨드랑이에 아픈 림프절이 만져진다. 결막 충혈·황달은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 쯔쯔가무시증 B. 신증후출혈열 C. 렙",
+   "text": "Infectious Disease Fever, Diarrhea, Muscle Aches and New Drowsiness in Late May after Garden Work and Wild Herb Picking in an Older Woman sfts tick-borne thrombocytopenia differential KMLE 2026 / Claude 68세 여자가 5월 말에 5일 전부터 열이 나고 물설사·구역이 있으며 온몸 근육이 아프다며 왔다. 2주 전부터 텃밭 일을 하고 산에서 나물을 뜯었다. 어제부터 말이 어눌하고 자꾸 졸려 한다. 온몸 피부를 꼼꼼히 살폈으나 딱지 앉은 궤양이나 발진은 없다. 왼쪽 겨드랑이에 아픈 림프절이 만져진다. 결막 충혈·황달은 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 쯔쯔가무시증 B. 신증후출혈열 C. 렙토스피라증 D. 급성 A형간염 E. 중증열성혈소판감소증후군 봄–초여름 야외 활동 뒤 고열·소화기 증상·근육통에 백혈구·혈소판이 함께 크게 줄고 AST·젖산탈수소효소·크레아틴키나아제가 오르며 C반응단백이 낮고 의식 변화가 있어 참진드기가 옮기는 중증열성혈소판감소증후군이다. 딱지가 없고 백혈구가 줄며 신장 기능·소변이 정상이어서 쯔쯔가무시증·신증후출혈열 가능성은 낮다. 혈액 RT PCR로 확인하고 대증 치료한다."
+  },
+  {
+   "id": "kmle-2026-1871",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Planned Wisdom Tooth Removal in a Young Man Whose Maternal Uncle Has a Bleeding Disorder",
+   "tags": [
+    "hemophilia-a",
+    "desmopressin",
+    "mechanism",
+    "coagulation"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1871.md",
+   "snippet": "19세 남자가 사랑니를 뽑기 전 출혈 위험 평가를 위해 왔다. 어릴 때 넘어진 뒤 무릎이 크게 부어 한 번 치료받았고, 작은 상처도 오래 피가 났다. 외삼촌이 출혈 질환으로 치료받고 있다. 복용하는 약은 없다. 활력징후와 검사 결과는 자료와 같다. 발치 전에 응고인자 농축제를 대신해 이 환자의 제8인자 수치를 올릴 수 있는 약물의 작용 기전은? A. 간세포의 제8인자 합성 촉진 B. 플라스민원의 피브린 결합 억제 C. 내피세포",
+   "text": "Hematology Planned Wisdom Tooth Removal in a Young Man Whose Maternal Uncle Has a Bleeding Disorder hemophilia-a desmopressin mechanism coagulation KMLE 2026 / Claude 19세 남자가 사랑니를 뽑기 전 출혈 위험 평가를 위해 왔다. 어릴 때 넘어진 뒤 무릎이 크게 부어 한 번 치료받았고, 작은 상처도 오래 피가 났다. 외삼촌이 출혈 질환으로 치료받고 있다. 복용하는 약은 없다. 활력징후와 검사 결과는 자료와 같다. 발치 전에 응고인자 농축제를 대신해 이 환자의 제8인자 수치를 올릴 수 있는 약물의 작용 기전은? A. 간세포의 제8인자 합성 촉진 B. 플라스민원의 피브린 결합 억제 C. 내피세포 V2 수용체를 통한 저장 인자 방출 D. 비타민 K 의존 인자의 감마카르복실화 촉진 E. 혈소판 당단백 수용체의 활성화 촉진 모계 남자 친척의 출혈 질환, 연장된 활성화부분트롬보플라스틴시간이 혼합검사로 교정되고 제8인자 22 %에 폰빌레브란트인자가 정상이므로 경증 혈우병 A다. 경증 혈우병 A는 데스모프레신에 반응하는데, 데스모프레신은 혈관내피세포의 V2 수용체를 자극해 저장된 폰빌레브란트인자와 제8인자를 혈중으로 내보낸다."
+  },
+  {
+   "id": "kmle-2026-1870",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Easy Bruising, Bleeding Gums and Breathlessness Six Months after an Unexplained Hepatitis in a Young Man",
+   "tags": [
+    "aplastic-anemia",
+    "pancytopenia",
+    "bone-marrow",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1870.md",
+   "snippet": "23세 남자가 한 달 전부터 쉽게 멍이 들고 양치할 때 잇몸에서 피가 나며 계단을 오르면 숨이 차서 왔다. 6개월 전 원인을 찾지 못한 급성 간염으로 입원했다가 저절로 좋아졌다. 발열·체중 감소·야간 발한은 없고, 소변 색 변화는 없다. 복용하는 약·건강식품은 없다. 다리에 점상출혈이 흩어져 있다. 간·비장·림프절은 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 재생불량빈혈 B. 골수",
+   "text": "Hematology Easy Bruising, Bleeding Gums and Breathlessness Six Months after an Unexplained Hepatitis in a Young Man aplastic-anemia pancytopenia bone-marrow differential KMLE 2026 / Claude 23세 남자가 한 달 전부터 쉽게 멍이 들고 양치할 때 잇몸에서 피가 나며 계단을 오르면 숨이 차서 왔다. 6개월 전 원인을 찾지 못한 급성 간염으로 입원했다가 저절로 좋아졌다. 발열·체중 감소·야간 발한은 없고, 소변 색 변화는 없다. 복용하는 약·건강식품은 없다. 다리에 점상출혈이 흩어져 있다. 간·비장·림프절은 만져지지 않는다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 재생불량빈혈 B. 골수형성이상증후군 C. 비타민 B12 결핍 빈혈 D. 발작성 야간혈색소뇨증 E. 털세포백혈병 범혈구감소증에 망상적혈구가 매우 낮고 간·비장이 커지지 않았으며, 골수 세포충실도가 10 %로 지방으로 대치되고 이형성·모세포가 없어 재생불량빈혈이다. 6개월 전의 원인 모를 간염은 간염 관련 재생불량빈혈을 시사한다. 젊고 형제가 있으면 조직적합 형제 조혈모세포이식을 먼저 고려한다."
+  },
+  {
+   "id": "kmle-2026-1869",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Sudden Tearing Lower Chest and Back Pain after Repeated Forceful Vomiting at a Work Dinner in a Middle-aged Man",
+   "tags": [
+    "esophageal-perforation",
+    "vomiting",
+    "pneumomediastinum",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1869.md",
+   "snippet": "48세 남자가 회식에서 술을 많이 마신 뒤 여러 번 세게 토하고 나서 갑자기 가슴 아래쪽과 등이 찢어지듯 아파 3시간 만에 응급실에 왔다. 토물에 피는 섞이지 않았다. 숨이 차고 침을 삼키면 통증이 심해진다. 목 왼쪽 아래 피부를 누르면 눈을 밟는 듯 뽀드득거린다. 양팔 혈압 차이는 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 위식도 접합부 점막 열상 B. 급성 췌장염 C. 자발 식도 파열 D",
+   "text": "General Surgery Sudden Tearing Lower Chest and Back Pain after Repeated Forceful Vomiting at a Work Dinner in a Middle-aged Man esophageal-perforation vomiting pneumomediastinum differential KMLE 2026 / Claude 48세 남자가 회식에서 술을 많이 마신 뒤 여러 번 세게 토하고 나서 갑자기 가슴 아래쪽과 등이 찢어지듯 아파 3시간 만에 응급실에 왔다. 토물에 피는 섞이지 않았다. 숨이 차고 침을 삼키면 통증이 심해진다. 목 왼쪽 아래 피부를 누르면 눈을 밟는 듯 뽀드득거린다. 양팔 혈압 차이는 없다. 활력징후와 검사 결과는 자료와 같다. 가장 가능성이 높은 진단은? A. 위식도 접합부 점막 열상 B. 급성 췌장염 C. 자발 식도 파열 D. 급성 대동맥 박리 E. 자발 기흉 세게 토한 뒤 갑자기 생긴 흉통·등 통증에 목의 피하 공기, 종격동 공기, 왼쪽 흉막액, 발열·빈맥이 있어 식도 전층이 찢어진 자발 식도 파열이다. 점막 열상은 피를 토하는 것이 주 증상이고 종격동 공기가 생기지 않는다. 수용성 조영제 식도조영술이나 CT로 확인하고 금식·광범위 항생제·응급 수술을 준비한다."
+  },
+  {
+   "id": "kmle-2026-1868",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "A Groin Lump That Would Not Go Back for Eight Hours with Fever and Reddened Skin in an Older Man",
+   "tags": [
+    "strangulated-hernia",
+    "inguinal-hernia",
+    "contraindication",
+    "emergency-surgery"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1868.md",
+   "snippet": "72세 남자가 8시간 전부터 오른쪽 사타구니의 혹이 들어가지 않고 점점 아프다며 왔다. 10년 전부터 서 있으면 나왔다가 누우면 저절로 들어가던 혹이다. 두 번 토했고 그 뒤로 방귀가 나오지 않는다. 오른쪽 사타구니에 달걀 크기의 단단한 혹이 있고 그 위 피부가 붉으며 살짝 눌러도 몹시 아파한다. 장음은 높고 자주 들린다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 하지 말아야 할 처치는? A. 정맥 수액 소생 B. 비",
+   "text": "General Surgery A Groin Lump That Would Not Go Back for Eight Hours with Fever and Reddened Skin in an Older Man strangulated-hernia inguinal-hernia contraindication emergency-surgery KMLE 2026 / Claude 72세 남자가 8시간 전부터 오른쪽 사타구니의 혹이 들어가지 않고 점점 아프다며 왔다. 10년 전부터 서 있으면 나왔다가 누우면 저절로 들어가던 혹이다. 두 번 토했고 그 뒤로 방귀가 나오지 않는다. 오른쪽 사타구니에 달걀 크기의 단단한 혹이 있고 그 위 피부가 붉으며 살짝 눌러도 몹시 아파한다. 장음은 높고 자주 들린다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 하지 말아야 할 처치는? A. 정맥 수액 소생 B. 비위관 삽입과 감압 C. 광범위 정맥 항생제 투여 D. 응급 수술적 탐색과 교정 E. 진정 후 손으로 혹 밀어 넣기 들어가지 않는 사타구니 탈장에 발열·피부 발적·심한 압통·백혈구 증가·젖산 상승이 있어 교액 탈장이다. 손으로 밀어 넣으면 괴사한 장을 배 안으로 넣거나 탈장낭째 들어가 막힘이 남을 수 있으므로 하지 않고, 수액·감압·항생제로 준비하며 응급 수술로 장 상태를 직접 확인한다."
+  },
+  {
+   "id": "kmle-2026-1867",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "A Positive Hepatitis B Surface Antigen with Normal Liver Tests before Lymphoma Chemotherapy in an Older Man",
+   "tags": [
+    "hbv-reactivation",
+    "rituximab",
+    "prophylaxis",
+    "entecavir"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1867.md",
+   "snippet": "64세 남자가 미만성 거대B세포림프종으로 진단받고 리툭시맙을 포함한 항암 화학요법을 시작할 예정이다. 30대에 B형간염 보균자라는 말을 들었으나 치료받은 적은 없다. 피로·황달은 없다. 항암 전 검사에서 다음 결과를 얻었다. 활력징후와 검사 결과는 자료와 같다. 항암 전에 가장 적절한 처치는? A. 항암 시작 전 엔테카비르 투여 시작 B. ALT가 오르면 엔테카비르 투여 시작 C. B형간염 백신 접종 후 항암 시작 D. 리툭시",
+   "text": "Gastroenterology A Positive Hepatitis B Surface Antigen with Normal Liver Tests before Lymphoma Chemotherapy in an Older Man hbv-reactivation rituximab prophylaxis entecavir KMLE 2026 / Claude 64세 남자가 미만성 거대B세포림프종으로 진단받고 리툭시맙을 포함한 항암 화학요법을 시작할 예정이다. 30대에 B형간염 보균자라는 말을 들었으나 치료받은 적은 없다. 피로·황달은 없다. 항암 전 검사에서 다음 결과를 얻었다. 활력징후와 검사 결과는 자료와 같다. 항암 전에 가장 적절한 처치는? A. 항암 시작 전 엔테카비르 투여 시작 B. ALT가 오르면 엔테카비르 투여 시작 C. B형간염 백신 접종 후 항암 시작 D. 리툭시맙을 뺀 항암 요법으로 변경 E. 매달 HBV DNA를 보다 오르면 투여 시작 B형간염 표면항원 양성인 사람이 리툭시맙을 포함한 항암을 받으면 재활성화 위험이 매우 높아, HBV DNA·ALT와 관계없이 항암 시작 전(또는 동시에) 엔테카비르·테노포비르 같은 강력한 항바이러스제를 예방으로 시작한다. 예방 투여는 리툭시맙 치료가 끝난 뒤에도 적어도 12–18개월 이어 간다."
+  },
+  {
+   "id": "kmle-2026-1866",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "A New Liver Nodule on Surveillance Ultrasound in a Man with Hepatitis B Cirrhosis on Long-term Antiviral Treatment",
+   "tags": [
+    "hepatocellular-carcinoma",
+    "noninvasive-diagnosis",
+    "cirrhosis",
+    "hepatitis-b"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1866.md",
+   "snippet": "58세 남자가 정기 검사에서 간에 결절이 보인다는 말을 듣고 왔다. 만성 B형간염으로 10년째 엔테카비르를 먹고 있고 5년 전 간경변을 진단받았다. 6개월마다 초음파·알파태아단백 검사를 받아 왔고 이번 초음파에서 처음 결절이 보여 역동적 조영증강 CT를 찍었다. 증상은 없고 복수·황달은 없다. 활력징후와 검사 결과는 자료와 같다. 이 결절에 대한 판단으로 가장 적절한 것은? A. 간 조직검사로 확진한 뒤 치료를 정한다 B. 알",
+   "text": "Gastroenterology A New Liver Nodule on Surveillance Ultrasound in a Man with Hepatitis B Cirrhosis on Long-term Antiviral Treatment hepatocellular-carcinoma noninvasive-diagnosis cirrhosis hepatitis-b KMLE 2026 / Claude 58세 남자가 정기 검사에서 간에 결절이 보인다는 말을 듣고 왔다. 만성 B형간염으로 10년째 엔테카비르를 먹고 있고 5년 전 간경변을 진단받았다. 6개월마다 초음파·알파태아단백 검사를 받아 왔고 이번 초음파에서 처음 결절이 보여 역동적 조영증강 CT를 찍었다. 증상은 없고 복수·황달은 없다. 활력징후와 검사 결과는 자료와 같다. 이 결절에 대한 판단으로 가장 적절한 것은? A. 간 조직검사로 확진한 뒤 치료를 정한다 B. 알파태아단백이 정상이므로 재생결절로 본다 C. 3개월 뒤 같은 CT로 크기 변화를 본다 D. 현재 영상 소견으로 간세포암으로 진단한다 E. 양전자방출단층촬영으로 악성 여부를 먼저 가린다 간세포암 고위험군(B형간염 간경변)에서 1 cm 이상 결절이 동맥기 조영 증강과 문맥기·지연기 씻김을 보이면 조직검사 없이 영상으로 간세포암을 진단한다. 알파태아단백은 간세포암의 상당수에서 정상이라 정상값이 진단을 뒤집지 못한다."
+  },
+  {
+   "id": "kmle-2026-1865",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "A Hard Thyroid Lump in a Woman Whose Father Had Thyroid Surgery and Whose Aunt Had an Adrenal Tumor Removed",
+   "tags": [
+    "medullary-thyroid-carcinoma",
+    "men2",
+    "pheochromocytoma",
+    "preoperative"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1865.md",
+   "snippet": "36세 여자가 목에서 만져지는 혹으로 왔다. 아버지가 40대에 갑상선암 수술을 받았고, 고모는 갑자기 혈압이 치솟는 발작으로 치료받다 부신 종양을 떼어냈다. 한 달에 몇 번 두통과 함께 가슴이 두근거리고 땀이 난다. 갑상선 오른쪽 엽에 단단한 결절이 만져진다. 갑상선 전절제술과 경부 림프절 절제를 계획하고 있다. 활력징후와 검사 결과는 자료와 같다. 수술 전에 먼저 시행할 검사로 가장 적절한 것은? A. 혈청 프로락틴 B. 혈",
+   "text": "Endocrinology A Hard Thyroid Lump in a Woman Whose Father Had Thyroid Surgery and Whose Aunt Had an Adrenal Tumor Removed medullary-thyroid-carcinoma men2 pheochromocytoma preoperative KMLE 2026 / Claude 36세 여자가 목에서 만져지는 혹으로 왔다. 아버지가 40대에 갑상선암 수술을 받았고, 고모는 갑자기 혈압이 치솟는 발작으로 치료받다 부신 종양을 떼어냈다. 한 달에 몇 번 두통과 함께 가슴이 두근거리고 땀이 난다. 갑상선 오른쪽 엽에 단단한 결절이 만져진다. 갑상선 전절제술과 경부 림프절 절제를 계획하고 있다. 활력징후와 검사 결과는 자료와 같다. 수술 전에 먼저 시행할 검사로 가장 적절한 것은? A. 혈청 프로락틴 B. 혈장 유리 메타네프린 C. 혈청 갑상글로불린 D. 갑상선 방사성요오드 스캔 E. 경부·흉부 양전자방출단층촬영 갑상선 수질암에 가족의 갑상선암·부신 종양이 있어 다발내분비샘종양 2형을 의심한다. 갈색세포종을 모른 채 마취·수술하면 고혈압 위기가 올 수 있으므로 갑상선 수술 전에 혈장 유리 메타네프린으로 갈색세포종을 먼저 확인하고, 있으면 알파차단 뒤 부신을 먼저 절제한다."
+  },
+  {
+   "id": "kmle-2026-1864",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Painful Front of the Neck Spreading to the Jaw with Palpitations Three Weeks after a Sore Throat in a Woman in Her Forties",
+   "tags": [
+    "subacute-thyroiditis",
+    "thyrotoxicosis",
+    "nsaid",
+    "beta-blocker"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1864.md",
+   "snippet": "41세 여자가 2주 전부터 목 앞쪽이 아프고 통증이 턱과 귀로 뻗친다며 왔다. 3주 전 목감기를 앓았다. 두근거리고 땀이 많이 나며 손이 떨린다. 갑상선이 약간 커져 있고 단단하며 누르면 몹시 아프다. 피부 발적이나 파동은 없다. 눈 돌출은 없다. 출산은 3년 전이고 지금 임신은 아니다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 메티마졸과 프로프라놀롤 B. 방사성요오드와 프로프라놀롤 C. 프로필티오우라실",
+   "text": "Endocrinology Painful Front of the Neck Spreading to the Jaw with Palpitations Three Weeks after a Sore Throat in a Woman in Her Forties subacute-thyroiditis thyrotoxicosis nsaid beta-blocker KMLE 2026 / Claude 41세 여자가 2주 전부터 목 앞쪽이 아프고 통증이 턱과 귀로 뻗친다며 왔다. 3주 전 목감기를 앓았다. 두근거리고 땀이 많이 나며 손이 떨린다. 갑상선이 약간 커져 있고 단단하며 누르면 몹시 아프다. 피부 발적이나 파동은 없다. 눈 돌출은 없다. 출산은 3년 전이고 지금 임신은 아니다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 메티마졸과 프로프라놀롤 B. 방사성요오드와 프로프라놀롤 C. 프로필티오우라실과 비스테로이드소염제 D. 레보티록신과 비스테로이드소염제 E. 비스테로이드소염제와 프로프라놀롤 상기도 감염 뒤 생긴 아픈 갑상선, 적혈구침강속도 상승, 갑상선중독증, 섭취가 거의 없는 스캔은 아급성 갑상선염이다. 호르몬 합성이 늘어난 것이 아니라 저장된 호르몬이 새어 나온 것이므로 항갑상선제·방사성요오드는 효과가 없고, 비스테로이드소염제로 통증을, 베타차단제로 증상을 조절한다."
+  },
+  {
+   "id": "kmle-2026-1863",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Intensely Itchy Grouped Small Blisters on the Elbows, Knees and Buttocks in a Young Man with Occasional Loose Stools",
+   "tags": [
+    "dermatitis-herpetiformis",
+    "dapsone",
+    "g6pd",
+    "celiac"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1863.md",
+   "snippet": "28세 남자가 1년 전부터 팔꿈치·무릎·엉덩이에 몹시 가려운 작은 물집이 무리 지어 생겼다 없어지기를 되풀이한다며 왔다. 긁어서 대부분 딱지가 앉아 있다. 가끔 묽은 변을 보지만 체중 감소는 없다. 결핵·간염을 앓은 적은 없다. 글루텐 제한 식이를 시작하고, 식이 효과가 나타나기까지 가려움과 물집을 빨리 줄이려고 약을 함께 쓰기로 했다. 활력징후와 검사 결과는 자료와 같다. 이 약을 시작하기 전에 확인해야 할 검사로 가장 적절",
+   "text": "Dermatology Intensely Itchy Grouped Small Blisters on the Elbows, Knees and Buttocks in a Young Man with Occasional Loose Stools dermatitis-herpetiformis dapsone g6pd celiac KMLE 2026 / Claude 28세 남자가 1년 전부터 팔꿈치·무릎·엉덩이에 몹시 가려운 작은 물집이 무리 지어 생겼다 없어지기를 되풀이한다며 왔다. 긁어서 대부분 딱지가 앉아 있다. 가끔 묽은 변을 보지만 체중 감소는 없다. 결핵·간염을 앓은 적은 없다. 글루텐 제한 식이를 시작하고, 식이 효과가 나타나기까지 가려움과 물집을 빨리 줄이려고 약을 함께 쓰기로 했다. 활력징후와 검사 결과는 자료와 같다. 이 약을 시작하기 전에 확인해야 할 검사로 가장 적절한 것은? A. 혈청 총 IgA 농도 B. 포도당 6 인산탈수소효소 활성 C. 갑상선자극호르몬 D. B형간염 표면항원 E. 인터페론감마 분비검사 팔꿈치·무릎·엉덩이의 가려운 무리 지은 물집, 진피유두의 IgA 과립 침착, 항조직트랜스글루타미나아제 IgA 양성은 포진피부염이다. 글루텐 제한 식이 효과가 나기까지 쓰는 약은 답손이고, 답손은 포도당 6 인산탈수소효소 결핍에서 심한 용혈을 일으키므로 시작 전에 효소 활성을 확인한다."
+  },
+  {
+   "id": "kmle-2026-1862",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Itchy Purple Flat Bumps on the Wrists and White Streaks inside the Cheeks in a Woman Who Had a Transfusion Long Ago",
+   "tags": [
+    "lichen-planus",
+    "hepatitis-c",
+    "oral-lesion",
+    "screening"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1862.md",
+   "snippet": "52세 여자가 3개월 전부터 손목 안쪽과 발목에 가려운 발진이 생겨 왔다. 병변은 지름 3–5 mm의 보라색 납작한 다각형 구진이고 표면에 가는 흰 그물 모양 줄이 보인다. 긁은 자리를 따라 같은 구진이 줄지어 생겼다. 양쪽 볼 점막에 흰 레이스 모양 줄무늬가 있다. 최근 새로 먹기 시작한 약은 없고, 치과 금속 치료나 손에 닿는 금속·염료는 없다. 30년 전 수술 중 수혈을 받은 적이 있다. 활력징후와 검사 결과는 자료와 같",
+   "text": "Dermatology Itchy Purple Flat Bumps on the Wrists and White Streaks inside the Cheeks in a Woman Who Had a Transfusion Long Ago lichen-planus hepatitis-c oral-lesion screening KMLE 2026 / Claude 52세 여자가 3개월 전부터 손목 안쪽과 발목에 가려운 발진이 생겨 왔다. 병변은 지름 3–5 mm의 보라색 납작한 다각형 구진이고 표면에 가는 흰 그물 모양 줄이 보인다. 긁은 자리를 따라 같은 구진이 줄지어 생겼다. 양쪽 볼 점막에 흰 레이스 모양 줄무늬가 있다. 최근 새로 먹기 시작한 약은 없고, 치과 금속 치료나 손에 닿는 금속·염료는 없다. 30년 전 수술 중 수혈을 받은 적이 있다. 활력징후와 검사 결과는 자료와 같다. 진단에 맞춰 함께 시행할 검사로 가장 적절한 것은? A. 혈청 항핵항체 검사 B. 병변 수산화칼륨 검사 C. 금속·화학물질 첩포 검사 D. C형간염 항체 검사 E. 혈청 총 IgE 검사 보라색 납작한 다각형 구진·흰 그물 모양 줄·긁은 자리를 따라 생기는 병변·볼 점막의 흰 레이스 줄무늬와 띠 모양 림프구 침윤은 편평태선이다. 편평태선은 C형간염과 관련이 있고, 이 환자는 수혈력과 ALT 상승이 있어 C형간염 항체 검사를 한다."
+  },
+  {
+   "id": "kmle-2026-1861",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Two Fainting Spells This Morning with a Slow Pulse and Low Blood Pressure in a Woman in Her Late Seventies",
+   "tags": [
+    "complete-heart-block",
+    "bradycardia",
+    "transcutaneous-pacing",
+    "ecg"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1861.md",
+   "snippet": "78세 여자가 오늘 아침 두 번 잠깐 정신을 잃고 쓰러져 응급실에 왔다. 지금은 어지럽고 기운이 없으며 묻는 말에 느리게 대답한다. 고혈압으로 암로디핀을 먹고 있고 심박수를 늦추는 약은 먹지 않는다. 피부가 차고 축축하다. 심전도는 그림과 같다. 아트로핀을 3–5분 간격으로 세 번(총 3 mg) 정맥 주사했으나 맥박과 혈압은 변하지 않았다. 활력징후와 검사 결과는 자료와 같다. 다음 처치로 가장 적절한 것은? A. 경피 심박조",
+   "text": "Cardiology Two Fainting Spells This Morning with a Slow Pulse and Low Blood Pressure in a Woman in Her Late Seventies complete-heart-block bradycardia transcutaneous-pacing ecg KMLE 2026 / Claude 78세 여자가 오늘 아침 두 번 잠깐 정신을 잃고 쓰러져 응급실에 왔다. 지금은 어지럽고 기운이 없으며 묻는 말에 느리게 대답한다. 고혈압으로 암로디핀을 먹고 있고 심박수를 늦추는 약은 먹지 않는다. 피부가 차고 축축하다. 심전도는 그림과 같다. 아트로핀을 3–5분 간격으로 세 번(총 3 mg) 정맥 주사했으나 맥박과 혈압은 변하지 않았다. 활력징후와 검사 결과는 자료와 같다. 다음 처치로 가장 적절한 것은? A. 경피 심박조율 B. 아트로핀 추가 투여 C. 아미오다론 정맥 주사 D. 아데노신 급속 정맥 주사 E. 칼슘 글루코네이트 정맥 주사 P파와 QRS가 따로 뛰는 완전 방실차단에 실신·저혈압·의식 저하가 있어 불안정 서맥이다. 최대량 아트로핀에 반응이 없고 칼륨·약물 같은 되돌릴 원인이 없으므로 경피 심박조율로 심박을 확보한 뒤 경정맥 임시 심박조율과 영구 심박조율기를 준비한다."
+  },
+  {
+   "id": "kmle-2026-1860",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Sudden Rapid Irregular Palpitations with Changing QRS Shapes in a Young Man with Past Brief Episodes",
+   "tags": [
+    "pre-excitation",
+    "atrial-fibrillation",
+    "accessory-pathway",
+    "antiarrhythmic"
+   ],
+   "source": "KMLE 2026 / Claude",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/kmle/2026/kmle-2026-1860.md",
+   "snippet": "24세 남자가 1시간 전 갑자기 시작된 심한 두근거림으로 응급실에 왔다. 이전에도 몇 분 안에 저절로 멎는 두근거림이 몇 번 있었다. 어지럼·흉통·실신은 없고 의식은 명료하며 말을 또렷하게 한다. 복용하는 약은 없고 술·약물은 하지 않는다. 피부는 따뜻하고 말초 맥박은 잘 만져진다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 아데노신 급속 정맥 주사 B. 베라파밀 정맥 주사 C. 프로카인아마이드 정맥 주사",
+   "text": "Cardiology Sudden Rapid Irregular Palpitations with Changing QRS Shapes in a Young Man with Past Brief Episodes pre-excitation atrial-fibrillation accessory-pathway antiarrhythmic KMLE 2026 / Claude 24세 남자가 1시간 전 갑자기 시작된 심한 두근거림으로 응급실에 왔다. 이전에도 몇 분 안에 저절로 멎는 두근거림이 몇 번 있었다. 어지럼·흉통·실신은 없고 의식은 명료하며 말을 또렷하게 한다. 복용하는 약은 없고 술·약물은 하지 않는다. 피부는 따뜻하고 말초 맥박은 잘 만져진다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 아데노신 급속 정맥 주사 B. 베라파밀 정맥 주사 C. 프로카인아마이드 정맥 주사 D. 디곡신 정맥 주사 E. 메토프롤롤 정맥 주사 짧은 PR·완만한 QRS 시작이 있던 젊은 남자에게 생긴 불규칙하고 QRS 모양이 바뀌는 매우 빠른 빈맥은 부전도로를 타고 내려가는 심방세동이다. 혈역학적으로 안정되어 있으므로 부전도로 전도를 늦추는 프로카인아마이드를 쓰고, 방실결절 차단제는 부전도로 전도를 늘려 심실세동을 부를 수 있어 피한다."
+  },
   {
    "id": "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid",
    "type": "concept",
