@@ -5,7 +5,7 @@
    여는 곳 넷(2판 — 「오답만이 아니라 전부 · 푸는 것도 패드로 · 학습서도」):
      ① 오답노트의 「✍ 필기」  ② 문항 화면의 「✍ 펜으로 풀기」 — 필기장 안에서 보기를 톡 쳐 채점하고 다음 문항으로 넘어간다
         (채점 · 학습 기록 · 오답노트 저장은 앱이 그대로 한다. 전에 쓴 필기는 채점 뒤에 보인다 — 답을 미리 알려 주지 않게)
-     ③ 개념 정리본(학습서의 단위)의 「✍ 이 정리본에 필기」  ④ 첫 화면의 「✍ 필기 모음」 — 필기가 있는 것 전부.
+     ③ 개념 정리본(학습서의 단위)의 「✍ 이 정리본에 필기」  ④ 메뉴 줄의 「📖 학습서 필기」 → 그 안의 「✍ 필기 모음」 — 필기가 있는 것 전부.
    3판(써 본 뒤 — 「펜 해상도 · 색 여러 개 · 촉감 · 직선 · 문제 전체가 한 화면에」): 획을 곡선으로 잇고 잘게 나눠 굵기를 바꿔 가며
    그린다(압력 · 빠르기) · 펜 색 12 + 형광펜 색 5 + 굵기 5 · 직선(단추를 켜거나, 긋다가 멈추면 펴진다 · 수평 · 수직에 맞춘다) ·
    가로 화면에서는 문항 옆에 여백을 나란히 놓고 문항 + 보기가 한 화면에 담기게 줄인다 · 🔑 로그인(아이디 · 비밀번호로 키를 만든다).
@@ -1344,23 +1344,69 @@ var MEDKOS_INK = (function () {
     });
   }
 
-  /* 필기 모음 — 필기가 있는 것 전부(이 기기 색인 + 다른 기기에서 올린 것). 문항이든 정리본이든 눌러서 이어 쓴다. */
-  const KIND_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", variant: "변형", concept: "정리본" };
+  /* 필기 모음 — 필기가 있는 것 전부(이 기기 색인 + 다른 기기에서 올린 것).
+     2026-11-15 2차(「한꺼번에 있으면 구분하기 힘들다」): 종류(KMLE · USMLE · 정리본 · 논문)로 먼저 나누고 그 안에서 분야별로 묶는다.
+     KMLE · USMLE 는 **틀린 문항**(지금 오답노트에 있는 것)과 **맞힌 문항**(그 밖)을 따로 본다.
+     논문 칸은 펜 필기가 아니라 논문 화면에서 적은 메모다(이 기기에 저장된 것 — papers-app.js 의 medkos_paper_notes).
+     영상 · 변형 문항 칸은 필기가 있을 때만 보인다. */
+  const KIND_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상", variant: "변형", concept: "정리본", paper: "논문" };
+  const TABS = ["kmle", "usmle", "concept", "paper", "imaging", "variant"], ALWAYS = 4;      // 앞의 넷은 비어 있어도 보인다
+  const ALLV = { tab: "", sub: "wrong" };
+  function paperNotes() {
+    try {
+      const o = JSON.parse(localStorage.getItem("medkos_paper_notes") || "{}") || {};
+      return Object.keys(o).filter((k) => o[k] && o[k].text).map((k) => ({ id: k, text: String(o[k].text), updated: String(o[k].updated || "") }));
+    } catch (e) { return []; }
+  }
+  // 논문 제목 · 분야는 papers.js(2.5 MB)에 있다 — 논문 칸을 열 때만 읽는다
+  function needPapers(done) {
+    if (Array.isArray(window.PAPERS) || needPapers.failed) return done();
+    if (needPapers.busy) return;
+    needPapers.busy = true;
+    const s = document.createElement("script");
+    s.src = "papers.js";
+    s.onload = () => { needPapers.busy = false; done(); };
+    s.onerror = () => { needPapers.busy = false; needPapers.failed = true; done(); };
+    document.head.appendChild(s);
+  }
+  const fieldName = (t) => BOOKS[t] || t || "기타";                // 분야 이름 — 학습서의 책 이름과 같게
+  function allItems() {
+    const idx = loadIdx(), items = {};
+    Object.keys(idx).forEach((k) => { items[k] = { n: idx[k] }; });
+    EXAMS.forEach((ex) => Object.keys(NET.remote[ex] || {}).forEach((f) => {
+      const k = keyOf(ex, unfid(ex, f));
+      (items[k] = items[k] || { n: 0 }).remote = true;
+    }));
+    return Object.keys(items).map((k) => {
+      const i = k.indexOf(":"), ex = k.slice(0, i), id = k.slice(i + 1);
+      if (ex === "concept") {
+        const c = liveConcept(id);
+        return { ex, id, n: items[k].n, title: c ? c.title : id, group: fieldName(c && c.topic), wrong: false };
+      }
+      const q = findQuestion(id);
+      return { ex, id, n: items[k].n, title: q ? (q.question || q.vignette || "").trim().slice(0, 90) : "(문항 은행에 없음)",
+               group: fieldName(q && (q.subject || q.topic)), wrong: !!wrongEntry(ex, id) };
+    });
+  }
   function showAll() {
     let el = document.getElementById("inkList");
     if (!el) {
       el = document.createElement("div");
       el.id = "inkList"; el.className = "ink-list hidden";
       el.innerHTML = `<section class="card"><h2>필기 모음 <span id="inkListCount" class="muted"></span></h2>
-        <div class="row"><button data-a="back">← 돌아가기</button></div><div id="inkListBody"></div></section>`;
+        <div class="row"><button data-a="back">← 돌아가기</button><span id="inkTabs"></span></div>
+        <div class="row" id="inkSubs"></div><div id="inkListBody"></div></section>`;
       document.body.appendChild(el);
       el.addEventListener("click", (e) => {
         const b = e.target.closest("button");
         if (!b) return;
         if (b.getAttribute("data-a") === "back") return el.classList.add("hidden");
+        if (b.hasAttribute("data-tab")) { ALLV.tab = b.getAttribute("data-tab"); ALLV.sub = "wrong"; ALLV.picked = false; return renderAll(); }
+        if (b.hasAttribute("data-sub")) { ALLV.sub = b.getAttribute("data-sub"); ALLV.picked = true; return renderAll(); }
         if (b.hasAttribute("data-open")) open(b.getAttribute("data-ex"), b.getAttribute("data-open"));
       });
     }
+    document.body.appendChild(el);                                // 학습서 목록 위에 뜨게 맨 위 층으로
     el.classList.remove("hidden");
     renderAll();
     EXAMS.forEach((ex) => {
@@ -1369,23 +1415,54 @@ var MEDKOS_INK = (function () {
     });
   }
   function renderAll() {
-    const idx = loadIdx(), items = {}, L = g("LEARN");
-    Object.keys(idx).forEach((k) => { items[k] = { n: idx[k] }; });
-    EXAMS.forEach((ex) => Object.keys(NET.remote[ex] || {}).forEach((f) => {
-      const k = keyOf(ex, unfid(ex, f));
-      (items[k] = items[k] || { n: 0 }).remote = true;
-    }));
-    const keys = Object.keys(items).sort().reverse();
-    document.getElementById("inkListCount").textContent = `(${keys.length}개)`;
-    document.getElementById("inkListBody").innerHTML = keys.length ? keys.map((k) => {
-      const i = k.indexOf(":"), ex = k.slice(0, i), id = k.slice(i + 1), it = items[k];
-      let title = "", sub = "";
-      if (ex === "concept") { const c = L && typeof L.concept === "function" ? L.concept(id) : null; title = c ? c.title : id; sub = c ? c.topic || "" : ""; }
-      else { const q = findQuestion(id); title = q ? (q.question || q.vignette || "").trim().slice(0, 90) : "(문항 은행에 없음)"; sub = q ? q.subject || "" : ""; }
-      return `<div class="w"><div class="whead">${ex === "concept" ? "" : "#" + esc(id) + " "}<span class="muted">${esc(KIND_NAME[ex] || ex)}${sub ? " · " + esc(sub) : ""}</span></div>
-        <div class="wmeta">${esc(title)}</div>
-        <button data-open="${esc(id)}" data-ex="${esc(ex)}" class="ink-open-btn has">✍ 열기${it.n ? ` (${it.n}획)` : " ☁"}</button></div>`;
-    }).join("") : `<p class="muted">아직 필기가 없습니다. 오답노트의 「✍ 필기」, 문항 화면의 「✍ 펜으로 풀기」, 개념 정리본의 「✍ 이 정리본에 필기」, 첫 화면의 「📖 학습서 필기」에서 시작합니다.</p>`;
+    const el = document.getElementById("inkList");
+    if (!el) return;
+    const items = allItems(), notes = paperNotes();
+    const count = (t) => (t === "paper" ? notes.length : items.filter((x) => x.ex === t).length);
+    const tabs = TABS.filter((t, i) => i < ALWAYS || count(t));
+    if (tabs.indexOf(ALLV.tab) < 0) ALLV.tab = tabs.filter(count)[0] || tabs[0];
+    const tab = ALLV.tab, chip = (attr, v, text, on) => `<button type="button" class="chip${on ? " on" : ""}" ${attr}="${v}">${esc(text)}</button>`;
+    document.getElementById("inkListCount").textContent = `(${items.length + notes.length}개)`;
+    document.getElementById("inkTabs").innerHTML = tabs.map((t) => chip("data-tab", t, `${KIND_NAME[t]} ${count(t)}`, t === tab)).join("");
+    let rows = items.filter((x) => x.ex === tab), subs = "";
+    if (tab === "kmle" || tab === "usmle") {
+      const w = rows.filter((x) => x.wrong).length, r = rows.length - w;
+      if (!ALLV.picked) ALLV.sub = !w && r ? "right" : "wrong";   // 고르지 않았으면 필기가 있는 쪽을 먼저
+      subs = chip("data-sub", "wrong", `틀린 문항 ${w}`, ALLV.sub === "wrong") + chip("data-sub", "right", `맞힌 문항 ${r}`, ALLV.sub === "right")
+        + `<span class="muted small">틀린 문항 = 지금 오답노트에 있는 문항</span>`;
+      rows = rows.filter((x) => x.wrong === (ALLV.sub === "wrong"));
+    }
+    document.getElementById("inkSubs").innerHTML = subs;
+    const body = document.getElementById("inkListBody");
+    const grouped = (list, rowHtml) => {
+      const by = {};
+      list.forEach((x) => { (by[x.group] = by[x.group] || []).push(x); });
+      return Object.keys(by).sort((a, b) => a.localeCompare(b, "ko")).map((gname) =>
+        `<details open><summary>${esc(gname)} <span class="muted small">${by[gname].length}개</span></summary>${by[gname].map(rowHtml).join("")}</details>`).join("");
+    };
+    if (tab === "paper") {
+      if (!notes.length) { body.innerHTML = `<p class="muted">논문에 적은 메모가 없습니다. 논문 화면에서 「💡 내 생각 / 아이디어」에 적으면 여기 모입니다(이 기기에 저장된 메모).</p>`; return; }
+      if (!Array.isArray(window.PAPERS) && !needPapers.failed) {
+        body.innerHTML = `<p class="muted">논문 목록을 불러오는 중…</p>`;
+        return needPapers(() => { if (!el.classList.contains("hidden") && ALLV.tab === "paper") renderAll(); });
+      }
+      const byId = {};
+      (window.PAPERS || []).forEach((p) => { byId[p.id] = p; });
+      const list = notes.map((nt) => { const p = byId[nt.id] || {}; return Object.assign({ p, group: fieldName(p.topic) }, nt); })
+        .sort((a, b) => b.updated.localeCompare(a.updated));
+      body.innerHTML = grouped(list, (x) => `<div class="w"><div class="wmeta"><b>${esc(x.p.title || x.id)}</b></div>
+          <div class="whead muted">${esc([x.p.journal, x.p.pubdate].filter(Boolean).join(" · "))}</div>
+          <div class="ink-memo">${esc(x.text.length > 300 ? x.text.slice(0, 300) + "…" : x.text)}</div>
+          <a class="ink-open-btn has" href="papers.html?id=${encodeURIComponent(x.id)}">📄 논문에서 열기</a></div>`);
+      return;
+    }
+    rows.sort((a, b) => (a.id < b.id ? 1 : -1));
+    body.innerHTML = rows.length ? grouped(rows, (x) => `<div class="w"><div class="whead">${x.ex === "concept" ? "" : "#" + esc(x.id)}</div>
+        <div class="wmeta">${esc(x.title)}</div>
+        <button data-open="${esc(x.id)}" data-ex="${esc(x.ex)}" class="ink-open-btn has">✍ 열기${x.n ? ` (${x.n}획)` : " ☁"}</button></div>`)
+      : `<p class="muted">${tab === "concept" ? "필기한 정리본이 없습니다. 「📖 학습서 필기」에서 정리본을 열어 쓰면 여기 모입니다."
+        : (tab === "kmle" || tab === "usmle") && items.some((x) => x.ex === tab) ? "이쪽에는 필기한 문항이 없습니다."
+        : "필기한 문항이 없습니다. 오답노트의 「✍ 필기」, 문항 화면의 「✍ 펜으로 풀기」에서 쓰면 여기 모입니다."}</p>`;
   }
   // 개념 정리본 머리에 필기 단추(learn.js 의 renderConcept 가 부른다 — 필기장 안에서 그릴 때는 부르지 않는다)
   function conceptButton(box, cid) {
@@ -1426,6 +1503,7 @@ var MEDKOS_INK = (function () {
         <p class="muted small">정리본은 늘 최신판으로 열리고, 필기는 그 위에 그대로 남습니다. 필기한 뒤에 고쳐진 정리본에는 「고쳐짐」이 붙고,
           열면 무엇이 바뀌었는지 알려 줍니다.</p>
         <div class="row"><button data-a="back">← 돌아가기</button>
+          <button data-a="all" title="필기가 있는 문항 · 정리본 전부">✍ 필기 모음</button>
           <input id="inkShelfQ" type="search" placeholder="제목으로 찾기" autocomplete="off" /></div>
         <div id="inkShelfBody"></div></section>`;
       document.body.appendChild(el);
@@ -1433,6 +1511,7 @@ var MEDKOS_INK = (function () {
         const b = e.target.closest("button");
         if (!b) return;
         if (b.getAttribute("data-a") === "back") return el.classList.add("hidden");
+        if (b.getAttribute("data-a") === "all") return showAll();
         if (b.hasAttribute("data-open")) {
           const grp = b.closest("details");
           const list = [].map.call((grp || el).querySelectorAll("button[data-open]"), (x) => x.getAttribute("data-open"));
@@ -1482,20 +1561,21 @@ var MEDKOS_INK = (function () {
       o.id = "inkLogoutBtn"; o.type = "button"; o.className = "small"; o.textContent = "로그아웃"; o.onclick = logout;
       link.parentNode.insertBefore(o, link);
     }
-    const nav = document.getElementById("navInk");               // 메뉴 줄 맨 위의 「✍ 필기 모음」(2026-11-15) — 이 화면에서는 새로 읽지 않고 바로 연다
+    // 메뉴 줄 맨 위의 「📖 학습서 필기」(2026-11-15) — 이 화면에서는 새로 읽지 않고 바로 연다. 「✍ 필기 모음」은 그 안의 단추다
+    // (사용자 「학습서 필기도 맨 위로 · 들어간 다음에 필기 모음」 — 첫 화면 단추 줄에는 필기 단추를 두지 않는다).
+    const nav = document.getElementById("navShelf");
     if (nav && !nav.getAttribute("data-bound")) {
       nav.setAttribute("data-bound", "1");
-      nav.addEventListener("click", (e) => { e.preventDefault(); showAll(); });
-    }
-    if (vw && !document.getElementById("inkShelfBtn")) {
-      const b = document.createElement("button");
-      b.id = "inkShelfBtn"; b.textContent = "📖 학습서 필기"; b.onclick = showShelf;
-      vw.parentNode.insertBefore(b, vw.nextSibling);
+      nav.addEventListener("click", (e) => { e.preventDefault(); showShelf(); });
     }
   }
   addButtons();
   gateIfNeeded();
-  try { if (new URLSearchParams(location.search).get("view") === "ink") showAll(); } catch (e) { /* 주소를 못 읽으면 그냥 둔다 */ }
+  try {                                                          // 다른 화면의 메뉴 줄에서 넘어왔다(ink = 예전 주소)
+    const view = new URLSearchParams(location.search).get("view");
+    if (view === "shelf" || view === "ink") showShelf();
+    if (view === "ink") showAll();
+  } catch (e) { /* 주소를 못 읽으면 그냥 둔다 */ }
 
   window.addEventListener("online", () => { flushAll(); });
   setTimeout(flushAll, 5000);

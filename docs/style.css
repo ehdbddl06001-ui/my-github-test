@@ -657,9 +657,12 @@ body.ink-open{overflow:hidden}
 .ink-sheet .ink-note button{font:inherit; font-size:.78rem; padding:5px 10px; border-radius:8px; border:1px solid #c9b46a; background:#fff; color:#1b2430; cursor:pointer}
 .ink-ov.old .ink-layer{pointer-events:none}
 .ink-ov.old .ink-tools > :not(.ink-nav){display:none !important}
-.ink-shelf details{border:1px solid var(--line); border-radius:10px; margin:8px 0; padding:0 12px; background:#0c1522}
-.ink-shelf summary{cursor:pointer; padding:11px 0; font-weight:700}
-.ink-shelf details .w{margin:8px 0}
+.ink-list details{border:1px solid var(--line); border-radius:10px; margin:8px 0; padding:0 12px; background:#0c1522}
+.ink-list summary{cursor:pointer; padding:11px 0; font-weight:700}
+.ink-list details .w{margin:8px 0}
+.ink-memo{white-space:pre-wrap; font-size:.86rem; line-height:1.5; margin:6px 0 8px; padding:8px 10px; border-left:3px solid #d9b44a; background:#101b2a; border-radius:0 8px 8px 0}
+a.ink-open-btn{display:inline-block; text-decoration:none; padding:7px 12px; border:1px solid #d9b44a; border-radius:10px; color:#f0d68a; font-size:.88rem}
+#inkTabs{display:inline-flex; flex-wrap:wrap; gap:2px}
 .ink-shelf input[type=search]{flex:1 1 160px; min-width:140px; padding:8px 10px; font-size:.9rem; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--ink)}
 .ink-badge{display:inline-block; font-size:.72rem; font-weight:400; padding:1px 8px; border-radius:999px; background:#4a3a10; color:#f0d68a; margin-left:8px; vertical-align:1px}
 /* 필기 5판 — 글자 선명도 · 두 단 한 쪽 보기

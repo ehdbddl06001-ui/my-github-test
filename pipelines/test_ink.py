@@ -272,16 +272,30 @@ class Wiring(unittest.TestCase):
         self.assertNotIn("✍ 내 필기본", ink)                                             # 구분을 없앴다
         self.assertIn('UI.el.classList.toggle("old", st.kind === "concept" && !!st.old);', ink)
         self.assertIn(".ink-ov.old .ink-layer{pointer-events:none}", css)             # 전에 쓴 판 = 읽기만
-        self.assertIn('b.id = "inkShelfBtn"', ink)
-        self.assertIn('document.getElementById("navInk")', ink)                       # 「필기 모음」은 메뉴 줄 맨 위에
+        # 메뉴 줄 맨 위에 「학습서 필기」, 「필기 모음」은 그 안에(첫 화면 단추 줄에는 필기 단추를 두지 않는다)
+        self.assertIn('document.getElementById("navShelf")', ink)
+        self.assertNotIn("inkShelfBtn", ink)
+        self.assertNotIn("inkAllBtn", ink)
+        self.assertIn('<button data-a="all" title="필기가 있는 문항 · 정리본 전부">✍ 필기 모음</button>', ink)
+        self.assertIn('if (b.getAttribute("data-a") === "all") return showAll();', ink)
         for page in ("index.html", "papers.html", "search.html", "whatsnew.html", "ailab.html", "atlas3d.html"):
-            self.assertIn('<a href="index.html?view=ink" id="navInk">✍ 필기 모음</a>', (DOCS / page).read_text(encoding="utf-8"), page)
+            self.assertIn('<a href="index.html?view=shelf" id="navShelf">📖 학습서 필기</a>', (DOCS / page).read_text(encoding="utf-8"), page)
         try:
             import yaml
         except ImportError:
             self.skipTest("pyyaml 없음")
         books = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))["books"]
         self.assertEqual(json.loads(re.search(r"const BOOKS = (\{.*?\});", ink).group(1)), books)   # 과목 → 책 이름은 PDF 학습서와 같게
+
+    def test_note_collection_is_split_by_kind_field_and_result(self):
+        # 필기 모음(2026-11-15 2차) — 종류(KMLE · USMLE · 정리본 · 논문) → 분야 → KMLE · USMLE 는 틀린 문항 / 맞힌 문항.
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        self.assertIn('const TABS = ["kmle", "usmle", "concept", "paper", "imaging", "variant"], ALWAYS = 4;', ink)
+        self.assertIn("wrong: !!wrongEntry(ex, id)", ink)                              # 틀린 문항 = 지금 오답노트에 있는 문항
+        self.assertIn("rows = rows.filter((x) => x.wrong === (ALLV.sub === \"wrong\"));", ink)
+        self.assertIn("const fieldName = (t) => BOOKS[t] || t || \"기타\";", ink)        # 분야 이름은 학습서의 책 이름과 같게
+        self.assertIn('localStorage.getItem("medkos_paper_notes")', ink)               # 논문 칸 = 논문 화면에서 적은 메모
+        self.assertIn('s.src = "papers.js";', ink)                                     # 논문 묶음은 그 칸을 열 때만 읽는다
 
     def test_paper_stays_sharp_and_fits_one_page(self):
         # 5판(2026-11-15) — 「PDF 를 필기 앱으로 연 것만큼 선명하게 · 한 내용이 한 쪽에 · 확대 축소」.
