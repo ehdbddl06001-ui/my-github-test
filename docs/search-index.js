@@ -1,28 +1,28 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3924,
+  "total": 3928,
   "byType": {
    "kmle": 1856,
    "concept": 170,
+   "paper": 943,
    "imaging": 678,
-   "paper": 939,
    "usmle": 264,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 339,
+   "Cardiology": 340,
    "Nephrology": 252,
-   "Infectious Disease": 232,
-   "Pediatrics": 221,
+   "Infectious Disease": 233,
+   "Pediatrics": 222,
    "Obstetrics & Gynecology": 163,
    "Rheumatology": 145,
-   "Pathology": 140,
+   "Pathology": 141,
    "Psychiatry": 140,
    "Neurology": 138,
    "Hematology-Oncology": 131,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2776,
-   "medium": 1144,
+   "medium": 1148,
    "low": 4
   },
   "tagCount": 4878
@@ -705,6 +705,74 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.electrical-storm.substrate-directed-stabilization.md",
    "snippet": "판단 — 왜 「버티게 한 뒤 바탕을 가른다」인가 첫 목표는 리듬 안정이다. 반복 VT·VF 는 ACLS 대로 처치하고(베타차단제·아미오다론·리도카인), 대사 이상을 고친다. 불안을 덜고 통증을 줄이도록 충분히 진정한다 [[harrison 22: 263장 p.1974]]. 교감 항진이 폭풍을 키운다. 혈역학이 불안정한 부정맥이 되풀이되면 진정·전신마취를 고려하고, 경피 성상신경절 차단·상흉부 경막외 마취로 심장 교감 출력을 줄인",
    "text": "Cardiology 판단 — 왜 「버티게 한 뒤 바탕을 가른다」인가 첫 목표는 리듬 안정이다. 반복 VT·VF 는 ACLS 대로 처치하고(베타차단제·아미오다론·리도카인), 대사 이상을 고친다. 불안을 덜고 통증을 줄이도록 충분히 진정한다 [[harrison 22: 263장 p.1974]]. 교감 항진이 폭풍을 키운다. 혈역학이 불안정한 부정맥이 되풀이되면 진정·전신마취를 고려하고, 경피 성상신경절 차단·상흉부 경막외 마취로 심장 교감 출력을 줄인다 [[harrison 22: 263장 p.1974]]. 다음 처치는 리듬 모양이 가른다. 모니터·ICD 저장 기록으로 단형인지 다형인지, 시작과 끝에서 유발 요인을 본다 [[harrison 22: 263장 p.1974]]. 다형 VT·VF 면 허혈을 먼저 생각한다 — 급성 관동맥증후군이면 응급 재관류술 [[harrison 22: 263장 p.1974]]. 처치가 늦지 않아야 한다. 치료하지 않으면 빠르게 사망으로 가고, 도자절제·항부정맥제·보조 치료가 생명을 구한다 [[harrison 22: 263장 p.1972]]. 기전 — 같은 폭풍, 다른 엔진 단형 VT 의 폭풍은 대개 흉터 안 회귀 회로가 되풀이해 도는 것이다 — 같은 출구에서 나오므로 모양이 같고, 회로를 끊는 도자절제가 중요한 선택지다 [[harrison 22: 263장 p.1972]]. 다형 VT·VF 의 폭풍은 엔진이 다르다. 경색 부위에 살아남은 퍼킨제 세포가 유발 자동능(triggered automaticity)을 보여, 재관류 전후에도 PVC 가 다형 VT·VF 를 반복해 일으킨다 [[harrison 22: 263장 p.1974]]. 경색·허혈이 없는 사람에서도 속가지(fascicle)·유두근에서 나온 PVC 가 같은 방식으로 특발성 VF 폭풍을 일으키고, MRI 로 흉터가 보이는 경우가 많다 [[harrison 22: 263장 p.1974]]. QT 연장에서는 재분극 지연이 꼬임 심실빈맥(torsades de pointes)을 낳아, 재분극을 바로잡는 마그네슘·칼륨과 심박 증가가 듣는다 [[harrison 22: 263장 p.1974–1975]]. 선택 — 바탕에 따른 특수 처치 표의 처치는 공통 전략(리듬 안정·유발 요인 제거·교감 항진 감소) 위에 더하는 것이다 [[harrison 22: 263장 p.1974]]. 꼬임 심실빈맥에서 이소프로테레놀로 동율동 속도를 올릴 수 있지만, 고용량은 이소성 박동을 늘려 부정맥을 악화시킬 수 있다 [[harrison 22: 263장 p.1974–1975]]. 브루가다 형(QT 정상, 안정 시 V1·V2 의 Rsr′ 와 ST 상승)에서는 퀴니딘·이소프로테레놀이 반복 다형 VT·VF 를 없앨 수 있다 [[harrison 22: 263장 p.1975]]. 심질환 병력이 없으면 거대세포 심근염·심장 사르코이드증·일부 바이러스 심근염을 생각한다 — 급한 항염증 치료가 필요한 새 염증 심근병증을 찾으려 심내막 생검을 고려한다 [[harrison 22: 263장 p.1975]]. 급한 고비가 지나면 VT·VF 재발을 막을 전략을 세운다 [[harrison 22: 263장 p.1975]]. 권고와 예외 ICD 충격을 받은 환자 : 기기를 점검해 충격이 실제 심실 부정맥 때문이었는지(리드 이상·심방 부정맥이 아닌지) 확인한다. 한 번의 충격에 다른 증상이 없으면 다음 근무일 또는 원격 전송으로 점검할 수 있지만, 여러 번이면 응급이다 — 구급 체계를 부르고 스스로 운전해 병원에 가지 않는다 [[harrison 22: 263장 p.1972]]. 적절한 충격·조율로 끝난 드문 단발 VT 는 다른 불안정 징후가 없으면 추가 치료가 필요 없을 수 있다(특히 항빈맥 조율로 끝났을 때). 충격은 삶의 질을 떨어뜨리고 외상 후 스트레스를 남길 수 있어, 항빈맥 조율(빠른 VT 도 70 % 넘게 끝냄)·충전 중 조율 시도·1차 예방 ICD 의 VF 감지 구역 220회/분 초과·긴 감지 시간으로 불필요한 충격을 줄인다 [[harrison 22: 263장 p.1972]]. 증상이 있는 재발 VT·VF 에는 베타차단제·소탈롤·아미오다론이 흔한 약이고, 아미오다론+베타차단제가 소탈롤이나 베타차단제 단독보다 효과적이다. 다만 항부정맥제는 서맥을 일으켜 ICD 조율 의존을 만들 수 있고, 그 조율 자체가 심실 기능에 해로울 수 있다 [[harrison 22: 263장 p.1972]]. 느린 끊이지 않는 단형 VT 는 ICD 감지 범위 밖이라 놓칠 수 있다 — 혈역학이 버티면 서서히 심부전 악화로 온다 [[harrison 22: 263장 p.1972]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · 전기 폭풍의 횟수 기준 — 시험 기준: 24시간 안에 개입이 필요한 VT·VF 3번 이상 [[harrison 22: 263장 p.1972]] / 다른 기준: 같은 장 그림 263 4 의 머리말은 「24시간 3번 초과( 3 episodes)」 [[harrison 22: 263장 p.1974]] / 왜 다른가: 본문 정의와 알고리즘 그림의 표기 차이(같은 장 안) / 시험에서는: KMLE · USMLE 모두 「24시간 3번 이상」 본문 정의로 답한다."
+  },
+  {
+   "id": "paper-2026-0943",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric pulmonology",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/papers/2026/2026-11-15_paper-2026-0943_effects_of_cooking_with_liquefied_petroleum_gas_or_biomass_o.md",
+   "snippet": "Title Effects of Cooking With Liquefied Petroleum Gas or Biomass on Lung Function Among Pre School Aged Children in Peru: A Prospective Follow Up of a Randomized Trial Authors Nicolaou Laura, Checkley William, Rha Jennifer, McCollum Eric D ",
+   "text": "Pediatrics scraped pubmed PubMed / Pediatric pulmonology Title Effects of Cooking With Liquefied Petroleum Gas or Biomass on Lung Function Among Pre School Aged Children in Peru: A Prospective Follow Up of a Randomized Trial Authors Nicolaou Laura, Checkley William, Rha Jennifer, McCollum Eric D Journal / DOI Pediatric pulmonology · DOI: 10.1002/ppul.71901 · PMID: 43033191 https://pubmed.ncbi.nlm.nih.gov/43033191/ Abstract INTRODUCTION: Billions worldwide are exposed to household air pollution (HAP) from solid fuel use, increasing risk of lung function impairment and chronic respiratory disease. Understanding HAP effects on early life lung function may identify critical windows for intervention. METHODS: We performed respiratory oscillometry in 3 5 year olds whose mothers participated in a randomized trial of LPG versus usual solid fuel use during pregnancy and infancy. We assessed resistance (R7) and reactance (X7) at 7 Hertz, frequency dependence of resistance (R7 19), resonance frequency (fres) and area above the reactance curve from 7 Hertz (AX7). We computed z scores for R7, X7, fres, and AX7 from pediatric reference equations. Rigorous quality control was applied. Exposure response analyses examined the association between R7 or AX7 z scores and prenatal or postnatal PM2.5 or CO exposures. RESULTS: We tested 101 children (mean [±SD] age 4.4 ± 0.6 years, 51.5% male, 50.5% intervention). Mean R7, X7, fres and AX7 z scores were similar between intervention and control groups: 0.1 ± 1.0 vs 0.2 ± 1.2, 0.8 ± 1.0 vs 1.0 ± 1.1, 0.9 ± 1.1 vs 0.4 ± 1.1, and 1.2 ± 1.0 vs 1.3 ± 1.3, respectively. Intention to treat analysis showed no differences between arms in pre bronchodilator lung function or bronchodilator response, except for a larger post bronchodilator decrease in mean fres z score in the intervention arm ( 0.36, 95% CI 0.71 to 0.02). Postnatal CO exposure was associated with higher AX7 z scores, indicating worse reactance (0.041 per 1 ppm CO increase, 95% CI 0.003 to 0.078). No associations were found for PM2.5 exposure. CONCLUSION: Early life LPG use did not improve oscillometric lung function compared with those exposed to biomass smoke. An exploratory association between postnatal CO exposure and impaired lung reactance warrants confirmation in larger cohorts. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0942",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of pediatric endocrinology & metabolism : JPEM",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/papers/2026/2026-11-15_paper-2026-0942_childhood_insulinoma_after_years_of_recurrent_hypoglycemia_t.md",
+   "snippet": "Title Childhood insulinoma after years of recurrent hypoglycemia: the role of GLP 1 receptor imaging Authors Singh Parminder, Gupta Divya, Asima Bushra, Shukla Rajat, Kaur Hempreet Journal / DOI Journal of pediatric endocrinology & metaboli",
+   "text": "Pathology scraped pubmed PubMed / Journal of pediatric endocrinology & metabolism : JPEM Title Childhood insulinoma after years of recurrent hypoglycemia: the role of GLP 1 receptor imaging Authors Singh Parminder, Gupta Divya, Asima Bushra, Shukla Rajat, Kaur Hempreet Journal / DOI Journal of pediatric endocrinology & metabolism : JPEM · DOI: 10.1515/jpem 2026 0696 · PMID: 43034894 https://pubmed.ncbi.nlm.nih.gov/43034894/ Abstract OBJECTIVES: To highlight the diagnostic challenges of childhood insulinoma and the complementary role of GLP 1 receptor targeted imaging in localizing a small pancreatic lesion. CASE PRESENTATION: A 12 year old boy had a history of recurrent episodes suggestive of hypoglycemia reportedly beginning at approximately 4 years of age, with reported glucose concentrations as low as 15 20 mg/dL and associated night sweats. Diagnostic evaluation was fragmented over several years due to frequent family relocations. During a critical sample, plasma glucose was 37 mg/dL, with insulin 105.2 µIU/mL and C peptide 5.48 ng/mL, supporting endogenous hyperinsulinemic hypoglycemia. MRI demonstrated a small lesion in the pancreatic body. 68Ga Exendin 4 PET/CT demonstrated focal GLP 1 receptor targeted uptake corresponding to the pancreatic lesion, with a delayed SUVmax of 9.1. The patient underwent open surgical enucleation. Histopathology demonstrated a 1.7 cm well differentiated pancreatic neuroendocrine tumor, WHO Grade 1, with a Ki 67 index of 1 %, negative margins, and no necrosis, lymphovascular, or perineural invasion. Postoperatively, glucose concentrations remained normal. CONCLUSIONS: Persistent or unexplained hypoglycemia in children warrants consideration of insulinoma when endogenous hyperinsulinemic hypoglycemia is demonstrated. In this case, GLP 1 receptor targeted imaging provided complementary functional localization alongside MRI and supported focused curative surgery. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0941",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Communicable diseases intelligence (2018)",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/papers/2026/2026-11-15_paper-2026-0941_australian_meningococcal_surveillance_programme_annual_repor.md",
+   "snippet": "Title Australian Meningococcal Surveillance Programme Annual Report, 2025 Authors Lahra Monica, Hogan Tiffany Journal / DOI Communicable diseases intelligence (2018) · DOI: 10.33321/cdi.2026.50.063 · PMID: 43035020 https://pubmed.ncbi.nlm.n",
+   "text": "Infectious Disease scraped pubmed PubMed / Communicable diseases intelligence (2018) Title Australian Meningococcal Surveillance Programme Annual Report, 2025 Authors Lahra Monica, Hogan Tiffany Journal / DOI Communicable diseases intelligence (2018) · DOI: 10.33321/cdi.2026.50.063 · PMID: 43035020 https://pubmed.ncbi.nlm.nih.gov/43035020/ Abstract In Australia, both probable and laboratory confirmed cases of invasive meningococcal disease (IMD) are reported to the National Notifiable Diseases Surveillance System (NNDSS). When compared to 2024, the number of IMD notifications in 2025 decreased by 13% to 118. IMD was confirmed by laboratory testing in 115/118 (97%) of 2025 IMD cases, with 66% (76/115) diagnosed by bacterial culture and 34% (39/115) by nucleic acid amplification testing. The genogroup was determined for 93% of laboratory confirmed cases (107/115): genogroup B (MenB) accounted for 82.2% of infections (88/107); MenW and MenY for 7.5% of disease (8/107) each; MenC for 1.9% (2/107); and MenA for 0.9% (1/107). Finetyping was available for 67% of the cases for which the genogroup was determined (72/107). In MenB isolates, 28 porA types were detected: the most prevalent from amongst these were P1.7 2,4 (21%; 12/58) and P1.7,16 26 (14%; 8/58). Of the eight MenW isolates in 2025, six were finetyped and identified as porA type P1.5,2, MLST (ST) 11 and belonging to the clonal complex 11, the hypervirulent strain reported in outbreaks in Australia and overseas. In MenY infections, four porA types were detected from the five isolates finetyped: P1.21,16; P1.5,10 1; P1.5 1,10 1; and P1.5 2,10 1, with no dominant porA type detected. One of the two MenC isolates was typed, identifying as P1.5 2,10 1 and the single MenA isolate identified as P1.5 2,10. Peaks of IMD occurred in children aged less than 5 years, in those aged 15 24 years, and in adults aged 25 44 years, accounting for 18% (21/115), 23% (26/115) and 22% (25/115) of laboratory confirmed cases, respectively. In children aged under 5 years, 100% of IMD (21/21) was MenB; in those aged 15 24 years, 100% of IMD (25/25) was MenB; and in those aged 25 44 years, 82% of IMD (18/22) was MenB, with three MenW cases and one MenC case reported in this age group. IMD was reported in all age groups: < 5 years (18%; 21/115); 5 9 years (5%; 6/115); 10 14 years (2.6%; 3/115); 15 24 years (23%; 26/115); 25 44 years (22%; 25/115); 45 64 years (12%; 14/115); and in those aged 65 years and older (17%; 20/115). Whilst MenB predominated in all age groups, the majority of MenY IMD cases (6/8) were reported in adults aged 65 years and older, among whom it accounted for 6/18 cases (33%). All cultured IMD isolates available for antimicrobial susceptibility testing (n = 76) were tested for ceftriaxone and penicillin. Minimum inhibitory concentration (MIC) values were reported using Clinical Laboratory Standards Institute (CLSI) interpretative criteria: 8% (6/76) were defined as penicillin resistant (MIC value ≥ 0.5mg/L); 64% (49/76) had intermediate susceptibility to penicillin (MIC values 0.125 and 0.25 mg/L); and 28% (21/76) were susceptible to penicillin (MIC values ≤ 0.064 mg/L). All isolates tested were susceptible to ceftriaxone, ciprofloxacin and rifampicin. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0940",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Experimental physiology",
+   "confidence": "medium",
+   "date": "2026-11-15",
+   "path": "content/papers/2026/2026-11-15_paper-2026-0940_centrality_of_the_periphery_small_muscle_mass_to_bypass_o2_t.md",
+   "snippet": "Title Centrality of the periphery: Small muscle mass to bypass O2 transport limitations and maximize the benefits of exercise training in heart failure Authors Iannetta Danilo, Laginestra Fabio Giuseppe, Broxterman Ryan M, Simonelli Carla, ",
+   "text": "Cardiology scraped pubmed PubMed / Experimental physiology Title Centrality of the periphery: Small muscle mass to bypass O2 transport limitations and maximize the benefits of exercise training in heart failure Authors Iannetta Danilo, Laginestra Fabio Giuseppe, Broxterman Ryan M, Simonelli Carla, Amann Markus, Paneroni Mara Journal / DOI Experimental physiology · DOI: 10.1113/EP093476 · PMID: 43035010 https://pubmed.ncbi.nlm.nih.gov/43035010/ Abstract Heart failure (HF) is a complex, systemic cardiovascular condition characterized by a severe impairment in O2 transport to skeletal muscle that drives exercise intolerance and reduces quality of life. Although exercise training (ET) is a cornerstone of HF clinical management, patients often exhibit limited improvements in peak oxygen uptake ( V ̇ O 2 peak ) following traditional whole body, aerobic exercise recruiting a large muscle mass (e.g., cycling). In patients with HF, adaptations within skeletal muscle (e.g., capillarization) exert a proportionally greater influence on changes in V ̇ O 2 peak than adaptations in cardiac performance. In this review, we discuss the mechanisms by which traditional ET prescription may be suboptimal to elicit peripheral adaptations and argue that dynamic exercise recruiting only a small muscle mass (e.g., quadriceps) may be more effective in achieving this goal. Indeed, small muscle mass exercise reduces the cardiovascular restraints imposed by the failing heart, allowing the muscle to reach much greater metabolic rates and to be exposed to much larger degrees of homeostatic perturbations, a key factor triggering adaptations in O2 transport and utilization at the peripheral level. The intent of this review is to discuss the influence of muscle mass on exercise tolerance and adaptations to ET in HF, with the ultimate goal of promoting the integration of small muscle mass exercise into contemporary cardiac rehabilitation programmes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0679",

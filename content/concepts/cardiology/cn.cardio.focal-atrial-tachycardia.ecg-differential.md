@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [cn.cardio.svt.av-nodal-blockade-response, cn.cardio.psvt.narrow-regular-tachycardia-ecg, cn.cardio.atrial-flutter.stable-rate-control-first, cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry]
 date: 2026-11-13
-updated: 2026-11-13
-version: 1
+updated: 2026-11-16
+version: 2
 outline: h248            # 기본틀 슬롯 — 해리슨 21판 248장(22판 255장) Focal Atrial Tachycardia
 confidence: medium
 review_status: unreviewed
@@ -138,13 +138,6 @@ checks:
     a: "방실 차단을 동반한 심방빈맥 — 디기탈리스 독성의 특징이다."
   - q: "규칙적 좁은 QRS 빈맥에서 아데노신 뒤 QRS 가 잠시 사라졌는데, 동리듬과 다른 모양의 P파가 같은 박동수로 계속 보였다. 무엇인가?"
     a: "국소 심방빈맥 — 방실결절이 회로 밖이라 차단에도 심방 박동이 그대로다."
-figures_wanted:
-- source: PMC_OA
-  shows: 동리듬과 다른 모양의 뚜렷한 P파가 등전위선을 사이에 두고 이어지는 국소 심방빈맥
-  query: '"focal atrial tachycardia" AND "electrocardiogram" AND "case report"'
-  caption_terms:
-  - atrial tachycardia
-  modality: ECG
 figures_rejected:
 - asset: PMC-PMC13530901_Figure3
   reason: 체표 12유도 심전도가 아니라 심장내 전기생리 기록(CS·RV 전극) — 체표 유도에서 P파가 보이지 않아 요청한 소견(등전위선 사이 뚜렷한 P파)이 없다
@@ -152,6 +145,26 @@ figures_rejected:
   reason: 그림이 심장 내 전기생리 기록(전극도)과 3D 전기해부 지도라 체표 12유도의 P파 모양·등전위선 소견을 보여 주지 않는다 — 요청 소견과 다름
 - asset: PMC-PMC12548725_Figure1
   reason: 설명은 「atrial tachycardia」뿐이고 741×484 저해상도라 P파를 T파와 구분해 등전위선을 사이에 둔 별개의 P파로 읽을 수 없다 — 요청 소견(동리듬과 다른 뚜렷한 P파)을 그림에서 확인 못 함
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12283240_figure1.png
+  kind: ecg
+  at: 가르는 소견 — 동빈맥·결절 의존 빈맥·조동과의 경계
+  shows: 국소 심방빈맥 12유도 — P파 극성이 동리듬과 다르다(I 음성, 하벽·V1 양성)
+  look_for:
+  - III 유도 QRS 앞의 뚜렷한 양성 P파
+  - P파와 P파 사이 평평한 등전위선(톱니 조동파 없음)
+  - V1 의 작은 양성 P파
+  label: 「Twelve‐lead electrocardiogram of the patient. Atrial tachycardia is of the incessant type, with a tachycardia cycle length of 632 ms. The polarity of the P wave in atrial tachycardia is negative in lead I, bifid in lead II, positive in lead V1, and positive in the inferior leads. The setting was 5.00 mm/mV, 25.0 mm/s.」 — First Report of Focal Atrial Tachycardia Originating From the Left Atrial Appendage in a 13‐Year‐Old Girl Treated Using the OPTRELL Multipolar Mapping Catheter
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: First Report of Focal Atrial Tachycardia Originating From the Left Atrial Appendage in a 13‐Year‐Old Girl Treated Using the OPTRELL Multipolar Mapping Catheter. Journal of Arrhythmia
+  doi: 10.1002/joa3.70153
+  credit: 'First Report of Focal Atrial Tachycardia Originating From the Left Atrial Appendage in a 13‐Year‐Old Girl Treated Using the OPTRELL Multipolar Mapping Catheter. J Arrhythm. 2025 Jul 22;41(4):e70153. doi: 10.1002/joa3.70153 (CC BY) — FIGURE 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12283240/
+  asset: PMC-PMC12283240_FIGURE1
+  privacy_check: 12유도 심전도 기록지 한 장 — 유도 이름 외 글자·환자 이름·병원 표지·얼굴 없음
 ---
 
 ## 판단 — 왜 P파와 방실 차단 반응을 먼저 보나

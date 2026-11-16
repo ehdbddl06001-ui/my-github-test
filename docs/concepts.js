@@ -10920,10 +10920,10 @@ window.MEDKOS_CONCEPTS = {
    "cn.cardio.atrial-flutter.stable-rate-control-first",
    "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry"
   ],
-  "version": 1,
-  "updated": "2026-11-13",
+  "version": 2,
+  "updated": "2026-11-16",
   "reviewStatus": "unreviewed",
-  "hash": "d42e1c5edb4c67c5",
+  "hash": "5f65d457d06085e6",
   "summary": [
    "결론: 동리듬과 다른 모양의 뚜렷한 P파가 빠르게 이어지고, 방실 차단이 생겨도 심방 박동이 그대로면 국소 심방빈맥이다.",
    "시험 단서: P파 사이 등전위선(isoelectric line), RP > PR, 방실 차단 동반(특히 디곡신 복용), 갑작스런 시작·끝 또는 warm-up.",
@@ -11137,7 +11137,30 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "variants": [],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12283240_figure1.png",
+    "kind": "ecg",
+    "at": "가르는 소견 — 동빈맥·결절 의존 빈맥·조동과의 경계",
+    "shows": "국소 심방빈맥 12유도 — P파 극성이 동리듬과 다르다(I 음성, 하벽·V1 양성)",
+    "look": [
+     "III 유도 QRS 앞의 뚜렷한 양성 P파",
+     "P파와 P파 사이 평평한 등전위선(톱니 조동파 없음)",
+     "V1 의 작은 양성 P파"
+    ],
+    "label": "「Twelve‐lead electrocardiogram of the patient. Atrial tachycardia is of the incessant type, with a tachycardia cycle length of 632 ms. The polarity of the P wave in atrial tachycardia is negative in lead I, bifid in lead II, positive in lead V1, and positive in the inferior leads. The setting was 5.00 mm/mV, 25.0 mm/s.」 — First Report of Focal Atrial Tachycardia Originating From the Left Atrial Appendage in a 13‐Year‐Old Girl Treated Using the OPTRELL Multipolar Mapping Catheter",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "First Report of Focal Atrial Tachycardia Originating From the Left Atrial Appendage in a 13‐Year‐Old Girl Treated Using the OPTRELL Multipolar Mapping Catheter. Journal of Arrhythmia",
+    "doiUrl": "https://doi.org/10.1002/joa3.70153",
+    "citedBy": null,
+    "credit": "First Report of Focal Atrial Tachycardia Originating From the Left Atrial Appendage in a 13‐Year‐Old Girl Treated Using the OPTRELL Multipolar Mapping Catheter. J Arrhythm. 2025 Jul 22;41(4):e70153. doi: 10.1002/joa3.70153 (CC BY) — FIGURE 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12283240/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "규칙적 좁은 QRS 빈맥 — 국소 심방빈맥 가르기",
   "geo": {
    "title": "규칙적 좁은 QRS 빈맥 — 국소 심방빈맥 가르기",
