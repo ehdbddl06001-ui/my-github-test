@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "af03ad9936e0cee2a3dd",
-   "version": 31,
-   "date": "2026-11-15",
+   "hash": "743442a7b9dc730fce06",
+   "version": 32,
+   "date": "2026-11-16",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 58,
+   "pages": 63,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -74,138 +74,150 @@
      "concept_hash": "3385d3dbeda59cfb",
      "concept_version": 2
     },
+    "cn.cardio.left-anterior-fascicular-block.ecg-recognition": {
+     "title": "좌각전섬유속차단 — 좁은 QRS 의 심한 좌축편위",
+     "page": 19,
+     "concept_hash": "05999e16e24074e0",
+     "concept_version": 2
+    },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 18,
+     "page": 20,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
-     "page": 21,
+     "page": 23,
      "concept_hash": "37c7a057908d38d0",
      "concept_version": 2
     },
     "cn.cardio.cardiac-mri-lge.pattern-etiology": {
      "title": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
-     "page": 22,
+     "page": 24,
      "concept_hash": "becb45d171549d0a",
      "concept_version": 2
     },
     "cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential": {
      "title": "심도자 압력 — 흡기 때 두 심실이 엇갈리면 수축성 심낭염",
-     "page": 24,
+     "page": 26,
      "concept_hash": "77a81492665ebd5a",
      "concept_version": 1
     },
     "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry": {
      "title": "빈맥의 세 기전 — 자동능·촉발·회귀가 치료를 정한다",
-     "page": 26,
+     "page": 27,
      "concept_hash": "2ac159dfa791c257",
      "concept_version": 1
     },
     "cn.cardio.sinus-node-dysfunction.symptom-correlated-pacing": {
      "title": "동결절 기능 장애 — 증상과 서맥이 맞아야 심박조율기",
-     "page": 27,
+     "page": 29,
      "concept_hash": "e93c059b1e63e90c",
      "concept_version": 1
     },
     "cn.cardio.complete-av-block.permanent-pacemaker": {
      "title": "완전 방실차단 — 되돌릴 원인 없으면 영구 조율",
-     "page": 28,
+     "page": 30,
      "concept_hash": "b675c7e79f0a68e2",
      "concept_version": 1
     },
     "cn.cardio.svt.av-nodal-blockade-response": {
      "title": "좁은 QRS 빈맥 — 방실결절을 막아 기전을 가른다",
-     "page": 30,
+     "page": 32,
      "concept_hash": "2f7d8dc3de4fc8c3",
      "concept_version": 1
     },
     "cn.cardio.sinus-arrhythmia.ecg-recognition": {
      "title": "동부정맥 — 같은 P파, 서서히 변하는 PP",
-     "page": 32,
+     "page": 34,
      "concept_hash": "def75fe8afb94f87",
      "concept_version": 1
     },
     "cn.cardio.focal-atrial-tachycardia.ecg-differential": {
      "title": "국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다",
-     "page": 33,
-     "concept_hash": "7b403010261ce94a",
+     "page": 36,
+     "concept_hash": "d42e1c5edb4c67c5",
      "concept_version": 1
     },
     "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
      "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
-     "page": 35,
+     "page": 37,
      "concept_hash": "d685cd64da546109",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 36,
+     "page": 39,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": {
      "title": "심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)",
-     "page": 39,
+     "page": 42,
      "concept_hash": "be4911c141b1d12c",
      "concept_version": 2
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 40,
+     "page": 43,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.pvc-nsvt.structural-heart-risk-first": {
      "title": "심실 기외수축·NSVT — 치료는 심장 구조가 정한다",
-     "page": 42,
+     "page": 45,
      "concept_hash": "81a38caebb849c22",
      "concept_version": 1
     },
     "cn.cardio.sustained-vt.wide-complex-tachycardia-management": {
      "title": "지속성 심실빈맥 — 넓은 QRS 빈맥은 VT 로 보고 처치",
-     "page": 44,
-     "concept_hash": "4c6106de2342411c",
-     "concept_version": 1
+     "page": 47,
+     "concept_hash": "9db1147683fc8b24",
+     "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 46,
+     "page": 49,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
+    "cn.cardio.electrical-storm.substrate-directed-stabilization": {
+     "title": "전기 폭풍 — 리듬과 바탕이 처치를 정한다",
+     "page": 52,
+     "concept_hash": "e7ff6075e5bc1709",
+     "concept_version": 1
+    },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 49,
+     "page": 54,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 51,
+     "page": 56,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 54,
+     "page": 59,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 57,
+     "page": 62,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "6e98d387f4eecccc692cc46378e16f95",
-    "version": 31,
-    "uploaded": "2026-11-15T11:24:13+09:00"
+    "md5": "9b0dbe4782381519f9d47df1c513c507",
+    "version": 32,
+    "uploaded": "2026-11-16T13:23:24+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -238,11 +250,14 @@
     "MedKOS_학습서_순환기내과_v28_2026-11-12.pdf",
     "MedKOS_학습서_순환기내과_v29_2026-11-13.pdf",
     "MedKOS_학습서_순환기내과_v30_2026-11-14.pdf",
-    "MedKOS_학습서_순환기내과_v31_2026-11-15.pdf"
+    "MedKOS_학습서_순환기내과_v31_2026-11-15.pdf",
+    "MedKOS_학습서_순환기내과_v32_2026-11-16.pdf"
    ],
    "changes": [
+    "새 단원: 좌각전섬유속차단 — 좁은 QRS 의 심한 좌축편위",
     "내용 수정: 국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다",
-    "새 단원: 지속성 심실빈맥 — 넓은 QRS 빈맥은 VT 로 보고 처치"
+    "내용 갱신: 지속성 심실빈맥 — 넓은 QRS 빈맥은 VT 로 보고 처치 (정리본 v1 → v2)",
+    "새 단원: 전기 폭풍 — 리듬과 바탕이 처치를 정한다"
    ]
   },
   "피부과": {
@@ -480,9 +495,9 @@
    ]
   },
   "안과": {
-   "hash": "49572af7165f968084a0",
-   "version": 18,
-   "date": "2026-11-15",
+   "hash": "338ff6aa341953eb6e44",
+   "version": 19,
+   "date": "2026-11-16",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 15,
    "template_version": 11,
@@ -508,7 +523,7 @@
     "cn.ophth.neovascular-amd.anti-vegf": {
      "title": "습성 황반변성 — 출혈·액체면 바로 VEGF 억제제",
      "page": 8,
-     "concept_hash": "972ba990dc224859",
+     "concept_hash": "2dd82d80c6ade64e",
      "concept_version": 1
     },
     "cn.ophth.chemical-burn.immediate-irrigation": {
@@ -532,9 +547,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "0172021da51158c0a4e96f10fb85231f",
-    "version": 18,
-    "uploaded": "2026-11-15T11:24:13+09:00"
+    "md5": "8f85ad2b5a0a91462ef5aa78c5f71e22",
+    "version": 19,
+    "uploaded": "2026-11-16T13:23:24+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -554,7 +569,8 @@
     "MedKOS_학습서_안과_v15_2026-11-06.pdf",
     "MedKOS_학습서_안과_v16_2026-11-07.pdf",
     "MedKOS_학습서_안과_v17_2026-11-14.pdf",
-    "MedKOS_학습서_안과_v18_2026-11-15.pdf"
+    "MedKOS_학습서_안과_v18_2026-11-15.pdf",
+    "MedKOS_학습서_안과_v19_2026-11-16.pdf"
    ],
    "changes": [
     "내용 수정: 습성 황반변성 — 출혈·액체면 바로 VEGF 억제제"
@@ -729,103 +745,133 @@
    ]
   },
   "산부인과": {
-   "hash": "dada39159cb75e3f582b",
-   "version": 18,
-   "date": "2026-11-03",
+   "hash": "ceccb7d40f3ea3e47d93",
+   "version": 19,
+   "date": "2026-11-16",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 29,
+   "pages": 37,
    "template_version": 11,
    "units": {
+    "cn.obgyn.menstrual-cycle.ovulation-confirmation": {
+     "title": "월경주기 — 배란 확인은 배란 7일 뒤 프로게스테론",
+     "page": 2,
+     "concept_hash": "f47dcdc47e1e6025",
+     "concept_version": 1
+    },
+    "cn.obgyn.primary-amenorrhea-absent-uterus.karyotype-differentiation": {
+     "title": "일차무월경·자궁 없음 — 핵형이 CAIS와 MRKH를 가른다",
+     "page": 3,
+     "concept_hash": "9af1b5e2fcc07cf9",
+     "concept_version": 1
+    },
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
      "title": "기능성 시상하부 무월경 — 에스트로겐이 없어 위험은 뼈다",
-     "page": 2,
+     "page": 4,
      "concept_hash": "f00cf86a871d47ab",
      "concept_version": 2
     },
+    "cn.obgyn.hirsutism.ncah-17ohp-exclusion": {
+     "title": "다모증 — 17-OHP 가 높으면 PCOS 가 아니다",
+     "page": 7,
+     "concept_hash": "22022bf1bf139bd6",
+     "concept_version": 1
+    },
+    "cn.obgyn.hirsutism.evaluation-tumor-vs-pcos": {
+     "title": "다모증 — 급속 진행·남성화면 종양부터 찾는다",
+     "page": 9,
+     "concept_hash": "e1a9b7651898ad63",
+     "concept_version": 1
+    },
     "cn.obgyn.pcos-infertility.ovulation-induction": {
      "title": "다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다",
-     "page": 4,
+     "page": 10,
      "concept_hash": "1cb909b218723ac8",
      "concept_version": 4
     },
     "cn.obgyn.menopause.hormone-therapy-decision": {
      "title": "폐경 호르몬 치료 — 증상·나이·금기로 정한다",
-     "page": 7,
+     "page": 13,
      "concept_hash": "64ffae546fabcf71",
      "concept_version": 1
     },
     "cn.obgyn.female-sexual-dysfunction.management": {
      "title": "여성 성기능 장애 — 고통이 기준, 폐경 성교통은 국소 치료",
-     "page": 9,
+     "page": 15,
      "concept_hash": "2437290fb8c2d1a4",
      "concept_version": 1
     },
     "cn.obgyn.pregnancy-physiology.normal-vs-abnormal": {
      "title": "임신 중 소견 — 생리 변화의 방향·크기를 넘으면 병이다",
-     "page": 10,
+     "page": 16,
      "concept_hash": "88a60b36c154c856",
      "concept_version": 1
     },
     "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
      "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
-     "page": 12,
+     "page": 18,
      "concept_hash": "b5e8475cfea79a62",
+     "concept_version": 1
+    },
+    "cn.obgyn.postpartum-preeclampsia.magnesium-antihypertensive": {
+     "title": "산후 전자간증 — 마그네슘과 정맥 강압제를 함께",
+     "page": 20,
+     "concept_hash": "d7a841a78e470768",
      "concept_version": 1
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
      "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
-     "page": 13,
+     "page": 21,
      "concept_hash": "54c314318cffecef",
      "concept_version": 3
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 17,
+     "page": 25,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
     "cn.obgyn.granulosa-cell-tumor.tumor-marker": {
      "title": "과립막세포종 — 추적 표지자는 기원 세포가 정한다",
-     "page": 19,
+     "page": 27,
      "concept_hash": "edb8da638ad18885",
      "concept_version": 2
     },
     "cn.obgyn.ovarian-germ-cell-tumor.tumor-markers": {
      "title": "난소 생식세포종양 — 10대 고형 종괴는 AFP·hCG·LDH",
-     "page": 21,
+     "page": 29,
      "concept_hash": "2b8773aa3933c53d",
      "concept_version": 1
     },
     "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
      "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
-     "page": 23,
+     "page": 31,
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.path.uterine-smooth-muscle-tumor.leiomyosarcoma-criteria": {
      "title": "자궁 평활근 종양 — 악성은 괴사·이형성·분열로",
-     "page": 24,
+     "page": 32,
      "concept_hash": "55af692609810631",
      "concept_version": 2
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 26,
+     "page": 34,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
-     "page": 28,
+     "page": 36,
      "concept_hash": "327bde2efec5d351",
      "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "7776266942f31ca81128b66883654ce7",
-    "version": 18,
-    "uploaded": "2026-11-03T13:31:29+09:00"
+    "md5": "d282be0645210bf2be6765f966e19dd3",
+    "version": 19,
+    "uploaded": "2026-11-16T13:23:24+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -845,10 +891,15 @@
     "MedKOS_학습서_산부인과_v15_2026-10-29.pdf",
     "MedKOS_학습서_산부인과_v16_2026-10-31.pdf",
     "MedKOS_학습서_산부인과_v17_2026-11-02.pdf",
-    "MedKOS_학습서_산부인과_v18_2026-11-03.pdf"
+    "MedKOS_학습서_산부인과_v18_2026-11-03.pdf",
+    "MedKOS_학습서_산부인과_v19_2026-11-16.pdf"
    ],
    "changes": [
-    "내용 갱신: 난소 생식세포종양 — 10대 고형 종괴는 AFP·hCG·LDH (정리본 vNone → v1)"
+    "새 단원: 월경주기 — 배란 확인은 배란 7일 뒤 프로게스테론",
+    "새 단원: 일차무월경·자궁 없음 — 핵형이 CAIS와 MRKH를 가른다",
+    "새 단원: 다모증 — 17-OHP 가 높으면 PCOS 가 아니다",
+    "새 단원: 다모증 — 급속 진행·남성화면 종양부터 찾는다",
+    "새 단원: 산후 전자간증 — 마그네슘과 정맥 강압제를 함께"
    ]
   },
   "정신건강의학과": {
@@ -905,11 +956,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "e82c4e8713129f7ae647",
-   "version": 37,
-   "date": "2026-11-10",
+   "hash": "a2e25fe4c6a3eb6798c7",
+   "version": 38,
+   "date": "2026-11-16",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 54,
+   "pages": 57,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -918,180 +969,192 @@
      "concept_hash": "46e15e652134ed67",
      "concept_version": 1
     },
+    "cn.rheum.drug-induced-lupus.anti-histone": {
+     "title": "약물 유발 루푸스 — 원인 약·항히스톤, 신장·보체는 조용",
+     "page": 3,
+     "concept_hash": "0006413e6a5fd37f",
+     "concept_version": 1
+    },
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
      "title": "전신홍반루푸스 — 치료 강도는 장기 침범이 정한다",
-     "page": 4,
+     "page": 5,
      "concept_hash": "4bdda9c492a1addd",
      "concept_version": 2
     },
     "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria": {
      "title": "항인지질항체증후군 — 혈전·임신 이환에 지속 항체",
-     "page": 6,
+     "page": 7,
      "concept_hash": "f692b5ff2c9aacac",
      "concept_version": 2
     },
     "cn.rheum.rheumatoid-arthritis.methotrexate-anchor": {
      "title": "류마티스관절염 — 첫 DMARD 는 methotrexate(메토트렉세이트), 안 되면 병용",
-     "page": 8,
+     "page": 9,
      "concept_hash": "e560f7fccb4c5872",
      "concept_version": 1
     },
     "cn.rheum.methotrexate-toxicity.leucovorin-rescue": {
      "title": "methotrexate(메토트렉세이트) 독성 — 류코보린이 효소 차단을 우회한다",
-     "page": 10,
+     "page": 11,
      "concept_hash": "fc70fff2cac58586",
      "concept_version": 1
     },
     "cn.rheum.acute-rheumatic-fever.jones-diagnosis": {
      "title": "급성 류마티스열 — 존스 기준으로 진단한다",
-     "page": 11,
+     "page": 12,
      "concept_hash": "14c1a0ac8ec1ece2",
      "concept_version": 1
     },
     "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis": {
      "title": "경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
-     "page": 13,
+     "page": 14,
      "concept_hash": "48644d135721933e",
      "concept_version": 2
     },
     "cn.rheum.scleroderma-renal-crisis.ace-inhibitor": {
      "title": "전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제",
-     "page": 15,
+     "page": 16,
      "concept_hash": "53aaba9eb3ce0281",
      "concept_version": 2
     },
     "cn.rheum.sjogren.sicca-workup": {
      "title": "쇼그렌증후군 — 건조 증상은 항체·생검으로 가린다",
-     "page": 16,
+     "page": 17,
      "concept_hash": "bfcc1d0468d1fa47",
      "concept_version": 1
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 둘 실패 뒤엔 TNF·IL-17 억제제",
-     "page": 18,
+     "page": 19,
      "concept_hash": "1924d396b0fdfb26",
      "concept_version": 3
     },
     "cn.ortho.axial-spondyloarthritis.sacroiliac-mri": {
      "title": "축성 척추관절염 — X선 정상이면 엉치엉덩관절 MRI",
-     "page": 20,
+     "page": 21,
      "concept_hash": "3e4d9d85bc69b2a5",
      "concept_version": 2
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
-     "page": 21,
+     "page": 22,
      "concept_hash": "0a95671a7fc0c818",
      "concept_version": 3
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염 — 혈소판 정상의 만져지는 자반이면 임상 진단",
-     "page": 24,
+     "page": 25,
      "concept_hash": "b85f82c4ac8f8ba7",
      "concept_version": 3
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
      "title": "거대세포동맥염 — 의심되면 생검 전에 스테로이드부터",
-     "page": 26,
+     "page": 27,
      "concept_hash": "36db8f06087016bc",
      "concept_version": 2
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 확진은 증상 있는 침범 조직의 생검",
-     "page": 27,
+     "page": 29,
      "concept_hash": "e71e27053a5552c2",
      "concept_version": 2
     },
+    "cn.rheum.polymyalgia-rheumatica.low-dose-glucocorticoid": {
+     "title": "류마티스 다발근통 — 두개 증상 없으면 저용량 스테로이드",
+     "page": 31,
+     "concept_hash": "82c72a6ccd2fcf68",
+     "concept_version": 1
+    },
     "cn.rheum.behcet.clinical-diagnosis": {
      "title": "베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단",
-     "page": 30,
+     "page": 33,
      "concept_hash": "99114229c6440e61",
      "concept_version": 2
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 31,
+     "page": 34,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.relapsing-polychondritis.clinical-diagnosis": {
      "title": "재발성 다발연골염 — 귓불을 남기는 귀 연골염",
-     "page": 33,
+     "page": 36,
      "concept_hash": "60735de172c47893",
      "concept_version": 1
     },
     "cn.rheum.sarcoidosis.treat-or-observe": {
      "title": "사르코이드증 — 치료는 위험 장기·증상이 정한다",
-     "page": 35,
+     "page": 38,
      "concept_hash": "642023f4a90db935",
      "concept_version": 1
     },
     "cn.rheum.igg4-related-disease.diagnosis": {
      "title": "IgG4 관련 질환 — 진단은 혈청값이 아니라 종합 판단",
-     "page": 37,
+     "page": 40,
      "concept_hash": "c4520c7b1f52acfe",
      "concept_version": 1
     },
     "cn.rheum.familial-mediterranean-fever.daily-colchicine": {
      "title": "가족성 지중해열 — 매일 콜히친이 아밀로이드증을 막는다",
-     "page": 39,
+     "page": 42,
      "concept_hash": "241d318742721993",
      "concept_version": 1
     },
     "cn.rheum.acute-monoarthritis.synovial-fluid-first": {
      "title": "급성 단관절염 — 관절 천자가 먼저다",
-     "page": 41,
+     "page": 44,
      "concept_hash": "94a9ab0a5d324fa8",
      "concept_version": 1
     },
     "cn.rheum.osteoarthritis.exercise-weight-loss-first": {
      "title": "골관절염 — 운동·체중 감량이 바탕, 약은 보조",
-     "page": 43,
+     "page": 46,
      "concept_hash": "4f81357b47a8bc91",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 45,
+     "page": 48,
      "concept_hash": "b80334e0828d60e6",
      "concept_version": 2
     },
     "cn.rheum.gout.hla-b5801-before-allopurinol": {
      "title": "통풍 — allopurinol(알로푸리놀) 전 HLA-B*58:01 검사",
-     "page": 46,
+     "page": 49,
      "concept_hash": "1c3a85b4be944c24",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 48,
+     "page": 51,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 50,
+     "page": 53,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 52,
+     "page": 55,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 53,
+     "page": 56,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "d2e8fe5f94eb62a40dd0d5df9eda26e9",
-    "version": 37,
-    "uploaded": "2026-11-10T14:16:33+09:00"
+    "md5": "cfb5bfd16d586236bfe88f502c24a073",
+    "version": 38,
+    "uploaded": "2026-11-16T13:23:24+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -1130,10 +1193,12 @@
     "MedKOS_학습서_류마티스내과_v34_2026-11-02.pdf",
     "MedKOS_학습서_류마티스내과_v35_2026-11-03.pdf",
     "MedKOS_학습서_류마티스내과_v36_2026-11-09.pdf",
-    "MedKOS_학습서_류마티스내과_v37_2026-11-10.pdf"
+    "MedKOS_학습서_류마티스내과_v37_2026-11-10.pdf",
+    "MedKOS_학습서_류마티스내과_v38_2026-11-16.pdf"
    ],
    "changes": [
-    "새 단원: methotrexate(메토트렉세이트) 독성 — 류코보린이 효소 차단을 우회한다"
+    "새 단원: 약물 유발 루푸스 — 원인 약·항히스톤, 신장·보체는 조용",
+    "새 단원: 류마티스 다발근통 — 두개 증상 없으면 저용량 스테로이드"
    ]
   },
   "호흡기내과": {
@@ -1728,18 +1793,19 @@
    "changes": [
     "새 단원: 다모증 — 17-OHP 가 높으면 PCOS 가 아니다",
     "새 단원: 산후 전자간증 — 마그네슘과 정맥 강압제를 함께"
-   ]
+   ],
+   "retired": "2026-11-16"
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "28ef1acbf3d0e347fe378e1fc2c709ce",
+   "md5": "3196084439d4d89cdf78c4bab3dd1c63",
    "version": null,
-   "uploaded": "2026-11-15T11:24:13+09:00"
+   "uploaded": "2026-11-16T13:23:24+09:00"
   }
  },
- "updated": "2026-11-15"
+ "updated": "2026-11-16"
 }
