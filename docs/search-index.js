@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3934,
+  "total": 3946,
   "byType": {
    "usmle": 270,
    "kmle": 1856,
+   "imaging": 690,
    "concept": 170,
    "paper": 943,
-   "imaging": 678,
    "ailab": 14,
    "basic": 3
   },
@@ -35,34 +35,34 @@ window.MEDKOS_INDEX = {
    "Surgery": 121,
    "Pulmonology": 120,
    "Hematology": 113,
-   "순환기": 100,
+   "순환기": 104,
    "Laboratory Medicine": 96,
    "산부인과": 84,
-   "호흡기": 43,
+   "호흡기": 44,
    "소화기": 41,
    "소아과": 36,
+   "응급·중환자": 32,
    "내분비": 31,
-   "응급·중환자": 31,
+   "신장·비뇨기": 31,
    "혈액·종양": 31,
    "감염": 30,
-   "신장·비뇨기": 30,
    "Physiology": 29,
    "신경": 29,
    "병리·조직학": 28,
    "외과": 26,
    "피부과": 26,
-   "예방의학·역학": 24,
+   "예방의학·역학": 25,
    "Pharmacology": 23,
    "Biochemistry": 21,
    "Microbiology": 21,
+   "약리": 19,
    "Internal Medicine": 18,
    "근골격·류마티스": 18,
-   "약리": 18,
+   "정신과": 18,
    "Immunology": 17,
-   "정신과": 17,
    "안과": 13,
-   "영상의학": 11,
-   "이비인후과": 11,
+   "영상의학": 12,
+   "이비인후과": 12,
    "Emergency Medicine": 5,
    "Obstetrics and Gynecology": 5,
    "Allergy": 4,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2782,
+   "high": 2794,
    "medium": 1148,
    "low": 4
   },
@@ -824,6 +824,220 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1860.md",
    "snippet": "24세 남자가 1시간 전 갑자기 시작된 심한 두근거림으로 응급실에 왔다. 이전에도 몇 분 안에 저절로 멎는 두근거림이 몇 번 있었다. 어지럼·흉통·실신은 없고 의식은 명료하며 말을 또렷하게 한다. 복용하는 약은 없고 술·약물은 하지 않는다. 피부는 따뜻하고 말초 맥박은 잘 만져진다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 아데노신 급속 정맥 주사 B. 베라파밀 정맥 주사 C. 프로카인아마이드 정맥 주사",
    "text": "Cardiology Sudden Rapid Irregular Palpitations with Changing QRS Shapes in a Young Man with Past Brief Episodes pre-excitation atrial-fibrillation accessory-pathway antiarrhythmic KMLE 2026 / Claude 24세 남자가 1시간 전 갑자기 시작된 심한 두근거림으로 응급실에 왔다. 이전에도 몇 분 안에 저절로 멎는 두근거림이 몇 번 있었다. 어지럼·흉통·실신은 없고 의식은 명료하며 말을 또렷하게 한다. 복용하는 약은 없고 술·약물은 하지 않는다. 피부는 따뜻하고 말초 맥박은 잘 만져진다. 활력징후와 검사 결과는 자료와 같다. 가장 적절한 치료는? A. 아데노신 급속 정맥 주사 B. 베라파밀 정맥 주사 C. 프로카인아마이드 정맥 주사 D. 디곡신 정맥 주사 E. 메토프롤롤 정맥 주사 짧은 PR·완만한 QRS 시작이 있던 젊은 남자에게 생긴 불규칙하고 QRS 모양이 바뀌는 매우 빠른 빈맥은 부전도로를 타고 내려가는 심방세동이다. 혈역학적으로 안정되어 있으므로 부전도로 전도를 늦추는 프로카인아마이드를 쓰고, 방실결절 차단제는 부전도로 전도를 늘려 심실세동을 부를 수 있어 피한다."
+  },
+  {
+   "id": "imaging-2026-0691",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 두근거림으로 온 비만 중년 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202603Z_일일심전도_2026-11-17_3units_3q_4a19e200",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0691.md",
+   "snippet": "A 49 year old woman comes to the emergency department because of palpitations that began 6 hours ago after an evening of heavy alcohol intake. She has mild shortness of breath on exertion but no chest pain or syncope. She has obesity (BMI 3",
+   "text": "순환기 심전도 판독 — 두근거림으로 온 비만 중년 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202603Z_일일심전도_2026-11-17_3units_3q_4a19e200 A 49 year old woman comes to the emergency department because of palpitations that began 6 hours ago after an evening of heavy alcohol intake. She has mild shortness of breath on exertion but no chest pain or syncope. She has obesity (BMI 37 kg/m²) and loud snoring. She takes no medications. Blood pressure is 136/84 mm Hg and pulse is irregular at about 115/min. Lungs are clear. Serum potassium and TSH are normal. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Atrial fibrillation B. Multifocal atrial tachycardia C. Atrial flutter with variable block D. Sinus tachycardia with premature atrial contractions E. Monomorphic ventricular tachycardia"
+  },
+  {
+   "id": "imaging-2026-0690",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 검진에서 각차단을 들은 무증상 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202603Z_일일심전도_2026-11-17_3units_3q_4a19e200",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0690.md",
+   "snippet": "78세 여자가 건강검진 심전도에서 각차단이 있다는 말을 듣고 걱정이 되어 외래에 왔다. 어지러움·실신·가슴 통증·호흡곤란은 없고 매일 40분씩 걷는다. 고혈압으로 암로디핀을 복용한다. 혈압 132/76 mmHg, 맥박 84회/분으로 규칙적이다. 심음은 정상이고 심잡음은 없으며 하지 부종은 없다. 1년 전 심장초음파는 정상이었다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 혈전용해제 정맥 투여 B. 전",
+   "text": "순환기 심전도 처치 — 검진에서 각차단을 들은 무증상 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202603Z_일일심전도_2026-11-17_3units_3q_4a19e200 78세 여자가 건강검진 심전도에서 각차단이 있다는 말을 듣고 걱정이 되어 외래에 왔다. 어지러움·실신·가슴 통증·호흡곤란은 없고 매일 40분씩 걷는다. 고혈압으로 암로디핀을 복용한다. 혈압 132/76 mmHg, 맥박 84회/분으로 규칙적이다. 심음은 정상이고 심잡음은 없으며 하지 부종은 없다. 1년 전 심장초음파는 정상이었다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 혈전용해제 정맥 투여 B. 전기생리검사 C. 추가 검사나 치료 없이 경과 관찰 D. 영구 심박조율기 삽입 E. 관상동맥조영술"
+  },
+  {
+   "id": "imaging-2026-0689",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 수술 전 검사에서 찍은 고령 여성의 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202603Z_일일심전도_2026-11-17_3units_3q_4a19e200",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0689.md",
+   "snippet": "81세 여자가 백내장 수술 전 검사로 심전도를 찍었다. 3년 전 갑자기 시작된 심한 가슴 통증으로 다른 병원에 며칠 입원한 적이 있으나 자세한 기록은 없다. 지금은 가슴 통증과 호흡곤란이 없고 평지를 걷는 데 지장이 없다. 혈압 134/78 mmHg, 맥박 70회/분, 산소포화도 97% 이다. 심음은 정상이고 폐음은 깨끗하다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 급성 심낭염 B. 하벽·후벽",
+   "text": "순환기 심전도 판독 — 수술 전 검사에서 찍은 고령 여성의 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202603Z_일일심전도_2026-11-17_3units_3q_4a19e200 81세 여자가 백내장 수술 전 검사로 심전도를 찍었다. 3년 전 갑자기 시작된 심한 가슴 통증으로 다른 병원에 며칠 입원한 적이 있으나 자세한 기록은 없다. 지금은 가슴 통증과 호흡곤란이 없고 평지를 걷는 데 지장이 없다. 혈압 134/78 mmHg, 맥박 70회/분, 산소포화도 97% 이다. 심음은 정상이고 폐음은 깨끗하다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 급성 심낭염 B. 하벽·후벽 심근경색 C. 전중격 심근경색 D. 우심실비대 E. 완전 우각차단"
+  },
+  {
+   "id": "imaging-2026-0688",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 항정신병약 주사 뒤 고열과 근육 경직",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0688.md",
+   "snippet": "28세 남자가 조현병 급성 악화로 입원해 초조가 심해 할로페리돌 근육주사를 이틀 동안 여러 차례 맞았다. 그다음 날부터 열이 나고 몸이 뻣뻣해졌으며 묻는 말에 대답이 느려졌다. 체온 40.1°C, 혈압 168/102 mmHg, 맥박 124회/분, 호흡 24회/분이다. 땀을 많이 흘리고 사지 전체가 납관처럼 고르게 뻣뻣하며, 심부건반사는 정상이고 간대성 경련(clonus)은 없다. 동공 크기는 정상이다. 혈청 크레아티닌 키나아제",
+   "text": "정신과 정신 — 항정신병약 주사 뒤 고열과 근육 경직 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c 28세 남자가 조현병 급성 악화로 입원해 초조가 심해 할로페리돌 근육주사를 이틀 동안 여러 차례 맞았다. 그다음 날부터 열이 나고 몸이 뻣뻣해졌으며 묻는 말에 대답이 느려졌다. 체온 40.1°C, 혈압 168/102 mmHg, 맥박 124회/분, 호흡 24회/분이다. 땀을 많이 흘리고 사지 전체가 납관처럼 고르게 뻣뻣하며, 심부건반사는 정상이고 간대성 경련(clonus)은 없다. 동공 크기는 정상이다. 혈청 크레아티닌 키나아제 18,500 U/L, 백혈구 14,200/mm³ 이다. 다른 약은 복용하지 않는다. 가장 적절한 처치는? A. 경험적 광범위 항생제 단독 투여 B. 할로페리돌 중단, 냉각·수액과 단트롤렌 투여 C. 사이프로헵타딘 투여 D. 할로페리돌 증량 E. 벤즈트로핀 근육주사 후 할로페리돌 유지"
+  },
+  {
+   "id": "imaging-2026-0687",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 임상시험 결과로 치료 필요 수 계산",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0687.md",
+   "snippet": "A randomized controlled trial enrolls 4,000 adults with stable coronary artery disease and assigns half to a new antiplatelet drug and half to placebo. Over 3 years, a major cardiovascular event occurs in 160 of 2,000 patients in the placeb",
+   "text": "예방의학·역학 예방의학 — 임상시험 결과로 치료 필요 수 계산 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c A randomized controlled trial enrolls 4,000 adults with stable coronary artery disease and assigns half to a new antiplatelet drug and half to placebo. Over 3 years, a major cardiovascular event occurs in 160 of 2,000 patients in the placebo group and in 120 of 2,000 patients in the treatment group. Adherence and follow up were similar in both groups. A 62 year old man with stable coronary artery disease asks his physician how much the new drug would help him. Which of the following is the approximate number of patients who need to be treated for 3 years to prevent one major cardiovascular event? A. 50 B. 25 C. 100 D. 4 E. 8"
+  },
+  {
+   "id": "imaging-2026-0686",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 리튬 복용 중 이뇨제를 더한 뒤 생긴 떨림과 혼동",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0686.md",
+   "snippet": "45세 여자가 3일 전부터 손이 떨리고 말이 어눌하며 걸을 때 비틀거려 가족과 함께 왔다. 양극성 장애로 5년 동안 리튬을 같은 용량으로 복용하며 혈중 농도가 안정적이었고, 4주 전 고혈압으로 하이드로클로로티아지드를 새로 시작하였다. 혈압 128/80 mmHg, 맥박 64회/분이다. 거친 손떨림과 운동실조가 있다. 혈청 리튬 2.1 mEq/L(치료 범위 0.6~1.2), 나트륨 133 mEq/L, 크레아티닌 1.0 mg/dL ",
+   "text": "약리 약리 — 리튬 복용 중 이뇨제를 더한 뒤 생긴 떨림과 혼동 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c 45세 여자가 3일 전부터 손이 떨리고 말이 어눌하며 걸을 때 비틀거려 가족과 함께 왔다. 양극성 장애로 5년 동안 리튬을 같은 용량으로 복용하며 혈중 농도가 안정적이었고, 4주 전 고혈압으로 하이드로클로로티아지드를 새로 시작하였다. 혈압 128/80 mmHg, 맥박 64회/분이다. 거친 손떨림과 운동실조가 있다. 혈청 리튬 2.1 mEq/L(치료 범위 0.6~1.2), 나트륨 133 mEq/L, 크레아티닌 1.0 mg/dL 이다. 리튬 농도가 오른 기전으로 가장 적절한 것은? A. 근위세관에서 나트륨과 함께 리튬 재흡수 증가 B. 간의 시토크롬 P450 효소에 의한 리튬 대사 억제 C. 혈장 단백질 결합 자리에서 리튬 치환 D. 장관에서 리튬 흡수 증가 E. 사구체 여과율 감소에 의한 리튬 여과 감소"
+  },
+  {
+   "id": "imaging-2026-0685",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장 — 심전도 변화를 동반한 고칼륨혈증의 첫 처치",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0685.md",
+   "snippet": "A 71 year old man with chronic kidney disease and heart failure is brought to the emergency department because of generalized weakness for 2 days. His medications include lisinopril and spironolactone, which was added 3 weeks ago. Blood pre",
+   "text": "신장·비뇨기 신장 — 심전도 변화를 동반한 고칼륨혈증의 첫 처치 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c A 71 year old man with chronic kidney disease and heart failure is brought to the emergency department because of generalized weakness for 2 days. His medications include lisinopril and spironolactone, which was added 3 weeks ago. Blood pressure is 128/70 mm Hg, pulse is 54/min, and respirations are 16/min. Serum potassium is 7.4 mEq/L, creatinine is 2.9 mg/dL, and glucose is 132 mg/dL. A repeat sample confirms the potassium level. An ECG shows peaked T waves and widened QRS complexes. Which of the following is the most appropriate initial step in management? A. Nebulized albuterol B. Oral sodium zirconium cyclosilicate C. Intravenous sodium bicarbonate D. Intravenous calcium gluconate E. Intravenous regular insulin with dextrose"
+  },
+  {
+   "id": "imaging-2026-0684",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "영상 판독 — 다리로 뻗치는 허리 통증의 요추 MRI 와 신경근",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0684.md",
+   "snippet": "55세 여자가 3주 전 무거운 화분을 든 뒤 허리 통증과 함께 오른쪽 다리로 뻗치는 통증이 생겨 왔다. 기침할 때 통증이 심해지고, 앉아 있을 때보다 서 있을 때 조금 낫다. 대소변 장애는 없다. 오른쪽 하지 직거상 검사는 40°에서 다리로 뻗치는 통증을 재현한다. 요추 MRI 는 그림과 같다. 이 환자의 신경학적 진찰에서 나타날 가능성이 가장 높은 소견은? A. 오른쪽 엉덩관절 굴곡 약화 B. 회음부 감각 소실 C. 오른쪽 ",
+   "text": "영상의학 영상 판독 — 다리로 뻗치는 허리 통증의 요추 MRI 와 신경근 opendata kmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c 55세 여자가 3주 전 무거운 화분을 든 뒤 허리 통증과 함께 오른쪽 다리로 뻗치는 통증이 생겨 왔다. 기침할 때 통증이 심해지고, 앉아 있을 때보다 서 있을 때 조금 낫다. 대소변 장애는 없다. 오른쪽 하지 직거상 검사는 40°에서 다리로 뻗치는 통증을 재현한다. 요추 MRI 는 그림과 같다. 이 환자의 신경학적 진찰에서 나타날 가능성이 가장 높은 소견은? A. 오른쪽 엉덩관절 굴곡 약화 B. 회음부 감각 소실 C. 오른쪽 발목 반사 감소 D. 오른쪽 무릎 반사 감소 E. 오른쪽 엄지발가락 신전 약화"
+  },
+  {
+   "id": "imaging-2026-0683",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 입을 벌리기 힘든 인두통 환자의 경부 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0683.md",
+   "snippet": "A 32 year old woman comes to the clinic because of a sore throat that has worsened over 5 days despite rest and fluids. She now has difficulty opening her mouth and pain on swallowing, and her voice sounds muffled. Temperature is 38.4°C, pu",
+   "text": "이비인후과 이비인후과 — 입을 벌리기 힘든 인두통 환자의 경부 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c A 32 year old woman comes to the clinic because of a sore throat that has worsened over 5 days despite rest and fluids. She now has difficulty opening her mouth and pain on swallowing, and her voice sounds muffled. Temperature is 38.4°C, pulse is 100/min, and oxygen saturation is 98% on room air. She is not drooling and has no stridor. Tender cervical lymphadenopathy is present on the left. A contrast enhanced CT scan of the neck is shown. Which of the following is the most appropriate next step in management? A. Intravenous antibiotics alone with reassessment in 48 hours B. Oral amoxicillin for 10 days and outpatient follow up C. Oral corticosteroids alone for symptom relief D. Emergency tracheostomy under local anesthesia E. Needle aspiration or incision and drainage plus antibiotics"
+  },
+  {
+   "id": "imaging-2026-0682",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·외상 — 교통사고 뒤 두 다리를 못 움직이는 환자의 척추 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0682.md",
+   "snippet": "A 46 year old woman is brought to the emergency department after a high speed motor vehicle collision. She is alert and reports back pain and inability to move her legs. Blood pressure is 118/72 mm Hg and pulse is 96/min. Breath sounds are ",
+   "text": "응급·중환자 응급·외상 — 교통사고 뒤 두 다리를 못 움직이는 환자의 척추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c A 46 year old woman is brought to the emergency department after a high speed motor vehicle collision. She is alert and reports back pain and inability to move her legs. Blood pressure is 118/72 mm Hg and pulse is 96/min. Breath sounds are equal bilaterally, and FAST examination is negative. There is no movement or sensation below the groin, and rectal tone is absent. The upper extremities are normal. Sagittal and axial CT and an axial T2 weighted MRI of the thoracic and lumbar spine are shown. Which of the following is the most appropriate next step in management? A. Bed rest with analgesia and repeat CT in 6 weeks B. Percutaneous vertebroplasty of the fractured body C. Early surgical decompression and posterior stabilization D. Thoracolumbar orthosis with early mobilization E. High dose intravenous methylprednisolone infusion"
+  },
+  {
+   "id": "imaging-2026-0681",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 수술 뒤 갑자기 숨이 찬 환자의 첫 영상검사",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0681.md",
+   "snippet": "68세 여자가 오른쪽 무릎 인공관절 치환술 후 5일째 갑자기 숨이 차고 오른쪽 가슴이 숨 쉴 때 아프다고 호소하였다. 기침은 없고 객혈은 없다. 혈압 132/80 mmHg, 맥박 112회/분, 호흡 24회/분, 체온 37.2°C, 실내 공기에서 산소포화도 91% 이다. 폐음은 양쪽 모두 깨끗하고, 오른쪽 종아리가 왼쪽보다 3 cm 굵고 눌러 아프다. 흉부 X선은 정상이다. 혈청 크레아티닌은 0.8 mg/dL 이다. 진단을 위해",
+   "text": "호흡기 호흡기 — 수술 뒤 갑자기 숨이 찬 환자의 첫 영상검사 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c 68세 여자가 오른쪽 무릎 인공관절 치환술 후 5일째 갑자기 숨이 차고 오른쪽 가슴이 숨 쉴 때 아프다고 호소하였다. 기침은 없고 객혈은 없다. 혈압 132/80 mmHg, 맥박 112회/분, 호흡 24회/분, 체온 37.2°C, 실내 공기에서 산소포화도 91% 이다. 폐음은 양쪽 모두 깨끗하고, 오른쪽 종아리가 왼쪽보다 3 cm 굵고 눌러 아프다. 흉부 X선은 정상이다. 혈청 크레아티닌은 0.8 mg/dL 이다. 진단을 위해 다음으로 시행할 검사로 가장 적절한 것은? A. 폐 환기 관류 스캔 B. 흉부 고해상도 CT C. 경흉부 심장초음파 D. CT 폐동맥조영술 E. 혈청 D 이합체 측정"
+  },
+  {
+   "id": "imaging-2026-0680",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 검진에서 맥이 느리다는 말을 들은 무증상 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c",
+   "confidence": "high",
+   "date": "2026-11-16",
+   "path": "content/imaging/2026/imaging-2026-0680.md",
+   "snippet": "57세 남자가 회사 건강검진에서 맥박이 느리다는 말을 듣고 외래에 왔다. 어지러움·실신·호흡곤란·운동 시 피로는 없고, 주 3회 1시간씩 달리기를 한다. 복용하는 약은 없다. 혈압 124/76 mmHg, 맥박 58회/분으로 규칙적이며, 심음은 정상이고 심잡음은 없다. 갑상샘 기능과 혈청 칼륨은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 이소프로테레놀 정맥 주입 B. 추가 처치 없이 경과 관",
+   "text": "순환기 순환기 — 검진에서 맥이 느리다는 말을 들은 무증상 중년 남성 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261116T202400Z_일일영상_2026-11-17_9units_9q_6e1cc75c 57세 남자가 회사 건강검진에서 맥박이 느리다는 말을 듣고 외래에 왔다. 어지러움·실신·호흡곤란·운동 시 피로는 없고, 주 3회 1시간씩 달리기를 한다. 복용하는 약은 없다. 혈압 124/76 mmHg, 맥박 58회/분으로 규칙적이며, 심음은 정상이고 심잡음은 없다. 갑상샘 기능과 혈청 칼륨은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 이소프로테레놀 정맥 주입 B. 추가 처치 없이 경과 관찰 C. 아트로핀 정맥주사 D. 영구 심박조율기 삽입 E. 전기생리검사"
   },
   {
    "id": "cn.cardio.electrical-storm.substrate-directed-stabilization",
