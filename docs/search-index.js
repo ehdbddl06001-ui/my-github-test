@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3946,
+  "total": 3947,
   "byType": {
    "usmle": 270,
+   "concept": 171,
    "kmle": 1856,
    "imaging": 690,
-   "concept": 170,
    "paper": 943,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 340,
+   "Cardiology": 341,
    "Nephrology": 252,
    "Infectious Disease": 233,
    "Pediatrics": 223,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2794,
+   "high": 2795,
    "medium": 1148,
    "low": 4
   },
@@ -216,6 +216,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0278.md",
    "snippet": "A 68 year old man comes to the emergency department because of 2 days of diffuse muscle aching and weakness and dark brown urine since this morning. Six days ago, he began a 10 day course of clarithromycin for community acquired pneumonia; ",
    "text": "Pharmacology Two Days of Aching Thighs and Dark Brown Urine Six Days Into a Course of Antibiotics for Pneumonia in a 68-Year-Old on Long-Standing Cholesterol Therapy statin clarithromycin cyp3a4 drug-interaction rhabdomyolysis mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 419장 Disorders of Lipoprotein Metabolism) A 68 year old man comes to the emergency department because of 2 days of diffuse muscle aching and weakness and dark brown urine since this morning. Six days ago, he began a 10 day course of clarithromycin for community acquired pneumonia; his cough has improved. He has hyperlipidemia, hypertension, and coronary artery disease. He has taken simvastatin 40 mg daily, amlodipine, and aspirin for 4 years without muscle symptoms; his serum creatine kinase activity and creatinine concentration 6 months ago were normal. He does not drink alcohol and has not exercised strenuously. His vital signs are shown. The thigh and upper arm muscles are tender to palpation, and strength is 4/5 in the proximal muscles of all four extremities. Deep tendon reflexes are normal. There is no rash. Laboratory results are shown. A urine dipstick is strongly positive for blood; microscopy shows 0–2 RBC/hpf. Which of the following is the most likely mechanism of this patient's muscle injury? A. Autoantibodies against HMG CoA reductase in skeletal muscle B. Decreased renal excretion of the statin from kidney injury C. Displacement of the statin from plasma albumin binding sites D. Inhibition of hepatic CYP3A4 mediated metabolism of the statin E. Direct mitochondrial toxicity of the antibiotic in muscle fibers CK 18,400 과 소변 잠혈 강양성인데 적혈구 0–2 → 미오글로빈뇨를 동반한 횡문근융해다. 4년 동안 문제없던 simvastatin 에 6일 전 clarithromycin 이 더해졌다 — 새로 바뀐 것은 이 약 하나다. clarithromycin 은 강력한 CYP3A4 억제제이고 simvastatin 은 CYP3A4 로 대사되는 기질이라, 병용하면 simvastatin(과 활성 산 형태)의 혈중 농도가 여러 배로 올라 용량 의존적 근독성이 나타난다 — simvastatin 은 clarithromycin 과의 병용이 금기다. 항 HMGCR 자가면역 괴사성 근병증(A)은 수주~수개월에 걸쳐 진행하며 새 약을 시작한 직후 며칠 만에 생긴 경과와 맞지 않는다. simvastatin 은 주로 간에서 제거돼 신장 손상이 원인이 될 수 없고(B — 크레아티닌 상승은 결과다), 단백 결합 치환(C)은 유리 분율을 잠깐 바꿀 뿐 임상적 독성의 주된 기전이 아니며, 마크롤라이드 자체는 근독성 약이 아니다(E)."
+  },
+  {
+   "id": "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/concepts/cardiology/cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis.md",
+   "snippet": "판단 — 왜 「펩타이드 → 심초음파」인가 심부전의 증상·징후는 특이도·민감도가 모두 낮다 — 고령·심혈관 질환·고혈압·당뇨·만성 콩팥병이 있는 환자에서는 의심을 낮추지 말고 검사로 확인한다 [[harrison 22: 264장 p.1984]]. BNP·NT proBNP 는 보조 도구 다. 임상이 애매하거나 폐질환이 함께 있을 때 판단을 돕고, 아주 낮으면 비만이 아닌 환자에서 숨참의 원인으로 심부전을 배제하는 데 쓴다 [[har",
+   "text": "Cardiology 판단 — 왜 「펩타이드 → 심초음파」인가 심부전의 증상·징후는 특이도·민감도가 모두 낮다 — 고령·심혈관 질환·고혈압·당뇨·만성 콩팥병이 있는 환자에서는 의심을 낮추지 말고 검사로 확인한다 [[harrison 22: 264장 p.1984]]. BNP·NT proBNP 는 보조 도구 다. 임상이 애매하거나 폐질환이 함께 있을 때 판단을 돕고, 아주 낮으면 비만이 아닌 환자에서 숨참의 원인으로 심부전을 배제하는 데 쓴다 [[harrison 22: 264장 p.1985–1986]]. 확인과 분류는 심초음파 가 한다 — 심실 크기·기능, 판막, 심낭 삼출, 혈전을 빠르게 보고, 박출률로 유형을 나눈다 [[harrison 22: 264장 p.1985]]. 흉부 X선·심전도는 진단 검사가 아니라 원인과 다른 숨참 원인 (폐렴·COPD)을 찾는 검사다 [[harrison 22: 264장 p.1985]]. 기전 — 벽 긴장에서 펩타이드로 BNP 와 NT proBNP 는 심방·심실의 벽 긴장(wall stress) 이 늘면 분비된다 — 그래서 확장·압력 부하가 큰 HFrEF 가 HFpEF 보다 대개 높다 [[harrison 22: 264장 p.1985]]. 나트륨이뇨펩타이드는 신경호르몬 축에 맞서는 대항 조절 물질로, 네프릴리신(neprilysin)이 분해한다 [[harrison 22: 264장 p.1980]]. 값은 심장 밖 요인에도 흔들린다 — 나이·여성·만성 콩팥병은 올리고, 비만은 낮춘다. 심방세동·폐색전증·폐동맥 고혈압처럼 심방·우심실에 부하를 주는 다른 심혈관 질환도 올린다 [[harrison 22: 264장 p.1985]]. 가르는 소견 — 박출률이 유형을 나눈다 심부전 환자의 약 절반이 박출률 감소(≤40 %), 나머지는 보존(≥50 %) 또는 경도 감소(41–49 %)다 [[harrison 22: 264장 p.1977]]. 박출률과 관계없이 대부분 수축·이완 이상을 함께 가지므로 「수축기·이완기 심부전」이라는 옛 용어는 버렸다. 유형은 인구 특성·동반 질환· 치료 반응 이 달라 나눈다 [[harrison 22: 264장 p.1977]]. 진찰: S3 는 용적 과부하·빈맥에서 들리며 심한 혈역학 장애와 나쁜 예후를 뜻한다. S4 는 비특이적이지만 고혈압성 HFpEF 에서 들릴 수 있다. 심첨 박동은 아래·왼쪽으로 밀린다 [[harrison 22: 264장 p.1984]]. 흉부 X선: 심흉곽비 0.5, 폐정맥 울혈, 상엽 혈관 재분포, 소엽간 중격 비후. 만성 심부전에서는 림프 배출이 늘어 이런 소견이 없을 수 있다 [[harrison 22: 264장 p.1985]]. 심전도는 원인의 실마리다 — 좌심실 비대·좌심방 확대는 HFpEF(고혈압·대동맥판 협착·비후성 심근병증), Q 파는 허혈, 저전압+가성 경색은 아밀로이드증, 전도 장애는 사르코이드증·샤가스병 [[harrison 22: 264장 p.1985]]. 권고와 예외 숨참에서 심장·폐 원인을 가르기 어렵다. 밤에 깨는 숨참이 기침·가래로 풀리면 폐, 일어나 앉아야 풀리면 심장 쪽이다. 두 병이 함께 있으면 구분이 불가능할 수 있어, 이뇨 뒤 폐기능 검사나 심폐 운동 검사가 돕는다 [[harrison 22: 264장 p.1986]]. 유형이 정해지면 원인을 찾는다 — 관상동맥 조영으로 되돌릴 수 있는 허혈성 원인을 배제하고, CMR 로 허혈·심근염·아밀로이드증·혈색소증을 가른다 [[harrison 22: 264장 p.1985]]. 혈액검사: 저나트륨은 입원 시 나쁜 예후의 지표이고, 우심부전의 간 울혈은 아미노전이효소·ALP·빌리루빈을 조금 올려 담도 질환과 혼동될 수 있다 [[harrison 22: 264장 p.1984]]. BNP·NT proBNP 의 진단 절단값은 이 장에 없어 대조하지 않았다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 심부전 정의 — 시험 기준: 구조·기능 이상에 의한 증상·징후 + 펩타이드 상승 또는 울혈의 객관적 증거(보편 정의) [[harrison 22: 264장 p.1976]] / 다른 기준: AHA/ACC/HFSA 는 충만·박출 장애의 임상 증후군, ESC 는 주요 증상과 징후 중심 [[harrison 22: 264장 p.1975]] / 왜 다른가: 학회마다 강조점이 다르고 보편 정의는 둘을 묶으려는 합의안 / 시험에서는: KMLE · USMLE 모두 「증상·징후 + 심장 구조·기능 이상 확인(심초음파)」으로 답한다."
   },
   {
    "id": "kmle-2026-1891",
