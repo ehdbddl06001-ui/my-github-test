@@ -1,24 +1,24 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-16",
+ "generated": "2026-11-17",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3947,
+  "total": 3961,
   "byType": {
    "usmle": 270,
+   "paper": 945,
+   "imaging": 702,
    "concept": 171,
    "kmle": 1856,
-   "imaging": 690,
-   "paper": 943,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 341,
+   "Cardiology": 342,
    "Nephrology": 252,
-   "Infectious Disease": 233,
+   "Infectious Disease": 234,
    "Pediatrics": 223,
    "Obstetrics & Gynecology": 163,
    "Rheumatology": 145,
@@ -35,22 +35,22 @@ window.MEDKOS_INDEX = {
    "Surgery": 121,
    "Pulmonology": 120,
    "Hematology": 113,
-   "순환기": 104,
+   "순환기": 107,
    "Laboratory Medicine": 96,
-   "산부인과": 84,
-   "호흡기": 44,
-   "소화기": 41,
+   "산부인과": 86,
+   "호흡기": 46,
+   "소화기": 42,
    "소아과": 36,
+   "신장·비뇨기": 32,
    "응급·중환자": 32,
    "내분비": 31,
-   "신장·비뇨기": 31,
    "혈액·종양": 31,
    "감염": 30,
+   "신경": 30,
    "Physiology": 29,
-   "신경": 29,
-   "병리·조직학": 28,
+   "병리·조직학": 29,
+   "피부과": 27,
    "외과": 26,
-   "피부과": 26,
    "예방의학·역학": 25,
    "Pharmacology": 23,
    "Biochemistry": 21,
@@ -77,8 +77,8 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2795,
-   "medium": 1148,
+   "high": 2807,
+   "medium": 1150,
    "low": 4
   },
   "tagCount": 4883
@@ -216,6 +216,252 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0278.md",
    "snippet": "A 68 year old man comes to the emergency department because of 2 days of diffuse muscle aching and weakness and dark brown urine since this morning. Six days ago, he began a 10 day course of clarithromycin for community acquired pneumonia; ",
    "text": "Pharmacology Two Days of Aching Thighs and Dark Brown Urine Six Days Into a Course of Antibiotics for Pneumonia in a 68-Year-Old on Long-Standing Cholesterol Therapy statin clarithromycin cyp3a4 drug-interaction rhabdomyolysis mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 419장 Disorders of Lipoprotein Metabolism) A 68 year old man comes to the emergency department because of 2 days of diffuse muscle aching and weakness and dark brown urine since this morning. Six days ago, he began a 10 day course of clarithromycin for community acquired pneumonia; his cough has improved. He has hyperlipidemia, hypertension, and coronary artery disease. He has taken simvastatin 40 mg daily, amlodipine, and aspirin for 4 years without muscle symptoms; his serum creatine kinase activity and creatinine concentration 6 months ago were normal. He does not drink alcohol and has not exercised strenuously. His vital signs are shown. The thigh and upper arm muscles are tender to palpation, and strength is 4/5 in the proximal muscles of all four extremities. Deep tendon reflexes are normal. There is no rash. Laboratory results are shown. A urine dipstick is strongly positive for blood; microscopy shows 0–2 RBC/hpf. Which of the following is the most likely mechanism of this patient's muscle injury? A. Autoantibodies against HMG CoA reductase in skeletal muscle B. Decreased renal excretion of the statin from kidney injury C. Displacement of the statin from plasma albumin binding sites D. Inhibition of hepatic CYP3A4 mediated metabolism of the statin E. Direct mitochondrial toxicity of the antibiotic in muscle fibers CK 18,400 과 소변 잠혈 강양성인데 적혈구 0–2 → 미오글로빈뇨를 동반한 횡문근융해다. 4년 동안 문제없던 simvastatin 에 6일 전 clarithromycin 이 더해졌다 — 새로 바뀐 것은 이 약 하나다. clarithromycin 은 강력한 CYP3A4 억제제이고 simvastatin 은 CYP3A4 로 대사되는 기질이라, 병용하면 simvastatin(과 활성 산 형태)의 혈중 농도가 여러 배로 올라 용량 의존적 근독성이 나타난다 — simvastatin 은 clarithromycin 과의 병용이 금기다. 항 HMGCR 자가면역 괴사성 근병증(A)은 수주~수개월에 걸쳐 진행하며 새 약을 시작한 직후 며칠 만에 생긴 경과와 맞지 않는다. simvastatin 은 주로 간에서 제거돼 신장 손상이 원인이 될 수 없고(B — 크레아티닌 상승은 결과다), 단백 결합 치환(C)은 유리 분율을 잠깐 바꿀 뿐 임상적 독성의 주된 기전이 아니며, 마크롤라이드 자체는 근독성 약이 아니다(E)."
+  },
+  {
+   "id": "paper-2026-0945",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Bulletin of the Hospital for Joint Disease (2013)",
+   "confidence": "medium",
+   "date": "2026-11-17",
+   "path": "content/papers/2026/2026-11-17_paper-2026-0945_a_north_american_experience_with_the_french_paradox_techniqu.md",
+   "snippet": "Title A North American experience with the \"French Paradox\" technique in total hip arthroplasty: up to 5 year follow up Authors Saba Braden V, Lam Alan, Barnes Matthew, Blankstein Michael, Krueger Chad A, Schwarzkopf Ran Journal / DOI Bulle",
+   "text": "Infectious Disease scraped pubmed PubMed / Bulletin of the Hospital for Joint Disease (2013) Title A North American experience with the \"French Paradox\" technique in total hip arthroplasty: up to 5 year follow up Authors Saba Braden V, Lam Alan, Barnes Matthew, Blankstein Michael, Krueger Chad A, Schwarzkopf Ran Journal / DOI Bulletin of the Hospital for Joint Disease (2013) · DOI: 10.1097/bh9.0000000000000066 · PMID: 43038508 https://pubmed.ncbi.nlm.nih.gov/43038508/ Abstract BACKGROUND: Cement use in total hip arthroplasty (THA) is a topic of ongoing research and debate. The French Paradox cement technique, first described in European arthroplasty literature, achieves a thin (<2 mm) cement mantle by preparing the femoral canal only slightly larger than the femoral implant. The technique was coined the \"French Paradox\" because a French designed stem showed excellent long term outcomes despite previous evidence that thin cement mantles can be prone to failure. PURPOSE: The purpose of this study was to describe a North American experience with femoral stems implanted using the French Paradox cement technique. STUDY DESIGN/METHODS: This was a retrospective study of 125 patients who underwent primary, unilateral THA using the French Paradox cement technique between 2020 and 2023 at 3 academic health systems and had minimum 2 year follow up. Demographic, implant related, perioperative, radiographic, and complication variables, as well as patient reported outcome measures and postoperative variables, were collected at baseline and all available postoperative follow ups. Chi square, t test, and ANOVA were used to assess statistical significance, with a significance level of 0.05. LEVEL OF EVIDENCE: IV. RESULTS: Of the 125 patients, 84% were women, 86% were White, and 5% were current smokers. The mean age of the cohort was 73 years, the mean Charlson Comorbidity Index (CCI) was 3.6%, and 96% of patients had an ASA score of either II or III. There was 1 readmission (0.8%) within 90 days of surgery, which was due to sepsis of gastrointestinal origin. Two patients (1.6%) underwent revision at a mean time of 14 months, 1 for acute PJI and 1 for acetabular component loosening. There were no femoral stem complications, including no instances of loosening, periprosthetic fracture, or stem subsidence. Patient reported outcome measures (PROMs) showed consistent and meaningful improvements in HOOS, JR and Forgotten Joint Score (FJS). CONCLUSION: The French Paradox cement technique demonstrated exceptional outcomes up to 5 years with no instances of femoral complications (loosening, subsidence, periprosthetic fracture, or stem failure). In appropriately selected patients and with compatible femoral stem designs, the French Paradox cement technique represents an effective cemented femoral fixation strategy with excellent early to mid term survivorship. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0944",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Hepatology research : the official journal of the Japan Society of Hepatology",
+   "confidence": "medium",
+   "date": "2026-11-17",
+   "path": "content/papers/2026/2026-11-17_paper-2026-0944_consensus_statements_on_the_clinical_practice_for_patients_w.md",
+   "snippet": "Title Consensus Statements on the Clinical Practice for Patients With Fontan Associated Liver Disease Authors Kanto Tatsuya, Akagi Teiji, Yamagishi Hiroyuki, Ohfuji Satoko, Tokuhara Daisuke, Kusano Hironori, Sakamori Ryotaro, Tateishi Ryosu",
+   "text": "Cardiology scraped pubmed PubMed / Hepatology research : the official journal of the Japan Society of Hepatology Title Consensus Statements on the Clinical Practice for Patients With Fontan Associated Liver Disease Authors Kanto Tatsuya, Akagi Teiji, Yamagishi Hiroyuki, Ohfuji Satoko, Tokuhara Daisuke, Kusano Hironori, Sakamori Ryotaro, Tateishi Ryosuke, et al. Journal / DOI Hepatology research : the official journal of the Japan Society of Hepatology · DOI: 10.1111/hepr.70241 · PMID: 43038485 https://pubmed.ncbi.nlm.nih.gov/43038485/ Abstract The Fontan procedure has been transformative for patients with univentricular physiology. By using a single ventricle as the systemic pump and relying on passive venous return to drive pulmonary circulation, Fontan circulation alleviates cyanosis and heart failure, allowing children to engage in normal activities during school and adolescence. Nevertheless, Fontan circulation is characterized by chronically elevated systemic venous pressure, which leads to systemic venous congestion and long term multiorgan effects. Fontan associated liver disease (FALD) is now recognized as a major long term complication. Approximately 50% of patients develop hepatic abnormalities within 10 20 years after surgery, and some progress to cirrhosis and hepatocellular carcinoma (HCC). Despite this risk, strategies to identify individuals at high risk for early HCC and to provide better prognostic information remain limited. This article compiles knowledge from congenital heart disease specialists and hepatologists on FALD, including areas where evidence is limited. By facilitating early diagnosis, structured follow up, and multidisciplinary management of FALD, this initiative aims to improve outcomes, build a nationwide clinical experience, and ultimately support the development of formal, evidence based guidelines for FALD management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0703",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 운동 시 숨참과 심잡음이 있는 중년 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202654Z_일일심전도_2026-11-18_2units_2q_86a34e31",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0703.md",
+   "snippet": "56세 여자가 1년 전부터 계단을 오를 때 숨이 차고 가끔 두근거린다며 외래에 왔다. 가슴 통증과 실신은 없다. 혈압 118/72 mmHg, 맥박 64회/분으로 규칙적이고 산소포화도 97% 이다. 흉골 왼쪽 위 경계에서 2/6 등급 수축기 박출 잡음이 들리며, 제2심음은 넓게 분열되고 호흡에 따라 변하지 않는다. 폐음은 깨끗하고 다리 부종은 없다. 흉부 X선에서 폐동맥 음영이 약간 두드러진다. 12유도 심전도는 그림과 같다. ",
+   "text": "순환기 심전도 처치 — 운동 시 숨참과 심잡음이 있는 중년 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202654Z_일일심전도_2026-11-18_2units_2q_86a34e31 56세 여자가 1년 전부터 계단을 오를 때 숨이 차고 가끔 두근거린다며 외래에 왔다. 가슴 통증과 실신은 없다. 혈압 118/72 mmHg, 맥박 64회/분으로 규칙적이고 산소포화도 97% 이다. 흉골 왼쪽 위 경계에서 2/6 등급 수축기 박출 잡음이 들리며, 제2심음은 넓게 분열되고 호흡에 따라 변하지 않는다. 폐음은 깨끗하고 다리 부종은 없다. 흉부 X선에서 폐동맥 음영이 약간 두드러진다. 12유도 심전도는 그림과 같다. 다음으로 할 검사로 가장 적절한 것은? A. 경흉부 심장초음파 B. 추가 검사 없이 경과 관찰 C. 운동부하 심전도 D. 관상동맥 조영술 E. 24시간 홀터 감시"
+  },
+  {
+   "id": "imaging-2026-0702",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 오래전 실신으로 시술을 받은 고령 남성의 외래 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202654Z_일일심전도_2026-11-18_2units_2q_86a34e31",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0702.md",
+   "snippet": "77세 남자가 고혈압으로 정기 외래에 왔다. 6년 전 실신으로 다른 병원에서 시술을 받았다고 하나 자세한 기록은 없다. 그 뒤로 실신과 어지러움은 없고, 지금 가슴 통증·두근거림·호흡곤란이 없다. 혈압 136/80 mmHg, 맥박 62회/분으로 규칙적이며, 폐음은 깨끗하고 다리 부종은 없다. 혈청 칼륨은 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 고칼륨혈증 B. 정상 작동",
+   "text": "순환기 심전도 판독 — 오래전 실신으로 시술을 받은 고령 남성의 외래 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202654Z_일일심전도_2026-11-18_2units_2q_86a34e31 77세 남자가 고혈압으로 정기 외래에 왔다. 6년 전 실신으로 다른 병원에서 시술을 받았다고 하나 자세한 기록은 없다. 그 뒤로 실신과 어지러움은 없고, 지금 가슴 통증·두근거림·호흡곤란이 없다. 혈압 136/80 mmHg, 맥박 62회/분으로 규칙적이며, 폐음은 깨끗하고 다리 부종은 없다. 혈청 칼륨은 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 고칼륨혈증 B. 정상 작동하는 인공 심박동기 조율 C. 완전 좌각차단 D. 가속 심실 고유 리듬 E. 3도 방실차단과 심실 이탈 리듬"
+  },
+  {
+   "id": "imaging-2026-0701",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 노인 팔의 갈색 반점 더모스코피",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0701.md",
+   "snippet": "A 70 year old man comes to the physician because his wife noticed a flat brown spot on his upper arm. He thinks it has been present for several years without change. It does not itch or bleed. He worked outdoors as a farmer for 40 years and",
+   "text": "피부과 피부 — 노인 팔의 갈색 반점 더모스코피 opendata usmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c A 70 year old man comes to the physician because his wife noticed a flat brown spot on his upper arm. He thinks it has been present for several years without change. It does not itch or bleed. He worked outdoors as a farmer for 40 years and has many similar but smaller spots on both forearms. He has no personal or family history of skin cancer. Examination shows a 1.5 cm, uniformly light brown macule with a smooth border on the upper extremity; it is not raised or tender. A dermoscopic photograph of the lesion is shown. Which of the following is the most likely diagnosis? A. Junctional melanocytic nevus B. Lentigo C. Melanoma in situ D. Seborrheic keratosis E. Pigmented basal cell carcinoma"
+  },
+  {
+   "id": "imaging-2026-0700",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장 — 알코올 사용장애 환자의 의식 저하와 대사성 산증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0700.md",
+   "snippet": "45세 남자가 집에서 몸을 가누지 못하고 말이 어눌한 상태로 가족에게 발견되어 응급실에 왔다. 알코올 사용장애로 치료받은 적이 있다. 혈압 132/84 mmHg, 맥박 108회/분, 호흡 28회/분으로 깊고 빠르며 체온 36.7°C 이다. 술 냄새는 나지 않는다. 혈액검사에서 나트륨 140 mEq/L, 칼륨 4.6 mEq/L, 염소 100 mEq/L, 중탄산 8 mEq/L, 혈당 90 mg/dL, 혈액요소질소 14 mg/dL,",
+   "text": "신장·비뇨기 신장 — 알코올 사용장애 환자의 의식 저하와 대사성 산증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c 45세 남자가 집에서 몸을 가누지 못하고 말이 어눌한 상태로 가족에게 발견되어 응급실에 왔다. 알코올 사용장애로 치료받은 적이 있다. 혈압 132/84 mmHg, 맥박 108회/분, 호흡 28회/분으로 깊고 빠르며 체온 36.7°C 이다. 술 냄새는 나지 않는다. 혈액검사에서 나트륨 140 mEq/L, 칼륨 4.6 mEq/L, 염소 100 mEq/L, 중탄산 8 mEq/L, 혈당 90 mg/dL, 혈액요소질소 14 mg/dL, 크레아티닌 1.9 mg/dL, 에탄올 검출 안 됨, 젖산 2.1 mmol/L, 혈청 케톤 음성, 측정한 혈청 삼투압 330 mOsm/kg 이다. 동맥혈 pH 7.08 이다. 소변 현미경 검사에서 봉투 모양과 바늘 모양의 결정이 보인다. 가장 적절한 치료는? A. 탄산수소나트륨 단독 투여 B. N 아세틸시스테인 정맥 투여 C. 포메피졸 정맥 투여 D. 날록손 정맥 투여 E. 티아민 투여 후 포도당 수액"
+  },
+  {
+   "id": "imaging-2026-0699",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 폐경 후 출혈과 두꺼운 자궁내막",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0699.md",
+   "snippet": "A 61 year old woman comes to the physician because of three episodes of light vaginal spotting over the past month. Her last menstrual period was 9 years ago. She has hypertension and type 2 diabetes mellitus. She has never taken hormone th",
+   "text": "산부인과 부인과 — 폐경 후 출혈과 두꺼운 자궁내막 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c A 61 year old woman comes to the physician because of three episodes of light vaginal spotting over the past month. Her last menstrual period was 9 years ago. She has hypertension and type 2 diabetes mellitus. She has never taken hormone therapy. Her BMI is 34 kg/m². Pelvic examination shows an atrophic vagina and a normal appearing cervix with no bleeding at the time of examination; the uterus is normal in size. A cervical cytology screen 1 year ago was negative. Transvaginal ultrasonography shows an endometrial thickness of 9 mm and no adnexal masses. Which of the following is the most appropriate next step in management? A. Endometrial biopsy B. Topical vaginal estrogen and follow up C. Repeat transvaginal ultrasonography in 6 months D. Total abdominal hysterectomy E. Serum CA 125 measurement"
+  },
+  {
+   "id": "imaging-2026-0698",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "감염 — 정맥 약물 사용자의 발열과 새 심잡음",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0698.md",
+   "snippet": "31세 남자가 5일 동안의 발열과 오한, 기침으로 응급실에 왔다. 2년 전부터 필로폰과 헤로인을 정맥 주사한다. 체온 39.2°C, 혈압 112/68 mmHg, 맥박 112회/분, 호흡 22회/분, 실내 공기에서 산소포화도 95% 이다. 의식은 명료하다. 흉골 왼쪽 아래 경계에서 들숨 때 커지는 범수축기 잡음이 들리고, 양쪽 팔에 주사 자국이 있다. 백혈구 16,400/mm³, C반응단백 14.2 mg/dL 이다. 흉부 CT ",
+   "text": "호흡기 감염 — 정맥 약물 사용자의 발열과 새 심잡음 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c 31세 남자가 5일 동안의 발열과 오한, 기침으로 응급실에 왔다. 2년 전부터 필로폰과 헤로인을 정맥 주사한다. 체온 39.2°C, 혈압 112/68 mmHg, 맥박 112회/분, 호흡 22회/분, 실내 공기에서 산소포화도 95% 이다. 의식은 명료하다. 흉골 왼쪽 아래 경계에서 들숨 때 커지는 범수축기 잡음이 들리고, 양쪽 팔에 주사 자국이 있다. 백혈구 16,400/mm³, C반응단백 14.2 mg/dL 이다. 흉부 CT 에서 양쪽 폐 말초에 가운데가 빈 여러 개의 결절이 보인다. 가장 먼저 할 처치는? A. 30분 이상 간격을 두고 다른 부위에서 혈액배양 3세트를 채취한다 B. 즉시 반코마이신을 정맥 투여하고 배양은 다음 날 한다 C. 경식도 심장초음파를 먼저 시행한다 D. 삼첨판 치환술을 위해 흉부외과에 수술을 의뢰한다 E. 가래 항산균 도말 검사를 하고 결핵약을 시작한다"
+  },
+  {
+   "id": "imaging-2026-0697",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 저혈압과 의식 변화를 동반한 담관염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0697.md",
+   "snippet": "A 74 year old woman is brought to the emergency department because of fever, right upper quadrant pain, and confusion for 1 day. She has a history of gallstones. Temperature is 39.4°C, blood pressure is 84/50 mm Hg, pulse is 118/min, and re",
+   "text": "소화기 소화기 — 저혈압과 의식 변화를 동반한 담관염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c A 74 year old woman is brought to the emergency department because of fever, right upper quadrant pain, and confusion for 1 day. She has a history of gallstones. Temperature is 39.4°C, blood pressure is 84/50 mm Hg, pulse is 118/min, and respirations are 24/min. She is oriented only to person. The sclerae are icteric, and there is tenderness in the right upper quadrant without peritoneal signs. Laboratory studies show a leukocyte count of 19,800/mm³, total bilirubin of 5.6 mg/dL, alkaline phosphatase of 420 U/L, and lipase within the reference range. Ultrasonography shows a common bile duct of 12 mm with an echogenic focus in its distal portion; the gallbladder wall is not thickened. Intravenous fluids and piperacillin tazobactam are started. Which of the following is the most appropriate next step in management? A. Magnetic resonance cholangiopancreatography B. Continue antibiotics and reassess in 48 hours C. Hepatobiliary iminodiacetic acid scan D. Urgent endoscopic retrograde cholangiopancreatography E. Laparoscopic cholecystectomy within 72 hours"
+  },
+  {
+   "id": "imaging-2026-0696",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 두통과 시력 저하를 호소하는 남성의 안장 부위 종괴와 시야",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0696.md",
+   "snippet": "35세 남자가 6개월 전부터 이마 쪽 두통이 있고, 최근 운전할 때 옆 차선에서 끼어드는 차를 늦게 본다며 왔다. 복용하는 약은 없다. 혈압 128/80 mmHg, 맥박 76회/분이다. 동공 반사와 안구 운동은 정상이고 다른 신경학적 이상은 없다. 교정 시력은 양쪽 0.9 이다. 뇌 MRI 관상면 조영 증강 T1 강조영상은 그림과 같다. 이 환자에서 시야 검사로 예상되는 결손은? A. 반대쪽 동측 반맹 B. 반대쪽 위쪽 사분맹",
+   "text": "신경 신경 — 두통과 시력 저하를 호소하는 남성의 안장 부위 종괴와 시야 opendata kmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c 35세 남자가 6개월 전부터 이마 쪽 두통이 있고, 최근 운전할 때 옆 차선에서 끼어드는 차를 늦게 본다며 왔다. 복용하는 약은 없다. 혈압 128/80 mmHg, 맥박 76회/분이다. 동공 반사와 안구 운동은 정상이고 다른 신경학적 이상은 없다. 교정 시력은 양쪽 0.9 이다. 뇌 MRI 관상면 조영 증강 T1 강조영상은 그림과 같다. 이 환자에서 시야 검사로 예상되는 결손은? A. 반대쪽 동측 반맹 B. 반대쪽 위쪽 사분맹 C. 황반 회피를 동반한 반대쪽 동측 반맹 D. 양이측 반맹 E. 같은 쪽 단안 시야 결손"
+  },
+  {
+   "id": "imaging-2026-0695",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아심박동 감속의 기전",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0695.md",
+   "snippet": "A 36 year old woman, gravida 2, para 1, at 38 weeks' gestation is admitted in active labor. Her pregnancy has been uncomplicated. Membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear and scant. She is afebrile, and ",
+   "text": "산부인과 산과 — 분만 중 태아심박동 감속의 기전 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c A 36 year old woman, gravida 2, para 1, at 38 weeks' gestation is admitted in active labor. Her pregnancy has been uncomplicated. Membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear and scant. She is afebrile, and her blood pressure is 116/70 mm Hg. She is receiving no oxytocin. A 10 minute segment of continuous fetal heart rate and uterine activity monitoring obtained 40 minutes after the start of the recording is shown. Which of the following is the most likely cause of the abrupt decreases in fetal heart rate near the end of this segment? A. Fetal head compression B. Uteroplacental insufficiency C. Fetal anemia D. Maternal fever E. Umbilical cord compression"
+  },
+  {
+   "id": "imaging-2026-0694",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 키 큰 젊은 남성의 갑작스러운 흉통과 큰 기흉",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0694.md",
+   "snippet": "22세 남자가 2시간 전 앉아서 공부하다 갑자기 생긴 오른쪽 가슴 통증과 숨참으로 응급실에 왔다. 키 186 cm, 체중 64 kg 이며 하루 반 갑의 담배를 4년간 피웠다. 과거력은 없다. 혈압 124/78 mmHg, 맥박 104회/분, 호흡 22회/분, 체온 36.8°C, 실내 공기에서 산소포화도 94% 이다. 기관은 가운데에 있고 경정맥 확장은 없다. 오른쪽 폐음이 감소하고 타진상 과공명음이다. 흉부 X선에서 오른쪽 폐문",
+   "text": "호흡기 호흡기 — 키 큰 젊은 남성의 갑작스러운 흉통과 큰 기흉 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c 22세 남자가 2시간 전 앉아서 공부하다 갑자기 생긴 오른쪽 가슴 통증과 숨참으로 응급실에 왔다. 키 186 cm, 체중 64 kg 이며 하루 반 갑의 담배를 4년간 피웠다. 과거력은 없다. 혈압 124/78 mmHg, 맥박 104회/분, 호흡 22회/분, 체온 36.8°C, 실내 공기에서 산소포화도 94% 이다. 기관은 가운데에 있고 경정맥 확장은 없다. 오른쪽 폐음이 감소하고 타진상 과공명음이다. 흉부 X선에서 오른쪽 폐문 높이에서 흉벽과 폐 가장자리 사이 거리가 3 cm 인 기흉이 보이며 종격동 이동은 없다. 가장 적절한 처치는? A. 비디오 흉강경 수술을 한다 B. 흉막유착술을 한다 C. 바늘 흡인으로 흉막강 공기를 뺀다 D. 외래에서 경과 관찰한다 E. 즉시 둘째 갈비사이 바늘 감압을 한다"
+  },
+  {
+   "id": "imaging-2026-0693",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음과 발살바",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0693.md",
+   "snippet": "A 19 year old man is brought to the emergency department after he fainted while sprinting during basketball practice. He regained consciousness within a minute. He has had exertional chest tightness for several months. His uncle died sudden",
+   "text": "순환기 순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음과 발살바 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c A 19 year old man is brought to the emergency department after he fainted while sprinting during basketball practice. He regained consciousness within a minute. He has had exertional chest tightness for several months. His uncle died suddenly at age 32. Blood pressure is 122/74 mm Hg and pulse is 68/min. Cardiac examination shows a grade 3/6 harsh systolic murmur at the left lower sternal border that increases during the strain phase of the Valsalva maneuver and decreases with squatting. The carotid upstroke is brisk. An ECG shows tall QRS voltage in the precordial leads with deep narrow Q waves in leads I and aVL. Which of the following is the most likely diagnosis? A. Dilated cardiomyopathy B. Hypertrophic cardiomyopathy C. Bicuspid aortic valve stenosis D. Mitral valve prolapse E. Ventricular septal defect"
+  },
+  {
+   "id": "imaging-2026-0692",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 난임 검사 자궁내막 생검의 호르몬 수용체 면역염색",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c",
+   "confidence": "high",
+   "date": "2026-11-17",
+   "path": "content/imaging/2026/imaging-2026-0692.md",
+   "snippet": "36세 여자가 1년 동안 임신이 되지 않아 난임 검사를 받았다. 월경 주기는 28일로 규칙적이고, 마지막 월경 시작 10일째에 자궁내막 생검을 하였다. 복용하는 약은 없다. 생검 조직에 한 가지 호르몬 수용체에 대한 면역조직화학염색을 하였고, 그 결과는 그림과 같다(갈색 = 양성). 이 수용체가 세포 기능을 바꾸는 방식으로 가장 적절한 것은? A. G단백질을 활성화해 세포 안 cAMP 를 늘린다 B. 수용체 자체의 티로신 인산",
+   "text": "병리·조직학 병리 — 난임 검사 자궁내막 생검의 호르몬 수용체 면역염색 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261117T202518Z_일일영상_2026-11-18_10units_10q_3145345c 36세 여자가 1년 동안 임신이 되지 않아 난임 검사를 받았다. 월경 주기는 28일로 규칙적이고, 마지막 월경 시작 10일째에 자궁내막 생검을 하였다. 복용하는 약은 없다. 생검 조직에 한 가지 호르몬 수용체에 대한 면역조직화학염색을 하였고, 그 결과는 그림과 같다(갈색 = 양성). 이 수용체가 세포 기능을 바꾸는 방식으로 가장 적절한 것은? A. G단백질을 활성화해 세포 안 cAMP 를 늘린다 B. 수용체 자체의 티로신 인산화효소를 활성화한다 C. 결합한 JAK 인산화효소를 통해 STAT 단백질을 인산화한다 D. 이온 통로를 열어 세포막 전위를 바꾼다 E. 리간드와 결합한 뒤 DNA 의 반응 요소에 붙어 유전자 전사를 조절한다"
   },
   {
    "id": "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
