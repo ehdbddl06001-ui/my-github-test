@@ -1,20 +1,20 @@
 {
- "started": "2026-11-16T10:15:35+09:00",
+ "started": "2026-11-17T13:07:32+09:00",
  "built": [
-  "순환기내과",
-  "안과",
-  "산부인과",
-  "류마티스내과"
+  "순환기내과"
  ],
  "skipped": [
   "응급의학과",
   "정형외과",
   "피부과",
   "내분비내과",
+  "안과",
   "외과",
+  "산부인과",
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
+  "류마티스내과",
   "호흡기내과",
   "감염내과",
   "소화기내과",
@@ -28,26 +28,12 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "순환기내과": [],
-  "안과": [],
-  "산부인과": [],
-  "류마티스내과": []
+  "순환기내과": []
  },
  "notes": {
   "순환기내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 31쪽 왼쪽 단 아래가 비어 있다(빈 공간 39%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 31쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 33쪽 왼쪽 단 아래가 비어 있다(빈 공간 45%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 33쪽 오른쪽 단 아래가 비어 있다(빈 공간 43%)"
-  ],
-  "안과": [],
-  "산부인과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 28쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)"
-  ],
-  "류마티스내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 24쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 11%) — 좌우로 오가며 읽힌다",
-   "배치 탐색 뒤에도 남은 빈 공간: 51쪽 왼쪽 단 아래가 비어 있다(빈 공간 43%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 51쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
+   "배치 탐색 뒤에도 남은 빈 공간: 38쪽 두 단 도식 위 좁은 띠(15%) — 좌우로 오가며 읽힌다",
+   "배치 탐색 뒤에도 남은 빈 공간: 45쪽 왼쪽 단 아래가 비어 있다(빈 공간 32%)"
   ]
  },
  "concept_errors": [
@@ -65,12 +51,9 @@
   "content/concepts/rheumatology/cn.rheum.behcet.clinical-diagnosis.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
- "retired": [
-  "Obstetrics and Gynecology"
- ],
  "layout_trials": {
   "순환기내과": {
-   "tried": 674,
+   "tried": 787,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -115,7 +98,7 @@
     "u-cn-cardio-ischemic-ecg-localization-culprit-artery#col": false,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology": 13,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#shrink": 1.0,
-    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#pad": 0,
+    "u-cn-cardio-cardiac-mri-lge-pattern-etiology#pad": 42,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#col": false,
     "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential": 15,
     "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#shrink": 1.0,
@@ -129,174 +112,38 @@
     "u-cn-cardio-complete-av-block-permanent-pacemaker#shrink": 1.0,
     "u-cn-cardio-complete-av-block-permanent-pacemaker#pad": 0,
     "u-cn-cardio-complete-av-block-permanent-pacemaker#col": false,
-    "u-cn-cardio-svt-av-nodal-blockade-response": 17,
-    "u-cn-cardio-svt-av-nodal-blockade-response#shrink": 0.88,
-    "u-cn-cardio-svt-av-nodal-blockade-response#pad": 0,
-    "u-cn-cardio-svt-av-nodal-blockade-response#col": false,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition": 14,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#shrink": 1.0,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#pad": 0,
+    "u-cn-cardio-sinus-arrhythmia-ecg-recognition#col": true,
     "u-cn-cardio-focal-atrial-tachycardia-ecg-differential": 15,
     "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#shrink": 0.76,
-    "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#pad": 0,
+    "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#pad": 28,
     "u-cn-cardio-focal-atrial-tachycardia-ecg-differential#col": false,
-    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg": 12,
-    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#shrink": 1.0,
-    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#pad": 0,
-    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#col": false,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#figscale:f1": 0.85,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition": 11,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition#shrink": 0.88,
-    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 0,
+    "u-cn-cardio-premature-ventricular-complex-ecg-recognition#pad": 42,
     "u-cn-cardio-premature-ventricular-complex-ecg-recognition#col": false,
     "u-cn-cardio-sustained-vt-wide-complex-tachycardia-management": 18,
     "u-cn-cardio-sustained-vt-wide-complex-tachycardia-management#shrink": 1.0,
     "u-cn-cardio-sustained-vt-wide-complex-tachycardia-management#pad": 0,
     "u-cn-cardio-sustained-vt-wide-complex-tachycardia-management#col": false,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 1.0,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 28,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false,
-    "u-cn-cardio-electrical-storm-substrate-directed-stabilization": 14,
-    "u-cn-cardio-electrical-storm-substrate-directed-stabilization#shrink": 1.0,
-    "u-cn-cardio-electrical-storm-substrate-directed-stabilization#pad": 0,
-    "u-cn-cardio-electrical-storm-substrate-directed-stabilization#col": false
-   }
-  },
-  "안과": {
-   "tried": 119,
-   "diagram_after_section": {
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#figscale:f1": 0.75,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 8,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp": 2,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#shrink": 1.0,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#pad": 0,
-    "u-cn-ophth-herpes-zoster-ophthalmicus-antiviral-slit-lamp#col": false,
-    "u-cn-ophth-crao-arteritic-workup#fig:f1": 7,
-    "u-cn-ophth-crao-arteritic-workup": 14,
-    "u-cn-ophth-crao-arteritic-workup#shrink": 1.0,
-    "u-cn-ophth-crao-arteritic-workup#pad": 0,
-    "u-cn-ophth-crao-arteritic-workup#col": true,
-    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 0.88,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 0,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#col": false,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field": 14,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#shrink": 1.0,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#pad": 0,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#col": false
-   }
-  },
-  "산부인과": {
-   "tried": 389,
-   "diagram_after_section": {
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 11,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#shrink": 1.0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#pad": 0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#col": true,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation": 11,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation#shrink": 0.88,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation#pad": 0,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation#col": false,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 18,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 0.76,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 0,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
-    "u-cn-obgyn-menopause-hormone-therapy-decision": 17,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#shrink": 1.0,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#pad": 0,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#col": false,
-    "u-cn-obgyn-female-sexual-dysfunction-management": 18,
-    "u-cn-obgyn-female-sexual-dysfunction-management#shrink": 1.0,
-    "u-cn-obgyn-female-sexual-dysfunction-management#pad": 0,
-    "u-cn-obgyn-female-sexual-dysfunction-management#col": false,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive": 14,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive#shrink": 0.76,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive#pad": 0,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive#col": false,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication": 18,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#shrink": 1.0,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#pad": 0,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#col": false,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category": 21,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#shrink": 1.0,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#pad": 0,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#col": false,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type": 11,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#shrink": 1.0,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#pad": 0,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#col": true,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#figscale:f2": 0.85,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis": 15,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#shrink": 1.0,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#pad": 0,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#col": true
-   }
-  },
-  "류마티스내과": {
-   "tried": 723,
-   "diagram_after_section": {
-    "u-cn-rheum-drug-induced-lupus-anti-histone": 12,
-    "u-cn-rheum-drug-induced-lupus-anti-histone#shrink": 1.0,
-    "u-cn-rheum-drug-induced-lupus-anti-histone#pad": 0,
-    "u-cn-rheum-drug-induced-lupus-anti-histone#col": true,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine": 17,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#shrink": 1.0,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#pad": 14,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#col": false,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor": 13,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#shrink": 1.0,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#pad": 28,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#col": false,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue": 12,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#shrink": 1.0,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#pad": 0,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#col": false,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis": 12,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#shrink": 1.0,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#pad": 0,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#col": false,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor": 17,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor#shrink": 0.88,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor#pad": 0,
-    "u-cn-rheum-scleroderma-renal-crisis-ace-inhibitor#col": false,
-    "u-cn-rheum-sjogren-sicca-workup": 7,
-    "u-cn-rheum-sjogren-sicca-workup#shrink": 1.0,
-    "u-cn-rheum-sjogren-sicca-workup#pad": 0,
-    "u-cn-rheum-sjogren-sicca-workup#col": false,
-    "u-cn-rheum-iga-vasculitis-diagnosis": 19,
-    "u-cn-rheum-iga-vasculitis-diagnosis#shrink": 1.0,
-    "u-cn-rheum-iga-vasculitis-diagnosis#pad": 0,
-    "u-cn-rheum-iga-vasculitis-diagnosis#col": false,
-    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis": 20,
-    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis#shrink": 1.0,
-    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis#pad": 0,
-    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis#col": false,
-    "u-cn-rheum-behcet-clinical-diagnosis": 14,
-    "u-cn-rheum-behcet-clinical-diagnosis#shrink": 1.0,
-    "u-cn-rheum-behcet-clinical-diagnosis#pad": 42,
-    "u-cn-rheum-behcet-clinical-diagnosis#col": false,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis": 18,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#shrink": 1.0,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#pad": 0,
-    "u-cn-rheum-relapsing-polychondritis-clinical-diagnosis#col": false,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first": 13,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#shrink": 1.0,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#pad": 28,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#col": false,
-    "u-cn-rheum-cppd-crystal-diagnosis#fig:f1": 7,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 4,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
-    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#col": false,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 15,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": true
+    "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion": 18,
+    "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#shrink": 1.0,
+    "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#pad": 14,
+    "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#col": false,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management": 22,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#shrink": 1.0,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#pad": 42,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#col": false,
+    "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#pad": 42,
+    "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#pad": 42
    }
   }
  },
  "result": "ok",
- "finished": "2026-11-16T13:23:24+09:00",
+ "finished": "2026-11-17T15:33:27+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -305,41 +152,17 @@
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "9b0dbe4782381519f9d47df1c513c507",
-    "archive": "MedKOS_학습서_순환기내과_v32_2026-11-16.pdf"
-   },
-   "안과": {
-    "file": "MedKOS_학습서_안과.pdf",
-    "status": "uploaded",
-    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "kept_id": true,
-    "md5": "8f85ad2b5a0a91462ef5aa78c5f71e22",
-    "archive": "MedKOS_학습서_안과_v19_2026-11-16.pdf"
-   },
-   "산부인과": {
-    "file": "MedKOS_학습서_산부인과.pdf",
-    "status": "uploaded",
-    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "kept_id": true,
-    "md5": "d282be0645210bf2be6765f966e19dd3",
-    "archive": "MedKOS_학습서_산부인과_v19_2026-11-16.pdf"
-   },
-   "류마티스내과": {
-    "file": "MedKOS_학습서_류마티스내과.pdf",
-    "status": "uploaded",
-    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "kept_id": true,
-    "md5": "cfb5bfd16d586236bfe88f502c24a073",
-    "archive": "MedKOS_학습서_류마티스내과_v38_2026-11-16.pdf"
+    "md5": "a202ffe2699323850898eb4d5ab5252a",
+    "archive": "MedKOS_학습서_순환기내과_v33_2026-11-17.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "3196084439d4d89cdf78c4bab3dd1c63"
+    "md5": "7f983c469f5d8408e44a38e19a07ab97"
    }
   },
-  "at": "2026-11-16T13:23:24+09:00"
+  "at": "2026-11-17T15:33:27+09:00"
  }
 }
