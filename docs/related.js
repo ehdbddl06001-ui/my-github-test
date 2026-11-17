@@ -118,6 +118,48 @@ window.MEDKOS_RELATED = {
     "term": "cardiovascular disease"
    }
   ],
+  "cn.cardio.heart-failure.hfref-gdmt-selection": [
+   {
+    "id": "paper-2026-0940",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0919",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0915",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0910",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0889",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0860",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0838",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
+    "id": "paper-2026-0826",
+    "how": "t",
+    "term": "heart failure"
+   }
+  ],
   "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": [
    {
     "id": "paper-2026-0940",
@@ -738,11 +780,20 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
    ]
   },
+  "paper-2026-0826": {
+   "t": "Dose-Response Associations of Exercise Modalities With Cardiorespiratory Fitness in Heart Failure: A Systematic Review and Bayesian Network Meta-Analysis",
+   "j": "European journal of preventive cardiology",
+   "d": "2026-10-23",
+   "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection"
+   ]
+  },
   "paper-2026-0838": {
    "t": "Same Class, Different Risk? Dapagliflozin versus Empagliflozin and Genitourinary Safety in Heart Failure with Preserved Ejection Fraction: A Retrospective Comparative Cohort Study",
    "j": "Romanian journal of internal medicine = Revue roumaine de medecine interne",
    "d": "2026-10-26",
    "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
@@ -776,6 +827,7 @@ window.MEDKOS_RELATED = {
    "d": "2026-10-28",
    "c": [
     "cn.cardio.cardiac-mri-lge.pattern-etiology",
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
@@ -800,6 +852,7 @@ window.MEDKOS_RELATED = {
    "j": "The Analyst",
    "d": "2026-11-03",
    "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
     "cn.cardio.cvd-epidemiology.transition-risk-burden"
    ]
@@ -825,6 +878,7 @@ window.MEDKOS_RELATED = {
    "j": "Archivos de bronconeumologia",
    "d": "2026-11-06",
    "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
@@ -833,6 +887,7 @@ window.MEDKOS_RELATED = {
    "j": "Circulation",
    "d": "2026-11-08",
    "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
@@ -841,6 +896,7 @@ window.MEDKOS_RELATED = {
    "j": "Archivos de cardiologia de Mexico",
    "d": "2026-11-10",
    "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
@@ -857,6 +913,7 @@ window.MEDKOS_RELATED = {
    "j": "Experimental physiology",
    "d": "2026-11-15",
    "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   }
@@ -867,6 +924,7 @@ window.MEDKOS_RELATED = {
   "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": "심방세동 — 뇌졸중 예방은 점수로 항응고제",
   "cn.cardio.cardiac-mri-lge.pattern-etiology": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
   "cn.cardio.cvd-epidemiology.transition-risk-burden": "심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다",
+  "cn.cardio.heart-failure.hfref-gdmt-selection": "HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약",
   "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": "심부전 진단 — 펩타이드로 거르고 심초음파로 나눈다",
   "cn.cardio.nyha-class.functional-assessment": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
   "cn.derm.scabies.treat-with-contacts": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
