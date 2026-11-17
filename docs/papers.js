@@ -2,6 +2,77 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0945",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "A North American experience with the \"French Paradox\" technique in total hip arthroplasty: up to 5-year follow-up",
+  "authors": [
+   "Saba Braden V",
+   "Lam Alan",
+   "Barnes Matthew",
+   "Blankstein Michael",
+   "Krueger Chad A",
+   "Schwarzkopf Ran"
+  ],
+  "journal": "Bulletin of the Hospital for Joint Disease (2013)",
+  "doi": "10.1097/bh9.0000000000000066",
+  "pmid": "43038508",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43038508/",
+  "pubdate": "2026-11-16",
+  "date": "2026-11-17",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Cement use in total hip arthroplasty (THA) is a topic of ongoing research and debate. The French Paradox cement technique, first described in European arthroplasty literature, achieves a thin (<2 mm) cement mantle by preparing the femoral canal only slightly larger than the femoral implant. The technique was coined the \"French Paradox\" because a French-designed stem showed excellent long-term outcomes despite previous evidence that thin cement mantles can be prone to failure.\n\n**PURPOSE:** The purpose of this study was to describe a North American experience with femoral stems implanted using the French Paradox cement technique.\n\n**STUDY DESIGN/METHODS:** This was a retrospective study of 125 patients who underwent primary, unilateral THA using the French Paradox cement technique between 2020 and 2023 at 3 academic health systems and had minimum 2-year follow-up. Demographic, implant-related, perioperative, radiographic, and complication variables, as well as patient-reported outcome measures and postoperative variables, were collected at baseline and all available postoperative follow-ups. Chi-square, t test, and ANOVA were used to assess statistical significance, with a significance level of 0.05.\n\n**LEVEL OF EVIDENCE:** IV.\n\n**RESULTS:** Of the 125 patients, 84% were women, 86% were White, and 5% were current smokers. The mean age of the cohort was 73 years, the mean Charlson Comorbidity Index (CCI) was 3.6%, and 96% of patients had an ASA score of either II or III. There was 1 readmission (0.8%) within 90 days of surgery, which was due to sepsis of gastrointestinal origin. Two patients (1.6%) underwent revision at a mean time of 14 months, 1 for acute PJI and 1 for acetabular component loosening. There were no femoral stem complications, including no instances of loosening, periprosthetic fracture, or stem subsidence. Patient-reported outcome measures (PROMs) showed consistent and meaningful improvements in HOOS, JR and Forgotten Joint Score (FJS).\n\n**CONCLUSION:** The French Paradox cement technique demonstrated exceptional outcomes up to 5 years with no instances of femoral complications (loosening, subsidence, periprosthetic fracture, or stem failure). In appropriately selected patients and with compatible femoral stem designs, the French Paradox cement technique represents an effective cemented femoral fixation strategy with excellent early to mid-term survivorship.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0944",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Consensus Statements on the Clinical Practice for Patients With Fontan-Associated Liver Disease",
+  "authors": [
+   "Kanto Tatsuya",
+   "Akagi Teiji",
+   "Yamagishi Hiroyuki",
+   "Ohfuji Satoko",
+   "Tokuhara Daisuke",
+   "Kusano Hironori",
+   "Sakamori Ryotaro",
+   "Tateishi Ryosuke",
+   "et al."
+  ],
+  "journal": "Hepatology research : the official journal of the Japan Society of Hepatology",
+  "doi": "10.1111/hepr.70241",
+  "pmid": "43038485",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43038485/",
+  "pubdate": "2026-11-16",
+  "date": "2026-11-17",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "The Fontan procedure has been transformative for patients with univentricular physiology. By using a single ventricle as the systemic pump and relying on passive venous return to drive pulmonary circulation, Fontan circulation alleviates cyanosis and heart failure, allowing children to engage in normal activities during school and adolescence. Nevertheless, Fontan circulation is characterized by chronically elevated systemic venous pressure, which leads to systemic venous congestion and long-term multiorgan effects. Fontan-associated liver disease (FALD) is now recognized as a major long-term complication. Approximately 50% of patients develop hepatic abnormalities within 10-20 years after surgery, and some progress to cirrhosis and hepatocellular carcinoma (HCC). Despite this risk, strategies to identify individuals at high risk for early HCC and to provide better prognostic information remain limited. This article compiles knowledge from congenital heart disease specialists and hepatologists on FALD, including areas where evidence is limited. By facilitating early diagnosis, structured follow-up, and multidisciplinary management of FALD, this initiative aims to improve outcomes, build a nationwide clinical experience, and ultimately support the development of formal, evidence-based guidelines for FALD management.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0943",
   "topic": "Pediatrics",
   "subtopic": "",
