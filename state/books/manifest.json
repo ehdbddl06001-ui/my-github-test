@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "4fd73d2274d87ff48b4a",
-   "version": 33,
-   "date": "2026-11-17",
+   "hash": "457176a80c9f15e9c15e",
+   "version": 34,
+   "date": "2026-11-18",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 65,
+   "pages": 67,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -194,36 +194,42 @@
      "concept_hash": "03b15a767a67f28e",
      "concept_version": 1
     },
+    "cn.cardio.heart-failure.hfref-gdmt-selection": {
+     "title": "HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약",
+     "page": 56,
+     "concept_hash": "3f922b0d588a846f",
+     "concept_version": 1
+    },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 55,
+     "page": 58,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 58,
+     "page": 60,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 61,
+     "page": 63,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 64,
+     "page": 66,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "a202ffe2699323850898eb4d5ab5252a",
-    "version": 33,
-    "uploaded": "2026-11-17T15:33:27+09:00"
+    "md5": "cd940a11ce87190b259a39750329eada",
+    "version": 34,
+    "uploaded": "2026-11-18T13:37:07+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -258,11 +264,11 @@
     "MedKOS_학습서_순환기내과_v30_2026-11-14.pdf",
     "MedKOS_학습서_순환기내과_v31_2026-11-15.pdf",
     "MedKOS_학습서_순환기내과_v32_2026-11-16.pdf",
-    "MedKOS_학습서_순환기내과_v33_2026-11-17.pdf"
+    "MedKOS_학습서_순환기내과_v33_2026-11-17.pdf",
+    "MedKOS_학습서_순환기내과_v34_2026-11-18.pdf"
    ],
    "changes": [
-    "내용 갱신: 국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다 (정리본 v1 → v2)",
-    "새 단원: 심부전 진단 — 펩타이드로 거르고 심초음파로 나눈다"
+    "새 단원: HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약"
    ]
   },
   "피부과": {
@@ -1804,13 +1810,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "7f983c469f5d8408e44a38e19a07ab97",
+   "md5": "e5c80061c22adba7e91152d05243eaf7",
    "version": null,
-   "uploaded": "2026-11-17T15:33:27+09:00"
+   "uploaded": "2026-11-18T13:37:07+09:00"
   }
  },
- "updated": "2026-11-17"
+ "updated": "2026-11-18"
 }
