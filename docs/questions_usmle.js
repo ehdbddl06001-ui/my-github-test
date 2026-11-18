@@ -36111,5 +36111,1081 @@ window.USMLE_QUESTIONS = [
    }
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0284",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "A Swollen Lip and Cheek That Ignored Epinephrine Last Time and Attacks Coming More Often Since Starting the Pill in a 24-Year-Old Whose Father Needed a Tracheostomy",
+  "type": "A Swollen Lip and Cheek That Ignored Epinephrine Last Time and Attacks Coming More Often Since Starting the Pill in a 24-Year-Old Whose Father Needed a Tracheostomy",
+  "difficulty": 4,
+  "created": "2026-11-19",
+  "vignette": "A 24-year-old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or genitals, each lasting 2 to 4 days; two episodes were accompanied by severe crampy abdominal pain and vomiting. During one previous episode, she was treated in another emergency department with intramuscular epinephrine, intravenous diphenhydramine, and methylprednisolone without noticeable improvement. The episodes have become more frequent since she began taking a combined estrogen-progestin oral contraceptive 4 months ago. She takes no other medications. Her father had similar episodes of swelling and required an emergency tracheostomy at age 40 years. Her vital signs are shown. The upper lip and left cheek are swollen, nonpitting, and not red; there is no urticaria, and she reports no itching. The tongue and uvula are not swollen, and there is no stridor or hoarseness. The lungs are clear to auscultation. Laboratory results are shown.",
+  "question": "Which of the following best explains the mechanism of this patient's swelling?",
+  "options": [
+   "IgE-mediated degranulation of mucosal mast cells",
+   "Immune complex deposition activating the classical complement pathway",
+   "Impaired breakdown of bradykinin by angiotensin-converting enzyme",
+   "Unregulated plasma kallikrein activity generating excess bradykinin",
+   "Increased leukotriene synthesis caused by cyclooxygenase inhibition"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계. ① 두드러기·가려움 없음 + epinephrine·항히스타민 무반응 → 비히스타민(브래디키닌) 혈관부종. ② 13세 발병·우성 가족력 + C4 저하·C1q 정상 → 유전성 혈관부종(C1-INH 결핍). ③ C1-INH 가 없으면 plasma kallikrein 이 억제되지 않아 bradykinin 과다 → B2 수용체 → 혈관 투과성↑.\n- 오답감별:\n  - (A) 비만세포 탈과립은 두드러기·가려움·epinephrine 반응·트립타제 상승을 동반한다 — 모두 없다.\n  - (B) 면역복합체는 혈관염·사구체신염을 일으키지, 며칠 지속하다 저절로 가라앉는 비함요 부종 발작을 일으키지 않는다.\n  - (C) 같은 bradykinin 축이지만 ACE 억제제를 먹지 않고 가족력·C4 저하가 있다 — 분해 감소가 아니라 생성 과다다.\n  - (E) COX 억제에 따른 류코트리엔 과다는 NSAID 복용과 두드러기·천식을 동반한다.\n- 임상핵심: 두드러기 없는 혈관부종 + 히스타민 치료 무반응 = 브래디키닌성 — C4 로 선별하고(낮으면 C1-INH 양·기능), C1q 가 낮으면 후천성. 급성 발작 치료도 epinephrine 이 아니라 C1-INH 농축제·icatibant(B2 길항제)·ecallantide(kallikrein 억제제)다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 두드러기·가려움 없음 + epinephrine·항히스타민 무반응 → 비히스타민(브래디키닌) 혈관부종. ② 13세 발병·우성 가족력 + C4 저하·C1q 정상 → 유전성 혈관부종(C1-INH 결핍). ③ C1-INH 가 없으면 plasma kallikrein 이 억제되지 않아 bradykinin 과다 → B2 수용체 → 혈관 투과성↑."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 비만세포 탈과립은 두드러기·가려움·epinephrine 반응·트립타제 상승을 동반한다 — 모두 없다.\n(B) 면역복합체는 혈관염·사구체신염을 일으키지, 며칠 지속하다 저절로 가라앉는 비함요 부종 발작을 일으키지 않는다.\n(C) 같은 bradykinin 축이지만 ACE 억제제를 먹지 않고 가족력·C4 저하가 있다 — 분해 감소가 아니라 생성 과다다.\n(E) COX 억제에 따른 류코트리엔 과다는 NSAID 복용과 두드러기·천식을 동반한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "두드러기 없는 혈관부종 + 히스타민 치료 무반응 = 브래디키닌성 — C4 로 선별하고(낮으면 C1-INH 양·기능), C1q 가 낮으면 후천성. 급성 발작 치료도 epinephrine 이 아니라 C1-INH 농축제·icatibant(B2 길항제)·ecallantide(kallikrein 억제제)다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "84 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "118/74 mm Hg"
+   },
+   {
+    "name": "Oxygen saturation",
+    "value": "99% on room air"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum C4",
+    "value": "6 mg/dL",
+    "ref": "14–40 mg/dL"
+   },
+   {
+    "name": "Serum C1q",
+    "value": "16 mg/dL",
+    "ref": "10–25 mg/dL"
+   },
+   {
+    "name": "Serum tryptase",
+    "value": "4.1 ng/mL",
+    "ref": "< 11.4 ng/mL"
+   },
+   {
+    "name": "Leukocyte count",
+    "value": "7,900 /μL",
+    "ref": "4,500–11,000 /μL"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "히스타민 치료에 반응하지 않고 두드러기 없는 반복 부종 + 가족력 + C4 저하 → C1 억제제 결핍으로 kallikrein 이 억제되지 않아 bradykinin 이 과다 생성된다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "두드러기·가려움 없음과 epinephrine·항히스타민 무반응(A와 다름), ACE 억제제 복용 없음 + 가족력·C4 저하(C와 다름).",
+   "steps": 3,
+   "chain": [
+    "두드러기·가려움 없음 + epinephrine·diphenhydramine·스테로이드 무반응 → 비히스타민(브래디키닌) 혈관부종",
+    "13세 발병·아버지의 같은 발작 + C4 저하·C1q 정상 → 유전성 혈관부종(C1-INH 결핍)",
+    "C1-INH 는 plasma kallikrein·factor XIIa 를 억제 → 결핍 시 kallikrein 과활성 → bradykinin 과다 → 혈관 투과성↑"
+   ],
+   "key": [
+    {
+     "item": "there is no urticaria, and she reports no itching",
+     "why": "비만세포(히스타민) 혈관부종의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "without noticeable improvement",
+     "why": "epinephrine·항히스타민·스테로이드 무반응 — 브래디키닌성 부종의 특징",
+     "also": []
+    },
+    {
+     "item": "Her father had similar episodes of swelling",
+     "why": "상염색체 우성 가족력 — 유전성",
+     "also": []
+    },
+    {
+     "item": "Serum C4",
+     "why": "6 — C1-INH 결핍으로 C4 가 계속 소모된다(선별검사)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum C1q",
+     "why": "정상 — 후천성(C1q 감소) 혈관부종의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum tryptase",
+     "why": "정상 — 비만세포 탈과립(아나필락시스)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She takes no other medications",
+     "why": "ACE 억제제 혈관부종(C)·NSAID 반응(E)의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "combined estrogen-progestin oral contraceptive",
+     "why": "에스트로겐은 유전성 혈관부종 발작을 악화시킨다 — 원인이 아니라 유발 요인",
+     "also": []
+    },
+    {
+     "item": "The tongue and uvula are not swollen, and there is no stridor or hoarseness",
+     "why": "기도 위험 평가 — 기전 판단과는 무관하지만 처치 시급도를 정한다",
+     "also": []
+    }
+   ],
+   "summary": "두드러기 없이 히스타민 치료에 반응하지 않는 반복 부종, 복통 발작, 우성 가족력, C4 저하(C1q 정상)는 유전성 혈관부종이다. C1 억제제가 없으면 plasma kallikrein 이 억제되지 않아 bradykinin 이 과다 생성되어 혈관 투과성이 오른다.",
+   "switch": {
+    "choice": "C",
+    "condition": "두드러기 없는 입술·혀 부종이 ACE 억제제(lisinopril 등) 복용 중 생기고 C4 가 정상이면 ACE 억제에 따른 bradykinin 분해 감소(C)가 기전이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.immuno.hereditary-angioedema.bradykinin-mechanism",
+  "distractors": {
+   "A": {
+    "tempting": "얼굴·입술 부종은 알레르기(아나필락시스)로 먼저 떠오른다.",
+    "answer_first": "비만세포 혈관부종은 두드러기·가려움을 동반하고 epinephrine·항히스타민에 반응하며 급성기 트립타제가 오른다. 이 환자는 모두 반대다.",
+    "discriminator": "「there is no urticaria, and she reports no itching」 + 「without noticeable improvement」 + 정상 트립타제.",
+    "when_right": "두드러기·가려움·천명과 함께 음식·약 노출 직후 수분 내 생기고 epinephrine 에 반응할 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "브래디키닌성 혈관부종의 가장 흔한 원인이 ACE 억제제다.",
+    "answer_first": "기전의 마지막 매개체(bradykinin)는 같지만 원인이 다르다. 이 환자는 ACE 억제제를 먹지 않고, 13세부터 발작이 있으며 가족력과 C4 저하가 있다 — 생성 과다(C1-INH 결핍)다.",
+    "discriminator": "「She takes no other medications」 + 아버지의 병력 + C4 6 mg/dL.",
+    "when_right": "ACE 억제제 복용자에게 두드러기 없는 입술·혀 부종이 생기고 C4 가 정상일 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0285",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Vomiting, Sweating and Sleepiness Within Half an Hour of Pureed Pears and Apple Juice in a 7-Month-Old Girl Who Thrived on Breast Milk Alone",
+  "type": "Vomiting, Sweating and Sleepiness Within Half an Hour of Pureed Pears and Apple Juice in a 7-Month-Old Girl Who Thrived on Breast Milk Alone",
+  "difficulty": 4,
+  "created": "2026-11-19",
+  "vignette": "A 7-month-old girl is brought to the physician because of vomiting, poor feeding, and increasing sleepiness for 3 weeks. She was exclusively breastfed until age 5 months and grew along the 50th percentile for weight. Rice cereal was introduced at 5 months of age, and 4 weeks ago her parents began giving her pureed pears and apples and diluted apple juice. She often vomits and becomes sweaty and pale within 30 minutes of these feedings; she is well between feedings and sleeps through the night without feeding. She has had no fever or diarrhea. Her weight has fallen from the 50th to the 15th percentile. Her vital signs are shown. She is lethargic but arousable. The sclerae are mildly icteric. The liver edge is palpable 4 cm below the right costal margin; the spleen is not palpable. Laboratory studies obtained 40 minutes after a feeding of apple juice are shown.",
+  "question": "A deficiency of which of the following enzymes is the most likely cause of this patient's condition?",
+  "options": [
+   "Fructose-1-phosphate aldolase",
+   "Hepatic fructokinase (ketohexokinase)",
+   "Galactose-1-phosphate uridyltransferase",
+   "Hepatic glucose-6-phosphatase",
+   "Medium-chain acyl-CoA dehydrogenase"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계. ① 과일·주스 시작 뒤 식후 30분 내 구토·저혈당 + 간비대·황달 → 과당이 유발. ② 모유 5개월 정상 + 밤새 공복을 견딤 → 갈락토스혈증·G6Pase·MCAD 가능성 낮음. ③ 저혈당·저인산혈증·간손상 → F1P 가 쌓이는 aldolase B 결핍(무증상 fructokinase 결핍이 아님).\n- 오답감별:\n  - (B) fructokinase 결핍(본태성 과당뇨)은 F1P 가 생기지 않아 무증상이다 — 저혈당·간손상이 없다.\n  - (C) 갈락토스혈증은 유당 노출 직후(생후 첫 주) 시작한다 — 모유 5개월 동안 정상이었다.\n  - (D) G6Pase 결핍은 짧은 공복에도 저혈당·젖산산증이 오고 생후 초기부터 간비대가 있다 — 이 아이는 밤새 굶어도 괜찮고 식후에 저혈당이 온다.\n  - (E) MCAD 결핍은 공복·감염 때 저케톤성 저혈당이 온다 — 섭취가 아니라 굶음이 유발한다.\n- 임상핵심: 영아 저혈당은 「언제」로 가른다 — 공복 뒤면 G6Pase·지방산 산화 결함, 특정 음식 뒤면 그 당의 대사 결함. 과당 뒤 저혈당 + 저인산혈증 + 간손상 = aldolase B 결핍 → 과당·자당·sorbitol 을 끊는다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 430장 Glycogen Storage Diseases and Other Inherited Disorders of Carbohydrate Metabolism.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 과일·주스 시작 뒤 식후 30분 내 구토·저혈당 + 간비대·황달 → 과당이 유발. ② 모유 5개월 정상 + 밤새 공복을 견딤 → 갈락토스혈증·G6Pase·MCAD 가능성 낮음. ③ 저혈당·저인산혈증·간손상 → F1P 가 쌓이는 aldolase B 결핍(무증상 fructokinase 결핍이 아님)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) fructokinase 결핍(본태성 과당뇨)은 F1P 가 생기지 않아 무증상이다 — 저혈당·간손상이 없다.\n(C) 갈락토스혈증은 유당 노출 직후(생후 첫 주) 시작한다 — 모유 5개월 동안 정상이었다.\n(D) G6Pase 결핍은 짧은 공복에도 저혈당·젖산산증이 오고 생후 초기부터 간비대가 있다 — 이 아이는 밤새 굶어도 괜찮고 식후에 저혈당이 온다.\n(E) MCAD 결핍은 공복·감염 때 저케톤성 저혈당이 온다 — 섭취가 아니라 굶음이 유발한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "영아 저혈당은 「언제」로 가른다 — 공복 뒤면 G6Pase·지방산 산화 결함, 특정 음식 뒤면 그 당의 대사 결함. 과당 뒤 저혈당 + 저인산혈증 + 간손상 = aldolase B 결핍 → 과당·자당·sorbitol 을 끊는다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 430장 Glycogen Storage Diseases and Other Inherited Disorders of Carbohydrate Metabolism."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 430장 Glycogen Storage Diseases and Other Inherited Disorders of Carbohydrate Metabolism)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "148 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "32 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "86/52 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum glucose",
+    "value": "38 mg/dL",
+    "ref": "60–100 mg/dL"
+   },
+   {
+    "name": "Serum phosphorus",
+    "value": "2.1 mg/dL",
+    "ref": "4.5–6.5 mg/dL"
+   },
+   {
+    "name": "Serum ALT",
+    "value": "186 U/L",
+    "ref": "5–45 U/L"
+   },
+   {
+    "name": "Serum total bilirubin",
+    "value": "3.2 mg/dL",
+    "ref": "0.2–1.2 mg/dL"
+   },
+   {
+    "name": "Urine reducing substances",
+    "value": "Positive",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urine glucose (dipstick)",
+    "value": "Negative",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 430장 Glycogen Storage Diseases and Other Inherited Disorders of Carbohydrate Metabolism"
+   ]
+  },
+  "design": {
+   "target": "감별",
+   "decision": "과당 섭취 직후의 저혈당·구토에 간손상과 저인산혈증이 동반되면 fructose-1-phosphate 가 쌓이는 aldolase B 결핍이다.",
+   "rival": [
+    "B",
+    "C"
+   ],
+   "discriminator": "저혈당·저인산혈증·간손상이 있다(무증상인 fructokinase 결핍과 다름), 모유만 먹던 5개월 동안 정상(갈락토스혈증과 다름).",
+   "steps": 3,
+   "chain": [
+    "과일·주스 시작 뒤 식후 30분 내 구토·발한·저혈당 + 간비대·황달 → 과당 섭취로 유발되는 대사질환",
+    "모유만 먹던 5개월 정상 성장 + 밤새 굶어도 괜찮음 → 갈락토스혈증·공복 저혈당 질환(G6Pase·MCAD) 가능성 낮음",
+    "저혈당·저인산혈증·간손상 동반 → 무증상 fructokinase 결핍이 아니라 aldolase B 결핍(F1P 축적·인산 고갈)"
+   ],
+   "key": [
+    {
+     "item": "within 30 minutes of these feedings",
+     "why": "과당 섭취가 증상을 유발한다",
+     "also": []
+    },
+    {
+     "item": "Serum glucose",
+     "why": "38 — 식후 저혈당",
+     "also": []
+    },
+    {
+     "item": "Serum phosphorus",
+     "why": "2.1 — F1P 에 인산이 붙잡혀 생기는 저인산혈증",
+     "also": []
+    },
+    {
+     "item": "Serum ALT",
+     "why": "186 — 간손상, 양성 과당뇨에는 없다",
+     "also": []
+    },
+    {
+     "item": "Urine reducing substances",
+     "why": "양성인데 소변 포도당 음성 — 포도당이 아닌 당",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "exclusively breastfed until age 5 months and grew along the 50th percentile",
+     "why": "유당(갈락토스)에 노출된 5개월간 정상 — 갈락토스혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "sleeps through the night without feeding",
+     "why": "공복을 견딘다 — G6Pase 결핍·MCAD 결핍 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "the spleen is not palpable",
+     "why": "간비대만 있다 — 판단에 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "과일·주스 시작 뒤 식후 30분 안에 생기는 저혈당·구토에 간손상과 저인산혈증이 겹친다. 모유 5개월간 정상이고 공복은 견디므로 갈락토스혈증·공복 저혈당 질환이 아니며, 증상이 있으므로 양성 과당뇨도 아니다 — aldolase B 결핍이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "모유·분유를 먹기 시작한 생후 첫 주부터 구토·황달·간비대·대장균 패혈증이 생기면 갈락토스혈증(GALT 결핍, C)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.biochem.hereditary-fructose-intolerance.aldolase-b-differential",
+  "distractors": {
+   "B": {
+    "tempting": "과당을 먹은 뒤 소변 환원당이 양성이면 과당 대사 효소 결핍 중 첫 단계(fructokinase)가 떠오른다.",
+    "answer_first": "fructokinase 결핍은 과당이 인산화되지 않고 소변으로 나갈 뿐 F1P 가 쌓이지 않아 무증상이다. 저혈당·저인산혈증·간손상은 F1P 가 쌓이는 aldolase B 결핍에서 생긴다.",
+    "discriminator": "혈당 38 + 인산 2.1 + ALT 186 + 황달.",
+    "when_right": "증상 없이 소변 검사에서 우연히 환원당(과당)이 나올 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "영아 + 소변 환원당 양성 + 황달·간비대는 갈락토스혈증의 고전적 그림이다.",
+    "answer_first": "갈락토스혈증은 유당(모유)을 먹기 시작한 생후 며칠 안에 증상이 시작한다. 이 아이는 모유만 먹던 5개월 동안 잘 자랐고 과일을 시작한 뒤에야 아팠다.",
+    "discriminator": "「exclusively breastfed until age 5 months and grew along the 50th percentile」.",
+    "when_right": "수유 시작 뒤 첫 주부터 구토·황달·간비대·백내장·E. coli 패혈증이 생길 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0286",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pathology",
+  "subject_file": "Pathology",
+  "subtopic": "Sudden Breathlessness, a Blood Pressure of 88/56 and a New Harsh Murmur With a Thrill on the Fourth Hospital Day in a 63-Year-Old Man Whose Admission Tracing Is Shown",
+  "type": "Sudden Breathlessness, a Blood Pressure of 88/56 and a New Harsh Murmur With a Thrill on the Fourth Hospital Day in a 63-Year-Old Man Whose Admission Tracing Is Shown",
+  "difficulty": 4,
+  "created": "2026-11-19",
+  "vignette": "A 63-year-old man is evaluated in the coronary care unit because of the sudden onset of shortness of breath 1 hour ago. He was admitted 4 days ago after 16 hours of crushing substernal chest pain that had resolved by the time he arrived; his ECG on admission is shown. He did not undergo reperfusion therapy and has been treated with aspirin, a heparin infusion, metoprolol, and atorvastatin. He was free of symptoms until 1 hour ago. His vital signs are shown. He is diaphoretic. Jugular venous pressure is 12 cm H2O. There are crackles over the lower half of both lung fields. A new grade 4/6 harsh holosystolic murmur is heard best at the left lower sternal border, and a thrill is palpable in the same area. Heart sounds are not muffled, and there is no pulsus paradoxus. The extremities are cool. Laboratory results are shown.",
+  "question": "Which of the following is the most likely cause of this patient's deterioration?",
+  "options": [
+   "Fibrinous pericarditis over the infarcted myocardium",
+   "Rupture of the interventricular septum",
+   "Rupture of the left ventricular free wall",
+   "Rupture of the posteromedial papillary muscle",
+   "Formation of a left ventricular aneurysm"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계. ① 심전도 전흉부 유도 ST 상승 → 전벽 STEMI(LAD). ② 재관류 없이 4일째(괴사 조직이 가장 약함) 쇼크·폐부종 + 새 잡음 → 기계적 합병증. ③ 좌하흉골연 거친 범수축기 잡음 + 진전, 압전 소견 없음 → 심실중격 파열.\n- 오답감별:\n  - (A) 섬유소성 심낭염은 마찰음·흉막성 흉통을 일으키지 쇼크·진전을 동반한 잡음을 일으키지 않는다.\n  - (C) 자유벽 파열은 잡음 없이 심낭압전(작은 심음·기이맥)으로 온다 — 둘 다 없다.\n  - (D) 유두근 파열은 심첨부 잡음(진전 드묾)이고 후내측 유두근은 하벽 경색에서 끊어진다 — 이 환자는 전벽 경색이다.\n  - (E) 좌심실류는 수주~수개월 뒤 반흔이 늘어나 생긴다 — 4일째 급성 쇼크의 원인이 아니다.\n- 임상핵심: 경색 뒤 시점으로 합병증을 고른다 — 0–24시간 부정맥, 1–3일 섬유소성 심낭염, 3–14일 파열(자유벽·중격·유두근 — 대식세포 시기), 수주 뒤 심실류·Dressler. 잡음 위치(좌하흉골연+진전 vs 심첨부)와 경색 부위(전벽 vs 하벽)로 중격·유두근을 가른다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 286장 ST-Segment Elevation Myocardial Infarction. 심전도: PTB-XL 1.0.3 (PhysioNet), ecg_id 8191, CC-BY 4.0.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 심전도 전흉부 유도 ST 상승 → 전벽 STEMI(LAD). ② 재관류 없이 4일째(괴사 조직이 가장 약함) 쇼크·폐부종 + 새 잡음 → 기계적 합병증. ③ 좌하흉골연 거친 범수축기 잡음 + 진전, 압전 소견 없음 → 심실중격 파열."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 섬유소성 심낭염은 마찰음·흉막성 흉통을 일으키지 쇼크·진전을 동반한 잡음을 일으키지 않는다.\n(C) 자유벽 파열은 잡음 없이 심낭압전(작은 심음·기이맥)으로 온다 — 둘 다 없다.\n(D) 유두근 파열은 심첨부 잡음(진전 드묾)이고 후내측 유두근은 하벽 경색에서 끊어진다 — 이 환자는 전벽 경색이다.\n(E) 좌심실류는 수주~수개월 뒤 반흔이 늘어나 생긴다 — 4일째 급성 쇼크의 원인이 아니다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "경색 뒤 시점으로 합병증을 고른다 — 0–24시간 부정맥, 1–3일 섬유소성 심낭염, 3–14일 파열(자유벽·중격·유두근 — 대식세포 시기), 수주 뒤 심실류·Dressler. 잡음 위치(좌하흉골연+진전 vs 심첨부)와 경색 부위(전벽 vs 하벽)로 중격·유두근을 가른다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 286장 ST-Segment Elevation Myocardial Infarction. 심전도: PTB-XL 1.0.3 (PhysioNet), ecg_id 8191, CC-BY 4.0."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 286장 ST-Segment Elevation Myocardial Infarction)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.2 °C (99.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "116 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "28 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "88/56 mm Hg"
+   },
+   {
+    "name": "Oxygen saturation",
+    "value": "89% on room air"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "13.8 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Serum potassium",
+    "value": "4.3 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "1.3 mg/dL",
+    "ref": "0.7–1.3 mg/dL"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 286장 ST-Segment Elevation Myocardial Infarction",
+    "PTB-XL 1.0.3 (PhysioNet), ecg_id 8191 — CC-BY 4.0"
+   ]
+  },
+  "design": {
+   "target": "진단",
+   "decision": "전벽 STEMI 뒤 재관류 없이 4일째 쇼크·폐부종과 함께 좌하흉골연의 거친 범수축기 잡음·진전이 생기면 심실중격 파열이다.",
+   "rival": [
+    "D",
+    "C"
+   ],
+   "discriminator": "잡음이 심첨부가 아니라 좌하흉골연에서 가장 크고 진전이 만져진다(D와 다름), 심음이 작아지지 않고 기이맥이 없다(C와 다름).",
+   "steps": 3,
+   "chain": [
+    "심전도: 전흉부 유도 ST 상승 → 급성 전벽 STEMI(LAD — 심실중격 앞쪽 공급)",
+    "재관류 없이 4일째 갑작스러운 호흡곤란·저혈압 + 새 수축기 잡음 → 괴사 조직이 가장 약한 시기의 기계적 합병증",
+    "좌하흉골연 거친 범수축기 잡음 + 진전, 심음 정상·기이맥 없음 → 심실중격 파열(유두근·자유벽 파열 가능성 낮춤)"
+   ],
+   "key": [
+    {
+     "item": "심전도: 전흉부 유도 ST 상승 — 급성 전벽 STEMI",
+     "why": "LAD 영역 — 심실중격 앞 2/3 를 공급한다",
+     "also": []
+    },
+    {
+     "item": "He did not undergo reperfusion therapy",
+     "why": "재관류하지 않은 경색에서 기계적 합병증이 많다",
+     "also": []
+    },
+    {
+     "item": "He was admitted 4 days ago",
+     "why": "3–5일째 — 대식세포가 괴사 조직을 치우는 가장 약한 시기",
+     "also": []
+    },
+    {
+     "item": "heard best at the left lower sternal border",
+     "why": "심실중격 결손의 위치 — 승모판 역류(심첨부)와 다르다",
+     "also": []
+    },
+    {
+     "item": "a thrill is palpable in the same area",
+     "why": "고속 좌→우 단락 — 급성 승모판 역류에는 드물다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Heart sounds are not muffled, and there is no pulsus paradoxus",
+     "why": "심낭압전(자유벽 파열)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin",
+     "why": "정상 — 헤파린 중 출혈로 인한 쇼크의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "There are crackles over the lower half of both lung fields",
+     "why": "폐부종은 중격 파열·유두근 파열 모두에서 생긴다 — 둘을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "재관류하지 않은 전벽 STEMI 4일째, 괴사 심근이 가장 약할 때 갑자기 쇼크·폐부종이 오고 좌하흉골연에 진전을 동반한 거친 범수축기 잡음이 생겼다. 위치와 진전이 승모판 역류보다 심실중격 파열을, 정상 심음·기이맥 없음이 자유벽 파열보다 중격 파열을 가리킨다.",
+   "switch": {
+    "choice": "D",
+    "condition": "하벽 STEMI(II·III·aVF) 뒤 3–5일째 심첨부에서 겨드랑이로 퍼지는 새 수축기 잡음과 급성 폐부종이 생기면 후내측 유두근 파열(D)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.path.mi-mechanical-complications.septal-rupture-timing",
+  "distractors": {
+   "D": {
+    "tempting": "경색 3–5일째 갑작스러운 폐부종 + 새 범수축기 잡음은 유두근 파열의 전형으로 외운다.",
+    "answer_first": "유두근 파열은 승모판 역류라 잡음이 심첨부에서 겨드랑이로 퍼지고 진전은 드물다. 후내측 유두근은 한 혈관(대개 우관상동맥)에만 의존해 하벽 경색에서 끊어진다 — 이 환자는 전벽 경색이고 잡음이 좌하흉골연·진전이다.",
+    "discriminator": "「heard best at the left lower sternal border」 + 「a thrill is palpable」 + 전벽 STEMI.",
+    "when_right": "하벽 경색 뒤 심첨부 잡음(겨드랑이로 방사)과 급성 폐부종이 생길 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "전벽 경색 3–5일째 갑작스러운 쇼크는 자유벽 파열로도 온다.",
+    "answer_first": "자유벽 파열은 피가 심낭으로 새어 심낭압전이 된다 — 경정맥 확장·작은 심음·기이맥·무맥성 전기활동, 그리고 새 잡음은 없다.",
+    "discriminator": "「Heart sounds are not muffled, and there is no pulsus paradoxus」 + 진전을 동반한 새 잡음.",
+    "when_right": "잡음 없이 갑자기 심낭압전 소견·무맥성 전기활동으로 쓰러질 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1500 456\" width=\"1500\" height=\"456\" role=\"img\" aria-label=\"12-lead ECG ptbxl-08191-ami · 12-lead · 100.0Hz · 실데이터(오픈 DB)\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.2;stroke-linejoin:round}.lead{font:bold 11px sans-serif;fill:#333}.cap{font:11px sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"1500\" height=\"440\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"440\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"440\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"440\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"440\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"440\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"440\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"440\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"440\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"440\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"440\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"440\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"440\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"440\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"440\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"440\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"440\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"440\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"440\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"440\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"440\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"440\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"440\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"440\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"440\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"440\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"440\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"440\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"440\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"440\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"440\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"440\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"440\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"440\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"440\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"440\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"440\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"440\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"440\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"440\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"440\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"440\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"440\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"440\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"440\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"440\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"440\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"440\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"440\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"440\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"440\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"440\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"440\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"440\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"440\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"440\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"440\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"440\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"440\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"440\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"440\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"440\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"440\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"440\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"440\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"440\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"440\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"440\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"440\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"440\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"440\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"440\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"440\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"440\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"440\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"440\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"440\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"440\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"440\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"440\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"440\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"440\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"440\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"440\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"440\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"440\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"440\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"440\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"440\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"440\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"440\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"440\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"440\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"440\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"440\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"440\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"440\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"440\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"440\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"440\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"440\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"440\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"440\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"440\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"440\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"440\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"440\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"440\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"440\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"440\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"440\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"440\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"440\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"440\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"440\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"440\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"440\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"440\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"440\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"440\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"440\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"440\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"440\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"440\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"440\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"440\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"440\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"440\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"440\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"440\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"440\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"440\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"440\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"440\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"440\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"440\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"440\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"440\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"440\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"440\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"440\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"440\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"440\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"440\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"440\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"440\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"440\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"440\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"440\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"440\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"440\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"440\" class=\"gmaj\"/><line x1=\"906\" y1=\"0\" x2=\"906\" y2=\"440\" class=\"gmin\"/><line x1=\"912\" y1=\"0\" x2=\"912\" y2=\"440\" class=\"gmin\"/><line x1=\"918\" y1=\"0\" x2=\"918\" y2=\"440\" class=\"gmin\"/><line x1=\"924\" y1=\"0\" x2=\"924\" y2=\"440\" class=\"gmin\"/><line x1=\"930\" y1=\"0\" x2=\"930\" y2=\"440\" class=\"gmaj\"/><line x1=\"936\" y1=\"0\" x2=\"936\" y2=\"440\" class=\"gmin\"/><line x1=\"942\" y1=\"0\" x2=\"942\" y2=\"440\" class=\"gmin\"/><line x1=\"948\" y1=\"0\" x2=\"948\" y2=\"440\" class=\"gmin\"/><line x1=\"954\" y1=\"0\" x2=\"954\" y2=\"440\" class=\"gmin\"/><line x1=\"960\" y1=\"0\" x2=\"960\" y2=\"440\" class=\"gmaj\"/><line x1=\"966\" y1=\"0\" x2=\"966\" y2=\"440\" class=\"gmin\"/><line x1=\"972\" y1=\"0\" x2=\"972\" y2=\"440\" class=\"gmin\"/><line x1=\"978\" y1=\"0\" x2=\"978\" y2=\"440\" class=\"gmin\"/><line x1=\"984\" y1=\"0\" x2=\"984\" y2=\"440\" class=\"gmin\"/><line x1=\"990\" y1=\"0\" x2=\"990\" y2=\"440\" class=\"gmaj\"/><line x1=\"996\" y1=\"0\" x2=\"996\" y2=\"440\" class=\"gmin\"/><line x1=\"1002\" y1=\"0\" x2=\"1002\" y2=\"440\" class=\"gmin\"/><line x1=\"1008\" y1=\"0\" x2=\"1008\" y2=\"440\" class=\"gmin\"/><line x1=\"1014\" y1=\"0\" x2=\"1014\" y2=\"440\" class=\"gmin\"/><line x1=\"1020\" y1=\"0\" x2=\"1020\" y2=\"440\" class=\"gmaj\"/><line x1=\"1026\" y1=\"0\" x2=\"1026\" y2=\"440\" class=\"gmin\"/><line x1=\"1032\" y1=\"0\" x2=\"1032\" y2=\"440\" class=\"gmin\"/><line x1=\"1038\" y1=\"0\" x2=\"1038\" y2=\"440\" class=\"gmin\"/><line x1=\"1044\" y1=\"0\" x2=\"1044\" y2=\"440\" class=\"gmin\"/><line x1=\"1050\" y1=\"0\" x2=\"1050\" y2=\"440\" class=\"gmaj\"/><line x1=\"1056\" y1=\"0\" x2=\"1056\" y2=\"440\" class=\"gmin\"/><line x1=\"1062\" y1=\"0\" x2=\"1062\" y2=\"440\" class=\"gmin\"/><line x1=\"1068\" y1=\"0\" x2=\"1068\" y2=\"440\" class=\"gmin\"/><line x1=\"1074\" y1=\"0\" x2=\"1074\" y2=\"440\" class=\"gmin\"/><line x1=\"1080\" y1=\"0\" x2=\"1080\" y2=\"440\" class=\"gmaj\"/><line x1=\"1086\" y1=\"0\" x2=\"1086\" y2=\"440\" class=\"gmin\"/><line x1=\"1092\" y1=\"0\" x2=\"1092\" y2=\"440\" class=\"gmin\"/><line x1=\"1098\" y1=\"0\" x2=\"1098\" y2=\"440\" class=\"gmin\"/><line x1=\"1104\" y1=\"0\" x2=\"1104\" y2=\"440\" class=\"gmin\"/><line x1=\"1110\" y1=\"0\" x2=\"1110\" y2=\"440\" class=\"gmaj\"/><line x1=\"1116\" y1=\"0\" x2=\"1116\" y2=\"440\" class=\"gmin\"/><line x1=\"1122\" y1=\"0\" x2=\"1122\" y2=\"440\" class=\"gmin\"/><line x1=\"1128\" y1=\"0\" x2=\"1128\" y2=\"440\" class=\"gmin\"/><line x1=\"1134\" y1=\"0\" x2=\"1134\" y2=\"440\" class=\"gmin\"/><line x1=\"1140\" y1=\"0\" x2=\"1140\" y2=\"440\" class=\"gmaj\"/><line x1=\"1146\" y1=\"0\" x2=\"1146\" y2=\"440\" class=\"gmin\"/><line x1=\"1152\" y1=\"0\" x2=\"1152\" y2=\"440\" class=\"gmin\"/><line x1=\"1158\" y1=\"0\" x2=\"1158\" y2=\"440\" class=\"gmin\"/><line x1=\"1164\" y1=\"0\" x2=\"1164\" y2=\"440\" class=\"gmin\"/><line x1=\"1170\" y1=\"0\" x2=\"1170\" y2=\"440\" class=\"gmaj\"/><line x1=\"1176\" y1=\"0\" x2=\"1176\" y2=\"440\" class=\"gmin\"/><line x1=\"1182\" y1=\"0\" x2=\"1182\" y2=\"440\" class=\"gmin\"/><line x1=\"1188\" y1=\"0\" x2=\"1188\" y2=\"440\" class=\"gmin\"/><line x1=\"1194\" y1=\"0\" x2=\"1194\" y2=\"440\" class=\"gmin\"/><line x1=\"1200\" y1=\"0\" x2=\"1200\" y2=\"440\" class=\"gmaj\"/><line x1=\"1206\" y1=\"0\" x2=\"1206\" y2=\"440\" class=\"gmin\"/><line x1=\"1212\" y1=\"0\" x2=\"1212\" y2=\"440\" class=\"gmin\"/><line x1=\"1218\" y1=\"0\" x2=\"1218\" y2=\"440\" class=\"gmin\"/><line x1=\"1224\" y1=\"0\" x2=\"1224\" y2=\"440\" class=\"gmin\"/><line x1=\"1230\" y1=\"0\" x2=\"1230\" y2=\"440\" class=\"gmaj\"/><line x1=\"1236\" y1=\"0\" x2=\"1236\" y2=\"440\" class=\"gmin\"/><line x1=\"1242\" y1=\"0\" x2=\"1242\" y2=\"440\" class=\"gmin\"/><line x1=\"1248\" y1=\"0\" x2=\"1248\" y2=\"440\" class=\"gmin\"/><line x1=\"1254\" y1=\"0\" x2=\"1254\" y2=\"440\" class=\"gmin\"/><line x1=\"1260\" y1=\"0\" x2=\"1260\" y2=\"440\" class=\"gmaj\"/><line x1=\"1266\" y1=\"0\" x2=\"1266\" y2=\"440\" class=\"gmin\"/><line x1=\"1272\" y1=\"0\" x2=\"1272\" y2=\"440\" class=\"gmin\"/><line x1=\"1278\" y1=\"0\" x2=\"1278\" y2=\"440\" class=\"gmin\"/><line x1=\"1284\" y1=\"0\" x2=\"1284\" y2=\"440\" class=\"gmin\"/><line x1=\"1290\" y1=\"0\" x2=\"1290\" y2=\"440\" class=\"gmaj\"/><line x1=\"1296\" y1=\"0\" x2=\"1296\" y2=\"440\" class=\"gmin\"/><line x1=\"1302\" y1=\"0\" x2=\"1302\" y2=\"440\" class=\"gmin\"/><line x1=\"1308\" y1=\"0\" x2=\"1308\" y2=\"440\" class=\"gmin\"/><line x1=\"1314\" y1=\"0\" x2=\"1314\" y2=\"440\" class=\"gmin\"/><line x1=\"1320\" y1=\"0\" x2=\"1320\" y2=\"440\" class=\"gmaj\"/><line x1=\"1326\" y1=\"0\" x2=\"1326\" y2=\"440\" class=\"gmin\"/><line x1=\"1332\" y1=\"0\" x2=\"1332\" y2=\"440\" class=\"gmin\"/><line x1=\"1338\" y1=\"0\" x2=\"1338\" y2=\"440\" class=\"gmin\"/><line x1=\"1344\" y1=\"0\" x2=\"1344\" y2=\"440\" class=\"gmin\"/><line x1=\"1350\" y1=\"0\" x2=\"1350\" y2=\"440\" class=\"gmaj\"/><line x1=\"1356\" y1=\"0\" x2=\"1356\" y2=\"440\" class=\"gmin\"/><line x1=\"1362\" y1=\"0\" x2=\"1362\" y2=\"440\" class=\"gmin\"/><line x1=\"1368\" y1=\"0\" x2=\"1368\" y2=\"440\" class=\"gmin\"/><line x1=\"1374\" y1=\"0\" x2=\"1374\" y2=\"440\" class=\"gmin\"/><line x1=\"1380\" y1=\"0\" x2=\"1380\" y2=\"440\" class=\"gmaj\"/><line x1=\"1386\" y1=\"0\" x2=\"1386\" y2=\"440\" class=\"gmin\"/><line x1=\"1392\" y1=\"0\" x2=\"1392\" y2=\"440\" class=\"gmin\"/><line x1=\"1398\" y1=\"0\" x2=\"1398\" y2=\"440\" class=\"gmin\"/><line x1=\"1404\" y1=\"0\" x2=\"1404\" y2=\"440\" class=\"gmin\"/><line x1=\"1410\" y1=\"0\" x2=\"1410\" y2=\"440\" class=\"gmaj\"/><line x1=\"1416\" y1=\"0\" x2=\"1416\" y2=\"440\" class=\"gmin\"/><line x1=\"1422\" y1=\"0\" x2=\"1422\" y2=\"440\" class=\"gmin\"/><line x1=\"1428\" y1=\"0\" x2=\"1428\" y2=\"440\" class=\"gmin\"/><line x1=\"1434\" y1=\"0\" x2=\"1434\" y2=\"440\" class=\"gmin\"/><line x1=\"1440\" y1=\"0\" x2=\"1440\" y2=\"440\" class=\"gmaj\"/><line x1=\"1446\" y1=\"0\" x2=\"1446\" y2=\"440\" class=\"gmin\"/><line x1=\"1452\" y1=\"0\" x2=\"1452\" y2=\"440\" class=\"gmin\"/><line x1=\"1458\" y1=\"0\" x2=\"1458\" y2=\"440\" class=\"gmin\"/><line x1=\"1464\" y1=\"0\" x2=\"1464\" y2=\"440\" class=\"gmin\"/><line x1=\"1470\" y1=\"0\" x2=\"1470\" y2=\"440\" class=\"gmaj\"/><line x1=\"1476\" y1=\"0\" x2=\"1476\" y2=\"440\" class=\"gmin\"/><line x1=\"1482\" y1=\"0\" x2=\"1482\" y2=\"440\" class=\"gmin\"/><line x1=\"1488\" y1=\"0\" x2=\"1488\" y2=\"440\" class=\"gmin\"/><line x1=\"1494\" y1=\"0\" x2=\"1494\" y2=\"440\" class=\"gmin\"/><line x1=\"1500\" y1=\"0\" x2=\"1500\" y2=\"440\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"1500\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"1500\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"1500\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"1500\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"1500\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"1500\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"1500\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"1500\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"1500\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"1500\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"1500\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"1500\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"1500\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"1500\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"1500\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"1500\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"1500\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"1500\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"1500\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"1500\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"1500\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"1500\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"1500\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"1500\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"1500\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"1500\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"1500\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"1500\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"1500\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"1500\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"1500\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"186\" x2=\"1500\" y2=\"186\" class=\"gmin\"/><line x1=\"0\" y1=\"192\" x2=\"1500\" y2=\"192\" class=\"gmin\"/><line x1=\"0\" y1=\"198\" x2=\"1500\" y2=\"198\" class=\"gmin\"/><line x1=\"0\" y1=\"204\" x2=\"1500\" y2=\"204\" class=\"gmin\"/><line x1=\"0\" y1=\"210\" x2=\"1500\" y2=\"210\" class=\"gmaj\"/><line x1=\"0\" y1=\"216\" x2=\"1500\" y2=\"216\" class=\"gmin\"/><line x1=\"0\" y1=\"222\" x2=\"1500\" y2=\"222\" class=\"gmin\"/><line x1=\"0\" y1=\"228\" x2=\"1500\" y2=\"228\" class=\"gmin\"/><line x1=\"0\" y1=\"234\" x2=\"1500\" y2=\"234\" class=\"gmin\"/><line x1=\"0\" y1=\"240\" x2=\"1500\" y2=\"240\" class=\"gmaj\"/><line x1=\"0\" y1=\"246\" x2=\"1500\" y2=\"246\" class=\"gmin\"/><line x1=\"0\" y1=\"252\" x2=\"1500\" y2=\"252\" class=\"gmin\"/><line x1=\"0\" y1=\"258\" x2=\"1500\" y2=\"258\" class=\"gmin\"/><line x1=\"0\" y1=\"264\" x2=\"1500\" y2=\"264\" class=\"gmin\"/><line x1=\"0\" y1=\"270\" x2=\"1500\" y2=\"270\" class=\"gmaj\"/><line x1=\"0\" y1=\"276\" x2=\"1500\" y2=\"276\" class=\"gmin\"/><line x1=\"0\" y1=\"282\" x2=\"1500\" y2=\"282\" class=\"gmin\"/><line x1=\"0\" y1=\"288\" x2=\"1500\" y2=\"288\" class=\"gmin\"/><line x1=\"0\" y1=\"294\" x2=\"1500\" y2=\"294\" class=\"gmin\"/><line x1=\"0\" y1=\"300\" x2=\"1500\" y2=\"300\" class=\"gmaj\"/><line x1=\"0\" y1=\"306\" x2=\"1500\" y2=\"306\" class=\"gmin\"/><line x1=\"0\" y1=\"312\" x2=\"1500\" y2=\"312\" class=\"gmin\"/><line x1=\"0\" y1=\"318\" x2=\"1500\" y2=\"318\" class=\"gmin\"/><line x1=\"0\" y1=\"324\" x2=\"1500\" y2=\"324\" class=\"gmin\"/><line x1=\"0\" y1=\"330\" x2=\"1500\" y2=\"330\" class=\"gmaj\"/><line x1=\"0\" y1=\"336\" x2=\"1500\" y2=\"336\" class=\"gmin\"/><line x1=\"0\" y1=\"342\" x2=\"1500\" y2=\"342\" class=\"gmin\"/><line x1=\"0\" y1=\"348\" x2=\"1500\" y2=\"348\" class=\"gmin\"/><line x1=\"0\" y1=\"354\" x2=\"1500\" y2=\"354\" class=\"gmin\"/><line x1=\"0\" y1=\"360\" x2=\"1500\" y2=\"360\" class=\"gmaj\"/><line x1=\"0\" y1=\"366\" x2=\"1500\" y2=\"366\" class=\"gmin\"/><line x1=\"0\" y1=\"372\" x2=\"1500\" y2=\"372\" class=\"gmin\"/><line x1=\"0\" y1=\"378\" x2=\"1500\" y2=\"378\" class=\"gmin\"/><line x1=\"0\" y1=\"384\" x2=\"1500\" y2=\"384\" class=\"gmin\"/><line x1=\"0\" y1=\"390\" x2=\"1500\" y2=\"390\" class=\"gmaj\"/><line x1=\"0\" y1=\"396\" x2=\"1500\" y2=\"396\" class=\"gmin\"/><line x1=\"0\" y1=\"402\" x2=\"1500\" y2=\"402\" class=\"gmin\"/><line x1=\"0\" y1=\"408\" x2=\"1500\" y2=\"408\" class=\"gmin\"/><line x1=\"0\" y1=\"414\" x2=\"1500\" y2=\"414\" class=\"gmin\"/><line x1=\"0\" y1=\"420\" x2=\"1500\" y2=\"420\" class=\"gmaj\"/><line x1=\"0\" y1=\"426\" x2=\"1500\" y2=\"426\" class=\"gmin\"/><line x1=\"0\" y1=\"432\" x2=\"1500\" y2=\"432\" class=\"gmin\"/><line x1=\"0\" y1=\"438\" x2=\"1500\" y2=\"438\" class=\"gmin\"/><polyline class=\"trace\" points=\"0.0,58.2 1.5,59.5 3.0,62.7 4.5,56.8 6.0,60.7 7.5,59.7 9.0,62.7 10.5,64.0 12.0,59.1 13.5,62.0 15.0,65.1 16.5,64.2 18.0,61.9 19.5,63.7 21.0,65.1 22.5,65.3 24.0,61.7 25.5,64.9 27.0,66.7 28.5,59.9 30.0,61.5 31.5,61.5 33.0,64.0 34.5,62.0 36.0,60.2 37.5,63.4 39.0,59.2 40.5,59.4 42.0,57.0 43.5,57.9 45.0,62.1 46.5,60.0 48.0,59.2 49.5,58.8 51.0,61.5 52.5,60.7 54.0,60.3 55.5,61.8 57.0,55.7 58.5,43.9 60.0,45.1 61.5,55.3 63.0,55.0 64.5,62.2 66.0,62.6 67.5,59.5 69.0,63.4 70.5,60.3 72.0,62.7 73.5,60.5 75.0,57.9 76.5,61.5 78.0,61.7 79.5,59.1 81.0,62.1 82.5,61.8 84.0,58.3 85.5,61.0 87.0,56.1 88.5,53.5 90.0,58.3 91.5,59.8 93.0,58.8 94.5,60.4 96.0,61.2 97.5,61.4 99.0,62.1 100.5,63.1 102.0,61.5 103.5,57.0 105.0,60.4 106.5,60.7 108.0,61.3 109.5,63.8 111.0,62.0 112.5,61.9 114.0,62.1 115.5,62.7 117.0,59.1 118.5,56.0 120.0,55.7 121.5,53.7 123.0,53.2 124.5,53.3 126.0,57.1 127.5,61.1 129.0,57.9 130.5,56.6 132.0,60.4 133.5,63.2 135.0,64.8 136.5,54.0 138.0,40.0 139.5,42.6 141.0,51.9 142.5,56.4 144.0,58.3 145.5,59.4 147.0,60.0 148.5,63.3 150.0,62.5 151.5,59.8 153.0,60.9 154.5,58.9 156.0,59.5 157.5,64.4 159.0,64.3 160.5,64.7 162.0,63.8 163.5,59.4 165.0,62.8 166.5,61.2 168.0,62.5 169.5,64.9 171.0,59.1 172.5,61.3 174.0,66.3 175.5,68.5 177.0,61.9 178.5,61.9 180.0,67.5 181.5,66.7 183.0,64.6 184.5,64.2 186.0,65.5 187.5,60.1 189.0,59.5 190.5,60.0 192.0,62.1 193.5,65.2 195.0,59.3 196.5,56.9 198.0,57.3 199.5,58.6 201.0,57.4 202.5,57.1 204.0,59.8 205.5,59.8 207.0,60.1 208.5,62.3 210.0,64.2 211.5,63.9 213.0,66.7 214.5,66.8 216.0,57.3 217.5,40.3 219.0,41.4 220.5,53.8 222.0,56.1 223.5,62.4 225.0,62.7 226.5,61.4 228.0,64.0 229.5,64.2 231.0,63.6 232.5,59.7 234.0,58.3 235.5,61.5 237.0,62.7 238.5,59.4 240.0,60.0 241.5,60.4 243.0,60.1 244.5,61.9 246.0,61.2 247.5,64.1 249.0,65.2 250.5,63.0 252.0,64.0 253.5,66.7 255.0,70.2 256.5,68.2 258.0,66.2 259.5,69.9 261.0,69.7 262.5,66.5 264.0,66.8 265.5,65.3 267.0,64.0 268.5,65.7 270.0,65.3 271.5,67.4 273.0,64.8 274.5,61.4 276.0,59.8 277.5,57.3 279.0,60.5 280.5,61.8 282.0,62.8 283.5,64.8 285.0,64.8 286.5,65.9 288.0,69.3 289.5,62.1 291.0,58.6 292.5,66.8 294.0,62.6 295.5,49.3 297.0,44.8 298.5,54.7 300.0,61.0 301.5,61.6 303.0,64.2 304.5,65.9 306.0,63.4 307.5,63.1 309.0,65.1 310.5,64.6 312.0,60.0 313.5,58.9 315.0,66.3 316.5,65.4 318.0,63.4 319.5,62.4 321.0,63.3 322.5,66.9 324.0,63.4 325.5,66.0 327.0,66.6 328.5,63.0 330.0,65.9 331.5,64.9 333.0,67.3 334.5,68.3 336.0,68.1 337.5,68.7 339.0,64.8 340.5,66.5 342.0,66.8 343.5,66.2 345.0,67.1 346.5,67.8 348.0,64.1 349.5,62.5 351.0,63.8 352.5,66.4 354.0,68.0 355.5,62.7 357.0,63.3 358.5,62.1 360.0,59.4 361.5,60.4 363.0,63.6 364.5,68.2 366.0,69.1 367.5,66.7 369.0,62.4 370.5,66.1 372.0,68.0 373.5,59.5\"/><polyline class=\"trace\" points=\"375.0,62.7 376.5,63.1 378.0,60.3 379.5,66.3 381.0,63.3 382.5,63.0 384.0,62.1 385.5,62.3 387.0,66.3 388.5,66.1 390.0,62.8 391.5,63.1 393.0,65.5 394.5,63.3 396.0,62.5 397.5,60.1 399.0,62.8 400.5,61.6 402.0,60.0 403.5,64.8 405.0,63.0 406.5,63.4 408.0,61.4 409.5,63.8 411.0,66.4 412.5,63.7 414.0,67.5 415.5,66.7 417.0,66.1 418.5,66.6 420.0,64.3 421.5,64.8 423.0,63.4 424.5,64.2 426.0,63.0 427.5,61.8 429.0,60.8 430.5,59.1 432.0,74.8 433.5,94.5 435.0,92.0 436.5,78.0 438.0,70.6 439.5,61.5 441.0,59.2 442.5,60.7 444.0,57.4 445.5,58.7 447.0,57.1 448.5,59.5 450.0,62.3 451.5,59.4 453.0,59.1 454.5,62.0 456.0,59.3 457.5,59.9 459.0,63.7 460.5,60.9 462.0,65.8 463.5,68.7 465.0,64.7 466.5,63.7 468.0,65.4 469.5,64.5 471.0,62.8 472.5,61.5 474.0,60.9 475.5,61.3 477.0,62.1 478.5,65.2 480.0,62.6 481.5,62.1 483.0,61.9 484.5,60.5 486.0,61.9 487.5,61.0 489.0,63.6 490.5,64.3 492.0,65.6 493.5,68.1 495.0,67.0 496.5,67.6 498.0,68.5 499.5,68.5 501.0,65.4 502.5,61.1 504.0,63.2 505.5,64.3 507.0,62.7 508.5,59.6 510.0,57.1 511.5,80.4 513.0,101.2 514.5,93.3 516.0,79.8 517.5,69.9 519.0,64.3 520.5,61.5 522.0,60.7 523.5,57.8 525.0,58.6 526.5,60.9 528.0,60.0 529.5,62.8 531.0,61.0 532.5,58.2 534.0,58.7 535.5,56.8 537.0,59.1 538.5,63.5 540.0,61.9 541.5,62.8 543.0,61.3 544.5,59.9 546.0,65.1 547.5,63.4 549.0,59.3 550.5,58.2 552.0,63.1 553.5,62.8 555.0,56.8 556.5,58.0 558.0,60.0 559.5,59.7 561.0,60.0 562.5,62.7 564.0,63.6 565.5,64.5 567.0,61.8 568.5,60.6 570.0,68.3 571.5,68.8 573.0,65.9 574.5,64.9 576.0,65.5 577.5,65.7 579.0,63.9 580.5,64.2 582.0,63.1 583.5,62.1 585.0,61.2 586.5,61.9 588.0,61.2 589.5,59.2 591.0,76.1 592.5,99.2 594.0,94.2 595.5,79.1 597.0,71.6 598.5,63.4 600.0,60.6 601.5,59.9 603.0,59.0 604.5,59.0 606.0,58.8 607.5,61.3 609.0,63.8 610.5,62.2 612.0,60.3 613.5,63.7 615.0,63.8 616.5,63.6 618.0,63.9 619.5,62.6 621.0,64.8 622.5,63.1 624.0,62.2 625.5,64.8 627.0,64.2 628.5,61.6 630.0,58.3 631.5,60.3 633.0,61.5 634.5,57.4 636.0,58.5 637.5,61.0 639.0,59.4 640.5,61.8 642.0,63.2 643.5,60.4 645.0,61.2 646.5,60.2 648.0,63.7 649.5,66.6 651.0,66.7 652.5,68.4 654.0,63.6 655.5,63.5 657.0,64.1 658.5,61.8 660.0,61.5 661.5,60.3 663.0,56.3 664.5,60.9 666.0,65.4 667.5,56.2 669.0,64.1 670.5,88.8 672.0,98.4 673.5,84.2 675.0,70.0 676.5,65.3 678.0,59.0 679.5,57.1 681.0,59.7 682.5,58.4 684.0,57.3 685.5,58.2 687.0,60.5 688.5,62.5 690.0,57.6 691.5,56.8 693.0,59.8 694.5,61.3 696.0,59.4 697.5,57.7 699.0,62.4 700.5,60.5 702.0,60.1 703.5,63.4 705.0,60.7 706.5,61.0 708.0,59.8 709.5,58.5 711.0,57.4 712.5,57.4 714.0,59.7 715.5,58.2 717.0,58.0 718.5,58.0 720.0,56.8 721.5,56.2 723.0,59.7 724.5,60.4 726.0,60.9 727.5,60.0 729.0,58.7 730.5,62.9 732.0,60.2 733.5,60.9 735.0,63.6 736.5,61.9 738.0,59.2 739.5,54.7 741.0,54.5 742.5,55.6 744.0,59.2 745.5,56.1 747.0,52.6 748.5,71.0\"/><polyline class=\"trace\" points=\"750.0,56.0 751.5,55.7 753.0,55.8 754.5,55.5 756.0,54.6 757.5,55.2 759.0,56.7 760.5,59.7 762.0,62.0 763.5,62.5 765.0,62.9 766.5,64.4 768.0,66.6 769.5,66.7 771.0,67.7 772.5,67.2 774.0,66.4 775.5,67.9 777.0,66.3 778.5,65.3 780.0,64.9 781.5,63.4 783.0,62.8 784.5,59.5 786.0,55.8 787.5,56.6 789.0,63.7 790.5,70.6 792.0,69.5 793.5,67.1 795.0,66.6 796.5,65.6 798.0,64.0 799.5,62.5 801.0,61.8 802.5,62.2 804.0,61.5 805.5,63.1 807.0,95.0 808.5,147.6 810.0,145.4 811.5,97.8 813.0,71.7 814.5,60.9 816.0,54.8 817.5,53.9 819.0,52.8 820.5,52.2 822.0,50.4 823.5,49.3 825.0,49.0 826.5,48.9 828.0,48.7 829.5,48.9 831.0,48.7 832.5,47.6 834.0,47.5 835.5,49.5 837.0,51.6 838.5,52.0 840.0,53.2 841.5,55.6 843.0,57.1 844.5,57.4 846.0,59.6 847.5,60.9 849.0,58.8 850.5,58.5 852.0,58.2 853.5,57.8 855.0,57.6 856.5,57.0 858.0,57.4 859.5,58.0 861.0,57.4 862.5,56.4 864.0,54.4 865.5,51.0 867.0,52.4 868.5,58.8 870.0,62.8 871.5,63.1 873.0,62.4 874.5,60.6 876.0,59.2 877.5,59.2 879.0,59.7 880.5,59.4 882.0,60.1 883.5,57.5 885.0,53.5 886.5,100.6 888.0,158.0 889.5,141.4 891.0,93.9 892.5,71.1 894.0,57.6 895.5,52.3 897.0,50.5 898.5,50.9 900.0,49.6 901.5,48.9 903.0,49.2 904.5,48.0 906.0,47.4 907.5,45.6 909.0,45.4 910.5,45.6 912.0,45.4 913.5,45.6 915.0,45.6 916.5,48.4 918.0,51.1 919.5,53.2 921.0,55.7 922.5,58.9 924.0,60.7 925.5,60.3 927.0,61.0 928.5,61.9 930.0,62.1 931.5,62.7 933.0,62.8 934.5,62.4 936.0,62.3 937.5,63.1 939.0,61.9 940.5,61.0 942.0,62.1 943.5,58.8 945.0,55.5 946.5,56.2 948.0,63.1 949.5,69.9 951.0,69.3 952.5,69.4 954.0,68.4 955.5,65.7 957.0,64.7 958.5,65.0 960.0,65.5 961.5,65.8 963.0,65.8 964.5,61.6 966.0,96.6 967.5,158.0 969.0,156.8 970.5,104.5 972.0,79.2 973.5,66.4 975.0,59.5 976.5,58.2 978.0,59.4 979.5,57.8 981.0,55.3 982.5,55.9 984.0,55.3 985.5,55.5 987.0,55.2 988.5,55.0 990.0,55.2 991.5,55.1 993.0,56.9 994.5,57.6 996.0,56.1 997.5,60.3 999.0,65.4 1000.5,64.6 1002.0,68.0 1003.5,72.1 1005.0,73.3 1006.5,73.6 1008.0,73.1 1009.5,73.8 1011.0,74.2 1012.5,74.7 1014.0,72.3 1015.5,73.0 1017.0,75.6 1018.5,74.1 1020.0,73.9 1021.5,70.6 1023.0,69.0 1024.5,68.4 1026.0,70.1 1027.5,78.7 1029.0,81.5 1030.5,80.6 1032.0,80.4 1033.5,78.5 1035.0,75.4 1036.5,76.0 1038.0,78.6 1039.5,77.8 1041.0,78.9 1042.5,74.8 1044.0,87.1 1045.5,140.8 1047.0,158.0 1048.5,125.1 1050.0,91.4 1051.5,76.3 1053.0,69.0 1054.5,67.1 1056.0,63.8 1057.5,63.0 1059.0,61.1 1060.5,61.3 1062.0,60.0 1063.5,58.5 1065.0,59.1 1066.5,58.2 1068.0,57.4 1069.5,57.6 1071.0,56.3 1072.5,56.2 1074.0,58.0 1075.5,59.1 1077.0,61.9 1078.5,63.0 1080.0,64.3 1081.5,65.5 1083.0,65.5 1084.5,66.4 1086.0,64.6 1087.5,64.7 1089.0,63.7 1090.5,61.5 1092.0,62.3 1093.5,61.8 1095.0,62.1 1096.5,61.9 1098.0,62.2 1099.5,62.5 1101.0,59.3 1102.5,57.5 1104.0,57.2 1105.5,61.7 1107.0,67.4 1108.5,68.8 1110.0,69.7 1111.5,67.7 1113.0,65.1 1114.5,64.4 1116.0,64.9 1117.5,65.5 1119.0,64.8 1120.5,63.4 1122.0,63.4 1123.5,95.8\"/><polyline class=\"trace\" points=\"1125.0,63.3 1126.5,65.0 1128.0,67.5 1129.5,64.8 1131.0,64.7 1132.5,64.3 1134.0,63.9 1135.5,64.3 1137.0,63.9 1138.5,62.5 1140.0,64.8 1141.5,66.8 1143.0,67.0 1144.5,67.1 1146.0,65.9 1147.5,66.7 1149.0,66.7 1150.5,66.7 1152.0,66.7 1153.5,66.7 1155.0,65.8 1156.5,64.2 1158.0,64.4 1159.5,61.6 1161.0,59.4 1162.5,58.6 1164.0,57.6 1165.5,61.3 1167.0,63.0 1168.5,62.2 1170.0,62.8 1171.5,61.0 1173.0,62.4 1174.5,59.8 1176.0,62.5 1177.5,61.8 1179.0,61.6 1180.5,50.8 1182.0,-8.6 1183.5,4.5 1185.0,68.3 1186.5,70.8 1188.0,65.3 1189.5,63.4 1191.0,63.8 1192.5,63.7 1194.0,61.1 1195.5,62.8 1197.0,60.7 1198.5,61.6 1200.0,61.6 1201.5,59.8 1203.0,60.3 1204.5,59.8 1206.0,58.6 1207.5,57.0 1209.0,54.7 1210.5,53.3 1212.0,53.2 1213.5,54.8 1215.0,57.1 1216.5,58.5 1218.0,60.3 1219.5,62.2 1221.0,62.9 1222.5,64.2 1224.0,64.9 1225.5,64.4 1227.0,64.2 1228.5,63.6 1230.0,62.8 1231.5,63.4 1233.0,64.0 1234.5,62.8 1236.0,62.7 1237.5,62.8 1239.0,59.8 1240.5,58.6 1242.0,57.4 1243.5,58.1 1245.0,62.5 1246.5,62.2 1248.0,60.3 1249.5,59.7 1251.0,59.2 1252.5,64.1 1254.0,61.2 1255.5,62.2 1257.0,60.4 1258.5,59.7 1260.0,51.1 1261.5,-24.2 1263.0,-22.5 1264.5,56.9 1266.0,66.9 1267.5,63.7 1269.0,63.6 1270.5,61.1 1272.0,63.6 1273.5,63.1 1275.0,63.9 1276.5,62.7 1278.0,63.2 1279.5,61.9 1281.0,60.0 1282.5,60.9 1284.0,61.6 1285.5,59.5 1287.0,58.6 1288.5,57.6 1290.0,55.3 1291.5,55.4 1293.0,55.6 1294.5,56.6 1296.0,59.4 1297.5,61.0 1299.0,62.7 1300.5,63.5 1302.0,63.3 1303.5,63.9 1305.0,63.4 1306.5,63.0 1308.0,62.4 1309.5,62.5 1311.0,62.4 1312.5,62.1 1314.0,63.4 1315.5,63.6 1317.0,62.6 1318.5,59.1 1320.0,56.9 1321.5,56.7 1323.0,57.5 1324.5,61.2 1326.0,62.7 1327.5,61.3 1329.0,61.8 1330.5,59.9 1332.0,62.8 1333.5,61.0 1335.0,58.4 1336.5,56.6 1338.0,56.9 1339.5,54.0 1341.0,-16.4 1342.5,-26.5 1344.0,55.0 1345.5,70.1 1347.0,62.3 1348.5,63.6 1350.0,61.0 1351.5,62.4 1353.0,60.6 1354.5,61.5 1356.0,60.5 1357.5,60.4 1359.0,61.8 1360.5,62.5 1362.0,61.8 1363.5,61.6 1365.0,60.8 1366.5,59.9 1368.0,58.8 1369.5,56.2 1371.0,56.1 1372.5,56.1 1374.0,57.4 1375.5,59.2 1377.0,61.0 1378.5,64.5 1380.0,65.4 1381.5,64.6 1383.0,64.7 1384.5,64.1 1386.0,64.1 1387.5,63.7 1389.0,64.0 1390.5,65.8 1392.0,65.2 1393.5,65.8 1395.0,64.9 1396.5,63.8 1398.0,64.1 1399.5,61.8 1401.0,60.0 1402.5,60.7 1404.0,64.9 1405.5,65.0 1407.0,65.0 1408.5,63.4 1410.0,65.2 1411.5,66.2 1413.0,66.6 1414.5,67.3 1416.0,63.4 1417.5,65.5 1419.0,13.9 1420.5,-10.5 1422.0,50.1 1423.5,71.7 1425.0,68.8 1426.5,69.3 1428.0,66.8 1429.5,67.5 1431.0,65.7 1432.5,65.5 1434.0,64.1 1435.5,65.9 1437.0,65.2 1438.5,64.9 1440.0,65.1 1441.5,62.9 1443.0,60.1 1444.5,57.8 1446.0,56.7 1447.5,55.6 1449.0,55.1 1450.5,54.6 1452.0,56.2 1453.5,57.3 1455.0,58.0 1456.5,60.0 1458.0,62.6 1459.5,63.5 1461.0,63.0 1462.5,62.4 1464.0,61.3 1465.5,62.4 1467.0,62.4 1468.5,61.9 1470.0,62.0 1471.5,61.1 1473.0,61.6 1474.5,60.6 1476.0,57.9 1477.5,58.0 1479.0,57.1 1480.5,56.8 1482.0,59.4 1483.5,61.6 1485.0,62.2 1486.5,60.4 1488.0,58.8 1489.5,62.3 1491.0,61.1 1492.5,61.9 1494.0,61.8 1495.5,60.4 1497.0,54.6 1498.5,-10.5\"/><polyline class=\"trace\" points=\"0.0,173.1 1.5,171.0 3.0,173.4 4.5,167.2 6.0,169.3 7.5,170.8 9.0,169.8 10.5,168.0 12.0,165.0 13.5,162.6 15.0,166.0 16.5,166.3 18.0,163.9 19.5,166.3 21.0,166.6 22.5,171.2 24.0,169.4 25.5,168.4 27.0,170.1 28.5,167.2 30.0,169.1 31.5,168.3 33.0,169.8 34.5,167.1 36.0,163.6 37.5,165.8 39.0,162.4 40.5,163.9 42.0,167.4 43.5,165.6 45.0,166.0 46.5,167.1 48.0,170.4 49.5,169.5 51.0,169.2 52.5,172.3 54.0,174.8 55.5,176.6 57.0,151.5 58.5,123.7 60.0,127.5 61.5,145.5 63.0,160.5 64.5,171.6 66.0,175.8 67.5,175.8 69.0,178.5 70.5,178.9 72.0,179.8 73.5,177.1 75.0,174.1 76.5,176.4 78.0,176.6 79.5,173.5 81.0,176.1 82.5,175.0 84.0,171.0 85.5,173.9 87.0,169.0 88.5,165.9 90.0,169.0 91.5,169.3 93.0,167.1 94.5,167.3 96.0,169.9 97.5,172.2 99.0,172.6 100.5,170.8 102.0,171.0 103.5,169.2 105.0,170.9 106.5,171.9 108.0,171.7 109.5,171.9 111.0,170.8 112.5,172.6 114.0,167.3 115.5,165.3 117.0,166.4 118.5,164.5 120.0,166.9 121.5,167.7 123.0,166.5 124.5,166.3 126.0,168.7 127.5,173.4 129.0,172.3 130.5,171.4 132.0,170.9 133.5,174.2 135.0,177.5 136.5,141.9 138.0,114.3 139.5,127.6 141.0,145.1 142.5,160.6 144.0,169.6 145.5,174.4 147.0,175.1 148.5,177.7 150.0,177.0 151.5,175.0 153.0,175.8 154.5,172.2 156.0,175.0 157.5,175.8 159.0,174.9 160.5,178.3 162.0,174.8 163.5,170.2 165.0,169.9 166.5,169.8 168.0,171.6 169.5,172.0 171.0,167.5 172.5,168.4 174.0,171.7 175.5,171.7 177.0,168.6 178.5,169.2 180.0,175.5 181.5,174.0 183.0,172.0 184.5,173.1 186.0,171.2 187.5,171.1 189.0,170.0 190.5,167.6 192.0,170.9 193.5,170.1 195.0,160.9 196.5,162.0 198.0,167.5 199.5,168.1 201.0,168.1 202.5,168.1 204.0,169.0 205.5,168.4 207.0,170.2 208.5,170.1 210.0,170.2 211.5,169.1 213.0,167.7 214.5,171.4 216.0,147.1 217.5,117.9 219.0,126.8 220.5,144.7 222.0,157.4 223.5,167.5 225.0,172.9 226.5,175.3 228.0,174.6 229.5,174.4 231.0,175.4 232.5,174.4 234.0,170.7 235.5,170.9 237.0,173.3 238.5,169.9 240.0,169.0 241.5,169.2 243.0,168.6 244.5,169.5 246.0,165.9 247.5,166.3 249.0,167.2 250.5,164.1 252.0,164.4 253.5,166.8 255.0,169.9 256.5,168.0 258.0,167.4 259.5,172.0 261.0,169.9 262.5,168.2 264.0,171.1 265.5,167.8 267.0,166.2 268.5,170.0 270.0,169.0 271.5,168.9 273.0,164.6 274.5,162.1 276.0,163.5 277.5,162.6 279.0,168.9 280.5,167.9 282.0,165.7 283.5,168.4 285.0,169.0 286.5,170.1 288.0,174.8 289.5,172.9 291.0,167.3 292.5,177.4 294.0,165.9 295.5,129.8 297.0,115.2 298.5,133.7 300.0,155.6 301.5,164.5 303.0,174.4 304.5,176.5 306.0,173.8 307.5,176.7 309.0,176.9 310.5,175.6 312.0,175.6 313.5,172.7 315.0,175.0 316.5,177.6 318.0,173.5 319.5,171.7 321.0,174.6 322.5,174.4 324.0,168.4 325.5,169.6 327.0,169.9 328.5,166.8 330.0,169.4 331.5,169.7 333.0,169.9 334.5,171.5 336.0,173.8 337.5,173.3 339.0,172.5 340.5,173.7 342.0,173.7 343.5,174.3 345.0,175.9 346.5,176.5 348.0,173.1 349.5,173.2 351.0,171.1 352.5,170.3 354.0,171.3 355.5,168.1 357.0,172.9 358.5,172.8 360.0,170.1 361.5,172.3 363.0,174.7 364.5,179.1 366.0,178.5 367.5,178.6 369.0,175.8 370.5,178.2 372.0,183.5 373.5,155.1\"/><polyline class=\"trace\" points=\"375.0,164.8 376.5,167.2 378.0,169.1 379.5,166.3 381.0,169.2 382.5,167.5 384.0,170.8 385.5,173.2 387.0,169.8 388.5,173.9 390.0,175.3 391.5,174.2 393.0,173.1 394.5,173.7 396.0,174.9 397.5,172.9 399.0,170.2 400.5,173.8 402.0,174.9 403.5,169.5 405.0,170.1 406.5,170.5 408.0,172.3 409.5,171.6 411.0,171.6 412.5,173.7 414.0,171.2 415.5,170.7 417.0,166.5 418.5,168.3 420.0,172.2 421.5,169.6 423.0,167.2 424.5,167.3 426.0,170.1 427.5,167.8 429.0,166.0 430.5,166.6 432.0,173.1 433.5,175.2 435.0,174.5 436.5,175.7 438.0,168.0 439.5,169.6 441.0,167.8 442.5,164.7 444.0,167.3 445.5,164.0 447.0,165.9 448.5,165.1 450.0,163.9 451.5,166.4 453.0,166.5 454.5,165.5 456.0,167.2 457.5,167.4 459.0,165.9 460.5,167.2 462.0,164.7 463.5,163.7 465.0,166.9 466.5,168.3 468.0,168.4 469.5,169.9 471.0,169.3 472.5,168.5 474.0,169.0 475.5,170.9 477.0,169.1 478.5,165.6 480.0,168.2 481.5,168.0 483.0,168.6 484.5,171.0 486.0,169.8 487.5,168.8 489.0,171.6 490.5,173.2 492.0,169.0 493.5,166.9 495.0,165.4 496.5,163.0 498.0,163.2 499.5,163.3 501.0,165.9 502.5,167.6 504.0,164.8 505.5,164.1 507.0,168.1 508.5,169.2 510.0,169.2 511.5,176.2 513.0,176.1 514.5,172.0 516.0,172.6 517.5,169.3 519.0,166.6 520.5,165.3 522.0,165.6 523.5,167.5 525.0,167.1 526.5,165.5 528.0,166.2 529.5,165.9 531.0,165.1 532.5,169.6 534.0,169.9 535.5,168.6 537.0,169.5 538.5,167.5 540.0,171.0 541.5,169.5 543.0,169.8 544.5,172.0 546.0,168.4 547.5,170.3 549.0,173.6 550.5,175.8 552.0,170.8 553.5,170.5 555.0,172.8 556.5,172.9 558.0,171.7 559.5,170.7 561.0,173.1 562.5,167.6 564.0,167.7 565.5,169.3 567.0,169.8 568.5,173.4 570.0,172.0 571.5,169.0 573.0,166.8 574.5,167.8 576.0,166.5 577.5,166.2 579.0,168.5 580.5,168.9 582.0,168.1 583.5,170.4 585.0,172.3 586.5,172.5 588.0,176.1 589.5,174.3 591.0,176.9 592.5,174.5 594.0,171.1 595.5,174.6 597.0,170.5 598.5,171.8 600.0,169.3 601.5,166.8 603.0,169.9 604.5,170.2 606.0,169.0 607.5,165.7 609.0,166.2 610.5,169.2 612.0,169.2 613.5,167.7 615.0,168.6 616.5,169.0 618.0,168.9 619.5,170.2 621.0,171.4 622.5,174.1 624.0,174.8 625.5,174.1 627.0,175.0 628.5,176.5 630.0,178.4 631.5,177.4 633.0,175.6 634.5,177.1 636.0,177.9 637.5,175.6 639.0,174.4 640.5,174.6 642.0,174.1 643.5,173.9 645.0,174.0 646.5,176.1 648.0,175.6 649.5,173.5 651.0,171.1 652.5,169.2 654.0,169.2 655.5,171.0 657.0,173.1 658.5,173.7 660.0,173.4 661.5,174.0 663.0,175.0 664.5,168.8 666.0,168.1 667.5,171.2 669.0,172.9 670.5,177.5 672.0,180.4 673.5,181.0 675.0,176.4 676.5,172.5 678.0,170.1 679.5,170.8 681.0,169.6 682.5,167.9 684.0,169.8 685.5,169.9 687.0,165.3 688.5,165.7 690.0,172.0 691.5,169.7 693.0,169.8 694.5,169.8 696.0,169.1 697.5,172.8 699.0,172.4 700.5,174.3 702.0,174.7 703.5,172.8 705.0,174.4 706.5,173.2 708.0,175.5 709.5,175.7 711.0,174.4 712.5,175.1 714.0,171.6 715.5,172.8 717.0,173.1 718.5,172.2 720.0,172.3 721.5,172.6 723.0,170.7 724.5,169.0 726.0,171.4 727.5,174.4 729.0,175.5 730.5,171.7 732.0,170.0 733.5,168.8 735.0,167.6 736.5,167.4 738.0,169.3 739.5,171.7 741.0,172.9 742.5,170.5 744.0,167.6 745.5,170.2 747.0,169.3 748.5,175.2\"/><polyline class=\"trace\" points=\"750.0,159.7 751.5,159.7 753.0,159.7 754.5,159.6 756.0,160.2 757.5,161.9 759.0,165.5 760.5,168.5 762.0,172.8 763.5,177.7 765.0,180.6 766.5,182.5 768.0,183.8 769.5,184.6 771.0,182.8 772.5,181.5 774.0,181.0 775.5,180.0 777.0,178.5 778.5,176.3 780.0,175.6 781.5,176.3 783.0,175.2 784.5,170.5 786.0,168.5 787.5,168.0 789.0,171.4 790.5,177.4 792.0,176.2 793.5,173.4 795.0,173.1 796.5,172.9 798.0,170.5 799.5,169.8 801.0,167.7 802.5,169.3 804.0,166.6 805.5,172.6 807.0,217.2 808.5,255.4 810.0,247.5 811.5,203.5 813.0,170.2 814.5,160.7 816.0,153.7 817.5,153.0 819.0,152.1 820.5,151.2 822.0,150.1 823.5,149.4 825.0,150.1 826.5,148.9 828.0,148.6 829.5,149.2 831.0,149.5 832.5,148.1 834.0,148.9 835.5,151.6 837.0,154.6 838.5,158.2 840.0,162.4 841.5,168.3 843.0,171.9 844.5,174.4 846.0,176.7 847.5,176.9 849.0,176.4 850.5,175.8 852.0,172.5 853.5,169.9 855.0,169.5 856.5,168.6 858.0,169.2 859.5,169.4 861.0,170.1 862.5,169.5 864.0,165.4 865.5,162.6 867.0,162.8 868.5,167.2 870.0,172.7 871.5,174.3 873.0,172.8 874.5,170.4 876.0,169.4 877.5,169.2 879.0,170.3 880.5,169.2 882.0,171.3 883.5,167.4 885.0,171.3 886.5,224.3 888.0,264.6 889.5,243.5 891.0,202.6 892.5,174.4 894.0,162.4 895.5,155.9 897.0,155.3 898.5,153.9 900.0,152.5 901.5,152.5 903.0,150.6 904.5,151.2 906.0,150.7 907.5,150.9 909.0,151.1 910.5,149.1 912.0,149.7 913.5,150.9 915.0,153.9 916.5,158.1 918.0,158.9 919.5,163.6 921.0,170.0 922.5,173.1 924.0,176.9 925.5,178.2 927.0,177.8 928.5,177.3 930.0,176.6 931.5,176.9 933.0,176.2 934.5,175.2 936.0,173.4 937.5,171.9 939.0,172.3 940.5,171.9 942.0,170.5 943.5,168.0 945.0,165.4 946.5,165.1 948.0,169.1 949.5,173.7 951.0,175.3 952.5,175.6 954.0,175.2 955.5,173.8 957.0,172.6 958.5,173.1 960.0,170.0 961.5,173.1 963.0,171.4 964.5,168.7 966.0,214.2 967.5,262.6 969.0,251.9 970.5,209.0 972.0,177.7 973.5,164.9 975.0,157.5 976.5,155.3 978.0,156.3 979.5,154.7 981.0,152.6 982.5,152.7 984.0,152.6 985.5,152.3 987.0,152.9 988.5,153.2 990.0,153.6 991.5,154.2 993.0,154.2 994.5,155.9 996.0,158.1 997.5,163.2 999.0,167.9 1000.5,171.7 1002.0,178.5 1003.5,180.8 1005.0,182.7 1006.5,183.8 1008.0,182.9 1009.5,183.0 1011.0,181.9 1012.5,181.2 1014.0,180.8 1015.5,181.2 1017.0,178.7 1018.5,178.9 1020.0,181.9 1021.5,178.0 1023.0,176.7 1024.5,175.7 1026.0,175.3 1027.5,182.2 1029.0,184.9 1030.5,184.4 1032.0,183.0 1033.5,182.1 1035.0,181.6 1036.5,182.5 1038.0,182.8 1039.5,181.7 1041.0,182.4 1042.5,180.2 1044.0,203.2 1045.5,247.3 1047.0,262.9 1048.5,232.0 1050.0,191.4 1051.5,175.7 1053.0,168.0 1054.5,165.5 1056.0,164.7 1057.5,161.5 1059.0,162.0 1060.5,161.2 1062.0,159.3 1063.5,157.6 1065.0,158.1 1066.5,157.6 1068.0,157.0 1069.5,157.6 1071.0,156.3 1072.5,157.1 1074.0,160.4 1075.5,162.9 1077.0,166.5 1078.5,171.0 1080.0,174.5 1081.5,176.8 1083.0,177.6 1084.5,178.2 1086.0,177.4 1087.5,174.7 1089.0,173.5 1090.5,173.2 1092.0,170.5 1093.5,167.8 1095.0,168.3 1096.5,167.1 1098.0,166.6 1099.5,167.2 1101.0,164.2 1102.5,163.3 1104.0,162.4 1105.5,164.8 1107.0,169.8 1108.5,170.7 1110.0,171.1 1111.5,169.5 1113.0,168.4 1114.5,166.9 1116.0,168.3 1117.5,168.3 1119.0,168.0 1120.5,165.7 1122.0,169.6 1123.5,215.5\"/><polyline class=\"trace\" points=\"1125.0,164.7 1126.5,164.1 1128.0,164.5 1129.5,165.1 1131.0,164.1 1132.5,164.2 1134.0,164.1 1135.5,164.2 1137.0,164.1 1138.5,163.2 1140.0,164.0 1141.5,164.5 1143.0,166.8 1144.5,166.3 1146.0,165.2 1147.5,165.0 1149.0,162.5 1150.5,163.9 1152.0,164.6 1153.5,163.2 1155.0,162.6 1156.5,162.5 1158.0,162.9 1159.5,161.6 1161.0,161.0 1162.5,160.7 1164.0,159.4 1165.5,160.0 1167.0,160.0 1168.5,159.7 1170.0,160.6 1171.5,162.2 1173.0,164.6 1174.5,163.5 1176.0,165.4 1177.5,164.2 1179.0,167.5 1180.5,162.9 1182.0,123.4 1183.5,114.9 1185.0,140.2 1186.5,153.3 1188.0,162.6 1189.5,167.1 1191.0,168.9 1192.5,169.3 1194.0,169.2 1195.5,169.3 1197.0,169.0 1198.5,169.3 1200.0,169.5 1201.5,170.0 1203.0,170.1 1204.5,170.8 1206.0,169.9 1207.5,168.4 1209.0,168.1 1210.5,166.5 1212.0,167.2 1213.5,167.3 1215.0,166.1 1216.5,167.7 1218.0,168.9 1219.5,169.3 1221.0,171.1 1222.5,173.5 1224.0,173.6 1225.5,172.9 1227.0,172.9 1228.5,173.1 1230.0,173.8 1231.5,173.1 1233.0,173.1 1234.5,172.4 1236.0,172.3 1237.5,172.3 1239.0,169.4 1240.5,169.5 1242.0,169.3 1243.5,168.3 1245.0,168.9 1246.5,170.1 1248.0,169.5 1249.5,169.2 1251.0,172.2 1252.5,175.3 1254.0,172.2 1255.5,173.9 1257.0,173.1 1258.5,174.1 1260.0,172.5 1261.5,124.0 1263.0,103.5 1264.5,132.0 1266.0,152.2 1267.5,167.1 1269.0,170.5 1270.5,174.3 1272.0,177.6 1273.5,177.6 1275.0,178.0 1276.5,177.3 1278.0,177.4 1279.5,177.0 1281.0,177.1 1282.5,178.0 1284.0,178.1 1285.5,175.9 1287.0,176.2 1288.5,176.1 1290.0,175.6 1291.5,174.8 1293.0,174.6 1294.5,176.5 1296.0,176.3 1297.5,176.7 1299.0,177.1 1300.5,177.4 1302.0,177.1 1303.5,177.4 1305.0,177.1 1306.5,176.7 1308.0,177.6 1309.5,175.8 1311.0,174.6 1312.5,175.9 1314.0,176.9 1315.5,176.2 1317.0,175.5 1318.5,172.9 1320.0,171.5 1321.5,171.6 1323.0,169.8 1324.5,171.6 1326.0,173.7 1327.5,171.5 1329.0,169.5 1330.5,171.3 1332.0,175.8 1333.5,175.0 1335.0,175.1 1336.5,173.1 1338.0,175.9 1339.5,178.4 1341.0,132.3 1342.5,103.6 1344.0,130.1 1345.5,150.2 1347.0,165.0 1348.5,173.7 1350.0,175.7 1351.5,178.3 1353.0,178.7 1354.5,178.8 1356.0,177.9 1357.5,178.8 1359.0,180.9 1360.5,179.7 1362.0,179.0 1363.5,180.7 1365.0,180.7 1366.5,180.1 1368.0,177.3 1369.5,177.6 1371.0,177.2 1372.5,176.2 1374.0,176.8 1375.5,174.4 1377.0,176.4 1378.5,176.1 1380.0,175.7 1381.5,176.1 1383.0,174.7 1384.5,174.7 1386.0,171.1 1387.5,169.8 1389.0,171.9 1390.5,171.7 1392.0,171.7 1393.5,174.7 1395.0,174.7 1396.5,173.3 1398.0,170.1 1399.5,168.3 1401.0,168.0 1402.5,166.0 1404.0,167.6 1405.5,166.7 1407.0,167.4 1408.5,167.2 1410.0,167.4 1411.5,168.7 1413.0,168.7 1414.5,168.6 1416.0,168.9 1417.5,173.0 1419.0,143.5 1420.5,110.4 1422.0,122.2 1423.5,141.4 1425.0,157.9 1426.5,167.8 1428.0,168.2 1429.5,170.6 1431.0,172.2 1432.5,170.8 1434.0,170.5 1435.5,171.2 1437.0,170.8 1438.5,169.5 1440.0,167.9 1441.5,168.1 1443.0,168.0 1444.5,168.2 1446.0,166.9 1447.5,165.7 1449.0,165.9 1450.5,164.9 1452.0,166.1 1453.5,166.9 1455.0,167.4 1456.5,168.0 1458.0,168.0 1459.5,168.3 1461.0,168.3 1462.5,169.0 1464.0,169.5 1465.5,170.2 1467.0,170.3 1468.5,168.9 1470.0,170.2 1471.5,170.0 1473.0,169.7 1474.5,171.7 1476.0,170.4 1477.5,169.7 1479.0,169.6 1480.5,169.2 1482.0,170.6 1483.5,172.5 1485.0,172.9 1486.5,170.5 1488.0,170.2 1489.5,174.1 1491.0,174.0 1492.5,174.6 1494.0,172.8 1495.5,175.8 1497.0,174.9 1498.5,131.6\"/><polyline class=\"trace\" points=\"0.0,284.5 1.5,281.1 3.0,280.3 4.5,280.0 6.0,278.2 7.5,280.7 9.0,276.8 10.5,273.6 12.0,275.4 13.5,270.1 15.0,270.4 16.5,271.7 18.0,271.6 19.5,272.2 21.0,271.2 22.5,275.4 24.0,277.3 25.5,273.1 27.0,272.9 28.5,276.9 30.0,277.2 31.5,276.4 33.0,275.4 34.5,274.6 36.0,273.0 37.5,271.9 39.0,272.7 40.5,274.0 42.0,280.0 43.5,277.3 45.0,273.5 46.5,276.7 48.0,280.8 49.5,280.2 51.0,277.3 52.5,281.1 54.0,284.1 55.5,284.4 57.0,265.3 58.5,249.4 60.0,252.0 61.5,259.8 63.0,275.0 64.5,278.9 66.0,282.7 67.5,285.9 69.0,284.7 70.5,288.1 72.0,286.8 73.5,286.2 75.0,285.9 76.5,284.5 78.0,284.5 79.5,284.0 81.0,283.6 82.5,282.8 84.0,282.4 85.5,282.5 87.0,282.6 88.5,282.0 90.0,280.3 91.5,279.1 93.0,277.9 94.5,276.6 96.0,278.4 97.5,280.3 99.0,280.0 100.5,277.2 102.0,279.1 103.5,281.8 105.0,280.0 106.5,280.7 108.0,280.0 109.5,277.6 111.0,278.4 112.5,280.3 114.0,274.9 115.5,272.2 117.0,277.0 118.5,278.1 120.0,280.8 121.5,283.5 123.0,282.8 124.5,282.6 126.0,281.2 127.5,281.8 129.0,284.1 130.5,284.4 132.0,280.1 133.5,280.6 135.0,282.3 136.5,257.4 138.0,243.9 139.5,254.5 141.0,262.8 142.5,273.7 144.0,280.9 145.5,284.6 147.0,284.7 148.5,284.1 150.0,284.2 151.5,284.7 153.0,284.5 154.5,282.9 156.0,285.1 157.5,281.0 159.0,280.2 160.5,283.3 162.0,280.6 163.5,280.3 165.0,276.7 166.5,278.2 168.0,278.7 169.5,276.7 171.0,278.1 172.5,276.6 174.0,274.9 175.5,272.7 177.0,276.3 178.5,276.9 180.0,277.6 181.5,276.8 183.0,277.0 184.5,278.6 186.0,275.3 187.5,280.6 189.0,280.1 190.5,277.2 192.0,278.4 193.5,274.5 195.0,271.2 196.5,274.7 198.0,279.7 199.5,279.1 201.0,280.3 202.5,280.5 204.0,278.7 205.5,278.1 207.0,279.7 208.5,277.5 210.0,275.5 211.5,274.8 213.0,270.6 214.5,274.2 216.0,259.4 217.5,247.2 219.0,255.0 220.5,260.5 222.0,270.9 223.5,274.6 225.0,279.8 226.5,283.6 228.0,280.2 229.5,279.8 231.0,281.4 232.5,284.2 234.0,281.9 235.5,279.0 237.0,280.1 238.5,280.0 240.0,278.7 241.5,278.3 243.0,278.1 244.5,277.3 246.0,274.3 247.5,271.8 249.0,271.5 250.5,270.7 252.0,269.9 253.5,269.7 255.0,269.4 256.5,269.4 258.0,270.8 259.5,271.6 261.0,269.8 262.5,271.3 264.0,273.9 265.5,272.1 267.0,271.8 268.5,273.9 270.0,273.3 271.5,271.0 273.0,269.4 274.5,270.3 276.0,273.3 277.5,274.8 279.0,278.0 280.5,275.7 282.0,272.4 283.5,273.2 285.0,273.9 286.5,273.9 288.0,275.1 289.5,280.4 291.0,278.2 292.5,280.2 294.0,272.8 295.5,250.1 297.0,239.8 298.5,248.6 300.0,264.1 301.5,272.5 303.0,279.9 304.5,280.2 306.0,280.0 307.5,283.2 309.0,281.4 310.5,280.6 312.0,285.3 313.5,283.4 315.0,278.2 316.5,281.8 318.0,279.7 319.5,278.8 321.0,280.9 322.5,277.1 324.0,274.5 325.5,273.3 327.0,273.0 328.5,273.3 330.0,273.0 331.5,274.4 333.0,272.2 334.5,272.8 336.0,275.2 337.5,274.2 339.0,277.3 340.5,276.7 342.0,276.5 343.5,277.8 345.0,278.4 346.5,278.3 348.0,278.6 349.5,280.3 351.0,276.9 352.5,273.4 354.0,272.8 355.5,275.1 357.0,279.2 358.5,280.3 360.0,280.2 361.5,281.4 363.0,280.8 364.5,280.5 366.0,279.0 367.5,281.5 369.0,283.0 370.5,281.7 372.0,285.1 373.5,265.2\"/><polyline class=\"trace\" points=\"375.0,282.9 376.5,280.1 378.0,280.9 379.5,277.7 381.0,277.8 382.5,279.9 384.0,277.4 385.5,274.9 387.0,274.3 388.5,270.4 390.0,272.3 391.5,273.1 393.0,271.8 394.5,273.4 396.0,273.0 397.5,277.4 399.0,277.5 400.5,274.9 402.0,275.6 403.5,276.1 405.0,277.3 406.5,276.5 408.0,276.7 409.5,275.0 411.0,272.4 412.5,273.0 414.0,271.6 415.5,273.1 417.0,277.8 418.5,275.5 420.0,273.8 421.5,276.0 423.0,279.7 424.5,278.9 426.0,277.3 427.5,280.8 429.0,283.5 430.5,284.5 432.0,262.5 433.5,240.7 435.0,243.9 436.5,256.7 438.0,271.8 439.5,279.3 441.0,283.3 442.5,284.9 444.0,285.6 445.5,287.6 447.0,287.4 448.5,285.7 450.0,284.1 451.5,284.5 453.0,284.6 454.5,282.9 456.0,283.9 457.5,283.0 459.0,280.8 460.5,282.3 462.0,279.9 463.5,278.0 465.0,278.7 466.5,278.3 468.0,276.6 469.5,276.0 471.0,278.2 472.5,280.3 474.0,280.4 475.5,278.1 477.0,279.1 478.5,279.6 480.0,279.6 481.5,280.3 483.0,279.9 484.5,278.8 486.0,278.7 487.5,280.5 489.0,275.2 490.5,272.9 492.0,275.8 493.5,275.4 495.0,277.9 496.5,279.7 498.0,278.7 499.5,278.5 501.0,279.0 502.5,281.7 504.0,282.3 505.5,282.0 507.0,279.6 508.5,281.5 510.0,283.9 511.5,253.8 513.0,233.2 514.5,245.2 516.0,258.0 517.5,271.2 519.0,279.4 520.5,283.6 522.0,283.9 523.5,285.0 525.0,284.7 526.5,283.9 528.0,284.2 529.5,281.6 531.0,284.2 532.5,282.5 534.0,281.7 535.5,284.9 537.0,281.8 538.5,279.3 540.0,277.5 541.5,278.1 543.0,279.2 544.5,278.4 546.0,276.9 547.5,276.6 549.0,277.4 550.5,276.3 552.0,276.5 553.5,277.1 555.0,280.7 556.5,279.4 558.0,278.6 559.5,279.9 561.0,277.3 562.5,280.0 564.0,279.1 565.5,276.5 567.0,278.7 568.5,276.4 570.0,270.1 571.5,272.5 573.0,277.7 574.5,277.7 576.0,278.3 577.5,278.4 579.0,277.9 580.5,277.3 582.0,279.0 583.5,277.9 585.0,276.9 586.5,276.0 588.0,273.2 589.5,276.9 591.0,257.4 592.5,236.7 594.0,245.0 595.5,256.8 597.0,268.2 598.5,275.2 600.0,280.4 601.5,283.5 603.0,281.5 604.5,281.2 606.0,282.4 607.5,283.4 609.0,280.4 610.5,279.1 612.0,280.8 613.5,279.0 615.0,278.0 616.5,277.8 618.0,277.5 619.5,277.5 621.0,274.2 622.5,273.1 624.0,273.4 625.5,271.5 627.0,271.2 628.5,272.4 630.0,273.7 631.5,272.8 633.0,273.3 634.5,276.0 636.0,274.0 637.5,273.9 639.0,276.6 640.5,274.0 642.0,273.1 643.5,276.1 645.0,275.2 646.5,274.0 648.0,271.1 649.5,270.3 651.0,272.5 652.5,272.8 654.0,277.5 655.5,275.9 657.0,273.1 658.5,274.9 660.0,275.5 661.5,276.1 663.0,279.0 664.5,280.7 666.0,276.9 667.5,282.9 669.0,273.4 670.5,244.0 672.0,231.6 673.5,245.2 675.0,264.0 676.5,272.7 678.0,281.2 679.5,282.4 681.0,281.0 682.5,284.0 684.0,283.2 685.5,282.2 687.0,284.5 688.5,282.1 690.0,280.7 691.5,283.8 693.0,280.7 694.5,279.4 696.0,281.8 697.5,279.9 699.0,275.5 700.5,275.5 702.0,275.5 703.5,274.2 705.0,275.3 706.5,276.1 708.0,275.1 709.5,276.3 711.0,278.6 712.5,277.8 714.0,279.0 715.5,279.3 717.0,279.2 718.5,280.1 720.0,281.2 721.5,281.5 723.0,279.9 724.5,280.8 726.0,278.1 727.5,276.0 729.0,276.2 730.5,275.7 732.0,280.2 733.5,280.6 735.0,279.2 736.5,280.9 738.0,281.8 739.5,283.9 741.0,282.9 742.5,284.1 744.0,283.5 745.5,284.0 747.0,288.4 748.5,264.2\"/><polyline class=\"trace\" points=\"750.0,282.1 751.5,281.7 753.0,284.5 754.5,280.0 756.0,275.7 757.5,276.3 759.0,276.6 760.5,277.3 762.0,277.7 763.5,278.7 765.0,282.6 766.5,284.2 768.0,285.3 769.5,285.8 771.0,284.2 772.5,284.7 774.0,284.0 775.5,284.9 777.0,283.0 778.5,280.9 780.0,283.0 781.5,282.2 783.0,281.5 784.5,277.1 786.0,274.8 787.5,273.9 789.0,274.3 790.5,280.8 792.0,280.8 793.5,279.5 795.0,278.8 796.5,275.5 798.0,276.1 799.5,275.8 801.0,276.4 802.5,276.3 804.0,276.7 805.5,272.4 807.0,244.8 808.5,254.2 810.0,299.9 811.5,298.5 813.0,281.4 814.5,277.9 816.0,274.4 817.5,275.5 819.0,274.4 820.5,273.5 822.0,272.7 823.5,272.1 825.0,272.6 826.5,271.4 828.0,270.5 829.5,269.8 831.0,269.1 832.5,267.4 834.0,265.3 835.5,264.9 837.0,267.2 838.5,268.5 840.0,268.5 841.5,271.5 843.0,274.5 844.5,277.1 846.0,278.2 847.5,277.7 849.0,277.8 850.5,277.6 852.0,277.5 853.5,277.2 855.0,277.2 856.5,277.6 858.0,278.1 859.5,278.5 861.0,279.1 862.5,278.9 864.0,275.3 865.5,273.7 867.0,274.0 868.5,275.8 870.0,279.1 871.5,280.3 873.0,280.5 874.5,278.1 876.0,277.9 877.5,280.6 879.0,278.8 880.5,279.4 882.0,279.4 883.5,278.1 885.0,270.2 886.5,233.5 888.0,245.2 889.5,299.6 891.0,299.5 892.5,285.7 894.0,280.7 895.5,276.3 897.0,278.3 898.5,276.0 900.0,275.2 901.5,275.5 903.0,275.1 904.5,274.8 906.0,273.5 907.5,272.2 909.0,272.4 910.5,269.4 912.0,267.8 913.5,268.4 915.0,267.4 916.5,268.2 918.0,268.6 919.5,270.3 921.0,272.7 922.5,275.8 924.0,278.4 925.5,279.7 927.0,281.2 928.5,280.5 930.0,280.4 931.5,281.2 933.0,281.7 934.5,282.1 936.0,281.7 937.5,281.5 939.0,281.2 940.5,280.8 942.0,279.3 943.5,276.9 945.0,275.5 946.5,275.1 948.0,277.3 949.5,280.8 951.0,283.5 952.5,283.7 954.0,282.8 955.5,282.3 957.0,282.3 958.5,280.4 960.0,278.8 961.5,277.3 963.0,277.2 964.5,273.2 966.0,239.8 967.5,247.6 969.0,302.9 970.5,306.1 972.0,288.7 973.5,285.7 975.0,281.4 976.5,280.3 978.0,282.1 979.5,282.4 981.0,281.5 982.5,281.9 984.0,281.8 985.5,280.8 987.0,277.9 988.5,276.7 990.0,276.0 991.5,275.5 993.0,276.6 994.5,274.6 996.0,274.1 997.5,275.8 999.0,275.8 1000.5,280.0 1002.0,284.6 1003.5,286.5 1005.0,288.7 1006.5,289.3 1008.0,291.0 1009.5,291.7 1011.0,291.1 1012.5,291.6 1014.0,291.5 1015.5,291.6 1017.0,291.4 1018.5,291.1 1020.0,290.7 1021.5,290.4 1023.0,288.4 1024.5,285.2 1026.0,286.6 1027.5,289.6 1029.0,293.7 1030.5,295.5 1032.0,292.5 1033.5,292.1 1035.0,291.9 1036.5,292.9 1038.0,294.7 1039.5,292.2 1041.0,292.2 1042.5,292.1 1044.0,264.7 1045.5,250.7 1047.0,293.6 1048.5,313.3 1050.0,297.6 1051.5,294.3 1053.0,290.5 1054.5,287.2 1056.0,287.4 1057.5,285.5 1059.0,283.8 1060.5,284.4 1062.0,282.9 1063.5,281.1 1065.0,283.2 1066.5,280.2 1068.0,276.3 1069.5,275.4 1071.0,272.5 1072.5,270.7 1074.0,270.6 1075.5,270.1 1077.0,271.2 1078.5,273.5 1080.0,275.7 1081.5,276.7 1083.0,277.1 1084.5,277.3 1086.0,277.6 1087.5,278.1 1089.0,276.5 1090.5,275.8 1092.0,276.9 1093.5,277.3 1095.0,278.0 1096.5,275.9 1098.0,275.4 1099.5,276.1 1101.0,273.6 1102.5,273.0 1104.0,271.8 1105.5,272.9 1107.0,277.3 1108.5,278.1 1110.0,277.9 1111.5,277.8 1113.0,276.7 1114.5,277.5 1116.0,277.7 1117.5,278.0 1119.0,278.8 1120.5,278.6 1122.0,275.4 1123.5,244.2\"/><polyline class=\"trace\" points=\"1125.0,289.4 1126.5,291.6 1128.0,292.5 1129.5,289.8 1131.0,289.5 1132.5,288.1 1134.0,287.2 1135.5,287.0 1137.0,286.6 1138.5,286.6 1140.0,285.0 1141.5,285.3 1143.0,284.4 1144.5,284.2 1146.0,286.3 1147.5,284.8 1149.0,283.8 1150.5,283.5 1152.0,283.5 1153.5,283.8 1155.0,283.6 1156.5,282.7 1158.0,280.5 1159.5,279.3 1161.0,278.6 1162.5,277.0 1164.0,275.1 1165.5,275.9 1167.0,275.9 1168.5,274.4 1170.0,274.7 1171.5,273.3 1173.0,274.0 1174.5,274.5 1176.0,275.5 1177.5,275.8 1179.0,276.8 1180.5,276.0 1182.0,255.4 1183.5,238.8 1185.0,242.4 1186.5,254.9 1188.0,268.7 1189.5,276.3 1191.0,280.6 1192.5,281.9 1194.0,282.9 1195.5,283.5 1197.0,282.7 1198.5,282.5 1200.0,281.8 1201.5,281.6 1203.0,281.4 1204.5,281.5 1206.0,281.4 1207.5,279.8 1209.0,279.0 1210.5,279.7 1212.0,279.8 1213.5,277.6 1215.0,276.0 1216.5,276.2 1218.0,277.0 1219.5,278.0 1221.0,279.3 1222.5,280.9 1224.0,281.1 1225.5,282.2 1227.0,282.3 1228.5,281.5 1230.0,282.4 1231.5,281.8 1233.0,281.6 1234.5,280.7 1236.0,281.1 1237.5,282.4 1239.0,280.8 1240.5,279.6 1242.0,278.9 1243.5,276.7 1245.0,275.6 1246.5,275.7 1248.0,273.9 1249.5,274.5 1251.0,276.7 1252.5,276.6 1254.0,275.4 1255.5,276.3 1257.0,274.9 1258.5,276.7 1260.0,277.5 1261.5,251.7 1263.0,228.7 1264.5,233.0 1266.0,248.8 1267.5,264.6 1269.0,272.4 1270.5,277.0 1272.0,278.7 1273.5,279.3 1275.0,279.6 1276.5,278.0 1278.0,278.0 1279.5,278.7 1281.0,278.5 1282.5,281.1 1284.0,281.3 1285.5,277.5 1287.0,277.3 1288.5,277.2 1290.0,276.9 1291.5,277.0 1293.0,275.5 1294.5,275.4 1296.0,275.8 1297.5,276.0 1299.0,276.4 1300.5,276.6 1302.0,277.2 1303.5,277.7 1305.0,278.1 1306.5,278.2 1308.0,278.7 1309.5,278.5 1311.0,277.9 1312.5,278.1 1314.0,279.4 1315.5,278.8 1317.0,276.9 1318.5,278.1 1320.0,276.8 1321.5,275.4 1323.0,276.0 1324.5,275.4 1326.0,275.7 1327.5,275.2 1329.0,275.1 1330.5,277.6 1332.0,281.5 1333.5,280.5 1335.0,279.9 1336.5,282.0 1338.0,285.5 1339.5,287.4 1341.0,261.9 1342.5,232.8 1344.0,233.5 1345.5,248.2 1347.0,263.4 1348.5,273.7 1350.0,277.5 1351.5,277.8 1353.0,277.8 1354.5,278.1 1356.0,278.1 1357.5,276.3 1359.0,276.0 1360.5,277.0 1362.0,276.3 1363.5,274.9 1365.0,276.4 1366.5,277.6 1368.0,273.6 1369.5,273.6 1371.0,274.9 1372.5,274.3 1374.0,276.4 1375.5,274.3 1377.0,276.8 1378.5,278.7 1380.0,277.1 1381.5,282.9 1383.0,280.8 1384.5,280.8 1386.0,283.0 1387.5,281.5 1389.0,283.7 1390.5,281.4 1392.0,283.5 1393.5,282.6 1395.0,280.8 1396.5,282.3 1398.0,278.9 1399.5,279.4 1401.0,278.6 1402.5,278.8 1404.0,277.4 1405.5,277.6 1407.0,280.9 1408.5,279.9 1410.0,282.8 1411.5,286.1 1413.0,284.5 1414.5,282.1 1416.0,284.7 1417.5,285.7 1419.0,273.2 1420.5,248.4 1422.0,241.1 1423.5,253.6 1425.0,268.3 1426.5,278.2 1428.0,279.7 1429.5,284.2 1431.0,287.1 1432.5,286.0 1434.0,286.6 1435.5,286.6 1437.0,283.5 1438.5,282.9 1440.0,284.7 1441.5,283.0 1443.0,280.3 1444.5,279.7 1446.0,279.8 1447.5,279.3 1449.0,277.9 1450.5,275.4 1452.0,276.9 1453.5,277.3 1455.0,275.2 1456.5,275.8 1458.0,276.8 1459.5,277.3 1461.0,275.7 1462.5,277.2 1464.0,277.1 1465.5,277.4 1467.0,277.4 1468.5,274.3 1470.0,275.6 1471.5,274.9 1473.0,274.8 1474.5,275.7 1476.0,275.6 1477.5,276.7 1479.0,275.8 1480.5,274.3 1482.0,274.8 1483.5,275.5 1485.0,275.7 1486.5,276.7 1488.0,277.4 1489.5,280.4 1491.0,281.3 1492.5,281.7 1494.0,281.8 1495.5,282.9 1497.0,282.4 1498.5,260.7\"/><polyline class=\"trace\" points=\"0.0,384.7 1.5,382.7 3.0,385.0 4.5,378.9 6.0,381.0 7.5,382.5 9.0,381.5 10.5,379.7 12.0,376.6 13.5,374.2 15.0,377.7 16.5,378.0 18.0,375.6 19.5,378.0 21.0,378.3 22.5,382.9 24.0,381.1 25.5,380.1 27.0,381.7 28.5,378.9 30.0,380.8 31.5,380.0 33.0,381.5 34.5,378.7 36.0,375.3 37.5,377.5 39.0,374.1 40.5,375.6 42.0,379.0 43.5,377.3 45.0,377.7 46.5,378.8 48.0,382.1 49.5,381.1 51.0,380.8 52.5,384.0 54.0,386.5 55.5,388.3 57.0,363.1 58.5,335.4 60.0,339.2 61.5,357.1 63.0,372.1 64.5,383.2 66.0,387.4 67.5,387.5 69.0,390.1 70.5,390.6 72.0,391.5 73.5,388.8 75.0,385.8 76.5,388.1 78.0,388.3 79.5,385.2 81.0,387.7 82.5,386.7 84.0,382.7 85.5,385.6 87.0,380.7 88.5,377.5 90.0,380.7 91.5,381.0 93.0,378.7 94.5,379.0 96.0,381.6 97.5,383.8 99.0,384.3 100.5,382.5 102.0,382.7 103.5,380.9 105.0,382.6 106.5,383.5 108.0,383.4 109.5,383.5 111.0,382.5 112.5,384.3 114.0,379.0 115.5,377.0 117.0,378.1 118.5,376.2 120.0,378.6 121.5,379.3 123.0,378.1 124.5,378.0 126.0,380.4 127.5,385.0 129.0,384.0 130.5,383.1 132.0,382.6 133.5,385.9 135.0,389.2 136.5,353.5 138.0,326.0 139.5,339.3 141.0,356.8 142.5,372.3 144.0,381.3 145.5,386.1 147.0,386.8 148.5,389.4 150.0,388.7 151.5,386.7 153.0,387.5 154.5,383.8 156.0,386.7 157.5,387.5 159.0,386.6 160.5,390.0 162.0,386.5 163.5,381.9 165.0,381.6 166.5,381.4 168.0,383.2 169.5,383.7 171.0,379.2 172.5,380.1 174.0,383.4 175.5,383.4 177.0,380.3 178.5,380.8 180.0,387.2 181.5,385.6 183.0,383.7 184.5,384.8 186.0,382.9 187.5,382.8 189.0,381.7 190.5,379.3 192.0,382.6 193.5,381.8 195.0,372.6 196.5,373.7 198.0,379.2 199.5,379.8 201.0,379.8 202.5,379.8 204.0,380.7 205.5,380.1 207.0,381.9 208.5,381.8 210.0,381.9 211.5,380.8 213.0,379.3 214.5,383.1 216.0,358.8 217.5,329.6 219.0,338.5 220.5,356.4 222.0,369.1 223.5,379.2 225.0,384.6 226.5,387.0 228.0,386.3 229.5,386.1 231.0,387.1 232.5,386.1 234.0,382.3 235.5,382.6 237.0,385.0 238.5,381.6 240.0,380.7 241.5,380.8 243.0,380.3 244.5,381.2 246.0,377.5 247.5,378.0 249.0,378.9 250.5,375.8 252.0,376.0 253.5,378.5 255.0,381.6 256.5,379.6 258.0,379.1 259.5,383.7 261.0,381.6 262.5,379.9 264.0,382.8 265.5,379.5 267.0,377.9 268.5,381.7 270.0,380.7 271.5,380.5 273.0,376.3 274.5,373.8 276.0,375.2 277.5,374.2 279.0,380.6 280.5,379.6 282.0,377.4 283.5,380.1 285.0,380.7 286.5,381.8 288.0,386.5 289.5,384.6 291.0,379.0 292.5,389.1 294.0,377.5 295.5,341.5 297.0,326.8 298.5,345.4 300.0,367.3 301.5,376.2 303.0,386.1 304.5,388.2 306.0,385.5 307.5,388.3 309.0,388.6 310.5,387.3 312.0,387.3 313.5,384.4 315.0,386.7 316.5,389.3 318.0,385.2 319.5,383.4 321.0,386.2 322.5,386.1 324.0,380.1 325.5,381.3 327.0,381.6 328.5,378.5 330.0,381.1 331.5,381.4 333.0,381.6 334.5,383.2 336.0,385.5 337.5,385.0 339.0,384.2 340.5,385.4 342.0,385.4 343.5,386.0 345.0,387.6 346.5,388.2 348.0,384.8 349.5,384.9 351.0,382.8 352.5,382.0 354.0,382.9 355.5,379.8 357.0,384.6 358.5,384.4 360.0,381.7 361.5,384.0 363.0,386.4 364.5,390.8 366.0,390.2 367.5,390.3 369.0,387.4 370.5,389.9 372.0,395.2 373.5,366.8 375.0,337.5 376.5,342.5 378.0,360.0 379.5,376.2 381.0,388.0 382.5,393.6 384.0,394.6 385.5,393.1 387.0,391.8 388.5,395.3 390.0,396.1 391.5,393.9 393.0,392.6 394.5,391.6 396.0,393.5 397.5,391.6 399.0,390.7 400.5,392.8 402.0,388.5 403.5,387.8 405.0,388.0 406.5,386.7 408.0,388.0 409.5,388.2 411.0,393.4 412.5,391.6 414.0,387.1 415.5,389.9 417.0,392.1 418.5,392.8 420.0,389.4 421.5,390.7 423.0,392.2 424.5,390.0 426.0,390.8 427.5,390.0 429.0,390.1 430.5,387.6 432.0,384.3 433.5,387.7 435.0,385.4 436.5,383.8 438.0,388.9 439.5,386.4 441.0,386.0 442.5,388.3 444.0,392.0 445.5,390.3 447.0,387.7 448.5,392.5 450.0,393.9 451.5,398.2 453.0,370.6 454.5,334.1 456.0,341.4 457.5,360.1 459.0,376.2 460.5,387.6 462.0,391.7 463.5,392.1 465.0,394.9 466.5,399.9 468.0,397.5 469.5,396.4 471.0,396.0 472.5,395.7 474.0,395.9 475.5,394.1 477.0,396.1 478.5,395.8 480.0,392.4 481.5,391.4 483.0,389.8 484.5,390.8 486.0,390.4 487.5,387.6 489.0,390.6 490.5,393.0 492.0,392.1 493.5,393.3 495.0,393.8 496.5,392.0 498.0,391.3 499.5,391.9 501.0,392.5 502.5,394.4 504.0,392.8 505.5,391.2 507.0,392.5 508.5,389.6 510.0,385.4 511.5,382.5 513.0,384.8 514.5,385.9 516.0,385.6 517.5,387.2 519.0,387.3 520.5,390.2 522.0,388.8 523.5,392.7 525.0,391.0 526.5,388.5 528.0,393.2 529.5,387.6 531.0,396.1 532.5,383.6 534.0,348.0 535.5,347.4 537.0,361.4 538.5,375.1 540.0,386.0 541.5,391.1 543.0,395.3 544.5,394.4 546.0,394.4 547.5,394.5 549.0,392.3 550.5,394.3 552.0,398.0 553.5,394.5 555.0,395.2 556.5,396.0 558.0,392.1 559.5,393.7 561.0,391.8 562.5,388.0 564.0,385.2 565.5,385.9 567.0,384.6 568.5,383.7 570.0,389.9 571.5,388.4 573.0,387.9 574.5,387.6 576.0,389.4 577.5,392.1 579.0,387.3 580.5,389.7 582.0,391.9 583.5,389.6 585.0,389.5 586.5,389.4 588.0,386.0 589.5,386.4 591.0,386.5 592.5,383.2 594.0,384.6 595.5,384.1 597.0,385.4 598.5,389.6 600.0,389.7 601.5,388.0 603.0,391.7 604.5,392.5 606.0,386.8 607.5,392.4 609.0,396.9 610.5,371.7 612.0,341.5 613.5,337.8 615.0,357.6 616.5,376.0 618.0,383.7 619.5,393.4 621.0,394.0 622.5,392.4 624.0,398.5 625.5,395.1 627.0,392.8 628.5,394.0 630.0,391.4 631.5,392.7 633.0,393.1 634.5,394.3 636.0,388.3 637.5,387.9 639.0,390.9 640.5,385.5 642.0,386.8 643.5,386.7 645.0,387.0 646.5,388.8 648.0,389.7 649.5,390.1 651.0,390.4 652.5,392.8 654.0,392.2 655.5,389.5 657.0,389.5 658.5,389.4 660.0,390.7 661.5,392.5 663.0,389.2 664.5,389.8 666.0,391.3 667.5,386.1 669.0,388.0 670.5,389.2 672.0,383.2 673.5,385.0 675.0,386.4 676.5,387.9 678.0,385.7 679.5,383.4 681.0,390.3 682.5,391.5 684.0,392.2 685.5,392.4 687.0,390.4 688.5,397.4 690.0,378.4 691.5,340.2 693.0,339.7 694.5,355.3 696.0,372.1 697.5,388.6 699.0,390.6 700.5,392.6 702.0,392.7 703.5,394.2 705.0,395.2 706.5,393.1 708.0,395.2 709.5,394.9 711.0,395.1 712.5,393.1 714.0,391.0 715.5,393.4 717.0,390.6 718.5,388.0 720.0,390.3 721.5,389.4 723.0,385.5 724.5,386.1 726.0,387.3 727.5,385.1 729.0,387.7 730.5,391.5 732.0,389.8 733.5,390.1 735.0,394.5 736.5,392.3 738.0,387.3 739.5,388.2 741.0,390.6 742.5,390.2 744.0,391.5 745.5,391.1 747.0,386.9 748.5,387.6\"/><text class=\"lead\" x=\"4\" y=\"21\">I</text><text class=\"lead\" x=\"379\" y=\"21\">AVR</text><text class=\"lead\" x=\"754\" y=\"21\">V1</text><text class=\"lead\" x=\"1129\" y=\"21\">V4</text><text class=\"lead\" x=\"4\" y=\"129\">II</text><text class=\"lead\" x=\"379\" y=\"129\">AVL</text><text class=\"lead\" x=\"754\" y=\"129\">V2</text><text class=\"lead\" x=\"1129\" y=\"129\">V5</text><text class=\"lead\" x=\"4\" y=\"237\">III</text><text class=\"lead\" x=\"379\" y=\"237\">AVF</text><text class=\"lead\" x=\"754\" y=\"237\">V3</text><text class=\"lead\" x=\"1129\" y=\"237\">V6</text><text class=\"lead\" x=\"4\" y=\"346\">II (rhythm)</text><text class=\"cap\" x=\"4\" y=\"452\">ptbxl-08191-ami · 12-lead · 100.0Hz · 실데이터(오픈 DB)</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0287",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Writhing Periumbilical Pain With a Soft Belly Three Hours After It Began in a 74-Year-Old Woman Who Stopped Her Blood Thinner Two Weeks Ago and Whose Rhythm Strip Is Shown",
+  "type": "Writhing Periumbilical Pain With a Soft Belly Three Hours After It Began in a 74-Year-Old Woman Who Stopped Her Blood Thinner Two Weeks Ago and Whose Rhythm Strip Is Shown",
+  "difficulty": 4,
+  "created": "2026-11-19",
+  "vignette": "A 74-year-old woman is brought to the emergency department 3 hours after the sudden onset of severe, diffuse periumbilical abdominal pain. She vomited twice and had one loose bowel movement shortly after the pain began. She has hypertension and heart failure with preserved ejection fraction. Two weeks ago, she stopped taking apixaban on her own because of easy bruising; she continues to take metoprolol and lisinopril. Her vital signs are shown. She is writhing on the stretcher and rates her pain as 10 on a 10-point scale. The abdomen is soft and mildly distended, with minimal tenderness to deep palpation and no guarding or rebound tenderness. Bowel sounds are hypoactive. Rectal examination shows a small amount of stool that tests positive for occult blood. Her rhythm strip and laboratory results are shown. Intravenous fluids and analgesia are begun.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Upright abdominal radiography series",
+   "Colonoscopy with mucosal biopsy",
+   "Mesenteric artery duplex ultrasonography",
+   "Immediate exploratory laparotomy",
+   "Multidetector CT angiography of the abdomen"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계. ① 심방세동 + apixaban 중단 + 통증에 비해 부드러운 배 → 색전성 급성 장간막허혈. ② 복막염 없음·혈압 안정 → 개복보다 영상 확진 먼저. ③ 크레아티닌 정상 → CT 혈관조영(폐색 부위·장벽·다른 원인을 한 번에).\n- 오답감별:\n  - (A) 복부 X선은 초기 장간막허혈에서 정상일 때가 많다 — 배제하지 못하고 시간만 쓴다.\n  - (B) 대장내시경은 허혈성 대장염(대개 좌측, 덜 심함)용이다 — 소장 허혈을 보지 못하고 천공 위험이 있다.\n  - (C) 이중 초음파는 급성기 장가스로 제한되고 원위 색전을 놓친다 — 만성 장간막허혈 선별용.\n  - (D) 개복은 복막염·불안정 활력일 때 — 이 환자는 둘 다 없다.\n- 임상핵심: 심방세동 + 통증에 비해 부드러운 배 = 급성 장간막허혈을 먼저 배제 — 안정적이면 CT 혈관조영, 복막염·쇼크면 바로 개복. 젖산 정상이 배제 근거가 되지 않는다.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 340장 Mesenteric Vascular Insufficiency.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 심방세동 + apixaban 중단 + 통증에 비해 부드러운 배 → 색전성 급성 장간막허혈. ② 복막염 없음·혈압 안정 → 개복보다 영상 확진 먼저. ③ 크레아티닌 정상 → CT 혈관조영(폐색 부위·장벽·다른 원인을 한 번에)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 복부 X선은 초기 장간막허혈에서 정상일 때가 많다 — 배제하지 못하고 시간만 쓴다.\n(B) 대장내시경은 허혈성 대장염(대개 좌측, 덜 심함)용이다 — 소장 허혈을 보지 못하고 천공 위험이 있다.\n(C) 이중 초음파는 급성기 장가스로 제한되고 원위 색전을 놓친다 — 만성 장간막허혈 선별용.\n(D) 개복은 복막염·불안정 활력일 때 — 이 환자는 둘 다 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "심방세동 + 통증에 비해 부드러운 배 = 급성 장간막허혈을 먼저 배제 — 안정적이면 CT 혈관조영, 복막염·쇼크면 바로 개복. 젖산 정상이 배제 근거가 되지 않는다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 340장 Mesenteric Vascular Insufficiency."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 340장 Mesenteric Vascular Insufficiency)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.3 °C (99.1 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "118 /min, irregularly irregular"
+   },
+   {
+    "name": "Respirations",
+    "value": "22 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "142/84 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "17,800 /μL",
+    "ref": "4,500–11,000 /μL"
+   },
+   {
+    "name": "Serum lactate",
+    "value": "3.4 mmol/L",
+    "ref": "0.5–2.2 mmol/L"
+   },
+   {
+    "name": "Serum lipase",
+    "value": "48 U/L",
+    "ref": "0–160 U/L"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.1 mg/dL"
+   },
+   {
+    "name": "Serum total bilirubin",
+    "value": "0.7 mg/dL",
+    "ref": "0.2–1.2 mg/dL"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 340장 Mesenteric Vascular Insufficiency"
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "심방세동 + 통증에 비해 부드러운 배 → 급성 장간막허혈 의심, 복막염 없고 안정적이며 신기능이 정상이면 CT 혈관조영을 먼저 한다.",
+   "rival": [
+    "D",
+    "C"
+   ],
+   "discriminator": "복막 자극 징후가 없고 혈압이 안정적이다(D와 다름), 급성기에 장가스·원위 색전 한계가 없는 검사가 필요하고 크레아티닌이 정상이다(C와 다름).",
+   "steps": 3,
+   "chain": [
+    "심전도: 심방세동 + apixaban 중단 + 갑작스러운 극심한 통증에 비해 부드러운 배 → 색전성 급성 장간막허혈 의심",
+    "반발통·근성방어 없음 + 혈압 142/84 → 바로 개복보다 영상 확진이 먼저",
+    "크레아티닌 정상(조영제 가능) + 원위 색전·장벽 평가 필요 → CT 혈관조영(이중 초음파·X선은 부족)"
+   ],
+   "key": [
+    {
+     "item": "심전도: 불규칙하게 불규칙한 심방세동, 심실 약 118/분",
+     "why": "심장 색전원",
+     "also": []
+    },
+    {
+     "item": "she stopped taking apixaban",
+     "why": "항응고 중단 — 색전 위험↑",
+     "also": []
+    },
+    {
+     "item": "minimal tenderness to deep palpation and no guarding or rebound tenderness",
+     "why": "통증에 비해 진찰 소견이 가볍다 — 초기 장간막허혈; 동시에 복막염이 없어 바로 개복할 근거가 없다",
+     "also": []
+    },
+    {
+     "item": "Serum lactate",
+     "why": "3.4 — 장허혈을 지지하지만 정상이어도 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum lipase",
+     "why": "정상 — 급성 췌장염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum total bilirubin",
+     "why": "정상 — 담도 원인의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Serum creatinine",
+     "why": "0.9 — 조영제 CT 혈관조영을 할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "lisinopril",
+     "why": "고혈압약 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "심방세동에 항응고를 끊은 노인이 갑자기 극심한 복통을 호소하는데 배는 부드럽다 — 색전성 급성 장간막허혈을 먼저 생각한다. 복막염이 없고 안정적이며 신기능이 정상이므로 개복 전에 CT 혈관조영으로 확진하고 처치를 계획한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "반발통·근성방어 같은 복막염 징후가 있거나 수액에도 혈압이 유지되지 않으면 영상을 기다리지 않고 개복(D)해 혈관재개통과 괴사 장 절제를 한다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.gs.acute-mesenteric-ischemia.ct-angiography-first",
+  "distractors": {
+   "D": {
+    "tempting": "장간막허혈은 수술적 응급이라 바로 개복해야 한다고 생각하기 쉽다.",
+    "answer_first": "복막염·불안정 활력이 없으면 CT 혈관조영이 몇 분 안에 폐색 부위와 장 상태를 보여 주고, 혈관내 처치 여부와 수술 범위를 정한다.",
+    "discriminator": "「no guarding or rebound tenderness」 + 혈압 142/84.",
+    "when_right": "복막염 징후나 쇼크가 있을 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "신기능을 아끼려고 조영제 없는 혈관 검사를 고르기 쉽다.",
+    "answer_first": "이중 초음파는 급성기 장가스·통증으로 제한되고 SMA 근위부만 보여 원위 색전을 놓친다 — 만성 장간막허혈의 선별 검사다. 크레아티닌이 정상이라 조영제를 피할 이유도 없다.",
+    "discriminator": "「Serum creatinine」 0.9 + 급성 통증·팽만.",
+    "when_right": "식후 복통·체중감소가 수개월 지속하는 만성 장간막허혈을 선별할 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG afib · 118 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,88.8 0.6,88.5 1.2,88.2 1.8,88.0 2.4,88.0 3.0,88.1 3.6,88.2 4.2,88.4 4.8,88.7 5.4,89.0 6.0,89.2 6.6,89.5 7.2,89.7 7.8,89.9 8.4,90.1 9.0,90.2 9.6,90.2 10.2,90.2 10.8,90.2 11.4,90.2 12.0,90.2 12.6,90.3 13.2,90.3 13.8,90.4 14.4,90.5 15.0,90.7 15.6,90.9 16.2,91.1 16.8,91.3 17.4,91.4 18.0,91.6 18.6,91.6 19.2,91.6 19.8,91.5 20.4,91.3 21.0,90.9 21.6,90.6 22.2,90.1 22.8,89.6 23.4,89.1 24.0,88.6 24.6,88.1 25.2,87.7 25.8,87.4 26.4,87.2 27.0,87.2 27.6,87.3 28.2,87.6 28.8,87.9 29.4,88.4 30.0,89.0 30.6,89.7 31.2,90.3 31.8,91.0 32.4,91.6 33.0,92.1 33.6,92.5 34.2,92.7 34.8,92.9 35.4,92.8 36.0,92.7 36.6,92.4 37.2,92.0 37.8,91.5 38.4,91.0 39.0,90.6 39.6,90.5 40.2,90.7 40.8,91.1 41.4,90.3 42.0,87.0 42.6,80.4 43.2,70.4 43.8,57.6 44.4,43.7 45.0,32.1 45.6,26.3 46.2,28.7 46.8,38.8 47.4,53.4 48.0,68.7 48.6,81.9 49.2,91.5 49.8,97.1 50.4,99.5 51.0,99.3 51.6,97.6 52.2,95.3 52.8,93.3 53.4,91.8 54.0,91.0 54.6,90.6 55.2,90.6 55.8,90.8 56.4,91.0 57.0,91.2 57.6,91.5 58.2,91.7 58.8,91.8 59.4,91.9 60.0,91.8 60.6,91.7 61.2,91.4 61.8,91.1 62.4,90.7 63.0,90.2 63.6,89.6 64.2,89.0 64.8,88.5 65.4,88.0 66.0,87.6 66.6,87.3 67.2,87.1 67.8,87.1 68.4,87.2 69.0,87.4 69.6,87.8 70.2,88.2 70.8,88.8 71.4,89.4 72.0,90.0 72.6,90.5 73.2,91.0 73.8,91.3 74.4,91.5 75.0,91.6 75.6,91.4 76.2,91.1 76.8,90.6 77.4,89.9 78.0,89.1 78.6,88.1 79.2,87.1 79.8,85.9 80.4,84.8 81.0,83.6 81.6,82.4 82.2,81.3 82.8,80.3 83.4,79.3 84.0,78.3 84.6,77.5 85.2,76.7 85.8,76.0 86.4,75.3 87.0,74.8 87.6,74.3 88.2,73.8 88.8,73.5 89.4,73.2 90.0,73.0 90.6,72.9 91.2,72.9 91.8,73.0 92.4,73.3 93.0,73.8 93.6,74.3 94.2,75.1 94.8,75.9 95.4,76.9 96.0,78.0 96.6,79.2 97.2,80.4 97.8,81.6 98.4,82.8 99.0,83.9 99.6,84.9 100.2,85.8 100.8,86.5 101.4,87.0 102.0,87.4 102.6,87.6 103.2,87.7 103.8,87.6 104.4,87.4 105.0,87.2 105.6,87.0 106.2,86.7 106.8,86.5 107.4,86.4 108.0,86.4 108.6,86.5 109.2,86.8 109.8,87.1 110.4,87.6 111.0,88.2 111.6,88.8 112.2,89.5 112.8,90.2 113.4,90.9 114.0,91.5 114.6,91.9 115.2,92.3 115.8,92.5 116.4,92.6 117.0,92.6 117.6,92.4 118.2,92.1 118.8,91.8 119.4,91.4 120.0,90.9 120.6,90.4 121.2,90.0 121.8,89.6 122.4,89.3 123.0,89.0 123.6,88.9 124.2,88.8 124.8,88.8 125.4,88.8 126.0,88.9 126.6,89.0 127.2,89.1 127.8,89.3 128.4,89.4 129.0,89.4 129.6,89.5 130.2,89.5 130.8,89.4 131.4,89.4 132.0,89.4 132.6,89.3 133.2,89.3 133.8,89.4 134.4,89.5 135.0,89.6 135.6,89.9 136.2,90.1 136.8,90.5 137.4,90.8 138.0,91.2 138.6,91.5 139.2,91.8 139.8,92.1 140.4,92.2 141.0,92.3 141.6,92.2 142.2,92.1 142.8,91.8 143.4,91.4 144.0,91.1 144.6,91.1 145.2,91.4 145.8,91.1 146.4,89.1 147.0,84.1 147.6,75.6 148.2,63.9 148.8,50.1 149.4,36.6 150.0,27.1 150.6,24.9 151.2,31.1 151.8,44.0 152.4,59.8 153.0,74.9 153.6,87.1 154.2,95.4 154.8,100.0 155.4,101.6 156.0,100.9 156.6,99.1 157.2,96.9 157.8,95.0 158.4,93.5 159.0,92.6 159.6,91.9 160.2,91.3 160.8,90.9 161.4,90.5 162.0,90.1 162.6,89.7 163.2,89.5 163.8,89.3 164.4,89.1 165.0,89.1 165.6,89.1 166.2,89.1 166.8,89.2 167.4,89.2 168.0,89.3 168.6,89.4 169.2,89.4 169.8,89.4 170.4,89.3 171.0,89.3 171.6,89.2 172.2,89.1 172.8,89.0 173.4,89.0 174.0,88.9 174.6,89.0 175.2,89.1 175.8,89.2 176.4,89.4 177.0,89.7 177.6,89.9 178.2,90.2 178.8,90.5 179.4,90.7 180.0,90.8 180.6,90.8 181.2,90.7 181.8,90.3 182.4,89.9 183.0,89.2 183.6,88.3 184.2,87.3 184.8,86.1 185.4,84.8 186.0,83.4 186.6,82.0 187.2,80.5 187.8,79.1 188.4,77.8 189.0,76.6 189.6,75.5 190.2,74.7 190.8,74.0 191.4,73.5 192.0,73.2 192.6,73.1 193.2,73.1 193.8,73.3 194.4,73.6 195.0,74.0 195.6,74.5 196.2,75.0 196.8,75.5 197.4,76.1 198.0,76.6 198.6,77.1 199.2,77.6 199.8,78.1 200.4,78.6 201.0,79.1 201.6,79.7 202.2,80.2 202.8,80.8 203.4,81.4 204.0,82.1 204.6,82.7 205.2,83.4 205.8,84.1 206.4,84.8 207.0,85.4 207.6,86.1 208.2,86.6 208.8,87.1 209.4,87.5 210.0,87.8 210.6,88.0 211.2,88.1 211.8,88.2 212.4,88.3 213.0,88.3 213.6,88.3 214.2,88.4 214.8,88.5 215.4,88.6 216.0,88.9 216.6,89.4 217.2,90.3 217.8,91.6 218.4,92.6 219.0,91.8 219.6,88.1 220.2,80.8 220.8,70.1 221.4,56.8 222.0,43.3 222.6,33.2 223.2,29.9 223.8,34.7 224.4,46.2 225.0,60.9 225.6,75.0 226.2,86.2 226.8,93.7 227.4,97.4 228.0,98.1 228.6,96.8 229.2,94.3 229.8,91.8 230.4,89.7 231.0,88.4 231.6,87.8 232.2,87.8 232.8,88.0 233.4,88.5 234.0,89.0 234.6,89.6 235.2,90.2 235.8,90.7 236.4,91.2 237.0,91.6 237.6,91.9 238.2,92.0 238.8,92.1 239.4,92.0 240.0,91.9 240.6,91.7 241.2,91.4 241.8,91.1 242.4,90.8 243.0,90.5 243.6,90.2 244.2,90.0 244.8,89.8 245.4,89.7 246.0,89.6 246.6,89.6 247.2,89.5 247.8,89.5 248.4,89.4 249.0,89.4 249.6,89.3 250.2,89.1 250.8,88.8 251.4,88.5 252.0,88.2 252.6,87.8 253.2,87.4 253.8,86.9 254.4,86.4 255.0,86.0 255.6,85.5 256.2,85.1 256.8,84.7 257.4,84.4 258.0,84.1 258.6,83.7 259.2,83.4 259.8,83.1 260.4,82.7 261.0,82.3 261.6,81.8 262.2,81.2 262.8,80.7 263.4,80.4 264.0,80.4 264.6,79.9 265.2,77.8 265.8,72.7 266.4,64.1 267.0,52.1 267.6,37.7 268.2,23.3 268.8,12.5 269.4,8.7 270.0,13.4 270.6,25.3 271.2,40.8 271.8,56.2 272.4,69.1 273.0,78.4 273.6,84.2 274.2,87.0 274.8,87.6 275.4,87.1 276.0,86.3 276.6,85.7 277.2,85.6 277.8,86.0 278.4,86.6 279.0,87.3 279.6,87.9 280.2,88.4 280.8,88.8 281.4,89.0 282.0,89.2 282.6,89.3 283.2,89.3 283.8,89.4 284.4,89.4 285.0,89.4 285.6,89.5 286.2,89.5 286.8,89.6 287.4,89.7 288.0,89.7 288.6,89.8 289.2,89.8 289.8,89.8 290.4,89.7 291.0,89.6 291.6,89.4 292.2,89.2 292.8,89.0 293.4,88.7 294.0,88.4 294.6,88.2 295.2,88.0 295.8,87.8 296.4,87.8 297.0,87.8 297.6,87.9 298.2,88.0 298.8,88.2 299.4,88.4 300.0,88.7 300.6,88.8 301.2,89.0 301.8,89.0 302.4,88.9 303.0,88.6 303.6,88.1 304.2,87.5 304.8,86.6 305.4,85.5 306.0,84.3 306.6,82.9 307.2,81.4 307.8,79.9 308.4,78.3 309.0,76.8 309.6,75.4 310.2,74.1 310.8,73.0 311.4,72.1 312.0,71.4 312.6,71.0 313.2,70.9 313.8,71.0 314.4,71.3 315.0,71.8 315.6,72.5 316.2,73.4 316.8,74.3 317.4,75.3 318.0,76.4 318.6,77.4 319.2,78.4 319.8,79.4 320.4,80.3 321.0,81.2 321.6,82.0 322.2,82.7 322.8,83.4 323.4,84.0 324.0,84.6 324.6,85.2 325.2,85.8 325.8,86.3 326.4,86.8 327.0,87.3 327.6,87.8 328.2,88.2 328.8,88.6 329.4,88.8 330.0,89.0 330.6,89.2 331.2,89.2 331.8,89.2 332.4,89.0 333.0,88.9 333.6,88.7 334.2,88.4 334.8,88.2 335.4,88.1 336.0,87.9 336.6,87.9 337.2,88.0 337.8,88.2 338.4,88.4 339.0,88.8 339.6,89.3 340.2,89.8 340.8,90.4 341.4,91.0 342.0,91.5 342.6,92.0 343.2,92.4 343.8,92.8 344.4,92.9 345.0,92.9 345.6,92.8 346.2,92.5 346.8,92.1 347.4,91.6 348.0,91.0 348.6,90.4 349.2,89.7 349.8,89.1 350.4,88.5 351.0,88.0 351.6,87.7 352.2,87.4 352.8,87.3 353.4,87.4 354.0,87.5 354.6,87.8 355.2,88.2 355.8,88.6 356.4,89.1 357.0,89.6 357.6,90.0 358.2,90.4 358.8,90.8 359.4,91.0 360.0,91.2 360.6,91.3 361.2,91.3 361.8,91.3 362.4,91.2 363.0,91.1 363.6,91.0 364.2,91.1 364.8,91.5 365.4,92.3 366.0,92.6 366.6,91.3 367.2,86.9 367.8,79.0 368.4,67.8 369.0,54.2 369.6,40.6 370.2,30.7 370.8,27.8 371.4,33.2 372.0,45.1 372.6,60.0 373.2,74.3 373.8,85.7 374.4,93.2 375.0,97.1 375.6,97.9 376.2,96.8 376.8,94.6 377.4,92.3 378.0,90.4 378.6,89.3 379.2,88.9 379.8,88.9 380.4,89.3 381.0,89.8 381.6,90.4 382.2,91.0 382.8,91.6 383.4,92.1 384.0,92.5 384.6,92.8 385.2,93.0 385.8,93.0 386.4,92.8 387.0,92.5 387.6,92.1 388.2,91.6 388.8,91.0 389.4,90.4 390.0,89.7 390.6,89.1 391.2,88.6 391.8,88.1 392.4,87.7 393.0,87.5 393.6,87.4 394.2,87.4 394.8,87.5 395.4,87.8 396.0,88.1 396.6,88.4 397.2,88.7 397.8,89.1 398.4,89.3 399.0,89.5 399.6,89.6 400.2,89.6 400.8,89.5 401.4,89.3 402.0,88.9 402.6,88.5 403.2,87.9 403.8,87.3 404.4,86.6 405.0,85.9 405.6,85.2 406.2,84.4 406.8,83.6 407.4,82.8 408.0,82.0 408.6,81.1 409.2,80.3 409.8,79.4 410.4,78.5 411.0,77.6 411.6,76.7 412.2,75.8 412.8,74.9 413.4,74.1 414.0,73.3 414.6,72.6 415.2,72.0 415.8,71.6 416.4,71.3 417.0,71.3 417.6,71.5 418.2,71.9 418.8,72.5 419.4,73.4 420.0,74.4 420.6,75.7 421.2,77.1 421.8,78.5 422.4,80.1 423.0,81.6 423.6,83.1 424.2,84.5 424.8,85.7 425.4,86.8 426.0,87.7 426.6,88.4 427.2,88.9 427.8,89.1 428.4,89.2 429.0,89.2 429.6,89.0 430.2,88.7 430.8,88.4 431.4,88.1 432.0,87.7 432.6,87.5 433.2,87.3 433.8,87.3 434.4,87.3 435.0,87.4 435.6,87.6 436.2,87.9 436.8,88.3 437.4,88.7 438.0,89.1 438.6,89.5 439.2,89.9 439.8,90.2 440.4,90.4 441.0,90.6 441.6,90.7 442.2,90.7 442.8,90.7 443.4,90.7 444.0,90.7 444.6,90.6 445.2,90.6 445.8,90.6 446.4,90.6 447.0,90.6 447.6,90.7 448.2,90.8 448.8,90.9 449.4,91.0 450.0,91.1 450.6,91.2 451.2,91.1 451.8,91.1 452.4,90.9 453.0,90.7 453.6,90.4 454.2,90.0 454.8,89.6 455.4,89.1 456.0,88.7 456.6,88.3 457.2,87.9 457.8,87.6 458.4,87.5 459.0,87.4 459.6,87.5 460.2,87.7 460.8,88.1 461.4,88.5 462.0,89.1 462.6,89.7 463.2,90.4 463.8,91.0 464.4,91.6 465.0,92.1 465.6,92.5 466.2,92.8 466.8,93.1 467.4,93.3 468.0,93.8 468.6,94.4 469.2,94.1 469.8,91.7 470.4,86.1 471.0,76.8 471.6,64.3 472.2,49.9 472.8,36.3 473.4,27.3 474.0,25.9 474.6,32.9 475.2,45.9 475.8,61.3 476.4,75.6 477.0,86.7 477.6,94.1 478.2,97.9 478.8,98.9 479.4,97.9 480.0,96.1 480.6,94.1 481.2,92.5 481.8,91.5 482.4,90.9 483.0,90.6 483.6,90.5 484.2,90.4 484.8,90.4 485.4,90.4 486.0,90.4 486.6,90.5 487.2,90.5 487.8,90.7 488.4,90.8 489.0,91.0 489.6,91.1 490.2,91.3 490.8,91.4 491.4,91.4 492.0,91.4 492.6,91.3 493.2,91.1 493.8,90.8 494.4,90.5 495.0,90.0 495.6,89.5 496.2,89.0 496.8,88.5 497.4,88.0 498.0,87.6 498.6,87.3 499.2,87.1 499.8,86.9 500.4,87.0 501.0,87.1 501.6,87.3 502.2,87.6 502.8,88.0 503.4,88.4 504.0,88.8 504.6,89.1 505.2,89.4 505.8,89.5 506.4,89.4 507.0,89.1 507.6,88.7 508.2,88.0 508.8,87.1 509.4,86.0 510.0,84.8 510.6,83.5 511.2,82.1 511.8,80.6 512.4,79.1 513.0,77.7 513.6,76.4 514.2,75.2 514.8,74.2 515.4,73.3 516.0,72.7 516.6,72.2 517.2,71.9 517.8,71.9 518.4,71.9 519.0,72.2 519.6,72.6 520.2,73.1 520.8,73.6 521.4,74.3 522.0,75.0 522.6,75.8 523.2,76.6 523.8,77.4 524.4,78.2 525.0,79.1 525.6,80.0 526.2,81.0 526.8,81.9 527.4,82.9 528.0,83.9 528.6,84.9 529.2,85.8 529.8,86.7 530.4,87.5 531.0,88.2 531.6,88.9 532.2,89.4 532.8,89.7 533.4,89.9 534.0,90.0 534.6,89.9 535.2,89.7 535.8,89.4 536.4,89.0 537.0,88.6 537.6,88.2 538.2,87.8 538.8,87.5 539.4,87.2 540.0,87.1 540.6,87.1 541.2,87.2 541.8,87.5 542.4,87.9 543.0,88.4 543.6,89.0 544.2,89.7 544.8,90.3 545.4,91.0 546.0,91.6 546.6,92.1 547.2,92.5 547.8,92.8 548.4,93.0 549.0,93.5 549.6,94.1 550.2,94.5 550.8,93.4 551.4,89.4 552.0,82.0 552.6,71.0 553.2,57.3 553.8,42.9 554.4,31.2 555.0,26.0 555.6,29.1 556.2,39.6 556.8,54.3 557.4,69.4 558.0,82.2 558.6,91.2 559.2,96.6 559.8,98.7 560.4,98.5 561.0,96.8 561.6,94.7 562.2,92.8 562.8,91.4 563.4,90.6 564.0,90.1 564.6,89.9 565.2,89.9 565.8,89.9 566.4,89.9 567.0,90.0 567.6,90.1 568.2,90.3 568.8,90.5 569.4,90.7 570.0,91.0 570.6,91.3 571.2,91.5 571.8,91.7 572.4,91.9 573.0,91.9 573.6,91.9 574.2,91.7 574.8,91.5 575.4,91.1 576.0,90.7 576.6,90.1 577.2,89.6 577.8,89.0 578.4,88.4 579.0,87.9 579.6,87.4 580.2,87.1 580.8,86.8 581.4,86.7 582.0,86.7 582.6,86.9 583.2,87.1 583.8,87.5 584.4,87.9 585.0,88.3 585.6,88.6 586.2,88.9 586.8,89.1 587.4,89.1 588.0,89.0 588.6,88.7 589.2,88.1 589.8,87.4 590.4,86.5 591.0,85.4 591.6,84.2 592.2,82.9 592.8,81.5 593.4,80.1 594.0,78.8 594.6,77.5 595.2,76.2 595.8,75.2 596.4,74.2 597.0,73.5 597.6,72.9 598.2,72.5 598.8,72.2 599.4,72.2 600.0,72.2 600.6,72.4 601.2,72.8 601.8,73.2 602.4,73.7 603.0,74.3 603.6,74.9 604.2,75.6 604.8,76.4 605.4,77.2 606.0,78.1 606.6,79.0 607.2,80.0 607.8,81.0 608.4,82.1 609.0,83.2 609.6,84.3 610.2,85.3 610.8,86.4 611.4,87.3 612.0,88.2 612.6,88.9 613.2,89.6 613.8,90.0 614.4,90.3 615.0,90.5 615.6,90.5 616.2,90.3 616.8,90.0 617.4,89.6 618.0,89.1 618.6,88.6 619.2,88.1 619.8,87.7 620.4,87.3 621.0,87.1 621.6,86.9 622.2,87.0 622.8,87.2 623.4,87.5 624.0,87.9 624.6,88.4 625.2,89.0 625.8,89.6 626.4,90.3 627.0,90.9 627.6,91.5 628.2,91.9 628.8,92.3 629.4,92.5 630.0,92.6 630.6,92.5 631.2,92.4 631.8,92.1 632.4,91.7 633.0,91.3 633.6,90.9 634.2,90.5 634.8,90.1 635.4,90.0 636.0,90.3 636.6,90.9 637.2,91.0 637.8,89.2 638.4,84.2 639.0,75.8 639.6,64.1 640.2,50.4 640.8,37.2 641.4,28.4 642.0,27.1 642.6,33.9 643.2,46.8 643.8,62.1 644.4,76.3 645.0,87.3 645.6,94.5 646.2,98.1 646.8,98.9 647.4,97.8 648.0,95.8 648.6,93.7 649.2,92.2 649.8,91.3 650.4,91.0 651.0,91.0 651.6,91.3 652.2,91.6 652.8,91.9 653.4,92.1 654.0,92.3 654.6,92.4 655.2,92.3 655.8,92.1 656.4,91.8 657.0,91.4 657.6,90.8 658.2,90.3 658.8,89.6 659.4,89.0 660.0,88.4 660.6,87.9 661.2,87.5 661.8,87.2 662.4,87.0 663.0,87.0 663.6,87.1 664.2,87.4 664.8,87.8 665.4,88.3 666.0,88.8 666.6,89.4 667.2,90.0 667.8,90.5 668.4,91.0 669.0,91.3 669.6,91.5 670.2,91.5 670.8,91.4 671.4,91.1 672.0,90.7 672.6,90.1 673.2,89.4 673.8,88.6 674.4,87.8 675.0,86.8 675.6,85.9 676.2,84.9 676.8,83.9 677.4,83.0 678.0,82.1 678.6,81.2 679.2,80.3 679.8,79.4 680.4,78.6 681.0,77.7 681.6,76.9 682.2,76.1 682.8,75.3 683.4,74.6 684.0,73.9 684.6,73.3 685.2,72.9 685.8,72.6 686.4,72.7 687.0,73.3 687.6,74.2 688.2,74.5 688.8,72.7 689.4,67.8 690.0,59.5 690.6,48.2 691.2,35.4 691.8,23.9 692.4,17.6 693.0,19.1 693.6,28.5 694.2,43.4 694.8,59.8 695.4,74.4 696.0,85.5 696.6,92.6 697.2,96.0 697.8,96.6 698.4,95.2 699.0,92.9 699.6,90.6 700.2,88.7 700.8,87.4 701.4,86.7 702.0,86.3 702.6,86.1 703.2,86.2 703.8,86.3 704.4,86.6 705.0,87.0 705.6,87.6 706.2,88.1 706.8,88.8 707.4,89.4 708.0,90.1 708.6,90.7 709.2,91.2 709.8,91.7 710.4,92.0 711.0,92.2 711.6,92.2 712.2,92.2 712.8,92.0 713.4,91.8 714.0,91.4 714.6,91.1 715.2,90.7 715.8,90.4 716.4,90.1 717.0,89.8 717.6,89.5 718.2,89.3 718.8,89.2 719.4,89.0 720.0,88.9 720.6,88.8 721.2,88.7 721.8,88.5 722.4,88.2 723.0,87.9 723.6,87.5 724.2,87.1 724.8,86.5 725.4,85.9 726.0,85.2 726.6,84.5 727.2,83.7 727.8,82.9 728.4,82.2 729.0,81.5 729.6,80.8 730.2,80.2 730.8,79.6 731.4,79.1 732.0,78.7 732.6,78.3 733.2,77.9 733.8,77.6 734.4,77.3 735.0,77.0 735.6,76.6 736.2,76.3 736.8,75.9 737.4,75.6 738.0,75.2 738.6,74.9 739.2,74.6 739.8,74.3 740.4,74.1 741.0,74.1 741.6,74.2 742.2,74.4 742.8,74.8 743.4,75.4 744.0,76.2 744.6,77.1 745.2,78.2 745.8,79.4 746.4,80.6 747.0,81.9 747.6,83.3 748.2,84.6 748.8,85.8 749.4,87.0 750.0,88.0 750.6,88.8 751.2,89.5 751.8,90.1 752.4,90.4 753.0,90.7 753.6,90.8 754.2,90.7 754.8,90.7 755.4,90.5 756.0,90.3 756.6,90.2 757.2,90.0 757.8,89.9 758.4,89.8 759.0,89.7 759.6,89.7 760.2,89.7 760.8,89.8 761.4,89.8 762.0,89.8 762.6,89.7 763.2,89.7 763.8,89.6 764.4,89.5 765.0,89.3 765.6,89.1 766.2,88.9 766.8,88.7 767.4,88.6 768.0,88.4 768.6,88.4 769.2,88.4 769.8,88.5 770.4,88.7 771.0,89.1 771.6,89.4 772.2,89.9 772.8,90.4 773.4,90.9 774.0,91.4 774.6,91.9 775.2,92.3 775.8,92.6 776.4,92.8 777.0,92.8 777.6,92.7 778.2,92.5 778.8,92.4 779.4,92.5 780.0,92.8 780.6,92.4 781.2,90.1 781.8,84.6 782.4,75.6 783.0,63.4 783.6,49.2 784.2,35.6 784.8,26.4 785.4,24.8 786.0,31.6 786.6,44.7 787.2,60.3 787.8,75.1 788.4,86.8 789.0,94.7 789.6,99.0 790.2,100.3 790.8,99.6 791.4,97.8 792.0,95.8 792.6,94.1 793.2,93.0 793.8,92.2 794.4,91.8 795.0,91.5 795.6,91.2 796.2,91.0 796.8,90.7 797.4,90.5 798.0,90.3 798.6,90.2 799.2,90.1 799.8,90.1 800.4,90.1 801.0,90.1 801.6,90.1 802.2,90.1 802.8,90.0 803.4,90.0 804.0,89.8 804.6,89.7 805.2,89.5 805.8,89.2 806.4,89.0 807.0,88.7 807.6,88.5 808.2,88.3 808.8,88.1 809.4,88.0 810.0,88.0 810.6,88.1 811.2,88.2 811.8,88.5 812.4,88.8 813.0,89.2 813.6,89.6 814.2,90.0 814.8,90.3 815.4,90.5 816.0,90.6 816.6,90.5 817.2,90.3 817.8,89.8 818.4,89.2 819.0,88.3 819.6,87.3 820.2,86.0 820.8,84.7 821.4,83.2 822.0,81.7 822.6,80.2 823.2,78.7 823.8,77.3 824.4,76.0 825.0,74.9 825.6,74.0 826.2,73.2 826.8,72.7 827.4,72.3 828.0,72.2 828.6,72.3 829.2,72.5 829.8,72.8 830.4,73.3 831.0,73.8 831.6,74.4 832.2,75.1 832.8,75.7 833.4,76.4 834.0,77.1 834.6,77.8 835.2,78.5 835.8,79.2 836.4,79.9 837.0,80.7 837.6,81.4 838.2,82.2 838.8,83.1 839.4,84.4 840.0,85.9 840.6,87.3 841.2,87.2 841.8,84.2 842.4,77.6 843.0,67.5 843.6,54.6 844.2,40.9 844.8,30.1 845.4,25.7 846.0,29.5 846.6,40.4 847.2,55.1 847.8,69.9 848.4,82.1 849.0,90.7 849.6,95.6 850.2,97.4 850.8,96.9 851.4,95.2 852.0,93.3 852.6,91.7 853.2,90.8 853.8,90.5 854.4,90.7 855.0,91.1 855.6,91.6 856.2,92.1 856.8,92.5 857.4,92.8 858.0,92.9 858.6,93.0 859.2,92.8 859.8,92.5 860.4,92.1 861.0,91.6 861.6,91.0 862.2,90.4 862.8,89.7 863.4,89.1 864.0,88.5 864.6,88.0 865.2,87.7 865.8,87.4 866.4,87.3 867.0,87.4 867.6,87.5 868.2,87.8 868.8,88.1 869.4,88.5 870.0,88.9 870.6,89.3 871.2,89.7 871.8,90.0 872.4,90.2 873.0,90.4 873.6,90.4 874.2,90.3 874.8,90.1 875.4,89.8 876.0,89.4 876.6,88.9 877.2,88.4 877.8,87.8 878.4,87.2 879.0,86.6 879.6,85.9 880.2,85.2 880.8,84.5 881.4,83.8 882.0,83.0 882.6,82.1 883.2,81.2 883.8,80.3 884.4,79.3 885.0,78.2 885.6,77.2 886.2,76.2 886.8,75.5 887.4,75.2 888.0,75.1 888.6,74.2 889.2,71.2 889.8,65.0 890.4,55.6 891.0,43.2 891.6,29.4 892.2,17.3 892.8,10.6 893.4,11.9 894.0,21.4 894.6,36.5 895.2,53.2 895.8,68.4 896.4,80.1 897.0,87.9 897.6,92.2 898.2,93.7 898.8,93.3 899.4,91.9 900.0,90.4\"/><text class=\"cap\" x=\"4\" y=\"193\">afib · 118 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0288",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "Growing Drowsiness, a Respiratory Rate of 8 and Absent Knee Jerks Ten Hours After a Cesarean Delivery at 35 Weeks in a 31-Year-Old With Scant Urine Output",
+  "type": "Growing Drowsiness, a Respiratory Rate of 8 and Absent Knee Jerks Ten Hours After a Cesarean Delivery at 35 Weeks in a 31-Year-Old With Scant Urine Output",
+  "difficulty": 4,
+  "created": "2026-11-19",
+  "vignette": "A 31-year-old woman, gravida 1, para 1, is evaluated in the obstetric unit 10 hours after a cesarean delivery at 35 weeks' gestation for preeclampsia with severe features. An intravenous infusion of magnesium sulfate, 2 g/h, was begun 16 hours ago and is continuing. Her urine output has been 10 to 15 mL/h for the past 4 hours. Over the past hour, she has become increasingly drowsy. She received one dose of intravenous morphine, 4 mg, 6 hours ago for incisional pain. She has had no seizures. Her vital signs are shown. She opens her eyes to voice and answers questions slowly. The pupils are 4 mm and reactive to light. Patellar and biceps reflexes are absent bilaterally. The lungs are clear to auscultation. The uterine fundus is firm at the umbilicus, and lochia is normal in amount. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate intravenous medication at this time?",
+  "options": [
+   "Furosemide",
+   "Hydralazine",
+   "Calcium gluconate",
+   "Naloxone",
+   "Lorazepam"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계. ① 마그네슘 2 g/h 지속 + 핍뇨·크레아티닌 상승 → 신배설 감소로 축적. ② 심부건반사 소실 + 호흡수 8 → 마그네슘 독성. ③ 동공 4 mm 반응·모르핀 소량 → 아편 독성 가능성 낮음 → 주입 중단 + calcium gluconate, 호흡 보조.\n- 오답감별:\n  - (A) furosemide 는 전자간증 핍뇨의 원인(혈관 내 용적·신혈류 감소)을 고치지 못하고 호흡억제를 즉시 되돌리지 못한다.\n  - (B) 혈압 148/94 는 중증 범위(≥160/110)가 아니다 — 급성 강압이 필요 없다.\n  - (D) 모르핀은 6시간 전 4 mg 한 번, 동공 4 mm 반응 — 아편은 반사 소실을 설명하지 못한다.\n  - (E) 경련이 없다 — benzodiazepine 은 호흡억제를 더한다.\n- 임상핵심: 마그네슘 주입 중에는 반사·호흡수·소변량을 본다 — 반사 소실 → 호흡억제 → 심정지 순서. 핍뇨·신기능 저하면 쌓이므로, 반사가 없어지면 주입을 멈추고 호흡이 억제되면 calcium gluconate.\n- 출처: Harrison's Principles of Internal Medicine, 22e. 491장 Medical Disorders During Pregnancy.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① 마그네슘 2 g/h 지속 + 핍뇨·크레아티닌 상승 → 신배설 감소로 축적. ② 심부건반사 소실 + 호흡수 8 → 마그네슘 독성. ③ 동공 4 mm 반응·모르핀 소량 → 아편 독성 가능성 낮음 → 주입 중단 + calcium gluconate, 호흡 보조."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) furosemide 는 전자간증 핍뇨의 원인(혈관 내 용적·신혈류 감소)을 고치지 못하고 호흡억제를 즉시 되돌리지 못한다.\n(B) 혈압 148/94 는 중증 범위(≥160/110)가 아니다 — 급성 강압이 필요 없다.\n(D) 모르핀은 6시간 전 4 mg 한 번, 동공 4 mm 반응 — 아편은 반사 소실을 설명하지 못한다.\n(E) 경련이 없다 — benzodiazepine 은 호흡억제를 더한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "마그네슘 주입 중에는 반사·호흡수·소변량을 본다 — 반사 소실 → 호흡억제 → 심정지 순서. 핍뇨·신기능 저하면 쌓이므로, 반사가 없어지면 주입을 멈추고 호흡이 억제되면 calcium gluconate."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 491장 Medical Disorders During Pregnancy."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 491장 Medical Disorders During Pregnancy)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "64 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "8 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "148/94 mm Hg"
+   },
+   {
+    "name": "Oxygen saturation",
+    "value": "93% on 2 L/min of oxygen by nasal cannula"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum creatinine",
+    "value": "1.6 mg/dL",
+    "ref": "0.5–1.0 mg/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "132,000 /μL",
+    "ref": "150,000–400,000 /μL"
+   },
+   {
+    "name": "Serum AST",
+    "value": "46 U/L",
+    "ref": "10–40 U/L"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "104 mg/dL",
+    "ref": "70–140 mg/dL"
+   },
+   {
+    "name": "Serum magnesium",
+    "value": "Pending"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 491장 Medical Disorders During Pregnancy"
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "마그네슘 주입 중 핍뇨·크레아티닌 상승으로 마그네슘이 쌓여 반사 소실·호흡억제가 생겼으면 주입을 멈추고 calcium gluconate 를 준다.",
+   "rival": [
+    "D",
+    "A"
+   ],
+   "discriminator": "반사 소실 + 핍뇨 + 지속 마그네슘 주입(아편 독성으로 설명 안 됨), 동공 4 mm 반응·모르핀 6시간 전 소량(D 가능성 낮음), 핍뇨는 원인이 아니라 축적의 이유(A).",
+   "steps": 3,
+   "chain": [
+    "마그네슘 2 g/h 지속 + 소변량 10–15 mL/h·크레아티닌 1.6 → 신배설 감소로 마그네슘 축적",
+    "슬개·이두근 반사 소실 + 호흡수 8 + 졸림 → 마그네슘 독성(반사 소실 뒤 호흡억제)",
+    "동공 4 mm 반응·모르핀 6시간 전 4 mg 한 번 → 아편 독성 가능성 낮음 → 주입 중단 + calcium gluconate"
+   ],
+   "key": [
+    {
+     "item": "An intravenous infusion of magnesium sulfate, 2 g/h",
+     "why": "지속 주입 — 축적의 원천",
+     "also": []
+    },
+    {
+     "item": "Her urine output has been 10 to 15 mL/h for the past 4 hours",
+     "why": "마그네슘은 신장으로 배설된다 — 핍뇨면 쌓인다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine",
+     "why": "1.6 — 배설 감소",
+     "also": []
+    },
+    {
+     "item": "Patellar and biceps reflexes are absent bilaterally",
+     "why": "마그네슘 독성의 첫 징후",
+     "also": []
+    },
+    {
+     "item": "Respirations",
+     "why": "8 /min — 반사 소실 다음 단계인 호흡억제",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The pupils are 4 mm and reactive to light",
+     "why": "바늘구멍 동공이 아니다 — 아편 독성(D) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She received one dose of intravenous morphine, 4 mg, 6 hours ago",
+     "why": "소량·6시간 전 — 지금의 호흡억제를 설명하기 어렵다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Blood pressure",
+     "why": "148/94 — 중증 범위가 아니어서 급성 강압제(B)가 필요 없다",
+     "also": []
+    },
+    {
+     "item": "She has had no seizures",
+     "why": "항경련 benzodiazepine(E)의 적응이 없다",
+     "also": []
+    },
+    {
+     "item": "Serum magnesium",
+     "why": "결과 대기 — 임상 독성이 분명하면 결과를 기다리지 않는다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "전자간증으로 마그네슘을 지속 주입받던 산모가 핍뇨·크레아티닌 상승으로 마그네슘이 쌓여 반사 소실과 호흡수 8 회가 생겼다. 아편 독성은 동공·용량으로 가능성이 낮다 — 주입을 멈추고 calcium gluconate 로 길항한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "반사가 남아 있고 바늘구멍 동공과 함께 최근 아편을 반복 투여받은 뒤 호흡이 느려졌다면 naloxone(D)이 맞다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.preeclampsia.magnesium-toxicity-recognition",
+  "distractors": {
+   "D": {
+    "tempting": "수술 뒤 졸리고 호흡이 느리면 진통제(모르핀) 탓으로 먼저 생각한다.",
+    "answer_first": "모르핀은 6시간 전 4 mg 한 번이었고 동공이 4 mm 로 반응한다. 아편은 심부건반사 소실을 설명하지 못한다 — 반사 소실 + 핍뇨 + 지속 마그네슘 주입이 마그네슘 독성을 가리킨다.",
+    "discriminator": "「The pupils are 4 mm and reactive to light」 + 「Patellar and biceps reflexes are absent bilaterally」.",
+    "when_right": "반사가 유지되고 바늘구멍 동공이 있으며 최근 아편을 반복 투여받았을 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "소변이 적으니 이뇨제로 소변을 늘려 마그네슘을 빼겠다고 생각하기 쉽다.",
+    "answer_first": "지금 생명을 위협하는 것은 호흡억제다 — 마그네슘 효과를 즉시 길항하는 것은 칼슘이다. 전자간증의 핍뇨는 혈관 내 용적·신혈류 감소 때문이라 이뇨제가 원인을 고치지 못한다.",
+    "discriminator": "호흡수 8 + 반사 소실 — 즉각 길항이 필요하다.",
+    "when_right": "폐부종(수포음·산소포화도 저하)이 생겼을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0289",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Restlessness, Drenching Sweats and Jerking Ankles the Morning After Starting a Cough Syrup in a 36-Year-Old Who Has Taken the Same Antidepressant for a Year",
+  "type": "Restlessness, Drenching Sweats and Jerking Ankles the Morning After Starting a Cough Syrup in a 36-Year-Old Who Has Taken the Same Antidepressant for a Year",
+  "difficulty": 4,
+  "created": "2026-11-19",
+  "vignette": "A 36-year-old woman is brought to the emergency department 8 hours after she became restless and confused. She has major depressive disorder that has been treated with phenelzine for 1 year. Yesterday evening, she began taking an over-the-counter cough syrup containing dextromethorphan for an upper respiratory tract infection. She takes no other medications and does not use alcohol or illicit drugs. Her vital signs are shown. She is agitated, diaphoretic, and oriented only to person. The pupils are 7 mm and reactive to light. The mucous membranes are moist. Bowel sounds are hyperactive, and she has had three loose stools since arrival. Patellar reflexes are 4+, with sustained clonus at both ankles; muscle tone is increased more in the legs than in the arms, and there is no lead-pipe rigidity. Laboratory results are shown. Phenelzine and the cough syrup are held, and she is given intravenous fluids, intravenous lorazepam, and external cooling. One hour later, she remains agitated with sustained ankle clonus, and her temperature is 38.9 °C (102 °F).",
+  "question": "Which of the following is the most appropriate pharmacotherapy at this time?",
+  "options": [
+   "Bromocriptine",
+   "Cyproheptadine",
+   "Dantrolene",
+   "Haloperidol",
+   "Physostigmine"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계. ① phenelzine(MAOI) + dextromethorphan → 세로토닌 과다 조합, 하룻밤 만에 발병. ② 지속 발목 클로누스·과반사(하지 우세)·설사·산동·발한, 납관 강직 없음 → 세로토닌 증후군. ③ 원인약 중단·lorazepam·냉각 뒤에도 지속, 39 °C → cyproheptadine(5-HT2A 길항).\n- 오답감별:\n  - (A) bromocriptine 은 NMS(도파민 길항제 노출·납관 강직·반사 저하)용 — 세로토닌 증후군을 악화시킬 수 있다.\n  - (C) dantrolene 은 악성고열(마취 노출)용 — 세로토닌 증후군에 효과가 입증되지 않았다.\n  - (D) haloperidol 은 항콜린·체온조절 장애로 고열을 악화시키고 NMS 를 겹칠 수 있다.\n  - (E) physostigmine 은 항콜린 독성(마른 피부·점막, 장음 감소, 요저류)용 — 이 환자는 발한·촉촉한 점막·설사가 있다.\n- 임상핵심: 클로누스·과반사 = 세로토닌 증후군, 납관 강직·반사 저하 = NMS — 세로토닌 증후군은 원인약 중단·benzodiazepine·냉각, 지속하면 cyproheptadine, 체온 > 41 °C 면 진정·비탈분극 근이완·삽관(해열제는 효과 없음).\n- 출처: Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계. ① phenelzine(MAOI) + dextromethorphan → 세로토닌 과다 조합, 하룻밤 만에 발병. ② 지속 발목 클로누스·과반사(하지 우세)·설사·산동·발한, 납관 강직 없음 → 세로토닌 증후군. ③ 원인약 중단·lorazepam·냉각 뒤에도 지속, 39 °C → cyproheptadine(5-HT2A 길항)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) bromocriptine 은 NMS(도파민 길항제 노출·납관 강직·반사 저하)용 — 세로토닌 증후군을 악화시킬 수 있다.\n(C) dantrolene 은 악성고열(마취 노출)용 — 세로토닌 증후군에 효과가 입증되지 않았다.\n(D) haloperidol 은 항콜린·체온조절 장애로 고열을 악화시키고 NMS 를 겹칠 수 있다.\n(E) physostigmine 은 항콜린 독성(마른 피부·점막, 장음 감소, 요저류)용 — 이 환자는 발한·촉촉한 점막·설사가 있다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "클로누스·과반사 = 세로토닌 증후군, 납관 강직·반사 저하 = NMS — 세로토닌 증후군은 원인약 중단·benzodiazepine·냉각, 지속하면 cyproheptadine, 체온 > 41 °C 면 진정·비탈분극 근이완·삽관(해열제는 효과 없음)."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "39.0 °C (102.2 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "128 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "22 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "168/96 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Serum creatine kinase",
+    "value": "620 U/L",
+    "ref": "25–200 U/L"
+   },
+   {
+    "name": "Serum sodium",
+    "value": "139 mEq/L",
+    "ref": "136–145 mEq/L"
+   },
+   {
+    "name": "Serum glucose",
+    "value": "118 mg/dL",
+    "ref": "70–140 mg/dL"
+   },
+   {
+    "name": "Leukocyte count",
+    "value": "11,200 /μL",
+    "ref": "4,500–11,000 /μL"
+   }
+  ],
+  "appendix": {
+   "참고문헌": [
+    "Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose"
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "MAOI + dextromethorphan 뒤 클로누스·과반사·자율신경 과활성이면 세로토닌 증후군이고, 원인약 중단·benzodiazepine 뒤에도 남으면 cyproheptadine 을 쓴다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "도파민 길항제 노출 없음·하룻밤 만의 발병·클로누스·과반사·납관 강직 없음(NMS 의 bromocriptine 과 다름), 마취제 노출 없음(악성고열의 dantrolene 과 다름).",
+   "steps": 3,
+   "chain": [
+    "phenelzine(MAOI) 1년 + 어제 dextromethorphan 시작 → 세로토닌을 올리는 약 조합, 수시간 내 발병",
+    "지속 발목 클로누스·4+ 반사(하지 우세)·설사·산동·발한, 납관 강직 없음 → 세로토닌 증후군(NMS·항콜린 독성 가능성 낮음)",
+    "원인약 중단·lorazepam·냉각 뒤에도 클로누스·초조 지속, 체온 39 °C → 5-HT2A 길항제 cyproheptadine 추가"
+   ],
+   "key": [
+    {
+     "item": "phenelzine",
+     "why": "MAO 억제제 — 세로토닌 분해 차단",
+     "also": []
+    },
+    {
+     "item": "cough syrup containing dextromethorphan",
+     "why": "세로토닌 재흡수 억제 — MAOI 와 병용 금기",
+     "also": []
+    },
+    {
+     "item": "sustained clonus at both ankles",
+     "why": "세로토닌 증후군의 가장 특징적인 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no lead-pipe rigidity",
+     "why": "NMS 의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The mucous membranes are moist",
+     "why": "발한·설사와 함께 항콜린 독성(E) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She takes no other medications",
+     "why": "도파민 길항제(NMS)·마취제(악성고열) 노출이 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "One hour later, she remains agitated with sustained ankle clonus",
+     "why": "1차 처치(중단·benzodiazepine·냉각)에 반응하지 않음 — 길항제를 더할 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum creatine kinase",
+     "why": "620 — 근 과활동으로 경미하게 오를 수 있다, NMS 처럼 수천 이상은 아니다",
+     "also": []
+    }
+   ],
+   "summary": "MAOI 에 dextromethorphan 을 더한 뒤 하룻밤 만에 클로누스·과반사·발한·설사·고열이 생겼다 — 세로토닌 증후군이다. 원인약 중단·benzodiazepine·냉각 뒤에도 지속하므로 5-HT2A 길항제 cyproheptadine 을 더한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "항정신병약(haloperidol 등)을 시작한 뒤 며칠에 걸쳐 납관 강직·반사 저하·고열·CK 수천 이상이 생기면 NMS 이고 bromocriptine(A)을 고려한다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.psy.serotonin-syndrome.cyproheptadine-after-benzodiazepine",
+  "distractors": {
+   "A": {
+    "tempting": "고열 + 의식 변화 + 근긴장 증가 + CK 상승은 신경이완제악성증후군(NMS)과 겹친다.",
+    "answer_first": "NMS 는 도파민 길항제를 쓴 뒤 며칠에 걸쳐 생기고 납관 강직·반사 저하가 특징이다. 이 환자는 도파민 길항제를 먹지 않았고, 하룻밤 만에 클로누스·과반사·설사가 생겼다 — 세로토닌 과다다. bromocriptine 은 세로토닌 증후군을 악화시킬 수 있다.",
+    "discriminator": "「sustained clonus at both ankles」 + 「there is no lead-pipe rigidity」 + 항정신병약 없음.",
+    "when_right": "항정신병약 시작 뒤 납관 강직·서동·반사 저하와 고열이 서서히 생길 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "고열과 근긴장 증가 → 근육의 열 생산을 줄이는 dantrolene 이 떠오른다.",
+    "answer_first": "dantrolene 은 악성고열(흡입마취제·succinylcholine 노출)의 해독제다. 세로토닌 증후군의 고열은 중추성 근 과활동에서 오며 dantrolene 의 효과는 입증되지 않았다 — 39 °C 의 중등증에서는 5-HT2A 길항제가 맞다.",
+    "discriminator": "마취 노출 없음 + 클로누스·과반사(세로토닌성).",
+    "when_right": "흡입마취·succinylcholine 뒤 턱 강직·호기말 CO2 상승·고열이 생길 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
  }
 ];

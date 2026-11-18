@@ -1,42 +1,42 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3994,
+  "total": 4008,
   "byType": {
+   "usmle": 276,
+   "paper": 953,
    "kmle": 1888,
    "concept": 172,
-   "usmle": 270,
-   "paper": 945,
    "imaging": 702,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 345,
-   "Nephrology": 254,
-   "Infectious Disease": 236,
-   "Pediatrics": 225,
-   "Obstetrics & Gynecology": 165,
+   "Cardiology": 346,
+   "Nephrology": 255,
+   "Infectious Disease": 237,
+   "Pediatrics": 226,
+   "Obstetrics & Gynecology": 166,
    "Rheumatology": 147,
-   "Psychiatry": 142,
+   "Pathology": 143,
+   "Psychiatry": 143,
    "Neurology": 141,
-   "Pathology": 141,
-   "Hematology-Oncology": 131,
+   "Hematology-Oncology": 132,
    "Orthopedics": 131,
    "General Surgery": 126,
    "Endocrinology": 124,
    "Dermatology": 123,
    "Gastroenterology": 123,
    "Ophthalmology": 123,
+   "Surgery": 123,
    "Pulmonology": 122,
-   "Surgery": 121,
    "Hematology": 115,
    "순환기": 107,
-   "Laboratory Medicine": 96,
+   "Laboratory Medicine": 97,
    "산부인과": 86,
    "호흡기": 46,
    "소화기": 42,
@@ -53,13 +53,13 @@ window.MEDKOS_INDEX = {
    "외과": 26,
    "예방의학·역학": 25,
    "Pharmacology": 23,
-   "Biochemistry": 21,
+   "Biochemistry": 22,
    "Microbiology": 21,
    "약리": 19,
+   "Immunology": 18,
    "Internal Medicine": 18,
    "근골격·류마티스": 18,
    "정신과": 18,
-   "Immunology": 17,
    "안과": 13,
    "영상의학": 12,
    "이비인후과": 12,
@@ -77,13 +77,270 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2840,
-   "medium": 1150,
+   "high": 2846,
+   "medium": 1158,
    "low": 4
   },
-  "tagCount": 4899
+  "tagCount": 4902
  },
  "docs": [
+  {
+   "id": "usmle-2026-0289",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Restlessness, Drenching Sweats and Jerking Ankles the Morning After Starting a Cough Syrup in a 36-Year-Old Who Has Taken the Same Antidepressant for a Year",
+   "tags": [
+    "serotonin-syndrome",
+    "maoi",
+    "drug-interaction",
+    "toxicology",
+    "psychiatry"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose)",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/usmle/usmle-2026-0289.md",
+   "snippet": "A 36 year old woman is brought to the emergency department 8 hours after she became restless and confused. She has major depressive disorder that has been treated with phenelzine for 1 year. Yesterday evening, she began taking an over the c",
+   "text": "Psychiatry Restlessness, Drenching Sweats and Jerking Ankles the Morning After Starting a Cough Syrup in a 36-Year-Old Who Has Taken the Same Antidepressant for a Year serotonin-syndrome maoi drug-interaction toxicology psychiatry USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose) A 36 year old woman is brought to the emergency department 8 hours after she became restless and confused. She has major depressive disorder that has been treated with phenelzine for 1 year. Yesterday evening, she began taking an over the counter cough syrup containing dextromethorphan for an upper respiratory tract infection. She takes no other medications and does not use alcohol or illicit drugs. Her vital signs are shown. She is agitated, diaphoretic, and oriented only to person. The pupils are 7 mm and reactive to light. The mucous membranes are moist. Bowel sounds are hyperactive, and she has had three loose stools since arrival. Patellar reflexes are 4+, with sustained clonus at both ankles; muscle tone is increased more in the legs than in the arms, and there is no lead pipe rigidity. Laboratory results are shown. Phenelzine and the cough syrup are held, and she is given intravenous fluids, intravenous lorazepam, and external cooling. One hour later, she remains agitated with sustained ankle clonus, and her temperature is 38.9 °C (102 °F). Which of the following is the most appropriate pharmacotherapy at this time? A. Bromocriptine B. Cyproheptadine C. Dantrolene D. Haloperidol E. Physostigmine MAO 억제제(phenelzine)에 세로토닌 재흡수를 막는 dextromethorphan 을 더한 지 하룻밤 만에 생겼다. 신경근 과활성(과반사·하지 우세 근긴장·지속 발목 클로누스), 자율신경 과활성(고열·빈맥·고혈압·발한·산동·장음 항진·설사), 의식 변화가 함께 있다 — 세로토닌 증후군(Hunter 기준: 세로토닌성 약 + 유발·자발 클로누스 + 초조·발한)이다. 원인약 중단·수액·benzodiazepine·냉각 뒤에도 클로누스·초조가 남고 체온 39 °C(중등증)이므로 5 HT2A 길항제 cyproheptadine(경구·비위관)을 더한다. 신경이완제악성증후군(NMS)이라면 도파민 길항제 노출, 수일에 걸친 발병, 납관 강직, 반사 저하가 있어야 하고 bromocriptine(A)을 쓴다. dantrolene(C)은 악성고열(흡입마취제·succinylcholine)이나 심한 강직에 쓰며 세로토닌 증후군에 효과가 입증되지 않았다. 항콜린 독성이라면 피부·점막이 마르고 장음이 줄어 physostigmine(E)을 쓰지만 이 환자는 발한·촉촉한 점막·설사가 있다. haloperidol(D)은 항콜린·체온조절 장애로 악화시킬 수 있다."
+  },
+  {
+   "id": "usmle-2026-0288",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Growing Drowsiness, a Respiratory Rate of 8 and Absent Knee Jerks Ten Hours After a Cesarean Delivery at 35 Weeks in a 31-Year-Old With Scant Urine Output",
+   "tags": [
+    "preeclampsia",
+    "magnesium-sulfate",
+    "toxicity",
+    "postpartum",
+    "obstetrics"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 491장 Medical Disorders During Pregnancy)",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/usmle/usmle-2026-0288.md",
+   "snippet": "A 31 year old woman, gravida 1, para 1, is evaluated in the obstetric unit 10 hours after a cesarean delivery at 35 weeks' gestation for preeclampsia with severe features. An intravenous infusion of magnesium sulfate, 2 g/h, was begun 16 ho",
+   "text": "Obstetrics & Gynecology Growing Drowsiness, a Respiratory Rate of 8 and Absent Knee Jerks Ten Hours After a Cesarean Delivery at 35 Weeks in a 31-Year-Old With Scant Urine Output preeclampsia magnesium-sulfate toxicity postpartum obstetrics USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 491장 Medical Disorders During Pregnancy) A 31 year old woman, gravida 1, para 1, is evaluated in the obstetric unit 10 hours after a cesarean delivery at 35 weeks' gestation for preeclampsia with severe features. An intravenous infusion of magnesium sulfate, 2 g/h, was begun 16 hours ago and is continuing. Her urine output has been 10 to 15 mL/h for the past 4 hours. Over the past hour, she has become increasingly drowsy. She received one dose of intravenous morphine, 4 mg, 6 hours ago for incisional pain. She has had no seizures. Her vital signs are shown. She opens her eyes to voice and answers questions slowly. The pupils are 4 mm and reactive to light. Patellar and biceps reflexes are absent bilaterally. The lungs are clear to auscultation. The uterine fundus is firm at the umbilicus, and lochia is normal in amount. Laboratory results are shown. Which of the following is the most appropriate intravenous medication at this time? A. Furosemide B. Hydralazine C. Calcium gluconate D. Naloxone E. Lorazepam 마그네슘은 거의 전부 신장으로 배설된다. 소변량이 4시간째 10–15 mL/h 이고 크레아티닌이 1.6 으로 오른 상태에서 2 g/h 를 계속 맞았으므로 마그네슘이 쌓인다. 마그네슘 독성은 혈중 농도에 따라 심부건반사 소실 → 호흡억제 → 심전도 전도장애·심정지 순서로 나타나는데, 이 환자는 반사 소실과 호흡수 8 회, 졸림이 함께 있다 — 결과를 기다리지 말고 주입을 멈추고 calcium gluconate(1 g IV)로 신경근 접합부·심장에서 마그네슘을 길항하며 호흡을 보조한다. 모르핀은 6시간 전 4 mg 한 번이었고 동공이 4 mm 로 반응해 아편 독성은 가능성이 낮으며(D), naloxone 은 반사 소실을 설명하지 못한다. 핍뇨는 전자간증의 혈관 내 용적 감소·신혈류 감소에 따른 것이라 furosemide(A)는 원인을 해결하지 못하고 용적을 더 줄인다. 혈압 148/94 는 중증 범위(≥160/110)가 아니어서 hydralazine(B)이 필요 없고, 경련이 없어 lorazepam(E)은 호흡억제만 더한다."
+  },
+  {
+   "id": "usmle-2026-0287",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Writhing Periumbilical Pain With a Soft Belly Three Hours After It Began in a 74-Year-Old Woman Who Stopped Her Blood Thinner Two Weeks Ago and Whose Rhythm Strip Is Shown",
+   "tags": [
+    "acute-mesenteric-ischemia",
+    "atrial-fibrillation",
+    "ct-angiography",
+    "test-selection",
+    "surgery"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 340장 Mesenteric Vascular Insufficiency)",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/usmle/usmle-2026-0287.md",
+   "snippet": "A 74 year old woman is brought to the emergency department 3 hours after the sudden onset of severe, diffuse periumbilical abdominal pain. She vomited twice and had one loose bowel movement shortly after the pain began. She has hypertension",
+   "text": "Surgery Writhing Periumbilical Pain With a Soft Belly Three Hours After It Began in a 74-Year-Old Woman Who Stopped Her Blood Thinner Two Weeks Ago and Whose Rhythm Strip Is Shown acute-mesenteric-ischemia atrial-fibrillation ct-angiography test-selection surgery USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 340장 Mesenteric Vascular Insufficiency) A 74 year old woman is brought to the emergency department 3 hours after the sudden onset of severe, diffuse periumbilical abdominal pain. She vomited twice and had one loose bowel movement shortly after the pain began. She has hypertension and heart failure with preserved ejection fraction. Two weeks ago, she stopped taking apixaban on her own because of easy bruising; she continues to take metoprolol and lisinopril. Her vital signs are shown. She is writhing on the stretcher and rates her pain as 10 on a 10 point scale. The abdomen is soft and mildly distended, with minimal tenderness to deep palpation and no guarding or rebound tenderness. Bowel sounds are hypoactive. Rectal examination shows a small amount of stool that tests positive for occult blood. Her rhythm strip and laboratory results are shown. Intravenous fluids and analgesia are begun. Which of the following is the most appropriate next step in management? A. Upright abdominal radiography series B. Colonoscopy with mucosal biopsy C. Mesenteric artery duplex ultrasonography D. Immediate exploratory laparotomy E. Multidetector CT angiography of the abdomen 심방세동(불규칙한 빈맥)에 항응고제를 2주 전 끊었고, 갑자기 시작한 극심한 배꼽 주위 통증에 비해 배는 부드럽고 압통이 거의 없다(pain out of proportion), 통증 직후 구토·설사(장 비우기), 대변 잠혈, 백혈구·젖산 상승 — 색전성 급성 장간막허혈(SMA 색전)이 가장 의심된다. 혈압이 유지되고 복막 자극 징후가 없으므로 개복 전에 진단·범위 확인이 먼저다. 크레아티닌이 정상이라 조영제를 쓸 수 있고, 다중검출 CT 혈관조영이 SMA 폐색 부위·장벽 상태·다른 원인을 한 번에 보여 주는 1차 검사다(혈관내 처치·수술 계획도 정한다). 장간막 동맥 이중 초음파(C)는 장가스·통증으로 제한되고 근위부만 보여 원위 색전을 놓치며 급성기 1차 검사가 아니다. 복부 X선(A)은 정상일 때가 많아 배제할 수 없고, 대장내시경(B)은 허혈성 대장염(대개 좌측, 덜 아픔)에 쓰며 소장 허혈을 보지 못하고 천공 위험이 있다. 개복(D)은 복막염·불안정할 때 바로 간다."
+  },
+  {
+   "id": "usmle-2026-0286",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Sudden Breathlessness, a Blood Pressure of 88/56 and a New Harsh Murmur With a Thrill on the Fourth Hospital Day in a 63-Year-Old Man Whose Admission Tracing Is Shown",
+   "tags": [
+    "myocardial-infarction",
+    "mechanical-complication",
+    "ventricular-septal-rupture",
+    "ecg",
+    "pathology"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 286장 ST-Segment Elevation Myocardial Infarction)",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/usmle/usmle-2026-0286.md",
+   "snippet": "A 63 year old man is evaluated in the coronary care unit because of the sudden onset of shortness of breath 1 hour ago. He was admitted 4 days ago after 16 hours of crushing substernal chest pain that had resolved by the time he arrived; hi",
+   "text": "Pathology Sudden Breathlessness, a Blood Pressure of 88/56 and a New Harsh Murmur With a Thrill on the Fourth Hospital Day in a 63-Year-Old Man Whose Admission Tracing Is Shown myocardial-infarction mechanical-complication ventricular-septal-rupture ecg pathology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 286장 ST-Segment Elevation Myocardial Infarction) A 63 year old man is evaluated in the coronary care unit because of the sudden onset of shortness of breath 1 hour ago. He was admitted 4 days ago after 16 hours of crushing substernal chest pain that had resolved by the time he arrived; his ECG on admission is shown. He did not undergo reperfusion therapy and has been treated with aspirin, a heparin infusion, metoprolol, and atorvastatin. He was free of symptoms until 1 hour ago. His vital signs are shown. He is diaphoretic. Jugular venous pressure is 12 cm H2O. There are crackles over the lower half of both lung fields. A new grade 4/6 harsh holosystolic murmur is heard best at the left lower sternal border, and a thrill is palpable in the same area. Heart sounds are not muffled, and there is no pulsus paradoxus. The extremities are cool. Laboratory results are shown. Which of the following is the most likely cause of this patient's deterioration? A. Fibrinous pericarditis over the infarcted myocardium B. Rupture of the interventricular septum C. Rupture of the left ventricular free wall D. Rupture of the posteromedial papillary muscle E. Formation of a left ventricular aneurysm 입원 심전도의 전흉부 유도 ST 상승은 급성 전벽 STEMI 로, 대개 좌전하행지(LAD) 폐색이다. LAD 는 심실중격 앞 2/3 를 공급한다. 재관류 없이 지낸 경색 3–5일째는 호중구 뒤 대식세포가 괴사 심근을 치우는데 아직 육아조직·콜라겐이 자리 잡지 않아 벽이 가장 약하다 — 이때 갑자기 쇼크·폐부종과 새 잡음이 나타나면 기계적 합병증이다. 좌하흉골연에서 가장 크게 들리는 거친 범수축기 잡음에 진전(thrill)이 만져지면 좌→우 단락을 일으키는 심실중격 파열이다. 유두근 파열(D)은 급성 승모판 역류로 심첨부 잡음(진전은 드묾)이 나며, 후내측 유두근은 우관상동맥(또는 회선지) 한 혈관에만 의존해 하벽 경색에서 생긴다. 자유벽 파열(C)은 잡음 없이 심낭압전(경정맥 확장·작은 심음·기이맥)·무맥성 전기활동으로 온다. 섬유소성 심낭염(A)은 마찰음·흉막성 흉통을 일으키지 쇼크를 일으키지 않는다. 좌심실류(E)는 수주~수개월 뒤 생긴다."
+  },
+  {
+   "id": "usmle-2026-0285",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Vomiting, Sweating and Sleepiness Within Half an Hour of Pureed Pears and Apple Juice in a 7-Month-Old Girl Who Thrived on Breast Milk Alone",
+   "tags": [
+    "fructose-metabolism",
+    "hypoglycemia",
+    "inborn-error",
+    "differential",
+    "biochemistry"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 430장 Glycogen Storage Diseases and Other Inherited Disorders of Carbohydrate Metabolism)",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/usmle/usmle-2026-0285.md",
+   "snippet": "A 7 month old girl is brought to the physician because of vomiting, poor feeding, and increasing sleepiness for 3 weeks. She was exclusively breastfed until age 5 months and grew along the 50th percentile for weight. Rice cereal was introdu",
+   "text": "Biochemistry Vomiting, Sweating and Sleepiness Within Half an Hour of Pureed Pears and Apple Juice in a 7-Month-Old Girl Who Thrived on Breast Milk Alone fructose-metabolism hypoglycemia inborn-error differential biochemistry USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 430장 Glycogen Storage Diseases and Other Inherited Disorders of Carbohydrate Metabolism) A 7 month old girl is brought to the physician because of vomiting, poor feeding, and increasing sleepiness for 3 weeks. She was exclusively breastfed until age 5 months and grew along the 50th percentile for weight. Rice cereal was introduced at 5 months of age, and 4 weeks ago her parents began giving her pureed pears and apples and diluted apple juice. She often vomits and becomes sweaty and pale within 30 minutes of these feedings; she is well between feedings and sleeps through the night without feeding. She has had no fever or diarrhea. Her weight has fallen from the 50th to the 15th percentile. Her vital signs are shown. She is lethargic but arousable. The sclerae are mildly icteric. The liver edge is palpable 4 cm below the right costal margin; the spleen is not palpable. Laboratory studies obtained 40 minutes after a feeding of apple juice are shown. A deficiency of which of the following enzymes is the most likely cause of this patient's condition? A. Fructose 1 phosphate aldolase B. Hepatic fructokinase (ketohexokinase) C. Galactose 1 phosphate uridyltransferase D. Hepatic glucose 6 phosphatase E. Medium chain acyl CoA dehydrogenase 증상은 과일·주스(과당·자당)를 먹기 시작한 뒤에만, 그것도 먹은 지 30분 안에 생긴다 — 공복이 아니라 섭취가 유발한다. 모유(유당 → 갈락토스)만 먹던 5개월 동안은 잘 자랐으므로 갈락토스혈증(C)의 가능성은 낮다. 밤새 굶어도 괜찮고 식후에 저혈당이 오므로 공복 저혈당 질환인 G6Pase 결핍(D)·MCAD 결핍(E)과도 맞지 않는다. 소변 환원당 양성·포도당 음성은 포도당이 아닌 당(여기서는 과당)이 소변에 나온다는 뜻이다. 과당 대사 장애 중 fructokinase 결핍(B, 본태성 과당뇨)은 과당이 대사되지 않고 소변으로 나갈 뿐 무증상이다. aldolase B 결핍(유전성 과당불내증)에서는 fructose 1 phosphate 가 간·신장에 쌓여 인산을 붙잡아 두므로 저인산혈증·ATP 고갈이 오고, glycogenolysis·gluconeogenesis 가 막혀 식후 저혈당이 오며, 간손상(황달·간비대·ALT 상승)이 진행한다."
+  },
+  {
+   "id": "usmle-2026-0284",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "A Swollen Lip and Cheek That Ignored Epinephrine Last Time and Attacks Coming More Often Since Starting the Pill in a 24-Year-Old Whose Father Needed a Tracheostomy",
+   "tags": [
+    "hereditary-angioedema",
+    "c1-inhibitor",
+    "bradykinin",
+    "complement",
+    "mechanism",
+    "immunology"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis)",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/usmle/usmle-2026-0284.md",
+   "snippet": "A 24 year old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or",
+   "text": "Immunology A Swollen Lip and Cheek That Ignored Epinephrine Last Time and Attacks Coming More Often Since Starting the Pill in a 24-Year-Old Whose Father Needed a Tracheostomy hereditary-angioedema c1-inhibitor bradykinin complement mechanism immunology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis) A 24 year old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or genitals, each lasting 2 to 4 days; two episodes were accompanied by severe crampy abdominal pain and vomiting. During one previous episode, she was treated in another emergency department with intramuscular epinephrine, intravenous diphenhydramine, and methylprednisolone without noticeable improvement. The episodes have become more frequent since she began taking a combined estrogen progestin oral contraceptive 4 months ago. She takes no other medications. Her father had similar episodes of swelling and required an emergency tracheostomy at age 40 years. Her vital signs are shown. The upper lip and left cheek are swollen, nonpitting, and not red; there is no urticaria, and she reports no itching. The tongue and uvula are not swollen, and there is no stridor or hoarseness. The lungs are clear to auscultation. Laboratory results are shown. Which of the following best explains the mechanism of this patient's swelling? A. IgE mediated degranulation of mucosal mast cells B. Immune complex deposition activating the classical complement pathway C. Impaired breakdown of bradykinin by angiotensin converting enzyme D. Unregulated plasma kallikrein activity generating excess bradykinin E. Increased leukotriene synthesis caused by cyclooxygenase inhibition 두드러기·가려움이 없고 에피네프린·항히스타민·스테로이드에 반응하지 않은 부종은 히스타민(비만세포)이 아니라 브래디키닌 매개 혈관부종이다. 13세 발병, 얼굴·손·생식기를 오가는 2–4일 지속 부종, 복통 발작, 아버지의 같은 병력(상염색체 우성), C4 저하에 C1q 정상 → 유전성 혈관부종(hereditary angioedema, C1 esterase inhibitor 결핍)이다. C1 INH 는 보체 C1r·C1s 뿐 아니라 접촉계의 factor XIIa 와 plasma kallikrein 을 억제한다. 결핍되면 kallikrein 이 고분자 키니노겐을 끊어 bradykinin 이 과다 생성되고, bradykinin B2 수용체를 통해 혈관 투과성이 올라 부종이 생긴다. 에스트로겐은 발작을 악화시킨다. 비만세포 탈과립(A)은 두드러기·가려움을 동반하고 에피네프린에 반응하며 트립타제가 정상이다. ACE 억제(C)도 브래디키닌성이지만 이 환자는 ACE 억제제를 먹지 않는다. 면역복합체(B)는 혈관염을 일으키지 부종 발작을 일으키지 않고, COX 억제에 따른 류코트리엔 증가(E)는 NSAID 복용과 두드러기·천식을 동반한다."
+  },
+  {
+   "id": "paper-2026-0953",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Surgical laparoscopy, endoscopy & percutaneous techniques",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0953_recurrence_after_robotic_etep_incisional_hernia_repair_emerg.md",
+   "snippet": "Title Recurrence After Robotic eTEP Incisional Hernia Repair Emerges Beyond 24 Months: A Consecutive Series Challenging Short Term Outcome Reporting Authors Da Canal Francesca, Facchini Tullio A V, Di Pietro Martinelli Claudine, Gantert Wal",
+   "text": "Surgery scraped pubmed PubMed / Surgical laparoscopy, endoscopy & percutaneous techniques Title Recurrence After Robotic eTEP Incisional Hernia Repair Emerges Beyond 24 Months: A Consecutive Series Challenging Short Term Outcome Reporting Authors Da Canal Francesca, Facchini Tullio A V, Di Pietro Martinelli Claudine, Gantert Walter, Peros Georgios, Lazaridis Ioannis I, Delko Tarik Journal / DOI Surgical laparoscopy, endoscopy & percutaneous techniques · DOI: 10.1097/SLE.0000000000001527 · PMID: 43044050 https://pubmed.ncbi.nlm.nih.gov/43044050/ Abstract BACKGROUND: Most published robotic enhanced view totally extraperitoneal (eTEP) hernia repair series report follow up under 12 months and recurrence rates of 1% to 3%. METHODS: We retrospectively analyzed 65 consecutive patients undergoing robotic eTEP incisional hernia repair at a single center (2019 to 2025; Da Vinci Xi system); recurrence free survival was estimated by the Kaplan Meier method. RESULTS: Median follow up was 27.9 months (range: 11.7 76.2). The overall recurrence rate was 4/65 (6.2%); all 4 recurrences occurred in patients with follow up ≥24 months (4/41, 9.8%), with none before 24 months. Kaplan Meier recurrence free survival was 97.1% (95% CI: 91.8 100%) at 36 and 48 months. Primary fascial closure was achieved in 100% of cases, and the short term complication rate was 9.2% (Clavien Dindo grade I II only). CONCLUSIONS: Because all recurrences emerged beyond 24 months, follow up periods shorter than 24 months may fail to detect late clinical recurrences after eTEP repair. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0952",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric pulmonology",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0952_telerehabilitation_based_group_and_individual_exercise_in_pe.md",
+   "snippet": "Title Telerehabilitation Based Group and Individual Exercise in People With Cystic Fibrosis: A Randomized Controlled Study Authors Emirza Cilbir Cigdem, Kilinc Sakalli Ayse Ayzit, Tomlinson Owen William, Williams Craig Anthony, Kuran Aslan ",
+   "text": "Pediatrics scraped pubmed PubMed / Pediatric pulmonology Title Telerehabilitation Based Group and Individual Exercise in People With Cystic Fibrosis: A Randomized Controlled Study Authors Emirza Cilbir Cigdem, Kilinc Sakalli Ayse Ayzit, Tomlinson Owen William, Williams Craig Anthony, Kuran Aslan Goksen Journal / DOI Pediatric pulmonology · DOI: 10.1002/ppul.71925 · PMID: 43042826 https://pubmed.ncbi.nlm.nih.gov/43042826/ Abstract AIM: To compare the effects of telerehabilitation based individual and group exercise, against routine treatment on exercise capacity, lung function, muscle strength, anaerobic power, balance, quality of life (QoL), and change in clinical status in people with cystic fibrosis (pwCF). METHODS: Forty five pwCF (8 18 years) were randomly allocated into three groups: (1) telerehabilitation based group or (2) telerehabilitation based individual exercise, and (3) control arm. Telerehabilitation based groups underwent supervised exercise programmes 3 days/week via an online platform, and the control arm continued their routine care during an 8 week period. Exercise capacity of PwCF was assessed with 6 min walk test and incremental shuttle walk test. Spirometry measurements, muscle, and handgrip strength were recorded and evaluated. Anaerobic power via vertical jump test, balance via TimedUp and GoTest, and quality of life via Pediatric QoL Inventory were assessed as well. Adherence rates to exercise programmes were calculated. Change in clinical status for all groups, and motivation and enjoyment in the intervention groups were assessed. RESULTS: Forty one participants completed the study. Both exercise groups showed greater improvements than the control group in the 6 min walk distance, incremental shuttle walk test distance, the Timed Up and Go test, vertical jump performance, participant reported QoL, and most upper and lower extremity muscle strength outcomes (all p < 0.05), with no significant differences between the two exercise groups. Significant group × time interactions were also observed for FEV1 and FEV1/FVC. Handgrip strength and parent reported QoL did not differ between groups. CONCLUSION: The current study demonstrates similar effects between tele exercise sessions, with better outcomes than control group. Clinical teams can integrate telerehabilitation based group exercise into CF centres. CLINICAL TRIAL NUMBER: NCT05590169. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0951",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS medicine",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0951_economic_value_of_gonorrhea_resistance_testing_in_the_united.md",
+   "snippet": "Title Economic value of gonorrhea resistance testing in the United States: A multi perspective modeling study Authors Nichols Brooke E, Wonderly Trainor Betsy, Hampson Grace, Grad Yonatan H, Klausner Jeffrey D Journal / DOI PLoS medicine · ",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PLoS medicine Title Economic value of gonorrhea resistance testing in the United States: A multi perspective modeling study Authors Nichols Brooke E, Wonderly Trainor Betsy, Hampson Grace, Grad Yonatan H, Klausner Jeffrey D Journal / DOI PLoS medicine · DOI: 10.1371/journal.pmed.1005073 · PMID: 43043955 https://pubmed.ncbi.nlm.nih.gov/43043955/ Abstract BACKGROUND: Rising antimicrobial resistance in Neisseria gonorrhoeae threatens the effectiveness of existing therapies. Ceftriaxone is the only recommended first line (empiric) treatment for uncomplicated gonorrhea in the United States. Ciprofloxacin is no longer recommended for empiric use because of widespread resistance, but it is inexpensive, taken orally, and effective against susceptible infections, which a resistance test can identify. In the context of rising resistance, resistance guided treatment (RGT) may reduce treatment failures, complications, and inappropriate use of last line agents while slowing resistance emergence and preserving the efficacy of new and existing drugs. Understanding where RGT provides economic value across near term cost savings, delayed resistance emergence, and avoided antibiotic development costs can illuminate the broader case for investing in resistance testing and help guide pricing and reimbursement decisions. METHODS AND FINDINGS: We developed an individual level stochastic simulation model of gonorrhea diagnosis and treatment in the United States, incorporating infection prevalence, symptom status, diagnostic accuracy, resistance profiles, treatment pathways, and partner management (costs in 2025 US dollars[USD]). We evaluated three resistance testing strategies, ciprofloxacin only, ciprofloxacin + ceftriaxone, and triple target (including a novel drug A), across a wide range of resistance scenarios. We quantified economic value across three dimensions: (1) per episode direct medical cost savings, (2) system level costs attributable to ceftriaxone resistance emergence among men who have sex with men (MSM), and (3) avoided costs of new antibiotic development, estimating the maximum per test price at which RGT remains cost neutral. Per episode cost neutrality thresholds ranged from near $0 when ceftriaxone resistance was absent to up to $48 per test at 15% prevalence of ceftriaxone resistance (proportion of infections resistant to ceftriaxone). At a prevalence of 50% ciprofloxacin resistance and 5% ceftriaxone resistance, the population weighted threshold was $7 (95% uncertainty interval [UI] ($3, $11) for a ciprofloxacin only test and $13 (95% UI [$8 $19]) for a triple target test. Among MSM, incorporating system level resistance emergence costs and avoided antibiotic development costs increased the total per test value to $31 to $114 for a single target test and $73 to $106 for a triple target test, depending on whether prescribing practices shift when ceftriaxone resistance reaches 5%. The main limitations are that the model assumes resistance results are available at the same clinical visit to guide initial treatment, does not represent onward transmission or co resistance between antibiotics, and could estimate longer term value only for MSM. CONCLUSIONS: Resistance guided therapy offers economic benefits across multiple dimensions even at relatively high diagnostic prices, supporting investment in gonorrhea resistance testing to improve partner outcomes, delay resistance emergence, and enhance the long term cost efficiency of gonorrhea management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0950",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Head and neck pathology",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0950_kras_mutations_in_ectomesenchymal_chondromyxoid_tumors_a_mol.md",
+   "snippet": "Title KRAS Mutations in Ectomesenchymal Chondromyxoid Tumors: A Molecular Analysis of Cases in Tongue and Extra Glossal Sites Authors De Sousa Sílvia Ferreira, Diniz Marina Gonçalves, Felix Fernanda Aragão, de Souza Raquel Helena Junia, Mei",
+   "text": "Pathology scraped pubmed PubMed / Head and neck pathology Title KRAS Mutations in Ectomesenchymal Chondromyxoid Tumors: A Molecular Analysis of Cases in Tongue and Extra Glossal Sites Authors De Sousa Sílvia Ferreira, Diniz Marina Gonçalves, Felix Fernanda Aragão, de Souza Raquel Helena Junia, Meira Henrique Cortes, Gomez Ricardo Santiago, Fonseca Felipe Paiva, Tamayo Espinosa Lidia, et al. Journal / DOI Head and neck pathology · DOI: 10.1007/s12105 026 01979 z · PMID: 43043566 https://pubmed.ncbi.nlm.nih.gov/43043566/ Abstract Ectomesenchymal chondromyxoid tumor (EMCMT) is a rare mesenchymal indolent neoplasm of the oral cavity, with a marked predilection for the tongue. Extra glossal tumors are exceedingly rare, and their pathogenesis remains poorly understood. Herein, we retrospectively collected seven extra glossal and five tongue cases of EMCMT, and examined the molecular features of eleven cases using targeted molecular approaches. EWSR1, PLAG1 and RREB1::MRTFB rearrangements were evaluated, whereas hotspot mutations in EGFR, BRAF, NRAS, KRAS and PIK3CA were screened by pyrosequencing, and detected mutations were subsequently confirmed by Sanger sequencing. The tumors affected seven male and five female patients with an age range of 12 to 57 years (median, 23.0). The cases occurred in the tongue (n = 5), palate (n = 3), alveolar ridge (n = 2), buccal mucosa (n = 1) and gingiva (n = 1). All tumors were treated by local excision; after a median follow up of 21 months (range, 7 31), three tumors (25.0%) recurred locally and were controlled by re excision. Morphologically, the tumors were composed of spindle to ovoid shaped cells arranged in a hyalinized stroma, often demonstrating myxoid and chondroid areas. Cases showed immunoreactivity for podoplanin, S 100 and GFAP and variable (focal or diffuse) reactivity for AE1/AE3 and EMA, and were negative for cytokeratin 7, SMA, calponin and p63. The RREB1::MRTFB fusion was detected in all eleven tumors screened (100.0%), and none of the cases investigated showed EWSR1 or PLAG1 rearrangements. Additionally, 7 of 11 tumors screened (63.6%) harbored KRAS mutations, comprising p.G12D alone (n = 2), KRAS p.G13D (n = 4), or combined KRAS p.G12D and p.G12V variants (n = 1). KRAS hotspot mutations, not previously reported in EMCMT, were frequent in this series (mutant allele frequencies, 29.7 54.9%) and invariably co occurred with RREB1::MRTFB fusion; their clonal allele frequencies indicate an early event, although their biological significance remains to be determined. Local recurrence occurred irrespective of anatomic site or KRAS status. Detection of RREB1::MRTFB fusion remains the most useful ancillary tool to separate EMCMT from its mimics, particularly myoepithelial neoplasms, whereas the diagnostic utility of KRAS testing requires evaluation in larger, controlled cohorts. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0949",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric neurosurgery",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0949_gamma_knife_stereotactic_radiosurgery_for_pediatric_meningio.md",
+   "snippet": "Title Gamma Knife Stereotactic Radiosurgery for Pediatric Meningiomas Authors Shanahan Regan M, Wei Chris Z, Miller Tracy, Deng Hansen, Hadjipanayis Constantinos G, Niranjan Ajay, Lunsford L Dade Journal / DOI Pediatric neurosurgery · DOI: ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Pediatric neurosurgery Title Gamma Knife Stereotactic Radiosurgery for Pediatric Meningiomas Authors Shanahan Regan M, Wei Chris Z, Miller Tracy, Deng Hansen, Hadjipanayis Constantinos G, Niranjan Ajay, Lunsford L Dade Journal / DOI Pediatric neurosurgery · DOI: 10.1159/000551777 · PMID: 43043997 https://pubmed.ncbi.nlm.nih.gov/43043997/ Abstract INTRODUCTION: Despite the generally benign and slow growing nature of many adult meningiomas, meningiomas in pediatric patients often exhibit more aggressive behavior. Gamma Knife stereotactic radiosurgery (SRS) is a non invasive modality that is widely used as either an initial upfront or adjuvant management for meningiomas. We reviewed our 35 year meningioma experience to assess its role in pediatric patients. METHODS: The authors reviewed the clinical and imaging data of 2,030 meningioma patients who underwent SRS between 1987 and 2022 at the University of Pittsburgh Medical Center (UPMC). We identified 9 patients <18 years (2 female; median age, 14.5 years). None of the patients had neurofibromatosis type 2. The neurological outcomes, overall survival, local tumor control, and development of adverse radiation effects were evaluated. Three patients received prior therapeutic radiation: one underwent prophylactic cranial irradiation for lymphoblastic leukemia, one received focal cranial irradiation for craniopharyngioma, and one underwent craniospinal irradiation for medulloblastoma. Seven patients had prior tumor resection, while two asymptomatic patients were diagnosed incidentally (one during craniopharyngioma surveillance imaging and the other after head trauma). The median cumulative tumor volume at SRS was 6.0 cc (range, 0.5 11.8 cc). The median margin dose prescribed was 14 Gy (range, 11 25 Gy). RESULTS: At last follow up, 5 patients were alive. Four patients had died, two from progressive intracranial disease and two from unrelated medical causes. The median overall survival was 8.9 years (range 2.0 16.2 years). The median progression free survival was 8.2 years (range 1.1 13.4 years). Five patients experienced tumor progression at a median of 2.1 years (range, 1.1 13.4 years) after SRS. After local tumor progression, 2 patients received repeat SRS, and the remaining patients required additional surgery, fractionated external beam radiotherapy, or chemotherapy. No patient developed adverse radiation effects, had malignant tumor transformation, or developed other types of CNS malignancies. CONCLUSION: Meningiomas are rare tumors in the pediatric age group and can exhibit aggressive behavior. Tumor control was achieved in 6 of 9 patients after one or more SRS procedures. SRS presents as a reasonable primary option or should be considered for early intervention after surgery. Patients and families should be counseled that multiple SRS sessions might be needed to achieve eventual tumor control. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0948",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0948_cardiometabolic_multimorbidity_and_associated_clinical_lifes.md",
+   "snippet": "Title Cardiometabolic multimorbidity and associated clinical, lifestyle and genetic factors among Ghanaian patients Authors Gavor Kwashi Cyril E K, Ryabinina Oksana, Badu Nyarko Samuel, Aku Addo Naa, Twum Joel Adu, Anyimadu John, Mensah Van",
+   "text": "Nephrology scraped pubmed PubMed / PloS one Title Cardiometabolic multimorbidity and associated clinical, lifestyle and genetic factors among Ghanaian patients Authors Gavor Kwashi Cyril E K, Ryabinina Oksana, Badu Nyarko Samuel, Aku Addo Naa, Twum Joel Adu, Anyimadu John, Mensah Vanessa Naa Torshie, Pappoe Ebenezer Allotey, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0362848 · PMID: 43043938 https://pubmed.ncbi.nlm.nih.gov/43043938/ Abstract BACKGROUND: Cardiometabolic multimorbidity (coexistence of hypertension, type 2 diabetes, metabolic syndrome and chronic kidney disease) is rising in sub‑Saharan Africa (SSA), but data integrating clinical, lifestyle and genetic determinants in Ghana are limited. This study aimed to characterise the burden of cardiometabolic multimorbidity among Ghanaian clinic attendees and evaluate the associations of clinical, lifestyle, and candidate genetic variants with hypertension, diabetes, metabolic syndrome, and CKD. METHODS: This cross sectional study assessed 203 adults attending specialised clinics at a tertiary hospital in Cape Coast, Ghana, between 17 May 2023 and 30 April 2024. Data were collected on participants' sociodemographic and clinicodemographic characteristics, in addition to lifestyle information obtained through structured questionnaires. Selected candidate variants (TCF7L2 rs7903146, AGT rs699, ACE rs4343, LEPR rs1137101, ADRB3 rs4994, KCNJ11 rs5219, PPARG rs1801282, APOL1 risk variants) were genotyped. Multivariable logistic regression models were used to evaluate the determinants of blood pressure, elevated glucose levels, metabolic syndrome, and CKD. Receiver operating characteristic analysis compared the predictive performance of clinical/lifestyle, genetic, and combined models. RESULTS: Over 80% of participants had ≥ 2 cardiometabolic conditions; 80% were overweight/obese, and 2/3 met the metabolic syndrome criteria. Despite high treatment rates, uncontrolled BP and hyperglycaemia were common. Obesity was the strongest independent predictor of CKD (aORs:7 8 for Obese I/II). The use of glucose lowering medication was associated with better glycaemic control (OR: 7.16, 95% CI: 3.31 15.47, p < 0.001), and antihypertensive treatment was correlated with lower odds of uncontrolled BP (aOR: 0.25, 95% CI: 0.07 0.90, p = 0.033). Among the genetic markers, the TCF7L2 rs7903146 CT genotype was associated with higher odds of hypertension (adjusted odds ratio [aOR]: 2.15, 95% CI: 1.06 4.37, p = 0.034). Most other variants, including APOL1, showed no consistent associations. Combined clinical, lifestyle, and genetic models had the highest discrimination (AUCs: 0.83 0.89), followed by clinical/lifestyle models (AUCs: 0.76 0.83), while genetic only models performed poorly (AUCs: 0.63 0.67). CONCLUSIONS: In this Ghanaian cohort, cardiometabolic multimorbidity is highly prevalent and appears to be driven predominantly by modifiable risk factors, particularly obesity. Immediate gains are likely from integrated risk factor management; however, genetic findings are exploratory and require replication in larger, community based cohorts. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0947",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Microbiology spectrum",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0947_rapid_detection_of_beta_lactamase_genes_in_klebsiella_pneumo.md",
+   "snippet": "Title Rapid detection of beta lactamase genes in Klebsiella pneumoniae and Escherichia coli from positive blood cultures using nanopore sequencing Authors Tangkijwanichkul Kamolpat, Cholsaktrakool Pornsawan, Kawang Kornthara, Maita Supakorn",
+   "text": "Infectious Disease scraped pubmed PubMed / Microbiology spectrum Title Rapid detection of beta lactamase genes in Klebsiella pneumoniae and Escherichia coli from positive blood cultures using nanopore sequencing Authors Tangkijwanichkul Kamolpat, Cholsaktrakool Pornsawan, Kawang Kornthara, Maita Supakorn, Pollapong Kraiwit, Prasertmanakit Tongsorn, Pea Arun Nantapong, Chenphun Chanokkarn, et al. Journal / DOI Microbiology spectrum · DOI: 10.1128/spectrum.01345 26 · PMID: 43044070 https://pubmed.ncbi.nlm.nih.gov/43044070/ Abstract Klebsiella pneumoniae and Escherichia coli are major Enterobacterales pathogens that commonly harbor beta lactamase enzymes conferring antimicrobial resistance. Conventional antimicrobial susceptibility testing (AST) is time consuming and may delay appropriate antibiotic treatment, whereas nanopore sequencing enables real time genetic analysis and may support rapid antimicrobial resistance detection at the point of care. This study evaluated the performance of nanopore sequencing for detecting ceftriaxone and carbapenem resistance in positive blood cultures containing K. pneumoniae or E. coli. In this cross sectional descriptive study, positive blood culture samples yielding K. pneumoniae or E. coli were analyzed. Bacterial DNA was extracted and sequenced in its native form using the PromethION nanopore platform to detect antimicrobial resistance genes, and sequencing based predictions were compared with routine blood culture results and standard AST. A total of 62 K. pneumoniae and 96 E. coli samples met the inclusion criteria for DNA extraction and sequencing. Simulated real time analysis showed that the optimal condition for detecting third generation cephalosporin and carbapenem resistance genes was approximately 1 h of sequencing, using a sequence divergence threshold of <0.001 against the antimicrobial resistance gene database. For third generation cephalosporin resistance, sensitivity was 87.0% (95% CI: 79.5% 94.5%) and specificity was 77.8% (95% CI: 68.7% 86.8%); for carbapenem resistance, sensitivity was 77.8% (95% CI: 58.6% 97.0%) and specificity was 96.4% (95% CI: 93.4% 99.5%). Overall, nanopore sequencing is feasible for rapid detection of ceftriaxone and carbapenem resistance directly from positive blood cultures, although further optimization is needed to improve accuracy.IMPORTANCEBloodstream infections can progress rapidly and require timely selection of effective antimicrobial therapy. However, conventional antimicrobial susceptibility testing typically requires 2 3 days, which may delay optimal treatment. In this study, nanopore sequencing detected key antimicrobial resistance genes in Escherichia coli and Klebsiella pneumoniae directly from positive blood cultures after approximately 1 h of sequencing. This approach could support earlier prediction of antibiotic resistance and help guide more timely treatment decisions for patients with serious infections. The study also identified important limitations, including incorrect predictions for ceftriaxone and carbapenem resistance in some samples. Overall, these findings highlight the potential of rapid DNA sequencing to improve the management of bloodstream infections, while emphasizing that further improvement in predictive accuracy is needed before routine implementation in clinical laboratories. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0946",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular pharmacology",
+   "confidence": "medium",
+   "date": "2026-11-18",
+   "path": "content/papers/2026/2026-11-18_paper-2026-0946_optimizing_use_of_glp_1_receptor_agonists_safety_tolerabilit.md",
+   "snippet": "Title Optimizing use of GLP 1 receptor agonists: safety, tolerability, adherence, and patient selection in cardiovascular practice Authors Pejcic Ana V, Stefanovic Srdjan M, Milosavljevic Milos N Journal / DOI Journal of cardiovascular phar",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular pharmacology Title Optimizing use of GLP 1 receptor agonists: safety, tolerability, adherence, and patient selection in cardiovascular practice Authors Pejcic Ana V, Stefanovic Srdjan M, Milosavljevic Milos N Journal / DOI Journal of cardiovascular pharmacology · DOI: 10.1097/FJC.0000000000001901 · PMID: 43044077 https://pubmed.ncbi.nlm.nih.gov/43044077/ Abstract Glucagon like peptide 1 receptor agonists (GLP 1RAs) have fundamentally transformed modern cardiometabolic care, moving beyond glycemic control to become a cornerstone of obesity management and potent cardiovascular risk reduction. Large scale clinical trials consistently highlight their cardioprotective benefits, demonstrating significant reductions in major adverse cardiovascular events (MACE), cardiovascular mortality, and obesity related heart failure complications. However, translating these remarkable clinical trial successes into routine clinical practice reveals a marked gap between efficacy and effectiveness, primarily driven by suboptimal patient persistence and adherence. This narrative review synthesizes current evidence regarding the pharmacology, safety, tolerability, adherence, and patient selection of GLP 1RAs to support optimal therapeutic decision making in cardiovascular practice. While long term data disprove clear causal relationships with pancreatic or thyroid malignancies, a high incidence of predictable, dose related gastrointestinal adverse events (nausea, vomiting, diarrhea) remains the leading cause of early treatment discontinuation. Additionally, treatment persistence in clinical practice is heavily influenced by financial burdens, supply chain instability, and formulation choices. Cardioprotective benefits are well established for patients with type 2 diabetes and atherosclerotic cardiovascular disease. Mitigating challenges in clinical practice requires a systematic, multi step prescribing framework focused on targeted patient selection, gradual individualized dose titration (\"start low and go slow\"), and proactive multidisciplinary symptom management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1923",
    "type": "kmle",
