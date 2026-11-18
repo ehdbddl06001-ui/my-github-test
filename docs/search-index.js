@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4008,
+  "total": 4019,
   "byType": {
    "usmle": 276,
    "paper": 953,
    "kmle": 1888,
+   "imaging": 713,
    "concept": 172,
-   "imaging": 702,
    "ailab": 14,
    "basic": 3
   },
@@ -35,20 +35,20 @@ window.MEDKOS_INDEX = {
    "Surgery": 123,
    "Pulmonology": 122,
    "Hematology": 115,
-   "순환기": 107,
+   "순환기": 109,
    "Laboratory Medicine": 97,
-   "산부인과": 86,
-   "호흡기": 46,
+   "산부인과": 88,
+   "호흡기": 47,
    "소화기": 42,
-   "소아과": 36,
-   "신장·비뇨기": 32,
+   "소아과": 37,
+   "신장·비뇨기": 33,
    "응급·중환자": 32,
+   "혈액·종양": 32,
+   "감염": 31,
    "내분비": 31,
-   "혈액·종양": 31,
-   "감염": 30,
-   "신경": 30,
+   "신경": 31,
+   "병리·조직학": 30,
    "Physiology": 29,
-   "병리·조직학": 29,
    "피부과": 27,
    "외과": 26,
    "예방의학·역학": 25,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2846,
+   "high": 2857,
    "medium": 1158,
    "low": 4
   },
@@ -948,6 +948,201 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1892.md",
    "snippet": "58세 여자가 2주 전부터 계단을 오를 때 숨이 차고 가슴이 두근거려서 왔다. 어릴 때 관절이 붓고 열이 나서 오래 입원한 적이 있다고 한다. 고혈압·당뇨병은 없고 뇌졸중을 앓은 적도 없다. 맥박은 불규칙하다. 심첨부에서 첫 심음이 크고, 둘째 심음 뒤에 짧고 높은 소리에 이어 낮게 우르릉거리는 이완기 잡음이 들린다. 폐음은 깨끗하고 다리 부종은 없다. 심전도는 그림과 같다. 경흉부 심초음파에서 승모판엽이 두꺼워지고 판막 교련",
    "text": "Cardiology Breathlessness on Stairs and an Irregular Pulse in a Woman Who Had a Long Childhood Illness with Swollen Joints atrial-fibrillation mitral-stenosis rheumatic-heart-disease anticoagulation ecg KMLE 2026 / Claude 58세 여자가 2주 전부터 계단을 오를 때 숨이 차고 가슴이 두근거려서 왔다. 어릴 때 관절이 붓고 열이 나서 오래 입원한 적이 있다고 한다. 고혈압·당뇨병은 없고 뇌졸중을 앓은 적도 없다. 맥박은 불규칙하다. 심첨부에서 첫 심음이 크고, 둘째 심음 뒤에 짧고 높은 소리에 이어 낮게 우르릉거리는 이완기 잡음이 들린다. 폐음은 깨끗하고 다리 부종은 없다. 심전도는 그림과 같다. 경흉부 심초음파에서 승모판엽이 두꺼워지고 판막 교련부가 붙어 있으며 승모판 면적은 1.2 cm², 좌심방이 커져 있고 좌심실 박출률은 60 %이다. 비소프롤롤로 심박수를 조절하기로 했다. 활력징후와 검사 결과는 자료와 같다. 뇌졸중 예방을 위해 투여할 약으로 가장 적절한 것은? A. 아스피린 B. 아픽사반 C. 와파린 D. 다비가트란 E. 클로피도그렐 류마티스 승모판협착(승모판 면적 1.2 cm²)에 동반된 심방세동이다. 중등도 이상 승모판협착이 있는 심방세동은 위험 점수와 관계없이 혈전색전 위험이 높아 항응고가 필요하고, 직접경구항응고제는 이 군에서 근거가 없어 와파린을 쓴다."
+  },
+  {
+   "id": "imaging-2026-0714",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 수술 전 검사에서 축 이상이 나온 중년 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202525Z_일일심전도_2026-11-19_2units_2q_25200d5b",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0714.md",
+   "snippet": "63세 여자가 무릎 인공관절 수술 전 검사에서 심전도 이상이 있다며 순환기내과에 의뢰되었다. 6개월 전부터 계단을 두 층 오르면 숨이 조금 찬다고 한다. 가슴 통증, 실신, 다리 부종은 없고 흡연하지 않는다. 혈압 128/80 mmHg, 맥박 88회/분, 산소포화도 96% 이다. 심음은 정상이고 잡음은 없으며 폐음은 깨끗하다. 흉부 X선은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 추가 검",
+   "text": "순환기 심전도 처치 — 수술 전 검사에서 축 이상이 나온 중년 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202525Z_일일심전도_2026-11-19_2units_2q_25200d5b 63세 여자가 무릎 인공관절 수술 전 검사에서 심전도 이상이 있다며 순환기내과에 의뢰되었다. 6개월 전부터 계단을 두 층 오르면 숨이 조금 찬다고 한다. 가슴 통증, 실신, 다리 부종은 없고 흡연하지 않는다. 혈압 128/80 mmHg, 맥박 88회/분, 산소포화도 96% 이다. 심음은 정상이고 잡음은 없으며 폐음은 깨끗하다. 흉부 X선은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 추가 검사 없이 6개월 뒤 심전도 재검 B. 경흉부 심장초음파 C. 영구 심박동기 삽입 D. 관상동맥 조영술 E. 전기생리검사"
+  },
+  {
+   "id": "imaging-2026-0713",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 건강검진에서 맥이 불규칙하다는 말을 들은 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202525Z_일일심전도_2026-11-19_2units_2q_25200d5b",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0713.md",
+   "snippet": "70세 남자가 건강검진에서 맥이 불규칙하다는 말을 듣고 왔다. 가끔 가슴이 덜컥하는 느낌이 있으나 실신, 가슴 통증, 호흡곤란은 없다. 고혈압으로 약을 먹고 있다. 혈압 132/78 mmHg 이고, 맥박은 촉진상 규칙과 불규칙이 섞여 있다. 심음은 정상이고 잡음은 없다. 혈청 칼륨 4.1 mEq/L, 마그네슘 2.0 mg/dL 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심실 기외수축 이단맥",
+   "text": "순환기 심전도 판독 — 건강검진에서 맥이 불규칙하다는 말을 들은 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202525Z_일일심전도_2026-11-19_2units_2q_25200d5b 70세 남자가 건강검진에서 맥이 불규칙하다는 말을 듣고 왔다. 가끔 가슴이 덜컥하는 느낌이 있으나 실신, 가슴 통증, 호흡곤란은 없다. 고혈압으로 약을 먹고 있다. 혈압 132/78 mmHg 이고, 맥박은 촉진상 규칙과 불규칙이 섞여 있다. 심음은 정상이고 잡음은 없다. 혈청 칼륨 4.1 mEq/L, 마그네슘 2.0 mg/dL 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심실 기외수축 이단맥 B. 심방 기외수축 이단맥 C. Mobitz 2형 2도 방실차단 D. 간헐적 좌각차단 E. 심방세동"
+  },
+  {
+   "id": "imaging-2026-0712",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 치료 뒤에도 열이 지속되는 7일 발열 아동",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0712.md",
+   "snippet": "4세 남아가 7일 동안의 발열로 입원하였다. 입원 당시 양쪽 눈의 삼출물 없는 결막 충혈, 입술 갈라짐과 딸기 혀, 몸통의 다형 발진, 손발의 부종과 오른쪽 목의 지름 2 cm 림프절이 있어 정맥 면역글로불린 2 g/kg 과 고용량 아스피린을 투여하였다. 투여 끝난 뒤 36시간이 지났지만 체온이 39.2°C 이다. 혈압 98/60 mmHg, 맥박 136회/분이다. 백혈구 15,800/mm³, C반응단백 9.8 mg/dL, 알부",
+   "text": "소아과 소아 — 치료 뒤에도 열이 지속되는 7일 발열 아동 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 4세 남아가 7일 동안의 발열로 입원하였다. 입원 당시 양쪽 눈의 삼출물 없는 결막 충혈, 입술 갈라짐과 딸기 혀, 몸통의 다형 발진, 손발의 부종과 오른쪽 목의 지름 2 cm 림프절이 있어 정맥 면역글로불린 2 g/kg 과 고용량 아스피린을 투여하였다. 투여 끝난 뒤 36시간이 지났지만 체온이 39.2°C 이다. 혈압 98/60 mmHg, 맥박 136회/분이다. 백혈구 15,800/mm³, C반응단백 9.8 mg/dL, 알부민 2.9 g/dL 이다. 혈액·소변 배양은 음성이다. 심장초음파에서 왼쪽 관상동맥 근위부 내경의 Z값이 2.4 이다. 다음 처치로 가장 적절한 것은? A. 세프트리악손을 정맥 투여한다 B. 와파린을 추가한다 C. 혈장교환술을 한다 D. 정맥 면역글로불린 2 g/kg 을 한 번 더 투여한다 E. 아스피린만 유지하며 열이 내리기를 기다린다"
+  },
+  {
+   "id": "imaging-2026-0711",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 건강검진 현미경 혈뇨와 작은 콩팥 고형 종괴",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0711.md",
+   "snippet": "A 49 year old man is referred because microscopic hematuria was found on a routine health examination. He has no flank pain or weight loss. He has smoked half a pack of cigarettes daily for 25 years. Blood pressure is 134/86 mm Hg. Hemoglob",
+   "text": "신장·비뇨기 신장·비뇨 — 건강검진 현미경 혈뇨와 작은 콩팥 고형 종괴 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 A 49 year old man is referred because microscopic hematuria was found on a routine health examination. He has no flank pain or weight loss. He has smoked half a pack of cigarettes daily for 25 years. Blood pressure is 134/86 mm Hg. Hemoglobin is 14.6 g/dL and creatinine is 0.9 mg/dL. Urinalysis shows 10–20 erythrocytes per high power field without casts. Contrast enhanced CT of the abdomen shows a solid, enhancing renal mass measuring 4.3 cm in its largest dimension, as shown in the axial image; the other kidney is normal, and there is no lymphadenopathy or venous thrombus. CT of the chest shows no metastases. Which of the following is the most appropriate next step in management? A. Systemic immune checkpoint inhibitor therapy B. Left partial nephrectomy C. Left radical nephrectomy D. Right partial nephrectomy E. Percutaneous needle biopsy of the left renal mass before any treatment"
+  },
+  {
+   "id": "imaging-2026-0710",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 불규칙 월경과 다모증이 있는 여성의 난임",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0710.md",
+   "snippet": "28세 여자가 결혼 후 1년 6개월 동안 임신이 되지 않아 왔다. 초경 이후 월경이 1년에 4~5회로 불규칙하고 턱과 배에 굵은 털이 있다. 키 162 cm, 체중 61 kg(체질량지수 23.2 kg/m²)이다. 혈청 총 테스토스테론은 약간 높고, 프로락틴·갑상샘자극호르몬·17 수산화프로게스테론은 정상이다. 질초음파에서 양쪽 난소에 2~9 mm 난포가 각각 20개 넘게 보인다. 남편의 정액 검사와 자궁난관조영술은 정상이다. 생",
+   "text": "산부인과 부인과 — 불규칙 월경과 다모증이 있는 여성의 난임 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 28세 여자가 결혼 후 1년 6개월 동안 임신이 되지 않아 왔다. 초경 이후 월경이 1년에 4~5회로 불규칙하고 턱과 배에 굵은 털이 있다. 키 162 cm, 체중 61 kg(체질량지수 23.2 kg/m²)이다. 혈청 총 테스토스테론은 약간 높고, 프로락틴·갑상샘자극호르몬·17 수산화프로게스테론은 정상이다. 질초음파에서 양쪽 난소에 2~9 mm 난포가 각각 20개 넘게 보인다. 남편의 정액 검사와 자궁난관조영술은 정상이다. 생활습관 상담 후 가장 적절한 치료는? A. 복합 경구피임약 B. 메트포르민 단독 C. 복강경 난소 쐐기절제술 D. 레트로졸 E. 클로미펜"
+  },
+  {
+   "id": "imaging-2026-0709",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 헤파린 투여 중 혈소판 감소와 새 혈전",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0709.md",
+   "snippet": "A 67 year old woman underwent total knee arthroplasty 7 days ago and has been receiving subcutaneous unfractionated heparin for thromboprophylaxis since surgery. Today she reports new swelling and pain of the left calf. Her platelet count w",
+   "text": "혈액·종양 혈액·종양 — 헤파린 투여 중 혈소판 감소와 새 혈전 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 A 67 year old woman underwent total knee arthroplasty 7 days ago and has been receiving subcutaneous unfractionated heparin for thromboprophylaxis since surgery. Today she reports new swelling and pain of the left calf. Her platelet count was 245,000/mm³ before surgery and is 92,000/mm³ today; hemoglobin is 11.2 g/dL. She has no bleeding, and the prothrombin time and fibrinogen are within reference ranges. Compression ultrasonography shows a thrombus in the left popliteal vein. Creatinine is 0.8 mg/dL. Which of the following is the most appropriate next step in management? A. Stop heparin and start intravenous argatroban B. Switch to subcutaneous enoxaparin C. Stop heparin and start warfarin D. Transfuse platelets and continue heparin E. Increase the heparin to a therapeutic dose"
+  },
+  {
+   "id": "imaging-2026-0708",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 가을철 야외 활동 뒤 발열이 생긴 임신부",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0708.md",
+   "snippet": "32세 여자가 5일 동안의 발열, 두통, 근육통으로 왔다. 임신 26주이며 2주 전 시골에서 밤을 주우며 하루를 보냈다. 체온 39.0°C, 혈압 112/70 mmHg, 맥박 104회/분이다. 몸통에 반구진 발진이 있고, 왼쪽 겨드랑이에 지름 8 mm 의 검은 딱지로 덮인 궤양이 있으며 그 주위 겨드랑이 림프절이 커져 있다. 백혈구 4,800/mm³, 혈소판 112,000/mm³, AST 98 U/L, ALT 86 U/L 이다",
+   "text": "감염 감염 — 가을철 야외 활동 뒤 발열이 생긴 임신부 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 32세 여자가 5일 동안의 발열, 두통, 근육통으로 왔다. 임신 26주이며 2주 전 시골에서 밤을 주우며 하루를 보냈다. 체온 39.0°C, 혈압 112/70 mmHg, 맥박 104회/분이다. 몸통에 반구진 발진이 있고, 왼쪽 겨드랑이에 지름 8 mm 의 검은 딱지로 덮인 궤양이 있으며 그 주위 겨드랑이 림프절이 커져 있다. 백혈구 4,800/mm³, 혈소판 112,000/mm³, AST 98 U/L, ALT 86 U/L 이다. 태아 심박동은 정상이다. 가장 적절한 치료는? A. 클로람페니콜 B. 아지트로마이신 C. 독시사이클린 D. 세프트리악손 E. 시프로플록사신"
+  },
+  {
+   "id": "imaging-2026-0707",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 심방세동 환자의 갑작스러운 시야 이상",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0707.md",
+   "snippet": "A 69 year old man comes to the emergency department 5 hours after he suddenly had difficulty seeing while reading the newspaper. He has hypertension and atrial fibrillation, and his anticoagulant was stopped 2 weeks ago before a dental proc",
+   "text": "신경 신경 — 심방세동 환자의 갑작스러운 시야 이상 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 A 69 year old man comes to the emergency department 5 hours after he suddenly had difficulty seeing while reading the newspaper. He has hypertension and atrial fibrillation, and his anticoagulant was stopped 2 weeks ago before a dental procedure and has not been restarted. Blood pressure is 158/92 mm Hg and pulse is 96/min and irregularly irregular. He is alert and fluent, follows commands, and has normal strength and sensation in all extremities. Confrontation testing shows a visual field defect. An axial diffusion weighted MR image of the brain is shown. Occlusion of which of the following arteries is the most likely cause? A. Left posterior cerebral artery B. Right middle cerebral artery C. Right anterior cerebral artery D. Right ophthalmic artery E. Right posterior cerebral artery"
+  },
+  {
+   "id": "imaging-2026-0706",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아심박동 가속의 의미",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0706.md",
+   "snippet": "29세 초산부가 임신 40주에 규칙적인 진통으로 입원하였다. 임신 경과 중 특이 사항은 없었고 양막은 터지지 않았다. 혈압 118/72 mmHg, 체온 36.8°C 이며 옥시토신은 쓰지 않았다. 내진에서 자궁경부는 4 cm 열려 있다. 전자 태아 감시를 시작한 뒤 10분 동안의 태아심박동과 자궁활동 기록은 그림과 같다. 기록 12~13분 사이에 보이는 태아심박동 변화가 의미하는 것으로 가장 적절한 것은? A. 그 시점에 태아 ",
+   "text": "산부인과 산과 — 분만 중 태아심박동 가속의 의미 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 29세 초산부가 임신 40주에 규칙적인 진통으로 입원하였다. 임신 경과 중 특이 사항은 없었고 양막은 터지지 않았다. 혈압 118/72 mmHg, 체온 36.8°C 이며 옥시토신은 쓰지 않았다. 내진에서 자궁경부는 4 cm 열려 있다. 전자 태아 감시를 시작한 뒤 10분 동안의 태아심박동과 자궁활동 기록은 그림과 같다. 기록 12~13분 사이에 보이는 태아심박동 변화가 의미하는 것으로 가장 적절한 것은? A. 그 시점에 태아 대사성 산증이 없음을 강하게 시사한다 B. 제대 압박이 반복되고 있음을 시사한다 C. 자궁태반 기능 부전으로 태아 저산소증이 있음을 시사한다 D. 태아 머리 압박에 의한 미주신경 반응을 시사한다 E. 태아 빈혈을 시사한다"
+  },
+  {
+   "id": "imaging-2026-0705",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 쉰 목소리를 호소하는 남성의 종격동 낭성 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0705.md",
+   "snippet": "47세 남자가 2개월 전부터 목소리가 쉬고 물을 마실 때 가끔 사레가 들린다며 왔다. 흡연력은 없고 상기도 감염 증상은 없었다. 혈압 126/80 mmHg, 맥박 72회/분, 체온 36.6°C 이다. 목에 만져지는 덩이나 림프절은 없다. 갑상샘 기능 검사와 혈청 칼슘은 정상이다. 흉부 조영 증강 CT 는 그림과 같다. 이 환자의 쉰 목소리의 기전으로 가장 적절한 것은? A. 성대 점막의 종양 침윤 B. 반복 음성 남용에 의한 ",
+   "text": "호흡기 호흡기 — 쉰 목소리를 호소하는 남성의 종격동 낭성 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 47세 남자가 2개월 전부터 목소리가 쉬고 물을 마실 때 가끔 사레가 들린다며 왔다. 흡연력은 없고 상기도 감염 증상은 없었다. 혈압 126/80 mmHg, 맥박 72회/분, 체온 36.6°C 이다. 목에 만져지는 덩이나 림프절은 없다. 갑상샘 기능 검사와 혈청 칼슘은 정상이다. 흉부 조영 증강 CT 는 그림과 같다. 이 환자의 쉰 목소리의 기전으로 가장 적절한 것은? A. 성대 점막의 종양 침윤 B. 반복 음성 남용에 의한 성대 결절 C. 왼쪽 되돌이후두신경의 압박 D. 오른쪽 되돌이후두신경의 압박 E. 위후두신경 바깥가지의 압박"
+  },
+  {
+   "id": "imaging-2026-0704",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 심근경색 후 시기별 조직 변화",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482",
+   "confidence": "high",
+   "date": "2026-11-18",
+   "path": "content/imaging/2026/imaging-2026-0704.md",
+   "snippet": "A 64 year old man with hypertension and type 2 diabetes mellitus is admitted with crushing substernal chest pain that began 6 hours earlier. An ECG shows ST segment elevation in leads V1 through V4, and serum troponin I is markedly elevated",
+   "text": "병리·조직학 병리 — 심근경색 후 시기별 조직 변화 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261118T202305Z_일일영상_2026-11-19_9units_9q_f4ffa482 A 64 year old man with hypertension and type 2 diabetes mellitus is admitted with crushing substernal chest pain that began 6 hours earlier. An ECG shows ST segment elevation in leads V1 through V4, and serum troponin I is markedly elevated. Percutaneous intervention is delayed because of a contrast allergy reaction. On hospital day 3 (about 2 to 3 days after the onset of pain), he develops sudden pulseless electrical activity and cannot be resuscitated. At autopsy, the anterior wall of the left ventricle is pale and soft. Microscopic examination of this area is most likely to show which of the following? A. Dense collagenous scar with few cells B. Wavy myocardial fibers without inflammation C. Coagulative necrosis with dense neutrophilic infiltration D. Macrophages phagocytosing dead myocytes E. Granulation tissue with new capillaries and fibroblasts"
   },
   {
    "id": "cn.cardio.heart-failure.hfref-gdmt-selection",
