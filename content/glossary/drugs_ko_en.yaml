@@ -3,6 +3,7 @@
 # 추가·수정 뒤: python pipelines/verify_glossary.py (NLM RxNav·MeSH API 조회 — 네트워크 필요)
 drugs:
   판토프라졸: pantoprazole
+  마바캄텐: mavacamten
   코신트로핀: cosyntropin
   드로스피레논: drospirenone
   두타스테리드: dutasteride

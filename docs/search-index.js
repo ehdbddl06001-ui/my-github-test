@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4019,
+  "total": 4020,
   "byType": {
    "usmle": 276,
+   "concept": 173,
    "paper": 953,
    "kmle": 1888,
    "imaging": 713,
-   "concept": 172,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 346,
+   "Cardiology": 347,
    "Nephrology": 255,
    "Infectious Disease": 237,
    "Pediatrics": 226,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2857,
+   "high": 2858,
    "medium": 1158,
    "low": 4
   },
@@ -204,6 +204,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0284.md",
    "snippet": "A 24 year old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or",
    "text": "Immunology A Swollen Lip and Cheek That Ignored Epinephrine Last Time and Attacks Coming More Often Since Starting the Pill in a 24-Year-Old Whose Father Needed a Tracheostomy hereditary-angioedema c1-inhibitor bradykinin complement mechanism immunology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis) A 24 year old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or genitals, each lasting 2 to 4 days; two episodes were accompanied by severe crampy abdominal pain and vomiting. During one previous episode, she was treated in another emergency department with intramuscular epinephrine, intravenous diphenhydramine, and methylprednisolone without noticeable improvement. The episodes have become more frequent since she began taking a combined estrogen progestin oral contraceptive 4 months ago. She takes no other medications. Her father had similar episodes of swelling and required an emergency tracheostomy at age 40 years. Her vital signs are shown. The upper lip and left cheek are swollen, nonpitting, and not red; there is no urticaria, and she reports no itching. The tongue and uvula are not swollen, and there is no stridor or hoarseness. The lungs are clear to auscultation. Laboratory results are shown. Which of the following best explains the mechanism of this patient's swelling? A. IgE mediated degranulation of mucosal mast cells B. Immune complex deposition activating the classical complement pathway C. Impaired breakdown of bradykinin by angiotensin converting enzyme D. Unregulated plasma kallikrein activity generating excess bradykinin E. Increased leukotriene synthesis caused by cyclooxygenase inhibition 두드러기·가려움이 없고 에피네프린·항히스타민·스테로이드에 반응하지 않은 부종은 히스타민(비만세포)이 아니라 브래디키닌 매개 혈관부종이다. 13세 발병, 얼굴·손·생식기를 오가는 2–4일 지속 부종, 복통 발작, 아버지의 같은 병력(상염색체 우성), C4 저하에 C1q 정상 → 유전성 혈관부종(hereditary angioedema, C1 esterase inhibitor 결핍)이다. C1 INH 는 보체 C1r·C1s 뿐 아니라 접촉계의 factor XIIa 와 plasma kallikrein 을 억제한다. 결핍되면 kallikrein 이 고분자 키니노겐을 끊어 bradykinin 이 과다 생성되고, bradykinin B2 수용체를 통해 혈관 투과성이 올라 부종이 생긴다. 에스트로겐은 발작을 악화시킨다. 비만세포 탈과립(A)은 두드러기·가려움을 동반하고 에피네프린에 반응하며 트립타제가 정상이다. ACE 억제(C)도 브래디키닌성이지만 이 환자는 ACE 억제제를 먹지 않는다. 면역복합체(B)는 혈관염을 일으키지 부종 발작을 일으키지 않고, COX 억제에 따른 류코트리엔 증가(E)는 NSAID 복용과 두드러기·천식을 동반한다."
+  },
+  {
+   "id": "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-11-19",
+   "path": "content/concepts/cardiology/cn.cardio.hypertrophic-cardiomyopathy.obstruction-management.md",
+   "snippet": "판단 — 왜 「음성 변력·느린 심박」이 먼저인가 관리 목표는 증상 조절과 급사·뇌졸중 예방 둘이고, 둘은 따로 평가한다 — 증상이 없어도 모든 환자에서 급사 위험과 심방세동을 본다 [[harrison 22: 267장 p.2007]]. 유출로 폐쇄는 대부분 약으로 조절된다. β차단제와 L형 칼슘통로차단제(베라파밀)는 심박을 늦추고 이완기 충만을 늘리고 수축력을 낮춰 폐쇄를 줄인다 [[harrison 22: 267장 p.2007]",
+   "text": "Cardiology 판단 — 왜 「음성 변력·느린 심박」이 먼저인가 관리 목표는 증상 조절과 급사·뇌졸중 예방 둘이고, 둘은 따로 평가한다 — 증상이 없어도 모든 환자에서 급사 위험과 심방세동을 본다 [[harrison 22: 267장 p.2007]]. 유출로 폐쇄는 대부분 약으로 조절된다. β차단제와 L형 칼슘통로차단제(베라파밀)는 심박을 늦추고 이완기 충만을 늘리고 수축력을 낮춰 폐쇄를 줄인다 [[harrison 22: 267장 p.2007]]. 그래도 증상(운동 시 호흡곤란·흉통)이 남으면 마바캄텐(심근 미오신 억제제)이나 디소피라미드를 더하고, 약물 불응 중증(약 5 %)은 중격 감소술로 간다 [[harrison 22: 267장 p.2007]]. 시술은 증상만 개선한다 — 급사는 약·시술로 줄지 않아 위험이 높으면 ICD 를 둔다 [[harrison 22: 267장 p.2007–2008]]. 기전 — 작은 심실이 승모판을 끌어당긴다 비대심근병증은 고혈압·대동맥판 질환·침윤·축적 질환 없이 생긴 좌심실 비대다. 근절(sarcomere) 변이(약 80 % 가 MYH7·MYBPC3)가 칼슘 감수성·최대 장력·ATP 분해를 높이고 이완을 해치며, 근섬유가 엇갈려 배열(disarray)되고 섬유화·미세혈관 질환이 함께 온다 [[harrison 22: 267장 p.2005]]. 비대는 대개 중격에 가장 두껍다. 수축기에 앞으로 밀린 커다란 승모판 앞엽이 끌림 힘(drag)에 끌려 비대한 중격에 닿으면 유출로가 막히고(안정 시 약 30 %, 운동으로 유발 약 30 %), 승모판 접합이 어긋나 뒤쪽으로 향하는 승모판 역류가 생긴다. 심실은 더 높은 압력으로 짜내야 해 벽 응력과 산소 요구가 늘고, 두꺼워진 벽내 혈관과 함께 협심증의 원인이 된다 [[harrison 22: 267장 p.2006]]. 잡음은 거칠고 늦게 정점에 이르는 수축기 박출 잡음이다 [[harrison 22: 267장 p.2006]]. 가르는 소견 — 진단은 영상으로 진찰과 심전도는 민감하지 않아 심장 영상이 진단의 중심이다. 생검은 진단용으로 권하지 않고 침윤·대사 질환을 배제할 때만 쓴다 [[harrison 22: 267장 p.2006–2007]]. 운동선수 심장(athlete's heart)은 훈련을 멈추면 비대가 줄고, 운동 능력이 매우 높고(VO2max 50 mL/kg/분), 심실이 약간 커지며 이완 기능이 정상이라는 점에서 가볍게 비대한 HCM 과 갈린다 [[harrison 22: 267장 p.2007]]. 선택 — 증상 단계와 급사 위험은 따로 본다 마바캄텐의 주된 위험은 일시적 LVEF 감소라 심초음파로 자주 감시한다 [[harrison 22: 267장 p.2007]]. 중격 근절제술은 동반 승모판 역류가 대개 근절제술만으로 풀려 판막 수술이 필요 없다. 알코올 중격 절제술은 근위 중격에 조절된 경색을 만들어 비슷한 압력차 감소를 얻으며, 수술을 피하고 싶거나 동반질환이 있는 환자에게 주로 쓴다 [[harrison 22: 267장 p.2007]]. 심방세동은 흔하고 빠른 심실 반응을 잘 견디지 못하며 폐쇄를 악화시킨다. 맥박 조절 뒤에도 방실 동기 상실로 증상이 남으면 동리듬 회복이 필요할 수 있다 [[harrison 22: 267장 p.2008]]. 권고와 예외 격한 운동·경쟁 스포츠는 예전에 금지했으나 최근 연구에서 운동과 심실 부정맥의 관련이 확인되지 않아 함께 결정한다 [[harrison 22: 267장 p.2008]]. 기본 급사 위험은 연 0.5 % 안팎(1 % 미만)이고, 20명 중 1명까지는 EF < 50 % 의 말기(burned out) HCM 으로 진행해 제때 심장이식을 받지 않으면 심부전·급사로 사망 위험이 높다 [[harrison 22: 267장 p.2008]]. 가족은 청소년기부터 성인기까지 심초음파·심전도로 길게 추적한다 — 침투도가 나이에 따라 늘고 불완전하다 [[harrison 22: 267장 p.2004–2005]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 새 근거 · 격한 운동 제한 — 시험 기준: 운동 여부는 위험을 두고 환자와 함께 결정한다 [[harrison 22: 267장 p.2008]] / 다른 기준: 격한 운동·경쟁 스포츠는 예전에는 금지했다(같은 쪽이 「historically prohibited」로 적는다) [[harrison 22: 267장 p.2008]] / 왜 다른가: 최근 연구에서 운동과 심실 부정맥의 관련이 확인되지 않았다 / 시험에서는: KMLE · USMLE 모두 옛 문항은 「경쟁 운동 금지」를 정답으로 둘 수 있다 — 보기에 「공동 결정」이 없으면 옛 기준으로 답이 갈릴 수 있음을 기억한다."
   },
   {
    "id": "paper-2026-0953",

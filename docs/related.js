@@ -202,6 +202,28 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    }
   ],
+  "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management": [
+   {
+    "id": "paper-2026-0461",
+    "how": "t",
+    "term": "hypertrophic cardiomyopathy"
+   },
+   {
+    "id": "paper-2026-0833",
+    "how": "t",
+    "term": "hypertrophic cardiomyopathy"
+   },
+   {
+    "id": "paper-2026-0271",
+    "how": "t",
+    "term": "hypertrophic cardiomyopathy"
+   },
+   {
+    "id": "paper-2026-0026",
+    "how": "a",
+    "term": "hypertrophic cardiomyopathy"
+   }
+  ],
   "cn.cardio.nyha-class.functional-assessment": [
    {
     "id": "paper-2026-0491",
@@ -424,6 +446,14 @@ window.MEDKOS_RELATED = {
   ]
  },
  "papers": {
+  "paper-2026-0026": {
+   "t": "Surgical Septal Myectomy and Atrial Myxoma Resection: Two Diseases, One Heart, and a Case Report",
+   "j": "The American journal of case reports",
+   "d": "2026-07-05",
+   "c": [
+    "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
+   ]
+  },
   "paper-2026-0045": {
    "t": "Mast cell-derived IL-13 as a driver of Crohn disease-associated intestinal fibrosis",
    "j": "Inflammatory bowel diseases",
@@ -523,6 +553,14 @@ window.MEDKOS_RELATED = {
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
    ]
   },
+  "paper-2026-0271": {
+   "t": "2014 ESC Guidelines on diagnosis and management of hypertrophic cardiomyopathy: the Task Force for the Diagnosis and Management of Hypertrophic Cardiomyopathy of the European Society of Cardiology (ESC)",
+   "j": "European heart journal",
+   "d": "2014-10-14",
+   "c": [
+    "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
+   ]
+  },
   "paper-2026-0293": {
    "t": "2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines",
    "j": "Journal of the American College of Cardiology",
@@ -610,6 +648,14 @@ window.MEDKOS_RELATED = {
    "d": "2004-06",
    "c": [
     "cn.psy.ptsd.duration-vs-acute-stress"
+   ]
+  },
+  "paper-2026-0461": {
+   "t": "Coronary CT angiography-derived perivascular fat attenuation index as a potential marker for heart failure in hypertrophic cardiomyopathy",
+   "j": "The British journal of radiology",
+   "d": "2026-08-21",
+   "c": [
+    "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
    ]
   },
   "paper-2026-0462": {
@@ -788,6 +834,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.heart-failure.hfref-gdmt-selection"
    ]
   },
+  "paper-2026-0833": {
+   "t": "Atypical echocardiographic phenotype of end-stage hypertrophic cardiomyopathy: a case series",
+   "j": "Frontiers in cardiovascular medicine",
+   "d": "2026",
+   "c": [
+    "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
+   ]
+  },
   "paper-2026-0838": {
    "t": "Same Class, Different Risk? Dapagliflozin versus Empagliflozin and Genitourinary Safety in Heart Failure with Preserved Ejection Fraction: A Retrospective Comparative Cohort Study",
    "j": "Romanian journal of internal medicine = Revue roumaine de medecine interne",
@@ -926,6 +980,7 @@ window.MEDKOS_RELATED = {
   "cn.cardio.cvd-epidemiology.transition-risk-burden": "심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다",
   "cn.cardio.heart-failure.hfref-gdmt-selection": "HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약",
   "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": "심부전 진단 — 펩타이드로 거르고 심초음파로 나눈다",
+  "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management": "비대심근병증 — 폐쇄는 음성 변력으로 푼다",
   "cn.cardio.nyha-class.functional-assessment": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
   "cn.derm.scabies.treat-with-contacts": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
   "cn.em.ards.lung-protective-ventilation": "급성호흡곤란증후군 — 심장 원인 배제 뒤 첫 처치는 폐보호 환기",
