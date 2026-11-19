@@ -1,22 +1,22 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-18",
+ "generated": "2026-11-20",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4020,
+  "total": 4033,
   "byType": {
+   "imaging": 725,
    "usmle": 276,
+   "paper": 954,
    "concept": 173,
-   "paper": 953,
    "kmle": 1888,
-   "imaging": 713,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 347,
+   "Cardiology": 348,
    "Nephrology": 255,
    "Infectious Disease": 237,
    "Pediatrics": 226,
@@ -35,21 +35,21 @@ window.MEDKOS_INDEX = {
    "Surgery": 123,
    "Pulmonology": 122,
    "Hematology": 115,
-   "순환기": 109,
+   "순환기": 113,
    "Laboratory Medicine": 97,
-   "산부인과": 88,
-   "호흡기": 47,
-   "소화기": 42,
-   "소아과": 37,
+   "산부인과": 90,
+   "호흡기": 48,
+   "소화기": 43,
+   "소아과": 38,
    "신장·비뇨기": 33,
+   "혈액·종양": 33,
+   "신경": 32,
    "응급·중환자": 32,
-   "혈액·종양": 32,
    "감염": 31,
    "내분비": 31,
-   "신경": 31,
    "병리·조직학": 30,
    "Physiology": 29,
-   "피부과": 27,
+   "피부과": 28,
    "외과": 26,
    "예방의학·역학": 25,
    "Pharmacology": 23,
@@ -77,13 +77,227 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2858,
-   "medium": 1158,
+   "high": 2870,
+   "medium": 1159,
    "low": 4
   },
   "tagCount": 4902
  },
  "docs": [
+  {
+   "id": "imaging-2026-0726",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 두근거림을 호소하는 중년 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202500Z_일일심전도_2026-11-20_3units_3q_5c5f0d48",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0726.md",
+   "snippet": "A 43 year old woman comes to the physician because of intermittent palpitations for 1 month, which she describes as a pause followed by a forceful beat. Symptoms are worse after drinking coffee and when she lies on her left side. She has no",
+   "text": "순환기 심전도 판독 — 두근거림을 호소하는 중년 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202500Z_일일심전도_2026-11-20_3units_3q_5c5f0d48 A 43 year old woman comes to the physician because of intermittent palpitations for 1 month, which she describes as a pause followed by a forceful beat. Symptoms are worse after drinking coffee and when she lies on her left side. She has no chest pain, dyspnea or syncope and takes no medications. Blood pressure is 122/76 mm Hg and pulse is 78/min and irregular. Cardiac examination shows no murmurs. Serum potassium, magnesium and thyroid stimulating hormone concentrations are normal. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Mobitz type II second degree atrioventricular block B. Ventricular trigeminy C. Atrial trigeminy with aberrant ventricular conduction D. Intermittent ventricular preexcitation E. Intermittent left bundle branch block"
+  },
+  {
+   "id": "imaging-2026-0725",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 건강검진 심전도 이상으로 온 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202500Z_일일심전도_2026-11-20_3units_3q_5c5f0d48",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0725.md",
+   "snippet": "69세 남자가 건강검진에서 심전도 이상이 있다는 말을 듣고 왔다. 가슴 통증, 숨참, 실신은 없고 평소 계단 3층을 쉬지 않고 오른다. 이전 심전도는 없다. 혈압 132/80 mmHg, 맥박 84회/분이다. 심잡음은 없고 다리 부종도 없다. 혈청 고감도 트로포닌은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 혈전용해제 투여 B. 추가 검사 없이 1년 뒤 심전도 재검 C. 경흉부 심장초음파 D",
+   "text": "순환기 심전도 처치 — 건강검진 심전도 이상으로 온 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202500Z_일일심전도_2026-11-20_3units_3q_5c5f0d48 69세 남자가 건강검진에서 심전도 이상이 있다는 말을 듣고 왔다. 가슴 통증, 숨참, 실신은 없고 평소 계단 3층을 쉬지 않고 오른다. 이전 심전도는 없다. 혈압 132/80 mmHg, 맥박 84회/분이다. 심잡음은 없고 다리 부종도 없다. 혈청 고감도 트로포닌은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 혈전용해제 투여 B. 추가 검사 없이 1년 뒤 심전도 재검 C. 경흉부 심장초음파 D. 영구 심박동기 삽입 E. 응급 관상동맥조영술"
+  },
+  {
+   "id": "imaging-2026-0724",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 가끔 심장이 건너뛰는 느낌을 호소하는 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202500Z_일일심전도_2026-11-20_3units_3q_5c5f0d48",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0724.md",
+   "snippet": "76세 여자가 2주 전부터 가끔 심장이 한 번씩 건너뛰는 느낌이 든다며 왔다. 어지럼, 실신, 가슴 통증은 없다. 고혈압으로 약을 먹고 있다. 혈압 134/78 mmHg, 맥박 76회/분이며 가끔 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심방 기외수축 B. 심실 기외수축 C. 2도 방실차단(Mobitz I형)",
+   "text": "순환기 심전도 판독 — 가끔 심장이 건너뛰는 느낌을 호소하는 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202500Z_일일심전도_2026-11-20_3units_3q_5c5f0d48 76세 여자가 2주 전부터 가끔 심장이 한 번씩 건너뛰는 느낌이 든다며 왔다. 어지럼, 실신, 가슴 통증은 없다. 고혈압으로 약을 먹고 있다. 혈압 134/78 mmHg, 맥박 76회/분이며 가끔 불규칙하다. 심잡음은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 심방 기외수축 B. 심실 기외수축 C. 2도 방실차단(Mobitz I형) D. 동정지 E. 심방세동"
+  },
+  {
+   "id": "imaging-2026-0723",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 다리의 비대칭 색소 병변",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0723.md",
+   "snippet": "25세 여자가 다리의 갈색 점이 최근 몇 달 사이 커지고 모양이 변했다며 왔다. 통증이나 가려움, 출혈은 없다. 피부암의 가족력은 없고 어릴 때 햇볕에 심하게 탄 적이 여러 번 있다. 다리에 지름 약 1 cm 의 편평한 갈색 반이 있고, 만져지는 림프절은 없다. 병변의 더모스코피 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 3개월 뒤 더모스코피로 재검 B. 2 cm 경계를 두고 광범위 절제 C. 레이저로 색소를 ",
+   "text": "피부과 피부 — 다리의 비대칭 색소 병변 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 25세 여자가 다리의 갈색 점이 최근 몇 달 사이 커지고 모양이 변했다며 왔다. 통증이나 가려움, 출혈은 없다. 피부암의 가족력은 없고 어릴 때 햇볕에 심하게 탄 적이 여러 번 있다. 다리에 지름 약 1 cm 의 편평한 갈색 반이 있고, 만져지는 림프절은 없다. 병변의 더모스코피 사진은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 3개월 뒤 더모스코피로 재검 B. 2 cm 경계를 두고 광범위 절제 C. 레이저로 색소를 제거 D. 1~3 mm 경계를 두고 병변 전체를 절제 생검 E. 병변 일부를 면도 생검"
+  },
+  {
+   "id": "imaging-2026-0722",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 넘어져 손목을 짚은 아동의 손목 X선",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0722.md",
+   "snippet": "A 6 year old boy is brought to the emergency department 2 hours after he fell from a playground swing onto his outstretched left hand. He has pain in the left wrist and does not want to use the hand. He has no history of fractures, and his ",
+   "text": "소아과 소아 — 넘어져 손목을 짚은 아동의 손목 X선 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 A 6 year old boy is brought to the emergency department 2 hours after he fell from a playground swing onto his outstretched left hand. He has pain in the left wrist and does not want to use the hand. He has no history of fractures, and his growth and diet are normal. Vital signs are normal. Examination shows mild swelling and point tenderness over the distal forearm without visible deformity. Radial pulse, capillary refill and finger movements are normal. An anteroposterior radiograph of the left wrist is shown. Which of the following characteristics of this patient's bone best explains the injury pattern seen? A. Low bone mineral density from vitamin D deficiency B. Avascular necrosis of an ossification center C. Excessive collagen cross linking that makes cortical bone brittle D. Porous, compliant metaphyseal bone that buckles under axial compression E. Physeal cartilage that is weaker than the surrounding ligaments and bone"
+  },
+  {
+   "id": "imaging-2026-0721",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 질 출혈과 한쪽 아랫배 통증이 있는 여성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0721.md",
+   "snippet": "32세 여자가 3일 전부터 왼쪽 아랫배가 아프고 질 출혈이 조금 있다며 왔다. 마지막 월경은 7주 전이었고, 4개월 전에 출산한 아기에게 지금도 모유를 먹이고 있다. 혈압 118/74 mmHg, 맥박 82회/분이다. 왼쪽 부속기 부위에 가벼운 압통이 있다. 혈청 β hCG 는 2,800 mIU/mL 이고 48시간 전 2,300 mIU/mL 이었다. 질식 초음파에서 자궁 안에 임신낭이 없고 왼쪽 부속기에 2.5 cm 종괴가 있으",
+   "text": "산부인과 부인과 — 질 출혈과 한쪽 아랫배 통증이 있는 여성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 32세 여자가 3일 전부터 왼쪽 아랫배가 아프고 질 출혈이 조금 있다며 왔다. 마지막 월경은 7주 전이었고, 4개월 전에 출산한 아기에게 지금도 모유를 먹이고 있다. 혈압 118/74 mmHg, 맥박 82회/분이다. 왼쪽 부속기 부위에 가벼운 압통이 있다. 혈청 β hCG 는 2,800 mIU/mL 이고 48시간 전 2,300 mIU/mL 이었다. 질식 초음파에서 자궁 안에 임신낭이 없고 왼쪽 부속기에 2.5 cm 종괴가 있으며 태아 심장 박동은 보이지 않는다. 복강 안 액체는 소량이다. 혈색소 12.8 g/dL, 간·콩팥 기능은 정상이다. 오른쪽 난관은 초음파에서 정상이다. 치료로 가장 적절한 것은? A. 개복 양쪽 난관절제술 B. 복강경 왼쪽 난관절제술 C. 메토트렉세이트 근육 주사 D. β hCG 를 48시간마다 추적 관찰 E. 자궁내막 소파술"
+  },
+  {
+   "id": "imaging-2026-0720",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 갑자기 말이 어눌해진 젊은 여성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0720.md",
+   "snippet": "A 34 year old woman is brought to the emergency department because of confusion and slurred speech that began 6 hours ago. For 3 days she has had fatigue and easy bruising. She takes no medications. Temperature is 37.9°C, blood pressure is ",
+   "text": "혈액·종양 혈액·종양 — 갑자기 말이 어눌해진 젊은 여성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 A 34 year old woman is brought to the emergency department because of confusion and slurred speech that began 6 hours ago. For 3 days she has had fatigue and easy bruising. She takes no medications. Temperature is 37.9°C, blood pressure is 138/84 mm Hg, and pulse is 102/min. She is disoriented to time and has petechiae on the legs. Hemoglobin is 7.8 g/dL, platelet count is 14,000/mm³, reticulocytes are 6%, LDH is 1,450 U/L, and haptoglobin is undetectable. A peripheral blood smear shows many schistocytes. Prothrombin time and activated partial thromboplastin time are normal. Creatinine is 1.3 mg/dL. Direct antiglobulin test is negative. Which of the following is the most appropriate next step in management? A. Eculizumab B. Unfractionated heparin infusion C. Therapeutic plasma exchange D. Platelet transfusion E. Intravenous immune globulin"
+  },
+  {
+   "id": "imaging-2026-0719",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "감염 — 열·기침·호흡곤란으로 온 성인",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0719.md",
+   "snippet": "38세 남자가 7일 전부터 열과 기침이 나고 2일 전부터 숨이 차서 응급실에 왔다. 비인두 검체의 SARS CoV 2 역전사 중합효소연쇄반응 검사는 양성이다. 체온 38.6°C, 혈압 128/80 mmHg, 맥박 104회/분, 호흡 26회/분이며 실내 공기에서 산소포화도는 89 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 백혈구 6,200/mm³, 프로칼시토닌 0.08 ng/mL 이다. 코 삽관으로 산소를 주기 시작하였다.",
+   "text": "호흡기 감염 — 열·기침·호흡곤란으로 온 성인 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 38세 남자가 7일 전부터 열과 기침이 나고 2일 전부터 숨이 차서 응급실에 왔다. 비인두 검체의 SARS CoV 2 역전사 중합효소연쇄반응 검사는 양성이다. 체온 38.6°C, 혈압 128/80 mmHg, 맥박 104회/분, 호흡 26회/분이며 실내 공기에서 산소포화도는 89 % 이다. 양쪽 폐 아래쪽에서 수포음이 들린다. 백혈구 6,200/mm³, 프로칼시토닌 0.08 ng/mL 이다. 코 삽관으로 산소를 주기 시작하였다. 이동식 흉부 X선 사진은 그림과 같다. 이 환자의 치료로 가장 적절한 것은? A. 덱사메타손 6 mg 하루 1회 투여 B. 니르마트렐비르 리토나비르 경구 투여 C. 하이드록시클로로퀸 경구 투여 D. 메틸프레드니솔론 1 g 하루 1회 3일 투여 E. 반코마이신과 피페라실린 타조박탐 정맥 투여"
+  },
+  {
+   "id": "imaging-2026-0718",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 눈을 움직일 때 아프면서 시력이 떨어진 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0718.md",
+   "snippet": "A 48 year old man comes to the physician because of blurred vision for 5 days. The blurring is worse in one eye, and he has pain behind that eye that increases when he moves his eyes. He has no history of diabetes mellitus, hypertension, or",
+   "text": "신경 신경 — 눈을 움직일 때 아프면서 시력이 떨어진 남성 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 A 48 year old man comes to the physician because of blurred vision for 5 days. The blurring is worse in one eye, and he has pain behind that eye that increases when he moves his eyes. He has no history of diabetes mellitus, hypertension, or trauma. Blood pressure is 124/78 mm Hg. Visual acuity is 20/200 in the more affected eye and 20/40 in the other eye, and color vision is reduced in the more affected eye. Extraocular movements are full. Contrast enhanced MR images of the orbits are shown. Which of the following is the most likely finding on the swinging flashlight test? A. Miosis of the left pupil that is more obvious in dim light B. Fixed dilated left pupil that does not constrict to light or near C. Relative afferent pupillary defect in the left eye D. Relative afferent pupillary defect in the right eye E. Bilateral light near dissociation"
+  },
+  {
+   "id": "imaging-2026-0717",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 복수가 있는 간경변 환자의 발열과 복통",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0717.md",
+   "snippet": "58세 남자가 3일 전부터 열이 나고 배가 아프다며 왔다. 알코올 간경변으로 복수가 있어 이뇨제를 먹고 있다. 체온 38.1°C, 혈압 104/66 mmHg, 맥박 98회/분이다. 배가 불러 있고 이동탁음이 있으며 전반적인 압통이 있으나 반발통은 뚜렷하지 않다. 혈청 알부민 2.6 g/dL, 크레아티닌 1.1 mg/dL 이다. 복수 천자 검사에서 백혈구 820/mm³(다형핵백혈구 72 %), 알부민 0.6 g/dL, 그람 염색",
+   "text": "소화기 소화기 — 복수가 있는 간경변 환자의 발열과 복통 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 58세 남자가 3일 전부터 열이 나고 배가 아프다며 왔다. 알코올 간경변으로 복수가 있어 이뇨제를 먹고 있다. 체온 38.1°C, 혈압 104/66 mmHg, 맥박 98회/분이다. 배가 불러 있고 이동탁음이 있으며 전반적인 압통이 있으나 반발통은 뚜렷하지 않다. 혈청 알부민 2.6 g/dL, 크레아티닌 1.1 mg/dL 이다. 복수 천자 검사에서 백혈구 820/mm³(다형핵백혈구 72 %), 알부민 0.6 g/dL, 그람 염색에서 균은 보이지 않았다. 다음 처치로 가장 적절한 것은? A. 경구 노르플록사신 예방 투여 B. 세포탁심 정맥 투여 C. 복수 배양 결과가 나올 때까지 관찰 D. 응급 개복술 E. 대량 복수 천자와 알부민 투여"
+  },
+  {
+   "id": "imaging-2026-0716",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 질식분만 직후의 다량 출혈",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0716.md",
+   "snippet": "A 31 year old woman, gravida 3, para 3, delivers a 4,200 g boy vaginally after an 18 hour labor augmented with oxytocin. The placenta is delivered intact 10 minutes later. Over the next 15 minutes, she has heavy vaginal bleeding with an est",
+   "text": "산부인과 산과 — 질식분만 직후의 다량 출혈 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 A 31 year old woman, gravida 3, para 3, delivers a 4,200 g boy vaginally after an 18 hour labor augmented with oxytocin. The placenta is delivered intact 10 minutes later. Over the next 15 minutes, she has heavy vaginal bleeding with an estimated blood loss of 1,100 mL. Blood pressure is 102/64 mm Hg and pulse is 112/min. The uterine fundus is palpated above the umbilicus and is soft and boggy. Inspection of the cervix and vagina shows no lacerations. Which of the following is the most appropriate next step in management? A. Bimanual uterine massage and intravenous oxytocin B. Manual exploration of the uterine cavity for retained placenta C. Transfusion of fresh frozen plasma D. Emergency hysterectomy E. Repair of a cervical laceration"
+  },
+  {
+   "id": "imaging-2026-0715",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0715.md",
+   "snippet": "19세 남자가 축구 경기 중 갑자기 쓰러져 약 30초 동안 의식을 잃었다가 깨어나 응급실에 왔다. 최근 몇 달 동안 운동할 때 숨이 차고 가슴이 답답했다. 삼촌이 30대에 갑자기 사망하였다. 혈압 118/72 mmHg, 맥박 76회/분이다. 흉골 왼쪽 아래 경계에서 3/6 등급의 수축기 잡음이 들리고 목으로 퍼지지 않는다. 이 잡음은 발살바법을 하면 커지고 쪼그려 앉으면 작아진다. 혈청 트로포닌과 전해질은 정상이다. 가장 가능",
+   "text": "순환기 순환기 — 운동 중 실신한 젊은 남성의 수축기 잡음 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261119T202325Z_일일영상_2026-11-20_9units_9q_860db963 19세 남자가 축구 경기 중 갑자기 쓰러져 약 30초 동안 의식을 잃었다가 깨어나 응급실에 왔다. 최근 몇 달 동안 운동할 때 숨이 차고 가슴이 답답했다. 삼촌이 30대에 갑자기 사망하였다. 혈압 118/72 mmHg, 맥박 76회/분이다. 흉골 왼쪽 아래 경계에서 3/6 등급의 수축기 잡음이 들리고 목으로 퍼지지 않는다. 이 잡음은 발살바법을 하면 커지고 쪼그려 앉으면 작아진다. 혈청 트로포닌과 전해질은 정상이다. 가장 가능성이 높은 진단은? A. 대동맥판 협착 B. 승모판 탈출 C. 심실중격결손 D. 확장심근병증 E. 비대심근병증"
+  },
   {
    "id": "usmle-2026-0289",
    "type": "usmle",
@@ -204,6 +418,23 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0284.md",
    "snippet": "A 24 year old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or",
    "text": "Immunology A Swollen Lip and Cheek That Ignored Epinephrine Last Time and Attacks Coming More Often Since Starting the Pill in a 24-Year-Old Whose Father Needed a Tracheostomy hereditary-angioedema c1-inhibitor bradykinin complement mechanism immunology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 363장 Urticaria, Angioedema, and Allergic Rhinitis) A 24 year old woman comes to the emergency department because of swelling of her upper lip and left cheek that began 10 hours ago and has slowly worsened. Since age 13 years, she has had 5 similar episodes of swelling of the face, hands, or genitals, each lasting 2 to 4 days; two episodes were accompanied by severe crampy abdominal pain and vomiting. During one previous episode, she was treated in another emergency department with intramuscular epinephrine, intravenous diphenhydramine, and methylprednisolone without noticeable improvement. The episodes have become more frequent since she began taking a combined estrogen progestin oral contraceptive 4 months ago. She takes no other medications. Her father had similar episodes of swelling and required an emergency tracheostomy at age 40 years. Her vital signs are shown. The upper lip and left cheek are swollen, nonpitting, and not red; there is no urticaria, and she reports no itching. The tongue and uvula are not swollen, and there is no stridor or hoarseness. The lungs are clear to auscultation. Laboratory results are shown. Which of the following best explains the mechanism of this patient's swelling? A. IgE mediated degranulation of mucosal mast cells B. Immune complex deposition activating the classical complement pathway C. Impaired breakdown of bradykinin by angiotensin converting enzyme D. Unregulated plasma kallikrein activity generating excess bradykinin E. Increased leukotriene synthesis caused by cyclooxygenase inhibition 두드러기·가려움이 없고 에피네프린·항히스타민·스테로이드에 반응하지 않은 부종은 히스타민(비만세포)이 아니라 브래디키닌 매개 혈관부종이다. 13세 발병, 얼굴·손·생식기를 오가는 2–4일 지속 부종, 복통 발작, 아버지의 같은 병력(상염색체 우성), C4 저하에 C1q 정상 → 유전성 혈관부종(hereditary angioedema, C1 esterase inhibitor 결핍)이다. C1 INH 는 보체 C1r·C1s 뿐 아니라 접촉계의 factor XIIa 와 plasma kallikrein 을 억제한다. 결핍되면 kallikrein 이 고분자 키니노겐을 끊어 bradykinin 이 과다 생성되고, bradykinin B2 수용체를 통해 혈관 투과성이 올라 부종이 생긴다. 에스트로겐은 발작을 악화시킨다. 비만세포 탈과립(A)은 두드러기·가려움을 동반하고 에피네프린에 반응하며 트립타제가 정상이다. ACE 억제(C)도 브래디키닌성이지만 이 환자는 ACE 억제제를 먹지 않는다. 면역복합체(B)는 혈관염을 일으키지 부종 발작을 일으키지 않고, COX 억제에 따른 류코트리엔 증가(E)는 NSAID 복용과 두드러기·천식을 동반한다."
+  },
+  {
+   "id": "paper-2026-0954",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology",
+   "confidence": "medium",
+   "date": "2026-11-19",
+   "path": "content/papers/2026/2026-11-19_paper-2026-0954_five_year_risk_of_cardiovascular_events_in_women_with_histor.md",
+   "snippet": "Title Five year risk of cardiovascular events in women with history of pregnancy complicated by fetal growth restriction Authors Anand K, Bucci T, Sudell M, Lip G Y H, Merriel A Journal / DOI Ultrasound in obstetrics & gynecology : the offi",
+   "text": "Cardiology scraped pubmed PubMed / Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology Title Five year risk of cardiovascular events in women with history of pregnancy complicated by fetal growth restriction Authors Anand K, Bucci T, Sudell M, Lip G Y H, Merriel A Journal / DOI Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology · DOI: 10.1002/uog.70387 · PMID: 43050674 https://pubmed.ncbi.nlm.nih.gov/43050674/ Abstract OBJECTIVE: To evaluate the association between fetal growth restriction (FGR) and adverse maternal cardiovascular outcomes within 5 years postpartum. METHODS: This was a retrospective study that used a global federated health research network (TriNetX) in which diagnoses are coded using the International Classification of Diseases, tenth revision, Clinical Modification system (ICD 10 CM). Nulliparous women aged ≥ 18 years, without prior cardiovascular disease and with a singleton pregnancy delivered between April 2006 and December 2020, were categorized by the presence or absence of FGR (ICD 10 CM: O36.5). 1:1 propensity score matching (PSM) was applied using two models: Model 1, matching for pre existing cardiovascular risk factors; and Model 2, matching for both pre existing and other pregnancy related cardiovascular risk factors. Cox regression proportional hazard models were used to estimate hazard ratios (HRs) with 95% CI for a maternal composite cardiovascular outcome including heart failure, acute myocardial infarction and cerebral infarction/ischemic stroke within 5 years postpartum, and for each of these components individually. RESULTS: After PSM, 84 863 women per group were analyzed in Model 1 and 84 861 per group in Model 2. FGR was associated with an increased risk of the composite cardiovascular outcome (Model 1: HR, 1.33 (95% CI, 1.16 1.52); Model 2: HR, 1.31 (95% CI, 1.15 1.50)), as well as with an increased risk of each of the components of the composite outcome individually: heart failure (Model 1: HR, 1.29 (95% CI, 1.08 1.54); Model 2: HR, 1.30 (95% CI, 1.09 1.56)), acute myocardial infarction (Model 1: HR, 1.55 (95% CI, 1.16 2.08); Model 2: HR, 1.53 (95% CI, 1.15 2.05)) and cerebral infarction/ischemic stroke (Model 1: HR, 1.38 (95% CI, 1.09 1.74); Model 2: HR, 1.33 (95% CI, 1.06 1.68)) within 5 years postpartum. CONCLUSIONS: FGR in a first pregnancy is associated with increased maternal composite cardiovascular risk, including heart failure, acute myocardial infarction and cerebral infarction/ischemic stroke, within 5 years postpartum. These findings suggest that FGR may be a marker of early cardiovascular vulnerability. However, residual confounding, particularly by unmeasured timing or severity of pre eclampsia, cannot be excluded. Also, FGR was identified using coding constructs based on electronic health records, which may include overlap with broader 'suspected poor growth' phenotypes such as small for gestational age, hence potentially diluting the observed associations. Earlier risk assessment and preventive strategies may help to reduce the risk of long term morbidity and mortality in this population. © 2026 The Author(s). Ultrasound in Obstetrics & Gynecology published by John Wiley & Sons Ltd on behalf of International Society of Ultrasound in Obstetrics and Gynecology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management",
