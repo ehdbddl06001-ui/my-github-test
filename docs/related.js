@@ -202,6 +202,18 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    }
   ],
+  "cn.cardio.heart-transplant.post-transplant-complication": [
+   {
+    "id": "paper-2026-0819",
+    "how": "t",
+    "term": "heart transplant"
+   },
+   {
+    "id": "paper-2026-0445",
+    "how": "t",
+    "term": "heart transplant"
+   }
+  ],
   "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management": [
    {
     "id": "paper-2026-0461",
@@ -650,6 +662,14 @@ window.MEDKOS_RELATED = {
     "cn.psy.ptsd.duration-vs-acute-stress"
    ]
   },
+  "paper-2026-0445": {
+   "t": "Management of Residual Extracardiac Congenital Heart Disease After Heart Transplant",
+   "j": "JACC. Advances",
+   "d": "2026-07-29",
+   "c": [
+    "cn.cardio.heart-transplant.post-transplant-complication"
+   ]
+  },
   "paper-2026-0461": {
    "t": "Coronary CT angiography-derived perivascular fat attenuation index as a potential marker for heart failure in hypertrophic cardiomyopathy",
    "j": "The British journal of radiology",
@@ -826,6 +846,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
    ]
   },
+  "paper-2026-0819": {
+   "t": "Equity Gaps in Sex, Racial, and Ethnic Inclusion in United States Heart Transplant Trials",
+   "j": "Clinical transplantation",
+   "d": "2026-10",
+   "c": [
+    "cn.cardio.heart-transplant.post-transplant-complication"
+   ]
+  },
   "paper-2026-0826": {
    "t": "Dose-Response Associations of Exercise Modalities With Cardiorespiratory Fitness in Heart Failure: A Systematic Review and Bayesian Network Meta-Analysis",
    "j": "European journal of preventive cardiology",
@@ -980,6 +1008,7 @@ window.MEDKOS_RELATED = {
   "cn.cardio.cvd-epidemiology.transition-risk-burden": "심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다",
   "cn.cardio.heart-failure.hfref-gdmt-selection": "HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약",
   "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": "심부전 진단 — 펩타이드로 거르고 심초음파로 나눈다",
+  "cn.cardio.heart-transplant.post-transplant-complication": "심장이식 후 — 시기와 기전이 합병증을 가른다",
   "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management": "비대심근병증 — 폐쇄는 음성 변력으로 푼다",
   "cn.cardio.nyha-class.functional-assessment": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
   "cn.derm.scabies.treat-with-contacts": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
