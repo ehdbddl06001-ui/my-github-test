@@ -1,5 +1,53 @@
 {
  "drugs": {
+  "바소프레신": {
+   "en": "vasopressin",
+   "rxcui": "11149"
+  },
+  "세페핌": {
+   "en": "cefepime",
+   "rxcui": "20481"
+  },
+  "이미페넴": {
+   "en": "imipenem",
+   "rxcui": "5690"
+  },
+  "메로페넴": {
+   "en": "meropenem",
+   "rxcui": "29561"
+  },
+  "리네졸리드": {
+   "en": "linezolid",
+   "rxcui": "190376"
+  },
+  "하이드로코티손": {
+   "en": "hydrocortisone",
+   "rxcui": "5492"
+  },
+  "옥시메타졸린": {
+   "en": "oxymetazoline",
+   "rxcui": "7812"
+  },
+  "겐타마이신": {
+   "en": "gentamicin",
+   "rxcui": "1596450"
+  },
+  "하이드록소코발라민": {
+   "en": "hydroxocobalamin",
+   "rxcui": "5514"
+  },
+  "숙시머": {
+   "en": "succimer",
+   "rxcui": "3446"
+  },
+  "다이머카프롤": {
+   "en": "dimercaprol",
+   "rxcui": "3445"
+  },
+  "레보도파": {
+   "en": "levodopa",
+   "rxcui": "6375"
+  },
   "옥시토신": {
    "en": "oxytocin",
    "rxcui": "7824"
