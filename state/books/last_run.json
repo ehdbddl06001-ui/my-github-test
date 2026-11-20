@@ -1,5 +1,5 @@
 {
- "started": "2026-11-19T11:46:34+09:00",
+ "started": "2026-11-20T11:32:38+09:00",
  "built": [
   "순환기내과"
  ],
@@ -53,7 +53,7 @@
  ],
  "layout_trials": {
   "순환기내과": {
-   "tried": 833,
+   "tried": 856,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 14,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -133,21 +133,21 @@
     "u-cn-cardio-heart-failure-natriuretic-peptide-echo-diagnosis#shrink": 1.0,
     "u-cn-cardio-heart-failure-natriuretic-peptide-echo-diagnosis#pad": 28,
     "u-cn-cardio-heart-failure-natriuretic-peptide-echo-diagnosis#col": false,
-    "u-cn-cardio-hypertrophic-cardiomyopathy-obstruction-management": 14,
-    "u-cn-cardio-hypertrophic-cardiomyopathy-obstruction-management#shrink": 0.88,
-    "u-cn-cardio-hypertrophic-cardiomyopathy-obstruction-management#pad": 0,
-    "u-cn-cardio-hypertrophic-cardiomyopathy-obstruction-management#col": false,
     "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion": 18,
     "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#shrink": 1.0,
-    "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#pad": 28,
+    "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#pad": 14,
     "u-cn-pulm-pulmonary-embolism-high-risk-reperfusion#col": false,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management": 22,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#shrink": 1.0,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#pad": 42,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#col": false,
     "u-cn-cardio-psvt-narrow-regular-tachycardia-ecg#pad": 42,
     "u-cn-cardio-atrial-fibrillation-doac-nonvalvular-anticoagulation#pad": 42
    }
   }
  },
  "result": "ok",
- "finished": "2026-11-19T13:59:08+09:00",
+ "finished": "2026-11-20T13:20:06+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -156,17 +156,17 @@
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "9d296c9fa38106a8e245caaa4492ec3f",
-    "archive": "MedKOS_학습서_순환기내과_v35_2026-11-19.pdf"
+    "md5": "fd76d9ed6e600e3e4dc6d86bfeac21ee",
+    "archive": "MedKOS_학습서_순환기내과_v36_2026-11-20.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "125683b965f7c921aef8e04ece8bd54a"
+    "md5": "f58d604e068645e6af163e768565f67f"
    }
   },
-  "at": "2026-11-19T13:59:08+09:00"
+  "at": "2026-11-20T13:20:06+09:00"
  }
 }

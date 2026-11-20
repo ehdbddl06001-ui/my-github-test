@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "99a9ceff14714af9cc50",
-   "version": 35,
-   "date": "2026-11-19",
+   "hash": "0a6bc2adf64678c2a187",
+   "version": 36,
+   "date": "2026-11-20",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 69,
+   "pages": 71,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -206,36 +206,42 @@
      "concept_hash": "23e2ccff94234198",
      "concept_version": 1
     },
+    "cn.cardio.heart-transplant.post-transplant-complication": {
+     "title": "심장이식 후 — 시기와 기전이 합병증을 가른다",
+     "page": 59,
+     "concept_hash": "d93ee328fb1b1875",
+     "concept_version": 1
+    },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 59,
+     "page": 61,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 62,
+     "page": 64,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 65,
+     "page": 67,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 68,
+     "page": 70,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "9d296c9fa38106a8e245caaa4492ec3f",
-    "version": 35,
-    "uploaded": "2026-11-19T13:59:08+09:00"
+    "md5": "fd76d9ed6e600e3e4dc6d86bfeac21ee",
+    "version": 36,
+    "uploaded": "2026-11-20T13:20:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -272,10 +278,11 @@
     "MedKOS_학습서_순환기내과_v32_2026-11-16.pdf",
     "MedKOS_학습서_순환기내과_v33_2026-11-17.pdf",
     "MedKOS_학습서_순환기내과_v34_2026-11-18.pdf",
-    "MedKOS_학습서_순환기내과_v35_2026-11-19.pdf"
+    "MedKOS_학습서_순환기내과_v35_2026-11-19.pdf",
+    "MedKOS_학습서_순환기내과_v36_2026-11-20.pdf"
    ],
    "changes": [
-    "새 단원: 비대심근병증 — 폐쇄는 음성 변력으로 푼다"
+    "새 단원: 심장이식 후 — 시기와 기전이 합병증을 가른다"
    ]
   },
   "피부과": {
@@ -1817,13 +1824,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "125683b965f7c921aef8e04ece8bd54a",
+   "md5": "f58d604e068645e6af163e768565f67f",
    "version": null,
-   "uploaded": "2026-11-19T13:59:08+09:00"
+   "uploaded": "2026-11-20T13:20:06+09:00"
   }
  },
- "updated": "2026-11-19"
+ "updated": "2026-11-20"
 }
