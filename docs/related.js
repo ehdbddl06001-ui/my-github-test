@@ -17,6 +17,13 @@ window.MEDKOS_RELATED = {
     "term": "aortic dissection"
    }
   ],
+  "cn.cardio.aortic-stenosis.valve-replacement-timing": [
+   {
+    "id": "paper-2026-0885",
+    "how": "t",
+    "term": "aortic stenosis"
+   }
+  ],
   "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": [
    {
     "id": "paper-2026-0903",
@@ -1534,6 +1541,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
    ]
   },
+  "paper-2026-0885": {
+   "t": "TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features",
+   "j": "The New England journal of medicine",
+   "d": "2026-11-02",
+   "c": [
+    "cn.cardio.aortic-stenosis.valve-replacement-timing"
+   ]
+  },
   "paper-2026-0889": {
    "t": "Toward detection of heart failure: development of a sensitive fluorescent kit for clinical sST2 detection",
    "j": "The Analyst",
@@ -1690,6 +1705,7 @@ window.MEDKOS_RELATED = {
  "titles": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": "아나필락시스 — 첫 약은 근육주사 에피네프린",
   "cn.cardio.aortic-dissection.impulse-control-first": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
+  "cn.cardio.aortic-stenosis.valve-replacement-timing": "대동맥판 협착 — 증상과 박출률이 교체 시점을 정한다",
   "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": "심방세동 — 뇌졸중 예방은 점수로 항응고제",
   "cn.cardio.cardiac-mri-lge.pattern-etiology": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
   "cn.cardio.cvd-epidemiology.transition-risk-burden": "심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다",
