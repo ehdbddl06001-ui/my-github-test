@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-19",
+ "generated": "2026-11-20",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -120,6 +120,11 @@ window.MEDKOS_RELATED = {
   ],
   "cn.cardio.heart-failure.hfref-gdmt-selection": [
    {
+    "id": "paper-2026-0955",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0940",
     "how": "t",
     "term": "heart failure"
@@ -153,14 +158,14 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0838",
     "how": "t",
     "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0826",
-    "how": "t",
-    "term": "heart failure"
    }
   ],
   "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": [
+   {
+    "id": "paper-2026-0955",
+    "how": "t",
+    "term": "heart failure"
+   },
    {
     "id": "paper-2026-0940",
     "how": "t",
@@ -193,11 +198,6 @@ window.MEDKOS_RELATED = {
    },
    {
     "id": "paper-2026-0860",
-    "how": "t",
-    "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0838",
     "how": "t",
     "term": "heart failure"
    }
@@ -267,11 +267,126 @@ window.MEDKOS_RELATED = {
     "term": "ards"
    }
   ],
+  "cn.em.burn.fluid-resuscitation-and-airway": [
+   {
+    "id": "paper-2026-0189",
+    "how": "t",
+    "term": "burn"
+   }
+  ],
+  "cn.em.sepsis.initial-resuscitation-bundle": [
+   {
+    "id": "paper-2026-0820",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0748",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0545",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0311",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0292",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0247",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0222",
+    "how": "t",
+    "term": "septic shock"
+   },
+   {
+    "id": "paper-2026-0257",
+    "how": "t",
+    "term": "septic shock"
+   }
+  ],
+  "cn.em.shock.type-differentiation-first-step": [
+   {
+    "id": "paper-2026-0758",
+    "how": "t",
+    "term": "cardiogenic"
+   },
+   {
+    "id": "paper-2026-0425",
+    "how": "t",
+    "term": "obstructive"
+   },
+   {
+    "id": "paper-2026-0436",
+    "how": "a",
+    "term": "obstructive"
+   }
+  ],
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": [
    {
     "id": "paper-2026-0400",
     "how": "t",
     "term": "pheochromocytoma"
+   }
+  ],
+  "cn.ent.adult-neck-mass.malignancy-workup": [
+   {
+    "id": "paper-2026-0207",
+    "how": "t",
+    "term": "metastatic head and neck squamous cell carcinoma"
+   }
+  ],
+  "cn.ent.hearing-loss.conductive-vs-sensorineural": [
+   {
+    "id": "paper-2026-0814",
+    "how": "t",
+    "term": "mixed"
+   },
+   {
+    "id": "paper-2026-0740",
+    "how": "t",
+    "term": "mixed"
+   },
+   {
+    "id": "paper-2026-0534",
+    "how": "t",
+    "term": "mixed"
+   },
+   {
+    "id": "paper-2026-0512",
+    "how": "t",
+    "term": "hearing loss"
+   },
+   {
+    "id": "paper-2026-0586",
+    "how": "t",
+    "term": "hearing loss"
+   },
+   {
+    "id": "paper-2026-0065",
+    "how": "t",
+    "term": "mixed"
+   },
+   {
+    "id": "paper-2026-0635",
+    "how": "a",
+    "term": "mixed"
+   },
+   {
+    "id": "paper-2026-0588",
+    "how": "a",
+    "term": "hearing loss"
    }
   ],
   "cn.gi.crohn-disease.distribution-histology-diagnosis": [
@@ -321,6 +436,20 @@ window.MEDKOS_RELATED = {
     "term": "gestational diabetes"
    }
   ],
+  "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": [
+   {
+    "id": "paper-2026-0536",
+    "how": "a",
+    "term": "postpartum hemorrhage"
+   }
+  ],
+  "cn.obgyn.vaginitis.ph-microscopy-differentiation": [
+   {
+    "id": "paper-2026-0447",
+    "how": "t",
+    "term": "vaginitis"
+   }
+  ],
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": [
    {
     "id": "paper-2026-0730",
@@ -336,6 +465,168 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0738",
     "how": "t",
     "term": "femoral neck fracture"
+   }
+  ],
+  "cn.prev.association-measures.rr-or-ar-selection": [
+   {
+    "id": "paper-2026-0629",
+    "how": "t",
+    "term": "incidence"
+   },
+   {
+    "id": "paper-2026-0159",
+    "how": "t",
+    "term": "incidence"
+   },
+   {
+    "id": "paper-2026-0043",
+    "how": "t",
+    "term": "prevalence"
+   },
+   {
+    "id": "paper-2026-0035",
+    "how": "t",
+    "term": "prevalence"
+   },
+   {
+    "id": "paper-2026-0051",
+    "how": "t",
+    "term": "prevalence"
+   },
+   {
+    "id": "paper-2026-0302",
+    "how": "t",
+    "term": "incidence"
+   },
+   {
+    "id": "paper-2026-0385",
+    "how": "t",
+    "term": "prevalence"
+   },
+   {
+    "id": "paper-2026-0300",
+    "how": "t",
+    "term": "incidence"
+   }
+  ],
+  "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff": [
+   {
+    "id": "paper-2026-0821",
+    "how": "t",
+    "term": "sensitivity"
+   },
+   {
+    "id": "paper-2026-0870",
+    "how": "t",
+    "term": "sensitivity"
+   },
+   {
+    "id": "paper-2026-0150",
+    "how": "t",
+    "term": "sensitivity"
+   },
+   {
+    "id": "paper-2026-0096",
+    "how": "t",
+    "term": "specificity"
+   },
+   {
+    "id": "paper-2026-0054",
+    "how": "t",
+    "term": "specificity"
+   },
+   {
+    "id": "paper-2026-0928",
+    "how": "t",
+    "term": "sensitivity"
+   },
+   {
+    "id": "paper-2026-0335",
+    "how": "t",
+    "term": "diagnostic test"
+   },
+   {
+    "id": "paper-2026-0959",
+    "how": "a",
+    "term": "sensitivity"
+   }
+  ],
+  "cn.prev.occupational-disease.exposure-to-disease-matching": [
+   {
+    "id": "paper-2026-0847",
+    "how": "a",
+    "term": "pneumoconiosis"
+   }
+  ],
+  "cn.prev.outbreak-investigation.epidemic-curve-and-steps": [
+   {
+    "id": "paper-2026-0205",
+    "how": "t",
+    "term": "outbreak"
+   },
+   {
+    "id": "paper-2026-0678",
+    "how": "a",
+    "term": "outbreak"
+   }
+  ],
+  "cn.prev.provider-payment.incentive-comparison": [
+   {
+    "id": "paper-2026-0930",
+    "how": "t",
+    "term": "case based"
+   },
+   {
+    "id": "paper-2026-0448",
+    "how": "t",
+    "term": "case based"
+   },
+   {
+    "id": "paper-2026-0739",
+    "how": "a",
+    "term": "case based"
+   }
+  ],
+  "cn.prev.study-design.design-and-bias-identification": [
+   {
+    "id": "paper-2026-0901",
+    "how": "t",
+    "term": "cross sectional"
+   },
+   {
+    "id": "paper-2026-0714",
+    "how": "t",
+    "term": "randomized controlled trial"
+   },
+   {
+    "id": "paper-2026-0961",
+    "how": "t",
+    "term": "randomized controlled trial"
+   },
+   {
+    "id": "paper-2026-0960",
+    "how": "t",
+    "term": "randomized controlled trial"
+   },
+   {
+    "id": "paper-2026-0957",
+    "how": "t",
+    "term": "randomized controlled trial"
+   },
+   {
+    "id": "paper-2026-0929",
+    "how": "t",
+    "term": "cohort"
+   },
+   {
+    "id": "paper-2026-0923",
+    "how": "t",
+    "term": "randomized controlled trial"
+   },
+   {
+    "id": "paper-2026-0924",
+    "how": "t",
+    "term": "cohort"
    }
   ],
   "cn.psy.ptsd.duration-vs-acute-stress": [
@@ -466,6 +757,22 @@ window.MEDKOS_RELATED = {
     "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
    ]
   },
+  "paper-2026-0035": {
+   "t": "Prevalence and Factors Associated With Anxiety and Depression in Individuals With Chronic Atrial Fibrillation: A Cross-Sectional Study in Brazil",
+   "j": "The Journal of cardiovascular nursing",
+   "d": "2026-07-07",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
+  "paper-2026-0043": {
+   "t": "Trends and Prevalence of Chronic Kidney Disease in the United States",
+   "j": "The New England journal of medicine",
+   "d": "2026-07-09",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
   "paper-2026-0045": {
    "t": "Mast cell-derived IL-13 as a driver of Crohn disease-associated intestinal fibrosis",
    "j": "Inflammatory bowel diseases",
@@ -474,13 +781,30 @@ window.MEDKOS_RELATED = {
     "cn.gi.crohn-disease.distribution-histology-diagnosis"
    ]
   },
+  "paper-2026-0051": {
+   "t": "Obesity prevalence varies markedly by definition: multiple cross-sectional and prospective studies",
+   "j": "Nutrition research (New York, N.Y.)",
+   "d": "2026-06-16",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
   "paper-2026-0054": {
    "t": "Assessing D-dimer test specificity for pulmonary embolism diagnosis in emergency departments",
    "j": "Clinics (Sao Paulo, Brazil)",
    "d": "2026-07-09",
    "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff",
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion",
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
+   ]
+  },
+  "paper-2026-0065": {
+   "t": "The CRUMB study: closed-loop response to unannounced mixed and carbohydrates-rich breakfasts. A randomized controlled crossover pilot-study in a cohort of adolescents with type 1 diabetes",
+   "j": "Endocrine",
+   "d": "2026-07-10",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
    ]
   },
   "paper-2026-0093": {
@@ -491,12 +815,36 @@ window.MEDKOS_RELATED = {
     "cn.cardio.cvd-epidemiology.transition-risk-burden"
    ]
   },
+  "paper-2026-0096": {
+   "t": "Specificity of the Occlusion Myocardial Infarction-Trained PMcardio \"Queen of Hearts\" AI-ECG in Inflammatory Myopericardial Syndromes",
+   "j": "JACC. Advances",
+   "d": "2026-07-23",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
+   ]
+  },
   "paper-2026-0145": {
    "t": "Myocardial fibrosis in patients with coronary artery disease and diabetes mellitus assessed by cardiovascular magnetic resonance T1 mapping",
    "j": "The international journal of cardiovascular imaging",
    "d": "2026-08-03",
    "c": [
     "cn.cardio.cardiac-mri-lge.pattern-etiology"
+   ]
+  },
+  "paper-2026-0150": {
+   "t": "Diagnostic performance with sensitivity/specificity optimized computer-aided detection to detect common abnormalities in chest radiography",
+   "j": "Japanese journal of radiology",
+   "d": "2026-08-03",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
+   ]
+  },
+  "paper-2026-0159": {
+   "t": "An update on biofilms in acute and chronic wounds: Incidence, clinical evidence, diagnosis, prevention, and treatment",
+   "j": "Journal of internal medicine",
+   "d": "2026-08-07",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
    ]
   },
   "paper-2026-0174": {
@@ -512,6 +860,7 @@ window.MEDKOS_RELATED = {
    "j": "BioMed research international",
    "d": "2026",
    "c": [
+    "cn.em.burn.fluid-resuscitation-and-airway",
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion",
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
    ]
@@ -530,6 +879,30 @@ window.MEDKOS_RELATED = {
    "d": "2026-08-13",
    "c": [
     "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
+   ]
+  },
+  "paper-2026-0205": {
+   "t": "Investigation of an outbreak of Shigella sonnei bla CTX-M-3 among men in England, 2025-26, using long- and short-read whole-genome sequencing",
+   "j": "Microbial genomics",
+   "d": "2026-08",
+   "c": [
+    "cn.prev.outbreak-investigation.epidemic-curve-and-steps"
+   ]
+  },
+  "paper-2026-0207": {
+   "t": "Assessment of drug utilization patterns and associated survival outcomes in recurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC): Insights from a resource-constrained set-up",
+   "j": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+   "d": "2026-08-14",
+   "c": [
+    "cn.ent.adult-neck-mass.malignancy-workup"
+   ]
+  },
+  "paper-2026-0222": {
+   "t": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock: 2016",
+   "j": "Intensive care medicine",
+   "d": "2017-03",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
    ]
   },
   "paper-2026-0227": {
@@ -556,6 +929,22 @@ window.MEDKOS_RELATED = {
     "cn.rheum.sarcoidosis.treat-or-observe"
    ]
   },
+  "paper-2026-0247": {
+   "t": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock: 2016",
+   "j": "Critical care medicine",
+   "d": "2017-03",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
+   ]
+  },
+  "paper-2026-0257": {
+   "t": "Developing a New Definition and Assessing New Clinical Criteria for Septic Shock: For the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3)",
+   "j": "JAMA",
+   "d": "2016-02-23",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
+   ]
+  },
   "paper-2026-0266": {
    "t": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS)",
    "j": "European heart journal",
@@ -573,12 +962,44 @@ window.MEDKOS_RELATED = {
     "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
    ]
   },
+  "paper-2026-0292": {
+   "t": "Surviving Sepsis Campaign International Guidelines for the Management of Septic Shock and Sepsis-Associated Organ Dysfunction in Children",
+   "j": "Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+   "d": "2020-02",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
+   ]
+  },
   "paper-2026-0293": {
    "t": "2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines",
    "j": "Journal of the American College of Cardiology",
    "d": "2019-09-10",
    "c": [
     "cn.cardio.cvd-epidemiology.transition-risk-burden"
+   ]
+  },
+  "paper-2026-0300": {
+   "t": "Mutation incidence and coincidence in non small-cell lung cancer: meta-analyses by ethnicity and histology (mutMap)",
+   "j": "Annals of oncology : official journal of the European Society for Medical Oncology",
+   "d": "2013-09",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
+  "paper-2026-0302": {
+   "t": "Incidence and mortality of hospital- and ICU-treated sepsis: results from an updated and expanded systematic review and meta-analysis",
+   "j": "Intensive care medicine",
+   "d": "2020-08",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
+  "paper-2026-0311": {
+   "t": "Mortality in sepsis and septic shock in Europe, North America and Australia between 2009 and 2019- results from a systematic review and meta-analysis",
+   "j": "Critical care (London, England)",
+   "d": "2020-05-19",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
    ]
   },
   "paper-2026-0314": {
@@ -596,6 +1017,14 @@ window.MEDKOS_RELATED = {
    "d": "2016-01",
    "c": [
     "cn.rheum.rheumatoid-arthritis.methotrexate-anchor"
+   ]
+  },
+  "paper-2026-0335": {
+   "t": "Procalcitonin as a diagnostic test for sepsis in critically ill adults and after surgery or trauma: a systematic review and meta-analysis",
+   "j": "Critical care medicine",
+   "d": "2006-07",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   },
   "paper-2026-0347": {
@@ -646,6 +1075,14 @@ window.MEDKOS_RELATED = {
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism"
    ]
   },
+  "paper-2026-0385": {
+   "t": "Global Prevalence of Chronic Kidney Disease - A Systematic Review and Meta-Analysis",
+   "j": "PloS one",
+   "d": "2016",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
   "paper-2026-0400": {
    "t": "Pheochromocytoma and paraganglioma: an endocrine society clinical practice guideline",
    "j": "The Journal of clinical endocrinology and metabolism",
@@ -662,12 +1099,44 @@ window.MEDKOS_RELATED = {
     "cn.psy.ptsd.duration-vs-acute-stress"
    ]
   },
+  "paper-2026-0425": {
+   "t": "Efficacy of fluticasone nasal spray for pediatric obstructive sleep apnea",
+   "j": "The Journal of pediatrics",
+   "d": "2001-06",
+   "c": [
+    "cn.em.shock.type-differentiation-first-step"
+   ]
+  },
+  "paper-2026-0436": {
+   "t": "Clinical Practice Guideline: Tonsillectomy in Children (Update)",
+   "j": "Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery",
+   "d": "2019-02",
+   "c": [
+    "cn.em.shock.type-differentiation-first-step"
+   ]
+  },
   "paper-2026-0445": {
    "t": "Management of Residual Extracardiac Congenital Heart Disease After Heart Transplant",
    "j": "JACC. Advances",
    "d": "2026-07-29",
    "c": [
     "cn.cardio.heart-transplant.post-transplant-complication"
+   ]
+  },
+  "paper-2026-0447": {
+   "t": "Vaginitis testing outcomes by documented symptom status in a student-run free clinic: a retrospective study",
+   "j": "Journal of obstetrics and gynaecology : the journal of the Institute of Obstetrics and Gynaecology",
+   "d": "2026-12",
+   "c": [
+    "cn.obgyn.vaginitis.ph-microscopy-differentiation"
+   ]
+  },
+  "paper-2026-0448": {
+   "t": "Barriers and Facilitators to the Implementation of Holistic Care Within an International Medical Center: A Case-Based Qualitative Study",
+   "j": "Journal of primary care & community health",
+   "d": "2026",
+   "c": [
+    "cn.prev.provider-payment.incentive-comparison"
    ]
   },
   "paper-2026-0461": {
@@ -726,6 +1195,30 @@ window.MEDKOS_RELATED = {
     "cn.gs.acute-pancreatitis.biliary-etiology-ultrasound"
    ]
   },
+  "paper-2026-0512": {
+   "t": "Anti-LCN2 antibody treatment is associated with attenuated hearing loss and blood-labyrinth barrier disruption in a mouse model of chronic kidney disease",
+   "j": "Journal of molecular histology",
+   "d": "2026-08-30",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
+   ]
+  },
+  "paper-2026-0534": {
+   "t": "Patient-Centered Summarization Framework for AI Clinical Summarization: Mixed Methods Study",
+   "j": "Journal of medical Internet research",
+   "d": "2026-09-03",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
+   ]
+  },
+  "paper-2026-0536": {
+   "t": "Nonalcoholic Steatohepatitis (NASH) and Nonalcoholic Fatty Liver Disease (NALFD) in Pregnancy: A Narrative Review",
+   "j": "Obstetrical & gynecological survey",
+   "d": "2026-09-01",
+   "c": [
+    "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step"
+   ]
+  },
   "paper-2026-0544": {
    "t": "Comprehensive Risk Factor Control Attenuates Excess Cardiovascular Risk in Rheumatoid Arthritis: A Prospective Cohort Study",
    "j": "European journal of preventive cardiology",
@@ -734,12 +1227,36 @@ window.MEDKOS_RELATED = {
     "cn.rheum.rheumatoid-arthritis.methotrexate-anchor"
    ]
   },
+  "paper-2026-0545": {
+   "t": "Left-Sided Pseudomonas Infective Endocarditis Presenting with Septic Shock and Ischemic Stroke in a Non-Injection Drug User Receiving PD-L1 Inhibitor Therapy",
+   "j": "Cureus",
+   "d": "2026-08",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
+   ]
+  },
   "paper-2026-0550": {
    "t": "Uric Acid and Cardiovascular Disease",
    "j": "Cardiology in review",
    "d": "2026-09-07",
    "c": [
     "cn.cardio.cvd-epidemiology.transition-risk-burden"
+   ]
+  },
+  "paper-2026-0586": {
+   "t": "Association Between Atrial Fibrillation and Hearing Loss: A Cross-Sectional Study",
+   "j": "The journal of international advanced otology",
+   "d": "2026-08-10",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
+   ]
+  },
+  "paper-2026-0588": {
+   "t": "Audiological Profile of Adult Patients Awaiting Kidney and Liver Transplantation",
+   "j": "The journal of international advanced otology",
+   "d": "2026-08-10",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
    ]
   },
   "paper-2026-0608": {
@@ -758,12 +1275,28 @@ window.MEDKOS_RELATED = {
     "cn.id.legionella-pneumonia.urinary-antigen-diagnosis"
    ]
   },
+  "paper-2026-0629": {
+   "t": "Comparative Incidence of Urinary Tract Infections in Diabetic Women Treated with Dapagliflozin Versus Empagliflozin: A Double-Blind Randomized Clinical Trial",
+   "j": "International journal of endocrinology and metabolism",
+   "d": "2026-10-31",
+   "c": [
+    "cn.prev.association-measures.rr-or-ar-selection"
+   ]
+  },
   "paper-2026-0633": {
    "t": "Response by Oldgren and Wallentin to Letter Regarding Article, \"Biomarker-Based ABC-AF Risk Scores for Personalized Treatment to Reduce Stroke or Death in Atrial Fibrillation: A Registry-Based, Multicenter, Randomized, Controlled Study\"",
    "j": "Circulation",
    "d": "2026-09-22",
    "c": [
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+   ]
+  },
+  "paper-2026-0635": {
+   "t": "Facilitators and Barriers to Digital Health Technologies for Self-Management in Patients With Chronic Kidney Disease: Systematic Review Based on the Updated CFIR 2.0 Framework",
+   "j": "Journal of medical Internet research",
+   "d": "2026-09-21",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
    ]
   },
   "paper-2026-0639": {
@@ -782,12 +1315,28 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
    ]
   },
+  "paper-2026-0678": {
+   "t": "Carbapenemase-producing Kluyvera spp.: epidemiology of an evolving species",
+   "j": "The Journal of infectious diseases",
+   "d": "2026-09-28",
+   "c": [
+    "cn.prev.outbreak-investigation.epidemic-curve-and-steps"
+   ]
+  },
   "paper-2026-0682": {
    "t": "Adjunctive screening and risk stratification performance of neutrophil-to-lymphocyte ratio for gestational diabetes mellitus: A systematic review and meta-analysis",
    "j": "Biomolecules & biomedicine",
    "d": "2026-09-28",
    "c": [
     "cn.obgyn.gestational-diabetes.insulin-indication"
+   ]
+  },
+  "paper-2026-0714": {
+   "t": "Parallel Parent-Child Mindfulness Intervention for Migrant Families' Adaptation: A Randomized Controlled Trial",
+   "j": "Family process",
+   "d": "2026-12",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
    ]
   },
   "paper-2026-0716": {
@@ -822,12 +1371,44 @@ window.MEDKOS_RELATED = {
     "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
    ]
   },
+  "paper-2026-0739": {
+   "t": "A Clinical Decision Support System for AF Thromboprophylaxis: Its Impact on Residents' Learning and Confidence in Clinical Decision-Making",
+   "j": "Journal of evaluation in clinical practice",
+   "d": "2026-10",
+   "c": [
+    "cn.prev.provider-payment.incentive-comparison"
+   ]
+  },
+  "paper-2026-0740": {
+   "t": "Nurse-Led and Nurse-Involved Antimicrobial Stewardship in Hospitals and Primary Care: Protocol for a Mixed Methods Systematic Review and Meta-Analysis With Gulf Cooperation Council and Middle East and North Africa Subgroup Analysis",
+   "j": "JMIR research protocols",
+   "d": "2026-10-08",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
+   ]
+  },
+  "paper-2026-0748": {
+   "t": "Nailfold Capillaroscopy Reveals Peripheral Microcirculatory Trajectories in Septic Shock",
+   "j": "Journal of intensive care medicine",
+   "d": "2026-10-10",
+   "c": [
+    "cn.em.sepsis.initial-resuscitation-bundle"
+   ]
+  },
   "paper-2026-0753": {
    "t": "Trends, outcomes, and disparities in hospitalizations among patients with Sjögren's syndrome: a national inpatient sample analysis (2016-2020)",
    "j": "ARP rheumatology",
    "d": "2026",
    "c": [
     "cn.rheum.sjogren.sicca-workup"
+   ]
+  },
+  "paper-2026-0758": {
+   "t": "Acute Effects of Impella 5.5 on Biventricular Filling and Pressure-Volume Area in Patients With Heart Failure Associated Cardiogenic Shock",
+   "j": "ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+   "d": "2026-10-12",
+   "c": [
+    "cn.em.shock.type-differentiation-first-step"
    ]
   },
   "paper-2026-0774": {
@@ -846,6 +1427,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
    ]
   },
+  "paper-2026-0814": {
+   "t": "Mixed Presentation of Hyperglycemic Hyperosmolar State and Diabetic Ketoacidosis in a Pediatric Patient: a Case Report and Literature Review",
+   "j": "Journal of clinical research in pediatric endocrinology",
+   "d": "2026-10-16",
+   "c": [
+    "cn.ent.hearing-loss.conductive-vs-sensorineural"
+   ]
+  },
   "paper-2026-0819": {
    "t": "Equity Gaps in Sex, Racial, and Ethnic Inclusion in United States Heart Transplant Trials",
    "j": "Clinical transplantation",
@@ -854,12 +1443,20 @@ window.MEDKOS_RELATED = {
     "cn.cardio.heart-transplant.post-transplant-complication"
    ]
   },
-  "paper-2026-0826": {
-   "t": "Dose-Response Associations of Exercise Modalities With Cardiorespiratory Fitness in Heart Failure: A Systematic Review and Bayesian Network Meta-Analysis",
-   "j": "European journal of preventive cardiology",
-   "d": "2026-10-23",
+  "paper-2026-0820": {
+   "t": "Hemodynamic Patterns Relative to Vasopressin Initiation and Subsequent Septic Shock Progression in Children: A Retrospective Cohort, 2020-2023",
+   "j": "Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+   "d": "2026-10-21",
    "c": [
-    "cn.cardio.heart-failure.hfref-gdmt-selection"
+    "cn.em.sepsis.initial-resuscitation-bundle"
+   ]
+  },
+  "paper-2026-0821": {
+   "t": "High-Sensitivity Cardiac Troponin T and I Discordance in Patients Receiving Immune Checkpoint Inhibitors",
+   "j": "JACC. CardioOncology",
+   "d": "2026-10",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   },
   "paper-2026-0833": {
@@ -875,8 +1472,7 @@ window.MEDKOS_RELATED = {
    "j": "Romanian journal of internal medicine = Revue roumaine de medecine interne",
    "d": "2026-10-26",
    "c": [
-    "cn.cardio.heart-failure.hfref-gdmt-selection",
-    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
+    "cn.cardio.heart-failure.hfref-gdmt-selection"
    ]
   },
   "paper-2026-0843": {
@@ -892,7 +1488,8 @@ window.MEDKOS_RELATED = {
    "j": "JMIR medical informatics",
    "d": "2026-10-26",
    "c": [
-    "cn.rheum.sarcoidosis.treat-or-observe"
+    "cn.rheum.sarcoidosis.treat-or-observe",
+    "cn.prev.occupational-disease.exposure-to-disease-matching"
    ]
   },
   "paper-2026-0852": {
@@ -921,6 +1518,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
    ]
   },
+  "paper-2026-0870": {
+   "t": "Effect of canagliflozin on insulin sensitivity in insulin-dysregulated horses as assessed by euglycemic hyperinsulinemic clamp: a randomized, placebo-controlled trial",
+   "j": "Journal of veterinary internal medicine",
+   "d": "2026-09-01",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
+   ]
+  },
   "paper-2026-0876": {
    "t": "Long-Term Clinical Outcomes of Left Atrial Appendage Closure Versus Oral Anticoagulation in Atrial Fibrillation: An Updated Meta-Analysis and Trial Sequential Analysis",
    "j": "Critical pathways in cardiology",
@@ -945,6 +1550,14 @@ window.MEDKOS_RELATED = {
    "d": "2026-11-05",
    "c": [
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+   ]
+  },
+  "paper-2026-0901": {
+   "t": "Diagnostic Accuracy and Clinical Decision-Making Among Greek Physiotherapists in Direct Access Practice: A Cross-Sectional Clinical Vignette Study",
+   "j": "Musculoskeletal care",
+   "d": "2026-12",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
    ]
   },
   "paper-2026-0903": {
@@ -982,12 +1595,45 @@ window.MEDKOS_RELATED = {
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
+  "paper-2026-0923": {
+   "t": "Effect of oral vitamin D₃₃ supplementation on salivary vitamin D levels and orthodontic treatment duration: a randomized controlled trial",
+   "j": "Clinical oral investigations",
+   "d": "2026-11-10",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0924": {
+   "t": "Predictors of Discordance Between Neurological and Quality-of-Life Recovery After Surgery for Degenerative Cervical Myelopathy: A Retrospective Cohort Study",
+   "j": "Spine",
+   "d": "2026-11-06",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
   "paper-2026-0928": {
    "t": "Paired neutrophil association and ex vivo perturbation sensitivity define a bounded myeloid activation model in ARDS",
    "j": "PloS one",
    "d": "2026",
    "c": [
-    "cn.em.ards.lung-protective-ventilation"
+    "cn.em.ards.lung-protective-ventilation",
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
+   ]
+  },
+  "paper-2026-0929": {
+   "t": "Second Cancer Risk in Female Survivors of Hodgkin Lymphoma: A National Cohort Analysis Across Treatment Eras",
+   "j": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "d": "2026-11-12",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0930": {
+   "t": "When a PanNET Is Not a PanNET: Avoiding the Diagnostic Pitfalls of Peripancreatic Paraganglioma-A Case-Based Review",
+   "j": "The American surgeon",
+   "d": "2026-11-12",
+   "c": [
+    "cn.prev.provider-payment.incentive-comparison"
    ]
   },
   "paper-2026-0940": {
@@ -997,6 +1643,47 @@ window.MEDKOS_RELATED = {
    "c": [
     "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
+   ]
+  },
+  "paper-2026-0955": {
+   "t": "Feasibility and Adherence of a Multicomponent Digital Health Monitoring Platform in Ambulatory Heart Failure: Multicenter Observational Study",
+   "j": "JMIR formative research",
+   "d": "2026-11-19",
+   "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
+    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
+   ]
+  },
+  "paper-2026-0957": {
+   "t": "Gamified Self-Care Mobile App for Lifestyle Support in Children With Leukemia: Development and Randomized Controlled Trial",
+   "j": "Journal of participatory medicine",
+   "d": "2026-11-19",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0959": {
+   "t": "Image-Based AI for the Diagnosis of Retinopathy of Prematurity: Systematic Review and Meta-Analysis",
+   "j": "JMIR medical informatics",
+   "d": "2026-11-19",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
+   ]
+  },
+  "paper-2026-0960": {
+   "t": "Examining the Effectiveness of a Dual Executive Function Training Package: Protocol for a Randomized Controlled Trial",
+   "j": "JMIR research protocols",
+   "d": "2026-11-19",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0961": {
+   "t": "A mHealth-Based Vestibular Rehabilitation Program for Postoperative Vestibular Dysfunction in Patients With Vestibular Schwannoma: Randomized Controlled Trial",
+   "j": "Journal of medical Internet research",
+   "d": "2026-11-19",
+   "c": [
+    "cn.prev.study-design.design-and-bias-identification"
    ]
   }
  },
@@ -1013,14 +1700,27 @@ window.MEDKOS_RELATED = {
   "cn.cardio.nyha-class.functional-assessment": "NYHA 기능 등급 — 증상을 부르는 활동 수준",
   "cn.derm.scabies.treat-with-contacts": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
   "cn.em.ards.lung-protective-ventilation": "급성호흡곤란증후군 — 심장 원인 배제 뒤 첫 처치는 폐보호 환기",
+  "cn.em.burn.fluid-resuscitation-and-airway": "화상 — 2도 이상만 세어 수액, 소변으로 조절",
+  "cn.em.sepsis.initial-resuscitation-bundle": "패혈 쇼크 — 첫 한 시간: 배양·항생제·수액·승압제",
+  "cn.em.shock.type-differentiation-first-step": "쇼크 — 사지 온도·목정맥·폐음으로 유형 가르기",
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
+  "cn.ent.adult-neck-mass.malignancy-workup": "성인 목덩이 — 악성 위험이면 영상·세침흡인 먼저",
+  "cn.ent.hearing-loss.conductive-vs-sensorineural": "난청 — 음차·청력검사로 전음성과 감각신경성 가르기",
   "cn.gi.crohn-disease.distribution-histology-diagnosis": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
   "cn.gs.acute-cholecystitis.grade2-early-lc": "급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다",
   "cn.gs.acute-pancreatitis.biliary-etiology-ultrasound": "급성 췌장염 — 원인 찾기의 첫 영상은 복부 초음파",
   "cn.id.invasive-aspergillosis.angioinvasion-mechanism": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
   "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": "레지오넬라 폐렴 — 급성 단서가 모이면 소변 항원",
   "cn.obgyn.gestational-diabetes.insulin-indication": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
+  "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
+  "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+  "cn.prev.association-measures.rr-or-ar-selection": "역학 지표 — 설계가 쓸 수 있는 지표를 정한다",
+  "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff": "검사 타당도 — 유병률은 예측도만, 기준점은 둘 다",
+  "cn.prev.occupational-disease.exposure-to-disease-matching": "직업성 질환 — 노출 물질과 소견을 짝짓는다",
+  "cn.prev.outbreak-investigation.epidemic-curve-and-steps": "집단 발병 — 유행 곡선으로 전파 양식을 읽는다",
+  "cn.prev.provider-payment.incentive-comparison": "진료비 지불 제도 — 무엇에 돈을 주면 무엇이 느나",
+  "cn.prev.study-design.design-and-bias-identification": "연구 설계 — 뽑는 방식이 비뚤림을 정한다",
   "cn.psy.ptsd.duration-vs-acute-stress": "외상후스트레스장애 — 같은 증상군을 「한 달」로 가른다",
   "cn.pulm.hypoxemia.hypoventilation-normal-aa-gradient": "저산소혈증 — 폐포-동맥 차가 정상이면 저환기다",
   "cn.pulm.pulmonary-embolism.high-risk-reperfusion": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",

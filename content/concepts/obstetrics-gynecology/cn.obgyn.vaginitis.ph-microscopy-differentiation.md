@@ -118,6 +118,21 @@ checks:
     a: "여성은 메트로니다졸 500 mg 하루 2번 7일, 남성은 메트로니다졸 2 g 단회. 현재 파트너는 추정 치료로 보내고 둘 다 치료를 마칠 때까지 성관계를 피한다."
   - q: "세균질증이 반복되는 여성의 남편을 함께 치료해야 하나?"
     a: "권하지 않는다. 파트너 치료가 여성의 치료 반응·재발을 바꾸지 않았다."
+figures_wanted:
+- source: PMC_OA
+  shows: 세균질증의 단서세포 — 상피세포 가장자리를 작은 균이 덮어 경계가 흐려진다
+  at: 가르는 소견 — pH·아민·도말
+  query: '"bacterial vaginosis" AND "clue cells" AND (microscopy OR "wet mount" OR "Gram stain")'
+  caption_terms:
+  - clue cell
+  modality: MICROSCOPY
+- source: PMC_OA
+  shows: 트리코모나스 질염의 생리식염수 도말 — 편모가 있는 원충
+  at: 가르는 소견 — pH·아민·도말
+  query: '"Trichomonas vaginalis" AND ("wet mount" OR "saline microscopy") AND "case report"'
+  caption_terms:
+  - trichomona
+  modality: MICROSCOPY
 ---
 
 ## 판단 — 왜 pH 다음에 도말인가

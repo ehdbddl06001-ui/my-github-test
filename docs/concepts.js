@@ -39040,6 +39040,1037 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.em.burn.fluid-resuscitation-and-airway": {
+  "id": "cn.em.burn.fluid-resuscitation-and-airway",
+  "title": "화상 — 2도 이상만 세어 수액, 소변으로 조절",
+  "objective": "화상 환자의 깊이와 2도 이상 화상의 체표면적(9의 법칙), 상기도 흡입손상 징후로 초기 수액량·소변량 목표와 조기 기관삽관 여부를 정한다",
+  "objectiveKind": "다음 처치",
+  "condition": "중증 화상(major burn)의 초기 소생 — 화상 쇼크 수액 소생(burn shock resuscitation)과 흡입손상(inhalation injury)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "General Surgery",
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "0f6a0aa467dba743",
+  "summary": [
+   "결론: 2도 이상 %TBSA 로 첫 24시간 젖산 링거량을 정하고(Parkland 4 mL/kg/%), 소변량으로 속도를 조절한다.",
+   "시험 단서: 밀폐 공간 화재, 쉰 목소리·그렁거림·입안 물집, 얼굴 깊은 화상(inhalation injury) → 조기 기관삽관.",
+   "왜: 화상 부위 모세혈관 누출로 혈관 내 용적이 빠지고, 상기도 부종은 소생 수액과 함께 첫 48시간 동안 커진다.",
+   "1도 화상은 TBSA 에 넣지 않는다 — 공식은 시작 속도일 뿐이고, 절반은 「화상 시각」부터 8시간 안에 준다.",
+   "성인 소변 목표는 약 0.5 mL/kg/h(30–50 mL/h) — 넘치게 주는 것(fluid creep)이 흔한 오류다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 기도 다음에 넓이로 수액인가",
+    "deep": false,
+    "html": "<ul>\n<li>화상도 일차 평가는 ABCDE 순서이고, 넓이 추정은 수액량을 정하므로 일차 평가 안에서 바로 한다. 체온을 잃지 않게 따뜻한 환경에서 본다 <sup>[1 Primary survey]</sup>.</li>\n<li>상기도 부종은 첫 48시간 동안 진행하고 첫 평가가 그 정도를 잘 예측하지 못한다 — 징후가 있으면 부종이 커지기 전에 삽관한다 <sup>[5 Introduction]</sup> <sup>[4 Upper airway]</sup>.</li>\n<li>수액 공식은 <strong>시작 속도</strong>만 정한다. 그 뒤의 정답은 소변량을 보고 속도를 바꾸는 것이다 <sup>[1 Secondary survey — fluid infusion rate]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 피부 손상에서 쇼크와 기도 부종으로",
+    "deep": false,
+    "html": "<ul>\n<li>큰 화상 직후 국소·전신 스트레스 반응이 시작되고 <sup>[1 Introduction]</sup>, 혈관 내피의 당질층이 떨어져 모세혈관으로 액체가 샌다 — 그래서 수액량을 넓이(%TBSA)로 정한다 <sup>[3 2.1 Over-Resuscitation]</sup> <sup>[1 Primary survey]</sup>. 수액을 더 줄수록 누출이 늘어 「수액이 수액을 부른다」 <sup>[3 2.1 Over-Resuscitation]</sup>.</li>\n<li>뜨거운 공기는 열용량이 작고 상기도가 열을 식혀 대개 성대 위만 다친다. 그래서 흡입손상의 첫 위협은 혀·후두덮개 부종에 의한 상기도 폐쇄다. 수증기는 덜 식어 아래 기도까지 다칠 수 있다 <sup>[4 Upper airway]</sup> <sup>[1 Box 2 Inhalation injury]</sup>.</li>\n<li>하기도는 연기 속 화학물질이 상피를 다쳐 섬모 청소가 멈추고 섬유소 원주가 기도를 막는다 — 염증이 하루 이틀 뒤에 드러나 첫 X선이 정상이다 <sup>[4 Lower airway]</sup> <sup>[4 Diagnosis]</sup>.</li>\n<li>CO 는 산소보다 약 240배 강하게 헤모글로빈에 붙고 해리 곡선을 왼쪽으로 옮겨 조직에 산소가 덜 간다. 시안화물은 산화적 인산화를 막아 젖산 산증을 만든다 <sup>[4 CO and cyanide]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 깊이와 넓이",
+    "deep": false,
+    "html": "<ul>\n<li>깊이는 표로 가르고, 1도는 넓이에서 뺀다. 9의 법칙 비율은 아래 표다.</li>\n<li><strong>추정의 한계</strong>: 화상 센터 밖의 넓이·깊이 추정은 전문가조차 부정확하고 대개 과대평가한다 — 과대평가는 그대로 과다 소생이 된다 <sup>[1 Primary survey]</sup> <sup>[3 2.1 Over-Resuscitation]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 수액량과 조절 지표",
+    "deep": false,
+    "html": "<ul>\n<li>표가 누구에게·무엇을·얼마나·무엇으로 조절하는지를 정리한다. 시험 계산은 Parkland 공식으로 한다.</li>\n<li>과다 소생은 사지·복부·눈 구획증후군을 만든다 <sup>[1 Management — fluid resuscitation]</sup>. 결정질만 대량으로 필요하면 알부민·혈장을 더해 총량을 줄인다 <sup>[1 Colloids: albumin or plasma]</sup>.</li>\n<li>20 % 미만 화상은 위장관이 멀쩡하면 경구 소생 후보다 <sup>[2 Resuscitation]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>전기 손상은 피부 넓이보다 내부 손상이 커서 넓이 공식이 맞지 않는다 — 근육 파괴·미오글로빈뇨를 생각해 더 많은 수액이 필요할 수 있다 <sup>[2 Electrical and Lightning Injury]</sup>.</li>\n<li>흡입손상으로 인공호흡이 필요하면 다른 ARDS 와 같은 폐 보호 환기를 쓴다 <sup>[2 Conclusions]</sup>.</li>\n<li>하이드록소코발라민은 용어집에 없는 약 이름이다(원고 한글 유지). 국내 교과서·KMLE 해설의 소변 목표 수치는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 시작 수액량 4 mL 대 2 mL</strong> — 시험 기준: Parkland 4 mL/kg/%TBSA, 절반을 첫 8시간 <sup>[2 Resuscitation]</sup> / 다른 기준: 미국화상학회 지침은 2–4 mL/kg/% 범위를 쓰고 <sup>[1 Secondary survey — fluid infusion rate]</sup>, 2024 지침은 2 mL/kg/% 로 시작하도록 권고한다 <sup>[6† Abstract]</sup> / 왜 다른가: 실제 소생량이 Parkland 예측을 자주 넘고(fluid creep) 과다 소생 합병증이 커서 시작량을 낮췄다 <sup>[2 Resuscitation]</sup> <sup>[1 Management — fluid resuscitation]</sup> / 시험에서는: KMLE 는 국내 교과서·해설과 대조하지 않았다(검토 항목) · USMLE 해설이 2 mL 를 쓰는지도 대조하지 않았다 — 계산 문항은 문항이 지정한 공식을 따르고, 처치 선택 문항은 「시작량 뒤 소변량으로 조절」을 답의 근거로 삼는다. 2024 지침은 초록만 읽었다(†).</li>\n<li><strong>Z2 맥락 · 성인 소변 목표</strong> — 시험 기준: 성인 0.5 mL/kg/h(약 30–50 mL/h), 30 kg 미만 소아 1 mL/kg/h <sup>[3 2.1 Over-Resuscitation]</sup> / 다른 기준: 0.3–0.5 mL/kg/h <sup>[1 Secondary survey — fluid infusion rate]</sup>; Parkland 센터 연구는 0.5–1.0 을 적정, &gt;1.0 을 과다로 정의했다 <sup>[2 Resuscitation]</sup> / 왜 다른가: 과다 소생을 줄이려고 하한을 낮춘 최근 서술과 옛 센터 정의가 섞여 있다 / 시험에서는: 0.5 mL/kg/h 를 기준으로, 1 mL/kg/h 를 넘게 계속 나오면 속도를 줄이는 쪽으로 답한다.</li>\n<li><strong>Z3 충돌 · 흡입손상이 의심되면 모두 삽관?</strong> — 시험 기준: 상기도 손상 징후가 있으면 조기 삽관 <sup>[4 Intubation]</sup> / 다른 기준: 기준대로 삽관한 환자의 기관지경이 정상인 경우가 많아 과다 삽관이 우려된다 — ABA 기준 특이도 46 % <sup>[5 Discussion]</sup>; 밀폐 공간·얼굴 화상·그을음만으로는 흡입손상이 아니다 <sup>[1 Primary survey]</sup> / 왜 다른가: 놓치면 기도를 잃고, 과하면 인공호흡기 폐렴이 는다 — 이송 거리가 길수록 문턱이 낮아진다 <sup>[5 Discussion]</sup> / 시험에서는: 쉰 목소리·그렁거림·입인두 부종·호흡곤란 같은 「기도 징후」가 있으면 삽관, 얼굴 화상·그을음만이면 진찰·관찰로 답한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "화상 깊이 — TBSA 에 넣는가",
+    "columns": [
+     "깊이",
+     "모습·통증",
+     "치유",
+     "TBSA"
+    ],
+    "rows": [
+     [
+      "1도(표재성, 표피만)",
+      "붉고 아프다, 통증은 오래가지 않음",
+      "약 1주 안에 저절로",
+      "넣지 않음"
+     ],
+     [
+      "표재성 부분층(2도 얕은)",
+      "물집, 진물, 분홍 바탕이 눌렀다 다시 붉어짐, 매우 아픔",
+      "약 2주, 수술 불필요",
+      "넣음"
+     ],
+     [
+      "심부 부분층(2도 깊은)",
+      "창백·건조, 통증 감소(통각 수용체 일부 파괴), 털이 쉽게 빠짐",
+      "3주 이상, 수술·흉터",
+      "넣음"
+     ],
+     [
+      "전층(3도)",
+      "희고 가죽처럼 단단·건조, 아프지 않음",
+      "가장자리에서만, 대개 수술",
+      "넣음"
+     ]
+    ],
+    "note": "깊이·치유 기준은 jeschke-burn-2020(Introduction)과 giretzlehner-tbsa-2021(1. Introduction). 침상 깊이 판정은 부정확하다고 두 출처 모두 적는다."
+   },
+   {
+    "title": "9의 법칙(성인) · 손바닥 법칙",
+    "columns": [
+     "부위",
+     "%TBSA"
+    ],
+    "rows": [
+     [
+      "머리·얼굴",
+      "9"
+     ],
+     [
+      "팔(한쪽)",
+      "9"
+     ],
+     [
+      "다리(한쪽)",
+      "18"
+     ],
+     [
+      "몸통 앞 · 몸통 뒤",
+      "각 18"
+     ],
+     [
+      "생식기 부위",
+      "1"
+     ],
+     [
+      "환자 손바닥(손가락 포함)",
+      "약 1 — 작은·흩어진 화상"
+     ]
+    ],
+    "note": "Wallace 1951 의 비율을 giretzlehner-tbsa-2021(3.3.1)에서 옮김 — 그 논문은 목 1 %도 따로 적는다. 소아는 Lund-Browder 도표를 쓴다 <sup>[1 Primary survey]</sup>. 9의 법칙·손바닥 법칙 모두 넓이를 과대평가하기 쉽다 <sup>[3 3.3.2]</sup> <sup>[3 3.4.2]</sup>."
+   },
+   {
+    "title": "초기 수액 — 시작량과 조절",
+    "columns": [
+     "항목",
+     "기준"
+    ],
+    "rows": [
+     [
+      "누가",
+      "성인 2도 이상 &gt;20 %TBSA 는 대개 정맥 수액 소생이 필요. 더 작아도 전기 손상·흡입손상·동반 외상이면 필요할 수 있음 <sup>[1 Management — fluid resuscitation]</sup>"
+     ],
+     [
+      "무엇을",
+      "데운 젖산 링거(균형 결정질) <sup>[1 Management — fluid resuscitation]</sup>"
+     ],
+     [
+      "얼마나(시험 계산)",
+      "Parkland: 4 mL × 체중(kg) × %TBSA(2·3도) = 첫 24시간 젖산 링거 — 절반은 화상 시각부터 8시간, 나머지는 16시간 <sup>[2 Resuscitation]</sup>"
+     ],
+     [
+      "시작량 범위",
+      "미국화상학회 지침 2–4 mL/kg/%TBSA <sup>[1 Secondary survey — fluid infusion rate]</sup>. 2024 지침은 2 mL/kg/% 로 시작을 권고 <sup>[6† Abstract]</sup>"
+     ],
+     [
+      "조절 지표",
+      "소변량 — 성인(&gt;30 kg) 0.5 mL/kg/h(약 30–50 mL/h), 30 kg 미만 소아 1 mL/kg/h <sup>[3 2.1 Over-Resuscitation]</sup>"
+     ],
+     [
+      "넘칠 때",
+      "결정질만 대량이면 과다 소생 — 알부민·혈장 「콜로이드 구조」를 고려 <sup>[1 Colloids: albumin or plasma]</sup> <sup>[6† Abstract]</sup>"
+     ]
+    ],
+    "note": "Parkland·지침 범위·소변 목표가 출처마다 다른 점은 「시험 쟁점」 Z1·Z2."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "1도(표피) 화상도 TBSA 에 더한다?",
+    "point": "화상 넓이는 1도 화상을 빼고 2도·3도 화상만 센다 <sup>[3 1. Introduction]</sup>. Parkland 공식의 %TBSA 도 2도·3도 화상 넓이다 <sup>[2 Resuscitation]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "공식의 첫 절반 — 병원 도착부터 8시간?",
+    "point": "첫 절반은 「화상을 입은 시각」부터 8시간, 나머지 절반은 이후 16시간에 준다. 늦게 도착하면 첫 8시간 몫을 더 짧은 시간에 넣어야 한다 <sup>[2 Resuscitation]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "공식으로 낸 양을 24시간 고정 주입?",
+    "point": "공식은 시작 속도를 정할 뿐이고, 곧바로 소변량 목표에 맞춰 시간마다 속도를 조절한다 <sup>[1 Secondary survey — fluid infusion rate]</sup> <sup>[2 Resuscitation]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "얼굴 화상·입안 그을음만 있어도 바로 삽관?",
+    "point": "밀폐 공간 노출·얼굴 화상·입안 그을음은 그 자체로 흡입손상이 아니다 — 뒤 인두(부종·점막 탈락)와 성대 그을음을 진찰해 판단한다 <sup>[1 Primary survey]</sup>. 불필요한 삽관은 인공호흡기 폐렴·성대 손상을 늘린다 <sup>[1 Diagnosis — smoke inhalation screening]</sup> <sup>[5 Introduction]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "산소포화도·첫 흉부 X선 정상 = 흡입손상 배제?",
+    "point": "폐 염증 반응은 시간이 걸려 첫 산소화·흉부 X선이 정상이어도 배제하지 못한다 <sup>[1 Secondary survey]</sup> <sup>[4 Diagnosis]</sup>. 부종이 없어도 첫 24시간(특히 8시간)은 낮은 문턱으로 지켜본다 <sup>[4 Intubation]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "도착 시 카복시헤모글로빈 정상 = CO 중독 아님?",
+    "point": "현장 산소로 이미 떨어졌을 수 있어 도착 시 정상일 수 있다. 100 % 산소로 반감기가 약 4시간에서 약 45분으로 줄고, 카복시헤모글로빈 &lt;5 %를 확인할 때까지 산소를 계속한다 <sup>[1 Box 2 Inhalation injury]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "화재 환자의 시안화물 의심 — 아질산염 해독제 키트?",
+    "point": "아질산염은 메트헤모글로빈을 만들어 CO 중독이 함께 있으면 저산소를 악화시킨다 — 화재 흡입에서는 하이드록소코발라민(70 mg/kg 정맥)이 1차 약이다 <sup>[4 Cyanide poisoning]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "상기도 손상 징후 = 호흡곤란 · 그렁거림 · 저환기 · 보조호흡근 사용 · 입인두 물집·부종 · 얼굴·목 깊은 화상 <sup>[4 Intubation]</sup>.",
+   "%TBSA 는 1도를 빼고 센다. 성인은 9의 법칙, 소아는 Lund-Browder <sup>[3 1. Introduction]</sup> <sup>[1 Primary survey]</sup>.",
+   "공식의 첫 8시간은 화상 시각부터 센다 <sup>[2 Resuscitation]</sup>. 공식은 시작 속도만 정한다 <sup>[1 Secondary survey — fluid infusion rate]</sup>.",
+   "CO 중독이 의심되면 카복시헤모글로빈 &lt;5 %까지 100 % 산소. 설명되지 않는 젖산 산증이면 시안화물을 의심해 하이드록소코발라민 <sup>[1 Box 2 Inhalation injury]</sup> <sup>[4 Cyanide poisoning]</sup>.",
+   "몸통을 둘러싼 전층 화상으로 흉곽이 굳으면 가피절개 <sup>[4 Mechanical ventilation]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "intubation-signs",
+    "name": "화상 환자 조기 기관삽관을 고려할 징후",
+    "kind": "처치 적응",
+    "population": "화상·연기 흡입 환자",
+    "statement": "다음 중 하나라도 있으면 삽관을 고려한다 — 호흡곤란, 그렁거림(stridor), 저환기, 보조호흡근 사용, 입인두 물집·부종, 얼굴·목 깊은 화상. 상기도 부종·충혈이 보이면 즉시 삽관한다 [[tanizaki-inhalation-2015: Intubation]]",
+    "exceptions": "징후가 없어도 첫 24시간(특히 8시간)은 가까이 관찰하며 낮은 문턱을 유지한다 [[tanizaki-inhalation-2015: Intubation]]. 미국화상학회 기준은 민감도 77 %·특이도 46 %로 과다 삽관 우려가 있다 [[concannon-intubation-2023: Discussion]]",
+    "source": "tanizaki-inhalation-2015",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "jeschke-burn-2020",
+    "org": "Jeschke MG, van Baar ME, Choudhry MA, Chung KK, Gibran NS, Logsetty S",
+    "title": "Burn injury",
+    "kind": "review",
+    "citation": "Nat Rev Dis Primers 2020;6(1):11",
+    "checked": "PMC7224101 전문(PubMed MCP)에서 Introduction(깊이 분류·주요 화상 기준), Box 2 Inhalation injury(세 유형·CO 반감기 4시간→약 45분·COHb <5 %까지 산소·도착 시 COHb 정상 가능·시안화물은 설명 안 되는 산증), Primary survey(ABCDE 순서·보온·성인 9의 법칙/소아 Lund-Browder·밀폐 공간·얼굴 화상·입안 그을음은 그 자체로 흡입손상 아님·뒤 인두와 성대 진찰·그렁거림·쉰 목소리·탄소 가래), Secondary survey(≥15 % 검사·산소화와 흉부 X선 정상이 배제 아님·ABA 지침 2–4 mL/kg/%·공식은 시작 속도·소변 목표 0.3–0.5 mL/kg/h·Rule of Tens), Management(>20 %TBSA 수액·데운 젖산 링거·콜로이드 구조·과다 소생의 구획증후군), 흡입손상 선별 도구 문단(불필요한 삽관 합병증)을 읽음. 9의 법칙 수치는 그림에만 있어 이 논문에서 옮기지 않음",
+    "doi": "10.1038/s41572-020-0145-5",
+    "pmid": "32054846",
+    "verified": "text",
+    "year": "2020",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7224101/"
+   },
+   {
+    "id": "dries-burn-2017",
+    "org": "Dries DJ, Marini JJ",
+    "title": "Management of Critical Burn Injuries: Recent Developments",
+    "kind": "review",
+    "citation": "Korean J Crit Care Med 2017;32(1):9-21",
+    "checked": "PMC6786736 전문 중 Resuscitation · Pulmonary Issues · Conclusions 절을 읽음 — Parkland(Consensus) 공식 = 4 mL/kg/%TBSA 젖산 링거·첫 24시간·%TBSA 는 2도·3도 넓이·화상 시각부터 첫 8시간에 절반·이후 16시간에 절반, Parkland 센터 경험(적정 소생 = 소변 0.5–1.0 mL/kg/h, 48 %가 과다 소생), 공식은 초기 지침일 뿐 소변량으로 조절, <20 %TBSA 는 경구 소생 후보, 「쉽게 과다 소생된다 — 관류가 충분하면 줄인다」",
+    "doi": "10.4266/kjccm.2016.00969",
+    "pmid": "31723611",
+    "verified": "text",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6786736/"
+   },
+   {
+    "id": "giretzlehner-tbsa-2021",
+    "org": "Giretzlehner M, Ganitzer I, Haller H",
+    "title": "Technical and Medical Aspects of Burn Size Assessment and Documentation",
+    "kind": "review",
+    "citation": "Medicina (Kaunas) 2021;57(3):242",
+    "checked": "PMC7999209 전문을 읽음 — 1. Introduction(1도·2a·2b·3도 모습과 치유 기간, 화상 넓이에서 1도 제외), 2.1 Over-Resuscitation(1979 NIH 회의: 첫 24시간 등장성 결정질 2–4 mL/kg/%·소변 30–50 mL/h, 소아 <30 kg 1 mL/kg/h·>30 kg 0.5 mL/kg/h, 과대평가가 과다 소생으로), 3.3 Rule of Nines(Wallace 1951: 팔 각 9·다리 각 18·몸통 앞·뒤 각 18·머리·얼굴 9·목 1·생식기 1, 과대평가 경향), 3.4 Rule of Palms(손바닥 약 1 %·실제는 더 작아 과대평가)",
+    "doi": "10.3390/medicina57030242",
+    "pmid": "33807630",
+    "verified": "text",
+    "year": "2021",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7999209/"
+   },
+   {
+    "id": "tanizaki-inhalation-2015",
+    "org": "Tanizaki S",
+    "title": "Assessing inhalation injury in the emergency room",
+    "kind": "review",
+    "citation": "Open Access Emerg Med 2015;7:31-37",
+    "checked": "PMC4806805 전문을 읽음 — 세 유형(상기도 열손상·하기도 화학손상·CO/시안화물 대사 질식), 상기도 부종은 소생 후기에 생기고 첫 평가가 부종 정도를 잘 예측하지 못함, 삽관 고려 징후 6가지·상기도 부종/충혈이면 즉시 삽관·없어도 24시간(특히 8시간) 관찰, 첫 흉부 X선 대개 정상, 의심 시 100 % 산소, 시안화물 의심이면 해독제·하이드록소코발라민 70 mg/kg 1차·아질산염 키트는 CO 동반 시 금기, 원주형 몸통 전층 화상은 흉부 가피절개",
+    "doi": "10.2147/OAEM.S74580",
+    "pmid": "27147888",
+    "verified": "text",
+    "year": "2015",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4806805/"
+   },
+   {
+    "id": "concannon-intubation-2023",
+    "org": "Concannon E, Damkat Thomas L, Kerr L, et al.",
+    "title": "Review of Indications for Endotracheal Intubation in Burn Patients with Suspected Inhalational Injury",
+    "kind": "other",
+    "citation": "Eur Burn J 2023;4(2) — 논문 번호 ebj4020014",
+    "checked": "PMC11571857 전문을 읽음(단일 기관 후향 연구) — 상기도 부종은 첫 48시간에 진행해 조기 삽관을 정당화, 삽관 합병증·인공호흡기 폐렴, ABA 기준(민감도 77 %·특이도 46 %, ISBI 지침에 포함)과 Denver 기준, 기준에 맞춰 삽관해도 기관지경 정상이 많아 과다 삽관 우려, 이송 거리가 삽관 결정에 영향. ABA 기준 항목 표는 PMC 텍스트에 없어 옮기지 않음. 쪽수는 확인하지 않아 DOI 로만 적음",
+    "doi": "10.3390/ebj4020014",
+    "pmid": "39599924",
+    "verified": "text",
+    "year": "2023",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11571857/"
+   },
+   {
+    "id": "cartotto-aba-2024",
+    "org": "American Burn Association (Cartotto R, Johnson LS, Savetamal A, et al.)",
+    "title": "American Burn Association Clinical Practice Guidelines on Burn Shock Resuscitation",
+    "kind": "guideline",
+    "citation": "J Burn Care Res 2024;45(3):565-589",
+    "checked": "PubMed 초록만 읽음(PMC 전문 없음) — 대상 성인 ≥20 %TBSA 첫 48시간, 2 mL/kg/%TBSA 로 시작해 소생량을 줄이도록 권고, 큰 화상에서 알부민 고려, 복강·안압 선택적 감시, 고용량 비타민 C·신선동결혈장·조기 CRRT·승압제는 권고 불가",
+    "doi": "10.1093/jbcr/irad125",
+    "pmid": "38051821",
+    "verified": "abstract",
+    "year": "2024",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1093/jbcr/irad125"
+   }
+  ],
+  "checks": [
+   {
+    "q": "70 kg 성인, 2도 화상 30 %TBSA(1도 화상 10 %는 별도). Parkland 로 첫 24시간 젖산 링거량과 첫 8시간 몫은?",
+    "a": "4 × 70 × 30 = 8,400 mL. 1도는 빼므로 30 %만 쓴다. 절반 4,200 mL 를 화상 시각부터 8시간 안에, 나머지를 이후 16시간에 — 그 뒤엔 소변량으로 조절."
+   },
+   {
+    "q": "밀폐된 방 화재, 얼굴 화상·코털 그을림이 있고 목소리가 쉬고 그렁거림이 들린다. 다음 처치는?",
+    "a": "상기도 부종이 진행하기 전에 조기 기관삽관하고 100 % 산소를 준다."
+   },
+   {
+    "q": "수액 소생 중 성인의 소변량이 2 mL/kg/h 로 계속 나온다. 어떻게 하나?",
+    "a": "과다 소생 — 주입 속도를 줄인다. 목표는 약 0.5 mL/kg/h(30–50 mL/h)."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "화상 초기 — 기도 먼저, 넓이로 수액, 소변으로 조절",
+  "geo": {
+   "title": "화상 초기 — 기도 먼저, 넓이로 수액, 소변으로 조절",
+   "w": 680.3,
+   "h": 734.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "화상 — 일차 평가(ABCDE) ·",
+      "보온"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 317.5,
+     "y": 16.0
+    },
+    {
+     "id": "air",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "상기도 손상 징후?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 317.5,
+     "y": 102.0
+    },
+    {
+     "id": "intub",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "조기 기관삽관 · 100 % 산소"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 243.8,
+     "y": 319.0
+    },
+    {
+     "id": "obs",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "뒤 인두·성대 진찰 · 첫",
+      "24시간 관찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 317.4,
+     "y": 212.0
+    },
+    {
+     "id": "tbsa",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "2도 이상 화상 >20 %TBSA?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.5,
+     "y": 388.0
+    },
+    {
+     "id": "small",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "경구·유지 수액 — 동반",
+      "손상이면 정맥"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.3,
+     "y": 478.0
+    },
+    {
+     "id": "fluid",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "젖산 링거 2–4 mL/kg/% ·",
+      "절반 8시간"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.3,
+     "y": 478.0
+    },
+    {
+     "id": "uo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "소변 약 0.5 mL/kg/h?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 564.0
+    },
+    {
+     "id": "keep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "속도 유지 — 매시간 재평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 654.0
+    },
+    {
+     "id": "up",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "주입 속도 올림"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 654.0
+    },
+    {
+     "id": "down",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "주입 속도 줄임 — 과다 소생",
+      "피함"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 654.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "air",
+     "points": [
+      [
+       415.5,
+       80.0
+      ],
+      [
+       415.5,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "air",
+     "to": "intub",
+     "points": [
+      [
+       366.5,
+       149.0
+      ],
+      [
+       366.5,
+       198.0
+      ],
+      [
+       301.4,
+       198.0
+      ],
+      [
+       301.4,
+       305.0
+      ],
+      [
+       309.1,
+       305.0
+      ],
+      [
+       309.1,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 351.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "air",
+     "to": "obs",
+     "points": [
+      [
+       415.5,
+       149.0
+      ],
+      [
+       415.4,
+       212.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "얼굴 화상만"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 382.1,
+      "y": 173.0
+     }
+    },
+    {
+     "from": "air",
+     "to": "tbsa",
+     "points": [
+      [
+       464.5,
+       149.0
+      ],
+      [
+       464.5,
+       198.0
+      ],
+      [
+       529.4,
+       198.0
+      ],
+      [
+       529.4,
+       305.0
+      ],
+      [
+       516.0,
+       305.0
+      ],
+      [
+       516.0,
+       374.0
+      ],
+      [
+       502.5,
+       374.0
+      ],
+      [
+       502.5,
+       388.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 449.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "obs",
+     "to": "intub",
+     "points": [
+      [
+       382.8,
+       276.0
+      ],
+      [
+       382.8,
+       305.0
+      ],
+      [
+       374.5,
+       305.0
+      ],
+      [
+       374.5,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "부종·물집"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 353.6,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "obs",
+     "to": "tbsa",
+     "points": [
+      [
+       448.1,
+       276.0
+      ],
+      [
+       448.1,
+       305.0
+      ],
+      [
+       455.8,
+       305.0
+      ],
+      [
+       455.8,
+       374.0
+      ],
+      [
+       453.5,
+       374.0
+      ],
+      [
+       453.5,
+       388.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 433.1,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "intub",
+     "to": "tbsa",
+     "points": [
+      [
+       341.8,
+       366.0
+      ],
+      [
+       341.8,
+       374.0
+      ],
+      [
+       404.5,
+       374.0
+      ],
+      [
+       404.5,
+       388.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "tbsa",
+     "to": "fluid",
+     "points": [
+      [
+       420.8,
+       435.0
+      ],
+      [
+       420.8,
+       464.0
+      ],
+      [
+       340.3,
+       464.0
+      ],
+      [
+       340.3,
+       478.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 411.3,
+      "y": 439.0
+     }
+    },
+    {
+     "from": "tbsa",
+     "to": "small",
+     "points": [
+      [
+       486.2,
+       435.0
+      ],
+      [
+       486.2,
+       464.0
+      ],
+      [
+       566.3,
+       464.0
+      ],
+      [
+       566.3,
+       478.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.7,
+      "y": 439.0
+     }
+    },
+    {
+     "from": "fluid",
+     "to": "uo",
+     "points": [
+      [
+       340.3,
+       542.0
+      ],
+      [
+       340.0,
+       564.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "uo",
+     "to": "keep",
+     "points": [
+      [
+       291.0,
+       611.0
+      ],
+      [
+       291.0,
+       640.0
+      ],
+      [
+       114.0,
+       640.0
+      ],
+      [
+       114.0,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "맞음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 276.0,
+      "y": 615.0
+     }
+    },
+    {
+     "from": "uo",
+     "to": "up",
+     "points": [
+      [
+       340.0,
+       611.0
+      ],
+      [
+       340.0,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "적음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 615.0
+     }
+    },
+    {
+     "from": "uo",
+     "to": "down",
+     "points": [
+      [
+       389.0,
+       611.0
+      ],
+      [
+       389.0,
+       640.0
+      ],
+      [
+       566.0,
+       640.0
+      ],
+      [
+       566.0,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "많음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 374.0,
+      "y": 615.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "화상 — 일차 평가(ABCDE) · 보온",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "상기도 손상 징후?"
+     }
+    ]
+   },
+   {
+    "id": "air",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "상기도 손상 징후?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "조기 기관삽관 · 100 % 산소"
+     },
+     {
+      "label": "얼굴 화상만",
+      "to": 3,
+      "toText": "뒤 인두·성대 진찰 · 첫 24시간 관찰"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "2도 이상 화상 >20 %TBSA?"
+     }
+    ]
+   },
+   {
+    "id": "obs",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "뒤 인두·성대 진찰 · 첫 24시간 관찰",
+    "note": "",
+    "branches": [
+     {
+      "label": "부종·물집",
+      "to": 4,
+      "toText": "조기 기관삽관 · 100 % 산소"
+     },
+     {
+      "label": "정상",
+      "to": 5,
+      "toText": "2도 이상 화상 >20 %TBSA?"
+     }
+    ]
+   },
+   {
+    "id": "intub",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "조기 기관삽관 · 100 % 산소",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "2도 이상 화상 >20 %TBSA?"
+     }
+    ]
+   },
+   {
+    "id": "tbsa",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "2도 이상 화상 >20 %TBSA?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "젖산 링거 2–4 mL/kg/% · 절반 8시간"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "경구·유지 수액 — 동반 손상이면 정맥"
+     }
+    ]
+   },
+   {
+    "id": "fluid",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "젖산 링거 2–4 mL/kg/% · 절반 8시간",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "소변 약 0.5 mL/kg/h?"
+     }
+    ]
+   },
+   {
+    "id": "small",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "경구·유지 수액 — 동반 손상이면 정맥",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "uo",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "소변 약 0.5 mL/kg/h?",
+    "note": "",
+    "branches": [
+     {
+      "label": "맞음",
+      "to": 9,
+      "toText": "속도 유지 — 매시간 재평가"
+     },
+     {
+      "label": "적음",
+      "to": 10,
+      "toText": "주입 속도 올림"
+     },
+     {
+      "label": "많음",
+      "to": 11,
+      "toText": "주입 속도 줄임 — 과다 소생 피함"
+     }
+    ]
+   },
+   {
+    "id": "keep",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "속도 유지 — 매시간 재평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "up",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "주입 속도 올림",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "down",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "주입 속도 줄임 — 과다 소생 피함",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.em.lithium-toxicity.hemodialysis-indication": {
   "id": "cn.em.lithium-toxicity.hemodialysis-indication",
   "title": "리튬 중독 — 만성 축적의 중증 신경독성은 투석을 부른다",
@@ -39995,6 +41026,2897 @@ window.MEDKOS_CONCEPTS = {
    "kmle-2026-1467",
    "kmle-2026-1717"
   ],
+  "hasErrors": false
+ },
+ "cn.em.sepsis.initial-resuscitation-bundle": {
+  "id": "cn.em.sepsis.initial-resuscitation-bundle",
+  "title": "패혈 쇼크 — 첫 한 시간: 배양·항생제·수액·승압제",
+  "objective": "패혈증·패혈 쇼크를 알아본 뒤 첫 처치(젖산 측정·항생제 전 혈액배양·광범위 항생제·결정질액·승압제와 목표 평균동맥압)의 시점과 선택을 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "패혈증(sepsis) · 패혈 쇼크(septic shock)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Infectious Disease",
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "0ce958ea9586060e",
+  "summary": [
+   "결론: 쇼크 가능성이면 배양 뒤 광범위 항생제 1시간 안, 결정질액 30 mL/kg, 수액 뒤 저혈압이면 노르에피네프린(MAP 65).",
+   "시험 단서: 감염+저혈압·의식 변화·핍뇨·젖산 >2 mmol/L(septic shock), 수액에도 승압제가 필요하다.",
+   "왜: 쇼크에서는 적절한 항생제가 한 시간 늦을 때마다 사망이 는다 — 쇼크 없는 패혈증에서는 이 관련이 약하다.",
+   "배양은 항생제를 늦추지 않을 때만(약 45분 안) 먼저 — 못 얻어도 항생제를 미루지 않는다.",
+   "쓰지 않는 것: 도파민 1차·전분(starch) 수액·CVP 8–12 같은 고정 목표. 승압제는 중심정맥관을 기다리지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 쇼크에서 항생제 시계가 가장 빠른가",
+    "deep": false,
+    "html": "<ul>\n<li>초기 처치 가운데 생존과 가장 분명하게 이어진 것은 <strong>적절한 항생제를 일찍</strong> 주는 일이다. 세균성 패혈 쇼크에서는 쇼크를 알아본 뒤 한 시간 늦을 때마다 사망이 약 7–8 % 는다고 추정된다 <sup>[1 315장 p.2320]</sup>.</li>\n<li>쇼크가 없는 패혈증에서는 항생제 시점과 사망의 관련이 확립되지 않았다 — 그래서 진단이 불확실하면 시간을 정해 놓고 평가한 뒤 준다 <sup>[1 315장 p.2320]</sup> <sup>[2 Rec. 12–15]</sup>.</li>\n<li>배양은 원인균과 항생제 범위를 정하는 근거라 항생제 <strong>전에</strong> 채취하지만, 배양 때문에 항생제가 늦어지는 것이 더 해롭다 <sup>[2 배양 best practice]</sup> <sup>[1 314장 p.2315]</sup>.</li>\n<li>혈압은 수액으로 먼저 채우고, 적절한 수액 뒤에도 낮으면 승압제로 올린다 — 첫 승압제는 노르에피네프린, 목표는 MAP 65 mm Hg 다 <sup>[1 315장 p.2322–2323]</sup> <sup>[2 Rec. 9]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 감염에서 장기 기능 이상과 쇼크로",
+    "deep": false,
+    "html": "<ul>\n<li>국소 감염에서는 염증·항염증·회복 반응이 균형을 이루지만, 패혈증에서는 병원체 성분(PAMP)과 손상 세포에서 나온 물질(DAMP)이 패턴 인식 수용체를 통해 과한 면역 반응을 일으켜 멀리 떨어진 장기까지 손상한다 <sup>[1 315장 p.2317]</sup>.</li>\n<li>혈관 내피가 활성화되면 당질층(glycocalyx)이 무너지고 세포 사이 결합이 풀려 <strong>혈관 밖으로 체액이 샌다</strong> — 간질 부종으로 산소 확산 거리가 늘고 조직 관류가 준다. 내피의 NO 대사 변화가 <strong>전신 혈관확장</strong>을 일으킨다 <sup>[1 315장 p.2319]</sup>.</li>\n<li>저혈압은 세동맥 확장 + 정맥 확장·체액 이동으로 인한 정맥 환류 감소에서 온다. 초기에는 심박수·심박출량이 올라 보상하고, 진행하면 혈관 평활근이 카테콜아민에 반응하지 않는 불응성 쇼크가 된다. 패혈 쇼크의 절반까지는 심근 기능도 떨어진다 <sup>[1 315장 p.2322]</sup>.</li>\n<li>그래서 처치가 셋으로 나뉜다 — 원인 제거(항생제·감염원 조절), 줄어든 혈관 내 용적 채우기(결정질액), 넓어진 혈관 조이기(노르에피네프린). 젖산 상승은 저관류·세포 대사 이상을 함께 반영하는 표지라 정의와 소생 지표에 모두 쓰인다 <sup>[3 Clinical Criteria to Identify Septic Shock]</sup> <sup>[2 Rec. 7]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 인지 직후의 다섯 가지",
+    "deep": false,
+    "html": "<ul>\n<li>표가 젖산·배양·항생제·수액·승압제를 시점·대상·권고 강도와 함께 놓는다. 초기 검사는 혈구(감별 포함)·기본 화학·간 기능·젖산·응고·소변 검사이고, 의심 부위 영상으로 감염원을 찾는다 <sup>[1 315장 p.2320]</sup>.</li>\n<li><strong>수액</strong>: 결정질액이 교질액보다 먼저이고, 균형 결정질액(젖산 링거)이 생리식염수보다 낫다 — 생리식염수는 고염소성 대사산증·콩팥 혈관수축과 관련된다. 전분 수액은 중증 콩팥 손상·사망과 관련돼 쓰지 않는다 <sup>[1 315장 p.2322]</sup> <sup>[2 Rec. 32–35]</sup>.</li>\n<li><strong>음성 결과의 한계</strong>: 젖산 단독으로는 패혈증을 넣거나 빼기에 민감도·특이도가 모자라다 — 사전 확률을 바꾸는 보조 검사다 <sup>[2 Rec. 3 rationale]</sup>. 혈압이 정상이어도 젖산 상승은 장기 저관류를 알릴 수 있다는 의견이 있었으나 Sepsis-3 는 젖산 단독을 쇼크로 보지 않았다 <sup>[3 Controversies and Limitations]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "항생제 — 감염 부위가 불분명할 때",
+    "deep": false,
+    "html": "<ul>\n<li>감염 부위·예상 균·지역사회 대 의료 관련 노출·과거 감염과 항생제·지역 내성·면역 상태와 중증도를 고려한다. 부위가 불분명하면 원인 가능성이 있는 모든 균에 시험관 감수성이 높은 광범위 항생제를 고르고, 위험 인자에 따라 표처럼 더한다 <sup>[1 315장 p.2320]</sup>.</li>\n<li>감염원 조절(복강 내 농양·장 천공·폐쇄성 신우신염·담관염·괴사성 연조직 감염)은 가능한 한 빨리 한다. 감염이 의심되는 카테터는 뺀다 <sup>[1 315장 p.2320]</sup> <sup>[2 Rec. 27]</sup>.</li>\n<li>배양·임상 경과를 보고 매일 범위 축소를 검토한다 — 적절한 감염원 조절이 됐으면 짧은 치료 기간을 택한다 <sup>[1 315장 p.2321]</sup> <sup>[2 Rec. 29–30]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>첫 30 mL/kg 뒤 수액은 고정 목표(CVP 8–12 mm Hg · ScvO2 &gt;70 % · 소변 ≥0.5 mL/kg/h)가 아니라 동적 지표(수동 하지 거상·일회박출량 변화·POCUS·모세혈관 재충혈)를 되풀이해 정한다 <sup>[1 315장 p.2322]</sup> <sup>[2 Rec. 6]</sup> <sup>[2 Rec. 8]</sup>.</li>\n<li>결정질액을 많이 받은 환자에게는 알부민을 더할 수 있다(약 권고) <sup>[2 Rec. 34]</sup>.</li>\n<li>바소프레신은 노르에피네프린 용량을 계속 올리는 대신 더한다 — 보통 노르에피네프린 0.25–0.5 μg/kg/분에서 시작한다 <sup>[2 Rec. 38]</sup>.</li>\n<li>승압제가 계속 필요하면 정맥 하이드로코티손을 쓴다 — 쇼크 회복을 앞당기지만 사망률 효과는 분명하지 않고 근력 약화가 늘었다 <sup>[2 Rec. 58]</sup>.</li>\n<li>동맥관으로 혈압을 연속 측정하고(가능한 한 빨리), ICU 가 필요하면 6시간 안에 입실시킨다 <sup>[2 Rec. 43]</sup> <sup>[2 Rec. 10]</sup>.</li>\n<li>국내 응급의학 교과서·KMLE 해설의 「묶음」 구성은 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 30 mL/kg 의 권고 강도와 투여 방식</strong> — 시험 기준: SSC 2021 은 패혈증 저관류·패혈 쇼크에 결정질액 <strong>최소 30 mL/kg 를 3시간 안에</strong> — 약한 권고(근거 낮음) <sup>[2 Rec. 5]</sup> / 다른 기준: 해리슨 22판은 「약 30 mL/kg 를 5–10분 볼루스로」 쓰고 말기 신부전·수축기 심부전에는 맞지 않을 수 있다고 덧붙이며 <sup>[1 315장 p.2322]</sup>, 쇼크 장은 SSC 가 「최소 30 mL/kg 를 권고한다」고만 인용한다 <sup>[1 314장 p.2314]</sup> / 왜 다른가: SSC 는 다른 용량을 비교한 전향 연구가 없고 관찰 연구에 근거해 강도를 약하게 매겼다. 해리슨은 강도 없이 실무 서술로 옮겼다. 5–10분 볼루스 속도는 SSC 원문에서 찾지 못했다 <sup>[2 Rec. 5 rationale]</sup> / 시험에서는: 숫자(30 mL/kg · 3시간)는 KMLE·USMLE 모두 그대로 쓰되, 「심부전·말기 신부전 환자에게도 반드시 30 mL/kg」 같은 보기는 틀린 쪽으로 본다(이 칸은 정리자 판단).</li>\n<li><strong>Z2 충돌 · 1시간 항생제의 대상</strong> — 시험 기준: SSC 2021 은 <strong>쇼크 가능성이 있거나 패혈증 가능성이 높으면</strong> 즉시, 이상적으로 1시간 안(강한 권고) <sup>[2 Rec. 12]</sup> / 다른 기준: 해리슨 22판은 1시간 기준을 <strong>의심되거나 확인된 패혈 쇼크</strong>에만 걸고, 쇼크 없는 패혈증은 진단이 불확실할 때 평가 뒤 3시간 안이라고 쓴다 <sup>[1 315장 p.2320]</sup> / 왜 다른가: 시간-사망 관련이 쇼크에서 강하고 쇼크 없을 때 약하다는 근거는 같지만, SSC 는 「가능성 높은 패혈증」을 쇼크 쪽 시계에 넣었다(쇼크 없는 패혈증 강도는 근거 매우 낮음) <sup>[2 Rec. 12–15 rationale]</sup> / 시험에서는: 패혈 쇼크 = 1시간은 두 출처가 같다. 쇼크 없는 「가능성 높은」 패혈증 문항은 SSC 기준(즉시)으로 답하는 것이 안전하다 — KMLE 국내 해설은 대조하지 않았다(검토 항목, 이 칸은 정리자 판단).</li>\n<li><strong>Z3 새 근거 · qSOFA 의 자리</strong> — 시험 기준: qSOFA ≥2 는 나쁜 경과를 예측하는 신호이지 패혈증의 정의·단독 선별 도구가 아니다 — SSC 2021 은 단독 선별 도구로 쓰지 말라고 강하게 권고 <sup>[2 Rec. 2 rationale]</sup> <sup>[3 Controversies and Limitations]</sup> / 다른 기준: 해리슨 쇼크 장은 「Sepsis-3 는 가장 위중한 패혈증 환자를 찾는 데 qSOFA 사용을 권했다」고 쓴다 <sup>[1 314장 p.2313]</sup> / 왜 다른가: Sepsis-3 는 예측 도구로 만들었고 선별 도구로서의 분석은 하지 않았다. 이후 연구에서 SIRS 보다 특이적이나 민감도가 낮았다 <sup>[2 Rec. 2 rationale]</sup> / 시험에서는: 「qSOFA 2점 미만이므로 패혈증이 아니다 · 항생제 보류」는 틀린 보기다(KMLE · USMLE 공통).</li>\n<li><strong>Z4 맥락 · 패혈 쇼크 정의의 판</strong> — 시험 기준: Sepsis-3 — 저혈량이 없는데도 MAP ≥65 유지에 승압제 + 젖산 &gt;2 mmol/L <sup>[3 Clinical Criteria to Identify Septic Shock]</sup> / 다른 기준: 1991 Sepsis-1 — 수액에도 수축기 &lt;90 mm Hg 또는 기저 대비 ≥40 mm Hg 감소, SIRS 2개 이상+감염 = 패혈증, 「중증 패혈증」 단계 <sup>[1 315장 p.2316]</sup> / 왜 다른가: SIRS 는 감염 없는 입원 환자에도 흔하고(변별력 낮음) 감염+장기 부전 환자 8명 중 1명을 놓쳤다 <sup>[3 Sepsis]</sup> / 시험에서는: 현행 정의는 Sepsis-3. 옛 문항·국내 해설에 SIRS·「중증 패혈증」이 남아 있을 수 있다 — 대조하지 않았다(검토 항목).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "패혈증 · 패혈 쇼크 — 무엇을 언제(SSC 2021 권고 강도)",
+    "columns": [
+     "항목",
+     "언제 · 누구에게",
+     "무엇을",
+     "SSC 2021 강도"
+    ],
+    "rows": [
+     [
+      "젖산",
+      "패혈증 의심 즉시",
+      "측정. 높으면 낮추는 쪽으로 소생을 이끈다 — 다른 원인과 임상 맥락을 함께 본다",
+      "소생 지표로 사용: 약(근거 낮음) <sup>[2 Rec. 7]</sup>"
+     ],
+     [
+      "혈액배양(+다른 부위)",
+      "항생제 전",
+      "항생제를 늦추지 않을 때만(약 45분 안) 먼저 채취",
+      "best practice(2016 진술 유지) <sup>[2 배양 best practice]</sup>"
+     ],
+     [
+      "항생제",
+      "쇼크 가능성 · 패혈증 가능성 높음: 즉시, 이상적으로 1시간 안 / 쇼크 없는 불확실 패혈증: 3시간 안 / 감염 가능성 낮고 쇼크 없음: 미루고 관찰",
+      "감염 부위가 불분명하면 원인균에 모두 듣는 광범위 항생제",
+      "1시간: 강(쇼크 근거 낮음) · 3시간: 약 · 보류: 약 <sup>[2 Rec. 12–15]</sup>"
+     ],
+     [
+      "수액",
+      "패혈증으로 인한 저관류 또는 패혈 쇼크",
+      "결정질액 최소 30 mL/kg 를 3시간 안에. 균형 결정질액(젖산 링거) &gt; 생리식염수. 전분 금지",
+      "30 mL/kg: 약(근거 낮음) · 결정질액 1차: 강 · 균형액: 약 · 전분 금지: 강(근거 높음) <sup>[2 Rec. 5]</sup> <sup>[2 Rec. 32–35]</sup>"
+     ],
+     [
+      "승압제",
+      "적절한 수액 뒤에도 저혈압",
+      "노르에피네프린 1차 → MAP 65 mm Hg 목표. 부족하면 바소프레신 추가, 그다음 에피네프린. 말초로 먼저 시작해도 된다",
+      "노르에피네프린: 강 · MAP 65: 강(중등) · 바소프레신·에피네프린·말초 시작: 약 <sup>[2 Rec. 9]</sup> <sup>[2 Rec. 37–39]</sup> <sup>[2 Rec. 44]</sup>"
+     ]
+    ],
+    "note": "강도는 ssc-2021 원문의 등급 줄을 그대로 옮겼다. 해리슨 315장 p.2320–2323 의 서술(1시간 항생제 · 30 mL/kg · 노르에피네프린 → 바소프레신 → 에피네프린 · MAP ≥ 65)과 방향은 같다 — 다른 곳은 「시험 쟁점」 절."
+   },
+   {
+    "title": "경험적 항생제 — 위험 인자로 더하기",
+    "columns": [
+     "위험",
+     "선택",
+     "근거"
+    ],
+    "rows": [
+     [
+      "녹농균(Pseudomonas) 가능성 낮음",
+      "그람음성: 3세대 세팔로스포린(세프트리악손 · 세포탁심)",
+      "<sup>[1 315장 p.2320]</sup>"
+     ],
+     [
+      "녹농균 가능성",
+      "세페핌 · 피페라실린-타조박탐 · 카바페넴(이미페넴 · 메로페넴)",
+      "<sup>[1 315장 p.2320]</sup>"
+     ],
+     [
+      "고도 내성 그람음성(과거 감염 · 집락)",
+      "그람음성 항생제 두 가지",
+      "<sup>[1 315장 p.2320]</sup>"
+     ],
+     [
+      "MRSA 위험(잦은 의료 노출 · 병원 발생)",
+      "반코마이신 또는 리네졸리드 추가 — 위험 낮으면 추가하지 않는다",
+      "<sup>[1 315장 p.2320]</sup> <sup>[2 Rec. 17–18]</sup>"
+     ],
+     [
+      "진균 위험 높음(최근 복부 수술 · 정맥 영양 · 여러 부위 칸디다 집락)",
+      "에키노칸딘 — 위험 낮으면 일상적 항진균제를 쓰지 않는다",
+      "<sup>[1 315장 p.2320]</sup> <sup>[2 Rec. 22–23]</sup>"
+     ]
+    ],
+    "note": "β-락탐을 반코마이신보다 먼저, 첫 투여 뒤 β-락탐 연장 주입을 고려한다. 부위별 처방은 해리슨 표 315-1(p.2321)."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "혈액배양 결과가 나올 때까지 항생제 보류?",
+    "point": "배양은 항생제 전에 채취하되, 그 때문에 항생제가 늦어지면 안 된다(약 45분 넘게 늦추지 않음). 배양을 얻지 못해도 항생제를 시작한다 <sup>[2 Rec. 11–12 rationale(배양 best practice)]</sup> <sup>[1 314장 p.2315]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "쇼크 없는 패혈증 의심도 무조건 1시간 안 항생제?",
+    "point": "쇼크가 없고 감염 여부가 불확실하면 3시간 안에 감염·비감염 원인을 빠르게 가린 뒤, 감염 의심이 남으면 항생제를 준다. 1시간 기준은 쇼크 가능성(SSC 는 패혈증 가능성이 높을 때도)이다 <sup>[2 Rec. 12–15]</sup> <sup>[1 315장 p.2320]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "패혈 쇼크의 첫 승압제로 도파민?",
+    "point": "1차는 노르에피네프린이다(α1 혈관수축이 강하고 심박수 영향이 적다). 도파민·에피네프린은 노르에피네프린을 구할 수 없을 때의 대안이며 부정맥에 주의한다 <sup>[2 Rec. 37]</sup> <sup>[1 314장 p.2315]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "중심정맥관을 넣은 뒤에 승압제 시작?",
+    "point": "MAP 를 빨리 회복하도록 말초정맥(팔오금 또는 그보다 몸쪽)으로 짧게 시작하고, 계속 필요하면 중심정맥관으로 옮긴다 <sup>[2 Rec. 44]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "패혈 쇼크 = 수축기 혈압 <90 mm Hg?",
+    "point": "Sepsis-3 의 패혈 쇼크는 저혈량이 없는데도 MAP ≥ 65 mm Hg 를 지키려고 승압제가 필요하고 젖산 &gt;2 mmol/L 인 상태다. 수축기 &lt;90 은 1991 정의다 <sup>[3 Clinical Criteria to Identify Septic Shock]</sup> <sup>[1 315장 p.2316]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "수액량은 CVP 8–12 mm Hg 를 맞출 때까지?",
+    "point": "CVP 8–12 · ScvO2 &gt;70 % 같은 프로토콜 목표는 사망률을 낮추지 못해 권하지 않는다. 첫 30 mL/kg 뒤에는 수동 하지 거상·일회박출량 변화·모세혈관 재충혈 같은 동적 지표로 되풀이해 판단한다 <sup>[1 315장 p.2322]</sup> <sup>[2 Rec. 6]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "도식은 판단 순서다 — 실제로는 패혈증·패혈 쇼크를 응급으로 보고 치료와 소생을 즉시 함께 시작한다 <sup>[2 Rec. 4]</sup>.",
+   "30 mL/kg 는 말기 신부전·수축기 심부전 환자에게 맞지 않을 수 있다 — 볼루스마다 반응을 다시 본다 <sup>[1 315장 p.2322]</sup>.",
+   "노르에피네프린을 말초로 시작하면 팔오금 또는 그보다 몸쪽 정맥에 짧게만 두고, 계속 필요하면 중심정맥관으로 옮긴다 <sup>[2 Rec. 44]</sup>.",
+   "승압제가 계속 필요하면 하이드로코티손 200 mg/일(50 mg 6시간마다)을 더한다 <sup>[1 315장 p.2323]</sup> <sup>[2 Rec. 58]</sup>. 심장 기능 저하로 저관류가 남으면 도부타민 추가 또는 에피네프린 단독 <sup>[2 Rec. 41]</sup>.",
+   "감염이 확인되지 않으면 다른 진단을 계속 찾고, 다른 원인이 드러나면 경험적 항생제를 끊는다 <sup>[2 Rec. 11]</sup> <sup>[1 314장 p.2315]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "sepsis3-sepsis",
+    "name": "패혈증(Sepsis-3)",
+    "kind": "정의",
+    "population": "감염이 의심되거나 확인된 성인",
+    "statement": "감염에 대한 조절되지 않은 숙주 반응으로 생긴 생명을 위협하는 장기 기능 이상. 임상적으로 SOFA 점수가 기저치에서 2점 이상 오른 경우(기저 SOFA 는 기존 장기 기능 이상이 없으면 0) — 병원 사망 약 10 % [[sepsis3-2016: Definition of Sepsis · Clinical Criteria to Identify Patients With Sepsis]]",
+    "exceptions": "SIRS 2개 이상 기준과 「중증 패혈증(severe sepsis)」이라는 말은 버렸다. SOFA·qSOFA 를 채우지 못해도 감염 검사·치료를 미루지 않는다 [[sepsis3-2016: Controversies and Limitations]]",
+    "source": "sepsis3-2016",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "sepsis3-shock",
+    "name": "패혈 쇼크(Sepsis-3)",
+    "kind": "정의",
+    "population": "패혈증 성인",
+    "statement": "저혈량이 없는데도 MAP ≥ 65 mm Hg 를 유지하려면 승압제가 필요하고 혈청 젖산 >2 mmol/L(18 mg/dL) — 병원 사망 40 % 넘음 [[sepsis3-2016: Clinical Criteria to Identify Septic Shock]]",
+    "exceptions": "젖산을 잴 수 없으면 저혈압과 다른 저관류 소견(모세혈관 재충혈 지연 등)으로 작업 진단한다 [[sepsis3-2016: Controversies and Limitations]]",
+    "source": "sepsis3-2016",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "qsofa",
+    "name": "qSOFA(병원 밖 · 응급실 · 병동)",
+    "kind": "위험 선별",
+    "population": "감염이 의심되는 성인(ICU 밖)",
+    "statement": "호흡수 ≥ 22회/분 · 의식 변화(GCS <15) · 수축기 혈압 ≤ 100 mm Hg 중 2개 이상이면 나쁜 경과 가능성이 높다 — 장기 기능 이상을 더 찾고 치료를 올리는 신호 [[sepsis3-2016: Screening for Patients Likely to Have Sepsis]]",
+    "exceptions": "qSOFA 는 패혈증의 정의가 아니다. SSC 2021 은 SIRS·NEWS·MEWS 에 비해 민감도가 낮아 단독 선별 도구로 쓰지 말라고 강하게 권고한다 [[ssc-2021: Rec. 2 rationale]]",
+    "source": "sepsis3-2016",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 315: Sepsis and Septic Shock · Chapter 314: Approach to the Patient with Shock",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 315장 Sepsis and Septic Shock(Strich JR, Chertow DS), p.2316–2324 · 314장 Approach to the Patient with Shock, p.2309–2316",
+    "checked": "드라이브 22판 장별 문서 H22_315 를 p.2316~2323(급성 신손상 절 앞)까지 읽음 — p.2316 Sepsis-1(SIRS 4개, 패혈 쇼크 = 수액에도 수축기 <90 또는 기저 대비 ≥40 감소)·Sepsis-2·Sepsis-3 정의, 역학(미국 입원 성인 약 6 %, 사망 약 15 %, 패혈 쇼크 최대 40 %), 감염 부위(요로 48.9 %·호흡기 32.9 %) · p.2317 위험 인자, SOFA 6개 장기 · p.2317–2319 병태(PAMP·DAMP·PRR, 내피 활성·당질층 붕괴·혈관 누출, 응고병증, NO 혈관확장, 적절한 산소 전달에도 미토콘드리아 기능 이상) · p.2320 임상·초기 검사(혈구·화학·간·젖산·응고·소변, 항생제 전 배양), 25 % 가 모방 질환, Sepsis-3 운영 기준(SOFA ≥2 상승, 패혈 쇼크 = 수액에도 MAP >65 유지에 승압제+젖산 >2), qSOFA(SSC 2021 은 어떤 선별 도구도 우선 권하지 않음), 초기 처치·6시간 안 ICU, 쇼크에서 1시간 지연마다 사망 7–8 % 증가·쇼크면 1시간 안 경험적 항생제, 쇼크 없는 패혈증은 시간-사망 관련 미확립·불확실하면 평가 뒤 3시간 안, 경험적 항생제 선택(녹농균 여부·두 가지 그람음성·MRSA 반코마이신/리네졸리드·β-락탐 먼저·연장 주입·고위험 진균 에키노칸딘), 감염원 조절·감염 카테터 제거 · p.2321 표 315-1 부위별 경험적 항생제 · p.2322 표 315-2(심혈관: 균형 결정질액 약 30 mL/kg, 노르에피네프린→바소프레신→에피네프린, 승압제 지속 시 하이드로코티손 200 mg/일, LVEF 저하면 도부타민 추가 또는 에피네프린 단독), 저혈압 기전, 패혈성 심근병증, 동맥관 조기 삽입, 결정질액 > 교질액·대량 뒤 알부민, 균형액 > 생리식염수, 전분 금지, 30 mL/kg 를 5–10분 볼루스로·말기 신부전·수축기 심부전은 맞지 않을 수 있음, CVP 8–12·ScvO2 >70 %·소변 ≥0.5 mL/kg/h 프로토콜 목표 비권고, 동적 평가(모세혈관 재충혈·수동 하지 거상·POCUS), 모세혈관 재충혈 대 젖산 목표 시험 28일 사망 차이 없음 · p.2323 노르에피네프린 1차·MAP ≥65, 바소프레신 2차·에피네프린 3차, 제한 대 자유 수액 시험(1563명) 90일 사망 차이 없음, 심근 기능 이상 시 도부타민, 하이드로코티손 200 mg/일(50 mg 6시간마다), ARDS SpO2 90–96 %·고유량 비강 산소·고평부압 <30·6–8 mL/kg. 314장은 p.2314–2315(SSC 30 mL/kg 인용, 배양 못 얻어도 항생제 지연 금지, 패혈증 배제 시 항생제 중단, 도파민 1차 아님)만 이 정리본에 인용",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   },
+   {
+    "id": "ssc-2021",
+    "org": "Society of Critical Care Medicine · European Society of Intensive Care Medicine (Evans L, Rhodes A, Alhazzani W, et al.)",
+    "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021",
+    "kind": "guideline",
+    "citation": "Intensive Care Med 2021;47(11):1181-1247 (동시 게재 Crit Care Med 2021;49(11):e1063-e1143, PMID 34605781)",
+    "checked": "PMC8486643 전문(PubMed MCP)에서 선별 · 초기 소생 · MAP · ICU 입실 · 감염(항생제 시점 · 선택 · 배양) · 수액 · 승압제 · 강심제 · 감시 · 스테로이드 절의 권고문과 등급 줄, 근거 설명을 읽음 — Rec.1 수행 개선·선별(강), qSOFA 단독 선별 도구로 쓰지 않음(강 · 근거 설명: qSOFA 는 SIRS 보다 특이적이나 민감도 낮음), 젖산은 사전 확률을 바꾸는 보조 검사(약), Rec.4 즉시 소생(best practice), Rec.5 저관류·쇼크에 3시간 안 결정질액 최소 30 mL/kg(약 · 근거 낮음 · 2016 권고는 관찰 연구 근거, 다른 용량을 비교한 전향 연구 없음), Rec.6 동적 지표(약), Rec.7 젖산 감소로 소생 유도(약), Rec.8 모세혈관 재충혈(약 · ANDROMEDA-SHOCK), Rec.9 MAP 65(강 · 중등), Rec.10 6시간 안 ICU(약), Rec.11 대체 진단 재평가, Rec.12 쇼크 가능성 또는 패혈증 가능성 높음 → 즉시 · 이상적으로 1시간 안(강 · 쇼크 근거 낮음/쇼크 없음 매우 낮음), Rec.13–14 쇼크 없는 가능 패혈증 → 빠른 평가 · 3시간 안(약), Rec.15 감염 가능성 낮으면 보류(약), 시간-사망 관련은 쇼크에서 강하고 쇼크 없을 때 약함(관찰 연구), 배양은 항생제를 크게 늦추지 않으면(<45분) 먼저(2016 best practice 유지), Rec.16 프로칼시토닌으로 시작 결정하지 않음(약), Rec.18 MRSA 위험 낮으면 MRSA 범위 넣지 않음(약), Rec.22–23 진균 위험 높으면 항진균(약)·낮으면 쓰지 않음(약), Rec.32 결정질액 1차(강), Rec.33 균형 결정질액(약), Rec.34 대량 뒤 알부민(약), Rec.35 전분 쓰지 않음(강 · 높음), Rec.37 노르에피네프린 1차(강 — 근거 설명 문단의 「strong recommendation」), 노르에피네프린 없을 때 에피네프린·도파민 대안·부정맥 주의, Rec.38 바소프레신 추가(약 · 보통 노르에피네프린 0.25–0.5 μg/kg/분에서), Rec.39 에피네프린 추가(약), Rec.41 심장 기능 이상+지속 저관류 → 도부타민 추가 또는 에피네프린 단독(약), Rec.43 동맥관(약), Rec.44 말초로 승압제 시작(약 · 팔오금 또는 그보다 몸쪽 정맥, 짧게), Rec.58 승압제 지속 시 정맥 스테로이드(약 · 하이드로코티손 200 mg/일, 노르에피네프린·에피네프린 ≥0.25 μg/kg/분을 4시간 이상 쓴 뒤). PMC 텍스트에서 권고문의 「recommend/suggest」 동사가 빠져 있어 강도는 각 권고 아래 등급 줄로 확인했다. Rec.2·3·17 권고문 자체는 텍스트에서 빠져 근거 설명 문단으로 확인했다. Hour-1 묶음의 구성 요소 원문은 읽지 않았다(근거 설명에 「젖산은 SSC Hour-1 묶음의 일부」라는 언급만 봄)",
+    "doi": "10.1007/s00134-021-06506-y",
+    "pmid": "34599691",
+    "verified": "text",
+    "year": "2021",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/"
+   },
+   {
+    "id": "sepsis3-2016",
+    "org": "Society of Critical Care Medicine · European Society of Intensive Care Medicine (Singer M, Deutschman CS, Seymour CW, et al.)",
+    "title": "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3)",
+    "kind": "consensus",
+    "citation": "JAMA 2016;315(8):801-810",
+    "checked": "PMC4968574 전문(PubMed MCP)을 처음부터 끝까지 읽음 — SIRS 기준의 한계(감염 ICU 환자 8명 중 1명은 SIRS 2개 미만), 패혈증 = 감염에 대한 조절되지 않은 숙주 반응으로 생긴 생명 위협 장기 기능 이상, SOFA 기저 대비 ≥2(기저는 기존 장기 기능 이상 없으면 0, 병원 사망 약 10 %), 「중증 패혈증」 불필요, qSOFA(GCS <15 의식 변화 · 수축기 ≤100 · 호흡수 ≥22, ICU 밖 AUROC 0.81, 젖산 추가는 예측력 개선 없음), 패혈 쇼크 = 수액에도 MAP ≥65 유지에 승압제 + 젖산 >2 mmol/L(위험 보정 사망 42.3 %, >4 mmol/L 이면 49.7 %), 젖산 측정 불가 시 저혈압+모세혈관 재충혈 지연 등으로 작업 진단, qSOFA·SOFA 는 단독 정의가 아니며 기준 미달이 감염 검사·치료를 늦추면 안 됨, 패혈 쇼크 구분은 역학적 의미가 크고 진료는 바뀌지 않아야 함",
+    "doi": "10.1001/jama.2016.0287",
+    "pmid": "26903338",
+    "verified": "text",
+    "year": "2016",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "폐렴 환자가 수액 2 L 뒤에도 MAP 58 mm Hg, 젖산 4.2 mmol/L 다. Sepsis-3 진단과 다음 약은?",
+    "a": "패혈 쇼크(수액에도 MAP 65 유지에 승압제 필요 + 젖산 >2). 노르에피네프린을 시작해 MAP 65 를 목표로 하고, 중심정맥관을 기다리지 않고 말초로 시작해도 된다."
+   },
+   {
+    "q": "혈액배양 채취가 1시간 넘게 늦어질 것 같은 패혈 쇼크 환자에서 할 일은?",
+    "a": "배양을 기다리지 않고 광범위 항생제를 먼저 준다 — 배양은 항생제를 크게(약 45분) 늦추지 않을 때만 먼저 채취한다."
+   },
+   {
+    "q": "열·빈호흡은 있으나 혈압·젖산이 정상이고 감염 여부가 불확실한 환자의 항생제 시점은?",
+    "a": "쇼크 없는 가능 패혈증 — 3시간 안에 감염·비감염 원인을 빠르게 평가하고 감염 의심이 남으면 그 안에 항생제를 준다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "패혈증 인지 — 배양에서 승압제까지",
+  "geo": {
+   "title": "패혈증 인지 — 배양에서 승압제까지",
+   "w": 679.7,
+   "h": 834.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "감염 의심 + 새 장기 기능",
+      "이상"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 265.2,
+     "y": 16.0
+    },
+    {
+     "id": "labs",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "젖산 측정 · 항생제 전",
+      "혈액배양(늦추지 않게)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 265.3,
+     "y": 102.0
+    },
+    {
+     "id": "shock",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "저혈압 · 젖산 상승 — 쇼크",
+      "가능?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 265.5,
+     "y": 188.0
+    },
+    {
+     "id": "likely",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "패혈증 가능성 높음?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 346.6,
+     "y": 295.0
+    },
+    {
+     "id": "eval",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "3시간 안 감염 · 비감염",
+      "원인을 빠르게 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 467.5,
+     "y": 385.0
+    },
+    {
+     "id": "abx3",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "감염 의심이 남으면 3시간 안",
+      "항생제"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 467.7,
+     "y": 471.0
+    },
+    {
+     "id": "abx1",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "광범위 항생제 즉시 — 1시간",
+      "안"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 241.5,
+     "y": 385.0
+    },
+    {
+     "id": "perf",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "저관류 · 저혈압?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 241.7,
+     "y": 471.0
+    },
+    {
+     "id": "watch",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "감염원 조절 · 재평가 ·",
+      "항생제 축소"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 354.8,
+     "y": 561.0
+    },
+    {
+     "id": "fluid",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "결정질액 30 mL/kg — 3시간",
+      "안"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 128.8,
+     "y": 561.0
+    },
+    {
+     "id": "map",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "수액 뒤에도 MAP < 65?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 647.0
+    },
+    {
+     "id": "ne",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "노르에피네프린(말초 가능)",
+      "→ MAP 65 · 모자라면",
+      "바소프레신"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 737.0
+    },
+    {
+     "id": "dyn",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "동적 지표 · 모세혈관",
+      "재충혈로 수액 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 737.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "labs",
+     "points": [
+      [
+       363.2,
+       80.0
+      ],
+      [
+       363.3,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "labs",
+     "to": "shock",
+     "points": [
+      [
+       363.3,
+       166.0
+      ],
+      [
+       363.5,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "shock",
+     "to": "abx1",
+     "points": [
+      [
+       330.9,
+       252.0
+      ],
+      [
+       330.9,
+       281.0
+      ],
+      [
+       318.8,
+       281.0
+      ],
+      [
+       318.8,
+       371.0
+      ],
+      [
+       306.8,
+       371.0
+      ],
+      [
+       306.8,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 321.4,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "shock",
+     "to": "likely",
+     "points": [
+      [
+       396.2,
+       252.0
+      ],
+      [
+       396.2,
+       281.0
+      ],
+      [
+       444.6,
+       281.0
+      ],
+      [
+       444.6,
+       295.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 375.7,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "likely",
+     "to": "abx1",
+     "points": [
+      [
+       411.9,
+       342.0
+      ],
+      [
+       411.9,
+       371.0
+      ],
+      [
+       372.2,
+       371.0
+      ],
+      [
+       372.2,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 396.9,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "likely",
+     "to": "eval",
+     "points": [
+      [
+       477.3,
+       342.0
+      ],
+      [
+       477.3,
+       371.0
+      ],
+      [
+       565.5,
+       371.0
+      ],
+      [
+       565.5,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불확실"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 456.8,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "eval",
+     "to": "abx3",
+     "points": [
+      [
+       565.5,
+       449.0
+      ],
+      [
+       565.7,
+       471.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "abx1",
+     "to": "perf",
+     "points": [
+      [
+       339.5,
+       449.0
+      ],
+      [
+       339.7,
+       471.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "perf",
+     "to": "fluid",
+     "points": [
+      [
+       307.0,
+       518.0
+      ],
+      [
+       307.0,
+       547.0
+      ],
+      [
+       226.8,
+       547.0
+      ],
+      [
+       226.8,
+       561.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.5,
+      "y": 522.0
+     }
+    },
+    {
+     "from": "perf",
+     "to": "watch",
+     "points": [
+      [
+       372.3,
+       518.0
+      ],
+      [
+       372.3,
+       547.0
+      ],
+      [
+       452.8,
+       547.0
+      ],
+      [
+       452.8,
+       561.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 351.8,
+      "y": 522.0
+     }
+    },
+    {
+     "from": "fluid",
+     "to": "map",
+     "points": [
+      [
+       226.8,
+       625.0
+      ],
+      [
+       227.0,
+       647.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "map",
+     "to": "ne",
+     "points": [
+      [
+       194.3,
+       694.0
+      ],
+      [
+       194.3,
+       723.0
+      ],
+      [
+       114.0,
+       723.0
+      ],
+      [
+       114.0,
+       737.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 698.0
+     }
+    },
+    {
+     "from": "map",
+     "to": "dyn",
+     "points": [
+      [
+       259.7,
+       694.0
+      ],
+      [
+       259.7,
+       723.0
+      ],
+      [
+       340.0,
+       723.0
+      ],
+      [
+       340.0,
+       737.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 698.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "감염 의심 + 새 장기 기능 이상",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "젖산 측정 · 항생제 전 혈액배양(늦추지 않게)"
+     }
+    ]
+   },
+   {
+    "id": "labs",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "젖산 측정 · 항생제 전 혈액배양(늦추지 않게)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "저혈압 · 젖산 상승 — 쇼크 가능?"
+     }
+    ]
+   },
+   {
+    "id": "shock",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "저혈압 · 젖산 상승 — 쇼크 가능?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "광범위 항생제 즉시 — 1시간 안"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "패혈증 가능성 높음?"
+     }
+    ]
+   },
+   {
+    "id": "likely",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "패혈증 가능성 높음?",
+    "note": "",
+    "branches": [
+     {
+      "label": "높음",
+      "to": 5,
+      "toText": "광범위 항생제 즉시 — 1시간 안"
+     },
+     {
+      "label": "불확실",
+      "to": 6,
+      "toText": "3시간 안 감염 · 비감염 원인을 빠르게 평가"
+     }
+    ]
+   },
+   {
+    "id": "abx1",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "광범위 항생제 즉시 — 1시간 안",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "저관류 · 저혈압?"
+     }
+    ]
+   },
+   {
+    "id": "eval",
+    "num": 6,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "3시간 안 감염 · 비감염 원인을 빠르게 평가",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "감염 의심이 남으면 3시간 안 항생제"
+     }
+    ]
+   },
+   {
+    "id": "perf",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "저관류 · 저혈압?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "결정질액 30 mL/kg — 3시간 안"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "감염원 조절 · 재평가 · 항생제 축소"
+     }
+    ]
+   },
+   {
+    "id": "abx3",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "감염 의심이 남으면 3시간 안 항생제",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "fluid",
+    "num": 9,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "결정질액 30 mL/kg — 3시간 안",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 11,
+      "toText": "수액 뒤에도 MAP < 65?"
+     }
+    ]
+   },
+   {
+    "id": "watch",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "감염원 조절 · 재평가 · 항생제 축소",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "map",
+    "num": 11,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "수액 뒤에도 MAP < 65?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 12,
+      "toText": "노르에피네프린(말초 가능) → MAP 65 · 모자라면 바소프레신"
+     },
+     {
+      "label": "아니오",
+      "to": 13,
+      "toText": "동적 지표 · 모세혈관 재충혈로 수액 재평가"
+     }
+    ]
+   },
+   {
+    "id": "ne",
+    "num": 12,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "노르에피네프린(말초 가능) → MAP 65 · 모자라면 바소프레신",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "dyn",
+    "num": 13,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "동적 지표 · 모세혈관 재충혈로 수액 재평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.em.shock.type-differentiation-first-step": {
+  "id": "cn.em.shock.type-differentiation-first-step",
+  "title": "쇼크 — 사지 온도·목정맥·폐음으로 유형 가르기",
+  "objective": "저혈압·장기 저관류 환자에서 사지 온도·맥압·목정맥·폐음과 혈역학 지표(심박출량·전신혈관저항·충만압)로 쇼크 유형을 가르고 유형에 맞는 첫 처치를 고른다",
+  "objectiveKind": "감별",
+  "condition": "쇼크(shock) — 분포성(distributive) · 심장성(cardiogenic) · 폐쇄성(obstructive) · 저혈량성(hypovolemic)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Cardiology",
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "7947bc66945b599d",
+  "summary": [
+   "결론: 따뜻한 사지·넓은 맥압은 분포성, 차가운 사지·좁은 맥압에 목정맥 낮으면 저혈량성, 높으면 심장성·폐쇄성.",
+   "시험 단서: 저혈압+의식 변화·핍뇨·차고 축축한 피부(shock). 수포음·S3 는 심장성, 기이맥·한쪽 호흡음 소실은 폐쇄성.",
+   "왜: 산소 전달 = 심박출량 × 동맥 산소 함량 — 유형마다 처음 무너진 고리(혈관저항·수축력·전부하·흐름 막힘)가 다르다.",
+   "첫 처치: 수액 볼루스 → 그래도 저혈압이면 승압제. 패혈 쇼크는 노르에피네프린, 심장성은 도부타민, 도파민은 1차가 아니다.",
+   "원인 처치를 같이: 긴장기흉 즉시 감압 · 아나필락시스 에피네프린 · 부신 위기 스테로이드 · 출혈은 적혈구와 지혈."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 유형부터 가르나",
+    "deep": false,
+    "html": "<ul>\n<li>쇼크는 세포의 산소 공급과 수요가 어긋나 생긴 장기 기능 이상이다. 초기에는 되돌릴 수 있으나 치료하지 않으면 비가역 단계로 넘어간다 — 그래서 쇼크를 빨리 알아보고, 유형을 가르는 일과 치료를 <strong>동시에</strong> 시작한다 <sup>[1 314장 p.2309]</sup> <sup>[1 314장 p.2312]</sup>.</li>\n<li>승압제·강심제는 유형마다 고치려는 고리가 다르다 — 분포성은 혈관저항을 올리고(노르에피네프린), 심장성은 수축력을 올린다(도부타민) <sup>[1 314장 p.2315]</sup>.</li>\n<li>진찰의 첫 갈림은 <strong>고심박출 대 저심박출</strong>(사지 온도·맥압), 두 번째는 저심박출 안에서 <strong>충만압 상승 대 용적 고갈</strong>(목정맥·말초 부종), 세 번째는 충만압이 높을 때 <strong>심장 대 흐름 막힘</strong>(수포음·S3 대 기이맥·한쪽 호흡음 소실)이다 <sup>[1 314장 p.2312–2313]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 산소 전달의 어느 고리가 무너졌나",
+    "deep": false,
+    "html": "<ul>\n<li>산소 전달(DO2) = 심박출량(CO) × 동맥 산소 함량(CaO2), CO = 심박수 × 일회박출량, 일회박출량은 전부하 × 수축력 / 전신혈관저항(SVR)에 비례한다 <sup>[1 314장 p.2310]</sup>.</li>\n<li><strong>분포성(distributive)</strong>: SVR 이 먼저 떨어지고 CO 는 보상적으로 오른다 — 혈관이 넓어 사지가 따뜻하고 이완기압이 낮다. 가장 흔한 원인은 패혈증이다 <sup>[1 314장 p.2310–2311]</sup>.</li>\n<li><strong>심장성(cardiogenic)</strong>: 펌프(수축력·판막·박동수)가 실패해 CO 가 떨어지고 SVR 은 보상적으로 오른다. 좌심실이면 PCWP, 우심실이면 CVP 가 오른다 <sup>[1 314장 p.2311]</sup>.</li>\n<li><strong>저혈량성(hypovolemic)</strong>: 전부하가 줄어 CO 가 떨어진다 — CVP·PCWP 는 낮고 SVR 은 높다 <sup>[1 314장 p.2311]</sup>.</li>\n<li><strong>폐쇄성(obstructive)</strong>: 심장 밖의 흐름 장애(정맥 환류 차단: 긴장기흉·눌림증 / 유출 차단: 폐색전·대동맥 박리)로 CO 가 떨어진다 <sup>[1 314장 p.2311]</sup>.</li>\n<li>산소가 모자라면 피루브산이 젖산으로 바뀌고 ATP 가 줄어 이온 펌프가 멈춘다 — 젖산은 저관류의 정도와 치료 반응을 보는 지표다 <sup>[1 314장 p.2310]</sup> <sup>[1 314장 p.2313]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 진찰과 혈역학",
+    "deep": false,
+    "html": "<ul>\n<li>표가 네 유형의 혈역학·진찰·첫 처치를 나란히 놓는다. 장기 저관류의 「창」은 뇌(새 의식 변화 = 보상이 무너진 쇼크) · 콩팥(핍뇨 &lt;0.5 mL/kg/h — 도뇨관으로 매시간) · 피부(차고 축축함·얼룩·모세혈관 재충혈 지연)다 <sup>[1 314장 p.2312]</sup>.</li>\n<li>첫 검사는 젖산·콩팥·간 기능·심장 효소·혈구·응고·임신 검사·소변·동맥혈 가스·심전도·흉부 X선이다 <sup>[1 314장 p.2313]</sup>. 심전도의 S1Q3T3 은 폐색전, 저전압+전기적 교대는 눌림증을 시사한다 <sup>[1 314장 p.2313]</sup>.</li>\n<li><strong>음성 결과의 한계</strong>: 진행 출혈 초기에는 혈색소가 정상일 수 있고, 흉부 X선은 폐색전에 민감하지도 특이하지도 않다 <sup>[1 314장 p.2313]</sup>. POCUS 는 유형 판단을 돕지만 2018 무작위 시험에서 30일 생존을 바꾸지 못했고 시행자에 따라 다르다 <sup>[1 314장 p.2314]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 유형별 첫 처치",
+    "deep": false,
+    "html": "<ul>\n<li>정맥로: 16·18 G 말초 2개. 수액에도 저혈압이 계속되면 중심정맥관(승압제 투여·CVP·ScvO2), 동맥관(연속 평균동맥압), 모든 쇼크에 도뇨관 <sup>[1 314장 p.2314]</sup>.</li>\n<li><strong>수액</strong>: 대부분의 유형이 혈관 내 용적 증가로 이득을 본다. 정해 둔 종점을 두고 결정질액을 볼루스로 준다. 진행 출혈은 적혈구로, 대량수혈이면 혈소판·신선동결혈장도 준다 <sup>[1 314장 p.2314]</sup>. 수액 반응은 수동 하지 거상(1분 안 CO 변화), 기계환기 중 일회박출량 변동 &gt;12 %, 하대정맥 지름·허탈로 본다 <sup>[1 314장 p.2314–2315]</sup>.</li>\n<li><strong>승압제·강심제</strong>: 용적을 채워도 저혈압·저관류가 남으면 시작한다. 패혈 쇼크 1차는 노르에피네프린(α1 혈관수축 + β1), 바소프레신은 2차 약, 도파민은 분포성 1차가 아니다. 심장성 1차는 도부타민(β1 수축력 + β2 후부하 감소) <sup>[1 314장 p.2315]</sup>.</li>\n<li><strong>산소·환기</strong>: SpO2 92–95 % 를 목표로 산소를 주고, 필요하면 지체 없이 삽관한다 — 기계환기는 저일회호흡량 폐보호 환기로 <sup>[1 314장 p.2315]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>패혈 쇼크를 생각하면 배양 뒤 광범위 항생제를 준다. 배양을 못 얻어도 항생제를 늦추지 않고, 패혈증이 배제되면 항생제를 모두 끊는다 <sup>[1 314장 p.2315]</sup>.</li>\n<li>원인별 구조 처치를 함께 한다 — 아나필락시스(알레르기원 제거·에피네프린·수액·승압제), 부신 기능 저하(정맥 스트레스 용량 스테로이드), 부정맥(ACLS·심박조율), 급성 허혈(재관류·기계 보조), 급성 판막 기능 이상(응급 수술), 출혈(수술·내시경·중재 시술), 긴장기흉(즉시 감압), 근위부 폐색전(혈전용해·혈전 제거술 검토), 상행 대동맥 박리(수술) <sup>[1 314장 p.2315]</sup>.</li>\n<li>쇼크 지수(심박수/수축기 혈압, 정상 0.5–0.7)가 &gt;0.9 이면 출혈 쇼크에서 수혈 필요를 심박수·혈압 단독보다 민감하게 알린다 <sup>[1 314장 p.2313]</sup>.</li>\n<li>쇼크 뒤 급성호흡곤란증후군·콩팥 기능 상실이 오면 수액을 빼는 쪽으로 바꿀 수 있다 — 수액 필요는 자주 다시 평가한다 <sup>[1 314장 p.2315]</sup>.</li>\n<li>국내 교과서·KMLE 해설의 분류·약 선택 문구는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 가장 흔한 쇼크 유형</strong> — 시험 기준: 「쇼크의 가장 흔한 원인은 패혈증(분포성)」 <sup>[1 314장 p.2315]</sup> / 다른 기준: 덴마크 대학병원 응급실 연구(1553명)에서는 저혈량성 30.8 %·패혈 27.2 %·비패혈 분포성 23.4 %·심장성 14 %·폐쇄성 0.9 % 로 저혈량성이 가장 많았고, ICU 연구에서는 패혈 62 %, 심장 ICU 에서는 심장성 66 % 였다 <sup>[1 314장 p.2311]</sup> / 왜 다른가: 진료 현장(응급실·내과 ICU·심장 ICU)마다 들어오는 환자가 다르다 / 시험에서는: KMLE·USMLE 모두 「가장 흔한 원인」 문항은 패혈증으로 답하되, 문항이 응급실 외상·출혈 상황이면 저혈량성을 먼저 생각한다(이 칸은 정리자 판단).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "쇼크 네 유형 — 혈역학 · 진찰 · 첫 처치",
+    "columns": [
+     "유형",
+     "CVP · PCWP · CO · SVR",
+     "진찰",
+     "첫 처치(원인별)"
+    ],
+    "rows": [
+     [
+      "분포성(패혈 · 아나필락시스 · 신경성 · 부신)",
+      "↓ · ↓ · ↑ · ↓",
+      "따뜻한 사지, 넓은 맥압(낮은 이완기압)",
+      "수액 → 노르에피네프린. 아나필락시스 = 알레르기원 제거+에피네프린, 부신 기능 저하 = 정맥 스트레스 용량 스테로이드"
+     ],
+     [
+      "심장성(심근경색 · 심근염 · 부정맥 · 급성 판막 역류)",
+      "↑ · ↑ · ↓ · ↑",
+      "차가운 사지·좁은 맥압. 좌심: 수포음·S3. 우심: 목정맥 상승·말초 부종",
+      "도부타민(분포성이 겹치면 노르에피네프린과 함께). 부정맥은 ACLS·심박조율, 허혈은 재관류·기계 보조"
+     ],
+     [
+      "폐쇄성(긴장기흉 · 눌림증 · 폐색전 · 대동맥 박리)",
+      "↑ · ↓↑ · ↓ · ↑",
+      "차가운 사지, 목정맥 상승. 기이맥 = 눌림증. 한쪽 호흡음 감소·기관 반대쪽 편위·피하기종 = 긴장기흉",
+      "긴장기흉 즉시 감압. 근위부 폐색전은 혈전용해·수술 검토, 상행 대동맥 박리는 수술"
+     ],
+     [
+      "저혈량성(출혈 · 위장관 손실 · 다뇨 · 화상)",
+      "↓ · ↓ · ↓ · ↑",
+      "차가운 사지, 목정맥 낮음(&lt;8 cm), 급성기 말초 부종 없음",
+      "결정질액 볼루스. 진행 출혈은 적혈구(대량수혈이면 혈소판·신선동결혈장) + 수술·내시경·중재 지혈"
+     ]
+    ],
+    "note": "혈역학 칸은 표 314-2, 진찰은 p.2312–2313, 처치는 p.2314–2315(모두 harrison-22 314장). 유형은 서로 배타적이지 않다 — 패혈 쇼크에 패혈성 심근병증이 겹치면 혼합 쇼크다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "수축기 혈압 90 이상이면 쇼크 아님?",
+    "point": "수축기 &lt;90 · 평균동맥압 &lt;65 mm Hg 한 번의 값으로 쇼크를 정의하지 않는다. 고혈압 환자는 더 높은 혈압에서도 장기 기능 이상이 생기므로, 평소 혈압과 비교한 추세와 장기 관류(의식·소변량·피부)로 판단한다 <sup>[1 314장 p.2312]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "맥박이 빠르지 않으면 쇼크 배제?",
+    "point": "전도계 질환이나 집에서 결절 차단제를 먹는 환자는 빈맥 반응이 약하거나 없다. 거꾸로 젊은 환자는 빈맥만으로 오래 버티다가 늦게 저혈압이 온다 — 혈압 정상의 빈맥도 안심할 근거가 아니다 <sup>[1 314장 p.2312]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "심장성 쇼크에 도파민?",
+    "point": "모든 원인의 순환 쇼크 무작위 시험에서 도파민은 생존 이득 없이 부정맥만 늘렸고, 심장성 쇼크 하위군에서는 사망이 늘었다. 심장성 쇼크의 1차 약은 도부타민이다 <sup>[1 314장 p.2315]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "심장성 쇼크면 수액 금기?",
+    "point": "일부 심장성 쇼크도 신중한 수액이 도움이 된다 — 다만 주기 전에 체액 상태를 꼼꼼히 평가한다 <sup>[1 314장 p.2314]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "분포성 쇼크는 언제나 심박출량 증가?",
+    "point": "분포성은 대개 심박출량이 보상적으로 오르지만, 중증 뇌·척수 손상의 신경성 쇼크는 정맥에 피가 고여 정맥 환류와 심박출량이 줄어든다 <sup>[1 314장 p.2311]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "폐쇄성 쇼크면 폐모세혈관쐐기압도 높다?",
+    "point": "폐쇄성은 중심정맥압이 오르지만 쐐기압은 막힌 자리에 따라 오르기도 내리기도 한다(표 314-2 의 ↓↑) — 폐색전처럼 우심 쪽이 막히면 좌심 충만압이 높지 않을 수 있다(정리자 추론) <sup>[1 314장 p.2311]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "진단과 치료는 동시에 — 유형을 가르는 동안 정맥로 확보·수액·산소를 미루지 않는다 <sup>[1 314장 p.2312]</sup> <sup>[1 314장 p.2314]</sup>.",
+   "신경성 쇼크는 분포성이지만 정맥 고임으로 정맥 환류와 심박출량이 준다 — 고심박출 소견(따뜻한 사지·넓은 맥압)이 없을 수 있다는 것은 정리자 추론이다 <sup>[1 314장 p.2311]</sup>.",
+   "만성 심부전 환자는 급성 심부전의 전형 소견(수포음 등)이 없을 수 있다 <sup>[1 314장 p.2313]</sup>.",
+   "유형은 겹친다 — 패혈 쇼크에 패혈성 심근병증이 오면 분포성+심장성 혼합이다. 혼합·원인 불명 쇼크는 폐동맥 카테터(CO·PCWP·SVR)를 고려한다 <sup>[1 314장 p.2311]</sup> <sup>[1 314장 p.2315]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 314: Approach to the Patient with Shock",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 314장 Approach to the Patient with Shock(Baron RM, Massaro AF), p.2309–2316",
+    "checked": "드라이브 22판 장별 문서 H22_314 를 처음부터 끝까지 읽음 — p.2309 정의(세포 산소 공급·수요 불균형에 따른 장기 기능 이상) · p.2310 표 314-1 유형별 원인, 무산소 대사·젖산, DO2 = CO × CaO2, SV ∝ 전부하 × 수축력 / SVR, CaO2 식 · p.2311 표 314-2 혈역학(분포성 CVP↓ PCWP↓ CO↑ SVR↓, 심장성 ↑↑↓↑, 폐쇄성 ↑ ↓↑ ↓ ↑, 저혈량성 ↓↓↓↑), 신경성 쇼크의 정맥 고임·CO 감소, 부신 기능 저하, 혼합·미분화 쇼크, 응급실(저혈량 30.8 %·패혈 27.2 %)·ICU(패혈 62 %) 분포, 세 단계 · p.2312 표 314-3 원칙(진단과 치료 동시), SBP <90·MAP <65 단독으로 정의하지 않음, 빈맥 없음·빈맥만 있음의 한계, 장기의 「창」(뇌·콩팥 <0.5 mL/kg/h·피부), 따뜻한 사지·넓은 맥압 = 고심박출, 차가운 사지·좁은 맥압 = 저심박출, JVP 상승(심장성 우심·폐색전) vs 저하(<8 cm, 저혈량성) · p.2313 표 314-4 초기 검사, 수포음·S3, 만성 심부전은 전형 소견 없을 수 있음, 기이맥·JVP = 눌림증, 긴장기흉 진찰, 쇼크 지수, qSOFA, 젖산·연속 측정, 심전도(S1Q3T3·전기적 교대), 흉부 X선 · p.2313–2314 POCUS(RUSH·ACES·SESAME, IVC 허탈 = 혈관 내 용적 감소, 2018 RCT 30일 생존 이득 없음) · p.2314 초기 치료(16·18 G 말초 2개, CVC·동맥관·도뇨관), 수액(결정질액 볼루스·종점, 출혈은 적혈구, Hb <7 g/dL, SSC 30 mL/kg 언급, 심장성도 신중한 수액) · p.2314–2315 수동 하지 거상(CO·맥압 변동을 1분 안에, 혈압만 보지 않음), SV 변동 >12 %, IVC, 폐동맥 카테터(일상 사용 이득 없음, 혼합·불명확 쇼크에서 고려) · p.2315 승압제(노르에피네프린 1차, 에피네프린 부작용, 바소프레신 2차, 도파민 1차 아님·심장성 하위군 사망 증가, 도부타민 심장성 1차), 산소 SpO2 92–95 %, 폐보호 환기, 항생제(배양 뒤 광범위, 배양 못 해도 늦추지 않음), 원인별 구조 처치(아나필락시스·부신·부정맥·허혈·판막·출혈·긴장기흉·폐색전·대동맥 박리)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "저혈압 환자의 사지가 따뜻하고 이완기압이 낮아 맥압이 넓다. 예상되는 CO · SVR 과 첫 승압제는?",
+    "a": "CO 증가 · SVR 감소의 분포성 쇼크. 수액으로 혈관 내 용적을 채운 뒤에도 저혈압이면 노르에피네프린."
+   },
+   {
+    "q": "차가운 사지, 목정맥 확장, 양쪽 폐 수포음과 S3 가 있는 저혈압 환자의 유형과 1차 약은?",
+    "a": "심장성 쇼크(CVP·PCWP 상승, CO 감소, SVR 증가). 1차 약은 도부타민 — 도파민은 심장성 하위군에서 사망을 늘렸다."
+   },
+   {
+    "q": "수동 하지 거상 검사에서 무엇이 바뀌는지 봐야 하나?",
+    "a": "1분 안의 심박출량(또는 대리 지표인 맥압 변동). 혈압 변화만 보지 않는다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "저혈압 — 사지 온도에서 목정맥, 폐음까지",
+  "geo": {
+   "title": "저혈압 — 사지 온도에서 목정맥, 폐음까지",
+   "w": 680.0,
+   "h": 596.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "저혈압 + 장기 저관류(의식·",
+      "소변·피부)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "warm",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "사지 따뜻 · 맥압 넓음?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "dist",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "분포성 — 수액 →",
+      "노르에피네프린"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 192.0
+    },
+    {
+     "id": "jvp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "목정맥(CVP) 상승?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "pocus",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "POCUS — 심장 · 하대정맥 ·",
+      "흉막을 본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 302.0
+    },
+    {
+     "id": "hypo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "저혈량성 — 결정질액 ·",
+      "출혈은 적혈구"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 409.0
+    },
+    {
+     "id": "lv",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "수포음 · S3 · 좌심실 기능",
+      "저하?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 409.0
+    },
+    {
+     "id": "cardio",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "심장성 — 도부타민 · 원인",
+      "교정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 516.0
+    },
+    {
+     "id": "obst",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "폐쇄성 — 긴장기흉 감압 ·",
+      "눌림증 · 폐색전"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 516.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "warm",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "warm",
+     "to": "dist",
+     "points": [
+      [
+       194.3,
+       149.0
+      ],
+      [
+       194.3,
+       178.0
+      ],
+      [
+       114.0,
+       178.0
+      ],
+      [
+       114.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "warm",
+     "to": "jvp",
+     "points": [
+      [
+       259.7,
+       149.0
+      ],
+      [
+       259.7,
+       178.0
+      ],
+      [
+       340.0,
+       178.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "차고 좁음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "jvp",
+     "to": "hypo",
+     "points": [
+      [
+       291.0,
+       239.0
+      ],
+      [
+       291.0,
+       288.0
+      ],
+      [
+       226.0,
+       288.0
+      ],
+      [
+       226.0,
+       395.0
+      ],
+      [
+       194.3,
+       395.0
+      ],
+      [
+       194.3,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 276.0,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "jvp",
+     "to": "lv",
+     "points": [
+      [
+       389.0,
+       239.0
+      ],
+      [
+       389.0,
+       288.0
+      ],
+      [
+       454.0,
+       288.0
+      ],
+      [
+       454.0,
+       395.0
+      ],
+      [
+       485.7,
+       395.0
+      ],
+      [
+       485.7,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 374.0,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "jvp",
+     "to": "pocus",
+     "points": [
+      [
+       340.0,
+       239.0
+      ],
+      [
+       340.0,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판단 어려움"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 306.6,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "pocus",
+     "to": "hypo",
+     "points": [
+      [
+       307.3,
+       366.0
+      ],
+      [
+       307.3,
+       395.0
+      ],
+      [
+       259.7,
+       395.0
+      ],
+      [
+       259.7,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "IVC 허탈"
+      ],
+      "w": 52.9,
+      "h": 17,
+      "x": 280.9,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "pocus",
+     "to": "lv",
+     "points": [
+      [
+       372.7,
+       366.0
+      ],
+      [
+       372.7,
+       395.0
+      ],
+      [
+       420.3,
+       395.0
+      ],
+      [
+       420.3,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "IVC 확장"
+      ],
+      "w": 52.9,
+      "h": 17,
+      "x": 346.2,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "lv",
+     "to": "cardio",
+     "points": [
+      [
+       420.3,
+       473.0
+      ],
+      [
+       420.3,
+       502.0
+      ],
+      [
+       340.0,
+       502.0
+      ],
+      [
+       340.0,
+       516.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 477.0
+     }
+    },
+    {
+     "from": "lv",
+     "to": "obst",
+     "points": [
+      [
+       485.7,
+       473.0
+      ],
+      [
+       485.7,
+       502.0
+      ],
+      [
+       566.0,
+       502.0
+      ],
+      [
+       566.0,
+       516.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 477.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "저혈압 + 장기 저관류(의식·소변·피부)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "사지 따뜻 · 맥압 넓음?"
+     }
+    ]
+   },
+   {
+    "id": "warm",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "사지 따뜻 · 맥압 넓음?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "분포성 — 수액 → 노르에피네프린"
+     },
+     {
+      "label": "차고 좁음",
+      "to": 4,
+      "toText": "목정맥(CVP) 상승?"
+     }
+    ]
+   },
+   {
+    "id": "dist",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "분포성 — 수액 → 노르에피네프린",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "jvp",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "목정맥(CVP) 상승?",
+    "note": "",
+    "branches": [
+     {
+      "label": "낮음",
+      "to": 6,
+      "toText": "저혈량성 — 결정질액 · 출혈은 적혈구"
+     },
+     {
+      "label": "높음",
+      "to": 7,
+      "toText": "수포음 · S3 · 좌심실 기능 저하?"
+     },
+     {
+      "label": "판단 어려움",
+      "to": 5,
+      "toText": "POCUS — 심장 · 하대정맥 · 흉막을 본다"
+     }
+    ]
+   },
+   {
+    "id": "pocus",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "POCUS — 심장 · 하대정맥 · 흉막을 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "IVC 허탈",
+      "to": 6,
+      "toText": "저혈량성 — 결정질액 · 출혈은 적혈구"
+     },
+     {
+      "label": "IVC 확장",
+      "to": 7,
+      "toText": "수포음 · S3 · 좌심실 기능 저하?"
+     }
+    ]
+   },
+   {
+    "id": "hypo",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "저혈량성 — 결정질액 · 출혈은 적혈구",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lv",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "수포음 · S3 · 좌심실 기능 저하?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "심장성 — 도부타민 · 원인 교정"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "폐쇄성 — 긴장기흉 감압 · 눌림증 · 폐색전"
+     }
+    ]
+   },
+   {
+    "id": "cardio",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "심장성 — 도부타민 · 원인 교정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "obst",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "폐쇄성 — 긴장기흉 감압 · 눌림증 · 폐색전",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.em.trauma-primary-survey.next-priority-intervention": {
+  "id": "cn.em.trauma-primary-survey.next-priority-intervention",
+  "title": "다발 외상 — 막힌 칸부터, 대량 외출혈은 먼저",
+  "objective": "다발 외상 환자의 일차 평가(대량 외출혈 → 기도·경추 → 호흡 → 순환·출혈 → 신경 → 노출)에서 제시된 소견이 어느 칸을 막는지 찾아, 지금 먼저 할 처치를 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "다발 외상(multiple trauma)의 일차 평가(primary survey) — 대량 외출혈 · 기도 폐쇄 · 긴장성 기흉 · 심장눌림증 · 대량 혈흉 · 골반 출혈",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "General Surgery"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "a9efa895dc65f484",
+  "summary": [
+   "결론: 앞 칸이 막혔으면 뒤 칸 검사를 미루고 그 자리에서 푼다 — 대량 외출혈 → 기도 → 호흡 → 순환 순.",
+   "시험 단서: 사지 대량 출혈, GCS ≤8, 한쪽 호흡음 소실+저혈압, eFAST 심낭액, 불안정 골반+쇼크(primary survey).",
+   "왜: 기도·호흡이 막히면 산소가, 출혈이 계속되면 운반할 혈액이 없어진다 — 원인 진단보다 생명 처치가 먼저.",
+   "긴장성 기흉은 임상 진단 — 흉부 X선을 기다리지 않고 바늘 감압한다.",
+   "출혈이 멎기 전 소생 목표는 수축기 80–90 mmHg — 중증 뇌손상(GCS ≤8)은 평균동맥압 ≥80 mmHg."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 막힌 칸을 먼저 푸는가",
+    "deep": false,
+    "html": "<ul>\n<li>일차 평가는 진단 순서가 아니라 <strong>생명 위협을 찾고 그 자리에서 푸는 순서</strong>다. 앞 칸의 생명 위협을 처치한 뒤 다음 칸으로 간다 <sup>[3 ABCDE principles]</sup>.</li>\n<li>원인 진단보다 처치가 먼저다 — 원인이 불분명해도 생명을 살리는 처치를 시작하고, 확진은 그다음이다 <sup>[3 ABCDE principles]</sup>. 긴장성 기흉을 X선으로 확인하지 않고 감압하는 것이 대표다 <sup>[2 Recommendation — Breathing]</sup>.</li>\n<li>생명을 위협하는 외출혈은 기도보다 앞에 둔다(ABCDE) — 유럽 외상 출혈 지침은 ATLS 의 ABCDE 가 ABCDE 로 바뀌었다고 쓴다 <sup>[1 R5 Rationale]</sup>.</li>\n<li>분명한 출혈원이 있고 극단적 쇼크면 검사를 더 하지 않고 즉시 출혈 조절로 간다 <sup>[1 R6]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 산소가 세포에 닿지 못하는 다섯 길",
+    "deep": false,
+    "html": "<ul>\n<li><strong>기도 폐쇄</strong>: 의식 저하가 흔한 원인이고, 완전 폐쇄면 애써 숨쉬어도 공기가 들어가지 않아(시소 호흡) 곧 심정지로 간다 <sup>[3 A – Airway]</sup>.</li>\n<li><strong>긴장성 기흉(tension pneumothorax)</strong>: 한쪽 흉강 압력이 올라 정맥 환류가 막히는 폐쇄성 쇼크다 — 그래서 저혈압·한쪽 호흡음 소실이 함께 오고, 감압하면 바로 풀린다 <sup>[2 Recommendation — Breathing]</sup>.</li>\n<li><strong>심장눌림증(cardiac tamponade)</strong>: 심낭 안 피가 저압인 오른심방·오른심실부터 눌러 채움을 막는다 <sup>[4 3.4]</sup>. 양압 환기·진정은 심박출을 더 떨어뜨린다 <sup>[6† Abstract]</sup>.</li>\n<li><strong>출혈</strong>: 정상 혈압으로 서둘러 올리면 생긴 혈전이 떨어져 출혈이 늘 수 있어, 멎기 전에는 낮은 목표를 유지한다 <sup>[2 Recommendation — Circulation]</sup>. 저체온·산증·응고장애가 서로를 키운다 <sup>[2 Recommendation — Exposure]</sup>.</li>\n<li><strong>골반 고리 손상</strong>: 후복막 출혈은 압박이 어렵다 — 결속대가 골반 고리를 닫아 부피를 줄이고 출혈 부위에 압박을 건다 <sup>[2 Recommendation — Pelvic binder]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 어느 칸이 막혔나",
+    "deep": false,
+    "html": "<ul>\n<li>표가 소견별로 막힌 칸과 지금 할 처치를 나란히 놓는다.</li>\n<li><strong>음성 결과의 한계</strong>: 첫 혈색소 정상은 초기 출혈을 가리고 <sup>[1 R9]</sup>, 젊은 환자의 정상 혈압은 큰 손실을 가린다 <sup>[2 Recommendation — TXA]</sup>. 쇼크지수(맥박/수축기)는 건강한 성인 0.5–0.7, ≥0.9–1.0 이면 대량수혈 위험이 오른다 <sup>[1 R5 Rationale]</sup>. 노인은 수축기 &lt;110 을 저혈압으로 본다 <sup>[2 Recommendation — Elderly]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 출혈 조절과 소생",
+    "deep": false,
+    "html": "<ul>\n<li>출혈 조절까지의 시간을 줄이는 것이 첫 목표다 — 중증 외상은 적절한 외상센터로 바로 이송한다 <sup>[1 R1]</sup>.</li>\n<li>수액은 생리식염수 또는 균형 결정질로 시작하고, 중증 두부 외상에는 젖산 링거 같은 저장성 수액을 피한다 <sup>[1 R15]</sup>.</li>\n<li>트라넥삼산은 출혈 중이거나 위험이 크면 손상 후 3시간 안에 가능한 한 빨리 준다 <sup>[1 R23]</sup>.</li>\n<li>노르에피네프린은 제한 수액으로 목표 혈압에 못 미칠 때만 더한다 <sup>[1 R14]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>중증 뇌손상(GCS ≤8)은 허용 저혈압의 예외다 — 평균동맥압 ≥80 mmHg <sup>[1 R13]</sup>.</li>\n<li>척추 운동 제한은 고위험군에만 선택적으로 하고, 몸통 관통상은 척추 고정 때문에 출혈 조절 수술을 늦추지 않는다 <sup>[2 Recommendation — SMR]</sup>.</li>\n<li>대량 혈흉의 개흉 기준 수치와 국내 교과서·KMLE 해설의 순서 표기는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 대량 외출혈과 기도의 순서</strong> — 시험 기준: 생명을 위협하는 외출혈은 기도보다 먼저 압박·지혈대(ABCDE · xABCDE) <sup>[1 R5 Rationale]</sup> <sup>[2 Recommendation — X]</sup> / 다른 기준: 고전 ABCDE 는 기도→호흡→순환 순이고 출혈은 C 칸에서 다룬다 <sup>[3 ABCDE principles]</sup> / 왜 다른가: 대량 외출혈 조절 경험의 상당 부분이 군 전투 외상 처치(TCCC)에서 왔고, 지혈대가 생존을 늘렸다는 민간 코호트도 있다 <sup>[2 Recommendation — X]</sup> <sup>[1 R2 Rationale]</sup> / 시험에서는: KMLE 는 국내 교과서·해설과 대조하지 않았다(검토 항목) · USMLE 도 대조하지 않았다 — 발문에 「뿜는」 사지 출혈이 명시되면 압박·지혈대를, 아니면 기도를 첫 처치로 고른다.</li>\n<li><strong>Z2 충돌 · 바늘 감압 위치</strong> — 시험 기준: 성인은 5번째 갈비사이 중간겨드랑선이 선호된다(가슴벽이 얇아 성공률이 높고 속가슴혈관을 피함) <sup>[2 Recommendation — Breathing]</sup> / 다른 기준: 2012 종설은 2번째 갈비사이 빗장중간선을 쓴다 <sup>[3 B – Breathing]</sup> / 왜 다른가: 2번째 갈비사이에서 5 cm 바늘의 실패율이 40 %를 넘을 수 있어서다. 소아는 여전히 2번째 갈비사이 빗장중간선, 성인도 옆가슴 접근이 막히면 ≥8 cm 바늘로 2번째 갈비사이 <sup>[2 Recommendation — Breathing]</sup> / 시험에서는: ATLS 10판 원문은 읽지 못했다(†Galvagno 초록에 위치 언급 없음) — 처치 선택 문항에서는 위치보다 「영상 없이 즉시 감압」이 가르는 근거다.</li>\n<li><strong>Z3 맥락 · 허용 저혈압의 숫자</strong> — 시험 기준: 수축기 80–90 mmHg(평균 50–60), 중증 뇌손상은 평균 ≥80 <sup>[1 R13]</sup> / 다른 기준: 병원 전 합의는 노뼈동맥 촉지 또는 수축기 90, 뇌손상은 수축기 ≥110 또는 평균 ≥80 <sup>[2 Recommendation — Circulation]</sup>; eFAST 종설은 관통 70·둔상 90·두부 110 mmHg 를 적는다 <sup>[4 3.4]</sup> / 왜 다른가: 대상(병원 전 vs 병원)과 손상 기전에 따라 목표를 나눈 방식이 다르다 / 시험에서는: 숫자 하나보다 「출혈이 멎기 전엔 정상 혈압을 목표로 하지 않는다 · 뇌손상은 예외」로 답한다.</li>\n<li><strong>Z4 새 근거 · 척추 고정에서 척추 운동 제한으로</strong> — 시험 기준: 선택적 척추 운동 제한, 긴 척추판은 구출용으로만 <sup>[2 Recommendation — SMR]</sup> / 다른 기준: ATLS 10판도 척추 고정 대신 척추 운동 제한을 강조한다 <sup>[7† Abstract]</sup> / 왜 다른가: 긴 고정은 욕창·통증·환기 제한을 만들고 관통상에서는 출혈 조절을 늦춘다 <sup>[2 Recommendation — SMR]</sup> / 시험에서는: 둔상·의식 저하 환자의 경추 보호는 그대로 A 칸에 둔다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "일차 평가 — 소견 → 막힌 칸 → 지금 할 처치",
+    "columns": [
+     "소견",
+     "칸",
+     "지금 할 처치"
+    ],
+    "rows": [
+     [
+      "사지·접합부에서 생명을 위협하는 외출혈",
+      "x / &lt;C&gt;",
+      "직접 압박 → 안 되면 지혈대(감은 시각 기록), 접합부는 상처 채움+최소 3분 압박 <sup>[1 R2]</sup> <sup>[2 Recommendation — X]</sup>"
+     ],
+     [
+      "기도 폐쇄 · 의식 저하(GCS ≤8) · 저환기 · 저산소",
+      "A",
+      "지체 없이 기관삽관 또는 다른 기도 확보 — 경추 손상 의심이면 손으로 일직선 고정 <sup>[1 R3]</sup> <sup>[2 Recommendation — Airway]</sup>"
+     ],
+     [
+      "진행하는 호흡곤란 + 저혈압 + 한쪽 호흡음 소실",
+      "B",
+      "긴장성 기흉 — 영상 없이 바늘 감압, 실패하면 손가락 흉강창 등 확실한 감압 <sup>[2 Recommendation — Breathing]</sup>"
+     ],
+     [
+      "외상 + 저혈압 + eFAST 심낭액",
+      "C",
+      "심장눌림증 — 수혈하며 응급 감압. 심한 흉부 외상의 혈심낭은 응급 수술 적응 <sup>[6† Abstract]</sup>"
+     ],
+     [
+      "저혈압 + eFAST 흉강액",
+      "C",
+      "혈흉 — 흉관 삽입(배액·환기) 후 출혈량으로 수술 판단 <sup>[5 Background]</sup> <sup>[4 3.4]</sup>"
+     ],
+     [
+      "불안정 골반 + 설명되지 않는 쇼크",
+      "C",
+      "골반 결속대 → 가능한 한 빨리 골반 고리 고정, 계속 출혈이면 복막외 채움·혈관색전 <sup>[1 R20]</sup> <sup>[1 R21]</sup>"
+     ],
+     [
+      "분명한 출혈원 + 극단적 출혈성 쇼크",
+      "C",
+      "즉시 출혈 조절 시술(수술) — 검사를 더 하지 않는다 <sup>[1 R6]</sup>"
+     ]
+    ],
+    "note": "출혈원이 불분명하지만 즉시 조절할 필요가 없으면 eFAST·조영 전신 CT 로 찾는다 <sup>[1 R7]</sup> <sup>[1 R8]</sup>. 대량 혈흉의 개흉 기준 수치(배액량)는 읽은 출처에 없어 싣지 않았다(검토 항목)."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "긴장성 기흉 — 흉부 X선으로 확인한 뒤 감압?",
+    "point": "진행하는 호흡곤란·저혈압·한쪽 호흡음 소실로 강하게 의심되면 영상 확인을 기다리지 않고 즉시 바늘 감압한다 — 영상을 기다리는 동안 폐쇄성 쇼크가 진행한다 <sup>[2 Recommendation — Breathing]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "사지에서 피가 뿜어도 기도부터?",
+    "point": "생명을 위협하는 외출혈은 기도보다 먼저 직접 압박·지혈대로 막는다(&lt;C&gt;ABCDE · xABCDE) <sup>[1 R5 Rationale]</sup> <sup>[2 Recommendation — X]</sup>. 순서 논쟁은 시험 쟁점 Z1.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "출혈성 쇼크 — 혈압이 정상이 될 때까지 수액?",
+    "point": "출혈이 멎기 전에는 제한 수액으로 수축기 80–90 mmHg(평균 50–60)를 목표로 한다. 혈압을 정상으로 올리면 생긴 혈전이 떨어져 출혈이 늘 수 있다 <sup>[1 R13]</sup> <sup>[2 Recommendation — Circulation]</sup>. 중증 뇌손상은 예외(평균 ≥80 mmHg).",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "혈압·첫 혈색소가 정상 = 큰 출혈 없음?",
+    "point": "젊은 환자는 혈액 손실이 30 %를 넘을 때까지 혈압을 유지할 수 있고, 첫 혈색소 정상은 초기 출혈을 가린다 — 쇼크지수(맥박/수축기 ≥0.9–1.0)와 반복 측정으로 본다 <sup>[2 Recommendation — TXA]</sup> <sup>[1 R5 Rationale]</sup> <sup>[1 R9]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "골반 결속대는 장골능 높이에?",
+    "point": "결속대는 장골능이 아니라 큰돌기(greater trochanter) 높이에 두고, 무릎을 모으고 발목을 안으로 돌린 뒤 조인다 <sup>[2 Recommendation — Pelvic binder]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "트라넥삼산은 저혈압이 생긴 뒤에?",
+    "point": "출혈 중이거나 큰 출혈 위험이 있으면 손상 후 3시간 안에 가능한 한 빨리 준다 — 1 g 을 10분에 걸쳐, 이어 1 g 을 8시간 <sup>[1 R23]</sup>. 3시간 이후에는 효과가 없거나 해로울 수 있다 <sup>[2 Recommendation — TXA]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "Beck 세 징후가 없으면 심장눌림증 배제?",
+    "point": "고전적인 Beck 세 징후(저혈압 포함)는 흔히 나타나지 않는다 — 외상 환자의 심낭액은 eFAST 로 직접 본다 <sup>[6† Abstract]</sup> <sup>[4 3.3 Pericardial effusion]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "각 칸은 「평가하며 처치」한다 — 막힌 것을 풀고 다음 칸으로 가며, 처치 효과가 나타나는 데 몇 분이 걸리므로 악화되면 처음부터 다시 평가한다 <sup>[3 ABCDE principles]</sup>.",
+   "심정지(무반응·비정상 호흡·무맥)면 ABCDE 가 아니라 CPR 이다 <sup>[3 Which patients need ABCDE?]</sup>.",
+   "바늘 감압이 실패하면 위치를 바꾸거나 손가락 흉강창 같은 확실한 감압으로 넘어간다 <sup>[2 Recommendation — Breathing]</sup>.",
+   "출혈원이 불분명한데 즉시 조절할 필요가 없으면 eFAST·조영 전신 CT 로 찾는다. eFAST 는 실질 손상만 있고 자유액이 없으면 민감도가 낮다 <sup>[1 R7]</sup> <sup>[4 3.5 Limitations]</sup>.",
+   "D 에서는 저혈압(수축기 &lt;90)·저산소(SpO₂ &lt;90 %)가 2차 뇌손상의 주원인이라 먼저 교정한다. E 는 노출과 동시에 보온 — 저체온(&lt;35 °C)은 응고장애를 키운다 <sup>[2 Recommendation — Disability]</sup> <sup>[2 Recommendation — Exposure]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "permissive-hypotension",
+    "name": "출혈 조절 전 소생 목표(허용 저혈압)",
+    "kind": "치료 목표",
+    "population": "출혈이 멎지 않은 외상 환자",
+    "statement": "제한 수액 전략으로 수축기 80–90 mmHg(평균동맥압 50–60 mmHg)를 큰 출혈이 멎을 때까지 목표로 한다. 수액만으로 목표에 못 미치면 노르에피네프린을 더한다 [[euro-bleeding-2023: R13]] [[euro-bleeding-2023: R14]]",
+    "exceptions": "중증 외상성 뇌손상(GCS ≤8)은 평균동맥압 ≥80 mmHg [[euro-bleeding-2023: R13]]. 척수손상도 금기이고, 노인·만성 고혈압은 신중히 [[euro-bleeding-2023: R13 Rationale]]",
+    "source": "euro-bleeding-2023",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "euro-bleeding-2023",
+    "org": "Task Force for Advanced Bleeding Care in Trauma (Rossaint R, Afshari A, Bouillon B, et al.)",
+    "title": "The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition",
+    "kind": "guideline",
+    "citation": "Crit Care 2023;27(1):80",
+    "checked": "PMC9977110 전문(PubMed MCP)에서 권고 R1–R39 문장 전부와 R2·R5·R6·R13·R20·R21 근거 절을 읽음 — R2 국소 압박·보조 지혈대, R3 기도 폐쇄·GCS ≤8·저환기·저산소면 지체 없이 삽관·정상 환기, R5 근거 절 「ATLS ABCDE 가 <C>ABCDE 로 바뀌었다」·쇼크지수 0.5–0.7 정상·≥0.9–1.0 대량수혈 연관, R6 분명한 출혈원·극단 쇼크는 즉시 출혈 조절, R7–R8 eFAST·조영 전신 CT, R9 첫 Hb 정상이 초기 출혈을 가림, R13 수축기 80–90(평균 50–60)·GCS ≤8 은 평균 ≥80·뇌손상·척수손상 금기·노인/만성 고혈압 신중, R14 노르에피네프린, R20 골반 결속대·골반 고리 조기 고정, R21 복막외 채움·REBOA, R23 트라넥삼산 3시간 안 1 g/10분 + 1 g/8시간",
+    "doi": "10.1186/s13054-023-04327-7",
+    "pmid": "36859355",
+    "verified": "text",
+    "year": "2023",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/"
+   },
+   {
+    "id": "cn-prehospital-2026",
+    "org": "Trauma Society of the Chinese Medical Association 등 (Li Y, Lang L, Zhang J, et al.)",
+    "title": "Chinese expert consensus on the prehospital management of major trauma",
+    "kind": "consensus",
+    "citation": "Chin J Traumatol 2026;29(2):79-89",
+    "checked": "PMC13070844 전문을 처음부터 끝까지 읽음(권고 머리글이 PMC 텍스트에서 빠져 있어 인용 위치는 X·Airway·Breathing·Circulation·TXA·Pelvic binder·Disability·Exposure·SMR 절 이름으로 적음) — xABCDE 평가 틀, 사지 출혈은 상용 지혈대 우선·접합부는 상처 채움+최소 3분 압박·지혈대 시각 기록, 기도는 단계적·경추 의심 시 손 일직선 고정, 긴장성 기흉 세 징후(진행 호흡곤란·저혈압·한쪽 호흡음 소실)면 영상 기다리지 않고 바늘 감압·성인 5번째 갈비사이 중간겨드랑선 선호·2번째 갈비사이 빗장중간선은 긴 바늘(≥8 cm)로·소아는 2번째·5 cm 바늘 실패율 >40 %·실패 시 손가락 흉강창, 허용 저혈압 노뼈동맥 촉지 또는 수축기 90·뇌손상은 수축기 ≥110 또는 평균 ≥80, 젊은 환자는 30 % 손실까지 혈압 유지, 트라넥삼산 3시간 안 1 g 10분 이상·3시간 이후 무효·유해 가능, 골반 결속대 적응 셋·큰돌기 높이·무릎 모으고 발목 안쪽 회전, 노인 수축기 <110 저혈압 기준, 저체온 <35 °C 와 수액 가온, 척추 운동 제한은 선택적·관통상은 이송 지연 금지, ATLS 11판이 IMIST-AMBO 인계를 채택했다는 언급",
+    "doi": "10.1016/j.cjtee.2026.01.002",
+    "pmid": "41813488",
+    "verified": "text",
+    "year": "2026",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13070844/"
+   },
+   {
+    "id": "thim-abcde-2012",
+    "org": "Thim T, Krarup NH, Grove EL, Rohde CV, Løfgren B",
+    "title": "Initial assessment and treatment with the Airway, Breathing, Circulation, Disability, Exposure (ABCDE) approach",
+    "kind": "review",
+    "citation": "Int J Gen Med 2012;5:117-21",
+    "checked": "PMC3273374 전문을 읽음 — ABCDE 는 평가와 처치를 동시에·한 칸의 생명 위협을 처치한 뒤 다음 칸, 근거는 전문가 합의, 심정지에는 ABCDE 대신 CPR, B 에서 경정맥 확장·기관 편위 관찰·긴장성 기흉은 2번째 갈비사이 빗장중간선 바늘 감압, 재평가 반복, ATLS 의 기원",
+    "doi": "10.2147/IJGM.S28478",
+    "pmid": "22319249",
+    "verified": "text",
+    "year": "2012",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3273374/"
+   },
+   {
+    "id": "bella-efast-2025",
+    "org": "Bella FM, Bonfichi A, Esposito C, et al.",
+    "title": "Extended Focused Assessment with Sonography for Trauma in the Emergency Department: A Comprehensive Review",
+    "kind": "review",
+    "citation": "J Clin Med 2025;14(10):3457",
+    "checked": "PMC12112529 전문을 읽음 — 3.3 정확도(심낭액 메타분석 민감도 91 %·특이도 94 %, 기흉은 폐 초음파가 앙와위 흉부 X선보다 민감, 복강 실질 손상은 자유액 없으면 민감도 낮음), 3.4 ABCDE 안의 eFAST(B 에서 긴장성 기흉 배제, C 에서 혈심낭·혈흉·혈복강, 불안정 환자의 혈복강은 바로 개복으로), 저혈압 소생 목표 표기(관통 70·둔상 90·두부 110 mmHg)",
+    "doi": "10.3390/jcm14103457",
+    "pmid": "40429451",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12112529/"
+   },
+   {
+    "id": "feenstra-chest-tube-2018",
+    "org": "Feenstra TM, Dickhoff C, Deunk J",
+    "title": "Systematic review and meta-analysis of tube thoracostomy following traumatic chest injury; suction versus water seal",
+    "kind": "review",
+    "citation": "Eur J Trauma Emerg Surg 2018;44(6):819-827",
+    "checked": "PMC6267148 전문을 읽음 — 배경 절: 외상성 기흉·혈흉·혈기흉은 공기·액체를 빼 환기와 심장 기능을 개선하려고 흉관 삽입이 필요할 수 있고, 적응과 삽입은 ATLS·ETC 원칙상 필수 술기. 본론(흡인 대 수봉)은 이 목표와 무관해 인용하지 않음. 대량 혈흉 개흉 기준 수치는 이 논문에 없다",
+    "doi": "10.1007/s00068-018-0942-7",
+    "pmid": "29546613",
+    "verified": "text",
+    "year": "2018",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6267148/"
+   },
+   {
+    "id": "alerhand-tamponade-2022",
+    "org": "Alerhand S, Adrian RJ, Long B, Avila J",
+    "title": "Pericardial tamponade: A comprehensive emergency medicine and echocardiography review",
+    "kind": "review",
+    "citation": "Am J Emerg Med 2022;58:159-174",
+    "checked": "PubMed 초록만 읽음(PMC 전문 없음) — Beck 세 징후는 흔히 나타나지 않음, 혈역학 불안정·악화 임박·심정지면 응급 심낭천자, 심한 흉부 외상은 응급 수술 적응, 외상성 혈심낭은 시술 전 혈액제제, 양압 환기·진정은 심박출을 낮춰 가능하면 피함",
+    "doi": "10.1016/j.ajem.2022.05.001",
+    "pmid": "35696801",
+    "verified": "abstract",
+    "year": "2022",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.ajem.2022.05.001"
+   },
+   {
+    "id": "galvagno-atls10-2019",
+    "org": "Galvagno SM Jr, Nahmias JT, Young DA",
+    "title": "Advanced Trauma Life Support Update 2019: Management and Applications for Adults and Special Populations",
+    "kind": "review",
+    "citation": "Anesthesiol Clin 2019;37(1):13-32",
+    "checked": "PubMed 초록만 읽음(PMC 전문 없음 — 요청된 「ATLS 10판 변경점」 논문) — 10판은 정형화된 접근, 결정질 수액 지침 완화, 영상 후두경, 점탄성 검사로 수혈 결정, 척추 고정 대신 척추 운동 제한. 바늘 감압 위치 변경 여부는 초록에 없어 대조하지 않음",
+    "doi": "10.1016/j.anclin.2018.09.009",
+    "pmid": "30711226",
+    "verified": "abstract",
+    "year": "2019",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.anclin.2018.09.009"
+   }
+  ],
+  "checks": [
+   {
+    "q": "오토바이 사고 환자 — 넓적다리에서 피가 뿜고, 코골이 소리가 난다. 가장 먼저 할 것은?",
+    "a": "넓적다리 출혈을 직접 압박·지혈대로 먼저 막는다(<C>ABCDE·xABCDE). 이어 턱 들기·흡인 등으로 기도를 연다."
+   },
+   {
+    "q": "흉부 둔상 후 호흡곤란이 심해지고 혈압 80/50, 오른쪽 호흡음이 없다. 흉부 X선 촬영이 준비 중이다. 다음 처치는?",
+    "a": "영상을 기다리지 않고 오른쪽 바늘 감압(긴장성 기흉). 실패하면 손가락 흉강창 등으로 넘어간다."
+   },
+   {
+    "q": "뇌손상 없는 출혈성 쇼크 환자의 출혈 조절 전 혈압 목표는? 중증 뇌손상(GCS ≤8)이 있으면?",
+    "a": "수축기 80–90 mmHg(평균 50–60). 중증 뇌손상이면 평균동맥압 ≥80 mmHg."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "다발 외상 일차 평가 — 막힌 칸에서 멈춰 푼다",
+  "geo": {
+   "title": "다발 외상 일차 평가 — 막힌 칸에서 멈춰 푼다",
+   "w": 906.0,
+   "h": 902.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "다발 외상 — 일차 평가 시작"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 16.0
+    },
+    {
+     "id": "x",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "생명 위협 외출혈?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 85.0
+    },
+    {
+     "id": "hx",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "직접 압박 · 지혈대(시각",
+      "기록)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 396.4,
+     "y": 175.0
+    },
+    {
+     "id": "a",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "기도 폐쇄 · GCS ≤8 ·",
+      "저산소?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 261.0
+    },
+    {
+     "id": "intub",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "기관삽관 + 경추 손 고정"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 396.4,
+     "y": 368.0
+    },
+    {
+     "id": "b",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "한쪽 호흡음 소실 + 저혈압?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 437.0
+    },
+    {
+     "id": "needle",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "영상 없이 바늘 감압"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 396.4,
+     "y": 527.0
+    },
+    {
+     "id": "c",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "쇼크가 계속되나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 596.0
+    },
+    {
+     "id": "scan",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "eFAST · 골반 진찰로 출혈",
+      "위치"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 686.0
+    },
+    {
+     "id": "tamp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "심장눌림증 — 수혈하며 응급",
+      "감압·수술"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 822.0
+    },
+    {
+     "id": "hemo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "혈흉 — 흉관 삽입 → 수술 판단"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 822.0
+    },
+    {
+     "id": "pelvis",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "골반 — 결속대 → 고정·색전"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 822.0
+    },
+    {
+     "id": "abd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "혈복강 — 즉시 출혈 조절 수술"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 694.0,
+     "y": 822.0
+    },
+    {
+     "id": "dnode",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "D(GCS·동공) → E(노출·",
+      "보온) → 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 581.0,
+     "y": 686.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "x",
+     "points": [
+      [
+       566.0,
+       63.0
+      ],
+      [
+       566.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "x",
+     "to": "hx",
+     "points": [
+      [
+       533.3,
+       132.0
+      ],
+      [
+       533.3,
+       161.0
+      ],
+      [
+       494.4,
+       161.0
+      ],
+      [
+       494.4,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 518.3,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "x",
+     "to": "a",
+     "points": [
+      [
+       598.7,
+       132.0
+      ],
+      [
+       598.7,
+       161.0
+      ],
+      [
+       608.4,
+       161.0
+      ],
+      [
+       608.4,
+       247.0
+      ],
+      [
+       598.7,
+       247.0
+      ],
+      [
+       598.7,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 583.7,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "hx",
+     "to": "a",
+     "points": [
+      [
+       494.4,
+       239.0
+      ],
+      [
+       494.4,
+       247.0
+      ],
+      [
+       533.3,
+       247.0
+      ],
+      [
+       533.3,
+       261.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "a",
+     "to": "intub",
+     "points": [
+      [
+       533.3,
+       325.0
+      ],
+      [
+       533.3,
+       354.0
+      ],
+      [
+       494.4,
+       354.0
+      ],
+      [
+       494.4,
+       368.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 523.8,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "a",
+     "to": "b",
+     "points": [
+      [
+       598.7,
+       325.0
+      ],
+      [
+       598.7,
+       354.0
+      ],
+      [
+       608.4,
+       354.0
+      ],
+      [
+       608.4,
+       423.0
+      ],
+      [
+       598.7,
+       423.0
+      ],
+      [
+       598.7,
+       437.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 578.2,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "intub",
+     "to": "b",
+     "points": [
+      [
+       494.4,
+       415.0
+      ],
+      [
+       494.4,
+       423.0
+      ],
+      [
+       533.3,
+       423.0
+      ],
+      [
+       533.3,
+       437.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "b",
+     "to": "needle",
+     "points": [
+      [
+       533.3,
+       484.0
+      ],
+      [
+       533.3,
+       513.0
+      ],
+      [
+       494.4,
+       513.0
+      ],
+      [
+       494.4,
+       527.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 523.8,
+      "y": 488.0
+     }
+    },
+    {
+     "from": "b",
+     "to": "c",
+     "points": [
+      [
+       598.7,
+       484.0
+      ],
+      [
+       598.7,
+       513.0
+      ],
+      [
+       608.4,
+       513.0
+      ],
+      [
+       608.4,
+       582.0
+      ],
+      [
+       598.7,
+       582.0
+      ],
+      [
+       598.7,
+       596.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 578.2,
+      "y": 488.0
+     }
+    },
+    {
+     "from": "needle",
+     "to": "c",
+     "points": [
+      [
+       494.4,
+       574.0
+      ],
+      [
+       494.4,
+       582.0
+      ],
+      [
+       533.3,
+       582.0
+      ],
+      [
+       533.3,
+       596.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "c",
+     "to": "scan",
+     "points": [
+      [
+       533.3,
+       643.0
+      ],
+      [
+       533.3,
+       672.0
+      ],
+      [
+       453.0,
+       672.0
+      ],
+      [
+       453.0,
+       686.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 523.8,
+      "y": 647.0
+     }
+    },
+    {
+     "from": "c",
+     "to": "dnode",
+     "points": [
+      [
+       598.7,
+       643.0
+      ],
+      [
+       598.7,
+       672.0
+      ],
+      [
+       679.0,
+       672.0
+      ],
+      [
+       679.0,
+       686.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 578.2,
+      "y": 647.0
+     }
+    },
+    {
+     "from": "scan",
+     "to": "tamp",
+     "points": [
+      [
+       394.2,
+       750.0
+      ],
+      [
+       394.2,
+       799.0
+      ],
+      [
+       114.0,
+       799.0
+      ],
+      [
+       114.0,
+       822.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "심낭액"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 373.7,
+      "y": 754.0
+     }
+    },
+    {
+     "from": "scan",
+     "to": "hemo",
+     "points": [
+      [
+       433.4,
+       750.0
+      ],
+      [
+       433.4,
+       808.0
+      ],
+      [
+       340.0,
+       808.0
+      ],
+      [
+       340.0,
+       822.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "흉강액"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 412.9,
+      "y": 774.0
+     }
+    },
+    {
+     "from": "scan",
+     "to": "pelvis",
+     "points": [
+      [
+       472.6,
+       750.0
+      ],
+      [
+       472.6,
+       808.0
+      ],
+      [
+       566.0,
+       808.0
+      ],
+      [
+       566.0,
+       822.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "골반 불안정"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 439.2,
+      "y": 754.0
+     }
+    },
+    {
+     "from": "scan",
+     "to": "abd",
+     "points": [
+      [
+       511.8,
+       750.0
+      ],
+      [
+       511.8,
+       799.0
+      ],
+      [
+       792.0,
+       799.0
+      ],
+      [
+       792.0,
+       822.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "복강액"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 491.3,
+      "y": 774.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "다발 외상 — 일차 평가 시작",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "생명 위협 외출혈?"
+     }
+    ]
+   },
+   {
+    "id": "x",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "생명 위협 외출혈?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "직접 압박 · 지혈대(시각 기록)"
+     },
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "기도 폐쇄 · GCS ≤8 · 저산소?"
+     }
+    ]
+   },
+   {
+    "id": "hx",
+    "num": 3,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "직접 압박 · 지혈대(시각 기록)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 4,
+      "toText": "기도 폐쇄 · GCS ≤8 · 저산소?"
+     }
+    ]
+   },
+   {
+    "id": "a",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "기도 폐쇄 · GCS ≤8 · 저산소?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "기관삽관 + 경추 손 고정"
+     },
+     {
+      "label": "아니오",
+      "to": 6,
+      "toText": "한쪽 호흡음 소실 + 저혈압?"
+     }
+    ]
+   },
+   {
+    "id": "intub",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "기관삽관 + 경추 손 고정",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "한쪽 호흡음 소실 + 저혈압?"
+     }
+    ]
+   },
+   {
+    "id": "b",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "한쪽 호흡음 소실 + 저혈압?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "영상 없이 바늘 감압"
+     },
+     {
+      "label": "아니오",
+      "to": 8,
+      "toText": "쇼크가 계속되나?"
+     }
+    ]
+   },
+   {
+    "id": "needle",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "영상 없이 바늘 감압",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "쇼크가 계속되나?"
+     }
+    ]
+   },
+   {
+    "id": "c",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "쇼크가 계속되나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "eFAST · 골반 진찰로 출혈 위치"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "D(GCS·동공) → E(노출·보온) → 재평가"
+     }
+    ]
+   },
+   {
+    "id": "scan",
+    "num": 9,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "eFAST · 골반 진찰로 출혈 위치",
+    "note": "",
+    "branches": [
+     {
+      "label": "심낭액",
+      "to": 11,
+      "toText": "심장눌림증 — 수혈하며 응급 감압·수술"
+     },
+     {
+      "label": "흉강액",
+      "to": 12,
+      "toText": "혈흉 — 흉관 삽입 → 수술 판단"
+     },
+     {
+      "label": "골반 불안정",
+      "to": 13,
+      "toText": "골반 — 결속대 → 고정·색전"
+     },
+     {
+      "label": "복강액",
+      "to": 14,
+      "toText": "혈복강 — 즉시 출혈 조절 수술"
+     }
+    ]
+   },
+   {
+    "id": "dnode",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "D(GCS·동공) → E(노출·보온) → 재평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tamp",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "심장눌림증 — 수혈하며 응급 감압·수술",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "hemo",
+    "num": 12,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "혈흉 — 흉관 삽입 → 수술 판단",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pelvis",
+    "num": 13,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "골반 — 결속대 → 고정·색전",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "abd",
+    "num": 14,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "혈복강 — 즉시 출혈 조절 수술",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
   "hasErrors": false
  },
  "cn.em.ventricular-fibrillation.immediate-defibrillation": {
@@ -61410,6 +65332,932 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test": {
+  "id": "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test",
+  "title": "이수성 선별 양성 — 확진은 주수에 맞는 침습 검사로",
+  "objective": "염색체 이수성 선별검사(cfDNA·혈청 선별)가 고위험으로 나온 임신부에게, 선별과 진단을 구분하고 임신 주수와 태반 모자이크 가능성에 맞춰 융모막융모생검과 양수천자 중 확진검사를 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "태아 염색체 이수성 선별검사 고위험(positive aneuploidy screen)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Genetics"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "b2a085ac1fce9dc1",
+  "summary": [
+   "결론: 선별 고위험은 진단이 아니다 — 14주 전이면 융모막융모생검, 14주 이후면 양수천자로 확진한다.",
+   "시험 단서: cfDNA(NIPT)·쿼드·통합검사 「고위험」 + 「다음 처치는?」 → 침습 진단검사(diagnostic testing).",
+   "왜: cfDNA는 태반에서 온 DNA라 위양성이 있고, 혈청 선별은 위험도 계산일 뿐 태아 핵형을 보지 않는다.",
+   "양수천자는 14주 전에 하지 않는다(유산·내반족↑), 융모막융모생검은 9주 전에 하지 않는다(유산·사지 결손↑).",
+   "CVS가 모자이크면 태반 국한 모자이크일 수 있어 양수천자로 태아 핵형을 다시 본다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 고위험 결과 다음은 진단검사인가",
+    "deep": false,
+    "html": "<ul>\n<li>선별검사는 <strong>위험도</strong>를 낸다. 혈청 선별은 나이에 따른 위험에 혈청 결과의 우도비를 곱한 값이고, 고위험(기준 1:270)이라도 태아 이상을 확정하지 않는다 <sup>[1 혈청 KQ1·KQ5]</sup>.</li>\n<li>cfDNA 도 선별이다. 위양성·위음성이 있어 고위험이면 침습 검사를 제안하고, 확진 전에는 되돌릴 수 없는 산과 처치를 하지 않는다 <sup>[1 cfDNA KQ7]</sup> <sup>[5†]</sup>.</li>\n<li>핵형을 직접 보는 것은 침습 검사(융모막융모생검·양수천자)뿐이다 — 모든 염색체의 수·구조 이상을 보지만 유산 위험이 따른다 <sup>[1 혈청 KQ1]</sup>.</li>\n<li>침습 검사를 피하려는 임신부에게 혈청 고위험 뒤 cfDNA 는 합리적 대안이지만, 진짜 양성이면 결국 침습 검사가 필요해 진단이 늦어진다는 점을 알린다 <sup>[1 혈청 KQ5]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — cfDNA는 태반을 본다",
+    "deep": false,
+    "html": "<p>모체 혈장의 태아 cfDNA 는 <strong>태반에서 나온</strong> 조각이다. 태아가 다운증후군이면 21번 염색체 조각이 조금 더 많아지고, 이 차이로 위험을 계산한다 <sup>[1 서론]</sup>. 그래서 태반과 태아의 핵형이 다르면(태반 국한 모자이크, 임신의 약 1 %) 태아가 정상이어도 고위험이 나온다 <sup>[3 Confined placental mosaicism]</sup>. 소실된 쌍태아·모체 복제수 변이·모체 악성종양도 결과를 흔든다 <sup>[1 cfDNA KQ2]</sup>. 융모막융모생검도 같은 태반 조직(세포영양막)을 보므로 모자이크가 나오면 태아 자신의 세포가 있는 양수로 다시 확인한다 <sup>[2 KQ3]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 선별 결과의 무게",
+    "deep": false,
+    "html": "<ul>\n<li>표처럼 cfDNA 의 민감도·특이도가 가장 높다. 그래도 양성예측도는 대상의 사전 위험에 따라 달라 저위험군에서 낮다 <sup>[1 cfDNA KQ1·KQ4]</sup>.</li>\n<li>음성 결과의 한계: 혈청 저위험은 「잡을 수 있는 이수성의 위험이 낮다」는 뜻이고, cfDNA 저위험도 모든 염색체 이상을 배제하지 않는다 <sup>[1 혈청 KQ1]</sup> <sup>[1 cfDNA KQ3]</sup>.</li>\n<li>성염색체 이수성·희귀 상염색체 이수성은 양성예측도가 낮다(monosomy X 48.4 %) — 태반 모자이크가 한 원인이다 <sup>[1 cfDNA KQ2]</sup> <sup>[3 Sex chromosome aneuploidies]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 주수와 검체가 검사를 정한다",
+    "deep": false,
+    "html": "<ul>\n<li>14주 전 → 융모막융모생검, 14주 이후 → 양수천자 <sup>[1 혈청 KQ5]</sup>.</li>\n<li>너무 이른 시술이 문제다: 9주 전 CVS 는 유산·사지 결손이, 14주 전 양수천자는 유산·내반족·양수 누출이 늘었다 <sup>[2 KQ8·KQ9]</sup>.</li>\n<li>태반 국한 모자이크가 의심되면(cfDNA 와 초음파가 어긋남 등) 양수천자가 태아 핵형을 더 직접 본다. 대다수 cfDNA 고위험에는 CVS 가 적절하다 <sup>[3 Confined placental mosaicism]</sup>.</li>\n<li>모자이크가 6·7·11·14·15번 염색체의 삼염색체면 양수천자 때 단친 이염색체(UPD) 검사를 고려한다 <sup>[2 KQ3]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>나이(35세 이상)만으로 침습 검사를 권하지 않는다 — 먼저 선별로 위험을 평가한다 <sup>[2 KQ1]</sup>.</li>\n<li>구조 이상·NT ≥3 mm·낭성 림프관종이면 선별 없이 침습 검사와 정밀 초음파로 간다 <sup>[1 혈청 KQ8]</sup>.</li>\n<li>쌍태에서는 침습 검사의 소실 위험이 단태보다 높다 <sup>[2 KQ10]</sup>.</li>\n<li>염색체 마이크로어레이를 모든 침습 검사에서 핵형 분석 대신 쓰지는 않는다(구조 이상 태아에서 이점) <sup>[2 KQ7]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · cfDNA를 모든 임신부의 1차 선별로?</strong> — 시험 기준: 확진은 어느 경우든 침습 검사(이 정리본의 판단은 여기에 달려 있지 않다) / 다른 기준: 한국 지침(2019 승인)은 비용효과 때문에 모든 임신부 1차로는 권하지 않고 다태에는 권하지 않는다 <sup>[1 cfDNA KQ4·KQ6]</sup>. ACMG 2022 는 모든 단태·쌍태에게 기존 선별보다 NIPS 를 강하게 권고한다 <sup>[4†]</sup>. 호주 종설도 쌍태 성능이 단태와 비슷하다고 적는다 <sup>[3 Multiple gestations]</sup> / 왜 다른가: 나라별 보험·비용 맥락과 지침 시점(2019 vs 2022) / 시험에서는: KMLE — 국내 지침 문구(고위험군 우선, 다태 ✗)가 나올 수 있다 · USMLE — cfDNA 를 모든 임신부에게 제안할 수 있는 선별로 본다.</li>\n<li><strong>Z2 충돌 · cfDNA 「결과 없음(no call)」 다음</strong> — 시험 기준: 이수성 가능성이 높아지는 신호로 보고 침습 검사를 제안한다 <sup>[1 cfDNA KQ3]</sup> / 다른 기준: 재검(성공 약 60 %)·침습 검사·다른 선별을 상담으로 고르게 한다 <sup>[3 Test failures]</sup> / 왜 다른가: 한국 지침은 재검 성공률이 낮고 기다리는 동안의 불안을 이유로 재검을 권하지 않는다 / 시험에서는: KMLE · USMLE 모두 「침습 검사 제안」이 가장 안전한 답이다 — 「재검만」은 피한다.</li>\n<li><strong>Z3 충돌 · 시술 관련 유산 위험의 숫자</strong> — 시험 기준: 수치보다 「CVS·양수천자 모두 작은 유산 위험이 있다」를 쓴다 / 다른 기준: 한국 지침은 양수천자 0.06–0.13 %, CVS 0.5–1.2 % 를 적는다 <sup>[1 혈청 KQ5]</sup>. 메타분석은 시술 관련 위험을 양수천자 0.30 %, CVS 0.20 % 로, 위험도가 비슷한 대조군만 보면 둘 다 거의 0 으로 낸다 <sup>[6†]</sup> / 왜 다른가: 대조군 선택(위험도 맞춤 여부)과 「전체 소실」 vs 「시술 기여분」의 차이 — 한국 지침 (2)의 약 3 % 는 전체 소실률이다 <sup>[2 KQ10]</sup> / 시험에서는: 특정 숫자를 정답 근거로 삼는 보기는 출처를 확인한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "선별검사 — 시기와 성능(단태 임신)",
+    "columns": [
+     "검사",
+     "시기",
+     "대상",
+     "성능"
+    ],
+    "rows": [
+     [
+      "cfDNA(NIPT)",
+      "10주 이후 <sup>[1 cfDNA KQ5]</sup>",
+      "삼염색체 21·18·13, 성염색체 이수성 <sup>[1 cfDNA KQ2]</sup>",
+      "T21 민감도 99.3 %·특이도 99.8 %, T13·monosomy X 민감도 91 % <sup>[1 cfDNA KQ2]</sup>"
+     ],
+     [
+      "1삼분기 선별(PAPP-A·free β-hCG + NT)",
+      "11–13주 <sup>[1 혈청 KQ1]</sup>",
+      "다운증후군 등",
+      "검출률 80–84 %(위양성 5 %), 양성예측도 3–4 % <sup>[1 혈청 KQ1]</sup>"
+     ],
+     [
+      "쿼드 선별(AFP·hCG·uE3·inhibin A)",
+      "2삼분기(통합검사에서 15–21주) <sup>[1 혈청 KQ1]</sup>",
+      "다운증후군·삼염색체 18",
+      "검출률 81 %(위양성 5 %) <sup>[1 혈청 KQ1]</sup>"
+     ],
+     [
+      "통합검사(NT·PAPP-A + 쿼드)",
+      "11–13주 + 15–21주 <sup>[1 혈청 KQ1]</sup>",
+      "다운증후군 등",
+      "검출률 94–96 %(위양성 5 %), 양성예측도 5 % <sup>[1 혈청 KQ1]</sup>"
+     ]
+    ],
+    "note": "혈청 선별의 고위험 기준은 1:270(35세 여성의 다운증후군 위험) <sup>[1 혈청 KQ1]</sup>."
+   },
+   {
+    "title": "확진검사 — 융모막융모생검 vs 양수천자",
+    "columns": [
+     "항목",
+     "융모막융모생검(CVS)",
+     "양수천자(amniocentesis)"
+    ],
+    "rows": [
+     [
+      "시기",
+      "9주 이후 ~ 14주 전 <sup>[2 KQ2·KQ9]</sup> <sup>[1 혈청 KQ5]</sup>",
+      "14주 이후(중기 양수천자) <sup>[2 KQ8]</sup> <sup>[1 혈청 KQ5]</sup>"
+     ],
+     [
+      "검체",
+      "융모(태반)",
+      "양수(태아 세포)"
+     ],
+     [
+      "정확도·한계",
+      "검출 98–99 %, 모자이크 &lt;1 %, 모체 세포 오염 &lt;1 % <sup>[1 혈청 KQ5]</sup>",
+      "정확도 99.8–99.9 % <sup>[1 혈청 KQ5]</sup>"
+     ],
+     [
+      "너무 이르면",
+      "9주 전: 유산·사지 결손·얼굴 기형↑ <sup>[2 KQ9]</sup>",
+      "14주 전: 유산·내반족·양수 누출↑ <sup>[2 KQ8]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "cfDNA 고위험 = 다운증후군 확진?",
+    "point": "cfDNA 는 선별검사다. 큰 코호트에서 trisomy 21 양성예측도도 90.9 % 였다 — 침습 검사 없이 결론 내리거나 임신 종결 같은 되돌릴 수 없는 처치를 하지 않는다 <sup>[1 cfDNA KQ7]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "cfDNA 저위험 = 염색체 정상?",
+    "point": "흔한 세 삼염색체(21·18·13)의 위험이 낮다는 뜻일 뿐이다. 침습 검사로 찾은 이상의 16.9 % 는 지금의 cfDNA 로 잡을 수 없는 종류였다 <sup>[1 cfDNA KQ3·KQ4]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "1삼분기 확진 — 이른 양수천자?",
+    "point": "14주 전 양수천자는 중기 양수천자보다 태아 소실(7.6 % vs 5.9 %)·내반족·양수 누출이 많다. 1삼분기에는 9주 이후 융모막융모생검을 고른다 <sup>[2 KQ2·KQ8]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "CVS 모자이크 = 태아 모자이크?",
+    "point": "CVS 모자이크(약 1.3 %)는 대개 태반 세포영양막에 국한되고, 뒤이은 양수천자의 약 90 % 가 정상이었다 — 양수천자로 태아 핵형을 확인한다 <sup>[2 KQ3]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "혈청 선별 고위험 → 다른 혈청 선별로 재확인?",
+    "point": "고위험 뒤 혈청 선별을 다시 하는 것은 권하지 않는다. 진단을 원하면 침습 검사, 침습을 피하고 싶으면 cfDNA 를 상담한다 <sup>[1 혈청 KQ5]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "태반 국한 모자이크를 의심할 때 — cfDNA 결과와 초음파 등 다른 소견이 어긋나거나, 희귀 상염색체 이수성처럼 양성예측도가 낮은 결과. 이때는 양수천자가 태아 핵형을 더 직접 본다. 그 밖의 대다수 cfDNA 고위험은 CVS 로 충분하다 <sup>[3 Confined placental mosaicism]</sup>.",
+   "cfDNA 「결과 없음(no call)」은 태아 이수성(특히 18·13) 가능성이 높아지는 신호다 — 재검 대신 침습 검사를 권하는 지침과, 재검·다른 선별도 선택지로 두는 자료가 갈린다(시험 쟁점 Z2) <sup>[1 cfDNA KQ3]</sup> <sup>[3 Test failures]</sup>.",
+   "초음파에서 구조 이상·NT ≥3 mm·낭성 림프관종이 보이면 선별을 거치지 않고 침습 검사와 정밀 초음파로 간다 <sup>[1 혈청 KQ8]</sup>.",
+   "Rh 음성 임신부는 침습 검사 뒤 72시간 안에 항D 면역글로불린을 준다. 예방적 항생제는 권하지 않는다 <sup>[2 KQ4·KQ6]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "ksmfm-screening-2021",
+    "org": "Korean Society of Maternal-Fetal Medicine (Choe SA, Seol HJ, Kwon JY, et al)",
+    "title": "Clinical Practice Guidelines for Prenatal Aneuploidy Screening and Diagnostic Testing from Korean Society of Maternal-Fetal Medicine: (1) Prenatal Aneuploidy Screening",
+    "kind": "guideline",
+    "citation": "J Korean Med Sci 2021;36(4):e27",
+    "checked": "PMC 전문 대조(PMC7834900). 혈청 KQ1 — 고위험 기준 1:270, 1삼분기 선별(PAPP-A·free β-hCG·NT, 11–13주) 검출률 80–84 %·위양성 5 %·양성예측도 3–4 %, 트리플 69 %, 쿼드 81 %, 통합검사(11–13주 + 15–21주) 94–96 %·양성예측도 5 %, 양수천자(15–22주) 소실 0.13 %·1삼분기 CVS 약 1.2 %. 혈청 KQ4 — 저위험 뒤 독립 재선별 ✗(위양성↑). 혈청 KQ5 — 고위험은 확진 아님, 침습 검사 먼저 권고, CVS 14주 전·양수천자 14주 후, CVS 검출 98–99 %·모자이크 <1 %·모체 오염 <1 %·시술 소실 0.5–1.2 %, 양수천자 정확도 99.8–99.9 %·최근 소실 0.06–0.13 %, 1삼분기 양수천자 ✗(누출·내반족), 혈청 재검 ✗, cfDNA 는 대안이나 진단 아님(진짜 양성이면 진단 지연). 혈청 KQ8 — NT ≥3 mm·낭성 림프관종이면 선별 없이 침습 검사. cfDNA KQ1 — 모두에게 정보 제공 가능, 우선은 고위험군. KQ2 — T21 민감도 99.3 %·특이도 99.8 %, T18 97.4 %·99.8 %, T13·monosomy X 91 %·>99 %, 위양성에 태반 모자이크·소실 쌍태·모체 CNV·모체 악성종양, 미세결실 ✗. KQ3 — 저위험 ≠ 정상, no call 은 재검 대신 침습 검사(이수성 가능성↑, 재검 성공 45–90 %), 비만에서 no call 흔함. KQ4 — 저위험군 전원 1차로는 비용효과 ✗, 침습 검사로 찾은 이상의 16.9 % 는 cfDNA 로 못 찾음. KQ5 — 10주 이후. KQ6 — 다태 ✗. KQ7 — 고위험이면 침습 검사 제안, 확진 전 비가역 처치 ✗, PPV 전체 삼염색체 82.9 %·T21 90.9 %. 서론 — 태아 cfDNA 는 태반 기원",
+    "doi": "10.3346/jkms.2021.36.e27",
+    "pmid": "33496086",
+    "verified": "text",
+    "year": "2021",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7834900/"
+   },
+   {
+    "id": "ksmfm-invasive-2021",
+    "org": "Korean Society of Maternal-Fetal Medicine",
+    "title": "Clinical Practice Guidelines for Prenatal Aneuploidy Screening and Diagnostic Testing from Korean Society of Maternal-Fetal Medicine: (2) Invasive Diagnostic Testing for Fetal Chromosomal Abnormalities",
+    "kind": "guideline",
+    "citation": "J Korean Med Sci 2021;36(4):e26",
+    "checked": "PMC 전문 대조(PMC7834898). KQ1 — 35세 이상 전원 침습 검사 ✗. KQ2 — 1삼분기 진단은 CVS(14주 전 양수천자는 소실·기형↑), CVS 는 9주 이후(Level 1+, A), WHO 자료: 10주 이후 CVS 는 소실·기형을 늘리지 않음, 조기 양수천자 소실 7.6 % vs 중기 5.9 %·내반족·막 파열↑. KQ3 — 진짜 태아 모자이크와 태반 국한 모자이크 구별에 양수천자, CVS 모자이크 1.3 %(세포영양막 국한)·뒤이은 양수천자 약 90 % 정상, 태반 국한 모자이크는 태아 성장 제한 등과 관련, 6·7·11·14·15번 염색체는 UPD 검사 고려. KQ4 — Rh 음성은 72시간 안 항D 면역글로불린. KQ6 — 예방 항생제 ✗. KQ7 — CMA 를 모든 침습 검사의 대체로 ✗, 구조 이상 태아에는 이점. KQ8 — 14주 전 양수천자 ✗(Level 1++, A). KQ9 — 9주 전 CVS ✗(유산·사지 결손·얼굴 기형, 6–7주 CVS 소실 7.2 % vs 2.5 %). KQ10 — 쌍태에서 소실 위험 더 큼. 이 문서의 「검사 뒤 2주 안 소실 약 3 %」·메타분석 3.07 %/3.84 % 는 시술 기여분이 아닌 전체 소실률이다",
+    "doi": "10.3346/jkms.2021.36.e26",
+    "pmid": "33496085",
+    "verified": "text",
+    "year": "2021",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7834898/"
+   },
+   {
+    "id": "poulton-hui-2025",
+    "org": "Poulton A, Hui L (종설)",
+    "title": "Noninvasive prenatal testing: an overview",
+    "kind": "review",
+    "citation": "Aust Prescr 2025;48(2):47-53",
+    "checked": "PMC 전문 대조(PMC12055489). 「What does the NIPT result mean?」 — 선별이지 진단 아님, 고위험이면 유전 상담과 CVS·양수천자 확진을 강하게 권고. 「Confined placental mosaicism」 — 임신의 약 1 %, cfDNA 는 태반 기원이라 태아 핵형과 어긋날 수 있음, 의심되면(NIPT 와 초음파 등 불일치) 양수천자가 더 직접적, 대다수 고위험에는 CVS 가 적절. 「Test failures」 — no call 은 낮은 태아 분획이 흔한 원인이고 이수성과 관련, 선택지는 재검(성공 약 60 %)·침습 검사·CFTS. 「Multiple gestations」 — 쌍태에서도 단태와 비슷한 성능, 권장 방법. Table 1 — NIPT 10주 이후. 호주(RANZCOG) 맥락",
+    "doi": "10.18773/austprescr.2025.019",
+    "pmid": "40343140",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12055489/"
+   },
+   {
+    "id": "acmg-nips-2022",
+    "org": "American College of Medical Genetics and Genomics (Dungan JS, Klugman S, et al)",
+    "title": "Noninvasive prenatal screening (NIPS) for fetal chromosome abnormalities in a general-risk population: an evidence-based clinical guideline of the ACMG",
+    "kind": "guideline",
+    "citation": "Genet Med 2023;25(2):100336 (온라인 2022-12-16)",
+    "checked": "PubMed 초록만(PMC 전문 없음). ACMG 는 모든 단태·쌍태 임신부에게 trisomy 21·18·13 선별로 기존 선별보다 NIPS 를 강하게 권고, 성염색체 이수성 선별도 제안하도록 강하게 권고",
+    "doi": "10.1016/j.gim.2022.11.004",
+    "pmid": "36524989",
+    "verified": "abstract",
+    "year": "2023",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.gim.2022.11.004"
+   },
+   {
+    "id": "cherry-acmg-2017",
+    "org": "American College of Medical Genetics and Genomics (Cherry AM, Akkari YM, et al)",
+    "title": "Diagnostic cytogenetic testing following positive noninvasive prenatal screening results: a clinical laboratory practice resource of the ACMG",
+    "kind": "guideline",
+    "citation": "Genet Med 2017;19(8):845-850",
+    "checked": "PubMed 초록만. NIPS 는 선별검사이므로 모든 선별 양성은 진단검사로 확인할 것을 권고, 알고리즘은 CVS 또는 양수천자 검체로 염색체 분석·FISH·CMA",
+    "doi": "10.1038/gim.2017.91",
+    "pmid": "28726804",
+    "verified": "abstract",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1038/gim.2017.91"
+   },
+   {
+    "id": "salomon-2019",
+    "org": "Salomon LJ, Sotiriadis A, Wulff CB, Odibo A, Akolekar R (체계적 문헌고찰·메타분석)",
+    "title": "Risk of miscarriage following amniocentesis or chorionic villus sampling: systematic review of literature and updated meta-analysis",
+    "kind": "review",
+    "citation": "Ultrasound Obstet Gynecol 2019;54(4):442-451",
+    "checked": "PubMed 초록만(PMC 전문 없음). 24주 전 소실 — 양수천자 0.91 % vs 대조 0.58 %, 시술 관련 위험 0.30 %(95 % CI 0.11–0.49), CVS 1.39 % vs 1.23 %, 시술 관련 0.20 %(−0.13–0.52). 위험도가 비슷한 대조군만 보면 양수천자 0.12 %, CVS −0.11 % — 지금 설명하는 수치보다 낮다",
+    "doi": "10.1002/uog.20353",
+    "pmid": "31124209",
+    "verified": "abstract",
+    "year": "2019",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1002/uog.20353"
+   }
+  ],
+  "checks": [
+   {
+    "q": "임신 11주, cfDNA 에서 trisomy 21 고위험. 다음 검사는?",
+    "a": "융모막융모생검으로 확진한다. cfDNA 는 선별이라 확진 전에 결론 내리지 않고, 14주 전 양수천자는 유산·내반족이 늘어 고르지 않는다."
+   },
+   {
+    "q": "CVS 에서 trisomy 모자이크가 나왔다. 왜 양수천자를 하나?",
+    "a": "CVS 는 태반(세포영양막)을 보므로 태반 국한 모자이크일 수 있다 — 양수천자로 태아 자신의 핵형을 확인한다. CVS 모자이크의 약 90 % 는 양수천자가 정상이었다."
+   },
+   {
+    "q": "cfDNA 가 태반 국한 모자이크에 흔들리는 이유는?",
+    "a": "모체 혈액의 태아 cfDNA 는 태반에서 나온다. 태반과 태아의 핵형이 다르면 cfDNA 결과가 태아 핵형과 어긋난다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "이수성 선별 고위험 — 확진검사 고르기",
+  "geo": {
+   "title": "이수성 선별 고위험 — 확진검사 고르기",
+   "w": 461.1,
+   "h": 734.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "cfDNA·혈청 선별 결과 고위험"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 249.1,
+     "y": 16.0
+    },
+    {
+     "id": "couns",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "상담 — 선별일 뿐, 확진 전",
+      "비가역 처치 ✗"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 248.7,
+     "y": 85.0
+    },
+    {
+     "id": "cpm",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "태반 국한 모자이크가",
+      "의심되나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 248.2,
+     "y": 171.0
+    },
+    {
+     "id": "ga",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "지금 임신 주수는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 175.1,
+     "y": 278.0
+    },
+    {
+     "id": "early",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "9주 전 — 주수 재확인, 9주",
+      "이후로 미룸"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 170.5,
+     "y": 388.0
+    },
+    {
+     "id": "cvs",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "융모막융모생검(CVS)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 93.3,
+     "y": 495.0
+    },
+    {
+     "id": "mos",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "CVS 결과가 모자이크인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 97.5,
+     "y": 564.0
+    },
+    {
+     "id": "cvsdx",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "CVS 핵형으로 확진"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 654.0
+    },
+    {
+     "id": "amnio",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "14주 이후 양수천자로 태아",
+      "핵형 확진"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 654.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "couns",
+     "points": [
+      [
+       347.1,
+       63.0
+      ],
+      [
+       346.7,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "couns",
+     "to": "cpm",
+     "points": [
+      [
+       346.7,
+       149.0
+      ],
+      [
+       346.2,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "cpm",
+     "to": "ga",
+     "points": [
+      [
+       313.5,
+       235.0
+      ],
+      [
+       313.5,
+       264.0
+      ],
+      [
+       273.1,
+       264.0
+      ],
+      [
+       273.1,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아님"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 298.5,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "cpm",
+     "to": "amnio",
+     "points": [
+      [
+       378.8,
+       235.0
+      ],
+      [
+       378.8,
+       264.0
+      ],
+      [
+       388.7,
+       264.0
+      ],
+      [
+       388.7,
+       374.0
+      ],
+      [
+       398.5,
+       374.0
+      ],
+      [
+       398.8,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "의심"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 363.8,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "ga",
+     "to": "early",
+     "points": [
+      [
+       273.1,
+       325.0
+      ],
+      [
+       273.1,
+       374.0
+      ],
+      [
+       268.5,
+       374.0
+      ],
+      [
+       268.5,
+       388.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "9주 전"
+      ],
+      "w": 40.1,
+      "h": 17,
+      "x": 253.0,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "ga",
+     "to": "cvs",
+     "points": [
+      [
+       224.1,
+       325.0
+      ],
+      [
+       224.1,
+       374.0
+      ],
+      [
+       154.5,
+       374.0
+      ],
+      [
+       154.5,
+       481.0
+      ],
+      [
+       158.6,
+       481.0
+      ],
+      [
+       158.6,
+       495.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "9–13주"
+      ],
+      "w": 44.5,
+      "h": 17,
+      "x": 201.8,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "ga",
+     "to": "amnio",
+     "points": [
+      [
+       322.1,
+       325.0
+      ],
+      [
+       322.1,
+       374.0
+      ],
+      [
+       382.5,
+       374.0
+      ],
+      [
+       382.5,
+       481.0
+      ],
+      [
+       374.9,
+       481.0
+      ],
+      [
+       374.9,
+       550.0
+      ],
+      [
+       367.2,
+       550.0
+      ],
+      [
+       367.2,
+       640.0
+      ],
+      [
+       359.6,
+       640.0
+      ],
+      [
+       359.6,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "14주 이후"
+      ],
+      "w": 57.5,
+      "h": 17,
+      "x": 293.3,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "early",
+     "to": "cvs",
+     "points": [
+      [
+       235.9,
+       452.0
+      ],
+      [
+       235.9,
+       481.0
+      ],
+      [
+       223.9,
+       481.0
+      ],
+      [
+       223.9,
+       495.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "9–13주"
+      ],
+      "w": 44.5,
+      "h": 17,
+      "x": 213.6,
+      "y": 456.0
+     }
+    },
+    {
+     "from": "early",
+     "to": "amnio",
+     "points": [
+      [
+       301.2,
+       452.0
+      ],
+      [
+       301.2,
+       481.0
+      ],
+      [
+       307.6,
+       481.0
+      ],
+      [
+       307.6,
+       550.0
+      ],
+      [
+       314.0,
+       550.0
+      ],
+      [
+       314.0,
+       640.0
+      ],
+      [
+       320.4,
+       640.0
+      ],
+      [
+       320.4,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "14주 이후"
+      ],
+      "w": 57.5,
+      "h": 17,
+      "x": 272.5,
+      "y": 456.0
+     }
+    },
+    {
+     "from": "cvs",
+     "to": "mos",
+     "points": [
+      [
+       191.3,
+       542.0
+      ],
+      [
+       191.3,
+       550.0
+      ],
+      [
+       195.5,
+       550.0
+      ],
+      [
+       195.5,
+       564.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "mos",
+     "to": "cvsdx",
+     "points": [
+      [
+       162.8,
+       611.0
+      ],
+      [
+       162.8,
+       640.0
+      ],
+      [
+       114.0,
+       640.0
+      ],
+      [
+       114.0,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아님"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 147.8,
+      "y": 615.0
+     }
+    },
+    {
+     "from": "mos",
+     "to": "amnio",
+     "points": [
+      [
+       228.1,
+       611.0
+      ],
+      [
+       228.1,
+       640.0
+      ],
+      [
+       281.2,
+       640.0
+      ],
+      [
+       281.2,
+       654.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모자이크"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 202.1,
+      "y": 615.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "cfDNA·혈청 선별 결과 고위험",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "상담 — 선별일 뿐, 확진 전 비가역 처치 ✗"
+     }
+    ]
+   },
+   {
+    "id": "couns",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "상담 — 선별일 뿐, 확진 전 비가역 처치 ✗",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "태반 국한 모자이크가 의심되나?"
+     }
+    ]
+   },
+   {
+    "id": "cpm",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "태반 국한 모자이크가 의심되나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아님",
+      "to": 4,
+      "toText": "지금 임신 주수는?"
+     },
+     {
+      "label": "의심",
+      "to": 9,
+      "toText": "14주 이후 양수천자로 태아 핵형 확진"
+     }
+    ]
+   },
+   {
+    "id": "ga",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "지금 임신 주수는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "9주 전",
+      "to": 5,
+      "toText": "9주 전 — 주수 재확인, 9주 이후로 미룸"
+     },
+     {
+      "label": "9–13주",
+      "to": 6,
+      "toText": "융모막융모생검(CVS)"
+     },
+     {
+      "label": "14주 이후",
+      "to": 9,
+      "toText": "14주 이후 양수천자로 태아 핵형 확진"
+     }
+    ]
+   },
+   {
+    "id": "early",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "9주 전 — 주수 재확인, 9주 이후로 미룸",
+    "note": "",
+    "branches": [
+     {
+      "label": "9–13주",
+      "to": 6,
+      "toText": "융모막융모생검(CVS)"
+     },
+     {
+      "label": "14주 이후",
+      "to": 9,
+      "toText": "14주 이후 양수천자로 태아 핵형 확진"
+     }
+    ]
+   },
+   {
+    "id": "cvs",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "융모막융모생검(CVS)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "CVS 결과가 모자이크인가?"
+     }
+    ]
+   },
+   {
+    "id": "mos",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "CVS 결과가 모자이크인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아님",
+      "to": 8,
+      "toText": "CVS 핵형으로 확진"
+     },
+     {
+      "label": "모자이크",
+      "to": 9,
+      "toText": "14주 이후 양수천자로 태아 핵형 확진"
+     }
+    ]
+   },
+   {
+    "id": "cvsdx",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "CVS 핵형으로 확진",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "amnio",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "14주 이후 양수천자로 태아 핵형 확진",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
   "id": "cn.obgyn.cervix-transformation-zone.squamous-metaplasia",
   "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
@@ -62350,6 +67198,728 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "imaging-2026-0049"
   ],
+  "hasErrors": false
+ },
+ "cn.obgyn.endometriosis.pain-vs-fertility-treatment": {
+  "id": "cn.obgyn.endometriosis.pain-vs-fertility-treatment",
+  "title": "자궁내막증 — 통증엔 억제, 임신엔 억제 금지",
+  "objective": "자궁내막증이 의심되는 골반통 환자에서 목표가 통증 조절인지 임신인지로 복강경 없는 경험적 호르몬 치료와 복강경·보조생식술 중 다음 처치를 고른다",
+  "objectiveKind": "치료",
+  "condition": "자궁내막증(endometriosis) — 통증(endometriosis-associated pain)과 불임(endometriosis-associated infertility)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "3a2f8732e1fa512c",
+  "summary": [
+   "결론: 통증이 목표면 영상 뒤 복강경 없이 호르몬 피임제·프로게스토겐으로 경험 치료, 임신이 목표면 난소 억제를 쓰지 않는다.",
+   "시험 단서: 월경통·깊은 성교통·배변통(dysmenorrhea, deep dyspareunia, dyschezia) + 영상 음성 — 음성은 배제가 아니다.",
+   "왜: 호르몬 억제는 에스트로겐 의존 병변을 눌러 통증을 줄이지만 배란도 멈춰 임신율을 올리지 못한다.",
+   "복강경은 영상이 음성이거나 경험 치료가 실패·부적절할 때. 혈액·조직 생체표지자(CA-125 등)로 진단하지 않는다.",
+   "임신이 목표: rASRM I/II는 수술 복강경 또는 IUI+난소 자극, 난관 손상·남성 인자·낮은 EFI·실패면 보조생식술."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 목표가 치료를 가르나",
+    "deep": false,
+    "html": "<ul>\n<li>자궁내막증의 치료는 병변 자체가 아니라 <strong>환자의 목표</strong>(통증 조절인가, 임신인가)로 갈린다 — 같은 병기라도 다음 처치가 다르다 <sup>[1 불임 치료 — 수술·보조생식술]</sup>.</li>\n<li>통증이 목표면 <strong>확진을 기다리지 않는다</strong>: 영상 뒤 호르몬 피임제·프로게스토겐 경험 치료는 진단 복강경과 증상 조절에서 우열 근거가 없다 <sup>[1 진단 — 복강경 대 경험 치료]</sup>.</li>\n<li>임신이 목표면 <strong>억제가 답이 아니다</strong>: 억제 치료는 배란을 멈추고 임신율을 올리지 못한다 <sup>[2†]</sup> <sup>[1 불임 치료 — 호르몬·약물 치료]</sup>. 대신 수술 복강경·IUI+난소 자극·보조생식술 중에서 고른다.</li>\n<li>경험 치료가 듣지 않거나 맞지 않으면(부적절) 그때 복강경으로 진단과 치료를 겸한다 <sup>[1 진단 — 진찰·영상]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 에스트로겐 의존 병변, 그래서 억제는 양날",
+    "deep": false,
+    "html": "<p>자궁내막증은 자궁내막과 비슷한 상피·간질이 자궁내막·근층 밖에 있고 대개 염증 과정을 동반하는 병이다 <sup>[1 서론]</sup>. 병변이 에스트로겐에 의존하므로 배란·에스트로겐 생성을 누르는 약(호르몬 피임제·프로게스토겐·GnRH 작용제·다나졸)이 통증에 쓰여 왔다 <sup>[2†]</sup>.</p>\n<ul>\n<li>같은 억제가 배란과 월경을 멈춘다 — 치료 기간에는 임신할 수 없고, 끊은 뒤에도 임신율 이득이 없다 <sup>[2†]</sup>.</li>\n<li>그래서 같은 약이 통증 목표에서는 1차, 임신 목표에서는 쓰지 않는 약이 된다.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 경험 치료를 시작할 조건",
+    "deep": false,
+    "html": "<ul>\n<li>표의 경로대로 증상 → 진찰 → 영상까지 보고 경험 치료를 시작한다. 진찰과 영상이 정상이어도 자궁내막증은 남아 있을 수 있다(특히 표재성 복막 병변) <sup>[1 진단 — 진찰·영상]</sup>.</li>\n<li>생체표지자(CA-125 등)는 진단에도 배제에도 쓰지 않는다 <sup>[1 진단 — 진찰·영상]</sup> <sup>[1 청소년]</sup>.</li>\n<li>「부적절」의 구체적 목록은 지침 요약에 없다. 지금 임신을 원하는 사람에게 피임 효과가 있는 경험 치료가 목표와 맞지 않는 것은 위 불임 권고에서 끌어낸 판단이다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 통증이 목표일 때와 임신이 목표일 때",
+    "deep": false,
+    "html": "<ul>\n<li>통증: 호르몬 피임제·프로게스토겐(경구, 레보노르게스트렐 자궁내장치, 에토노게스트렐 이식제)이 1차, 효과가 없으면 GnRH 작용제(add-back 과 함께)·길항제, 난치면 아로마타제 억제제 <sup>[1 통증 치료 — 호르몬 치료]</sup>. 수술도 선택지이며, 약과 수술 사이는 선호·부작용·비용으로 함께 정한다 <sup>[1 통증 치료 — 수술 보조]</sup>.</li>\n<li>임신: rASRM I/II 에서 수술 복강경은 진행 중 임신율을 높이고, IUI 는 난소 자극과 함께 쓴다. 난관 기능 이상·남성 인자·낮은 자궁내막증 임신 지수(endometriosis fertility index, EFI)·다른 치료 실패면 보조생식술 <sup>[1 불임 치료 — 수술·보조생식술]</sup>.</li>\n<li>재평가: 경험 치료가 실패하면 복강경 또는 2차 약으로, 수술 뒤 임신이 안 되면 EFI·배우자 정액 검사를 보고 보조생식술로 넘어간다 <sup>[1 불임 치료 — 수술·보조생식술]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>수술 뒤 호르몬 치료: 바로 임신하지 않을 사람에게는 통증 결과·재발 예방에 준다(임신력을 해치지 않음). 임신을 원하면 임신율만을 위해 주지 않는다 <sup>[1 불임 치료 — 호르몬·약물 치료]</sup> <sup>[1 재발]</sup>.</li>\n<li>수술 전 호르몬 치료는 수술 직후 통증 결과를 개선하지 않아 권하지 않는다 <sup>[1 통증 치료 — 수술 보조]</sup>.</li>\n<li>보조생식술 전 장기 GnRH 작용제·일상적 내막종 절제는 하지 않는다 — 내막종 수술은 난소 예비력을 떨어뜨릴 수 있다 <sup>[1 불임 치료 — 보조생식술 전 수술]</sup>.</li>\n<li>우연히 발견한 무증상 자궁내막증은 약도 수술도 일상적으로 하지 않는다 <sup>[1 무증상 자궁내막증]</sup>.</li>\n<li>약 용량·치료 기간(재발 예방 18–24개월 외), 미국 지침(ACOG)의 문구는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 진단 복강경의 위치</strong> — 시험 기준: 영상+경험 치료로 시작할 수 있고, 복강경은 영상 음성·경험 치료 실패·부적절일 때 <sup>[1 진단 — 복강경 대 경험 치료]</sup> / 다른 기준: 이전(2013 지침까지)에는 복강경이 진단의 gold standard 였다 <sup>[1 Discussion]</sup> / 왜 다른가: 영상 진단이 발전했고 복강경과 경험 치료 사이에 증상 조절 우열 근거가 없다 <sup>[1 Discussion]</sup> / 시험에서는: KMLE · USMLE 모두 「확진」을 물으면 복강경+조직 확인(지침도 복강경 소견을 조직으로 확인하라고 한다), 「통증 환자에게 먼저 할 처치」를 물으면 영상 뒤 경험 치료로 읽는다 — 두 시험의 출제 기준 문서는 대조하지 않았다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "복강경 없이 경험 치료를 시작하는 경로",
+    "columns": [
+     "단계",
+     "하는 것",
+     "해석 한계"
+    ],
+    "rows": [
+     [
+      "증상",
+      "주기성·비주기성 증상 — 월경통·깊은 성교통·배뇨통·배변통·불임 등 <sup>[1 진단 — 증상]</sup>",
+      "증상만으로 확진하지 않는다"
+     ],
+     [
+      "진찰",
+      "질 진찰로 깊은 결절·내막종을 찾는다 <sup>[1 진단 — 진찰·영상]</sup>",
+      "정확도 낮음 — 정상이어도 영상으로 간다"
+     ],
+     [
+      "영상",
+      "초음파 또는 MRI <sup>[1 진단 — 진찰·영상]</sup>",
+      "음성이 배제 아님(표재성 복막 병변)"
+     ],
+     [
+      "생체표지자",
+      "쓰지 않는다 — 혈액·자궁내막·월경혈 표지자 <sup>[1 진단 — 진찰·영상]</sup>",
+      "청소년에서도 CA-125 로 진단·배제 ✗ <sup>[1 청소년]</sup>"
+     ],
+     [
+      "경험 치료",
+      "호르몬 피임제 또는 프로게스토겐 <sup>[1 진단 — 복강경 대 경험 치료]</sup>",
+      "장단점을 환자와 논의"
+     ],
+     [
+      "복강경",
+      "영상 음성, 경험 치료 실패·부적절 → 진단·치료 겸해 고려 <sup>[1 진단 — 진찰·영상]</sup>",
+      "조직으로 확인, 음성 조직도 완전 배제는 아님"
+     ]
+    ],
+    "note": ""
+   },
+   {
+    "title": "목표가 고르는 치료",
+    "columns": [
+     "목표",
+     "고른다",
+     "쓰지 않는다·주의"
+    ],
+    "rows": [
+     [
+      "통증(임신 계획 없음)",
+      "비스테로이드소염제 ± 호르몬: 복합 호르몬 피임제·프로게스토겐·레보노르게스트렐 자궁내장치·에토노게스트렐 이식제 <sup>[1 통증 치료 — 호르몬 치료]</sup>",
+      "GnRH 작용제·길항제는 2차, 아로마타제 억제제는 난치일 때 <sup>[1 통증 치료 — 호르몬 치료]</sup>"
+     ],
+     [
+      "통증 — 수술",
+      "수술도 선택지. 내막종은 배액·소작보다 낭종 절제 <sup>[1 통증 치료 — 수술]</sup>",
+      "수술 전 호르몬 치료는 하지 않는다 <sup>[1 통증 치료 — 수술 보조]</sup>"
+     ],
+     [
+      "임신(불임)",
+      "rASRM I/II: 수술 복강경 또는 IUI+난소 자극. 난관 손상·남성 인자·낮은 EFI·실패 → 보조생식술 <sup>[1 불임 치료 — 수술·보조생식술]</sup>",
+      "난소 억제, 임신 목적의 수술 뒤 억제, 펜톡시필린·소염제·배란 유도 밖 레트로졸 <sup>[1 불임 치료 — 호르몬·약물 치료]</sup>"
+     ],
+     [
+      "임신 — 보조생식술 전",
+      "프로토콜은 GnRH 길항제·작용제 어느 쪽도 가능 <sup>[1 불임 치료 — 수술·보조생식술]</sup>",
+      "장기 GnRH 작용제 전처치·일상적 내막종 수술은 하지 않는다 <sup>[1 불임 치료 — 보조생식술 전 수술]</sup>"
+     ],
+     [
+      "수술 뒤 바로 임신 안 함",
+      "수술 뒤 호르몬 치료 — 통증 결과 개선, 재발 예방(레보노르게스트렐 자궁내장치 52 mg 또는 복합 호르몬 피임제 18–24개월 이상) <sup>[1 재발]</sup>",
+      "임신을 시도할 때가 되면 끊는다"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "임신을 원하는 자궁내막증 — 먼저 난소 억제?",
+    "point": "억제 치료 동안은 배란이 없고, 위약·무치료와 비교해 임신율 이득이 없다 <sup>[2†]</sup>. 지침도 불임 여성에게 임신율을 위한 난소 억제를 하지 말라고 한다 <sup>[1 불임 치료 — 호르몬·약물 치료]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "수술 뒤 호르몬 억제로 임신율을 올린다?",
+    "point": "임신을 원하면 임신율만을 위한 수술 뒤 억제는 쓰지 않는다. 바로 임신을 시도하지 않을 사람에게는 통증 결과를 위해 줄 수 있다 — 임신력을 해치지 않는다 <sup>[1 불임 치료 — 호르몬·약물 치료]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "치료 전에 반드시 진단 복강경?",
+    "point": "진단 복강경과 영상+경험 치료(호르몬 피임제·프로게스토겐) 사이에 증상 조절의 우열 근거가 없어 둘 다 선택지다 <sup>[1 진단 — 복강경 대 경험 치료]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "진찰·초음파 정상 = 자궁내막증 배제?",
+    "point": "진찰의 진단 정확도는 낮고, 영상 음성도 배제하지 못한다 — 특히 표재성 복막 병변 <sup>[1 진단 — 진찰·영상]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "GnRH 작용제부터?",
+    "point": "부작용 때문에 2차다(호르몬 피임제·프로게스토겐이 듣지 않을 때). 쓸 때는 뼈 손실·저에스트로겐 증상을 막는 add-back 을 함께 <sup>[1 통증 치료 — 호르몬 치료]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "보조생식술 전에 내막종을 떼어 낸다?",
+    "point": "출생률 이득이 없고 난소 예비력을 떨어뜨릴 수 있어 일상적으로 하지 않는다. 통증이나 난포 접근성이 문제일 때만 고려 <sup>[1 불임 치료 — 보조생식술 전 수술]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "임신을 원하면 어느 갈래에서도 난소 억제(호르몬 피임제·프로게스토겐·GnRH 작용제)를 임신 목적으로 쓰지 않는다 <sup>[1 불임 치료 — 호르몬·약물 치료]</sup> <sup>[2†]</sup>.",
+   "영상이 음성이면 복강경을 고려할 수 있지만, 증상이 있으면 진단 전이라도 경험 치료로 증상을 덜어 주려 해야 한다 <sup>[1 진단 — 조기 진단]</sup>.",
+   "2차 약: GnRH 작용제(+add-back)·GnRH 길항제, 난치면 아로마타제 억제제 <sup>[1 통증 치료 — 호르몬 치료]</sup>.",
+   "통증과 임신을 함께 원하면 수술 여부를 통증·나이·이전 수술·다른 불임 인자·난소 예비력·EFI 로 정한다 <sup>[1 불임 치료 — 수술·보조생식술]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "endo-empiric",
+    "name": "경험 치료로 시작",
+    "kind": "진단·치료 경로",
+    "population": "자궁내막증이 의심되는 증상 있는 여성",
+    "statement": "진단 복강경과 영상+경험 치료(호르몬 피임제·프로게스토겐) 모두 고려할 수 있다 — 복강경은 영상 음성이거나 경험 치료가 실패·부적절할 때 [[eshre-2022: 진단 — 복강경 대 경험 치료]]",
+    "exceptions": "복강경을 하면 조직으로 확인한다 [[eshre-2022: 진단 — 진찰·영상]]",
+    "source": "eshre-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "endo-no-suppression-fertility",
+    "name": "임신 목표엔 억제 금지",
+    "kind": "치료 권고",
+    "population": "자궁내막증이 있는 불임 여성",
+    "statement": "임신율을 높이려고 난소 억제를 처방하지 않는다(강한 권고) [[eshre-2022: 불임 치료 — 호르몬·약물 치료]]",
+    "exceptions": "바로 임신하지 않을 사람의 수술 뒤 호르몬 치료는 통증 목적으로 가능 [[eshre-2022: 불임 치료 — 호르몬·약물 치료]]",
+    "source": "eshre-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "eshre-2022",
+    "org": "ESHRE Endometriosis Guideline Group (Becker CM, Bokor A, Heikinheimo O, et al)",
+    "title": "ESHRE guideline: endometriosis",
+    "kind": "guideline",
+    "citation": "Hum Reprod Open 2022;2022(2):hoac009",
+    "checked": "PMC 전문(PMC8951218, 권고 요약 논문 — 109개 권고 전문 문서는 ESHRE 웹에 따로 있고 보지 않았다)을 PubMed 도구로 읽고 대조. 쪽 번호가 없어 절 제목으로 인용. 진단: 의심 증상 목록(GPP), 진찰은 정확도 낮음·정상이어도 영상(강), 생체표지자 사용 금지(강), 초음파·MRI 사용하되 음성이 배제 아님 특히 표재성 복막 병변(강), 영상 음성·경험 치료 실패/부적절 시 복강경 고려(GPP), 복강경 소견은 조직 확인·음성 조직도 완전 배제 아님(GPP), 복강경 대 영상+경험 치료(호르몬 피임제·프로게스토겐) 우열 근거 없음 — 둘 다 고려(결론), 조기 진단 — 증상 있으면 경험 치료나 진단 뒤 증상 완화 시도. 통증: NSAID(약), 호르몬 치료(강), 복합 호르몬 피임제(강)·연속 복용(약), 프로게스토겐(강), LNG-IUS·에토노게스트렐 이식제(강), GnRH 작용제(강)·2차(GPP)·add-back(강), GnRH 길항제(약)·2차(GPP), 난치에 아로마타제 억제제(강), 수술(강)·절제 우선(약)·내막종 낭종절제(강), 수술 전 호르몬 치료 금지(강)·바로 임신 원치 않으면 수술 뒤 호르몬 치료(약). 불임: 난소 억제 처방 금지(강 ⊕⊕○○), 임신율 목적 수술 뒤 억제 금지(강), 바로 임신 안 하면 수술 뒤 호르몬 치료 가능·임신력 해치지 않음(약), 펜톡시필린·소염제·배란 유도 밖 레트로졸 금지(강), rASRM I/II 수술 복강경(약), 수술 결정 인자(GPP), I/II 에서 IUI+난소 자극(약), 난관·남성 인자·낮은 EFI·실패 시 ART(약), ART 프로토콜 무관(약), ART 전 장기 GnRH 작용제 금지(강), ART 전 I/II 수술·내막종 수술 일상 금지(강), 통증·난포 접근성이면 고려(GPP). 재발: LNG-IUS 52 mg 또는 CHC 18–24개월 이상(강). 청소년: CA-125 진단·배제 금지(강). Discussion: 예전엔 복강경이 진단 gold standard 였으나 이제 영상 음성·경험 치료 실패/부적절일 때만 권고",
+    "doi": "10.1093/hropen/hoac009",
+    "pmid": "35350465",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951218/"
+   },
+   {
+    "id": "cochrane-ovsupp",
+    "org": "Hughes E, Brown J, Collins JJ, Farquhar C, Fedorkow DM, Vandekerckhove P (Cochrane 체계적 문헌고찰)",
+    "title": "Ovulation suppression for endometriosis for women with subfertility",
+    "kind": "review",
+    "citation": "Cochrane Database Syst Rev 2007;(3):CD000155",
+    "checked": "초록만(PMC 전문 본문은 비어 있어 받지 못함). 결론 — 임신을 원하는 불임 자궁내막증 여성에서 배란 억제의 이득 근거 없음, 쉬운 말 요약 — 억제 동안 배란·월경이 멈춰 그 기간 임신력이 줄 수 있음. 수치는 판마다 다르다: PubMed 초록(2007년 검색) 위약·무치료 대비 임신 OR 0.79(0.54–1.14), 불임 부부만 0.80(0.51–1.24); PMC 초록(2009년 검색 갱신) 0.97(0.68–1.34), 불임 부부만 1.02(0.70–1.52) — 어느 쪽이든 신뢰구간이 1을 포함해 본문에는 수치를 싣지 않았다",
+    "doi": "10.1002/14651858.CD000155.pub2",
+    "pmid": "17636607",
+    "verified": "abstract",
+    "year": "2007",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7045467/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "자궁내막증이 의심되는 27세 여성, 초음파 정상, 지금 임신 계획 없음. 진단 복강경이 먼저인가?",
+    "a": "아니다. 영상+경험 치료(복합 호르몬 피임제·프로게스토겐)로 시작할 수 있다. 복강경은 경험 치료가 실패·부적절할 때 고려한다."
+   },
+   {
+    "q": "자궁내막증 불임 여성에게 6개월 GnRH 작용제로 병변을 눌러 둔 뒤 임신을 시도하게 하는 것은?",
+    "a": "권하지 않는다. 난소 억제는 임신율을 올리지 못하고, 치료 동안은 배란이 없어 임신 기회만 줄어든다."
+   },
+   {
+    "q": "수술 뒤 호르몬 치료를 주어도 되는 사람과 주지 않는 사람은?",
+    "a": "바로 임신하지 않을 사람에게는 통증·재발을 위해 준다(임신력을 해치지 않음). 임신을 원하면 임신율만을 위해 주지 않는다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "자궁내막증 의심 — 목표가 다음 처치를 정한다",
+  "geo": {
+   "title": "자궁내막증 의심 — 목표가 다음 처치를 정한다",
+   "w": 906.0,
+   "h": 465.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "주기성 골반통·월경통 —",
+      "자궁내막증 의심"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 16.0
+    },
+    {
+     "id": "img",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "진찰 + 초음파·",
+      "MRI(음성이어도 배제 아님)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 102.0
+    },
+    {
+     "id": "goal",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "지금 임신을 원하나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 188.0
+    },
+    {
+     "id": "emp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "호르몬 피임제·",
+      "프로게스토겐에 반응?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 193.4,
+     "y": 278.0
+    },
+    {
+     "id": "cont",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "경험 치료 유지 — 진단",
+      "복강경 불필요"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 385.0
+    },
+    {
+     "id": "lap",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "복강경(진단·치료) 또는 2차",
+      "약"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 385.0
+    },
+    {
+     "id": "fert",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "난관 손상·남성 인자·치료",
+      "실패?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 516.6,
+     "y": 278.0
+    },
+    {
+     "id": "art",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "보조생식술(ART)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 385.0
+    },
+    {
+     "id": "surg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "수술 복강경 또는 IUI+난소",
+      "자극"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 385.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "img",
+     "points": [
+      [
+       453.0,
+       80.0
+      ],
+      [
+       453.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "img",
+     "to": "goal",
+     "points": [
+      [
+       453.0,
+       166.0
+      ],
+      [
+       453.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "goal",
+     "to": "emp",
+     "points": [
+      [
+       420.3,
+       235.0
+      ],
+      [
+       420.3,
+       264.0
+      ],
+      [
+       291.4,
+       264.0
+      ],
+      [
+       291.4,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오(통증)"
+      ],
+      "w": 75.8,
+      "h": 17,
+      "x": 382.5,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "goal",
+     "to": "fert",
+     "points": [
+      [
+       485.7,
+       235.0
+      ],
+      [
+       485.7,
+       264.0
+      ],
+      [
+       614.6,
+       264.0
+      ],
+      [
+       614.6,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 476.2,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "emp",
+     "to": "cont",
+     "points": [
+      [
+       258.8,
+       342.0
+      ],
+      [
+       258.8,
+       371.0
+      ],
+      [
+       114.0,
+       371.0
+      ],
+      [
+       114.0,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "반응"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 243.8,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "emp",
+     "to": "lap",
+     "points": [
+      [
+       324.1,
+       342.0
+      ],
+      [
+       324.1,
+       371.0
+      ],
+      [
+       340.0,
+       371.0
+      ],
+      [
+       340.0,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "실패·부적절"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 289.4,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "fert",
+     "to": "art",
+     "points": [
+      [
+       581.9,
+       342.0
+      ],
+      [
+       581.9,
+       371.0
+      ],
+      [
+       566.0,
+       371.0
+      ],
+      [
+       566.0,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 566.9,
+      "y": 346.0
+     }
+    },
+    {
+     "from": "fert",
+     "to": "surg",
+     "points": [
+      [
+       647.2,
+       342.0
+      ],
+      [
+       647.2,
+       371.0
+      ],
+      [
+       792.0,
+       371.0
+      ],
+      [
+       792.0,
+       385.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음(I/II)"
+      ],
+      "w": 68.3,
+      "h": 17,
+      "x": 613.1,
+      "y": 346.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "주기성 골반통·월경통 — 자궁내막증 의심",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "진찰 + 초음파·MRI(음성이어도 배제 아님)"
+     }
+    ]
+   },
+   {
+    "id": "img",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "진찰 + 초음파·MRI(음성이어도 배제 아님)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "지금 임신을 원하나?"
+     }
+    ]
+   },
+   {
+    "id": "goal",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "지금 임신을 원하나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오(통증)",
+      "to": 4,
+      "toText": "호르몬 피임제·프로게스토겐에 반응?"
+     },
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "난관 손상·남성 인자·치료 실패?"
+     }
+    ]
+   },
+   {
+    "id": "emp",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "호르몬 피임제·프로게스토겐에 반응?",
+    "note": "",
+    "branches": [
+     {
+      "label": "반응",
+      "to": 6,
+      "toText": "경험 치료 유지 — 진단 복강경 불필요"
+     },
+     {
+      "label": "실패·부적절",
+      "to": 7,
+      "toText": "복강경(진단·치료) 또는 2차 약"
+     }
+    ]
+   },
+   {
+    "id": "fert",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "난관 손상·남성 인자·치료 실패?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 8,
+      "toText": "보조생식술(ART)"
+     },
+     {
+      "label": "없음(I/II)",
+      "to": 9,
+      "toText": "수술 복강경 또는 IUI+난소 자극"
+     }
+    ]
+   },
+   {
+    "id": "cont",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "경험 치료 유지 — 진단 복강경 불필요",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lap",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "복강경(진단·치료) 또는 2차 약",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "art",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "보조생식술(ART)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "surg",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "수술 복강경 또는 IUI+난소 자극",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
   "hasErrors": false
  },
  "cn.obgyn.female-sexual-dysfunction.management": {
@@ -69273,6 +74843,986 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption": {
+  "id": "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption",
+  "title": "임신 후반기 출혈 — 내진 전 초음파, 통증이 가른다",
+  "objective": "임신 후반기 질출혈에서 내진 전에 초음파로 태반 위치를 확인하고, 통증·자궁 긴장·태아 상태로 전치태반과 태반조기박리를 갈라 경과 관찰과 분만 중 처치를 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "임신 후반기 질출혈(antepartum hemorrhage) — 전치태반(placenta previa)·태반조기박리(placental abruption)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Hematology/Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "2cb94f269583cdc4",
+  "summary": [
+   "결론: 임신 후반기 출혈은 내진 전에 초음파로 태반 위치를 보고, 통증·자궁 긴장·태아 상태로 전치태반과 박리를 가른다.",
+   "시험 단서: 통증 없는 출혈 = 전치태반(placenta previa), 출혈+복통·잦은 수축·태아심박 이상 = 태반조기박리(abruption).",
+   "왜: 전치태반은 태반이 내구를 덮어 손가락이 출혈을 키우고, 박리는 탈락막 출혈의 트롬빈이 수축·DIC를 부른다.",
+   "처치: 안정된 전치태반은 36–37주 계획 제왕절개, 34주 이후 급성 박리는 산모 안정화 뒤 분만한다.",
+   "초음파 정상은 박리를 배제하지 못하고(민감도 57 %), 질 출혈량은 박리 중증도와 맞지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 내진 전 초음파, 그다음 통증인가",
+    "deep": false,
+    "html": "<ul>\n<li>태반조기박리는 전치태반과 이슬(bloody show)을 배제해야 하는 <strong>임상 진단</strong>이다 — 그래서 태반 위치가 먼저다 <sup>[1 Diagnosis]</sup>.</li>\n<li>태반 위치를 모르면 손가락 내진을 하지 않는다. 출혈의 양·근원은 초음파와 멸균 질경으로 본다 <sup>[2 Antenatal Surveillance]</sup>.</li>\n<li>위치가 정상이면 <strong>통증·수축·태아심박</strong>이 박리를 가리킨다. 전치태반의 전형은 통증 없는 출혈이다 <sup>[2 Hemorrhage]</sup> <sup>[1 Diagnosis]</sup>.</li>\n<li>처치는 진단보다 <strong>산모·태아 상태와 주수</strong>가 정한다: 불안정하면 즉시 분만, 안정된 전치태반은 조산 위험과 출혈 위험을 저울질해 기다린다 <sup>[4†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 출혈이 생기는 자리가 다르다",
+    "deep": false,
+    "html": "<ul>\n<li><strong>전치태반</strong>: 태반이 내구를 덮거나(전치태반) 20 mm 안에 있다(저위 태반) <sup>[3 Study selection]</sup>. 3삼분기에 하부 자궁 분절이 늘어나며 혈류가 적은 그 부위에서 태반이 떨어지기 쉬워 출혈 → 수축 → 조산으로 이어진다고 추정된다 <sup>[3 Introduction]</sup>. 같은 분절 성장 때문에 2삼분기의 낮은 태반은 대부분 내구에서 멀어진다 <sup>[2 Antenatal Surveillance]</sup>.</li>\n<li><strong>태반조기박리</strong>: 만성 탈락막·자궁태반 혈관병증 위에 외상·급한 감압 같은 급성 계기가 겹쳐 탈락막 혈관이 터진다 <sup>[1 Pathophysiology]</sup>. 탈락막의 조직인자가 만든 트롬빈이 자궁을 수축시키고, 혈관 안으로 많이 들어가면 소모성 응고장애(DIC)가 된다 <sup>[1 Pathophysiology]</sup>. 박리는 임신 중 DIC 의 가장 흔한 원인이다 <sup>[1 Coagulopathy]</sup>.</li>\n<li>피가 자궁 안에 고이면 출혈이 거의 없는 은닉 박리가 되고, 자궁근층으로 스미면 쿠블레르 자궁(Couvelaire uterus)이다 — 이것만으로 자궁절제 적응은 아니다 <sup>[1 Diagnosis]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 통증·자궁·태반 위치",
+    "deep": false,
+    "html": "<ul>\n<li>표가 두 질환을 나란히 놓는다. 수축 자체는 정상 진통에도 있어 비특이적이고, <strong>자연 빈수축·강직성 수축과 태아심박 이상</strong>이 박리 쪽으로 기울게 한다 <sup>[1 Diagnosis]</sup> <sup>[1 Clinical management of abruption]</sup>.</li>\n<li>해석 한계: 초음파 정상은 박리를 배제하지 못한다(민감도 57 %, 다른 연구 80 %) <sup>[1 Diagnosis]</sup>. 질 출혈량은 박리의 임상 결과와 맞지 않는다 <sup>[1 Clinical management of abruption]</sup>.</li>\n<li>전치태반 진단에는 경질 초음파가 기준이며, 같은 검사로 태반유착 스펙트럼(placenta accreta spectrum)·전치혈관(vasa previa)을 배제한다 <sup>[4†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 경과 관찰인가 분만인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>전치태반</strong>: 새 출혈이면 입원해 산모 혈역학과 태아 상태를 먼저 본다 <sup>[2 Antenatal Surveillance]</sup>. 안정되면 36–37주 계획 제왕절개, 출혈이 반복되면 더 일찍 <sup>[4†]</sup> <sup>[2 Timing and Mode of Delivery]</sup>. 37주 전 분만이 46 % 로 흔하다 <sup>[3 Synthesized findings]</sup>.</li>\n<li><strong>34주 이후 급성 박리</strong>: 경증이든 중증이든 산모 안정화 → 분만 <sup>[1 Clinical management of abruption]</sup>. 태아 상태는 산모 안정화를 시작한 뒤 평가한다 <sup>[1 Clinical management of abruption]</sup>.</li>\n<li>37주 전이고 7일 안 분만이 예상되면 산전 코르티코스테로이드를 고려하되, 34–36주 박리에서 이를 위해 분만을 미루지 않는다 <sup>[1 Clinical management of abruption]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>34–36주 박리에는 자궁수축억제제를 쓰지 않는다. 황산마그네슘은 신경 보호 목적으로 쓰지 않지만 중증 전자간증이면 경련 예방에 쓴다 <sup>[1 Clinical management of abruption]</sup>.</li>\n<li>박리 + 태아 사망은 질식 분만 우선, 이전 자궁 수술·자궁파열 위험이 크면 개별화한다 <sup>[1 Fetal death]</sup>.</li>\n<li>34주 전 박리의 경과 관찰 기준, 전치태반에서 수축억제제의 역할은 이 정리본에서 대조하지 않았다(검토 항목 — RCOG Green-top 27a 2026 개정판 전문으로 보강).</li>\n<li>임신 전반기 출혈(유산·자궁외임신)은 판단 축이 달라 이 정리본에 넣지 않았다(같은 슬롯의 별도 정리본 대상).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "전치태반과 태반조기박리 — 가르는 소견",
+    "columns": [
+     "항목",
+     "전치태반",
+     "태반조기박리"
+    ],
+    "rows": [
+     [
+      "정의",
+      "태반이 내구를 덮음. 덮지 않고 20 mm 안이면 저위 태반(low-lying placenta) <sup>[3 Introduction]</sup>",
+      "분만 전에 태반이 자궁벽에서 일찍 떨어짐 <sup>[1 Introduction]</sup>"
+     ],
+     [
+      "출혈·통증",
+      "통증 없는 출혈 <sup>[2 Hemorrhage]</sup>",
+      "질 출혈+복통, 수축이 흔함 — 출혈이 없을 수도 있다(은닉) <sup>[1 Diagnosis]</sup>"
+     ],
+     [
+      "자궁",
+      "—(읽은 출처에 자궁 긴장 기술 없음)",
+      "강직성 수축·잦은 저진폭 수축·자연 빈수축(tachysystole) <sup>[1 Clinical management of abruption]</sup> <sup>[1 Diagnosis]</sup>"
+     ],
+     [
+      "태아심박",
+      "—(읽은 출처에 특이 양상 기술 없음)",
+      "변이 소실·서맥·사인파형·후기·변동성 감속 <sup>[1 Clinical management of abruption]</sup>"
+     ],
+     [
+      "초음파",
+      "진단 기준 검사 — 경질 초음파로 내구까지 거리를 재고 태반유착·전치혈관을 배제 <sup>[4†]</sup>",
+      "태반 뒤·가장자리·융모막 아래 혈종 등. 정상이어도 배제 못 함 <sup>[1 Diagnosis]</sup>"
+     ],
+     [
+      "위험인자",
+      "이전 제왕절개(가장 큼)·보조생식·다태 <sup>[4†]</sup>, 자궁 수술·고령·다산·흡연 <sup>[2 Maternal Morbidity and Mortality]</sup>",
+      "이전 박리·만성 고혈압·전자간증·코카인·친밀한 파트너 폭력이 가장 큼, 흡연·복부 외상 <sup>[1 Epidemiology]</sup> <sup>[1 Pathophysiology]</sup>"
+     ],
+     [
+      "주된 합병증",
+      "산전 출혈 40–60 %, 산후 출혈 20–35 %, 37주 전 분만 &gt;40 % <sup>[4†]</sup>",
+      "출혈성 쇼크·파종혈관내응고(DIC)·자궁절제, 주산기 사망 <sup>[1 Adverse outcomes among pregnant people]</sup> <sup>[5†]</sup>"
+     ]
+    ],
+    "note": ""
+   },
+   {
+    "title": "처치 — 경과 관찰인가 분만인가",
+    "columns": [
+     "상황",
+     "처치",
+     "근거·주의"
+    ],
+    "rows": [
+     [
+      "전치태반 + 새 출혈",
+      "입원, 산모 혈역학·태아 상태 우선, 초음파·질경으로 출혈 평가 <sup>[2 Antenatal Surveillance]</sup>",
+      "출혈 횟수가 늘수록 예정 전 응급 분만 위험↑ <sup>[3 Interpretation and implication]</sup>"
+     ],
+     [
+      "전치태반, 출혈 없거나 멎음",
+      "36–37주 계획 제왕절개(앞쪽 태반이면 그 안에서 이르게) <sup>[4†]</sup> <sup>[2 Timing and Mode of Delivery]</sup>",
+      "출혈 양상·조기 진통이면 더 일찍 <sup>[2 Timing and Mode of Delivery]</sup>"
+     ],
+     [
+      "저위 태반(내구에서 11–20 mm)",
+      "질식 분만 시도 가능 <sup>[4†]</sup>",
+      "35주 뒤 경질 초음파 거리로 분만 방법을 정한다 <sup>[2 Timing and Mode of Delivery]</sup>"
+     ],
+     [
+      "34주 이후 급성 박리(경·중 모두)",
+      "산모 안정화 → 분만 <sup>[1 Clinical management of abruption]</sup>",
+      "굵은 정맥로·정질액, 혈색소·혈소판·PT·피브리노겐·교차시험 <sup>[1 Clinical management of abruption]</sup>"
+     ],
+     [
+      "만성 박리(조산, 안정)",
+      "입원 관찰 뒤 외래 가능 — 주 1–2회 태아 감시, 36–37주 분만 <sup>[1 Clinical management of abruption]</sup>",
+      "저자 의견 수준. 태아심박 이상이 생기면 분만 <sup>[1 Clinical management of abruption]</sup>"
+     ],
+     [
+      "박리 + 태아 사망",
+      "질식 분만 우선 <sup>[1 Fetal death]</sup>",
+      "이전 자궁 수술이 있으면 개별화 <sup>[1 Fetal death]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "출혈 원인을 보려면 내진부터?",
+    "point": "전치태반이 배제되기 전에는 손가락 내진을 하지 않는다. 출혈의 양과 근원은 초음파와 멸균 질경 검사로 본다 <sup>[2 Antenatal Surveillance]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "초음파에 태반 뒤 혈종이 없으면 박리가 아니다?",
+    "point": "3삼분기 초음파는 혈액과 태반의 에코가 비슷해 놓치기 쉽다 — 한 연구에서 민감도 57 %, 음성예측도 14 %. 박리는 임상 진단이다 <sup>[1 Diagnosis]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "질 출혈이 적으면 가벼운 박리?",
+    "point": "피가 자궁 안에 고이는 은닉 박리(concealed abruption)는 출혈이 거의 없어도 태아 사망·응고장애로 갈 수 있다. 출혈량 대신 활력징후·소변량·의식으로 중증도를 본다 <sup>[1 Diagnosis]</sup> <sup>[1 Clinical management of abruption]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "2삼분기 초음파의 전치태반 = 제왕절개 확정?",
+    "point": "중기 초음파에서는 최대 10 %에서 보이지만 분만 때는 0.5–1 % 이다 <sup>[4†]</sup>. 하부 자궁 분절이 자라며 태반이 내구에서 멀어지므로 3삼분기에 경질 초음파로 다시 잰다 <sup>[2 Antenatal Surveillance]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "박리로 태아가 이미 사망 → 제왕절개?",
+    "point": "응고장애가 동반되기 쉬워 수술 출혈을 피하려고 질식 분만을 우선한다(시도한 15명 중 14명 성공) <sup>[1 Fetal death]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "34주 이후 박리에서 수축억제제로 시간을 번다?",
+    "point": "34–36주 박리에는 자궁수축억제제를 쓰지 않고, 스테로이드를 주려고 분만을 늦추지도 않는다 <sup>[1 Clinical management of abruption]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "전치태반이 있는데 분만이 필요하면 방법은 제왕절개다(절대 적응) <sup>[4†]</sup>. 저위 태반 11–20 mm 만 질식 분만 시도 대상이다 <sup>[4†]</sup>.",
+   "태반 위치가 정상인데 통증이 없어도 은닉 박리·자연 빈수축이면 박리를 의심한다 — 초음파 정상은 배제 근거가 아니다 <sup>[1 Diagnosis]</sup>.",
+   "Rh(D) 음성 산모의 출혈에는 클라이하우어-베트케 검사로 Rh(D) 면역글로불린 용량을 정한다(박리 중증도는 알려 주지 않는다) <sup>[1 Clinical management of abruption]</sup>.",
+   "박리의 「분만」 경로는 34주 이후 근거다. 34주 전 박리의 경과 관찰 기준은 이 정리본에서 대조하지 않았다."
+  ],
+  "criteria": [
+   {
+    "id": "previa-delivery",
+    "name": "전치태반 분만 시기",
+    "kind": "치료 권고",
+    "population": "합병증 없는(무증상) 전치태반",
+    "statement": "36–37주에 계획 제왕절개 — 산모 출혈 위험과 의인성 조산의 균형 [[cassardo-2026]]. 캐나다 지침(SOGC)도 36–37주를 권한다고 종설이 인용 [[sahu-2024: Timing and Mode of Delivery]]",
+    "exceptions": "출혈이 반복되거나 조기 진통이면 더 일찍. 저위 태반 11–20 mm 는 질식 분만 시도 가능",
+    "source": "cassardo-2026",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "abruption-delivery",
+    "name": "34주 이후 급성 태반조기박리",
+    "kind": "치료 권고",
+    "population": "34주 이후 급성 태반조기박리(경·중 모두)",
+    "statement": "산모 안정화 후 분만. 37주 전이고 7일 안 분만이 예상되면 산전 코르티코스테로이드를 고려하나 34–36주에는 이를 위해 분만을 늦추지 않으며 수축억제제는 쓰지 않는다 [[brandt-2023: Clinical management of abruption]]",
+    "exceptions": "34주 전 박리의 처치는 이 정리본의 출처에서 대조하지 않았다",
+    "source": "brandt-2023",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "brandt-2023",
+    "org": "Brandt JS, Ananth CV (종설)",
+    "title": "Placental abruption at near-term and term gestations: pathophysiology, epidemiology, diagnosis, and management",
+    "kind": "review",
+    "citation": "Am J Obstet Gynecol 2023;228(5S):S1313-S1329",
+    "checked": "PMC10176440 전문(PubMed 도구)을 처음부터 끝까지 읽음. Introduction(정의) · Pathophysiology(탈락막 출혈·트롬빈의 수축 유발·DIC, 복부 외상·양막 절개 후 감압) · Epidemiology(0.6–1.2 %, 최대 위험인자 표 요약 문장) · Diagnosis(질 출혈+복통, 수축은 비특이, 전치태반·이슬 배제가 필요한 임상 진단, 초음파 민감도 57 %·음성예측도 14 %, 은닉 박리, 쿠블레르 자궁) · Clinical management(34주 이후 급성 박리는 안정화 후 분만, 출혈량≠중증도, 정맥로·검사·클라이하우어-베트케, 태아심박 양상, 스테로이드·수축억제제·마그네슘, 만성 박리 36–37주) · Coagulopathy(박리가 임신 중 DIC 의 가장 흔한 원인) · Fetal death(질식 분만 우선, 15명 중 14명). 34주 전 박리 처치는 범위 밖이라 쓰지 않았다",
+    "doi": "10.1016/j.ajog.2022.06.059",
+    "pmid": "37164498",
+    "verified": "text",
+    "year": "2023",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.ajog.2022.06.059"
+   },
+   {
+    "id": "sahu-2024",
+    "org": "Sahu SA, Shrivastava D (종설)",
+    "title": "Maternal and Perinatal Outcomes in Placenta Previa: A Comprehensive Review of Evidence",
+    "kind": "review",
+    "citation": "Cureus 2024;16(5):e59737",
+    "checked": "PMC11151188 전문(PubMed 도구)을 읽음. Hemorrhage(통증 없는 출혈, 3삼분기 출혈의 주요 원인) · Maternal Morbidity and Mortality(위험인자) · Timing and Mode of Delivery(SOGC 인용 36–37주, 출혈 양상·조기 진통이면 더 일찍, 35주 뒤 내구 거리 <2 cm 면 제왕절개율↑) · Antenatal Surveillance(태반 「이동」, 2삼분기 의심례 대부분 해소, 손가락 내진 회피, 새 출혈이면 입원, 초음파·멸균 질경으로 출혈 평가). 같은 절의 「태아 폐 성숙 확인·헤마토크리트 30 % 유지·수축억제제」 나열은 근거가 오래되어 보이고 다른 출처로 대조하지 못해 쓰지 않았다. 학술지 수준이 낮아 핵심 판단은 cassardo-2026·jansen-2022 와 겹치는 것만 썼다",
+    "doi": "10.7759/cureus.59737",
+    "pmid": "38841031",
+    "verified": "text",
+    "year": "2024",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.7759/cureus.59737"
+   },
+   {
+    "id": "jansen-2022",
+    "org": "Jansen CHJR, van Dijk CE, Kleinrouweler CE, et al (체계적 고찰·메타분석)",
+    "title": "Risk of preterm birth for placenta previa or low-lying placenta and possible preventive interventions: A systematic review and meta-analysis",
+    "kind": "review",
+    "citation": "Front Endocrinol (Lausanne) 2022;13:921220",
+    "checked": "PMC9478860 전문(PubMed 도구)을 읽음. Introduction · Study selection(전치태반 = 내구를 덮음, 저위 태반 = 덮지 않고 20 mm 안 — 현재 권고 정의로 기술) · Synthesized findings(37주 전 조산 전치태반 46 %, 저위 태반 30 %) · Interpretation and implication(산전 출혈 횟수가 예정 전 응급 분만의 독립 예측인자). 예방 중재(황체호르몬·페서리·봉축)는 근거 불충분이라 이 정리본에 넣지 않았다",
+    "doi": "10.3389/fendo.2022.921220",
+    "pmid": "36120450",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.3389/fendo.2022.921220"
+   },
+   {
+    "id": "cassardo-2026",
+    "org": "Cassardo O, Orsi M, Ossola MW, et al (종설)",
+    "title": "Cesarean delivery for placenta previa",
+    "kind": "review",
+    "citation": "Am J Obstet Gynecol 2026;233(6S):S255-S271",
+    "checked": "PubMed 초록만(전문 PMC 없음). 제왕절개 절대 적응, 분만 때 0.5–1 %·중기 초음파 최대 10 %, 이전 제왕절개가 최대 위험, 보조생식 6배, 산전 출혈 40–60 %·산후 출혈 20–35 %, 37주 전 분만 >40 %, 경질 초음파가 진단 기준(내구 거리·태반유착·전치혈관), 무증상 36–37주 계획 제왕절개(앞쪽 태반이면 이르게), 저위 태반 11–20 mm 질식 분만 시도",
+    "doi": "10.1016/j.ajog.2025.09.010",
+    "pmid": "41485820",
+    "verified": "abstract",
+    "year": "2026",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.ajog.2025.09.010"
+   },
+   {
+    "id": "tikkanen-2011",
+    "org": "Tikkanen M (종설)",
+    "title": "Placental abruption: epidemiology, risk factors and consequences",
+    "kind": "review",
+    "citation": "Acta Obstet Gynecol Scand 2011;90(2):140-149",
+    "checked": "PubMed 초록만. 임신 후반기 질출혈의 주요 원인, 0.4–1 %(북유럽 0.38–0.51 %, 미국 0.6–1.0 %), 산모 위험(출혈·수혈·응급 자궁절제·DIC·신부전), 주산기 결과(조산·질식·사산), 선진국 조산의 약 10 %·주산기 사망의 10–20 %",
+    "doi": "10.1111/j.1600-0412.2010.01030.x",
+    "pmid": "21241259",
+    "verified": "abstract",
+    "year": "2011",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1111/j.1600-0412.2010.01030.x"
+   }
+  ],
+  "checks": [
+   {
+    "q": "임신 33주, 통증 없는 선홍색 질출혈. 응급실에서 먼저 하지 말아야 할 것과 먼저 할 것은?",
+    "a": "손가락 내진을 하지 않는다. 산모 혈역학·태아 상태를 보고 초음파로 태반 위치를 확인한다(질경으로 출혈 근원 확인)."
+   },
+   {
+    "q": "태반조기박리가 의심되는데 초음파가 정상이다. 배제할 수 있나?",
+    "a": "아니다. 3삼분기 초음파는 민감도가 낮아(한 연구 57 %) 박리는 임상 진단이다 — 통증·수축·태아심박으로 판단한다."
+   },
+   {
+    "q": "박리 산모에서 출혈 양이 적다. 중증도를 무엇으로 보나?",
+    "a": "출혈량은 중증도와 맞지 않는다(은닉 출혈). 활력징후·소변량·의식, 혈소판·PT·피브리노겐(DIC)과 태아심박으로 본다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "임신 후반기 질출혈 — 태반 위치와 통증으로 가르기",
+  "geo": {
+   "title": "임신 후반기 질출혈 — 태반 위치와 통증으로 가르기",
+   "w": 906.0,
+   "h": 559.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "임신 후반기 질출혈"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "unstable",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "산모 불안정·태아 상태 이상?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 85.0
+    },
+    {
+     "id": "emerg",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "소생·수혈 준비 → 즉시 분만"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 175.0
+    },
+    {
+     "id": "us",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "태반이 내구를 덮거나 20 mm",
+      "안?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 175.0
+    },
+    {
+     "id": "usinfo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "태반 위치 모름 — 내진 말고",
+      "초음파부터"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 282.0
+    },
+    {
+     "id": "prev",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "출혈이 멎고 36주 전인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 234.6,
+     "y": 389.0
+    },
+    {
+     "id": "expect",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "입원 관찰 → 36–37주 계획",
+      "제왕절개"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 479.0
+    },
+    {
+     "id": "csec",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "제왕절개 분만"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 479.0
+    },
+    {
+     "id": "pain",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "복통·압통·잦은 수축이 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 475.4,
+     "y": 389.0
+    },
+    {
+     "id": "abr",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "태반조기박리 — 안정화 후",
+      "분만·DIC 검사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 479.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 원인 — 질경으로 확인"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 694.0,
+     "y": 479.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "unstable",
+     "points": [
+      [
+       340.0,
+       63.0
+      ],
+      [
+       340.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "unstable",
+     "to": "emerg",
+     "points": [
+      [
+       307.3,
+       132.0
+      ],
+      [
+       307.3,
+       161.0
+      ],
+      [
+       227.0,
+       161.0
+      ],
+      [
+       227.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "unstable",
+     "to": "us",
+     "points": [
+      [
+       372.7,
+       132.0
+      ],
+      [
+       372.7,
+       161.0
+      ],
+      [
+       453.0,
+       161.0
+      ],
+      [
+       453.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "us",
+     "to": "prev",
+     "points": [
+      [
+       404.0,
+       239.0
+      ],
+      [
+       404.0,
+       268.0
+      ],
+      [
+       339.0,
+       268.0
+      ],
+      [
+       339.0,
+       375.0
+      ],
+      [
+       300.0,
+       375.0
+      ],
+      [
+       300.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 394.5,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "us",
+     "to": "pain",
+     "points": [
+      [
+       502.0,
+       239.0
+      ],
+      [
+       502.0,
+       268.0
+      ],
+      [
+       567.0,
+       268.0
+      ],
+      [
+       567.0,
+       375.0
+      ],
+      [
+       606.0,
+       375.0
+      ],
+      [
+       606.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 481.5,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "us",
+     "to": "usinfo",
+     "points": [
+      [
+       453.0,
+       239.0
+      ],
+      [
+       453.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "미확인"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 432.5,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "usinfo",
+     "to": "prev",
+     "points": [
+      [
+       420.3,
+       346.0
+      ],
+      [
+       420.3,
+       375.0
+      ],
+      [
+       365.3,
+       375.0
+      ],
+      [
+       365.3,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "전치·저위"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 391.1,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "usinfo",
+     "to": "pain",
+     "points": [
+      [
+       485.7,
+       346.0
+      ],
+      [
+       485.7,
+       375.0
+      ],
+      [
+       540.7,
+       375.0
+      ],
+      [
+       540.7,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상 위치"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 457.8,
+      "y": 350.0
+     }
+    },
+    {
+     "from": "prev",
+     "to": "expect",
+     "points": [
+      [
+       300.0,
+       436.0
+      ],
+      [
+       300.0,
+       465.0
+      ],
+      [
+       114.0,
+       465.0
+      ],
+      [
+       114.0,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 290.5,
+      "y": 440.0
+     }
+    },
+    {
+     "from": "prev",
+     "to": "csec",
+     "points": [
+      [
+       365.3,
+       436.0
+      ],
+      [
+       365.3,
+       465.0
+      ],
+      [
+       340.0,
+       465.0
+      ],
+      [
+       340.0,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 344.8,
+      "y": 440.0
+     }
+    },
+    {
+     "from": "pain",
+     "to": "abr",
+     "points": [
+      [
+       540.7,
+       436.0
+      ],
+      [
+       540.7,
+       465.0
+      ],
+      [
+       566.0,
+       465.0
+      ],
+      [
+       566.0,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 525.7,
+      "y": 440.0
+     }
+    },
+    {
+     "from": "pain",
+     "to": "other",
+     "points": [
+      [
+       606.0,
+       436.0
+      ],
+      [
+       606.0,
+       465.0
+      ],
+      [
+       792.0,
+       465.0
+      ],
+      [
+       792.0,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 591.0,
+      "y": 440.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "임신 후반기 질출혈",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "산모 불안정·태아 상태 이상?"
+     }
+    ]
+   },
+   {
+    "id": "unstable",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "산모 불안정·태아 상태 이상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "소생·수혈 준비 → 즉시 분만"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "태반이 내구를 덮거나 20 mm 안?"
+     }
+    ]
+   },
+   {
+    "id": "emerg",
+    "num": 3,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "소생·수혈 준비 → 즉시 분만",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "us",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "태반이 내구를 덮거나 20 mm 안?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "출혈이 멎고 36주 전인가?"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "복통·압통·잦은 수축이 있나?"
+     },
+     {
+      "label": "미확인",
+      "to": 5,
+      "toText": "태반 위치 모름 — 내진 말고 초음파부터"
+     }
+    ]
+   },
+   {
+    "id": "usinfo",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "태반 위치 모름 — 내진 말고 초음파부터",
+    "note": "",
+    "branches": [
+     {
+      "label": "전치·저위",
+      "to": 6,
+      "toText": "출혈이 멎고 36주 전인가?"
+     },
+     {
+      "label": "정상 위치",
+      "to": 7,
+      "toText": "복통·압통·잦은 수축이 있나?"
+     }
+    ]
+   },
+   {
+    "id": "prev",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "출혈이 멎고 36주 전인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "입원 관찰 → 36–37주 계획 제왕절개"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "제왕절개 분만"
+     }
+    ]
+   },
+   {
+    "id": "pain",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "복통·압통·잦은 수축이 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 10,
+      "toText": "태반조기박리 — 안정화 후 분만·DIC 검사"
+     },
+     {
+      "label": "없음",
+      "to": 11,
+      "toText": "다른 원인 — 질경으로 확인"
+     }
+    ]
+   },
+   {
+    "id": "expect",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "입원 관찰 → 36–37주 계획 제왕절개",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "csec",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "제왕절개 분만",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "abr",
+    "num": 10,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "태반조기박리 — 안정화 후 분만·DIC 검사",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 원인 — 질경으로 확인",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.obgyn.menopause.hormone-therapy-decision": {
   "id": "cn.obgyn.menopause.hormone-therapy-decision",
   "title": "폐경 호르몬 치료 — 증상·나이·금기로 정한다",
@@ -72525,6 +79075,892 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": {
+  "id": "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step",
+  "title": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
+  "objective": "산후 출혈에서 자궁 촉진과 진찰로 원인(자궁이완·산도 손상·잔류 태반·응고장애)을 가르고, 자궁이완이면 자궁 마사지·정맥 옥시토신과 3시간 안 트라넥삼산에서 시작해 처치 단계를 올리는 순서를 고른다",
+  "objectiveKind": "치료",
+  "condition": "산후 출혈(postpartum hemorrhage, PPH)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Hematology/Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "fb5eaed93fcf5bcf",
+  "summary": [
+   "결론: 공통 처치(정맥로·결정질액·트라넥삼산)와 함께 자궁을 만져 이완이면 마사지+정맥 옥시토신, 아니면 다른 원인을 찾는다.",
+   "시험 단서: 출산 직후 출혈 + 물렁한 자궁 = 자궁이완(uterine atony). 쇼크 지수(shock index) >0.9 는 불안정 경고.",
+   "왜: 원인마다 멈추는 수단이 달라 촉진이 첫 갈림길이고, 출산 직후 섬유소용해가 커서 트라넥삼산은 이를수록 듣는다.",
+   "트라넥삼산 1 g 정맥 10분 — 진단 즉시, 출산 3시간 안, 원인·분만 방식과 무관. 3시간 뒤에는 이득이 보이지 않았다.",
+   "2차 수축제 금기: 에르고메트린은 고혈압, 카보프로스트는 천식. 풍선 압박은 잔류 조직·파열을 배제한 뒤."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 공통 처치와 자궁 촉진이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>산후 출혈의 치료는 <strong>원인에 맞추고, 덜 침습적인 것부터 빠르게 올린다</strong> — 원인은 자궁이완·산도 손상·잔류 태반·응고장애다 <sup>[1 6.2]</sup>.</li>\n<li>원인을 가르는 동안에도 공통 처치(굵은 정맥로 2개·산소·감시·결정질액·저체온 예방)는 미루지 않는다 <sup>[1 6.2]</sup>. 트라넥삼산도 원인과 무관하게 이 단계에 들어간다 <sup>[1 Box 6]</sup>.</li>\n<li>첫 갈림길은 <strong>배 위로 만진 자궁의 긴장도</strong>다 — 산후 긴장도 평가는 이완을 일찍 찾으려고 모든 산모에게 권고된다 <sup>[1 2.1]</sup>. 물렁하면 마사지와 정맥 옥시토신, 단단하면 수축제를 늘릴 일이 아니라 다른 원인을 찾는다.</li>\n<li>활력징후는 늦게 변한다 — 대개 1000 mL 넘게 잃은 뒤에야 바뀌므로, 정상 혈압은 안심 근거가 아니다. 쇼크 지수 &gt;0.9 가 경고다 <sup>[1 5 · Box 2]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 출산 직후 섬유소용해와 이완",
+    "deep": false,
+    "html": "<ul>\n<li>이완은 자궁이 수축하지 못하는 상태라 처치도 수축을 되돌리는 쪽(마사지·수축제)이다 <sup>[1 6.2]</sup>. 긴 진통·옥시토신 장기 사용·융모양막염·다산·전신마취·과다 신전(다태·양수과다·거대아)이 이완을 예고한다 <sup>[1 3.4]</sup>.</li>\n<li>출산 1시간 안에 조직 플라스미노겐 활성화인자(tPA)가 두 배로 올랐다가 떨어진다 <sup>[2 Introduction]</sup>. 큰 산후 출혈 초기에는 과섬유소용해와 피브리노겐 고갈이 흔해 <sup>[1 8]</sup>, 플라스미노겐이 섬유소에 붙는 것을 막는 트라넥삼산은 <strong>일찍 줄수록</strong> 이득이 크다.</li>\n<li>그래서 시간이 기준이다: 3시간 안 투여는 출혈 사망을 줄였고(RR 0.69), 3시간 뒤에는 줄지 않았다(RR 1.07) <sup>[2 Results]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 네 가지 원인(4T)",
+    "deep": false,
+    "html": "<ul>\n<li>표가 원인별 단서와 멈추는 방향을 정리한다. 산도 손상은 전체의 15~20 % 이고 급속 분만·기구 분만 뒤에 생긴다 <sup>[1 3.4]</sup>.</li>\n<li>해석 한계: 자궁이 물렁해도 다른 원인이 겹칠 수 있다 — 수축제에 반응이 없으면 풍선 압박 전에 잔류 조직·자궁 파열·질/자궁경부 열상을 배제한다 <sup>[1 6.2]</sup>. 출혈량 추정은 부정확하므로 전신 상태를 함께 본다 <sup>[1 3.3]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 자궁이완에서 단계를 올리는 순서",
+    "deep": false,
+    "html": "<ul>\n<li>1차는 자궁 마사지 + 정맥 옥시토신 단독이다 <sup>[1 2.2]</sup>. 반응이 없으면 2차 수축제로, 그래도 계속되면 풍선 압박 → 색전술·수술로 올린다(표).</li>\n<li>2차 수축제는 금기부터 본다 — 에르고메트린은 고혈압, 카보프로스트는 천식 <sup>[1 표 6]</sup>.</li>\n<li>재평가: 처치마다 출혈이 멎는지, 쇼크 지수가 내려가는지 본다. 트라넥삼산은 30분 뒤에도 계속되거나 24시간 안에 다시 나면 한 번 더 준다 <sup>[1 2.2]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>결정질액은 교질액보다 우선한다 <sup>[1 2.2]</sup>. 저혈압 소생의 목표는 수축기 80~90 mmHg(평균 50~60) 이고, 지혈 소생에서는 1:1:1 수혈을 일찍 시작한다 <sup>[1 12]</sup>.</li>\n<li>질 분만 뒤 이완성 출혈에 자궁 거즈 충전은 권고하지 않는다 <sup>[1 2.2]</sup>.</li>\n<li>트라넥삼산은 자궁절제를 줄이지 못했다(RR 1.02) — 자궁절제는 응고장애가 오기 전에 결정한다 <sup>[2 Results]</sup> <sup>[1 6.2]</sup>.</li>\n<li>옥시토신·2차 수축제의 용량은 지침마다 달라 외우지 않는다(표 6 참조). 산후 감염·수유는 이 정리본의 범위가 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 트라넥삼산을 언제 시작하나</strong> — 시험 기준: 진단 즉시, 원인과 무관, 출산 3시간 안 <sup>[1 2.2 · Box 6]</sup> / 다른 기준: ACOG 2017 은 초기 약물 치료가 실패할 때 고려(빠를수록 낫다고 덧붙임) <sup>[1 표 6]</sup>, 2012 WHO 는 수축제 실패·외상성 출혈일 때 권고했다 <sup>[2 Introduction]</sup> / 왜 다른가: 2017 WOMAN 결과 전후의 지침 시점 차이 — WOMAN 뒤 WHO·FIGO 가 조기 투여로 바꿨다 <sup>[1 6.2]</sup> / 시험에서는: KMLE · USMLE 모두 「3시간 안, 수축제와 함께」가 안전하다. 2017 뒤 ACOG 개정 여부는 원문을 확인하지 않았다(확인필요).</li>\n<li><strong>Z2 맥락 · 산후 출혈의 출혈량 기준</strong> — 시험 기준: 질 500 mL 초과·제왕절개 1000 mL 초과(24시간 안) <sup>[1 3.3]</sup> / 다른 기준: ACOG 2017 은 분만 방식과 무관하게 1000 mL 이상 또는 저혈량 징후, RCOG 는 500~1000 mL 경도·1000 mL 초과 중증 <sup>[1 3.3]</sup> / 왜 다른가: 출혈량 추정이 부정확해 기관마다 임상 징후를 넣는 방식이 다르다 <sup>[1 3.3]</sup> / 시험에서는: USMLE 는 ACOG 정의를 쓸 가능성이 크다 · KMLE 의 국내 기준 문구는 확인하지 않았다(확인필요).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "산후 출혈의 원인 — 무엇으로 의심하고 무엇이 멈추나",
+    "columns": [
+     "원인",
+     "의심하는 단서",
+     "멈추는 방향"
+    ],
+    "rows": [
+     [
+      "자궁이완(Tone)",
+      "자궁 긴장 저하(배 위 촉진) <sup>[1 2.1]</sup>\n위험: 긴 진통·옥시토신 사용, 융모양막염, 다산, 전신마취, 과다 신전(다태·양수과다·거대아) <sup>[1 3.4]</sup>",
+      "마사지 + 수축제 → 풍선 압박 → 색전술·수술 <sup>[1 2.2]</sup>"
+     ],
+     [
+      "산도 손상(Trauma)",
+      "급속 분만·기구 분만 뒤\n회음·자궁경부 열상, 회음 혈종, 회음절개, 자궁 파열 — 전체의 15~20 % <sup>[1 3.4]</sup>",
+      "손상 부위 처치(봉합 등) — 수축제로 멈추지 않는다"
+     ],
+     [
+      "잔류 태반·조직(Tissue)",
+      "부태반(succenturiate placenta), 이전 자궁 기구 조작 <sup>[1 3.4]</sup>",
+      "잔류 조직 제거 — 풍선 압박 전에 배제 <sup>[1 2.2]</sup>"
+     ],
+     [
+      "응고장애(Thrombin)",
+      "선천: 폰빌레브란트병·혈우병·ITP\n후천: 항응고제, 태반조기박리·중증 전자간증·자궁 내 태아사망·패혈증·양수색전 뒤 DIC <sup>[1 3.4]</sup>",
+      "혈액 성분 보충 — 대량 수혈 중 피브리노겐 목표 150~200 mg/dL <sup>[1 12]</sup>"
+     ]
+    ],
+    "note": ""
+   },
+   {
+    "title": "자궁이완성 출혈 — 처치 단계",
+    "columns": [
+     "단계",
+     "처치",
+     "조건·주의"
+    ],
+    "rows": [
+     [
+      "공통(모든 원인)",
+      "도움 요청, 굵은 정맥로 2개, 산소, 감시, 결정질액(교질액보다 우선), 저체온 예방 <sup>[1 6.2 · 2.2]</sup>\n트라넥삼산 1 g 정맥 10분(1 mL/분) <sup>[1 Box 6]</sup>",
+      "트라넥삼산: 진단 즉시, 출산 3시간 안, 30분 뒤 계속되거나 24시간 안 재출혈이면 1 g 한 번 더 <sup>[1 2.2]</sup>"
+     ],
+     [
+      "1차",
+      "자궁 마사지 + 정맥 옥시토신(1차 수축제) <sup>[1 2.2]</sup>",
+      "양손 자궁 압박·대동맥 외부 압박은 처치까지 버티는 임시 수단 <sup>[1 2.2]</sup>"
+     ],
+     [
+      "2차 수축제",
+      "근주 에르고메트린, 옥시토신-에르고메트린 복합제, 프로스타글란딘(설하 미소프로스톨 800 µg 포함) <sup>[1 2.2]</sup>",
+      "에르고메트린 — 고혈압 금기\n카보프로스트 — 천식 금기·주의 <sup>[1 표 6]</sup>"
+     ],
+     [
+      "수축제 불응",
+      "자궁 내 풍선 압박(UBT) <sup>[1 2.2]</sup>\n비공기식 항쇼크 의복(NASG)은 임시 수단",
+      "잔류 조직·자궁 파열 배제 뒤 <sup>[1 2.2]</sup>\n질 분만 뒤 자궁 거즈 충전은 권고하지 않음"
+     ],
+     [
+      "풍선도 실패",
+      "자궁동맥 색전술(장비·인력 있을 때), 압박 봉합, 자궁·내장골동맥 결찰, 자궁절제 <sup>[1 2.2]</sup>",
+      "응고장애·장기 손상이 오기 전에 — 자궁절제는 늦기보다 이르게 <sup>[1 6.2]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "트라넥삼산은 수축제가 실패한 뒤?",
+    "point": "FIGO 는 산후 출혈을 진단하면 원인·분만 방식과 무관하게 3시간 안에 바로 주라고 권고한다 <sup>[1 2.2 · 8.1 · Box 6]</sup>. WOMAN 시험에서 3시간 안 투여는 출혈 사망을 줄였고(RR 0.69) 3시간 뒤에는 줄지 않았다(RR 1.07) <sup>[2 Results]</sup>.",
+    "exception": "미국 ACOG 2017 은 초기 약물 치료가 실패할 때 고려한다고 적었다(시험 쟁점 Z1).",
+    "cites": ""
+   },
+   {
+    "contrast": "혈압이 아직 정상이면 출혈이 크지 않다?",
+    "point": "건강한 산모는 보상 기전 때문에 대개 1000 mL 넘게 잃기 전까지 활력징후가 변하지 않는다. 맥박/수축기 혈압인 쇼크 지수가 &gt;0.9 이면 불안정 경고로 본다 <sup>[1 5 · Box 2]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "자궁이 단단한데 출혈이 계속 — 수축제를 더?",
+    "point": "자궁 긴장도 평가는 이완을 찾는 진찰이다 <sup>[1 2.1]</sup>. 풍선 압박도 잔류 조직·자궁 파열·질/자궁경부 열상을 배제한 뒤에 쓰므로 <sup>[1 6.2]</sup>, 이완으로 설명되지 않는 출혈은 다른 원인을 찾는다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "에르고메트린·카보프로스트는 누구에게나 2차 약?",
+    "point": "에르고메트린은 고혈압에 금기, 카보프로스트는 천식에 금기 또는 주의다(RCOG 2016 · ACOG 2017 정리) <sup>[1 표 6]</sup>. 전자간증 산모의 이완성 출혈에서 고르면 틀린다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "자궁 마사지 — 예방에도 치료에도?",
+    "point": "치료로는 권고되지만, 예방 옥시토신을 맞은 산모에게 지속 자궁 마사지를 예방 목적으로 하는 것은 권고하지 않는다 <sup>[1 2.1 · 2.2]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "트라넥삼산이 자궁절제를 줄인다?",
+    "point": "WOMAN 시험에서 줄인 것은 출혈 사망(RR 0.81)과 지혈 개복(RR 0.64)이고, 자궁절제(RR 1.02)와 전체 사망·자궁절제 복합 결과는 줄지 않았다 <sup>[2 Results]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "트라넥삼산은 원인과 무관하게 진단 즉시 — 출산 3시간 안, 1 g 정맥 10분, 30분 뒤 계속·24시간 안 재출혈이면 1 g 추가 <sup>[1 Box 6]</sup>.",
+   "2차 수축제: 근주 에르고메트린(고혈압 금기), 옥시토신-에르고메트린, 설하 미소프로스톨 800 µg, 카보프로스트(천식 금기·주의) <sup>[1 2.2 · 표 6]</sup>.",
+   "풍선 압박은 잔류 조직·자궁 파열을 배제한 뒤. 양손 압박·대동맥 압박·NASG 는 처치까지 버티는 임시 수단 <sup>[1 2.2]</sup>.",
+   "수술 단계는 압박 봉합·자궁/내장골동맥 결찰·자궁절제 — 응고장애가 오기 전에 결정한다 <sup>[1 2.2 · 6.2]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "pph-def-classic",
+    "name": "산후 출혈 정의 — 고전적 정의",
+    "kind": "진단 기준",
+    "population": "출산 후 24시간 안",
+    "statement": "질 분만 500 mL 초과, 제왕절개 1000 mL 초과 [[figo-2022: 3.3]] — WOMAN 시험의 임상 진단도 같은 양 또는 혈역학을 해칠 만한 출혈이었다 [[woman-2017: Methods]]",
+    "exceptions": "출혈량 추정은 부정확하다 — 전신 상태를 함께 본다 [[figo-2022: 3.3]]",
+    "source": "figo-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pph-def-acog",
+    "name": "산후 출혈 정의 — ACOG 2017",
+    "kind": "진단 기준",
+    "population": "출산 후 24시간 안, 분만 방식과 무관",
+    "statement": "누적 출혈 1000 mL 이상, 또는 저혈량 징후·증상을 동반한 출혈 [[figo-2022: 3.3]]",
+    "exceptions": "FIGO 문서가 옮긴 정의다(ACOG 원문은 읽지 않았다)",
+    "source": "figo-2022",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   },
+   {
+    "id": "pph-def-rcog",
+    "name": "산후 출혈 정의 — RCOG",
+    "kind": "진단 기준",
+    "population": "출산 후",
+    "statement": "출혈량으로 나눈다 — 경도(minor) 500~1000 mL, 중증(major) 1000 mL 초과 [[figo-2022: 3.3]]",
+    "exceptions": "FIGO 문서가 옮긴 정의다(RCOG Green-top 52 원문은 읽지 않았다)",
+    "source": "figo-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pph-txa",
+    "name": "트라넥삼산 투여",
+    "kind": "치료 권고",
+    "population": "질 분만·제왕절개 뒤 임상적으로 진단한 산후 출혈",
+    "statement": "진단하는 대로, 출산 3시간 안에, 원인과 무관하게 1 g(100 mg/mL)을 1 mL/분(10분)으로 정맥 주사하고, 30분 뒤에도 출혈이 계속되거나 24시간 안에 다시 시작되면 1 g 을 더 준다. 수축제·비수술·수술 처치에 더해서 쓴다 [[figo-2022: 2.2 · 8.1 · 12]]",
+    "exceptions": "3시간 넘으면 이득의 근거가 없다 [[figo-2022: 8.1]] — WOMAN 에서 3시간 뒤 RR 1.07 [[woman-2017: Results]]. 금기는 이 약에 대한 과민반응 [[figo-2022: 8.4]]. 1 mL/분보다 빠르면 저혈압",
+    "source": "figo-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pph-uterotonic",
+    "name": "치료 수축제 순서",
+    "kind": "치료 권고",
+    "population": "산후 출혈 치료",
+    "statement": "정맥 옥시토신 단독이 1차 수축제. 정맥 옥시토신이 없거나 듣지 않으면 근주 에르고메트린, 옥시토신-에르고메트린 고정 복합제, 프로스타글란딘(설하 미소프로스톨 800 µg 포함) [[figo-2022: 2.2]]",
+    "exceptions": "예방으로 미소프로스톨 600 µg 을 먹은 산모에게 치료 800 µg 을 더하는 안전성·효과 근거는 없다 [[figo-2022: 2.2]]. 옥시토신 용량은 지침마다 다르다 [[figo-2022: 표 6]]",
+    "source": "figo-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pph-shock-index",
+    "name": "쇼크 지수",
+    "kind": "중증도 지표",
+    "population": "산후 출혈 산모",
+    "statement": "맥박/수축기 혈압. 산과 정상은 0.7~0.9(비임신 0.5~0.7), >0.9 이면 혈역학 불안정 경고, ≥0.9 는 사망 증가, >1 은 수혈 가능성 증가와 연관 [[figo-2022: 5 · Box 2]]",
+    "exceptions": "개별 활력징후는 늦게 변한다(대개 1000 mL 넘게 잃은 뒤) [[figo-2022: 5]]",
+    "source": "figo-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "figo-2022",
+    "org": "FIGO Safe Motherhood and Newborn Health Committee (Escobar MF 외)",
+    "title": "FIGO recommendations on the management of postpartum hemorrhage 2022",
+    "kind": "guideline",
+    "citation": "Int J Gynaecol Obstet 2022;157 Suppl 1:3-50",
+    "checked": "PMC 전문(PMC9313855) 대조. 2.1 예방 권고(예방 옥시토신 뒤 지속 마사지 비권고, 산후 자궁 긴장도 평가 권고, 에르고메트린 전 고혈압 배제) · 2.2 치료 권고 전부(정맥 옥시토신 1차, 2차 수축제·설하 미소프로스톨 800 µg, 결정질액 우선, 트라넥삼산 3시간 안·1 g·재투여 조건, 마사지, 양손 압박·대동맥 압박 임시, 풍선 압박은 잔류 조직·파열 배제 뒤, NASG 임시, 질 분만 뒤 거즈 충전 비권고, 색전술, 수술 단계) · 3.3 정의(고전적 500/1000 mL·24시간, ACOG 2017 ≥1000 mL 또는 저혈량 징후, RCOG minor/major) · 3.4 4T 원인과 위험 인자(외상 15~20 %) · 5 쇼크 지수(0.7~0.9, >0.9, >1) · 6.2 지침 비교(원인별 처치·덜 침습적인 것부터, 초기 공통 조치, 자궁절제 sooner rather than later) · 표 6(RCOG·ACOG 의 에르고메트린 고혈압 금기, 카보프로스트 천식 금기·주의, ACOG 의 트라넥삼산 「초기 약물 치료 실패 때 고려」) · 8 트라넥삼산(기전, 3시간 뒤 근거 없음, 1 mL/분 초과 시 저혈압, 금기 과민반응) · 12 핵심 진술(피브리노겐 150~200 mg/dL). 표 2 는 추출 글에서 행·열이 섞여 기관별 정의는 3.3 본문으로만 확인했다. 4T 각 원인의 진찰 소견(태반 결손 확인 등)은 이 문서에 없다",
+    "doi": "10.1002/ijgo.14116",
+    "pmid": "35297039",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9313855/"
+   },
+   {
+    "id": "woman-2017",
+    "org": "WOMAN Trial Collaborators (무작위 이중맹검 위약대조 시험)",
+    "title": "Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage (WOMAN)",
+    "kind": "trial",
+    "citation": "Lancet 2017;389(10084):2105-2116",
+    "checked": "PMC 전문(PMC5446563) 대조. Methods — 임상 진단(질 500 mL·제왕 1000 mL 초과 또는 혈역학 위협), 1 g 정맥 약 1 mL/분, 30분 뒤 계속·24시간 안 재출혈 시 1 g 추가. Results — 20 060명, 출혈 사망 RR 0.81(0.65–1.00), 3시간 안 RR 0.69(0.52–0.91), 3시간 뒤 RR 1.07(0.76–1.51), 분만 방식·원인별 이질성 없음, 자궁절제 RR 1.02, 지혈 개복 RR 0.64, 혈전색전 차이 없음. Introduction/Discussion — 출산 1시간 안 tPA 가 두 배로 오른 뒤 떨어짐, 2012 WHO 는 수축제 실패·외상성 출혈일 때 권고했었고 저자들은 수축제와 함께 조기 투여를 제안",
+    "doi": "10.1016/S0140-6736(17)30638-4",
+    "pmid": "28456509",
+    "verified": "text",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5446563/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "질 분만 직후 출혈이 계속되고 배 위로 만진 자궁이 물렁하다. 첫 처치 두 가지와 함께 줄 약은?",
+    "a": "자궁 마사지와 정맥 옥시토신. 원인과 무관하게 출산 3시간 안이면 트라넥삼산 1 g 정맥 10분을 함께 준다."
+   },
+   {
+    "q": "산후 출혈 4시간 뒤에 트라넥삼산을 처음 고려한다. 근거는?",
+    "a": "약하다. WOMAN 에서 3시간 뒤 투여는 출혈 사망을 줄이지 못했고(RR 1.07), FIGO 도 3시간 뒤 이득의 근거가 없다고 적는다."
+   },
+   {
+    "q": "중증 전자간증 산모의 이완성 출혈에서 옥시토신에 반응이 없다. 피할 2차 수축제는?",
+    "a": "에르고메트린(메틸에르고메트린) — 고혈압에 금기다. 미소프로스톨이나 카보프로스트(천식이 없으면)를 쓴다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "산후 출혈 — 공통 처치, 자궁 촉진, 단계 올리기",
+  "geo": {
+   "title": "산후 출혈 — 공통 처치, 자궁 촉진, 단계 올리기",
+   "w": 567.0,
+   "h": 777.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "출산 후 과다 출혈 — 산후",
+      "출혈 진단"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "first",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "도움 요청·정맥로·결정질액·",
+      "트라넥삼산"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "tone",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "배 위로 만진 자궁이",
+      "물렁한가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 188.0
+    },
+    {
+     "id": "toneask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "자궁 긴장도 미평가 — 배",
+      "위로 촉진"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 315.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "단단한 자궁 — 열상·잔류",
+      "조직·응고장애(표)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 422.0
+    },
+    {
+     "id": "atony",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "자궁 마사지 + 정맥 옥시토신"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 422.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "출혈이 멎었나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 508.0
+    },
+    {
+     "id": "second",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "2차 수축제 — 금기(고혈압·",
+      "천식) 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 598.0
+    },
+    {
+     "id": "stop",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "멎음 — 자궁 수축·출혈량·",
+      "쇼크 지수 감시"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 598.0
+    },
+    {
+     "id": "escalate",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "불응 — 풍선 압박 → 색전술·",
+      "수술"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 697.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "first",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "first",
+     "to": "tone",
+     "points": [
+      [
+       340.0,
+       166.0
+      ],
+      [
+       340.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "tone",
+     "to": "atony",
+     "points": [
+      [
+       291.0,
+       252.0
+      ],
+      [
+       291.0,
+       301.0
+      ],
+      [
+       226.0,
+       301.0
+      ],
+      [
+       226.0,
+       408.0
+      ],
+      [
+       194.3,
+       408.0
+      ],
+      [
+       194.3,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "물렁함"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 270.5,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "tone",
+     "to": "other",
+     "points": [
+      [
+       389.0,
+       252.0
+      ],
+      [
+       389.0,
+       301.0
+      ],
+      [
+       454.0,
+       301.0
+      ],
+      [
+       454.0,
+       408.0
+      ],
+      [
+       485.7,
+       408.0
+      ],
+      [
+       485.7,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "단단함"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 368.5,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "tone",
+     "to": "toneask",
+     "points": [
+      [
+       340.0,
+       252.0
+      ],
+      [
+       340.0,
+       315.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "평가 안 함"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 310.3,
+      "y": 276.0
+     }
+    },
+    {
+     "from": "toneask",
+     "to": "atony",
+     "points": [
+      [
+       307.3,
+       379.0
+      ],
+      [
+       307.3,
+       408.0
+      ],
+      [
+       259.7,
+       408.0
+      ],
+      [
+       259.7,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "물렁하면"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 281.3,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "toneask",
+     "to": "other",
+     "points": [
+      [
+       372.7,
+       379.0
+      ],
+      [
+       372.7,
+       408.0
+      ],
+      [
+       420.3,
+       408.0
+      ],
+      [
+       420.3,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "단단하면"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 346.7,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "atony",
+     "to": "resp",
+     "points": [
+      [
+       227.0,
+       469.0
+      ],
+      [
+       227.0,
+       508.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "stop",
+     "points": [
+      [
+       194.3,
+       555.0
+      ],
+      [
+       194.3,
+       584.0
+      ],
+      [
+       114.0,
+       584.0
+      ],
+      [
+       114.0,
+       598.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 559.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "second",
+     "points": [
+      [
+       259.7,
+       555.0
+      ],
+      [
+       259.7,
+       584.0
+      ],
+      [
+       340.0,
+       584.0
+      ],
+      [
+       340.0,
+       598.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 559.0
+     }
+    },
+    {
+     "from": "second",
+     "to": "escalate",
+     "points": [
+      [
+       340.0,
+       662.0
+      ],
+      [
+       340.0,
+       697.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그래도 계속"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 306.6,
+      "y": 666.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "출산 후 과다 출혈 — 산후 출혈 진단",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "도움 요청·정맥로·결정질액·트라넥삼산"
+     }
+    ]
+   },
+   {
+    "id": "first",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "도움 요청·정맥로·결정질액·트라넥삼산",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "배 위로 만진 자궁이 물렁한가?"
+     }
+    ]
+   },
+   {
+    "id": "tone",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "배 위로 만진 자궁이 물렁한가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "물렁함",
+      "to": 5,
+      "toText": "자궁 마사지 + 정맥 옥시토신"
+     },
+     {
+      "label": "단단함",
+      "to": 6,
+      "toText": "단단한 자궁 — 열상·잔류 조직·응고장애(표)"
+     },
+     {
+      "label": "평가 안 함",
+      "to": 4,
+      "toText": "자궁 긴장도 미평가 — 배 위로 촉진"
+     }
+    ]
+   },
+   {
+    "id": "toneask",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "자궁 긴장도 미평가 — 배 위로 촉진",
+    "note": "",
+    "branches": [
+     {
+      "label": "물렁하면",
+      "to": 5,
+      "toText": "자궁 마사지 + 정맥 옥시토신"
+     },
+     {
+      "label": "단단하면",
+      "to": 6,
+      "toText": "단단한 자궁 — 열상·잔류 조직·응고장애(표)"
+     }
+    ]
+   },
+   {
+    "id": "atony",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "자궁 마사지 + 정맥 옥시토신",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "출혈이 멎었나?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "단단한 자궁 — 열상·잔류 조직·응고장애(표)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "resp",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "출혈이 멎었나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "멎음 — 자궁 수축·출혈량·쇼크 지수 감시"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "2차 수축제 — 금기(고혈압·천식) 확인"
+     }
+    ]
+   },
+   {
+    "id": "stop",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "멎음 — 자궁 수축·출혈량·쇼크 지수 감시",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "second",
+    "num": 9,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "2차 수축제 — 금기(고혈압·천식) 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "그래도 계속",
+      "to": 10,
+      "toText": "불응 — 풍선 압박 → 색전술·수술"
+     }
+    ]
+   },
+   {
+    "id": "escalate",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "불응 — 풍선 압박 → 색전술·수술",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.obgyn.postpartum-preeclampsia.magnesium-antihypertensive": {
   "id": "cn.obgyn.postpartum-preeclampsia.magnesium-antihypertensive",
   "title": "산후 전자간증 — 마그네슘과 정맥 강압제를 함께",
@@ -74612,6 +82048,2641 @@ window.MEDKOS_CONCEPTS = {
     "kind": "결론",
     "marker": "결론",
     "text": "17α-수산화효소 결핍 의심",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.obgyn.shoulder-dystocia.maneuver-sequence": {
+  "id": "cn.obgyn.shoulder-dystocia.maneuver-sequence",
+  "title": "견갑난산 — 당기거나 밀지 말고 맥로버츠부터",
+  "objective": "견갑난산을 알아차린 뒤 자궁저부 압박·과도한 견인을 피하고 맥로버츠 수기와 치골상부 압박으로 시작하는 조작 순서를 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "견갑난산(shoulder dystocia)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Pediatrics"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "b63d44833fb9c636",
+  "summary": [
+   "결론: 견갑난산이면 도움을 부르고 맥로버츠 수기 ± 치골상부 압박이 1차, 실패하면 질 안 내부 조작으로 넘어간다.",
+   "시험 단서: 머리 만출 뒤 부드러운 견인에도 어깨가 안 나옴(shoulder dystocia) — 거대아·당뇨·이전 견갑난산.",
+   "왜: 앞어깨가 치골결합 뒤에 걸린 기계적 문제라 골반 축·어깨 각도를 바꿔야 풀린다 — 밀고 당기면 더 끼인다.",
+   "하지 않는다: 자궁저부 압박(fundal pressure)·과도한 머리 견인·머리 역회전 — 쐐기를 깊게 하고 상완신경총을 늘린다.",
+   "만출 시간이 길어질수록 저산소 위험이 커진다 — 조작마다 30~60초 안에 다음 단계로 간다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 맥로버츠·치골상부 압박이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>견갑난산은 앞어깨가 치골결합 뒤에 걸린 <strong>기계적 문제</strong>다 — 조작의 목적은 골반을 넓히거나, 어깨너비를 줄이거나, 어깨 축을 비스듬한 지름으로 돌리는 것이다 <sup>[4 8절]</sup>.</li>\n<li>맥로버츠 수기 ± 치골상부 압박은 하기 쉽고 효과적이며 합병증이 적어 1차로 권고된다 <sup>[1† 초록]</sup>. 대규모 코호트에서도 이 둘로 다룬 경우 신생아 손상률이 가장 낮았다 <sup>[3 Discussion]</sup>.</li>\n<li><strong>위에서 밀거나 머리를 세게 당기는 것은 해결이 아니라 악화다</strong> — 자궁저부 압박은 쐐기를 깊게 하고, 과도한 견인은 상완신경총을 늘린다 <sup>[1† 초록]</sup> <sup>[4 8절]</sup>.</li>\n<li>1차가 실패하면 질 안 내부 조작으로 넘어간다. 시행한 조작 수가 많을수록 손상이 늘어, 성공률 높은 조작을 너무 늦추지 않는다 <sup>[3 Results]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 걸린 어깨에서 손상까지",
+    "deep": false,
+    "html": "<ul>\n<li>머리가 나온 뒤 앞어깨가 치골 뒤에 끼이면 가슴이 골반 안에서 눌려 숨을 쉬지 못하고, 탯줄·목 혈관 압박이 더해져 저산소·산증이 진행한다 <sup>[6 Consequences]</sup> <sup>[4 4절]</sup>. pH 는 분당 0.01–0.04 떨어지고, 산소화가 좋던 태아라도 여유는 약 5분이다 <sup>[4 4절]</sup>.</li>\n<li>맥로버츠 수기는 허벅지를 배 쪽으로 굽혀 요추 전만을 펴고 치골결합을 앞어깨 위로 올린다 <sup>[4 8.1절]</sup> <sup>[6 Management]</sup>. 치골상부 압박은 앞어깨 뒷면을 아래·옆으로 눌러 어깨를 모으고 비스듬한 지름으로 돌린다 <sup>[5 First-line maneuvers]</sup>.</li>\n<li>뒤쪽 팔·어깨를 먼저 꺼내면 막힌 지름이 양어깨 너비에서 한쪽 어깨만큼 줄어든다 <sup>[6 Specific maneuvers]</sup>.</li>\n<li>손상: 상완신경총 손상(대부분 에르브 마비)·쇄골·상완 골절·저산소성 허혈성 뇌병증. 한 코호트에서 견갑난산의 5.2 %가 신생아 손상을 입었고 에르브 마비 59.4 %, 쇄골 골절 38.6 %였다 <sup>[3 Results]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 1차에서 내부 조작·최후 수단까지",
+    "deep": false,
+    "html": "<ul>\n<li>표가 단계별 조작과 이유를 정리한다. 알아차리면 먼저 도움(맥로버츠에 손 둘 사람)을 부르고 산모 자세를 정리한다 <sup>[2† 초록]</sup>.</li>\n<li>내부 조작으로 넘어갈 때는 질 안에 손을 넣어 <strong>뒤쪽 어깨 위치</strong>부터 확인한다 <sup>[6 Specific maneuvers]</sup>.</li>\n<li>위험인자(이전 견갑난산·거대아)는 예측력이 낮아 50–70 %가 위험인자 없이 생긴다 — 위험인자가 없다고 대비를 미루지 않는다 <sup>[1† 초록]</sup>.</li>\n<li>정상 결과의 한계: 맥로버츠 뒤 어깨가 빠져도 신생아 손상이 없다는 뜻은 아니다 — 만출 뒤 소아과에 알리고 상완신경총·쇄골을 진찰한다 <sup>[1† 초록]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>회음절개는 일상적으로 하지 않는다 — 내부 조작에 손이 들어갈 공간이 필요할 때만 <sup>[2† 초록]</sup> <sup>[4 8.3절]</sup>.</li>\n<li>네발 자세(Gaskin)는 경막외마취 중에는 맞지 않는다 <sup>[5 First-line maneuvers]</sup>.</li>\n<li>두부 환원 뒤 제왕절개·치골결합절개·의도적 쇄골 골절은 다른 조작이 모두 실패했을 때만 쓴다 <sup>[5 Third-line maneuvers]</sup>.</li>\n<li>영국 RCOG Green-top 42 개정판(2026)은 원문을 보지 못해 대조하지 않았다 <sup>[7†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 맥로버츠와 함께 머리를 당겨도 되나</strong> — 시험 기준: 맥로버츠 ± 치골상부 압박을 1차로, 과도한 견인만 피한다 <sup>[1† 초록]</sup> / 다른 기준: 맥로버츠 「자세」는 좋지만 견인을 동반한 「수기」는 반대 — 진단에도 조작에도 머리를 당기지 말라 <sup>[6 Management]</sup> / 왜 다른가: 영구 상완신경총 손상의 원인을 견인으로 보는 단독 저자의 견해이고, 지침은 부드러운 견인을 허용한다 / 시험에서는: KMLE · USMLE 모두 「맥로버츠 + 치골상부 압박이 첫 조작, 자궁저부 압박·강한 견인은 오답」으로 고른다.</li>\n<li><strong>Z2 충돌 · 내부 조작의 순서</strong> — 시험 기준: 뒤쪽 어깨가 골반에 들어왔으면 회전 수기(우즈), 안 들어왔으면 뒤쪽 팔 만출 <sup>[1† 초록]</sup> / 다른 기준: 뒤쪽 어깨 만출이 가장 성공률이 높아 맥로버츠·치골상부 다음에 먼저 고려 <sup>[3 Discussion]</sup>; HELPERR 는 회전(Enter) 뒤 뒤쪽 팔(Remove) <sup>[4 8.3절]</sup> / 왜 다른가: 2차 조작 사이 우열을 가른 무작위 연구가 없어 지침은 합의로, 코호트는 성공률로 순서를 정했다 <sup>[2† 초록]</sup> / 시험에서는: 보기에 내부 조작이 하나뿐이면 그것이 다음 단계 — 회전 수기와 뒤쪽 팔이 함께 나오면 발문의 뒤쪽 어깨 위치를 본다.</li>\n<li><strong>Z3 맥락 · 회음절개의 자리</strong> — 시험 기준: 일상적 회음절개는 하지 않는다 <sup>[2† 초록]</sup> / 다른 기준: 넓은 회음절개를 내부 조작 전 필수로 두는 알고리즘이 많다 <sup>[5 First-line maneuvers]</sup> / 왜 다른가: 회음절개는 뼈 골반의 걸림을 풀지 못하고 손 넣을 공간만 만든다 <sup>[4 8절]</sup> / 시험에서는: 「첫 조치」로 회음절개를 고르지 않는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "견갑난산 조작 — 순서와 이유",
+    "columns": [
+     "단계",
+     "조작 · 원리",
+     "근거 · 주의"
+    ],
+    "rows": [
+     [
+      "시작",
+      "도움 요청(맥로버츠에 손 둘 사람), 산모 자세 정리, 만출력 중단 <sup>[2† 초록]</sup> <sup>[5 Algorithms]</sup>",
+      "자궁저부 압박·과도한 견인·머리 역회전 금지 <sup>[1† 초록]</sup>"
+     ],
+     [
+      "1차",
+      "맥로버츠 수기 — 허벅지를 배 쪽으로 강하게 굽혀 요추 전만을 펴고 치골결합을 앞어깨 위로 올린다 <sup>[4 8.1절]</sup> <sup>[6 Management]</sup>",
+      "± 치골상부 압박 — 앞어깨 뒷면을 아래·옆으로 눌러 어깨를 모으고 비스듬한 지름으로 돌린다 <sup>[5 First-line maneuvers]</sup>"
+     ],
+     [
+      "2차(내부)",
+      "뒤쪽 어깨가 골반에 진입 → 회전 수기(우즈) 우선, 미진입 → 뒤쪽 팔 만출 우선 <sup>[1† 초록]</sup>",
+      "뒤쪽 어깨 만출 성공 84.4 %(다른 조작 24.3~72.0 %), 손상률은 비슷 <sup>[3 Results]</sup>"
+     ],
+     [
+      "대안 자세",
+      "네발 자세(Gaskin) — 엉치 공간을 넓히고 뒤쪽 어깨를 먼저 낸다 <sup>[5 First-line maneuvers]</sup>",
+      "경막외마취 중에는 맞지 않는다 <sup>[5 First-line maneuvers]</sup>"
+     ],
+     [
+      "최후 수단",
+      "의도적 쇄골 골절, 두부 환원 뒤 제왕절개(Zavanelli), 치골결합절개 <sup>[5 Third-line maneuvers]</sup>",
+      "치골결합절개는 다른 조작이 실패하고 제왕절개가 불가능할 때만 <sup>[4 8.2절]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "자궁저부 압박으로 밀어 낸다?",
+    "point": "앞어깨가 치골 뒤에 끼인 상태에서 위에서 밀면 쐐기가 더 깊어져 태아·산모 손상 위험만 커진다 — 권고에서 피할 조작으로 명시된다 <sup>[1† 초록]</sup> <sup>[4 8절]</sup>.",
+    "exception": "자궁저부 압박은 치골상부 압박과 다르다 — 치골상부 압박은 앞어깨를 옆으로 밀어 비스듬한 지름으로 돌리는 1차 조작이다 <sup>[5 First-line maneuvers]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "머리를 세게 당기면 빨리 끝난다?",
+    "point": "어깨가 걸린 채 머리를 당기면 목과 상완신경총이 늘어난다. 과도한 견인은 피할 조작이고, 견인은 정상 분만 수준의 부드러운 것까지만이다 <sup>[1† 초록]</sup> <sup>[4 8.3절]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "1차 조작 전에 회음절개부터?",
+    "point": "어깨를 막는 것은 연조직이 아니라 뼈 골반이라 회음절개 자체는 견갑난산을 풀지 못한다. 일상적 회음절개는 권고되지 않고, 내부 조작에 손이 들어갈 공간이 필요할 때만 고려한다 <sup>[2† 초록]</sup> <sup>[4 8절]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "1차 조작이 안 되면 바로 제왕절개?",
+    "point": "다음은 질 안 내부 조작(뒤쪽 팔·어깨 만출, 회전 수기)이다. 두부 환원 뒤 제왕절개(Zavanelli)·치골결합절개는 이들이 모두 실패했을 때의 최후 수단이다 <sup>[5 Third-line maneuvers]</sup> <sup>[4 8.2절]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "조작을 많이 시도할수록 안전하다?",
+    "point": "시행한 조작 수가 늘수록 신생아 손상률이 높았다 — 그래서 성공률이 높은 조작을 일찍 쓰자는 근거가 된다 <sup>[3 Results]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "처음부터 끝까지 하지 않는다: 자궁저부 압박, 과도한 머리 견인, 머리 역회전 <sup>[1† 초록]</sup>.",
+   "조작 하나에 30~60초를 넘기지 않고 다음 단계로 간다(HELPERR: Help·Evaluate·Legs·Pressure·Enter·Remove·Roll) <sup>[4 8.3절]</sup>.",
+   "회전 수기와 뒤쪽 팔 만출 사이의 우열은 출처마다 다르다 — 시험 쟁점 Z2. 실패하면 다른 내부 조작이나 네발 자세로 넘어간다 <sup>[5 Algorithms]</sup>.",
+   "만출 뒤 소아과에 바로 알리고 상완신경총 손상·쇄골 골절을 진찰한다 <sup>[1† 초록]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "cngof-2016",
+    "org": "Collège National des Gynécologues et Obstétriciens Français (CNGOF)",
+    "title": "Shoulder dystocia: guidelines for clinical practice from the French College of Gynecologists and Obstetricians (CNGOF)",
+    "kind": "guideline",
+    "citation": "Sentilhes L, Sénat MV, Boulogne AI, et al. Eur J Obstet Gynecol Reprod Biol 2016;203:156-161",
+    "checked": "PubMed 초록만(전문 PMC 없음). 정의(머리 만출 뒤 부드러운 견인 실패로 추가 조작이 필요한 두위 질식분만, 질식분만의 0.5–1 %) · 주 위험인자(이전 견갑난산·거대아)는 예측력이 낮고 50–70 %는 위험인자 없이 생김 · 피할 조작: 과도한 머리 견인(Grade C)·자궁저부 압박(Grade C)·머리 역회전(전문가 합의) · 맥로버츠 ± 치골상부 압박 1차(Grade C) · 실패 시 뒤쪽 어깨 진입이면 우즈, 미진입이면 뒤쪽 팔 만출 우선(전문가 합의) · 맥로버츠 실패에 대비해 두 가지 이상 조작을 알아야 함 · 소아과에 즉시 알리고 상완신경총·쇄골 골절 진찰 · 시뮬레이션 훈련은 신생아 손상 감소(LE3)",
+    "doi": "10.1016/j.ejogrb.2016.05.047",
+    "pmid": "27318182",
+    "verified": "abstract",
+    "year": "2016",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.ejogrb.2016.05.047"
+   },
+   {
+    "id": "leray-2015",
+    "org": "Le Ray C, Oury JF (CNGOF 권고 준비 문헌고찰)",
+    "title": "Management of shoulder dystocia",
+    "kind": "review",
+    "citation": "Le Ray C, Oury JF. J Gynecol Obstet Biol Reprod (Paris) 2015;44(10):1272-1284 (프랑스어, 영어 초록)",
+    "checked": "PubMed 영어 초록만. 분만 담당 산과의사에게 즉시 알림·맥로버츠를 위해 세 번째 사람 호출·산모 자세 정리(전문가 합의) · 과도한 견인·자궁 압출·머리 역회전 금지(Grade C/합의) · 맥로버츠 ± 치골상부 압박 1차(Grade C) · 2차 조작 사이 우열 근거 없음(Grade C) · 일상적 회음절개 권고 안 함(전문가 합의)",
+    "doi": "10.1016/j.jgyn.2015.09.048",
+    "pmid": "26530178",
+    "verified": "abstract",
+    "year": "2015",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1016/j.jgyn.2015.09.048"
+   },
+   {
+    "id": "hoffman-2011",
+    "org": "Hoffman MK, et al. (Consortium on Safe Labor, 다기관 후향 코호트)",
+    "title": "A comparison of obstetric maneuvers for the acute management of shoulder dystocia",
+    "kind": "other",
+    "citation": "Hoffman MK, Bailit JL, Branch DW, et al. Obstet Gynecol 2011;117(6):1272-1278",
+    "checked": "PMC 전문(PMC3101300) 대조. 132,098 만삭 두위 질식분만 중 견갑난산 2,018례(1.5 %, 기관별 0.2–3.0 %) · 신생아 손상 101례(5.2 %; 에르브 마비 59.4 %, 쇄골 골절 38.6 %, 저산소성 허혈성 뇌병증 6례) · 뒤쪽 어깨 만출의 성공 84.4 % vs 다른 조작 24.3 %(맥로버츠)~72.0 %(우즈), 손상률 8.4 % vs 6.1–14.0 %로 비슷 · 맥로버츠+치골상부 실패 뒤 세 번째 조작으로 루빈은 뒤쪽 어깨보다 성공 낮음(OR 0.33) · 조작 수가 늘수록 손상 증가(P<.001) · HIE 6례는 모두 5개 이상 조작, 머리–몸 만출 평균 10.75분 · 자궁저부 압박은 3례뿐이라 분석에서 뺌 · 결론: 맥로버츠·치골상부 다음 뒤쪽 어깨 만출 고려",
+    "doi": "10.1097/AOG.0b013e31821a12c9",
+    "pmid": "21555962",
+    "verified": "text",
+    "year": "2011",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3101300/"
+   },
+   {
+    "id": "tsikouras-2024",
+    "org": "Tsikouras P, et al. (문헌 종설)",
+    "title": "Shoulder Dystocia: A Comprehensive Literature Review on Diagnosis, Prevention, Complications, Prognosis, and Management",
+    "kind": "review",
+    "citation": "Tsikouras P, Kotanidou S, Nikolettos K, et al. J Pers Med 2024;14(6):586",
+    "checked": "PMC 전문(PMC11204412) 4절·8절 대조. 4절: 머리–몸 만출 사이 산증, pH 0.01–0.04/분 저하, 산소화가 좋던 태아라면 약 5분 여유 · 8절: 조작 목적(골반 넓히기·어깨너비 줄이기·어깨 축 돌리기), 자궁저부 압박은 금기(쐐기 심화·태아·산모 손상), 목 굽힘·비틀기·급한 움직임 피함, 회음절개는 연조직 문제가 아니라 공간 확보용 · 8.1: 맥로버츠가 전후 지름을 늘리고 요추 전만을 폄, 치골상부 압박은 앞어깨 뒷면을 눌러 어깨를 모음, 뒤쪽 팔 만출의 상완 골절 2–12 % · 8.2: 두부 환원 뒤 제왕절개(자궁이완제 선행)·치골결합절개(다른 조작 실패·제왕절개 불가 시) · 8.3: 정상 분만 수준 이상의 견인 금지, HELPERR, 조작마다 30–60초, 네발 자세 성공 최대 83 %, 훈련 뒤 신생아 손상 9.3 %→2.3 %. 성공률 수치(맥로버츠 40 %·최대 90 %)는 종설 안에서도 엇갈려 본문에 싣지 않았다",
+    "doi": "10.3390/jpm14060586",
+    "pmid": "38929807",
+    "verified": "text",
+    "year": "2024",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11204412/"
+   },
+   {
+    "id": "bothou-2021",
+    "org": "Bothou A, et al. (조산 종설)",
+    "title": "Overview of techniques to manage shoulder dystocia during vaginal birth",
+    "kind": "review",
+    "citation": "Bothou A, Apostolidi DM, Tsikouras P, et al. Eur J Midwifery 2021;5:48",
+    "checked": "PMC 전문(PMC8527401) 대조. First-line: 맥로버츠(1983 도입, 앞어깨가 치골 아래로), 치골상부 압박(손바닥·주먹으로 아래·옆, 비스듬한 지름으로; 맥로버츠와 함께 성공 24–62 %), 네발 자세(Gaskin, 경막외마취 시 부적합), 넓은 회음절개는 대부분 알고리즘이 권함(HELPERR 는 평가만) · Second-line: 뒤쪽 겨드랑이 견인, 루빈, 우즈 · Third-line: 의도적 쇄골 골절, Zavanelli(자궁이완제 뒤 머리 밀어 넣고 즉시 제왕절개), 치골결합절개 · Algorithms: HELPERR, Hernandez & Wendel, 영국·프랑스 학회 알고리즘(도움 요청 → 만출력 중단 → 맥로버츠 → 치골상부 압박과 부드러운 견인 → 회음절개 → 내부 조작 → 무릎–팔꿈치 자세 → 최후 수단) · 조작당 최대 30초 권고",
+    "doi": "10.18332/ejm/142097",
+    "pmid": "34723155",
+    "verified": "text",
+    "year": "2021",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8527401/"
+   },
+   {
+    "id": "menticoglou-2018",
+    "org": "Menticoglou S (단독 저자 종설·견해)",
+    "title": "Shoulder dystocia: incidence, mechanisms, and management strategies",
+    "kind": "review",
+    "citation": "Menticoglou S. Int J Womens Health 2018;10:723-732",
+    "checked": "PMC 전문(PMC6233701) 대조. 기전: 대개 앞어깨가 치골 뒤, 뒤쪽 어깨는 엉치곶 아래 · 영구 상완신경총 손상은 대부분 견인 때문이라는 저자 견해 · Management: 맥로버츠 자세가 치골결합을 앞어깨 위로 옮기고 뒤쪽 어깨를 엉치 오목으로 내림 · 미국·영국·프랑스 지침은 맥로버츠 ± 치골상부를 1차로 두지만 저자는 견인을 동반한 「맥로버츠 수기」에 반대(자세는 찬성) · 다음은 질 안에 손을 넣어 뒤쪽 어깨 위치 확인 → 엉치 오목에 있으면 뒤쪽 겨드랑이 견인, 골반 입구 위면 Jacquemier · 목덜미 탯줄을 먼저 자르지 말 것 · 약 5분 넘으면 두부 환원 또는 치골결합절개 고려",
+    "doi": "10.2147/IJWH.S175088",
+    "pmid": "30519118",
+    "verified": "text",
+    "year": "2018",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6233701/"
+   },
+   {
+    "id": "rcog-gtg42-2026",
+    "org": "Royal College of Obstetricians and Gynaecologists",
+    "title": "Shoulder Dystocia: Green-top Guideline No. 42",
+    "kind": "guideline",
+    "citation": "Lattey K, Winter C, Ellis V, et al. BJOG 2026;133(12):e165-e186 (정정 PMID 43039736)",
+    "checked": "서지만 확인(PubMed 초록 없음·PMC 전문 없음). 권고 내용은 대조하지 않았다",
+    "doi": "10.1111/1471-0528.70258",
+    "pmid": "42660544",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1111/1471-0528.70258"
+   }
+  ],
+  "checks": [
+   {
+    "q": "견갑난산에서 맥로버츠 수기가 1차인 이유는?",
+    "a": "허벅지를 배 쪽으로 굽혀 요추 전만을 펴고 치골결합을 앞어깨 위로 올려, 걸린 앞어깨를 푸는 간단하고 합병증이 적은 조작이기 때문이다."
+   },
+   {
+    "q": "자궁저부 압박을 하면 안 되는 이유는?",
+    "a": "앞어깨가 치골결합 뒤에 끼인 상태에서 위에서 밀면 쐐기가 더 깊어지고 태아·산모 손상 위험만 커진다."
+   },
+   {
+    "q": "맥로버츠 + 치골상부 압박이 실패하면 무엇을 먼저 확인하나?",
+    "a": "질 안에 손을 넣어 뒤쪽 어깨가 골반에 들어왔는지 본다 — 들어왔으면 회전 수기, 안 들어왔으면 뒤쪽 팔 만출이 우선이다(프랑스 지침)."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "견갑난산 — 알아차린 뒤 조작 순서",
+  "geo": {
+   "title": "견갑난산 — 알아차린 뒤 조작 순서",
+   "w": 513.6,
+   "h": 710.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "머리 만출 뒤 부드러운",
+      "견인에도 어깨가 안 나옴"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 30.3,
+     "y": 16.0
+    },
+    {
+     "id": "first",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "도움 요청 → 맥로버츠 +",
+      "치골상부 압박"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 30.6,
+     "y": 102.0
+    },
+    {
+     "id": "r1",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "1차 조작으로 어깨가 빠졌나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 31.1,
+     "y": 188.0
+    },
+    {
+     "id": "palp",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "질 안 촉진 — 뒤쪽 어깨 위치",
+      "확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 113.7,
+     "y": 278.0
+    },
+    {
+     "id": "post",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "뒤쪽 어깨가 골반에",
+      "들어왔나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 163.7,
+     "y": 364.0
+    },
+    {
+     "id": "rot",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "회전 수기(우즈) 우선"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 75.6,
+     "y": 471.0
+    },
+    {
+     "id": "arm",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "뒤쪽 팔 만출 우선"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 301.6,
+     "y": 471.0
+    },
+    {
+     "id": "r2",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "내부 조작으로 빠졌나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 167.0,
+     "y": 540.0
+    },
+    {
+     "id": "done",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "만출 — 소아과 호출·",
+      "상완신경총·쇄골 진찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 630.0
+    },
+    {
+     "id": "last",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "최후 수단 — 쇄골 골절·두부",
+      "환원 뒤 제왕절개 등"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 630.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "first",
+     "points": [
+      [
+       128.3,
+       80.0
+      ],
+      [
+       128.6,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "first",
+     "to": "r1",
+     "points": [
+      [
+       128.6,
+       166.0
+      ],
+      [
+       129.1,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "r1",
+     "to": "done",
+     "points": [
+      [
+       96.4,
+       235.0
+      ],
+      [
+       96.4,
+       264.0
+      ],
+      [
+       84.2,
+       264.0
+      ],
+      [
+       84.2,
+       350.0
+      ],
+      [
+       71.9,
+       350.0
+      ],
+      [
+       71.9,
+       457.0
+      ],
+      [
+       59.6,
+       457.0
+      ],
+      [
+       59.6,
+       526.0
+      ],
+      [
+       70.5,
+       526.0
+      ],
+      [
+       70.5,
+       616.0
+      ],
+      [
+       81.3,
+       616.0
+      ],
+      [
+       81.3,
+       630.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 86.9,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "r1",
+     "to": "palp",
+     "points": [
+      [
+       161.8,
+       235.0
+      ],
+      [
+       161.8,
+       264.0
+      ],
+      [
+       211.7,
+       264.0
+      ],
+      [
+       211.7,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 141.3,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "palp",
+     "to": "post",
+     "points": [
+      [
+       211.7,
+       342.0
+      ],
+      [
+       211.7,
+       350.0
+      ],
+      [
+       261.7,
+       350.0
+      ],
+      [
+       261.7,
+       364.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "post",
+     "to": "rot",
+     "points": [
+      [
+       229.0,
+       428.0
+      ],
+      [
+       229.0,
+       457.0
+      ],
+      [
+       173.6,
+       457.0
+      ],
+      [
+       173.6,
+       471.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "들어옴"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 208.5,
+      "y": 432.0
+     }
+    },
+    {
+     "from": "post",
+     "to": "arm",
+     "points": [
+      [
+       294.3,
+       428.0
+      ],
+      [
+       294.3,
+       457.0
+      ],
+      [
+       399.6,
+       457.0
+      ],
+      [
+       399.6,
+       471.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안 들어옴"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 266.5,
+      "y": 432.0
+     }
+    },
+    {
+     "from": "rot",
+     "to": "r2",
+     "points": [
+      [
+       173.6,
+       518.0
+      ],
+      [
+       173.6,
+       526.0
+      ],
+      [
+       232.3,
+       526.0
+      ],
+      [
+       232.3,
+       540.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "arm",
+     "to": "r2",
+     "points": [
+      [
+       399.6,
+       518.0
+      ],
+      [
+       399.6,
+       526.0
+      ],
+      [
+       297.7,
+       526.0
+      ],
+      [
+       297.7,
+       540.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "r2",
+     "to": "done",
+     "points": [
+      [
+       232.3,
+       587.0
+      ],
+      [
+       232.3,
+       616.0
+      ],
+      [
+       146.7,
+       616.0
+      ],
+      [
+       146.7,
+       630.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 222.8,
+      "y": 591.0
+     }
+    },
+    {
+     "from": "r2",
+     "to": "last",
+     "points": [
+      [
+       297.7,
+       587.0
+      ],
+      [
+       297.7,
+       616.0
+      ],
+      [
+       340.0,
+       616.0
+      ],
+      [
+       340.0,
+       630.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 277.2,
+      "y": 591.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "머리 만출 뒤 부드러운 견인에도 어깨가 안 나옴",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "도움 요청 → 맥로버츠 + 치골상부 압박"
+     }
+    ]
+   },
+   {
+    "id": "first",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "도움 요청 → 맥로버츠 + 치골상부 압박",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "1차 조작으로 어깨가 빠졌나?"
+     }
+    ]
+   },
+   {
+    "id": "r1",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "1차 조작으로 어깨가 빠졌나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "만출 — 소아과 호출·상완신경총·쇄골 진찰"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "질 안 촉진 — 뒤쪽 어깨 위치 확인"
+     }
+    ]
+   },
+   {
+    "id": "palp",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "질 안 촉진 — 뒤쪽 어깨 위치 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "뒤쪽 어깨가 골반에 들어왔나?"
+     }
+    ]
+   },
+   {
+    "id": "post",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "뒤쪽 어깨가 골반에 들어왔나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "들어옴",
+      "to": 6,
+      "toText": "회전 수기(우즈) 우선"
+     },
+     {
+      "label": "안 들어옴",
+      "to": 7,
+      "toText": "뒤쪽 팔 만출 우선"
+     }
+    ]
+   },
+   {
+    "id": "rot",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "회전 수기(우즈) 우선",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "내부 조작으로 빠졌나?"
+     }
+    ]
+   },
+   {
+    "id": "arm",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "뒤쪽 팔 만출 우선",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "내부 조작으로 빠졌나?"
+     }
+    ]
+   },
+   {
+    "id": "r2",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "내부 조작으로 빠졌나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "만출 — 소아과 호출·상완신경총·쇄골 진찰"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "최후 수단 — 쇄골 골절·두부 환원 뒤 제왕절개 등"
+     }
+    ]
+   },
+   {
+    "id": "done",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "만출 — 소아과 호출·상완신경총·쇄골 진찰",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "last",
+    "num": 10,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "최후 수단 — 쇄골 골절·두부 환원 뒤 제왕절개 등",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.obgyn.urinary-incontinence.type-first-treatment": {
+  "id": "cn.obgyn.urinary-incontinence.type-first-treatment",
+  "title": "여성 요실금 — 새는 상황과 잔뇨가 첫 치료를 정한다",
+  "objective": "여성 요실금을 새는 상황(기침·재채기 vs 갑작스러운 요의)과 기본 평가(소변검사·잔뇨)로 복압성·절박성·범람으로 가르고 유형별 첫 치료를 고른다",
+  "objectiveKind": "치료",
+  "condition": "여성 요실금(urinary incontinence in women) — 복압성·절박성·혼합성·범람(일류성)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Urology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "220c7861c9c4ea5a",
+  "summary": [
+   "결론: 기침·재채기 때 새면 골반저근 운동, 갑자기 마려워 새면 방광 훈련(실패하면 약), 잔뇨가 많으면 범람 — 원인 교정·도뇨.",
+   "시험 단서: 힘줄 때 소량(stress UI) vs 참지 못하는 요의(urgency UI) vs 잔뇨↑·방광 팽만(overflow, incomplete emptying).",
+   "왜: 복압성은 요도 지지·괄약근 약화, 절박성은 배뇨근 과활동이라 고치는 곳(골반저 vs 방광)이 다르다.",
+   "복압성에는 전신 약물을 권하지 않고, 비수술 치료 전 요역동학 검사는 필요 없다 — 소변검사로 감염·혈뇨를 먼저 거른다.",
+   "잔뇨(노인 기준): 0–100 mL 정상, 100–200 mL 증상과 함께 해석, >200 mL 비정상 — 기준은 자료마다 다르다(시험 쟁점)."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 새는 상황과 잔뇨로 첫 치료가 갈리나",
+    "deep": false,
+    "html": "<ul>\n<li>요실금은 증상만으로 원인이 정해지지 않는다 — 병력·진찰·소변검사·잔뇨 측정 뒤 대부분 복압성·절박성·혼합성으로 잠정 진단한다 <sup>[1 Diagnosis]</sup>.</li>\n<li><strong>새는 상황</strong>이 유형을 가른다: 기침·재채기·운동 때면 복압성(stress), 갑작스럽고 참기 어려운 요의와 함께면 절박성(urgency), 둘 다면 혼합성(mixed) <sup>[1 머리말]</sup> <sup>[2 489장 p.3891]</sup>.</li>\n<li><strong>소변검사</strong>는 감염을 거르는 관문이다 — 감염을 배제해야 과민성 방광으로 진단하고, 혈뇨·당뇨도 함께 본다 <sup>[1 Urinalysis]</sup> <sup>[5†]</sup>.</li>\n<li><strong>잔뇨</strong>가 많으면 저장 문제가 아니라 비우지 못하는 문제다 — 범람(일류성) 요실금(overflow; 해리슨은 「불완전 배뇨를 동반한 요실금」)으로 치료가 완전히 달라진다 <sup>[2 489장 p.3893]</sup> <sup>[6†]</sup>.</li>\n<li>유형마다 고치는 곳이 다르다: 복압성은 골반저(골반저근 운동), 절박성은 방광(방광 훈련 → 약), 범람은 비우기(원인 교정·도뇨) <sup>[3†]</sup> <sup>[2 489장 p.3893]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 저장에서 누출로",
+    "deep": false,
+    "html": "<p>정상 방광은 교감신경 우세로 낮은 압력에서 소변을 저장하고(편안한 한계 약 500 mL), 부교감신경(S2–S4)이 배뇨를 맡는다 <sup>[1 Bladder structure and function]</sup>.</p>\n<ul>\n<li><strong>복압성</strong>: 질 앞벽의 골반 내 근막이 요도를 받치는 「해먹」이 분만·비만·만성 기침·변비·폐경으로 약해지면, 복압이 오를 때 요도가 눌리지 않고 아래로 밀려 요도압이 방광압보다 낮아진다(요도 과운동). 괄약근 자체가 약하면 내인성 괄약근 결손이다 <sup>[1 Stress urinary incontinence]</sup>.</li>\n<li><strong>절박성</strong>: 채우는 동안 배뇨근이 저절로 수축(배뇨근 과활동)하거나, 유순도가 낮거나(방사선·장기 도뇨 뒤), 방광 감각이 과민해 요의가 괄약근 저항을 넘는다 <sup>[1 Urgency urinary incontinence]</sup>. 그래서 약은 무스카린 수용체를 막거나 β3 수용체를 자극해 배뇨근을 이완시킨다 <sup>[1 Urgency urinary incontinence]</sup>.</li>\n<li><strong>범람</strong>: 항콜린 작용 약·마약성 진통제가 배뇨를 불완전하게 하고, 변 매복이 출구를 부분적으로 막아 방광이 다 비지 않는다 <sup>[2 489장 p.3890]</sup>. 2–4기 골반장기탈출증은 요도를 꺾을 수 있다 <sup>[1 Physical examination]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 언제 새는가와 잔뇨",
+    "deep": false,
+    "html": "<ul>\n<li>기침 유발 검사(방광 약 300 mL, 누운 자세 또는 선 자세에서 세게 기침) 양성은 복압성 진단에 민감도·특이도가 높다 <sup>[1 Physical examination]</sup>.</li>\n<li>잔뇨는 배뇨 증상·증상 있는 탈출·만져지는 방광이 있을 때 재고, 초음파로 잴 수 있다 <sup>[1 Post-void residual volume assessment]</sup>. 노인은 병력·진찰만으로 불완전 배뇨를 찾기 어려워 대부분 잰다 <sup>[2 489장 p.3891]</sup>.</li>\n<li>정상·음성 결과의 한계: 탈출이 있으면 기침 유발 검사가 거짓 음성일 수 있고 <sup>[1 Physical examination]</sup>, 잔뇨는 방광이 찬 상태에서 재야 하며 힘주면 값이 달라진다 <sup>[2 489장 p.3891]</sup>. 노인은 무증상 세균뇨가 흔해 소변검사 양성만으로 항생제를 쓰지 않는다 <sup>[1 Urinalysis]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 유형별 첫 치료와 다음 단계",
+    "deep": false,
+    "html": "<ul>\n<li>복압성: 골반저근 운동이 1차다 <sup>[3†]</sup>. 무치료 대비 완치 보고 56 % vs 6 %(RR 8.38, 높은 질 근거)이고 부작용은 드물다 <sup>[4†]</sup>. 기침 등 복압이 오르기 직전과 그동안 골반저근을 수축하도록 가르친다 <sup>[1 PFMT]</sup>.</li>\n<li>절박성: 방광 훈련(배뇨 간격을 계획적으로 늘림)을 먼저, 실패하면 약 <sup>[3†]</sup> <sup>[1 PFMT]</sup>. 항무스카린제는 입마름·변비·흐린 시야·졸림·혼동을 일으키고 노인에서는 인지 영향이 우려돼 대안을 권한다. 미라베그론(β3 작용제)은 입마름이 적지만 고혈압을 악화시킬 수 있다 <sup>[1 Medical interventions]</sup>.</li>\n<li>재평가: 약 효과는 몇 주 뒤에 나타나므로 시작 전 증상을 기록해 비교한다 <sup>[1 Medical interventions]</sup>. 보존 치료가 실패하면 복압성은 중부요도 슬링을 고려한다 <sup>[1 Stress incontinence surgery]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>합병증 없는 요실금의 비수술 치료 전에는 요역동학 검사를 하지 않는다 <sup>[1 Urodynamic studies]</sup>.</li>\n<li>재발성 요로감염·무균 농뇨·혈뇨·지속 누출(누공)·요폐·신경 증상·골반 방사선은 전문의에게 보낸다 <sup>[1 Symptoms and risk factors]</sup>.</li>\n<li>비만하면 체중 감량·운동을 권한다 <sup>[3†]</sup>. 전신 호르몬 요법은 요실금을 악화시킨다 <sup>[1 Vaginal oestrogen]</sup>.</li>\n<li>약 용량, 젊은 여성의 범람 요실금 원인(신경인성 방광 등) 세부는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 복압성 요실금의 약물</strong> — 시험 기준: 전신 약물을 권하지 않는다, 골반저근 운동 <sup>[3†]</sup> / 다른 기준: 노인 복압성의 주 치료 목록에 α 작용제(FDA 미승인)를 올린다 <sup>[2 489장 p.3893]</sup> / 왜 다른가: ACP 는 여성 전체 대상 근거 등급 지침, 해리슨 표는 노인 진료 교과서 목록 / 시험에서는: KMLE·USMLE 모두 첫 치료는 골반저근 운동, 약물은 오답으로 본다.</li>\n<li><strong>Z2 맥락 · 잔뇨 기준</strong> — 시험 기준: 노인은 0–100 mL 정상, 100–200 mL 증상과 함께, &gt;200 mL 비정상 <sup>[2 489장 p.3891]</sup> / 다른 기준: 배뇨 직후 &gt;30 mL(10분 뒤면 100 mL까지)를 증가로 정의, ≥100 mL 면 재측정, 의미 있는 값은 임상의마다 크게 다르다 <sup>[1 Post-void residual volume assessment]</sup> / 왜 다른가: 측정 시점·방법·대상 나이 / 시험에서는: 숫자보다 「잔뇨가 크게 늘고 방광이 만져진다 → 범람」을 묻는다.</li>\n<li><strong>Z3 충돌 · 절박성의 약 시작 시점</strong> — 시험 기준: 방광 훈련 먼저, 실패하면 약 <sup>[3†]</sup> / 다른 기준: 1차 진료에서 행동 치료와 함께 항무스카린제를 1차로 쓰기도 하고 <sup>[1 Medical interventions]</sup>, 절박성 약은 광범위한 평가 없이 시작할 수 있다 <sup>[5†]</sup> / 왜 다른가: ACP 는 근거 등급의 순서, 종설은 실제 진료 관행 / 시험에서는: 「첫 치료」를 물으면 방광 훈련, 「훈련 실패 뒤」면 약.</li>\n<li><strong>Z4 맥락 · 혼합성의 첫 치료</strong> — 시험 기준: 골반저근 운동 + 방광 훈련 <sup>[3†]</sup> / 다른 기준: 우세 증상을 정하고 대개 절박성 쪽 치료부터 이득을 본다 <sup>[1 Diagnosis]</sup> / 왜 다른가: 같은 행동 치료 안에서 무엇을 앞세우는가의 차이 / 시험에서는: 행동 치료 둘을 함께 고른다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "요실금 유형 — 새는 상황과 기본 평가",
+    "columns": [
+     "유형",
+     "새는 상황",
+     "기전",
+     "기본 평가에서"
+    ],
+    "rows": [
+     [
+      "복압성(stress UI)",
+      "기침·재채기·운동 때 <sup>[1 머리말]</sup>",
+      "요도 과운동(지지 소실)·괄약근 약화 <sup>[1 Stress urinary incontinence]</sup>",
+      "기침 유발 검사 양성(방광 약 300 mL) <sup>[1 Physical examination]</sup>"
+     ],
+     [
+      "절박성(urgency UI)",
+      "갑작스럽고 참기 어려운 요의와 함께 <sup>[1 머리말]</sup>",
+      "배뇨근 과활동·낮은 유순도·방광 과민 <sup>[1 Urgency urinary incontinence]</sup>",
+      "소변검사로 감염을 배제해야 과민성 방광으로 본다 <sup>[1 Urinalysis]</sup>"
+     ],
+     [
+      "혼합성(mixed UI)",
+      "두 상황 모두 <sup>[1 머리말]</sup>",
+      "두 기전이 겹친다",
+      "더 괴로운 증상을 정해 치료 순서를 잡는다 <sup>[1 Diagnosis]</sup>"
+     ],
+     [
+      "범람(overflow) — 불완전 배뇨 동반",
+      "요의·힘줌과 무관하게 샌다 — 3IQ 는 「다른 원인」으로 분류 <sup>[2 489장 p.3891]</sup>",
+      "방광이 다 비지 않는다 — 원인 약·변 매복·출구 꺾임 <sup>[2 489장 p.3890]</sup>",
+      "잔뇨 &gt;200 mL(노인) 비정상 <sup>[2 489장 p.3891]</sup>"
+     ]
+    ],
+    "note": ""
+   },
+   {
+    "title": "유형별 첫 치료와 다음 단계",
+    "columns": [
+     "유형",
+     "첫 치료",
+     "다음 단계·주의"
+    ],
+    "rows": [
+     [
+      "복압성",
+      "골반저근 운동(강한 권고·높은 질) <sup>[3†]</sup>",
+      "전신 약물 ✗ <sup>[3†]</sup>. 보존 치료 뒤 중부요도 슬링(1차 수술) <sup>[1 Stress incontinence surgery]</sup>"
+     ],
+     [
+      "절박성",
+      "방광 훈련(강한 권고·중등도 질) <sup>[3†]</sup>",
+      "실패하면 약 — 내약성·부작용·편의·비용으로 고른다 <sup>[3†]</sup>"
+     ],
+     [
+      "혼합성",
+      "골반저근 운동 + 방광 훈련 <sup>[3†]</sup>",
+      "수술은 복압성 성분만 고친다 — 절박성 치료가 따로 필요할 수 있다 <sup>[1 Stress incontinence surgery]</sup>"
+     ],
+     [
+      "범람(불완전 배뇨)",
+      "원인 약 정리·방광 훈련·이중 배뇨·간헐 도뇨 <sup>[2 489장 p.3893]</sup>",
+      "요폐·출구 폐쇄는 전문의 의뢰 <sup>[1 Symptoms and risk factors]</sup>. 유치 도뇨는 선택된 환자만 <sup>[2 489장 p.3893]</sup>"
+     ],
+     [
+      "비만한 여성(모든 유형)",
+      "체중 감량·운동 <sup>[3†]</sup>",
+      "기저 체중 3–5 % 이상 감량에서 복압성 삽화 47 % 감소 <sup>[1 Weight loss]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "복압성 요실금 — 약부터?",
+    "point": "ACP 는 복압성 요실금에 전신 약물 치료를 권하지 않고(강한 권고), 골반저근 운동을 1차로 권한다 <sup>[3†]</sup>. 둘록세틴은 부작용(구역·자살 사고) 우려로 1차로 쓰지 않는다 <sup>[1 Medical interventions — SNRIs]</sup>.",
+    "exception": "",
+    "cites": "<sup>[3†]</sup> <sup>[1 Medical interventions]</sup>"
+   },
+   {
+    "contrast": "절박성 요실금 = 바로 항무스카린제?",
+    "point": "ACP 는 방광 훈련을 먼저 권하고, 방광 훈련이 실패하면 약물을 권한다 <sup>[3†]</sup>. 약은 효과가 몇 주 뒤에 나타나므로 시작 전 증상을 기록해 비교한다 <sup>[1 Medical interventions]</sup>.",
+    "exception": "1차 진료에서는 행동 치료와 함께 항무스카린제를 시작하기도 한다 — 시험 쟁점 Z3.",
+    "cites": ""
+   },
+   {
+    "contrast": "요역동학 검사부터?",
+    "point": "합병증 없는 복압성·절박성·혼합성 요실금에는 비수술 치료 전에 요역동학 검사를 권하지 않는다 — 초기 평가 뒤에도 진단이 불확실하거나, 증상과 진찰이 어긋나거나, 치료에 실패했을 때 한다 <sup>[1 Urodynamic studies]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "잔뇨가 많은데 항콜린제?",
+    "point": "항콜린 작용 약·마약성 진통제는 불완전 배뇨를 일으키는 원인 약이다 — 잔뇨가 많으면 원인 약을 줄이고, 이중 배뇨·간헐 도뇨로 비운다 <sup>[2 489장 p.3890]</sup> <sup>[2 489장 p.3893]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "기침 유발 검사 음성 = 복압성 아님?",
+    "point": "2–4기 골반장기탈출증은 요도를 꺾어 기침 유발 검사가 거짓 음성일 수 있다 — 탈출을 손가락으로 밀어 올리고 다시 검사하는 방법이 있으나 근거는 제한적이다 <sup>[1 Physical examination]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "전신 호르몬 요법이 요실금을 줄인다?",
+    "point": "전신 호르몬 대체 요법은 요실금을 악화시켰다(특히 에스트로겐+프로게스테론) <sup>[1 Vaginal oestrogen]</sup>. 위축 변화가 있으면 저용량 질 에스트로겐을 쓴다 — 요실금의 주 치료는 아니다 <sup>[2 489장 p.3890]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "잔뇨 측정은 배뇨 증상·증상 있는 골반장기탈출·만져지는 방광이 있을 때 권하며, 초음파(방광 스캐너)로 잰다 <sup>[1 Post-void residual volume assessment]</sup>. 노인은 병력·진찰만으로 불완전 배뇨를 찾기 어려워 대부분 잰다 <sup>[2 489장 p.3891]</sup>.",
+   "재발성 요로감염·무균 농뇨·혈뇨·지속 누출(누공 의심)·요폐·신경 증상·골반 방사선·요로 수술력은 전문의 의뢰 <sup>[1 Symptoms and risk factors]</sup>.",
+   "노인·쇠약자는 가역 원인(섬망·감염·약·정신 질환·과다 수분·운동 제한·변 매복)을 먼저 찾는다 <sup>[1 Symptoms and risk factors]</sup> <sup>[2 489장 p.3890]</sup>.",
+   "비만하면 유형과 무관하게 체중 감량·운동을 더한다 <sup>[3†]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "aoki-2017",
+    "org": "Aoki Y, Brown HW, Brubaker L, Cornu JN, Daly JO, Cartwright R (Nature Reviews Disease Primers)",
+    "title": "Urinary incontinence in women",
+    "kind": "review",
+    "citation": "Nat Rev Dis Primers 2017;3:17042",
+    "checked": "PMC 전문(PMC5878864) 대조 — 머리말(IUGA/ICS 정의: 복압성 = 기침·재채기·신체 활동과 함께, 절박성 = 갑작스럽고 미루기 어려운 요의와 함께, 혼합성), Mechanisms(복압성 = 요도 과운동·괄약근 약화·해먹 가설, 절박성 = 배뇨근 과활동·낮은 유순도·방광 과민), Diagnosis(병력·진찰·소변검사·잔뇨·전문의 의뢰 조건, 우세 증상으로 치료 방향), Symptoms and risk factors(의뢰 조건·노인 가역 원인 DIPPERS), Physical examination(기침 유발 검사 방광 약 300 mL·민감도·특이도 높음, 2–4기 탈출의 거짓 음성), Urinalysis(감염 선별, 과민성 방광 진단에 감염 배제 필요), Post-void residual volume assessment(측정 적응·초음파, 직후 >30 mL·10분 뒤 100 mL까지, ≥100 mL 재측정, 배뇨 장애가 치료 선택을 바꿈), Urodynamic studies(비수술 치료 전 비권고, 불확실·불일치·실패 때), Weight loss(3–5 % 감량 → 복압성 삽화 47 % 감소), PFMT(감독 PFMT 근거가 복압성에서 가장 강함, 절박성은 덜함, 장기 근거 부족), Medical interventions(효과 몇 주 뒤, 질 에스트로겐·전신 HRT 악화, 항무스카린 부작용·노인 인지, 미라베그론 고혈압, 둘록세틴 1차 아님), Stress incontinence surgery(보존 치료 먼저, 중부요도 슬링 1차 수술·완치 >80 %, 혼합성은 절박성 보조 치료 필요). 이 고찰에는 「overflow」라는 용어가 없다",
+    "doi": "10.1038/nrdp.2017.42",
+    "pmid": "28681849",
+    "verified": "text",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5878864/"
+   },
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 489: Caring for the Geriatric Patient",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 489장 Caring for the Geriatric Patient — Urinary Incontinence and Overactive Bladder, 인쇄쪽 3889–3893(표 489-10·489-11·489-12, 그림 489-9)",
+    "checked": "드라이브 22판 장 문서(489장)로 본문 대조 — p.3890 표 489-10 가역 원인(요로감염·위축성 질염·변 매복·고혈당·과다 카페인/수분·섬망·약: 이뇨제, 항콜린제와 마약성 진통제 = 불완전 배뇨, α 작용제, ACE 억제제 = 기침, 경구 에스트로겐은 요실금 유발·악화)·선 자세 기침 유발 검사, p.3891 3IQ(새는 상황으로 유형 구분, 활동·요의 없이 새면 「다른 원인」)·노인 대부분 잔뇨 측정, 잔뇨 0–100 정상·100–200 증상과 해석·>200 mL 비정상, 의뢰 조건, 항무스카린제·β3 작용제 = 과민성 방광·절박성, α 작용제는 FDA 미승인, p.3892 표 489-11 병력·진찰, p.3893 표 489-12 유형별 주 치료(복압성: 골반근 운동·행동·α 작용제·국소 에스트로겐·주입·수술 / 절박성: 골반근 운동·시간 배뇨·이중 배뇨·약 / 불완전 배뇨 동반: α 차단제(남성)·방광 훈련·이중 배뇨·간헐 도뇨·선택적 유치 도뇨). 노인 대상 장이라 젊은 여성 수치로 옮기지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   },
+   {
+    "id": "acp-2014",
+    "org": "American College of Physicians (Qaseem A, et al.)",
+    "title": "Nonsurgical management of urinary incontinence in women: a clinical practice guideline from the American College of Physicians",
+    "kind": "guideline",
+    "citation": "Ann Intern Med 2014;161(6):429-440",
+    "checked": "PubMed 초록과 대조 — 권고 6개와 등급: 복압성 PFMT 1차(강·높음), 절박성 방광 훈련(강·중등도), 혼합성 PFMT+방광 훈련(강·중등도), 복압성 전신 약물 반대(강·낮음), 방광 훈련 실패 시 절박성 약물(강·높음, 내약성·부작용·편의·비용으로 선택), 비만 여성 체중 감량·운동(강·중등도). 전문은 PMC 에 없어 보지 못했다",
+    "doi": "10.7326/M13-2410",
+    "pmid": "25222388",
+    "verified": "abstract",
+    "year": "2014",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.7326/M13-2410"
+   },
+   {
+    "id": "dumoulin-2018",
+    "org": "Dumoulin C, Cacciari LP, Hay-Smith EJC (Cochrane 체계적 고찰)",
+    "title": "Pelvic floor muscle training versus no treatment, or inactive control treatments, for urinary incontinence in women",
+    "kind": "review",
+    "citation": "Cochrane Database Syst Rev 2018;10:CD005654",
+    "checked": "PubMed 초록과 대조 — 31개 시험·1,817명, 복압성에서 PFMT 군 완치 보고 56 % vs 6 %(RR 8.38, 95 % CI 3.68–19.07, 높은 질), 모든 유형 35 % vs 6 %(RR 5.34, 중등도), 절박성 단독·혼합성 연구는 각 1개뿐, 부작용 드묾·경미, 추적 대개 12개월 미만. PMC 전문은 열지 않았다",
+    "doi": "10.1002/14651858.CD005654.pub4",
+    "pmid": "30288727",
+    "verified": "abstract",
+    "year": "2018",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6516955/"
+   },
+   {
+    "id": "lukacz-2017",
+    "org": "Lukacz ES, Santiago-Lastra Y, Albo ME, Brubaker L (JAMA 종설)",
+    "title": "Urinary Incontinence in Women: A Review",
+    "kind": "review",
+    "citation": "JAMA 2017;318(16):1592-1604",
+    "checked": "PubMed 초록과 대조 — 감염·혈뇨 배제, 심각한 기저 병변이 없으면 감독 없는 골반근 운동·생활 교정 시작, 절박성 약물은 광범위한 평가 없이 시작하고 제때 재평가, 중부요도 슬링 증상 호전 48–90 %·그물 합병증 <5 %. 전문은 보지 못했다",
+    "doi": "10.1001/jama.2017.12137",
+    "pmid": "29067433",
+    "verified": "abstract",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1001/jama.2017.12137"
+   },
+   {
+    "id": "al-dossari-2024",
+    "org": "Al-Dossari R, Kalra M, Adkison J, Nguyen BM (J Am Board Fam Med 종설)",
+    "title": "Non-Surgical Management of Urinary Incontinence",
+    "kind": "review",
+    "citation": "J Am Board Fam Med 2024;37(5):909-918",
+    "checked": "PubMed 초록과 대조 — 유형에 복압성·절박성(과민성 방광)·혼합성·신경인성·범람(overflow)을 나눔, 절박성 1차 = 행동 치료, 복압성 1차 = PFMT·질 기구, 항무스카린제·β3 작용제는 행동 치료로 호전되지 않을 때, β3 작용제는 항콜린 부작용이 적음, BPH 범람 요실금(남성) α1 차단제 1차, 신경인성 방광은 깨끗한 간헐 도뇨 1차(카테터 관련 감염 위험). 전문은 보지 못했다",
+    "doi": "10.3122/jabfm.2023.230471R1",
+    "pmid": "39978852",
+    "verified": "abstract",
+    "year": "2024",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.3122/jabfm.2023.230471R1"
+   }
+  ],
+  "checks": [
+   {
+    "q": "기침할 때 소량씩 새는 45세 여성, 소변검사 정상·잔뇨 정상. 첫 치료는?",
+    "a": "골반저근 운동. 복압성 요실금에는 전신 약물을 권하지 않고, 비수술 치료 전 요역동학 검사도 필요 없다."
+   },
+   {
+    "q": "절박성 요실금에서 약을 시작하는 시점은(ACP)?",
+    "a": "방광 훈련이 실패한 뒤. 약은 내약성·부작용·편의·비용으로 고르고, 효과는 몇 주 뒤에 판단한다."
+   },
+   {
+    "q": "요실금 여성의 잔뇨가 많으면 어떤 치료를 피하고 무엇을 하나?",
+    "a": "방광 수축을 더 줄이는 항콜린 작용 약 등 원인 약을 줄이고, 이중 배뇨·간헐 도뇨로 비운다. 요폐·출구 폐쇄는 전문의에게 보낸다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "여성 요실금 — 기본 평가에서 첫 치료까지",
+  "geo": {
+   "title": "여성 요실금 — 기본 평가에서 첫 치료까지",
+   "w": 760.4,
+   "h": 601.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "여성 요실금 — 새는 상황을",
+      "묻는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "ua",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "소변검사에서 감염·혈뇨?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "fix",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "감염 치료·혈뇨 평가를 먼저"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 192.0
+    },
+    {
+     "id": "pvr",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "잔뇨가 많은가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "overflow",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "범람 — 원인 약 정리·이중",
+      "배뇨·도뇨"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 282.0
+    },
+    {
+     "id": "when",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "언제 새는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 282.0
+    },
+    {
+     "id": "diary",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "배뇨일지·기침 유발 검사로",
+      "확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 320.4,
+     "y": 414.0
+    },
+    {
+     "id": "sui",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "복압성 — 골반저근 운동"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 207.4,
+     "y": 521.0
+    },
+    {
+     "id": "uui",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "절박성 — 방광 훈련, 실패 시",
+      "약"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 433.4,
+     "y": 521.0
+    },
+    {
+     "id": "mui",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "혼합성 — 골반저근 운동 +",
+      "방광 훈련"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 548.4,
+     "y": 414.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "ua",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ua",
+     "to": "fix",
+     "points": [
+      [
+       194.3,
+       149.0
+      ],
+      [
+       194.3,
+       178.0
+      ],
+      [
+       114.0,
+       178.0
+      ],
+      [
+       114.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "ua",
+     "to": "pvr",
+     "points": [
+      [
+       259.7,
+       149.0
+      ],
+      [
+       259.7,
+       178.0
+      ],
+      [
+       340.0,
+       178.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "pvr",
+     "to": "overflow",
+     "points": [
+      [
+       307.3,
+       239.0
+      ],
+      [
+       307.3,
+       268.0
+      ],
+      [
+       227.0,
+       268.0
+      ],
+      [
+       227.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "많음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "pvr",
+     "to": "when",
+     "points": [
+      [
+       372.7,
+       239.0
+      ],
+      [
+       372.7,
+       268.0
+      ],
+      [
+       453.0,
+       268.0
+      ],
+      [
+       453.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "when",
+     "to": "sui",
+     "points": [
+      [
+       394.2,
+       329.0
+      ],
+      [
+       394.2,
+       391.0
+      ],
+      [
+       304.4,
+       391.0
+      ],
+      [
+       304.4,
+       507.0
+      ],
+      [
+       272.8,
+       507.0
+      ],
+      [
+       272.8,
+       521.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "기침·재채기"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 359.0,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "when",
+     "to": "uui",
+     "points": [
+      [
+       472.6,
+       329.0
+      ],
+      [
+       472.6,
+       400.0
+      ],
+      [
+       532.4,
+       400.0
+      ],
+      [
+       532.4,
+       507.0
+      ],
+      [
+       564.1,
+       507.0
+      ],
+      [
+       564.1,
+       521.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "갑작스러운",
+       "요의"
+      ],
+      "w": 63.0,
+      "h": 30,
+      "x": 441.1,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "when",
+     "to": "mui",
+     "points": [
+      [
+       511.8,
+       329.0
+      ],
+      [
+       511.8,
+       391.0
+      ],
+      [
+       646.4,
+       391.0
+      ],
+      [
+       646.4,
+       414.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "둘 다"
+      ],
+      "w": 33.7,
+      "h": 17,
+      "x": 494.9,
+      "y": 366.0
+     }
+    },
+    {
+     "from": "when",
+     "to": "diary",
+     "points": [
+      [
+       433.4,
+       329.0
+      ],
+      [
+       433.4,
+       391.0
+      ],
+      [
+       418.4,
+       391.0
+      ],
+      [
+       418.4,
+       414.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불분명"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 412.9,
+      "y": 366.0
+     }
+    },
+    {
+     "from": "diary",
+     "to": "sui",
+     "points": [
+      [
+       385.8,
+       478.0
+      ],
+      [
+       385.8,
+       507.0
+      ],
+      [
+       338.1,
+       507.0
+      ],
+      [
+       338.1,
+       521.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "기침 때 샘"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 356.0,
+      "y": 482.0
+     }
+    },
+    {
+     "from": "diary",
+     "to": "uui",
+     "points": [
+      [
+       451.1,
+       478.0
+      ],
+      [
+       451.1,
+       507.0
+      ],
+      [
+       498.8,
+       507.0
+      ],
+      [
+       498.8,
+       521.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "요의 때 샘"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 421.4,
+      "y": 482.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "여성 요실금 — 새는 상황을 묻는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "소변검사에서 감염·혈뇨?"
+     }
+    ]
+   },
+   {
+    "id": "ua",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "소변검사에서 감염·혈뇨?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "감염 치료·혈뇨 평가를 먼저"
+     },
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "잔뇨가 많은가?"
+     }
+    ]
+   },
+   {
+    "id": "fix",
+    "num": 3,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "감염 치료·혈뇨 평가를 먼저",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pvr",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "잔뇨가 많은가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "많음",
+      "to": 5,
+      "toText": "범람 — 원인 약 정리·이중 배뇨·도뇨"
+     },
+     {
+      "label": "정상",
+      "to": 6,
+      "toText": "언제 새는가?"
+     }
+    ]
+   },
+   {
+    "id": "overflow",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "범람 — 원인 약 정리·이중 배뇨·도뇨",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "when",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "언제 새는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "기침·재채기",
+      "to": 9,
+      "toText": "복압성 — 골반저근 운동"
+     },
+     {
+      "label": "갑작스러운 요의",
+      "to": 10,
+      "toText": "절박성 — 방광 훈련, 실패 시 약"
+     },
+     {
+      "label": "둘 다",
+      "to": 7,
+      "toText": "혼합성 — 골반저근 운동 + 방광 훈련"
+     },
+     {
+      "label": "불분명",
+      "to": 8,
+      "toText": "배뇨일지·기침 유발 검사로 확인"
+     }
+    ]
+   },
+   {
+    "id": "mui",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "혼합성 — 골반저근 운동 + 방광 훈련",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "diary",
+    "num": 8,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "배뇨일지·기침 유발 검사로 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "기침 때 샘",
+      "to": 9,
+      "toText": "복압성 — 골반저근 운동"
+     },
+     {
+      "label": "요의 때 샘",
+      "to": 10,
+      "toText": "절박성 — 방광 훈련, 실패 시 약"
+     }
+    ]
+   },
+   {
+    "id": "sui",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "복압성 — 골반저근 운동",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "uui",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "절박성 — 방광 훈련, 실패 시 약",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.obgyn.vaginitis.ph-microscopy-differentiation": {
+  "id": "cn.obgyn.vaginitis.ph-microscopy-differentiation",
+  "title": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
+  "objective": "질 분비물 환자에서 질 pH·아민 검사·현미경 소견으로 세균질증·칸디다 질염·트리코모나스 질염을 가르고, 각각의 치료와 성 파트너 치료 여부를 고른다",
+  "objectiveKind": "감별",
+  "condition": "질염(vaginitis) — 세균질증(bacterial vaginosis) · 외음질 칸디다증(vulvovaginal candidiasis) · 트리코모나스증(trichomoniasis)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Infectious Disease"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "4770cf1142a0ddae",
+  "summary": [
+   "결론: pH >4.5+아민 냄새+단서세포는 세균질증, pH 정상+효모·가성균사는 칸디다, 움직이는 편모충은 트리코모나스.",
+   "시험 단서: 생선 냄새 묽은 회백색 분비물(whiff test), 흰 덩어리 분비물+외음 가려움, 황록색 분비물·딸기 자궁경부.",
+   "왜: 젖산균이 혐기균으로 바뀌면 pH·아민이 오르고, 칸디다는 pH 를 바꾸지 않으며, 원충은 성 접촉으로 옮는다.",
+   "파트너: 트리코모나스만 현재 파트너를 함께 치료한다 — 세균질증·칸디다는 파트너 치료를 권하지 않는다.",
+   "도말 음성은 배제가 아니다 — 현미경 민감도는 약 50 %라 증상이 있으면 NAAT·배양으로 확인한다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 pH 다음에 도말인가",
+    "deep": false,
+    "html": "<ul>\n<li>병력만으로는 질염 원인을 맞히기 어렵고 잘못된 투약으로 이어진다 — 진료실에서는 <strong>pH · KOH 아민 검사 · 생리식염수/KOH 도말</strong> 셋으로 원인을 정한다 <sup>[1 Diseases Characterized by Vulvovaginal Itching…]</sup>.</li>\n<li>pH 는 둘로 나눌 뿐이다: &gt;4.5 면 세균질증·트리코모나스, 정상이면 칸디다 쪽. 특이도가 낮아 결론은 도말에서 낸다 <sup>[1 Diseases Characterized by Vulvovaginal Itching…]</sup>.</li>\n<li>같은 「질염」이라도 <strong>파트너 치료</strong>는 원인에 따라 갈린다 — 성 접촉으로 옮는 트리코모나스만 현재 파트너를 함께 치료한다 <sup>[1 Trichomoniasis — Management of Sex Partners]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 젖산균 질에서 무엇으로 바뀌나",
+    "deep": false,
+    "html": "<ul>\n<li><strong>세균질증(bacterial vaginosis, BV)</strong>: 과산화수소·젖산을 만드는 정상 젖산균이 고농도 혐기균으로 바뀐 질 세균 불균형(dysbiosis)이다. 상피세포 위에 여러 균의 생물막이 생기고, 이 작은 혐기균이 상피세포 가장자리를 덮은 것이 단서세포다 <sup>[1 Bacterial Vaginosis]</sup>. KOH 를 넣으면 아민(트리메틸아민) 냄새가 난다 <sup>[1 BV — Diagnostic Considerations]</sup>. 남성 생식기에서도 관련 균이 나오지만 남성 파트너 치료는 재발을 막지 못했다 <sup>[1 Bacterial Vaginosis]</sup>.</li>\n<li><strong>칸디다 질염(vulvovaginal candidiasis, VVC)</strong>: 칸디다(<em>Candida</em>) 효모가 원인이다. 질 pH 는 정상(&lt;4.5)이고, KOH 가 세포 성분을 녹여 효모·가성균사가 잘 보인다. 대개 성 접촉으로 옮지 않는다 <sup>[1 Uncomplicated VVC — Diagnostic Considerations]</sup>.</li>\n<li><strong>트리코모나스증(trichomoniasis)</strong>: 원충 <em>Trichomonas vaginalis</em> 의 성매개감염. 70–85 %는 증상이 거의 없고, 치료하지 않으면 수개월~수년 간다 <sup>[1 Trichomoniasis]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — pH·아민·도말",
+    "deep": false,
+    "html": "<ul>\n<li>표가 세 질환의 pH·아민·도말·진찰 소견을 나란히 놓는다. 세균질증은 Amsel 4개 중 3개로 임상 진단한다(기준 칸) <sup>[1 BV — Diagnostic Considerations]</sup>.</li>\n<li><strong>음성 결과의 한계</strong>: 도말의 편모충·효모 검출 민감도는 약 50 %라 음성이어도 배제하지 못한다 — 트리코모나스는 NAAT, 칸디다는 배양으로 확인한다 <sup>[1 Diseases Characterized by Vulvovaginal Itching…]</sup>.</li>\n<li>자궁경부 세포검사(Pap)는 세균질증·트리코모나스의 진단 검사가 아니다 — Pap 에서 트리코모나스가 보이면 민감한 검사로 다시 확인한다 <sup>[1 BV — Diagnostic Considerations]</sup> <sup>[1 Trichomoniasis — Diagnostic Considerations]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 치료와 성 파트너",
+    "deep": false,
+    "html": "<ul>\n<li>세균질증은 <strong>증상이 있을 때</strong> 치료한다. 경구와 국소 치료의 효과를 직접 비교한 자료는 없다 <sup>[1 BV — Treatment]</sup>.</li>\n<li>트리코모나스는 니트로이미다졸만 효과가 입증되었다. 여성은 7일 요법이 단회보다 낫다. 치료 뒤 성생활하는 여성은 3개월 안에 다시 검사한다(재감염이 많다) <sup>[1 Trichomoniasis — Follow-Up]</sup>. HIV·매독·임질·클라미디아 검사도 함께 한다 <sup>[1 Trichomoniasis — Other Management Considerations]</sup>.</li>\n<li>칸디다는 단기 국소 아졸로 증상 완화·배양 음성이 80–90 % <sup>[1 Uncomplicated VVC — Treatment]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>세균질증 진단 여성은 HIV 와 다른 성매개감염 검사를 받는다 <sup>[1 BV — Other Management Considerations]</sup>. 클린다마이신 크림은 기름 기반이라 라텍스 콘돔을 약하게 할 수 있다 <sup>[1 BV — Treatment]</sup>.</li>\n<li>복잡 칸디다증(1년 3회 이상 재발 · 중증 · 비알비칸스 · 당뇨·면역저하)은 단기 치료가 아니라 긴 치료가 필요하다 — 재발성은 처음 7–14일 국소 또는 플루코나졸 3회(1·4·7일) 뒤 주 1회 6개월 유지 <sup>[1 Complicated VVC — Recurrent VVC]</sup>.</li>\n<li>반복되는 트리코모나스는 대부분 재감염이다 — 치료받지 않은 파트너에 다시 노출됐는지 먼저 본다 <sup>[1 Trichomoniasis — Recurrent Trichomoniasis]</sup>.</li>\n<li>국내 교과서·KMLE 해설의 권고 문구는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 트리코모나스 여성 요법</strong> — 시험 기준: 여성은 메트로니다졸 500 mg 하루 2번 7일 <sup>[1 Trichomoniasis — Recommended Regimens]</sup> / 다른 기준: 2 g 단회는 2021 지침에서 남성 권고·남녀 대안(티니다졸)으로 남았다 <sup>[1 Trichomoniasis — Recommended Regimens]</sup> / 왜 다른가: 다기관 무작위 시험에서 7일 요법이 1개월 재양성을 절반으로 줄였고, 남성에서는 비교 시험이 없다 <sup>[1 Trichomoniasis — Treatment]</sup> / 시험에서는: KMLE 는 국내 교과서·해설과 대조하지 않았다(검토 항목) · USMLE 는 2021 지침 — 여성 7일·남성 단회로 답한다.</li>\n<li><strong>Z2 새 근거 · 메트로니다졸과 음주</strong> — 시험 기준: 2021 지침은 메트로니다졸·티니다졸 복용 중 금주가 필요 없다고 쓴다(아세트알데하이드 탈수소효소를 억제하지 않는다) <sup>[1 BV — Treatment]</sup> / 다른 기준: 예전 경고는 실험실 실험과 개별 증례에 근거했다고 같은 지침이 적는다 <sup>[1 BV — Treatment]</sup> / 왜 다른가: 증례의 반응이 알코올 자체나 메트로니다졸 부작용으로도 설명된다 / 시험에서는: KMLE·USMLE 해설이 이 개정을 반영했는지는 대조하지 않았다 — 질염 치료 선택 문항에서는 금주 지시를 정답의 가르는 근거로 삼지 않는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "질염 셋 — 진료실 검사로 가르기",
+    "columns": [
+     "질환",
+     "pH·아민(KOH)",
+     "현미경",
+     "분비물·진찰"
+    ],
+    "rows": [
+     [
+      "세균질증",
+      "pH &gt;4.5 · KOH 넣으면 생선 냄새(whiff)",
+      "식염수: 단서세포(clue cell) — 가장자리가 작은 혐기균으로 가려진 상피세포",
+      "균질하고 묽은 우유 같은 분비물이 질벽을 덮는다"
+     ],
+     [
+      "칸디다 질염",
+      "정상 pH(&lt;4.5) · 아민 냄새 없음",
+      "KOH: 싹트는 효모·균사·가성균사",
+      "외음 가려움·부종·균열, 진한 흰 덩어리 분비물, 외부 배뇨통"
+     ],
+     [
+      "트리코모나스",
+      "대개 pH 상승(정상일 수도) · 아민 냄새 가능",
+      "식염수: 움직이는 편모충 — 채취 직후 봐야 한다",
+      "퍼지고 냄새나는 황록색 분비물, 딸기 모양 자궁경부(질확대경에서 더 잘 보임)"
+     ]
+    ],
+    "note": "모두 cdc-sti-2021 의 질염 머리말 · 각 질환 진단 절. 원충·효모 모두 도말 민감도는 NAAT·배양 대비 약 50 % 다."
+   },
+   {
+    "title": "치료 · 파트너 · 임신",
+    "columns": [
+     "질환",
+     "권고 치료(비임신)",
+     "성 파트너",
+     "임신"
+    ],
+    "rows": [
+     [
+      "세균질증(증상 있을 때)",
+      "메트로니다졸 500 mg 하루 2번 7일, 또는 메트로니다졸 젤 0.75 % 5일, 또는 클린다마이신 크림 2 % 7일 <sup>[1 BV — Recommended Regimens]</sup>",
+      "일상적 치료 권하지 않음 <sup>[1 BV — Management of Sex Partners]</sup>",
+      "증상 있으면 모두 치료(권고 요법 어느 것이나). 티니다졸 피함. 무증상 선별 권하지 않음 <sup>[1 BV — Pregnancy]</sup>"
+     ],
+     [
+      "칸디다 질염(비복잡)",
+      "단기 국소 아졸(1–3일 포함) 또는 플루코나졸 150 mg 경구 단회 <sup>[1 VVC — Recommended Regimens]</sup>",
+      "자료 없어 권하지 않음 — 귀두염 있는 남성만 국소 항진균제 <sup>[1 Uncomplicated VVC — Management of Sex Partners]</sup>",
+      "국소 아졸 7일만. 플루코나졸 쓰지 않음 <sup>[1 Complicated VVC — Pregnancy]</sup>"
+     ],
+     [
+      "트리코모나스",
+      "여성: 메트로니다졸 500 mg 하루 2번 7일. 남성: 메트로니다졸 2 g 단회. 대안: 티니다졸 2 g 단회 <sup>[1 Trichomoniasis — Recommended Regimens]</sup>",
+      "현재 파트너를 추정 치료로 보낸다. 둘 다 치료를 마칠 때까지 성관계 금지 <sup>[1 Trichomoniasis — Management of Sex Partners]</sup>",
+      "증상 있으면 주수와 관계없이 검사·치료. 티니다졸 피함 <sup>[1 Trichomoniasis — Pregnancy]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "세균질증도 성 파트너를 함께 치료?",
+    "point": "세균질증은 성생활과 관련되지만 파트너를 치료해도 여성의 반응·재발이 달라지지 않아 일상적 파트너 치료를 권하지 않는다. 파트너를 함께 치료하는 것은 트리코모나스다 <sup>[1 Bacterial Vaginosis — Management of Sex Partners]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 Trichomoniasis — Management of Sex Partners]</sup>"
+   },
+   {
+    "contrast": "트리코모나스 — 여성도 메트로니다졸 2 g 단회?",
+    "point": "여성 권고는 메트로니다졸 500 mg 하루 2번 7일이다. 7일 요법이 2 g 단회보다 1개월 뒤 재양성을 절반으로 줄였다. 2 g 단회는 남성 권고다 <sup>[1 Trichomoniasis — Treatment]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "트리코모나스에 메트로니다졸 질정·젤?",
+    "point": "질 젤은 요도·질 주위샘에서 치료 농도에 이르지 못해 경구보다 덜 효과적이어서 권하지 않는다 — 경구 니트로이미다졸만 효과가 입증된 약군이다 <sup>[1 Trichomoniasis — Treatment]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "pH 정상이면 트리코모나스 배제?",
+    "point": "트리코모나스는 대개 pH 가 오르지만 정상 pH 에서도 있을 수 있다. pH 는 특이도가 낮아 반드시 도말로 이어 본다 <sup>[1 Diseases Characterized by Vulvovaginal Itching…]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "증상 없는 칸디다 배양 양성 = 치료?",
+    "point": "여성의 10–20 %가 질에 칸디다를 지니고 있어 증상·징후 없는 배양 양성은 치료 적응이 아니다 <sup>[1 Uncomplicated VVC — Diagnostic Considerations]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "임신부 칸디다 질염에 플루코나졸 150 mg 단회?",
+    "point": "임신 중에는 국소 아졸 7일만 권한다. 플루코나졸 150 mg 단회는 자연유산·선천 기형과의 연관이 보고되어 쓰지 않는다 <sup>[1 Complicated VVC — Pregnancy]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "pH 는 특이도가 낮다 — 트리코모나스는 정상 pH 에서도 있을 수 있어, pH 정상이라도 증상이 맞으면 식염수 도말·NAAT 를 함께 본다 <sup>[1 Diseases Characterized by Vulvovaginal Itching…]</sup>.",
+   "식염수 도말은 채취 직후 본다 — 편모충 검출 민감도는 1시간 안에 약 20 %까지 떨어진다 <sup>[1 Trichomoniasis — Diagnostic Considerations]</sup>.",
+   "원충·효모가 없는데 백혈구만 많으면 자궁경부염을 생각한다. 원인균이 없는데 염증 소견만 있으면 기계적·화학적·알레르기 원인도 있다 <sup>[1 Diseases Characterized by Vulvovaginal Itching…]</sup>.",
+   "칸디다 도말 음성이지만 증상이 있으면 칸디다 배양을 고려한다(배양이 기준 표준) <sup>[1 Uncomplicated VVC — Diagnostic Considerations]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "amsel",
+    "name": "Amsel 기준(세균질증 임상 진단)",
+    "kind": "진단 기준",
+    "population": "질 증상이 있는 여성",
+    "statement": "네 가지 중 셋 이상 — ① 균질하고 묽은(우유 같은) 분비물이 질벽을 고르게 덮음 ② 현미경에서 단서세포 ③ 질액 pH >4.5 ④ 10 % KOH 를 넣기 전·후 생선 냄새(whiff test) [[cdc-sti-2021: BV — Diagnostic Considerations]]",
+    "exceptions": "Nugent 점수(그람 염색) 대비 민감도 37–70 %, 특이도 94–99 %. 그람 염색이 검사실 기준 표준(Nugent 7–10 = 세균질증) [[cdc-sti-2021: BV — Diagnostic Considerations]]",
+    "source": "cdc-sti-2021",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "cdc-sti-2021",
+    "org": "CDC (Workowski KA, Bachmann LH, Chan PA, et al.)",
+    "title": "Sexually Transmitted Infections Treatment Guidelines, 2021",
+    "kind": "guideline",
+    "citation": "MMWR Recomm Rep 2021;70(4):1-187 — 「Diseases Characterized by Vulvovaginal Itching, Burning, Irritation, Odor, or Discharge」 절(Bacterial Vaginosis · Trichomoniasis · Vulvovaginal Candidiasis)",
+    "checked": "PMC8344968 전문(PubMed MCP)에서 질염 머리말 · 세균질증 · 트리코모나스증 · 외음질 칸디다증 절을 처음부터 끝까지 읽음 — pH >4.5 는 세균질증·트리코모나스(트리코모나스는 정상 pH 가능), KOH 아민 냄새 = 세균질증·트리코모나스, 단서세포 정의, 도말 민감도 약 50 %(NAAT·배양 대비), WBC 만 있으면 자궁경부염 가능; Amsel 4개 중 3개 · Nugent 0–3/4–6/7–10 · Amsel 민감도 37–70 %·특이도 94–99 %; 세균질증 파트너 치료 권하지 않음·임신 중 증상 있으면 치료·무증상 선별 안 함·티니다졸 피함·메트로니다졸과 음주 금지 불필요; 트리코모나스 여성 7일 요법 근거(2 g 단회 대비 재양성 절반)·질 젤 비권고·파트너 추정 치료·3개월 내 재검·임신 중 티니다졸 피함; 칸디다 정상 pH(<4.5)·KOH 로 효모·가성균사·증상 없는 배양 양성은 치료 안 함(10–20 % 보유)·파트너 치료 자료 없음·임신 중 국소 아졸 7일만·플루코나졸 150 mg 단회 쓰지 않음·재발(1년 3회 이상) 정의. PMC 텍스트에서 권고 요법 상자의 기울임 약 이름이 빠져 있어, 상자의 약 이름·제형은 같은 지침의 CDC 웹판(cdc.gov/std/treatment-guidelines/bv.htm · trichomoniasis.htm · candidiasis.htm, 2026-11-20 열람)에서 대조했다",
+    "doi": "10.15585/mmwr.rr7004a1",
+    "pmid": "34292926",
+    "verified": "text",
+    "year": "2021",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8344968/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "질 분비물에 10 % KOH 를 떨어뜨리자 생선 냄새가 났다. 가능한 원인 둘은?",
+    "a": "세균질증과 트리코모나스. 칸디다는 아민 냄새가 없고 pH 도 정상이다."
+   },
+   {
+    "q": "트리코모나스 여성 환자와 그 남성 파트너의 권고 치료는 각각?",
+    "a": "여성은 메트로니다졸 500 mg 하루 2번 7일, 남성은 메트로니다졸 2 g 단회. 현재 파트너는 추정 치료로 보내고 둘 다 치료를 마칠 때까지 성관계를 피한다."
+   },
+   {
+    "q": "세균질증이 반복되는 여성의 남편을 함께 치료해야 하나?",
+    "a": "권하지 않는다. 파트너 치료가 여성의 치료 반응·재발을 바꾸지 않았다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "질 분비물 — pH 에서 도말, 치료와 파트너까지",
+  "geo": {
+   "title": "질 분비물 — pH 에서 도말, 치료와 파트너까지",
+   "w": 682.7,
+   "h": 592.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "질 분비물·가려움·냄새"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 273.3,
+     "y": 16.0
+    },
+    {
+     "id": "ph",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "질 pH >4.5?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 273.4,
+     "y": 85.0
+    },
+    {
+     "id": "test",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "pH 종이 · 식염수·KOH",
+      "도말을 시행"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 273.4,
+     "y": 195.0
+    },
+    {
+     "id": "wet",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "식염수 도말에 움직이는",
+      "편모충?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 160.5,
+     "y": 302.0
+    },
+    {
+     "id": "tv",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "트리코모나스 —",
+      "메트로니다졸 7일 + 파트너",
+      "치료"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 409.0
+    },
+    {
+     "id": "amsel",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "Amsel 4개 중 3개 이상?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 409.0
+    },
+    {
+     "id": "bv",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "세균질증 — 메트로니다졸 ·",
+      "파트너 치료 안 함"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 113.8,
+     "y": 512.0
+    },
+    {
+     "id": "koh",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "KOH 에 효모·가성균사?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 386.5,
+     "y": 302.0
+    },
+    {
+     "id": "vvc",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "칸디다 — 아졸 · 파트너 치료",
+      "안 함"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 470.7,
+     "y": 409.0
+    },
+    {
+     "id": "more",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "도말 음성 = 배제 아님 →",
+      "NAAT·배양 · 자궁경부염"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 339.8,
+     "y": 512.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "ph",
+     "points": [
+      [
+       371.3,
+       63.0
+      ],
+      [
+       371.4,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ph",
+     "to": "wet",
+     "points": [
+      [
+       322.4,
+       132.0
+      ],
+      [
+       322.4,
+       181.0
+      ],
+      [
+       257.4,
+       181.0
+      ],
+      [
+       257.4,
+       288.0
+      ],
+      [
+       225.8,
+       288.0
+      ],
+      [
+       225.8,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       ">4.5"
+      ],
+      "w": 33.5,
+      "h": 17,
+      "x": 305.6,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "ph",
+     "to": "koh",
+     "points": [
+      [
+       420.4,
+       132.0
+      ],
+      [
+       420.4,
+       181.0
+      ],
+      [
+       485.4,
+       181.0
+      ],
+      [
+       485.4,
+       288.0
+      ],
+      [
+       517.2,
+       288.0
+      ],
+      [
+       517.2,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "≤4.5"
+      ],
+      "w": 33.5,
+      "h": 17,
+      "x": 403.6,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "ph",
+     "to": "test",
+     "points": [
+      [
+       371.4,
+       132.0
+      ],
+      [
+       371.4,
+       195.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "측정 안 함"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 341.7,
+      "y": 156.0
+     }
+    },
+    {
+     "from": "test",
+     "to": "wet",
+     "points": [
+      [
+       338.8,
+       259.0
+      ],
+      [
+       338.8,
+       288.0
+      ],
+      [
+       291.2,
+       288.0
+      ],
+      [
+       291.2,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "pH 높음"
+      ],
+      "w": 46.5,
+      "h": 17,
+      "x": 315.5,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "test",
+     "to": "koh",
+     "points": [
+      [
+       404.1,
+       259.0
+      ],
+      [
+       404.1,
+       288.0
+      ],
+      [
+       451.8,
+       288.0
+      ],
+      [
+       451.8,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "pH 정상"
+      ],
+      "w": 46.5,
+      "h": 17,
+      "x": 380.9,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "wet",
+     "to": "tv",
+     "points": [
+      [
+       225.8,
+       366.0
+      ],
+      [
+       225.8,
+       395.0
+      ],
+      [
+       114.0,
+       395.0
+      ],
+      [
+       114.0,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "보임"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 210.8,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "wet",
+     "to": "amsel",
+     "points": [
+      [
+       291.2,
+       366.0
+      ],
+      [
+       291.2,
+       395.0
+      ],
+      [
+       340.0,
+       395.0
+      ],
+      [
+       340.0,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안 보임"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 268.8,
+      "y": 370.0
+     }
+    },
+    {
+     "from": "amsel",
+     "to": "bv",
+     "points": [
+      [
+       307.3,
+       456.0
+      ],
+      [
+       307.3,
+       498.0
+      ],
+      [
+       211.8,
+       498.0
+      ],
+      [
+       211.8,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 460.0
+     }
+    },
+    {
+     "from": "amsel",
+     "to": "more",
+     "points": [
+      [
+       372.7,
+       456.0
+      ],
+      [
+       372.7,
+       498.0
+      ],
+      [
+       405.1,
+       498.0
+      ],
+      [
+       405.1,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 460.0
+     }
+    },
+    {
+     "from": "koh",
+     "to": "vvc",
+     "points": [
+      [
+       517.2,
+       349.0
+      ],
+      [
+       517.2,
+       395.0
+      ],
+      [
+       568.7,
+       395.0
+      ],
+      [
+       568.7,
+       409.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "보임"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 502.2,
+      "y": 353.0
+     }
+    },
+    {
+     "from": "koh",
+     "to": "more",
+     "points": [
+      [
+       451.8,
+       349.0
+      ],
+      [
+       451.8,
+       395.0
+      ],
+      [
+       454.7,
+       395.0
+      ],
+      [
+       454.7,
+       498.0
+      ],
+      [
+       470.5,
+       498.0
+      ],
+      [
+       470.5,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안 보임"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 429.4,
+      "y": 353.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "질 분비물·가려움·냄새",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "질 pH >4.5?"
+     }
+    ]
+   },
+   {
+    "id": "ph",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "질 pH >4.5?",
+    "note": "",
+    "branches": [
+     {
+      "label": ">4.5",
+      "to": 4,
+      "toText": "식염수 도말에 움직이는 편모충?"
+     },
+     {
+      "label": "≤4.5",
+      "to": 5,
+      "toText": "KOH 에 효모·가성균사?"
+     },
+     {
+      "label": "측정 안 함",
+      "to": 3,
+      "toText": "pH 종이 · 식염수·KOH 도말을 시행"
+     }
+    ]
+   },
+   {
+    "id": "test",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "pH 종이 · 식염수·KOH 도말을 시행",
+    "note": "",
+    "branches": [
+     {
+      "label": "pH 높음",
+      "to": 4,
+      "toText": "식염수 도말에 움직이는 편모충?"
+     },
+     {
+      "label": "pH 정상",
+      "to": 5,
+      "toText": "KOH 에 효모·가성균사?"
+     }
+    ]
+   },
+   {
+    "id": "wet",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "식염수 도말에 움직이는 편모충?",
+    "note": "",
+    "branches": [
+     {
+      "label": "보임",
+      "to": 6,
+      "toText": "트리코모나스 — 메트로니다졸 7일 + 파트너 치료"
+     },
+     {
+      "label": "안 보임",
+      "to": 7,
+      "toText": "Amsel 4개 중 3개 이상?"
+     }
+    ]
+   },
+   {
+    "id": "koh",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "KOH 에 효모·가성균사?",
+    "note": "",
+    "branches": [
+     {
+      "label": "보임",
+      "to": 8,
+      "toText": "칸디다 — 아졸 · 파트너 치료 안 함"
+     },
+     {
+      "label": "안 보임",
+      "to": 10,
+      "toText": "도말 음성 = 배제 아님 → NAAT·배양 · 자궁경부염"
+     }
+    ]
+   },
+   {
+    "id": "tv",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "트리코모나스 — 메트로니다졸 7일 + 파트너 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "amsel",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "Amsel 4개 중 3개 이상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "세균질증 — 메트로니다졸 · 파트너 치료 안 함"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "도말 음성 = 배제 아님 → NAAT·배양 · 자궁경부염"
+     }
+    ]
+   },
+   {
+    "id": "vvc",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "칸디다 — 아졸 · 파트너 치료 안 함",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bv",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "세균질증 — 메트로니다졸 · 파트너 치료 안 함",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "more",
+    "num": 10,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "도말 음성 = 배제 아님 → NAAT·배양 · 자궁경부염",
     "note": "",
     "branches": []
    }
@@ -92171,6 +102242,3566 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.ent.adult-neck-mass.malignancy-workup": {
+  "id": "cn.ent.adult-neck-mass.malignancy-workup",
+  "title": "성인 목덩이 — 악성 위험이면 영상·세침흡인 먼저",
+  "objective": "성인의 목덩이에서 악성 위험 소견(감염 병력 없이 2주 이상 지속 · 고정 · 단단함 · 1.5 cm 초과 · 피부 궤양)을 가려, 항생제로 지켜보지 않고 조영 CT/MRI 와 세침흡인검사로 진행하는 다음 검사를 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "성인 목덩이(adult neck mass) — 두경부 편평세포암 전이(metastatic head and neck squamous cell carcinoma) 배제",
+  "topic": "Otorhinolaryngology",
+  "seeAlso": [
+   "Hematology & Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "ce91ae427b7a8268",
+  "summary": [
+   "결론: 악성 위험이 높은 성인 목덩이는 조영 CT(또는 MRI)와 세침흡인검사(FNA)로 간다 — 절개 생검을 먼저 하지 않는다.",
+   "시험 단서: 감염 병력 없이 2주 넘게 그대로인 목덩이, 고정·단단함·1.5 cm 초과, 흡연·음주, 쉰 목소리·연하곤란·귀 통증.",
+   "왜: 성인의 지속 목덩이는 대부분 종양이고 악성이 가장 많다 — 처음이자 유일한 소견이 두경부암 전이일 수 있다.",
+   "세균 감염 징후가 없으면 항생제를 일상적으로 주지 않는다 — 항생제를 계속하는 동안 조기 진단 기회를 잃는다.",
+   "낭성 목덩이도 진단이 나올 때까지 양성으로 단정하지 않는다(HPV 관련 인두암 전이 가능)."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 항생제 관찰이 아니라 영상·FNA 인가",
+    "deep": false,
+    "html": "<ul>\n<li>소아의 목덩이는 대부분 감염이지만 <strong>성인의 지속 목덩이는 대부분 종양이고 악성이 가장 많다</strong> — 증상 없는 덩어리가 두경부 편평세포암(head and neck squamous cell carcinoma, HNSCC) · 림프종 · 갑상선암 · 침샘암의 첫 소견일 수 있다 <sup>[1† Objective]</sup>.</li>\n<li>전이성 두경부암은 진단이 늦어지면 병기가 올라가 예후가 나빠진다. 그래서 위험이 높으면 바로 <strong>조영 CT/MRI</strong>(강한 권고)와 <strong>FNA</strong> 로 간다 <sup>[1† 강한 권고(영상), KAS 7]</sup>.</li>\n<li>세균 감염 징후가 없으면 항생제를 일상적으로 주지 않는다 <sup>[1† 반대 권고(항생제)]</sup>. 항생제로 곧 낫지 않는 병변에 항생제만 이어 가면 조기 진단 기회를 잃는다 <sup>[2 82장 p.611]</sup>.</li>\n<li>절개 생검보다 FNA 가 먼저인 이유: 원발 부위를 찾는 검사(표적 진찰 · 영상 · 마취하 내시경)가 남아 있을 때 목을 먼저 열지 않는다 — 지침은 개방 생검 전 마취하 상부 호흡소화관 검사를 권한다 <sup>[1† KAS 7, KAS 10]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 점막 암에서 목 림프절로",
+    "deep": false,
+    "html": "<ul>\n<li>두경부 상피암은 부비동 · 구강 · 비인두 · 구인두 · 하인두 · 후두 점막에서 생기는 편평세포암이 대부분이다. 흡연과 음주는 상승 작용을 하는 가장 큰 환경 요인이고, EBV 는 비인두암, HPV-16 은 구인두(편도 · 혀뿌리)암과 연관된다 <sup>[2 82장 p.610]</sup>.</li>\n<li>구인두 · 하인두암은 초기에 증상이 거의 없고, HPV 관련 종양은 <strong>목 림프절 비대가 첫 소견</strong>인 경우가 많다 — 원발 병변이 작아 진찰 · 내시경에서 안 보일 수 있다(원발 불명암) <sup>[2 82장 p.611~612]</sup>.</li>\n<li>위쪽 목 림프절의 편평세포암은 두경부 점막에서 왔을 가능성이 높고, 쇄골위 림프절은 흉부 · 복부 원발일 수도 있다 <sup>[2 82장 p.611]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 악성 위험이 높은 목덩이",
+    "deep": false,
+    "html": "<ul>\n<li>표가 지침의 두 기준(경과 · 진찰)과 해리슨의 위험 요인 · 동반 증상을 나란히 놓는다.</li>\n<li>위험이 높지 않다고 판정해도 재평가 기준을 알려 주고 추적 계획을 남긴다 — 「낮음」은 배제가 아니다 <sup>[1† KAS 4]</sup>.</li>\n<li>침샘 덩어리는 위치가 악성 가능성을 바꾼다 — 귀밑샘 종양은 대부분 양성, 턱밑 · 혀밑샘은 절반, 소침샘은 대부분 악성이다 <sup>[2 82장 p.610]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 영상, FNA, 그다음",
+    "deep": false,
+    "html": "<ul>\n<li>표가 다섯 단계를 순서대로 놓는다. 영상은 원발 부위와 범위를, FNA 는 조직 진단을 준다.</li>\n<li>FNA 가 편평세포암이면 범내시경(panendoscopy)으로 의심 부위와 흔한 원발 부위(비인두 · 편도 · 혀뿌리 · 이상와)를 생검한다 <sup>[2 82장 p.612]</sup>. 림프절 침범이 있으면 흉부 · 상복부 CT 로 원격 전이와 둘째 원발 폐암을 본다 <sup>[2 82장 p.611]</sup>.</li>\n<li>진단이 나오지 않으면 병력 · 진찰에 맞춘 추가 검사 → 마취하 상부 호흡소화관 검사 → 그다음에 개방 생검 <sup>[1† KAS 9, KAS 10]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>이 지침은 18세 이상에만 적용한다. 갑상선 · 침샘 · 하악 · 치성 기원으로 확인된 덩어리의 관리, 진단 뒤 치료는 범위 밖이다 <sup>[1† Purpose]</sup>.</li>\n<li>백반증(leukoplakia) · 홍반증(erythroplakia)은 이형성 · 상피내암일 수 있어 생검한다 <sup>[2 82장 p.611]</sup>.</li>\n<li>국내 교과서 · KMLE 해설의 검사 순서 문구는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 원발 불명 목 림프절 — FNA 만인가, 절제도 되나</strong> — 시험 기준: 악성 위험 목덩이는 개방 생검 대신 FNA, 개방 생검은 마취하 상부 호흡소화관 검사 뒤 <sup>[1† KAS 7, KAS 10]</sup> / 다른 기준: 해리슨 22판은 원발이 안 보이는 림프절 침범에서 FNA 또는 림프절 절제(특히 한 개만 침범해 보일 때)로 진단한다고 적는다 <sup>[2 82장 p.612]</sup> / 왜 다른가: 지침은 첫 진료의(1차 · 응급 · 치과)가 할 「첫 조직 검사」를 정하고, 해리슨 그림 82-1 은 종양 전문의의 진단 경로(림프종 · 육종 감별 포함)를 그린다 / 시험에서는: KMLE 는 국내 교과서와 대조하지 않았다(검토 항목) · USMLE 의 다음 검사 문항은 FNA 를 고른다(내 판단 — 지침 기준).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "악성 위험을 올리는 소견",
+    "columns": [
+     "어디서",
+     "소견",
+     "근거"
+    ],
+    "rows": [
+     [
+      "병력 — 경과",
+      "감염 원인 병력이 없고 2주 이상 크기 변동 없이 지속, 또는 기간 불명",
+      "<sup>[1† KAS 1]</sup>"
+     ],
+     [
+      "진찰 — 덩어리",
+      "하나 이상: 주위 조직에 고정 · 단단함 · 크기 &gt;1.5 cm · 덮인 피부 궤양",
+      "<sup>[1† KAS 2]</sup>"
+     ],
+     [
+      "병력 — 위험 요인",
+      "흡연 · 음주(함께면 상승 작용) · 무연 담배, HPV(구인두 — 40~50대) · EBV(비인두)",
+      "<sup>[2 82장 p.610~611]</sup>"
+     ],
+     [
+      "병력 — 동반 증상",
+      "2–4주 넘게 지속하는 두경부 증상 · 쉰 목소리 · 연하곤란 · 연하통 · 귀 통증 · 한쪽 장액성 중이염 · 코막힘 · 코피(비인두)",
+      "<sup>[2 82장 p.611]</sup>"
+     ]
+    ],
+    "note": "가이드라인 KAS 3 은 「그 밖의 의심 소견」을 병력 · 진찰로 찾으라고만 적는다(초록) — 위험 요인 · 동반 증상 줄은 해리슨 22판 82장에서 가져왔다."
+   },
+   {
+    "title": "악성 위험이 높을 때 검사 순서",
+    "columns": [
+     "순서",
+     "검사",
+     "주의"
+    ],
+    "rows": [
+     [
+      "1",
+      "표적 진찰 — 후두 · 혀뿌리 · 인두 점막 <sup>[1† KAS 6]</sup>",
+      "환자에게 위험이 높다는 뜻과 검사를 설명한다 <sup>[1† KAS 5]</sup>"
+     ],
+     [
+      "2",
+      "조영 증강 목 CT 또는 MRI <sup>[1† 강한 권고(영상)]</sup>",
+      "림프절 침범이면 흉부 · 상복부 CT, PET 으로 원격 전이 <sup>[2 82장 p.611]</sup>"
+     ],
+     [
+      "3",
+      "FNA — 개방 생검 대신 <sup>[1† KAS 7]</sup>",
+      "낭성이어도 진단까지 평가 지속 <sup>[1† KAS 8]</sup>"
+     ],
+     [
+      "4",
+      "진단이 안 나오면 병력 · 진찰에 맞춘 추가 검사 <sup>[1† KAS 9]</sup>",
+      "—"
+     ],
+     [
+      "5",
+      "마취하 상부 호흡소화관 검사(내시경 · 표적 생검) — 개방 생검 전에 <sup>[1† KAS 10]</sup>",
+      "편평세포암이면 비인두 · 편도 · 혀뿌리 · 이상와를 표적 생검 <sup>[2 82장 p.612]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "성인 목덩이 → 먼저 항생제 2주 써 보고 판단?",
+    "point": "세균 감염 증상·징후가 없으면 항생제를 일상적으로 처방하지 않는다. 항생제로 치료한 병변이 곧 줄지 않는데 항생제만 이어 가면 조기 진단 기회를 잃는다 <sup>[1† 반대 권고(항생제)]</sup> <sup>[2 82장 p.611]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "진단이 안 나오면 곧바로 절개(개방) 생검?",
+    "point": "먼저 FNA 를 한다. FNA · 영상 · 추가 검사로도 진단이나 원발 부위가 안 나오면, 개방 생검 전에 마취하 상부 호흡소화관 검사를 한다 — 숨은 원발 부위를 찾아 생검하는 것이 먼저다 <sup>[1† KAS 7, KAS 10]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "낭성 덩어리 = 아가미틈 낭종(양성)?",
+    "point": "악성 위험이 있는 성인의 낭성 목덩이는 FNA · 영상에서 낭성으로 보여도 진단이 나올 때까지 계속 평가하고 양성으로 단정하지 않는다 <sup>[1† KAS 8]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "목덩이 영상 = 초음파면 충분?",
+    "point": "악성 위험이 높은 목덩이의 영상은 조영 증강 목 CT 또는 MRI 가 강한 권고다 — 원발 부위·병기까지 본다 <sup>[1† 강한 권고(영상)]</sup> <sup>[2 82장 p.611]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "목덩이만 만지고 영상으로 넘어간다?",
+    "point": "악성 위험이 높으면 후두 · 혀뿌리 · 인두 점막을 직접 보는 표적 진찰을 한다(직접 하거나 의뢰) — 원발 병변이 여기서 보일 수 있다 <sup>[1† KAS 6]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "「악성 위험 높음」은 기준 칸(감염 병력 없이 ≥2주 지속 · 기간 불명, 또는 고정 · 단단함 · &gt;1.5 cm · 피부 궤양 중 하나)과 병력의 의심 소견으로 정한다 <sup>[1† KAS 1, KAS 2, KAS 3]</sup>.",
+   "위험이 높지 않아도 끝이 아니다 — 다시 와야 할 기준을 알려 주고 소실 또는 최종 진단을 확인할 추적 계획을 기록한다 <sup>[1† KAS 4]</sup>.",
+   "FNA · 영상에서 낭성이어도 진단이 나올 때까지 평가를 이어 간다 <sup>[1† KAS 8]</sup>.",
+   "「감염 치료 · 짧게 재평가」 칸의 재평가 간격은 지침 초록에 수치가 없다 — 항생제로 곧 줄지 않으면 악성 평가로 넘어간다 <sup>[2 82장 p.611]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "high-risk",
+    "name": "악성 위험이 높은 성인 목덩이(AAO-HNSF 2017)",
+    "kind": "분류",
+    "population": "18세 이상, 목덩이",
+    "statement": "① 감염 원인 병력이 없고 2주 이상 크기 변동 없이 지속(또는 기간 불명), 또는 ② 진찰에서 고정 · 단단함 · >1.5 cm · 피부 궤양 중 하나 이상 — 그 밖의 의심 소견은 병력 · 진찰로 찾는다 [[pynnonen-neck-mass-2017: KAS 1, KAS 2, KAS 3]]",
+    "exceptions": "소아에는 적용하지 않는다. 갑상선 · 침샘 · 하악 · 치성 기원이 확실한 덩어리의 관리는 이 지침 범위 밖이다 [[pynnonen-neck-mass-2017: Purpose]]",
+    "source": "pynnonen-neck-mass-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "pynnonen-neck-mass-2017",
+    "org": "AAO-HNSF (Pynnonen MA, Gillespie MB, Roman B, et al.)",
+    "title": "Clinical Practice Guideline: Evaluation of the Neck Mass in Adults",
+    "kind": "guideline",
+    "citation": "Otolaryngol Head Neck Surg 2017;157(2_suppl):S1-S30",
+    "checked": "PubMed 초록(PMID 28891406)의 목적 · 범위와 행동 지침 전부를 읽음 — 성인 지속 목덩이는 대부분 종양이고 악성이 가장 많음 · 증상 없는 목덩이가 두경부암의 첫 · 유일 소견일 수 있음; 강한 권고: 악성 위험이 높으면 조영 목 CT(또는 MRI); KAS 1(감염 병력 없음 + ≥2주 변동 없이 지속 또는 기간 불명) · 2(고정 · 단단함 · >1.5 cm · 피부 궤양) · 3(병력 · 진찰로 기타 의심 소견) · 4(저위험은 재평가 기준 설명 · 추적 계획 기록) · 5(위험 설명) · 6(후두 · 혀뿌리 · 인두 표적 진찰) · 7(개방 생검 대신 FNA) · 8(낭성도 진단까지) · 9(추가 검사) · 10(개방 생검 전 마취하 상부 호흡소화관 검사); 반대 권고: 세균 감염 징후 없으면 일상적 항생제 금지; 18세 미만 · 갑상선 · 침샘 · 하악 · 치성 기원 관리는 범위 밖. 요약판(PMID 28891424)은 초록만. 전문은 접근하지 못해(PMC 없음) KAS 근거 본문은 대조하지 않았다",
+    "doi": "10.1177/0194599817722550",
+    "pmid": "28891406",
+    "verified": "abstract",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1177/0194599817722550"
+   },
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "82장 Head and Neck Cancer(Vokes EE), 인쇄쪽 610~614",
+    "checked": "드라이브 22판 82장 문서(H22 p.610~614) 전부 읽음 — 위험 요인(흡연 · 음주 상승 작용, 무연 담배, EBV-비인두, HPV-구인두 · 40~50대), 증상이 2–4주 넘으면 이비인후과 진찰, 항생제로 낫지 않는 병변에 항생제만 이어 가면 조기 진단 기회 상실(p.611), 비인두암 증상(한쪽 장액성 중이염 · 코막힘 · 코피), HPV 종양은 목 림프절이 첫 소견, 원발 불명 경부 림프절(그림 82-1 — FNA 또는 림프절 절제, 편평세포암이면 범내시경 · 표적 생검), CT/MRI · 흉부 CT · PET 병기, 쇄골위 림프절은 흉부 · 복부 원발 가능(p.611~612), 침샘 종양 — 귀밑샘은 대부분 양성 · 턱밑 · 혀밑샘은 절반 · 소침샘은 대부분 악성(p.610)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "58세 흡연자, 3주째 그대로인 단단한 2.5 cm 목덩이, 발열 · 통증 없음. 다음 검사는?",
+    "a": "후두 · 혀뿌리 · 인두 표적 진찰과 조영 목 CT(또는 MRI), 그리고 FNA. 항생제 시험 치료나 절개 생검을 먼저 하지 않는다."
+   },
+   {
+    "q": "FNA · CT · 추가 검사로도 진단과 원발 부위가 안 나왔다. 개방 생검 전에 할 것은?",
+    "a": "마취하 상부 호흡소화관 검사(범내시경 · 비인두 · 편도 · 혀뿌리 · 이상와 표적 생검)."
+   },
+   {
+    "q": "45세 비흡연자의 목에 낭성 덩어리가 있다. 아가미틈 낭종으로 보고 끝내도 되나?",
+    "a": "안 된다. 악성 위험이 있는 성인의 낭성 목덩이는 진단이 나올 때까지 평가한다 — HPV 관련 구인두암은 목 림프절이 첫 소견일 수 있다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "성인 목덩이 — 위험 가르기에서 진단까지",
+  "geo": {
+   "title": "성인 목덩이 — 위험 가르기에서 진단까지",
+   "w": 563.8,
+   "h": 835.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "성인 목덩이"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 116.1,
+     "y": 16.0
+    },
+    {
+     "id": "infect",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "세균 감염 증상·징후?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 115.6,
+     "y": 85.0
+    },
+    {
+     "id": "abx",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "감염 치료 · 짧게 재평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 43.5,
+     "y": 175.0
+    },
+    {
+     "id": "gone",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "덩어리 소실?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 34.4,
+     "y": 244.0
+    },
+    {
+     "id": "obs",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "재평가 기준 설명 · 추적 계획"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 424.0
+    },
+    {
+     "id": "risk",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "악성 위험 높음?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 128.0,
+     "y": 334.0
+    },
+    {
+     "id": "exam",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "후두 · 혀뿌리 · 인두 표적",
+      "진찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 424.0
+    },
+    {
+     "id": "ct",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "조영 목 CT 또는 MRI → FNA"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 240.3,
+     "y": 510.0
+    },
+    {
+     "id": "dx",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "진단 · 원발 부위 나옴?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 239.1,
+     "y": 579.0
+    },
+    {
+     "id": "treat",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "두경부암 전문의 — 병기 ·",
+      "치료"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 125.8,
+     "y": 669.0
+    },
+    {
+     "id": "more",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "병력 · 진찰에 맞춘 추가 검사"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 351.8,
+     "y": 669.0
+    },
+    {
+     "id": "eua",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "마취하 내시경 · 표적 생검 →",
+      "그다음 개방 생검"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 351.8,
+     "y": 755.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "infect",
+     "points": [
+      [
+       214.1,
+       63.0
+      ],
+      [
+       213.6,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "infect",
+     "to": "abx",
+     "points": [
+      [
+       180.9,
+       132.0
+      ],
+      [
+       180.9,
+       161.0
+      ],
+      [
+       141.5,
+       161.0
+      ],
+      [
+       141.5,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 165.9,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "infect",
+     "to": "risk",
+     "points": [
+      [
+       246.2,
+       132.0
+      ],
+      [
+       246.2,
+       161.0
+      ],
+      [
+       255.5,
+       161.0
+      ],
+      [
+       255.5,
+       230.0
+      ],
+      [
+       257.1,
+       230.0
+      ],
+      [
+       257.1,
+       320.0
+      ],
+      [
+       258.7,
+       320.0
+      ],
+      [
+       258.7,
+       334.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 231.2,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "abx",
+     "to": "gone",
+     "points": [
+      [
+       141.5,
+       222.0
+      ],
+      [
+       141.5,
+       230.0
+      ],
+      [
+       132.4,
+       230.0
+      ],
+      [
+       132.4,
+       244.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "gone",
+     "to": "obs",
+     "points": [
+      [
+       99.7,
+       291.0
+      ],
+      [
+       99.7,
+       320.0
+      ],
+      [
+       90.5,
+       320.0
+      ],
+      [
+       90.5,
+       410.0
+      ],
+      [
+       81.3,
+       410.0
+      ],
+      [
+       81.3,
+       424.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 90.2,
+      "y": 295.0
+     }
+    },
+    {
+     "from": "gone",
+     "to": "risk",
+     "points": [
+      [
+       165.1,
+       291.0
+      ],
+      [
+       165.1,
+       320.0
+      ],
+      [
+       193.3,
+       320.0
+      ],
+      [
+       193.3,
+       334.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 144.6,
+      "y": 295.0
+     }
+    },
+    {
+     "from": "risk",
+     "to": "obs",
+     "points": [
+      [
+       193.3,
+       381.0
+      ],
+      [
+       193.3,
+       410.0
+      ],
+      [
+       146.7,
+       410.0
+      ],
+      [
+       146.7,
+       424.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 172.8,
+      "y": 385.0
+     }
+    },
+    {
+     "from": "risk",
+     "to": "exam",
+     "points": [
+      [
+       258.7,
+       381.0
+      ],
+      [
+       258.7,
+       410.0
+      ],
+      [
+       340.0,
+       410.0
+      ],
+      [
+       340.0,
+       424.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 249.2,
+      "y": 385.0
+     }
+    },
+    {
+     "from": "exam",
+     "to": "ct",
+     "points": [
+      [
+       340.0,
+       488.0
+      ],
+      [
+       340.0,
+       496.0
+      ],
+      [
+       338.3,
+       496.0
+      ],
+      [
+       338.3,
+       510.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ct",
+     "to": "dx",
+     "points": [
+      [
+       338.3,
+       557.0
+      ],
+      [
+       337.1,
+       579.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "dx",
+     "to": "treat",
+     "points": [
+      [
+       304.4,
+       626.0
+      ],
+      [
+       304.4,
+       655.0
+      ],
+      [
+       223.8,
+       655.0
+      ],
+      [
+       223.8,
+       669.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 294.9,
+      "y": 630.0
+     }
+    },
+    {
+     "from": "dx",
+     "to": "more",
+     "points": [
+      [
+       369.7,
+       626.0
+      ],
+      [
+       369.7,
+       655.0
+      ],
+      [
+       449.8,
+       655.0
+      ],
+      [
+       449.8,
+       669.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 349.2,
+      "y": 630.0
+     }
+    },
+    {
+     "from": "more",
+     "to": "eua",
+     "points": [
+      [
+       449.8,
+       716.0
+      ],
+      [
+       449.8,
+       755.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "성인 목덩이",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "세균 감염 증상·징후?"
+     }
+    ]
+   },
+   {
+    "id": "infect",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "세균 감염 증상·징후?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "감염 치료 · 짧게 재평가"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "악성 위험 높음?"
+     }
+    ]
+   },
+   {
+    "id": "abx",
+    "num": 3,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "감염 치료 · 짧게 재평가",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 4,
+      "toText": "덩어리 소실?"
+     }
+    ]
+   },
+   {
+    "id": "gone",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "덩어리 소실?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "재평가 기준 설명 · 추적 계획"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "악성 위험 높음?"
+     }
+    ]
+   },
+   {
+    "id": "risk",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "악성 위험 높음?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오",
+      "to": 6,
+      "toText": "재평가 기준 설명 · 추적 계획"
+     },
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "후두 · 혀뿌리 · 인두 표적 진찰"
+     }
+    ]
+   },
+   {
+    "id": "obs",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "재평가 기준 설명 · 추적 계획",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "exam",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "후두 · 혀뿌리 · 인두 표적 진찰",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "조영 목 CT 또는 MRI → FNA"
+     }
+    ]
+   },
+   {
+    "id": "ct",
+    "num": 8,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "조영 목 CT 또는 MRI → FNA",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "진단 · 원발 부위 나옴?"
+     }
+    ]
+   },
+   {
+    "id": "dx",
+    "num": 9,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "진단 · 원발 부위 나옴?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 10,
+      "toText": "두경부암 전문의 — 병기 · 치료"
+     },
+     {
+      "label": "아니오",
+      "to": 11,
+      "toText": "병력 · 진찰에 맞춘 추가 검사"
+     }
+    ]
+   },
+   {
+    "id": "treat",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "두경부암 전문의 — 병기 · 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "more",
+    "num": 11,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "병력 · 진찰에 맞춘 추가 검사",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 12,
+      "toText": "마취하 내시경 · 표적 생검 → 그다음 개방 생검"
+     }
+    ]
+   },
+   {
+    "id": "eua",
+    "num": 12,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "마취하 내시경 · 표적 생검 → 그다음 개방 생검",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.ent.epistaxis.stepwise-control": {
+  "id": "cn.ent.epistaxis.stepwise-control",
+  "title": "비출혈 — 압박에서 시작해 한 단계씩 올린다",
+  "objective": "비출혈 환자에서 활력징후와 출혈 부위(앞쪽 키셀바흐 부위 vs 뒤쪽)에 따라 압박 → 혈관수축제·소작 → 앞쪽 패킹 → 뒤쪽 패킹 → 동맥 결찰·색전의 다음 단계를 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "비출혈(epistaxis) — 앞쪽 비출혈(anterior epistaxis) · 뒤쪽 비출혈(posterior epistaxis)",
+  "topic": "Otorhinolaryngology",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "65cf93ea26e550c2",
+  "summary": [
+   "결론: 활력징후를 먼저 보고, 코 아래 1/3 압박 → 보이는 출혈점은 혈관수축제·소작 → 안 보이면 패킹 순으로 올린다.",
+   "시험 단서: 코피+앞으로 숙여 압박, 전비경에 비중격 앞쪽 출혈점(Kiesselbach), 양쪽 앞쪽 패킹에도 목뒤로 넘어가는 피.",
+   "왜: 대부분이 비중격 앞쪽 키셀바흐 부위에서 나 압박·소작으로 멎고, 뒤쪽은 그 자리에 압박이 닿지 않는다.",
+   "뒤쪽 출혈·패킹이 실패하면 뒤쪽 패킹+입원, 그래도 지속·재발하면 접형구개동맥 결찰 또는 색전술.",
+   "항응고제 복용자도 생명을 위협하는 출혈이 아니면 1차 처치를 먼저 하고, 역전·중단은 그 뒤 판단한다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 압박이 먼저이고 한 단계씩 올리나",
+    "deep": false,
+    "html": "<ul>\n<li>처음 접촉에서 <strong>즉시 처치가 필요한 환자인지</strong>부터 가른다 — 기도·호흡·순환을 보고, 저혈량이면 정맥로·수액을 시작하며 혈압을 잰다 <sup>[1† KAS 1]</sup> <sup>[2 Initial measures]</sup>.</li>\n<li>출혈의 90–95 %가 앞쪽 키셀바흐 부위(Kiesselbach's area, Little's area)라 <strong>압박이 닿는 곳</strong>이다 — 앞으로 숙여 코 아래 1/3 을 5분 이상 계속 누른다 <sup>[2 Anatomy]</sup> <sup>[1† KAS 2]</sup>. 압박·혈관수축제만으로 65–75 %가 멎는다 <sup>[2 Initial measures]</sup>.</li>\n<li>다음 단계로 넘어가는 기준은 <strong>출혈 부위가 보이느냐</strong>다 — 보이면 그 자리만 소작, 출혈 때문에 안 보이면 패킹 <sup>[1† KAS 3a, KAS 8]</sup>.</li>\n<li>침습적인 단계(뒤쪽 패킹 · 결찰 · 색전)는 앞 단계가 실패했을 때 올린다 — 뒤쪽 패킹은 후방 이탈 · 흡인 같은 위험이 있어 입원이 필요하다 <sup>[2 Packing complications, Inpatient admission]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 앞쪽과 뒤쪽은 왜 다르게 멎나",
+    "deep": false,
+    "html": "<ul>\n<li>키셀바흐 부위는 비중격 앞쪽에서 <strong>내경동맥과 외경동맥 가지가 함께 모이는</strong> 곳이다. 콧방울을 누르면 이 부위가 직접 눌려 멎는다 <sup>[2 Anatomy]</sup>.</li>\n<li>뒤쪽 출혈(5–10 %)은 비강 뒤쪽에서 나며, 콧방울 압박이 닿지 않고 피가 인두로 넘어간다. 수술로 막는 주 혈관은 접형구개동맥(sphenopalatine artery)이다 — 사골동맥과의 문합이 있어 결찰 뒤에도 그 영역의 허혈은 크지 않다 <sup>[2 Anatomy, Surgery]</sup>.</li>\n<li>그래서 앞쪽은 압박 · 소작 · 앞쪽 패킹으로 대부분 끝나고, 뒤쪽은 <strong>비인두를 막는 패킹</strong>(풍선 · Bellocq)이나 <strong>혈관 자체를 막는 처치</strong>(결찰 · 색전)가 필요하다 <sup>[2 Posterior packing, Surgery, Embolization]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 단계별 처치와 다음 단계로 넘어가는 조건",
+    "deep": false,
+    "html": "<ul>\n<li>표가 단계 0~5 의 처치와 넘어가는 조건을 한 줄씩 놓는다.</li>\n<li>소작: 응혈을 빼고 혈관수축제 · 국소마취를 묻힌 솜으로 시야를 얻은 뒤, 질산은(chemical) 또는 전기 소작을 한다. 한 후향 연구에서 성공률은 78 % 대 88 % <sup>[2 Cauterization]</sup>.</li>\n<li>앞쪽 패킹: 출혈장애 · 항응고 · 항혈소판 환자는 흡수성 <sup>[1† KAS 3b]</sup>. 패킹 환자에게 종류 · 제거 시기 · 다시 와야 할 증상을 설명한다 <sup>[1† KAS 4]</sup>.</li>\n<li>항생제 예방: 앞쪽 패킹은 48시간을 넘길 때만, 뒤쪽 패킹은 모두 — 근거는 제한적이다 <sup>[2 Antibiotics]</sup>.</li>\n<li>결찰 vs 색전: 내시경 접형구개동맥 결찰 · 응고가 약 98 % 조절해 뒤쪽 출혈의 우선 방법이고, 색전은 전신마취 위험이 높거나 수술이 실패했을 때다. 미국 비교 자료에서 수혈 · 뇌졸중 · 사망은 차이가 없었고 수술이 비용 · 재원 기간이 적었다 <sup>[2 Surgery, Embolization]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li><strong>항응고 · 항혈소판제</strong>: 생명을 위협하지 않으면 1차 처치를 수혈 · 역전 · 중단보다 먼저 한다 <sup>[1† KAS 11]</sup>. 출혈이 조절되면 항응고를 이어 가고 INR 을 확인한다. 항혈소판제를 끊어도 지혈 회복에 최대 10일이 걸려 급성기에는 도움이 되지 않는다 <sup>[2 Anticoagulants]</sup>.</li>\n<li><strong>고혈압</strong>: 출혈 중 혈압이 높아도 직접 원인이라는 근거는 없다. 무증상으로 &gt;180/120 mmHg 가 반복되면 경구약으로 24–48시간에 걸쳐 천천히 낮춘다 <sup>[2 Initial measures, Hypertension]</sup>.</li>\n<li><strong>반복 · 한쪽 출혈</strong>: 패킹 · 소작 뒤에도 반복되거나 한쪽에서 되풀이되면 내시경 — 종양 등 숨은 병변을 놓치지 않는다 <sup>[1† KAS 7a, KAS 7b]</sup>.</li>\n<li>패킹 합병증: 후방 이탈(치명적 흡인 보고) · 점막 괴사 · 이관 기능장애 · 독성 쇼크 증후군(패킹 제거 · 정맥 항생제 · 중환자실) <sup>[2 Packing complications]</sup>.</li>\n<li>급성 세균성 부비동염의 항생제 기준은 이 정리본의 목표 밖이다(같은 슬롯의 다른 목표).</li>\n<li>국내 교과서 · KMLE 해설의 단계 문구는 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 압박 시간</strong> — 시험 기준: 코 아래 1/3 을 5분 이상 단단히 계속 압박 <sup>[1† KAS 2]</sup> / 다른 기준: 양쪽을 15–20분 계속 압박 <sup>[2 Initial measures]</sup> / 왜 다른가: 미국 다학제 지침은 「최소」 시간을 권고 문장으로 정했고, 독일 종설은 1차 진료의 실제 처치 시간을 경험 · 문헌으로 적었다 — 둘 다 「충분히 오래, 중간에 떼지 않고」가 핵심이다 / 시험에서는: KMLE 는 국내 교과서와 대조하지 않았다(검토 항목) · USMLE 는 「앞으로 숙이고 콧방울을 계속 압박」을 첫 처치로 고른다. 분 수 자체로 답이 갈리는 보기는 이 판단(내 추론)으로 풀지 않는다.</li>\n<li><strong>Z2 맥락 · 비흡수성 패킹 제거 시기와 항생제</strong> — 시험 기준: 앞쪽 패킹 48시간 뒤 제거, 항생제는 48시간 초과 앞쪽 · 모든 뒤쪽 패킹 <sup>[2 Anterior packing, Antibiotics]</sup> / 다른 기준: AAO-HNSF 지침 초록은 패킹 환자 교육(제거 시기 · 계획)만 권고 문장으로 두고 항생제 예방은 KAS 로 다루지 않는다 <sup>[1† KAS 4]</sup> / 왜 다른가: 항생제 예방의 근거가 제한적이라는 점은 종설도 인정한다 — 지침 본문의 해당 서술은 대조하지 못했다 / 시험에서는: 일상적 항생제 여부를 묻는 문항은 근거 수준을 함께 확인해야 한다(검토 항목).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "비출혈 처치 단계",
+    "columns": [
+     "단계",
+     "무엇을",
+     "다음 단계로 넘어가는 조건"
+    ],
+    "rows": [
+     [
+      "0. 첫 평가",
+      "기도·호흡·순환, 혈압 측정. 저혈량이면 정맥로·수액 <sup>[2 Initial measures]</sup>. 즉시 처치가 필요한 환자를 가린다 <sup>[1† KAS 1]</sup>",
+      "—"
+     ],
+     [
+      "1. 압박",
+      "앉아서 앞으로 숙이고 코 아래 1/3 을 단단히 5분 이상 계속 누른다 <sup>[1† KAS 2]</sup>. 옥시메타졸린 분무를 더한다 <sup>[2 Initial measures]</sup>",
+      "압박 뒤에도 출혈 · 출혈로 부위를 볼 수 없음"
+     ],
+     [
+      "2. 부위 확인 · 소작",
+      "응혈을 빼고 전비경 <sup>[1† KAS 6]</sup>. 보이는 출혈점은 혈관수축제 · 국소마취 뒤 그 자리만 소작(질산은 · 전기) <sup>[1† KAS 8, KAS 9]</sup>",
+      "부위가 안 보이는 활동성 출혈 · 소작 실패"
+     ],
+     [
+      "3. 앞쪽 패킹",
+      "스펀지 · 팽창형 · 거즈 패킹. 출혈장애 · 항응고 환자는 흡수성 <sup>[1† KAS 3a, KAS 3b]</sup>. 비흡수성은 48시간 뒤 제거 <sup>[2 Anterior packing]</sup>",
+      "앞쪽 패킹에도 출혈(뒤쪽 출혈 의심)"
+     ],
+     [
+      "4. 뒤쪽 패킹 · 내시경",
+      "비인두 풍선(+앞쪽 패킹 필수) 또는 Bellocq. 입원 관찰 · 항생제 예방 <sup>[2 Posterior packing]</sup>. 내시경으로 뒤쪽 출혈 부위를 찾는다 <sup>[1† KAS 7a]</sup>",
+      "패킹 · 소작으로 조절 안 되는 지속 · 재발 출혈"
+     ],
+     [
+      "5. 결찰 · 색전",
+      "내시경 접형구개동맥 결찰 · 응고(약 98 % 조절) 또는 혈관 내 색전(87–93 %, 마취 위험이 높거나 수술 실패 때) <sup>[2 Surgery, Embolization]</sup> <sup>[1† KAS 10]</sup>",
+      "—"
+     ]
+    ],
+    "note": "단계 1 압박 시간: AAO-HNSF 지침은 5분 이상, Beck 2018 종설은 15–20분(시험 쟁점 Z1). 단계 4·5 의 세부(풍선 용량 · 성공률)는 Beck 2018 종설 — 지침 본문은 초록만 확인."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "항응고제 복용 중 코피 → 먼저 와파린 중단·역전?",
+    "point": "생명을 위협하는 출혈이 아니면 압박·패킹·소작 같은 1차 처치를 수혈·항응고 역전·중단보다 먼저 한다. 출혈이 조절되면 항응고는 이어 가는 것이 기본이다 <sup>[1† KAS 11]</sup> <sup>[2 Anticoagulants]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "압박 → 곧바로 뒤쪽 패킹?",
+    "point": "뒤쪽 패킹은 앞쪽 처치(소작·앞쪽 패킹)가 실패했거나 뒤쪽 출혈이 확인될 때다. 풍선은 반드시 앞쪽 패킹과 함께 넣고, 뒤쪽 패킹 환자는 입원해 관찰한다 <sup>[2 Posterior packing]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "양쪽 비중격을 한 번에 소작?",
+    "point": "양쪽 비중격을 동시에 소작하면 비중격 천공 위험이 있다. 국소마취 뒤 활동성·의심 출혈 부위에만 소작한다 <sup>[2 Cauterization]</sup> <sup>[1† KAS 9]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "패킹이 실패한 뒤쪽 출혈 → 패킹을 반복?",
+    "point": "패킹·소작으로 조절되지 않는 지속·재발 출혈은 수술적 동맥 결찰이나 혈관 내 색전술 대상인지 평가한다. 한 후향 연구에서 뒤쪽 출혈의 수술 성공률은 97 %, 패킹은 62 %였다 <sup>[1† KAS 10]</sup> <sup>[2 Abstract — Results]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "출혈장애·항응고제 환자에게 일반 패킹?",
+    "point": "출혈장애가 의심되거나 항응고제·항혈소판제를 쓰는 환자에게는 흡수성 패킹을 쓴다 — 제거할 때 다시 출혈하는 것을 피한다 <sup>[1† KAS 3b]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "소작 뒤 재발하거나 한쪽에서 반복되면 내시경으로 출혈 부위와 숨은 병변(종양 등)을 찾는다 <sup>[1† KAS 7a, KAS 7b]</sup>.",
+   "뒤쪽 풍선은 반드시 앞쪽 패킹과 함께, 24시간 안에 적어도 일부 감압한다 — 압박 괴사 · 후방 이탈 · 흡인 위험 <sup>[2 Posterior packing, Packing complications]</sup>.",
+   "색전술은 전신마취 위험이 높거나 수술이 실패한 환자 — 합병증으로 뇌허혈 · 안면신경 마비가 있다 <sup>[2 Embolization]</sup>.",
+   "양쪽 반복 코피나 가족력이 있으면 코 · 구강 점막의 모세혈관확장을 보아 유전성 출혈성 모세혈관확장증(HHT)을 평가한다 <sup>[1† KAS 12]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "prompt-mgmt",
+    "name": "즉시 처치가 필요한 비출혈",
+    "kind": "분류",
+    "population": "의료진에게 연락·내원한 비출혈 환자(3세 이상)",
+    "statement": "처음 접촉할 때 즉시 처치가 필요한 환자와 아닌 환자를 가른다. 즉시 처치 대상의 활동성 출혈은 코 아래 1/3 을 5분 이상 단단히 계속 압박해 치료한다 [[aao-epistaxis-2020: KAS 1, KAS 2]]",
+    "exceptions": "「즉시 처치가 필요한」 세부 기준(출혈 시간 · 활력징후 수치)은 지침 본문에서 확인하지 못했다(초록만 읽음 — 검토 항목)",
+    "source": "aao-epistaxis-2020",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "aao-epistaxis-2020",
+    "org": "AAO-HNSF (Tunkel DE, Anne S, Payne SC, et al.)",
+    "title": "Clinical Practice Guideline: Nosebleed (Epistaxis)",
+    "kind": "guideline",
+    "citation": "Otolaryngol Head Neck Surg 2020;162(1_suppl):S1-S38",
+    "checked": "PubMed 초록(PMID 31910111)과 요약판 초록(PMID 31910122)에서 핵심 행동 지침(KAS) 1~14 문장을 읽음 — 즉시 처치 대상 가르기(1), 코 아래 1/3 5분 이상 압박(2), 부위가 안 보이면 패킹(3a), 출혈장애·항응고·항혈소판은 흡수성 패킹(3b), 위험 요인 기록(5), 응혈 제거 뒤 전비경(6), 재발·한쪽 반복 출혈은 내시경(7a), 혈관수축제·소작·보습제(8), 소작은 마취 뒤 출혈 부위에만(9), 패킹·소작 실패는 결찰·색전 평가(10), 생명 위협이 아니면 1차 처치를 수혈·항응고 역전·중단보다 먼저(11), HHT 평가(12). 전문은 SAGE·Wiley 접근이 막혀(403) 읽지 못했다 — KAS 의 근거 본문·세부 수치는 대조하지 않음",
+    "doi": "10.1177/0194599819890327",
+    "pmid": "31910111",
+    "verified": "abstract",
+    "year": "2020",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1177/0194599819890327"
+   },
+   {
+    "id": "beck-epistaxis-2018",
+    "org": "Beck R, Sorge M, Schneider A, Dietz A",
+    "title": "Current Approaches to Epistaxis Treatment in Primary and Secondary Care",
+    "kind": "review",
+    "citation": "Dtsch Arztebl Int 2018;115(1-02):12-22",
+    "checked": "PMC5778404 전문(PMC 웹판)을 참고문헌 앞까지 읽음 — 키셀바흐 부위 90–95 %·뒤쪽 5–10 %, 내·외경동맥 양쪽 공급; 1차 처치(ABC·혈압·앞으로 숙임·양쪽 압박 15–20분·옥시메타졸린, 성공 65–75 %, 30분 관찰); 무증상 고혈압 >180/120 은 24–48시간에 걸쳐 경구로 천천히; 소작(질산은 vs 전기 78 % vs 88 %, 양쪽 비중격 동시 소작 금지 — 천공); 앞쪽 패킹 48시간 제거; 뒤쪽 풍선(앞쪽 패킹 필수, 24시간 안 부분 감압)·Bellocq; 패킹 합병증(후방 이탈·흡인·독성 쇼크 증후군); 항생제(앞쪽 48시간 초과·뒤쪽 전부); 패킹 환자 입원; 접형구개동맥 결찰·응고 약 98 %, 수술 실패 3 % vs 패킹 38 %; 색전 87–93 %·뇌허혈·안면신경 마비; 항응고·항혈소판 처리. 그림 2(단계 알고리즘)는 그림이라 글로 읽지 못했다",
+    "doi": "10.3238/arztebl.2018.0012",
+    "pmid": "29345234",
+    "verified": "text",
+    "year": "2018",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5778404/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "항응고제를 먹는 70세 남자가 활력징후는 안정적이고 앞쪽 코피가 난다. 첫 처치는?",
+    "a": "앞으로 숙여 코 아래 1/3 을 5분 이상 압박하고, 보이는 출혈점은 소작, 안 되면 흡수성 패킹. 생명 위협이 아니면 항응고 역전·중단보다 1차 처치가 먼저다."
+   },
+   {
+    "q": "양쪽 앞쪽 패킹 뒤에도 피가 목뒤로 넘어간다. 다음 단계는?",
+    "a": "뒤쪽 출혈을 생각해 내시경으로 부위를 찾고 뒤쪽 패킹(앞쪽 패킹과 함께)을 넣은 뒤 입원 관찰한다. 그래도 조절되지 않으면 접형구개동맥 결찰이나 색전술."
+   },
+   {
+    "q": "왜 양쪽 비중격을 한 번에 소작하지 않나?",
+    "a": "비중격 천공 위험이 있다 — 국소마취 뒤 활동성 · 의심 출혈 부위에만 소작한다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "비출혈 — 압박에서 결찰·색전까지",
+  "geo": {
+   "title": "비출혈 — 압박에서 결찰·색전까지",
+   "w": 680.0,
+   "h": 921.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "코피 — 지금 출혈 중"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "abc",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "기도·순환 불안정?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 85.0
+    },
+    {
+     "id": "resus",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "ABC · 정맥로 · 수액 → 압박",
+      "병행"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 57.4,
+     "y": 175.0
+    },
+    {
+     "id": "press",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "앞으로 숙여 코 아래 1/3",
+      "압박 ≥5분 · 혈관수축제"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 261.0
+    },
+    {
+     "id": "look",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "전비경에 출혈점 보임?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 347.0
+    },
+    {
+     "id": "cautery",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "국소마취 → 그 자리만 소작"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 437.0
+    },
+    {
+     "id": "apack",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "앞쪽 패킹(항응고 → 흡수성)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 437.0
+    },
+    {
+     "id": "still",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "앞쪽 패킹에도 출혈?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 506.0
+    },
+    {
+     "id": "home",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "패킹 교육 · 48시간 뒤 제거"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 596.0
+    },
+    {
+     "id": "scope",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "내시경으로 뒤쪽 출혈 부위",
+      "찾기"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 596.0
+    },
+    {
+     "id": "ppack",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "뒤쪽 패킹 + 앞쪽 패킹 · 입원"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 682.0
+    },
+    {
+     "id": "fail",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "패킹·소작으로 조절됨?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 751.0
+    },
+    {
+     "id": "ok",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "입원 관찰 · 패킹 제거 계획"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 841.0
+    },
+    {
+     "id": "ligate",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "접형구개동맥 결찰 또는",
+      "색전술"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 841.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "abc",
+     "points": [
+      [
+       227.0,
+       63.0
+      ],
+      [
+       227.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "abc",
+     "to": "resus",
+     "points": [
+      [
+       194.3,
+       132.0
+      ],
+      [
+       194.3,
+       161.0
+      ],
+      [
+       155.4,
+       161.0
+      ],
+      [
+       155.4,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "abc",
+     "to": "press",
+     "points": [
+      [
+       259.7,
+       132.0
+      ],
+      [
+       259.7,
+       161.0
+      ],
+      [
+       269.4,
+       161.0
+      ],
+      [
+       269.4,
+       247.0
+      ],
+      [
+       259.7,
+       247.0
+      ],
+      [
+       259.7,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "resus",
+     "to": "press",
+     "points": [
+      [
+       155.4,
+       239.0
+      ],
+      [
+       155.4,
+       247.0
+      ],
+      [
+       194.3,
+       247.0
+      ],
+      [
+       194.3,
+       261.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "press",
+     "to": "look",
+     "points": [
+      [
+       227.0,
+       325.0
+      ],
+      [
+       227.0,
+       347.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "look",
+     "to": "cautery",
+     "points": [
+      [
+       194.3,
+       394.0
+      ],
+      [
+       194.3,
+       423.0
+      ],
+      [
+       114.0,
+       423.0
+      ],
+      [
+       114.0,
+       437.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "보임"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 398.0
+     }
+    },
+    {
+     "from": "look",
+     "to": "apack",
+     "points": [
+      [
+       259.7,
+       394.0
+      ],
+      [
+       259.7,
+       423.0
+      ],
+      [
+       340.0,
+       423.0
+      ],
+      [
+       340.0,
+       437.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "출혈로 안 보임"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 218.9,
+      "y": 398.0
+     }
+    },
+    {
+     "from": "apack",
+     "to": "still",
+     "points": [
+      [
+       340.0,
+       484.0
+      ],
+      [
+       340.0,
+       506.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "still",
+     "to": "home",
+     "points": [
+      [
+       307.3,
+       553.0
+      ],
+      [
+       307.3,
+       582.0
+      ],
+      [
+       227.0,
+       582.0
+      ],
+      [
+       227.0,
+       596.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "멎음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 557.0
+     }
+    },
+    {
+     "from": "still",
+     "to": "scope",
+     "points": [
+      [
+       372.7,
+       553.0
+      ],
+      [
+       372.7,
+       582.0
+      ],
+      [
+       453.0,
+       582.0
+      ],
+      [
+       453.0,
+       596.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "지속"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 557.0
+     }
+    },
+    {
+     "from": "scope",
+     "to": "ppack",
+     "points": [
+      [
+       453.0,
+       660.0
+      ],
+      [
+       453.0,
+       682.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ppack",
+     "to": "fail",
+     "points": [
+      [
+       453.0,
+       729.0
+      ],
+      [
+       453.0,
+       751.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "fail",
+     "to": "ok",
+     "points": [
+      [
+       420.3,
+       798.0
+      ],
+      [
+       420.3,
+       827.0
+      ],
+      [
+       340.0,
+       827.0
+      ],
+      [
+       340.0,
+       841.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 802.0
+     }
+    },
+    {
+     "from": "fail",
+     "to": "ligate",
+     "points": [
+      [
+       485.7,
+       798.0
+      ],
+      [
+       485.7,
+       827.0
+      ],
+      [
+       566.0,
+       827.0
+      ],
+      [
+       566.0,
+       841.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오·재발"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 451.0,
+      "y": 802.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "코피 — 지금 출혈 중",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "기도·순환 불안정?"
+     }
+    ]
+   },
+   {
+    "id": "abc",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "기도·순환 불안정?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "ABC · 정맥로 · 수액 → 압박 병행"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "앞으로 숙여 코 아래 1/3 압박 ≥5분 · 혈관수축제"
+     }
+    ]
+   },
+   {
+    "id": "resus",
+    "num": 3,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "ABC · 정맥로 · 수액 → 압박 병행",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 4,
+      "toText": "앞으로 숙여 코 아래 1/3 압박 ≥5분 · 혈관수축제"
+     }
+    ]
+   },
+   {
+    "id": "press",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "앞으로 숙여 코 아래 1/3 압박 ≥5분 · 혈관수축제",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "전비경에 출혈점 보임?"
+     }
+    ]
+   },
+   {
+    "id": "look",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "전비경에 출혈점 보임?",
+    "note": "",
+    "branches": [
+     {
+      "label": "보임",
+      "to": 6,
+      "toText": "국소마취 → 그 자리만 소작"
+     },
+     {
+      "label": "출혈로 안 보임",
+      "to": 7,
+      "toText": "앞쪽 패킹(항응고 → 흡수성)"
+     }
+    ]
+   },
+   {
+    "id": "cautery",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "국소마취 → 그 자리만 소작",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "apack",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "앞쪽 패킹(항응고 → 흡수성)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "앞쪽 패킹에도 출혈?"
+     }
+    ]
+   },
+   {
+    "id": "still",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "앞쪽 패킹에도 출혈?",
+    "note": "",
+    "branches": [
+     {
+      "label": "멎음",
+      "to": 9,
+      "toText": "패킹 교육 · 48시간 뒤 제거"
+     },
+     {
+      "label": "지속",
+      "to": 10,
+      "toText": "내시경으로 뒤쪽 출혈 부위 찾기"
+     }
+    ]
+   },
+   {
+    "id": "home",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "패킹 교육 · 48시간 뒤 제거",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "scope",
+    "num": 10,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "내시경으로 뒤쪽 출혈 부위 찾기",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 11,
+      "toText": "뒤쪽 패킹 + 앞쪽 패킹 · 입원"
+     }
+    ]
+   },
+   {
+    "id": "ppack",
+    "num": 11,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "뒤쪽 패킹 + 앞쪽 패킹 · 입원",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 12,
+      "toText": "패킹·소작으로 조절됨?"
+     }
+    ]
+   },
+   {
+    "id": "fail",
+    "num": 12,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "패킹·소작으로 조절됨?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 13,
+      "toText": "입원 관찰 · 패킹 제거 계획"
+     },
+     {
+      "label": "아니오·재발",
+      "to": 14,
+      "toText": "접형구개동맥 결찰 또는 색전술"
+     }
+    ]
+   },
+   {
+    "id": "ok",
+    "num": 13,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "입원 관찰 · 패킹 제거 계획",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ligate",
+    "num": 14,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "접형구개동맥 결찰 또는 색전술",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.ent.hearing-loss.conductive-vs-sensorineural": {
+  "id": "cn.ent.hearing-loss.conductive-vs-sensorineural",
+  "title": "난청 — 음차·청력검사로 전음성과 감각신경성 가르기",
+  "objective": "난청 환자에서 Weber·Rinne 음차 검사와 순음청력검사(기도·골도 역치)로 전음성 난청과 감각신경성 난청을 가른다",
+  "objectiveKind": "감별",
+  "condition": "난청(hearing loss) — 전음성(conductive) · 감각신경성(sensorineural) · 혼합성(mixed), 돌발성 감각신경성 난청(sudden sensorineural hearing loss) 포함",
+  "topic": "Otorhinolaryngology",
+  "seeAlso": [
+   "Neurology"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "6112df15876100c5",
+  "summary": [
+   "결론: Rinne 에서 골도가 더 크고 Weber 가 아픈 귀로 가면 전음성, Rinne 정상(기도>골도)에 Weber 가 성한 귀로 가면 감각신경성.",
+   "시험 단서: 512 Hz 음차, 귀지·삼출·이경화증(conductive) vs 갑자기 한쪽 귀가 안 들림·이명·어지럼(sensorineural).",
+   "왜: 골도 자극은 외이·중이를 건너뛰어 달팽이관에 바로 닿는다 — 전도로가 막히면 골도가 상대적으로 크게 들린다.",
+   "Rinne 은 전음성 손실이 30 dB 이상이어야 뒤집히고, Weber 는 두 귀 차이가 5 dB 는 되어야 한쪽으로 쏠린다.",
+   "돌발성 감각신경성 난청은 2주 안에 스테로이드를 권하고(지침은 선택 권고), 청력검사로 확인한 뒤 MRI 로 후미로 병변을 본다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 음차 다음에 청력검사인가",
+    "deep": false,
+    "html": "<ul>\n<li>난청 평가는 네 가지를 차례로 정한다: 성질(전음성 · 감각신경성 · 혼합성) → 정도 → 위치(외이 · 중이 · 내이 · 중추) → 원인 <sup>[1 36장 p.248]</sup>.</li>\n<li>성질은 진료실에서 512 Hz 음차 두 가지(Weber · Rinne)로 먼저 거르고, 순음청력검사로 확정한다 — 음차는 선별과 청력검사 확인용이다 <sup>[1 36장 p.248]</sup>.</li>\n<li>갑자기 생긴 난청은 처음 진료에서 전음성과 감각신경성을 가르는 것이 지침의 첫 권고다 — 귀지·중이 삼출이 아니면 치료 시기가 정해진 돌발성 감각신경성 난청이기 때문이다 <sup>[3† KAS 1]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 소리 전달에서 신경 신호로",
+    "deep": false,
+    "html": "<ul>\n<li>외이·고막·이소골은 소리를 모아 증폭해 액체로 찬 달팽이관으로 넘긴다(임피던스 정합). 이 경로가 막히거나 소리 에너지가 새면 <strong>전음성 난청(conductive hearing loss)</strong> — 귀지 · 이물 · 고막 천공 · 이소골 단절 · 이경화증 · 중이 삼출·진주종 <sup>[1 36장 p.244–245]</sup>.</li>\n<li>달팽이관 털세포의 기계-전기 변환이나 청신경 이후의 전달이 망가지면 <strong>감각신경성 난청(sensorineural hearing loss)</strong> — 소음 · 바이러스 · 이독성 약 · 메니에르병 · 노화 · 청신경초종 <sup>[1 36장 p.246]</sup>. 둘이 함께면 혼합성(이경화증의 달팽이관 침범 · 측두골 골절 · 진주종) <sup>[1 36장 p.247]</sup>.</li>\n<li>골도 자극은 진동자를 머리에 대 외이·중이를 건너뛰고, 기도 자극은 헤드폰으로 전체 경로를 지난다 <sup>[1 36장 p.248]</sup>. 그래서 전음성에서는 골도가 상대적으로 잘 들리고, 감각신경성에서는 둘 다 같이 떨어진다.</li>\n<li>고음은 달팽이관 기저부, 저음은 꼭대기에서 최대로 흔들린다 — 그래서 청력도 모양이 원인을 좁힌다(표) <sup>[1 36장 p.244]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 음차와 청력도",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Rinne</strong>: 진동하는 음차를 외이도 입구(기도)와 꼭지돌기(골도)에 번갈아 대 어느 쪽이 크게 들리는지 묻는다. 정상과 감각신경성은 기도&gt;골도, 전음성 손실이 30 dB 이상이면 골도&gt;기도 <sup>[1 36장 p.248]</sup>.</li>\n<li><strong>Weber</strong>: 음차 손잡이를 머리 정중선에 댄다. 한쪽 전음성은 아픈 귀, 한쪽 감각신경성은 성한 귀로 쏠린다. 두 귀 차이가 5 dB 이상이어야 쏠린다 <sup>[1 36장 p.248]</sup>.</li>\n<li><strong>순음청력검사</strong>: 방음실에서 250–8000 Hz 의 기도·골도 역치를 귀마다 잰다. 난청이 있으면 반대 귀에 차폐 잡음을 준다 <sup>[1 36장 p.248–249]</sup>. 정상 고막운동성(A형)은 정상 청력과 감각신경성에서 나온다 <sup>[1 36장 p.249]</sup>.</li>\n<li><strong>음성 결과의 한계</strong>: Rinne 양성은 「정상」이 아니다 — 감각신경성도, 30 dB 미만의 전음성도 양성으로 나온다. 결론은 청력도로 낸다 <sup>[1 36장 p.248]</sup>.</li>\n<li>감각신경성 안에서 달팽이관성과 신경성을 가르는 데는 어음 변별 · 등골근 반사 소실(decay) · 이음향방사(OAE) · 청성뇌간반응(ABR)을 쓴다 <sup>[1 36장 p.249–250]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 성질에 따라 다음 단계",
+    "deep": false,
+    "html": "<ul>\n<li>전음성은 대개 수술로 고칠 수 있다(고막성형술 · 등자뼈 절제술 · 환기관), 보청기도 잘 듣는다. 감각신경성은 보청기 · 인공와우로 재활한다 <sup>[1 36장 p.250]</sup>.</li>\n<li><strong>돌발성 감각신경성 난청</strong>(정의는 기준 칸): 첫 2주에 회복이 가장 크다 — 2주 안 전신 스테로이드(예: 프레드니손 최대 60 mg/일 = 1 mg/kg, 10–14일에 걸쳐 감량)를 권하고, 증상 14일 안 청력검사로 확인한다 <sup>[2 Systemic corticosteroids]</sup> <sup>[3† KAS 4 · KAS 8]</sup>.</li>\n<li>2–6주에 회복이 덜 되면 고실 내 스테로이드(구제 치료). 고압산소는 스테로이드와 함께일 때만 선택지다 <sup>[3† KAS 9 · KAS 10]</sup> <sup>[2 Hyperbaric oxygen therapy]</sup>.</li>\n<li>후미로 병변은 MRI(못 찍으면 ABR)로 본다 <sup>[3† KAS 6]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>나이 · 처음의 어지럼 · 고도 난청 · 하강형 청력도 · 치료 지연은 나쁜 예후 인자다 <sup>[2 Prognosis]</sup>.</li>\n<li>일상 혈액검사는 진단·치료를 바꾸지 못해 지침이 권하지 않는다 <sup>[2 Prognosis]</sup>.</li>\n<li>박동성 이명은 혈관성 원인(사구체종 · 동정맥루)을 영상으로 배제한다 <sup>[1 36장 p.247]</sup>.</li>\n<li>국내 교과서·KMLE 해설의 돌발성 난청 스테로이드 용량·기간 서술은 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 돌발성 난청 스테로이드의 권고 강도</strong> — 시험 기준: 돌발성 감각신경성 난청이면 2주 안 전신 스테로이드를 첫 치료로 고른다 <sup>[2 Systemic corticosteroids]</sup> / 다른 기준: AAO-HNSF 2019 는 「선택(option)」 권고로만 두고, Cochrane 고찰은 경구 스테로이드 효과가 설득력 있게 입증되지 않았다고 했다 <sup>[3† KAS 8]</sup> <sup>[2 Systemic corticosteroids]</sup> / 왜 다른가: 자연 회복이 32–65 %로 높고 시험 결과가 엇갈려, 실무 표준과 근거 등급이 다르다 <sup>[2 Introduction]</sup> / 시험에서는: KMLE · USMLE 모두 「다음 처치」로는 스테로이드를 고르고, 「항바이러스제 · 혈관확장제」는 오답으로 본다(이 칸은 정리본 작성자의 판단 — 국가시험 해설과 대조하지 않았다).</li>\n<li>해리슨 대조: 음차 · 청력검사 서술은 22판 36장 p.244~250 과 어긋난 곳 없음. 돌발성 난청 치료는 36장 본문에 없어 위 두 출처로만 썼다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "한쪽 난청 — 음차·청력검사로 가르기",
+    "columns": [
+     "검사",
+     "전음성(conductive)",
+     "감각신경성(sensorineural)"
+    ],
+    "rows": [
+     [
+      "Rinne(환측)",
+      "골도&gt;기도(음성) — 손실 30 dB 이상일 때",
+      "기도&gt;골도(양성) — 정상 귀와 같다"
+     ],
+     [
+      "Weber",
+      "아픈 귀로 쏠림",
+      "성한 귀로 쏠림"
+     ],
+     [
+      "순음청력검사",
+      "기도 역치만 오르고 골도 역치는 보존(기도·골도 차이)",
+      "기도·골도 역치가 함께 오름"
+     ],
+     [
+      "어음 변별",
+      "88–100 % 유지",
+      "다양하게 떨어짐 — 신경성이 달팽이관성보다 더 나쁨"
+     ],
+     [
+      "고막운동성 검사",
+      "B형 삼출 · C형 이관 기능장애 · As 이경화증 · Ad 이소골 단절",
+      "A형(정상)"
+     ]
+    ],
+    "note": "음차는 512 Hz <sup>[1 36장 p.248]</sup>. 어음 변별·고막운동성 <sup>[1 36장 p.249]</sup>. 「기도·골도 차이」 행은 골도가 외이·중이를 건너뛴다는 검사 원리(p.248)에서 끌어낸 해석이다."
+   },
+   {
+    "title": "청력도 모양으로 원인 좁히기",
+    "columns": [
+     "모양",
+     "대표 원인"
+    ],
+    "rows": [
+     [
+      "저음역 전음성",
+      "이경화증 — 등자뼈 고정(강성 성분) · 정상 외이도와 온전한 고막"
+     ],
+     [
+      "고음역 전음성",
+      "중이 삼출(질량 성분)"
+     ],
+     [
+      "고음역으로 내려가는 감각신경성(양측 대칭)",
+      "노인성 난청(presbycusis)"
+     ],
+     [
+      "3000–4000 Hz 함몰(noise notch)",
+      "소음성 난청"
+     ],
+     [
+      "저음역 감각신경성(한쪽, 오르내림)",
+      "메니에르병 — 반복 어지럼·이명·귀 먹먹함"
+     ],
+     [
+      "비대칭 감각신경성 + 변별 저하",
+      "청신경초종 등 소뇌다리뇌각 종양 → 조영 MRI"
+     ]
+    ],
+    "note": "<sup>[1 36장 p.245–247, 249]</sup>"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "Rinne 양성(기도>골도) = 정상 청력?",
+    "point": "기도가 골도보다 크게 들리는 것은 정상 귀와 감각신경성 난청에서 똑같다. Rinne 이 뒤집히려면 전음성 손실이 30 dB 이상이어야 하므로 가벼운 전음성 난청도 Rinne 양성으로 나올 수 있다 <sup>[1 36장 p.248]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "Weber 가 쏠린 쪽 = 나쁜 귀?",
+    "point": "전음성이면 아픈 귀로, 감각신경성이면 성한 귀로 쏠린다. 쏠린 방향만으로는 어느 귀가 나쁜지 정할 수 없고 Rinne 과 함께 읽어야 한다 <sup>[1 36장 p.248]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "감각신경성 난청은 다 달팽이관 문제?",
+    "point": "감각신경성은 달팽이관(감각)과 청신경·중추 경로(신경)를 함께 부른다. 순음 역치에 비해 어음 변별이 지나치게 나쁘거나, 소리를 키울수록 변별이 더 떨어지면(rollover) 청신경초종 같은 후미로 병변을 생각한다 <sup>[1 36장 p.249]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "돌발성 난청 — 항바이러스제·혈관확장제를 함께?",
+    "point": "근거가 부족해 지침은 스테로이드 외의 약(항바이러스제·혈전용해제·혈관확장제·혈관작용 물질)을 권하지 않는다 <sup>[2 Treatment — Other treatment modalities]</sup> <sup>[3† KAS 11]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "돌발성 난청 — 저절로 좋아지니 지켜본다?",
+    "point": "치료 없이도 32–65 %가 회복된다고 보고되지만, 회복은 첫 2주에 가장 크고 늦게 시작할수록 나빠 지침은 2주 안 스테로이드를 선택지로 제시하고, 2–6주에 회복이 덜 되면 고실 내 스테로이드를 권한다 <sup>[2 Introduction · Prognosis]</sup> <sup>[3† KAS 8 · KAS 10]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "고막 천공이 의심돼도 귀지는 물로 세척?",
+    "point": "고막 천공이 있거나 고막이 온전한지 확인할 수 없으면 세척을 피한다. 노인의 마르고 약한 외이도도 흡인·귀지 고리로 제거하는 편이 낫다 <sup>[1 36장 p.248]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "음차는 선별·확인 도구다 — Rinne 은 전음성 손실이 30 dB 이상이어야 뒤집히고, Weber 는 두 귀 차이가 5 dB 이상이어야 쏠린다. 가벼운 손실은 순음청력검사로 정한다 <sup>[1 36장 p.248]</sup>.",
+   "갑작스러운 한쪽 난청은 내이 바이러스 감염만이 아니라 청신경초종·뇌졸중일 수 있다. 어지럼과 함께 오면 AICA 영역 미로 경색(뇌바닥동맥 경색의 전조)을 생각한다 <sup>[1 36장 p.247–248]</sup>.",
+   "양측 · 반복 · 국소 신경징후가 있으면 특발성으로 보지 않고 원인을 먼저 찾는다 <sup>[3† KAS 2]</sup>.",
+   "원인 모를 한쪽 감각신경성 난청은 조영 증강 내이도 MRI 로 신경초종을 배제한다 <sup>[1 24장 p.163]</sup> <sup>[3† KAS 6]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "ssnhl-def",
+    "name": "돌발성 감각신경성 난청의 정의",
+    "kind": "진단 기준",
+    "population": "갑자기 생긴 난청 성인",
+    "statement": "연속된 3개 주파수에서 30 dB 이상의 감각신경성 난청이 3일 안에 생긴 것 [[lee-chung-2024: Introduction]]",
+    "exceptions": "원인이 밝혀지지 않은 것이 대부분이라 「특발성」으로 부른다. 처음 진료에서 전음성과 먼저 가른다(지침 첫 권고) [[aao-ssnhl-2019: KAS 1]]",
+    "source": "lee-chung-2024",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Lalwani AK. Chapter 36 Disorders of Hearing, pp.244–252 · Walker MF, Daroff RB. Chapter 24 Dizziness and Vertigo, p.163",
+    "checked": "드라이브 22판 36장 문서(H22_036, 인쇄쪽 244~252)를 처음부터 끝까지 읽음 — p.244 전음성/감각신경성 정의; p.245 전음성 원인 · 진주종 · 이경화증(저음역 전음성, 등자뼈 절제술) · 제3의 창; p.246 표 36-1 · 소음성 3000–4000 Hz · 노인성 · 메니에르(저음역 한쪽 SNHL, MRI 로 후미로 배제); p.247 후미로·AICA 미로경색 · 혼합성; p.248 접근(성질·정도·위치·원인), 갑작스러운 한쪽 난청 = 내이 바이러스 감염·청신경초종·뇌졸중, 귀지 세척 금기, Rinne/Weber 512 Hz · 전음성 ≥30 dB · 5 dB 편위; p.249 순음청력 · 질량/강성 성분 · 어음 변별 88–100 % · rollover · 고막운동성 A/B/C/Ad/As · 등골근 반사 · OAE; p.250 ABR · 영상(CT 측두골 vs MRI 후미로) · 치료(전음성 = 수술, 감각신경성 = 보청기). 36장에는 돌발성 난청의 스테로이드 권고 서술이 없다(참고문헌에 Lee & Chung 2024 만). 함께 24장 Dizziness and Vertigo(H22_024, p.162~165)도 읽었고, p.163 「원인 모를 한쪽 감각신경성 난청·전정기능 저하는 조영 증강 내이도 MRI 로 신경초종 배제」만 여기에 인용했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   },
+   {
+    "id": "lee-chung-2024",
+    "org": "Lee HA, Chung JH",
+    "title": "Contemporary Review of Idiopathic Sudden Sensorineural Hearing Loss: Management and Prognosis",
+    "kind": "review",
+    "citation": "J Audiol Otol 2024;28(1):10-17",
+    "checked": "PMC10808390 전문(PubMed MCP)을 처음부터 끝까지 읽음 — 정의(연속 3주파수 30 dB 이상, 3일 안), 자연 회복 32–65 %, 전신 스테로이드가 표준 첫 치료이나 Cochrane 은 효과 미입증 · AAO-HNS 는 선택(option) 권고, 프레드니손 최대 60 mg/일(1 mg/kg) 4일 뒤 2일마다 10 mg 감량 · 10–14일, 2주 안 시작, 고실 내 스테로이드 = 구제 · 병용 · 단독, 고압산소는 스테로이드와 병용 선택, 스테로이드 외 약(항바이러스제·혈전용해제·혈관확장제)은 권하지 않음, 예후 인자(나이 · 어지럼 · 고도 난청 · 하강형 청력도 · 치료 지연), 일상 혈액검사는 권하지 않음. 해리슨 22판 36장 참고문헌에 실린 글",
+    "doi": "10.7874/jao.2024.00024",
+    "pmid": "38254304",
+    "verified": "text",
+    "year": "2024",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10808390/"
+   },
+   {
+    "id": "aao-ssnhl-2019",
+    "org": "AAO-HNSF (Chandrasekhar SS, Tsai Do BS, Schwartz SR, et al.)",
+    "title": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+    "kind": "guideline",
+    "citation": "Otolaryngol Head Neck Surg 2019;161(1_suppl):S1-S45",
+    "checked": "PubMed 초록만 읽음(PMC 전문 없음) — KAS 1 첫 진료에서 감각신경성과 전음성을 가른다(강한 권고) · KAS 2 양측·반복·국소 신경징후 확인 · KAS 4 증상 14일 안 청력검사 · KAS 6 MRI 또는 ABR 로 후미로 병변 평가 · KAS 8 2주 안 스테로이드는 선택 · KAS 9 고압산소는 스테로이드 병용만 · KAS 10 2–6주 불완전 회복이면 고실 내 스테로이드 · KAS 12 추적 청력검사. 초록 텍스트에서 「반대 권고」(KAS 3·5·11)의 부정어가 빠져 있어, KAS 11 의 내용은 Lee & Chung 2024 전문의 서술로 확인했다. 음차 검사 방법·본문 표는 보지 못했다",
+    "doi": "10.1177/0194599819859885",
+    "pmid": "31369359",
+    "verified": "abstract",
+    "year": "2019",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1177/0194599819859885"
+   }
+  ],
+  "checks": [
+   {
+    "q": "오른쪽 난청 환자 — Weber 는 오른쪽으로 쏠리고 오른쪽 Rinne 에서 골도가 더 크게 들린다. 난청의 종류는?",
+    "a": "오른쪽 전음성 난청. 전음성이면 Weber 가 아픈 귀로 쏠리고 Rinne 이 뒤집힌다(손실 30 dB 이상)."
+   },
+   {
+    "q": "왼쪽 귀가 이틀 전 갑자기 안 들린다. Weber 는 오른쪽, 양쪽 Rinne 기도>골도. 다음 처치는?",
+    "a": "왼쪽 감각신경성 난청 — 돌발성으로 보고 청력검사로 확인하며 2주 안 스테로이드를 권하고, MRI(또는 ABR)로 후미로 병변을 본다."
+   },
+   {
+    "q": "순음 역치는 가벼운데 어음 변별이 매우 나쁜 한쪽 감각신경성 난청이 뜻하는 것은?",
+    "a": "후미로(청신경·중추) 병변, 특히 청신경초종 — 조영 MRI 로 확인한다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "한쪽 난청 — 음차에서 돌발성 처치까지",
+  "geo": {
+   "title": "한쪽 난청 — 음차에서 돌발성 처치까지",
+   "w": 567.0,
+   "h": 628.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "한쪽 귀가 안 들린다"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 73.7,
+     "y": 16.0
+    },
+    {
+     "id": "exam",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "이경 검사 · 512 Hz Weber·",
+      "Rinne 를 시행"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 74.9,
+     "y": 85.0
+    },
+    {
+     "id": "rinne",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "환측 Rinne 골도>기도?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 76.5,
+     "y": 171.0
+    },
+    {
+     "id": "cond",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전음성 — 이경·",
+      "고막운동성으로 원인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 458.0
+    },
+    {
+     "id": "weber",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "Weber 가 성한 귀로 쏠림?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 191.8,
+     "y": 261.0
+    },
+    {
+     "id": "pta",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "순음청력검사로 기도·골도",
+      "역치 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 136.6,
+     "y": 351.0
+    },
+    {
+     "id": "sudden",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "3일 안에 갑자기 생겼나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 458.0
+    },
+    {
+     "id": "ssnhl",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "돌발성 SNHL — 2주 안",
+      "스테로이드 · MRI"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 548.0
+    },
+    {
+     "id": "slow",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "점진적 SNHL — 원인 찾기 ·",
+      "비대칭이면 MRI"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 548.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "exam",
+     "points": [
+      [
+       171.7,
+       63.0
+      ],
+      [
+       172.9,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "exam",
+     "to": "rinne",
+     "points": [
+      [
+       172.9,
+       149.0
+      ],
+      [
+       172.9,
+       157.0
+      ],
+      [
+       174.5,
+       157.0
+      ],
+      [
+       174.5,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "rinne",
+     "to": "cond",
+     "points": [
+      [
+       141.8,
+       218.0
+      ],
+      [
+       141.8,
+       247.0
+      ],
+      [
+       121.7,
+       247.0
+      ],
+      [
+       121.7,
+       337.0
+      ],
+      [
+       101.6,
+       337.0
+      ],
+      [
+       101.6,
+       444.0
+      ],
+      [
+       81.3,
+       444.0
+      ],
+      [
+       81.3,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 132.3,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "rinne",
+     "to": "weber",
+     "points": [
+      [
+       207.1,
+       218.0
+      ],
+      [
+       207.1,
+       247.0
+      ],
+      [
+       289.8,
+       247.0
+      ],
+      [
+       289.8,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 186.6,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "weber",
+     "to": "sudden",
+     "points": [
+      [
+       322.5,
+       308.0
+      ],
+      [
+       322.5,
+       337.0
+      ],
+      [
+       348.6,
+       337.0
+      ],
+      [
+       348.6,
+       444.0
+      ],
+      [
+       372.7,
+       444.0
+      ],
+      [
+       372.7,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 313.0,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "weber",
+     "to": "pta",
+     "points": [
+      [
+       257.2,
+       308.0
+      ],
+      [
+       257.2,
+       337.0
+      ],
+      [
+       234.6,
+       337.0
+      ],
+      [
+       234.6,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중앙·애매"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 228.0,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "pta",
+     "to": "cond",
+     "points": [
+      [
+       201.9,
+       415.0
+      ],
+      [
+       201.9,
+       444.0
+      ],
+      [
+       146.7,
+       444.0
+      ],
+      [
+       146.7,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "골도 보존"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 174.1,
+      "y": 419.0
+     }
+    },
+    {
+     "from": "pta",
+     "to": "sudden",
+     "points": [
+      [
+       267.3,
+       415.0
+      ],
+      [
+       267.3,
+       444.0
+      ],
+      [
+       307.3,
+       444.0
+      ],
+      [
+       307.3,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "둘 다 오름"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 237.5,
+      "y": 419.0
+     }
+    },
+    {
+     "from": "sudden",
+     "to": "ssnhl",
+     "points": [
+      [
+       307.3,
+       505.0
+      ],
+      [
+       307.3,
+       534.0
+      ],
+      [
+       227.0,
+       534.0
+      ],
+      [
+       227.0,
+       548.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 509.0
+     }
+    },
+    {
+     "from": "sudden",
+     "to": "slow",
+     "points": [
+      [
+       372.7,
+       505.0
+      ],
+      [
+       372.7,
+       534.0
+      ],
+      [
+       453.0,
+       534.0
+      ],
+      [
+       453.0,
+       548.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 509.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "한쪽 귀가 안 들린다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "이경 검사 · 512 Hz Weber·Rinne 를 시행"
+     }
+    ]
+   },
+   {
+    "id": "exam",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "이경 검사 · 512 Hz Weber·Rinne 를 시행",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "환측 Rinne 골도>기도?"
+     }
+    ]
+   },
+   {
+    "id": "rinne",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "환측 Rinne 골도>기도?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "전음성 — 이경·고막운동성으로 원인"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "Weber 가 성한 귀로 쏠림?"
+     }
+    ]
+   },
+   {
+    "id": "weber",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "Weber 가 성한 귀로 쏠림?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "3일 안에 갑자기 생겼나?"
+     },
+     {
+      "label": "중앙·애매",
+      "to": 5,
+      "toText": "순음청력검사로 기도·골도 역치 확인"
+     }
+    ]
+   },
+   {
+    "id": "pta",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "순음청력검사로 기도·골도 역치 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "골도 보존",
+      "to": 6,
+      "toText": "전음성 — 이경·고막운동성으로 원인"
+     },
+     {
+      "label": "둘 다 오름",
+      "to": 7,
+      "toText": "3일 안에 갑자기 생겼나?"
+     }
+    ]
+   },
+   {
+    "id": "cond",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전음성 — 이경·고막운동성으로 원인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "sudden",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "3일 안에 갑자기 생겼나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "돌발성 SNHL — 2주 안 스테로이드 · MRI"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "점진적 SNHL — 원인 찾기 · 비대칭이면 MRI"
+     }
+    ]
+   },
+   {
+    "id": "ssnhl",
+    "num": 8,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "돌발성 SNHL — 2주 안 스테로이드 · MRI",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "slow",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "점진적 SNHL — 원인 찾기 · 비대칭이면 MRI",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.ent.peripheral-vertigo.timing-trigger-differentiation": {
+  "id": "cn.ent.peripheral-vertigo.timing-trigger-differentiation",
+  "title": "말초성 어지럼 — 시간·유발·청각 증상과 HINTS",
+  "objective": "어지럼 환자에서 지속 시간·유발 요인·청각 증상과 HINTS 진찰로 이석증·전정신경염·메니에르병을 뇌졸중과 가른다",
+  "objectiveKind": "감별",
+  "condition": "말초성 어지럼(peripheral vertigo) — 양성 돌발성 두위 현훈(benign paroxysmal positional vertigo) · 전정신경염(vestibular neuritis) · 메니에르병(Ménière's disease), 감별 대상 후순환 뇌졸중",
+  "topic": "Otorhinolaryngology",
+  "seeAlso": [
+   "Neurology",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "3ed8f9d6b7b6b977",
+  "summary": [
+   "결론: 자세를 바꿀 때 수십 초 = 이석증, 며칠 계속 = 전정신경염(먼저 HINTS), 수 시간 발작+저음역 난청·이명 = 메니에르.",
+   "시험 단서: 돌아누울 때 빙빙(BPPV), 감기 뒤 며칠 구토·한 방향 안진(vestibular neuritis), 귀 먹먹함·이명 반복(Ménière).",
+   "왜: 떨어진 이석은 중력 방향이 바뀔 때만 움직이고, 한쪽 전정신경이 갑자기 꺼지면 머리를 가만히 둬도 비대칭이 계속된다.",
+   "급성 전정 증후군에서 두부충동검사 정상·방향이 바뀌는 안진·사편위 중 하나면 뇌졸중 — 초기 MRI 음성도 배제가 아니다.",
+   "BPPV 는 영상·전정억제제 대신 이석 정복술(후반고리관은 Epley), 정복술 뒤 자세 제한은 하지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 시간과 유발을 먼저 묻는가",
+    "deep": false,
+    "html": "<ul>\n<li>환자가 고르는 말(빙빙·아찔·휘청)은 원인을 믿을 만하게 가리키지 못한다 — 그래서 첫 발작인지 · 한 번에 얼마나 가는지 · 무엇이 일으키는지 · 함께 오는 증상을 묻는다 <sup>[1 24장 p.162]</sup>.</li>\n<li>시간으로 크게 나뉜다: 수 초 = BPPV · 기립성 저혈압(자세 변화가 유발), 수 분 = 후순환 일과성 허혈발작, 수 시간 = 전정 편두통 · 메니에르병, 며칠 계속 = 급성 전정 증후군(전정신경염 또는 뇌졸중) <sup>[1 24장 p.162–163]</sup>.</li>\n<li>며칠 가는 어지럼에서 가장 중요한 질문은 「중추성인가」다 — 그래서 전정신경염이라는 결론보다 HINTS 가 먼저다 <sup>[1 24장 p.163]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 비대칭이 어지럼을 만든다",
+    "deep": false,
+    "html": "<ul>\n<li>어지럼(vertigo)은 두 미로 또는 그 중추 경로 입력이 갑자기 비대칭이 되어 생긴다. 양쪽이 같이 떨어지면 어지럼 없이 불균형·동요시만 남는다 <sup>[1 24장 p.162]</sup>.</li>\n<li><strong>BPPV</strong>: 타원낭 평형반에서 떨어진 이석(탄산칼슘 결정)이 대개 후반고리관으로 들어가, 머리가 중력 방향을 바꿀 때만 움직이며 어지럼과 안진을 만든다 — 그래서 짧고 늘 자세가 유발한다 <sup>[1 24장 p.163]</sup>.</li>\n<li><strong>전정신경염</strong>: 한쪽 전정 입력이 갑자기 꺼져 머리가 계속 도는 것처럼 느낀다 — 가만히 있어도 지속되고, 안진은 병변 반대로 빠른 성분을 가진 한 방향 수평 안진이다 <sup>[1 24장 p.163]</sup>.</li>\n<li><strong>메니에르병</strong>: 내림프가 늘어난 내림프 수종(endolymphatic hydrops)으로 전정·달팽이관 털세포가 함께 상해 어지럼과 저음역 난청·이명·먹먹함이 같이 온다 <sup>[1 36장 p.246–247]</sup>.</li>\n<li>청각 경로는 뇌간에 들어가자마자 양측이 되므로 한쪽 난청은 대개 말초를 가리킨다 — 예외는 청신경 뿌리 근처 병변과 AICA 영역 미로 경색이다 <sup>[1 24장 p.162]</sup> <sup>[1 36장 p.247]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 시간·유발·청각 증상",
+    "deep": false,
+    "html": "<ul>\n<li>표가 다섯 질환의 시간·유발·청각 증상·진찰을 나란히 놓는다. 반복 어지럼은 시간과 유발로, 급성 지속 어지럼은 진찰(HINTS)로 가른다.</li>\n<li><strong>두부충동검사</strong>: 목표를 보게 하고 머리를 작게(약 20°) 빠르게 돌린다. 전정안반사가 약하면 반대 방향 따라잡기 단속운동이 나온다 = 말초 <sup>[1 24장 p.163]</sup>.</li>\n<li><strong>HINTS</strong>(기준 칸): 급성 전정 증후군 고위험군에서 위험 소견이 하나라도 있으면 중추성. 침상에서 약 1분이면 한다 <sup>[2 Discussion]</sup>.</li>\n<li><strong>음성 결과의 한계</strong>: 초기 확산강조 MRI 는 48시간 안에 위음성이 있다. CT 는 급성 경색 민감도가 약 16 %로 낮고 후두와에서 특히 낮다 <sup>[2 Introduction · Results]</sup>.</li>\n<li>메니에르가 의심되면 청력검사(비대칭 저음역 감각신경성 난청)를 하고, 원인 모를 한쪽 난청·전정기능 저하는 조영 MRI 로 신경초종을 배제한다 <sup>[1 24장 p.163–164]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 진단별 첫 처치",
+    "deep": false,
+    "html": "<ul>\n<li>치료는 진단을 따라간다 — 어지럼을 전정억제제로만 누르면 도움이 안 되고 회복을 늦출 수 있다 <sup>[1 24장 p.163]</sup>.</li>\n<li>BPPV 는 중력을 이용해 이석을 반고리관 밖으로 빼는 정복술이 치료다(표). 전정신경염은 대개 저절로 낫고, 억제제는 처음 며칠만 쓰고 전정 재활로 보상을 돕는다 <sup>[1 24장 p.163]</sup>.</li>\n<li>메니에르병은 저염식·이뇨제가 처음이고, 반복되면 고실 내 스테로이드·겐타마이신, 그래도 안 되면 수술을 생각한다 — 난청·이명·먹먹함에는 효과적인 치료가 없다 <sup>[1 36장 p.247]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>BPPV 는 관찰 뒤 또는 치료 뒤 1개월 안에 다시 보고, 지속되면 남은 BPPV 나 다른 말초·중추 질환을 찾는다. 낙상 위험·이동 장애를 평가하고 재발 가능성을 교육한다 <sup>[3† Action statements]</sup>.</li>\n<li>HINTS 근거는 반복 어지럼이 없는 고위험 급성 전정 증후군에서 나왔다 — 반복 어지럼·저위험 환자에게 그대로 옮기지 않는다 <sup>[2 Discussion]</sup>.</li>\n<li>젊은 환자도 척추동맥 박리로 전정신경염을 흉내 내는 뇌졸중이 올 수 있다(연구의 뇌졸중 중 15명이 50세 미만) <sup>[2 Discussion]</sup>.</li>\n<li>국내 교과서·KMLE 해설의 어지럼 감별 서술은 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 메니에르 저염식의 수치</strong> — 시험 기준: 첫 치료는 저염식 + 이뇨제(수치는 정답 단서로 쓰지 않는다) <sup>[1 24장 p.164]</sup> / 다른 기준: 해리슨 22판 안에서도 36장은 「하루 2 g 저염식」 <sup>[1 36장 p.247]</sup>, 24장 표 24-2 는 「저나트륨(하루 1000 mg)」 <sup>[1 24장 p.165 표 24-2]</sup> / 왜 다른가: 두 장의 저자가 다르고, 2 g 이 소금인지 나트륨인지 36장 문장이 밝히지 않는다 / 시험에서는: KMLE · USMLE 모두 「저염식」 자체를 고르게 하고 수치는 묻지 않는다고 보았다(작성자 판단 — 국가시험 해설과 대조하지 않았다).</li>\n<li><strong>Z2 새 근거 · 급성 어지럼에서 MRI 와 침상 진찰</strong> — 시험 기준: 급성 전정 증후군은 HINTS 로 중추성을 가리고, 초기 MRI 음성으로 뇌졸중을 배제하지 않는다 <sup>[2 Results]</sup> / 다른 기준: 해리슨 24장은 HINTS 라는 이름 없이 같은 요소(두부충동검사 정상 · 방향 바뀌는 안진)를 표로 들고, 소견이 없어도 위험인자 있는 노인은 뇌졸중을 평가하라고 쓴다 <sup>[1 24장 p.163]</sup> / 왜 다른가: Kattah 2009 는 단일 기관 고위험 표본이라 일반 응급실 환자에서는 특이도가 낮아질 수 있다고 저자들이 적었다 <sup>[2 Discussion]</sup> / 시험에서는: KMLE · USMLE 모두 「두부충동검사 정상 + 방향 바뀌는 안진 = 중추성 → MRI·입원」이 답이다(작성자 판단).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "반복·급성 어지럼 — 병력으로 가르기",
+    "columns": [
+     "질환",
+     "지속·양상",
+     "유발",
+     "청각 증상",
+     "진찰"
+    ],
+    "rows": [
+     [
+      "양성 돌발성 두위 현훈(BPPV)",
+      "1분 미만(보통 15–20초) 반복",
+      "누울 때·일어날 때·위를 볼 때·돌아누울 때 — 항상 자세 변화",
+      "없음",
+      "Dix-Hallpike: 잠깐 나오는 상향·회선 안진(후반고리관)"
+     ],
+     [
+      "전정신경염",
+      "며칠 계속, 가만히 있어도 지속 · 구역·구토·동요시",
+      "없음(머리 움직이면 악화)",
+      "없음",
+      "한 방향 수평 안진(병변 반대로 빠른 성분) · 고정하면 줄어듦 · 두부충동검사 비정상"
+     ],
+     [
+      "메니에르병",
+      "수 시간 발작(정의 20분~12시간), 사이에는 회복",
+      "자발",
+      "발작 때 한쪽 저음역 감각신경성 난청·이명·먹먹함, 오르내림",
+      "청력검사: 비대칭 저음역 난청"
+     ],
+     [
+      "후순환 뇌졸중",
+      "갑자기 생겨 계속 · 일과성이면 수 분(TIA)",
+      "자발",
+      "대개 없음 · AICA 경색은 난청 동반",
+      "HINTS 위험 소견 · 사편위 · 심한 몸통 실조"
+     ],
+     [
+      "전정 편두통",
+      "수 분~수 시간",
+      "움직임·시각 자극에 예민",
+      "드묾",
+      "편두통 특징(빛·소리 공포, 시각 전조)"
+     ]
+    ],
+    "note": "시간·유발 <sup>[1 24장 p.162–164]</sup> · 메니에르 20분~12시간 <sup>[4† 초록]</sup> · 뇌졸중 소견 <sup>[2 Results]</sup> · AICA 미로 경색 <sup>[1 36장 p.247]</sup>."
+   },
+   {
+    "title": "진단별 첫 처치와 하지 않는 것",
+    "columns": [
+     "진단",
+     "첫 처치",
+     "하지 않는 것"
+    ],
+    "rows": [
+     [
+      "후반고리관 BPPV",
+      "이석 정복술(Epley) — 1개월 안에 재평가 <sup>[3† Action statements]</sup>",
+      "일상적 전정억제제 · 영상 · 정복술 뒤 자세 제한 <sup>[3† Action statements]</sup>"
+     ],
+     [
+      "전정신경염",
+      "처음 며칠만 전정억제제 → 빨리 일상 활동 · 전정 재활 <sup>[1 24장 p.163]</sup>",
+      "며칠 넘는 억제제 · 근거 없는 항바이러스제 <sup>[1 24장 p.163]</sup>"
+     ],
+     [
+      "메니에르병",
+      "저염식 · 이뇨제 → 지속되면 고실 내 스테로이드·겐타마이신 → 수술 <sup>[1 24장 p.164]</sup> <sup>[1 36장 p.247]</sup>",
+      "MRI 로 후미로 병변(소뇌다리뇌각 종양 등) 배제 없이 진단 확정 <sup>[1 36장 p.247]</sup>"
+     ],
+     [
+      "HINTS 위험 · 중추 의심",
+      "뇌 MRI · 신경과 평가 — 응급 <sup>[1 24장 p.165]</sup>",
+      "초기 MRI 음성만으로 귀가 <sup>[2 Discussion]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "두부충동검사에서 따라잡기 단속운동 = 위험 소견?",
+    "point": "따라잡기 단속운동(비정상 두부충동검사)은 말초 전정 기능 저하를 뜻한다. 급성 지속 어지럼에서 두부충동검사가 <b>정상</b>이면 오히려 중추성을 의심한다 <sup>[1 24장 p.163 표 24-1]</sup> <sup>[2 Discussion]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "급성 어지럼 — 사지 실조·구음장애가 없으면 말초성?",
+    "point": "급성 전정 증후군 뇌졸중의 절반 이상은 사지 실조·구음장애 같은 뚜렷한 신경징후가 없다. 혼자 앉지 못할 정도의 몸통 실조는 중추성에서만 보였다(34 % vs 0 %) <sup>[2 Results]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "발병 직후 확산강조 MRI 음성 = 뇌졸중 배제?",
+    "point": "초기 확산강조 MRI 는 12 %에서 위음성이었고(모두 발병 48시간 안), 외측 연수·교뇌 경색에서는 민감도 72 %였다. 같은 시기 HINTS 위험 소견은 민감도 100 %였다 <sup>[2 Results]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "두부충동검사가 비정상이면 뇌졸중은 배제?",
+    "point": "AICA 영역 외측 교뇌 경색은 전정신경 뿌리를 침범해 두부충동검사가 비정상으로 나올 수 있다 — 사편위가 3명 중 2명에서 이를 바로잡았다. 그래서 세 가지를 함께 본다 <sup>[2 Results]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "BPPV 에 전정억제제·영상 검사?",
+    "point": "진단 기준에 맞는 BPPV 에는 영상·전정기능검사를 하지 않고, 항히스타민제·벤조디아제핀 같은 전정억제제를 일상적으로 쓰지 않는다 — 치료는 이석 정복술이다 <sup>[3† Action statements]</sup>. 억제제는 중추 보상을 늦춘다 <sup>[1 24장 p.165]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "전정신경염에 항바이러스제?",
+    "point": "효과가 입증되지 않아 대상포진 귀(Ramsay Hunt 증후군) 증거가 없으면 쓰지 않는다. 조기 스테로이드의 역할도 불확실하다 <sup>[1 24장 p.163]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "어지럼 없이 난청·이명·먹먹함만 반복 = 메니에르?",
+    "point": "어지럼이 없으면 메니에르병 진단과 맞지 않는다 — 오르내리는 감각신경성 난청·이명·먹먹함만 있으면 달팽이관 수종(cochlear hydrops)에 가깝다 <sup>[1 36장 p.246]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "수 분 가는 발작은 후순환 일과성 허혈발작을 먼저 생각한다(편두통 등도 가능) <sup>[1 24장 p.162]</sup>.",
+   "HINTS 위험 소견 = 두부충동검사 정상 · 시선에 따라 방향이 바뀌는 안진 · 사편위 — 셋 중 하나 <sup>[2 Results]</sup>. 순수 수직·순수 회선 안진과 고정해도 줄지 않는 안진도 중추 소견이다 <sup>[1 24장 p.163 표 24-1]</sup>.",
+   "뚜렷한 소견이 없어도 혈관 위험인자가 있는 노인의 급성 전정 증후군은 뇌졸중을 평가한다 <sup>[1 24장 p.163]</sup>.",
+   "BPPV 는 Dix-Hallpike 에서 잠깐 나오는 상향·회선 안진으로 확인한다(후반고리관) <sup>[1 24장 p.163]</sup> <sup>[3† Action statements]</sup>. Dix-Hallpike 가 수평 안진이거나 안진이 없으면 수평반고리관 BPPV 를 보려고 누운 채 굴리기 검사(supine roll test)를 한다 <sup>[3† Action statements]</sup>.",
+   "짧은 어지럼이 일어설 때 생기면 기립성 저혈압도 생각한다 — 누운 채 돌아누울 때 생기는 것이 BPPV 쪽이다 <sup>[1 24장 p.162–163]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "hints",
+    "name": "HINTS(Head-Impulse–Nystagmus–Test-of-Skew)",
+    "kind": "진단 기준",
+    "population": "급성 전정 증후군(갑자기 생겨 며칠 가는 어지럼·안진·구역·보행 불안정) + 뇌졸중 위험인자 1개 이상, 반복 어지럼 병력 없음",
+    "statement": "위험 소견 셋 중 하나라도 있으면 중추성(뇌졸중) — ① 수평 두부충동검사 정상 ② 시선 방향에 따라 방향이 바뀌는 안진 ③ 교대 가림 검사에서 사편위(skew deviation). 민감도 100 % · 특이도 96 % [[kattah-2009: Results]]",
+    "exceptions": "단일 기관 · 한 명의 신경안과 전문의가 고위험군 101명을 본 연구다(중추성 76 %). 반복 어지럼(BPPV·메니에르)에는 적용하지 않는다 — 그 환자들은 연구에서 제외됐다 [[kattah-2009: Materials and Methods · Discussion]]",
+    "source": "kattah-2009",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "meniere",
+    "name": "확실한 메니에르병(Bárány 학회 등 2015)",
+    "kind": "진단 기준",
+    "population": "반복 어지럼 환자",
+    "statement": "발작성 어지럼(한 번 20분~12시간) + 저·중음역 감각신경성 난청 + 같은 귀의 오르내리는 귀 증상(청력·이명·먹먹함) [[barany-meniere-2015: 초록]]",
+    "exceptions": "어지럼·귀 증상이 20분~24시간이면 「가능성 있는(probable)」 메니에르병 [[barany-meniere-2015: 초록]]. 횟수 등 세부 조항은 전문을 보지 못해 싣지 않았다",
+    "source": "barany-meniere-2015",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Walker MF, Daroff RB. Chapter 24 Dizziness and Vertigo, pp.162–165 · Lalwani AK. Chapter 36 Disorders of Hearing, pp.246–247",
+    "checked": "드라이브 22판 24장 문서(H22_024, 인쇄쪽 162~165)를 처음부터 끝까지 읽음 — p.162 첫 질문(위험한가·전정성인가·말초/중추), 시간(초 = BPPV·기립성, 분 = 후순환 TIA, 시간 = 전정 편두통·메니에르), 한쪽 난청 = 말초; p.163 안진(빛에서 잘 보이면 중추 · 하향·방향 바뀌는 안진 = 소뇌), 두부충동검사, Dix-Hallpike(상향·회선), 전정신경염(가만히 있어도 지속 · HIT 정상이면 말초 가능성 낮음 · 위험인자 있는 노인은 소견 없어도 뇌졸중 평가 · 스테로이드 불확실 · 항바이러스제 근거 없음 · 억제제는 처음 며칠만), BPPV(1분 미만 15–20초 · 항상 자세 변화 · 이석 · Epley), 표 24-1 말초/중추; p.164 전정 편두통 · 메니에르(저음역 난청·귀 증상, 이뇨제·저염, 고실 내 스테로이드·겐타마이신) · 그림 24-1 Epley · 청신경초종; p.165 중추성 = 응급·뇌 MRI, 억제제는 단기만, 표 24-2(저나트륨 1000 mg/일). 36장 p.246–247 메니에르(어지럼 없으면 메니에르 아님 · 2 g/일 저염식 · MRI 로 후미로 배제) · AICA 미로 경색도 읽음",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   },
+   {
+    "id": "kattah-2009",
+    "org": "Kattah JC, Talkad AV, Wang DZ, Hsieh YH, Newman-Toker DE",
+    "title": "HINTS to diagnose stroke in the acute vestibular syndrome: three-step bedside oculomotor examination more sensitive than early MRI diffusion-weighted imaging",
+    "kind": "trial",
+    "citation": "Stroke 2009;40(11):3504-10",
+    "checked": "PMC4593511 전문(PubMed MCP)을 처음부터 끝까지 읽음 — 대상(급성 전정 증후군 + 위험인자 ≥1, 반복 어지럼 제외, 101명 중 중추 76), 위험 HINTS(정상 h-HIT · 방향 바뀌는 안진 · 사편위) 민감도 100 % 특이도 96 % LR+ 25, 사편위 17 %(뇌간 30 %), 외측 교뇌 경색 3명 중 2명에서 비정상 h-HIT 를 사편위가 바로잡음, 초기 DWI 위음성 12 %(<48시간) · 외측 연수·교뇌 72 %, 뚜렷한 신경징후 51 %뿐, 심한 몸통 실조 34 % vs 0 %, 청각 증상은 AICA 영역 경색과 연관, 한계(단일 검사자 · 고위험 표본)",
+    "doi": "10.1161/STROKEAHA.109.551234",
+    "pmid": "19762709",
+    "verified": "text",
+    "year": "2009",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4593511/"
+   },
+   {
+    "id": "aao-bppv-2017",
+    "org": "AAO-HNSF (Bhattacharyya N, Gubbels SP, Schwartz SR, et al.)",
+    "title": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+    "kind": "guideline",
+    "citation": "Otolaryngol Head Neck Surg 2017;156(3_suppl):S1-S47",
+    "checked": "PubMed 초록만 읽음(PMC 전문 없음) — 강한 권고: Dix-Hallpike(머리 45° 돌리고 목 20° 젖힘)에서 회선·상향 안진이면 후반고리관 BPPV 진단 · 이석 정복술로 치료 · 정복술 뒤 자세 제한 반대; 권고: Dix-Hallpike 가 수평·무안진이면 누운 채 굴리기 검사 · 다른 원인과 감별 · 낙상 위험 등 평가 · 1개월 안 재평가 · 지속되면 다른 말초·중추 질환 평가 · 교육; 반대 권고: 영상 · 전정기능검사 · 전정억제제 일상 사용; 선택: 관찰 · 전정 재활. 정복술 횟수·성공률 등 본문 수치는 보지 못했다",
+    "doi": "10.1177/0194599816689667",
+    "pmid": "28248609",
+    "verified": "abstract",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.1177/0194599816689667"
+   },
+   {
+    "id": "barany-meniere-2015",
+    "org": "Lopez-Escamez JA, Carey J, Chung WH, et al.; Classification Committee of the Bárány Society 외",
+    "title": "Diagnostic criteria for Menière's disease",
+    "kind": "consensus",
+    "citation": "J Vestib Res 2015;25(1):1-7",
+    "checked": "PubMed 초록만 읽음(PMC 전문 없음) — 확실한 메니에르병 = 발작성 어지럼 + 저·중음역 감각신경성 난청 + 오르내리는 귀 증상, 어지럼 20분~12시간; 가능성 있는 메니에르병 = 20분~24시간. 발작 횟수·청력 역치 세부 조항은 보지 못했다",
+    "doi": "10.3233/VES-150549",
+    "pmid": "25882471",
+    "verified": "abstract",
+    "year": "2015",
+    "checkedAt": "2026-11-20",
+    "url": "https://doi.org/10.3233/VES-150549"
+   }
+  ],
+  "checks": [
+   {
+    "q": "아침에 일어나 돌아누울 때마다 20초쯤 빙빙 돈다. 청력은 정상. 진단 검사와 치료는?",
+    "a": "Dix-Hallpike 에서 상향·회선 안진이면 후반고리관 BPPV — Epley 이석 정복술. 영상·전정억제제는 쓰지 않는다."
+   },
+   {
+    "q": "이틀째 계속되는 어지럼·구토. 두부충동검사 정상, 오른쪽을 보면 오른쪽, 왼쪽을 보면 왼쪽으로 뛰는 안진. 판단은?",
+    "a": "HINTS 위험 소견 두 개 — 중추성(후순환 뇌졸중)으로 보고 MRI·신경과 평가. 초기 MRI 음성이어도 배제하지 않는다."
+   },
+   {
+    "q": "한쪽 귀가 먹먹하고 이명이 커지면서 3시간 어지럼이 반복된다. 청력검사에서 기대하는 소견과 첫 치료는?",
+    "a": "같은 귀의 저음역 감각신경성 난청(발작 사이 회복) — 메니에르병. 저염식·이뇨제로 시작하고 MRI 로 후미로 병변을 배제한다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "어지럼 — 시간과 유발에서 HINTS 까지",
+  "geo": {
+   "title": "어지럼 — 시간과 유발에서 HINTS 까지",
+   "w": 1019.0,
+   "h": 504.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "빙빙 도는 어지럼"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 16.0
+    },
+    {
+     "id": "hx",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "시간·유발·청각 증상을",
+      "묻는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 85.0
+    },
+    {
+     "id": "dur",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "며칠 계속되나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 171.0
+    },
+    {
+     "id": "pos",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "자세를 바꿀 때 수십 초?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 516.6,
+     "y": 261.0
+    },
+    {
+     "id": "bppv",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "BPPV — Dix-Hallpike 확인",
+      "→ Epley"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 351.0
+    },
+    {
+     "id": "ear",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "수 시간 + 저음역 난청·이명?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 694.0,
+     "y": 351.0
+    },
+    {
+     "id": "men",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "메니에르 — 저염식·이뇨제"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 581.0,
+     "y": 441.0
+    },
+    {
+     "id": "vm",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전정 편두통 등"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 807.0,
+     "y": 441.0
+    },
+    {
+     "id": "hints",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "HINTS 위험 소견 하나라도?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 193.4,
+     "y": 261.0
+    },
+    {
+     "id": "stroke",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "중추성 — MRI 음성이어도",
+      "뇌졸중 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 351.0
+    },
+    {
+     "id": "vn",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전정신경염 — 단기 대증·재활"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 351.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "hx",
+     "points": [
+      [
+       453.0,
+       63.0
+      ],
+      [
+       453.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hx",
+     "to": "dur",
+     "points": [
+      [
+       453.0,
+       149.0
+      ],
+      [
+       453.0,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "dur",
+     "to": "hints",
+     "points": [
+      [
+       420.3,
+       218.0
+      ],
+      [
+       420.3,
+       247.0
+      ],
+      [
+       291.4,
+       247.0
+      ],
+      [
+       291.4,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "dur",
+     "to": "pos",
+     "points": [
+      [
+       485.7,
+       218.0
+      ],
+      [
+       485.7,
+       247.0
+      ],
+      [
+       614.6,
+       247.0
+      ],
+      [
+       614.6,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "반복 발작"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 457.8,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "pos",
+     "to": "bppv",
+     "points": [
+      [
+       581.9,
+       308.0
+      ],
+      [
+       581.9,
+       337.0
+      ],
+      [
+       566.0,
+       337.0
+      ],
+      [
+       566.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 572.4,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "pos",
+     "to": "ear",
+     "points": [
+      [
+       647.2,
+       308.0
+      ],
+      [
+       647.2,
+       337.0
+      ],
+      [
+       792.0,
+       337.0
+      ],
+      [
+       792.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 626.7,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "ear",
+     "to": "men",
+     "points": [
+      [
+       759.3,
+       398.0
+      ],
+      [
+       759.3,
+       427.0
+      ],
+      [
+       679.0,
+       427.0
+      ],
+      [
+       679.0,
+       441.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 749.8,
+      "y": 402.0
+     }
+    },
+    {
+     "from": "ear",
+     "to": "vm",
+     "points": [
+      [
+       824.7,
+       398.0
+      ],
+      [
+       824.7,
+       427.0
+      ],
+      [
+       905.0,
+       427.0
+      ],
+      [
+       905.0,
+       441.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 804.2,
+      "y": 402.0
+     }
+    },
+    {
+     "from": "hints",
+     "to": "stroke",
+     "points": [
+      [
+       258.8,
+       308.0
+      ],
+      [
+       258.8,
+       337.0
+      ],
+      [
+       114.0,
+       337.0
+      ],
+      [
+       114.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 249.3,
+      "y": 312.0
+     }
+    },
+    {
+     "from": "hints",
+     "to": "vn",
+     "points": [
+      [
+       324.1,
+       308.0
+      ],
+      [
+       324.1,
+       337.0
+      ],
+      [
+       340.0,
+       337.0
+      ],
+      [
+       340.0,
+       351.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 303.6,
+      "y": 312.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "빙빙 도는 어지럼",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "시간·유발·청각 증상을 묻는다"
+     }
+    ]
+   },
+   {
+    "id": "hx",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "시간·유발·청각 증상을 묻는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "며칠 계속되나?"
+     }
+    ]
+   },
+   {
+    "id": "dur",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "며칠 계속되나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "HINTS 위험 소견 하나라도?"
+     },
+     {
+      "label": "반복 발작",
+      "to": 5,
+      "toText": "자세를 바꿀 때 수십 초?"
+     }
+    ]
+   },
+   {
+    "id": "hints",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "HINTS 위험 소견 하나라도?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "중추성 — MRI 음성이어도 뇌졸중 평가"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "전정신경염 — 단기 대증·재활"
+     }
+    ]
+   },
+   {
+    "id": "pos",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "자세를 바꿀 때 수십 초?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "BPPV — Dix-Hallpike 확인 → Epley"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "수 시간 + 저음역 난청·이명?"
+     }
+    ]
+   },
+   {
+    "id": "stroke",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "중추성 — MRI 음성이어도 뇌졸중 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "vn",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전정신경염 — 단기 대증·재활",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bppv",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "BPPV — Dix-Hallpike 확인 → Epley",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ear",
+    "num": 9,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "수 시간 + 저음역 난청·이명?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 10,
+      "toText": "메니에르 — 저염식·이뇨제"
+     },
+     {
+      "label": "아니오",
+      "to": 11,
+      "toText": "전정 편두통 등"
+     }
+    ]
+   },
+   {
+    "id": "men",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "메니에르 — 저염식·이뇨제",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "vm",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전정 편두통 등",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.path.hepatic-congestion.zone3-mechanism": {
   "id": "cn.path.hepatic-congestion.zone3-mechanism",
   "title": "육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유",
@@ -107168,6 +120799,6447 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "usmle-2026-0039"
   ],
+  "hasErrors": false
+ },
+ "cn.prev.association-measures.rr-or-ar-selection": {
+  "id": "cn.prev.association-measures.rr-or-ar-selection",
+  "title": "역학 지표 — 설계가 쓸 수 있는 지표를 정한다",
+  "objective": "2×2 표와 연구 설명에서 발생률·유병률·상대위험도·교차비·기여위험도를 계산하고, 연구 설계에 맞는 연관성 지표(코호트 = 상대위험도, 환자-대조군 = 교차비)를 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "역학 지표(measures of frequency and association) — 발생률(incidence) · 유병률(prevalence) · 상대위험도(risk ratio) · 교차비(odds ratio) · 기여위험도(risk difference)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "f0bc808abeef6687",
+  "summary": [
+   "결론: 노출군·비노출군을 따라가 위험을 잰 코호트는 상대위험도, 환자·대조군을 골라 노출을 본 연구는 교차비다.",
+   "시험 단서: 「환자 100명과 대조군 200명」처럼 연구자가 수를 정했으면 위험(a/(a+b))을 구할 수 없다(odds ratio = ad/bc).",
+   "왜: 대조군 수는 연구자가 정하고 원 인구 크기를 모르니 위험·위험비가 없다 — 교차비만 남는다.",
+   "드문 질환이면 교차비 ≈ 상대위험도. 기여위험도 = 위험 차, 기여위험분율 = 위험 차 ÷ 노출군 위험.",
+   "유병률 = 기존+새 환자, 발생률 = 새 환자만. 완치 없이 생존만 늘면 유병률이 오른다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 설계부터 보는가",
+    "deep": false,
+    "html": "<ul>\n<li>같은 2×2 표라도 <strong>표본을 어떻게 뽑았는지</strong>가 쓸 수 있는 지표를 정한다. 노출군·비노출군을 정해 결과를 추적한 코호트는 위험(누적 발생)과 위험비·율비를 직접 계산한다 <sup>[2 Box 1]</sup>.</li>\n<li>환자-대조군 연구에서는 대조군 수를 연구자가 정하고 원 인구 크기를 대개 모른다 — 그래서 위험·율·위험비를 구할 수 없고 교차비가 선택 지표다 <sup>[1 Section 5 — Odds ratio]</sup>.</li>\n<li>질병이 드물면 교차비가 위험비의 적절한 근삿값이다 <sup>[1 Section 5 — Odds ratio]</sup>.</li>\n<li>「얼마나 강한가」(비)와 「얼마나 더 생기나」(차)는 다른 질문이다 — 비가 큰 노출이 차는 더 작을 수 있다 <sup>[2 Box 7]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 빈도에서 연관으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>발생(incidence)</strong> 은 새 환자만 센다. 처음에 병이 없던 인구에서 생긴 비율이 발생비율(incidence proportion, 위험·발병률)이고, 분모는 시작 시점의 위험 인구다. 관찰 시간이 사람마다 다르면 분모에 인년(person-time)을 넣은 발생률(incidence rate)을 쓴다 <sup>[1 Section 2]</sup>.</li>\n<li><strong>유병(prevalence)</strong> 은 새 환자와 기존 환자를 모두 센다(시점 유병률·기간 유병률). 유병률은 발생과 이환 기간을 함께 반영한다 — 그래서 발병 시점을 정하기 어려운 만성질환(당뇨·골관절염)에서는 유병률을 잰다 <sup>[1 Section 2]</sup>.</li>\n<li><strong>연관(association)</strong> 은 두 집단의 빈도를 비교한 것이다. 위험끼리 나누면 위험비, 율끼리 나누면 율비, 오즈끼리 나누면 교차비다 <sup>[1 Section 5]</sup>. 위험끼리 빼면 위험 차(초과 위험)이고, 그것을 노출군 위험으로 나누면 기여위험분율이다 <sup>[1 Section 6]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 설계마다 쓸 수 있는 지표",
+    "deep": false,
+    "html": "<ul>\n<li>표가 지표마다 공식·뜻·설계를 나란히 놓는다. 계산은 행 = 노출, 첫 열 = 질병인 표준 배치를 먼저 확인한다 <sup>[1 Section 5 — Table 3.12A]</sup>.</li>\n<li>예: 노출군 2,000명 중 100명(5 %), 비노출군 8,000명 중 80명(1 %) → 위험비 5.0, 교차비 5.2 <sup>[1 Section 5 — Table 3.15]</sup>. 같은 숫자로 위험 차 4 %, 기여위험분율 80 %(내 계산).</li>\n<li>백신 효과는 1 − 위험비, 곧 백신 접종군에서 줄어든 질병의 비율이다 <sup>[1 Section 6 — Vaccine efficacy]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>상대 지표(비)는 연관의 세기를 보여 원인 연구에 가장 쓸모 있고, 인과가 확인된 뒤에 절대 지표로 옮겨 공중보건 정책의 영향을 가늠한다 <sup>[2 Box 7]</sup>.</li>\n<li>인구기여분율(population attributable fraction)은 정의·용어가 통일되지 않았다 — 이 정리본은 공식을 싣지 않는다 <sup>[2 Box 7]</sup>.</li>\n<li>유병률 ≈ 발생률 × 이환 기간 같은 정량 관계식은 읽은 출처에 없어 싣지 않았다(검토 항목).</li>\n<li>국내 예방의학 교과서의 한국어 지표 이름(「기여위험도」·「기여위험분율」 등)과의 대응은 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 교차비 ≈ 상대위험도의 조건</strong> — 시험 기준: 질병이 드물 때 교차비가 위험비에 근사한다 <sup>[1 Section 5 — Odds ratio]</sup> / 다른 기준: 교차비가 무엇을 추정하는지는 대조군 표본 추출 방식에 달려 있어, 열린 코호트에서 뽑은 환자-대조군 연구는 율비를 직접 추정한다 <sup>[2 Box 1]</sup> / 왜 다른가: CDC 는 위험비로 읽을 때를, STROBE 는 표본 추출 설계 전체를 말한다 / 시험에서는: KMLE·USMLE 모두 「드문 질환이면 OR ≈ RR」로 답한다(내 판단 — 문항 대조 안 함).</li>\n<li><strong>Z2 맥락 · 「율(rate)」이라는 말</strong> — 시험 기준: 발병률(attack rate)·유병률(prevalence rate)은 이름에 rate 가 붙어도 비율(proportion)이다 <sup>[1 Section 1 — Rate]</sup> / 다른 기준: 시간 단위로 표현한 측정에만 「율」을 쓰는 역학자도 있다 <sup>[1 Section 1 — Rate]</sup> / 왜 다른가: 관행 용어와 엄밀한 정의의 차이 / 시험에서는: 분모에 시간(인년)이 있으면 발생률, 사람 수만 있으면 발생비율·유병률로 읽는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "2×2 표 지표 — 행 = 노출, 열 = 질병(a·b / c·d)",
+    "columns": [
+     "지표",
+     "공식",
+     "무엇을 말하나",
+     "쓸 수 있는 설계"
+    ],
+    "rows": [
+     [
+      "발생 위험(발생비율·발병률)",
+      "노출군 a/(a+b), 비노출군 c/(c+d) — 분모 = 시작 시점 위험 인구 <sup>[1 Section 2]</sup>",
+      "처음에 병이 없던 인구에서 새로 생긴 비율",
+      "코호트(닫힌 코호트) <sup>[2 Box 1]</sup>"
+     ],
+     [
+      "발생률(인년 율)",
+      "새 환자 수 ÷ 각자 관찰된 시간의 합 <sup>[1 Section 2]</sup>",
+      "시간을 분모에 직접 넣은 발생",
+      "코호트(열린 코호트는 율·율비만) <sup>[2 Box 1]</sup>"
+     ],
+     [
+      "유병률",
+      "기존+새 환자 ÷ 같은 시기 인구 <sup>[1 Section 2]</sup>",
+      "한 시점(시점)·기간(기간) 동안 병을 가진 비율",
+      "단면 연구 <sup>[2 Box 1]</sup>"
+     ],
+     [
+      "상대위험도(위험비·RR)",
+      "[a/(a+b)] ÷ [c/(c+d)] — 1.0 같음, &gt;1 노출군 위험 증가, &lt;1 감소 <sup>[1 Section 5]</sup>",
+      "연관의 세기",
+      "코호트 · 무작위 대조 시험"
+     ],
+     [
+      "교차비(OR)",
+      "(a/b) ÷ (c/d) = ad/bc <sup>[1 Section 5]</sup>",
+      "환자군·대조군의 노출 오즈 비 — 드문 질환에서 RR 근사",
+      "환자-대조군(선택 지표) <sup>[1 Section 5]</sup>"
+     ],
+     [
+      "기여위험도(위험 차)",
+      "노출군 위험 − 비노출군 위험 <sup>[1 Section 6]</sup>",
+      "노출로 더 생긴 절대 위험(초과 위험)",
+      "위험을 구할 수 있는 설계(코호트·시험)"
+     ],
+     [
+      "기여위험분율",
+      "(노출군 위험 − 비노출군 위험) ÷ 노출군 위험 × 100 % <sup>[1 Section 6]</sup>",
+      "노출군 환자 중 노출 탓인 비율",
+      "같음 — 단일 위험 요인을 가정"
+     ]
+    ],
+    "note": "공식은 cdc-epi-lesson3 Section 2·5·6, 설계별로 구할 수 있는 지표는 strobe-ee-2007 Box 1·7 과 CDC Section 5(환자-대조군에서 위험비 불가). 「쓸 수 있는 설계」의 상대위험도·기여위험도 칸은 위험을 직접 잰다는 정의에서 내가 이은 것이다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "환자-대조군 연구에서 상대위험도를 계산?",
+    "point": "대조군 수는 연구자가 정하고 환자가 나온 인구의 크기를 대개 모르므로, 전형적 환자-대조군 연구에서는 위험·발생률·위험비·율비를 계산할 수 없다. 교차비(ad/bc)가 선택 지표다 <sup>[1 Section 5 — Odds ratio]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "교차비는 언제나 상대위험도와 같다?",
+    "point": "질병이 드물 때만 교차비가 상대위험도의 적절한 근삿값이다. CDC 의 예(위험 5 % 대 1 %)에서 상대위험도 5.0, 교차비 5.2 로 벌어지기 시작한다 <sup>[1 Section 5 — Odds ratio, Table 3.15]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "유병률이 높다 = 발생률이 높다?",
+    "point": "유병률은 발생률과 이환 기간을 함께 반영한다. 유병률이 높은 것은 발생률이 높거나, 완치 없이 오래 생존하거나, 둘 다일 수 있다. 낮은 유병률은 낮은 발생률·빠른 사망·빠른 회복을 뜻할 수 있다 <sup>[1 Section 2 — Prevalence]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "발생률 분모에 이미 병이 있는 사람도?",
+    "point": "발생률(위험)의 분모는 관찰 시작 시점의 인원이고, 그 병이 생길 수 있는 「위험 인구」로 한정한다 — 이미 병이 있거나 걸릴 수 없는 사람은 뺀다 <sup>[1 Section 2 — Incidence proportion]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "상대위험도가 크면 공중보건 영향도 크다?",
+    "point": "영국 의사 코호트에서 흡연의 율비는 폐암 14.6, 관상동맥질환 1.61 이었지만 율 차는 폐암 232, 관상동맥질환 382(10만 명·년당)로 관상동맥질환이 더 컸다. 비(ratio)는 연관의 세기, 차(difference)는 영향의 크기다 <sup>[2 Box 7]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "환자-대조군 연구의 교차비는 대조군을 어떻게 뽑았는지에 따라 위험비·율비·(유병) 교차비로 해석된다 — 열린 코호트에서 표본을 뽑은 연구는 율비를 직접 추정한다 <sup>[2 Box 1]</sup>. 시험의 「드문 질환 가정」은 그중 위험비로 읽을 때의 조건이다.",
+   "단면 연구는 코호트처럼 노출군별 유병률을 비교하거나 환자-대조군처럼 노출 오즈를 비교해 분석할 수 있지만, 노출이 질병보다 먼저였는지 정하기 어렵다(선천·유전 노출은 예외) <sup>[2 Box 1]</sup>.",
+   "기여위험분율은 하나의 위험 요인이 그 병을 일으킨다고 가정한다 — 여러 요인이 상호작용하면 맞지 않을 수 있다 <sup>[1 Section 6]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "cdc-epi-lesson3",
+    "org": "U.S. Centers for Disease Control and Prevention",
+    "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. (SS1978) — Lesson 3: Measures of Risk",
+    "kind": "textbook",
+    "citation": "CDC. Principles of Epidemiology in Public Health Practice, Third Edition (2006, 2011 갱신). Lesson 3, Sections 1·2·5·6 (archive.cdc.gov 보관판)",
+    "checked": "archive.cdc.gov 보관판 Lesson 3 Section 1(비·비율·율 정의 — 「율」을 시간 단위 측정에만 쓰는 학자도 있음, 발병률은 비율), Section 2(발생비율 = 새 환자 ÷ 시작 시점 인구, 분모는 위험 인구로 한정 · 인년 발생률 = 새 환자 ÷ 관찰 시간 합 · 유병률 = 기존+새 환자, 시점/기간 유병률 · 유병률은 발생률과 이환 기간에 달림 — 높은 유병률 = 높은 발생률 또는 완치 없는 긴 생존, 낮은 유병률 = 낮은 발생률·빠른 사망·빠른 회복 · 만성질환은 발병 시점을 정하기 어려워 유병률을 잰다), Section 5(위험비 정의·1.0/>1/<1 해석·예시 · 율비 · 교차비 = ad/bc(교차곱 비) · 드문 질환이면 교차비가 위험비의 근삿값 · 표 3.15 RR 5.0 vs OR 5.2 · 「대조군 수는 연구자가 정하고 원 인구 크기를 모르므로 환자-대조군에서 위험·율·위험비·율비 계산 불가」, 교차비가 환자-대조군의 선택 지표), Section 6(기여위험분율 공식·흡연 폐암 예 87.7 %·단일 위험 요인 가정 · 백신 효과 = 1 − 위험비 · 분자를 위험 차·초과 위험이라 부름)를 WebFetch 로 읽음. 판 연도는 과정 첫 쪽(「Book originally published: October 2006 · updated: November 2011」)에서 확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2006",
+    "checkedAt": "2026-11-20",
+    "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html"
+   },
+   {
+    "id": "strobe-ee-2007",
+    "org": "Vandenbroucke JP, von Elm E, Altman DG, et al. (STROBE Initiative)",
+    "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): explanation and elaboration",
+    "kind": "consensus",
+    "citation": "PLoS Med 2007;4(10):e297",
+    "checked": "PMC2020496 전문(PubMed MCP) Box 1(코호트 = 노출을 먼저 재고 결과 발생을 추적, 닫힌 코호트는 위험·율·위험비·율비, 열린 코호트는 율·율비 · 환자-대조군 = 환자·대조군의 노출 오즈 비, 표본 추출에 따라 위험비·율비·유병 교차비로 해석, 대부분 열린 코호트에서 뽑아 율비 직접 추정 · 단면 = 한 시점 전원, 유병률 비교 또는 노출 오즈 비교, 노출의 시간 선후를 정하기 어려움)과 Box 7(누적 발생 vs 발생률, 시점·기간 유병률, 상대위험 = 위험비·율비, 영국 의사 흡연 율비 폐암 14.6·관상동맥질환 1.61 vs 율 차 232·382/10만 인년, 비 지표는 원인 연구용 연관의 세기, 인구기여분율은 용어가 통일되지 않음)을 읽음",
+    "doi": "10.1371/journal.pmed.0040297",
+    "pmid": "17941715",
+    "verified": "text",
+    "year": "2007",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2020496/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "노출군 2,000명 중 100명, 비노출군 8,000명 중 80명이 발병했다. 상대위험도·교차비·기여위험도·기여위험분율은?",
+    "a": "위험 5 %·1 % → RR 5.0, OR = (100×7,920)÷(1,900×80) = 5.2, 기여위험도 4 %(100명당 4명), 기여위험분율 = 4÷5 = 80 %."
+   },
+   {
+    "q": "폐암 환자 200명과 건강한 대조군 400명의 과거 흡연을 비교했다. 보고할 연관성 지표와 그 이유는?",
+    "a": "교차비. 대조군 수를 연구자가 정했고 원 인구 크기를 모르므로 위험·상대위험도를 계산할 수 없다."
+   },
+   {
+    "q": "완치는 못 하지만 생존을 늘리는 새 치료가 보급되면 그 병의 발생률과 유병률은?",
+    "a": "발생률은 그대로(새 환자 수는 변하지 않음), 유병률은 오른다(이환 기간이 길어짐)."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "연구 설명에서 지표 고르기",
+  "geo": {
+   "title": "연구 설명에서 지표 고르기",
+   "w": 793.0,
+   "h": 604.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "연구 설명 + 2×2 표"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 321.4,
+     "y": 16.0
+    },
+    {
+     "id": "sample",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "무엇을 기준으로 뽑았나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 321.4,
+     "y": 85.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "표본 추출·시간 순서를 다시",
+      "읽는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 208.4,
+     "y": 217.0
+    },
+    {
+     "id": "cc",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "교차비 ad/bc — 위험·RR",
+      "계산 불가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 130.0,
+     "y": 344.0
+    },
+    {
+     "id": "cs",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "유병률 · 유병률비 — 시간",
+      "순서 불확실"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 434.4,
+     "y": 217.0
+    },
+    {
+     "id": "risk",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "무엇을 묻나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 467.5,
+     "y": 344.0
+    },
+    {
+     "id": "rr",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "상대위험도 = 위험 ÷ 위험"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 434.0
+    },
+    {
+     "id": "ar",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "기여위험도 = 위험 − 위험,",
+      "분율 = 차 ÷ 노출 위험"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 581.0,
+     "y": 434.0
+    },
+    {
+     "id": "rare",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "질병이 드문가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 434.0
+    },
+    {
+     "id": "orrr",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "교차비를 상대위험도",
+      "근삿값으로 읽는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 524.0
+    },
+    {
+     "id": "noapprox",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "교차비를 상대위험도로 바꿔",
+      "읽지 않는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 524.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sample",
+     "points": [
+      [
+       419.4,
+       63.0
+      ],
+      [
+       419.4,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sample",
+     "to": "cc",
+     "points": [
+      [
+       360.6,
+       132.0
+      ],
+      [
+       360.6,
+       194.0
+      ],
+      [
+       192.4,
+       194.0
+      ],
+      [
+       192.4,
+       330.0
+      ],
+      [
+       195.4,
+       330.0
+      ],
+      [
+       195.4,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "질병 유무"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 332.7,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "sample",
+     "to": "cs",
+     "points": [
+      [
+       439.0,
+       132.0
+      ],
+      [
+       439.0,
+       203.0
+      ],
+      [
+       532.4,
+       203.0
+      ],
+      [
+       532.4,
+       217.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "한 시점",
+       "전원"
+      ],
+      "w": 44.7,
+      "h": 30,
+      "x": 416.6,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "sample",
+     "to": "risk",
+     "points": [
+      [
+       478.2,
+       132.0
+      ],
+      [
+       478.2,
+       194.0
+      ],
+      [
+       646.4,
+       194.0
+      ],
+      [
+       646.4,
+       330.0
+      ],
+      [
+       598.2,
+       330.0
+      ],
+      [
+       598.2,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "노출 후 추적"
+      ],
+      "w": 70.5,
+      "h": 17,
+      "x": 444.0,
+      "y": 169.0
+     }
+    },
+    {
+     "from": "sample",
+     "to": "info",
+     "points": [
+      [
+       399.8,
+       132.0
+      ],
+      [
+       399.8,
+       203.0
+      ],
+      [
+       306.4,
+       203.0
+      ],
+      [
+       306.4,
+       217.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불분명"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 379.3,
+      "y": 169.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "cc",
+     "points": [
+      [
+       273.7,
+       281.0
+      ],
+      [
+       273.7,
+       330.0
+      ],
+      [
+       260.7,
+       330.0
+      ],
+      [
+       260.7,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "환자·대조군"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 239.0,
+      "y": 285.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "risk",
+     "points": [
+      [
+       339.0,
+       281.0
+      ],
+      [
+       339.0,
+       330.0
+      ],
+      [
+       532.8,
+       330.0
+      ],
+      [
+       532.8,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "추적 코호트"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 305.7,
+      "y": 305.0
+     }
+    },
+    {
+     "from": "risk",
+     "to": "rr",
+     "points": [
+      [
+       532.8,
+       391.0
+      ],
+      [
+       532.8,
+       420.0
+      ],
+      [
+       453.0,
+       420.0
+      ],
+      [
+       453.0,
+       434.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "연관의 세기"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 499.5,
+      "y": 395.0
+     }
+    },
+    {
+     "from": "risk",
+     "to": "ar",
+     "points": [
+      [
+       598.2,
+       391.0
+      ],
+      [
+       598.2,
+       420.0
+      ],
+      [
+       679.0,
+       420.0
+      ],
+      [
+       679.0,
+       434.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "초과 위험"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 570.3,
+      "y": 395.0
+     }
+    },
+    {
+     "from": "cc",
+     "to": "rare",
+     "points": [
+      [
+       228.0,
+       408.0
+      ],
+      [
+       227.0,
+       434.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "rare",
+     "to": "orrr",
+     "points": [
+      [
+       194.3,
+       481.0
+      ],
+      [
+       194.3,
+       510.0
+      ],
+      [
+       114.0,
+       510.0
+      ],
+      [
+       114.0,
+       524.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "드묾"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 485.0
+     }
+    },
+    {
+     "from": "rare",
+     "to": "noapprox",
+     "points": [
+      [
+       259.7,
+       481.0
+      ],
+      [
+       259.7,
+       510.0
+      ],
+      [
+       340.0,
+       510.0
+      ],
+      [
+       340.0,
+       524.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "흔함"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 485.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "연구 설명 + 2×2 표",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "무엇을 기준으로 뽑았나?"
+     }
+    ]
+   },
+   {
+    "id": "sample",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "무엇을 기준으로 뽑았나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "질병 유무",
+      "to": 5,
+      "toText": "교차비 ad/bc — 위험·RR 계산 불가"
+     },
+     {
+      "label": "한 시점 전원",
+      "to": 3,
+      "toText": "유병률 · 유병률비 — 시간 순서 불확실"
+     },
+     {
+      "label": "노출 후 추적",
+      "to": 6,
+      "toText": "무엇을 묻나?"
+     },
+     {
+      "label": "불분명",
+      "to": 4,
+      "toText": "표본 추출·시간 순서를 다시 읽는다"
+     }
+    ]
+   },
+   {
+    "id": "cs",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "유병률 · 유병률비 — 시간 순서 불확실",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "표본 추출·시간 순서를 다시 읽는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "환자·대조군",
+      "to": 5,
+      "toText": "교차비 ad/bc — 위험·RR 계산 불가"
+     },
+     {
+      "label": "추적 코호트",
+      "to": 6,
+      "toText": "무엇을 묻나?"
+     }
+    ]
+   },
+   {
+    "id": "cc",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "교차비 ad/bc — 위험·RR 계산 불가",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "질병이 드문가?"
+     }
+    ]
+   },
+   {
+    "id": "risk",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "무엇을 묻나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "연관의 세기",
+      "to": 8,
+      "toText": "상대위험도 = 위험 ÷ 위험"
+     },
+     {
+      "label": "초과 위험",
+      "to": 9,
+      "toText": "기여위험도 = 위험 − 위험, 분율 = 차 ÷ 노출 위험"
+     }
+    ]
+   },
+   {
+    "id": "rare",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "질병이 드문가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "드묾",
+      "to": 10,
+      "toText": "교차비를 상대위험도 근삿값으로 읽는다"
+     },
+     {
+      "label": "흔함",
+      "to": 11,
+      "toText": "교차비를 상대위험도로 바꿔 읽지 않는다"
+     }
+    ]
+   },
+   {
+    "id": "rr",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "상대위험도 = 위험 ÷ 위험",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ar",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "기여위험도 = 위험 − 위험, 분율 = 차 ÷ 노출 위험",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "orrr",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "교차비를 상대위험도 근삿값으로 읽는다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "noapprox",
+    "num": 11,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "교차비를 상대위험도로 바꿔 읽지 않는다",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff": {
+  "id": "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff",
+  "title": "검사 타당도 — 유병률은 예측도만, 기준점은 둘 다",
+  "objective": "2×2 표에서 민감도·특이도·예측도·우도비를 계산하고, 유병률이나 판정 기준점이 바뀔 때 어느 지표가 어느 쪽으로 움직이는지 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "진단·선별검사의 타당도(validity) — 민감도(sensitivity) · 특이도(specificity) · 예측도(predictive value) · 우도비(likelihood ratio)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [
+   "Internal Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "3fa39fada9dc46df",
+  "summary": [
+   "결론: 유병률이 바뀌면 예측도만 움직이고(양성예측도는 같은 방향), 기준점이 바뀌면 민감도·특이도가 반대로 움직인다.",
+   "시험 단서: 같은 검사를 선별(무증상)과 진료(증상) 집단에 쓸 때 양성예측도(PPV)·음성예측도(NPV) 비교.",
+   "왜: 민감도·특이도는 질병 유무로 나눈 세로 칸의 비율, 예측도는 검사 결과로 나눈 가로 칸의 비율이다.",
+   "우도비: LR+ = 민감도/(1−특이도), LR− = (1−민감도)/특이도 — 사전확률과 함께 써야 사후확률이 된다.",
+   "예외: 중증 환자가 많은 집단에서는 민감도도 달라진다 — 민감도·특이도가 유병률과 완전히 무관하지는 않다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 「무엇이 바뀌었나」부터 보는가",
+    "deep": false,
+    "html": "<ul>\n<li>지표 문항은 <strong>분모가 무엇인가</strong>로 갈린다. 민감도·특이도는 질병 유무(기준 검사)로 나눈 집단 안의 비율이고, 예측도는 검사 결과로 나눈 집단 안의 비율이다 <sup>[2 Defining Sensitivity and PPV]</sup> <sup>[1 4장 p.24]</sup>.</li>\n<li>그래서 <strong>유병률</strong>이 바뀌면 질병 있는 쪽과 없는 쪽의 사람 수 비가 바뀌어 예측도가 움직이고, <strong>판정 기준점(cutoff)</strong> 이 바뀌면 한 집단 안의 양성·음성 비율이 바뀌어 민감도와 특이도가 반대로 움직인다 <sup>[1 4장 p.24]</sup>.</li>\n<li>개인에게 「양성이니 병이 있을 확률은?」을 답하는 지표는 예측도(사후확률)다. 민감도·특이도는 기준 검사에 견준 검사의 성질이다 <sup>[2 Summary Regarding Definitions]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 세로 칸과 가로 칸",
+    "deep": false,
+    "html": "<ul>\n<li>기준 검사(reference/gold standard)로 질병 유무를 정하고 같은 사람에게 새 검사를 해 2×2 표의 네 칸(TP·FP·FN·TN)을 채운다. 대상은 실제로 그 검사를 쓸 사람들과 닮아야 하고, 기준 검사가 일부에만 시행되면 추정이 치우친다 <sup>[1 4장 p.23]</sup>.</li>\n<li>사전확률(pretest probability)은 보통 그 집단의 유병률이나 임상 맥락으로 정한다. Bayes 식은 사전확률·민감도·위양성률로 양성 뒤 사후확률(= 양성예측도)을 계산한다: 사후확률 = (사전확률 × 민감도) ÷ [(사전확률 × 민감도) + (1 − 사전확률) × 위양성률] <sup>[1 4장 p.24]</sup>.</li>\n<li>식에서 사전확률이 작아지면 분모의 위양성 항이 커져 양성예측도가 떨어진다. 같은 이유로 음성 쪽에서는 위음성 사람이 줄어 음성예측도가 오른다(표의 계산 예).</li>\n<li>우도비(likelihood ratio)는 같은 결과가 질병 있는 사람에서 나올 확률을 없는 사람에서 나올 확률로 나눈 값이라, 사전확률과 따로 검사의 판별력을 나타낸다. 의학 검사의 LR+ 는 대부분 1.5~20 이고, &gt;10 이면 대개 특이도가 높아 확진에, LR− &lt;0.10 이면 대개 민감도가 높아 배제에 쓴다 <sup>[1 4장 p.25]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 계산 — 유병률과 기준점을 바꿔 보기",
+    "deep": false,
+    "html": "<ul>\n<li>표의 앞 세 줄은 같은 검사(민감도·특이도 90 %)를 유병률 50 → 10 → 1 % 집단에 쓴 것이다. 민감도·특이도·우도비는 그대로인데 PPV 는 90 → 50 → 8.3 % 로 떨어지고 NPV 는 오른다.</li>\n<li>선별(무증상) 상황은 사전확률이 특히 낮아 특이도가 중요해진다. 정확한 검사(LR+ 10)라도 사전확률 20 % 에서는 양성 하나로 확진 범위(예: 80 %)에 이르지 못한다 <sup>[1 4장 p.25]</sup>.</li>\n<li>넷째 줄은 같은 유병률에서 기준점을 올린 것이다. 민감도↓·특이도↑ 로 위양성이 줄어 PPV 가 오르고, 위음성이 늘어 NPV 가 내려간다.</li>\n<li>검사가 진단을 가장 크게 바꾸는 때는 사전확률이 30~70 % 로 가장 불확실할 때다 <sup>[1 4장 p.25]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 기준점은 이득과 해로 정한다",
+    "deep": false,
+    "html": "<ul>\n<li>치료가 안전하고 이득이 크며 검사 위험이 낮으면 민감도 높은 기준점(ROC 곡선 오른쪽 위), 치료의 해가 크면 특이도 높은 기준점(왼쪽 아래)을 고른다(예: 신생아 페닐케톤뇨증 선별 vs 암 항암치료) <sup>[1 4장 p.24]</sup>.</li>\n<li>ROC 곡선(receiver operating characteristic curve)은 기준점마다 민감도(y)와 1−특이도(x)를 찍은 것이고, 곡선 아래 면적은 0.5(동전 던지기)~1.0(완벽한 검사)이다 <sup>[1 4장 p.24]</sup>.</li>\n<li>유병률도 기준점 선택에 들어간다 — 유병률이 낮으면 위양성의 해(예: 결혼 전 HIV 검사) 또는 위음성의 해(예: 헌혈자 HIV 검사)에 더 무게가 실린다 <sup>[1 4장 p.24]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>검사를 설명할 때는 네 지표를 모두, 기준 검사와 표본의 유병률과 함께 보고해야 해석할 수 있다 <sup>[2 The Importance of Full Disclosure of Information in Research]</sup>.</li>\n<li>예측도가 높지 않아도 되는 상황이 있다 — 확인 검사가 싸고 쉬우면 낮은 양성예측도를 받아들일 수 있고, 질병이 심각·전염성·조기 치료 이득이 크면 높은 음성예측도가 필요하다 <sup>[2 Assessing Desirable Predictive Values…]</sup>.</li>\n<li>우도비와 사전확률로 사후확률을 구하는 오즈(odds) 형식 계산은 원문을 읽지 못해 싣지 않았다(검토 항목) — 확률 형식 Bayes 식만 실었다.</li>\n<li>국내 예방의학 교과서의 용어(「타당도」 아래 지표 묶음)와 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 민감도·특이도는 유병률과 무관한가</strong> — 시험 기준: 2×2 표 계산 문항에서는 유병률이 바뀌어도 민감도·특이도·우도비는 그대로, 예측도만 바뀐다 <sup>[1 4장 p.24]</sup> / 다른 기준: 해리슨은 「민감도·특이도가 유병률과 무관하다」는 가정이 흔히 틀린다고 쓴다 — 운동부하검사 민감도는 1혈관 질환 약 30 %, 3혈관 질환 약 80 % <sup>[1 4장 p.26]</sup> / 왜 다른가: 실제 집단은 유병률이 높을 때 중증 환자 비율도 높아(스펙트럼) 민감도가 함께 오른다. 표 계산은 같은 질병 스펙트럼을 가정한다 / 시험에서는: KMLE·USMLE 모두 숫자를 주고 유병률만 바꾸면 「예측도만 변한다」로 답하고, 「입원 vs 외래 집단에서 민감도가 다른 이유」를 물으면 스펙트럼으로 답한다(이 구분은 정리본의 판단이다).\n\n</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "2×2 표에서 나오는 지표",
+    "columns": [
+     "지표",
+     "식",
+     "분모(누구 가운데)",
+     "유병률에 따라"
+    ],
+    "rows": [
+     [
+      "민감도",
+      "TP/(TP+FN) — 위음성률 = 1−민감도",
+      "질병 있는 사람",
+      "표 계산에서는 그대로"
+     ],
+     [
+      "특이도",
+      "TN/(TN+FP) — 위양성률 = 1−특이도",
+      "질병 없는 사람",
+      "표 계산에서는 그대로"
+     ],
+     [
+      "양성예측도",
+      "TP/(TP+FP)",
+      "검사 양성인 사람",
+      "유병률↑ → 오른다"
+     ],
+     [
+      "음성예측도",
+      "TN/(TN+FN)",
+      "검사 음성인 사람",
+      "유병률↑ → 내려간다"
+     ],
+     [
+      "LR+ · LR−",
+      "민감도/(1−특이도) · (1−민감도)/특이도",
+      "질병 있는 쪽 확률 ÷ 없는 쪽 확률",
+      "그대로 — 사전확률과 따로 곱한다"
+     ]
+    ],
+    "note": "식은 harrison-22 4장 표 4-1 · p.25, 예측도 정의는 trevethan-2017. 「유병률에 따라」 칸은 아래 계산 예(정리본이 만든 숫자)로 Bayes 식에서 나온 방향이다."
+   },
+   {
+    "title": "1,000명 계산 예(정리본이 만든 숫자)",
+    "columns": [
+     "상황",
+     "TP · FN · FP · TN",
+     "PPV",
+     "NPV"
+    ],
+    "rows": [
+     [
+      "민감도 90 %·특이도 90 %, 유병률 50 %",
+      "450 · 50 · 50 · 450",
+      "90 %",
+      "90 %"
+     ],
+     [
+      "같은 검사, 유병률 10 %",
+      "90 · 10 · 90 · 810",
+      "50 %",
+      "98.8 %"
+     ],
+     [
+      "같은 검사, 유병률 1 %",
+      "9 · 1 · 99 · 891",
+      "8.3 %",
+      "99.9 %"
+     ],
+     [
+      "유병률 10 %, 기준점을 올려 민감도 70 %·특이도 98 %",
+      "70 · 30 · 18 · 882",
+      "79.5 %",
+      "96.7 %"
+     ]
+    ],
+    "note": "첫 줄은 해리슨의 예(사전확률 0.50·민감도·특이도 0.90 → 양성 뒤 0.90)와 같다 <sup>[1 4장 p.24]</sup>. 나머지 줄은 같은 식에 숫자만 바꿔 넣은 계산이다. LR+ 는 앞 세 줄 모두 9, LR− 는 0.11 이다 <sup>[1 4장 p.25]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "민감도 vs 양성예측도",
+    "point": "민감도는 질병이 있는 사람 가운데 양성 비율(TP/(TP+FN)), 양성예측도는 양성인 사람 가운데 질병 비율(TP/(TP+FP))이다. 분모가 다르다 — 민감도가 높아도 위양성이 많으면 양성 결과가 질병을 뜻하지 않는다 <sup>[2 Defining Sensitivity and PPV]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "특이도 높은 검사가 음성 → 배제?",
+    "point": "배제(rule out)는 민감도가 매우 높은 검사의 음성(SnNout), 확진(rule in)은 특이도가 매우 높은 검사의 양성(SpPin)이다. 거꾸로 짝지으면 「역의 혼동」이다 <sup>[1 4장 p.24]</sup> <sup>[2 Uses and Misuses of Sensitivity and Specificity]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "유병률이 낮아지면 민감도·특이도도 떨어진다?",
+    "point": "2×2 표 계산에서 유병률은 예측도만 바꾼다. 유병률이 낮으면 특이도가 높아도 위양성 수가 진양성을 넘어 양성예측도가 크게 떨어진다 — 특이도 99.995 % 의 HIV 선별에서도 유병률 0.01 % 이면 양성의 HIV 가능성이 67 % 였다 <sup>[1 4장 p.25]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "기준점을 올리면 민감도·특이도 둘 다 오른다?",
+    "point": "기준점을 엄격하게(예: 올림) 하면 민감도는 내려가고 특이도는 오른다. 느슨하게 하면 반대다 — 이 맞교환을 그린 것이 ROC 곡선이다 <sup>[1 4장 p.24]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "예측도 = 검사의 고유한 정확도?",
+    "point": "예측도는 그 표본의 유병률로 계산된 확률이라, 유병률이 같은 집단에만 옮겨 쓸 수 있다. 해리슨은 그래서 「양성/음성 뒤 사후확률」이라는 말을 권한다 <sup>[1 4장 p.24]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "기준점을 엄격하게 하면 위양성이 줄어 PPV 는 대개 오르고 NPV 는 내려간다 — 표의 계산 예(유병률 10 %)에서 PPV 50 → 79.5 %, NPV 98.8 → 96.7 %. 예측도는 기준점·대상 집단·기준 검사를 바꾸면 함께 바뀐다 <sup>[2 Assessing Desirable Predictive Values…]</sup>.",
+   "입원·증상·의뢰 집단은 유병률뿐 아니라 진행된 질병의 비율도 높아 민감도가 더 높게, 외래 집단은 특이도가 더 높게 나오기 쉽다 <sup>[1 4장 p.26]</sup>.",
+   "검사를 이어서 할 때 앞 검사의 사후확률을 다음 검사의 사전확률로 쓰는 것은 두 검사가 조건부 독립일 때만 맞다 <sup>[1 4장 p.26]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill (Loscalzo J, Fauci AS, Kasper DL, et al., eds.)",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "",
+    "checked": "22판 4장 Decision-Making in Clinical Medicine 드라이브 문서(H22_4)에서 p.23 끝~p.26 「Quantitative Methods / Measures of Disease Probability and Bayes' Rule / Applications to Diagnostic Testing in CAD」 를 읽음 — 표 4-1(TP·FP·FN·TN, 민감도 TP/(TP+FN), 위음성률 1−민감도, 특이도 TN/(TN+FP), 위양성률 1−특이도), SnNout·SpPin, 기준점을 엄격하게 하면 민감도↓·특이도↑, ROC 곡선(민감도 vs 1−특이도, 면적 0.5~1.0), 기준점 선택은 치료의 이득·해와 유병률에 따름(p.24); Bayes 식(사전확률·민감도·위양성률), 사전확률 0.50·민감도·특이도 0.90 → 0.90, 예측도 대신 사후확률이라는 말을 권함(p.24); LR+ = 민감도/(1−특이도), 0.90/0.10 = 9, 대부분 1.5~20, >10 은 확진, 민감도 90 %·특이도 55 % → 2.0, LR− = (1−민감도)/특이도, <0.10 은 배제, 0.11 예, 선별에서는 사전확률이 낮아 특이도가 중요 — HIV 첫 헌혈 여성 특이도 99.995 %·유병률 0.01 % → 67 %, 사전확률 30~70 % 일 때 변화가 가장 큼(p.25); 조건부 독립 가정, 민감도·특이도가 유병률 무관이라는 가정은 흔히 틀림(1혈관 30 % vs 3혈관 80 %), 입원 집단 민감도↑·외래 특이도↑(p.26)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3541"
+   },
+   {
+    "id": "trevethan-2017",
+    "org": "Trevethan R",
+    "title": "Sensitivity, Specificity, and Predictive Values: Foundations, Pliabilities, and Pitfalls in Research and Practice",
+    "kind": "review",
+    "citation": "Front Public Health 2017;5:307",
+    "checked": "PMC5701930 전문(PubMed MCP)을 처음부터 끝까지 읽음 — 민감도는 기준 검사 양성(a·c 칸), PPV 는 선별 양성(a·b 칸), 특이도는 b·d, NPV 는 c·d 칸에 근거한다는 정의; 민감도↔PPV·특이도↔NPV 혼동과 「역의 혼동」; SnNout·SpPin 은 매우 높을 때만; 네 지표는 검사의 엄격도와 표본의 유병률에 따라 바뀜; 예측도가 너무 높거나 낮으면 기준점·표본·기준 검사를 바꿔 조정할 수 있고 그러면 민감도·특이도도 바뀜. PMC 텍스트에서 식(그림 1의 공식)이 빠져 있어 식은 해리슨 표 4-1 로 확인했다",
+    "doi": "10.3389/fpubh.2017.00307",
+    "pmid": "29209603",
+    "verified": "text",
+    "year": "2017",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5701930/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "유병률 10 %, 민감도 90 %·특이도 90 % 인 검사를 1,000명에게 했다. 양성예측도는?",
+    "a": "TP 90, FP 90 → 90/180 = 50 %. 유병률 50 % 일 때(90 %)보다 낮다."
+   },
+   {
+    "q": "민감도 90 %·특이도 55 % 인 검사의 양성 우도비는?",
+    "a": "0.90/(1−0.55) = 2.0. 민감도가 높아도 특이도가 낮으면 LR+ 가 작아 양성이 진단 확률을 크게 올리지 못한다."
+   },
+   {
+    "q": "선별검사의 판정 기준점을 낮추면(느슨하게) 민감도·특이도는?",
+    "a": "민감도는 오르고 특이도는 내려간다 — 위음성이 줄고 위양성이 는다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "지표 문항 — 무엇이 바뀌었나",
+  "geo": {
+   "title": "지표 문항 — 무엇이 바뀌었나",
+   "w": 920.7,
+   "h": 451.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "검사 지표를 묻는 문항"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 473.4,
+     "y": 16.0
+    },
+    {
+     "id": "table",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "2×2 표를 세운다 — 열 = 질병",
+      "유무, 행 = 검사 결과"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 473.2,
+     "y": 85.0
+    },
+    {
+     "id": "what",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "바뀐 것은 무엇인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 472.9,
+     "y": 171.0
+    },
+    {
+     "id": "prev",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유병률이 어느 쪽으로?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 227.3,
+     "y": 281.0
+    },
+    {
+     "id": "up",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "PPV 오름 · NPV 내림 ·",
+      "민감도·특이도·LR 그대로"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 371.0
+    },
+    {
+     "id": "down",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "PPV 내림 · NPV 오름 ·",
+      "민감도·특이도·LR 그대로"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 371.0
+    },
+    {
+     "id": "cut",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "기준점을 엄격하게 했나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 482.7,
+     "y": 281.0
+    },
+    {
+     "id": "strict",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "민감도↓ · 특이도↑ —",
+      "위양성↓, 위음성↑"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 371.0
+    },
+    {
+     "id": "lax",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "민감도↑ · 특이도↓ —",
+      "위양성↑, 위음성↓"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 371.0
+    },
+    {
+     "id": "spec",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "집단의 중증도가 다르면",
+      "민감도도 바뀐다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 708.7,
+     "y": 281.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "table",
+     "points": [
+      [
+       571.4,
+       63.0
+      ],
+      [
+       571.2,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "table",
+     "to": "what",
+     "points": [
+      [
+       571.2,
+       149.0
+      ],
+      [
+       570.9,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "what",
+     "to": "prev",
+     "points": [
+      [
+       521.9,
+       218.0
+      ],
+      [
+       521.9,
+       267.0
+      ],
+      [
+       325.3,
+       267.0
+      ],
+      [
+       325.3,
+       281.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "유병률"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 501.4,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "what",
+     "to": "cut",
+     "points": [
+      [
+       570.9,
+       218.0
+      ],
+      [
+       570.9,
+       267.0
+      ],
+      [
+       580.7,
+       267.0
+      ],
+      [
+       580.7,
+       281.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판정 기준점"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 537.6,
+      "y": 242.0
+     }
+    },
+    {
+     "from": "what",
+     "to": "spec",
+     "points": [
+      [
+       619.9,
+       218.0
+      ],
+      [
+       619.9,
+       267.0
+      ],
+      [
+       806.7,
+       267.0
+      ],
+      [
+       806.7,
+       281.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "대상 집단"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 592.1,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "prev",
+     "to": "up",
+     "points": [
+      [
+       292.6,
+       328.0
+      ],
+      [
+       292.6,
+       357.0
+      ],
+      [
+       114.0,
+       357.0
+      ],
+      [
+       114.0,
+       371.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "올랐다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 272.1,
+      "y": 332.0
+     }
+    },
+    {
+     "from": "prev",
+     "to": "down",
+     "points": [
+      [
+       358.0,
+       328.0
+      ],
+      [
+       358.0,
+       357.0
+      ],
+      [
+       340.0,
+       357.0
+      ],
+      [
+       340.0,
+       371.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "내렸다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 337.5,
+      "y": 332.0
+     }
+    },
+    {
+     "from": "cut",
+     "to": "strict",
+     "points": [
+      [
+       548.0,
+       328.0
+      ],
+      [
+       548.0,
+       357.0
+      ],
+      [
+       566.0,
+       357.0
+      ],
+      [
+       566.0,
+       371.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "엄격"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 533.0,
+      "y": 332.0
+     }
+    },
+    {
+     "from": "cut",
+     "to": "lax",
+     "points": [
+      [
+       613.4,
+       328.0
+      ],
+      [
+       613.4,
+       357.0
+      ],
+      [
+       792.0,
+       357.0
+      ],
+      [
+       792.0,
+       371.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "느슨"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 598.4,
+      "y": 332.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "검사 지표를 묻는 문항",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "2×2 표를 세운다 — 열 = 질병 유무, 행 = 검사 결과"
+     }
+    ]
+   },
+   {
+    "id": "table",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "2×2 표를 세운다 — 열 = 질병 유무, 행 = 검사 결과",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "바뀐 것은 무엇인가?"
+     }
+    ]
+   },
+   {
+    "id": "what",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "바뀐 것은 무엇인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "유병률",
+      "to": 4,
+      "toText": "유병률이 어느 쪽으로?"
+     },
+     {
+      "label": "판정 기준점",
+      "to": 5,
+      "toText": "기준점을 엄격하게 했나?"
+     },
+     {
+      "label": "대상 집단",
+      "to": 6,
+      "toText": "집단의 중증도가 다르면 민감도도 바뀐다"
+     }
+    ]
+   },
+   {
+    "id": "prev",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유병률이 어느 쪽으로?",
+    "note": "",
+    "branches": [
+     {
+      "label": "올랐다",
+      "to": 7,
+      "toText": "PPV 오름 · NPV 내림 · 민감도·특이도·LR 그대로"
+     },
+     {
+      "label": "내렸다",
+      "to": 8,
+      "toText": "PPV 내림 · NPV 오름 · 민감도·특이도·LR 그대로"
+     }
+    ]
+   },
+   {
+    "id": "cut",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "기준점을 엄격하게 했나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "엄격",
+      "to": 9,
+      "toText": "민감도↓ · 특이도↑ — 위양성↓, 위음성↑"
+     },
+     {
+      "label": "느슨",
+      "to": 10,
+      "toText": "민감도↑ · 특이도↓ — 위양성↑, 위음성↓"
+     }
+    ]
+   },
+   {
+    "id": "spec",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "집단의 중증도가 다르면 민감도도 바뀐다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "up",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "PPV 오름 · NPV 내림 · 민감도·특이도·LR 그대로",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "down",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "PPV 내림 · NPV 오름 · 민감도·특이도·LR 그대로",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "strict",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "민감도↓ · 특이도↑ — 위양성↓, 위음성↑",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lax",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "민감도↑ · 특이도↓ — 위양성↑, 위음성↓",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.hypothesis-testing.test-selection-and-interpretation": {
+  "id": "cn.prev.hypothesis-testing.test-selection-and-interpretation",
+  "title": "가설검정 — 변수 종류·집단 수·짝으로 고른다",
+  "objective": "결과 변수의 종류(범주·연속), 비교 집단 수, 짝지음 여부와 정규성으로 알맞은 통계 검정을 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "통계 검정 선택(statistical test selection) — 카이제곱 검정 · t 검정 · 분산분석 · 상관/회귀와 비모수 검정",
+  "topic": "Preventive Medicine",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "e15bfb133bdcc337",
+  "summary": [
+   "결론: 비율은 카이제곱(짝이면 McNemar), 평균 둘은 t 검정, 셋 이상은 분산분석, 관계·예측은 상관·회귀.",
+   "시험 단서: 「치료 전후 같은 환자」(짝) · 「세 연령군의 혈압」(세 집단) · 「흡연 여부와 폐암 여부」(범주×범주).",
+   "왜: 검정은 비교할 대표값(비율·평균·순위)과 관측의 독립성에 맞춰 만든다 — 짝지은 자료에 독립 검정을 쓰면 결론이 바뀐다.",
+   "정규분포가 아니거나 순위 자료면 짝이 되는 비모수 검정(Mann-Whitney · Wilcoxon 부호순위 · Kruskal-Wallis).",
+   "해석: p 값은 귀무가설이 참일 확률이 아니다 — 1종 오류 = α, 2종 오류 = β = 1−검정력."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 「결과 변수」부터 보는가",
+    "deep": false,
+    "html": "<ul>\n<li>검정 선택은 세 가지로 정한다: 연구 목적, 자료의 종류와 분포, 관측이 짝지어졌는지 <sup>[1 Factors Influencing Selection of Statistical Methods]</sup>.</li>\n<li>결과 변수가 <strong>범주형</strong>이면 비율을, <strong>연속형</strong>이면 평균(정규) 또는 중앙값·순위(비정규)를 비교한다. 목적이 <strong>관계·예측</strong>이면 비교 검정이 아니라 상관·회귀다 <sup>[1 Type and distribution of the data used]</sup>.</li>\n<li>그다음 집단 수(둘 vs 셋 이상)와 짝 여부(같은 대상 반복 측정 vs 서로 다른 대상)로 칸이 정해진다 <sup>[1 Observations are paired or unpaired]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 검정은 대표값과 독립성에 맞춰 만든다",
+    "deep": false,
+    "html": "<ul>\n<li>모수 검정(t 검정·분산분석·Pearson 상관·선형 회귀)은 평균과 표준편차로 유의성을 계산해, 변수가 연속이고 대략 정규분포라는 가정이 필요하다 <sup>[1 Concept of Parametric and Nonparametric Methods]</sup>.</li>\n<li>비율을 비교하는 방법(카이제곱·Fisher·McNemar·Cochran Q)은 모수 대응이 없는 비모수 방법이다 <sup>[1 Statistical Methods to Compare the Proportions]</sup>.</li>\n<li>짝지은 자료는 같은 사람 안의 차이를 보므로 사람 사이 변동을 빼고 계산한다 — 독립 자료에 짝 검정을 쓰거나 그 반대면 p 값이 달라져 결론이 바뀐다(혼동 항목의 p 0.061 vs 0.011) <sup>[1 Impact of Wrong Selection of the Statistical Methods]</sup>.</li>\n<li>p 값은 검정통계량(t·카이제곱 등)으로 자료와 모형 예측 사이의 거리를 재서 구한다. 검정하는 것은 귀무가설 하나가 아니라 무작위 배정·결측·분석 선택까지 포함한 <strong>모형 전체</strong>다 <sup>[2 Uncertainty, probability, and statistical significance]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 검정 고르기 표",
+    "deep": false,
+    "html": "<ul>\n<li>연속·순위 자료는 첫 표, 범주 자료와 생존·일치도는 둘째 표로 고른다.</li>\n<li>표본 크기에 정해진 최소는 없다 — 신뢰수준(보통 95 %)·검정력(보통 80 %)·효과 크기로 정하며, 효과 크기가 클수록 필요한 표본은 작다. 표본이 모자라면 검정력이 낮아 실제 차이도 유의하지 않게 나온다 <sup>[1 Minimum Sample Size Required for Statistical Methods]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "해석 — p 값·신뢰구간·오류·검정력",
+    "deep": false,
+    "html": "<ul>\n<li>셋째 표가 용어의 뜻과 흔한 오해를 나란히 놓는다.</li>\n<li>귀무가설이 참인데 기각하면 1종 오류다. α = 0.05 는 그런 기각이 <strong>많은 연구를 반복할 때</strong> 일어나는 비율이지, 이번 한 번 기각이 틀렸을 확률이 아니다 — 귀무가설이 참이면 기각한 그 판단은 100 % 틀린 것이다 <sup>[2 Common misinterpretations of single P values]</sup>.</li>\n<li>95 % 신뢰구간 바깥의 효과 크기는 그 크기를 검정하면 p ≤ 0.05 가 나오는 값들이다 — 그래서 귀무값(차이 0, 비 1)이 구간 밖이면 귀무가설 검정도 p ≤ 0.05 다 <sup>[2 Moving from tests to estimates]</sup>.</li>\n<li>검정력은 연구를 설계할 때 쓰는 값이다. 관찰 자료로 계산한 검정력은 p 값을 바꿔 쓴 것이라 결과 해석에 새 정보를 주지 않는다 <sup>[2 Common misinterpretations of power]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「유의/비유의」 두 갈래로만 보고하지 말고 정확한 p 값과 신뢰구간을 함께 본다. 매우 작을 때(예: 0.001 미만)만 부등호로 적는다 <sup>[2 Common misinterpretations of single P values]</sup>.</li>\n<li>분석을 결과의 p 값에 따라 골라 보고하면(선택 보고·출판 비뚤림) p 값과 신뢰구간의 뜻 자체가 무너진다 <sup>[2 A statistical model is much more than an equation with Greek letters]</sup>.</li>\n<li>카이제곱 대신 Fisher 정확 검정을 쓰는 기대빈도 기준(예: 기대빈도가 작은 칸)은 읽은 출처에 수치가 없어 싣지 않았다(검토 항목).</li>\n<li>국내 예방의학 교과서의 검정 이름 표기와 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 「p &gt; 0.05 이면 차이가 없다」</strong> — 시험 기준: p &gt; 0.05 는 「귀무가설을 기각하지 못한다」이지 「차이가 없음을 증명했다」가 아니다 <sup>[2 Common misinterpretations of single P values]</sup> / 다른 기준: 고전적 이분법(Neyman-Pearson)은 α 를 미리 정하고 기각/채택 두 갈래로 판정한다 — 같은 글이 이 이분법을 해석에 해롭다고 본다 <sup>[2 Uncertainty, probability, and statistical significance]</sup> / 왜 다른가: 판정 규칙(설계 단계의 오류율 관리)과 증거의 크기(효과 크기·신뢰구간)를 한 숫자로 섞기 때문이다 / 시험에서는: KMLE 는 「귀무가설 기각 여부」로 답하는 문항이 흔할 것으로 보고 그렇게 답하되 「귀무가설 채택 = 효과 없음 증명」 보기는 고르지 않는다 · USMLE 는 신뢰구간이 귀무값을 포함하는지로 유의성을 판정하는 문항에 같은 규칙을 쓴다(두 시험의 출제 경향은 이 정리본의 판단이다 — 검토 항목).\n\n</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "연속·순위 자료 — 모수 검정과 비모수 짝",
+    "columns": [
+     "비교 상황",
+     "모수(정규·평균)",
+     "비모수(비정규·순위)",
+     "예"
+    ],
+    "rows": [
+     [
+      "독립 두 집단",
+      "독립 표본 t 검정",
+      "Mann-Whitney U(Wilcoxon 순위합)",
+      "치료군 vs 대조군 평균 동맥압"
+     ],
+     [
+      "짝지은 두 집단",
+      "짝지은 t 검정",
+      "Wilcoxon 부호순위 검정",
+      "같은 환자 치료 전 vs 후"
+     ],
+     [
+      "독립 세 집단 이상",
+      "일원 분산분석",
+      "Kruskal-Wallis H",
+      "세 연령군의 이완기 혈압"
+     ],
+     [
+      "짝지은 세 집단 이상",
+      "반복측정 분산분석",
+      "Friedman 검정",
+      "같은 환자 3시점 측정"
+     ],
+     [
+      "두 연속 변수의 선형 관계",
+      "Pearson 상관계수",
+      "Spearman 순위상관",
+      "키와 몸무게"
+     ],
+     [
+      "결과 하나를 독립변수로 예측",
+      "선형 회귀(결과가 연속)",
+      "비선형·로그선형 회귀",
+      "나이로 혈압 예측"
+     ]
+    ],
+    "note": "mishra-2019 표 1 과 「Type and distribution of the data used」 절(이완기 혈압·평균 동맥압 예). 「예」 칸의 키·몸무게 · 3시점 · 나이 예는 정리본이 붙인 것이다."
+   },
+   {
+    "title": "범주 자료(비율)와 그 밖의 방법",
+    "columns": [
+     "목적",
+     "방법",
+     "자료 조건"
+    ],
+    "rows": [
+     [
+      "독립 집단 사이 두 범주형 변수의 연관",
+      "Pearson 카이제곱 · Fisher 정확 검정",
+      "변수 범주 2개 이상"
+     ],
+     [
+      "짝지은 집단의 비율 변화",
+      "McNemar(2집단) · Cochran Q(3집단 이상)",
+      "변수 범주 2개"
+     ],
+     [
+      "범주형(이분) 결과를 예측",
+      "로지스틱 회귀",
+      "독립변수는 범주·연속 모두 가능"
+     ],
+     [
+      "생존 시간 비교·예측",
+      "Kaplan-Meier 곡선 비교 · Cox 회귀",
+      "결과(사건 유무) + 추적 시간"
+     ],
+     [
+      "두 측정 방법의 일치도",
+      "kappa(명목·순위) · 급내상관계수(연속)",
+      "같은 대상을 두 방법으로"
+     ]
+    ],
+    "note": "mishra-2019 표 2 · 표 3 과 「Other Statistical Methods」 절."
+   },
+   {
+    "title": "검정 결과를 읽는 말",
+    "columns": [
+     "용어",
+     "뜻",
+     "아닌 것"
+    ],
+    "rows": [
+     [
+      "p 값",
+      "모든 가정과 검정 가설이 맞을 때 관찰한 만큼 이상 극단적인 통계량이 나올 확률 — 0~1 의 연속적 적합도",
+      "가설이 참일 확률 · 우연만으로 생겼을 확률"
+     ],
+     [
+      "유의수준 α",
+      "연구 전에 정하는 기준(보통 0.05) — 참인 귀무가설을 기각하는 비율(1종 오류)",
+      "자료에서 계산하는 p 값"
+     ],
+     [
+      "95 % 신뢰구간",
+      "같은 방식으로 반복하면 95 % 가 참값을 포함하는 구간 — p &gt; 0.05 인 효과 크기의 범위",
+      "이 구간에 참값이 있을 확률 95 %"
+     ],
+     [
+      "검정력 · β",
+      "대립가설이 맞을 때 귀무가설을 기각할 연구 전 확률 · β(2종 오류) = 1 − 검정력",
+      "관찰 자료로 계산해 결과를 해석하는 값"
+     ]
+    ],
+    "note": "greenland-2016 의 「Uncertainty, probability, and statistical significance」 · 「Moving from tests to estimates」 · 「Common misinterpretations of power」 절."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "짝지은 자료에 독립 t 검정(또는 그 반대)?",
+    "point": "같은 대상을 두 시점·두 방법으로 잰 자료는 짝지은 t 검정, 서로 다른 대상 두 군은 독립 t 검정이다. 같은 수축기 혈압 자료에서 독립 t 검정은 p = 0.061, 짝지은 t 검정은 p = 0.011 로 결론이 갈렸다 — 짝이 아닌 자료에 짝 검정을 쓰면 없는 차이를 「유의」하다고 낸다 <sup>[1 Impact of Wrong Selection of the Statistical Methods]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "세 집단 평균을 t 검정 여러 번?",
+    "point": "세 집단 이상의 평균 비교는 t 검정을 확장한 분산분석(ANOVA)으로 한다 — 독립이면 일원 분산분석, 같은 대상 반복 측정이면 반복측정 분산분석 <sup>[1 Selection between Parametric and Nonparametric Methods]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "치료 전후 양성/음성 비율에 카이제곱?",
+    "point": "카이제곱·Fisher 정확 검정은 독립 집단 사이의 비율(두 범주형 변수의 연관) 비교다. 같은 대상의 전후 비율 변화는 McNemar 검정(셋 이상 짝 집단이면 Cochran Q) <sup>[1 Statistical Methods to Compare the Proportions]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "p = 0.03 → 귀무가설이 참일 확률 3 %?",
+    "point": "p 값은 귀무가설과 모든 가정이 맞다고 할 때 관찰한 만큼(또는 더) 극단적인 검정통계량이 나올 확률이다. 가설이 참일 확률도, 우연만으로 생겼을 확률도 아니다 <sup>[2 Common misinterpretations of single P values]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "p > 0.05 → 차이가 없다?",
+    "point": "p &gt; 0.05 는 귀무가설이 자료와 어긋나지 않는 여러 가설 가운데 하나라는 뜻일 뿐이다. 작은 연구에서는 큰 효과도 유의하지 않게 나온다 — 신뢰구간이 중요한 효과 크기를 포함하는지 본다 <sup>[2 Common misinterpretations of single P values]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "p 가 아주 작으면 임상적으로 중요한 효과?",
+    "point": "큰 연구에서는 아주 작은 효과도 통계적으로 유의하다. 효과의 크기는 점추정치와 신뢰구간으로 판단한다 <sup>[2 Common misinterpretations of single P values]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "모수 검정은 변수가 연속이고 대략 정규분포라는 가정에 기댄다. 정규분포가 아니거나 명목·순위·이산 자료면 비모수 검정을 쓴다 — 비모수는 평균 대신 중앙값·평균 순위를 비교해 이상값의 영향을 덜 받지만, 가정이 맞을 때는 모수 검정이 차이를 더 잘 찾는다 <sup>[1 Advantage and Disadvantages of Nonparametric Methods…]</sup>.",
+   "작은 표본(집단당 평균 15개 이하)에서는 정규성 검정이 비정규를 잘 못 잡아 아주 정규적일 때만 모수 검정을, 큰 표본에서는 반대로 아주 비정규적일 때만 비모수 검정을 권한다. t 검정·분산분석은 집단마다 관측이 2개 이상이어야 표준편차를 구한다 <sup>[1 Advantage and Disadvantages of Nonparametric Methods…]</sup>.",
+   "결과가 범주형이면 회귀도 로지스틱 회귀(이분 결과는 이항, 셋 이상은 다항), 연속이면 선형 회귀다 <sup>[1 Type and distribution of the data used]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "mishra-2019",
+    "org": "Mishra P, Pandey CM, Singh U, Keshri A, Sabaretnam M",
+    "title": "Selection of appropriate statistical methods for data analysis",
+    "kind": "review",
+    "citation": "Ann Card Anaesth 2019;22(3):297-301",
+    "checked": "PMC6639881 전문(PubMed MCP)을 처음부터 끝까지 읽음 — 검정 선택 세 요인(목적·자료 종류와 분포·짝 여부), 정규면 평균·비정규면 중앙값·범주는 비율·순위는 평균 순위, 이완기 혈압 세 연령군 = 일원 분산분석/Kruskal-Wallis, 평균 동맥압 두 군 = 독립 t/Mann-Whitney, 짝이면 짝지은 t; 모수 = 평균 비교·연속·대략 정규 가정; 표 1(한 표본·독립 두 군·짝 두 군·독립 셋 이상·짝 셋 이상·Pearson/Spearman·선형/비선형 회귀); 비율 비교는 비모수 — 독립 집단 카이제곱·Fisher, 짝 McNemar·Cochran Q, 비율 Z 검정(표 2); ICC·kappa·로지스틱·생존분석·ROC(표 3); 모수가 더 강력·비모수는 이상값에 강함·집단당 2개 이상 관측·표본 15개 기준의 정규성 판단; 표본 크기는 효과 크기와 반비례(신뢰수준 95 %·검정력 80 % 흔히); 독립 t p = 0.061 vs 짝지은 t p = 0.011 예. PMC 텍스트에서 「t」「F」 같은 기울임 글자가 일부 빠져 있어 한 표본 검정 행은 싣지 않았다",
+    "doi": "10.4103/aca.ACA_248_18",
+    "pmid": "31274493",
+    "verified": "text",
+    "year": "2019",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6639881/"
+   },
+   {
+    "id": "greenland-2016",
+    "org": "Greenland S, Senn SJ, Rothman KJ, Carlin JB, Poole C, Goodman SN, Altman DG",
+    "title": "Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations",
+    "kind": "review",
+    "citation": "Eur J Epidemiol 2016;31(4):337-50",
+    "checked": "PMC4877414 전문(PubMed MCP)을 처음부터 끝까지 읽음 — 검정 가설·귀무가설 정의, p 값 = 모든 모형 가정이 맞을 때 관찰값 이상 극단적인 통계량 확률(0~1 의 적합도), α 는 미리 정하는 기준이고 p 는 자료에서 계산, p > 0.05 인 효과 크기 범위 = 95 % 신뢰구간·반복 시 95 % 포함(포함 확률은 개별 구간의 성질이 아님), 단일 p 값 오해(가설 참 확률·우연만의 확률·p > 0.05 = 효과 없음·큰 연구의 작은 효과·작은 연구의 큰 효과·기각 시 5 % 오류), 검정력 = 대립가설이 맞을 때 기각할 연구 전 확률·1 − 검정력 = 2종(β) 오류, 관찰 검정력은 p 값의 변환, 80 % 검정력 두 연구가 모두 유의할 확률 64 %. PMC 텍스트에서 25개 오해의 굵은 제목 문장이 빠져 있어 오해 번호는 인용하지 않고 해설 문장만 근거로 썼다",
+    "doi": "10.1007/s10654-016-0149-3",
+    "pmid": "27209009",
+    "verified": "text",
+    "year": "2016",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4877414/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "같은 고혈압 환자 30명의 약 복용 전후 수축기 혈압(정규분포)을 비교하는 검정은?",
+    "a": "짝지은 t 검정. 정규분포가 아니면 Wilcoxon 부호순위 검정."
+   },
+   {
+    "q": "흡연자·비흡연자 사이 폐암 발생 비율을 비교하는 검정은?",
+    "a": "카이제곱 검정(또는 Fisher 정확 검정) — 독립 두 집단의 범주형 결과."
+   },
+   {
+    "q": "검정력 80 % 인 연구에서 2종 오류 확률은?",
+    "a": "β = 1 − 0.80 = 0.20 — 대립가설이 맞는데 귀무가설을 기각하지 못할 연구 전 확률."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "통계 검정 고르기",
+  "geo": {
+   "title": "통계 검정 고르기",
+   "w": 1132.0,
+   "h": 497.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "두 변수를 비교·연관 짓는",
+      "문항"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 566.8,
+     "y": 16.0
+    },
+    {
+     "id": "check",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "결과 변수 종류·집단 수·",
+      "짝지음·정규성을 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 566.7,
+     "y": 102.0
+    },
+    {
+     "id": "type",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "결과 변수는 무엇인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 566.6,
+     "y": 188.0
+    },
+    {
+     "id": "catpair",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "같은 대상을 짝지어 쟀나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 258.5,
+     "y": 298.0
+    },
+    {
+     "id": "mcn",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "McNemar(셋 이상 Cochran",
+      "Q)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 417.0
+    },
+    {
+     "id": "chi",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "카이제곱 · Fisher 정확 검정"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 417.0
+    },
+    {
+     "id": "ngrp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "비교 집단은 몇 개인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 607.6,
+     "y": 298.0
+    },
+    {
+     "id": "two",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "독립 t 검정 · 짝이면 짝지은",
+      "t 검정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 417.0
+    },
+    {
+     "id": "three",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "일원 분산분석 · 짝이면",
+      "반복측정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 417.0
+    },
+    {
+     "id": "rel",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "상관(Pearson) ·",
+      "회귀(선형·로지스틱)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 833.6,
+     "y": 298.0
+    },
+    {
+     "id": "np",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "정규성 위반·순위 자료 →",
+      "비모수 짝 검정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 920.0,
+     "y": 417.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "check",
+     "points": [
+      [
+       664.8,
+       80.0
+      ],
+      [
+       664.7,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "check",
+     "to": "type",
+     "points": [
+      [
+       664.7,
+       166.0
+      ],
+      [
+       664.6,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "type",
+     "to": "catpair",
+     "points": [
+      [
+       615.6,
+       235.0
+      ],
+      [
+       615.6,
+       284.0
+      ],
+      [
+       356.5,
+       284.0
+      ],
+      [
+       356.5,
+       298.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "범주(비율)"
+      ],
+      "w": 64.8,
+      "h": 17,
+      "x": 583.2,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "type",
+     "to": "ngrp",
+     "points": [
+      [
+       664.6,
+       235.0
+      ],
+      [
+       664.6,
+       284.0
+      ],
+      [
+       705.6,
+       284.0
+      ],
+      [
+       705.6,
+       298.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "연속(평균)"
+      ],
+      "w": 64.8,
+      "h": 17,
+      "x": 632.2,
+      "y": 259.0
+     }
+    },
+    {
+     "from": "type",
+     "to": "rel",
+     "points": [
+      [
+       713.6,
+       235.0
+      ],
+      [
+       713.6,
+       284.0
+      ],
+      [
+       931.6,
+       284.0
+      ],
+      [
+       931.6,
+       298.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관계·예측"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 684.4,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "catpair",
+     "to": "mcn",
+     "points": [
+      [
+       323.9,
+       345.0
+      ],
+      [
+       323.9,
+       394.0
+      ],
+      [
+       114.0,
+       394.0
+      ],
+      [
+       114.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 314.4,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "catpair",
+     "to": "chi",
+     "points": [
+      [
+       389.2,
+       345.0
+      ],
+      [
+       389.2,
+       394.0
+      ],
+      [
+       340.0,
+       394.0
+      ],
+      [
+       340.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 368.7,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "ngrp",
+     "to": "two",
+     "points": [
+      [
+       656.6,
+       345.0
+      ],
+      [
+       656.6,
+       394.0
+      ],
+      [
+       566.0,
+       394.0
+      ],
+      [
+       566.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "2개"
+      ],
+      "w": 25.4,
+      "h": 17,
+      "x": 644.0,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "ngrp",
+     "to": "three",
+     "points": [
+      [
+       705.6,
+       345.0
+      ],
+      [
+       705.6,
+       403.0
+      ],
+      [
+       792.0,
+       403.0
+      ],
+      [
+       792.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "3개 이상"
+      ],
+      "w": 51.1,
+      "h": 17,
+      "x": 680.1,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "ngrp",
+     "to": "np",
+     "points": [
+      [
+       754.6,
+       345.0
+      ],
+      [
+       754.6,
+       394.0
+      ],
+      [
+       1018.0,
+       394.0
+      ],
+      [
+       1018.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정규성 위반"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 721.3,
+      "y": 369.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "두 변수를 비교·연관 짓는 문항",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "결과 변수 종류·집단 수·짝지음·정규성을 확인"
+     }
+    ]
+   },
+   {
+    "id": "check",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "결과 변수 종류·집단 수·짝지음·정규성을 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "결과 변수는 무엇인가?"
+     }
+    ]
+   },
+   {
+    "id": "type",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "결과 변수는 무엇인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "범주(비율)",
+      "to": 4,
+      "toText": "같은 대상을 짝지어 쟀나?"
+     },
+     {
+      "label": "연속(평균)",
+      "to": 5,
+      "toText": "비교 집단은 몇 개인가?"
+     },
+     {
+      "label": "관계·예측",
+      "to": 6,
+      "toText": "상관(Pearson) · 회귀(선형·로지스틱)"
+     }
+    ]
+   },
+   {
+    "id": "catpair",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "같은 대상을 짝지어 쟀나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "McNemar(셋 이상 Cochran Q)"
+     },
+     {
+      "label": "아니오",
+      "to": 8,
+      "toText": "카이제곱 · Fisher 정확 검정"
+     }
+    ]
+   },
+   {
+    "id": "ngrp",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "비교 집단은 몇 개인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "2개",
+      "to": 9,
+      "toText": "독립 t 검정 · 짝이면 짝지은 t 검정"
+     },
+     {
+      "label": "3개 이상",
+      "to": 10,
+      "toText": "일원 분산분석 · 짝이면 반복측정"
+     },
+     {
+      "label": "정규성 위반",
+      "to": 11,
+      "toText": "정규성 위반·순위 자료 → 비모수 짝 검정"
+     }
+    ]
+   },
+   {
+    "id": "rel",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "상관(Pearson) · 회귀(선형·로지스틱)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mcn",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "McNemar(셋 이상 Cochran Q)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "chi",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "카이제곱 · Fisher 정확 검정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "two",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "독립 t 검정 · 짝이면 짝지은 t 검정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "three",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "일원 분산분석 · 짝이면 반복측정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "np",
+    "num": 11,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "정규성 위반·순위 자료 → 비모수 짝 검정",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.occupational-disease.exposure-to-disease-matching": {
+  "id": "cn.prev.occupational-disease.exposure-to-disease-matching",
+  "title": "직업성 질환 — 노출 물질과 소견을 짝짓는다",
+  "objective": "직업력의 노출 물질과 영상·검사·신경 소견을 짝지어 대표 직업성 질환(규폐증·석면 관련 질환·베릴륨병·소음성 난청·납·수은·카드뮴 중독)을 가려낸다",
+  "objectiveKind": "감별",
+  "condition": "직업성 질환(occupational disease) — 진폐증(pneumoconiosis) · 소음성 난청(noise-induced hearing loss) · 중금속 중독(heavy metal poisoning)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [
+   "Pulmonology",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "eb58d10db2243f5c",
+  "summary": [
+   "결론: 상엽 결절은 규폐·탄광부 진폐, 하엽 선상 음영·흉막반은 석면, 3–4 kHz 패임은 소음, 손목처짐은 납.",
+   "시험 단서: 사암 분사·석재 가공, 조선소·배관·단열재, 축전지·도장 제거, 온도계·아말감, 도금·축전지(카드뮴).",
+   "왜: 질환은 노출원이 없는 질환과 똑같이 보여, 직업·취미·주거 노출력을 물어야만 원인이 드러난다.",
+   "관리: 제거·대치 → 공학적 관리 → 행정적 관리 → 개인 보호구 순 — 보호구는 마지막 수단이다.",
+   "흉막반은 노출의 표지일 뿐 장애가 아니다 · 중피종은 흡연과 무관하고 1–2년 노출로 40년 뒤에도 생긴다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 노출력이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>직업·환경 노출로 생긴 폐 질환은 노출원이 없는 질환과 임상적으로 똑같이 보인다 — 노출력을 자세히 물어야만 원인이 드러난다 <sup>[1 300장 p.2234]</sup>.</li>\n<li>원인을 아는 것이 치료를 바꾼다: 직업성 천식·과민성 폐렴은 노출을 끊지 않으면 관리되지 않고, 같은 작업장의 다른 노출자를 찾거나 예방할 수 있으며, 보상·법적 의미도 생긴다 <sup>[1 300장 p.2234]</sup>.</li>\n<li>물을 것 — 다루는 물질, 눈에 보이는 분진·화학 냄새, 작업 공간 크기와 환기, 호흡 보호구 사용, 동료의 비슷한 증상, 작업과 증상의 시간 관계, 취미·주거·간접흡연, 먼 과거의 짧은 노출 <sup>[1 300장 p.2235]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 분진과 금속이 어디에 쌓이나",
+    "deep": false,
+    "html": "<ul>\n<li><strong>입자 크기가 침착 부위를 정한다</strong>: &gt;10–15 μm 는 코·인두를 넘지 못하고, &lt;10 μm 는 후두 아래에 쌓인다. 물에 잘 녹는 기체(암모니아·이산화황)는 상기도 자극, 덜 녹는 기체(이산화질소·포스겐)는 세기관지·폐포까지 가 화학 폐렴을 만든다 <sup>[1 300장 p.2235]</sup>.</li>\n<li><strong>석면폐(asbestosis)</strong>: 섬유 표면 전이 금속과 탐식 세포가 만드는 활성 산소가 섬유화를 일으킨다고 본다. 노출 강도·기간에 비례하고 대개 10년 이상 지나 나타난다 <sup>[1 300장 p.2236]</sup>.</li>\n<li><strong>규폐증(silicosis)</strong>: 유리규산이 폐포 대식세포 기능을 떨어뜨려 결핵·비정형 항산균·진균 감염이 늘고, 면역 보조 작용으로 류마티스관절염·경피증 같은 자가면역 질환이 따른다 <sup>[1 300장 p.2238]</sup>.</li>\n<li><strong>금속</strong>: 효소 억제·소기관과 DNA 손상·활성 산소·필수 금속 치환으로 독성을 낸다. 뼈·간·신장에 수년간 쌓인다 — 카드뮴 생물학적 반감기 10–30년, 납은 15 %가 뼈에 반감기 &gt;20년 <sup>[1 469장 p.3699]</sup> <sup>[1 469장 p.3700]</sup>.</li>\n<li><strong>소음</strong>: 큰 소리가 코르티 기관의 유모세포를 손상·소실시켜 일시 또는 영구 역치 이동을 남긴다 <sup>[1 36장 p.246]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 분진·소음",
+    "deep": false,
+    "html": "<ul>\n<li>분진 표가 직종 → 질환 → 영상·기능 단서를 잇는다. 둥근 작은 음영은 규폐·탄광부 진폐, 불규칙·선상 음영은 석면폐가 대표다 <sup>[1 300장 p.2235]</sup>.</li>\n<li><strong>석면 관련 질환은 넷</strong>이다 — 흉막반(노출 표지), 석면폐(간질 섬유화), 폐암(가장 흔한 석면 관련 암), 흉막·복막 중피종 <sup>[1 300장 p.2236]</sup>.</li>\n<li><strong>해석 한계</strong>: 초기 만성 베릴륨병은 영상·폐 기능이 정상일 수 있고 경기관지 폐생검이 대개 필요하다 <sup>[1 300장 p.2238]</sup>. 단순 규폐·단순 탄광부 진폐는 음영이 있어도 폐 기능 저하가 대개 없다 <sup>[1 300장 p.2237]</sup> <sup>[1 300장 p.2238]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 중금속",
+    "deep": false,
+    "html": "<ul>\n<li>금속 표가 노출원 → 표적 장기 소견 → 검사 → 치료를 잇는다. 같은 「빈혈」이라도 납은 호염기 반점·적혈구 프로토포르피린 상승, 카드뮴은 철에 반응하지 않는 소구성 빈혈로 갈린다 <sup>[1 469장 p.3700]</sup>.</li>\n<li>같은 「떨림」이라도 수은 증기는 의도떨림과 흥분증, 망간은 레보도파에 반응하지 않는 파킨슨 증후군이다 <sup>[1 469장 p.3701]</sup> <sup>[1 469장 p.3702]</sup>.</li>\n<li><strong>검사 해석</strong>: 혈중 납은 최근 노출만 반영한다 — 누적 노출은 뼈 납(KXRF)이 반영한다. 소변 β2-미세글로불린은 신우신염 같은 다른 신장 질환에서도 오른다 <sup>[1 469장 p.3699]</sup> <sup>[1 469장 p.3700]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 관리의 우선순위",
+    "deep": false,
+    "html": "<ul>\n<li>관리는 위계 순서로 고른다(표). 제거·대치·공학적 관리는 사람의 행동에 크게 기대지 않아 더 효과적이고, 보호구는 바른 착용에 달려 있어 맨 뒤다 <sup>[2 Hierarchy of Controls]</sup>.</li>\n<li>면 분진 작업장의 예 — 배기 후드·전체 환기·습식 작업으로 분진을 줄이고, 일부 작업에서만 호흡 보호구를 쓴다. 교대 전후 폐활량으로 감시하고 지속 증상이면 저노출 부서로 옮긴다 <sup>[1 300장 p.2239]</sup>.</li>\n<li>환자 개인으로는 <strong>노출 중단</strong>이 첫 치료다 — 직업성 천식·과민성 폐렴 <sup>[1 300장 p.2234]</sup>, 금속 중독 <sup>[1 469장 p.3699]</sup> 모두 같다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>석면폐는 특이 치료가 없다 — 다른 원인의 미만성 간질 섬유화와 같은 보존 치료다 <sup>[1 300장 p.2236]</sup>. 급성 규폐증은 전폐 세척이 증상을 덜고 진행을 늦출 수 있다 <sup>[1 300장 p.2237]</sup>.</li>\n<li>납: 증상 있는 고노출은 경구 숙시머, 급성 독성은 입원해 CaEDTA 정주·근주에 뇌병증 악화를 막으려 다이머카프롤을 더한다. 철·칼슘·마그네슘·아연 결핍을 고치면 흡수가 준다 <sup>[1 469장 p.3700]</sup>.</li>\n<li>소음성 난청은 거의 모두 예방할 수 있다 — 노출 회피·귀마개·액체 귀덮개, 10대 이전 교육 <sup>[1 36장 p.251]</sup>.</li>\n<li>장애(disability) 판정은 의학적 손상(impairment)에 교육·고용 가능성 같은 비의학 요인을 더한 것이며, 산재 보상은 업무 관련성을 입증해야 한다 <sup>[1 300장 p.2240]</sup>.</li>\n<li>유기용제(벤젠·노말헥산 등)의 질환 연결, 한국 산업안전보건 법령의 소음·납 기준, 한국 직업병 인정 기준은 원문을 대조하지 않아 싣지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 납 노출 근로자 작업 배제 기준</strong> — 시험 기준: 미국 OSHA 는 정기 혈중 납 검사 후 &gt;40 μg/dL 이면 작업에서 뺀다 <sup>[1 469장 p.3700]</sup> / 다른 기준: 새로 제안된 지침은 혈중 납 &lt;10 μg/dL 유지, &gt;20 μg/dL 이면 배제, 누적 노출 감시를 권한다 <sup>[1 469장 p.3700]</sup> / 왜 다른가: 혈중 납 1–7 μg/dL 수준에서도 저항성 고혈압·관상동맥 석회화·심혈관 사망이 늘어난다는 전향 연구가 쌓였다 <sup>[1 469장 p.3701]</sup> / 시험에서는: USMLE 는 현행 OSHA 40 μg/dL 로 답한다(내 판단 — 제안 지침은 아직 규정이 아니다) · KMLE 는 한국 법령 기준과 대조하지 않았다(검토 항목).</li>\n<li><strong>Z2 맥락 · 소음 기준의 두 숫자</strong> — 시험 기준: 8시간 평균 85 dB 이면 청력 보존 프로그램 의무 <sup>[1 36장 p.251]</sup> / 다른 기준: 같은 OSHA 규정에서 8시간 허용 노출은 90 dB(5 dB 마다 시간 절반) <sup>[1 36장 p.252]</sup> / 왜 다른가: 85 dB 는 감시·보호 프로그램을 시작하는 선, 90 dB 는 허용 노출 한도다 / 시험에서는: USMLE 는 묻는 것이 「프로그램 시작」인지 「허용 한도」인지로 가른다 · KMLE 는 한국 법령 숫자를 대조하지 않았다(검토 항목).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "분진·소음 — 노출에서 질환으로",
+    "columns": [
+     "노출(직종)",
+     "질환",
+     "시험 단서",
+     "잠복·경과",
+     "주의"
+    ],
+    "rows": [
+     [
+      "결정형 유리규산(silica) — 광산·석재 절단·사암 분사·채석·인조석 상판 가공",
+      "규폐증(silicosis)",
+      "상엽 작은 둥근 음영 · 폐문 림프절 달걀껍질(eggshell) 석회화(최대 20 %) · 급성형은 HRCT 「crazy paving」 <sup>[1 300장 p.2237]</sup>",
+      "만성(단순) 15–20년 · 밀폐 공간 사암 분사·인조석 가공은 수개월에 급성 <sup>[1 300장 p.2237]</sup>",
+      "결핵·비정형 항산균·진균 감염 위험 ↑ · 류마티스관절염·경피증 · IARC 「폐 발암 가능」 <sup>[1 300장 p.2238]</sup>"
+     ],
+     [
+      "석탄 분진 — 탄광",
+      "탄광부 진폐증(coal worker's pneumoconiosis)",
+      "규폐와 비슷한 작은 둥근 음영 · ≥1 cm 결절(상폐야)이면 복합형 <sup>[1 300장 p.2238]</sup>",
+      "15–20년 노출 · 단순형은 대개 기능 저하 없음, PMF 로 진행하면 중증 <sup>[1 300장 p.2238]</sup>",
+      "만성기관지염·COPD(흡연과 더해짐) · 진폐 결절 + 혈청 양성 류마티스관절염 = 카플란 증후군 <sup>[1 300장 p.2238]</sup>"
+     ],
+     [
+      "석면(asbestos) — 조선·건설·배관공·보일러공·단열재·브레이크 라이닝, 옆에서 일한 사람도",
+      "석면폐(asbestosis) · 흉막반 · 폐암 · 중피종",
+      "하엽 불규칙·선상 음영 · HRCT 흉막하 곡선 · 횡격막·심장 경계의 흉막반(석회화) <sup>[1 300장 p.2236]</sup>",
+      "석면폐 대개 ≥10년 · 폐암 최소 15–19년 · 중피종은 짧은 노출로 40년 뒤에도 <sup>[1 300장 p.2236]</sup>",
+      "폐암은 흡연과 상승 작용, 중피종은 흡연 무관 · 중피종 &gt;80 % 석면 관련 <sup>[1 300장 p.2236]</sup>"
+     ],
+     [
+      "베릴륨 — 합금·세라믹·첨단 전자·원자력",
+      "만성 베릴륨병(chronic beryllium disease)",
+      "사르코이드증과 같은 비건락 육아종 · BeLPT 양성 <sup>[1 300장 p.2238]</sup>",
+      "만성 육아종성 염증이 흔하고 급성 폐렴은 드물다",
+      "사르코이드증 진단 전에 직업 노출을 묻는다 · HLA-DP 연관 <sup>[1 300장 p.2238]</sup>"
+     ],
+     [
+      "면·아마·대마 분진 — 방적",
+      "면폐증(byssinosis)",
+      "주 첫날 근무 끝 무렵 가슴 답답함(「월요일 흉부 압박감」) · 교대 중 FEV1 감소 <sup>[1 300장 p.2238]</sup>",
+      "&gt;10년 노출 뒤 반복 증상이면 폐쇄성 장애 <sup>[1 300장 p.2238]</sup>",
+      "교대 전후 폐활량 감시 · 지속 증상이면 저노출 부서로 <sup>[1 300장 p.2239]</sup>"
+     ],
+     [
+      "소음 — 목·금속 가공 전동 공구·사격·엔진",
+      "소음성 난청(noise-induced hearing loss)",
+      "감각신경성 · 3000–4000 Hz 패임이 더 높은 주파수보다 깊다 <sup>[1 36장 p.249]</sup>",
+      "점진적 진행 · 급성 노출은 일시/영구 역치 이동 <sup>[1 36장 p.246]</sup>",
+      "거의 모두 예방 가능 — 노출 회피·귀마개·귀덮개 <sup>[1 36장 p.251]</sup>"
+     ]
+    ],
+    "note": "분진 질환은 harrison-22 300장(표 300-1 · 본문 p.2235–2239), 소음은 36장. 흉부 사진의 둥근 음영은 기능 저하를 과대평가하고 석면폐 같은 선상 음영은 과소평가하기 쉽다 — HRCT 가 더 민감하다 <sup>[1 300장 p.2235]</sup>."
+   },
+   {
+    "title": "중금속 — 노출에서 질환으로",
+    "columns": [
+     "금속 · 노출",
+     "특징 소견",
+     "검사",
+     "치료"
+    ],
+    "rows": [
+     [
+      "납(lead) — 축전지 제조·재활용, 납 페인트 주택·교량 철거·연마, 납땜·배관, 사격장, 스테인드글라스",
+      "성인: 잇몸 경계 납선 · 창백 · 손목처짐 · 주로 운동 탈수초성 말초신경병 · 복통 · 고혈압 · 정자 수 감소. 아동: 신경발달 지연, 긴뼈 골단 「납선」",
+      "전혈 납(95–99 %가 적혈구 안 — 혈청 아님) · 정구성 정색소 빈혈 · 호염기 반점 · 적혈구 프로토포르피린(유리·아연) ↑ <sup>[1 469장 p.3700]</sup>",
+      "노출원 확인·차단이 핵심 · 증상 있는 고노출은 경구 숙시머 · 급성 중독은 입원해 CaEDTA ± 다이머카프롤 <sup>[1 469장 p.3700]</sup>"
+     ],
+     [
+      "수은(mercury) — 원소 수은 증기(화학·금속 가공·전기 장비, 온도계·치과 아말감) · 유기 수은(포식성 어류)",
+      "만성 증기 노출: 의도떨림 + 수은 흥분증(erethism — 흥분·기억 상실·불면·소심·섬망). 아동: 말단동통증(acrodynia). 급성 증기 흡입: 폐렴·비심인성 폐부종",
+      "원소·무기 수은은 혈액·소변, 유기 수은은 혈액(최근)·모발(만성) <sup>[1 469장 p.3701]</sup>",
+      "다이머카프롤·숙시머·페니실라민 킬레이트 · 만성 무기 수은은 N-아세틸페니실라민 <sup>[1 469장 p.3701]</sup>"
+     ],
+     [
+      "카드뮴(cadmium) — 도금·안료·제련·축전지·플라스틱, 흡연",
+      "단백뇨·소변 β2-미세글로불린 ↑·칼슘뇨 → 만성 신부전·골연화·골절(이타이이타이병) · 후각 상실 · 치아 황변 · 철에 반응 없는 소구성 저색소 빈혈 · 급성 흡입은 4–24시간 뒤 폐렴",
+      "소변 카드뮴 · 소변 β2-미세글로불린(신우신염 등에서도 오른다) <sup>[1 469장 p.3700]</sup>",
+      "효과적인 치료 없음 — 킬레이트 무익, 다이머카프롤은 신독성 악화 · 노출 중단·보존·골연화엔 비타민 D <sup>[1 469장 p.3700]</sup>"
+     ],
+     [
+      "망간(manganese) — 광부·건전지 제조·아크 용접",
+      "1–2년 안에 파킨슨 증후군(보행 장애·자세 불안정·가면 얼굴·떨림·정신 증상)",
+      "—",
+      "레보도파에 반응하지 않는다 — 전형적 파킨슨병과 가르는 점 <sup>[1 469장 p.3702]</sup>"
+     ]
+    ],
+    "note": "표의 소견·치료는 harrison-22 469장 표 469-1(p.3700–3701)과 본문 p.3702. 금속 중독 치료의 가장 중요한 요소는 노출을 알아내고 끊는 것이며, 킬레이트는 주로 급성·증상성 중독에 쓴다. 활성탄은 금속에 붙지 않는다 <sup>[1 469장 p.3699]</sup>."
+   },
+   {
+    "title": "유해요인 관리의 위계(hierarchy of controls)",
+    "columns": [
+     "순위",
+     "수준",
+     "무엇을 하나",
+     "예"
+    ],
+    "rows": [
+     [
+      "1",
+      "제거(elimination)",
+      "위해 요인을 근원에서 없앤다 — 노출 자체가 생기지 않아 가장 바람직하다",
+      "독성 화학물질을 쓰지 않도록 공정을 바꾼다"
+     ],
+     [
+      "2",
+      "대치(substitution)",
+      "더 안전한 것으로 바꾼다 — 대체물의 새 위험을 따로 확인한다",
+      "용제형 잉크 → 식물성 잉크"
+     ],
+     [
+      "3",
+      "공학적 관리(engineering controls)",
+      "설비·작업 공간·차단벽·환기로 사람과 위해 요인의 접촉을 막는다",
+      "국소 배기·습식 작업<sup>[1 300장 p.2239]</sup>"
+     ],
+     [
+      "4",
+      "행정적 관리(administrative controls)",
+      "노출 시간·빈도·강도를 줄이는 작업 방식",
+      "교육·작업 순환·휴식·출입 제한·라인 속도 조절"
+     ],
+     [
+      "5",
+      "개인 보호구(PPE)",
+      "몸에 착용해 노출을 줄인다 — 바르고 꾸준한 사용에 달려 있다",
+      "장갑·보안경·청력 보호구·호흡 보호구"
+     ]
+    ],
+    "note": "niosh-hoc(NIOSH 「About Hierarchy of Controls」). 위 셋(제거·대치·공학)은 사람의 행동에 크게 기대지 않아 더 효과적이다. 보호구만으로 버티지 말고, 다른 관리로 안전 수준에 못 미칠 때·다른 관리를 준비하는 동안·유일한 방법일 때 보호구를 준다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "흉막반이 보이면 석면폐(폐 섬유화)?",
+    "point": "흉막반은 과거 석면 노출을 가리킬 뿐, 다른 소견이 없으면 폐 기능 장애를 뜻하지 않는다. 석면폐는 하엽의 불규칙·선상 음영과 제한성 장애·확산능 감소로 진단한다 <sup>[1 300장 p.2236]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "석면 노출 + 흡연 — 중피종도 곱으로 는다?",
+    "point": "흡연과 석면의 상승(곱) 작용은 폐암이다. 중피종은 흡연과 연관되지 않는다 <sup>[1 300장 p.2236]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "1–2년 짧은 석면 노출, 40년 전 — 중피종 가능성 낮음?",
+    "point": "1–2년 이하의 짧은 노출이 40년 전이어도 중피종과 연관되었다 — 그래서 먼 과거까지 노출력을 묻는다 <sup>[1 300장 p.2236]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "노출을 끊으면 규폐증 진행이 멈춘다?",
+    "point": "결절성 섬유화는 추가 노출 없이도 진행해 진행성 괴상 섬유화(PMF)에 이를 수 있고, 급성 규폐증도 노출 중단 뒤 진행할 수 있다 <sup>[1 300장 p.2237]</sup> <sup>[1 300장 p.2238]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "사르코이드증처럼 보이는 육아종 — 직업과 무관?",
+    "point": "합금·세라믹·첨단 전자 제조 노출이면 만성 베릴륨병을 의심한다. 사르코이드증과 가르는 것은 베릴륨 림프구 증식 검사(BeLPT)의 특이 세포 면역 반응이다 <sup>[1 300장 p.2238]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "소음성 난청은 가장 높은 주파수부터 떨어진다?",
+    "point": "3000–4000 Hz 의 손실이 그보다 높은 주파수보다 큰 「소음 패임(noise notch)」이 특징이다. 대칭적으로 고음역으로 갈수록 내려가는 곡선은 노인성 난청(presbycusis) 쪽이다 <sup>[1 36장 p.246]</sup> <sup>[1 36장 p.249]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "카드뮴 중독에도 킬레이트?",
+    "point": "카드뮴은 효과적인 치료가 없다 — 킬레이트는 도움이 안 되고 다이머카프롤은 신독성을 악화시킨다. 노출 중단·보존 치료·골연화엔 비타민 D <sup>[1 469장 p.3700]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "무증상 납 노출 아동(혈중 납 20–40 μg/dL)에 킬레이트로 지능 보호?",
+    "point": "대규모 다기관 무작위 시험에서 킬레이트는 무증상 아동의 지능 지표를 개선하지 못했다. 핵심은 노출원 확인·제거다 <sup>[1 469장 p.3700]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "분진 작업장 — 방진 마스크 지급이 첫 대책?",
+    "point": "개인 보호구는 착용자가 바르고 꾸준히 써야만 효과가 있어 위계의 맨 아래다. 제거·대치·공학적 관리가 사람 행동에 덜 기대므로 먼저다 <sup>[2 Hierarchy of Controls]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "사르코이드증처럼 보이는 육아종에 합금·세라믹·전자 제조 노출이면 만성 베릴륨병 — BeLPT 로 가른다 <sup>[1 300장 p.2238]</sup>.",
+   "흉부 사진은 둥근 음영(규폐)의 기능 저하를 과대평가하고 선상 음영(석면폐)은 과소평가한다 — HRCT 가 더 민감하다 <sup>[1 300장 p.2235]</sup>.",
+   "납은 반드시 전혈로 잰다(혈청 아님). 혈중 납은 최근 노출, 뼈 납은 누적 노출을 반영한다 <sup>[1 469장 p.3699]</sup> <sup>[1 469장 p.3700]</sup>.",
+   "망간 파킨슨 증후군은 레보도파에 반응하지 않는다 <sup>[1 469장 p.3702]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "osha-noise",
+    "name": "OSHA 작업장 소음 기준(미국)",
+    "kind": "관리 기준",
+    "population": "미국 작업장의 소음 노출 근로자",
+    "statement": "8시간 평균 85 dB 이면 청력 보존 프로그램(채용 전 선별·매년 청력 평가·청력 보호구 의무 착용) · 85 dB 를 넘으면 5 dB 오를 때마다 허용 시간이 절반 — 90 dB 8시간, 95 dB 4시간, 100 dB 2시간 [[harrison-22: 36장 p.251]] [[harrison-22: 36장 p.252]]",
+    "exceptions": "한국 산업안전보건 법령의 소음 기준은 대조하지 않았다(검토 항목)",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   },
+   {
+    "id": "osha-lead",
+    "name": "OSHA 납 노출 근로자 관리(미국)",
+    "kind": "관리 기준",
+    "population": "납 노출 근로자",
+    "statement": "정기 혈중 납 검사, 혈중 납 >40 μg/dL 이면 작업에서 뺀다 [[harrison-22: 469장 p.3700]]",
+    "exceptions": "새로 제안된 지침은 혈중 납 <10 μg/dL 유지·>20 μg/dL 이면 작업 배제·누적 노출 감시를 권한다(시험 쟁점 Z1) [[harrison-22: 469장 p.3700]]",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 300: Occupational and Environmental Lung Disease · Chapter 469: Heavy Metal Poisoning · Chapter 36: Disorders of Hearing",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 300장 p.2234–2241 · 469장 p.3699–3702 · 36장 p.244–252",
+    "checked": "드라이브 22판 장별 문서 H22_300 · H22_469 · H22_36 본문 대조. 300장: 직업 노출 질환은 비직업성과 임상적으로 구별 안 됨·노출력이 원인을 드러냄(p.2234) · 노출력 질문 항목·ILO 분류·둥근 음영(규폐·탄광부) vs 선상 음영(석면)·HRCT 민감(p.2235) · 표 300-1 · 석면 노출 직종·방관 노출·석면폐 ≥10년·흉막반은 노출만 뜻함·하엽 선상 음영·제한성 장애·폐암 잠복 15–19년·흡연 상승 작용·중피종 흡연 무관·1–2년 노출 40년 뒤·중피종 >80 % 석면(p.2235–2236) · 규폐 노출 직종·급성 규폐 수개월·crazy paving·단순 규폐 15–20년 상엽 둥근 음영·달걀껍질 석회화 20 %·노출 없이 진행(p.2236–2237) · 복합 규폐 >1 cm·PMF·결핵 위험과 잠복결핵 치료 연장·자가면역·IARC(p.2238) · 탄광부 진폐 15–20년·≥1 cm 복합형·카플란 증후군·만성 베릴륨병 BeLPT·HLA-DP·면폐증 월요일 흉부 압박감(p.2238) · 배기·환기·습식·보호구·교대 전후 폐활량·저노출 부서 이동(p.2239). 469장: 노출 인지·중단이 가장 중요·킬레이트는 급성 증상성 중독·활성탄 무익(p.3699) · 표 469-1 납·카드뮴(p.3700)·수은(p.3701) · 망간 파킨슨 증후군 레보도파 무반응(p.3702). 36장: 소음성 난청 3000–4000 Hz 패임·일시/영구 역치 이동(p.246) · 3–4 kHz 손실이 더 높은 주파수보다 큼(p.249) · OSHA 85 dB 청력 보존 프로그램(p.251) · 5 dB 마다 허용 시간 절반(p.252)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   },
+   {
+    "id": "niosh-hoc",
+    "org": "CDC · National Institute for Occupational Safety and Health (NIOSH)",
+    "title": "About Hierarchy of Controls",
+    "kind": "guideline",
+    "citation": "NIOSH 웹 문서 「About Hierarchy of Controls」 — 2024-05-15 게시, 2026-10-28 갱신",
+    "checked": "cdc.gov 페이지 전문(WebFetch, 2026-11-20 열람) — 다섯 수준의 순서(제거 → 대치 → 공학적 관리 → 행정적 관리 → 개인 보호구, 효과 높은 순) · 각 수준의 정의와 예(식물성 잉크, 환기·차단벽, 교육·작업 순환·휴식·출입 제한·라인 속도, 장갑·보안경·청력 보호구·호흡 보호구) · 위 셋은 사람의 상호작용 없이 노출을 관리해 더 효과적 · 보호구는 바르고 꾸준한 사용에 달려 있어 마지막 · 보호구만 의존하지 말 것 · 보호구를 주어야 하는 세 경우. 웹 문서라 PMID 없음",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2024",
+    "checkedAt": "2026-11-20",
+    "url": "https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html"
+   }
+  ],
+  "checks": [
+   {
+    "q": "석면 노출 조선소 근로자의 흉부 사진에 횡격막을 따라 석회화된 흉막반만 있다. 폐 기능 장애를 뜻하나?",
+    "a": "아니다. 흉막반은 과거 노출의 표지일 뿐이다. 석면폐는 하엽 선상 음영과 제한성 장애·확산능 감소로 판단한다."
+   },
+   {
+    "q": "석면 노출이 흡연과 곱으로 위험을 키우는 암은? 흡연과 무관한 것은?",
+    "a": "폐암이 상승 작용을 보이고, 중피종은 흡연과 연관되지 않는다."
+   },
+   {
+    "q": "규폐증 환자에게 특히 경계할 감염과 그 이유는?",
+    "a": "결핵(비정형 항산균·진균도). 유리규산이 폐포 대식세포 기능을 떨어뜨려서이며, 잠복결핵 치료 기간도 길게 잡는다."
+   },
+   {
+    "q": "분진 작업장 관리에서 방진 마스크 지급보다 먼저 검토할 것을 순서대로?",
+    "a": "제거 → 대치 → 공학적 관리(국소 배기·습식) → 행정적 관리. 보호구는 마지막 수단이다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "직업력에서 직업성 질환으로",
+  "geo": {
+   "title": "직업력에서 직업성 질환으로",
+   "w": 1132.0,
+   "h": 497.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "호흡기·신경·빈혈·난청 +",
+      "직업 노출 의심"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 566.8,
+     "y": 16.0
+    },
+    {
+     "id": "hx",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "노출 물질·기간·보호구·동료",
+      "증상·취미·주거를 묻는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 566.7,
+     "y": 102.0
+    },
+    {
+     "id": "kind",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "주된 노출은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 566.6,
+     "y": 188.0
+    },
+    {
+     "id": "dust",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "흉부 영상의 우세 부위?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 258.5,
+     "y": 298.0
+    },
+    {
+     "id": "sil",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "상엽 둥근 결절 → 규폐증·",
+      "탄광부 진폐"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 417.0
+    },
+    {
+     "id": "asb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "하엽 선상 음영·흉막반 →",
+      "석면 관련 질환"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 417.0
+    },
+    {
+     "id": "metal",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "가장 두드러진 표적 장기?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 607.6,
+     "y": 298.0
+    },
+    {
+     "id": "pb",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "빈혈·호염기 반점·손목처짐",
+      "→ 납"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 417.0
+    },
+    {
+     "id": "hg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "의도떨림·흥분증 → 수은 증기"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 694.0,
+     "y": 417.0
+    },
+    {
+     "id": "cd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "단백뇨·β2-MG·골연화 →",
+      "카드뮴"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 920.0,
+     "y": 417.0
+    },
+    {
+     "id": "nihl",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "3–4 kHz 패임 → 소음성 난청"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 833.6,
+     "y": 298.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "hx",
+     "points": [
+      [
+       664.8,
+       80.0
+      ],
+      [
+       664.7,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hx",
+     "to": "kind",
+     "points": [
+      [
+       664.7,
+       166.0
+      ],
+      [
+       664.6,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "kind",
+     "to": "dust",
+     "points": [
+      [
+       615.6,
+       235.0
+      ],
+      [
+       615.6,
+       284.0
+      ],
+      [
+       356.5,
+       284.0
+      ],
+      [
+       356.5,
+       298.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "광물 분진"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 587.8,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "kind",
+     "to": "metal",
+     "points": [
+      [
+       664.6,
+       235.0
+      ],
+      [
+       664.6,
+       284.0
+      ],
+      [
+       705.6,
+       284.0
+      ],
+      [
+       705.6,
+       298.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "금속 흄·분진"
+      ],
+      "w": 73.1,
+      "h": 17,
+      "x": 628.1,
+      "y": 259.0
+     }
+    },
+    {
+     "from": "kind",
+     "to": "nihl",
+     "points": [
+      [
+       713.6,
+       235.0
+      ],
+      [
+       713.6,
+       284.0
+      ],
+      [
+       931.6,
+       284.0
+      ],
+      [
+       931.6,
+       298.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "소음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 698.6,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "dust",
+     "to": "sil",
+     "points": [
+      [
+       323.9,
+       345.0
+      ],
+      [
+       323.9,
+       394.0
+      ],
+      [
+       114.0,
+       394.0
+      ],
+      [
+       114.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "상엽"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 308.9,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "dust",
+     "to": "asb",
+     "points": [
+      [
+       389.2,
+       345.0
+      ],
+      [
+       389.2,
+       394.0
+      ],
+      [
+       340.0,
+       394.0
+      ],
+      [
+       340.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하엽·흉막"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 360.0,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "metal",
+     "to": "pb",
+     "points": [
+      [
+       656.6,
+       345.0
+      ],
+      [
+       656.6,
+       394.0
+      ],
+      [
+       566.0,
+       394.0
+      ],
+      [
+       566.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "혈액·말초신경"
+      ],
+      "w": 80.4,
+      "h": 17,
+      "x": 616.5,
+      "y": 349.0
+     }
+    },
+    {
+     "from": "metal",
+     "to": "hg",
+     "points": [
+      [
+       705.6,
+       345.0
+      ],
+      [
+       705.6,
+       403.0
+      ],
+      [
+       792.0,
+       403.0
+      ],
+      [
+       792.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중추신경"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 679.6,
+      "y": 369.0
+     }
+    },
+    {
+     "from": "metal",
+     "to": "cd",
+     "points": [
+      [
+       754.6,
+       345.0
+      ],
+      [
+       754.6,
+       394.0
+      ],
+      [
+       1018.0,
+       394.0
+      ],
+      [
+       1018.0,
+       417.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "신장·뼈"
+      ],
+      "w": 47.4,
+      "h": 17,
+      "x": 731.0,
+      "y": 349.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "호흡기·신경·빈혈·난청 + 직업 노출 의심",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "노출 물질·기간·보호구·동료 증상·취미·주거를 묻는다"
+     }
+    ]
+   },
+   {
+    "id": "hx",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "노출 물질·기간·보호구·동료 증상·취미·주거를 묻는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "주된 노출은?"
+     }
+    ]
+   },
+   {
+    "id": "kind",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "주된 노출은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "광물 분진",
+      "to": 4,
+      "toText": "흉부 영상의 우세 부위?"
+     },
+     {
+      "label": "금속 흄·분진",
+      "to": 5,
+      "toText": "가장 두드러진 표적 장기?"
+     },
+     {
+      "label": "소음",
+      "to": 6,
+      "toText": "3–4 kHz 패임 → 소음성 난청"
+     }
+    ]
+   },
+   {
+    "id": "dust",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "흉부 영상의 우세 부위?",
+    "note": "",
+    "branches": [
+     {
+      "label": "상엽",
+      "to": 7,
+      "toText": "상엽 둥근 결절 → 규폐증·탄광부 진폐"
+     },
+     {
+      "label": "하엽·흉막",
+      "to": 8,
+      "toText": "하엽 선상 음영·흉막반 → 석면 관련 질환"
+     }
+    ]
+   },
+   {
+    "id": "metal",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "가장 두드러진 표적 장기?",
+    "note": "",
+    "branches": [
+     {
+      "label": "혈액·말초신경",
+      "to": 9,
+      "toText": "빈혈·호염기 반점·손목처짐 → 납"
+     },
+     {
+      "label": "중추신경",
+      "to": 10,
+      "toText": "의도떨림·흥분증 → 수은 증기"
+     },
+     {
+      "label": "신장·뼈",
+      "to": 11,
+      "toText": "단백뇨·β2-MG·골연화 → 카드뮴"
+     }
+    ]
+   },
+   {
+    "id": "nihl",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "3–4 kHz 패임 → 소음성 난청",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "sil",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "상엽 둥근 결절 → 규폐증·탄광부 진폐",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "asb",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "하엽 선상 음영·흉막반 → 석면 관련 질환",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pb",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "빈혈·호염기 반점·손목처짐 → 납",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "hg",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "의도떨림·흥분증 → 수은 증기",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cd",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "단백뇨·β2-MG·골연화 → 카드뮴",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.outbreak-investigation.epidemic-curve-and-steps": {
+  "id": "cn.prev.outbreak-investigation.epidemic-curve-and-steps",
+  "title": "집단 발병 — 유행 곡선으로 전파 양식을 읽는다",
+  "objective": "집단 발병에서 유행 곡선의 모양으로 전파 양식을 가려 역학조사의 다음 단계를 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "집단 발병(outbreak) 역학조사 — 유행 곡선(epidemic curve) · 공통 감염원(common source) · 전파성(propagated) 유행 · 기초감염재생산수(R0) · 집단면역(herd immunity)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [
+   "Infectious Disease"
+  ],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "9a69526733155883",
+  "summary": [
+   "결론: 가파르게 올라 완만히 내려가는 한 봉우리는 단일 노출, 고원은 지속 노출, 잠복기 간격의 여러 봉우리는 사람 간 전파.",
+   "시험 단서: 「같은 식사 뒤 하루 사이 환자 집중」(point source), 「몇 주째 비슷한 수」(continuous), 「약 1 잠복기마다 새 봉우리」(propagated).",
+   "왜: 한 번의 짧은 노출이면 모든 환자가 한 잠복기 안에 생기고, 사람 간 전파는 세대마다 잠복기만큼 늦게 다음 환자를 만든다.",
+   "단계: 유행 확인 → 진단 확인 → 환자 정의 → 사례 찾기 → 기술 역학 → 가설 → 분석 → 관리 · 감시 · 소통 — 관리는 끝까지 기다리지 않는다.",
+   "집단면역 임계값 = 1 − 1/R0(R0 4 → 75 %). 면역이 고르지 않으면 넘어도 국소 유행이 남는다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 유행 곡선을 먼저 그리나",
+    "deep": false,
+    "html": "<ul>\n<li>유행 곡선은 규모, 시간 추세, 지금 유행이 오르는 중·봉우리·내리막 중 어디인지, 그리고 <strong>모양으로 전파 양식</strong>을 알려 준다 <sup>[2 Step 6 Epidemic curve]</sup>.</li>\n<li>전파 양식이 다음 조치를 정한다 — 공통 감염원이면 그 감염원을 찾아 막고, 사람 간 전파면 사람 사이의 고리를 끊는다 <sup>[1 Common-source outbreaks]</sup> <sup>[1 Propagated outbreaks]</sup>.</li>\n<li>곡선을 그리기 전에 <strong>유행인지부터</strong> 확인한다. 기대치보다 많지 않으면 조사 대상이 아니다(다만 중증·전파력이 크면 적은 수도 조사) <sup>[2 Step 2 Establish the existence of an outbreak]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 노출 방식이 곡선 모양을 만든다",
+    "deep": false,
+    "html": "<ul>\n<li><strong>단일 노출</strong>: 모두 짧은 시간에 같은 감염원에 노출되므로 환자는 한 잠복기 안에 모두 생긴다. 발생 범위가 그 병원체의 잠복기 분포를 그대로 보여 준다 <sup>[1 Common-source outbreaks]</sup>.</li>\n<li><strong>지속 노출</strong>: 노출 날짜가 길게 퍼지고 잠복기도 겹쳐 봉우리가 넓고 평평해진다 <sup>[1 Common-source outbreaks]</sup>.</li>\n<li><strong>사람 간 전파</strong>: 1세대 환자가 감염력을 가진 뒤 2세대를 만들고, 그 간격이 대략 잠복기라 봉우리가 잠복기 간격으로 잇달아 선다. 감수성자가 줄면서 몇 세대 뒤 잦아든다 <sup>[1 Propagated outbreaks]</sup>.</li>\n<li><strong>R0 와 집단면역</strong>: R0 는 완전히 감수성인 집단에서 감염자 1명이 만드는 평균 2차 감염자 수다. 면역 비율이 1 − 1/R0 를 넘으면 실효재생산수가 1 아래로 내려가 전파가 유지되지 못한다. R0 는 병원체뿐 아니라 인구 밀도·접촉 양상에 따라 달라 임계값도 집단마다 다르다 <sup>[3 Basic Concepts of Herd Immunity]</sup> <sup>[3 Establishing Herd Immunity within Populations]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 유행 곡선의 모양",
+    "deep": false,
+    "html": "<ul>\n<li>표가 다섯 가지 모양을 나란히 놓는다. x 축 시간 간격은 잠복기에 맞추고, 병·잠복기를 모르면 여러 간격으로 그려 양상이 가장 잘 보이는 것을 쓴다 <sup>[2 Step 6 Epidemic curve]</sup>.</li>\n<li>바깥값(outlier)은 버리지 않는다 — 감염원에 먼저·나중에 노출된 사람이거나 자료 오류일 수 있다 <sup>[2 Step 6 Epidemic curve]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 지금 어느 단계이고 다음은 무엇인가",
+    "deep": false,
+    "html": "<ul>\n<li>표가 CDC 의 13단계를 정리한다. 시험에서 「다음 단계」는 대개 유행 확인 → 진단 확인 → 환자 정의 → 기술 역학(곡선) → 가설 → 분석의 흐름에서 묻는다 <sup>[2 Step 2 Establish the existence of an outbreak]</sup>.</li>\n<li>순서는 개념상이다 — 여러 단계를 동시에 하고, 처음 세 단계의 순서는 크게 바뀐다. 관리 조치는 감염원·경로를 아는 즉시 시행한다 <sup>[2 Step 11 Implement control and prevention measures]</sup>.</li>\n<li>분석 설계: 명단이 분명한 작은 집단은 후향적 코호트(노출·비노출 발병률, 상대위험도·기여위험도), 집단이 불분명하고 빨리 알아야 하면 환자-대조군(교차비 — 드문 병에서 상대위험도에 가깝다) <sup>[2 Step 8 Evaluate hypotheses epidemiologically]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>검사실·환경 조사는 역학적 결론을 확인하고 왜 일어났는지를 설명한다 — 역학 분석을 대신하지 않는다 <sup>[2 Step 8 Evaluate hypotheses epidemiologically]</sup>.</li>\n<li>집단면역이 실제로 생기려면 면역이 질병뿐 아니라 <strong>전파</strong>를 막아야 한다. 무증상 감염자가 전파하는 병원체는 임상 소견으로 면역 정도를 가늠하기 어렵다 <sup>[3 Establishing Herd Immunity within Populations]</sup>.</li>\n<li>한국 「감염병의 예방 및 관리에 관한 법률」의 신고·역학조사 절차와 질병관리청 지침은 대조하지 않았다(검토 항목). 백신 효과를 반영한 접종 목표율 공식도 읽은 출처에 없어 싣지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 조사 단계의 순서</strong> — 시험 기준: CDC 표 6.2 는 현장 준비 → 유행 확인 → 진단 확인 → 환자 정의 → … 순이다 <sup>[2 Step 2 Establish the existence of an outbreak]</sup> / 다른 기준: 같은 자료가 처음 세 단계(준비·유행 확인·진단 확인)의 순서는 매우 가변적이라고 쓴다 <sup>[2 Table 6.2 순서 설명]</sup>. 국내 교과서의 단계 이름·순서는 대조하지 않았다 / 왜 다른가: 단계는 개념상의 순서이고 실제로는 동시에 진행한다 / 시험에서는: 보기 중 「유행 확인(기대치와 비교)」이 「진단 확인」과 함께 나오면 둘 다 초기 단계다 — 문항이 「가장 먼저」를 물으면 국내 교과서 순서를 확인해야 한다(검토 항목). 「관리는 분석이 끝난 뒤」는 KMLE·USMLE 모두 오답으로 본다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "유행 곡선 모양 → 전파 양식",
+    "columns": [
+     "전파 양식",
+     "노출",
+     "곡선 모양",
+     "곡선에서 읽는 것"
+    ],
+    "rows": [
+     [
+      "공통 감염원 · 단일 노출(point source)",
+      "같은 감염원에 짧은 시간 한 번",
+      "가파른 상승 + 더 완만한 하강의 한 봉우리 — 모든 환자가 한 잠복기 안 <sup>[1 Common-source outbreaks]</sup>",
+      "환자 발생 범위 ≈ 그 병원체의 잠복기 범위 → 노출 시점 추정 <sup>[2 Step 6 Epidemic curve]</sup>"
+     ],
+     [
+      "공통 감염원 · 지속 노출(continuous)",
+      "같은 감염원에 며칠~몇 주 이상 계속",
+      "더 평평하고 넓은 봉우리 — 고원(plateau) <sup>[1 Common-source outbreaks]</sup> <sup>[2 Step 6 Epidemic curve]</sup>",
+      "감염원이 아직 남아 있을 수 있다"
+     ],
+     [
+      "공통 감염원 · 간헐 노출(intermittent)",
+      "같은 감염원에 띄엄띄엄",
+      "들쭉날쭉 — 노출 시기를 그대로 반영 <sup>[1 Common-source outbreaks]</sup> <sup>[2 Step 6 Epidemic curve]</sup>",
+      "노출이 반복되는 시점"
+     ],
+     [
+      "전파성(propagated) · 사람 간",
+      "사람에서 사람으로(직접 접촉 · 매개체)",
+      "약 한 잠복기 간격의 잇단 봉우리, 몇 세대 뒤 잦아든다(홍역 예: 약 11일 간격) <sup>[1 Propagated outbreaks]</sup>",
+      "세대 간격 ≈ 잠복기"
+     ],
+     [
+      "혼합(mixed)",
+      "공통 감염원 뒤 2차 사람 간 전파",
+      "첫 공통 감염원 봉우리 뒤 작은 봉우리들 <sup>[1 Mixed epidemics]</sup>",
+      "2차 전파 차단이 필요"
+     ]
+    ],
+    "note": "곡선 모양은 cdc-poe-l1 Lesson 1 Section 11 과 cdc-poe-l6 Lesson 6 Step 6. 바깥값(outlier)은 이른·늦은 노출이나 자료 오류를 알려 준다."
+   },
+   {
+    "title": "집단 발병 조사 단계(CDC 표 6.2)",
+    "columns": [
+     "단계",
+     "할 일",
+     "놓치기 쉬운 점"
+    ],
+    "rows": [
+     [
+      "1 현장 준비",
+      "지식·물품·보호구, 역할·기관 분담·소통 계획",
+      "—"
+     ],
+     [
+      "2 유행 확인",
+      "관찰 수를 기대 수(감시 자료·지역·국가 자료)와 비교",
+      "보고·정의 변경 등 겉보기 증가를 거른다. 중증·전파력이 크면 적은 수라도 조사"
+     ],
+     [
+      "3 진단 확인",
+      "임상·검사 소견 검토, 확인 검사, 환자 면담, 임상 특징 분포",
+      "검사 오류를 걸러 관리 조치가 맞는 병을 겨누게 한다"
+     ],
+     [
+      "4 환자 정의",
+      "임상 기준 + 사람·장소·시간 제한, 확진·추정·의심",
+      "조사할 노출은 넣지 않는다"
+     ],
+     [
+      "5 사례 찾기·기록",
+      "능동·수동 감시, 환자에게 다른 환자를 묻기, 선 목록(line listing)",
+      "—"
+     ],
+     [
+      "6 기술 역학",
+      "시간(유행 곡선)·장소(점 지도·발생률 지도)·사람(나이·성·관련 요인)",
+      "잠복기를 모르면 여러 시간 간격으로 그려 본다"
+     ],
+     [
+      "7 가설 세우기",
+      "병의 알려진 특성, 환자와 열린 면담, 기술 역학 양상",
+      "자연 전파로 설명되지 않으면 의도적 원인도 고려"
+     ],
+     [
+      "8 가설 검정",
+      "후향적 코호트(발병률·상대위험도) 또는 환자-대조군(교차비)",
+      "대조군 선택이 결과를 좌우한다"
+     ],
+     [
+      "9–10 다듬기·검사실·환경 대조",
+      "결과가 불분명하면 가설로 돌아가고, 검사실·환경 조사로 확인",
+      "—"
+     ],
+     [
+      "11–13 관리 · 감시 · 소통",
+      "감염원·전파 경로를 알면 즉시 관리, 감시로 효과 확인, 결과 공유",
+      "관리는 조사가 끝나기 전에도 시작"
+     ]
+    ],
+    "note": "단계 이름·내용은 cdc-poe-l6 Lesson 6 Section 2 표 6.2. 순서는 개념상이며 처음 세 단계의 순서는 매우 가변적이다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "환자 수가 늘었으니 바로 유행?",
+    "point": "먼저 평소 기대치와 비교한다. 보고 방식·환자 정의 변경, 관심 증가, 새 진단 검사, 오진·검사 오류, 인구 변화(휴양지·대학가)만으로도 겉보기 증가가 생긴다 <sup>[2 Step 2 Establish the existence of an outbreak]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "환자 정의에 의심 노출(예: 특정 음식 섭취)을 넣는다?",
+    "point": "환자 정의에는 조사하려는 노출을 넣지 않는다 — 넣으면 그 노출과의 연관을 검정할 수 없다. 임상 기준 + 사람·장소·시간 제한으로 만든다 <sup>[2 Step 4 Construct a working case definition]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "환자 정의는 처음부터 엄격하게?",
+    "point": "초기에는 민감한 정의로 문제의 규모를 잡고, 분석 단계에서 특이하게 좁힌다(위양성이 분석 결과를 흐린다). 확진·추정·의심 범주를 둔다. 새로 알려진 병은 처음부터 특이한 정의로 시작하기도 한다 <sup>[2 Step 4 Construct a working case definition]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "관리 조치는 분석이 끝난 뒤?",
+    "point": "관리·예방 조치는 조사가 끝나기 전에도 시작할 수 있다 — 감염원과 전파 경로를 알게 되는 즉시 시행한다. 단계 순서는 개념상의 순서이고 여러 단계를 동시에 한다 <sup>[2 Step 11 Implement control and prevention measures]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "명단이 분명한 소규모 모임에 환자-대조군 연구?",
+    "point": "참석자 명단처럼 작고 잘 정해진 집단이면 후향적 코호트로 노출군·비노출군 발병률을 비교한다(상대위험도). 집단이 불분명하고 빨리 결론내야 하면 환자-대조군 연구(교차비)를 쓴다 <sup>[2 Step 8 Evaluate hypotheses epidemiologically]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "집단면역 임계값을 넘으면 모두 안전?",
+    "point": "1 − 1/R0 는 고르게 섞이고 면역이 감염을 완전히 막는다는 가정에서 나온다. 면역이 시간에 따라 약해지거나(백일해·로타바이러스) 감수성자가 한곳에 모여 있으면 전체 면역률이 임계값을 넘어도 국소 유행이 생긴다 <sup>[3 Establishing Herd Immunity within Populations]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "단일 노출의 노출 시점 추정: 봉우리(또는 중앙값 환자)에서 평균 잠복기만큼, 첫 환자에서 최소 잠복기만큼 거슬러 올라간다. 두 추정이 가까우면 그 사이를 노출 기간으로 보고 양쪽을 20–50 % 넓힌다 <sup>[2 Step 6 Epidemic curve]</sup>.",
+   "가설은 분석 역학으로 검정한다 — 작은 명단 집단은 후향적 코호트, 집단이 불분명하면 환자-대조군. 강한 용의 노출은 노출군 발병률이 높고 비노출군이 낮으며 대부분의 환자를 설명한다 <sup>[2 Step 8 Evaluate hypotheses epidemiologically]</sup>.",
+   "사람 간 전파 유행의 관리에서 예방접종이 막을 수 있는 크기는 집단면역 임계값(1 − 1/R0)이 정한다 <sup>[3 Basic Concepts of Herd Immunity]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "hit",
+    "name": "집단면역 임계값(herd immunity threshold)",
+    "kind": "계산식",
+    "population": "고르게 섞이고 면역이 감염을 막는다고 가정한 집단",
+    "statement": "임계값 = 1 − 1/R0. R0 = 완전히 감수성인 집단에 감염자 1명이 들어왔을 때 감염 기간 동안 생기는 평균 2차 감염자 수. 예: R0 4 → 0.75, R0 3 → 약 67 % [[randolph-2020: Basic Concepts of Herd Immunity]]",
+    "exceptions": "면역 비율이 임계값을 넘으면 실효감염재생산수(Re · Rt)가 1 아래로 내려가 유행이 줄어든다. 고른 섞임·감염 차단 면역(sterilizing immunity)이라는 가정이 깨지면(면역 약화 · 감수성자 집단) 실제 보호는 덜하다 [[randolph-2020: Establishing Herd Immunity within Populations]]",
+    "source": "randolph-2020",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "cdc-poe-l1",
+    "org": "CDC",
+    "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. — Lesson 1 Section 11: Epidemic Disease Occurrence",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "CDC 보관 사이트의 Lesson 1 Section 11 쪽을 WebFetch 로 읽음 — 풍토병·유행·집단 발병·집락·범유행 정의, 공통 감염원(단일·지속·간헐), 전파성, 혼합 유행의 정의와 유행 곡선 모양(단일 노출: 가파른 상승·완만한 하강, 모든 환자가 한 잠복기 안 / 지속: 더 평평하고 넓은 봉우리 / 간헐: 노출 시기 반영 / 전파성: 약 한 잠복기 간격 봉우리, 홍역 예 약 11일 / 혼합: 공통 감염원 봉우리 뒤 2차 전파). 웹판 요약 도구로 읽었다. 판 연도(3rd ed. 2006 · 2012 갱신)는 서지 기억이라 확인 필요",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2012",
+    "checkedAt": "2026-11-20",
+    "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section11.html"
+   },
+   {
+    "id": "cdc-poe-l6",
+    "org": "CDC",
+    "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. — Lesson 6 Section 2: Steps of an Outbreak Investigation",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "CDC 보관 사이트의 Lesson 6 Section 2 쪽 앞 100,000자(전체 약 120,000자)를 WebFetch 로 읽음 — 표 6.2 의 13단계 이름과 순서, 각 단계 요점(유행 확인의 겉보기 증가 원인, 진단 확인, 환자 정의: 임상 기준+사람·장소·시간, 노출 제외, 확진·추정·의심, 초기 민감·분석 시 특이; 사례 찾기·선 목록; 유행 곡선이 알려 주는 것·모양별 전파 양식·시간 간격 선택·단일 노출 때 노출 기간 추정법; 가설; 후향적 코호트 vs 환자-대조군; 관리는 조사 완료 전에도·감염원과 경로를 알면 즉시; 감시; 소통; 단계는 개념상 순서·동시 진행). 마지막 약 20,000자는 읽지 않았다. 판 연도는 서지 기억이라 확인 필요",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2012",
+    "checkedAt": "2026-11-20",
+    "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson6/section2.html"
+   },
+   {
+    "id": "randolph-2020",
+    "org": "Randolph HE, Barreiro LB",
+    "title": "Herd Immunity: Understanding COVID-19",
+    "kind": "review",
+    "citation": "Immunity 2020;52(5):737-741",
+    "checked": "PMC7236739 전문(PubMed MCP)을 처음부터 끝까지 읽음 — 집단면역 = 면역자가 충분할 때 감수성자가 받는 간접 보호, R0 정의(완전 감수성 집단에서 1명이 만드는 평균 2차 감염), 임계값 1 − 1/R0(R0 4 → 0.75, R0 3 → 약 67 %), Re·Rt 정의와 예방접종 목표(Re < 1), 가정(고른 섞임·감염 차단 면역), R0 는 병원체와 집단에 따라 다르다, 면역이 감염 전파를 막아야 한다, 면역 약화(백일해·로타바이러스)·감수성자 집단에서 국소 유행. 서지(권 52 · 5호 · 737–741)는 PubMed 메타데이터로 확인",
+    "doi": "10.1016/j.immuni.2020.04.012",
+    "pmid": "32433946",
+    "verified": "text",
+    "year": "2020",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7236739/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "결혼식 피로연 다음 날 하객 40명이 구토·설사로 왔고 환자는 하루 반 사이에 몰렸다가 서서히 줄었다. 전파 양식과 다음에 할 일은?",
+    "a": "공통 감염원 단일 노출(point source). 환자 정의를 세우고 하객 명단으로 후향적 코호트를 짜 음식별 발병률(상대위험도)을 비교한다."
+   },
+   {
+    "q": "약 한 잠복기 간격으로 봉우리가 잇달아 나타나는 유행 곡선의 뜻은?",
+    "a": "사람 간 전파(propagated) — 세대마다 잠복기만큼 늦게 다음 환자가 생긴다."
+   },
+   {
+    "q": "R0 가 4 인 병원체의 집단면역 임계값은?",
+    "a": "1 − 1/4 = 0.75, 즉 집단의 75 %가 면역이어야 지속 전파가 끊긴다(고른 섞임·감염 차단 면역 가정)."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "집단 발병 — 유행 확인에서 관리까지",
+  "geo": {
+   "title": "집단 발병 — 유행 확인에서 관리까지",
+   "w": 680.0,
+   "h": 578.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "평소보다 환자가 많다는 보고"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 16.0
+    },
+    {
+     "id": "excess",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "기대치보다 실제로 많은가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 85.0
+    },
+    {
+     "id": "base",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "감시 자료·지역 자료로",
+      "기대치를 구한다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 195.0
+    },
+    {
+     "id": "artifact",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "유행 아님 — 보고·정의·검사",
+      "변화 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 302.0
+    },
+    {
+     "id": "define",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "진단 확인 → 환자 정의 →",
+      "사례 찾기"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 302.0
+    },
+    {
+     "id": "curve",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유행 곡선 모양은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 388.0
+    },
+    {
+     "id": "point",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "단일 노출 — 노출 시점 역산,",
+      "공동 노출 조사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 498.0
+    },
+    {
+     "id": "cont",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "지속·간헐 노출 — 감염원",
+      "즉시 차단"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 498.0
+    },
+    {
+     "id": "prop",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "사람 간 전파 — 격리·접촉자",
+      "관리·예방접종"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 498.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "excess",
+     "points": [
+      [
+       453.0,
+       63.0
+      ],
+      [
+       453.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "excess",
+     "to": "define",
+     "points": [
+      [
+       404.0,
+       132.0
+      ],
+      [
+       404.0,
+       181.0
+      ],
+      [
+       339.0,
+       181.0
+      ],
+      [
+       339.0,
+       288.0
+      ],
+      [
+       307.3,
+       288.0
+      ],
+      [
+       307.3,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "많다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 389.0,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "excess",
+     "to": "artifact",
+     "points": [
+      [
+       502.0,
+       132.0
+      ],
+      [
+       502.0,
+       181.0
+      ],
+      [
+       567.0,
+       181.0
+      ],
+      [
+       567.0,
+       288.0
+      ],
+      [
+       598.7,
+       288.0
+      ],
+      [
+       598.7,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 481.5,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "excess",
+     "to": "base",
+     "points": [
+      [
+       453.0,
+       132.0
+      ],
+      [
+       453.0,
+       195.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "기대치 모름"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 419.6,
+      "y": 156.0
+     }
+    },
+    {
+     "from": "base",
+     "to": "define",
+     "points": [
+      [
+       420.3,
+       259.0
+      ],
+      [
+       420.3,
+       288.0
+      ],
+      [
+       372.7,
+       288.0
+      ],
+      [
+       372.7,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "초과"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 405.3,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "base",
+     "to": "artifact",
+     "points": [
+      [
+       485.7,
+       259.0
+      ],
+      [
+       485.7,
+       288.0
+      ],
+      [
+       533.3,
+       288.0
+      ],
+      [
+       533.3,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "기대 범위"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 457.8,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "define",
+     "to": "curve",
+     "points": [
+      [
+       340.0,
+       366.0
+      ],
+      [
+       340.0,
+       388.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "curve",
+     "to": "point",
+     "points": [
+      [
+       291.0,
+       435.0
+      ],
+      [
+       291.0,
+       484.0
+      ],
+      [
+       114.0,
+       484.0
+      ],
+      [
+       114.0,
+       498.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "한 봉우리"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 263.1,
+      "y": 439.0
+     }
+    },
+    {
+     "from": "curve",
+     "to": "cont",
+     "points": [
+      [
+       340.0,
+       435.0
+      ],
+      [
+       340.0,
+       498.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "고원·들쭉날쭉"
+      ],
+      "w": 80.4,
+      "h": 17,
+      "x": 299.8,
+      "y": 459.0
+     }
+    },
+    {
+     "from": "curve",
+     "to": "prop",
+     "points": [
+      [
+       389.0,
+       435.0
+      ],
+      [
+       389.0,
+       484.0
+      ],
+      [
+       566.0,
+       484.0
+      ],
+      [
+       566.0,
+       498.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "잇단 봉우리"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 355.6,
+      "y": 439.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "평소보다 환자가 많다는 보고",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "기대치보다 실제로 많은가?"
+     }
+    ]
+   },
+   {
+    "id": "excess",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "기대치보다 실제로 많은가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "많다",
+      "to": 4,
+      "toText": "진단 확인 → 환자 정의 → 사례 찾기"
+     },
+     {
+      "label": "아니다",
+      "to": 5,
+      "toText": "유행 아님 — 보고·정의·검사 변화 확인"
+     },
+     {
+      "label": "기대치 모름",
+      "to": 3,
+      "toText": "감시 자료·지역 자료로 기대치를 구한다"
+     }
+    ]
+   },
+   {
+    "id": "base",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "감시 자료·지역 자료로 기대치를 구한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "초과",
+      "to": 4,
+      "toText": "진단 확인 → 환자 정의 → 사례 찾기"
+     },
+     {
+      "label": "기대 범위",
+      "to": 5,
+      "toText": "유행 아님 — 보고·정의·검사 변화 확인"
+     }
+    ]
+   },
+   {
+    "id": "define",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "진단 확인 → 환자 정의 → 사례 찾기",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "유행 곡선 모양은?"
+     }
+    ]
+   },
+   {
+    "id": "artifact",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "유행 아님 — 보고·정의·검사 변화 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "curve",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유행 곡선 모양은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "한 봉우리",
+      "to": 7,
+      "toText": "단일 노출 — 노출 시점 역산, 공동 노출 조사"
+     },
+     {
+      "label": "고원·들쭉날쭉",
+      "to": 8,
+      "toText": "지속·간헐 노출 — 감염원 즉시 차단"
+     },
+     {
+      "label": "잇단 봉우리",
+      "to": 9,
+      "toText": "사람 간 전파 — 격리·접촉자 관리·예방접종"
+     }
+    ]
+   },
+   {
+    "id": "point",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "단일 노출 — 노출 시점 역산, 공동 노출 조사",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cont",
+    "num": 8,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "지속·간헐 노출 — 감염원 즉시 차단",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "prop",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "사람 간 전파 — 격리·접촉자 관리·예방접종",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.provider-payment.incentive-comparison": {
+  "id": "cn.prev.provider-payment.incentive-comparison",
+  "title": "진료비 지불 제도 — 무엇에 돈을 주면 무엇이 느나",
+  "objective": "진료비 지불 제도(행위별 수가·포괄수가·인두제·총액계약·봉급)의 유인과 부작용을 비교해, 제시된 문제(과잉 진료·과소 진료·의뢰 증가·재원 일수·총비용 증가)에 맞는 제도를 고른다",
+  "objectiveKind": "감별",
+  "condition": "진료비 지불 제도(provider payment mechanisms) — 행위별 수가(fee-for-service) · 포괄수가(case-based/DRG) · 인두제(capitation) · 총액계약·총액예산(global budget) · 봉급(salary)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "46b37bca9c660b99",
+  "summary": [
+   "결론: 행위별 수가는 진료량을 늘리고, 인두제·봉급·총액은 비용을 줄이려 진료를 덜 하며, 포괄수가는 재원일수를 줄인다.",
+   "시험 단서: 「과잉 진료·검사 남용」은 행위별 수가, 「의뢰 증가·환자 선별」은 인두제, 「입원 건수·상향 코딩」은 포괄수가.",
+   "왜: 사후에 단위마다 주면 재정 위험을 지불자가, 사전에 정액으로 주면 공급자가 진다 — 위험을 진 쪽이 아낀다.",
+   "포괄수가는 사례당 정액이라 재원일수는 줄지만 입원 건수가 늘 수 있어, 도입국은 모두 지출 상한을 둔다.",
+   "단일 제도의 부작용을 막으려 사전 정액에 행위·성과 요소를 섞는 혼합 지불을 권한다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 「무엇에 돈을 주나」가 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>지불 제도는 공급자에게 신호(유인)를 준다 — 단위가 무엇이고(서비스·사례·사람·기간), 언제 주며(사전·사후), 재정 위험을 누가 지는지가 행동을 정한다 <sup>[1 Abstract]</sup> <sup>[2 4.1]</sup>.</li>\n<li>사후에 단위마다 주면(행위별 수가) 위험은 지불자에게 있고 공급자는 양을 늘린다. 사전에 정액으로 주면(인두제·총액·봉급) 위험은 공급자에게 가고 공급자는 비용을 줄인다 <sup>[2 4.1]</sup>.</li>\n<li>그래서 상황 문항은 「문제(과잉·과소·의뢰·재원일수·총비용)」에서 거꾸로 제도를 찾는다 — 도식이 그 길이다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 지불 단위에서 행동으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>행위별 수가(fee-for-service)</strong>: 서비스 하나가 곧 수입이다. 각 단위가 모두 보상되므로 환자를 고를 이유는 없지만, 비용을 아끼거나 효율을 높일 이유도 없다 <sup>[2 4.1]</sup>. 일차의료 비교 연구에서 방문·연속성은 높았다 <sup>[4† 초록]</sup>.</li>\n<li><strong>포괄수가(case-based · diagnosis-related group, DRG)</strong>: 진단·나이·동반질환·시술로 사례를 묶어, 기준 단가 × 상대 가중치만큼 사례당 준다 <sup>[3 Introduction]</sup>. 사례 안에서 쓰는 비용은 공급자 몫이라 재원일수를 줄이고, 사례 수 자체는 늘릴 유인이 생긴다 <sup>[2 4.2]</sup>.</li>\n<li><strong>인두제(capitation)</strong>: 등록한 사람 수에 정액을 미리 준다 <sup>[1 Table 1]</sup>. 진료를 덜 하거나 다른 곳으로 보낼수록 남으므로 의뢰가 늘고, 저위험 환자를 고를 유인이 있다 <sup>[1 Results]</sup> <sup>[2 4.1]</sup>.</li>\n<li><strong>총액예산·총액계약(global budget)</strong>: 서비스 묶음 전체에 일괄 정액을 미리 정한다 <sup>[1 Table 1]</sup>. 독일 외래는 의사회·질병금고 연합이 행위 점수와 분기 총액을 합의하고, 분기 끝에 총액을 전체 점수로 나눠 점당 가치를 정한다 — 행위별 수가의 양 증가를 총액이 상쇄한다 <sup>[5 7장 p.45]</sup>.</li>\n<li><strong>봉급(salary)</strong>: 진료량과 무관한 고정 급여 — 조세 기반 체계의 병원 의사가 대표다 <sup>[5 7장 p.44]</sup>. 생산성 유인이 없다 <sup>[2 4.1]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 제도별 유인과 부작용",
+    "deep": false,
+    "html": "<ul>\n<li>표가 다섯 제도와 성과 지불의 단위·위험·늘어나는 것·부작용을 나란히 놓는다.</li>\n<li><strong>의뢰 증가</strong>는 인두제의 표지다 — 인두제에서 전문의·병원 의뢰가 행위별 수가보다 많았다 <sup>[1 Results]</sup> <sup>[4† 초록]</sup>.</li>\n<li><strong>해석 한계</strong>: 일차의료 의사의 지불 방식 비교 고찰에 든 연구는 4편뿐이고 일반화 가능성은 알 수 없다 <sup>[4† 초록]</sup>. 같은 제도라도 단가 수준·지급 시기·성과 요구 같은 설계 특성이 행동을 바꾼다 <sup>[1 Results]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 문제에 맞는 제도",
+    "deep": false,
+    "html": "<ul>\n<li>과잉 진료·검사 남용 → 사전·묶음 지불(인두제·포괄수가·총액)로 옮긴다. 과소 진료·의뢰 증가 → 행위별·성과 요소를 섞는다 <sup>[2 Conclusions]</sup>.</li>\n<li>입원이 길다 → 포괄수가. 다만 입원 건수·상향 코딩을 감시하는 코딩 감사와 지출 상한을 함께 둔다 <sup>[3 Findings — Ceilings]</sup>.</li>\n<li>총진료비 자체를 묶어야 한다 → 총액계약(점수제처럼 양이 늘면 단가가 내려가는 구조) <sup>[5 7장 p.45]</sup>.</li>\n<li>질 향상이 목표 → 다른 제도에 성과 지불을 얹는다(영국 QOF). 조작을 막을 감시가 필요하다 <sup>[5 7장 p.45]</sup> <sup>[1 Results]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>한 제도만으로는 반대쪽 부작용이 따른다 — 사전 포괄 지불을 뼈대로 활동 기반 요소를 섞는 혼합(blended) 지불을 권한다 <sup>[2 Conclusions]</sup>.</li>\n<li>포괄수가에서 물량 상한은 상한까지 채우려는 불필요한 입원을 부를 수 있고, 물량을 줄이면 대기가 길어질 수 있다 <sup>[3 Findings — Ceilings]</sup>.</li>\n<li>한국의 지불 제도(국민건강보험의 행위별 수가·질병군 포괄수가의 범위·연도)와 의료법 조문은 보건복지부·건강보험심사평가원·국가법령정보센터 원문을 읽지 못해 싣지 않았다(검토 항목). 의료법규는 이 정리본의 목표 밖이다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 포괄수가는 입원 건수를 늘리나</strong> — 시험 기준: 포괄수가는 재원일수를 줄여 효율을 높이지만 사례 수를 늘린다(Street 등) <sup>[3 Introduction]</sup> / 다른 기준: 여러 나라의 사례당 지불 도입을 본 연구는 재원일수 감소·입원 증가 없음·사례당 입원 지출 증가를 보고했다(Moreno-Serra·Wagstaff) <sup>[3 Discussion]</sup> / 왜 다른가: 지출·물량 상한, 코딩 감사, 나라별 설계가 달라 입원 증가 유인이 실제로 드러나는 정도가 다르다 <sup>[3 Findings — Ceilings]</sup> / 시험에서는: KMLE·USMLE 모두 「유인」을 묻는 문항이면 입원 건수 증가·상향 코딩을 포괄수가의 부작용으로 답한다(내 판단 — 국내 교과서와 대조하지 않았다).</li>\n<li><strong>Z2 맥락 · 「총액계약」과 「총액예산」</strong> — 시험 기준: 총액예산(global budget)은 합의한 서비스 묶음에 미리 정한 일괄 정액 <sup>[1 Table 1]</sup> / 다른 기준: 독일 외래는 의사회와 질병금고 연합이 총액을 정하고 행위별 점수로 나누는 점수제 — 국내 교과서가 「총액계약제」의 예로 드는 형태로 보인다 <sup>[5 7장 p.45]</sup> / 왜 다른가: 병원 한 곳에 주는 예산이냐, 공급자 단체와 지불자가 진료비 총액을 계약하느냐의 차이다 / 시험에서는: KMLE 의 「총액계약제」 정의는 국내 교과서와 대조하지 않았다(검토 항목) · USMLE 는 global budget 을 「사전 정액 · 공급자 위험 · 비용 억제」로 답한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "진료비 지불 제도 비교",
+    "columns": [
+     "제도",
+     "지불 단위·시점",
+     "재정 위험",
+     "늘어나는 것",
+     "부작용·단점"
+    ],
+    "rows": [
+     [
+      "행위별 수가(fee-for-service)",
+      "개별 서비스마다 · 사후 <sup>[1 Table 1]</sup>",
+      "지불자 <sup>[2 4.1]</sup>",
+      "환자 수·서비스 수 — 방문·연속성·권고 방문 준수가 높다 <sup>[2 4.1]</sup> <sup>[4† 초록]</sup>",
+      "과잉 진료 · 비용 억제·효율 유인 없음 <sup>[2 4.1]</sup>"
+     ],
+     [
+      "포괄수가(case-based · DRG)",
+      "사례(진단·입원·퇴원)당 정액 = 기준 단가 × DRG 상대 가중치 <sup>[1 Table 1]</sup> <sup>[3 Introduction]</sup>",
+      "공급자(사례 안의 비용) <sup>[1 Results]</sup>",
+      "사례(입원) 수 · 재원일수는 준다 <sup>[3 Introduction]</sup> <sup>[2 4.2]</sup>",
+      "불필요한 입원 · 상향 코딩 · 과소 제공 <sup>[3 Methods]</sup>"
+     ],
+     [
+      "인두제(capitation)",
+      "등록 1인당 일정 기간 정액 · 사전 <sup>[1 Table 1]</sup>",
+      "공급자 <sup>[2 4.1]</sup>",
+      "전문의·병원 의뢰 <sup>[1 Results]</sup> <sup>[4† 초록]</sup>",
+      "과소 진료 · 저위험 환자 선별 · 생산성 유인 없음 <sup>[2 4.1]</sup>"
+     ],
+     [
+      "총액예산·총액계약(global budget)",
+      "합의한 서비스 묶음에 일괄 정액 · 사전 · 쓰임은 자유 <sup>[1 Table 1]</sup>",
+      "공급자 <sup>[2 4.1]</sup>",
+      "비용 억제 <sup>[2 4.1]</sup>",
+      "과소 진료 · 환자 선별 · 생산성 유인 없음 <sup>[2 4.1]</sup>"
+     ],
+     [
+      "봉급(salary)",
+      "근무에 대해 고정 급여 · 진료량과 무관",
+      "고용 기관 <sup>[2 4.1]</sup>",
+      "환자가 느끼는 접근 만족(행위별 대비) <sup>[4† 초록]</sup>",
+      "산출이 가장 적다 · 생산성 유인 없음 <sup>[1 Results]</sup> <sup>[2 4.1]</sup>"
+     ],
+     [
+      "성과 지불(pay for performance)",
+      "미리 정한 성과 기준 달성에 지불(다른 제도에 얹는다) <sup>[1 Table 1]</sup>",
+      "—",
+      "기준이 가리키는 진료 · 영국 QOF 도입 뒤 GP 소득 평균 25 % 증가 <sup>[5 7장 p.45]</sup>",
+      "지표 조작(gaming)·과다 지급 → 감시 필요 <sup>[1 Results]</sup>"
+     ]
+    ],
+    "note": "봉급의 「재정 위험」은 waitzberg-2022 가 봉급·인두제·총액을 묶어 「공급자에 위험」이라고 쓴 것을, 개인 의사가 아니라 고용 기관이 지는 것으로 읽은 내 판단이다(검토 항목). 일당제(per diem — 하루 정액)는 정의만 확인했고 유인 근거는 읽지 못해 표에서 뺐다 <sup>[1 Table 1]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "인두제로 바꾸면 전문의·병원 의뢰가 준다?",
+    "point": "반대다. 인두제는 등록 인원당 정액이라 진료를 덜 하는 쪽이 이익이고, 인두제에서 전문의·병원 의뢰가 더 많았다 <sup>[1 Results — capitation]</sup> <sup>[4† 초록]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "포괄수가(DRG)는 입원 건수도 줄인다?",
+    "point": "포괄수가는 재원일수를 줄여 효율을 높이지만 사례(입원) 수를 늘릴 수 있다 — 사례당 돈을 받기 때문이다. 상향 코딩과 필요한 서비스의 과소 제공도 생긴다 <sup>[3 Introduction · Methods]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "행위별 수가에서 환자 선별(크림 스키밍)이 문제?",
+    "point": "행위별 수가는 제공한 단위마다 모두 보상받아 환자 선별의 동기가 없다. 선별은 사전 정액(인두제·총액·봉급) 쪽 부작용이다 <sup>[2 4.1]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "봉급제 = 생산성을 높이는 제도?",
+    "point": "봉급은 진료량과 무관해 생산성 유인이 없다 — 실험 연구에서 산출이 가장 적었다 <sup>[1 Results]</sup> <sup>[2 4.1]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "총액계약이면 공급자가 진료를 늘려 총액을 넘긴다?",
+    "point": "총액이 미리 정해져 있다. 독일 외래는 분기 총액을 전체 점수로 나눠 점당 가치를 정해 — 모두가 진료량을 늘리면 점당 가치가 떨어진다 <sup>[5 7장 p.45]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "지불 방식의 효과는 근거가 탄탄하다?",
+    "point": "일차의료 의사의 지불 방식을 비교한 체계적 고찰에 들어간 연구는 4편뿐이었고 일반화 가능성은 알 수 없다 <sup>[4† 초록]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "한 제도의 부작용을 다른 제도로 옮기면 반대쪽 부작용이 생긴다 — 그래서 사전 포괄 지불에 활동 기반 요소를 섞는 혼합 지불을 권한다 <sup>[2 Conclusions]</sup>.",
+   "포괄수가를 쓰는 나라는 자료가 있는 모든 곳에서 지출 상한을 두었다. 다만 물량 상한은 상한까지 채우려는 유인을 만들 수 있다(몽골) <sup>[3 Findings — Ceilings]</sup>.",
+   "성과 지불은 단독 제도가 아니라 다른 제도에 얹는 요소다 — 영국 GP 는 인두제 + 성과 지불 <sup>[1 Results]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "kazungu-2018",
+    "org": "Kazungu JS, Barasa EW, Obadha M, Chuma J",
+    "title": "What characteristics of provider payment mechanisms influence health care providers' behaviour? A literature review",
+    "kind": "review",
+    "citation": "Int J Health Plann Manage 2018;33(4):e892-e905",
+    "checked": "PMC7611391 본문(WebFetch, 2026-11-20) — 표 1 의 지불 제도 정의(총액예산·항목별 예산·행위별·인두제·일당·사례당(DRG)·성과 지불·혼합): 단위와 사전/사후 · 결과 절: 행위별 수가에서 산출 최대·봉급 최소(실험 연구), 행위별 대비 인두제에서 서비스 양 감소·전문의·병원 의뢰 증가, 인두제·봉급에서 질 높음, 묶음(사례당) 지불은 공급자 재정 위험이 크고 수입이 비용을 못 따라갈 우려, 성과 지불은 조작·과다 지급 위험, 영국 GP 는 인두제 + 성과 지불. 위험 선별·과잉 제공은 이 문헌이 다루지 않음",
+    "doi": "10.1002/hpm.2565",
+    "pmid": "29984422",
+    "verified": "text",
+    "year": "2018",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611391/"
+   },
+   {
+    "id": "waitzberg-2022",
+    "org": "Waitzberg R, Gerkens S, Dimova A, et al.",
+    "title": "Balancing financial incentives during COVID-19: A comparison of provider payment adjustments across 20 countries",
+    "kind": "review",
+    "citation": "Health Policy 2022;126(5):398-407",
+    "checked": "PMC8492384 본문(WebFetch, 2026-11-20) 4.1 · 4.2 · 결론 — 총액예산·봉급·인두제는 사전·포괄 지불로 공급자에 재정 위험, 비용 억제 유인 → 최적 이하 진료, 생산성 유인 없음, 저위험 환자 선별 유인; 행위별 수가는 지불자에 위험, 환자·서비스 수 증가 유인 → 과잉 제공, 단위마다 보상돼 선별 걱정 없음, 비용 억제·효율 유인 없음; DRG·일당 신설 수가는 「더 많은 환자를 치료하되 환자당 비용을 줄이는」 유인; 사전 포괄 지불에 활동 기반 요소를 섞는 혼합 지불 권고. 분석 틀 그림(그림 4)은 이미지라 읽지 못함",
+    "doi": "10.1016/j.healthpol.2021.09.015",
+    "pmid": "34711443",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8492384/"
+   },
+   {
+    "id": "mathauer-2013",
+    "org": "Mathauer I, Wittenbecher F (WHO)",
+    "title": "Hospital payment systems based on diagnosis-related groups: experiences in low- and middle-income countries",
+    "kind": "review",
+    "citation": "Bull World Health Organ 2013;91(10):746-756A",
+    "checked": "PMC3791650 본문 앞 100,000자(WebFetch, 2026-11-20 — 남은 약 15,000자는 참고문헌 쪽으로 읽지 않음) — 서론: DRG 분류 변수(주·부진단·나이·성·동반질환·합병증·시술), 지불 = 기준 단가 × DRG 상대 가중치, Street 등 인용 「재원일수를 줄여 효율을 높이지만 사례 수도 늘린다」; 방법: 입원 증가·상향 코딩·필요 서비스 과소 제공이라는 원치 않는 유인; 결과: 자료가 있는 모든 나라가 지출 상한을 둠, 몽골의 물량 상한이 상한까지 채우려는 유인, 코딩 감사 필요; 고찰: Moreno-Serra·Wagstaff — 사례당 지불에서 재원일수 감소·입원 증가 없음·사례당 입원 지출 증가, 크로아티아 재원일수 감소·물량 영향 적음·질 저하 없음; 결론: 지출·물량 상한 권고. 한국은 언급 없음",
+    "doi": "10.2471/BLT.12.115931",
+    "pmid": "24115798",
+    "verified": "text",
+    "year": "2013",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3791650/"
+   },
+   {
+    "id": "gosden-2000",
+    "org": "Gosden T, Forland F, Kristiansen IS, et al. (Cochrane EPOC)",
+    "title": "Capitation, salary, fee-for-service and mixed systems of payment: effects on the behaviour of primary care physicians",
+    "kind": "review",
+    "citation": "Cochrane Database Syst Rev 2000;(3):CD002215",
+    "checked": "PubMed MCP 로 PMC9879313 을 열었으나 본문이 비어 초록·쉬운 말 요약만 읽음 — 4개 연구(일차의료 의사 640명·환자 6,400명 이상); 인두제 대비 행위별 수가에서 일차의료 방문·전문의 방문·진단·치료 서비스가 많고 병원 의뢰·반복 처방은 적음, 권고 방문 횟수 준수 높음; 봉급 대비 행위별 수가에서 방문·연속성·권고 방문 준수가 높고 환자의 접근 만족은 낮음; 연구가 적어 일반화 가능성 불명",
+    "doi": "10.1002/14651858.CD002215",
+    "pmid": "10908531",
+    "verified": "abstract",
+    "year": "2000",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9879313/"
+   },
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 7: Global Diversity of Health System Financing and Delivery",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 21e. 7장 p.42–49 (22판에 이 장이 없어 21판으로 대조)",
+    "checked": "드라이브 21판 장별 문서(7장) 본문 대조 — 조세 기반 체계의 병원 의사는 협상된 봉급을 받는 공무원(p.44) · 독일 외래 의사는 점수제 행위별 수가: 의사회와 질병금고 연합의 전국 합의로 행위별 점수, 질병금고 연합이 분기 총액을 정하고 분기 끝에 총액 ÷ 전체 점수 = 점당 가치, 의사 점수 × 점당 가치 = 지불(p.45) · 독일·네덜란드 일차의료 접근이 좋은 이유로 흔히 꼽는 것이 수정 행위별 수가(p.45) · 영국 QOF(2004)는 질 연동 추가 소득, GP 소득 평균 25 % 증가(p.45) · 한국 2003년 의약분업(p.48). 지불 제도별 유인을 비교하는 서술은 이 장에 없음",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "검사·처치 건수가 급증해 보험 재정이 악화됐다. 원인으로 가장 의심할 지불 제도와 그 이유는?",
+    "a": "행위별 수가. 제공한 서비스마다 사후에 보상받아 재정 위험을 지불자가 지고, 공급자에게 진료량을 늘릴 유인이 있다."
+   },
+   {
+    "q": "인두제를 도입한 뒤 늘어날 것으로 예상되는 것 둘은?",
+    "a": "전문의·병원 의뢰와 저위험 환자 선별. 등록 인원당 정액이라 진료를 덜 할수록 이익이다."
+   },
+   {
+    "q": "포괄수가(DRG) 도입의 기대 효과와 대표 부작용은?",
+    "a": "재원일수 감소·효율 향상이 기대 효과이고, 입원 건수 증가·상향 코딩·필요 서비스 과소 제공이 부작용이다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "지불 제도 상황 문항 — 문제에서 제도로",
+  "geo": {
+   "title": "지불 제도 상황 문항 — 문제에서 제도로",
+   "w": 1132.0,
+   "h": 439.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "의료 이용·비용 문제를",
+      "제시한 상황 문항"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 16.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "지불 단위·사전/사후·재정",
+      "위험을 누가 지나 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 102.0
+    },
+    {
+     "id": "q",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "발문이 말하는 문제는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 188.0
+    },
+    {
+     "id": "over",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "과잉 진료 → 행위별 수가 탓 ·",
+      "사전·묶음 지불로"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 359.0
+    },
+    {
+     "id": "under",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "과소 진료·의뢰↑·선별 →",
+      "인두제·봉급·총액 탓"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 359.0
+    },
+    {
+     "id": "los",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "긴 재원일수 →",
+      "포괄수가(사례당 정액)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 359.0
+    },
+    {
+     "id": "cap",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "총진료비 증가 → 총액계약·",
+      "지출 상한"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 359.0
+    },
+    {
+     "id": "drg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "입원 건수↑·상향 코딩 →",
+      "포괄수가 부작용"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 920.0,
+     "y": 359.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       566.0,
+       80.0
+      ],
+      [
+       566.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "q",
+     "points": [
+      [
+       566.0,
+       166.0
+      ],
+      [
+       566.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "q",
+     "to": "over",
+     "points": [
+      [
+       500.7,
+       235.0
+      ],
+      [
+       500.7,
+       336.0
+      ],
+      [
+       114.0,
+       336.0
+      ],
+      [
+       114.0,
+       359.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "과잉 진료"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 472.6,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "q",
+     "to": "under",
+     "points": [
+      [
+       533.3,
+       235.0
+      ],
+      [
+       533.3,
+       345.0
+      ],
+      [
+       340.0,
+       345.0
+      ],
+      [
+       340.0,
+       359.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "과소·",
+       "의뢰",
+       "증가"
+      ],
+      "w": 36.4,
+      "h": 43,
+      "x": 515.1,
+      "y": 285.0
+     }
+    },
+    {
+     "from": "q",
+     "to": "los",
+     "points": [
+      [
+       566.0,
+       235.0
+      ],
+      [
+       566.0,
+       359.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "재원일수"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 540.0,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "q",
+     "to": "cap",
+     "points": [
+      [
+       598.7,
+       235.0
+      ],
+      [
+       598.7,
+       345.0
+      ],
+      [
+       792.0,
+       345.0
+      ],
+      [
+       792.0,
+       359.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "총비용",
+       "증가"
+      ],
+      "w": 41.0,
+      "h": 30,
+      "x": 578.2,
+      "y": 285.0
+     }
+    },
+    {
+     "from": "q",
+     "to": "drg",
+     "points": [
+      [
+       631.3,
+       235.0
+      ],
+      [
+       631.3,
+       336.0
+      ],
+      [
+       1018.0,
+       336.0
+      ],
+      [
+       1018.0,
+       359.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "DRG 뒤",
+       "문제"
+      ],
+      "w": 41.9,
+      "h": 30,
+      "x": 610.4,
+      "y": 239.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "의료 이용·비용 문제를 제시한 상황 문항",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "지불 단위·사전/사후·재정 위험을 누가 지나 확인"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "지불 단위·사전/사후·재정 위험을 누가 지나 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "발문이 말하는 문제는?"
+     }
+    ]
+   },
+   {
+    "id": "q",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "발문이 말하는 문제는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "과잉 진료",
+      "to": 4,
+      "toText": "과잉 진료 → 행위별 수가 탓 · 사전·묶음 지불로"
+     },
+     {
+      "label": "과소·의뢰 증가",
+      "to": 5,
+      "toText": "과소 진료·의뢰↑·선별 → 인두제·봉급·총액 탓"
+     },
+     {
+      "label": "재원일수",
+      "to": 6,
+      "toText": "긴 재원일수 → 포괄수가(사례당 정액)"
+     },
+     {
+      "label": "총비용 증가",
+      "to": 7,
+      "toText": "총진료비 증가 → 총액계약·지출 상한"
+     },
+     {
+      "label": "DRG 뒤 문제",
+      "to": 8,
+      "toText": "입원 건수↑·상향 코딩 → 포괄수가 부작용"
+     }
+    ]
+   },
+   {
+    "id": "over",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "과잉 진료 → 행위별 수가 탓 · 사전·묶음 지불로",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "under",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "과소 진료·의뢰↑·선별 → 인두제·봉급·총액 탓",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "los",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "긴 재원일수 → 포괄수가(사례당 정액)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cap",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "총진료비 증가 → 총액계약·지출 상한",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "drg",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "입원 건수↑·상향 코딩 → 포괄수가 부작용",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.screening.criteria-and-lead-length-bias": {
+  "id": "cn.prev.screening.criteria-and-lead-length-bias",
+  "title": "선별검사 — 생존율이 아니라 사망률로 판단한다",
+  "objective": "선별검사 도입·효과 주장을 Wilson–Jungner 원칙과 조기발견·기간 비뚤림·과잉진단에 비추어 질병 사망률 기준으로 판정한다",
+  "objectiveKind": "검사 선택",
+  "condition": "선별검사(screening) — 선별 원칙 · 조기발견 기간 비뚤림(lead-time bias) · 기간 차이 비뚤림(length-time bias) · 과잉진단(overdiagnosis)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "5ffc089d806bf250",
+  "summary": [
+   "결론: 선별 효과는 질병 사망률(또는 발생률)이 줄었는지로 본다 — 진단 뒤 생존 기간이 늘었다는 것만으로는 효과가 아니다.",
+   "시험 단서: 「선별군의 5년 생존율이 더 높다」, 천천히 자라는 암이 선별군에 몰림, 평생 드러나지 않았을 암을 찾음(overdiagnosis).",
+   "왜: 진단 날짜만 앞당겨도(lead time), 느린 병을 더 잘 잡아도(length time) 사망 날짜는 그대로인데 생존율은 늘어 보인다.",
+   "선별 대상: 중요한 건강 문제 · 치료가 있음 · 잠복기(latent stage) · 받아들일 만한 검사 · 자연사를 앎 — WHO 1968 원칙.",
+   "근거 위계: 사망률을 결과로 한 무작위 대조시험이 기준 표준이다. 해는 위양성·과잉진단·불안·방사선이다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 생존율이 아니라 사망률인가",
+    "deep": false,
+    "html": "<ul>\n<li>선별은 증상이 없는 건강한 사람에게 먼저 다가가는 개입이라 효과·실행 가능성의 근거 문턱이 특히 높다 <sup>[1 6장 p.37]</sup>.</li>\n<li>선별 효과는 질병 발생률이나 사망률을 1차 결과로 판단한다. 진단 뒤 생존 기간은 효과가 없어도 늘어날 수 있다 <sup>[1 6장 p.38]</sup>.</li>\n<li>사망률을 결과로 한 무작위 대조시험(RCT)이 기준 표준이다. RCT 가 어려우면 환자-대조군 연구나 생태학적 자료로 보완한다 <sup>[1 6장 p.38]</sup>.</li>\n<li>상대 위험 감소만 보지 말고 절대 차이와 선별 필요 수(number needed to screen)도 본다. 예로 65–69세 여성 731명을 이중에너지 X선 흡수계측법(DEXA)으로 선별·치료해야 엉덩관절 골절 하나를 막는다 <sup>[1 6장 p.38]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 전임상기가 있어야 선별이 의미 있다",
+    "deep": false,
+    "html": "<ul>\n<li>선별은 증상이 생기기 전 검출 가능한 시기(전임상기 · latent stage)에 찾아 치료해 결과를 바꾸는 것이다. 그래서 잠복기가 길고 그때 치료하면 완치 가능성이 커지는 병이 대상이다 — 용종 절제가 대장암으로의 진행을 막는 것이 예다 <sup>[1 6장 p.37]</sup>.</li>\n<li>전임상기의 길이는 병만이 아니라 <strong>검사의 해상도</strong>가 정한다. 흉부 X선에서는 대부분 이미 완치 불가였던 폐암이, 저선량 CT 로 더 일찍 잡히면서 사망률 감소가 증명됐다 <sup>[1 6장 p.38]</sup>.</li>\n<li>반대로 검출에서 불치 단계까지 간격이 짧으면(일부 유방암) 선별 효과가 제한되고, 진행이 느려 다른 병으로 먼저 사망하는 경우가 많으면(전립선암) 사망률 차이가 안 날 수 있다 <sup>[1 6장 p.38]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 생존율이 늘어도 효과가 아닌 이유",
+    "deep": false,
+    "html": "<ul>\n<li>표가 조기발견 기간 비뚤림 · 기간 차이 비뚤림 · 과잉진단을 나란히 놓는다. 셋 다 실제 효과가 없어도 선별군의 생존을 좋아 보이게 한다 <sup>[1 6장 p.38]</sup>.</li>\n<li><strong>위양성의 정의는 검사마다 다르다</strong>: 유방촬영·흉부 CT 는 암이 아닌 이상이 보여 조직검사·단기 추적이 필요할 때, Pap 은 대부분 침윤암으로 진행하지 않을 전암 상태를 넓게 잡을 때다 — 이 위험이 과잉진단과 맞닿아 있다 <sup>[1 6장 p.38]</sup>.</li>\n<li>그 밖의 해: 불안(장기 영향 자료는 적다) · 방사선 누적 · 검사 중 불편 · 후속 검사 비용 <sup>[1 6장 p.39]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>표가 한국 국가암검진과 해리슨 22판이 옮긴 USPSTF 선별 권고를 나란히 놓는다. 나라마다 질병 부담·자원이 달라 대상·주기가 다르다.</li>\n<li>이득-해 균형이 불확실한 선별(전립선암 PSA, 대장암 검사 방법 선택)은 개인별 공유 의사결정으로 정한다 <sup>[1 6장 p.40]</sup>.</li>\n<li>비용효과는 질 보정 생존년(QALY)당 비용으로 보며, 미국에서는 대개 50,000–100,000 달러를 비용효과적이라 본다 <sup>[1 6장 p.39]</sup>.</li>\n<li>한국 국가건강검진(일반 검진) 항목과 국내 예방의학 교과서 서술은 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 폐암 선별 대상</strong> — 시험 기준: 한국 국가암검진은 54~74세 · 30갑년 이상 흡연력 등 고위험군 · 2년마다 저선량 흉부 CT <sup>[2 대상자 연령기준·검진주기]</sup> / 다른 기준: 해리슨이 옮긴 USPSTF 는 50~80세 · 20갑년 · 현재 흡연 또는 끊은 지 15년 이내 · 매년 <sup>[1 6장 p.39 표 6-4]</sup> / 왜 다른가: 나라별 사업이 서로 다른 시점·근거로 대상을 정했다(사망률 20 % 감소 근거는 30갑년 이상 흡연자 시험 <sup>[1 6장 p.38]</sup>) / 시험에서는: KMLE 는 한국 국가암검진 기준 · USMLE 는 USPSTF 기준으로 답한다.</li>\n<li><strong>Z2 맥락 · 대장암·자궁경부암 시작 나이와 주기</strong> — 시험 기준: 한국은 대장암 50세 이상 분변잠혈 1년, 자궁경부암 20세 이상 2년 세포검사 <sup>[2 대상자 연령기준·검진주기]</sup> / 다른 기준: USPSTF 는 대장암 45~75세, 자궁경부암 21~65세 3년 Pap · 30~65세 HPV 음성이면 5년 <sup>[1 6장 p.39 표 6-4]</sup> / 왜 다른가: 사업 주체·개정 시점이 다르다 / 시험에서는: KMLE 는 한국 사업 · USMLE 는 USPSTF.</li>\n<li><strong>Z3 새 근거 · 유방촬영 시작 나이(USPSTF)</strong> — 시험 기준: 해리슨 22판 표 6-4 는 「(40?) 50~75세 · 2년」으로 물음표를 달았다 <sup>[1 6장 p.39 표 6-4]</sup> / 다른 기준: 같은 장 표 6-7 은 40세에 개별화 선별을 고려하고 50세까지는 시작하라고 쓴다 <sup>[1 6장 p.41 표 6-7]</sup>. 한국은 40세 이상 2년 <sup>[2 대상자 연령기준·검진주기]</sup> / 왜 다른가: 해리슨이 USPSTF 개정 논쟁(참고문헌의 2023 반대 의견)을 반영해 확정하지 않았다 — USPSTF 최신 원문은 대조하지 않았다(검토 항목) / 시험에서는: KMLE 는 40세 2년 · USMLE 는 최신 USPSTF 원문을 확인한 뒤 정한다.</li>\n</ul>"
+   },
+   {
+    "title": "선별과 인구 기대여명",
+    "deep": true,
+    "html": "<ul>\n<li>인구 평균 기대여명 증가는 평균일 뿐이다 — 대부분은 이득이 없고 소수가 크게 얻는다. 자궁경부암에 걸리지 않을 98 %는 Pap 의 이득이 없지만, 걸렸을 2 %는 최대 25년을 얻을 수 있다 <sup>[1 6장 p.38]</sup>.</li>\n<li>35세 흡연자의 금연은 3–5년, 50–70세 여성 유방촬영은 약 1개월의 평균 기대여명 증가로 추정된다 — 행동 상담의 효과가 개별 선별보다 클 수 있다 <sup>[1 6장 p.38 표 6-3]</sup>.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "선별 효과를 부풀리는 세 가지",
+    "columns": [
+     "현상",
+     "무엇이 일어나나",
+     "결과 지표에 미치는 영향",
+     "가려내는 법"
+    ],
+    "rows": [
+     [
+      "조기발견 기간 비뚤림(lead-time bias)",
+      "증상으로 진단될 날보다 앞서 진단 — 진단 날짜만 앞당겨지고 사망 날짜는 그대로",
+      "진단 뒤 생존 기간이 늘어 보인다",
+      "생존 기간이 아니라 질병 발생률·사망률을 1차 결과로 <sup>[1 6장 p.38]</sup>"
+     ],
+     [
+      "기간 차이 비뚤림(length-time bias)",
+      "선별은 느리게 진행하는 병을 빠르게 진행하는 병보다 더 많이 잡는다",
+      "선별군에 예후 좋은 병이 몰려 생존이 좋아 보인다",
+      "같은 결과 — 사망률을 결과로 한 무작위 대조시험 <sup>[1 6장 p.38]</sup>"
+     ],
+     [
+      "과잉진단(overdiagnosis)",
+      "평생 임상적으로 드러나지 않았을 병을 찾음(위양성과 맞닿아 있다)",
+      "발생률이 늘고 생존율도 좋아 보이지만 불필요한 치료가 생긴다",
+      "선별하지 않은 집단의 장기 추적 — 추정이 어렵다 <sup>[1 6장 p.38–39]</sup>"
+     ]
+    ],
+    "note": "세 현상 모두 harrison-22 6장 「Methods of Measuring Health Benefits」·「Assessing the Harms」 절."
+   },
+   {
+    "title": "대상·주기 — 한국 국가암검진 vs USPSTF(해리슨 표 6-4)",
+    "columns": [
+     "암",
+     "한국 국가암검진",
+     "USPSTF(평균 위험 성인)"
+    ],
+    "rows": [
+     [
+      "위암",
+      "40세 이상 남녀 · 2년 · 위내시경 <sup>[2 대상자 연령기준·검진주기]</sup>",
+      "표에 없음 <sup>[1 6장 p.39 표 6-4]</sup>"
+     ],
+     [
+      "간암",
+      "40세 이상 고위험군(간경변증 · B형 간염항원 양성 · C형 간염항체 양성 · B·C형 바이러스 만성 간질환) · 6개월 · 간초음파 + 알파태아단백 <sup>[2 대상자 연령기준·검진주기]</sup>",
+      "표에 없음 <sup>[1 6장 p.39 표 6-4]</sup>"
+     ],
+     [
+      "폐암",
+      "54~74세 고위험군(30갑년 이상 흡연력 등) · 2년 · 저선량 흉부 CT <sup>[2 대상자 연령기준·검진주기]</sup>",
+      "50~80세 · 20갑년 · 현재 흡연 또는 끊은 지 15년 이내 · 매년 · 저선량 CT <sup>[1 6장 p.39 표 6-4]</sup>"
+     ],
+     [
+      "대장암",
+      "50세 이상 남녀 · 1년 · 분변잠혈검사(양성이면 결과에 따라 대장내시경) <sup>[2 대상자 연령기준·검진주기]</sup>",
+      "45~75세 · 분변잠혈 매년 / 구불창자경 5년 / 대장내시경 10년 등 <sup>[1 6장 p.39 표 6-4]</sup>"
+     ],
+     [
+      "유방암",
+      "40세 이상 여성 · 2년 · 유방촬영 <sup>[2 대상자 연령기준·검진주기]</sup>",
+      "여성 (40?) 50~75세 · 2년 · 유방촬영 <sup>[1 6장 p.39 표 6-4]</sup>"
+     ],
+     [
+      "자궁경부암",
+      "20세 이상 여성 · 2년 · 자궁경부세포검사 <sup>[2 대상자 연령기준·검진주기]</sup>",
+      "21~65세 3년 Pap / 30~65세 HPV 음성이면 5년 <sup>[1 6장 p.39 표 6-4]</sup>"
+     ]
+    ],
+    "note": "한국 값은 국가암정보센터 「국가암검진 사업」 쪽(최종수정 2026-08-03). USPSTF 값은 해리슨 22판 표 6-4 가 옮긴 것 — USPSTF 원문은 대조하지 않았다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "선별군의 5년 생존율이 높다 = 선별 효과?",
+    "point": "선별은 진단 날짜를 앞당길 뿐 사망 날짜를 늦추지 않아도 진단 뒤 생존 기간을 늘려 보이게 한다(조기발견 기간 비뚤림). 그래서 1차 결과는 생존 기간이 아니라 발생률·사망률이어야 한다 <sup>[1 6장 p.38]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "선별에서 찾은 환자가 더 오래 산다 = 검사가 좋다?",
+    "point": "선별은 천천히 진행하는 병을 빠르게 진행하는 병보다 더 잘 잡는다. 그래서 같은 기간에 선별군에는 느린 병이 몰려 생존이 좋아 보인다(기간 차이 비뚤림) <sup>[1 6장 p.38]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "선별로 찾은 암은 모두 치료해야 할 암?",
+    "point": "평생 임상적으로 드러나지 않았을 병을 찾는 과잉진단이 있다 — 유방촬영으로 찾은 유방암의 15–40 %, PSA 로 찾은 전립선암의 15–37 %가 그런 것으로 추정된다. 과잉진단은 선별하지 않은 집단을 오래 따라가야 알 수 있다 <sup>[1 6장 p.39]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "흔하고 사망이 많은 병이면 선별 대상?",
+    "point": "조기 치료가 결과를 바꿔야 한다. 알츠하이머병은 미국 사망 원인 6위지만 완치 치료가 없고 조기 치료 이득 자료도 부족해 선별 원칙에 맞지 않는 예로 해리슨이 든다 <sup>[1 6장 p.37]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "흉부 X선으로 폐암을 선별?",
+    "point": "흉부 X선으로 보일 때는 대부분 이미 완치할 수 없어 선별이 어려웠다. 해상도가 높은 저선량 흉부 CT 가 전임상기를 길게 잡아 30갑년 이상 흡연자의 폐암 사망률을 20 % 줄였다 <sup>[1 6장 p.38]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "상대 위험 감소가 비슷하면 이득도 비슷?",
+    "point": "분변잠혈검사(대장암 사망 30 % 감소)와 유방촬영(14–32 % 감소)은 상대 효과가 비슷하지만, 1,000명당 막는 사망은 약 3명 대 약 1.2명이다 — 상대·절대 효과를 함께 본다 <sup>[1 6장 p.38]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "사망률 무작위 대조시험이 기준 표준이지만, 대장내시경처럼 환자-대조군 연구나 Pap 처럼 생태학적 자료(사망률 급감)만 있는 경우도 있다 <sup>[1 6장 p.38]</sup>.",
+   "위험이 높은 사람에서는 이득-해 균형이 더 유리해 더 일찍 시작하기도 한다 — 대장암 가족력이 뚜렷하면 가장 어린 가족의 진단 나이보다 10년 먼저 <sup>[1 6장 p.39]</sup>.",
+   "선별 이득은 대개 5–10년 추적 뒤에 나타나고, 75세 이후 지속을 뒷받침하는 자료는 적다 — 기대여명이 짧으면 선별을 멈추는 것을 고려한다 <sup>[1 6장 p.40]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "wilson-jungner",
+    "name": "선별 원칙(WHO 1968, Wilson–Jungner)",
+    "kind": "판단 기준",
+    "population": "무증상 인구 집단에 대한 선별 사업",
+    "statement": "① 중요한 건강 문제 ② 치료가 있음 ③ 진단·치료 시설이 있음 ④ 잠복기(전임상기)가 있음 ⑤ 검사가 있음 ⑥ 인구가 받아들일 만한 검사 ⑦ 자연사를 충분히 앎 ⑧ 누구를 치료할지 합의된 정책 ⑨ 환자 발견 비용이 전체 의료비에 비해 균형 [[harrison-22: 6장 p.37 표 6-1]]",
+    "exceptions": "해리슨 표 6-1 은 9개 항목을 싣는다. 원 보고서의 열 번째 항목(환자 발견은 지속 과정)은 원문을 읽지 못해 싣지 않았다(검토 항목).",
+    "source": "harrison-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill (Martin GJ, chapter author)",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 6 Screening and Prevention of Disease",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22nd ed., 6장 p.37–41",
+    "checked": "드라이브 22판 장별 문서 H22_006(인쇄쪽 37–41) 전체를 읽음 — p.37 표 6-1(WHO 1968 선별 원칙 9항목)·흔하고 부담 큰 병·알츠하이머 예; p.38 잠복기와 검사 해상도(흉부 X선 → 저선량 CT, 30갑년 이상 폐암 사망 20 % 감소)·전립선암 자연사 불확실·RCT 사망률이 기준 표준·발생률/사망률을 1차 결과로·lead time·length time 정의·절대/상대 효과(유방촬영 1.2/1,000 vs FOBT 약 3/1,000, 상대 30 % vs 14–32 %)·NNS(DEXA 731)·위양성과 과잉진단; p.39 과잉진단 추정(유방 15–40 %, PSA 15–37 %)·불안·방사선·비용효과·표 6-4 USPSTF 선별 표; p.40 공유 의사결정(전립선·대장)·75세 이후 자료 부족·이득은 5–10년 뒤",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   },
+   {
+    "id": "kr-ncc-screening",
+    "org": "국립암센터 국가암정보센터",
+    "title": "국가암검진 사업 — 암종별 대상자 연령기준 및 검진주기",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "국가암정보센터 「암예방과 검진 > 검진 > 국가암검진 사업」 쪽(최종수정일 2026-08-03)을 WebFetch 로 두 번 열어 표 셀 문구와 각주를 대조 — 위암 40세 이상 2년 위내시경(위장조영검사 문구 없음), 간암 40세 이상 고위험군 6개월 간초음파+AFP(각주: 간경변증·B형 간염항원 양성·C형 간염항체 양성·B·C형 바이러스 만성 간질환), 폐암 54~74세 고위험군 2년 저선량 흉부 CT(각주: 30갑년 이상 흡연력 등), 대장암 50세 이상 1년 분변잠혈검사(잠혈반응 있으면 결과에 따라 대장내시경), 유방암 40세 이상 여성 2년 유방촬영, 자궁경부암 20세 이상 여성 2년 자궁경부세포검사. 웹판 요약 도구로 읽었으므로 표 숫자는 사람이 원 쪽에서 한 번 더 확인할 것",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2026",
+    "checkedAt": "2026-11-20",
+    "url": "https://www.cancer.go.kr/lay1/S1T261C262/contents.do"
+   }
+  ],
+  "checks": [
+   {
+    "q": "새 선별검사를 받은 군의 5년 생존율이 받지 않은 군보다 높았다. 이 결과만으로 효과를 결론 내릴 수 없는 이유 둘은?",
+    "a": "조기발견 기간 비뚤림(진단 날짜만 앞당김)과 기간 차이 비뚤림(느린 병이 선별군에 몰림). 질병 사망률이 줄었는지 봐야 한다."
+   },
+   {
+    "q": "선별하지 않았다면 평생 드러나지 않았을 암을 찾아 치료하는 것을 무엇이라 하나?",
+    "a": "과잉진단. 유방촬영으로 찾은 유방암의 15–40 %, PSA 로 찾은 전립선암의 15–37 %로 추정된다."
+   },
+   {
+    "q": "한국 국가암검진에서 폐암 검진 대상·주기·방법은?",
+    "a": "54~74세 고위험군(30갑년 이상 흡연력 등), 2년마다 저선량 흉부 CT."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "선별검사 — 도입할 것인가, 효과가 있는가",
+  "geo": {
+   "title": "선별검사 — 도입할 것인가, 효과가 있는가",
+   "w": 680.0,
+   "h": 613.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "무증상 인구에 선별검사",
+      "도입을 검토"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 16.0
+    },
+    {
+     "id": "crit",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "WHO 1968 선별 원칙을 충족?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 102.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "자연사·잠복기·조기 치료",
+      "효과 자료를 모은다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 212.0
+    },
+    {
+     "id": "skip",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "선별 대상 아님 — 도입하지",
+      "않는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 319.0
+    },
+    {
+     "id": "endpt",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "효과 근거가 질병 사망률",
+      "감소인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 319.0
+    },
+    {
+     "id": "bias",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "생존율만 늘었다 → lead·",
+      "length 비뚤림 의심"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 426.0
+    },
+    {
+     "id": "harm",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "이득이 위양성·과잉진단보다",
+      "큰가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 426.0
+    },
+    {
+     "id": "rec",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "권고 — 대상·주기를 정해 시행"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 533.0
+    },
+    {
+     "id": "sdm",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "불확실 — 개인별 공유",
+      "의사결정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 533.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "crit",
+     "points": [
+      [
+       453.0,
+       80.0
+      ],
+      [
+       453.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "crit",
+     "to": "endpt",
+     "points": [
+      [
+       404.0,
+       149.0
+      ],
+      [
+       404.0,
+       198.0
+      ],
+      [
+       339.0,
+       198.0
+      ],
+      [
+       339.0,
+       305.0
+      ],
+      [
+       307.3,
+       305.0
+      ],
+      [
+       307.3,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "충족"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 389.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "crit",
+     "to": "skip",
+     "points": [
+      [
+       502.0,
+       149.0
+      ],
+      [
+       502.0,
+       198.0
+      ],
+      [
+       567.0,
+       198.0
+      ],
+      [
+       567.0,
+       305.0
+      ],
+      [
+       598.7,
+       305.0
+      ],
+      [
+       598.7,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불충족"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 481.5,
+      "y": 173.0
+     }
+    },
+    {
+     "from": "crit",
+     "to": "info",
+     "points": [
+      [
+       453.0,
+       149.0
+      ],
+      [
+       453.0,
+       212.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "자료 부족"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 425.1,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "endpt",
+     "points": [
+      [
+       420.3,
+       276.0
+      ],
+      [
+       420.3,
+       305.0
+      ],
+      [
+       372.7,
+       305.0
+      ],
+      [
+       372.7,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "자료 확보"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 392.5,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "skip",
+     "points": [
+      [
+       485.7,
+       276.0
+      ],
+      [
+       485.7,
+       305.0
+      ],
+      [
+       533.3,
+       305.0
+      ],
+      [
+       533.3,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "자료 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 457.8,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "endpt",
+     "to": "harm",
+     "points": [
+      [
+       307.3,
+       383.0
+      ],
+      [
+       307.3,
+       412.0
+      ],
+      [
+       227.0,
+       412.0
+      ],
+      [
+       227.0,
+       426.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "사망률 감소"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 274.0,
+      "y": 387.0
+     }
+    },
+    {
+     "from": "endpt",
+     "to": "bias",
+     "points": [
+      [
+       372.7,
+       383.0
+      ],
+      [
+       372.7,
+       412.0
+      ],
+      [
+       453.0,
+       412.0
+      ],
+      [
+       453.0,
+       426.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "생존율만"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 346.7,
+      "y": 387.0
+     }
+    },
+    {
+     "from": "harm",
+     "to": "rec",
+     "points": [
+      [
+       194.3,
+       490.0
+      ],
+      [
+       194.3,
+       519.0
+      ],
+      [
+       114.0,
+       519.0
+      ],
+      [
+       114.0,
+       533.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "크다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 494.0
+     }
+    },
+    {
+     "from": "harm",
+     "to": "sdm",
+     "points": [
+      [
+       259.7,
+       490.0
+      ],
+      [
+       259.7,
+       519.0
+      ],
+      [
+       340.0,
+       519.0
+      ],
+      [
+       340.0,
+       533.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비슷·불확실"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 225.0,
+      "y": 494.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "무증상 인구에 선별검사 도입을 검토",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "WHO 1968 선별 원칙을 충족?"
+     }
+    ]
+   },
+   {
+    "id": "crit",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "WHO 1968 선별 원칙을 충족?",
+    "note": "",
+    "branches": [
+     {
+      "label": "충족",
+      "to": 4,
+      "toText": "효과 근거가 질병 사망률 감소인가?"
+     },
+     {
+      "label": "불충족",
+      "to": 5,
+      "toText": "선별 대상 아님 — 도입하지 않는다"
+     },
+     {
+      "label": "자료 부족",
+      "to": 3,
+      "toText": "자연사·잠복기·조기 치료 효과 자료를 모은다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "자연사·잠복기·조기 치료 효과 자료를 모은다",
+    "note": "",
+    "branches": [
+     {
+      "label": "자료 확보",
+      "to": 4,
+      "toText": "효과 근거가 질병 사망률 감소인가?"
+     },
+     {
+      "label": "자료 없음",
+      "to": 5,
+      "toText": "선별 대상 아님 — 도입하지 않는다"
+     }
+    ]
+   },
+   {
+    "id": "endpt",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "효과 근거가 질병 사망률 감소인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "사망률 감소",
+      "to": 6,
+      "toText": "이득이 위양성·과잉진단보다 큰가?"
+     },
+     {
+      "label": "생존율만",
+      "to": 7,
+      "toText": "생존율만 늘었다 → lead·length 비뚤림 의심"
+     }
+    ]
+   },
+   {
+    "id": "skip",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "선별 대상 아님 — 도입하지 않는다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "harm",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "이득이 위양성·과잉진단보다 큰가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "크다",
+      "to": 8,
+      "toText": "권고 — 대상·주기를 정해 시행"
+     },
+     {
+      "label": "비슷·불확실",
+      "to": 9,
+      "toText": "불확실 — 개인별 공유 의사결정"
+     }
+    ]
+   },
+   {
+    "id": "bias",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "생존율만 늘었다 → lead·length 비뚤림 의심",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "rec",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "권고 — 대상·주기를 정해 시행",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "sdm",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "불확실 — 개인별 공유 의사결정",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.prev.study-design.design-and-bias-identification": {
+  "id": "cn.prev.study-design.design-and-bias-identification",
+  "title": "연구 설계 — 뽑는 방식이 비뚤림을 정한다",
+  "objective": "연구 설명에서 출발점(노출·질병·한 시점·무작위 배정)으로 단면·환자-대조군·코호트·무작위 대조 시험을 가려내고, 그 설계의 대표 비뚤림(선택·정보·교란)과 통제 방법을 고른다",
+  "objectiveKind": "감별",
+  "condition": "역학 연구 설계(study design) — 단면 연구(cross-sectional) · 환자-대조군 연구(case-control) · 코호트 연구(cohort) · 무작위 대조 시험(randomized controlled trial) · 비뚤림(bias)과 교란(confounding)",
+  "topic": "Preventive Medicine",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-11-20",
+  "reviewStatus": "unreviewed",
+  "hash": "83417a72ea5ba636",
+  "summary": [
+   "결론: 노출에서 출발해 추적하면 코호트, 질병에서 출발해 과거 노출을 보면 환자-대조군, 한 시점 전원이면 단면 연구다.",
+   "시험 단서: 「환자군이 과거 노출을 더 잘 기억」= 회상 비뚤림(recall bias), 「약 먹는 사람만 더 검사」= 발견 비뚤림.",
+   "왜: 비뚤림은 정보·대상 선택의 결함으로 생겨 분석으로 못 고치고, 교란은 사실인 연관을 원인으로 잘못 읽게 한다.",
+   "교란 통제: 설계 단계는 무작위 배정·제한·짝짓기, 분석 단계는 층화·다변량 분석. 무작위만 미측정 교란까지 막는다.",
+   "보정해도 잔여 교란·선택·정보 비뚤림이 남을 수 있다 — 보정한 관찰 연구 ≠ 인과."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 출발점부터 보는가",
+    "deep": false,
+    "html": "<ul>\n<li>설계 이름은 <strong>연구자가 어디서 출발했는지</strong>로 정한다: 기저에서 노출을 재고 결과를 기다리면 코호트, 질병 유무로 환자·대조군을 골라 노출을 비교하면 환자-대조군, 한 시점에 표본 전원을 재면 단면 연구다 <sup>[1 Box 1]</sup>.</li>\n<li>연구자가 노출(치료)을 <strong>무작위로 배정</strong>했으면 무작위 대조 시험이다. 관찰 자료에서는 연구자가 진료를 통제하지 않는다 <sup>[2 4장 p.28]</sup>.</li>\n<li>설계가 정해지면 대표 약점이 따라온다 — 환자-대조군은 대조군 선택과 과거 노출의 회상, 코호트는 추적 방법·추적 소실의 차이, 단면 연구는 시간 선후다 <sup>[1 Box 1 · Box 3 · Item 6]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 참값에서 틀린 연관으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>비뚤림(bias)</strong> 은 결과가 참값에서 체계적으로 벗어난 것이다. 대개 설계·수행 단계에서 들어오고 나중에 바로잡을 수 없다. 우연 오차(random error)는 통계적 흔들림으로 양방향으로 생기는 점이 다르다 <sup>[1 Box 3]</sup>.</li>\n<li><strong>정보 비뚤림(information bias)</strong> 은 집단마다 자료의 완전성·정확성이 달라 노출·결과가 차등 오분류되는 것이다. 환자-대조군에서 환자가 과거 노출을 대조군보다 더 또는 덜 정확히 떠올리거나 보고하려는 정도가 다르면 회상 비뚤림이다 <sup>[1 Box 3]</sup>.</li>\n<li><strong>선택 비뚤림(selection bias)</strong> 은 연구에 포함될 확률이 노출과 관련될 때 생기고 내적 타당도를 해친다. 연구 대상 선정이 일반화에만 영향을 주는 것(외적 타당도)과 구별한다 <sup>[1 Box 3]</sup>.</li>\n<li><strong>교란(confounding)</strong> 은 결과를 결정하면서 노출과도 관련된 다른 요인 때문에 연관이 생기거나 사라지는 것이다 <sup>[1 Box 5]</sup>. 관찰 연구에서 어떤 환자가 어떤 치료를 받는지(치료 선택)가 예후와 얽히는 것이 대표적이다 <sup>[2 4장 p.28]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 출발점과 시간 방향",
+    "deep": false,
+    "html": "<ul>\n<li>표가 네 설계의 출발점·지표·대표 약점을 나란히 놓는다.</li>\n<li>단면 연구도 코호트처럼(노출군별 유병률 비교) 또는 환자-대조군처럼(노출 오즈 비교) 분석할 수 있다 — 분석 방식이 아니라 <strong>한 시점에 쟀다는 점</strong>이 설계를 정한다 <sup>[1 Box 1]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 비뚤림 종류별 통제",
+    "deep": false,
+    "html": "<ul>\n<li>표가 비뚤림 셋의 정의·예·통제를 나란히 놓는다. 선택·정보 비뚤림은 설계 단계(대상 선정 경로·눈가림·같은 검사)에서, 교란은 설계(무작위·제한·짝짓기)와 분석(층화·다변량)에서 다룬다 <sup>[1 Box 3 · Box 5]</sup>.</li>\n<li>층화는 교란 요인의 층마다 연관을 구한 뒤 가중 평균하고, 다변량 분석은 여러 변수를 한꺼번에 보정하지만 관계의 수학적 형태에 가정을 더한다 <sup>[1 Box 5]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>보정한 관찰 연구의 결과를 「인과 부분」으로 읽지 않는다 — 잔여 교란·우연·선택·정보 비뚤림이 남을 수 있다 <sup>[1 Box 5]</sup>.</li>\n<li>무작위 시험이 불가능하거나 비윤리적인 질문(흡연·성별·사회경제 상태처럼 배정할 수 없는 노출)에서는 관찰 자료가 1차 근거다 <sup>[2 4장 p.28]</sup>.</li>\n<li>「건강근로자 효과」·「Berkson 비뚤림」·「Neyman(유병-발생) 비뚤림」 같은 개별 이름은 읽은 출처에 없어 싣지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 관찰 연구의 위상</strong> — 시험 기준: 무작위 배정이 측정·미측정 교란을 가장 잘 막고, 진료 표준은 무작위 시험이 정한다 <sup>[2 4장 p.27–28]</sup> / 다른 기준: 신중히 모은 전향 관찰 자료는 시험 모방(trial emulation)과 인과 추론 방법으로 시험에 가까운 근거 수준에 이를 수 있다 <sup>[2 4장 p.28]</sup> / 왜 다른가: 같은 장이 관찰 연구의 한계와 새 분석 방법을 함께 적는다 / 시험에서는: KMLE·USMLE 모두 「교란 통제 최선 = 무작위 배정」으로 답한다(내 판단 — 문항 대조 안 함).</li>\n<li>해리슨 4장과 STROBE 사이에 설계·비뚤림 정의가 어긋난 곳은 없었다(대조: 해리슨 4장 p.27~28).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "네 설계 — 출발점 · 지표 · 대표 약점",
+    "columns": [
+     "설계",
+     "출발점·시간 방향",
+     "주 지표",
+     "대표 비뚤림·약점"
+    ],
+    "rows": [
+     [
+      "단면 연구(유병률 연구)",
+      "한 시점에 표본 전원의 노출·질병을 함께 잰다 <sup>[1 Box 1]</sup>",
+      "유병률 · 유병률비 · 유병 교차비 <sup>[1 Box 7]</sup>",
+      "노출·질병 선후 불명 · 응답자와 거부자의 차이(응답 비뚤림) <sup>[1 Box 1 · Box 3]</sup>"
+     ],
+     [
+      "환자-대조군",
+      "질병 있는 사람(환자)과 없는 사람(대조군)을 골라 과거 노출을 비교 <sup>[1 Box 1]</sup>",
+      "교차비 <sup>[1 Box 1]</sup>",
+      "회상 비뚤림 · 면접자 비뚤림 · 노출에 따라 환자가 진단·등록되는 선택 비뚤림 <sup>[1 Box 3]</sup>"
+     ],
+     [
+      "코호트(추적 연구)",
+      "기저에서 노출을 재고 시간이 지난 뒤 결과 발생을 본다 <sup>[1 Box 1]</sup>",
+      "위험·발생률 · 위험비·율비 <sup>[1 Box 1]</sup>",
+      "노출군·비노출군의 추적 방법·추적 소실 차이 · 발견(감시) 비뚤림 · 교란 <sup>[1 Item 6 · Box 3]</sup>"
+     ],
+     [
+      "무작위 대조 시험",
+      "관찰 연구의 전향 설계 + 치료를 무작위로 배정 <sup>[2 4장 p.28]</sup>",
+      "위험비 · 절대위험감소 · NNT <sup>[2 4장 p.28]</sup>",
+      "측정·미측정 교란을 가장 잘 막는다 — 대신 일반화(외적 타당도)가 약할 수 있다 <sup>[2 4장 p.28]</sup>"
+     ]
+    ],
+    "note": "출발점·지표는 strobe-ee-2007 Box 1·7, 무작위 시험 행은 harrison-22 4장 p.28. 각 설계에 붙인 비뚤림은 STROBE 가 그 설계의 예로 든 것만 실었다."
+   },
+   {
+    "title": "비뚤림 셋 — 무엇이 틀어지고 어떻게 막나",
+    "columns": [
+     "종류",
+     "무엇이 틀어지나",
+     "예",
+     "통제"
+    ],
+    "rows": [
+     [
+      "선택 비뚤림",
+      "포함될 확률이 노출(또는 결과)과 관련된다 — 내적 타당도 저하 <sup>[1 Box 3]</sup>",
+      "경구피임약 복용 여성만 정맥혈전증으로 진단 · 노출된 환자가 등록부에 더 잘 보고 · 응답 비뚤림 <sup>[1 Box 3]</sup>",
+      "환자·대조군을 같은 경로로 진단 서비스에 의뢰된 사람에서 뽑는다 · 대조군은 원천 인구를 대표 <sup>[1 Box 3 · Item 6]</sup>"
+     ],
+     [
+      "정보 비뚤림",
+      "자료의 완전성·정확성이 집단마다 달라 노출·결과를 차등 오분류 <sup>[1 Box 3]</sup>",
+      "회상 비뚤림 · 면접자 비뚤림 · 당뇨 여성이 눈 검사를 더 받아 녹내장이 더 발견(발견 비뚤림) <sup>[1 Box 3]</sup>",
+      "참여자·연구자 눈가림 · 감시 강도를 재서 보정 · 면접 순서 무작위화 · 두 집단에 같은 검사 <sup>[1 Box 3 · Item 8]</sup>"
+     ],
+     [
+      "교란",
+      "노출·결과 둘 다와 관련된 제3의 요인이 연관을 만들거나 가린다 <sup>[1 Box 5]</sup>",
+      "혈압 높은 중년 여성이 피임약을 덜 처방받아 피임약이 심질환을 막는 것처럼 보임 <sup>[1 Box 5]</sup>",
+      "설계: 무작위 배정 · 제한 · 짝짓기 / 분석: 층화 · 다변량 분석 <sup>[1 Box 5]</sup> <sup>[2 4장 p.28]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "비뚤림과 교란은 같은 말?",
+    "point": "비뚤림은 결함 있는 정보나 대상 선택 때문에 틀린 연관이 나오는 것이고, 교란은 연관 자체는 사실이지만 노출·결과 둘 다와 관련된 제3의 요인 때문에 원인으로 해석할 수 없는 것이다. 우연 오차와도 구별한다 <sup>[1 Box 3]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "비뚤림은 통계 분석에서 보정하면 된다?",
+    "point": "비뚤림은 대개 설계·수행 단계에서 들어와 나중에 바로잡을 수 없다 — 그래서 설계 단계에서 막는다 <sup>[1 Box 3]</sup>. 분석으로 줄이는 것은 측정된 교란(층화·다변량)이다 <sup>[1 Box 5]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "다변량 보정한 관찰 연구 = 무작위 시험과 같은 근거?",
+    "point": "보정은 측정한 교란만 다룬다. 무작위 배정이 측정·미측정 교란을 모두 가장 잘 막는다 <sup>[2 4장 p.28]</sup>. 보정 뒤에도 잔여 교란·우연·선택·정보 비뚤림이 남을 수 있다 <sup>[1 Box 5]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "환자-대조군의 대조군 = 아무 건강한 사람?",
+    "point": "대조군은 환자가 나온 인구(원천 인구)를 대표해야 한다. 노출에 따라 환자·대조군이 포함될 확률이 다르면 선택 비뚤림이 생긴다 <sup>[1 Item 6 · Box 3]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "단면 연구로 원인을 증명?",
+    "point": "단면 연구는 노출과 질병을 같은 시점에 재서 노출이 먼저였는지 정하기 어렵다. 선천·유전 노출처럼 순서가 분명한 경우만 예외다 <sup>[1 Box 1]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "무작위 시험이면 결과를 모든 환자에게 적용?",
+    "point": "무작위 배정은 내적 타당도를 지키지만, 모집 과정에서 많은 대상을 뺐거나 대상이 너무 이질적이면 외적 타당도(일반화)가 낮을 수 있다 <sup>[2 4장 p.28]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "「추적 연구(follow-up)」·「종적 연구(longitudinal)」는 코호트의, 「유병률 연구(prevalence study)」는 단면 연구의 다른 이름이다 <sup>[1 Introduction]</sup>.",
+   "닫힌 코호트는 시작 때 정한 인원을 끝까지 따라가고, 열린 코호트는 사람이 들고 난다(예: 한 도시 주민) <sup>[1 Box 1]</sup>.",
+   "짝짓기(matching)는 환자-대조군에서 교란 요인의 분포를 맞춰 효율을 높이지만 늘 적절하지는 않다 — 짝짓기 변수와 방법(빈도 짝짓기·개별 짝짓기)을 밝히고 분석에 반영한다. 너무 넓은 나이 구간은 잔여 교란을 남긴다 <sup>[1 Item 6]</sup>.",
+   "동시 대조군이 역사적 대조군보다 훨씬 낫다 — 그 사이 표준 치료가 바뀌면 비교가 크게 틀어진다 <sup>[2 4장 p.28]</sup>."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "strobe-ee-2007",
+    "org": "Vandenbroucke JP, von Elm E, Altman DG, et al. (STROBE Initiative)",
+    "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): explanation and elaboration",
+    "kind": "consensus",
+    "citation": "PLoS Med 2007;4(10):e297",
+    "checked": "PMC2020496 전문(PubMed MCP) — Introduction(추적·종적 연구 = 코호트, 유병률 연구 = 단면의 동의어) · Box 1(세 설계의 출발점, 닫힌/열린 코호트, 환자-대조군의 교차비 해석, 단면 연구의 선후 불명과 선천·유전 노출 예외) · Item 6(대조군은 원천 인구를 대표, 대조군 추출 방법, 짝짓기의 목적·빈도/개별 짝짓기·단점·넓은 나이 구간의 잔여 교란, 노출군·비노출군의 추적 방법·추적 소실 차이가 비뚤림) · Item 8(면접 순서에 따른 비뚤림과 무작위화, 두 집단의 다른 검사가 정보 비뚤림) · Box 3(비뚤림 정의 — 설계·수행 단계에서 들어와 나중에 못 고침, 비뚤림 ≠ 교란 ≠ 우연 오차, 정보 비뚤림 = 차등 오분류·발견/감시 비뚤림·회상 비뚤림·면접자 비뚤림·눈가림, 선택 비뚤림 = 포함 확률이 노출과 관련·정맥혈전증 예·등록부·응답 비뚤림·내적 타당도) · Box 5(교란 정의와 피임약·혈압 예, 제한·짝짓기·층화·다변량 분석, 잔여 교란) · Box 7(유병률비·유병 교차비)을 읽음",
+    "doi": "10.1371/journal.pmed.0040297",
+    "pmid": "17941715",
+    "verified": "text",
+    "year": "2007",
+    "checkedAt": "2026-11-20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2020496/"
+   },
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 4: Decision-Making in Clinical Medicine",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 4장 p.27–28",
+    "checked": "드라이브 22판 장별 문서 H22_4 의 근거 중심 의학 절(p.27–28) 대조 — 관찰 연구는 가설을 만들지만 진료 표준을 정하는 역할은 없고 무작위 시험 + 고품질 등록부가 주 도구(p.27) · 관찰 자료에서 연구자는 진료를 통제하지 않음, 잘 된 전향 관찰 연구와 무작위 시험의 가장 큰 차이는 치료 선택 비뚤림에 대한 보호 부재, 진료가 무작위가 아니면 통계 보정으로도 교란을 못 고칠 수 있음, 동시 대조군이 역사적 대조군보다 낫다, 무작위 배정이 측정·미측정 교란을 가장 잘 막지만 외적 타당도는 낮을 수 있음 · 메타분석의 상대 지표와 절대위험감소·NNT = 1/ARR(p.28)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-20",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "폐암 환자와 대조군에게 20년 전 라돈 노출을 설문했다. 환자군이 과거 노출을 더 자세히 떠올렸다면 어떤 비뚤림이고 어떻게 줄이나?",
+    "a": "환자-대조군 연구의 회상 비뚤림(정보 비뚤림). 연구 가설에 대한 참여자·면접자 눈가림이 도움이 된다."
+   },
+   {
+    "q": "커피와 췌장암 연관이 흡연을 고려하자 사라졌다. 흡연의 역할과 분석 단계 통제법은?",
+    "a": "교란 변수. 흡연 층으로 나눠 각 층의 연관을 본 뒤 가중 평균하는 층화, 또는 다변량 분석으로 보정한다."
+   },
+   {
+    "q": "관찰 연구에서 수술군이 내과 치료군보다 생존이 좋았다. 무작위 시험이 필요한 이유는?",
+    "a": "어떤 환자가 수술을 받는지 자체가 예후와 관련된 치료 선택 비뚤림(교란)이다. 무작위 배정만이 측정·미측정 교란을 모두 막는다."
+   }
+  ],
+  "variants": [],
+  "figures": [],
+  "diagramTitle": "연구 설명에서 설계 가려내기",
+  "geo": {
+   "title": "연구 설명에서 설계 가려내기",
+   "w": 583.0,
+   "h": 600.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "연구 설명"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "assign",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "연구자가 노출을 배정했나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 85.0
+    },
+    {
+     "id": "rct",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "무작위 대조 시험 — 교란",
+      "통제 최강"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 175.0
+    },
+    {
+     "id": "begin",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "무엇에서 출발했나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 175.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "표본 추출·측정 시점을 다시",
+      "읽는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 307.0
+    },
+    {
+     "id": "cc",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "환자-대조군 — 회상·선택",
+      "비뚤림"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 73.5,
+     "y": 434.0
+    },
+    {
+     "id": "cs",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "단면 — 선후 관계 불명"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 307.0
+    },
+    {
+     "id": "co",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "코호트 — 추적 소실·발견",
+      "비뚤림"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 365.3,
+     "y": 434.0
+    },
+    {
+     "id": "conf",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "관찰 연구는 교란 → 제한·",
+      "짝짓기·층화"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 219.4,
+     "y": 520.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "assign",
+     "points": [
+      [
+       227.0,
+       63.0
+      ],
+      [
+       227.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "assign",
+     "to": "rct",
+     "points": [
+      [
+       194.3,
+       132.0
+      ],
+      [
+       194.3,
+       161.0
+      ],
+      [
+       114.0,
+       161.0
+      ],
+      [
+       114.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "무작위 배정"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 161.0,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "assign",
+     "to": "begin",
+     "points": [
+      [
+       259.7,
+       132.0
+      ],
+      [
+       259.7,
+       161.0
+      ],
+      [
+       340.0,
+       161.0
+      ],
+      [
+       340.0,
+       175.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관찰만"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 136.0
+     }
+    },
+    {
+     "from": "begin",
+     "to": "cc",
+     "points": [
+      [
+       281.2,
+       222.0
+      ],
+      [
+       281.2,
+       284.0
+      ],
+      [
+       113.0,
+       284.0
+      ],
+      [
+       113.0,
+       420.0
+      ],
+      [
+       138.8,
+       420.0
+      ],
+      [
+       138.8,
+       434.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "질병 유무"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 253.3,
+      "y": 226.0
+     }
+    },
+    {
+     "from": "begin",
+     "to": "cs",
+     "points": [
+      [
+       359.6,
+       222.0
+      ],
+      [
+       359.6,
+       293.0
+      ],
+      [
+       453.0,
+       293.0
+      ],
+      [
+       453.0,
+       307.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "한 시점",
+       "전원"
+      ],
+      "w": 44.7,
+      "h": 30,
+      "x": 337.2,
+      "y": 226.0
+     }
+    },
+    {
+     "from": "begin",
+     "to": "co",
+     "points": [
+      [
+       398.8,
+       222.0
+      ],
+      [
+       398.8,
+       284.0
+      ],
+      [
+       567.0,
+       284.0
+      ],
+      [
+       567.0,
+       420.0
+      ],
+      [
+       496.0,
+       420.0
+      ],
+      [
+       496.0,
+       434.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "노출 후 추적"
+      ],
+      "w": 70.5,
+      "h": 17,
+      "x": 364.6,
+      "y": 259.0
+     }
+    },
+    {
+     "from": "begin",
+     "to": "info",
+     "points": [
+      [
+       320.4,
+       222.0
+      ],
+      [
+       320.4,
+       293.0
+      ],
+      [
+       227.0,
+       293.0
+      ],
+      [
+       227.0,
+       307.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불분명"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 299.9,
+      "y": 259.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "cc",
+     "points": [
+      [
+       194.3,
+       371.0
+      ],
+      [
+       194.3,
+       420.0
+      ],
+      [
+       204.2,
+       420.0
+      ],
+      [
+       204.2,
+       434.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "과거 노출 조사"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 153.6,
+      "y": 375.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "co",
+     "points": [
+      [
+       259.7,
+       371.0
+      ],
+      [
+       259.7,
+       420.0
+      ],
+      [
+       430.6,
+       420.0
+      ],
+      [
+       430.6,
+       434.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "결과 발생 관찰"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 218.9,
+      "y": 395.0
+     }
+    },
+    {
+     "from": "cc",
+     "to": "conf",
+     "points": [
+      [
+       171.5,
+       498.0
+      ],
+      [
+       171.5,
+       506.0
+      ],
+      [
+       284.7,
+       506.0
+      ],
+      [
+       284.7,
+       520.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "co",
+     "to": "conf",
+     "points": [
+      [
+       463.3,
+       498.0
+      ],
+      [
+       463.3,
+       506.0
+      ],
+      [
+       350.1,
+       506.0
+      ],
+      [
+       350.1,
+       520.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "연구 설명",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "연구자가 노출을 배정했나?"
+     }
+    ]
+   },
+   {
+    "id": "assign",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "연구자가 노출을 배정했나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "무작위 배정",
+      "to": 3,
+      "toText": "무작위 대조 시험 — 교란 통제 최강"
+     },
+     {
+      "label": "관찰만",
+      "to": 4,
+      "toText": "무엇에서 출발했나?"
+     }
+    ]
+   },
+   {
+    "id": "rct",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "무작위 대조 시험 — 교란 통제 최강",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "begin",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "무엇에서 출발했나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "질병 유무",
+      "to": 7,
+      "toText": "환자-대조군 — 회상·선택 비뚤림"
+     },
+     {
+      "label": "한 시점 전원",
+      "to": 5,
+      "toText": "단면 — 선후 관계 불명"
+     },
+     {
+      "label": "노출 후 추적",
+      "to": 8,
+      "toText": "코호트 — 추적 소실·발견 비뚤림"
+     },
+     {
+      "label": "불분명",
+      "to": 6,
+      "toText": "표본 추출·측정 시점을 다시 읽는다"
+     }
+    ]
+   },
+   {
+    "id": "cs",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "단면 — 선후 관계 불명",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 6,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "표본 추출·측정 시점을 다시 읽는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "과거 노출 조사",
+      "to": 7,
+      "toText": "환자-대조군 — 회상·선택 비뚤림"
+     },
+     {
+      "label": "결과 발생 관찰",
+      "to": 8,
+      "toText": "코호트 — 추적 소실·발견 비뚤림"
+     }
+    ]
+   },
+   {
+    "id": "cc",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "환자-대조군 — 회상·선택 비뚤림",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "관찰 연구는 교란 → 제한·짝짓기·층화"
+     }
+    ]
+   },
+   {
+    "id": "co",
+    "num": 8,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "코호트 — 추적 소실·발견 비뚤림",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "관찰 연구는 교란 → 제한·짝짓기·층화"
+     }
+    ]
+   },
+   {
+    "id": "conf",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "관찰 연구는 교란 → 제한·짝짓기·층화",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [],
   "hasErrors": false
  },
  "cn.psy.ocd.ssri-trial-optimization": {
