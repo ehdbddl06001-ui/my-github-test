@@ -1,0 +1,114 @@
+# 의사 국가시험[필기] 평가목표집(국시원, 2014 발행 · 2018년 제82회부터 적용)의 의사직무상황 105개와
+# MedKOS 기본틀 슬롯(content/outline/subjects.yaml)의 대응표. pipelines/kmle_scope.py 가 읽는다.
+# - 이름은 평가목표집 차례 그대로. 본문(필요성·성과)은 싣지 않는다 — 원문은 kuksiwon.or.kr 「출제 관련 안내사항」.
+# - slots 는 Claude 가 슬롯 제목을 보고 붙인 추정 대응이다(2026-11-20, 사람 검토 전). 평가목표집은 「필수질환 522개」의
+#   이름을 공개하지 않으므로, 여기 없는 슬롯이 국시 범위 밖이라는 뜻은 아니다 — 「직무상황에 직접 대응 없음」일 뿐.
+# - 대응을 고치면 python pipelines/kmle_scope.py --check 로 없는 슬롯 id 를 잡는다.
+source: "의사 국가시험[필기] 평가목표집 (한국보건의료인국가시험원, 2014-10-15 발행, 2018년 제82회부터 적용)"
+checked_at: 2026-11-20
+encounters:
+  - {n: 1, name: "가려움증", slots: [h56, h57, h58]}
+  - {n: 2, name: "가슴통증/가슴불쾌감", slots: [h14, h236, h273, h274, h275, h280, h279, h270]}
+  - {n: 3, name: "가정폭력/학대", slots: [peds.emergency]}
+  - {n: 4, name: "객혈", slots: [h39, h290, h178, h78]}
+  - {n: 5, name: "거품 소변", slots: [h52, h314]}
+  - {n: 6, name: "고혈압", slots: [h277, h278, h386, h387]}
+  - {n: 7, name: "골절/탈구", slots: [ortho.fracture-basics, ortho.upper-limb, ortho.lower-limb, ortho.pediatric, h411]}
+  - {n: 8, name: "관절통/관절부기", slots: [h370, h371, h372, h358, h130, h362, ortho.infection-tumor]}
+  - {n: 9, name: "구역/구토", slots: [h45, peds.gi]}
+  - {n: 10, name: "급성복통", slots: [h15, surg.acute-abdomen, h331, h330, h346, h348, h329, uro.stone]}
+  - {n: 11, name: "기분장애", slots: [h452]}
+  - {n: 12, name: "기억력 저하", slots: [h29, h30, h431, h433]}
+  - {n: 13, name: "기침", slots: [h38, h35, h287, h292, h126, h178]}
+  - {n: 14, name: "난청", slots: [h34, ent.ear-infection]}
+  - {n: 15, name: "다뇨증", slots: [h381, h403, h53]}
+  - {n: 16, name: "두근거림", slots: [h43, h246, h251]}
+  - {n: 17, name: "두드러기/혈관부종", slots: [h352]}
+  - {n: 18, name: "두통", slots: [h16, h430, h429]}
+  - {n: 19, name: "만성복통/소화불량/속쓰림", slots: [h45, h324, h323, h327, h163]}
+  - {n: 20, name: "목덩이", slots: [ent.head-neck-tumor, h385, h66, h77]}
+  - {n: 21, name: "무뇨증/핍뇨증", slots: [h310, h319, h52, uro.trauma]}
+  - {n: 22, name: "무월경", slots: [gyn.menstrual, ob.sex-development, gyn.hirsutism-pcos, h380]}
+  - {n: 23, name: "물질남용", slots: [h453, h454, h455, h456, h457]}
+  - {n: 24, name: "미숙아/저체중 출생아", slots: [peds.newborn]}
+  - {n: 25, name: "발달지연", slots: [peds.growth, peds.neuro]}
+  - {n: 26, name: "발열/불명열", slots: [h18, h19, h20]}
+  - {n: 27, name: "발작/간질", slots: [h425, peds.neuro]}
+  - {n: 28, name: "배뇨곤란/배뇨통", slots: [uro.infection, uro.luts, h135, h51]}
+  - {n: 29, name: "배벽과 서혜부덩이/탈장", slots: [surg.hernia]}
+  - {n: 30, name: "변비", slots: [h46, h327]}
+  - {n: 31, name: "보행이상/운동실조", slots: [h26, h439, h435]}
+  - {n: 32, name: "복부덩이/골반덩이", slots: [gyn.benign, gyn.oncology, h82, h81]}
+  - {n: 33, name: "복부팽만/복수", slots: [h50, h344]}
+  - {n: 34, name: "부종", slots: [h41, h257, h314]}
+  - {n: 35, name: "분만/산후 관리", slots: [ob.labor, ob.operative, ob.postpartum, ob.bleeding, ob.medical-complications]}
+  - {n: 36, name: "불안", slots: [h452]}
+  - {n: 37, name: "불임", slots: [gyn.infertility, uro.male-repro, uro.mens-health]}
+  - {n: 38, name: "비루/비출혈", slots: [ent.sinus, h35]}
+  - {n: 39, name: "사춘기 발달이상", slots: [peds.endo, ob.sex-development]}
+  - {n: 40, name: "산전관리", slots: [ob.normal-pregnancy, ob.prenatal-dx, ob.medical-complications, ob.bleeding, h479]}
+  - {n: 41, name: "삼킴곤란", slots: [h44, h323, ent.tonsil-pharynx]}
+  - {n: 42, name: "상하지통증", slots: [h281, h282, h279, h446, h375, ortho.sports]}
+  - {n: 43, name: "설사", slots: [h46, h133, h134, h326, h325, peds.gi]}
+  - {n: 44, name: "성매개감염", slots: [gyn.infection, h136, h156, h182, h189, h192, h198]}
+  - {n: 45, name: "성폭력", slots: []}
+  - {n: 46, name: "소아열성경련", slots: [peds.neuro]}
+  - {n: 47, name: "수면장애", slots: [h31, h297]}
+  - {n: 48, name: "수술 전후 환자 관리", slots: [surg.perioperative, surg.fluid-nutrition, h480]}
+  - {n: 49, name: "수혈/수혈부작용", slots: [h113]}
+  - {n: 50, name: "시력장애", slots: [h32, ophth.refraction, ophth.lens, ophth.retina, ophth.glaucoma]}
+  - {n: 51, name: "신생아 진찰", slots: [peds.newborn, peds.genetic]}
+  - {n: 52, name: "신생아 황달", slots: [peds.newborn]}
+  - {n: 53, name: "신생아/소아 발열", slots: [peds.infection]}
+  - {n: 54, name: "실신", slots: [h21]}
+  - {n: 55, name: "심박이상", slots: [h240, h244, h245, h246, h249, h251, h252, h254]}
+  - {n: 56, name: "심잡음", slots: [h42, h239, h261, h262, h263, h264, h269, peds.cardiac]}
+  - {n: 57, name: "심정지", slots: [h306]}
+  - {n: 58, name: "알레르기반응", slots: [h353, h352, h60]}
+  - {n: 59, name: "어지럼/현기증", slots: [h22, ent.vertigo]}
+  - {n: 60, name: "영양결핍", slots: [h333, h334, peds.nutrition]}
+  - {n: 61, name: "예방접종", slots: [peds.vaccine, h123]}
+  - {n: 62, name: "외상", slots: [em.trauma, em.trauma-region, h443, h272, uro.trauma]}
+  - {n: 63, name: "외음부덩이", slots: [gyn.urogyn, gyn.infection, gyn.oncology]}
+  - {n: 64, name: "요실금", slots: [gyn.urogyn, uro.luts]}
+  - {n: 65, name: "월경통", slots: [gyn.menstrual, gyn.benign]}
+  - {n: 66, name: "유방덩이/통증", slots: [surg.breast-endocrine, h79]}
+  - {n: 67, name: "의무기록 및 진단서 작성", slots: []}
+  - {n: 68, name: "의식변화/혼수", slots: [h27, h28, h307]}
+  - {n: 69, name: "임종과 애도", slots: [h12]}
+  - {n: 70, name: "자살행동/시도", slots: [h452]}
+  - {n: 71, name: "저혈압/쇼크", slots: [h303, h305, h304]}
+  - {n: 72, name: "전신염증반응증후군/패혈증", slots: [h304]}
+  - {n: 73, name: "정신증", slots: [h452]}
+  - {n: 74, name: "젖흐름증", slots: [h380]}
+  - {n: 75, name: "주의력결핍과다활동장애/학습장애", slots: [peds.neuro, h452]}
+  - {n: 76, name: "중독", slots: [h459, h458]}
+  - {n: 77, name: "질분비물", slots: [gyn.infection]}
+  - {n: 78, name: "질출혈", slots: [gyn.menstrual, ob.bleeding, gyn.oncology, gyn.menopause]}
+  - {n: 79, name: "청색증", slots: [h40, peds.cardiac, h269]}
+  - {n: 80, name: "체중감소/식욕부진", slots: [h47]}
+  - {n: 81, name: "체중증가/비만", slots: [h401, h402, h408]}
+  - {n: 82, name: "출혈경향", slots: [h65, h115, h116]}
+  - {n: 83, name: "충혈눈", slots: [ophth.anterior, ophth.trauma, h32]}
+  - {n: 84, name: "토혈", slots: [h48, h324, h344]}
+  - {n: 85, name: "팔다리 근력약화/마비", slots: [h24, h427, h442, h447, h448, h446]}
+  - {n: 86, name: "폐경", slots: [gyn.menopause, h411]}
+  - {n: 87, name: "피로", slots: [h23]}
+  - {n: 88, name: "피부발진", slots: [h56, h57, h58, h59, h60, h19]}
+  - {n: 89, name: "피부창상관리", slots: [surg.wound-infection, h141]}
+  - {n: 90, name: "피임", slots: [gyn.infertility]}
+  - {n: 91, name: "항문통증", slots: [h328, surg.lower-gi]}
+  - {n: 92, name: "허리통증", slots: [h17, ortho.spine, h362, ortho.infection-tumor]}
+  - {n: 93, name: "혈뇨", slots: [h52, h314, h318, uro.stone, uro.tumor, h85, h86]}
+  - {n: 94, name: "혈변/흑색변", slots: [h48, h81, h326, h328]}
+  - {n: 95, name: "호흡곤란", slots: [h37, h287, h292, h257, h279, h294, h301, h300, h302]}
+  - {n: 96, name: "화상/한랭손상", slots: [em.burn, h464, h465]}
+  - {n: 97, name: "황달", slots: [h49, h338, h339, h346]}
+  - {n: 98, name: "감염병 유행과 관리", slots: [prev.infection-control, h473]}
+  - {n: 99, name: "건강과 건강결정인자", slots: [h2]}
+  - {n: 100, name: "인구집단의 질병예방과 건강증진", slots: [prev.screening, prev.test-validity, h6]}
+  - {n: 101, name: "인구집단 보건관리", slots: [prev.health-system, h8]}
+  - {n: 102, name: "인구집단의 건강상태 측정과 평가", slots: [prev.epi-measures, prev.study-design, prev.statistics, prev.test-validity]}
+  - {n: 103, name: "업무관련 건강문제", slots: [prev.occupational, h289]}
+  - {n: 104, name: "환경과 건강", slots: [prev.occupational, h475]}
+  - {n: 105, name: "의료 법규와 윤리", slots: [prev.health-system, h11]}

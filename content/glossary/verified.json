@@ -1,5 +1,117 @@
 {
  "drugs": {
+  "옥시토신": {
+   "en": "oxytocin",
+   "rxcui": "7824"
+  },
+  "트라넥삼산": {
+   "en": "tranexamic acid",
+   "rxcui": "10691"
+  },
+  "미소프로스톨": {
+   "en": "misoprostol",
+   "rxcui": "42331"
+  },
+  "카보프로스트": {
+   "en": "carboprost",
+   "rxcui": "2051"
+  },
+  "메트로니다졸": {
+   "en": "metronidazole",
+   "rxcui": "6922"
+  },
+  "클린다마이신": {
+   "en": "clindamycin",
+   "rxcui": "2582"
+  },
+  "티니다졸": {
+   "en": "tinidazole",
+   "rxcui": "10612"
+  },
+  "미라베그론": {
+   "en": "mirabegron",
+   "rxcui": "1300786"
+  },
+  "레보노르게스트렐": {
+   "en": "levonorgestrel",
+   "rxcui": "6373"
+  },
+  "에토노게스트렐": {
+   "en": "etonogestrel",
+   "rxcui": "14584"
+  },
+  "펜톡시필린": {
+   "en": "pentoxifylline",
+   "rxcui": "8013"
+  },
+  "다나졸": {
+   "en": "danazol",
+   "rxcui": "3102"
+  },
+  "프로게스테론": {
+   "en": "progesterone",
+   "rxcui": "8727"
+  },
+  "시롤리무스": {
+   "en": "sirolimus",
+   "rxcui": "35302"
+  },
+  "에베롤리무스": {
+   "en": "everolimus",
+   "rxcui": "141704"
+  },
+  "바실릭시맙": {
+   "en": "basiliximab",
+   "rxcui": "196102"
+  },
+  "보르테조밉": {
+   "en": "bortezomib",
+   "rxcui": "358258"
+  },
+  "판토프라졸": {
+   "en": "pantoprazole",
+   "rxcui": "40790"
+  },
+  "마바캄텐": {
+   "en": "mavacamten",
+   "rxcui": "2600867"
+  },
+  "코신트로핀": {
+   "en": "cosyntropin",
+   "rxcui": "2890"
+  },
+  "드로스피레논": {
+   "en": "drospirenone",
+   "rxcui": "11636"
+  },
+  "두타스테리드": {
+   "en": "dutasteride",
+   "rxcui": "228790"
+  },
+  "페니토인": {
+   "en": "phenytoin",
+   "rxcui": "8183"
+  },
+  "미녹시딜": {
+   "en": "minoxidil",
+   "rxcui": "6984"
+  },
+  "플루타마이드": {
+   "en": "flutamide",
+   "rxcui": "4508"
+  },
+  "사이프로테론": {
+   "en": "cyproterone",
+   "rxcui": "3014"
+  },
+  "피나스테리드": {
+   "en": "finasteride",
+   "rxcui": "25025"
+  },
+  "스피로노락톤": {
+   "en": "spironolactone",
+   "rxcui": "9997"
+  },
   "메토트렉세이트": {
    "en": "methotrexate",
    "rxcui": "6851"
@@ -16,6 +128,14 @@
    "en": "rituximab",
    "rxcui": "121191"
   },
+  "필로카르핀": {
+   "en": "pilocarpine",
+   "rxcui": "8328"
+  },
+  "세비멜린": {
+   "en": "cevimeline",
+   "rxcui": "44281"
+  },
   "프레드니손": {
    "en": "prednisone",
    "rxcui": "8640"
@@ -23,6 +143,14 @@
   "프레드니솔론": {
    "en": "prednisolone",
    "rxcui": "8638"
+  },
+  "탈리도마이드": {
+   "en": "thalidomide",
+   "rxcui": "10432"
+  },
+  "미노사이클린": {
+   "en": "minocycline",
+   "rxcui": "6980"
   },
   "메틸프레드니솔론": {
    "en": "methylprednisolone",
@@ -35,6 +163,38 @@
   "메실레틴": {
    "en": "mexiletine",
    "rxcui": "6926"
+  },
+  "발라시클로버": {
+   "en": "valacyclovir",
+   "rxcui": "73645"
+  },
+  "아시클로버": {
+   "en": "acyclovir",
+   "rxcui": "281"
+  },
+  "팜시클로버": {
+   "en": "famciclovir",
+   "rxcui": "68099"
+  },
+  "세팔렉신": {
+   "en": "cephalexin",
+   "rxcui": "2231"
+  },
+  "트리플루리딘": {
+   "en": "trifluridine",
+   "rxcui": "10803"
+  },
+  "간시클로버": {
+   "en": "ganciclovir",
+   "rxcui": "4678"
+  },
+  "리도카인": {
+   "en": "lidocaine",
+   "rxcui": "6387"
+  },
+  "메트포르민": {
+   "en": "metformin",
+   "rxcui": "6809"
   },
   "설파살라진": {
    "en": "sulfasalazine",
@@ -115,6 +275,22 @@
   "히드랄라진": {
    "en": "hydralazine",
    "rxcui": "5470"
+  },
+  "황산마그네슘": {
+   "en": "magnesium sulfate",
+   "rxcui": "6585"
+  },
+  "니페디핀": {
+   "en": "nifedipine",
+   "rxcui": "7417"
+  },
+  "푸로세미드": {
+   "en": "furosemide",
+   "rxcui": "4603"
+  },
+  "수마트립탄": {
+   "en": "sumatriptan",
+   "rxcui": "37418"
   },
   "아미트립틸린": {
    "en": "amitriptyline",
@@ -208,6 +384,10 @@
    "en": "disopyramide",
    "rxcui": "3541"
   },
+  "퀴니딘": {
+   "en": "quinidine",
+   "rxcui": "9068"
+  },
   "이소프로테레놀": {
    "en": "isoproterenol",
    "rxcui": "6054"
@@ -251,6 +431,18 @@
   "알로푸리놀": {
    "en": "allopurinol",
    "rxcui": "519"
+  },
+  "페북소스타트": {
+   "en": "febuxostat",
+   "rxcui": "73689"
+  },
+  "프로베네시드": {
+   "en": "probenecid",
+   "rxcui": "8698"
+  },
+  "페글로티카제": {
+   "en": "pegloticase",
+   "rxcui": "1011650"
   },
   "셀레콕시브": {
    "en": "celecoxib",
@@ -383,6 +575,214 @@
   "아토르바스타틴": {
    "en": "atorvastatin",
    "rxcui": "83367"
+  },
+  "에리스로마이신": {
+   "en": "erythromycin",
+   "rxcui": "4053"
+  },
+  "클래리스로마이신": {
+   "en": "clarithromycin",
+   "rxcui": "21212"
+  },
+  "아지스로마이신": {
+   "en": "azithromycin",
+   "rxcui": "18631"
+  },
+  "세프트리악손": {
+   "en": "ceftriaxone",
+   "rxcui": "2193"
+  },
+  "콜히친": {
+   "en": "colchicine",
+   "rxcui": "2683"
+  },
+  "아나킨라": {
+   "en": "anakinra",
+   "rxcui": "72435"
+  },
+  "카나키누맙": {
+   "en": "canakinumab",
+   "rxcui": "853491"
+  },
+  "릴로나셉트": {
+   "en": "rilonacept",
+   "rxcui": "763450"
+  },
+  "암피실린": {
+   "en": "ampicillin",
+   "rxcui": "733"
+  },
+  "세포탁심": {
+   "en": "cefotaxime",
+   "rxcui": "2186"
+  },
+  "트라스투주맙": {
+   "en": "trastuzumab",
+   "rxcui": "224905"
+  },
+  "퍼투주맙": {
+   "en": "pertuzumab",
+   "rxcui": "1298944"
+  },
+  "독소루비신": {
+   "en": "doxorubicin",
+   "rxcui": "3639"
+  },
+  "파클리탁셀": {
+   "en": "paclitaxel",
+   "rxcui": "56946"
+  },
+  "블레오마이신": {
+   "en": "bleomycin",
+   "rxcui": "1622"
+  },
+  "시스플라틴": {
+   "en": "cisplatin",
+   "rxcui": "2555"
+  },
+  "에탐부톨": {
+   "en": "ethambutol",
+   "rxcui": "4110"
+  },
+  "엽산": {
+   "en": "folic acid",
+   "rxcui": "4511"
+  },
+  "레플루노마이드": {
+   "en": "leflunomide",
+   "rxcui": "27169"
+  },
+  "트리암시놀론": {
+   "en": "triamcinolone",
+   "rxcui": "10759"
+  },
+  "아바타셉트": {
+   "en": "abatacept",
+   "rxcui": "614391"
+  },
+  "덱사메타손": {
+   "en": "dexamethasone",
+   "rxcui": "3264"
+  },
+  "렘데시비르": {
+   "en": "remdesivir",
+   "rxcui": "2284718"
+  },
+  "바리시티닙": {
+   "en": "baricitinib",
+   "rxcui": "2047232"
+  },
+  "아지트로마이신": {
+   "en": "azithromycin",
+   "rxcui": "18631"
+  },
+  "이버멕틴": {
+   "en": "ivermectin",
+   "rxcui": "6069"
+  },
+  "도세탁셀": {
+   "en": "docetaxel",
+   "rxcui": "72962"
+  },
+  "젬시타빈": {
+   "en": "gemcitabine",
+   "rxcui": "12574"
+  },
+  "아미노필린": {
+   "en": "aminophylline",
+   "rxcui": "689"
+  },
+  "아트로핀": {
+   "en": "atropine",
+   "rxcui": "1223"
+  },
+  "카페인": {
+   "en": "caffeine",
+   "rxcui": "1886"
+  },
+  "코카인": {
+   "en": "cocaine",
+   "rxcui": "2653"
+  },
+  "암페타민": {
+   "en": "amphetamine",
+   "rxcui": "725"
+  },
+  "애플리버셉트": {
+   "en": "aflibercept",
+   "rxcui": "1232150"
+  },
+  "라니비주맙": {
+   "en": "ranibizumab",
+   "rxcui": "595060"
+  },
+  "베바시주맙": {
+   "en": "bevacizumab",
+   "rxcui": "253337"
+  },
+  "브롤루시주맙": {
+   "en": "brolucizumab",
+   "rxcui": "2204915"
+  },
+  "류코보린": {
+   "en": "leucovorin",
+   "rxcui": "6313"
+  },
+  "모르핀": {
+   "en": "morphine",
+   "rxcui": "7052"
+  },
+  "날록손": {
+   "en": "naloxone",
+   "rxcui": "7242"
+  },
+  "플루오로우라실": {
+   "en": "fluorouracil",
+   "rxcui": "4492"
+  },
+  "탄산수소나트륨": {
+   "en": "sodium bicarbonate",
+   "rxcui": "36676"
+  },
+  "메틸도파": {
+   "en": "methyldopa",
+   "rxcui": "6876"
+  },
+  "소탈롤": {
+   "en": "sotalol",
+   "rxcui": "9947"
+  },
+  "이바브라딘": {
+   "en": "ivabradine",
+   "rxcui": "1649480"
+  },
+  "리튬": {
+   "en": "lithium",
+   "rxcui": "6448"
+  },
+  "도네페질": {
+   "en": "donepezil",
+   "rxcui": "135447"
+  },
+  "프로포폴": {
+   "en": "propofol",
+   "rxcui": "8782"
+  },
+  "테오필린": {
+   "en": "theophylline",
+   "rxcui": "10438"
+  },
+  "테르부탈린": {
+   "en": "terbutaline",
+   "rxcui": "10368"
+  },
+  "포메피졸": {
+   "en": "fomepizole",
+   "rxcui": "15226"
+  },
+  "디설피람": {
+   "en": "disulfiram",
+   "rxcui": "3554"
   }
  },
  "classes": {
@@ -480,6 +880,16 @@
    "en": "vasodilator",
    "mesh": "D014665",
    "mesh_label": "Vasodilator Agents"
+  },
+  "아로마테이스억제제": {
+   "en": "aromatase inhibitor",
+   "mesh": "D047072",
+   "mesh_label": "Aromatase Inhibitors"
+  },
+  "안트라사이클린": {
+   "en": "anthracycline",
+   "mesh": "D018943",
+   "mesh_label": "Anthracyclines"
   }
  },
  "failed": [
