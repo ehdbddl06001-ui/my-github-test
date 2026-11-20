@@ -2,6 +2,31 @@
 # 약 = RxNorm 정확 일치, 약군 = MeSH 표목(check)으로 확인한 것만 verified.json 에 들어가고, 조판은 verified.json 만 쓴다.
 # 추가·수정 뒤: python pipelines/verify_glossary.py (NLM RxNav·MeSH API 조회 — 네트워크 필요)
 drugs:
+  바소프레신: vasopressin
+  세페핌: cefepime
+  이미페넴: imipenem
+  메로페넴: meropenem
+  리네졸리드: linezolid
+  하이드로코티손: hydrocortisone
+  옥시메타졸린: oxymetazoline
+  겐타마이신: gentamicin
+  하이드록소코발라민: hydroxocobalamin
+  숙시머: succimer
+  다이머카프롤: dimercaprol
+  레보도파: levodopa
+  옥시토신: oxytocin
+  트라넥삼산: tranexamic acid
+  미소프로스톨: misoprostol
+  카보프로스트: carboprost
+  메트로니다졸: metronidazole
+  클린다마이신: clindamycin
+  티니다졸: tinidazole
+  미라베그론: mirabegron
+  레보노르게스트렐: levonorgestrel
+  에토노게스트렐: etonogestrel
+  펜톡시필린: pentoxifylline
+  다나졸: danazol
+  프로게스테론: progesterone
   시롤리무스: sirolimus
   에베롤리무스: everolimus
   바실릭시맙: basiliximab
