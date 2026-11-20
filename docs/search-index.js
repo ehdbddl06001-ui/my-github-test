@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4096,
+  "total": 4107,
   "byType": {
    "paper": 961,
    "kmle": 1920,
-   "imaging": 725,
+   "imaging": 736,
    "concept": 197,
    "usmle": 276,
    "ailab": 14,
@@ -35,22 +35,22 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 124,
    "Surgery": 124,
    "Hematology": 117,
-   "순환기": 113,
+   "순환기": 116,
    "Laboratory Medicine": 98,
-   "산부인과": 90,
-   "호흡기": 48,
-   "소화기": 43,
+   "산부인과": 91,
+   "호흡기": 49,
+   "소화기": 44,
    "소아과": 38,
+   "신경": 33,
    "신장·비뇨기": 33,
    "혈액·종양": 33,
-   "신경": 32,
+   "감염": 32,
+   "내분비": 32,
    "응급·중환자": 32,
-   "감염": 31,
-   "내분비": 31,
    "병리·조직학": 30,
    "Physiology": 29,
    "피부과": 28,
-   "외과": 26,
+   "외과": 27,
    "예방의학·역학": 25,
    "Pharmacology": 23,
    "Biochemistry": 22,
@@ -60,7 +60,7 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 18,
    "근골격·류마티스": 18,
    "정신과": 18,
-   "안과": 13,
+   "안과": 14,
    "영상의학": 12,
    "이비인후과": 12,
    "Emergency Medicine": 9,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1190,
-   "high": 2902,
+   "high": 2913,
    "low": 4
   },
   "tagCount": 4920
@@ -812,6 +812,201 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1925.md",
    "snippet": "71세 남자가 사흘 전부터 가슴이 빨리 뛰고 계단을 오를 때 숨이 차서 왔다. 가슴 통증과 실신은 없었다. 10년 전부터 고혈압약을 먹고 있다. 맥박은 규칙적이고 빠르며 폐 청진은 깨끗하다. 경동맥동 마사지를 하자 심실 박동이 몇 초간 느려지면서 기저선에 규칙적인 톱니 모양 물결이 드러났다가 다시 빨라졌다. 활력징후와 검사 결과는 자료와 같고, 심전도는 그림과 같다. 가장 가능성이 높은 리듬은? A. 동빈맥 B. 심방세동 C.",
    "text": "Cardiology Three Days of Regular Rapid Palpitations and Breathlessness on Stairs in a Man in His Early Seventies atrial-flutter ecg narrow-complex-tachycardia carotid-sinus-massage KMLE 2026 / Claude 71세 남자가 사흘 전부터 가슴이 빨리 뛰고 계단을 오를 때 숨이 차서 왔다. 가슴 통증과 실신은 없었다. 10년 전부터 고혈압약을 먹고 있다. 맥박은 규칙적이고 빠르며 폐 청진은 깨끗하다. 경동맥동 마사지를 하자 심실 박동이 몇 초간 느려지면서 기저선에 규칙적인 톱니 모양 물결이 드러났다가 다시 빨라졌다. 활력징후와 검사 결과는 자료와 같고, 심전도는 그림과 같다. 가장 가능성이 높은 리듬은? A. 동빈맥 B. 심방세동 C. 심방조동 D. 방실결절 재진입 빈맥 E. 다소성 심방빈맥 규칙적인 좁은 QRS 빈맥이 정확히 150회/분이고, 경동맥동 마사지로 방실 전도가 잠깐 줄 때 톱니 모양 심방 물결이 드러났다가 다시 빨라지므로 2:1 전도 심방조동이다."
+  },
+  {
+   "id": "imaging-2026-0737",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 건강검진 심전도를 가져온 고령 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202240Z_일일심전도_2026-11-21_2units_2q_a0c2032f",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0737.md",
+   "snippet": "A 76 year old woman comes for a routine health examination. She walks daily and has no chest pain, dyspnea, palpitations, or syncope. She has hypertension controlled with amlodipine. There is no family history of sudden death. Blood pressur",
+   "text": "순환기 심전도 판독 — 건강검진 심전도를 가져온 고령 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202240Z_일일심전도_2026-11-21_2units_2q_a0c2032f A 76 year old woman comes for a routine health examination. She walks daily and has no chest pain, dyspnea, palpitations, or syncope. She has hypertension controlled with amlodipine. There is no family history of sudden death. Blood pressure is 128/76 mm Hg, and pulse is 72/min and regular. The second heart sound is normally split, and no murmurs are heard. Serum potassium concentration is 4.3 mEq/L. A 12 lead ECG is shown. Which of the following is the most likely interpretation of this ECG? A. Incomplete right bundle branch block B. Complete right bundle branch block C. Brugada pattern D. Left posterior fascicular block E. Right ventricular hypertrophy"
+  },
+  {
+   "id": "imaging-2026-0736",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 설사와 열로 기운이 없는 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202240Z_일일심전도_2026-11-21_2units_2q_a0c2032f",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0736.md",
+   "snippet": "52세 남자가 이틀 전부터 하루 여섯 번 이상의 물설사와 열이 있어 기운이 없다며 왔다. 가슴 통증이나 두근거림은 없다. 체온 38.3℃, 혈압 108/68 mmHg, 맥박 102회/분, 호흡 18회/분이다. 혀가 말라 있고 복부는 부드럽다. 혈청 나트륨 136 mEq/L, 칼륨 3.6 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 다소성 심방빈맥 B. 동빈맥 C. 2:1 전도의 심",
+   "text": "순환기 심전도 판독 — 설사와 열로 기운이 없는 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202240Z_일일심전도_2026-11-21_2units_2q_a0c2032f 52세 남자가 이틀 전부터 하루 여섯 번 이상의 물설사와 열이 있어 기운이 없다며 왔다. 가슴 통증이나 두근거림은 없다. 체온 38.3℃, 혈압 108/68 mmHg, 맥박 102회/분, 호흡 18회/분이다. 혀가 말라 있고 복부는 부드럽다. 혈청 나트륨 136 mEq/L, 칼륨 3.6 mEq/L 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 다소성 심방빈맥 B. 동빈맥 C. 2:1 전도의 심방조동 D. 발작성 상심실빈맥 E. 심방세동"
+  },
+  {
+   "id": "imaging-2026-0735",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 항암치료를 기다리는 폐암 환자의 저나트륨혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0735.md",
+   "snippet": "66세 남자가 2주 전부터 기운이 없고 메스껍다며 왔다. 40갑년의 흡연력이 있고 한 달 전 소세포폐암을 진단받아 항암치료를 기다리고 있다. 이뇨제는 먹지 않는다. 혈압 132/80 mmHg, 맥박 76회/분이며 기립 시 혈압 변화는 없다. 점막은 촉촉하고 경정맥 확장이나 부종은 없다. 혈청 나트륨 121 mEq/L, 칼륨 4.1 mEq/L, 혈장 삼투압 252 mOsm/kg, 혈당 98 mg/dL, 요소질소 8 mg/dL, ",
+   "text": "내분비 내분비·대사 — 항암치료를 기다리는 폐암 환자의 저나트륨혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 66세 남자가 2주 전부터 기운이 없고 메스껍다며 왔다. 40갑년의 흡연력이 있고 한 달 전 소세포폐암을 진단받아 항암치료를 기다리고 있다. 이뇨제는 먹지 않는다. 혈압 132/80 mmHg, 맥박 76회/분이며 기립 시 혈압 변화는 없다. 점막은 촉촉하고 경정맥 확장이나 부종은 없다. 혈청 나트륨 121 mEq/L, 칼륨 4.1 mEq/L, 혈장 삼투압 252 mOsm/kg, 혈당 98 mg/dL, 요소질소 8 mg/dL, 크레아티닌 0.7 mg/dL 이다. 소변 삼투압 520 mOsm/kg, 소변 나트륨 68 mEq/L 이다. 갑상샘자극호르몬과 아침 코르티솔은 정상이다. 의식은 명료하고 경련은 없다. 첫 치료로 가장 적절한 것은? A. 0.9 % 생리식염수 정맥 주입 B. 3 % 고장성 식염수 100 mL 빠른 정맥 주입 C. 플루드로코르티손 투여 D. 푸로세마이드 단독 투여 E. 수분 섭취 제한"
+  },
+  {
+   "id": "imaging-2026-0734",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 고령자의 발열·두통·목 경직과 경험적 항생제",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0734.md",
+   "snippet": "A 68 year old man is brought to the emergency department by his wife because of fever, severe headache, and confusion that began 18 hours ago. He has type 2 diabetes mellitus treated with metformin. He has no drug allergies. His temperature",
+   "text": "감염 감염 — 고령자의 발열·두통·목 경직과 경험적 항생제 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 A 68 year old man is brought to the emergency department by his wife because of fever, severe headache, and confusion that began 18 hours ago. He has type 2 diabetes mellitus treated with metformin. He has no drug allergies. His temperature is 39.4°C, pulse is 112/min, and blood pressure is 118/70 mm Hg. He is oriented only to person. Neck flexion is painful and limited. There is no rash. Funduscopic examination shows sharp optic disc margins, and there are no focal neurologic deficits. Blood cultures are obtained. CT of the head shows no abnormalities. Cerebrospinal fluid analysis shows a leukocyte count of 1,850/mm3 (88% neutrophils), glucose of 22 mg/dL (serum 168 mg/dL), and protein of 240 mg/dL. Gram stain is pending. Which of the following is the most appropriate pharmacotherapy? A. Ampicillin and gentamicin B. Dexamethasone, ceftriaxone, vancomycin, and ampicillin C. Dexamethasone, ceftriaxone, and vancomycin D. Ceftriaxone alone E. Acyclovir alone"
+  },
+  {
+   "id": "imaging-2026-0733",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 벼락두통 뒤 머리 CT 가 정상인 환자",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0733.md",
+   "snippet": "45세 여자가 운동 중 갑자기 「평생 가장 심한」 두통이 생겨 10시간 뒤 응급실에 왔다. 두통은 몇 초 만에 최고조에 이르렀고 한 번 토하였다. 의식은 명료하다. 혈압 152/90 mmHg, 맥박 84회/분, 체온 36.8℃ 이다. 목 경직이 약간 있고 국소 신경학적 이상은 없다. 비조영 머리 CT 는 정상이다. 다음 검사로 가장 적절한 것은? A. 조영증강 뇌 MRI 를 외래로 예약 B. 경동맥 이중초음파 C. 두통 일지를",
+   "text": "신경 신경 — 벼락두통 뒤 머리 CT 가 정상인 환자 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 45세 여자가 운동 중 갑자기 「평생 가장 심한」 두통이 생겨 10시간 뒤 응급실에 왔다. 두통은 몇 초 만에 최고조에 이르렀고 한 번 토하였다. 의식은 명료하다. 혈압 152/90 mmHg, 맥박 84회/분, 체온 36.8℃ 이다. 목 경직이 약간 있고 국소 신경학적 이상은 없다. 비조영 머리 CT 는 정상이다. 다음 검사로 가장 적절한 것은? A. 조영증강 뇌 MRI 를 외래로 예약 B. 경동맥 이중초음파 C. 두통 일지를 쓰며 경과 관찰 D. 요추천자 E. 뇌파검사"
+  },
+  {
+   "id": "imaging-2026-0732",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 심방세동 환자의 진찰보다 심한 복통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0732.md",
+   "snippet": "A 74 year old woman is brought to the emergency department 3 hours after the sudden onset of severe, diffuse abdominal pain. She vomited once and had one loose bowel movement. She has atrial fibrillation and stopped taking warfarin 2 months",
+   "text": "외과 외과계 — 심방세동 환자의 진찰보다 심한 복통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 A 74 year old woman is brought to the emergency department 3 hours after the sudden onset of severe, diffuse abdominal pain. She vomited once and had one loose bowel movement. She has atrial fibrillation and stopped taking warfarin 2 months ago because of bruising. Her temperature is 37.2°C, pulse is 118/min and irregularly irregular, and blood pressure is 142/84 mm Hg. She is writhing in pain, but the abdomen is soft and only mildly tender without guarding or rebound. Bowel sounds are present. Leukocyte count is 16,800/mm3, and serum lactate is 3.4 mmol/L. Serum lipase is within the reference range. Which of the following is the most appropriate next step in diagnosis? A. Upright abdominal radiograph B. Colonoscopy C. Observation with repeat abdominal examinations D. CT angiography of the abdomen E. Abdominal ultrasonography"
+  },
+  {
+   "id": "imaging-2026-0731",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 회복된 경증 담석췌장염의 다음 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0731.md",
+   "snippet": "52세 여자가 하루 전 시작된 명치 통증이 등으로 뻗친다며 왔다. 술은 마시지 않는다. 체온 37.4℃, 혈압 128/78 mmHg, 맥박 92회/분이다. 혈청 리파아제는 1,850 U/L(참고치 < 60), 알라닌아미노전달효소 210 U/L, 총빌리루빈 1.4 mg/dL 이었다. 복부 초음파에서 담낭 안에 여러 개의 담석이 있고 총담관 지름은 5 mm 이다. 수액과 진통제로 치료한 뒤 사흘째 통증이 사라졌고 식사를 잘 하며,",
+   "text": "소화기 소화기 — 회복된 경증 담석췌장염의 다음 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 52세 여자가 하루 전 시작된 명치 통증이 등으로 뻗친다며 왔다. 술은 마시지 않는다. 체온 37.4℃, 혈압 128/78 mmHg, 맥박 92회/분이다. 혈청 리파아제는 1,850 U/L(참고치 < 60), 알라닌아미노전달효소 210 U/L, 총빌리루빈 1.4 mg/dL 이었다. 복부 초음파에서 담낭 안에 여러 개의 담석이 있고 총담관 지름은 5 mm 이다. 수액과 진통제로 치료한 뒤 사흘째 통증이 사라졌고 식사를 잘 하며, 간기능검사는 정상으로 돌아왔다. 장기부전이나 국소 합병증은 없었다. 다음 처치로 가장 적절한 것은? A. 우르소데옥시콜산을 먹으며 경과 관찰 B. 예방적 카바페넴 투여 C. 같은 입원 중 복강경 담낭절제술 D. 내시경역행담췌관조영술과 괄약근절개술 E. 6주 뒤 외래에서 담낭절제술 계획"
+  },
+  {
+   "id": "imaging-2026-0730",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 중기 초음파의 태아 계측 단면",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0730.md",
+   "snippet": "A woman at 20 weeks' gestation comes for a routine second trimester anatomy ultrasound. She has had no bleeding or abdominal pain, and she feels the fetus move. Her blood pressure is 112/70 mm Hg. A first trimester ultrasound confirmed a si",
+   "text": "산부인과 산과 — 임신 중기 초음파의 태아 계측 단면 opendata usmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 A woman at 20 weeks' gestation comes for a routine second trimester anatomy ultrasound. She has had no bleeding or abdominal pain, and she feels the fetus move. Her blood pressure is 112/70 mm Hg. A first trimester ultrasound confirmed a single intrauterine pregnancy. During fetal biometry, the sonographer obtains the still image shown. The caliper for the measurement taken in this plane is placed along the brightest straight echogenic structure. Which of the following measurements is obtained in this plane? A. Femur length B. Biparietal diameter C. Abdominal circumference D. Head circumference E. Crown rump length"
+  },
+  {
+   "id": "imaging-2026-0729",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 기관 삽관 뒤에도 산소화가 나쁜 바이러스 폐렴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0729.md",
+   "snippet": "43세 남자가 5일 전부터 열과 기침이 있다가 이틀 전부터 숨이 차서 왔다. 비인두 검체의 SARS CoV 2 PCR 은 양성이다. 고유량 산소에도 산소포화도가 85 % 로 떨어져 기관 삽관 후 인공호흡을 시작하였다. 키는 175 cm 이다. 인공호흡기 설정은 일회호흡량 600 mL, PEEP 8 cmH2O, 흡입산소분율 0.8 이고, 동맥혈 산소분압은 72 mmHg 이다. 심장초음파에서 좌심실 박출률은 60 % 이다. 삽관 ",
+   "text": "호흡기 호흡기 — 기관 삽관 뒤에도 산소화가 나쁜 바이러스 폐렴 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 43세 남자가 5일 전부터 열과 기침이 있다가 이틀 전부터 숨이 차서 왔다. 비인두 검체의 SARS CoV 2 PCR 은 양성이다. 고유량 산소에도 산소포화도가 85 % 로 떨어져 기관 삽관 후 인공호흡을 시작하였다. 키는 175 cm 이다. 인공호흡기 설정은 일회호흡량 600 mL, PEEP 8 cmH2O, 흡입산소분율 0.8 이고, 동맥혈 산소분압은 72 mmHg 이다. 심장초음파에서 좌심실 박출률은 60 % 이다. 삽관 후 흉부 X선 사진은 그림과 같다. 인공호흡 방법으로 가장 적절한 것은? A. 예측체중 kg 당 6 mL 의 일회호흡량 B. 실제 체중 kg 당 10 mL 의 일회호흡량 C. PEEP 를 0 cmH2O 로 낮춤 D. 흡입산소분율 1.0 을 계속 유지 E. 호흡수를 분당 8회로 줄임"
+  },
+  {
+   "id": "imaging-2026-0728",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 탈장 수술 전 평가를 받는 고령 남성의 심전도",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0728.md",
+   "snippet": "A 72 year old man comes for a preoperative evaluation before elective inguinal hernia repair. He walks 2 km daily without chest pain, dyspnea, or palpitations. He has no history of hypertension, and he takes no medications. He is 168 cm tal",
+   "text": "순환기 순환기 — 탈장 수술 전 평가를 받는 고령 남성의 심전도 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 A 72 year old man comes for a preoperative evaluation before elective inguinal hernia repair. He walks 2 km daily without chest pain, dyspnea, or palpitations. He has no history of hypertension, and he takes no medications. He is 168 cm tall and weighs 63 kg. Blood pressure is 124/76 mm Hg, and pulse is 66/min and regular. No murmurs are heard. Serum electrolyte concentrations are within the reference ranges. A 12 lead ECG is shown. Which of the following best describes this ECG? A. Low QRS voltage in the limb leads B. Increased precordial QRS voltage without ST T abnormalities C. Left ventricular hypertrophy with a repolarization (strain) abnormality D. Right ventricular hypertrophy with right axis deviation E. Complete left bundle branch block"
+  },
+  {
+   "id": "imaging-2026-0727",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 시력이 흐려진 당뇨병 환자의 황반 주위 노란 침착물",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "fundus"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9",
+   "confidence": "high",
+   "date": "2026-11-20",
+   "path": "content/imaging/2026/imaging-2026-0727.md",
+   "snippet": "15년 전 제2형 당뇨병을 진단받은 환자가 몇 달 전부터 오른눈이 흐리게 보인다며 왔다. 눈의 통증이나 충혈은 없다. 혈당강하제를 불규칙하게 먹었고 당화혈색소는 9.8 % 이다. 혈압은 136/84 mmHg 이다. 오른눈 교정시력은 0.4 이고 안압은 정상이다. 산동 후 오른눈의 안저 사진은 그림과 같다. 황반 주위에 모여 있는 노란 침착물의 성분으로 가장 적절한 것은? A. 망막 안으로 새어 나온 적혈구 B. 망막 표면에 자",
+   "text": "안과 안과 — 시력이 흐려진 당뇨병 환자의 황반 주위 노란 침착물 opendata kmle_style fundus 의대_시험지_제작 오픈데이터 영상 세트 / 20261120T202118Z_일일영상_2026-11-21_9units_9q_21cc9fc9 15년 전 제2형 당뇨병을 진단받은 환자가 몇 달 전부터 오른눈이 흐리게 보인다며 왔다. 눈의 통증이나 충혈은 없다. 혈당강하제를 불규칙하게 먹었고 당화혈색소는 9.8 % 이다. 혈압은 136/84 mmHg 이다. 오른눈 교정시력은 0.4 이고 안압은 정상이다. 산동 후 오른눈의 안저 사진은 그림과 같다. 황반 주위에 모여 있는 노란 침착물의 성분으로 가장 적절한 것은? A. 망막 안으로 새어 나온 적혈구 B. 망막 표면에 자란 섬유혈관 조직 C. 혈관 밖으로 새어 나온 지단백과 지질 D. 축삭 수송이 멈춰 쌓인 신경섬유층 축삭 내용물 E. 브루크막과 망막색소상피 사이에 쌓인 세포외 침착물"
   },
   {
    "id": "imaging-2026-0726",
