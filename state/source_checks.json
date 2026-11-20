@@ -63,6 +63,66 @@
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "10.1001/jama.2016.0287": {
+  "concepts": [
+   "cn.em.sepsis.initial-resuscitation-bundle"
+  ],
+  "title": "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1001/jama.2017.12137": {
+  "concepts": [
+   "cn.obgyn.urinary-incontinence.type-first-treatment"
+  ],
+  "title": "Urinary Incontinence in Women: A Review",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1002/14651858.CD000155.pub2": {
+  "concepts": [
+   "cn.obgyn.endometriosis.pain-vs-fertility-treatment"
+  ],
+  "title": "Ovulation suppression for endometriosis for women with subfertility",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1002/14651858.CD002215": {
+  "concepts": [
+   "cn.prev.provider-payment.incentive-comparison"
+  ],
+  "title": "Capitation, salary, fee-for-service and mixed systems of payment: effects on the behaviour of primary care physicians",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1002/14651858.CD005654.pub4": {
+  "concepts": [
+   "cn.obgyn.urinary-incontinence.type-first-treatment"
+  ],
+  "title": "Pelvic floor muscle training versus no treatment, or inactive control treatments, for urinary incontinence in women",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1002/acr.24180": {
   "concepts": [
    "cn.rheum.gout.hla-b5801-before-allopurinol"
@@ -115,6 +175,30 @@
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "10.1002/hpm.2565": {
+  "concepts": [
+   "cn.prev.provider-payment.incentive-comparison"
+  ],
+  "title": "What characteristics of provider payment mechanisms influence health care providers' behaviour? A literature review",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1002/ijgo.14116": {
+  "concepts": [
+   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step"
+  ],
+  "title": "FIGO recommendations on the management of postpartum hemorrhage 2022",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1002/jhbp.515": {
   "concepts": [
    "cn.gs.acute-cholecystitis.grade2-early-lc"
@@ -143,6 +227,18 @@
   "fingerprint": "[\"ErratumIn:31658506\"]",
   "baseline": "[\"ErratumIn:31658506\"]"
  },
+ "10.1002/uog.20353": {
+  "concepts": [
+   "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test"
+  ],
+  "title": "Risk of miscarriage following amniocentesis or chorionic villus sampling: systematic review of literature and updated meta-analysis",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1007/978-3-662-63123-2": {
   "concepts": [
    "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia"
@@ -155,6 +251,42 @@
   "baseline": "registered",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.1007/s00068-018-0942-7": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "Systematic review and meta-analysis of tube thoracostomy following traumatic chest injury; suction versus water seal",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1007/s00134-021-06506-y": {
+  "concepts": [
+   "cn.em.sepsis.initial-resuscitation-bundle"
+  ],
+  "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1007/s10654-016-0149-3": {
+  "concepts": [
+   "cn.prev.hypothesis-testing.test-selection-and-interpretation"
+  ],
+  "title": "Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1016/S0140-6736(05)71144-2": {
   "concepts": [
@@ -199,6 +331,18 @@
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
   "baseline_method": "pubmed"
  },
+ "10.1016/S0140-6736(17)30638-4": {
+  "concepts": [
+   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step"
+  ],
+  "title": "Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage (WOMAN)",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:28483296\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:28483296\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1016/S0140-6736(22)01015-7": {
   "concepts": [
    "cn.ortho.torus-fracture.splint-no-reduction"
@@ -227,6 +371,54 @@
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "10.1016/j.ajem.2022.05.001": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "Pericardial tamponade: A comprehensive emergency medicine and echocardiography review",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.ajog.2022.06.059": {
+  "concepts": [
+   "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption"
+  ],
+  "title": "Placental abruption at near-term and term gestations: pathophysiology, epidemiology, diagnosis, and management",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.ajog.2025.09.010": {
+  "concepts": [
+   "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption"
+  ],
+  "title": "Cesarean delivery for placenta previa",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.anclin.2018.09.009": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "Advanced Trauma Life Support Update 2019: Management and Applications for Adults and Special Populations",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1016/j.chest.2021.07.055": {
   "concepts": [
    "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
@@ -238,6 +430,66 @@
   "baseline": "[\"ErratumIn:35809930\"]",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.1016/j.cjtee.2026.01.002": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "Chinese expert consensus on the prehospital management of major trauma",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.ejogrb.2016.05.047": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "Shoulder dystocia: guidelines for clinical practice from the French College of Gynecologists and Obstetricians (CNGOF)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.gim.2022.11.004": {
+  "concepts": [
+   "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test"
+  ],
+  "title": "Noninvasive prenatal screening (NIPS) for fetal chromosome abnormalities in a general-risk population: an evidence-based clinical guideline of the ACMG",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:37378664\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:37378664\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.healthpol.2021.09.015": {
+  "concepts": [
+   "cn.prev.provider-payment.incentive-comparison"
+  ],
+  "title": "Balancing financial incentives during COVID-19: A comparison of provider payment adjustments across 20 countries",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:35659115\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:35659115\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.immuni.2020.04.012": {
+  "concepts": [
+   "cn.prev.outbreak-investigation.epidemic-curve-and-steps"
+  ],
+  "title": "Herd Immunity: Understanding COVID-19",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1016/j.jaad.2018.11.057": {
   "concepts": [
@@ -302,6 +554,18 @@
   "baseline": "[\"ErratumIn:38418011\", \"ErratumIn:38897682\"]",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.1016/j.jgyn.2015.09.048": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "Management of shoulder dystocia",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1016/j.jhep.2020.08.018": {
   "concepts": [
@@ -383,6 +647,30 @@
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "10.1038/gim.2017.91": {
+  "concepts": [
+   "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test"
+  ],
+  "title": "Diagnostic cytogenetic testing following positive noninvasive prenatal screening results: a clinical laboratory practice resource of the ACMG",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1038/nrdp.2017.42": {
+  "concepts": [
+   "cn.obgyn.urinary-incontinence.type-first-treatment"
+  ],
+  "title": "Urinary incontinence in women",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:29143807\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:29143807\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1038/s41572-018-0009-4": {
   "concepts": [
    "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa"
@@ -395,6 +683,18 @@
   "status": "ok",
   "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1038/s41572-020-0145-5": {
+  "concepts": [
+   "cn.em.burn.fluid-resuscitation-and-airway"
+  ],
+  "title": "Burn injury",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1038/s41584-023-01045-w": {
   "concepts": [
@@ -594,6 +894,30 @@
   "checked_at": "2026-11-20",
   "baseline": "[]"
  },
+ "10.1093/hropen/hoac009": {
+  "concepts": [
+   "cn.obgyn.endometriosis.pain-vs-fertility-treatment"
+  ],
+  "title": "ESHRE guideline: endometriosis",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1093/jbcr/irad125": {
+  "concepts": [
+   "cn.em.burn.fluid-resuscitation-and-airway"
+  ],
+  "title": "American Burn Association Clinical Practice Guidelines on Burn Shock Resuscitation",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1093/neuonc/noab106": {
   "concepts": [
    "cn.neuro.glioblastoma.ring-enhancing-diagnosis"
@@ -656,6 +980,18 @@
   "fingerprint": "[]",
   "checked_at": "2026-11-20",
   "baseline": "[]"
+ },
+ "10.1097/AOG.0b013e31821a12c9": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "A comparison of obstetric maneuvers for the acute management of shoulder dystocia",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1097/DCR.0000000000001679": {
   "concepts": [
@@ -723,6 +1059,30 @@
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]"
+ },
+ "10.1111/1471-0528.70258": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "Shoulder Dystocia: Green-top Guideline No. 42",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:43039736\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:43039736\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1111/j.1600-0412.2010.01030.x": {
+  "concepts": [
+   "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption"
+  ],
+  "title": "Placental abruption: epidemiology, risk factors and consequences",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1111/jdv.12107": {
   "concepts": [
@@ -990,6 +1350,18 @@
   "fingerprint": "[\"ErratumIn:34029154\"]",
   "baseline": "[\"ErratumIn:34029154\"]"
  },
+ "10.1161/STROKEAHA.109.551234": {
+  "concepts": [
+   "cn.ent.peripheral-vertigo.timing-trigger-differentiation"
+  ],
+  "title": "HINTS to diagnose stroke in the acute vestibular syndrome: three-step bedside oculomotor examination more sensitive than early MRI diffusion-weighted imaging",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1164/rccm.202303-0558WS": {
   "concepts": [
    "cn.em.ards.lung-protective-ventilation"
@@ -1003,6 +1375,54 @@
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]"
+ },
+ "10.1177/0194599816689667": {
+  "concepts": [
+   "cn.ent.peripheral-vertigo.timing-trigger-differentiation"
+  ],
+  "title": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1177/0194599817722550": {
+  "concepts": [
+   "cn.ent.adult-neck-mass.malignancy-workup"
+  ],
+  "title": "Clinical Practice Guideline: Evaluation of the Neck Mass in Adults",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1177/0194599819859885": {
+  "concepts": [
+   "cn.ent.hearing-loss.conductive-vs-sensorineural"
+  ],
+  "title": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1177/0194599819890327": {
+  "concepts": [
+   "cn.ent.epistaxis.stepwise-control"
+  ],
+  "title": "Clinical Practice Guideline: Nosebleed (Epistaxis)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1183/13993003.02426-2016": {
   "concepts": [
@@ -1041,6 +1461,18 @@
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.1186/s13054-023-04327-7": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1210/jc.2008-0125": {
   "concepts": [
@@ -1094,6 +1526,19 @@
   "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
+ "10.1371/journal.pmed.0040297": {
+  "concepts": [
+   "cn.prev.association-measures.rr-or-ar-selection",
+   "cn.prev.study-design.design-and-bias-identification"
+  ],
+  "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): explanation and elaboration",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.1530/EJE-13-1020": {
   "concepts": [
    "cn.neph.siadh.chronic-mild-fluid-restriction"
@@ -1146,6 +1591,42 @@
   "fingerprint": "[]",
   "baseline": "[]"
  },
+ "10.15585/mmwr.rr7004a1": {
+  "concepts": [
+   "cn.obgyn.vaginitis.ph-microscopy-differentiation"
+  ],
+  "title": "Sexually Transmitted Infections Treatment Guidelines, 2021",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:36701253\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:36701253\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.18332/ejm/142097": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "Overview of techniques to manage shoulder dystocia during vaginal birth",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.18773/austprescr.2025.019": {
+  "concepts": [
+   "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test"
+  ],
+  "title": "Noninvasive prenatal testing: an overview",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.2106/00004623-199308000-00002": {
   "concepts": [
    "cn.ortho.scfe.in-situ-fixation"
@@ -1159,6 +1640,42 @@
   "note": "기준 지문과 같음",
   "doi_pmid": "8354671",
   "baseline_method": "pubmed"
+ },
+ "10.2147/IJGM.S28478": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "Initial assessment and treatment with the Airway, Breathing, Circulation, Disability, Exposure (ABCDE) approach",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.2147/IJWH.S175088": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "Shoulder dystocia: incidence, mechanisms, and management strategies",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.2147/OAEM.S74580": {
+  "concepts": [
+   "cn.em.burn.fluid-resuscitation-and-airway"
+  ],
+  "title": "Assessing inhalation injury in the emergency room",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.2337/dc09-9032": {
   "concepts": [
@@ -1187,6 +1704,30 @@
   "fingerprint": "[]",
   "baseline": "[]"
  },
+ "10.2471/BLT.12.115931": {
+  "concepts": [
+   "cn.prev.provider-payment.incentive-comparison"
+  ],
+  "title": "Hospital payment systems based on diagnosis-related groups: experiences in low- and middle-income countries",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3122/jabfm.2023.230471R1": {
+  "concepts": [
+   "cn.obgyn.urinary-incontinence.type-first-treatment"
+  ],
+  "title": "Non-Surgical Management of Urinary Incontinence",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.3171/spi.2006.4.6.429": {
   "concepts": [
    "cn.ortho.craniocervical-dislocation.no-traction-fusion"
@@ -1199,6 +1740,78 @@
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.3233/VES-150549": {
+  "concepts": [
+   "cn.ent.peripheral-vertigo.timing-trigger-differentiation"
+  ],
+  "title": "Diagnostic criteria for Menière's disease",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3238/arztebl.2018.0012": {
+  "concepts": [
+   "cn.ent.epistaxis.stepwise-control"
+  ],
+  "title": "Current Approaches to Epistaxis Treatment in Primary and Secondary Care",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3346/jkms.2021.36.e26": {
+  "concepts": [
+   "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test"
+  ],
+  "title": "Clinical Practice Guidelines for Prenatal Aneuploidy Screening and Diagnostic Testing from Korean Society of Maternal-Fetal Medicine: (2) Invasive Diagnostic Testing for Fetal Chromosomal Abnormalities",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3346/jkms.2021.36.e27": {
+  "concepts": [
+   "cn.obgyn.aneuploidy-screening.positive-screen-diagnostic-test"
+  ],
+  "title": "Clinical Practice Guidelines for Prenatal Aneuploidy Screening and Diagnostic Testing from Korean Society of Maternal-Fetal Medicine: (1) Prenatal Aneuploidy Screening",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3389/fendo.2022.921220": {
+  "concepts": [
+   "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption"
+  ],
+  "title": "Risk of preterm birth for placenta previa or low-lying placenta and possible preventive interventions: A systematic review and meta-analysis",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3389/fpubh.2017.00307": {
+  "concepts": [
+   "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
+  ],
+  "title": "Sensitivity, Specificity, and Predictive Values: Foundations, Pliabilities, and Pitfalls in Research and Practice",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.3389/fsurg.2023.1123947": {
   "concepts": [
@@ -1214,6 +1827,30 @@
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "10.3390/ebj4020014": {
+  "concepts": [
+   "cn.em.burn.fluid-resuscitation-and-airway"
+  ],
+  "title": "Review of Indications for Endotracheal Intubation in Burn Patients with Suspected Inhalational Injury",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3390/jcm14103457": {
+  "concepts": [
+   "cn.em.trauma-primary-survey.next-priority-intervention"
+  ],
+  "title": "Extended Focused Assessment with Sonography for Trauma in the Emergency Department: A Comprehensive Review",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.3390/jof1010013": {
   "concepts": [
    "cn.derm.pityriasis-versicolor.treatment"
@@ -1226,6 +1863,66 @@
   "status": "ok",
   "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.3390/jpm14060586": {
+  "concepts": [
+   "cn.obgyn.shoulder-dystocia.maneuver-sequence"
+  ],
+  "title": "Shoulder Dystocia: A Comprehensive Literature Review on Diagnosis, Prevention, Complications, Prognosis, and Management",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.3390/medicina57030242": {
+  "concepts": [
+   "cn.em.burn.fluid-resuscitation-and-airway"
+  ],
+  "title": "Technical and Medical Aspects of Burn Size Assessment and Documentation",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.4103/aca.ACA_248_18": {
+  "concepts": [
+   "cn.prev.hypothesis-testing.test-selection-and-interpretation"
+  ],
+  "title": "Selection of appropriate statistical methods for data analysis",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.4266/kjccm.2016.00969": {
+  "concepts": [
+   "cn.em.burn.fluid-resuscitation-and-airway"
+  ],
+  "title": "Management of Critical Burn Injuries: Recent Developments",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.7326/M13-2410": {
+  "concepts": [
+   "cn.obgyn.urinary-incontinence.type-first-treatment"
+  ],
+  "title": "Nonsurgical management of urinary incontinence in women: a clinical practice guideline from the American College of Physicians",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:Ann Intern Med. 2014 Nov 18;161(10):764\"]",
+  "checked_at": "2026-11-20",
+  "baseline": "[\"ErratumIn:Ann Intern Med. 2014 Nov 18;161(10):764\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.7759/cureus.31122": {
   "concepts": [
@@ -1240,6 +1937,18 @@
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "10.7759/cureus.59737": {
+  "concepts": [
+   "cn.obgyn.late-pregnancy-bleeding.previa-vs-abruption"
+  ],
+  "title": "Maternal and Perinatal Outcomes in Placenta Previa: A Comprehensive Review of Evidence",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "10.7759/cureus.98775": {
   "concepts": [
    "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type"
@@ -1252,6 +1961,18 @@
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.7874/jao.2024.00024": {
+  "concepts": [
+   "cn.ent.hearing-loss.conductive-vs-sensorineural"
+  ],
+  "title": "Contemporary Review of Idiopathic Sudden Sensorineural Hearing Loss: Management and Prognosis",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-11-20",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "16340941": {
   "concepts": [
@@ -1515,6 +2236,7 @@
    "cn.peds.stec-hus.supportive-no-antibiotics",
    "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition",
    "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras",
+   "cn.prev.provider-payment.incentive-comparison",
    "cn.psy.ocd.ssri-trial-optimization",
    "cn.psy.ptsd.duration-vs-acute-stress",
    "cn.psy.serotonin-syndrome.cyproheptadine-refractory",
@@ -1592,10 +2314,16 @@
    "cn.cardio.svt.av-nodal-blockade-response",
    "cn.cardio.systolic-murmur.dynamic-auscultation",
    "cn.derm.sweet-syndrome.diagnosis",
+   "cn.em.sepsis.initial-resuscitation-bundle",
+   "cn.em.shock.type-differentiation-first-step",
+   "cn.ent.adult-neck-mass.malignancy-workup",
+   "cn.ent.hearing-loss.conductive-vs-sensorineural",
+   "cn.ent.peripheral-vertigo.timing-trigger-differentiation",
    "cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d",
    "cn.obgyn.hirsutism.ncah-17ohp-exclusion",
    "cn.obgyn.ovarian-germ-cell-tumor.tumor-markers",
    "cn.obgyn.postpartum-preeclampsia.magnesium-antihypertensive",
+   "cn.obgyn.urinary-incontinence.type-first-treatment",
    "cn.ophth.herpes-zoster-ophthalmicus.antiviral-slit-lamp",
    "cn.ophth.neovascular-amd.anti-vegf",
    "cn.ortho.achilles-tendinopathy.steroid-injection-contraindication",
@@ -1605,6 +2333,9 @@
    "cn.ortho.ulnar-neuropathy.localization",
    "cn.pharm.methanol-poisoning.fomepizole-mechanism",
    "cn.physio.distal-rta.alpha-intercalated-h-secretion",
+   "cn.prev.occupational-disease.exposure-to-disease-matching",
+   "cn.prev.screening.criteria-and-lead-length-bias",
+   "cn.prev.study-design.design-and-bias-identification",
    "cn.pulm.hypoxemia.hypoventilation-normal-aa-gradient",
    "cn.pulm.methemoglobinemia.mechanism",
    "cn.rheum.drug-induced-lupus.anti-histone",
@@ -1663,7 +2394,8 @@
  "https://accessmedicine.mhmedical.com/book.aspx?bookid=3541": {
   "concepts": [
    "cn.gs.acute-pancreatitis.biliary-etiology-ultrasound",
-   "cn.gs.cushing-ulcer.vagal-acid-mechanism"
+   "cn.gs.cushing-ulcer.vagal-acid-mechanism",
+   "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
   ],
   "title": "Harrison's Principles of Internal Medicine, 22nd ed. — Chapter 359: Acute and Chronic Pancreatitis",
   "status": "unchecked",
@@ -1681,6 +2413,42 @@
   "baseline": "reachable",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section11.html": {
+  "concepts": [
+   "cn.prev.outbreak-investigation.epidemic-curve-and-steps"
+  ],
+  "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. — Lesson 1 Section 11: Epidemic Disease Occurrence",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-11-20",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html": {
+  "concepts": [
+   "cn.prev.association-measures.rr-or-ar-selection"
+  ],
+  "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. (SS1978) — Lesson 3: Measures of Risk",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-11-20",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson6/section2.html": {
+  "concepts": [
+   "cn.prev.outbreak-investigation.epidemic-curve-and-steps"
+  ],
+  "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. — Lesson 6 Section 2: Steps of an Outbreak Investigation",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-11-20",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
  },
  "https://cjasn.asnjournals.org/": {
   "concepts": [
@@ -1957,6 +2725,30 @@
   "checked_at": "2026-09-25",
   "note": "2026-11-20 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "last_error": "HTTPError: HTTP Error 403: Forbidden"
+ },
+ "https://www.cancer.go.kr/lay1/S1T261C262/contents.do": {
+  "concepts": [
+   "cn.prev.screening.criteria-and-lead-length-bias"
+  ],
+  "title": "국가암검진 사업 — 암종별 대상자 연령기준 및 검진주기",
+  "method": "pattern",
+  "fingerprint": "최종수정일",
+  "checked_at": "2026-11-20",
+  "baseline": "최종수정일",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html": {
+  "concepts": [
+   "cn.prev.occupational-disease.exposure-to-disease-matching"
+  ],
+  "title": "About Hierarchy of Controls",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-11-20",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
  },
  "https://www.cdc.gov/scabies/hcp/clinical-care/index.html": {
   "concepts": [
