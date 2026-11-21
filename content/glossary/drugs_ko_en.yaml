@@ -212,6 +212,17 @@ drugs:
   테르부탈린: terbutaline
   포메피졸: fomepizole
   디설피람: disulfiram
+  # 2026-11-21 신장내과 정리본 8개
+  톨밥탄: tolvaptan
+  인도메타신: indomethacin
+  구연산칼륨: potassium citrate
+  탐스로신: tamsulosin
+  티오프로닌: tiopronin
+  아세타졸아마이드: acetazolamide
+  슈도에페드린: pseudoephedrine
+  알푸조신: alfuzosin
+  캡토프릴: captopril
+  리팜피신: rifampin
 
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
@@ -235,3 +246,14 @@ classes:
   혈관확장제: {en: vasodilator, check: Vasodilator Agents}
   아로마테이스억제제: {en: aromatase inhibitor, check: Aromatase Inhibitors}
   안트라사이클린: {en: anthracycline, check: Anthracyclines}
+  # 2026-11-21 신장내과 정리본 8개
+  안지오텐신수용체차단제: {en: angiotensin receptor blocker, check: Angiotensin Receptor Antagonists}
+  스타틴: {en: statin, check: Hydroxymethylglutaryl-CoA Reductase Inhibitors}
+  베타락탐: {en: beta-lactam, check: beta-Lactams}
+  양성자펌프억제제: {en: proton pump inhibitor, check: Proton Pump Inhibitors}
+  티아지드: {en: thiazide, check: Thiazides}
+  알파차단제: {en: alpha-blocker, check: Adrenergic alpha-Antagonists}
+  면역관문억제제: {en: immune checkpoint inhibitor, check: Immune Checkpoint Inhibitors}
+  설폰아마이드: {en: sulfonamide, check: Sulfonamides}
+  퀴놀론: {en: quinolone, check: Quinolones}
+  항히스타민제: {en: antihistamine, check: Histamine Antagonists}

@@ -831,6 +831,46 @@
   "디설피람": {
    "en": "disulfiram",
    "rxcui": "3554"
+  },
+  "톨밥탄": {
+   "en": "tolvaptan",
+   "rxcui": "358257"
+  },
+  "인도메타신": {
+   "en": "indomethacin",
+   "rxcui": "5781"
+  },
+  "구연산칼륨": {
+   "en": "potassium citrate",
+   "rxcui": "54993"
+  },
+  "탐스로신": {
+   "en": "tamsulosin",
+   "rxcui": "77492"
+  },
+  "티오프로닌": {
+   "en": "tiopronin",
+   "rxcui": "6765"
+  },
+  "아세타졸아마이드": {
+   "en": "acetazolamide",
+   "rxcui": "167"
+  },
+  "슈도에페드린": {
+   "en": "pseudoephedrine",
+   "rxcui": "8896"
+  },
+  "알푸조신": {
+   "en": "alfuzosin",
+   "rxcui": "17300"
+  },
+  "캡토프릴": {
+   "en": "captopril",
+   "rxcui": "1998"
+  },
+  "리팜피신": {
+   "en": "rifampin",
+   "rxcui": "9384"
   }
  },
  "classes": {
@@ -938,6 +978,56 @@
    "en": "anthracycline",
    "mesh": "D018943",
    "mesh_label": "Anthracyclines"
+  },
+  "안지오텐신수용체차단제": {
+   "en": "angiotensin receptor blocker",
+   "mesh": "D057911",
+   "mesh_label": "Angiotensin Receptor Antagonists"
+  },
+  "스타틴": {
+   "en": "statin",
+   "mesh": "D019161",
+   "mesh_label": "Hydroxymethylglutaryl-CoA Reductase Inhibitors"
+  },
+  "베타락탐": {
+   "en": "beta-lactam",
+   "mesh": "D047090",
+   "mesh_label": "beta-Lactams"
+  },
+  "양성자펌프억제제": {
+   "en": "proton pump inhibitor",
+   "mesh": "D054328",
+   "mesh_label": "Proton Pump Inhibitors"
+  },
+  "티아지드": {
+   "en": "thiazide",
+   "mesh": "D049971",
+   "mesh_label": "Thiazides"
+  },
+  "알파차단제": {
+   "en": "alpha-blocker",
+   "mesh": "D000317",
+   "mesh_label": "Adrenergic alpha-Antagonists"
+  },
+  "면역관문억제제": {
+   "en": "immune checkpoint inhibitor",
+   "mesh": "D000082082",
+   "mesh_label": "Immune Checkpoint Inhibitors"
+  },
+  "설폰아마이드": {
+   "en": "sulfonamide",
+   "mesh": "D013449",
+   "mesh_label": "Sulfonamides"
+  },
+  "퀴놀론": {
+   "en": "quinolone",
+   "mesh": "D015363",
+   "mesh_label": "Quinolones"
+  },
+  "항히스타민제": {
+   "en": "antihistamine",
+   "mesh": "D006633",
+   "mesh_label": "Histamine Antagonists"
   }
  },
  "failed": [

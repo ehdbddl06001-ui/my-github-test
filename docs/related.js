@@ -436,6 +436,60 @@ window.MEDKOS_RELATED = {
     "term": "legionella pneumonia"
    }
   ],
+  "cn.neph.adpkd.aneurysm-screening-mra": [
+   {
+    "id": "paper-2026-0120",
+    "how": "t",
+    "term": "intracranial aneurysm"
+   },
+   {
+    "id": "paper-2026-0414",
+    "how": "t",
+    "term": "intracranial aneurysm"
+   }
+  ],
+  "cn.neph.aki.atn-vs-prerenal": [
+   {
+    "id": "paper-2026-0824",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0181",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0128",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0109",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0031",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0025",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0391",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
+    "id": "paper-2026-0340",
+    "how": "a",
+    "term": "acute kidney injury"
+   }
+  ],
   "cn.obgyn.gestational-diabetes.insulin-indication": [
    {
     "id": "paper-2026-0682",
@@ -756,12 +810,28 @@ window.MEDKOS_RELATED = {
   ]
  },
  "papers": {
+  "paper-2026-0025": {
+   "t": "Impact of Early Dose Adjustment of Piperacillin/Tazobactam on Mortality in Critically Ill Patients With Acute Kidney Injury: A Retrospective Multicenter Cohort Study",
+   "j": "The Annals of pharmacotherapy",
+   "d": "2026-07-05",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
+   ]
+  },
   "paper-2026-0026": {
    "t": "Surgical Septal Myectomy and Atrial Myxoma Resection: Two Diseases, One Heart, and a Case Report",
    "j": "The American journal of case reports",
    "d": "2026-07-05",
    "c": [
     "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
+   ]
+  },
+  "paper-2026-0031": {
+   "t": "Determinants of Acute Kidney Injury After Endoscopic Retrograde Cholangiopancreatography in Patients With Liver Cirrhosis: Retrospective Observational Study",
+   "j": "JMIR medical informatics",
+   "d": "2026-07-06",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
    ]
   },
   "paper-2026-0035": {
@@ -830,6 +900,30 @@ window.MEDKOS_RELATED = {
     "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   },
+  "paper-2026-0109": {
+   "t": "Acute kidney injury after heart transplantation: A systematic review and meta-analysis",
+   "j": "Transplantation reviews (Orlando, Fla.)",
+   "d": "2026-07-24",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
+   ]
+  },
+  "paper-2026-0120": {
+   "t": "Delayed coil migration after endovascular treatment of a ruptured intracranial aneurysm managed by open microsurgical surgery: illustrative case",
+   "j": "Journal of neurosurgery. Case lessons",
+   "d": "2026-07-27",
+   "c": [
+    "cn.neph.adpkd.aneurysm-screening-mra"
+   ]
+  },
+  "paper-2026-0128": {
+   "t": "Dapagliflozin and Acute Kidney Injury Following Cardiac Surgery: A Randomized Clinical Trial",
+   "j": "JAMA",
+   "d": "2026-07-30",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
+   ]
+  },
   "paper-2026-0145": {
    "t": "Myocardial fibrosis in patients with coronary artery disease and diabetes mellitus assessed by cardiovascular magnetic resonance T1 mapping",
    "j": "The international journal of cardiovascular imaging",
@@ -860,6 +954,14 @@ window.MEDKOS_RELATED = {
    "d": "2026-08-10",
    "c": [
     "cn.gs.acute-cholecystitis.grade2-early-lc"
+   ]
+  },
+  "paper-2026-0181": {
+   "t": "Kidney-Targeted Biomimetic Nanoparticles Loaded With Apolipoprotein H Alleviate Sepsis-Associated Acute Kidney Injury by Inhibiting the TLR4/NF-κB Pathway",
+   "j": "Journal of biomedical materials research. Part A",
+   "d": "2026-08",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
    ]
   },
   "paper-2026-0189": {
@@ -1034,6 +1136,14 @@ window.MEDKOS_RELATED = {
     "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   },
+  "paper-2026-0340": {
+   "t": "Impact of diabetes on the effects of sodium glucose co-transporter-2 inhibitors on kidney outcomes: collaborative meta-analysis of large placebo-controlled trials",
+   "j": "Lancet (London, England)",
+   "d": "2022-11-19",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
+   ]
+  },
   "paper-2026-0347": {
    "t": "IAP Guidelines for the Surgical Management of Acute Pancreatitis",
    "j": "Pancreatology : official journal of the International Association of Pancreatology (IAP) ... [et al.]",
@@ -1090,6 +1200,14 @@ window.MEDKOS_RELATED = {
     "cn.prev.association-measures.rr-or-ar-selection"
    ]
   },
+  "paper-2026-0391": {
+   "t": "Chronic kidney disease after acute kidney injury: a systematic review and meta-analysis",
+   "j": "Kidney international",
+   "d": "2012-03",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
+   ]
+  },
   "paper-2026-0400": {
    "t": "Pheochromocytoma and paraganglioma: an endocrine society clinical practice guideline",
    "j": "The Journal of clinical endocrinology and metabolism",
@@ -1104,6 +1222,14 @@ window.MEDKOS_RELATED = {
    "d": "2004-06",
    "c": [
     "cn.psy.ptsd.duration-vs-acute-stress"
+   ]
+  },
+  "paper-2026-0414": {
+   "t": "Guidelines for the Management of Patients With Unruptured Intracranial Aneurysms: A Guideline for Healthcare Professionals From the American Heart Association/American Stroke Association",
+   "j": "Stroke",
+   "d": "2015-08",
+   "c": [
+    "cn.neph.adpkd.aneurysm-screening-mra"
    ]
   },
   "paper-2026-0425": {
@@ -1466,6 +1592,14 @@ window.MEDKOS_RELATED = {
     "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   },
+  "paper-2026-0824": {
+   "t": "Furosemide Stress Test in Adults and Children With Acute Kidney Injury: A Systematic Review and Meta-Analysis",
+   "j": "Critical care medicine",
+   "d": "2026-10-21",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal"
+   ]
+  },
   "paper-2026-0833": {
    "t": "Atypical echocardiographic phenotype of end-stage hypertrophic cardiomyopathy: a case series",
    "j": "Frontiers in cardiovascular medicine",
@@ -1727,6 +1861,8 @@ window.MEDKOS_RELATED = {
   "cn.gs.acute-pancreatitis.biliary-etiology-ultrasound": "급성 췌장염 — 원인 찾기의 첫 영상은 복부 초음파",
   "cn.id.invasive-aspergillosis.angioinvasion-mechanism": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
   "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": "레지오넬라 폐렴 — 급성 단서가 모이면 소변 항원",
+  "cn.neph.adpkd.aneurysm-screening-mra": "다낭신 — 동맥류 가족력이면 증상 없어도 뇌 MRA",
+  "cn.neph.aki.atn-vs-prerenal": "급성 세관괴사 vs 신전성 — 세관이 살아 있는가",
   "cn.obgyn.gestational-diabetes.insulin-indication": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
   "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
