@@ -2,6 +2,1475 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0748",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 일주일째 두근거림이 있는 고혈압 고령 남성",
+  "type": "심전도 처치 — 일주일째 두근거림이 있는 고혈압 고령 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-21",
+  "vignette": "66세 남자가 일주일 전부터 가끔 가슴이 두근거린다며 왔다. 가슴 통증, 숨참, 어지러움, 실신은 없다. 10년 전부터 고혈압으로 암로디핀을 먹고 있으며 당뇨병, 심부전, 뇌졸중의 병력은 없다. 혈압 134/82 mmHg, 맥박 84회/분이고 불규칙하다. 호흡음은 깨끗하고 다리 부종은 없다. 혈색소 14.1 g/dL, 혈소판 23만/mm³, 크레아티닌 0.9 mg/dL, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "경구 항응고제(아픽사반) 시작",
+   "아스피린 시작",
+   "즉시 동기화 전기 심율동전환",
+   "아데노신 정맥주사",
+   "아미오다론 정맥 부하"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: II 리듬 스트립의 <b>RR 간격이 일정한 규칙 없이 불규칙</b>하고 QRS 앞에 일정한 P파가 없으며 기저선이 잔물결 모양이다 — 심방세동이다(넓은 조기 박동 1개는 심실 기외수축). 평균 심박수가 약 84회/분으로 조절돼 있고 혈역학이 안정적이다. CHA₂DS₂-VASc 는 나이 65~74세 1점 + 고혈압 1점 = 2점이고 출혈 위험 요인(빈혈·혈소판 감소·신기능 저하)이 없으므로 <b>경구 항응고제(DOAC)</b>를 시작한다.\n- 원리: <b>왜 항응고가 먼저인가</b>: 심방세동에서는 심방이 수축하지 못해 좌심방귀에 피가 고이고 혈전이 생겨 뇌로 날아간다 — 심방세동 뇌졸중은 크고 장애가 심하다. 증상이 가볍더라도 환자를 살리는 처치는 리듬보다 <b>색전 예방</b>이다. 위험은 CHA₂DS₂-VASc(심부전·고혈압·나이 ≥75[2점]·당뇨병·뇌졸중[2점]·혈관질환·65~74세·여성)로 매기며, 남자 2점 이상이면 경구 항응고제를 권한다. 판막성(중등도 이상 승모판 협착·기계판막)이 아니면 와파린보다 출혈이 적은 DOAC 를 먼저 쓴다.<br> <b>왜 아스피린이 아닌가</b>: 심방세동의 혈전은 느린 혈류에서 생기는 피브린 위주의 「적색 혈전」이라 혈소판 억제로는 거의 막지 못하고, 출혈은 항응고제와 비슷하게 늘린다.<br> <b>왜 지금 리듬을 바꾸지 않는가</b>: 심방세동이 48시간 넘게(또는 언제 시작했는지 모르게) 지속됐으면 이미 혈전이 있을 수 있어, 심율동전환(전기·약물) 순간 정상 수축이 돌아오며 혈전이 떨어질 수 있다. 3주 이상 항응고 후 또는 경식도 초음파로 혈전이 없음을 확인한 뒤에 한다. 박동수가 이미 조절돼 있어 급한 박동수 조절도 필요 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">경구 항응고제 시작(정답)</th><th>즉시 전기 심율동전환(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>안정</b>(혈압 134/82, 증상 경미)</td><td>저혈압·쇼크·폐부종·진행 중인 허혈</td></tr> <tr><td>지속 시간</td><td>일주일(&gt; 48시간)</td><td>48시간 미만이 확실하거나 불안정해 기다릴 수 없음</td></tr> <tr><td>혈전 위험</td><td>CHA₂DS₂-VASc 2점 → 항응고</td><td>전환 전 3주 항응고 또는 경식도 초음파 필요</td></tr> <tr><td>심박수</td><td>약 84회/분 — 조절됨</td><td>조절 안 되는 빠른 심실 반응</td></tr> </tbody></table> 안정된 심방세동의 순서는 「항응고 필요성 → 박동수 → (필요하면) 리듬」이다. 불안정할 때만 이 순서를 건너뛰고 바로 전기 심율동전환한다.\n- 오답 이유:\n  - ② 아스피린은 예전에 저위험 심방세동에 쓰였으나 뇌졸중 예방 효과가 거의 없어, 항응고제를 절대 쓸 수 없는 경우에도 권하지 않는다.\n  - ③ 즉시 동기화 전기 심율동전환은 저혈압·폐부종·허혈성 흉통처럼 혈역학이 불안정한 심방세동이라면 정답이 된다.\n  - ④ 아데노신은 규칙적인 좁은 QRS 빈맥(방실결절 회귀성 빈맥)을 끊거나 진단할 때라면 정답이 되지만 심방세동은 끊지 못한다.\n  - ⑤ 아미오다론 정맥 부하는 심부전이 있는 환자에서 빠른 심실 반응을 조절하거나 리듬을 되돌려야 할 때라면 고려된다.\n- 함정: 심방세동을 보면 리듬을 되돌리는 처치부터 고르고, 48시간 넘게 지속된 안정 환자에서 가장 중요한 뇌졸중 예방(항응고)을 놓치는 것.\n- 학습목표: 불규칙하게 불규칙한 RR 과 P파 소실을 심방세동으로 판독하고, 심박수가 조절되고 혈역학이 안정된 고령·고혈압 환자에서 뇌졸중 위험 점수에 따라 경구 항응고제를 시작하는 처치를 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 258: Atrial Fibrillation · Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156 · Van Gelder IC, Rienstra M, Bunting KV, et al. 2024 ESC guidelines for the management of atrial fibrillation. Eur Heart J. 2024;45(36):3314-3414 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12205 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립의 <b>RR 간격이 일정한 규칙 없이 불규칙</b>하고 QRS 앞에 일정한 P파가 없으며 기저선이 잔물결 모양이다 — 심방세동이다(넓은 조기 박동 1개는 심실 기외수축). 평균 심박수가 약 84회/분으로 조절돼 있고 혈역학이 안정적이다. CHA₂DS₂-VASc 는 나이 65~74세 1점 + 고혈압 1점 = 2점이고 출혈 위험 요인(빈혈·혈소판 감소·신기능 저하)이 없으므로 <b>경구 항응고제(DOAC)</b>를 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 항응고가 먼저인가</b>: 심방세동에서는 심방이 수축하지 못해 좌심방귀에 피가 고이고 혈전이 생겨 뇌로 날아간다 — 심방세동 뇌졸중은 크고 장애가 심하다. 증상이 가볍더라도 환자를 살리는 처치는 리듬보다 <b>색전 예방</b>이다. 위험은 CHA₂DS₂-VASc(심부전·고혈압·나이 ≥75[2점]·당뇨병·뇌졸중[2점]·혈관질환·65~74세·여성)로 매기며, 남자 2점 이상이면 경구 항응고제를 권한다. 판막성(중등도 이상 승모판 협착·기계판막)이 아니면 와파린보다 출혈이 적은 DOAC 를 먼저 쓴다.<br> <b>왜 아스피린이 아닌가</b>: 심방세동의 혈전은 느린 혈류에서 생기는 피브린 위주의 「적색 혈전」이라 혈소판 억제로는 거의 막지 못하고, 출혈은 항응고제와 비슷하게 늘린다.<br> <b>왜 지금 리듬을 바꾸지 않는가</b>: 심방세동이 48시간 넘게(또는 언제 시작했는지 모르게) 지속됐으면 이미 혈전이 있을 수 있어, 심율동전환(전기·약물) 순간 정상 수축이 돌아오며 혈전이 떨어질 수 있다. 3주 이상 항응고 후 또는 경식도 초음파로 혈전이 없음을 확인한 뒤에 한다. 박동수가 이미 조절돼 있어 급한 박동수 조절도 필요 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">경구 항응고제 시작(정답)</th><th>즉시 전기 심율동전환(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>안정</b>(혈압 134/82, 증상 경미)</td><td>저혈압·쇼크·폐부종·진행 중인 허혈</td></tr> <tr><td>지속 시간</td><td>일주일(&gt; 48시간)</td><td>48시간 미만이 확실하거나 불안정해 기다릴 수 없음</td></tr> <tr><td>혈전 위험</td><td>CHA₂DS₂-VASc 2점 → 항응고</td><td>전환 전 3주 항응고 또는 경식도 초음파 필요</td></tr> <tr><td>심박수</td><td>약 84회/분 — 조절됨</td><td>조절 안 되는 빠른 심실 반응</td></tr> </tbody></table> 안정된 심방세동의 순서는 「항응고 필요성 → 박동수 → (필요하면) 리듬」이다. 불안정할 때만 이 순서를 건너뛰고 바로 전기 심율동전환한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 아스피린은 예전에 저위험 심방세동에 쓰였으나 뇌졸중 예방 효과가 거의 없어, 항응고제를 절대 쓸 수 없는 경우에도 권하지 않는다.\n③ 즉시 동기화 전기 심율동전환은 저혈압·폐부종·허혈성 흉통처럼 혈역학이 불안정한 심방세동이라면 정답이 된다.\n④ 아데노신은 규칙적인 좁은 QRS 빈맥(방실결절 회귀성 빈맥)을 끊거나 진단할 때라면 정답이 되지만 심방세동은 끊지 못한다.\n⑤ 아미오다론 정맥 부하는 심부전이 있는 환자에서 빠른 심실 반응을 조절하거나 리듬을 되돌려야 할 때라면 고려된다."
+   },
+   {
+    "k": "함정",
+    "v": "심방세동을 보면 리듬을 되돌리는 처치부터 고르고, 48시간 넘게 지속된 안정 환자에서 가장 중요한 뇌졸중 예방(항응고)을 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "불규칙하게 불규칙한 RR 과 P파 소실을 심방세동으로 판독하고, 심박수가 조절되고 혈역학이 안정된 고령·고혈압 환자에서 뇌졸중 위험 점수에 따라 경구 항응고제를 시작하는 처치를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 258: Atrial Fibrillation · Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156 · Van Gelder IC, Rienstra M, Bunting KV, et al. 2024 ESC guidelines for the management of atrial fibrillation. Eur Heart J. 2024;45(36):3314-3414 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12205 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "혈역학이 안정되고 박동수가 조절된 지속 심방세동에서 CHA₂DS₂-VASc 2점이면 경구 항응고제를 시작한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "혈압이 안정적이고 증상이 경미하며 일주일 넘게 지속돼 즉시 전환이 오히려 색전 위험이다",
+   "steps": 3,
+   "chain": [
+    "영상: 불규칙하게 불규칙한 RR, 일정한 P파 없음, 잔물결 기저선 → 심방세동(심실 기외수축 1개)",
+    "혈압 134/82·맥박 84·증상 경미 → 안정, 박동수 조절됨 · 일주일 지속 → 즉시 전환 금지",
+    "66세 + 고혈압 → CHA₂DS₂-VASc 2점 · 출혈 위험 낮음 → 경구 항응고제(DOAC)"
+   ],
+   "key": [
+    {
+     "item": "영상: 불규칙하게 불규칙한 RR, P파 없음",
+     "why": "심방세동 판독",
+     "also": []
+    },
+    {
+     "item": "10년 전부터 고혈압으로",
+     "why": "CHA₂DS₂-VASc 1점",
+     "also": []
+    },
+    {
+     "item": "66세 남자",
+     "why": "65~74세 1점",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "갑상샘자극호르몬은 정상이다",
+     "why": "갑상샘 기능 항진에 의한 심방세동 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "맥박 84회/분이고 불규칙하다",
+     "why": "박동수 조절됨 — 급한 박동수 조절 불필요",
+     "also": []
+    },
+    {
+     "item": "일주일 전부터",
+     "why": "48시간 넘게 지속 — 즉시 심율동전환 전 항응고 필요",
+     "also": []
+    },
+    {
+     "item": "당뇨병, 심부전, 뇌졸중의 병력은 없다",
+     "why": "점수 계산 — 2점에 머문다",
+     "also": []
+    },
+    {
+     "item": "혈소판 23만/mm³, 크레아티닌 0.9 mg/dL",
+     "why": "출혈 위험·DOAC 용량에 문제없음",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "심전도는 불규칙하게 불규칙한 RR 과 P파 소실로 심방세동이다. 혈역학이 안정되고 박동수가 조절됐으며 66세·고혈압으로 CHA₂DS₂-VASc 2점이므로 경구 항응고제를 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "혈압이 80/50 mmHg 로 떨어지고 폐부종이나 허혈성 흉통이 있었다면 즉시 동기화 전기 심율동전환"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0748.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12205",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12205"
+  },
+  "run_id": "20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0747",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 건강검진 심전도를 가져온 키 큰 중년 남성",
+  "type": "심전도 판독 — 건강검진 심전도를 가져온 키 큰 중년 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-21",
+  "vignette": "56세 남자가 직장 건강검진에서 받은 심전도에 이상이 있다는 말을 듣고 왔다. 가슴 통증, 숨참, 두근거림은 없고 일주일에 세 번 한 시간씩 달리기를 한다. 고혈압이나 당뇨병은 없고 먹는 약은 없다. 키 183 cm, 몸무게 91 kg 이다. 혈압 124/78 mmHg, 맥박 64회/분이고 심잡음은 들리지 않는다. 혈청 전해질은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "급성 측벽 심근경색",
+   "ST-T 변화가 없는 QRS 고전압",
+   "재분극 이상(strain)을 동반한 좌심실 비대",
+   "좌전섬유속차단",
+   "완전 좌각차단"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 약 63회/분의 규칙적인 동리듬이다. <b>I 유도의 R 이 약 14 mm, aVL 의 R 이 약 12 mm</b>이고 V4·V5 의 R 은 20 mm 를 넘어 사지·흉부 유도 모두 전압이 크다. 그런데 R 이 큰 I·aVL·V5·V6 에서 <b>ST 는 등전위이고 T 는 양성</b>이며 QRS 폭은 좁다 — 재분극 이상 없는 고전압이다. 운동을 꾸준히 하는 정상 혈압의 남자에서 흔한 정상 변이다.\n- 원리: <b>전압이 크다는 것과 비대는 다르다</b>: QRS 전압은 심근의 양뿐 아니라 심장과 전극 사이의 거리·조직(가슴벽 두께, 폐 공기, 지방)에 좌우된다. 꾸준히 운동하는 사람은 좌심실이 생리적으로 약간 커지고 미주신경 긴장이 높아 큰 전압과 느린 동리듬이 함께 나타나는데, 이는 병이 아니라 적응이다.<br> <b>왜 ST-T 를 먼저 보는가</b>: 고혈압·대동맥판 협착 같은 압력 과부하로 생긴 병적 비대에서는 두꺼워진 벽의 재분극이 늦고 심내막하가 상대적으로 허혈해져 R 이 큰 유도에 <b>내리막 ST 하강과 비대칭 T 역위(strain)</b>가 생긴다. 이 소견이 있으면 심혈관 사건 위험이 실제로 높고, 없으면 전압만으로 비대를 단정하지 않는다.<br> <b>축과 차단</b>: III 에 깊은 S 가 있어 축은 약 -20° 로 왼쪽에 치우쳤지만, 좌전섬유속차단은 축이 -45° 이하이고 II·III·aVF 가 모두 rS 일 때 진단한다. 의심되면 심장초음파로 벽 두께를 재고, 증상·고혈압이 없으면 대개 추가 조치가 필요 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">재분극 이상 없는 고전압(정답)</th><th>strain 동반 좌심실 비대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 전압</td><td>큼(I·aVL·V4·V5)</td><td>큼</td></tr> <tr><td>I·aVL·V5·V6 의 ST-T</td><td><b>ST 등전위, T 양성</b></td><td><b>내리막 ST 하강, 비대칭 T 역위</b></td></tr> <tr><td>흔한 배경</td><td>운동선수, 마른·젊은 사람</td><td>오래된 고혈압, 대동맥판 협착</td></tr> <tr><td>이 환자</td><td>정상 혈압, 운동, 정상 재분극 — 일치</td><td>재분극 이상 없음 — 불일치</td></tr> </tbody></table> 전압은 「QRS 가 얼마나 큰가」, ST-T 는 「심근이 버거운가」를 말한다 — 둘을 함께 읽고 나서 비대라고 부른다.\n- 오답 이유:\n  - ① 급성 측벽 심근경색은 가슴 통증과 함께 I·aVL·V5·V6 에 ST 상승, 하벽 유도에 거울상 ST 하강이 있을 때라면 정답이 된다.\n  - ③ strain 동반 좌심실 비대는 R 이 큰 I·aVL·V5·V6 에서 내리막 ST 하강과 비대칭 T 역위가 있고 오래된 고혈압이 있을 때라면 정답이 된다.\n  - ④ 좌전섬유속차단은 축이 -45° 이하로 더 왼쪽이고 II·III·aVF 가 모두 작은 r 과 깊은 S 의 rS 모양일 때라면 정답이 된다.\n  - ⑤ 완전 좌각차단은 QRS 가 120 ms 이상으로 넓고 I·V6 에 넓게 갈라진 R, V1 에 깊고 넓은 QS 가 있을 때라면 정답이 된다.\n- 함정: R 이 크다는 이유만으로 좌심실 비대를 고르고, 같은 유도의 ST-T 가 정상이라는 것과 운동·정상 혈압이라는 배경을 놓치는 것.\n- 학습목표: 사지·흉부 유도의 큰 QRS 전압이 있지만 ST 분절과 T파가 정상인 심전도를 재분극 이상 없는 고전압으로 판독하고, strain 을 동반한 좌심실 비대·좌전섬유속차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Hancock EW, Deal BJ, Mirvis DM, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part V: electrocardiogram changes associated with cardiac chamber hypertrophy. J Am Coll Cardiol. 2009;53(11):992-1002 · Sharma S, Drezner JA, Baggish A, et al. International recommendations for electrocardiographic interpretation in athletes. J Am Coll Cardiol. 2017;69(8):1057-1075 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8541 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 약 63회/분의 규칙적인 동리듬이다. <b>I 유도의 R 이 약 14 mm, aVL 의 R 이 약 12 mm</b>이고 V4·V5 의 R 은 20 mm 를 넘어 사지·흉부 유도 모두 전압이 크다. 그런데 R 이 큰 I·aVL·V5·V6 에서 <b>ST 는 등전위이고 T 는 양성</b>이며 QRS 폭은 좁다 — 재분극 이상 없는 고전압이다. 운동을 꾸준히 하는 정상 혈압의 남자에서 흔한 정상 변이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>전압이 크다는 것과 비대는 다르다</b>: QRS 전압은 심근의 양뿐 아니라 심장과 전극 사이의 거리·조직(가슴벽 두께, 폐 공기, 지방)에 좌우된다. 꾸준히 운동하는 사람은 좌심실이 생리적으로 약간 커지고 미주신경 긴장이 높아 큰 전압과 느린 동리듬이 함께 나타나는데, 이는 병이 아니라 적응이다.<br> <b>왜 ST-T 를 먼저 보는가</b>: 고혈압·대동맥판 협착 같은 압력 과부하로 생긴 병적 비대에서는 두꺼워진 벽의 재분극이 늦고 심내막하가 상대적으로 허혈해져 R 이 큰 유도에 <b>내리막 ST 하강과 비대칭 T 역위(strain)</b>가 생긴다. 이 소견이 있으면 심혈관 사건 위험이 실제로 높고, 없으면 전압만으로 비대를 단정하지 않는다.<br> <b>축과 차단</b>: III 에 깊은 S 가 있어 축은 약 -20° 로 왼쪽에 치우쳤지만, 좌전섬유속차단은 축이 -45° 이하이고 II·III·aVF 가 모두 rS 일 때 진단한다. 의심되면 심장초음파로 벽 두께를 재고, 증상·고혈압이 없으면 대개 추가 조치가 필요 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">재분극 이상 없는 고전압(정답)</th><th>strain 동반 좌심실 비대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>QRS 전압</td><td>큼(I·aVL·V4·V5)</td><td>큼</td></tr> <tr><td>I·aVL·V5·V6 의 ST-T</td><td><b>ST 등전위, T 양성</b></td><td><b>내리막 ST 하강, 비대칭 T 역위</b></td></tr> <tr><td>흔한 배경</td><td>운동선수, 마른·젊은 사람</td><td>오래된 고혈압, 대동맥판 협착</td></tr> <tr><td>이 환자</td><td>정상 혈압, 운동, 정상 재분극 — 일치</td><td>재분극 이상 없음 — 불일치</td></tr> </tbody></table> 전압은 「QRS 가 얼마나 큰가」, ST-T 는 「심근이 버거운가」를 말한다 — 둘을 함께 읽고 나서 비대라고 부른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 급성 측벽 심근경색은 가슴 통증과 함께 I·aVL·V5·V6 에 ST 상승, 하벽 유도에 거울상 ST 하강이 있을 때라면 정답이 된다.\n③ strain 동반 좌심실 비대는 R 이 큰 I·aVL·V5·V6 에서 내리막 ST 하강과 비대칭 T 역위가 있고 오래된 고혈압이 있을 때라면 정답이 된다.\n④ 좌전섬유속차단은 축이 -45° 이하로 더 왼쪽이고 II·III·aVF 가 모두 작은 r 과 깊은 S 의 rS 모양일 때라면 정답이 된다.\n⑤ 완전 좌각차단은 QRS 가 120 ms 이상으로 넓고 I·V6 에 넓게 갈라진 R, V1 에 깊고 넓은 QS 가 있을 때라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "R 이 크다는 이유만으로 좌심실 비대를 고르고, 같은 유도의 ST-T 가 정상이라는 것과 운동·정상 혈압이라는 배경을 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "사지·흉부 유도의 큰 QRS 전압이 있지만 ST 분절과 T파가 정상인 심전도를 재분극 이상 없는 고전압으로 판독하고, strain 을 동반한 좌심실 비대·좌전섬유속차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Hancock EW, Deal BJ, Mirvis DM, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part V: electrocardiogram changes associated with cardiac chamber hypertrophy. J Am Coll Cardiol. 2009;53(11):992-1002 · Sharma S, Drezner JA, Baggish A, et al. International recommendations for electrocardiographic interpretation in athletes. J Am Coll Cardiol. 2017;69(8):1057-1075 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8541 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "QRS 전압이 크지만 R 이 큰 유도의 ST-T 가 정상이면 재분극 이상 없는 고전압이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "I·aVL·V5·V6 에서 ST 하강·T 역위가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: I R 약 14 mm · aVL R 약 12 mm · V4·V5 R 20 mm 이상 → 사지·흉부 유도 고전압",
+    "영상: 같은 유도에서 ST 등전위·T 양성, QRS 좁음 + 정상 혈압·운동 → 재분극 이상 없는 고전압"
+   ],
+   "key": [
+    {
+     "item": "영상: I·aVL·V4·V5 의 큰 R",
+     "why": "고전압의 근거",
+     "also": []
+    },
+    {
+     "item": "영상: I·aVL·V5·V6 의 ST 등전위와 양성 T",
+     "why": "strain 이 없다는 근거",
+     "also": []
+    },
+    {
+     "item": "일주일에 세 번 한 시간씩 달리기를 한다",
+     "why": "운동에 의한 생리적 고전압의 배경",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 축 약 -20°, II 양성",
+     "why": "좌전섬유속차단(-45° 이하) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "고혈압이나 당뇨병은 없고",
+     "why": "압력 과부하성 비대 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "가슴 통증, 숨참, 두근거림은 없고",
+     "why": "급성 관동맥 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "키 183 cm, 몸무게 91 kg",
+     "why": "체형 — 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "사지·흉부 유도의 QRS 전압이 크지만 R 이 큰 유도의 ST 는 등전위이고 T 는 양성이다. 운동하는 정상 혈압의 남자에서 재분극 이상 없는 고전압이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "오래된 고혈압이 있고 I·aVL·V5·V6 에 내리막 ST 하강과 비대칭 T 역위가 있었다면 strain 동반 좌심실 비대"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0747.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/08000/#files-panel",
+   "asset_id": "PTBXL-08541",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8541"
+  },
+  "run_id": "20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0741",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "이비인후과 — 서서히 쉰 목소리와 한쪽 성대의 위축",
+  "type": "이비인후과 — 서서히 쉰 목소리와 한쪽 성대의 위축",
+  "modality": "ENDOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-21",
+  "vignette": "A 47-year-old man comes to the physician because of progressive hoarseness and a breathy voice for 6 months. He occasionally coughs while drinking water. He has never smoked and has had no neck or chest surgery or endotracheal intubation. Vital signs are within normal limits. There is no palpable neck mass or lymphadenopathy, and the palate elevates symmetrically. Flexible laryngoscopy shows that the left vocal fold does not move during phonation. A laryngoscopic image is shown; the arrow indicates the left vocal fold.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "CT of the neck and chest from the skull base to the aortic arch",
+   "Direct laryngoscopy with biopsy of the left vocal fold",
+   "Voice therapy and repeat laryngoscopy in 6 months",
+   "MRI of the brain with attention to the brainstem",
+   "Barium swallow study"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The image shows a thin, bowed (atrophic) left vocal fold that is shorter than the right, with an asymmetric glottic gap and no mass or mucosal lesion. With the immobile left fold, this is left vocal fold paralysis. The palate elevates symmetrically, so the lesion is distal to the pharyngeal branches of the vagus — along the recurrent laryngeal nerve. The left nerve loops under the aortic arch, so imaging must cover the whole course from the skull base to the aortic arch to find a compressive lesion (in this patient's case, a mediastinal mass).\n- 원리: <b>왜 왼쪽이 더 잘 마비되는가</b>: 미주신경에서 갈라진 되돌이후두신경은 오른쪽은 빗장밑동맥을, <b>왼쪽은 대동맥활을 돌아</b> 다시 위로 올라가 기관과 식도 사이 홈을 따라 후두로 들어간다. 왼쪽 신경은 가슴 안까지 내려가므로 경로가 훨씬 길고, 종격동 종괴·폐암·대동맥류·좌심방 확장(Ortner 증후군)에 눌릴 기회가 많다.<br> <b>왜 목소리가 새고 사레가 드는가</b>: 되돌이후두신경은 성대를 벌리고 모으는 후두 내근(윤상갑상근 제외)을 지배한다. 마비된 성대는 가운데 가까이에 멈추고 시간이 지나면 근육이 위축돼 얇고 활처럼 휜다. 발성 때 양쪽 성대가 맞닿지 못해 공기가 새는 숨찬 목소리가 되고, 삼킬 때 성문이 덜 닫혀 묽은 액체에 사레가 든다.<br> <b>왜 영상이 다음 단계인가</b>: 성대 자체에 종괴가 없으므로 원인은 신경 경로 어딘가에 있다. 목젖 올림이 대칭이면 미주신경 위쪽(인두 가지 위)은 괜찮으므로, 두개저부터 대동맥활까지 신경 경로 전체를 조영 CT 로 찍어 압박 병변을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Vocal fold paralysis → image the nerve (answer)</th><th>Vocal fold lesion → biopsy (closest distractor)</th></tr></thead><tbody> <tr><td>Laryngoscopic appearance</td><td><b>Thin, bowed fold; smooth mucosa; no mass</b></td><td>Exophytic, ulcerated, or leukoplakic mass</td></tr> <tr><td>Motion</td><td>Immobile fold</td><td>Usually mobile unless deeply invasive</td></tr> <tr><td>Where the cause lies</td><td>Along the nerve: skull base, neck, mediastinum</td><td>In the fold itself</td></tr> <tr><td>Next test</td><td>Contrast CT skull base → aortic arch</td><td>Direct laryngoscopy with biopsy</td></tr> </tbody></table> Biopsy the fold only when the fold itself is abnormal; when it is merely paralyzed, look for what is compressing its nerve.\n- 오답 이유:\n  - (B) Biopsy would be correct if laryngoscopy showed an exophytic or ulcerated mass on the fold, especially in a smoker.\n  - (C) Voice therapy with observation would be reasonable after a known recent cause such as thyroid surgery or intubation, when imaging is unrevealing.\n  - (D) Brain MRI would be correct if there were other cranial nerve findings, such as palatal deviation, tongue weakness, or dysarthria, suggesting a brainstem or skull-base lesion.\n  - (E) Barium swallow would be correct if the main problem were solid-food dysphagia suggesting an esophageal lesion rather than an immobile vocal fold.\n- 함정: Choosing a biopsy for any hoarseness without noticing that the fold is paralyzed and atrophic but has no mass.\n- 학습목표: Read an atrophic, bowed vocal fold without a mass on laryngoscopy as unilateral vocal fold paralysis, and choose imaging of the entire course of the recurrent laryngeal nerve rather than biopsy\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 306: Disorders of the Mediastinum · Stachler RJ, Francis DO, Schwartz SR, et al. Clinical practice guideline: hoarseness (dysphonia) (update). Otolaryngol Head Neck Surg. 2018;158(1 Suppl):S1-S42 · Improvement in recurrent laryngeal nerve paralysis and tracheal deviation after surgical resection of a mediastinal parathyroid cyst: a case report. Surg Case Rep. 2025;11(1):24-0083\n\n## 출처\n- Improvement in Recurrent Laryngeal Nerve Paralysis and Tracheal Deviation after Surgical Resection of a Mediastinal Parathyroid Cyst: A Case Report. Surg Case Rep. 2025 Jan 31;11(1):24-0083. doi: 10.70352/scrj.cr.24-0083 (CC BY) — Fig. 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The image shows a thin, bowed (atrophic) left vocal fold that is shorter than the right, with an asymmetric glottic gap and no mass or mucosal lesion. With the immobile left fold, this is left vocal fold paralysis. The palate elevates symmetrically, so the lesion is distal to the pharyngeal branches of the vagus — along the recurrent laryngeal nerve. The left nerve loops under the aortic arch, so imaging must cover the whole course from the skull base to the aortic arch to find a compressive lesion (in this patient's case, a mediastinal mass)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 왼쪽이 더 잘 마비되는가</b>: 미주신경에서 갈라진 되돌이후두신경은 오른쪽은 빗장밑동맥을, <b>왼쪽은 대동맥활을 돌아</b> 다시 위로 올라가 기관과 식도 사이 홈을 따라 후두로 들어간다. 왼쪽 신경은 가슴 안까지 내려가므로 경로가 훨씬 길고, 종격동 종괴·폐암·대동맥류·좌심방 확장(Ortner 증후군)에 눌릴 기회가 많다.<br> <b>왜 목소리가 새고 사레가 드는가</b>: 되돌이후두신경은 성대를 벌리고 모으는 후두 내근(윤상갑상근 제외)을 지배한다. 마비된 성대는 가운데 가까이에 멈추고 시간이 지나면 근육이 위축돼 얇고 활처럼 휜다. 발성 때 양쪽 성대가 맞닿지 못해 공기가 새는 숨찬 목소리가 되고, 삼킬 때 성문이 덜 닫혀 묽은 액체에 사레가 든다.<br> <b>왜 영상이 다음 단계인가</b>: 성대 자체에 종괴가 없으므로 원인은 신경 경로 어딘가에 있다. 목젖 올림이 대칭이면 미주신경 위쪽(인두 가지 위)은 괜찮으므로, 두개저부터 대동맥활까지 신경 경로 전체를 조영 CT 로 찍어 압박 병변을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Vocal fold paralysis → image the nerve (answer)</th><th>Vocal fold lesion → biopsy (closest distractor)</th></tr></thead><tbody> <tr><td>Laryngoscopic appearance</td><td><b>Thin, bowed fold; smooth mucosa; no mass</b></td><td>Exophytic, ulcerated, or leukoplakic mass</td></tr> <tr><td>Motion</td><td>Immobile fold</td><td>Usually mobile unless deeply invasive</td></tr> <tr><td>Where the cause lies</td><td>Along the nerve: skull base, neck, mediastinum</td><td>In the fold itself</td></tr> <tr><td>Next test</td><td>Contrast CT skull base → aortic arch</td><td>Direct laryngoscopy with biopsy</td></tr> </tbody></table> Biopsy the fold only when the fold itself is abnormal; when it is merely paralyzed, look for what is compressing its nerve."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Biopsy would be correct if laryngoscopy showed an exophytic or ulcerated mass on the fold, especially in a smoker.\n(C) Voice therapy with observation would be reasonable after a known recent cause such as thyroid surgery or intubation, when imaging is unrevealing.\n(D) Brain MRI would be correct if there were other cranial nerve findings, such as palatal deviation, tongue weakness, or dysarthria, suggesting a brainstem or skull-base lesion.\n(E) Barium swallow would be correct if the main problem were solid-food dysphagia suggesting an esophageal lesion rather than an immobile vocal fold."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a biopsy for any hoarseness without noticing that the fold is paralyzed and atrophic but has no mass."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read an atrophic, bowed vocal fold without a mass on laryngoscopy as unilateral vocal fold paralysis, and choose imaging of the entire course of the recurrent laryngeal nerve rather than biopsy"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 306: Disorders of the Mediastinum · Stachler RJ, Francis DO, Schwartz SR, et al. Clinical practice guideline: hoarseness (dysphonia) (update). Otolaryngol Head Neck Surg. 2018;158(1 Suppl):S1-S42 · Improvement in recurrent laryngeal nerve paralysis and tracheal deviation after surgical resection of a mediastinal parathyroid cyst: a case report. Surg Case Rep. 2025;11(1):24-0083 ## 출처 Improvement in Recurrent Laryngeal Nerve Paralysis and Tracheal Deviation after Surgical Resection of a Mediastinal Parathyroid Cyst: A Case Report. Surg Case Rep. 2025 Jan 31;11(1):24-0083. doi: 10.70352/scrj.cr.24-0083 (CC BY) — Fig. 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "종괴 없이 위축된 왼쪽 성대 마비는 되돌이후두신경 경로의 압박을 뜻하므로 두개저~대동맥활 CT 가 다음 검사다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "성대 점막이 매끈하고 종괴가 없으며 성대가 얇고 활처럼 휘었다",
+   "steps": 3,
+   "chain": [
+    "영상: 얇고 활처럼 휜 왼쪽 성대, 비대칭 성문 틈, 종괴 없음 + 움직이지 않음 → 왼쪽 성대 마비",
+    "목젖 올림 대칭 → 미주신경 위쪽은 정상, 되돌이후두신경 경로의 병변",
+    "왼쪽 신경은 대동맥활까지 내려감 → 두개저~대동맥활 CT"
+   ],
+   "key": [
+    {
+     "item": "영상: 얇고 활처럼 휜 왼쪽 성대, 종괴 없음",
+     "why": "성대 자체가 아니라 신경의 문제",
+     "also": []
+    },
+    {
+     "item": "the left vocal fold does not move during phonation",
+     "why": "마비의 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the palate elevates symmetrically",
+     "why": "두개저·뇌간의 미주신경 병변 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "has had no neck or chest surgery or endotracheal intubation",
+     "why": "수술·삽관 손상이라는 설명이 없어 원인 검사가 필요",
+     "also": []
+    },
+    {
+     "item": "He has never smoked",
+     "why": "후두암 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He occasionally coughs while drinking water",
+     "why": "성문 폐쇄 부전의 결과 — 검사 선택에는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "왼쪽 성대가 움직이지 않고 얇게 위축됐으며 종괴가 없다. 목젖 올림이 대칭이므로 되돌이후두신경 경로의 병변을 찾기 위해 두개저부터 대동맥활까지 CT 를 찍는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "성대에 궤양이나 외장성 종괴가 보였다면 직접 후두경과 생검"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0741.png",
+   "caption": "Flexible laryngoscopy still image; the black arrow is from the original figure — one panel cropped, no other change (PMC Open Access Subset, CC BY)",
+   "alt": "ENDOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11850213/",
+   "asset_id": "PMC-PMC11850213_Fig3_A",
+   "text": "Improvement in Recurrent Laryngeal Nerve Paralysis and Tracheal Deviation after Surgical Resection of a Mediastinal Parathyroid Cyst: A Case Report. Surg Case Rep. 2025 Jan 31;11(1):24-0083. doi: 10.70352/scrj.cr.24-0083 (CC BY) — Fig. 3"
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0740",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "산과 — 임신 중기 정밀 초음파의 태아 가슴 가로단면",
+  "type": "산과 — 임신 중기 정밀 초음파의 태아 가슴 가로단면",
+  "modality": "ULTRASOUND",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-21",
+  "vignette": "임신 20주 임신부가 정밀 초음파를 받으러 왔다. 특별한 증상은 없고 지금까지의 산전 검사는 정상이었다. 혈압 114/70 mmHg 이고 태아 심박은 규칙적이다. 정밀 초음파에서 얻은 태아 가슴의 가로단면은 그림과 같다.",
+  "question": "이 단면에서 평가하는 것으로 가장 적절한 것은?",
+  "options": [
+   "넙다리뼈 골간의 길이",
+   "목덜미 투명대 두께",
+   "가쪽뇌실 뒤뿔의 너비",
+   "심장의 위치와 축, 네 방의 크기 대칭",
+   "위 거품과 제대정맥 위치로 정한 복부둘레"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 갈비뼈의 곡선형 강한 반사가 <b>가슴 전체를 둘러싸고</b> 그 안 가운데에 저에코의 방들로 나뉜 심장이, 뒤쪽에 척추가 보인다 — 태아 가슴의 가로단면(심장 4방 단면)이다. 이 단면에서는 심장이 가슴의 왼쪽에 있고 심장축이 왼쪽으로 약 45° 기울었는지, 심장이 가슴 넓이의 약 1/3 을 차지하는지, 두 심방·두 심실의 크기가 비슷한지를 본다.\n- 원리: <b>왜 4방 단면을 보는가</b>: 선천 심장질환은 가장 흔한 주요 선천 기형인데 산전 선별의 기본이 임신 중기(18~22주)의 <b>심장 4방 단면</b>이다. 태아의 가슴을 가로로 자르면 심장 대부분이 한 단면에 들어와 두 심방·두 심실·심실중격·방실판막을 한 번에 볼 수 있다. 여기서 한쪽 심실이 작으면(좌심형성부전), 중격이 끊기면(방실중격결손), 축이 크게 틀어지면(원추동맥간 기형) 정밀 심장초음파로 넘긴다.<br> <b>위치와 축이 왜 중요한가</b>: 정상 심장은 가슴 왼쪽에 있고 첨부가 왼쪽 앞을 향해 축이 약 45°(±20°)다. 축이 벗어나면 심장 기형이나, 가슴 안 공간을 차지하는 다른 병변(선천 횡격막 탈장 — 같은 단면에 위나 장이 올라옴)이 있을 수 있다.<br> <b>단면을 구분하는 표지</b>: 같은 가로단면이라도 갈비뼈가 둘레 전체를 두르면 가슴, 갈비뼈가 일부만 걸리고 위 거품과 제대정맥이 보이면 배(복부둘레 단면)다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">가슴 가로단면 — 4방 단면(정답)</th><th>복부 가로단면 — 복부둘레(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>갈비뼈</td><td><b>둘레 전체를 감쌈</b></td><td>짧은 조각 1~2개만</td></tr> <tr><td>가운데 구조</td><td>네 방으로 나뉜 심장</td><td><b>위 거품</b>, 간 속 제대정맥(J 모양)</td></tr> <tr><td>평가</td><td>심장 위치·축·크기·네 방 대칭</td><td>복부둘레 → 태아 체중 추정·성장</td></tr> </tbody></table> 같은 「가로단면」이라도 갈비뼈의 범위와 가운데 구조로 높이를 정한다 — 심장이 보이면 가슴, 위 거품과 제대정맥이 보이면 배다.\n- 오답 이유:\n  - ① 넙다리뼈 길이는 곧은 긴뼈의 긴축이 음향그림자와 함께 보이는 단면이라면 정답이 된다.\n  - ② 목덜미 투명대는 임신 11~13주에 태아의 정중시상단면에서 목 뒤 저에코 층을 재는 경우라면 정답이 된다.\n  - ③ 가쪽뇌실 너비는 머리의 가로단면에서 맥락얼기가 있는 뇌실 뒤뿔을 재는 경우라면 정답이 된다.\n  - ⑤ 복부둘레는 갈비뼈가 일부만 걸리고 위 거품과 간 속 제대정맥이 보이는 배의 가로단면이라면 정답이 된다.\n- 함정: 둥근 가로단면을 모두 복부둘레 단면으로 보고 갈비뼈가 둘레 전체를 두르는지, 가운데가 심장인지를 확인하지 않는 것.\n- 제작 가정: FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신 중기 정밀 초음파 상황을 가정했다 (가정한 정보: 임신 20주 임신부가 · 지금까지의 산전 검사는 정상이었다)\n- 학습목표: 임신 중기 태아 가슴 가로단면(심장 4방 단면)을 읽고, 이 단면에서 선별하는 항목(심장의 위치·축·네 방의 대칭)을 복부둘레 단면의 항목과 가른다\n- 근거·출처: Carvalho JS, Axt-Fliedner R, Chaoui R, et al. ISUOG Practice Guidelines (updated): fetal cardiac screening. Ultrasound Obstet Gynecol. 2023;61(6):788-803 · Salomon LJ, Alfirevic Z, Berghella V, et al. ISUOG Practice Guidelines (updated): performance of the routine mid-trimester fetal ultrasound scan. Ultrasound Obstet Gynecol. 2022;59(6):840-856 · Burgos-Artizzu XP, Coronado-Gutiérrez D, Valenzuela-Alcaraz B, et al. Evaluation of deep convolutional neural networks for automatic classification of common maternal fetal ultrasound planes. Sci Rep. 2020;10:10200\n\n## 출처\n- FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient00901_Plane6_3_of_5 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "갈비뼈의 곡선형 강한 반사가 <b>가슴 전체를 둘러싸고</b> 그 안 가운데에 저에코의 방들로 나뉜 심장이, 뒤쪽에 척추가 보인다 — 태아 가슴의 가로단면(심장 4방 단면)이다. 이 단면에서는 심장이 가슴의 왼쪽에 있고 심장축이 왼쪽으로 약 45° 기울었는지, 심장이 가슴 넓이의 약 1/3 을 차지하는지, 두 심방·두 심실의 크기가 비슷한지를 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 4방 단면을 보는가</b>: 선천 심장질환은 가장 흔한 주요 선천 기형인데 산전 선별의 기본이 임신 중기(18~22주)의 <b>심장 4방 단면</b>이다. 태아의 가슴을 가로로 자르면 심장 대부분이 한 단면에 들어와 두 심방·두 심실·심실중격·방실판막을 한 번에 볼 수 있다. 여기서 한쪽 심실이 작으면(좌심형성부전), 중격이 끊기면(방실중격결손), 축이 크게 틀어지면(원추동맥간 기형) 정밀 심장초음파로 넘긴다.<br> <b>위치와 축이 왜 중요한가</b>: 정상 심장은 가슴 왼쪽에 있고 첨부가 왼쪽 앞을 향해 축이 약 45°(±20°)다. 축이 벗어나면 심장 기형이나, 가슴 안 공간을 차지하는 다른 병변(선천 횡격막 탈장 — 같은 단면에 위나 장이 올라옴)이 있을 수 있다.<br> <b>단면을 구분하는 표지</b>: 같은 가로단면이라도 갈비뼈가 둘레 전체를 두르면 가슴, 갈비뼈가 일부만 걸리고 위 거품과 제대정맥이 보이면 배(복부둘레 단면)다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">가슴 가로단면 — 4방 단면(정답)</th><th>복부 가로단면 — 복부둘레(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>갈비뼈</td><td><b>둘레 전체를 감쌈</b></td><td>짧은 조각 1~2개만</td></tr> <tr><td>가운데 구조</td><td>네 방으로 나뉜 심장</td><td><b>위 거품</b>, 간 속 제대정맥(J 모양)</td></tr> <tr><td>평가</td><td>심장 위치·축·크기·네 방 대칭</td><td>복부둘레 → 태아 체중 추정·성장</td></tr> </tbody></table> 같은 「가로단면」이라도 갈비뼈의 범위와 가운데 구조로 높이를 정한다 — 심장이 보이면 가슴, 위 거품과 제대정맥이 보이면 배다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 넙다리뼈 길이는 곧은 긴뼈의 긴축이 음향그림자와 함께 보이는 단면이라면 정답이 된다.\n② 목덜미 투명대는 임신 11~13주에 태아의 정중시상단면에서 목 뒤 저에코 층을 재는 경우라면 정답이 된다.\n③ 가쪽뇌실 너비는 머리의 가로단면에서 맥락얼기가 있는 뇌실 뒤뿔을 재는 경우라면 정답이 된다.\n⑤ 복부둘레는 갈비뼈가 일부만 걸리고 위 거품과 간 속 제대정맥이 보이는 배의 가로단면이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "둥근 가로단면을 모두 복부둘레 단면으로 보고 갈비뼈가 둘레 전체를 두르는지, 가운데가 심장인지를 확인하지 않는 것."
+   },
+   {
+    "k": "제작 가정",
+    "v": "FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신 중기 정밀 초음파 상황을 가정했다 (가정한 정보: 임신 20주 임신부가 · 지금까지의 산전 검사는 정상이었다)"
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 중기 태아 가슴 가로단면(심장 4방 단면)을 읽고, 이 단면에서 선별하는 항목(심장의 위치·축·네 방의 대칭)을 복부둘레 단면의 항목과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Carvalho JS, Axt-Fliedner R, Chaoui R, et al. ISUOG Practice Guidelines (updated): fetal cardiac screening. Ultrasound Obstet Gynecol. 2023;61(6):788-803 · Salomon LJ, Alfirevic Z, Berghella V, et al. ISUOG Practice Guidelines (updated): performance of the routine mid-trimester fetal ultrasound scan. Ultrasound Obstet Gynecol. 2022;59(6):840-856 · Burgos-Artizzu XP, Coronado-Gutiérrez D, Valenzuela-Alcaraz B, et al. Evaluation of deep convolutional neural networks for automatic classification of common maternal fetal ultrasound planes. Sci Rep. 2020;10:10200 ## 출처 FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient00901_Plane6_3_of_5 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "갈비뼈가 둘레 전체를 두르고 가운데 심장이 보이면 가슴 가로단면이며, 여기서는 심장의 위치·축·네 방 대칭을 평가한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "갈비뼈가 둘레 전체를 감싸고 가운데가 위 거품이 아니라 방으로 나뉜 심장이다",
+   "steps": 2,
+   "chain": [
+    "영상: 갈비뼈가 둘레 전체를 감싸고 가운데 심장 방, 뒤쪽 척추 → 태아 가슴 가로단면(4방 단면)",
+    "4방 단면 → 심장의 위치·축·크기·네 방 대칭을 선별"
+   ],
+   "key": [
+    {
+     "item": "영상: 갈비뼈가 둘레 전체를 감싸는 둥근 단면",
+     "why": "가슴 높이의 가로단면",
+     "also": []
+    },
+    {
+     "item": "영상: 가운데의 방으로 나뉜 심장, 위 거품 없음",
+     "why": "복부둘레 단면이 아님",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "임신 20주 임신부가",
+     "why": "가정한 상황 — 중기 정밀 초음파 시기",
+     "also": []
+    },
+    {
+     "item": "태아 심박은 규칙적이다",
+     "why": "평가 항목 선택에는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "갈비뼈가 둘레 전체를 감싸고 가운데에 방으로 나뉜 심장이 보이는 태아 가슴 가로단면이다. 이 4방 단면에서는 심장의 위치·축·네 방의 대칭을 평가한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "갈비뼈가 일부만 걸리고 위 거품과 간 속 제대정맥이 보이는 단면이었다면 복부둘레 계측"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0740.png",
+   "caption": "태아 초음파 정지 영상, 오른쪽 위 글자는 기기 설정 — 크기 조정만 (FETAL_PLANES_DB, Zenodo, CC BY 4.0) ※ 발문의 임상 상황은 문항 구성을 위한 가정이다 — 원 데이터에는 나이·병력이 없다",
+   "alt": "ULTRASOUND 영상"
+  },
+  "attribution": {
+   "dataset": "FETAL_PLANES_DB: Common maternal-fetal ultrasound images",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://zenodo.org/records/3904280",
+   "asset_id": "FETALPLANES-Patient00901_Plane6_3_of_5",
+   "text": "FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient00901_Plane6_3_of_5"
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0739",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "순환기 — 커피 뒤 두근거림을 느끼는 중년 여성의 심전도",
+  "type": "순환기 — 커피 뒤 두근거림을 느끼는 중년 여성의 심전도",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-21",
+  "vignette": "A 48-year-old woman comes to the office because of intermittent palpitations for 2 months. The episodes last a few seconds, occur mostly after she drinks several cups of coffee, and are not associated with chest pain, dyspnea, or syncope. She takes no medications. Pulse is 92/min and regular, and blood pressure is 122/78 mm Hg. Cardiac examination shows no murmurs. Serum TSH concentration is within the reference range. A resting 12-lead ECG is shown.",
+  "question": "Which of the following best describes this ECG?",
+  "options": [
+   "Normal sinus rhythm without conduction or repolarization abnormalities",
+   "Sinus tachycardia",
+   "First-degree atrioventricular block",
+   "Ventricular preexcitation (Wolff-Parkinson-White pattern)",
+   "Incomplete right bundle branch block"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The lead II rhythm strip shows about 16 regular QRS complexes in 10 seconds (rate about 95/min). Every QRS is preceded by the same upright P wave in lead II with a constant PR interval of about 0.16 s. The QRS is narrow without a delta wave or an rSR' pattern in V1, the axis is normal, and the ST segments and T waves are normal. The baseline wander in leads I and III is artifact. This is a normal ECG; a rate under 100/min is sinus rhythm, not sinus tachycardia.\n- 원리: <b>왜 이 순서로 읽는가</b>: 심전도는 <b>박동수 → 리듬 → 간격(PR·QRS·QT) → 축 → 파형(ST-T)</b>의 순서로 읽어야 놓치는 곳이 없다. 동리듬의 정의는 매 QRS 앞에 II 에서 양성인 같은 모양의 P파가 일정한 PR 로 있는 것이고, 박동수 60~100회/분이 정상 범위다. 100을 넘을 때만 동빈맥이다 — 92~95회/분은 정상 상한에 가깝지만 정상이다.<br> <b>왜 두근거림이 있어도 정상일 수 있는가</b>: 짧은 두근거림의 흔한 원인은 카페인 같은 자극에 의한 심방·심실 기외수축이며, 증상이 없는 순간의 10초 기록에는 잡히지 않는다. 휴식 심전도가 정상이면 구조적 심질환·조기흥분·QT 연장 같은 기질이 없다는 뜻이고, 증상이 잦으면 증상과 기록을 맞추는 보행 기록(홀터·사건기록기)으로 잡는다.<br> <b>잡음 구별</b>: 유도 I·III 의 거친 기저선 흔들림은 전극 접촉·근육 떨림의 인공물이다. 같은 순간의 다른 유도에서 박동이 규칙적이면 리듬 이상으로 읽지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Normal sinus rhythm (answer)</th><th>WPW pattern (closest look-alike for a normal-width tracing)</th></tr></thead><tbody> <tr><td>PR interval</td><td><b>0.12–0.20 s</b> (here about 0.16 s)</td><td><b>&lt; 0.12 s</b></td></tr> <tr><td>QRS onset</td><td>Sharp upstroke</td><td>Slurred delta wave</td></tr> <tr><td>QRS width</td><td>Narrow</td><td>Mildly widened by the delta wave</td></tr> <tr><td>Rate rule</td><td>60–100/min (here about 95)</td><td>Any rate; tachycardia during reentry</td></tr> </tbody></table> A rate in the 90s is still normal; preexcitation is diagnosed from a short PR and a delta wave, not from palpitations.\n- 오답 이유:\n  - (B) Sinus tachycardia would be correct if the same sinus P waves were present but the rate exceeded 100/min, as with fever, anemia, or hyperthyroidism.\n  - (C) First-degree AV block would be correct if every P wave conducted but the PR interval were longer than 0.20 s (more than one large box).\n  - (D) WPW pattern would be correct if the PR interval were shorter than 0.12 s with a slurred delta wave at the start of a slightly widened QRS.\n  - (E) Incomplete RBBB would be correct if V1 showed an rSR' pattern with a QRS of 100 to 120 ms and slurred S waves in I and V6.\n- 함정: Calling a heart rate in the 90s sinus tachycardia, or reading baseline wander in leads I and III as an arrhythmia.\n- 학습목표: Read a regular rhythm at about 95/min with an upright P wave before every QRS, a normal PR interval, a narrow QRS, and normal ST-T waves as a normal sinus rhythm ECG, and distinguish it from sinus tachycardia and preexcitation\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Kligfield P, Gettes LS, Bailey JJ, et al. Recommendations for the standardization and interpretation of the electrocardiogram: part I. J Am Coll Cardiol. 2007;49(10):1109-1127 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19277 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The lead II rhythm strip shows about 16 regular QRS complexes in 10 seconds (rate about 95/min). Every QRS is preceded by the same upright P wave in lead II with a constant PR interval of about 0.16 s. The QRS is narrow without a delta wave or an rSR' pattern in V1, the axis is normal, and the ST segments and T waves are normal. The baseline wander in leads I and III is artifact. This is a normal ECG; a rate under 100/min is sinus rhythm, not sinus tachycardia."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이 순서로 읽는가</b>: 심전도는 <b>박동수 → 리듬 → 간격(PR·QRS·QT) → 축 → 파형(ST-T)</b>의 순서로 읽어야 놓치는 곳이 없다. 동리듬의 정의는 매 QRS 앞에 II 에서 양성인 같은 모양의 P파가 일정한 PR 로 있는 것이고, 박동수 60~100회/분이 정상 범위다. 100을 넘을 때만 동빈맥이다 — 92~95회/분은 정상 상한에 가깝지만 정상이다.<br> <b>왜 두근거림이 있어도 정상일 수 있는가</b>: 짧은 두근거림의 흔한 원인은 카페인 같은 자극에 의한 심방·심실 기외수축이며, 증상이 없는 순간의 10초 기록에는 잡히지 않는다. 휴식 심전도가 정상이면 구조적 심질환·조기흥분·QT 연장 같은 기질이 없다는 뜻이고, 증상이 잦으면 증상과 기록을 맞추는 보행 기록(홀터·사건기록기)으로 잡는다.<br> <b>잡음 구별</b>: 유도 I·III 의 거친 기저선 흔들림은 전극 접촉·근육 떨림의 인공물이다. 같은 순간의 다른 유도에서 박동이 규칙적이면 리듬 이상으로 읽지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Normal sinus rhythm (answer)</th><th>WPW pattern (closest look-alike for a normal-width tracing)</th></tr></thead><tbody> <tr><td>PR interval</td><td><b>0.12–0.20 s</b> (here about 0.16 s)</td><td><b>&lt; 0.12 s</b></td></tr> <tr><td>QRS onset</td><td>Sharp upstroke</td><td>Slurred delta wave</td></tr> <tr><td>QRS width</td><td>Narrow</td><td>Mildly widened by the delta wave</td></tr> <tr><td>Rate rule</td><td>60–100/min (here about 95)</td><td>Any rate; tachycardia during reentry</td></tr> </tbody></table> A rate in the 90s is still normal; preexcitation is diagnosed from a short PR and a delta wave, not from palpitations."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Sinus tachycardia would be correct if the same sinus P waves were present but the rate exceeded 100/min, as with fever, anemia, or hyperthyroidism.\n(C) First-degree AV block would be correct if every P wave conducted but the PR interval were longer than 0.20 s (more than one large box).\n(D) WPW pattern would be correct if the PR interval were shorter than 0.12 s with a slurred delta wave at the start of a slightly widened QRS.\n(E) Incomplete RBBB would be correct if V1 showed an rSR' pattern with a QRS of 100 to 120 ms and slurred S waves in I and V6."
+   },
+   {
+    "k": "함정",
+    "v": "Calling a heart rate in the 90s sinus tachycardia, or reading baseline wander in leads I and III as an arrhythmia."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a regular rhythm at about 95/min with an upright P wave before every QRS, a normal PR interval, a narrow QRS, and normal ST-T waves as a normal sinus rhythm ECG, and distinguish it from sinus tachycardia and preexcitation"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Kligfield P, Gettes LS, Bailey JJ, et al. Recommendations for the standardization and interpretation of the electrocardiogram: part I. J Am Coll Cardiol. 2007;49(10):1109-1127 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19277 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "매 QRS 앞 양성 P파·정상 PR·좁은 QRS·정상 ST-T 이고 박동수가 100 미만이면 정상 동리듬 심전도다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "박동수가 약 95회/분으로 100회/분을 넘지 않는다",
+   "steps": 2,
+   "chain": [
+    "영상: II 리듬 스트립 10초에 약 16박동, 매 QRS 앞 양성 P파와 일정한 PR → 약 95회/분의 동리듬",
+    "영상: PR 약 0.16 s, 델타파 없음, 좁은 QRS, 정상 ST-T → 전도·재분극 이상 없는 정상 심전도"
+   ],
+   "key": [
+    {
+     "item": "영상: 매 QRS 앞 II 양성 P파, 박동수 약 95회/분",
+     "why": "100 미만의 동리듬",
+     "also": []
+    },
+    {
+     "item": "Pulse is 92/min and regular",
+     "why": "100 미만 — 빈맥이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: PR 약 0.16 s, 델타파 없음",
+     "why": "조기흥분·1도 방실차단 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum TSH concentration is within the reference range",
+     "why": "갑상샘 기능 항진에 의한 빈맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "영상: I·III 의 기저선 흔들림",
+     "why": "인공물 — 리듬 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "occur mostly after she drinks several cups of coffee",
+     "why": "카페인 관련 기외수축을 시사하지만 이 기록의 판독과는 별개",
+     "also": []
+    }
+   ],
+   "summary": "규칙적인 약 95회/분 리듬에서 매 QRS 앞에 양성 P파가 정상 PR 로 있고 QRS·ST-T 가 정상이다. 정상 동리듬 심전도다.",
+   "switch": {
+    "choice": "D",
+    "condition": "PR 이 0.12 s 미만이고 QRS 시작부에 델타파가 보였다면 WPW 양상"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0739.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/19000/#files-panel",
+   "asset_id": "PTBXL-19277",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19277"
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0738",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "피부 — 손에 오래 있던 작은 갈색 반점의 피부경 소견",
+  "type": "피부 — 손에 오래 있던 작은 갈색 반점의 피부경 소견",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-21",
+  "vignette": "60세 남자가 건강검진에서 손에 있는 갈색 반점을 봐 달라며 왔다. 반점은 10년 전부터 있었고 크기와 색의 변화는 없었으며 가렵거나 피가 난 적은 없다. 흑색종의 가족력은 없다. 반점은 지름 약 4 mm 의 평평한 갈색 반이고 경계가 고르다. 몸의 다른 곳에 비슷한 모양의 점이 몇 개 있다. 피부경 사진은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "이미퀴모드 크림을 6주간 바른다",
+   "사진을 남기고 정기적으로 관찰한다",
+   "병변 전체를 2 mm 경계로 절제생검한다",
+   "액화질소 냉동치료로 없앤다",
+   "1 cm 경계로 넓게 절제한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 피부경에서 가늘고 고른 갈색 선이 규칙적인 그물(색소망)을 이루고, 그물이 <b>가장자리로 갈수록 옅어지며 병변이 대칭</b>이다. 청백색 베일, 불규칙한 점·덩이, 가장자리 줄무늬, 퇴행 구조 같은 흑색종 소견이 없다. 10년간 변화가 없고 몸의 다른 점과 모양이 비슷하다(「미운 오리 새끼」 징후 없음) — 양성 멜라닌세포 모반이므로 사진을 남기고 관찰한다.\n- 원리: <b>왜 그물 모양이 보이는가</b>: 표피 아래쪽 경계는 진피유두와 표피능선이 맞물린 물결 모양이다. 멜라닌세포와 멜라닌은 표피능선(아래로 내려간 부분)에 많이 모이므로 위에서 보면 능선은 갈색 선, 그 사이 진피유두 꼭대기는 밝은 구멍으로 보여 <b>그물(색소망)</b>이 된다. 정상 구조를 따라 멜라닌이 고르게 늘어난 양성 모반은 선 굵기와 구멍 크기가 고르고 가장자리로 갈수록 옅어진다.<br> <b>흑색종은 왜 그물이 깨지는가</b>: 악성 멜라닌세포는 능선에 머물지 않고 표피 위쪽과 진피로 흩어지며 자라므로 선이 굵고 끊기며(비정형 색소망), 진피 깊이 들어간 멜라닌은 청회색(청백색 베일)으로 보인다. 면역반응으로 일부가 사라지면 흰 흉터 모양의 퇴행 구조가 남는다.<br> <b>처치의 원칙</b>: 피부경 소견이 양성이고 병력상 변화가 없으면 불필요한 절제를 피하고 기준 사진을 남겨 비교 관찰한다. 변화(크기·모양·색), 새로 생김, 비정형 소견이 있을 때 전층 절제생검으로 두께를 잰다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">양성 모반 — 관찰(정답)</th><th>흑색종 의심 — 절제생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>색소망</td><td><b>가늘고 고르며 가장자리로 옅어짐</b></td><td>굵고 끊기며 가장자리에서 갑자기 끝남</td></tr> <tr><td>대칭·색</td><td>대칭, 갈색 한두 가지</td><td>비대칭, 갈색·검정·청회색·흰색 여러 가지</td></tr> <tr><td>특이 구조</td><td>없음</td><td>청백색 베일, 불규칙 점, 가장자리 줄무늬, 퇴행 구조</td></tr> <tr><td>병력</td><td>오래 변화 없음, 다른 점과 비슷</td><td>새로 생기거나 변함, 다른 점과 다름</td></tr> </tbody></table> 60세라는 나이만으로 절제하지 않는다 — 소견(피부경)과 변화(병력)가 둘 다 양성이면 관찰, 어느 하나라도 의심스러우면 절제생검이다.\n- 오답 이유:\n  - ① 이미퀴모드는 수술이 어려운 표재성 기저세포암이나 악성 흑자 같은 상황이라면 고려하는 국소 면역조절제다.\n  - ③ 2 mm 경계 절제생검은 피부경에서 비정형 색소망·청백색 베일이 보이거나 최근 크기·색이 변한 병변이라면 정답이 된다.\n  - ④ 냉동치료는 지루각화증·광선각화증처럼 조직 확인이 필요 없는 표피 병변이라면 쓰지만, 멜라닌세포 병변은 조직을 없애 진단을 놓치므로 쓰지 않는다.\n  - ⑤ 1 cm 경계 넓은 절제는 생검으로 두께 1 mm 이하의 흑색종이 확진된 뒤의 근치 수술이라면 정답이 된다.\n- 함정: 고령의 색소 병변이라는 이유만으로 피부경의 양성 소견과 10년간 변화 없음을 무시하고 절제를 고르는 것.\n- 학습목표: 피부경에서 대칭적이고 가장자리로 옅어지는 규칙적 색소망만 보이는 작은 색소 병변을 양성 멜라닌세포 모반으로 읽고, 절제생검이 필요한 흑색종 소견과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin · Argenziano G, Soyer HP, Chimenti S, et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol. 2003;48(5):679-693 · Codella NCF, Gutman D, Celebi ME, et al. Skin lesion analysis toward melanoma detection: a challenge at the 2017 ISBI, hosted by the ISIC. arXiv:1710.05006\n\n## 출처\n- ISIC Archive ISIC_0001111 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "피부경에서 가늘고 고른 갈색 선이 규칙적인 그물(색소망)을 이루고, 그물이 <b>가장자리로 갈수록 옅어지며 병변이 대칭</b>이다. 청백색 베일, 불규칙한 점·덩이, 가장자리 줄무늬, 퇴행 구조 같은 흑색종 소견이 없다. 10년간 변화가 없고 몸의 다른 점과 모양이 비슷하다(「미운 오리 새끼」 징후 없음) — 양성 멜라닌세포 모반이므로 사진을 남기고 관찰한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 그물 모양이 보이는가</b>: 표피 아래쪽 경계는 진피유두와 표피능선이 맞물린 물결 모양이다. 멜라닌세포와 멜라닌은 표피능선(아래로 내려간 부분)에 많이 모이므로 위에서 보면 능선은 갈색 선, 그 사이 진피유두 꼭대기는 밝은 구멍으로 보여 <b>그물(색소망)</b>이 된다. 정상 구조를 따라 멜라닌이 고르게 늘어난 양성 모반은 선 굵기와 구멍 크기가 고르고 가장자리로 갈수록 옅어진다.<br> <b>흑색종은 왜 그물이 깨지는가</b>: 악성 멜라닌세포는 능선에 머물지 않고 표피 위쪽과 진피로 흩어지며 자라므로 선이 굵고 끊기며(비정형 색소망), 진피 깊이 들어간 멜라닌은 청회색(청백색 베일)으로 보인다. 면역반응으로 일부가 사라지면 흰 흉터 모양의 퇴행 구조가 남는다.<br> <b>처치의 원칙</b>: 피부경 소견이 양성이고 병력상 변화가 없으면 불필요한 절제를 피하고 기준 사진을 남겨 비교 관찰한다. 변화(크기·모양·색), 새로 생김, 비정형 소견이 있을 때 전층 절제생검으로 두께를 잰다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">양성 모반 — 관찰(정답)</th><th>흑색종 의심 — 절제생검(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>색소망</td><td><b>가늘고 고르며 가장자리로 옅어짐</b></td><td>굵고 끊기며 가장자리에서 갑자기 끝남</td></tr> <tr><td>대칭·색</td><td>대칭, 갈색 한두 가지</td><td>비대칭, 갈색·검정·청회색·흰색 여러 가지</td></tr> <tr><td>특이 구조</td><td>없음</td><td>청백색 베일, 불규칙 점, 가장자리 줄무늬, 퇴행 구조</td></tr> <tr><td>병력</td><td>오래 변화 없음, 다른 점과 비슷</td><td>새로 생기거나 변함, 다른 점과 다름</td></tr> </tbody></table> 60세라는 나이만으로 절제하지 않는다 — 소견(피부경)과 변화(병력)가 둘 다 양성이면 관찰, 어느 하나라도 의심스러우면 절제생검이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 이미퀴모드는 수술이 어려운 표재성 기저세포암이나 악성 흑자 같은 상황이라면 고려하는 국소 면역조절제다.\n③ 2 mm 경계 절제생검은 피부경에서 비정형 색소망·청백색 베일이 보이거나 최근 크기·색이 변한 병변이라면 정답이 된다.\n④ 냉동치료는 지루각화증·광선각화증처럼 조직 확인이 필요 없는 표피 병변이라면 쓰지만, 멜라닌세포 병변은 조직을 없애 진단을 놓치므로 쓰지 않는다.\n⑤ 1 cm 경계 넓은 절제는 생검으로 두께 1 mm 이하의 흑색종이 확진된 뒤의 근치 수술이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고령의 색소 병변이라는 이유만으로 피부경의 양성 소견과 10년간 변화 없음을 무시하고 절제를 고르는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "피부경에서 대칭적이고 가장자리로 옅어지는 규칙적 색소망만 보이는 작은 색소 병변을 양성 멜라닌세포 모반으로 읽고, 절제생검이 필요한 흑색종 소견과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 81: Cancer of the Skin · Argenziano G, Soyer HP, Chimenti S, et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol. 2003;48(5):679-693 · Codella NCF, Gutman D, Celebi ME, et al. Skin lesion analysis toward melanoma detection: a challenge at the 2017 ISBI, hosted by the ISIC. arXiv:1710.05006 ## 출처 ISIC Archive ISIC_0001111 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "대칭적이고 가장자리로 옅어지는 규칙적 색소망만 있고 오래 변화가 없는 병변은 양성 모반이므로 관찰한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "비정형 색소망·청백색 베일·퇴행 구조가 없고 10년간 크기와 색의 변화가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 가늘고 규칙적인 색소망이 가장자리로 옅어지고 대칭, 흑색종 구조 없음 → 양성 멜라닌세포 모반",
+    "10년간 변화 없음 + 다른 점과 비슷 → 절제 없이 사진 기록 후 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 가장자리로 옅어지는 가늘고 규칙적인 색소망",
+     "why": "양성 모반의 피부경 소견",
+     "also": []
+    },
+    {
+     "item": "크기와 색의 변화는 없었으며",
+     "why": "변화 없음 — 관찰의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 청백색 베일·불규칙 점·줄무늬 없음",
+     "why": "흑색종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "몸의 다른 곳에 비슷한 모양의 점이 몇 개 있다",
+     "why": "「미운 오리 새끼」 징후가 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "60세 남자",
+     "why": "고령이지만 소견이 양성이면 나이만으로 절제하지 않는다",
+     "also": []
+    },
+    {
+     "item": "흑색종의 가족력은 없다",
+     "why": "위험도를 조금 낮추는 배경",
+     "also": []
+    }
+   ],
+   "summary": "피부경에서 대칭적이고 가장자리로 옅어지는 규칙적 색소망만 보이고 10년간 변화가 없다. 양성 멜라닌세포 모반이므로 사진을 남기고 정기 관찰한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "최근 몇 달 사이 커지거나 피부경에서 비정형 색소망·청백색 베일이 보였다면 2 mm 경계 절제생검"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0738.jpg",
+   "caption": "피부경(dermoscopy) 사진, 아래 눈금자(mm)는 원본의 것 — 크기 조정만 (ISIC Archive, CC0)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001111",
+   "asset_id": "ISIC-ISIC_0001111",
+   "text": "ISIC Archive ISIC_0001111 (CC-0)"
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0746",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "정신 — 할로페리돌 근육주사 뒤 고열과 근육 경직",
+  "type": "정신 — 할로페리돌 근육주사 뒤 고열과 근육 경직",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-21",
+  "vignette": "27세 남자가 조현병 급성 악화로 입원했다. 사흘 동안 초조를 조절하려고 할로페리돌 근육주사를 하루 3번 맞았다. 오늘 아침부터 말이 줄고 멍하게 누워 있으며 땀을 많이 흘린다. 체온 40.1℃, 혈압 168/102 mmHg, 맥박 128회/분, 호흡 24회/분이다. 사지 전체가 납 파이프처럼 뻣뻣하고 힘줄 반사는 감소해 있으며 근간대경련과 발목 클로누스는 없다. 동공 크기는 정상이고 장음은 정상이다. 다른 약은 먹지 않는다. 혈청 크레아틴 인산활성효소 18,500 U/L, 백혈구 14,200/mm³ 이고 소변은 콜라색이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "할로페리돌 중단, 사이프로헵타딘 경구 투여",
+   "할로페리돌 증량과 로라제팜 근육주사",
+   "할로페리돌 유지, 아세트아미노펜 해열",
+   "할로페리돌 중단, 피소스티그민 정맥 투여",
+   "할로페리돌 중단, 냉각과 수액, 단트롤렌 정맥 투여"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 고역가 항정신병약(할로페리돌)을 반복 투여한 뒤 <b>고열·납관 경직·의식 변화·자율신경 불안정(고혈압·빈맥·발한)</b>이 생기고 CK 가 크게 올랐다 — 신경이완제 악성 증후군이다. 반사가 감소하고 근간대경련·클로누스가 없어 세로토닌 증후군과 다르고, 동공·장음이 정상이고 땀이 많아 항콜린 중독과도 다르다. 원인 약을 즉시 끊고 냉각·수액(콜라색 소변 — 횡문근융해의 신장 보호)으로 대증 치료하며, 40℃ 넘는 고열과 심한 경직에는 근이완제 단트롤렌을 더한다.\n- 원리: <b>왜 생기는가</b>: 할로페리돌 같은 고역가 D2 길항제가 <b>시상하부와 흑질선조체의 도파민 전달을 갑자기 크게 막으면</b> 두 가지가 동시에 무너진다. 시상하부의 체온 조절점이 망가져 열을 내보내지 못하고, 선조체의 운동 조절이 끊겨 근육이 계속 수축한다(납관 경직). 쉬지 않고 수축하는 근육이 열을 더 만들고 근세포가 터져 CK 가 오르며 미오글로빈이 소변으로 나온다(콜라색 소변 → 급성 신손상 위험). 근육주사·고용량·빠른 증량·탈수가 위험인자다.<br> <b>왜 해열제가 듣지 않는가</b>: 감염 열은 체온 조절점이 올라간 것이라 해열제가 조절점을 내리지만, 이 고열은 근육이 만드는 열과 열 방출 실패 때문이라 해열제로는 내려가지 않는다. 그래서 물리적 냉각과 근육의 열 생산을 끊는 단트롤렌(근소포체 리아노딘 수용체에서 칼슘 방출 억제)을 쓴다. 도파민 효현제 브로모크립틴도 원인 쪽 치료로 쓸 수 있다.<br> <b>이후</b>: 회복 뒤 최소 2주 기다렸다가 저역가·비정형 약을 낮은 용량으로 천천히 다시 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">신경이완제 악성 증후군(정답)</th><th>세로토닌 증후군(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인 약</td><td>도파민 길항제(할로페리돌)</td><td>세로토닌 작용약(SSRI·트라마돌·리네졸리드 병용)</td></tr> <tr><td>발생 속도</td><td><b>며칠</b>에 걸쳐</td><td><b>수 시간 안</b></td></tr> <tr><td>근육</td><td><b>납관 경직, 반사 감소</b></td><td><b>근간대경련·클로누스·반사 항진</b>(하지에 뚜렷)</td></tr> <tr><td>그 밖</td><td>CK 매우 높음, 장음 정상</td><td>설사·장음 항진, 동공 확대</td></tr> <tr><td>특이 치료</td><td>단트롤렌·브로모크립틴</td><td>사이프로헵타딘</td></tr> </tbody></table> 고열·경직 환자에서 반사를 두드려 본다 — 반사가 줄고 몸이 납처럼 굳으면 신경이완제 악성 증후군, 반사가 튀고 클로누스가 있으면 세로토닌 증후군이다.\n- 오답 이유:\n  - ① 사이프로헵타딘은 세로토닌 작용약 병용 뒤 수 시간 안에 근간대경련·클로누스·반사 항진·설사가 생긴 세로토닌 증후군이라면 정답이 된다.\n  - ② 할로페리돌 증량은 원인 약을 더 주는 것이고, 로라제팜은 단순 초조나 긴장증이라면 쓰지만 이 상황에서는 원인 약 중단이 먼저다.\n  - ③ 할로페리돌 유지와 해열제는 감염에 의한 발열이라면 맞는 대응이지만, 근육이 만드는 고열에는 해열제가 듣지 않는다.\n  - ④ 피소스티그민은 동공 확대·피부 건조·장음 감소·요폐가 있는 항콜린 중독이라면 정답이 된다.\n- 함정: 고열과 의식 변화를 세로토닌 증후군으로 묶어 사이프로헵타딘을 고르는 것 — 약의 종류, 며칠의 경과, 반사 감소와 납관 경직이 신경이완제 악성 증후군을 가리킨다.\n- 학습목표: 고역가 항정신병약 투여 뒤 고열·납관 경직·의식 변화·CK 상승을 신경이완제 악성 증후군으로 판단하고, 원인 약 중단과 대증 치료에 단트롤렌을 더하는 처치를 세로토닌 증후군 치료와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 463: Psychiatric Disorders · Strawn JR, Keck PE Jr, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry. 2007;164(6):870-876 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "고역가 항정신병약(할로페리돌)을 반복 투여한 뒤 <b>고열·납관 경직·의식 변화·자율신경 불안정(고혈압·빈맥·발한)</b>이 생기고 CK 가 크게 올랐다 — 신경이완제 악성 증후군이다. 반사가 감소하고 근간대경련·클로누스가 없어 세로토닌 증후군과 다르고, 동공·장음이 정상이고 땀이 많아 항콜린 중독과도 다르다. 원인 약을 즉시 끊고 냉각·수액(콜라색 소변 — 횡문근융해의 신장 보호)으로 대증 치료하며, 40℃ 넘는 고열과 심한 경직에는 근이완제 단트롤렌을 더한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 생기는가</b>: 할로페리돌 같은 고역가 D2 길항제가 <b>시상하부와 흑질선조체의 도파민 전달을 갑자기 크게 막으면</b> 두 가지가 동시에 무너진다. 시상하부의 체온 조절점이 망가져 열을 내보내지 못하고, 선조체의 운동 조절이 끊겨 근육이 계속 수축한다(납관 경직). 쉬지 않고 수축하는 근육이 열을 더 만들고 근세포가 터져 CK 가 오르며 미오글로빈이 소변으로 나온다(콜라색 소변 → 급성 신손상 위험). 근육주사·고용량·빠른 증량·탈수가 위험인자다.<br> <b>왜 해열제가 듣지 않는가</b>: 감염 열은 체온 조절점이 올라간 것이라 해열제가 조절점을 내리지만, 이 고열은 근육이 만드는 열과 열 방출 실패 때문이라 해열제로는 내려가지 않는다. 그래서 물리적 냉각과 근육의 열 생산을 끊는 단트롤렌(근소포체 리아노딘 수용체에서 칼슘 방출 억제)을 쓴다. 도파민 효현제 브로모크립틴도 원인 쪽 치료로 쓸 수 있다.<br> <b>이후</b>: 회복 뒤 최소 2주 기다렸다가 저역가·비정형 약을 낮은 용량으로 천천히 다시 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">신경이완제 악성 증후군(정답)</th><th>세로토닌 증후군(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인 약</td><td>도파민 길항제(할로페리돌)</td><td>세로토닌 작용약(SSRI·트라마돌·리네졸리드 병용)</td></tr> <tr><td>발생 속도</td><td><b>며칠</b>에 걸쳐</td><td><b>수 시간 안</b></td></tr> <tr><td>근육</td><td><b>납관 경직, 반사 감소</b></td><td><b>근간대경련·클로누스·반사 항진</b>(하지에 뚜렷)</td></tr> <tr><td>그 밖</td><td>CK 매우 높음, 장음 정상</td><td>설사·장음 항진, 동공 확대</td></tr> <tr><td>특이 치료</td><td>단트롤렌·브로모크립틴</td><td>사이프로헵타딘</td></tr> </tbody></table> 고열·경직 환자에서 반사를 두드려 본다 — 반사가 줄고 몸이 납처럼 굳으면 신경이완제 악성 증후군, 반사가 튀고 클로누스가 있으면 세로토닌 증후군이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 사이프로헵타딘은 세로토닌 작용약 병용 뒤 수 시간 안에 근간대경련·클로누스·반사 항진·설사가 생긴 세로토닌 증후군이라면 정답이 된다.\n② 할로페리돌 증량은 원인 약을 더 주는 것이고, 로라제팜은 단순 초조나 긴장증이라면 쓰지만 이 상황에서는 원인 약 중단이 먼저다.\n③ 할로페리돌 유지와 해열제는 감염에 의한 발열이라면 맞는 대응이지만, 근육이 만드는 고열에는 해열제가 듣지 않는다.\n④ 피소스티그민은 동공 확대·피부 건조·장음 감소·요폐가 있는 항콜린 중독이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고열과 의식 변화를 세로토닌 증후군으로 묶어 사이프로헵타딘을 고르는 것 — 약의 종류, 며칠의 경과, 반사 감소와 납관 경직이 신경이완제 악성 증후군을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고역가 항정신병약 투여 뒤 고열·납관 경직·의식 변화·CK 상승을 신경이완제 악성 증후군으로 판단하고, 원인 약 중단과 대증 치료에 단트롤렌을 더하는 처치를 세로토닌 증후군 치료와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 463: Psychiatric Disorders · Strawn JR, Keck PE Jr, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry. 2007;164(6):870-876 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "할로페리돌 뒤 며칠에 걸친 고열·납관 경직·반사 감소·CK 상승은 신경이완제 악성 증후군이므로 원인 약을 끊고 냉각·수액·단트롤렌을 쓴다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "힘줄 반사가 감소하고 근간대경련과 발목 클로누스가 없으며 며칠에 걸쳐 생겼다",
+   "steps": 4,
+   "chain": [
+    "할로페리돌 반복 근육주사 3일 → 도파민 길항제 노출",
+    "체온 40.1℃ + 납관 경직 + 의식 변화 + 고혈압·빈맥·발한 + CK 18,500 → 신경이완제 악성 증후군",
+    "반사 감소·클로누스 없음 → 세로토닌 증후군 아님 / 동공·장음 정상·발한 → 항콜린 중독 아님",
+    "원인 약 중단 + 냉각·수액(콜라색 소변) + 40℃ 넘는 고열·심한 경직 → 단트롤렌"
+   ],
+   "key": [
+    {
+     "item": "할로페리돌 근육주사를 하루 3번 맞았다",
+     "why": "고역가 D2 길항제 노출",
+     "also": []
+    },
+    {
+     "item": "사지 전체가 납 파이프처럼 뻣뻣하고",
+     "why": "납관 경직",
+     "also": []
+    },
+    {
+     "item": "체온 40.1℃",
+     "why": "고열 — 단트롤렌 적응",
+     "also": []
+    },
+    {
+     "item": "크레아틴 인산활성효소 18,500 U/L",
+     "why": "근육 손상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "근간대경련과 발목 클로누스는 없다",
+     "why": "세로토닌 증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "동공 크기는 정상이고 장음은 정상이다",
+     "why": "항콜린 중독 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "소변은 콜라색이다",
+     "why": "미오글로빈뇨 — 적극적 수액",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "백혈구 14,200/mm³",
+     "why": "신경이완제 악성 증후군에서도 흔한 소견 — 감염만을 뜻하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "할로페리돌 반복 투여 뒤 고열·납관 경직·의식 변화·자율신경 불안정과 CK 상승이 생겼고 반사가 감소했다. 신경이완제 악성 증후군이므로 원인 약을 끊고 냉각·수액과 단트롤렌을 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "SSRI 에 트라마돌을 더한 뒤 수 시간 만에 반사 항진·발목 클로누스·설사가 생겼다면 사이프로헵타딘"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0745",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "약리 — 와파린 복용 중 방광염 치료 뒤 높아진 INR",
+  "type": "약리 — 와파린 복용 중 방광염 치료 뒤 높아진 INR",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-21",
+  "vignette": "A 71-year-old woman with atrial fibrillation who has taken warfarin for 3 years comes to the clinic because of easy bruising for 3 days. Her INR has been stable between 2.0 and 3.0 for the past year. Eight days ago she began a 7-day course of trimethoprim-sulfamethoxazole for cystitis. She has not changed her diet and takes no other new medications or supplements. Blood pressure is 132/78 mm Hg. There are several ecchymoses on the forearms. Serum creatinine and liver enzymes are within the reference ranges. Her INR is now 6.4.",
+  "question": "Which of the following best explains the change in her INR?",
+  "options": [
+   "Inhibition of P-glycoprotein in the intestine",
+   "Inhibition of hepatic cytochrome P450 2C9",
+   "Induction of hepatic cytochrome P450 3A4",
+   "Reduced dietary vitamin K intake",
+   "Inhibition of renal tubular secretion"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Warfarin is a racemic mixture, and the more potent <b>S-warfarin is cleared mainly by CYP2C9</b>. Sulfamethoxazole is a CYP2C9 inhibitor, so S-warfarin accumulates within days and the INR rises far above the target range. Her diet, liver and kidney function, and other drugs are unchanged, and the timing follows the start of trimethoprim-sulfamethoxazole.\n- 원리: <b>왜 S-형이 중요한가</b>: 와파린은 R-형과 S-형이 반씩 섞인 약인데, 비타민 K 에폭사이드 환원효소(VKORC1)를 막는 힘은 <b>S-형이 3~5배 강하다</b>. S-형은 주로 간의 CYP2C9 가, R-형은 CYP3A4·1A2 가 대사한다. 그래서 CYP2C9 를 막는 약(sulfamethoxazole·metronidazole·fluconazole·amiodarone)은 효과가 큰 쪽의 농도를 올려 INR 을 크게 올리고, CYP3A4 만 막는 약은 상대적으로 영향이 작다.<br> <b>왜 며칠 뒤에 나타나는가</b>: 와파린은 이미 만들어진 응고인자를 없애지 않고 새로 만드는 것을 막는다. 대사가 줄어 와파린 농도가 오르면, 반감기가 짧은 VII 인자부터 줄면서 INR 이 2~5일에 걸쳐 오른다. 항생제 시작 일주일 무렵 멍이 드는 것은 이 시간 경과와 맞는다.<br> <b>처치 연결</b>: 출혈이 없거나 경미한 INR 4.5~10 은 와파린을 한두 번 거르고 INR 을 다시 재며, 출혈 위험이 높으면 경구 비타민 K 소량을 더한다. 이런 상호작용을 피하려면 와파린 복용자의 방광염에는 nitrofurantoin 이나 fosfomycin 같은 대안을 고려한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP2C9 inhibition (answer)</th><th>CYP3A4 induction (closest mechanism distractor)</th></tr></thead><tbody> <tr><td>Effect on warfarin level</td><td><b>↑ S-warfarin</b> (potent enantiomer)</td><td>↓ R-warfarin (and some S)</td></tr> <tr><td>Effect on INR</td><td><b>Rises</b></td><td>Falls (risk of thrombosis)</td></tr> <tr><td>Typical drugs</td><td>Sulfamethoxazole, metronidazole, fluconazole, amiodarone</td><td>Rifampin, carbamazepine, phenytoin, St John's wort</td></tr> <tr><td>This patient</td><td>INR 6.4 after TMP-SMX — fits</td><td>Would lower the INR — does not fit</td></tr> </tbody></table> Ask first which way the INR moved: up means less metabolism (inhibition) or displaced vitamin K; down means induction or more vitamin K.\n- 오답 이유:\n  - (A) Intestinal P-glycoprotein inhibition explains interactions with dabigatran or digoxin, which are P-gp substrates, not warfarin.\n  - (C) CYP3A4 induction would explain the change if the INR had fallen after starting a drug such as rifampin or carbamazepine.\n  - (D) Reduced vitamin K intake would be correct if she had stopped eating leafy greens or had prolonged anorexia without a new interacting drug.\n  - (E) Inhibition of renal tubular secretion explains trimethoprim's rise in serum creatinine and potassium, but warfarin is not cleared by the kidney.\n- 함정: Attributing every antibiotic-warfarin interaction to loss of vitamin K-producing gut flora instead of recognizing CYP2C9 inhibition by sulfamethoxazole.\n- 학습목표: Explain a supratherapeutic INR after trimethoprim-sulfamethoxazole in a patient on warfarin by inhibition of CYP2C9, which metabolizes the more potent S-enantiomer\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 123: Antiplatelet, Anticoagulant, and Fibrinolytic Drugs · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 71: Principles of Clinical Pharmacology · Holbrook AM, Pereira JA, Labiris R, et al. Systematic overview of warfarin and its drug and food interactions. Arch Intern Med. 2005;165(10):1095-1106",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Warfarin is a racemic mixture, and the more potent <b>S-warfarin is cleared mainly by CYP2C9</b>. Sulfamethoxazole is a CYP2C9 inhibitor, so S-warfarin accumulates within days and the INR rises far above the target range. Her diet, liver and kidney function, and other drugs are unchanged, and the timing follows the start of trimethoprim-sulfamethoxazole."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 S-형이 중요한가</b>: 와파린은 R-형과 S-형이 반씩 섞인 약인데, 비타민 K 에폭사이드 환원효소(VKORC1)를 막는 힘은 <b>S-형이 3~5배 강하다</b>. S-형은 주로 간의 CYP2C9 가, R-형은 CYP3A4·1A2 가 대사한다. 그래서 CYP2C9 를 막는 약(sulfamethoxazole·metronidazole·fluconazole·amiodarone)은 효과가 큰 쪽의 농도를 올려 INR 을 크게 올리고, CYP3A4 만 막는 약은 상대적으로 영향이 작다.<br> <b>왜 며칠 뒤에 나타나는가</b>: 와파린은 이미 만들어진 응고인자를 없애지 않고 새로 만드는 것을 막는다. 대사가 줄어 와파린 농도가 오르면, 반감기가 짧은 VII 인자부터 줄면서 INR 이 2~5일에 걸쳐 오른다. 항생제 시작 일주일 무렵 멍이 드는 것은 이 시간 경과와 맞는다.<br> <b>처치 연결</b>: 출혈이 없거나 경미한 INR 4.5~10 은 와파린을 한두 번 거르고 INR 을 다시 재며, 출혈 위험이 높으면 경구 비타민 K 소량을 더한다. 이런 상호작용을 피하려면 와파린 복용자의 방광염에는 nitrofurantoin 이나 fosfomycin 같은 대안을 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP2C9 inhibition (answer)</th><th>CYP3A4 induction (closest mechanism distractor)</th></tr></thead><tbody> <tr><td>Effect on warfarin level</td><td><b>↑ S-warfarin</b> (potent enantiomer)</td><td>↓ R-warfarin (and some S)</td></tr> <tr><td>Effect on INR</td><td><b>Rises</b></td><td>Falls (risk of thrombosis)</td></tr> <tr><td>Typical drugs</td><td>Sulfamethoxazole, metronidazole, fluconazole, amiodarone</td><td>Rifampin, carbamazepine, phenytoin, St John's wort</td></tr> <tr><td>This patient</td><td>INR 6.4 after TMP-SMX — fits</td><td>Would lower the INR — does not fit</td></tr> </tbody></table> Ask first which way the INR moved: up means less metabolism (inhibition) or displaced vitamin K; down means induction or more vitamin K."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intestinal P-glycoprotein inhibition explains interactions with dabigatran or digoxin, which are P-gp substrates, not warfarin.\n(C) CYP3A4 induction would explain the change if the INR had fallen after starting a drug such as rifampin or carbamazepine.\n(D) Reduced vitamin K intake would be correct if she had stopped eating leafy greens or had prolonged anorexia without a new interacting drug.\n(E) Inhibition of renal tubular secretion explains trimethoprim's rise in serum creatinine and potassium, but warfarin is not cleared by the kidney."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing every antibiotic-warfarin interaction to loss of vitamin K-producing gut flora instead of recognizing CYP2C9 inhibition by sulfamethoxazole."
+   },
+   {
+    "k": "학습목표",
+    "v": "Explain a supratherapeutic INR after trimethoprim-sulfamethoxazole in a patient on warfarin by inhibition of CYP2C9, which metabolizes the more potent S-enantiomer"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 123: Antiplatelet, Anticoagulant, and Fibrinolytic Drugs · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 71: Principles of Clinical Pharmacology · Holbrook AM, Pereira JA, Labiris R, et al. Systematic overview of warfarin and its drug and food interactions. Arch Intern Med. 2005;165(10):1095-1106"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "와파린 복용 중 sulfamethoxazole 뒤 INR 이 오른 것은 S-와파린을 대사하는 CYP2C9 억제 때문이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "식사는 변하지 않았고 INR 상승이 TMP-SMX 시작 후 며칠 뒤에 나타났다",
+   "steps": 2,
+   "chain": [
+    "INR 이 1년간 안정 → TMP-SMX 시작 8일 뒤 6.4 → 새 약물 상호작용",
+    "sulfamethoxazole = CYP2C9 억제 → S-와파린 축적 → INR 상승"
+   ],
+   "key": [
+    {
+     "item": "Her INR is now 6.4",
+     "why": "치료 범위를 넘는 상승",
+     "also": []
+    },
+    {
+     "item": "Eight days ago she began a 7-day course of trimethoprim-sulfamethoxazole",
+     "why": "시간 관계가 맞는 새 약물",
+     "also": []
+    },
+    {
+     "item": "Her INR has been stable between 2.0 and 3.0 for the past year",
+     "why": "기존 용량은 적절했다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has not changed her diet",
+     "why": "비타민 K 섭취 감소 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine and liver enzymes are within the reference ranges",
+     "why": "간 기능 저하에 의한 응고인자 감소 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "atrial fibrillation",
+     "why": "와파린을 먹는 이유 — 기전 판단과 무관",
+     "also": []
+    }
+   ],
+   "summary": "1년간 안정되던 INR 이 TMP-SMX 시작 8일 뒤 6.4 로 올랐고 식사·간·신장 기능은 변하지 않았다. sulfamethoxazole 이 CYP2C9 를 억제해 S-와파린이 쌓인 것이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "결핵으로 rifampin 을 시작한 뒤 INR 이 1.3 으로 떨어졌다면 CYP3A4 등 간 효소 유도"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0744",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "소아청소년 — 간헐적 보챔과 젤리 같은 혈변의 영아",
+  "type": "소아청소년 — 간헐적 보챔과 젤리 같은 혈변의 영아",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-21",
+  "vignette": "10개월 남아가 하루 전부터 15~20분마다 갑자기 다리를 배로 끌어당기며 심하게 울다가 사이에는 조용히 논다며 왔다. 두 번 토했고 몇 시간 전 붉은 젤리 같은 변을 봤다. 체온 37.4℃, 맥박 132회/분, 혈압 92/58 mmHg 이다. 대천문은 함몰되어 있지 않고 모세혈관 재충전 시간은 2초이다. 오른쪽 윗배에 소시지 모양의 덩이가 만져지고 복부 근육 강직이나 반발압통은 없다. 단순 복부 X선에서 유리 공기는 없다. 복부 초음파에서 오른쪽 윗배에 표적 모양의 덩이가 보인다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "비위관 감압 후 24시간 경과 관찰",
+   "대장내시경",
+   "방사선 유도 공기 정복술",
+   "응급 개복술",
+   "바륨 관장으로 진단 후 경과 관찰"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 간헐적 복통(다리를 끌어당기며 울다 쉼), 구토, <b>붉은 젤리 같은 변</b>, 오른쪽 윗배의 소시지 모양 덩이, 초음파 <b>표적 징후</b> — 회결장 장중첩증이다. 반발압통·강직이 없어 복막염이 없고, 유리 공기가 없어 천공이 없으며, 활력징후와 말초 순환이 유지돼 쇼크도 없다. 이런 경우의 첫 치료는 수술이 아니라 방사선(또는 초음파) 유도 하 공기·수압 정복술이다.\n- 원리: <b>왜 젤리 같은 변이 나오는가</b>: 안쪽 장(중첩물)이 바깥 장(받는 장) 속으로 말려 들어가면 함께 딸려 들어간 장간막의 정맥이 먼저 눌린다. 정맥 울혈로 장벽이 붓고 점막에서 피와 점액이 섞여 나와 붉은 젤리 같은 변이 된다. 계속되면 동맥까지 막혀 장이 괴사하고 천공된다 — 그래서 시간이 중요하다.<br> <b>왜 정복술이 먼저인가</b>: 장벽이 아직 살아 있는 대부분의 영아 장중첩증은 항문으로 공기나 식염수를 넣어 생긴 압력으로 말려 들어간 장을 되밀 수 있다(성공률 약 80~90 %). 개복 없이 마취·수술 위험을 피하고, 실패하거나 재발이 반복될 때만 수술한다.<br> <b>왜 금기를 먼저 확인하는가</b>: 압력을 넣는 시술이므로 이미 천공됐거나(유리 공기) 괴사로 복막염이 생겼거나(반발압통·강직) 쇼크로 불안정하면 시술 중 천공·패혈증 위험이 커 바로 수술한다. 이 환아는 셋 다 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">공기·수압 정복술(정답)</th><th>응급 개복술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>복부 진찰</td><td><b>강직·반발압통 없음</b></td><td>복막염 징후</td></tr> <tr><td>영상</td><td>유리 공기 없음</td><td>유리 공기(천공)</td></tr> <tr><td>혈역학</td><td>맥박 132·혈압 92/58·재충전 2초 — 유지</td><td>수액에 반응하지 않는 쇼크</td></tr> <tr><td>그 밖</td><td>첫 발생</td><td>정복 실패, 병적 선두점(용종·메켈 게실) 의심</td></tr> </tbody></table> 장중첩증의 첫 질문은 「무엇으로 정복할까」가 아니라 「정복술의 금기(천공·복막염·쇼크)가 있는가」다 — 없으면 정복술, 있으면 수술이다.\n- 오답 이유:\n  - ① 비위관 감압 후 관찰은 소장-소장 장중첩증처럼 초음파에서 짧고 저절로 풀리는 일시적 중첩이라면 고려된다.\n  - ② 대장내시경은 큰 아이·성인에서 용종 같은 병적 선두점을 찾을 때라면 쓰지만 영아 장중첩증의 정복 방법이 아니다.\n  - ④ 응급 개복술은 유리 공기·복막염 징후·쇼크가 있거나 정복술이 실패했다면 정답이 된다.\n  - ⑤ 바륨 관장은 예전에 진단과 정복을 함께 하던 방법이지만, 진단만 하고 정복하지 않는 것은 장 괴사를 기다리는 셈이고 천공 시 바륨 복막염 위험이 있다.\n- 함정: 혈변이 있으면 장 괴사라고 보고 바로 수술을 고르는 것 — 젤리 같은 변은 정맥 울혈의 소견이고 수술 조건은 천공·복막염·쇼크다.\n- 학습목표: 복막염·쇼크 징후가 없는 영아 장중첩증에서 초음파 표적 징후를 근거로 방사선 유도 공기(또는 수압) 정복술을 첫 치료로 고르고, 응급 수술의 조건과 가른다\n- 근거·출처: Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics, 22nd ed. Elsevier; 2024. Chapter: Intussusception · Edwards EA, Pigg N, Courtier J, et al. Intussusception: past, present and future. Pediatr Radiol. 2017;47(9):1101-1108 · Ito Y, Kusakawa I, Murata Y, et al. Japanese guidelines for the management of intussusception in children, 2011. Pediatr Int. 2012;54(6):948-958",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "간헐적 복통(다리를 끌어당기며 울다 쉼), 구토, <b>붉은 젤리 같은 변</b>, 오른쪽 윗배의 소시지 모양 덩이, 초음파 <b>표적 징후</b> — 회결장 장중첩증이다. 반발압통·강직이 없어 복막염이 없고, 유리 공기가 없어 천공이 없으며, 활력징후와 말초 순환이 유지돼 쇼크도 없다. 이런 경우의 첫 치료는 수술이 아니라 방사선(또는 초음파) 유도 하 공기·수압 정복술이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 젤리 같은 변이 나오는가</b>: 안쪽 장(중첩물)이 바깥 장(받는 장) 속으로 말려 들어가면 함께 딸려 들어간 장간막의 정맥이 먼저 눌린다. 정맥 울혈로 장벽이 붓고 점막에서 피와 점액이 섞여 나와 붉은 젤리 같은 변이 된다. 계속되면 동맥까지 막혀 장이 괴사하고 천공된다 — 그래서 시간이 중요하다.<br> <b>왜 정복술이 먼저인가</b>: 장벽이 아직 살아 있는 대부분의 영아 장중첩증은 항문으로 공기나 식염수를 넣어 생긴 압력으로 말려 들어간 장을 되밀 수 있다(성공률 약 80~90 %). 개복 없이 마취·수술 위험을 피하고, 실패하거나 재발이 반복될 때만 수술한다.<br> <b>왜 금기를 먼저 확인하는가</b>: 압력을 넣는 시술이므로 이미 천공됐거나(유리 공기) 괴사로 복막염이 생겼거나(반발압통·강직) 쇼크로 불안정하면 시술 중 천공·패혈증 위험이 커 바로 수술한다. 이 환아는 셋 다 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">공기·수압 정복술(정답)</th><th>응급 개복술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>복부 진찰</td><td><b>강직·반발압통 없음</b></td><td>복막염 징후</td></tr> <tr><td>영상</td><td>유리 공기 없음</td><td>유리 공기(천공)</td></tr> <tr><td>혈역학</td><td>맥박 132·혈압 92/58·재충전 2초 — 유지</td><td>수액에 반응하지 않는 쇼크</td></tr> <tr><td>그 밖</td><td>첫 발생</td><td>정복 실패, 병적 선두점(용종·메켈 게실) 의심</td></tr> </tbody></table> 장중첩증의 첫 질문은 「무엇으로 정복할까」가 아니라 「정복술의 금기(천공·복막염·쇼크)가 있는가」다 — 없으면 정복술, 있으면 수술이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 비위관 감압 후 관찰은 소장-소장 장중첩증처럼 초음파에서 짧고 저절로 풀리는 일시적 중첩이라면 고려된다.\n② 대장내시경은 큰 아이·성인에서 용종 같은 병적 선두점을 찾을 때라면 쓰지만 영아 장중첩증의 정복 방법이 아니다.\n④ 응급 개복술은 유리 공기·복막염 징후·쇼크가 있거나 정복술이 실패했다면 정답이 된다.\n⑤ 바륨 관장은 예전에 진단과 정복을 함께 하던 방법이지만, 진단만 하고 정복하지 않는 것은 장 괴사를 기다리는 셈이고 천공 시 바륨 복막염 위험이 있다."
+   },
+   {
+    "k": "함정",
+    "v": "혈변이 있으면 장 괴사라고 보고 바로 수술을 고르는 것 — 젤리 같은 변은 정맥 울혈의 소견이고 수술 조건은 천공·복막염·쇼크다."
+   },
+   {
+    "k": "학습목표",
+    "v": "복막염·쇼크 징후가 없는 영아 장중첩증에서 초음파 표적 징후를 근거로 방사선 유도 공기(또는 수압) 정복술을 첫 치료로 고르고, 응급 수술의 조건과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, St Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics, 22nd ed. Elsevier; 2024. Chapter: Intussusception · Edwards EA, Pigg N, Courtier J, et al. Intussusception: past, present and future. Pediatr Radiol. 2017;47(9):1101-1108 · Ito Y, Kusakawa I, Murata Y, et al. Japanese guidelines for the management of intussusception in children, 2011. Pediatr Int. 2012;54(6):948-958"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "천공·복막염·쇼크가 없는 영아 장중첩증의 첫 치료는 공기·수압 정복술이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "강직·반발압통이 없고 유리 공기가 없으며 혈역학이 유지된다",
+   "steps": 3,
+   "chain": [
+    "간헐적 복통 + 젤리 같은 변 + 소시지 모양 덩이 + 초음파 표적 징후 → 회결장 장중첩증",
+    "반발압통·강직 없음, 유리 공기 없음, 맥박·혈압·재충전 유지 → 정복술 금기 없음",
+    "→ 방사선 유도 공기 정복술"
+   ],
+   "key": [
+    {
+     "item": "붉은 젤리 같은 변",
+     "why": "장중첩증의 정맥 울혈 소견",
+     "also": []
+    },
+    {
+     "item": "오른쪽 윗배에 소시지 모양의 덩이가 만져지고",
+     "why": "중첩된 장",
+     "also": []
+    },
+    {
+     "item": "표적 모양의 덩이",
+     "why": "초음파 확진 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "복부 근육 강직이나 반발압통은 없다",
+     "why": "복막염 없음 — 정복술 가능",
+     "also": []
+    },
+    {
+     "item": "단순 복부 X선에서 유리 공기는 없다",
+     "why": "천공 없음 — 정복술 가능",
+     "also": []
+    },
+    {
+     "item": "모세혈관 재충전 시간은 2초이다",
+     "why": "쇼크 없음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "체온 37.4℃",
+     "why": "경미한 체온 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "10개월 영아의 간헐적 복통·젤리 같은 변·소시지 모양 덩이와 초음파 표적 징후로 장중첩증이다. 천공·복막염·쇼크가 없으므로 첫 치료는 방사선 유도 공기 정복술이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "복부 X선에 유리 공기가 있거나 반발압통·강직이 있었다면 응급 개복술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0743",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "감염 — 항암치료 중 호중구감소 발열의 경험적 항생제",
+  "type": "감염 — 항암치료 중 호중구감소 발열의 경험적 항생제",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-21",
+  "vignette": "A 58-year-old woman with diffuse large B-cell lymphoma comes to the emergency department because of a temperature of 38.6°C for 4 hours. Her third cycle of chemotherapy was 9 days ago. She has no cough, dysuria, diarrhea, or skin lesions. She has no indwelling central venous catheter. Temperature is 38.6°C, pulse is 104/min, respirations are 18/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 97% on room air. The lungs are clear, and there is no mucositis or skin erythema. Leukocyte count is 400/mm3 with an absolute neutrophil count of 80/mm3. Chest x-ray shows no abnormalities. Two sets of blood cultures and a urine culture are obtained.",
+  "question": "Which of the following is the most appropriate initial antimicrobial therapy?",
+  "options": [
+   "Intravenous ceftriaxone alone",
+   "Oral amoxicillin-clavulanate and ciprofloxacin",
+   "Intravenous fluconazole alone",
+   "Intravenous cefepime alone",
+   "Intravenous cefepime and vancomycin"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Fever with an absolute neutrophil count below 500/mm3 is febrile neutropenia; empiric therapy must begin within an hour and must cover <b>Pseudomonas aeruginosa</b> and other gram-negative bacilli, which cause the most rapid deaths. She is hemodynamically stable with no catheter, skin or soft-tissue infection, pneumonia, or severe mucositis, so there is no indication for empiric vancomycin. An antipseudomonal beta-lactam such as cefepime alone is appropriate.\n- 원리: <b>왜 녹농균부터 덮는가</b>: 호중구가 500/mm³ 아래로 떨어지면 몸에 사는 세균을 막는 1차 방어가 사라져 장점막·피부의 그람음성 막대균이 혈류로 쉽게 들어간다. 그중 녹농균 균혈증은 치료가 몇 시간만 늦어도 사망률이 크게 오르므로, 열 말고 다른 증상이 없어도 <b>녹농균에 듣는 베타락탐</b>(cefepime·piperacillin-tazobactam·meropenem)을 1시간 안에 시작한다. 호중구감소 환자는 염증 반응을 만들지 못해 폐렴·요로감염이 있어도 증상·영상이 약하게 나타나므로 「원인 부위가 없다」는 것이 안심할 근거가 되지 않는다.<br> <b>왜 반코마이신을 처음부터 넣지 않는가</b>: 그람양성균은 흔하지만 대개 진행이 느려 배양 결과를 기다려도 사망률이 늘지 않는다. 그래서 혈역학 불안정, 카테터 관련 감염 의심, 피부·연조직 감염, 폐렴, MRSA 집락, 혈액 배양의 그람양성균처럼 <b>특정 조건이 있을 때만</b> 더한다. 불필요한 반코마이신은 신독성과 내성(VRE)을 늘린다.<br> <b>외래 치료 조건</b>: MASCC 점수가 높은 저위험 환자는 경구 치료도 가능하지만, 빈맥과 깊은 호중구감소(80/mm³)가 있는 이 환자는 입원 정맥 치료가 원칙이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Cefepime alone (answer)</th><th>Cefepime + vancomycin (closest distractor)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td><b>Stable</b> (BP 118/72)</td><td>Hypotension or septic shock</td></tr> <tr><td>Catheter / skin</td><td>No catheter, no skin infection</td><td>Suspected catheter infection, cellulitis</td></tr> <tr><td>Lungs / cultures</td><td>Clear lungs, cultures pending</td><td>Pneumonia, or gram-positive cocci in blood culture</td></tr> <tr><td>Other triggers</td><td>None</td><td>Known MRSA colonization, severe mucositis with fluoroquinolone prophylaxis</td></tr> </tbody></table> Gram-negative coverage is mandatory for every febrile neutropenic patient; gram-positive coverage is added only for a listed indication.\n- 오답 이유:\n  - (A) Ceftriaxone would be appropriate for community-acquired infection in a patient with normal neutrophils, but it does not cover Pseudomonas.\n  - (B) Oral outpatient therapy would be acceptable for a low-risk patient by MASCC criteria with expected brief neutropenia and stable vital signs.\n  - (C) Antifungal therapy would be added if fever persisted for 4 to 7 days despite broad-spectrum antibiotics with prolonged neutropenia.\n  - (E) Adding vancomycin would be correct if she were hypotensive or had a suspected catheter infection, cellulitis, pneumonia, or MRSA colonization.\n- 함정: Adding vancomycin reflexively to every febrile neutropenic patient, or choosing a non-antipseudomonal cephalosporin because no infection source is evident.\n- 학습목표: Choose antipseudomonal beta-lactam monotherapy for a hemodynamically stable patient with febrile neutropenia and no indication for gram-positive coverage, and recognize when vancomycin should be added\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 79: Infections in Patients with Cancer · Freifeld AG, Bow EJ, Sepkowitz KA, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the IDSA. Clin Infect Dis. 2011;52(4):e56-e93 · Taplitz RA, Kennedy EB, Bow EJ, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO and IDSA clinical practice guideline update. J Clin Oncol. 2018;36(14):1443-1453",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever with an absolute neutrophil count below 500/mm3 is febrile neutropenia; empiric therapy must begin within an hour and must cover <b>Pseudomonas aeruginosa</b> and other gram-negative bacilli, which cause the most rapid deaths. She is hemodynamically stable with no catheter, skin or soft-tissue infection, pneumonia, or severe mucositis, so there is no indication for empiric vancomycin. An antipseudomonal beta-lactam such as cefepime alone is appropriate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 녹농균부터 덮는가</b>: 호중구가 500/mm³ 아래로 떨어지면 몸에 사는 세균을 막는 1차 방어가 사라져 장점막·피부의 그람음성 막대균이 혈류로 쉽게 들어간다. 그중 녹농균 균혈증은 치료가 몇 시간만 늦어도 사망률이 크게 오르므로, 열 말고 다른 증상이 없어도 <b>녹농균에 듣는 베타락탐</b>(cefepime·piperacillin-tazobactam·meropenem)을 1시간 안에 시작한다. 호중구감소 환자는 염증 반응을 만들지 못해 폐렴·요로감염이 있어도 증상·영상이 약하게 나타나므로 「원인 부위가 없다」는 것이 안심할 근거가 되지 않는다.<br> <b>왜 반코마이신을 처음부터 넣지 않는가</b>: 그람양성균은 흔하지만 대개 진행이 느려 배양 결과를 기다려도 사망률이 늘지 않는다. 그래서 혈역학 불안정, 카테터 관련 감염 의심, 피부·연조직 감염, 폐렴, MRSA 집락, 혈액 배양의 그람양성균처럼 <b>특정 조건이 있을 때만</b> 더한다. 불필요한 반코마이신은 신독성과 내성(VRE)을 늘린다.<br> <b>외래 치료 조건</b>: MASCC 점수가 높은 저위험 환자는 경구 치료도 가능하지만, 빈맥과 깊은 호중구감소(80/mm³)가 있는 이 환자는 입원 정맥 치료가 원칙이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Cefepime alone (answer)</th><th>Cefepime + vancomycin (closest distractor)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td><b>Stable</b> (BP 118/72)</td><td>Hypotension or septic shock</td></tr> <tr><td>Catheter / skin</td><td>No catheter, no skin infection</td><td>Suspected catheter infection, cellulitis</td></tr> <tr><td>Lungs / cultures</td><td>Clear lungs, cultures pending</td><td>Pneumonia, or gram-positive cocci in blood culture</td></tr> <tr><td>Other triggers</td><td>None</td><td>Known MRSA colonization, severe mucositis with fluoroquinolone prophylaxis</td></tr> </tbody></table> Gram-negative coverage is mandatory for every febrile neutropenic patient; gram-positive coverage is added only for a listed indication."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ceftriaxone would be appropriate for community-acquired infection in a patient with normal neutrophils, but it does not cover Pseudomonas.\n(B) Oral outpatient therapy would be acceptable for a low-risk patient by MASCC criteria with expected brief neutropenia and stable vital signs.\n(C) Antifungal therapy would be added if fever persisted for 4 to 7 days despite broad-spectrum antibiotics with prolonged neutropenia.\n(E) Adding vancomycin would be correct if she were hypotensive or had a suspected catheter infection, cellulitis, pneumonia, or MRSA colonization."
+   },
+   {
+    "k": "함정",
+    "v": "Adding vancomycin reflexively to every febrile neutropenic patient, or choosing a non-antipseudomonal cephalosporin because no infection source is evident."
+   },
+   {
+    "k": "학습목표",
+    "v": "Choose antipseudomonal beta-lactam monotherapy for a hemodynamically stable patient with febrile neutropenia and no indication for gram-positive coverage, and recognize when vancomycin should be added"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 79: Infections in Patients with Cancer · Freifeld AG, Bow EJ, Sepkowitz KA, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the IDSA. Clin Infect Dis. 2011;52(4):e56-e93 · Taplitz RA, Kennedy EB, Bow EJ, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO and IDSA clinical practice guideline update. J Clin Oncol. 2018;36(14):1443-1453"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "혈역학이 안정되고 그람양성균 덮을 조건이 없는 호중구감소 발열은 녹농균에 듣는 베타락탐 단독으로 시작한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "혈압이 안정적이고 카테터·피부 감염·폐렴·점막염이 없다",
+   "steps": 3,
+   "chain": [
+    "ANC 80/mm³ + 38.6°C → 호중구감소 발열, 1시간 안 경험적 치료",
+    "그람음성균·녹농균이 가장 빠른 사망 원인 → 녹농균에 듣는 베타락탐",
+    "혈압 안정·카테터 없음·피부·폐 정상 → 반코마이신 조건 없음 → cefepime 단독"
+   ],
+   "key": [
+    {
+     "item": "absolute neutrophil count of 80/mm3",
+     "why": "호중구감소 발열의 정의",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 118/72 mm Hg",
+     "why": "혈역학 안정 — 반코마이신 조건이 아님",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no indwelling central venous catheter",
+     "why": "카테터 관련 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "there is no mucositis or skin erythema",
+     "why": "피부·연조직 감염과 중증 점막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Chest x-ray shows no abnormalities",
+     "why": "폐렴 가능성을 낮추지만 호중구감소에서는 완전히 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "pulse is 104/min",
+     "why": "저위험 외래 치료 대상이 아님",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "diffuse large B-cell lymphoma",
+     "why": "호중구감소의 원인 배경",
+     "also": []
+    }
+   ],
+   "summary": "항암치료 9일 뒤 호중구 80/mm³ 의 발열이다. 혈역학이 안정되고 그람양성균을 덮을 조건이 없으므로 녹농균에 듣는 cefepime 단독으로 시작한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈압이 85/50 mm Hg 로 떨어졌거나 중심정맥관 삽입부에 발적·고름이 있었다면 cefepime 에 vancomycin 추가"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0742",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·순환기·산과·이비인후과·외과계·감염·소아청소년·약리·정신)",
+  "subtopic": "외과계 — 복부 둔상 뒤 수액에 반응하지 않는 저혈압",
+  "type": "외과계 — 복부 둔상 뒤 수액에 반응하지 않는 저혈압",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-21",
+  "vignette": "35세 남자가 오토바이 사고로 119 구급차를 타고 응급실에 왔다. 핸들에 윗배를 부딪혔다고 한다. 의식은 명료하고 기도는 유지되며 양쪽 호흡음은 대칭이다. 혈압 78/46 mmHg, 맥박 132회/분, 호흡 26회/분이다. 복부는 팽만되어 있고 전체에 압통이 있다. 골반 압박 검사에서 통증은 없고 사지에 외부 출혈은 없다. 가온 결정질 용액 1 L 와 적혈구 2단위를 빠르게 준 뒤에도 혈압은 82/50 mmHg 이다. 외상 초점 초음파(FAST)에서 모리슨 오목과 비장 주위에 액체가 보인다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "혈관조영 색전술",
+   "결정질 용액 2 L 추가 투여 후 재평가",
+   "응급 개복술",
+   "복부·골반 조영증강 CT",
+   "진단적 복강 세척"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 복부 둔상 뒤 결정질 용액과 수혈에도 혈압이 오르지 않는 <b>무반응 출혈성 쇼크</b>이고, FAST 에서 복강 안 액체(혈액)가 보인다. 가슴(호흡음 대칭)·골반(압박 통증 없음)·외부 출혈은 원인이 아니다 — 출혈원은 배 안이다. 혈역학이 불안정하고 FAST 양성이면 CT 를 찍으러 가지 않고 바로 수술실에서 응급 개복술로 지혈한다.\n- 원리: <b>왜 CT 를 건너뛰는가</b>: CT 는 손상 장기와 정도를 정확히 알려 주지만, 촬영실로 옮기고 찍고 읽는 동안 지혈이 늦어진다. 무반응 쇼크 환자의 사망은 대부분 첫 몇 시간의 출혈에서 오므로 「어디서 피가 나는지」가 FAST 로 배 안이라고 정해지면 남은 정보는 수술실에서 눈으로 얻는다. 영상은 <b>혈역학이 안정된 환자</b>의 비수술 치료 여부를 정할 때 쓴다.<br> <b>왜 수액을 더 주지 않는가</b>: 결정질 용액을 많이 주면 혈액이 희석되고 체온이 내려가며 산증이 심해져 응고가 나빠진다(죽음의 삼각). 출혈이 멈추지 않은 상태에서 혈압을 정상으로 올리면 형성된 혈전이 밀려 더 샌다. 그래서 출혈성 쇼크에서는 수혈 위주의 손상 통제 소생술과 빠른 지혈이 원칙이다.<br> <b>출혈원 찾기</b>: 외상 쇼크의 출혈은 가슴·배·골반(후복막)·긴뼈·외부의 다섯 곳에서 온다. 흉부 X선(호흡음), 골반 X선·진찰, FAST 로 각각 확인해 배 안만 남으면 개복이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">응급 개복술(정답)</th><th>복부 CT(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>수액·수혈에 무반응</b>인 저혈압</td><td>안정 또는 일시 반응 후 유지</td></tr> <tr><td>FAST</td><td>양성(복강 내 액체)</td><td>양성이어도 혈역학이 안정되면 CT</td></tr> <tr><td>목적</td><td>즉시 지혈</td><td>손상 등급 확인 → 비수술 치료·색전술 결정</td></tr> <tr><td>이 환자</td><td>82/50 mmHg, 맥박 132 — 일치</td><td>촬영 중 지혈 지연 — 부적절</td></tr> </tbody></table> FAST 의 양성·음성보다 먼저 「수액에 반응하는가」를 묻는다 — 무반응 + FAST 양성이면 수술실, 안정이면 CT 다.\n- 오답 이유:\n  - ① 혈관조영 색전술은 혈역학이 안정됐거나 골반 골절 출혈처럼 조영제 유출이 보이는 경우라면 정답이 될 수 있다.\n  - ② 추가 결정질 용액은 출혈이 멈춘 일시적 혈량 저하라면 쓸 수 있지만, 지속 출혈에서는 희석성 응고장애를 악화시킨다.\n  - ④ 복부 CT 는 FAST 양성이라도 수액에 반응해 혈압이 유지되는 안정된 환자라면 손상 등급과 비수술 치료를 정하려고 찍는다.\n  - ⑤ 진단적 복강 세척은 FAST 를 쓸 수 없거나 결과가 애매한 불안정 환자에서 배 안 출혈을 확인해야 할 때라면 고려된다.\n- 함정: FAST 양성이면 무조건 CT 로 확인해야 한다고 생각해 무반응 쇼크 환자를 촬영실로 보내는 것.\n- 학습목표: 복부 둔상 뒤 수액에 반응하지 않는 쇼크에서 FAST 양성이면 CT 없이 응급 개복술로 가는 판단을, 혈역학이 안정된 경우의 CT 와 가른다\n- 근거·출처: American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual, 10th ed. ACS; 2018. Chapter 5: Abdominal and Pelvic Trauma · Rossaint R, Afshari A, Bouillon B, et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Crit Care. 2023;27:80 · Coccolini F, Montori G, Catena F, et al. Splenic trauma: WSES classification and guidelines for adult and pediatric patients. World J Emerg Surg. 2017;12:40",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "복부 둔상 뒤 결정질 용액과 수혈에도 혈압이 오르지 않는 <b>무반응 출혈성 쇼크</b>이고, FAST 에서 복강 안 액체(혈액)가 보인다. 가슴(호흡음 대칭)·골반(압박 통증 없음)·외부 출혈은 원인이 아니다 — 출혈원은 배 안이다. 혈역학이 불안정하고 FAST 양성이면 CT 를 찍으러 가지 않고 바로 수술실에서 응급 개복술로 지혈한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 CT 를 건너뛰는가</b>: CT 는 손상 장기와 정도를 정확히 알려 주지만, 촬영실로 옮기고 찍고 읽는 동안 지혈이 늦어진다. 무반응 쇼크 환자의 사망은 대부분 첫 몇 시간의 출혈에서 오므로 「어디서 피가 나는지」가 FAST 로 배 안이라고 정해지면 남은 정보는 수술실에서 눈으로 얻는다. 영상은 <b>혈역학이 안정된 환자</b>의 비수술 치료 여부를 정할 때 쓴다.<br> <b>왜 수액을 더 주지 않는가</b>: 결정질 용액을 많이 주면 혈액이 희석되고 체온이 내려가며 산증이 심해져 응고가 나빠진다(죽음의 삼각). 출혈이 멈추지 않은 상태에서 혈압을 정상으로 올리면 형성된 혈전이 밀려 더 샌다. 그래서 출혈성 쇼크에서는 수혈 위주의 손상 통제 소생술과 빠른 지혈이 원칙이다.<br> <b>출혈원 찾기</b>: 외상 쇼크의 출혈은 가슴·배·골반(후복막)·긴뼈·외부의 다섯 곳에서 온다. 흉부 X선(호흡음), 골반 X선·진찰, FAST 로 각각 확인해 배 안만 남으면 개복이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">응급 개복술(정답)</th><th>복부 CT(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>수액·수혈에 무반응</b>인 저혈압</td><td>안정 또는 일시 반응 후 유지</td></tr> <tr><td>FAST</td><td>양성(복강 내 액체)</td><td>양성이어도 혈역학이 안정되면 CT</td></tr> <tr><td>목적</td><td>즉시 지혈</td><td>손상 등급 확인 → 비수술 치료·색전술 결정</td></tr> <tr><td>이 환자</td><td>82/50 mmHg, 맥박 132 — 일치</td><td>촬영 중 지혈 지연 — 부적절</td></tr> </tbody></table> FAST 의 양성·음성보다 먼저 「수액에 반응하는가」를 묻는다 — 무반응 + FAST 양성이면 수술실, 안정이면 CT 다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 혈관조영 색전술은 혈역학이 안정됐거나 골반 골절 출혈처럼 조영제 유출이 보이는 경우라면 정답이 될 수 있다.\n② 추가 결정질 용액은 출혈이 멈춘 일시적 혈량 저하라면 쓸 수 있지만, 지속 출혈에서는 희석성 응고장애를 악화시킨다.\n④ 복부 CT 는 FAST 양성이라도 수액에 반응해 혈압이 유지되는 안정된 환자라면 손상 등급과 비수술 치료를 정하려고 찍는다.\n⑤ 진단적 복강 세척은 FAST 를 쓸 수 없거나 결과가 애매한 불안정 환자에서 배 안 출혈을 확인해야 할 때라면 고려된다."
+   },
+   {
+    "k": "함정",
+    "v": "FAST 양성이면 무조건 CT 로 확인해야 한다고 생각해 무반응 쇼크 환자를 촬영실로 보내는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "복부 둔상 뒤 수액에 반응하지 않는 쇼크에서 FAST 양성이면 CT 없이 응급 개복술로 가는 판단을, 혈역학이 안정된 경우의 CT 와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual, 10th ed. ACS; 2018. Chapter 5: Abdominal and Pelvic Trauma · Rossaint R, Afshari A, Bouillon B, et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Crit Care. 2023;27:80 · Coccolini F, Montori G, Catena F, et al. Splenic trauma: WSES classification and guidelines for adult and pediatric patients. World J Emerg Surg. 2017;12:40"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "수액·수혈에 반응하지 않는 쇼크에서 FAST 로 복강 내 출혈이 확인되면 CT 없이 응급 개복술을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "결정질 용액과 적혈구를 준 뒤에도 혈압이 82/50 mmHg 로 오르지 않는다",
+   "steps": 3,
+   "chain": [
+    "혈압 78/46·맥박 132 → 출혈성 쇼크",
+    "호흡음 대칭·골반 압박 통증 없음·외부 출혈 없음 + FAST 에서 모리슨 오목·비장 주위 액체 → 출혈원은 배 안",
+    "수액·수혈 뒤에도 82/50 → 무반응 → CT 를 건너뛰고 응급 개복술"
+   ],
+   "key": [
+    {
+     "item": "혈압 78/46 mmHg, 맥박 132회/분",
+     "why": "출혈성 쇼크",
+     "also": []
+    },
+    {
+     "item": "모리슨 오목과 비장 주위에 액체가 보인다",
+     "why": "복강 내 출혈",
+     "also": []
+    },
+    {
+     "item": "뒤에도 혈압은 82/50 mmHg 이다",
+     "why": "무반응 — CT 대신 수술",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 호흡음은 대칭이다",
+     "why": "긴장성 기흉·대량 혈흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "골반 압박 검사에서 통증은 없고",
+     "why": "골반 골절 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "의식은 명료하고 기도는 유지되며",
+     "why": "일차 조사의 A·D — 처치 선택에는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "복부 둔상 뒤 수액·수혈에 반응하지 않는 출혈성 쇼크이고, 다른 출혈원은 없으며 FAST 에서 복강 내 액체가 보인다. CT 를 거치지 않고 응급 개복술로 지혈한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "수액 1 L 뒤 혈압이 120/70 mmHg 로 회복되어 유지되었다면 복부·골반 조영증강 CT"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0737",
   "exam": "imaging",
   "style": "usmle_style",

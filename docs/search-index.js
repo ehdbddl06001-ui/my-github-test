@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4128,
+  "total": 4139,
   "byType": {
    "paper": 969,
+   "imaging": 747,
    "concept": 210,
    "kmle": 1920,
-   "imaging": 736,
    "usmle": 276,
    "ailab": 14,
    "basic": 3
@@ -34,35 +34,35 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 125,
    "Surgery": 125,
    "Pulmonology": 124,
+   "순환기": 119,
    "Hematology": 117,
-   "순환기": 116,
    "Laboratory Medicine": 99,
-   "산부인과": 91,
+   "산부인과": 92,
    "호흡기": 49,
    "소화기": 44,
-   "소아과": 38,
+   "소아과": 39,
+   "감염": 33,
    "신경": 33,
    "신장·비뇨기": 33,
    "혈액·종양": 33,
-   "감염": 32,
    "내분비": 32,
    "응급·중환자": 32,
    "병리·조직학": 30,
    "Physiology": 29,
-   "피부과": 28,
-   "외과": 27,
+   "피부과": 29,
+   "외과": 28,
    "예방의학·역학": 25,
    "Pharmacology": 23,
    "Biochemistry": 22,
    "Microbiology": 21,
-   "약리": 19,
+   "약리": 20,
+   "정신과": 19,
    "Immunology": 18,
    "Internal Medicine": 18,
    "근골격·류마티스": 18,
-   "정신과": 18,
    "안과": 14,
+   "이비인후과": 13,
    "영상의학": 12,
-   "이비인후과": 12,
    "Emergency Medicine": 9,
    "Preventive Medicine": 8,
    "Obstetrics and Gynecology": 5,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1206,
-   "high": 2918,
+   "high": 2929,
    "low": 4
   },
   "tagCount": 4920
@@ -221,6 +221,201 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-21_paper-2026-0962_safety_signal_quality_and_patient_satisfaction_with_insertab.md",
    "snippet": "Title Safety, Signal Quality, and Patient Satisfaction With Insertable Loop Recorder Implantation by Specialized Electrophysiology Nurses: Prospective Observational Study Authors Lillo Rodenas Isabel, Reig Gómez Helena, Ajo Ferrer Raquel, C",
    "text": "Cardiology scraped pubmed PubMed / JMIR nursing Title Safety, Signal Quality, and Patient Satisfaction With Insertable Loop Recorder Implantation by Specialized Electrophysiology Nurses: Prospective Observational Study Authors Lillo Rodenas Isabel, Reig Gómez Helena, Ajo Ferrer Raquel, Carrillo Molina Ángela María, Ajo Ferrer María, Ghodbane Kiamouche Sofiane, Martínez Martínez Juan Gabriel Journal / DOI JMIR nursing · DOI: 10.2196/106175 · PMID: 43063362 https://pubmed.ncbi.nlm.nih.gov/43063362/ Abstract BACKGROUND: Insertable loop recorders (ILRs) are subcutaneous cardiac monitoring devices used in the diagnosis of arrhythmias and in the etiological investigation of syncope and cryptogenic stroke. Device miniaturization and procedural simplification have facilitated implantation in ambulatory settings. The involvement of specialized electrophysiology nurses may help meet rising clinical demand, although evidence in our setting remains limited. OBJECTIVE: This study aimed to analyze implantation safety, detection signal quality, adverse events during follow up, and patient satisfaction when the procedure was performed by specialized nurses. METHODS: This prospective observational study (the CARDIONURSE study) was conducted in the Arrhythmia Unit of Hospital General Universitario Doctor Balmis between February 2022 and May 2023. Thirty five patients with a clinical indication for ILR implantation were included. The procedure was performed by 2 specialized nurses under medical supervision. Sociodemographic, clinical, and technical implantation variables were collected, including detection signal amplitude (mV), together with adverse events and follow up outcomes at 1 and 6 months. Patient satisfaction was assessed using a study specific questionnaire at 4 time points. Descriptive statistical analysis was performed. RESULTS: Mean age was 71.1 (SD 11.3) years, and 62.9% (22/35) were women. The most frequent indication was syncope (27/35, 77.1%), followed by suspected atrial fibrillation (AF) in cryptogenic stroke (6/35, 17.1%). No objective procedural complications occurred (35/35, 100% of procedures); mild, transient procedural pain was reported in 5.7% (2/35) of patients, and the procedure lasted less than 5 minutes in 74.3% (26/35) of procedures. Mean signal amplitude was 0.45 (SD 0.29) mV, with a visible P wave in 94.3% (33/35) of patients. No wound related adverse events were recorded among the 85.7% (30/35) of patients with available follow up data at 6 months; data were unavailable for the remaining 5 patients. A diagnosis was obtained in 20% (6/30) of patients with an available diagnostic outcome at 6 months. Overall, 97.1% (34/35) of patients reported maximum or very high satisfaction with the intervention, and 100% (35/35) with the care received. CONCLUSIONS: ILR implantation by specialized electrophysiology nurses in an ambulatory setting is a safe, fast, and technically adequate procedure, with adequate signal quality and high patient satisfaction. These findings support the feasibility of specialized nursing as ILR implanters in similar ambulatory care settings, although confirmation in larger, multicenter studies is warranted before broader implementation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0748",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 일주일째 두근거림이 있는 고혈압 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0748.md",
+   "snippet": "66세 남자가 일주일 전부터 가끔 가슴이 두근거린다며 왔다. 가슴 통증, 숨참, 어지러움, 실신은 없다. 10년 전부터 고혈압으로 암로디핀을 먹고 있으며 당뇨병, 심부전, 뇌졸중의 병력은 없다. 혈압 134/82 mmHg, 맥박 84회/분이고 불규칙하다. 호흡음은 깨끗하고 다리 부종은 없다. 혈색소 14.1 g/dL, 혈소판 23만/mm³, 크레아티닌 0.9 mg/dL, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같",
+   "text": "순환기 심전도 처치 — 일주일째 두근거림이 있는 고혈압 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4 66세 남자가 일주일 전부터 가끔 가슴이 두근거린다며 왔다. 가슴 통증, 숨참, 어지러움, 실신은 없다. 10년 전부터 고혈압으로 암로디핀을 먹고 있으며 당뇨병, 심부전, 뇌졸중의 병력은 없다. 혈압 134/82 mmHg, 맥박 84회/분이고 불규칙하다. 호흡음은 깨끗하고 다리 부종은 없다. 혈색소 14.1 g/dL, 혈소판 23만/mm³, 크레아티닌 0.9 mg/dL, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 경구 항응고제(아픽사반) 시작 B. 아스피린 시작 C. 즉시 동기화 전기 심율동전환 D. 아데노신 정맥주사 E. 아미오다론 정맥 부하"
+  },
+  {
+   "id": "imaging-2026-0747",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 건강검진 심전도를 가져온 키 큰 중년 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0747.md",
+   "snippet": "56세 남자가 직장 건강검진에서 받은 심전도에 이상이 있다는 말을 듣고 왔다. 가슴 통증, 숨참, 두근거림은 없고 일주일에 세 번 한 시간씩 달리기를 한다. 고혈압이나 당뇨병은 없고 먹는 약은 없다. 키 183 cm, 몸무게 91 kg 이다. 혈압 124/78 mmHg, 맥박 64회/분이고 심잡음은 들리지 않는다. 혈청 전해질은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 급성 측벽 심근",
+   "text": "순환기 심전도 판독 — 건강검진 심전도를 가져온 키 큰 중년 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T202143Z_일일심전도_2026-11-22_2units_2q_41c0afc4 56세 남자가 직장 건강검진에서 받은 심전도에 이상이 있다는 말을 듣고 왔다. 가슴 통증, 숨참, 두근거림은 없고 일주일에 세 번 한 시간씩 달리기를 한다. 고혈압이나 당뇨병은 없고 먹는 약은 없다. 키 183 cm, 몸무게 91 kg 이다. 혈압 124/78 mmHg, 맥박 64회/분이고 심잡음은 들리지 않는다. 혈청 전해질은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 급성 측벽 심근경색 B. ST T 변화가 없는 QRS 고전압 C. 재분극 이상(strain)을 동반한 좌심실 비대 D. 좌전섬유속차단 E. 완전 좌각차단"
+  },
+  {
+   "id": "imaging-2026-0746",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 할로페리돌 근육주사 뒤 고열과 근육 경직",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0746.md",
+   "snippet": "27세 남자가 조현병 급성 악화로 입원했다. 사흘 동안 초조를 조절하려고 할로페리돌 근육주사를 하루 3번 맞았다. 오늘 아침부터 말이 줄고 멍하게 누워 있으며 땀을 많이 흘린다. 체온 40.1℃, 혈압 168/102 mmHg, 맥박 128회/분, 호흡 24회/분이다. 사지 전체가 납 파이프처럼 뻣뻣하고 힘줄 반사는 감소해 있으며 근간대경련과 발목 클로누스는 없다. 동공 크기는 정상이고 장음은 정상이다. 다른 약은 먹지 않는다.",
+   "text": "정신과 정신 — 할로페리돌 근육주사 뒤 고열과 근육 경직 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f 27세 남자가 조현병 급성 악화로 입원했다. 사흘 동안 초조를 조절하려고 할로페리돌 근육주사를 하루 3번 맞았다. 오늘 아침부터 말이 줄고 멍하게 누워 있으며 땀을 많이 흘린다. 체온 40.1℃, 혈압 168/102 mmHg, 맥박 128회/분, 호흡 24회/분이다. 사지 전체가 납 파이프처럼 뻣뻣하고 힘줄 반사는 감소해 있으며 근간대경련과 발목 클로누스는 없다. 동공 크기는 정상이고 장음은 정상이다. 다른 약은 먹지 않는다. 혈청 크레아틴 인산활성효소 18,500 U/L, 백혈구 14,200/mm³ 이고 소변은 콜라색이다. 가장 적절한 처치는? A. 할로페리돌 중단, 사이프로헵타딘 경구 투여 B. 할로페리돌 증량과 로라제팜 근육주사 C. 할로페리돌 유지, 아세트아미노펜 해열 D. 할로페리돌 중단, 피소스티그민 정맥 투여 E. 할로페리돌 중단, 냉각과 수액, 단트롤렌 정맥 투여"
+  },
+  {
+   "id": "imaging-2026-0745",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 와파린 복용 중 방광염 치료 뒤 높아진 INR",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0745.md",
+   "snippet": "A 71 year old woman with atrial fibrillation who has taken warfarin for 3 years comes to the clinic because of easy bruising for 3 days. Her INR has been stable between 2.0 and 3.0 for the past year. Eight days ago she began a 7 day course ",
+   "text": "약리 약리 — 와파린 복용 중 방광염 치료 뒤 높아진 INR opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f A 71 year old woman with atrial fibrillation who has taken warfarin for 3 years comes to the clinic because of easy bruising for 3 days. Her INR has been stable between 2.0 and 3.0 for the past year. Eight days ago she began a 7 day course of trimethoprim sulfamethoxazole for cystitis. She has not changed her diet and takes no other new medications or supplements. Blood pressure is 132/78 mm Hg. There are several ecchymoses on the forearms. Serum creatinine and liver enzymes are within the reference ranges. Her INR is now 6.4. Which of the following best explains the change in her INR? A. Inhibition of P glycoprotein in the intestine B. Inhibition of hepatic cytochrome P450 2C9 C. Induction of hepatic cytochrome P450 3A4 D. Reduced dietary vitamin K intake E. Inhibition of renal tubular secretion"
+  },
+  {
+   "id": "imaging-2026-0744",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 간헐적 보챔과 젤리 같은 혈변의 영아",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0744.md",
+   "snippet": "10개월 남아가 하루 전부터 15~20분마다 갑자기 다리를 배로 끌어당기며 심하게 울다가 사이에는 조용히 논다며 왔다. 두 번 토했고 몇 시간 전 붉은 젤리 같은 변을 봤다. 체온 37.4℃, 맥박 132회/분, 혈압 92/58 mmHg 이다. 대천문은 함몰되어 있지 않고 모세혈관 재충전 시간은 2초이다. 오른쪽 윗배에 소시지 모양의 덩이가 만져지고 복부 근육 강직이나 반발압통은 없다. 단순 복부 X선에서 유리 공기는 없다. ",
+   "text": "소아과 소아청소년 — 간헐적 보챔과 젤리 같은 혈변의 영아 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f 10개월 남아가 하루 전부터 15~20분마다 갑자기 다리를 배로 끌어당기며 심하게 울다가 사이에는 조용히 논다며 왔다. 두 번 토했고 몇 시간 전 붉은 젤리 같은 변을 봤다. 체온 37.4℃, 맥박 132회/분, 혈압 92/58 mmHg 이다. 대천문은 함몰되어 있지 않고 모세혈관 재충전 시간은 2초이다. 오른쪽 윗배에 소시지 모양의 덩이가 만져지고 복부 근육 강직이나 반발압통은 없다. 단순 복부 X선에서 유리 공기는 없다. 복부 초음파에서 오른쪽 윗배에 표적 모양의 덩이가 보인다. 다음 처치로 가장 적절한 것은? A. 비위관 감압 후 24시간 경과 관찰 B. 대장내시경 C. 방사선 유도 공기 정복술 D. 응급 개복술 E. 바륨 관장으로 진단 후 경과 관찰"
+  },
+  {
+   "id": "imaging-2026-0743",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 항암치료 중 호중구감소 발열의 경험적 항생제",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0743.md",
+   "snippet": "A 58 year old woman with diffuse large B cell lymphoma comes to the emergency department because of a temperature of 38.6°C for 4 hours. Her third cycle of chemotherapy was 9 days ago. She has no cough, dysuria, diarrhea, or skin lesions. S",
+   "text": "감염 감염 — 항암치료 중 호중구감소 발열의 경험적 항생제 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f A 58 year old woman with diffuse large B cell lymphoma comes to the emergency department because of a temperature of 38.6°C for 4 hours. Her third cycle of chemotherapy was 9 days ago. She has no cough, dysuria, diarrhea, or skin lesions. She has no indwelling central venous catheter. Temperature is 38.6°C, pulse is 104/min, respirations are 18/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 97% on room air. The lungs are clear, and there is no mucositis or skin erythema. Leukocyte count is 400/mm3 with an absolute neutrophil count of 80/mm3. Chest x ray shows no abnormalities. Two sets of blood cultures and a urine culture are obtained. Which of the following is the most appropriate initial antimicrobial therapy? A. Intravenous ceftriaxone alone B. Oral amoxicillin clavulanate and ciprofloxacin C. Intravenous fluconazole alone D. Intravenous cefepime alone E. Intravenous cefepime and vancomycin"
+  },
+  {
+   "id": "imaging-2026-0742",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 복부 둔상 뒤 수액에 반응하지 않는 저혈압",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0742.md",
+   "snippet": "35세 남자가 오토바이 사고로 119 구급차를 타고 응급실에 왔다. 핸들에 윗배를 부딪혔다고 한다. 의식은 명료하고 기도는 유지되며 양쪽 호흡음은 대칭이다. 혈압 78/46 mmHg, 맥박 132회/분, 호흡 26회/분이다. 복부는 팽만되어 있고 전체에 압통이 있다. 골반 압박 검사에서 통증은 없고 사지에 외부 출혈은 없다. 가온 결정질 용액 1 L 와 적혈구 2단위를 빠르게 준 뒤에도 혈압은 82/50 mmHg 이다. 외상 ",
+   "text": "외과 외과계 — 복부 둔상 뒤 수액에 반응하지 않는 저혈압 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f 35세 남자가 오토바이 사고로 119 구급차를 타고 응급실에 왔다. 핸들에 윗배를 부딪혔다고 한다. 의식은 명료하고 기도는 유지되며 양쪽 호흡음은 대칭이다. 혈압 78/46 mmHg, 맥박 132회/분, 호흡 26회/분이다. 복부는 팽만되어 있고 전체에 압통이 있다. 골반 압박 검사에서 통증은 없고 사지에 외부 출혈은 없다. 가온 결정질 용액 1 L 와 적혈구 2단위를 빠르게 준 뒤에도 혈압은 82/50 mmHg 이다. 외상 초점 초음파(FAST)에서 모리슨 오목과 비장 주위에 액체가 보인다. 다음 처치로 가장 적절한 것은? A. 혈관조영 색전술 B. 결정질 용액 2 L 추가 투여 후 재평가 C. 응급 개복술 D. 복부·골반 조영증강 CT E. 진단적 복강 세척"
+  },
+  {
+   "id": "imaging-2026-0741",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 서서히 쉰 목소리와 한쪽 성대의 위축",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "endoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0741.md",
+   "snippet": "A 47 year old man comes to the physician because of progressive hoarseness and a breathy voice for 6 months. He occasionally coughs while drinking water. He has never smoked and has had no neck or chest surgery or endotracheal intubation. V",
+   "text": "이비인후과 이비인후과 — 서서히 쉰 목소리와 한쪽 성대의 위축 opendata usmle_style endoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f A 47 year old man comes to the physician because of progressive hoarseness and a breathy voice for 6 months. He occasionally coughs while drinking water. He has never smoked and has had no neck or chest surgery or endotracheal intubation. Vital signs are within normal limits. There is no palpable neck mass or lymphadenopathy, and the palate elevates symmetrically. Flexible laryngoscopy shows that the left vocal fold does not move during phonation. A laryngoscopic image is shown; the arrow indicates the left vocal fold. Which of the following is the most appropriate next step in diagnosis? A. CT of the neck and chest from the skull base to the aortic arch B. Direct laryngoscopy with biopsy of the left vocal fold C. Voice therapy and repeat laryngoscopy in 6 months D. MRI of the brain with attention to the brainstem E. Barium swallow study"
+  },
+  {
+   "id": "imaging-2026-0740",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 중기 정밀 초음파의 태아 가슴 가로단면",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0740.md",
+   "snippet": "임신 20주 임신부가 정밀 초음파를 받으러 왔다. 특별한 증상은 없고 지금까지의 산전 검사는 정상이었다. 혈압 114/70 mmHg 이고 태아 심박은 규칙적이다. 정밀 초음파에서 얻은 태아 가슴의 가로단면은 그림과 같다. 이 단면에서 평가하는 것으로 가장 적절한 것은? A. 넙다리뼈 골간의 길이 B. 목덜미 투명대 두께 C. 가쪽뇌실 뒤뿔의 너비 D. 심장의 위치와 축, 네 방의 크기 대칭 E. 위 거품과 제대정맥 위치로 정한",
+   "text": "산부인과 산과 — 임신 중기 정밀 초음파의 태아 가슴 가로단면 opendata kmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f 임신 20주 임신부가 정밀 초음파를 받으러 왔다. 특별한 증상은 없고 지금까지의 산전 검사는 정상이었다. 혈압 114/70 mmHg 이고 태아 심박은 규칙적이다. 정밀 초음파에서 얻은 태아 가슴의 가로단면은 그림과 같다. 이 단면에서 평가하는 것으로 가장 적절한 것은? A. 넙다리뼈 골간의 길이 B. 목덜미 투명대 두께 C. 가쪽뇌실 뒤뿔의 너비 D. 심장의 위치와 축, 네 방의 크기 대칭 E. 위 거품과 제대정맥 위치로 정한 복부둘레"
+  },
+  {
+   "id": "imaging-2026-0739",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 커피 뒤 두근거림을 느끼는 중년 여성의 심전도",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0739.md",
+   "snippet": "A 48 year old woman comes to the office because of intermittent palpitations for 2 months. The episodes last a few seconds, occur mostly after she drinks several cups of coffee, and are not associated with chest pain, dyspnea, or syncope. S",
+   "text": "순환기 순환기 — 커피 뒤 두근거림을 느끼는 중년 여성의 심전도 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f A 48 year old woman comes to the office because of intermittent palpitations for 2 months. The episodes last a few seconds, occur mostly after she drinks several cups of coffee, and are not associated with chest pain, dyspnea, or syncope. She takes no medications. Pulse is 92/min and regular, and blood pressure is 122/78 mm Hg. Cardiac examination shows no murmurs. Serum TSH concentration is within the reference range. A resting 12 lead ECG is shown. Which of the following best describes this ECG? A. Normal sinus rhythm without conduction or repolarization abnormalities B. Sinus tachycardia C. First degree atrioventricular block D. Ventricular preexcitation (Wolff Parkinson White pattern) E. Incomplete right bundle branch block"
+  },
+  {
+   "id": "imaging-2026-0738",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 손에 오래 있던 작은 갈색 반점의 피부경 소견",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f",
+   "confidence": "high",
+   "date": "2026-11-21",
+   "path": "content/imaging/2026/imaging-2026-0738.md",
+   "snippet": "60세 남자가 건강검진에서 손에 있는 갈색 반점을 봐 달라며 왔다. 반점은 10년 전부터 있었고 크기와 색의 변화는 없었으며 가렵거나 피가 난 적은 없다. 흑색종의 가족력은 없다. 반점은 지름 약 4 mm 의 평평한 갈색 반이고 경계가 고르다. 몸의 다른 곳에 비슷한 모양의 점이 몇 개 있다. 피부경 사진은 그림과 같다. 가장 적절한 처치는? A. 이미퀴모드 크림을 6주간 바른다 B. 사진을 남기고 정기적으로 관찰한다 C. 병",
+   "text": "피부과 피부 — 손에 오래 있던 작은 갈색 반점의 피부경 소견 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261121T201955Z_일일영상_2026-11-22_9units_9q_dc05817f 60세 남자가 건강검진에서 손에 있는 갈색 반점을 봐 달라며 왔다. 반점은 10년 전부터 있었고 크기와 색의 변화는 없었으며 가렵거나 피가 난 적은 없다. 흑색종의 가족력은 없다. 반점은 지름 약 4 mm 의 평평한 갈색 반이고 경계가 고르다. 몸의 다른 곳에 비슷한 모양의 점이 몇 개 있다. 피부경 사진은 그림과 같다. 가장 적절한 처치는? A. 이미퀴모드 크림을 6주간 바른다 B. 사진을 남기고 정기적으로 관찰한다 C. 병변 전체를 2 mm 경계로 절제생검한다 D. 액화질소 냉동치료로 없앤다 E. 1 cm 경계로 넓게 절제한다"
   },
   {
    "id": "cn.neph.uric-acid-stone.urinary-alkalinization",
