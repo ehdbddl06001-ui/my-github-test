@@ -1,11 +1,11 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "d3e2e5e9ecfda9d23635",
-   "version": 37,
-   "date": "2026-11-20",
+   "hash": "6ed5f80902899d432537",
+   "version": 38,
+   "date": "2026-11-21",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 70,
+   "pages": 72,
    "template_version": 11,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -212,36 +212,42 @@
      "concept_hash": "d93ee328fb1b1875",
      "concept_version": 1
     },
+    "cn.cardio.aortic-stenosis.valve-replacement-timing": {
+     "title": "대동맥판 협착 — 증상과 박출률이 교체 시점을 정한다",
+     "page": 60,
+     "concept_hash": "08e863ce14c7aa2a",
+     "concept_version": 1
+    },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 60,
+     "page": 62,
      "concept_hash": "86dbd2fd99302a03",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 63,
+     "page": 65,
      "concept_hash": "4b71b7a03cd73ebc",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 66,
+     "page": 68,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 69,
+     "page": 71,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "3ffdce338ec9a67e2d2bdec9847ced33",
-    "version": 37,
-    "uploaded": "2026-11-20T19:47:14+09:00"
+    "md5": "37e15c9e4fe81fe71a90579456a26de9",
+    "version": 38,
+    "uploaded": "2026-11-21T15:36:20+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -280,9 +286,12 @@
     "MedKOS_학습서_순환기내과_v34_2026-11-18.pdf",
     "MedKOS_학습서_순환기내과_v35_2026-11-19.pdf",
     "MedKOS_학습서_순환기내과_v36_2026-11-20.pdf",
-    "MedKOS_학습서_순환기내과_v37_2026-11-20.pdf"
+    "MedKOS_학습서_순환기내과_v37_2026-11-20.pdf",
+    "MedKOS_학습서_순환기내과_v38_2026-11-21.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 대동맥판 협착 — 증상과 박출률이 교체 시점을 정한다"
+   ]
   },
   "피부과": {
    "hash": "0e176785e8782e3dbf78",
@@ -761,9 +770,9 @@
    "changes": []
   },
   "산부인과": {
-   "hash": "b7afd2ca483449ed74ba",
-   "version": 20,
-   "date": "2026-11-20",
+   "hash": "9a73b3901bb673616592",
+   "version": 21,
+   "date": "2026-11-21",
    "file": "MedKOS_학습서_산부인과.pdf",
    "pages": 52,
    "template_version": 11,
@@ -873,7 +882,7 @@
     "cn.obgyn.vaginitis.ph-microscopy-differentiation": {
      "title": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
      "page": 36,
-     "concept_hash": "a5523063aba634c5",
+     "concept_hash": "4770cf1142a0ddae",
      "concept_version": 1
     },
     "cn.obgyn.endometriosis.pain-vs-fertility-treatment": {
@@ -927,9 +936,9 @@
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "3de1990542701c7969e4e9730cb6d4c1",
-    "version": 20,
-    "uploaded": "2026-11-20T19:47:14+09:00"
+    "md5": "01ab5fd586f6b17d2723f78d8d7dcde3",
+    "version": 21,
+    "uploaded": "2026-11-21T15:36:20+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -951,16 +960,11 @@
     "MedKOS_학습서_산부인과_v17_2026-11-02.pdf",
     "MedKOS_학습서_산부인과_v18_2026-11-03.pdf",
     "MedKOS_학습서_산부인과_v19_2026-11-16.pdf",
-    "MedKOS_학습서_산부인과_v20_2026-11-20.pdf"
+    "MedKOS_학습서_산부인과_v20_2026-11-20.pdf",
+    "MedKOS_학습서_산부인과_v21_2026-11-21.pdf"
    ],
    "changes": [
-    "새 단원: 이수성 선별 양성 — 확진은 주수에 맞는 침습 검사로",
-    "새 단원: 임신 후반기 출혈 — 내진 전 초음파, 통증이 가른다",
-    "새 단원: 견갑난산 — 당기거나 밀지 말고 맥로버츠부터",
-    "새 단원: 산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
-    "새 단원: 질염 — pH·도말로 가르고 파트너 치료는 원충만",
-    "새 단원: 자궁내막증 — 통증엔 억제, 임신엔 억제 금지",
-    "새 단원: 여성 요실금 — 새는 상황과 잔뇨가 첫 치료를 정한다"
+    "내용 수정: 질염 — pH·도말로 가르고 파트너 치료는 원충만"
    ]
   },
   "정신건강의학과": {
@@ -1988,13 +1992,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "4239eecd42a4861409045df4bf67a93e",
+   "md5": "53daa61b816c260c1743bca37bf818ff",
    "version": null,
-   "uploaded": "2026-11-20T19:47:14+09:00"
+   "uploaded": "2026-11-21T15:36:20+09:00"
   }
  },
- "updated": "2026-11-20"
+ "updated": "2026-11-21"
 }
