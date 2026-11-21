@@ -84707,7 +84707,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-20",
   "reviewStatus": "unreviewed",
-  "hash": "4770cf1142a0ddae",
+  "hash": "288a17e1c9da2a8a",
   "summary": [
    "결론: pH >4.5+아민 냄새+단서세포는 세균질증, pH 정상+효모·가성균사는 칸디다, 움직이는 편모충은 트리코모나스.",
    "시험 단서: 생선 냄새 묽은 회백색 분비물(whiff test), 흰 덩어리 분비물+외음 가려움, 황록색 분비물·딸기 자궁경부.",

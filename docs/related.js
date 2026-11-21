@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -127,6 +127,11 @@ window.MEDKOS_RELATED = {
   ],
   "cn.cardio.heart-failure.hfref-gdmt-selection": [
    {
+    "id": "paper-2026-0964",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0955",
     "how": "t",
     "term": "heart failure"
@@ -160,14 +165,14 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0860",
     "how": "t",
     "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0838",
-    "how": "t",
-    "term": "heart failure"
    }
   ],
   "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": [
+   {
+    "id": "paper-2026-0964",
+    "how": "t",
+    "term": "heart failure"
+   },
    {
     "id": "paper-2026-0955",
     "how": "t",
@@ -202,11 +207,6 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0483",
     "how": "t",
     "term": "hfpef"
-   },
-   {
-    "id": "paper-2026-0860",
-    "how": "t",
-    "term": "heart failure"
    }
   ],
   "cn.cardio.heart-transplant.post-transplant-complication": [
@@ -1474,14 +1474,6 @@ window.MEDKOS_RELATED = {
     "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management"
    ]
   },
-  "paper-2026-0838": {
-   "t": "Same Class, Different Risk? Dapagliflozin versus Empagliflozin and Genitourinary Safety in Heart Failure with Preserved Ejection Fraction: A Retrospective Comparative Cohort Study",
-   "j": "Romanian journal of internal medicine = Revue roumaine de medecine interne",
-   "d": "2026-10-26",
-   "c": [
-    "cn.cardio.heart-failure.hfref-gdmt-selection"
-   ]
-  },
   "paper-2026-0843": {
    "t": "The Effect of Mindfulness-Based Cognitive Therapy on Kinesiophobia in Older Adults with Chronic Knee Osteoarthritis: A Randomized Controlled Trial",
    "j": "Clinical interventions in aging",
@@ -1513,8 +1505,7 @@ window.MEDKOS_RELATED = {
    "d": "2026-10-28",
    "c": [
     "cn.cardio.cardiac-mri-lge.pattern-etiology",
-    "cn.cardio.heart-failure.hfref-gdmt-selection",
-    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
+    "cn.cardio.heart-failure.hfref-gdmt-selection"
    ]
   },
   "paper-2026-0868": {
@@ -1699,6 +1690,15 @@ window.MEDKOS_RELATED = {
    "d": "2026-11-19",
    "c": [
     "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0964": {
+   "t": "Response to Comment on Young et al. Precision Prescribing of SGLT2 Inhibitors in Individuals With Type 2 Diabetes for Primary Prevention of Heart Failure: Model Development and Validation Study",
+   "j": "Diabetes care",
+   "d": "2026-12-01",
+   "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
+    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   }
  },

@@ -133,6 +133,11 @@ figures_wanted:
   caption_terms:
   - trichomona
   modality: MICROSCOPY
+figures_rejected:
+- asset: PMC-PMC11905427_Fig3
+  reason: 그림이 진단 정확도 숲 그림(forest plot)이다 — 트리코모나스 도말 소견이 없다
+- asset: PMC-PMC13493514_FIGURE2
+  reason: 단서세포 패널이 개당 약 65 px 썸네일 격자 — 진단명 표지를 빼고 자르면 짧은 변 134 px(<250)라 인쇄에서 소견이 안 보인다
 ---
 
 ## 판단 — 왜 pH 다음에 도말인가

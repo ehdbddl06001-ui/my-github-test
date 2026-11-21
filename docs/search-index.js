@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4108,
+  "total": 4116,
   "byType": {
+   "paper": 969,
    "concept": 198,
-   "paper": 961,
    "kmle": 1920,
    "imaging": 736,
    "usmle": 276,
@@ -16,27 +16,27 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 353,
-   "Nephrology": 258,
-   "Infectious Disease": 239,
-   "Pediatrics": 229,
+   "Cardiology": 354,
+   "Nephrology": 259,
+   "Infectious Disease": 240,
+   "Pediatrics": 230,
    "Obstetrics & Gynecology": 175,
    "Rheumatology": 149,
+   "Pathology": 145,
    "Psychiatry": 145,
-   "Pathology": 144,
    "Neurology": 143,
-   "Hematology-Oncology": 133,
+   "Hematology-Oncology": 134,
    "Orthopedics": 133,
    "General Surgery": 128,
    "Endocrinology": 126,
    "Dermatology": 125,
    "Gastroenterology": 125,
    "Ophthalmology": 125,
+   "Surgery": 125,
    "Pulmonology": 124,
-   "Surgery": 124,
    "Hematology": 117,
    "순환기": 116,
-   "Laboratory Medicine": 98,
+   "Laboratory Medicine": 99,
    "산부인과": 91,
    "호흡기": 49,
    "소화기": 44,
@@ -79,13 +79,149 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1198,
    "high": 2914,
-   "medium": 1190,
    "low": 4
   },
   "tagCount": 4920
  },
  "docs": [
+  {
+   "id": "paper-2026-0969",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurosurgery",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0969_a_proposed_classification_system_for_intramedullary_spinal_c.md",
+   "snippet": "Title A proposed classification system for intramedullary spinal cord arteriovenous malformations that informs surgical strategy Authors Taylor Davis G, Srinivasan Visish M, Scherschinski Lea, Rhodenhiser Emmajane G, Gulsuyu Belda, Lawton M",
+   "text": "Surgery scraped pubmed PubMed / Journal of neurosurgery Title A proposed classification system for intramedullary spinal cord arteriovenous malformations that informs surgical strategy Authors Taylor Davis G, Srinivasan Visish M, Scherschinski Lea, Rhodenhiser Emmajane G, Gulsuyu Belda, Lawton Michael T Journal / DOI Journal of neurosurgery · DOI: 10.3171/2026.6.JNS26183 · PMID: 43063481 https://pubmed.ncbi.nlm.nih.gov/43063481/ Abstract OBJECTIVE: An anatomical classification system is proposed to characterize spinal arteriovenous malformations (SpAVMs) using preoperative digital subtraction angiography (DSA) and MRI to guide surgical strategy for each SpAVM type. METHODS: A consecutive, single surgeon series of 52 intra and perimedullary SpAVMs resected over 17 years was reviewed. DSA, MRI, intraoperative videography, and digital photography findings were analyzed to classify SpAVMs into 5 types on the basis of arterial supply (anterior spinal artery, posterior spinal artery, or both), depth within the cord parenchyma (pial or intramedullary), and anatomical location (anterior, posterior, concentric [entirely intramedullary], or eccentric [intramedullary and presenting to or through the pial surface]). RESULTS: SpAVMs were classified into 5 types as follows: type 1, posterior pial (11/52, 21%); type 2, anterior pial (11/52, 21%); type 3, anterior intramedullary (7/52, 13%); type 4, concentric intramedullary (4/52, 8%); and type 5, eccentric extra and intramedullary (17/52, 33%). Two SpAVMs were unclassifiable. Extramedullary resection was used with types 1 and 2 pial SpAVMs (20/21, 95%) and all 17 eccentric type 5 SpAVMs. Cord rotation was applied for types 2 (8/11, 73%) and 5 (13/17, 76%). Midline myelotomy was used with all type 3 (7/7) and type 4 (4/4) SpAVMs, whereas perinidal myelotomy was used with type 5 SpAVMs (14/17, 82%). Intramedullary resection was used with all type 3 (n = 7) and type 4 (n = 4) SpAVMs and most type 5 SpAVMs (14/17, 82%). In situ occlusion was used for holomedullary SpAVMs. Algorithms recommended by the classification system were applied in 86% of cases, resulting in complete SpAVM resection or angiographic obliteration in 83% of patients (43/52). At the last follow up, 33 (65%) surviving patients were intact or had mild motor or sensory deficits (McCormick grade 1 or 2); 18 (35%) patients had moderate or severe deficits or quadriplegia/paraplegia (McCormick grade ≥ 3). Overall, 3 of 51 (6%) patients experienced deterioration relative to preoperative baseline to dependent status (McCormick grade ≥ 3). CONCLUSIONS: The proposed classification system clarifies the SpAVM pathology and guides the application of surgical techniques, thereby defining surgical strategies for each SpAVM type. This classification delineates intra and perimedullary SpAVMs by expansion from 2 to 5 categories. The proposed classification system differentiates the spectrum of SpAVM pathoanatomy, guiding resection technique by type specific algorithms. The classification does not predict surgical risk, patient outcome, or natural history. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0968",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC oral health",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0968_comparison_of_two_minimally_invasive_approaches_for_the_mana.md",
+   "snippet": "Title Comparison of two minimally invasive approaches for the management of molar incisor hypomineralization opacities: effects on esthetic perceptions of children and their parents Authors Demiralay Ceren, Bolaca Arif Journal / DOI BMC ora",
+   "text": "Pediatrics scraped pubmed PubMed / BMC oral health Title Comparison of two minimally invasive approaches for the management of molar incisor hypomineralization opacities: effects on esthetic perceptions of children and their parents Authors Demiralay Ceren, Bolaca Arif Journal / DOI BMC oral health · DOI: 10.1186/s12903 026 09742 0 · PMID: 43058640 https://pubmed.ncbi.nlm.nih.gov/43058640/ Abstract BACKGROUND: This study aimed to compare the short term esthetic outcomes of two minimally invasive approaches for the management of molar incisor hypomineralization (MIH) opacities on the esthetic perceptions of children and their parents, and to assess color changes in affected incisors. METHODS: Fifty children aged 8 10 years presenting with well demarcated white cream and/or yellow brown opacities on their permanent incisors due to MIH were included. Participants were randomly allocated into two groups: Group I (resin infiltration, Icon®) and Group II (etch bleach seal (EBS) technique). The ''Child's and Parent's Questionnaire about Teeth Appearance'' was administered to assess esthetic perception. Color changes were measured using a spectrophotometer, and the color differences (ΔE) were calculated. The data were statistically analyzed. RESULTS: Although the overall questionnaire results at the 3 month follow up showed no statistically significant difference between the two groups (p 0.05), improvements were observed in the physical and psychological domains of esthetic perceptions for both children and parents. Moreover, increased satisfaction among children regarding tooth appearance and color (p < 0.05) suggested that the minimally invasive approaches positively influenced esthetic perception. The color change at 1 month (ΔE1) observed in Group I (Icon®) was statistically greater than that in Group II (EBS) (p < 0.05), while no significant difference was observed between the groups at 3 months. CONCLUSION: Both treatment approaches improved esthetic perceptions of children and their parents, although the difference between groups was not significant. Minimally invasive approaches produced clinically perceptible color changes; however, complete masking of MIH related anterior enamel opacities was not consistently achieved. TRIAL REGISTRATION: The study protocol was retrospectively registered at www. CLINICALTRIALS: gov on 20 March 2026 (ID: NCT07494682). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0967",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Dermatology practical & conceptual",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0967_dermoscopic_features_of_lichen_sclerosus_et_atrophicus_morph.md",
+   "snippet": "Title Dermoscopic Features of Lichen Sclerosus ET Atrophicus, Morphea, and Overlap: A Study of 50 Patients in Skin of Colour Authors Chauhan Payal, Goyal Pratika, Meena Dilip, Daroach Manju, Jindal Rashmi Journal / DOI Dermatology practical",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Dermatology practical & conceptual Title Dermoscopic Features of Lichen Sclerosus ET Atrophicus, Morphea, and Overlap: A Study of 50 Patients in Skin of Colour Authors Chauhan Payal, Goyal Pratika, Meena Dilip, Daroach Manju, Jindal Rashmi Journal / DOI Dermatology practical & conceptual · DOI: 10.5826/dpc.1604a7221 · PMID: 43063413 https://pubmed.ncbi.nlm.nih.gov/43063413/ Abstract INTRODUCTION: Morphea and extragenital lichen sclerosus (LSA) are chronic inflammatory dermatoses with overlapping clinical features, requiring invasive biopsy for confirmation. Dermoscopy, a noninvasive tool, may aid clinical assessment by identifying characteristic cutaneous patterns. OBJECTIVES: To study the dermoscopic features of LSA, morphea, and their overlap in histopathologically confirmed cases and describe characteristic dermoscopic patterns. METHODS: This retrospective observational study was conducted in 2020 2024 in four tertiary care centres across North India. Histopathologically confirmed cases of morphea, LSA, or overlap were included. Dermoscopic evaluation was performed using hand held dermoscope (10x magnification, polarized non contact mode), and findings were analysed descriptively at the lesion level. RESULTS: Among 90 lesions in 50 patients, 13 were genital LSA, 52 extragenital LSA, 15 morphea and 10 LSA morphea overlap. Common dermoscopic findings in LSA included white structureless areas (96.15%; shiny in 92.31%), pigment change (84.62%, predominantly brown dots), reddish hue (71.15%), violaceous hue (59.62%), scaling (53.85%) and mainly dotted vessels (36.54%). Morphea showed white structureless areas (100%; predominantly dull and broad, 80%), brown structureless areas (73.33%), pigmentary change (80%, predominantly network type), reduced eccrine openings (80%) and relative absence of vessels with occasional occurrence of linear curved vessels (13.33%). Follicular plugging was comparable in both. Overlap cases had a mix of shiny to dull white structureless areas, pigment change (80%, variable pattern), preserved eccrine openings (60%), follicular plugs (50%) and vessels (dotted 50% and linear curved 30%). Genital LSA lesions showed shiny white structureless areas (92.31%), reddish hue (76.92%) and violaceous hue (61.54%). CONCLUSION: Recurring dermoscopic patterns were observed: shiny white structureless areas with reddish/violaceous hue and polymorphous vessels in extragenital LSA; dull white and brown structureless areas, pigment network and reduced eccrine openings in morphea; and hybrid features in overlap lesions. Dermoscopy may therefore complement clinical assessment of these entities; however, prospective studies evaluating its diagnostic accuracy are needed before it can inform decisions regarding biopsy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0966",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ophthalmic plastic and reconstructive surgery",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0966_pediatric_orbital_xanthogranulomatous_epithelial_tumor_of_bo.md",
+   "snippet": "Title Pediatric Orbital Xanthogranulomatous Epithelial Tumor of Bone Authors Sanfelippo William A, Spader Heather L, Sun Wei, McCord Matthew R, Fanburg Smith Julie C, Druzgal Colleen H, Gigantelli James W Journal / DOI Ophthalmic plastic an",
+   "text": "Pathology scraped pubmed PubMed / Ophthalmic plastic and reconstructive surgery Title Pediatric Orbital Xanthogranulomatous Epithelial Tumor of Bone Authors Sanfelippo William A, Spader Heather L, Sun Wei, McCord Matthew R, Fanburg Smith Julie C, Druzgal Colleen H, Gigantelli James W Journal / DOI Ophthalmic plastic and reconstructive surgery · DOI: 10.1097/IOP.0000000000003307 · PMID: 43063483 https://pubmed.ncbi.nlm.nih.gov/43063483/ Abstract Xanthogranulomatous epithelial tumor (XGET) is a recently recognized mesenchymal tumor that originates from soft tissue or bone. While XGETs may occur throughout the skeleton, there has been only 1 previously reported case of cranial involvement and no cited cases of orbital involvement. We report a 4 year old boy presenting with subacute unilateral proptosis and hypoglobus of the OD secondary to an orbital roof soft tissue tumor. Following cranio orbital resection of the tumor, its histopathology demonstrated overlapping fibrohistiocytic, myofibroblastic, and giant cell rich morphologies and an immunophenotypic profile demonstrating an HMGA2 NCOR2 gene fusion characteristic of XGET. Twenty three months post resection, the patient is doing well with resolution of symptoms and no evidence of recurrence or metastasis. To our knowledge, this is the second youngest reported patient with XGET, only the second case involving the skull, and the first involving the orbit. Although rare, XGET should be considered in the workup of giant cell rich lesions in young patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0965",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Dermatology practical & conceptual",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0965_sociodemographic_and_facility_factors_associated_with_stage_.md",
+   "snippet": "Title Sociodemographic and Facility Factors Associated with Stage I versus Stage IV Diagnosis in Mycosis Fungoides: An Ncdb Analysis Authors Saglimbeni Grace S, Epino Maria, Kang Paul, Silberstein Peter T, Wu Xinxin Journal / DOI Dermatolog",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Dermatology practical & conceptual Title Sociodemographic and Facility Factors Associated with Stage I versus Stage IV Diagnosis in Mycosis Fungoides: An Ncdb Analysis Authors Saglimbeni Grace S, Epino Maria, Kang Paul, Silberstein Peter T, Wu Xinxin Journal / DOI Dermatology practical & conceptual · DOI: 10.5826/dpc.1604a7034 · PMID: 43063419 https://pubmed.ncbi.nlm.nih.gov/43063419/ Abstract INTRODUCTION: Mycosis fungoides (MF) is a rare primary cutaneous T cell lymphoma defined by malignant proliferation of skin homing CD4+ T cells. While early stage MF carries excellent prognosis, diagnosis is often delayed due to resemblance to benign skin conditions. In contrast, stage IV has markedly poorer prognosis, with 5 year survival as low as 20 30%. OBJECTIVE: To evaluate sociodemographic and facility characteristics associated with stage I versus stage IV MF diagnosis. METHODS: Using the National Cancer Database, 5,624 patients with stage I or stage IV MF were analyzed by race, sex, facility type, age, ethnicity, insurance, income, education, rurality, geographic region, comorbidity score, and distance to treatment center. Multivariable logistic regression was used to estimate odds ratios (ORs) for factors associated with stage at diagnosis and mortality. The mortality analysis was restricted to 5,282 patients with known vital status. RESULTS: Patients were predominantly White (75.1%), male (55.2%), and treated in academic facilities (79.1%). Stage IV patients, compared to stage I, were older (median 67 years vs. 62; OR = 1.03 per year increase), and more likely to be Black (1.63), Hispanic (1.72), Medicaid insured (1.86), from lower educational backgrounds, treated at non academic facilities (1.37), comorbid with other conditions (2.05), and traveling farther for treatment (1.01 per mile; all p < 0.05). Stage IV disease was associated with higher odds of mortality (OR 6.80, 95% CI 5.26 8.78), with additional associations observed for older age, male sex, public insurance, lower income, non academic facilities, and South or Midwest residence. CONCLUSIONS: In MF, older age, Black race, and socioeconomic barriers were associated with stage IV diagnosis, and stage IV disease was associated with higher odds of mortality. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0964",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetes care",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0964_response_to_comment_on_young_et_al_precision_prescribing_of_.md",
+   "snippet": "Title Response to Comment on Young et al. Precision Prescribing of SGLT2 Inhibitors in Individuals With Type 2 Diabetes for Primary Prevention of Heart Failure: Model Development and Validation Study Authors Young Katherine G, McGovern Andr",
+   "text": "Nephrology scraped pubmed PubMed / Diabetes care Title Response to Comment on Young et al. Precision Prescribing of SGLT2 Inhibitors in Individuals With Type 2 Diabetes for Primary Prevention of Heart Failure: Model Development and Validation Study Authors Young Katherine G, McGovern Andrew P, Hopkins Rhian, Jansz Thijs T, Shields Beverley M, Dennis John M Journal / DOI Diabetes care · DOI: 10.2337/dci26 0132 · PMID: 43063336 https://pubmed.ncbi.nlm.nih.gov/43063336/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0963",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLOS global public health",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0963_antibiotic_prescription_patterns_and_determinants_for_influe.md",
+   "snippet": "Title Antibiotic prescription patterns and determinants for influenza like illness in selected tertiary hospitals in Bangladesh: A WHO AWaRe classification based analysis Authors Bhuiya Saju, Aleem Mohammad Abdul, Shuvo Tanzir Ahmed, Hassan",
+   "text": "Infectious Disease scraped pubmed PubMed / PLOS global public health Title Antibiotic prescription patterns and determinants for influenza like illness in selected tertiary hospitals in Bangladesh: A WHO AWaRe classification based analysis Authors Bhuiya Saju, Aleem Mohammad Abdul, Shuvo Tanzir Ahmed, Hassan Md Zakiul, Mamun Gazi Md Salahuddin, Khan Samin Yasar, Asadullah, Islam Md Aminul, et al. Journal / DOI PLOS global public health · DOI: 10.1371/journal.pgph.0007648 · PMID: 43063190 https://pubmed.ncbi.nlm.nih.gov/43063190/ Abstract Antibiotics are frequently prescribed for patients with influenza like illness (ILI), despite their ineffectiveness against viral infections. This study aimed to assess the patterns, trends and factors associated with antibiotic prescriptions for patients with ILI based on the World Health Organization (WHO) AWaRe classification in Bangladesh. This cross sectional study conducted secondary analysis of data collected through hospital based influenza surveillance between January 2011 and December 2017, from outpatients who met the WHO ILI case definition. Descriptive statistics assessed prescribing patterns, the Cochran Armitage test assessed temporal trends, and multivariable logistic regression identified determinants of antibiotic prescriptions. Among 7,041 enrolled patients with ILI [median age: 4 years (IQR: 1.17 20 years), 55.6% male], 84.3% (5,939) received at least one antibiotic. Of them (5,939), 98.3% received a single antibiotic agent, 1.7% received two agents, and 0.03% received more than three agents. The most prescribed antibiotics (N = 6,045) were azithromycin (42.2%), amoxicillin (26.2%), and cefixime (14.9%). Azithromycin (p = 0.015) and cefixime (p = 0.044) increased significantly, while amoxicillin (p = 0.019) and ciprofloxacin (p = 0.039) declined significantly. According to the AWaRe classification, 69% of prescribed antibiotics were from the Watch group, while 31% were from the Access group, and none were from the Reserve group. The prescriptions of Access group declined (p = 0.029), whereas the Watch group increased significantly (p = 0.029). Antibiotic prescriptions were more common among patients aged <5 years (aOR: 1.45; 95% CI: 1.25 1.68), those treated at government hospitals (aOR: 3.76; 95% CI: 3.26 4.35), and those reported history of runny nose (aOR: 1.91; 95% CI: 1.62 2.56) or sore throat (aOR: 1.93; 95% CI: 1.48 2.51). A substantial proportion of patients with ILI received antibiotics, with a notable increase in Watch group antibiotics. These findings underscore the need to strengthen hospital based antimicrobial stewardship programmes in Bangladesh to promote appropriate antibiotic prescribing and address antimicrobial resistance. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0962",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR nursing",
+   "confidence": "medium",
+   "date": "2026-11-21",
+   "path": "content/papers/2026/2026-11-21_paper-2026-0962_safety_signal_quality_and_patient_satisfaction_with_insertab.md",
+   "snippet": "Title Safety, Signal Quality, and Patient Satisfaction With Insertable Loop Recorder Implantation by Specialized Electrophysiology Nurses: Prospective Observational Study Authors Lillo Rodenas Isabel, Reig Gómez Helena, Ajo Ferrer Raquel, C",
+   "text": "Cardiology scraped pubmed PubMed / JMIR nursing Title Safety, Signal Quality, and Patient Satisfaction With Insertable Loop Recorder Implantation by Specialized Electrophysiology Nurses: Prospective Observational Study Authors Lillo Rodenas Isabel, Reig Gómez Helena, Ajo Ferrer Raquel, Carrillo Molina Ángela María, Ajo Ferrer María, Ghodbane Kiamouche Sofiane, Martínez Martínez Juan Gabriel Journal / DOI JMIR nursing · DOI: 10.2196/106175 · PMID: 43063362 https://pubmed.ncbi.nlm.nih.gov/43063362/ Abstract BACKGROUND: Insertable loop recorders (ILRs) are subcutaneous cardiac monitoring devices used in the diagnosis of arrhythmias and in the etiological investigation of syncope and cryptogenic stroke. Device miniaturization and procedural simplification have facilitated implantation in ambulatory settings. The involvement of specialized electrophysiology nurses may help meet rising clinical demand, although evidence in our setting remains limited. OBJECTIVE: This study aimed to analyze implantation safety, detection signal quality, adverse events during follow up, and patient satisfaction when the procedure was performed by specialized nurses. METHODS: This prospective observational study (the CARDIONURSE study) was conducted in the Arrhythmia Unit of Hospital General Universitario Doctor Balmis between February 2022 and May 2023. Thirty five patients with a clinical indication for ILR implantation were included. The procedure was performed by 2 specialized nurses under medical supervision. Sociodemographic, clinical, and technical implantation variables were collected, including detection signal amplitude (mV), together with adverse events and follow up outcomes at 1 and 6 months. Patient satisfaction was assessed using a study specific questionnaire at 4 time points. Descriptive statistical analysis was performed. RESULTS: Mean age was 71.1 (SD 11.3) years, and 62.9% (22/35) were women. The most frequent indication was syncope (27/35, 77.1%), followed by suspected atrial fibrillation (AF) in cryptogenic stroke (6/35, 17.1%). No objective procedural complications occurred (35/35, 100% of procedures); mild, transient procedural pain was reported in 5.7% (2/35) of patients, and the procedure lasted less than 5 minutes in 74.3% (26/35) of procedures. Mean signal amplitude was 0.45 (SD 0.29) mV, with a visible P wave in 94.3% (33/35) of patients. No wound related adverse events were recorded among the 85.7% (30/35) of patients with available follow up data at 6 months; data were unavailable for the remaining 5 patients. A diagnosis was obtained in 20% (6/30) of patients with an available diagnostic outcome at 6 months. Overall, 97.1% (34/35) of patients reported maximum or very high satisfaction with the intervention, and 100% (35/35) with the care received. CONCLUSIONS: ILR implantation by specialized electrophysiology nurses in an ambulatory setting is a safe, fast, and technically adequate procedure, with adequate signal quality and high patient satisfaction. These findings support the feasibility of specialized nursing as ILR implanters in similar ambulatory care settings, although confirmation in larger, multicenter studies is warranted before broader implementation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "cn.cardio.aortic-stenosis.valve-replacement-timing",
    "type": "concept",
