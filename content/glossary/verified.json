@@ -871,6 +871,30 @@
   "리팜피신": {
    "en": "rifampin",
    "rxcui": "9384"
+  },
+  "부데소니드": {
+   "en": "budesonide",
+   "rxcui": "19831"
+  },
+  "다파글리플로진": {
+   "en": "dapagliflozin",
+   "rxcui": "1488564"
+  },
+  "스파르센탄": {
+   "en": "sparsentan",
+   "rxcui": "2630535"
+  },
+  "아밀로라이드": {
+   "en": "amiloride",
+   "rxcui": "644"
+  },
+  "트리암테렌": {
+   "en": "triamterene",
+   "rxcui": "10763"
+  },
+  "염화칼륨": {
+   "en": "potassium chloride",
+   "rxcui": "8591"
   }
  },
  "classes": {
@@ -1028,6 +1052,16 @@
    "en": "antihistamine",
    "mesh": "D006633",
    "mesh_label": "Histamine Antagonists"
+  },
+  "SGLT2 억제제": {
+   "en": "SGLT2 inhibitor",
+   "mesh": "D000077203",
+   "mesh_label": "Sodium-Glucose Transporter 2 Inhibitors"
+  },
+  "루프 이뇨제": {
+   "en": "loop diuretic",
+   "mesh": "D049994",
+   "mesh_label": "Sodium Potassium Chloride Symporter Inhibitors"
   }
  },
  "failed": [
