@@ -52399,7 +52399,8 @@ window.KMLE_CONTENT_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
-  "objective": "cn.neph.gitelman.ncc-defect-mechanism",
+  "objective": "cn.neph.gitelman-syndrome.ncc-defect-hypocalciuria",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "저칼륨 알칼리증·정상 혈압·레닌 상승은 바터 증후군에서도 똑같이 나온다.",

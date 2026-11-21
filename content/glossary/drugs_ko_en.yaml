@@ -223,6 +223,13 @@ drugs:
   알푸조신: alfuzosin
   캡토프릴: captopril
   리팜피신: rifampin
+  # 2026-11-21 신장내과 정리본 2차 4개
+  부데소니드: budesonide
+  다파글리플로진: dapagliflozin
+  스파르센탄: sparsentan
+  아밀로라이드: amiloride
+  트리암테렌: triamterene
+  염화칼륨: potassium chloride
 
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
@@ -257,3 +264,5 @@ classes:
   설폰아마이드: {en: sulfonamide, check: Sulfonamides}
   퀴놀론: {en: quinolone, check: Quinolones}
   항히스타민제: {en: antihistamine, check: Histamine Antagonists}
+  SGLT2 억제제: {en: SGLT2 inhibitor, check: Sodium-Glucose Transporter 2 Inhibitors}
+  루프 이뇨제: {en: loop diuretic, check: Sodium Potassium Chloride Symporter Inhibitors}
