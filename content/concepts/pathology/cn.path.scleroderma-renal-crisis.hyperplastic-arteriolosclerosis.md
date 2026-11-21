@@ -7,6 +7,7 @@ date: 2026-09-25
 updated: 2026-09-27
 version: 2
 outline: h360            # 해리슨 21판 360장 Systemic Sclerosis — Renal Crisis 절(류마티스내과 책)
+discipline: pathology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25)

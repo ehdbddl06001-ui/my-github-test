@@ -56,9 +56,37 @@ books:
   Urology: 비뇨의학과
   Preventive Medicine: 예방의학
   Epidemiology: 예방의학
-  Biochemistry: 기초의학
-  Physiology: 기초의학
-  Pathology: 기초의학
-  Pharmacology: 기초의학
-  Microbiology: 기초의학
-  Immunology: 기초의학
+  # 기초의학은 학문별 책으로 나눈다(2026-11-21 사용자 결정 — 그 전에는 여섯 과목이 「기초의학」 한 권이었다).
+  Physiology: 생리학
+  Pathology: 병리학
+  Pharmacology: 약리학
+  Biochemistry: 생화학·유전
+  Genetics: 생화학·유전
+  Microbiology: 미생물학
+  Immunology: 면역학
+  Anatomy: 해부·조직·발생
+  Histology: 해부·조직·발생
+  Embryology: 해부·조직·발생
+
+# 학문 꼬리표(정리본 frontmatter `discipline`) → 학문별 책. 기초 정리본(`layer: basic`)은 이 책에 실리고,
+# 임상 책에 실린 정리본이 `discipline` 을 달고 있으면 그 학문 책의 목차 쪽에 「다른 책에 실린 단원」으로만 적힌다.
+disciplines:
+  physiology: 생리학
+  pathology: 병리학
+  pharmacology: 약리학
+  biochemistry: 생화학·유전
+  genetics: 생화학·유전
+  microbiology: 미생물학
+  immunology: 면역학
+  anatomy: 해부·조직·발생
+  histology: 해부·조직·발생
+  embryology: 해부·조직·발생
+
+# 학문 → 대조할 전공 교과서(드라이브 `교과서/`). `readable: false` 면 아직 읽을 수 없다 — 그 학문의 기초 정리본은
+# `textbook_check: pending` 으로 두고 해리슨 22판으로 쓴다. 여기에 없는 학문은 `textbook_check: unavailable`.
+# 장별 문서 · 읽기 도구는 2단계에서 붙는다(그때 readable 을 true 로).
+textbooks:
+  pathology:    {id: robbins-basic-10, title: "Robbins Basic Pathology, 10th ed.", year: 2017, readable: false}
+  pharmacology: {id: katzung-14, title: "Katzung Basic & Clinical Pharmacology, 14th ed.", year: 2018, readable: false}
+  histology:    {id: junqueira-13, title: "Junqueira's Basic Histology, 13th ed.", year: 2013, readable: false}
+  physiology:   {id: guyton-ko, title: "Guyton and Hall 의학생리학(한글판)", readable: false, note: "스캔본 — 글자층 없음"}

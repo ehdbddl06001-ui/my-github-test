@@ -7,6 +7,7 @@ date: 2026-11-10
 updated: 2026-11-10
 version: 1
 outline: h459            # 기본틀 슬롯 — 해리슨 21판 459장(22판 470장) Poisoning and Drug Overdose
+discipline: pharmacology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25)

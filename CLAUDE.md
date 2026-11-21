@@ -12,6 +12,7 @@
 | KMLE·USMLE 문항 만들기 | `/gen-kmle`(품질 규칙·2026-09-25 감사 규칙), `/daily-run` | `lint_questions.py <파일들>` (ERROR 0 · 세트 mix WARN 해소) |
 | 함정 계열(보기를 가르는 함정) 등록·조회 | `/gen-kmle` 「함정 계열」 — 파악되면 등록하고 루틴이 두 쪽(trap·mirror) 문항을 채운다 | `traps.py similar/list/queue/check`, 등록부 `content/traps/`, 문항 `design.trap` |
 | 오답 정리본 쓰기·손질·판형 2로 옮기기 | `/gen-concept`(판형 2 · 본보기 `cn.derm.pityriasis-versicolor.treatment`) | `concept_queue.py --limit N` → `concepts.py`(오류 0) |
+| 기초의학 정리본 · 기초 뿌리 잇기 | `/gen-concept` 「[root]」 — 기전 단위 · 학문별 책 · 앞으로 틀리는 것부터 | `concepts.py --basic`(있는 기초 정리본) · 큐 `[root]` · `books_config.yaml` `disciplines`·`textbooks` |
 | 과별 PDF 학습서 | 아래 「오답 뒤 학습 흐름」 | `.github/workflows/books.yml`, `build_books.py --only <과> --out <임시>` |
 | 판단 도식 | `decision_diagram.py`(배치는 코드가 정한다) | 노드 글 판단 ≤ 30자 — 안 들어가면 `concepts.py` ERROR |
 | 정리본 그림(심전도·조직·영상) | `/gen-concept` 「[figure]」 — **확실한 라벨만**(전문가 데이터셋 라벨·논문 그림 설명) | `concept_figures.py find/add/want/none/reject/status` · 수확은 exam-builder `opendata demand` |
@@ -25,7 +26,7 @@
 |---|---|---|---|
 | 매일 하루 KMLE 문항 제작 | 월·수·금 05:00 | 16과목 × 2문항 + 정리본 큐 조금 | `prompts/routine_kmle.md`(얇음 → `/daily-run`) |
 | USMLE 콘텐츠 생성 | 화·목 05:00 | Step 1·2 각 6문항(과목마다 1개, 2026-11-03~) | `prompts/routine_usmle.md` |
-| 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산) → `[figure]` → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
+| 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산, `[root]` 새 기초 정리본은 실행당 2개) → `[figure]` → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
 | 오픈데이터 영상 세트 | 매일 05:00 | exam-builder → MedKOS 내보내기 | exam-builder 저장소 |
 
 GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2시간 넘게 늦다** — 09-23·24 모두 08:50 무렵),
@@ -189,10 +190,20 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   **퀴즈 덱(2026-11-10)**: 첫 화면 「🔔 오늘 다시 풀 것 N개 풀기」 = 학습 구역 `due`(`docs/app.js` `dueList()` → learn.js `pickRetest`,
   종목 선택과 무관 · 오래 밀린 순, 홈 화면 바로가기 `?mode=due`). 그 전에는 개념 복습 화면에서 하나씩 눌러야만 나와
   예정 74개가 전부 밀리고 끝난 것이 0이었다 — 복습 흐름을 고칠 때는 「일정이 실제로 소화되는가」를 `item_stats`·기록으로 본다.
-  ② `concept_queue.py` — `[note]`·`[link]`·`[touch]`·`[variant]`(틀린 문항마다 flip true/false 2개)·`[dist]`(고른 오답 보기 설명)·
+  ② `concept_queue.py` — `[note]`·`[link]`·`[touch]`·`[root]`(기초 뿌리, 2026-11-21)·`[variant]`(틀린 문항마다 flip true/false 2개)·`[dist]`(고른 오답 보기 설명)·
   `[restyle]`(판형 2로 옮길 옛 정리본)·`[gap]`(기본틀 빈 자리). 규칙은 모두 `/gen-concept`.
   ③ 판단 사슬 `design.chain`(2026-09-24 이후 필수) · 하루 세트 구성(3단계 이상 40 %↑, 한 목표 50 %↓, 치료+다음 처치 55 %↓,
   정답 순서 순환 금지 — `lint_questions.py` 끝 WARN). ④ `item_stats.py` — 학습자 1명이라 **문항별 통계는 내지 않고** 묶음(20↑)만 판정.
+- **기초 뿌리 · 기초의학 학문별 책(2026-11-21 사용자 결정)**: 임상 정리본(판단) 밑의 기초 기전을 **기초 정리본**(`layer: basic`)으로 따로 쓰고,
+  임상 정리본이 `roots` 로 가리킨다(기초 기전이 없는 목표는 `roots_none: "<이유>"` — 검진 주기 · 법규 · 역학 계산 · 지침 수치). 기초 정리본은
+  **기전 단위**라 임상 정리본 여러 개가 하나를 함께 가리킨다 — 문항마다 만들지 않고, 있으면 잇기만 한다(`concepts.py --basic`).
+  「기초의학」 한 권은 **일곱 권**(생리학 · 병리학 · 약리학 · 생화학·유전 · 미생물학 · 면역학 · 해부·조직·발생)으로 나눴다 — topic → 책은
+  `books_config.yaml` `books`(`docs/ink.js` `BOOKS` 와 같아야 한다), 학문 꼬리표 → 책은 `disciplines`. 임상 책에 실린 기초 성격 정리본은
+  옮기지 않고 `discipline` 꼬리표만 달아 학문별 책 목차 쪽 「다른 책에 실린 단원」에 제목을 적는다. **소급하지 않는다** — 큐 `[root]` 는
+  `ROOTS_FROM`(2026-11-21) 이후에 틀린 목표만 낸다. 전공 교과서(`textbooks` — Robbins Basic 10e · Katzung 14e · Junqueira 13e, 드라이브 `교과서/`)는
+  아직 읽기 도구가 없어 `textbook_check: pending`, 교과서가 없는 학문은 `unavailable` — 둘 다 해리슨 22판으로 대조하고 학습서에
+  「전공 교과서 미대조」가 붙는다. 교과서가 낡은 곳의 최근 10년 고인용 종설 · 합의문 보강은 PC 세션 몫이다(루틴은 PubMed 를 못 연다) —
+  본문에 섞지 않고 `## 최근 근거` 절과 「시험 쟁점」 새 근거로. 남은 일: 교과서 장별 문서 · 읽기 도구(2단계), 최근 근거 흐름 · 앱 연결(3단계).
 - **정리본 판형 2(2026-09-25, `note_form: 2`)**: 결론·시험 단서·왜 → 틀린 보기별 pitfalls → 표·도식 → 목표에 맞춘 본문.
   옛 정리본은 `[restyle]` 로 하나씩 옮긴다(재배치만, 새 사실 추가 없음). 본보기와 예산은 `/gen-concept` 「판형 2」.
 - 학습서: `.github/workflows/books.yml`(cron 06:30 KST) → 코드 시험(관문) → `test_content.py`(실제 콘텐츠, 비관문) →

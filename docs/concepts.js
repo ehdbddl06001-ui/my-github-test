@@ -1644,7 +1644,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "9885dd67e227c0a1",
+  "hash": "186e535469694e7c",
   "summary": [
    "결론: 공복 뒤 저케톤성 저혈당 + 유리지방산 상승 + 젖산 정상 + 아실카르니틴 C8 상승 = MCAD 결핍.",
    "시험 단서: 3–24개월, 장염·중이염으로 못 먹은 뒤 기면·경련, 케톤 음성(hypoketotic hypoglycemia), 옥타노일카르니틴(C8).",
@@ -113967,7 +113967,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-10-09",
   "reviewStatus": "unreviewed",
-  "hash": "fd6d4dfc3d309879",
+  "hash": "894d93611e5329a5",
   "summary": [
    "결론: 우심부전의 zone 3 손상 = 산소를 가장 늦게 받고 + 역행 정맥압을 가장 먼저 받는 자리.",
    "시험 단서: 우심부전 + 크고 단단한 간·ALP↑ + 생검 중심정맥 주위 울혈·괴사(육두구 간, nutmeg liver).",
@@ -114611,7 +114611,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 3,
   "updated": "2026-10-09",
   "reviewStatus": "unreviewed",
-  "hash": "7a10c52f9a77086f",
+  "hash": "fd8196532a65d056",
   "summary": [
    "결론: GATA3 의 진단적 용도 = 원발 불명 전이암의 유방(·요로상피) 기원 확인(계통 표지).",
    "시험 단서: 관강 상피 핵만 갈색·근상피 음성 + 요로상피·T 세포에도 있는 아연손가락 전사인자(lineage marker).",
@@ -115583,7 +115583,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-10-03",
   "reviewStatus": "unreviewed",
-  "hash": "83dea175de684a0c",
+  "hash": "db7ad3aa4b7166c8",
   "summary": [
    "결론: 털·뼈가 든 난소 낭종(성숙낭성기형종)의 악성 변화는 약 80 % 가 편평세포암(squamous cell carcinoma)이다.",
    "시험 단서: 폐경 후·10 cm 넘는 낭종·벽의 고형 결절 + 열린 표본의 엉킨 털과 뼈 조각(dermoid cyst).",
@@ -116419,7 +116419,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "48644d135721933e",
+  "hash": "9e39fadf17930065",
   "summary": [
    "결론: 경피증 신장 위기의 신장 병변은 엽간·궁상 동맥의 동심성 내막 증식(양파 껍질)과 수입 세동맥 섬유소양 괴사다.",
    "시험 단서: 미만성 전신경화증 초기 + 스테로이드 뒤 급성 고혈압·AKI + 분열적혈구(schistocytes), 요침사는 조용하다.",
@@ -117123,7 +117123,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 3,
   "updated": "2026-10-09",
   "reviewStatus": "unreviewed",
-  "hash": "fe60edf56f216d91",
+  "hash": "fcf6d93f559757bd",
   "summary": [
    "결론: CD3 가 격막의 작은 림프구만 물들이고 크고 맑은 세포 판은 음성이면 정상피종 — 갈색 세포는 숙주 반응이다.",
    "시험 단서: 30대 남성의 단단한 고환 종괴 + AFP 정상·hCG 경미 상승 + 섬유 격막에 T 림프구가 낀 맑은 세포 판(seminoma).",
@@ -117932,7 +117932,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-10-18",
   "reviewStatus": "unreviewed",
-  "hash": "55af692609810631",
+  "hash": "738b401399b82c02",
   "summary": [
    "결론: 종양세포 괴사·중등도 이상 핵 이형성·유사분열 ≥ 10/10 HPF 중 둘 이상이면 평활근육종(leiomyosarcoma)이다.",
    "시험 단서: 빠르게 커진 자궁 근층 종괴 + 다발 배열 방추형 세포 + 「핵 이형성 뚜렷」「유사분열 18/10 HPF」.",
@@ -126238,7 +126238,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-10",
   "reviewStatus": "unreviewed",
-  "hash": "4159b812dc26afc6",
+  "hash": "9bcc62fa3267ff6c",
   "summary": [
    "결론: 포메피졸(fomepizole)은 알코올 탈수소효소(ADH)를 경쟁 억제해 메탄올이 포름산이 되는 첫 단계를 막는다.",
    "시험 단서: 밀주·워셔액 뒤 늦게 온 「눈보라」 시야·시신경 유두 충혈 + 음이온 차·삼투압 차 모두 큰 산증(osmolal gap).",
@@ -127159,7 +127159,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "4bc59158e2b1f0ae",
+  "hash": "70d9a8be6d32a3cd",
   "summary": [
    "결론: 티오퓨린을 오래 안정적으로 쓰던 사람이 요산 강하제 추가 뒤 범혈구감소면 알로푸리놀의 크산틴 산화효소 억제다.",
    "시험 단서: 아자티오프린(azathioprine)·6-MP 수년 안정 + 통풍약 추가 수주 뒤 발열·호중구감소 + 요산 저하.",
@@ -128003,7 +128003,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-03",
   "reviewStatus": "unreviewed",
-  "hash": "6f967ab623d0de04",
+  "hash": "cab11deadcbd0e97",
   "summary": [
    "결론: 정상 음이온 차 산증 + 소변 음이온 차 양수 + 소변 pH > 5.5 + 저칼륨 = 원위(1형) 신세관산증.",
    "시험 단서: 신석회화·결석, 근력 저하(저칼륨), 쇼그렌병·암포테리신 B — distal (type 1) RTA.",
@@ -128781,7 +128781,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-10-11",
   "reviewStatus": "unreviewed",
-  "hash": "b2049fc3c5214548",
+  "hash": "83d8364dd76e10e4",
   "summary": [
    "결론: 양측 신동맥협착에서 GFR 은 안지오텐신II 의 수출세동맥 수축에 기대고, ACE억제제·ARB 가 이를 없앤다.",
    "시험 단서: 양측 신동맥협착(bilateral renal artery stenosis)·단일 콩팥 + ACE억제제·ARB 시작 뒤 크레아티닌 급상승.",
