@@ -133,6 +133,13 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
 - `docs/` 는 GitHub Pages 와 Cloudflare Pages 둘 다에서 뜨도록 **전부 상대경로**다(manifest·sw.js 포함).
   절대경로(`/x`)를 쓰지 않는다. `docs/sw.js` 가 껍데기·번들·영상을 캐시하고, `docs/pwa.js` 가
   설치 버튼·새 자료 토스트를 띄운다. 새 페이지를 추가하면 `sw.js` 의 SHELL 목록에도 넣는다.
+- **화면 색 = 변수(2026-11-23 vNext Phase 1)** — 기본은 밝은 화면(「Daylight Clinical Paper」), 메뉴 줄 끝 단추로 어두운 화면
+  (`docs/theme.js` · `localStorage.medkos_theme` · `html[data-theme="dark"]`). 색은 `docs/style.css` 맨 위 변수 두 묶음에만
+  적는다 — 그 아래나 쪽 안 `<style>` · 스크립트에 색을 직접 적지 않는다(`test_sync_key.py` `Theme` 가 본다. 예외는 그림 뒤 흰 바탕과
+  확대 · 로그인 창의 검은 막뿐). 새 쪽은 `theme.js` 를 `style.css` 보다 먼저 읽는다. 필기 종이(`.ink-sheet`)는 앱이 어두워도 밝다.
+  **시각 절제**: 학습서 · 해설의 상자(결론 · 단서 · 기전 · 혼동 · 시험 쟁점 · 도식)는 네이비 + 중립 슬레이트 한 가지 톤이고
+  (밝은 판에서 `--tag` · `--prin-*` · `--cmp-*` · `--triage-*` 가 그 톤으로 모인다), 학습서 본문 · 소제목 · 카드 머리말에
+  장식 이모티콘(돋보기 · 과녁 · 번개 · 저울 · 새싹 · 가위표/체크 등)을 넣지 않고 글자 라벨만 쓴다 — 종이 위에서 펜 · 형광펜 색이 돋보이게.
 - 오답 동기화는 Cloudflare Pages Function `functions/api/wrong.js` → `state/wrong_sync/<exam>.json`
   커밋 → `.github/workflows/wrong-sync.yml` 이 `pipelines/import_wrong_sync.py` 로 오답노트 .md 를
   다시 쓴다. `state/wrong_sync/` 는 **사용자 데이터**라 커밋한다(파생 상태가 아님). 시크릿

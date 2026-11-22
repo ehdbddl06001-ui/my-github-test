@@ -1471,7 +1471,7 @@ function applyQueryParams() {
 function init() {
   if (KMLE.length === 0 && USMLE.length === 0 && IMAGING.length === 0) {
     document.body.insertAdjacentHTML("beforeend",
-      '<p style="max-width:820px;margin:16px auto;color:#ffb4b4">문항 데이터를 불러오지 못했습니다. questions.js / questions_usmle.js / questions_imaging.js 를 확인하세요.</p>');
+      '<p style="max-width:820px;margin:16px auto;color:var(--bad-ink)">문항 데이터를 불러오지 못했습니다. questions.js / questions_usmle.js / questions_imaging.js 를 확인하세요.</p>');
     return;
   }
   const qp = applyQueryParams();
