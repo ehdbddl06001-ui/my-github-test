@@ -7,6 +7,7 @@ date: 2026-09-25
 updated: 2026-10-09
 version: 3
 outline: h88             # 해리슨 21판 88장 Testicular Cancer(혈액종양내과 책)
+discipline: pathology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
 review_status: unreviewed
 note_form: 2             # 판형 2(2026-09-25)

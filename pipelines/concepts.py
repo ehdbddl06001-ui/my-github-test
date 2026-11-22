@@ -44,6 +44,14 @@ LETTERS = "ABCDE"
 # 없다고 게시를 막지는 않는다(WARN) — 옛 문항 1,200여 개를 소급해서 막으면 매일 루틴이 멈춘다.
 OBJECTIVE_REQUIRED_FROM = "2026-09-21"
 MODEL_NAMES = re.compile(r"(claude|gpt|gemini|llama|model|모델|\bai\b)", re.IGNORECASE)
+# 기초 뿌리(2026-11-21 사용자 결정) — 임상 정리본(판단)은 `roots` 로 기초 정리본(기전)을 가리킨다.
+# 기초 정리본은 **기전 단위**라 임상 정리본 여러 개가 하나를 함께 가리킨다(문항마다 하나씩 만들지 않는다).
+LAYERS = ("clinical", "basic")
+SYSTEMS = ("cardiovascular", "respiratory", "renal", "gastrointestinal", "hepatobiliary", "endocrine-metabolic",
+           "reproductive", "hematologic", "immune", "nervous", "musculoskeletal", "skin", "special-senses",
+           "multisystem", "cell-molecular")
+# 전공 교과서 대조 상태 — checked(본문과 대조) · pending(교과서는 있으나 아직 못 읽음) · unavailable(그 학문 교과서가 없음)
+TEXTBOOK_CHECK = ("checked", "pending", "unavailable")
 
 
 # ── 안전한 Markdown → HTML(허용 태그만, 속성 없음) ─────────────────────
@@ -147,6 +155,101 @@ def _book_map() -> dict:
         return dict(cfg.get("books") or {})
     except Exception:
         return {}
+
+
+@lru_cache(maxsize=1)
+def _books_cfg() -> dict:
+    try:
+        import yaml
+        return yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8")) or {}
+    except Exception:
+        return {}
+
+
+def discipline_books() -> dict:
+    """{학문 꼬리표: 학문별 책 이름} — books_config.yaml `disciplines`."""
+    return dict(_books_cfg().get("disciplines") or {})
+
+
+def textbooks() -> dict:
+    """{학문: {id, title, readable…}} — books_config.yaml `textbooks`."""
+    return dict(_books_cfg().get("textbooks") or {})
+
+
+def is_basic(meta: dict[str, Any]) -> bool:
+    return meta.get("layer") == "basic"
+
+
+def root_errors(meta: dict[str, Any]) -> list[str]:
+    """기초 뿌리 필드 — layer · discipline · system · textbook_check(기초 정리본) / roots · roots_none(임상 정리본)."""
+    errs: list[str] = []
+    cid = str(meta.get("id", ""))
+    layer = meta.get("layer", "clinical")
+    if layer not in LAYERS:
+        errs.append(f"layer 는 {'/'.join(LAYERS)}(없으면 clinical)")
+    dmap = discipline_books()
+    disc = meta.get("discipline")
+    if disc is not None and dmap and disc not in dmap:
+        errs.append(f"discipline '{disc}' 는 {'/'.join(dmap)} 중 하나(books_config.yaml disciplines)")
+    roots, none = meta.get("roots"), meta.get("roots_none")
+    if roots is not None:
+        if not isinstance(roots, list) or not roots or not all(isinstance(r, str) and ID_RE.match(r) for r in roots):
+            errs.append("roots 는 기초 정리본 id 목록(cn.<과>.<주제>.<목표>) — 뿌리가 없으면 roots_none 에 이유를 적는다")
+        elif cid in roots:
+            errs.append("roots 가 자기 자신을 가리킨다")
+    if none is not None and not str(none).strip():
+        errs.append("roots_none 은 기초 기전이 없는 이유 한 줄(검진 주기·법규·역학 계산·지침 수치 등)")
+    if roots and none is not None:
+        errs.append("roots 와 roots_none 을 함께 쓰지 않는다 — 뿌리가 있으면 roots, 없으면 roots_none")
+    if layer == "basic":
+        if not disc:
+            errs.append("기초 정리본(layer: basic)은 discipline(학문)이 필요하다")
+        elif dmap.get(disc) and _book_map().get(str(meta.get("topic") or "")) != dmap[disc]:
+            errs.append(f"기초 정리본의 topic '{meta.get('topic')}' 이 학문별 책 「{dmap[disc]}」로 가지 않는다 — "
+                        f"topic 을 그 학문 이름으로(books_config.yaml books)")
+        if meta.get("system") not in SYSTEMS:
+            errs.append(f"기초 정리본은 system(장기계통)이 필요하다 — {'/'.join(SYSTEMS)}")
+        tb = meta.get("textbook_check")
+        has_book = bool(disc and disc in textbooks())
+        if tb not in TEXTBOOK_CHECK:
+            errs.append(f"기초 정리본은 textbook_check 가 필요하다 — {'/'.join(TEXTBOOK_CHECK)}")
+        elif tb == "checked" and not any(
+                isinstance(s, dict) and s.get("kind") == "textbook" and s.get("verified") == "text"
+                and not str(s.get("id", "")).startswith("harrison") for s in meta.get("sources") or []):
+            errs.append("textbook_check: checked 인데 전공 교과서 출처(kind: textbook · verified: text, 해리슨 제외)가 없다")
+        elif tb == "unavailable" and has_book:
+            errs.append(f"[WARN] {disc} 는 교과서가 등록돼 있다(books_config.yaml textbooks) — textbook_check 는 pending 또는 checked")
+        elif tb == "pending" and not has_book:
+            errs.append(f"[WARN] {disc} 는 등록된 교과서가 없다 — textbook_check: unavailable")
+        if roots is not None or none is not None:
+            errs.append("기초 정리본에는 roots·roots_none 을 달지 않는다(뿌리는 임상 정리본이 가리킨다)")
+    else:
+        for k in ("system", "textbook_check"):
+            if meta.get(k) is not None:
+                errs.append(f"[WARN] {k} 는 기초 정리본(layer: basic)의 필드다")
+    return errs
+
+
+def root_link_errors(concepts: dict[str, dict]) -> dict[str, list[str]]:
+    """{정리본 id: [오류…]} — roots 가 가리키는 정리본이 있고 기초 정리본인가(정리본 사이의 검사)."""
+    out: dict[str, list[str]] = {}
+    for cid, c in concepts.items():
+        for r in c.get("roots") or []:
+            t = concepts.get(str(r))
+            if t is None:
+                out.setdefault(cid, []).append(f"roots '{r}' 정리본이 없다 — 먼저 그 기초 정리본을 쓴다")
+            elif not is_basic(t):
+                out.setdefault(cid, []).append(f"roots '{r}' 는 기초 정리본(layer: basic)이 아니다")
+    return out
+
+
+def root_supports(concepts: dict[str, dict]) -> dict[str, list[str]]:
+    """{기초 정리본 id: [그것을 뿌리로 삼는 임상 정리본 id…]} — roots 의 역방향(저장하지 않고 계산한다)."""
+    out: dict[str, list[str]] = {}
+    for cid, c in sorted(concepts.items()):
+        for r in c.get("roots") or []:
+            out.setdefault(str(r), []).append(cid)
+    return out
 
 
 def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str]:
@@ -300,6 +403,7 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
                 errs.append(f"variants[{i}] 는 of 가 있으면 changed(바꾼 단서와 그 결과)를 적어야 한다")
             if not isinstance(v.get("flip"), bool):
                 errs.append(f"variants[{i}].flip 은 true(단서를 바꿔 답이 바뀜)·false(겉모습만 바뀌고 답은 그대로)")
+    errs += root_errors(meta)
     errs += style_warnings(meta)
     return errs
 
@@ -501,6 +605,9 @@ def load_concepts(root: Path = CONCEPT_DIR) -> tuple[dict[str, dict], list[str]]
             errs.append(f"diagram: {e}")
         errors += [f"{c['path']}: {e}" for e in errs]
         out[cid] = c
+    for cid, es in root_link_errors(out).items():              # 정리본 사이 — roots 가 가리키는 기초 정리본
+        out[cid]["errors"] += es
+        errors += [f"{out[cid]['path']}: {e}" for e in es]
     return out, errors
 
 
@@ -555,6 +662,15 @@ def learning_fields(meta: dict[str, Any]) -> dict[str, Any]:
 if __name__ == "__main__":
     import sys
     cs, errs = load_concepts()
+    if "--basic" in sys.argv[1:]:
+        # 기초 정리본 목록 — [root] 를 처리할 때 「같은 기전의 기초 정리본이 이미 있는가」를 여기서 먼저 본다
+        sup = root_supports(cs)
+        rows = sorted((str(c.get("discipline")), str(c.get("system")), cid) for cid, c in cs.items() if is_basic(c))
+        for disc, system, cid in rows:
+            c = cs[cid]
+            print(f"{disc:13} {system:20} {cid}  「{c.get('title')}」  교과서 {c.get('textbook_check')} · 받치는 임상 정리본 {len(sup.get(cid, []))}")
+        print(f"기초 정리본 {len(rows)}개")
+        sys.exit(0)
     qs = load_questions()
     links = linked_questions(qs)
     for cid, c in cs.items():

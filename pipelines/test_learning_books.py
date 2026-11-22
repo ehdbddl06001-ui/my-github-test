@@ -1112,6 +1112,13 @@ class OutlineFrame(unittest.TestCase):
         real = cq._gaps(base, {}, {})
         self.assertEqual([g["have"] for g in real], sorted(g["have"] for g in real))
         self.assertTrue(all(g["have"] > 0 for g in real))                        # 0개인 책은 오답이 이끈다
+        # 기초의학 학문별 책은 [gap] 대상이 아니다 — 기초 정리본은 [root] 에서만(2026-11-21 사용자 결정)
+        import yaml
+        cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))
+        basic = dict(next(c for c in base.values() if C.is_basic(c)))
+        self.assertIn(cfg["books"].get(basic["topic"]), set(cfg["disciplines"].values()))
+        self.assertFalse({g["book"] for g in real} & set(cfg["disciplines"].values()))
+        self.assertEqual(cq._gaps({basic["id"]: basic}, {}, {}), [])
 
     def test_quiz_deck_rotates_subjects_least_solved_first(self):
         # 2026-11-23 — 번들이 id 내림차순(= 과목 영어 이름 역순)이라 섞기를 끄면 늘 류마티스부터 나왔다.
@@ -1265,6 +1272,107 @@ class ConceptFigures(unittest.TestCase):
                 self.assertLessEqual(info["h"], bb.FIG_MAX_H + 0.1)
             finally:
                 bb.ROOT = old
+
+
+class BasicRoots(unittest.TestCase):
+    """기초 뿌리(2026-11-21) — 임상 정리본의 roots 계약 · [root] 큐 · 기초의학 학문별 책."""
+
+    BASIC = {"id": "cn.physio.x.y", "topic": "Physiology", "layer": "basic", "discipline": "physiology",
+             "system": "renal", "textbook_check": "pending"}
+
+    def test_root_fields_contract(self):
+        E = C.root_errors
+        self.assertEqual(E({"id": "cn.neph.a.b"}), [])                                   # 옛 정리본은 그대로 통과
+        self.assertEqual(E({"id": "cn.neph.a.b", "roots": ["cn.physio.x.y"]}), [])
+        self.assertEqual(E({"id": "cn.neph.a.b", "roots_none": "검진 주기 — 기전으로 내려가지 않는다"}), [])
+        self.assertTrue(any("함께 쓰지" in e for e in E({"id": "cn.neph.a.b", "roots": ["cn.physio.x.y"], "roots_none": "x"})))
+        self.assertTrue(any("id 목록" in e for e in E({"id": "cn.neph.a.b", "roots": "cn.physio.x.y"})))
+        self.assertTrue(any("자기 자신" in e for e in E({"id": "cn.neph.a.b", "roots": ["cn.neph.a.b"]})))
+        self.assertTrue(any("이유" in e for e in E({"id": "cn.neph.a.b", "roots_none": " "})))
+        self.assertTrue(any("discipline" in e for e in E({"id": "cn.neph.a.b", "discipline": "nephrology"})))
+        self.assertEqual(E({"id": "cn.path.a.b", "discipline": "pathology"}), [])        # 임상 정리본의 학문 꼬리표
+
+    def test_basic_note_contract(self):
+        E, b = C.root_errors, self.BASIC
+        self.assertEqual(E(b), [])
+        self.assertTrue(any("system" in e for e in E(dict(b, system="kidney"))))
+        self.assertTrue(any("학문별 책" in e for e in E(dict(b, topic="Nephrology"))))      # 학문 책으로 가지 않는 topic
+        self.assertTrue(any("textbook_check 가 필요" in e for e in E({k: v for k, v in b.items() if k != "textbook_check"})))
+        self.assertTrue(any("전공 교과서 출처" in e for e in E(dict(b, textbook_check="checked"))))
+        ok = dict(b, textbook_check="checked", sources=[{"id": "guyton-14", "kind": "textbook", "verified": "text"}])
+        self.assertEqual(E(ok), [])
+        harrison_only = dict(b, textbook_check="checked", sources=[{"id": "harrison-22", "kind": "textbook", "verified": "text"}])
+        self.assertTrue(any("전공 교과서 출처" in e for e in E(harrison_only)))             # 해리슨은 전공 교과서가 아니다
+        self.assertTrue(any("달지 않는다" in e for e in E(dict(b, roots_none="x"))))
+        self.assertTrue(any("[WARN]" in e and "unavailable" in e for e in
+                            E(dict(b, topic="Biochemistry", discipline="biochemistry"))))   # 교과서 없는 학문의 pending
+
+    def test_roots_must_point_to_existing_basic_notes(self):
+        cs = {"cn.neph.a.b": {"id": "cn.neph.a.b", "roots": ["cn.physio.x.y", "cn.neph.c.d", "cn.none.x.y"]},
+              "cn.neph.g.h": {"id": "cn.neph.g.h", "roots": ["cn.physio.x.y"]},
+              "cn.physio.x.y": {"id": "cn.physio.x.y", "layer": "basic"},
+              "cn.neph.c.d": {"id": "cn.neph.c.d"}}
+        errs = C.root_link_errors(cs)
+        self.assertEqual(list(errs), ["cn.neph.a.b"])
+        self.assertEqual(len(errs["cn.neph.a.b"]), 2)                                    # 임상 정리본을 가리킴 · 없는 정리본
+        self.assertEqual(C.root_supports(cs)["cn.physio.x.y"], ["cn.neph.a.b", "cn.neph.g.h"])   # 기전 하나가 임상 여러 개를 받친다
+
+    def test_root_queue_only_new_wrongs_on_clinical_notes_without_roots(self):
+        concepts = {"cn.neph.a.b": {"id": "cn.neph.a.b", "title": "임상", "topic": "Nephrology"},
+                    "cn.neph.c.d": {"id": "cn.neph.c.d", "roots": ["cn.physio.x.y"]},
+                    "cn.neph.e.f": {"id": "cn.neph.e.f", "roots_none": "검진 주기"},
+                    "cn.physio.x.y": {"id": "cn.physio.x.y", "layer": "basic"},
+                    "cn.neph.old.old": {"id": "cn.neph.old.old"}}
+        qs = {f"q{i}": {"topic": "Nephrology", "objective": o} for i, o in enumerate(concepts, 1)}
+        orig = (cq.load_concepts, cq.load_questions)
+        cq.load_concepts, cq.load_questions = (lambda: (concepts, [])), (lambda: qs)
+        try:
+            e = [wrong(f"e{i}", f"q{i}", o, "2026-11-22T01:00:00Z", "2026-11-22") for i, o in enumerate(list(concepts)[:4], 1)]
+            e.append(wrong("e5", "q5", "cn.neph.old.old", "2026-11-01T01:00:00Z", "2026-11-01"))   # 기준일 전 오답 — 소급하지 않는다
+            q = cq.build(e)
+        finally:
+            cq.load_concepts, cq.load_questions = orig
+        self.assertEqual([r["objective"] for r in q["root"]], ["cn.neph.a.b"])
+        self.assertEqual(q["counts"]["root"], 1)
+
+    def test_discipline_book_lists_units_printed_in_other_books(self):
+        cfg = bb.load_config()
+        self.assertEqual(cfg["books"]["Physiology"], "생리학")                            # 「기초의학」 한 권이 아니다
+        self.assertNotIn("기초의학", cfg["books"].values())
+        base, _ = C.load_concepts()
+        clin = copy.deepcopy(base["cn.derm.pityriasis-versicolor.treatment"])
+        clin["discipline"] = "physiology"                                                # 피부과 책에 실린 채 꼬리표만
+        basic = copy.deepcopy(clin)
+        basic.update(self.BASIC, title="기초 단원")
+        other = copy.deepcopy(clin)
+        other.update(id="cn.derm.other.other", title="꼬리표 없는 단원")
+        del other["discipline"]
+        concepts = {c["id"]: c for c in (clin, basic, other)}
+        books = bb.plan(concepts, {}, ll.states([]), cfg, {})
+        self.assertEqual(books["생리학"].elsewhere, [(clin["title"], "피부과")])
+        self.assertEqual(books["피부과"].elsewhere, [])
+        self.assertEqual([u.key for u in books["생리학"].units], ["cn.physio.x.y"])       # 본문은 한 책에만
+        self.assertIn("전공 교과서 미대조", books["생리학"].units[0].flags)
+        self.assertNotIn("전공 교과서 미대조", [f for u in books["피부과"].units for f in u.flags])
+        us = books["생리학"].units
+        h0 = bb.volume_hash("생리학", us, [], cfg, {})
+        self.assertEqual(h0, bb.volume_hash("생리학", us, [], cfg, {}, []))               # 목록이 없으면 해시는 그대로
+        self.assertNotEqual(h0, bb.volume_hash("생리학", us, [], cfg, {}, books["생리학"].elsewhere))
+        fonts = {"regular": bb.find_font(cfg["fonts"]["regular"]), "bold": bb.find_font(cfg["fonts"]["bold"])}
+        html_text, _ = bb.book_html("생리학", [], cfg, {}, {"version": 1, "date": "2026-11-21",
+                                                         "elsewhere": books["생리학"].elsewhere}, None, fonts, [])
+        self.assertIn("다른 책에 실린 생리학 단원", html_text)
+        self.assertIn("(피부과)", html_text)
+        plain, _ = bb.book_html("피부과", [], cfg, {}, {"version": 1, "date": "2026-11-21"}, None, fonts, [])
+        self.assertNotIn("다른 책에 실린", plain)
+
+    def test_discipline_books_have_outline_slots(self):
+        books, errs = ol.load()
+        self.assertEqual(errs, [])
+        cfg = bb.load_config()
+        for book in set(cfg["disciplines"].values()):
+            self.assertTrue(books.get(book), book)                                       # 학문별 책마다 기본틀 슬롯
+        self.assertTrue(set(cfg["textbooks"]) <= set(cfg["disciplines"]))
 
 
 if __name__ == "__main__":

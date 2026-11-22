@@ -346,23 +346,152 @@ subjects:
       - id: prev.health-system
         title: "보건의료체계와 의료법규"
 
-  - book: 기초의학
+  # ── 기초의학 — 학문별 책(2026-11-21 사용자 결정: 「기초의학」 한 권 → 일곱 권) ──────────────
+  # 여기에는 기초 정리본(`layer: basic` — 임상 정리본의 `roots` 가 가리키는 기전 단위)이 쌓인다.
+  # 슬롯 순서는 그 학문 교과서의 큰 단원 순서를 따른다(생리 Guyton · 병리 Robbins · 약리 Katzung · 조직 Junqueira).
+  - book: 생리학
     exams: [usmle]
     spine: generic
     outline:
-      - id: basic.biochem
-        title: "생화학 — 대사 경로와 효소 결핍"
-      - id: basic.genetics
-        title: "유전 — 유전 양식과 분자유전"
-      - id: basic.cell-physio
+      - id: physio.cell-membrane
         title: "세포·막 생리와 신호전달"
-      - id: basic.organ-physio
-        title: "계통 생리 — 심혈관·호흡·신장·내분비"
-      - id: basic.pathology
-        title: "병리 총론 — 손상·염증·종양"
-      - id: basic.micro
-        title: "미생물 — 세균·바이러스·진균·기생충"
-      - id: basic.immuno
-        title: "면역 — 선천·획득 면역과 과민반응"
-      - id: basic.pharm
-        title: "약리 — 약동학·약력학과 계통별 약물"
+      - id: physio.nerve-muscle
+        title: "신경·근육 — 막전위와 수축"
+      - id: physio.cardiac
+        title: "심장 — 전기 활동과 펌프 기능"
+      - id: physio.circulation
+        title: "순환 — 혈역학과 혈압 조절"
+      - id: physio.renal
+        title: "신장·체액 — 여과·재흡수·산염기"
+      - id: physio.blood
+        title: "혈액 — 조혈·지혈"
+      - id: physio.respiratory
+        title: "호흡 — 환기·가스 교환·조절"
+      - id: physio.gi
+        title: "소화 — 운동·분비·흡수"
+      - id: physio.endocrine
+        title: "내분비·대사 조절"
+      - id: physio.reproductive
+        title: "생식 생리"
+      - id: physio.neuro
+        title: "신경계 — 감각·운동·자율신경"
+
+  - book: 병리학
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: path.cell-injury
+        title: "세포 손상·적응·세포사"
+      - id: path.inflammation
+        title: "염증과 조직 복구"
+      - id: path.hemodynamics
+        title: "혈역학 장애 — 부종·혈전·색전·쇼크"
+      - id: path.neoplasia
+        title: "종양 — 발암 기전·분자 기초·종양 표지"
+      - id: path.environmental
+        title: "환경·영양 질환"
+      - id: path.organ
+        title: "장기별 병리 — 조직 소견과 면역조직화학"
+
+  - book: 약리학
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: pharm.principles
+        title: "약동학·약력학"
+      - id: pharm.autonomic
+        title: "자율신경계 약물"
+      - id: pharm.cardiovascular-renal
+        title: "심혈관·신장 약물"
+      - id: pharm.cns
+        title: "중추신경계 약물"
+      - id: pharm.blood-inflammation
+        title: "혈액·염증·통풍 약물"
+      - id: pharm.endocrine
+        title: "내분비 약물"
+      - id: pharm.antimicrobial
+        title: "항미생물제"
+      - id: pharm.cancer-immune
+        title: "항암제·면역약리"
+      - id: pharm.toxicology
+        title: "독성학·해독제"
+      - id: pharm.interactions
+        title: "약물 상호작용과 특수 상황"
+
+  - book: 생화학·유전
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: biochem.enzymes
+        title: "효소와 생체에너지"
+      - id: biochem.carbohydrate
+        title: "탄수화물 대사"
+      - id: biochem.lipid
+        title: "지질 대사"
+      - id: biochem.amino-acid
+        title: "아미노산·질소 대사"
+      - id: biochem.nucleotide
+        title: "핵산·뉴클레오타이드 대사"
+      - id: biochem.vitamins
+        title: "비타민·무기질"
+      - id: genetics.molecular
+        title: "분자생물 — 복제·전사·번역"
+      - id: genetics.inheritance
+        title: "유전 양식과 집단유전"
+      - id: genetics.chromosomal
+        title: "염색체 이상과 유전 검사"
+
+  - book: 미생물학
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: micro.bacteria-basics
+        title: "세균 총론 — 구조·독소·내성 기전"
+      - id: micro.bacteria
+        title: "세균 각론"
+      - id: micro.virus
+        title: "바이러스"
+      - id: micro.fungi
+        title: "진균"
+      - id: micro.parasite
+        title: "기생충"
+
+  - book: 면역학
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: immuno.innate
+        title: "선천 면역"
+      - id: immuno.adaptive
+        title: "획득 면역 — 림프구·항체·MHC"
+      - id: immuno.hypersensitivity
+        title: "과민반응"
+      - id: immuno.autoimmunity
+        title: "면역 관용과 자가면역"
+      - id: immuno.immunodeficiency
+        title: "면역결핍"
+      - id: immuno.transplant-tumor
+        title: "이식·종양 면역"
+      - id: immuno.vaccines
+        title: "백신과 면역 조절"
+
+  - book: 해부·조직·발생
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: anat.neuro
+        title: "신경해부"
+      - id: anat.head-neck
+        title: "머리·목 해부"
+      - id: anat.trunk
+        title: "몸통 해부 — 흉부·복부·골반"
+      - id: anat.limbs
+        title: "팔다리·근골격 해부"
+      - id: histo.tissues
+        title: "조직학 — 기본 조직"
+      - id: histo.organs
+        title: "조직학 — 장기별"
+      - id: embryo.general
+        title: "발생학 — 초기 발생"
+      - id: embryo.systems
+        title: "발생학 — 계통별 발생과 선천 기형"

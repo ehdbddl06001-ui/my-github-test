@@ -11,6 +11,11 @@
   touch  — 정리본이 **이미 있는** 목표에서 새로 틀린 보기가 그 정리본의 `pitfalls[].covers` 에 없을 때.
            새 정리본을 쓰지 않고 혼동 항목 하나를 더하거나 고치는 **가벼운 손질**만 한다(2026-09-22 —
            정리본이 쌓이면 대부분의 오답은 이쪽이 된다).
+  root   — 정리본이 있는 **임상** 목표를 새로 틀렸는데 그 정리본에 기초 뿌리(`roots`)도 「없음」(`roots_none`)도 없을 때
+           (2026-11-21 사용자 결정 — 임상 판단 밑의 기초 기전을 학문별 책에 따로 쌓는다). 기초 정리본은 **기전 단위**다:
+           같은 기전의 기초 정리본이 이미 있으면(`concepts.py --basic`) 새로 쓰지 않고 `roots` 로 잇기만 한다.
+           기초 기전이 없는 목표(검진 주기·법규·역학 계산·지침 수치)는 `roots_none` 에 이유를 적는다.
+           **앞으로 틀리는 것부터** — 마지막 오답이 ROOTS_FROM 이후인 목표만(옛 정리본은 다시 틀릴 때 붙는다).
   variant — 정리본이 있는 목표에서 **틀린 문항마다 변형 2개**(of: <문항>)가 아직 없을 때(2026-09-23 사용자 채택 —
            「오답 → 변형 문항 → 간격을 두고 다시 출제」). 하나는 결정적 단서를 바꿔 답이 바뀌고(flip: true —
            문항 design.switch 가 씨앗), 하나는 겉모습만 바꾸고 답은 그대로(flip: false). 앱 「오늘 다시 풀 것」이
@@ -32,6 +37,7 @@
            이미 단원이 있는 책만 대상으로 하고, 책마다 「이미 쓴 단원 다음 자리」의 빈 슬롯 하나를 준다.
            책 순서는 **정리본이 적은 책 먼저**(같으면 기본틀 순서) — 2026-11-23 사용자 선택. 그 전에는 많은 책이
            먼저라 루틴이 하루 하나씩 같은 과만 채웠다(10월 류마티스 12개 · 11월 순환기 23개).
+           기초의학 학문별 책은 대상이 아니다(기초 정리본은 `root` 에서만 생긴다).
 우선순위 = 반복 오답·후속 확인 실패·표시(learning_log 의 priority)를 그대로 쓴다.
 
 오답의 원천은 둘이다(2026-09-23).
@@ -54,12 +60,13 @@ from pathlib import Path
 
 import learning_log as ll
 import outline as ol
-from concepts import load_concepts, load_questions
+from concepts import is_basic, load_concepts, load_questions
 from traps import trap_tag
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "state" / "concept_queue.json"
 WRONG_SYNC = ROOT / "state" / "wrong_sync"
+ROOTS_FROM = "2026-11-21"     # 이 날 이후에 틀린 목표만 기초 뿌리를 묻는다(사용자 결정: 소급하지 않는다)
 
 
 def load_wrong_notes(folder: Path = WRONG_SYNC) -> dict[str, dict]:
@@ -104,6 +111,7 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     variants: list[dict] = []
     dists: list[dict] = []
     touches: list[dict] = []
+    roots: list[dict] = []
     links: dict[tuple[str, str], dict] = {}
     for key, s in S.items():
         if not s.status or not s.wrongs:
@@ -113,6 +121,7 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
             if s.objective in concepts:
                 touches.extend(_touches(s, concepts[s.objective], questions))
                 variants.extend(_variants(s, concepts[s.objective], questions, (sched.get(key) or {}).get("due", "")))
+                roots.extend(_roots(s, concepts[s.objective]))
                 continue                                  # 정리본이 이미 있다 — 새 혼동만 손질 대상으로
             q = next((questions[q] for q in s.qids if q in questions), {})
             notes.append({"objective": s.objective, "topic": str(q.get("topic", "")),
@@ -134,12 +143,13 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     notes.sort(key=lambda x: (-x["priority"], -x["wrongs"], x["objective"]))
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
     variants.sort(key=lambda x: (x["due"] or "9999", -x["priority"], x["qid"]))
+    roots.sort(key=lambda x: (-x["priority"], x["objective"]))
     seen_d: set[str] = set()
     dists = [d for d in dists if not (d["key"] in seen_d or seen_d.add(d["key"]))]
-    return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches,
+    return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches, "root": roots,
             "variant": variants, "dist": dists, "restyle": restyles, "figure": figures, "gap": gaps,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
-                       "restyle": len(restyles),
+                       "restyle": len(restyles), "root": len(roots),
                        "variant": len(variants), "dist": len(dists), "figure": len(figures),
                        "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts),
                        "from_wrongnote": len(from_note)}}
@@ -167,6 +177,16 @@ def _touches(s, concept: dict, questions: dict) -> list[dict]:
         out.append({"objective": concept.get("id"), "title": str(concept.get("title", "")), "cover": key,
                     "chosen": ch.get("text", ""), "answer": ch.get("answer", ""), "day": ch.get("day", "")})
     return out
+
+
+def _roots(s, concept: dict) -> list[dict]:
+    """새로 틀린 임상 목표인데 기초 뿌리를 아직 정하지 않은 정리본 — 한 줄."""
+    if is_basic(concept) or concept.get("roots") or concept.get("roots_none") is not None:
+        return []
+    if (s.last_wrong_day or "") < ROOTS_FROM:
+        return []
+    return [{"objective": concept.get("id"), "title": str(concept.get("title", "")), "topic": str(concept.get("topic", "")),
+             "path": str(concept.get("path", "")), "day": s.last_wrong_day, "priority": s.priority}]
 
 
 def _variants(s, concept: dict, questions: dict, due: str) -> list[dict]:
@@ -255,10 +275,13 @@ def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
     루틴은 06시 실행마다 맨 앞 [gap] 하나만 쓴다. 많은 책을 앞에 두면 그 책만 계속 늘어난다(되먹임) —
     적은 책을 앞에 두면 하나 쓸 때마다 그 책이 뒤로 물러나 모든 과가 번갈아 채워진다.
     정리본이 0개인 책은 넣지 않는다(오답이 이끌게 둔다 — 사용자 선택).
+    기초의학 학문별 책(books_config `disciplines` — 생리학 · 병리학 …)도 넣지 않는다: 기초 정리본은 틀린 문항의
+    `[root]` 에서만 생긴다(2026-11-21 사용자 결정 — 소급 · 빈칸 채우기 ✗). 적은 책 먼저로 바꾸면 이 책들이 맨 앞에 온다.
     """
     import yaml
     books_cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8")) or {}
     bmap = dict(books_cfg.get("books") or {})
+    basic_books = set((books_cfg.get("disciplines") or {}).values())
     books, _ = ol.load()
     have: dict[str, int] = {}                       # 책 → 그 책에 쌓인 정리본 수
     for c in concepts.values():
@@ -268,8 +291,8 @@ def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
     filled = {str(c.get("outline") or "") for c in concepts.values()}
     out: list[dict] = []
     for book, slots in books.items():
-        if book not in have:
-            continue                                 # 아직 시작하지 않은 과는 오답이 이끌게 둔다
+        if book not in have or book in basic_books:
+            continue                                 # 아직 시작하지 않은 과 · 기초의학 학문별 책은 오답이 이끌게 둔다
         # 「이어서 읽기」 — 이미 쓴 단원 다음 자리부터 채운다. 앞에서부터 채우면 그 과에서
         # 이미 공부한 자리와 동떨어진 장(예: 신장내과 51장 간질성 방광염)이 먼저 나온다.
         last = max((sl.order for sl in slots if sl.id in filled), default=-1)
@@ -299,17 +322,18 @@ def main(argv: list[str]) -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     note, link, touch, var, dist, gap = q["note"], q["link"], q["touch"], q["variant"], q["dist"], q["gap"]
-    rs, fig = q["restyle"], q["figure"]
+    rs, fig, root = q["restyle"], q["figure"], q["root"]
     if a.limit:
-        note, link, touch, var, dist, gap, rs, fig = (x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig))
+        note, link, touch, var, dist, gap, rs, fig, root = (x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig, root))
     if a.json:
-        print(json.dumps({"note": note, "link": link, "touch": touch, "variant": var, "dist": dist, "restyle": rs, "figure": fig,
+        print(json.dumps({"note": note, "link": link, "touch": touch, "root": root, "variant": var, "dist": dist, "restyle": rs, "figure": fig,
                           "gap": gap, "counts": q["counts"]}, ensure_ascii=False, indent=1))
         return 0
     if not events and not q["counts"]["from_wrongnote"]:
         print("학습 기록이 없다 — 앱의 「학습 기록 내보내기」가 드라이브 수신함에 들어왔는지 본다(동기화 미설정이면 정상).")
     print(f"정리본 대기(note) {q['counts']['note']}건 · 목표 연결 대기(link) {q['counts']['link']}건 · "
-          f"손질 대기(touch) {q['counts']['touch']}건 · 변형 대기(variant) {q['counts']['variant']}건 · "
+          f"손질 대기(touch) {q['counts']['touch']}건 · 기초 뿌리 대기(root) {q['counts']['root']}건 · "
+          f"변형 대기(variant) {q['counts']['variant']}건 · "
           f"오답 보기 설명 대기(dist) {q['counts']['dist']}건 · 그림 대기(figure) {q['counts']['figure']}건 · "
           f"이미 정리본이 있는 오답 목표 {q['counts']['wrong_objectives_with_note']}개 · "
           f"오답 목록에서 채운 오답 {q['counts']['from_wrongnote']}건")
@@ -319,6 +343,10 @@ def main(argv: list[str]) -> int:
         print(f"  [link] {l['topic']}/{l['subtopic']}  오답 {l['wrongs']}회 · 우선순위 {l['priority']} · 문항 {', '.join(l['questions'][:4])}")
     for t in touch:
         print(f"  [touch] {t['objective']}  새 혼동 {t['cover']} 「{str(t['chosen'])[:30]}」 → 정답 「{str(t['answer'])[:30]}」")
+    for r in root:
+        print(f"  [root] {r['objective']}  기초 뿌리 미정 · 마지막 오답 {r['day']} · 우선순위 {r['priority']} · {r['topic']} · {r['title'][:40]}")
+    if root:
+        print("  (먼저 `python pipelines/concepts.py --basic` 으로 같은 기전의 기초 정리본이 있는지 본다 — /gen-concept 「[root]」)")
     for v in var:
         print(f"  [variant] {v['objective']}  문항 {v['qid']} 변형 {v['need']}개 더 · 예정일 {v['due'] or '-'} · 씨앗 {v['seed']}")
     for d in dist:

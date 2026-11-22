@@ -7,6 +7,7 @@ date: 2026-09-23
 updated: 2026-10-09
 version: 2
 outline: h344            # 해리슨 21판 344장 Cirrhosis and Its Complications — Cardiac Cirrhosis 절(소화기내과 책)
+discipline: pathology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문
