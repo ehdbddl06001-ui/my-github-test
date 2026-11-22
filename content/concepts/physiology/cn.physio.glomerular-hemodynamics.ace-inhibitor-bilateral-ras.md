@@ -6,7 +6,11 @@ see_also: [Nephrology, Cardiology]
 date: 2026-09-23
 updated: 2026-10-11
 version: 2
-outline: basic.organ-physio   # 기본틀 슬롯(content/outline/subjects.yaml) — 사구체 혈역학(임상 대조는 해리슨 278장)
+outline: physio.renal   # 기본틀 슬롯(content/outline/subjects.yaml) — 학문별 책(2026-11-21)
+layer: basic            # 기초 정리본 — 임상 정리본의 roots 가 가리키는 기전 단위
+discipline: physiology
+system: renal
+textbook_check: pending
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25)

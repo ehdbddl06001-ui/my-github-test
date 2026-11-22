@@ -108,6 +108,7 @@ class Book:
     name: str
     units: list[Unit] = field(default_factory=list)
     pending: list[tuple[ll.State, dict]] = field(default_factory=list)   # 목표 없는 문항 오답 — PDF 에 싣지 않음(앱에 있음)
+    elsewhere: list[tuple[str, str]] = field(default_factory=list)       # 학문별 책: 다른 책에 실린 그 학문 단원 (제목, 책)
 
 
 def book_of(topic: str, cfg: dict) -> str:
@@ -168,6 +169,21 @@ def plan(concepts: dict, questions: dict, S: dict[str, ll.State], cfg: dict, sou
                 if st.get("status") in ("changed", "failed"):
                     u.flags.append(f"출처 개정 확인 필요 — {src.get('org')} {src.get('year')}: {st.get('note', '')}")
             books.setdefault(name, Book(name)).units.append(u)
+    # 기초의학 학문별 책(2026-11-21) — ① 전공 교과서와 대조하지 않은 기초 단원은 머리에 표시한다
+    # ② 임상 책에 실린 정리본이 학문 꼬리표(discipline)를 달고 있으면 그 학문 책의 목차 쪽에 제목만 적는다(본문은 한 책에만).
+    dmap = cfg.get("disciplines") or {}
+    for b in books.values():
+        for u in b.units:
+            c = u.concept or {}
+            if c.get("layer") == "basic" and c.get("textbook_check") != "checked":
+                u.flags.append("전공 교과서 미대조")
+    for cid, c in sorted(concepts.items()):
+        home = dmap.get(str(c.get("discipline") or ""))
+        at = book_of(c.get("topic"), cfg)
+        if home and home != at and home in books and at in books:
+            books[home].elsewhere.append((str(c.get("title")), at))
+    for b in books.values():
+        b.elsewhere.sort(key=lambda x: (x[1], x[0]))
     # 단원 순서 = 기본틀(해리슨 서술 순서). 배치되지 않은 단원은 맨 뒤에 제목순으로 남는다.
     slots = ol.index(ol.load()[0])
     for b in books.values():
@@ -227,9 +243,12 @@ def unit_fingerprint(u: Unit, questions: dict | None = None) -> dict:
             "stub": [] if u.concept else [(q, (questions or {}).get(q, {}).get("explanation")) for q in u.questions]}
 
 
-def volume_hash(title: str, units: list[Unit], pending: list, cfg: dict, questions: dict | None = None) -> str:
+def volume_hash(title: str, units: list[Unit], pending: list, cfg: dict, questions: dict | None = None,
+                elsewhere: list | None = None) -> str:
     payload = {"t": title, "tv": cfg.get("template_version"), "gl": et.digest(),
                "units": [(u.key, unit_fingerprint(u, questions)) for u in units]}
+    if elsewhere:                                   # 있을 때만 넣는다 — 다른 책들의 해시는 그대로다
+        payload["else"] = [list(x) for x in elsewhere]
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, default=str).encode()).hexdigest()[:20]
 
 
@@ -689,6 +708,8 @@ def book_html(title: str, units: list[Unit], cfg: dict, questions: dict, meta: d
          # 목차는 따로 한 쪽(두 단 목차) — 본문은 다음 쪽 첫머리부터(사용자 2026-09-27). 두 단 흐름 안에서는 쪽 나눔이 먹지 않아 밖에 둔다.
          f'<div class="tocpage"><div class="bookhead"><h1>{esc(title)}</h1><span class="bm">{esc(cfg["title"])} · 판 {meta["version"]} · {esc(meta["date"])}</span></div>'
          f'<nav class="toc"><ol>{toc}</ol></nav>'
+         + (f'<div class="legend"><b>다른 책에 실린 {esc(title)} 단원</b> — '
+            + esc(" · ".join(f"{t_}({b_})" for t_, b_ in meta["elsewhere"])) + "</div>" if meta.get("elsewhere") else "")
          + (f'<div class="legend"><b>이번 판의 내용 변경</b> — {esc(" · ".join(changes))}</div>' if changes else "")
          + '<div class="legend">[n 쪽·절] = 단원 끝 「근거」의 번호와 원문 위치 · † = 원문 본문과 대조하지 않은 근거</div></div>'
          + '<main class="cols">']
@@ -967,7 +988,7 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
         for title, units in volumes(b, cfg):
             if only and only not in (b.name, title):
                 continue
-            hsh = volume_hash(title, units, [], cfg, questions)
+            hsh = volume_hash(title, units, [], cfg, questions, b.elsewhere)
             prev = manifest["books"].get(title, {})
             fname = f"MedKOS_학습서_{slug(title)}.pdf"
             same = prev.get("hash") == hsh
@@ -975,7 +996,7 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
             if not force and same and ((out_dir / fname).exists() or uploaded):
                 run["skipped"].append(title)          # 변화 없음(최신본이 로컬 또는 드라이브에 있다)
                 continue
-            todo.append((title, [et.unit(u) for u in units], hsh, prev, fname))
+            todo.append((title, [et.unit(u) for u in units], hsh, prev, fname, b.elsewhere))
     if not todo:
         run["result"] = "skipped"
         run["finished"] = now_kst().isoformat(timespec="seconds")
@@ -985,13 +1006,13 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
         try:
-            for title, units, hsh, prev, fname in todo:
+            for title, units, hsh, prev, fname, elsewhere in todo:
                 try:
                     if fail_on and fail_on == title:
                         raise RuntimeError("시험용 강제 실패(--fail-on)")
                     # 내용이 같으면(업로드 재시도·새 러너) 판 번호를 올리지 않는다 — 되풀이해도 같은 결과
                     version = int(prev.get("version", 0)) + (0 if prev.get("hash") == hsh and prev.get("version") else 1)
-                    meta = {"version": version, "date": date}
+                    meta = {"version": version, "date": date, "elsewhere": elsewhere}
                     changes = prev.get("changes", []) if prev.get("hash") == hsh else _changes(prev, units)
                     footer = f"{title} · 판 {version} · {date}"
                     tmp = out_dir / (fname + ".building.pdf")

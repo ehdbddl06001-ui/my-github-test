@@ -349,6 +349,13 @@ id 는 `cn.<과>.<주제>.<학습목표>`(파일 이름 = id). 같은 질환이�
 label_basis(dataset_expert|published_figure)·reference·paper·doi·paper_cited_by·credit·license·url·asset` + 선택 `from_question·privacy_check·crop`) ·
 `figures_wanted`(요청 — `{source, shows, codes|diagnoses|genes|tissues}` 또는 PMC_OA `{query, caption_terms, modality}`, 등록 안 된 출처는 `note`) ·
 `figures_none`(그림이 필요 없는 이유) · `figures_rejected`(`{asset, reason}` — 수확이 다음 후보를 받는다).
+**기초 뿌리(2026-11-21)** — 임상 정리본: `roots`(그 판단 밑의 기초 정리본 id 목록 — 있어야 하고 `layer: basic` 이어야 한다) 또는
+`roots_none`(기초 기전이 없는 이유 한 줄). 둘을 함께 쓰지 않는다. 기초 정리본: `layer: basic`(없으면 clinical) ·
+`discipline`(physiology/pathology/pharmacology/biochemistry/genetics/microbiology/immunology/anatomy/histology/embryology —
+`books_config.yaml` 의 `disciplines`, topic 이 그 학문별 책으로 가야 한다) · `system`(장기계통 — `concepts.SYSTEMS`) ·
+`textbook_check`(checked = 전공 교과서 본문과 대조 / pending = 교과서는 있으나 아직 못 읽음 / unavailable = 등록된 교과서 없음 —
+checked 가 아니면 학습서에 「전공 교과서 미대조」). 임상 정리본도 `discipline` 꼬리표만은 달 수 있다(학문별 책 목차의
+「다른 책에 실린 단원」에 제목이 적힌다). 받치는 임상 정리본 목록은 저장하지 않고 `concepts.root_supports()` 로 계산한다. 규칙 `/gen-concept` 「[root]」.
 본문은 `## 정의` · `## 병태생리` · `## 기전에서 소견으로` · `## 감별` · `## 검사` · `## 치료` · `## 권고와 예외` ·
 `## (심화) …`. 본문 HTML 은 허용 태그만 남긴다(스크립트·속성·링크 제거 — 출처 링크는 `sources` 에서만).
 

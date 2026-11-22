@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {

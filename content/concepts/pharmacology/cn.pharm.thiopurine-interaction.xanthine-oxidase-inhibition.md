@@ -7,6 +7,7 @@ date: 2026-09-25
 updated: 2026-09-25
 version: 1
 outline: h372            # 기본틀 슬롯 — 해리슨 372장(통풍)의 요산 강하제 자리
+discipline: pharmacology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25)

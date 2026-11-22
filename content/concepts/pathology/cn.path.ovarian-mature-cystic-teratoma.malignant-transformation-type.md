@@ -7,6 +7,7 @@ date: 2026-10-03
 updated: 2026-10-03
 version: 2
 outline: gyn.oncology            # 산부인과 손 슬롯 「부인암 — 자궁경부·자궁내막·난소·융모성 질환」(해리슨 대조 대상 아님 — outline.py --harrison)
+discipline: pathology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문
