@@ -26683,10 +26683,10 @@ window.MEDKOS_CONCEPTS = {
    "cn.cardio.premature-ventricular-complex.ecg-recognition",
    "cn.cardio.palpitations.arrhythmia-evaluation"
   ],
-  "version": 1,
-  "updated": "2026-11-11",
+  "version": 2,
+  "updated": "2026-11-22",
   "reviewStatus": "unreviewed",
-  "hash": "def75fe8afb94f87",
+  "hash": "d6d994fab486620a",
   "summary": [
    "결론: P파 모양이 모두 같고 PP 간격만 0.12초 넘게 서서히 늘었다 줄었다 하면 동부정맥 — 정상 소견이다.",
    "시험 단서: 젊고 건강한 사람, 쉴 때·깊은 호흡 때 「맥이 고르지 않다」, 증상 없음, 검사 정상(respiratory sinus arrhythmia).",
@@ -26857,7 +26857,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13784812_figure1.png",
+    "kind": "ecg",
+    "at": "기전 — 호흡이 미주신경을 흔든다",
+    "shows": "동리듬의 동부정맥 — 같은 모양 P파가 모든 QRS 앞에 있고 PP 간격이 조금씩 달라진다",
+    "look": [
+     "아래 II 유도 리듬 띠의 박동 간격 차이",
+     "II 유도에서 QRS 마다 앞선 같은 모양의 양성 P파"
+    ],
+    "label": "「A twelve‐lead electrocardiogram (ECG) obtained during the patient's emergency department presentation, demonstrating sinus rhythm with sinus arrhythmia.」 — Dapsone‐Induced Methemoglobinemia After Accidental Dose Duplication in a Patient Receiving Long‐Term Therapy: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Dapsone‐Induced Methemoglobinemia After Accidental Dose Duplication in a Patient Receiving Long‐Term Therapy: A Case Report. Clinical Case Reports",
+    "doiUrl": "https://doi.org/10.1002/ccr3.73533",
+    "citedBy": null,
+    "credit": "Dapsone‐Induced Methemoglobinemia After Accidental Dose Duplication in a Patient Receiving Long‐Term Therapy: A Case Report. Clin Case Rep. 2026 Nov 19;14(11):e73533. doi: 10.1002/ccr3.73533 (CC BY) — FIGURE 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13784812/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "좁은 QRS 의 불규칙한 리듬 — 어디서 왔나",
   "geo": {
    "title": "좁은 QRS 의 불규칙한 리듬 — 어디서 왔나",
@@ -96548,10 +96570,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Infectious Disease"
   ],
-  "version": 1,
-  "updated": "2026-11-20",
+  "version": 3,
+  "updated": "2026-11-22",
   "reviewStatus": "unreviewed",
-  "hash": "288a17e1c9da2a8a",
+  "hash": "2cc2abdc087d9655",
   "summary": [
    "결론: pH >4.5+아민 냄새+단서세포는 세균질증, pH 정상+효모·가성균사는 칸디다, 움직이는 편모충은 트리코모나스.",
    "시험 단서: 생선 냄새 묽은 회백색 분비물(whiff test), 흰 덩어리 분비물+외음 가려움, 황록색 분비물·딸기 자궁경부.",
@@ -96744,7 +96766,50 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "variants": [],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13716771_figure5-0-365-340-701.jpg",
+    "kind": "photo",
+    "at": "가르는 소견 — pH·아민·도말",
+    "shows": "세균질증의 단서세포(clue cell) — 그람 염색에서 상피세포 표면을 작은 균이 덮는다",
+    "look": [
+     "가운데 큰 편평상피세포 가장자리를 덮은 점 같은 작은 균",
+     "균에 덮이지 않아 경계가 매끈한 주변 상피세포와 비교"
+    ],
+    "label": "「Grad-CAM visualizations for YOLOv26 and RT-DETR. Representative Gram-stained microscopic images illustrating GU (top) and BV (bottom; clue cells) are shown alongside the corresponding Grad-CAM saliency maps generated from YOLOv26 (C2PSA) and RT-DETR (HGBlock-9). In both models, the saliency maps predominantly highlighted regions corresponding to the ground-truth diagnostic features. GT, ground truth.」 — Interpretable detection-based image classification for differential diagnosis of vaginal discharge using smartphone-assisted microscopy",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Interpretable detection-based image classification for differential diagnosis of vaginal discharge using smartphone-assisted microscopy. Frontiers in Artificial Intelligence",
+    "doiUrl": "https://doi.org/10.3389/frai.2026.1985517",
+    "citedBy": null,
+    "credit": "Interpretable detection-based image classification for differential diagnosis of vaginal discharge using smartphone-assisted microscopy. Front Artif Intell. 2026 Oct 15;9:1985517. doi: 10.3389/frai.2026.1985517 (CC BY) — Figure 5",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13716771/",
+    "marked": ""
+   },
+   {
+    "id": "f2",
+    "src": "assets/figures/pmc-pmc10178083_figure4.jpg",
+    "kind": "photo",
+    "at": "가르는 소견 — pH·아민·도말",
+    "shows": "트리코모나스 질염의 생리식염수 도말(wet mount) — 편모가 있는 원충",
+    "look": [
+     "편평상피세포 주변의 백혈구 크기 서양배 모양 원충",
+     "원충에서 뻗은 가는 편모"
+    ],
+    "label": "「Wet mount of a patient with a Trichomonas vaginalis infection (phase contrast microscopy, 400-fold magnification, in 0.8% NaCl solution).」 — Sexually Transmitted Diseases—An Update and Overview of Current Research",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Sexually Transmitted Diseases—An Update and Overview of Current Research. Diagnostics",
+    "doiUrl": "https://doi.org/10.3390/diagnostics13091656",
+    "citedBy": null,
+    "credit": "Sexually Transmitted Diseases—An Update and Overview of Current Research. Diagnostics (Basel). 2023 May 8;13(9):1656. doi: 10.3390/diagnostics13091656 (CC BY) — Figure 4",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10178083/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "질 분비물 — pH 에서 도말, 치료와 파트너까지",
   "geo": {
    "title": "질 분비물 — pH 에서 도말, 치료와 파트너까지",

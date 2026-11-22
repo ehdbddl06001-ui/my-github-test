@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [cn.cardio.premature-ventricular-complex.ecg-recognition, cn.cardio.palpitations.arrhythmia-evaluation]
 date: 2026-11-11
-updated: 2026-11-11
-version: 1
+updated: 2026-11-22
+version: 2
 outline: h247
 confidence: medium
 review_status: unreviewed
@@ -117,14 +117,6 @@ variants:
     answer: "A"
     explanation: "Age, sex, and setting changed, but the deciding clues did not: one sinus P-wave shape, a constant PR, and a P-P interval that drifts smoothly by more than 120 ms without dropped P waves or QRS complexes. That is sinus arrhythmia, a normal finding in a fit adolescent, and an asymptomatic patient needs no further cardiac testing."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 동부정맥 — 같은 P파와 서서히 변하는 PP 간격
-  at: 기전 — 호흡이 미주신경을 흔든다
-  query: '"sinus arrhythmia" AND (ECG OR electrocardiogram) AND ("case report" OR respiratory)'
-  caption_terms:
-  - sinus arrhythmia
-  modality: ECG
 figures_rejected:
 - asset: PMC-PMC13420558_Figure1
   reason: 그림은 2:1 방실차단 + 심실위상성(ventriculophasic) 동부정맥·우각차단 — 전도 안 된 P파가 끼어 있어 목표(모든 P파가 전도되고 PP가 호흡에 따라 서서히 변하는 호흡성 동부정맥)와 다르고 방실차단과 혼동을 준다
@@ -132,6 +124,25 @@ figures_rejected:
   reason: 심전도가 아니라 호흡 빈도별 RSA 평균±SD 통계 그래프(임산부·비임산부 비교) — P파·PP 간격을 보여 주지 않는다
 - asset: PMC-PMC13244021_Figure1
   reason: 라벨이 동부정맥과 함께 우각차단·좌전섬유속차단 — 넓은 QRS 가 주된 소견이고, 657×411 저해상도라 P파 모양을 읽기 어려우며 심박수 63~69회/분이라 PP 간격 변화가 작다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13784812_figure1.png
+  kind: ecg
+  at: 기전 — 호흡이 미주신경을 흔든다
+  shows: 동리듬의 동부정맥 — 같은 모양 P파가 모든 QRS 앞에 있고 PP 간격이 조금씩 달라진다
+  look_for:
+  - 아래 II 유도 리듬 띠의 박동 간격 차이
+  - II 유도에서 QRS 마다 앞선 같은 모양의 양성 P파
+  label: '「A twelve‐lead electrocardiogram (ECG) obtained during the patient''s emergency department presentation, demonstrating sinus rhythm with sinus arrhythmia.」 — Dapsone‐Induced Methemoglobinemia After Accidental Dose Duplication in a Patient Receiving Long‐Term Therapy: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Dapsone‐Induced Methemoglobinemia After Accidental Dose Duplication in a Patient Receiving Long‐Term Therapy: A Case Report. Clinical Case Reports'
+  doi: 10.1002/ccr3.73533
+  credit: 'Dapsone‐Induced Methemoglobinemia After Accidental Dose Duplication in a Patient Receiving Long‐Term Therapy: A Case Report. Clin Case Rep. 2026 Nov 19;14(11):e73533. doi: 10.1002/ccr3.73533 (CC BY) — FIGURE 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13784812/
+  asset: PMC-PMC13784812_FIGURE1
+  privacy_check: 12유도 심전도 기록지만 — 얼굴·문신·이름·병원명·환자 번호 없음(머리글은 Comment·시각·Unconfirmed 뿐)
 ---
 
 ## 판단 — P파와 간격 변화로 읽는 순서
