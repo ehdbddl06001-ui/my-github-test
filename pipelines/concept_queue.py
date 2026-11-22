@@ -34,7 +34,10 @@
            풀(exam-builder)을 못 찾으면 assess 만 낸다.
   gap    — 오답과 무관하게 **기본틀(content/outline/subjects.yaml)에서 아직 비어 있는 자리**.
            오답 큐가 비었을 때 커리큘럼 순서대로 한 칸씩 채우라고 내놓는다(2026-09-21 추가).
-           이미 단원이 있는 책만 대상으로 하고, 그 책의 해리슨 서술 순서에서 앞쪽 빈 슬롯부터 준다.
+           이미 단원이 있는 책만 대상으로 하고, 책마다 「이미 쓴 단원 다음 자리」의 빈 슬롯 하나를 준다.
+           책 순서는 **정리본이 적은 책 먼저**(같으면 기본틀 순서) — 2026-11-23 사용자 선택. 그 전에는 많은 책이
+           먼저라 루틴이 하루 하나씩 같은 과만 채웠다(10월 류마티스 12개 · 11월 순환기 23개).
+           기초의학 학문별 책은 대상이 아니다(기초 정리본은 `root` 에서만 생긴다).
 우선순위 = 반복 오답·후속 확인 실패·표시(learning_log 의 priority)를 그대로 쓴다.
 
 오답의 원천은 둘이다(2026-09-23).
@@ -267,10 +270,18 @@ def _figures(concepts: dict, questions: dict, S: dict) -> list[dict]:
 
 
 def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
-    """기본틀에서 빈 슬롯 — 이미 단원이 있는 책만, 그 책의 순서대로 앞에서부터."""
+    """기본틀에서 빈 슬롯 — 이미 단원이 있는 책만, 책마다 하나(쓴 자리 다음). 정리본이 적은 책부터.
+
+    루틴은 06시 실행마다 맨 앞 [gap] 하나만 쓴다. 많은 책을 앞에 두면 그 책만 계속 늘어난다(되먹임) —
+    적은 책을 앞에 두면 하나 쓸 때마다 그 책이 뒤로 물러나 모든 과가 번갈아 채워진다.
+    정리본이 0개인 책은 넣지 않는다(오답이 이끌게 둔다 — 사용자 선택).
+    기초의학 학문별 책(books_config `disciplines` — 생리학 · 병리학 …)도 넣지 않는다: 기초 정리본은 틀린 문항의
+    `[root]` 에서만 생긴다(2026-11-21 사용자 결정 — 소급 · 빈칸 채우기 ✗). 적은 책 먼저로 바꾸면 이 책들이 맨 앞에 온다.
+    """
     import yaml
     books_cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8")) or {}
     bmap = dict(books_cfg.get("books") or {})
+    basic_books = set((books_cfg.get("disciplines") or {}).values())
     books, _ = ol.load()
     have: dict[str, int] = {}                       # 책 → 그 책에 쌓인 정리본 수
     for c in concepts.values():
@@ -280,8 +291,8 @@ def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
     filled = {str(c.get("outline") or "") for c in concepts.values()}
     out: list[dict] = []
     for book, slots in books.items():
-        if book not in have:
-            continue                                 # 아직 시작하지 않은 과는 오답이 이끌게 둔다
+        if book not in have or book in basic_books:
+            continue                                 # 아직 시작하지 않은 과 · 기초의학 학문별 책은 오답이 이끌게 둔다
         # 「이어서 읽기」 — 이미 쓴 단원 다음 자리부터 채운다. 앞에서부터 채우면 그 과에서
         # 이미 공부한 자리와 동떨어진 장(예: 신장내과 51장 간질성 방광염)이 먼저 나온다.
         last = max((sl.order for sl in slots if sl.id in filled), default=-1)
@@ -289,7 +300,8 @@ def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
         if nxt:
             out.append({"book": book, "slot": nxt.id, "title": nxt.title,
                         "source": nxt.source, "chapters": nxt.chapters, "have": have[book]})
-    out.sort(key=lambda g: (-g["have"], g["book"]))
+    order = {b: i for i, b in enumerate(books)}
+    out.sort(key=lambda g: (g["have"], order[g["book"]]))       # 적은 책 먼저 · 같으면 기본틀(subjects.yaml) 순서
     return out
 
 

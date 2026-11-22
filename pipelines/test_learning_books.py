@@ -1097,6 +1097,64 @@ class OutlineFrame(unittest.TestCase):
         neph = next(g for g in gaps if g["book"] == "신장내과")
         self.assertEqual(neph["slot"], "h54")                  # 앞(h51)이 아니라 쓴 자리 다음
 
+    def test_gap_queue_puts_the_thinnest_book_first(self):
+        # 2026-11-23 — 많은 책 먼저였을 때 루틴이 하루 하나씩 같은 과만 채웠다(10월 류마티스 12 · 11월 순환기 23).
+        base, _ = C.load_concepts()
+        cardio = [copy.deepcopy(c) for c in base.values() if c.get("topic") == "Cardiology"][:3]
+        neph = copy.deepcopy(base["cn.neph.hyperkalemia.first-step"])
+        concepts = {c["id"]: c for c in cardio + [neph]}
+        gaps = cq._gaps(concepts, {}, {})
+        self.assertEqual([(g["book"], g["have"]) for g in gaps], [("신장내과", 1), ("순환기내과", 3)])
+        # 하나 채우면 그 책이 뒤로 물러난다 — 같은 수가 되면 기본틀 순서(순환기내과가 신장내과보다 앞)
+        more = [dict(copy.deepcopy(neph), id=f"cn.neph.x{i}", outline="") for i in range(2)]
+        gaps = cq._gaps({**concepts, **{c["id"]: c for c in more}}, {}, {})
+        self.assertEqual([g["book"] for g in gaps], ["순환기내과", "신장내과"])
+        real = cq._gaps(base, {}, {})
+        self.assertEqual([g["have"] for g in real], sorted(g["have"] for g in real))
+        self.assertTrue(all(g["have"] > 0 for g in real))                        # 0개인 책은 오답이 이끈다
+        # 기초의학 학문별 책은 [gap] 대상이 아니다 — 기초 정리본은 [root] 에서만(2026-11-21 사용자 결정)
+        import yaml
+        cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))
+        basic = dict(next(c for c in base.values() if C.is_basic(c)))
+        self.assertIn(cfg["books"].get(basic["topic"]), set(cfg["disciplines"].values()))
+        self.assertFalse({g["book"] for g in real} & set(cfg["disciplines"].values()))
+        self.assertEqual(cq._gaps({basic["id"]: basic}, {}, {}), [])
+
+    def test_quiz_deck_rotates_subjects_least_solved_first(self):
+        # 2026-11-23 — 번들이 id 내림차순(= 과목 영어 이름 역순)이라 섞기를 끄면 늘 류마티스부터 나왔다.
+        app = (ROOT / "docs" / "app.js").read_text(encoding="utf-8")
+        self.assertIn('const BALANCED_MODES = ["latest", "unsolved"];', app)     # 오늘 다시 풀 것 · 오답노트는 그대로
+        self.assertIn('if (!$("shuffle").checked) return orderedList();', app)
+        a, b = app.index("/* <subject-balance>"), app.index("/* </subject-balance> */")
+        block = app[a:b]
+        self.assertNotIn("$(", block)                                            # DOM 없이 도는 덩이
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node 없음")
+        subs = ["Cardiology", "Neurology", "Pulmonology", "Rheumatology"]
+        qs = [{"id": f"q{d}{s[0]}{i}", "subject": s, "created": d}
+              for d in ("2026-11-22", "2026-11-23") for s in reversed(subs) for i in (1, 2)]
+        days = [f"2026-11-{d}" for d in range(23, 29)]
+        script = (block + ";const qs=" + json.dumps(qs) + ";"
+                  "const run=(c,day)=>balanceBySubject(qs,c,day).map(q=>q.created+'|'+q.subject);"
+                  "const c={Rheumatology:14,Pulmonology:3};"
+                  "console.log(JSON.stringify({a:run(c,'2026-11-23'),b:run(c,'2026-11-23'),"
+                  "days:" + json.dumps(days) + ".map(d=>run({},d)[0]),"
+                  "cnt:solvedBySubject(qs.concat(qs),new Set(['q2026-11-23C1','q2026-11-22C2','zz']))}));")
+        r = subprocess.run([node, "-e", script], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(r.returncode, 0, r.stderr)
+        out = json.loads(r.stdout)
+        a = out["a"]
+        self.assertEqual(a, out["b"])                                            # 같은 날 · 같은 기록이면 같은 순서
+        self.assertEqual(len(a), len(qs))
+        self.assertTrue(all(x.startswith("2026-11-23|") for x in a[:8]))         # 최신 날짜 묶음 먼저
+        first = [x.split("|")[1] for x in a[:4]]
+        self.assertEqual(sorted(first), sorted(subs))                            # 한 바퀴에 과목마다 한 문항
+        self.assertEqual(first[2:], ["Pulmonology", "Rheumatology"])             # 많이 푼 과목이 뒤
+        self.assertEqual([x.split("|")[1] for x in a[4:8]], first)               # 둘째 바퀴도 같은 순서 — 한 과가 붙지 않는다
+        self.assertGreater(len(set(out["days"])), 1)                             # 푼 수가 같으면 날마다 시작 과목이 다르다
+        self.assertEqual(out["cnt"], {"Cardiology": 2})                          # 겹친 문항은 한 번만
+
 
 class ConceptFigures(unittest.TestCase):
     """정리본 그림(2026-09-27) — 확실한 라벨만 · 라벨은 풀 기록에서 · 공개 저장소에 실을 수 있는 라이선스."""
