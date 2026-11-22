@@ -737,3 +737,26 @@ a.ink-open-btn{display:inline-block; text-decoration:none; padding:7px 12px; bor
 .ink-cn .dia-text{display:none !important}
 .prel{margin:6px 0 2px; font-size:.82rem; color:var(--muted)}
 .prel .pill{text-decoration:none; margin:2px 2px 2px 0; display:inline-block}
+/* 필기 엔진 2(2026-11-23 vNext Phase 2) — 도구 도크 · 형광펜 층 · 코넬 여백 */
+.ink-dock{display:inline-flex; align-items:center; gap:2px; padding:2px; border:1px solid var(--line); border-radius:11px; background:var(--surface)}
+.ink-dock button{border-color:transparent; background:transparent; border-radius:8px}
+.ink-dock button.on{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
+.ink-wq{display:inline-flex; gap:4px; align-items:center}
+.ink-wq .ink-wd{width:38px; height:30px}
+.ink-grid{display:grid !important; grid-template-columns:repeat(8, 30px); gap:8px}
+.ink-custom{display:inline-flex; align-items:center; gap:6px; grid-column:span 3; font-size:.75rem; color:var(--muted)}
+.ink-custom input{width:38px; height:30px; padding:0; border:1px solid var(--line); border-radius:8px; background:var(--card)}
+.ink-pal input[type=range]{flex:1 1 150px; min-width:120px; accent-color:var(--accent)}
+.ink-val{min-width:3.2em; font-size:.8rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.ink-menu{left:auto; right:10px}
+/* 형광펜 조각 층 — 펜 조각 아래에서 종이와 곱하기로 섞인다: 진하게 덧칠해도 아래 검은 글자는 그대로 검다 */
+.ink-hl{position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; mix-blend-mode:multiply}
+.ink-live.mul{mix-blend-mode:multiply}
+.ink-ov.eng1 .ink-hl{display:none}
+/* 코넬 여백 — 정리본 오른쪽 줄노트 칸(352 = 종이 820 과 합쳐 전체의 30 %). 절의 자리 · 폭은 그대로다 */
+.ink-content.margin{padding-right:352px}
+.ink-margin{position:absolute !important; top:0; right:0; bottom:0; width:352px; padding:0 !important; border-top:0 !important;
+  border-left:1px solid var(--border-strong);
+  background-image:repeating-linear-gradient(to bottom, transparent 0 35px, var(--border-soft) 35px 36px); background-position:0 12px}
+.ink-margin .ink-ph{left:14px}
+@media (max-width:600px){ .ink-grid{grid-template-columns:repeat(6, 26px)} .ink-dock button{padding:5px 6px} }
