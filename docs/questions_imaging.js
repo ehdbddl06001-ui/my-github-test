@@ -2,6 +2,1555 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0760",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 심장이 한 번씩 건너뛰는 느낌의 고령 여성",
+  "type": "심전도 판독 — 심장이 한 번씩 건너뛰는 느낌의 고령 여성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-22",
+  "vignette": "A 78-year-old woman comes to the office because she has felt occasional skipped heartbeats for 3 weeks. The sensation lasts a second and is followed by a forceful beat. She has had no chest pain, dyspnea, dizziness, or syncope. She has hypertension treated with losartan. Pulse is 74/min with an occasional pause, and blood pressure is 136/80 mm Hg. Cardiac examination shows no murmurs. Serum potassium concentration is 4.1 mEq/L. Echocardiography 1 year ago showed a normal ejection fraction. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely cause of the irregularity on the rhythm strip?",
+  "options": [
+   "Intermittent ventricular preexcitation",
+   "Sinus arrhythmia",
+   "Premature ventricular complex",
+   "Premature atrial complex with aberrant conduction",
+   "Mobitz type II second-degree atrioventricular block"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The lead II rhythm strip shows regular sinus beats at about 75/min, interrupted by one <b>early, wide, bizarre QRS complex</b> (also seen in V4–V6) with a T wave pointing opposite to the QRS. <b>No premature P wave precedes it</b>, and the interval from the beat before to the beat after equals two normal RR intervals — a <b>full compensatory pause</b>, because the sinus node was not reset. These features identify a premature ventricular complex.\n- 원리: <b>Why the QRS is wide and bizarre</b>: A premature ventricular complex starts in ventricular muscle outside the His-Purkinje system. The impulse spreads cell to cell through working myocardium, which conducts far more slowly than Purkinje fibers, so the QRS is wide (often >120 ms) and its shape differs from the sinus beats. Repolarization follows the abnormal depolarization path, so the T wave points the opposite way.<br> <b>Why the pause is fully compensatory</b>: The ectopic ventricular impulse usually does not conduct back into the atria fast enough to reset the sinus node. The sinus node keeps firing on schedule; the sinus P wave that falls during the ventricular refractory period is blocked, and the next sinus beat conducts on time. The cycle containing the PVC therefore equals exactly two sinus cycles. A premature atrial complex enters and resets the sinus node, so the pause is usually less than compensatory.<br> <b>Why the next beat feels forceful</b>: The long pause allows extra ventricular filling, and by the Frank-Starling mechanism the post-pause beat has a larger stroke volume — the \"thump\" patients describe.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">PVC (answer)</th><th>PAC with aberrancy (closest distractor)</th></tr></thead><tbody> <tr><td>Premature P wave</td><td><b>Absent</b></td><td><b>Present</b>, often hidden in the preceding T wave</td></tr> <tr><td>QRS shape</td><td>Wide, bizarre, unlike any bundle branch block</td><td>Usually a typical RBBB or LBBB pattern</td></tr> <tr><td>Following pause</td><td><b>Fully compensatory</b> (2 × RR)</td><td>Usually less than compensatory (sinus node reset)</td></tr> <tr><td>Initial QRS vector</td><td>Different from sinus beats</td><td>Often same as sinus beats</td></tr> </tbody></table> Look first at the T wave before the early beat for a hidden P wave, then measure the pause.\n- 오답 이유:\n  - (A) Intermittent preexcitation would be correct if a short PR and a delta wave appeared on some sinus beats without any change in timing.\n  - (B) Sinus arrhythmia would be correct if the RR intervals varied gradually with breathing while every QRS stayed narrow and was preceded by a sinus P wave.\n  - (D) A PAC with aberrant conduction would be correct if a premature P wave deformed the preceding T wave, the wide beat had a typical bundle branch block shape, and the pause were less than compensatory.\n  - (E) Mobitz type II block would be correct if a sinus P wave appeared on time but was not followed by a QRS, producing a pause without any early beat.\n- 함정: Calling any wide early beat a PAC with aberrancy without checking for a premature P wave and measuring the pause, or the reverse.\n- 학습목표: Identify a premature, wide, bizarre QRS complex without a preceding premature P wave and with a full compensatory pause as a premature ventricular complex, and distinguish it from a premature atrial complex with aberrant conduction\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 219 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The lead II rhythm strip shows regular sinus beats at about 75/min, interrupted by one <b>early, wide, bizarre QRS complex</b> (also seen in V4–V6) with a T wave pointing opposite to the QRS. <b>No premature P wave precedes it</b>, and the interval from the beat before to the beat after equals two normal RR intervals — a <b>full compensatory pause</b>, because the sinus node was not reset. These features identify a premature ventricular complex."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the QRS is wide and bizarre</b>: A premature ventricular complex starts in ventricular muscle outside the His-Purkinje system. The impulse spreads cell to cell through working myocardium, which conducts far more slowly than Purkinje fibers, so the QRS is wide (often >120 ms) and its shape differs from the sinus beats. Repolarization follows the abnormal depolarization path, so the T wave points the opposite way.<br> <b>Why the pause is fully compensatory</b>: The ectopic ventricular impulse usually does not conduct back into the atria fast enough to reset the sinus node. The sinus node keeps firing on schedule; the sinus P wave that falls during the ventricular refractory period is blocked, and the next sinus beat conducts on time. The cycle containing the PVC therefore equals exactly two sinus cycles. A premature atrial complex enters and resets the sinus node, so the pause is usually less than compensatory.<br> <b>Why the next beat feels forceful</b>: The long pause allows extra ventricular filling, and by the Frank-Starling mechanism the post-pause beat has a larger stroke volume — the \"thump\" patients describe."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">PVC (answer)</th><th>PAC with aberrancy (closest distractor)</th></tr></thead><tbody> <tr><td>Premature P wave</td><td><b>Absent</b></td><td><b>Present</b>, often hidden in the preceding T wave</td></tr> <tr><td>QRS shape</td><td>Wide, bizarre, unlike any bundle branch block</td><td>Usually a typical RBBB or LBBB pattern</td></tr> <tr><td>Following pause</td><td><b>Fully compensatory</b> (2 × RR)</td><td>Usually less than compensatory (sinus node reset)</td></tr> <tr><td>Initial QRS vector</td><td>Different from sinus beats</td><td>Often same as sinus beats</td></tr> </tbody></table> Look first at the T wave before the early beat for a hidden P wave, then measure the pause."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intermittent preexcitation would be correct if a short PR and a delta wave appeared on some sinus beats without any change in timing.\n(B) Sinus arrhythmia would be correct if the RR intervals varied gradually with breathing while every QRS stayed narrow and was preceded by a sinus P wave.\n(D) A PAC with aberrant conduction would be correct if a premature P wave deformed the preceding T wave, the wide beat had a typical bundle branch block shape, and the pause were less than compensatory.\n(E) Mobitz type II block would be correct if a sinus P wave appeared on time but was not followed by a QRS, producing a pause without any early beat."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any wide early beat a PAC with aberrancy without checking for a premature P wave and measuring the pause, or the reverse."
+   },
+   {
+    "k": "학습목표",
+    "v": "Identify a premature, wide, bizarre QRS complex without a preceding premature P wave and with a full compensatory pause as a premature ventricular complex, and distinguish it from a premature atrial complex with aberrant conduction"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 260: Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 219 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "조기 P파 없이 일찍 나온 넓고 기괴한 QRS 와 완전 보상 휴지는 심실 기외수축이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "넓은 조기 박동 앞에 조기 P파가 없고 그 뒤의 휴지가 완전 보상성이다",
+   "steps": 3,
+   "chain": [
+    "영상: 규칙적인 동리듬 약 75회/분 중 일찍 나온 넓고 기괴한 QRS 1개, T파는 반대 방향",
+    "영상: 그 앞 T파에 숨은 조기 P파 없음 → 심방 기원 가능성 낮음",
+    "영상: 앞 박동부터 뒤 박동까지 = 동주기 2배(완전 보상 휴지) → 심실 기외수축"
+   ],
+   "key": [
+    {
+     "item": "영상: 일찍 나온 넓고 기괴한 QRS 와 반대 방향 T파",
+     "why": "심실 기원",
+     "also": []
+    },
+    {
+     "item": "영상: 완전 보상 휴지",
+     "why": "동결절이 초기화되지 않음",
+     "also": []
+    },
+    {
+     "item": "followed by a forceful beat",
+     "why": "휴지 뒤 박출량 증가 — 기외수축의 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 조기 P파 없음",
+     "why": "심방 기외수축(변행전도) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Echocardiography 1 year ago showed a normal ejection fraction",
+     "why": "구조적 심질환 없음 — 예후·처치에 쓰임",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum potassium concentration is 4.1 mEq/L",
+     "why": "전해질 원인 배제 — 판독과는 별개",
+     "also": []
+    }
+   ],
+   "summary": "동리듬 중 조기 P파 없이 일찍 나온 넓고 기괴한 QRS 가 있고 뒤에 완전 보상 휴지가 온다. 심실 기외수축이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "넓은 박동 앞 T파에 조기 P파가 겹쳐 있고 QRS 가 전형적 우각차단 모양이며 휴지가 덜 보상적이었다면 변행전도 심방 기외수축"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0760.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+   "asset_id": "PTBXL-00219",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 219"
+  },
+  "run_id": "20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0759",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 쉴 때 가슴 조임이 반복된 고령 남성",
+  "type": "심전도 처치 — 쉴 때 가슴 조임이 반복된 고령 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-22",
+  "vignette": "76세 남자가 이틀 전부터 쉬고 있을 때 가슴을 조이는 통증이 20분쯤 이어지다 멎기를 세 번 겪어 응급실에 왔다. 지금은 통증이 없다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 66회/분, 호흡 16회/분, 산소포화도 97% 이다. 폐 청진은 정상이고 심잡음은 없다. 고감도 트로포닌 I 는 3시간 간격의 두 번 모두 기준치 상한의 약 4배로 올라 있었다. 크레아티닌은 1.0 mg/dL 이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "아스피린만 처방하고 다음 날 외래 진료",
+   "항혈소판제·항응고제 투여 후 24시간 안 관상동맥조영술",
+   "즉시 혈전용해제 정맥 투여",
+   "2시간 안의 응급 관상동맥조영술",
+   "운동부하 심전도 검사 후 외래 추적"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 심전도는 약 65회/분의 동리듬이고 <b>ST 상승은 어느 유도에도 없다</b>. <b>I·aVL·V5·V6 에서 T파가 편평해지고 ST 가 조금 내려가</b> 측벽 허혈성 변화가 있다. 안정 시 흉통이 반복되고 트로포닌이 올랐으므로 <b>비ST분절상승 심근경색</b>이다. 지금 통증이 없고 혈역학·리듬이 안정되어 초고위험군(2시간 안)은 아니지만, 트로포닌 상승은 고위험이므로 아스피린·P2Y12 억제제·헤파린을 시작하고 24시간 안에 관상동맥조영술을 한다.\n- 원리: <b>왜 ST 상승 여부로 갈리는가</b>: ST 상승은 관상동맥이 완전히 막혀 심근 전층이 허혈에 빠졌다는 표지다. 이때는 막힌 혈관을 몇 분이라도 빨리 여는 것이 목표라 혈전용해나 즉시 중재술을 한다. 비ST상승 급성관상동맥증후군은 대개 혈전이 혈관을 부분적으로 막아 심내막하만 허혈이 되므로 ST 하강·T파 변화로 나타나고, 혈전용해제는 이득이 없고 출혈만 늘린다.<br> <b>왜 항혈소판·항응고가 먼저인가</b>: 파열된 죽상판 위의 혈전은 혈소판이 중심이고 그 위에 피브린이 쌓인다. 아스피린과 P2Y12 억제제로 혈소판을, 헤파린으로 트롬빈을 막아 혈전이 자라 완전 폐색으로 가는 것을 막는다.<br> <b>왜 24시간인가</b>: 트로포닌 상승·동적 ST 변화 같은 고위험 소견이 있으면 조기(24시간 안) 침습적 전략이 재발 허혈·사망을 줄인다. 통증이 계속되거나, 혈역학이 불안정하거나, 심실성 부정맥·급성 심부전이 있는 초고위험군만 2시간 안에 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">NSTEMI — 항혈전 + 24시간 안 조영술(정답)</th><th>STEMI — 즉시 재관류(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심전도</td><td><b>ST 하강·T파 편평/역위</b>, ST 상승 없음</td><td><b>연속 두 유도 ST 상승</b> 또는 새 좌각차단</td></tr> <tr><td>병태</td><td>부분 폐색 · 심내막하 허혈</td><td>완전 폐색 · 전층 허혈</td></tr> <tr><td>혈전용해제</td><td>이득 없음, 출혈 증가</td><td>중재술을 120분 안에 못 하면 사용</td></tr> <tr><td>조영술 시점</td><td>고위험 24시간 · 초고위험 2시간</td><td>가능한 한 즉시</td></tr> </tbody></table> 같은 흉통·트로포닌 상승이라도 ST 가 올라가 있는지가 치료의 시계를 정한다.\n- 오답 이유:\n  - ① 아스피린만 쓰고 귀가는 급성관상동맥증후군이 배제된 안정 협심증이라면 고려할 수 있으나 트로포닌이 오른 이 환자에게는 위험하다.\n  - ③ 즉시 혈전용해제는 연속된 두 유도에서 ST 가 상승했는데 120분 안에 중재술을 할 수 없는 STEMI 라면 정답이 된다.\n  - ④ 2시간 안 응급 조영술은 통증이 계속되거나 저혈압·심실성 부정맥·급성 심부전이 있는 초고위험 비ST상승 환자라면 정답이 된다.\n  - ⑤ 운동부하 검사 후 외래 추적은 트로포닌이 반복 정상이고 심전도 변화도 없는 저위험 흉통이라면 정답에 가깝다.\n- 함정: 허혈성 심전도 변화와 트로포닌 상승만 보고 ST 상승이 없는데도 혈전용해제를 고르는 것.\n- 학습목표: 안정 시 흉통이 반복되고 트로포닌이 오른 고령 환자의 심전도에서 ST 상승 없이 측벽 ST-T 변화만 있으면 비ST분절상승 심근경색으로 보고 항혈전치료와 24시간 안의 관상동맥조영술을 택한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 672 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도는 약 65회/분의 동리듬이고 <b>ST 상승은 어느 유도에도 없다</b>. <b>I·aVL·V5·V6 에서 T파가 편평해지고 ST 가 조금 내려가</b> 측벽 허혈성 변화가 있다. 안정 시 흉통이 반복되고 트로포닌이 올랐으므로 <b>비ST분절상승 심근경색</b>이다. 지금 통증이 없고 혈역학·리듬이 안정되어 초고위험군(2시간 안)은 아니지만, 트로포닌 상승은 고위험이므로 아스피린·P2Y12 억제제·헤파린을 시작하고 24시간 안에 관상동맥조영술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 ST 상승 여부로 갈리는가</b>: ST 상승은 관상동맥이 완전히 막혀 심근 전층이 허혈에 빠졌다는 표지다. 이때는 막힌 혈관을 몇 분이라도 빨리 여는 것이 목표라 혈전용해나 즉시 중재술을 한다. 비ST상승 급성관상동맥증후군은 대개 혈전이 혈관을 부분적으로 막아 심내막하만 허혈이 되므로 ST 하강·T파 변화로 나타나고, 혈전용해제는 이득이 없고 출혈만 늘린다.<br> <b>왜 항혈소판·항응고가 먼저인가</b>: 파열된 죽상판 위의 혈전은 혈소판이 중심이고 그 위에 피브린이 쌓인다. 아스피린과 P2Y12 억제제로 혈소판을, 헤파린으로 트롬빈을 막아 혈전이 자라 완전 폐색으로 가는 것을 막는다.<br> <b>왜 24시간인가</b>: 트로포닌 상승·동적 ST 변화 같은 고위험 소견이 있으면 조기(24시간 안) 침습적 전략이 재발 허혈·사망을 줄인다. 통증이 계속되거나, 혈역학이 불안정하거나, 심실성 부정맥·급성 심부전이 있는 초고위험군만 2시간 안에 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">NSTEMI — 항혈전 + 24시간 안 조영술(정답)</th><th>STEMI — 즉시 재관류(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>심전도</td><td><b>ST 하강·T파 편평/역위</b>, ST 상승 없음</td><td><b>연속 두 유도 ST 상승</b> 또는 새 좌각차단</td></tr> <tr><td>병태</td><td>부분 폐색 · 심내막하 허혈</td><td>완전 폐색 · 전층 허혈</td></tr> <tr><td>혈전용해제</td><td>이득 없음, 출혈 증가</td><td>중재술을 120분 안에 못 하면 사용</td></tr> <tr><td>조영술 시점</td><td>고위험 24시간 · 초고위험 2시간</td><td>가능한 한 즉시</td></tr> </tbody></table> 같은 흉통·트로포닌 상승이라도 ST 가 올라가 있는지가 치료의 시계를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아스피린만 쓰고 귀가는 급성관상동맥증후군이 배제된 안정 협심증이라면 고려할 수 있으나 트로포닌이 오른 이 환자에게는 위험하다.\n③ 즉시 혈전용해제는 연속된 두 유도에서 ST 가 상승했는데 120분 안에 중재술을 할 수 없는 STEMI 라면 정답이 된다.\n④ 2시간 안 응급 조영술은 통증이 계속되거나 저혈압·심실성 부정맥·급성 심부전이 있는 초고위험 비ST상승 환자라면 정답이 된다.\n⑤ 운동부하 검사 후 외래 추적은 트로포닌이 반복 정상이고 심전도 변화도 없는 저위험 흉통이라면 정답에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "허혈성 심전도 변화와 트로포닌 상승만 보고 ST 상승이 없는데도 혈전용해제를 고르는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "안정 시 흉통이 반복되고 트로포닌이 오른 고령 환자의 심전도에서 ST 상승 없이 측벽 ST-T 변화만 있으면 비ST분절상승 심근경색으로 보고 항혈전치료와 24시간 안의 관상동맥조영술을 택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 672 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "ST 상승 없이 측벽 ST-T 변화와 트로포닌 상승이 있는 안정된 환자는 NSTEMI 로 항혈전치료 후 24시간 안에 관상동맥조영술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "어느 유도에도 ST 상승이 없다 — 혈전용해제의 적응이 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: I·aVL·V5·V6 T파 편평·경미한 ST 하강, ST 상승 없음 → 측벽 허혈성 ST-T 변화",
+    "안정 시 흉통 반복 + 트로포닌 I 기준치의 약 4배 → 비ST분절상승 심근경색",
+    "지금 통증 없음 + 혈역학 안정 + 트로포닌 상승(고위험) → 항혈전치료 후 24시간 안 관상동맥조영술"
+   ],
+   "key": [
+    {
+     "item": "영상: I·aVL·V5·V6 의 T파 편평과 경미한 ST 하강",
+     "why": "측벽 허혈",
+     "also": []
+    },
+    {
+     "item": "고감도 트로포닌 I 는 3시간 간격의 두 번 모두 기준치 상한의 약 4배",
+     "why": "심근경색 — 고위험",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: ST 상승 없음",
+     "why": "STEMI 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "지금은 통증이 없다",
+     "why": "초고위험(2시간) 기준에 해당하지 않음",
+     "also": []
+    },
+    {
+     "item": "혈압 138/82 mmHg",
+     "why": "혈역학 안정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌은 1.0 mg/dL",
+     "why": "조영제 사용에 문제 없음",
+     "also": []
+    }
+   ],
+   "summary": "ST 상승 없이 측벽 ST-T 변화와 트로포닌 상승이 있는 NSTEMI 이고 지금은 안정적이다. 항혈소판제·항응고제를 시작하고 24시간 안에 관상동맥조영술을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "흉통이 계속되고 혈압이 85/50 mmHg 로 떨어졌다면 2시간 안의 응급 관상동맥조영술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0759.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+   "asset_id": "PTBXL-00672",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 672"
+  },
+  "run_id": "20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0758",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 가끔 심장이 빨리 뛰었던 젊은 남성의 검진 심전도",
+  "type": "심전도 판독 — 가끔 심장이 빨리 뛰었던 젊은 남성의 검진 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-22",
+  "vignette": "34세 남자가 회사 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 지난 몇 년 동안 1년에 한두 번 갑자기 심장이 빨리 뛰다가 몇 분 만에 저절로 멎은 적이 있다. 실신이나 가슴 통증은 없었고 먹는 약은 없다. 혈압 122/76 mmHg, 맥박 66회/분으로 규칙적이고 심잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "조기흥분(WPW 양상)",
+   "1도 방실차단",
+   "완전 우각차단",
+   "오래된 하벽 심근경색",
+   "좌심실 비대"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 약 65회/분의 동리듬이다. P파 끝과 QRS 사이가 거의 없어 <b>PR 이 0.12초보다 짧고</b>, QRS 가 <b>완만하게 비스듬히 시작(델타파)</b>해 폭이 넓어졌다. V1~V6 모두 R 이 크고, III·aVF 에서는 델타파가 음성이라 Q파처럼 보인다. 그 뒤의 ST-T 는 QRS 와 반대 방향인 이차성 변화다 — 부전도로를 통한 조기흥분(WPW 양상)이며, 반복된 빈맥 발작이 있으므로 WPW 증후군에 해당한다.\n- 원리: <b>왜 PR 이 짧아지는가</b>: 정상에서는 심방의 흥분이 방실결절에서 약 0.1초 지체된 뒤 심실로 내려간다. 부전도로(Kent 다발)는 이 지연 없이 심방과 심실을 직접 잇기 때문에 심실 일부가 일찍 흥분하기 시작해 PR 이 짧아진다.<br> <b>왜 델타파와 넓은 QRS 가 생기는가</b>: 부전도로로 먼저 들어간 흥분은 특수 전도계가 아닌 일반 심근을 따라 천천히 퍼지므로 QRS 시작이 완만하게 기운다(델타파). 곧이어 방실결절을 거친 흥분이 히스-푸르키니에계로 나머지 심실을 빠르게 흥분시켜 두 흥분이 합쳐진 융합파가 된다. 탈분극 순서가 바뀌었으니 재분극도 바뀌어 ST-T 가 QRS 와 반대 방향이 된다.<br> <b>왜 하벽 Q파처럼 보이는가</b>: 델타파의 방향은 부전도로 위치에 따라 정해진다. 흥분이 아래쪽에서 위로 퍼지면 III·aVF 에서 델타파가 음성이 되어 경색의 Q파를 흉내 낸다 — 가성 경색 양상이다. V1 의 큰 R 은 좌측 부전도로를 시사한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">WPW 양상 — 정답</th><th>오래된 하벽 경색 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>PR</td><td><b>&lt; 0.12초</b></td><td>정상(0.12~0.20초)</td></tr> <tr><td>QRS 시작</td><td><b>완만한 델타파</b>, 넓은 QRS</td><td>날카로운 시작, 좁은 QRS</td></tr> <tr><td>III·aVF 의 음성 파</td><td>음성 델타파 — 거의 모든 유도에서 QRS 시작이 기움</td><td>그 유도에만 있는 폭 0.04초 이상의 진짜 Q파</td></tr> <tr><td>병력</td><td>갑자기 시작해 멎는 빈맥 발작</td><td>흉통·경색 병력</td></tr> </tbody></table> Q파처럼 보이는 파가 있으면 먼저 PR 길이와 다른 유도의 QRS 시작을 확인한다.\n- 오답 이유:\n  - ② 1도 방실차단은 모든 P파가 전도되지만 PR 이 0.20초(큰 칸 하나)를 넘어 길어졌다면 정답이 된다 — 이 기록은 오히려 짧다.\n  - ③ 완전 우각차단은 QRS 가 0.12초 이상이고 V1 에서 rsR' 와 I·V6 에서 넓은 S파가 있으면서 PR 은 정상이라면 정답이 된다.\n  - ④ 오래된 하벽 경색은 PR 이 정상이고 QRS 시작이 날카로우며 III·aVF 에만 폭 넓은 Q파가 있다면 정답이 된다.\n  - ⑤ 좌심실 비대는 PR 과 QRS 시작이 정상이고 흉부 유도의 큰 전압에 strain 형 ST-T 가 동반됐다면 정답이 된다.\n- 함정: III·aVF 의 음성 델타파를 경색의 Q파로 읽어 짧은 PR 과 델타파를 놓치는 것.\n- 학습목표: 짧은 PR 과 델타파로 넓어진 QRS 를 조기흥분(WPW 양상)으로 판독하고, 하벽 유도의 음성 델타파를 오래된 하벽 경색의 Q파로 오인하지 않는다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5303 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 약 65회/분의 동리듬이다. P파 끝과 QRS 사이가 거의 없어 <b>PR 이 0.12초보다 짧고</b>, QRS 가 <b>완만하게 비스듬히 시작(델타파)</b>해 폭이 넓어졌다. V1~V6 모두 R 이 크고, III·aVF 에서는 델타파가 음성이라 Q파처럼 보인다. 그 뒤의 ST-T 는 QRS 와 반대 방향인 이차성 변화다 — 부전도로를 통한 조기흥분(WPW 양상)이며, 반복된 빈맥 발작이 있으므로 WPW 증후군에 해당한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 PR 이 짧아지는가</b>: 정상에서는 심방의 흥분이 방실결절에서 약 0.1초 지체된 뒤 심실로 내려간다. 부전도로(Kent 다발)는 이 지연 없이 심방과 심실을 직접 잇기 때문에 심실 일부가 일찍 흥분하기 시작해 PR 이 짧아진다.<br> <b>왜 델타파와 넓은 QRS 가 생기는가</b>: 부전도로로 먼저 들어간 흥분은 특수 전도계가 아닌 일반 심근을 따라 천천히 퍼지므로 QRS 시작이 완만하게 기운다(델타파). 곧이어 방실결절을 거친 흥분이 히스-푸르키니에계로 나머지 심실을 빠르게 흥분시켜 두 흥분이 합쳐진 융합파가 된다. 탈분극 순서가 바뀌었으니 재분극도 바뀌어 ST-T 가 QRS 와 반대 방향이 된다.<br> <b>왜 하벽 Q파처럼 보이는가</b>: 델타파의 방향은 부전도로 위치에 따라 정해진다. 흥분이 아래쪽에서 위로 퍼지면 III·aVF 에서 델타파가 음성이 되어 경색의 Q파를 흉내 낸다 — 가성 경색 양상이다. V1 의 큰 R 은 좌측 부전도로를 시사한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">WPW 양상 — 정답</th><th>오래된 하벽 경색 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>PR</td><td><b>&lt; 0.12초</b></td><td>정상(0.12~0.20초)</td></tr> <tr><td>QRS 시작</td><td><b>완만한 델타파</b>, 넓은 QRS</td><td>날카로운 시작, 좁은 QRS</td></tr> <tr><td>III·aVF 의 음성 파</td><td>음성 델타파 — 거의 모든 유도에서 QRS 시작이 기움</td><td>그 유도에만 있는 폭 0.04초 이상의 진짜 Q파</td></tr> <tr><td>병력</td><td>갑자기 시작해 멎는 빈맥 발작</td><td>흉통·경색 병력</td></tr> </tbody></table> Q파처럼 보이는 파가 있으면 먼저 PR 길이와 다른 유도의 QRS 시작을 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 1도 방실차단은 모든 P파가 전도되지만 PR 이 0.20초(큰 칸 하나)를 넘어 길어졌다면 정답이 된다 — 이 기록은 오히려 짧다.\n③ 완전 우각차단은 QRS 가 0.12초 이상이고 V1 에서 rsR' 와 I·V6 에서 넓은 S파가 있으면서 PR 은 정상이라면 정답이 된다.\n④ 오래된 하벽 경색은 PR 이 정상이고 QRS 시작이 날카로우며 III·aVF 에만 폭 넓은 Q파가 있다면 정답이 된다.\n⑤ 좌심실 비대는 PR 과 QRS 시작이 정상이고 흉부 유도의 큰 전압에 strain 형 ST-T 가 동반됐다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "III·aVF 의 음성 델타파를 경색의 Q파로 읽어 짧은 PR 과 델타파를 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "짧은 PR 과 델타파로 넓어진 QRS 를 조기흥분(WPW 양상)으로 판독하고, 하벽 유도의 음성 델타파를 오래된 하벽 경색의 Q파로 오인하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5303 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "짧은 PR·델타파·넓은 QRS 는 조기흥분(WPW 양상)이며 하벽 유도의 음성 델타파는 경색 Q파가 아니다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "PR 이 0.12초보다 짧고 거의 모든 유도에서 QRS 시작이 델타파로 기운다",
+   "steps": 2,
+   "chain": [
+    "영상: II 에서 P파 직후 QRS, 완만하게 시작하는 넓은 QRS → 짧은 PR + 델타파",
+    "영상: III·aVF 의 음성 델타파와 이차성 ST-T + 빈맥 발작 병력 → 하벽 경색이 아닌 WPW 양상"
+   ],
+   "key": [
+    {
+     "item": "영상: 짧은 PR 과 QRS 시작의 완만한 델타파",
+     "why": "조기흥분의 핵심",
+     "also": []
+    },
+    {
+     "item": "갑자기 심장이 빨리 뛰다가 몇 분 만에 저절로 멎은 적이 있다",
+     "why": "회귀성 빈맥 — WPW 증후군",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: III·aVF 의 음성 델타파",
+     "why": "경색 Q파처럼 보이지만 델타파다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "실신이나 가슴 통증은 없었고",
+     "why": "위험 평가에 쓰이지만 판독과는 별개",
+     "also": []
+    },
+    {
+     "item": "혈청 전해질과 갑상샘 기능은 정상이다",
+     "why": "판독에 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "PR 이 짧고 QRS 가 델타파로 시작하며 하벽 유도의 음성 델타파가 Q파처럼 보인다. 빈맥 발작이 있는 조기흥분(WPW)이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "PR 이 정상이고 QRS 시작이 날카로우며 III·aVF 에만 넓은 Q파가 있었다면 오래된 하벽 경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0758.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05303",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5303"
+  },
+  "run_id": "20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0754",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "영상 판독 — 편마비 노인의 뇌 MRI 시퀀스",
+  "type": "영상 판독 — 편마비 노인의 뇌 MRI 시퀀스",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-22",
+  "vignette": "A 75-year-old woman is brought to the emergency department because of headache and progressive weakness of the left arm and leg for 3 weeks. She has no fever and no history of trauma. Neurologic examination shows left hemiparesis with 4/5 strength and a left pronator drift. Serum glucose and sodium concentrations are within the reference ranges. MRI of the brain is performed with a standard tumor protocol, and one axial image is shown.",
+  "question": "Which of the following sequences is most likely shown?",
+  "options": [
+   "Fluid-attenuated inversion recovery (FLAIR)",
+   "Diffusion-weighted imaging",
+   "T1-weighted without contrast",
+   "T1-weighted after gadolinium",
+   "T2-weighted"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The ventricles and sulci are <b>dark</b>, the white matter is <b>brighter than the cortex</b>, and subcutaneous scalp fat is bright — a T1-weighted pattern. The right hemisphere shows an ill-defined low-signal region with mass effect and shift of the midline to the left, but <b>no bright enhancing rim</b>, and the choroid plexus and dural venous sinuses are not bright. A mass with these features would enhance after gadolinium, so this is the precontrast T1-weighted image. On FLAIR the edematous region would be bright, and on T2 the CSF would be bright.\n- 원리: <b>Why white matter is bright on T1</b>: T1 relaxation is fastest in tissue rich in lipid and macromolecules. Myelin makes white matter recover longitudinal magnetization faster than gray matter, so it appears brighter; free water, as in cerebrospinal fluid and edema, recovers slowly and is dark. Fat is very bright.<br> <b>What gadolinium changes</b>: Gadolinium shortens T1 wherever it leaks or pools. Normal structures without a blood-brain barrier — choroid plexus, dural sinuses, pituitary — become bright, and a high-grade glioma or metastasis shows a bright, often ring-shaped rim where the barrier is broken. Comparing pre- and postcontrast T1 is how true enhancement is distinguished from intrinsically bright material such as blood or fat.<br> <b>Why FLAIR differs</b>: FLAIR is T2-weighted with the CSF signal nulled. CSF is dark as on T1, but gray matter is brighter than white matter and edema is bright — the reverse of what is seen around this lesion.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Precontrast T1 (answer)</th><th>Postcontrast T1 (closest distractor)</th></tr></thead><tbody> <tr><td>CSF</td><td>Dark</td><td>Dark</td></tr> <tr><td>White vs gray matter</td><td>White brighter</td><td>White brighter</td></tr> <tr><td>Choroid plexus, dural sinuses</td><td><b>Not bright</b></td><td><b>Bright</b></td></tr> <tr><td>High-grade tumor</td><td>Low or mixed signal, no rim</td><td><b>Bright irregular enhancing rim</b></td></tr> </tbody></table> Both T1 images share the gray-white pattern; only enhancing structures tell them apart.\n- 오답 이유:\n  - (A) FLAIR would be correct if CSF were dark but the region of edema around the mass were bright and gray matter brighter than white matter.\n  - (B) Diffusion-weighted imaging would be correct if the image had low spatial detail and the only bright areas were acute infarcts or abscess contents.\n  - (D) Postcontrast T1 would be correct if the choroid plexus, dural sinuses, and an irregular rim around the right-sided mass were bright.\n  - (E) T2-weighted would be correct if the CSF in the ventricles and sulci were bright and gray matter were brighter than white matter.\n- 함정: Assuming any T1 image in a tumor work-up is postcontrast, without checking whether normally enhancing structures are bright.\n- 학습목표: 축상 뇌 MRI 에서 뇌척수액이 어둡고 백색질이 회색질보다 밝으며 증강되는 구조가 없는 영상을 비조영 T1 강조영상으로 읽고 조영 T1·FLAIR 와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 95: Primary and Metastatic Tumors of the Nervous System\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …56870017 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ventricles and sulci are <b>dark</b>, the white matter is <b>brighter than the cortex</b>, and subcutaneous scalp fat is bright — a T1-weighted pattern. The right hemisphere shows an ill-defined low-signal region with mass effect and shift of the midline to the left, but <b>no bright enhancing rim</b>, and the choroid plexus and dural venous sinuses are not bright. A mass with these features would enhance after gadolinium, so this is the precontrast T1-weighted image. On FLAIR the edematous region would be bright, and on T2 the CSF would be bright."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why white matter is bright on T1</b>: T1 relaxation is fastest in tissue rich in lipid and macromolecules. Myelin makes white matter recover longitudinal magnetization faster than gray matter, so it appears brighter; free water, as in cerebrospinal fluid and edema, recovers slowly and is dark. Fat is very bright.<br> <b>What gadolinium changes</b>: Gadolinium shortens T1 wherever it leaks or pools. Normal structures without a blood-brain barrier — choroid plexus, dural sinuses, pituitary — become bright, and a high-grade glioma or metastasis shows a bright, often ring-shaped rim where the barrier is broken. Comparing pre- and postcontrast T1 is how true enhancement is distinguished from intrinsically bright material such as blood or fat.<br> <b>Why FLAIR differs</b>: FLAIR is T2-weighted with the CSF signal nulled. CSF is dark as on T1, but gray matter is brighter than white matter and edema is bright — the reverse of what is seen around this lesion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Precontrast T1 (answer)</th><th>Postcontrast T1 (closest distractor)</th></tr></thead><tbody> <tr><td>CSF</td><td>Dark</td><td>Dark</td></tr> <tr><td>White vs gray matter</td><td>White brighter</td><td>White brighter</td></tr> <tr><td>Choroid plexus, dural sinuses</td><td><b>Not bright</b></td><td><b>Bright</b></td></tr> <tr><td>High-grade tumor</td><td>Low or mixed signal, no rim</td><td><b>Bright irregular enhancing rim</b></td></tr> </tbody></table> Both T1 images share the gray-white pattern; only enhancing structures tell them apart."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) FLAIR would be correct if CSF were dark but the region of edema around the mass were bright and gray matter brighter than white matter.\n(B) Diffusion-weighted imaging would be correct if the image had low spatial detail and the only bright areas were acute infarcts or abscess contents.\n(D) Postcontrast T1 would be correct if the choroid plexus, dural sinuses, and an irregular rim around the right-sided mass were bright.\n(E) T2-weighted would be correct if the CSF in the ventricles and sulci were bright and gray matter were brighter than white matter."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming any T1 image in a tumor work-up is postcontrast, without checking whether normally enhancing structures are bright."
+   },
+   {
+    "k": "학습목표",
+    "v": "축상 뇌 MRI 에서 뇌척수액이 어둡고 백색질이 회색질보다 밝으며 증강되는 구조가 없는 영상을 비조영 T1 강조영상으로 읽고 조영 T1·FLAIR 와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 95: Primary and Metastatic Tumors of the Nervous System ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …56870017 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "뇌척수액이 어둡고 백색질이 회색질보다 밝으며 증강되는 구조가 없으면 비조영 T1 강조영상이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "맥락얼기·경막 정맥동과 종괴 둘레가 밝게 증강되지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: 뇌척수액 어둡고 백색질이 회색질보다 밝으며 두피 지방이 밝음 → T1 강조 계열",
+    "영상: 오른쪽 반구 종괴 효과가 있는데 증강 테두리가 없고 맥락얼기·정맥동이 밝지 않음 → 조영 전",
+    "T1 + 조영 전 → 비조영 T1 강조영상"
+   ],
+   "key": [
+    {
+     "item": "영상: 뇌척수액이 어둡고 백색질이 회색질보다 밝다",
+     "why": "T1 강조 대비",
+     "also": []
+    },
+    {
+     "item": "영상: 종괴 둘레·맥락얼기에 밝은 증강이 없다",
+     "why": "조영 전 영상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 오른쪽 반구 저신호와 정중선의 왼쪽 이동",
+     "why": "FLAIR·T2 라면 부종이 밝아야 한다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "progressive weakness of the left arm and leg for 3 weeks",
+     "why": "오른쪽 반구 종괴와 맞지만 시퀀스 판단과는 별개",
+     "also": []
+    },
+    {
+     "item": "standard tumor protocol",
+     "why": "조영 전·후 T1 이 모두 있는 프로토콜임을 알려 준다",
+     "also": []
+    }
+   ],
+   "summary": "뇌척수액이 어둡고 백색질이 밝은 T1 대비인데 종괴와 정상 증강 구조가 밝지 않다. 비조영 T1 강조영상이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "종괴 둘레에 불규칙한 고리 모양 고신호와 밝은 맥락얼기가 보였다면 조영 T1"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0754.png",
+   "caption": "Axial brain MRI, single image from a standard clinical protocol; the black band at the front is the original de-identification mask, DICOM converted without cropping (The Cancer Imaging Archive, CC BY 4.0)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.273397942835111944191177032634656870017",
+   "asset_id": "TCIA-UPENN_GBM-86535990349494",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …56870017"
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0753",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "근골격 — 학교 검진에서 발견된 청소년의 등 휨",
+  "type": "근골격 — 학교 검진에서 발견된 청소년의 등 휨",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-22",
+  "vignette": "13세 여자가 학교 검진에서 등이 휘었다는 말을 듣고 왔다. 6개월 전 초경을 했고 등 통증은 없다. 앞으로 숙이기 검사에서 오른쪽 등이 튀어나온다. 근력·감각·복부 반사·힘줄 반사는 정상이고 피부에 카페오레 반점이나 허리의 털 뭉치는 없다. 서서 찍은 전척추 전후면 X선은 그림과 같다. 주만곡의 Cobb 각은 65°이고 장골능 골화는 Risser 4 단계이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "후방 척추 유합술",
+   "흉요천추 보조기 착용",
+   "6개월 뒤 X선 재촬영",
+   "수술 전 척추 전장 MRI",
+   "척추 교정 운동치료"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: X선에서 <b>환자 오른쪽으로 볼록한 큰 흉추 만곡과 반대쪽 요추 보상 만곡</b>이 있고 반척추 같은 척추체 기형은 없다. 통증이 없고 신경학적 진찰이 정상인 13세 여자의 <b>전형적 우측 흉추 만곡</b> — 청소년 특발성 측만증이다. Cobb 각이 <b>65°로 50°를 넘으면</b> 성장이 끝난 뒤에도 해마다 진행하고 폐 기능이 떨어질 수 있으므로 후방 척추 유합술이 적응이다.\n- 원리: <b>왜 50°가 수술의 경계인가</b>: 골성숙이 끝난 뒤 30° 미만의 만곡은 거의 진행하지 않지만, <b>50°를 넘는 흉추 만곡은 성인이 되어서도 해마다 약 1°씩</b> 진행한다. 만곡이 커지면 흉곽이 회전·변형되어 폐활량이 줄고(특히 70~100° 이상), 외형 변화와 통증이 늘어난다. 그래서 45~50° 이상이면 유합술로 교정·고정한다.<br> <b>왜 보조기는 늦었는가</b>: 보조기는 성장이 많이 남은 시기(Risser 0~2)의 25~40° 만곡에서 진행을 막는 치료다. 뼈를 펴 주는 것이 아니라 성장하는 동안 더 휘지 않게 버티는 것이므로, Risser 4 로 성장이 거의 끝났고 이미 65°인 만곡에는 효과가 없다.<br> <b>언제 MRI 를 찍는가</b>: 특발성 측만증은 배제 진단이다. 좌측 흉추 만곡, 통증, 신경학적 이상(비대칭 복부 반사·병적 반사), 10세 이전 발병, 빠른 진행, 피부 표지가 있으면 척수공동증·척수견인·종양을 찾기 위해 MRI 를 찍는다. 이 환자는 그런 소견이 없다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">곧바로 유합술 — 정답</th><th>먼저 척추 전장 MRI — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>만곡 방향</td><td><b>우측 흉추</b>(전형적)</td><td>좌측 흉추(비전형적)</td></tr> <tr><td>통증</td><td>없음</td><td>야간 통증·지속 통증</td></tr> <tr><td>신경학적 진찰</td><td>정상, 복부 반사 대칭</td><td>복부 반사 비대칭, 병적 반사, 근력 저하</td></tr> <tr><td>발병·진행</td><td>사춘기, 전형적 진행</td><td>10세 이전 발병, 매우 빠른 진행</td></tr> </tbody></table> 같은 65° 라도 오른쪽 열의 소견이 하나라도 있으면 수술 전에 MRI 로 척수 이상을 먼저 찾는다.\n- 오답 이유:\n  - ② 흉요천추 보조기는 Risser 0~2 로 성장이 많이 남은 시기에 Cobb 각 25~40°인 만곡이라면 정답이 된다.\n  - ③ 6개월 뒤 재촬영 관찰은 Cobb 각이 25° 미만인 성장기 청소년이라면 정답이 된다.\n  - ④ 척추 전장 MRI 는 좌측 흉추 만곡·통증·비대칭 복부 반사 같은 비전형 소견이 있다면 수술 전 정답이 된다.\n  - ⑤ 운동치료는 경미한 만곡에서 보조 수단일 뿐이며 단독으로 진행을 막는다는 근거가 약해 정답이 되기 어렵다.\n- 함정: 수술 전에는 늘 MRI 가 필요하다고 생각해, 만곡 방향과 정상 신경학적 진찰이라는 판단 근거를 놓치는 것.\n- 학습목표: 골성숙 무렵 청소년의 우측 흉추 만곡이 Cobb 각 50°를 넘으면 특발성 측만증의 수술 적응이며, 신경학적 이상이나 비전형 만곡이 없으면 MRI 가 꼭 필요하지 않음을 판단한다\n- 근거·출처: Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537 · Weinstein SL, Dolan LA, Wright JG, Dobbs MB. Effects of bracing in adolescents with idiopathic scoliosis. N Engl J Med. 2013;369(16):1512-1521\n\n## 출처\n- Case Report: Surgical correction of Lenke 1 adolescent idiopathic scoliosis with a single rod instrumentation. Front Surg. 2026 Aug 3;13:1775018. doi: 10.3389/fsurg.2026.1775018 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 <b>환자 오른쪽으로 볼록한 큰 흉추 만곡과 반대쪽 요추 보상 만곡</b>이 있고 반척추 같은 척추체 기형은 없다. 통증이 없고 신경학적 진찰이 정상인 13세 여자의 <b>전형적 우측 흉추 만곡</b> — 청소년 특발성 측만증이다. Cobb 각이 <b>65°로 50°를 넘으면</b> 성장이 끝난 뒤에도 해마다 진행하고 폐 기능이 떨어질 수 있으므로 후방 척추 유합술이 적응이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 50°가 수술의 경계인가</b>: 골성숙이 끝난 뒤 30° 미만의 만곡은 거의 진행하지 않지만, <b>50°를 넘는 흉추 만곡은 성인이 되어서도 해마다 약 1°씩</b> 진행한다. 만곡이 커지면 흉곽이 회전·변형되어 폐활량이 줄고(특히 70~100° 이상), 외형 변화와 통증이 늘어난다. 그래서 45~50° 이상이면 유합술로 교정·고정한다.<br> <b>왜 보조기는 늦었는가</b>: 보조기는 성장이 많이 남은 시기(Risser 0~2)의 25~40° 만곡에서 진행을 막는 치료다. 뼈를 펴 주는 것이 아니라 성장하는 동안 더 휘지 않게 버티는 것이므로, Risser 4 로 성장이 거의 끝났고 이미 65°인 만곡에는 효과가 없다.<br> <b>언제 MRI 를 찍는가</b>: 특발성 측만증은 배제 진단이다. 좌측 흉추 만곡, 통증, 신경학적 이상(비대칭 복부 반사·병적 반사), 10세 이전 발병, 빠른 진행, 피부 표지가 있으면 척수공동증·척수견인·종양을 찾기 위해 MRI 를 찍는다. 이 환자는 그런 소견이 없다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">곧바로 유합술 — 정답</th><th>먼저 척추 전장 MRI — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>만곡 방향</td><td><b>우측 흉추</b>(전형적)</td><td>좌측 흉추(비전형적)</td></tr> <tr><td>통증</td><td>없음</td><td>야간 통증·지속 통증</td></tr> <tr><td>신경학적 진찰</td><td>정상, 복부 반사 대칭</td><td>복부 반사 비대칭, 병적 반사, 근력 저하</td></tr> <tr><td>발병·진행</td><td>사춘기, 전형적 진행</td><td>10세 이전 발병, 매우 빠른 진행</td></tr> </tbody></table> 같은 65° 라도 오른쪽 열의 소견이 하나라도 있으면 수술 전에 MRI 로 척수 이상을 먼저 찾는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 흉요천추 보조기는 Risser 0~2 로 성장이 많이 남은 시기에 Cobb 각 25~40°인 만곡이라면 정답이 된다.\n③ 6개월 뒤 재촬영 관찰은 Cobb 각이 25° 미만인 성장기 청소년이라면 정답이 된다.\n④ 척추 전장 MRI 는 좌측 흉추 만곡·통증·비대칭 복부 반사 같은 비전형 소견이 있다면 수술 전 정답이 된다.\n⑤ 운동치료는 경미한 만곡에서 보조 수단일 뿐이며 단독으로 진행을 막는다는 근거가 약해 정답이 되기 어렵다."
+   },
+   {
+    "k": "함정",
+    "v": "수술 전에는 늘 MRI 가 필요하다고 생각해, 만곡 방향과 정상 신경학적 진찰이라는 판단 근거를 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "골성숙 무렵 청소년의 우측 흉추 만곡이 Cobb 각 50°를 넘으면 특발성 측만증의 수술 적응이며, 신경학적 이상이나 비전형 만곡이 없으면 MRI 가 꼭 필요하지 않음을 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537 · Weinstein SL, Dolan LA, Wright JG, Dobbs MB. Effects of bracing in adolescents with idiopathic scoliosis. N Engl J Med. 2013;369(16):1512-1521 ## 출처 Case Report: Surgical correction of Lenke 1 adolescent idiopathic scoliosis with a single rod instrumentation. Front Surg. 2026 Aug 3;13:1775018. doi: 10.3389/fsurg.2026.1775018 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "신경학적으로 정상인 골성숙기 청소년의 전형적 우측 흉추 만곡이 Cobb 65°이면 MRI 없이 후방 척추 유합술을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "만곡이 전형적인 우측 흉추이고 통증·신경학적 이상·피부 표지가 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 오른쪽으로 볼록한 흉추 만곡 + 반대쪽 요추 보상 만곡, 척추체 기형 없음 → 전형적 만곡",
+    "통증 없음 + 신경학적 진찰 정상 + 피부 표지 없음 → 청소년 특발성 측만증, MRI 필요성 낮음",
+    "Cobb 65° + Risser 4 → 보조기 시기를 지났고 50° 초과 → 후방 척추 유합술"
+   ],
+   "key": [
+    {
+     "item": "영상: 오른쪽으로 볼록한 흉추 만곡과 반대쪽 요추 보상 만곡",
+     "why": "전형적 특발성 만곡",
+     "also": []
+    },
+    {
+     "item": "주만곡의 Cobb 각은 65°",
+     "why": "수술 적응(≥ 45~50°)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "근력·감각·복부 반사·힘줄 반사는 정상",
+     "why": "척수 이상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "카페오레 반점이나 허리의 털 뭉치는 없다",
+     "why": "신경섬유종증·척추이분증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Risser 4 단계",
+     "why": "성장이 거의 끝나 보조기 효과 없음",
+     "also": []
+    },
+    {
+     "item": "6개월 전 초경",
+     "why": "골성숙에 가까움",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "전형적 우측 흉추 만곡이고 신경학적으로 정상이라 특발성 측만증이다. 성장이 거의 끝났는데 Cobb 각이 65°이므로 후방 척추 유합술을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "만곡이 왼쪽 흉추로 볼록하거나 복부 반사가 비대칭이었다면 수술 전 척추 전장 MRI"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0753.png",
+   "caption": "서서 찍은 전척추 전후면 X선, 양옆 흰 화살촉은 원 그림의 것 — 출판된 증례 그림에서 한 패널만 잘라냄 (PMC Open Access Subset, CC BY)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13478779/",
+   "asset_id": "PMC-PMC13478779_Figure1_ap",
+   "text": "Case Report: Surgical correction of Lenke 1 adolescent idiopathic scoliosis with a single rod instrumentation. Front Surg. 2026 Aug 3;13:1775018. doi: 10.3389/fsurg.2026.1775018 (CC BY) — Figure 1"
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0751",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "응급 — 두근거림으로 온 고령 여성의 규칙적인 빈맥",
+  "type": "응급 — 두근거림으로 온 고령 여성의 규칙적인 빈맥",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-22",
+  "vignette": "87세 여자가 3시간 전부터 가슴이 두근거리고 숨이 조금 차서 응급실에 왔다. 고혈압으로 약을 먹고 있으며 가슴 통증과 실신은 없었다. 의식은 명료하다. 혈압 128/76 mmHg, 맥박 152회/분으로 규칙적이고, 호흡 20회/분, 체온 36.6℃, 산소포화도 96% 이다. 폐 청진은 정상이고 다리 부종은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "방실결절 회귀빈맥",
+   "심방세동",
+   "심실빈맥",
+   "2:1 방실전도의 심방조동",
+   "동빈맥"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: II 리듬 스트립에서 10초에 약 26개의 QRS 가 <b>완전히 규칙적</b>으로 나온다(약 155회/분). QRS 는 좁다. 각 QRS 앞에 따로 떨어진 P파가 없고, <b>II·III·aVF 의 기저선이 쉬지 않고 톱니처럼 물결친다</b> — 심방이 약 300회/분으로 뛰고 그중 하나 걸러 하나만 심실로 전도되는 2:1 심방조동이다. 「약 150회/분으로 고정된 규칙적 좁은 QRS 빈맥」은 심방조동을 먼저 떠올린다.\n- 원리: <b>왜 150회/분인가</b>: 전형적 심방조동은 우심방의 삼첨판륜을 도는 큰 회귀회로다. 한 바퀴에 약 200 ms 가 걸려 심방은 분당 약 300회 흥분한다. 방실결절은 이 속도를 다 통과시키지 못해 보통 둘 중 하나만 전도하므로 심실은 <b>약 150회/분</b>으로 규칙적으로 뛴다. 전도 비율이 4:1 이면 약 75회/분이 된다.<br> <b>왜 하벽 유도에서 톱니가 보이는가</b>: 반시계방향 회로에서는 심방 중격을 아래에서 위로 흥분이 올라가므로 아래쪽을 보는 II·III·aVF 에서 음성의 톱니 모양 F파가 등전위선 없이 이어진다. 2:1 전도에서는 F파 하나가 QRS·T 에 묻혀 잘 안 보이므로 기저선 전체를 훑어보아야 한다.<br> <b>임상 함의</b>: 심방조동도 심방세동처럼 혈전색전 위험이 있어 같은 기준으로 항응고를 판단하고, 혈역학이 안정되면 박동수 조절, 불안정하면 동기화 심율동전환을 한다. 삼첨판륜-하대정맥 협부 고주파 절제로 근치율이 높다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">2:1 심방조동 — 정답</th><th>방실결절 회귀빈맥 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>심실 박동수</td><td><b>약 150회/분으로 고정</b></td><td>140~250회/분으로 다양</td></tr> <tr><td>심방 활동</td><td>II·III·aVF 의 톱니 모양 F파(약 300회/분)</td><td>P파가 QRS 에 묻히거나 QRS 끝의 가성 r'·s</td></tr> <tr><td>시작·종료</td><td>점진적일 수 있음</td><td>갑자기 시작·종료</td></tr> <tr><td>아데노신</td><td>전도가 잠시 막혀 <b>F파가 드러남</b>, 빈맥은 지속</td><td>회로가 끊겨 <b>빈맥이 멈춤</b></td></tr> </tbody></table> 규칙적인 좁은 QRS 빈맥이 150 근처면 조동부터 의심하고 하벽 유도의 기저선을 확인한다.\n- 오답 이유:\n  - ① 방실결절 회귀빈맥은 젊은 사람에서 갑자기 시작·종료하고 P파가 QRS 에 묻히며 기저선에 톱니가 없다면 정답이 된다.\n  - ② 심방세동은 RR 간격이 불규칙하게 불규칙하고 기저선이 잔물결처럼 무질서하다면 정답이 된다.\n  - ③ 심실빈맥은 QRS 가 120 ms 넘게 넓고 방실해리·융합 박동이 보인다면 정답이 된다.\n  - ⑤ 동빈맥은 매 QRS 앞에 II 에서 양성인 P파가 일정한 PR 로 보이고 발열·탈수·통증 같은 원인이 있다면 정답이 된다.\n- 함정: P파가 안 보이는 규칙적 좁은 QRS 빈맥을 모두 방실결절 회귀빈맥으로 읽는 것.\n- 학습목표: 약 150회/분의 규칙적인 좁은 QRS 빈맥에서 하벽 유도의 톱니 모양 심방파를 읽어 2:1 전도 심방조동으로 판독하고 방실결절 회귀빈맥·동빈맥과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 257: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8265 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "II 리듬 스트립에서 10초에 약 26개의 QRS 가 <b>완전히 규칙적</b>으로 나온다(약 155회/분). QRS 는 좁다. 각 QRS 앞에 따로 떨어진 P파가 없고, <b>II·III·aVF 의 기저선이 쉬지 않고 톱니처럼 물결친다</b> — 심방이 약 300회/분으로 뛰고 그중 하나 걸러 하나만 심실로 전도되는 2:1 심방조동이다. 「약 150회/분으로 고정된 규칙적 좁은 QRS 빈맥」은 심방조동을 먼저 떠올린다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 150회/분인가</b>: 전형적 심방조동은 우심방의 삼첨판륜을 도는 큰 회귀회로다. 한 바퀴에 약 200 ms 가 걸려 심방은 분당 약 300회 흥분한다. 방실결절은 이 속도를 다 통과시키지 못해 보통 둘 중 하나만 전도하므로 심실은 <b>약 150회/분</b>으로 규칙적으로 뛴다. 전도 비율이 4:1 이면 약 75회/분이 된다.<br> <b>왜 하벽 유도에서 톱니가 보이는가</b>: 반시계방향 회로에서는 심방 중격을 아래에서 위로 흥분이 올라가므로 아래쪽을 보는 II·III·aVF 에서 음성의 톱니 모양 F파가 등전위선 없이 이어진다. 2:1 전도에서는 F파 하나가 QRS·T 에 묻혀 잘 안 보이므로 기저선 전체를 훑어보아야 한다.<br> <b>임상 함의</b>: 심방조동도 심방세동처럼 혈전색전 위험이 있어 같은 기준으로 항응고를 판단하고, 혈역학이 안정되면 박동수 조절, 불안정하면 동기화 심율동전환을 한다. 삼첨판륜-하대정맥 협부 고주파 절제로 근치율이 높다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">2:1 심방조동 — 정답</th><th>방실결절 회귀빈맥 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>심실 박동수</td><td><b>약 150회/분으로 고정</b></td><td>140~250회/분으로 다양</td></tr> <tr><td>심방 활동</td><td>II·III·aVF 의 톱니 모양 F파(약 300회/분)</td><td>P파가 QRS 에 묻히거나 QRS 끝의 가성 r'·s</td></tr> <tr><td>시작·종료</td><td>점진적일 수 있음</td><td>갑자기 시작·종료</td></tr> <tr><td>아데노신</td><td>전도가 잠시 막혀 <b>F파가 드러남</b>, 빈맥은 지속</td><td>회로가 끊겨 <b>빈맥이 멈춤</b></td></tr> </tbody></table> 규칙적인 좁은 QRS 빈맥이 150 근처면 조동부터 의심하고 하벽 유도의 기저선을 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 방실결절 회귀빈맥은 젊은 사람에서 갑자기 시작·종료하고 P파가 QRS 에 묻히며 기저선에 톱니가 없다면 정답이 된다.\n② 심방세동은 RR 간격이 불규칙하게 불규칙하고 기저선이 잔물결처럼 무질서하다면 정답이 된다.\n③ 심실빈맥은 QRS 가 120 ms 넘게 넓고 방실해리·융합 박동이 보인다면 정답이 된다.\n⑤ 동빈맥은 매 QRS 앞에 II 에서 양성인 P파가 일정한 PR 로 보이고 발열·탈수·통증 같은 원인이 있다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "P파가 안 보이는 규칙적 좁은 QRS 빈맥을 모두 방실결절 회귀빈맥으로 읽는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "약 150회/분의 규칙적인 좁은 QRS 빈맥에서 하벽 유도의 톱니 모양 심방파를 읽어 2:1 전도 심방조동으로 판독하고 방실결절 회귀빈맥·동빈맥과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 257: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8265 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "약 150회/분으로 고정된 규칙적 좁은 QRS 빈맥과 하벽 유도의 톱니 모양 기저선은 2:1 심방조동이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "II·III·aVF 기저선의 톱니 모양 심방파와 약 150회/분의 고정된 심실 박동수",
+   "steps": 2,
+   "chain": [
+    "영상: 10초에 약 26개의 규칙적 좁은 QRS → 약 155회/분의 규칙적 좁은 QRS 빈맥",
+    "영상: 따로 떨어진 P파 없이 II·III·aVF 기저선이 톱니처럼 물결침 → 2:1 전도 심방조동"
+   ],
+   "key": [
+    {
+     "item": "영상: 약 155회/분의 완전히 규칙적인 좁은 QRS",
+     "why": "고정된 2:1 전도",
+     "also": []
+    },
+    {
+     "item": "영상: II·III·aVF 의 톱니 모양 기저선",
+     "why": "조동파",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 152회/분으로 규칙적이고",
+     "why": "심방세동 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 128/76 mmHg",
+     "why": "혈역학적으로 안정 — 박동수 조절 대상",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "갑상샘자극호르몬은 정상이다",
+     "why": "갑상샘 원인 배제 — 판독과 별개",
+     "also": []
+    }
+   ],
+   "summary": "약 150회/분으로 고정된 규칙적 좁은 QRS 빈맥이고 하벽 유도 기저선이 톱니 모양이다. 2:1 전도 심방조동이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "RR 간격이 불규칙하게 불규칙하고 기저선이 무질서한 잔물결이라면 심방세동"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0751.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/08000/#files-panel",
+   "asset_id": "PTBXL-08265",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8265"
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0750",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "호흡기 — 산소가 필요한 바이러스 폐렴의 약물치료",
+  "type": "호흡기 — 산소가 필요한 바이러스 폐렴의 약물치료",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-22",
+  "vignette": "A 57-year-old man is brought to the emergency department because of fever, cough, and worsening shortness of breath for 8 days. A nasopharyngeal RT-PCR test for SARS-CoV-2 was positive 6 days ago. He has hypertension treated with amlodipine. Temperature is 38.4°C, pulse is 104/min, respirations are 28/min, and blood pressure is 132/80 mm Hg. Pulse oximetry shows 86% on room air and 93% with 4 L/min of oxygen by nasal cannula. Crackles are heard at both lung bases. Serum creatinine and aminotransferase concentrations are within the reference ranges. A portable chest x-ray is shown.",
+  "question": "In addition to supplemental oxygen, which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Ivermectin",
+   "Nirmatrelvir-ritonavir",
+   "Dexamethasone",
+   "Hydroxychloroquine",
+   "Azithromycin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The radiograph shows low lung volumes with <b>hazy bilateral opacities in the lower and perihilar zones</b> (including a retrocardiac opacity on the left) without pneumothorax or a large effusion. With confirmed SARS-CoV-2 infection on day 8 and <b>hypoxemia requiring supplemental oxygen</b>, this is COVID-19 pneumonia in its inflammatory phase. Dexamethasone 6 mg daily for up to 10 days lowered mortality in patients receiving oxygen or ventilation (RECOVERY trial).\n- 원리: <b>Why a steroid helps late but not early</b>: COVID-19 has two overlapping phases. In the first week, viral replication drives illness, so antivirals work best and only when started within about 5 days of symptoms. After that, damage is driven mainly by the host's inflammatory response — alveolar injury, capillary leak, and microthrombi — and the viral load is already falling. A glucocorticoid dampens this response; it helped only patients who needed oxygen and harmed or did not help those who did not.<br> <b>Why oxygen need is the switch</b>: Hypoxemia means the lung injury is already established. That is the point at which an anti-inflammatory benefit outweighs the risk of slowing viral clearance, so guidelines tie dexamethasone to oxygen requirement, not to the radiograph alone.<br> <b>What the radiograph adds</b>: Bilateral, peripheral and lower-zone ground-glass or consolidative opacities are typical of COVID-19 pneumonia; a lobar consolidation or large effusion would raise concern for bacterial superinfection.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Dexamethasone (answer)</th><th>Nirmatrelvir-ritonavir (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Host inflammatory phase</td><td>Viral replication (3CL protease)</td></tr> <tr><td>Who benefits</td><td><b>Hospitalized, needs oxygen</b></td><td>Not hospitalized, no oxygen need, high risk of progression</td></tr> <tr><td>Timing</td><td>Any time oxygen is required</td><td><b>Within 5 days</b> of symptom onset</td></tr> <tr><td>Main cautions</td><td>Hyperglycemia, secondary infection</td><td>CYP3A drug interactions</td></tr> </tbody></table> The day of illness and the oxygen requirement decide between the two, not the PCR result.\n- 오답 이유:\n  - (A) Ivermectin would be correct for strongyloidiasis, which should be treated before high-dose immunosuppression in patients from endemic areas.\n  - (B) Nirmatrelvir-ritonavir would be correct for an outpatient at high risk who is within 5 days of onset and does not need oxygen.\n  - (D) Hydroxychloroquine showed no benefit in randomized trials; it would be correct only for a different question, such as lupus or malaria prophylaxis.\n  - (E) Azithromycin would be appropriate if a lobar consolidation, purulent sputum, or a high procalcitonin suggested bacterial pneumonia.\n- 함정: Choosing an antiviral because the patient has a positive PCR test, ignoring that he is on day 8 and hypoxemic.\n- 학습목표: Recognize bilateral lung opacities on a chest radiograph of a patient with laboratory-confirmed COVID-19 who needs supplemental oxygen and choose dexamethasone over antivirals intended for early, nonhypoxemic disease\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …73568772 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows low lung volumes with <b>hazy bilateral opacities in the lower and perihilar zones</b> (including a retrocardiac opacity on the left) without pneumothorax or a large effusion. With confirmed SARS-CoV-2 infection on day 8 and <b>hypoxemia requiring supplemental oxygen</b>, this is COVID-19 pneumonia in its inflammatory phase. Dexamethasone 6 mg daily for up to 10 days lowered mortality in patients receiving oxygen or ventilation (RECOVERY trial)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a steroid helps late but not early</b>: COVID-19 has two overlapping phases. In the first week, viral replication drives illness, so antivirals work best and only when started within about 5 days of symptoms. After that, damage is driven mainly by the host's inflammatory response — alveolar injury, capillary leak, and microthrombi — and the viral load is already falling. A glucocorticoid dampens this response; it helped only patients who needed oxygen and harmed or did not help those who did not.<br> <b>Why oxygen need is the switch</b>: Hypoxemia means the lung injury is already established. That is the point at which an anti-inflammatory benefit outweighs the risk of slowing viral clearance, so guidelines tie dexamethasone to oxygen requirement, not to the radiograph alone.<br> <b>What the radiograph adds</b>: Bilateral, peripheral and lower-zone ground-glass or consolidative opacities are typical of COVID-19 pneumonia; a lobar consolidation or large effusion would raise concern for bacterial superinfection."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Dexamethasone (answer)</th><th>Nirmatrelvir-ritonavir (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Host inflammatory phase</td><td>Viral replication (3CL protease)</td></tr> <tr><td>Who benefits</td><td><b>Hospitalized, needs oxygen</b></td><td>Not hospitalized, no oxygen need, high risk of progression</td></tr> <tr><td>Timing</td><td>Any time oxygen is required</td><td><b>Within 5 days</b> of symptom onset</td></tr> <tr><td>Main cautions</td><td>Hyperglycemia, secondary infection</td><td>CYP3A drug interactions</td></tr> </tbody></table> The day of illness and the oxygen requirement decide between the two, not the PCR result."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ivermectin would be correct for strongyloidiasis, which should be treated before high-dose immunosuppression in patients from endemic areas.\n(B) Nirmatrelvir-ritonavir would be correct for an outpatient at high risk who is within 5 days of onset and does not need oxygen.\n(D) Hydroxychloroquine showed no benefit in randomized trials; it would be correct only for a different question, such as lupus or malaria prophylaxis.\n(E) Azithromycin would be appropriate if a lobar consolidation, purulent sputum, or a high procalcitonin suggested bacterial pneumonia."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing an antiviral because the patient has a positive PCR test, ignoring that he is on day 8 and hypoxemic."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize bilateral lung opacities on a chest radiograph of a patient with laboratory-confirmed COVID-19 who needs supplemental oxygen and choose dexamethasone over antivirals intended for early, nonhypoxemic disease"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …73568772 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "산소가 필요한 COVID-19 폐렴(발병 8일째)에는 덱사메타손을 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "발병 8일째이고 산소가 필요하다 — 경구 항바이러스제는 산소가 필요 없는 발병 5일 안의 외래 환자용이다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 아래쪽·폐문 주위 흐린 음영 + SARS-CoV-2 양성 + 산소포화도 86% → 저산소혈증을 동반한 COVID-19 폐렴",
+    "발병 8일째 + 산소 필요 → 염증 단계, 덱사메타손"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 아래쪽·폐문 주위의 흐린 간유리·경화 음영",
+     "why": "양측성 바이러스 폐렴",
+     "also": []
+    },
+    {
+     "item": "Pulse oximetry shows 86% on room air",
+     "why": "산소 필요 — 덱사메타손 적응",
+     "also": []
+    },
+    {
+     "item": "positive 6 days ago",
+     "why": "원인 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "for 8 days",
+     "why": "항바이러스제 시기를 지남",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum creatinine and aminotransferase concentrations are within the reference ranges",
+     "why": "약물 선택에 큰 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "발병 8일째 저산소혈증과 양측 폐 음영을 보이는 COVID-19 폐렴이다. 산소와 함께 덱사메타손을 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "발병 3일째이고 산소포화도가 정상인 고위험 외래 환자라면 니르마트렐비르-리토나비르"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0750.png",
+   "caption": "Portable anteroposterior chest radiograph; monitoring leads are from the original, resized only (The Cancer Imaging Archive, CC BY 4.0; no crop or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.2174474549200723793231473568772",
+   "asset_id": "TCIA-COVID19_AR-01652319426884",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …73568772"
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0757",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "내분비 — 저칼륨혈증 동반 고혈압과 부신 결절",
+  "type": "내분비 — 저칼륨혈증 동반 고혈압과 부신 결절",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-22",
+  "vignette": "52세 남자가 혈압이 잘 조절되지 않아 왔다. 8년 전 고혈압을 진단받아 암로디핀·발사르탄·히드로클로로티아지드를 최대 용량으로 먹고 있지만 혈압은 162/98 mmHg 이다. 혈청 칼륨 3.1 mEq/L, 크레아티닌 0.9 mg/dL 이다. 혈장 알도스테론 28 ng/dL, 혈장 레닌 활성도 0.2 ng/mL/h 였고 생리식염수 부하 뒤에도 알도스테론은 14 ng/dL 로 억제되지 않았다. 부신 CT 에서 왼쪽 부신에 1.2 cm 의 저음영 결절이 있고 오른쪽 부신은 정상이다. 환자는 완치를 원하며 수술을 받을 수 있다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "스피로노락톤 투여 후 추적",
+   "경구 염분 부하 검사 추가",
+   "6개월 뒤 부신 CT 재촬영",
+   "부신정맥 채혈",
+   "왼쪽 복강경 부신절제술"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 저칼륨혈증을 동반한 저항성 고혈압에서 알도스테론/레닌 비가 높고 <b>생리식염수 부하로 억제되지 않아 원발성 알도스테론증이 확진</b>됐다. 수술을 원하므로 원인이 한쪽인지 가려야 한다. <b>35세 이상에서는 비기능성 부신 우연종이 흔해</b> CT 의 결절이 알도스테론을 만드는 병변이라고 단정할 수 없고, 양측 증식증이거나 반대쪽에 미세선종이 있을 수 있다. 그래서 수술 전에 부신정맥 채혈로 편측성을 확인한다.\n- 원리: <b>왜 CT 만으로는 부족한가</b>: 알도스테론 생성 선종은 흔히 1 cm 안팎으로 작아 CT 에 안 보이기도 하고, 반대로 나이가 들수록 호르몬을 만들지 않는 우연종이 흔해진다. CT 와 부신정맥 채혈을 비교한 연구에서 CT 로 정한 편측성은 약 40% 에서 틀렸다 — CT 만 믿고 수술하면 정상 부신을 떼거나, 양측 증식증 환자를 수술해 낫지 않게 할 수 있다.<br> <b>부신정맥 채혈의 원리</b>: 양쪽 부신정맥과 말초 정맥에서 알도스테론과 코르티솔을 함께 잰다. 코르티솔로 희석을 보정한 알도스테론 비가 한쪽이 다른 쪽보다 4배 이상 높으면 그쪽이 원인이다(편측화 지수). 편측이면 복강경 부신절제술로 칼륨이 거의 모두 정상화되고 혈압도 좋아진다.<br> <b>예외</b>: 35세 미만이고 저칼륨혈증·높은 알도스테론과 함께 CT 에서 한쪽에 뚜렷한 선종, 반대쪽이 정상이면 우연종 가능성이 낮아 채혈 없이 수술할 수 있다. 수술을 원하지 않거나 할 수 없으면 편측성 검사 없이 미네랄코르티코이드 수용체 길항제를 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">부신정맥 채혈 먼저 — 정답</th><th>곧바로 부신절제술 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>나이</td><td><b>35세 이상</b>(이 환자 52세)</td><td>35세 미만</td></tr> <tr><td>CT</td><td>작은 결절 — 우연종일 수 있음</td><td>한쪽 뚜렷한 선종 + 반대쪽 정상</td></tr> <tr><td>생화학</td><td>확진됨</td><td>저칼륨혈증·매우 높은 알도스테론</td></tr> <tr><td>위험</td><td>시술 실패·조영제 노출</td><td>틀린 쪽을 떼거나 양측 증식증에 수술</td></tr> </tbody></table> 나이와 CT 소견이 함께 「우연종일 가능성이 낮다」고 말할 때만 채혈을 건너뛴다.\n- 오답 이유:\n  - ① 스피로노락톤 장기 투여는 환자가 수술을 원하지 않거나 할 수 없거나, 채혈에서 양측 증식증으로 나왔다면 정답이 된다.\n  - ② 경구 염분 부하 검사는 생리식염수 부하 검사를 하지 않아 아직 확진되지 않았다면 대신 쓸 수 있는 확진 검사다.\n  - ③ 6개월 뒤 CT 재촬영은 호르몬을 만들지 않는 4 cm 미만의 양성 모양 부신 우연종을 추적하는 경우라면 고려할 수 있다.\n  - ⑤ 왼쪽 부신절제술은 35세 미만이고 CT 에서 한쪽에 뚜렷한 선종과 반대쪽 정상 부신이 보이거나, 채혈에서 왼쪽 편측화가 확인됐다면 정답이 된다.\n- 함정: CT 에서 한쪽 결절이 보이자 그것을 원인으로 단정해 곧바로 부신절제술을 고르는 것.\n- 학습목표: 확진된 원발성 알도스테론증에서 수술을 원하는 35세 이상 환자는 CT 의 편측 결절만으로 수술하지 않고 부신정맥 채혈로 편측성을 확인한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Funder JW, Carey RM, Mantero F, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "저칼륨혈증을 동반한 저항성 고혈압에서 알도스테론/레닌 비가 높고 <b>생리식염수 부하로 억제되지 않아 원발성 알도스테론증이 확진</b>됐다. 수술을 원하므로 원인이 한쪽인지 가려야 한다. <b>35세 이상에서는 비기능성 부신 우연종이 흔해</b> CT 의 결절이 알도스테론을 만드는 병변이라고 단정할 수 없고, 양측 증식증이거나 반대쪽에 미세선종이 있을 수 있다. 그래서 수술 전에 부신정맥 채혈로 편측성을 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 CT 만으로는 부족한가</b>: 알도스테론 생성 선종은 흔히 1 cm 안팎으로 작아 CT 에 안 보이기도 하고, 반대로 나이가 들수록 호르몬을 만들지 않는 우연종이 흔해진다. CT 와 부신정맥 채혈을 비교한 연구에서 CT 로 정한 편측성은 약 40% 에서 틀렸다 — CT 만 믿고 수술하면 정상 부신을 떼거나, 양측 증식증 환자를 수술해 낫지 않게 할 수 있다.<br> <b>부신정맥 채혈의 원리</b>: 양쪽 부신정맥과 말초 정맥에서 알도스테론과 코르티솔을 함께 잰다. 코르티솔로 희석을 보정한 알도스테론 비가 한쪽이 다른 쪽보다 4배 이상 높으면 그쪽이 원인이다(편측화 지수). 편측이면 복강경 부신절제술로 칼륨이 거의 모두 정상화되고 혈압도 좋아진다.<br> <b>예외</b>: 35세 미만이고 저칼륨혈증·높은 알도스테론과 함께 CT 에서 한쪽에 뚜렷한 선종, 반대쪽이 정상이면 우연종 가능성이 낮아 채혈 없이 수술할 수 있다. 수술을 원하지 않거나 할 수 없으면 편측성 검사 없이 미네랄코르티코이드 수용체 길항제를 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조건</th><th style=\"width:38%\">부신정맥 채혈 먼저 — 정답</th><th>곧바로 부신절제술 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>나이</td><td><b>35세 이상</b>(이 환자 52세)</td><td>35세 미만</td></tr> <tr><td>CT</td><td>작은 결절 — 우연종일 수 있음</td><td>한쪽 뚜렷한 선종 + 반대쪽 정상</td></tr> <tr><td>생화학</td><td>확진됨</td><td>저칼륨혈증·매우 높은 알도스테론</td></tr> <tr><td>위험</td><td>시술 실패·조영제 노출</td><td>틀린 쪽을 떼거나 양측 증식증에 수술</td></tr> </tbody></table> 나이와 CT 소견이 함께 「우연종일 가능성이 낮다」고 말할 때만 채혈을 건너뛴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 스피로노락톤 장기 투여는 환자가 수술을 원하지 않거나 할 수 없거나, 채혈에서 양측 증식증으로 나왔다면 정답이 된다.\n② 경구 염분 부하 검사는 생리식염수 부하 검사를 하지 않아 아직 확진되지 않았다면 대신 쓸 수 있는 확진 검사다.\n③ 6개월 뒤 CT 재촬영은 호르몬을 만들지 않는 4 cm 미만의 양성 모양 부신 우연종을 추적하는 경우라면 고려할 수 있다.\n⑤ 왼쪽 부신절제술은 35세 미만이고 CT 에서 한쪽에 뚜렷한 선종과 반대쪽 정상 부신이 보이거나, 채혈에서 왼쪽 편측화가 확인됐다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "CT 에서 한쪽 결절이 보이자 그것을 원인으로 단정해 곧바로 부신절제술을 고르는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "확진된 원발성 알도스테론증에서 수술을 원하는 35세 이상 환자는 CT 의 편측 결절만으로 수술하지 않고 부신정맥 채혈로 편측성을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Funder JW, Carey RM, Mantero F, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2016;101(5):1889-1916"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "확진된 원발성 알도스테론증에서 수술을 원하는 52세 환자는 CT 결절과 관계없이 부신정맥 채혈로 편측성을 확인한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "52세로 35세 이상 — 1.2 cm 결절이 비기능성 우연종일 수 있다",
+   "steps": 4,
+   "chain": [
+    "저칼륨혈증 + 저항성 고혈압 + 알도스테론 28 · 레닌 활성도 0.2 → 원발성 알도스테론증 의심",
+    "생리식염수 부하 뒤 알도스테론 14 ng/dL → 확진, 추가 확진 검사 불필요",
+    "수술을 원함 → 편측성 판정이 필요",
+    "52세(35세 이상) + 1.2 cm 결절 → CT 로는 불충분, 부신정맥 채혈"
+   ],
+   "key": [
+    {
+     "item": "생리식염수 부하 뒤에도 알도스테론은 14 ng/dL 로 억제되지 않았다",
+     "why": "확진",
+     "also": []
+    },
+    {
+     "item": "52세 남자",
+     "why": "35세 이상 — 우연종 흔함",
+     "also": []
+    },
+    {
+     "item": "왼쪽 부신에 1.2 cm 의 저음영 결절",
+     "why": "CT 만으로 원인 병변이라 단정 못 함",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "수술을 받을 수 있다",
+     "why": "편측성 검사의 전제",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 0.9 mg/dL",
+     "why": "조영제를 쓰는 채혈에 문제 없음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 칼륨 3.1 mEq/L",
+     "why": "원발성 알도스테론증을 시사하지만 다음 단계 선택에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "원발성 알도스테론증이 확진됐고 환자는 수술을 원한다. 52세라 CT 의 왼쪽 결절이 우연종일 수 있으므로 부신정맥 채혈로 편측성을 먼저 확인한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "28세이고 CT 에서 한쪽에 뚜렷한 선종과 정상 반대쪽 부신이 보였다면 곧바로 복강경 부신절제술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0756",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "부인과 — 무월경 6주의 질 출혈과 부속기 종괴",
+  "type": "부인과 — 무월경 6주의 질 출혈과 부속기 종괴",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-22",
+  "vignette": "A 29-year-old woman, gravida 1, para 0, comes to the emergency department because of light vaginal bleeding and mild left lower abdominal pain for 2 days. Her last menstrual period was 6 weeks ago. Temperature is 36.8°C, pulse is 78/min, and blood pressure is 118/74 mm Hg. The abdomen is soft with mild left lower quadrant tenderness and no rebound. Serum β-hCG concentration is 2,400 mIU/mL; it was 2,100 mIU/mL 48 hours ago. Transvaginal ultrasonography shows no intrauterine gestational sac and a 2.5-cm left adnexal mass containing a yolk sac without embryonic cardiac activity; there is no free fluid. Hemoglobin, serum creatinine, and aminotransferase levels are normal. She wishes to preserve fertility and can return for follow-up visits.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Expectant management with weekly β-hCG",
+   "Intramuscular methotrexate",
+   "Laparoscopic salpingectomy",
+   "Dilation and curettage",
+   "Repeat β-hCG measurement in 48 hours"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: A <b>yolk sac inside an adnexal mass with an empty uterus</b> confirms a tubal ectopic pregnancy, and the β-hCG plateau (14% rise in 48 hours) fits an abnormal pregnancy. She is <b>hemodynamically stable with no free fluid</b>, the β-hCG is <b>below 5,000 mIU/mL</b>, the mass is small with no cardiac activity, and renal and liver function are normal with reliable follow-up — all criteria for medical treatment with intramuscular methotrexate.\n- 원리: <b>Why methotrexate works</b>: Methotrexate inhibits dihydrofolate reductase and so blocks DNA synthesis in rapidly dividing cells. Trophoblast is among the fastest-dividing tissues, so a small, early ectopic pregnancy can be resolved without surgery and the tube preserved.<br> <b>Why the selection criteria matter</b>: Success falls as trophoblast mass rises. A β-hCG above about 5,000 mIU/mL, embryonic cardiac activity, or a mass larger than about 3.5–4 cm predicts failure and later rupture. Rupture is a surgical emergency, so methotrexate is reserved for stable patients without signs of rupture who can return for serial β-hCG on days 4 and 7 until the level is undetectable.<br> <b>Why the diagnosis is secure without more waiting</b>: An extrauterine yolk sac or embryo is diagnostic. Without it, an adnexal mass and an abnormal β-hCG trend would only make ectopic pregnancy likely, and repeating β-hCG to exclude an early intrauterine pregnancy would be reasonable before giving a teratogen.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Methotrexate (answer)</th><th>Laparoscopic surgery (closest distractor)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td>Stable, no free fluid</td><td>Unstable or hemoperitoneum</td></tr> <tr><td>β-hCG</td><td><b>&lt; 5,000 mIU/mL</b></td><td>High</td></tr> <tr><td>Ultrasound</td><td>Mass &lt; 3.5–4 cm, <b>no cardiac activity</b></td><td>Larger mass or embryonic cardiac activity</td></tr> <tr><td>Other</td><td>Normal renal/liver function, can follow up</td><td>Contraindication to methotrexate, cannot follow up</td></tr> </tbody></table> If any right-column feature is present, surgery is preferred; otherwise medical treatment preserves the tube.\n- 오답 이유:\n  - (A) Expectant management would be correct if the β-hCG were low (for example below 200 mIU/mL) and already falling.\n  - (C) Laparoscopic salpingectomy would be correct with signs of rupture, embryonic cardiac activity, a very high β-hCG, or inability to follow up.\n  - (D) Dilation and curettage would be correct to look for chorionic villi when the location is unknown and the pregnancy is clearly nonviable.\n  - (E) Repeating β-hCG would be correct if ultrasound showed no extrauterine yolk sac or embryo and the location were still uncertain.\n- 함정: Choosing surgery for any confirmed ectopic pregnancy without applying the criteria for medical treatment.\n- 학습목표: Select intramuscular methotrexate for a hemodynamically stable, unruptured tubal ectopic pregnancy with a low β-hCG, a small mass without cardiac activity, and reliable follow-up\n- 근거·출처: American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol. 2018;131(3):e91-e103",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A <b>yolk sac inside an adnexal mass with an empty uterus</b> confirms a tubal ectopic pregnancy, and the β-hCG plateau (14% rise in 48 hours) fits an abnormal pregnancy. She is <b>hemodynamically stable with no free fluid</b>, the β-hCG is <b>below 5,000 mIU/mL</b>, the mass is small with no cardiac activity, and renal and liver function are normal with reliable follow-up — all criteria for medical treatment with intramuscular methotrexate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why methotrexate works</b>: Methotrexate inhibits dihydrofolate reductase and so blocks DNA synthesis in rapidly dividing cells. Trophoblast is among the fastest-dividing tissues, so a small, early ectopic pregnancy can be resolved without surgery and the tube preserved.<br> <b>Why the selection criteria matter</b>: Success falls as trophoblast mass rises. A β-hCG above about 5,000 mIU/mL, embryonic cardiac activity, or a mass larger than about 3.5–4 cm predicts failure and later rupture. Rupture is a surgical emergency, so methotrexate is reserved for stable patients without signs of rupture who can return for serial β-hCG on days 4 and 7 until the level is undetectable.<br> <b>Why the diagnosis is secure without more waiting</b>: An extrauterine yolk sac or embryo is diagnostic. Without it, an adnexal mass and an abnormal β-hCG trend would only make ectopic pregnancy likely, and repeating β-hCG to exclude an early intrauterine pregnancy would be reasonable before giving a teratogen."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Methotrexate (answer)</th><th>Laparoscopic surgery (closest distractor)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td>Stable, no free fluid</td><td>Unstable or hemoperitoneum</td></tr> <tr><td>β-hCG</td><td><b>&lt; 5,000 mIU/mL</b></td><td>High</td></tr> <tr><td>Ultrasound</td><td>Mass &lt; 3.5–4 cm, <b>no cardiac activity</b></td><td>Larger mass or embryonic cardiac activity</td></tr> <tr><td>Other</td><td>Normal renal/liver function, can follow up</td><td>Contraindication to methotrexate, cannot follow up</td></tr> </tbody></table> If any right-column feature is present, surgery is preferred; otherwise medical treatment preserves the tube."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Expectant management would be correct if the β-hCG were low (for example below 200 mIU/mL) and already falling.\n(C) Laparoscopic salpingectomy would be correct with signs of rupture, embryonic cardiac activity, a very high β-hCG, or inability to follow up.\n(D) Dilation and curettage would be correct to look for chorionic villi when the location is unknown and the pregnancy is clearly nonviable.\n(E) Repeating β-hCG would be correct if ultrasound showed no extrauterine yolk sac or embryo and the location were still uncertain."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing surgery for any confirmed ectopic pregnancy without applying the criteria for medical treatment."
+   },
+   {
+    "k": "학습목표",
+    "v": "Select intramuscular methotrexate for a hemodynamically stable, unruptured tubal ectopic pregnancy with a low β-hCG, a small mass without cardiac activity, and reliable follow-up"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol. 2018;131(3):e91-e103"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "혈역학적으로 안정되고 β-hCG 가 5,000 미만이며 심박동 없는 작은 난관 임신은 메토트렉세이트 근육주사로 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "활력징후가 안정되고 복강 내 액체가 없으며 β-hCG 2,400 · 2.5 cm 종괴 · 심박동 없음",
+   "steps": 3,
+   "chain": [
+    "빈 자궁 + 부속기 종괴 안의 난황낭 → 난관 임신 확진",
+    "안정된 활력징후 + 복강 내 액체 없음 → 파열 없음",
+    "β-hCG 2,400 + 2.5 cm + 심박동 없음 + 신·간 기능 정상 + 추적 가능 → 메토트렉세이트"
+   ],
+   "key": [
+    {
+     "item": "a 2.5-cm left adnexal mass containing a yolk sac without embryonic cardiac activity",
+     "why": "난관 임신 확진과 약물치료 조건",
+     "also": []
+    },
+    {
+     "item": "Serum β-hCG concentration is 2,400 mIU/mL",
+     "why": "5,000 미만",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no free fluid",
+     "why": "파열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "blood pressure is 118/74 mm Hg",
+     "why": "안정 — 수술 응급 아님",
+     "also": []
+    },
+    {
+     "item": "serum creatinine, and aminotransferase levels are normal",
+     "why": "메토트렉세이트 금기 없음",
+     "also": []
+    },
+    {
+     "item": "can return for follow-up visits",
+     "why": "β-hCG 추적 가능",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "난황낭이 든 부속기 종괴로 난관 임신이 확진됐고 파열 소견이 없다. β-hCG 와 종괴 크기가 기준 안이므로 메토트렉세이트를 근육주사한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "혈압이 80/50 mmHg 로 떨어지고 복강 내 액체가 많았다면 복강경 수술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0755",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "혈액 — 혼동과 자반을 보이는 젊은 여성의 혈구감소",
+  "type": "혈액 — 혼동과 자반을 보이는 젊은 여성의 혈구감소",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-22",
+  "vignette": "32세 여자가 3일 전부터 머리가 아프고 말이 어눌해졌다가 좋아지기를 반복하여 응급실에 왔다. 다리에 붉은 점들이 생겼다. 먹는 약은 없고 설사는 없었다. 체온 37.8℃, 혈압 124/78 mmHg, 맥박 102회/분이다. 다리에 점상출혈이 있고 신경학적 진찰에서 지금은 국소 이상이 없다. 혈색소 7.8 g/dL, 혈소판 18,000/mm³, 망상적혈구 8%, 젖산탈수소효소 1,450 U/L, 간접 빌리루빈 2.8 mg/dL, 크레아티닌 1.1 mg/dL, 프로트롬빈 시간·활성화 부분트롬보플라스틴 시간·피브리노겐은 정상, 직접 항글로불린 검사는 음성이다. 말초혈액도말에서 분열적혈구가 많다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "혈장교환술",
+   "혈소판 수혈",
+   "정맥 면역글로불린",
+   "에쿨리주맙",
+   "동결침전제제"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: <b>분열적혈구가 있는 쿰스 음성 용혈</b>(LDH·간접 빌리루빈·망상적혈구 상승)과 <b>혈소판 18,000</b> 의 미세혈관병성 용혈성 빈혈이다. 응고검사가 정상이라 파종성 혈관내응고가 아니고, 오락가락하는 신경 증상·미열이 있으며 크레아티닌은 거의 정상이다 — <b>혈전성 혈소판감소성 자반증</b>을 강하게 시사한다. ADAMTS13 결과를 기다리지 말고 즉시 혈장교환술(과 글루코코르티코이드)을 시작한다.\n- 원리: <b>왜 혈소판 혈전이 생기는가</b>: 내피세포는 아주 큰 폰빌레브란트 인자(vWF) 다량체를 분비하고, 혈장의 ADAMTS13 이 이를 잘게 잘라 혈소판이 함부로 붙지 않게 한다. 후천성 TTP 에서는 <b>ADAMTS13 에 대한 자가항체</b>로 효소 활성이 10% 미만으로 떨어져 초대형 vWF 가 세동맥·모세혈관에서 혈소판을 붙잡아 미세혈전을 만든다. 혈소판은 소모되고, 좁아진 혈관을 지나던 적혈구는 찢겨 분열적혈구가 된다.<br> <b>왜 혈장교환인가</b>: 혈장교환은 자가항체와 초대형 vWF 를 걷어 내고 정상 ADAMTS13 을 공급한다. 치료하지 않으면 사망률이 90% 에 이르지만 혈장교환으로 10~20% 로 떨어진다. 글루코코르티코이드·리툭시맙은 항체 생성을 줄이고, 카플라시주맙은 vWF 와 혈소판의 결합을 막는다.<br> <b>왜 신경 증상과 신장이 갈리는가</b>: TTP 의 미세혈전은 뇌·심장에 잘 생겨 오락가락하는 신경 증상이 특징이고 신장 손상은 대개 가볍다. 반대로 보체 매개 용혈성 요독 증후군은 사구체 내피 손상이 중심이라 급성 신손상이 두드러진다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">TTP — 혈장교환(정답)</th><th>비전형 HUS — 에쿨리주맙(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기전</td><td>ADAMTS13 결핍(&lt; 10%)</td><td>보체 대체경로 조절 이상</td></tr> <tr><td>혈소판</td><td><b>대개 &lt; 30,000</b></td><td>대개 더 높음</td></tr> <tr><td>크레아티닌</td><td><b>정상~경도 상승</b></td><td><b>&gt; 2 mg/dL, 투석 필요 흔함</b></td></tr> <tr><td>신경 증상</td><td>흔함, 오락가락</td><td>덜 흔함</td></tr> </tbody></table> 혈소판이 매우 낮고 신기능이 보존되면 TTP 쪽(PLASMIC 점수 높음)이므로 먼저 혈장교환을 시작하고, ADAMTS13 이 정상으로 나오면 에쿨리주맙을 고려한다.\n- 오답 이유:\n  - ② 혈소판 수혈은 TTP 에서 미세혈전을 늘릴 수 있어 피하며, 생명을 위협하는 출혈이나 시술 직전이라면 고려할 수 있다.\n  - ③ 정맥 면역글로불린은 분열적혈구 없이 혈소판만 감소한 면역 혈소판감소증에서 빠른 상승이 필요하다면 정답이 된다.\n  - ④ 에쿨리주맙은 ADAMTS13 활성이 정상이고 급성 신손상이 두드러진 보체 매개 비전형 HUS 라면 정답이 된다.\n  - ⑤ 동결침전제제는 피브리노겐이 크게 떨어지고 응고시간이 늘어난 파종성 혈관내응고의 출혈이라면 정답이 된다.\n- 함정: 혈소판이 18,000 이라는 숫자에 끌려 혈소판 수혈을 고르는 것.\n- 학습목표: 미세혈관병성 용혈성 빈혈과 심한 혈소판감소에 신경 증상이 있고 신기능이 거의 정상이면 혈전성 혈소판감소성 자반증으로 보고 즉시 혈장교환술을 시작한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2020;18(10):2496-2502",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "<b>분열적혈구가 있는 쿰스 음성 용혈</b>(LDH·간접 빌리루빈·망상적혈구 상승)과 <b>혈소판 18,000</b> 의 미세혈관병성 용혈성 빈혈이다. 응고검사가 정상이라 파종성 혈관내응고가 아니고, 오락가락하는 신경 증상·미열이 있으며 크레아티닌은 거의 정상이다 — <b>혈전성 혈소판감소성 자반증</b>을 강하게 시사한다. ADAMTS13 결과를 기다리지 말고 즉시 혈장교환술(과 글루코코르티코이드)을 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 혈소판 혈전이 생기는가</b>: 내피세포는 아주 큰 폰빌레브란트 인자(vWF) 다량체를 분비하고, 혈장의 ADAMTS13 이 이를 잘게 잘라 혈소판이 함부로 붙지 않게 한다. 후천성 TTP 에서는 <b>ADAMTS13 에 대한 자가항체</b>로 효소 활성이 10% 미만으로 떨어져 초대형 vWF 가 세동맥·모세혈관에서 혈소판을 붙잡아 미세혈전을 만든다. 혈소판은 소모되고, 좁아진 혈관을 지나던 적혈구는 찢겨 분열적혈구가 된다.<br> <b>왜 혈장교환인가</b>: 혈장교환은 자가항체와 초대형 vWF 를 걷어 내고 정상 ADAMTS13 을 공급한다. 치료하지 않으면 사망률이 90% 에 이르지만 혈장교환으로 10~20% 로 떨어진다. 글루코코르티코이드·리툭시맙은 항체 생성을 줄이고, 카플라시주맙은 vWF 와 혈소판의 결합을 막는다.<br> <b>왜 신경 증상과 신장이 갈리는가</b>: TTP 의 미세혈전은 뇌·심장에 잘 생겨 오락가락하는 신경 증상이 특징이고 신장 손상은 대개 가볍다. 반대로 보체 매개 용혈성 요독 증후군은 사구체 내피 손상이 중심이라 급성 신손상이 두드러진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">TTP — 혈장교환(정답)</th><th>비전형 HUS — 에쿨리주맙(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기전</td><td>ADAMTS13 결핍(&lt; 10%)</td><td>보체 대체경로 조절 이상</td></tr> <tr><td>혈소판</td><td><b>대개 &lt; 30,000</b></td><td>대개 더 높음</td></tr> <tr><td>크레아티닌</td><td><b>정상~경도 상승</b></td><td><b>&gt; 2 mg/dL, 투석 필요 흔함</b></td></tr> <tr><td>신경 증상</td><td>흔함, 오락가락</td><td>덜 흔함</td></tr> </tbody></table> 혈소판이 매우 낮고 신기능이 보존되면 TTP 쪽(PLASMIC 점수 높음)이므로 먼저 혈장교환을 시작하고, ADAMTS13 이 정상으로 나오면 에쿨리주맙을 고려한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 혈소판 수혈은 TTP 에서 미세혈전을 늘릴 수 있어 피하며, 생명을 위협하는 출혈이나 시술 직전이라면 고려할 수 있다.\n③ 정맥 면역글로불린은 분열적혈구 없이 혈소판만 감소한 면역 혈소판감소증에서 빠른 상승이 필요하다면 정답이 된다.\n④ 에쿨리주맙은 ADAMTS13 활성이 정상이고 급성 신손상이 두드러진 보체 매개 비전형 HUS 라면 정답이 된다.\n⑤ 동결침전제제는 피브리노겐이 크게 떨어지고 응고시간이 늘어난 파종성 혈관내응고의 출혈이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판이 18,000 이라는 숫자에 끌려 혈소판 수혈을 고르는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "미세혈관병성 용혈성 빈혈과 심한 혈소판감소에 신경 증상이 있고 신기능이 거의 정상이면 혈전성 혈소판감소성 자반증으로 보고 즉시 혈장교환술을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2020;18(10):2496-2502"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "쿰스 음성 미세혈관병성 용혈과 심한 혈소판감소에 신경 증상·정상 신기능이면 TTP 로 보고 즉시 혈장교환술을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "크레아티닌 1.1 로 신기능이 보존되고 혈소판이 18,000 으로 매우 낮으며 신경 증상이 있다",
+   "steps": 3,
+   "chain": [
+    "분열적혈구 + LDH·간접 빌리루빈·망상적혈구 상승 + 직접 항글로불린 음성 → 미세혈관병성 용혈성 빈혈",
+    "응고검사 정상 + 혈소판 18,000 + 오락가락하는 신경 증상 + 크레아티닌 1.1 → 파종성 혈관내응고·HUS 보다 TTP",
+    "TTP 의심 → ADAMTS13 결과 전 즉시 혈장교환술"
+   ],
+   "key": [
+    {
+     "item": "분열적혈구가 많다",
+     "why": "미세혈관병성 용혈",
+     "also": []
+    },
+    {
+     "item": "혈소판 18,000/mm³",
+     "why": "심한 소모성 혈소판감소",
+     "also": []
+    },
+    {
+     "item": "말이 어눌해졌다가 좋아지기를 반복",
+     "why": "TTP 의 오락가락하는 신경 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "크레아티닌 1.1 mg/dL",
+     "why": "비전형 HUS 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "프로트롬빈 시간·활성화 부분트롬보플라스틴 시간·피브리노겐은 정상",
+     "why": "파종성 혈관내응고 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "직접 항글로불린 검사는 음성",
+     "why": "자가면역 용혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "설사는 없었다",
+     "why": "장출혈성 대장균 HUS 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "쿰스 음성 미세혈관병성 용혈과 심한 혈소판감소에 신경 증상이 있고 신기능은 보존됐다. TTP 이므로 즉시 혈장교환술을 시작한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "ADAMTS13 활성이 정상이고 크레아티닌이 4 mg/dL 로 올라 투석이 필요했다면 에쿨리주맙"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0752",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "소화기 — 채용 검진의 B형 간염 혈청검사 해석",
+  "type": "소화기 — 채용 검진의 B형 간염 혈청검사 해석",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-22",
+  "vignette": "A 34-year-old man comes to the clinic for a preemployment health examination at a hospital. He feels well and has no history of jaundice. He does not know whether he received hepatitis B vaccination as a child. He drinks alcohol occasionally and takes no medications. Physical examination shows no abnormalities. Serum ALT activity is 22 U/L. Serologic studies show: HBsAg negative; anti-HBs positive (180 mIU/mL); IgM anti-HBc negative; IgG anti-HBc positive; HBV DNA undetectable.",
+  "question": "Which of the following best explains these findings?",
+  "options": [
+   "Occult hepatitis B infection with ongoing replication",
+   "Resolved past hepatitis B infection with immunity",
+   "Immunity from hepatitis B vaccination alone",
+   "Chronic hepatitis B infection in an inactive phase",
+   "Acute hepatitis B infection in the window period"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: HBsAg is negative and HBV DNA is undetectable, so there is no current infection. <b>Anti-HBc (IgG) is positive</b>, which can arise only from exposure to the virus itself because the vaccine contains HBsAg alone. <b>Anti-HBs is positive</b>, showing protective immunity. Positive anti-HBc plus positive anti-HBs with negative HBsAg is resolved natural infection.\n- 원리: <b>Why anti-HBc separates infection from vaccination</b>: Hepatitis B vaccines are recombinant HBsAg. A vaccinated person therefore makes only anti-HBs. The core antigen is made only inside infected hepatocytes during viral replication, so any anti-HBc — IgM early, IgG for life — is proof that the virus once replicated in the liver.<br> <b>Reading the panel in order</b>: HBsAg tells whether infection is present now; anti-HBc tells whether infection ever occurred; anti-HBs tells whether there is immunity. IgM anti-HBc marks recent infection and is the only marker during the window period, when HBsAg has cleared but anti-HBs has not yet appeared.<br> <b>Why it still matters</b>: Even after recovery, covalently closed circular DNA persists in hepatocytes. Strong immunosuppression such as rituximab can reactivate HBV in an anti-HBc-positive person, so this result must be remembered before such therapy.\n- 비교: <table><thead><tr><th style=\"width:24%\">Marker</th><th style=\"width:38%\">Resolved infection (answer)</th><th>Vaccination (closest distractor)</th></tr></thead><tbody> <tr><td>HBsAg</td><td>Negative</td><td>Negative</td></tr> <tr><td>Anti-HBs</td><td>Positive</td><td>Positive</td></tr> <tr><td>Anti-HBc (total/IgG)</td><td><b>Positive</b></td><td><b>Negative</b></td></tr> <tr><td>Reactivation risk with rituximab</td><td>Present</td><td>None</td></tr> </tbody></table> Only anti-HBc differs; when the two rows look alike, look for the core antibody.\n- 오답 이유:\n  - (A) Occult infection would be correct if HBV DNA were detectable in serum or liver despite negative HBsAg, usually with anti-HBc.\n  - (C) Vaccine-only immunity would be correct if anti-HBs were positive but anti-HBc were negative, because the vaccine contains no core antigen.\n  - (D) Inactive chronic hepatitis B would be correct if HBsAg remained positive for more than 6 months with low HBV DNA and normal ALT.\n  - (E) The window period would be correct if both HBsAg and anti-HBs were negative and IgM anti-HBc were positive after recent acute hepatitis.\n- 함정: Assuming that a positive anti-HBs always means vaccination, ignoring the anti-HBc result.\n- 학습목표: Interpret a hepatitis B serologic panel with negative HBsAg, positive anti-HBs, and positive IgG anti-HBc as resolved past infection with immunity, and distinguish it from vaccine-induced immunity\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 350: Acute Viral Hepatitis · Terrault NA, Lok ASF, McMahon BJ, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. Hepatology. 2018;67(4):1560-1599",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "HBsAg is negative and HBV DNA is undetectable, so there is no current infection. <b>Anti-HBc (IgG) is positive</b>, which can arise only from exposure to the virus itself because the vaccine contains HBsAg alone. <b>Anti-HBs is positive</b>, showing protective immunity. Positive anti-HBc plus positive anti-HBs with negative HBsAg is resolved natural infection."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why anti-HBc separates infection from vaccination</b>: Hepatitis B vaccines are recombinant HBsAg. A vaccinated person therefore makes only anti-HBs. The core antigen is made only inside infected hepatocytes during viral replication, so any anti-HBc — IgM early, IgG for life — is proof that the virus once replicated in the liver.<br> <b>Reading the panel in order</b>: HBsAg tells whether infection is present now; anti-HBc tells whether infection ever occurred; anti-HBs tells whether there is immunity. IgM anti-HBc marks recent infection and is the only marker during the window period, when HBsAg has cleared but anti-HBs has not yet appeared.<br> <b>Why it still matters</b>: Even after recovery, covalently closed circular DNA persists in hepatocytes. Strong immunosuppression such as rituximab can reactivate HBV in an anti-HBc-positive person, so this result must be remembered before such therapy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Marker</th><th style=\"width:38%\">Resolved infection (answer)</th><th>Vaccination (closest distractor)</th></tr></thead><tbody> <tr><td>HBsAg</td><td>Negative</td><td>Negative</td></tr> <tr><td>Anti-HBs</td><td>Positive</td><td>Positive</td></tr> <tr><td>Anti-HBc (total/IgG)</td><td><b>Positive</b></td><td><b>Negative</b></td></tr> <tr><td>Reactivation risk with rituximab</td><td>Present</td><td>None</td></tr> </tbody></table> Only anti-HBc differs; when the two rows look alike, look for the core antibody."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Occult infection would be correct if HBV DNA were detectable in serum or liver despite negative HBsAg, usually with anti-HBc.\n(C) Vaccine-only immunity would be correct if anti-HBs were positive but anti-HBc were negative, because the vaccine contains no core antigen.\n(D) Inactive chronic hepatitis B would be correct if HBsAg remained positive for more than 6 months with low HBV DNA and normal ALT.\n(E) The window period would be correct if both HBsAg and anti-HBs were negative and IgM anti-HBc were positive after recent acute hepatitis."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming that a positive anti-HBs always means vaccination, ignoring the anti-HBc result."
+   },
+   {
+    "k": "학습목표",
+    "v": "Interpret a hepatitis B serologic panel with negative HBsAg, positive anti-HBs, and positive IgG anti-HBc as resolved past infection with immunity, and distinguish it from vaccine-induced immunity"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 350: Acute Viral Hepatitis · Terrault NA, Lok ASF, McMahon BJ, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. Hepatology. 2018;67(4):1560-1599"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "HBsAg 음성·anti-HBs 양성·IgG anti-HBc 양성은 회복된 과거 감염과 면역이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "IgG anti-HBc 양성 — 백신으로는 생기지 않는다",
+   "steps": 2,
+   "chain": [
+    "HBsAg 음성 + HBV DNA 검출 안 됨 → 현재 감염 없음",
+    "IgG anti-HBc 양성 + anti-HBs 양성 → 자연 감염 후 회복·면역"
+   ],
+   "key": [
+    {
+     "item": "IgG anti-HBc positive",
+     "why": "자연 감염의 증거",
+     "also": []
+    },
+    {
+     "item": "anti-HBs positive (180 mIU/mL)",
+     "why": "면역",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "HBsAg negative",
+     "why": "현재 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "IgM anti-HBc negative",
+     "why": "최근 급성 감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He does not know whether he received hepatitis B vaccination",
+     "why": "병력으로는 가를 수 없어 혈청검사로 판단",
+     "also": []
+    }
+   ],
+   "summary": "현재 감염 표지는 없고 anti-HBc 와 anti-HBs 가 모두 양성이다. 자연 감염에서 회복해 면역이 생긴 상태다.",
+   "switch": {
+    "choice": "C",
+    "condition": "anti-HBc 가 음성이었다면 백신에 의한 면역"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0749",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·소화기·근골격·영상 판독·혈액·부인과·내분비)",
+  "subtopic": "병리 — 경색 이틀째 심근의 현미경 소견",
+  "type": "병리 — 경색 이틀째 심근의 현미경 소견",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-22",
+  "vignette": "64세 남자가 가슴을 쥐어짜는 통증이 시작되고 30시간 뒤에 응급실에 왔다. 당뇨병이 있고 30갑년의 흡연력이 있다. 심전도에서 V1~V4 에 ST 분절 상승과 Q파가 있었고 혈청 트로포닌 I 가 크게 올라 있었다. 증상 발생 뒤 시간이 많이 지나 재관류 치료는 하지 않았다. 입원 이튿날(통증 시작 약 48시간 뒤) 갑자기 심실세동으로 숨졌다. 부검에서 좌전하행지가 혈전으로 막혀 있었다.",
+  "question": "좌심실 앞벽 경색 부위의 현미경 소견으로 가장 적절한 것은?",
+  "options": [
+   "대식세포의 탐식과 신생 혈관이 많은 육아조직",
+   "세포가 적고 콜라겐이 치밀한 섬유성 흉터",
+   "염증 없이 호산성 수축띠만 있는 심근섬유",
+   "림프구·형질세포 침윤과 간질의 섬유화",
+   "핵이 사라진 응고괴사 심근섬유 사이의 호중구 침윤"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 재관류 없이 경색이 생기고 약 48시간이 지났다. 경색 후 <b>4~12시간부터 응고괴사</b>가 시작되어 심근섬유는 호산성이 짙어지고 핵이 사라지지만 섬유의 윤곽은 남는다. <b>12~24시간부터 호중구가 경계부로 몰려들어 1~3일에 가장 많다</b>. 대식세포의 탐식(3~7일)과 육아조직(7~14일), 흉터(2개월 이후)는 아직 생기지 않았다.\n- 원리: <b>왜 응고괴사인가</b>: 허혈로 ATP 가 고갈되면 세포 안이 산성화되어 구조 단백질뿐 아니라 <b>분해 효소까지 변성</b>된다. 효소가 작동하지 않으니 세포는 녹지 않고 단백질이 굳은 채 윤곽을 유지한다 — 심장·신장·비장 같은 고형 장기의 허혈성 괴사가 응고괴사인 이유다(뇌는 지방이 많고 효소가 풍부해 액화괴사).<br> <b>왜 염증세포가 순서대로 오는가</b>: 죽은 세포가 내놓는 손상 관련 분자 패턴(DAMP)과 보체가 먼저 호중구를 부르고(1~3일), 호중구가 죽어 가며 내는 신호와 사이토카인이 단핵구를 대식세포로 끌어들여 잔해를 치운다(3~7일). 치운 자리에 섬유모세포와 신생 혈관이 들어와 육아조직이 되고(1~2주), 콜라겐이 쌓여 흉터가 된다(2개월).<br> <b>임상과의 연결</b>: 3~7일에 대식세포가 괴사 조직을 녹여 벽이 가장 약하므로 이때 심실벽 파열·유두근 파열이 잘 생긴다. 48시간째 급사는 경색 경계부의 전기적 불안정에 의한 심실성 부정맥이 흔하다.\n- 비교: <table><thead><tr><th style=\"width:22%\">시기</th><th style=\"width:39%\">1~3일 — 정답</th><th>3~10일 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>심근섬유</td><td><b>응고괴사</b>: 짙은 호산성, 핵 소실, 윤곽 유지</td><td>괴사 섬유가 녹아 사라지기 시작</td></tr> <tr><td>주된 세포</td><td><b>호중구</b>(경계부에서 안쪽으로)</td><td>대식세포, 이어서 섬유모세포·신생 혈관</td></tr> <tr><td>육안</td><td>얼룩덜룩한 황갈색</td><td>노랗고 무르며 경계가 붉은 테</td></tr> <tr><td>합병증</td><td>부정맥, 섬유소성 심낭염</td><td>벽·유두근·중격 파열</td></tr> </tbody></table> 「호중구 → 대식세포 → 육아조직 → 흉터」의 순서와 대략의 날짜(1~3일, 3~7일, 1~2주, 2개월)를 짝지어 두면 어느 날짜를 물어도 답할 수 있다.\n- 오답 이유:\n  - ① 대식세포 탐식과 육아조직은 경색 뒤 5~10일째 숨진 환자라면 정답이 된다 — 이 시기에 벽이 가장 약해 파열이 생긴다.\n  - ② 치밀한 섬유성 흉터는 경색 뒤 2개월 이상 지나 오래된 경색 부위를 보았다면 정답이 된다.\n  - ③ 염증 없는 수축띠 괴사는 재관류 치료(혈전용해·스텐트) 직후 칼슘이 몰려든 심근이나 카테콜아민 과잉이라면 두드러진다.\n  - ④ 림프구·형질세포 침윤과 섬유화는 바이러스 심근염이나 만성 거부반응 같은 면역 매개 손상이라면 정답에 가깝다.\n- 함정: 수축띠 괴사를 경색의 일반적 초기 소견으로 외워, 재관류가 없었다는 단서를 놓치는 것.\n- 학습목표: 재관류되지 않은 심근경색 발생 1~3일의 조직 소견(응고괴사와 호중구 침윤)을 시간 경과에 따른 다른 시기의 소견과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction · Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2020. Chapter 12: The Heart",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "재관류 없이 경색이 생기고 약 48시간이 지났다. 경색 후 <b>4~12시간부터 응고괴사</b>가 시작되어 심근섬유는 호산성이 짙어지고 핵이 사라지지만 섬유의 윤곽은 남는다. <b>12~24시간부터 호중구가 경계부로 몰려들어 1~3일에 가장 많다</b>. 대식세포의 탐식(3~7일)과 육아조직(7~14일), 흉터(2개월 이후)는 아직 생기지 않았다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 응고괴사인가</b>: 허혈로 ATP 가 고갈되면 세포 안이 산성화되어 구조 단백질뿐 아니라 <b>분해 효소까지 변성</b>된다. 효소가 작동하지 않으니 세포는 녹지 않고 단백질이 굳은 채 윤곽을 유지한다 — 심장·신장·비장 같은 고형 장기의 허혈성 괴사가 응고괴사인 이유다(뇌는 지방이 많고 효소가 풍부해 액화괴사).<br> <b>왜 염증세포가 순서대로 오는가</b>: 죽은 세포가 내놓는 손상 관련 분자 패턴(DAMP)과 보체가 먼저 호중구를 부르고(1~3일), 호중구가 죽어 가며 내는 신호와 사이토카인이 단핵구를 대식세포로 끌어들여 잔해를 치운다(3~7일). 치운 자리에 섬유모세포와 신생 혈관이 들어와 육아조직이 되고(1~2주), 콜라겐이 쌓여 흉터가 된다(2개월).<br> <b>임상과의 연결</b>: 3~7일에 대식세포가 괴사 조직을 녹여 벽이 가장 약하므로 이때 심실벽 파열·유두근 파열이 잘 생긴다. 48시간째 급사는 경색 경계부의 전기적 불안정에 의한 심실성 부정맥이 흔하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">시기</th><th style=\"width:39%\">1~3일 — 정답</th><th>3~10일 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>심근섬유</td><td><b>응고괴사</b>: 짙은 호산성, 핵 소실, 윤곽 유지</td><td>괴사 섬유가 녹아 사라지기 시작</td></tr> <tr><td>주된 세포</td><td><b>호중구</b>(경계부에서 안쪽으로)</td><td>대식세포, 이어서 섬유모세포·신생 혈관</td></tr> <tr><td>육안</td><td>얼룩덜룩한 황갈색</td><td>노랗고 무르며 경계가 붉은 테</td></tr> <tr><td>합병증</td><td>부정맥, 섬유소성 심낭염</td><td>벽·유두근·중격 파열</td></tr> </tbody></table> 「호중구 → 대식세포 → 육아조직 → 흉터」의 순서와 대략의 날짜(1~3일, 3~7일, 1~2주, 2개월)를 짝지어 두면 어느 날짜를 물어도 답할 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 대식세포 탐식과 육아조직은 경색 뒤 5~10일째 숨진 환자라면 정답이 된다 — 이 시기에 벽이 가장 약해 파열이 생긴다.\n② 치밀한 섬유성 흉터는 경색 뒤 2개월 이상 지나 오래된 경색 부위를 보았다면 정답이 된다.\n③ 염증 없는 수축띠 괴사는 재관류 치료(혈전용해·스텐트) 직후 칼슘이 몰려든 심근이나 카테콜아민 과잉이라면 두드러진다.\n④ 림프구·형질세포 침윤과 섬유화는 바이러스 심근염이나 만성 거부반응 같은 면역 매개 손상이라면 정답에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "수축띠 괴사를 경색의 일반적 초기 소견으로 외워, 재관류가 없었다는 단서를 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "재관류되지 않은 심근경색 발생 1~3일의 조직 소견(응고괴사와 호중구 침윤)을 시간 경과에 따른 다른 시기의 소견과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction · Kumar V, Abbas AK, Aster JC, eds. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Elsevier; 2020. Chapter 12: The Heart"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "재관류 없는 심근경색 약 48시간째에는 응고괴사와 호중구 침윤이 주된 소견이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "통증 시작 약 48시간 뒤 숨졌다 — 대식세포·육아조직이 생기는 3~10일 이전이다",
+   "steps": 2,
+   "chain": [
+    "통증 시작 약 48시간 뒤 사망 + 재관류 치료 없음 → 경색 1~3일 시기",
+    "1~3일 → 응고괴사와 호중구 침윤이 가장 두드러진다"
+   ],
+   "key": [
+    {
+     "item": "통증 시작 약 48시간 뒤",
+     "why": "조직 시기를 정한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "재관류 치료는 하지 않았다",
+     "why": "수축띠 괴사가 두드러질 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "좌전하행지가 혈전으로 막혀 있었다",
+     "why": "경색 원인 — 조직 시기 판단에는 영향 없음",
+     "also": []
+    },
+    {
+     "item": "심실세동으로 숨졌다",
+     "why": "초기 급사의 흔한 기전",
+     "also": []
+    },
+    {
+     "item": "30갑년의 흡연력",
+     "why": "위험인자 — 판단과 무관",
+     "also": []
+    }
+   ],
+   "summary": "재관류 없는 경색에서 약 48시간이 지났으므로 응고괴사와 호중구 침윤이 보인다.",
+   "switch": {
+    "choice": "A",
+    "condition": "경색 7일째 심실벽 파열로 숨졌다면 대식세포와 육아조직"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0748",
   "exam": "imaging",
   "style": "kmle_style",

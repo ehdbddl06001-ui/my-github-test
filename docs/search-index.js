@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4143,
+  "total": 4155,
   "byType": {
    "paper": 972,
+   "imaging": 759,
    "concept": 211,
-   "imaging": 747,
    "kmle": 1920,
    "usmle": 276,
    "ailab": 14,
@@ -34,20 +34,20 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 125,
    "Surgery": 125,
    "Pulmonology": 124,
-   "순환기": 119,
+   "순환기": 122,
    "Hematology": 117,
    "Laboratory Medicine": 100,
-   "산부인과": 92,
-   "호흡기": 49,
-   "소화기": 44,
+   "산부인과": 93,
+   "호흡기": 50,
+   "소화기": 45,
    "소아과": 39,
+   "혈액·종양": 34,
    "감염": 33,
+   "내분비": 33,
    "신경": 33,
    "신장·비뇨기": 33,
-   "혈액·종양": 33,
-   "내분비": 32,
-   "응급·중환자": 32,
-   "병리·조직학": 30,
+   "응급·중환자": 33,
+   "병리·조직학": 31,
    "Physiology": 29,
    "피부과": 29,
    "외과": 28,
@@ -56,13 +56,13 @@ window.MEDKOS_INDEX = {
    "Biochemistry": 22,
    "Microbiology": 21,
    "약리": 20,
+   "근골격·류마티스": 19,
    "정신과": 19,
    "Immunology": 18,
    "Internal Medicine": 18,
-   "근골격·류마티스": 18,
    "안과": 14,
+   "영상의학": 13,
    "이비인후과": 13,
-   "영상의학": 12,
    "Emergency Medicine": 9,
    "Preventive Medicine": 8,
    "Obstetrics and Gynecology": 5,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1209,
-   "high": 2930,
+   "high": 2942,
    "low": 4
   },
   "tagCount": 4920
@@ -136,6 +136,220 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-22_paper-2026-0970_lower_atmospheric_pressure_is_associated_with_shallower_radi.md",
    "snippet": "Title Lower atmospheric pressure is associated with shallower radiofrequency ablation lesions and more frequent steam pops: an ex vivo porcine study Authors Li Jia Lin, Luobu Gesang, Zhao Xin, Wang Wei, Li Chang Yi, Li Meng Meng, Liu Tong, ",
    "text": "Cardiology scraped pubmed PubMed / Frontiers in cardiovascular medicine Title Lower atmospheric pressure is associated with shallower radiofrequency ablation lesions and more frequent steam pops: an ex vivo porcine study Authors Li Jia Lin, Luobu Gesang, Zhao Xin, Wang Wei, Li Chang Yi, Li Meng Meng, Liu Tong, Jiang Chen Xi, et al. Journal / DOI Frontiers in cardiovascular medicine · DOI: 10.3389/fcvm.2026.1964283 · PMID: 43065520 https://pubmed.ncbi.nlm.nih.gov/43065520/ Abstract BACKGROUND: Atmospheric pressure affects the boiling point of water and may influence thermal lesion formation during radiofrequency (RF) ablation. However, whether atmospheric pressure alters RF lesion formation and steam pop risk under fixed ablation index (AI) targets remains unknown. METHODS: A total of 360 analyzable lesions were created in 36 ex vivo porcine hearts using the same RF ablation system, which was transported and used consistently at three sites with different atmospheric pressures: Beijing (1,014 hPa), Xining (770 hPa), and Lhasa (650 hPa). At each site, 30 analyzable lesions were obtained at each target AI value (300, 400, 500, and 600). Lesion dimensions, impedance reduction, ablation duration, temperature, and steam pop occurrence were recorded. Differences among sites were assessed using analysis of variance and Fisher's exact test. A multiple linear regression model was constructed to evaluate the relationship between atmospheric pressure, AI, and lesion volume. RESULTS: At fixed AI targets, lesions created at lower pressure sites were significantly shallower and had smaller volumes (all P < 0.05), whereas surface and maximum diameters remained similar among the three sites. Steam pops occurred in 0/120 (0.0%) RF applications in Beijing, 2/122 (1.6%) in Xining, and 6/126 (4.8%) in Lhasa (overall P = 0.031). Impedance reductions differed significantly among sites at 3 and 10 s (both P < 0.001), but not at 5 s (P = 0.498). Atmospheric pressure and AI jointly explained 88.4% of the variation in lesion volume (R2 = 0.884), enabling derivation of a hypothesis generating AI correction equation. CONCLUSION: Within the natural range of atmospheric pressures examined, lower atmospheric pressure was associated with shallower and smaller volume RF lesions at fixed AI targets and a higher observed incidence of steam pops. These findings suggest that atmospheric pressure may influence RF lesion formation and steam pop occurrence, warranting further mechanistic and in vivo validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0760",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 심장이 한 번씩 건너뛰는 느낌의 고령 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0760.md",
+   "snippet": "A 78 year old woman comes to the office because she has felt occasional skipped heartbeats for 3 weeks. The sensation lasts a second and is followed by a forceful beat. She has had no chest pain, dyspnea, dizziness, or syncope. She has hype",
+   "text": "순환기 심전도 판독 — 심장이 한 번씩 건너뛰는 느낌의 고령 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5 A 78 year old woman comes to the office because she has felt occasional skipped heartbeats for 3 weeks. The sensation lasts a second and is followed by a forceful beat. She has had no chest pain, dyspnea, dizziness, or syncope. She has hypertension treated with losartan. Pulse is 74/min with an occasional pause, and blood pressure is 136/80 mm Hg. Cardiac examination shows no murmurs. Serum potassium concentration is 4.1 mEq/L. Echocardiography 1 year ago showed a normal ejection fraction. A 12 lead ECG is shown. Which of the following is the most likely cause of the irregularity on the rhythm strip? A. Intermittent ventricular preexcitation B. Sinus arrhythmia C. Premature ventricular complex D. Premature atrial complex with aberrant conduction E. Mobitz type II second degree atrioventricular block"
+  },
+  {
+   "id": "imaging-2026-0759",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 쉴 때 가슴 조임이 반복된 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0759.md",
+   "snippet": "76세 남자가 이틀 전부터 쉬고 있을 때 가슴을 조이는 통증이 20분쯤 이어지다 멎기를 세 번 겪어 응급실에 왔다. 지금은 통증이 없다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 66회/분, 호흡 16회/분, 산소포화도 97% 이다. 폐 청진은 정상이고 심잡음은 없다. 고감도 트로포닌 I 는 3시간 간격의 두 번 모두 기준치 상한의 약 4배로 올라 있었다. 크레아티닌은 1.0 mg/dL 이다",
+   "text": "순환기 심전도 처치 — 쉴 때 가슴 조임이 반복된 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5 76세 남자가 이틀 전부터 쉬고 있을 때 가슴을 조이는 통증이 20분쯤 이어지다 멎기를 세 번 겪어 응급실에 왔다. 지금은 통증이 없다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 66회/분, 호흡 16회/분, 산소포화도 97% 이다. 폐 청진은 정상이고 심잡음은 없다. 고감도 트로포닌 I 는 3시간 간격의 두 번 모두 기준치 상한의 약 4배로 올라 있었다. 크레아티닌은 1.0 mg/dL 이다. 12유도 심전도는 그림과 같다. 가장 적절한 처치는? A. 아스피린만 처방하고 다음 날 외래 진료 B. 항혈소판제·항응고제 투여 후 24시간 안 관상동맥조영술 C. 즉시 혈전용해제 정맥 투여 D. 2시간 안의 응급 관상동맥조영술 E. 운동부하 심전도 검사 후 외래 추적"
+  },
+  {
+   "id": "imaging-2026-0758",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 가끔 심장이 빨리 뛰었던 젊은 남성의 검진 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0758.md",
+   "snippet": "34세 남자가 회사 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 지난 몇 년 동안 1년에 한두 번 갑자기 심장이 빨리 뛰다가 몇 분 만에 저절로 멎은 적이 있다. 실신이나 가슴 통증은 없었고 먹는 약은 없다. 혈압 122/76 mmHg, 맥박 66회/분으로 규칙적이고 심잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 조기흥분(WPW 양상) B",
+   "text": "순환기 심전도 판독 — 가끔 심장이 빨리 뛰었던 젊은 남성의 검진 심전도 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202246Z_일일심전도_2026-11-23_3units_3q_252381a5 34세 남자가 회사 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 지난 몇 년 동안 1년에 한두 번 갑자기 심장이 빨리 뛰다가 몇 분 만에 저절로 멎은 적이 있다. 실신이나 가슴 통증은 없었고 먹는 약은 없다. 혈압 122/76 mmHg, 맥박 66회/분으로 규칙적이고 심잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 조기흥분(WPW 양상) B. 1도 방실차단 C. 완전 우각차단 D. 오래된 하벽 심근경색 E. 좌심실 비대"
+  },
+  {
+   "id": "imaging-2026-0757",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 저칼륨혈증 동반 고혈압과 부신 결절",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0757.md",
+   "snippet": "52세 남자가 혈압이 잘 조절되지 않아 왔다. 8년 전 고혈압을 진단받아 암로디핀·발사르탄·히드로클로로티아지드를 최대 용량으로 먹고 있지만 혈압은 162/98 mmHg 이다. 혈청 칼륨 3.1 mEq/L, 크레아티닌 0.9 mg/dL 이다. 혈장 알도스테론 28 ng/dL, 혈장 레닌 활성도 0.2 ng/mL/h 였고 생리식염수 부하 뒤에도 알도스테론은 14 ng/dL 로 억제되지 않았다. 부신 CT 에서 왼쪽 부신에 1.2 ",
+   "text": "내분비 내분비 — 저칼륨혈증 동반 고혈압과 부신 결절 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea 52세 남자가 혈압이 잘 조절되지 않아 왔다. 8년 전 고혈압을 진단받아 암로디핀·발사르탄·히드로클로로티아지드를 최대 용량으로 먹고 있지만 혈압은 162/98 mmHg 이다. 혈청 칼륨 3.1 mEq/L, 크레아티닌 0.9 mg/dL 이다. 혈장 알도스테론 28 ng/dL, 혈장 레닌 활성도 0.2 ng/mL/h 였고 생리식염수 부하 뒤에도 알도스테론은 14 ng/dL 로 억제되지 않았다. 부신 CT 에서 왼쪽 부신에 1.2 cm 의 저음영 결절이 있고 오른쪽 부신은 정상이다. 환자는 완치를 원하며 수술을 받을 수 있다. 다음 단계로 가장 적절한 것은? A. 스피로노락톤 투여 후 추적 B. 경구 염분 부하 검사 추가 C. 6개월 뒤 부신 CT 재촬영 D. 부신정맥 채혈 E. 왼쪽 복강경 부신절제술"
+  },
+  {
+   "id": "imaging-2026-0756",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 무월경 6주의 질 출혈과 부속기 종괴",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0756.md",
+   "snippet": "A 29 year old woman, gravida 1, para 0, comes to the emergency department because of light vaginal bleeding and mild left lower abdominal pain for 2 days. Her last menstrual period was 6 weeks ago. Temperature is 36.8°C, pulse is 78/min, an",
+   "text": "산부인과 부인과 — 무월경 6주의 질 출혈과 부속기 종괴 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea A 29 year old woman, gravida 1, para 0, comes to the emergency department because of light vaginal bleeding and mild left lower abdominal pain for 2 days. Her last menstrual period was 6 weeks ago. Temperature is 36.8°C, pulse is 78/min, and blood pressure is 118/74 mm Hg. The abdomen is soft with mild left lower quadrant tenderness and no rebound. Serum β hCG concentration is 2,400 mIU/mL; it was 2,100 mIU/mL 48 hours ago. Transvaginal ultrasonography shows no intrauterine gestational sac and a 2.5 cm left adnexal mass containing a yolk sac without embryonic cardiac activity; there is no free fluid. Hemoglobin, serum creatinine, and aminotransferase levels are normal. She wishes to preserve fertility and can return for follow up visits. Which of the following is the most appropriate next step in management? A. Expectant management with weekly β hCG B. Intramuscular methotrexate C. Laparoscopic salpingectomy D. Dilation and curettage E. Repeat β hCG measurement in 48 hours"
+  },
+  {
+   "id": "imaging-2026-0755",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액 — 혼동과 자반을 보이는 젊은 여성의 혈구감소",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0755.md",
+   "snippet": "32세 여자가 3일 전부터 머리가 아프고 말이 어눌해졌다가 좋아지기를 반복하여 응급실에 왔다. 다리에 붉은 점들이 생겼다. 먹는 약은 없고 설사는 없었다. 체온 37.8℃, 혈압 124/78 mmHg, 맥박 102회/분이다. 다리에 점상출혈이 있고 신경학적 진찰에서 지금은 국소 이상이 없다. 혈색소 7.8 g/dL, 혈소판 18,000/mm³, 망상적혈구 8%, 젖산탈수소효소 1,450 U/L, 간접 빌리루빈 2.8 mg/dL",
+   "text": "혈액·종양 혈액 — 혼동과 자반을 보이는 젊은 여성의 혈구감소 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea 32세 여자가 3일 전부터 머리가 아프고 말이 어눌해졌다가 좋아지기를 반복하여 응급실에 왔다. 다리에 붉은 점들이 생겼다. 먹는 약은 없고 설사는 없었다. 체온 37.8℃, 혈압 124/78 mmHg, 맥박 102회/분이다. 다리에 점상출혈이 있고 신경학적 진찰에서 지금은 국소 이상이 없다. 혈색소 7.8 g/dL, 혈소판 18,000/mm³, 망상적혈구 8%, 젖산탈수소효소 1,450 U/L, 간접 빌리루빈 2.8 mg/dL, 크레아티닌 1.1 mg/dL, 프로트롬빈 시간·활성화 부분트롬보플라스틴 시간·피브리노겐은 정상, 직접 항글로불린 검사는 음성이다. 말초혈액도말에서 분열적혈구가 많다. 가장 적절한 처치는? A. 혈장교환술 B. 혈소판 수혈 C. 정맥 면역글로불린 D. 에쿨리주맙 E. 동결침전제제"
+  },
+  {
+   "id": "imaging-2026-0754",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "영상 판독 — 편마비 노인의 뇌 MRI 시퀀스",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0754.md",
+   "snippet": "A 75 year old woman is brought to the emergency department because of headache and progressive weakness of the left arm and leg for 3 weeks. She has no fever and no history of trauma. Neurologic examination shows left hemiparesis with 4/5 s",
+   "text": "영상의학 영상 판독 — 편마비 노인의 뇌 MRI 시퀀스 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea A 75 year old woman is brought to the emergency department because of headache and progressive weakness of the left arm and leg for 3 weeks. She has no fever and no history of trauma. Neurologic examination shows left hemiparesis with 4/5 strength and a left pronator drift. Serum glucose and sodium concentrations are within the reference ranges. MRI of the brain is performed with a standard tumor protocol, and one axial image is shown. Which of the following sequences is most likely shown? A. Fluid attenuated inversion recovery (FLAIR) B. Diffusion weighted imaging C. T1 weighted without contrast D. T1 weighted after gadolinium E. T2 weighted"
+  },
+  {
+   "id": "imaging-2026-0753",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "근골격 — 학교 검진에서 발견된 청소년의 등 휨",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0753.md",
+   "snippet": "13세 여자가 학교 검진에서 등이 휘었다는 말을 듣고 왔다. 6개월 전 초경을 했고 등 통증은 없다. 앞으로 숙이기 검사에서 오른쪽 등이 튀어나온다. 근력·감각·복부 반사·힘줄 반사는 정상이고 피부에 카페오레 반점이나 허리의 털 뭉치는 없다. 서서 찍은 전척추 전후면 X선은 그림과 같다. 주만곡의 Cobb 각은 65°이고 장골능 골화는 Risser 4 단계이다. 가장 적절한 처치는? A. 후방 척추 유합술 B. 흉요천추 보조기",
+   "text": "근골격·류마티스 근골격 — 학교 검진에서 발견된 청소년의 등 휨 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea 13세 여자가 학교 검진에서 등이 휘었다는 말을 듣고 왔다. 6개월 전 초경을 했고 등 통증은 없다. 앞으로 숙이기 검사에서 오른쪽 등이 튀어나온다. 근력·감각·복부 반사·힘줄 반사는 정상이고 피부에 카페오레 반점이나 허리의 털 뭉치는 없다. 서서 찍은 전척추 전후면 X선은 그림과 같다. 주만곡의 Cobb 각은 65°이고 장골능 골화는 Risser 4 단계이다. 가장 적절한 처치는? A. 후방 척추 유합술 B. 흉요천추 보조기 착용 C. 6개월 뒤 X선 재촬영 D. 수술 전 척추 전장 MRI E. 척추 교정 운동치료"
+  },
+  {
+   "id": "imaging-2026-0752",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 채용 검진의 B형 간염 혈청검사 해석",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0752.md",
+   "snippet": "A 34 year old man comes to the clinic for a preemployment health examination at a hospital. He feels well and has no history of jaundice. He does not know whether he received hepatitis B vaccination as a child. He drinks alcohol occasionall",
+   "text": "소화기 소화기 — 채용 검진의 B형 간염 혈청검사 해석 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea A 34 year old man comes to the clinic for a preemployment health examination at a hospital. He feels well and has no history of jaundice. He does not know whether he received hepatitis B vaccination as a child. He drinks alcohol occasionally and takes no medications. Physical examination shows no abnormalities. Serum ALT activity is 22 U/L. Serologic studies show: HBsAg negative; anti HBs positive (180 mIU/mL); IgM anti HBc negative; IgG anti HBc positive; HBV DNA undetectable. Which of the following best explains these findings? A. Occult hepatitis B infection with ongoing replication B. Resolved past hepatitis B infection with immunity C. Immunity from hepatitis B vaccination alone D. Chronic hepatitis B infection in an inactive phase E. Acute hepatitis B infection in the window period"
+  },
+  {
+   "id": "imaging-2026-0751",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 두근거림으로 온 고령 여성의 규칙적인 빈맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0751.md",
+   "snippet": "87세 여자가 3시간 전부터 가슴이 두근거리고 숨이 조금 차서 응급실에 왔다. 고혈압으로 약을 먹고 있으며 가슴 통증과 실신은 없었다. 의식은 명료하다. 혈압 128/76 mmHg, 맥박 152회/분으로 규칙적이고, 호흡 20회/분, 체온 36.6℃, 산소포화도 96% 이다. 폐 청진은 정상이고 다리 부종은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 ",
+   "text": "응급·중환자 응급 — 두근거림으로 온 고령 여성의 규칙적인 빈맥 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea 87세 여자가 3시간 전부터 가슴이 두근거리고 숨이 조금 차서 응급실에 왔다. 고혈압으로 약을 먹고 있으며 가슴 통증과 실신은 없었다. 의식은 명료하다. 혈압 128/76 mmHg, 맥박 152회/분으로 규칙적이고, 호흡 20회/분, 체온 36.6℃, 산소포화도 96% 이다. 폐 청진은 정상이고 다리 부종은 없다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 방실결절 회귀빈맥 B. 심방세동 C. 심실빈맥 D. 2:1 방실전도의 심방조동 E. 동빈맥"
+  },
+  {
+   "id": "imaging-2026-0750",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 산소가 필요한 바이러스 폐렴의 약물치료",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0750.md",
+   "snippet": "A 57 year old man is brought to the emergency department because of fever, cough, and worsening shortness of breath for 8 days. A nasopharyngeal RT PCR test for SARS CoV 2 was positive 6 days ago. He has hypertension treated with amlodipine",
+   "text": "호흡기 호흡기 — 산소가 필요한 바이러스 폐렴의 약물치료 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea A 57 year old man is brought to the emergency department because of fever, cough, and worsening shortness of breath for 8 days. A nasopharyngeal RT PCR test for SARS CoV 2 was positive 6 days ago. He has hypertension treated with amlodipine. Temperature is 38.4°C, pulse is 104/min, respirations are 28/min, and blood pressure is 132/80 mm Hg. Pulse oximetry shows 86% on room air and 93% with 4 L/min of oxygen by nasal cannula. Crackles are heard at both lung bases. Serum creatinine and aminotransferase concentrations are within the reference ranges. A portable chest x ray is shown. In addition to supplemental oxygen, which of the following is the most appropriate pharmacotherapy? A. Ivermectin B. Nirmatrelvir ritonavir C. Dexamethasone D. Hydroxychloroquine E. Azithromycin"
+  },
+  {
+   "id": "imaging-2026-0749",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 경색 이틀째 심근의 현미경 소견",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea",
+   "confidence": "high",
+   "date": "2026-11-22",
+   "path": "content/imaging/2026/imaging-2026-0749.md",
+   "snippet": "64세 남자가 가슴을 쥐어짜는 통증이 시작되고 30시간 뒤에 응급실에 왔다. 당뇨병이 있고 30갑년의 흡연력이 있다. 심전도에서 V1~V4 에 ST 분절 상승과 Q파가 있었고 혈청 트로포닌 I 가 크게 올라 있었다. 증상 발생 뒤 시간이 많이 지나 재관류 치료는 하지 않았다. 입원 이튿날(통증 시작 약 48시간 뒤) 갑자기 심실세동으로 숨졌다. 부검에서 좌전하행지가 혈전으로 막혀 있었다. 좌심실 앞벽 경색 부위의 현미경 소견으",
+   "text": "병리·조직학 병리 — 경색 이틀째 심근의 현미경 소견 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261122T202107Z_일일영상_2026-11-23_9units_9q_4a10a1ea 64세 남자가 가슴을 쥐어짜는 통증이 시작되고 30시간 뒤에 응급실에 왔다. 당뇨병이 있고 30갑년의 흡연력이 있다. 심전도에서 V1~V4 에 ST 분절 상승과 Q파가 있었고 혈청 트로포닌 I 가 크게 올라 있었다. 증상 발생 뒤 시간이 많이 지나 재관류 치료는 하지 않았다. 입원 이튿날(통증 시작 약 48시간 뒤) 갑자기 심실세동으로 숨졌다. 부검에서 좌전하행지가 혈전으로 막혀 있었다. 좌심실 앞벽 경색 부위의 현미경 소견으로 가장 적절한 것은? A. 대식세포의 탐식과 신생 혈관이 많은 육아조직 B. 세포가 적고 콜라겐이 치밀한 섬유성 흉터 C. 염증 없이 호산성 수축띠만 있는 심근섬유 D. 림프구·형질세포 침윤과 간질의 섬유화 E. 핵이 사라진 응고괴사 심근섬유 사이의 호중구 침윤"
   },
   {
    "id": "cn.cardio.aortic-regurgitation.surgery-timing",
