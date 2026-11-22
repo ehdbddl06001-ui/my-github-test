@@ -2,6 +2,110 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0972",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Diagnostic performance of Xpert-based assays for spinal tuberculosis: a systematic review and diagnostic accuracy meta-analysis",
+  "authors": [
+   "Ye Jian",
+   "Zhang Libao",
+   "Xue Changhui",
+   "Liao Mingxin",
+   "Chen Xiaojun",
+   "Lu Chengwu",
+   "Wang Linfeng"
+  ],
+  "journal": "Frontiers in cellular and infection microbiology",
+  "doi": "10.3389/fcimb.2026.1916158",
+  "pmid": "43065480",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43065480/",
+  "pubdate": "2026",
+  "date": "2026-11-22",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Spinal tuberculosis is a severe form of extrapulmonary tuberculosis that often results in delayed diagnosis and irreversible neurological complications. Xpert MTB/RIF and Xpert MTB/RIF Ultra have been developed as rapid molecular diagnostic tools; however, their diagnostic performance in spinal tuberculosis remains uncertain, particularly across different reference standards.\n\n**OBJECTIVE:** To systematically evaluate the diagnostic accuracy of Xpert-based assays for spinal tuberculosis and assess the influence of different reference standards on pooled diagnostic estimates.\n\n**METHODS:** A systematic search of PubMed, Embase, Web of Science, and the Cochrane Library was performed from database inception to June 2026. Studies evaluating Xpert MTB/RIF or Xpert MTB/RIF Ultra in patients with suspected spinal tuberculosis and providing sufficient data to construct 2×2 diagnostic tables were included. Pooled sensitivity, specificity, likelihood ratios, and diagnostic odds ratios were estimated using a bivariate random-effects model. Hierarchical summary receiver operating characteristic (HSROC) curves were generated. The primary analysis included studies using composite or clinical reference standards, whereas mycobacterial culture alone was evaluated in a separate sensitivity analysis.\n\n**RESULTS:** Twelve studies were included in the quantitative synthesis. In the primary analysis based on composite or clinical reference standards, the pooled sensitivity and specificity of Xpert-based assays were 0.77 (95% CI: 0.66-0.86) and 1.00 (95% CI: 0.99-1.00), respectively. The pooled positive and negative likelihood ratios were 43.86 (95% CI: 23.65-81.36) and 0.24 (95% CI: 0.15-0.37), respectively, with a diagnostic odds ratio of 213.28 (95% CI: 89.30-509.42). In the sensitivity analysis using mycobacterial culture as the reference standard, pooled sensitivity increased to 0.94 (95% CI: 0.88-0.98), whereas specificity decreased to 0.62 (95% CI: 0.44-0.78). Only one included study evaluated Xpert MTB/RIF Ultra, limiting conclusions regarding its comparative performance.\n\n**CONCLUSION:** Xpert-based assays demonstrate high diagnostic accuracy for spinal tuberculosis, particularly strong confirmatory capability due to high specificity. However, negative results alone are insufficient to exclude disease. The choice of reference standard substantially influences pooled diagnostic estimates, highlighting the importance of interpreting Xpert results together with clinical, radiological, microbiological, and histopathological findings.\n\n**SYSTEMATIC REVIEW REGISTRATION:** https://www.crd.york.ac.uk/PROSPERO/view/CRD420261427181, identifier CRD420261427181.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0971",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Inhibition of quorum sensing and biofilm in Pseudomonas aeruginosa by erythrinin B: Bioinformatic evidence for the LasR binding",
+  "authors": [
+   "Alohali Basim M",
+   "Husain Fohad Mabood",
+   "Al-Shabib Nasser A",
+   "Alshuniaber Mohammed A"
+  ],
+  "journal": "Frontiers in microbiology",
+  "doi": "10.3389/fmicb.2026.1954689",
+  "pmid": "43065515",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43065515/",
+  "pubdate": "2026",
+  "date": "2026-11-22",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Quorum sensing (QS)-regulated virulence factors and biofilm formation are major contributors to antimicrobial resistance in Pseudomonas aeruginosa. This highlights the urgent need for novel anti-virulence strategies that can disrupt these pathways and reduce such infections. The objective of this study was to evaluate the inhibitory potential of erythrinin B against QS-regulated virulence factors and biofilm formation in P. aeruginosa PAO1. Erythrinin B significantly suppressed pyocyanin (72.27%), pyoverdin (68.22%), protease (83.08%), and elastase (62.16%) production in a dose-dependent manner, while rhamnolipid inhibition was lesser (29.17%). Biofilm biomass was reduced by 73.02% at 300 μg/mL, corroborated by microscopy, which revealed diminished adherence and scattered planktonic cells. EPS (exopolysaccharides) and alginate levels were also markedly decreased, indicating disruption of biofilm matrix integrity. Molecular docking demonstrated that erythrinin B binds to LasR receptor (-11.7 kcal/mol), forming hydrogen bonds with Thr75, Tyr56, Tyr64, and Ser129, alongside hydrophobic and van der Waals contacts. MD simulations confirmed the stability of complex, with minor conformational changes compared to apo LasR. MM/GBSA analysis revealed favourable binding energy (-26.89 ± 2.04 kcal/mol), dominated by van der Waals interactions, with key contributions from Val76, Trp88, and Leu36. These findings indicate erythrinin B as potent QS inhibitor that attenuates virulence and biofilm formation in P. aeruginosa.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0970",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Lower atmospheric pressure is associated with shallower radiofrequency ablation lesions and more frequent steam pops: an ex vivo porcine study",
+  "authors": [
+   "Li Jia-Lin",
+   "Luobu Gesang",
+   "Zhao Xin",
+   "Wang Wei",
+   "Li Chang-Yi",
+   "Li Meng-Meng",
+   "Liu Tong",
+   "Jiang Chen-Xi",
+   "et al."
+  ],
+  "journal": "Frontiers in cardiovascular medicine",
+  "doi": "10.3389/fcvm.2026.1964283",
+  "pmid": "43065520",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43065520/",
+  "pubdate": "2026",
+  "date": "2026-11-22",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Atmospheric pressure affects the boiling point of water and may influence thermal lesion formation during radiofrequency (RF) ablation. However, whether atmospheric pressure alters RF lesion formation and steam-pop risk under fixed ablation index (AI) targets remains unknown.\n\n**METHODS:** A total of 360 analyzable lesions were created in 36 ex vivo porcine hearts using the same RF ablation system, which was transported and used consistently at three sites with different atmospheric pressures: Beijing (1,014 hPa), Xining (770 hPa), and Lhasa (650 hPa). At each site, 30 analyzable lesions were obtained at each target AI value (300, 400, 500, and 600). Lesion dimensions, impedance reduction, ablation duration, temperature, and steam-pop occurrence were recorded. Differences among sites were assessed using analysis of variance and Fisher's exact test. A multiple linear regression model was constructed to evaluate the relationship between atmospheric pressure, AI, and lesion volume.\n\n**RESULTS:** At fixed AI targets, lesions created at lower-pressure sites were significantly shallower and had smaller volumes (all P < 0.05), whereas surface and maximum diameters remained similar among the three sites. Steam pops occurred in 0/120 (0.0%) RF applications in Beijing, 2/122 (1.6%) in Xining, and 6/126 (4.8%) in Lhasa (overall P = 0.031). Impedance reductions differed significantly among sites at 3 and 10 s (both P < 0.001), but not at 5 s (P = 0.498). Atmospheric pressure and AI jointly explained 88.4% of the variation in lesion volume (R2 = 0.884), enabling derivation of a hypothesis-generating AI correction equation.\n\n**CONCLUSION:** Within the natural range of atmospheric pressures examined, lower atmospheric pressure was associated with shallower and smaller-volume RF lesions at fixed AI targets and a higher observed incidence of steam pops. These findings suggest that atmospheric pressure may influence RF lesion formation and steam-pop occurrence, warranting further mechanistic and in vivo validation.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0969",
   "topic": "Surgery",
   "subtopic": "",
