@@ -41874,7 +41874,9 @@ window.MEDKOS_CONCEPTS = {
     "branches": []
    }
   ],
-  "questions": [],
+  "questions": [
+   "kmle-2026-1965"
+  ],
   "hasErrors": false
  },
  "cn.em.lithium-toxicity.hemodialysis-indication": {
@@ -98225,7 +98227,8 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "kmle-2026-0093",
    "kmle-2026-1302",
-   "kmle-2026-1655"
+   "kmle-2026-1655",
+   "kmle-2026-1977"
   ],
   "hasErrors": false
  },
