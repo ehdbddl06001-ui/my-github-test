@@ -19,7 +19,7 @@ Claude Routine `trig_01DzVed7kjfo6hLqyLQf1vaJ`(cron `0 9,21 * * *` UTC, 모델 c
    - [dist]: 큐의 path 문항에 내가 고른 보기의 `distractors.<보기>` 하나를 더하고 문항 `version` 을 올린다. 해설과 모순되면 고치지 말고 보고에 남긴다.
    - [figure]: 그림(SKILL 「[figure]」). question·attach 는 그림 파일을 **열어 보고** `concept_figures.py add`(PMC 그림은 얼굴·문신·이름·병원 표지가 없음을 보고 `--privacy-checked`), 맞지 않으면 `reject`. assess 는 `find` → `add` / `want` / `none`. 라벨은 스크립트가 채운다 — shows 는 라벨 범위 안, look_for 는 보이는 것만. 얼굴이 대표 소견인 주제는 싣지 않는다.
    - [restyle]: 위 여섯이 모두 0일 때, **한 실행에 최대 2개**. 새로 쓰지 않고 있는 내용을 판형 2로 다시 배치한다(SKILL 「판형 2로 옮기기」, 본보기 `content/concepts/dermatology/cn.derm.pityriasis-versicolor.treatment.md`). 새 사실·수치·출처를 더하지 않는다. 도식 노드 id 는 바꾸지 않는다(문항 case_path 가 가리킨다).
-   - [gap]: 위가 모두 0이고 **06시 실행일 때만** 1개. 18시 실행은 gap 을 쓰지 않는다.
+   - [gap]: 위가 모두 0이고 **06시 실행일 때만** 1개. 18시 실행은 gap 을 쓰지 않는다. 큐의 **맨 앞 줄**을 쓴다 — 정리본이 가장 적은 책의 빈 자리다(2026-11-23, 과가 고르게 차도록). 과를 따로 고르거나 어제 쓴 과를 이어 쓰지 않는다.
 3. 정리본 규칙(원문 SKILL):
    - 판형 2: summary 3~5줄에 「결론:」「시험 단서:」「왜:」 머리말, 틀린 보기별 pitfalls(covers), 기준·치료·감별은 표로 한 번만, 목표에 맞춘 본문 절(질환 교과서 골격을 채우지 않는다), 한국어(English) 용어 짝.
    - 도식 노드 글 판단 ≤ 30자·나머지 ≤ 40자·갈래 라벨 ≤ 14자. 조건 목록·용량·예외는 `diagram_notes` 나 표로. 배치는 코드가 정한다.

@@ -493,13 +493,65 @@ function currentList(ctx) {
   return list;
 }
 
-function buildDeck() {
-  const list = currentList();
-  if ($("shuffle").checked) {
-    for (let i = list.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [list[i], list[j]] = [list[j], list[i]];
+/* <subject-balance> 과목 돌림(2026-11-23). 이 덩이는 DOM 을 쓰지 않는다 — test_learning_books 가 떼어 node 로 돌린다.
+   왜: 번들은 id 내림차순이고 하루 세트의 id 는 과목 영어 이름순으로 붙어서, 섞기를 켜지 않으면 「최신 세트」·「안 푼 문항」이
+   늘 Rheumatology → Pulmonology → … → Cardiology 순으로 나왔다. 앞의 몇 문항만 풀고 닫는 날이 쌓여 푼 문항이
+   류마티스 14 · 순환기 1 로 쏠렸고, 오답에서 생기는 정리본도 그 과에만 쌓였다.
+   규칙(사용자 선택 「덜 푼 과목 먼저」): 만든 날짜가 최신인 묶음부터, 묶음 안에서는 지금까지 푼 문항이 적은 과목부터
+   한 문항씩 번갈아 낸다(한 과의 두 문항이 붙지 않는다). 푼 수가 같은 과목끼리는 그날 날짜를 씨앗으로 순서를 정한다 —
+   같은 날에는 같은 순서(문항 목록 · 이어 풀기와 맞음), 날이 바뀌면 달라진다. */
+function seedHash(s) {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return h >>> 0;
+}
+// {과목: 푼 문항 수} — 같은 문항이 여러 덱에 있어도 한 번만 센다.
+function solvedBySubject(questions, solved) {
+  const cnt = {}, seen = new Set();
+  questions.forEach((q) => {
+    if (!q || !q.id || seen.has(q.id) || !solved.has(q.id)) return;
+    seen.add(q.id);
+    const s = q.subject || "";
+    cnt[s] = (cnt[s] || 0) + 1;
+  });
+  return cnt;
+}
+function balanceBySubject(list, counts, day) {
+  const key = {};
+  const rank = (s) => key[s] || (key[s] = [counts[s] || 0, seedHash(day + "|" + s)]);
+  const cmp = (a, b) => rank(a)[0] - rank(b)[0] || rank(a)[1] - rank(b)[1] || (a < b ? -1 : a > b ? 1 : 0);
+  const groups = new Map();
+  list.forEach((q) => { const k = q.created || ""; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(q); });
+  const out = [];
+  [...groups.keys()].sort().reverse().forEach((k) => {          // 최신 날짜부터 · 날짜 없는 문항은 맨 뒤
+    const by = new Map();
+    groups.get(k).forEach((q) => { const s = q.subject || ""; if (!by.has(s)) by.set(s, []); by.get(s).push(q); });
+    const subs = [...by.keys()].sort(cmp);
+    for (let i = 0, took = true; took; i++) {
+      took = false;
+      subs.forEach((s) => { const a = by.get(s); if (i < a.length) { out.push(a[i]); took = true; } });
     }
+  });
+  return out;
+}
+/* </subject-balance> */
+
+// 과목 돌림을 거는 학습 구역. 「오늘 다시 풀 것」(오래 밀린 순) · 오답노트 · 푼 문항 · 기간 · 전체는 순서를 바꾸지 않는다.
+const BALANCED_MODES = ["latest", "unsolved"];
+// 섞기를 켜지 않았을 때 실제로 푸는 순서(문항 목록도 이 순서로 보인다)
+function orderedList(solved) {
+  const list = currentList();
+  if (!BALANCED_MODES.includes($("mode").value)) return list;
+  const all = [].concat(KMLE, USMLE, IMAGING, VARIANT);
+  return balanceBySubject(list, solvedBySubject(all, solved || solvedIds()), todayStr());
+}
+
+function buildDeck() {
+  if (!$("shuffle").checked) return orderedList();
+  const list = currentList();
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [list[i], list[j]] = [list[j], list[i]];
   }
   return list;
 }
@@ -1360,7 +1412,7 @@ function updateQList() {
   const box = $("qlist");
   if (!box) return;
   const ctx = { wrong: wrongIds(), solved: solvedIds() };
-  const list = currentList();
+  const list = orderedList(ctx.solved);          // 섞기를 끄고 풀 때의 순서 그대로
   $("qlistSum").textContent = `문항 목록 보기 (${list.length})`;
   if (box.open) renderQList(list, ctx);
 }
