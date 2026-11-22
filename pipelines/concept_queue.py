@@ -16,6 +16,9 @@
            같은 기전의 기초 정리본이 이미 있으면(`concepts.py --basic`) 새로 쓰지 않고 `roots` 로 잇기만 한다.
            기초 기전이 없는 목표(검진 주기·법규·역학 계산·지침 수치)는 `roots_none` 에 이유를 적는다.
            **앞으로 틀리는 것부터** — 마지막 오답이 ROOTS_FROM 이후인 목표만(옛 정리본은 다시 틀릴 때 붙는다).
+           예외 하나(2026-11-23 사용자 결정) — **반복 오답 상위 20개 임상 정리본**(2회 이상 틀린 것 · 오답 수 → 우선순위 → id)은 그 전 오답이라도
+           올린다(`backfill: true`, 출력 「상위 20 소급」). 상위 20 은 뿌리가 붙었는지와 무관하게 전체 임상 정리본에서 뽑으므로
+           뿌리를 단 자리를 21위가 채우지 않는다 — 소급은 많아야 20개에서 끝난다.
   variant — 정리본이 있는 목표에서 **틀린 문항마다 변형 2개**(of: <문항>)가 아직 없을 때(2026-09-23 사용자 채택 —
            「오답 → 변형 문항 → 간격을 두고 다시 출제」). 하나는 결정적 단서를 바꿔 답이 바뀌고(flip: true —
            문항 design.switch 가 씨앗), 하나는 겉모습만 바꾸고 답은 그대로(flip: false). 앱 「오늘 다시 풀 것」이
@@ -38,6 +41,13 @@
            책 순서는 **정리본이 적은 책 먼저**(같으면 기본틀 순서) — 2026-11-23 사용자 선택. 그 전에는 많은 책이
            먼저라 루틴이 하루 하나씩 같은 과만 채웠다(10월 류마티스 12개 · 11월 순환기 23개).
            기초의학 학문별 책은 대상이 아니다(기초 정리본은 `root` 에서만 생긴다).
+           **국시 핵심 공백 과목 먼저**(2026-11-23 사용자 결정) — `books_config.yaml` `gap_priority` 의 책(혈액종양 · 소화기 ·
+           신경 · 감염 · 내분비 · 외과) 가운데 정리본이 `until`(12)개 미만인 책이 앞 묶음이고, 그 안에서도 적은 책부터다.
+           12개가 된 책은 일반 순서로 내려간다 — 여섯 책이 모두 12개가 되면 전체 「적은 책 먼저」와 같아진다.
+  verify — 원고에 **미대조 표시**가 남은 정리본(2026-11-23 사용자 결정). 표시 = `[[?출처…]]`(이 주장만 원문 미대조)와
+           손으로 적은 `†`(용량 · 기간 · 세부 수치를 대조하지 못했다는 표시) — `concepts.unverified_marks`.
+           오답이 걸린 목표(우선순위 높은 것) → 표시 많은 것 → id 순. **PC 세션 · Actions 전용**이다 — 클라우드 루틴은
+           PubMed · 지침 원문을 못 연다. 그래서 기본 출력에는 건수 한 줄만 찍고 목록은 `--verify` 때만 찍는다(JSON 에는 늘 있다).
 우선순위 = 반복 오답·후속 확인 실패·표시(learning_log 의 priority)를 그대로 쓴다.
 
 오답의 원천은 둘이다(2026-09-23).
@@ -50,6 +60,7 @@
   python pipelines/concept_queue.py                 # 큐 출력 + state/concept_queue.json 갱신
   python pipelines/concept_queue.py --limit 3       # 오늘 쓸 상위 N개만(루틴 상한)
   python pipelines/concept_queue.py --events <파일> # 다른 학습 기록으로(시험·검증용)
+  python pipelines/concept_queue.py --verify --limit 20   # 미대조 표시 보강 목록(PC 세션 · Actions 전용)
 """
 from __future__ import annotations
 
@@ -60,13 +71,15 @@ from pathlib import Path
 
 import learning_log as ll
 import outline as ol
-from concepts import is_basic, load_concepts, load_questions
+from concepts import is_basic, load_concepts, load_questions, unverified_marks
 from traps import trap_tag
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "state" / "concept_queue.json"
 WRONG_SYNC = ROOT / "state" / "wrong_sync"
 ROOTS_FROM = "2026-11-21"     # 이 날 이후에 틀린 목표만 기초 뿌리를 묻는다(사용자 결정: 소급하지 않는다)
+ROOT_BACKFILL_TOP = 20        # 예외 — 반복 오답 상위 N개 임상 정리본만 그 전 오답이라도 묻는다(2026-11-23 사용자 결정)
+ROOT_BACKFILL_MIN_WRONGS = 2  # 「반복」 = 오답 2회 이상. 1회짜리로 20을 채우면 동률을 id 순으로 끊게 돼 앞 글자 과(알레르기 · 순환기)만 뽑힌다
 
 
 def load_wrong_notes(folder: Path = WRONG_SYNC) -> dict[str, dict]:
@@ -113,6 +126,7 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     touches: list[dict] = []
     roots: list[dict] = []
     links: dict[tuple[str, str], dict] = {}
+    top = root_backfill(S, concepts)
     for key, s in S.items():
         if not s.status or not s.wrongs:
             continue
@@ -121,7 +135,7 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
             if s.objective in concepts:
                 touches.extend(_touches(s, concepts[s.objective], questions))
                 variants.extend(_variants(s, concepts[s.objective], questions, (sched.get(key) or {}).get("due", "")))
-                roots.extend(_roots(s, concepts[s.objective]))
+                roots.extend(_roots(s, concepts[s.objective], top.get(s.objective, 0)))
                 continue                                  # 정리본이 이미 있다 — 새 혼동만 손질 대상으로
             q = next((questions[q] for q in s.qids if q in questions), {})
             notes.append({"objective": s.objective, "topic": str(q.get("topic", "")),
@@ -140,16 +154,20 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     gaps = _gaps(concepts, questions, S)
     figures = _figures(concepts, questions, S)
     restyles = _restyles(concepts, S)
+    verifies = _verifies(concepts, S)
     notes.sort(key=lambda x: (-x["priority"], -x["wrongs"], x["objective"]))
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
     variants.sort(key=lambda x: (x["due"] or "9999", -x["priority"], x["qid"]))
-    roots.sort(key=lambda x: (-x["priority"], x["objective"]))
+    # 새로 틀린 목표 먼저(우선순위 순), 그 뒤에 상위 20 소급(순위 순)
+    roots.sort(key=lambda x: (x["backfill"], x["rank"] if x["backfill"] else -x["priority"], x["objective"]))
     seen_d: set[str] = set()
     dists = [d for d in dists if not (d["key"] in seen_d or seen_d.add(d["key"]))]
     return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches, "root": roots,
-            "variant": variants, "dist": dists, "restyle": restyles, "figure": figures, "gap": gaps,
+            "variant": variants, "dist": dists, "restyle": restyles, "figure": figures, "gap": gaps, "verify": verifies,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
                        "restyle": len(restyles), "root": len(roots),
+                       "root_backfill": sum(1 for r in roots if r["backfill"]),
+                       "verify": len(verifies), "verify_marks": sum(v["marks"] for v in verifies),
                        "variant": len(variants), "dist": len(dists), "figure": len(figures),
                        "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts),
                        "from_wrongnote": len(from_note)}}
@@ -179,14 +197,31 @@ def _touches(s, concept: dict, questions: dict) -> list[dict]:
     return out
 
 
-def _roots(s, concept: dict) -> list[dict]:
-    """새로 틀린 임상 목표인데 기초 뿌리를 아직 정하지 않은 정리본 — 한 줄."""
+def root_backfill(S: dict, concepts: dict) -> dict[str, int]:
+    """{임상 정리본 id: 순위(1~ROOT_BACKFILL_TOP)} — 반복 오답 상위 N개(오답 수 → 우선순위 → id).
+
+    **뿌리(`roots` · `roots_none`)가 붙었는지는 보지 않는다.** 붙은 것을 빼고 뽑으면 그 자리를 다음 순위가 채워
+    옛 정리본 전체가 차례로 소급된다 — 사용자 결정은 「상위 20개만」이다. 기초 정리본(`layer: basic`)은 뺀다.
+    오답이 ROOT_BACKFILL_MIN_WRONGS 회 미만인 목표는 「반복 오답」이 아니라서 순위에 넣지 않는다 — 그래서 20개보다 적을 수 있다
+    (2026-11-23 실측: 2회 이상 틀린 임상 정리본 10개 · 1회 118개).
+    """
+    rows = sorted((-s.wrongs, -s.priority, s.objective) for s in S.values()
+                  if s.objective and s.wrongs >= ROOT_BACKFILL_MIN_WRONGS and s.objective in concepts
+                  and not is_basic(concepts[s.objective]))
+    return {obj: i for i, (_, _, obj) in enumerate(rows[:ROOT_BACKFILL_TOP], 1)}
+
+
+def _roots(s, concept: dict, rank: int = 0) -> list[dict]:
+    """기초 뿌리를 아직 정하지 않은 임상 정리본 — 한 줄. 새로 틀린 목표이거나(ROOTS_FROM 이후),
+    반복 오답 상위 20(rank ≥ 1 — `root_backfill`)이면 그 전 오답이라도 낸다(`backfill: true`)."""
     if is_basic(concept) or concept.get("roots") or concept.get("roots_none") is not None:
         return []
-    if (s.last_wrong_day or "") < ROOTS_FROM:
+    backfill = (s.last_wrong_day or "") < ROOTS_FROM
+    if backfill and not rank:
         return []
     return [{"objective": concept.get("id"), "title": str(concept.get("title", "")), "topic": str(concept.get("topic", "")),
-             "path": str(concept.get("path", "")), "day": s.last_wrong_day, "priority": s.priority}]
+             "path": str(concept.get("path", "")), "day": s.last_wrong_day, "priority": s.priority,
+             "wrongs": s.wrongs, "backfill": backfill, "rank": rank}]
 
 
 def _variants(s, concept: dict, questions: dict, due: str) -> list[dict]:
@@ -240,6 +275,26 @@ def _restyles(concepts: dict, S: dict) -> list[dict]:
     return sorted(out, key=lambda x: (-x["priority"], x["objective"]))
 
 
+def _verifies(concepts: dict, S: dict) -> list[dict]:
+    """미대조 표시(`[[?…]]` · 손으로 적은 †)가 남은 정리본 — 오답이 걸린 목표(우선순위 높은 것) → 표시 많은 것 → id.
+
+    루틴이 처리하는 큐가 아니다(PubMed · 지침 원문을 못 연다) — PC 세션 · Actions 가 원문을 열어 표시를 지운다.
+    """
+    pri: dict[str, int] = {}
+    for s in S.values():
+        if s.objective and s.wrongs:
+            pri[s.objective] = max(pri.get(s.objective, s.priority), s.priority)
+    out = []
+    for cid, c in concepts.items():
+        m = unverified_marks(c)
+        if not m["marks"]:
+            continue
+        out.append({"objective": cid, "title": str(c.get("title", "")), "path": str(c.get("path", "")),
+                    "claims": m["claims"], "dagger": m["dagger"], "marks": m["marks"], "sources": m["sources"],
+                    "wrong": cid in pri, "priority": pri.get(cid, 0)})
+    return sorted(out, key=lambda x: (not x["wrong"], -x["priority"], -x["marks"], x["objective"]))
+
+
 def _figures(concepts: dict, questions: dict, S: dict) -> list[dict]:
     import concept_figures as cf
     pool = cf.load_pool()
@@ -269,7 +324,24 @@ def _figures(concepts: dict, questions: dict, S: dict) -> list[dict]:
     return out
 
 
-def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
+def _books_cfg() -> dict:
+    import yaml
+    return yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8")) or {}
+
+
+def gap_priority(books_cfg: dict) -> tuple[set[str], int]:
+    """(국시 핵심 공백 책, 기준 수) — books_config `gap_priority: {books: [...], until: N}`.
+    키가 없거나 `books` 가 비었거나 `until` 이 양의 정수가 아니면 (빈 집합, 0) = 가중치 없음(전체 「적은 책 먼저」)."""
+    gp = books_cfg.get("gap_priority")
+    if not isinstance(gp, dict):
+        return set(), 0
+    books, until = gp.get("books"), gp.get("until")
+    if not isinstance(books, list) or not books or isinstance(until, bool) or not isinstance(until, int) or until < 1:
+        return set(), 0
+    return {str(b) for b in books}, until
+
+
+def _gaps(concepts: dict, questions: dict, S: dict, books_cfg: dict | None = None) -> list[dict]:
     """기본틀에서 빈 슬롯 — 이미 단원이 있는 책만, 책마다 하나(쓴 자리 다음). 정리본이 적은 책부터.
 
     루틴은 06시 실행마다 맨 앞 [gap] 하나만 쓴다. 많은 책을 앞에 두면 그 책만 계속 늘어난다(되먹임) —
@@ -277,11 +349,16 @@ def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
     정리본이 0개인 책은 넣지 않는다(오답이 이끌게 둔다 — 사용자 선택).
     기초의학 학문별 책(books_config `disciplines` — 생리학 · 병리학 …)도 넣지 않는다: 기초 정리본은 틀린 문항의
     `[root]` 에서만 생긴다(2026-11-21 사용자 결정 — 소급 · 빈칸 채우기 ✗). 적은 책 먼저로 바꾸면 이 책들이 맨 앞에 온다.
+
+    국시 핵심 공백 과목(2026-11-23 사용자 결정, `gap_priority`): 핵심 책 가운데 정리본이 `until` 개 **미만**인 책이
+    앞 묶음(`core: true`)이고, 묶음 안 · 밖 모두 「적은 책 먼저 · 같으면 기본틀 순서」다. 하나 쓰면 그 책의 수가 올라
+    묶음 안에서 뒤로 물러나고, `until` 개가 되면 묶음에서 빠진다 — 한 책만 계속 채우는 되먹임이 없다.
+    핵심 책이라도 0개면 넣지 않는다. books_cfg 를 넘기면 그 설정으로 계산한다(시험용 · None = books_config.yaml).
     """
-    import yaml
-    books_cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8")) or {}
+    books_cfg = _books_cfg() if books_cfg is None else books_cfg
     bmap = dict(books_cfg.get("books") or {})
     basic_books = set((books_cfg.get("disciplines") or {}).values())
+    core_books, until = gap_priority(books_cfg)
     books, _ = ol.load()
     have: dict[str, int] = {}                       # 책 → 그 책에 쌓인 정리본 수
     for c in concepts.values():
@@ -298,10 +375,15 @@ def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
         last = max((sl.order for sl in slots if sl.id in filled), default=-1)
         nxt = next((sl for sl in slots if sl.id not in filled and sl.order > last), None)             or next((sl for sl in slots if sl.id not in filled), None)
         if nxt:
-            out.append({"book": book, "slot": nxt.id, "title": nxt.title,
-                        "source": nxt.source, "chapters": nxt.chapters, "have": have[book]})
+            g = {"book": book, "slot": nxt.id, "title": nxt.title,
+                 "source": nxt.source, "chapters": nxt.chapters, "have": have[book],
+                 "core": book in core_books and have[book] < until}
+            if g["core"]:
+                g["core_until"] = until
+            out.append(g)
     order = {b: i for i, b in enumerate(books)}
-    out.sort(key=lambda g: (g["have"], order[g["book"]]))       # 적은 책 먼저 · 같으면 기본틀(subjects.yaml) 순서
+    # 핵심 공백 책(기준 수 미만) 먼저 → 적은 책 먼저 → 같으면 기본틀(subjects.yaml) 순서
+    out.sort(key=lambda g: (not g["core"], g["have"], order[g["book"]]))
     return out
 
 
@@ -312,6 +394,8 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--json", action="store_true", help="사람이 읽는 줄 대신 JSON 만")
     ap.add_argument("--wrong-sync", help="오답 목록 폴더(기본: state/wrong_sync)")
     ap.add_argument("--no-wrongnote", action="store_true", help="학습 기록만 쓴다(오답 목록 무시)")
+    ap.add_argument("--verify", action="store_true",
+                    help="미대조 표시 보강 목록 [verify] 도 찍는다(PC 세션 · Actions 전용 — 루틴은 원문을 못 연다)")
     a = ap.parse_args(argv)
     if a.events:
         events = ll.read_events(Path(a.events))
@@ -322,12 +406,16 @@ def main(argv: list[str]) -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     note, link, touch, var, dist, gap = q["note"], q["link"], q["touch"], q["variant"], q["dist"], q["gap"]
-    rs, fig, root = q["restyle"], q["figure"], q["root"]
+    rs, fig, root, ver = q["restyle"], q["figure"], q["root"], q["verify"]
     if a.limit:
-        note, link, touch, var, dist, gap, rs, fig, root = (x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig, root))
+        note, link, touch, var, dist, gap, rs, fig, root, ver = (
+            x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig, root, ver))
     if a.json:
-        print(json.dumps({"note": note, "link": link, "touch": touch, "root": root, "variant": var, "dist": dist, "restyle": rs, "figure": fig,
-                          "gap": gap, "counts": q["counts"]}, ensure_ascii=False, indent=1))
+        shown = {"note": note, "link": link, "touch": touch, "root": root, "variant": var, "dist": dist, "restyle": rs, "figure": fig,
+                 "gap": gap, "counts": q["counts"]}
+        if a.verify:                                    # 목록은 청했을 때만 — 건수는 counts 에 늘 있다
+            shown["verify"] = ver
+        print(json.dumps(shown, ensure_ascii=False, indent=1))
         return 0
     if not events and not q["counts"]["from_wrongnote"]:
         print("학습 기록이 없다 — 앱의 「학습 기록 내보내기」가 드라이브 수신함에 들어왔는지 본다(동기화 미설정이면 정상).")
@@ -337,6 +425,8 @@ def main(argv: list[str]) -> int:
           f"오답 보기 설명 대기(dist) {q['counts']['dist']}건 · 그림 대기(figure) {q['counts']['figure']}건 · "
           f"이미 정리본이 있는 오답 목표 {q['counts']['wrong_objectives_with_note']}개 · "
           f"오답 목록에서 채운 오답 {q['counts']['from_wrongnote']}건")
+    print(f"미대조 표시 보강 대기(verify) {q['counts']['verify']}건 · 표시 {q['counts']['verify_marks']}개 — "
+          f"PC 세션 · Actions 전용(루틴은 처리하지 않는다 · 목록은 --verify)")
     for n in note:
         print(f"  [note] {n['objective']}  오답 {n['wrongs']}회 · 우선순위 {n['priority']} · {n['topic']}/{n['subtopic']} · 문항 {', '.join(n['questions'][:4])}")
     for l in link:
@@ -344,7 +434,8 @@ def main(argv: list[str]) -> int:
     for t in touch:
         print(f"  [touch] {t['objective']}  새 혼동 {t['cover']} 「{str(t['chosen'])[:30]}」 → 정답 「{str(t['answer'])[:30]}」")
     for r in root:
-        print(f"  [root] {r['objective']}  기초 뿌리 미정 · 마지막 오답 {r['day']} · 우선순위 {r['priority']} · {r['topic']} · {r['title'][:40]}")
+        print(f"  [root] {r['objective']}  기초 뿌리 미정 · 마지막 오답 {r['day']} · 우선순위 {r['priority']} · {r['topic']} · {r['title'][:40]}"
+              + (f" · 상위 {ROOT_BACKFILL_TOP} 소급(오답 {r['wrongs']}회 · {r['rank']}위)" if r["backfill"] else ""))
     if root:
         print("  (먼저 `python pipelines/concepts.py --basic` 으로 같은 기전의 기초 정리본이 있는지 본다 — /gen-concept 「[root]」)")
     for v in var:
@@ -365,7 +456,14 @@ def main(argv: list[str]) -> int:
         if rs:
             print(f"  (판형 2 로 옮길 정리본 {q['counts']['restyle']}개 남음 — /gen-concept 「판형 2로 옮기기」)")
         for g in gap:
-            print(f"  [gap]  {g['book']} {g['slot']}  {g['title']}  {g['source']}")
+            print(f"  [gap]  {g['book']} {g['slot']}  {g['title']}  {g['source']}"
+                  + (f" · 핵심 과목 우선(정리본 {g['have']}/{g['core_until']})" if g["core"] else f" · 정리본 {g['have']}개"))
+    if a.verify:
+        for v in ver:
+            print(f"  [verify] {v['objective']}  미대조 표시 {v['marks']}개([[?…]] {v['claims']} · † {v['dagger']})"
+                  + (f" · 오답 우선순위 {v['priority']}" if v["wrong"] else "")
+                  + (f" · 출처 {', '.join(v['sources'][:4])}" + ("…" if len(v["sources"]) > 4 else "") if v["sources"] else "")
+                  + f" · {v['path']}")
     return 0
 
 

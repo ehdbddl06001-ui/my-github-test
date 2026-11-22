@@ -39,7 +39,7 @@ GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2
 |---|---|---|
 | `python pipelines/indexer.py --check` | frontmatter 계약 | 커밋 전 필수 |
 | `python pipelines/lint_questions.py <파일>` | 문항 품질(ERROR)·세트 구성·정답 순서(WARN) | 문항 커밋 전 |
-| `python pipelines/concepts.py` | 정리본 계약·**도식이 한 쪽에 들어가는가**·출처·판형 2 예산 | 정리본 커밋 전 |
+| `python pipelines/concepts.py` | 정리본 계약·**도식이 한 쪽에 들어가는가**·출처·판형 2 예산·분량·중복(WARN) | 정리본 커밋 전 |
 | `python pipelines/test_learning_books.py` | 코드 회귀(도식 배치·학습 상태 JS/Python 일치·PDF·드라이브) — **고정 픽스처만** | books.yml 관문 |
 | `python pipelines/test_content.py` | 실제 정리본·문항 전수(계약·도식 크기) | books.yml 에서 따로 — 실패해도 다른 책은 만든 뒤 작업을 실패로 알림 |
 | `python pipelines/test_question_design.py` | 출제 설계·린트 규칙 | 코드 변경 시 |
@@ -196,9 +196,15 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   그 전에는 번들이 id 내림차순(= 하루 세트의 과목 영어 이름 역순)이라 늘 류마티스 → 호흡기 → … → 순환기로 나와, 푼 문항이
   류마티스 14 · 순환기 1 로 쏠리고 오답 정리본도 그 과에만 쌓였다 — **순서를 정하는 곳에는 「어느 과가 늘 앞에 오는가」를 본다.**
   ② `concept_queue.py` — `[note]`·`[link]`·`[touch]`·`[root]`(기초 뿌리, 2026-11-21)·`[variant]`(틀린 문항마다 flip true/false 2개)·`[dist]`(고른 오답 보기 설명)·
-  `[restyle]`(판형 2로 옮길 옛 정리본)·`[gap]`(기본틀 빈 자리). 규칙은 모두 `/gen-concept`.
+  `[restyle]`(판형 2로 옮길 옛 정리본)·`[gap]`(기본틀 빈 자리)·`[verify]`(미대조 표시 보강 — 루틴 밖). 규칙은 모두 `/gen-concept`.
   `[gap]` 의 책 순서는 **정리본이 적은 책 먼저**(같으면 기본틀 순서, 정리본 0개인 책 · 기초의학 학문별 책은 제외 — 오답 · `[root]` 가 이끈다, 2026-11-23).
   많은 책 먼저였을 때 06시 루틴이 맨 앞 하나만 써서 한 과만 불었다(10월 류마티스 12개 · 11월 순환기 23개).
+  **국시 핵심 공백 과목 먼저(2026-11-23 사용자 결정)** — `books_config.yaml` `gap_priority` 의 여섯 책(혈액종양 · 소화기 · 신경 · 감염 ·
+  내분비 · 외과) 가운데 정리본이 12개 미만인 책이 앞 묶음이고 그 안에서도 적은 책부터다. 12개가 된 책은 일반 순서로 내려가고,
+  여섯 책이 모두 12개가 되면 전체 「적은 책 먼저」와 같아진다. 책 목록 · 기준 수는 코드가 아니라 그 설정에서 바꾼다.
+  `[verify]`(2026-11-23 사용자 결정) — 원고에 미대조 표시(`[[?출처]]` · 손으로 적은 `†`)가 남은 정리본. **PC 세션 · Actions 전용**이다
+  (루틴은 PubMed · 지침 원문을 못 연다): 기본 출력에는 건수 한 줄만, 목록은 `concept_queue.py --verify`(JSON 에는 늘 있다).
+  `concepts.py` 의 분량 · 중복 린트(본문 3,200자 · `diagram_notes` 4줄 · summary↔`## 판단` 되풀이 · 변형 없음)는 **WARN 만** 낸다 — 관문은 막지 않는다.
   ③ 판단 사슬 `design.chain`(2026-09-24 이후 필수) · 하루 세트 구성(3단계 이상 40 %↑, 한 목표 50 %↓, 치료+다음 처치 55 %↓,
   정답 순서 순환 금지 — `lint_questions.py` 끝 WARN). ④ `item_stats.py` — 학습자 1명이라 **문항별 통계는 내지 않고** 묶음(20↑)만 판정.
 - **기초 뿌리 · 기초의학 학문별 책(2026-11-21 사용자 결정)**: 임상 정리본(판단) 밑의 기초 기전을 **기초 정리본**(`layer: basic`)으로 따로 쓰고,
@@ -207,7 +213,9 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   「기초의학」 한 권은 **일곱 권**(생리학 · 병리학 · 약리학 · 생화학·유전 · 미생물학 · 면역학 · 해부·조직·발생)으로 나눴다 — topic → 책은
   `books_config.yaml` `books`(`docs/ink.js` `BOOKS` 와 같아야 한다), 학문 꼬리표 → 책은 `disciplines`. 임상 책에 실린 기초 성격 정리본은
   옮기지 않고 `discipline` 꼬리표만 달아 학문별 책 목차 쪽 「다른 책에 실린 단원」에 제목을 적는다. **소급하지 않는다** — 큐 `[root]` 는
-  `ROOTS_FROM`(2026-11-21) 이후에 틀린 목표만 낸다. 전공 교과서(`textbooks` — Robbins Basic 10e · Katzung 14e · Junqueira 13e, 드라이브 `교과서/`)는
+  `ROOTS_FROM`(2026-11-21) 이후에 틀린 목표만 낸다. **예외(2026-11-23 사용자 결정)** — 반복 오답 상위 20개 임상 정리본
+  (2회 이상 틀린 것 · 오답 수 → 우선순위 → id, `concept_queue.ROOT_BACKFILL_TOP`)만 그 전 오답이라도 `[root]` 에 「상위 20 소급」으로 올린다.
+  상위 20 은 뿌리가 붙었는지와 무관하게 뽑으므로 21위가 빈자리를 채우지 않는다 — 나머지 옛 정리본은 다시 틀릴 때만. 전공 교과서(`textbooks` — Robbins Basic 10e · Katzung 14e · Junqueira 13e, 드라이브 `교과서/`)는
   아직 읽기 도구가 없어 `textbook_check: pending`, 교과서가 없는 학문은 `unavailable` — 둘 다 해리슨 22판으로 대조하고 학습서에
   「전공 교과서 미대조」가 붙는다. 교과서가 낡은 곳의 최근 10년 고인용 종설 · 합의문 보강은 PC 세션 몫이다(루틴은 PubMed 를 못 연다) —
   본문에 섞지 않고 `## 최근 근거` 절과 「시험 쟁점」 새 근거로. 남은 일: 교과서 장별 문서 · 읽기 도구(2단계), 최근 근거 흐름 · 앱 연결(3단계).
