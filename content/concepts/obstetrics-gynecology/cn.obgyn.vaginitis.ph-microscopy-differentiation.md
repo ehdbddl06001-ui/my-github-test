@@ -4,8 +4,8 @@ type: concept
 topic: Obstetrics & Gynecology
 see_also: [Infectious Disease]
 date: 2026-11-20
-updated: 2026-11-20
-version: 1
+updated: 2026-11-22
+version: 3
 outline: gyn.infection   # 기본틀 슬롯(content/outline/subjects.yaml) — 산부인과 손 슬롯 「생식기 감염과 성매개감염」
 confidence: medium
 review_status: unreviewed
@@ -118,26 +118,49 @@ checks:
     a: "여성은 메트로니다졸 500 mg 하루 2번 7일, 남성은 메트로니다졸 2 g 단회. 현재 파트너는 추정 치료로 보내고 둘 다 치료를 마칠 때까지 성관계를 피한다."
   - q: "세균질증이 반복되는 여성의 남편을 함께 치료해야 하나?"
     a: "권하지 않는다. 파트너 치료가 여성의 치료 반응·재발을 바꾸지 않았다."
-figures_wanted:
-- source: PMC_OA
-  shows: 세균질증의 단서세포 — 상피세포 가장자리를 작은 균이 덮어 경계가 흐려진다
-  at: 가르는 소견 — pH·아민·도말
-  query: '"bacterial vaginosis" AND "clue cells" AND (microscopy OR "wet mount" OR "Gram stain")'
-  caption_terms:
-  - clue cell
-  modality: MICROSCOPY
-- source: PMC_OA
-  shows: 트리코모나스 질염의 생리식염수 도말 — 편모가 있는 원충
-  at: 가르는 소견 — pH·아민·도말
-  query: '"Trichomonas vaginalis" AND ("wet mount" OR "saline microscopy") AND "case report"'
-  caption_terms:
-  - trichomona
-  modality: MICROSCOPY
 figures_rejected:
 - asset: PMC-PMC11905427_Fig3
   reason: 그림이 진단 정확도 숲 그림(forest plot)이다 — 트리코모나스 도말 소견이 없다
 - asset: PMC-PMC13493514_FIGURE2
   reason: 단서세포 패널이 개당 약 65 px 썸네일 격자 — 진단명 표지를 빼고 자르면 짧은 변 134 px(<250)라 인쇄에서 소견이 안 보인다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13716771_figure5-0-365-340-701.jpg
+  kind: photo
+  at: 가르는 소견 — pH·아민·도말
+  shows: 세균질증의 단서세포(clue cell) — 그람 염색에서 상피세포 표면을 작은 균이 덮는다
+  look_for:
+  - 가운데 큰 편평상피세포 가장자리를 덮은 점 같은 작은 균
+  - 균에 덮이지 않아 경계가 매끈한 주변 상피세포와 비교
+  label: 「Grad-CAM visualizations for YOLOv26 and RT-DETR. Representative Gram-stained microscopic images illustrating GU (top) and BV (bottom; clue cells) are shown alongside the corresponding Grad-CAM saliency maps generated from YOLOv26 (C2PSA) and RT-DETR (HGBlock-9). In both models, the saliency maps predominantly highlighted regions corresponding to the ground-truth diagnostic features. GT, ground truth.」 — Interpretable detection-based image classification for differential diagnosis of vaginal discharge using smartphone-assisted microscopy
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Interpretable detection-based image classification for differential diagnosis of vaginal discharge using smartphone-assisted microscopy. Frontiers in Artificial Intelligence
+  doi: 10.3389/frai.2026.1985517
+  credit: 'Interpretable detection-based image classification for differential diagnosis of vaginal discharge using smartphone-assisted microscopy. Front Artif Intell. 2026 Oct 15;9:1985517. doi: 10.3389/frai.2026.1985517 (CC BY) — Figure 5'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13716771/
+  asset: PMC-PMC13716771_Figure5
+  privacy_check: 현미경 도말 사진만 — 얼굴·문신·이름·병원 표지 없음, 아래 왼쪽 원본 패널만 잘라 Grad-CAM·GT 상자 패널 제외
+  crop: 0,365,340,701
+- id: f2
+  file: docs/assets/figures/pmc-pmc10178083_figure4.jpg
+  kind: photo
+  at: 가르는 소견 — pH·아민·도말
+  shows: 트리코모나스 질염의 생리식염수 도말(wet mount) — 편모가 있는 원충
+  look_for:
+  - 편평상피세포 주변의 백혈구 크기 서양배 모양 원충
+  - 원충에서 뻗은 가는 편모
+  label: 「Wet mount of a patient with a Trichomonas vaginalis infection (phase contrast microscopy, 400-fold magnification, in 0.8% NaCl solution).」 — Sexually Transmitted Diseases—An Update and Overview of Current Research
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Sexually Transmitted Diseases—An Update and Overview of Current Research. Diagnostics
+  doi: 10.3390/diagnostics13091656
+  credit: 'Sexually Transmitted Diseases—An Update and Overview of Current Research. Diagnostics (Basel). 2023 May 8;13(9):1656. doi: 10.3390/diagnostics13091656 (CC BY) — Figure 4'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10178083/
+  asset: PMC-PMC10178083_Figure4
+  privacy_check: 위상차 현미경 도말 사진만 — 얼굴·문신·이름·병원 표지 없음
 ---
 
 ## 판단 — 왜 pH 다음에 도말인가
