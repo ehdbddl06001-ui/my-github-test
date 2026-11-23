@@ -20,6 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import book_layout as bl
 import build_books as bb
 import check_sources as cs
 import concepts as C
@@ -1718,7 +1719,7 @@ class NoteParts(unittest.TestCase):
 
     def test_pdf_unit_uses_slots_cards_and_puts_criteria_before_the_choice_section(self):
         cfg = self.cfg
-        self.assertEqual(cfg["template_version"], 12)
+        self.assertEqual(cfg["template_version"], 13)
         u, c = self._unit("cn.cardio.aortic-regurgitation.surgery-timing", "순환기내과")
         h, info = bb.unit_html(u, cfg, {}, "순환기내과")
         for lab in ("핵심 결론", "발문 단서", "왜 이 판단인가"):
@@ -1815,6 +1816,284 @@ class NoteParts(unittest.TestCase):
         self.assertIn('<div class="lh">CURB-65</div>', h)
         self.assertEqual(h.count('<span class="bx"></span>'), 2)
         self.assertIn('<span class="pk">판정</span>2점 이상이면 입원', h)
+
+
+class LayoutRules(unittest.TestCase):
+    """한 번 올려 재는 배치(2026-11-23) — 측정값 → 배치 문제 계산과 탐색의 가지치기를 손으로 만든 값으로 고정한다(브라우저 없이)."""
+
+    H = 1000.0
+
+    def _page(self, left=None, right=None, **kw):
+        """한 쪽의 측정값 — left/right = 그 단의 글 구간. 비우면 꽉 찬 단."""
+        full = [[0.0, self.H]]
+        pg = {"t": [left if left is not None else full, right if right is not None else full], "b": [[], []], "x1": [], "wide": [], "orph": []}
+        pg.update(kw)
+        return pg
+
+    def _m(self, *pages):
+        return {"pages": len(pages), "PH": self.H, "P": list(pages)}
+
+    def test_gap_and_coverage_use_the_validator_thresholds(self):
+        ok = self._page()
+        # 2쪽: 왼쪽 단이 60% 에서 끝난다(빈칸 40% > 30%) · 3쪽: 두 단 모두 45% 만 찼다(내용 45% < 50%)
+        m = self._m(ok, self._page(left=[[0, 600]]), self._page(left=[[0, 450]], right=[[0, 450]]), ok)
+        errs = bl.problems(m)
+        self.assertEqual(errs, ["2쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)", "3쪽에 빈 공간이 크다(내용 45%)",
+                                "3쪽 왼쪽 단 아래가 비어 있다(빈 공간 55%)", "3쪽 오른쪽 단 아래가 비어 있다(빈 공간 55%)"])
+        self.assertEqual(bl.layout_errors(errs), errs)                       # 검증의 배치 오류와 같은 글귀다(탐색 · 참고 강등이 글귀로 고른다)
+        # 1쪽(목차 쪽)과 마지막 쪽은 비어도 정상
+        self.assertEqual(bl.problems(self._m(self._page(left=[[0, 100]], right=[]), ok, self._page(left=[[0, 100]], right=[]))), [])
+        # 단 아래의 상자(표 · 그림)도 내용이다 · 6pt(8px) 안의 틈은 이어진 것으로 센다
+        boxed = self._page(left=[[0, 500]], b=[[[505, 1000]], []])
+        self.assertEqual(bl.problems(self._m(ok, boxed, ok)), [])
+        apart = self._page(left=[[0, 300], [700, 1000]], right=[[0, 300], [700, 1000]])     # 가운데 40% 가 빈 쪽 — 아래는 차 있다
+        self.assertEqual(bl.problems(self._m(ok, apart, ok)), [])                            # 내용 60% — 문제 아님
+        self.assertEqual(bl.problems(self._m(ok, self._page(left=[[0, 200], [800, 1000]], right=[[0, 200], [800, 1000]]), ok)),
+                         ["2쪽에 빈 공간이 크다(내용 40%)"])
+
+    def test_margin_makes_the_search_avoid_borderline_layouts(self):
+        ok = self._page()
+        m = self._m(ok, self._page(left=[[0, 705]]), ok)                    # 빈칸 29.5%
+        self.assertEqual(bl.problems(m), [])
+        self.assertEqual(bl.problems(m, 0.01), ["2쪽 왼쪽 단 아래가 비어 있다(빈 공간 30%)"])
+        self.assertEqual(bb.MEASURE_MARGIN, 0.01)
+
+    def test_narrow_bands_around_a_full_width_diagram(self):
+        ok = self._page()
+        dia = [[200.0, 880.0]]                                               # 두 단 폭 도식(높이 680) — 아래에 12% 남는다
+        below = self._page(left=[[0, 190], [900, 1000]], right=[[0, 190], [900, 1000]], b=[dia, dia], wide=dia)
+        self.assertEqual(bl.problems(self._m(ok, below, ok)), ["2쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 12%) — 좌우로 오가며 읽힌다"])
+        # 도식 아래에 글이 없으면 띠가 아니다(그 쪽은 도식으로 끝난다)
+        end = self._page(left=[[0, 190]], right=[[0, 190]], b=[dia, dia], wide=dia)
+        self.assertEqual(bl.problems(self._m(ok, end, ok)), [])
+        # 위 띠: 도식 위 10% 에 오른쪽 단 글이 있어야 한다(왼쪽 단에만 있으면 한 줄로 읽힌다)
+        top = [[100.0, 1000.0]]
+        both = self._page(left=[[0, 90]], right=[[0, 90]], x1=[[0, 90]], b=[top, top], wide=top)
+        self.assertEqual(bl.problems(self._m(ok, both, ok)), ["2쪽 두 단 도식 위 좁은 띠(10%) — 좌우로 오가며 읽힌다"])
+        left_only = self._page(left=[[0, 90]], right=[], b=[top, top], wide=top)
+        self.assertEqual(bl.problems(self._m(ok, left_only, ok)), [])
+        # 낮은 두 단 폭 상자(40pt 미만 — 머리 밑줄 따위)는 도식이 아니다
+        thin = [[880.0, 900.0]]
+        self.assertEqual(bl.problems(self._m(ok, self._page(left=[[0, 870], [905, 1000]], right=[[0, 870], [905, 1000]], b=[thin, thin], wide=thin), ok)), [])
+
+    def test_orphan_headings_and_error_keys(self):
+        ok = self._page()
+        errs = bl.problems(self._m(ok, self._page(orph=["권고와 예외"]), ok))
+        self.assertEqual(errs, ["2쪽 고립된 제목: '권고와 예외'"])
+        # 예측과 실제는 (쪽, 종류)로 맞댄다 — % 값이 조금 달라도 같은 문제다
+        self.assertEqual(bl.error_key("12쪽 왼쪽 단 아래가 비어 있다(빈 공간 31%)"), bl.error_key("12쪽 왼쪽 단 아래가 비어 있다(빈 공간 33%)"))
+        self.assertNotEqual(bl.error_key("12쪽 왼쪽 단 아래가 비어 있다(빈 공간 31%)"), bl.error_key("12쪽 오른쪽 단 아래가 비어 있다(빈 공간 31%)"))
+        self.assertNotEqual(bl.error_key("12쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 9%) — 좌우로 오가며 읽힌다"),
+                            bl.error_key("12쪽 두 단 도식 위 좁은 띠(9%) — 좌우로 오가며 읽힌다"))
+        self.assertEqual(bl.layout_errors(["임베드되지 않은 글꼴: ['x']", "3쪽에 빈 공간이 크다(내용 40%)"]), ["3쪽에 빈 공간이 크다(내용 40%)"])
+
+    # ── 탐색 ──
+    def _units(self):
+        mk = lambda k: bb.Unit(key=k, book="책", concept={"diagram": SPEC}, state=ll.State(key=k, objective=k), questions=[], title=k)
+        us = [mk("cn.t.a.x"), mk("cn.t.b.x"), mk("cn.t.c.x")]
+        info = lambda: {"diagram": {"place": "column", "pt": 7.0}, "dia_default": 3, "dia_choices": [1, 2, 3, 4, 5], "dia_at": 3,
+                        "fig_choices": {}, "fig_at": {}}
+        infos = {u.anchor: info() for u in us}
+        pm = {us[0].anchor: 2, us[1].anchor: 4, us[2].anchor: 6}
+        return us, infos, pm
+
+    def test_search_stops_when_solved_and_skips_units_after_the_last_problem(self):
+        us, infos, pm = self._units()
+        a, b, c = (u.anchor for u in us)
+        bad = "4쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)"
+        calls = []
+
+        def trial(pos):                       # 둘째 단원의 도식을 다섯째 자리로 옮기면 풀린다
+            calls.append(dict(pos))
+            return ([] if pos.get(b) == 5 else [bad]), 8, infos, pm
+
+        pos, tried = bb.search_placement(us, trial, ([bad], 8, infos, pm), prune=True)
+        self.assertEqual((pos.get(b), tried), (5, 10))                       # 첫 단원 8번 + 둘째 단원 2번 — 풀리면 멈춘다
+        self.assertFalse(any(c in p for p in calls))                         # 셋째 단원은 건드리지 않았다
+        # 옛 탐색(가지치기 없음)은 풀린 뒤에도 남은 단원마다 한 번씩 더 그려 본다 — 같은 배치, 더 많은 시도
+        calls.clear()
+        pos2, tried2 = bb.search_placement(us, trial, ([bad], 8, infos, pm))
+        self.assertEqual((pos2.get(b), tried2), (5, 11))
+        self.assertTrue(any(c in p for p in calls))
+        # 문제가 2쪽뿐이면 4쪽 · 6쪽에서 시작하는 단원은 바꿔 봐야 소용없다
+        only2 = "2쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)"
+        calls.clear()
+        _, tried3 = bb.search_placement(us, lambda p: (calls.append(dict(p)) or [only2], 8, infos, pm), ([only2], 8, infos, pm), prune=True)
+        self.assertEqual(tried3, 8)
+        self.assertTrue(all(set(p) <= {a, a + "#shrink", a + "#pad", a + "#col"} for p in calls))
+        # 쪽을 모르는 오류(배치 외)가 섞이면 어느 단원도 건너뛰지 않는다
+        mixed = [only2, "도식이 한 쪽에 온전히 있지 않다: x"]
+        _, tried4 = bb.search_placement(us, lambda p: (mixed, 8, infos, pm), (mixed, 8, infos, pm), prune=True)
+        self.assertEqual(tried4, 24)
+
+    def test_search_budget_goal_and_unit_filter(self):
+        us, infos, pm = self._units()
+        a, b, c = (u.anchor for u in us)
+        bad = "4쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)"
+        trial = lambda pos: (([] if pos.get(b) == 5 else [bad]), 8, infos, pm)
+        pos, tried = bb.search_placement(us, trial, ([bad], 8, infos, pm), prune=True, budget=3)
+        self.assertEqual((pos, tried), ({}, 3))                              # 예산 안에서 못 풀면 처음 배치 그대로
+        pos, tried = bb.search_placement(us, trial, ([bad], 8, infos, pm), prune=True, only={b})
+        self.assertEqual((pos.get(b), tried), (5, 2))
+        # 시작 배치(pos0)를 이어받고, 목표를 「알던 오류만 남는다」로 줄 수 있다(예측에 없던 오류만 PDF 로 고칠 때)
+        known = "2쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)"
+        trial2 = lambda pos: ([known] + ([] if pos.get(b) == 5 else [bad]), 8, infos, pm)
+        pos, tried = bb.search_placement(us, trial2, ([known, bad], 8, infos, pm), pos0={a: 1}, prune=True, only={b},
+                                         goal=lambda es: all(e == known for e in es))
+        self.assertEqual((pos.get(a), pos.get(b), tried), (1, 5, 2))
+        # 그 쪽들에 닿는 단원: 앞쪽 첫머리를 차지한 단원부터 그 쪽에서 시작하는 단원까지
+        self.assertEqual(bb.units_near(us, pm, [4]), {a, b})
+        self.assertEqual(bb.units_near(us, pm, [5]), {b})
+        self.assertEqual(bb.units_near(us, pm, [6, 7]), {b, c})
+
+    def test_band_padding_pass(self):
+        us, infos, pm = self._units()
+        a = us[0].anchor
+        infos[a]["diagram"] = {"place": "full", "pt": 7.0}
+        band = "3쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 9%) — 좌우로 오가며 읽힌다"
+        trial = lambda pos: (([] if pos.get(a + "#pad") == 28 else [band]), 8, infos, pm)
+        pos, tried = bb.settle_bands(us, trial, ([band], 8, infos, pm), {a: 3}, prune=True)
+        self.assertEqual((pos, tried), ({a: 3, a + "#pad": 28}, 3))
+        pos, _ = bb.settle_bands(us, lambda p: ([band], 8, infos, pm), ([band], 8, infos, pm), {a: 3})
+        self.assertEqual(pos, {a: 3})                                        # 나아지지 않으면 원래 배치
+
+    def test_diagram_fit_is_computed_once(self):
+        calls = []
+        real = dd.layout
+        spec = copy.deepcopy(SPEC)
+        spec["title"] = "한 번만 짠다"
+        try:
+            dd.layout = lambda *a, **k: (calls.append(1), real(*a, **k))[1]
+            f1 = bb.fit_diagram(spec)
+            n = len(calls)
+            f2 = bb.fit_diagram(copy.deepcopy(spec))                         # 같은 내용이면 다시 짜지 않는다
+            f3 = bb.fit_diagram(spec, shrink=0.88)                           # 축소는 같은 계산에 배율만 곱한다
+        finally:
+            dd.layout = real
+        self.assertGreater(n, 0)
+        self.assertEqual(len(calls), n)
+        self.assertEqual((f1["scale"], f1["place"], f1["node_w"]), (f2["scale"], f2["place"], f2["node_w"]))
+        self.assertAlmostEqual(f3["scale"], round(f1["scale"] * 0.88, 3))
+
+
+class MeasuredLayout(unittest.TestCase):
+    """실제로 올려 재 본다 — 측정이 PDF 의 쪽 나눔 · 배치 오류와 맞는가, 빌드가 PDF 를 몇 번 그리는가, 측정이 안 되면 옛 탐색으로 가는가.
+
+    책은 지금의 알레르기내과 정리본 두 편으로 고정한다(정리본이 늘어도 이 시험의 책은 커지지 않는다)."""
+
+    IDS = ("cn.allergy.anaphylaxis.im-epinephrine-first", "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest")
+    TITLE = "알레르기내과"
+
+    @classmethod
+    def setUpClass(cls):
+        try:
+            import playwright  # noqa: F401
+            import pymupdf  # noqa: F401
+        except ImportError:
+            raise unittest.SkipTest("playwright/pymupdf 없음")
+        base, _ = C.load_concepts()
+        cls.concepts = {i: base[i] for i in cls.IDS if i in base}
+        if len(cls.concepts) != len(cls.IDS):
+            raise unittest.SkipTest("고정한 정리본이 없다")
+        cls.cfg = bb.load_config()
+
+    def _patched(self):
+        """build() 가 정리본 두 편 · 문항 없음으로 돌게 한다(전부 읽으면 호출마다 1분)."""
+        from unittest import mock
+        return mock.patch.multiple(bb, load_concepts=lambda: (dict(self.concepts), []), load_questions=lambda: {})
+
+    def test_measurement_predicts_pdf_pages_and_layout_errors(self):
+        from playwright.sync_api import sync_playwright
+        cfg = self.cfg
+        book = bb.plan(self.concepts, {}, {}, cfg, {})[self.TITLE]
+        units = [bb.et.unit(u) for u in book.units]
+        fonts = {"regular": bb.find_font(cfg["fonts"]["regular"]), "bold": bb.find_font(cfg["fonts"]["bold"])}
+        meta = {"version": 1, "date": "2026-11-23", "elsewhere": []}
+        with tempfile.TemporaryDirectory() as td, sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            try:
+                box = bl.print_box(lambda h, p: bb.render_pdf(browser, h, p, ""), bb.PAGE)
+                # 쪽과 여백을 정수 px 로 맞춘 상자다 — mm 를 그대로 바꾼 값(718.11 × 1046.92)으로 재면 줄바꿈이 어긋난다
+                self.assertEqual(box, (float(round(box[0])), float(round(box[1]))), box)
+                self.assertLess(abs(box[0] - 718.11) + abs(box[1] - 1046.92), 4, box)
+                mb = bb.MeasuredBook(browser, box, self.TITLE, units, cfg, {}, meta, fonts, [])
+                try:
+                    errs0, pages0, infos, pm0 = mb.evaluate({})
+                    m0 = mb.last
+                    again = mb.evaluate({})
+                    self.assertEqual((again[0], again[1], again[3]), (errs0, pages0, pm0))      # 되풀이해도 같은 값
+                    # 단원 하나의 도식 자리를 바꿔 끼우고 잰 값 = 그 배치로 처음부터 올려 잰 값
+                    u = next(x for x in units if infos[x.anchor].get("diagram") and len(infos[x.anchor]["dia_choices"]) > 1)
+                    alt = next(q for q in infos[u.anchor]["dia_choices"] if q != infos[u.anchor]["dia_at"])
+                    pos = {u.anchor: alt, u.anchor + "#shrink": 1.0, u.anchor + "#pad": 0, u.anchor + "#col": False}
+                    swapped = mb.evaluate(pos)
+                    m1 = mb.last
+                finally:
+                    mb.close()
+                html_text, _ = bb.book_html(self.TITLE, units, cfg, {}, meta, None, fonts, [], pos)
+                lab = bl.Lab(browser, html_text, box)
+                try:
+                    fresh = lab.measure()
+                finally:
+                    lab.close()
+                self.assertEqual((swapped[1], swapped[3], swapped[0]), (fresh["pages"], fresh["pm"], bl.problems(fresh, bb.MEASURE_MARGIN)))
+                # 실제 PDF 와: 쪽 수 · 단원이 시작하는 쪽 · 배치 오류의 (쪽, 종류)
+                for p_, m_ in (({}, m0), (pos, m1)):
+                    pages_m, pm_m, errs_m = m_["pages"], m_["pm"], bl.problems(m_)
+                    pdf = Path(td) / "t.pdf"
+                    h, inf = bb.book_html(self.TITLE, units, cfg, {}, meta, pm_m, fonts, [], p_)
+                    bb.render_pdf(browser, h, pdf, "시험")
+                    pm = bb.locate(pdf)
+                    import pymupdf
+                    with pymupdf.open(pdf) as d:
+                        self.assertEqual(d.page_count, pages_m)
+                    self.assertEqual({x.anchor: pm.get(x.anchor) for x in units}, {x.anchor: pm_m.get(x.anchor) for x in units})
+                    real, _ = bb.validate_pdf(pdf, self.TITLE, units, pm, inf)
+                    self.assertEqual({bl.error_key(e) for e in bl.layout_errors(real)},
+                                     {bl.error_key(e) for e in errs_m}, (real, errs_m))
+            finally:
+                browser.close()
+
+    def test_build_draws_the_book_once_and_is_not_worse_than_the_old_search(self):
+        import pymupdf
+        cfg = dict(self.cfg)
+        res = {}
+        with self._patched(), tempfile.TemporaryDirectory() as td:
+            for mode in ("measure", "search"):
+                st, out = Path(td) / mode / "state", Path(td) / mode / "out"
+                r = bb.build(cfg, [], st, out, only=self.TITLE, layout=mode)
+                self.assertEqual(r["built"], [self.TITLE], r)
+                self.assertEqual(r["validation"][self.TITLE], [])
+                with pymupdf.open(out / f"MedKOS_학습서_{self.TITLE}.pdf") as d:
+                    pages = d.page_count
+                left = [n for n in r["notes"][self.TITLE] if "배치 탐색 뒤에도 남은" in n]
+                res[mode] = (r["renders"][self.TITLE], len(left), pages, (r.get("layout_trials") or {}).get(self.TITLE) or {})
+            print(f"\n  배치 — 측정: PDF {res['measure'][0]}번 · 남은 문제 {res['measure'][1]} · {res['measure'][2]}쪽 / "
+                  f"옛 탐색: PDF {res['search'][0]}번 · 남은 문제 {res['search'][1]} · {res['search'][2]}쪽")
+            # 측정이 실제와 맞으면 책은 한 번만 그린다. 안 맞아도(예측에 없던 오류를 PDF 로 고친다) 예산 안이다.
+            self.assertLessEqual(res["measure"][0], 2 + bb.REPAIR_RENDERS, res)
+            if not res["measure"][3].get("unpredicted"):
+                self.assertEqual(res["measure"][0], 1, res)
+            self.assertLessEqual(res["measure"][0], res["search"][0], res)
+            self.assertLessEqual(res["measure"][1], res["search"][1], res)      # 옛 탐색보다 배치 문제가 늘지 않는다
+            self.assertEqual(res["measure"][3].get("mode", "measure"), "measure")
+            # 책 이름을 설정에 적어 두면 그 책만 옛 탐색으로 간다
+            st, out = Path(td) / "pin" / "state", Path(td) / "pin" / "out"
+            r = bb.build(dict(cfg, layout_search=[self.TITLE]), [], st, out, only=self.TITLE)
+            self.assertEqual(r["renders"][self.TITLE], res["search"][0])
+
+    def test_falls_back_to_the_old_search_when_measuring_fails(self):
+        from unittest import mock
+        with self._patched(), tempfile.TemporaryDirectory() as td, \
+                mock.patch.object(bl, "print_box", side_effect=RuntimeError("탐침 실패")):
+            r = bb.build(dict(self.cfg), [], Path(td) / "state", Path(td) / "out", only=self.TITLE)
+        self.assertEqual(r["built"], [self.TITLE], r)
+        self.assertEqual(r["validation"][self.TITLE], [])
+        rec = r["layout_trials"][self.TITLE]
+        self.assertEqual(rec["mode"], "search")
+        self.assertIn("탐침 실패", rec["measure_failed"])
+        with self.assertRaises(ValueError):
+            bb.build(dict(self.cfg), [], Path("x"), Path("y"), layout="guess")
 
 
 if __name__ == "__main__":
