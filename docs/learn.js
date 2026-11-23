@@ -491,7 +491,7 @@ const LEARN = (() => {
         try {
           // 확대 창은 <img> 라 페이지 CSS 가 안 먹는다 — 색을 박아 넣은 복사본을 만든다
           const clone = svg.cloneNode(true);
-          const style = el("style", {}, ZOOM_CSS);
+          const style = el("style", {}, zoomCss(box));
           clone.insertBefore(style, clone.firstChild);
           const blob = new Blob([new XMLSerializer().serializeToString(clone)], { type: "image/svg+xml" });
           openZoom(URL.createObjectURL(blob), c.diagramTitle || c.title);
@@ -501,11 +501,19 @@ const LEARN = (() => {
       fail("도식을 그리는 중 문제가 생겨 아래 글로 보여 드립니다.");
     }
   }
-  const ZOOM_CSS = ".d-bg{fill:#0e1826}.d-edge{stroke:#7f8fa6;stroke-width:1.4}.d-edge.off{stroke-dasharray:5 4}"
-    + ".d-edge.on{stroke:#7cb8ff;stroke-width:3.2}.d-arrow{fill:#7f8fa6}.d-arrow-path{fill:#7cb8ff}"
-    + ".d-node{fill:#16212f;stroke:#7f8fa6;stroke-width:1.2}.k-decision{fill:#2a2412}.k-info{fill:#141f36}.k-alert{fill:#321417}.k-end{fill:#11281c}"
-    + ".d-node.st{stroke:#7cb8ff;stroke-width:3}.st-unknown,.st-not_done{stroke-dasharray:6 3}.d-node.split{stroke:#ff8a80;stroke-width:3}"
-    + ".d-sub{fill:#a9b6c6}.d-txt{fill:#e6edf5}.b{font-weight:700}.d-lab{fill:#0e1826;stroke:#7f8fa6;stroke-width:.6}";
+  // 확대 창은 <img> 라 페이지 CSS(변수 포함)가 안 먹는다 — 도식 상자에 걸린 지금 테마의 색을 읽어 박아 넣는다
+  // (필기 종이 안이면 앱이 어두워도 밝은 색이 나온다). 색 이름은 style.css 맨 위 「임상 판단 도식」 변수.
+  function zoomCss(box) {
+    const cs = getComputedStyle(box);
+    const v = (n, d) => (cs.getPropertyValue(n) || "").trim() || d;
+    const bg = v("--d-bg", "#ffffff"), edge = v("--d-edge", "#7b8aa0"), on = v("--d-on", "#1d57a8"), stroke = v("--d-stroke", "#94a3b8");
+    return `.d-bg{fill:${bg}}.d-edge{stroke:${edge};stroke-width:1.4}.d-edge.off{stroke-dasharray:5 4}`
+      + `.d-edge.on{stroke:${on};stroke-width:3.2}.d-arrow{fill:${edge}}.d-arrow-path{fill:${on}}`
+      + `.d-node{fill:${v("--d-node", "#ffffff")};stroke:${stroke};stroke-width:1.2}.k-decision{fill:${v("--d-decision", "#e9f0fa")}}`
+      + `.k-info{fill:${v("--d-info", "#f8fafc")}}.k-alert{fill:${v("--d-alert", "#f1f4f8")}}.k-end{fill:${v("--d-end", "#f4f7fb")}}`
+      + `.d-node.st{stroke:${on};stroke-width:3}.st-unknown,.st-not_done{stroke-dasharray:6 3}.d-node.split{stroke:${v("--d-split", "#d92d20")};stroke-width:3}`
+      + `.d-sub{fill:${v("--d-sub", "#5c6c82")}}.d-txt{fill:${v("--d-txt", "#182334")}}.b{font-weight:700}.d-lab{fill:${bg};stroke:${stroke};stroke-width:.6}`;
+  }
 
   /* ---------- 인출 확인 · 변형 문제 · 자기 표시 ---------- */
   function checksHtml(c) {
@@ -617,7 +625,7 @@ const LEARN = (() => {
         add({ kind: "answer", mode: "variant", qid: v.id, objective: c.id, chosen: letterOf(i), correct: letterOf(v.answer - 1), ok,
           chosenText: v.options[i], answerText: v.options[v.answer - 1], phase });
         const res = body.querySelector(".var-res");
-        res.innerHTML = `<div class="verdict ${ok ? "ok" : "bad"}">${ok ? "✅ 맞았습니다" : "❌ 다릅니다"} · 정답 ${ALPHA[v.answer - 1]}</div>`
+        res.innerHTML = `<div class="verdict ${ok ? "ok" : "bad"}">${ok ? "맞았습니다" : "다릅니다"} · 정답 ${ALPHA[v.answer - 1]}</div>`
           + `<div class="expl-item">${escapeHtml(v.explanation)}</div>`
           + (v.changed ? `<div class="learn-row"><span class="k">${v.flip ? "바뀐 단서 → 답이 바뀜" : "바뀐 겉모습 → 답은 그대로"}</span>${escapeHtml(v.changed)}</div>` : "")
           + `<div class="muted small">${phase === "delayed" ? "지연된 적용 확인으로 기록했습니다." : "즉시 확인으로 기록했습니다 — 다음 날 이후 다시 확인하면 재확인 완료가 될 수 있습니다."}</div>`;

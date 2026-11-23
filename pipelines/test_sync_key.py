@@ -131,5 +131,47 @@ class Wiring(unittest.TestCase):
         self.assertIn("r.status === 401", learn)
 
 
+class Theme(unittest.TestCase):
+    """밝은 화면(기본) / 어두운 화면 — 2026-11-23 vNext Phase 1. 색은 style.css 맨 위 변수 두 묶음에만 있다."""
+
+    PAGES = ("index.html", "papers.html", "search.html", "whatsnew.html", "ailab.html")
+
+    def test_pages_load_theme_before_the_stylesheet(self):
+        # 스타일보다 먼저 읽어야 첫 그림 전에 html[data-theme] 가 걸린다(어두운 화면을 고른 사람에게 흰 화면이 번쩍이지 않게)
+        for page in self.PAGES:
+            html = (DOCS / page).read_text(encoding="utf-8")
+            a = re.search(r'<script src="theme\.js(\?v=\d+)?"></script>', html)
+            b = re.search(r'<link rel="stylesheet" href="style\.css', html)
+            self.assertTrue(a and b and a.start() < b.start(), page)
+        index = (DOCS / "index.html").read_text(encoding="utf-8")
+        ver = re.search(r'const VERSION = "medkos-v(\d+)"', (DOCS / "sw.js").read_text(encoding="utf-8")).group(1)
+        self.assertIn(f'theme.js?v={ver}"', index)
+        self.assertIn('"./theme.js"', (DOCS / "sw.js").read_text(encoding="utf-8"))          # 오프라인에서도 테마가 걸린다
+
+    def test_light_is_the_default_and_dark_is_opt_in(self):
+        js = (DOCS / "theme.js").read_text(encoding="utf-8")
+        self.assertIn('var KEY = "medkos_theme";', js)
+        self.assertIn('localStorage.getItem(KEY) === "dark" ? "dark" : "light"', js)       # 저장값이 없으면 밝은 화면
+        css = (DOCS / "style.css").read_text(encoding="utf-8")
+        self.assertIn(":root, .ink-sheet{", css)                                            # 필기 종이는 앱이 어두워도 밝은 변수
+        self.assertIn('html[data-theme="dark"]{', css)
+        for tok in ("--bg:#f3f6fa", "--card:#ffffff", "--surface:#f8fafd", "--border:#dce4ef", "--ink:#182334",
+                    "--muted:#5c6c82", "--accent:#1d57a8"):
+            self.assertIn(tok, css, tok)
+
+    def test_colors_live_only_in_the_token_blocks(self):
+        # 변수 묶음 밖에 색을 직접 적으면 한쪽 테마에서만 보이는 글자가 생긴다. 예외: 그림 뒤 흰 바탕 · 확대/로그인 창의 검은 막.
+        css = (DOCS / "style.css").read_text(encoding="utf-8")
+        body = css[css.index("*{box-sizing:border-box}"):]
+        left = set(re.findall(r"#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)", body))
+        self.assertLessEqual(left, {"#fff", "#ffffff", "#aab6c6", "rgba(0,0,0,.25)", "rgba(4,8,14,.72)", "rgba(4,8,14,.96)"}, left)
+        ailab = (DOCS / "ailab.html").read_text(encoding="utf-8")
+        style = ailab[ailab.index("<style>"):ailab.index("</style>")]
+        self.assertLessEqual(set(re.findall(r"#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)", style)), {"#f8fafc"})
+        learn = (DOCS / "learn.js").read_text(encoding="utf-8")
+        self.assertIn("zoomCss(box)", learn)                                                # 확대 창 도식도 지금 테마의 변수에서 색을 읽는다
+        self.assertNotIn(".ink-sheet .concept .dia-box{background:#0f1620", css)            # 종이 안 검은 도식 바탕 제거
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
