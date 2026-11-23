@@ -336,7 +336,7 @@ class Wiring(unittest.TestCase):
         css = (DOCS / "style.css").read_text(encoding="utf-8")
         self.assertIn("const c = over || concept(cid);", learn)
         self.assertIn("const use = st.old ? n.c : (st.live || (n && n.c));", ink)      # 기본은 최신판 · 목록에서 빠지면 떠 둔 판
-        self.assertIn("L.renderConcept(box, st.id, null, null, use, { form: st.form })", ink)   # 판형은 필기장이 고른다(아래 시험)
+        self.assertIn("L.renderConcept(box, st.id, null, null, use, { form: st.form, cases })", ink)   # 판형은 필기장이 고른다(아래 시험)
         self.assertEqual(ink.count("rec.doc.n = snapOf(st.live)"), 2)                # 판을 뜨는 곳은 둘뿐 — 첫 필기 · 「확인」
         self.assertIn('data-note-act="ack"', ink)
         self.assertIn('data-note-act="old"', ink)
@@ -473,6 +473,26 @@ class Wiring(unittest.TestCase):
         self.assertIn(".ink-content.margin{padding-right:352px}", css)
         self.assertIn("width:352px;", css)
 
+    @unittest.skipUnless(NODE, "node 없음")
+    def test_closed_loop_becomes_a_circle_but_letters_and_lines_do_not(self):
+        # 2026-11-23 「동그라미 표시가 원형으로 바뀌면 좋겠다」 — 동그라미를 그리고 멈추면 원 · 타원으로 다듬는다
+        out = run_node(CORE % (
+            "const ring=(rx,ry,wob)=>{const p=[];let tr=0,px,py;for(let i=0;i<=40;i++){const a=i/40*2*Math.PI*0.97;"
+            "const x=100+(rx+(i%%2?wob:-wob))*Math.cos(a),y=80+(ry+(i%%2?-wob:wob))*Math.sin(a);if(i)tr+=Math.hypot(x-px,y-py);px=x;py=y;p.push(x,y,.5);}return [p,tr];};"
+            "const c=ring(30,28,1.5),e=ring(60,25,1.5);"
+            "const C=I.loopShape(c[0],c[1]),E=I.loopShape(e[0],e[1]);"
+            "const rad=(P,cx,cy)=>{let lo=1e9,hi=0;for(let i=0;i<P.length;i+=3){const r=Math.hypot(P[i]-cx,P[i+1]-cy);lo=Math.min(lo,r);hi=Math.max(hi,r);}return [lo,hi];};"
+            "out.circle=rad(C,100,80);out.closed=C[0]===C[C.length-3]&&C[1]===C[C.length-2];"
+            "out.ellipse=rad(E,100,80).map(x=>Math.round(x));"
+            "const line=[];for(let i=0;i<=20;i++)line.push(10+i*8,50+i,.5);out.line=I.loopShape(line,165);"
+            "const sq=[];[[0,0],[60,0],[60,60],[0,60],[0,0]].forEach((q,k,l)=>{if(!k)return;for(let s=0;s<=10;s++)sq.push(l[k-1][0]+(q[0]-l[k-1][0])*s/10,l[k-1][1]+(q[1]-l[k-1][1])*s/10,.5);});"
+            "out.square=I.loopShape(sq,240);out.tiny=I.loopShape(ring(4,4,0)[0],25)"))
+        self.assertLess(out["circle"][1] - out["circle"][0], 1.0)             # 가로세로가 비슷하면 정원(중심이 조금 달라 1 안의 차이만 남는다)
+        self.assertTrue(28 <= out["circle"][0] <= 32, out["circle"])
+        self.assertTrue(out["closed"])                                        # 끝 점이 첫 점과 같다
+        self.assertTrue(out["ellipse"][0] < 30 < 55 < out["ellipse"][1], out["ellipse"])   # 납작한 고리는 타원 그대로
+        self.assertEqual((out["line"], out["square"], out["tiny"]), (None, None, None))    # 직선 · 네모 · 점은 원이 아니다
+
     def test_old_handwriting_keeps_the_old_note_layout(self):
         # 판형 12(2026-11-23 vNext Phase 3) — 정리본의 요약 · 혼동 · 시험 쟁점 모양이 바뀌었다. 옛 모양 위에 그은 밑줄 · 동그라미는
         # 새 모양에서 글자와 어긋나므로, 그때 쓴 필기가 있는 정리본은 옛 모양으로 그리고 사용자가 고를 때만 바꾼다.
@@ -495,7 +515,7 @@ class Wiring(unittest.TestCase):
         self.assertIn("function openDrawer(id)", ink)
         self.assertIn("const ord = (r) => (Number.isInteger(r.c.order) ? r.c.order : 1e9);", ink)   # 서가는 기본틀 순서
         self.assertIn('add({ kind: "view", what: "read", objective: cid });', learn)                # 정독 확인 = 열람 기록(복습 상태 계산에는 안 들어간다)
-        self.assertIn("readCount, markRead };", learn)
+        self.assertIn("readCount, markRead, wrongCases, quizOptions };", learn)
 
     @unittest.skipUnless(NODE, "node 없음")
     def test_note_layout_mark_survives_merge(self):
@@ -511,6 +531,83 @@ class Wiring(unittest.TestCase):
         self.assertIn('env.INK_BRANCH || "ink-data"', fn)
         self.assertIn('const SKIP = "[CF-Pages-Skip] ";', fn)
         self.assertNotIn('"main"', fn)
+
+
+class Fixes1123(unittest.TestCase):
+    """2026-11-23 아이패드에서 써 본 뒤의 여섯 가지 — 도구줄이 시계에 가림 · 형광펜 조절 · 직선/원 · 확대 버벅임 · 퀴즈 · 도식의 이 사례."""
+
+    def setUp(self):
+        self.ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        self.learn = (DOCS / "learn.js").read_text(encoding="utf-8")
+        self.css = (DOCS / "style.css").read_text(encoding="utf-8")
+
+    def test_toolbar_sits_below_the_status_bar(self):
+        css = self.css
+        self.assertIn(":root{--safe-top:calc(env(safe-area-inset-top) + min(16px, calc(env(safe-area-inset-top) * 0.6)))}", css)
+        self.assertEqual(css.count("env(safe-area-inset-top)"), 2)            # 정의 한 곳에서만 쓴다 — 나머지는 var(--safe-top)
+        self.assertIn("padding:calc(6px + var(--safe-top)) 10px 6px; background:var(--card)", css)   # 도구줄 바탕이 시계 밑까지
+
+    def test_highlighter_has_its_own_colours_and_widths_on_the_bar(self):
+        ink = self.ink
+        self.assertIn('t.kind === "hl" ? { c: t.hlColor, w: t.hlW, t: 1 }', ink)             # 굵기가 16 고정이 아니다
+        self.assertIn('data-a="hlslot"', ink)
+        self.assertIn('data-in="hlwidth"', ink)
+        self.assertIn('else if (a === "hlslot") { t.hlSel = Number(b.getAttribute("data-i")); t.hlW = t.hlSlots[t.hlSel]; t.kind = "hl"; }', ink)
+        bar = ink[ink.index("function paintBar()"):ink.index("function onBar(e)")]
+        self.assertIn("if (hl) {", bar)                                       # 형광펜일 때 막대의 색 · 굵기 칸이 형광펜 것으로 바뀐다
+        self.assertIn('<button data-a="hlc" data-c="${c}" class="ink-dot${c === t.hlColor ? " on" : ""}"', bar)
+
+    def test_line_button_is_on_the_dock_and_loops_become_circles(self):
+        ink = self.ink
+        dock = ink[ink.index('<span class="ink-dock" role="toolbar"'):ink.index('<span class="ink-quick">')]
+        self.assertIn('data-a="line"', dock)                                  # 「보기」 안에 숨어 있지 않다
+        self.assertEqual(ink.count('data-a="line"'), 1)
+        self.assertIn("function loopShape(pts, travel)", ink)
+        self.assertIn("if (a.shape) return commitStroke(a, true);", ink)
+        self.assertIn("const loop = loopShape(a.pts, a.travel);", ink)
+
+    def test_pinch_locks_native_scroll_and_two_finger_pan_does_not_relayout(self):
+        ink, css = self.ink, self.css
+        self.assertIn('sc.classList.add("pinching");', ink)
+        self.assertEqual(ink.count('sc.classList.remove("pinching")'), 2)     # 끝날 때 · 세 손가락으로 바뀔 때
+        self.assertIn(".ink-scroll.pinching{overflow:hidden}", css)
+        self.assertIn(".ink-scroll.pinching .ink-fit{will-change:transform}", css)
+        self.assertIn("if (p.k === 1) {", ink)                                # 배율이 그대로면 종이를 다시 짜지 않는다
+        self.assertIn("p.raf = requestAnimationFrame(", ink)                  # 화면 한 장에 한 번만 옮긴다
+
+    def test_oral_check_is_a_four_choice_quiz_with_a_fixed_order(self):
+        learn, ink = self.learn, self.ink
+        self.assertIn("function quizOptions(c, i)", learn)
+        self.assertIn("if (f2 && c.checks.length >= 2) return quizHtml(c);", learn)
+        self.assertNotIn("Math.random", learn[learn.index("function quizOptions"):learn.index("function checksHtml")])   # 보기 순서는 정해져 있다
+        self.assertIn('const CHECKS_KEY = "30초 구술 체크 — 소리 내어 답해 보고 ";', learn)       # 옛 절 이름 — 전에 쓴 필기가 남는다
+        self.assertIn('const bk = el.getAttribute("data-bk");', ink)
+        self.assertIn('add({ kind: "check", objective: c.id, idx: ij[0], result: ok ? "ok" : "miss", phase: phaseFor(c.id) });', learn)
+        tappable = ink[ink.index("const TAPPABLE ="):ink.index(";", ink.index("const TAPPABLE ="))]
+        for sel in (".qz-opt", "[data-case]"):
+            self.assertIn(sel, tappable, sel)
+
+    def test_diagram_marks_my_wrong_case_and_dims_the_rest(self):
+        learn, css = self.learn, self.css
+        self.assertIn("function wrongCases(cid)", learn)
+        self.assertIn('<div class="cn-dia" data-bk="임상 판단 도식">', learn)      # 제목 줄에 칩이 들어가도 절 이름은 그대로
+        self.assertIn("const dim = has && !st && !split", learn)
+        self.assertIn(".d-node.off,.t-off,.d-edge.off,.d-lab.off{opacity:.42}", learn)      # 확대 창(zoomCss)
+        self.assertIn(".dia-svg .d-node.off,.dia-svg .t-off,.dia-svg .d-edge.off,.dia-svg .d-lab.off{opacity:.42}", css)
+        self.assertIn("--d-on-soft:#d6e6fb", css)
+        self.assertIn("--d-on-soft:#1f3f66", css)
+
+    def test_basic_science_shelf_is_on_the_menu_bar(self):
+        # 2026-11-23 사용자 「위쪽에 기초의학 학습서가 안 보인다」 — 메뉴 줄 「🧬 기초의학」 = 같은 서가를 학문별 책 일곱 권으로
+        ink = self.ink
+        for page in ("index.html", "papers.html", "ailab.html", "atlas3d.html", "whatsnew.html", "search.html"):
+            self.assertIn('<a href="index.html?view=basic" id="navBasic">🧬 기초의학</a>', (DOCS / page).read_text(encoding="utf-8"), page)
+        self.assertIn('if (view === "basic") showShelf("basic");', ink)
+        self.assertIn('nb.addEventListener("click", (e) => { e.preventDefault(); showShelf("basic"); });', ink)
+        self.assertIn("if (basic && !SHELF.q) BASIC_BOOKS.forEach((bk) => { by[bk] = by[bk] || []; });", ink)      # 빈 책도 보인다
+        import yaml
+        cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))
+        self.assertEqual(json.loads(re.search(r"const DISC = (\{.*?\});", ink).group(1)), cfg["disciplines"])     # 학문 → 책은 PDF 학습서와 같게
 
 
 if __name__ == "__main__":

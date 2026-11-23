@@ -24,7 +24,7 @@
   --tg-key:#1d57a8; --tg-ruleout:#182334; --tg-mgmt:#182334; --tg-bg:#5c6c82; --tg-rival:#182334;
   --cloze:#334155; --cloze-open:#1d57a8;
   /* 임상 판단 도식 */
-  --d-bg:#ffffff; --d-edge:#7b8aa0; --d-on:#1d57a8; --d-node:#ffffff; --d-stroke:#94a3b8;
+  --d-bg:#ffffff; --d-edge:#7b8aa0; --d-on:#1d57a8; --d-on-soft:#d6e6fb; --d-node:#ffffff; --d-stroke:#94a3b8;
   --d-decision:#e9f0fa; --d-info:#f8fafc; --d-alert:#f1f4f8; --d-end:#f4f7fb;
   --d-txt:#182334; --d-sub:#5c6c82; --d-split:#d92d20;
   --desk:#e3e8ef;            /* 필기장에서 종이 뒤 책상 */
@@ -48,22 +48,25 @@ html[data-theme="dark"]{
   --triage-bg:rgba(234,179,8,.07); --triage-line:#eab308; --triage-ink:#fcd34d;
   --tg-key:#fca5a5; --tg-ruleout:#93c5fd; --tg-mgmt:#fdba74; --tg-bg:#a3a3a3; --tg-rival:#c4b5fd;
   --cloze:#93a4b7; --cloze-open:#9cc3ff;
-  --d-bg:#0e1826; --d-edge:#7f8fa6; --d-on:#7cb8ff; --d-node:#16212f; --d-stroke:#7f8fa6;
+  --d-bg:#0e1826; --d-edge:#7f8fa6; --d-on:#7cb8ff; --d-on-soft:#1f3f66; --d-node:#16212f; --d-stroke:#7f8fa6;
   --d-decision:#2a2412; --d-info:#141f36; --d-alert:#321417; --d-end:#11281c;
   --d-txt:#e6edf5; --d-sub:#a9b6c6; --d-split:#ff8a80;
   --desk:#c9ced6;
   --statusbar:transparent;
 }
+/* 위쪽 안전 영역(2026-11-23) — 아이패드 홈 화면 앱은 상태 막대(시계 · 날짜) 아래로 번지는 띠가 안전 영역보다 조금 더 내려와
+   맨 위 도구줄을 가렸다. 상태 막대가 있을 때만(안전 영역 > 0) 16px 까지 더 내린다. 브라우저에서는 0 그대로다. */
+:root{--safe-top:calc(env(safe-area-inset-top) + min(16px, calc(env(safe-area-inset-top) * 0.6)))}
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--bg); color:var(--ink);
   /* 설치한 앱(아이폰·아이패드 홈 화면)은 상태 막대가 화면 위에 겹친다(black-translucent) — 그 아래로 내려 위 탭이 눌리게(2026-11-03) */
-  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding:var(--safe-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",
     "Noto Sans KR",Roboto,sans-serif; line-height:1.6;
 }
 /* 설치한 앱은 상태 막대 글자가 흰색이다 — 밝은 바탕에서 보이게 그 높이만큼 어두운 띠를 깐다(브라우저에서는 높이 0) */
-body::before{content:""; position:fixed; left:0; right:0; top:0; height:env(safe-area-inset-top); background:var(--statusbar); z-index:1200; pointer-events:none}
+body::before{content:""; position:fixed; left:0; right:0; top:0; height:var(--safe-top); background:var(--statusbar); z-index:1200; pointer-events:none}
 /* 밝은 화면 / 어두운 화면 단추(theme.js 가 메뉴 줄 끝에 넣는다) */
 .nav .theme-toggle{margin-left:auto; flex:none; padding:7px 12px; font-size:.86rem; border-radius:9px; background:var(--card); color:var(--muted)}
 header{max-width:820px; margin:0 auto; padding:28px 18px 8px}
@@ -370,7 +373,7 @@ mark{background:var(--tag-soft-2); color:var(--ink); border-radius:3px; padding:
 /* 확대 보기(핀치·드래그) */
 .zoom{position:fixed; inset:0; z-index:1000; background:rgba(4,8,14,.96); display:flex; align-items:center; justify-content:center; touch-action:none; overscroll-behavior:contain}
 .zoom img{max-width:100vw; max-height:100vh; transform-origin:center center; will-change:transform; user-select:none; -webkit-user-drag:none; background:#fff}
-.zoom .zclose{position:fixed; top:calc(10px + env(safe-area-inset-top)); right:calc(10px + env(safe-area-inset-right)); z-index:1001; font-size:1.2rem; padding:8px 12px; background:var(--card)}
+.zoom .zclose{position:fixed; top:calc(10px + var(--safe-top)); right:calc(10px + env(safe-area-inset-right)); z-index:1001; font-size:1.2rem; padding:8px 12px; background:var(--card)}
 .zoom .zhint{position:fixed; bottom:12px; left:0; right:0; text-align:center; color:#aab6c6; font-size:.82rem; pointer-events:none}
 body.noscroll{overflow:hidden}
 /* 동기화 표시 */
@@ -511,6 +514,15 @@ a,button,select,label,summary,input,.opt,.chip{touch-action:manipulation}
 .dia-svg .d-node.split{stroke:var(--d-split); stroke-width:3}
 .dia-svg .d-sub{fill:var(--d-sub)}.dia-svg .d-txt{fill:var(--d-txt)}.dia-svg .b{font-weight:700}
 .dia-svg .d-lab{fill:var(--d-bg); stroke:var(--d-stroke); stroke-width:.6}
+/* 이 사례의 경로만 진하게(2026-11-23 사용자 「이 케이스에 맞는 부분만 색이 진하게」) — 지난 곳은 색을 채우고, 지나지 않은 곳은 흐리게.
+   learn.js zoomCss(확대 창)와 같아야 한다. */
+.dia-svg .d-node.st{fill:var(--d-on-soft)}
+.dia-svg .d-node.st-unknown,.dia-svg .d-node.st-not_done{fill:var(--d-node)}
+.dia-svg .d-node.off,.dia-svg .t-off,.dia-svg .d-edge.off,.dia-svg .d-lab.off{opacity:.42}
+.dia-cases{font-weight:400; margin-left:6px; white-space:nowrap}
+.dia-case{display:inline-block; font-size:.74rem; line-height:1.25; padding:1px 9px; margin-left:4px; border:1px solid var(--line); border-radius:10px;
+  color:var(--muted); background:var(--card); cursor:pointer; vertical-align:1px}
+.dia-case.on{background:var(--d-on); border-color:var(--d-on); color:var(--d-bg)}
 .dia-hint{font-size:.78rem}
 .steps{padding-left:1.4em; font-size:.92rem}
 .steps li{margin:4px 0}
@@ -521,6 +533,17 @@ a,button,select,label,summary,input,.opt,.chip{touch-action:manipulation}
 .ck{border-left:3px solid var(--tag); padding:4px 8px; margin:8px 0}
 .ck-a{margin-top:6px; font-size:.93rem}
 .ck-self{margin-top:4px; font-size:.85rem; color:var(--muted)}
+/* 30초 퀴즈(2026-11-23) — 구술 체크를 고르는 문제로. 보기는 단추가 아니라 칸이다(종이 안에서는 단추가 숨는다). 골라도 줄 높이는 그대로다. */
+.qz-score{font-weight:400; font-size:.8rem; color:var(--muted); margin-left:8px}
+.qz{margin:10px 0}
+.qz-q{font-weight:600}
+.qz-opts{display:grid; gap:5px; margin-top:5px}
+.qz-opt{display:flex; gap:8px; align-items:baseline; border:1px solid var(--line); border-radius:8px; padding:5px 9px; cursor:pointer; font-size:.92rem; background:var(--card)}
+.qz-opt .n{flex:none; font-weight:700; color:var(--muted)}
+.qz-opt.ok{background:var(--ok-soft); border-color:var(--ok)}
+.qz-opt.no{background:var(--bad-soft); border-color:var(--bad)}
+.qz.done .qz-opt{cursor:default}
+.qz.done .qz-opt:not(.ok):not(.no){opacity:.55}
 .var{margin:8px 0}
 .cn-memo{width:100%; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:6px; font:inherit}
 .small{font-size:.82rem}
@@ -608,8 +631,9 @@ body{word-break:keep-all; overflow-wrap:break-word}
 .ink-open-btn.has{border-color:var(--accent-border); color:var(--accent-ink)}
 body.ink-open{overflow:hidden}
 .ink-ov{position:fixed; inset:0; z-index:1000; background:var(--desk); display:flex; flex-direction:column;
-  padding-top:env(safe-area-inset-top); padding-left:env(safe-area-inset-left); padding-right:env(safe-area-inset-right)}
-.ink-bar{position:relative; z-index:3; display:flex; align-items:center; gap:8px; flex-wrap:wrap; padding:6px 10px; background:var(--card); border-bottom:1px solid var(--line)}
+  padding-left:env(safe-area-inset-left); padding-right:env(safe-area-inset-right)}
+/* 도구줄의 바탕을 상태 막대(시계) 밑까지 올려 깔고, 단추는 그 아래에서 시작한다 — 시계 · 날짜에 단추가 가리지 않게(2026-11-23) */
+.ink-bar{position:relative; z-index:3; display:flex; align-items:center; gap:8px; flex-wrap:wrap; padding:calc(6px + var(--safe-top)) 10px 6px; background:var(--card); border-bottom:1px solid var(--line)}
 .ink-bar button{padding:6px 10px; font-size:.86rem; margin:0}
 .ink-bar button.on{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
 .ink-bar button:disabled{opacity:.4}
@@ -620,6 +644,10 @@ body.ink-open{overflow:hidden}
 .ink-st.ok{color:var(--ok)} .ink-st.bad{color:var(--bad-ink)}
 .ink-scroll{flex:1 1 auto; overflow:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; padding:8px 6px calc(40px + env(safe-area-inset-bottom))}
 .ink-fit{margin:0 auto; position:relative}
+/* 두 손가락 확대 · 축소 중(2026-11-23) — 브라우저의 넘기기를 잠그고(같이 움직이면 종이가 두 번 밀린다) 종이를 한 장으로 굳혀 늘인다 */
+.ink-scroll.pinching{overflow:hidden}
+.ink-scroll.pinching .ink-fit{will-change:transform}
+.ink-scroll.pinching .ink-layer{touch-action:none}
 .ink-sheet{position:absolute; left:0; top:0; width:820px; transform-origin:0 0; background:var(--card); color:var(--ink);
   box-shadow:0 1px 6px rgba(0,0,0,.25); font-size:16px; line-height:1.6; --bg:#ffffff}
 .ink-content{position:relative; padding:0}
@@ -658,7 +686,7 @@ body.ink-open{overflow:hidden}
 .ink-ph{position:absolute; left:28px; top:10px; font-size:.78rem; color:var(--muted); background:var(--card); padding:0 6px}
 .ink-layer{position:absolute; left:0; top:0; overflow:hidden; touch-action:pan-x pan-y; cursor:crosshair; -webkit-user-select:none; user-select:none; -webkit-touch-callout:none}
 .ink-tile{position:absolute; left:0; pointer-events:none}
-@media (max-width:600px){ .ink-bar{gap:5px; padding:5px 6px} .ink-bar button{padding:5px 7px; font-size:.78rem} .ink-dot{width:26px; height:26px} }
+@media (max-width:600px){ .ink-bar{gap:5px; padding:calc(5px + var(--safe-top)) 6px 5px} .ink-bar button{padding:5px 7px; font-size:.78rem} .ink-dot{width:26px; height:26px} }
 /* 필기 2판 — 푸는 중의 보기 단추 · 정리본 종이 · 필기 모음 */
 .ink-bar [hidden]{display:none !important}
 .ink-sheet button.ink-opt{display:flex; width:100%; text-align:left; font:inherit; line-height:1.6; color:var(--ink); background:var(--card);
@@ -676,7 +704,7 @@ body.ink-open{overflow:hidden}
 .ink-sheet .concept .cn-meta, .ink-sheet .concept .muted, .ink-sheet .concept .small{color:var(--muted) !important}
 .ink-sheet .concept .cn-h, .ink-sheet .concept .cn-sum, .ink-sheet .concept .cn-dia, .ink-sheet .concept .cn-body, .ink-sheet .concept details,
 .ink-sheet .concept .cn-goal, .ink-sheet .concept li, .ink-sheet .concept .learn-row{background:transparent !important; border-color:var(--border) !important}
-.ink-list{position:fixed; inset:0; z-index:940; overflow:auto; background:var(--bg); padding:env(safe-area-inset-top) 0 40px}
+.ink-list{position:fixed; inset:0; z-index:940; overflow:auto; background:var(--bg); padding:var(--safe-top) 0 40px}
 .ink-list .card{max-width:820px}
 .ink-list .w{border:1px solid var(--line); border-radius:10px; padding:12px; margin:10px 0; background:var(--surface)}
 /* 필기 3판 — 색 팔레트 · 쓰는 중 덧층 · 나란히 배치 */
@@ -696,7 +724,7 @@ body.ink-open{overflow:hidden}
 .ink-content.side > [data-b="e"]{grid-column:1; grid-row:3}
 .ink-content.side > [data-b="p"]{grid-column:2; grid-row:1 / 5; border-top:0; border-left:1px dashed var(--border)}
 /* 로그인(아이디 · 비밀번호 → 동기화 키) */
-.ink-login{position:fixed; inset:0; z-index:1100; background:rgba(4,8,14,.72); display:flex; align-items:flex-start; justify-content:center; overflow:auto; padding:calc(24px + env(safe-area-inset-top)) 12px 24px}
+.ink-login{position:fixed; inset:0; z-index:1100; background:rgba(4,8,14,.72); display:flex; align-items:flex-start; justify-content:center; overflow:auto; padding:calc(24px + var(--safe-top)) 12px 24px}
 .ink-login .card{max-width:440px; width:100%; margin:0}
 .ink-login [hidden]{display:none !important}
 .ink-login label{display:block; margin:10px 0 0; font-size:.85rem; color:var(--muted)}
@@ -826,7 +854,7 @@ a.ink-open-btn{display:inline-block; text-decoration:none; padding:7px 12px; bor
 /* 기초 뿌리 서랍 — 종이 오른쪽에 겹쳐 펼친다(종이 · 필기의 자리는 그대로) */
 .ink-drawer{position:absolute; top:0; right:0; bottom:0; z-index:4; width:min(560px, 92vw); display:flex; flex-direction:column;
   background:var(--card); color:var(--ink); border-left:1px solid var(--border-strong); box-shadow:var(--shadow);
-  padding-top:env(safe-area-inset-top)}
+  padding-top:var(--safe-top)}
 .ink-drawer[hidden]{display:none}
 .ink-drawer-h{display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:8px 12px; border-bottom:1px solid var(--border)}
 .ink-drawer-h b{margin-right:auto}
