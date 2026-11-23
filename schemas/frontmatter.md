@@ -364,6 +364,9 @@ checked 가 아니면 학습서에 「전공 교과서 미대조」). 임상 정
 수치의 단위·적용 조건, 치료의 적응·금기·예외·재평가 기준을 줄이지 않는다. 역할을 나눈다: `summary` = 전체 관계,
 본문 = 이유, `tables` = 차이 비교, `diagram` = 흐름(아래에 노드를 되풀이하지 않고 `diagram_notes` 로 그림에 없는 조건만).
 
+**분량 · 중복(2026-11-23)** — `concepts.py` 가 WARN 으로만 알린다(커밋 · 게시를 막지 않는다): 본문(frontmatter 뒤의 글 전체) 3,200자 초과 ·
+`diagram_notes` 4줄 초과 · `summary` 가 `## 판단` 절의 문장을 되풀이 · `variants` 없음. `criteria` 는 수치 · 컷오프 전용. 규칙 `/gen-concept` 「분량 · 중복」.
+
 | 필드 | 내용 |
 |---|---|
 | `sources[].verified` | `text`(권고·서술 본문 대조) · `abstract`(초록만) · `citation`(서지만). text 가 아니면 근거 표시에 † |
