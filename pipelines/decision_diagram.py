@@ -52,8 +52,10 @@ COL_GAP = 30
 LANE_GAP = 14
 MARGIN = 16
 
-LIGHT = dict(bg="#ffffff", fg="#1b2430", sub="#4a5566", line="#56657a", path="#0b57d0",
-             node="#f5f7fa", decision="#fff6e0", info="#eef3ff", alert="#fdecec", end="#e9f7ef",
+# 밝은 판(PDF 학습서) — 한 가지 톤(2026-11-23 판형 12): 노드 종류는 색이 아니라 머리 라벨(판단 · 추가 정보 · 위험 · 결론)과 굵기로 가른다.
+# 웹 앱의 밝은 도식(docs/style.css --d-*)과 같은 값이다 — 종이 위에서 펜 · 형광펜 색이 돋보이게.
+LIGHT = dict(bg="#ffffff", fg="#182334", sub="#5c6c82", line="#7b8aa0", path="#1d57a8",
+             node="#ffffff", decision="#e9f0fa", info="#f8fafc", alert="#f1f4f8", end="#f4f7fb",
              split="#b3261e", label_bg="#ffffff")
 DARK = dict(bg="#0e1826", fg="#e6edf5", sub="#a9b6c6", line="#7f8fa6", path="#7cb8ff",
             node="#16212f", decision="#2a2412", info="#141f36", alert="#321417", end="#11281c",

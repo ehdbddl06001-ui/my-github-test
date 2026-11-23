@@ -760,3 +760,76 @@ a.ink-open-btn{display:inline-block; text-decoration:none; padding:7px 12px; bor
   background-image:repeating-linear-gradient(to bottom, transparent 0 35px, var(--border-soft) 35px 36px); background-position:0 12px}
 .ink-margin .ink-ph{left:14px}
 @media (max-width:600px){ .ink-grid{grid-template-columns:repeat(6, 26px)} .ink-dock button{padding:5px 6px} }
+/* 판형 12(2026-11-23 vNext Phase 3) — 정리본의 한눈에 칸 · 같은 질환 · 기초 뿌리 · 혼동 카드 · 시험 쟁점 카드 · 체크리스트.
+   한 가지 톤(네이비 + 중립 슬레이트) · 글자 라벨만 — 종이 위에서 펜 · 형광펜 색이 돋보이게. 풀이는 pipelines/note_parts.py. */
+.badge-plain{color:var(--muted); border:1px solid var(--border); border-radius:6px; padding:0 6px; font-size:.78rem; white-space:nowrap}
+.concept.f2 .cn-series, .concept.f2 .cn-roots, .concept.f2 .cn-exam{margin:6px 0 0; font-size:.88rem; line-height:1.55}
+.concept.f2 .cn-series .k, .concept.f2 .cn-roots .k, .concept.f2 .cn-exam .k{display:inline-block; min-width:0; margin:0 8px 0 0; font-size:.78rem; font-weight:700; color:var(--accent-ink)}
+.cn-series a, .cn-roots a, .cn-supports a{color:var(--accent-ink); text-decoration:underline; text-underline-offset:2px}
+.cn-series .here{font-weight:700; border:1px solid var(--accent-border); border-radius:6px; padding:0 6px; background:var(--accent-soft)}
+.cn-series .sep, .cn-roots .sep{color:var(--muted); margin:0 6px}
+.slots{display:grid; grid-template-columns:1fr; gap:6px; margin:6px 0 4px}
+.slot{display:grid; grid-template-columns:7.2em 1fr; gap:10px; align-items:baseline; padding:7px 10px; border:1px solid var(--border); border-radius:8px; background:var(--surface)}
+.slot-k{font-size:.78rem; font-weight:700; color:var(--accent-ink); line-height:1.5}
+.slot-t{line-height:1.6}
+.slot.k-conclusion{border-left:3px solid var(--accent); background:var(--accent-soft)}
+.slot.k-conclusion .slot-t{font-weight:600}
+.slot.k-avoid{border-left:3px solid var(--border-strong)}
+/* 칸 안의 줄 — 덩이마다 한 줄. 점 대신 가는 세로줄로 묶어 보인다(목록 기호가 본문 기호와 섞이지 않게) */
+.sl{list-style:none; margin:0; padding:0}
+.sl li{margin:0; padding:1px 0 1px 10px; border-left:2px solid var(--border-strong); line-height:1.55}
+.sl li + li{margin-top:4px}
+.sl.sub{margin:3px 0 0 2px}
+.sl-lead{line-height:1.55}
+.sl + .sl-lead, .sl + .sl{margin-top:6px}
+.slot.k-conclusion .sl li{border-left-color:var(--accent)}
+.slot-more{margin:6px 0 0; padding-left:1.2em}
+.slot-more li{margin:3px 0; line-height:1.6}
+.pit2{display:flex; flex-direction:column; gap:6px; margin:6px 0}
+.pc{display:grid; grid-template-columns:minmax(0, 2fr) minmax(0, 3fr); border:1px solid var(--border); border-radius:8px; overflow:hidden}
+.pc-a{padding:8px 10px; background:var(--surface-2); font-weight:600; line-height:1.55}
+.pc-b{padding:8px 10px; line-height:1.6; border-left:1px solid var(--border)}
+.pc-k{display:block; font-size:.72rem; font-weight:700; color:var(--accent-ink); margin:0 0 2px}
+.pc-x{margin-top:6px; padding-top:6px; border-top:1px dashed var(--border); color:var(--muted)}
+.cn-issues{margin:10px 0}
+.iz{border:1px solid var(--border); border-radius:8px; padding:8px 10px; margin:6px 0; background:var(--surface)}
+.iz-note{color:var(--muted); font-size:.9rem}
+.iz-h{font-weight:700; line-height:1.5; margin-bottom:6px}
+.iz-id{display:inline-block; font-size:.74rem; border:1px solid var(--accent-border); border-radius:5px; padding:0 5px; margin-right:6px; color:var(--accent-ink); background:var(--card)}
+.iz-b{margin-bottom:6px; line-height:1.6}
+.iz-2{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.iz-2 > div{border:1px solid var(--border); border-radius:6px; padding:6px 8px; background:var(--card); line-height:1.55}
+.iz-w{margin-top:6px; line-height:1.55}
+.iz-s{margin-top:6px; padding:6px 8px; border-left:3px solid var(--accent); background:var(--accent-soft); border-radius:0 6px 6px 0; line-height:1.55; font-weight:600}
+.cn-cl .cl{border:1px solid var(--border); border-radius:8px; padding:8px 10px; margin:6px 0; background:var(--surface)}
+.cl-h{font-weight:700; margin-bottom:4px}
+.cl-i{list-style:none; margin:0; padding:0}
+.cl-i li{display:flex; gap:8px; align-items:baseline; padding:3px 0; border-bottom:1px dashed var(--border-soft); line-height:1.5}
+.cl-i li:last-child{border-bottom:0}
+.cl-box{flex:none; width:.85em; height:.85em; border:1.5px solid var(--border-strong); border-radius:3px; transform:translateY(2px)}
+.cl-t{flex:1 1 auto}
+.cl-p{flex:none; font-variant-numeric:tabular-nums; color:var(--accent-ink); font-weight:700}
+.cl-c{margin-top:6px}
+.concept.f2 .crit{background:var(--surface)}
+.concept.f2 .crit-h{color:var(--accent-ink)}
+.cn-supports ul{margin:4px 0; padding-left:1.2em}
+/* 가림막 — 30초 구술 체크의 답(.tape) · 암기 가림막(굵은 글자). 한 가지 슬레이트 색, 열면 네이비 밑줄 */
+.ck-tape{display:none; margin-top:4px}
+.ink-cn .ck-tape{display:block}
+.tape{background:var(--cloze); color:transparent !important; border-radius:3px; padding:1px 4px; cursor:pointer; -webkit-box-decoration-break:clone; box-decoration-break:clone}
+.tape.open{background:transparent; color:inherit !important; border-bottom:2px solid var(--cloze-open); border-radius:0}
+/* 가리는 것은 ink.js CLOZE_SEL 과 같아야 한다 — 답 쪽 칸과 본문의 굵은 글자 */
+.ink-content.cloze .ink-cn :is(.slot-t, .pc-b, .iz-s, .cn-body td:not(:first-child), .cn-body b, .cn-body strong):not(.cz-open){background:var(--cloze) !important; border-radius:3px; cursor:pointer}
+.ink-content.cloze .ink-cn :is(.slot-t, .pc-b, .iz-s, .cn-body td:not(:first-child), .cn-body b, .cn-body strong):not(.cz-open),
+.ink-content.cloze .ink-cn :is(.slot-t, .pc-b, .iz-s, .cn-body td:not(:first-child), .cn-body b, .cn-body strong):not(.cz-open) *{color:transparent !important}
+.ink-content.cloze .ink-cn .cz-open{box-shadow:inset 0 -2px 0 var(--cloze-open)}
+/* 기초 뿌리 서랍 — 종이 오른쪽에 겹쳐 펼친다(종이 · 필기의 자리는 그대로) */
+.ink-drawer{position:absolute; top:0; right:0; bottom:0; z-index:4; width:min(560px, 92vw); display:flex; flex-direction:column;
+  background:var(--card); color:var(--ink); border-left:1px solid var(--border-strong); box-shadow:var(--shadow);
+  padding-top:env(safe-area-inset-top)}
+.ink-drawer[hidden]{display:none}
+.ink-drawer-h{display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:8px 12px; border-bottom:1px solid var(--border)}
+.ink-drawer-h b{margin-right:auto}
+.ink-drawer-h button{padding:5px 10px; font-size:.82rem}
+.ink-drawer-b{flex:1 1 auto; overflow:auto; -webkit-overflow-scrolling:touch; padding:10px 14px 40px}
+@media (max-width:600px){ .slot{grid-template-columns:1fr; gap:2px} .pc{grid-template-columns:1fr} .pc-b{border-left:0; border-top:1px solid var(--border)} .iz-2{grid-template-columns:1fr} }

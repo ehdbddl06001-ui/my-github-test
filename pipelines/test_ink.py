@@ -323,7 +323,7 @@ class Wiring(unittest.TestCase):
         self.assertIn('querySelectorAll("#options .opt")[i]', ink)      # 채점은 앱의 보기 단추가 한다(기록이 한 곳에서만)
         self.assertIn("const veiled = (sid) => UI.hideOld && !UI.mine[sid];", ink)   # 푸는 중엔 전에 쓴 필기를 가린다
         self.assertIn("MEDKOS_INK.conceptButton(box, c.id)", learn)
-        self.assertIn("load, concept, STATUS, flagsOf, setFlag };", learn)
+        self.assertIn("load, concept, STATUS, flagsOf, setFlag,", learn)
         self.assertIn('L.setFlag(UI.st.q, "want_note"', ink)            # 맞힌 문항도 정리본 큐로
         self.assertIn('new Set(["kmle", "usmle", "imaging", "variant", "concept", "meta"])', fn)
         self.assertIn('replace(/#/g, "--")', ink)                       # 변형 문항 id 의 # 은 파일 이름에 못 쓴다
@@ -336,7 +336,7 @@ class Wiring(unittest.TestCase):
         css = (DOCS / "style.css").read_text(encoding="utf-8")
         self.assertIn("const c = over || concept(cid);", learn)
         self.assertIn("const use = st.old ? n.c : (st.live || (n && n.c));", ink)      # 기본은 최신판 · 목록에서 빠지면 떠 둔 판
-        self.assertIn("L.renderConcept(box, st.id, null, null, use)", ink)
+        self.assertIn("L.renderConcept(box, st.id, null, null, use, { form: st.form })", ink)   # 판형은 필기장이 고른다(아래 시험)
         self.assertEqual(ink.count("rec.doc.n = snapOf(st.live)"), 2)                # 판을 뜨는 곳은 둘뿐 — 첫 필기 · 「확인」
         self.assertIn('data-note-act="ack"', ink)
         self.assertIn('data-note-act="old"', ink)
@@ -472,6 +472,39 @@ class Wiring(unittest.TestCase):
         self.assertIn('if (b === "m") return !UI.geo.m;', ink)                   # 여백이 없는 종이에서는 여백 필기를 그리지 않는다
         self.assertIn(".ink-content.margin{padding-right:352px}", css)
         self.assertIn("width:352px;", css)
+
+    def test_old_handwriting_keeps_the_old_note_layout(self):
+        # 판형 12(2026-11-23 vNext Phase 3) — 정리본의 요약 · 혼동 · 시험 쟁점 모양이 바뀌었다. 옛 모양 위에 그은 밑줄 · 동그라미는
+        # 새 모양에서 글자와 어긋나므로, 그때 쓴 필기가 있는 정리본은 옛 모양으로 그리고 사용자가 고를 때만 바꾼다.
+        ink = (DOCS / "ink.js").read_text(encoding="utf-8")
+        learn = (DOCS / "learn.js").read_text(encoding="utf-8")
+        self.assertIn("st.form = UI.rec && UI.rec.doc.r !== 2 && countStrokes(UI.rec.doc) ? 1 : 2;", ink)
+        self.assertIn('if (UI.st && UI.st.kind === "concept" && UI.st.form === 2 && UI.rec.doc.r !== 2) UI.rec.doc.r = 2;', ink)   # 새 모양 위의 첫 획
+        self.assertIn('data-note-act="form2"', ink)
+        self.assertIn("r: o.r === 2 ? 2 : 0,", ink)                               # 저장 문서에 판형을 남긴다(없으면 옛 모양)
+        self.assertIn("r: a.r === 2 || b.r === 2 ? 2 : 0 };", ink)                # 기기끼리 합칠 때는 바꾼 쪽이 이긴다
+        self.assertIn("const f2 = !(opts && opts.form === 1) && Array.isArray(c.slots);", learn)   # 떠 둔 옛 사본(slots 없음)도 옛 모양
+        # 종이 안에서 누르는 것 — 같은 질환 · 기초 뿌리 서랍 · 구술 체크의 답 · 암기 가림막
+        tappable = ink[ink.index("const TAPPABLE ="):ink.index(";", ink.index("const TAPPABLE ="))]
+        for sel in ("a[data-goto]", "a[data-root]", "[data-tape]", "CLOZE_SEL"):
+            self.assertIn(sel, tappable, sel)
+        # 가림막이 가리는 칸은 스크립트와 스타일이 같은 목록을 쓴다(한쪽만 바꾸면 가려졌는데 안 눌리거나, 눌리는데 안 가려진다)
+        sel = re.search(r'const CLOZE_SEL = "(.*?)";', ink).group(1)
+        css = (DOCS / "style.css").read_text(encoding="utf-8")
+        self.assertIn(f".ink-content.cloze .ink-cn :is({sel}):not(.cz-open){{background:var(--cloze) !important;", css)
+        self.assertIn("function openDrawer(id)", ink)
+        self.assertIn("const ord = (r) => (Number.isInteger(r.c.order) ? r.c.order : 1e9);", ink)   # 서가는 기본틀 순서
+        self.assertIn('add({ kind: "view", what: "read", objective: cid });', learn)                # 정독 확인 = 열람 기록(복습 상태 계산에는 안 들어간다)
+        self.assertIn("readCount, markRead };", learn)
+
+    @unittest.skipUnless(NODE, "node 없음")
+    def test_note_layout_mark_survives_merge(self):
+        out = run_node(CORE % (
+            "const a={v:1,ph:900,s:{x:{d:[1,1,1]}},g:{},u:'2026-01-01',r:2},b={v:1,ph:900,s:{y:{d:[1,1,1]}},g:{},u:'2026-02-01'};"
+            "out.m=[I.mergeDocs(a,b).r,I.mergeDocs(b,a).r,I.mergeDocs(b,b).r,I.normDoc({r:1}).r,I.emptyDoc().r];"
+            "out.same=[I.sameDoc(I.normDoc(a),I.normDoc(Object.assign({},a,{r:0}))),I.sameDoc(I.normDoc(a),I.normDoc(a))]"))
+        self.assertEqual(out["m"], [2, 2, 0, 0, 0])
+        self.assertEqual(out["same"], [False, True])                             # 판형만 바뀌어도 다른 문서 — 올려야 한다
 
     def test_function_keeps_main_untouched(self):
         fn = (ROOT / "functions" / "api" / "ink.js").read_text(encoding="utf-8")

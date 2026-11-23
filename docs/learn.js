@@ -323,20 +323,25 @@ const LEARN = (() => {
 
   /* ---------- 개념 정리본 ---------- */
   // over = 필기장(ink.js)이 넘기는 「내 필기본」의 고정 사본 — 원본이 고쳐진 뒤에도 내가 쓴 판을 그대로 그린다.
-  function renderConcept(box, cid, q, chosenIdx, over) {
+  // opts.form — 1 = 판형 12 전의 모양. 필기장(ink.js)이 그 모양일 때 써 둔 필기가 글자와 어긋나지 않게 고른다. 기본은 2(판형 12 · 2026-11-23).
+  function renderConcept(box, cid, q, chosenIdx, over, opts) {
     const c = over || concept(cid);
     if (!c) { box.innerHTML = `<p class="muted">개념 정리본을 찾지 못했습니다(${escapeHtml(cid)}).</p>`; return; }
     add({ kind: "view", what: "note", objective: cid, qid: q ? q.id : null });
     const L = q && chosenIdx != null && chosenIdx !== q.answer - 1 ? letterOf(chosenIdx) : "";
     const dist = L && q.distractors ? q.distractors[L] : null;
     const splitNode = dist && dist.split ? dist.split : "";
+    const f2 = !(opts && opts.form === 1) && Array.isArray(c.slots);      // 옛 사본(떠 둔 판)에는 slots 가 없다 — 옛 모양으로 그린다
     const rev = c.reviewStatus === "reviewed"
       ? `<span class="badge-ok">내용 검토 완료</span>`
       : `<span class="badge-warn">의학적 내용 검토 전 — 형식 검사만 통과</span>`;
-    let h = `<article class="concept"><div class="cn-h"><div class="cn-title">${escapeHtml(c.title)}</div>`
-      + `<div class="cn-meta">${escapeHtml(c.objectiveKind)} · v${escapeHtml(String(c.version || 1))} · ${escapeHtml(c.updated)} · ${rev}</div>`
-      + `<div class="cn-goal"><span class="k">학습 목표</span>${escapeHtml(c.objective)}</div></div>`;
-    if (c.summary && c.summary.length) {
+    // 「시험 쟁점」이 해당 없음 한 줄이면 절을 세우지 않고 머리의 배지로 줄인다
+    const clean = f2 && c.issues && c.issues.none ? ` · <span class="badge-plain" title="${escapeHtml(c.issues.ref || "")}">Harrison 대조 · 충돌 없음</span>` : "";
+    let h = `<article class="concept${f2 ? " f2" : ""}"><div class="cn-h"><div class="cn-title">${escapeHtml(c.title)}</div>`
+      + `<div class="cn-meta">${escapeHtml(c.objectiveKind)} · v${escapeHtml(String(c.version || 1))} · ${escapeHtml(c.updated)} · ${rev}${clean}</div>`
+      + `<div class="cn-goal"><span class="k">학습 목표</span>${escapeHtml(c.objective)}</div>${f2 ? headExtrasHtml(c) : ""}</div>`;
+    if (f2 && c.slots.length) h += slotsHtml(c);
+    else if (c.summary && c.summary.length) {
       h += `<div class="cn-sum"><div class="cn-sec">빠른 요약</div><ul>${c.summary.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul></div>`;
     }
     h += figuresHtml(c);
@@ -348,6 +353,7 @@ const LEARN = (() => {
       + ((c.diagramNotes || []).length ? `<div class="dia-notes"><div class="cn-sec small">도식에 담기지 않은 조건·예외</div><ul>${c.diagramNotes.map((x) => `<li>${sanitizeHtml(x)}</li>`).join("")}</ul></div>` : "")
       + `<details class="dia-text"><summary>도식을 글로 보기</summary>${stepsHtml(c, q, splitNode, L ? label(chosenIdx, q) : "")}</details></div>`;
     (c.sections || []).forEach((s) => {
+      if (f2 && s.issue && c.issues) return;                      // 시험 쟁점은 아래에서 카드로(해당 없음이면 머리의 배지로)
       const body = sanitizeHtml(s.html);
       h += s.deep
         ? `<details class="cn-deep"><summary>${escapeHtml(s.title)} (심화)</summary><div class="cn-body">${body}</div></details>`
@@ -359,22 +365,95 @@ const LEARN = (() => {
         + tb.rows.map((r) => `<tr>${r.map((x) => `<td>${sanitizeHtml(x)}</td>`).join("")}</tr>`).join("")
         + `</tbody></table>${tb.note ? `<p class="small">${sanitizeHtml(tb.note)}</p>` : ""}</div></details>`;
     });
+    if (f2) h += checklistsHtml(c);
     if ((c.pitfalls || []).length) {
-      h += `<details class="cn-part" open><summary>혼동하기 쉬운 점 (${c.pitfalls.length})</summary><ul class="pit">`
-        + c.pitfalls.map((pf) => `<li><b>${escapeHtml(pf.contrast)}</b> — ${sanitizeHtml(pf.point)}`
-          + (pf.exception ? ` <span class="muted">예외: ${sanitizeHtml(pf.exception)}</span>` : "")
-          + (pf.cites ? ` ${sanitizeHtml(pf.cites)}` : "") + `</li>`).join("") + `</ul></details>`;
+      h += f2
+        // 혼동 ↔ 기준을 나란히 — 「무엇과 헷갈리나」를 왼쪽에서 읽고 「그래서 기준은」을 오른쪽에서 읽는다
+        ? `<details class="cn-part" open><summary>혼동하기 쉬운 점 (${c.pitfalls.length})</summary><div class="pit2">`
+          + c.pitfalls.map((pf) => `<div class="pc"><div class="pc-a"><span class="pc-k">혼동</span>${escapeHtml(pf.contrast)}</div>`
+            + `<div class="pc-b"><span class="pc-k">기준</span>${sanitizeHtml(pf.point)}${pf.cites ? ` ${sanitizeHtml(pf.cites)}` : ""}`
+            + (pf.exception ? `<div class="pc-x"><span class="pc-k">예외</span>${sanitizeHtml(pf.exception)}</div>` : "") + `</div></div>`).join("") + `</div></details>`
+        : `<details class="cn-part" open><summary>혼동하기 쉬운 점 (${c.pitfalls.length})</summary><ul class="pit">`
+          + c.pitfalls.map((pf) => `<li><b>${escapeHtml(pf.contrast)}</b> — ${sanitizeHtml(pf.point)}`
+            + (pf.exception ? ` <span class="muted">예외: ${sanitizeHtml(pf.exception)}</span>` : "")
+            + (pf.cites ? ` ${sanitizeHtml(pf.cites)}` : "") + `</li>`).join("") + `</ul></details>`;
     }
     if (c.criteria && c.criteria.length) {
       h += `<details class="cn-part"><summary>기준·권고 (${c.criteria.length})</summary>` + c.criteria.map((cr) => criterionHtml(c, cr)).join("") + `</details>`;
     }
-    h += checksHtml(c) + variantsHtml(c) + selfHtml(c) + papersHtml(c) + sourcesHtml(c) + `</article>`;
+    if (f2) h += issuesHtml(c);
+    h += checksHtml(c, f2) + variantsHtml(c) + (f2 ? supportsHtml(c) : "") + selfHtml(c) + papersHtml(c) + sourcesHtml(c) + `</article>`;
     box.innerHTML = h;
     drawDiagram(box.querySelector(".dia-box"), c, q, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
     bindConcept(box, c);
     // 필기 단추(ink.js) — 필기장 안에서 다시 그릴 때는 달지 않는다
     if (!box.closest(".ink-sheet") && typeof MEDKOS_INK === "object" && MEDKOS_INK.conceptButton) MEDKOS_INK.conceptButton(box, c.id);
   }
+  /* ---------- 판형 12(2026-11-23 vNext Phase 3) — 한눈에 칸 · 같은 질환 · 기초 뿌리 · 시험 쟁점 카드 ----------
+     풀이는 내보낼 때 한다(pipelines/note_parts.py — PDF 학습서와 같은 함수). 여기서는 그리기만 한다. 한 가지 톤 · 글자 라벨만(이모티콘 없음).
+     종이(필기장) 안에서는 단추가 숨으므로 누르는 것은 <a data-goto> · <a data-root> 로 둔다 — 필기장이 톡을 받아 넘긴다. */
+  const titleOf = (id) => { const x = concept(id); return x ? x.title : id; };
+  function headExtrasHtml(c) {
+    let h = "";
+    if (c.series && c.series.length > 1) {
+      h += `<div class="cn-series"><span class="k">같은 질환</span>` + c.series.map((s) => (s.id === c.id
+        ? `<b class="here">${escapeHtml(s.kind || "이 단원")}</b>`
+        : `<a href="#" data-goto="${escapeHtml(s.id)}" title="${escapeHtml(s.title)}">${escapeHtml(s.kind || s.title)}</a>`)).join(`<span class="sep">→</span>`) + `</div>`;
+    }
+    const ep = c.examPoints || {};
+    if (ep.kmle) h += `<div class="cn-exam"><span class="k">KMLE 포인트</span>${sanitizeHtml(ep.kmle)}</div>`;
+    if (ep.usmle) h += `<div class="cn-exam"><span class="k">USMLE 포인트</span>${sanitizeHtml(ep.usmle)}</div>`;
+    if (c.roots && c.roots.length) {
+      h += `<div class="cn-roots"><span class="k">기초 뿌리</span>` + c.roots.map((r) =>
+        `<a href="#" data-root="${escapeHtml(r)}">${escapeHtml(titleOf(r))}</a>`).join(`<span class="sep">·</span>`) + `</div>`;
+    }
+    return h;
+  }
+  // 칸 안의 줄(2026-11-23 「약제 같은 부분이 다 한 줄이라 읽기 어렵다」) — 한 줄에 이어 쓴 나열을 덩이마다 줄을 바꿔 보인다.
+  // 어디서 나눌지는 내보낼 때 정한다(note_parts.slot_groups — PDF 와 같다). 나눌 것이 없으면 글 그대로.
+  function slotLinesHtml(s) {
+    const gs = s.groups || [];
+    const n = gs.reduce((a, g) => a + g.items.length + (g.lead ? 1 : 0), 0);
+    if (n <= 1) return sanitizeHtml(s.html);
+    return gs.map((g) => (g.lead ? `<div class="sl-lead">${sanitizeHtml(g.lead)}</div>` : "")
+      + `<ul class="sl${g.lead ? " sub" : ""}">${g.items.map((x) => `<li>${sanitizeHtml(x)}</li>`).join("")}</ul>`).join("");
+  }
+  function slotsHtml(c) {
+    const main = c.slots.filter((s) => s.kind !== "more"), more = c.slots.filter((s) => s.kind === "more");
+    return `<div class="cn-sum"><div class="cn-sec">한눈에</div><div class="slots">`
+      + main.map((s) => `<div class="slot k-${escapeHtml(s.kind)}"><div class="slot-k">${escapeHtml(s.label)}</div><div class="slot-t">${slotLinesHtml(s)}</div></div>`).join("")
+      + `</div>` + (more.length ? `<ul class="slot-more">${more.map((s) => `<li>${slotLinesHtml(s)}</li>`).join("")}</ul>` : "") + `</div>`;
+  }
+  function checklistsHtml(c) {
+    if (!c.checklists || !c.checklists.length) return "";
+    return `<div class="cn-cl"><div class="cn-sec">점수 · 기준 체크리스트</div>` + c.checklists.map((k) =>
+      `<div class="cl"><div class="cl-h">${escapeHtml(k.name)}</div><ul class="cl-i">`
+      + k.items.map((it) => `<li><span class="cl-box"></span><span class="cl-t">${sanitizeHtml(it.label)}</span>${it.points ? `<span class="cl-p">${escapeHtml(it.points)}</span>` : ""}</li>`).join("")
+      + `</ul>${k.cut ? `<div class="cl-c"><span class="pc-k">판정</span>${sanitizeHtml(k.cut)}</div>` : ""}${k.note ? `<div class="muted small">${sanitizeHtml(k.note)}</div>` : ""}</div>`).join("") + `</div>`;
+  }
+  function issuesHtml(c) {
+    const z = c.issues;
+    if (!z || z.none || !z.items.length) return "";
+    const row = (k, v, cls) => (v ? `<div class="${cls}"><span class="pc-k">${k}</span>${sanitizeHtml(v)}</div>` : "");
+    return `<div class="cn-issues"><div class="cn-sec">시험 쟁점</div>` + z.items.map((it) => {
+      const four = it.exam || it.other || it.why || it.onexam;
+      if (!four) return `<div class="iz iz-note">${sanitizeHtml(it.body)}</div>`;
+      return `<div class="iz"><div class="iz-h"><span class="iz-id">${escapeHtml(it.id)}</span>${escapeHtml([it.kind, it.title].filter(Boolean).join(" · "))}</div>`
+        + (it.body ? `<div class="iz-b">${sanitizeHtml(it.body)}</div>` : "")
+        + `<div class="iz-2">${row("시험 기준", it.exam, "iz-a")}${row("다른 기준", it.other, "iz-o")}</div>`
+        + row("왜 다른가", it.why, "iz-w") + row("시험에서는", it.onexam, "iz-s") + `</div>`;
+    }).join("") + `</div>`;
+  }
+  // 기초 정리본 — 이 기전이 받치는 임상 단원(역방향 링크 모음)
+  function supportsHtml(c) {
+    if (c.layer !== "basic" || !c.rootSupports || !c.rootSupports.length) return "";
+    return `<div class="cn-supports"><div class="cn-sec">이 기전이 받치는 임상 단원</div><ul>`
+      + c.rootSupports.map((id) => `<li><a href="#" data-goto="${escapeHtml(id)}">${escapeHtml(titleOf(id))}</a></li>`).join("") + `</ul></div>`;
+  }
+  // 정독 확인(회독 수) — 학습 기록에 「읽음」을 하나 더한다. 정리본의 review_status(내용 검토)와는 다른 것이고,
+  // 복습 상태 계산(states)에는 들어가지 않는다(열람은 학습 증거가 아니다 — 규칙은 learning_log.py 와 같다).
+  function readCount(cid) { return load().filter((e) => e && e.kind === "view" && e.what === "read" && e.objective === cid).length; }
+  function markRead(cid) { add({ kind: "view", what: "read", objective: cid }); return readCount(cid); }
   // 필기장(ink.js)의 「★ 정리본에 넣기」 — 맞힌 문항에도 표시를 남긴다. 규칙은 바꾸지 않고 기록만 더한다.
   function flagsOf(q) { const S = states()[keyOf(q)]; return (S && S.flags) || {}; }
   function setFlag(q, f, on) { return add({ kind: "flag", flag: f, on: !!on, qid: q.id, objective: q.objective || null }); }
@@ -516,10 +595,12 @@ const LEARN = (() => {
   }
 
   /* ---------- 인출 확인 · 변형 문제 · 자기 표시 ---------- */
-  function checksHtml(c) {
+  // 판형 12 — 단원 끝의 「30초 구술 체크」. 종이(필기장) 안에서는 단추가 숨으므로 답을 가림막(.tape) 아래에 두고 톡 쳐서 연다.
+  function checksHtml(c, f2) {
     if (!c.checks || !c.checks.length) return "";
-    return `<div class="cn-checks"><div class="cn-sec">인출 확인 — 먼저 떠올려 보고 답을 여세요</div>`
+    return `<div class="cn-checks"><div class="cn-sec">${f2 ? "30초 구술 체크 — 소리 내어 답해 보고 여세요" : "인출 확인 — 먼저 떠올려 보고 답을 여세요"}</div>`
       + c.checks.map((k, i) => `<div class="ck" data-ck="${i}"><div class="ck-q">Q${i + 1}. ${escapeHtml(k.q)}</div>`
+        + (f2 ? `<div class="ck-tape"><span class="tape" data-tape="1">${escapeHtml(k.a)}</span></div>` : "")
         + `<button type="button" class="small" data-ck-open="${i}">답 보기</button>`
         + `<div class="ck-a" hidden>${escapeHtml(k.a)}<div class="ck-self">떠올린 답이 <button type="button" class="small" data-ck-res="ok">맞았다</button>`
         + `<button type="button" class="small" data-ck-res="miss">달랐다</button></div></div></div>`).join("")
@@ -566,6 +647,16 @@ const LEARN = (() => {
     }).join("") + `</ul></details>`;
   }
   function bindConcept(box, c) {
+    // 같은 질환 · 기초 뿌리 · 받치는 임상 단원 — 그 정리본을 필기장으로 연다. 종이 안에서는 필기장(ink.js)이 톡을 받아 처리한다.
+    if (!box.closest(".ink-sheet")) {
+      box.querySelectorAll("a[data-goto], a[data-root]").forEach((a) => {
+        a.onclick = (e) => {
+          e.preventDefault();
+          const id = a.getAttribute("data-goto") || a.getAttribute("data-root");
+          if (typeof MEDKOS_INK === "object" && MEDKOS_INK.open && concept(id)) MEDKOS_INK.open("concept", id);
+        };
+      });
+    }
     box.querySelectorAll("button[data-fig-open]").forEach((b) => {
       b.onclick = () => { const a = b.parentNode.querySelector(".fig-ans"); a.hidden = !a.hidden; b.textContent = a.hidden ? "소견 보기" : "소견 닫기"; };
     });
@@ -778,5 +869,6 @@ const LEARN = (() => {
   }
 
   return { onAnswer, onVariantAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
-    syncLearning, learnSyncState, states, schedule, dueKeys, pickRetest, reviewSteps, load, concept, STATUS, flagsOf, setFlag };
+    syncLearning, learnSyncState, states, schedule, dueKeys, pickRetest, reviewSteps, load, concept, STATUS, flagsOf, setFlag,
+    readCount, markRead };
 })();

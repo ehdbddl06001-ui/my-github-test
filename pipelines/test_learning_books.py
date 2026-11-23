@@ -8,7 +8,9 @@ python pipelines/test_learning_books.py            (PDF 렌더링 시험은 play
 from __future__ import annotations
 
 import copy
+import html
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -1602,6 +1604,217 @@ class QueueWeightsBackfillVerify(unittest.TestCase):
         after = C.validate_concept(dict(base, _body="가" * 4000, diagram_notes=list("12345")))
         self.assertEqual([x for x in after if "[WARN]" not in x], before)
         self.assertEqual(sorted(k for k in map(C.polish_kind, after) if k), ["도식 설명", "변형 없음", "분량"])
+
+
+class NoteParts(unittest.TestCase):
+    """판형 12(2026-11-23 vNext Phase 3) — 원고의 머리말을 풀어 보여 주는 조각. 웹 앱과 PDF 가 같은 함수(note_parts)를 쓴다."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.base, _ = C.load_concepts()          # 정리본 전부를 한 번만 읽는다(읽기가 이 시험 묶음에서 가장 느리다)
+        cls.cfg = bb.load_config()
+
+    def test_summary_lines_become_labelled_slots(self):
+        import note_parts as np_
+        slots = np_.summary_slots(["결론: A 면 B", "시험 단서： 넓은 맥압", "왜: 용적 과부하", "쓰지 않는 약: 베타차단제", "쓰지 않는다: 풍선 펌프",
+                                   "피할 약: 딜티아젬", "그 밖의 한 줄"])
+        self.assertEqual([x["kind"] for x in slots], ["conclusion", "cue", "why", "avoid", "avoid", "avoid", "more"])
+        self.assertEqual([x["label"] for x in slots[:4]], ["핵심 결론", "발문 단서", "왜 이 판단인가", "금기 · 피할 약"])
+        self.assertEqual(slots[0]["text"], "A 면 B")                       # 머리말은 떼고 내용만
+        self.assertEqual(slots[1]["raw"], "시험 단서：")
+        self.assertEqual((slots[6]["label"], slots[6]["text"]), ("", "그 밖의 한 줄"))
+        for lab in np_.SLOT_LABEL.values():                               # 글자 라벨만 — 장식 이모티콘을 넣지 않는다(시각 절제)
+            self.assertFalse(re.search("[\U0001F300-\U0001FAFF☀-➿]", lab), lab)
+        # 실제 정리본 전부: 판형 2 의 세 머리말(결론 · 시험 단서 · 왜)을 모두 읽는다
+        for cid, c in self.base.items():
+            kinds = [x["kind"] for x in np_.summary_slots(c.get("summary"))]
+            if c.get("note_form") == 2:
+                self.assertTrue({"conclusion", "cue", "why"} <= set(kinds), cid)
+
+    def test_slot_text_breaks_into_lines_only_where_it_is_a_list(self):
+        # 2026-11-23 사용자 「약제 같은 부분이 다 한 줄이라 읽기 어렵다 — 줄을 띄워」. 원고는 한 줄 그대로 두고 보여 줄 때 덩이마다 줄을 바꾼다.
+        import note_parts as np_
+        flat = lambda gs: [(g["lead"], g["items"]) for g in gs]
+        # 금기 — 괄호 밖 쉼표마다 한 줄(괄호 안 쉼표 · 근거 표시 안 쉼표에서는 자르지 않는다)
+        self.assertEqual(flat(np_.slot_groups("avoid", "베라파밀·딜티아젬(음성 변력), NSAID·티아졸리딘디온, ACE 억제제+ARB+MRA 3제 [[harrison-22: 265장 p.1990, p.1994]]")),
+                         [("", ["베라파밀·딜티아젬(음성 변력)", "NSAID·티아졸리딘디온", "ACE 억제제+ARB+MRA 3제 [[harrison-22: 265장 p.1990, p.1994]]"])])
+        self.assertEqual(flat(np_.slot_groups("avoid", "스테로이드·NSAID(동반 염증 질환에만, 섬유근육통 자체엔 무효)")),
+                         [("", ["스테로이드·NSAID(동반 염증 질환에만, 섬유근육통 자체엔 무효)"])])
+        # 금기 — 가운뎃점으로 셋 이상 이은 순수한 나열도 한 줄씩
+        self.assertEqual(flat(np_.slot_groups("avoid", "도파민 1차·전분(starch) 수액·CVP 8–12 같은 고정 목표. 승압제는 중심정맥관을 기다리지 않는다.")),
+                         [("", ["도파민 1차", "전분(starch) 수액", "CVP 8–12 같은 고정 목표", "승압제는 중심정맥관을 기다리지 않는다."])])
+        # 발문 단서 — 쉼표 · 문장마다 한 줄
+        self.assertEqual(flat(np_.slot_groups("cue", "노인, 한쪽 이마의 화끈한 통증 뒤 물집, 코끝 물집(Hutchinson sign), 눈 충혈·시림.")),
+                         [("", ["노인", "한쪽 이마의 화끈한 통증 뒤 물집", "코끝 물집(Hutchinson sign)", "눈 충혈·시림."])])
+        self.assertEqual(flat(np_.slot_groups("cue", "LVEF ≤ 40 % + 「예후·사망률을 낮추는 약은?」 → 이 넷. 「증상을 바로 푸는 약은?」 → 고리 이뇨제.")),
+                         [("", ["LVEF ≤ 40 % + 「예후·사망률을 낮추는 약은?」 → 이 넷", "「증상을 바로 푸는 약은?」 → 고리 이뇨제."])])
+        # 결론 — 「… 약은 A·B·C·D다」만 머리 줄 + 항목 줄로 편다(괄호 안의 가운뎃점 · 「또는」에 걸리지 않는다)
+        self.assertEqual(flat(np_.slot_groups("conclusion", "HFrEF 의 기본 약은 RAAS 차단(ACE 억제제·ARB 또는 ARNI)·검증된 β차단제·MRA·SGLT2 억제제다 [[h: p.1992, p.1996]]")),
+                         [("HFrEF 의 기본 약은", ["RAAS 차단(ACE 억제제·ARB 또는 ARNI)", "검증된 β차단제", "MRA", "SGLT2 억제제다 [[h: p.1992, p.1996]]"])])
+        # 결론 · 왜 — 문장은 쉼표 · 가운뎃점에서 자르지 않는다(조각나면 뜻이 흐려진다)
+        for kind, text in (("conclusion", "만성 중증 역류는 증상이 있거나 박출률 ≤ 55 %·수축기말 지름 > 50 mm 면 판막 교체, 급성 중증은 24시간 안 수술"),
+                           ("conclusion", "되돌릴 원인이 없는 후천성 완전·고도·Mobitz II 방실차단은 증상이 없어도 영구 심박조율기다."),
+                           ("conclusion", "10대의 빠르게 커지는 한쪽 고형 난소 종괴는 수술 전에 알파태아단백(AFP)·β-hCG·LDH 를 잰다."),
+                           ("why", "약물 유발 루푸스는 신장·뇌를 거의 침범하지 않고 항dsDNA·항Sm 같은 다른 자가항체가 드물다."),
+                           ("why", "외분비샘의 림프구 침윤이 분비를 줄인다 — 같은 건조는 약·바이러스·육아종으로도 생겨 원인을 따로 가려야 한다.")):
+            self.assertEqual(flat(np_.slot_groups(kind, text)), [("", [text])], text)
+        self.assertEqual(np_.slot_groups("why", ""), [])
+        # 실제 정리본 전부: 줄을 나눠도 글자를 잃거나 더하지 않는다(구분 기호와 띄어쓰기만 다르다)
+        squash = lambda t: re.sub(r"[\s,·/.]", "", t)
+        split = 0
+        for c in self.base.values():
+            for sl in np_.summary_slots(c.get("summary")):
+                joined = "".join(g["lead"] + "".join(g["items"]) for g in sl["groups"])
+                self.assertEqual(squash(joined), squash(sl["text"]), sl["text"])
+                split += sum(len(g["items"]) + bool(g["lead"]) for g in sl["groups"]) > 1
+        self.assertGreater(split, 100)                                      # 발문 단서 · 금기 칸의 절반쯤이 줄로 나뉜다
+        # 그리는 쪽: PDF 와 앱이 같은 덩이를 쓴다
+        u, c = self._unit("cn.cardio.heart-failure.hfref-gdmt-selection", "순환기내과")
+        h, _ = bb.unit_html(u, self.cfg, {}, "순환기내과")
+        self.assertIn('<div class="sll">HFrEF 의 기본 약은</div><ul class="sl sub"><li>RAAS 차단(ACE 억제제·ARB 또는 ARNI)</li>', h)
+        self.assertIn('<ul class="sl"><li>베라파밀·딜티아젬(음성 변력)</li><li>NSAID·티아졸리딘디온</li>', h)
+        learn = (ROOT / "docs" / "learn.js").read_text(encoding="utf-8")
+        self.assertIn("function slotLinesHtml(s)", learn)
+        import export_concepts_web as ew
+        self.assertIn("groups=[{", (ROOT / "pipelines" / "export_concepts_web.py").read_text(encoding="utf-8"))
+
+    def test_exam_issue_section_is_none_or_four_fields(self):
+        import note_parts as np_
+        self.assertTrue(np_.is_issue_title("시험 쟁점 — 충돌·맥락·새 근거"))
+        self.assertFalse(np_.is_issue_title("권고와 예외"))
+        none = np_.exam_issues("<ul>\n<li>해당 없음(대조: 해리슨 353장 p.2727~2728)</li>\n</ul>")
+        self.assertEqual(none, {"none": True, "ref": "대조: 해리슨 353장 p.2727~2728"})
+        z = np_.exam_issues("<ul><li><strong>Z1 충돌 · 박출률 기준</strong> — 시험 기준: ≤ 55 % [[h: p.1]] / 다른 기준: &lt; 55 % / 왜 다른가: 그림과 본문 / "
+                            "시험에서는: KMLE · USMLE 모두 수술 쪽</li><li>그 밖에 어긋난 곳 없음(대조: 250장).</li></ul>")
+        self.assertFalse(z["none"])
+        a, b = z["issues"]
+        self.assertEqual((a["id"], a["kind"], a["title"]), ("Z1", "충돌", "박출률 기준"))
+        self.assertEqual((a["exam"], a["other"], a["why"], a["onexam"]),
+                         ("≤ 55 % [[h: p.1]]", "&lt; 55 %", "그림과 본문", "KMLE · USMLE 모두 수술 쪽"))
+        self.assertEqual((b["exam"], b["body"]), ("", "그 밖에 어긋난 곳 없음(대조: 250장)."))     # 네 칸이 없는 항목은 글 그대로
+        # 실제 정리본: 쟁점 항목의 대부분이 네 칸으로 풀린다(풀리지 않는 것은 「그 밖에 없음」 같은 덧글)
+        four = total = 0
+        for c in self.base.values():
+            for sec in c["sections"]:
+                if np_.is_issue_title(sec["title"]):
+                    r = np_.exam_issues(sec["html"])
+                    for it in ([] if r["none"] else r["issues"]):
+                        total += 1
+                        four += bool(it["exam"] and it["other"] and it["why"] and it["onexam"])
+        self.assertGreater(total, 50)
+        self.assertGreater(four / total, 0.9)
+
+    def test_series_orders_one_disease_by_the_flow_of_judgement(self):
+        import note_parts as np_
+        cs = {"cn.cardio.hf.tx": {"title": "치료", "objective_kind": "치료"}, "cn.cardio.hf.dx": {"title": "진단", "objective_kind": "진단"},
+              "cn.peds.hf.mech": {"title": "기전", "objective_kind": "기전"}, "cn.cardio.af.rate": {"title": "혼자", "objective_kind": "치료"}}
+        se = np_.series(cs)
+        self.assertEqual([x["id"] for x in se["cn.cardio.hf.dx"]], ["cn.peds.hf.mech", "cn.cardio.hf.dx", "cn.cardio.hf.tx"])   # 과가 달라도 같은 질환
+        self.assertNotIn("cn.cardio.af.rate", se)                           # 혼자인 단원에는 줄을 세우지 않는다
+
+    def _unit(self, cid, book):
+        c = copy.deepcopy(self.base[cid])
+        return bb.Unit(cid, book, c, ll.State(cid, cid), [], str(c.get("title")), slot=str(c.get("outline") or "")), c
+
+    def test_pdf_unit_uses_slots_cards_and_puts_criteria_before_the_choice_section(self):
+        cfg = self.cfg
+        self.assertEqual(cfg["template_version"], 12)
+        u, c = self._unit("cn.cardio.aortic-regurgitation.surgery-timing", "순환기내과")
+        h, info = bb.unit_html(u, cfg, {}, "순환기내과")
+        for lab in ("핵심 결론", "발문 단서", "왜 이 판단인가"):
+            self.assertIn(f'<div class="sk">{lab}</div>', h)
+        self.assertNotIn("<b>한눈에</b>", h)
+        # 기준은 한 단 카드로, 「선택 — …」 절 앞에 온다(판형 11 은 「치료…」만 찾아 판형 2 정리본에서 맨 끝으로 밀렸다)
+        self.assertNotIn('class="tb rec"><div class="tt">기준', h)
+        self.assertLess(h.index('<div class="crit">'), h.index("선택 — 수술 적응과 방법"))
+        self.assertGreater(h.index('<div class="crit">'), h.index("가르는 소견 — 만성과 급성"))
+        # 혼동은 「혼동 / 기준」 카드
+        self.assertEqual(h.count('<div class="pc">'), len(c["pitfalls"]))
+        self.assertNotIn('<ul class="pit">', h)
+        # 시험 쟁점: 쟁점이 있으면 네 칸 카드
+        self.assertIn('<span class="pk">시험 기준</span>', h)
+        self.assertIn('<span class="pk">시험에서는</span>', h)
+        self.assertNotIn("시험 쟁점 — 충돌·맥락·새 근거", h)                   # 긴 절 이름 대신 「시험 쟁점」
+        self.assertIn("시험 쟁점", info["sections"][-1] if "시험 쟁점" in info["sections"][-1] else " ".join(info["sections"]))
+
+    def test_pdf_unit_folds_an_empty_exam_issue_into_a_header_mark(self):
+        cfg = self.cfg
+        u, c = self._unit("cn.allergy.anaphylaxis.im-epinephrine-first", "알레르기내과")
+        h, info = bb.unit_html(u, cfg, {}, "알레르기내과")
+        self.assertIn('<span class="ok">해리슨 대조 · 충돌 없음</span>', h)
+        self.assertNotIn(">시험 쟁점<", h)                                    # 절을 세우지 않는다
+        self.assertFalse([t for t in info["sections"] if "시험 쟁점" in t])
+        self.assertNotIn("해당 없음", h)
+
+    def test_pdf_links_series_roots_and_chapter_map(self):
+        cfg = self.cfg
+        concepts = self.base
+        books = bb.plan(concepts, {}, {}, cfg, {})
+        hf = next(u for u in books["순환기내과"].units if u.key == "cn.cardio.heart-failure.hfref-gdmt-selection")
+        self.assertEqual([x["kind"] for x in hf.links["series"]], ["진단", "치료"])
+        h, _ = bb.unit_html(hf, cfg, {}, "순환기내과")
+        self.assertIn('<span class="k">같은 질환</span>', h)
+        self.assertIn('<span class="here">치료</span>', h)
+        self.assertIn('href="#u-cn-cardio-heart-failure-natriuretic-peptide-echo-diagnosis"', h)   # 같은 책이면 그 단원으로
+        self.assertIn("links", bb.unit_fingerprint(hf))                     # 이음이 바뀌면 책을 다시 만든다
+        lone = next(u for u in books["순환기내과"].units if not u.links)
+        self.assertNotIn("links", bb.unit_fingerprint(lone))
+        # 기초 뿌리 — 임상 단원 머리의 줄 · 기초 단원 끝의 「받치는 임상 단원」
+        basic = next(c for c in concepts.values() if C.is_basic(c))
+        cs = dict(concepts)                                               # 얕은 사본 — 고칠 정리본 하나만 따로 뜬다
+        cs["cn.cardio.heart-failure.hfref-gdmt-selection"] = dict(concepts["cn.cardio.heart-failure.hfref-gdmt-selection"], roots=[basic["id"]])
+        b2 = bb.plan(cs, {}, {}, cfg, {})
+        hf2 = next(u for u in b2["순환기내과"].units if u.key == "cn.cardio.heart-failure.hfref-gdmt-selection")
+        h2, _ = bb.unit_html(hf2, cfg, {}, "순환기내과")
+        self.assertIn('<span class="k">기초 뿌리</span>', h2)
+        self.assertIn(html.escape(str(basic["title"])), h2)
+        bu = next(u for b in b2.values() for u in b.units if u.key == basic["id"])
+        h3, _ = bb.unit_html(bu, cfg, {}, bu.book)
+        self.assertIn("이 기전이 받치는 임상 단원", h3)
+        # 절 지도 — 한 절에 단원이 셋 이상이면 그 절 첫머리에 「단원 · 목표 종류 · 핵심 결론」
+        units = books["순환기내과"].units
+        full, _ = bb.book_html("순환기내과", units, cfg, {}, {"version": 1, "date": "2026-11-23"}, None,
+                               {"regular": "x.ttf", "bold": "x.ttf"}, [])
+        self.assertIn('<div class="cmap"><div class="mh">', full)
+        groups = {}
+        for u in units:
+            if u.group:
+                groups.setdefault(u.group, []).append(u)
+        self.assertEqual(full.count('<div class="cmap">'), sum(1 for g in groups.values() if len(g) >= 3))
+
+    def test_web_bundle_carries_the_same_parts(self):
+        import export_concepts_web as ew
+        data, _ = ew.build()
+        ar = data["cn.cardio.aortic-regurgitation.surgery-timing"]
+        self.assertEqual([s["kind"] for s in ar["slots"][:3]], ["conclusion", "cue", "why"])
+        self.assertIn("<sup", ar["slots"][0]["html"])                       # 근거 표시는 번호로 바꿔 싣는다
+        self.assertFalse(ar["issues"]["none"])
+        self.assertTrue(ar["issues"]["items"][0]["onexam"])
+        self.assertTrue(any(s["issue"] for s in ar["sections"]))            # 옛 판형(필기가 있는 종이)이 쓸 절은 그대로 싣는다
+        self.assertTrue(data["cn.allergy.anaphylaxis.im-epinephrine-first"]["issues"]["none"])
+        self.assertTrue(all(isinstance(c["order"], int) for c in data.values()))      # 서가를 기본틀 순서로 늘어놓는다
+        self.assertEqual([x["kind"] for x in data["cn.cardio.heart-failure.hfref-gdmt-selection"]["series"]], ["진단", "치료"])
+        self.assertTrue(all(c["layer"] in ("basic", "clinical") for c in data.values()))
+        # 앱이 그 조각을 그린다 — 종이(필기장) 안에서 누를 수 있게 단추가 아니라 <a data-…> 로
+        learn = (ROOT / "docs" / "learn.js").read_text(encoding="utf-8")
+        for needle in ("function slotsHtml(c)", "function issuesHtml(c)", "function headExtrasHtml(c)", 'data-goto="', 'data-root="',
+                       'data-tape="1"', "Harrison 대조 · 충돌 없음"):
+            self.assertIn(needle, learn)
+        css = (ROOT / "docs" / "style.css").read_text(encoding="utf-8")
+        body = css[css.index("/* 판형 12(2026-11-23 vNext Phase 3)"):]
+        self.assertFalse(re.findall(r"#[0-9a-fA-F]{3,8}\b", body))           # 새 상자도 색은 변수로만(한 가지 톤)
+
+    def test_optional_exam_points_and_checklists_render(self):
+        cfg = self.cfg
+        u, c = self._unit("cn.allergy.anaphylaxis.im-epinephrine-first", "알레르기내과")
+        c["exam_points"] = {"kmle": "국내는 성인 0.3~0.5 mg 표기", "usmle": ""}
+        c["checklists"] = [{"name": "CURB-65", "items": [{"label": "혼돈", "points": "1"}, "요소 > 7 mmol/L"], "cutoffs": "2점 이상이면 입원"}]
+        h, _ = bb.unit_html(u, cfg, {}, "알레르기내과")
+        self.assertIn('<span class="k">KMLE 포인트</span>국내는 성인 0.3~0.5 mg 표기', h)
+        self.assertNotIn("USMLE 포인트", h)                                   # 빈 쪽은 싣지 않는다
+        self.assertIn('<div class="lh">CURB-65</div>', h)
+        self.assertEqual(h.count('<span class="bx"></span>'), 2)
+        self.assertIn('<span class="pk">판정</span>2점 이상이면 입원', h)
 
 
 if __name__ == "__main__":
