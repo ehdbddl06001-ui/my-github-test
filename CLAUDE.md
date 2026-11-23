@@ -262,7 +262,23 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   웹 필기장: 판형 12 전에 쓴 필기가 있는 정리본은 **옛 모양으로 그린다**(`doc.r` — 줄 배치가 달라 밑줄이 글자와 어긋난다. 「새 모양으로 보기」는 사용자가 고른다) ·
   서가는 기본틀 순서 · 「보기 ▸ 암기 가림막」(답 쪽 칸을 가리고 톡 쳐서 연다 — `CLOZE_SEL` 은 스크립트와 스타일이 같은 목록) · 단원 끝 **30초 구술 체크**(`checks`) ·
   **정독 확인**(학습 기록의 `view/read` — `review_status`(내용 검토)와 다른 것이고 복습 상태 계산에 들어가지 않는다) · 기초 뿌리 서랍.
-  **아직 안 한 것**: PDF 빌드 속도(배치 탐색을 한 번 그려 재는 방식으로 바꾸기) — 지금도 책 전체를 여러 번 다시 그린다.
+- **배치는 한 번 올려 잰다(2026-11-23, 판형 13)** — `pipelines/book_layout.py`. 그전 배치 탐색은 도식 · 그림 자리를 하나 바꿀 때마다
+  책 전체를 PDF 로 다시 그리고 검증했다(81쪽 책 한 번에 39초 — 11-21 실행은 순환기내과 882번 · 전체 4시간). 지금은 책을 Chromium 에 **한 번**
+  올려 두고 바뀐 단원만 갈아 끼워 블록 자리를 재서(`MeasuredBook.evaluate` — 81쪽 0.25초) `validate_pdf` 의 배치 검사를 같은 식으로 계산하고
+  (`book_layout.problems`), **같은 탐색**(`search_placement` · `settle_bands` — 선택지 · 순서 · 점수 그대로, 다만 풀리면 멈추고 마지막 문제 쪽보다
+  뒤에서 시작하는 단원은 건너뛴다)이 그 값으로 배치를 고른다. PDF 는 고른 배치로 한 번 그리고(차례 쪽 번호도 측정값을 먼저 넣는다) **결과는 그 PDF 의
+  검증이 정한다.** 화면에서 인쇄 쪽 나눔을 얻는 법은 실제 PDF 와 대조해 정했다: ① body 를 바깥 다단(단 하나 = 한 쪽)으로 — `emulate_media("print")`
+  만으로는 쪽이 안 나뉜다 ② 쪽 상자는 mm 환산값(718.11 × 1046.92 px)이 아니라 Chromium 이 정수로 맞춘 **719 × 1047 px**(`print_box` 가 탐침 PDF 로
+  잰다 — 0.45 px 차이로 줄바꿈이 어긋났다) ③ `overflow:hidden` 상자(혼동 카드)는 화면에서만 안 쪼개지므로 잴 때 푼다 ④ 그 배치가 그리기 단계에 닿으면
+  탭이 죽으므로(Chromium 151 · 반복되는 표 머리줄) 측정 CSS 는 한 번의 evaluate 안에서만 켠다. 그래도 큰 책은 1 % 안팎이 실제와 다르다(쪽 끝에서 카드가
+  쪼개지는 자리 — 순환기내과 81쪽의 배치 오류 30개 중 27개 예측) → 측정이 **예측하지 못한** 배치 오류가 PDF 에 나오면 그 쪽 둘레의 단원만 PDF 로 그려 보며
+  고친다(`REPAIR_RENDERS` 6번까지). 측정이 안 되는 환경 · 책은 저절로 그전 탐색으로 가고(`last_run.json` `layout_trials[책].measure_failed`),
+  `--layout search` · `books_config.yaml` `layout` / `layout_search`(책 이름)로 고를 수 있다. 책마다 그린 횟수는 `last_run.json` `renders`.
+  **배치 검사를 고칠 때는 두 곳을 같이** — `validate_pdf`(PDF 에서) 와 `book_layout.problems` + `MEASURE_JS`(화면에서: 문턱 · 제목 종류
+  `h2, h3, h4, .tb .tt, .cmap .mh`). 배경 · 테두리가 있는 새 상자는 저절로 잡힌다. 시험: `LayoutRules`(손으로 만든 값) · `MeasuredLayout`(실제 PDF 와 대조 ·
+  PDF 1번 · 옛 탐색보다 배치 문제가 늘지 않는다 · 측정 실패 시 옛 탐색).
+  같은 날 고친 검증 오판: 「도식이 한 쪽에 온전히 있지 않다」는 도식 제목 앞 16자가 **처음 나온 쪽만** 봤다 — 제목 앞부분이 같은 도식이 책에 둘이면
+  (순환기내과 「[도식] 규칙적 좁은 QRS 빈맥 — …」) 뒤 단원을 오판해 책이 통째로 실패했다. 나온 쪽을 모두 본다(`diagram_on_one_page`).
 - 학습서: `.github/workflows/books.yml`(cron 06:30 KST) → 코드 시험(관문) → `test_content.py`(실제 콘텐츠, 비관문) →
   `check_sources.py`(pmid → PubMed 정정·철회 지문, DOI 만이면 PMID 를 찾아 기억, 없으면 doi.org 등록만) →
   `build_books.py`(바뀐 책만, 렌더 후 검증 통과한 것만 — 한 책 실패는 그 책의 이전 PDF 를 유지) →

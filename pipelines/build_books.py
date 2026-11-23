@@ -16,10 +16,15 @@
 그 밖(판형 1과 같음): 과별 책·권 나눔·전체 목차, 렌더 후 검증(글꼴 임베드·한글 검색·차례 링크·책갈피·쪽 경계·
 도식 한 쪽·고립된 제목·빈 쪽), 바뀐 것이 없으면 건너뜀, 실패하면 이전 PDF 유지, 되풀이해도 같은 결과.
 
+배치(2026-11-23, 판형 13): 도식 · 그림의 자리는 책을 Chromium 에 한 번 올려 재서 고르고(book_layout.py — 선택지마다
+책 전체를 PDF 로 다시 그리던 것을 바꿨다), PDF 는 고른 배치로 한 번 그려 검증한다. 측정이 예측하지 못한 배치 오류는
+그 둘레만 PDF 로 고치고, 측정이 안 되면 그전 탐색으로 간다(`--layout search` 로 고를 수도 있다).
+
 사용:
   python pipelines/build_books.py                       # 바뀐 책만 만들고 검증(업로드 없음)
   python pipelines/build_books.py --upload              # + Google Drive 갱신(drive_books.py)
   python pipelines/build_books.py --force --only 신장내과
+  python pipelines/build_books.py --force --only 신장내과 --layout search   # 그전 방식(선택지마다 PDF 로 — 느리다)
   python pipelines/build_books.py --events <학습기록.json> --state-dir <임시> --out <임시> --preview
 """
 from __future__ import annotations
@@ -39,6 +44,7 @@ from typing import Any
 
 import yaml
 
+import book_layout as bl
 import decision_diagram as dd
 import english_terms as et
 import learning_log as ll
@@ -272,6 +278,9 @@ def volume_hash(title: str, units: list[Unit], pending: list, cfg: dict, questio
 
 
 # ── 도식: 읽을 수 있는 크기로 한 단 또는 두 단 전체에 맞춘다 ──────────────
+_FIT_MEMO: dict[tuple, tuple[dict, bool]] = {}
+
+
 def fit_diagram(spec: dict, force_full: bool = False, shrink: float = 1.0, force_col: bool = False) -> dict:
     """한 단 안(우선) 또는 두 단 전체(넓은 도식) — 2026-09-27 해리슨식 세로 2단.
     점수 = 항목 중간 끊김 ×0.4pt + 줄바꿈 ×0.12pt − 글자 크기. 두 단 전체는 흐름을 가르므로 +1.0pt, 양옆이 비면 더 벌점.
@@ -285,20 +294,25 @@ def fit_diagram(spec: dict, force_full: bool = False, shrink: float = 1.0, force
     elif force_col:                                # 배치 탐색: 두 단 폭이 밀려 큰 빈칸이 생길 때 한 단으로(글자 ≥ DIA_FLOOR_PT)
         places = places[:1]
     paras = sum(len(str(x["text"]).split("\n")) for x in spec["nodes"])
-    cands = []
-    for nw in range(180, 481, 20):
-        geo = dd.layout(spec, node_w=nw, rank_gap="auto", wrap_fn=dd.phrase_wrap)
-        bad = dd.bad_breaks(geo, spec)
-        wraps = sum(len(n["lines"]) for n in geo["nodes"]) - paras
-        for place, W, MH, floor, pen in places:
-            s = round(min(W / geo["w"], MH / geo["h"], DIAGRAM_MAX_SCALE), 3)
-            pt = 13 * 0.75 * s
-            used = geo["w"] * s / W                    # 두 단 폭 가운데 도식이 실제로 쓰는 몫 — 좁은 도식을 넓게 깔면 양옆이 빈다
-            pen2 = pen + (5 * max(0.0, 0.85 - used) if place == "full" else 0.0)
-            cands.append(dict(geo=geo, place=place, node_w=nw, scale=s, pt=pt, bad=bad, lines=wraps,
-                              ok=pt >= floor, score=bad * 0.4 + wraps * 0.12 - pt + pen2))
-    ok = [c for c in cands if c["ok"]]
-    best = min(ok, key=lambda c: (c["score"], -c["scale"])) if ok else max(cands, key=lambda c: c["scale"])
+    # 같은 도식 · 같은 자리 종류의 계산은 한 번만 — 차례 쪽 번호를 맞추는 재렌더와 배치 탐색이 같은 도식을 수십 번 다시 짰다(도식 하나에 층 배치 16번)
+    memo = (json.dumps(spec, ensure_ascii=False, sort_keys=True, default=str), force_full, force_col)
+    hit = _FIT_MEMO.get(memo)
+    if hit is None:
+        cands = []
+        for nw in range(180, 481, 20):
+            geo = dd.layout(spec, node_w=nw, rank_gap="auto", wrap_fn=dd.phrase_wrap)
+            bad = dd.bad_breaks(geo, spec)
+            wraps = sum(len(n["lines"]) for n in geo["nodes"]) - paras
+            for place, W, MH, floor, pen in places:
+                s = round(min(W / geo["w"], MH / geo["h"], DIAGRAM_MAX_SCALE), 3)
+                pt = 13 * 0.75 * s
+                used = geo["w"] * s / W                    # 두 단 폭 가운데 도식이 실제로 쓰는 몫 — 좁은 도식을 넓게 깔면 양옆이 빈다
+                pen2 = pen + (5 * max(0.0, 0.85 - used) if place == "full" else 0.0)
+                cands.append(dict(geo=geo, place=place, node_w=nw, scale=s, pt=pt, bad=bad, lines=wraps,
+                                  ok=pt >= floor, score=bad * 0.4 + wraps * 0.12 - pt + pen2))
+        ok = [c for c in cands if c["ok"]]
+        hit = _FIT_MEMO[memo] = (min(ok, key=lambda c: (c["score"], -c["scale"])) if ok else max(cands, key=lambda c: c["scale"]), bool(ok))
+    best, ok = hit
     if shrink < 1.0 and best["pt"] * shrink >= DIA_SHRINK_FLOOR_PT:
         best = dict(best, scale=round(best["scale"] * shrink, 3), pt=best["pt"] * shrink, shrink=shrink)
     return dict({k: v for k, v in best.items() if k != "ok"}, ok=bool(ok))
@@ -981,6 +995,14 @@ def set_metadata(pdf_path: Path, title: str, meta: dict) -> None:
     tmp.replace(pdf_path)
 
 
+def diagram_on_one_page(texts: list[str], head: str, last: str) -> bool:
+    """도식 제목(앞 16자)과 마지막 노드의 글이 **같은 쪽**에 있는가 — 도식이 쪽을 넘어 쪼개지지 않았다는 표지.
+
+    제목 앞부분이 같은 도식이 책에 둘 있으면(순환기내과 「[도식] 규칙적 좁은 QRS 빈맥 — …」 두 단원, 2026-11-23) 그 글이 여러 쪽에서
+    나온다 — 처음 나온 쪽만 보면 다른 단원의 도식을 보고 「한 쪽에 온전히 있지 않다」고 오판해 책이 통째로 실패했다. 나온 쪽을 모두 본다."""
+    return any(head in t and last in t for t in texts)
+
+
 def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, int], infos: dict) -> tuple[list[str], list[str]]:
     """(오류, 참고). 오류가 하나라도 있으면 최신본을 바꾸지 않는다."""
     import pymupdf
@@ -1119,8 +1141,7 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
             errs.append(f"도식이 읽을 크기로 한 쪽에 들어가지 않는다(배율 {fit['scale']}) — 도식을 의미 단위로 나눠라: {u.title}")
         head = f"[도식] {u.concept['diagram'].get('title')}"[:16]
         last = fit["geo"]["nodes"][-1]["lines"][0][:8]
-        pages = [i for i, t in enumerate(texts) if head in t]
-        if not pages or last not in texts[pages[0]]:
+        if not diagram_on_one_page(texts, head, last):
             errs.append(f"도식이 한 쪽에 온전히 있지 않다: {u.title}")
     doc.close()
     return errs, notes
@@ -1173,8 +1194,194 @@ def _changes(prev: dict, units: list[Unit]) -> list[str]:
     return out
 
 
+# ── 배치 탐색 ───────────────────────────────────────────────────────
+# 평가(trial)를 갈아 끼울 수 있게 한 탐색 — 같은 선택지 · 같은 순서 · 같은 점수를
+#   · `MeasuredBook.evaluate`(PDF 없이 잰다 — 기본, 2026-11-23)와
+#   · PDF 로 그려 검증하는 `pdf_trial`(지금까지의 방식 — `--layout search`, 측정이 안 되는 책, 예측에 없던 오류 고치기)
+# 이 함께 쓴다. trial(pos) → (오류 목록, 쪽 수, 단원 정보, 단원 쪽).
+MEASURE_MARGIN = 0.01             # 측정으로 고를 때는 문턱을 1 %p 엄하게(빈칸 29 % 부터 문제) — 실제 PDF 에서 아슬아슬하게 걸리지 않게
+REPAIR_RENDERS = 6                # 예측에 없던 오류를 PDF 로 고쳐 볼 때의 렌더 예산(책마다)
+
+
+def placement_score(errs: list[str], npg: int) -> tuple[int, int]:
+    le = bl.layout_errors(errs)
+    return (len(le) + 100 * (len(errs) - len(le)), npg)
+
+
+def _last_problem_page(errs: list[str]) -> int | None:
+    """배치 문제가 있는 마지막 쪽. 쪽을 모르는 오류(배치 외)가 섞여 있으면 None — 어느 단원도 건너뛰지 않는다."""
+    le = bl.layout_errors(errs)
+    if not le or len(le) != len(errs):
+        return None
+    return max(bl.error_key(e)[0] for e in le)
+
+
+def units_near(units: list[Unit], pm: dict, pages: list[int]) -> set[str]:
+    """그 쪽들에 닿는 단원 — 앞쪽 첫머리를 차지한 단원부터 그 쪽에서 시작하는 단원까지(흐름은 앞에서 뒤로만 간다)."""
+    out: set[str] = set()
+    starts = [(pm.get(u.anchor) or 0, u.anchor) for u in units]
+    for p in pages:
+        before = [s for s, _ in starts if 0 < s <= p - 1]
+        lo = max(before) if before else 0
+        out |= {a for s, a in starts if lo <= s <= p}
+    return out
+
+
+def search_placement(units: list[Unit], trial, start: tuple, pos0: dict | None = None, prune: bool = False,
+                     only: set[str] | None = None, budget: int | None = None, goal=None) -> tuple[dict, int]:
+    """도식 · 그림의 자리 · 축소 · 여백을 하나씩 바꿔 가며 배치 오류가 가장 적은 배치를 고른다 → (배치, 시도 수).
+
+    start = 지금 배치(pos0)의 (오류, 쪽 수, 단원 정보, 단원 쪽). prune = 측정 탐색용 가지치기:
+    목표(goal — 기본은 배치 오류 0)에 닿으면 멈추고, 마지막 문제 쪽보다 뒤에서 시작하는 단원은 건너뛴다
+    (흐름은 앞에서 뒤로만 가므로 뒤 단원을 바꿔도 앞쪽 문제는 그대로다). prune 이 꺼져 있으면 2026-09~11 의 탐색 그대로다."""
+    errs, npg, infos, pm = start
+    goal = goal or (lambda es: not bl.layout_errors(es))
+    best = (*placement_score(errs, npg), dict(pos0 or {}))
+    best_errs, best_pm = errs, pm
+    tried = 0
+    spent = lambda: budget is not None and tried >= budget
+    for u in units:
+        if (only is not None and u.anchor not in only) or spent():
+            continue
+        if prune:
+            if goal(best_errs):
+                break
+            last = _last_problem_page(best_errs)
+            if last is not None and (best_pm.get(u.anchor) or 0) > last:
+                continue
+        info = infos.get(u.anchor) or {}
+        # 그림(2026-09-27): 같은 절 안의 다른 문단 뒤로 옮겨 본다 — 뒤쪽부터(그림이 너무 일찍 와서 단이 비는 일이 많다)
+        for fid, fch in (info.get("fig_choices") or {}).items():
+            key = f"{u.anchor}#fig:{fid}"
+            # 같은 절 안 다른 자리(뒤쪽부터) → 지금 자리에서 줄이기(0.85·0.75배)
+            fopts = [({key: p_}) for p_ in sorted((q for q in fch if q != info["fig_at"].get(fid)), reverse=True)[:6]]
+            fopts += [{f"{u.anchor}#figscale:{fid}": s} for s in (0.85, 0.75)]
+            for opt in fopts:
+                if not bl.layout_errors(errs) or spent():
+                    break
+                tried += 1
+                cand = dict(best[2], **opt)
+                e2, g2, _, p2 = trial(cand)
+                score = (*placement_score(e2, g2), cand)
+                if score[:2] < best[:2]:
+                    best, best_errs, best_pm = score, e2, p2
+                if not bl.layout_errors(e2):
+                    errs = e2
+                    break
+        if not info.get("diagram") or (prune and goal(best_errs)):
+            continue
+        # 기본 위치(치료 절 뒤)에 가까운 곳부터 — 흐름 도식이 관련 본문에서 멀어지지 않게
+        d0 = info["dia_default"]
+        later = sorted(q for q in info["dia_choices"] if q > d0)
+        earlier = sorted((q for q in info["dia_choices"] if q < d0), reverse=True)
+        order = later + earlier    # 빈 공간은 대개 도식이 너무 일찍 와서 생긴다 — 뒤쪽부터
+        per_unit = 0                          # 단원마다 따로 센다 — 앞 단원이 예산을 다 쓰면 뒤 단원은 시도조차 못 했다(2026-09-22)
+        # 두 단 폭 도식: ① 아래 여백으로 좁은 띠 넘기기 ② 지금 자리에서 줄이기 ③ 한 단으로 ④ 자리 옮기기
+        full = (info.get("diagram") or {}).get("place") == "full"
+        at = info["dia_at"]
+        opts = []
+        if full:
+            opts += [(at, 1.0, pad, False) for pad in (14, 28, 42)]
+            opts += [(at, f, 0, False) for f in (0.88, 0.76)]
+            if fit_diagram(u.concept["diagram"], force_col=True)["ok"]:
+                opts += [(q, 1.0, 0, True) for q in [at] + order[:3]]
+        opts += [(q, 1.0, 0, False) for q in order] + [(q, 0.88, 0, False) for q in order[:4]]
+        for p_, shrink, pad, col in opts:
+            if (p_ == at and shrink == 1.0 and not pad and not col) or per_unit >= 20 or spent():
+                continue
+            if (info.get("diagram") or {}).get("pt", 99) * shrink < DIA_SHRINK_FLOOR_PT:
+                continue
+            per_unit += 1
+            tried += 1
+            cand = dict(best[2], **{u.anchor: p_, u.anchor + "#shrink": shrink, u.anchor + "#pad": pad, u.anchor + "#col": col})
+            e2, g2, _, p2 = trial(cand)
+            score = (*placement_score(e2, g2), cand)
+            if score[:2] < best[:2]:
+                best, best_errs, best_pm = score, e2, p2
+            if not bl.layout_errors(e2) or (prune and goal(best_errs)):
+                break
+    return best[2], tried
+
+
+def settle_bands(units: list[Unit], trial, state: tuple, pos: dict, prune: bool = False) -> tuple[dict, int]:
+    """고른 배치에 두 단 도식 아래 좁은 띠가 남았을 때 — 책 앞쪽 도식부터 차례로 아래 여백을 정한다 → (배치, 시도 수).
+
+    앞 도식의 여백이 뒤 내용을 밀어 뒤 도식에 새 띠를 만들 수 있다. 판단 기준 = (배치 외 오류, −첫 문제 쪽, 문제 수, 쪽 수):
+    앞쪽 문제를 뒤로 밀어내며 차례로 정하고, 끝에 원래 배치와 문제 수로 비교한다."""
+    errs, npg, infos, pm = state
+
+    def pkey(es: list[str], pages: int) -> tuple:
+        le = bl.layout_errors(es)
+        first = min([int(m.group(1)) for e in le for m in [re.match(r"(\d+)쪽", e)] if m] or [10 ** 6])
+        return (len(es) - len(le), -first, len(le), pages)
+
+    before = placement_score(errs, npg)
+    cur = (pkey(errs, npg), dict(pos))
+    cur_errs, cur_pm = errs, pm
+    tried = 0
+    for u in units:
+        if (infos.get(u.anchor, {}).get("diagram") or {}).get("place") != "full":
+            continue
+        if prune:
+            last = _last_problem_page(cur_errs)
+            if last is not None and (cur_pm.get(u.anchor) or 0) > last:
+                continue
+        for pad in (14, 28, 42):
+            tried += 1
+            cand = dict(cur[1], **{u.anchor + "#pad": pad})
+            e2, g2, _, p2 = trial(cand)
+            if pkey(e2, g2) < cur[0]:
+                cur, cur_errs, cur_pm = (pkey(e2, g2), cand), e2, p2
+        if cur[0][2] == 0:
+            break
+    if (cur[0][2] + 100 * cur[0][0], cur[0][3]) < before:
+        return cur[1], tried
+    return pos, tried
+
+
+class MeasuredBook:
+    """측정용 탭에 올려 둔 책 한 권. `evaluate(pos)` 가 그 배치의 (배치 문제, 쪽 수, 단원 정보, 단원 쪽)을 PDF 없이 준다.
+
+    배치가 달라진 단원만 `unit_html` 로 다시 만들어 갈아 끼운다 — 마지막 PDF 와 같은 함수가 만든 HTML 이다."""
+
+    def __init__(self, browser, box: tuple[float, float], title: str, units: list[Unit], cfg: dict, questions: dict,
+                 meta: dict, fonts: dict, changes: list[str]):
+        html_text, self.infos = book_html(title, units, cfg, questions, meta, None, fonts, changes, {})
+        self.title, self.units, self.cfg, self.questions = title, units, cfg, questions
+        self.sig = {u.anchor: () for u in units}
+        self.lab = bl.Lab(browser, html_text, box)
+
+    @staticmethod
+    def unit_sig(anchor: str, pos: dict) -> tuple:
+        return tuple(sorted(((k, v) for k, v in pos.items() if k == anchor or k.startswith(anchor + "#")), key=lambda kv: kv[0]))
+
+    def evaluate(self, pos: dict) -> tuple[list[str], int, dict, dict]:
+        swaps = []
+        for u in self.units:
+            sig = self.unit_sig(u.anchor, pos)
+            if sig != self.sig[u.anchor]:
+                h, info = unit_html(u, self.cfg, self.questions, self.title, pos.get(u.anchor),
+                                    bool(pos.get(u.anchor + "#crit_end")), pos)
+                swaps.append((u.anchor, h))
+                self.infos[u.anchor], self.sig[u.anchor] = info, sig
+        m = self.last = self.lab.measure(swaps)
+        titles = {u.anchor: u.title for u in self.units}
+        errs = bl.problems(m, MEASURE_MARGIN) + [f"도식이 한 쪽에 온전히 있지 않다: {titles.get(a, a)}" for a in m.get("split") or []]
+        return errs, int(m["pages"]), dict(self.infos), m["pm"]
+
+    def close(self) -> None:
+        self.lab.close()
+
+
 def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: bool = False,
-          only: str | None = None, want_preview: bool = False, fail_on: str | None = None) -> dict:
+          only: str | None = None, want_preview: bool = False, fail_on: str | None = None,
+          layout: str | None = None) -> dict:
+    """layout = 배치를 정하는 방식 — "measure"(기본: 한 번 올려 재고 고른 배치만 PDF 로) · "search"(지금까지의 방식: 선택지마다 PDF 로).
+    비우면 books_config.yaml `layout`(없으면 measure). `layout_search` 에 적힌 책은 언제나 search."""
+    layout = layout or str(cfg.get("layout") or "measure")
+    if layout not in ("measure", "search"):
+        raise ValueError(f"layout 은 measure · search 중 하나: {layout}")
+    probe: dict = {}                  # 인쇄 쪽 상자(탐침 PDF 로 한 번 잰다 — 책마다 다시 재지 않는다)
     started = now_kst()
     date = started.strftime("%Y-%m-%d")
     manifest_path = state_dir / "manifest.json"
@@ -1228,115 +1435,105 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                     changes = prev.get("changes", []) if prev.get("hash") == hsh else _changes(prev, units)
                     footer = f"{title} · 판 {version} · {date}"
                     tmp = out_dir / (fname + ".building.pdf")
-                    def render_once(dia_pos: dict[str, int], passes: int = 3) -> tuple[list, list, dict, dict, int]:
-                        pm = None
+                    stats = {"renders": 0}
+
+                    def render_once(dia_pos: dict[str, int], passes: int = 3, pm: dict | None = None) -> tuple[list, list, dict, dict, int]:
+                        new: dict = {}
                         for _ in range(passes):         # 차례 쪽 번호를 넣고 흐름이 안정될 때까지
                             html_text, infos = book_html(title, units, cfg, questions, meta, pm, fonts, changes, dia_pos)
                             render_pdf(browser, html_text, tmp, footer)
+                            stats["renders"] += 1
                             new = locate(tmp)
-                            if new == pm:
+                            # 차례에 실리는 것은 단원 쪽뿐이다 — 측정으로 얻은 쪽 번호(pm)가 맞으면 한 번에 끝난다
+                            if pm is not None and all(new.get(u.anchor) == pm.get(u.anchor) for u in units):
                                 break
                             pm = new
                         set_metadata(tmp, title, meta)
-                        errs, notes = validate_pdf(tmp, title, units, pm or {}, infos)
+                        errs, notes = validate_pdf(tmp, title, units, new, infos)
                         import pymupdf
                         with pymupdf.open(tmp) as d_:
                             npg = d_.page_count
-                        return errs, notes, pm or {}, infos, npg
+                        return errs, notes, new, infos, npg
 
-                    dia_pos: dict[str, int] = {}
-                    errs, notes, pm, infos, npg = render_once(dia_pos)
-                    layout_err = lambda es: [e for e in es if "빈 공간" in e or "고립된 제목" in e or "좁은 띠" in e]
-                    tried = 0
-                    if layout_err(errs):
-                        # 큰 도식이 전체 너비 표 바로 뒤에 오면 쪽 끝의 남은 높이에 못 들어가 다음 쪽으로 밀린다 —
-                        # 도식을 다른 절 뒤로 옮겨 가며 빈 공간이 가장 적은 배치를 고른다(단원 내용 순서는 그대로).
-                        best = (len(layout_err(errs)) + 100 * (len(errs) - len(layout_err(errs))), npg, dict(dia_pos))
-                        for u in units:
-                            info = infos.get(u.anchor) or {}
-                            # 그림(2026-09-27): 같은 절 안의 다른 문단 뒤로 옮겨 본다 — 뒤쪽부터(그림이 너무 일찍 와서 단이 비는 일이 많다)
-                            for fid, fch in (info.get("fig_choices") or {}).items():
-                                key = f"{u.anchor}#fig:{fid}"
-                                # 같은 절 안 다른 자리(뒤쪽부터) → 지금 자리에서 줄이기(0.85·0.75배)
-                                fopts = [({key: pos}) for pos in sorted((q for q in fch if q != info["fig_at"].get(fid)), reverse=True)[:6]]
-                                fopts += [{f"{u.anchor}#figscale:{fid}": s} for s in (0.85, 0.75)]
-                                for opt in fopts:
-                                    if not layout_err(errs):
-                                        break
-                                    tried += 1
-                                    trial = dict(best[2], **opt)
-                                    e2, n2, p2, i2, g2 = render_once(trial, passes=1)
-                                    score = (len(layout_err(e2)) + 100 * (len(e2) - len(layout_err(e2))), g2, trial)
-                                    if score[:2] < best[:2]:
-                                        best = score
-                                    if not layout_err(e2):
-                                        errs = e2
-                                        break
-                            if not info.get("diagram"):
-                                continue
-                            # 기본 위치(치료 절 뒤)에 가까운 곳부터 — 흐름 도식이 관련 본문에서 멀어지지 않게
-                            d0 = info["dia_default"]
-                            later = sorted(q for q in info["dia_choices"] if q > d0)
-                            earlier = sorted((q for q in info["dia_choices"] if q < d0), reverse=True)
-                            order = later + earlier    # 빈 공간은 대개 도식이 너무 일찍 와서 생긴다 — 뒤쪽부터
-                            per_unit = 0                          # 단원마다 따로 센다 — 앞 단원이 예산을 다 쓰면 뒤 단원은 시도조차 못 했다(2026-09-22)
-                            # 두 단 폭 도식은 먼저 지금 자리에서 조금 줄여 본다(쪽 끝에 조금 모자라 밀리거나 좁은 띠가 남는 경우), 그다음 자리 옮기기
-                            # 두 단 폭 도식: ① 아래 여백으로 좁은 띠 넘기기 ② 지금 자리에서 줄이기 ③ 한 단으로 ④ 자리 옮기기
-                            full = (info.get("diagram") or {}).get("place") == "full"
-                            at = info["dia_at"]
-                            opts = []
-                            if full:
-                                opts += [(at, 1.0, pad, False) for pad in (14, 28, 42)]
-                                opts += [(at, f, 0, False) for f in (0.88, 0.76)]
-                                if fit_diagram(u.concept["diagram"], force_col=True)["ok"]:
-                                    opts += [(q, 1.0, 0, True) for q in [at] + order[:3]]
-                            opts += [(q, 1.0, 0, False) for q in order] + [(q, 0.88, 0, False) for q in order[:4]]
-                            for pos, shrink, pad, col in opts:
-                                if (pos == at and shrink == 1.0 and not pad and not col) or per_unit >= 20:
-                                    continue
-                                if (info.get("diagram") or {}).get("pt", 99) * shrink < DIA_SHRINK_FLOOR_PT:
-                                    continue
-                                per_unit += 1
-                                tried += 1
-                                trial = dict(best[2], **{u.anchor: pos, u.anchor + "#shrink": shrink,
-                                                         u.anchor + "#pad": pad, u.anchor + "#col": col})
-                                e2, n2, p2, i2, g2 = render_once(trial, passes=1)
-                                score = (len(layout_err(e2)) + 100 * (len(e2) - len(layout_err(e2))), g2, trial)
-                                if score[:2] < best[:2]:
-                                    best = score
-                                if not layout_err(e2):
-                                    break
-                        # 마지막: 고른 배치 위에서도 두 단 도식 아래 좁은 띠가 남으면 그 도식 아래 여백으로 넘긴다(자리·축소를 바꾼 뒤라 다시 본다)
-                        errs, notes, pm, infos, npg = render_once(best[2])
-                        # 앞 도식의 여백이 뒤 내용을 밀어 뒤 도식에 새 띠를 만들 수 있다 — 책 앞쪽 도식부터 차례로 여백을 정한다
-                        # 판단 기준 = (배치 외 오류, −첫 문제 쪽, 문제 수, 쪽 수): 앞쪽 문제를 뒤로 밀어내며 차례로 정하고, 끝에 원래 배치와 문제 수로 비교한다.
-                        if any("좁은 띠" in e for e in errs):
-                            def pkey(es: list[str], pages: int) -> tuple:
-                                le = layout_err(es)
-                                first = min([int(m.group(1)) for e in le for m in [re.match(r"(\d+)쪽", e)] if m] or [10 ** 6])
-                                return (len(es) - len(le), -first, len(le), pages)
-                            before = (len(layout_err(errs)) + 100 * (len(errs) - len(layout_err(errs))), npg, best[2])
-                            cur = (pkey(errs, npg), dict(best[2]))
-                            for u in units:
-                                if (infos.get(u.anchor, {}).get("diagram") or {}).get("place") != "full":
-                                    continue
-                                for pad in (14, 28, 42):
-                                    tried += 1
-                                    trial = dict(cur[1], **{u.anchor + "#pad": pad})
-                                    e2, n2, p2, i2, g2 = render_once(trial, passes=1)
-                                    if pkey(e2, g2) < cur[0]:
-                                        cur = (pkey(e2, g2), trial)
-                                if cur[0][2] == 0:
-                                    break
-                            if (cur[0][2] + 100 * cur[0][0], cur[0][3]) < before[:2]:
-                                best = (cur[0][2] + 100 * cur[0][0], cur[0][3], cur[1])
-                            errs, notes, pm, infos, npg = render_once(best[2])
-                        run.setdefault("layout_trials", {})[title] = {"tried": tried, "diagram_after_section": best[2]}
-                        # 어떤 배치로도 없애지 못한 빈 공간은 책 전체를 막지 않고 참고로 남긴다(이전 판형의 책이 계속 남는 편이 더 나쁘다)
-                        left = layout_err(errs)
-                        if left:
-                            errs = [e for e in errs if e not in left]
-                            notes = notes + [f"배치 탐색 뒤에도 남은 빈 공간: {e}" for e in left]
+                    def pdf_trial(pos: dict) -> tuple[list, int, dict, dict]:
+                        e2, _, p2, i2, g2 = render_once(pos, passes=1)
+                        return e2, g2, i2, p2
+
+                    layout_err = bl.layout_errors
+                    mode = "search" if title in (cfg.get("layout_search") or []) else layout
+                    pos: dict = {}
+                    tried, searched, surprise, fell_back = 0, False, [], ""
+                    book = None
+                    if mode == "measure":
+                        # 한 번 올려 재는 배치 — 책을 Chromium 에 올려 두고 바뀐 단원만 갈아 끼워 잰다. PDF 는 고른 배치로만 그린다.
+                        try:
+                            if "error" in probe:        # 탐침이 한 번 실패한 환경 — 책마다 다시 해 보지 않는다
+                                raise RuntimeError(probe["error"])
+                            if "box" not in probe:
+                                try:
+                                    probe["box"] = bl.print_box(lambda h_, p_: render_pdf(browser, h_, p_, ""), PAGE)
+                                except Exception as e:
+                                    probe["error"] = f"쪽 상자 탐침 실패 — {type(e).__name__}: {e}"
+                                    raise RuntimeError(probe["error"])
+                            book = MeasuredBook(browser, probe["box"], title, units, cfg, questions, meta, fonts, changes)
+                            e0, g0, i0, p0 = book.evaluate({})
+                            pred, ppm = e0, p0
+                            if layout_err(e0):
+                                searched = True
+                                pos, tried = search_placement(units, book.evaluate, (e0, g0, i0, p0), prune=True)
+                                pred, g1, i1, ppm = book.evaluate(pos)
+                                if any("좁은 띠" in e for e in pred):
+                                    pos, t2 = settle_bands(units, book.evaluate, (pred, g1, i1, ppm), pos, prune=True)
+                                    tried += t2
+                                    pred, g1, i1, ppm = book.evaluate(pos)
+                        except Exception as e:          # 측정이 안 되는 책 · 환경 — 지금까지의 탐색(PDF 로 그려 보기)으로 되돌아간다
+                            fell_back = f"{type(e).__name__}: {str(e)[:160]}"
+                            mode, pos, tried, searched = "search", {}, 0, False
+                        finally:
+                            if book:
+                                book.close()
+                    if mode == "measure":
+                        errs, notes, pm, infos, npg = render_once(pos, pm=ppm)
+                        # 측정이 예측하지 못한 배치 오류가 실제 PDF 에 있으면(측정은 큰 책에서 1% 안팎이 실제와 다르다) 그 쪽 둘레의
+                        # 단원만 지금까지의 탐색으로 — PDF 로 그려 보며 — 고친다. 예측했던 오류는 측정 탐색이 이미 선택지를 다 써 본 것이다.
+                        known = {bl.error_key(e) for e in layout_err(pred)}
+                        surprise = [e for e in layout_err(errs) if bl.error_key(e) not in known]
+                        if surprise:
+                            searched = True
+                            near = units_near(units, pm, [bl.error_key(e)[0] for e in surprise])
+                            pos2, t2 = search_placement(units, pdf_trial, (errs, npg, infos, pm), pos0=pos, prune=True, only=near,
+                                                        budget=REPAIR_RENDERS,
+                                                        goal=lambda es: all(bl.error_key(e) in known for e in layout_err(es)))
+                            tried += t2
+                            pos = pos2
+                            if t2:                      # 시도들이 임시 PDF 를 덮어썼다 — 고른 배치로 다시 그린다
+                                errs, notes, pm, infos, npg = render_once(pos, pm=pm)
+                    else:
+                        errs, notes, pm, infos, npg = render_once(pos)
+                        if layout_err(errs):
+                            # 큰 도식이 전체 너비 표 바로 뒤에 오면 쪽 끝의 남은 높이에 못 들어가 다음 쪽으로 밀린다 —
+                            # 도식을 다른 절 뒤로 옮겨 가며 빈 공간이 가장 적은 배치를 고른다(단원 내용 순서는 그대로).
+                            searched = True
+                            pos, tried = search_placement(units, pdf_trial, (errs, npg, infos, pm))
+                            # 마지막: 고른 배치 위에서도 두 단 도식 아래 좁은 띠가 남으면 그 도식 아래 여백으로 넘긴다(자리·축소를 바꾼 뒤라 다시 본다)
+                            errs, notes, pm, infos, npg = render_once(pos)
+                            if any("좁은 띠" in e for e in errs):
+                                pos, t2 = settle_bands(units, pdf_trial, (errs, npg, infos, pm), pos)
+                                tried += t2
+                                errs, notes, pm, infos, npg = render_once(pos)
+                    run.setdefault("renders", {})[title] = stats["renders"]
+                    if searched or fell_back:
+                        rec = {"mode": mode, "tried": tried, "renders": stats["renders"], "diagram_after_section": pos}
+                        if surprise:
+                            rec["unpredicted"] = surprise[:8]
+                        if fell_back:
+                            rec["measure_failed"] = fell_back
+                        run.setdefault("layout_trials", {})[title] = rec
+                    # 어떤 배치로도 없애지 못한 빈 공간은 책 전체를 막지 않고 참고로 남긴다(이전 판형의 책이 계속 남는 편이 더 나쁘다)
+                    left = layout_err(errs)
+                    if left:
+                        errs = [e for e in errs if e not in left]
+                        notes = notes + [f"배치 탐색 뒤에도 남은 빈 공간: {e}" for e in left]
                     run["validation"][title] = errs
                     run["notes"][title] = notes
                     if errs:
@@ -1416,6 +1613,8 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--out")
     ap.add_argument("--preview", action="store_true")
     ap.add_argument("--upload", action="store_true", help="검증을 통과한 책을 Google Drive 에 갱신")
+    ap.add_argument("--layout", choices=["measure", "search"],
+                    help="배치를 정하는 방식 — measure(기본: 한 번 올려 재기) · search(선택지마다 PDF 로 그려 보기 — 느리다)")
     ap.add_argument("--fail-on", help=argparse.SUPPRESS)
     a = ap.parse_args(argv)
     cfg = load_config()
@@ -1428,8 +1627,14 @@ def main(argv: list[str]) -> int:
         events = ll.read_events(ll.SYNC_FILE)
     out_dir = Path(a.out) if a.out else ROOT / cfg.get("out_dir", "build/books")
     state_dir = Path(a.state_dir)
-    run = build(cfg, events, state_dir, out_dir, force=a.force, only=a.only, want_preview=a.preview, fail_on=a.fail_on)
+    run = build(cfg, events, state_dir, out_dir, force=a.force, only=a.only, want_preview=a.preview, fail_on=a.fail_on,
+                layout=a.layout)
     print(json.dumps({k: run[k] for k in ("result", "built", "skipped", "failed", "retry")}, ensure_ascii=False, indent=1))
+    for t, n in (run.get("renders") or {}).items():
+        lt = (run.get("layout_trials") or {}).get(t) or {}
+        print(f"  배치 {t}: PDF {n}번" + (f" · {lt.get('mode')} 탐색 {lt.get('tried')}번" if lt else "")
+              + (f" · 측정 실패 → 옛 탐색({lt['measure_failed']})" if lt.get("measure_failed") else "")
+              + (f" · 예측에 없던 오류 {len(lt['unpredicted'])}건을 PDF 로 고침" if lt.get("unpredicted") else ""))
     for t, errs in run.get("validation", {}).items():
         print(f"  검증 {t}: {'통과' if not errs else errs}")
     for t, ns in run.get("notes", {}).items():
