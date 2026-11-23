@@ -15,6 +15,12 @@
    흐려지지 않게 하고(Safari 는 캔버스를 품은 transform 층을 저해상도 그림으로 굳혀 늘린다), 조각을 화면 512 px 격자로 바꿔 확대해도
    선명하다 · 정리본은 두 단으로 한 화면에(▥ 두 단) · 두 손가락 확대 축소(Ctrl + 휠) · 가는 펜(0.5 부터) · 정리본은 늘 최신판 위에 필기.
 
+   6판 = 필기 엔진 2(2026-11-23 「느리다 · 굿노트 · 노타빌리티만큼」): 쓰는 동안 DOM 을 재지 않고(자리 값은 획 시작 때 한 번), 덧층은 앞에 그린
+   네모만 지우고, 볼펜은 마디마다 곡선 하나 · 만년필은 띠 한 번 채우기로 그린다 · 떨림 보정(1-Euro) · 예측 점 · 형광펜은 곱하기로 섞는 따로 된 층
+   (덧칠해도 글자가 검다) + 자동 수평 직선 + 형광펜만 지우기 · 도구 도크(볼펜 / 만년필 / 형광펜 / 지우개 / 레이저) · 빠른 색 6 · 펜 24색 · 형광펜 10색 ·
+   굵기 3칸 + 슬라이더 · 지우개 크기 · 다시실행(두 손가락 톡 = 되돌리기 · 세 손가락 톡 = 다시실행) · 코넬 여백(정리본 오른쪽 덩이 "m").
+   저장 형식(doc.s)은 그대로다 — 「색 · 굵기 ▸ 필기 엔진 ▸ 이전 엔진」으로 3판 그리기로 되돌릴 수 있다(기기에서 확인되면 없앤다).
+
    - 펜슬 = 쓰기 · 손가락 = 화면 넘기기(「손가락 쓰기」를 켜면 손가락도 쓴다 — 그때는 두 손가락으로 넘긴다).
    - 필기는 획(벡터)으로 저장한다. 종이 폭을 820 으로 고정해 놓고 화면에 맞춰 통째로 늘이므로 기기가 달라도 같은 자리에 보인다.
      획의 세로 위치는 「문항 / 선지 / 해설 / 여백」 가운데 시작한 덩이의 윗변에서 잰다 — 글꼴이 달라 문항이 한 줄 길어져도
@@ -31,10 +37,18 @@ var MEDKOS_INK = (function () {
   const TPX = 512;               // 필기 층을 화면 512 px 정사각 캔버스 조각의 격자로 나눈다(확대해도 조각 화소 수가 같다 — iOS 캔버스 한도)
   const PAPER0 = 900, PAPER_STEP = 600;
   const SALT = "medkos-ink-v1";
-  const COLORS = ["#1b2430", "#6b7280", "#d92d20", "#e8710a", "#b7791f", "#0f8a4f", "#0e7490", "#1d4ed8", "#4338ca", "#7c3aed", "#db2777", "#7c4a2d"];
-  const HLS = ["#f5c518", "#7ddc6f", "#ff8fb3", "#7cc4ff", "#ffb347"];      // 형광펜
+  // 펜 색 24(필기 엔진 2 · 2026-11-23) — 무채색 4 · 갈색 2 · 빨강~노랑 5 · 초록~청록 4 · 파랑~남색 4 · 보라~분홍 5. 밝은 종이 위에서 읽히는 진하기만 골랐다.
+  const COLORS = ["#1b2430", "#4b5563", "#6b7280", "#9ca3af", "#7c4a2d", "#a16207", "#be123c", "#d92d20", "#e8710a", "#b7791f", "#ca8a04", "#4d7c0f",
+                  "#0f8a4f", "#0d9488", "#0e7490", "#0284c7", "#1d4ed8", "#1e3a8a", "#4338ca", "#7c3aed", "#a21caf", "#db2777", "#f43f5e", "#0f766e"];
+  const HLS = ["#f5c518", "#ffe066", "#ffb347", "#ff8fb3", "#fda4af", "#d8b4fe", "#a5b4fc", "#7cc4ff", "#7ddc6f", "#a7f3d0"];      // 형광펜 10
   const WIDTHS = [0.5, 0.8, 1.2, 1.8, 2.6, 4.0];                // 종이 px — 두 단 보기(종이를 줄여 본다)에서도 가는 선이 나오게 0.5 부터
-  const QUICK = ["#1b2430", "#d92d20", "#1d4ed8", "#0f8a4f"];             // 막대에 늘 보이는 색(쓴 색이 앞으로 온다)
+  const W_MIN = 0.3, W_MAX = 6;                                 // 굵기 미세 조절(슬라이더)의 범위
+  const QUICK = ["#1b2430", "#d92d20", "#1d4ed8", "#0f8a4f", "#7c3aed", "#e8710a"];             // 막대에 늘 보이는 빠른 색 6칸(쓴 색이 앞으로 온다)
+  const NQUICK = 6;
+  const ERASE_SIZES = [8, 16, 30], ERASE_MIN = 6, ERASE_MAX = 44;      // 지우개 지름(종이 px) — 소 · 중 · 대 + 미세 조절
+  const MARGIN_W = 352;                                         // 코넬 여백(정리본 오른쪽 줄노트) — 종이 820 + 352 ≈ 전체의 30 %
+  const LASER_MS = 2500;                                        // 레이저 포인터가 사라지는 시간
+  const EURO = [4, 0.06, 10];                                   // 떨림 보정(1-Euro): 차단 주파수 Hz · 빠르기 계수 · 빠르기 추정 차단 Hz
 
   /* ───────── 순수 함수: 획 압축 · 병합 ───────── */
   // pts = [x, y, p, x, y, p, …] (논리 px · 압력 0~1) → 정수 차분 배열(좌표 ×10 · 압력 ×31)
@@ -165,7 +179,161 @@ var MEDKOS_INK = (function () {
     return "lk1-" + b64(new Uint8Array(bits)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
   }
 
-  const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal, loginKey, snapOf, snapStale, changedParts, sigOf };
+  /* ───────── 순수 함수: 필기감(2026-11-23 필기 엔진 2 — vNext Phase 2) ─────────
+     화면 · 캔버스를 쓰지 않는다 — pipelines/test_ink.py 가 node 로 시험한다. */
+
+  // 1-Euro 필터(Casiez 2012) — 느리게 쓸 때는 떨림을 누르고(차단 주파수 minCut), 빠를수록 차단 주파수를 올려 따라붙는다(+ beta × 빠르기).
+  // 두 축에 같은 빠르기(벡터 크기)를 쓴다 — 한글의 꺾임(ㄱ · ㄴ · ㅁ)에서 한 축만 느려져 모서리가 둥글어지지 않게.
+  // 좌표는 화면 px, 시간은 ms. 돌려주는 값 [x, y].
+  function euroNew(minCut, beta, dCut) { return { minCut: minCut, beta: beta, dCut: dCut || 1, x: null, y: 0, vx: 0, vy: 0, t: 0 }; }
+  function euroAlpha(cut, dt) { return 1 / (1 + 1 / (2 * Math.PI * cut * dt)); }
+  function euroStep(f, x, y, t) {
+    if (f.x == null) { f.x = x; f.y = y; f.vx = f.vy = 0; f.t = t; return [x, y]; }
+    let dt = (t - f.t) / 1000;
+    if (!(dt > 1 / 480)) dt = 1 / 480;                            // 같은 시각이거나 너무 붙은 점(묶여 온 입력) — 점을 잃지 않게 아래를 막는다
+    f.t = t;
+    const ad = euroAlpha(f.dCut, dt);
+    f.vx += ad * ((x - f.x) / dt - f.vx);
+    f.vy += ad * ((y - f.y) / dt - f.vy);
+    const a = euroAlpha(f.minCut + f.beta * Math.hypot(f.vx, f.vy), dt);
+    f.x += a * (x - f.x);
+    f.y += a * (y - f.y);
+    return [f.x, f.y];
+  }
+
+  // 획의 가운데 길을 잘게 나눈 표본 [x, y, w, …] — 이웃한 두 점의 가운데에서 가운데로, 그 사이 점을 당김점으로 하는 곡선(3판과 같은 길).
+  // 한 마디(ax,ay → bx,by · 당김점 cx,cy · 굵기 wa → wb)를 step 길이로 나눈다. 첫 점(ax,ay)은 넣지 않는다(앞 마디의 끝과 같다).
+  function curveSamples(out, ax, ay, cx, cy, bx, by, wa, wb, step) {
+    const len = Math.hypot(cx - ax, cy - ay) + Math.hypot(bx - cx, by - cy);
+    const k = Math.max(1, Math.min(64, Math.ceil(len / step)));
+    for (let j = 1; j <= k; j++) {
+      const t = j / k, u = 1 - t;
+      out.push(u * u * ax + 2 * u * t * cx + t * t * bx, u * u * ay + 2 * u * t * cy + t * t * by, wa + (wb - wa) * t);
+    }
+    return out;
+  }
+  // 획 전체의 표본. pts = [x, y, p, …], ws = 점마다의 굵기. 쓰는 동안 마디마다 그린 것을 이어 붙인 것과 같은 점들이 나온다.
+  function strokeSamples(pts, ws, step, dx, dy) {
+    const n = pts.length / 3, out = [];
+    dx = dx || 0; dy = dy || 0;
+    if (n < 1) return out;
+    let ax = pts[0] + dx, ay = pts[1] + dy, wa = ws[0];
+    out.push(ax, ay, wa);
+    if (n === 1) return out;
+    for (let i = 1; i < n - 1; i++) {
+      const mx = (pts[i * 3] + pts[i * 3 + 3]) / 2 + dx, my = (pts[i * 3 + 1] + pts[i * 3 + 4]) / 2 + dy, wm = (ws[i] + ws[i + 1]) / 2;
+      curveSamples(out, ax, ay, pts[i * 3] + dx, pts[i * 3 + 1] + dy, mx, my, wa, wm, step);
+      ax = mx; ay = my; wa = wm;
+    }
+    const lx = pts[(n - 1) * 3] + dx, ly = pts[(n - 1) * 3 + 1] + dy;
+    curveSamples(out, ax, ay, (ax + lx) / 2, (ay + ly) / 2, lx, ly, wa, n === 2 ? ws[1] : ws[n - 1], step);
+    return out;
+  }
+  // 만년필 — 굵기가 변하는 획을 **띠**(왼쪽 가장자리를 따라갔다가 오른쪽 가장자리로 돌아오는 닫힌 도형)와 원으로 바꾼다.
+  // 캔버스에서는 이것을 한 길(path)에 담아 **한 번만 채운다**(3판은 마디를 96 조각으로 나눠 조각마다 stroke 를 불렀다).
+  //   [0, x, y, r] = 원(획의 양 끝 · 급하게 꺾인 곳)     [2, x0, y0, x1, y1, …] = 띠
+  // 마디마다 사다리꼴을 따로 두지 않는 까닭: 맞닿은 변에 가는 실금이 보인다(GPU 가 도형마다 가장자리를 흐리게 그린다).
+  // 60도 넘게 꺾이는 곳에서는 띠를 끊고 원으로 잇는다 — 한 띠 안에서 왼쪽 · 오른쪽이 뒤집히면(되짚어 긋는 획) 겹친 곳이 비기 때문이다.
+  // 띠와 원은 모두 같은 방향(화면에서 시계 방향)으로 감는다 — nonzero 채우기에서 겹쳐도 구멍이 나지 않는다.
+  // 표본 s = [x, y, w, …] (w = 굵기 · 반지름은 w/2).
+  function ribbon(s, capStart, capEnd) {
+    const n = s.length / 3, out = [];
+    if (!n) return out;
+    const R = (i) => Math.max(0.2, s[i * 3 + 2] / 2);
+    if (capStart !== false) out.push([0, s[0], s[1], R(0)]);
+    // 마디의 방향(길이 0 인 마디는 앞 방향을 물려받는다)
+    const dx = new Array(n), dy = new Array(n);
+    let px = 1, py = 0, any = false;
+    for (let i = 1; i < n; i++) {
+      let x = s[i * 3] - s[i * 3 - 3], y = s[i * 3 + 1] - s[i * 3 - 2];
+      const L = Math.hypot(x, y);
+      if (L > 1e-6) { px = x / L; py = y / L; any = true; }
+      dx[i] = px; dy[i] = py;
+    }
+    if (!any) return out;                                          // 점 하나짜리 — 원만
+    dx[0] = dx[1]; dy[0] = dy[1];
+    let left = [], right = [];
+    const edge = (i, ux, uy) => {                                  // 방향 (ux, uy) 의 왼쪽 법선 = (-uy, ux). 띠는 (p - n·r) 쪽으로 갔다가 (p + n·r) 쪽으로 돌아온다
+      const r = R(i), x = s[i * 3], y = s[i * 3 + 1];
+      left.push(x + uy * r, y - ux * r);
+      right.push(x - uy * r, y + ux * r);
+    };
+    const flush = () => {
+      if (left.length >= 4) {
+        const poly = [2].concat(left);
+        for (let k = right.length - 2; k >= 0; k -= 2) poly.push(right[k], right[k + 1]);
+        out.push(poly);
+      }
+      left = []; right = [];
+    };
+    edge(0, dx[1], dy[1]);
+    for (let i = 1; i < n; i++) {
+      const last = i === n - 1;
+      const ox = last ? dx[i] : dx[i + 1], oy = last ? dy[i] : dy[i + 1];      // 나가는 방향
+      const dot = dx[i] * ox + dy[i] * oy;
+      if (!last && dot < 0.5) {                                    // 급한 꺾임 — 들어온 방향으로 띠를 닫고, 원으로 덮고, 나가는 방향으로 새 띠
+        edge(i, dx[i], dy[i]); flush();
+        out.push([0, s[i * 3], s[i * 3 + 1], R(i)]);
+        edge(i, ox, oy);
+      } else {                                                     // 완만한 굽이 — 두 방향의 가운데(틈 없이 이어진다)
+        let mx = dx[i] + ox, my = dy[i] + oy;
+        const L = Math.hypot(mx, my) || 1;
+        edge(i, mx / L, my / L);
+      }
+    }
+    flush();
+    if (capEnd !== false) out.push([0, s[(n - 1) * 3], s[(n - 1) * 3 + 1], R(n - 1)]);
+    return out;
+  }
+  // 띠의 감는 방향(신발끈 공식) — 화면 좌표(y 가 아래로)에서 시계 방향이면 양수. 시험이 「모두 같은 방향」을 본다.
+  function polyTurn(q) {
+    let a = 0;
+    const m = (q.length - 1) / 2;
+    for (let i = 0; i < m; i++) { const j = (i + 1) % m; a += q[1 + i * 2] * q[2 + j * 2] - q[1 + j * 2] * q[2 + i * 2]; }
+    return a;
+  }
+  // 굵기가 한결같은 획인가(볼펜 · 직선) — 그러면 길 하나를 한 번에 긋는다.
+  function evenStroke(pts) {
+    for (let i = 5; i < pts.length; i += 3) if (pts[i] !== pts[2]) return false;
+    return true;
+  }
+  // 형광펜 자동 직선 — 거의 가로로 그은 획이면 평균 높이의 수평선 두 점으로 편다(아니면 null). 글줄에 밑줄 · 칠하기를 반듯하게.
+  function straightenH(pts) {
+    const n = pts.length / 3;
+    if (n < 2) return null;
+    const x0 = pts[0], x1 = pts[(n - 1) * 3], dx = Math.abs(x1 - x0);
+    if (dx < 24) return null;
+    let sum = 0, lo = 1e9, hi = -1e9, back = 0;
+    for (let i = 0; i < n; i++) {
+      const y = pts[i * 3 + 1];
+      sum += y; lo = Math.min(lo, y); hi = Math.max(hi, y);
+      if (i && (pts[i * 3] - pts[i * 3 - 3]) * (x1 - x0) < 0) back += Math.abs(pts[i * 3] - pts[i * 3 - 3]);
+    }
+    if (hi - lo > Math.max(7, dx * 0.07) || back > dx * 0.2) return null;      // 위아래로 흔들렸거나 되돌아간 획은 그대로 둔다
+    const y = Math.round(sum / n * 10) / 10;
+    return [x0, y, 0.5, x1, y, 0.5];
+  }
+  // 되돌리기 · 다시실행의 한 걸음 — doc 을 고치고 **그 반대 걸음**을 돌려준다(되돌리기 더미 ↔ 다시실행 더미가 서로 주고받는다).
+  //   { add: sid } = 그 획을 뺀다(묘비를 남긴다) → { put: 획 }      { put: 획 } = 그 획을 새 id 로 넣는다 → { add: 새 sid }
+  // 지운 획을 되살릴 때 새 id 를 쓰는 것은 옛 id 에 묘비가 있어서다(다른 기기와 합칠 때 되살아난 획이 다시 지워지지 않게).
+  function histApply(doc, op, newId, now) {
+    if (op && op.add) {
+      const s = doc.s[op.add];
+      if (!s) return null;
+      delete doc.s[op.add];
+      doc.g[op.add] = now || new Date().toISOString();
+      return { put: s, was: op.add };
+    }
+    if (op && op.put) {
+      const sid = newId();
+      doc.s[sid] = op.put;
+      return { add: sid };
+    }
+    return null;
+  }
+
+  const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal, loginKey, snapOf, snapStale, changedParts, sigOf,
+                 euroNew, euroStep, curveSamples, strokeSamples, ribbon, polyTurn, evenStroke, straightenH, histApply, COLORS, HLS, EURO };
   if (typeof document === "undefined") return core;          // node 시험 — 아래는 화면이 있을 때만
 
   /* ───────── 기기 저장소(IndexedDB · 없으면 메모리) ───────── */
@@ -307,17 +475,30 @@ var MEDKOS_INK = (function () {
   /* ───────── 화면 ───────── */
   const UI = {
     el: null, rec: null, rt: {}, geo: {}, tiles: new Map(), s: 1, q: 1, zoom: 1, TL: TPX, pinch: null, sheetH: 0, SW: W, step: 1,
-    tool: loadTool(), undo: [], mine: {}, st: null, saveT: null, pushT: null, raf: 0, lastPen: 0, act: null, dirtyTiles: null,
+    tool: loadTool(), undo: [], redo: [], mine: {}, st: null, saveT: null, pushT: null, raf: 0, lastPen: 0, act: null, dirtyTiles: null,
+    htiles: new Map(),          // 형광펜 조각(펜 조각 아래 · 곱하기 섞기) — 엔진 2 에서만
+    rc: null,                   // 쓰는 동안 쓰는 자리 값(필기 층 · 화면의 위치와 배율) — 한 번 재서 스크롤 · 배치가 바뀔 때까지 쓴다
+    tip: null,                  // 덧층에 그려 둔 잠깐 것(펜 끝 · 지우개 원 · 직선 미리보기)의 자리 — 다음에 그 네모만 지운다
+    laser: [], laserRaf: 0, hasHl: false, hasM: false,
   };
+  function hexColor(c) { return typeof c === "string" && /^#[0-9a-f]{6}$/i.test(c); }
+  function clampW(w) { return Math.max(W_MIN, Math.min(W_MAX, Math.round(Number(w) * 10) / 10)); }
   function loadTool() {
     let t = {};
     try { t = JSON.parse(localStorage.getItem("medkos_ink_tool") || "{}") || {}; } catch (e) { t = {}; }
-    const hex = (c) => typeof c === "string" && /^#[0-9a-f]{6}$/i.test(c);
-    const recent = (Array.isArray(t.recent) ? t.recent.filter(hex) : []).concat(QUICK).filter((c, i, l) => l.indexOf(c) === i).slice(0, 4);
-    return { kind: t.kind === "hl" || t.kind === "erase" ? t.kind : "pen", color: hex(t.color) ? t.color : COLORS[0],
-             hlColor: HLS.indexOf(t.hlColor) >= 0 ? t.hlColor : HLS[0], width: WIDTHS.indexOf(t.width) >= 0 ? t.width : WIDTHS[2],
-             line: !!t.line, side: t.side !== false, cols: t.cols !== false, even: t.even !== false, finger: !!t.finger, recent };
+    const hex = hexColor;
+    const recent = (Array.isArray(t.recent) ? t.recent.filter(hex) : []).concat(QUICK).filter((c, i, l) => l.indexOf(c) === i).slice(0, NQUICK);
+    const wslots = Array.isArray(t.wslots) && t.wslots.length === 3 && t.wslots.every((w) => w >= W_MIN && w <= W_MAX) ? t.wslots.map(clampW) : [0.8, 1.2, 2.6];
+    return { kind: ["hl", "erase", "laser"].indexOf(t.kind) >= 0 ? t.kind : "pen", color: hex(t.color) ? t.color : COLORS[0],
+             hlColor: hex(t.hlColor) ? t.hlColor : HLS[0], width: t.width >= W_MIN && t.width <= W_MAX ? clampW(t.width) : WIDTHS[2], wslots,
+             line: !!t.line, side: t.side !== false, cols: t.cols !== false, even: t.even !== false, finger: !!t.finger, recent,
+             eraseD: t.eraseD >= ERASE_MIN && t.eraseD <= ERASE_MAX ? Math.round(t.eraseD) : ERASE_SIZES[1],
+             hlOnly: !!t.hlOnly,                 // 지우개 — 형광펜만 지운다
+             hlStraight: t.hlStraight !== false, // 형광펜 — 거의 가로로 그으면 수평선으로 편다
+             margin: !!t.margin,                 // 정리본 오른쪽 코넬 여백
+             engine: t.engine === 1 ? 1 : 2 };   // 2 = 새 필기 엔진(기본) · 1 = 이전 엔진(기기에서 문제가 보이면 되돌리는 스위치)
   }
+  const eng2 = () => UI.tool.engine !== 1;
   function saveTool() { try { localStorage.setItem("medkos_ink_tool", JSON.stringify(UI.tool)); } catch (e) { /* 무시 */ } }
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const g = (name) => { try { return (0, eval)("typeof " + name + " !== 'undefined' ? " + name + " : undefined"); } catch (e) { return undefined; } };
@@ -386,6 +567,8 @@ var MEDKOS_INK = (function () {
       + PAPER_HTML;
   }
   const PAPER_HTML = `<div class="ink-block ink-paper" data-b="p"><span class="ink-ph">여기부터 내 필기 — 왜 틀렸나 · 헷갈린 점 · 다음에 볼 단서</span></div>`;
+  // 코넬 여백 — 정리본 오른쪽의 줄노트 칸(덩이 "m"). 종이 맨 위에서 맨 아래까지 한 칸이고, 여기에 쓴 필기는 이 칸의 왼쪽 위에서 잰다.
+  const MARGIN_HTML = `<div class="ink-block ink-margin" data-b="m"><span class="ink-ph">코넬 여백 — 질문 · 핵심어 · 내 말로 요약</span></div>`;
   // 개념 정리본 종이 — 앱의 정리본 그리기(learn.js)를 그대로 쓰고, 접힌 절을 모두 편다. 절마다 덩이 이름을 붙여
   // 정리본이 고쳐져 절이 늘거나 줄어도 다른 절의 필기가 밀리지 않게 한다(이름이 사라진 절의 필기는 맨 위 덩이로 간다).
   // 정리본 필기(2026-11-15 2차 — 「항상 최신판 위에 필기」) — 종이는 늘 **최신 정리본**이고 필기는 절 제목을 따라 그 위에 남는다.
@@ -435,7 +618,7 @@ var MEDKOS_INK = (function () {
     if (st.old && !n) st.old = false;
     const use = st.old ? n.c : (st.live || (n && n.c));
     st.snapAt = n ? n.at : "";
-    UI.content.innerHTML = noteBarHtml(st, n) + `<div class="ink-cn"></div>` + PAPER_HTML;
+    UI.content.innerHTML = noteBarHtml(st, n) + `<div class="ink-cn"></div>` + PAPER_HTML + (UI.tool.margin || UI.hasM ? MARGIN_HTML : "");
     const box = UI.content.querySelector(".ink-cn");
     try { if (use && L && typeof L.renderConcept === "function") L.renderConcept(box, st.id, null, null, use); } catch (e) { /* 아래 안내 */ }
     const art = box.querySelector("article");
@@ -457,12 +640,12 @@ var MEDKOS_INK = (function () {
     UI.content.querySelectorAll("img").forEach((im) => im.addEventListener("load", () => layout(false)));
     const d = UI.content.querySelector("details.ink-ex");
     if (d) {
-      d.addEventListener("toggle", () => { d.querySelector("summary").textContent = d.open ? "해설 접기" : "해설 펼치기"; layout(false); UI.tiles.forEach((t) => { t.stale = true; }); ensureTiles(); });
+      d.addEventListener("toggle", () => { d.querySelector("summary").textContent = d.open ? "해설 접기" : "해설 펼치기"; layout(false); allTiles((t) => { t.stale = true; }); ensureTiles(); });
       if (openExpl) d.open = true;
     }
     paintBar();
     layout(false);
-    UI.tiles.forEach((t) => { t.stale = true; });
+    allTiles((t) => { t.stale = true; });
     ensureTiles();
   }
   // 푸는 중에 보기를 골랐다 — 채점은 앱의 문항 화면이 한다(학습 기록 · 오답노트 저장이 한 곳에서만 일어나게).
@@ -490,34 +673,54 @@ var MEDKOS_INK = (function () {
     el.innerHTML = `<div class="ink-bar">
         <button data-a="close" class="ink-x">← 닫기</button>
         <span class="ink-tools">
+          <span class="ink-dock" role="toolbar" aria-label="필기 도구">
+            <button data-a="tool" data-k="ball" title="볼펜 — 고른 굵기(직선으로 그을 때와 같은 선)">볼펜</button>
+            <button data-a="tool" data-k="fountain" title="만년필 — 힘 · 빠르기에 따라 굵기가 변한다">만년필</button>
+            <button data-a="hl" title="형광펜 — 덧칠해도 아래 글자가 가려지지 않는다"><i class="ink-sw"></i>형광펜</button>
+            <button data-a="erase" title="지우개 — 크기와 「형광펜만 지우기」는 색 · 굵기에서">지우개</button>
+            <button data-a="tool" data-k="laser" title="레이저 포인터 — 저장되지 않고 2.5초 뒤 사라진다">레이저</button>
+          </span>
           <span class="ink-quick"></span>
-          <button data-a="pal" title="펜 색 · 굵기 · 형광펜 색">🎨 색 · 굵기</button>
-          <button data-a="hl"><i class="ink-sw"></i>형광펜</button>
-          <button data-a="erase">지우개</button>
-          <button data-a="line" title="직선 — 켜지 않아도 긋다가 잠깐 멈추면 직선으로 펴진다">📏 직선</button>
-          <button data-a="undo">↶</button>
-          <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">☝ 손가락 쓰기</button>
-          <button data-a="zout" class="ink-nav" aria-label="작게">−</button><button data-a="zin" class="ink-nav" aria-label="크게">＋</button>
-          <button data-a="zfit" class="ink-nav" title="화면 폭에 맞춤 — 두 손가락을 벌리고 오므려 확대 · 축소한다">⤢ 맞춤</button>
-          <button data-a="side" title="가로 화면 — 문항 옆에 여백을 나란히">⇆ 나란히</button>
-          <button data-a="cols" title="정리본을 책처럼 두 단으로 — 한 정리본이 한 화면에 들어온다">▥ 두 단</button>
-          <button data-a="more">여백 ＋</button>
-          <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">🔑 로그인(필기 맞추기)</button>
+          <span class="ink-wq"></span>
+          <button data-a="pal" title="펜 색 24 · 굵기 · 형광펜 색 10 · 지우개 크기">색 · 굵기</button>
+          <span class="ink-dock"><button data-a="undo" title="되돌리기 — 두 손가락으로 톡" aria-label="되돌리기">↶</button><button data-a="redo" title="다시실행 — 세 손가락으로 톡" aria-label="다시실행">↷</button></span>
+          <button data-a="menu" class="ink-nav" title="확대 · 배치 · 직선 · 손가락 쓰기 · 코넬 여백">보기</button>
           <button data-a="flag" title="맞혔어도 헷갈린 문항 — 개념 복습 · 정리본 큐에 넣는다">★ 정리본에 넣기</button>
           <button data-a="next" class="primary">다음 문항 →</button>
           <button data-a="cprev" class="ink-nav" title="학습서 목록의 앞 정리본">← 앞 정리본</button>
           <button data-a="cnext" class="ink-nav primary" title="학습서 목록의 다음 정리본">다음 정리본 →</button>
         </span>
         <span class="ink-st" id="inkStatus"></span>
-        <div class="ink-pal" hidden>
+        <div class="ink-pal" data-pop="pal" hidden>
           <div class="ink-pal-h">펜 색</div>
-          <div class="ink-pal-r">${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}</div>
-          <div class="ink-pal-h">획</div>
-          <div class="ink-pal-r"><button data-a="even" data-v="1">고른 굵기</button><button data-a="even" data-v="0">힘 · 빠르기에 따라</button></div>
-          <div class="ink-pal-h">굵기</div>
+          <div class="ink-pal-r ink-grid">${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}
+            <label class="ink-custom" title="직접 고른 색">직접<input type="color" data-in="custom" aria-label="직접 고른 펜 색" /></label></div>
+          <div class="ink-pal-h">굵기 — 막대의 세 칸 가운데 고른 칸을 조절한다</div>
           <div class="ink-pal-r">${WIDTHS.map((w) => `<button data-a="w" data-w="${w}" class="ink-wd" aria-label="굵기"><i style="height:${Math.max(1.5, w * 1.6)}px"></i></button>`).join("")}</div>
+          <div class="ink-pal-r"><input type="range" data-in="width" min="${W_MIN}" max="${W_MAX}" step="0.1" aria-label="굵기 미세 조절" /><span class="ink-val" data-val="width"></span></div>
           <div class="ink-pal-h">형광펜 색</div>
-          <div class="ink-pal-r">${HLS.map((c) => `<button data-a="hlc" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="형광펜 색"></button>`).join("")}</div>
+          <div class="ink-pal-r ink-grid">${HLS.map((c) => `<button data-a="hlc" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="형광펜 색"></button>`).join("")}</div>
+          <div class="ink-pal-r"><button data-a="hlstraight" title="거의 가로로 그으면 수평선으로 편다 — 글줄에 반듯하게 칠해진다">자동 수평 직선</button></div>
+          <div class="ink-pal-h">지우개</div>
+          <div class="ink-pal-r">${ERASE_SIZES.map((d, i) => `<button data-a="esize" data-d="${d}">${["소", "중", "대"][i]}</button>`).join("")}
+            <input type="range" data-in="erase" min="${ERASE_MIN}" max="${ERASE_MAX}" step="1" aria-label="지우개 크기 미세 조절" /><span class="ink-val" data-val="erase"></span></div>
+          <div class="ink-pal-r"><button data-a="hlonly" title="펜으로 쓴 글씨는 두고 형광펜만 지운다">형광펜만 지우기</button></div>
+          <div class="ink-pal-h">필기 엔진</div>
+          <div class="ink-pal-r"><button data-a="engine" data-v="2">새 엔진</button><button data-a="engine" data-v="1" title="새 엔진에서 선이 이상하거나 글자가 흐리면 이쪽으로 — 저장된 필기는 두 엔진에서 똑같이 열린다">이전 엔진</button></div>
+        </div>
+        <div class="ink-pal ink-menu" data-pop="menu" hidden>
+          <div class="ink-pal-h">확대</div>
+          <div class="ink-pal-r"><button data-a="zout" aria-label="작게">−</button><button data-a="zin" aria-label="크게">＋</button>
+            <button data-a="zfit" title="화면 폭에 맞춤 — 두 손가락을 벌리고 오므려 확대 · 축소한다">⤢ 맞춤</button></div>
+          <div class="ink-pal-h">배치</div>
+          <div class="ink-pal-r"><button data-a="side" title="가로 화면 — 문항 옆에 여백을 나란히">⇆ 나란히</button>
+            <button data-a="cols" title="정리본을 책처럼 두 단으로 — 한 정리본이 한 화면에 들어온다">▥ 두 단</button>
+            <button data-a="margin" title="정리본 오른쪽에 줄노트 여백(코넬 필기) — 질문 · 핵심어 · 내 말로 요약을 적는 칸">코넬 여백</button>
+            <button data-a="more">여백 ＋</button></div>
+          <div class="ink-pal-h">쓰기</div>
+          <div class="ink-pal-r"><button data-a="line" title="직선 — 켜지 않아도 긋다가 잠깐 멈추면 직선으로 펴진다">직선</button>
+            <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">손가락 쓰기</button>
+            <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">로그인(필기 맞추기)</button></div>
         </div>
       </div>
       <div class="ink-scroll"><div class="ink-fit"><div class="ink-sheet"><div class="ink-content"></div></div><div class="ink-layer"></div></div></div>
@@ -526,14 +729,19 @@ var MEDKOS_INK = (function () {
     UI.el = el;
     UI.scroll = el.querySelector(".ink-scroll"); UI.fit = el.querySelector(".ink-fit"); UI.sheet = el.querySelector(".ink-sheet");
     UI.content = el.querySelector(".ink-content"); UI.layer = el.querySelector(".ink-layer");
-    UI.live = el.querySelector(".ink-live"); UI.pal = el.querySelector(".ink-pal");
+    UI.live = el.querySelector(".ink-live"); UI.pal = el.querySelector('[data-pop="pal"]'); UI.menu = el.querySelector('[data-pop="menu"]');
+    // 형광펜 조각은 펜 조각 아래의 따로 된 층에 두고 곱하기로 섞는다(CSS mix-blend-mode) — 진하게 덧칠해도 아래 검은 글자가 그대로 보인다
+    UI.hlLayer = document.createElement("div");
+    UI.hlLayer.className = "ink-hl";
+    UI.layer.appendChild(UI.hlLayer);
     el.querySelector(".ink-bar").addEventListener("click", onBar);
+    el.querySelector(".ink-bar").addEventListener("input", onBarInput);
     UI.content.addEventListener("click", (e) => {
       const b = e.target.closest("[data-pick]"), nb = e.target.closest("[data-note-act]");
       if (b) pick(Number(b.getAttribute("data-pick")));
       else if (nb) noteAct(nb.getAttribute("data-note-act"));
     });
-    UI.scroll.addEventListener("scroll", () => schedule(ensureTiles), { passive: true });
+    UI.scroll.addEventListener("scroll", () => { UI.rc = null; schedule(ensureTiles); }, { passive: true });
     // 화면 폭이 바뀌면(돌리기 · 창 크기) 종이를 다시 맞춘다. 스크롤의 조각 그리기와 예약 칸을 따로 쓴다(서로 취소하지 않게).
     const refit = () => {
       if (!UI.rec || (UI.scroll.clientWidth === UI.fitW && UI.scroll.clientHeight === UI.fitH)) return;
@@ -548,19 +756,37 @@ var MEDKOS_INK = (function () {
   }
   function schedule(fn) { cancelAnimationFrame(UI.raf); UI.raf = requestAnimationFrame(fn); }
   function status(text, cls) { const el = document.getElementById("inkStatus"); if (el) { el.textContent = text; el.className = "ink-st " + (cls || ""); } }
-  function closePalette() { if (UI.pal) UI.pal.hidden = true; }
+  function closePalette() { if (UI.pal) UI.pal.hidden = true; if (UI.menu) UI.menu.hidden = true; }
+  const wSel = (t) => (t.wsel >= 0 && t.wsel < 3 ? t.wsel : 1);
   function paintBar() {
     const t = UI.tool, on = (sel, v) => UI.el.querySelector(sel).classList.toggle("on", !!v);
     UI.el.querySelector(".ink-quick").innerHTML = t.recent.map((c) =>
       `<button data-a="color" data-c="${c}" class="ink-dot${t.kind === "pen" && c === t.color ? " on" : ""}" style="--c:${c}" aria-label="펜 색"></button>`).join("");
+    // 굵기 세 칸 — 톡 치면 그 굵기로 쓰고, 고른 칸은 「색 · 굵기」의 슬라이더로 다듬는다
+    UI.el.querySelector(".ink-wq").innerHTML = t.wslots.map((w, i) =>
+      `<button data-a="wslot" data-i="${i}" class="ink-wd${t.kind === "pen" && i === wSel(t) && w === t.width ? " on" : ""}" title="굵기 ${w}" aria-label="굵기 ${w}"><i style="height:${Math.max(1.5, w * 1.6)}px"></i></button>`).join("");
     UI.pal.querySelectorAll("[data-a=color]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-c") === t.color));
     UI.pal.querySelectorAll("[data-a=hlc]").forEach((b) => b.classList.toggle("on", b.getAttribute("data-c") === t.hlColor));
-    UI.pal.querySelectorAll("[data-a=even]").forEach((b) => b.classList.toggle("on", (b.getAttribute("data-v") === "1") === t.even));
     UI.pal.querySelectorAll("[data-a=w]").forEach((b) => b.classList.toggle("on", Number(b.getAttribute("data-w")) === t.width));
+    UI.pal.querySelectorAll("[data-a=esize]").forEach((b) => b.classList.toggle("on", Number(b.getAttribute("data-d")) === t.eraseD));
+    UI.pal.querySelectorAll("[data-a=engine]").forEach((b) => b.classList.toggle("on", Number(b.getAttribute("data-v")) === (eng2() ? 2 : 1)));
+    UI.pal.querySelector("[data-in=custom]").value = t.color;
+    UI.pal.querySelector("[data-in=width]").value = String(t.width);
+    UI.pal.querySelector("[data-val=width]").textContent = t.width.toFixed(1);
+    UI.pal.querySelector("[data-in=erase]").value = String(t.eraseD);
+    UI.pal.querySelector("[data-val=erase]").textContent = t.eraseD + " px";
+    UI.el.querySelectorAll("[data-a=tool]").forEach((b) => {
+      const k = b.getAttribute("data-k");
+      b.classList.toggle("on", k === "laser" ? t.kind === "laser" : t.kind === "pen" && (k === "ball") === t.even);
+    });
     on("[data-a=hl]", t.kind === "hl"); on("[data-a=erase]", t.kind === "erase"); on("[data-a=line]", t.line);
     on("[data-a=finger]", t.finger); on("[data-a=side]", t.side); on("[data-a=cols]", t.cols);
+    on("[data-a=hlstraight]", t.hlStraight); on("[data-a=hlonly]", t.hlOnly); on("[data-a=margin]", t.margin);
     UI.el.querySelector(".ink-sw").style.background = t.hlColor;
     UI.el.querySelector("[data-a=undo]").disabled = !UI.undo.length;
+    UI.el.querySelector("[data-a=redo]").disabled = !UI.redo.length;
+    UI.el.querySelector("[data-a=margin]").hidden = !(UI.st && UI.st.kind === "concept");
+    UI.el.classList.toggle("eng1", !eng2());                        // 이전 엔진 — 형광펜 층을 쓰지 않는다
     UI.layer.style.touchAction = t.finger ? "none" : "pan-x pan-y";
     const st = UI.st || {}, L = g("LEARN"), fb = UI.el.querySelector("[data-a=flag]"), nb = UI.el.querySelector("[data-a=next]");
     const canFlag = st.kind === "q" && !st.solve && st.q && !st.q.isVariant && L && typeof L.setFlag === "function";
@@ -577,19 +803,38 @@ var MEDKOS_INK = (function () {
     if (!b) return;
     const a = b.getAttribute("data-a"), t = UI.tool;
     if (a === "close") return close();
-    if (a === "pal") { UI.pal.hidden = !UI.pal.hidden; return; }
-    if (a === "color") {
-      t.kind = "pen"; t.color = b.getAttribute("data-c");
-      if (t.recent.indexOf(t.color) < 0) t.recent = [t.color].concat(t.recent).slice(0, 4);
+    if (a === "pal" || a === "menu") {
+      const me = a === "pal" ? UI.pal : UI.menu, other = a === "pal" ? UI.menu : UI.pal;
+      other.hidden = true; me.hidden = !me.hidden;
+      return;
     }
-    else if (a === "w") { t.width = Number(b.getAttribute("data-w")); if (t.kind === "erase") t.kind = "pen"; }
-    else if (a === "even") t.even = b.getAttribute("data-v") === "1";
+    const keepOpen = ["color", "w", "hlc", "hlstraight", "hlonly", "esize", "zin", "zout"].indexOf(a) >= 0;
+    if (a === "color") pickColor(b.getAttribute("data-c"));
+    else if (a === "tool") {                                       // 볼펜 · 만년필 · 레이저
+      const k = b.getAttribute("data-k");
+      if (k === "laser") t.kind = t.kind === "laser" ? "pen" : "laser";
+      else { t.kind = "pen"; t.even = k === "ball"; }
+      clearLive();
+    }
+    else if (a === "w") setWidth(Number(b.getAttribute("data-w")));
+    else if (a === "wslot") { t.wsel = Number(b.getAttribute("data-i")); t.width = t.wslots[wSel(t)]; if (t.kind !== "pen") t.kind = "pen"; }
     else if (a === "hlc") { t.hlColor = b.getAttribute("data-c"); t.kind = "hl"; }
     else if (a === "hl") t.kind = t.kind === "hl" ? "pen" : "hl";
+    else if (a === "hlstraight") t.hlStraight = !t.hlStraight;
     else if (a === "erase") { t.kind = t.kind === "erase" ? "pen" : "erase"; clearLive(); }
+    else if (a === "esize") t.eraseD = Number(b.getAttribute("data-d"));
+    else if (a === "hlonly") t.hlOnly = !t.hlOnly;
+    else if (a === "engine") {                                     // 엔진을 바꾸면 조각을 전부 다시 그린다(형광펜 층을 쓰는지가 달라진다)
+      t.engine = b.getAttribute("data-v") === "1" ? 1 : 2;
+      saveTool(); paintBar(); closePalette();
+      if (UI.rec) { rebuildRuntime(); layout(true); }
+      return status(eng2() ? "새 필기 엔진" : "이전 필기 엔진");
+    }
     else if (a === "line") t.line = !t.line;
     else if (a === "finger") t.finger = !t.finger;
     else if (a === "undo") undo();
+    else if (a === "redo") redo();
+    else if (a === "margin") { t.margin = !t.margin; UI.zoom = 1; saveTool(); closePalette(); renderSheet(false); layout(true); return; }
     else if (a === "zin" || a === "zout" || a === "zfit") {
       const sr = UI.scroll.getBoundingClientRect(), fr = UI.fit.getBoundingClientRect(), cx = sr.left + sr.width / 2, cy = sr.top + sr.height / 3;
       zoomTo(a === "zfit" ? 1 : UI.zoom * (a === "zin" ? 1.25 : 0.8), (cx - fr.left) / UI.s, (cy - fr.top) / UI.s, cx, cy);
@@ -604,7 +849,28 @@ var MEDKOS_INK = (function () {
     }
     else if (a === "key") return openLogin(false);
     else if (a === "flag") { const L = g("LEARN"); L.setFlag(UI.st.q, "want_note", !L.flagsOf(UI.st.q).want_note); }
-    if (a !== "color" && a !== "w" && a !== "hlc" && a !== "even") closePalette();
+    if (!keepOpen) closePalette();
+    saveTool(); paintBar();
+  }
+  function pickColor(c) {
+    const t = UI.tool;
+    if (!hexColor(c)) return;
+    t.kind = "pen"; t.color = c.toLowerCase();
+    if (t.recent.indexOf(t.color) < 0) t.recent = [t.color].concat(t.recent).slice(0, NQUICK);
+  }
+  // 굵기를 바꾸면 막대에서 고른 칸(세 칸 중 하나)에 그 값이 들어간다 — 자주 쓰는 굵기 셋을 손에 맞게 둔다
+  function setWidth(w) {
+    const t = UI.tool;
+    t.width = clampW(w); t.wslots[wSel(t)] = t.width;
+    if (t.kind !== "pen") t.kind = "pen";
+  }
+  // 슬라이더 · 색 고르개(막대 안의 input) — 끄는 동안에는 값만 바꾸고, 팔레트는 열어 둔다
+  function onBarInput(e) {
+    const el = e.target, k = el && el.getAttribute && el.getAttribute("data-in"), t = UI.tool;
+    if (!k) return;
+    if (k === "custom") pickColor(el.value);
+    else if (k === "width") setWidth(Number(el.value));
+    else if (k === "erase") { t.eraseD = Math.max(ERASE_MIN, Math.min(ERASE_MAX, Math.round(Number(el.value)))); t.kind = "erase"; }
     saveTool(); paintBar();
   }
   /* 로그인 — 아이디 · 비밀번호로 이 기기의 동기화 키를 만든다(2026-11-15 사용자 「아이디 · 비밀번호가 맞으면 키가 자동으로 들어가게」).
@@ -731,7 +997,11 @@ var MEDKOS_INK = (function () {
     const cols = canCols && UI.tool.cols;
     UI.content.classList.toggle("cols", cols);
     UI.el.querySelector("[data-a=cols]").hidden = !canCols;
-    const SW = side ? 2 * W + GAP : cols ? 2 * W : W;
+    // 코넬 여백(2026-11-23) — 정리본 오른쪽에 줄노트 칸(덩이 이름 "m")을 붙인다. 절(덩이)의 자리와 폭은 그대로라 전에 쓴 필기가 밀리지 않는다.
+    // 여백에 쓴 필기가 있으면 꺼 두어도 보인다(안 보이면 잃어버린 줄 안다).
+    const mg = st.kind === "concept" && (UI.tool.margin || UI.hasM) ? MARGIN_W : 0;
+    UI.content.classList.toggle("margin", !!mg);
+    const SW = (side ? 2 * W + GAP : cols ? 2 * W : W) + mg;
     if (SW !== UI.SW) { UI.SW = SW; resetTiles = true; }
     UI.sheet.style.width = SW + "px";
     let base = Math.min((cw - 12) / SW, 1.5);
@@ -766,7 +1036,8 @@ var MEDKOS_INK = (function () {
     UI.fit.style.height = Math.ceil(UI.sheetH * UI.s) + "px";
     UI.layer.style.width = SW * UI.s + "px";
     UI.layer.style.height = UI.sheetH * UI.s + "px";
-    if (resetTiles) { dropTiles(); UI.scroll.scrollTop = keepTop * UI.s; } else UI.tiles.forEach((t) => { t.stale = true; });
+    UI.rc = null;                                                 // 자리 값은 다음 입력 때 다시 잰다
+    if (resetTiles) { dropTiles(); UI.scroll.scrollTop = keepTop * UI.s; } else allTiles((t) => { t.stale = true; });
     sizeLive();
     ensureTiles();
   }
@@ -781,7 +1052,26 @@ var MEDKOS_INK = (function () {
     ensureTiles();
   }
   function killTile(t) { t.c.width = t.c.height = 0; t.c.remove(); }
-  function dropTiles() { UI.tiles.forEach(killTile); UI.tiles.clear(); }
+  function dropTiles() { allTiles(killTile); UI.tiles.clear(); UI.htiles.clear(); }
+  function allTiles(fn) { UI.tiles.forEach(fn); UI.htiles.forEach(fn); }
+  // 형광펜 층(엔진 2) — 형광펜 획이 하나라도 있을 때만 조각을 만든다(없으면 메모리를 쓰지 않는다)
+  const useHl = () => eng2() && UI.hasHl;
+  function makeTile(map, parent, ix, iy, hl) {
+    const key = ix + "," + iy;
+    let t = map.get(key);
+    if (!t) {
+      const c = document.createElement("canvas");
+      c.className = "ink-tile";
+      c.style.left = ix * TPX + "px"; c.style.top = iy * TPX + "px"; c.style.width = c.style.height = TPX + "px";
+      const s = UI.s;
+      c.width = c.height = Math.max(1, Math.round(TPX * UI.q / s));
+      parent.appendChild(c);
+      t = { c, ix, iy, k: c.width / UI.TL, stale: true, hl: hl };
+      map.set(key, t);
+    }
+    if (t.stale) paintTile(t);
+    return t;
+  }
   // 보이는 곳(위아래로 한 줄 더)에만 조각을 둔다. 조각 = 화면 TPX 정사각, 화소는 TPX × 기기 배율 — 확대 배율과 무관하게 같은 메모리.
   function ensureTiles() {
     if (!UI.rec || UI.pinch) return;
@@ -789,26 +1079,20 @@ var MEDKOS_INK = (function () {
     const vx0 = (sr.left - fr.left) / s, vy0 = (sr.top - fr.top) / s, vx1 = vx0 + sr.width / s, vy1 = vy0 + sr.height / s;
     const x0 = Math.max(0, Math.floor(vx0 / TL)), x1 = Math.min(Math.ceil(UI.SW / TL) - 1, Math.floor(vx1 / TL));
     const y0 = Math.max(0, Math.floor(vy0 / TL) - 1), y1 = Math.min(Math.ceil(UI.sheetH / TL) - 1, Math.floor(vy1 / TL) + 1);
-    UI.tiles.forEach((t, k) => { if (t.ix < x0 || t.ix > x1 || t.iy < y0 || t.iy > y1) { killTile(t); UI.tiles.delete(k); } });
+    const hl = useHl();
+    [UI.tiles, UI.htiles].forEach((map) => map.forEach((t, k) => {
+      if (t.ix < x0 || t.ix > x1 || t.iy < y0 || t.iy > y1 || (t.hl && !hl)) { killTile(t); map.delete(k); }
+    }));
     for (let iy = y0; iy <= y1; iy++) for (let ix = x0; ix <= x1; ix++) {
-      const key = ix + "," + iy;
-      let t = UI.tiles.get(key);
-      if (!t) {
-        const c = document.createElement("canvas");
-        c.className = "ink-tile";
-        c.style.left = ix * TPX + "px"; c.style.top = iy * TPX + "px"; c.style.width = c.style.height = TPX + "px";
-        c.width = c.height = Math.max(1, Math.round(TPX * UI.q / s));
-        UI.layer.appendChild(c);
-        t = { c, ix, iy, k: c.width / TL, stale: true };
-        UI.tiles.set(key, t);
-      }
-      if (t.stale) paintTile(t);
+      makeTile(UI.tiles, UI.layer, ix, iy, false);
+      if (hl) makeTile(UI.htiles, UI.hlLayer, ix, iy, true);
     }
   }
   const NOWHERE = { x: 0, y: 0, w: W, h: 0 };
   const org = (b) => UI.geo[b] || UI.geo[UI.first] || NOWHERE;                     // 이름이 사라진 덩이의 필기는 맨 위 덩이로
   const veiled = (sid) => UI.hideOld && !UI.mine[sid];                              // 푸는 중 — 전에 쓴 필기는 채점 뒤에
   function hiddenBlock(b) {
+    if (b === "m") return !UI.geo.m;                                // 코넬 여백이 없는 종이(문항 등)에서는 여백 필기를 그리지 않는다
     if (b !== "e") return false;
     const d = UI.content.querySelector("details.ink-ex");
     return !d || !d.open;
@@ -823,9 +1107,11 @@ var MEDKOS_INK = (function () {
     const ctx = tileCtx(t), TL = UI.TL, X0 = t.ix * TL, Y0 = t.iy * TL;
     t.stale = false;
     ctx.clearRect(X0 - 1, Y0 - 1, TL + 2, TL + 2);
+    const split = useHl();                                        // 형광펜 층이 있으면 형광펜은 그 층에만, 펜은 펜 층에만
     Object.keys(UI.rt).forEach((sid) => {
       const st = UI.rt[sid];
       if (hiddenBlock(st.b) || veiled(sid)) return;
+      if (split ? !!st.t !== !!t.hl : t.hl) return;
       const o = org(st.b), m = st.w + 12;
       if (o.y + st.y1 + m < Y0 || o.y + st.y0 - m > Y0 + TL || o.x + st.x1 + m < X0 || o.x + st.x0 - m > X0 + TL) return;
       drawStroke(ctx, st, o.x, o.y);
@@ -833,7 +1119,7 @@ var MEDKOS_INK = (function () {
   }
   function staleRect(x0, y0, x1, y1) {
     const TL = UI.TL;
-    UI.tiles.forEach((t) => { if (t.ix * TL <= x1 && (t.ix + 1) * TL >= x0 && t.iy * TL <= y1 && (t.iy + 1) * TL >= y0) t.stale = true; });
+    allTiles((t) => { if (t.ix * TL <= x1 && (t.ix + 1) * TL >= x0 && t.iy * TL <= y1 && (t.iy + 1) * TL >= y0) t.stale = true; });
   }
 
   /* 획 그리기 — 「펜으로 쓴 것처럼」(3판).
@@ -866,6 +1152,17 @@ var MEDKOS_INK = (function () {
     ctx.lineTo(p[(n - 1) * 3] + dx, p[(n - 1) * 3 + 1] + dy);
     ctx.stroke();
   }
+  // 띠 · 원(ribbon 이 만든 도형)을 한 길에 담아 **한 번만** 채운다 — 만년필 획 하나에 fill 한 번
+  function fillShapes(ctx, shapes) {
+    ctx.beginPath();
+    for (let i = 0; i < shapes.length; i++) {
+      const q = shapes[i];
+      if (q[0] === 0) { ctx.moveTo(q[1] + q[3], q[2]); ctx.arc(q[1], q[2], q[3], 0, 6.2832); }
+      else { ctx.moveTo(q[1], q[2]); for (let k = 3; k < q.length; k += 2) ctx.lineTo(q[k], q[k + 1]); ctx.closePath(); }
+    }
+    ctx.fill();
+  }
+  const ribbonStep = () => Math.max(0.3, UI.step * 1.5);          // 만년필 표본 간격(종이 px) ≈ 화면 2.4 화소
   function drawStroke(ctx, st, dx, dy) {
     const p = st.pts, n = p.length / 3;
     ctx.strokeStyle = ctx.fillStyle = st.c;
@@ -879,6 +1176,12 @@ var MEDKOS_INK = (function () {
     ctx.globalAlpha = 1; ctx.lineCap = "round";
     const ws = st.ws;
     if (n === 1) { ctx.beginPath(); ctx.arc(p[0] + dx, p[1] + dy, Math.max(0.7, penW(st.w, p[2]) * 0.55), 0, 6.3); ctx.fill(); return; }
+    if (eng2()) {
+      // 엔진 2 — 볼펜(고른 굵기)은 길 하나를 한 번에 긋고, 만년필은 띠를 한 번에 채운다. 3판은 마디마다 최대 96 번 stroke 를 불렀다.
+      if (st.even) { ctx.lineWidth = ws[0]; hlPath(ctx, p, dx, dy); }
+      else fillShapes(ctx, ribbon(strokeSamples(p, ws, ribbonStep(), dx, dy)));
+      return;
+    }
     let ax = p[0] + dx, ay = p[1] + dy, wa = ws[0];
     for (let i = 1; i < n - 1; i++) {
       const mx = (p[i * 3] + p[i * 3 + 3]) / 2 + dx, my = (p[i * 3 + 1] + p[i * 3 + 4]) / 2 + dy, wm = (ws[i] + ws[i + 1]) / 2;
@@ -895,11 +1198,18 @@ var MEDKOS_INK = (function () {
       x0 = Math.min(x0, pts[i]); x1 = Math.max(x1, pts[i]); y0 = Math.min(y0, pts[i + 1]); y1 = Math.max(y1, pts[i + 1]);
     }
     const w = s.w || WIDTHS[2], t = s.t ? 1 : 0;
-    return { id: sid, c: s.c || COLORS[0], w, t, b: s.b || "p", pts, x0, x1, y0, y1, ws: t ? null : widthsOf(pts, w) };
+    return { id: sid, c: s.c || COLORS[0], w, t, b: s.b || "p", pts, x0, x1, y0, y1, ws: t ? null : widthsOf(pts, w), even: !t && evenStroke(pts) };
+  }
+  // 획 하나를 그릴 준비 — 형광펜 층 · 코넬 여백이 필요한지도 여기서 안다
+  function addRt(sid, s) {
+    const r = UI.rt[sid] = runtime(sid, s);
+    if (r.t) UI.hasHl = true;
+    if (r.b === "m") UI.hasM = true;
+    return r;
   }
   function rebuildRuntime() {
-    UI.rt = {};
-    Object.keys(UI.rec.doc.s).forEach((sid) => { UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]); });
+    UI.rt = {}; UI.hasHl = false; UI.hasM = false;
+    Object.keys(UI.rec.doc.s).forEach((sid) => addRt(sid, UI.rec.doc.s[sid]));
   }
   function staleFor(st) {
     const o = org(st.b), m = (st.w || 16) + 12;
@@ -913,24 +1223,52 @@ var MEDKOS_INK = (function () {
     const w = Math.round(UI.el.clientWidth * d), h = Math.round(UI.el.clientHeight * d);
     if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
   }
-  function liveCtx() {
-    const c = UI.live, d = window.devicePixelRatio || 1, ctx = c.getContext("2d");
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.clearRect(0, 0, c.width, c.height);
+  /* 자리 값 — 필기 층 · 덧층 · 스크롤 창이 화면 어디에 있는지와 배율(엔진 2 · 2026-11-23 「지연 제거」).
+     3판은 점 하나마다 getBoundingClientRect 를 불러(펜슬은 한 프레임에 여러 점) 그때마다 배치를 강제로 다시 계산시켰다.
+     이제 획을 시작할 때 한 번 재고(pointerdown), 스크롤 · 배치 · 창 크기가 바뀔 때만 버린다 — 쓰는 동안 DOM 을 재는 일이 없다.
+     이전 엔진(1)은 예전처럼 매번 잰다. */
+  function measure() {
+    if (UI.rc && eng2()) return UI.rc;
     const lr = UI.layer.getBoundingClientRect(), er = UI.el.getBoundingClientRect(), sr = UI.scroll.getBoundingClientRect();
+    const d = window.devicePixelRatio || 1;
+    UI.rc = { l: lr.left, t: lr.top, s: lr.width / UI.SW, d, ox: lr.left - er.left, oy: lr.top - er.top,
+              cx: (sr.left - er.left) * d, cy: (sr.top - er.top) * d, cw: sr.width * d, ch: sr.height * d };
+    return UI.rc;
+  }
+  // 덧층 그리기 판. 엔진 2 는 화면 한 장을 통째로 지우지 않고 **앞에 그린 네모(UI.tip)만** 지운다.
+  function liveCtx() {
+    const c = UI.live, ctx = c.getContext("2d"), m = measure();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    if (eng2() && UI.tip) ctx.clearRect(UI.tip[0], UI.tip[1], UI.tip[2] - UI.tip[0], UI.tip[3] - UI.tip[1]);
+    else ctx.clearRect(0, 0, c.width, c.height);
+    UI.tip = null;
     ctx.save();
-    ctx.beginPath(); ctx.rect((sr.left - er.left) * d, (sr.top - er.top) * d, sr.width * d, sr.height * d); ctx.clip();   // 도구 막대 위로 번지지 않게
-    const s = lr.width / UI.SW;
-    ctx.setTransform(d * s, 0, 0, d * s, d * (lr.left - er.left), d * (lr.top - er.top));
+    ctx.beginPath(); ctx.rect(m.cx, m.cy, m.cw, m.ch); ctx.clip();   // 도구 막대 위로 번지지 않게
+    ctx.setTransform(m.d * m.s, 0, 0, m.d * m.s, m.d * m.ox, m.d * m.oy);
     return ctx;
   }
-  function clearLive() { const c = UI.live, ctx = c.getContext("2d"); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, c.width, c.height); }
+  // 덧층에 방금 그린 것의 자리(종이 좌표 네모 + 여유)를 적어 둔다 — 다음 liveCtx 가 이 네모만 지운다
+  function tipRect(x0, y0, x1, y1, pad) {
+    const m = measure(), k = m.d * m.s, p = (pad || 0) * k + 4;
+    const r = [Math.floor(Math.min(x0, x1) * k + m.d * m.ox - p), Math.floor(Math.min(y0, y1) * k + m.d * m.oy - p),
+               Math.ceil(Math.max(x0, x1) * k + m.d * m.ox + p), Math.ceil(Math.max(y0, y1) * k + m.d * m.oy + p)];
+    const u = UI.tip;
+    UI.tip = u ? [Math.min(u[0], r[0]), Math.min(u[1], r[1]), Math.max(u[2], r[2]), Math.max(u[3], r[3])] : r;
+  }
+  function clearLive() {
+    const c = UI.live, ctx = c.getContext("2d");
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, c.width, c.height);
+    UI.tip = null;
+    c.classList.remove("mul");
+    if (UI.laser.length) drawLaser();                             // 레이저 자취는 남아 있는 동안 다시 그린다
+  }
 
   /* 입력 — 펜 · 마우스는 쓰고, 손가락은 넘긴다(손가락 쓰기를 켜면 한 손가락 = 쓰기 · 두 손가락 = 넘기기). */
   function pt(e) {
-    const r = UI.layer.getBoundingClientRect(), s = r.width / UI.SW;
-    return [(e.clientX - r.left) / s, (e.clientY - r.top) / s];
+    const m = measure();
+    return [(e.clientX - m.l) / m.s, (e.clientY - m.t) / m.s];
   }
+  const ptXY = (x, y) => { const m = measure(); return [(x - m.l) / m.s, (y - m.t) / m.s]; };
   function blockAt(x, y) {
     let best = "", by = -1;
     Object.keys(UI.geo).forEach((b) => {
@@ -965,13 +1303,19 @@ var MEDKOS_INK = (function () {
       }
       e.preventDefault();
       try { L.setPointerCapture(e.pointerId); } catch (_) { /* 무시 */ }
+      UI.rc = null;                                              // 획을 시작할 때 자리 값을 한 번 잰다 — 쓰는 동안에는 다시 재지 않는다
       const p = pt(e), b = blockAt(p[0], p[1]), o = org(b), st = liveStyle();
       const pr = !UI.tool.even && e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5;
       UI.act = { id: e.pointerId, type: e.pointerType, b, ox: o.x, oy: o.y, t0: Date.now(), lt: e.timeStamp || 0, cx: e.clientX, cy: e.clientY, moved: false,
                  st, pts: [p[0] - o.x, p[1] - o.y, pr], ws: [penW(st.w, pr)], mx: p[0], my: p[1], mw: penW(st.w, pr),
-                 erase: UI.tool.kind === "erase", line: !!UI.tool.line, travel: 0, hx: p[0], hy: p[1], hold: 0 };
+                 erase: UI.tool.kind === "erase", laser: UI.tool.kind === "laser", line: !!UI.tool.line, travel: 0, hx: p[0], hy: p[1], hold: 0,
+                 // 떨림 보정(1-Euro) — 화면 px 로 건다. 값은 EURO(차단 4 Hz + 빠르기 × 0.06 · 빠르기 추정 10 Hz). 모의 필기(240 Hz)에서
+                 // ±0.5 px 떨림 → 0.25 px, 획 시작 지연 2 px, ㄱ 꺾임 오차 1 px. 빠르기 추정을 흔한 기본값 1 Hz 로 두면 획 시작이 6 px 늦는다.
+                 f: eng2() ? euroNew(EURO[0], EURO[1], EURO[2]) : null, pred: null };
+      if (UI.act.f) euroStep(UI.act.f, e.clientX, e.clientY, e.timeStamp || 0);
       if (e.pointerType === "pen") UI.lastPen = Date.now();
       if (UI.act.erase) { eraseAt(p); drawEraser(p); }
+      else if (UI.act.laser) { UI.act.line = false; UI.act.trail = { pts: [p[0], p[1]], end: 0 }; UI.laser.push(UI.act.trail); laserLoop(); }
     });
     L.addEventListener("pointermove", (e) => {
       const a = UI.act;
@@ -982,8 +1326,9 @@ var MEDKOS_INK = (function () {
       if (Math.abs(e.clientX - a.cx) + Math.abs(e.clientY - a.cy) > 4) a.moved = true;
       const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [];
       (evs.length ? evs : [e]).forEach((ev) => {
-        const p = pt(ev);
-        if (a.erase) return eraseAt(p);
+        if (a.erase) return eraseAt(pt(ev));
+        if (a.laser) { const q = pt(ev); a.trail.pts.push(q[0], q[1]); return; }
+        const p = a.f && !a.line ? ptXY.apply(null, euroStep(a.f, ev.clientX, ev.clientY, ev.timeStamp || 0)) : pt(ev);
         if (a.line) { a.ex = p[0] - a.ox; a.ey = p[1] - a.oy; return; }
         const n = a.pts.length, lx = a.pts[n - 3], ly = a.pts[n - 2], x = p[0] - a.ox, y = p[1] - a.oy;
         const d = Math.hypot(x - lx, y - ly);
@@ -1004,6 +1349,13 @@ var MEDKOS_INK = (function () {
           clearTimeout(a.hold); a.hold = setTimeout(() => holdToLine(a), 480);
         }
       });
+      if (a.laser) return;                                         // 레이저는 제 그리기 고리(laserLoop)가 그린다
+      // 예측 점(iPadOS Safari 등 지원하는 곳) — 펜 끝을 조금 앞서 그려 화면이 펜을 따라오는 것처럼 보이게 한다. 다음 입력 때 지워진다.
+      a.pred = null;
+      if (a.f && !a.erase && !a.line && typeof e.getPredictedEvents === "function") {
+        const pv = e.getPredictedEvents();
+        if (pv && pv.length) a.pred = pt(pv[pv.length - 1]);
+      }
       if (a.erase) drawEraser(pt(e)); else drawLive(a);
       if (e.pointerType === "pen") UI.lastPen = Date.now();
     });
@@ -1012,6 +1364,7 @@ var MEDKOS_INK = (function () {
       if (!a || e.pointerId !== a.id) return;
       UI.act = null;
       clearTimeout(a.hold);
+      if (a.laser) { a.trail.end = performance.now(); return laserLoop(); }
       clearLive();
       if (a.pan || a.erase) { if (a.erase) flushErase(); return; }
       if (e.type === "pointercancel") { ensureStale(a); return; }
@@ -1026,6 +1379,23 @@ var MEDKOS_INK = (function () {
         const z = snapLine(a);
         a.pts = [a.pts[0], a.pts[1], 0.5, z[0], z[1], 0.5];
         return commitStroke(a, true);
+      }
+      if (a.f && e.type === "pointerup") {                        // 떨림 보정은 펜을 조금 뒤따른다 — 뗀 자리의 진짜 점으로 획의 끝을 맞춘다
+        const q = pt(e), n = a.pts.length, x = q[0] - a.ox, y = q[1] - a.oy, lx = a.pts[n - 3], ly = a.pts[n - 2];
+        if (Math.hypot(x - lx, y - ly) >= 0.35) {
+          a.pts.push(x, y, a.pts[n - 1]);
+          a.ws.push(a.ws[a.ws.length - 1]);
+          const kk = a.pts.length / 3;
+          if (!a.st.t && kk >= 3) {
+            const mx = (lx + x) / 2 + a.ox, my = (ly + y) / 2 + a.oy, mw = (a.ws[kk - 2] + a.ws[kk - 1]) / 2;
+            inkPiece(a.st, a.mx, a.my, lx + a.ox, ly + a.oy, mx, my, a.mw, mw);
+            a.mx = mx; a.my = my; a.mw = mw;
+          }
+        }
+      }
+      if (a.st.t && UI.tool.hlStraight && eng2()) {               // 형광펜 자동 수평 직선 — 거의 가로로 그었으면 반듯하게 편다
+        const z = straightenH(a.pts);
+        if (z) a.pts = z;
       }
       const k = a.pts.length / 3;
       if (a.st.t) return commitStroke(a, true);                   // 형광펜은 덧층에만 그렸다 → 조각에 옮겨 그린다
@@ -1055,11 +1425,16 @@ var MEDKOS_INK = (function () {
   function inkPiece(st, ax, ay, cx, cy, bx, by, wa, wb) {
     const pad = Math.max(wa, wb) + 1, TL = UI.TL;
     const x0 = Math.min(ax, cx, bx) - pad, x1 = Math.max(ax, cx, bx) + pad, y0 = Math.min(ay, cy, by) - pad, y1 = Math.max(ay, cy, by) + pad;
+    // 엔진 2 — 한 마디에 그리기 한 번: 볼펜(굵기가 같다)은 곡선 하나를 긋고, 만년필은 그 마디의 띠를 한 번 채운다
+    const two = eng2(), flat = two && wa === wb;
+    const shapes = two && !flat ? ribbon(curveSamples([ax, ay, wa], ax, ay, cx, cy, bx, by, wa, wb, ribbonStep())) : null;
     UI.tiles.forEach((t) => {
       if (t.ix * TL > x1 || (t.ix + 1) * TL < x0 || t.iy * TL > y1 || (t.iy + 1) * TL < y0) return;
       const ctx = tileCtx(t);
-      ctx.globalAlpha = 1; ctx.strokeStyle = st.c; ctx.lineCap = "round"; ctx.lineJoin = "round";
-      piece(ctx, ax, ay, cx, cy, bx, by, wa, wb);
+      ctx.globalAlpha = 1; ctx.strokeStyle = ctx.fillStyle = st.c; ctx.lineCap = "round"; ctx.lineJoin = "round";
+      if (flat) { ctx.lineWidth = wa; ctx.beginPath(); ctx.moveTo(ax, ay); ctx.quadraticCurveTo(cx, cy, bx, by); ctx.stroke(); }
+      else if (shapes) fillShapes(ctx, shapes);
+      else piece(ctx, ax, ay, cx, cy, bx, by, wa, wb);
     });
   }
   /* 두 손가락 확대 · 축소(2026-11-15 「축소 · 확대를 하면 좋겠다」). 오므리고 벌리는 동안은 종이를 통째로 늘여 보이고(빠르다),
@@ -1072,11 +1447,24 @@ var MEDKOS_INK = (function () {
       const a = e.touches[0], b = e.touches[1];
       return { d: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY) || 1, x: (a.clientX + b.clientX) / 2, y: (a.clientY + b.clientY) / 2 };
     };
+    // 톡 제스처(2026-11-23) — 두 손가락으로 톡 = 되돌리기 · 세 손가락으로 톡 = 다시실행. 0.3초 안에 거의 움직이지 않고 뗐을 때만.
+    // 펜을 쓰는 중 · 쓴 직후(손바닥)에는 아래 손바닥 거름에 걸려 시작도 하지 않는다.
+    let tap3 = null;
+    const TAP_MS = 300;
     sc.addEventListener("touchstart", (e) => {
-      if (e.touches.length !== 2 || !UI.rec || gz) return;
-      if ([].some.call(e.touches, (t) => t.touchType === "stylus") || (UI.act && UI.act.type === "pen") || Date.now() - UI.lastPen < 700) return;
+      if (!UI.rec) return;
+      const palm = [].some.call(e.touches, (t) => t.touchType === "stylus") || (UI.act && UI.act.type === "pen") || Date.now() - UI.lastPen < 700;
+      if (e.touches.length === 3 && !palm) {                      // 셋째 손가락 — 두 손가락 확대는 없던 일로 하고 세 손가락 톡을 기다린다
+        if (gz) { gz = UI.pinch = null; UI.fit.style.transform = ""; UI.fit.style.transformOrigin = ""; }
+        tap3 = { t0: Date.now(), x: e.touches[0].clientX, y: e.touches[0].clientY };
+        if (e.cancelable) e.preventDefault();
+        return;
+      }
+      if (e.touches.length > 3) tap3 = null;
+      if (e.touches.length !== 2 || gz) return;
+      if (palm) return;
       const m = two(e), fr = UI.fit.getBoundingClientRect();
-      gz = UI.pinch = { d0: m.d, z0: UI.zoom, lx: (m.x - fr.left) / UI.s, ly: (m.y - fr.top) / UI.s, x0: m.x, y0: m.y, x: m.x, y: m.y, k: 1 };
+      gz = UI.pinch = { d0: m.d, z0: UI.zoom, lx: (m.x - fr.left) / UI.s, ly: (m.y - fr.top) / UI.s, x0: m.x, y0: m.y, x: m.x, y: m.y, k: 1, t0: Date.now() };
       UI.fit.style.transformOrigin = (m.x - fr.left) + "px " + (m.y - fr.top) + "px";
       if (e.cancelable) e.preventDefault();
     }, { passive: false });
@@ -1089,10 +1477,19 @@ var MEDKOS_INK = (function () {
       UI.fit.style.transform = `translate(${m.x - gz.x0}px, ${m.y - gz.y0}px) scale(${gz.k})`;
     }, { passive: false });
     const done = (e) => {
+      if (tap3) {                                                 // 세 손가락을 모두 뗐을 때
+        if (e.touches.length) return;
+        const t = tap3, c = e.changedTouches[0];
+        tap3 = null;
+        if (e.type === "touchend" && Date.now() - t.t0 < TAP_MS + 100 && (!c || Math.hypot(c.clientX - t.x, c.clientY - t.y) < 60)) { redo(); status("다시실행"); }
+        return;
+      }
       if (!gz || e.touches.length >= 2) return;
       const p = gz;
       gz = UI.pinch = null;
       UI.fit.style.transform = ""; UI.fit.style.transformOrigin = "";
+      // 두 손가락으로 톡 — 벌리지도 끌지도 않고 곧 뗐으면 확대가 아니라 되돌리기
+      if (e.type === "touchend" && Date.now() - p.t0 < TAP_MS && Math.abs(p.k - 1) < 0.04 && Math.hypot(p.x - p.x0, p.y - p.y0) < 10) { ensureTiles(); undo(); status("되돌리기"); return; }
       zoomTo(p.z0 * p.k, p.lx, p.ly, p.x, p.y);
     };
     sc.addEventListener("touchend", done);
@@ -1125,20 +1522,55 @@ var MEDKOS_INK = (function () {
   function drawLive(a) {
     const ctx = liveCtx(), st = a.st;
     ctx.strokeStyle = st.c; ctx.lineJoin = "round";
+    // 형광펜을 쓰는 동안에도 굳은 뒤와 같은 모양으로 — 덧층을 곱하기로 섞는다(엔진 2)
+    UI.live.classList.toggle("mul", !!st.t && eng2());
     if (a.line) {
       if (a.ex == null) { ctx.restore(); return; }
       const z = snapLine(a);
       ctx.globalAlpha = st.t ? 0.32 : 1; ctx.lineCap = st.t ? "butt" : "round"; ctx.lineWidth = st.t ? st.w : penW(st.w, 0.5);
       ctx.beginPath(); ctx.moveTo(a.pts[0] + a.ox, a.pts[1] + a.oy); ctx.lineTo(z[0] + a.ox, z[1] + a.oy); ctx.stroke();
+      tipRect(a.pts[0] + a.ox, a.pts[1] + a.oy, z[0] + a.ox, z[1] + a.oy, st.w);
     } else if (st.t) {
       ctx.globalAlpha = 0.32; ctx.lineCap = "butt"; ctx.lineWidth = st.w;
-      if (a.pts.length > 3) hlPath(ctx, a.pts, a.ox, a.oy);
+      if (a.pts.length > 3) {
+        hlPath(ctx, a.pts, a.ox, a.oy);
+        let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+        for (let i = 0; i < a.pts.length; i += 3) { x0 = Math.min(x0, a.pts[i]); x1 = Math.max(x1, a.pts[i]); y0 = Math.min(y0, a.pts[i + 1]); y1 = Math.max(y1, a.pts[i + 1]); }
+        tipRect(x0 + a.ox, y0 + a.oy, x1 + a.ox, y1 + a.oy, st.w);
+      }
     } else {                                                      // 펜 끝 — 마지막 가운데 점에서 지금 점까지(다음 점이 오면 조각에 제대로 그려진다)
-      const n = a.pts.length;
-      ctx.globalAlpha = 1; ctx.lineCap = "round"; ctx.lineWidth = a.ws[a.ws.length - 1];
-      ctx.beginPath(); ctx.moveTo(a.mx, a.my); ctx.lineTo(a.pts[n - 3] + a.ox, a.pts[n - 2] + a.oy); ctx.stroke();
+      const n = a.pts.length, tx = a.pts[n - 3] + a.ox, ty = a.pts[n - 2] + a.oy, w = a.ws[a.ws.length - 1];
+      ctx.globalAlpha = 1; ctx.lineCap = "round"; ctx.lineWidth = w;
+      ctx.beginPath(); ctx.moveTo(a.mx, a.my); ctx.lineTo(tx, ty);
+      if (a.pred) ctx.lineTo(a.pred[0], a.pred[1]);              // 예측 점까지 미리 — 다음 입력 때 이 네모만 지우고 진짜 점으로 다시 그린다
+      ctx.stroke();
+      tipRect(Math.min(a.mx, tx), Math.min(a.my, ty), Math.max(a.mx, tx), Math.max(a.my, ty), w);
+      if (a.pred) tipRect(tx, ty, a.pred[0], a.pred[1], w);
     }
     ctx.restore();
+  }
+  /* 레이저 포인터 — 저장하지 않는다. 긋는 동안 붉은 자취가 보이고, 떼면 2.5초에 걸쳐 사라진다(설명하며 짚을 때 · 화면을 같이 볼 때). */
+  function drawLaser() {
+    const now = performance.now();
+    UI.laser = UI.laser.filter((tr) => !tr.end || now - tr.end < LASER_MS);
+    const ctx = liveCtx();
+    ctx.lineCap = "round"; ctx.lineJoin = "round";
+    UI.laser.forEach((tr) => {
+      const p = tr.pts, n = p.length / 2, fade = tr.end ? Math.max(0, 1 - (now - tr.end) / LASER_MS) : 1;
+      let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+      ctx.beginPath(); ctx.moveTo(p[0], p[1]);
+      for (let i = 0; i < n; i++) { ctx.lineTo(p[i * 2], p[i * 2 + 1]); x0 = Math.min(x0, p[i * 2]); x1 = Math.max(x1, p[i * 2]); y0 = Math.min(y0, p[i * 2 + 1]); y1 = Math.max(y1, p[i * 2 + 1]); }
+      ctx.globalAlpha = 0.28 * fade; ctx.strokeStyle = "#ff3b30"; ctx.lineWidth = 9; ctx.stroke();      // 번짐
+      ctx.globalAlpha = 0.95 * fade; ctx.strokeStyle = "#ff3b30"; ctx.lineWidth = 3; ctx.stroke();       // 심
+      tipRect(x0, y0, x1, y1, 10);
+    });
+    ctx.restore();
+    return UI.laser.length;
+  }
+  function laserLoop() {
+    cancelAnimationFrame(UI.laserRaf);
+    const tick = () => { if (drawLaser()) UI.laserRaf = requestAnimationFrame(tick); else clearLive(); };
+    UI.laserRaf = requestAnimationFrame(tick);
   }
   function ensureStale(a) {                                       // 버린 획의 흔적을 지운다
     let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
@@ -1153,9 +1585,10 @@ var MEDKOS_INK = (function () {
   function commitStroke(a, repaint) {
     const st = a.st, sid = newId();
     UI.rec.doc.s[sid] = { c: st.c, w: st.w, t: st.t, b: a.b, d: pack(a.pts) };
-    UI.rt[sid] = runtime(sid, UI.rec.doc.s[sid]);
+    addRt(sid, UI.rec.doc.s[sid]);
     UI.mine[sid] = 1;
     UI.undo.push({ add: sid });
+    UI.redo = [];                                                 // 새로 쓰면 다시실행 더미는 비운다
     if (repaint) staleFor(UI.rt[sid]);
     // 여백 끝 가까이까지 썼으면 종이를 늘인다
     const pg = UI.geo.p;
@@ -1169,23 +1602,25 @@ var MEDKOS_INK = (function () {
     const t = L ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / L)) : 0;
     return Math.hypot(px - ax - t * dx, py - ay - t * dy);
   }
-  const ERASE_R = 9;                                              // 지우개 반지름(종이 좌표) — 화면에 보이는 원과 같은 값
+  // 지우개 반지름(종이 좌표) — 화면에 보이는 원과 **같은 값**이다(크기를 바꾸면 원도 같이 바뀐다). 지름은 「색 · 굵기」에서 소 8 · 중 16 · 대 30 · 6~44.
+  const eraseR = () => UI.tool.eraseD / 2;
   function drawEraser(p) {
-    const ctx = liveCtx();
-    ctx.beginPath(); ctx.arc(p[0], p[1], ERASE_R, 0, 6.3);
-    ctx.fillStyle = "rgba(120,130,145,.18)"; ctx.fill();
+    const ctx = liveCtx(), R = eraseR();
+    ctx.beginPath(); ctx.arc(p[0], p[1], R, 0, 6.3);
+    ctx.fillStyle = UI.tool.hlOnly ? "rgba(245,197,24,.22)" : "rgba(120,130,145,.18)"; ctx.fill();      // 형광펜만 지우는 중이면 노란 기
     ctx.lineWidth = 1 / (UI.s || 1); ctx.strokeStyle = "rgba(60,70,85,.8)"; ctx.stroke();
+    tipRect(p[0] - R, p[1] - R, p[0] + R, p[1] + R, 1);
     ctx.restore();
   }
   function eraseAt(p) {
-    const R = ERASE_R, from = UI.erasePrev || p;
+    const R = eraseR(), hlOnly = UI.tool.hlOnly, from = UI.erasePrev || p;
     UI.erasePrev = p;
     const steps = Math.max(1, Math.ceil(Math.hypot(p[0] - from[0], p[1] - from[1]) / (R / 2)));
     for (let k = 1; k <= steps; k++) {
       const ex = from[0] + (p[0] - from[0]) * k / steps, ey = from[1] + (p[1] - from[1]) * k / steps;
       Object.keys(UI.rt).forEach((sid) => {
         const st = UI.rt[sid];
-        if (hiddenBlock(st.b) || veiled(sid)) return;
+        if (hiddenBlock(st.b) || veiled(sid) || (hlOnly && !st.t)) return;      // 「형광펜만 지우기」 — 펜으로 쓴 글씨는 건드리지 않는다
         const o = org(st.b), x = ex - o.x, y = ey - o.y, r = R + st.w / 2;
         if (x < st.x0 - r || x > st.x1 + r || y < st.y0 - r || y > st.y1 + r) return;
         const q = st.pts;
@@ -1197,22 +1632,35 @@ var MEDKOS_INK = (function () {
     }
     if (UI.erased) ensureTiles();
   }
-  function flushErase() { UI.erasePrev = null; if (UI.erased) { UI.erased = false; touched(); paintBar(); } }
+  function flushErase() { UI.erasePrev = null; if (UI.erased) { UI.erased = false; UI.redo = []; touched(); paintBar(); } }
   function removeStroke(sid, undoable) {
     const s = UI.rec.doc.s[sid];
     if (!s) return;
     staleFor(UI.rt[sid]);
-    if (undoable) UI.undo.push({ del: s });
+    if (undoable) UI.undo.push({ put: s, was: sid });             // 되돌리면 이 획을 다시 넣는다
     delete UI.rec.doc.s[sid]; delete UI.rt[sid];
     UI.rec.doc.g[sid] = new Date().toISOString();
   }
-  function undo() {
-    const op = UI.undo.pop();
+  // 되돌리기 · 다시실행 — 한 더미에서 꺼낸 걸음을 하고(histApply), 그 반대 걸음을 다른 더미에 넣는다.
+  function histMove(from, to) {
+    if (!UI.rec) return;
+    const op = from.pop();
     if (!op) return;
-    if (op.add) removeStroke(op.add, false);
-    else { const sid = newId(); UI.rec.doc.s[sid] = op.del; UI.rt[sid] = runtime(sid, op.del); UI.mine[sid] = 1; staleFor(UI.rt[sid]); }   // 묘비가 있으니 새 id 로 되살린다
-    ensureTiles(); touched();
+    if (op.add && UI.rt[op.add]) staleFor(UI.rt[op.add]);
+    const inv = histApply(UI.rec.doc, op, newId);
+    if (inv) {
+      to.push(inv);
+      if (op.add) delete UI.rt[op.add];
+      else {                                                      // 묘비가 있으니 새 id 로 되살린다
+        addRt(inv.add, op.put); UI.mine[inv.add] = 1; staleFor(UI.rt[inv.add]);
+        // 더미에 남은 걸음이 옛 id 를 가리키면 새 id 로 바꾼다 — 「썼다 → 지웠다 → 되돌리기 두 번」에서 되살린 획이 남지 않게
+        if (op.was) [UI.undo, UI.redo].forEach((stack) => stack.forEach((o) => { if (o.add === op.was) o.add = inv.add; }));
+      }
+    }
+    ensureTiles(); touched(); paintBar();
   }
+  function undo() { histMove(UI.undo, UI.redo); }
+  function redo() { histMove(UI.redo, UI.undo); }
 
   /* 저장 — 기기에는 바로(0.6초 모아서), 서버에는 30초 쉬었을 때 · 닫을 때 · 앱이 가려질 때 */
   function touched() {
@@ -1244,7 +1692,7 @@ var MEDKOS_INK = (function () {
       ensureSnap();
       // 다른 기기가 필기본을 새 판으로 옮겼으면 종이의 글부터 다시 그린다
       if (UI.st.kind === "concept" && ((rec.doc.n && rec.doc.n.at) || "") !== UI.st.snapAt) return renderSheet(false);
-      layout(false); UI.tiles.forEach((t) => { t.stale = true; }); ensureTiles();
+      layout(false); allTiles((t) => { t.stale = true; }); ensureTiles();
     });
     pushing = false;
     if (UI.rec !== rec) return;
@@ -1268,7 +1716,7 @@ var MEDKOS_INK = (function () {
     UI.st = { exam, id, kind: isC ? "concept" : "q", q, w, solve: !!opts.solve && !!q, chosen, quiz: !!opts.quiz,
       live: isC ? liveConcept(id) : null, old: false, list: isC && Array.isArray(opts.list) ? opts.list : null };
     if (ensureSnap()) saveRec(UI.rec);
-    UI.undo = []; UI.zoom = 1; UI.mine = {}; UI.hideOld = UI.st.solve;
+    UI.undo = []; UI.redo = []; UI.laser = []; UI.zoom = 1; UI.mine = {}; UI.hideOld = UI.st.solve;
     UI.el.classList.remove("hidden"); document.body.classList.add("ink-open");
     UI.scroll.scrollTop = 0;
     rebuildRuntime(); renderSheet(false); layout(true);
