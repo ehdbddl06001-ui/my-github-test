@@ -4,9 +4,10 @@ type: concept
 topic: Cardiology
 see_also: [Pediatrics, Emergency Medicine]
 date: 2026-09-21
-updated: 2026-09-29
+updated: 2026-11-24
 version: 4
 outline: h255            # 기본틀 슬롯(content/outline/subjects.yaml)
+roots: [cn.physio.ventricular-repolarization.long-qt]
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문

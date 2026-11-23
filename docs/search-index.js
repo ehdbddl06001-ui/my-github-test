@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4215,
+  "total": 4216,
   "byType": {
    "usmle": 282,
+   "concept": 215,
    "paper": 979,
    "kmle": 1952,
    "imaging": 771,
-   "concept": 214,
    "ailab": 14,
    "basic": 3
   },
@@ -47,7 +47,7 @@ window.MEDKOS_INDEX = {
    "감염": 33,
    "신경": 33,
    "신장·비뇨기": 33,
-   "Physiology": 31,
+   "Physiology": 32,
    "병리·조직학": 31,
    "외과": 29,
    "피부과": 29,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2993,
-   "medium": 1218,
+   "medium": 1219,
    "low": 4
   },
   "tagCount": 4964
@@ -209,6 +209,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0290.md",
    "snippet": "A 58 year old man comes to the emergency department because of palpitations and lightheadedness that began suddenly 2 hours ago while he was climbing stairs. Three weeks ago, he was evaluated for 1 week of fatigue and a fluttering sensation",
    "text": "Pharmacology Palpitations, a Regular Pulse of 214 and Widened QRS Complexes Three Weeks After Starting a New Rhythm Drug in a 58-Year-Old Man Whose Earlier Tracing Is Shown antiarrhythmic class-ic atrial-flutter ecg mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 257장 Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias) A 58 year old man comes to the emergency department because of palpitations and lightheadedness that began suddenly 2 hours ago while he was climbing stairs. Three weeks ago, he was evaluated for 1 week of fatigue and a fluttering sensation in his chest; his ECG at that visit is shown. Apixaban and flecainide were started at that time. He takes no other medications. An ECG obtained 2 years ago during sinus rhythm showed a PR interval of 0.18 seconds, a QRS duration of 0.09 seconds, and no delta wave. His vital signs today are shown. He is alert and anxious. The lungs are clear. There are no murmurs. Today's ECG shows a regular tachycardia at 214/min with a QRS duration of 0.15 seconds; the QT interval corrected for rate is 0.42 seconds. Laboratory results are shown. Which of the following best explains the change in this patient's ventricular rate? A. Anticholinergic action of the drug that enhances atrioventricular nodal conduction B. Delayed afterdepolarizations from intracellular calcium overload in ventricular myocytes C. Early afterdepolarizations from prolonged ventricular repolarization D. Slowing of the atrial reentrant circuit that permits 1:1 atrioventricular conduction E. Rapid anterograde conduction of atrial impulses over an accessory pathway 3주 전 심전도는 톱니 모양 조동파와 심실 150/min — 심방 약 300/min 의 전형적 심방조동(atrial flutter) 2:1 전도다. 방실결절은 300/min 을 다 통과시키지 못해 하나 건너 하나만 내려보냈다. flecainide(class IC)는 Na 통로를 막아 심방 대회귀 회로의 전도를 늦춘다 — 조동 주기가 길어져 심방이 약 200–220/min 으로 느려지면 방실결절이 이제 모든 자극을 통과시켜 1:1 전도가 되고, 심실 박동은 오히려 150 → 214/min 으로 빨라진다. 빠른 박동에서는 Na 통로 차단이 사용 의존적으로 강해져 QRS 도 넓어진다. 그래서 IC 약은 방실결절 차단제(β 차단제·비디하이드로피리딘 Ca 통로 차단제)와 함께 쓴다. 항콜린 작용으로 방실결절 전도를 높이는 것(A)은 class IA(quinidine·disopyramide)의 기전이다. 조기 후탈분극(C)은 QT 연장에서 생기는 다형성 심실빈맥(torsades)으로, 이 환자는 QTc 0.42초·규칙적 리듬이다. 지연 후탈분극(B)은 digoxin 중독의 기전이다. 부전도로를 통한 전도(E)는 동율동 때 델타파가 없어 가능성이 낮다."
+  },
+  {
+   "id": "cn.physio.ventricular-repolarization.long-qt",
+   "type": "concept",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-24",
+   "path": "content/concepts/physiology/cn.physio.ventricular-repolarization.long-qt.md",
+   "snippet": "정상 — 3기 재분극이 QT 의 끝을 정한다 심실 활동전위의 각 시기가 표면 심전도에 그대로 찍힌다 — 0기(나트륨 전류의 빠른 상승)는 QRS, 1~2기는 ST 분절, 3기 재분극은 T 파다 [[harrison 22: 250장 p.1910]]. 2기 고평부는 들어오는 L형 칼슘 전류와 나가는 칼륨 전류의 균형이고, 칼슘 전류가 꺼진 뒤 지연 정류 칼륨 전류 IKr(KCNH2/HERG)·IKs(KCNQ1) 가 계속 열려 3기를",
+   "text": "Physiology 정상 — 3기 재분극이 QT 의 끝을 정한다 심실 활동전위의 각 시기가 표면 심전도에 그대로 찍힌다 — 0기(나트륨 전류의 빠른 상승)는 QRS, 1~2기는 ST 분절, 3기 재분극은 T 파다 [[harrison 22: 250장 p.1910]]. 2기 고평부는 들어오는 L형 칼슘 전류와 나가는 칼륨 전류의 균형이고, 칼슘 전류가 꺼진 뒤 지연 정류 칼륨 전류 IKr(KCNH2/HERG)·IKs(KCNQ1) 가 계속 열려 3기를 끝낸다 [[harrison 22: 250장 p.1911]]. 그래서 QT 간격은 심실 활동전위 길이의 표면 지표다. 두 전류가 서로를 보완해 하나가 약해져도 다른 하나가 재분극을 끝내는 여유를 재분극 예비력(repolarization reserve)이라 부른다. 고장 — 재분극 예비력이 깎이면 칼륨 통로를 늦게 닫거나 약하게 만드는 변이가 선천 QT연장증후군의 대부분이다 [[harrison 22: 250장 p.1911]]. 세 유형이 80~90 %이고 깎이는 전류가 달라 방아쇠가 다르다(표) [[harrison 22: 262장 p.1970]]. LQT3 은 반대 방향 — 나트륨 통로가 제때 닫히지 않아 고평부에 들어오는 전류가 남는다 [[harrison 22: 262장 p.1970]]. 심박이 느릴수록 고평부가 길어 수면 중 사건이 난다. IKs 는 교감 자극(β 수용체 → cAMP)으로 커져 빠른 심박에서 활동전위를 줄이는 전류다. 이것이 없는 LQT1 은 운동 중 QT 가 제대로 짧아지지 못해 운동·수영이 방아쇠가 된다. 후천형은 같은 통로를 바깥에서 누른다 — 칼륨 재분극 전류를 막는 약(소탈롤·도페틸라이드·이부틸라이드, 에리트로마이신, 할로페리돌, 메타돈), 저칼륨·저마그네슘·저칼슘, 서맥 [[harrison 22: 262장 p.1969–1970]]. 유전 변이가 있으면 같은 약에도 더 쉽게 길어진다. 소견으로 — 조기후탈분극에서 토르사드로 2~3기가 길어지면 그 사이 칼슘 통로가 다시 열려 조기후탈분극(EAD) 이 생기고, 세포 안 칼슘 부하가 이를 돕는다 [[harrison 22: 250장 p.1913]]. QT 연장이 심실마다 고르지 않으면 EAD 가 만든 박동이 비정상 파면을 퍼뜨려 QRS 축이 꼬이듯 바뀌는 다형 심실빈맥 — 토르사드 드 푸앵트(torsades de pointes) 가 된다 [[harrison 22: 250장 p.1913]]. 대개 저절로 멈춰 실신으로 끝나고, 지속되면 심실세동이 된다 [[harrison 22: 262장 p.1969]]. 후천형은 기외수축 → 보상 휴지 → 다음 박동의 QT 가 더 길어진 자리에 기외수축이 떨어지는 휴지 의존형(긴–짧은 간격) 으로 시작한다 [[harrison 22: 262장 p.1969]]. 4기에 생기는 지연후탈분극(DAD) 은 다른 기전이다 — 세포 안 칼슘 과부하(디기탈리스 독성 · 허혈 · 카테콜아민)로 양방향 심실빈맥을 만들고 QT 와 무관하다 [[harrison 22: 250장 p.1913]]. 임상 판단으로 — 어느 전류를 어떻게 돕나 선천형(특히 LQT1·LQT2)의 예방은 교감 방아쇠를 끊는 비선택 베타차단제(나돌롤·프로프라놀롤)이고, 모든 유형에서 QT 를 늘리는 약(대부분 IKr 차단)을 피한다 [[harrison 22: 262장 p.1970]]. 단계별 선택·위험도는 임상 정리본 cn.cardio.long qt syndrome.first line drug . 후천형의 급성 토르사드는 휴지 의존형이라 정맥 마그네슘, 그래도 반복되면 심박을 100~120회/분으로 올려(이소프로테레놀·조율) 휴지를 없애고, 원인 약·전해질을 바로잡는다 [[harrison 22: 262장 p.1969]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 250장 p.1910–1913 · 262장 p.1969–1970)"
   },
   {
    "id": "paper-2026-0979",
