@@ -17,18 +17,20 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read   # 아티팩트 목록 확인(wait 단계)용
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
+# 2026-11-24: 업로드(327 MB)는 성공했는데 0.5초 뒤 deploy-pages 가 「Found 0 artifact(s)」로
+# 실패하는 일이 반복됐다(11-22 21:08 · 22:43, 11-23 20:16 · 20:33). 아티팩트 목록 API 가
+# 방금 끝난 업로드를 늦게 보여 주는 경합이다. 그래서 업로드와 배포를 두 작업으로 나누고,
+# 배포 전에 목록에 실제로 보일 때까지 기다린다.
 jobs:
-  deploy:
+  build:
     # workflow_run 으로 왔을 땐 스크랩이 성공했을 때만 배포
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -38,5 +40,23 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait until the github-pages artifact is listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 24); do
+            n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?name=github-pages" --jq '.total_count' || echo 0)
+            if [ "${n:-0}" -ge 1 ]; then echo "artifact listed (try $i)"; exit 0; fi
+            echo "not listed yet (try $i), waiting 5 s"; sleep 5
+          done
+          echo "::warning::artifact still not listed after 120 s — trying deploy anyway"
       - id: deployment
         uses: actions/deploy-pages@v4
