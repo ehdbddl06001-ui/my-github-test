@@ -89,6 +89,20 @@ const LEARN = (() => {
     return BY_ID[id] || null;
   }
   function concept(id) { return id && CONCEPTS[id] ? CONCEPTS[id] : null; }
+  // 그 정리본에서 내가 틀린 문항(도식 경로가 있는 것만, 최근에 틀린 것부터 넷까지) — 필기장이 도식에 「내가 틀린 사례」로 그린다.
+  // 학습 기록의 오답이 먼저이고, 기록이 생기기 전의 오답(오답노트에만 있다)이 뒤에 온다.
+  function wrongCases(cid) {
+    const seen = {}, out = [];
+    const take = (qid) => {
+      if (!qid || seen[qid]) return;
+      seen[qid] = 1;
+      const q = qById(qid);
+      if (q && q.objective === cid && (q.casePath || []).length) out.push(q);
+    };
+    load().filter((e) => e && e.kind === "answer" && !e.ok && e.qid).sort((a, b) => String(b.t).localeCompare(String(a.t))).forEach((e) => take(e.qid));
+    try { if (typeof wrongIds === "function") Array.from(wrongIds()).sort().reverse().forEach(take); } catch (e) { /* 오답노트를 못 읽으면 기록만 쓴다 */ }
+    return out.slice(0, 4);
+  }
   function keyOf(q) { return q && q.objective ? q.objective : "q:" + (q && q.id); }
   function letterOf(i) { return "ABCDE"[i] || ""; }
 
@@ -345,13 +359,20 @@ const LEARN = (() => {
       h += `<div class="cn-sum"><div class="cn-sec">빠른 요약</div><ul>${c.summary.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul></div>`;
     }
     h += figuresHtml(c);
-    h += `<div class="cn-dia"><div class="cn-sec">임상 판단 도식${q ? " — 이 사례의 경로" : ""}</div>`
+    // 필기장처럼 「이 사례」가 없는 화면에서는 내가 틀린 문항(opts.cases — 최근 것부터)의 경로를 도식에 진하게 그린다(2026-11-23).
+    // 여럿이면 제목 줄의 칩으로 바꿔 본다. 칩은 제목 줄 안에 두어 도식의 자리가 밀리지 않는다.
+    const cases = !q && opts && Array.isArray(opts.cases) ? opts.cases.filter((x) => x && x.objective === c.id && (x.casePath || []).length) : [];
+    const dq = q || cases[0] || null;
+    box._cases = cases;
+    const chips = cases.length ? `<span class="dia-cases">` + cases.map((x, i) =>
+      `<span class="dia-case${i === 0 ? " on" : ""}" role="button" tabindex="0" data-case="${i}">내가 틀린 사례${cases.length > 1 ? " " + (i + 1) : ""}</span>`).join("") + `</span>` : "";
+    h += `<div class="cn-dia" data-bk="임상 판단 도식"><div class="cn-sec">임상 판단 도식${q ? " — 이 사례의 경로" : ""}${chips}</div>`
       + `<div class="dia-legend">★ 이 사례가 지난 곳 · ◆ ${L ? "선택한 " + escapeHtml(label(chosenIdx, q)) + " 보기와 " : "오답과 "}갈리는 곳 · ? 문항에 정보 없음 · ○ 미시행 · 굵은 실선 = 이 사례 경로</div>`
       + `<div class="dia-box" role="img" aria-label="${escapeHtml(c.diagramTitle || c.title)}"></div>`
       + `<div class="dia-hint muted">탭하면 크게 · 두 손가락으로 확대</div>`
       + (dist && splitNode ? `<div class="learn-row split"><span class="k">◆ ${escapeHtml(label(chosenIdx, q))} 보기와 갈리는 곳</span>${escapeHtml(nodeText(c, splitNode))} — ${escapeHtml(dist.discriminator || "")}</div>` : "")
       + ((c.diagramNotes || []).length ? `<div class="dia-notes"><div class="cn-sec small">도식에 담기지 않은 조건·예외</div><ul>${c.diagramNotes.map((x) => `<li>${sanitizeHtml(x)}</li>`).join("")}</ul></div>` : "")
-      + `<details class="dia-text"><summary>도식을 글로 보기</summary>${stepsHtml(c, q, splitNode, L ? label(chosenIdx, q) : "")}</details></div>`;
+      + `<details class="dia-text"><summary>도식을 글로 보기</summary>${stepsHtml(c, dq, splitNode, L ? label(chosenIdx, q) : "")}</details></div>`;
     (c.sections || []).forEach((s) => {
       if (f2 && s.issue && c.issues) return;                      // 시험 쟁점은 아래에서 카드로(해당 없음이면 머리의 배지로)
       const body = sanitizeHtml(s.html);
@@ -384,7 +405,7 @@ const LEARN = (() => {
     if (f2) h += issuesHtml(c);
     h += checksHtml(c, f2) + variantsHtml(c) + (f2 ? supportsHtml(c) : "") + selfHtml(c) + papersHtml(c) + sourcesHtml(c) + `</article>`;
     box.innerHTML = h;
-    drawDiagram(box.querySelector(".dia-box"), c, q, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
+    drawDiagram(box.querySelector(".dia-box"), c, dq, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
     bindConcept(box, c);
     // 필기 단추(ink.js) — 필기장 안에서 다시 그릴 때는 달지 않는다
     if (!box.closest(".ink-sheet") && typeof MEDKOS_INK === "object" && MEDKOS_INK.conceptButton) MEDKOS_INK.conceptButton(box, c.id);
@@ -545,24 +566,29 @@ const LEARN = (() => {
         svg.appendChild(el("polyline", { points: e.points.map((p) => p.join(",")).join(" "), fill: "none",
           class: on ? "d-edge on" : (seq.length ? "d-edge off" : "d-edge"), "marker-end": `url(#${on ? "ahp" : "ah"}-${mid})` }));
       });
+      // 사례가 있으면 그 사례가 지나지 않은 곳(노드 · 글 · 선 · 갈래 이름)은 흐리게 한다 — 이 사례의 경로만 진하게 남는다(2026-11-23)
+      const has = seq.length > 0;
       g.nodes.forEach((n) => {
         const st = states[n.id];
         const split = n.id === splitNode;
+        const dim = has && !st && !split, toff = dim ? " t-off" : "";
         const rx = n.kind === "start" || n.kind === "end" ? 14 : 4;
         svg.appendChild(el("rect", { x: n.x, y: n.y, width: n.w, height: n.h, rx,
-          class: `d-node k-${n.kind}${st ? " st st-" + st : ""}${split ? " split" : ""}` }));
+          class: `d-node k-${n.kind}${st ? " st st-" + st : ""}${split ? " split" : ""}${dim ? " off" : ""}` }));
         const marks = [n.kindLabel || KIND_LABEL[n.kind] || ""];
         if (st) marks.push(STATE_MARK[st] || STATE_MARK.path);
         if (split) marks.push(`◆ ${splitLabel} 보기와 갈림`);
-        svg.appendChild(el("text", { x: n.x + 10, y: n.y + 16, "font-size": 10, class: "d-sub" + (st || split ? " b" : "") }, marks.join(" · ")));
+        svg.appendChild(el("text", { x: n.x + 10, y: n.y + 16, "font-size": 10, class: "d-sub" + (st || split ? " b" : "") + toff }, marks.join(" · ")));
         n.lines.forEach((ln, k) => svg.appendChild(el("text", { x: n.x + 10, y: n.y + 8 + 16 + 17 * k + 13, "font-size": 13,
-          class: "d-txt" + (n.kind === "decision" || n.kind === "end" ? " b" : "") }, ln)));
+          class: "d-txt" + (n.kind === "decision" || n.kind === "end" || st ? " b" : "") + toff }, ln)));
       });
       g.edges.forEach((e) => {
         const lab = e.label;
         if (!lab) return;
-        svg.appendChild(el("rect", { x: lab.x, y: lab.y, width: lab.w, height: lab.h, rx: 3, class: "d-lab" }));
-        lab.lines.forEach((ln, k) => svg.appendChild(el("text", { x: lab.x + lab.w / 2, y: lab.y + 13 + 13 * k, "font-size": 11, "text-anchor": "middle", class: "d-txt" }, ln)));
+        const dim = has && !pathEdges.has(e.from + ">" + e.to);
+        svg.appendChild(el("rect", { x: lab.x, y: lab.y, width: lab.w, height: lab.h, rx: 3, class: "d-lab" + (dim ? " off" : "") }));
+        lab.lines.forEach((ln, k) => svg.appendChild(el("text", { x: lab.x + lab.w / 2, y: lab.y + 13 + 13 * k, "font-size": 11, "text-anchor": "middle",
+          class: "d-txt" + (dim ? " t-off" : " b") }, ln)));
       });
       box.textContent = "";
       box.appendChild(svg);
@@ -591,13 +617,56 @@ const LEARN = (() => {
       + `.d-node{fill:${v("--d-node", "#ffffff")};stroke:${stroke};stroke-width:1.2}.k-decision{fill:${v("--d-decision", "#e9f0fa")}}`
       + `.k-info{fill:${v("--d-info", "#f8fafc")}}.k-alert{fill:${v("--d-alert", "#f1f4f8")}}.k-end{fill:${v("--d-end", "#f4f7fb")}}`
       + `.d-node.st{stroke:${on};stroke-width:3}.st-unknown,.st-not_done{stroke-dasharray:6 3}.d-node.split{stroke:${v("--d-split", "#d92d20")};stroke-width:3}`
-      + `.d-sub{fill:${v("--d-sub", "#5c6c82")}}.d-txt{fill:${v("--d-txt", "#182334")}}.b{font-weight:700}.d-lab{fill:${bg};stroke:${stroke};stroke-width:.6}`;
+      + `.d-sub{fill:${v("--d-sub", "#5c6c82")}}.d-txt{fill:${v("--d-txt", "#182334")}}.b{font-weight:700}.d-lab{fill:${bg};stroke:${stroke};stroke-width:.6}`
+      // 이 사례의 경로만 진하게 — style.css 의 같은 규칙과 맞춘다(규칙의 순서도: 채움 → 정보 없음은 흰 바탕 → 흐리게)
+      + `.d-node.st{fill:${v("--d-on-soft", "#d6e6fb")}}.d-node.st-unknown,.d-node.st-not_done{fill:${v("--d-node", "#ffffff")}}`
+      + `.d-node.off,.t-off,.d-edge.off,.d-lab.off{opacity:.42}`;
   }
 
   /* ---------- 인출 확인 · 변형 문제 · 자기 표시 ---------- */
   // 판형 12 — 단원 끝의 「30초 구술 체크」. 종이(필기장) 안에서는 단추가 숨으므로 답을 가림막(.tape) 아래에 두고 톡 쳐서 연다.
+  /* 30초 퀴즈(2026-11-23 사용자 「말로 확인하는 것보다 간단한 퀴즈로」) — 구술 체크의 질문마다 보기 넷을 만든다. 정답은 그 질문의 답,
+     오답은 같은 정리본의 다른 질문의 답이고, 셋이 안 되면(질문이 서넛뿐인 정리본이 많다) 같은 과의 다른 정리본 답에서 길이가 비슷한 것으로
+     채운다. 새 콘텐츠를 쓰지 않는다 — 그래서 보기가 어색한 문항이 섞일 수 있다(사용자가 알고 고른 방식).
+     보기와 그 순서는 정리본 id · 질문 번호 · 글자로 **정해진다**(무작위가 아니다) — 종이 위에 써 둔 필기가 보기 자리와 어긋나지 않게. */
+  function qzHash(s) {
+    let h = 2166136261;
+    for (let x = 0; x < s.length; x++) { h ^= s.charCodeAt(x); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+  function quizOptions(c, i) {
+    const ans = String(c.checks[i].a), key = String(c.id) + "#" + i, own = [], seen = {};
+    seen[ans] = 1;
+    c.checks.forEach((k, j) => { const t = String(k.a); if (j !== i && !seen[t]) { seen[t] = 1; own.push({ t, s: qzHash(key + t) }); } });
+    let pool = own.sort((a, b) => a.s - b.s).slice(0, 3);
+    if (pool.length < 3) {
+      const far = (t) => (Math.abs(t.length - ans.length) > Math.max(12, ans.length * 0.6) ? 1 : 0);      // 길이로 답이 드러나지 않게 비슷한 길이 먼저
+      const ext = [];
+      Object.keys(CONCEPTS).forEach((id) => {
+        const o = CONCEPTS[id];
+        if (id === c.id || !c.topic || o.topic !== c.topic) return;
+        (o.checks || []).forEach((k) => { const t = String(k.a); if (!seen[t]) { seen[t] = 1; ext.push({ t, far: far(t), s: qzHash(key + t) }); } });
+      });
+      ext.sort((a, b) => a.far - b.far || a.s - b.s);
+      pool = pool.concat(ext.slice(0, 3 - pool.length));
+    }
+    const opts = pool.map((x) => ({ t: x.t, ok: false }));
+    opts.splice(qzHash(key + "@") % (opts.length + 1), 0, { t: ans, ok: true });
+    return opts;
+  }
+  const QZ_NUM = ["①", "②", "③", "④"];
+  // 절의 이름표(data-bk) — 필기장은 절 제목으로 필기를 붙들어 둔다. 제목을 바꿔도 전에 쓴 필기가 이 절에 남도록 옛 이름을 그대로 준다.
+  const CHECKS_KEY = "30초 구술 체크 — 소리 내어 답해 보고 ";
+  function quizHtml(c) {
+    return `<div class="cn-checks" data-bk="${CHECKS_KEY}"><div class="cn-sec">30초 퀴즈 — 맞는 답을 톡 쳐서 고르세요<span class="qz-score" data-qz-score></span></div>`
+      + c.checks.map((k, i) => `<div class="qz" data-qz-i="${i}"><div class="qz-q">Q${i + 1}. ${escapeHtml(k.q)}</div><div class="qz-opts">`
+        + quizOptions(c, i).map((o, j) => `<div class="qz-opt" role="button" tabindex="0" data-qz="${i}:${j}"><span class="n">${QZ_NUM[j]}</span><span>${escapeHtml(o.t)}</span></div>`).join("")
+        + `</div></div>`).join("")
+      + `</div>`;
+  }
   function checksHtml(c, f2) {
     if (!c.checks || !c.checks.length) return "";
+    if (f2 && c.checks.length >= 2) return quizHtml(c);
     return `<div class="cn-checks"><div class="cn-sec">${f2 ? "30초 구술 체크 — 소리 내어 답해 보고 여세요" : "인출 확인 — 먼저 떠올려 보고 답을 여세요"}</div>`
       + c.checks.map((k, i) => `<div class="ck" data-ck="${i}"><div class="ck-q">Q${i + 1}. ${escapeHtml(k.q)}</div>`
         + (f2 ? `<div class="ck-tape"><span class="tape" data-tape="1">${escapeHtml(k.a)}</span></div>` : "")
@@ -662,6 +731,32 @@ const LEARN = (() => {
     });
     box.querySelectorAll(".cn-fig img").forEach((img) => {
       img.onclick = () => { if (typeof openZoom === "function") openZoom(img.getAttribute("src"), img.getAttribute("alt")); };
+    });
+    // 30초 퀴즈 — 보기를 톡 치면 바로 채점한다(한 질문에 한 번). 결과는 인출 확인 기록(check)으로 남는다. 종이 안에서는 필기장이 톡을 넘겨 준다.
+    box.querySelectorAll(".qz-opt").forEach((el) => {
+      el.onclick = () => {
+        const wrap = el.closest(".qz");
+        if (!wrap || wrap.classList.contains("done")) return;
+        const ij = el.getAttribute("data-qz").split(":").map(Number), opts = quizOptions(c, ij[0]);
+        const ok = !!(opts[ij[1]] && opts[ij[1]].ok);
+        wrap.classList.add("done");
+        el.classList.add(ok ? "ok" : "no", "pick");
+        if (!ok) { const right = wrap.querySelectorAll(".qz-opt")[opts.findIndex((o) => o.ok)]; if (right) right.classList.add("ok"); }
+        add({ kind: "check", objective: c.id, idx: ij[0], result: ok ? "ok" : "miss", phase: phaseFor(c.id) });
+        const sc = box.querySelector("[data-qz-score]"), all = box.querySelectorAll(".qz").length, done = box.querySelectorAll(".qz.done").length;
+        if (sc) sc.textContent = `맞힘 ${box.querySelectorAll(".qz-opt.pick.ok").length} / ${done}` + (done === all ? " · 다 풀었습니다" : "");
+      };
+    });
+    // 도식의 「내가 틀린 사례」 칩 — 그 사례의 경로로 도식을 다시 그린다(도식의 크기는 그대로라 종이가 밀리지 않는다)
+    box.querySelectorAll("[data-case]").forEach((ch) => {
+      ch.onclick = () => {
+        const cases = box._cases || [], i = Number(ch.getAttribute("data-case")), q = cases[i];
+        if (!q) return;
+        box.querySelectorAll("[data-case]").forEach((x) => x.classList.toggle("on", x === ch));
+        const det = box.querySelector(".dia-text");
+        drawDiagram(box.querySelector(".dia-box"), c, q, "", "", det);
+        if (det) { const ol = det.querySelector(".steps"); if (ol) ol.outerHTML = stepsHtml(c, q, "", ""); }
+      };
     });
     box.querySelectorAll("button[data-ck-open]").forEach((b) => {
       b.onclick = () => { const a = b.parentNode.querySelector(".ck-a"); a.hidden = false; b.hidden = true; };
@@ -870,5 +965,5 @@ const LEARN = (() => {
 
   return { onAnswer, onVariantAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
     syncLearning, learnSyncState, states, schedule, dueKeys, pickRetest, reviewSteps, load, concept, STATUS, flagsOf, setFlag,
-    readCount, markRead };
+    readCount, markRead, wrongCases, quizOptions };
 })();
