@@ -382,7 +382,7 @@ const LEARN = (() => {
       h += `<details class="cn-part"><summary>기준·권고 (${c.criteria.length})</summary>` + c.criteria.map((cr) => criterionHtml(c, cr)).join("") + `</details>`;
     }
     if (f2) h += issuesHtml(c);
-    h += checksHtml(c, f2) + variantsHtml(c) + selfHtml(c) + (f2 ? supportsHtml(c) : "") + papersHtml(c) + sourcesHtml(c) + `</article>`;
+    h += checksHtml(c, f2) + variantsHtml(c) + (f2 ? supportsHtml(c) : "") + selfHtml(c) + papersHtml(c) + sourcesHtml(c) + `</article>`;
     box.innerHTML = h;
     drawDiagram(box.querySelector(".dia-box"), c, q, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
     bindConcept(box, c);
