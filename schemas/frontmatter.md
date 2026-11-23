@@ -349,6 +349,10 @@ id 는 `cn.<과>.<주제>.<학습목표>`(파일 이름 = id). 같은 질환이�
 label_basis(dataset_expert|published_figure)·reference·paper·doi·paper_cited_by·credit·license·url·asset` + 선택 `from_question·privacy_check·crop`) ·
 `figures_wanted`(요청 — `{source, shows, codes|diagnoses|genes|tissues}` 또는 PMC_OA `{query, caption_terms, modality}`, 등록 안 된 출처는 `note`) ·
 `figures_none`(그림이 필요 없는 이유) · `figures_rejected`(`{asset, reason}` — 수확이 다음 후보를 받는다).
+**시험 포인트 · 체크리스트(2026-11-23, 둘 다 선택)** — `exam_points: {kmle: "…", usmle: "…"}`: 국내 기준 · 약제 · 역학이 미국과 **다를 때만** 한 줄씩
+(같으면 쓰지 않는다 — 「시험 쟁점」의 「시험에서는」과 겹치지 않게, 쟁점이 아닌 출제 맥락만). `checklists: [{name, items: [{label, points}] 또는 [글], cutoffs}]`:
+항목을 세어 판정하는 점수 · 진단 기준(CURB-65 · CHA2DS2-VASc · Wells · Jones). 수치와 항목은 대조한 출처의 것만 적고 `[[출처: 위치]]` 를 단다.
+둘 다 학습서 · 앱이 상자로 그린다(`note_parts.py` · 판형 12).
 **기초 뿌리(2026-11-21)** — 임상 정리본: `roots`(그 판단 밑의 기초 정리본 id 목록 — 있어야 하고 `layer: basic` 이어야 한다) 또는
 `roots_none`(기초 기전이 없는 이유 한 줄). 둘을 함께 쓰지 않는다. 기초 정리본: `layer: basic`(없으면 clinical) ·
 `discipline`(physiology/pathology/pharmacology/biochemistry/genetics/microbiology/immunology/anatomy/histology/embryology —

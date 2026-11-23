@@ -19,7 +19,9 @@ import sys
 from pathlib import Path
 
 import decision_diagram as dd
-from concepts import LETTERS, linked_questions, load_concepts, load_questions, render_cites, safe_url
+import note_parts as parts
+import outline as ol
+from concepts import LETTERS, linked_questions, load_concepts, load_questions, render_cites, root_supports, safe_url
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "concepts.js"
@@ -71,12 +73,52 @@ def blocking(errs: list[str]) -> list[str]:
     return [e for e in errs if "[WARN]" not in e]
 
 
+def _issues(c: dict) -> dict | None:
+    """「시험 쟁점」 절을 풀어 싣는다(note_parts.exam_issues) — 해당 없음이면 대조한 곳만, 쟁점이면 네 칸. 절이 없으면 None."""
+    sec = next((s for s in c["sections"] if parts.is_issue_title(s["title"])), None)
+    if not sec:
+        return None
+    r = parts.exam_issues(sec["html"])
+    if r["none"]:
+        return {"none": True, "ref": r["ref"], "items": []}
+    keys = ("exam", "other", "why", "onexam", "body")
+    return {"none": False, "ref": "", "items": [
+        dict({k: str(it[k]) for k in ("id", "kind", "title")}, **{k: render_cites(it[k], c, "web") for k in keys}) for it in r["issues"]]}
+
+
+def _exam_points(c: dict) -> dict:
+    """「KMLE / USMLE 포인트」(선택 필드 exam_points) — 국내 기준 · 약제 · 역학이 미국과 다를 때 한 줄씩."""
+    ep = c.get("exam_points") if isinstance(c.get("exam_points"), dict) else {}
+    return {k: _web(ep.get(k), c) for k in ("kmle", "usmle") if str(ep.get(k) or "").strip()}
+
+
+def _checklists(c: dict) -> list[dict]:
+    """점수 · 진단 기준 체크리스트(선택 필드 checklists) — CURB-65 · CHA2DS2-VASc · Wells · Jones 처럼 항목을 세는 기준."""
+    out = []
+    for ck in c.get("checklists") or []:
+        if not isinstance(ck, dict) or not ck.get("name") or not isinstance(ck.get("items"), list):
+            continue
+        items = []
+        for it in ck["items"]:
+            if isinstance(it, dict) and it.get("label"):
+                items.append({"label": _web(it.get("label"), c), "points": str(it.get("points", "") or "")})
+            elif isinstance(it, str) and it.strip():
+                items.append({"label": _web(it, c), "points": ""})
+        if items:
+            out.append({"name": str(ck["name"]), "items": items, "cut": _web(ck.get("cutoffs"), c), "note": _web(ck.get("note"), c)})
+    return out
+
+
 def build() -> tuple[dict, list[str]]:
     concepts, errors = load_concepts()
     links = linked_questions(load_questions())
+    order = parts.outline_order(ol.load()[0])       # 서가를 기본틀(해리슨 서술 순서)로 늘어놓는다
+    series = parts.series(concepts)
+    supports = root_supports(concepts)
     out = {}
     for cid, c in concepts.items():
         spec = c.get("diagram")
+        slot = str(c.get("outline") or "")
         out[cid] = {
             "id": cid, "title": str(c.get("title", "")), "objective": str(c.get("objective", "")),
             "objectiveKind": str(c.get("objective_kind", "")), "condition": str(c.get("condition", "")),
@@ -84,7 +126,18 @@ def build() -> tuple[dict, list[str]]:
             "version": c.get("version"), "updated": str(c.get("updated", c.get("date", "")) or ""),
             "reviewStatus": str(c.get("review_status", "unreviewed")), "hash": c["hash"],
             "summary": [str(x) for x in c.get("summary") or []],
-            "sections": [dict(s, html=render_cites(s["html"], c, "web")) for s in c["sections"]],
+            # 판형 12(2026-11-23) — 요약의 칸 · 시험 쟁점 풀이 · 기초 뿌리 · 같은 질환 묶음 · 기본틀 순서. 풀이는 note_parts(PDF 와 같은 함수).
+            "slots": [dict(x, html=_web(x["text"], c),
+                            groups=[{"lead": _web(g["lead"], c), "items": [_web(i, c) for i in g["items"]]} for g in x["groups"]])
+                       for x in parts.summary_slots(c.get("summary"))],
+            "issues": _issues(c),
+            "layer": "basic" if c.get("layer") == "basic" else "clinical", "discipline": str(c.get("discipline") or ""),
+            "roots": [str(x) for x in c.get("roots") or []], "rootsNone": str(c.get("roots_none") or ""),
+            "rootSupports": supports.get(cid, []),
+            "outline": slot, "order": order[slot][1] if slot in order else None,
+            "series": series.get(cid, []),
+            "examPoints": _exam_points(c), "checklists": _checklists(c),
+            "sections": [dict(s, html=render_cites(s["html"], c, "web"), issue=parts.is_issue_title(s["title"])) for s in c["sections"]],
             "tables": [{"title": str(tb.get("title", "")), "columns": [str(x) for x in tb.get("columns") or []],
                         "rows": [[_web(x, c) for x in r] for r in tb.get("rows") or []], "note": _web(tb.get("note"), c)}
                        for tb in c.get("tables") or [] if isinstance(tb, dict)],

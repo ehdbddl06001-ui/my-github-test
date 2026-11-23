@@ -42,8 +42,9 @@ import yaml
 import decision_diagram as dd
 import english_terms as et
 import learning_log as ll
+import note_parts as parts
 import outline as ol
-from concepts import BASIS, linked_questions, load_concepts, load_questions, render_cites, safe_url, source_numbers
+from concepts import BASIS, linked_questions, load_concepts, load_questions, render_cites, root_supports, safe_url, source_numbers
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = Path(__file__).with_name("books_config.yaml")
@@ -97,6 +98,9 @@ class Unit:
     flags: list[str] = field(default_factory=list)   # 출처 개정 확인 필요 등
     slot: str = ""                # 기본틀(content/outline/subjects.yaml)의 슬롯 id — 책 안의 자리
     group: str = ""               # 그 슬롯이 속한 묶음(해리슨 절 이름 등) — 차례의 중간 머리글
+    # 판형 12 — 다른 단원과의 이음: series(같은 질환의 단원들) · roots(기초 뿌리) · supports(기초 단원이 받치는 임상 단원).
+    # 항목마다 {key, title, kind, book} — 같은 책이면 쪽으로 가는 링크, 다른 책이면 책 이름을 적는다.
+    links: dict = field(default_factory=dict)
 
     @property
     def anchor(self) -> str:
@@ -184,6 +188,18 @@ def plan(concepts: dict, questions: dict, S: dict[str, ll.State], cfg: dict, sou
             books[home].elsewhere.append((str(c.get("title")), at))
     for b in books.values():
         b.elsewhere.sort(key=lambda x: (x[1], x[0]))
+    # 판형 12 — 단원끼리의 이음(같은 질환 · 기초 뿌리 · 받치는 임상 단원). 원고를 고치지 않고 id · roots 에서 계산한다.
+    where = {u.key: b.name for b in books.values() for u in b.units}
+    ser, sup = parts.series(concepts), root_supports(concepts)
+    ref = lambda cid: {"key": cid, "title": str(concepts[cid].get("title")), "kind": str(concepts[cid].get("objective_kind") or ""),
+                       "book": where.get(cid, "")}
+    for b in books.values():
+        for u in b.units:
+            c = u.concept or {}
+            lk = {"series": [ref(x["id"]) for x in ser.get(u.key, []) if x["id"] in concepts],
+                  "roots": [ref(r) for r in c.get("roots") or [] if r in concepts],
+                  "supports": [ref(x) for x in sup.get(u.key, []) if x in concepts] if c.get("layer") == "basic" else []}
+            u.links = {k: v for k, v in lk.items() if v}
     # 단원 순서 = 기본틀(해리슨 서술 순서). 배치되지 않은 단원은 맨 뒤에 제목순으로 남는다.
     slots = ol.index(ol.load()[0])
     for b in books.values():
@@ -237,10 +253,13 @@ def auto_pitfalls(u: Unit, questions: dict) -> list[dict]:
 
 # ── 지문(PDF 에 실리는 것만 — 학습 활동 기록은 넣지 않는다) ──────────────
 def unit_fingerprint(u: Unit, questions: dict | None = None) -> dict:
-    return {"concept": (u.concept or {}).get("hash"), "version": (u.concept or {}).get("version"),
-            "title": u.title, "src": u.flags,
-            "auto": [p["key"] for p in auto_pitfalls(u, questions or {})],
-            "stub": [] if u.concept else [(q, (questions or {}).get(q, {}).get("explanation")) for q in u.questions]}
+    fp = {"concept": (u.concept or {}).get("hash"), "version": (u.concept or {}).get("version"),
+          "title": u.title, "src": u.flags,
+          "auto": [p["key"] for p in auto_pitfalls(u, questions or {})],
+          "stub": [] if u.concept else [(q, (questions or {}).get(q, {}).get("explanation")) for q in u.questions]}
+    if u.links:                                     # 있을 때만 — 이음이 없는 단원의 지문은 그대로다
+        fp["links"] = {k: [(x["key"], x["title"], x["book"]) for x in v] for k, v in u.links.items()}
+    return fp
 
 
 def volume_hash(title: str, units: list[Unit], pending: list, cfg: dict, questions: dict | None = None,
@@ -378,9 +397,63 @@ figure.fig .fl{margin:0.5mm 0}
 figure.fig .fc{font-size:6.6pt; color:var(--muted); overflow-wrap:anywhere}
 
 ul.pit{list-style:none; padding:0; margin:0}
-ul.pit li{background:var(--warn-soft); border-left:0.9mm solid var(--warn); padding:0.8mm 1.6mm; margin:0 0 0.7mm; break-inside:avoid}
-ul.pit li > b:first-child{color:var(--warn)}
+ul.pit li{background:#f3f6fa; border-left:0.9mm solid #9aa6b6; padding:0.8mm 1.6mm; margin:0 0 0.7mm; break-inside:avoid}
+ul.pit li > b:first-child{color:var(--ink)}
 .pit .ex{color:var(--muted)}
+
+/* 판형 12(2026-11-23) — 한눈에 칸 · 같은 질환 · 기초 뿌리 · 기준 카드 · 혼동 카드 · 시험 쟁점 카드 · 절 지도.
+   한 가지 톤(네이비 + 중립 회색) · 글자 라벨만 — 필기 앱에서 펜 · 형광펜 색이 돋보이게. 풀이는 note_parts.py(웹 앱과 같은 함수). */
+.um .ok{border:0.4pt solid var(--rule); border-radius:0.8mm; padding:0 1mm; white-space:nowrap}
+.hx{font-size:7.4pt; line-height:1.35; margin:0 0 0.8mm}
+.hx .k{font-weight:700; color:var(--accent); margin-right:1.2mm}
+.hx .here{font-weight:700; border:0.4pt solid var(--accent); border-radius:0.8mm; padding:0 0.8mm}
+.hx .sep{color:var(--muted); margin:0 1mm}
+.slots{margin:0; font-size:8pt}
+.slot{display:grid; grid-template-columns:17mm 1fr; column-gap:1.5mm; border:0.5pt solid var(--rule); border-radius:1mm;
+      padding:0.8mm 1.5mm; margin:0 0 0.6mm; break-inside:avoid}
+.slot .sk{font-size:6.9pt; font-weight:700; color:var(--accent); line-height:1.5}
+.slot.k-conclusion{background:var(--accent-soft); border-left:0.9mm solid var(--accent)}
+.slot.k-conclusion .st{font-weight:700}
+.slot.k-avoid{border-left:0.9mm solid #9aa6b6}
+ul.sl{list-style:none; margin:0; padding:0}
+ul.sl li{margin:0; padding:0 0 0 1.5mm; border-left:0.5mm solid #b9c3d1; break-inside:avoid}
+ul.sl li + li{margin-top:0.5mm}
+ul.sl.sub{margin:0.4mm 0 0 0.5mm}
+ul.sl + .sll, ul.sl + ul.sl{margin-top:0.7mm}
+.slot.k-conclusion ul.sl li{border-left-color:var(--accent)}
+ul.more{margin:0.4mm 0 0; padding-left:3.6mm; font-size:8pt}
+ul.more li{margin:0 0 0.3mm; break-inside:avoid}
+.pk{font-size:6.6pt; font-weight:700; color:var(--accent); margin-right:1.2mm}
+.pc{border:0.5pt solid var(--rule); border-radius:1mm; margin:0 0 0.7mm; break-inside:avoid; overflow:hidden}
+.pc .pa{background:#f3f6fa; padding:0.7mm 1.5mm; font-weight:700}
+.pc .pb{padding:0.7mm 1.5mm}
+.pc .px{color:var(--muted); border-top:0.35pt dashed var(--rule); margin-top:0.5mm; padding-top:0.5mm}
+.crit{border:0.5pt solid var(--rule); border-left:0.9mm solid var(--accent); border-radius:1mm; padding:0.8mm 1.5mm; margin:0.6mm 0 0.8mm; break-inside:avoid; font-size:7.8pt; background:#fbfcfe}
+.crit .ch{font-weight:700; color:var(--accent)}
+.crit .ct{font-size:6.4pt; color:var(--muted); font-weight:400; margin-left:1mm}
+.crit .cs{margin:0.3mm 0}
+.crit .cm{font-size:7.2pt; color:var(--muted)}
+.iz{border:0.5pt solid var(--rule); border-radius:1mm; padding:0.8mm 1.5mm; margin:0 0 0.8mm; break-inside:avoid; background:#fbfcfe; font-size:7.8pt}
+.iz .ih{font-weight:700; margin-bottom:0.5mm}
+.iz .ii{font-size:6.6pt; border:0.4pt solid var(--accent); border-radius:0.7mm; padding:0 0.8mm; margin-right:1mm; color:var(--accent)}
+.iz .i2{display:grid; grid-template-columns:1fr 1fr; column-gap:1.2mm}
+.iz .i2 > div{border:0.4pt solid var(--rule); border-radius:0.8mm; padding:0.5mm 1mm; background:#fff}
+.iz .iw{margin-top:0.5mm}
+.iz .is{margin-top:0.6mm; padding:0.5mm 1.2mm; border-left:0.9mm solid var(--accent); background:var(--accent-soft); font-weight:700}
+.iz.note{color:var(--muted); font-size:7.4pt}
+.cl{border:0.5pt solid var(--rule); border-radius:1mm; padding:0.8mm 1.5mm; margin:0 0 0.8mm; break-inside:avoid; font-size:7.8pt}
+.cl .lh{font-weight:700; color:var(--accent); margin-bottom:0.3mm}
+.cl ul{list-style:none; margin:0; padding:0}
+.cl li{display:flex; gap:1.2mm; align-items:baseline; border-bottom:0.35pt dashed var(--rule); padding:0.3mm 0; margin:0}
+.cl li:last-child{border-bottom:0}
+.cl .bx{flex:none; width:1.9mm; height:1.9mm; border:0.5pt solid #7f8b9c; border-radius:0.4mm}
+.cl .lt{flex:1 1 auto}
+.cl .lp{flex:none; font-weight:700; color:var(--accent)}
+.cl .lc{margin-top:0.5mm}
+.cmap{border:0.5pt solid var(--rule); border-radius:1mm; padding:1mm 1.5mm 0.6mm; margin:3mm 0 1mm; break-inside:avoid}
+.cmap .mh{font-weight:700; font-size:8.6pt; color:var(--accent); margin-bottom:0.5mm}
+.cmap table{font-size:7.2pt; border-top:0.6pt solid var(--ink); border-bottom:0.6pt solid var(--ink); margin:0}
+.cmap td.mk{color:var(--muted); white-space:nowrap}
 
 .refs{font-size:6.8pt; line-height:1.28; padding-left:4mm; margin:0 0 0.5mm; color:#3d4857}
 .refs li{margin-bottom:0.2mm}
@@ -502,6 +575,80 @@ def criteria_tables(c: dict, anchor: str) -> str:
     return "".join(out)
 
 
+def criteria_cards(c: dict, anchor: str) -> list[str]:
+    """기준 하나 = 한 단 카드 하나(판형 12). 이름 · 내용(수치 · 컷오프)을 먼저 읽고, 대상 · 예외는 작게 덧붙인다.
+
+    판형 11 은 종류별 「항목 표」(두 단 전체)로 실었는데, 같은 수치가 본문 표에도 있어 길게 겹쳤고 두 단 전체 블록이라
+    도식 바로 뒤에서 단을 억지로 나눴다. 다른 지침의 기준은 카드를 나눠 합치지 않는다."""
+    out = []
+    for cr in c.get("criteria") or []:
+        if not isinstance(cr, dict):
+            continue
+        loc = f": {cr['locator']}" if cr.get("locator") else ""
+        cite = render_cites(esc(f"[[{cr['source']}{loc}]]"), c, "pdf", anchor) if cr.get("source") else ""
+        ex = "·".join(e.upper() for e in cr.get("exams") or [])
+        tag = " · ".join(x for x in (str(cr.get("kind") or ""), ex, BASIS.get(cr.get("basis"), "")) if x)
+        st = _cell(cr.get("statement"), c, anchor)
+        out.append(f'<div class="crit"><div class="ch">{esc(cr.get("name"))}<span class="ct">{esc(tag)}</span></div>'
+                   f'<div class="cs">{st}{" " + cite if cite and cite not in st else ""}</div>'
+                   + (f'<div class="cm"><span class="pk">대상</span>{esc(cr.get("population"))}</div>' if cr.get("population") else "")
+                   + (f'<div class="cm"><span class="pk">예외</span>{_cell(cr["exceptions"], c, anchor)}</div>' if cr.get("exceptions") else "")
+                   + "</div>")
+    return out
+
+
+def issue_cards(c: dict, anchor: str, html_: str) -> tuple[bool, list[str]]:
+    """「시험 쟁점」 절 → (해당 없음인가, 카드들). 네 칸을 못 찾은 항목은 글 그대로 싣는다(모양을 지어내지 않는다)."""
+    r = parts.exam_issues(html_)
+    if r["none"]:
+        return True, []
+    cell = lambda k, v, cls: (f'<div class="{cls}"><span class="pk">{k}</span>{render_cites(v, c, "pdf", anchor)}</div>' if v else "")
+    out = []
+    for it in r["issues"]:
+        if not (it["exam"] or it["other"] or it["why"] or it["onexam"]):
+            out.append(f'<div class="iz note">{render_cites(it["body"], c, "pdf", anchor)}</div>')
+            continue
+        head = " · ".join(x for x in (it["kind"], it["title"]) if x)
+        out.append(f'<div class="iz"><div class="ih"><span class="ii">{esc(it["id"])}</span>{esc(head)}</div>'
+                   + (f'<div>{render_cites(it["body"], c, "pdf", anchor)}</div>' if it["body"] else "")
+                   + f'<div class="i2">{cell("시험 기준", it["exam"], "ia")}{cell("다른 기준", it["other"], "io")}</div>'
+                   + cell("왜 다른가", it["why"], "iw") + cell("시험에서는", it["onexam"], "is") + "</div>")
+    return False, out
+
+
+def checklist_cards(c: dict, anchor: str) -> list[str]:
+    """점수 · 진단 기준 체크리스트(선택 필드 checklists — CURB-65 · CHA2DS2-VASc · Wells · Jones 처럼 항목을 세는 기준)."""
+    out = []
+    for ck in c.get("checklists") or []:
+        if not isinstance(ck, dict) or not ck.get("name") or not isinstance(ck.get("items"), list):
+            continue
+        items = []
+        for it in ck["items"]:
+            label, pts = (it.get("label"), it.get("points")) if isinstance(it, dict) else (it, "")
+            if str(label or "").strip():
+                items.append(f'<li><span class="bx"></span><span class="lt">{_cell(label, c, anchor)}</span>'
+                             + (f'<span class="lp">{esc(pts)}</span>' if str(pts or "").strip() else "") + "</li>")
+        if items:
+            out.append(f'<div class="cl"><div class="lh">{esc(ck["name"])}</div><ul>{"".join(items)}</ul>'
+                       + (f'<div class="lc"><span class="pk">판정</span>{_cell(ck["cutoffs"], c, anchor)}</div>' if ck.get("cutoffs") else "")
+                       + "</div>")
+    return out
+
+
+def link_line(label: str, items: list[dict], book_title: str, here: str = "") -> str:
+    """머리의 한 줄 — 같은 질환 · 기초 뿌리. 같은 책이면 그 단원으로 가는 링크, 다른 책이면 책 이름을 괄호로."""
+    def one(x: dict) -> str:
+        text = x.get("kind") or x["title"]
+        if x["key"] == here:
+            return f'<span class="here">{esc(text)}</span>'
+        name = esc(x["title"] if label != "같은 질환" else f'{text} — {x["title"]}')
+        anchor = "u-" + re.sub(r"[^a-z0-9]+", "-", x["key"].lower()).strip("-")
+        return (f'<a href="#{anchor}">{name}</a>' if x.get("book") == book_title
+                else f'{name}<span class="muted">({esc(x.get("book") or "다른 책")})</span>')
+    sep = '<span class="sep">→</span>' if label == "같은 질환" else '<span class="sep">·</span>'
+    return f'<div class="hx"><span class="k">{esc(label)}</span>{sep.join(one(x) for x in items)}</div>'
+
+
 def diagram_html(c: dict, anchor: str, force_full: bool = False, shrink: float = 1.0, pad: float = 0.0,
                  force_col: bool = False) -> tuple[str, dict | None]:
     """두 단 폭 도식은 「도식에 담기지 않은 조건·예외」까지 한 덩어리(두 단 폭·쪼개지 않음) — 쪽 끝 좁은 틈에서
@@ -575,29 +722,67 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
     meta = [esc(book_title), f"정리본 v{esc(c.get('version'))}", f"{esc(c.get('updated', c.get('date')))} 갱신"]
     rs = c.get("review_status")
     meta.append("의학 내용 검토 완료" if rs == "reviewed" else "의학 내용 검토 전(형식 검사만)")
-    flags = "".join(f' · <span class="flag">⚠ {esc(f)}</span>' for f in u.flags)
+    flags = "".join(f' · <span class="flag">확인 필요 — {esc(f)}</span>' for f in u.flags)
+    secs = c.get("sections") or []
+    # 「시험 쟁점」(판형 12) — 해당 없음 한 줄이면 절을 세우지 않고 머리에 「해리슨 대조 · 충돌 없음」으로 줄이고, 쟁점이 있으면 카드로 싣는다
+    issue_i = next((i for i, s in enumerate(secs) if parts.is_issue_title(s["title"])), None)
+    issue_none, issue_blocks = issue_cards(c, a, secs[issue_i]["html"]) if issue_i is not None else (False, [])
+    if issue_none:
+        meta.append('<span class="ok">해리슨 대조 · 충돌 없음</span>')
     # 제목·학습 목표·한눈에를 한 덩어리로 — 단 끝에 제목만 떨어지지 않게(사용자 2026-09-27)
     head = f'<div class="uh" id="{a}"><h2>{esc(u.title)}</h2><div class="um">{" · ".join(meta)}{flags}</div></div>'
     if c.get("objective"):
         head += f'<div class="goal"><span class="k">학습 목표</span>{_cell(c["objective"], c, a)}</div>'
+    if len(u.links.get("series") or []) > 1:
+        head += link_line("같은 질환", u.links["series"], book_title, u.key)
+    ep = c.get("exam_points") if isinstance(c.get("exam_points"), dict) else {}
+    for k_, lab in (("kmle", "KMLE 포인트"), ("usmle", "USMLE 포인트")):      # 국내 기준 · 약제 · 역학이 미국과 다를 때만 적는 한 줄
+        if str(ep.get(k_) or "").strip():
+            head += f'<div class="hx"><span class="k">{lab}</span>{_cell(ep[k_], c, a)}</div>'
+    if u.links.get("roots"):
+        head += link_line("기초 뿌리", u.links["roots"], book_title)
     head = f'<div class="uhg">{head}</div>'
     if c.get("summary"):
-        head += '<div class="sum"><b>한눈에</b><ul>' + "".join(f"<li>{_cell(x, c, a)}</li>" for x in c["summary"]) + "</ul></div>"
+        # 한눈에(판형 12) — 요약의 머리말(결론 · 시험 단서 · 왜 · 쓰지 않는 약)을 칸으로 세운다. 머리말이 없는 줄은 아래 목록으로.
+        slots = parts.summary_slots(c["summary"])
+
+        def lines(s: dict) -> str:
+            """칸 안의 줄 — 한 줄에 이어 쓴 나열(약 이름 · 단서)을 덩이마다 줄을 바꾼다(note_parts.slot_groups, 앱과 같은 규칙)."""
+            gs = s["groups"]
+            if sum(len(g["items"]) + bool(g["lead"]) for g in gs) <= 1:
+                return _cell(s["text"], c, a)
+            return "".join((f'<div class="sll">{_cell(g["lead"], c, a)}</div>' if g["lead"] else "")
+                           + f'<ul class="sl{" sub" if g["lead"] else ""}">' + "".join(f"<li>{_cell(x, c, a)}</li>" for x in g["items"]) + "</ul>" for g in gs)
+
+        main = [s for s in slots if s["kind"] != "more"]
+        head += '<div class="slots">' + "".join(
+            f'<div class="slot k-{s["kind"]}"><div class="sk">{esc(s["label"])}</div><div class="st">{lines(s)}</div></div>' for s in main) + "</div>"
+        more = [s for s in slots if s["kind"] == "more"]
+        if more:
+            head += '<ul class="more">' + "".join(f"<li>{lines(s)}</li>" for s in more) + "</ul>"
     h = [f'<section class="unit"><div class="unit-head">{head}</div>']
-    secs = c.get("sections") or []
     tables = [t for t in c.get("tables") or [] if isinstance(t, dict)]
     placed: set[str] = set()
     titles = [s["title"] for s in secs]
-    crit_at = next((i for i, t in enumerate(titles) if t.startswith("치료")), len(secs))
+    # 기준 카드의 자리 = 「무엇을 하나」 절의 앞. 판형 2 의 절 이름은 「선택 — …」「권고와 예외」다 — 판형 11 은 「치료…」만 찾아
+    # 판형 2 정리본 전부(212편)에서 기준이 맨 끝(시험 쟁점 뒤)으로 밀렸다.
+    crit_at = next((i for i, t in enumerate(titles) if t.startswith(("치료", "선택", "권고"))), len(secs))
     tx_at = crit_at
-    if crit_end:                  # 배치 탐색: 기준표(두 단 전체)를 본문 끝으로 — 도식 바로 뒤 강제 단 나눔을 피한다
+    if crit_end:                  # 배치 탐색: 기준을 본문 끝으로(판형 11 의 두 단 전체 표 때 쓰던 길 — 카드는 한 단이라 거의 쓰이지 않는다)
         crit_at = len(secs)
+    crit_blocks = [("flow", x) for x in criteria_cards(c, a)]
     # 본문을 블록(제목·문단·목록·표) 단위로 편다 — 큰 도식은 블록 경계 어디에든 끼울 수 있게(빈 공간을 줄이는 배치 탐색용)
     blocks: list[tuple[str, str]] = []            # (kind, html) kind: head · flow · span
     dia_default = None
     for i, s in enumerate(secs):
-        if i == crit_at and c.get("criteria"):
-            blocks.append(("span", criteria_tables(c, a)))
+        if i == crit_at:
+            blocks += crit_blocks
+        if i == issue_i:                                # 시험 쟁점 — 해당 없음이면 싣지 않고(머리의 표시), 쟁점이면 카드
+            if issue_blocks:
+                info["sections"].append(s["title"])
+                blocks.append(("head", f'<h3 id="{a}-s{i}">시험 쟁점</h3>'))
+                blocks += [("flow", x) for x in issue_blocks]
+            continue
         info["sections"].append(s["title"])
         deep_cls = ' class="deep"' if s["deep"] else ""
         blocks.append(("head", f'<h3 id="{a}-s{i}"{deep_cls}>{esc(s["title"])}</h3>'))
@@ -608,25 +793,28 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
                 blocks.append(("span" if tb.get("span") == "full" else "flow", table_html(tb, c, a))); placed.add(tb["id"])
         if i == (tx_at if tx_at < len(secs) else len(secs) - 1):
             dia_default = len(blocks)              # 기본: 치료 절 끝
-    if crit_at >= len(secs) and c.get("criteria"):
-        blocks.append(("span", criteria_tables(c, a)))
+    if crit_at >= len(secs):
+        blocks += crit_blocks
     for tb in tables:
         if tb["id"] not in placed:
             blocks.append(("span" if tb.get("span") == "full" else "flow", table_html(tb, c, a)))
+    cls = checklist_cards(c, a)
+    if cls:
+        blocks.append(("head", "<h3>점수 · 기준 체크리스트</h3>"))
+        blocks += [("flow", x) for x in cls]
     if dia_default is None:
         dia_default = len(blocks)
     pits = [dict(p, cites=p.get("cites") or []) for p in c.get("pitfalls") or []] + auto_pitfalls(u, questions)
     if pits:
         blocks.append(("head", "<h3>혼동하기 쉬운 점</h3>"))
-        items = []
+        # 혼동 카드(판형 12) — 위 칸 「혼동」(무엇과 헷갈리나), 아래 칸 「기준」(그래서 무엇으로 가르나) + 예외. 카드 하나가 블록 하나라
+        # 도식이 카드 사이 어디에든 들어갈 수 있다.
         for pf in pits:
             cites = " ".join(render_cites(esc(f"[[{x}]]"), c, "pdf", a) for x in pf.get("cites") or [])
-            items.append(f"<li><b>{esc(pf['contrast'])}</b> — {_cell(pf['point'], c, a)}"
-                         + (f' <span class="ex">예외: {_cell(pf["exception"], c, a)}</span>' if pf.get("exception") else "")
-                         + (f" {cites}" if cites else "") + "</li>")
-        # 두세 항목씩 나눠 둔다 — 도식이 그 사이에도 들어갈 수 있게(목록은 같은 모양으로 이어 보인다)
-        for k in range(0, len(items), 2):
-            blocks.append(("flow", '<ul class="pit">' + "".join(items[k:k + 2]) + "</ul>"))
+            blocks.append(("flow", f'<div class="pc"><div class="pa"><span class="pk">혼동</span>{esc(pf["contrast"])}</div>'
+                           f'<div class="pb"><span class="pk">기준</span>{_cell(pf["point"], c, a)}{" " + cites if cites else ""}'
+                           + (f'<div class="px"><span class="pk">예외</span>{_cell(pf["exception"], c, a)}</div>' if pf.get("exception") else "")
+                           + "</div></div>"))
     force_full = dia_at == "full"
     choices = [k for k in range(1, len(blocks) + 1) if blocks[k - 1][0] != "head"]
     if dia_at is None or force_full or dia_at not in choices:
@@ -668,6 +856,11 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
         if k < len(blocks):
             merged.append(blocks[k])
     h += [b for _, b in merged]
+    if u.links.get("supports"):                             # 기초 단원 — 이 기전이 받치는 임상 단원(역방향 모음)
+        h.append("<h3>이 기전이 받치는 임상 단원</h3><ul>" + "".join(
+            "<li>" + (f'<a href="#u-{re.sub(r"[^a-z0-9]+", "-", x["key"].lower()).strip("-")}">{esc(x["title"])}</a>' if x.get("book") == book_title
+                      else f'{esc(x["title"])} <span class="muted">({esc(x.get("book") or "다른 책")})</span>') + "</li>"
+            for x in u.links["supports"]) + "</ul>")
     # 근거
     nums = source_numbers(c)
     h.append("<h3>근거</h3><ol class=\"refs\">")
@@ -692,7 +885,26 @@ def book_html(title: str, units: list[Unit], cfg: dict, questions: dict, meta: d
               dia_pos: dict | None = None) -> tuple[str, dict]:
     infos = {}
     bodies = []
+    # 절 지도(판형 12) — 해리슨 절(차례의 중간 머리글)에 단원이 셋 이상이면 그 절 첫머리에 「단원 · 목표 종류 · 핵심 결론」을 한 표로 먼저 보인다.
+    # 원고에서 뽑은 것이다(요약의 「결론:」 줄) — 새 내용을 쓰지 않는다. 결론 줄이 없는 단원은 제목만 싣는다.
+    by_group: dict[str, list[Unit]] = {}
     for u in units:
+        if u.group and u.concept:
+            by_group.setdefault(u.group, []).append(u)
+    mapped: set[str] = set()
+    for u in units:
+        g = u.group
+        if g and g not in mapped and len(by_group.get(g, [])) >= 3:
+            mapped.add(g)
+            rows = []
+            for x in by_group[g]:
+                concl = next((s["text"] for s in parts.summary_slots(x.concept.get("summary")) if s["kind"] == "conclusion"), "")
+                concl = re.sub(r"\s*\[\[[^\]]*\]\]", "", concl)
+                rows.append(f'<tr><td><a href="#{x.anchor}">{esc(x.title)}</a></td>'
+                            f'<td class="mk">{esc(x.concept.get("objective_kind") or "")}</td><td>{esc(concl)}</td></tr>')
+            bodies.append(f'<div class="cmap"><div class="mh">{esc(g)} — 단원 지도</div><table>'
+                          '<colgroup><col style="width:34%"><col style="width:13%"><col></colgroup>'
+                          f'<tbody>{"".join(rows)}</tbody></table></div>')
         uh, info = unit_html(u, cfg, questions, title, (dia_pos or {}).get(u.anchor),
                              bool((dia_pos or {}).get(u.anchor + "#crit_end")), dia_pos)
         bodies.append(uh); infos[u.anchor] = info
