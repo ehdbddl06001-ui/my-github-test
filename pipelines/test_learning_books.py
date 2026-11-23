@@ -1957,6 +1957,18 @@ class LayoutRules(unittest.TestCase):
         pos, _ = bb.settle_bands(us, lambda p: ([band], 8, infos, pm), ([band], 8, infos, pm), {a: 3})
         self.assertEqual(pos, {a: 3})                                        # 나아지지 않으면 원래 배치
 
+    def test_same_diagram_title_prefix_in_two_units_is_not_a_split_diagram(self):
+        # 순환기내과(2026-11-23): 도식 제목 앞 16자가 같은 단원이 둘 — 처음 나온 쪽만 보면 뒤 단원의 도식을 「쪼개졌다」고 오판해 책이 실패했다
+        head = "[도식] 규칙적 좁은 QRS 빈맥 — 국소 심방빈맥 가르기"[:16]
+        self.assertEqual(head, "[도식] 규칙적 좁은 QRS 빈맥 — P파 없는 빈맥"[:16])
+        texts = ["목차", "[도식] 규칙적 좁은 QRS 빈맥 — 국소 심방빈맥 가르기 시작 … 결론 국소 심방빈맥", "본문만 있는 쪽",
+                 "[도식] 규칙적 좁은 QRS 빈맥 — P파 없는 빈맥 시작 … 결론 발작성 상심실빈맥"]
+        self.assertTrue(bb.diagram_on_one_page(texts, head, "국소 심방빈맥"))
+        self.assertTrue(bb.diagram_on_one_page(texts, head, "발작성 상심실빈"))      # 둘째 단원의 도식은 4쪽에 온전히 있다
+        # 정말 쪼개진 도식(제목은 2쪽, 마지막 노드는 3쪽)과 아예 없는 도식은 그대로 잡는다
+        self.assertFalse(bb.diagram_on_one_page(["목차", "[도식] 규칙적 좁은 QRS 빈맥 — 시작", "결론 발작성 상심실빈맥"], head, "발작성 상심실빈"))
+        self.assertFalse(bb.diagram_on_one_page(["목차", "본문"], head, "발작성 상심실빈"))
+
     def test_diagram_fit_is_computed_once(self):
         calls = []
         real = dd.layout

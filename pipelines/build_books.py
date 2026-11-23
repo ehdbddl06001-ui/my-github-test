@@ -995,6 +995,14 @@ def set_metadata(pdf_path: Path, title: str, meta: dict) -> None:
     tmp.replace(pdf_path)
 
 
+def diagram_on_one_page(texts: list[str], head: str, last: str) -> bool:
+    """도식 제목(앞 16자)과 마지막 노드의 글이 **같은 쪽**에 있는가 — 도식이 쪽을 넘어 쪼개지지 않았다는 표지.
+
+    제목 앞부분이 같은 도식이 책에 둘 있으면(순환기내과 「[도식] 규칙적 좁은 QRS 빈맥 — …」 두 단원, 2026-11-23) 그 글이 여러 쪽에서
+    나온다 — 처음 나온 쪽만 보면 다른 단원의 도식을 보고 「한 쪽에 온전히 있지 않다」고 오판해 책이 통째로 실패했다. 나온 쪽을 모두 본다."""
+    return any(head in t and last in t for t in texts)
+
+
 def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, int], infos: dict) -> tuple[list[str], list[str]]:
     """(오류, 참고). 오류가 하나라도 있으면 최신본을 바꾸지 않는다."""
     import pymupdf
@@ -1133,8 +1141,7 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
             errs.append(f"도식이 읽을 크기로 한 쪽에 들어가지 않는다(배율 {fit['scale']}) — 도식을 의미 단위로 나눠라: {u.title}")
         head = f"[도식] {u.concept['diagram'].get('title')}"[:16]
         last = fit["geo"]["nodes"][-1]["lines"][0][:8]
-        pages = [i for i, t in enumerate(texts) if head in t]
-        if not pages or last not in texts[pages[0]]:
+        if not diagram_on_one_page(texts, head, last):
             errs.append(f"도식이 한 쪽에 온전히 있지 않다: {u.title}")
     doc.close()
     return errs, notes

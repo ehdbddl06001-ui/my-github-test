@@ -268,6 +268,8 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   **배치 검사를 고칠 때는 두 곳을 같이** — `validate_pdf`(PDF 에서) 와 `book_layout.problems` + `MEASURE_JS`(화면에서: 문턱 · 제목 종류
   `h2, h3, h4, .tb .tt, .cmap .mh`). 배경 · 테두리가 있는 새 상자는 저절로 잡힌다. 시험: `LayoutRules`(손으로 만든 값) · `MeasuredLayout`(실제 PDF 와 대조 ·
   PDF 1번 · 옛 탐색보다 배치 문제가 늘지 않는다 · 측정 실패 시 옛 탐색).
+  같은 날 고친 검증 오판: 「도식이 한 쪽에 온전히 있지 않다」는 도식 제목 앞 16자가 **처음 나온 쪽만** 봤다 — 제목 앞부분이 같은 도식이 책에 둘이면
+  (순환기내과 「[도식] 규칙적 좁은 QRS 빈맥 — …」) 뒤 단원을 오판해 책이 통째로 실패했다. 나온 쪽을 모두 본다(`diagram_on_one_page`).
 - 학습서: `.github/workflows/books.yml`(cron 06:30 KST) → 코드 시험(관문) → `test_content.py`(실제 콘텐츠, 비관문) →
   `check_sources.py`(pmid → PubMed 정정·철회 지문, DOI 만이면 PMID 를 찾아 기억, 없으면 doi.org 등록만) →
   `build_books.py`(바뀐 책만, 렌더 후 검증 통과한 것만 — 한 책 실패는 그 책의 이전 PDF 를 유지) →
