@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4203,
+  "total": 4215,
   "byType": {
    "usmle": 282,
    "paper": 979,
    "kmle": 1952,
+   "imaging": 771,
    "concept": 214,
-   "imaging": 759,
    "ailab": 14,
    "basic": 3
   },
@@ -34,32 +34,32 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 127,
    "Pulmonology": 126,
    "Surgery": 126,
-   "순환기": 122,
+   "순환기": 126,
    "Hematology": 119,
    "Laboratory Medicine": 101,
-   "산부인과": 93,
+   "산부인과": 94,
    "호흡기": 50,
-   "소화기": 45,
-   "소아과": 39,
+   "소화기": 46,
+   "소아과": 40,
+   "내분비": 34,
+   "응급·중환자": 34,
    "혈액·종양": 34,
    "감염": 33,
-   "내분비": 33,
    "신경": 33,
    "신장·비뇨기": 33,
-   "응급·중환자": 33,
    "Physiology": 31,
    "병리·조직학": 31,
+   "외과": 29,
    "피부과": 29,
-   "외과": 28,
-   "예방의학·역학": 25,
+   "예방의학·역학": 26,
    "Pharmacology": 24,
    "Biochemistry": 22,
    "Microbiology": 22,
    "약리": 20,
+   "정신과": 20,
    "Immunology": 19,
    "Internal Medicine": 19,
    "근골격·류마티스": 19,
-   "정신과": 19,
    "안과": 14,
    "영상의학": 13,
    "이비인후과": 13,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2981,
+   "high": 2993,
    "medium": 1218,
    "low": 4
   },
@@ -944,6 +944,220 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1957.md",
    "snippet": "67세 남자가 1시간 전 시작된 가슴 압박감과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 목정맥이 확장되어 있고 양쪽 폐에서 수포음은 들리지 않는다. 심잡음은 없다. 응급실 도착 직후 아스피린을 씹어 먹게 했고, 심도자실을 준비하고 있다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 투여를 피해야 하는 것은? A. 생리식염수 정맥 주입 B. 니트로글리세린 설하 투여 C. 클로피도그렐 부하 용량 D. ",
    "text": "Cardiology Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties inferior-stemi right-ventricular-infarction nitrate-contraindication preload KMLE 2026 / Claude 67세 남자가 1시간 전 시작된 가슴 압박감과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 목정맥이 확장되어 있고 양쪽 폐에서 수포음은 들리지 않는다. 심잡음은 없다. 응급실 도착 직후 아스피린을 씹어 먹게 했고, 심도자실을 준비하고 있다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 투여를 피해야 하는 것은? A. 생리식염수 정맥 주입 B. 니트로글리세린 설하 투여 C. 클로피도그렐 부하 용량 D. 미분획 헤파린 정맥 주사 E. 일차 경피적 관상동맥 중재술 하벽 ST 분절 상승 심근경색에 V4R ST 상승·목정맥 확장·맑은 폐·저혈압이 겹쳐 우심실 경색이다. 우심실 경색은 전부하에 의존하므로 질산염 같은 전부하 감소 약을 피한다."
+  },
+  {
+   "id": "imaging-2026-0772",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 심장이 한 번 덜컥하는 느낌의 중년 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0772.md",
+   "snippet": "A 53 year old man comes to the physician because of occasional sensations that his heart \"skips a beat\" for the past month, especially after drinking several cups of coffee. He has no chest pain, dyspnea, or syncope. He takes no medications",
+   "text": "순환기 심전도 판독 — 심장이 한 번 덜컥하는 느낌의 중년 남성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08 A 53 year old man comes to the physician because of occasional sensations that his heart \"skips a beat\" for the past month, especially after drinking several cups of coffee. He has no chest pain, dyspnea, or syncope. He takes no medications. Blood pressure is 134/84 mm Hg and pulse is 62/min and irregular at times. Cardiac examination shows no murmurs. Serum electrolyte concentrations and thyroid function tests are within the reference ranges. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Premature atrial contraction B. Premature ventricular contraction C. Mobitz type I second degree AV block D. Sinus arrhythmia E. Atrial fibrillation"
+  },
+  {
+   "id": "imaging-2026-0771",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 맥이 고르지 않다는 말을 들은 젊은 수영 선수",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0771.md",
+   "snippet": "18세 여자가 대학 입학 신체검사에서 맥이 고르지 않다는 말을 듣고 왔다. 고등학교 때부터 수영 선수로 매일 3시간씩 훈련한다. 두근거림, 어지럼, 실신, 운동 중 가슴 통증은 없다. 가족 중 젊은 나이에 갑자기 사망한 사람은 없다. 혈압 108/64 mmHg, 맥박 52회/분이고, 숨을 들이쉴 때 맥이 빨라지고 내쉴 때 느려진다. 심잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 12유도 심전도는 그림과 같다. 다음 처",
+   "text": "순환기 심전도 처치 — 맥이 고르지 않다는 말을 들은 젊은 수영 선수 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08 18세 여자가 대학 입학 신체검사에서 맥이 고르지 않다는 말을 듣고 왔다. 고등학교 때부터 수영 선수로 매일 3시간씩 훈련한다. 두근거림, 어지럼, 실신, 운동 중 가슴 통증은 없다. 가족 중 젊은 나이에 갑자기 사망한 사람은 없다. 혈압 108/64 mmHg, 맥박 52회/분이고, 숨을 들이쉴 때 맥이 빨라지고 내쉴 때 느려진다. 심잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 영구 심박동기 삽입 B. 전기생리검사 C. 추가 검사 없이 설명 D. 24시간 활동 심전도 E. 베타차단제 투여"
+  },
+  {
+   "id": "imaging-2026-0770",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 검진 심전도 이상을 들은 여고생",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0770.md",
+   "snippet": "17세 여자가 학교 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 가슴 통증, 호흡곤란, 실신은 없고 운동도 잘한다. 먹는 약은 없다. 키 162 cm, 몸무게 54 kg 이다. 혈압 112/70 mmHg, 맥박 108회/분이고 진료실에 오느라 계단을 뛰어 올라왔다고 한다. 심잡음은 없다. 흉부 X선 사진은 정상이고, 심초음파에서 우심실 크기·벽 두께와 폐동맥압은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로",
+   "text": "순환기 심전도 판독 — 검진 심전도 이상을 들은 여고생 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08 17세 여자가 학교 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 가슴 통증, 호흡곤란, 실신은 없고 운동도 잘한다. 먹는 약은 없다. 키 162 cm, 몸무게 54 kg 이다. 혈압 112/70 mmHg, 맥박 108회/분이고 진료실에 오느라 계단을 뛰어 올라왔다고 한다. 심잡음은 없다. 흉부 X선 사진은 정상이고, 심초음파에서 우심실 크기·벽 두께와 폐동맥압은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 좌심실 비대 B. 좌후속지차단 C. 좌전속지차단 D. 우각차단 E. 우심실 비대"
+  },
+  {
+   "id": "imaging-2026-0769",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 리튬을 먹던 환자의 의식 저하",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0769.md",
+   "snippet": "67세 여자가 사흘 전부터 손이 심하게 떨리고 비틀거리며 말이 어눌해져 가족에게 이끌려 왔다. 오늘 아침부터는 엉뚱한 대답을 한다. 20년 전부터 양극성 장애로 탄산리튬을 먹어 왔고 3주 전 고혈압으로 하이드로클로로티아지드를 새로 시작했다. 체온 36.8 ℃, 혈압 118/70 mmHg, 맥박 64회/분이다. 사람과 장소를 잘 알아보지 못하고, 거친 떨림과 근간대경련, 운동실조가 있다. 혈청 리튬 3.2 mEq/L(치료 범위 ",
+   "text": "정신과 정신 — 리튬을 먹던 환자의 의식 저하 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d 67세 여자가 사흘 전부터 손이 심하게 떨리고 비틀거리며 말이 어눌해져 가족에게 이끌려 왔다. 오늘 아침부터는 엉뚱한 대답을 한다. 20년 전부터 양극성 장애로 탄산리튬을 먹어 왔고 3주 전 고혈압으로 하이드로클로로티아지드를 새로 시작했다. 체온 36.8 ℃, 혈압 118/70 mmHg, 맥박 64회/분이다. 사람과 장소를 잘 알아보지 못하고, 거친 떨림과 근간대경련, 운동실조가 있다. 혈청 리튬 3.2 mEq/L(치료 범위 0.6~1.2), 나트륨 134 mEq/L, 크레아티닌 2.1 mg/dL(6개월 전 0.9 mg/dL)이다. 탄산리튬과 이뇨제를 끊고 생리식염수를 정맥으로 주기 시작했다. 다음 처치로 가장 적절한 것은? A. 생리식염수 지속 투여 B. 혈액투석 시행 C. 활성탄 투여 D. 전장관세척 시행 E. 탄산수소나트륨 투여"
+  },
+  {
+   "id": "imaging-2026-0768",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 선별검사의 양성예측도",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0768.md",
+   "snippet": "A 52 year old woman asks her physician what a positive result on a new blood based screening test for colorectal cancer would mean for her. She has no symptoms and no family history of colorectal cancer. In the population in which the test ",
+   "text": "예방의학·역학 예방의학 — 선별검사의 양성예측도 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d A 52 year old woman asks her physician what a positive result on a new blood based screening test for colorectal cancer would mean for her. She has no symptoms and no family history of colorectal cancer. In the population in which the test was evaluated, the prevalence of colorectal neoplasia that would be detected is 2%. The test has a sensitivity of 90% and a specificity of 95%. Her physician explains the result in terms of 1,000 similar persons screened. If her result is positive, which of the following is closest to the probability that she has the disease? A. 27% B. 2% C. 90% D. 95% E. 99.8%"
+  },
+  {
+   "id": "imaging-2026-0767",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 검진에서 발견된 고칼슘혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0767.md",
+   "snippet": "62세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 신장결석이나 골절의 병력은 없다. 먹는 약은 없고 칼슘·비타민 D 보충제도 먹지 않는다. 혈압 126/78 mmHg 이고 진찰 소견은 정상이다. 혈청 칼슘 11.6 mg/dL(참고치 8.6~10.2), 인 2.4 mg/dL, 부갑상샘호르몬 96 pg/mL(참고치 15~65), 25 하이드록시비타민 D 32 ng/mL, 크레아티닌 0.8 mg/dL(eG",
+   "text": "내분비 내분비 — 검진에서 발견된 고칼슘혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d 62세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 신장결석이나 골절의 병력은 없다. 먹는 약은 없고 칼슘·비타민 D 보충제도 먹지 않는다. 혈압 126/78 mmHg 이고 진찰 소견은 정상이다. 혈청 칼슘 11.6 mg/dL(참고치 8.6~10.2), 인 2.4 mg/dL, 부갑상샘호르몬 96 pg/mL(참고치 15~65), 25 하이드록시비타민 D 32 ng/mL, 크레아티닌 0.8 mg/dL(eGFR 78 mL/min/1.73 m²)이다. 24시간 소변 칼슘은 260 mg 이다. 이중에너지 X선 흡수계측법에서 요추 T 점수 1.8, 대퇴경부 1.6, 원위 요골 2.0 이다. 다음 처치로 가장 적절한 것은? A. 시나칼세트 투여 B. 비스포스포네이트 투여 C. 티아지드 이뇨제 투여 D. 부갑상샘절제술 E. 6~12개월마다 혈청 칼슘과 골밀도 추적"
+  },
+  {
+   "id": "imaging-2026-0766",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 넘어지며 손을 짚은 청소년의 손목 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0766.md",
+   "snippet": "A 13 year old boy is brought to the emergency department 3 hours after he fell from his bicycle onto his outstretched right hand. He has pain and swelling over the distal forearm. He has no other injuries. Vital signs are within normal limi",
+   "text": "소아과 소아 — 넘어지며 손을 짚은 청소년의 손목 통증 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d A 13 year old boy is brought to the emergency department 3 hours after he fell from his bicycle onto his outstretched right hand. He has pain and swelling over the distal forearm. He has no other injuries. Vital signs are within normal limits. There is tenderness over the distal radius and distal ulna, about 3 cm proximal to the wrist crease. There is no tenderness over the anatomic snuffbox. Radial pulse and capillary refill are normal, and sensation is intact in the median, ulnar, and radial nerve distributions. An anteroposterior radiograph of the right wrist is shown. Which of the following best describes this injury? A. Scaphoid waist fracture B. Salter Harris type I injury of the distal ulna C. Metaphyseal fractures of the distal radius and ulna with intact physes D. Salter Harris type II fracture of the distal radius E. Galeazzi fracture dislocation"
+  },
+  {
+   "id": "imaging-2026-0765",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 검진에서 발견된 콩팥 고형 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0765.md",
+   "snippet": "56세 여자가 건강검진 복부 초음파에서 왼쪽 콩팥에 덩이가 있다는 말을 듣고 왔다. 혈뇨·옆구리 통증·체중 감소는 없다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 혈압 134/82 mmHg 이고 진찰 소견은 정상이다. 소변검사에서 적혈구는 없다. 크레아티닌 1.0 mg/dL(eGFR 64 mL/min/1.73 m²)이다. 복부 조영증강 CT 는 그림과 같고, 판독에서 종괴의 가장 긴 지름은 6 cm 였다. 흉부 CT 에서 ",
+   "text": "외과 외과계 — 검진에서 발견된 콩팥 고형 종괴 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d 56세 여자가 건강검진 복부 초음파에서 왼쪽 콩팥에 덩이가 있다는 말을 듣고 왔다. 혈뇨·옆구리 통증·체중 감소는 없다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 혈압 134/82 mmHg 이고 진찰 소견은 정상이다. 소변검사에서 적혈구는 없다. 크레아티닌 1.0 mg/dL(eGFR 64 mL/min/1.73 m²)이다. 복부 조영증강 CT 는 그림과 같고, 판독에서 종괴의 가장 긴 지름은 6 cm 였다. 흉부 CT 에서 전이는 없고 콩팥정맥 안 종양 혈전도 없다. 치료로 가장 적절한 것은? A. 부분 신절제술 B. 고주파 열소작술 C. 6개월 뒤 CT 추적 D. 면역관문억제제 치료 E. 경피적 종괴 배액술"
+  },
+  {
+   "id": "imaging-2026-0764",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 음주 뒤 등으로 뻗치는 상복부 통증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0764.md",
+   "snippet": "A 44 year old man comes to the emergency department because of severe epigastric pain that began 10 hours ago after a night of heavy drinking. The pain is constant, radiates to the back, and is accompanied by nausea and vomiting. He drinks ",
+   "text": "소화기 소화기 — 음주 뒤 등으로 뻗치는 상복부 통증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d A 44 year old man comes to the emergency department because of severe epigastric pain that began 10 hours ago after a night of heavy drinking. The pain is constant, radiates to the back, and is accompanied by nausea and vomiting. He drinks about 8 beers daily. Temperature is 37.6°C, pulse is 108/min, respirations are 20/min, and blood pressure is 128/80 mm Hg. The epigastrium is tender without rebound. Serum lipase is 1,450 U/L (N < 60). Serum total bilirubin is 0.9 mg/dL, alkaline phosphatase is 88 U/L, and triglycerides are 180 mg/dL. Abdominal ultrasonography shows no gallstones and a normal common bile duct. Which of the following is the most appropriate next step in management? A. Total parenteral nutrition B. Intravenous lactated Ringer's solution and analgesia C. Contrast enhanced CT of the abdomen D. Endoscopic retrograde cholangiopancreatography E. Intravenous imipenem"
+  },
+  {
+   "id": "imaging-2026-0763",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 35주의 두통과 고혈압",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0763.md",
+   "snippet": "31세 초산부가 임신 35주 2일에 어제부터 심해진 두통과 눈앞이 번쩍이는 증상으로 병원에 왔다. 지금까지 산전진찰에서 혈압은 정상이었다. 혈압 164/112 mmHg 이고 15분 뒤 다시 재도 162/110 mmHg 였다. 맥박 88회/분이고 하지에 함요부종이 있다. 소변 단백/크레아티닌 비는 0.8 이다. 혈소판 168,000/mm³, AST 32 U/L, ALT 28 U/L, 크레아티닌 0.7 mg/dL 이다. 태아 심박",
+   "text": "산부인과 산과 — 임신 35주의 두통과 고혈압 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d 31세 초산부가 임신 35주 2일에 어제부터 심해진 두통과 눈앞이 번쩍이는 증상으로 병원에 왔다. 지금까지 산전진찰에서 혈압은 정상이었다. 혈압 164/112 mmHg 이고 15분 뒤 다시 재도 162/110 mmHg 였다. 맥박 88회/분이고 하지에 함요부종이 있다. 소변 단백/크레아티닌 비는 0.8 이다. 혈소판 168,000/mm³, AST 32 U/L, ALT 28 U/L, 크레아티닌 0.7 mg/dL 이다. 태아 심박동 감시는 반응성이고 초음파에서 태아 크기는 주수에 맞다. 혈압을 낮추는 약을 투여하였다. 다음 처치로 가장 적절한 것은? A. 외래에서 주 2회 혈압과 검사실 추적 B. 디아제팜 투여 후 기대요법 C. 황산마그네슘 투여 후 분만 D. 37주까지 입원하여 기대요법 E. 폐 성숙을 위한 베타메타손 투여 후 48시간 기다린 뒤 분만"
+  },
+  {
+   "id": "imaging-2026-0762",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 등 위로 무거운 물체가 떨어진 젊은 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0762.md",
+   "snippet": "A 35 year old woman is brought to the emergency department 2 hours after a heavy truck tire fell onto her back at work. She reports severe midback pain. She has no other medical conditions. Pulse is 96/min, respirations are 20/min, and bloo",
+   "text": "응급·중환자 응급 — 등 위로 무거운 물체가 떨어진 젊은 여성 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d A 35 year old woman is brought to the emergency department 2 hours after a heavy truck tire fell onto her back at work. She reports severe midback pain. She has no other medical conditions. Pulse is 96/min, respirations are 20/min, and blood pressure is 124/76 mm Hg. There is tenderness and a palpable step off over the midthoracic spinous processes. Motor strength is 5/5 in all extremities, sensation is intact throughout, and rectal tone is normal. FAST examination is negative. A sagittal CT of the thoracic spine is shown. Which of the following is the most appropriate next step in management? A. Bed rest and analgesia with follow up radiographs in 2 weeks B. High dose intravenous methylprednisolone infusion C. MRI of the brain to evaluate for occult head injury D. Surgical reduction with posterior instrumented fusion E. Thoracolumbosacral orthosis and early ambulation"
+  },
+  {
+   "id": "imaging-2026-0761",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 쉴 때 생긴 가슴 통증과 ST 하강",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "confidence": "high",
+   "date": "2026-11-23",
+   "path": "content/imaging/2026/imaging-2026-0761.md",
+   "snippet": "86세 여자가 2시간 전 쉬던 중 시작된 가슴 답답함으로 응급실에 왔다. 통증은 왼팔로 뻗쳤고 식은땀이 났으며 지금은 조금 줄었다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 148/82 mmHg, 맥박 90회/분, 호흡 18회/분이고 폐 청진에서 수포음은 없다. 혈청 고감도 트로포닌 I 는 도착 때 참고치 상한의 6배였고 1시간 뒤 더 올랐다. 12유도 심전도는 그림과 같다. 진단으로 가장 적절한 것은? A. ST분절상",
+   "text": "순환기 순환기 — 쉴 때 생긴 가슴 통증과 ST 하강 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d 86세 여자가 2시간 전 쉬던 중 시작된 가슴 답답함으로 응급실에 왔다. 통증은 왼팔로 뻗쳤고 식은땀이 났으며 지금은 조금 줄었다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 148/82 mmHg, 맥박 90회/분, 호흡 18회/분이고 폐 청진에서 수포음은 없다. 혈청 고감도 트로포닌 I 는 도착 때 참고치 상한의 6배였고 1시간 뒤 더 올랐다. 12유도 심전도는 그림과 같다. 진단으로 가장 적절한 것은? A. ST분절상승 심근경색 B. 불안정 협심증 C. 급성 심낭염 D. 변이형 협심증 E. 비ST분절상승 심근경색"
   },
   {
    "id": "cn.physio.ventricular-activation.bundle-branch-block",

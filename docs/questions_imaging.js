@@ -2,6 +2,1544 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0772",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 심장이 한 번 덜컥하는 느낌의 중년 남성",
+  "type": "심전도 판독 — 심장이 한 번 덜컥하는 느낌의 중년 남성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-23",
+  "vignette": "A 53-year-old man comes to the physician because of occasional sensations that his heart \"skips a beat\" for the past month, especially after drinking several cups of coffee. He has no chest pain, dyspnea, or syncope. He takes no medications. Blood pressure is 134/84 mm Hg and pulse is 62/min and irregular at times. Cardiac examination shows no murmurs. Serum electrolyte concentrations and thyroid function tests are within the reference ranges. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Premature atrial contraction",
+   "Premature ventricular contraction",
+   "Mobitz type I second-degree AV block",
+   "Sinus arrhythmia",
+   "Atrial fibrillation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The rhythm strip shows sinus rhythm at about 60/min with <b>one beat arriving early</b>. Its <b>QRS is narrow and has the same shape as the sinus beats</b>, so ventricular activation used the normal conduction system; the premature P wave is hidden in the preceding T wave. A pause follows, and sinus rhythm resumes with regular P waves. This is a premature atrial contraction.\n- 원리: <b>Why the QRS stays narrow</b>: An ectopic focus in the atrium fires before the next sinus impulse. The impulse still passes through the AV node and His-Purkinje system, so the ventricles depolarize in the usual sequence and the QRS looks like the sinus beats. The early P wave often lands on the T wave and deforms it slightly.<br> <b>Why a pause follows</b>: The premature atrial impulse usually enters and resets the sinus node, so the next sinus beat comes one cycle after the PAC. The pause is therefore typically less than fully compensatory, whereas a ventricular ectopic beat usually does not reach the sinus node and leaves a fully compensatory pause.<br> <b>Clinical meaning</b>: Isolated PACs are common and benign; caffeine, alcohol, stress, and sleep deprivation increase them. Very frequent PACs can herald atrial fibrillation, but occasional ones need only reassurance and trigger reduction.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">PAC (answer)</th><th>PVC (closest distractor)</th></tr></thead><tbody> <tr><td>QRS</td><td><b>Narrow, same as sinus beats</b></td><td>Wide (≥ 120 ms), bizarre</td></tr> <tr><td>Preceding P wave</td><td>Premature, often hidden in T</td><td>None</td></tr> <tr><td>T wave of the ectopic beat</td><td>Same as sinus beats</td><td>Opposite to the QRS</td></tr> <tr><td>Pause</td><td>Usually less than compensatory</td><td>Usually fully compensatory</td></tr> </tbody></table> Look at the width and shape of the early QRS first; a normal-looking QRS means the impulse came from above the ventricles.\n- 오답 이유:\n  - (B) A premature ventricular contraction would be correct if the early beat had a wide, bizarre QRS with a T wave pointing in the opposite direction.\n  - (C) Mobitz I block would be correct if PR intervals lengthened progressively until a P wave failed to conduct, producing a dropped beat rather than an early one.\n  - (D) Sinus arrhythmia would be correct if RR intervals changed gradually with respiration and every beat had a normal on-time P wave.\n  - (E) Atrial fibrillation would be correct if there were no discrete P waves and the RR intervals were irregularly irregular throughout.\n- 함정: Calling any early beat a PVC without checking whether its QRS is wide or identical to the sinus beats.\n- 학습목표: Identify a premature narrow-complex beat with the same QRS morphology as sinus beats as a premature atrial contraction and distinguish it from a premature ventricular contraction and second-degree AV block\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11960 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm strip shows sinus rhythm at about 60/min with <b>one beat arriving early</b>. Its <b>QRS is narrow and has the same shape as the sinus beats</b>, so ventricular activation used the normal conduction system; the premature P wave is hidden in the preceding T wave. A pause follows, and sinus rhythm resumes with regular P waves. This is a premature atrial contraction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the QRS stays narrow</b>: An ectopic focus in the atrium fires before the next sinus impulse. The impulse still passes through the AV node and His-Purkinje system, so the ventricles depolarize in the usual sequence and the QRS looks like the sinus beats. The early P wave often lands on the T wave and deforms it slightly.<br> <b>Why a pause follows</b>: The premature atrial impulse usually enters and resets the sinus node, so the next sinus beat comes one cycle after the PAC. The pause is therefore typically less than fully compensatory, whereas a ventricular ectopic beat usually does not reach the sinus node and leaves a fully compensatory pause.<br> <b>Clinical meaning</b>: Isolated PACs are common and benign; caffeine, alcohol, stress, and sleep deprivation increase them. Very frequent PACs can herald atrial fibrillation, but occasional ones need only reassurance and trigger reduction."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">PAC (answer)</th><th>PVC (closest distractor)</th></tr></thead><tbody> <tr><td>QRS</td><td><b>Narrow, same as sinus beats</b></td><td>Wide (≥ 120 ms), bizarre</td></tr> <tr><td>Preceding P wave</td><td>Premature, often hidden in T</td><td>None</td></tr> <tr><td>T wave of the ectopic beat</td><td>Same as sinus beats</td><td>Opposite to the QRS</td></tr> <tr><td>Pause</td><td>Usually less than compensatory</td><td>Usually fully compensatory</td></tr> </tbody></table> Look at the width and shape of the early QRS first; a normal-looking QRS means the impulse came from above the ventricles."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A premature ventricular contraction would be correct if the early beat had a wide, bizarre QRS with a T wave pointing in the opposite direction.\n(C) Mobitz I block would be correct if PR intervals lengthened progressively until a P wave failed to conduct, producing a dropped beat rather than an early one.\n(D) Sinus arrhythmia would be correct if RR intervals changed gradually with respiration and every beat had a normal on-time P wave.\n(E) Atrial fibrillation would be correct if there were no discrete P waves and the RR intervals were irregularly irregular throughout."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any early beat a PVC without checking whether its QRS is wide or identical to the sinus beats."
+   },
+   {
+    "k": "학습목표",
+    "v": "Identify a premature narrow-complex beat with the same QRS morphology as sinus beats as a premature atrial contraction and distinguish it from a premature ventricular contraction and second-degree AV block"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11960 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "일찍 나온 박동의 QRS 가 좁고 동성 박동과 같으므로 심방 기외수축이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "영상: 일찍 나온 박동의 QRS 가 좁고 동성 박동과 같은 모양 — 심실 기외수축은 넓고 기괴하다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬 중 박동 하나가 일찍 나오고 뒤에 휴지 → 기외수축",
+    "영상: 그 QRS 가 좁고 동성 박동과 같음, 조기 P파가 앞 T파에 묻힘 → 심방 기원"
+   ],
+   "key": [
+    {
+     "item": "영상: 일찍 나온 박동의 좁은 QRS(동성 박동과 같은 모양)",
+     "why": "심실 위 기원",
+     "also": []
+    },
+    {
+     "item": "영상: 일찍 나온 박동 뒤의 휴지, 이후 규칙적인 동리듬",
+     "why": "기외수축 — 심방세동·방실차단 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum electrolyte concentrations and thyroid function tests are within the reference ranges",
+     "why": "이차 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has no chest pain, dyspnea, or syncope",
+     "why": "양성 기외수축 — 안심과 유발 요인 조절",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "especially after drinking several cups of coffee",
+     "why": "흔한 유발 요인 — 판독 자체와는 무관",
+     "also": []
+    }
+   ],
+   "summary": "동리듬 중 박동 하나가 일찍 나오는데 QRS 가 좁고 동성 박동과 같다. 조기 P파가 T파에 묻힌 심방 기외수축이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "일찍 나온 박동의 QRS 가 넓고 기괴하며 T파가 반대 방향이었다면 심실 기외수축"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0772.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/11000/#files-panel",
+   "asset_id": "PTBXL-11960",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11960"
+  },
+  "run_id": "20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0771",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 맥이 고르지 않다는 말을 들은 젊은 수영 선수",
+  "type": "심전도 처치 — 맥이 고르지 않다는 말을 들은 젊은 수영 선수",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-23",
+  "vignette": "18세 여자가 대학 입학 신체검사에서 맥이 고르지 않다는 말을 듣고 왔다. 고등학교 때부터 수영 선수로 매일 3시간씩 훈련한다. 두근거림, 어지럼, 실신, 운동 중 가슴 통증은 없다. 가족 중 젊은 나이에 갑자기 사망한 사람은 없다. 혈압 108/64 mmHg, 맥박 52회/분이고, 숨을 들이쉴 때 맥이 빨라지고 내쉴 때 느려진다. 심잡음은 없다. 혈청 전해질과 갑상샘 기능은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "영구 심박동기 삽입",
+   "전기생리검사",
+   "추가 검사 없이 설명",
+   "24시간 활동 심전도",
+   "베타차단제 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 <b>같은 모양의 P파가 있고 PR 간격이 일정</b>한데 <b>RR 간격이 박동마다 점진적으로 길어졌다 짧아진다</b>. 맥이 들숨에 빨라지고 날숨에 느려지므로 호흡성 동성 부정맥이다. 느린 심박은 훈련된 운동선수의 미주신경 긴장으로 설명되고 증상이 없다. 정상 변이이므로 추가 검사나 치료 없이 설명한다.\n- 원리: <b>왜 숨에 따라 심박이 변하는가</b>: 들숨 때 흉강 압력이 내려가 정맥환류가 늘고, 폐의 신장 수용체와 압수용체 반사로 심장 미주신경 활동이 줄어 동결절이 빨라진다. 날숨에는 미주신경 활동이 회복되어 느려진다. 동결절 자체가 박동을 만들므로 P파 모양과 PR 은 그대로이고 간격만 부드럽게 변한다.<br> <b>왜 젊고 건강할수록 뚜렷한가</b>: 미주신경 긴장이 높을수록 이 변동이 크다. 그래서 어린이·청년·지구력 운동선수에서 흔하고, 나이가 들거나 자율신경병증(당뇨병)이 생기면 줄어든다 — 오히려 변동이 사라지는 것이 자율신경 기능 저하의 신호다.<br> <b>병적인 동성 리듬과의 차이</b>: 호흡과 무관한 갑작스러운 긴 휴지, 운동해도 오르지 않는 심박, 실신이 있으면 동기능 부전을 의심한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">호흡성 동성 부정맥 — 정답</th><th>동기능 부전 — 가장 가까운 오답(활동 심전도·심박동기 쪽)</th></tr></thead><tbody> <tr><td>RR 변화</td><td><b>점진적</b>, 호흡 주기와 함께</td><td>갑작스러운 휴지(동정지·동방차단)</td></tr> <tr><td>P파·PR</td><td>모양·간격 일정</td><td>휴지 뒤 이탈 박동이 나올 수 있다</td></tr> <tr><td>증상</td><td><b>없음</b></td><td>어지럼·실신·운동 불내성</td></tr> <tr><td>처치</td><td>설명만</td><td>증상과 연관되면 심박동기</td></tr> </tbody></table> 간격 변화가 호흡을 따라 부드럽게 오르내리고 증상이 없으면 정상이고, 갑자기 끊기고 증상이 있으면 병적이다.\n- 오답 이유:\n  - ① 영구 심박동기는 증상을 일으키는 동정지·동방차단 같은 동기능 부전이 기록되었다면 정답이 된다.\n  - ② 전기생리검사는 원인을 모르는 실신에 구조적 심질환이 있거나 조기흥분 증후군 같은 부정맥 기질이 의심되면 고려한다.\n  - ④ 24시간 활동 심전도는 어지럼·실신·두근거림이 있어 증상과 리듬의 관계를 확인해야 한다면 정답이 된다.\n  - ⑤ 베타차단제는 증상이 있는 기외수축이나 상심실성 빈맥이라면 쓸 수 있지만 이미 느린 맥을 더 늦춘다.\n- 함정: 맥이 고르지 않다는 말에 동기능 부전을 떠올려 활동 심전도나 심박동기를 고르는 것.\n- 학습목표: 호흡에 따라 RR 간격이 점진적으로 변하고 P파 모양·PR 이 일정한 동성 부정맥을 정상 변이로 판단하고 불필요한 검사·치료를 하지 않는다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5778 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 <b>같은 모양의 P파가 있고 PR 간격이 일정</b>한데 <b>RR 간격이 박동마다 점진적으로 길어졌다 짧아진다</b>. 맥이 들숨에 빨라지고 날숨에 느려지므로 호흡성 동성 부정맥이다. 느린 심박은 훈련된 운동선수의 미주신경 긴장으로 설명되고 증상이 없다. 정상 변이이므로 추가 검사나 치료 없이 설명한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 숨에 따라 심박이 변하는가</b>: 들숨 때 흉강 압력이 내려가 정맥환류가 늘고, 폐의 신장 수용체와 압수용체 반사로 심장 미주신경 활동이 줄어 동결절이 빨라진다. 날숨에는 미주신경 활동이 회복되어 느려진다. 동결절 자체가 박동을 만들므로 P파 모양과 PR 은 그대로이고 간격만 부드럽게 변한다.<br> <b>왜 젊고 건강할수록 뚜렷한가</b>: 미주신경 긴장이 높을수록 이 변동이 크다. 그래서 어린이·청년·지구력 운동선수에서 흔하고, 나이가 들거나 자율신경병증(당뇨병)이 생기면 줄어든다 — 오히려 변동이 사라지는 것이 자율신경 기능 저하의 신호다.<br> <b>병적인 동성 리듬과의 차이</b>: 호흡과 무관한 갑작스러운 긴 휴지, 운동해도 오르지 않는 심박, 실신이 있으면 동기능 부전을 의심한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">호흡성 동성 부정맥 — 정답</th><th>동기능 부전 — 가장 가까운 오답(활동 심전도·심박동기 쪽)</th></tr></thead><tbody> <tr><td>RR 변화</td><td><b>점진적</b>, 호흡 주기와 함께</td><td>갑작스러운 휴지(동정지·동방차단)</td></tr> <tr><td>P파·PR</td><td>모양·간격 일정</td><td>휴지 뒤 이탈 박동이 나올 수 있다</td></tr> <tr><td>증상</td><td><b>없음</b></td><td>어지럼·실신·운동 불내성</td></tr> <tr><td>처치</td><td>설명만</td><td>증상과 연관되면 심박동기</td></tr> </tbody></table> 간격 변화가 호흡을 따라 부드럽게 오르내리고 증상이 없으면 정상이고, 갑자기 끊기고 증상이 있으면 병적이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 영구 심박동기는 증상을 일으키는 동정지·동방차단 같은 동기능 부전이 기록되었다면 정답이 된다.\n② 전기생리검사는 원인을 모르는 실신에 구조적 심질환이 있거나 조기흥분 증후군 같은 부정맥 기질이 의심되면 고려한다.\n④ 24시간 활동 심전도는 어지럼·실신·두근거림이 있어 증상과 리듬의 관계를 확인해야 한다면 정답이 된다.\n⑤ 베타차단제는 증상이 있는 기외수축이나 상심실성 빈맥이라면 쓸 수 있지만 이미 느린 맥을 더 늦춘다."
+   },
+   {
+    "k": "함정",
+    "v": "맥이 고르지 않다는 말에 동기능 부전을 떠올려 활동 심전도나 심박동기를 고르는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "호흡에 따라 RR 간격이 점진적으로 변하고 P파 모양·PR 이 일정한 동성 부정맥을 정상 변이로 판단하고 불필요한 검사·치료를 하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 251: The Bradyarrhythmias: Disorders of the Sinoatrial Node · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5778 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "P파·PR 이 일정하고 RR 만 호흡에 따라 점진적으로 변하는 무증상 동성 부정맥은 정상 변이라 설명만 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "두근거림·어지럼·실신이 없다 — 활동 심전도는 증상과 리듬을 맞춰 볼 필요가 있을 때 한다",
+   "steps": 3,
+   "chain": [
+    "영상: 같은 모양 P파·일정한 PR + RR 의 점진적 변동 → 동성 부정맥",
+    "들숨에 빨라지고 날숨에 느려짐 + 수영 선수 → 호흡성, 미주신경 긴장",
+    "증상 없음 + 가족력 없음 → 정상 변이, 추가 검사·치료 불필요"
+   ],
+   "key": [
+    {
+     "item": "영상: 같은 모양 P파와 일정한 PR, RR 간격의 점진적 변동",
+     "why": "동결절 기원의 리듬",
+     "also": []
+    },
+    {
+     "item": "숨을 들이쉴 때 맥이 빨라지고 내쉴 때 느려진다",
+     "why": "호흡성 동성 부정맥",
+     "also": []
+    },
+    {
+     "item": "매일 3시간씩 훈련한다",
+     "why": "미주신경 긴장 — 서맥과 큰 변동을 설명",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "가족 중 젊은 나이에 갑자기 사망한 사람은 없다",
+     "why": "유전성 부정맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "두근거림, 어지럼, 실신, 운동 중 가슴 통증은 없다",
+     "why": "추가 검사의 적응이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 전해질과 갑상샘 기능은 정상",
+     "why": "이차 원인 배제 — 판단에 큰 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "P파와 PR 은 일정하고 RR 만 호흡을 따라 변하는 동성 부정맥이다. 훈련된 운동선수의 무증상 정상 변이라 설명만 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "운동 중 어지럼과 실신이 있었다면 24시간 활동 심전도로 증상과 리듬을 맞춰 본다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0771.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05778",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5778"
+  },
+  "run_id": "20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0770",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 검진 심전도 이상을 들은 여고생",
+  "type": "심전도 판독 — 검진 심전도 이상을 들은 여고생",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-23",
+  "vignette": "17세 여자가 학교 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 가슴 통증, 호흡곤란, 실신은 없고 운동도 잘한다. 먹는 약은 없다. 키 162 cm, 몸무게 54 kg 이다. 혈압 112/70 mmHg, 맥박 108회/분이고 진료실에 오느라 계단을 뛰어 올라왔다고 한다. 심잡음은 없다. 흉부 X선 사진은 정상이고, 심초음파에서 우심실 크기·벽 두께와 폐동맥압은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "좌심실 비대",
+   "좌후속지차단",
+   "좌전속지차단",
+   "우각차단",
+   "우심실 비대"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: QRS 는 좁고(120 ms 미만) <b>I·aVL 은 작은 r 뒤 깊은 S(rS)</b>, <b>II·III·aVF 는 큰 R</b> 이라 전두면 축이 약 +110° 로 오른쪽으로 치우쳐 있다. V1 에 큰 R 이 없고 심초음파에서 우심실 비대·폐고혈압이 없으며 체형도 마르지 않았다. 우축 편위의 다른 원인이 없으므로 좌후속지차단으로 판독한다. 리듬은 동빈맥으로, 방금 계단을 올라온 것과 맞는다.\n- 원리: <b>왜 축이 오른쪽으로 도는가</b>: 좌각은 앞쪽(전속지)과 뒤쪽(후속지) 두 갈래로 나뉜다. 후속지가 막히면 좌심실 아래·뒤쪽 벽은 전속지를 거쳐 늦게 흥분한다. 마지막 흥분이 아래·오른쪽을 향하므로 III·aVF 에 큰 R, I·aVL 에 깊은 S 가 생기고 축이 +90° 를 넘는다. 우회 경로가 심근이 아니라 전도계(전속지)이므로 QRS 는 넓어지지 않는다.<br> <b>왜 배제 진단인가</b>: 우축 편위는 우심실 비대, 폐질환·폐색전, 측벽 경색, 마른 체형의 수직 심장, 좌우 전극 바꿈에서도 생긴다. 이 원인이 모두 없을 때만 좌후속지차단이라 부른다. 후속지는 굵고 혈류를 두 관상동맥에서 받아 단독으로 막히는 일이 드물다.<br> <b>임상 의미</b>: 단독 좌후속지차단은 치료가 필요 없지만, 우각차단과 함께 나타나면(이속지차단) 진행성 전도 장애의 신호가 될 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">좌후속지차단 — 정답</th><th>좌전속지차단 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>전두면 축</td><td><b>+90° ~ +180°</b>(우축)</td><td>−45° ~ −90°(좌축)</td></tr> <tr><td>I · aVL</td><td><b>rS</b></td><td>qR</td></tr> <tr><td>II · III · aVF</td><td><b>큰 R(qR)</b></td><td>rS</td></tr> <tr><td>QRS 폭</td><td colspan=\"2\">좁다(&lt; 120 ms) — 넓으면 각차단을 먼저 본다</td></tr> </tbody></table> 두 속지차단은 거울상이다. I 과 aVF 의 큰 파가 어느 쪽인지 보면 축 방향이 정해지고, 우축이면 우심실 비대를 먼저 배제한다.\n- 오답 이유:\n  - ① 좌심실 비대는 V5·V6 의 큰 R 과 V1 의 깊은 S 로 전압 기준을 넘고 보통 좌축 쪽이었다면 정답이 된다.\n  - ③ 좌전속지차단은 I·aVL 에 qR, II·III·aVF 에 rS 로 축이 −45° 보다 더 왼쪽으로 치우쳐 있었다면 정답이 된다.\n  - ④ 우각차단은 QRS 가 120 ms 이상 넓고 V1 에 rsR′, I·V6 에 넓고 끌리는 S 가 있었다면 정답이 된다.\n  - ⑤ 우심실 비대는 우축 편위에 V1 의 큰 R(R/S > 1)과 우측 흉부 유도의 ST-T 변화, 심초음파의 우심실 비대가 있었다면 정답이 된다.\n- 함정: 우축 편위만 보고 젊은 사람이라 정상 변이 또는 우심실 비대로 판독해 버리는 것.\n- 학습목표: 좁은 QRS 와 우축 편위(I·aVL rS, II·III·aVF 큰 R)를 우심실 비대 근거 없이 좌후속지차단으로 판독하고 좌전속지차단·우각차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 377 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "QRS 는 좁고(120 ms 미만) <b>I·aVL 은 작은 r 뒤 깊은 S(rS)</b>, <b>II·III·aVF 는 큰 R</b> 이라 전두면 축이 약 +110° 로 오른쪽으로 치우쳐 있다. V1 에 큰 R 이 없고 심초음파에서 우심실 비대·폐고혈압이 없으며 체형도 마르지 않았다. 우축 편위의 다른 원인이 없으므로 좌후속지차단으로 판독한다. 리듬은 동빈맥으로, 방금 계단을 올라온 것과 맞는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 축이 오른쪽으로 도는가</b>: 좌각은 앞쪽(전속지)과 뒤쪽(후속지) 두 갈래로 나뉜다. 후속지가 막히면 좌심실 아래·뒤쪽 벽은 전속지를 거쳐 늦게 흥분한다. 마지막 흥분이 아래·오른쪽을 향하므로 III·aVF 에 큰 R, I·aVL 에 깊은 S 가 생기고 축이 +90° 를 넘는다. 우회 경로가 심근이 아니라 전도계(전속지)이므로 QRS 는 넓어지지 않는다.<br> <b>왜 배제 진단인가</b>: 우축 편위는 우심실 비대, 폐질환·폐색전, 측벽 경색, 마른 체형의 수직 심장, 좌우 전극 바꿈에서도 생긴다. 이 원인이 모두 없을 때만 좌후속지차단이라 부른다. 후속지는 굵고 혈류를 두 관상동맥에서 받아 단독으로 막히는 일이 드물다.<br> <b>임상 의미</b>: 단독 좌후속지차단은 치료가 필요 없지만, 우각차단과 함께 나타나면(이속지차단) 진행성 전도 장애의 신호가 될 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">좌후속지차단 — 정답</th><th>좌전속지차단 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>전두면 축</td><td><b>+90° ~ +180°</b>(우축)</td><td>−45° ~ −90°(좌축)</td></tr> <tr><td>I · aVL</td><td><b>rS</b></td><td>qR</td></tr> <tr><td>II · III · aVF</td><td><b>큰 R(qR)</b></td><td>rS</td></tr> <tr><td>QRS 폭</td><td colspan=\"2\">좁다(&lt; 120 ms) — 넓으면 각차단을 먼저 본다</td></tr> </tbody></table> 두 속지차단은 거울상이다. I 과 aVF 의 큰 파가 어느 쪽인지 보면 축 방향이 정해지고, 우축이면 우심실 비대를 먼저 배제한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 좌심실 비대는 V5·V6 의 큰 R 과 V1 의 깊은 S 로 전압 기준을 넘고 보통 좌축 쪽이었다면 정답이 된다.\n③ 좌전속지차단은 I·aVL 에 qR, II·III·aVF 에 rS 로 축이 −45° 보다 더 왼쪽으로 치우쳐 있었다면 정답이 된다.\n④ 우각차단은 QRS 가 120 ms 이상 넓고 V1 에 rsR′, I·V6 에 넓고 끌리는 S 가 있었다면 정답이 된다.\n⑤ 우심실 비대는 우축 편위에 V1 의 큰 R(R/S > 1)과 우측 흉부 유도의 ST-T 변화, 심초음파의 우심실 비대가 있었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "우축 편위만 보고 젊은 사람이라 정상 변이 또는 우심실 비대로 판독해 버리는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "좁은 QRS 와 우축 편위(I·aVL rS, II·III·aVF 큰 R)를 우심실 비대 근거 없이 좌후속지차단으로 판독하고 좌전속지차단·우각차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 377 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 의 우축 편위에서 우심실 비대·폐질환 근거가 없으면 좌후속지차단으로 판독한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "심초음파에서 우심실 크기·벽 두께와 폐동맥압이 정상이고 V1 에 큰 R 이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: I·aVL rS, II·III·aVF 큰 R → 전두면 우축 편위",
+    "영상: QRS 폭 정상 → 각차단이 아닌 속지 수준",
+    "심초음파 정상·V1 큰 R 없음 → 우심실 비대 배제, 좌후속지차단"
+   ],
+   "key": [
+    {
+     "item": "영상: I·aVL rS, II·III·aVF 큰 R(우축 편위)",
+     "why": "후속지차단의 축",
+     "also": []
+    },
+    {
+     "item": "영상: 좁은 QRS, V1 큰 R 없음",
+     "why": "우각차단·우심실 비대 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심초음파에서 우심실 크기·벽 두께와 폐동맥압은 정상",
+     "why": "우심실 비대·폐고혈압 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "키 162 cm, 몸무게 54 kg",
+     "why": "아주 마른 체형의 수직 심장 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "맥박 108회/분",
+     "why": "계단을 올라온 뒤의 동빈맥 — 축 판독과 무관",
+     "also": []
+    }
+   ],
+   "summary": "QRS 는 좁고 I·aVL rS, II·III·aVF 큰 R 의 우축 편위가 있다. 우심실 비대·폐질환 근거가 없으므로 좌후속지차단이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 우축 편위에 V1 의 R/S 가 1 을 넘고 심초음파에서 우심실 벽이 두꺼웠다면 우심실 비대"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0770.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+   "asset_id": "PTBXL-00377",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 377"
+  },
+  "run_id": "20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0766",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "소아 — 넘어지며 손을 짚은 청소년의 손목 통증",
+  "type": "소아 — 넘어지며 손을 짚은 청소년의 손목 통증",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-23",
+  "vignette": "A 13-year-old boy is brought to the emergency department 3 hours after he fell from his bicycle onto his outstretched right hand. He has pain and swelling over the distal forearm. He has no other injuries. Vital signs are within normal limits. There is tenderness over the distal radius and distal ulna, about 3 cm proximal to the wrist crease. There is no tenderness over the anatomic snuffbox. Radial pulse and capillary refill are normal, and sensation is intact in the median, ulnar, and radial nerve distributions. An anteroposterior radiograph of the right wrist is shown.",
+  "question": "Which of the following best describes this injury?",
+  "options": [
+   "Scaphoid waist fracture",
+   "Salter-Harris type I injury of the distal ulna",
+   "Metaphyseal fractures of the distal radius and ulna with intact physes",
+   "Salter-Harris type II fracture of the distal radius",
+   "Galeazzi fracture-dislocation"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The radiograph shows a <b>transverse lucent line with a cortical step in the distal radial metaphysis</b> and an <b>oblique lucent line in the distal ulnar metaphysis</b>, both well above the growth plates. Both physes are open and uninvolved, alignment is nearly anatomic, and the distal radioulnar joint is congruent. These are metaphyseal fractures of both distal forearm bones.\n- 원리: <b>Why the metaphysis breaks in children</b>: The metaphysis is the transition zone between dense diaphyseal cortex and the cancellous bone near the growth plate. In children its cortex is thin and porous, so a fall on an outstretched hand usually fails there. Children's bone is also more elastic and has a thick periosteum, so fractures are often incomplete (buckle or greenstick) or minimally displaced.<br> <b>Why the physis matters</b>: The growth plate is cartilage and is weaker than the surrounding bone and ligaments, so it can also fail. Salter-Harris injuries pass through the physis and can disturb growth, which is why identifying whether a fracture line reaches the plate changes follow-up. A purely metaphyseal fracture does not threaten growth.<br> <b>Management link</b>: Nondisplaced or minimally angulated distal forearm metaphyseal fractures in a growing child remodel well and are treated with cast immobilization.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Metaphyseal fracture (answer)</th><th>Salter-Harris II (closest distractor)</th></tr></thead><tbody> <tr><td>Fracture line</td><td>Entirely <b>above the physis</b></td><td>Through the physis, exiting the metaphysis</td></tr> <tr><td>Fragment</td><td>None attached to the epiphysis</td><td>Metaphyseal corner fragment (Thurston-Holland)</td></tr> <tr><td>Physeal width</td><td>Normal</td><td>Often widened or displaced epiphysis</td></tr> <tr><td>Growth risk</td><td>Very low</td><td>Low but needs follow-up</td></tr> </tbody></table> Trace each lucent line to see whether it touches the growth plate; that single question separates the two.\n- 오답 이유:\n  - (A) A scaphoid waist fracture would be suspected with snuffbox tenderness and a lucent line across the scaphoid, which is absent here.\n  - (B) Salter-Harris type I of the ulna would be correct if there were physeal widening or tenderness at the ulnar growth plate with no visible fracture line.\n  - (D) Salter-Harris type II would be correct if the fracture line crossed the radial physis and exited through a metaphyseal corner fragment.\n  - (E) Galeazzi fracture-dislocation would be correct for a distal radial shaft fracture with dislocation of the distal radioulnar joint.\n- 함정: Calling any distal forearm fracture in a child a Salter-Harris injury without checking whether the line reaches the physis.\n- 학습목표: Read a pediatric wrist radiograph to locate nondisplaced fractures in the distal radial and ulnar metaphyses that spare the physes, and distinguish them from physeal (Salter-Harris) and Galeazzi injuries\n- 근거·출처: Nagy E, Janisch M, Hržić F, Sorantin E, Tschauner S. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data. 2022;9:222 · Kliegman RM, St Geme JW, Blum NJ, et al., eds. Nelson Textbook of Pediatrics, 22nd ed. Elsevier; 2024. Chapter: Common Fractures\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows a <b>transverse lucent line with a cortical step in the distal radial metaphysis</b> and an <b>oblique lucent line in the distal ulnar metaphysis</b>, both well above the growth plates. Both physes are open and uninvolved, alignment is nearly anatomic, and the distal radioulnar joint is congruent. These are metaphyseal fractures of both distal forearm bones."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the metaphysis breaks in children</b>: The metaphysis is the transition zone between dense diaphyseal cortex and the cancellous bone near the growth plate. In children its cortex is thin and porous, so a fall on an outstretched hand usually fails there. Children's bone is also more elastic and has a thick periosteum, so fractures are often incomplete (buckle or greenstick) or minimally displaced.<br> <b>Why the physis matters</b>: The growth plate is cartilage and is weaker than the surrounding bone and ligaments, so it can also fail. Salter-Harris injuries pass through the physis and can disturb growth, which is why identifying whether a fracture line reaches the plate changes follow-up. A purely metaphyseal fracture does not threaten growth.<br> <b>Management link</b>: Nondisplaced or minimally angulated distal forearm metaphyseal fractures in a growing child remodel well and are treated with cast immobilization."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Metaphyseal fracture (answer)</th><th>Salter-Harris II (closest distractor)</th></tr></thead><tbody> <tr><td>Fracture line</td><td>Entirely <b>above the physis</b></td><td>Through the physis, exiting the metaphysis</td></tr> <tr><td>Fragment</td><td>None attached to the epiphysis</td><td>Metaphyseal corner fragment (Thurston-Holland)</td></tr> <tr><td>Physeal width</td><td>Normal</td><td>Often widened or displaced epiphysis</td></tr> <tr><td>Growth risk</td><td>Very low</td><td>Low but needs follow-up</td></tr> </tbody></table> Trace each lucent line to see whether it touches the growth plate; that single question separates the two."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A scaphoid waist fracture would be suspected with snuffbox tenderness and a lucent line across the scaphoid, which is absent here.\n(B) Salter-Harris type I of the ulna would be correct if there were physeal widening or tenderness at the ulnar growth plate with no visible fracture line.\n(D) Salter-Harris type II would be correct if the fracture line crossed the radial physis and exited through a metaphyseal corner fragment.\n(E) Galeazzi fracture-dislocation would be correct for a distal radial shaft fracture with dislocation of the distal radioulnar joint."
+   },
+   {
+    "k": "함정",
+    "v": "Calling any distal forearm fracture in a child a Salter-Harris injury without checking whether the line reaches the physis."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a pediatric wrist radiograph to locate nondisplaced fractures in the distal radial and ulnar metaphyses that spare the physes, and distinguish them from physeal (Salter-Harris) and Galeazzi injuries"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Nagy E, Janisch M, Hržić F, Sorantin E, Tschauner S. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data. 2022;9:222 · Kliegman RM, St Geme JW, Blum NJ, et al., eds. Nelson Textbook of Pediatrics, 22nd ed. Elsevier; 2024. Chapter: Common Fractures ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "골절선이 요골과 척골의 원위 골간단에만 있고 성장판에 닿지 않으므로 성장판 손상이 아닌 골간단 골절이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "영상: 두 골절선 모두 성장판보다 위에 있고 성장판 너비가 정상이다",
+   "steps": 2,
+   "chain": [
+    "영상: 요골·척골 원위 골간단의 골절선, 전위 거의 없음 → 원위 전완 양골 골간단 골절",
+    "영상: 골절선이 성장판에 닿지 않고 원위 요척관절 정렬 정상 → Salter-Harris 손상·Galeazzi 아님"
+   ],
+   "key": [
+    {
+     "item": "영상: 요골 원위 골간단의 가로 골절선과 피질 계단, 척골 원위 골간단의 비스듬한 골절선",
+     "why": "골절 위치",
+     "also": []
+    },
+    {
+     "item": "영상: 열린 성장판에 골절선이 닿지 않음",
+     "why": "Salter-Harris 손상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "about 3 cm proximal to the wrist crease",
+     "why": "압통 위치가 골간단과 일치",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no tenderness over the anatomic snuffbox",
+     "why": "주상골 골절 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "sensation is intact in the median, ulnar, and radial nerve distributions",
+     "why": "신경 손상 없음 — 응급 정복 필요성 낮음",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "요골과 척골의 원위 골간단에 골절선이 있고 성장판에는 닿지 않는다. 성장판 손상이 아닌 원위 전완 양골 골간단 골절이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "요골 골절선이 성장판을 지나 골간단 모서리 조각으로 빠져나갔다면 Salter-Harris II형"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0766.png",
+   "caption": "Anteroposterior radiograph of the right wrist and distal forearm, unaltered apart from scaling (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0553_1238586413_01_WRI-R1_M013",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0765",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "외과계 — 검진에서 발견된 콩팥 고형 종괴",
+  "type": "외과계 — 검진에서 발견된 콩팥 고형 종괴",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-23",
+  "vignette": "56세 여자가 건강검진 복부 초음파에서 왼쪽 콩팥에 덩이가 있다는 말을 듣고 왔다. 혈뇨·옆구리 통증·체중 감소는 없다. 고혈압과 제2형 당뇨병으로 약을 먹고 있다. 혈압 134/82 mmHg 이고 진찰 소견은 정상이다. 소변검사에서 적혈구는 없다. 크레아티닌 1.0 mg/dL(eGFR 64 mL/min/1.73 m²)이다. 복부 조영증강 CT 는 그림과 같고, 판독에서 종괴의 가장 긴 지름은 6 cm 였다. 흉부 CT 에서 전이는 없고 콩팥정맥 안 종양 혈전도 없다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "부분 신절제술",
+   "고주파 열소작술",
+   "6개월 뒤 CT 추적",
+   "면역관문억제제 치료",
+   "경피적 종괴 배액술"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 <b>왼쪽 콩팥에서 생긴 둥근 고형 종괴가 콩팥 피질보다 강하고 불균질하게 조영 증강</b>되며 <b>지방 음영이 없다</b>. 조영 증강되는 고형 콩팥 종괴는 신세포암을 먼저 생각하고 수술로 떼어 조직을 확인한다. 전이가 없는 6 cm 종괴(T1b)이고 고혈압·당뇨로 신기능을 아껴야 하므로, 기술적으로 가능하면 콩팥을 남기는 부분 신절제술이 우선이다.\n- 원리: <b>왜 조영 증강 고형 종괴는 떼는가</b>: 콩팥 종괴는 내용물로 먼저 나눈다. 액체만 있는 단순 낭종은 조영되지 않고, 거시적 지방이 보이면 혈관근지방종을 생각한다. 지방 없이 조영제가 들어오는 고형 종괴는 약 80 % 가 신세포암이고, 나머지 양성 종양(호산성 과립세포종 등)도 영상으로는 신세포암과 가를 수 없다. 그래서 수술 대상이면 절제가 진단과 치료를 함께 한다.<br> <b>왜 콩팥을 남기는가</b>: 콩팥 하나를 통째로 떼면 남은 콩팥의 사구체에 과여과가 생기고, 고혈압·당뇨가 있는 환자에서는 만성 콩팥병과 심혈관 사건이 늘어난다. 4 cm 이하(T1a)는 물론 4~7 cm(T1b)도 종양 위치상 가능하면 부분 신절제술이 근치적 절제와 종양 결과가 비슷하면서 신기능을 더 지킨다.<br> <b>열소작·감시의 자리</b>: 열소작은 3 cm 이하 종양에서 효과가 좋고, 감시는 2 cm 이하이거나 기대 여명이 짧을 때 쓴다 — 크기가 커질수록 국소 재발과 진행 위험이 커진다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">부분 신절제술 — 정답</th><th>고주파 열소작술 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>알맞은 크기</td><td><b>T1(7 cm 이하)</b>, 특히 신기능을 아껴야 할 때</td><td><b>3 cm 이하</b> 작은 종괴</td></tr> <tr><td>환자</td><td>수술을 견딜 수 있는 환자</td><td>수술 위험이 큰 고령·동반 질환 환자</td></tr> <tr><td>조직 확인</td><td>절제 표본 전체</td><td>시술 전 조직검사가 필요</td></tr> <tr><td>국소 재발</td><td>낮다</td><td>3 cm 를 넘으면 크게 는다</td></tr> </tbody></table> 크기가 3 cm 를 넘으면 소작보다 절제, 7 cm 이하이고 콩팥을 아껴야 하면 부분 절제가 우선이다.\n- 오답 이유:\n  - ② 고주파 열소작술은 종괴가 3 cm 이하로 작고 전신마취·수술 위험이 큰 고령 환자라면 정답이 된다.\n  - ③ 6개월 뒤 CT 추적은 2 cm 이하의 작은 고형 종괴이거나 기대 여명이 짧은 환자라면 고려한다.\n  - ④ 면역관문억제제 치료는 폐·뼈 같은 원격 전이가 있는 진행성 신세포암이라면 치료의 중심이 된다.\n  - ⑤ 경피적 배액술은 조영 증강되지 않는 액체 저류인 콩팥 농양이라면 정답이 된다 — 고형 종괴에는 쓰지 않는다.\n- 함정: 신기능 보존을 위해 크기와 무관하게 열소작을 고르거나, 영상만으로 양성 종양이라 보고 추적만 하는 것.\n- 학습목표: 조영증강 CT 에서 지방이 없는 조영 증강 콩팥 고형 종괴를 수술 대상으로 판단하고, 4~7 cm 국소 종괴에서 신기능을 보존하는 부분 신절제술을 선택한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00202 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 <b>왼쪽 콩팥에서 생긴 둥근 고형 종괴가 콩팥 피질보다 강하고 불균질하게 조영 증강</b>되며 <b>지방 음영이 없다</b>. 조영 증강되는 고형 콩팥 종괴는 신세포암을 먼저 생각하고 수술로 떼어 조직을 확인한다. 전이가 없는 6 cm 종괴(T1b)이고 고혈압·당뇨로 신기능을 아껴야 하므로, 기술적으로 가능하면 콩팥을 남기는 부분 신절제술이 우선이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 조영 증강 고형 종괴는 떼는가</b>: 콩팥 종괴는 내용물로 먼저 나눈다. 액체만 있는 단순 낭종은 조영되지 않고, 거시적 지방이 보이면 혈관근지방종을 생각한다. 지방 없이 조영제가 들어오는 고형 종괴는 약 80 % 가 신세포암이고, 나머지 양성 종양(호산성 과립세포종 등)도 영상으로는 신세포암과 가를 수 없다. 그래서 수술 대상이면 절제가 진단과 치료를 함께 한다.<br> <b>왜 콩팥을 남기는가</b>: 콩팥 하나를 통째로 떼면 남은 콩팥의 사구체에 과여과가 생기고, 고혈압·당뇨가 있는 환자에서는 만성 콩팥병과 심혈관 사건이 늘어난다. 4 cm 이하(T1a)는 물론 4~7 cm(T1b)도 종양 위치상 가능하면 부분 신절제술이 근치적 절제와 종양 결과가 비슷하면서 신기능을 더 지킨다.<br> <b>열소작·감시의 자리</b>: 열소작은 3 cm 이하 종양에서 효과가 좋고, 감시는 2 cm 이하이거나 기대 여명이 짧을 때 쓴다 — 크기가 커질수록 국소 재발과 진행 위험이 커진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">부분 신절제술 — 정답</th><th>고주파 열소작술 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>알맞은 크기</td><td><b>T1(7 cm 이하)</b>, 특히 신기능을 아껴야 할 때</td><td><b>3 cm 이하</b> 작은 종괴</td></tr> <tr><td>환자</td><td>수술을 견딜 수 있는 환자</td><td>수술 위험이 큰 고령·동반 질환 환자</td></tr> <tr><td>조직 확인</td><td>절제 표본 전체</td><td>시술 전 조직검사가 필요</td></tr> <tr><td>국소 재발</td><td>낮다</td><td>3 cm 를 넘으면 크게 는다</td></tr> </tbody></table> 크기가 3 cm 를 넘으면 소작보다 절제, 7 cm 이하이고 콩팥을 아껴야 하면 부분 절제가 우선이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 고주파 열소작술은 종괴가 3 cm 이하로 작고 전신마취·수술 위험이 큰 고령 환자라면 정답이 된다.\n③ 6개월 뒤 CT 추적은 2 cm 이하의 작은 고형 종괴이거나 기대 여명이 짧은 환자라면 고려한다.\n④ 면역관문억제제 치료는 폐·뼈 같은 원격 전이가 있는 진행성 신세포암이라면 치료의 중심이 된다.\n⑤ 경피적 배액술은 조영 증강되지 않는 액체 저류인 콩팥 농양이라면 정답이 된다 — 고형 종괴에는 쓰지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "신기능 보존을 위해 크기와 무관하게 열소작을 고르거나, 영상만으로 양성 종양이라 보고 추적만 하는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영증강 CT 에서 지방이 없는 조영 증강 콩팥 고형 종괴를 수술 대상으로 판단하고, 4~7 cm 국소 종괴에서 신기능을 보존하는 부분 신절제술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00202 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "전이 없는 6 cm 조영 증강 콩팥 고형 종괴는 신기능을 보존하는 부분 신절제술로 뗀다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "종괴의 가장 긴 지름이 6 cm — 고주파 열소작술은 3 cm 이하 종괴에 쓴다",
+   "steps": 3,
+   "chain": [
+    "영상: 지방 없이 불균질하게 조영 증강되는 콩팥 고형 종괴 → 신세포암을 전제로 수술 대상",
+    "흉부 CT 전이 없음 + 콩팥정맥 혈전 없음 + 6 cm → 국소 T1b",
+    "T1b + 고혈압·당뇨(신기능 보존 필요) → 부분 신절제술"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 콩팥의 불균질 조영 증강 고형 종괴, 지방 음영 없음",
+     "why": "신세포암을 먼저 생각 — 혈관근지방종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "가장 긴 지름은 6 cm",
+     "why": "T1b — 소작·감시보다 절제",
+     "also": []
+    },
+    {
+     "item": "흉부 CT 에서 전이는 없고",
+     "why": "국소 질환 — 수술로 완치를 노린다",
+     "also": []
+    },
+    {
+     "item": "고혈압과 제2형 당뇨병",
+     "why": "만성 콩팥병 위험 — 신기능 보존이 중요",
+     "also": []
+    },
+    {
+     "item": "eGFR 64 mL/min/1.73 m²",
+     "why": "신기능이 경계라 콩팥을 남긴다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "소변검사에서 적혈구는 없다",
+     "why": "혈뇨가 없어도 고형 종괴 판단은 같다",
+     "also": []
+    }
+   ],
+   "summary": "지방 없는 조영 증강 콩팥 고형 종괴로 수술 대상이고 전이가 없는 6 cm 종괴다. 신기능을 아껴야 하므로 부분 신절제술을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "종괴가 2.5 cm 이고 환자가 수술 위험이 큰 85세였다면 고주파 열소작술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0765.png",
+   "caption": "조영증강 복부 CT, 동맥기 축상 단면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 크롭·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.257059249056126220967076534005",
+   "asset_id": "TCIA-KITS-00202_76831447",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00202"
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0762",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "응급 — 등 위로 무거운 물체가 떨어진 젊은 여성",
+  "type": "응급 — 등 위로 무거운 물체가 떨어진 젊은 여성",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-23",
+  "vignette": "A 35-year-old woman is brought to the emergency department 2 hours after a heavy truck tire fell onto her back at work. She reports severe midback pain. She has no other medical conditions. Pulse is 96/min, respirations are 20/min, and blood pressure is 124/76 mm Hg. There is tenderness and a palpable step-off over the midthoracic spinous processes. Motor strength is 5/5 in all extremities, sensation is intact throughout, and rectal tone is normal. FAST examination is negative. A sagittal CT of the thoracic spine is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Bed rest and analgesia with follow-up radiographs in 2 weeks",
+   "High-dose intravenous methylprednisolone infusion",
+   "MRI of the brain to evaluate for occult head injury",
+   "Surgical reduction with posterior instrumented fusion",
+   "Thoracolumbosacral orthosis and early ambulation"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The CT shows the upper thoracic vertebra <b>translated anteriorly over the vertebra below</b> with loss of alignment of the vertebral bodies and spinal canal and a comminuted lower vertebral body. Translation means that the anterior, middle, and posterior columns are all disrupted — a <b>fracture-dislocation, the most unstable thoracolumbar injury</b>. Even with an intact neurologic examination, the spine cannot protect the cord, so reduction and posterior instrumented fusion are indicated.\n- 원리: <b>Why translation means instability</b>: The spine resists displacement through three load-bearing columns — the anterior vertebral body and anterior longitudinal ligament, the posterior half of the body and posterior longitudinal ligament, and the posterior elements with their ligaments and facet joints. A burst or compression fracture can leave at least the posterior ligamentous complex intact. When one vertebra slides on another, every column has failed, so there is nothing left to resist further movement.<br> <b>Why an intact cord does not change the plan</b>: The cord occupies a canal that is now malaligned. Any further displacement during transfer, sitting, or turning can produce a complete injury. Surgery is done to restore alignment and lock the segments before that happens, not to treat an existing deficit.<br> <b>Thoracic context</b>: The rib cage makes the thoracic spine stiff, so a fracture-dislocation here implies very high energy; associated chest and aortic injuries must also be sought.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fracture-dislocation (answer)</th><th>Stable burst fracture (closest distractor)</th></tr></thead><tbody> <tr><td>CT alignment</td><td><b>Translation</b> of one vertebra on another</td><td>Alignment preserved</td></tr> <tr><td>Columns injured</td><td>All three</td><td>Anterior and middle; posterior ligaments intact</td></tr> <tr><td>Neurologic risk</td><td>High, even if intact now</td><td>Low if intact</td></tr> <tr><td>Treatment</td><td>Reduction and instrumented fusion</td><td>Orthosis and early mobilization</td></tr> </tbody></table> Ask first whether the vertebrae are still stacked; if they are not, the injury is unstable regardless of the neurologic examination.\n- 오답 이유:\n  - (A) Bed rest and analgesia would be appropriate for an isolated transverse or spinous process fracture, which does not affect stability.\n  - (B) High-dose methylprednisolone is not recommended for blunt cord injury; it was once used for acute deficits, which this patient does not have.\n  - (C) Brain MRI would be indicated if she had loss of consciousness, confusion, or focal deficits suggesting a head injury.\n  - (E) An orthosis with early ambulation would be correct for a stable burst fracture with preserved alignment and an intact posterior ligamentous complex.\n- 함정: Choosing nonoperative care because the neurologic examination is normal, ignoring the translation on CT.\n- 학습목표: Recognize translational fracture-dislocation of the thoracic spine on CT as a three-column unstable injury requiring urgent surgical stabilization even when neurologic function is intact\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 453: Diseases of the Spinal Cord · Vaccaro AR, Oner C, Kepler CK, et al. AOSpine thoracolumbar spine injury classification system. Spine (Phila Pa 1976). 2013;38(23):2028-2037\n\n## 출처\n- Severe fracture-dislocation of the thoracic spine without any neurological deficit. World J Surg Oncol. 2017 Jan 5;15:3. doi: 10.1186/s12957-016-1070-7 (CC BY) — Fig. 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows the upper thoracic vertebra <b>translated anteriorly over the vertebra below</b> with loss of alignment of the vertebral bodies and spinal canal and a comminuted lower vertebral body. Translation means that the anterior, middle, and posterior columns are all disrupted — a <b>fracture-dislocation, the most unstable thoracolumbar injury</b>. Even with an intact neurologic examination, the spine cannot protect the cord, so reduction and posterior instrumented fusion are indicated."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why translation means instability</b>: The spine resists displacement through three load-bearing columns — the anterior vertebral body and anterior longitudinal ligament, the posterior half of the body and posterior longitudinal ligament, and the posterior elements with their ligaments and facet joints. A burst or compression fracture can leave at least the posterior ligamentous complex intact. When one vertebra slides on another, every column has failed, so there is nothing left to resist further movement.<br> <b>Why an intact cord does not change the plan</b>: The cord occupies a canal that is now malaligned. Any further displacement during transfer, sitting, or turning can produce a complete injury. Surgery is done to restore alignment and lock the segments before that happens, not to treat an existing deficit.<br> <b>Thoracic context</b>: The rib cage makes the thoracic spine stiff, so a fracture-dislocation here implies very high energy; associated chest and aortic injuries must also be sought."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fracture-dislocation (answer)</th><th>Stable burst fracture (closest distractor)</th></tr></thead><tbody> <tr><td>CT alignment</td><td><b>Translation</b> of one vertebra on another</td><td>Alignment preserved</td></tr> <tr><td>Columns injured</td><td>All three</td><td>Anterior and middle; posterior ligaments intact</td></tr> <tr><td>Neurologic risk</td><td>High, even if intact now</td><td>Low if intact</td></tr> <tr><td>Treatment</td><td>Reduction and instrumented fusion</td><td>Orthosis and early mobilization</td></tr> </tbody></table> Ask first whether the vertebrae are still stacked; if they are not, the injury is unstable regardless of the neurologic examination."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Bed rest and analgesia would be appropriate for an isolated transverse or spinous process fracture, which does not affect stability.\n(B) High-dose methylprednisolone is not recommended for blunt cord injury; it was once used for acute deficits, which this patient does not have.\n(C) Brain MRI would be indicated if she had loss of consciousness, confusion, or focal deficits suggesting a head injury.\n(E) An orthosis with early ambulation would be correct for a stable burst fracture with preserved alignment and an intact posterior ligamentous complex."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing nonoperative care because the neurologic examination is normal, ignoring the translation on CT."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize translational fracture-dislocation of the thoracic spine on CT as a three-column unstable injury requiring urgent surgical stabilization even when neurologic function is intact"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 453: Diseases of the Spinal Cord · Vaccaro AR, Oner C, Kepler CK, et al. AOSpine thoracolumbar spine injury classification system. Spine (Phila Pa 1976). 2013;38(23):2028-2037 ## 출처 Severe fracture-dislocation of the thoracic spine without any neurological deficit. World J Surg Oncol. 2017 Jan 5;15:3. doi: 10.1186/s12957-016-1070-7 (CC BY) — Fig. 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "CT 에서 척추체가 전위된 흉추 골절-탈구는 세 기둥이 모두 손상된 불안정 손상이므로 신경 결손이 없어도 정복·고정술을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "영상: 위 척추체가 아래 척추체 앞으로 미끄러진 전위 — 보조기로 치료하는 안정 방출골절은 정렬이 유지된다",
+   "steps": 2,
+   "chain": [
+    "영상: 흉추 척추체 사이의 전후 전위와 척추관 정렬 단절 → 골절-탈구(세 기둥 손상)",
+    "세 기둥 손상 → 불안정, 신경 결손이 없어도 수술적 정복과 고정"
+   ],
+   "key": [
+    {
+     "item": "영상: 위 척추체가 아래 척추체 앞으로 전위되고 척추관 정렬이 끊김",
+     "why": "골절-탈구 — 불안정",
+     "also": []
+    },
+    {
+     "item": "a palpable step-off over the midthoracic spinous processes",
+     "why": "후방 요소의 정렬 단절",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Motor strength is 5/5 in all extremities",
+     "why": "척수 손상 가능성을 낮추지만 불안정성 판단은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "FAST examination is negative",
+     "why": "복강 내 출혈이 없어 척추 수술을 우선할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "a heavy truck tire fell onto her back",
+     "why": "고에너지 손상 기전",
+     "also": []
+    }
+   ],
+   "summary": "CT 에서 흉추가 앞으로 전위된 골절-탈구가 보인다. 세 기둥이 모두 손상된 불안정 손상이라 신경 결손이 없어도 정복과 후방 고정술을 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "CT 에서 정렬이 유지된 방출골절이고 후방 인대 복합체가 온전했다면 보조기와 조기 보행"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0762.jpg",
+   "caption": "Sagittal reformatted CT of the thoracic spine, bone window; the blue tint is from the original published figure, used without cropping (PMC Open Access Subset, CC BY)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5217254/",
+   "asset_id": "PMC-PMC5217254_Fig2",
+   "text": "Severe fracture-dislocation of the thoracic spine without any neurological deficit. World J Surg Oncol. 2017 Jan 5;15:3. doi: 10.1186/s12957-016-1070-7 (CC BY) — Fig. 2"
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0761",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "순환기 — 쉴 때 생긴 가슴 통증과 ST 하강",
+  "type": "순환기 — 쉴 때 생긴 가슴 통증과 ST 하강",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-23",
+  "vignette": "86세 여자가 2시간 전 쉬던 중 시작된 가슴 답답함으로 응급실에 왔다. 통증은 왼팔로 뻗쳤고 식은땀이 났으며 지금은 조금 줄었다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 148/82 mmHg, 맥박 90회/분, 호흡 18회/분이고 폐 청진에서 수포음은 없다. 혈청 고감도 트로포닌 I 는 도착 때 참고치 상한의 6배였고 1시간 뒤 더 올랐다. 12유도 심전도는 그림과 같다.",
+  "question": "진단으로 가장 적절한 것은?",
+  "options": [
+   "ST분절상승 심근경색",
+   "불안정 협심증",
+   "급성 심낭염",
+   "변이형 협심증",
+   "비ST분절상승 심근경색"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 심전도는 동리듬에 좁은 QRS 이고 <b>I·II·aVL·V4~V6 에서 수평형 ST 하강</b>과 V4~V6 T파 역위가 있으며 <b>ST 상승은 없다</b>. 쉴 때 생긴 허혈성 흉통에 <b>트로포닌이 참고치 상한을 넘고 1시간 뒤 더 올랐으므로</b> 급성 심근 손상이 있다. ST 상승 없이 심근 괴사가 증명된 급성 관상동맥증후군이므로 비ST분절상승 심근경색이다.\n- 원리: <b>왜 ST 가 내려가는가</b>: 관상동맥이 완전히 막히지 않으면 허혈은 심근의 가장 안쪽(심내막하층)에 먼저 생긴다. 심내막하 허혈 부위는 손상 전류를 만들어 그 위를 바라보는 유도에서 ST 분절을 끌어내린다. 반대로 관상동맥이 완전히 막혀 벽 전체가 허혈에 빠지면(전층 허혈) 손상 전류의 방향이 뒤집혀 그 부위를 보는 유도에서 ST 가 올라간다.<br> <b>왜 트로포닌이 가르는가</b>: 불안정 협심증과 비ST분절상승 심근경색은 같은 병태(불안정 죽상판의 파열과 비폐쇄성 혈전)이고 심전도로는 구별할 수 없다. 심근세포가 죽어 트로포닌이 혈중으로 새어 나왔는지, 그리고 그 값이 오르내리는지(급성 손상)가 둘을 가른다.<br> <b>무엇이 달라지나</b>: ST 상승이면 곧바로 재관류(일차 관상동맥중재술)가 목표지만, 비ST분절상승은 위험도를 평가해 침습적 관상동맥조영술의 시기를 정한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">비ST분절상승 심근경색 — 정답</th><th>불안정 협심증 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>병태</td><td>비폐쇄성 혈전 + 심근 괴사</td><td>비폐쇄성 혈전, 괴사 없음</td></tr> <tr><td>심전도</td><td>ST 하강·T파 역위 또는 정상</td><td>같다 — 심전도로 못 가른다</td></tr> <tr><td>트로포닌</td><td><b>참고치 99 백분위수 초과 + 상승·하강</b></td><td>참고치 이내</td></tr> <tr><td>처치</td><td colspan=\"2\">항혈소판제·항응고제, 위험도에 따라 침습적 조영술 시기 결정</td></tr> </tbody></table> ST 가 올라가면 ST분절상승 심근경색, ST 가 올라가지 않으면 트로포닌으로 비ST분절상승 심근경색과 불안정 협심증을 가른다.\n- 오답 이유:\n  - ① ST분절상승 심근경색은 인접한 두 유도 이상에서 ST 가 올라가 있었다면 정답이 된다 — 이 심전도는 ST 가 내려가 있다.\n  - ② 불안정 협심증은 같은 흉통과 ST 하강이 있어도 트로포닌이 참고치 이내로 오르지 않았다면 정답이 된다.\n  - ③ 급성 심낭염은 여러 유도에서 오목한 ST 상승과 PR 하강이 있고 앉아서 숙이면 좋아지는 흉통이라면 정답이 된다.\n  - ④ 변이형 협심증은 새벽 안정 시 흉통 동안 일시적인 ST 상승이 보이고 증상이 사라지면 정상화된다면 정답이 된다.\n- 함정: ST 하강과 T파 역위를 보고 심전도만으로 불안정 협심증과 비ST분절상승 심근경색을 가르려는 것.\n- 학습목표: 쉴 때 생긴 흉통과 여러 유도의 ST 하강·T파 역위, 상승한 트로포닌을 비ST분절상승 심근경색으로 판단하고 ST분절상승 심근경색·불안정 협심증과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16900 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도는 동리듬에 좁은 QRS 이고 <b>I·II·aVL·V4~V6 에서 수평형 ST 하강</b>과 V4~V6 T파 역위가 있으며 <b>ST 상승은 없다</b>. 쉴 때 생긴 허혈성 흉통에 <b>트로포닌이 참고치 상한을 넘고 1시간 뒤 더 올랐으므로</b> 급성 심근 손상이 있다. ST 상승 없이 심근 괴사가 증명된 급성 관상동맥증후군이므로 비ST분절상승 심근경색이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 ST 가 내려가는가</b>: 관상동맥이 완전히 막히지 않으면 허혈은 심근의 가장 안쪽(심내막하층)에 먼저 생긴다. 심내막하 허혈 부위는 손상 전류를 만들어 그 위를 바라보는 유도에서 ST 분절을 끌어내린다. 반대로 관상동맥이 완전히 막혀 벽 전체가 허혈에 빠지면(전층 허혈) 손상 전류의 방향이 뒤집혀 그 부위를 보는 유도에서 ST 가 올라간다.<br> <b>왜 트로포닌이 가르는가</b>: 불안정 협심증과 비ST분절상승 심근경색은 같은 병태(불안정 죽상판의 파열과 비폐쇄성 혈전)이고 심전도로는 구별할 수 없다. 심근세포가 죽어 트로포닌이 혈중으로 새어 나왔는지, 그리고 그 값이 오르내리는지(급성 손상)가 둘을 가른다.<br> <b>무엇이 달라지나</b>: ST 상승이면 곧바로 재관류(일차 관상동맥중재술)가 목표지만, 비ST분절상승은 위험도를 평가해 침습적 관상동맥조영술의 시기를 정한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">비ST분절상승 심근경색 — 정답</th><th>불안정 협심증 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>병태</td><td>비폐쇄성 혈전 + 심근 괴사</td><td>비폐쇄성 혈전, 괴사 없음</td></tr> <tr><td>심전도</td><td>ST 하강·T파 역위 또는 정상</td><td>같다 — 심전도로 못 가른다</td></tr> <tr><td>트로포닌</td><td><b>참고치 99 백분위수 초과 + 상승·하강</b></td><td>참고치 이내</td></tr> <tr><td>처치</td><td colspan=\"2\">항혈소판제·항응고제, 위험도에 따라 침습적 조영술 시기 결정</td></tr> </tbody></table> ST 가 올라가면 ST분절상승 심근경색, ST 가 올라가지 않으면 트로포닌으로 비ST분절상승 심근경색과 불안정 협심증을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① ST분절상승 심근경색은 인접한 두 유도 이상에서 ST 가 올라가 있었다면 정답이 된다 — 이 심전도는 ST 가 내려가 있다.\n② 불안정 협심증은 같은 흉통과 ST 하강이 있어도 트로포닌이 참고치 이내로 오르지 않았다면 정답이 된다.\n③ 급성 심낭염은 여러 유도에서 오목한 ST 상승과 PR 하강이 있고 앉아서 숙이면 좋아지는 흉통이라면 정답이 된다.\n④ 변이형 협심증은 새벽 안정 시 흉통 동안 일시적인 ST 상승이 보이고 증상이 사라지면 정상화된다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "ST 하강과 T파 역위를 보고 심전도만으로 불안정 협심증과 비ST분절상승 심근경색을 가르려는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "쉴 때 생긴 흉통과 여러 유도의 ST 하강·T파 역위, 상승한 트로포닌을 비ST분절상승 심근경색으로 판단하고 ST분절상승 심근경색·불안정 협심증과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16900 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "ST 상승 없이 ST 하강·T파 역위가 있고 트로포닌이 오르므로 비ST분절상승 심근경색이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "트로포닌이 참고치 상한의 6배이고 1시간 뒤 더 올랐다 — 심근 괴사가 있다",
+   "steps": 2,
+   "chain": [
+    "영상: ST 상승 없이 여러 유도의 ST 하강·T파 역위 → ST분절상승이 아닌 급성 관상동맥증후군",
+    "트로포닌 상승과 추가 상승 → 심근 괴사, 비ST분절상승 심근경색"
+   ],
+   "key": [
+    {
+     "item": "영상: I·II·aVL·V4~V6 수평형 ST 하강, ST 상승 없음",
+     "why": "ST분절상승 심근경색을 배제하고 심내막하 허혈을 보인다",
+     "also": []
+    },
+    {
+     "item": "참고치 상한의 6배였고 1시간 뒤 더 올랐다",
+     "why": "급성 심근 손상 — 불안정 협심증과 가른다",
+     "also": []
+    },
+    {
+     "item": "쉬던 중 시작된 가슴 답답함",
+     "why": "허혈성 흉통의 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "폐 청진에서 수포음은 없다",
+     "why": "심부전 동반이 없어 위험도 평가에 쓰인다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압과 이상지질혈증",
+     "why": "위험인자 — 진단 구분과는 무관",
+     "also": []
+    }
+   ],
+   "summary": "ST 상승은 없고 ST 하강·T파 역위가 있으며 트로포닌이 오르내리는 급성 손상이 있다. 비ST분절상승 심근경색이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 흉통·심전도에서 트로포닌이 반복 측정에도 참고치 이내였다면 불안정 협심증"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0761.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16900",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16900"
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0769",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "정신 — 리튬을 먹던 환자의 의식 저하",
+  "type": "정신 — 리튬을 먹던 환자의 의식 저하",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-23",
+  "vignette": "67세 여자가 사흘 전부터 손이 심하게 떨리고 비틀거리며 말이 어눌해져 가족에게 이끌려 왔다. 오늘 아침부터는 엉뚱한 대답을 한다. 20년 전부터 양극성 장애로 탄산리튬을 먹어 왔고 3주 전 고혈압으로 하이드로클로로티아지드를 새로 시작했다. 체온 36.8 ℃, 혈압 118/70 mmHg, 맥박 64회/분이다. 사람과 장소를 잘 알아보지 못하고, 거친 떨림과 근간대경련, 운동실조가 있다. 혈청 리튬 3.2 mEq/L(치료 범위 0.6~1.2), 나트륨 134 mEq/L, 크레아티닌 2.1 mg/dL(6개월 전 0.9 mg/dL)이다. 탄산리튬과 이뇨제를 끊고 생리식염수를 정맥으로 주기 시작했다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "생리식염수 지속 투여",
+   "혈액투석 시행",
+   "활성탄 투여",
+   "전장관세척 시행",
+   "탄산수소나트륨 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 티아지드를 시작한 뒤 리튬 청소율이 떨어져 생긴 <b>만성 리튬 중독</b>이다. 혈청 리튬이 3.2 mEq/L 로 높고 <b>의식 혼동·근간대경련 같은 중추신경 증상</b>이 있으며 <b>크레아티닌이 2.1 mg/dL 로 올라</b> 콩팥으로 리튬을 내보낼 수 없다. 리튬은 분자가 작고 단백 결합이 없어 투석으로 잘 빠지므로 수액만으로 기다리지 않고 혈액투석을 한다.\n- 원리: <b>왜 티아지드가 리튬을 올리는가</b>: 리튬은 콩팥에서 나트륨처럼 다뤄진다. 티아지드가 원위세관에서 나트륨을 빼내면 몸은 나트륨과 체액이 부족하다고 느끼고 근위세관에서 나트륨 재흡수를 늘리는데, 이때 리튬도 함께 재흡수된다. 그래서 티아지드·ACE 억제제·NSAID·탈수는 리튬 청소율을 낮춘다.<br> <b>왜 만성 중독이 더 위험한가</b>: 오래 먹은 환자는 리튬이 이미 뇌 조직에 쌓여 있어, 같은 혈중 농도라도 급성 과량 복용보다 신경 증상이 심하고 오래간다. 리튬은 거의 전부 콩팥으로 나가므로 신기능이 떨어지면 몸에서 빠질 길이 없다.<br> <b>왜 투석이 듣는가</b>: 리튬은 분자량이 작고(7 Da) 단백 결합이 없으며 분포 용적이 작아 혈액투석으로 잘 제거된다. 중독 치료 합의(EXTRIP)는 신기능 저하와 함께 리튬 4.0 초과, 또는 의식 저하·경련·생명을 위협하는 부정맥이 있으면 투석을 권한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">혈액투석 — 정답</th><th>수액만 계속 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>신기능</td><td><b>떨어져 있음</b>(크레아티닌 2.1)</td><td>정상 — 콩팥이 리튬을 내보낼 수 있다</td></tr> <tr><td>신경 증상</td><td><b>의식 혼동·근간대경련</b></td><td>가벼운 떨림·구역 정도</td></tr> <tr><td>리튬 농도</td><td>4.0 초과면 신기능 저하만으로도 적응</td><td>2.5 미만이고 증상이 가볍다</td></tr> </tbody></table> 농도 숫자 하나가 아니라 「콩팥이 내보낼 수 있는가」와 「뇌가 이미 손상되고 있는가」를 함께 본다.\n- 오답 이유:\n  - ① 수액만으로 기다리기는 신기능이 정상이고 의식이 맑으며 떨림 정도의 가벼운 증상만 있는 중독이라면 정답이 된다.\n  - ③ 활성탄은 리튬처럼 작은 이온은 흡착하지 못하므로, 함께 먹은 다른 약이 있을 때 그 약을 위해서라면 쓸 수 있다.\n  - ④ 전장관세척은 서방형 리튬 정제를 한꺼번에 많이 삼킨 급성 중독이라면 장에 남은 알약을 빼내기 위해 고려한다.\n  - ⑤ 탄산수소나트륨은 살리실산이나 삼환계 항우울제 중독처럼 소변 알칼리화·나트륨 부하가 효과 있는 약이라면 쓴다.\n- 함정: 리튬 농도가 4.0 mEq/L 을 넘지 않았다는 이유로 신경 증상과 신기능 저하를 무시하고 수액만 계속하는 것.\n- 학습목표: 티아지드 시작 뒤 생긴 만성 리튬 중독에서 신경 증상과 신기능 저하를 근거로 혈액투석의 적응을 판단한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 470: Poisoning and Drug Overdose · Decker BS, Goldfarb DS, Dargan PI, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP Workgroup. Clin J Am Soc Nephrol. 2015;10(5):875-887",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "티아지드를 시작한 뒤 리튬 청소율이 떨어져 생긴 <b>만성 리튬 중독</b>이다. 혈청 리튬이 3.2 mEq/L 로 높고 <b>의식 혼동·근간대경련 같은 중추신경 증상</b>이 있으며 <b>크레아티닌이 2.1 mg/dL 로 올라</b> 콩팥으로 리튬을 내보낼 수 없다. 리튬은 분자가 작고 단백 결합이 없어 투석으로 잘 빠지므로 수액만으로 기다리지 않고 혈액투석을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 티아지드가 리튬을 올리는가</b>: 리튬은 콩팥에서 나트륨처럼 다뤄진다. 티아지드가 원위세관에서 나트륨을 빼내면 몸은 나트륨과 체액이 부족하다고 느끼고 근위세관에서 나트륨 재흡수를 늘리는데, 이때 리튬도 함께 재흡수된다. 그래서 티아지드·ACE 억제제·NSAID·탈수는 리튬 청소율을 낮춘다.<br> <b>왜 만성 중독이 더 위험한가</b>: 오래 먹은 환자는 리튬이 이미 뇌 조직에 쌓여 있어, 같은 혈중 농도라도 급성 과량 복용보다 신경 증상이 심하고 오래간다. 리튬은 거의 전부 콩팥으로 나가므로 신기능이 떨어지면 몸에서 빠질 길이 없다.<br> <b>왜 투석이 듣는가</b>: 리튬은 분자량이 작고(7 Da) 단백 결합이 없으며 분포 용적이 작아 혈액투석으로 잘 제거된다. 중독 치료 합의(EXTRIP)는 신기능 저하와 함께 리튬 4.0 초과, 또는 의식 저하·경련·생명을 위협하는 부정맥이 있으면 투석을 권한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">혈액투석 — 정답</th><th>수액만 계속 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>신기능</td><td><b>떨어져 있음</b>(크레아티닌 2.1)</td><td>정상 — 콩팥이 리튬을 내보낼 수 있다</td></tr> <tr><td>신경 증상</td><td><b>의식 혼동·근간대경련</b></td><td>가벼운 떨림·구역 정도</td></tr> <tr><td>리튬 농도</td><td>4.0 초과면 신기능 저하만으로도 적응</td><td>2.5 미만이고 증상이 가볍다</td></tr> </tbody></table> 농도 숫자 하나가 아니라 「콩팥이 내보낼 수 있는가」와 「뇌가 이미 손상되고 있는가」를 함께 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 수액만으로 기다리기는 신기능이 정상이고 의식이 맑으며 떨림 정도의 가벼운 증상만 있는 중독이라면 정답이 된다.\n③ 활성탄은 리튬처럼 작은 이온은 흡착하지 못하므로, 함께 먹은 다른 약이 있을 때 그 약을 위해서라면 쓸 수 있다.\n④ 전장관세척은 서방형 리튬 정제를 한꺼번에 많이 삼킨 급성 중독이라면 장에 남은 알약을 빼내기 위해 고려한다.\n⑤ 탄산수소나트륨은 살리실산이나 삼환계 항우울제 중독처럼 소변 알칼리화·나트륨 부하가 효과 있는 약이라면 쓴다."
+   },
+   {
+    "k": "함정",
+    "v": "리튬 농도가 4.0 mEq/L 을 넘지 않았다는 이유로 신경 증상과 신기능 저하를 무시하고 수액만 계속하는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "티아지드 시작 뒤 생긴 만성 리튬 중독에서 신경 증상과 신기능 저하를 근거로 혈액투석의 적응을 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 470: Poisoning and Drug Overdose · Decker BS, Goldfarb DS, Dargan PI, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP Workgroup. Clin J Am Soc Nephrol. 2015;10(5):875-887"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "신기능 저하와 의식 혼동을 동반한 만성 리튬 중독은 혈액투석으로 리튬을 제거한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "크레아티닌이 2.1 mg/dL 로 올라 콩팥으로 리튬을 내보낼 수 없고 의식 혼동·근간대경련이 있다",
+   "steps": 3,
+   "chain": [
+    "장기 리튬 복용 + 3주 전 티아지드 시작 + 떨림·운동실조·혼동 → 만성 리튬 중독",
+    "리튬 3.2 mEq/L + 크레아티닌 2.1 mg/dL → 콩팥 제거 불가",
+    "신기능 저하 + 의식 혼동 → 혈액투석"
+   ],
+   "key": [
+    {
+     "item": "혈청 리튬 3.2 mEq/L(치료 범위 0.6~1.2)",
+     "why": "중독 확인",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 2.1 mg/dL(6개월 전 0.9 mg/dL)",
+     "why": "급성 신기능 저하 — 투석 적응",
+     "also": []
+    },
+    {
+     "item": "사람과 장소를 잘 알아보지 못하고",
+     "why": "의식 혼동 — 투석 적응",
+     "also": []
+    },
+    {
+     "item": "하이드로클로로티아지드를 새로 시작했다",
+     "why": "리튬 청소율 감소의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "혈압 118/70 mmHg",
+     "why": "혈역학이 안정적이라 간헐적 혈액투석을 할 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "나트륨 134 mEq/L",
+     "why": "가벼운 저나트륨혈증 — 티아지드 효과, 처치 선택에 큰 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "티아지드로 생긴 만성 리튬 중독에서 신기능이 떨어지고 의식 혼동이 있다. 수액만으로는 리튬이 빠지지 않아 혈액투석을 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "크레아티닌이 정상이고 의식이 맑으며 가벼운 떨림만 있었다면 생리식염수와 리튬 재측정"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0768",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "예방의학 — 선별검사의 양성예측도",
+  "type": "예방의학 — 선별검사의 양성예측도",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-23",
+  "vignette": "A 52-year-old woman asks her physician what a positive result on a new blood-based screening test for colorectal cancer would mean for her. She has no symptoms and no family history of colorectal cancer. In the population in which the test was evaluated, the prevalence of colorectal neoplasia that would be detected is 2%. The test has a sensitivity of 90% and a specificity of 95%. Her physician explains the result in terms of 1,000 similar persons screened.",
+  "question": "If her result is positive, which of the following is closest to the probability that she has the disease?",
+  "options": [
+   "27%",
+   "2%",
+   "90%",
+   "95%",
+   "99.8%"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: In 1,000 persons, 20 have disease. The test detects 90% of them: <b>18 true positives</b>. Of the 980 without disease, 5% test positive: <b>49 false positives</b>. Positive predictive value = 18 / (18 + 49) = 18/67 ≈ <b>27%</b>.\n- 원리: <b>Why PPV depends on prevalence</b>: Sensitivity and specificity describe the test within groups already known to have or not have the disease, so they do not change with prevalence. A patient, however, starts from a positive result and asks which group she belongs to. The answer depends on how large each group is. When the disease is rare, even a small false-positive rate applied to the large disease-free group produces more false positives than the true positives from the small diseased group.<br> <b>Bayes in practice</b>: The 2% prevalence is her pretest probability; the positive result multiplies the odds by the likelihood ratio (sensitivity / [1 − specificity] = 0.9 / 0.05 = 18). Pretest odds 2:98 × 18 ≈ 0.37, which corresponds to a probability of about 27%.<br> <b>Screening implication</b>: A positive screen is a reason for a confirmatory test (colonoscopy), not a diagnosis.\n- 비교: <table><thead><tr><th style=\"width:26%\">Measure</th><th style=\"width:37%\">PPV (answer, 27%)</th><th>Sensitivity (closest distractor, 90%)</th></tr></thead><tbody> <tr><td>Question it answers</td><td>Positive result — how likely is disease?</td><td>Disease present — how likely is a positive result?</td></tr> <tr><td>Denominator</td><td><b>All positive results</b> (18 + 49)</td><td>All diseased persons (20)</td></tr> <tr><td>Changes with prevalence?</td><td>Yes — falls as prevalence falls</td><td>No</td></tr> </tbody></table> Read the question's starting point: if it starts from a test result, the answer is a predictive value; if it starts from disease status, it is sensitivity or specificity.\n- 오답 이유:\n  - (B) 2% is the prevalence, the probability before testing; it would be correct if the question asked about her risk before the test.\n  - (C) 90% is the sensitivity; it would be correct if the question asked the probability of a positive test in a person who has the disease.\n  - (D) 95% is the specificity; it would be correct if the question asked the probability of a negative test in a person without the disease.\n  - (E) 99.8% is the negative predictive value (931/933); it would be correct if her result had been negative.\n- 함정: Equating the sensitivity of the test with the chance that a positive result is a true positive.\n- 학습목표: Calculate the positive predictive value of a screening test from sensitivity, specificity, and prevalence and recognize that low prevalence lowers it\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 6: Screening and Prevention of Disease · Gordis L. Epidemiology, 6th ed. Elsevier; 2019. Chapter 5: Assessing the Validity and Reliability of Diagnostic and Screening Tests",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "In 1,000 persons, 20 have disease. The test detects 90% of them: <b>18 true positives</b>. Of the 980 without disease, 5% test positive: <b>49 false positives</b>. Positive predictive value = 18 / (18 + 49) = 18/67 ≈ <b>27%</b>."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why PPV depends on prevalence</b>: Sensitivity and specificity describe the test within groups already known to have or not have the disease, so they do not change with prevalence. A patient, however, starts from a positive result and asks which group she belongs to. The answer depends on how large each group is. When the disease is rare, even a small false-positive rate applied to the large disease-free group produces more false positives than the true positives from the small diseased group.<br> <b>Bayes in practice</b>: The 2% prevalence is her pretest probability; the positive result multiplies the odds by the likelihood ratio (sensitivity / [1 − specificity] = 0.9 / 0.05 = 18). Pretest odds 2:98 × 18 ≈ 0.37, which corresponds to a probability of about 27%.<br> <b>Screening implication</b>: A positive screen is a reason for a confirmatory test (colonoscopy), not a diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Measure</th><th style=\"width:37%\">PPV (answer, 27%)</th><th>Sensitivity (closest distractor, 90%)</th></tr></thead><tbody> <tr><td>Question it answers</td><td>Positive result — how likely is disease?</td><td>Disease present — how likely is a positive result?</td></tr> <tr><td>Denominator</td><td><b>All positive results</b> (18 + 49)</td><td>All diseased persons (20)</td></tr> <tr><td>Changes with prevalence?</td><td>Yes — falls as prevalence falls</td><td>No</td></tr> </tbody></table> Read the question's starting point: if it starts from a test result, the answer is a predictive value; if it starts from disease status, it is sensitivity or specificity."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) 2% is the prevalence, the probability before testing; it would be correct if the question asked about her risk before the test.\n(C) 90% is the sensitivity; it would be correct if the question asked the probability of a positive test in a person who has the disease.\n(D) 95% is the specificity; it would be correct if the question asked the probability of a negative test in a person without the disease.\n(E) 99.8% is the negative predictive value (931/933); it would be correct if her result had been negative."
+   },
+   {
+    "k": "함정",
+    "v": "Equating the sensitivity of the test with the chance that a positive result is a true positive."
+   },
+   {
+    "k": "학습목표",
+    "v": "Calculate the positive predictive value of a screening test from sensitivity, specificity, and prevalence and recognize that low prevalence lowers it"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 6: Screening and Prevention of Disease · Gordis L. Epidemiology, 6th ed. Elsevier; 2019. Chapter 5: Assessing the Validity and Reliability of Diagnostic and Screening Tests"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "유병률 2%, 민감도 90%, 특이도 95% 에서 양성예측도는 18 / 67 ≈ 27% 다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "질문이 양성 결과에서 출발한다 — 분모는 양성 결과 전체(18 + 49)이고 민감도의 분모(환자 20명)가 아니다",
+   "steps": 3,
+   "chain": [
+    "1,000명 × 유병률 2% → 환자 20명, 비환자 980명",
+    "진양성 20 × 0.90 = 18, 위양성 980 × 0.05 = 49",
+    "양성예측도 = 18 / 67 ≈ 27%"
+   ],
+   "key": [
+    {
+     "item": "the prevalence of colorectal neoplasia that would be detected is 2%",
+     "why": "사전 확률",
+     "also": []
+    },
+    {
+     "item": "sensitivity of 90%",
+     "why": "진양성 수 계산",
+     "also": []
+    },
+    {
+     "item": "specificity of 95%",
+     "why": "위양성 수 계산",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "no family history of colorectal cancer",
+     "why": "평균 위험 — 표본 집단의 유병률을 그대로 쓸 수 있게 한다",
+     "also": []
+    }
+   ],
+   "summary": "1,000명 중 진양성 18명, 위양성 49명이라 양성 결과가 질병을 뜻할 확률은 약 27% 다.",
+   "switch": {
+    "choice": "E",
+    "condition": "결과가 음성이었다면 음성예측도 931/933 ≈ 99.8%"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0767",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "내분비 — 검진에서 발견된 고칼슘혈증",
+  "type": "내분비 — 검진에서 발견된 고칼슘혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-23",
+  "vignette": "62세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 신장결석이나 골절의 병력은 없다. 먹는 약은 없고 칼슘·비타민 D 보충제도 먹지 않는다. 혈압 126/78 mmHg 이고 진찰 소견은 정상이다. 혈청 칼슘 11.6 mg/dL(참고치 8.6~10.2), 인 2.4 mg/dL, 부갑상샘호르몬 96 pg/mL(참고치 15~65), 25-하이드록시비타민 D 32 ng/mL, 크레아티닌 0.8 mg/dL(eGFR 78 mL/min/1.73 m²)이다. 24시간 소변 칼슘은 260 mg 이다. 이중에너지 X선 흡수계측법에서 요추 T 점수 -1.8, 대퇴경부 -1.6, 원위 요골 -2.0 이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "시나칼세트 투여",
+   "비스포스포네이트 투여",
+   "티아지드 이뇨제 투여",
+   "부갑상샘절제술",
+   "6~12개월마다 혈청 칼슘과 골밀도 추적"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 칼슘이 높은데 부갑상샘호르몬이 억제되지 않고 오히려 높으며 소변 칼슘이 낮지 않으므로 <b>원발성 부갑상샘기능항진증</b>이다. 증상은 없지만 <b>혈청 칼슘이 참고치 상한보다 1 mg/dL 넘게 높아</b>(11.6 − 10.2 = 1.4) 무증상 환자의 수술 적응증을 하나 만족한다. 완치 가능한 치료는 부갑상샘절제술뿐이다.\n- 원리: <b>왜 PTH 가 진단의 열쇠인가</b>: 정상이라면 칼슘이 오르면 부갑상샘의 칼슘 감지 수용체가 PTH 분비를 억제한다. 칼슘이 높은데도 PTH 가 정상 상한이거나 높다면 부갑상샘 자체가 조절을 잃은 것(대부분 단일 선종)이다. 악성 종양이나 비타민 D 과잉에 의한 고칼슘혈증은 PTH 가 억제된다.<br> <b>왜 무증상인데도 수술하는가</b>: 수술하지 않은 무증상 환자 일부는 시간이 지나며 골밀도 감소, 신장결석, 신기능 저하가 진행한다. 국제 지침은 이 진행 위험이 큰 환자를 고른 기준을 둔다 — 혈청 칼슘이 상한보다 1 mg/dL 초과, T 점수 −2.5 이하 또는 척추 골절, eGFR 60 미만, 소변 칼슘 증가나 신장결석, 50세 미만. 하나라도 있으면 수술을 권한다.<br> <b>약물의 자리</b>: 시나칼세트는 칼슘을 낮추지만 뼈를 지키지 못하고, 비스포스포네이트는 뼈를 지키지만 칼슘을 고치지 못한다 — 수술할 수 없을 때의 대안이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">무증상 원발성 부갑상샘기능항진증</th><th style=\"width:37%\">수술 — 정답</th><th>추적 관찰 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈청 칼슘</td><td><b>상한 + 1 mg/dL 초과</b></td><td>상한 + 1 mg/dL 이하</td></tr> <tr><td>뼈</td><td>T 점수 ≤ −2.5 또는 척추 골절</td><td>T 점수 &gt; −2.5</td></tr> <tr><td>콩팥</td><td>eGFR &lt; 60, 결석, 소변 칼슘 &gt; 400 mg/일</td><td>모두 해당 없음</td></tr> <tr><td>나이</td><td>50세 미만</td><td>50세 이상</td></tr> </tbody></table> 이 환자는 뼈·콩팥·나이 기준은 모두 비켜 가지만 칼슘 기준 하나로 수술 적응이 된다.\n- 오답 이유:\n  - ① 시나칼세트는 수술 적응이 있지만 수술을 받을 수 없거나 거부하는 환자에서 칼슘을 낮추려 할 때 쓴다.\n  - ② 비스포스포네이트는 수술할 수 없는 환자에서 T 점수가 −2.5 이하인 골다공증을 치료할 때 쓴다.\n  - ③ 티아지드는 소변 칼슘을 줄여 고칼슘혈증을 악화시키므로 고칼슘뇨증이 있는 정상 칼슘 환자라면 쓸 수 있는 약이다.\n  - ⑤ 6~12개월 추적은 칼슘이 상한보다 1 mg/dL 이내이고 골밀도·콩팥·나이 기준을 모두 만족하지 않는 환자라면 정답이 된다.\n- 함정: 증상이 없고 골밀도·콩팥 기준을 만족하지 않으니 관찰한다고 결론짓고 칼슘 수치 기준을 놓치는 것.\n- 학습목표: 무증상 원발성 부갑상샘기능항진증에서 수술 적응증(혈청 칼슘 참고치 상한보다 1 mg/dL 초과 등)을 적용해 부갑상샘절제술을 결정한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 422: Disorders of the Parathyroid Gland and Calcium Homeostasis · Bilezikian JP, Khan AA, Silverberg SJ, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. J Bone Miner Res. 2022;37(11):2293-2314",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "칼슘이 높은데 부갑상샘호르몬이 억제되지 않고 오히려 높으며 소변 칼슘이 낮지 않으므로 <b>원발성 부갑상샘기능항진증</b>이다. 증상은 없지만 <b>혈청 칼슘이 참고치 상한보다 1 mg/dL 넘게 높아</b>(11.6 − 10.2 = 1.4) 무증상 환자의 수술 적응증을 하나 만족한다. 완치 가능한 치료는 부갑상샘절제술뿐이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 PTH 가 진단의 열쇠인가</b>: 정상이라면 칼슘이 오르면 부갑상샘의 칼슘 감지 수용체가 PTH 분비를 억제한다. 칼슘이 높은데도 PTH 가 정상 상한이거나 높다면 부갑상샘 자체가 조절을 잃은 것(대부분 단일 선종)이다. 악성 종양이나 비타민 D 과잉에 의한 고칼슘혈증은 PTH 가 억제된다.<br> <b>왜 무증상인데도 수술하는가</b>: 수술하지 않은 무증상 환자 일부는 시간이 지나며 골밀도 감소, 신장결석, 신기능 저하가 진행한다. 국제 지침은 이 진행 위험이 큰 환자를 고른 기준을 둔다 — 혈청 칼슘이 상한보다 1 mg/dL 초과, T 점수 −2.5 이하 또는 척추 골절, eGFR 60 미만, 소변 칼슘 증가나 신장결석, 50세 미만. 하나라도 있으면 수술을 권한다.<br> <b>약물의 자리</b>: 시나칼세트는 칼슘을 낮추지만 뼈를 지키지 못하고, 비스포스포네이트는 뼈를 지키지만 칼슘을 고치지 못한다 — 수술할 수 없을 때의 대안이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">무증상 원발성 부갑상샘기능항진증</th><th style=\"width:37%\">수술 — 정답</th><th>추적 관찰 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈청 칼슘</td><td><b>상한 + 1 mg/dL 초과</b></td><td>상한 + 1 mg/dL 이하</td></tr> <tr><td>뼈</td><td>T 점수 ≤ −2.5 또는 척추 골절</td><td>T 점수 &gt; −2.5</td></tr> <tr><td>콩팥</td><td>eGFR &lt; 60, 결석, 소변 칼슘 &gt; 400 mg/일</td><td>모두 해당 없음</td></tr> <tr><td>나이</td><td>50세 미만</td><td>50세 이상</td></tr> </tbody></table> 이 환자는 뼈·콩팥·나이 기준은 모두 비켜 가지만 칼슘 기준 하나로 수술 적응이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 시나칼세트는 수술 적응이 있지만 수술을 받을 수 없거나 거부하는 환자에서 칼슘을 낮추려 할 때 쓴다.\n② 비스포스포네이트는 수술할 수 없는 환자에서 T 점수가 −2.5 이하인 골다공증을 치료할 때 쓴다.\n③ 티아지드는 소변 칼슘을 줄여 고칼슘혈증을 악화시키므로 고칼슘뇨증이 있는 정상 칼슘 환자라면 쓸 수 있는 약이다.\n⑤ 6~12개월 추적은 칼슘이 상한보다 1 mg/dL 이내이고 골밀도·콩팥·나이 기준을 모두 만족하지 않는 환자라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "증상이 없고 골밀도·콩팥 기준을 만족하지 않으니 관찰한다고 결론짓고 칼슘 수치 기준을 놓치는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "무증상 원발성 부갑상샘기능항진증에서 수술 적응증(혈청 칼슘 참고치 상한보다 1 mg/dL 초과 등)을 적용해 부갑상샘절제술을 결정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 422: Disorders of the Parathyroid Gland and Calcium Homeostasis · Bilezikian JP, Khan AA, Silverberg SJ, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. J Bone Miner Res. 2022;37(11):2293-2314"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "무증상 원발성 부갑상샘기능항진증이라도 혈청 칼슘이 상한보다 1 mg/dL 넘게 높으면 부갑상샘절제술을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "혈청 칼슘 11.6 mg/dL — 참고치 상한 10.2 보다 1.4 mg/dL 높다",
+   "steps": 3,
+   "chain": [
+    "고칼슘혈증 + 억제되지 않은 PTH + 소변 칼슘 260 mg → 원발성 부갑상샘기능항진증",
+    "수술 기준 대조: 골밀도·eGFR·소변 칼슘·나이는 해당 없음, 칼슘 11.6 은 상한 + 1.4",
+    "기준 하나 충족 → 부갑상샘절제술"
+   ],
+   "key": [
+    {
+     "item": "혈청 칼슘 11.6 mg/dL(참고치 8.6~10.2)",
+     "why": "수술 기준 충족",
+     "also": []
+    },
+    {
+     "item": "부갑상샘호르몬 96 pg/mL(참고치 15~65)",
+     "why": "원발성 부갑상샘기능항진증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "24시간 소변 칼슘은 260 mg",
+     "why": "가족성 저칼슘뇨성 고칼슘혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "25-하이드록시비타민 D 32 ng/mL",
+     "why": "비타민 D 결핍에 의한 PTH 상승 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "요추 T 점수 -1.8",
+     "why": "골다공증 기준 미달 — 이것만으로는 수술 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "eGFR 78 mL/min/1.73 m²",
+     "why": "콩팥 기준 미달",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "억제되지 않은 PTH 를 동반한 고칼슘혈증으로 원발성 부갑상샘기능항진증이다. 칼슘이 상한보다 1 mg/dL 넘게 높아 무증상이라도 부갑상샘절제술을 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈청 칼슘이 10.8 mg/dL 이었다면(다른 기준도 없음) 정기 추적"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0764",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "소화기 — 음주 뒤 등으로 뻗치는 상복부 통증",
+  "type": "소화기 — 음주 뒤 등으로 뻗치는 상복부 통증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-23",
+  "vignette": "A 44-year-old man comes to the emergency department because of severe epigastric pain that began 10 hours ago after a night of heavy drinking. The pain is constant, radiates to the back, and is accompanied by nausea and vomiting. He drinks about 8 beers daily. Temperature is 37.6°C, pulse is 108/min, respirations are 20/min, and blood pressure is 128/80 mm Hg. The epigastrium is tender without rebound. Serum lipase is 1,450 U/L (N < 60). Serum total bilirubin is 0.9 mg/dL, alkaline phosphatase is 88 U/L, and triglycerides are 180 mg/dL. Abdominal ultrasonography shows no gallstones and a normal common bile duct.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Total parenteral nutrition",
+   "Intravenous lactated Ringer's solution and analgesia",
+   "Contrast-enhanced CT of the abdomen",
+   "Endoscopic retrograde cholangiopancreatography",
+   "Intravenous imipenem"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Typical pain radiating to the back plus <b>lipase more than 3 times the upper limit of normal</b> establishes acute pancreatitis; imaging is not needed for diagnosis. Alcohol is the likely cause because there are no gallstones, the bile duct is normal, and triglycerides are not high. Initial care is <b>moderate, goal-directed intravenous lactated Ringer's solution</b>, analgesia, and early oral feeding as tolerated.\n- 원리: <b>Why fluids come first</b>: Activated enzymes injure acinar cells and capillaries, causing fluid to leak into the retroperitoneum and the pancreatic microcirculation to slow. Hypovolemia can turn edematous pancreatitis into necrosis and cause prerenal kidney injury. Fluids keep the gland and kidneys perfused. Lactated Ringer's is preferred over normal saline because it causes less hyperchloremic acidosis, and acidosis may increase enzyme activation.<br> <b>Why not aggressive volume</b>: A 2022 trial (WATERFALL) found that very aggressive fluid loading caused more volume overload without better outcomes, so resuscitation is now moderate and adjusted to heart rate, urine output, and BUN.<br> <b>Why CT can wait</b>: Necrosis takes 48 to 72 hours to declare itself; an early CT underestimates it and adds contrast risk. CT is reserved for diagnostic doubt or for patients who fail to improve.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fluids and analgesia (answer)</th><th>Early contrast CT (closest distractor)</th></tr></thead><tbody> <tr><td>When indicated</td><td>Every patient at diagnosis</td><td><b>Diagnosis uncertain</b>, or no improvement after 48–72 h</td></tr> <tr><td>Effect</td><td>Preserves pancreatic and renal perfusion</td><td>Grades necrosis and finds complications</td></tr> <tr><td>Risk</td><td>Volume overload if excessive</td><td>Underestimates early necrosis; contrast load</td></tr> </tbody></table> When pain and lipase already make the diagnosis, treatment comes before imaging; imaging answers a later question about complications.\n- 오답 이유:\n  - (A) Parenteral nutrition would be reserved for patients who cannot tolerate enteral feeding for several days; early oral or enteral feeding is preferred.\n  - (C) Contrast-enhanced CT would be appropriate if the diagnosis were uncertain or if he worsened after 48 to 72 hours, suggesting necrosis.\n  - (D) ERCP would be indicated for gallstone pancreatitis with cholangitis or persistent biliary obstruction, which this normal duct and bilirubin argue against.\n  - (E) Imipenem would be indicated for infected necrosis suggested by gas in a collection or a positive aspirate, not as prophylaxis at presentation.\n- 함정: Ordering a CT first because the pain is severe, although the diagnosis is already established by clinical criteria.\n- 학습목표: Diagnose acute pancreatitis from typical pain and lipase elevation without imaging, and start moderate goal-directed lactated Ringer's resuscitation rather than early CT, ERCP, or prophylactic antibiotics\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 359: Acute and Chronic Pancreatitis · de-Madaria E, Buxbaum JL, Maisonneuve P, et al. Aggressive or moderate fluid resuscitation in acute pancreatitis. N Engl J Med. 2022;387(11):989-1000",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Typical pain radiating to the back plus <b>lipase more than 3 times the upper limit of normal</b> establishes acute pancreatitis; imaging is not needed for diagnosis. Alcohol is the likely cause because there are no gallstones, the bile duct is normal, and triglycerides are not high. Initial care is <b>moderate, goal-directed intravenous lactated Ringer's solution</b>, analgesia, and early oral feeding as tolerated."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why fluids come first</b>: Activated enzymes injure acinar cells and capillaries, causing fluid to leak into the retroperitoneum and the pancreatic microcirculation to slow. Hypovolemia can turn edematous pancreatitis into necrosis and cause prerenal kidney injury. Fluids keep the gland and kidneys perfused. Lactated Ringer's is preferred over normal saline because it causes less hyperchloremic acidosis, and acidosis may increase enzyme activation.<br> <b>Why not aggressive volume</b>: A 2022 trial (WATERFALL) found that very aggressive fluid loading caused more volume overload without better outcomes, so resuscitation is now moderate and adjusted to heart rate, urine output, and BUN.<br> <b>Why CT can wait</b>: Necrosis takes 48 to 72 hours to declare itself; an early CT underestimates it and adds contrast risk. CT is reserved for diagnostic doubt or for patients who fail to improve."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fluids and analgesia (answer)</th><th>Early contrast CT (closest distractor)</th></tr></thead><tbody> <tr><td>When indicated</td><td>Every patient at diagnosis</td><td><b>Diagnosis uncertain</b>, or no improvement after 48–72 h</td></tr> <tr><td>Effect</td><td>Preserves pancreatic and renal perfusion</td><td>Grades necrosis and finds complications</td></tr> <tr><td>Risk</td><td>Volume overload if excessive</td><td>Underestimates early necrosis; contrast load</td></tr> </tbody></table> When pain and lipase already make the diagnosis, treatment comes before imaging; imaging answers a later question about complications."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Parenteral nutrition would be reserved for patients who cannot tolerate enteral feeding for several days; early oral or enteral feeding is preferred.\n(C) Contrast-enhanced CT would be appropriate if the diagnosis were uncertain or if he worsened after 48 to 72 hours, suggesting necrosis.\n(D) ERCP would be indicated for gallstone pancreatitis with cholangitis or persistent biliary obstruction, which this normal duct and bilirubin argue against.\n(E) Imipenem would be indicated for infected necrosis suggested by gas in a collection or a positive aspirate, not as prophylaxis at presentation."
+   },
+   {
+    "k": "함정",
+    "v": "Ordering a CT first because the pain is severe, although the diagnosis is already established by clinical criteria."
+   },
+   {
+    "k": "학습목표",
+    "v": "Diagnose acute pancreatitis from typical pain and lipase elevation without imaging, and start moderate goal-directed lactated Ringer's resuscitation rather than early CT, ERCP, or prophylactic antibiotics"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 359: Acute and Chronic Pancreatitis · de-Madaria E, Buxbaum JL, Maisonneuve P, et al. Aggressive or moderate fluid resuscitation in acute pancreatitis. N Engl J Med. 2022;387(11):989-1000"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "임상 기준으로 진단된 급성 췌장염은 영상보다 젖산 링거액 수액과 진통제로 먼저 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "등으로 뻗치는 통증과 lipase 1,450 U/L 로 진단이 확정됐다 — 조기 CT 는 진단이 불확실할 때만",
+   "steps": 2,
+   "chain": [
+    "등으로 뻗치는 상복부 통증 + lipase 정상 상한 3배 초과 → 급성 췌장염 진단(영상 불필요)",
+    "담석·담관 확장 없음 → 알코올성, 초기 처치는 적정량 젖산 링거액과 진통"
+   ],
+   "key": [
+    {
+     "item": "radiates to the back",
+     "why": "췌장염의 전형적 통증",
+     "also": []
+    },
+    {
+     "item": "Serum lipase is 1,450 U/L",
+     "why": "정상 상한 3배 초과 — 진단 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "shows no gallstones and a normal common bile duct",
+     "why": "담석 췌장염·담관 폐쇄 가능성을 낮춰 ERCP 적응이 없다",
+     "also": []
+    },
+    {
+     "item": "triglycerides are 180 mg/dL",
+     "why": "고중성지방혈증 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "pulse is 108/min",
+     "why": "혈량 저하 — 수액의 지표",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Temperature is 37.6°C",
+     "why": "초기 염증 반응 — 감염 근거가 아니다",
+     "also": []
+    }
+   ],
+   "summary": "통증과 lipase 로 급성 췌장염이 확정됐고 담석 원인은 없다. 적정량의 젖산 링거액과 진통제로 시작한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "담석이 있고 빌리루빈이 오르며 발열·황달이 있는 담관염이 동반됐다면 ERCP"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0763",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·산과·소화기·외과계·소아·내분비·예방의학·정신)",
+  "subtopic": "산과 — 임신 35주의 두통과 고혈압",
+  "type": "산과 — 임신 35주의 두통과 고혈압",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-23",
+  "vignette": "31세 초산부가 임신 35주 2일에 어제부터 심해진 두통과 눈앞이 번쩍이는 증상으로 병원에 왔다. 지금까지 산전진찰에서 혈압은 정상이었다. 혈압 164/112 mmHg 이고 15분 뒤 다시 재도 162/110 mmHg 였다. 맥박 88회/분이고 하지에 함요부종이 있다. 소변 단백/크레아티닌 비는 0.8 이다. 혈소판 168,000/mm³, AST 32 U/L, ALT 28 U/L, 크레아티닌 0.7 mg/dL 이다. 태아 심박동 감시는 반응성이고 초음파에서 태아 크기는 주수에 맞다. 혈압을 낮추는 약을 투여하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "외래에서 주 2회 혈압과 검사실 추적",
+   "디아제팜 투여 후 기대요법",
+   "황산마그네슘 투여 후 분만",
+   "37주까지 입원하여 기대요법",
+   "폐 성숙을 위한 베타메타손 투여 후 48시간 기다린 뒤 분만"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 임신 20주 이후 새로 생긴 고혈압과 단백뇨(단백/크레아티닌 비 ≥ 0.3)로 <b>전자간증</b>이다. 수축기 160 mmHg·이완기 110 mmHg 이상이 15분 간격으로 두 번 측정됐고 <b>새로운 두통과 시야 증상</b>이 있으므로 <b>중증 양상</b>이다. 34주 이후의 중증 양상 전자간증은 산모를 안정시킨 뒤 분만하는 것이 원칙이고, 분만 중·후 경련 예방에는 황산마그네슘을 쓴다.\n- 원리: <b>왜 분만이 치료인가</b>: 전자간증은 태반에서 시작한다. 나선동맥의 재형성이 불완전해 태반이 허혈에 빠지면 sFlt-1 같은 혈관신생 억제 인자가 모체 혈류로 나와 전신 혈관내피를 손상시킨다. 그 결과가 고혈압·단백뇨·뇌부종(두통·시야 증상)·간 손상·혈소판 감소다. 원인인 태반을 내보내야 병이 멈추므로, 태아가 충분히 자란 34주 이후의 중증 양상에서는 기다릴 이득이 없다.<br> <b>왜 마그네슘인가</b>: 황산마그네슘은 뇌혈관 경련을 줄이고 NMDA 수용체를 억제해 자간 경련을 예방한다. 경련 예방 효과는 페니토인·디아제팜보다 낫다. 혈압 강하제는 뇌출혈을 막기 위한 것이고 경련을 막지 못한다.<br> <b>34주 전이라면</b>: 산모와 태아가 안정적이면 스테로이드로 태아 폐 성숙을 돕고 34주까지 기대요법을 고려할 수 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">중증 양상 전자간증 — 정답</th><th>중증 양상 없는 전자간증 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈압</td><td><b>≥ 160/110 mmHg</b>(15분 간격 2회)</td><td>140~159 / 90~109 mmHg</td></tr> <tr><td>증상·검사</td><td>새 두통·시야 증상, 혈소판 &lt;10만, 간효소 2배, 폐부종 중 하나</td><td>없음</td></tr> <tr><td>34주 이후</td><td>안정화 후 분만, 황산마그네슘</td><td>37주까지 기대요법 후 분만</td></tr> </tbody></table> 160/110 은 뇌출혈 위험이 급격히 커지는 값이라 중증의 기준이자 즉시 혈압 강하제의 기준이다.\n- 오답 이유:\n  - ① 외래 추적은 중증 양상이 없는 임신성 고혈압으로 혈압이 조절되고 환자가 자주 올 수 있을 때만 해당한다.\n  - ② 디아제팜은 마그네슘을 쓸 수 없는 상황의 경련 치료 대안일 뿐 경련 예방 효과가 떨어지고 분만을 늦출 근거가 없다.\n  - ④ 37주까지 기대요법은 혈압이 160/110 mmHg 미만이고 두통·시야 증상·검사 이상이 없는 중증 양상 없는 전자간증이라면 정답이 된다.\n  - ⑤ 스테로이드 후 48시간 대기는 34주 미만이고 산모·태아 상태가 안정적인 중증 양상 전자간증이라면 고려한다.\n- 함정: 혈압 강하제를 투여했으니 혈압이 조절되면 37주까지 기다릴 수 있다고 생각하는 것.\n- 학습목표: 임신 34주 이후의 중증 양상 전자간증에서 황산마그네슘으로 경련을 예방하고 분만을 결정한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 491: Medical Disorders During Pregnancy · American College of Obstetricians and Gynecologists. Gestational hypertension and preeclampsia: ACOG Practice Bulletin No. 222. Obstet Gynecol. 2020;135(6):e237-e260",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "임신 20주 이후 새로 생긴 고혈압과 단백뇨(단백/크레아티닌 비 ≥ 0.3)로 <b>전자간증</b>이다. 수축기 160 mmHg·이완기 110 mmHg 이상이 15분 간격으로 두 번 측정됐고 <b>새로운 두통과 시야 증상</b>이 있으므로 <b>중증 양상</b>이다. 34주 이후의 중증 양상 전자간증은 산모를 안정시킨 뒤 분만하는 것이 원칙이고, 분만 중·후 경련 예방에는 황산마그네슘을 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 분만이 치료인가</b>: 전자간증은 태반에서 시작한다. 나선동맥의 재형성이 불완전해 태반이 허혈에 빠지면 sFlt-1 같은 혈관신생 억제 인자가 모체 혈류로 나와 전신 혈관내피를 손상시킨다. 그 결과가 고혈압·단백뇨·뇌부종(두통·시야 증상)·간 손상·혈소판 감소다. 원인인 태반을 내보내야 병이 멈추므로, 태아가 충분히 자란 34주 이후의 중증 양상에서는 기다릴 이득이 없다.<br> <b>왜 마그네슘인가</b>: 황산마그네슘은 뇌혈관 경련을 줄이고 NMDA 수용체를 억제해 자간 경련을 예방한다. 경련 예방 효과는 페니토인·디아제팜보다 낫다. 혈압 강하제는 뇌출혈을 막기 위한 것이고 경련을 막지 못한다.<br> <b>34주 전이라면</b>: 산모와 태아가 안정적이면 스테로이드로 태아 폐 성숙을 돕고 34주까지 기대요법을 고려할 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">중증 양상 전자간증 — 정답</th><th>중증 양상 없는 전자간증 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈압</td><td><b>≥ 160/110 mmHg</b>(15분 간격 2회)</td><td>140~159 / 90~109 mmHg</td></tr> <tr><td>증상·검사</td><td>새 두통·시야 증상, 혈소판 &lt;10만, 간효소 2배, 폐부종 중 하나</td><td>없음</td></tr> <tr><td>34주 이후</td><td>안정화 후 분만, 황산마그네슘</td><td>37주까지 기대요법 후 분만</td></tr> </tbody></table> 160/110 은 뇌출혈 위험이 급격히 커지는 값이라 중증의 기준이자 즉시 혈압 강하제의 기준이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 외래 추적은 중증 양상이 없는 임신성 고혈압으로 혈압이 조절되고 환자가 자주 올 수 있을 때만 해당한다.\n② 디아제팜은 마그네슘을 쓸 수 없는 상황의 경련 치료 대안일 뿐 경련 예방 효과가 떨어지고 분만을 늦출 근거가 없다.\n④ 37주까지 기대요법은 혈압이 160/110 mmHg 미만이고 두통·시야 증상·검사 이상이 없는 중증 양상 없는 전자간증이라면 정답이 된다.\n⑤ 스테로이드 후 48시간 대기는 34주 미만이고 산모·태아 상태가 안정적인 중증 양상 전자간증이라면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "혈압 강하제를 투여했으니 혈압이 조절되면 37주까지 기다릴 수 있다고 생각하는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 34주 이후의 중증 양상 전자간증에서 황산마그네슘으로 경련을 예방하고 분만을 결정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 491: Medical Disorders During Pregnancy · American College of Obstetricians and Gynecologists. Gestational hypertension and preeclampsia: ACOG Practice Bulletin No. 222. Obstet Gynecol. 2020;135(6):e237-e260"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "34주 이후 중증 양상 전자간증은 황산마그네슘으로 경련을 예방하며 분만한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "혈압 164/112 mmHg 가 15분 간격으로 두 번 측정됐고 두통·시야 증상이 있다 — 중증 양상",
+   "steps": 2,
+   "chain": [
+    "새 고혈압 + 단백/크레아티닌 비 0.8 + 160/110 이상·두통·시야 증상 → 중증 양상 전자간증",
+    "35주 2일 → 안정화 후 분만, 황산마그네슘으로 경련 예방"
+   ],
+   "key": [
+    {
+     "item": "혈압 164/112 mmHg",
+     "why": "중증 범위 혈압",
+     "also": []
+    },
+    {
+     "item": "심해진 두통과 눈앞이 번쩍이는 증상",
+     "why": "중추신경 증상 — 중증 양상",
+     "also": []
+    },
+    {
+     "item": "소변 단백/크레아티닌 비는 0.8",
+     "why": "단백뇨 — 전자간증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈소판 168,000/mm³",
+     "why": "HELLP 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "임신 35주 2일",
+     "why": "34주 이후 — 기대요법 대신 분만",
+     "also": []
+    },
+    {
+     "item": "태아 심박동 감시는 반응성",
+     "why": "응급 제왕절개가 아니라 분만 방법을 고를 여유",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "중증 범위 혈압과 두통·시야 증상이 있는 전자간증이고 35주다. 황산마그네슘으로 경련을 예방하며 분만한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "임신 31주였고 산모·태아가 안정적이었다면 베타메타손 후 짧은 기대요법을 고려"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0760",
   "exam": "imaging",
   "style": "usmle_style",
