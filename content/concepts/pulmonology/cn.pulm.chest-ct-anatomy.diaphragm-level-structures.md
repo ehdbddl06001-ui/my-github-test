@@ -4,9 +4,10 @@ type: concept
 topic: Pulmonology
 see_also: [Anatomy, Radiology]
 date: 2026-09-23
-updated: 2026-09-26
+updated: 2026-11-23
 version: 2
 outline: h286            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 286장 Diagnostic Procedures in Respiratory Disease(호흡기내과 책)
+roots_none: "목표 자체가 영상 해부(구조의 위치·높이 확인) — 따로 내려갈 기초 기전이 없다"
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — [restyle] 재배치만, 새 사실 없음

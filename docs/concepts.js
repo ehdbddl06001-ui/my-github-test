@@ -11321,9 +11321,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Cardiology",
   "seeAlso": [],
   "version": 4,
-  "updated": "2026-11-09",
+  "updated": "2026-11-23",
   "reviewStatus": "unreviewed",
-  "hash": "7027023e57ac71bf",
+  "hash": "28f3d16480c7d0cf",
   "summary": [
    "결론: QRS ≥ 0.12초 + V1 rsR′(끝이 위로) + I·V6 넓은 S파 = 완전 우각차단.",
    "시험 단서: 수술 전·검진 심전도, 넓게 분열된 S2, V1 의 「토끼 귀」 모양(RSR′, complete RBBB).",
@@ -11417,7 +11417,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.physio.ventricular-activation.bundle-branch-block"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h240",
@@ -65284,6 +65286,245 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "imaging-2026-0205"
   ],
+  "hasErrors": false
+ },
+ "cn.immuno.immune-complex.cryoglobulinemic-vasculitis": {
+  "id": "cn.immuno.immune-complex.cryoglobulinemic-vasculitis",
+  "title": "면역복합체 혈관염 — 항원이 남는 한 복합체도 생긴다",
+  "objective": "항원 과잉에서 생긴 면역복합체가 혈관벽에 쌓여 보체(C5a)·호중구로 혈관을 다치게 하는 과정(혈청병 모형)을 HCV 크리오글로불린혈증에 적용해, 저보체·류마티스인자·자반이 생기는 이유와 원인 항원 제거가 치료의 축인 이유를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "면역복합체 매개 혈관염(Ⅲ형 과민반응) — HCV 혼합 크리오글로불린혈증",
+  "topic": "Immunology",
+  "seeAlso": [
+   "Rheumatology",
+   "Gastroenterology",
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-11-23",
+  "reviewStatus": "unreviewed",
+  "hash": "a5144f208a6e13cf",
+  "summary": [
+   "결론: 면역복합체 혈관염은 항원 과잉에서 생긴 복합체가 혈관벽에 쌓여 보체·호중구가 벽을 부수는 Ⅲ형 과민반응이다.",
+   "시험 단서: 촉지 자반·관절통·사구체신염 + 저보체(hypocomplementemia) + 만성 항원(HCV·HBV) = 면역복합체(immune complex).",
+   "왜: 복합체는 계속 공급되는 항원으로 만들어진다 — 항원이 남는 한 복합체도, 보체 소모도 계속된다.",
+   "HCV 에서는 복합체 = HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자 — 그래서 RF 가 거의 늘 양성이다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "면역복합체 혈관염은 항원 과잉에서 생긴 복합체가 혈관벽에 쌓여 보체·호중구가 벽을 부수는 Ⅲ형 과민반응이다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "면역복합체 혈관염은 항원 과잉에서 생긴 복합체가 혈관벽에 쌓여 보체·호중구가 벽을 부수는 Ⅲ형 과민반응이다."
+      ]
+     }
+    ],
+    "html": "면역복합체 혈관염은 항원 과잉에서 생긴 복합체가 혈관벽에 쌓여 보체·호중구가 벽을 부수는 Ⅲ형 과민반응이다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "촉지 자반·관절통·사구체신염 + 저보체(hypocomplementemia) + 만성 항원(HCV·HBV) = 면역복합체(immune complex).",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "촉지 자반·관절통·사구체신염 + 저보체(hypocomplementemia) + 만성 항원(HCV·HBV) = 면역복합체(immune complex)."
+      ]
+     }
+    ],
+    "html": "촉지 자반·관절통·사구체신염 + 저보체(hypocomplementemia) + 만성 항원(HCV·HBV) = 면역복합체(immune complex)."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "복합체는 계속 공급되는 항원으로 만들어진다 — 항원이 남는 한 복합체도, 보체 소모도 계속된다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "복합체는 계속 공급되는 항원으로 만들어진다 — 항원이 남는 한 복합체도, 보체 소모도 계속된다."
+      ]
+     }
+    ],
+    "html": "복합체는 계속 공급되는 항원으로 만들어진다 — 항원이 남는 한 복합체도, 보체 소모도 계속된다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "HCV 에서는 복합체 = HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자 — 그래서 RF 가 거의 늘 양성이다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "HCV 에서는 복합체 = HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자 — 그래서 RF 가 거의 늘 양성이다."
+      ]
+     }
+    ],
+    "html": "HCV 에서는 복합체 = HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자 — 그래서 RF 가 거의 늘 양성이다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 375장 p.2893, p.2905",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "immunology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa"
+  ],
+  "outline": "immuno.hypersensitivity",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 복합체는 만들어지고 곧 치워진다",
+    "deep": false,
+    "html": "<p>항원과 항체가 만나면 면역복합체(immune complex)가 생기고, 보통은 망상내피계가 순환에서 걸러 낸다. 어느 복합체가 혈관벽에 남을지는 제거 능력·복합체 크기와 물리화학적 성질·혈류 난류·혈관 안 정수압·내피의 상태가 정한다 <sup>[1 375장 p.2893]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 항원 과잉의 복합체가 벽에 걸린다",
+    "deep": false,
+    "html": "<ul>\n<li>혈청병 모형: 항원 과잉에서 생긴 복합체가, 혈소판·비만세포에서 나온 혈관활성 아민(히스타민·브라디키닌·류코트리엔)으로 투과성이 커진 혈관벽에 쌓인다 <sup>[1 375장 p.2893]</sup>.</li>\n<li>쌓인 복합체가 보체를 활성화하고, 특히 C5a 가 호중구를 부른다. 호중구가 복합체를 삼키며 효소를 내놓아 벽을 부순다. 아급성·만성으로 가면 단핵구가 들어와 내강이 좁아지고 조직이 허혈에 빠진다 <sup>[1 375장 p.2893]</sup>.</li>\n<li>원인 항원이 확인된 드문 예가 HBV(결절다발동맥염 유사 혈관염)와 HCV(크리오글로불린 침전물 속 HCV 비리온·항원-항체 복합체)다 <sup>[1 375장 p.2893]</sup>.</li>\n<li>HCV 에서는 감염에 대한 비정상 면역반응으로 <strong>HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자</strong> 복합체가 만들어진다 <sup>[1 375장 p.2905]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 자반·저보체·류마티스인자가 생기는 이유",
+    "deep": false,
+    "html": "<ul>\n<li>소혈관 벽의 호중구 손상 → 섬유소양 괴사·출혈 → 촉지 자반. 생검에서 면역글로불린·보체 침착 <sup>[1 375장 p.2905]</sup>.</li>\n<li>보체가 벽에서 쓰이며 혈청 보체가 떨어진다(크리오글로불린혈증 혈관염의 90 %) <sup>[1 375장 p.2905]</sup>.</li>\n<li>IgM 성분이 류마티스인자 활성을 가져 RF 가 거의 늘 양성 — 크리오글로불린이 검출되지 않을 때의 단서가 된다 <sup>[1 375장 p.2905]</sup>.</li>\n<li>사구체에 쌓이면 막증식 사구체신염(신병변의 80 %) <sup>[1 375장 p.2905]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 항원을 없애면 복합체가 멈춘다",
+    "deep": false,
+    "html": "<ul>\n<li>복합체는 계속 공급되는 항원으로 만들어지므로, HCV 크리오글로불린혈증 혈관염은 항바이러스제가 1차이고 임상 호전은 바이러스 반응을 따른다 — 바이러스가 사라지면 크리오글로불린·IgM·RF 도 준다 <sup>[1 375장 p.2905]</sup>.</li>\n<li>염증만 누르는 스테로이드는 일시적이다. 복합체의 IgM 을 만드는 B 세포를 겨누는 리툭시맙은 활동성 혈관염의 병용·대체 약이다 <sup>[1 375장 p.2905]</sup>. 치료 순서는 임상 정리본 「HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다」.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 375장 p.2893, p.2905)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "면역복합체에서 혈관 손상까지",
+    "columns": [
+     "단계",
+     "무엇이 일어나나",
+     "결과 소견"
+    ],
+    "rows": [
+     [
+      "복합체 형성",
+      "항원 과잉에서 항원-항체 복합체",
+      "순환 복합체·크리오글로불린"
+     ],
+     [
+      "침착",
+      "혈관 투과성↑(히스타민·브라디키닌·류코트리엔)",
+      "소혈관 벽 면역글로불린·보체 침착"
+     ],
+     [
+      "보체 활성",
+      "C5a 생성 → 호중구 유인",
+      "저보체(소모)"
+     ],
+     [
+      "호중구 손상",
+      "복합체 탐식·효소 방출",
+      "섬유소양 괴사·출혈 → 촉지 자반"
+     ],
+     [
+      "만성화",
+      "단핵구 침윤 → 내강 좁아짐",
+      "허혈(신경병·신장)"
+     ]
+    ],
+    "note": "<sup>[1 375장 p.2893]</sup>"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "면역복합체 혈관염 vs ANCA 혈관염",
+    "point": "면역복합체형은 벽에 면역글로불린·보체가 쌓이고 저보체가 흔하다. ANCA 형은 호중구 과립 단백에 대한 자가항체가 주인공이라 복합체 침착이 드물다 — 같은 소혈관 혈관염이라도 보체가 가른다 <sup>[1 375장 p.2893]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "순환 면역복합체가 있으면 곧 혈관염?",
+    "point": "순환하는 복합체가 꼭 혈관벽에 쌓이지는 않는다. 망상내피계의 제거 능력, 복합체 크기, 혈류 난류, 혈관 안 정수압, 내피 상태가 어느 혈관이 다칠지를 정한다 <sup>[1 375장 p.2893]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 375장 The Vasculitis Syndromes p.2893, p.2905",
+    "checked": "본문 대조(드라이브 문서 H22_375) — p.2893 면역복합체 형성 기전(혈청병 모형: 항원 과잉 복합체, 혈관활성 아민에 의한 투과성 증가, 보체 특히 C5a 의 호중구 유인, 효소 방출, 만성기 단핵구 침윤·허혈; 어느 혈관이 다치는지 정하는 변수; HBV 항원·HCV 항원-항체 복합체의 확인), p.2905 크리오글로불린혈증 혈관염(HCV 항원 + 다클론 IgG + 단클론 IgM RF 복합체, 신병변 80 % 막증식 사구체신염, RF 거의 늘 양성, 저보체 90 %, 항바이러스제 1차·임상 호전은 바이러스 반응을 따른다)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "면역복합체 혈관염에서 혈청 보체가 떨어지는 이유는?",
+    "a": "혈관벽에 쌓인 복합체가 보체를 활성화하며 소모하기 때문이다."
+   },
+   {
+    "q": "HCV 크리오글로불린혈증에서 류마티스인자가 거의 늘 양성인 이유는?",
+    "a": "복합체의 IgM 성분 자체가 IgG 에 결합하는 류마티스인자 활성을 가진 단클론 IgM 이기 때문이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.immuno.immune-complex.cryoglobulinemic-vasculitis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 보체 정상 + ANCA",
+    "stem": "52세 남자가 3주 전부터 생긴 양쪽 하지의 촉지 자반과 관절통으로 왔다. 1년 전부터 만성 부비동염과 코피가 반복되었다. 혈청 C3·C4 는 정상이고 PR3-ANCA 가 양성이며, 소변에 적혈구 원주가 있다. 피부 생검에서 혈관벽의 면역글로불린·보체 침착은 거의 없다. 이 환자의 혈관 손상을 가장 잘 설명하는 기전은?",
+    "options": [
+     "항원 과잉에서 생긴 면역복합체의 혈관벽 침착과 보체 활성",
+     "호중구 세포질 항원에 대한 자가항체가 호중구를 활성화해 혈관벽을 손상",
+     "IgE 매개 비만세포 탈과립",
+     "기저막 Ⅳ형 콜라겐에 대한 항체의 선상 침착",
+     "감작된 T 세포의 지연형 과민반응만으로 생긴 육아종"
+    ],
+    "answer": 2,
+    "explanation": "면역복합체 혈관염이라면 벽에 면역글로불린·보체가 쌓이고 보체가 소모된다. 이 환자는 보체가 정상이고 침착이 거의 없으며 PR3-ANCA 가 양성이다 — 호중구 과립 단백에 대한 자가항체가 호중구를 활성화하는 ANCA 혈관염이다 [[harrison-22: 375장 p.2893]]. 보체 소모와 침착이 있었다면 A 가 답이었다.",
+    "of": "",
+    "changed": "자반·관절통에 저보체 대신 정상 보체와 PR3-ANCA 양성, 상기도 침범을 주었다 → 면역복합체가 아닌 ANCA 매개 기전이 답이 된다",
+    "flip": true
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
   "hasErrors": false
  },
  "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
@@ -151655,6 +151896,238 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.physio.ventricular-activation.bundle-branch-block": {
+  "id": "cn.physio.ventricular-activation.bundle-branch-block",
+  "title": "심실 탈분극 순서 — 늦게 깨는 쪽으로 QRS 끝이 향한다",
+  "objective": "중격(왼→오) → 양 심실 동시 탈분극의 두 벡터로 정상 V1 rS·V6 qR 을 설명하고, 한쪽 각이 막히면 QRS 가 넓어지며 끝부분 벡터가 늦게 탈분극하는 심실 쪽으로 향하는 원리로 우각차단(V1 rSR′)·좌각차단(V1 QS·V6 R)과 이차 ST-T 변화를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "각차단의 심전도 기전(우각차단·좌각차단)",
+  "topic": "Physiology",
+  "seeAlso": [
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-11-23",
+  "reviewStatus": "unreviewed",
+  "hash": "403ca0afa8d35e81",
+  "summary": [
+   "결론: 각차단에서 QRS 는 넓어지고(완전 ≥ 120 ms), QRS 벡터는 탈분극이 늦어진 심실 쪽으로 향한다.",
+   "시험 단서: V1 rSR′·V6 넓은 S = 우각차단(right bundle branch block), V1 넓은 QS·V6 넓은 R = 좌각차단.",
+   "왜: 막힌 쪽 심실은 전도계가 아니라 심근을 타고 느리게 깨므로 마지막에 그쪽 벡터만 홀로 남는다.",
+   "각차단의 T 파는 QRS 마지막 굴절과 반대 — 탈분극 순서가 바뀐 결과(이차 변화)이지 허혈이 아니다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "각차단에서 QRS 는 넓어지고(완전 ≥ 120 ms), QRS 벡터는 탈분극이 늦어진 심실 쪽으로 향한다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "각차단에서 QRS 는 넓어지고(완전 ≥ 120 ms), QRS 벡터는 탈분극이 늦어진 심실 쪽으로 향한다."
+      ]
+     }
+    ],
+    "html": "각차단에서 QRS 는 넓어지고(완전 ≥ 120 ms), QRS 벡터는 탈분극이 늦어진 심실 쪽으로 향한다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "V1 rSR′·V6 넓은 S = 우각차단(right bundle branch block), V1 넓은 QS·V6 넓은 R = 좌각차단.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "V1 rSR′·V6 넓은 S = 우각차단(right bundle branch block)",
+       "V1 넓은 QS·V6 넓은 R = 좌각차단."
+      ]
+     }
+    ],
+    "html": "V1 rSR′·V6 넓은 S = 우각차단(right bundle branch block), V1 넓은 QS·V6 넓은 R = 좌각차단."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "막힌 쪽 심실은 전도계가 아니라 심근을 타고 느리게 깨므로 마지막에 그쪽 벡터만 홀로 남는다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "막힌 쪽 심실은 전도계가 아니라 심근을 타고 느리게 깨므로 마지막에 그쪽 벡터만 홀로 남는다."
+      ]
+     }
+    ],
+    "html": "막힌 쪽 심실은 전도계가 아니라 심근을 타고 느리게 깨므로 마지막에 그쪽 벡터만 홀로 남는다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "각차단의 T 파는 QRS 마지막 굴절과 반대 — 탈분극 순서가 바뀐 결과(이차 변화)이지 허혈이 아니다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "각차단의 T 파는 QRS 마지막 굴절과 반대 — 탈분극 순서가 바뀐 결과(이차 변화)이지 허혈이 아니다."
+      ]
+     }
+    ],
+    "html": "각차단의 T 파는 QRS 마지막 굴절과 반대 — 탈분극 순서가 바뀐 결과(이차 변화)이지 허혈이 아니다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 247장 p.1870–1872",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "physiology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.cardio.complete-rbbb.ecg-recognition"
+  ],
+  "outline": "physio.cardiac",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 두 벡터가 V1 rS·V6 qR 을 만든다",
+    "deep": false,
+    "html": "<p>심실 탈분극은 두 단계다. 먼저 <strong>중격</strong>이 왼쪽에서 오른쪽·앞으로 짧게 깨고(벡터 1), 이어 <strong>양 심실이 동시에</strong> 깨는데 두꺼운 좌심실이 우세해 벡터 2 는 왼쪽·뒤로 향한다. 그래서 V1 은 작은 중격 r 뒤 큰 S, V6 는 작은 중격 q 뒤 큰 R 을 그린다 <sup>[1 247장 p.1870]</sup>. 빠른 이유는 히스속 → 좌·우각 → 푸르키녜 섬유의 전도계가 양 심실을 거의 동시에 깨우기 때문이다.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 한쪽 각이 막히면",
+    "deep": false,
+    "html": "<ul>\n<li>막힌 쪽 심실은 전도계 대신 심근을 타고 천천히 깬다 → QRS 가 넓어진다(완전 각차단 ≥ 120 ms, 불완전 110~120 ms) <sup>[1 247장 p.1871]</sup>.</li>\n<li>QRS 벡터는 <strong>탈분극이 늦어진 쪽</strong>으로 향한다 <sup>[1 247장 p.1871]</sup>.</li>\n<li>우각차단: 중격·좌심실은 정상 순서라 처음은 정상과 같고, 끝에 우심실만 남아 끝부분 벡터가 오른쪽·앞으로 → V1 rSR′, V6 qRS(넓은 S) <sup>[1 247장 p.1871]</sup>.</li>\n<li>좌각차단: 중격이 오른쪽에서 왼쪽으로 거꾸로 깨고 좌심실이 늦어 주 벡터가 왼쪽·뒤로 → V1 넓은 QS, V6 넓은 R(중격 q 없음) <sup>[1 247장 p.1871]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 넓은 QRS 와 반대 방향 T 파",
+    "deep": false,
+    "html": "<ul>\n<li>각차단의 T 파는 QRS 마지막 굴절과 반대 방향이다 — 탈분극 순서가 바뀌어 재분극 순서도 바뀐 <strong>이차</strong> 변화다 <sup>[1 247장 p.1872]</sup>.</li>\n<li>허혈·전해질 이상·디곡신은 심근의 전기 성질 자체가 바뀐 <strong>일차</strong> ST-T 변화이고, 둘은 함께 있을 수 있다(좌각차단의 우측 흉부유도 T 역전 등은 허혈의 단서가 될 수 있다) <sup>[1 247장 p.1872]</sup>.</li>\n<li>우심실 조율은 좌심실이 늦게 깨므로 좌각차단과 같은 모양에 조율 스파이크가 앞선다 <sup>[1 247장 p.1871]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 어느 쪽이 늦나가 답을 가른다",
+    "deep": false,
+    "html": "<ul>\n<li>넓은 QRS 를 보면 V1 의 끝부분 방향으로 어느 심실이 늦게 깨는지를 가린다 — 끝이 위(R′)면 우각차단, 넓은 QS 면 좌각차단. 읽는 순서·축 판단은 임상 정리본 「완전 우각차단 — 넓은 QRS·V1 rsR′·V6 넓은 S」.</li>\n<li>구조 심질환이 없는 사람에서는 우각차단이 좌각차단보다 흔하고, 우각차단은 심방중격결손 같은 선천 질환에서도 보인다. 좌각차단은 관상동맥질환·고혈압성 심질환·대동맥판막질환·심근병증의 표지인 경우가 많다 <sup>[1 247장 p.1871–1872]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 247장 p.1870–1872)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "탈분극 순서와 V1·V6 모양",
+    "columns": [
+     "상태",
+     "중격 · 끝부분 벡터",
+     "V1",
+     "V6"
+    ],
+    "rows": [
+     [
+      "정상",
+      "왼→오 · 왼쪽·뒤(좌심실 우세)",
+      "작은 r + 큰 S",
+      "작은 q + 큰 R"
+     ],
+     [
+      "우각차단",
+      "왼→오(정상) · 오른쪽·앞(우심실 늦음)",
+      "rSR′",
+      "qRS(넓은 S)"
+     ],
+     [
+      "좌각차단",
+      "오→왼(거꾸로) · 왼쪽·뒤(좌심실 늦음)",
+      "넓은 QS",
+      "넓은 R"
+     ]
+    ],
+    "note": "<sup>[1 247장 p.1870–1871]</sup>"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "우각차단 vs 좌각차단 — 무엇이 바뀌나",
+    "point": "우각차단은 중격(왼→오)과 좌심실의 앞부분은 정상이고 끝에 우심실만 늦게 깨 끝부분 벡터가 오른쪽·앞으로 향한다(V1 rSR′). 좌각차단은 중격부터 오른→왼으로 거꾸로 깨고 주 벡터가 왼쪽·뒤로 가 V1 은 넓은 QS, V6 는 넓은 R 이다 <sup>[1 247장 p.1871]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "각차단의 역전된 T 파 = 허혈?",
+    "point": "각차단의 ST-T 는 바뀐 탈분극 순서를 따라가는 이차 변화로, T 파가 QRS 마지막 굴절과 반대 방향이다. 허혈·전해질·디곡신의 일차 변화는 QRS 와 무관하게 심근 자체의 전기 성질이 바뀐 것이고, 둘은 함께 있을 수 있다 <sup>[1 247장 p.1872]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 247장 Electrocardiography p.1870–1872",
+    "checked": "본문 대조(드라이브 문서 H22_247) — p.1870 그림 247-6 심실 탈분극 두 단계(중격 왼→오·앞, 양 심실 동시·좌심실 우세로 왼쪽·뒤), V1 작은 r + 큰 S·V6 작은 q; p.1871 각차단: 완전 ≥ 120 ms·불완전 110~120 ms, QRS 벡터는 탈분극이 늦어진 쪽으로, 우각차단 끝부분 벡터 오른쪽·앞(V1 rSR′·V6 qRS), 좌각차단 중격 오→왼·주 벡터 왼쪽·뒤(V1 QS·V6 R), 구조 심질환 없는 사람에서 우각차단이 더 흔함·심방중격결손; p.1872 각차단의 이차 ST-T(T 파가 QRS 마지막 굴절과 반대), 일차 ST-T 변화(허혈·전해질·디곡신)와 공존 가능",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "우각차단에서 V1 끝에 R′ 이 생기는 이유는?",
+    "a": "우심실이 마지막에 홀로 늦게 탈분극해 끝부분 벡터가 오른쪽·앞, 곧 V1 쪽으로 향하기 때문이다."
+   },
+   {
+    "q": "좌각차단에서 정상 중격 q 파가 V6 에서 사라지는 이유는?",
+    "a": "중격이 오른쪽에서 왼쪽으로 거꾸로 탈분극해 V6 를 향하는 벡터로 시작하기 때문이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.physio.ventricular-activation.bundle-branch-block#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — V1 QS·V6 R",
+    "stem": "68세 남자가 고혈압으로 추적 중 찍은 12유도 심전도에서 동리듬, QRS 폭 150 ms 이다. V1 은 넓고 깊은 QS 파이고, I·V6 는 중격 q 파 없이 넓은 R 파이며 T 파는 QRS 와 반대 방향이다. 이 QRS 모양을 가장 잘 설명하는 것은?",
+    "options": [
+     "우심실이 마지막에 홀로 탈분극해 끝부분 벡터가 오른쪽·앞으로 향한다",
+     "중격이 오른쪽에서 왼쪽으로 탈분극하고 좌심실이 늦게 깨어 주 벡터가 왼쪽·뒤로 향한다",
+     "방실결절 전도가 느려져 심실 탈분극 전체가 지연된다",
+     "좌전섬유속만 막혀 전두면 축이 왼쪽으로 치우친다",
+     "심근 허혈로 활동전위가 짧아져 T 파가 뒤집힌다"
+    ],
+    "answer": 2,
+    "explanation": "좌각차단은 중격 탈분극부터 오른→왼으로 거꾸로 일어나 V6 의 중격 q 파가 사라지고, 좌심실이 늦게 깨어 주 벡터가 왼쪽·뒤로 향한다 — V1 넓은 QS, V6 넓은 R [[harrison-22: 247장 p.1871]]. T 파가 QRS 와 반대인 것은 바뀐 탈분극 순서를 따르는 이차 변화다 [[harrison-22: 247장 p.1872]]. V1 rSR′ 이었다면 A(우각차단)가 답이었다. 방실결절 지연은 PR 을 늘리지 QRS 를 넓히지 않고, 좌전섬유속 차단은 QRS 가 넓지 않다.",
+    "of": "",
+    "changed": "V1 rSR′·V6 넓은 S 대신 V1 넓은 QS·V6 넓은 R(중격 q 없음)을 주었다 → 늦게 깨는 심실이 우심실에서 좌심실로 바뀌어 답이 좌각차단의 기전이 된다",
+    "flip": true
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.prev.association-measures.rr-or-ar-selection": {
   "id": "cn.prev.association-measures.rr-or-ar-selection",
   "title": "역학 지표 — 설계가 쓸 수 있는 지표를 정한다",
@@ -162749,9 +163222,9 @@ window.MEDKOS_CONCEPTS = {
    "Radiology"
   ],
   "version": 2,
-  "updated": "2026-09-26",
+  "updated": "2026-11-23",
   "reviewStatus": "unreviewed",
-  "hash": "913a50eb90f1d3c6",
+  "hash": "8780dd6eb2868699",
   "summary": [
    "결론: 척추체 왼쪽 앞의 크고 둥근 단면은 하행대동맥(T12), 폐 바닥 앞쪽의 균질한 둥근 음영은 가로막돔과 간이다.",
    "시험 단서: 심실 높이·폐 바닥 축상 CT(폐창), 증상 없는 검진 — 대동맥구멍(aortic hiatus)·가로막돔(hemidiaphragm dome).",
@@ -162845,7 +163318,7 @@ window.MEDKOS_CONCEPTS = {
   "layer": "clinical",
   "discipline": "",
   "roots": [],
-  "rootsNone": "",
+  "rootsNone": "목표 자체가 영상 해부(구조의 위치·높이 확인) — 따로 내려갈 기초 기전이 없다",
   "rootSupports": [],
   "outline": "h286",
   "order": 6,
@@ -177414,9 +177887,9 @@ window.MEDKOS_CONCEPTS = {
    "Neurology"
   ],
   "version": 3,
-  "updated": "2026-10-10",
+  "updated": "2026-11-23",
   "reviewStatus": "unreviewed",
-  "hash": "0a95671a7fc0c818",
+  "hash": "77fb2ea8c225d4a8",
   "summary": [
    "결론: 중증 장기 침범이 없는 HCV 크리오글로불린혈증 혈관염은 직접작용 항바이러스제(DAA)가 1차다.",
    "시험 단서: 하지 촉지 자반 + 비미란성 관절통 + 감각 신경병, 류마티스인자 양성·C4 저하, HCV RNA 양성(mixed cryoglobulinemia).",
@@ -177541,7 +178014,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.immuno.immune-complex.cryoglobulinemic-vasculitis"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h363",
@@ -182739,7 +183214,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "판단 — 왜 HLA-B*58:01 검사가 먼저인가",
     "deep": false,
-    "html": "<ul>\n<li>연 2회 넘는 발작·통풍결절·만성 통풍 관절염·요산 결석이 있으면 요산저하제를 시작한다 <sup>[1 372장 p.2864]</sup>.</li>\n<li>1차 약은 알로푸리놀(allopurinol)이다 <sup>[1 372장 p.2865]</sup>. 드물지만 목숨을 위협하는 중증 피부이상반응(severe cutaneous adverse reaction, SCAR) — 스티븐스-존슨 증후군(Stevens-Johnson syndrome)·독성표피괴사용해(toxic epidermal necrolysis) — 이 문제다.</li>\n<li>HLA-B<em>58:01 보유율은 동남아시아인(일본계 제외)·태평양 도서민·흑인에서 높아, 이들은 알로푸리놀 시작 </em><em>전에</em>* 선별한다 <sup>[1 372장 p.2865]</sup>. 한국인을 대상에 넣는 근거는 「시험 쟁점」의 Z1.</li>\n<li>만성콩팥병은 위험을 더 높이므로 검사 이유를 강화할 뿐, 시작을 미룰 이유가 아니다 <sup>[1 372장 p.2865]</sup>.</li>\n</ul>",
+    "html": "<ul>\n<li>연 2회 넘는 발작·통풍결절·만성 통풍 관절염·요산 결석이 있으면 요산저하제를 시작한다 <sup>[1 372장 p.2864]</sup>.</li>\n<li>1차 약은 알로푸리놀(allopurinol)이다 <sup>[1 372장 p.2865]</sup>. 드물지만 목숨을 위협하는 중증 피부이상반응(severe cutaneous adverse reaction, SCAR) — 스티븐스-존슨 증후군(Stevens-Johnson syndrome)·독성표피괴사용해(toxic epidermal necrolysis) — 이 문제다.</li>\n<li>HLA-B*58:01 보유율은 동남아시아인(일본계 제외)·태평양 도서민·흑인에서 높아, 이들은 알로푸리놀 시작 <strong>전에</strong> 선별한다 <sup>[1 372장 p.2865]</sup>. 한국인을 대상에 넣는 근거는 「시험 쟁점」의 Z1.</li>\n<li>만성콩팥병은 위험을 더 높이므로 검사 이유를 강화할 뿐, 시작을 미룰 이유가 아니다 <sup>[1 372장 p.2865]</sup>.</li>\n</ul>",
     "issue": false
    },
    {

@@ -132,6 +132,11 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    },
    {
+    "id": "paper-2026-0977",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0955",
     "how": "t",
     "term": "heart failure"
@@ -158,11 +163,6 @@ window.MEDKOS_RELATED = {
    },
    {
     "id": "paper-2026-0889",
-    "how": "t",
-    "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0860",
     "how": "t",
     "term": "heart failure"
    }
@@ -174,6 +174,11 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    },
    {
+    "id": "paper-2026-0977",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0955",
     "how": "t",
     "term": "heart failure"
@@ -202,11 +207,6 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0889",
     "how": "t",
     "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0483",
-    "how": "t",
-    "term": "hfpef"
    }
   ],
   "cn.cardio.heart-transplant.post-transplant-complication": [
@@ -526,6 +526,13 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0738",
     "how": "t",
     "term": "femoral neck fracture"
+   }
+  ],
+  "cn.physio.ventricular-activation.bundle-branch-block": [
+   {
+    "id": "paper-2026-0441",
+    "how": "a",
+    "term": "ventricular activation"
    }
   ],
   "cn.prev.association-measures.rr-or-ar-selection": [
@@ -1248,6 +1255,14 @@ window.MEDKOS_RELATED = {
     "cn.em.shock.type-differentiation-first-step"
    ]
   },
+  "paper-2026-0441": {
+   "t": "Non-Invasive Methods for Identifying Electrical Responders to Conduction System Pacing Cardiac Resynchronization Therapy",
+   "j": "Pacing and clinical electrophysiology : PACE",
+   "d": "2026-08-17",
+   "c": [
+    "cn.physio.ventricular-activation.bundle-branch-block"
+   ]
+  },
   "paper-2026-0445": {
    "t": "Management of Residual Extracardiac Congenital Heart Disease After Heart Transplant",
    "j": "JACC. Advances",
@@ -1294,14 +1309,6 @@ window.MEDKOS_RELATED = {
    "d": "2026-08-15",
    "c": [
     "cn.psy.ptsd.duration-vs-acute-stress"
-   ]
-  },
-  "paper-2026-0483": {
-   "t": "Diastolic contributors in cardiomyocytes of a cardiometabolic HFpEF-like mouse model",
-   "j": "The Journal of general physiology",
-   "d": "2026-11-02",
-   "c": [
-    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
   "paper-2026-0491": {
@@ -1638,8 +1645,7 @@ window.MEDKOS_RELATED = {
    "j": "European heart journal. Cardiovascular Imaging",
    "d": "2026-10-28",
    "c": [
-    "cn.cardio.cardiac-mri-lge.pattern-etiology",
-    "cn.cardio.heart-failure.hfref-gdmt-selection"
+    "cn.cardio.cardiac-mri-lge.pattern-etiology"
    ]
   },
   "paper-2026-0868": {
@@ -1834,6 +1840,15 @@ window.MEDKOS_RELATED = {
     "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
+  },
+  "paper-2026-0977": {
+   "t": "Multi-panel biomarkers for diagnosis of heart failure across the ejection fraction spectrum: A population-based study",
+   "j": "International journal of cardiology. Cardiovascular risk and prevention",
+   "d": "2026-12",
+   "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
+    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
+   ]
   }
  },
  "titles": {
@@ -1867,6 +1882,7 @@ window.MEDKOS_RELATED = {
   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
   "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+  "cn.physio.ventricular-activation.bundle-branch-block": "심실 탈분극 순서 — 늦게 깨는 쪽으로 QRS 끝이 향한다",
   "cn.prev.association-measures.rr-or-ar-selection": "역학 지표 — 설계가 쓸 수 있는 지표를 정한다",
   "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff": "검사 타당도 — 유병률은 예측도만, 기준점은 둘 다",
   "cn.prev.occupational-disease.exposure-to-disease-matching": "직업성 질환 — 노출 물질과 소견을 짝짓는다",

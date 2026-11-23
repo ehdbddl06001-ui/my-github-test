@@ -4,9 +4,10 @@ type: concept
 topic: Rheumatology
 see_also: [Gastroenterology, Nephrology, Neurology]
 date: 2026-09-23
-updated: 2026-10-10
+updated: 2026-11-23
 version: 3
 outline: h363            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 363장 The Vasculitis Syndromes
+roots: [cn.immuno.immune-complex.cryoglobulinemic-vasculitis]
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — [restyle] 재배치만, 새 사실 없음

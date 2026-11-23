@@ -4,9 +4,10 @@ type: concept
 topic: Cardiology
 see_also: []
 date: 2026-11-02
-updated: 2026-11-09
+updated: 2026-11-23
 version: 4
 outline: h240
+roots: [cn.physio.ventricular-activation.bundle-branch-block]
 confidence: medium
 review_status: unreviewed
 note_form: 2

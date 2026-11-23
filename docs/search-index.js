@@ -5,38 +5,38 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4188,
+  "total": 4197,
   "byType": {
+   "paper": 979,
    "kmle": 1952,
-   "concept": 212,
-   "paper": 972,
+   "concept": 214,
    "imaging": 759,
    "usmle": 276,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 359,
+   "Cardiology": 360,
    "Nephrology": 273,
-   "Infectious Disease": 243,
-   "Pediatrics": 232,
+   "Infectious Disease": 244,
+   "Pediatrics": 233,
    "Obstetrics & Gynecology": 177,
    "Rheumatology": 151,
    "Psychiatry": 147,
+   "Pathology": 146,
    "Neurology": 145,
-   "Pathology": 145,
+   "Hematology-Oncology": 135,
    "Orthopedics": 135,
-   "Hematology-Oncology": 134,
    "General Surgery": 130,
    "Endocrinology": 128,
    "Dermatology": 127,
    "Gastroenterology": 127,
    "Ophthalmology": 127,
    "Pulmonology": 126,
-   "Surgery": 125,
+   "Surgery": 126,
    "순환기": 122,
    "Hematology": 119,
-   "Laboratory Medicine": 100,
+   "Laboratory Medicine": 101,
    "산부인과": 93,
    "호흡기": 50,
    "소화기": 45,
@@ -48,7 +48,7 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 33,
    "응급·중환자": 33,
    "병리·조직학": 31,
-   "Physiology": 29,
+   "Physiology": 30,
    "피부과": 29,
    "외과": 28,
    "예방의학·역학": 25,
@@ -56,9 +56,9 @@ window.MEDKOS_INDEX = {
    "Biochemistry": 22,
    "Microbiology": 21,
    "약리": 20,
+   "Immunology": 19,
    "근골격·류마티스": 19,
    "정신과": 19,
-   "Immunology": 18,
    "Internal Medicine": 18,
    "안과": 14,
    "영상의학": 13,
@@ -79,13 +79,132 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1218,
    "high": 2975,
-   "medium": 1209,
    "low": 4
   },
   "tagCount": 4957
  },
  "docs": [
+  {
+   "id": "paper-2026-0979",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0979_analysis_of_locoregional_and_free_flaps_in_foot_and_ankle_re.md",
+   "snippet": "Title Analysis of Locoregional and Free Flaps in Foot and Ankle Reconstruction Authors Kaur Jaswinder, Bashir Sheikh A, Rasool Altaf, Baba P Umar Farooq, Yasir Mir, Zargar Haroon R, Mohsin Mir, Singh Dharminder Journal / DOI Cureus · DOI: 1",
+   "text": "Surgery scraped pubmed PubMed / Cureus Title Analysis of Locoregional and Free Flaps in Foot and Ankle Reconstruction Authors Kaur Jaswinder, Bashir Sheikh A, Rasool Altaf, Baba P Umar Farooq, Yasir Mir, Zargar Haroon R, Mohsin Mir, Singh Dharminder Journal / DOI Cureus · DOI: 10.7759/cureus.118365 · PMID: 43068343 https://pubmed.ncbi.nlm.nih.gov/43068343/ Abstract Introduction Reconstruction of defects in the foot and ankle region is particularly challenging because of the limited availability of local soft tissue, the superficial location of vital structures, and the need to restore both form and function while preserving ambulation. Aim and objective This study aimed to analyze the indications for locoregional and free flaps, mean operative time, immediate postoperative complications, and secondary procedures performed. Materials and methods The study was conducted in the Department of Plastic and Reconstructive Surgery, Sher i Kashmir Institute of Medical Sciences (SKIMS), Srinagar, retrospectively from January 2022 to December 2023 and prospectively from January 2024 to December 2025. Eighty seven patients with foot and ankle defects, irrespective of the cause (trauma, diabetes, tumor, or infections), were enrolled in the study. Of these, 53 underwent free flap reconstruction, and 34 underwent locoregional flap reconstruction. Results Operative time was significantly longer for free flap reconstruction (mean, 5.81 hours) than for locoregional flap reconstruction (2.71 hours). The flap survival rate in our study was excellent in both groups, at 96.23% for free flaps and 94.12% for locoregional flaps. Flap failure occurred in two patients in each group, resulting in failure rates of 3.77% for free flaps and 5.88% for locoregional flaps. The complication rates in our study were 7.54% for free flaps and 23.50% for locoregional flaps. Conclusion Both locoregional and free flaps are reliable options for the reconstruction of foot and ankle defects, with high flap survival rates. Locoregional flaps are particularly useful for smaller defects of the heel and ankle region and require shorter operative times. Free flaps were more commonly required in younger patients with large traumatic defects involving the dorsum and distal foot, where local tissue was inadequate for coverage. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0978",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Research and practice in thrombosis and haemostasis",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0978_clinical_and_laboratory_based_prognostic_factors_for_pediatr.md",
+   "snippet": "Title Clinical and laboratory based prognostic factors for pediatric postthrombotic syndrome: findings from the Kids Duration of Therapy for Thrombosis in Children trial Authors Betensky Marisol, Alleyne Maua M, Amankwah Ernest K, Bhat Rukh",
+   "text": "Pediatrics scraped pubmed PubMed / Research and practice in thrombosis and haemostasis Title Clinical and laboratory based prognostic factors for pediatric postthrombotic syndrome: findings from the Kids Duration of Therapy for Thrombosis in Children trial Authors Betensky Marisol, Alleyne Maua M, Amankwah Ernest K, Bhat Rukhmi, Brandão Leonardo R, Bruzek Steven, Kucine Nicole E, Nakano Taizo, et al. Journal / DOI Research and practice in thrombosis and haemostasis · DOI: 10.1016/j.rpth.2026.107035 · PMID: 43068242 https://pubmed.ncbi.nlm.nih.gov/43068242/ Abstract BACKGROUND: Knowledge on risk factors for the development of pediatric postthrombotic syndrome (PTS) is scarce. We previously identified low plasma fibrinolytic capacity and persistent complete veno occlusion as candidate risk factors for pediatric PTS. This study aims to substantiate and expand on these findings through a prespecified secondary analysis of the Kids DOTT trial. OBJECTIVE: To identify additional clinical and molecular prognostic factors for the development of PTS in children presenting with first time provoked deep venous thrombosis (DVT). METHODS: We analyzed clinical data and plasma specimens from children with an extremity DVT in the Kids DOTT trial. PTS was assessed at 1 year post DVT. Plasma fibrinolytic capacity and biomarkers of fibrinolysis were measured in plasma collected at 6 weeks post DVT. Risk factors, identified in our prior work or substantiated in the literature, were evaluated via univariable logistic regression, and variables with P < .05 were included in a multivariable model. RESULTS: A total of 399 patients were included; 37% developed PTS. In the multivariable clinical model, adolescent age (13 to <21 years) and complete veno occlusion at 6 weeks were associated with PTS (odds ratio [OR] = 1.69, 95% CI = 1.11 2.57, P = .015 and OR = 2.19, 95% CI = 1.2 3.99, P = .01, respectively). In a biomarker enhanced model, complete veno occlusion, reduced plasma fibrinolytic capacity, and increased levels of plasminogen activator inhibitor 1 antigen at 6 weeks were independent prognostic factors for PTS (OR = 2.76, 95% CI = 1.13 6.71, P = .025; OR = 1.83, 95% CI = 1.02 3.30, P = .044; and OR = 1.99, 95% CI = 1.1 3.59, P = .025, respectively). CONCLUSION: We identified complete veno occlusion, reduced plasma fibrinolytic capacity, and increased plasma levels of plasminogen activator inhibitor 1 at 6 weeks post DVT as independent prognostic factors for the development of PTS in children with provoked DVT. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0977",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of cardiology. Cardiovascular risk and prevention",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0977_multi_panel_biomarkers_for_diagnosis_of_heart_failure_across.md",
+   "snippet": "Title Multi panel biomarkers for diagnosis of heart failure across the ejection fraction spectrum: A population based study Authors Oo Mon Myat, Gao Chuang, Cole Christian, Hummel Yoran, Guignard Duff Magalie, Voors Adriaan A, de Boer Rudol",
+   "text": "Laboratory Medicine scraped pubmed PubMed / International journal of cardiology. Cardiovascular risk and prevention Title Multi panel biomarkers for diagnosis of heart failure across the ejection fraction spectrum: A population based study Authors Oo Mon Myat, Gao Chuang, Cole Christian, Hummel Yoran, Guignard Duff Magalie, Voors Adriaan A, de Boer Rudolf A, Lam Carolyn S P, et al. Journal / DOI International journal of cardiology. Cardiovascular risk and prevention · DOI: 10.1016/j.ijcrp.2026.200721 · PMID: 43068292 https://pubmed.ncbi.nlm.nih.gov/43068292/ Abstract We conducted a cohort study to evaluate the diagnostic value of heart failure (HF) biomarkers across the ejection fraction spectrum. Using electronic health record data from Tayside and Fife regions of Scotland (1993 2021), we linked echocardiograms with plasma samples for biomarker analysis. The study included 156 patients with HF with reduced ejection fraction (HFrEF), 236 patients with preserved ejection fraction (HFpEF), and 186 controls without HF. All biomarkers were significantly elevated in patients with HF compared to controls. Patients with HFrEF had higher hs TnT, NT proBNP, and ANG 2 concentrations than those with HFpEF. All nine biomarkers demonstrated strong diagnostic accuracy for distinguishing HF from controls (AUC ≥0.90). However, no two biomarker pair significantly improved discrimination over its best constituent marker in a majority of splits. This population based study demonstrated significant diagnostic value of biomarkers for patients with HFrEF and HFpEF. All biomarkers discriminated HF from controls, with held out AUCs from 0.90 to 0.97. Although each of these biomarkers reflects distinct pathophysiological aspects of HF that could potentially provide complementary diagnostic information, combination of biomarkers in our analysis did not improve discrimination over the best single biomarker. Further work is needed in integrating multi biomarker panels to enhance patient selection efficiency in clinical trials, improve HF surveillance, and facilitate early diagnosis across healthcare systems, particularly for HFpEF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0976",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of biochemical and molecular toxicology",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0976_improving_the_letrozole_induced_polycystic_ovary_syndrome_in.md",
+   "snippet": "Title Improving the Letrozole Induced Polycystic Ovary Syndrome in Rat Model: Effect of Vitamin D on Hyperandrogenism, Insulin Resistance, Inflammation and Adipokines Authors Korkmaz Gizem Elif, Yaman Mine, Ak Tuba Parlak, Sağıroğlu Meltem,",
+   "text": "Pathology scraped pubmed PubMed / Journal of biochemical and molecular toxicology Title Improving the Letrozole Induced Polycystic Ovary Syndrome in Rat Model: Effect of Vitamin D on Hyperandrogenism, Insulin Resistance, Inflammation and Adipokines Authors Korkmaz Gizem Elif, Yaman Mine, Ak Tuba Parlak, Sağıroğlu Meltem, Yaman İhsan, Gençer Berrin Tarakçı Journal / DOI Journal of biochemical and molecular toxicology · DOI: 10.1002/jbt.71206 · PMID: 43068454 https://pubmed.ncbi.nlm.nih.gov/43068454/ Abstract Polycystic ovary syndrome (PCOS) is a chronic systemic disease progressing. Vitamin D deficiency may contribute to the pathophysiology of PCOS by affecting multiple mechanisms. In this study, the effects of Vit D on altered biochemistry and ovarian histopathology and adipokine immunoreactivities in PCOS rats were investigated. Forty female Sprague Dawley rats were divided into 5 groups as control, Dimethyl sulfoxide (DMSO), Vit D, PCOS and PCOS+ Vit D experimental groups. DMSO group was applied 2% DMSO (1 mL/kg/day, by gavage). Vit D group was applied Vit D (200 IU/day, orally). PCOS group was applied letrozole dissolved in 2% DMSO (1 mg/kg/day, by gavage). PCOS+ Vit D group was applied letrozole and Vit D simultaneously. In the PCOS group, luteinizing hormone/follicle stimulating hormone (LH/FSH) ratio and LH, testosterone, interleukin 1 (IL 1), tumor necrosis factor alpha (TNF α) and homeostatic model assessment for insulin resistance (HOMA IR) values increased significantly, unlike the FSH value. In this group, the number of all follicles decreased significantly, while cystic follicles increased. Morever, the granulosa layer in the secondary and tertiary follicles decreased significantly, while the thecal thickness increased. Also it was observed disorganized zona pellucida, degenerated oocytes, thecal and hilar cell hyperplasia. All these changes were significantly improved in the PCOS+ Vit D group. Changes in omentin, visfatin and resistin immunoreactivity in PCOS were ameliorated by Vit D administration. This study determined the ameliorative effects of vitamin D supplementation on the biochemical and histopathological changes and regulation of adipokine distribution in PCOS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0975",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of clinical pathology",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0975_vs38c_as_a_stable_marker_for_identification_of_normal_and_ma.md",
+   "snippet": "Title VS38c as a stable marker for identification of normal and malignant plasma cells Authors Kleibergen Thyra, Kühnau Jesper, van Duin Mark, Kamstrup Andreas, van der Velden Vincent H J Journal / DOI American journal of clinical pathology",
+   "text": "Hematology-Oncology scraped pubmed PubMed / American journal of clinical pathology Title VS38c as a stable marker for identification of normal and malignant plasma cells Authors Kleibergen Thyra, Kühnau Jesper, van Duin Mark, Kamstrup Andreas, van der Velden Vincent H J Journal / DOI American journal of clinical pathology · DOI: 10.1093/ajcp/aqag134 · PMID: 43068470 https://pubmed.ncbi.nlm.nih.gov/43068470/ Abstract OBJECTIVES: Flow cytometric minimal residual disease analysis in patients with multiple myeloma (MM) often relies on CD38 and CD138 gating, but CD38 may be lost by targeted therapies, and CD138 expression rapidly decreases after sampling. We aimed to evaluate the stability of the alternative plasma cell marker VS38c. METHODS: Bone marrow samples of patients with (suspected) MM were obtained in heparin or EDTA tubes. We evaluated CD38, CD138, and VS38c expression by flow cytometry from days 0 to 4. Expression levels were evaluated relative to day 0. RESULTS: CD38 expression on normal and malignant plasma cells remained stable, whereas CD138 expression rapidly decreased after sampling (down to <10% at day 4, more prominent in heparin samples). VS38c expression remained stable and even slightly increased, independent of the type of anticoagulant used. In patients treated with daratumumab, CD138 expression was rapidly lost, whereas VS38c expression remained stable. CONCLUSIONS: VS38c may be used as an alternative or additional marker to identify MM cells, including in samples with extended intervals between collection and processing. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0974",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0974_bilateral_neonatal_suppurative_parotitis_with_asymmetric_evo.md",
+   "snippet": "Title Bilateral Neonatal Suppurative Parotitis With Asymmetric Evolution in an Extremely Preterm Infant: A Case Report Authors Farhat Sarwat, Al Barazi Randa, Ghadieh Justin, Maalouf Faouzi I Journal / DOI Cureus · DOI: 10.7759/cureus.11838",
+   "text": "Infectious Disease scraped pubmed PubMed / Cureus Title Bilateral Neonatal Suppurative Parotitis With Asymmetric Evolution in an Extremely Preterm Infant: A Case Report Authors Farhat Sarwat, Al Barazi Randa, Ghadieh Justin, Maalouf Faouzi I Journal / DOI Cureus · DOI: 10.7759/cureus.118389 · PMID: 43068217 https://pubmed.ncbi.nlm.nih.gov/43068217/ Abstract Neonatal suppurative parotitis (NSP) is a rare bacterial infection, usually unilateral and most often caused by Staphylococcus aureus. Bilateral involvement is distinctly uncommon, particularly in extremely preterm infants. A female infant born at 26 weeks and six days' gestation (birth weight 1040 g) developed culture negative late onset sepsis like deterioration on day of life (DOL) 13. On DOL 16, bilateral preauricular and submandibular swelling with erythema was noted. Ultrasonography demonstrated bilateral salivary gland enlargement and hypervascularity without a discrete abscess but could not confidently distinguish parotid from submandibular involvement. By DOL 18, the right preauricular region had spontaneously drained through the skin, while examination of the left side showed induration, warmth, fluctuance, and frank purulence expressed from Stensen's duct. Culture of the purulent drainage grew methicillin sensitive Staphylococcus aureus (MSSA). The infant was treated with intravenous antibiotics, subsequently narrowed to cefazolin, together with warm compresses and gentle gland massage. Bilateral swelling resolved completely by DOL 24 without operative drainage. This case illustrates synchronous bilateral NSP with strikingly asymmetric evolution: active ductal suppuration on one side and spontaneous cutaneous fistulization with decompression on the other. In a deteriorating extremely preterm neonate, direct inspection of Stensen's duct can be decisive when ultrasonography does not clearly localize the involved salivary gland. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0973",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiovascular toxicology",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/papers/2026/2026-11-23_paper-2026-0973_emerging_therapeutic_strategies_targeting_ferroptosis_in_car.md",
+   "snippet": "Title Emerging Therapeutic Strategies Targeting Ferroptosis in Cardiomyocyte Injury: Molecular Mechanisms and Future Perspectives Authors Thangavel Logapriya, Maida Engels S E Journal / DOI Cardiovascular toxicology · DOI: 10.1007/s12012 02",
+   "text": "Cardiology scraped pubmed PubMed / Cardiovascular toxicology Title Emerging Therapeutic Strategies Targeting Ferroptosis in Cardiomyocyte Injury: Molecular Mechanisms and Future Perspectives Authors Thangavel Logapriya, Maida Engels S E Journal / DOI Cardiovascular toxicology · DOI: 10.1007/s12012 026 10227 3 · PMID: 43068421 https://pubmed.ncbi.nlm.nih.gov/43068421/ Abstract Ferroptosis is a regulated, iron dependent form of cell death characterized by excessive lipid peroxidation resulting from disrupted iron homeostasis and impaired cellular antioxidant defenses. Increasing evidence identifies ferroptosis as a central contributor to cardiomyocyte injury in ischemia reperfusion injury, anthracycline induced cardiotoxicity, metabolic cardiac disorders, diabetic cardiomyopathy, and heart failure. Unlike apoptosis, necroptosis, autophagic cell death, and pyroptosis, ferroptosis is driven by glutathione depletion, glutathione peroxidase 4 (GPX4) inactivation, and uncontrolled lipid peroxide accumulation, making it a distinct and potentially reversible therapeutic target. This review provides a comprehensive overview of the molecular mechanisms regulating cardiac ferroptosis, emphasizing the roles of GPX4, Solute Carrier Family 7 Member 11 (SLC7A11), Nuclear factor Erythroid 2 related Factor 2 (NRF2), Acyl CoA Synthetase Long Chain Family Member 4 (ACSL4), Ferroptosis Suppressor Protein 1 (FSP1), Dihydroorotate Dehydrogenase (DHODH), and ferritinophagy, together with their interactions with other regulated cell death pathways. We further discuss emerging therapeutic approaches, including natural phytochemicals, small molecule ferroptosis inhibitors, and gene and molecular target based strategies, together with the cardio oncology implications of inhibiting ferroptosis and the translational prospects offered by nanoparticle based delivery, multi omics integration, and artificial intelligence assisted predictive modeling. Current translational challenges, including the absence of validated ferroptosis specific biomarkers, limited human relevant disease models, and interpatient heterogeneity, are critically evaluated. By integrating molecular mechanisms, therapeutic advances, and translational perspectives, this review provides an updated framework for understanding ferroptosis in cardiovascular toxicity and identifies key opportunities for developing clinically translatable ferroptosis targeted cardioprotective strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1988",
    "type": "kmle",
@@ -701,6 +820,34 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1957.md",
    "snippet": "67세 남자가 1시간 전 시작된 가슴 압박감과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 목정맥이 확장되어 있고 양쪽 폐에서 수포음은 들리지 않는다. 심잡음은 없다. 응급실 도착 직후 아스피린을 씹어 먹게 했고, 심도자실을 준비하고 있다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 투여를 피해야 하는 것은? A. 생리식염수 정맥 주입 B. 니트로글리세린 설하 투여 C. 클로피도그렐 부하 용량 D. ",
    "text": "Cardiology Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties inferior-stemi right-ventricular-infarction nitrate-contraindication preload KMLE 2026 / Claude 67세 남자가 1시간 전 시작된 가슴 압박감과 식은땀으로 응급실에 왔다. 고혈압과 당뇨병으로 약을 먹고 있다. 목정맥이 확장되어 있고 양쪽 폐에서 수포음은 들리지 않는다. 심잡음은 없다. 응급실 도착 직후 아스피린을 씹어 먹게 했고, 심도자실을 준비하고 있다. 활력징후와 검사 결과는 자료와 같다. 이 환자에게 투여를 피해야 하는 것은? A. 생리식염수 정맥 주입 B. 니트로글리세린 설하 투여 C. 클로피도그렐 부하 용량 D. 미분획 헤파린 정맥 주사 E. 일차 경피적 관상동맥 중재술 하벽 ST 분절 상승 심근경색에 V4R ST 상승·목정맥 확장·맑은 폐·저혈압이 겹쳐 우심실 경색이다. 우심실 경색은 전부하에 의존하므로 질산염 같은 전부하 감소 약을 피한다."
+  },
+  {
+   "id": "cn.physio.ventricular-activation.bundle-branch-block",
+   "type": "concept",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/concepts/physiology/cn.physio.ventricular-activation.bundle-branch-block.md",
+   "snippet": "정상 — 두 벡터가 V1 rS·V6 qR 을 만든다 심실 탈분극은 두 단계다. 먼저 중격 이 왼쪽에서 오른쪽·앞으로 짧게 깨고(벡터 1), 이어 양 심실이 동시에 깨는데 두꺼운 좌심실이 우세해 벡터 2 는 왼쪽·뒤로 향한다. 그래서 V1 은 작은 중격 r 뒤 큰 S, V6 는 작은 중격 q 뒤 큰 R 을 그린다 [[harrison 22: 247장 p.1870]]. 빠른 이유는 히스속 → 좌·우각 → 푸르키녜 섬유의 전도계가 양",
+   "text": "Physiology 정상 — 두 벡터가 V1 rS·V6 qR 을 만든다 심실 탈분극은 두 단계다. 먼저 중격 이 왼쪽에서 오른쪽·앞으로 짧게 깨고(벡터 1), 이어 양 심실이 동시에 깨는데 두꺼운 좌심실이 우세해 벡터 2 는 왼쪽·뒤로 향한다. 그래서 V1 은 작은 중격 r 뒤 큰 S, V6 는 작은 중격 q 뒤 큰 R 을 그린다 [[harrison 22: 247장 p.1870]]. 빠른 이유는 히스속 → 좌·우각 → 푸르키녜 섬유의 전도계가 양 심실을 거의 동시에 깨우기 때문이다. 고장 — 한쪽 각이 막히면 막힌 쪽 심실은 전도계 대신 심근을 타고 천천히 깬다 → QRS 가 넓어진다(완전 각차단 ≥ 120 ms, 불완전 110~120 ms) [[harrison 22: 247장 p.1871]]. QRS 벡터는 탈분극이 늦어진 쪽 으로 향한다 [[harrison 22: 247장 p.1871]]. 우각차단: 중격·좌심실은 정상 순서라 처음은 정상과 같고, 끝에 우심실만 남아 끝부분 벡터가 오른쪽·앞으로 → V1 rSR′, V6 qRS(넓은 S) [[harrison 22: 247장 p.1871]]. 좌각차단: 중격이 오른쪽에서 왼쪽으로 거꾸로 깨고 좌심실이 늦어 주 벡터가 왼쪽·뒤로 → V1 넓은 QS, V6 넓은 R(중격 q 없음) [[harrison 22: 247장 p.1871]]. 소견으로 — 넓은 QRS 와 반대 방향 T 파 각차단의 T 파는 QRS 마지막 굴절과 반대 방향이다 — 탈분극 순서가 바뀌어 재분극 순서도 바뀐 이차 변화다 [[harrison 22: 247장 p.1872]]. 허혈·전해질 이상·디곡신은 심근의 전기 성질 자체가 바뀐 일차 ST T 변화이고, 둘은 함께 있을 수 있다(좌각차단의 우측 흉부유도 T 역전 등은 허혈의 단서가 될 수 있다) [[harrison 22: 247장 p.1872]]. 우심실 조율은 좌심실이 늦게 깨므로 좌각차단과 같은 모양에 조율 스파이크가 앞선다 [[harrison 22: 247장 p.1871]]. 임상 판단으로 — 어느 쪽이 늦나가 답을 가른다 넓은 QRS 를 보면 V1 의 끝부분 방향으로 어느 심실이 늦게 깨는지를 가린다 — 끝이 위(R′)면 우각차단, 넓은 QS 면 좌각차단. 읽는 순서·축 판단은 임상 정리본 cn.cardio.complete rbbb.ecg recognition . 구조 심질환이 없는 사람에서는 우각차단이 좌각차단보다 흔하고, 우각차단은 심방중격결손 같은 선천 질환에서도 보인다. 좌각차단은 관상동맥질환·고혈압성 심질환·대동맥판막질환·심근병증의 표지인 경우가 많다 [[harrison 22: 247장 p.1871–1872]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 247장 p.1870–1872)"
+  },
+  {
+   "id": "cn.immuno.immune-complex.cryoglobulinemic-vasculitis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-23",
+   "path": "content/concepts/immunology/cn.immuno.immune-complex.cryoglobulinemic-vasculitis.md",
+   "snippet": "정상 — 복합체는 만들어지고 곧 치워진다 항원과 항체가 만나면 면역복합체(immune complex)가 생기고, 보통은 망상내피계가 순환에서 걸러 낸다. 어느 복합체가 혈관벽에 남을지는 제거 능력·복합체 크기와 물리화학적 성질·혈류 난류·혈관 안 정수압·내피의 상태가 정한다 [[harrison 22: 375장 p.2893]]. 고장 — 항원 과잉의 복합체가 벽에 걸린다 혈청병 모형: 항원 과잉에서 생긴 복합체가, 혈소판·비만세",
+   "text": "Immunology 정상 — 복합체는 만들어지고 곧 치워진다 항원과 항체가 만나면 면역복합체(immune complex)가 생기고, 보통은 망상내피계가 순환에서 걸러 낸다. 어느 복합체가 혈관벽에 남을지는 제거 능력·복합체 크기와 물리화학적 성질·혈류 난류·혈관 안 정수압·내피의 상태가 정한다 [[harrison 22: 375장 p.2893]]. 고장 — 항원 과잉의 복합체가 벽에 걸린다 혈청병 모형: 항원 과잉에서 생긴 복합체가, 혈소판·비만세포에서 나온 혈관활성 아민(히스타민·브라디키닌·류코트리엔)으로 투과성이 커진 혈관벽에 쌓인다 [[harrison 22: 375장 p.2893]]. 쌓인 복합체가 보체를 활성화하고, 특히 C5a 가 호중구를 부른다. 호중구가 복합체를 삼키며 효소를 내놓아 벽을 부순다. 아급성·만성으로 가면 단핵구가 들어와 내강이 좁아지고 조직이 허혈에 빠진다 [[harrison 22: 375장 p.2893]]. 원인 항원이 확인된 드문 예가 HBV(결절다발동맥염 유사 혈관염)와 HCV(크리오글로불린 침전물 속 HCV 비리온·항원 항체 복합체)다 [[harrison 22: 375장 p.2893]]. HCV 에서는 감염에 대한 비정상 면역반응으로 HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자 복합체가 만들어진다 [[harrison 22: 375장 p.2905]]. 소견으로 — 자반·저보체·류마티스인자가 생기는 이유 소혈관 벽의 호중구 손상 → 섬유소양 괴사·출혈 → 촉지 자반. 생검에서 면역글로불린·보체 침착 [[harrison 22: 375장 p.2905]]. 보체가 벽에서 쓰이며 혈청 보체가 떨어진다(크리오글로불린혈증 혈관염의 90 %) [[harrison 22: 375장 p.2905]]. IgM 성분이 류마티스인자 활성을 가져 RF 가 거의 늘 양성 — 크리오글로불린이 검출되지 않을 때의 단서가 된다 [[harrison 22: 375장 p.2905]]. 사구체에 쌓이면 막증식 사구체신염(신병변의 80 %) [[harrison 22: 375장 p.2905]]. 임상 판단으로 — 항원을 없애면 복합체가 멈춘다 복합체는 계속 공급되는 항원으로 만들어지므로, HCV 크리오글로불린혈증 혈관염은 항바이러스제가 1차이고 임상 호전은 바이러스 반응을 따른다 — 바이러스가 사라지면 크리오글로불린·IgM·RF 도 준다 [[harrison 22: 375장 p.2905]]. 염증만 누르는 스테로이드는 일시적이다. 복합체의 IgM 을 만드는 B 세포를 겨누는 리툭시맙은 활동성 혈관염의 병용·대체 약이다 [[harrison 22: 375장 p.2905]]. 치료 순서는 임상 정리본 cn.rheum.cryoglobulinemic vasculitis.hcv daa . 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 375장 p.2893, p.2905)"
   },
   {
    "id": "cn.cardio.mitral-stenosis.commissurotomy-selection",
