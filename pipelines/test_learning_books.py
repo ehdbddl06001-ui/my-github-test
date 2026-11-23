@@ -1112,7 +1112,12 @@ class OutlineFrame(unittest.TestCase):
         gaps = cq._gaps({**concepts, **{c["id"]: c for c in more}}, {}, {})
         self.assertEqual([g["book"] for g in gaps], ["순환기내과", "신장내과"])
         real = cq._gaps(base, {}, {})
-        self.assertEqual([g["have"] for g in real], sorted(g["have"] for g in real))
+        # 같은 날 뒤이은 사용자 결정(국시 핵심 공백 과목 먼저 — `gap_priority`)으로 기대값을 고쳤다: 「적은 책 먼저」는
+        # 전체가 아니라 **묶음 안에서** 성립한다 — 핵심 책(기준 수 미만) 묶음이 앞, 나머지가 뒤, 각 묶음 안은 적은 책부터.
+        keys = [(not g["core"], g["have"]) for g in real]
+        self.assertEqual(keys, sorted(keys))
+        core_books, until = cq.gap_priority(cq._books_cfg())
+        self.assertTrue(all(g["book"] in core_books and g["have"] < until for g in real if g["core"]))
         self.assertTrue(all(g["have"] > 0 for g in real))                        # 0개인 책은 오답이 이끈다
         # 기초의학 학문별 책은 [gap] 대상이 아니다 — 기초 정리본은 [root] 에서만(2026-11-21 사용자 결정)
         import yaml
@@ -1375,6 +1380,230 @@ class BasicRoots(unittest.TestCase):
         for book in set(cfg["disciplines"].values()):
             self.assertTrue(books.get(book), book)                                       # 학문별 책마다 기본틀 슬롯
         self.assertTrue(set(cfg["textbooks"]) <= set(cfg["disciplines"]))
+
+
+class QueueWeightsBackfillVerify(unittest.TestCase):
+    """2026-11-23 사용자 결정 — [gap] 국시 핵심 공백 과목 먼저 · [root] 반복 오답 상위 20 소급 · [verify] · 분량·중복 린트.
+    모두 지어낸 정리본 사전으로만 본다(실제 콘텐츠를 읽지 않는다)."""
+
+    TOPIC = {"소화기내과": "Gastroenterology", "신경과": "Neurology", "외과": "Surgery",
+             "순환기내과": "Cardiology", "신장내과": "Nephrology"}
+
+    def _cfg(self, **gp):
+        import yaml
+        cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))
+        cfg.pop("gap_priority", None)
+        if gp:
+            cfg["gap_priority"] = gp
+        return cfg
+
+    def _notes(self, **counts):
+        """{책 이름: 개수} → 슬롯을 차지하지 않는 정리본 사전(outline 빈칸 — 책마다 첫 빈 슬롯이 [gap] 으로 나온다)."""
+        out = {}
+        for book, n in counts.items():
+            for i in range(n):
+                cid = f"cn.t.{self.TOPIC[book].lower()}.n{i}"
+                out[cid] = {"id": cid, "topic": self.TOPIC[book], "outline": ""}
+        return out
+
+    def test_real_config_names_the_six_core_books(self):
+        books, until = cq.gap_priority(cq._books_cfg())
+        self.assertEqual(books, {"혈액종양내과", "소화기내과", "신경과", "감염내과", "내분비내과", "외과"})
+        self.assertEqual(until, 12)
+        cfg = bb.load_config()
+        self.assertTrue(books <= set(cfg["books"].values()))                    # 책 이름이 topic → 책 표에 있다
+        self.assertTrue(books <= set(ol.load()[0]))                              # 기본틀에도 있다
+        self.assertFalse(books & set(cfg["disciplines"].values()))              # 기초의학 학문별 책은 아니다
+
+    def test_gap_core_books_come_first_until_they_reach_the_threshold(self):
+        cfg = self._cfg(books=["소화기내과", "신경과", "외과"], until=3)        # 외과는 0개 — 핵심 책이라도 넣지 않는다
+        notes = self._notes(순환기내과=1, 소화기내과=2, 신경과=1)
+        gaps = cq._gaps(notes, {}, {}, cfg)
+        self.assertEqual([(g["book"], g["have"], g["core"]) for g in gaps],
+                         [("신경과", 1, True), ("소화기내과", 2, True), ("순환기내과", 1, False)])
+        self.assertEqual(gaps[0]["core_until"], 3)
+        self.assertNotIn("core_until", gaps[-1])
+        self.assertTrue({"book", "slot", "title", "source", "chapters", "have"} <= set(gaps[0]))   # 옛 필드는 그대로
+        # 기준 수(3)에 이른 책은 앞 묶음에서 빠져 일반 순서로 간다
+        gaps = cq._gaps(self._notes(순환기내과=1, 소화기내과=2, 신경과=3), {}, {}, cfg)
+        self.assertEqual([(g["book"], g["core"]) for g in gaps],
+                         [("소화기내과", True), ("순환기내과", False), ("신경과", False)])
+        # 핵심 책이 모두 기준 수에 이르면 가중치가 없을 때와 똑같다
+        full = self._notes(순환기내과=1, 소화기내과=3, 신경과=4, 신장내과=2)
+        self.assertEqual([g["book"] for g in cq._gaps(full, {}, {}, cfg)],
+                         [g["book"] for g in cq._gaps(full, {}, {}, self._cfg())])
+        self.assertFalse(any(g["core"] for g in cq._gaps(full, {}, {}, cfg)))
+
+    def test_gap_without_the_config_key_is_the_old_thinnest_first_order(self):
+        notes = self._notes(순환기내과=3, 소화기내과=5, 신경과=2, 신장내과=1)
+        order = {b: i for i, b in enumerate(ol.load()[0])}
+        want = sorted(((n, order[b]), b) for b, n in (("순환기내과", 3), ("소화기내과", 5), ("신경과", 2), ("신장내과", 1)))
+        for cfg in (self._cfg(), self._cfg(books=[], until=12), self._cfg(books=["소화기내과"]),
+                    self._cfg(books=["소화기내과"], until=0), self._cfg(books="소화기내과", until=12)):
+            gaps = cq._gaps(notes, {}, {}, cfg)
+            self.assertEqual([g["book"] for g in gaps], [b for _, b in want])   # 적은 책 먼저 · 같으면 기본틀 순서
+            self.assertFalse(any(g["core"] for g in gaps))
+        self.assertEqual(cq.gap_priority({}), (set(), 0))
+
+    def test_gap_weight_has_no_feedback_loop(self):
+        """루틴은 맨 앞 [gap] 하나만 쓴다 — 하나 쓰면 그 책이 물러나야 한다(한 과만 불어나면 안 된다)."""
+        cfg = self._cfg(books=["소화기내과", "신경과", "외과"], until=4)
+        have = {"소화기내과": 1, "신경과": 1, "외과": 2, "순환기내과": 1, "신장내과": 5}
+        picks = []
+        for _ in range(8):                                                       # 핵심 세 책이 4개씩 되기까지 3 + 3 + 2 = 8번
+            g = cq._gaps(self._notes(**have), {}, {}, cfg)[0]
+            self.assertTrue(g["core"])
+            self.assertEqual(g["have"], min(have[b] for b in ("소화기내과", "신경과", "외과") if have[b] < 4))
+            picks.append(g["book"])
+            have[g["book"]] += 1
+        self.assertEqual({b: have[b] for b in ("소화기내과", "신경과", "외과")}, {"소화기내과": 4, "신경과": 4, "외과": 4})
+        self.assertFalse([i for i in range(1, 7) if picks[i] == picks[i - 1]])    # 두 책 이상 남은 동안 같은 책이 연달아 오지 않는다
+        # 핵심 책이 모두 기준 수에 이른 뒤에는 전체 「적은 책 먼저」 — 가장 얇은 책(순환기내과 1개)이 앞에 온다
+        g = cq._gaps(self._notes(**have), {}, {}, cfg)[0]
+        self.assertEqual((g["book"], g["core"]), ("순환기내과", False))
+
+    def _build(self, concepts, events):
+        qs = {f"q.{cid}": {"topic": c.get("topic", "Nephrology"), "objective": cid} for cid, c in concepts.items()}
+        orig = (cq.load_concepts, cq.load_questions)
+        cq.load_concepts, cq.load_questions = (lambda: (concepts, [])), (lambda: qs)
+        try:
+            return cq.build(events)
+        finally:
+            cq.load_concepts, cq.load_questions = orig
+
+    def _wrongs(self, cid, n, day="2026-10-01"):
+        return [wrong(f"e.{cid}.{day}.{i}", f"q.{cid}", cid, f"{day}T0{i}:00:00Z", day) for i in range(n)]
+
+    def test_root_backfill_is_capped_at_the_top_twenty_repeat_wrongs(self):
+        self.assertEqual((cq.ROOT_BACKFILL_TOP, cq.ROOT_BACKFILL_MIN_WRONGS), (20, 2))
+        ids = [f"cn.neph.c{i:02d}.x" for i in range(25)]
+        concepts = {cid: {"id": cid, "title": cid, "topic": "Nephrology"} for cid in ids}
+        concepts["cn.neph.once.x"] = {"id": "cn.neph.once.x", "topic": "Nephrology"}
+        concepts["cn.physio.x.y"] = {"id": "cn.physio.x.y", "topic": "Physiology", "layer": "basic"}
+        e = []
+        for i, cid in enumerate(ids):
+            e += self._wrongs(cid, 3 if i >= 22 else 2)                          # 뒤의 셋(c22~c24)만 세 번 — 오답 수가 순위를 정한다
+        e += self._wrongs("cn.neph.once.x", 1)                                   # 한 번 틀린 것은 「반복 오답」이 아니다
+        e += self._wrongs("cn.physio.x.y", 5)                                    # 기초 정리본은 순위에서 뺀다
+        q = self._build(concepts, e)
+        top = [r["objective"] for r in q["root"]]
+        self.assertEqual(len(top), 20)                                           # 옛 오답 27개 목표 가운데 20개만
+        self.assertEqual(top[:3], ids[22:])                                      # 오답 수 → 우선순위 → id
+        self.assertEqual(top[3:], ids[:17])
+        self.assertTrue(all(r["backfill"] for r in q["root"]))
+        self.assertEqual([r["rank"] for r in q["root"]], list(range(1, 21)))
+        self.assertEqual(q["counts"]["root_backfill"], 20)
+        self.assertNotIn("cn.neph.once.x", top)
+        self.assertNotIn("cn.physio.x.y", top)
+        # 뿌리를 붙여도 21위가 그 자리를 채우지 않는다 — 상위 20 은 뿌리와 무관하게 뽑는다
+        for cid in top[:5]:
+            concepts[cid]["roots"] = ["cn.physio.x.y"]
+        for cid in top[5:7]:
+            concepts[cid]["roots_none"] = "지침 수치"
+        left = [r["objective"] for r in self._build(concepts, e)["root"]]
+        self.assertEqual(left, top[7:])
+        for cid in top[7:]:
+            concepts[cid]["roots_none"] = "지침 수치"
+        self.assertEqual(self._build(concepts, e)["root"], [])                   # 20개에서 끝난다 — c17~c21 은 다시 틀릴 때만
+        # 새로 틀린 목표(기준일 뒤)는 소급 표시 없이 맨 앞에 온다. c20 은 세 번째 오답으로 순위에 들어오고 20위(c16)가 밀려난다
+        del concepts[top[10]]["roots_none"]
+        del concepts[top[-1]]["roots_none"]
+        new = self._wrongs(ids[20], 1, day="2026-11-22")
+        rows = self._build(concepts, e + new)["root"]
+        self.assertEqual([(r["objective"], r["backfill"]) for r in rows], [(ids[20], False), (top[10], True)])
+
+    def test_verify_queue_counts_marks_and_orders_wrong_first(self):
+        marks = C.unverified_marks({"_body": "가 [[?x: p.1]] 나 [[y: 표 2]] 원문 미대조(†)",
+                                    "tables": [{"note": "용량은 대조 전(†) [[?z]]", "rows": [["[[?x]]"]]}],
+                                    "sections": [{"html": "[[?twice]]"}],          # _body 가 있으면 본문은 한 번만 센다
+                                    "errors": ["근거 표시 [[?e]] 가 sources 에 없다"]})
+        self.assertEqual(marks, {"claims": 3, "dagger": 2, "marks": 5, "sources": ["x", "z"]})
+        self.assertEqual(C.unverified_marks({"sections": [{"html": "<p>나 [[?k: 3장]]</p>"}], "summary": ["결론: 가 [[h: p.1]]"]})["claims"], 1)
+
+        def note(cid, n_claim, n_dag=0):
+            return {"id": cid, "title": cid, "topic": "Nephrology", "path": f"content/concepts/{cid}.md",
+                    "sections": [{"title": "판단", "deep": False, "html": " ".join(["[[?src-a]]"] * n_claim + ["†"] * n_dag)}]}
+        concepts = {c["id"]: c for c in (note("cn.neph.a.x", 1), note("cn.neph.b.x", 5), note("cn.neph.c.x", 2, 1),
+                                         note("cn.neph.d.x", 3), note("cn.neph.e.x", 7), note("cn.neph.f.x", 0))}
+        e = self._wrongs("cn.neph.a.x", 2) + self._wrongs("cn.neph.b.x", 1)       # a 가 우선순위가 높다(표시는 적다)
+        q = self._build(concepts, e)
+        self.assertEqual([v["objective"] for v in q["verify"]],
+                         ["cn.neph.a.x", "cn.neph.b.x", "cn.neph.e.x", "cn.neph.c.x", "cn.neph.d.x"])   # 오답 → 표시 수 → id
+        self.assertEqual([v["wrong"] for v in q["verify"]], [True, True, False, False, False])
+        self.assertEqual((q["counts"]["verify"], q["counts"]["verify_marks"]), (5, 19))
+        self.assertEqual(q["verify"][3]["dagger"], 1)
+        self.assertEqual(q["verify"][0]["sources"], ["src-a"])
+
+    def test_verify_lines_print_only_when_asked(self):
+        """[verify] 는 PC 세션 · Actions 전용 — 루틴이 보는 기본 출력에는 건수 한 줄만, JSON 파일에는 늘 있다."""
+        import contextlib
+        import io
+        concepts = {"cn.neph.a.x": {"id": "cn.neph.a.x", "title": "가", "topic": "Nephrology", "path": "p.md",
+                                    "sections": [{"title": "판단", "deep": False, "html": "[[?src-a]] †"}]}}
+        orig = (cq.load_concepts, cq.load_questions, cq.OUT)
+        with tempfile.TemporaryDirectory() as d:
+            ev_file = Path(d, "events.json")
+            ev_file.write_text("[]", encoding="utf-8")
+            cq.load_concepts, cq.load_questions, cq.OUT = (lambda: (concepts, [])), (lambda: {}), Path(d, "queue.json")
+            try:
+                def run(*args):
+                    buf = io.StringIO()
+                    with contextlib.redirect_stdout(buf):
+                        self.assertEqual(cq.main(["--events", str(ev_file), "--no-wrongnote", *args]), 0)
+                    return buf.getvalue()
+                plain = run("--limit", "5")
+                self.assertIn("미대조 표시 보강 대기(verify) 1건 · 표시 2개", plain)
+                self.assertNotIn("[verify]", plain)
+                self.assertIn("[verify] cn.neph.a.x", run("--verify"))
+                self.assertNotIn('"verify": [', run("--json"))
+                self.assertEqual(json.loads(run("--json"))["counts"]["verify"], 1)
+                self.assertEqual([v["objective"] for v in json.loads(run("--json", "--verify"))["verify"]], ["cn.neph.a.x"])
+                saved = json.loads(Path(d, "queue.json").read_text(encoding="utf-8"))
+                self.assertEqual([v["objective"] for v in saved["verify"]], ["cn.neph.a.x"])
+            finally:
+                cq.load_concepts, cq.load_questions, cq.OUT = orig
+
+    def test_polish_lint_warns_but_never_blocks(self):
+        import export_concepts_web as ex
+        W = C.polish_warnings
+        ok = {"_body": "## 판단 — 왜 먼저인가\n- 가나다라마바사.\n", "summary": ["결론: 다른 이야기를 한 줄로 적는다."],
+              "diagram_notes": ["1", "2", "3", "4"], "variants": [{"id": "v1"}]}
+        self.assertEqual(W(ok), [])
+        kinds = lambda m: [C.polish_kind(x) for x in W(m)]
+        # 본문 3,200자 — frontmatter 뒤의 글 전체(앞뒤 공백 · \r 은 세지 않는다)
+        self.assertEqual(kinds(dict(ok, _body="\r\n" + "가" * 3200 + "\r\n")), [])
+        self.assertEqual(kinds(dict(ok, _body="가" * 3201)), ["분량"])
+        self.assertEqual(kinds({k: v for k, v in dict(ok, summary=["가" * 9000]).items() if k != "_body"}), [])   # 본문을 못 받으면 건너뛴다
+        self.assertEqual(kinds(dict(ok, diagram_notes=list("12345"))), ["도식 설명"])
+        self.assertEqual(kinds(dict(ok, variants=[])), ["변형 없음"])
+        self.assertEqual(kinds({k: v for k, v in ok.items() if k != "variants"}), ["변형 없음"])
+        # summary 가 「## 판단」 절의 문장을 되풀이 — 머리말 · 글머리표 · 근거 표시 · 굵은 글씨는 떼고 견준다
+        sent = "정맥 베타차단제를 먼저 주어 심박수를 분당 60회 안팎으로 낮춘다"
+        dup = dict(ok, summary=[f"결론: {sent}.", "시험 단서: 찢어지는 흉통과 양팔 혈압 차이."],
+                   _body=f"## 판단 — 왜 베타차단제가 먼저인가\n- **첫 약**: {sent} [[harrison-22: 280장 p.2104]].\n- 다른 줄.\n")
+        w = W(dup)
+        self.assertEqual([C.polish_kind(x) for x in w], ["중복"])
+        self.assertIn("summary 1번째 줄", w[0])
+        self.assertEqual(kinds(dict(dup, _body=dup["_body"].replace("## 판단", "## 기전"))), [])      # 판단 절만 본다
+        self.assertEqual(kinds(dict(dup, summary=["결론: 혈관확장제는 베타차단제 뒤에만 더한다."])), [])
+        self.assertEqual(kinds(dict(dup, summary=["결론: 짧은 말."], _body="## 판단 — 왜\n- 짧은 말.\n")), [])   # 짧은 구절은 견주지 않는다
+        # 넷 모두 [WARN] — 게시 · 시험 관문이 쓰는 기준(blocking)을 통과한다
+        allw = W(dict(dup, _body=dup["_body"] + "가" * 3300, diagram_notes=list("12345"), variants=[]))
+        self.assertEqual(sorted(C.polish_kind(x) for x in allw), sorted(C.POLISH_KINDS))
+        self.assertTrue(all(x.startswith("[WARN] ") for x in allw))
+        self.assertEqual(ex.blocking([f"a.md: {x}" for x in allw]), [])
+        self.assertIsNone(C.polish_kind("a.md: [WARN] 해리슨 대조 없음 — …"))
+        # 계약 검사(validate_concept)에 실려도 오류는 늘지 않는다
+        base = {"id": "cn.neph.a.b", "title": "가 — 나", "objective": "고른다", "condition": "가", "objective_kind": "치료",
+                "version": 1, "review_status": "unreviewed", "summary": ["결론: 가."], "exams": ["kmle"],
+                "sources": [{"id": "s", "org": "o", "title": "t", "year": 2024, "checked_at": "2026-11-23", "checked": "c",
+                             "url": "https://example.org/x", "verified": "text"}]}
+        before = [x for x in C.validate_concept(dict(base, variants=[{"id": "v1", "stem": "s", "choices": ["A. a", "B. b"],
+                                                                       "answer": "A", "explanation": "e"}]))
+                  if "[WARN]" not in x]
+        after = C.validate_concept(dict(base, _body="가" * 4000, diagram_notes=list("12345")))
+        self.assertEqual([x for x in after if "[WARN]" not in x], before)
+        self.assertEqual(sorted(k for k in map(C.polish_kind, after) if k), ["도식 설명", "변형 없음", "분량"])
 
 
 class NoteParts(unittest.TestCase):

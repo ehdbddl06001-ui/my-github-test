@@ -110,9 +110,9 @@ def md_to_html(md: str) -> str:
     return sanitize(markdown.markdown(_normalize_lists(md), extensions=["tables"], output_format="html"))
 
 
-def sections(body: str) -> list[dict]:
-    """`## 제목` 단위로 나눈다. 「(심화)」로 시작하는 절은 웹에서 접힌다(PDF 는 모두 편다)."""
-    out: list[dict] = []
+def split_sections(body: str) -> list[tuple[str, str]]:
+    """본문을 `## 제목` 단위의 (제목, Markdown) 으로 나눈다 — 첫 `##` 앞의 글은 버린다."""
+    out: list[tuple[str, str]] = []
     cur_title, buf = None, []
     for ln in body.replace("\r\n", "\n").split("\n"):
         m = re.match(r"^##\s+(.+?)\s*$", ln)
@@ -124,6 +124,12 @@ def sections(body: str) -> list[dict]:
             buf.append(ln)
     if cur_title is not None:
         out.append((cur_title, "\n".join(buf)))
+    return out
+
+
+def sections(body: str) -> list[dict]:
+    """`## 제목` 단위로 나눈다. 「(심화)」로 시작하는 절은 웹에서 접힌다(PDF 는 모두 편다)."""
+    out = split_sections(body)
     res = []
     for title, md in out:
         deep = title.startswith("(심화)")
@@ -405,6 +411,7 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
                 errs.append(f"variants[{i}].flip 은 true(단서를 바꿔 답이 바뀜)·false(겉모습만 바뀌고 답은 그대로)")
     errs += root_errors(meta)
     errs += style_warnings(meta)
+    errs += polish_warnings(meta)
     return errs
 
 
@@ -446,6 +453,135 @@ def style_warnings(meta: dict[str, Any]) -> list[str]:
     elif meta.get("objective_kind") not in ("기전",):
         w.append("[WARN] 판형 2: diagram 이 없다 — 판단 목표는 도식으로 흐름을 보인다(기전 목표만 생략 가능)")
     return w
+
+
+# ── 분량·중복 린트(2026-11-23 사용자 결정) ── 모두 [WARN] 이다 — 관문(indexer --check · 코드 시험 · test_content ·
+# export_concepts_web · publish)은 「[WARN]」이 든 줄을 막지 않는다. 옛 정리본을 일부러 다시 쓰라는 뜻이 아니라
+# 새로 쓰거나 손질할 때 맞추라는 표지다.
+POLISH_BODY = 3200      # 본문 글자 수 상한. 「본문」 = frontmatter 뒤의 Markdown 전체(`## 제목` 줄 · 근거 표시 `[[…]]` · (심화) 절 포함)를
+                        # 줄 끝을 \n 으로 맞추고 앞뒤 공백을 뗀 길이. summary · 표 · 도식 같은 frontmatter 는 세지 않는다.
+                        # 로더(load_concepts)가 `_body` 로 넘길 때만 센다(사전만 받은 검사에서는 건너뛴다).
+POLISH_NOTES = 4        # diagram_notes 항목 수 상한
+POLISH_DUP = 0.7        # summary 한 문장의 글자 2개 묶음 가운데 이 비율 이상이 `## 판단` 절의 한 문장에 그대로 있으면 되풀이
+POLISH_DUP_MIN = 15     # 다듬은 길이가 이보다 짧은 문장은 견주지 않는다(짧은 구절의 우연한 겹침)
+POLISH_KINDS = ("분량", "도식 설명", "중복", "변형 없음")
+_ANY_CITE_RE = re.compile(r"\[\[[^\]]*\]\]")
+_SUMMARY_LEAD_RE = re.compile(r"^(?:결론|시험 단서|왜)\s*:\s*")
+
+
+def _norm_sentence(s: str) -> str:
+    """견줄 문장 — 근거 표시 · 글머리표 · summary 머리말(결론: …)을 떼고, 공백 · 문장부호를 지운 소문자."""
+    s = _ANY_CITE_RE.sub("", str(s))
+    s = re.sub(r"^\s*(?:[-*+]|\d+\.)\s+", "", s)
+    s = _SUMMARY_LEAD_RE.sub("", s.strip())
+    return re.sub(r"[\W_]+", "", s).lower()
+
+
+def _sentences(text: str) -> list[tuple[str, str]]:
+    """[(다듬은 문장, 원문)] — 줄바꿈과 문장 끝(. ! ?) 뒤 공백에서 나눈다."""
+    out = []
+    for ln in str(text).replace("\r\n", "\n").split("\n"):
+        for s in re.split(r"(?<=[.!?])\s+", ln):
+            n = _norm_sentence(s)
+            if n:
+                out.append((n, s.strip()))
+    return out
+
+
+def _bigrams(n: str) -> set[str]:
+    return {n[i:i + 2] for i in range(len(n) - 1)}
+
+
+def summary_repeats(meta: dict[str, Any]) -> list[tuple[int, str, float]]:
+    """summary 가 본문 `## 판단` 절의 문장을 되풀이하는 곳 — [(summary 줄 번호, 그 문장, 겹친 비율)].
+
+    기준: summary 한 문장(다듬은 길이 ≥ POLISH_DUP_MIN)의 글자 2개 묶음 가운데 POLISH_DUP 이상이
+    `## 판단 …` 절의 **한 문장**에 들어 있다. 뜻이 같은지는 보지 않는다 — 같은 글자가 되풀이되는지만 본다.
+    2026-11-23 실측(정리본 212개 · 판단 절 196개): 다듬은 문장이 글자까지 같은 것 0개 · 0.9 → 5개 · 0.8 → 20개 · 0.7 → 33개 ·
+    0.6 → 52개. 0.70~0.74 의 10문장은 읽어 보니 모두 같은 문장을 고쳐 쓴 것이었고, 0.60~0.64 의 14문장에는
+    같은 낱말만 겹치는 다른 내용이 섞여 있어 0.7 로 잡았다.
+    """
+    judge = "\n".join(md for title, md in split_sections(str(meta.get("_body", "")))
+                      if title.replace("(심화)", "").strip().startswith("판단"))
+    js = [_bigrams(n) for n, _ in _sentences(judge) if len(n) >= POLISH_DUP_MIN]
+    out: list[tuple[int, str, float]] = []
+    if not js:
+        return out
+    for i, line in enumerate(meta.get("summary") or [], 1):
+        for n, raw in _sentences(str(line)):
+            if len(n) < POLISH_DUP_MIN:
+                continue
+            b = _bigrams(n)
+            best = max(len(b & x) / len(b) for x in js)
+            if best >= POLISH_DUP:
+                out.append((i, raw, best))
+    return out
+
+
+def polish_warnings(meta: dict[str, Any]) -> list[str]:
+    """분량 · 도식 설명 · summary↔판단 중복 · 변형 없음 — 전부 [WARN](커밋 · 게시를 막지 않는다)."""
+    w: list[str] = []
+    if "_body" in meta:
+        n = len(str(meta.get("_body", "")).replace("\r\n", "\n").strip())
+        if n > POLISH_BODY:
+            w.append(f"[WARN] 분량: 본문 {n:,}자 > {POLISH_BODY:,} — 표 · 도식에 있는 것을 본문에서 다시 늘어놓지 않는다"
+                     f"(판형 2 본문은 2,500자 안팎)")
+        for i, raw, ratio in summary_repeats(meta):
+            w.append(f"[WARN] 중복: summary {i}번째 줄 「{raw[:36]}」이 본문 「## 판단」 절의 문장을 되풀이한다"
+                     f"(글자 겹침 {ratio:.0%}) — summary 는 결론 한 줄, 판단 절은 그 이유를 쓴다")
+    dn = meta.get("diagram_notes")
+    if isinstance(dn, list) and len(dn) > POLISH_NOTES:
+        w.append(f"[WARN] 도식 설명: diagram_notes {len(dn)}줄 > {POLISH_NOTES} — 도식만으로 전달되지 않는 조건 · 예외만 남기고 "
+                 f"기준 목록 · 수치는 표(tables) · criteria 로 옮긴다")
+    if not [v for v in meta.get("variants") or [] if isinstance(v, dict)]:
+        w.append("[WARN] 변형 없음: variants 가 하나도 없다 — 다시 풀어 볼 핵심 변형 문항을 1개 이상 둔다"
+                 "(오답에서 나온 정리본은 틀린 문항마다 2개)")
+    return w
+
+
+def polish_kind(err: str) -> str | None:
+    """오류 줄이 분량·중복 린트면 그 종류(POLISH_KINDS), 아니면 None — CLI 요약 · 보고용."""
+    for k in POLISH_KINDS:
+        if f"[WARN] {k}:" in err:
+            return k
+    return None
+
+
+# ── 미대조 표시(2026-11-23 — 큐 `[verify]` 가 센다) ─────────────────
+# 원고에 남는 표시는 둘이다.
+#   `[[?출처id]]` · `[[?출처id: 위치]]` — 이 주장만 원문과 대조하지 않았다(CITE_RE 의 `?`). 화면 · PDF 에서 † 가 붙는다.
+#   `†` — 원고에 손으로 적은 글자. 「원문 미대조(†)」「초록만 읽었다(†)」처럼 표 note · diagram_notes · 시험 쟁점 줄에
+#          대조하지 못한 범위(용량 · 기간 · 세부 수치 · 지침 본문)를 밝힐 때 쓴다.
+# `sources[].verified` 가 text 가 아니라서 **조판 때 붙는** † 는 원고의 표시가 아니므로 세지 않는다.
+_MARK_SKIP = {"errors", "geo", "hash", "path"}
+
+
+def _strings(v: Any, skip: set[str]) -> list[str]:
+    if isinstance(v, str):
+        return [v]
+    if isinstance(v, dict):
+        return [s for k, x in v.items() if k not in skip for s in _strings(x, skip)]
+    if isinstance(v, (list, tuple)):
+        return [s for x in v for s in _strings(x, skip)]
+    return []
+
+
+def unverified_marks(meta: dict[str, Any]) -> dict[str, Any]:
+    """{claims: `[[?…]]` 수, dagger: 손으로 적은 † 수, marks: 둘의 합, sources: `[[?…]]` 가 가리키는 출처 id 목록}.
+
+    적재된 정리본(frontmatter + `sections` 의 HTML — 근거 표시는 글자 그대로 남아 있다)이나
+    `_body` 를 붙인 frontmatter 사전 어느 쪽이든 받는다(둘 다 있으면 본문은 `_body` 로 한 번만 센다).
+    """
+    skip = set(_MARK_SKIP) | ({"sections"} if "_body" in meta else set())
+    claims = dagger = 0
+    ids: set[str] = set()
+    for s in _strings(meta, skip):
+        dagger += s.count("†")
+        for m in CITE_RE.finditer(s):
+            if m.group(1):
+                claims += 1
+                ids.add(m.group(2))
+    return {"claims": claims, "dagger": dagger, "marks": claims + dagger, "sources": sorted(ids)}
 
 
 def diagram_fit_errors(concepts: dict[str, dict]) -> list[str]:
@@ -682,4 +818,8 @@ if __name__ == "__main__":
     errs += diagram_fit_errors(cs)
     for e in errs:
         print("  ✗", e)
-    sys.exit(1 if any("[WARN]" not in e for e in errs) else 0)
+    hard = [e for e in errs if "[WARN]" not in e]
+    kinds = {k: sum(1 for e in errs if polish_kind(e) == k) for k in POLISH_KINDS}
+    print(f"오류 {len(hard)}건 · 경고 {len(errs) - len(hard)}건(그중 " + " · ".join(f"{k} {n}" for k, n in kinds.items())
+          + ") — 경고는 커밋을 막지 않는다")
+    sys.exit(1 if hard else 0)
