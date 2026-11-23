@@ -48,6 +48,16 @@ var MEDKOS_INK = (function () {
   const ERASE_SIZES = [8, 16, 30], ERASE_MIN = 6, ERASE_MAX = 44;      // 지우개 지름(종이 px) — 소 · 중 · 대 + 미세 조절
   // 형광펜 굵기(2026-11-23) — 형광펜을 고르면 막대의 색 · 굵기 칸이 형광펜 것으로 바뀐다(전에는 볼펜 칸만 보여 조절할 수 없었다)
   const HL_WIDTHS = [10, 16, 24], HLW_MIN = 6, HLW_MAX = 40, HL_QUICK = 6;
+  /* 손바닥 거르기 · 위치 안정(2026-11-23 「손이 닿으면 확대해 둔 것이 갑자기 축소된다」) — 펜슬을 쓴 적이 있는 기기에서는(펜 모드) 한 손가락 ·
+     손바닥 터치로 화면을 넘기지 않고, 넘기기 · 확대는 두 손가락으로만 한다. 두 접촉도 손바닥일 수 있다 — 접촉이 넓거나(PALM_R) · 따로따로
+     닿았거나(PAIR_MS) · 펜을 뗀 직후이거나(PALM_AFTER_PEN) · 사이 거리가 한 번에 튀면(PALM_JUMP — 눌린 손바닥은 접촉이 합쳐지고 갈라진다) 버린다.
+     손가락 사이가 ZOOM_DEAD 넘게 벌어지거나 좁아지기 전에는 넘기기로만 본다(넘기다가 배율이 조금씩 바뀌지 않게). */
+  const PALM_R = 34, PAIR_MS = 350, PALM_AFTER_PEN = 900, PALM_JUMP = 1.35, PALM_HOP = 90, ZOOM_DEAD = 0.12;
+  /* 필기감(같은 날 「펜을 늦게 따라온다 · 선이 떨리거나 각지다 · 굵기와 획 끝이 부자연스럽다」)
+     PT_GAP   받는 점 사이의 최소 간격을 **화면 px** 로 — 배율과 무관하게 같은 촘촘함(전에는 종이 0.35 px 고정이라 줄여 볼 때 떨림이 그대로 들어왔다)
+     TIP_*    덧층의 펜 끝을 거르지 않은 지금 자리까지 잇고, 예측 점이 없는 기기에서는 빠르기 × 10 ms(화면 7 px 까지)만큼 미리 그린다
+     TAPER_*  획의 들머리 · 꼬리를 가늘게(닿고 떨어지는 모양) — 「색 · 굵기 ▸ 획 끝 가늘게」로 끈다 */
+  const PT_GAP = 0.9, TIP_AHEAD_MS = 10, TIP_AHEAD_MAX = 7, TAPER_MIN = 0.55;
   const MARGIN_W = 352;                                         // 코넬 여백(정리본 오른쪽 줄노트) — 종이 820 + 352 ≈ 전체의 30 %
   const LASER_MS = 2500;                                        // 레이저 포인터가 사라지는 시간
   const EURO = [4, 0.06, 10];                                   // 떨림 보정(1-Euro): 차단 주파수 Hz · 빠르기 계수 · 빠르기 추정 차단 Hz
@@ -300,6 +310,22 @@ var MEDKOS_INK = (function () {
     for (let i = 5; i < pts.length; i += 3) if (pts[i] !== pts[2]) return false;
     return true;
   }
+  /* 획 끝 가늘게(2026-11-23) — 펜이 닿는 들머리와 떨어지는 꼬리에서 굵기를 TAPER_MIN 배까지 줄인다. 줄이는 길이는 굵기에 비례하고(3 + 굵기 × 2.5),
+     짧은 획(점 · 짧은 삐침)은 길이의 30 % 까지만 — 통째로 가늘어지지 않게. 닫힌 고리(원으로 다듬은 것)와 두 점짜리 직선은 그대로 둔다.
+     f(d) = 끝에서 d 만큼 들어온 곳의 배율. 쓰는 동안에는 들머리만 같은 식으로 그리고(taperAt), 펜을 떼면 이 함수로 다시 그린다. */
+  const taperLen = (w0) => 3 + w0 * 2.5;
+  const taperAt = (d, L) => TAPER_MIN + (1 - TAPER_MIN) * Math.pow(Math.max(0, Math.min(1, d / L)), 0.6);
+  function taperWs(pts, ws) {
+    const n = pts.length / 3;
+    if (n < 3 || !ws || ws.length !== n) return ws;
+    if (Math.hypot(pts[(n - 1) * 3] - pts[0], pts[(n - 1) * 3 + 1] - pts[1]) < 0.05) return ws;      // 닫힌 고리
+    const len = new Array(n);
+    len[0] = 0;
+    for (let i = 1; i < n; i++) len[i] = len[i - 1] + Math.hypot(pts[i * 3] - pts[i * 3 - 3], pts[i * 3 + 1] - pts[i * 3 - 2]);
+    const total = len[n - 1], L = Math.min(taperLen(ws[0]), total * 0.3);
+    if (L < 0.8) return ws;
+    return ws.map((w, i) => w * Math.min(taperAt(len[i], L), taperAt(total - len[i], L)));
+  }
   // 형광펜 자동 직선 — 거의 가로로 그은 획이면 평균 높이의 수평선 두 점으로 편다(아니면 null). 글줄에 밑줄 · 칠하기를 반듯하게.
   function straightenH(pts) {
     const n = pts.length / 3;
@@ -336,7 +362,7 @@ var MEDKOS_INK = (function () {
   }
 
   const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal, loginKey, snapOf, snapStale, changedParts, sigOf,
-                 euroNew, euroStep, curveSamples, strokeSamples, ribbon, polyTurn, evenStroke, straightenH, loopShape, histApply, COLORS, HLS, EURO };
+                 euroNew, euroStep, curveSamples, strokeSamples, ribbon, polyTurn, evenStroke, straightenH, loopShape, taperWs, histApply, COLORS, HLS, EURO };
   if (typeof document === "undefined") return core;          // node 시험 — 아래는 화면이 있을 때만
 
   /* ───────── 기기 저장소(IndexedDB · 없으면 메모리) ───────── */
@@ -501,9 +527,15 @@ var MEDKOS_INK = (function () {
              hlOnly: !!t.hlOnly,                 // 지우개 — 형광펜만 지운다
              hlStraight: t.hlStraight !== false, // 형광펜 — 거의 가로로 그으면 수평선으로 편다
              margin: !!t.margin,                 // 정리본 오른쪽 코넬 여백
+             palm: t.palm !== false,             // 손바닥 무시 — 펜슬을 쓰는 기기에서 넘기기 · 확대는 두 손가락으로만
+             pencil: !!t.pencil,                 // 이 기기에서 펜슬을 쓴 적이 있다(한 번 쓰면 켜진다)
+             taper: t.taper !== false,           // 획의 들머리 · 꼬리를 가늘게
              engine: t.engine === 1 ? 1 : 2 };   // 2 = 새 필기 엔진(기본) · 1 = 이전 엔진(기기에서 문제가 보이면 되돌리는 스위치)
   }
   const eng2 = () => UI.tool.engine !== 1;
+  // 펜 모드 — 펜슬을 쓰는 기기 + 「손바닥 무시」 켬 + 손가락 쓰기 끔. 한 손가락 · 손바닥으로는 넘기지 않는다
+  const penMode = () => UI.tool.palm && UI.tool.pencil && !UI.tool.finger;
+  const isPalmTouch = (t) => Math.max(t.radiusX || t.webkitRadiusX || 0, t.radiusY || t.webkitRadiusY || 0) > PALM_R;
   function saveTool() { try { localStorage.setItem("medkos_ink_tool", JSON.stringify(UI.tool)); } catch (e) { /* 무시 */ } }
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const g = (name) => { try { return (0, eval)("typeof " + name + " !== 'undefined' ? " + name + " : undefined"); } catch (e) { return undefined; } };
@@ -716,6 +748,8 @@ var MEDKOS_INK = (function () {
           <button data-a="cnext" class="ink-nav primary" title="학습서 목록의 다음 정리본">다음 정리본 →</button>
         </span>
         <span class="ink-st" id="inkStatus"></span>
+        <div class="ink-hint" hidden>✋ 펜슬을 쓰는 동안에는 한 손가락 · 손바닥으로 화면이 움직이지 않습니다 — <b>넘기기 · 확대는 두 손가락으로</b> 합니다.
+          「보기 ▸ 손바닥 무시」에서 끌 수 있습니다. <button data-a="hintok">확인</button></div>
         <div class="ink-pal" data-pop="pal" hidden>
           <div class="ink-pal-h">펜 색</div>
           <div class="ink-pal-r ink-grid">${COLORS.map((c) => `<button data-a="color" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="펜 색"></button>`).join("")}
@@ -723,6 +757,7 @@ var MEDKOS_INK = (function () {
           <div class="ink-pal-h">굵기 — 막대의 세 칸 가운데 고른 칸을 조절한다</div>
           <div class="ink-pal-r">${WIDTHS.map((w) => `<button data-a="w" data-w="${w}" class="ink-wd" aria-label="굵기"><i style="height:${Math.max(1.5, w * 1.6)}px"></i></button>`).join("")}</div>
           <div class="ink-pal-r"><input type="range" data-in="width" min="${W_MIN}" max="${W_MAX}" step="0.1" aria-label="굵기 미세 조절" /><span class="ink-val" data-val="width"></span></div>
+          <div class="ink-pal-r"><button data-a="taper" title="획의 들머리와 꼬리를 가늘게 — 펜이 닿고 떨어지는 모양. 끄면 처음부터 끝까지 같은 굵기">획 끝 가늘게</button></div>
           <div class="ink-pal-h">형광펜 색</div>
           <div class="ink-pal-r ink-grid">${HLS.map((c) => `<button data-a="hlc" data-c="${c}" class="ink-dot" style="--c:${c}" aria-label="형광펜 색"></button>`).join("")}</div>
           <div class="ink-pal-h">형광펜 굵기 — 막대의 세 칸 가운데 고른 칸을 조절한다</div>
@@ -745,7 +780,8 @@ var MEDKOS_INK = (function () {
             <button data-a="margin" title="정리본 오른쪽에 줄노트 여백(코넬 필기) — 질문 · 핵심어 · 내 말로 요약을 적는 칸">코넬 여백</button>
             <button data-a="more">여백 ＋</button></div>
           <div class="ink-pal-h">쓰기</div>
-          <div class="ink-pal-r"><button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">손가락 쓰기</button>
+          <div class="ink-pal-r"><button data-a="palm" title="펜슬을 쓰는 기기에서 한 손가락 · 손바닥 터치로 화면을 넘기지 않는다 — 넘기기 · 확대는 두 손가락으로만. 손이 닿아 화면이 밀리거나 배율이 바뀌는 것을 막는다">손바닥 무시</button>
+            <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">손가락 쓰기</button>
             <button data-a="cloze" title="정리본의 답 쪽(한눈에 칸 · 혼동의 기준 · 표의 내용 · 굵은 글자)을 가린다 — 떠올려 보고 톡 쳐서 하나씩 연다">암기 가림막</button>
             <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">로그인(필기 맞추기)</button></div>
         </div>
@@ -861,7 +897,9 @@ var MEDKOS_INK = (function () {
     rb.hidden = !(isC && LR && typeof LR.markRead === "function" && !(UI.st && UI.st.old));
     if (!rb.hidden) { const n = LR.readCount(UI.st.id); rb.textContent = n ? `정독 ${n}회 · 확인` : "정독 확인"; }
     UI.el.classList.toggle("eng1", !eng2());                        // 이전 엔진 — 형광펜 층을 쓰지 않는다
-    UI.layer.style.touchAction = t.finger ? "none" : "pan-x pan-y";
+    // 펜 모드에서는 브라우저가 한 손가락 · 손바닥으로 화면을 넘기지 못하게 한다(넘기기는 bindZoom 의 두 손가락 제스처가 한다)
+    UI.layer.style.touchAction = t.finger || penMode() ? "none" : "pan-x pan-y";
+    on("[data-a=palm]", t.palm); on("[data-a=taper]", t.taper);
     const st = UI.st || {}, L = g("LEARN"), fb = UI.el.querySelector("[data-a=flag]"), nb = UI.el.querySelector("[data-a=next]");
     const canFlag = st.kind === "q" && !st.solve && st.q && !st.q.isVariant && L && typeof L.setFlag === "function";
     fb.hidden = !canFlag; nb.hidden = !(st.quiz && !st.solve);
@@ -877,6 +915,7 @@ var MEDKOS_INK = (function () {
     if (!b) return;
     const a = b.getAttribute("data-a"), t = UI.tool;
     if (a === "close") return close();
+    if (a === "hintok") { b.parentNode.hidden = true; return; }
     if (a === "pal" || a === "menu") {
       const me = a === "pal" ? UI.pal : UI.menu, other = a === "pal" ? UI.menu : UI.pal;
       other.hidden = true; me.hidden = !me.hidden;
@@ -907,6 +946,13 @@ var MEDKOS_INK = (function () {
     }
     else if (a === "line") t.line = !t.line;
     else if (a === "finger") t.finger = !t.finger;
+    else if (a === "palm") { t.palm = !t.palm; status(t.palm ? "손바닥 무시 — 넘기기 · 확대는 두 손가락으로" : "한 손가락으로도 넘깁니다"); }
+    else if (a === "taper") {                                      // 획의 모양이 바뀐다 — 있는 획을 전부 다시 그린다
+      t.taper = !t.taper;
+      saveTool(); paintBar();
+      if (UI.rec) { rebuildRuntime(); layout(true); }
+      return;
+    }
     else if (a === "undo") undo();
     else if (a === "redo") redo();
     else if (a === "margin") { t.margin = !t.margin; UI.zoom = 1; saveTool(); closePalette(); renderSheet(false); layout(true); return; }
@@ -1205,7 +1251,9 @@ var MEDKOS_INK = (function () {
      그 곡선을 화면 1.6 화소 길이로 잘게 나눠 굵기를 조금씩 바꿔 가며 그린다(구슬 꿴 듯한 마디가 없다).
      굵기 = 기본은 **고른 굵기**(직선으로 그을 때와 같은 선 — 써 본 뒤 「굵기가 달라지는 것보다 이게 낫다」). 「힘 · 빠르기에 따라」를 고르면
      압력(펜슬) 또는 빠르기(손가락 · 마우스 — 빠르면 가늘다)를 앞 점과 섞은 값. 쓰는 동안과 다시 그릴 때가 같은 식이다. */
-  const penW = (w, p) => w * (0.4 + 1.2 * p);
+  // 굵기 곡선(2026-11-23 「굵기 변화가 부자연스럽다」) — 전에는 0.4배 ~ 1.6배(네 배 차이)라 힘을 조금만 달리해도 굵기가 출렁였다.
+  // 이제 0.6배 ~ 1.3배이고 약한 힘 쪽이 완만하다. 힘 0.5(볼펜 · 직선 · 손가락)는 전과 같이 정확히 1배다.
+  const penW = (w, p) => w * (0.6 + 0.6964 * Math.pow(Math.max(0, p), 0.8));
   function widthsOf(pts, w) {
     const n = pts.length / 3, ws = new Array(n);
     for (let i = 0; i < n; i++) ws[i] = i ? ws[i - 1] * 0.55 + penW(w, pts[i * 3 + 2]) * 0.45 : penW(w, pts[2]);
@@ -1276,7 +1324,10 @@ var MEDKOS_INK = (function () {
       x0 = Math.min(x0, pts[i]); x1 = Math.max(x1, pts[i]); y0 = Math.min(y0, pts[i + 1]); y1 = Math.max(y1, pts[i + 1]);
     }
     const w = s.w || WIDTHS[2], t = s.t ? 1 : 0;
-    return { id: sid, c: s.c || COLORS[0], w, t, b: s.b || "p", pts, x0, x1, y0, y1, ws: t ? null : widthsOf(pts, w), even: !t && evenStroke(pts) };
+    // 「획 끝 가늘게」가 켜져 있으면 들머리 · 꼬리의 굵기가 달라지므로 고른 굵기 획도 띠로 그린다(두 점짜리 직선 · 원은 그대로 고르다)
+    const ws = t ? null : (UI.tool.taper ? taperWs(pts, widthsOf(pts, w)) : widthsOf(pts, w));
+    const even = !t && evenStroke(pts) && ws.every((x) => Math.abs(x - ws[0]) < 1e-6);
+    return { id: sid, c: s.c || COLORS[0], w, t, b: s.b || "p", pts, x0, x1, y0, y1, ws, even };
   }
   // 획 하나를 그릴 준비 — 형광펜 층 · 코넬 여백이 필요한지도 여기서 안다
   function addRt(sid, s) {
@@ -1369,10 +1420,14 @@ var MEDKOS_INK = (function () {
     // 펜슬이 화면을 끌지 않게(iPadOS 는 펜슬로도 스크롤한다) · 쓰는 동안 손바닥이 화면을 밀지 않게
     L.addEventListener("touchstart", (e) => {
       const stylus = [].some.call(e.changedTouches, (t) => t.touchType === "stylus");
+      if ([].some.call(e.changedTouches, isPalmTouch)) UI.bigTouch = Date.now();      // 넓은 접촉(손바닥) — 뒤따르는 톡을 누름으로 치지 않는다
       if (stylus || UI.tool.finger || UI.act || Date.now() - UI.lastPen < 500) e.preventDefault();
     }, { passive: false });
+    // 쓰는 동안의 굵기 — 「획 끝 가늘게」가 켜져 있으면 들머리(a.tp 길이)에서 가늘게 시작한다. 꼬리는 펜을 뗀 뒤 다시 그릴 때 가늘어진다
+    const liveW = (a, w, d) => (a.tp ? w * taperAt(d, a.tp) : w);
     L.addEventListener("pointerdown", (e) => {
       closePalette();
+      if (UI.stopGlide) UI.stopGlide();                           // 넘기다 미끄러지던 화면을 멈추고 쓴다
       if (e.pointerType === "touch" && !UI.tool.finger) return;
       if (e.pointerType === "mouse" && e.button !== 0) return;
       if (UI.act) {                                              // 손가락 쓰기 중 둘째 손가락 → 쓰던 획을 버리고 넘기기로
@@ -1384,14 +1439,23 @@ var MEDKOS_INK = (function () {
       UI.rc = null;                                              // 획을 시작할 때 자리 값을 한 번 잰다 — 쓰는 동안에는 다시 재지 않는다
       const p = pt(e), b = blockAt(p[0], p[1]), o = org(b), st = liveStyle();
       const pr = !UI.tool.even && e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5;
+      const w0 = penW(st.w, pr), tp = UI.tool.taper && !st.t && UI.tool.kind === "pen" && !UI.tool.line ? taperLen(w0) : 0;
       UI.act = { id: e.pointerId, type: e.pointerType, b, ox: o.x, oy: o.y, t0: Date.now(), lt: e.timeStamp || 0, cx: e.clientX, cy: e.clientY, moved: false,
-                 st, pts: [p[0] - o.x, p[1] - o.y, pr], ws: [penW(st.w, pr)], mx: p[0], my: p[1], mw: penW(st.w, pr),
+                 st, pts: [p[0] - o.x, p[1] - o.y, pr], ws: [w0], mx: p[0], my: p[1], mw: tp ? w0 * TAPER_MIN : w0,
+                 tp, tl: [0],                                    // 들머리를 가늘게 그릴 길이(0 = 안 함) · 점마다 지금까지 간 길이
+                 gap: Math.max(0.12, PT_GAP / measure().s),      // 받는 점 사이의 최소 간격(종이 px) — 화면 0.9 px
                  erase: UI.tool.kind === "erase", laser: UI.tool.kind === "laser", line: !!UI.tool.line, travel: 0, hx: p[0], hy: p[1], hold: 0,
                  // 떨림 보정(1-Euro) — 화면 px 로 건다. 값은 EURO(차단 4 Hz + 빠르기 × 0.06 · 빠르기 추정 10 Hz). 모의 필기(240 Hz)에서
                  // ±0.5 px 떨림 → 0.25 px, 획 시작 지연 2 px, ㄱ 꺾임 오차 1 px. 빠르기 추정을 흔한 기본값 1 Hz 로 두면 획 시작이 6 px 늦는다.
                  f: eng2() ? euroNew(EURO[0], EURO[1], EURO[2]) : null, pred: null };
       if (UI.act.f) euroStep(UI.act.f, e.clientX, e.clientY, e.timeStamp || 0);
-      if (e.pointerType === "pen") UI.lastPen = Date.now();
+      if (e.pointerType === "pen") {
+        UI.lastPen = Date.now();
+        if (!UI.tool.pencil) {                                     // 이 기기에서 펜슬을 처음 썼다 → 펜 모드(한 손가락 · 손바닥으로는 넘기지 않는다)
+          UI.tool.pencil = true; saveTool(); paintBar();
+          if (penMode()) UI.el.querySelector(".ink-hint").hidden = false;      // 한 번만 알린다 — 넘기는 방법이 바뀌었다
+        }
+      }
       if (UI.act.erase) { eraseAt(p); drawEraser(p); }
       else if (UI.act.laser) { UI.act.line = false; UI.act.trail = { pts: [p[0], p[1]], end: 0 }; UI.laser.push(UI.act.trail); laserLoop(); }
     });
@@ -1411,14 +1475,15 @@ var MEDKOS_INK = (function () {
         if (a.line) { a.ex = p[0] - a.ox; a.ey = p[1] - a.oy; return; }
         const n = a.pts.length, lx = a.pts[n - 3], ly = a.pts[n - 2], x = p[0] - a.ox, y = p[1] - a.oy;
         const d = Math.hypot(x - lx, y - ly);
-        if (d < 0.35) return;
+        if (d < a.gap) return;
         const pr = pressureOf(ev, a, x, y);
         a.lt = ev.timeStamp || a.lt; a.travel += d;
         a.pts.push(x, y, pr);
+        a.tl.push(a.travel);
         a.ws.push(a.ws[a.ws.length - 1] * 0.55 + penW(a.st.w, pr) * 0.45);
         const k = a.pts.length / 3;
         if (!a.st.t && k >= 3) {                                   // 가운데 → 가운데, 앞 점이 당김점
-          const mx = (lx + x) / 2 + a.ox, my = (ly + y) / 2 + a.oy, mw = (a.ws[k - 2] + a.ws[k - 1]) / 2;
+          const mx = (lx + x) / 2 + a.ox, my = (ly + y) / 2 + a.oy, mw = liveW(a, (a.ws[k - 2] + a.ws[k - 1]) / 2, (a.tl[k - 2] + a.tl[k - 1]) / 2);
           inkPiece(a.st, a.mx, a.my, lx + a.ox, ly + a.oy, mx, my, a.mw, mw);
           a.mx = mx; a.my = my; a.mw = mw;
         }
@@ -1430,10 +1495,17 @@ var MEDKOS_INK = (function () {
       });
       if (a.laser) return;                                         // 레이저는 제 그리기 고리(laserLoop)가 그린다
       // 예측 점(iPadOS Safari 등 지원하는 곳) — 펜 끝을 조금 앞서 그려 화면이 펜을 따라오는 것처럼 보이게 한다. 다음 입력 때 지워진다.
+      // 「펜을 늦게 따라온다」(2026-11-23) — 조각에 굳히는 선은 떨림 보정을 거쳐 펜보다 조금 뒤에 있다. 덧층의 펜 끝은 **거르지 않은 지금 자리**(a.tip)
+      // 까지 잇고, 그 앞은 예측 점으로 — 예측 점을 주지 않는 기기에서는 빠르기 × 10 ms 만큼만 앞을 그린다. 덧층은 다음 입력 때 지워지므로 떨림이 남지 않는다.
       a.pred = null;
-      if (a.f && !a.erase && !a.line && typeof e.getPredictedEvents === "function") {
+      a.tip = a.f && !a.erase && !a.line && !a.shape ? pt(e) : null;
+      if (a.tip && typeof e.getPredictedEvents === "function") {
         const pv = e.getPredictedEvents();
         if (pv && pv.length) a.pred = pt(pv[pv.length - 1]);
+      }
+      if (a.tip && !a.pred) {
+        const v = Math.hypot(a.f.vx, a.f.vy), ahead = Math.min(TIP_AHEAD_MAX, v * TIP_AHEAD_MS / 1000), s = measure().s;
+        if (v > 40 && ahead > 0.5) a.pred = [a.tip[0] + a.f.vx / v * ahead / s, a.tip[1] + a.f.vy / v * ahead / s];
       }
       if (a.erase) drawEraser(pt(e)); else drawLive(a);
       if (e.pointerType === "pen") UI.lastPen = Date.now();
@@ -1462,12 +1534,14 @@ var MEDKOS_INK = (function () {
       }
       if (a.f && e.type === "pointerup") {                        // 떨림 보정은 펜을 조금 뒤따른다 — 뗀 자리의 진짜 점으로 획의 끝을 맞춘다
         const q = pt(e), n = a.pts.length, x = q[0] - a.ox, y = q[1] - a.oy, lx = a.pts[n - 3], ly = a.pts[n - 2];
-        if (Math.hypot(x - lx, y - ly) >= 0.35) {
+        if (Math.hypot(x - lx, y - ly) >= a.gap * 0.5) {
+          a.travel += Math.hypot(x - lx, y - ly);
           a.pts.push(x, y, a.pts[n - 1]);
+          a.tl.push(a.travel);
           a.ws.push(a.ws[a.ws.length - 1]);
           const kk = a.pts.length / 3;
           if (!a.st.t && kk >= 3) {
-            const mx = (lx + x) / 2 + a.ox, my = (ly + y) / 2 + a.oy, mw = (a.ws[kk - 2] + a.ws[kk - 1]) / 2;
+            const mx = (lx + x) / 2 + a.ox, my = (ly + y) / 2 + a.oy, mw = liveW(a, (a.ws[kk - 2] + a.ws[kk - 1]) / 2, (a.tl[kk - 2] + a.tl[kk - 1]) / 2);
             inkPiece(a.st, a.mx, a.my, lx + a.ox, ly + a.oy, mx, my, a.mw, mw);
             a.mx = mx; a.my = my; a.mw = mw;
           }
@@ -1481,14 +1555,17 @@ var MEDKOS_INK = (function () {
       if (a.st.t) return commitStroke(a, true);                   // 형광펜은 덧층에만 그렸다 → 조각에 옮겨 그린다
       if (k === 1) return commitStroke(a, true);
       const lx = a.pts[(k - 1) * 3] + a.ox, ly = a.pts[(k - 1) * 3 + 1] + a.oy;
-      inkPiece(a.st, a.mx, a.my, (a.mx + lx) / 2, (a.my + ly) / 2, lx, ly, a.mw, k === 2 ? a.ws[1] : a.ws[k - 1]);
-      commitStroke(a, false);                                     // 쓰는 동안 그린 것이 곧 마지막 모양 — 다시 그리지 않는다
+      inkPiece(a.st, a.mx, a.my, (a.mx + lx) / 2, (a.my + ly) / 2, lx, ly, a.mw, liveW(a, k === 2 ? a.ws[1] : a.ws[k - 1], a.travel));
+      // 고른 굵기로 쓴 획은 쓰는 동안 그린 것이 곧 마지막 모양이라 다시 그리지 않는다. 「획 끝 가늘게」는 꼬리가 펜을 뗀 뒤에야 정해지므로 그 획만 다시 그린다.
+      commitStroke(a, !!a.tp);
     };
     L.addEventListener("pointerleave", () => { if (!UI.act) clearLive(); });
     L.addEventListener("pointerup", end);
     L.addEventListener("pointercancel", end);
     L.addEventListener("click", (e) => {                         // 손가락으로 톡 — 층이 가로채므로 아래 것을 대신 누른다
       if (Date.now() - (UI.tapAt || 0) < 500) return;
+      // 펜 모드 — 펜을 쓰는 중 · 쓴 직후의 접촉과 넓은 접촉은 손바닥이다(퀴즈 보기 · 가림막이 저절로 눌리지 않게)
+      if (penMode() && (UI.act || Date.now() - UI.lastPen < 1200 || Date.now() - (UI.bigTouch || 0) < 800)) return;
       L.style.pointerEvents = "none";
       const under = document.elementFromPoint(e.clientX, e.clientY);
       L.style.pointerEvents = "";
@@ -1535,20 +1612,54 @@ var MEDKOS_INK = (function () {
     // 펜을 쓰는 중 · 쓴 직후(손바닥)에는 아래 손바닥 거름에 걸려 시작도 하지 않는다.
     let tap3 = null;
     const TAP_MS = 300;
+    // 제스처를 끝낸다(확대로 늘여 둔 것을 풀고, 브라우저 넘기기 잠금을 푼다)
+    const unpinch = () => {
+      if (gz) cancelAnimationFrame(gz.raf);
+      gz = UI.pinch = null;
+      UI.fit.style.transform = ""; UI.fit.style.transformOrigin = "";
+      sc.classList.remove("pinching");
+    };
+    // 두 손가락으로 넘기다 뗐을 때 조금 더 미끄러진다(브라우저의 넘기기를 쓰지 않으므로 직접 한다). 다음 터치 · 펜에서 멈춘다.
+    let first = 0, glide = 0;
+    const stopGlide = () => { cancelAnimationFrame(glide); glide = 0; };
+    UI.stopGlide = stopGlide;
+    const glideFrom = (vx, vy) => {
+      let last = performance.now();
+      const step = (now) => {
+        const dt = Math.min(40, now - last), f = Math.pow(0.95, dt / 16);
+        last = now;
+        sc.scrollLeft -= vx * dt; sc.scrollTop -= vy * dt;
+        vx *= f; vy *= f;
+        glide = Math.hypot(vx, vy) > 0.03 ? requestAnimationFrame(step) : 0;
+      };
+      if (Math.hypot(vx, vy) > 0.25) glide = requestAnimationFrame(step);
+    };
     sc.addEventListener("touchstart", (e) => {
       if (!UI.rec) return;
-      const palm = [].some.call(e.touches, (t) => t.touchType === "stylus") || (UI.act && UI.act.type === "pen") || Date.now() - UI.lastPen < 700;
+      stopGlide();
+      if (e.touches.length === 1) first = Date.now();
+      // 손바닥인가 — 펜이 닿아 있다 · 펜을 뗀 직후다 · 접촉이 넓다
+      const pen = [].some.call(e.touches, (t) => t.touchType === "stylus") || (UI.act && UI.act.type === "pen");
+      const palm = pen || Date.now() - UI.lastPen < (penMode() ? PALM_AFTER_PEN : 700) || [].some.call(e.touches, isPalmTouch);
       if (e.touches.length === 3 && !palm) {                      // 셋째 손가락 — 두 손가락 확대는 없던 일로 하고 세 손가락 톡을 기다린다
-        if (gz) { cancelAnimationFrame(gz.raf); gz = UI.pinch = null; UI.fit.style.transform = ""; UI.fit.style.transformOrigin = ""; sc.classList.remove("pinching"); }
+        if (gz) unpinch();
         tap3 = { t0: Date.now(), x: e.touches[0].clientX, y: e.touches[0].clientY };
         if (e.cancelable) e.preventDefault();
         return;
       }
       if (e.touches.length > 3) tap3 = null;
+      if (gz && e.touches.length > 2) {                           // 제스처 도중에 접촉이 더 닿았다(손바닥) — 버리고 넘긴 것도 되돌린다
+        sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;
+        unpinch();
+        return;
+      }
       if (e.touches.length !== 2 || gz) return;
       if (palm) return;
+      // 펜 모드 — 두 손가락은 거의 함께 닿는다. 한 접촉이 먼저 닿아 있었으면 그것은 얹어 둔 손바닥이다
+      if (penMode() && e.changedTouches.length < 2 && Date.now() - first > PAIR_MS) return;
       const m = two(e), fr = UI.fit.getBoundingClientRect();
-      gz = UI.pinch = { d0: m.d, z0: UI.zoom, lx: (m.x - fr.left) / UI.s, ly: (m.y - fr.top) / UI.s, x0: m.x, y0: m.y, x: m.x, y: m.y, k: 1, t0: Date.now(), raf: 0 };
+      gz = UI.pinch = { d0: m.d, pd: m.d, z0: UI.zoom, lx: (m.x - fr.left) / UI.s, ly: (m.y - fr.top) / UI.s, x0: m.x, y0: m.y, x: m.x, y: m.y, k: 1,
+                        t0: Date.now(), raf: 0, zoom: false, moved: 0, vx: 0, vy: 0, vt: e.timeStamp || 0, sl: sc.scrollLeft, st: sc.scrollTop };
       UI.fit.style.transformOrigin = (m.x - fr.left) + "px " + (m.y - fr.top) + "px";
       // 버벅임 고치기(2026-11-23) — ① 두 손가락을 대는 동안 브라우저의 넘기기를 잠근다(잠그지 않으면 브라우저가 밀고 우리도 밀어 종이가 두 번 움직인다)
       // ② 종이를 한 장으로 굳혀(will-change) 늘이기만 한다 — 글자를 매 프레임 다시 그리지 않는다. 손을 떼면 풀고 선명하게 다시 그린다.
@@ -1559,10 +1670,31 @@ var MEDKOS_INK = (function () {
       if (!gz || e.touches.length < 2) return;
       if (e.cancelable) e.preventDefault();
       const m = two(e);
-      // 1.5 % 안의 떨림은 확대로 치지 않는다 — 두 손가락으로 넘기기만 할 때 종이가 울렁이지 않게
-      let k = Math.max(ZMIN / gz.z0, Math.min(ZMAX / gz.z0, m.d / gz.d0));
-      if (Math.abs(k - 1) < 0.015) k = 1;
-      gz.k = k; gz.x = m.x; gz.y = m.y;
+      // 손바닥 — 두 접촉 사이의 거리나 가운데가 한 번에 튀거나(눌린 손바닥은 접촉이 합쳐지고 갈라진다) 접촉이 넓어지면 이 제스처를 버린다.
+      // 배율은 손대지 않고, 넘긴 것도 시작할 때의 자리로 되돌린다 — 손이 닿았다고 화면이 달라지지 않는다.
+      const jump = Math.abs(m.d - gz.pd) > 40 && (m.d / gz.pd > PALM_JUMP || gz.pd / m.d > PALM_JUMP);
+      if (jump || Math.hypot(m.x - gz.x, m.y - gz.y) > PALM_HOP || [].some.call(e.touches, isPalmTouch)) {
+        sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;
+        unpinch();
+        return;
+      }
+      const dx = m.x - gz.x, dy = m.y - gz.y;
+      gz.pd = m.d; gz.x = m.x; gz.y = m.y;
+      // 넘기기인가 확대인가 — 손가락 사이가 12 % 넘게 달라지기 전에는 넘기기로만 본다(넘기다가 배율이 조금씩 바뀌지 않게).
+      // 넘어서면 그 자리를 새 기준으로 삼아 확대로 넘어간다(배율이 튀지 않는다).
+      if (!gz.zoom && Math.abs(m.d / gz.d0 - 1) > ZOOM_DEAD) {
+        const fr = UI.fit.getBoundingClientRect();
+        gz.zoom = true; gz.d0 = m.d; gz.x0 = m.x; gz.y0 = m.y; gz.lx = (m.x - fr.left) / UI.s; gz.ly = (m.y - fr.top) / UI.s;
+        UI.fit.style.transformOrigin = (m.x - fr.left) + "px " + (m.y - fr.top) + "px";
+      }
+      if (!gz.zoom) {                                              // 넘기기 — 종이를 다시 짜지 않고 그 자리에서 바로 옮긴다
+        sc.scrollLeft -= dx; sc.scrollTop -= dy;
+        const dt = Math.max(1, (e.timeStamp || 0) - gz.vt);
+        gz.vx = gz.vx * 0.6 + (dx / dt) * 0.4; gz.vy = gz.vy * 0.6 + (dy / dt) * 0.4; gz.vt = e.timeStamp || 0;
+        gz.moved += Math.hypot(dx, dy);
+        return;
+      }
+      gz.k = Math.max(ZMIN / gz.z0, Math.min(ZMAX / gz.z0, m.d / gz.d0));
       if (gz.raf) return;                                          // 화면 한 장에 한 번만 옮긴다(입력은 그보다 자주 온다)
       const p = gz;
       p.raf = requestAnimationFrame(() => {
@@ -1580,14 +1712,18 @@ var MEDKOS_INK = (function () {
       }
       if (!gz || e.touches.length >= 2) return;
       const p = gz;
-      cancelAnimationFrame(p.raf);
-      gz = UI.pinch = null;
-      UI.fit.style.transform = ""; UI.fit.style.transformOrigin = "";
-      sc.classList.remove("pinching");
+      unpinch();
       // 두 손가락으로 톡 — 벌리지도 끌지도 않고 곧 뗐으면 확대가 아니라 되돌리기
-      if (e.type === "touchend" && Date.now() - p.t0 < TAP_MS && Math.abs(p.k - 1) < 0.04 && Math.hypot(p.x - p.x0, p.y - p.y0) < 10) { ensureTiles(); undo(); status("되돌리기"); return; }
-      // 배율이 그대로면(두 손가락으로 넘기기만 했다) 종이를 다시 짜지 않고 넘긴 만큼만 옮긴다 — 전에는 넘길 때마다 조각을 전부 다시 그려 멈칫했다
-      if (p.k === 1) {
+      if (e.type === "touchend" && Date.now() - p.t0 < TAP_MS && !p.zoom && p.moved < 10) { ensureTiles(); undo(); status("되돌리기"); return; }
+      // 넘기기만 했다 — 이미 옮겨 두었으니 종이를 다시 짜지 않는다(전에는 넘길 때마다 조각을 전부 다시 그려 멈칫했다). 떼는 빠르기로 조금 더 미끄러진다.
+      if (!p.zoom) {
+        UI.rc = null;
+        ensureTiles();
+        if (e.type === "touchend") glideFrom(p.vx, p.vy);
+        return;
+      }
+      // 확대로 넘어갔지만 배율이 거의 그대로면 옮긴 만큼만 넘긴다
+      if (Math.abs(p.k - 1) < 0.02) {
         sc.scrollLeft -= p.x - p.x0; sc.scrollTop -= p.y - p.y0;
         UI.rc = null;
         return ensureTiles();
@@ -1697,13 +1833,16 @@ var MEDKOS_INK = (function () {
         tipRect(x0 + a.ox, y0 + a.oy, x1 + a.ox, y1 + a.oy, st.w);
       }
     } else {                                                      // 펜 끝 — 마지막 가운데 점에서 지금 점까지(다음 점이 오면 조각에 제대로 그려진다)
-      const n = a.pts.length, tx = a.pts[n - 3] + a.ox, ty = a.pts[n - 2] + a.oy, w = a.ws[a.ws.length - 1];
+      const n = a.pts.length, tx = a.pts[n - 3] + a.ox, ty = a.pts[n - 2] + a.oy;
+      const w = a.tp ? a.ws[a.ws.length - 1] * taperAt(a.travel, a.tp) : a.ws[a.ws.length - 1];
       ctx.globalAlpha = 1; ctx.lineCap = "round"; ctx.lineWidth = w;
       ctx.beginPath(); ctx.moveTo(a.mx, a.my); ctx.lineTo(tx, ty);
+      if (a.tip) ctx.lineTo(a.tip[0], a.tip[1]);                 // 거르지 않은 지금 펜 자리까지 — 선이 펜 끝에 붙어 보인다
       if (a.pred) ctx.lineTo(a.pred[0], a.pred[1]);              // 예측 점까지 미리 — 다음 입력 때 이 네모만 지우고 진짜 점으로 다시 그린다
       ctx.stroke();
       tipRect(Math.min(a.mx, tx), Math.min(a.my, ty), Math.max(a.mx, tx), Math.max(a.my, ty), w);
-      if (a.pred) tipRect(tx, ty, a.pred[0], a.pred[1], w);
+      if (a.tip) tipRect(tx, ty, a.tip[0], a.tip[1], w);
+      if (a.pred) tipRect(a.tip ? a.tip[0] : tx, a.tip ? a.tip[1] : ty, a.pred[0], a.pred[1], w);
     }
     ctx.restore();
   }
