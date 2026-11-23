@@ -52,7 +52,11 @@ var MEDKOS_INK = (function () {
      손바닥 터치로 화면을 넘기지 않고, 넘기기 · 확대는 두 손가락으로만 한다. 두 접촉도 손바닥일 수 있다 — 접촉이 넓거나(PALM_R) · 따로따로
      닿았거나(PAIR_MS) · 펜을 뗀 직후이거나(PALM_AFTER_PEN) · 사이 거리가 한 번에 튀면(PALM_JUMP — 눌린 손바닥은 접촉이 합쳐지고 갈라진다) 버린다.
      손가락 사이가 ZOOM_DEAD 넘게 벌어지거나 좁아지기 전에는 넘기기로만 본다(넘기다가 배율이 조금씩 바뀌지 않게). */
-  const PALM_R = 34, PAIR_MS = 350, PALM_AFTER_PEN = 900, PALM_JUMP = 1.35, PALM_HOP = 90, ZOOM_DEAD = 0.12;
+  /* 2차(같은 날 「위아래 드래그가 아예 안 된다 — 필기를 안 하는 동안에는 넘기고 확대할 수 있어야」): ① 접촉 넓이(반지름)로 손바닥을 가르던 것을 뺐다
+     (기기마다 값이 달라 손가락까지 걸렀을 수 있고, 기기에서 확인하지 못한 채 넣었다). ② 펜을 쓰지 않을 때(뗀 지 PALM_AFTER_PEN 뒤)는 **한 손가락으로
+     넘긴다**. 그 손이 얹은 손바닥이었으면 펜을 대는 순간 넘긴 것을 되돌린다(UI.dropGesture). PAN_SLOP 넘게 움직여야 넘기기가 시작되고,
+     PAN_UNDO = 펜을 대기 직전에 끝난 작은 넘김도 되돌리는 범위 [px, ms]. */
+  const PAIR_MS = 350, PALM_AFTER_PEN = 900, PALM_JUMP = 1.35, PALM_HOP = 90, ZOOM_DEAD = 0.12, PAN_SLOP = 6, PAN_UNDO = [120, 700];
   /* 필기감(같은 날 「펜을 늦게 따라온다 · 선이 떨리거나 각지다 · 굵기와 획 끝이 부자연스럽다」)
      PT_GAP   받는 점 사이의 최소 간격을 **화면 px** 로 — 배율과 무관하게 같은 촘촘함(전에는 종이 0.35 px 고정이라 줄여 볼 때 떨림이 그대로 들어왔다)
      TIP_*    덧층의 펜 끝을 거르지 않은 지금 자리까지 잇고, 예측 점이 없는 기기에서는 빠르기 × 10 ms(화면 7 px 까지)만큼 미리 그린다
@@ -527,15 +531,14 @@ var MEDKOS_INK = (function () {
              hlOnly: !!t.hlOnly,                 // 지우개 — 형광펜만 지운다
              hlStraight: t.hlStraight !== false, // 형광펜 — 거의 가로로 그으면 수평선으로 편다
              margin: !!t.margin,                 // 정리본 오른쪽 코넬 여백
-             palm: t.palm !== false,             // 손바닥 무시 — 펜슬을 쓰는 기기에서 넘기기 · 확대는 두 손가락으로만
+             palm: t.palm !== false,             // 손바닥 무시 — 펜슬로 쓰는 동안과 쓴 직후에는 손 터치로 넘기거나 확대하지 않는다
              pencil: !!t.pencil,                 // 이 기기에서 펜슬을 쓴 적이 있다(한 번 쓰면 켜진다)
              taper: t.taper !== false,           // 획의 들머리 · 꼬리를 가늘게
              engine: t.engine === 1 ? 1 : 2 };   // 2 = 새 필기 엔진(기본) · 1 = 이전 엔진(기기에서 문제가 보이면 되돌리는 스위치)
   }
   const eng2 = () => UI.tool.engine !== 1;
-  // 펜 모드 — 펜슬을 쓰는 기기 + 「손바닥 무시」 켬 + 손가락 쓰기 끔. 한 손가락 · 손바닥으로는 넘기지 않는다
+  // 펜 모드 — 펜슬을 쓰는 기기 + 「손바닥 무시」 켬 + 손가락 쓰기 끔. 넘기기는 브라우저가 아니라 bindZoom 이 한다(되돌릴 수 있게)
   const penMode = () => UI.tool.palm && UI.tool.pencil && !UI.tool.finger;
-  const isPalmTouch = (t) => Math.max(t.radiusX || t.webkitRadiusX || 0, t.radiusY || t.webkitRadiusY || 0) > PALM_R;
   function saveTool() { try { localStorage.setItem("medkos_ink_tool", JSON.stringify(UI.tool)); } catch (e) { /* 무시 */ } }
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const g = (name) => { try { return (0, eval)("typeof " + name + " !== 'undefined' ? " + name + " : undefined"); } catch (e) { return undefined; } };
@@ -748,7 +751,7 @@ var MEDKOS_INK = (function () {
           <button data-a="cnext" class="ink-nav primary" title="학습서 목록의 다음 정리본">다음 정리본 →</button>
         </span>
         <span class="ink-st" id="inkStatus"></span>
-        <div class="ink-hint" hidden>✋ 펜슬을 쓰는 동안에는 한 손가락 · 손바닥으로 화면이 움직이지 않습니다 — <b>넘기기 · 확대는 두 손가락으로</b> 합니다.
+        <div class="ink-hint" hidden>✋ 펜슬로 쓰는 동안에는 손이 닿아도 화면이 움직이거나 배율이 바뀌지 않습니다 — <b>쓰지 않을 때는 손가락으로 넘기고, 두 손가락으로 확대</b>합니다.
           「보기 ▸ 손바닥 무시」에서 끌 수 있습니다. <button data-a="hintok">확인</button></div>
         <div class="ink-pal" data-pop="pal" hidden>
           <div class="ink-pal-h">펜 색</div>
@@ -780,7 +783,7 @@ var MEDKOS_INK = (function () {
             <button data-a="margin" title="정리본 오른쪽에 줄노트 여백(코넬 필기) — 질문 · 핵심어 · 내 말로 요약을 적는 칸">코넬 여백</button>
             <button data-a="more">여백 ＋</button></div>
           <div class="ink-pal-h">쓰기</div>
-          <div class="ink-pal-r"><button data-a="palm" title="펜슬을 쓰는 기기에서 한 손가락 · 손바닥 터치로 화면을 넘기지 않는다 — 넘기기 · 확대는 두 손가락으로만. 손이 닿아 화면이 밀리거나 배율이 바뀌는 것을 막는다">손바닥 무시</button>
+          <div class="ink-pal-r"><button data-a="palm" title="펜슬로 쓰는 동안과 쓴 직후에는 손이 닿아도 화면이 움직이거나 배율이 바뀌지 않는다. 쓰지 않을 때는 손가락으로 넘기고 두 손가락으로 확대한다 — 그 손이 얹은 손바닥이었으면 펜을 대는 순간 되돌린다">손바닥 무시</button>
             <button data-a="finger" title="손가락으로도 쓰기 — 켜면 두 손가락으로 넘긴다">손가락 쓰기</button>
             <button data-a="cloze" title="정리본의 답 쪽(한눈에 칸 · 혼동의 기준 · 표의 내용 · 굵은 글자)을 가린다 — 떠올려 보고 톡 쳐서 하나씩 연다">암기 가림막</button>
             <button data-a="key" title="아이디 · 비밀번호로 이 기기의 동기화 키를 만든다 — 다른 기기에서도 같은 것을 넣으면 필기가 맞춰진다">로그인(필기 맞추기)</button></div>
@@ -946,7 +949,7 @@ var MEDKOS_INK = (function () {
     }
     else if (a === "line") t.line = !t.line;
     else if (a === "finger") t.finger = !t.finger;
-    else if (a === "palm") { t.palm = !t.palm; status(t.palm ? "손바닥 무시 — 넘기기 · 확대는 두 손가락으로" : "한 손가락으로도 넘깁니다"); }
+    else if (a === "palm") { t.palm = !t.palm; status(t.palm ? "손바닥 무시 — 쓰는 동안에는 손이 닿아도 화면이 움직이지 않습니다" : "손바닥 무시 끔"); }
     else if (a === "taper") {                                      // 획의 모양이 바뀐다 — 있는 획을 전부 다시 그린다
       t.taper = !t.taper;
       saveTool(); paintBar();
@@ -1420,14 +1423,14 @@ var MEDKOS_INK = (function () {
     // 펜슬이 화면을 끌지 않게(iPadOS 는 펜슬로도 스크롤한다) · 쓰는 동안 손바닥이 화면을 밀지 않게
     L.addEventListener("touchstart", (e) => {
       const stylus = [].some.call(e.changedTouches, (t) => t.touchType === "stylus");
-      if ([].some.call(e.changedTouches, isPalmTouch)) UI.bigTouch = Date.now();      // 넓은 접촉(손바닥) — 뒤따르는 톡을 누름으로 치지 않는다
       if (stylus || UI.tool.finger || UI.act || Date.now() - UI.lastPen < 500) e.preventDefault();
     }, { passive: false });
     // 쓰는 동안의 굵기 — 「획 끝 가늘게」가 켜져 있으면 들머리(a.tp 길이)에서 가늘게 시작한다. 꼬리는 펜을 뗀 뒤 다시 그릴 때 가늘어진다
     const liveW = (a, w, d) => (a.tp ? w * taperAt(d, a.tp) : w);
     L.addEventListener("pointerdown", (e) => {
       closePalette();
-      if (UI.stopGlide) UI.stopGlide();                           // 넘기다 미끄러지던 화면을 멈추고 쓴다
+      // 펜을 댔다 — 손으로 넘기던 것(얹은 손바닥이었다)을 버리고 그 전 자리로 되돌린다. 손가락 · 마우스면 미끄러지던 것만 멈춘다
+      if (e.pointerType === "pen" && UI.dropGesture) UI.dropGesture(); else if (UI.stopGlide) UI.stopGlide();
       if (e.pointerType === "touch" && !UI.tool.finger) return;
       if (e.pointerType === "mouse" && e.button !== 0) return;
       if (UI.act) {                                              // 손가락 쓰기 중 둘째 손가락 → 쓰던 획을 버리고 넘기기로
@@ -1453,7 +1456,7 @@ var MEDKOS_INK = (function () {
         UI.lastPen = Date.now();
         if (!UI.tool.pencil) {                                     // 이 기기에서 펜슬을 처음 썼다 → 펜 모드(한 손가락 · 손바닥으로는 넘기지 않는다)
           UI.tool.pencil = true; saveTool(); paintBar();
-          if (penMode()) UI.el.querySelector(".ink-hint").hidden = false;      // 한 번만 알린다 — 넘기는 방법이 바뀌었다
+          if (penMode()) UI.el.querySelector(".ink-hint").hidden = false;      // 한 번만 알린다
         }
       }
       if (UI.act.erase) { eraseAt(p); drawEraser(p); }
@@ -1565,7 +1568,7 @@ var MEDKOS_INK = (function () {
     L.addEventListener("click", (e) => {                         // 손가락으로 톡 — 층이 가로채므로 아래 것을 대신 누른다
       if (Date.now() - (UI.tapAt || 0) < 500) return;
       // 펜 모드 — 펜을 쓰는 중 · 쓴 직후의 접촉과 넓은 접촉은 손바닥이다(퀴즈 보기 · 가림막이 저절로 눌리지 않게)
-      if (penMode() && (UI.act || Date.now() - UI.lastPen < 1200 || Date.now() - (UI.bigTouch || 0) < 800)) return;
+      if (penMode() && (UI.act || Date.now() - UI.lastPen < 1200)) return;
       L.style.pointerEvents = "none";
       const under = document.elementFromPoint(e.clientX, e.clientY);
       L.style.pointerEvents = "";
@@ -1623,6 +1626,17 @@ var MEDKOS_INK = (function () {
     let first = 0, glide = 0;
     const stopGlide = () => { cancelAnimationFrame(glide); glide = 0; };
     UI.stopGlide = stopGlide;
+    /* 한 손가락 넘기기(펜 모드 · 2차) — 펜 모드에서는 필기 층이 브라우저의 넘기기를 막으므로(touch-action: none) 여기서 직접 넘긴다.
+       펜을 쓰지 않을 때만 시작하고, PAN_SLOP 넘게 움직여야 넘기기가 된다(얹어 둔 손의 잔떨림으로는 움직이지 않고, 톡은 그대로 누름이다). */
+    let one = null, lastPan = null;
+    // 손으로 하던 넘기기 · 확대를 버리고 시작할 때의 자리로 되돌린다 — 펜을 대는 순간 부른다(그 손은 얹은 손바닥이었다)
+    UI.dropGesture = () => {
+      stopGlide();
+      if (gz) { sc.scrollLeft = gz.sl; sc.scrollTop = gz.st; unpinch(); }
+      if (one) { sc.scrollLeft = one.sl; sc.scrollTop = one.st; one = null; }
+      else if (lastPan && Date.now() - lastPan.t < PAN_UNDO[1] && lastPan.moved < PAN_UNDO[0]) { sc.scrollLeft = lastPan.sl; sc.scrollTop = lastPan.st; }
+      lastPan = null;
+    };
     const glideFrom = (vx, vy) => {
       let last = performance.now();
       const step = (now) => {
@@ -1638,9 +1652,16 @@ var MEDKOS_INK = (function () {
       if (!UI.rec) return;
       stopGlide();
       if (e.touches.length === 1) first = Date.now();
-      // 손바닥인가 — 펜이 닿아 있다 · 펜을 뗀 직후다 · 접촉이 넓다
+      // 손바닥인가 — 펜이 닿아 있다 · 펜을 뗀 직후다
       const pen = [].some.call(e.touches, (t) => t.touchType === "stylus") || (UI.act && UI.act.type === "pen");
-      const palm = pen || Date.now() - UI.lastPen < (penMode() ? PALM_AFTER_PEN : 700) || [].some.call(e.touches, isPalmTouch);
+      const palm = pen || Date.now() - UI.lastPen < (penMode() ? PALM_AFTER_PEN : 700);
+      if ([].some.call(e.changedTouches, (t) => t.touchType === "stylus")) UI.dropGesture();      // 펜이 닿았다 — 손으로 넘기던 것은 손바닥이었다
+      // 한 손가락 — 펜 모드이고 펜을 쓰지 않을 때, 필기 층 위에서만(그 밖의 책상 여백은 브라우저가 넘긴다)
+      if (e.touches.length === 1 && !gz && penMode() && !palm && UI.layer.contains(e.target)) {
+        const c = e.touches[0];
+        one = { id: c.identifier, x: c.clientX, y: c.clientY, x0: c.clientX, y0: c.clientY, sl: sc.scrollLeft, st: sc.scrollTop,
+                on: false, moved: 0, vx: 0, vy: 0, vt: e.timeStamp || 0 };
+      }
       if (e.touches.length === 3 && !palm) {                      // 셋째 손가락 — 두 손가락 확대는 없던 일로 하고 세 손가락 톡을 기다린다
         if (gz) unpinch();
         tap3 = { t0: Date.now(), x: e.touches[0].clientX, y: e.touches[0].clientY };
@@ -1664,16 +1685,35 @@ var MEDKOS_INK = (function () {
       // 버벅임 고치기(2026-11-23) — ① 두 손가락을 대는 동안 브라우저의 넘기기를 잠근다(잠그지 않으면 브라우저가 밀고 우리도 밀어 종이가 두 번 움직인다)
       // ② 종이를 한 장으로 굳혀(will-change) 늘이기만 한다 — 글자를 매 프레임 다시 그리지 않는다. 손을 떼면 풀고 선명하게 다시 그린다.
       sc.classList.add("pinching");
+      one = null;                                                 // 두 손가락 제스처가 이어받는다
       if (e.cancelable) e.preventDefault();
     }, { passive: false });
     sc.addEventListener("touchmove", (e) => {
+      if (one && !gz) {                                           // 한 손가락 넘기기
+        const c = [].find.call(e.touches, (t) => t.identifier === one.id);
+        if (!c) return;
+        const dx = c.clientX - one.x, dy = c.clientY - one.y;
+        if (Math.hypot(dx, dy) > PALM_HOP) { sc.scrollLeft = one.sl; sc.scrollTop = one.st; one = null; return; }      // 한 번에 튄다 — 손바닥
+        if (!one.on) {
+          if (Math.hypot(c.clientX - one.x0, c.clientY - one.y0) < PAN_SLOP) return;
+          one.on = true; one.x = c.clientX; one.y = c.clientY; one.vt = e.timeStamp || 0;      // 여기서부터 넘긴다(문턱만큼 튀지 않게)
+          return;
+        }
+        if (e.cancelable) e.preventDefault();
+        one.x = c.clientX; one.y = c.clientY;
+        sc.scrollLeft -= dx; sc.scrollTop -= dy;
+        const dt = Math.max(1, (e.timeStamp || 0) - one.vt);
+        one.vx = one.vx * 0.6 + (dx / dt) * 0.4; one.vy = one.vy * 0.6 + (dy / dt) * 0.4; one.vt = e.timeStamp || 0;
+        one.moved += Math.hypot(dx, dy);
+        return;
+      }
       if (!gz || e.touches.length < 2) return;
       if (e.cancelable) e.preventDefault();
       const m = two(e);
-      // 손바닥 — 두 접촉 사이의 거리나 가운데가 한 번에 튀거나(눌린 손바닥은 접촉이 합쳐지고 갈라진다) 접촉이 넓어지면 이 제스처를 버린다.
+      // 손바닥 — 두 접촉 사이의 거리나 가운데가 한 번에 튀면(눌린 손바닥은 접촉이 합쳐지고 갈라진다) 이 제스처를 버린다.
       // 배율은 손대지 않고, 넘긴 것도 시작할 때의 자리로 되돌린다 — 손이 닿았다고 화면이 달라지지 않는다.
       const jump = Math.abs(m.d - gz.pd) > 40 && (m.d / gz.pd > PALM_JUMP || gz.pd / m.d > PALM_JUMP);
-      if (jump || Math.hypot(m.x - gz.x, m.y - gz.y) > PALM_HOP || [].some.call(e.touches, isPalmTouch)) {
+      if (jump || Math.hypot(m.x - gz.x, m.y - gz.y) > PALM_HOP) {
         sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;
         unpinch();
         return;
@@ -1709,6 +1749,17 @@ var MEDKOS_INK = (function () {
         tap3 = null;
         if (e.type === "touchend" && Date.now() - t.t0 < TAP_MS + 100 && (!c || Math.hypot(c.clientX - t.x, c.clientY - t.y) < 60)) { redo(); status("다시실행"); }
         return;
+      }
+      if (one && ![].some.call(e.touches, (t) => t.identifier === one.id)) {      // 넘기던 손가락을 뗐다
+        const o = one;
+        one = null;
+        if (o.on) {
+          lastPan = { sl: o.sl, st: o.st, moved: o.moved, t: Date.now() };
+          UI.rc = null;
+          ensureTiles();
+          if (e.type === "touchend") glideFrom(o.vx, o.vy);
+        }
+        if (!gz) return;
       }
       if (!gz || e.touches.length >= 2) return;
       const p = gz;

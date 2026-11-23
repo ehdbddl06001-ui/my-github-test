@@ -637,12 +637,22 @@ class Fixes1123(unittest.TestCase):
         self.assertIn("palm: t.palm !== false,", ink)                                                           # 기본 켬
         self.assertIn("UI.tool.pencil = true; saveTool(); paintBar();", ink)                                    # 펜슬을 처음 쓰면 펜 모드
         self.assertIn('data-a="palm"', ink)
-        self.assertIn("const PALM_R = 34, PAIR_MS = 350, PALM_AFTER_PEN = 900, PALM_JUMP = 1.35, PALM_HOP = 90, ZOOM_DEAD = 0.12;", ink)
+        self.assertIn("const PAIR_MS = 350, PALM_AFTER_PEN = 900, PALM_JUMP = 1.35, PALM_HOP = 90, ZOOM_DEAD = 0.12, PAN_SLOP = 6, PAN_UNDO = [120, 700];", ink)
+        self.assertNotIn("radiusX", ink)                                                                        # 접촉 넓이로는 가르지 않는다(기기마다 값이 다르다)
         self.assertIn("if (penMode() && e.changedTouches.length < 2 && Date.now() - first > PAIR_MS) return;", ink)   # 얹어 둔 손바닥 + 다른 접촉
         self.assertIn("sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;", ink)                                      # 버릴 때 넘긴 것도 되돌린다
-        self.assertEqual(ink.count("sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;"), 2)
+        self.assertEqual(ink.count("sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;"), 3)                          # 셋째 접촉 · 튐 · 펜을 댐
         self.assertIn("if (!gz.zoom && Math.abs(m.d / gz.d0 - 1) > ZOOM_DEAD) {", ink)                          # 넘기다가 배율이 조금씩 바뀌지 않는다
-        self.assertIn("if (penMode() && (UI.act || Date.now() - UI.lastPen < 1200 || Date.now() - (UI.bigTouch || 0) < 800)) return;", ink)   # 손바닥 톡
+        self.assertIn("if (penMode() && (UI.act || Date.now() - UI.lastPen < 1200)) return;", ink)              # 쓰는 중 · 쓴 직후의 톡은 손바닥
+
+    def test_one_finger_scrolls_when_not_writing_and_pen_down_reverts_it(self):
+        # 2026-11-23 2차 「위아래 드래그가 아예 안 된다 — 필기를 안 하는 동안에는 넘기고 확대할 수 있어야」
+        ink = self.ink
+        self.assertIn("if (e.touches.length === 1 && !gz && penMode() && !palm && UI.layer.contains(e.target)) {", ink)   # 펜을 쓰지 않을 때의 한 손가락
+        self.assertIn("if (Math.hypot(c.clientX - one.x0, c.clientY - one.y0) < PAN_SLOP) return;", ink)                  # 얹은 손의 잔떨림으로는 안 움직인다
+        self.assertIn("if (one) { sc.scrollLeft = one.sl; sc.scrollTop = one.st; one = null; }", ink)                     # 펜을 대면 넘긴 것을 되돌린다
+        self.assertIn('if (e.pointerType === "pen" && UI.dropGesture) UI.dropGesture(); else if (UI.stopGlide) UI.stopGlide();', ink)
+        self.assertIn("lastPan && Date.now() - lastPan.t < PAN_UNDO[1] && lastPan.moved < PAN_UNDO[0]", ink)              # 펜을 대기 직전의 작은 넘김도
 
     def test_pen_tip_follows_the_raw_position_and_points_are_spaced_in_screen_pixels(self):
         ink = self.ink
