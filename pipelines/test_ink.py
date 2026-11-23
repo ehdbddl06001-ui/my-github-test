@@ -458,7 +458,7 @@ class Wiring(unittest.TestCase):
         self.assertIn("function redo() { histMove(UI.redo, UI.undo); }", ink)
         self.assertIn("UI.redo = [];                                                 // 새로 쓰면 다시실행 더미는 비운다", ink)
         self.assertIn("if (o.add === op.was) o.add = inv.add;", ink)             # 지웠다 되살린 획의 id 가 바뀌어도 더미가 따라간다
-        self.assertIn("Math.abs(p.k - 1) < 0.04 && Math.hypot(p.x - p.x0, p.y - p.y0) < 10) { ensureTiles(); undo();", ink)   # 두 손가락 톡
+        self.assertIn("!p.zoom && p.moved < 10) { ensureTiles(); undo();", ink)   # 두 손가락 톡
         self.assertIn("if (e.touches.length === 3 && !palm) {", ink)             # 세 손가락 톡 = 다시실행
         # 레이저 — 저장하지 않는다(획 더미 · 문서에 들어가지 않는다)
         self.assertIn("const LASER_MS = 2500;", ink)
@@ -492,6 +492,25 @@ class Wiring(unittest.TestCase):
         self.assertTrue(out["closed"])                                        # 끝 점이 첫 점과 같다
         self.assertTrue(out["ellipse"][0] < 30 < 55 < out["ellipse"][1], out["ellipse"])   # 납작한 고리는 타원 그대로
         self.assertEqual((out["line"], out["square"], out["tiny"]), (None, None, None))    # 직선 · 네모 · 점은 원이 아니다
+
+    @unittest.skipUnless(NODE, "node 없음")
+    def test_stroke_ends_taper_but_short_strokes_lines_and_circles_keep_their_width(self):
+        # 2026-11-23 「굵기 · 획 끝 모양이 부자연스럽다」 — 들머리 · 꼬리를 가늘게. 가운데는 그대로, 짧은 획은 덜, 직선(두 점) · 닫힌 고리는 그대로.
+        out = run_node(CORE % (
+            "const line=(n,step)=>{const p=[];for(let i=0;i<n;i++)p.push(i*step,0,.5);return p;};"
+            "const long=line(41,2),ws=new Array(41).fill(2);const T=I.taperWs(long,ws);"
+            "out.ends=[T[0],T[40]].map(x=>Math.round(x*100)/100);out.mid=T[20];out.mono=T.slice(0,5).every((x,i,l)=>!i||x>=l[i-1]);"
+            "const short=line(4,1),S=I.taperWs(short,[2,2,2,2]);out.short=S.map(x=>Math.round(x*100)/100);"
+            "out.two=I.taperWs([0,0,.5,50,0,.5],[2,2]);"
+            "const ring=[];for(let i=0;i<=24;i++){const a=i/24*2*Math.PI;ring.push(Math.round(Math.cos(a)*2000)/100,Math.round(Math.sin(a)*2000)/100,.5);}"
+            "out.ring=I.taperWs(ring,new Array(25).fill(2)).every(x=>x===2)"))
+        self.assertEqual(out["ends"], [1.1, 1.1])                    # 양 끝은 0.55배
+        self.assertEqual(out["mid"], 2)                              # 가운데는 그대로
+        self.assertTrue(out["mono"])                                 # 들머리에서 차츰 굵어진다
+        self.assertEqual(out["short"][0], 1.1)
+        self.assertEqual(out["short"][1], 2)                         # 길이 3 인 획은 0.9 구간에서만 가늘다 — 통째로 가늘어지지 않는다
+        self.assertEqual(out["two"], [2, 2])                         # 두 점짜리 직선
+        self.assertTrue(out["ring"])                                 # 닫힌 고리(원으로 다듬은 것)
 
     def test_old_handwriting_keeps_the_old_note_layout(self):
         # 판형 12(2026-11-23 vNext Phase 3) — 정리본의 요약 · 혼동 · 시험 쟁점 모양이 바뀌었다. 옛 모양 위에 그은 밑줄 · 동그라미는
@@ -569,10 +588,11 @@ class Fixes1123(unittest.TestCase):
     def test_pinch_locks_native_scroll_and_two_finger_pan_does_not_relayout(self):
         ink, css = self.ink, self.css
         self.assertIn('sc.classList.add("pinching");', ink)
-        self.assertEqual(ink.count('sc.classList.remove("pinching")'), 2)     # 끝날 때 · 세 손가락으로 바뀔 때
+        self.assertEqual(ink.count('sc.classList.remove("pinching")'), 1)     # 끝내는 곳은 unpinch 하나다
         self.assertIn(".ink-scroll.pinching{overflow:hidden}", css)
         self.assertIn(".ink-scroll.pinching .ink-fit{will-change:transform}", css)
-        self.assertIn("if (p.k === 1) {", ink)                                # 배율이 그대로면 종이를 다시 짜지 않는다
+        self.assertIn("if (!p.zoom) {", ink)                                  # 넘기기만 했으면 종이를 다시 짜지 않는다
+        self.assertIn("sc.scrollLeft -= dx; sc.scrollTop -= dy;", ink)        # 넘기는 동안 그 자리에서 바로 옮긴다
         self.assertIn("p.raf = requestAnimationFrame(", ink)                  # 화면 한 장에 한 번만 옮긴다
 
     def test_oral_check_is_a_four_choice_quiz_with_a_fixed_order(self):
@@ -608,6 +628,34 @@ class Fixes1123(unittest.TestCase):
         import yaml
         cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8"))
         self.assertEqual(json.loads(re.search(r"const DISC = (\{.*?\});", ink).group(1)), cfg["disciplines"])     # 학문 → 책은 PDF 학습서와 같게
+
+    def test_palm_does_not_scroll_or_zoom_when_a_pencil_is_in_use(self):
+        # 2026-11-23 「손이 닿으면 확대해 둔 것이 갑자기 축소된다」 — 펜 모드: 넘기기 · 확대는 두 손가락으로만, 손바닥으로 보이면 버리고 되돌린다
+        ink = self.ink
+        self.assertIn("const penMode = () => UI.tool.palm && UI.tool.pencil && !UI.tool.finger;", ink)
+        self.assertIn('UI.layer.style.touchAction = t.finger || penMode() ? "none" : "pan-x pan-y";', ink)      # 한 손가락 · 손바닥으로는 넘기지 않는다
+        self.assertIn("palm: t.palm !== false,", ink)                                                           # 기본 켬
+        self.assertIn("UI.tool.pencil = true; saveTool(); paintBar();", ink)                                    # 펜슬을 처음 쓰면 펜 모드
+        self.assertIn('data-a="palm"', ink)
+        self.assertIn("const PALM_R = 34, PAIR_MS = 350, PALM_AFTER_PEN = 900, PALM_JUMP = 1.35, PALM_HOP = 90, ZOOM_DEAD = 0.12;", ink)
+        self.assertIn("if (penMode() && e.changedTouches.length < 2 && Date.now() - first > PAIR_MS) return;", ink)   # 얹어 둔 손바닥 + 다른 접촉
+        self.assertIn("sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;", ink)                                      # 버릴 때 넘긴 것도 되돌린다
+        self.assertEqual(ink.count("sc.scrollLeft = gz.sl; sc.scrollTop = gz.st;"), 2)
+        self.assertIn("if (!gz.zoom && Math.abs(m.d / gz.d0 - 1) > ZOOM_DEAD) {", ink)                          # 넘기다가 배율이 조금씩 바뀌지 않는다
+        self.assertIn("if (penMode() && (UI.act || Date.now() - UI.lastPen < 1200 || Date.now() - (UI.bigTouch || 0) < 800)) return;", ink)   # 손바닥 톡
+
+    def test_pen_tip_follows_the_raw_position_and_points_are_spaced_in_screen_pixels(self):
+        ink = self.ink
+        self.assertIn("a.tip = a.f && !a.erase && !a.line && !a.shape ? pt(e) : null;", ink)          # 덧층의 펜 끝은 거르지 않은 지금 자리
+        self.assertIn("if (a.tip) ctx.lineTo(a.tip[0], a.tip[1]);", ink)
+        self.assertIn("gap: Math.max(0.12, PT_GAP / measure().s),", ink)                              # 점 간격은 화면 px 기준
+        self.assertIn("if (d < a.gap) return;", ink)
+        self.assertNotIn("if (d < 0.35) return;", ink)
+        self.assertIn("const penW = (w, p) => w * (0.6 + 0.6964 * Math.pow(Math.max(0, p), 0.8));", ink)   # 0.6 ~ 1.3배 · 힘 0.5 는 1배
+        self.assertAlmostEqual(0.6 + 0.6964 * 0.5 ** 0.8, 1.0, places=3)
+        self.assertIn("commitStroke(a, !!a.tp);", ink)                                                # 꼬리는 펜을 뗀 뒤 다시 그려 가늘어진다
+        self.assertIn('data-a="taper"', ink)
+        self.assertIn("taper: t.taper !== false,", ink)
 
 
 if __name__ == "__main__":
