@@ -478,7 +478,7 @@ class Wiring(unittest.TestCase):
         # 2026-11-23 「동그라미 표시가 원형으로 바뀌면 좋겠다」 — 동그라미를 그리고 멈추면 원 · 타원으로 다듬는다
         out = run_node(CORE % (
             "const ring=(rx,ry,wob)=>{const p=[];let tr=0,px,py;for(let i=0;i<=40;i++){const a=i/40*2*Math.PI*0.97;"
-            "const x=100+(rx+(i%%2?wob:-wob))*Math.cos(a),y=80+(ry+(i%%2?-wob:wob))*Math.sin(a);if(i)tr+=Math.hypot(x-px,y-py);px=x;py=y;p.push(x,y,.5);}return [p,tr];};"
+            "const x=100+(rx+(i%2?wob:-wob))*Math.cos(a),y=80+(ry+(i%2?-wob:wob))*Math.sin(a);if(i)tr+=Math.hypot(x-px,y-py);px=x;py=y;p.push(x,y,.5);}return [p,tr];};"
             "const c=ring(30,28,1.5),e=ring(60,25,1.5);"
             "const C=I.loopShape(c[0],c[1]),E=I.loopShape(e[0],e[1]);"
             "const rad=(P,cx,cy)=>{let lo=1e9,hi=0;for(let i=0;i<P.length;i+=3){const r=Math.hypot(P[i]-cx,P[i+1]-cy);lo=Math.min(lo,r);hi=Math.max(hi,r);}return [lo,hi];};"
