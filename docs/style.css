@@ -28,7 +28,7 @@
   --d-decision:#e9f0fa; --d-info:#f8fafc; --d-alert:#f1f4f8; --d-end:#f4f7fb;
   --d-txt:#182334; --d-sub:#5c6c82; --d-split:#d92d20;
   --desk:#e3e8ef;            /* 필기장에서 종이 뒤 책상 */
-  --statusbar:#182334;       /* 설치한 앱의 상태 막대 아래 띠(흰 글자가 보이게) */
+  --statusbar:#f3f6fa;       /* 설치한 앱의 상태 막대 띠 — 상태 막대 글자색은 앱의 화면 모드가 아니라 **기기**의 밝기 모드를 따르므로 아래 @media 로 맞춘다 */
 }
 html[data-theme="dark"]{
   color-scheme:dark;
@@ -52,8 +52,8 @@ html[data-theme="dark"]{
   --d-decision:#2a2412; --d-info:#141f36; --d-alert:#321417; --d-end:#11281c;
   --d-txt:#e6edf5; --d-sub:#a9b6c6; --d-split:#ff8a80;
   --desk:#c9ced6;
-  --statusbar:transparent;
 }
+@media (prefers-color-scheme: dark){ :root{--statusbar:#0f1620} }
 /* 위쪽 안전 영역(2026-11-23) — 아이패드 홈 화면 앱은 상태 막대(시계 · 날짜) 아래로 번지는 띠가 안전 영역보다 조금 더 내려와
    맨 위 도구줄을 가렸다. 상태 막대가 있을 때만(안전 영역 > 0) 더 내린다. 브라우저에서는 0 그대로다.
    2026-11-24 — 맨 위 회색 띠가 넓어 보여 여유분을 16px → 4px 로 줄였다(도구줄이 다시 가려지면 이 값을 올린다). */
@@ -69,6 +69,10 @@ body{
 }
 /* 설치한 앱은 상태 막대 글자가 흰색이다 — 밝은 바탕에서 보이게 그 높이만큼 어두운 띠를 깐다(브라우저에서는 높이 0) */
 body::before{content:""; position:fixed; left:0; right:0; top:0; height:var(--safe-top); background:var(--statusbar); z-index:1200; pointer-events:none}
+/* 맨 위 불투명 띠(2026-11-24 「블러 없애고 직선으로」) — iPadOS 26 은 홈 화면 앱 맨 위에 흐림(스크롤 가장자리 효과)을 덧씌운다. 끄는 설정은 없고,
+   **맨 위에 붙은 · 화면 폭을 다 채운 · 불투명한 고정 요소**가 있으면 그 색으로 상태 막대를 반듯하게 채운다고 알려져 있다(가상 요소는 세지 않는 듯해
+   theme.js 가 진짜 요소를 넣는다). 아래 경계는 실선 한 줄. 브라우저에서는 안전 영역이 0 이라 보이지 않는다. */
+.edge-band{position:fixed; left:0; right:0; top:0; height:var(--safe-top); background:var(--statusbar); border-bottom:min(1px, var(--safe-top)) solid var(--line); box-sizing:border-box; z-index:1200}
 /* 밝은 화면 / 어두운 화면 단추(theme.js 가 메뉴 줄 끝에 넣는다) */
 .nav .theme-toggle{margin-left:auto; flex:none; padding:6px 8px; font-size:.82rem; border-radius:9px; background:var(--card); color:var(--muted)}
 header{max-width:820px; margin:0 auto; padding:12px 18px 4px}
@@ -84,7 +88,7 @@ h1{margin:0; font-size:1.3rem}
 
 /* 상단 내비게이션 (퀴즈 ↔ 논문) */
 /* 한 줄로 — 넘치면 옆으로 민다(두 줄로 접히면 위쪽이 넓게 빈다 · 2026-11-24) */
-.nav{max-width:820px; margin:0 auto; padding:10px 18px 0; display:flex; flex-wrap:nowrap; gap:6px; overflow-x:auto; white-space:nowrap; scrollbar-width:none}
+.nav{max-width:820px; margin:0 auto; padding:6px 18px 0; display:flex; flex-wrap:nowrap; gap:6px; overflow-x:auto; white-space:nowrap; scrollbar-width:none}
 .nav::-webkit-scrollbar{display:none}
 .nav a{flex:none}
 .nav a{
