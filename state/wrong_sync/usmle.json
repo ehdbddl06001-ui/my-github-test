@@ -360,8 +360,29 @@
    "date": "2026-11-10",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "usmle-2026-0293": {
+   "id": "usmle-2026-0293",
+   "exam": "usmle",
+   "subject": "Internal Medicine",
+   "step": "Step 2",
+   "type": "Three Months of Tiredness and Breathlessness on the Stairs With a Hemoglobin of 9.8 and Brown Stool on Rectal Examination in a 63-Year-Old Man",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following is the most appropriate next step in evaluation?",
+   "chosen": 3,
+   "chosenText": "Hemoglobin electrophoresis",
+   "answer": 0,
+   "answerText": "Colonoscopy and upper endoscopy",
+   "coreNote": "",
+   "differ": "",
+   "decision": "낮은 ferritin·트랜스페린 포화도로 철결핍 빈혈이 확인되어 형의 지중해빈혈 소형은 판단을 바꾸지 않는다. 고기를 먹는 63세 남성의 철결핍은 위장관 잠혈 손실, 특히 대장 종양을 원인으로 보고 분변검사가 아니라 대장·상부 위장관 내시경을 함께 한다.",
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 102장 Iron Deficiency and Other Acquired Anemias Due to Decreased Erythrocyte Production)",
+   "date": "2026-11-24",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-10T05:05:28.182Z"
+ "updated": "2026-11-24T00:46:03.562Z"
 }
