@@ -1574,8 +1574,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1972": {
+   "id": "kmle-2026-1972",
+   "exam": "kmle",
+   "subject": "Nephrology",
+   "step": "",
+   "type": "Two Weeks of Muscle Weakness with a Low Potassium and Calcified Kidneys in a Woman with Dry Eyes and Mouth",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 진단은?",
+   "chosen": 0,
+   "chosenText": "2형(근위) 신세뇨관 산증",
+   "answer": 1,
+   "answerText": "1형(원위) 신세뇨관 산증",
+   "coreNote": "",
+   "differ": "",
+   "decision": "음이온차 정상 대사성 산증에서 소변 음이온차가 양성이면 장관 소실이 아니라 신장의 산 배설 장애다. 소변 pH > 5.5, 저칼륨혈증, 신수질 석회화, 쇼그렌 증후군이 함께 있어 1형(원위) 신세뇨관 산증이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T02:21:09.615Z"
+ "updated": "2026-11-24T02:42:34.921Z"
 }
