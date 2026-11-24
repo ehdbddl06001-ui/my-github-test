@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>맨 위 블러 시험</title>
+<!-- 맨 위 블러 시험(2026-11-24) — 아이패드 홈 화면 앱이 맨 위에 덧씌우는 흐림을 어떤 배치가 없애는지 기기에서 직접 비교한다.
+     흐림은 설치한 앱에서만 나타나 PC 에서는 볼 수 없다. 방식은 ?v=1~6. 결과가 정해지면 이 파일은 지운다. -->
+<style>
+  :root{--st:env(safe-area-inset-top)}
+  html,body{margin:0; background:#f3f6fa; color:#182334; font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif; line-height:1.6}
+  .row{display:flex; gap:6px; padding:6px 18px; max-width:820px; margin:0 auto; overflow:hidden; white-space:nowrap}
+  .row span{flex:none; background:#fff; border:1px solid #cdd6e2; border-radius:9px; padding:6px 9px; font-size:.86rem}
+  .row span.on{background:#1d57a8; color:#fff; border-color:#1d57a8}
+  main{max-width:820px; margin:0 auto; padding:0 18px 80px}
+  h1{font-size:1.3rem; margin:8px 0}
+  .pick{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0}
+  .pick a{display:block; padding:12px 14px; border:1px solid #cdd6e2; border-radius:10px; background:#fff; color:#182334; text-decoration:none; font-size:.95rem}
+  .pick a.on{border-color:#1d57a8; background:#d6e6fb; font-weight:700}
+  .big{font-size:3rem; font-weight:800; color:#1d57a8; line-height:1.1}
+  .info{font-size:.82rem; color:#5c6c82; word-break:break-all}
+  .fill p{margin:10px 0; color:#5c6c82}
+  /* 방식별 */
+  .pad{padding-top:var(--st)}
+  .band12{position:fixed; top:0; left:0; right:0; height:12px; background:#f3f6fa; z-index:9999; pointer-events:none}
+  .bandsafe{position:fixed; top:0; left:0; right:0; height:calc(var(--st) + 12px); background:#f3f6fa; z-index:9999; pointer-events:none}
+  .fixhead{position:fixed; top:0; left:0; right:0; z-index:9999; background:#f3f6fa; padding-top:var(--st); border-bottom:1px solid #cdd6e2}
+  .fixhead + .spacer{height:calc(var(--st) + 48px)}
+  html.noscroll, html.noscroll body{height:100%; overflow:hidden}
+  .inner{position:fixed; inset:0; overflow:auto; -webkit-overflow-scrolling:touch}
+</style>
+</head>
+<body>
+<script>
+(function () {
+  var NAMES = {
+    1: "기준 — 아무 조치 없음",
+    2: "맨 위 12px 불투명 고정 띠",
+    3: "고정 띠(안전 영역 + 12px)",
+    4: "메뉴 줄을 통째로 고정한 불투명 머리띠",
+    5: "문서는 안 움직이고 안쪽 상자만 스크롤",
+    6: "5번 + 12px 고정 띠"
+  };
+  var v = Number((location.search.match(/[?&]v=(\d)/) || [])[1]) || 1;
+  if (!NAMES[v]) v = 1;
+  var row = '<div class="row">' + ["퀴즈", "학습서 필기", "기초의학", "논문", "AI랩", "3D 아틀라스", "새 자료", "검색"].map(function (t, i) {
+    return '<span' + (i ? "" : ' class="on"') + ">" + t + "</span>"; }).join("") + "</div>";
+  var pick = '<div class="pick">' + Object.keys(NAMES).map(function (k) {
+    return '<a href="edgetest.html?v=' + k + '"' + (Number(k) === v ? ' class="on"' : "") + ">" + k + ". " + NAMES[k] + "</a>"; }).join("") +
+    '<a href="index.html">← 앱으로 돌아가기</a></div>';
+  var fill = '<div class="fill">' + new Array(40).join("<p>스크롤해 보는 줄입니다. 위로 밀어 올려, 글자가 맨 위 시계 줄 아래를 지날 때 흐려지는지 봅니다.</p>") + "</div>";
+  var body = '<main><div class="big">' + v + '번</div><h1>' + NAMES[v] + "</h1>" +
+    "<p>맨 위 <b>메뉴 줄 글자가 선명한지 · 흐릿한지</b>만 봐 주세요. 아래 단추로 방식을 바꿉니다.</p>" + pick +
+    '<p class="info" id="info"></p>' + fill + "</main>";
+  var html;
+  if (v === 1) html = '<div class="pad">' + row + "</div>" + body;
+  if (v === 2) html = '<div class="band12"></div><div class="pad">' + row + "</div>" + body;
+  if (v === 3) html = '<div class="bandsafe"></div><div class="pad">' + row + "</div>" + body;
+  if (v === 4) html = '<div class="fixhead">' + row + '</div><div class="spacer"></div>' + body;
+  if (v === 5 || v === 6) {
+    document.documentElement.className = "noscroll";
+    html = (v === 6 ? '<div class="band12"></div>' : "") + '<div class="inner"><div class="pad">' + row + "</div>" + body + "</div>";
+  }
+  document.body.insertAdjacentHTML("beforeend", html);
+  var probe = document.createElement("div");
+  probe.style.cssText = "position:fixed;top:0;left:0;width:1px;height:env(safe-area-inset-top);visibility:hidden";
+  document.body.appendChild(probe);
+  var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+  document.getElementById("info").textContent = "안전 영역 위쪽 " + probe.offsetHeight + "px · 설치한 앱 " + (standalone ? "예" : "아니오") +
+    " · 화면 " + innerWidth + "×" + innerHeight + " · " + navigator.userAgent;
+})();
+</script>
+</body>
+</html>
