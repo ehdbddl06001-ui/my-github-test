@@ -1532,8 +1532,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1968": {
+   "id": "kmle-2026-1968",
+   "exam": "kmle",
+   "subject": "Hematology",
+   "step": "",
+   "type": "One Week of Bleeding Gums and Bruises with Low Fibrinogen in a Woman in Her Early Forties",
+   "style": "",
+   "modality": "",
+   "question": "지금 함께 시작해야 할 치료로 가장 적절한 것은?",
+   "chosen": 4,
+   "chosenText": "동종 조혈모세포이식 의뢰",
+   "answer": 2,
+   "answerText": "올-트랜스 레티노산 경구",
+   "coreNote": "",
+   "differ": "",
+   "decision": "아우어 소체가 다발로 모인 비정상 전골수구와 섬유소원이 낮은 파종 혈관 내 응고는 급성 전골수구 백혈병을 시사한다. 조기 사망의 주원인이 출혈이므로 유전자 확진을 기다리지 않고 올-트랜스 레티노산을 즉시 시작하고 혈소판·섬유소원을 보충한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T02:17:11.467Z"
+ "updated": "2026-11-24T02:18:42.685Z"
 }
