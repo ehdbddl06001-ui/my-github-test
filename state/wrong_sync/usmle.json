@@ -381,8 +381,29 @@
    "date": "2026-11-24",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "usmle-2026-0292": {
+   "id": "usmle-2026-0292",
+   "exam": "usmle",
+   "subject": "Physiology",
+   "step": "Step 1",
+   "type": "Breathlessness, an Oxygen Saturation of 88% and Absent Breath Sounds at the Right Base on the Second Day After Colon Surgery in a 67-Year-Old Man",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following is the most likely primary mechanism of this patient's hypoxemia?",
+   "chosen": 1,
+   "chosenText": "Impaired diffusion of oxygen across a thickened alveolar-capillary membrane",
+   "answer": 4,
+   "answerText": "Blood flow through alveoli that are perfused but not ventilated",
+   "coreNote": "",
+   "differ": "",
+   "decision": "해수면에서 PaCO2 가 낮은데 A-a 차이가 크므로 환기 저하·흡입 산소 저하가 아니다. 100% 산소에도 PaO2 가 78 에 그쳐 V/Q 불균형·확산 장애가 아닌 션트이며, 수술 뒤 우하엽 무기폐가 환기 없는 폐포로 혈액을 흘려보내고 있다.",
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 42장 Hypoxia and Cyanosis)",
+   "date": "2026-11-24",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T00:46:03.562Z"
+ "updated": "2026-11-24T01:08:22.685Z"
 }
