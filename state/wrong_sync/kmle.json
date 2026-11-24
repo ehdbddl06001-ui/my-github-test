@@ -1637,8 +1637,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1958": {
+   "id": "kmle-2026-1958",
+   "exam": "kmle",
+   "subject": "Cardiology",
+   "step": "",
+   "type": "Nausea, Yellow-tinged Vision and a Very Slow Pulse Two Weeks after a New Rhythm Medicine in a Woman in Her Early Eighties",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 3,
+   "chosenText": "경정맥 임시 심박조율",
+   "answer": 0,
+   "answerText": "디곡신 특이 항체 절편 정맥 주사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "아미오다론 추가와 신기능 저하로 디곡신 농도가 오르며 구역·노란 시야·완전 방실차단·고칼륨혈증·저혈압이 생긴 디곡신 중독이다. 생명을 위협하는 부정맥과 고칼륨혈증이 있으므로 디곡신 특이 항체 절편을 준다 — 칼륨은 이것으로 함께 교정된다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T04:39:27.391Z"
+ "updated": "2026-11-24T04:41:28.190Z"
 }
