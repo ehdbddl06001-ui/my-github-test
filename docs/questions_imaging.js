@@ -2,6 +2,1558 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0784",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 수술 전 검사 심전도 이상을 들은 중년 남성",
+  "type": "심전도 판독 — 수술 전 검사 심전도 이상을 들은 중년 남성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-24",
+  "vignette": "A 53-year-old man comes to the clinic for preoperative evaluation before elective knee arthroscopy. He walks 3 km daily without chest pain, dyspnea, palpitations, or syncope. He has no history of heart disease, and there is no family history of sudden death. He takes no medications. Pulse is 70/min and blood pressure is 128/78 mm Hg. Cardiac examination shows a widely split S2 that persists with expiration; there are no murmurs. Echocardiography shows normal chamber sizes, normal valves, and normal pulmonary artery pressure. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely ECG diagnosis?",
+  "options": [
+   "Complete right bundle branch block",
+   "Brugada pattern",
+   "Complete left bundle branch block",
+   "Left anterior fascicular block",
+   "Ventricular preexcitation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The rhythm is sinus at about 70/min. The QRS is <b>wide (about 130 ms)</b>, with an <b>rsR′ (M-shaped) complex in V1 and V2</b> and <b>broad, slurred S waves in I, V5 and V6</b>. The T waves in V1–V3 are inverted, opposite to the terminal R′ — a secondary repolarization change. This is complete right bundle branch block. Delayed right ventricular activation also explains the widely split S2 (late pulmonic closure).\n- 원리: <b>Why the right ventricle is late</b>: When the right bundle is blocked, the septum and left ventricle depolarize normally through the left bundle, so the first part of the QRS is unchanged. The right ventricle is then activated slowly, cell to cell, from the left side. That late, unopposed rightward and anterior force produces the terminal R′ in V1 and the broad S in leads facing leftward (I, V6), and the slow muscle-to-muscle conduction widens the QRS to 120 ms or more.<br> <b>Why the T waves invert in V1–V3</b>: Repolarization follows the delayed depolarization, so the ST-T vector points away from the late R′. These secondary changes need no further explanation and do not by themselves indicate ischemia.<br> <b>Clinical meaning</b>: Isolated right bundle branch block in an asymptomatic adult with a normal heart carries little risk and needs no treatment or preoperative pacing; the echocardiogram here rules out right ventricular overload.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Right bundle branch block (answer)</th><th>Brugada pattern (closest distractor)</th></tr></thead><tbody> <tr><td>V1–V2</td><td>rsR′ with a <b>sharp terminal R′</b></td><td><b>Coved ST elevation ≥ 2 mm</b> descending into an inverted T</td></tr> <tr><td>Lateral leads (I, V6)</td><td><b>Broad, slurred S</b></td><td>No wide S wave</td></tr> <tr><td>QRS width</td><td>≥ 120 ms</td><td>Often normal or slightly prolonged</td></tr> <tr><td>Meaning</td><td>Usually benign conduction delay</td><td>Sodium channelopathy, risk of ventricular fibrillation</td></tr> </tbody></table> Look at leads I and V6: a wide terminal S confirms right bundle branch block, while Brugada changes are confined to V1–V2 and lack it.\n- 오답 이유:\n  - (B) Brugada pattern would be correct if V1–V2 showed coved ST elevation of at least 2 mm sloping into inverted T waves without a wide S wave in I and V6.\n  - (C) Complete left bundle branch block would be correct if V1 showed a deep QS and I and V6 showed broad notched R waves without Q waves.\n  - (D) Left anterior fascicular block would be correct if the QRS were narrow with left axis deviation beyond −45°, qR in I and aVL, and rS in II, III and aVF.\n  - (E) Ventricular preexcitation would be correct if the PR interval were shorter than 120 ms with a slurred delta wave at the QRS onset.\n- 함정: Seeing a positive terminal deflection with T-wave inversion in V1–V2 and calling it Brugada — check the wide S in I and V6 and the sharp R′.\n- 학습목표: Read a wide QRS with rsR′ in V1–V2 and broad slurred S waves in I and V6 as complete right bundle branch block, and distinguish it from Brugada pattern and left bundle branch block\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17679 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm is sinus at about 70/min. The QRS is <b>wide (about 130 ms)</b>, with an <b>rsR′ (M-shaped) complex in V1 and V2</b> and <b>broad, slurred S waves in I, V5 and V6</b>. The T waves in V1–V3 are inverted, opposite to the terminal R′ — a secondary repolarization change. This is complete right bundle branch block. Delayed right ventricular activation also explains the widely split S2 (late pulmonic closure)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the right ventricle is late</b>: When the right bundle is blocked, the septum and left ventricle depolarize normally through the left bundle, so the first part of the QRS is unchanged. The right ventricle is then activated slowly, cell to cell, from the left side. That late, unopposed rightward and anterior force produces the terminal R′ in V1 and the broad S in leads facing leftward (I, V6), and the slow muscle-to-muscle conduction widens the QRS to 120 ms or more.<br> <b>Why the T waves invert in V1–V3</b>: Repolarization follows the delayed depolarization, so the ST-T vector points away from the late R′. These secondary changes need no further explanation and do not by themselves indicate ischemia.<br> <b>Clinical meaning</b>: Isolated right bundle branch block in an asymptomatic adult with a normal heart carries little risk and needs no treatment or preoperative pacing; the echocardiogram here rules out right ventricular overload."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Right bundle branch block (answer)</th><th>Brugada pattern (closest distractor)</th></tr></thead><tbody> <tr><td>V1–V2</td><td>rsR′ with a <b>sharp terminal R′</b></td><td><b>Coved ST elevation ≥ 2 mm</b> descending into an inverted T</td></tr> <tr><td>Lateral leads (I, V6)</td><td><b>Broad, slurred S</b></td><td>No wide S wave</td></tr> <tr><td>QRS width</td><td>≥ 120 ms</td><td>Often normal or slightly prolonged</td></tr> <tr><td>Meaning</td><td>Usually benign conduction delay</td><td>Sodium channelopathy, risk of ventricular fibrillation</td></tr> </tbody></table> Look at leads I and V6: a wide terminal S confirms right bundle branch block, while Brugada changes are confined to V1–V2 and lack it."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Brugada pattern would be correct if V1–V2 showed coved ST elevation of at least 2 mm sloping into inverted T waves without a wide S wave in I and V6.\n(C) Complete left bundle branch block would be correct if V1 showed a deep QS and I and V6 showed broad notched R waves without Q waves.\n(D) Left anterior fascicular block would be correct if the QRS were narrow with left axis deviation beyond −45°, qR in I and aVL, and rS in II, III and aVF.\n(E) Ventricular preexcitation would be correct if the PR interval were shorter than 120 ms with a slurred delta wave at the QRS onset."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing a positive terminal deflection with T-wave inversion in V1–V2 and calling it Brugada — check the wide S in I and V6 and the sharp R′."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read a wide QRS with rsR′ in V1–V2 and broad slurred S waves in I and V6 as complete right bundle branch block, and distinguish it from Brugada pattern and left bundle branch block"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Surawicz B, Childers R, Deal BJ, Gettes LS. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram: part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17679 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "QRS 가 넓고 V1·V2 에 rsR′, I·V5·V6 에 넓게 끌리는 S 가 있으면 완전 우각차단이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "I·V5·V6 에 넓은 S 가 있고 V1 의 말단 R′ 이 날카롭다 — 브루가다형의 아치형 ST 상승이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: QRS 약 130 ms + V1·V2 rsR′ → 우심실 늦은 흥분",
+    "영상: I·V5·V6 넓고 끌리는 S, V1~V3 이차성 T파 역위 → 완전 우각차단"
+   ],
+   "key": [
+    {
+     "item": "영상: V1·V2 rsR′(M 모양)과 QRS 약 130 ms",
+     "why": "우각차단의 핵심 소견",
+     "also": []
+    },
+    {
+     "item": "영상: I·V5·V6 의 넓고 끌리는 S",
+     "why": "우각차단 확인 — 브루가다형과 가른다",
+     "also": []
+    },
+    {
+     "item": "widely split S2 that persists with expiration",
+     "why": "우심실 흥분 지연에 따른 폐동맥판 폐쇄 지연",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no family history of sudden death",
+     "why": "브루가다 증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "normal pulmonary artery pressure",
+     "why": "우심실 과부하로 생긴 우각차단 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "before elective knee arthroscopy",
+     "why": "발견 계기 — 판독과는 무관",
+     "also": []
+    }
+   ],
+   "summary": "QRS 가 넓고 V1·V2 에 rsR′, I·V5·V6 에 넓은 S 가 있다. 완전 우각차단이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "V1·V2 에 2 mm 이상 아치형 ST 상승이 역위 T파로 이어지고 I·V6 의 넓은 S 가 없었다면 브루가다형"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0784.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/17000/#files-panel",
+   "asset_id": "PTBXL-17679",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17679"
+  },
+  "run_id": "20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0783",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 쉬던 중 가슴이 조였다가 지금은 편한 고령 여성",
+  "type": "심전도 처치 — 쉬던 중 가슴이 조였다가 지금은 편한 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-24",
+  "vignette": "72세 여자가 4시간 전 쉬던 중 시작된 가슴 조임으로 응급실에 왔다. 통증은 40분 동안 이어지다 저절로 사라졌고 지금은 편하다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 72회/분, 호흡 16회/분, 산소포화도 97 % 이고 폐 청진에서 수포음은 없다. 고감도 트로포닌 I 는 도착 때 참고치 상한의 4배였고 1시간 뒤 더 올랐다. 크레아티닌은 0.8 mg/dL 이다. 아스피린과 P2Y12 억제제, 항응고제를 투여하였다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "관상동맥 CT 조영술 뒤 결정",
+   "24시간 이내 침습적 관상동맥조영술",
+   "즉시 정맥 혈전용해제 투여",
+   "운동부하검사 뒤 외래 추적",
+   "2시간 이내 응급 관상동맥조영술"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 심전도는 동리듬에 좁은 QRS 이고 <b>V4~V6 에서 수평형 ST 하강과 T파 역위</b>(I·aVL 에도 경미)가 있으며 <b>ST 상승은 없다</b>. 트로포닌이 오르내리므로 비ST분절상승 심근경색이다. 진단 자체가 고위험 기준이므로 <b>24시간 이내 침습적 관상동맥조영술</b>을 한다. 지금 통증이 없고 혈역학·심전도가 안정되어 2시간 이내 응급 조영술의 초고위험 기준에는 들지 않는다.\n- 원리: <b>왜 혈전용해제를 쓰지 않는가</b>: 비ST분절상승 급성 관상동맥증후군의 혈전은 혈소판이 많고 관상동맥을 완전히 막지 않는다. 혈전용해제는 피브린을 녹이지만 혈소판 활성을 오히려 높이고 출혈만 늘려, 무작위 시험에서 사망을 줄이지 못했다. 혈전용해제는 완전 폐색으로 ST 가 올라간 경우에만 이득이 있다.<br> <b>왜 24시간 이내인가</b>: 트로포닌이 오른 비ST분절상승 심근경색은 재경색·사망 위험이 높다. 조기 조영술로 책임 병변을 찾아 혈관을 넓히면 재발 허혈과 입원 기간이 줄고, 위험이 높은 환자일수록 이득이 크다.<br> <b>2시간 이내가 필요한 경우</b>: 혈역학적 불안정·심인성 쇼크, 약물에 반응하지 않는 반복 흉통, 생명을 위협하는 부정맥, 기계적 합병증, 급성 심부전, 반복되는 동적 ST 변화(특히 간헐적 ST 상승)는 완전 폐색에 준해 즉시 조영술을 한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">24시간 이내 — 정답</th><th>2시간 이내 응급 조영술 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td><b>비ST분절상승 심근경색 진단(트로포닌 상승)</b>, 동적 ST-T 변화</td><td>쇼크, 난치성 흉통, 치명적 부정맥, 급성 심부전, 기계적 합병증</td></tr> <tr><td>지금 상태</td><td><b>통증 없음, 혈역학 안정</b></td><td>불안정</td></tr> <tr><td>목적</td><td>재경색·재발 허혈 예방</td><td>진행 중인 허혈의 즉시 해소</td></tr> </tbody></table> 트로포닌이 오르면 「24시간」, 환자가 불안정하면 「2시간」, 위험 표지가 없으면 비침습 평가를 고른다.\n- 오답 이유:\n  - ① 관상동맥 CT 조영술은 트로포닌과 심전도가 정상이거나 애매한 저~중간 위험 흉통에서 관상동맥질환을 배제하려 한다면 정답이 된다.\n  - ③ 정맥 혈전용해제는 인접한 두 유도 이상에서 ST 가 올라간 ST분절상승 심근경색이고 일차 관상동맥중재술이 120분 안에 불가능하다면 정답이 된다.\n  - ④ 운동부하검사 뒤 외래 추적은 같은 흉통이라도 트로포닌이 반복 측정에서 정상이고 심전도 변화가 없는 저위험 환자라면 정답이 된다.\n  - ⑤ 2시간 이내 응급 조영술은 지금도 흉통이 이어지거나 저혈압·심부전·심실빈맥이 있는 초고위험 환자라면 정답이 된다.\n- 함정: 트로포닌 상승을 보고 응급 재관류(혈전용해제·2시간 내 조영술)로 가는 것 — ST 상승이 없고 안정되어 있으면 24시간 이내 조영술이다.\n- 학습목표: ST 하강·T파 역위와 트로포닌 상승이 있는 안정된 비ST분절상승 심근경색에 24시간 이내 침습적 관상동맥조영술을 정하고 혈전용해제를 쓰지 않는 이유를 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2109 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도는 동리듬에 좁은 QRS 이고 <b>V4~V6 에서 수평형 ST 하강과 T파 역위</b>(I·aVL 에도 경미)가 있으며 <b>ST 상승은 없다</b>. 트로포닌이 오르내리므로 비ST분절상승 심근경색이다. 진단 자체가 고위험 기준이므로 <b>24시간 이내 침습적 관상동맥조영술</b>을 한다. 지금 통증이 없고 혈역학·심전도가 안정되어 2시간 이내 응급 조영술의 초고위험 기준에는 들지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 혈전용해제를 쓰지 않는가</b>: 비ST분절상승 급성 관상동맥증후군의 혈전은 혈소판이 많고 관상동맥을 완전히 막지 않는다. 혈전용해제는 피브린을 녹이지만 혈소판 활성을 오히려 높이고 출혈만 늘려, 무작위 시험에서 사망을 줄이지 못했다. 혈전용해제는 완전 폐색으로 ST 가 올라간 경우에만 이득이 있다.<br> <b>왜 24시간 이내인가</b>: 트로포닌이 오른 비ST분절상승 심근경색은 재경색·사망 위험이 높다. 조기 조영술로 책임 병변을 찾아 혈관을 넓히면 재발 허혈과 입원 기간이 줄고, 위험이 높은 환자일수록 이득이 크다.<br> <b>2시간 이내가 필요한 경우</b>: 혈역학적 불안정·심인성 쇼크, 약물에 반응하지 않는 반복 흉통, 생명을 위협하는 부정맥, 기계적 합병증, 급성 심부전, 반복되는 동적 ST 변화(특히 간헐적 ST 상승)는 완전 폐색에 준해 즉시 조영술을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">24시간 이내 — 정답</th><th>2시간 이내 응급 조영술 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td><b>비ST분절상승 심근경색 진단(트로포닌 상승)</b>, 동적 ST-T 변화</td><td>쇼크, 난치성 흉통, 치명적 부정맥, 급성 심부전, 기계적 합병증</td></tr> <tr><td>지금 상태</td><td><b>통증 없음, 혈역학 안정</b></td><td>불안정</td></tr> <tr><td>목적</td><td>재경색·재발 허혈 예방</td><td>진행 중인 허혈의 즉시 해소</td></tr> </tbody></table> 트로포닌이 오르면 「24시간」, 환자가 불안정하면 「2시간」, 위험 표지가 없으면 비침습 평가를 고른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 관상동맥 CT 조영술은 트로포닌과 심전도가 정상이거나 애매한 저~중간 위험 흉통에서 관상동맥질환을 배제하려 한다면 정답이 된다.\n③ 정맥 혈전용해제는 인접한 두 유도 이상에서 ST 가 올라간 ST분절상승 심근경색이고 일차 관상동맥중재술이 120분 안에 불가능하다면 정답이 된다.\n④ 운동부하검사 뒤 외래 추적은 같은 흉통이라도 트로포닌이 반복 측정에서 정상이고 심전도 변화가 없는 저위험 환자라면 정답이 된다.\n⑤ 2시간 이내 응급 조영술은 지금도 흉통이 이어지거나 저혈압·심부전·심실빈맥이 있는 초고위험 환자라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "트로포닌 상승을 보고 응급 재관류(혈전용해제·2시간 내 조영술)로 가는 것 — ST 상승이 없고 안정되어 있으면 24시간 이내 조영술이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "ST 하강·T파 역위와 트로포닌 상승이 있는 안정된 비ST분절상승 심근경색에 24시간 이내 침습적 관상동맥조영술을 정하고 혈전용해제를 쓰지 않는 이유를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2109 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "ST 상승 없이 ST 하강·T파 역위와 트로포닌 상승이 있는 안정된 환자는 24시간 이내 침습적 관상동맥조영술을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "지금 통증이 없고 혈압·산소포화도가 정상이며 심부전·부정맥이 없다 — 초고위험 기준이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: V4~V6 ST 하강·T파 역위, ST 상승 없음 → 비ST분절상승 급성 관상동맥증후군",
+    "트로포닌 상승·추가 상승 → 비ST분절상승 심근경색 = 고위험",
+    "통증 소실·혈역학 안정 → 초고위험 아님, 24시간 이내 조영술"
+   ],
+   "key": [
+    {
+     "item": "영상: V4~V6 수평형 ST 하강과 T파 역위, ST 상승 없음",
+     "why": "ST분절상승이 아닌 허혈",
+     "also": []
+    },
+    {
+     "item": "참고치 상한의 4배였고 1시간 뒤 더 올랐다",
+     "why": "심근경색 — 고위험 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "지금은 편하다",
+     "why": "난치성 흉통이 아니다 — 2시간 내 조영술 기준이 아니다",
+     "also": []
+    },
+    {
+     "item": "혈압 138/82 mmHg",
+     "why": "혈역학 안정",
+     "also": []
+    },
+    {
+     "item": "폐 청진에서 수포음은 없다",
+     "why": "급성 심부전 없음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌은 0.8 mg/dL",
+     "why": "조영제 사용에 제약이 없다 — 시기 결정에는 큰 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "ST 상승 없이 ST 하강·T파 역위와 트로포닌 상승이 있는 비ST분절상승 심근경색이고 지금 안정되어 있다. 24시간 이내 침습적 관상동맥조영술을 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "항허혈 치료에도 흉통이 이어지거나 저혈압·급성 심부전이 생겼다면 2시간 이내 응급 조영술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0783.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02109",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2109"
+  },
+  "run_id": "20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0782",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 오래전 심한 가슴 통증을 참고 넘긴 고령 남성",
+  "type": "심전도 판독 — 오래전 심한 가슴 통증을 참고 넘긴 고령 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-24",
+  "vignette": "75세 남자가 탈장 수술 전 검사로 찍은 심전도에서 이상이 있다는 말을 듣고 왔다. 5년 전 가슴이 짓눌리는 통증이 몇 시간 이어진 적이 있으나 병원에 가지 않았다. 지금은 가슴 통증이나 호흡곤란이 없다. 고혈압과 당뇨병으로 약을 먹고 있다. 혈압 136/80 mmHg, 맥박 66회/분이고 심잡음은 없다. 고감도 트로포닌 I 는 참고치 이내이다. 심초음파에서 국소 벽운동 이상이 있고 좌심실 박출률은 50 % 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "후벽 심근경색",
+   "좌각차단",
+   "하벽 심근경색",
+   "전중격 심근경색",
+   "측벽 심근경색"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 동리듬이고 QRS 는 좁다. <b>III 에 깊은 QS, aVF 에 작은 q 와 낮은 R</b> 이 있어 하벽 유도(II·III·aVF)에 병적 Q파가 있고, <b>ST 상승은 없다</b>. 트로포닌이 정상이고 5년 전 오래 이어진 흉통이 있었으므로 급성이 아닌 <b>오래된 하벽 심근경색</b>이다. V1~V3 의 R파 진행은 보존되어 전중격 경색이 아니고, I·aVL·V5·V6 에 Q파가 없다.\n- 원리: <b>왜 Q파가 남는가</b>: 심근이 전층으로 괴사해 흉터가 되면 그 부위는 전기적으로 침묵한다. 그 위의 유도는 「창문」을 통해 반대편 벽이 멀어지는 흥분을 보게 되어 처음부터 음성인 큰 Q파(폭 40 ms 이상 또는 R 의 1/4 이상)를 그린다. ST 상승·T파 변화는 몇 주 안에 돌아오지만 Q파는 수년 남는다.<br> <b>왜 하벽인가</b>: II·III·aVF 는 전두면에서 아래쪽을 바라보므로 좌심실 하벽(대개 우관상동맥, 일부 좌회선지)의 상태를 보여 준다. III 하나의 Q파는 정상인에서도 호흡에 따라 보일 수 있으므로, aVF 에도 Q파가 함께 있는지 확인해야 경색으로 읽는다.<br> <b>임상 의미</b>: 증상 없이 발견된 Q파 경색(미인지 경색)은 당뇨병 환자·노인에서 흔하고, 향후 심혈관 사건 위험이 높아 이차 예방(항혈소판제·스타틴)이 필요하다.\n- 비교: <table><thead><tr><th style=\"width:24%\">경색 부위</th><th style=\"width:38%\">Q파가 보이는 유도</th><th>주로 막힌 혈관</th></tr></thead><tbody> <tr><td><b>하벽 — 정답</b></td><td><b>II · III · aVF</b></td><td>우관상동맥(또는 좌회선지)</td></tr> <tr><td>전중격 — 가장 가까운 오답</td><td>V1 ~ V3(R파 진행 소실)</td><td>좌전하행지</td></tr> <tr><td>측벽</td><td>I · aVL · V5 · V6</td><td>좌회선지·대각지</td></tr> <tr><td>후벽</td><td>V1·V2 의 큰 R(거울상)</td><td>우관상동맥·좌회선지</td></tr> </tbody></table> Q파가 어느 유도 묶음에 몰려 있는지 보고 그 유도가 바라보는 벽을 떠올리면 된다.\n- 오답 이유:\n  - ① 후벽 심근경색은 V1·V2 에 R 이 S 보다 큰 키 큰 R파와 똑바른 T파(앞쪽 유도의 거울상)가 있었다면 정답이 된다.\n  - ② 좌각차단은 QRS 가 120 ms 이상 넓고 I·V6 에 넓은 끝이 패인 R, V1 에 깊은 QS 가 있었다면 정답이 된다.\n  - ④ 전중격 심근경색은 V1~V3 에 QS 파가 있고 R파가 자라지 않았다면(R파 진행 소실) 정답이 된다.\n  - ⑤ 측벽 심근경색은 I·aVL·V5·V6 에 병적 Q파가 있었다면 정답이 된다 — 이 심전도에서 그 유도들은 큰 R 을 보인다.\n- 함정: III 하나의 Q파만 보고 판단하는 것 — aVF 에도 Q파가 함께 있고 ST 상승이 없는지(오래된 경색) 같이 확인한다.\n- 학습목표: III·aVF 의 병적 Q파와 ST 상승이 없는 심전도를 오래된 하벽 심근경색으로 판독하고 전벽·측벽·후벽 경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2719 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동리듬이고 QRS 는 좁다. <b>III 에 깊은 QS, aVF 에 작은 q 와 낮은 R</b> 이 있어 하벽 유도(II·III·aVF)에 병적 Q파가 있고, <b>ST 상승은 없다</b>. 트로포닌이 정상이고 5년 전 오래 이어진 흉통이 있었으므로 급성이 아닌 <b>오래된 하벽 심근경색</b>이다. V1~V3 의 R파 진행은 보존되어 전중격 경색이 아니고, I·aVL·V5·V6 에 Q파가 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 Q파가 남는가</b>: 심근이 전층으로 괴사해 흉터가 되면 그 부위는 전기적으로 침묵한다. 그 위의 유도는 「창문」을 통해 반대편 벽이 멀어지는 흥분을 보게 되어 처음부터 음성인 큰 Q파(폭 40 ms 이상 또는 R 의 1/4 이상)를 그린다. ST 상승·T파 변화는 몇 주 안에 돌아오지만 Q파는 수년 남는다.<br> <b>왜 하벽인가</b>: II·III·aVF 는 전두면에서 아래쪽을 바라보므로 좌심실 하벽(대개 우관상동맥, 일부 좌회선지)의 상태를 보여 준다. III 하나의 Q파는 정상인에서도 호흡에 따라 보일 수 있으므로, aVF 에도 Q파가 함께 있는지 확인해야 경색으로 읽는다.<br> <b>임상 의미</b>: 증상 없이 발견된 Q파 경색(미인지 경색)은 당뇨병 환자·노인에서 흔하고, 향후 심혈관 사건 위험이 높아 이차 예방(항혈소판제·스타틴)이 필요하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">경색 부위</th><th style=\"width:38%\">Q파가 보이는 유도</th><th>주로 막힌 혈관</th></tr></thead><tbody> <tr><td><b>하벽 — 정답</b></td><td><b>II · III · aVF</b></td><td>우관상동맥(또는 좌회선지)</td></tr> <tr><td>전중격 — 가장 가까운 오답</td><td>V1 ~ V3(R파 진행 소실)</td><td>좌전하행지</td></tr> <tr><td>측벽</td><td>I · aVL · V5 · V6</td><td>좌회선지·대각지</td></tr> <tr><td>후벽</td><td>V1·V2 의 큰 R(거울상)</td><td>우관상동맥·좌회선지</td></tr> </tbody></table> Q파가 어느 유도 묶음에 몰려 있는지 보고 그 유도가 바라보는 벽을 떠올리면 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 후벽 심근경색은 V1·V2 에 R 이 S 보다 큰 키 큰 R파와 똑바른 T파(앞쪽 유도의 거울상)가 있었다면 정답이 된다.\n② 좌각차단은 QRS 가 120 ms 이상 넓고 I·V6 에 넓은 끝이 패인 R, V1 에 깊은 QS 가 있었다면 정답이 된다.\n④ 전중격 심근경색은 V1~V3 에 QS 파가 있고 R파가 자라지 않았다면(R파 진행 소실) 정답이 된다.\n⑤ 측벽 심근경색은 I·aVL·V5·V6 에 병적 Q파가 있었다면 정답이 된다 — 이 심전도에서 그 유도들은 큰 R 을 보인다."
+   },
+   {
+    "k": "함정",
+    "v": "III 하나의 Q파만 보고 판단하는 것 — aVF 에도 Q파가 함께 있고 ST 상승이 없는지(오래된 경색) 같이 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "III·aVF 의 병적 Q파와 ST 상승이 없는 심전도를 오래된 하벽 심근경색으로 판독하고 전벽·측벽·후벽 경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2719 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "III·aVF 에 병적 Q파가 있고 ST 상승이 없으며 트로포닌이 정상이면 오래된 하벽 심근경색이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Q파가 V1~V3 가 아니라 III·aVF 에 있고 앞가슴 유도의 R파 진행은 보존되어 있다",
+   "steps": 2,
+   "chain": [
+    "영상: III 깊은 QS, aVF 작은 q·낮은 R, ST 상승 없음 → 하벽 유도의 병적 Q파",
+    "트로포닌 정상 + 5년 전 오래 이어진 흉통 → 오래된 하벽 심근경색"
+   ],
+   "key": [
+    {
+     "item": "영상: III 깊은 QS 와 aVF 의 작은 q·낮은 R",
+     "why": "하벽 유도의 병적 Q파",
+     "also": []
+    },
+    {
+     "item": "5년 전 가슴이 짓눌리는 통증이 몇 시간 이어진 적이 있으나",
+     "why": "미인지 경색의 시점",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: V1~V3 R파 진행 보존, I·aVL·V5·V6 Q파 없음",
+     "why": "전중격·측벽 경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "고감도 트로포닌 I 는 참고치 이내",
+     "why": "급성 경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압과 당뇨병",
+     "why": "미인지 경색이 흔한 배경 — 부위 판독과는 별개",
+     "also": []
+    }
+   ],
+   "summary": "III·aVF 에 병적 Q파가 있고 ST 상승은 없으며 트로포닌은 정상이다. 오래된 하벽 심근경색이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "V1~V3 에 QS 파가 있고 R파가 자라지 않았다면 전중격 심근경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0782.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02719",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2719"
+  },
+  "run_id": "20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0780",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "소아 — 2주 전 넘어진 아이의 손목 측면 X선",
+  "type": "소아 — 2주 전 넘어진 아이의 손목 측면 X선",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-24",
+  "vignette": "A 6-year-old girl is brought to the clinic because of left wrist pain. Two weeks ago, she fell from a swing onto her outstretched left hand. She cried briefly, and her parents applied ice; the pain improved, so they did not seek care. She still avoids leaning on the hand and has mild pain when carrying her school bag. She has had no fever, and she is otherwise healthy. The parents' account is consistent, and she has no other bruises or injuries. Temperature is 36.8°C (98.2°F). There is mild swelling and tenderness over the distal radius without deformity, erythema, or warmth. Finger movement, sensation, and capillary refill are normal. Leukocyte count is 7,800/mm3, and C-reactive protein concentration is within the reference range. A lateral x-ray of the left wrist is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous antibiotics for osteomyelitis",
+   "Skeletal survey for suspected physical abuse",
+   "Immobilization in a short-arm cast or splint without reduction",
+   "Closed reduction under sedation followed by a long-arm cast",
+   "MRI of the wrist to evaluate for a bone tumor"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The lateral view shows a <b>transverse sclerotic band in the distal radial metaphysis</b> with an angular bend of the cortex and <b>thin, smooth periosteal new bone</b> along the cortex next to it. The physis is open and not involved, and alignment is preserved. Smooth periosteal new bone and sclerosis at a fracture site appear 7–14 days after injury, so this is a <b>healing fracture whose age matches the 2-week history</b>. An aligned metaphyseal fracture in a child is treated with immobilization alone; the remaining pain settles as it consolidates.\n- 원리: <b>Why bone appears along the cortex</b>: A child's periosteum is thick, loosely attached, and highly cellular. After a fracture, it lifts away from the cortex and its inner layer begins laying down woven bone within about 1–2 weeks. On a radiograph this appears as a thin, smooth layer parallel to the cortex — callus — and the fracture line itself becomes a sclerotic band as new bone fills it.<br> <b>Why this does not suggest tumor or infection</b>: Aggressive lesions produce interrupted, layered or spiculated periosteal reaction with bone destruction, and osteomyelitis comes with fever, warmth and raised inflammatory markers. Here the reaction is smooth and confined to a known fracture site, and the markers are normal.<br> <b>Why no reduction</b>: Metaphyseal fractures near an open physis remodel rapidly in young children, and this one is aligned; manipulation would add sedation risk without benefit.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Healing fracture (answer)</th><th>Bone tumor or osteomyelitis (closest distractors)</th></tr></thead><tbody> <tr><td>History</td><td>Fall 2 weeks ago, improving pain</td><td>No trauma or trivial trauma, worsening night pain or fever</td></tr> <tr><td>Periosteal reaction</td><td><b>Thin, smooth, continuous, at fracture site</b></td><td>Lamellated, interrupted, or spiculated</td></tr> <tr><td>Bone</td><td>Sclerotic healing line, no destruction</td><td>Lytic destruction, permeative margins</td></tr> <tr><td>Labs</td><td>Normal</td><td>Raised CRP and leukocytes in infection</td></tr> </tbody></table> Match the periosteal reaction to the history: smooth new bone 1–2 weeks after a known fall is healing; aggressive reaction without a matching history needs further imaging.\n- 오답 이유:\n  - (A) Intravenous antibiotics would be correct if she had fever, warmth, and raised CRP and leukocytes suggesting osteomyelitis.\n  - (B) A skeletal survey would be correct for a child younger than 2 years, or if the history were inconsistent with the injury or other unexplained injuries were present.\n  - (D) Closed reduction would be correct if the distal fragment were angulated beyond acceptable limits for her age or displaced with a visible deformity.\n  - (E) MRI for a bone tumor would be correct if the periosteal reaction were layered or spiculated with lytic destruction and no matching history of trauma.\n- 함정: Periosteal reaction sounds like tumor or infection — when it is smooth, at a fracture site, and its age matches the history, it is callus.\n- 학습목표: Recognize smooth periosteal new bone and a sclerotic band at a distal radial metaphyseal fracture as normal healing 2 weeks after injury, and manage the aligned healing fracture with immobilization rather than reduction or evaluation for tumor or infection\n- 근거·출처: Nagy E, Janisch M, Hržić F, Sorantin E, Tschauner S. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data. 2022;9:222 · Waters PM, Skaggs DL, Flynn JM, eds. Rockwood and Wilkins' Fractures in Children, 9th ed. Wolters Kluwer; 2020 — distal radius and ulna fractures\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The lateral view shows a <b>transverse sclerotic band in the distal radial metaphysis</b> with an angular bend of the cortex and <b>thin, smooth periosteal new bone</b> along the cortex next to it. The physis is open and not involved, and alignment is preserved. Smooth periosteal new bone and sclerosis at a fracture site appear 7–14 days after injury, so this is a <b>healing fracture whose age matches the 2-week history</b>. An aligned metaphyseal fracture in a child is treated with immobilization alone; the remaining pain settles as it consolidates."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why bone appears along the cortex</b>: A child's periosteum is thick, loosely attached, and highly cellular. After a fracture, it lifts away from the cortex and its inner layer begins laying down woven bone within about 1–2 weeks. On a radiograph this appears as a thin, smooth layer parallel to the cortex — callus — and the fracture line itself becomes a sclerotic band as new bone fills it.<br> <b>Why this does not suggest tumor or infection</b>: Aggressive lesions produce interrupted, layered or spiculated periosteal reaction with bone destruction, and osteomyelitis comes with fever, warmth and raised inflammatory markers. Here the reaction is smooth and confined to a known fracture site, and the markers are normal.<br> <b>Why no reduction</b>: Metaphyseal fractures near an open physis remodel rapidly in young children, and this one is aligned; manipulation would add sedation risk without benefit."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Healing fracture (answer)</th><th>Bone tumor or osteomyelitis (closest distractors)</th></tr></thead><tbody> <tr><td>History</td><td>Fall 2 weeks ago, improving pain</td><td>No trauma or trivial trauma, worsening night pain or fever</td></tr> <tr><td>Periosteal reaction</td><td><b>Thin, smooth, continuous, at fracture site</b></td><td>Lamellated, interrupted, or spiculated</td></tr> <tr><td>Bone</td><td>Sclerotic healing line, no destruction</td><td>Lytic destruction, permeative margins</td></tr> <tr><td>Labs</td><td>Normal</td><td>Raised CRP and leukocytes in infection</td></tr> </tbody></table> Match the periosteal reaction to the history: smooth new bone 1–2 weeks after a known fall is healing; aggressive reaction without a matching history needs further imaging."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intravenous antibiotics would be correct if she had fever, warmth, and raised CRP and leukocytes suggesting osteomyelitis.\n(B) A skeletal survey would be correct for a child younger than 2 years, or if the history were inconsistent with the injury or other unexplained injuries were present.\n(D) Closed reduction would be correct if the distal fragment were angulated beyond acceptable limits for her age or displaced with a visible deformity.\n(E) MRI for a bone tumor would be correct if the periosteal reaction were layered or spiculated with lytic destruction and no matching history of trauma."
+   },
+   {
+    "k": "함정",
+    "v": "Periosteal reaction sounds like tumor or infection — when it is smooth, at a fracture site, and its age matches the history, it is callus."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize smooth periosteal new bone and a sclerotic band at a distal radial metaphyseal fracture as normal healing 2 weeks after injury, and manage the aligned healing fracture with immobilization rather than reduction or evaluation for tumor or infection"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Nagy E, Janisch M, Hržić F, Sorantin E, Tschauner S. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data. 2022;9:222 · Waters PM, Skaggs DL, Flynn JM, eds. Rockwood and Wilkins' Fractures in Children, 9th ed. Wolters Kluwer; 2020 — distal radius and ulna fractures ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "넘어진 지 2주 뒤 원위 요골 골간단의 경화띠와 매끈한 골막 신생골은 치유 중인 골절이며, 정렬이 맞으면 정복 없이 고정한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "골막 반응이 얇고 매끈하며 골절 부위에 국한되고 2주 병력과 시기가 맞는다 — 골파괴가 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 원위 요골 골간단 가로 경화띠 + 피질 굴곡 + 얇고 매끈한 골막 신생골 → 치유 중 골절",
+    "2주 전 넘어짐, 열·염증 수치 정상 → 시기가 맞는 가골, 종양·골수염 가능성 낮음",
+    "정렬 유지, 변형 없음 → 정복 없이 고정"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단의 가로 경화띠와 피질의 각진 굴곡",
+     "why": "골절선이 새 뼈로 차는 치유 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 피질을 따라 얇고 매끈한 골막 신생골",
+     "why": "1~2주 된 가골",
+     "also": []
+    },
+    {
+     "item": "Two weeks ago, she fell from a swing onto her outstretched left hand",
+     "why": "가골 시기와 맞는 외상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "C-reactive protein concentration is within the reference range",
+     "why": "골수염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The parents' account is consistent, and she has no other bruises or injuries",
+     "why": "학대 평가가 필요한 상황이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "without deformity",
+     "why": "정렬 유지 — 정복이 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "2주 전 넘어진 아이의 원위 요골 골간단에 경화띠와 얇고 매끈한 골막 신생골이 있다. 시기가 맞는 치유 중 골절이므로 정복 없이 고정한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "18개월 아이이고 보호자 설명이 손상과 맞지 않았다면 골격 검사"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0780.png",
+   "caption": "Lateral radiograph of the left wrist and distal forearm, unaltered apart from scaling (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0033_1100149190_02_WRI-L2_F006",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0778",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "감염 — 산소가 필요 없는 고위험 외래 환자의 바이러스 폐렴 치료",
+  "type": "감염 — 산소가 필요 없는 고위험 외래 환자의 바이러스 폐렴 치료",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-24",
+  "vignette": "A 58-year-old woman comes to the clinic because of fever, dry cough, and fatigue for 3 days. A home antigen test was positive for SARS-CoV-2 yesterday. She has type 2 diabetes mellitus and obesity (BMI 33 kg/m2). Her only medication is metformin. She has not received a COVID-19 vaccine in the past 2 years. Temperature is 38.1°C (100.6°F), pulse is 92/min, respirations are 18/min, and blood pressure is 132/80 mm Hg. Pulse oximetry shows an oxygen saturation of 96% on room air, and it stays at 95% after she walks in the hallway. A few crackles are heard at both lung bases. Serum creatinine and liver enzyme concentrations are within the reference ranges. A chest x-ray is shown. She is able to eat and drink and wishes to recover at home.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Amoxicillin-clavulanate plus azithromycin",
+   "Oseltamivir",
+   "Nirmatrelvir-ritonavir",
+   "Oral dexamethasone",
+   "Dexamethasone plus intravenous remdesivir"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The radiograph shows <b>bilateral, peripheral, lower-zone reticular and patchy ground-glass opacities</b> — viral pneumonia — but she <b>does not need oxygen (SpO2 95–96% at rest and with walking)</b>. She is within 5 days of symptom onset and has risk factors for progression (age, diabetes, obesity, no recent vaccination). The recommended treatment for such an outpatient is <b>nirmatrelvir-ritonavir</b>; metformin has no important interaction, and renal and hepatic function are normal.\n- 원리: <b>Why an antiviral now, and not later</b>: Early in COVID-19 the illness is driven by viral replication. Nirmatrelvir blocks the SARS-CoV-2 main protease (Mpro), which cuts the viral polyprotein into working parts; ritonavir only boosts nirmatrelvir by inhibiting CYP3A4. Given within 5 days, it reduced hospitalization and death in unvaccinated high-risk adults.<br> <b>Why not dexamethasone</b>: Later, severe disease is driven by the host inflammatory response, and that is where dexamethasone helps. In RECOVERY, dexamethasone lowered mortality in patients receiving oxygen or ventilation but showed <b>no benefit and a trend toward harm in those who did not need oxygen</b>. Opacities on a radiograph show where the virus is, not that inflammation is causing respiratory failure; oxygen requirement is the threshold.<br> <b>Practical check</b>: Because ritonavir inhibits CYP3A4, the medication list must be reviewed before prescribing.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Nirmatrelvir-ritonavir (answer)</th><th>Dexamethasone (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Viral replication (protease)</td><td>Host inflammation</td></tr> <tr><td>Who benefits</td><td><b>High-risk, no oxygen need, ≤ 5 days</b></td><td><b>Hypoxemic patients on oxygen or ventilation</b></td></tr> <tr><td>Without hypoxemia</td><td>Recommended</td><td>No benefit, possible harm</td></tr> <tr><td>Caution</td><td>CYP3A4 drug interactions, severe renal or hepatic impairment</td><td>Hyperglycemia, secondary infection</td></tr> </tbody></table> Decide by oxygen need, not by the radiograph: no oxygen — antiviral for the high-risk patient; oxygen — dexamethasone (with remdesivir in some).\n- 오답 이유:\n  - (A) Amoxicillin-clavulanate plus azithromycin would be considered if she had a lobar consolidation, purulent sputum, or a procalcitonin level suggesting bacterial pneumonia.\n  - (B) Oseltamivir would be correct if the test had shown influenza; it has no activity against SARS-CoV-2.\n  - (D) Oral dexamethasone would be appropriate if her oxygen saturation fell below 94% and she required supplemental oxygen.\n  - (E) Dexamethasone plus remdesivir would be correct for a hospitalized patient who needs conventional supplemental oxygen.\n- 함정: Seeing pneumonia on the radiograph and reaching for dexamethasone — without an oxygen requirement corticosteroids do not help.\n- 학습목표: Treat high-risk outpatients with COVID-19 who do not need supplemental oxygen with nirmatrelvir-ritonavir within 5 days of symptom onset, and recognize that radiographic pneumonia without hypoxemia is not an indication for dexamethasone\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic management of nonhospitalized adults with COVID-19 (final version, 2024) · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38796755 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows <b>bilateral, peripheral, lower-zone reticular and patchy ground-glass opacities</b> — viral pneumonia — but she <b>does not need oxygen (SpO2 95–96% at rest and with walking)</b>. She is within 5 days of symptom onset and has risk factors for progression (age, diabetes, obesity, no recent vaccination). The recommended treatment for such an outpatient is <b>nirmatrelvir-ritonavir</b>; metformin has no important interaction, and renal and hepatic function are normal."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why an antiviral now, and not later</b>: Early in COVID-19 the illness is driven by viral replication. Nirmatrelvir blocks the SARS-CoV-2 main protease (Mpro), which cuts the viral polyprotein into working parts; ritonavir only boosts nirmatrelvir by inhibiting CYP3A4. Given within 5 days, it reduced hospitalization and death in unvaccinated high-risk adults.<br> <b>Why not dexamethasone</b>: Later, severe disease is driven by the host inflammatory response, and that is where dexamethasone helps. In RECOVERY, dexamethasone lowered mortality in patients receiving oxygen or ventilation but showed <b>no benefit and a trend toward harm in those who did not need oxygen</b>. Opacities on a radiograph show where the virus is, not that inflammation is causing respiratory failure; oxygen requirement is the threshold.<br> <b>Practical check</b>: Because ritonavir inhibits CYP3A4, the medication list must be reviewed before prescribing."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Nirmatrelvir-ritonavir (answer)</th><th>Dexamethasone (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Viral replication (protease)</td><td>Host inflammation</td></tr> <tr><td>Who benefits</td><td><b>High-risk, no oxygen need, ≤ 5 days</b></td><td><b>Hypoxemic patients on oxygen or ventilation</b></td></tr> <tr><td>Without hypoxemia</td><td>Recommended</td><td>No benefit, possible harm</td></tr> <tr><td>Caution</td><td>CYP3A4 drug interactions, severe renal or hepatic impairment</td><td>Hyperglycemia, secondary infection</td></tr> </tbody></table> Decide by oxygen need, not by the radiograph: no oxygen — antiviral for the high-risk patient; oxygen — dexamethasone (with remdesivir in some)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Amoxicillin-clavulanate plus azithromycin would be considered if she had a lobar consolidation, purulent sputum, or a procalcitonin level suggesting bacterial pneumonia.\n(B) Oseltamivir would be correct if the test had shown influenza; it has no activity against SARS-CoV-2.\n(D) Oral dexamethasone would be appropriate if her oxygen saturation fell below 94% and she required supplemental oxygen.\n(E) Dexamethasone plus remdesivir would be correct for a hospitalized patient who needs conventional supplemental oxygen."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing pneumonia on the radiograph and reaching for dexamethasone — without an oxygen requirement corticosteroids do not help."
+   },
+   {
+    "k": "학습목표",
+    "v": "Treat high-risk outpatients with COVID-19 who do not need supplemental oxygen with nirmatrelvir-ritonavir within 5 days of symptom onset, and recognize that radiographic pneumonia without hypoxemia is not an indication for dexamethasone"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic management of nonhospitalized adults with COVID-19 (final version, 2024) · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med. 2021;384(8):693-704 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38796755 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "산소가 필요 없는 고위험 외래 코로나바이러스감염증-19 는 증상 5일 이내 니르마트렐비르-리토나비르로 치료한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "안정·보행 시 산소포화도가 95~96% 로 산소가 필요 없다 — 덱사메타손은 산소가 필요한 환자에서만 이득",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 하폐야 말초 간유리음영 → 바이러스 폐렴(하기도 침범)",
+    "산소포화도 95~96%, 외래 회복 가능 → 산소가 필요 없는 중등증, 스테로이드 적응 아님",
+    "증상 3일 + 당뇨·비만·백신 미접종 → 니르마트렐비르-리토나비르"
+   ],
+   "key": [
+    {
+     "item": "oxygen saturation of 96% on room air",
+     "why": "산소가 필요 없다 — 덱사메타손 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "it stays at 95% after she walks in the hallway",
+     "why": "운동 시에도 저산소증이 없다",
+     "also": []
+    },
+    {
+     "item": "for 3 days",
+     "why": "증상 5일 이내 — 항바이러스제 투여 시기",
+     "also": []
+    },
+    {
+     "item": "type 2 diabetes mellitus and obesity",
+     "why": "진행 위험인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "영상: 양쪽 하폐야 말초 우세의 그물·반점상 간유리음영",
+     "why": "폐렴이 있어도 산소 요구가 없으면 치료 단계는 같다 — 스테로이드로 끌려가기 쉬운 정보",
+     "also": []
+    },
+    {
+     "item": "Her only medication is metformin",
+     "why": "리토나비르와 중요한 상호작용이 없다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine and liver enzyme concentrations are within the reference ranges",
+     "why": "용량 조절·금기가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "흉부 X선에 바이러스 폐렴이 있으나 산소가 필요 없고 증상 3일째인 고위험 외래 환자다. 덱사메타손이 아니라 니르마트렐비르-리토나비르를 쓴다.",
+   "switch": {
+    "choice": "E",
+    "condition": "산소포화도가 90% 로 떨어져 입원해 일반 산소가 필요했다면 덱사메타손과 렘데시비르"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0778.png",
+   "caption": "Upright posteroanterior chest radiograph; the Upright and L markers are from the original, resized only (The Cancer Imaging Archive, CC BY 4.0)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1972749356772336248178438796755",
+   "asset_id": "TCIA-COVID19_AR-06530909207773",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38796755"
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0776",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "신경 — 아침 두통과 첫 경련으로 찍은 뇌 MRI 의 촬영 기법",
+  "type": "신경 — 아침 두통과 첫 경련으로 찍은 뇌 MRI 의 촬영 기법",
+  "modality": "MR",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-24",
+  "vignette": "29세 남자가 3주 전부터 아침에 심해지는 두통으로 왔다. 2일 전 처음으로 오른손이 1분 동안 떨렸다고 한다. 다른 병은 없고 먹는 약도 없다. 활력징후는 정상이고 신경학적 진찰에서 국소 이상은 없다. 혈청 전해질과 포도당은 참고치 이내이다. 종양 검사 프로토콜로 뇌 MRI 를 시행하였고, 정수리 부근의 축상 영상 하나는 그림과 같다.",
+  "question": "이 영상의 촬영 기법으로 가장 적절한 것은?",
+  "options": [
+   "비조영 T1 강조영상",
+   "T2 강조영상",
+   "FLAIR 영상",
+   "확산강조영상",
+   "조영 T1 강조영상"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 고랑의 <b>뇌척수액이 어둡고</b> 백색질이 회색질보다 조금 밝으며 두피 지방이 밝다 — T1 강조 대비다. 여기에 <b>대뇌낫을 따라 피질 정맥과 상시상정맥동이 점·선 모양으로 밝게</b> 보인다. 혈뇌장벽이 없는 정맥동·정맥은 가돌리늄이 들어가야 밝아지므로 조영 T1 강조영상이다. 이 단면에는 증강되는 종양이 보이지 않는다.\n- 원리: <b>왜 T1 에서 백색질이 밝은가</b>: T1 이완은 지질·거대분자가 많은 조직에서 빠르다. 수초가 많은 백색질은 세로 자화가 빨리 회복되어 회색질보다 밝고, 자유수(뇌척수액·부종)는 느리게 회복되어 어둡다. 지방은 매우 밝다.<br> <b>가돌리늄이 바꾸는 것</b>: 가돌리늄은 자신이 머무는 곳의 T1 을 짧게 해 밝게 만든다. 혈뇌장벽이 없는 정상 구조(정맥동·피질 정맥·맥락얼기·뇌하수체·경막)는 조영 뒤 밝아지고, 장벽이 깨진 고등급 신경교종·전이암은 불규칙한 증강 테두리를 보인다. 같은 위치의 조영 전 T1 과 비교해야 원래 밝은 피·지방과 진짜 증강을 구별할 수 있다.<br> <b>FLAIR 와의 차이</b>: FLAIR 는 뇌척수액 신호를 지운 T2 강조영상이다. 뇌척수액이 어두운 것은 같지만 회색질이 백색질보다 밝고 정맥이 밝게 증강되지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">조영 T1 — 정답</th><th>비조영 T1 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>뇌척수액</td><td>어둡다</td><td>어둡다</td></tr> <tr><td>백색질 대 회색질</td><td>백색질이 밝다</td><td>백색질이 밝다</td></tr> <tr><td>정맥동·피질 정맥·경막</td><td><b>밝다</b></td><td><b>밝지 않다</b></td></tr> <tr><td>고등급 종양</td><td>불규칙한 증강 테두리</td><td>저신호 또는 섞인 신호</td></tr> </tbody></table> 두 T1 영상은 회색질-백색질 대비가 같다 — 정상적으로 증강되는 구조가 밝은지만 보고 가른다.\n- 오답 이유:\n  - ① 비조영 T1 강조영상은 대비는 같지만 대뇌낫 주위의 피질 정맥과 상시상정맥동이 밝지 않았다면 정답이 된다.\n  - ② T2 강조영상은 고랑과 뇌실의 뇌척수액이 밝고 회색질이 백색질보다 밝았다면 정답이 된다.\n  - ③ FLAIR 영상은 뇌척수액은 어둡지만 회색질이 백색질보다 밝고 부종·탈수초 병변이 밝게 보였다면 정답이 된다.\n  - ④ 확산강조영상은 해상도가 낮고 전반적으로 흐린 영상에서 급성 경색·농양만 밝게 보였다면 정답이 된다.\n- 함정: 뇌척수액이 어두운 것만 보고 FLAIR 를 고르거나, 종양이 보이지 않는다고 조영 전 영상으로 판단하는 것 — 정상 정맥의 증강을 본다.\n- 학습목표: 축상 뇌 MRI 에서 뇌척수액이 어둡고 백색질이 회색질보다 밝으면서 피질 정맥·정맥동이 밝게 증강된 영상을 조영 T1 강조영상으로 읽고 비조영 T1·FLAIR 와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 95: Primary and Metastatic Tumors of the Nervous System\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …97175784 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "고랑의 <b>뇌척수액이 어둡고</b> 백색질이 회색질보다 조금 밝으며 두피 지방이 밝다 — T1 강조 대비다. 여기에 <b>대뇌낫을 따라 피질 정맥과 상시상정맥동이 점·선 모양으로 밝게</b> 보인다. 혈뇌장벽이 없는 정맥동·정맥은 가돌리늄이 들어가야 밝아지므로 조영 T1 강조영상이다. 이 단면에는 증강되는 종양이 보이지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 T1 에서 백색질이 밝은가</b>: T1 이완은 지질·거대분자가 많은 조직에서 빠르다. 수초가 많은 백색질은 세로 자화가 빨리 회복되어 회색질보다 밝고, 자유수(뇌척수액·부종)는 느리게 회복되어 어둡다. 지방은 매우 밝다.<br> <b>가돌리늄이 바꾸는 것</b>: 가돌리늄은 자신이 머무는 곳의 T1 을 짧게 해 밝게 만든다. 혈뇌장벽이 없는 정상 구조(정맥동·피질 정맥·맥락얼기·뇌하수체·경막)는 조영 뒤 밝아지고, 장벽이 깨진 고등급 신경교종·전이암은 불규칙한 증강 테두리를 보인다. 같은 위치의 조영 전 T1 과 비교해야 원래 밝은 피·지방과 진짜 증강을 구별할 수 있다.<br> <b>FLAIR 와의 차이</b>: FLAIR 는 뇌척수액 신호를 지운 T2 강조영상이다. 뇌척수액이 어두운 것은 같지만 회색질이 백색질보다 밝고 정맥이 밝게 증강되지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">조영 T1 — 정답</th><th>비조영 T1 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>뇌척수액</td><td>어둡다</td><td>어둡다</td></tr> <tr><td>백색질 대 회색질</td><td>백색질이 밝다</td><td>백색질이 밝다</td></tr> <tr><td>정맥동·피질 정맥·경막</td><td><b>밝다</b></td><td><b>밝지 않다</b></td></tr> <tr><td>고등급 종양</td><td>불규칙한 증강 테두리</td><td>저신호 또는 섞인 신호</td></tr> </tbody></table> 두 T1 영상은 회색질-백색질 대비가 같다 — 정상적으로 증강되는 구조가 밝은지만 보고 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 비조영 T1 강조영상은 대비는 같지만 대뇌낫 주위의 피질 정맥과 상시상정맥동이 밝지 않았다면 정답이 된다.\n② T2 강조영상은 고랑과 뇌실의 뇌척수액이 밝고 회색질이 백색질보다 밝았다면 정답이 된다.\n③ FLAIR 영상은 뇌척수액은 어둡지만 회색질이 백색질보다 밝고 부종·탈수초 병변이 밝게 보였다면 정답이 된다.\n④ 확산강조영상은 해상도가 낮고 전반적으로 흐린 영상에서 급성 경색·농양만 밝게 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "뇌척수액이 어두운 것만 보고 FLAIR 를 고르거나, 종양이 보이지 않는다고 조영 전 영상으로 판단하는 것 — 정상 정맥의 증강을 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "축상 뇌 MRI 에서 뇌척수액이 어둡고 백색질이 회색질보다 밝으면서 피질 정맥·정맥동이 밝게 증강된 영상을 조영 T1 강조영상으로 읽고 비조영 T1·FLAIR 와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 434: Neuroimaging in Neurologic Disorders · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 95: Primary and Metastatic Tumors of the Nervous System ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …97175784 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "뇌척수액이 어둡고 백색질이 밝은 T1 대비에서 피질 정맥·정맥동이 밝으면 조영 T1 강조영상이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "대뇌낫을 따라 피질 정맥·상시상정맥동이 밝게 증강된다",
+   "steps": 2,
+   "chain": [
+    "영상: 뇌척수액 어둡고 백색질이 회색질보다 밝으며 두피 지방 밝음 → T1 강조 계열",
+    "영상: 피질 정맥·상시상정맥동이 밝음 → 조영 뒤 T1"
+   ],
+   "key": [
+    {
+     "item": "영상: 뇌척수액이 어둡고 백색질이 회색질보다 밝다",
+     "why": "T1 강조 대비",
+     "also": []
+    },
+    {
+     "item": "영상: 대뇌낫을 따라 피질 정맥·상시상정맥동이 밝다",
+     "why": "조영 뒤 영상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "종양 검사 프로토콜",
+     "why": "조영 전·후 T1 이 모두 있는 프로토콜임을 알려 준다",
+     "also": []
+    },
+    {
+     "item": "오른손이 1분 동안 떨렸다",
+     "why": "뇌 병변을 의심한 이유 — 시퀀스 판단과는 별개",
+     "also": []
+    },
+    {
+     "item": "혈청 전해질과 포도당은 참고치 이내",
+     "why": "대사성 경련 원인 확인 — 영상 판단과 무관",
+     "also": []
+    }
+   ],
+   "summary": "뇌척수액이 어둡고 백색질이 밝은 T1 대비에 피질 정맥·정맥동이 밝게 증강되어 있다. 조영 T1 강조영상이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 대비에서 정맥동·피질 정맥이 밝지 않았다면 비조영 T1 강조영상"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0776.png",
+   "caption": "축상 뇌 MRI 한 장(표준 임상 프로토콜), DICOM 변환만 — 크롭·보정 없음 (The Cancer Imaging Archive, CC BY 4.0)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.217000557403744457867566250782797175784",
+   "asset_id": "TCIA-UPENN_GBM-97536312055716",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …97175784"
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0774",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "응급 — 산소마스크에도 오르지 않는 산소포화도의 기전",
+  "type": "응급 — 산소마스크에도 오르지 않는 산소포화도의 기전",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-24",
+  "vignette": "73세 여자가 2일 전부터 심해진 호흡곤란으로 응급실에 왔다. 8일 전 비인두 검체의 SARS-CoV-2 핵산증폭검사가 양성이었다. 체온 38.2℃, 맥박 104회/분, 호흡 32회/분, 혈압 128/74 mmHg 이다. 비재호흡 마스크로 산소를 투여하는 중에도 산소포화도는 84 % 이고, 양쪽 폐에서 수포음이 들린다. 이 마스크를 쓴 상태의 동맥혈가스검사는 pH 7.46, PaCO2 33 mmHg, PaO2 58 mmHg 이다. 응급 심초음파에서 좌심실 크기와 수축 기능은 정상이다. 흉부 X선 사진은 그림과 같다.",
+  "question": "저산소증의 주된 기전으로 가장 적절한 것은?",
+  "options": [
+   "폐포 저환기",
+   "확산 장애",
+   "흡입 산소분압 저하",
+   "폐내 단락",
+   "환기-관류 불균형"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 <b>양쪽 폐 전반에 반점상·융합성 음영</b>이 있어 폐포가 삼출물로 차 있다. 그 폐포를 지나는 혈액은 흡입 가스를 만나지 못해 정맥혈 산소량 그대로 좌심으로 돌아간다 — <b>단락</b>이다. 단락의 특징은 <b>고농도 산소(비재호흡 마스크)에도 PaO2 가 58 mmHg 에 머무는 것</b>이다. PaCO2 가 낮아 저환기가 아니고, 좌심실 기능이 정상이라 심인성 폐부종 가능성도 낮다.\n- 원리: <b>왜 단락에는 산소가 듣지 않는가</b>: 흡입 산소 농도를 올리면 환기되는 폐포의 산소분압만 오른다. 물이 찬 폐포에는 산소를 높일 가스가 없으므로 그 혈액은 정맥혈 산소량 그대로다. 환기되는 폐포를 지난 혈액은 이미 거의 포화되어 더 실을 수 없으므로 섞였을 때 모자란 산소를 메우지 못한다. 단락률이 약 30 % 를 넘으면 산소를 100 % 로 주어도 PaO2 가 거의 오르지 않는다.<br> <b>환기-관류 불균형은 왜 다른가</b>: 환기-관류 비가 낮은 폐포는 환기가 적을 뿐 가스가 드나든다. 고농도 산소를 마시면 결국 그 폐포의 산소분압도 올라 저산소증이 대부분 교정된다.<br> <b>치료로 이어지는 의미</b>: 단락은 산소를 더 주는 것만으로는 안 되고, 호기말양압·엎드린 자세로 닫힌 폐포를 다시 여는 것이 핵심이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">폐내 단락 — 정답</th><th>환기-관류 불균형 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>폐포</td><td>관류되지만 <b>환기 없음</b>(물·허탈)</td><td>관류되고 환기가 적음</td></tr> <tr><td>100 % 산소 반응</td><td><b>PaO2 가 거의 오르지 않음</b></td><td>PaO2 가 크게 오름</td></tr> <tr><td>대표 원인</td><td>급성호흡곤란증후군, 엽성 폐렴, 무기폐</td><td>천식, 만성폐쇄폐질환, 폐색전증</td></tr> <tr><td>폐포-동맥 산소분압차</td><td colspan=\"2\">둘 다 커진다 — 산소 반응이 둘을 가른다</td></tr> </tbody></table> 산소로 교정되면 환기-관류 불균형, 교정되지 않으면 단락을 떠올리고 물이 차거나 허탈된 폐포를 찾는다.\n- 오답 이유:\n  - ① 폐포 저환기는 PaCO2 가 올라 있고 폐포-동맥 산소분압차가 정상인 아편유사제 중독·신경근 약화라면 정답이 된다.\n  - ② 확산 장애는 간질성 폐섬유증에서 주로 운동 때 저산소증이 생기고 산소로 쉽게 교정된다면 주된 기전이 된다.\n  - ③ 흡입 산소분압 저하는 고산지대에서 PaO2 와 PaCO2 가 함께 낮고 폐포-동맥 산소분압차가 정상이라면 정답이 된다.\n  - ⑤ 환기-관류 불균형은 천식·만성폐쇄폐질환 악화처럼 기도가 좁아져 있고 산소를 주자 PaO2 가 크게 올랐다면 정답이 된다.\n- 함정: 저산소증의 가장 흔한 원인이라는 이유로 환기-관류 불균형을 고르는 것 — 고농도 산소에도 교정되지 않는다는 점이 단락을 가리킨다.\n- 학습목표: 폐포가 넓게 차 있어 고농도 산소에도 PaO2 가 오르지 않는 저산소증을 폐내 단락으로 설명하고 환기-관류 불균형·폐포 저환기와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 296: Disturbances of Respiratory Function · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …03272875 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 <b>양쪽 폐 전반에 반점상·융합성 음영</b>이 있어 폐포가 삼출물로 차 있다. 그 폐포를 지나는 혈액은 흡입 가스를 만나지 못해 정맥혈 산소량 그대로 좌심으로 돌아간다 — <b>단락</b>이다. 단락의 특징은 <b>고농도 산소(비재호흡 마스크)에도 PaO2 가 58 mmHg 에 머무는 것</b>이다. PaCO2 가 낮아 저환기가 아니고, 좌심실 기능이 정상이라 심인성 폐부종 가능성도 낮다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 단락에는 산소가 듣지 않는가</b>: 흡입 산소 농도를 올리면 환기되는 폐포의 산소분압만 오른다. 물이 찬 폐포에는 산소를 높일 가스가 없으므로 그 혈액은 정맥혈 산소량 그대로다. 환기되는 폐포를 지난 혈액은 이미 거의 포화되어 더 실을 수 없으므로 섞였을 때 모자란 산소를 메우지 못한다. 단락률이 약 30 % 를 넘으면 산소를 100 % 로 주어도 PaO2 가 거의 오르지 않는다.<br> <b>환기-관류 불균형은 왜 다른가</b>: 환기-관류 비가 낮은 폐포는 환기가 적을 뿐 가스가 드나든다. 고농도 산소를 마시면 결국 그 폐포의 산소분압도 올라 저산소증이 대부분 교정된다.<br> <b>치료로 이어지는 의미</b>: 단락은 산소를 더 주는 것만으로는 안 되고, 호기말양압·엎드린 자세로 닫힌 폐포를 다시 여는 것이 핵심이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">폐내 단락 — 정답</th><th>환기-관류 불균형 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>폐포</td><td>관류되지만 <b>환기 없음</b>(물·허탈)</td><td>관류되고 환기가 적음</td></tr> <tr><td>100 % 산소 반응</td><td><b>PaO2 가 거의 오르지 않음</b></td><td>PaO2 가 크게 오름</td></tr> <tr><td>대표 원인</td><td>급성호흡곤란증후군, 엽성 폐렴, 무기폐</td><td>천식, 만성폐쇄폐질환, 폐색전증</td></tr> <tr><td>폐포-동맥 산소분압차</td><td colspan=\"2\">둘 다 커진다 — 산소 반응이 둘을 가른다</td></tr> </tbody></table> 산소로 교정되면 환기-관류 불균형, 교정되지 않으면 단락을 떠올리고 물이 차거나 허탈된 폐포를 찾는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폐포 저환기는 PaCO2 가 올라 있고 폐포-동맥 산소분압차가 정상인 아편유사제 중독·신경근 약화라면 정답이 된다.\n② 확산 장애는 간질성 폐섬유증에서 주로 운동 때 저산소증이 생기고 산소로 쉽게 교정된다면 주된 기전이 된다.\n③ 흡입 산소분압 저하는 고산지대에서 PaO2 와 PaCO2 가 함께 낮고 폐포-동맥 산소분압차가 정상이라면 정답이 된다.\n⑤ 환기-관류 불균형은 천식·만성폐쇄폐질환 악화처럼 기도가 좁아져 있고 산소를 주자 PaO2 가 크게 올랐다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "저산소증의 가장 흔한 원인이라는 이유로 환기-관류 불균형을 고르는 것 — 고농도 산소에도 교정되지 않는다는 점이 단락을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐포가 넓게 차 있어 고농도 산소에도 PaO2 가 오르지 않는 저산소증을 폐내 단락으로 설명하고 환기-관류 불균형·폐포 저환기와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 296: Disturbances of Respiratory Function · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …03272875 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "광범위한 폐포 충만으로 고농도 산소에도 PaO2 가 오르지 않는 저산소증은 폐내 단락이 주된 기전이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "비재호흡 마스크로 고농도 산소를 마시는데도 PaO2 58 mmHg — 산소에 반응하지 않는다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 폐 전반의 반점상·융합성 음영 → 폐포가 삼출물로 차 있음",
+    "고농도 산소에도 PaO2 58 mmHg, PaCO2 낮음 → 저환기가 아닌 단락"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐 전반의 반점상·융합성 간유리음영과 경화",
+     "why": "환기되지 않는 폐포 — 단락의 해부학적 근거",
+     "also": []
+    },
+    {
+     "item": "PaO2 58 mmHg",
+     "why": "고농도 산소에도 낮다 — 단락의 특징",
+     "also": []
+    },
+    {
+     "item": "비재호흡 마스크로 산소를 투여하는 중",
+     "why": "흡입 산소 농도가 높다는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "PaCO2 33 mmHg",
+     "why": "폐포 저환기 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "좌심실 크기와 수축 기능은 정상",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "SARS-CoV-2 핵산증폭검사가 양성",
+     "why": "원인 질환 — 기전 판단은 영상과 산소 반응이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 폐가 넓게 차 있고 고농도 산소에도 PaO2 가 58 mmHg 에 머문다. 환기되지 않는 폐포를 지나는 폐내 단락이 주된 기전이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "음영 없이 천명이 있고 산소를 주자 PaO2 가 크게 올랐다면 환기-관류 불균형"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0774.png",
+   "caption": "이동식 직립 흉부 전후면 X선, R·Portable·Upright 표지는 원본의 것, 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1566022932007773004430203272875",
+   "asset_id": "TCIA-COVID19_AR-73618238047542",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …03272875"
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0781",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "예방의학 — 인구 집단 기여위험분율 계산",
+  "type": "예방의학 — 인구 집단 기여위험분율 계산",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-24",
+  "vignette": "보건소에서 일하는 45세 남자 의사가 지역 금연사업의 기대 효과를 추정하려고 한다. 이 지역 성인 인구에서 흡연자 비율은 40 % 이다. 이 지역에서 수행한 코호트 연구에서 흡연자의 폐암 발생률은 비흡연자의 10배였고, 흡연 이외의 교란 요인은 보정되었다. 그는 이 지역에서 흡연이 완전히 사라진다면 성인 인구 전체의 폐암 발생 가운데 몇 퍼센트를 줄일 수 있는지 추정하려고 한다.",
+  "question": "인구 집단 기여위험분율로 가장 가까운 것은?",
+  "options": [
+   "78 %",
+   "90 %",
+   "36 %",
+   "40 %",
+   "60 %"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 인구 집단 기여위험분율(PAF) = <b>Pe(RR − 1) / [1 + Pe(RR − 1)]</b>. Pe = 0.4, RR = 10 이면 0.4 × 9 = 3.6, 3.6 / 4.6 ≈ <b>0.78</b>. 흡연이 사라지면 인구 전체 폐암의 약 78 % 를 줄일 수 있다.\n- 원리: <b>왜 이 식인가</b>: 비흡연자의 발생률을 I₀ 라 하면 흡연자는 RR × I₀ 이다. 인구 전체 발생률은 (1 − Pe)I₀ + Pe·RR·I₀ = I₀[1 + Pe(RR − 1)] 이다. 흡연이 모두 사라지면 인구 발생률은 I₀ 가 되므로, 줄어드는 몫은 {I₀[1 + Pe(RR − 1)] − I₀} / I₀[1 + Pe(RR − 1)] = Pe(RR − 1) / [1 + Pe(RR − 1)] 이다.<br> <b>두 기여위험분율의 차이</b>: 노출군 기여위험분율 (RR − 1)/RR 은 「흡연자에게 생긴 폐암」 가운데 흡연 때문인 몫(여기서는 90 %)이다. 인구 집단 기여위험분율은 비흡연자에게 생긴 폐암까지 분모에 넣으므로 노출 비율이 낮을수록 작아진다.<br> <b>전제</b>: 인과관계이고, 교란이 보정되었으며, 노출을 없애면 위험이 비노출 수준으로 돌아간다고 가정한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">지표</th><th style=\"width:38%\">인구 집단 기여위험분율 — 정답</th><th>노출군 기여위험분율 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>분모</td><td><b>인구 전체의 발생</b></td><td>노출군(흡연자)의 발생</td></tr> <tr><td>식</td><td>Pe(RR − 1) / [1 + Pe(RR − 1)]</td><td>(RR − 1) / RR</td></tr> <tr><td>이 문항 값</td><td><b>3.6 / 4.6 ≈ 78 %</b></td><td>9 / 10 = 90 %</td></tr> <tr><td>노출 비율의 영향</td><td>Pe 가 작을수록 작아진다</td><td>Pe 와 무관</td></tr> </tbody></table> 질문이 「인구 전체」를 묻는지 「흡연자」를 묻는지를 먼저 보고 식을 고른다.\n- 오답 이유:\n  - ② 90 % 는 노출군 기여위험분율 (RR − 1)/RR 로, 질문이 흡연자에게 생긴 폐암 가운데 흡연 때문인 몫이었다면 정답이 된다.\n  - ③ 36 % 는 Pe × (RR − 1)/RR = 0.4 × 0.9 로, 모든 폐암 환자의 40 % 만 흡연자라는 조건이 주어졌다면 맞는 다른 식의 결과다.\n  - ④ 40 % 는 흡연자 비율 Pe 자체로, 상대위험도가 무한히 커서 비흡연자에게 폐암이 전혀 생기지 않는다면 그 값에 가까워진다.\n  - ⑤ 60 % 는 흡연자 비율 대신 비흡연자 비율을 쓴 오류로, 노출 비율이 60 % 였다면 PAF 는 0.6 × 9 / 6.4 ≈ 84 % 가 되므로 어느 경우에도 맞지 않는다.\n- 함정: (RR − 1)/RR 로 계산해 90 % 를 고르는 것 — 질문은 흡연자가 아니라 인구 전체의 폐암을 묻는다.\n- 학습목표: 노출 비율과 상대위험도로 인구 집단 기여위험분율을 계산하고 노출군 기여위험분율과 구별한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. Elsevier; 2019 — More on risk: estimating the potential for prevention · Rockhill B, Newman B, Weinberg C. Use and misuse of population attributable fractions. Am J Public Health. 1998;88(1):15-19",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "인구 집단 기여위험분율(PAF) = <b>Pe(RR − 1) / [1 + Pe(RR − 1)]</b>. Pe = 0.4, RR = 10 이면 0.4 × 9 = 3.6, 3.6 / 4.6 ≈ <b>0.78</b>. 흡연이 사라지면 인구 전체 폐암의 약 78 % 를 줄일 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이 식인가</b>: 비흡연자의 발생률을 I₀ 라 하면 흡연자는 RR × I₀ 이다. 인구 전체 발생률은 (1 − Pe)I₀ + Pe·RR·I₀ = I₀[1 + Pe(RR − 1)] 이다. 흡연이 모두 사라지면 인구 발생률은 I₀ 가 되므로, 줄어드는 몫은 {I₀[1 + Pe(RR − 1)] − I₀} / I₀[1 + Pe(RR − 1)] = Pe(RR − 1) / [1 + Pe(RR − 1)] 이다.<br> <b>두 기여위험분율의 차이</b>: 노출군 기여위험분율 (RR − 1)/RR 은 「흡연자에게 생긴 폐암」 가운데 흡연 때문인 몫(여기서는 90 %)이다. 인구 집단 기여위험분율은 비흡연자에게 생긴 폐암까지 분모에 넣으므로 노출 비율이 낮을수록 작아진다.<br> <b>전제</b>: 인과관계이고, 교란이 보정되었으며, 노출을 없애면 위험이 비노출 수준으로 돌아간다고 가정한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">지표</th><th style=\"width:38%\">인구 집단 기여위험분율 — 정답</th><th>노출군 기여위험분율 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>분모</td><td><b>인구 전체의 발생</b></td><td>노출군(흡연자)의 발생</td></tr> <tr><td>식</td><td>Pe(RR − 1) / [1 + Pe(RR − 1)]</td><td>(RR − 1) / RR</td></tr> <tr><td>이 문항 값</td><td><b>3.6 / 4.6 ≈ 78 %</b></td><td>9 / 10 = 90 %</td></tr> <tr><td>노출 비율의 영향</td><td>Pe 가 작을수록 작아진다</td><td>Pe 와 무관</td></tr> </tbody></table> 질문이 「인구 전체」를 묻는지 「흡연자」를 묻는지를 먼저 보고 식을 고른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 90 % 는 노출군 기여위험분율 (RR − 1)/RR 로, 질문이 흡연자에게 생긴 폐암 가운데 흡연 때문인 몫이었다면 정답이 된다.\n③ 36 % 는 Pe × (RR − 1)/RR = 0.4 × 0.9 로, 모든 폐암 환자의 40 % 만 흡연자라는 조건이 주어졌다면 맞는 다른 식의 결과다.\n④ 40 % 는 흡연자 비율 Pe 자체로, 상대위험도가 무한히 커서 비흡연자에게 폐암이 전혀 생기지 않는다면 그 값에 가까워진다.\n⑤ 60 % 는 흡연자 비율 대신 비흡연자 비율을 쓴 오류로, 노출 비율이 60 % 였다면 PAF 는 0.6 × 9 / 6.4 ≈ 84 % 가 되므로 어느 경우에도 맞지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "(RR − 1)/RR 로 계산해 90 % 를 고르는 것 — 질문은 흡연자가 아니라 인구 전체의 폐암을 묻는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "노출 비율과 상대위험도로 인구 집단 기여위험분율을 계산하고 노출군 기여위험분율과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. Elsevier; 2019 — More on risk: estimating the potential for prevention · Rockhill B, Newman B, Weinberg C. Use and misuse of population attributable fractions. Am J Public Health. 1998;88(1):15-19"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "인구 전체에서 노출을 없앨 때 줄어드는 발생의 몫은 인구 집단 기여위험분율 Pe(RR−1)/[1+Pe(RR−1)] 로 약 78 % 다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "질문이 「성인 인구 전체의 폐암」을 묻는다 — 노출군 기여위험분율은 흡연자만의 몫",
+   "steps": 3,
+   "chain": [
+    "질문이 인구 전체의 발생 감소를 묻는다 → 인구 집단 기여위험분율",
+    "Pe = 0.4, RR = 10 → Pe(RR − 1) = 3.6",
+    "3.6 / (1 + 3.6) ≈ 0.78"
+   ],
+   "key": [
+    {
+     "item": "흡연자 비율은 40 %",
+     "why": "Pe",
+     "also": []
+    },
+    {
+     "item": "비흡연자의 10배",
+     "why": "상대위험도",
+     "also": []
+    },
+    {
+     "item": "성인 인구 전체의 폐암 발생",
+     "why": "분모가 인구 전체 — 인구 집단 기여위험분율",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "흡연 이외의 교란 요인은 보정되었다",
+     "why": "인과 해석의 전제 — 계산 값 자체는 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "인구 전체의 폐암 감소 몫을 묻는다. Pe 0.4, RR 10 을 Pe(RR−1)/[1+Pe(RR−1)] 에 넣으면 약 78 % 다.",
+   "switch": {
+    "choice": "B",
+    "condition": "질문이 흡연자에게 생긴 폐암 가운데 흡연 때문인 몫이었다면 90 %"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0779",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "부인과 — 첫 자궁경부 선별검사의 비정형 편평세포",
+  "type": "부인과 — 첫 자궁경부 선별검사의 비정형 편평세포",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-24",
+  "vignette": "32세 여자가 자궁경부암 선별검사 결과를 듣기 위해 왔다. 처음 받은 선별검사이고 증상은 없다. 월경은 규칙적이고 임신 계획은 없다. 성관계 상대는 1명이고 흡연하지 않는다. 내진에서 자궁경부는 육안으로 정상이다. 자궁경부 세포검사 결과는 미확정 비정형 편평세포(ASC-US)이고, 함께 시행한 고위험 인유두종바이러스 검사는 16형·18형 이외의 유형에서 양성이다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "단순 자궁절제술",
+   "질확대경검사와 조직검사",
+   "1년 뒤 공동검사",
+   "3년 뒤 세포검사",
+   "자궁경부 원추절제술"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 25세 이상에서 <b>ASC-US 이면서 고위험 인유두종바이러스 양성</b>이면 지금 고등급 병변(CIN3 이상)이 있을 위험이 질확대경검사 기준(4 %)을 넘는다. 이전 음성 결과가 없는 첫 검사이므로 위험을 낮출 근거도 없다. 그래서 <b>질확대경검사와 이상 부위 조직검사</b>로 고등급 병변 유무를 확인한다.\n- 원리: <b>왜 인유두종바이러스 결과가 관리를 가르는가</b>: ASC-US 는 「이상이 의심되나 확정할 수 없다」는 세포 소견이다. 대부분은 반응성 변화이고, 고등급 병변을 만드는 것은 고위험 인유두종바이러스의 지속 감염이다. 그래서 ASC-US 에 바이러스 검사를 더해 감염이 없으면 위험이 매우 낮아 정기 검진으로 돌아가고, 감염이 있으면 고등급 병변 위험이 올라간다.<br> <b>왜 바로 조직을 보는가</b>: 위험 기반 관리(2019 미국 지침)는 「지금 CIN3 이상일 즉시 위험」이 4 % 이상이면 질확대경검사를 권한다. 처음 검사에서 ASC-US·바이러스 양성은 그 위험이 약 4~5 % 로 기준을 넘는다.<br> <b>왜 바로 절제하지 않는가</b>: 원추절제술은 조직으로 고등급 병변이 확인되었을 때 하는 치료다. 젊은 여성에서 불필요한 절제는 이후 조산 위험을 높인다.\n- 비교: <table><thead><tr><th style=\"width:24%\">상황</th><th style=\"width:38%\">ASC-US + 바이러스 양성 — 정답</th><th>1년 뒤 공동검사 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>즉시 CIN3+ 위험</td><td><b>4 % 이상</b></td><td>4 % 미만</td></tr> <tr><td>대표 예</td><td>첫 검사의 ASC-US·바이러스 양성(25세 이상)</td><td>세포 정상 + 바이러스 양성, 또는 21~24세의 ASC-US·LSIL</td></tr> <tr><td>처치</td><td>질확대경검사 ± 조직검사</td><td>1년 뒤 다시 검사</td></tr> </tbody></table> 세포 이상과 바이러스 양성이 함께 있으면 바로 보고, 바이러스만 양성이거나 나이가 어리면 1년 뒤 다시 본다.\n- 오답 이유:\n  - ① 단순 자궁절제술은 출산을 마친 여성에서 다른 부인과 적응증이 있거나 재발성 고등급 병변이 원추절제로 조절되지 않을 때 고려된다면 정답이 된다.\n  - ③ 1년 뒤 공동검사는 세포검사가 정상이고 바이러스만 양성(16형·18형 제외)이거나 21~24세의 ASC-US 였다면 정답이 된다.\n  - ④ 3년 뒤 세포검사는 ASC-US 이면서 고위험 인유두종바이러스가 음성이었다면 정답이 된다(이후 정기 검진).\n  - ⑤ 원추절제술은 질확대경 조직검사에서 CIN2·3 같은 고등급 병변이 확인되었거나 세포검사가 고등급 편평상피내병변이었다면 정답이 된다.\n- 함정: ASC-US 를 「가벼운 이상」으로 보고 1년 뒤 반복 검사를 고르는 것 — 25세 이상에서 바이러스가 양성이면 바로 질확대경검사다.\n- 학습목표: 자궁경부 세포검사에서 비정형 편평세포(ASC-US)와 고위험 인유두종바이러스 양성이면 25세 이상에서 질확대경검사를 하고 반복 검사·원추절제술과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 94: Gynecologic Malignancies · Perkins RB, Guido RS, Castle PE, et al. 2019 ASCCP risk-based management consensus guidelines for abnormal cervical cancer screening tests and cancer precursors. J Low Genit Tract Dis. 2020;24(2):102-131",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "25세 이상에서 <b>ASC-US 이면서 고위험 인유두종바이러스 양성</b>이면 지금 고등급 병변(CIN3 이상)이 있을 위험이 질확대경검사 기준(4 %)을 넘는다. 이전 음성 결과가 없는 첫 검사이므로 위험을 낮출 근거도 없다. 그래서 <b>질확대경검사와 이상 부위 조직검사</b>로 고등급 병변 유무를 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 인유두종바이러스 결과가 관리를 가르는가</b>: ASC-US 는 「이상이 의심되나 확정할 수 없다」는 세포 소견이다. 대부분은 반응성 변화이고, 고등급 병변을 만드는 것은 고위험 인유두종바이러스의 지속 감염이다. 그래서 ASC-US 에 바이러스 검사를 더해 감염이 없으면 위험이 매우 낮아 정기 검진으로 돌아가고, 감염이 있으면 고등급 병변 위험이 올라간다.<br> <b>왜 바로 조직을 보는가</b>: 위험 기반 관리(2019 미국 지침)는 「지금 CIN3 이상일 즉시 위험」이 4 % 이상이면 질확대경검사를 권한다. 처음 검사에서 ASC-US·바이러스 양성은 그 위험이 약 4~5 % 로 기준을 넘는다.<br> <b>왜 바로 절제하지 않는가</b>: 원추절제술은 조직으로 고등급 병변이 확인되었을 때 하는 치료다. 젊은 여성에서 불필요한 절제는 이후 조산 위험을 높인다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">상황</th><th style=\"width:38%\">ASC-US + 바이러스 양성 — 정답</th><th>1년 뒤 공동검사 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>즉시 CIN3+ 위험</td><td><b>4 % 이상</b></td><td>4 % 미만</td></tr> <tr><td>대표 예</td><td>첫 검사의 ASC-US·바이러스 양성(25세 이상)</td><td>세포 정상 + 바이러스 양성, 또는 21~24세의 ASC-US·LSIL</td></tr> <tr><td>처치</td><td>질확대경검사 ± 조직검사</td><td>1년 뒤 다시 검사</td></tr> </tbody></table> 세포 이상과 바이러스 양성이 함께 있으면 바로 보고, 바이러스만 양성이거나 나이가 어리면 1년 뒤 다시 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 단순 자궁절제술은 출산을 마친 여성에서 다른 부인과 적응증이 있거나 재발성 고등급 병변이 원추절제로 조절되지 않을 때 고려된다면 정답이 된다.\n③ 1년 뒤 공동검사는 세포검사가 정상이고 바이러스만 양성(16형·18형 제외)이거나 21~24세의 ASC-US 였다면 정답이 된다.\n④ 3년 뒤 세포검사는 ASC-US 이면서 고위험 인유두종바이러스가 음성이었다면 정답이 된다(이후 정기 검진).\n⑤ 원추절제술은 질확대경 조직검사에서 CIN2·3 같은 고등급 병변이 확인되었거나 세포검사가 고등급 편평상피내병변이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "ASC-US 를 「가벼운 이상」으로 보고 1년 뒤 반복 검사를 고르는 것 — 25세 이상에서 바이러스가 양성이면 바로 질확대경검사다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁경부 세포검사에서 비정형 편평세포(ASC-US)와 고위험 인유두종바이러스 양성이면 25세 이상에서 질확대경검사를 하고 반복 검사·원추절제술과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 94: Gynecologic Malignancies · Perkins RB, Guido RS, Castle PE, et al. 2019 ASCCP risk-based management consensus guidelines for abnormal cervical cancer screening tests and cancer precursors. J Low Genit Tract Dis. 2020;24(2):102-131"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "25세 이상의 첫 선별검사에서 ASC-US 와 고위험 인유두종바이러스 양성이면 질확대경검사를 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "32세이고 세포 이상(ASC-US)과 바이러스 양성이 함께 있다 — 1년 뒤 반복은 세포 정상·바이러스 양성이거나 21~24세일 때",
+   "steps": 2,
+   "chain": [
+    "ASC-US + 고위험 인유두종바이러스 양성 → 즉시 CIN3 이상 위험 4 % 이상",
+    "32세, 이전 음성 결과 없음 → 질확대경검사"
+   ],
+   "key": [
+    {
+     "item": "미확정 비정형 편평세포(ASC-US)",
+     "why": "세포 이상",
+     "also": []
+    },
+    {
+     "item": "고위험 인유두종바이러스 검사는 16형·18형 이외의 유형에서 양성",
+     "why": "바이러스 양성 — 위험을 질확대경 기준 이상으로 올린다",
+     "also": []
+    },
+    {
+     "item": "32세",
+     "why": "25세 이상 — 21~24세의 보존적 관리 대상이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "처음 받은 선별검사",
+     "why": "이전 음성 결과가 없어 위험을 낮출 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "자궁경부는 육안으로 정상",
+     "why": "육안 소견은 전암 병변을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "임신 계획은 없다",
+     "why": "처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "32세의 첫 선별검사에서 ASC-US 와 고위험 인유두종바이러스 양성이 함께 나왔다. 즉시 위험이 기준을 넘어 질확대경검사를 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 ASC-US 에서 고위험 인유두종바이러스가 음성이었다면 3년 뒤 정기 검진"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0777",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "혈액·종양 — 항암치료를 앞둔 버킷림프종의 예방",
+  "type": "혈액·종양 — 항암치료를 앞둔 버킷림프종의 예방",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-24",
+  "vignette": "23세 남자가 버킷림프종으로 진단받고 내일 첫 항암치료를 시작할 예정이다. 2주 전부터 배가 불러 오고 숨이 찼다. 다른 병은 없다. 혈압 122/78 mmHg, 맥박 98회/분이다. 복부 CT 에서 장간막에 지름 14 cm 종괴가 있다. 혈액검사 결과는 다음과 같다. 젖산탈수소효소 2,850 U/L(참고치 상한 250), 요산 9.8 mg/dL, 크레아티닌 1.0 mg/dL, 칼륨 4.6 mEq/L, 인 4.3 mg/dL, 칼슘 9.1 mg/dL. 포도당-6-인산탈수소효소 활성은 정상이다.",
+  "question": "정맥 수액과 함께 항암치료 전에 투여할 약으로 가장 적절한 것은?",
+  "options": [
+   "라스부리카제",
+   "알로푸리놀",
+   "탄산수소나트륨",
+   "푸로세미드",
+   "세벨라머"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 버킷림프종은 세포가 가장 빨리 분열하는 림프종이고, <b>큰 종괴(14 cm)·젖산탈수소효소가 참고치 상한의 2배 이상·이미 오른 요산(9.8 mg/dL)</b>이 있어 종양용해증후군 <b>고위험군</b>이다. 고위험군은 충분한 수액과 함께 <b>라스부리카제</b>로 이미 있는 요산을 분해해 요산 신병증을 막는다. 포도당-6-인산탈수소효소 결핍이 없어 쓸 수 있다.\n- 원리: <b>왜 요산이 신장을 막는가</b>: 항암치료로 종양 세포가 한꺼번에 깨지면 핵산이 퓨린 → 잔틴 → 요산으로 대사된다. 요산은 산성인 원위 세관·집합관에서 결정으로 가라앉아 세관을 막고(요산 신병증), 칼륨·인이 함께 쏟아져 고칼륨혈증·고인산혈증·저칼슘혈증이 생긴다.<br> <b>왜 라스부리카제인가</b>: 알로푸리놀은 잔틴산화효소를 막아 <b>새 요산이 만들어지는 것만</b> 줄인다 — 이미 쌓인 요산은 그대로이고 효과가 나기까지 며칠 걸린다. 라스부리카제는 재조합 요산산화효소로 <b>이미 있는 요산을 물에 잘 녹는 알란토인으로 바꿔</b> 몇 시간 안에 요산을 떨어뜨린다.<br> <b>주의</b>: 반응 중 과산화수소가 생겨 포도당-6-인산탈수소효소 결핍 환자에서 용혈·메트헤모글로빈혈증을 일으키므로 미리 확인한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">라스부리카제 — 정답</th><th>알로푸리놀 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>작용</td><td><b>이미 있는 요산 → 알란토인</b></td><td>잔틴산화효소 억제 — 새 요산 생성 차단</td></tr> <tr><td>효과 시작</td><td>4시간 안</td><td>2~3일</td></tr> <tr><td>대상</td><td><b>고위험군, 이미 요산 상승</b></td><td>중간 위험군, 요산 정상</td></tr> <tr><td>금기</td><td>포도당-6-인산탈수소효소 결핍</td><td>— (잔틴이 쌓여 잔틴 신병증 가능)</td></tr> </tbody></table> 위험이 높고 요산이 이미 오르면 라스부리카제, 위험이 중간이고 요산이 정상이면 알로푸리놀이다.\n- 오답 이유:\n  - ② 알로푸리놀은 위험이 중간 정도(예: 요산 정상의 작은 종양 부담)이거나 라스부리카제를 쓸 수 없는 포도당-6-인산탈수소효소 결핍이라면 정답이 된다.\n  - ③ 탄산수소나트륨으로 소변 알칼리화는 예전에 쓰였으나 인산칼슘 침착을 늘려 지금은 권하지 않는다 — 요산만 문제이고 다른 수단이 없을 때나 고려한다.\n  - ④ 푸로세미드는 충분한 수액 뒤에도 소변량이 줄고 체액 과부하가 생겼다면 정답이 되지만, 예방의 주 약제는 아니다.\n  - ⑤ 세벨라머는 이미 종양용해가 일어나 고인산혈증이 생긴 뒤 인을 낮추는 데 쓰인다면 정답이 된다 — 지금 인은 정상이다.\n- 함정: 요산을 낮추는 약 = 알로푸리놀로 반사적으로 고르는 것 — 고위험군에서 이미 오른 요산은 알로푸리놀로 줄지 않는다.\n- 학습목표: 종양용해증후군 고위험군(버킷림프종·LDH 상승·고요산혈증)에서 항암치료 전 수액과 라스부리카제로 예방하고 알로푸리놀만으로 부족한 이유를 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 80: Oncologic Emergencies · Cairo MS, Coiffier B, Reiter A, Younes A. Recommendations for the evaluation of risk and prophylaxis of tumour lysis syndrome (TLS) in adults and children with malignant diseases: an expert TLS panel consensus. Br J Haematol. 2010;149(4):578-586",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "버킷림프종은 세포가 가장 빨리 분열하는 림프종이고, <b>큰 종괴(14 cm)·젖산탈수소효소가 참고치 상한의 2배 이상·이미 오른 요산(9.8 mg/dL)</b>이 있어 종양용해증후군 <b>고위험군</b>이다. 고위험군은 충분한 수액과 함께 <b>라스부리카제</b>로 이미 있는 요산을 분해해 요산 신병증을 막는다. 포도당-6-인산탈수소효소 결핍이 없어 쓸 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 요산이 신장을 막는가</b>: 항암치료로 종양 세포가 한꺼번에 깨지면 핵산이 퓨린 → 잔틴 → 요산으로 대사된다. 요산은 산성인 원위 세관·집합관에서 결정으로 가라앉아 세관을 막고(요산 신병증), 칼륨·인이 함께 쏟아져 고칼륨혈증·고인산혈증·저칼슘혈증이 생긴다.<br> <b>왜 라스부리카제인가</b>: 알로푸리놀은 잔틴산화효소를 막아 <b>새 요산이 만들어지는 것만</b> 줄인다 — 이미 쌓인 요산은 그대로이고 효과가 나기까지 며칠 걸린다. 라스부리카제는 재조합 요산산화효소로 <b>이미 있는 요산을 물에 잘 녹는 알란토인으로 바꿔</b> 몇 시간 안에 요산을 떨어뜨린다.<br> <b>주의</b>: 반응 중 과산화수소가 생겨 포도당-6-인산탈수소효소 결핍 환자에서 용혈·메트헤모글로빈혈증을 일으키므로 미리 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">라스부리카제 — 정답</th><th>알로푸리놀 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>작용</td><td><b>이미 있는 요산 → 알란토인</b></td><td>잔틴산화효소 억제 — 새 요산 생성 차단</td></tr> <tr><td>효과 시작</td><td>4시간 안</td><td>2~3일</td></tr> <tr><td>대상</td><td><b>고위험군, 이미 요산 상승</b></td><td>중간 위험군, 요산 정상</td></tr> <tr><td>금기</td><td>포도당-6-인산탈수소효소 결핍</td><td>— (잔틴이 쌓여 잔틴 신병증 가능)</td></tr> </tbody></table> 위험이 높고 요산이 이미 오르면 라스부리카제, 위험이 중간이고 요산이 정상이면 알로푸리놀이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 알로푸리놀은 위험이 중간 정도(예: 요산 정상의 작은 종양 부담)이거나 라스부리카제를 쓸 수 없는 포도당-6-인산탈수소효소 결핍이라면 정답이 된다.\n③ 탄산수소나트륨으로 소변 알칼리화는 예전에 쓰였으나 인산칼슘 침착을 늘려 지금은 권하지 않는다 — 요산만 문제이고 다른 수단이 없을 때나 고려한다.\n④ 푸로세미드는 충분한 수액 뒤에도 소변량이 줄고 체액 과부하가 생겼다면 정답이 되지만, 예방의 주 약제는 아니다.\n⑤ 세벨라머는 이미 종양용해가 일어나 고인산혈증이 생긴 뒤 인을 낮추는 데 쓰인다면 정답이 된다 — 지금 인은 정상이다."
+   },
+   {
+    "k": "함정",
+    "v": "요산을 낮추는 약 = 알로푸리놀로 반사적으로 고르는 것 — 고위험군에서 이미 오른 요산은 알로푸리놀로 줄지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "종양용해증후군 고위험군(버킷림프종·LDH 상승·고요산혈증)에서 항암치료 전 수액과 라스부리카제로 예방하고 알로푸리놀만으로 부족한 이유를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 80: Oncologic Emergencies · Cairo MS, Coiffier B, Reiter A, Younes A. Recommendations for the evaluation of risk and prophylaxis of tumour lysis syndrome (TLS) in adults and children with malignant diseases: an expert TLS panel consensus. Br J Haematol. 2010;149(4):578-586"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "고위험 종양용해증후군(버킷림프종·큰 종괴·젖산탈수소효소 상승·요산 상승)은 수액과 함께 라스부리카제로 예방한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "요산이 이미 9.8 mg/dL 로 올라 있다 — 알로푸리놀은 새 요산 생성만 막는다",
+   "steps": 3,
+   "chain": [
+    "버킷림프종 + 14 cm 종괴 + 젖산탈수소효소 2,850 → 종양용해증후군 고위험",
+    "요산 이미 9.8 mg/dL → 생성 억제만으로는 부족, 분해가 필요",
+    "포도당-6-인산탈수소효소 정상 → 라스부리카제"
+   ],
+   "key": [
+    {
+     "item": "버킷림프종",
+     "why": "가장 빨리 분열하는 종양 — 고위험",
+     "also": []
+    },
+    {
+     "item": "젖산탈수소효소 2,850 U/L(참고치 상한 250)",
+     "why": "종양 부담 — 고위험",
+     "also": []
+    },
+    {
+     "item": "요산 9.8 mg/dL",
+     "why": "이미 오른 요산 — 라스부리카제 적응",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "인 4.3 mg/dL",
+     "why": "아직 종양용해가 일어나지 않았다 — 인 결합제는 필요 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "포도당-6-인산탈수소효소 활성은 정상",
+     "why": "라스부리카제 금기가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌 1.0 mg/dL",
+     "why": "신기능 정상 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "버킷림프종·큰 종괴·젖산탈수소효소 상승·이미 오른 요산으로 종양용해증후군 고위험이다. 수액과 함께 라스부리카제를 투여한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "종양 부담이 작고 요산이 정상인 중간 위험군이었다면 알로푸리놀"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0775",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "외과계 — 개복 수술 병력이 있는 여성의 구토와 복부팽만",
+  "type": "외과계 — 개복 수술 병력이 있는 여성의 구토와 복부팽만",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-24",
+  "vignette": "A 62-year-old woman comes to the emergency department because of crampy periumbilical abdominal pain, vomiting, and abdominal distention for 18 hours. She has not passed flatus since this morning. She underwent open hysterectomy 6 years ago. Temperature is 37.2°C (99°F), pulse is 94/min, and blood pressure is 128/80 mm Hg. The abdomen is distended and tympanic with high-pitched bowel sounds and mild diffuse tenderness without guarding or rebound. There is no hernia. Leukocyte count is 9,800/mm3, and serum lactate concentration is 1.4 mmol/L. CT of the abdomen with contrast shows dilated small-bowel loops with a transition point in the lower abdomen, collapsed distal ileum and colon, normal bowel-wall enhancement, and no free air or mesenteric edema.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral polyethylene glycol bowel preparation",
+   "Nasogastric decompression and intravenous fluids",
+   "Emergency exploratory laparotomy",
+   "Colonoscopic decompression of the bowel",
+   "Intravenous neostigmine infusion"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Crampy pain, vomiting, distention, and obstipation after previous open pelvic surgery, with a CT <b>transition point and collapsed distal bowel</b>, indicate adhesive small-bowel obstruction. There are <b>no signs of strangulation</b>: no fever, normal leukocyte count and lactate, no peritonitis, and normal bowel-wall enhancement without mesenteric edema or free air. Most such obstructions resolve with <b>bowel rest, nasogastric decompression, and fluid and electrolyte replacement</b>.\n- 원리: <b>Why most adhesive obstructions resolve</b>: Adhesions usually kink the bowel rather than occlude it completely. Decompressing the proximal bowel with a nasogastric tube lowers intraluminal pressure, reduces wall edema, and lets the kink relax. About 70–80% of partial adhesive obstructions resolve within 48–72 hours without surgery.<br> <b>Why strangulation changes everything</b>: When a loop is twisted or trapped in a closed loop, venous outflow stops first, then arterial inflow; the wall becomes ischemic, then necrotic, and perforates. Fever, constant pain, peritoneal signs, leukocytosis, rising lactate, reduced wall enhancement, mesenteric edema, or free fluid suggest this, and the patient then needs laparotomy without delay.<br> <b>Role of contrast</b>: A water-soluble contrast challenge can predict resolution — contrast reaching the colon within about 24 hours — and may shorten the course.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Uncomplicated (answer)</th><th>Strangulated — laparotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Pain</td><td>Crampy, intermittent</td><td>Constant, out of proportion</td></tr> <tr><td>Examination</td><td><b>Mild tenderness, no peritonitis</b></td><td>Guarding, rebound, fever, tachycardia</td></tr> <tr><td>Laboratory</td><td>Normal leukocytes and lactate</td><td>Leukocytosis, rising lactate</td></tr> <tr><td>CT</td><td><b>Normal wall enhancement</b></td><td>Poor enhancement, mesenteric edema, closed loop, pneumatosis</td></tr> </tbody></table> Treat the obstruction nonoperatively only while every sign of ischemia is absent; any one of them moves the patient to the operating room.\n- 오답 이유:\n  - (A) A polyethylene glycol preparation would be appropriate before colonoscopy or for constipation, but giving it in a mechanical obstruction worsens vomiting and distention.\n  - (C) Emergency laparotomy would be correct if there were peritonitis, fever, rising lactate, or CT evidence of a closed loop or reduced bowel-wall enhancement.\n  - (D) Colonoscopic decompression would be correct for acute colonic pseudo-obstruction or sigmoid volvulus with a dilated colon, not for small-bowel obstruction.\n  - (E) Neostigmine would be correct for acute colonic pseudo-obstruction (Ogilvie syndrome) without a mechanical transition point after conservative measures fail.\n- 함정: A transition point on CT sounds surgical — without signs of ischemia, adhesive obstruction is first treated with decompression.\n- 학습목표: Manage uncomplicated adhesive small-bowel obstruction with bowel rest, nasogastric decompression, and fluids, and recognize the findings that would require urgent laparotomy\n- 근거·출처: Ten Broek RPG, Krielen P, Di Saverio S, et al. Bologna guidelines for diagnosis and management of adhesive small bowel obstruction (ASBO): 2017 update. World J Emerg Surg. 2018;13:24",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Crampy pain, vomiting, distention, and obstipation after previous open pelvic surgery, with a CT <b>transition point and collapsed distal bowel</b>, indicate adhesive small-bowel obstruction. There are <b>no signs of strangulation</b>: no fever, normal leukocyte count and lactate, no peritonitis, and normal bowel-wall enhancement without mesenteric edema or free air. Most such obstructions resolve with <b>bowel rest, nasogastric decompression, and fluid and electrolyte replacement</b>."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why most adhesive obstructions resolve</b>: Adhesions usually kink the bowel rather than occlude it completely. Decompressing the proximal bowel with a nasogastric tube lowers intraluminal pressure, reduces wall edema, and lets the kink relax. About 70–80% of partial adhesive obstructions resolve within 48–72 hours without surgery.<br> <b>Why strangulation changes everything</b>: When a loop is twisted or trapped in a closed loop, venous outflow stops first, then arterial inflow; the wall becomes ischemic, then necrotic, and perforates. Fever, constant pain, peritoneal signs, leukocytosis, rising lactate, reduced wall enhancement, mesenteric edema, or free fluid suggest this, and the patient then needs laparotomy without delay.<br> <b>Role of contrast</b>: A water-soluble contrast challenge can predict resolution — contrast reaching the colon within about 24 hours — and may shorten the course."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Uncomplicated (answer)</th><th>Strangulated — laparotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Pain</td><td>Crampy, intermittent</td><td>Constant, out of proportion</td></tr> <tr><td>Examination</td><td><b>Mild tenderness, no peritonitis</b></td><td>Guarding, rebound, fever, tachycardia</td></tr> <tr><td>Laboratory</td><td>Normal leukocytes and lactate</td><td>Leukocytosis, rising lactate</td></tr> <tr><td>CT</td><td><b>Normal wall enhancement</b></td><td>Poor enhancement, mesenteric edema, closed loop, pneumatosis</td></tr> </tbody></table> Treat the obstruction nonoperatively only while every sign of ischemia is absent; any one of them moves the patient to the operating room."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A polyethylene glycol preparation would be appropriate before colonoscopy or for constipation, but giving it in a mechanical obstruction worsens vomiting and distention.\n(C) Emergency laparotomy would be correct if there were peritonitis, fever, rising lactate, or CT evidence of a closed loop or reduced bowel-wall enhancement.\n(D) Colonoscopic decompression would be correct for acute colonic pseudo-obstruction or sigmoid volvulus with a dilated colon, not for small-bowel obstruction.\n(E) Neostigmine would be correct for acute colonic pseudo-obstruction (Ogilvie syndrome) without a mechanical transition point after conservative measures fail."
+   },
+   {
+    "k": "함정",
+    "v": "A transition point on CT sounds surgical — without signs of ischemia, adhesive obstruction is first treated with decompression."
+   },
+   {
+    "k": "학습목표",
+    "v": "Manage uncomplicated adhesive small-bowel obstruction with bowel rest, nasogastric decompression, and fluids, and recognize the findings that would require urgent laparotomy"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ten Broek RPG, Krielen P, Di Saverio S, et al. Bologna guidelines for diagnosis and management of adhesive small bowel obstruction (ASBO): 2017 update. World J Emerg Surg. 2018;13:24"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "허혈 징후가 없는 유착성 소장폐색은 금식·비위관 감압·수액으로 비수술 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "복막자극 징후가 없고 백혈구·젖산이 정상이며 CT 에서 장벽 조영 증강이 정상이다",
+   "steps": 2,
+   "chain": [
+    "개복 수술 병력 + 경련성 복통·구토·복부팽만·방귀 없음 + CT 전환점 → 유착성 소장폐색",
+    "발열·복막자극·젖산 상승·장벽 증강 저하 없음 → 비수술 감압"
+   ],
+   "key": [
+    {
+     "item": "transition point in the lower abdomen, collapsed distal ileum and colon",
+     "why": "기계적 소장폐색",
+     "also": []
+    },
+    {
+     "item": "She underwent open hysterectomy 6 years ago",
+     "why": "유착의 원인",
+     "also": []
+    },
+    {
+     "item": "normal bowel-wall enhancement, and no free air or mesenteric edema",
+     "why": "교액·천공 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum lactate concentration is 1.4 mmol/L",
+     "why": "장 허혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "without guarding or rebound",
+     "why": "복막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no hernia",
+     "why": "감돈 탈장 — 즉시 수술 원인 — 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "골반 개복 수술 뒤 생긴 유착성 소장폐색이고 허혈 징후가 없다. 금식·비위관 감압·수액으로 치료한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "복막자극 징후·젖산 상승·장벽 증강 저하가 있었다면 응급 개복술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0773",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·외과계·신경·혈액종양·감염·부인과·소아·예방의학)",
+  "subtopic": "순환기 — 감기 뒤 앞으로 숙이면 덜한 가슴 통증의 치료",
+  "type": "순환기 — 감기 뒤 앞으로 숙이면 덜한 가슴 통증의 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-24",
+  "vignette": "28세 남자가 3일 전부터 생긴 가슴 통증으로 왔다. 통증은 날카롭고 숨을 들이쉬거나 누우면 심해지며 앉아서 앞으로 숙이면 덜하다. 1주 전 콧물과 인후통을 앓았다. 혈압 124/76 mmHg, 맥박 96회/분, 체온 37.8℃ 이다. 흉골 왼쪽 가장자리에서 마찰음이 들린다. 심전도에서 여러 유도에 오목한 ST 상승과 PR 하강이 있다. 고감도 트로포닌 I 는 참고치 이내이고, 심초음파에서 소량의 심낭삼출이 있으나 우심방·우심실 확장기 허탈은 없으며 좌심실 수축은 정상이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "심낭천자",
+   "헤파린 정맥 주사",
+   "관상동맥조영술",
+   "고용량 아스피린과 콜히친",
+   "프레드니솔론 단독"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 자세에 따라 변하는 날카로운 흉통, <b>심낭 마찰음</b>, <b>광범위한 오목 ST 상승과 PR 하강</b>, 심낭삼출 가운데 넷을 갖춰 급성 심낭염이다. 바이러스 감염 뒤 생긴 특발성 심낭염의 첫 치료는 <b>고용량 아스피린(또는 비스테로이드소염제)에 콜히친을 더하는 것</b>이다. 트로포닌이 정상이라 심근 침범이 없고, 삼출이 적고 확장기 허탈이 없어 심낭천자는 필요 없다.\n- 원리: <b>왜 소염제인가</b>: 특발성(대부분 바이러스 뒤) 심낭염은 심낭의 벽측·장측 막에 생긴 염증이다. 통증과 마찰음, 삼출은 모두 염증 매개물질에서 나오므로 프로스타글란딘 합성을 막는 아스피린·비스테로이드소염제가 증상을 빨리 줄인다.<br> <b>왜 콜히친을 더하는가</b>: 콜히친은 호중구의 미세소관 중합을 막아 호중구 이동과 인플라마좀 활성을 억제한다. 무작위 시험에서 첫 발작에 3개월 더하면 재발이 약 절반으로 줄었다.<br> <b>왜 스테로이드를 처음 쓰지 않는가</b>: 글루코코르티코이드는 증상을 빨리 가라앉히지만 줄일 때 염증이 되살아나 <b>재발이 오히려 늘어난다</b>. 그래서 아스피린·비스테로이드소염제를 쓸 수 없거나(금기·임신 후기) 자가면역질환이 원인일 때 저용량으로만 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">아스피린 + 콜히친 — 정답</th><th>프레드니솔론 단독 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td>특발성·바이러스 뒤 급성 심낭염의 첫 치료</td><td>소염제 금기, 자가면역질환, 반복 재발</td></tr> <tr><td>재발</td><td><b>콜히친이 재발을 약 절반으로 줄인다</b></td><td>감량 때 재발이 늘어난다</td></tr> <tr><td>기간</td><td>증상·CRP 정상화까지 아스피린, 콜히친 3개월</td><td>수주에 걸쳐 천천히 감량</td></tr> </tbody></table> 첫 치료는 「소염제 + 콜히친」, 스테로이드는 「소염제를 못 쓸 때」로 외우면 어느 방향으로 물어도 맞힌다.\n- 오답 이유:\n  - ① 심낭천자는 삼출이 많아 우심방·우심실 확장기 허탈과 저혈압(심장눌림증)이 있거나 세균성·악성 삼출이 의심된다면 정답이 된다.\n  - ② 헤파린 정맥 주사는 ST분절상승 심근경색이나 폐색전증처럼 혈전이 원인일 때 정답이 되지만, 심낭염에서는 심낭 출혈 위험만 높인다.\n  - ③ 관상동맥조영술은 ST 상승이 한 관상동맥 영역에 국한되고 거울상 ST 하강과 트로포닌 상승이 있는 심근경색이라면 정답이 된다.\n  - ⑤ 프레드니솔론은 아스피린·비스테로이드소염제에 금기가 있거나 전신홍반루푸스 같은 자가면역질환이 원인이라면 정답이 된다.\n- 함정: ST 상승만 보고 심근경색 처치(헤파린·관상동맥조영술)로 가는 것 — 광범위한 오목 ST 상승과 PR 하강, 정상 트로포닌이 심낭염을 가리킨다.\n- 학습목표: 급성 심낭염을 진단하고 첫 치료로 고용량 아스피린 또는 비스테로이드소염제와 콜히친을 함께 쓰며 글루코코르티코이드를 첫 치료로 쓰지 않는 이유를 안다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 281: Pericardial Disease · Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J. 2015;36(42):2921-2964",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "자세에 따라 변하는 날카로운 흉통, <b>심낭 마찰음</b>, <b>광범위한 오목 ST 상승과 PR 하강</b>, 심낭삼출 가운데 넷을 갖춰 급성 심낭염이다. 바이러스 감염 뒤 생긴 특발성 심낭염의 첫 치료는 <b>고용량 아스피린(또는 비스테로이드소염제)에 콜히친을 더하는 것</b>이다. 트로포닌이 정상이라 심근 침범이 없고, 삼출이 적고 확장기 허탈이 없어 심낭천자는 필요 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 소염제인가</b>: 특발성(대부분 바이러스 뒤) 심낭염은 심낭의 벽측·장측 막에 생긴 염증이다. 통증과 마찰음, 삼출은 모두 염증 매개물질에서 나오므로 프로스타글란딘 합성을 막는 아스피린·비스테로이드소염제가 증상을 빨리 줄인다.<br> <b>왜 콜히친을 더하는가</b>: 콜히친은 호중구의 미세소관 중합을 막아 호중구 이동과 인플라마좀 활성을 억제한다. 무작위 시험에서 첫 발작에 3개월 더하면 재발이 약 절반으로 줄었다.<br> <b>왜 스테로이드를 처음 쓰지 않는가</b>: 글루코코르티코이드는 증상을 빨리 가라앉히지만 줄일 때 염증이 되살아나 <b>재발이 오히려 늘어난다</b>. 그래서 아스피린·비스테로이드소염제를 쓸 수 없거나(금기·임신 후기) 자가면역질환이 원인일 때 저용량으로만 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">아스피린 + 콜히친 — 정답</th><th>프레드니솔론 단독 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td>특발성·바이러스 뒤 급성 심낭염의 첫 치료</td><td>소염제 금기, 자가면역질환, 반복 재발</td></tr> <tr><td>재발</td><td><b>콜히친이 재발을 약 절반으로 줄인다</b></td><td>감량 때 재발이 늘어난다</td></tr> <tr><td>기간</td><td>증상·CRP 정상화까지 아스피린, 콜히친 3개월</td><td>수주에 걸쳐 천천히 감량</td></tr> </tbody></table> 첫 치료는 「소염제 + 콜히친」, 스테로이드는 「소염제를 못 쓸 때」로 외우면 어느 방향으로 물어도 맞힌다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심낭천자는 삼출이 많아 우심방·우심실 확장기 허탈과 저혈압(심장눌림증)이 있거나 세균성·악성 삼출이 의심된다면 정답이 된다.\n② 헤파린 정맥 주사는 ST분절상승 심근경색이나 폐색전증처럼 혈전이 원인일 때 정답이 되지만, 심낭염에서는 심낭 출혈 위험만 높인다.\n③ 관상동맥조영술은 ST 상승이 한 관상동맥 영역에 국한되고 거울상 ST 하강과 트로포닌 상승이 있는 심근경색이라면 정답이 된다.\n⑤ 프레드니솔론은 아스피린·비스테로이드소염제에 금기가 있거나 전신홍반루푸스 같은 자가면역질환이 원인이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "ST 상승만 보고 심근경색 처치(헤파린·관상동맥조영술)로 가는 것 — 광범위한 오목 ST 상승과 PR 하강, 정상 트로포닌이 심낭염을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 심낭염을 진단하고 첫 치료로 고용량 아스피린 또는 비스테로이드소염제와 콜히친을 함께 쓰며 글루코코르티코이드를 첫 치료로 쓰지 않는 이유를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 281: Pericardial Disease · Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J. 2015;36(42):2921-2964"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "합병증 없는 급성 심낭염의 첫 치료는 고용량 아스피린에 콜히친을 더하는 것이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "소염제 금기나 자가면역질환이 없다 — 글루코코르티코이드는 재발을 늘려 첫 치료가 아니다",
+   "steps": 2,
+   "chain": [
+    "자세에 따른 흉통 + 마찰음 + 오목 ST 상승·PR 하강 + 심낭삼출 → 급성 심낭염",
+    "트로포닌 정상·심장눌림증 없음·소염제 금기 없음 → 아스피린 + 콜히친"
+   ],
+   "key": [
+    {
+     "item": "앉아서 앞으로 숙이면 덜하다",
+     "why": "심낭염의 전형적 흉통 양상",
+     "also": []
+    },
+    {
+     "item": "흉골 왼쪽 가장자리에서 마찰음이 들린다",
+     "why": "심낭염의 특이 소견",
+     "also": []
+    },
+    {
+     "item": "여러 유도에 오목한 ST 상승과 PR 하강",
+     "why": "광범위 심낭 염증 — 관상동맥 영역에 국한되지 않음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "고감도 트로포닌 I 는 참고치 이내",
+     "why": "심근 침범(심근심낭염)·심근경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "우심방·우심실 확장기 허탈은 없으며",
+     "why": "심장눌림증이 없어 심낭천자가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "1주 전 콧물과 인후통을 앓았다",
+     "why": "바이러스 뒤 특발성 심낭염과 맞지만 치료 선택을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "자세성 흉통·마찰음·광범위 오목 ST 상승과 PR 하강으로 급성 심낭염이다. 합병증이 없으므로 고용량 아스피린과 콜히친으로 치료한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "삼출이 많아 저혈압과 우심실 확장기 허탈이 있었다면 심낭천자"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0772",
   "exam": "imaging",
   "style": "usmle_style",

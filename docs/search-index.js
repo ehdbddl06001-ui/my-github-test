@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4230,
+  "total": 4242,
   "byType": {
    "usmle": 282,
+   "imaging": 783,
    "concept": 229,
    "paper": 979,
    "kmle": 1952,
-   "imaging": 771,
    "ailab": 14,
    "basic": 3
   },
@@ -29,29 +29,29 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 135,
    "Endocrinology": 130,
    "General Surgery": 130,
+   "순환기": 130,
    "Gastroenterology": 128,
    "Dermatology": 127,
    "Ophthalmology": 127,
    "Pulmonology": 126,
    "Surgery": 126,
-   "순환기": 126,
    "Hematology": 121,
    "Laboratory Medicine": 101,
-   "산부인과": 94,
+   "산부인과": 95,
    "호흡기": 50,
    "소화기": 46,
-   "소아과": 40,
+   "소아과": 41,
+   "응급·중환자": 35,
+   "혈액·종양": 35,
+   "감염": 34,
    "내분비": 34,
-   "응급·중환자": 34,
-   "혈액·종양": 34,
+   "신경": 34,
    "Physiology": 33,
-   "감염": 33,
-   "신경": 33,
    "신장·비뇨기": 33,
    "병리·조직학": 31,
-   "외과": 29,
+   "외과": 30,
    "피부과": 29,
-   "예방의학·역학": 26,
+   "예방의학·역학": 27,
    "Pharmacology": 25,
    "Biochemistry": 22,
    "Microbiology": 22,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2993,
+   "high": 3005,
    "medium": 1233,
    "low": 4
   },
@@ -210,6 +210,220 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0290.md",
    "snippet": "A 58 year old man comes to the emergency department because of palpitations and lightheadedness that began suddenly 2 hours ago while he was climbing stairs. Three weeks ago, he was evaluated for 1 week of fatigue and a fluttering sensation",
    "text": "Pharmacology Palpitations, a Regular Pulse of 214 and Widened QRS Complexes Three Weeks After Starting a New Rhythm Drug in a 58-Year-Old Man Whose Earlier Tracing Is Shown antiarrhythmic class-ic atrial-flutter ecg mechanism pharmacology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 257장 Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias) A 58 year old man comes to the emergency department because of palpitations and lightheadedness that began suddenly 2 hours ago while he was climbing stairs. Three weeks ago, he was evaluated for 1 week of fatigue and a fluttering sensation in his chest; his ECG at that visit is shown. Apixaban and flecainide were started at that time. He takes no other medications. An ECG obtained 2 years ago during sinus rhythm showed a PR interval of 0.18 seconds, a QRS duration of 0.09 seconds, and no delta wave. His vital signs today are shown. He is alert and anxious. The lungs are clear. There are no murmurs. Today's ECG shows a regular tachycardia at 214/min with a QRS duration of 0.15 seconds; the QT interval corrected for rate is 0.42 seconds. Laboratory results are shown. Which of the following best explains the change in this patient's ventricular rate? A. Anticholinergic action of the drug that enhances atrioventricular nodal conduction B. Delayed afterdepolarizations from intracellular calcium overload in ventricular myocytes C. Early afterdepolarizations from prolonged ventricular repolarization D. Slowing of the atrial reentrant circuit that permits 1:1 atrioventricular conduction E. Rapid anterograde conduction of atrial impulses over an accessory pathway 3주 전 심전도는 톱니 모양 조동파와 심실 150/min — 심방 약 300/min 의 전형적 심방조동(atrial flutter) 2:1 전도다. 방실결절은 300/min 을 다 통과시키지 못해 하나 건너 하나만 내려보냈다. flecainide(class IC)는 Na 통로를 막아 심방 대회귀 회로의 전도를 늦춘다 — 조동 주기가 길어져 심방이 약 200–220/min 으로 느려지면 방실결절이 이제 모든 자극을 통과시켜 1:1 전도가 되고, 심실 박동은 오히려 150 → 214/min 으로 빨라진다. 빠른 박동에서는 Na 통로 차단이 사용 의존적으로 강해져 QRS 도 넓어진다. 그래서 IC 약은 방실결절 차단제(β 차단제·비디하이드로피리딘 Ca 통로 차단제)와 함께 쓴다. 항콜린 작용으로 방실결절 전도를 높이는 것(A)은 class IA(quinidine·disopyramide)의 기전이다. 조기 후탈분극(C)은 QT 연장에서 생기는 다형성 심실빈맥(torsades)으로, 이 환자는 QTc 0.42초·규칙적 리듬이다. 지연 후탈분극(B)은 digoxin 중독의 기전이다. 부전도로를 통한 전도(E)는 동율동 때 델타파가 없어 가능성이 낮다."
+  },
+  {
+   "id": "imaging-2026-0784",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 수술 전 검사 심전도 이상을 들은 중년 남성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0784.md",
+   "snippet": "A 53 year old man comes to the clinic for preoperative evaluation before elective knee arthroscopy. He walks 3 km daily without chest pain, dyspnea, palpitations, or syncope. He has no history of heart disease, and there is no family histor",
+   "text": "순환기 심전도 판독 — 수술 전 검사 심전도 이상을 들은 중년 남성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567 A 53 year old man comes to the clinic for preoperative evaluation before elective knee arthroscopy. He walks 3 km daily without chest pain, dyspnea, palpitations, or syncope. He has no history of heart disease, and there is no family history of sudden death. He takes no medications. Pulse is 70/min and blood pressure is 128/78 mm Hg. Cardiac examination shows a widely split S2 that persists with expiration; there are no murmurs. Echocardiography shows normal chamber sizes, normal valves, and normal pulmonary artery pressure. A 12 lead ECG is shown. Which of the following is the most likely ECG diagnosis? A. Complete right bundle branch block B. Brugada pattern C. Complete left bundle branch block D. Left anterior fascicular block E. Ventricular preexcitation"
+  },
+  {
+   "id": "imaging-2026-0783",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 쉬던 중 가슴이 조였다가 지금은 편한 고령 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0783.md",
+   "snippet": "72세 여자가 4시간 전 쉬던 중 시작된 가슴 조임으로 응급실에 왔다. 통증은 40분 동안 이어지다 저절로 사라졌고 지금은 편하다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 72회/분, 호흡 16회/분, 산소포화도 97 % 이고 폐 청진에서 수포음은 없다. 고감도 트로포닌 I 는 도착 때 참고치 상한의 4배였고 1시간 뒤 더 올랐다. 크레아티닌은 0.8 mg/dL 이다. 아스피린과 P2Y12",
+   "text": "순환기 심전도 처치 — 쉬던 중 가슴이 조였다가 지금은 편한 고령 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567 72세 여자가 4시간 전 쉬던 중 시작된 가슴 조임으로 응급실에 왔다. 통증은 40분 동안 이어지다 저절로 사라졌고 지금은 편하다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 혈압 138/82 mmHg, 맥박 72회/분, 호흡 16회/분, 산소포화도 97 % 이고 폐 청진에서 수포음은 없다. 고감도 트로포닌 I 는 도착 때 참고치 상한의 4배였고 1시간 뒤 더 올랐다. 크레아티닌은 0.8 mg/dL 이다. 아스피린과 P2Y12 억제제, 항응고제를 투여하였다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 관상동맥 CT 조영술 뒤 결정 B. 24시간 이내 침습적 관상동맥조영술 C. 즉시 정맥 혈전용해제 투여 D. 운동부하검사 뒤 외래 추적 E. 2시간 이내 응급 관상동맥조영술"
+  },
+  {
+   "id": "imaging-2026-0782",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 오래전 심한 가슴 통증을 참고 넘긴 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0782.md",
+   "snippet": "75세 남자가 탈장 수술 전 검사로 찍은 심전도에서 이상이 있다는 말을 듣고 왔다. 5년 전 가슴이 짓눌리는 통증이 몇 시간 이어진 적이 있으나 병원에 가지 않았다. 지금은 가슴 통증이나 호흡곤란이 없다. 고혈압과 당뇨병으로 약을 먹고 있다. 혈압 136/80 mmHg, 맥박 66회/분이고 심잡음은 없다. 고감도 트로포닌 I 는 참고치 이내이다. 심초음파에서 국소 벽운동 이상이 있고 좌심실 박출률은 50 % 이다. 12유도 심",
+   "text": "순환기 심전도 판독 — 오래전 심한 가슴 통증을 참고 넘긴 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202646Z_일일심전도_2026-11-25_3units_3q_4c416567 75세 남자가 탈장 수술 전 검사로 찍은 심전도에서 이상이 있다는 말을 듣고 왔다. 5년 전 가슴이 짓눌리는 통증이 몇 시간 이어진 적이 있으나 병원에 가지 않았다. 지금은 가슴 통증이나 호흡곤란이 없다. 고혈압과 당뇨병으로 약을 먹고 있다. 혈압 136/80 mmHg, 맥박 66회/분이고 심잡음은 없다. 고감도 트로포닌 I 는 참고치 이내이다. 심초음파에서 국소 벽운동 이상이 있고 좌심실 박출률은 50 % 이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 후벽 심근경색 B. 좌각차단 C. 하벽 심근경색 D. 전중격 심근경색 E. 측벽 심근경색"
+  },
+  {
+   "id": "imaging-2026-0781",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 인구 집단 기여위험분율 계산",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0781.md",
+   "snippet": "보건소에서 일하는 45세 남자 의사가 지역 금연사업의 기대 효과를 추정하려고 한다. 이 지역 성인 인구에서 흡연자 비율은 40 % 이다. 이 지역에서 수행한 코호트 연구에서 흡연자의 폐암 발생률은 비흡연자의 10배였고, 흡연 이외의 교란 요인은 보정되었다. 그는 이 지역에서 흡연이 완전히 사라진다면 성인 인구 전체의 폐암 발생 가운데 몇 퍼센트를 줄일 수 있는지 추정하려고 한다. 인구 집단 기여위험분율로 가장 가까운 것은? A",
+   "text": "예방의학·역학 예방의학 — 인구 집단 기여위험분율 계산 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 보건소에서 일하는 45세 남자 의사가 지역 금연사업의 기대 효과를 추정하려고 한다. 이 지역 성인 인구에서 흡연자 비율은 40 % 이다. 이 지역에서 수행한 코호트 연구에서 흡연자의 폐암 발생률은 비흡연자의 10배였고, 흡연 이외의 교란 요인은 보정되었다. 그는 이 지역에서 흡연이 완전히 사라진다면 성인 인구 전체의 폐암 발생 가운데 몇 퍼센트를 줄일 수 있는지 추정하려고 한다. 인구 집단 기여위험분율로 가장 가까운 것은? A. 78 % B. 90 % C. 36 % D. 40 % E. 60 %"
+  },
+  {
+   "id": "imaging-2026-0780",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 2주 전 넘어진 아이의 손목 측면 X선",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0780.md",
+   "snippet": "A 6 year old girl is brought to the clinic because of left wrist pain. Two weeks ago, she fell from a swing onto her outstretched left hand. She cried briefly, and her parents applied ice; the pain improved, so they did not seek care. She s",
+   "text": "소아과 소아 — 2주 전 넘어진 아이의 손목 측면 X선 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 A 6 year old girl is brought to the clinic because of left wrist pain. Two weeks ago, she fell from a swing onto her outstretched left hand. She cried briefly, and her parents applied ice; the pain improved, so they did not seek care. She still avoids leaning on the hand and has mild pain when carrying her school bag. She has had no fever, and she is otherwise healthy. The parents' account is consistent, and she has no other bruises or injuries. Temperature is 36.8°C (98.2°F). There is mild swelling and tenderness over the distal radius without deformity, erythema, or warmth. Finger movement, sensation, and capillary refill are normal. Leukocyte count is 7,800/mm3, and C reactive protein concentration is within the reference range. A lateral x ray of the left wrist is shown. Which of the following is the most appropriate next step in management? A. Intravenous antibiotics for osteomyelitis B. Skeletal survey for suspected physical abuse C. Immobilization in a short arm cast or splint without reduction D. Closed reduction under sedation followed by a long arm cast E. MRI of the wrist to evaluate for a bone tumor"
+  },
+  {
+   "id": "imaging-2026-0779",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 첫 자궁경부 선별검사의 비정형 편평세포",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0779.md",
+   "snippet": "32세 여자가 자궁경부암 선별검사 결과를 듣기 위해 왔다. 처음 받은 선별검사이고 증상은 없다. 월경은 규칙적이고 임신 계획은 없다. 성관계 상대는 1명이고 흡연하지 않는다. 내진에서 자궁경부는 육안으로 정상이다. 자궁경부 세포검사 결과는 미확정 비정형 편평세포(ASC US)이고, 함께 시행한 고위험 인유두종바이러스 검사는 16형·18형 이외의 유형에서 양성이다. 다음 처치로 가장 적절한 것은? A. 단순 자궁절제술 B. 질확",
+   "text": "산부인과 부인과 — 첫 자궁경부 선별검사의 비정형 편평세포 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 32세 여자가 자궁경부암 선별검사 결과를 듣기 위해 왔다. 처음 받은 선별검사이고 증상은 없다. 월경은 규칙적이고 임신 계획은 없다. 성관계 상대는 1명이고 흡연하지 않는다. 내진에서 자궁경부는 육안으로 정상이다. 자궁경부 세포검사 결과는 미확정 비정형 편평세포(ASC US)이고, 함께 시행한 고위험 인유두종바이러스 검사는 16형·18형 이외의 유형에서 양성이다. 다음 처치로 가장 적절한 것은? A. 단순 자궁절제술 B. 질확대경검사와 조직검사 C. 1년 뒤 공동검사 D. 3년 뒤 세포검사 E. 자궁경부 원추절제술"
+  },
+  {
+   "id": "imaging-2026-0778",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 산소가 필요 없는 고위험 외래 환자의 바이러스 폐렴 치료",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0778.md",
+   "snippet": "A 58 year old woman comes to the clinic because of fever, dry cough, and fatigue for 3 days. A home antigen test was positive for SARS CoV 2 yesterday. She has type 2 diabetes mellitus and obesity (BMI 33 kg/m2). Her only medication is metf",
+   "text": "감염 감염 — 산소가 필요 없는 고위험 외래 환자의 바이러스 폐렴 치료 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 A 58 year old woman comes to the clinic because of fever, dry cough, and fatigue for 3 days. A home antigen test was positive for SARS CoV 2 yesterday. She has type 2 diabetes mellitus and obesity (BMI 33 kg/m2). Her only medication is metformin. She has not received a COVID 19 vaccine in the past 2 years. Temperature is 38.1°C (100.6°F), pulse is 92/min, respirations are 18/min, and blood pressure is 132/80 mm Hg. Pulse oximetry shows an oxygen saturation of 96% on room air, and it stays at 95% after she walks in the hallway. A few crackles are heard at both lung bases. Serum creatinine and liver enzyme concentrations are within the reference ranges. A chest x ray is shown. She is able to eat and drink and wishes to recover at home. Which of the following is the most appropriate pharmacotherapy? A. Amoxicillin clavulanate plus azithromycin B. Oseltamivir C. Nirmatrelvir ritonavir D. Oral dexamethasone E. Dexamethasone plus intravenous remdesivir"
+  },
+  {
+   "id": "imaging-2026-0777",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 항암치료를 앞둔 버킷림프종의 예방",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0777.md",
+   "snippet": "23세 남자가 버킷림프종으로 진단받고 내일 첫 항암치료를 시작할 예정이다. 2주 전부터 배가 불러 오고 숨이 찼다. 다른 병은 없다. 혈압 122/78 mmHg, 맥박 98회/분이다. 복부 CT 에서 장간막에 지름 14 cm 종괴가 있다. 혈액검사 결과는 다음과 같다. 젖산탈수소효소 2,850 U/L(참고치 상한 250), 요산 9.8 mg/dL, 크레아티닌 1.0 mg/dL, 칼륨 4.6 mEq/L, 인 4.3 mg/dL, ",
+   "text": "혈액·종양 혈액·종양 — 항암치료를 앞둔 버킷림프종의 예방 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 23세 남자가 버킷림프종으로 진단받고 내일 첫 항암치료를 시작할 예정이다. 2주 전부터 배가 불러 오고 숨이 찼다. 다른 병은 없다. 혈압 122/78 mmHg, 맥박 98회/분이다. 복부 CT 에서 장간막에 지름 14 cm 종괴가 있다. 혈액검사 결과는 다음과 같다. 젖산탈수소효소 2,850 U/L(참고치 상한 250), 요산 9.8 mg/dL, 크레아티닌 1.0 mg/dL, 칼륨 4.6 mEq/L, 인 4.3 mg/dL, 칼슘 9.1 mg/dL. 포도당 6 인산탈수소효소 활성은 정상이다. 정맥 수액과 함께 항암치료 전에 투여할 약으로 가장 적절한 것은? A. 라스부리카제 B. 알로푸리놀 C. 탄산수소나트륨 D. 푸로세미드 E. 세벨라머"
+  },
+  {
+   "id": "imaging-2026-0776",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 아침 두통과 첫 경련으로 찍은 뇌 MRI 의 촬영 기법",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0776.md",
+   "snippet": "29세 남자가 3주 전부터 아침에 심해지는 두통으로 왔다. 2일 전 처음으로 오른손이 1분 동안 떨렸다고 한다. 다른 병은 없고 먹는 약도 없다. 활력징후는 정상이고 신경학적 진찰에서 국소 이상은 없다. 혈청 전해질과 포도당은 참고치 이내이다. 종양 검사 프로토콜로 뇌 MRI 를 시행하였고, 정수리 부근의 축상 영상 하나는 그림과 같다. 이 영상의 촬영 기법으로 가장 적절한 것은? A. 비조영 T1 강조영상 B. T2 강조영상",
+   "text": "신경 신경 — 아침 두통과 첫 경련으로 찍은 뇌 MRI 의 촬영 기법 opendata kmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 29세 남자가 3주 전부터 아침에 심해지는 두통으로 왔다. 2일 전 처음으로 오른손이 1분 동안 떨렸다고 한다. 다른 병은 없고 먹는 약도 없다. 활력징후는 정상이고 신경학적 진찰에서 국소 이상은 없다. 혈청 전해질과 포도당은 참고치 이내이다. 종양 검사 프로토콜로 뇌 MRI 를 시행하였고, 정수리 부근의 축상 영상 하나는 그림과 같다. 이 영상의 촬영 기법으로 가장 적절한 것은? A. 비조영 T1 강조영상 B. T2 강조영상 C. FLAIR 영상 D. 확산강조영상 E. 조영 T1 강조영상"
+  },
+  {
+   "id": "imaging-2026-0775",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 개복 수술 병력이 있는 여성의 구토와 복부팽만",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0775.md",
+   "snippet": "A 62 year old woman comes to the emergency department because of crampy periumbilical abdominal pain, vomiting, and abdominal distention for 18 hours. She has not passed flatus since this morning. She underwent open hysterectomy 6 years ago",
+   "text": "외과 외과계 — 개복 수술 병력이 있는 여성의 구토와 복부팽만 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 A 62 year old woman comes to the emergency department because of crampy periumbilical abdominal pain, vomiting, and abdominal distention for 18 hours. She has not passed flatus since this morning. She underwent open hysterectomy 6 years ago. Temperature is 37.2°C (99°F), pulse is 94/min, and blood pressure is 128/80 mm Hg. The abdomen is distended and tympanic with high pitched bowel sounds and mild diffuse tenderness without guarding or rebound. There is no hernia. Leukocyte count is 9,800/mm3, and serum lactate concentration is 1.4 mmol/L. CT of the abdomen with contrast shows dilated small bowel loops with a transition point in the lower abdomen, collapsed distal ileum and colon, normal bowel wall enhancement, and no free air or mesenteric edema. Which of the following is the most appropriate next step in management? A. Oral polyethylene glycol bowel preparation B. Nasogastric decompression and intravenous fluids C. Emergency exploratory laparotomy D. Colonoscopic decompression of the bowel E. Intravenous neostigmine infusion"
+  },
+  {
+   "id": "imaging-2026-0774",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 산소마스크에도 오르지 않는 산소포화도의 기전",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0774.md",
+   "snippet": "73세 여자가 2일 전부터 심해진 호흡곤란으로 응급실에 왔다. 8일 전 비인두 검체의 SARS CoV 2 핵산증폭검사가 양성이었다. 체온 38.2℃, 맥박 104회/분, 호흡 32회/분, 혈압 128/74 mmHg 이다. 비재호흡 마스크로 산소를 투여하는 중에도 산소포화도는 84 % 이고, 양쪽 폐에서 수포음이 들린다. 이 마스크를 쓴 상태의 동맥혈가스검사는 pH 7.46, PaCO2 33 mmHg, PaO2 58 mmHg 이",
+   "text": "응급·중환자 응급 — 산소마스크에도 오르지 않는 산소포화도의 기전 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 73세 여자가 2일 전부터 심해진 호흡곤란으로 응급실에 왔다. 8일 전 비인두 검체의 SARS CoV 2 핵산증폭검사가 양성이었다. 체온 38.2℃, 맥박 104회/분, 호흡 32회/분, 혈압 128/74 mmHg 이다. 비재호흡 마스크로 산소를 투여하는 중에도 산소포화도는 84 % 이고, 양쪽 폐에서 수포음이 들린다. 이 마스크를 쓴 상태의 동맥혈가스검사는 pH 7.46, PaCO2 33 mmHg, PaO2 58 mmHg 이다. 응급 심초음파에서 좌심실 크기와 수축 기능은 정상이다. 흉부 X선 사진은 그림과 같다. 저산소증의 주된 기전으로 가장 적절한 것은? A. 폐포 저환기 B. 확산 장애 C. 흡입 산소분압 저하 D. 폐내 단락 E. 환기 관류 불균형"
+  },
+  {
+   "id": "imaging-2026-0773",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 감기 뒤 앞으로 숙이면 덜한 가슴 통증의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8",
+   "confidence": "high",
+   "date": "2026-11-24",
+   "path": "content/imaging/2026/imaging-2026-0773.md",
+   "snippet": "28세 남자가 3일 전부터 생긴 가슴 통증으로 왔다. 통증은 날카롭고 숨을 들이쉬거나 누우면 심해지며 앉아서 앞으로 숙이면 덜하다. 1주 전 콧물과 인후통을 앓았다. 혈압 124/76 mmHg, 맥박 96회/분, 체온 37.8℃ 이다. 흉골 왼쪽 가장자리에서 마찰음이 들린다. 심전도에서 여러 유도에 오목한 ST 상승과 PR 하강이 있다. 고감도 트로포닌 I 는 참고치 이내이고, 심초음파에서 소량의 심낭삼출이 있으나 우심방·우심",
+   "text": "순환기 순환기 — 감기 뒤 앞으로 숙이면 덜한 가슴 통증의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261124T202502Z_일일영상_2026-11-25_9units_9q_0046e2c8 28세 남자가 3일 전부터 생긴 가슴 통증으로 왔다. 통증은 날카롭고 숨을 들이쉬거나 누우면 심해지며 앉아서 앞으로 숙이면 덜하다. 1주 전 콧물과 인후통을 앓았다. 혈압 124/76 mmHg, 맥박 96회/분, 체온 37.8℃ 이다. 흉골 왼쪽 가장자리에서 마찰음이 들린다. 심전도에서 여러 유도에 오목한 ST 상승과 PR 하강이 있다. 고감도 트로포닌 I 는 참고치 이내이고, 심초음파에서 소량의 심낭삼출이 있으나 우심방·우심실 확장기 허탈은 없으며 좌심실 수축은 정상이다. 치료로 가장 적절한 것은? A. 심낭천자 B. 헤파린 정맥 주사 C. 관상동맥조영술 D. 고용량 아스피린과 콜히친 E. 프레드니솔론 단독"
   },
   {
    "id": "cn.psy.nms.serotonin-syndrome-differential",
