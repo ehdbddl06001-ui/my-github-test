@@ -1616,8 +1616,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1974": {
+   "id": "kmle-2026-1974",
+   "exam": "kmle",
+   "subject": "Neurology",
+   "step": "",
+   "type": "A Sudden Severe Headache Fourteen Hours Ago with a Normal Head CT in a Woman in Her Early Forties",
+   "style": "",
+   "modality": "",
+   "question": "다음으로 시행할 검사로 가장 적절한 것은?",
+   "chosen": 3,
+   "chosenText": "뇌 확산강조 MRI",
+   "answer": 4,
+   "answerText": "요추 천자 뇌척수액 검사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "1분 안에 최고에 이른 생애 최악의 두통은 거미막밑 출혈을 의심해야 한다. 발병 6시간이 지나 찍은 CT는 정상이어도 출혈을 충분히 배제하지 못하므로, 요추 천자로 적혈구와 황색변색을 확인한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T04:38:00.412Z"
+ "updated": "2026-11-24T04:39:27.391Z"
 }
