@@ -1511,8 +1511,29 @@
    "date": "2026-11-15",
    "device": "pc-rrt1bx",
    "note": ""
+  },
+  "kmle-2026-1970": {
+   "id": "kmle-2026-1970",
+   "exam": "kmle",
+   "subject": "Infectious Disease",
+   "step": "",
+   "type": "A Positive Prenatal Syphilis Screen at 16 Weeks in a Woman Who Had Throat Swelling after an Injection Years Ago",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 0,
+   "chosenText": "독시사이클린 경구 14일",
+   "answer": 3,
+   "answerText": "탈감작 뒤 벤자틴 페니실린 G 근주",
+   "coreNote": "",
+   "differ": "",
+   "decision": "1년 안에 양전된 증상 없는 매독이라 조기 잠복 매독이다. 임신 중에는 페니실린만이 선천 매독을 확실히 예방하므로, 아나필락시스 병력이 있어도 입원해 탈감작한 뒤 벤자틴 페니실린 G 240만 단위를 근주한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-15T01:37:55.271Z"
+ "updated": "2026-11-24T02:17:11.467Z"
 }
