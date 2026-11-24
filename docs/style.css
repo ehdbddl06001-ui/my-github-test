@@ -92,7 +92,11 @@ h1{margin:0; font-size:1.3rem}
    기기 시험(여섯 배치 비교) 결과: **맨 위에 붙은 · 화면 폭을 다 채운 · 불투명한** 고정 요소가 12px 넘게 있으면 흐림이 사라지고, 그 기기의
    안전 영역 위쪽은 0px 이라 안전 영역 높이로 만든 띠(.edge-band)는 높이가 0 이었다. 그래서 메뉴 줄 자체를 폭 전체의 붙는 띠로 만든다 —
    안쪽 여백으로 820px 기둥에 맞추고, 아래는 실선 한 줄. 스크롤해도 메뉴가 남는다. */
-.nav{position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line);
+/* sticky 로 두었더니(v46) 화면을 오갈 때 흐림이 되살아났다 — 시험에서 확인된 것은 fixed 이므로 fixed 로 두고 본문을 그 높이만큼 내린다(v47). */
+:root{--nav-h:49px}
+body:has(.nav){padding-top:calc(var(--safe-top) + var(--nav-h))}
+.nav{position:fixed; top:var(--safe-top); left:0; right:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line);
+  box-sizing:border-box; height:var(--nav-h); align-items:center;
   margin:0; padding:6px max(18px, calc(50% - 392px)) 6px; display:flex; flex-wrap:nowrap; gap:6px; overflow-x:auto; white-space:nowrap; scrollbar-width:none}
 .nav::-webkit-scrollbar{display:none}
 .nav a{flex:none}
@@ -423,6 +427,7 @@ a,button,select,label,summary,input,.opt,.chip{touch-action:manipulation}
 .pwa-toast .x{background:none; border:none; color:var(--muted); font-size:1rem; padding:2px 6px}
 /* 좁은 화면(핸드폰) */
 @media (max-width: 600px){
+  :root{--nav-h:51px}
   .nav{padding:6px 12px 6px}
   .nav::-webkit-scrollbar{display:none}
   .nav a{padding:7px 11px; font-size:.88rem; flex:none}

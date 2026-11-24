@@ -515,7 +515,12 @@ body.pm-open { overflow: hidden; }
 .ucta { align-items: center; gap: 8px; margin: 2px 0 10px; }
 
 /* ── MedKOS 메뉴 · 아틀라스 전용 ── */
-.mk-nav { display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 16px 0; }
+/* 맨 위에 붙은 · 폭 전체 · 불투명 고정 띠 — 아이패드 홈 화면 앱이 맨 위에 덧씌우는 흐림을 없앤다(2026-11-24 기기 시험 · style.css .nav 와 같은 방식) */
+body:has(.mk-nav) { padding-top: 52px; }
+.mk-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: 52px; align-items: center; background: var(--paper); border-bottom: 1px solid var(--line);
+  display: flex; gap: 8px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 6px 16px; }
+.mk-nav::-webkit-scrollbar { display: none; }
+.mk-nav a { flex: none; }
 .mk-nav a { border: 1px solid var(--line); background: var(--panel); color: var(--muted); text-decoration: none;
   border-radius: 99px; padding: 6px 12px; font-size: .9rem; white-space: nowrap; }
 .mk-nav a.active { background: var(--drape); border-color: var(--drape); color: var(--panel); font-weight: 600; }
