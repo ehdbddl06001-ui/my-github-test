@@ -1553,8 +1553,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1964": {
+   "id": "kmle-2026-1964",
+   "exam": "kmle",
+   "subject": "Gastroenterology",
+   "step": "",
+   "type": "Fever and Diffuse Abdominal Pain with Cloudy Ascitic Fluid in a Man with Hepatitis B Cirrhosis",
+   "style": "",
+   "modality": "",
+   "question": "다음으로 시행할 검사로 가장 적절한 것은?",
+   "chosen": 0,
+   "chosenText": "복수 세포진 검사",
+   "answer": 2,
+   "answerText": "복부 조영증강 CT",
+   "coreNote": "",
+   "differ": "",
+   "decision": "간경변 환자의 복수 다형핵 백혈구 4,800/μL는 세균 복막염이다. 총단백 > 1 g/dL, 포도당 < 50 mg/dL, 젖산탈수소효소 상승과 여러 균이 함께 보여 이차성 복막염을 의심하므로 즉시 복부 CT로 천공·농양을 찾는다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T02:18:42.685Z"
+ "updated": "2026-11-24T02:21:09.615Z"
 }
