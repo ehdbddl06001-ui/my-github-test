@@ -811,8 +811,29 @@
    "date": "2026-11-15",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "imaging-2026-0767": {
+   "id": "imaging-2026-0767",
+   "exam": "imaging",
+   "subject": "내분비",
+   "step": "",
+   "type": "내분비 — 검진에서 발견된 고칼슘혈증",
+   "style": "kmle_style",
+   "modality": "",
+   "question": "다음 처치로 가장 적절한 것은?",
+   "chosen": 4,
+   "chosenText": "6~12개월마다 혈청 칼슘과 골밀도 추적",
+   "answer": 3,
+   "answerText": "부갑상샘절제술",
+   "coreNote": "",
+   "differ": "",
+   "decision": "억제되지 않은 PTH 를 동반한 고칼슘혈증으로 원발성 부갑상샘기능항진증이다. 칼슘이 상한보다 1 mg/dL 넘게 높아 무증상이라도 부갑상샘절제술을 한다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202315Z_일일영상_2026-11-24_9units_9q_ead3421d",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T02:02:50.900Z"
+ "updated": "2026-11-24T02:44:22.407Z"
 }
