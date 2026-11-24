@@ -4,9 +4,10 @@ type: concept
 topic: General Surgery
 see_also: [Endocrinology, Otolaryngology]
 date: 2026-09-23
-updated: 2026-10-04
+updated: 2026-11-25
 version: 3
 outline: surg.breast-endocrine            # 기본틀 슬롯(content/outline/subjects.yaml) — 외과 책 손 슬롯 「유방·갑상샘 외과」(관련 해리슨 장: 385장)
+roots_none: "수술 범위는 림프절 구역 · 병기에 따른 지침 기준이 정한다 — 내려갈 기초 기전이 없다"
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문

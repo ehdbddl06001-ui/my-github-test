@@ -556,6 +556,13 @@ window.MEDKOS_RELATED = {
     "term": "hypoxemia"
    }
   ],
+  "cn.physio.insulin-secretion.c-peptide-cosecretion": [
+   {
+    "id": "paper-2026-0464",
+    "how": "a",
+    "term": "c peptide"
+   }
+  ],
   "cn.physio.ventricular-activation.bundle-branch-block": [
    {
     "id": "paper-2026-0441",
@@ -1347,6 +1354,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.cardiac-mri-lge.pattern-etiology"
    ]
   },
+  "paper-2026-0464": {
+   "t": "β-Cell Function and Diabetes Outcomes 1 Year After Stopping Oral Baricitinib Immunotherapy for Type 1 Diabetes",
+   "j": "Diabetes care",
+   "d": "2026-08-21",
+   "c": [
+    "cn.physio.insulin-secretion.c-peptide-cosecretion"
+   ]
+  },
   "paper-2026-0471": {
    "t": "Risk Factors for Posttraumatic Stress Disorder in Mexican Psychiatric Trauma Survivors",
    "j": "Actas espanolas de psiquiatria",
@@ -1939,6 +1954,7 @@ window.MEDKOS_RELATED = {
   "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
   "cn.physio.hypoxemia.shunt-oxygen-unresponsive": "저산소혈증 기전 — 산소에 안 오르면 션트",
+  "cn.physio.insulin-secretion.c-peptide-cosecretion": "인슐린 분비 — 프로인슐린이 잘려 C 펩티드와 함께 나온다",
   "cn.physio.ventricular-activation.bundle-branch-block": "심실 탈분극 순서 — 늦게 깨는 쪽으로 QRS 끝이 향한다",
   "cn.prev.association-measures.rr-or-ar-selection": "역학 지표 — 설계가 쓸 수 있는 지표를 정한다",
   "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff": "검사 타당도 — 유병률은 예측도만, 기준점은 둘 다",

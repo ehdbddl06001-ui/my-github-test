@@ -4,9 +4,10 @@ type: concept
 topic: Cardiology
 see_also: [Emergency Medicine, Pharmacology]
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-25
 version: 1
 outline: h245            # 기본틀 슬롯 — 해리슨 21판 245장 → 22판 252장 Bradyarrhythmias: AV Node
+roots: [cn.pharm.digoxin.na-k-atpase-inhibition]
 confidence: medium
 review_status: unreviewed
 note_form: 2

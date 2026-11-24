@@ -12885,9 +12885,9 @@ window.MEDKOS_CONCEPTS = {
    "Pharmacology"
   ],
   "version": 1,
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "reviewStatus": "unreviewed",
-  "hash": "3d292636f3ad6a8e",
+  "hash": "f36c9e804d3cba3c",
   "summary": [
    "결론: 완전 방실차단·저혈압·고칼륨혈증을 동반한 디곡신 중독은 디곡신 특이 항체 절편(digoxin immune Fab)이 1차 치료다.",
    "시험 단서: 디곡신 복용자 + 새 약(아미오다론·베라파밀·클래리스로마이신) 또는 신기능 저하 → 구역·노란 시야·느린 맥.",
@@ -12964,7 +12964,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.pharm.digoxin.na-k-atpase-inhibition"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h245",
@@ -56207,9 +56209,9 @@ window.MEDKOS_CONCEPTS = {
    "Psychiatry"
   ],
   "version": 1,
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "reviewStatus": "unreviewed",
-  "hash": "c41127d834294dd9",
+  "hash": "54ad079bb8551aac",
   "summary": [
    "결론: 저혈당 때 인슐린은 높은데 C 펩티드·프로인슐린이 억제되어 있으면 외인성 인슐린 투여다.",
    "시험 단서: 비당뇨인 의료인·당뇨 가족 + 휘플 삼징(Whipple triad) + 인슐린↑·C 펩티드↓(factitious hypoglycemia).",
@@ -56285,7 +56287,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.physio.insulin-secretion.c-peptide-cosecretion"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h406",
@@ -62425,9 +62429,9 @@ window.MEDKOS_CONCEPTS = {
    "Infectious Disease"
   ],
   "version": 1,
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "reviewStatus": "unreviewed",
-  "hash": "c2c99af40967b475",
+  "hash": "4f0de4112503436a",
   "summary": [
    "결론: 복수 호중구 > 250/μL 에 이차성 기준이 겹치면 자발성으로 치료만 하지 말고 즉시 복부 조영증강 CT 로 천공·농양을 찾는다.",
    "시험 단서: 간경변 복수 + 열·복통, 복수 총단백 > 1 g/dL · 포도당 < 50 mg/dL · LDH > 혈청 상한, 여러 균(polymicrobial).",
@@ -62506,7 +62510,7 @@ window.MEDKOS_CONCEPTS = {
   "layer": "clinical",
   "discipline": "",
   "roots": [],
-  "rootsNone": "",
+  "rootsNone": "복수 검사 수치 기준(이차성 복막염 기준)으로 다음 검사를 고르는 진단 경로 — 지침 수치 기준이다",
   "rootSupports": [],
   "outline": "h344",
   "order": 30,
@@ -66818,9 +66822,9 @@ window.MEDKOS_CONCEPTS = {
    "Otolaryngology"
   ],
   "version": 3,
-  "updated": "2026-10-04",
+  "updated": "2026-11-25",
   "reviewStatus": "unreviewed",
-  "hash": "e1788da43a680182",
+  "hash": "ecaaae48a13b5cac",
   "summary": [
    "결론: 임상적 림프절 전이(cN1)가 확인되면 크기와 무관하게 전절제, 림프절 절제는 전이가 확인된 구역만 치료적으로 더한다.",
    "시험 단서: 세침 유두암(papillary thyroid carcinoma) + 수술 전 초음파에서 6구역 림프절 세침 양성(cN1a)·측경부 정상.",
@@ -66911,7 +66915,7 @@ window.MEDKOS_CONCEPTS = {
   "layer": "clinical",
   "discipline": "",
   "roots": [],
-  "rootsNone": "",
+  "rootsNone": "수술 범위는 림프절 구역 · 병기에 따른 지침 기준이 정한다 — 내려갈 기초 기전이 없다",
   "rootSupports": [],
   "outline": "surg.breast-endocrine",
   "order": 8,
@@ -156809,6 +156813,231 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.pharm.digoxin.na-k-atpase-inhibition": {
+  "id": "cn.pharm.digoxin.na-k-atpase-inhibition",
+  "title": "디곡신 — Na⁺/K⁺-ATPase 를 막아 수축·전도·칼륨이 바뀐다",
+  "objective": "디곡신이 Na⁺/K⁺-ATPase 를 막는 한 가지 작용에서 약한 수축력 증가 · 방실결절 전도 지연 · 심실 흥분성 증가 · 급성 중독의 고칼륨혈증이 함께 나오는 이유를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "강심배당체(cardiac glycoside)의 작용 기전과 중독 — 디곡신(digoxin)",
+  "topic": "Pharmacology",
+  "seeAlso": [
+   "Cardiology",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-25",
+  "reviewStatus": "unreviewed",
+  "hash": "7493991f4f37c981",
+  "summary": [
+   "결론: 디곡신의 효과와 독성은 모두 심근 Na⁺/K⁺-ATPase 억제 하나에서 나온다.",
+   "시험 단서: 디곡신 복용 + 구역·노란 시야 + 방실차단 또는 심실 빈맥 + 급성 과량의 고칼륨(cardiac glycoside toxicity).",
+   "왜: 펌프가 막히면 세포 안 Na⁺ 이 늘어 Ca²⁺ 이 쌓이고, 칼륨은 세포 안으로 들어가지 못한다.",
+   "급성 과량의 고칼륨은 펌프 차단의 결과라 원인을 떼는 항체 절편이 칼륨까지 되돌린다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "디곡신의 효과와 독성은 모두 심근 Na⁺/K⁺-ATPase 억제 하나에서 나온다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "디곡신의 효과와 독성은 모두 심근 Na⁺/K⁺-ATPase 억제 하나에서 나온다."
+      ]
+     }
+    ],
+    "html": "디곡신의 효과와 독성은 모두 심근 Na⁺/K⁺-ATPase 억제 하나에서 나온다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "디곡신 복용 + 구역·노란 시야 + 방실차단 또는 심실 빈맥 + 급성 과량의 고칼륨(cardiac glycoside toxicity).",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "디곡신 복용 + 구역·노란 시야 + 방실차단 또는 심실 빈맥 + 급성 과량의 고칼륨(cardiac glycoside toxicity)."
+      ]
+     }
+    ],
+    "html": "디곡신 복용 + 구역·노란 시야 + 방실차단 또는 심실 빈맥 + 급성 과량의 고칼륨(cardiac glycoside toxicity)."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "펌프가 막히면 세포 안 Na⁺ 이 늘어 Ca²⁺ 이 쌓이고, 칼륨은 세포 안으로 들어가지 못한다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "펌프가 막히면 세포 안 Na⁺ 이 늘어 Ca²⁺ 이 쌓이고, 칼륨은 세포 안으로 들어가지 못한다."
+      ]
+     }
+    ],
+    "html": "펌프가 막히면 세포 안 Na⁺ 이 늘어 Ca²⁺ 이 쌓이고, 칼륨은 세포 안으로 들어가지 못한다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "급성 과량의 고칼륨은 펌프 차단의 결과라 원인을 떼는 항체 절편이 칼륨까지 되돌린다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "급성 과량의 고칼륨은 펌프 차단의 결과라 원인을 떼는 항체 절편이 칼륨까지 되돌린다."
+      ]
+     }
+    ],
+    "html": "급성 과량의 고칼륨은 펌프 차단의 결과라 원인을 떼는 항체 절편이 칼륨까지 되돌린다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 470장 p.3706 · 3712, 265장 p.1996",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "pharmacology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.cardio.digoxin-toxicity.digoxin-fab"
+  ],
+  "outline": "pharm.cardiovascular-renal",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — Na⁺/K⁺-ATPase 가 세포 안팎의 기울기를 지킨다",
+    "deep": false,
+    "html": "<p>심근세포 막의 Na⁺/K⁺-ATPase 는 나트륨을 세포 밖으로, 칼륨을 세포 안으로 퍼 올려 세포 안 나트륨을 낮게, 칼륨을 높게 유지한다. 세포 안 나트륨이 낮아야 Na⁺/Ca²⁺ 교환체가 칼슘을 세포 밖으로 내보낼 수 있다(전공 교과서 미대조).</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 펌프 하나가 막혀 네 가지가 바뀐다",
+    "deep": false,
+    "html": "<p>디곡신 같은 강심배당체는 이 펌프를 막는다 <sup>[1 470장 p.3712]</sup>.</p>\n<ul>\n<li><strong>세포 안 칼슘</strong> — 세포 안 나트륨이 늘면 칼슘이 덜 빠져 수축 때 쓸 칼슘이 늘어난다. 치료 농도에서는 약한 수축력 증가이고 <sup>[1 265장 p.1996]</sup>, 지나치면 칼슘 과부하로 흥분성이 높아진 심실에서 빈맥성 부정맥이 생긴다 <sup>[1 470장 p.3712]</sup>.</li>\n<li><strong>자율신경</strong> — 압수용체 활동을 둔하게 하고 교감신경을 억제해 노르에피네프린과 레닌이 줄어든다 <sup>[1 265장 p.1996]</sup>. 방실결절 전도가 늦어져 과량에서는 방실차단이 된다 <sup>[1 470장 p.3712]</sup>.</li>\n<li><strong>칼륨 분포</strong> — 펌프가 칼륨을 세포 안으로 넣지 못해 급성 과량에서 고칼륨혈증이 된다 <sup>[1 470장 p.3712]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 느린 맥과 빠른 심실이 함께 오는 이유",
+    "deep": false,
+    "html": "<ul>\n<li>전도는 늦어지고(방실차단) 심실은 예민해지므로, 한 환자에서 방실차단과 상심실 빈맥이 같이 보일 수 있다 <sup>[1 470장 p.3712]</sup>.</li>\n<li>구역 · 정신 증상 · 노랗게 보이는 시각 증상이 흔한 첫 신호다 <sup>[1 470장 p.3712]</sup>.</li>\n<li>만성 중독은 급성보다 낮은 농도에서 독성이 나온다 — 농도 하나로 안심하지 않는다 <sup>[1 470장 p.3712]</sup>. 펌프 자리를 두고 칼륨과 디곡신이 다투므로 저칼륨혈증은 독성을 키운다(전공 교과서 미대조).</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 이 기전이 가르는 선택",
+    "deep": false,
+    "html": "<ul>\n<li>증상 · 부정맥 · 고칼륨이 모두 펌프 차단에서 왔으므로, 디곡신을 떼어 내는 항체 절편이 원인을 한 번에 되돌린다 <sup>[1 470장 p.3712]</sup>.</li>\n<li>디곡신은 심부전의 사망률을 줄이지 못해 지금은 최적 치료에도 증상이 심한 환자의 마지막 선택이다 <sup>[1 265장 p.1996]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 470장 p.3706 · 3712, 265장 p.1996)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "Na⁺/K⁺-ATPase 억제에서 소견까지",
+    "columns": [
+     "바뀌는 것",
+     "소견"
+    ],
+    "rows": [
+     [
+      "세포 안 Ca²⁺ 증가",
+      "약한 수축력 증가 <sup>[1 265장 p.1996]</sup>, 과하면 심실 빈맥성 부정맥 <sup>[1 470장 p.3712]</sup>"
+     ],
+     [
+      "자율신경 효과(교감 억제 · 압수용체 둔화)",
+      "노르에피네프린 · 레닌 감소 <sup>[1 265장 p.1996]</sup>, 방실결절 전도 지연 → 방실차단 <sup>[1 470장 p.3712]</sup>"
+     ],
+     [
+      "칼륨이 세포 안으로 못 들어감",
+      "급성 중독의 고칼륨혈증 <sup>[1 470장 p.3712]</sup>"
+     ],
+     [
+      "중추 · 위장관 · 시각",
+      "구역 · 정신 증상 · 시각 증상 <sup>[1 470장 p.3712]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "고칼륨 = 칼륨을 많이 먹었다?",
+    "point": "디곡신 급성 중독의 고칼륨은 몸 전체 칼륨이 늘어서가 아니라, 세포 안으로 칼륨을 넣는 펌프가 막혀 칼륨이 세포 밖에 남은 것이다 <sup>[1 470장 p.3712]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "급성과 만성 중독 — 농도가 같으면 위험도 같다?",
+    "point": "만성 중독은 급성보다 낮은 약물 농도에서 독성이 나온다 <sup>[1 470장 p.3712]</sup>. 고칼륨은 급성 중독의 소견이고, 만성 중독에서는 이뇨제로 칼륨이 낮은 경우가 흔해 칼륨으로 중독 여부를 가르지 않는다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "디곡신은 심부전의 생존을 늘리는 수축제?",
+    "point": "디곡신의 수축력 증가는 약하다. DIG 시험에서 심부전 입원은 줄었지만 사망률은 줄지 않았고, 높은 용량은 치료 안전역을 넘는다 <sup>[1 265장 p.1996]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 470장 Poisoning and Drug Overdose p.3703–3716 · 265장 Heart Failure: Management p.1987–2001",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_470 · H22_265) — 470장 p.3712 표: 강심배당체 기전 = 심장 Na⁺,K⁺-ATPase 막 펌프 억제, 위장관 · 정신 · 시각 증상, 방실차단(상심실 빈맥 동반 가능), 심실 빈맥, 급성 중독의 고칼륨혈증, 만성 중독은 더 낮은 농도에서 독성, 항체 절편 적응; 470장 p.3706 서맥 · 방실차단 · 심실 빈맥성 부정맥의 원인에 강심배당체. 265장 p.1996: 디지털리스 배당체는 약한 수축력 증가 · 경동맥동 압수용체 활동 둔화 · 교감 억제 → 노르에피네프린 · 레닌(아마 알도스테론) 감소, DIG 시험은 심부전 입원 감소 · 사망률 불변, 높은 용량은 치료 안전역을 넘는다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-25",
+    "url": ""
+   }
+  ],
+  "checks": [],
+  "variants": [
+   {
+    "id": "cn.pharm.digoxin.na-k-atpase-inhibition#v1",
+    "context": "같은 기전, 다른 소견 — 급성 과량의 고칼륨혈증",
+    "stem": "24세 여자가 할머니의 심부전 약을 한꺼번에 많이 먹고 4시간 뒤 응급실에 왔다. 구역과 구토가 심하고 사물이 노랗게 보인다고 한다. 혈압 92/58 mmHg, 맥박 38회/분이다. 심전도에서 3도 방실차단이 보인다. 혈청 칼륨 6.4 mEq/L, 크레아티닌 0.7 mg/dL 이고 용혈은 없다. 이 환자의 고칼륨혈증이 생긴 기전은?",
+    "options": [
+     "심근세포 막 Na⁺/K⁺-ATPase 억제로 세포 안 칼륨 유입 감소",
+     "원위 네프론의 알도스테론 수용체 차단으로 칼륨 분비 감소",
+     "사구체 여과율 감소로 칼륨 배설 감소",
+     "횡문근 융해로 세포 안 칼륨 유출",
+     "대사성 산증으로 수소 이온과 칼륨 교환"
+    ],
+    "answer": 1,
+    "explanation": "강심배당체는 Na⁺/K⁺-ATPase 를 막는다. 이 펌프가 칼륨을 세포 안으로 넣으므로, 급성 과량에서는 칼륨이 세포 밖에 남아 고칼륨혈증이 된다 — 같은 펌프 차단이 방실차단과 구역 · 시각 증상도 설명한다. 크레아티닌이 정상이라 배설 감소(B · C)가 아니고, 근육 손상이나 산증을 시사하는 소견이 없다. 그래서 원인 약을 떼어 내는 디곡신 특이 항체 절편이 칼륨까지 되돌린다.",
+    "of": "",
+    "changed": "",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.pharm.lithium.renal-handling-dialyzability": {
   "id": "cn.pharm.lithium.renal-handling-dialyzability",
   "title": "리튬 약동학 — 콩팥이 내보내고 투석이 잘 뺀다",
@@ -160531,6 +160760,232 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "usmle-2026-0292"
   ],
+  "hasErrors": false
+ },
+ "cn.physio.insulin-secretion.c-peptide-cosecretion": {
+  "id": "cn.physio.insulin-secretion.c-peptide-cosecretion",
+  "title": "인슐린 분비 — 프로인슐린이 잘려 C 펩티드와 함께 나온다",
+  "objective": "베타세포가 프로인슐린을 잘라 인슐린과 C 펩티드를 함께 분비하는 과정과 포도당 · 설포닐우레아가 ATP 민감 칼륨 통로로 분비를 일으키는 경로로, 저혈당에서 인슐린 · C 펩티드 · 프로인슐린 조합이 내인성과 외인성 인슐린을 가르는 이유를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "인슐린 생합성과 분비(insulin biosynthesis and secretion) — C 펩티드(C-peptide)",
+  "topic": "Physiology",
+  "seeAlso": [
+   "Endocrinology",
+   "Biochemistry"
+  ],
+  "version": 1,
+  "updated": "2026-11-25",
+  "reviewStatus": "unreviewed",
+  "hash": "8fd45f60f4bde08a",
+  "summary": [
+   "결론: C 펩티드는 베타세포가 내보낸 인슐린에만 따라 나오므로 내인성 인슐린 분비의 표지다.",
+   "시험 단서: 저혈당 + 인슐린↑ — C 펩티드↑면 베타세포(인슐린종 · 설포닐우레아), C 펩티드↓면 주사한 인슐린(exogenous insulin).",
+   "왜: 프로인슐린이 잘린 두 조각이 한 과립에 담겨 함께 분비되고, 상품 인슐린에는 C 펩티드가 없다.",
+   "설포닐우레아는 ATP 민감 칼륨 통로를 직접 닫아 포도당 없이도 베타세포가 분비하게 한다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "C 펩티드는 베타세포가 내보낸 인슐린에만 따라 나오므로 내인성 인슐린 분비의 표지다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "C 펩티드는 베타세포가 내보낸 인슐린에만 따라 나오므로 내인성 인슐린 분비의 표지다."
+      ]
+     }
+    ],
+    "html": "C 펩티드는 베타세포가 내보낸 인슐린에만 따라 나오므로 내인성 인슐린 분비의 표지다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "저혈당 + 인슐린↑ — C 펩티드↑면 베타세포(인슐린종 · 설포닐우레아), C 펩티드↓면 주사한 인슐린(exogenous insulin).",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "저혈당 + 인슐린↑ — C 펩티드↑면 베타세포(인슐린종 · 설포닐우레아)",
+       "C 펩티드↓면 주사한 인슐린(exogenous insulin)."
+      ]
+     }
+    ],
+    "html": "저혈당 + 인슐린↑ — C 펩티드↑면 베타세포(인슐린종 · 설포닐우레아), C 펩티드↓면 주사한 인슐린(exogenous insulin)."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "프로인슐린이 잘린 두 조각이 한 과립에 담겨 함께 분비되고, 상품 인슐린에는 C 펩티드가 없다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "프로인슐린이 잘린 두 조각이 한 과립에 담겨 함께 분비되고, 상품 인슐린에는 C 펩티드가 없다."
+      ]
+     }
+    ],
+    "html": "프로인슐린이 잘린 두 조각이 한 과립에 담겨 함께 분비되고, 상품 인슐린에는 C 펩티드가 없다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "설포닐우레아는 ATP 민감 칼륨 통로를 직접 닫아 포도당 없이도 베타세포가 분비하게 한다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "설포닐우레아는 ATP 민감 칼륨 통로를 직접 닫아 포도당 없이도 베타세포가 분비하게 한다."
+      ]
+     }
+    ],
+    "html": "설포닐우레아는 ATP 민감 칼륨 통로를 직접 닫아 포도당 없이도 베타세포가 분비하게 한다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 415장 p.3198~3199, 418장 p.3231 · 3235~3236",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "physiology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.endo.hypoglycemia.c-peptide-differential"
+  ],
+  "outline": "physio.endocrine",
+  "order": 8,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 프로인슐린 한 분자에서 둘이 나온다",
+    "deep": false,
+    "html": "<p>베타세포는 인슐린을 한 사슬의 프리프로인슐린으로 만들고, 신호 펩티드를 떼어 프로인슐린을 만든다. 프로인슐린 안쪽의 31 잔기 조각이 잘려 나가면 그 조각이 C 펩티드(연결 펩티드)이고, 남은 A · B 사슬이 이황화 결합으로 이어진 것이 인슐린이다. 둘은 같은 분비 과립에 담겨 함께 분비된다 <sup>[1 415장 p.3198]</sup>.</p>\n<ul>\n<li><strong>분비를 켜는 경로</strong> — 포도당이 베타세포로 들어가 글루코키나아제로 인산화되고(속도 결정 단계), 해당에서 생긴 ATP 가 ATP 민감 칼륨 통로를 닫는다. 막이 탈분극되면 전압 의존 칼슘 통로가 열려 인슐린이 분비된다 <sup>[1 415장 p.3199]</sup>.</li>\n<li><strong>꺼지는 방향</strong> — 혈당이 떨어지면 인슐린 분비가 먼저 줄어든다. 이것이 저혈당에 대한 첫 방어다 <sup>[1 418장 p.3231]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 인슐린이 어디서 왔는가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>베타세포가 멈추지 않는다</strong> — 인슐린종이나 분비촉진제에서는 저혈당에서도 분비가 계속되어 인슐린 · C 펩티드 · 프로인슐린이 함께 억제되지 않는다 <sup>[1 418장 p.3235]</sup>. 설포닐우레아 · 메글리티나이드는 ATP 민감 칼륨 통로의 한 단백에 붙어 포도당 신호 없이 통로를 닫는다 <sup>[1 415장 p.3199]</sup>.</li>\n<li><strong>밖에서 들어온 인슐린</strong> — 상품 인슐린에는 C 펩티드가 없다. 주사한 인슐린이 만든 저혈당은 베타세포 분비를 눌러 C 펩티드가 낮아진다 <sup>[1 418장 p.3236]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 저혈당 때 세 가지를 함께 재는 이유",
+    "deep": false,
+    "html": "<ul>\n<li>수치는 정상 범위와 견주지 않고 그때의 혈당과 견준다 — 혈당 &lt; 55 mg/dL 에서 인슐린 ≥ 3 μU/mL · C 펩티드 ≥ 0.6 ng/mL · 프로인슐린 ≥ 5 pmol/L 이면 억제되지 않은 것이다 <sup>[1 418장 p.3235]</sup>.</li>\n<li>C 펩티드는 인슐린보다 천천히 제거되어 분비량을 더 안정적으로 보여 준다 <sup>[1 415장 p.3198]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 이 기전이 가르는 선택",
+    "deep": false,
+    "html": "<ul>\n<li>인슐린↑ · C 펩티드↓ → 외인성 인슐린 — 은밀한 또는 악의적 투여를 생각한다 <sup>[1 418장 p.3236]</sup>.</li>\n<li>인슐린↑ · C 펩티드↑ → 베타세포 분비 — 혈중 분비촉진제 선별이 음성이면 인슐린종을 찾는다 <sup>[1 418장 p.3235]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 415장 p.3198~3199, 418장 p.3231 · 3235~3236)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "저혈당 때 인슐린 · C 펩티드 · 프로인슐린",
+    "columns": [
+     "인슐린의 출처",
+     "인슐린",
+     "C 펩티드 · 프로인슐린"
+    ],
+    "rows": [
+     [
+      "정상 반응(인슐린 무관 저혈당)",
+      "억제",
+      "억제 <sup>[1 418장 p.3231]</sup>"
+     ],
+     [
+      "베타세포 과분비 · 분비촉진제",
+      "억제 안 됨",
+      "억제 안 됨 <sup>[1 418장 p.3235]</sup>"
+     ],
+     [
+      "외인성 인슐린 주사",
+      "높음",
+      "낮음 — 내인성 분비가 눌림 <sup>[1 418장 p.3236]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "C 펩티드가 정상 범위면 내인성 분비가 없다?",
+    "point": "저혈당 때는 인슐린 분비가 거의 0 으로 떨어져야 정상이다. 인슐린 · C 펩티드 · 프로인슐린이 정상 범위여도 낮은 혈당에서 억제되지 않았다면 그것이 이상이다 <sup>[1 418장 p.3235]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "인슐린이 높고 C 펩티드도 높으면 인슐린종으로 확정?",
+    "point": "설포닐우레아 · 메글리티나이드도 베타세포를 직접 자극해 같은 조합(인슐린↑ · C 펩티드↑)을 만든다 <sup>[1 415장 p.3199]</sup> <sup>[1 418장 p.3236]</sup>. 그래서 저혈당 때 혈중 분비촉진제 선별을 함께 잰다 <sup>[1 418장 p.3235]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "C 펩티드는 인슐린과 같은 속도로 사라진다?",
+    "point": "C 펩티드는 인슐린보다 천천히 제거되어 분비량을 더 안정적으로 보여 준다 <sup>[1 415장 p.3198]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 415장 Diabetes Mellitus: Diagnosis, Classification, and Pathophysiology p.3195–3204 · 418장 Hypoglycemia p.3230–3236",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_415 · H22_418) — 415장 p.3198 인슐린 생합성: 86 아미노산 프리프로인슐린 → 신호 펩티드 제거로 프로인슐린 → 안쪽 31 잔기 조각이 잘려 C 펩티드, A(21) · B(30) 사슬은 이황화 결합, 인슐린과 C 펩티드는 분비 과립에 함께 저장되어 함께 분비, C 펩티드는 인슐린보다 천천히 제거되어 분비 표지 · 저혈당에서 내인성/외인성 구별, 70 mg/dL 넘는 포도당이 인슐린 합성 자극; p.3199 포도당 → 글루코키나아제(속도 결정) → 해당 · ATP → ATP 민감 K⁺ 통로 억제(설포닐우레아 · 메글리티나이드 결합 부위 + Kir6.2) → 탈분극 → 전압 의존 칼슘 통로 → 분비, 인크레틴은 공복 혈당 이상일 때만. 418장 p.3231 혈당이 떨어지면 인슐린 분비 감소가 첫 방어; p.3235 저혈당 때 인슐린 · C 펩티드 · 프로인슐린은 정상보다 높을 필요 없이 부적절하게 높으면 된다, 결정적 소견 인슐린 ≥ 3 μU/mL · C 펩티드 ≥ 0.6 ng/mL · 프로인슐린 ≥ 5 pmol/L(혈당 < 55 mg/dL), 분비촉진제 선별; p.3236 분비촉진제는 C 펩티드 상승, 외인성 인슐린은 C 펩티드 저하(분비 억제)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-25",
+    "url": ""
+   }
+  ],
+  "checks": [],
+  "variants": [
+   {
+    "id": "cn.physio.insulin-secretion.c-peptide-cosecretion#v1",
+    "context": "같은 기전, 다른 원인 — 분비촉진제가 만든 저혈당",
+    "stem": "70세 남자가 아침에 식은땀을 흘리며 횡설수설해 가족이 데리고 왔다. 당뇨병은 없고, 함께 사는 아내가 당뇨병으로 먹는 약이 있다. 응급실에서 잰 혈당은 38 mg/dL 이고 포도당 주사 뒤 증상이 바로 좋아졌다. 저혈당 때 채혈한 혈장 인슐린은 18 μU/mL, C 펩티드는 3.1 ng/mL, 프로인슐린은 12 pmol/L 다. 이 환자의 C 펩티드가 높은 이유로 옳은 것은?",
+    "options": [
+     "베타세포의 ATP 민감 칼륨 통로가 닫혀 내인성 인슐린 분비가 일어났다",
+     "주사한 인슐린 제제에 C 펩티드가 섞여 있었다",
+     "콩팥에서 C 펩티드 제거가 빨라졌다",
+     "인슐린 수용체 항체가 C 펩티드 분비를 자극했다",
+     "간에서 인슐린이 분해되며 C 펩티드가 생겼다"
+    ],
+    "answer": 1,
+    "explanation": "저혈당인데 인슐린 · C 펩티드 · 프로인슐린이 모두 억제되지 않았다 — 베타세포가 분비하고 있다. 아내의 약(설포닐우레아 같은 분비촉진제)은 ATP 민감 칼륨 통로를 닫아 막을 탈분극시키고 칼슘을 들여와 프로인슐린에서 잘린 인슐린과 C 펩티드를 함께 내보낸다. 주사한 인슐린에는 C 펩티드가 없어 오히려 C 펩티드가 낮아진다(B). C 펩티드는 간에서 인슐린이 분해되어 생기는 것이 아니라 분비 과립 안에서 프로인슐린이 잘릴 때 생긴다(E). 인슐린종과 가르려면 혈중 분비촉진제를 선별한다.",
+    "of": "",
+    "changed": "",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
   "hasErrors": false
  },
  "cn.physio.ventricular-activation.bundle-branch-block": {

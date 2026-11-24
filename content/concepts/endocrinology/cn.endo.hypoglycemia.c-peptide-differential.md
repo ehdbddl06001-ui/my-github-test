@@ -4,9 +4,10 @@ type: concept
 topic: Endocrinology
 see_also: [Emergency Medicine, Psychiatry]
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-25
 version: 1
 outline: h406            # 기본틀 슬롯 — 해리슨 21판 406장 → 22판 418장 Hypoglycemia
+roots: [cn.physio.insulin-secretion.c-peptide-cosecretion]
 confidence: medium
 review_status: unreviewed
 note_form: 2

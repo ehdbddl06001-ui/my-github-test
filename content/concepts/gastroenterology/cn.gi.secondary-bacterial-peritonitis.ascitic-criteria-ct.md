@@ -4,9 +4,10 @@ type: concept
 topic: Gastroenterology
 see_also: [General Surgery, Infectious Disease]
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-25
 version: 1
 outline: h344            # 기본틀 슬롯 — 해리슨 21판 344장 → 22판 355장 Cirrhosis and Its Complications
+roots_none: "복수 검사 수치 기준(이차성 복막염 기준)으로 다음 검사를 고르는 진단 경로 — 지침 수치 기준이다"
 confidence: medium
 review_status: unreviewed
 note_form: 2
