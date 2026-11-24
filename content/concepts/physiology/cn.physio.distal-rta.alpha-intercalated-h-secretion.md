@@ -4,8 +4,8 @@ type: concept
 topic: Nephrology
 see_also: [Physiology, Rheumatology]
 date: 2026-11-03
-updated: 2026-11-03
-version: 1
+updated: 2026-11-24
+version: 2
 outline: h55
 discipline: physiology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
@@ -27,7 +27,7 @@ pitfalls:
     point: "근위형의 소변 pH 는 혈청 중탄산이 낮아진 상태에서는 5.5 아래로 내려가고, 알칼리를 투여할 때만 5.5 를 넘는다. 이미 산혈증(중탄산 낮음)인데 소변 pH 가 5.5 를 넘으면 원위형이다. 신석회화·결석도 원위형의 특징이다(저구연산뇨·고칼슘뇨)."
     exception: "근위형은 흔히 포도당뇨·아미노산뇨·인산뇨(Fanconi)를 동반한다 — 정상 혈당의 포도당뇨가 보이면 근위형 쪽이다."
     cites: ["harrison-22: 58장 p.372"]
-    covers: ["usmle-2026-0236:A"]
+    covers: ["usmle-2026-0236:A", "kmle-2026-1972:A"]
   - contrast: "4형 vs 1형"
     point: "4형은 칼륨·산 분비가 함께 떨어져 GFR 저하에 비해 고칼륨혈증이 크다. 칼륨이 낮으면 4형이 아니다."
     cites: ["harrison-22: 58장 p.372"]

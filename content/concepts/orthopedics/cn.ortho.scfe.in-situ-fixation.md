@@ -4,9 +4,10 @@ type: concept
 topic: Orthopedics
 see_also: [Pediatrics, Endocrinology]
 date: 2026-09-23
-updated: 2026-10-03
+updated: 2026-11-24
 version: 4
 outline: ortho.pediatric         # 정형외과 손 슬롯 「소아 정형 — 성장판 손상·고관절 이형성」(해리슨 대조 대상 아님)
+roots: [cn.anat.bone-blood-supply.retrograde-avn]
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문

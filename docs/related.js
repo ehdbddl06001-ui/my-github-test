@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-23",
+ "generated": "2026-11-24",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -340,6 +340,13 @@ window.MEDKOS_RELATED = {
     "term": "obstructive"
    }
   ],
+  "cn.endo.hypoglycemia.c-peptide-differential": [
+   {
+    "id": "paper-2026-0942",
+    "how": "t",
+    "term": "hypoglycemia"
+   }
+  ],
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": [
    {
     "id": "paper-2026-0400",
@@ -422,6 +429,13 @@ window.MEDKOS_RELATED = {
     "term": "acute pancreatitis"
    }
   ],
+  "cn.heme.apl.immediate-atra": [
+   {
+    "id": "paper-2026-0100",
+    "how": "t",
+    "term": "acute promyelocytic leukemia"
+   }
+  ],
   "cn.id.invasive-aspergillosis.angioinvasion-mechanism": [
    {
     "id": "paper-2026-0370",
@@ -490,6 +504,13 @@ window.MEDKOS_RELATED = {
     "term": "acute kidney injury"
    }
   ],
+  "cn.neuro.sah.ct-negative-lumbar-puncture": [
+   {
+    "id": "paper-2026-0390",
+    "how": "t",
+    "term": "aneurysmal subarachnoid hemorrhage"
+   }
+  ],
   "cn.obgyn.gestational-diabetes.insulin-indication": [
    {
     "id": "paper-2026-0682",
@@ -526,6 +547,13 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0738",
     "how": "t",
     "term": "femoral neck fracture"
+   }
+  ],
+  "cn.physio.hypoxemia.shunt-oxygen-unresponsive": [
+   {
+    "id": "paper-2026-0716",
+    "how": "t",
+    "term": "hypoxemia"
    }
   ],
   "cn.physio.ventricular-activation.bundle-branch-block": [
@@ -907,6 +935,14 @@ window.MEDKOS_RELATED = {
     "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   },
+  "paper-2026-0100": {
+   "t": "Pediatric recurrent intracranial hypertension secondary to All-Trans Retinoic Acid treatment in a patient with acute promyelocytic leukemia: value of retinal nerve fiber layer thickness in management",
+   "j": "The Turkish journal of pediatrics",
+   "d": "2026-06-08",
+   "c": [
+    "cn.heme.apl.immediate-atra"
+   ]
+  },
   "paper-2026-0109": {
    "t": "Acute kidney injury after heart transplantation: A systematic review and meta-analysis",
    "j": "Transplantation reviews (Orlando, Fla.)",
@@ -1207,6 +1243,14 @@ window.MEDKOS_RELATED = {
     "cn.prev.association-measures.rr-or-ar-selection"
    ]
   },
+  "paper-2026-0390": {
+   "t": "Guidelines for the management of aneurysmal subarachnoid hemorrhage: a guideline for healthcare professionals from the American Heart Association/american Stroke Association",
+   "j": "Stroke",
+   "d": "2012-06",
+   "c": [
+    "cn.neuro.sah.ct-negative-lumbar-puncture"
+   ]
+  },
   "paper-2026-0391": {
    "t": "Chronic kidney disease after acute kidney injury: a systematic review and meta-analysis",
    "j": "Kidney international",
@@ -1484,6 +1528,7 @@ window.MEDKOS_RELATED = {
    "j": "American journal of therapeutics",
    "d": "2026-10-05",
    "c": [
+    "cn.physio.hypoxemia.shunt-oxygen-unresponsive",
     "cn.pulm.hypoxemia.hypoventilation-normal-aa-gradient"
    ]
   },
@@ -1791,6 +1836,14 @@ window.MEDKOS_RELATED = {
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
    ]
   },
+  "paper-2026-0942": {
+   "t": "Childhood insulinoma after years of recurrent hypoglycemia: the role of GLP-1 receptor imaging",
+   "j": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "d": "2026-11-16",
+   "c": [
+    "cn.endo.hypoglycemia.c-peptide-differential"
+   ]
+  },
   "paper-2026-0955": {
    "t": "Feasibility and Adherence of a Multicomponent Digital Health Monitoring Platform in Ambulatory Heart Failure: Multicenter Observational Study",
    "j": "JMIR formative research",
@@ -1868,20 +1921,24 @@ window.MEDKOS_RELATED = {
   "cn.em.burn.fluid-resuscitation-and-airway": "화상 — 2도 이상만 세어 수액, 소변으로 조절",
   "cn.em.sepsis.initial-resuscitation-bundle": "패혈 쇼크 — 첫 한 시간: 배양·항생제·수액·승압제",
   "cn.em.shock.type-differentiation-first-step": "쇼크 — 사지 온도·목정맥·폐음으로 유형 가르기",
+  "cn.endo.hypoglycemia.c-peptide-differential": "고인슐린 저혈당 — C 펩티드가 내인성과 외인성을 가른다",
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
   "cn.ent.adult-neck-mass.malignancy-workup": "성인 목덩이 — 악성 위험이면 영상·세침흡인 먼저",
   "cn.ent.hearing-loss.conductive-vs-sensorineural": "난청 — 음차·청력검사로 전음성과 감각신경성 가르기",
   "cn.gi.crohn-disease.distribution-histology-diagnosis": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
   "cn.gs.acute-cholecystitis.grade2-early-lc": "급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다",
   "cn.gs.acute-pancreatitis.biliary-etiology-ultrasound": "급성 췌장염 — 원인 찾기의 첫 영상은 복부 초음파",
+  "cn.heme.apl.immediate-atra": "급성 전골수구 백혈병 — 의심되면 확진 전 ATRA",
   "cn.id.invasive-aspergillosis.angioinvasion-mechanism": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
   "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": "레지오넬라 폐렴 — 급성 단서가 모이면 소변 항원",
   "cn.neph.adpkd.aneurysm-screening-mra": "다낭신 — 동맥류 가족력이면 증상 없어도 뇌 MRA",
   "cn.neph.aki.atn-vs-prerenal": "급성 세관괴사 vs 신전성 — 세관이 살아 있는가",
+  "cn.neuro.sah.ct-negative-lumbar-puncture": "거미막밑 출혈 — CT 가 정상이면 요추 천자",
   "cn.obgyn.gestational-diabetes.insulin-indication": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
   "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+  "cn.physio.hypoxemia.shunt-oxygen-unresponsive": "저산소혈증 기전 — 산소에 안 오르면 션트",
   "cn.physio.ventricular-activation.bundle-branch-block": "심실 탈분극 순서 — 늦게 깨는 쪽으로 QRS 끝이 향한다",
   "cn.prev.association-measures.rr-or-ar-selection": "역학 지표 — 설계가 쓸 수 있는 지표를 정한다",
   "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff": "검사 타당도 — 유병률은 예측도만, 기준점은 둘 다",

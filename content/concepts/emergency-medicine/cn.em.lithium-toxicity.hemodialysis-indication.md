@@ -4,9 +4,10 @@ type: concept
 topic: Emergency Medicine
 see_also: [Pharmacology, Psychiatry, Nephrology]
 date: 2026-09-23
-updated: 2026-10-01
+updated: 2026-11-24
 version: 2
 outline: h459            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 459장 Poisoning and Drug Overdose
+roots: [cn.pharm.lithium.renal-handling-dialyzability]
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25)

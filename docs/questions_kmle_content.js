@@ -2626,7 +2626,8 @@ window.KMLE_CONTENT_QUESTIONS = [
    "switch": null
   },
   "reviewStatus": "unreviewed",
-  "objective": "cn.neph.distal-rta.urine-anion-gap-differential",
+  "objective": "cn.physio.distal-rta.alpha-intercalated-h-secretion",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "저칼륨혈증을 동반한 정상 음이온차 산증이라 근위형도 떠오른다.",
@@ -2953,6 +2954,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.id.syphilis-pregnancy.penicillin-desensitization",
+  "qversion": 2,
   "distractors": {
    "C": {
     "tempting": "페니실린을 못 쓰면 매독에 효과가 있는 세팔로스포린으로 대신하고 싶다.",
@@ -2966,6 +2968,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "매독은 임신 어느 시기에나 태반을 건너 태아를 감염시킨다. 치료를 미루면 사산·선천 매독 위험이 커지므로 지금 치료한다.",
     "discriminator": "치료를 미루면 태아가 감염될 수 있는가.",
     "when_right": "",
+    "split": ""
+   },
+   "A": {
+    "tempting": "독시사이클린은 페니실린 알레르기가 있는 비임신 성인의 조기 매독 대체 약이다.",
+    "answer_first": "독시사이클린 등 테트라사이클린은 임신 중 태아의 치아·뼈에 침착해 쓰지 않고, 선천 매독 예방 효과도 증명되지 않았다. 임신 중에는 페니실린만이 증명된 약이라 알레르기가 있으면 탈감작 뒤 페니실린을 쓴다.",
+    "discriminator": "임신 16주.",
+    "when_right": "임신하지 않은 페니실린 알레르기 환자의 조기 잠복 매독일 때.",
     "split": ""
    }
   },
@@ -3290,6 +3299,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.heme.apl.immediate-atra",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "급성 골수성 백혈병이니 표준 관해 유도 항암치료를 먼저 떠올린다.",
@@ -3303,6 +3313,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "급성 전골수구 백혈병의 파종 혈관 내 응고에서 트라넥삼산은 이득이 증명되지 않았고 혈전 위험을 높일 수 있다. 응고병증은 올-트랜스 레티노산과 혈액제제 보충으로 교정한다.",
     "discriminator": "응고병증의 원인 치료가 무엇인가.",
     "when_right": "",
+    "split": ""
+   },
+   "E": {
+    "tempting": "급성 골수성 백혈병의 근치 치료로 동종 조혈모세포이식을 떠올린다.",
+    "answer_first": "지금은 파종 혈관 내 응고와 출혈로 며칠 안에 사망할 수 있는 응급 상황이고, 급성 전골수구 백혈병은 올-트랜스 레티노산 기반 치료로 대부분 완치되어 첫 관해에서 이식 적응이 없다. 의심되는 즉시 분화 유도와 혈액제제 보충이 먼저다.",
+    "discriminator": "섬유소원 88 mg/dL · D-이합체 상승 · 아우어 소체 다발의 비정상 전골수구(급성 전골수구 백혈병 의심).",
+    "when_right": "급성 전골수구 백혈병이 재발해 두 번째 관해에 이르렀을 때, 또는 고위험 유전자의 다른 급성 골수성 백혈병이 첫 관해에 들었을 때.",
     "split": ""
    }
   },
@@ -3939,12 +3956,20 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.gi.secondary-bacterial-peritonitis.ascitic-criteria-ct",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "간경변 복수의 감염이니 자발성 세균 복막염으로 보고 치료 반응을 재천자로 확인하려 한다.",
     "answer_first": "자발성 세균 복막염은 보통 한 종류의 균이고 복수 단백이 낮으며 포도당이 정상이다. 이 복수는 이차성 복막염 기준을 만족해 천공을 놓치지 않도록 영상이 먼저다.",
     "discriminator": "복수 총단백·포도당·젖산탈수소효소와 그람 염색 균 종류.",
     "when_right": "자발성 세균 복막염이 의심되고 치료 48시간 뒤 다형핵 백혈구 감소를 확인할 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "복수의 원인을 따질 때 세포진 검사는 흔히 함께 내는 검사이고, 복수 젖산탈수소효소가 높으면 악성 복수도 떠오른다.",
+    "answer_first": "세포진 검사는 악성 복수(복막 암종증)를 가릴 때 쓰고 결과도 늦다. 이 환자는 열·복막 자극과 다형핵 백혈구 4,800/μL, 여러 종류의 균으로 급성 세균 복막염이고, 단백·포도당·젖산탈수소효소 기준이 이차성(천공) 복막염을 가리키므로 수술이 필요한 원인을 찾는 영상이 먼저다.",
+    "discriminator": "복수 다형핵 백혈구 4,800/μL · 그람 염색에 여러 균 · 포도당 32 mg/dL.",
+    "when_right": "열 없이 복수가 빨리 늘고 림프구 우세·혈청-복수 알부민 차이 < 1.1 g/dL 로 복막 암종증이 의심될 때.",
     "split": ""
    }
   },
@@ -124740,7 +124765,8 @@ window.KMLE_CONTENT_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
-  "objective": "cn.id.syphilis.pregnancy-penicillin-allergy-desensitization",
+  "objective": "cn.id.syphilis-pregnancy.penicillin-desensitization",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "페니실린 알레르기가 있는 매독 환자의 대체 약으로 배운다.",

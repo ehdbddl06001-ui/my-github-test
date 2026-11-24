@@ -1270,6 +1270,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.endo.primary-hyperparathyroidism.surgery-indication",
   "figureImg": null,
   "attribution": {
    "dataset": "",

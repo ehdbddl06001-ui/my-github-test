@@ -37516,6 +37516,7 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.id.disseminated-nocardiosis.partial-acid-fast-identification",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "가늘고 가지 치는 그람 양성 실 모양 균은 Actinomyces 와 Nocardia 가 같아 보인다.",
@@ -37529,6 +37530,13 @@ window.USMLE_QUESTIONS = [
     "answer_first": "결핵균은 강한 산-알코올 탈색에도 염색이 남는 항산균이지만 그람 염색에서 가지 치는 실 모양으로 보이지 않는다. 이 균은 그람 양성 실 모양으로 보였다.",
     "discriminator": "「thin, beaded, branching gram-positive filaments」.",
     "when_right": "그람 염색에서 균이 잘 보이지 않고 Ziehl-Neelsen 염색에서 곧거나 약간 휜 항산 막대균이 보일 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "이식 환자의 뇌 병변과 폐 결절은 Cryptococcus 파종에서도 나오고, India ink 로 보이는 두꺼운 피막은 그 균의 대표 소견이다.",
+    "answer_first": "Cryptococcus 는 둥근 효모라 그람 염색에서 가지 치는 실 모양으로 보이지 않는다. 이 균은 가늘고 염주 모양으로 가지 치는 그람 양성 실 모양이라 Nocardia·Actinomyces 쪽이고, 혈청 cryptococcal antigen 도 음성이다.",
+    "discriminator": "「thin, beaded, branching gram-positive filaments」 · 「Serum cryptococcal antigen: Negative」.",
+    "when_right": "면역억제 환자가 아급성 두통·뇌막염으로 오고 뇌척수액·혈청 cryptococcal antigen 이 양성이며 둥근 효모가 보일 때.",
     "split": ""
    }
   },
@@ -37702,6 +37710,7 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.physio.hypoxemia.shunt-oxygen-unresponsive",
+  "qversion": 2,
   "distractors": {
    "D": {
     "tempting": "수술 뒤 저산소증의 가장 흔한 기전이 V/Q 불균형이고, A-a 차이가 크다는 점도 같다.",
@@ -37715,6 +37724,13 @@ window.USMLE_QUESTIONS = [
     "answer_first": "전체 폐포 환기 저하는 PaCO2 가 오르고 A-a 차이가 정상인 저산소증이다. 이 환자는 PaCO2 34 로 오히려 과환기이고 A-a 차이가 크다.",
     "discriminator": "「Arterial blood gas, room air — PCO2」 34 mm Hg + A-a 차이 약 51.",
     "when_right": "아편유사제 과량·신경근 질환·비만 저환기에서 PaCO2 가 오르고 A-a 차이가 정상일 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "A-a 차이가 커진 저산소증이라는 점이 확산 장애와 같고, 확산 장애도 A-a 차이를 늘리는 기전으로 배운다.",
+    "answer_first": "확산 장애는 폐포 PO2 를 크게 올리면 막을 건너는 산소 분압 차이가 커져 100% 산소로 쉽게 교정된다. 이 환자는 100% 산소 20분 뒤에도 PaO2 가 78 mm Hg 에 그쳐 산소가 닿지 않는 폐포를 지나는 혈액(션트)이다. 정상 폐기능이던 수술 이틀째에 폐포-모세혈관 막이 두꺼워질 까닭도 없다.",
+    "discriminator": "「Arterial blood gas after 20 minutes of 100% oxygen — PO2」 78 mm Hg · 우하엽 음영·횡격막 상승·엽간열 이동(무기폐).",
+    "when_right": "간질성 폐질환·폐섬유화처럼 막이 두꺼운 환자가 운동할 때 산소포화도가 떨어지고 100% 산소로는 잘 교정될 때.",
     "split": ""
    }
   },

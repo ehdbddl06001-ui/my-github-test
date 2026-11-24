@@ -4,9 +4,10 @@ type: concept
 topic: Orthopedics
 see_also: [Emergency Medicine, Radiology]
 date: 2026-10-09
-updated: 2026-11-05
+updated: 2026-11-24
 version: 3
 outline: ortho.upper-limb      # 정형외과 손 슬롯 「상지 골절과 탈구」(해리슨 대조 대상 아님)
+roots: [cn.anat.bone-blood-supply.retrograde-avn]
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문
