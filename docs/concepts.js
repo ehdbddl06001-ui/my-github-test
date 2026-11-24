@@ -11568,7 +11568,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "imaging-2026-0527"
+   "imaging-2026-0527",
+   "kmle-2026-1989"
   ],
   "hasErrors": false
  },
