@@ -27,6 +27,12 @@
     apply(t);
   }
   function mount() {
+    // 맨 위 불투명 띠 — iPadOS 26 홈 화면 앱이 상태 막대를 흐리게 덧씌우지 않고 이 색으로 반듯하게 채우게 한다(style.css .edge-band)
+    if (document.body && !document.getElementById("edgeBand")) {
+      var band = document.createElement("div");
+      band.id = "edgeBand"; band.className = "edge-band"; band.setAttribute("aria-hidden", "true");
+      document.body.insertBefore(band, document.body.firstChild);
+    }
     var nav = document.querySelector(".nav");
     if (nav && !document.getElementById("themeToggle")) {
       var b = document.createElement("button");
