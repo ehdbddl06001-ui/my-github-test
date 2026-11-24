@@ -111,3 +111,20 @@
     setTimeout(showInstallButton, 1500);
   });
 })();
+
+/* 맨 위 흐림 다시 재기(2026-11-24) — 아이패드 홈 화면 앱은 맨 위 고정 띠를 보고 흐림을 끄는데, 화면을 오가다 돌아오면(뒤로 가기 · 앱 전환)
+   그 판정이 옛 상태로 남는 일이 있었다. 화면이 다시 보일 때 띠를 한 번 다시 배치시켜 판정을 새로 하게 한다(효과는 기기에서 확인 필요). */
+(function () {
+  function nudge() {
+    var n = document.querySelector(".nav, .mk-nav");
+    if (!n) return;
+    n.style.display = "none";
+    void n.offsetHeight;
+    n.style.display = "";
+    var y = window.scrollY;
+    window.scrollTo(0, y + 1);
+    requestAnimationFrame(function () { window.scrollTo(0, y); });
+  }
+  window.addEventListener("pageshow", function () { setTimeout(nudge, 60); });
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) setTimeout(nudge, 60); });
+})();
