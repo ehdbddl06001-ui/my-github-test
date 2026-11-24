@@ -62,6 +62,8 @@ var MEDKOS_INK = (function () {
      TIP_*    덧층의 펜 끝을 거르지 않은 지금 자리까지 잇고, 예측 점이 없는 기기에서는 빠르기 × 10 ms(화면 7 px 까지)만큼 미리 그린다
      TAPER_*  획의 들머리 · 꼬리를 가늘게(닿고 떨어지는 모양) — 「색 · 굵기 ▸ 획 끝 가늘게」로 끈다 */
   const PT_GAP = 0.9, TIP_AHEAD_MS = 10, TIP_AHEAD_MAX = 7, TAPER_MIN = 0.55;
+  // 끌린 꼬리 다듬기(2026-11-24) — 압력이 획 중앙값의 HOOK_PR 배 아래인 양 끝 구간을 화면 HOOK_MAX px 까지 잘라 낸다. BAR_LAZY ms = 도구줄 갱신 미루기
+  const HOOK_PR = 0.3, HOOK_MAX = 14, HOOK_MIN = 3, BAR_LAZY = 250, RC_KEEP = 1500;
   const MARGIN_W = 352;                                         // 코넬 여백(정리본 오른쪽 줄노트) — 종이 820 + 352 ≈ 전체의 30 %
   const LASER_MS = 2500;                                        // 레이저 포인터가 사라지는 시간
   const EURO = [4, 0.06, 10];                                   // 떨림 보정(1-Euro): 차단 주파수 Hz · 빠르기 계수 · 빠르기 추정 차단 Hz
@@ -330,6 +332,28 @@ var MEDKOS_INK = (function () {
     if (L < 0.8) return ws;
     return ws.map((w, i) => w * Math.min(taperAt(len[i], L), taperAt(total - len[i], L)));
   }
+  /* 끌린 꼬리 · 들머리(2026-11-24 「받침에서 다음 글자로 살짝 이어진다」) — 빨리 쓰면 펜을 떼며(대며) 다음 글자 쪽으로 끌린 구간이 생긴다.
+     압력으로 그리면 실처럼 가늘어 안 보이지만 고른 굵기에서는 굵게 남아 글자가 이어져 보인다. 그 구간은 압력이 획의 중앙값보다 훨씬 낮다 —
+     양 끝의 압력 낮은 구간이 maxLen(종이 px) · 획 길이의 1/4 안일 때만 잘라 낸다(더 길면 일부러 약하게 그은 선). 멈춘 채 뗀 획은 움직인 거리가 없어 잘리지 않는다.
+     rp = 점마다 펜이 준 진짜 압력(펜이 아니면 -1). 돌려주는 값 [남길 첫 점, 남길 끝 점] 또는 null(자를 것 없음). */
+  function hookTrim(pts, rp, maxLen, minLen) {
+    const n = pts.length / 3;
+    if (n < 6 || !rp || rp.length !== n) return null;
+    const pos = rp.filter((v) => v > 0).sort((x, y) => x - y);
+    if (pos.length < n * 0.6) return null;                        // 압력을 주지 않는 입력(손가락 · 마우스)
+    const cut = pos[pos.length >> 1] * HOOK_PR;
+    const seg = (i) => Math.hypot(pts[i * 3] - pts[i * 3 - 3], pts[i * 3 + 1] - pts[i * 3 - 2]);   // 점 i-1 → i
+    let total = 0;
+    for (let i = 1; i < n; i++) total += seg(i);
+    const lim = Math.min(maxLen, total * 0.25);
+    let e = n - 1, tail = 0;
+    while (e > 2 && rp[e] < cut) { tail += seg(e); e--; }
+    if (tail < (minLen || 0) || tail > lim) e = n - 1;             // 너무 짧으면 그대로(획이 만나는 자리가 벌어지지 않게) · 길면 일부러 약하게 그은 선이다
+    let b = 0, head = 0;
+    while (b < e - 2 && rp[b] < cut) { head += seg(b + 1); b++; }
+    if (head < (minLen || 0) || head > lim) b = 0;
+    return b === 0 && e === n - 1 ? null : [b, e];
+  }
   // 형광펜 자동 직선 — 거의 가로로 그은 획이면 평균 높이의 수평선 두 점으로 편다(아니면 null). 글줄에 밑줄 · 칠하기를 반듯하게.
   function straightenH(pts) {
     const n = pts.length / 3;
@@ -366,7 +390,7 @@ var MEDKOS_INK = (function () {
   }
 
   const core = { W, pack, unpack, mergeDocs, sameDoc, emptyDoc, normDoc, countStrokes, seal, unseal, loginKey, snapOf, snapStale, changedParts, sigOf,
-                 euroNew, euroStep, curveSamples, strokeSamples, ribbon, polyTurn, evenStroke, straightenH, loopShape, taperWs, histApply, COLORS, HLS, EURO };
+                 euroNew, euroStep, curveSamples, strokeSamples, ribbon, polyTurn, evenStroke, straightenH, hookTrim, loopShape, taperWs, histApply, COLORS, HLS, EURO };
   if (typeof document === "undefined") return core;          // node 시험 — 아래는 화면이 있을 때만
 
   /* ───────── 기기 저장소(IndexedDB · 없으면 메모리) ───────── */
@@ -825,6 +849,8 @@ var MEDKOS_INK = (function () {
       else if (cz) cz.classList.toggle("cz-open");                // 암기 가림막 — 가린 칸을 하나씩 연다
     });
     UI.scroll.addEventListener("scroll", () => { UI.rc = null; schedule(ensureTiles); }, { passive: true });
+    // 도구줄이 줄바꿈되거나 안내 띠가 생겨 필기 창이 밀리면 자리 값을 버린다 — 이어 쓰는 동안에는 획마다 다시 재지 않으므로(RC_KEEP) 여기서 알아챈다
+    if (window.ResizeObserver) new ResizeObserver(() => { UI.rc = null; }).observe(UI.scroll);
     // 화면 폭이 바뀌면(돌리기 · 창 크기) 종이를 다시 맞춘다. 스크롤의 조각 그리기와 예약 칸을 따로 쓴다(서로 취소하지 않게).
     const refit = () => {
       if (!UI.rec || (UI.scroll.clientWidth === UI.fitW && UI.scroll.clientHeight === UI.fitH)) return;
@@ -849,7 +875,13 @@ var MEDKOS_INK = (function () {
   }
   function closeDrawer() { if (UI.drawer) { UI.drawer.hidden = true; UI.drawer.querySelector(".ink-drawer-b").innerHTML = ""; } }
   function schedule(fn) { cancelAnimationFrame(UI.raf); UI.raf = requestAnimationFrame(fn); }
-  function status(text, cls) { const el = document.getElementById("inkStatus"); if (el) { el.textContent = text; el.className = "ink-st " + (cls || ""); } }
+  function status(text, cls) {                                    // 같은 글이면 건드리지 않는다 — 획마다 불려도 배치를 다시 계산시키지 않게
+    const el = document.getElementById("inkStatus"), c = "ink-st " + (cls || "");
+    if (el && (UI.stTxt !== text || el.className !== c)) { UI.stTxt = text; el.textContent = text; el.className = c; }
+  }
+  // 도구줄 갱신 미루기 — 획을 굳힐 때마다 도구줄을 통째로 다시 그리면 바로 다음 획의 시작이 그만큼 늦는다(빨리 쓸 때 펜이 못 따라온다).
+  // 쓰기를 잠깐 멈췄을 때 한 번만 그린다. 처음 한 획(되돌리기 단추가 켜져야 한다)은 바로 그린다.
+  function barSoon() { clearTimeout(UI.barT); UI.barT = setTimeout(paintBar, BAR_LAZY); }
   function closePalette() { if (UI.pal) UI.pal.hidden = true; if (UI.menu) UI.menu.hidden = true; }
   const wSel = (t) => (t.wsel >= 0 && t.wsel < 3 ? t.wsel : 1);
   function paintBar() {
@@ -1439,7 +1471,9 @@ var MEDKOS_INK = (function () {
       }
       e.preventDefault();
       try { L.setPointerCapture(e.pointerId); } catch (_) { /* 무시 */ }
-      UI.rc = null;                                              // 획을 시작할 때 자리 값을 한 번 잰다 — 쓰는 동안에는 다시 재지 않는다
+      // 획을 시작할 때 자리 값을 한 번 잰다 — 쓰는 동안에는 다시 재지 않는다. 펜으로 방금(RC_KEEP ms 안)까지 쓰던 중이면 그 값을 그대로 쓴다:
+      // 스크롤 · 배치 · 확대가 바뀌면 그쪽에서 이미 버리므로, 글자를 이어 쓰는 동안 획마다 배치를 강제로 다시 계산시키지 않는다(2026-11-24)
+      if (!(e.pointerType === "pen" && Date.now() - UI.lastPen < RC_KEEP)) UI.rc = null;
       const p = pt(e), b = blockAt(p[0], p[1]), o = org(b), st = liveStyle();
       const pr = !UI.tool.even && e.pointerType === "pen" && e.pressure > 0 ? e.pressure : 0.5;
       const w0 = penW(st.w, pr), tp = UI.tool.taper && !st.t && UI.tool.kind === "pen" && !UI.tool.line ? taperLen(w0) : 0;
@@ -1450,13 +1484,14 @@ var MEDKOS_INK = (function () {
                  erase: UI.tool.kind === "erase", laser: UI.tool.kind === "laser", line: !!UI.tool.line, travel: 0, hx: p[0], hy: p[1], hold: 0,
                  // 떨림 보정(1-Euro) — 화면 px 로 건다. 값은 EURO(차단 4 Hz + 빠르기 × 0.06 · 빠르기 추정 10 Hz). 모의 필기(240 Hz)에서
                  // ±0.5 px 떨림 → 0.25 px, 획 시작 지연 2 px, ㄱ 꺾임 오차 1 px. 빠르기 추정을 흔한 기본값 1 Hz 로 두면 획 시작이 6 px 늦는다.
-                 f: eng2() ? euroNew(EURO[0], EURO[1], EURO[2]) : null, pred: null };
+                 f: eng2() ? euroNew(EURO[0], EURO[1], EURO[2]) : null, pred: null,
+                 rp: [e.pointerType === "pen" ? e.pressure : -1] };   // 점마다 펜의 진짜 압력 — 고른 굵기에서 끌린 꼬리를 가려낼 때만 쓴다(hookTrim)
       if (UI.act.f) euroStep(UI.act.f, e.clientX, e.clientY, e.timeStamp || 0);
       if (e.pointerType === "pen") {
         UI.lastPen = Date.now();
         if (!UI.tool.pencil) {                                     // 이 기기에서 펜슬을 처음 썼다 → 펜 모드(한 손가락 · 손바닥으로는 넘기지 않는다)
           UI.tool.pencil = true; saveTool(); paintBar();
-          if (penMode()) UI.el.querySelector(".ink-hint").hidden = false;      // 한 번만 알린다
+          if (penMode()) { UI.el.querySelector(".ink-hint").hidden = false; UI.rc = null; }      // 한 번만 알린다(배치가 밀린다 → 자리 값을 다시 잰다)
         }
       }
       if (UI.act.erase) { eraseAt(p); drawEraser(p); }
@@ -1482,6 +1517,7 @@ var MEDKOS_INK = (function () {
         const pr = pressureOf(ev, a, x, y);
         a.lt = ev.timeStamp || a.lt; a.travel += d;
         a.pts.push(x, y, pr);
+        a.rp.push(ev.pointerType === "pen" ? ev.pressure : -1);
         a.tl.push(a.travel);
         a.ws.push(a.ws[a.ws.length - 1] * 0.55 + penW(a.st.w, pr) * 0.45);
         const k = a.pts.length / 3;
@@ -1540,6 +1576,7 @@ var MEDKOS_INK = (function () {
         if (Math.hypot(x - lx, y - ly) >= a.gap * 0.5) {
           a.travel += Math.hypot(x - lx, y - ly);
           a.pts.push(x, y, a.pts[n - 1]);
+          a.rp.push(a.rp[a.rp.length - 1]);                      // 뗀 자리의 압력은 모른다 — 앞 점과 같다고 본다
           a.tl.push(a.travel);
           a.ws.push(a.ws[a.ws.length - 1]);
           const kk = a.pts.length / 3;
@@ -1554,6 +1591,9 @@ var MEDKOS_INK = (function () {
         const z = straightenH(a.pts);
         if (z) a.pts = z;
       }
+      // 고른 굵기 — 펜을 대고 떼며 끌린 구간(압력이 아주 낮다)을 잘라 낸다. 이미 조각에 그린 꼬리는 그 자리를 다시 그려 지운다
+      const hk = UI.tool.even && !a.st.t && eng2() ? hookTrim(a.pts, a.rp, HOOK_MAX / measure().s, HOOK_MIN / measure().s) : null;
+      if (hk) { staleOf(a); a.pts = a.pts.slice(hk[0] * 3, (hk[1] + 1) * 3); return commitStroke(a, true); }
       const k = a.pts.length / 3;
       if (a.st.t) return commitStroke(a, true);                   // 형광펜은 덧층에만 그렸다 → 조각에 옮겨 그린다
       if (k === 1) return commitStroke(a, true);
@@ -1920,14 +1960,15 @@ var MEDKOS_INK = (function () {
     const tick = () => { if (drawLaser()) UI.laserRaf = requestAnimationFrame(tick); else clearLive(); };
     UI.laserRaf = requestAnimationFrame(tick);
   }
-  function ensureStale(a) {                                       // 버린 획의 흔적을 지운다
+  function staleOf(a) {                                           // 쓰던 획이 지나간 자리를 「다시 그릴 곳」으로 적는다
     let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
     for (let i = 0; i < a.pts.length; i += 3) {
       x0 = Math.min(x0, a.pts[i]); x1 = Math.max(x1, a.pts[i]); y0 = Math.min(y0, a.pts[i + 1]); y1 = Math.max(y1, a.pts[i + 1]);
     }
     if (a.ex != null) { x0 = Math.min(x0, a.ex); x1 = Math.max(x1, a.ex); y0 = Math.min(y0, a.ey); y1 = Math.max(y1, a.ey); }
-    staleFor({ b: a.b, w: a.st.w, x0, x1, y0, y1 }); ensureTiles();
+    staleFor({ b: a.b, w: a.st.w, x0, x1, y0, y1 });
   }
+  function ensureStale(a) { staleOf(a); ensureTiles(); }           // 버린 획의 흔적을 지운다
   function cancelStroke() { if (UI.act && UI.act.pts) { clearTimeout(UI.act.hold); clearLive(); ensureStale(UI.act); } }
   function newId() { return device().slice(-8) + "-" + Date.now().toString(36) + "-" + Math.floor(Math.random() * 46656).toString(36); }
   function commitStroke(a, repaint) {
@@ -1943,7 +1984,8 @@ var MEDKOS_INK = (function () {
     const pg = UI.geo.p;
     if (a.b === "p" && pg && UI.rt[sid].y1 > pg.h - 160) { UI.rec.doc.ph = Math.max(UI.rec.doc.ph, Math.round(pg.h)) + PAPER_STEP; layout(false); }
     else if (repaint) ensureTiles();
-    touched(); paintBar();
+    touched();
+    if (UI.undo.length === 1) paintBar(); else barSoon();         // 되돌리기 단추는 첫 획에서만 바뀐다 — 그 뒤는 쓰기를 멈췄을 때
   }
   // 지우개 — 지나간 길(앞 점 → 지금 점)을 촘촘히 나눠, 획의 **선분**까지의 거리로 판정한다(획의 점만 보면 빨리 그은 획을 놓친다).
   function segDist(px, py, ax, ay, bx, by) {

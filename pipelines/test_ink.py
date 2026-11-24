@@ -117,6 +117,27 @@ class Core(unittest.TestCase):
         self.assertEqual(out["flat"], [10, 50.5, 0.5, 200, 50.5, 0.5])        # 평균 높이의 수평선 두 점
         self.assertEqual((out["wavy"], out["short"], out["back"]), (None, None, None))
 
+    def test_even_width_stroke_drops_the_dragged_hook_at_pen_lift(self):
+        # 2026-11-24 「받침에서 다음 글자로 살짝 이어진다」 — 압력이 아주 낮은 끝 구간(끌린 꼬리 · 들머리)만 자른다
+        out = run_node(CORE % (
+            "const mk=(n,f)=>{const p=[],r=[];for(let i=0;i<n;i++){const q=f(i);p.push(q[0],q[1],.5);r.push(q[2]);}return [p,r];};let a;"
+            "a=mk(24,i=>i<20?[i*2,0,i==0?0.05:0.4]:[38+(i-19)*1.5,-(i-19)*1.5,0.04]);out.tail=I.hookTrim(a[0],a[1],14,3);"
+            "a=mk(24,i=>i<4?[i*2,-8+i*2,0.03]:[i*2,0,0.4]);out.head=I.hookTrim(a[0],a[1],14,3);"
+            "a=mk(24,i=>[i*2,0,0.4]);out.plain=I.hookTrim(a[0],a[1],14,3);"
+            "a=mk(24,i=>[i*2,0,-1]);out.mouse=I.hookTrim(a[0],a[1],14,3);"
+            "a=mk(60,i=>[i*2,0,i>40?0.03:0.4]);out.long=I.hookTrim(a[0],a[1],14,3);"
+            "a=mk(24,i=>[i*2,0,i==23?0.02:0.4]);out.tiny=I.hookTrim(a[0],a[1],14,3)"))
+        self.assertEqual(out["tail"], [0, 19])                                # 끌린 꼬리 네 점을 뗀다(첫 점의 낮은 압력 2 px 는 그대로)
+        self.assertEqual(out["head"], [4, 23])                                # 끌려 들어온 들머리
+        self.assertEqual((out["plain"], out["mouse"]), (None, None))          # 압력이 고르거나 압력이 없는 입력
+        self.assertEqual((out["long"], out["tiny"]), (None, None))            # 길게 약한 선은 일부러 그은 것 · 3 px 안 되는 것은 둔다
+
+    def test_writing_fast_does_not_repaint_the_toolbar_or_remeasure_between_strokes(self):
+        ink = (ROOT / "docs" / "ink.js").read_text(encoding="utf-8")
+        self.assertIn("if (UI.undo.length === 1) paintBar(); else barSoon();", ink)      # 획마다 도구줄을 통째로 다시 그리지 않는다
+        self.assertIn('if (!(e.pointerType === "pen" && Date.now() - UI.lastPen < RC_KEEP)) UI.rc = null;', ink)
+        self.assertIn("if (hk) { staleOf(a); a.pts = a.pts.slice(hk[0] * 3, (hk[1] + 1) * 3); return commitStroke(a, true); }", ink)
+
     def test_undo_and_redo_hand_the_inverse_step_to_each_other(self):
         out = run_node(CORE % (
             "const doc={s:{a:{d:[1]}},g:{}};let n=0;const id=()=>'n'+(++n);"
@@ -414,7 +435,7 @@ class Wiring(unittest.TestCase):
         self.assertNotIn("getBoundingClientRect", body("liveCtx"))
         self.assertNotIn("getBoundingClientRect", body("tipRect"))
         self.assertIn("if (UI.rc && eng2()) return UI.rc;", body("measure"))   # 한 번 재면 다시 재지 않는다(이전 엔진은 매번)
-        self.assertIn("UI.rc = null;                                              // 획을 시작할 때 자리 값을 한 번 잰다", ink)
+        self.assertIn('if (!(e.pointerType === "pen" && Date.now() - UI.lastPen < RC_KEEP)) UI.rc = null;', ink)   # 획을 시작할 때 잰다(이어 쓰는 중이면 그대로)
         self.assertIn('UI.scroll.addEventListener("scroll", () => { UI.rc = null;', ink)   # 스크롤 · 배치가 바뀌면 버린다
         self.assertIn("if (eng2() && UI.tip) ctx.clearRect(UI.tip[0], UI.tip[1],", ink)     # 덧층은 앞에 그린 네모만 지운다
         # 한 마디에 그리기 한 번 — 볼펜은 곡선 하나, 만년필은 띠 한 번 채우기. 다시 그릴 때도 획 하나에 한 번.
