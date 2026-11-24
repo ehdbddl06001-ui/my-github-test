@@ -423,8 +423,29 @@
    "date": "2026-11-24",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "usmle-2026-0291": {
+   "id": "usmle-2026-0291",
+   "exam": "usmle",
+   "subject": "Microbiology",
+   "step": "Step 1",
+   "type": "Three Weeks of Fever and Cough, a Cavitating Lung Nodule and Two Ring-Enhancing Brain Lesions in a 54-Year-Old Woman Eight Months After a Kidney Transplant",
+   "style": "",
+   "modality": "",
+   "question": "Further laboratory testing of this organism is most likely to show which of the following?",
+   "chosen": 2,
+   "chosenText": "A thick polysaccharide capsule outlined by India ink",
+   "answer": 1,
+   "answerText": "Retention of carbol fuchsin after decolorization with a weak acid",
+   "coreNote": "",
+   "differ": "",
+   "decision": "면역억제된 신장 이식 환자에게 공동 폐 결절과 뇌농양이 함께 생겼고 기관지폐포세척액에 가늘고 가지 치는 그람 양성 실 모양 균이 보인다. 폐 → 뇌 파종과 구강·경부 병변 없음이 Actinomyces 보다 Nocardia 를 가리키며, Nocardia 는 약산 탈색에도 염색이 남는 부분 항산성이다.",
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 179장 Nocardiosis; 180장 Actinomycosis)",
+   "date": "2026-11-24",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T01:12:06.180Z"
+ "updated": "2026-11-24T01:16:07.931Z"
 }
