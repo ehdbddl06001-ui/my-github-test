@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>MedKOS 대화형 퀴즈 (KMLE · USMLE · 영상)</title>
-<script src="theme.js?v=41"></script>
-<link rel="stylesheet" href="style.css?v=41" />
+<script src="theme.js?v=42"></script>
+<link rel="stylesheet" href="style.css?v=42" />
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#f3f6fa" />
 <meta name="mobile-web-app-capable" content="yes" />
@@ -27,8 +27,12 @@
   <a href="search.html">🔍 검색</a>
 </nav>
 <header>
-  <h1>MedKOS 대화형 퀴즈</h1>
-  <p class="sub">KMLE·USMLE·오픈데이터 영상 문항을 풀고 보기를 누르면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로, 영상은 국시형·USMLE형으로 나눠 풀 수 있습니다. 종목은 여러 개를 함께 고를 수 있고(🔁 변형 = 틀린 문항에서 단서 하나를 바꾼 문제), 「안 푼 문항」으로 아직 안 푼 것만 모아 풀 수 있습니다. 오답은 시험별로 저장되고, 동기화 서버가 있으면 기기 간에 합쳐집니다.</p>
+  <div class="head-row">
+    <h1>MedKOS 대화형 퀴즈</h1>
+    <details class="howto"><summary>사용법</summary>
+    <p class="sub">KMLE·USMLE·오픈데이터 영상 문항을 풀고 보기를 누르면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로, 영상은 국시형·USMLE형으로 나눠 풀 수 있습니다. 종목은 여러 개를 함께 고를 수 있고(🔁 변형 = 틀린 문항에서 단서 하나를 바꾼 문제), 「안 푼 문항」으로 아직 안 푼 것만 모아 풀 수 있습니다. 오답은 시험별로 저장되고, 동기화 서버가 있으면 기기 간에 합쳐집니다.</p>
+    </details>
+  </div>
 </header>
 
 <!-- 설정 화면 -->
@@ -206,10 +210,10 @@
 <script src="related.js"></script>
 <!-- 앱 코드는 ?v=<sw.js VERSION 번호> 로 부른다(2026-11-02) — GitHub Pages 는 파일마다 10분(max-age=600) 따로 캐시해서
      배포 직후 새 index.html 이 옛 app.js 와 만나 첫 화면이 멈췄다. app.js·learn.js·style.css 등을 고치면 sw.js VERSION 과 함께 올린다. -->
-<script src="synckey.js?v=41"></script>
-<script src="learn.js?v=41"></script>
-<script src="app.js?v=41"></script>
-<script src="ink.js?v=41"></script>
-<script src="pwa.js?v=41"></script>
+<script src="synckey.js?v=42"></script>
+<script src="learn.js?v=42"></script>
+<script src="app.js?v=42"></script>
+<script src="ink.js?v=42"></script>
+<script src="pwa.js?v=42"></script>
 </body>
 </html>

@@ -562,7 +562,7 @@ class Fixes1123(unittest.TestCase):
 
     def test_toolbar_sits_below_the_status_bar(self):
         css = self.css
-        self.assertIn(":root{--safe-top:calc(env(safe-area-inset-top) + min(16px, calc(env(safe-area-inset-top) * 0.6)))}", css)
+        self.assertIn(":root{--safe-top:calc(env(safe-area-inset-top) + min(4px, calc(env(safe-area-inset-top) * 0.6)))}", css)
         self.assertEqual(css.count("env(safe-area-inset-top)"), 2)            # 정의 한 곳에서만 쓴다 — 나머지는 var(--safe-top)
         self.assertIn("padding:calc(6px + var(--safe-top)) 10px 6px; background:var(--card)", css)   # 도구줄 바탕이 시계 밑까지
 
