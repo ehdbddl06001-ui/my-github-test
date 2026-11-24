@@ -61,7 +61,8 @@ html[data-theme="dark"]{
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--bg); color:var(--ink);
-  /* 설치한 앱(아이폰·아이패드 홈 화면)은 상태 막대가 화면 위에 겹친다(black-translucent) — 그 아래로 내려 위 탭이 눌리게(2026-11-03) */
+  /* 설치한 앱(아이폰·아이패드 홈 화면)은 상태 막대가 화면 위에 겹친다(black-translucent) — 그 아래로 내려 위 탭이 눌리게(2026-11-03).
+     2026-11-24 — 상태 막대를 일반형(default)으로 바꿨다. 새로 추가한 앱은 안전 영역이 0 이라 띠가 없고, 옛 설치본만 이 여백 · 띠를 쓴다 */
   padding:var(--safe-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",
     "Noto Sans KR",Roboto,sans-serif; line-height:1.6;
