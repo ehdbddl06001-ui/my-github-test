@@ -55,8 +55,9 @@ html[data-theme="dark"]{
   --statusbar:transparent;
 }
 /* 위쪽 안전 영역(2026-11-23) — 아이패드 홈 화면 앱은 상태 막대(시계 · 날짜) 아래로 번지는 띠가 안전 영역보다 조금 더 내려와
-   맨 위 도구줄을 가렸다. 상태 막대가 있을 때만(안전 영역 > 0) 16px 까지 더 내린다. 브라우저에서는 0 그대로다. */
-:root{--safe-top:calc(env(safe-area-inset-top) + min(16px, calc(env(safe-area-inset-top) * 0.6)))}
+   맨 위 도구줄을 가렸다. 상태 막대가 있을 때만(안전 영역 > 0) 더 내린다. 브라우저에서는 0 그대로다.
+   2026-11-24 — 맨 위 회색 띠가 넓어 보여 여유분을 16px → 4px 로 줄였다(도구줄이 다시 가려지면 이 값을 올린다). */
+:root{--safe-top:calc(env(safe-area-inset-top) + min(4px, calc(env(safe-area-inset-top) * 0.6)))}
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--bg); color:var(--ink);
@@ -68,16 +69,26 @@ body{
 /* 설치한 앱은 상태 막대 글자가 흰색이다 — 밝은 바탕에서 보이게 그 높이만큼 어두운 띠를 깐다(브라우저에서는 높이 0) */
 body::before{content:""; position:fixed; left:0; right:0; top:0; height:var(--safe-top); background:var(--statusbar); z-index:1200; pointer-events:none}
 /* 밝은 화면 / 어두운 화면 단추(theme.js 가 메뉴 줄 끝에 넣는다) */
-.nav .theme-toggle{margin-left:auto; flex:none; padding:7px 12px; font-size:.86rem; border-radius:9px; background:var(--card); color:var(--muted)}
-header{max-width:820px; margin:0 auto; padding:28px 18px 8px}
-h1{margin:0 0 4px; font-size:1.5rem}
+.nav .theme-toggle{margin-left:auto; flex:none; padding:6px 8px; font-size:.82rem; border-radius:9px; background:var(--card); color:var(--muted)}
+header{max-width:820px; margin:0 auto; padding:12px 18px 4px}
+/* 머리 소개글은 접어 둔다 — 제목 옆 「사용법」을 누르면 펼쳐진다(2026-11-24 위쪽 면적 줄이기) */
+header .head-row{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
+header details.howto{flex:1 1 auto; min-width:0}
+header details.howto > summary{display:inline-block; cursor:pointer; color:var(--muted); font-size:.84rem; list-style:none; padding:2px 8px; border:1px solid var(--line); border-radius:999px}
+header details.howto > summary::-webkit-details-marker{display:none}
+header details.howto[open] > summary{color:var(--ink); border-color:var(--accent)}
+header details.howto .sub{margin:6px 0 4px}
+h1{margin:0; font-size:1.3rem}
 .sub{color:var(--muted); margin:0 0 8px; font-size:.92rem}
 
 /* 상단 내비게이션 (퀴즈 ↔ 논문) */
-.nav{max-width:820px; margin:0 auto; padding:14px 18px 0; display:flex; flex-wrap:wrap; gap:8px}
+/* 한 줄로 — 넘치면 옆으로 민다(두 줄로 접히면 위쪽이 넓게 빈다 · 2026-11-24) */
+.nav{max-width:820px; margin:0 auto; padding:10px 18px 0; display:flex; flex-wrap:nowrap; gap:6px; overflow-x:auto; white-space:nowrap; scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:none}
 .nav a{
   text-decoration:none; color:var(--muted); background:var(--card);
-  border:1px solid var(--line); border-radius:9px; padding:7px 14px; font-size:.92rem;
+  border:1px solid var(--line); border-radius:9px; padding:6px 8px; font-size:.86rem;
 }
 .nav a:hover{border-color:var(--accent); color:var(--ink)}
 .nav a.active{background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:600}
@@ -405,7 +416,7 @@ a,button,select,label,summary,input,.opt,.chip{touch-action:manipulation}
   .nav{overflow-x:auto; white-space:nowrap; flex-wrap:nowrap; padding:12px 12px 0; gap:6px; scrollbar-width:none}
   .nav::-webkit-scrollbar{display:none}
   .nav a{padding:7px 11px; font-size:.88rem; flex:none}
-  header{padding:18px 14px 6px}
+  header{padding:10px 14px 4px}
   h1{font-size:1.25rem}
   .card{margin:12px 10px; padding:14px; border-radius:12px}
   select{min-width:0; width:100%}
