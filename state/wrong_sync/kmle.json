@@ -1658,8 +1658,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1984": {
+   "id": "kmle-2026-1984",
+   "exam": "kmle",
+   "subject": "Psychiatry",
+   "step": "",
+   "type": "High Fever, Generalized Stiffness and Confusion Four Days after a Higher Antipsychotic Injection in a Young Man",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 진단은?",
+   "chosen": 2,
+   "chosenText": "악성 고열증",
+   "answer": 0,
+   "answerText": "신경이완제 악성 증후군",
+   "coreNote": "",
+   "differ": "",
+   "decision": "할로페리돌 증량 며칠 뒤 고열, 납관 강직, 의식 변화, 자율신경 불안정, 크레아틴 키나아제 상승이 생겨 신경이완제 악성 증후군이다. 반사 감소와 간대성 경련 없음이 세로토닌 증후군과, 마취제 노출이 없음이 악성 고열증과 가른다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-24",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T04:41:28.190Z"
+ "updated": "2026-11-24T04:52:05.066Z"
 }
