@@ -534,3 +534,33 @@
 
 - 순환기내과 판 38 (72쪽, 판형 11): 새 단원: 대동맥판 협착 — 증상과 박출률이 교체 시점을 정한다
 - 산부인과 판 21 (52쪽, 판형 11): 내용 수정: 질염 — pH·도말로 가르고 파트너 치료는 원충만
+
+## 2026-11-24T14:31:24+09:00
+
+- 응급의학과 판 12 (22쪽, 판형 13): 내용 수정: 메탄올 중독 — 해독제는 첫 효소 ADH 를 막는다
+- 정형외과 판 22 (28쪽, 판형 13): 내용 변경 없음
+- 피부과 판 18 (17쪽, 판형 13): 내용 변경 없음
+- 순환기내과 1권 판 1 (79쪽, 판형 13): 내용 변경 없음
+- 순환기내과 2권 판 1 (3쪽, 판형 13): 내용 변경 없음
+- 내분비내과 판 12 (12쪽, 판형 13): 새 단원: Recurrent Sweating and Confusion with a Blood Sugar of 38 in a Nurse without Diabetes
+- 안과 판 21 (16쪽, 판형 13): 내용 변경 없음
+- 외과 판 11 (8쪽, 판형 13): 내용 변경 없음
+- 산부인과 판 22 (54쪽, 판형 13): 내용 갱신: 질염 — pH·도말로 가르고 파트너 치료는 원충만 (정리본 v1 → v3); 내용 수정: 성숙낭성기형종 — 악성 변화는 편평 내막에서; 내용 수정: 자궁 평활근 종양 — 악성은 괴사·이형성·분열로
+- 소아청소년과 판 18 (19쪽, 판형 13): 내용 변경 없음
+- 정신건강의학과 판 10 (11쪽, 판형 13): 새 단원: High Fever, Generalized Stiffness and Confusion Four Days after a Higher Antipsychotic Injection in a Young Man
+- 혈액종양내과 판 10 (10쪽, 판형 13): 내용 수정: 정상피종 IHC — 갈색 세포가 종양인가 반응인가; 내용 수정: GATA3 — 기원을 묻는 계통 표지, 치료 예측이 아니다; 새 단원: One Week of Bleeding Gums and Bruises with Low Fibrinogen in a Woman in Her Early Forties
+- 류마티스내과 판 40 (59쪽, 판형 13): 내용 수정: 경피증 신장 위기 — 병변은 사구체가 아닌 소동맥; 내용 수정: HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다; 내용 수정: 티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구
+- 호흡기내과 판 16 (10쪽, 판형 13): 내용 수정: 흉부 CT 가로막 높이 — 구조를 자리로 확정하고 높이를 붙인다
+- 감염내과 판 15 (12쪽, 판형 13): 새 단원: A Positive Prenatal Syphilis Screen at 16 Weeks in a Woman Who Had Throat Swelling after an Injection Years Ago
+- 소화기내과 판 17 (11쪽, 판형 13): 내용 수정: 육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유; 새 단원: Fever and Diffuse Abdominal Pain with Cloudy Ascitic Fluid in a Man with Hepatitis B Cirrhosis
+- 신장내과 판 14 (38쪽, 판형 13): 새 단원: 지텔만 증후군 — NCC 결손이 저칼슘뇨·저Mg를 만든다; 새 단원: 대사성 알칼리증 — 소변 Cl 이 구토와 이뇨제를 가른다; 내용 수정: 원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다; 새 단원: 급성 세관괴사 vs 신전성 — 세관이 살아 있는가; 새 단원: 만성콩팥병 빈혈 — 철을 채운 뒤 조혈자극제; 새 단원: 요독성 심낭염 — 투석 시작이 치료, 천자는 압전일 때; 새 단원: IgA 신병증 — 감염과 동시 혈뇨 · 보체 정상; 새 단원: 막성 신병증 — 항 PLA2R 양성이 진단을 정한다; 새 단원: 다낭신 — 동맥류 가족력이면 증상 없어도 뇌 MRA; 새 단원: 급성 간질신염 — 새 약 뒤 무균 농뇨·백혈구 원주; 새 단원: 신동맥 협착 — ACE 억제제 뒤 크레아티닌 상승이 단서; 새 단원: 요산결석 — 녹이는 치료는 소변 알칼리화; 새 단원: 방광 출구 폐쇄 AKI — 차 있는 방광엔 요도 도뇨관 먼저; 새 단원: Two Weeks of Muscle Weakness with a Low Potassium and Calcified Kidneys in a Woman with Dry Eyes and Mouth
+- 내과 총론 판 1 (2쪽, 판형 13): 내용 변경 없음
+- 생리학 판 1 (4쪽, 판형 13): 내용 변경 없음
+- 신경과 판 8 (7쪽, 판형 13): 새 단원: A Sudden Severe Headache Fourteen Hours Ago with a Normal Head CT in a Woman in Her Early Forties; 새 단원: Ten Hours of Constant Room-Spinning Dizziness and Vomiting, Unable to Sit Up Unaided, With a Normal Head CT in a 68-Year-Old Man With Diabetes Who Smokes
+- 미생물학 판 1 (2쪽, 판형 13): 내용 변경 없음
+- 알레르기내과 판 7 (5쪽, 판형 13): 내용 변경 없음
+- 생화학·유전 판 1 (4쪽, 판형 13): 내용 변경 없음
+- 면역학 판 1 (2쪽, 판형 13): 내용 변경 없음
+- 이비인후과 판 2 (10쪽, 판형 13): 내용 변경 없음
+- 예방의학 판 2 (18쪽, 판형 13): 내용 변경 없음
+- 비뇨의학과 판 7 (4쪽, 판형 13): 내용 변경 없음
