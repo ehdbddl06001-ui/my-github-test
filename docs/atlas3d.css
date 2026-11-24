@@ -517,6 +517,8 @@ body.pm-open { overflow: hidden; }
 /* ── MedKOS 메뉴 · 아틀라스 전용 ── */
 /* 맨 위에 붙은 · 폭 전체 · 불투명 고정 띠 — 아이패드 홈 화면 앱이 맨 위에 덧씌우는 흐림을 없앤다(2026-11-24 기기 시험 · style.css .nav 와 같은 방식) */
 body:has(.mk-nav) { padding-top: 52px; }
+/* 색만 읽히고 칠하지 않는 맨 위 12px 띠 — style.css .edge-band 와 같다 */
+.edge-band { position: fixed; left: 0; right: 0; top: 0; height: 12px; background: var(--paper); -webkit-background-clip: text; background-clip: text; z-index: 1200; pointer-events: none; }
 .mk-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: 52px; align-items: center; background: var(--paper); border-bottom: 1px solid var(--line);
   display: flex; gap: 8px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 6px 16px; }
 .mk-nav::-webkit-scrollbar { display: none; }

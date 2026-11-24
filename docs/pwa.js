@@ -112,19 +112,25 @@
   });
 })();
 
-/* 맨 위 흐림 다시 재기(2026-11-24) — 아이패드 홈 화면 앱은 맨 위 고정 띠를 보고 흐림을 끄는데, 화면을 오가다 돌아오면(뒤로 가기 · 앱 전환)
-   그 판정이 옛 상태로 남는 일이 있었다. 화면이 다시 보일 때 띠를 한 번 다시 배치시켜 판정을 새로 하게 한다(효과는 기기에서 확인 필요). */
+/* 맨 위 흐림 다시 재기(2026-11-24) — 아이패드 홈 화면 앱은 맨 위 고정 띠(.edge-band)를 보고 흐림을 끄는데, 화면을 오가거나 덮개(학습서 필기 ·
+   기초의학 · 필기장)를 열고 닫은 직후에는 그 판정이 옛 상태로 남아 흐림이 잠깐 되살아났다. 그럴 때마다 띠의 높이를 한 프레임 바꿨다 되돌려
+   판정을 새로 하게 한다. 띠는 아무것도 칠하지 않으므로 화면은 흔들리지 않는다(효과는 기기에서 확인 필요). */
 (function () {
+  var t = 0;
   function nudge() {
-    var n = document.querySelector(".nav, .mk-nav");
-    if (!n) return;
-    n.style.display = "none";
-    void n.offsetHeight;
-    n.style.display = "";
-    var y = window.scrollY;
-    window.scrollTo(0, y + 1);
-    requestAnimationFrame(function () { window.scrollTo(0, y); });
+    var b = document.querySelector(".edge-band");
+    if (!b) return;
+    b.style.height = "14px";
+    setTimeout(function () { b.style.height = ""; }, 50);        // rAF 는 화면이 가려져 있으면 멈춘다 — 시계로 되돌린다
   }
-  window.addEventListener("pageshow", function () { setTimeout(nudge, 60); });
-  document.addEventListener("visibilitychange", function () { if (!document.hidden) setTimeout(nudge, 60); });
+  function soon() { [60, 400, 1200].forEach(function (ms) { setTimeout(nudge, ms); }); }
+  function lazy() { clearTimeout(t); t = setTimeout(nudge, 150); }
+  window.addEventListener("pageshow", soon);
+  window.addEventListener("popstate", soon);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) soon(); });
+  function watch() {                                             // 덮개는 body 바로 아래에 붙고 hidden 클래스로 여닫는다
+    if (!window.MutationObserver || !document.body) return;
+    new MutationObserver(lazy).observe(document.body, { childList: true, attributes: true, attributeFilter: ["class"], subtree: true });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", watch); else watch();
 })();
