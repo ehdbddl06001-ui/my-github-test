@@ -1826,8 +1826,29 @@
    "date": "2026-11-26",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1967": {
+   "id": "kmle-2026-1967",
+   "exam": "kmle",
+   "subject": "Hematology",
+   "step": "",
+   "type": "Dark Morning Urine, Low Blood Counts and a Newly Found Liver Vein Clot in a Man in His Early Thirties",
+   "style": "",
+   "modality": "",
+   "question": "진단을 위해 가장 적절한 검사는?",
+   "chosen": 3,
+   "chosenText": "포도당-6-인산 탈수소효소 활성",
+   "answer": 0,
+   "answerText": "말초혈액 유세포분석",
+   "coreNote": "",
+   "differ": "",
+   "decision": "항글로불린 음성의 혈관 내 용혈, 범혈구감소, 간정맥 혈전이 함께 있어 발작성 야간 혈색소뇨증을 의심한다. 확진은 GPI 고정 단백이 없는 혈구를 찾는 말초혈액 유세포분석(CD55·CD59, FLAER)이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T23:14:04.918Z"
+ "updated": "2026-11-25T23:16:23.702Z"
 }
