@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4290,
+  "total": 4296,
   "byType": {
+   "usmle": 288,
    "paper": 987,
    "kmle": 1984,
    "concept": 237,
-   "usmle": 282,
    "imaging": 783,
    "ailab": 14,
    "basic": 3
@@ -20,11 +20,11 @@ window.MEDKOS_INDEX = {
    "Nephrology": 276,
    "Infectious Disease": 249,
    "Pediatrics": 237,
-   "Obstetrics & Gynecology": 179,
+   "Obstetrics & Gynecology": 180,
    "Rheumatology": 153,
+   "Psychiatry": 151,
    "Neurology": 150,
-   "Psychiatry": 150,
-   "Pathology": 147,
+   "Pathology": 148,
    "Orthopedics": 137,
    "Hematology-Oncology": 136,
    "Endocrinology": 133,
@@ -34,7 +34,7 @@ window.MEDKOS_INDEX = {
    "Dermatology": 129,
    "Ophthalmology": 129,
    "Pulmonology": 128,
-   "Surgery": 127,
+   "Surgery": 128,
    "Hematology": 124,
    "Laboratory Medicine": 102,
    "산부인과": 95,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "피부과": 29,
    "예방의학·역학": 27,
    "Pharmacology": 26,
+   "Biochemistry": 23,
    "Microbiology": 23,
-   "Biochemistry": 22,
+   "Immunology": 20,
    "약리": 20,
    "정신과": 20,
-   "Immunology": 19,
    "Internal Medicine": 19,
    "근골격·류마티스": 19,
    "안과": 14,
@@ -80,13 +80,129 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1250,
-   "high": 3036,
+   "high": 3041,
+   "medium": 1251,
    "low": 4
   },
-  "tagCount": 5026
+  "tagCount": 5034
  },
  "docs": [
+  {
+   "id": "usmle-2026-0301",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Dizziness, Electric Jolts When She Turns Her Eyes and Vivid Nightmares Three Days After Running Out of Pills on a Business Trip in a 34-Year-Old Woman",
+   "tags": [
+    "ssri",
+    "discontinuation-syndrome",
+    "depression",
+    "psychiatry"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 463장 Psychiatric Disorders)",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/usmle/usmle-2026-0301.md",
+   "snippet": "A 34 year old woman comes to the physician because of dizziness, nausea, and irritability for 3 days. She describes brief \"electric jolts\" in her head whenever she turns her eyes quickly, vivid nightmares, aching muscles, and episodes of sw",
+   "text": "Psychiatry Dizziness, Electric Jolts When She Turns Her Eyes and Vivid Nightmares Three Days After Running Out of Pills on a Business Trip in a 34-Year-Old Woman ssri discontinuation-syndrome depression psychiatry USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 463장 Psychiatric Disorders) A 34 year old woman comes to the physician because of dizziness, nausea, and irritability for 3 days. She describes brief \"electric jolts\" in her head whenever she turns her eyes quickly, vivid nightmares, aching muscles, and episodes of sweating. She has major depressive disorder that has been in remission for 10 months with paroxetine, 30 mg daily, which she has taken for 14 months. Five days ago, she ran out of the medication while on a business trip and has not taken it since. Before this week, her mood, sleep, and appetite had been good, and she was enjoying a new pottery class. She has never taken sedatives or sleeping pills and drinks one glass of wine weekly. She has not had a cough, sore throat, or sick contacts. Her vital signs are shown. She is tearful and irritable but says her mood is \"okay, just jumpy,\" and she has no thoughts of self harm. The pupils are 4 mm and reactive. There is no nystagmus, and gait is steady. Muscle tone is normal, deep tendon reflexes are 2+ and symmetric, and there is no clonus or tremor. Which of the following is the most likely cause of her symptoms? A. Serotonin syndrome B. Recurrence of major depression C. Influenza virus infection D. Vestibular neuritis E. Antidepressant discontinuation syndrome 반감기가 짧고 활성 대사물이 없는 paroxetine 을 14개월 먹다가 5일 전 갑자기 끊었고 이틀 뒤부터 어지럼 · 구역 · 감전 같은 감각(「brain zaps」) · 생생한 악몽 · 근육통 · 발한 · 과민이 생겼다 — 항우울제 중단 증후군의 전형(FINISH — flu like, insomnia/nightmares, nausea, imbalance, sensory disturbances, hyperarousal)이다. 중단 뒤 수일 안에 시작하는 시간 관계와 감각 증상이 우울증 재발(대개 수주에 걸쳐 우울감·흥미 상실이 돌아온다)과 가른다. 열·클로누스·떨림이 없어 세로토닌 증후군은 맞지 않고(약을 끊었다 — 세로토닌 과잉이 아니라 갑작스런 결핍), 안진 없이 걸음이 안정적이라 전정신경염 가능성이 낮다. 처치는 paroxetine 을 다시 시작해 증상을 가라앉힌 뒤 수주에 걸쳐 천천히 줄이는 것이다."
+  },
+  {
+   "id": "usmle-2026-0300",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Four Weeks of Vomiting, a 6-kg Weight Loss and Two Days of Double Vision, Confusion and Staggering at 11 Weeks' Gestation in a 24-Year-Old Woman",
+   "tags": [
+    "hyperemesis-gravidarum",
+    "thiamine",
+    "encephalopathy",
+    "pregnancy",
+    "obstetrics"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 344장 Vitamin and Trace Mineral Deficiency and Excess · 491장 Medical Disorders During Pregnancy)",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/usmle/usmle-2026-0300.md",
+   "snippet": "A 24 year old woman, gravida 1, para 0, at 11 weeks' gestation is brought to the emergency department by her husband because of confusion and unsteadiness for 2 days. For 4 weeks, she has vomited 8 to 10 times daily and has been unable to k",
+   "text": "Obstetrics & Gynecology Four Weeks of Vomiting, a 6-kg Weight Loss and Two Days of Double Vision, Confusion and Staggering at 11 Weeks' Gestation in a 24-Year-Old Woman hyperemesis-gravidarum thiamine encephalopathy pregnancy obstetrics USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 344장 Vitamin and Trace Mineral Deficiency and Excess · 491장 Medical Disorders During Pregnancy) A 24 year old woman, gravida 1, para 0, at 11 weeks' gestation is brought to the emergency department by her husband because of confusion and unsteadiness for 2 days. For 4 weeks, she has vomited 8 to 10 times daily and has been unable to keep down solid food; oral ondansetron has not helped. She has lost 6 kg (13 lb), 10% of her prepregnancy weight. Two days ago, she began seeing double and has fallen twice while walking. Ultrasonography last week showed a single intrauterine pregnancy with fetal cardiac activity consistent with dates. She has no history of neck swelling, heat intolerance, or eye problems. Her vital signs are shown. The mucous membranes are dry. She is oriented to person only. There is horizontal nystagmus on lateral gaze, and neither eye abducts fully. She cannot walk without assistance because of a wide based, unsteady gait. The thyroid gland is not enlarged, and there is no tremor or lid lag. The neck is supple. Laboratory results are shown. An intravenous infusion of fluid is being prepared. Which of the following is the most appropriate next step in management? A. Intravenous thiamine B. MRI of the brain C. Oral methimazole D. 5% dextrose in normal saline E. Lumbar puncture 4주간 하루 8–10번 토하고 체중이 10 % 빠졌으며 케톤뇨·저칼륨·대사성 알칼리증이 있어 임신오조다. 여기에 혼돈 · 안진과 양쪽 외전 장애(안근마비) · 넓은 보폭의 운동실조가 함께 생겼다 — 티아민 고갈로 인한 베르니케 뇌병증이다. 진단은 임상으로 하고 영상을 기다리지 않는다. 포도당을 먼저 주면 남은 티아민이 포도당 대사에 소모되어 뇌병증이 악화할 수 있으므로 포도당 수액 전에(또는 동시에) 정맥 티아민 을 준다. TSH 저하·free T4 약간 상승은 임신 초기 hCG 가 TSH 수용체를 자극하는 일과성 갑상선중독(갑상선종·안병증 없음)이라 항갑상선제가 필요 없다."
+  },
+  {
+   "id": "usmle-2026-0299",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "A Stab Wound Through the Platysma on the Left Side of the Neck, a Small Bruise That Is Not Growing and a Steady Blood Pressure in a 27-Year-Old Man",
+   "tags": [
+    "trauma",
+    "penetrating-neck-injury",
+    "imaging",
+    "surgery"
+   ],
+   "source": "USMLE-style / MedKOS (American College of Surgeons. Advanced Trauma Life Support Student Course Manual, 10th ed.)",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/usmle/usmle-2026-0299.md",
+   "snippet": "A 27 year old man is brought to the emergency department 40 minutes after being stabbed once in the left side of the neck with a kitchen knife. He is alert and speaks in a normal voice. He has no difficulty breathing and is swallowing his s",
+   "text": "Surgery A Stab Wound Through the Platysma on the Left Side of the Neck, a Small Bruise That Is Not Growing and a Steady Blood Pressure in a 27-Year-Old Man trauma penetrating-neck-injury imaging surgery USMLE-style / MedKOS (American College of Surgeons. Advanced Trauma Life Support Student Course Manual, 10th ed.) A 27 year old man is brought to the emergency department 40 minutes after being stabbed once in the left side of the neck with a kitchen knife. He is alert and speaks in a normal voice. He has no difficulty breathing and is swallowing his saliva without pain. His vital signs are shown and have been stable since arrival. There is a 2 cm wound anterior to the left sternocleidomastoid muscle, midway between the angle of the mandible and the cricoid cartilage; the platysma has been violated. There is a 2 cm, soft, nonexpanding hematoma around the wound with no active bleeding. No bruit or thrill is heard or felt over the neck. There is no air bubbling from the wound, no subcutaneous emphysema, and no stridor. The trachea is midline. Both carotid pulses are palpable and equal. Neurologic examination shows no focal deficits. Breath sounds are equal bilaterally, and a chest x ray shows no abnormalities. Laboratory results are shown. Which of the following is the most appropriate next step in management? A. Neck exploration in the operating room B. Probing of the wound tract at the bedside C. CT angiography of the neck D. Wound irrigation, closure and discharge home E. Rigid esophagoscopy and direct laryngoscopy 활경근(platysma)을 뚫은 목 관통상은 혈관·기도·식도 손상을 반드시 평가한다. 다음으로 「즉시 수술할 징후(hard signs)」가 있는지 본다 — 쇼크·박동성 출혈·커지는 혈종·잡음/진전·기도 손상(상처로 공기가 새거나 호흡곤란·광범위 피하기종)·신경학적 결손. 이 환자는 혈역학적으로 안정하고, 혈종은 작고 커지지 않으며, 잡음·공기 누출·피하기종·국소 신경 결손이 없다 — hard sign 이 없다. 작은 비팽창 혈종은 soft sign 이므로 손상 위치(zone)와 상관없이 목 CT 혈관조영 으로 혈관과 기도·식도를 함께 선별하고, 그 결과에 따라 수술·내시경·관찰을 정한다. 상처를 침상에서 탐침하면 막혀 있던 혈관 손상의 혈전이 떨어져 출혈을 일으킬 수 있다."
+  },
+  {
+   "id": "usmle-2026-0298",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Sudden Left Flank Pain, Blood in the Urine and an LDH of 980 in a 73-Year-Old Woman With Months of Unexplained Palpitations Whose Tracing Is Shown",
+   "tags": [
+    "infarction",
+    "necrosis",
+    "atrial-fibrillation",
+    "embolism",
+    "pathology"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 258장 Atrial Fibrillation)",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/usmle/usmle-2026-0298.md",
+   "snippet": "A 73 year old woman comes to the emergency department because of sudden, constant left flank pain that began 6 hours ago while she was watching television. She has nausea but has not vomited. For several months, she has had intermittent epi",
+   "text": "Pathology Sudden Left Flank Pain, Blood in the Urine and an LDH of 980 in a 73-Year-Old Woman With Months of Unexplained Palpitations Whose Tracing Is Shown infarction necrosis atrial-fibrillation embolism pathology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 258장 Atrial Fibrillation) A 73 year old woman comes to the emergency department because of sudden, constant left flank pain that began 6 hours ago while she was watching television. She has nausea but has not vomited. For several months, she has had intermittent episodes of palpitations for which she has not sought care. She has hypertension treated with amlodipine and takes no other medications. Her vital signs are shown; the pulse is irregularly irregular. An ECG is shown. There is left costovertebral angle tenderness. The abdomen is soft. Laboratory results are shown. Contrast enhanced CT of the abdomen shows a wedge shaped, nonenhancing area in the upper pole of the left kidney with its base at the capsule. There are no renal or ureteral stones, no hydronephrosis, and no perinephric fluid. If the affected region were examined microscopically 3 days from now, which of the following would most likely be seen? A. Preserved tubular outlines with loss of cell nuclei B. Dissolved tissue replaced by sheets of neutrophils C. Central caseous debris rimmed by epithelioid histiocytes D. Chalky calcium soap deposits in surrounding adipose tissue E. Bright pink fibrin deposition in small arteriolar walls 심전도는 P파 없이 RR 간격이 불규칙하게 불규칙한 심방세동이고, 항응고 없이 수개월째 두근거림이 있었다 — 좌심방(심방귀)의 혈전이 떨어져 나가는 심장 색전의 원천이다. 갑작스럽고 지속되는 옆구리 통증 · 혈뇨 · 크게 오른 LDH · 피막을 밑변으로 하는 쐐기 모양 비조영 부위에 결석·수신증이 없으면 신장 경색이다. 신장은 끝동맥으로 공급받는 고형 장기라 창백한(빈혈성) 경색이 되고, 뇌를 뺀 고형 장기의 허혈성 괴사는 응고괴사 다 — 단백 변성으로 세포 윤곽·세뇨관 구조는 남고 핵이 사라진다(핵농축 → 핵붕괴 → 핵용해). 1–3일째 경계부로 호중구가 모이지만 괴사 부위의 기본 모양은 구조가 유지된 응고괴사다."
+  },
+  {
+   "id": "usmle-2026-0297",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Burning Hands and Feet After Every Soccer Game, Little Sweat and Tiny Dark Red Bumps Below the Navel in a 15-Year-Old Whose Grandfather Started Dialysis at 45",
+   "tags": [
+    "lysosomal-storage",
+    "sphingolipidosis",
+    "x-linked",
+    "biochemistry"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 429장 Lysosomal Storage Diseases)",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/usmle/usmle-2026-0297.md",
+   "snippet": "A 15 year old boy is brought to the physician because of episodes of burning pain in his hands and feet for 3 years. The pain begins during soccer games, on hot days, or when he has a fever and lasts several hours. He says he barely sweats ",
+   "text": "Biochemistry Burning Hands and Feet After Every Soccer Game, Little Sweat and Tiny Dark Red Bumps Below the Navel in a 15-Year-Old Whose Grandfather Started Dialysis at 45 lysosomal-storage sphingolipidosis x-linked biochemistry USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 429장 Lysosomal Storage Diseases) A 15 year old boy is brought to the physician because of episodes of burning pain in his hands and feet for 3 years. The pain begins during soccer games, on hot days, or when he has a fever and lasts several hours. He says he barely sweats and feels overheated sooner than his teammates. His maternal grandfather began dialysis for kidney failure at the age of 45 years and died of a stroke at 51 years. His mother has occasional burning in her feet. The patient's vital signs are shown. There are clusters of small, dark red, nonblanching papules over the lower abdomen, buttocks, and scrotum. Slit lamp examination shows faint whorl shaped opacities in both corneas. The facial features are normal. The liver and spleen are not palpable. Joint mobility is normal. Neurologic examination shows normal strength, reflexes, and sensation to light touch. Laboratory results are shown. Accumulation of which of the following substances is most likely responsible for this patient's condition? A. Glucocerebroside B. Globotriaosylceramide C. Sphingomyelin D. GM2 ganglioside E. Dermatan sulfate and heparan sulfate 운동·더위·열로 유발되는 손발 작열통(소섬유 신경병증), 땀 감소, 배꼽 아래 · 엉덩이 · 음낭의 비퇴색 적색 구진(혈관각화종), 각막의 소용돌이 혼탁, 10대의 단백뇨가 함께 있으면 Fabry 병이다. 외조부(어머니 쪽 남성)의 이른 신부전·뇌졸중과 어머니의 가벼운 증상은 X 연관 유전과 맞는다(이형접합 여성도 증상이 있을 수 있다). α galactosidase A 결핍으로 globotriaosylceramide(Gb3, ceramide trihexoside)가 혈관 내피·신경절·신장(족세포)·심근에 쌓인다. Hunter 증후군(E)도 X 연관이지만 거친 얼굴·관절 강직·간비종대가 있고, Gaucher 병(A)은 간비종대·혈구감소·뼈 통증이 핵심이다."
+  },
+  {
+   "id": "usmle-2026-0296",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Fever, a Spreading Red Rash, Watery Diarrhea and Falling Blood Counts Eleven Days After Two Units of Red Cells From His Son in a 66-Year-Old on Fludarabine",
+   "tags": [
+    "transfusion",
+    "graft-versus-host-disease",
+    "t-cell",
+    "immunology"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 118장 Transfusion Therapy and Biology)",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/usmle/usmle-2026-0296.md",
+   "snippet": "A 66 year old man with chronic lymphocytic leukemia comes to the emergency department because of fever, a rash, and diarrhea for 3 days. He completed his third cycle of fludarabine based chemotherapy 5 weeks ago. Eleven days ago, he receive",
+   "text": "Immunology Fever, a Spreading Red Rash, Watery Diarrhea and Falling Blood Counts Eleven Days After Two Units of Red Cells From His Son in a 66-Year-Old on Fludarabine transfusion graft-versus-host-disease t-cell immunology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 118장 Transfusion Therapy and Biology) A 66 year old man with chronic lymphocytic leukemia comes to the emergency department because of fever, a rash, and diarrhea for 3 days. He completed his third cycle of fludarabine based chemotherapy 5 weeks ago. Eleven days ago, he received 2 units of red blood cells for symptomatic anemia; both units were donated by his son through directed donation and were not irradiated. Before the transfusion, his leukocyte count was 3,800/μL and his platelet count was 96,000/μL. The rash began on his palms and face and has spread to his trunk. He has had 6 to 8 watery stools daily. His vital signs are shown. There is a confluent erythematous maculopapular rash over the face, palms, soles, and trunk. The sclerae are icteric. The abdomen is soft with mild diffuse tenderness. A blood culture and a stool test for Clostridioides difficile toxin are pending. Laboratory results are shown. Which of the following best explains this patient's condition? A. Recipient IgG antibodies against a minor antigen on donor red cells B. Donor antibodies against HLA antigens on recipient neutrophils C. Cytokines released into the stored product by donor leukocytes D. Donor T lymphocytes responding to recipient HLA antigens E. Cytomegalovirus transmitted within donor leukocytes and reactivated 세포면역을 크게 떨어뜨리는 fludarabine 치료 중인 환자가 아들(HLA 반쪽 일치 혈연)의 비조사 적혈구를 받았다. 혈연 공여자의 HLA 하플로타입이 동형이면 수혜자는 공여 T 세포를 「남」으로 인식하지 못해 제거하지 못하고, 공여 T 세포는 수혜자 HLA 를 남으로 보고 공격한다 — 수혈 연관 이식편대숙주병(TA GVHD). 수혈 1–2주 뒤 발열 · 손바닥에서 시작하는 홍반성 발진 · 수양성 설사 · 직접빌리루빈 위주의 간염이 나오고, 조혈모세포이식 뒤 GVHD 와 달리 수혜자 골수 도 표적이라 범혈구감소(망상적혈구 0.2 %)가 생긴다. DAT 음성·haptoglobin 정상·직접빌리루빈 우세는 지연 용혈 수혈반응(A)의 가능성을 낮춘다. 예방은 세포 성분의 감마선(또는 X선) 조사다."
+  },
   {
    "id": "paper-2026-0987",
    "type": "paper",
