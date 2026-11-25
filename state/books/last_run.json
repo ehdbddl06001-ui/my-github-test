@@ -1,27 +1,29 @@
 {
- "started": "2026-11-24T14:31:24+09:00",
+ "started": "2026-11-25T13:28:30+09:00",
  "built": [
   "응급의학과",
   "정형외과",
-  "피부과",
   "순환기내과 1권",
   "순환기내과 2권",
   "내분비내과",
-  "안과",
   "외과",
-  "산부인과",
-  "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
-  "류마티스내과",
   "호흡기내과",
   "감염내과",
   "소화기내과",
   "신장내과",
-  "내과 총론",
   "생리학",
   "신경과",
-  "미생물학",
+  "해부·조직·발생",
+  "약리학"
+ ],
+ "skipped": [
+  "피부과",
+  "안과",
+  "산부인과",
+  "소아청소년과",
+  "류마티스내과",
   "알레르기내과",
   "생화학·유전",
   "면역학",
@@ -29,88 +31,52 @@
   "예방의학",
   "비뇨의학과"
  ],
- "skipped": [],
  "failed": {},
  "retry": [],
  "previews": [],
  "validation": {
   "응급의학과": [],
   "정형외과": [],
-  "피부과": [],
   "순환기내과 1권": [],
   "순환기내과 2권": [],
   "내분비내과": [],
-  "안과": [],
   "외과": [],
-  "산부인과": [],
-  "소아청소년과": [],
   "정신건강의학과": [],
   "혈액종양내과": [],
-  "류마티스내과": [],
   "호흡기내과": [],
   "감염내과": [],
   "소화기내과": [],
   "신장내과": [],
-  "내과 총론": [],
   "생리학": [],
   "신경과": [],
-  "미생물학": [],
-  "알레르기내과": [],
-  "생화학·유전": [],
-  "면역학": [],
-  "이비인후과": [],
-  "예방의학": [],
-  "비뇨의학과": []
+  "해부·조직·발생": [],
+  "약리학": []
  },
  "notes": {
   "응급의학과": [],
   "정형외과": [
    "배치 탐색 뒤에도 남은 빈 공간: 26쪽 오른쪽 단 아래가 비어 있다(빈 공간 31%)"
   ],
-  "피부과": [
-   "마지막 쪽 내용이 적다(8%)"
-  ],
-  "순환기내과 1권": [
-   "배치 탐색 뒤에도 남은 빈 공간: 29쪽 왼쪽 단 아래가 비어 있다(빈 공간 60%)"
-  ],
+  "순환기내과 1권": [],
   "순환기내과 2권": [],
-  "내분비내과": [
-   "마지막 쪽 내용이 적다(11%)"
-  ],
-  "안과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 7쪽 왼쪽 단 아래가 비어 있다(빈 공간 35%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 7쪽 오른쪽 단 아래가 비어 있다(빈 공간 36%)"
-  ],
+  "내분비내과": [],
   "외과": [],
-  "산부인과": [],
-  "소아청소년과": [],
   "정신건강의학과": [
    "배치 탐색 뒤에도 남은 빈 공간: 3쪽 오른쪽 단 아래가 비어 있다(빈 공간 39%)"
   ],
   "혈액종양내과": [],
-  "류마티스내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 14쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 20%) — 좌우로 오가며 읽힌다"
-  ],
   "호흡기내과": [
    "마지막 쪽 내용이 적다(10%)"
   ],
   "감염내과": [],
-  "소화기내과": [],
+  "소화기내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 3쪽 오른쪽 단 아래가 비어 있다(빈 공간 30%)"
+  ],
   "신장내과": [],
-  "내과 총론": [],
   "생리학": [],
-  "신경과": [
-   "마지막 쪽 내용이 적다(6%)"
-  ],
-  "미생물학": [],
-  "알레르기내과": [],
-  "생화학·유전": [],
-  "면역학": [],
-  "이비인후과": [
-   "마지막 쪽 내용이 적다(8%)"
-  ],
-  "예방의학": [],
-  "비뇨의학과": []
+  "신경과": [],
+  "해부·조직·발생": [],
+  "약리학": []
  },
  "concept_errors": [
   "content/concepts/allergy/cn.allergy.anaphylaxis.im-epinephrine-first.md: [WARN] 도식 설명: diagram_notes 7줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다",
@@ -186,10 +152,12 @@
   "content/concepts/endocrinology/cn.endo.pheochromocytoma.preoperative-alpha-blockade.md: [WARN] 도식 설명: diagram_notes 5줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다",
   "content/concepts/endocrinology/cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization.md: [WARN] 분량: 본문 3,340자 > 3,200 — 표 · 도식에 있는 것을 본문에서 다시 늘어놓지 않는다(판형 2 본문은 2,500자 안팎)",
   "content/concepts/gastroenterology/cn.gi.acetaminophen-toxicity.nac-mechanism.md: [WARN] 중복: summary 5번째 줄 「활성탄은 복용 30분이 지나면 효과 없어 보인다.」이 본문 「## 판단」 절의 문장을 되풀이한다(글자 겹침 84%) — summary 는 결론 한 줄, 판단 절은 그 이유를 쓴다",
+  "content/concepts/gastroenterology/cn.gi.secondary-bacterial-peritonitis.ascitic-criteria-ct.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/general-surgery/cn.gs.acute-cholecystitis.grade2-early-lc.md: [WARN] 분량: 본문 3,518자 > 3,200 — 표 · 도식에 있는 것을 본문에서 다시 늘어놓지 않는다(판형 2 본문은 2,500자 안팎)",
   "content/concepts/general-surgery/cn.gs.acute-cholecystitis.grade2-early-lc.md: [WARN] 도식 설명: diagram_notes 9줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다",
   "content/concepts/general-surgery/cn.gs.acute-pancreatitis.biliary-etiology-ultrasound.md: [WARN] 도식 설명: diagram_notes 5줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다",
   "content/concepts/general-surgery/cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a.md: [WARN] 도식 설명: diagram_notes 7줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다",
+  "content/concepts/hematology-oncology/cn.heme.apl.immediate-atra.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
   "content/concepts/infectious-disease/cn.id.invasive-aspergillosis.angioinvasion-mechanism.md: [WARN] 도식 설명: diagram_notes 5줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다",
   "content/concepts/nephrology/cn.immuno.kidney-transplant-rejection.antibody-mediated-c4d.md: [WARN] 중복: summary 4번째 줄 「T 세포 매개 거부는 간질·세관·혈관의 면역세포 침윤(세관염)이 」이 본문 「## 판단」 절의 문장을 되풀이한다(글자 겹침 82%) — summary 는 결론 한 줄, 판단 절은 그 이유를 쓴다",
   "content/concepts/nephrology/cn.neph.acute-interstitial-nephritis.drug-induced-diagnosis.md: [WARN] 분량: 본문 3,207자 > 3,200 — 표 · 도식에 있는 것을 본문에서 다시 늘어놓지 않는다(판형 2 본문은 2,500자 안팎)",
@@ -339,37 +307,26 @@
   "content/concepts/urology/cn.uro.testis-histology.leydig-lh-target.md: [WARN] 도식 설명: diagram_notes 5줄 > 4 — 도식만으로 전달되지 않는 조건 · 예외만 남기고 기준 목록 · 수치는 표(tables) · criteria 로 옮긴다"
  ],
  "retired": [
-  "순환기내과",
-  "기초의학"
+  "내과 총론",
+  "미생물학"
  ],
  "renders": {
   "응급의학과": 1,
   "정형외과": 8,
-  "피부과": 1,
-  "순환기내과 1권": 5,
+  "순환기내과 1권": 2,
   "순환기내과 2권": 1,
   "내분비내과": 1,
-  "안과": 1,
   "외과": 1,
-  "산부인과": 1,
-  "소아청소년과": 10,
   "정신건강의학과": 1,
   "혈액종양내과": 1,
-  "류마티스내과": 1,
   "호흡기내과": 1,
   "감염내과": 1,
   "소화기내과": 1,
   "신장내과": 8,
-  "내과 총론": 1,
   "생리학": 1,
   "신경과": 1,
-  "미생물학": 1,
-  "알레르기내과": 1,
-  "생화학·유전": 1,
-  "면역학": 1,
-  "이비인후과": 1,
-  "예방의학": 1,
-  "비뇨의학과": 1
+  "해부·조직·발생": 1,
+  "약리학": 1
  },
  "layout_trials": {
   "응급의학과": {
@@ -378,24 +335,20 @@
    "renders": 1,
    "diagram_after_section": {
     "u-cn-em-ards-lung-protective-ventilation#fig:f1": 7,
-    "u-cn-em-ards-lung-protective-ventilation": 17,
+    "u-cn-em-ards-lung-protective-ventilation": 22,
     "u-cn-em-ards-lung-protective-ventilation#shrink": 1.0,
     "u-cn-em-ards-lung-protective-ventilation#pad": 0,
-    "u-cn-em-ards-lung-protective-ventilation#col": true,
-    "u-cn-em-shock-type-differentiation-first-step": 9,
+    "u-cn-em-ards-lung-protective-ventilation#col": false,
+    "u-cn-em-shock-type-differentiation-first-step": 15,
     "u-cn-em-shock-type-differentiation-first-step#shrink": 1.0,
-    "u-cn-em-shock-type-differentiation-first-step#pad": 42,
+    "u-cn-em-shock-type-differentiation-first-step#pad": 0,
     "u-cn-em-shock-type-differentiation-first-step#col": false,
-    "u-cn-em-sepsis-initial-resuscitation-bundle": 18,
-    "u-cn-em-sepsis-initial-resuscitation-bundle#shrink": 1.0,
-    "u-cn-em-sepsis-initial-resuscitation-bundle#pad": 0,
-    "u-cn-em-sepsis-initial-resuscitation-bundle#col": false,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 15,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#shrink": 1.0,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 11,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#shrink": 0.76,
     "u-cn-em-ventricular-fibrillation-immediate-defibrillation#pad": 0,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#col": true,
-    "u-cn-em-lithium-toxicity-hemodialysis-indication": 17,
-    "u-cn-em-lithium-toxicity-hemodialysis-indication#shrink": 0.76,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#col": false,
+    "u-cn-em-lithium-toxicity-hemodialysis-indication": 16,
+    "u-cn-em-lithium-toxicity-hemodialysis-indication#shrink": 1.0,
     "u-cn-em-lithium-toxicity-hemodialysis-indication#pad": 0,
     "u-cn-em-lithium-toxicity-hemodialysis-indication#col": false,
     "u-cn-em-trauma-primary-survey-next-priority-intervention": 10,
@@ -443,34 +396,10 @@
     "26쪽 오른쪽 단 아래가 비어 있다(빈 공간 31%)"
    ]
   },
-  "피부과": {
-   "mode": "measure",
-   "tried": 125,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 11,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#fig:f1": 14,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 25,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
-    "u-cn-derm-sweet-syndrome-diagnosis": 11,
-    "u-cn-derm-sweet-syndrome-diagnosis#shrink": 1.0,
-    "u-cn-derm-sweet-syndrome-diagnosis#pad": 14,
-    "u-cn-derm-sweet-syndrome-diagnosis#col": false,
-    "u-cn-derm-scabies-treat-with-contacts": 13,
-    "u-cn-derm-scabies-treat-with-contacts#shrink": 1.0,
-    "u-cn-derm-scabies-treat-with-contacts#pad": 14,
-    "u-cn-derm-scabies-treat-with-contacts#col": false
-   }
-  },
   "순환기내과 1권": {
    "mode": "measure",
-   "tried": 765,
-   "renders": 5,
+   "tried": 774,
+   "renders": 2,
    "diagram_after_section": {
     "u-cn-cardio-syncope-high-risk-admit": 15,
     "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
@@ -489,14 +418,14 @@
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#shrink": 1.0,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#pad": 0,
     "u-cn-cardio-complete-lbbb-discordant-st-not-stemi#col": false,
-    "u-cn-cardio-cardiac-mri-lge-pattern-etiology": 14,
+    "u-cn-cardio-cardiac-mri-lge-pattern-etiology": 16,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#shrink": 1.0,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#pad": 0,
     "u-cn-cardio-cardiac-mri-lge-pattern-etiology#col": false,
-    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry": 8,
-    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#shrink": 1.0,
-    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#pad": 14,
-    "u-cn-cardio-arrhythmia-mechanism-automaticity-triggered-reentry#col": false,
+    "u-cn-cardio-digoxin-toxicity-digoxin-fab": 13,
+    "u-cn-cardio-digoxin-toxicity-digoxin-fab#shrink": 1.0,
+    "u-cn-cardio-digoxin-toxicity-digoxin-fab#pad": 0,
+    "u-cn-cardio-digoxin-toxicity-digoxin-fab#col": false,
     "u-cn-cardio-svt-av-nodal-blockade-response": 12,
     "u-cn-cardio-svt-av-nodal-blockade-response#shrink": 1.0,
     "u-cn-cardio-svt-av-nodal-blockade-response#pad": 28,
@@ -513,22 +442,23 @@
     "u-cn-cardio-mitral-stenosis-commissurotomy-selection": 13,
     "u-cn-cardio-mitral-stenosis-commissurotomy-selection#shrink": 1.0,
     "u-cn-cardio-mitral-stenosis-commissurotomy-selection#pad": 0,
-    "u-cn-cardio-mitral-stenosis-commissurotomy-selection#col": false,
-    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential": 14,
-    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#shrink": 1.0,
-    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#pad": 14,
-    "u-cn-cardio-pericardial-restrictive-hemodynamics-catheter-differential#col": false
-   },
-   "unpredicted": [
-    "28쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, 9%) — 좌우로 오가며 읽힌다",
-    "30쪽 두 단 도식 위 좁은 띠(8%) — 좌우로 오가며 읽힌다",
-    "34쪽 왼쪽 단 아래가 비어 있다(빈 공간 40%)",
-    "34쪽 오른쪽 단 아래가 비어 있다(빈 공간 41%)"
-   ]
+    "u-cn-cardio-mitral-stenosis-commissurotomy-selection#col": false
+   }
+  },
+  "순환기내과 2권": {
+   "mode": "measure",
+   "tried": 16,
+   "renders": 1,
+   "diagram_after_section": {
+    "u-cn-cardio-aortic-dissection-impulse-control-first": 14,
+    "u-cn-cardio-aortic-dissection-impulse-control-first#shrink": 1.0,
+    "u-cn-cardio-aortic-dissection-impulse-control-first#pad": 0,
+    "u-cn-cardio-aortic-dissection-impulse-control-first#col": false
+   }
   },
   "내분비내과": {
    "mode": "measure",
-   "tried": 80,
+   "tried": 121,
    "renders": 1,
    "diagram_after_section": {
     "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#figscale:f1": 0.85,
@@ -546,142 +476,21 @@
     "u-cn-endo-cushing-syndrome-screening-test#col": true,
     "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade": 13,
     "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#shrink": 1.0,
-    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#pad": 0,
-    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#col": true
+    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#pad": 14,
+    "u-cn-endo-pheochromocytoma-preoperative-alpha-blockade#col": false,
+    "u-cn-endo-hhs-initial-fluid-resuscitation": 21,
+    "u-cn-endo-hhs-initial-fluid-resuscitation#shrink": 1.0,
+    "u-cn-endo-hhs-initial-fluid-resuscitation#pad": 0,
+    "u-cn-endo-hhs-initial-fluid-resuscitation#col": false,
+    "u-cn-endo-hypoglycemia-c-peptide-differential": 14,
+    "u-cn-endo-hypoglycemia-c-peptide-differential#shrink": 1.0,
+    "u-cn-endo-hypoglycemia-c-peptide-differential#pad": 0,
+    "u-cn-endo-hypoglycemia-c-peptide-differential#col": false
    }
-  },
-  "안과": {
-   "mode": "measure",
-   "tried": 135,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 23,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
-    "u-cn-ophth-crao-arteritic-workup": 10,
-    "u-cn-ophth-crao-arteritic-workup#shrink": 1.0,
-    "u-cn-ophth-crao-arteritic-workup#pad": 0,
-    "u-cn-ophth-crao-arteritic-workup#col": false,
-    "u-cn-ophth-chemical-burn-immediate-irrigation": 14,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 1.0,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 0,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#col": true,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field": 5,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#shrink": 1.0,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#pad": 0,
-    "u-cn-ophth-normal-tension-glaucoma-visual-field#col": false
-   }
-  },
-  "산부인과": {
-   "mode": "measure",
-   "tried": 499,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation": 10,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#shrink": 1.0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#pad": 0,
-    "u-cn-obgyn-menstrual-cycle-ovulation-confirmation#col": true,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation": 9,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation#shrink": 0.76,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation#pad": 0,
-    "u-cn-obgyn-primary-amenorrhea-absent-uterus-karyotype-differentiation#col": false,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 16,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 1.0,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 42,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
-    "u-cn-obgyn-hirsutism-evaluation-tumor-vs-pcos": 9,
-    "u-cn-obgyn-hirsutism-evaluation-tumor-vs-pcos#shrink": 0.88,
-    "u-cn-obgyn-hirsutism-evaluation-tumor-vs-pcos#pad": 0,
-    "u-cn-obgyn-hirsutism-evaluation-tumor-vs-pcos#col": false,
-    "u-cn-obgyn-menopause-hormone-therapy-decision": 2,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#shrink": 1.0,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#pad": 0,
-    "u-cn-obgyn-menopause-hormone-therapy-decision#col": false,
-    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal": 13,
-    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#shrink": 1.0,
-    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#pad": 0,
-    "u-cn-obgyn-pregnancy-physiology-normal-vs-abnormal#col": false,
-    "u-cn-obgyn-aneuploidy-screening-positive-screen-diagnostic-test": 12,
-    "u-cn-obgyn-aneuploidy-screening-positive-screen-diagnostic-test#shrink": 1.0,
-    "u-cn-obgyn-aneuploidy-screening-positive-screen-diagnostic-test#pad": 0,
-    "u-cn-obgyn-aneuploidy-screening-positive-screen-diagnostic-test#col": true,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation": 2,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#shrink": 1.0,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#pad": 0,
-    "u-cn-obgyn-acute-fatty-liver-of-pregnancy-hellp-differentiation#col": false,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive": 12,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive#shrink": 1.0,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive#pad": 14,
-    "u-cn-obgyn-postpartum-preeclampsia-magnesium-antihypertensive#col": false,
-    "u-cn-obgyn-late-pregnancy-bleeding-previa-vs-abruption": 12,
-    "u-cn-obgyn-late-pregnancy-bleeding-previa-vs-abruption#shrink": 1.0,
-    "u-cn-obgyn-late-pregnancy-bleeding-previa-vs-abruption#pad": 28,
-    "u-cn-obgyn-late-pregnancy-bleeding-previa-vs-abruption#col": false,
-    "u-cn-obgyn-shoulder-dystocia-maneuver-sequence": 7,
-    "u-cn-obgyn-shoulder-dystocia-maneuver-sequence#shrink": 0.88,
-    "u-cn-obgyn-shoulder-dystocia-maneuver-sequence#pad": 0,
-    "u-cn-obgyn-shoulder-dystocia-maneuver-sequence#col": false,
-    "u-cn-obgyn-postpartum-hemorrhage-cause-directed-first-step": 27,
-    "u-cn-obgyn-postpartum-hemorrhage-cause-directed-first-step#shrink": 1.0,
-    "u-cn-obgyn-postpartum-hemorrhage-cause-directed-first-step#pad": 0,
-    "u-cn-obgyn-postpartum-hemorrhage-cause-directed-first-step#col": false,
-    "u-cn-obgyn-vaginitis-ph-microscopy-differentiation": 8,
-    "u-cn-obgyn-vaginitis-ph-microscopy-differentiation#shrink": 1.0,
-    "u-cn-obgyn-vaginitis-ph-microscopy-differentiation#pad": 0,
-    "u-cn-obgyn-vaginitis-ph-microscopy-differentiation#col": false,
-    "u-cn-obgyn-endometriosis-pain-vs-fertility-treatment": 13,
-    "u-cn-obgyn-endometriosis-pain-vs-fertility-treatment#shrink": 0.76,
-    "u-cn-obgyn-endometriosis-pain-vs-fertility-treatment#pad": 0,
-    "u-cn-obgyn-endometriosis-pain-vs-fertility-treatment#col": false,
-    "u-cn-obgyn-ovarian-germ-cell-tumor-tumor-markers": 10,
-    "u-cn-obgyn-ovarian-germ-cell-tumor-tumor-markers#shrink": 1.0,
-    "u-cn-obgyn-ovarian-germ-cell-tumor-tumor-markers#pad": 0,
-    "u-cn-obgyn-ovarian-germ-cell-tumor-tumor-markers#col": true,
-    "u-cn-obgyn-cervix-transformation-zone-squamous-metaplasia": 14,
-    "u-cn-obgyn-cervix-transformation-zone-squamous-metaplasia#shrink": 1.0,
-    "u-cn-obgyn-cervix-transformation-zone-squamous-metaplasia#pad": 14,
-    "u-cn-obgyn-cervix-transformation-zone-squamous-metaplasia#col": false
-   }
-  },
-  "소아청소년과": {
-   "mode": "measure",
-   "tried": 159,
-   "renders": 10,
-   "diagram_after_section": {
-    "u-cn-peds-biliary-atresia-cholestasis-workup": 15,
-    "u-cn-peds-biliary-atresia-cholestasis-workup#shrink": 1.0,
-    "u-cn-peds-biliary-atresia-cholestasis-workup#pad": 14,
-    "u-cn-peds-biliary-atresia-cholestasis-workup#col": false,
-    "u-cn-peds-pertussis-infant-macrolide-choice": 12,
-    "u-cn-peds-pertussis-infant-macrolide-choice#shrink": 1.0,
-    "u-cn-peds-pertussis-infant-macrolide-choice#pad": 0,
-    "u-cn-peds-pertussis-infant-macrolide-choice#col": false,
-    "u-cn-peds-kawasaki-acute-ivig": 20,
-    "u-cn-peds-kawasaki-acute-ivig#shrink": 1.0,
-    "u-cn-peds-kawasaki-acute-ivig#pad": 0,
-    "u-cn-peds-kawasaki-acute-ivig#col": false,
-    "u-cn-peds-rheumatic-fever-acute-eradication": 23,
-    "u-cn-peds-rheumatic-fever-acute-eradication#shrink": 1.0,
-    "u-cn-peds-rheumatic-fever-acute-eradication#pad": 0,
-    "u-cn-peds-rheumatic-fever-acute-eradication#col": true,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation": 17,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#shrink": 1.0,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#pad": 0,
-    "u-cn-peds-pyloric-stenosis-preop-resuscitation#col": true,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics": 14,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics#shrink": 0.76,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics#pad": 0,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics#col": false
-   },
-   "unpredicted": [
-    "11쪽 왼쪽 단 아래가 비어 있다(빈 공간 44%)",
-    "11쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)"
-   ]
   },
   "정신건강의학과": {
    "mode": "measure",
-   "tried": 60,
+   "tried": 80,
    "renders": 1,
    "diagram_after_section": {
     "u-cn-psy-ocd-ssri-trial-optimization": 26,
@@ -689,14 +498,14 @@
     "u-cn-psy-ocd-ssri-trial-optimization#pad": 0,
     "u-cn-psy-ocd-ssri-trial-optimization#col": false,
     "u-cn-psy-ptsd-duration-vs-acute-stress": 15,
-    "u-cn-psy-ptsd-duration-vs-acute-stress#shrink": 0.88,
-    "u-cn-psy-ptsd-duration-vs-acute-stress#pad": 0,
+    "u-cn-psy-ptsd-duration-vs-acute-stress#shrink": 1.0,
+    "u-cn-psy-ptsd-duration-vs-acute-stress#pad": 42,
     "u-cn-psy-ptsd-duration-vs-acute-stress#col": false
    }
   },
   "혈액종양내과": {
    "mode": "measure",
-   "tried": 81,
+   "tried": 88,
    "renders": 1,
    "diagram_after_section": {
     "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo": 13,
@@ -704,61 +513,10 @@
     "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#pad": 0,
     "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#col": true,
     "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#fig:f1": 8,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin": 16,
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin": 24,
     "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#shrink": 1.0,
     "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#pad": 0,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#col": true
-   }
-  },
-  "류마티스내과": {
-   "mode": "measure",
-   "tried": 644,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#pad": 0,
-    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#col": false,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine": 14,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#shrink": 1.0,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#pad": 0,
-    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#col": true,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor": 10,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#shrink": 1.0,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#pad": 14,
-    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#col": false,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue": 11,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#shrink": 1.0,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#pad": 0,
-    "u-cn-rheum-methotrexate-toxicity-leucovorin-rescue#col": false,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis": 13,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#shrink": 0.76,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#pad": 0,
-    "u-cn-rheum-acute-rheumatic-fever-jones-diagnosis#col": false,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa": 13,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#shrink": 0.88,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#pad": 0,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#col": false,
-    "u-cn-rheum-polymyalgia-rheumatica-low-dose-glucocorticoid": 15,
-    "u-cn-rheum-polymyalgia-rheumatica-low-dose-glucocorticoid#shrink": 1.0,
-    "u-cn-rheum-polymyalgia-rheumatica-low-dose-glucocorticoid#pad": 0,
-    "u-cn-rheum-polymyalgia-rheumatica-low-dose-glucocorticoid#col": false,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first": 13,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#shrink": 1.0,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#pad": 0,
-    "u-cn-rheum-osteoarthritis-exercise-weight-loss-first#col": true,
-    "u-cn-rheum-gout-hla-b5801-before-allopurinol": 11,
-    "u-cn-rheum-gout-hla-b5801-before-allopurinol#shrink": 1.0,
-    "u-cn-rheum-gout-hla-b5801-before-allopurinol#pad": 0,
-    "u-cn-rheum-gout-hla-b5801-before-allopurinol#col": true,
-    "u-cn-rheum-fibromyalgia-exercise-first-treatment": 12,
-    "u-cn-rheum-fibromyalgia-exercise-first-treatment#shrink": 1.0,
-    "u-cn-rheum-fibromyalgia-exercise-first-treatment#pad": 28,
-    "u-cn-rheum-fibromyalgia-exercise-first-treatment#col": false,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 19,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 0,
-    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#col": false
    }
   },
   "호흡기내과": {
@@ -782,7 +540,7 @@
   },
   "감염내과": {
    "mode": "measure",
-   "tried": 84,
+   "tried": 107,
    "renders": 1,
    "diagram_after_section": {
     "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care": 11,
@@ -793,21 +551,29 @@
     "u-cn-derm-ssss-antistaphylococcal-therapy#shrink": 1.0,
     "u-cn-derm-ssss-antistaphylococcal-therapy#pad": 0,
     "u-cn-derm-ssss-antistaphylococcal-therapy#col": false,
-    "u-cn-id-covid19-pneumonia-tocilizumab-add-on": 7,
-    "u-cn-id-covid19-pneumonia-tocilizumab-add-on#shrink": 1.0,
-    "u-cn-id-covid19-pneumonia-tocilizumab-add-on#pad": 14,
-    "u-cn-id-covid19-pneumonia-tocilizumab-add-on#col": false
+    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation": 11,
+    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation#shrink": 1.0,
+    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation#pad": 0,
+    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation#col": true,
+    "u-cn-id-disseminated-nocardiosis-partial-acid-fast-identification": 15,
+    "u-cn-id-disseminated-nocardiosis-partial-acid-fast-identification#shrink": 1.0,
+    "u-cn-id-disseminated-nocardiosis-partial-acid-fast-identification#pad": 0,
+    "u-cn-id-disseminated-nocardiosis-partial-acid-fast-identification#col": true,
+    "u-cn-id-syphilis-pregnancy-penicillin-desensitization": 7,
+    "u-cn-id-syphilis-pregnancy-penicillin-desensitization#shrink": 0.88,
+    "u-cn-id-syphilis-pregnancy-penicillin-desensitization#pad": 0,
+    "u-cn-id-syphilis-pregnancy-penicillin-desensitization#col": false
    }
   },
   "소화기내과": {
    "mode": "measure",
-   "tried": 12,
+   "tried": 25,
    "renders": 1,
    "diagram_after_section": {
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis": 14,
+    "u-cn-gi-crohn-disease-distribution-histology-diagnosis": 8,
     "u-cn-gi-crohn-disease-distribution-histology-diagnosis#shrink": 1.0,
     "u-cn-gi-crohn-disease-distribution-histology-diagnosis#pad": 0,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#col": true
+    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#col": false
    }
   },
   "신장내과": {
@@ -875,90 +641,22 @@
   },
   "신경과": {
    "mode": "measure",
-   "tried": 25,
+   "tried": 46,
    "renders": 1,
    "diagram_after_section": {
-    "u-cn-neuro-multiple-sclerosis-dissemination-diagnosis#fig:f1": 5,
-    "u-cn-neuro-guillain-barre-respiratory-monitoring-first": 17,
-    "u-cn-neuro-guillain-barre-respiratory-monitoring-first#shrink": 1.0,
-    "u-cn-neuro-guillain-barre-respiratory-monitoring-first#pad": 28,
-    "u-cn-neuro-guillain-barre-respiratory-monitoring-first#col": false
-   }
-  },
-  "알레르기내과": {
-   "mode": "measure",
-   "tried": 6,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-allergy-x-linked-agammaglobulinemia-btk-pre-b-arrest": 11,
-    "u-cn-allergy-x-linked-agammaglobulinemia-btk-pre-b-arrest#shrink": 1.0,
-    "u-cn-allergy-x-linked-agammaglobulinemia-btk-pre-b-arrest#pad": 0,
-    "u-cn-allergy-x-linked-agammaglobulinemia-btk-pre-b-arrest#col": true
-   }
-  },
-  "생화학·유전": {
-   "mode": "measure",
-   "tried": 9,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia": 18,
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia#shrink": 1.0,
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia#pad": 0,
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia#col": false
-   }
-  },
-  "이비인후과": {
-   "mode": "measure",
-   "tried": 45,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-ent-hearing-loss-conductive-vs-sensorineural": 11,
-    "u-cn-ent-hearing-loss-conductive-vs-sensorineural#shrink": 1.0,
-    "u-cn-ent-hearing-loss-conductive-vs-sensorineural#pad": 14,
-    "u-cn-ent-hearing-loss-conductive-vs-sensorineural#col": false,
-    "u-cn-ent-epistaxis-stepwise-control": 8,
-    "u-cn-ent-epistaxis-stepwise-control#shrink": 1.0,
-    "u-cn-ent-epistaxis-stepwise-control#pad": 0,
-    "u-cn-ent-epistaxis-stepwise-control#col": true
-   }
-  },
-  "예방의학": {
-   "mode": "measure",
-   "tried": 122,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-prev-association-measures-rr-or-ar-selection": 11,
-    "u-cn-prev-association-measures-rr-or-ar-selection#shrink": 1.0,
-    "u-cn-prev-association-measures-rr-or-ar-selection#pad": 0,
-    "u-cn-prev-association-measures-rr-or-ar-selection#col": false,
-    "u-cn-prev-study-design-design-and-bias-identification": 10,
-    "u-cn-prev-study-design-design-and-bias-identification#shrink": 1.0,
-    "u-cn-prev-study-design-design-and-bias-identification#pad": 0,
-    "u-cn-prev-study-design-design-and-bias-identification#col": true,
-    "u-cn-prev-screening-criteria-and-lead-length-bias": 17,
-    "u-cn-prev-screening-criteria-and-lead-length-bias#shrink": 1.0,
-    "u-cn-prev-screening-criteria-and-lead-length-bias#pad": 0,
-    "u-cn-prev-screening-criteria-and-lead-length-bias#col": false,
-    "u-cn-prev-occupational-disease-exposure-to-disease-matching": 15,
-    "u-cn-prev-occupational-disease-exposure-to-disease-matching#shrink": 1.0,
-    "u-cn-prev-occupational-disease-exposure-to-disease-matching#pad": 42,
-    "u-cn-prev-occupational-disease-exposure-to-disease-matching#col": false
-   }
-  },
-  "비뇨의학과": {
-   "mode": "measure",
-   "tried": 5,
-   "renders": 1,
-   "diagram_after_section": {
-    "u-cn-uro-testis-histology-leydig-lh-target": 12,
-    "u-cn-uro-testis-histology-leydig-lh-target#shrink": 1.0,
-    "u-cn-uro-testis-histology-leydig-lh-target#pad": 14,
-    "u-cn-uro-testis-histology-leydig-lh-target#col": false
+    "u-cn-neuro-acute-vestibular-syndrome-central-signs-mri": 2,
+    "u-cn-neuro-acute-vestibular-syndrome-central-signs-mri#shrink": 1.0,
+    "u-cn-neuro-acute-vestibular-syndrome-central-signs-mri#pad": 0,
+    "u-cn-neuro-acute-vestibular-syndrome-central-signs-mri#col": false,
+    "u-cn-neuro-multiple-sclerosis-dissemination-diagnosis": 14,
+    "u-cn-neuro-multiple-sclerosis-dissemination-diagnosis#shrink": 1.0,
+    "u-cn-neuro-multiple-sclerosis-dissemination-diagnosis#pad": 42,
+    "u-cn-neuro-multiple-sclerosis-dissemination-diagnosis#col": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-11-24T14:41:22+09:00",
+ "finished": "2026-11-25T13:32:18+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -967,225 +665,137 @@
     "status": "uploaded",
     "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
     "kept_id": true,
-    "md5": "2329b8e4598f2a661fac9b9bd192d2fe",
-    "archive": "MedKOS_학습서_응급의학과_v12_2026-11-24.pdf"
+    "md5": "cf419e0ae41db0fdad280df25bbe1b60",
+    "archive": "MedKOS_학습서_응급의학과_v13_2026-11-25.pdf"
    },
    "정형외과": {
     "file": "MedKOS_학습서_정형외과.pdf",
     "status": "uploaded",
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
     "kept_id": true,
-    "md5": "14579b303d62ea11d742142696badbf9",
-    "archive": "MedKOS_학습서_정형외과_v22_2026-11-24.pdf"
-   },
-   "피부과": {
-    "file": "MedKOS_학습서_피부과.pdf",
-    "status": "uploaded",
-    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "kept_id": true,
-    "md5": "7012201f8752880920f7bb9f91b702fc",
-    "archive": "MedKOS_학습서_피부과_v18_2026-11-24.pdf"
+    "md5": "a8f7c0aa83c059ec0218df8d2a569cfb",
+    "archive": "MedKOS_학습서_정형외과_v23_2026-11-25.pdf"
    },
    "순환기내과 1권": {
     "file": "MedKOS_학습서_순환기내과_1권.pdf",
     "status": "uploaded",
     "id": "1-IBpnsVO5zKQ0mRKWPlbVZE2u2aK_BVT",
-    "kept_id": false,
-    "md5": "c7031fbb6275e67372a4f342da254340",
-    "archive": "MedKOS_학습서_순환기내과_1권_v1_2026-11-24.pdf"
+    "kept_id": true,
+    "md5": "cf97b98e76b7a402eccaea6fc6eed603",
+    "archive": "MedKOS_학습서_순환기내과_1권_v2_2026-11-25.pdf"
    },
    "순환기내과 2권": {
     "file": "MedKOS_학습서_순환기내과_2권.pdf",
     "status": "uploaded",
     "id": "1aDYsZNEVp6f-PXTJzQK4tjPPpgeHk2zJ",
-    "kept_id": false,
-    "md5": "e8ebc3dc980ee0ace4f8ca486d6452b2",
-    "archive": "MedKOS_학습서_순환기내과_2권_v1_2026-11-24.pdf"
+    "kept_id": true,
+    "md5": "2e04919ea89b5173dd5e7ee6ba2954bc",
+    "archive": "MedKOS_학습서_순환기내과_2권_v2_2026-11-25.pdf"
    },
    "내분비내과": {
     "file": "MedKOS_학습서_내분비내과.pdf",
     "status": "uploaded",
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
     "kept_id": true,
-    "md5": "08d0ac8b5177a33cf1c6e384939d3bef",
-    "archive": "MedKOS_학습서_내분비내과_v12_2026-11-24.pdf"
-   },
-   "안과": {
-    "file": "MedKOS_학습서_안과.pdf",
-    "status": "uploaded",
-    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "kept_id": true,
-    "md5": "f87d3e5fd8fbae37382b7135b3aad2b1",
-    "archive": "MedKOS_학습서_안과_v21_2026-11-24.pdf"
+    "md5": "b9fe4caf632b02a6f6b4d75ce7e46038",
+    "archive": "MedKOS_학습서_내분비내과_v13_2026-11-25.pdf"
    },
    "외과": {
     "file": "MedKOS_학습서_외과.pdf",
     "status": "uploaded",
     "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
     "kept_id": true,
-    "md5": "0ad7ec97ff980302c3334278379a3432",
-    "archive": "MedKOS_학습서_외과_v11_2026-11-24.pdf"
-   },
-   "산부인과": {
-    "file": "MedKOS_학습서_산부인과.pdf",
-    "status": "uploaded",
-    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "kept_id": true,
-    "md5": "36c2f1aaad72db7698237aa2906857df",
-    "archive": "MedKOS_학습서_산부인과_v22_2026-11-24.pdf"
-   },
-   "소아청소년과": {
-    "file": "MedKOS_학습서_소아청소년과.pdf",
-    "status": "uploaded",
-    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "kept_id": true,
-    "md5": "bca101376a447e340035bb0665b3afed",
-    "archive": "MedKOS_학습서_소아청소년과_v18_2026-11-24.pdf"
+    "md5": "5c4de5007846244b0cdc10cf143c045a",
+    "archive": "MedKOS_학습서_외과_v12_2026-11-25.pdf"
    },
    "정신건강의학과": {
     "file": "MedKOS_학습서_정신건강의학과.pdf",
     "status": "uploaded",
     "id": "1ZQToBsTHL2kPkoAh0qBCglJGTuVQnQ5o",
     "kept_id": true,
-    "md5": "e885d59aa146b417543e096a3a6abdef",
-    "archive": "MedKOS_학습서_정신건강의학과_v10_2026-11-24.pdf"
+    "md5": "b9cba9e012da9c4d0c8935bef237e774",
+    "archive": "MedKOS_학습서_정신건강의학과_v11_2026-11-25.pdf"
    },
    "혈액종양내과": {
     "file": "MedKOS_학습서_혈액종양내과.pdf",
     "status": "uploaded",
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
     "kept_id": true,
-    "md5": "bb64a42ddbc7a1a97b690d1f0a1cc193",
-    "archive": "MedKOS_학습서_혈액종양내과_v10_2026-11-24.pdf"
-   },
-   "류마티스내과": {
-    "file": "MedKOS_학습서_류마티스내과.pdf",
-    "status": "uploaded",
-    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "kept_id": true,
-    "md5": "ff87d50ee35e7005c5aead32c69a5f32",
-    "archive": "MedKOS_학습서_류마티스내과_v40_2026-11-24.pdf"
+    "md5": "dd16dd2a32e089333662a8db12f2f09a",
+    "archive": "MedKOS_학습서_혈액종양내과_v11_2026-11-25.pdf"
    },
    "호흡기내과": {
     "file": "MedKOS_학습서_호흡기내과.pdf",
     "status": "uploaded",
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
     "kept_id": true,
-    "md5": "20def0046bee0a14d91a90a857a9f7c0",
-    "archive": "MedKOS_학습서_호흡기내과_v16_2026-11-24.pdf"
+    "md5": "c3a0a047db0bf08783236df018e4aa95",
+    "archive": "MedKOS_학습서_호흡기내과_v17_2026-11-25.pdf"
    },
    "감염내과": {
     "file": "MedKOS_학습서_감염내과.pdf",
     "status": "uploaded",
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
     "kept_id": true,
-    "md5": "153953e954c6e68efb3ff0ffc5b29ef1",
-    "archive": "MedKOS_학습서_감염내과_v15_2026-11-24.pdf"
+    "md5": "14526188a2ecd3f8d27ca971469ce86c",
+    "archive": "MedKOS_학습서_감염내과_v16_2026-11-25.pdf"
    },
    "소화기내과": {
     "file": "MedKOS_학습서_소화기내과.pdf",
     "status": "uploaded",
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
     "kept_id": true,
-    "md5": "9fc833453985478b709e05677a75e36b",
-    "archive": "MedKOS_학습서_소화기내과_v17_2026-11-24.pdf"
+    "md5": "e3a3969b733af6a422b3e09a070baf9a",
+    "archive": "MedKOS_학습서_소화기내과_v18_2026-11-25.pdf"
    },
    "신장내과": {
     "file": "MedKOS_학습서_신장내과.pdf",
     "status": "uploaded",
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
     "kept_id": true,
-    "md5": "62ee9ae30e1628393dd917c1bb09e47c",
-    "archive": "MedKOS_학습서_신장내과_v14_2026-11-24.pdf"
-   },
-   "내과 총론": {
-    "file": "MedKOS_학습서_내과_총론.pdf",
-    "status": "uploaded",
-    "id": "1n77pPYdMxwX5vDz2IfCGIoN0UFiPVH9t",
-    "kept_id": false,
-    "md5": "3693565ebbfbe8e74bbca7ee0b7bf037",
-    "archive": "MedKOS_학습서_내과_총론_v1_2026-11-24.pdf"
+    "md5": "ef555535eab09cce3a03bf3e4dbc1006",
+    "archive": "MedKOS_학습서_신장내과_v15_2026-11-25.pdf"
    },
    "생리학": {
     "file": "MedKOS_학습서_생리학.pdf",
     "status": "uploaded",
     "id": "1Wcq74rVUr__S67NRSD1KABELuwUPWJ_S",
-    "kept_id": false,
-    "md5": "e8299423a09f918916421c1c573ca610",
-    "archive": "MedKOS_학습서_생리학_v1_2026-11-24.pdf"
+    "kept_id": true,
+    "md5": "648c9e53cb8149c4d5cd4e570a6c9dd0",
+    "archive": "MedKOS_학습서_생리학_v2_2026-11-25.pdf"
    },
    "신경과": {
     "file": "MedKOS_학습서_신경과.pdf",
     "status": "uploaded",
     "id": "13qO71iHo3gubZIEyycClaE5S3p_P4IKM",
     "kept_id": true,
-    "md5": "541146d1767d611c83a6c623b0dcefc0",
-    "archive": "MedKOS_학습서_신경과_v8_2026-11-24.pdf"
+    "md5": "a4d9ab683975dbc74776f7f4a93263ae",
+    "archive": "MedKOS_학습서_신경과_v9_2026-11-25.pdf"
    },
-   "미생물학": {
-    "file": "MedKOS_학습서_미생물학.pdf",
+   "해부·조직·발생": {
+    "file": "MedKOS_학습서_해부_조직_발생.pdf",
     "status": "uploaded",
-    "id": "1KZwlEMxMYSmSpRjwO_1xLDvOTqXMB-5o",
+    "id": "1QxrKKGvngsOWjSXA1F3R6l5xQqRK7RS7",
     "kept_id": false,
-    "md5": "bdf2e61446ca646a6901a18babb4ea8f",
-    "archive": "MedKOS_학습서_미생물학_v1_2026-11-24.pdf"
+    "md5": "60255c18fa88e735559adce8384707cc",
+    "archive": "MedKOS_학습서_해부_조직_발생_v1_2026-11-25.pdf"
    },
-   "알레르기내과": {
-    "file": "MedKOS_학습서_알레르기내과.pdf",
+   "약리학": {
+    "file": "MedKOS_학습서_약리학.pdf",
     "status": "uploaded",
-    "id": "1iNT7oXGCPWBnpCWxRfhtXCdmfnRd9AoS",
-    "kept_id": true,
-    "md5": "4d817f3609c70589a69fb1666ce5a35d",
-    "archive": "MedKOS_학습서_알레르기내과_v7_2026-11-24.pdf"
-   },
-   "생화학·유전": {
-    "file": "MedKOS_학습서_생화학_유전.pdf",
-    "status": "uploaded",
-    "id": "1dxGLHQJXX0EUgh3WMrFmEVBdvcpN8MaM",
+    "id": "1008BrKTmm_gZRRBxNP7FHHlrhUNSmMDL",
     "kept_id": false,
-    "md5": "f8def13d3c5e44d3af09e567d822a3b0",
-    "archive": "MedKOS_학습서_생화학_유전_v1_2026-11-24.pdf"
-   },
-   "면역학": {
-    "file": "MedKOS_학습서_면역학.pdf",
-    "status": "uploaded",
-    "id": "1fFsJayj3QxSPssQrhkiypsxhhkaaDLua",
-    "kept_id": false,
-    "md5": "27fc4d88411c4eb597803af864c38928",
-    "archive": "MedKOS_학습서_면역학_v1_2026-11-24.pdf"
-   },
-   "이비인후과": {
-    "file": "MedKOS_학습서_이비인후과.pdf",
-    "status": "uploaded",
-    "id": "1r8u6zkqH-vYJLmkN59WA6d6uVJwfm3FZ",
-    "kept_id": true,
-    "md5": "7336cad53da9d591c296bbd0130b30ee",
-    "archive": "MedKOS_학습서_이비인후과_v2_2026-11-24.pdf"
-   },
-   "예방의학": {
-    "file": "MedKOS_학습서_예방의학.pdf",
-    "status": "uploaded",
-    "id": "1CRSMdEBHbezBMvnFHhLM3hSu-BtqAt58",
-    "kept_id": true,
-    "md5": "d07f407061207c0cf7d7a856f4f8f21b",
-    "archive": "MedKOS_학습서_예방의학_v2_2026-11-24.pdf"
-   },
-   "비뇨의학과": {
-    "file": "MedKOS_학습서_비뇨의학과.pdf",
-    "status": "uploaded",
-    "id": "1RV2zyMBw8OO3rtrSfsIgW0Fm1Whmiu6T",
-    "kept_id": true,
-    "md5": "8d72e9b213a8c568b8d3f940cbff977d",
-    "archive": "MedKOS_학습서_비뇨의학과_v7_2026-11-24.pdf"
+    "md5": "6df5c7ebbff83ca42a48d409b15ecbdd",
+    "archive": "MedKOS_학습서_약리학_v1_2026-11-25.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "f1b4185c3c68b35c9d0a92119f38e50d"
+    "md5": "bd76a25846c674247891fa27097e584c"
    }
   },
-  "at": "2026-11-24T14:41:22+09:00"
+  "at": "2026-11-25T13:32:18+09:00"
  }
 }
