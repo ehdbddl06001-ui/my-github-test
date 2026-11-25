@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4305,
+  "total": 4308,
   "byType": {
    "usmle": 288,
    "paper": 987,
    "kmle": 1984,
-   "imaging": 792,
+   "imaging": 795,
    "concept": 237,
    "ailab": 14,
    "basic": 3
@@ -27,9 +27,9 @@ window.MEDKOS_INDEX = {
    "Pathology": 148,
    "Orthopedics": 137,
    "Hematology-Oncology": 136,
+   "순환기": 134,
    "Endocrinology": 133,
    "General Surgery": 132,
-   "순환기": 131,
    "Gastroenterology": 130,
    "Dermatology": 129,
    "Ophthalmology": 129,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3050,
+   "high": 3053,
    "medium": 1251,
    "low": 4
   },
@@ -971,6 +971,63 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1989.md",
    "snippet": "71세 여자가 두 달 전부터 계단을 한 층만 올라도 숨이 차고 저녁이면 발목이 부어서 왔다. 가슴 통증이나 조이는 느낌은 한 번도 없었고, 실신이나 두근거림도 없었다. 15년 전부터 고혈압으로 약을 먹고 있으나 혈압 조절이 고르지 않았다. 담배는 피우지 않는다. 경정맥이 약간 팽창되어 있고 양쪽 폐 아래쪽에서 수포음이 들리며 양쪽 발목에 오목부종이 있다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 1년 전 건강검진 심전도",
    "text": "Cardiology Two Months of Breathlessness on Stairs and Ankle Swelling without Chest Pain in a Woman with Long-standing High Blood Pressure ecg wide-qrs conduction-disease heart-failure diagnosis KMLE 2026 / Claude 71세 여자가 두 달 전부터 계단을 한 층만 올라도 숨이 차고 저녁이면 발목이 부어서 왔다. 가슴 통증이나 조이는 느낌은 한 번도 없었고, 실신이나 두근거림도 없었다. 15년 전부터 고혈압으로 약을 먹고 있으나 혈압 조절이 고르지 않았다. 담배는 피우지 않는다. 경정맥이 약간 팽창되어 있고 양쪽 폐 아래쪽에서 수포음이 들리며 양쪽 발목에 오목부종이 있다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 1년 전 건강검진 심전도는 정상이었다고 한다. 활력징후와 검사 결과는 자료와 같다. 심전도 소견으로 가장 적절한 것은? A. 완전 좌각차단 B. 급성 전벽 ST분절 상승 심근경색 C. 좌심실 비대와 재분극 이상 D. 완전 우각차단 E. 조기흥분 증후군 QRS가 넓고(0.12초 이상) V1은 깊고 넓은 S파, I·aVL·V6는 중격 q파 없이 넓고 뭉툭한 R파이며 ST T가 QRS 주된 방향과 반대다. 이는 완전 좌각차단이다. V1–V3의 ST 상승은 QRS와 반대 방향인 이차 변화이고 가슴 통증이 없고 트로포닌이 오르지 않아 급성 경색으로 보기 어렵다."
+  },
+  {
+   "id": "imaging-2026-0796",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 쉬던 중 가슴이 조인 고령 여성",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0796.md",
+   "snippet": "A 78 year old woman is brought to the emergency department because of substernal chest pressure that began 2 hours ago while she was watching television. The pain lasted about 30 minutes and has now partly subsided. She has hypertension and",
+   "text": "순환기 심전도 판독 — 쉬던 중 가슴이 조인 고령 여성 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6 A 78 year old woman is brought to the emergency department because of substernal chest pressure that began 2 hours ago while she was watching television. The pain lasted about 30 minutes and has now partly subsided. She has hypertension and type 2 diabetes mellitus. She does not take digoxin. Blood pressure is 148/84 mm Hg, pulse is 78/min, and respirations are 18/min. The lungs are clear, and there is no murmur, rub, or jugular venous distention. High sensitivity troponin I concentration is 64 ng/L (N<16) and rises to 210 ng/L 2 hours later. Echocardiography shows normal left ventricular wall thickness. A 12 lead ECG is shown. Which of the following is the most likely diagnosis? A. Digoxin induced ST depression B. Non ST elevation myocardial infarction C. Acute anterior ST elevation infarction D. Left ventricular hypertrophy with strain E. Acute viral pericarditis"
+  },
+  {
+   "id": "imaging-2026-0795",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 갑자기 시작된 두근거림이 멈추지 않는 고령 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0795.md",
+   "snippet": "71세 남자가 40분 전 TV 를 보다가 갑자기 시작된 두근거림으로 응급실에 왔다. 비슷한 일이 1년에 두세 번 있었으나 몇 분 안에 저절로 멈췄다고 한다. 가슴 통증과 호흡곤란은 없고 의식은 명료하다. 천식은 없다. 혈압 124/76 mmHg, 맥박 140회/분, 호흡 18회/분, 산소포화도 98 % 이다. 폐음은 깨끗하다. 변형 발살바법을 두 번 시행했으나 리듬이 바뀌지 않았다. 12유도 심전도는 그림과 같다. 다음 처치로",
+   "text": "순환기 심전도 처치 — 갑자기 시작된 두근거림이 멈추지 않는 고령 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6 71세 남자가 40분 전 TV 를 보다가 갑자기 시작된 두근거림으로 응급실에 왔다. 비슷한 일이 1년에 두세 번 있었으나 몇 분 안에 저절로 멈췄다고 한다. 가슴 통증과 호흡곤란은 없고 의식은 명료하다. 천식은 없다. 혈압 124/76 mmHg, 맥박 140회/분, 호흡 18회/분, 산소포화도 98 % 이다. 폐음은 깨끗하다. 변형 발살바법을 두 번 시행했으나 리듬이 바뀌지 않았다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 디곡신 정맥 주사 B. 경정맥 심박조율 C. 아데노신 급속 정맥 주사 D. 동기화 심장율동전환 E. 아미오다론 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0794",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 건강검진에서 심전도 이상을 들은 여성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0794.md",
+   "snippet": "63세 여자가 건강검진에서 심전도 이상이 있다는 말을 듣고 왔다. 어지럼, 실신, 가슴 통증은 없고 계단을 오를 때 숨이 차지 않는다. 고혈압으로 암로디핀을 먹고 있으며 베타차단제나 디곡신은 먹지 않는다. 혈압 128/78 mmHg, 맥박 84회/분이고 규칙적이다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 참고치 이내이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 1도 방실차단 B. 모비",
+   "text": "순환기 심전도 판독 — 건강검진에서 심전도 이상을 들은 여성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6 63세 여자가 건강검진에서 심전도 이상이 있다는 말을 듣고 왔다. 어지럼, 실신, 가슴 통증은 없고 계단을 오를 때 숨이 차지 않는다. 고혈압으로 암로디핀을 먹고 있으며 베타차단제나 디곡신은 먹지 않는다. 혈압 128/78 mmHg, 맥박 84회/분이고 규칙적이다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 참고치 이내이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 1도 방실차단 B. 모비츠 I형 방실차단 C. 모비츠 II형 방실차단 D. 완전 방실차단 E. 방실접합부 리듬"
   },
   {
    "id": "imaging-2026-0793",

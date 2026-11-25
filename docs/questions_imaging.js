@@ -2,6 +2,415 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0796",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 쉬던 중 가슴이 조인 고령 여성",
+  "type": "심전도 판독 — 쉬던 중 가슴이 조인 고령 여성",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-25",
+  "vignette": "A 78-year-old woman is brought to the emergency department because of substernal chest pressure that began 2 hours ago while she was watching television. The pain lasted about 30 minutes and has now partly subsided. She has hypertension and type 2 diabetes mellitus. She does not take digoxin. Blood pressure is 148/84 mm Hg, pulse is 78/min, and respirations are 18/min. The lungs are clear, and there is no murmur, rub, or jugular venous distention. High-sensitivity troponin I concentration is 64 ng/L (N<16) and rises to 210 ng/L 2 hours later. Echocardiography shows normal left ventricular wall thickness. A 12-lead ECG is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Digoxin-induced ST depression",
+   "Non-ST-elevation myocardial infarction",
+   "Acute anterior ST-elevation infarction",
+   "Left ventricular hypertrophy with strain",
+   "Acute viral pericarditis"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The ECG shows sinus rhythm at about 78/min with <b>T-wave inversion in V1–V2</b>, <b>ST depression in V4–V6</b>, and QS complexes with poor R-wave progression in V1–V3, but <b>no ST elevation</b> in any lead. With rest chest pain and a <b>rising high-sensitivity troponin</b>, this is myocardial necrosis from ischemia without ST elevation — a <b>non-ST-elevation myocardial infarction</b>. QRS voltage is not increased and wall thickness is normal, so LVH strain is unlikely.\n- 원리: <b>Why ST depression means subendocardial ischemia</b>: The subendocardium is farthest from the epicardial coronary arteries and is compressed during systole, so it becomes ischemic first. Injured subendocardial cells have a less negative resting potential and shorter action potentials, creating a current of injury directed toward the cavity. Electrodes on the chest wall see this as ST depression; transmural (full-thickness) injury points the vector outward and produces ST elevation.<br> <b>Why troponin defines infarction</b>: The ECG cannot distinguish unstable angina from NSTEMI. A rise and/or fall of cardiac troponin with at least one value above the 99th percentile, in a setting of ischemia, means myocardial necrosis — infarction.<br> <b>Why poor R progression does not change the diagnosis</b>: QS complexes in V1–V3 may reflect prior septal damage or lead placement; they are a background finding. The acute decision rests on the absence of ST elevation plus a dynamic troponin.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">NSTEMI (answer)</th><th>LVH with repolarization abnormality (closest distractor)</th></tr></thead><tbody> <tr><td>QRS voltage</td><td>Normal</td><td><b>Increased</b> (e.g., S in V1 + R in V5/V6 ≥ 35 mm)</td></tr> <tr><td>ST-T pattern</td><td>New ST depression and/or T inversion in an ischemic distribution</td><td>Asymmetric ST depression and T inversion in leads with tall R (V5, V6, I, aVL)</td></tr> <tr><td>Troponin</td><td><b>Rising above the 99th percentile</b></td><td>Usually normal or stable</td></tr> <tr><td>Echo</td><td>Normal or regional wall motion abnormality</td><td>Increased wall thickness</td></tr> </tbody></table> ST depression has many causes; it becomes ischemia when the voltage does not explain it and the troponin moves.\n- 오답 이유:\n  - (A) Digoxin effect would be correct in a patient taking digoxin with scooped ST depression in many leads and a stable troponin.\n  - (C) Anterior STEMI would be correct if there were ST elevation of at least 2 mm in two contiguous precordial leads such as V2–V3.\n  - (D) LVH with repolarization abnormality would be correct if QRS voltage met LVH criteria and echocardiography showed increased wall thickness with a stable troponin.\n  - (E) Acute pericarditis would be correct if there were diffuse concave ST elevation with PR depression, pleuritic positional pain, and a friction rub.\n- 함정: Reading the QS complexes in V1–V3 as an acute anterior STEMI — without ST elevation, the acute diagnosis rests on ST depression plus a rising troponin.\n- 학습목표: Read precordial T-wave inversion and lateral ST depression without ST elevation in a patient with rest chest pain and rising troponin as non-ST-elevation acute coronary syndrome, and distinguish it from LVH with repolarization abnormality and anterior STEMI\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11030 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows sinus rhythm at about 78/min with <b>T-wave inversion in V1–V2</b>, <b>ST depression in V4–V6</b>, and QS complexes with poor R-wave progression in V1–V3, but <b>no ST elevation</b> in any lead. With rest chest pain and a <b>rising high-sensitivity troponin</b>, this is myocardial necrosis from ischemia without ST elevation — a <b>non-ST-elevation myocardial infarction</b>. QRS voltage is not increased and wall thickness is normal, so LVH strain is unlikely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ST depression means subendocardial ischemia</b>: The subendocardium is farthest from the epicardial coronary arteries and is compressed during systole, so it becomes ischemic first. Injured subendocardial cells have a less negative resting potential and shorter action potentials, creating a current of injury directed toward the cavity. Electrodes on the chest wall see this as ST depression; transmural (full-thickness) injury points the vector outward and produces ST elevation.<br> <b>Why troponin defines infarction</b>: The ECG cannot distinguish unstable angina from NSTEMI. A rise and/or fall of cardiac troponin with at least one value above the 99th percentile, in a setting of ischemia, means myocardial necrosis — infarction.<br> <b>Why poor R progression does not change the diagnosis</b>: QS complexes in V1–V3 may reflect prior septal damage or lead placement; they are a background finding. The acute decision rests on the absence of ST elevation plus a dynamic troponin."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">NSTEMI (answer)</th><th>LVH with repolarization abnormality (closest distractor)</th></tr></thead><tbody> <tr><td>QRS voltage</td><td>Normal</td><td><b>Increased</b> (e.g., S in V1 + R in V5/V6 ≥ 35 mm)</td></tr> <tr><td>ST-T pattern</td><td>New ST depression and/or T inversion in an ischemic distribution</td><td>Asymmetric ST depression and T inversion in leads with tall R (V5, V6, I, aVL)</td></tr> <tr><td>Troponin</td><td><b>Rising above the 99th percentile</b></td><td>Usually normal or stable</td></tr> <tr><td>Echo</td><td>Normal or regional wall motion abnormality</td><td>Increased wall thickness</td></tr> </tbody></table> ST depression has many causes; it becomes ischemia when the voltage does not explain it and the troponin moves."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Digoxin effect would be correct in a patient taking digoxin with scooped ST depression in many leads and a stable troponin.\n(C) Anterior STEMI would be correct if there were ST elevation of at least 2 mm in two contiguous precordial leads such as V2–V3.\n(D) LVH with repolarization abnormality would be correct if QRS voltage met LVH criteria and echocardiography showed increased wall thickness with a stable troponin.\n(E) Acute pericarditis would be correct if there were diffuse concave ST elevation with PR depression, pleuritic positional pain, and a friction rub."
+   },
+   {
+    "k": "함정",
+    "v": "Reading the QS complexes in V1–V3 as an acute anterior STEMI — without ST elevation, the acute diagnosis rests on ST depression plus a rising troponin."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read precordial T-wave inversion and lateral ST depression without ST elevation in a patient with rest chest pain and rising troponin as non-ST-elevation acute coronary syndrome, and distinguish it from LVH with repolarization abnormality and anterior STEMI"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 285: Non-ST-Segment Elevation Acute Coronary Syndrome (Non-ST-Segment Elevation Myocardial Infarction and Unstable Angina) · Thygesen K, Alpert JS, Jaffe AS, et al. Fourth universal definition of myocardial infarction (2018). Circulation. 2018;138(20):e618-e651 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11030 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "안정 시 흉통과 상승하는 트로포닌에 ST 상승 없이 앞가슴 T파 역위와 V4~V6 ST 하강이 있으면 비ST분절상승 심근경색이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "QRS 전압이 높지 않고 심초음파 벽 두께가 정상이며 트로포닌이 오른다",
+   "steps": 3,
+   "chain": [
+    "영상: V1·V2 T파 역위 + V4~V6 ST 하강, ST 상승 없음 → 심내막하 허혈 양상",
+    "전압 기준 미달 + 벽 두께 정상 + 디곡신 복용 없음 → 좌심실비대·약물 효과 가능성 낮음",
+    "안정 시 흉통 + 트로포닌 64 → 210 ng/L 상승 → 비ST분절상승 심근경색"
+   ],
+   "key": [
+    {
+     "item": "영상: V1·V2 T파 역위와 V4~V6 ST 하강, ST 상승 없음",
+     "why": "ST 상승 없는 허혈 양상",
+     "also": []
+    },
+    {
+     "item": "rises to 210 ng/L 2 hours later",
+     "why": "상승하는 트로포닌 — 심근 괴사",
+     "also": []
+    },
+    {
+     "item": "substernal chest pressure that began 2 hours ago while she was watching television",
+     "why": "안정 시 허혈성 흉통",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Echocardiography shows normal left ventricular wall thickness",
+     "why": "좌심실비대 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She does not take digoxin",
+     "why": "디곡신 효과 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "there is no murmur, rub, or jugular venous distention",
+     "why": "심낭염·심부전 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "영상: V1~V3 QS형(R파 진행 불량)",
+     "why": "오래된 손상일 수 있으나 급성 진단은 ST 상승 유무와 트로포닌이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "ST 상승 없이 앞가슴 T파 역위와 V4~V6 ST 하강이 있고, 안정 시 흉통에 트로포닌이 오른다. 비ST분절상승 심근경색이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "V2~V3 에 2 mm 이상 ST 상승이 있었다면 급성 전벽 ST분절상승 심근경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0796.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/11000/#files-panel",
+   "asset_id": "PTBXL-11030",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 11030"
+  },
+  "run_id": "20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0795",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 갑자기 시작된 두근거림이 멈추지 않는 고령 남성",
+  "type": "심전도 처치 — 갑자기 시작된 두근거림이 멈추지 않는 고령 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-25",
+  "vignette": "71세 남자가 40분 전 TV 를 보다가 갑자기 시작된 두근거림으로 응급실에 왔다. 비슷한 일이 1년에 두세 번 있었으나 몇 분 안에 저절로 멈췄다고 한다. 가슴 통증과 호흡곤란은 없고 의식은 명료하다. 천식은 없다. 혈압 124/76 mmHg, 맥박 140회/분, 호흡 18회/분, 산소포화도 98 % 이다. 폐음은 깨끗하다. 변형 발살바법을 두 번 시행했으나 리듬이 바뀌지 않았다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "디곡신 정맥 주사",
+   "경정맥 심박조율",
+   "아데노신 급속 정맥 주사",
+   "동기화 심장율동전환",
+   "아미오다론 정맥 주사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 심전도에서 <b>RR 이 일정한 약 140회/분의 좁은 QRS 빈맥</b>이고 QRS 앞에 뚜렷한 P파가 보이지 않는다 — 발작성 상심실빈맥(대개 방실결절 재진입)이다. 갑자기 시작되고 갑자기 멈추던 과거력도 맞다. <b>혈압·의식이 유지되어 안정</b>하고 <b>변형 발살바법이 실패</b>했으므로 다음은 <b>아데노신 급속 정주</b>다.\n- 원리: <b>왜 아데노신이 듣는가</b>: 방실결절 재진입빈맥과 방실 회귀빈맥은 회로의 한 고리로 방실결절을 쓴다. 아데노신은 방실결절 세포의 A1 수용체에 붙어 칼륨 통로를 열고 칼슘 유입을 줄여, 몇 초 동안 방실결절 전도를 막는다. 고리가 한 번만 끊겨도 재진입이 멈춘다.<br> <b>왜 급속 정주인가</b>: 적혈구·내피세포가 아데노신을 매우 빨리 흡수해 반감기가 10초 미만이다. 그래서 심장에 가까운 굵은 정맥으로 빠르게 넣고 곧바로 식염수로 밀어야 한다(6 mg, 안 되면 12 mg).<br> <b>진단 도구로서</b>: 심방조동·심방빈맥처럼 방실결절이 회로에 없는 리듬이라면 아데노신이 리듬을 끊지 못하고 심실 반응만 잠시 줄여 숨은 조동파·P파를 드러낸다. 천식 환자는 기관지 수축을 일으킬 수 있어 비디하이드로피리딘 칼슘통로차단제를 대신 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">아데노신 — 정답</th><th>동기화 심장율동전환 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td><b>혈역학 안정</b>, 미주신경 자극 실패</td><td><b>불안정</b>: 저혈압·의식 저하·허혈성 흉통·급성 심부전</td></tr> <tr><td>작용</td><td>방실결절 일시 차단으로 회로 단절</td><td>전기로 모든 회로를 한 번에 탈분극</td></tr> <tr><td>필요한 것</td><td>정맥로, 심전도 감시</td><td>진정, 패드</td></tr> </tbody></table> 같은 좁은 QRS 빈맥이라도 처치를 정하는 것은 리듬이 아니라 혈역학이다 — 안정하면 미주신경 → 아데노신, 불안정하면 곧바로 동기화 전기충격.\n- 오답 이유:\n  - ① 디곡신은 효과가 몇 시간 걸려 재진입을 바로 끊지 못하며, 저혈압이 있는 심부전 환자의 심방세동 박동수 조절이라면 쓸 수 있다.\n  - ② 경정맥 심박조율은 증상이 있는 서맥(완전 방실차단 등)이 약물에 반응하지 않았다면 정답이 된다 — 이 리듬은 빈맥이다.\n  - ④ 동기화 심장율동전환은 저혈압·의식 저하·허혈성 흉통·급성 심부전이 있는 불안정 빈맥이거나 아데노신과 칼슘통로차단제가 모두 실패했다면 정답이 된다.\n  - ⑤ 아미오다론은 혈역학적으로 안정한 단형 심실빈맥이나 구조적 심질환의 심방세동 박동수 조절이 필요했다면 선택지가 된다.\n- 함정: 고령이라는 이유로 처음부터 전기충격을 고르는 것 — 처치를 가르는 것은 나이가 아니라 혈압·의식·흉통·심부전 같은 불안정 징후다.\n- 학습목표: 혈역학적으로 안정한 규칙적 좁은 QRS 빈맥에서 미주신경 자극이 실패하면 아데노신을 급속 정주하고, 불안정할 때만 동기화 심장율동전환을 한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Page RL, Joglar JA, Caldwell MA, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation. 2016;133(14):e506-e574 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8461 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도에서 <b>RR 이 일정한 약 140회/분의 좁은 QRS 빈맥</b>이고 QRS 앞에 뚜렷한 P파가 보이지 않는다 — 발작성 상심실빈맥(대개 방실결절 재진입)이다. 갑자기 시작되고 갑자기 멈추던 과거력도 맞다. <b>혈압·의식이 유지되어 안정</b>하고 <b>변형 발살바법이 실패</b>했으므로 다음은 <b>아데노신 급속 정주</b>다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 아데노신이 듣는가</b>: 방실결절 재진입빈맥과 방실 회귀빈맥은 회로의 한 고리로 방실결절을 쓴다. 아데노신은 방실결절 세포의 A1 수용체에 붙어 칼륨 통로를 열고 칼슘 유입을 줄여, 몇 초 동안 방실결절 전도를 막는다. 고리가 한 번만 끊겨도 재진입이 멈춘다.<br> <b>왜 급속 정주인가</b>: 적혈구·내피세포가 아데노신을 매우 빨리 흡수해 반감기가 10초 미만이다. 그래서 심장에 가까운 굵은 정맥으로 빠르게 넣고 곧바로 식염수로 밀어야 한다(6 mg, 안 되면 12 mg).<br> <b>진단 도구로서</b>: 심방조동·심방빈맥처럼 방실결절이 회로에 없는 리듬이라면 아데노신이 리듬을 끊지 못하고 심실 반응만 잠시 줄여 숨은 조동파·P파를 드러낸다. 천식 환자는 기관지 수축을 일으킬 수 있어 비디하이드로피리딘 칼슘통로차단제를 대신 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">아데노신 — 정답</th><th>동기화 심장율동전환 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td><b>혈역학 안정</b>, 미주신경 자극 실패</td><td><b>불안정</b>: 저혈압·의식 저하·허혈성 흉통·급성 심부전</td></tr> <tr><td>작용</td><td>방실결절 일시 차단으로 회로 단절</td><td>전기로 모든 회로를 한 번에 탈분극</td></tr> <tr><td>필요한 것</td><td>정맥로, 심전도 감시</td><td>진정, 패드</td></tr> </tbody></table> 같은 좁은 QRS 빈맥이라도 처치를 정하는 것은 리듬이 아니라 혈역학이다 — 안정하면 미주신경 → 아데노신, 불안정하면 곧바로 동기화 전기충격."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 디곡신은 효과가 몇 시간 걸려 재진입을 바로 끊지 못하며, 저혈압이 있는 심부전 환자의 심방세동 박동수 조절이라면 쓸 수 있다.\n② 경정맥 심박조율은 증상이 있는 서맥(완전 방실차단 등)이 약물에 반응하지 않았다면 정답이 된다 — 이 리듬은 빈맥이다.\n④ 동기화 심장율동전환은 저혈압·의식 저하·허혈성 흉통·급성 심부전이 있는 불안정 빈맥이거나 아데노신과 칼슘통로차단제가 모두 실패했다면 정답이 된다.\n⑤ 아미오다론은 혈역학적으로 안정한 단형 심실빈맥이나 구조적 심질환의 심방세동 박동수 조절이 필요했다면 선택지가 된다."
+   },
+   {
+    "k": "함정",
+    "v": "고령이라는 이유로 처음부터 전기충격을 고르는 것 — 처치를 가르는 것은 나이가 아니라 혈압·의식·흉통·심부전 같은 불안정 징후다."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈역학적으로 안정한 규칙적 좁은 QRS 빈맥에서 미주신경 자극이 실패하면 아데노신을 급속 정주하고, 불안정할 때만 동기화 심장율동전환을 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 256: Paroxysmal Supraventricular Tachycardias · Page RL, Joglar JA, Caldwell MA, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation. 2016;133(14):e506-e574 · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8461 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "미주신경 자극이 실패한 안정 발작성 상심실빈맥에는 아데노신을 급속 정주한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "혈압 124/76 mmHg, 의식 명료, 흉통·호흡곤란 없음 — 불안정 징후가 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 규칙적인 약 140회/분 좁은 QRS 빈맥, P파 안 보임 → 발작성 상심실빈맥",
+    "혈압·의식 유지, 흉통·호흡곤란 없음 → 혈역학적으로 안정",
+    "변형 발살바법 실패 + 천식 없음 → 아데노신 급속 정주"
+   ],
+   "key": [
+    {
+     "item": "영상: RR 일정한 약 140회/분의 좁은 QRS 빈맥, 뚜렷한 P파 없음",
+     "why": "발작성 상심실빈맥",
+     "also": []
+    },
+    {
+     "item": "갑자기 시작된 두근거림",
+     "why": "재진입 빈맥의 급작 발생",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "혈압 124/76 mmHg",
+     "why": "안정 — 전기충격 적응 아님",
+     "also": []
+    },
+    {
+     "item": "가슴 통증과 호흡곤란은 없고 의식은 명료하다",
+     "why": "불안정 징후 없음",
+     "also": []
+    },
+    {
+     "item": "변형 발살바법을 두 번 시행했으나",
+     "why": "1단계 실패 — 다음 단계로",
+     "also": []
+    },
+    {
+     "item": "천식은 없다",
+     "why": "아데노신의 상대 금기 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "1년에 두세 번 있었으나 몇 분 안에 저절로 멈췄다",
+     "why": "발작성 경과를 뒷받침하지만 처치 결정에는 혈역학이 우선",
+     "also": []
+    }
+   ],
+   "summary": "규칙적인 좁은 QRS 빈맥(발작성 상심실빈맥)이고 혈역학적으로 안정하며 변형 발살바법이 실패했다. 아데노신을 급속 정주한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈압이 80/50 mmHg 로 떨어지고 의식이 흐려졌다면 동기화 심장율동전환"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0795.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/08000/#files-panel",
+   "asset_id": "PTBXL-08461",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 8461"
+  },
+  "run_id": "20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0794",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 건강검진에서 심전도 이상을 들은 여성",
+  "type": "심전도 판독 — 건강검진에서 심전도 이상을 들은 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-25",
+  "vignette": "63세 여자가 건강검진에서 심전도 이상이 있다는 말을 듣고 왔다. 어지럼, 실신, 가슴 통증은 없고 계단을 오를 때 숨이 차지 않는다. 고혈압으로 암로디핀을 먹고 있으며 베타차단제나 디곡신은 먹지 않는다. 혈압 128/78 mmHg, 맥박 84회/분이고 규칙적이다. 혈청 칼륨 4.2 mEq/L, 갑상샘자극호르몬은 참고치 이내이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "1도 방실차단",
+   "모비츠 I형 방실차단",
+   "모비츠 II형 방실차단",
+   "완전 방실차단",
+   "방실접합부 리듬"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)에서 RR 이 약 0.70초로 일정한 <b>동리듬 약 85회/분</b>이다. <b>모든 P파 뒤에 QRS 가 따라오고 빠진 박동이 없으며</b>, P 시작에서 QRS 시작까지가 큰 칸 한 개를 넘어 <b>약 0.24초로 매 박동 같다</b>. QRS 는 좁다. PR 이 0.20초를 넘으면서 일정하고 모든 P가 전도되므로 <b>1도 방실차단</b>이다.\n- 원리: <b>PR 간격이 재는 것</b>: PR 간격은 심방 탈분극이 시작해 방실결절·히스속·각지를 지나 심실이 흥분하기 시작할 때까지의 시간이다. 이 가운데 가장 오래 걸리는 곳이 방실결절(일부러 전도를 늦춰 심방 수축이 끝나게 한다)이므로, PR 연장은 대개 방실결절의 전도 지연이다.<br> <b>「차단」이지만 막히지 않는다</b>: 1도 방실차단은 이름과 달리 모든 흥분이 전도되고 단지 늦게 도착할 뿐이다. 그래서 박동이 빠지지 않고 맥박은 규칙적이다. 2도부터는 일부 P가 심실로 가지 못하고, 3도는 심방과 심실이 따로 뛴다.<br> <b>임상 의미</b>: 좁은 QRS 의 단독 1도 방실차단은 대개 무증상이며 치료가 필요 없다. 방실결절을 늦추는 약(베타차단제·비디하이드로피리딘 칼슘통로차단제·디곡신)·고칼륨혈증·갑상샘저하증 같은 가역 원인을 확인하고, PR 이 0.30초를 넘어 증상이 있거나 넓은 QRS 와 함께 있으면 더 자세히 본다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">1도 방실차단 — 정답</th><th>2도 모비츠 I형 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>PR 간격</td><td><b>0.20초 넘게 길지만 매 박동 같다</b></td><td>박동마다 점점 길어진다</td></tr> <tr><td>빠진 박동</td><td><b>없음</b> — 모든 P 뒤 QRS</td><td>주기적으로 P 뒤 QRS 가 빠진다</td></tr> <tr><td>RR 간격</td><td>규칙적</td><td>무리 지어 뛴다(그룹 박동)</td></tr> </tbody></table> 「PR 이 길다」만 보고 끝내지 말고 「빠진 P가 있는가, PR 이 변하는가」를 리듬 스트립 끝까지 따라가면 1도·2도를 어느 방향으로 물어도 가를 수 있다.\n- 오답 이유:\n  - ② 모비츠 I형은 PR 이 박동마다 점점 길어지다가 P 뒤의 QRS 하나가 빠지는 주기가 리듬 스트립에 반복되었다면 정답이 된다.\n  - ③ 모비츠 II형은 PR 이 일정하다가 예고 없이 P 뒤의 QRS 가 갑자기 빠지고 흔히 QRS 가 넓다면 정답이 된다.\n  - ④ 3도 방실차단은 P파와 QRS 가 서로 무관하게 각자의 일정한 간격으로 뛰고 심실 박동이 느리다면 정답이 된다.\n  - ⑤ 방실접합부 리듬은 QRS 앞의 P파가 없거나 QRS 뒤에 역행성 P파가 보이고 박동수가 40~60회/분이었다면 정답이 된다.\n- 함정: PR 연장을 보고 바로 모비츠 I형으로 가는 것 — 리듬 스트립 끝까지 빠진 QRS 가 없고 PR 이 변하지 않으면 1도다.\n- 학습목표: 모든 P파 뒤에 QRS 가 오고 PR 간격이 0.20초를 넘어 일정하게 길면 1도 방실차단으로 판독하고 2도 방실차단(모비츠 I·II)과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4440 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)에서 RR 이 약 0.70초로 일정한 <b>동리듬 약 85회/분</b>이다. <b>모든 P파 뒤에 QRS 가 따라오고 빠진 박동이 없으며</b>, P 시작에서 QRS 시작까지가 큰 칸 한 개를 넘어 <b>약 0.24초로 매 박동 같다</b>. QRS 는 좁다. PR 이 0.20초를 넘으면서 일정하고 모든 P가 전도되므로 <b>1도 방실차단</b>이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>PR 간격이 재는 것</b>: PR 간격은 심방 탈분극이 시작해 방실결절·히스속·각지를 지나 심실이 흥분하기 시작할 때까지의 시간이다. 이 가운데 가장 오래 걸리는 곳이 방실결절(일부러 전도를 늦춰 심방 수축이 끝나게 한다)이므로, PR 연장은 대개 방실결절의 전도 지연이다.<br> <b>「차단」이지만 막히지 않는다</b>: 1도 방실차단은 이름과 달리 모든 흥분이 전도되고 단지 늦게 도착할 뿐이다. 그래서 박동이 빠지지 않고 맥박은 규칙적이다. 2도부터는 일부 P가 심실로 가지 못하고, 3도는 심방과 심실이 따로 뛴다.<br> <b>임상 의미</b>: 좁은 QRS 의 단독 1도 방실차단은 대개 무증상이며 치료가 필요 없다. 방실결절을 늦추는 약(베타차단제·비디하이드로피리딘 칼슘통로차단제·디곡신)·고칼륨혈증·갑상샘저하증 같은 가역 원인을 확인하고, PR 이 0.30초를 넘어 증상이 있거나 넓은 QRS 와 함께 있으면 더 자세히 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">1도 방실차단 — 정답</th><th>2도 모비츠 I형 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>PR 간격</td><td><b>0.20초 넘게 길지만 매 박동 같다</b></td><td>박동마다 점점 길어진다</td></tr> <tr><td>빠진 박동</td><td><b>없음</b> — 모든 P 뒤 QRS</td><td>주기적으로 P 뒤 QRS 가 빠진다</td></tr> <tr><td>RR 간격</td><td>규칙적</td><td>무리 지어 뛴다(그룹 박동)</td></tr> </tbody></table> 「PR 이 길다」만 보고 끝내지 말고 「빠진 P가 있는가, PR 이 변하는가」를 리듬 스트립 끝까지 따라가면 1도·2도를 어느 방향으로 물어도 가를 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 모비츠 I형은 PR 이 박동마다 점점 길어지다가 P 뒤의 QRS 하나가 빠지는 주기가 리듬 스트립에 반복되었다면 정답이 된다.\n③ 모비츠 II형은 PR 이 일정하다가 예고 없이 P 뒤의 QRS 가 갑자기 빠지고 흔히 QRS 가 넓다면 정답이 된다.\n④ 3도 방실차단은 P파와 QRS 가 서로 무관하게 각자의 일정한 간격으로 뛰고 심실 박동이 느리다면 정답이 된다.\n⑤ 방실접합부 리듬은 QRS 앞의 P파가 없거나 QRS 뒤에 역행성 P파가 보이고 박동수가 40~60회/분이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "PR 연장을 보고 바로 모비츠 I형으로 가는 것 — 리듬 스트립 끝까지 빠진 QRS 가 없고 PR 이 변하지 않으면 1도다."
+   },
+   {
+    "k": "학습목표",
+    "v": "모든 P파 뒤에 QRS 가 오고 PR 간격이 0.20초를 넘어 일정하게 길면 1도 방실차단으로 판독하고 2도 방실차단(모비츠 I·II)과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 252: The Bradyarrhythmias: Disorders of the Atrioventricular Node · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4440 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "모든 P 뒤에 QRS 가 오고 PR 이 약 0.24초로 일정하게 길면 1도 방실차단이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "리듬 스트립 전체에서 PR 이 변하지 않고 빠진 QRS 가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: RR 일정 약 85회/분, 모든 P 뒤 QRS → 전도 누락 없는 동리듬",
+    "영상: PR 약 0.24초로 매 박동 같음 → 1도 방실차단"
+   ],
+   "key": [
+    {
+     "item": "영상: II 리듬 스트립 PR 약 0.24초, 매 박동 같음",
+     "why": "0.20초 초과의 일정한 PR 연장",
+     "also": []
+    },
+    {
+     "item": "영상: 모든 P 뒤에 QRS, 빠진 박동 없음",
+     "why": "2도·3도 차단 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 84회/분이고 규칙적",
+     "why": "접합부 리듬·그룹 박동 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "베타차단제나 디곡신은 먹지 않는다",
+     "why": "약물성 원인 확인",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.2 mEq/L",
+     "why": "고칼륨혈증 같은 가역 원인 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압으로 암로디핀을 먹고",
+     "why": "디하이드로피리딘은 방실결절 전도에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "리듬이 규칙적이고 모든 P 뒤에 QRS 가 오며 PR 이 약 0.24초로 일정하게 길다. 1도 방실차단이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "PR 이 점점 길어지다 QRS 하나가 빠지는 주기가 반복되었다면 모비츠 I형"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0794.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/04000/#files-panel",
+   "asset_id": "PTBXL-04440",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4440"
+  },
+  "run_id": "20261125T202519Z_일일심전도_2026-11-26_3units_3q_ca61ade6",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0789",
   "exam": "imaging",
   "style": "kmle_style",
