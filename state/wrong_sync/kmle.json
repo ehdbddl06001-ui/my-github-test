@@ -1868,8 +1868,29 @@
    "date": "2026-11-26",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1961": {
+   "id": "kmle-2026-1961",
+   "exam": "kmle",
+   "subject": "Endocrinology",
+   "step": "",
+   "type": "Six Months of Pounding Headaches, Palpitations and Sweating Spells in a Woman in Her Late Thirties",
+   "style": "",
+   "modality": "",
+   "question": "다음으로 시행할 검사로 가장 적절한 것은?",
+   "chosen": 1,
+   "chosenText": "부신 조영증강 CT",
+   "answer": 4,
+   "answerText": "혈장 유리 메타네프린",
+   "coreNote": "",
+   "differ": "",
+   "decision": "두통·두근거림·발한 발작과 발작성 고혈압, 체중 감소가 있어 갈색세포종을 의심한다. 영상보다 생화학 확진이 먼저이고, 가장 민감한 첫 검사는 혈장 유리 메타네프린이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T23:27:09.049Z"
+ "updated": "2026-11-25T23:28:19.466Z"
 }
