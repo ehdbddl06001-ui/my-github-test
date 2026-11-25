@@ -1763,8 +1763,29 @@
    "date": "2026-11-25",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1982": {
+   "id": "kmle-2026-1982",
+   "exam": "kmle",
+   "subject": "Pediatrics",
+   "step": "",
+   "type": "Two Large Painless Maroon Stools in a Pale Two-year-old Boy Who Is Otherwise Playing",
+   "style": "",
+   "modality": "",
+   "question": "진단을 위해 가장 적절한 검사는?",
+   "chosen": 2,
+   "chosenText": "공기 정복 관장",
+   "answer": 0,
+   "answerText": "99mTc-과테크네튬산염 스캔",
+   "coreNote": "",
+   "differ": "",
+   "decision": "2세 아이의 통증 없는 많은 양의 검붉은 혈변과 빈혈은 메켈 게실의 이소성 위점막 궤양 출혈을 먼저 생각한다. 통증·덩이가 없고 초음파에서 장겹침증 소견이 없으며, 위점막에 모이는 99mTc-과테크네튬산염 스캔으로 진단한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-25",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T12:17:39.068Z"
+ "updated": "2026-11-25T12:24:18.519Z"
 }
