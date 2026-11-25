@@ -1,0 +1,621 @@
+# 국내 가이드라인 vs 해리슨 22판 원문 대조 — 호흡기내과
+# 형식: content/outline/kr_vs_harrison/_template.yaml · 검증: python pipelines/kr_guidelines.py --check
+# verified: text = 두 원문(해리슨 22판 H22_<장> 문서의 인쇄쪽 표지 + 국내 지침 PDF 인쇄쪽)을 이번 대조에서 직접 읽은 항목만.
+# 국내 지침 원문: 드라이브 `_가이드라인` 폴더(파일 ID 는 content/outline/kr_guidelines.json).
+# 폐암 검진 항목(screening-*)의 국내 원문은 폐암검진 질지침(보건복지부·국립암센터, 2021) — kr-kalc-lung-cancer 트랙의 drive_files 에 있다.
+# 천식 중증 생물학적 제제 기준(IgE ≥76, 호산구 ≥300/≥400, 연 3~4회 악화)은 국내 급여 기준이며 지침 본문(p.153 주1~4)이 임상시험 기준(연 2회)과 다르다고 지적한다.
+subject: 호흡기내과
+subject_slug: pulmonology
+updated: '2026-11-25'
+items:
+- id: diff.pulm.tuberculosis.ltbi-regimen-preference
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1402]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.334, p.337
+  diff_type: first_line
+  topic: 잠복결핵감염 치료 처방의 우선순위
+  harrison_says: 'TPT 처방(Table 183-6): isoniazid 6 or 9 months, rifapentine plus isoniazid 3 months(주 1회 isoniazid 900 mg + rifapentine 900 mg), isoniazid plus rifampin 3 months, rifampin alone 4 months, rifapentine plus isoniazid 1 month(13세 초과), levofloxacin 6 months. ''The most widely used has been that based on isoniazid alone at a daily dose of 5 mg/kg (up to 300 mg/d) for 9 months.'' 3HP는 ''as effective as the standard 9-month isoniazid regimen''이며 완료율이 더 높고(82% vs 69%) 간독성이 적다(0.4% vs 2.7%). 3HP는 2세 미만 소아·임신부에는 권고하지 않는다.'
+  kr_says: 잠복결핵감염 표준치료는 리팜핀을 포함한 단기요법인 리팜핀 4개월 요법(4R, IA), 3개월 이소니아지드/리팜핀 요법(3HR, IIA)을 권고하나, 이소니아지드 9개월 요법(9H, IB)도 선택적으로 고려할 수 있다(p.334). 국내에는 아직 리파펜틴이 도입되지 않아 4R·3HR 을 주치료처방으로 우선 권고하고 약제 상호작용·부작용이 우려되는 환자 등에서 9H 등을 선택적으로 고려하며, 9H 를 완료할 수 없으면 6H 를 고려할 수 있으나 치료효과가 낮을 수 있다(p.337-338).
+  kmle_rule: KMLE 문항·정리본은 잠복결핵감염 1차 처방을 4R 또는 3HR(9H 는 선택적 대안)로 하고, 리파펜틴 처방(3HP·1HP)은 국내 미도입이라 정답으로 두지 않는다.
+  usmle_rule: USMLE 문항은 3HP·4R·3HR 을 짧은 1차 TPT 로, 6–9H 를 대안으로 보는 해리슨(WHO·CDC) 기준을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.ltbi-test-choice-bcg
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1394]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.324-326
+  diff_type: algorithm
+  topic: 정상 면역 성인의 잠복결핵 검사 선택(TST vs IGRA)과 BCG
+  harrison_says: In the United States, an IGRA is preferred to the TST for most persons over the age of 5 years who are being screened for TB infection. ... the TST is preferred for TB infection testing of children aged <5 years. In Canada and some European countries, a two-step approach for those with positive TSTs—i.e., an initial TST followed by an IGRA—is often recommended. However, a TST may boost an IGRA response if the interval between the two tests exceeds 3 days.
+  kr_says: 영아 때 BCG를 1회 접종한 정상 면역 성인은 TST 또는 IGRA로 잠복결핵감염을 진단하고, BCG를 2회 이상 또는 영아 이후 추가 접종 받은 정상 면역 성인은 IGRA 단독으로 진단한다(IIA, p.324). BCG 접종력이 불확실하면 IGRA 단독(p.326). BCG 2회 이상 접종 성인이 TST 양성이면 IGRA 를 추가할 수 있으나 TST 후 2–4주부터 boosting 이 생기므로 1주일 정도 이내 간격으로 시행하고, TST 15mm 이상이면 IGRA 추가 없이 잠복결핵감염으로 진단할 수 있다(p.325).
+  kmle_rule: KMLE 문항·정리본은 BCG 접종 횟수로 검사를 고르는 국내 흐름(영아 1회 → TST 또는 IGRA, 2회 이상·불확실 → IGRA 단독)을 적용한다.
+  usmle_rule: USMLE 문항은 5세 초과는 IGRA 우선, 5세 미만은 TST 우선이라는 해리슨(미국) 기준을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.ltbi-immunocompromised-tst-cutoff
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1401]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.324, p.327
+  diff_type: threshold
+  topic: 면역저하 성인의 잠복결핵 검사 순서와 TST 양성 기준
+  harrison_says: 'Table 183-5: HIV-infected persons ≥5 mm; recent contacts ≥5 mm; organ transplant recipients ≥5 mm; fibrotic lesions consistent with old TB ≥5 mm; persons who are immunosuppressed—e.g., due to the use of glucocorticoids or tumor necrosis factor α inhibitors ≥5 mm; recent immigrants, injection drug users, high-risk congregate settings, children <5 years ≥10 mm; low-risk persons ≥15 mm. (p.1394) for individuals at high risk of progression to active TB (e.g., PLWH), either test—or, to optimize sensitivity, both tests—may be used.'
+  kr_says: 면역저하 성인에서는 IGRA 단독 혹은 IGRA, TST 병합검사법을 사용해서 잠복결핵감염을 진단한다(IIA, p.324). TST 를 먼저 검사하는 것은 위음성 가능성이 높아 권고하지 않으며, IGRA 양성이면 바로 진단하고 음성이면 TST 를 추가한다. 이때 TST는 BCG 접종력에 관계없이 경결 크기 10mm를 기준으로 해서 양성 여부를 판단한다(HIV 감염인은 5mm 기준)(p.327).
+  kmle_rule: KMLE 문항·정리본은 면역저하 성인에서 IGRA 먼저(음성이면 TST 추가)·TST 10mm(HIV 만 5mm) 기준을 적용한다.
+  usmle_rule: USMLE 문항은 HIV·장기이식·스테로이드/TNF 억제제·최근 접촉자 모두 TST ≥5 mm 를 양성으로 보는 해리슨 Table 183-5 기준을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.ltbi-testing-targets
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1402]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.299
+  diff_type: screening
+  topic: 잠복결핵감염 검사 대상자
+  harrison_says: The WHO recommends systematic testing for infection and TPT for ... adults, adolescents and children older than 12 months living with HIV; infants with HIV aged <12 months who are contacts of persons with TB; all household contacts of patients with infectious pulmonary TB including children <5 years of age; patients with silicosis, patients starting anti-TNF treatment, patients on dialysis, and patients preparing for organ or hematologic transplantation. In addition, testing and TPT may be considered for ... prisoners, health care workers, recent immigrants from high-TB-burden countries, and homeless persons who use drugs.
+  kr_says: '시행한다: 전염성 결핵 환자의 접촉자(IA), HIV 감염인(IA), 장기 이식으로 면역억제제 복용 중·예정자(IA), TNF 길항제 치료 예정(IA), 그 밖의 생물학적 제제·소분자 억제제 치료 예정(IIA), 과거 결핵치료력 없이 흉부X선에서 자연 치유된 결핵병변(IA), 규폐증(IA). 권고한다: 장기간 스테로이드 사용 자가면역 질환자(IIB), 투석 중인 말기콩팥병(IIB), 혈액암(IIB), 의료기관 종사자(IIB). 일부 고위험군 중심으로 고려한다: 당뇨병(IIC), 고형암(IIC), 위절제술 시행·예정자(IIC).'
+  kmle_rule: KMLE 문항·정리본은 국내 3단계(시행 IA·IIA / 권고 IIB / 고려 IIC) 대상 목록을 적용한다 — 당뇨병·고형암·위절제는 '고려' 대상이다.
+  usmle_rule: USMLE 문항은 HIV·가족 접촉자·규폐증·anti-TNF·투석·이식 예정자를 검사·TPT 대상으로 보는 해리슨(WHO) 목록을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.ltbi-mdr-contact
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1403]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.342-343
+  diff_type: first_line
+  topic: 다제내성·단독내성 결핵 접촉자의 잠복결핵 치료
+  harrison_says: Drug selection should be based on the drug susceptibility profile of the index case. WHO recommends daily levofloxacin for 6 months in people exposed to MDR-TB. Some studies are currently investigating the role of delamanid and bedaquiline as TPT.
+  kr_says: 아직 무작위 대조군 연구가 없어 진행 중인 6개월 레보플록사신 연구(V-QUIN MDR, TB-CHAMP)·델라마니드 연구(PHOENIx) 결과에 따라 추후 권고가 결정될 수 있다. 따라서 다제내성결핵 접촉자의 잠복결핵감염인 경우 전문가에게 의뢰하는 것이 바람직하다. 또한 다제내성결핵 감염자는 치료 여부와 관계없이 최소 2년간 추적하여 발병 여부를 감시하여야 한다(p.342). 이소니아지드 단독 내성 환자의 접촉자는 4R로 치료하고, 리팜핀 단독 내성 환자의 접촉자는 9H로 치료할 수 있다(p.343).
+  kmle_rule: KMLE 문항·정리본은 다제내성결핵 접촉 잠복결핵은 전문가 의뢰 + 최소 2년 추적, INH 단독내성 접촉자는 4R, RIF 단독내성 접촉자는 9H 를 적용한다.
+  usmle_rule: USMLE 문항은 MDR-TB 접촉자 TPT 로 levofloxacin 6개월(WHO)을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.ds-tb-continuation-ethambutol
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1395]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.43-44
+  diff_type: algorithm
+  topic: 감수성결핵 표준처방과 유지기 에탐부톨
+  harrison_says: 'The treatment regimen of choice for virtually all forms of drug-susceptible TB in adults consists of a 2-month initial (intensive) phase of isoniazid, rifampin, pyrazinamide, and ethambutol followed by a 4-month continuation phase of isoniazid and rifampin (2HRZE/4HR). ... Treatment should be given daily throughout the course. Table 183-4: Intolerance to Z — 2 HRE / 7 HR.'
+  kr_says: '감수성결핵 치료의 표준처방은 2HRZE/4HR이다. 약제감수성검사 결과 이소니아지드 및 리팜핀에 감수성 결핵으로 확인된 경우에는 에탐부톨을 중단할 수 있다(IIB, p.43). 감수성 결과가 확보되기 전까지 4제(HRZE)로 시작하고 HR 감수성이 확인된 시점부터 에탐부톨을 중단하나, 약제감수성검사 결과가 확인되지 않았거나 균음성 결핵인 경우에는 에탐부톨을 치료 종료 시까지 사용한다. 표4: 감수성결핵이 추정되는 경우 우선권고안 HRZE 2개월 → HRE 4개월, 치료 시작 시점에 감수성 확인 시 HRZ 2개월 → HR 4개월; 피라진아미드를 못 쓰면 9HRE. 국내는 치료 전기간 매일 복용을 권고한다(p.44).'
+  kmle_rule: KMLE 문항·정리본은 감수성 결과가 없거나 균음성이면 유지기까지 에탐부톨을 쓰고(HRZE 2개월 → HRE 4개월), HR 감수성 확인 시 에탐부톨을 끊는 국내 흐름을 적용한다.
+  usmle_rule: USMLE 문항은 2HRZE/4HR(유지기 HR)을 표준으로 하는 해리슨 기준을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.ds-tb-4month-rifapentine-moxifloxacin
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1396]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.45-46
+  diff_type: first_line
+  topic: 감수성결핵 4개월 리파펜틴-목시플록사신 단기요법
+  harrison_says: Study 31/A5349 showed that a 4-month daily regimen that included isoniazid, pyrazinamide (for the first 2 months only), rifapentine at a daily dose of 1200 mg, and moxifloxacin at a daily dose of 400 mg was noninferior to the standard 6-month regimen ... This option (2HPMZ/2HPM) is now recommended by the WHO and CDC as an alternative for patients aged 12 years or older, including PLWH ... should not be used ... in patients with body weight <40 kg; children aged <12 years; ... severe extrapulmonary or disseminated forms of TB; PLWH with a CD4+ count of <100/μL, pregnant, breastfeeding or postpartum women.
+  kr_says: Study 31/A5439에서 2HPMZ/2HPM 이 6개월 표준요법과 비교하여 효과에 있어 열등하지 않음이 입증되어 세계보건기구는 2022년 4개월 단기치료요법을 조건부 권장사항으로 권고하였다. 그러나 국내에서는 2016년 리파펜틴 임상연구가 아나필락시스 사례로 조기 종료되었고, 현재 국내에서는 리파펜틴이 도입되지 않았고 안전성에 대한 우려가 해소되지 않아 세계보건기구에서 권고한 4개월 단기요법을 수용하기 어렵다(p.46).
+  kmle_rule: KMLE 문항·정리본은 감수성결핵 치료를 6개월 표준처방으로만 두고 4개월 2HPMZ/2HPM 은 국내 미수용 처방으로 다룬다.
+  usmle_rule: USMLE 문항은 12세 이상(40 kg 이상, 중증 폐외·임신 제외)에서 2HPMZ/2HPM 을 대안으로 인정하는 해리슨(WHO·CDC) 기준을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.mdr-fq-susceptible-short-regimen
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1399]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.103-104, p.110
+  diff_type: first_line
+  topic: 퀴놀론 감수성 다제내성결핵의 단기요법 선택
+  harrison_says: 'the WHO is now recommending four approaches to treat MDR/RR-TB: (1) a 6-month, fully oral regimen composed of bedaquiline, pretomanid, linezolid (600 mg) and moxifloxacin; (2) a 6-month oral regimen consisting of bedaquiline, delamanid, and linezolid (600 mg), plus levofloxacine and clofazimine; (3) different 9-months oral bedaquiline-containing regimens; and (4) an individualized longer regimen of at least 18 months’ duration. ... 9-month regimens ... in order of preference: (i) BLMZ; (ii) BLLfxCfzZ; and (iii) BDLLfxZ.'
+  kr_says: 6개월 BPaLM 요법 또는 9개월 MDR-END 요법(레보플록사신, 델라마니드, 리네졸리드, 피라진아미드)을 사용하는 것을 권고한다(IA). 18-20개월 장기요법은 이 둘에 적합하지 않은 환자에게 사용한다(IA)(p.103). 두 요법 중 우선 사용을 권고하는 요법은 따로 없다. 9개월 베다퀼린 포함 단기요법은 국내 기저 내성률이 높아(적합 환자 25%) 퀴놀론 감수성 다제내성결핵의 표준 치료로는 권고하지 않으며, 전체 약제 내성이 배제되면 시작할 수 있다(p.104, p.110).
+  kmle_rule: KMLE 문항·정리본은 퀴놀론 감수성 MDR-TB 의 1차를 6개월 BPaLM 또는 9개월 MDR-END(국내 연구 처방)로 하고, 9개월 베다퀼린 포함 요법은 표준이 아니라고 본다.
+  usmle_rule: USMLE 문항은 BPaLM·BDLLfxCfz(6개월) → 9개월 베다퀼린 포함 요법 → 18개월 이상 개별 요법 순의 해리슨(WHO 2024) 기준을 적용한다 — MDR-END 는 해리슨에 없다.
+  verified: text
+- id: diff.pulm.tuberculosis.mdr-bpalm-bpal-eligibility
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1399]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.105, p.111-112
+  diff_type: same
+  topic: BPaLM·BPaL 6개월 요법 적응증
+  harrison_says: This regimen is recommended for (1) patients with MDR/RR-TB or pre-XDR-TB aged 14 years or older regardless of HIV status, (2) all forms of disease except for disseminated, central nervous system, and osteoarticular TB, and (3) patients with no previous or <1 month exposure to bedaquiline, pretomanid and linezolid ... Pregnant and breast-feeding women should not be administered this regimen. DST for fluoroquinolones should be obtained at the start of treatment and guide the decision to retain moxifloxacin in the regimen or administer only the other three drugs. (p.1395 Table 183-4) Linezolid is given at the dosage of 600 mg daily.
+  kr_says: '6개월 BPaLM 요법 대상: 모든 형태의 폐결핵, 중추신경계·골/관절·파종성 결핵을 제외한 모든 형태의 폐외 결핵, 14세 이상의 소아청소년과 성인, 이전 1개월 미만의 베다퀼린·프레토마니드·델라마니드·리네졸리드 사용력, 임신이나 수유 상태가 아님, HIV 감염 여부에 상관없음(p.105). 리네졸리드 600mg 매일, 총 26주. 퀴놀론 내성 다제내성결핵은 6개월 BPaL 요법을 사용하는 것을 권고한다(IIA, p.111); 리네졸리드를 26주간 하루 600mg 투여(p.112).'
+  kmle_rule: KMLE 문항·정리본은 BPaLM(퀴놀론 내성이면 BPaL)을 14세 이상·비임신·CNS/골관절/파종성 제외·HIV 무관·리네졸리드 600mg 26주 기준으로 적용한다.
+  usmle_rule: USMLE 문항도 같은 적응증(≥14세, CNS·골관절·파종성 제외, 임신·수유 제외, 퀴놀론 내성 시 M 제외)을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.isolation-release-criteria
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1400]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.374, p.383-384
+  diff_type: threshold
+  topic: 전염성 소실·격리 해제 기준
+  harrison_says: The primary way to prevent TB is to diagnose and isolate infectious cases rapidly and to administer appropriate treatment until patients are rendered noninfectious (usually 2–4 weeks after the start of proper treatment). (p.1403) respiratory isolation of persons with suspected TB until they are proven to be noninfectious.
+  kr_says: 격리 치료 중인 결핵환자의 격리 해제를 위해서는 최소 2주간 효과적인 항결핵제로 치료를 시행하여야 하고, 임상적으로 호전을 보여야 하며, 도말 양성 결핵환자는 3회 추구 객담 도말검사에서 항산균이 검출되지 않거나 배양검사에서 음성이 확인되어야 한다(IIIA, p.383) — 연속 3회 이상(8시간 이상 간격, 최소 한 번은 아침 객담)(p.384). 임상소견이 호전되어 퇴원 가능하면 도말 음전 전이라도 조건(전담간호사 연계, 집에 6세 미만 소아·면역억제 환자 없음, 환기되는 독립 공간)을 만족하면 재택 격리치료 할 수 있다(IIIB, p.384). 전염성 소실 시기는 2주 이상 효과적인 항결핵제 복용 + 호흡기 증상 소실 + 객담 도말 음전(p.374).
+  kmle_rule: KMLE 문항·정리본은 격리 해제를 '효과적 치료 2주 이상 + 임상 호전 + (도말 양성이면) 연속 3회 도말 음성 또는 배양 음성'으로 적용한다.
+  usmle_rule: USMLE 문항은 적절한 치료 시작 후 대개 2–4주에 비전염성이 된다는 해리슨 서술과 '비전염성이 증명될 때까지 호흡기 격리' 원칙을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.contact-window-period
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1401]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.375-376
+  diff_type: algorithm
+  topic: 접촉자 첫 검사 음성(창기간) 처리
+  harrison_says: 'Table 183-5 footnote a: Tuberculin-negative contacts, especially children, should receive prophylaxis for 2–3 months after contact ends and should then undergo repeat tuberculin skin testing (TST). Those whose results remain negative should discontinue prophylaxis. HIV-infected contacts should receive a full course of treatment regardless of TST results. (p.1402) infants and children <5 years of age who were in contact with infectious cases should be offered TPT even in the absence of a positive test for TB infection.'
+  kr_says: '결핵감염검사는 마지막 접촉 후 8주까지 음성일 수 있다. 4주-24개월 미만의 소아, HIV 감염자, 장기이식 후 면역억제제 사용자, TNF 길항제 사용자(결핵발병 고위험군)는 마지막 접촉 8주 전이면 초기 검사 음성이라도 잠복결핵감염 치료를 시행하고 8주 후 재검해 음성이면 중단, 양성이면 계속한다. 고위험군을 제외한 접촉자는 초기 음성이면 치료하지 않고 8주 후 재검해 음성이면 경과관찰, 양성이면 치료를 시작한다(p.376, 그림12: HIV 감염인은 음성이라도 치료 유지). 접촉자 조사 대상은 활동성 결핵이 아니면 잠복결핵감염 검사를 시행하고 양성이면 치료한다(p.375).'
+  kmle_rule: KMLE 문항·정리본은 마지막 접촉 8주 기준 재검, 고위험군(4주-24개월 소아·HIV·이식·TNF 길항제)만 음성이어도 먼저 치료하는 국내 흐름을 적용한다.
+  usmle_rule: USMLE 문항은 음성 접촉자(특히 5세 미만 소아)는 접촉 종료 후 2–3개월 예방치료 뒤 TST 재검, HIV 접촉자는 결과와 무관하게 전 과정 치료하는 해리슨 기준을 적용한다.
+  verified: text
+- id: diff.pulm.tuberculosis.bcg-policy
+  slot: h178
+  h22_chapter: 183
+  h22_cite: '[[harrison-22: 183장 p.1401]]'
+  kr_guideline_id: kr-kdca-tb-2024
+  kr_cite: 결핵 진료지침 제5판(2024, 결핵진료지침 개정위원회·질병관리청) p.289-290
+  diff_type: algorithm
+  topic: BCG 접종 정책
+  harrison_says: BCG vaccine is recommended for routine use at birth in countries or among populations with high TB prevalence. However, because of the low risk of transmission of TB in the United States and other high-income countries, the variability in protection afforded by BCG, and its impact on the TST, the vaccine is not recommended for general use. HIV-infected adults and children should not receive BCG vaccine.
+  kr_says: 생후 4주 이내의(생후 34일까지) 모든 신생아에 대해서 비씨지 접종을 시행한다(IA). 면역 기능 저하, HIV 감염, 임신, TST 양성자에서는 비씨지 접종을 시행하지 않는다(p.289). 접종이 지연된 경우 생후 3개월 미만까지는 TST 확인 없이 접종하고, 생후 3개월 이상부터는 TST 음성을 확인 후 접종한다(p.290).
+  kmle_rule: KMLE 문항·정리본은 생후 4주 이내 모든 신생아 BCG(IA), HIV·면역저하·임신·TST 양성은 금기, 3개월 이상 지연 시 TST 음성 확인 후 접종을 적용한다.
+  usmle_rule: USMLE 문항은 미국에서는 BCG 를 일반 접종하지 않고(고유병 국가에서만 출생 시 접종), HIV 감염자에게 금기라는 해리슨 기준을 적용한다.
+  verified: text
+- id: diff.pulm.asthma.bronchodilator-reversibility
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2222]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.50
+  diff_type: threshold
+  topic: 기관지확장제 가역성 양성 기준
+  harrison_says: Reversibility has been newly defined as ≥10% increase in the FEV1 percent of predicted (e.g., 60% predicted to 70% predicted) at least 15 min after administration of a β2-agonist or after several weeks of corticosteroid therapy. Many continue to use the prior definition of a 12% increase in the baseline FEV1 with a minimum 200-mL change.
+  kr_says: '표 3-4 천식의 진단 기준: Salbutamol 200-400 mcg 흡입 10-15분 후 FEV1의 증가 ≥12%이면서 ≥200 ml(≥15%이면서 ≥400 ml 증가한 경우 더 신뢰). 검사 전 SABA 최소 4시간, 하루 2번 LABA 24시간, 하루 1번 LABA 36시간 이상 중단. 반응이 12% 미만이어도 천식을 완전히 배제할 수 없다(p.51). 별도 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 기관지확장제 반응 양성을 FEV1 ≥12% 그리고 ≥200 mL 증가로 적용한다(예측치 대비 ≥10% 정의는 쓰지 않는다).
+  usmle_rule: USMLE 문항은 FEV1 ≥12% 및 ≥200 mL 증가를 가역성 기준으로 적용하고, 해리슨 22판이 새 정의로 적은 예측치 % ≥10% 증가는 보조 지식으로만 둔다.
+  verified: text
+- id: diff.pulm.asthma.bronchoprovocation-threshold
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2223]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.50–51
+  diff_type: threshold
+  topic: 메타콜린·운동 유발검사 양성 기준
+  harrison_says: A provocative dose producing a 20% drop in FEV1 (PD20) is calculated, with a cumulative value ≤400 μg indicative of airway reactivity. ... Challenge with exercise and/or cold, dry air can be performed, with a positive response recorded if there is a ≥10% drop in FEV1 from baseline.
+  kr_says: '표 3-4: 메타콜린 흡입 후 FEV1 감소 ≥20%; 과호흡, 고장성 생리식염수 혹은 만니톨 흡입 후 FEV1 감소 ≥15%; 운동 후 FEV1 감소가 >10%이면서 >200 ml(p.50). 본문: PC20이 8 mg/ml 미만이면 천식으로 진단할 수 있고, 8-16 mg/ml이면 경계, 16 이상이면 천식이 아닐 가능성이 높다(p.51). 민감도는 높으나 특이도가 낮다(p.52).'
+  kmle_rule: KMLE 문항·정리본은 메타콜린 유발검사를 PC20(농도) 기준 <8 mg/mL 양성 · 8–16 경계로, 운동 유발은 FEV1 >10% 그리고 >200 mL 감소, 만니톨·고장성 식염수는 ≥15% 감소로 적용한다.
+  usmle_rule: USMLE 문항은 메타콜린 FEV1 20% 감소 지점을 쓰되 해리슨 기준인 누적 PD20 ≤400 μg, 운동·찬 공기 유발 ≥10% 감소를 적용한다.
+  verified: text
+- id: diff.pulm.asthma.feno-cutoff
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2223]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.50, p.52
+  diff_type: threshold
+  topic: FeNO 제2형 염증 기준치
+  harrison_says: Elevated levels (>35–40 ppb) in untreated patients are indicative of type 2 inflammation. Levels >20–25 ppb in patients with severe asthma on moderate- to high-dose ICS indicate either poor adherence or persistent type 2 inflammation despite therapy.
+  kr_says: '전형적인 천식 증상이 있는 환자에서 폐활량검사나 PEF가 불가능하거나 음성인 경우, FeNO(성인/청소년: >50 ppb, 소아: >35 ppb) 또는 혈중 호산구가 국가/지역 참조치 이상인 경우 천식(제2형 염증형) 진단을 지지할 수 있다. 수치가 높다고 천식으로 단정할 수 없고, 낮다고 배제할 수 없다(p.50, p.52).'
+  kmle_rule: KMLE 문항·정리본은 FeNO 진단 보조 기준을 성인·청소년 >50 ppb, 소아 >35 ppb로 적용하고, 낮아도 천식을 배제하지 않는다.
+  usmle_rule: USMLE 문항은 해리슨 기준대로 치료 전 FeNO >35–40 ppb를 제2형 염증, 중등도~고용량 ICS 중 >20–25 ppb를 순응도 불량 또는 지속 염증으로 적용한다.
+  verified: text
+- id: diff.pulm.asthma.pef-variability
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2222]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.50–51
+  diff_type: threshold
+  topic: 최대호기유량 일중 변동 기준
+  harrison_says: Diurnal peak flow variability of >20% has also been proposed as an indicator of reversible airways disease, but it is less reliable due to difficulties with quality control and variability of home assessments.
+  kr_says: '표 3-4: 2주 이상 과도한 최대호기유량의 변동 — 평일 일중 최대호기유량 변동 > 10%(일일 2회 측정)(p.50). 본문: 매일 변동값을 1-2주간 평균하여 계산하며 일중 변동값이 10% 이상일 경우 심한 변이가 있다고 할 수 있다. 기관지확장제 사용 후 60 L/min 이상 증가하거나 변동치가 20% 이상이면 천식진단이 가능하다(p.51).'
+  kmle_rule: KMLE 문항·정리본은 1–2주 평균 일중 PEF 변동 >10%(하루 2회 측정)를 과도한 변동으로 적용한다.
+  usmle_rule: USMLE 문항은 해리슨 기준대로 일중 PEF 변동 >20%를 가역성 지표로 보되 신뢰도가 낮은 보조 소견으로 다룬다.
+  verified: text
+- id: diff.pulm.asthma.step1-saba-monotherapy
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2225]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.99–100
+  diff_type: first_line
+  topic: 1단계 증상완화제 · SABA 단독치료
+  harrison_says: 'Table 298-5 STEP 1: preferred regular therapy None; as-needed (PRN) reliever therapy ICS/formoterol (low dose) or SABA(b) or ICS/SABA(f) — b = NAEPP recommendation, f = alternative GINA recommendation. p.2224: Frequent short-acting β2-agonist use has been associated with increased asthma mortality, resulting in decreased enthusiasm for their use in isolation without inhaled corticosteroids. p.2226: GINA ... recommends ICS/formoterol be used as the reliever in all steps of asthma severity, including intermittent asthma (step 1).'
+  kr_says: '1단계: 필요시 저용량 흡입스테로이드-formoterol 사용을 권고한다(1안). 또는 필요시 SABA를 사용하며 사용시마다 저용량 흡입스테로이드도 사용하는 것을 권고한다(2안). 흡입속효성베타작용제 단독치료는 권고되지 않는다(p.99). 권장되지 않는 치료: 성인에서 흡입속효성베타작용제 단독 치료는 권고되지 않음(p.100). ICS-SABA 증상완화제는 국내에는 아직 도입되지 않았다(p.97). 별도 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 1단계에서도 SABA 단독을 오답으로 두고, 필요시 저용량 ICS-formoterol(1안) 또는 SABA 사용 때마다 저용량 ICS 동시 사용(2안)을 정답으로 적용한다(ICS-SABA 복합제는 국내 미도입).
+  usmle_rule: USMLE 문항은 GINA식 필요시 저용량 ICS-formoterol을 선호 답으로 하되, 해리슨 표가 NAEPP 선택지로 남긴 1단계 PRN SABA도 허용되는 선택지로 다룬다.
+  verified: text
+- id: diff.pulm.asthma.step2-preferred
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2225]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.101
+  diff_type: first_line
+  topic: 2단계 선호 치료
+  harrison_says: 'Table 298-5 STEP 2: preferred regular therapy None(a) or low-dose ICS(b); alternative LTRA; PRN reliever ICS/formoterol (low dose)(a), or PRN concomitant ICS and SABA(a,b) or SABA(e,b) or ICS/SABA(f). a = as-needed ICS/formoterol or PRN concomitant ICS and SABA, no regular daily therapy; e = if using low-dose ICS as regular therapy. p.2226: NAEPP ... as-needed concomitant ICS and SABA can be used as a therapy in step 2.'
+  kr_says: '2단계: 필요시 저용량 흡입스테로이드-formoterol 사용을 권고한다(1안). 또는 매일 저용량 흡입스테로이드 유지와 필요시 SABA 사용을 권고한다(2안). 개정된 2025년 GINA와 마찬가지로 필요시 저용량 ICS-formoterol이 선호되는 질병 조절제로 권고된다. 하지만 국내 실정에서는 순응도 저하·경과 관찰 어려움·천식 적정성 평가에 부정적 영향 가능성이 있어 충분한 고려가 필요하다.'
+  kmle_rule: KMLE 문항·정리본은 2단계 선호 치료를 필요시 저용량 ICS-formoterol로, 대안을 매일 저용량 ICS + 필요시 SABA로 적용한다.
+  usmle_rule: USMLE 문항은 2단계에서 매일 저용량 ICS(NAEPP) 또는 필요시 ICS-formoterol·필요시 ICS+SABA 동시 사용(정규 치료 없음)을 모두 정답 범위로 다루고, LTRA는 대안으로 둔다.
+  verified: text
+- id: diff.pulm.asthma.step3-4-mart
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2225]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.102–103
+  diff_type: same
+  topic: 3·4단계 ICS-formoterol 유지-완화 요법
+  harrison_says: 'Table 298-5 STEP 3: preferred low-dose ICS/formoterol; alternative medium-dose ICS. STEP 4: preferred medium-dose ICS/formoterol; alternative high-dose ICS. PRN reliever ICS/formoterol (low or medium dose)(d) — d = PRN ICS/formoterol only suggested for steps 3 and 4 by NAEPP.'
+  kr_says: '3단계: 저용량 흡입스테로이드(budesonide or beclomethasone)-formoterol 유지-완화 병용 요법을 권고한다(1안). 또는 저용량 ICS-LABA 유지 + 필요시 SABA(2안)(p.102). 4단계: 중간용량 ICS-formoterol 유지-완화 병용 요법을 권고한다(1안). 또는 중간용량 ICS-LABA 유지 + 필요시 SABA(2안)(p.103). formoterol이 아닌 LABA 복합제는 증상완화제로 쓸 수 없다(p.102).'
+  kmle_rule: KMLE 문항·정리본은 3단계 저용량, 4단계 중간용량 ICS-formoterol 유지-완화 병용 요법(MART)을 선호 치료로 적용한다.
+  usmle_rule: USMLE 문항은 3단계 저용량, 4단계 중간용량 ICS-formoterol 유지-완화 요법을 선호 치료로 적용한다.
+  verified: text
+- id: diff.pulm.asthma.step5-lama-addon
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2225]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.104–105
+  diff_type: algorithm
+  topic: 5단계 · LAMA 추가 시점
+  harrison_says: 'Table 298-5 STEP 5: preferred regular therapy High-dose ICS/LABA + add-on LAMA; alternative Anti-IgE or anti–IL-5 or anti–IL4-Rα or anti-TSLP; adjunctive LTM, azithromycin, OCS (to be avoided as much as possible). p.2226: Leukotriene modifiers and long-acting anticholinergics are possible add-on (adjunctive) therapies in those requiring step 4 and/or 5 therapies.'
+  kr_says: '5단계: 4단계 치료에도 불구하고 천식이 조절되지 않으면 중증 천식 치료를 위하여 전문가에게 의뢰할 것을 권고한다. 고용량 ICS-LABA 사용은 3-6개월 단기간 시도해볼 수 있다. 중간용량 이상의 ICS-LABA 사용에도 조절되지 않으면 흡입지속성항콜린제를 추가해 볼 수 있다. 전문가 의뢰를 통한 표현형 평가 후 항 IgE, 항 IL-5/5R, 항 IL-4Ra, 항 TSLP 치료를 고려할 수 있다(p.104). LAMA 추가 전 반드시 ICS를 적어도 중간용량으로 사용하였는지 확인해야 한다(p.105).'
+  kmle_rule: KMLE 문항·정리본은 4단계 치료로 조절되지 않으면 전문가 의뢰·표현형 평가를 선호 선택으로 두고, LAMA는 중간용량 이상 ICS-LABA로 조절되지 않을 때 추가하며, 고용량 ICS-LABA는 3–6개월 단기 시도로 적용한다.
+  usmle_rule: USMLE 문항은 해리슨 표대로 5단계 선호 치료를 고용량 ICS/LABA + LAMA 추가로, 생물학적 제제를 그 대안으로 적용한다.
+  verified: text
+- id: diff.pulm.asthma.anti-il5-eligibility
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2226]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.151, p.153
+  diff_type: threshold
+  topic: 항 IL-5/5R 생물학적 제제 대상 기준
+  harrison_says: In patients symptomatic on moderate- to high-dose ICS/LABA, generally with two or more exacerbations that require OCS per year and with an eosinophil count of ≥300/μL (unless they are on chronic OCS), IL-5–active drugs reduce exacerbations by about half or more. ... In patients on chronic OCS, they reduce the need for OCSs regardless of circulating eosinophil count.
+  kr_says: '그림 6-2: 2형 염증 가능성 — 혈중 호산구 ≥150/μl, FeNO ≥20 ppb, 객담 호산구 ≥2% 등; Anti-IL5/5R 적합성 — 지난해 악화 병력, 혈중 호산구 ≥150/㎕ 또는 ≥300/㎕(p.151). 표 6-2 건강보험 급여기준: 고용량 ICS-LABA + LAMA 투여에도 조절되지 않는 중증 제2형 염증성 천식; mepolizumab·benralizumab — 혈중 호산구 ≥300/μL + 전신스테로이드 요구 급성악화 ≥4회/년 또는 prednisolone ≥5 mg/day 6개월 이상, 또는 호산구 ≥400/μL + 급성악화 ≥3회/년; reslizumab — 호산구 ≥400/μL + 급성악화 ≥3회/년(p.153). 주2: 임상시험 등록 기준은 연간 2회 이상 악화였다.'
+  kmle_rule: KMLE 문항·정리본은 항 IL-5/5R 대상을 고용량 ICS-LABA(+LAMA)에도 조절되지 않는 중증 호산구성 천식으로 두고, 국내 급여 수치(호산구 ≥300/μL + 연 4회 이상 악화 또는 OCS 의존, ≥400/μL + 연 3회 이상)는 급여기준으로 구분해 적용한다.
+  usmle_rule: USMLE 문항은 중등도~고용량 ICS/LABA에도 증상이 있고 연 2회 이상 OCS 필요 악화, 호산구 ≥300/μL(만성 OCS 사용 시 호산구 무관)을 항 IL-5 대상 기준으로 적용한다.
+  verified: text
+- id: diff.pulm.asthma.anti-ige-eligibility
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2225]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.150–152
+  diff_type: threshold
+  topic: 항 IgE(omalizumab) 대상 IgE 기준
+  harrison_says: In asthma, anti-IgE has been tested in patients with a circulating IgE ≥30 IU/mL and a positive skin test or RAST to a perennial allergen. It is generally used in patients not responsive to moderate- to high-dose ICS/LABA. ... patients with an exhaled nitric oxide approximately ≥20 ppb or circulating eosinophils ≥260/μL have the greatest response.
+  kr_says: 급여인정 기준은 성인 및 12세 이상 청소년 중증 알레르기성 천식 환자 중 고용량 ICS-LABA와 LAMA를 병용 투여하였음에도 조절되지 않는 경우로, 총 IgE 수치가 76 IU/mL 이상, 통년성 알레르기 항원에 대한 in vitro 검사 또는 피부 반응 검사 양성, FEV1 예측치 80% 미만, 치료 시작 전 12개월 이내 전신 스테로이드가 필요한 급성 악화 2회 이상을 모두 만족해야 한다. 16주에 반응이 없다면 중단을 고려한다. 말초혈액 호산구 260/μl 또는 FeNO 20 ppb 이상일 경우 좋은 반응을 보였다.
+  kmle_rule: KMLE 문항·정리본은 omalizumab 국내 급여 대상으로 총 IgE ≥76 IU/mL, 통년성 항원 감작, FEV1 <80%, 12개월 내 전신 스테로이드 필요 악화 ≥2회, 고용량 ICS-LABA + LAMA 실패를 적용한다.
+  usmle_rule: USMLE 문항은 총 IgE ≥30 IU/mL와 통년성 항원 피부시험·RAST 양성, 중등도~고용량 ICS/LABA 불응을 항 IgE 대상 기준으로 적용한다.
+  verified: text
+- id: diff.pulm.asthma.dupilumab-biomarker
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2226]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.153–154
+  diff_type: threshold
+  topic: dupilumab 반응 바이오마커 기준
+  harrison_says: poorly controlled patients on moderate- to high-dose ICS/LABA with an FeNO of 20–25 ppb also appear to respond to dupilumab even if their peripheral eosinophils are not elevated. ... It has been shown to be effective for patients requiring oral corticosteroids regardless of biomarker levels.
+  kr_says: '국내에서 기존 치료에 조절되지 않는 12세 이상의 중증 호산구성 천식(혈중 호산구 150/μl 이상 또는 호기산화질소 25 ppb 이상) 또는 경구스테로이드 의존성 천식의 추가 치료로 허가를 받았다. 혈중 호산구 수치가 한 번이라도 1,500/uL 이상이었던 환자에서는 아직까지 추천되지 않는다(p.154). 표 6-2 급여기준: 호산구 ≥150/μL 또는 FeNO ≥25 ppb + 전신스테로이드 요구 급성악화 ≥4회/년, OCS 의존성은 바이오마커 무관 prednisolone ≥5 mg/day 6개월 이상(p.153).'
+  kmle_rule: KMLE 문항·정리본은 dupilumab 대상을 혈중 호산구 ≥150/μL 또는 FeNO ≥25 ppb의 중증 천식, 또는 OCS 의존성 천식(바이오마커 무관)으로 적용하고, 호산구 ≥1,500/μL 병력은 피한다.
+  usmle_rule: USMLE 문항은 FeNO 20–25 ppb 이상이면 호산구가 높지 않아도 dupilumab 반응을 기대하고, OCS 의존 환자에서는 바이오마커와 무관하게 효과가 있다고 적용한다.
+  verified: text
+- id: diff.pulm.asthma.exacerbation-ocs-admission
+  slot: h287
+  h22_chapter: 298
+  h22_cite: '[[harrison-22: 298장 p.2227]]'
+  kr_guideline_id: kr-katrd-asthma-2026
+  kr_cite: 천식 진료지침 2026(대한결핵및호흡기학회 6차 개정) p.130–131, p.133, p.136
+  diff_type: threshold
+  topic: 급성악화 전신스테로이드 용량·입원 기준
+  harrison_says: 'p.2227: Those with PEFR >60% of predicted will frequently respond to β2-agonists alone. If they fail to respond in 1–2 h, intravenous corticosteroids should be administered. ... Failure to achieve PEFR >60% or persistent severe tachypnea over 4–6 h should prompt consideration of admission to the hospital. p.2224: OCSs are also used to treat asthma exacerbations, frequently starting at a dose of 40–60 mg/d of prednisone or equivalent with a rapid taper over 1–2 weeks.'
+  kr_says: 응급실 내원 당시 폐기능이 자신의 최고치(혹은 예측치)의 25% 미만이거나 치료 후에도 40% 미만인 환자들은 입원이 권고된다. 치료 후 40-60%이면 위험인자와 이후 치료 가능 여부를 고려하여 귀가를 시킬 수 있고, 60% 이상이면 귀가가 권고된다(p.130–131). 성인 효과적 용량은 prednisolone 1 mg/kg/일, 최대 50 mg/일, 경구스테로이드는 5-7일 투여(p.133). 입원 환자는 prednisolone 50 mg 1회 혹은 hydrocortisone 200 mg/일 분할; 5-7일 사용이 10-14일과 비슷하며, ICS를 지속하면 서서히 감량할 필요는 없다(p.136).
+  kmle_rule: KMLE 문항·정리본은 성인 급성악화 전신스테로이드를 prednisolone 1 mg/kg/일(최대 50 mg) 5–7일, 감량 없이 적용하고, 치료 후 PEF/FEV1 <40% 입원 · 40–60% 개별 판단 · ≥60% 귀가로 적용한다.
+  usmle_rule: USMLE 문항은 prednisone 40–60 mg/d로 시작해 1–2주 빠르게 감량하는 해리슨 기준과, 4–6시간 치료 후 PEFR >60%에 도달하지 못하면 입원을 고려하는 기준을 적용한다.
+  verified: text
+- id: diff.pulm.copd.diagnosis-post-bd-ratio
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2256]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.36
+  diff_type: same
+  topic: COPD 진단 — 기관지확장제 후 FEV1/FVC <0.7
+  harrison_says: '그림 303-5(GOLD 평가 도구): ''Post-bronchodilator FEV1/FVC <0.7'' 이 GOLD 1~4 분류의 전제. 본문(p.2251): 고정 기류폐쇄 환자는 FEV1/FVC 가 ''does not normalize following bronchodilator treatment''.'
+  kr_says: '표 2-3 평가: ''ㆍ기관지확장제 투여 후 FEV1/FVC＜0.7이면 기류제한이 있다고 확진할 수 있다.'' (p.35 본문: 고정값 0.7 은 젊은 성인에서 과소진단, 노인에서 과진단될 수 있음을 고려) — 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 기관지확장제 투여 후 FEV1/FVC <0.7 을 COPD(기류제한) 확진 기준으로 적용한다.
+  usmle_rule: USMLE 문항은 post-bronchodilator FEV1/FVC <0.7 을 COPD 진단 기준으로 적용한다.
+  verified: text
+- id: diff.pulm.copd.spirometric-grading-reference
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2255]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.40
+  diff_type: threshold
+  topic: 기류제한 중증도 — GOLD %예측치 vs ATS/ERS Z-점수
+  harrison_says: 'p.2254: GOLD 는 FEV1 %예측치 기준을 써 왔고 ''The American Thoracic Society and European Respiratory Society have recently advocated grading severity ... using population-defined Z-scores (Table 303-1)''. 표 303-1(p.2255): GOLD mild FEV1 ≥80% / moderate ≥50% but <80% / severe ≥30% but <50% / very severe <30% (모두 FEV1/FVC <0.7); ERS/ATS 는 FEV1/FVC <LLN 과 zFEV1 (> –1.645 / –1.65~–2.5 mild / –2.51~–4 moderate / < –4.1 severe).'
+  kr_says: '''GOLD 1은 FEV1≥80%이고 GOLD 2는 50%≤FEV1＜80%이며, GOLD 3는 30%≤FEV1＜50%, GOLD 4는 FEV1＜30%이다. 분류기준은 속효성기관지확장제(예: 살부타몰 400μg)를 흡입한 후 측정한 FEV1이다.'' Z-점수·LLN 중증도 분류는 제시하지 않음 — 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 기관지확장제 후 FEV1 %예측치로 GOLD 1(≥80%)·2(50~79%)·3(30~49%)·4(<30%)를 나눈다(Z-점수 분류는 쓰지 않는다).
+  usmle_rule: USMLE 문항은 GOLD FEV1 %predicted 등급을 기본으로 하되, ATS/ERS 의 LLN·Z-score 등급이 따로 있음을 구분한다.
+  verified: text
+- id: diff.pulm.copd.reference-equations
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2254]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.35
+  diff_type: terminology
+  topic: 폐기능 예측치 — 인종 중립 vs 한국인 예측치
+  harrison_says: '''Pulmonary function interpretation has traditionally used race-specific reference values; however, race-neutral interpretation of pulmonary function tests may be preferable.'''
+  kr_says: '''추정 예측치의 경우 폐활량측정법에 의한 검사 결과를 해석하는데 있어서 우리나라 정상인의 예측치를 이용하여 판독하는 것을 추천한다.'' — 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 폐활량 결과를 우리나라 정상인 예측치로 판독한다고 적는다.
+  usmle_rule: USMLE 문항은 race-neutral 해석이 선호될 수 있다는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.pulm.copd.risk-group-classification
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2256]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.41-42
+  diff_type: algorithm
+  topic: 환자군 분류 — 고위험/저위험 2군 vs GOLD ABE
+  harrison_says: '그림 303-5 GOLD ABE Assessment Tool: 악화 ''≥2 moderate exacerbations or ≥1 leading to hospitalization'' = E; ''0 or 1 moderate exacerbations (not leading to hospitalization)'' 이면 증상으로 A(mMRC 0–1, CAT <10) / B(mMRC ≥2, CAT ≥10).'
+  kr_says: '그림 2-3 COPD 종합평가: ''저위험군: 위험 낮음. 지난 해 악화가 없었거나 한 번인 경우이다. 고위험군: 위험 높음. 지난 해에 2회 이상 급성악화가 있었거나 입원할 정도로 심한 악화가 1회 이상 있었던 경우이다.'' — 증상(mMRC·CAT)으로 군을 나누지 않음. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 지난 1년 악화력만으로 고위험군(2회 이상 또는 입원 1회 이상)·저위험군으로 나눈다 — 증상 점수로 A/B 를 가르지 않는다.
+  usmle_rule: USMLE 문항은 GOLD ABE(E = ≥2 moderate 또는 ≥1 hospitalized 악화; A/B = mMRC·CAT 증상)로 분류한다.
+  verified: text
+- id: diff.pulm.copd.initial-therapy-low-risk
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2257]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.78-79
+  diff_type: first_line
+  topic: 초기 약물 — 저위험(증상 적음)에서 LABA+LAMA vs 기관지확장제 하나
+  harrison_says: '그림 303-6A Initial Pharmacological Treatment: ''GROUP A — A bronchodilator''; ''GROUP B — LABA + LAMA*''; ''GROUP E — LABA + LAMA*, consider LABA+LAMA+ICS* if blood eos ≥300''.'
+  kr_says: '''1. 저위험군 환자(지난 1년 동안 급성악화가 1회 이하이면서 입원할 정도로 심한 악화가 없었던 환자) 흡입지속성베타-2작용제와 흡입지속성항콜린제 복합제를 일차 치료로 권장한다.'' ''CAT 점수 10점 미만의 환자에게서 ... 복합제를 일차 치료제로 권장하는 근거는 아직 부족하다.'' 그림 3-3(p.79): 저위험군 = LABA+LAMA(호산구와 무관). (p.56 KQ1·KQ2: 저위험군에서 질병 진행 억제·증상 호전 목적의 기관지확장제 사용은 ''권고 보류''(근거수준 Low, 권고수준 Weak)).'
+  kmle_rule: KMLE 문항·정리본은 저위험군 안정기 COPD 의 초기 약물을 증상 정도와 무관하게 LABA+LAMA 복합제로 적용한다.
+  usmle_rule: USMLE 문항은 GOLD Group A = 기관지확장제 하나(LABA 또는 LAMA), Group B = LABA+LAMA 로 적용한다.
+  verified: text
+- id: diff.pulm.copd.initial-therapy-high-risk-eos300
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2256]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.56, p.78-79
+  diff_type: same
+  topic: 초기 약물 — 고위험(E)군 LABA+LAMA, 호산구 ≥300 이면 삼제
+  harrison_says: 'p.2256: ''Dual bronchodilators are recommended as first-line treatments in patients with symptoms and/or increased exacerbation risk.'' ''ICS are recommended as part of the initial treatment regimen for eosinophil counts above 300. ICS are never used alone in COPD''. 그림 303-6A(p.2257): GROUP E ''LABA + LAMA*, consider LABA+LAMA+ICS* if blood eos ≥300''.'
+  kr_says: 'p.78: 고위험군 ''흡입지속성베타-2작용제와 흡입지속성항콜린제 복합제의 사용을 일차치료로 권장한다.'' p.79: ''고위험군 환자 중 혈액 호산수 수치가 300 개/μL 이상인 환자는 일차치료로 흡입지속성베타-2작용제/흡입지속성항콜린제/흡입스테로이드 복합제 사용을 일차치료로 권장한다.'' p.56 KQ5: 고위험군·호산구 >300/uL 에서 LAMA+LABA 보다 triple therapy 권고(근거수준 Moderate, 권고수준 Strong).'
+  kmle_rule: KMLE 문항·정리본은 고위험군 초기 약물을 LABA+LAMA, 혈중 호산구 ≥300/μL 이면 ICS+LABA+LAMA 삼제로 적용한다.
+  usmle_rule: USMLE 문항은 GOLD E 초기 약물을 LABA+LAMA, blood eos ≥300 이면 LABA+LAMA+ICS 로 적용한다.
+  verified: text
+- id: diff.pulm.copd.ics-escalation-eos100
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2256]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.41, p.80
+  diff_type: threshold
+  topic: 악화 후 ICS 추가 — 호산구 100~300 구간
+  harrison_says: '''patients with an eosinophil count of <100 cells per microliter do not benefit, while benefit increases as eosinophil counts rise above 100'' ... ''ICS can be added when patients with eosinophils counts above 100 continue to have exacerbations despite dual bronchodilator therapy.'' (그림 303-6B 추적 치료, p.2257: LABA+LAMA 에서 악화 시 LABA+LAMA+ICS 로 — 고위험·저위험 구분 없음)'
+  kr_says: 'p.41: ''혈액 호산구 수치가 100개/μL 미만에서는 ICS를 포함한 치료법이 거의 효과가 없기 때문에 ... 300개/μL 이상은 ... 이득이 가장 클 것으로 예상''. 그림 3-4 악화 후 후속 약물(p.80): 고위험군 악화 발생 — 호산구 <100: LABA+LAMA ±PDE4i ±Macrolide / 100≤호산구<300: ICS+LABA+LAMA ±PDE4i ±Macrolide / ≥300: ICS+LAMA+LABA + Anti-IL-4R ±PDE4i ±Macrolide. 저위험군 악화 발생 — 호산구 <300: LABA+LAMA ±PDE4i ±Macrolide / ≥300: ICS+LABA+LAMA. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 LABA+LAMA 중 악화 시 고위험군은 호산구 ≥100/μL 에서, 저위험군은 ≥300/μL 에서만 ICS 를 더한다(호산구 <100 은 ICS 추가하지 않음).
+  usmle_rule: USMLE 문항은 dual bronchodilator 중에도 악화하면 blood eos ≥100 에서 ICS 를 추가(triple)한다.
+  verified: text
+- id: diff.pulm.copd.exacerbation-steroid-5d
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2259]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.136
+  diff_type: same
+  topic: 급성악화 전신스테로이드 — 프레드니솔론 40 mg 5일
+  harrison_says: '''Current recommendations suggest 40 mg of oral prednisone or its equivalent typically for a period of 5 days.'''
+  kr_says: '''치료용량은 프레드니솔론 기준으로 하루 40mg을 5일간 사용하는 것을 권고하며, 전신스테로이드의 장기 투여는 폐렴 발생율 및 사망률을 증가시킬 수 있어 주의를 요한다.'' ''경구 스테로이드제 투여는 주사투여와 비교하여 동등하게 효과적이다.'' — 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 급성악화 전신스테로이드를 프레드니솔론 하루 40 mg 5일(경구 = 주사)로 적용한다.
+  usmle_rule: USMLE 문항은 prednisone 40 mg/day 5일을 적용한다.
+  verified: text
+- id: diff.pulm.copd.exacerbation-antibiotic-criteria
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2259]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.137
+  diff_type: algorithm
+  topic: 급성악화 항생제 — 적응(주요 증상 수)과 기간
+  harrison_says: '''Patients with moderate or severe exacerbations are usually treated with 5–7 days of antibiotics, even in the absence of data implicating a specific pathogen.'' 항생제 선택은 ''local patterns of antibiotic susceptibility'' 와 환자 상태에 근거.'
+  kr_says: '''호흡곤란 악화, 가래양의 증가, 화농성 객담의 증가, 3가지 주요증상 중에 3가지를 모두 만족시키는 경우, 또는 객담의 화농성 증가를 포함한 2가지를 만족하는 경우, 또는 기계호흡이 필요한 경우에서 항생제를 처방하여야 한다. 항생제의 치료 기간은 5-7일을 권고하며, 외래에서 치료하는 환자의 경우 5일 이내의 치료를 권고한다.'' 초기 경험적 치료는 aminopenicillin-clavulanic acid, 3세대 cephalosporin; 65세 이상·FEV1 50% 미만·잦은 악화·심장질환 동반 시 fluoroquinolone 고려. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 주요 증상 3가지 모두 또는 화농성 객담 포함 2가지 또는 기계호흡 필요 시 항생제를 주고, 기간은 5~7일(외래는 5일 이내)로 적용한다.
+  usmle_rule: USMLE 문항은 moderate·severe 악화에 항생제 5~7일을 적용한다.
+  verified: text
+- id: diff.pulm.copd.ltot-criteria
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2256]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.110
+  diff_type: threshold
+  topic: 장기 산소요법 기준 — PaO2·Hct·시간 명시 여부
+  harrison_says: '''For patients with resting hypoxemia (resting O2 saturation ≤88% in any patient or ≤89% with signs of pulmonary arterial hypertension, right heart failure, or erythrocytosis), the use of O2 has been demonstrated to have a significant impact on mortality. Patients meeting these criteria should be on continuous oxygen supplementation because the mortality benefit is proportional to the number of hours per day oxygen is used.'''
+  kr_says: '''장기간 산소투여(하루 15시간 이상)는 생존율 향상을 보였다.'' 적용: ''(1) 고탄산혈증 여부와 관계없이 동맥혈산소분압(PaO2)이 최소 55 mmHg 이하이거나 산소포화도(SaO2)가 88% 이하; 혹은 (2) 동맥혈산소분압이 55 mmHg와 60 mmHg 사이거나 산소포화도가 89%이면서 폐고혈압, 울혈성심부전을 암시하는 말초부종, 혹은 적혈구증가증 (적혈구용적률＞55%)이 보이는 경우'' — ''안정상태에서 3주 동안 두 차례 반복하여 측정'', 2-3개월 후 재평가. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 PaO2 ≤55 mmHg 또는 SaO2 ≤88%, 또는 PaO2 55~60 mmHg·SaO2 89% + 폐고혈압·말초부종·적혈구증가증(Hct >55%)이면 하루 15시간 이상 장기 산소요법을 적용한다.
+  usmle_rule: USMLE 문항은 resting SaO2 ≤88%(또는 PAH·우심부전·적혈구증가증 동반 시 ≤89%)에서 continuous O2 를 적용한다.
+  verified: text
+- id: diff.pulm.copd.vaccination
+  slot: h292
+  h22_chapter: 303
+  h22_cite: '[[harrison-22: 303장 p.2258]]'
+  kr_guideline_id: kr-katrd-copd-2024
+  kr_cite: COPD 진료지침 2024 개정(대한결핵및호흡기학회) p.109-110
+  diff_type: threshold
+  topic: 예방접종 — 폐렴구균 대상 나이·백일해·RSV
+  harrison_says: '''Patients with COPD should receive the influenza vaccine annually. Pneumococcal, COVID-19, and respiratory syncytial virus (RSV) vaccines are recommended; vaccination for Bordetella pertussis is recommended for those not vaccinated in adolescence.'''
+  kr_says: 'p.109: ''모든 COPD 환자에게 인플루엔자 백신 접종을 권장한다.'' ''65세 이상의 모든 COPD 환자에게 폐렴구균 백신 접종을 권장한다.'' p.110: 백일해 — ''모든 COPD환자에게 백일해 백신 접종 권고는 논의가 필요하다.'' COVID-19 — ''반드시 받아야 한다''. RSV — ''국내의 권고 사항은 아직 미정이나 고령 또는 고위험군을 중심으로 접근할 필요가 있다.'' 대상포진 — 50세 이상 권고에 따라 접종. (단원 요약 p.98 은 ''인플루엔자 폐렴구균 백신은 모든 COPD 환자에게 접종해야 한다.'') 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 인플루엔자(모든 COPD)·COVID-19 를 권장하고, 폐렴구균은 65세 이상 COPD 에 권장(본문 기준)한다 — 백일해·RSV 를 모든 COPD 의 정규 접종으로 쓰지 않는다.
+  usmle_rule: USMLE 문항은 매년 인플루엔자 + 폐렴구균·COVID-19·RSV, 청소년기 미접종자 Tdap 을 적용한다.
+  verified: text
+- id: diff.pulm.lung-cancer.screening-eligibility
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.618]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암검진 질지침(보건복지부·국립암센터, 2021) p.12–13
+  diff_type: screening
+  topic: LDCT 폐암검진 대상(나이·갑년)
+  harrison_says: USPSTF(2021) 기준으로 50–80세, 20갑년 이상 흡연력이 있는 현재 흡연자 또는 최근 15년 이내 금연한 과거 흡연자에게 매년 LDCT 검진을 권고한다.
+  kr_says: 국가폐암검진 대상은 만 54세 이상 만 74세 이하 남녀 중 폐암발생고위험군 — 30갑년[하루 평균 담배소비량(갑) × 흡연기간(년)] 이상의 흡연력을 가진 현재 흡연자(및 보건복지부장관 고시자). 흡연력은 해당연도 전 2년 내 일반건강검진 문진표 또는 건강보험 금연치료 참여 문진표로 확인한다. (국가암검진 프로그램 — 권고등급 표기 없음)
+  kmle_rule: KMLE 문항·정리본은 국가폐암검진 기준(만 54–74세, 30갑년 이상 현재 흡연자, 저선량흉부CT)을 적용한다.
+  usmle_rule: USMLE 문항은 USPSTF 2021 기준(50–80세, ≥20 pack-years, 현재 흡연 또는 15년 이내 금연)을 적용한다.
+  verified: text
+- id: diff.pulm.lung-cancer.screening-interval
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.618]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암검진 질지침(보건복지부·국립암센터, 2021) p.13
+  diff_type: screening
+  topic: LDCT 폐암검진 주기
+  harrison_says: NLST·NELSON 두 시험이 고위험군에서 매년 CT 검진을 뒷받침했고, USPSTF 기준 대상자에게 annual LDCT 검진이 권고된다.
+  kr_says: 국가폐암검진 주기는 2년. 폐암검진 권고안(2015, 매년)과는 차이가 있으나 이탈리아 연구에서 1년과 2년 간격이 유의한 차이가 없었고, NELSON 연구에서 음성 결과 후 1년 이상 유의한 소견이 거의 없었던 점, 비용효과성을 고려해 결정했다.
+  kmle_rule: KMLE 문항·정리본은 국가폐암검진 주기 2년을 적용한다(2015 학회 권고안의 '매년'과 구분).
+  usmle_rule: USMLE 문항은 annual LDCT 를 적용한다.
+  verified: text
+- id: diff.pulm.lung-cancer.screening-quit-years
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.618]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암검진 질지침(보건복지부·국립암센터, 2021) p.12, p.14
+  diff_type: screening
+  topic: 과거 흡연자(금연 연수) 포함 여부
+  harrison_says: NLST 는 55–74세, ≥30갑년, 과거 흡연자는 15년 이내 금연자를 대상으로 했고, USPSTF 2021 기준도 '최근 15년 이내 금연한 과거 흡연자'를 포함한다.
+  kr_says: '폐암검진 권고안(국립암센터, 2015): 30갑년 이상 흡연력이 있는(금연 후 15년이 경과한 과거흡연자는 제외) 55–74세 고위험군에게 저선량흉부CT 검진을 매년 시행할 것을 권고(권고등급 B). 흉부X선·객담 세포진·혈청 종양표지자 검진은 시행하지 말 것(권고등급 D). 반면 국가폐암검진(국가암검진 프로그램 표 1 주석)의 고위험군 정의는 30갑년 이상의 흡연력을 가진 ''현재 흡연자''다.'
+  kmle_rule: KMLE 문항·정리본에서 국가검진 대상은 30갑년 이상 '현재 흡연자'로, 학회 권고안(2015)은 금연 15년 미만 과거 흡연자 포함·매년·권고등급 B 로 구분해 쓴다.
+  usmle_rule: USMLE 문항은 15년 이내 금연한 former smoker 를 대상에 포함하는 USPSTF 2021 기준을 적용한다.
+  verified: text
+- id: diff.pulm.lung-cancer.screening-positive-lung-rads
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.618]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암검진 질지침(보건복지부·국립암센터, 2021) p.90, p.95
+  diff_type: algorithm
+  topic: 검진 CT 양성 판정·결절 추적 기준
+  harrison_says: NLST 에서는 LDCT 에서 어느 직경이든 ≥4 mm 비석회화 결절이 있으면 '양성'으로 분류했다(양성자 중 위양성률 LDCT 96.4%). 83장은 Lung-RADS 범주를 다루지 않는다.
+  kr_says: '저선량흉부CT 결과는 Lung-RADS version 1.1 로 판정한다. 범주 1, 2, 2b = 검진 음성, 범주 3, 4A, 4B, 4X = 검진 양성. 판정구분: 범주 2 = 1년 후 정기검사, 범주 3 = 6개월 내 추적검사, 범주 4A = 3개월 내 추적검사, 범주 4B·4X = 추가검사, S = 결절 외 의미 있는 소견.'
+  kmle_rule: KMLE 문항·정리본은 국가폐암검진 Lung-RADS v1.1 범주별 사후관리(3 → 6개월, 4A → 3개월, 4B·4X → 추가검사)를 적용한다.
+  usmle_rule: USMLE 문항은 Lung-RADS 범주에 따른 추적(ACR)으로 답하되, NLST 의 ≥4 mm 양성 정의와 높은 위양성률을 배경 지식으로 둔다.
+  verified: text
+- id: diff.pulm.lung-cancer.biomarker-testing-scope
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.620]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.98
+  diff_type: algorithm
+  topic: 비소세포폐암 유전자 검사 범위·국내 EGFR 빈도
+  harrison_says: 바이오마커 검사는 진단 시 시행하는 것이 이상적이며, 대부분의 지침이 진행성 NSCLC 전체에 권고하고 편평세포암은 '고려'한다. EGFR 변이는 북미 NSCLC 의 10–15%(p.627), 비흡연 폐암은 여성·동아시아인에 더 흔하다(p.618).
+  kr_says: 'EGFR, ALK, ROS1, BRAF 검사는 반드시 시행되어야 하며, NTRK, MET, RET, HER2, KRAS 는 앞의 넷이 음성일 때 또는 큰 패널에 포함해 시행할 것을 권장. 국내 데이터에서 EGFR 돌연변이는 선암종의 40%, 편평상피세포암종의 9%. (진료 알고리즘 p.31: 선암 등은 EGFR·ALK category 1, 편평세포암은 분자검사를 ''고려'')'
+  kmle_rule: KMLE 문항·정리본은 비소세포폐암 진단 시 EGFR·ALK·ROS1·BRAF 를 필수 검사로 두고, 국내 선암 EGFR 변이 약 40% 를 적용한다.
+  usmle_rule: USMLE 문항은 진행성 NSCLC(특히 비편평) 전체에 broad molecular profiling + PD-L1 을 적용하고, EGFR 빈도는 북미 10–15% 로 본다.
+  verified: text
+- id: diff.pulm.lung-cancer.egfr-first-line-osimertinib
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.627]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.176
+  diff_type: same
+  topic: EGFR(엑손 19 결손·L858R) 진행성 NSCLC 1차 치료
+  harrison_says: 엑손 19 결손·L858R 이 EGFR 변이의 약 90%. Osimertinib 은 무작위 3상에서 1세대 EGFR TKI(erlotinib·gefitinib)와 항암화학요법보다 PFS·OS 가 우월했다.
+  kr_says: 엑손 19 결손(45%)·L858R(40%)은 EGFR-TKI 에 민감. NCCN 지침을 따라 osimertinib 을 preferred first-line EGFR-TKI 로 권고하고, erlotinib(± bevacizumab/ramucirumab)·afatinib·dacomitinib·gefitinib 은 other recommended. 엑손 20 삽입은 1·2세대 TKI 에 내성.
+  kmle_rule: KMLE 문항·정리본은 EGFR 엑손 19 결손·L858R 진행성 NSCLC 의 1차 선호 약을 osimertinib 으로 한다.
+  usmle_rule: USMLE 문항도 osimertinib 을 1차 선호 EGFR TKI 로 한다.
+  verified: text
+- id: diff.pulm.lung-cancer.lazertinib-korea
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.627]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.202
+  diff_type: first_line
+  topic: lazertinib 의 자리(T790M 획득 내성)
+  harrison_says: EGFR TKI 3상 표(Table 83-11)에 MARIPOSA(amivantamab/lazertinib vs osimertinib, 1차) 가 실려 있다. T790M 이후 치료로서 lazertinib 은 본문에 없다.
+  kr_says: T790M 양성이면 osimertinib 이 권고되며(category 1) erlotinib·gefitinib·dacomitinib·afatinib 은 중단. 2023년 현재 NCCN 에 등재되지 않았지만 우리나라에서는 T790M 양성 획득 내성 환자에서 lazertinib 도 osimertinib 과 동등한 자격으로 권고된다.
+  kmle_rule: KMLE 문항·정리본은 1·2세대 EGFR TKI 후 T790M 양성 진행 시 osimertinib 또는 lazertinib 을 동등한 선택으로 적용한다.
+  usmle_rule: USMLE 문항은 T790M 양성 진행 시 osimertinib 을 답으로 한다(lazertinib 은 amivantamab 병용 1차 맥락에서만 등장).
+  verified: text
+- id: diff.pulm.lung-cancer.adjuvant-osimertinib
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.625]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.158, p.164
+  diff_type: algorithm
+  topic: 절제된 EGFR 변이 NSCLC 보조 osimertinib 대상
+  harrison_says: 엑손 19 결손·L858R 양성 NSCLC 에서 항암화학요법 유무와 관계없이 3년간 보조 osimertinib 이 DFS 를 개선했고 OS 이득도 보고됐다. FDA 등은 절제된 IB–IIIA 기 EGFR 변이 NSCLC 에 승인.
+  kr_says: Osimertinib 80 mg 매일 — 완전절제된(R0) IB–IIIA 기 EGFR 변이(exon 19 deletion, L858R) 비소세포폐암 환자 중 이전에 보조항암치료를 받았거나 platinum 을 포함하는 항암치료가 어려운 경우에 사용한다(NCCN 추천 인용). 수술 검체 또는 초기 진단 시 생검 검체로 분자검사 가능.
+  kmle_rule: KMLE 문항·정리본은 완전절제 IB–IIIA 기 EGFR(엑손 19 결손·L858R) NSCLC 에서 보조항암치료 후(또는 platinum 불가 시) osimertinib 을 적용한다.
+  usmle_rule: USMLE 문항은 resected stage IB–IIIA EGFR-mutant NSCLC 에 adjuvant osimertinib(3년, ± chemotherapy)을 적용한다.
+  verified: text
+- id: diff.pulm.lung-cancer.neoadjuvant-perioperative-io
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.625]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.159, p.164
+  diff_type: algorithm
+  topic: 절제 가능 NSCLC 수술 전·수술 전후 면역치료
+  harrison_says: '수술 전 nivolumab + 항암화학요법 3주기가 IB–IIIA 기 절제 가능 NSCLC 에 승인(CheckMate 816: pCR 24%, EFS HR 0.63). 수술 전 화학면역요법 후 수술 후 면역치료를 잇는 perioperative pembrolizumab + 항암화학요법도 II–IIIB 기에 승인(KEYNOTE-671, OS·EFS 이득).'
+  kr_says: 'Nivolumab + platinum-doublet 은 절제 가능한(4 cm 이상이거나 림프절 양성) NSCLC 의 신보조항암치료로 사용할 수 있다. 면역관문억제제를 수술 전에 사용하는 경우 수술 후에는 사용할 수 없다. (CheckMate 816 대상: 4 cm 이상 또는 림프절 양성, EGFR·ALK 이상 없음, pCR 24% vs 2.2%)'
+  kmle_rule: KMLE 문항·정리본은 절제 가능 NSCLC(4 cm 이상 또는 림프절 양성)의 수술 전 nivolumab + 백금 2제를 적용하고, 수술 전 면역치료를 받았으면 수술 후 면역치료는 쓰지 않는다.
+  usmle_rule: USMLE 문항은 neoadjuvant nivolumab + chemotherapy(stage IB–IIIA) 와 perioperative pembrolizumab(stage II–IIIB, KEYNOTE-671) 을 모두 선택지로 인정한다.
+  verified: text
+- id: diff.pulm.lung-cancer.stage3-durvalumab
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.626]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.161
+  diff_type: same
+  topic: 절제 불가 III기 NSCLC 항암방사선 후 공고요법
+  harrison_says: 임상적으로 뚜렷한 bulky 종격동 림프절 침범 환자의 표준은 동시 항암방사선치료 후 1년간 durvalumab 공고 면역치료.
+  kr_says: 절제 불가능 III기 NSCLC 에서 백금 기반 동시 항암방사선치료 후 진행이 없고 PS 0–1 이면 PACIFIC 결과에 따라 PD-L1 발현과 상관없이 durvalumab 공고요법을 권고. durvalumab 을 받는 환자에게 항암치료 공고요법 2–4주기 추가는 권하지 않는다.
+  kmle_rule: KMLE 문항·정리본은 절제 불가 III기 NSCLC 에서 동시 항암방사선치료 후 durvalumab 공고요법을 적용한다.
+  usmle_rule: USMLE 문항도 concurrent chemoradiation → durvalumab consolidation(1년)을 적용한다.
+  verified: text
+- id: diff.pulm.lung-cancer.es-sclc-chemo-io
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.630]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.227
+  diff_type: first_line
+  topic: 확장병기 소세포폐암 1차 치료와 국내 급여
+  harrison_says: 백금(cisplatin 또는 carboplatin) + etoposide 에 PD-L1 억제제 atezolizumab(IMpower133) 또는 durvalumab(CASPIAN)을 더하면 항암화학요법 단독보다 PFS·OS 가 우월해 병용이 선호된다.
+  kr_says: 현재 가장 추천되는 일차 치료는 atezolizumab + etoposide + carboplatin 또는 durvalumab + etoposide + carboplatin/cisplatin. 2022년 현재 우리나라에서는 atezolizumab + EC 4주기 후 atezolizumab 을 최대 2년간 유지하는 치료가 요양급여 적용을 받고 있다.
+  kmle_rule: KMLE 문항·정리본은 확장병기 SCLC 1차로 백금 + etoposide + atezolizumab(또는 durvalumab)을 적용하고, 국내 급여는 atezolizumab + EC 4주기 → atezolizumab 유지(최대 2년)로 쓴다.
+  usmle_rule: USMLE 문항은 platinum + etoposide + atezolizumab 또는 durvalumab 을 적용한다(급여 조건은 다루지 않는다).
+  verified: text
+- id: diff.pulm.lung-cancer.sclc-sensitive-relapse-cutoff
+  slot: h78
+  h22_chapter: 83
+  h22_cite: '[[harrison-22: 83장 p.630]]'
+  kr_guideline_id: kr-kalc-lung-cancer
+  kr_cite: 폐암 진료지침 3판(대한폐암학회, 2023) p.228
+  diff_type: threshold
+  topic: 재발 SCLC 감수성/저항성 구분 기준
+  harrison_says: 첫 치료 후 3개월 이내 재발 = chemotherapy-resistant disease, 3개월 넘어 재발 = sensitive disease.
+  kr_says: 마지막 항암치료 후 6개월 이내 진행 = 불응성(refractory)·저항성(resistant), 반응률 10% 이하. 6개월 이상 경과 후 진행 = 감수성(sensitive), 반응률 약 25%, 기존 EP·EC 재투여가 선호. ESMO 는 3개월을 기준으로 제시하기도 한다. 6개월 이내 진행 시 NCCN(2022)은 topotecan·lurbinectedin·임상시험을 우선 추천; lurbinectedin 은 2022년 9월 국내 허가.
+  kmle_rule: KMLE 문항·정리본은 6개월 기준(6개월 이상 경과 후 재발 = 감수성 → 백금 + etoposide 재투여)을 적용한다.
+  usmle_rule: USMLE 문항은 Harrison 의 3개월 기준(>3개월 = sensitive)을 적용한다.
+  verified: text

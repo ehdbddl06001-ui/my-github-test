@@ -282,7 +282,7 @@
       "pmid": "",
       "drive_path": "KATRD-KDCA_tuberculosis_2024_5th.pdf",
       "drive_doc_id": "1y2-Rn6vJxPdIsUNtgXwEiVC4lUoBBa9D",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["결핵", "tuberculosis", "잠복결핵", "MDR-TB", "BPaLM"],
       "check_points": [
         "잠복결핵 선별 대상 및 치료요법(3HP·4R·9H)",
@@ -333,7 +333,7 @@
       "pmid": "",
       "drive_path": "KATRD_asthma_2026_6th.pdf",
       "drive_doc_id": "1NjgF6fOVaft2omgmGYPgyfRRKRHfNBHA",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["천식", "asthma", "ICS", "MART"],
       "check_points": [
         "1단계 ICS-formoterol(MART) 트랙 vs SABA 단독 금지",
@@ -358,7 +358,7 @@
       "pmid": "",
       "drive_path": "KATRD_COPD_2024.pdf",
       "drive_doc_id": "1KOsbaOSdGQPkICoNFiQL8qi2wqGxBDgk",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["COPD", "만성폐쇄성폐질환", "기관지확장제", "LABA", "LAMA"],
       "check_points": [
         "GOLD ABE 분류 대비 국내 군 분류(가/나/다 vs ABE)",
@@ -521,12 +521,12 @@
       "h22_chapters": [352],
       "access": "public_pdf",
       "source_portal": "kasl.org / e-cmh.org",
-      "journal": "Clin Mol Hepatol",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_hcv_2025.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Clin Mol Hepatol 2026;32:1-52",
+      "doi": "10.3350/cmh.2025.0777",
+      "pmid": "41126716",
+      "drive_path": "KASL_hepatitisC_2025.pdf",
+      "drive_doc_id": "1V_XvMzRDdHzeWkdUIW3x7xRfjqt8hsp5",
+      "status": "ready",
       "keywords": ["C형간염", "HCV", "hepatitis-c", "DAA"],
       "check_points": [
         "국내 DAA 1차 약제·간경변증/CKD 특수군 치료 및 국가건강검진 C형간염 선별"
@@ -545,12 +545,12 @@
       "h22_chapters": [354],
       "access": "public_pdf",
       "source_portal": "kasl.org / e-cmh.org",
-      "journal": "Clin Mol Hepatol",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_masld_2025.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Clin Mol Hepatol 2025;31(Suppl):S1-S31",
+      "doi": "10.3350/cmh.2025.0045",
+      "pmid": "39967303",
+      "drive_path": "KASL_MASLD_2025.pdf",
+      "drive_doc_id": "12rJeGe6QHmQ1-ktq9T5ihp_JdxtXRnIW",
+      "status": "ready",
       "keywords": ["지방간", "MASLD", "NAFLD", "FIB-4", "MetALD"],
       "check_points": [
         "NAFLD→MASLD/MetALD 진단 기준(한국인 BMI/허리둘레 반영)",
@@ -570,19 +570,21 @@
       "h22_chapters": [337],
       "access": "public_pdf",
       "source_portal": "kasid.org / kjg.or.kr",
-      "journal": "Korean J Gastroenterol / Intest Res",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_ibd_2026.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Korean J Gastroenterol 2026;86(4):267-312 (진단·모니터링)",
+      "doi": "10.4166/kjg.2026.093",
+      "pmid": "42928004",
+      "drive_path": "KASID_IBD_diagnosis-monitoring_2026.pdf",
+      "drive_doc_id": "1MbtvHX9uiHw79Y0vCIvK54XIt9i2GO7v",
+      "status": "ready",
       "keywords": ["크론병", "궤양성대장염", "염증성장질환", "IBD", "장결핵"],
       "check_points": [
         "장결핵 감별 알고리즘(한국 최빈출) 및 항결핵제 시험치료",
         "생물학적 제제 시작 전 잠복결핵·HBV 선별"
       ],
       "drive_files": [
-        {"file": "KASID_Crohn_medical_2026_PMC13714430.xml", "id": "1i7bRTzeT6Q0vuyF4FZ_3n1GEcEaf7Y0w", "role": "크론병 내과치료 부분만(진단·궤양성대장염 없음)"}
+        {"file": "KASID_Crohn_medical_2026_PMC13714430.xml", "id": "1i7bRTzeT6Q0vuyF4FZ_3n1GEcEaf7Y0w", "role": "크론병 내과치료 부분만(진단·궤양성대장염 없음)"},
+        {"file": "KASID_IBD_CD-treatment_2026.pdf", "id": "1MhUleiX8fKm69kWxdmZ6aWMb6fjECyVA", "role": "크론병 내과적 치료 — KJG 2026;86:313-351 · doi 10.4166/kjg.2026.092 · PMID 42928005"},
+        {"file": "KASID_IBD_UC-treatment_2026.pdf", "id": "1aAc2ypTNbYO6t01XzNaHIaB37jF8KUmY", "role": "궤양성 대장염 내과적 치료 — KJG 2026;86:352-405 · doi 10.4166/kjg.2026.091 · PMID 42928006"}
       ]
     },
     {
@@ -598,15 +600,18 @@
       "h22_chapters": [334],
       "access": "public_pdf",
       "source_portal": "gastrokorea.org / kjg.or.kr",
-      "journal": "J Neurogastroenterol Motil",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_gerd_seoul.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "J Neurogastroenterol Motil 2021;27(4):453-481 (2020 Seoul Consensus)",
+      "doi": "10.5056/jnm21077",
+      "pmid": "34642267",
+      "drive_path": "KSNM_GERD_2020.pdf",
+      "drive_doc_id": "1tCarOEdlIrGkwsmevJU-2sDhx0yjZmOG",
+      "status": "ready",
       "keywords": ["위식도역류", "GERD", "PPI", "P-CAB"],
       "check_points": [
         "P-CAB 1차·대체 치료 위치 및 국내 위내시경 초기 시행 문턱"
+      ],
+      "drive_files": [
+        {"file": "KSNM_GERD_2025_focused-update.pdf", "id": "1rNNpYHAlls2SuvgieLlzHgvE7Jxwd_51", "role": "2025 Focused Update(산분비억제) — JNM 2026;32(1):7-18 · doi 10.5056/jnm25128 · PMID 41017123"}
       ]
     },
     {
@@ -622,12 +627,12 @@
       "h22_chapters": [359],
       "access": "public_pdf",
       "source_portal": "kpba.kr",
-      "journal": "Korean J Pancreas Biliary Tract",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_acute-pancreatitis.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Gut Liver 2023;17:34-48 (전체판의 요약 — 원판은 대한췌장담도학회지 2022)",
+      "doi": "10.5009/gnl220108",
+      "pmid": "35975642",
+      "drive_path": "KPBA_acute-pancreatitis_2022.pdf",
+      "drive_doc_id": "1pNAuK102KU8TQtslxx8nRCbuQdNsVQDx",
+      "status": "ready",
       "keywords": ["췌장염", "pancreatitis", "ERCP"],
       "check_points": [
         "목표지향 수액요법, 예방적 항생제 비권고, 담석성 췌장염 ERCP 시점"
@@ -641,17 +646,17 @@
       "topic_ko": "위암",
       "title": "한국위암진료가이드라인 최신 개정판",
       "society": "대한위암학회 (KGCA)",
-      "year": 2022,
+      "year": 2024,
       "slots": ["h80", "surg.upper-gi"],
       "h22_chapters": [85],
       "access": "public_pdf",
       "source_portal": "kgca-i.or.kr / jgc-online.org",
-      "journal": "J Gastric Cancer",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_gastric-cancer.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "J Gastric Cancer 2025;25(1):5-114 (2024 개정 — 2022판 갱신)",
+      "doi": "10.5230/jgc.2025.25.e11",
+      "pmid": "39822170",
+      "drive_path": "KGCA_gastric-cancer_2024.pdf",
+      "drive_doc_id": "1V1Xbo2aOOg8-38CH1iqhc8l7jaiNWPO9",
+      "status": "ready",
       "keywords": ["위암", "gastric-cancer", "ESD", "조기위암"],
       "check_points": [
         "조기위암 ESD 절대/확대 적응증 및 D2 림프절 절제(서구 D1 대비)"
@@ -670,15 +675,18 @@
       "h22_chapters": [86],
       "access": "public_pdf",
       "source_portal": "gastrokorea.org / kjg.or.kr",
-      "journal": "Korean J Gastroenterol",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_colon-polyp.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Korean J Gastroenterol 2022;80(3):115-134 (2022 개정)",
+      "doi": "10.4166/kjg.2022.103",
+      "pmid": "36156035",
+      "drive_path": "KSGE_colon-polyp-surveillance_2022_ko.pdf",
+      "drive_doc_id": "1nbDVPvOrBjcPkfP1c7dDSL8aojMuSb0Q",
+      "status": "ready",
       "keywords": ["대장암", "대장폴립", "선종", "colorectal"],
       "check_points": [
         "선종 개수·크기·융모성/고등급이형성별 대장내시경 추적 간격 vs USMSTF"
+      ],
+      "drive_files": [
+        {"file": "KSGE_colon-polyp-surveillance_2022_en.pdf", "id": "16zg48V4LdKmeKfecFgpKHEb3OMYQaN6d", "role": "영문판 — Clin Endosc 2022;55(6):703-725 · doi 10.5946/ce.2022.136 · PMID 36225130"}
       ]
     },
     {
@@ -687,19 +695,19 @@
       "subject": "순환기내과",
       "subject_slug": "cardiology",
       "topic_ko": "급성관상동맥증후군 (STEMI·NSTEMI)",
-      "title": "대한심장학회·대한심혈관중재학회 급성관상동맥증후군·심근경색 지침",
+      "title": "2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침",
       "society": "대한심장학회 · 대한심혈관중재학회",
       "year": 2024,
       "slots": ["h274", "h275"],
       "h22_chapters": [285, 286],
       "access": "society_check",
       "source_portal": "circulation.or.kr / ksmi.re.kr",
-      "journal": "Korean Circ J",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_cardio_acs.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Korean Circ J 2024;54(12):767-793 — 약물치료 핵심질문 9개만 다룬다(대한심장학회 단독 ACS 지침은 없다)",
+      "doi": "10.4070/kcj.2024.0257",
+      "pmid": "39434369",
+      "drive_path": "KSC_ACS_2024.pdf",
+      "drive_doc_id": "157UPzSVpVDjKCAW3jQWBQt7QtpCaMc1M",
+      "status": "compared",
       "keywords": ["심근경색", "STEMI", "NSTEMI", "ACS", "DAPT"],
       "check_points": [
         "동아시아 출혈 위험(East Asian Paradox) 반영 DAPT 전략 및 퇴원 후 LDL <55"
@@ -718,15 +726,18 @@
       "h22_chapters": [290, 122],
       "access": "society_check",
       "source_portal": "thrombo.or.kr",
-      "journal": "",
+      "journal": "한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013 · 학회 누리집 최신판) + 대한혈액학회 VTE 치료 개정 권고(2021)",
       "doi": "",
       "pmid": "",
-      "drive_path": "KR_cardio_vte.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KSTH_VTE_2013_prevention.pdf",
+      "drive_doc_id": "1qeEL9u6O5jS9SrLwxYU3emtL-FR8Af4-",
+      "status": "compared",
       "keywords": ["심부정맥혈전증", "폐색전증", "DVT", "PE", "VTE"],
       "check_points": [
         "한국인 저발생률·출혈 위험 반영한 수술 후 VTE 예방 위험층화"
+      ],
+      "drive_files": [
+        {"file": "KSH_VTE-treatment_2021.pdf", "id": "1JPrXkyKFCU17cQeyN0rj03CctJpy9l5N", "role": "치료 권고 — Blood Res 2021;56(1) · doi 10.5045/br.2021.2020083 · PMID 33627521"}
       ]
     },
     {
@@ -742,12 +753,12 @@
       "h22_chapters": [140],
       "access": "public_pdf",
       "source_portal": "kdca.go.kr / ksid.or.kr",
-      "journal": "Infect Chemother",
+      "journal": "요로감염 항생제 사용 지침(질병관리청·대한항균요법학회 — 표지 2025, 판권 2026-04 발행)",
       "doi": "",
       "pmid": "",
-      "drive_path": "KR_id_uti.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KDCA_UTI_2026.pdf",
+      "drive_doc_id": "1a4UtOamh6ItkWTTIaln5KqvLjinVsire",
+      "status": "compared",
       "keywords": ["요로감염", "방광염", "신우신염", "UTI", "pyelonephritis"],
       "check_points": [
         "국내 대장균 퀴놀론·TMP-SMX 고내성률 반영 1차 항생제(니트로푸란토인·포스포마이신)",
@@ -767,12 +778,12 @@
       "h22_chapters": [141],
       "access": "public_pdf",
       "source_portal": "stiguide.kr / kdca.go.kr",
-      "journal": "",
+      "journal": "성매개감염 진료지침 2023(질병관리청, ISBN 979-11-6860-270-0)",
       "doi": "",
       "pmid": "",
-      "drive_path": "KR_id_sti.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KDCA_STI_2023.pdf",
+      "drive_doc_id": "1QaAyqMNRGCniJNw46d7RGyRyJH3uxdLk",
+      "status": "compared",
       "keywords": ["성매개감염", "매독", "임질", "클라미디아", "STI", "syphilis"],
       "check_points": [
         "임질 세프트리악손 용량·경구 세픽심 지양",
@@ -792,12 +803,12 @@
       "h22_chapters": [192, 231],
       "access": "public_pdf",
       "source_portal": "kdca.go.kr",
-      "journal": "",
+      "journal": "2026년도 진드기·설치류매개감염병 관리지침(질병관리청 — 쯔쯔가무시증·SFTS 등 통합본) + 말라리아 관리지침",
       "doi": "",
       "pmid": "",
-      "drive_path": "KR_id_endemic_2025.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KDCA_tick-rodent-borne_tsutsugamushi-SFTS_2026.pdf",
+      "drive_doc_id": "1uV7NDQmyMNPEpZzI91-sW5SfoEcvNi-u",
+      "status": "compared",
       "keywords": ["말라리아", "쯔쯔가무시", "SFTS", "scrub-typhus", "malaria"],
       "check_points": [
         "국내 토착 삼일열말라리아(클로로퀸+프리마퀸) vs 해외 열대열말라리아",
@@ -1045,15 +1056,18 @@
       "h22_chapters": [355],
       "access": "public_pdf",
       "source_portal": "kasl.org / e-cmh.org",
-      "journal": "Clin Mol Hepatol",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "KR_gi_cirrhosis.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Clin Mol Hepatol 2026;32:961-1028 (복수·관련 합병증 2026 개정)",
+      "doi": "10.3350/cmh.2026.0281",
+      "pmid": "42050795",
+      "drive_path": "KASL_cirrhosis_2026_ascites.pdf",
+      "drive_doc_id": "1ypCZLgVNzp2n1N17hQtiRSOwddyprhbI",
+      "status": "ready",
       "keywords": ["간경변", "복수", "정맥류", "간성뇌증", "SBP", "cirrhosis"],
       "check_points": [
         "SBP 진단·예방 항생제, 식도정맥류 1차/2차 예방(NSBB·EVL)"
+      ],
+      "drive_files": [
+        {"file": "KASL_cirrhosis_2019_varices-HE.pdf", "id": "1OpnHJ4c9VDzMhzkp-chPuyh9ciI6lWgC", "role": "정맥류·간성뇌증 — CMH 2020;26:83-127(2019판, 미개정) · doi 10.3350/cmh.2019.0010n · PMID 31918536"}
       ]
     },
     {
@@ -1069,15 +1083,18 @@
       "h22_chapters": [83],
       "access": "society_check",
       "source_portal": "lungca.or.kr / ncc.re.kr",
-      "journal": "",
+      "journal": "폐암 진료지침 3판(대한폐암학회, 2023 · 단행본)",
       "doi": "",
       "pmid": "",
-      "drive_path": "KR_pulm_lung-cancer.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KALC_lung-cancer_2023.pdf",
+      "drive_doc_id": "1zC-BD_7IbLDPCLzVCWzEFLB5oyN-vEPX",
+      "status": "compared",
       "keywords": ["폐암", "lung-cancer", "저선량", "EGFR"],
       "check_points": [
         "국가검진(54-74세 30갑년) vs USPSTF(50-80세 20갑년), 동아시아 비흡연 EGFR 변이"
+      ],
+      "drive_files": [
+        {"file": "MOHW-NCC_lung-screening-quality_2021.pdf", "id": "1Vs2CAKC7GlBhYdk6qT9xOK3lJrsnw7cy", "role": "폐암검진 질지침(보건복지부·국립암센터, 2021)"}
       ]
     },
     {

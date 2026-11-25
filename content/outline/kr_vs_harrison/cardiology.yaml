@@ -2,7 +2,8 @@
 # 형식: content/outline/kr_vs_harrison/_template.yaml · 검증: python pipelines/kr_guidelines.py --check
 # verified: text = 두 원문(해리슨 22판 H22_<장> 문서의 인쇄쪽 표지 + 국내 지침 PDF 인쇄쪽)을 이번 대조에서 직접 읽은 항목만.
 # 국내 지침 원문: 드라이브 `_가이드라인` 폴더(파일 ID 는 content/outline/kr_guidelines.json).
-# 급성관상동맥증후군(kr-ksc-acs)·정맥혈전색전증(kr-ksth-vte)은 원문 확보 뒤 이 파일에 덧붙인다.
+# 급성관상동맥증후군은 2024 대한심근경색증학회·한국보건의료연구원 약물치료 지침(대한심장학회 단독 ACS 지침은 없다).
+# 정맥혈전색전증 국내 원문은 한국혈전지혈학회 예방 권고안 제2판(2013)과 대한혈액학회 치료 권고 개정(Blood Res 2021) — 둘 다 kr-ksth-vte 로 묶고 kr_cite 로 구분한다.
 # 해리슨 288장 p.2147 당뇨병 목표 「<130/90」은 Doc 표기 그대로이며 인쇄본 오탈자 가능성이 있다(항목 usmle_rule 참고).
 subject: 순환기내과
 subject_slug: cardiology
@@ -462,4 +463,316 @@ items:
   kr_says: 절대 철 결핍 ferritin <100 ng/mL, 기능적 철 결핍 ferritin 100–299 ng/mL 이면서 TSAT <20%. 철 결핍성 빈혈 심부전에 정맥 철분(ferric carboxymaltose) 합리적(Class IIa, LOE A). LVEF <50% 이고 최근 급성 심부전으로 입원한 철 결핍 환자에 정맥 철분이 심부전 입원 감소에 도움(Class IIa, LOE B). 원인 미상 빈혈에 조혈 자극제 권고 안 함(Class III, LOE B).
   kmle_rule: KMLE 문항·정리본은 ferritin <100 또는 100–299 ng/mL + TSAT <20% 를 철 결핍으로 정의하고, 정맥 ferric carboxymaltose(Class IIa)를 적용하며 조혈 자극제는 쓰지 않는다.
   usmle_rule: USMLE 문항은 같은 정의로 철 결핍을 찾아 경구가 아닌 정맥 철분으로 증상·기능 개선을 노리고, 사망률 감소를 근거로 들지 않는다.
+  verified: text
+- id: diff.cardio.acs.p2y12-choice
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2112]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:783-784
+  diff_type: first_line
+  topic: DAPT 의 P2Y12 억제제 선택 — 강력 P2Y12 우선 여부
+  harrison_says: 퇴원 뒤 권고 항혈소판 요법은 저용량(75–100 mg/d) 아스피린 + P2Y12 억제제이고 'prasugrel or ticagrelor is favored over clopidogrel', 출혈 위험이 높지 않으면 12개월(p.2112). prasugrel·ticagrelor 는 clopidogrel 보다 허혈 사건을 더 줄이지만 둘 다 출혈을 늘린다(p.2110).
+  kr_says: 권고문은 'aspirin and P2Y12 receptor inhibitor' 12개월 DAPT(Strong, Moderate)이며 어느 P2Y12 억제제를 먼저 쓸지는 정하지 않는다(Table 6 p.783). 동아시아인(한국인 포함)은 허혈 위험보다 출혈 위험이 상대적으로 높고 prasugrel·ticagrelor 사용 증가로 출혈 위험이 커진다고 적는다(p.784).
+  kmle_rule: KMLE 문항·정리본은 '아스피린 + P2Y12 억제제 12개월' 을 정답으로 두고, 강력 P2Y12 를 반드시 골라야 하는 보기 구도를 만들지 않는다(한국 지침은 약제 우선순위를 정하지 않음).
+  usmle_rule: USMLE 문항은 출혈 고위험이 아니면 aspirin + prasugrel 또는 ticagrelor(clopidogrel 보다 우선)를 적용한다.
+  verified: text
+- id: diff.cardio.acs.dapt-12-months
+  slot: h275
+  h22_chapter: 286
+  h22_cite: '[[harrison-22: 286장 p.2126]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:783
+  diff_type: same
+  topic: ACS 뒤 DAPT 기본 기간 12개월
+  harrison_says: STEMI 뒤 아스피린 + P2Y12 길항제(clopidogrel·prasugrel·ticagrelor) DAPT 를 출혈 고위험이나 출혈 합병증이 없으면 12개월 권고(p.2126). NSTE-ACS 도 장기 항응고 적응증이 없으면 'preferably for 12 months'(285장 p.2110).
+  kr_says: ACS 환자에서 허혈 사건 예방을 위해 아스피린 + P2Y12 억제제 DAPT 를 12개월 권고(Strong, LOE Moderate). 3–6개월 DAPT 뒤 아스피린 단독과 비교한 메타분석에서 12개월 DAPT 는 사건 차이 없이 전체 출혈만 38% 늘었다(p.782) — 그래도 12개월 DAPT 의 이득이 출혈 위험보다 크다고 판단(p.783).
+  kmle_rule: KMLE 문항·정리본은 ACS 뒤 기본 DAPT 기간 12개월을 적용한다(두 출처 같음).
+  usmle_rule: USMLE 문항은 출혈 고위험이 아니면 DAPT 12개월을 적용한다.
+  verified: text
+- id: diff.cardio.acs.dapt-de-escalation
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2112]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:783-785
+  diff_type: algorithm
+  topic: DAPT 단계적 감량(de-escalation) 대상·시점
+  harrison_says: 항응고 중이 아닌 출혈 고위험·허혈 저위험 환자에서 3–6개월 DAPT 뒤 아스피린을 끊고 P2Y12 단독, 또는 아스피린은 유지하며 '3 months' 에 prasugrel·ticagrelor → clopidogrel 로 전환. 'De-escalation of DAPT is not recommended in the first 30 days following ACS'(p.2112).
+  kr_says: 사건 없는 ACS 환자에서 발병 1–3개월 뒤 DAPT 감량을 고려할 수 있다(Weak, Moderate). 방법 셋 — ① 강력 P2Y12 → clopidogrel 전환 ② prasugrel 10 → 5 mg ③ 아스피린 조기 중단 + P2Y12 단독. P2Y12 조기 중단 후 아스피린 단독은 감량에 포함하지 않는다(Table 6 p.783). 출혈 고위험 여부와 무관하게 사건 없는 환자 대상이며, 근거에는 1개월 뒤 무유도 전환(TALOS-AMI)·1개월 뒤 prasugrel 감량(HOST-REDUCE-POLYTECH ACS) 같은 한국 RCT 가 들어 있다(p.785).
+  kmle_rule: KMLE 문항·정리본은 사건 없는 ACS 환자의 1–3개월 뒤 감량(세 방법 중 하나)을 '고려 가능' 으로 두고, P2Y12 를 끊고 아스피린만 남기는 보기는 오답으로 본다.
+  usmle_rule: USMLE 문항은 출혈 고위험·허혈 저위험 환자에 한해 감량하고, 첫 30일 안의 감량은 오답으로 본다.
+  verified: text
+- id: diff.cardio.acs.prasugrel-dose
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2110]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:783-785
+  diff_type: algorithm
+  topic: prasugrel 유지 용량 — 10 mg 와 5 mg 감량
+  harrison_says: prasugrel 은 PCI 가 예정된 ACS 에서 관상동맥 해부를 안 뒤 부하 60 mg, 이어 10 mg/d. 뇌졸중·TIA 병력이나 출혈 고위험이면 금기(p.2110). 5 mg 감량 전략은 언급하지 않는다.
+  kr_says: DAPT 감량 방법의 하나로 'Reducing the dose of prasugrel from 10 mg to 5 mg'(Table 6 p.783, Figure 4 p.784; Weak, Moderate). 근거는 1개월 뒤 무유도로 10 → 5 mg 로 줄인 한국 HOST-REDUCE-POLYTECH ACS 시험(p.785). 동아시아인 시작 용량 자체를 따로 정하지는 않는다.
+  kmle_rule: KMLE 문항·정리본은 사건 없는 ACS 환자에서 1–3개월 뒤 prasugrel 10 → 5 mg 감량을 허용되는 감량 방법으로 본다.
+  usmle_rule: USMLE 문항은 prasugrel 60 mg 부하 → 10 mg/d 와 뇌졸중·TIA 병력 금기를 적용한다.
+  verified: text
+- id: diff.cardio.acs.extended-dapt-high-ischemic-risk
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2111]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:783
+  diff_type: threshold
+  topic: 12개월 넘는 DAPT 연장 — 허혈 고위험·출혈 고위험 정의
+  harrison_says: 12개월 넘는 DAPT 는 좌주간부·근위 LAD·근위 분지 스텐트, 재발 MI, 스텐트 혈전증 같은 고위험에서 선호(p.2111). 이전 MI·당뇨·정맥 이식편·심부전 등 허혈 고위험이면서 출혈 저위험이면 최대 3년 DAPT 가 이롭고, ticagrelor 는 1년 뒤 60 mg bid 로 줄인다(p.2112). 출혈 고위험의 점수 기준은 제시하지 않는다.
+  kr_says: 허혈 고위험·출혈 저위험 ACS 에서 12개월 넘는 DAPT 연장을 고려할 수 있다(Weak, Moderate). 허혈 고위험 = 나이 ≥65세·당뇨·MI 재발·다혈관 질환·만성 콩팥병. 출혈 고위험 = PRECISE-DAPT 점수 ≥25 또는 ARC-HBR 기준 충족(Table 6 p.783).
+  kmle_rule: KMLE 문항·정리본은 허혈 고위험(≥65세·당뇨·MI 재발·다혈관·CKD)이면서 출혈 저위험일 때만 DAPT 연장을 '고려' 로 두고, 출혈 고위험은 PRECISE-DAPT ≥25 또는 ARC-HBR 로 판단한다.
+  usmle_rule: USMLE 문항은 이전 MI·당뇨·복잡 스텐트 등 허혈 고위험 + 출혈 저위험에서 DAPT 연장(ticagrelor 60 mg bid)을 적용한다.
+  verified: text
+- id: diff.cardio.acs.after-12-months-monotherapy
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2112]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:784
+  diff_type: first_line
+  topic: 12개월 뒤 단일 항혈소판제 — 아스피린 또는 clopidogrel
+  harrison_says: 12개월 뒤에는 'antiplatelet monotherapy with a single antiplatelet' 를 이어 간다. 장기 완전 용량 항응고 적응증이 있으면 항혈소판제 없이 항응고제만 장기간(p.2112). 단일제의 종류는 정하지 않는다.
+  kr_says: '기본 전략 도표: 첫 12개월 DAPT(아스피린 + P2Y12 억제제), ''Beyond the first 12 months – Aspirin or clopidogrel monotherapy''(Figure 4 p.784).'
+  kmle_rule: KMLE 문항·정리본은 12개월 뒤 단일 항혈소판제로 아스피린 또는 clopidogrel 을 모두 정답으로 인정한다.
+  usmle_rule: USMLE 문항은 12개월 뒤 단일 항혈소판제(보통 아스피린) 유지를 적용한다.
+  verified: text
+- id: diff.cardio.acs.ldl-target
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2112]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:773
+  diff_type: same
+  topic: ACS 뒤 고강도 스타틴과 LDL-C 목표
+  harrison_says: PCI 전 조기 고강도 스타틴(atorvastatin 80 mg/d·rosuvastatin 40 mg/d)을 시작해 이어 간다(p.2110). 장기 관리 목표 'LDL-C <55 mg/dL'(p.2112). 최대 내약 스타틴에 반응이 부족하면(LDL-C 감소 <50%) ezetimibe 10 mg·PCSK9 억제제 추가(p.2110).
+  kr_says: ACS 환자에게 고강도 스타틴 권고(Strong, LOE Low), 입원 초기 조기 투여. 'LDL-C levels are reduced to below 55 mg/dL and by at least 50% from the baseline' 을 확인한다(Table 3 p.773).
+  kmle_rule: KMLE 문항·정리본은 ACS 뒤 고강도 스타틴과 LDL-C <55 mg/dL 및 기저치 대비 ≥50% 감소를 함께 목표로 적용한다(두 출처 같음).
+  usmle_rule: USMLE 문항은 고강도 스타틴과 LDL-C <55 mg/dL 목표를 적용한다.
+  verified: text
+- id: diff.cardio.acs.nonstatin-add-on-stepwise
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2112]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:773-775
+  diff_type: algorithm
+  topic: 목표 미달 시 비스타틴 추가 순서(ezetimibe → PCSK9)
+  harrison_says: 집중 지질 강하 = 고강도 스타틴, ezetimibe, 필요하면 PCSK9 억제제 또는 bempedoic acid 를 더해 LDL-C <55 mg/dL(p.2112). 재측정 시점이나 보험 기준은 없다.
+  kr_says: '목표 LDL-C 미달이면 비스타틴 병용 권고(Strong, Low). 국내에서 쓸 수 있는 비스타틴은 ezetimibe·PCSK9 억제제(Table 3 p.773). 도표: 고강도 스타틴 → 1–2개월 뒤 목표 미달이면 ezetimibe 추가 → 다시 1–2개월 뒤 미달이면 PCSK9 억제제 추가. 국내 PCSK9 억제제 급여는 최대 내약 스타틴 + ezetimibe 뒤 LDL-C >70 mg/dL 일 때(Figure 1 p.775). 국내 심장내과 의사 52% 는 <55 mg/dL 목표에 동의하지 않았다(p.775).'
+  kmle_rule: KMLE 문항·정리본은 고강도 스타틴 → 1–2개월 뒤 목표 미달 시 ezetimibe → 그래도 미달 시 PCSK9 억제제 순서를 적용한다(bempedoic acid 는 국내 선택지로 쓰지 않는다).
+  usmle_rule: USMLE 문항은 고강도 스타틴에 ezetimibe, 필요하면 PCSK9 억제제(또는 bempedoic acid)를 더하는 순서를 적용한다.
+  verified: text
+- id: diff.cardio.acs.ace-inhibitor-indication
+  slot: h275
+  h22_chapter: 286
+  h22_cite: '[[harrison-22: 286장 p.2121]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:777-778
+  diff_type: threshold
+  topic: ACS 뒤 ACE 억제제·ARB 적응증
+  harrison_says: ACE 억제제는 STEMI 뒤 사망을 줄이고 고위험(전벽·이전 경색·전반적 LV 기능 저하)에서 이득이 가장 크지만, 혈역학적으로 안정된 모든 STEMI(수축기 >100 mmHg)에 선택 없이 써도 단기 이득이 있다(p.2121). 임상 심부전·LV 기능 저하·큰 국소 벽운동 이상·고혈압이면 무기한 지속. ARB 는 ACE 억제제 불내성 + 심부전 징후일 때(p.2122).
+  kr_says: LVEF ≤40% 또는 심부전이 있는 ACS 에 ACE 억제제 권고(Strong, Moderate). LVEF >40% 는 고려 가능(Weak, Low). ARB 는 LVEF ≤40%·심부전에서 ACE 억제제 대안으로 고려(Weak, Low). 사용 전 LVEF 측정 권고(Table 4 p.777). 동아시아인의 ACE 억제제 마른기침 상대위험 2.7배라 한국인에게 ARB 대체를 고려할 수 있다(p.778).
+  kmle_rule: KMLE 문항·정리본은 LVEF ≤40% 또는 심부전이면 ACE 억제제(강한 권고), LVEF >40% 는 '고려' 로 두고, 마른기침이면 ARB 로 바꾼다.
+  usmle_rule: USMLE 문항은 혈역학적으로 안정된(SBP >100) STEMI 에 ACE 억제제를 시작하고, 불내성 + 심부전이면 ARB 를 적용한다.
+  verified: text
+- id: diff.cardio.acs.mra-indication
+  slot: h275
+  h22_chapter: 286
+  h22_cite: '[[harrison-22: 286장 p.2122]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:777-779
+  diff_type: threshold
+  topic: MI 뒤 MRA 추가 기준
+  harrison_says: 장기 MRA(spironolactone·eplerenone)는 치료 용량 ACE 억제제를 이미 쓰고, LVEF ≤40% 이며, 증상성 심부전 또는 당뇨가 있고, 크레아티닌(남 ≥2.5·여 ≥2.0 mg/dL)·칼륨(≥5.0 mEq/L) 금기가 없는 STEMI 에 처방(p.2122).
+  kr_says: 심부전이 있는 ACS 에 MRA 추가 권고(Strong, LOE High). 특히 LVEF ≤40% 에서 권고하되 LVEF 기준은 권고문이 아니라 임상 고려사항으로 내렸다. 기저 칼륨 상승·신기능 저하는 신중히(Table 4 p.777; LVEF 삭제 이유 p.779). 당뇨는 기준에 없다.
+  kmle_rule: KMLE 문항·정리본은 '심부전이 있는 ACS' 를 MRA 추가 적응증으로 두고(특히 LVEF ≤40%), 고칼륨·신기능 저하를 금기 판단 단서로 쓴다.
+  usmle_rule: USMLE 문항은 ACE 억제제 사용 중 LVEF ≤40% + 증상성 심부전 또는 당뇨, Cr·K 기준 충족 시 eplerenone/spironolactone 을 적용한다.
+  verified: text
+- id: diff.cardio.acs.beta-blocker-preserved-ef
+  slot: h275
+  h22_chapter: 286
+  h22_cite: '[[harrison-22: 286장 p.2121]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:780-781
+  diff_type: threshold
+  topic: ACS 뒤 경구 베타차단제 — 박출률 보존 환자
+  harrison_says: STEMI 뒤 경구 베타차단제는 금기(심부전·심한 LV 기능 저하·심차단·기립성 저혈압·천식)가 아니면 대부분에 유용하고, 예후가 아주 좋은 환자(연 사망 <1%, <55세, 이전 MI 없음, 정상 심실 기능 등)는 이득이 적을 수 있다(p.2121). 급성 심부전·저박출·쇼크 위험이 없으면 첫 24시간 안에 경구 시작(p.2118).
+  kr_says: LVEF ≤40% ACS 에 경구 베타차단제 권고(Strong, Moderate). 박출률 보존·심부전 근거 없는 ACS 는 고려 가능(Weak, Very Low). 금기 — 급성 심부전 징후(폐부종)·쇼크 저혈압·서맥·반응성 기도 질환. 사용 전 LVEF 측정 권고(Table 5 p.781). 박출률 보존 환자의 사용·기간 근거는 아직 결론이 없다(p.780).
+  kmle_rule: KMLE 문항·정리본은 LVEF ≤40% 면 경구 베타차단제(강한 권고), 박출률 보존·심부전 없음은 '고려' 로 두고, 폐부종·쇼크·서맥·반응성 기도 질환을 금기로 쓴다.
+  usmle_rule: USMLE 문항은 금기가 없으면 STEMI 뒤 24시간 안 경구 베타차단제를 대부분 환자에게 적용한다.
+  verified: text
+- id: diff.cardio.acs.oac-antithrombotic
+  slot: h274
+  h22_chapter: 285
+  h22_cite: '[[harrison-22: 285장 p.2111]]'
+  kr_guideline_id: kr-ksc-acs
+  kr_cite: 2024 대한심근경색증학회·한국보건의료연구원 급성관상동맥증후군 약물치료 지침 Korean Circ J 2024;54:783,788
+  diff_type: algorithm
+  topic: 경구 항응고 적응증이 있는 ACS — 삼제 → 이제 요법
+  harrison_says: 경구 항응고 중인 AF 환자가 PCI 를 받으면 아스피린을 퇴원 뒤 또는 늦어도 PCI 1개월에 끊고 P2Y12 억제제 + DOAC 를 1년, 이후 대부분 항응고제 단독(p.2111). 같은 장 p.2112 는 아스피린을 퇴원 시 또는 1주에 끊고 항응고제 + clopidogrel 을 12개월까지 이어 간다고 적는다.
+  kr_says: 장기 경구 항응고 적응증이 있는 출혈 고위험 ACS 에 이제 요법(NOAC + P2Y12 억제제)을 우선 고려할 수 있다(Weak, Very Low) — 삼제(warfarin + P2Y12 + 아스피린)보다 출혈을 줄인다(Table 6 p.783). 아스피린 중단 시점은 권고하지 않고 ESC 2023 의 1주 뒤 이제 전환(Class I)을 소개만 한다(p.788).
+  kmle_rule: KMLE 문항·정리본은 항응고 적응증이 있는 ACS 에서 삼제보다 NOAC + P2Y12 억제제 이제 요법을 고르고, 아스피린 중단의 정확한 날짜를 묻지 않는다.
+  usmle_rule: USMLE 문항은 아스피린을 퇴원 시(늦어도 1주~1개월)에 끊고 DOAC + clopidogrel 을 12개월, 이후 항응고제 단독을 적용한다.
+  verified: text
+- id: diff.cardio.vte.postop-prophylaxis-risk-tiers
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2164]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013) p.17–18, p.21–22
+  diff_type: algorithm
+  topic: 수술 후 VTE 예방 — 위험 단계별 기계적 vs 약물 예방
+  harrison_says: 'Table 290-7: 고위험 비정형외과 수술은 UFH 5000 U SC bid/tid · enoxaparin 40 mg 매일 · dalteparin 2500/5000 U 매일. 기계적 예방(간헐적 공기 압박 · 압박 스타킹)은 ''Anticoagulation contraindicated'' 칸에만 놓인다. ''Low-dose UFH or LMWH is the most common form of in-hospital prophylaxis.'''
+  kr_says: '건강보험심사평가원 증상성 VTE 발생률로 4단계 — 최저위험(0–0.5%) · 저위험(0.5–1.5%) · 중위험(1.5–3.0%) · 고위험(>3%)(p.17). 표 1-6: 최저위험 = 조기보행 · 적극적 운동, 저위험 = 압박 스타킹 혹은 간헐적 공기 압박법, 중위험 = 기계적 예방 또는 LMWH · UFH 등, 고위험 = 항응고 약물(p.18). 권고: 최저위험군 ''적극적인 예방 방법은 권고되지 않는다(2B)'', 저위험군 ''비약물적 예방 방법이 권고되며 약물요법은 권고되지 않는다(2B)'', 고위험군은 항응고요법을 적극 추천하고 ''간헐적 공기 압박법 등과 같은 비약물요법의 단독 사용은 권고되지 않는다(2B)''(p.21–22).'
+  kmle_rule: KMLE 문항·정리본은 국내 4단계 기준을 적용한다 — 저위험 수술은 기계적 예방만(약물 ✗), 중위험은 기계적 또는 약물, 고위험은 항응고 약물(기계적 단독 ✗).
+  usmle_rule: USMLE 문항은 Harrison Table 290-7 기준을 적용한다 — 입원·고위험 수술 환자는 저용량 UFH 또는 LMWH, 기계적 예방은 항응고 금기일 때.
+  verified: text
+- id: diff.cardio.vte.korean-lower-incidence-major-ortho
+  slot: h117
+  h22_chapter: 122
+  h22_cite: '[[harrison-22: 122장 p.940]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013) p.2, p.17
+  diff_type: threshold
+  topic: 한국인 VTE 발생률 — 고관절·슬관절 치환술 위험 단계
+  harrison_says: '''Significant risk is incurred by major orthopedic, abdominal, or neurologic surgeries.'' 일반 인구 발생: ''DVT or pulmonary embolism (PE) occurs in ∼1–2 individuals per 1000 each year''(p.939).'
+  kr_says: '''한국인에서의 고관절 수술 후 VTE 발생빈도는 8.7-10.4%로 서양의 50-60%에 비해 낮다… 증상을 동반한 경우 역시 0-0.9%로 1-2%의 서양의 자료에 비해 낮다. 따라서 한국인에서의 고관절 수술의 VTE 예방위험 정도는 서양인 보다 적어도 한 단계 낮다''(p.2). 표 1-5 에서 고관절·슬관절 전치환술·골반골절수술은 ''중위험'', 고령·전신마취·혈전증 기왕력·암 등이 동반되어야 ''고위험''(p.17).'
+  kmle_rule: KMLE 문항·정리본은 한국인 VTE 위험을 서양보다 한 단계 낮게 본다 — TKA/THA 단독은 중위험(기계적 또는 약물 예방), 추가 위험인자가 있어야 고위험.
+  usmle_rule: USMLE 문항은 major orthopedic surgery 를 significant(고위험) VTE 위험으로 보고 약물 예방을 기본으로 한다.
+  verified: text
+- id: diff.cardio.vte.major-ortho-prophylaxis-options
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2164]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013) p.52–53
+  diff_type: first_line
+  topic: 주요 정형외과 수술 예방 — 약제 선택과 기계적 예방의 자리
+  harrison_says: 'Table 290-7 Major orthopedic surgery: Aspirin 81 mg twice daily · Rivaroxaban 10 mg daily(수술 후 6–10시간) · Dabigatran 110 mg 첫날 후 220 mg · Apixaban 2.5 mg bid(12–24시간) · Warfarin(INR 2.0) · Enoxaparin 40 mg · Dalteparin · Fondaparinux 2.5 mg. 기계적 예방은 ''Anticoagulation contraindicated'' 칸.'
+  kr_says: '''주요 정형외과 수술을 시행받는 환자에서 최소 10-14일 간의 아래와 같은 예방 방법을 권고한다(Grade 2A). TKA/THA: LMWH; 폰다파리눅스; Dabigatran, apixaban, 리바록사반; 저용량 UFH; 와파린; 아스피린; 또는 기계적 압박요법*''(*출혈 위험이 높은 경우). ''고령, 전신마취, 이전의 혈전증의 기왕력, 암과 같은 추가적인 혈전 발생의 위험인자가 있는 경우는 LMWH; 폰다파리눅스; dabigatran, apixaban, 리바록사반; 저용량 UFH; 와파린 등을 사용할 것을 권고한다(Grade 2B)''(p.53). 본문: 한국은 수술 후 VTE 유병률이 낮아 출혈 합병증을 ''서양보다 좀 더 강조'', 아스피린은 고위험인자가 없는 환자에서 고려(p.52).'
+  kmle_rule: KMLE 문항·정리본은 TKA/THA 예방을 최소 10–14일, 추가 위험인자가 없으면 아스피린도 선택지, 추가 위험인자(고령·전신마취·VTE 기왕력·암)가 있으면 항응고 약물로 쓴다.
+  usmle_rule: USMLE 문항은 Harrison Table 290-7 의 약제(아스피린 81 mg bid · DOAC · LMWH 등)를 쓰고 기계적 예방은 항응고 금기일 때로 둔다.
+  verified: text
+- id: diff.cardio.vte.medical-inpatient-prophylaxis
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2164]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013) p.77
+  diff_type: algorithm
+  topic: 내과 입원 환자 예방 — 일률적 약물 예방 여부
+  harrison_says: 'Table 290-7: ''Medically ill patients, especially if immobilized, with a history of prior VTE, with an indwelling central venous catheter, or with cancer (but without active gastroduodenal ulcer, major bleeding within 3 months, or platelet count <50,000)'' → UFH 5000 U bid/tid · enoxaparin 40 mg · dalteparin · fondaparinux 2.5 mg.'
+  kr_says: '''한국인에 대한 약물적 예방 방법에 동반하는 출혈성 합병증의 빈도가 확실하지 않은 현 시점에서는 우리보다 VTE 발생빈도가 훨씬 높은 서구의 권고안에 따라 일률적으로 약물적 예방 방법의 사용을 권장하는 것은 바람직하지 않다… 서양에서의 권고안보다 한 단계 강도를 낮춘 VTE 예방 권고안이 바람직할 것으로 생각된다.'' 권고: 울혈성 심부전 · 심근경색 · 뇌경색 · 침상안정이 필요한 전이암 · VTE 병력 등 위험인자 ≥1 → 출혈 위험 평가 후 적극적 예방(2C); VTE·혈전호발소인 기왕력이 있는 전이암은 출혈 위험이 없는 한 약물적 예방(2A).'
+  kmle_rule: KMLE 문항·정리본은 내과 입원 환자에서 위험인자와 출혈 위험을 평가한 뒤 예방법을 고르고, 서양 기준보다 한 단계 낮은 강도로 본다(일률적 약물 예방 ✗).
+  usmle_rule: USMLE 문항은 부동·VTE 병력·중심정맥관·암이 있는 내과 입원 환자에 출혈 금기가 없으면 저용량 UFH·LMWH·fondaparinux 를 쓴다.
+  verified: text
+- id: diff.cardio.vte.provoked-terminology
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2163]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:7, 9
+  diff_type: terminology
+  topic: 유발(provoked) / 비유발(unprovoked) 구분
+  harrison_says: '''We should no longer classify VTE as "provoked" or "unprovoked," given that many types of provoked VTE have a similar recurrence rate to unprovoked VTE once anticoagulation is discontinued.'' Table 290-5(ESC 2019): provoked/unprovoked 용어는 더 이상 지지되지 않는다. Table 290-6: 재발 위험 저(<3%/년, major surgery/trauma) · 중(3–8%, minor surgery·입원 내과 질환·임신/에스트로겐·장거리 비행·IBD·자가면역·''No identifiable risk factor (formerly called "unprovoked")'') · 고(>8%, active cancer · APS).'
+  kr_says: provoked/unprovoked 구분을 그대로 쓴다 — 'the general anticoagulant treatment period for postoperative VTE is 3 months because of the low risk of recurrence, but is prolonged to 6 months for unprovoked VTE'(p.7). 'Recommendations for the treatment of provoked proximal DVT includes 3 months of anticoagulant therapy. In patients with an unprovoked proximal DVT, extended anticoagulant therapy (at least 3 months and potentially indefinite) is preferred'(p.9).
+  kmle_rule: KMLE 문항·정리본은 국내 권고의 유발/비유발(provoked/unprovoked) 구분으로 치료 기간을 판단한다.
+  usmle_rule: USMLE 문항은 Harrison(ESC 2019)처럼 재발 위험 범주(저·중·고)와 위험인자 종류로 판단하고 provoked/unprovoked 를 결정 근거로 쓰지 않는다.
+  verified: text
+- id: diff.cardio.vte.duration-minor-transient
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2163]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:7, 9
+  diff_type: algorithm
+  topic: 항응고 기간 — 비유발·경미한 일시적 위험인자
+  harrison_says: 'Table 290-5: ''Extended oral anticoagulation without an end date should be considered for patients with a first episode of PE and: a. No identifiable risk factor b. A persistent risk factor c. A minor transient or reversible risk factor.'''
+  kr_says: '수술 후 VTE 3개월, 비유발 VTE 6개월로 연장, 재발 고위험 일부에서 연장 치료 고려(p.7). PE: ''The recommended treatment duration for PE is usually 6 months but may range from 3 months in patients with a transient risk factor to indefinite in patients with ongoing major risk factors (e.g., cancer, recurrent unprovoked PE)''(p.9). 비유발 근위부 DVT는 연장 치료 선호, 출혈 고위험이면 3개월(p.9).'
+  kmle_rule: KMLE 문항·정리본은 일시적 위험인자 VTE 3개월, PE 보통 6개월, 지속 위험인자(암·재발 비유발)는 무기한으로 쓴다.
+  usmle_rule: USMLE 문항은 첫 PE 라도 위험인자 없음·지속 위험인자·경미한 일시적 위험인자이면 종료일 없는 연장 항응고를 고려한다(Harrison Table 290-5).
+  verified: text
+- id: diff.cardio.vte.cancer-associated-agent
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2163]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:10
+  diff_type: first_line
+  topic: 암 연관 VTE — 약제
+  harrison_says: '''For patients with cancer and VTE, prescribe LMWH as monotherapy or a DOAC in the absence of a gastrointestinal cancer, and continue extended-duration anticoagulation until the patient is declared cancer-free. The National Comprehensive Cancer Network guidelines endorse treatment of VTE with apixaban or edoxaban.'''
+  kr_says: '''LMWH was previously the standard treatment for CAT… Recently, a Korean phase IV study with rivaroxaban and 2 phase III trials comparing DOACs to LMWH in patients with CAT reported comparable efficacies with slightly increased bleeding risk for DOACs. Based on the results of these 2 randomized controlled trials, the latest guidelines included rivaroxaban and edoxaban as options for VTE treatment.'' 위장관암에서 DOAC 를 피하라는 구분은 없다. 시작을 막는 요인: 짧은 기대여명 · 심한 혈소판감소 등 출혈 고위험.'
+  kmle_rule: KMLE 문항·정리본은 암 연관 VTE 에 LMWH 또는 rivaroxaban·edoxaban 을 선택지로 쓰고, DOAC 는 출혈이 약간 많다는 점을 단다.
+  usmle_rule: USMLE 문항은 LMWH 또는 DOAC(위장관암이 아닐 때 — NCCN 은 apixaban·edoxaban)를 쓰고 암이 없어질 때까지 연장 항응고한다.
+  verified: text
+- id: diff.cardio.vte.isolated-distal-dvt
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2161]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:9 · 한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013) p.20
+  diff_type: algorithm
+  topic: 고립 원위부(종아리) DVT — 항응고 vs 연속 초음파 관찰
+  harrison_says: ISOLATED CALF DVT 절은 권고 없이 GARFIELD-VTE 등록 결과만 적는다 — 'Almost all isolated calf DVT patients received anticoagulation, and nearly half were anticoagulated for at least 1 year.'
+  kr_says: '2021: 증상이 없고 재발·진행 고위험 특징(부동 · 활동성 암 · 비유발)이 없으며 출혈 위험이 높으면 ''항응고 없이 하지 DVT 연속 선별검사로 관찰할 수 있다''; 급성 증상 · 고위험 특징이 있고 출혈 위험이 없으면 항응고 권고(p.9). 2013: 심한 증상과 혈전 진행 위험인자(D-dimer 양성 · 광범위 · 근위부 근접 · 가역적 유발인자 없음 · 악성종양 · VTE 과거력 · 입원)가 없으면 ''2주 동안 하지정맥초음파를 이용하여 … 정기적으로 관찰하는 것이 권고된다''(p.20).'
+  kmle_rule: KMLE 문항·정리본은 증상·진행 위험인자가 없는 고립 원위부 DVT 에 2주 연속 초음파 관찰을 선택지로 두고, 증상·위험인자가 있으면 표준 항응고로 쓴다.
+  usmle_rule: USMLE 문항은 Harrison 이 관찰 전략을 권고로 다루지 않으므로 고립 종아리 DVT 의 관찰 전략을 Harrison 근거로 출제하지 않는다(Harrison 은 대부분이 항응고를 받았다는 등록 자료만 제시).
+  verified: text
+- id: diff.cardio.vte.ivc-filter
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2163]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:8–9, 12 · 한국 정맥혈전 예방 권고안 제2판(한국혈전지혈학회, 2013) p.20
+  diff_type: algorithm
+  topic: 하대정맥 필터 적응증
+  harrison_says: '''The two principal indications for insertion of an inferior vena cava filter are (1) active bleeding that precludes anticoagulation and (2) recurrent venous thrombosis despite intensive anticoagulation. Prevention of PE in patients who are not candidates for anticoagulation is a much "softer" indication… In most situations, place a retrievable rather than a permanent filter.'''
+  kr_says: '2021: ''An inferior vena cava (IVC) filter can be considered in patients with DVT to prevent PE when anticoagulation is contraindicated (e.g., bleeding), but the general use of IVC filters or permanent indwelling hardware should be avoided''(p.8); 근위부 DVT 에서 활동성 출혈 · 혈소판 <50,000 · 이전 뇌내출혈이면 IVC 필터가 바람직(p.9). 항응고 중 재발(초기 실패)은 필터가 아니라 VKA·DOAC → LMWH 전환, LMWH 는 25–33% 증량(p.12). 2013: 특수한 경우를 제외하고 영구 유치형 필터 권고되지 않음, 회수 가능 필터 권고(p.20).'
+  kmle_rule: KMLE 문항·정리본은 IVC 필터를 항응고 금기(출혈 등)에만 두고, 항응고 중 재발은 LMWH 전환·증량으로 처리한다. 영구 필터는 피한다.
+  usmle_rule: USMLE 문항은 IVC 필터의 주 적응증을 항응고를 막는 활동성 출혈과 강화 항응고에도 재발한 VTE 두 가지로 보고, 회수형 필터를 쓴다.
+  verified: text
+- id: diff.cardio.vte.pregnancy-pe-diagnosis
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2159]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:11
+  diff_type: algorithm
+  topic: PE 진단 알고리즘 — 임신부 · D-dimer
+  harrison_says: Wells 점수로 임상 가능성 → DVT 저가능성·PE 저-중가능성은 D-dimer 단독, 정상이면 영상 불필요; 고가능성은 D-dimer 건너뛰고 영상. D-dimer 는 '…the second or third trimester of pregnancy' 등에서 상승해 비특이적. 50세 초과 저·중간 가능성 PE 의심은 연령 보정 상한(나이 × 10 ng/mL). 임신용 진단 규칙(YEARS)은 언급하지 않는다.
+  kr_says: 진단은 권고 범위 밖이라고 밝힌다('The diagnosis or prophylaxis of VTE is beyond the scope of our recommendation', p.7). 다만 임신부 PE 의심에는 'A recently published pregnancy-adapted YEARS algorithm for the diagnosis of suspected PE can be used to rule out PE safely; in a prospective study, 32–65% of patients avoided unnecessary CTPA scanning, with the highest efficiency during the 1st trimester (Fig. 2)'(p.11).
+  kmle_rule: KMLE 문항·정리본은 임신부 PE 의심에서 pregnancy-adapted YEARS 알고리즘으로 CTPA 를 줄일 수 있다고 쓰고, 일반 성인 진단 알고리즘(Wells·D-dimer)은 국내 치료 권고 범위 밖이므로 Harrison 을 따른다.
+  usmle_rule: USMLE 문항은 Wells → D-dimer(50세 초과 연령 보정) → 영상 순서를 쓰고, 임신 2·3삼분기 D-dimer 는 비특이적이라고 본다.
+  verified: text
+- id: diff.cardio.vte.pregnancy-anticoagulant
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2163]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:11
+  diff_type: same
+  topic: 임신·수유 중 항응고제 — DOAC 금지
+  harrison_says: '''DOACs should not be prescribed during pregnancy or breastfeeding.'''
+  kr_says: '''VKA is contraindicated due to the risk of fetal malformations. The safety of DOACs is not supported by the literature… LMWH is preferred over UFH in terms of convenience.'' 수유: ''UFH, LMWH, and VKA are considered safe anticoagulants, while DOACs are not yet recommended because of insufficient data.'''
+  kmle_rule: KMLE 문항·정리본은 임신 중 VTE 를 LMWH 로 치료하고 DOAC 는 임신·수유 중 쓰지 않는다(국내 권고는 VKA 도 임신 중 금기).
+  usmle_rule: USMLE 문항은 같은 기준 — 임신·수유 중 DOAC 는 쓰지 않는다.
+  verified: text
+- id: diff.cardio.vte.pe-thrombolysis-unstable
+  slot: h279
+  h22_chapter: 290
+  h22_cite: '[[harrison-22: 290장 p.2164]]'
+  kr_guideline_id: kr-ksth-vte
+  kr_cite: 대한혈액학회 VTE 치료 권고 개정 Blood Res 2021;56:8–9
+  diff_type: same
+  topic: PE 혈전용해 — 혈역학적 불안정에 한정
+  harrison_says: '''For massive PE, the U.S. Food and Drug Administration has approved systemically administered 100 mg of recombinant tissue plasminogen activator (tPA) (alteplase) prescribed as a continuous intravenous infusion over 2 h.'' ''For patients with submassive PE who have preserved systolic blood pressure but moderate or severe RV dysfunction, use of fibrinolysis remains controversial.'''
+  kr_says: '''as the risk of bleeding increases, this method should be considered only in cases of hemodynamically unstable PE''(p.8). 불안정 PE 메타분석의 사망 감소는 ''mainly accounted for by studies including hemodynamically unstable patients''; 혈역학적으로 안정된 PE 는 항응고가 기본(p.9).'
+  kmle_rule: KMLE 문항·정리본은 전신 혈전용해를 혈역학적으로 불안정한 PE 에만 쓴다.
+  usmle_rule: USMLE 문항은 같은 기준 — massive(저혈압) PE 에 alteplase 100 mg 2시간, 정상 혈압 + RV 기능 저하(submassive)는 논란.
   verified: text

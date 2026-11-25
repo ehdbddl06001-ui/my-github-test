@@ -1,0 +1,608 @@
+# 국내 가이드라인 vs 해리슨 22판 원문 대조 — 감염내과
+# 형식: content/outline/kr_vs_harrison/_template.yaml · 검증: python pipelines/kr_guidelines.py --check
+# verified: text = 두 원문(해리슨 22판 H22_<장> 문서의 인쇄쪽 표지 + 국내 지침 PDF 인쇄쪽)을 이번 대조에서 직접 읽은 항목만.
+# 국내 지침 원문: 드라이브 `_가이드라인` 폴더(파일 ID 는 content/outline/kr_guidelines.json).
+# 성인 지역사회획득 폐렴(kr-ksid-cap-2018) 항목은 verified: pending — 확보한 한글판 PDF 에 인쇄쪽이 없어 「PDF p.N」으로 적었다. 영문 게재본(Infect Chemother 2018;50:160-198, 봇 차단)을 확보하면 인쇄쪽으로 바꿔 text 로 올린다.
+# 말라리아 항목의 국내 원문은 2026년도 말라리아 관리지침(질병관리청 — 드라이브 KDCA_malaria_management_2026.pdf), 쯔쯔가무시증은 2026년도 진드기·설치류매개감염병 관리지침. 둘 다 kr-kdca-endemic 트랙.
+subject: 감염내과
+subject_slug: infectious-disease
+updated: '2026-11-25'
+items:
+- id: diff.id.cap.outpatient-macrolide-monotherapy
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1028]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.15 (내성률 PDF p.7)
+  diff_type: first_line
+  topic: 외래 macrolide 단독요법 허용 여부
+  harrison_says: '외래 동반질환·내성 위험 없는 환자 표준요법에 ''Monotherapy with a macrolide''가 있으나 각주 ''If local prevalence of pneumococcal resistance is <25%''. 본문: ''Monotherapy with a macrolide is recommended in the guidelines only if there are contraindications to amoxicillin or doxycycline and there is documented low risk of macrolide resistance (<25%).'' p.1026: 미국 macrolide 내성 S. pneumoniae ''approximately 40%'' — ''In these situations, a macrolide should not be used as empirical monotherapy.'''
+  kr_says: '''2007년 IDSA/ATS, 2009년 BTS, 2011년 ERS/ESCMID 지침에서는 macrolide 또는 tetracycline 단독치료도 권고되고 있으나, 본 지침에서는 이를 제외하였다. 이는 이들 항생제가 국내 S. pneumoniae 분리주에서 높은 내성률을 보이기 때문이다.'' 국내 S. pneumoniae ''erythromycin, azithromycin 내성률은 여전히 73-81% 가량으로 높다''(PDF p.7). 주사→경구 전환 때도 미국식 경구 macrolide 단독 전환을 그대로 받아들일 근거가 없다고 적는다(PDF p.17).'
+  kmle_rule: KMLE 문항·정리본은 외래 지역사회획득 폐렴에서 macrolide(또는 tetracycline) 단독요법을 쓰지 않는다(국내 폐렴구균 macrolide 내성 73-81%).
+  usmle_rule: USMLE 문항은 macrolide 단독요법을 국소 폐렴구균 macrolide 내성 <25% 이고 amoxicillin·doxycycline 금기일 때만 허용하는 기준을 적용한다.
+  verified: pending
+- id: diff.id.cap.outpatient-first-line
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1027]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.14
+  diff_type: first_line
+  topic: 외래 경험적 항생제 1차 선택
+  harrison_says: 'Table 131-4: 동반질환·내성 위험 없음 → ''Combination therapy with amoxicillin (1 g tid) + either a macrolide or doxycycline (100 mg bid) or Monotherapy with doxycycline (100 mg bid) or Monotherapy with a macrolide''. 동반질환(만성 심·폐·간·신장질환, 당뇨, 알코올중독, 악성종양, 무비증) ± 내성 위험 → ''amoxicillin/clavulanate or a cephalosporin + either a macrolide or doxycycline'' 또는 ''Monotherapy with a respiratory fluoroquinolone''. 본문: ''For those without comorbidity or resistance risk factors, amoxicillin alone or doxycycline is recommended in the guidelines.'''
+  kr_says: 'KQ 8 권고: ''경험적 항생제로 β-lactam 사용을 권장한다(권고강도: 강함, 근거수준: 높음)'', ''경험적 항생제로 respiratory fluoroquinolone 사용을 권장한다(권고강도: 강함, 근거수준: 높음)''. 요점: ''β-lactam + macrolide는 비정형 폐렴이 의심되는 경우에 한해 권고한다.'' 추천 β-lactam: amoxicillin, amoxicillin-clavulanate, cefditoren, cefpodoxime. 동반질환에 따른 층화와 doxycycline 선택지는 없다.'
+  kmle_rule: KMLE 문항·정리본은 외래 1차로 β-lactam(amoxicillin 등) 단독 또는 respiratory fluoroquinolone 단독을 쓰고, macrolide 병합은 비정형 폐렴 의심 때만 쓴다.
+  usmle_rule: USMLE 문항은 동반질환 유무로 나눠 건강인은 amoxicillin 또는 doxycycline(±macrolide), 동반질환자는 amoxicillin/clavulanate·cephalosporin + macrolide/doxycycline 또는 respiratory fluoroquinolone 을 쓴다.
+  verified: pending
+- id: diff.id.cap.fluoroquinolone-tb-caution
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1027]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.14–15
+  diff_type: first_line
+  topic: 결핵 배제 전 fluoroquinolone 경험적 사용
+  harrison_says: 'Table 131-4: 동반질환자 외래 표준요법에 ''Monotherapy with a respiratory fluoroquinolone''(levofloxacin 750 mg/d, moxifloxacin 400 mg/d, gemifloxacin 320 mg/d). 이 표·본문에는 결핵 관련 제한이 없다.'
+  kr_says: 'KQ 8: ''결핵을 배제할 수 없는 경우에는 respiratory fluoroquinolone의 경험적 사용을 피한다(권고강도: 약함, 근거수준: 낮음).'' 근거: ''Respiratory fluoroquinolone이 결핵균에도 우수한 항균력을 보이기 때문에 … 결핵 진단이 지연되고 결핵균의 fluoroquinolone 내성을 야기할 우려가 있다.'''
+  kmle_rule: KMLE 문항·정리본은 결핵을 배제할 수 없는 폐렴에서 respiratory fluoroquinolone 을 경험적으로 쓰지 않는다.
+  usmle_rule: USMLE 문항은 동반질환이 있는 외래 환자에게 respiratory fluoroquinolone 단독요법을 표준 선택지로 둔다.
+  verified: pending
+- id: diff.id.cap.oral-cephalosporin-cefuroxime
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1027]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.14
+  diff_type: first_line
+  topic: 외래 경구 cephalosporin — cefuroxime 포함 여부
+  harrison_says: 'Table 131-4 각주 f: 동반질환자 병합요법의 cephalosporin = ''Cefpodoxime (200 mg bid) or cefuroxime (500 mg bid)''.'
+  kr_says: 추천 경구 cephalosporin 은 cefpodoxime 과 cefditoren. '반면, cefuroxime의 경우 국내 분리 S. pneumoniae의 내성률이 상당히 높아서 권고안에서 제외되었다.'
+  kmle_rule: KMLE 문항·정리본은 외래 폐렴 경구 cephalosporin 으로 cefpodoxime·cefditoren 을 쓰고 cefuroxime 은 쓰지 않는다.
+  usmle_rule: USMLE 문항은 cefpodoxime 또는 cefuroxime 을 macrolide·doxycycline 과 병합하는 선택지로 인정한다.
+  verified: pending
+- id: diff.id.cap.inpatient-nonsevere-regimen
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1028]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.15–16
+  diff_type: first_line
+  topic: 일반병동 입원(비중증) 경험적 항생제
+  harrison_says: '''For patients with nonsevere infection and no risk factors, treatment should consist of either a combination of a β-lactam and a macrolide or monotherapy with a respiratory fluoroquinolone'' … ''Treatment with a β-lactam plus macrolide combination or a fluoroquinolone alone results in lower mortality than monotherapy with a β-lactam.'' macrolide·FQ 금기면 β-lactam + doxycycline.'
+  kr_says: 'KQ 9: ''일반병실에 입원하는 경증 또는 중등도 폐렴 환자의 경험적 치료 시 β-lactam 항생제 또는 respiratory fluoroquinolone 항생제의 단독투여를 권장한다(권고강도: 약함, 근거수준: 중등도).'' ''β-lactam 항생제와 macrolide 항생제의 병용투여는 비정형세균 감염이 의심되거나, 중증 폐렴인 환자에서 제한적으로 사용한다(권고강도: 약함, 근거수준: 중등도).'' 정맥 β-lactam: amoxicillin/clavulanic acid, ampicillin/sulbactam, cefotaxime, ceftriaxone(PDF p.16).'
+  kmle_rule: KMLE 문항·정리본은 일반병동 경증-중등도 폐렴에 β-lactam 단독 또는 respiratory fluoroquinolone 단독을 쓰고, macrolide 병용은 비정형균 의심·중증일 때만 쓴다.
+  usmle_rule: USMLE 문항은 비중증 입원 폐렴에 β-lactam + macrolide 또는 respiratory fluoroquinolone 단독을 쓰고 β-lactam 단독은 표준으로 두지 않는다.
+  verified: pending
+- id: diff.id.cap.icu-combination-regimen
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1028]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.18
+  diff_type: same
+  topic: 중증(중환자실) 폐렴 경험적 병용요법
+  harrison_says: 'Table 131-5 Severe, No risk factors: ''A β-lactam + a macrolide or A β-lactam + respiratory fluoroquinolone''. ''Observational studies suggest that combination therapy with a β-lactam plus macrolide may be preferable to a β-lactam plus fluoroquinolone.'''
+  kr_says: 'KQ 14·15: ''중환자실 입원치료를 필요로 하는 환자는 β-lactam 단독요법보다는 β-lactam ＋ azithromycin/fluoroquinolone의 병용요법을 권장한다(권고강도: 강함, 근거수준: 중등도)'', ''respiratory fluoroquinolone 단독요법보다는 β-lactam ＋ azithromycin/fluoroquinolone의 병용요법을 권장한다(권고강도: 강함, 근거수준: 중등도).'' β-lactam: ampicillin/sulbactam, cefotaxime, ceftriaxone. 페니실린 과민반응이면 respiratory fluoroquinolone + aztreonam.'
+  kmle_rule: KMLE 문항·정리본은 중환자실 폐렴에 β-lactam + azithromycin 또는 β-lactam + respiratory fluoroquinolone 병용을 쓴다(단독요법 ✗).
+  usmle_rule: USMLE 문항은 중증 폐렴에 β-lactam + macrolide 또는 β-lactam + respiratory fluoroquinolone 병용을 쓴다.
+  verified: pending
+- id: diff.id.cap.mrsa-pseudomonas-coverage
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1028]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.18–19
+  diff_type: algorithm
+  topic: MRSA·녹농균 경험적 추가 기준
+  harrison_says: '''If MRSA or P. aeruginosa has been isolated previously, appropriate empirical therapy should be started in both severe and nonsevere cases.'' 위험 요인이 최근 입원·3개월 내 항생제면 ''appropriate samples should be obtained for culture, and, in severe cases only, extended-spectrum treatment for MRSA or P. aeruginosa should be initiated.'' P. aeruginosa 위험에 기관지확장증·매우 중증 COPD. ''We prefer linezolid over vancomycin as first-line treatment for MRSA''; 배양·비강 PCR 음성이고 48시간에 호전되면 표준요법으로 de-escalation.'
+  kr_says: '중환자실 환자에서 ''P. aeruginosa에 의한 폐렴이 의심되는 경우에는 … antipseudomonal 효과를 가지는 두 가지 항생제의 병용요법을 시행한다'' — (a) antipseudomonal β-lactam(cefepime, piperacillin/tazobactam, imipenem, meropenem) + ciprofloxacin 혹은 levofloxacin, (b) + aminoglycoside + azithromycin, (c) + aminoglycoside + anti-pneumococcal fluoroquinolone. 위험 요인: ''음주, 기관지확장증과 같은 폐의 구조적 질환, 반복되는 만성 폐쇄성 폐질환의 급성 악화로 인해 스테로이드를 자주 투여해 온 병력, 최근 3개월 이내의 항생제 사용력''. 지역사회획득 MRSA 의심 시 ''vancomycin이나 teicoplanin, linezolid을 사용할 수 있고, clindamycin이나 rifampin 추가를 고려해 볼 수 있다.'' 이전 분리력에 따른 위계·비중증 구분은 없다.'
+  kmle_rule: KMLE 문항·정리본은 녹농균 위험 요인(음주·기관지확장증·잦은 스테로이드·3개월 내 항생제)이 있는 중증 폐렴에 antipseudomonal β-lactam 을 포함한 2제 이상 병용을, CA-MRSA 의심에 vancomycin·teicoplanin·linezolid 를 쓴다.
+  usmle_rule: USMLE 문항은 호흡기 검체 이전 분리력이면 중증도와 무관하게 MRSA·녹농균 치료를 추가하고, 최근 입원·항생제만 있으면 배양 후 중증일 때만 추가한다.
+  verified: pending
+- id: diff.id.cap.site-of-care-score
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1026]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.11–12
+  diff_type: algorithm
+  topic: 입원 결정 중증도 점수(CRB-65·CURB-65·PSI)
+  harrison_says: 'CURB-65: ''Patients with a score of 0 (a 30-day mortality rate of 1.5%) can be treated as outpatients. With a score of 1 or 2, the patient should be hospitalized unless the score is entirely or in part attributable to an age of ≥65 years'' … ''≥3, mortality rates are 22% overall; these patients may require ICU admission.'' ''The PSI score has greater efficacy and has been more robustly validated than the CURB-65 criteria but is more difficult to calculate.'' 경구 섭취 불가·순응 문제·실내공기 O2 포화도 <92% 면 입원.'
+  kr_says: 'KQ 6: ''객관적 기준으로는 의원이나 병원급 의료기관의 외래 진료에서는 CRB-65 이용을 권장하며, 응급실 진료 등 혈액검사 결과가 있는 경우에는 CURB-65의 사용을 권장한다(강함, 낮음).'' 요점: ''PSI와 CURB-65/CRB-65 점수체계는 예측력이 동등하나 적용성 면에서 PSI에 비해 CURB-65/CRB-65가 월등''. ''CRB-65로 환자를 평가하여 점수가 0이 아닌 경우 입원이 가능한 병원으로의 전원이나 입원 진료를 고려'' — 단 나이 기준만 만족하고 다른 지표가 안정적이면 외래 고려(PDF p.12).'
+  kmle_rule: KMLE 문항·정리본은 의원 외래에서 CRB-65(0점 외래, 1점 이상 전원·입원 고려 — 나이만 해당하면 예외), 혈액검사가 있으면 CURB-65 로 입원을 판단한다.
+  usmle_rule: USMLE 문항은 PSI 또는 CURB-65(0 외래, 1–2 입원 단 나이 때문이면 예외, ≥3 ICU 고려)와 SpO2 <92% 등 입원 사유를 적용한다.
+  verified: pending
+- id: diff.id.cap.icu-admission-minor-criteria
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1026]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.13
+  diff_type: threshold
+  topic: 중환자실 입실 — 보조기준 3개의 무게
+  harrison_says: '''Neither PSI nor CURB-65 is accurate in determining the need for ICU admission. Patients with septic shock requiring vasopressors or with acute respiratory failure requiring intubation and mechanical ventilation should be admitted directly to an ICU (Table 131-3), and those with three of the nine minor criteria listed in the latter table should be admitted to an ICU or a high-level monitoring unit.'''
+  kr_says: 'KQ 7: ''기계환기 보조가 필요하거나 패혈성 쇽이 동반된 경우에는 중환자실 입원치료가 필요하다(강함, 중등도).'' ''CURB-65가 ≥3이거나 IDSA/ATS 중증폐렴 정의의 보조 인자 기준을 충족하는 경우, 임상적으로 폐렴이 진행하는 경우, 기저질환의 악화가 있는 경우에는 중환자실 입실 필요성에 대해서 검토해야 한다(약함, 낮음).'' 보조기준은 ''특이도는 좋으나 예민도는 중간 정도''.'
+  kmle_rule: KMLE 문항·정리본은 기계환기·승압제 필요 패혈성 쇼크면 중환자실, CURB-65 ≥3 또는 보조기준 충족은 중환자실 필요성 '검토'로 둔다.
+  usmle_rule: USMLE 문항은 주기준 1개면 ICU 직행, 보조기준 9개 중 3개면 ICU 또는 고도 감시 병동 입원으로 둔다.
+  verified: pending
+- id: diff.id.cap.severe-cap-criteria-table
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1026]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.14 (Table 8)
+  diff_type: same
+  topic: IDSA/ATS 중증 폐렴 기준 항목
+  harrison_says: 'Table 131-3 Minor: ''Respiratory rate ≥30 breaths/min; PaO2/FiO2 ratio ≤250; Multilobar infiltrates; Confusion/disorientation; Uremia (BUN level ≥20 mg/dL); Leukopenia (WBC count <4000 cells/μL); Thrombocytopenia (platelet count <100,000 cells/μL); Hypothermia (core temperature <36°C); Hypotension requiring aggressive fluid resuscitation''. Major: ''Respiratory failure requiring invasive mechanical ventilation; Septic shock requiring vasopressors''.'
+  kr_says: 'Table 8 IDSA/ATS 중증 지역사회폐렴 기준 — 주기준(1가지 만족): 침습적 기계환기, 승압제가 필요한 패혈성 쇽. 보조기준(3가지 만족): 호흡수 ≥30회/분, PaO2/FiO2 비 ≤250, 다엽성 침범, 혼돈/지남력장애, 요독증(BUN ≥20 mg/dL), 백혈구감소증(<4,000/mm3), 혈소판감소증(<100,000/mm3), 저체온증(중심 체온 <36°C), 적극적인 수액소생이 필요한 저혈압.'
+  kmle_rule: KMLE 문항·정리본은 IDSA/ATS 주기준 1개 또는 보조기준 3개로 중증 폐렴을 정의한다.
+  usmle_rule: USMLE 문항도 같은 주기준 2개·보조기준 9개(3개 이상) 정의를 쓴다.
+  verified: pending
+- id: diff.id.cap.treatment-duration
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1028]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.16
+  diff_type: threshold
+  topic: 항생제 치료 기간
+  harrison_says: '''A 5-day course of treatment is usually sufficient for uncomplicated CAP, but longer treatment may be required for patients who have not stabilized clinically and for those with bacteremia, metastatic infection, or infection with a more virulent pathogen such as P. aeruginosa or MRSA. There are some data to suggest that in select patients who are doing well and are clinically stable, treatment may be discontinued after 3 days.'''
+  kr_says: 'KQ 10: ''항생제는 적어도 5일 이상 투여한다(권고강도: 강함, 근거수준: 낮음).'' ''통상적으로 항생제는 7-10일 투여하지만 …'' ''치료 종료를 위해서는 48-72시간 동안 발열이 없어야 하고, 치료 종료 전 Table 9의 임상적 안정 기준의 징후 중 1개 이상이 남아 있으면 안 된다.'' ''Legionella 폐렴은 적어도 14일 이상 치료한다.'''
+  kmle_rule: KMLE 문항·정리본은 최소 5일 이상(통상 7-10일), 48-72시간 무열 + 임상적 안정 기준 충족 시 종료, Legionella 는 14일 이상을 적용한다.
+  usmle_rule: USMLE 문항은 합병증 없는 CAP 에 5일 치료를 기본으로 하고, 균혈증·전이 감염·녹농균·MRSA 는 더 길게 둔다.
+  verified: pending
+- id: diff.id.cap.iv-to-oral-switch
+  slot: h126
+  h22_chapter: 131
+  h22_cite: '[[harrison-22: 131장 p.1028]]'
+  kr_guideline_id: kr-ksid-cap-2018
+  kr_cite: 성인 지역사회획득 폐렴 항생제 사용지침(2018, 대한감염학회 등 · 한글판) PDF p.16
+  diff_type: same
+  topic: 주사 → 경구 전환 시점
+  harrison_says: '''For those initially treated with IV agents, a switch to oral treatment is appropriate when the patient can ingest and absorb the drugs, is hemodynamically stable, and is showing clinical improvement.'' fluoroquinolone 은 ''may be given orally from the outset to select patients.'''
+  kr_says: 'KQ 11: ''임상적으로 안정이 되고, 경구 치료가 가능하면, 정주 치료에서 경구 치료로 전환이 가능하다(권고강도: 강함, 근거수준: 높음).'' 전환 기준: ''1) 기침 및 호흡 곤란의 호전, 2) 해열: 8시간 동안 <37.8도 유지, 3) 혈액검사에서 백혈구 수의 정상화, 4) 충분한 경구섭취량 및 정상적인 위장관 흡수 기능''.'
+  kmle_rule: KMLE 문항·정리본은 임상적 안정(호흡기 증상 호전·해열·백혈구 정상화)과 경구 섭취·흡수가 되면 경구로 전환한다.
+  usmle_rule: USMLE 문항은 경구 섭취·흡수 가능, 혈역학적 안정, 임상적 호전이면 경구로 전환한다.
+  verified: pending
+- id: diff.id.uti.cystitis-tmp-smx-first-line
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1093]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.8 <표 5>, p.5, p.19
+  diff_type: first_line
+  topic: 단순 방광염(국소 요로감염) 1차 약 — TMP-SMX 의 자리
+  harrison_says: Preferred agents for acute uncomplicated cystitis include TMP-SMX, nitrofurantoin, fosfomycin, and pivmecillinam. TMP-SMX remains an excellent option where local antibiogram data do not clearly favor other preferred agents or with recent TMP-SMX-susceptible microbiology.
+  kr_says: '국소 요로감염 경험적 항생제 추천 약제 = nitrofurantoin·fosfomycin, 대안 약제(추천 약제를 사용할 수 없는 경우) = TMP-SMX·ciprofloxacin(p.8 <표 5>). 근거: 국소 요로감염 E. coli 감수성 nitrofurantoin 98.9%, fosfomycin 96.8%, TMP-SMX 68.1%, ciprofloxacin 50.9%(p.5). Pivmecillinam 은 지침에 없다. p.19 국소 요로감염 표는 fosfomycin 을 ''대안''칸에 두어 p.8 <표 5>(추천)와 어긋난다. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 단순 방광염 1차 약을 nitrofurantoin·fosfomycin 으로 두고 TMP-SMX 는 대안으로 다룬다(국내 E. coli TMP-SMX 감수성 68.1%).
+  usmle_rule: USMLE 문항은 TMP-SMX·nitrofurantoin·fosfomycin·pivmecillinam 을 모두 1차(preferred) 약으로 다룬다.
+  verified: text
+- id: diff.id.uti.nitrofurantoin-regimen
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1093]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.3, p.12
+  diff_type: threshold
+  topic: Nitrofurantoin 용법·기간
+  harrison_says: 'Table 140-1: nitrofurantoin 100 mg bid, women or men 5–7 days. A 5-day course of nitrofurantoin is as effective as a 3-day course of TMP-SMX. Should not be used with creatinine clearance <30 mL/min.'
+  kr_says: '국소 요로감염 경험적 항생제: Nitrofurantoin 50-100 mg 하루 4회 × 5일 혹은 Fosfomycin 3 g 단회 투여(p.3, p.12 점검표). CrCl <30 사용 금기(p.19). 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 nitrofurantoin 50–100 mg 하루 4회 5일(fosfomycin 3 g 1회)을 적용한다.
+  usmle_rule: USMLE 문항은 nitrofurantoin 100 mg bid 5–7일(여성 TMP-SMX 3일, fosfomycin 3 g 1회)을 적용한다.
+  verified: text
+- id: diff.id.uti.cystitis-fluoroquinolone-reimbursement
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1093]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.8 <표 5> 각주 4, p.12
+  diff_type: legal
+  topic: 방광염의 fluoroquinolone — 국내 급여 기준
+  harrison_says: Alternative agents for cystitis include fluoroquinolones and β-lactams; β-lactams are favored over fluoroquinolones as an alternative. FDA advises against fluoroquinolones for uncomplicated cystitis in women unless no alternatives are available.
+  kr_says: '국소 요로감염 대안 약제에 ciprofloxacin. 각주 4: 국내 급여기준에 따르면 국소 요로감염에서 ciprofloxacin 의 사용은 1차 약제 투여로 호전되지 않는 환자에 투여하는 것이 원칙(p.8). 점검표: ''Ciprofloxacin은 1차 약제로 사용 불가(심평원)''(p.12). 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 방광염에서 ciprofloxacin 을 1차 약으로 쓰지 않고 1차 약 실패 뒤 대안으로만 둔다(심평원 급여기준).
+  usmle_rule: USMLE 문항은 방광염의 fluoroquinolone 을 다른 선택지가 없을 때의 대안으로 두고(FDA 권고), 대안 중에서는 β-lactam 을 먼저 고른다.
+  verified: text
+- id: diff.id.uti.cystitis-beta-lactam-alternative
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1093]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.8 <표 5>, p.19
+  diff_type: first_line
+  topic: 방광염 대안 약 — β-lactam 포함 여부
+  harrison_says: 'β-lactams require longer durations (5–7 days) and have higher failure rates, but are favored over fluoroquinolones as an alternative agent for uncomplicated cystitis (Table 140-1: β-lactams 5–7 days).'
+  kr_says: '국소 요로감염 대안 약제는 TMP-SMX·ciprofloxacin 뿐이며(p.8 <표 5>; p.19 표: 대안 fosfomycin·ciprofloxacin·TMP-SMX) 경구 β-lactam 은 국소 요로감염 약제로 실려 있지 않다. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 방광염 대안 약을 TMP-SMX·ciprofloxacin 으로 두고 경구 β-lactam 을 방광염 대안으로 내지 않는다.
+  usmle_rule: USMLE 문항은 방광염 대안으로 β-lactam(5–7일)을 fluoroquinolone 보다 앞에 둔다.
+  verified: text
+- id: diff.id.uti.pyelonephritis-oral-empirical
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1094]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.8 <표 5>
+  diff_type: same
+  topic: 외래 신우신염(비중증 전신 요로감염) 경구 경험적 약
+  harrison_says: For pyelonephritis not needing hospitalization, empirical TMP-SMX, ciprofloxacin, or levofloxacin based on local antibiogram, with urine culture and short-term follow-up; optimally an initial IV/IM β-lactam or aminoglycoside dose. Oral β-lactams are less effective and should be used with caution. Nitrofurantoin, pivmecillinam, and fosfomycin should not be used for pyelonephritis.
+  kr_says: '전신 요로감염·패혈증이 없는 경우(경구제): 추천 ciprofloxacin·levofloxacin·TMP-SMX, 대안 amoxicillin-clavulanate·cephalosporins. 각주 3: nitrofurantoin 과 경구 fosfomycin 은 전신 요로감염에 일반적으로 부적절(p.8). 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 외래 신우신염 경구 약을 ciprofloxacin·levofloxacin·TMP-SMX 로 두고 nitrofurantoin·fosfomycin 은 쓰지 않는다.
+  usmle_rule: USMLE 문항도 같은 기준(TMP-SMX·ciprofloxacin·levofloxacin, 가능하면 첫 IV/IM 1회)을 적용한다.
+  verified: text
+- id: diff.id.uti.pyelonephritis-iv-empirical
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1094]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.8 <표 5>, p.8 4단계
+  diff_type: algorithm
+  topic: 입원 신우신염 정주 경험적 약 — 패혈증 여부로 나누기
+  harrison_says: 'For hospitalized patients, empirical IV β-lactam chosen by prior resistant isolates and local antibiogram. Parenteral options for uncomplicated pyelonephritis: late-generation cephalosporins (ceftriaxone, cefepime), piperacillin-tazobactam, a carbapenem, or fluoroquinolones; alternatives: novel β-lactam/β-lactamase inhibitors and aminoglycosides.'
+  kr_says: '패혈증이 없는 경우(주사제): 추천 3·4세대 cephalosporin·piperacillin/tazobactam·fluoroquinolone, 대안 aminoglycosides. 패혈증 혹은 패혈증 쇼크 동반: carbapenem 추가. 각주 5: 기관 항생제 감수성 결과를 확인할 수 없으면 fluoroquinolone 및 3세대 cephalosporin 단독 사용을 피함(p.8 <표 5>). 패혈성 쇼크는 관련 균주 90% 이상, 혈압저하 없는 패혈증은 80% 이상 감수성 항생제(p.8). 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 패혈증 유무로 나눠, 비패혈증은 3·4세대 cephalosporin·piperacillin/tazobactam·fluoroquinolone, carbapenem 은 패혈증·패혈성 쇼크(또는 내성균 과거력)에 둔다.
+  usmle_rule: USMLE 문항은 입원 신우신염에 IV β-lactam(ceftriaxone·cefepime·piperacillin-tazobactam·carbapenem)을 1차로, aminoglycoside 를 대안으로 둔다.
+  verified: text
+- id: diff.id.uti.systemic-uti-duration
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1094]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.9
+  diff_type: threshold
+  topic: 신우신염(전신 요로감염) 치료 기간
+  harrison_says: For susceptible isolates, 5–7 days of an oral fluoroquinolone or 7–14 days of oral TMP-SMX are highly effective. Treatment can be concluded at 7 days for patients who have clinically responded and can be treated with a fluoroquinolone or TMP-SMX. Oral β-lactams may necessitate a longer course.
+  kr_says: '균혈증이 동반되지 않은 전신 요로감염: 치료 반응이 뚜렷하고 해부학적 요인이 교정되고 합병증이 없으면 fluoroquinolone 5-7일, 그 외 항생제는 7일. 그람음성균 균혈증이 동반된 경우에도 같은 조건이면 효과적인 항생제 치료 7일째 종료할 수 있다. 치료기간은 효과적인 항생제 치료 첫날부터 산정(p.9). 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 전신 요로감염을 fluoroquinolone 5–7일·그 외 7일(그람음성 균혈증 동반도 7일)로 적용한다.
+  usmle_rule: USMLE 문항은 fluoroquinolone 5–7일, TMP-SMX 7–14일, 경구 β-lactam 은 더 길게를 적용한다.
+  verified: text
+- id: diff.id.uti.asymptomatic-bacteriuria
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1092]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.6, p.19
+  diff_type: same
+  topic: 무증상 세균뇨 — 치료 대상
+  harrison_says: Treatment of ASB in pregnant patients and patients undergoing high-risk urologic procedures is recommended and should be guided by urine culture. In all other populations, screening for and treating ASB are discouraged; no urine culture at catheter placement or removal if asymptomatic (p.1092). Screening is done only in pregnancy or before urologic procedures (p.1089).
+  kr_says: '무증상 세균뇨에 대한 항생제 치료는 임신 중이거나 침습적 비뇨기 시술을 앞둔 경우 등 이득이 밝혀진 경우로 제한(p.6). 항생제 사용을 권고하지 않음; 임신부, 출혈이 예상되는 시술 전에는 항생제 사용을 고려(p.19). 정의: ≥10⁵ CFU/ml, 여성 연속 2회 동일 균주, 남성 1회(p.6). 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 무증상 세균뇨를 임신부·점막 손상(출혈)이 예상되는 비뇨기 시술 전에만 치료한다.
+  usmle_rule: USMLE 문항도 임신·고위험 비뇨기 시술 전에만 선별·치료한다.
+  verified: text
+- id: diff.id.uti.acute-prostatitis-duration
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1094]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.9
+  diff_type: threshold
+  topic: 급성 세균성 전립선염 치료 기간
+  harrison_says: For ABP, at least 2 weeks and potentially up to 4 weeks of a fluoroquinolone or TMP-SMX is recommended for susceptible uropathogens. For CBP, a 4- to 6-week course; recurrences may warrant up to 12 weeks.
+  kr_says: 남성의 발열성 요로감염에서 급성 세균성 전립선염이 의심되는 경우 10-14일 치료가 도움이 될 수 있으나 최적 치료 기간의 근거는 부족(p.9). 만성 세균성 전립선염은 다루지 않음. 권고 등급 표기 없음.
+  kmle_rule: KMLE 문항·정리본은 급성 세균성 전립선염 의심 발열 요로감염을 10–14일로 적용한다.
+  usmle_rule: USMLE 문항은 급성 세균성 전립선염에 fluoroquinolone 또는 TMP-SMX 2주 이상(최대 4주), 만성은 4–6주를 적용한다.
+  verified: text
+- id: diff.id.uti.nitrofurantoin-pregnancy
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1095]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.10, p.12, p.19
+  diff_type: first_line
+  topic: 임신부 요로감염·무증상 세균뇨의 nitrofurantoin
+  harrison_says: Aminopenicillins and cephalosporins are the drugs of choice for ASB or UTI in pregnancy. ACOG suggests nitrofurantoin can be used during all trimesters if β-lactam agents are not an option. Pregnant patients with ASB or cystitis are generally treated for 5–7 days (p.1094–1095).
+  kr_says: 'Nitrofurantoin: 임신 38-42주 금기(p.19). 알고리즘: 임신부·점막손상이 예상되는 비뇨기계 수술/시술 예정이면 nitrofurantoin 50-100 mg qid × 5d 또는 fosfomycin 3 g, ''단, 임신 38-42주에서 nitrofurantoin 금기''(p.10). 점검표: ''단, 임신말기 nitrofurantoin 금기''(p.12). 임신부 약 선택·기간을 따로 정한 절은 없음. 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 임신부 방광염·무증상 세균뇨에 nitrofurantoin·fosfomycin 을 쓰되 임신 38–42주에는 nitrofurantoin 을 금기로 둔다.
+  usmle_rule: USMLE 문항은 임신부에 aminopenicillin·cephalosporin 을 1차로, nitrofurantoin 은 β-lactam 을 못 쓸 때로, 기간은 5–7일로 둔다.
+  verified: text
+- id: diff.id.uti.diagnostic-threshold
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1092]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.4
+  diff_type: threshold
+  topic: 요로감염 진단 — 세균뇨 기준
+  harrison_says: Pyuria >10 WBCs/HPF remains the generally accepted standard. In women with cystitis symptoms, a colony count threshold of >10² bacteria/mL is more sensitive (95%) than 10⁵/mL. CAUTI threshold ≥10³ CFU/mL (p.1090).
+  kr_says: 국소 요로감염은 방광에 국한된 급성 요로 증상이 있으면서 농뇨(≥10 백혈구/고배율시야) 또는 세균뇨(≥10⁵ 집락형성단위/mL)가 확인될 때 진단(p.4). 권고 등급 표기 없음.
+  kmle_rule: KMLE 문항·정리본은 증상 + 농뇨 ≥10 WBC/HPF 또는 세균뇨 ≥10⁵ CFU/mL 로 진단한다.
+  usmle_rule: USMLE 문항은 증상 있는 여성에서 >10² CFU/mL 도 방광염으로 보고, 도뇨관 요로감염은 ≥10³ CFU/mL 을 적용한다.
+  verified: text
+- id: diff.id.uti.nonresponse-72h
+  slot: h135
+  h22_chapter: 140
+  h22_cite: '[[harrison-22: 140장 p.1094]]'
+  kr_guideline_id: kr-kdca-uti
+  kr_cite: 요로감염 항생제 사용 지침(질병관리청·대한항균요법학회, 2026) p.9, p.3
+  diff_type: same
+  topic: 치료 72시간 무반응 — 원인 평가
+  harrison_says: Patients with pyelonephritis who have not had a clinical response within 72 h should undergo further evaluation for an uncontrolled source of infection (papillary necrosis with obstruction, perinephric/renal cortical abscess requiring drainage).
+  kr_says: 48~72시간 이상 항생제 투여에도 임상적 호전이 없으면 ①배양·감수성 재확인 ②요로 폐쇄·농양·배액이 필요한 병변을 영상검사로 확인 ③다른 감염 부위·비감염성 원인 고려(p.9). 항생제 치료 72시간 후 반응 없으면 영상 검사 고려(p.3). 권고 등급 표기 없음.
+  kmle_rule: KMLE 문항·정리본은 48–72시간 무반응이면 감수성 재확인과 영상검사(폐쇄·농양)를 적용한다.
+  usmle_rule: USMLE 문항도 72시간 무반응이면 폐쇄·농양 등 조절 안 된 감염원을 찾는다.
+  verified: text
+- id: diff.id.sti.gonorrhea-ceftriaxone-dose
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1099]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.17, p.107
+  diff_type: threshold
+  topic: 단순 임질 ceftriaxone 용량·경로
+  harrison_says: '요도 분비물(Table 141-4): 임질을 배제하지 못하면 ceftriaxone 500 mg IM으로 치료하고, 체중 ≥150 kg이면 ceftriaxone 1 g IM.'
+  kr_says: '단순 생식기·직장 임질: ceftriaxone 500 mg 근육/정맥주사 또는 1 g 정맥주사 단회 투여(1C). 인두 임균 감염도 ceftriaxone 500 mg 또는 1 g IM/IV, 대체 요법 없음. 체중 기준은 두지 않는다.'
+  kmle_rule: KMLE 문항·정리본은 ceftriaxone 500 mg IM/IV 또는 1 g IV 단회(1C) 기준을 적용한다(정맥 투여 허용).
+  usmle_rule: USMLE 문항은 ceftriaxone 500 mg IM 단회, 체중 ≥150 kg이면 1 g IM 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.gonorrhea-no-azithromycin-cotherapy
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1099]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.107
+  diff_type: same
+  topic: 임질 치료에서 azithromycin 병합 중단
+  harrison_says: 임균의 azithromycin 내성이 빠르게 늘어 azithromycin은 더 이상 parenteral ceftriaxone과의 병합요법으로 권장되지 않는다.
+  kr_says: 단순 생식기 또는 직장 임질 치료로 azithromycin 권장요법은 더 이상 권장되지 않는다(1C). ceftriaxone 단독 단회 투여가 권장된다(1C).
+  kmle_rule: KMLE 문항·정리본은 임질을 ceftriaxone 단독으로 치료하고 azithromycin 병합을 정답으로 두지 않는다.
+  usmle_rule: USMLE 문항은 ceftriaxone 단독(azithromycin 병합 없음) 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.gonorrhea-oral-cephalosporin
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1099]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.112–113
+  diff_type: same
+  topic: 임질에 경구 cephalosporin(cefixime) 금지
+  harrison_says: 미국에서는 N. gonorrhoeae 내성 때문에 경구 cephalosporin과 fluoroquinolone 모두 임질 치료에 권장되지 않는다.
+  kr_says: 단순 생식기 또는 직장 임질 치료로 cefixime을 포함한 cephalosporin 경구약제 투여는 권장되지 않는다(1C). 국내 분리 임균의 cefixime 감수성은 2018년 91%에서 2019년 77%로 감소.
+  kmle_rule: KMLE 문항·정리본은 cefixime 등 경구 cephalosporin을 임질 1차 치료로 두지 않는다(1C).
+  usmle_rule: USMLE 문항은 경구 cephalosporin·fluoroquinolone을 임질 치료로 쓰지 않는 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.chlamydia-ngu-first-line
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1099]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.20, p.122
+  diff_type: first_line
+  topic: 클라미디아·비임균성 요도염 1차 약
+  harrison_says: Gram 염색에서 임균이 보이지 않는 요도염은 azithromycin 또는 doxycycline 같은 NGU 요법으로 치료하며 둘 다 대체로 효과적이다. C. trachomatis 치료에는 doxycycline이 선호 약이다.
+  kr_says: 생식기·인두·직장의 단순 클라미디아 감염 치료에 doxycycline 100 mg 1일 2회 7일 경구 투여가 권장된다(1A). 권장 요법에 minocycline 100 mg 1일 2회 7일 포함, azithromycin 1 g 단회와 levofloxacin 500 mg 7일은 대체 요법. azithromycin 1 g 단회는 성별에 관계없이 1차 요법으로 권장하지 않는다.
+  kmle_rule: KMLE 문항·정리본은 클라미디아 1차 치료를 doxycycline(또는 minocycline) 100 mg bid 7일(1A)로, azithromycin 1 g은 대체 요법으로 둔다.
+  usmle_rule: USMLE 문항은 doxycycline을 클라미디아 선호 약으로 두되, 임균 배제된 NGU 경험 치료에는 azithromycin도 효과적이라는 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.mycoplasma-genitalium-regimen
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1099]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.22, p.119–120
+  diff_type: algorithm
+  topic: M. genitalium 치료 순서
+  harrison_says: azithromycin이 doxycycline보다 M. genitalium에 효과적이었으나 그 효능이 빠르게 떨어지고 있으며 대안은 moxifloxacin·pristinamycin. 재발 시 azithromycin 후 필요하면 moxifloxacin(Table 141-4).
+  kr_says: '성인 M. genitalium 권장 요법: azithromycin 500 mg 단회 후 250 mg 1일 1회 4일(총 1.5 g). 국내 1차 의료기관에서는 fluoroquinolone 내성 변이가 높아 macrolide가 1차 약으로 추천된다. 1.5 g 실패 시 doxycycline/minocycline 7일 후 azithromycin 총 2.5 g 2단계 요법(1D), macrolide 내성 확인 또는 2단계 실패 시 moxifloxacin 400 mg 7일(1B).'
+  kmle_rule: KMLE 문항·정리본은 azithromycin 총 1.5 g을 1차, 실패 시 2단계 요법(1D)·macrolide 내성 시 moxifloxacin(1B) 순서를 적용한다.
+  usmle_rule: USMLE 문항은 azithromycin 효능 저하로 moxifloxacin을 대안으로 두는 기준을 적용한다(세부 용량은 ch.141에 없음).
+  verified: text
+- id: diff.id.sti.chancroid-ciprofloxacin
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1109]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.25, p.80
+  diff_type: first_line
+  topic: 연성하감 ciprofloxacin 용법
+  harrison_says: '연성하감 확진·의심(Table 141-8): ciprofloxacin 500 mg PO 단회, 또는 ceftriaxone 250 mg IM 단회, 또는 azithromycin 1 g PO 단회.'
+  kr_says: '연성하감: azithromycin 1 g 단회 또는 ceftriaxone 250 mg IM 단회 또는 ciprofloxacin 500 mg 1일 2회 3일 또는 erythromycin base 500 mg 1일 3회 7일.'
+  kmle_rule: KMLE 문항·정리본은 ciprofloxacin 500 mg bid 3일(단회 아님)과 erythromycin 7일을 포함한 국내 요법을 적용한다.
+  usmle_rule: USMLE 문항은 ciprofloxacin 500 mg 단회·ceftriaxone 250 mg IM·azithromycin 1 g 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.early-syphilis-benzathine
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1109]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.24, p.127
+  diff_type: same
+  topic: 1기(조기) 매독 benzathine penicillin
+  harrison_says: '생식기 궤양에서 매독 확인(dark-field·FA·PCR 또는 RPR 반응): benzathine penicillin 2.4 million units IM 1회를 환자, 최근(예: 3개월 이내) 혈청음성 파트너, 모든 최근 파트너에게. HIV 감염자의 조기 매독에도 같은 요법이 효과적.'
+  kr_says: 1기, 2기 또는 조기 잠복 매독 치료에 benzathine penicillin G 240만 단위 단회 근육 주사가 권장된다(1B). 임신부·HIV 감염자 포함. 페니실린 알러지 비임신부는 doxycycline 100 mg bid 14일(1C), 임신부는 탈감작 후 페니실린.
+  kmle_rule: KMLE 문항·정리본은 조기 매독에 benzathine penicillin G 240만 단위 IM 단회(1B)를 적용한다.
+  usmle_rule: USMLE 문항은 benzathine penicillin 2.4 million units IM 1회 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.genital-ulcer-empiric
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1109]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.56–58
+  diff_type: algorithm
+  topic: 생식기 궤양 증후군적 경험 치료
+  harrison_says: 급성 생식기 궤양은 첫 방문에 검체를 모두 채취한 뒤 결과 전에 증후군 기반 치료를 시작하는 것이 흔히 적절하다. 매독 노출 위험(MSM, HIV 감염 등)이 있으면 일반적으로 초기 매독 치료를 한다. 혈청검사 음성이어도 1기 매독이 의심되면 위험 평가에 따라 추정 치료하고 1주 후 재검.
+  kr_says: '증상에 따른 접근은 검사실 확진까지 치료를 미루지 않고 첫 방문 시 경험적 치료를 시작하게 돕는다. 생식기 궤양 검사: HSV PCR/배양, T. pallidum PCR과 RPR 또는 VDRL + 트레포네마검사, H. ducreyi PCR. 매독 혈청검사는 약 12주 window period가 있어 증상이 있거나 감염 가능성이 있으면 음성이라도 치료를 고려한다. 매독 추정 치료 대상(MSM·HIV)을 따로 정하지 않는다.'
+  kmle_rule: KMLE 문항·정리본은 첫 방문 경험적 치료와 혈청 음성이어도 의심 시 치료 고려 기준을 적용한다.
+  usmle_rule: USMLE 문항은 MSM·HIV 등 위험군의 초기 매독 추정 치료와 음성 시 1주 후 재검 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.pid-outpatient-regimen
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1106]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.12–13, p.68
+  diff_type: algorithm
+  topic: 골반염 외래 치료 요법
+  harrison_says: '외래 골반염(Table 141-6): ceftriaxone 500 mg IM 1회 + doxycycline 100 mg PO bid 14일 + metronidazole 500 mg PO bid 14일. 임신·골반 농양 의심·진단 불확실·중증·HIV·외래 요법 불가·외래 치료 실패 시 입원 고려.'
+  kr_says: 이 지침은 골반염 치료 요법을 따로 다루지 않는다(목차에 골반염 장 없음). M. genitalium 장에서 치료하지 않으면 여성에서 PID로 발전할 수 있다고만 적는다.
+  kmle_rule: KMLE 문항·정리본은 이 국내 STI 지침에 골반염 요법이 없으므로 해리슨 ceftriaxone + doxycycline + metronidazole 14일 요법을 쓰고 국내 출처 공백을 표시한다.
+  usmle_rule: USMLE 문항은 ceftriaxone 500 mg IM + doxycycline 14일 + metronidazole 14일 외래 요법을 적용한다.
+  verified: text
+- id: diff.id.sti.chlamydia-screening
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1110]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.53, p.58
+  diff_type: screening
+  topic: 무증상 클라미디아 선별검사 대상·주기
+  harrison_says: USPSTF는 성적으로 활동적인 25세 이하 여성을 진료 때마다(최소 연 1회) C. trachomatis 선별하도록 권고한다. 더 나이 든 여성은 파트너가 둘 이상이거나 새 관계를 시작했거나 다른 STI가 진단되면 검사.
+  kr_says: 성적으로 활동적인 25세 미만의 남/녀를 성매개감염 위험인자로 든다. 무증상 감염 의심자 표준 검사로 남성 첫 소변·여성 질 도말 multiplex PCR을 제시하나, 연령별 정기 선별 주기는 정하지 않는다.
+  kmle_rule: KMLE 문항·정리본은 위험인자(25세 미만 성활동 남녀 등)가 있는 무증상자에 multiplex PCR 검사 기준을 적용하고 연 1회 주기를 국내 권고로 쓰지 않는다.
+  usmle_rule: USMLE 문항은 성적으로 활동적인 25세 이하 여성 연 1회 클라미디아 선별 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.hiv-screening
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1098]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.58, p.140
+  diff_type: screening
+  topic: HIV 선별검사 대상
+  harrison_says: 현재 지침에 따라 모든 성인은 최소 1회 HIV-1 선별검사를 받아야 하고, 획득 위험이 높으면 더 자주.
+  kr_says: '무증상 감염 의심자 표준 검사에 HIV(항원/항체) 포함, 약 6주 window period로 일정 기간 후 재검. 부록 HIV 검사 권고(안): 최근 노출 4주경 선별검사, 음성이면 EIA 계열은 6주 이후·간이검사는 12주 이후 재검. 모든 성인 1회 선별은 제시하지 않는다.'
+  kmle_rule: KMLE 문항·정리본은 STI 위험군·노출자에 HIV 검사와 노출 후 4주·6주(간이검사 12주) 재검 기준을 적용한다.
+  usmle_rule: USMLE 문항은 모든 성인 최소 1회 HIV 선별 기준을 적용한다.
+  verified: text
+- id: diff.id.sti.partner-management-ept
+  slot: h136
+  h22_chapter: 141
+  h22_cite: '[[harrison-22: 141장 p.1099]] · [[harrison-22: 141장 p.1111]]'
+  kr_guideline_id: kr-kdca-sti
+  kr_cite: 성매개감염 진료지침 2023(질병관리청) p.64, p.67
+  diff_type: algorithm
+  topic: 성 파트너 관리·신속 파트너 치료(EPT)
+  harrison_says: 요도염 지표 환자와 지난 60일 내 접촉한 파트너는 임질·클라미디아 검사를 받고, 검사 여부와 관계없이 지표 환자와 같은 요법을 받아야 한다. 환자가 파트너에게 약을 전달하는 expedited partner therapy(EPT)는 지표 환자의 재감염을 유의하게 줄였고 미국 46개 주에서 허용.
+  kr_says: '임균: 반드시 파트너에게 통지하도록 상담, 진단일로부터 60일 이내 성접촉한 모든 파트너는 평가받을 것이 권장됨. 클라미디아: 증상 전 8주 이내(무증상이면 지난 6개월 이내) 파트너 검진, 검진된 파트너는 결과와 관계없이 치료 권장. EPT(환자를 통한 파트너 약 전달)는 언급하지 않는다.'
+  kmle_rule: KMLE 문항·정리본은 파트너 통지·평가(임균 60일, 클라미디아 8주/6개월)와 검진된 파트너 치료 기준을 적용하고 EPT를 국내 권고로 쓰지 않는다.
+  usmle_rule: USMLE 문항은 60일 내 파트너 동일 요법 치료와 EPT 허용 기준을 적용한다.
+  verified: text
+- id: diff.id.endemic.scrub-typhus-first-line
+  slot: h187
+  h22_chapter: 192
+  h22_cite: '[[harrison-22: 192장 p.1460]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 진드기·설치류매개감염병 관리지침(질병관리청) p.26, p.39
+  diff_type: first_line
+  topic: 쯔쯔가무시증 항생제 — 약제·용량·중증 병용
+  harrison_says: 경구 doxycycline 100 mg 1일 2회 7–15일, azithromycin 500 mg 3일, 또는 chloramphenicol 500 mg 1일 4회 7–15일로 치료한다. 중증 쯔쯔가무시증에서는 doxycycline + azithromycin 병용이 단독요법보다 낫다. 태국 일부 증례는 doxycycline·chloramphenicol 반응이 나쁘나 azithromycin·rifampin 에 반응한다.
+  kr_says: '치료: 독시사이클린, 아지스로마이신과 같은 항생제 치료(p.26). 의사의 처방에 따라 항생제(독시사이클린, 클로람페니콜, 아지스로마이신 등) 투여(p.39). 용량·기간·중증 병용요법은 적혀 있지 않다.'
+  kmle_rule: KMLE 문항·정리본은 쯔쯔가무시증 1차 약을 독시사이클린(대안 아지스로마이신·클로람페니콜)으로 두고, 지침에 없는 용량·기간을 지침 근거로 적지 않는다.
+  usmle_rule: USMLE 문항은 해리슨 기준(doxycycline 100 mg bid 7–15일 · azithromycin 500 mg 3일 · 중증은 doxycycline + azithromycin 병용)을 적용한다.
+  verified: text
+- id: diff.id.endemic.scrub-typhus-eschar
+  slot: h187
+  h22_chapter: 192
+  h22_cite: '[[harrison-22: 192장 p.1460]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 진드기·설치류매개감염병 관리지침(질병관리청) p.35, p.38
+  diff_type: algorithm
+  topic: 쯔쯔가무시증 가피 빈도와 추정환자 판정
+  harrison_says: 가피·국소 림프절병증·반구진 발진의 고전적 소견은 토착민 환자에게서는 드물게 보인다. 귀국 여행자의 50% 미만에서 가피가, 40% 미만에서 발진(병일 4–6일)이 생긴다.
+  kr_says: '털진드기에 물린 자국(가피) 발견율은 약 94.3%(p.35). 추정환자 신고 기준(2024.9.5. 개정): ① 가피 형성이 반드시 확인되어야 하며 발열·림프절 종대 등 부합 증상 동반 ② 잠복기 내 야외활동으로 진드기 노출력 확인 ③ 추정진단 검사(ICA, IFA 1차)로 특이항체 검출. 특이항체가 검출되었지만 가피 확인이 안 되면 보건환경연구원 확인진단(PCR) 권고(p.38).'
+  kmle_rule: KMLE 문항·정리본은 국내 환자에서 가피를 핵심 진단 단서로 보고, 추정환자 신고에는 가피 확인 + 노출력 + 특이항체 검출이 모두 필요하다는 국내 기준을 적용한다.
+  usmle_rule: USMLE 문항은 가피가 없다고 쯔쯔가무시증을 배제하지 않는다는 해리슨 기준(여행자 가피 <50%)을 적용한다.
+  verified: text
+- id: diff.id.endemic.scrub-typhus-lab-diagnosis
+  slot: h187
+  h22_chapter: 192
+  h22_cite: '[[harrison-22: 192장 p.1460]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 진드기·설치류매개감염병 관리지침(질병관리청) p.39
+  diff_type: algorithm
+  topic: 쯔쯔가무시증 실험실 진단 — 확인·추정 구분
+  harrison_says: 혈청검사(간접면역형광항체법, 간접면역과산화효소법, 효소면역법, 측방유동 신속진단검사)가 실험실 진단의 중심이다. 가피에서 Orientia 유전자 PCR 증폭은 효과적이나 혈액에서는 덜하다.
+  kr_says: '확인진단: 검체(혈액, 조직, 가피)에서 O. tsutsugamushi 분리 동정, 회복기 혈청의 항체가가 급성기에 비하여 4배 이상 증가(IFA 등), 검체(혈액, 조직, 가피)에서 특이 유전자 검출(Real-time PCR 등). 추정진단: 검체(혈액)에서 특이 항체 검출(IFA, ICA 등). 단일 혈청 IFA 역가 기준치는 이 지침에 없고 법정감염병 진단검사 통합지침을 참조하게 한다.'
+  kmle_rule: KMLE 문항·정리본은 확인진단 = 분리·쌍혈청 4배 상승·PCR, 추정진단 = 단일 혈청 특이항체 검출로 구분하는 국내 기준을 적용한다(역가 숫자를 지어내지 않는다).
+  usmle_rule: USMLE 문항은 혈청검사(IFA 등)를 진단의 중심으로, PCR 은 가피 검체에서 유용하고 혈액에서는 덜 민감하다는 해리슨 기준을 적용한다.
+  verified: text
+- id: diff.id.endemic.scrub-typhus-notification
+  slot: h187
+  h22_chapter: 192
+  h22_cite: '[[harrison-22: 192장 p.1460]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 진드기·설치류매개감염병 관리지침(질병관리청) p.26, p.38
+  diff_type: legal
+  topic: 쯔쯔가무시증 법정감염병 등급·신고
+  harrison_says: 192장의 쯔쯔가무시증 절(역학·임상·진단·치료)에는 신고 등급이나 신고 기한에 관한 기술이 없다.
+  kr_says: '질병 분류: 제3급 법정감염병(p.26). 신고범위: 환자, 의사환자. 신고시기: 24시간 이내 신고(p.38). 환자격리·접촉자격리: 필요 없음(p.26).'
+  kmle_rule: KMLE 문항·정리본은 쯔쯔가무시증을 제3급 법정감염병(환자·의사환자 24시간 이내 신고, 격리 불필요)으로 적용한다.
+  usmle_rule: USMLE 문항은 한국 법정 등급을 묻지 않는다 — 해당 기준 없음.
+  verified: text
+- id: diff.id.endemic.scrub-typhus-incubation
+  slot: h187
+  h22_chapter: 192
+  h22_cite: '[[harrison-22: 192장 p.1460]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 진드기·설치류매개감염병 관리지침(질병관리청) p.26, p.36
+  diff_type: threshold
+  topic: 쯔쯔가무시증 잠복기
+  harrison_says: 잠복기 6–21일 후 발열·두통·근육통·기침·위장관 증상으로 시작한다.
+  kr_says: '잠복기: 10일 이내(p.26, p.36 — 출처로 미국 CDC 를 단다).'
+  kmle_rule: KMLE 문항·정리본은 국내 지침의 잠복기 「10일 이내」를 적용한다.
+  usmle_rule: USMLE 문항은 해리슨의 잠복기 6–21일을 적용한다.
+  verified: text
+- id: diff.id.endemic.murine-typhus-duration
+  slot: h187
+  h22_chapter: 192
+  h22_cite: '[[harrison-22: 192장 p.1460]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 진드기·설치류매개감염병 관리지침(질병관리청) p.122
+  diff_type: threshold
+  topic: 발진열(murine typhus) 치료 기간
+  harrison_says: 발진열이 의심되면 경험적으로 doxycycline 100 mg 1일 2회 경구 7일 치료한다. 구할 수 있으면 chloramphenicol 이 대안이다. ciprofloxacin·azithromycin 은 시험관 내 활성은 있으나 임상적으로 doxycycline 보다 덜 효과적이다.
+  kr_says: 항생제(독시사이클린, 클로람페니콜 등) 치료. 발열이 소실된 후 2~3일까지 치료. 치료 지연 시 중증 감염으로 진행될 수 있으므로 실험실 검사 결과를 확인할 때까지 치료가 지연되지 않아야 함.
+  kmle_rule: KMLE 문항·정리본은 발진열을 검사 결과를 기다리지 않고 독시사이클린으로 치료하되 기간은 「해열 후 2~3일까지」로 적용한다.
+  usmle_rule: USMLE 문항은 해리슨 기준(경험적 doxycycline 100 mg bid 7일)을 적용한다.
+  verified: text
+- id: diff.id.endemic.vivax-radical-cure
+  slot: h224
+  h22_chapter: 231
+  h22_cite: '[[harrison-22: 231장 p.1772]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 말라리아 관리지침(질병관리청) p.20
+  diff_type: same
+  topic: 국내발생 삼일열 — 클로로퀸 + 프리마퀸 7일 또는 14일
+  harrison_says: 'P. vivax·P. ovale 의 근치(재발 예방)에는 G6PD 결핍 검사가 음성으로 확인된 뒤 primaquine(동아시아·오세아니아 0.5 mg base/kg, 그 밖 0.25 mg/kg)을 1일 1회 14일 준다. 같은 총량을 7일에 줄 수도 있다(p.1772). 표 231-6: chloroquine 또는 amodiaquine 또는 ACT 에 더해 primaquine 14일, 최근 대규모 연구로 7일 요법으로 압축 가능(p.1770).'
+  kr_says: '복약 — 국내발생 말라리아: 클로로퀸 3일 + 프리마퀸 7일 또는 14일(p.20). 주요 개정 사항 표에서 2025년판은 「클로로퀸 3일+프리마퀸 14일」이었다(개정 사항 쪽, 쪽 번호 없음). 이번에 읽은 범위에는 프리마퀸 mg/kg 용량이 없다.'
+  kmle_rule: KMLE 문항·정리본은 국내발생 삼일열을 클로로퀸 3일 + 프리마퀸 7일 또는 14일로 적용한다(용량은 확인 전 쓰지 않는다).
+  usmle_rule: USMLE 문항은 chloroquine + primaquine(동아시아 0.5 mg base/kg 14일 또는 같은 총량 7일, G6PD 확인 후)을 적용한다.
+  verified: text
+- id: diff.id.endemic.primaquine-g6pd
+  slot: h224
+  h22_chapter: 231
+  h22_cite: '[[harrison-22: 231장 p.1773]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 말라리아 관리지침(질병관리청) p.75(권고 5-3·5-4)
+  diff_type: screening
+  topic: 프리마퀸 전 G6PD 검사
+  harrison_says: primaquine 은 G6PD 결핍 검사 음성 확인 뒤 준다. 경한 G6PD 결핍 변이에서는 0.75 mg base/kg(최대 45 mg) 주 1회 8주. 중증 G6PD 결핍에는 주지 않는다. 임신부는 primaquine 대신 분만 후 1개월까지 chloroquine 주 1회 억제 예방 후 근치한다(p.1772–1773).
+  kr_says: '권고 5-3: 「프리마퀸 투약 전 G6PD(glucose-6-phosphate-dehydrogenase)에 대한 검사를 가급적 시행하고 타페노퀸 투약 전에는 반드시 시행한다」(강함·높음). 권고 5-4: 「G6PD 결핍 시 프리마퀸 0.75mg base/kg를 8주간 주 1회 투약한다」(강함·낮음).'
+  kmle_rule: KMLE 문항·정리본은 프리마퀸 전 G6PD 검사는 「가급적」(타페노퀸 전에는 반드시), 결핍이면 0.75 mg base/kg 주 1회 8주의 국내 기준을 적용한다.
+  usmle_rule: USMLE 문항은 primaquine 전 G6PD 검사(중증 결핍 금기, 경증은 주 1회 8주)라는 해리슨 기준을 적용한다.
+  verified: text
+- id: diff.id.endemic.falciparum-uncomplicated
+  slot: h224
+  h22_chapter: 231
+  h22_cite: '[[harrison-22: 231장 p.1770]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 말라리아 관리지침(질병관리청) p.20, p.40
+  diff_type: first_line
+  topic: 해외유입 비중증 열대열 — 약제 목록
+  harrison_says: 'P. falciparum 비중증: artesunate + SP, artesunate + amodiaquine, artemether-lumefantrine, artesunate + mefloquine, DHA-piperaquine, artesunate-pyronaridine 등 ACT. 2차·수입 말라리아(다른 ACT 가 없을 때): artesunate 또는 quinine 7일 + tetracycline/doxycycline/clindamycin, 또는 atovaquone-proguanil 3일(p.1770). WHO 는 ACT 를 열대열 1차 치료로 권고(p.1768).'
+  kr_says: '해외유입 열대열·사일열·원숭이열: 경구용 항말라리아제 중 택 1 — 3일(아르테수네이트-피로나리딘, 아토바쿠온-프로구아닐) 또는 2~3회(메플로퀸)(p.20). 비축 치료·예방약: 클로로퀸, 프리마퀸, 아르테수네이트-피로나리딘, 아토바쿠온-프로구아닐, 메플로퀸(p.40). 아르테메터-루메판트린은 이 목록에 없다.'
+  kmle_rule: KMLE 문항·정리본은 해외유입 비중증 열대열 약을 국내 지침 목록(아르테수네이트-피로나리딘 · 아토바쿠온-프로구아닐 · 메플로퀸 중 택 1)으로 적용한다.
+  usmle_rule: 'USMLE 문항은 ACT(예: artemether-lumefantrine)를 1차로, atovaquone-proguanil 은 2차·수입 말라리아 대안으로 보는 해리슨 기준을 적용한다.'
+  verified: text
+- id: diff.id.endemic.severe-malaria-artesunate
+  slot: h224
+  h22_chapter: 231
+  h22_cite: '[[harrison-22: 231장 p.1770]]'
+  kr_guideline_id: kr-kdca-endemic
+  kr_cite: 2026년도 말라리아 관리지침(질병관리청) p.20
+  diff_type: same
+  topic: 중증 말라리아 — 주사 아르테수네이트 후 경구 전환
+  harrison_says: '중증 열대열: artesunate 2.4 mg/kg 정맥 즉시, 12·24시간에 2.4 mg/kg, 이후 필요하면 매일(20 kg 미만 소아 3 mg/kg). 없으면 artemether 근주, 그다음 quinine. 경구 섭취가 가능해지면 곧 경구 치료로 바꾼다. artesunate 가 있으면 1차 약이다.'
+  kr_says: '합병증이 동반되는 중증 말라리아: 아르테수네이트 주사제 3회 + 경구용 항말라리아제 중 택 1 — 3일(아르테수네이트-피로나리딘, 아토바쿠온-프로구아닐) 또는 2~3회(메플로퀸).'
+  kmle_rule: KMLE 문항·정리본은 중증 말라리아를 주사 아르테수네이트(3회) 후 경구 항말라리아제로 마무리하는 기준을 적용한다.
+  usmle_rule: USMLE 문항은 IV artesunate(0·12·24시간 2.4 mg/kg) 후 경구 전환이라는 해리슨 기준을 적용한다.
+  verified: text
