@@ -1679,8 +1679,29 @@
    "date": "2026-11-24",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-2000": {
+   "id": "kmle-2026-2000",
+   "exam": "kmle",
+   "subject": "Hematology",
+   "step": "",
+   "type": "Heavy Periods, Breathlessness on Stairs and Stopped Iron Tablets Six Weeks before Fibroid Surgery in a Woman in Her Mid-forties",
+   "style": "",
+   "modality": "",
+   "question": "지금 빈혈 치료로 가장 적절한 것은?",
+   "chosen": 3,
+   "chosenText": "적혈구생성인자 주사",
+   "answer": 2,
+   "answerText": "정맥 철분 주사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "월경과다로 생긴 철결핍빈혈(페리틴 4)인데 경구 철분제를 두 가지 모두 견디지 못했고 출혈이 계속되며 6주 뒤 수술이 있다. 활력징후가 안정적이고 허혈 증상·심질환이 없어 수혈 대신 정맥 철분 주사로 철을 빨리 채운다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-24T04:52:05.066Z"
+ "updated": "2026-11-25T06:10:11.444Z"
 }
