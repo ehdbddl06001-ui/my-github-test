@@ -1,0 +1,1090 @@
+# 국내 가이드라인 vs 해리슨 22판 원문 대조 — 소화기내과
+# 형식: content/outline/kr_vs_harrison/_template.yaml · 검증: python pipelines/kr_guidelines.py --check
+# verified: text = 두 원문(해리슨 22판 H22_<장> 문서의 인쇄쪽 표지 + 국내 지침 PDF 인쇄쪽)을 이번 대조에서 직접 읽은 항목만.
+# 국내 지침 원문: 드라이브 `_가이드라인` 폴더(파일 ID 는 content/outline/kr_guidelines.json).
+# 간경변증 국내 원문은 대한간학회 2026 복수 및 관련 합병증 개정판과 2019 정맥류·간성뇌증판 — kr_cite 에 판을 적었다.
+# MASLD 2025 는 11개 쟁점만 개정했다 — FIB-4 2단계 선별·체중 감량 목표는 2021 비알코올 지방간질환 지침에 있어 이번 대조에서 빠졌다.
+# 대장폴립 추적 간격 항목 일부는 해리슨 86장에 대응 서술이 없음을 적은 것이다(USMSTF 수치는 해리슨 원문이 아님).
+subject: 소화기내과
+subject_slug: gastroenterology
+updated: '2026-11-25'
+items:
+- id: diff.gi.hpylori.eradication-gastric-cancer-prevention
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1301]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.163
+  diff_type: screening
+  topic: 위암 예방 목적 제균 — H. pylori 위염 전체 vs 가족력 등 선택적
+  harrison_says: '''For individuals with a strong family history of gastric cancer, treatment to eradicate H. pylori in the hope of reducing cancer risk is reasonable but of unproven value: it slightly reduces future cancer incidence, but there is no evidence it reduces all-cause mortality.'' ''Currently, widespread community screening for and treatment of H. pylori as primary prophylaxis for gastric cancer and peptic ulcers are not recommended in most countries, mainly because the extent of the consequent reduction in cancer risk is not known.'''
+  kr_says: '지침 1. ''헬리코박터 파일로리 위염 환자에게 위암의 예방을 위해 제균 치료를 시행할 것을 제안한다.'' 권고강도: 약함; 근거수준: 중등도(동의율 95.3%). 근거: 9편 RCT 메타분석 위암 발생 RR 0.65(95% CI 0.48–0.88), 위암 관련 사망 RR 0.81, 전체 사망 RR 0.98(차이 없음). ''스크리닝 목적의 내시경 검사가 위암 예방을 위한 제균 치료를 대신할 수 없다.'''
+  kmle_rule: KMLE 문항·정리본은 H. pylori 위염이 확인되면 위암 예방을 위해 제균 치료를 시행한다(약한 권고)로 적용한다 — 가족력이 없어도 적응증이다.
+  usmle_rule: USMLE 문항은 위암 가족력 등 선택적 경우에만 '합리적이나 근거 미확립'으로 보고, 무증상 인구 선별·제균은 권고하지 않는다는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.gi.hpylori.tailored-therapy-first-line
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1303]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.168
+  diff_type: algorithm
+  topic: 1차 제균 — 클래리스로마이신 내성검사(DPO-PCR) 기반 맞춤 치료
+  harrison_says: '''Assessment of antibiotic susceptibilities before treatment would be optimal but is not usually undertaken because endoscopy and mucosal biopsy are necessary to obtain H. pylori for culture and because most microbiology laboratories are inexperienced in H. pylori culture.'' 1차 실패 시 ''empirical re-treatment with another drug regimen'', ''The third-line approach ideally should be endoscopy, biopsy, and culture plus treatment based on documented antibiotic sensitivities.'''
+  kr_says: '지침 4-1. ''항생제 감수성 검사를 기반으로 한 맞춤 치료를 헬리코박터 파일로리 감염의 1차 제균 치료로 권고한다.'' 권고강도: 강함; 근거수준: 중등도. 지침 4-2. ''내성이 있을 때는 비스무트 4제요법 10일(양성자펌프억제제 표준 용량 하루 2회, 메트로니다졸 500 mg 하루 3회, 비스무트 120 mg 하루 4회, 테트라사이클린 500 mg 하루 4회), 내성이 없을 때는 클래리스로마이신 포함 3제요법 7일 치료(양성자펌프억제제 표준 용량, 아목시실린 1 g, 클래리스로마이신 500 mg 하루 2회)를 권고한다.'' 권고강도: 강함; 근거수준: 중등도. DPO-PCR 은 23S rRNA A2142G·A2143G 돌연변이를 탐지.'
+  kmle_rule: KMLE 문항·정리본은 1차 제균에서 클래리스로마이신 내성검사(DPO-PCR) 맞춤 치료를 우선한다 — 내성이면 비스무트 4제 10일, 감수성이면 클래리스로마이신 3제 7일.
+  usmle_rule: USMLE 문항은 1차는 경험적 요법(Table 168-2)으로 시작하고, 감수성 검사·배양은 3차 치료 단계에서 하는 해리슨 알고리즘을 따른다.
+  verified: text
+- id: diff.gi.hpylori.clarithromycin-triple-threshold
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1302]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.174
+  diff_type: threshold
+  topic: 경험적 클래리스로마이신 3제요법 — 지역 내성률 <15% vs <20%
+  harrison_says: 'Table 168-2 Regimen 2 OCA(14 days) — omeprazole 20 mg bid + clarithromycin 500 mg bid + amoxicillin 1 g bid. 각주 b: ''This regimen should be used only for populations in which the prevalence of clarithromycin-resistant strains is known to be <20%. In practice, this restriction limits the regimens'' appropriate range mainly to northern Europe.'''
+  kr_says: '지침 7. ''클래리스로마이신 포함 3제요법은 항생제 감수성 검사를 시행할 수 없고 지역의 클래리스로마이신 내성이 15% 미만일 것으로 예상되는 경우에는 제한적으로 사용할 수 있다'' 권고강도: 약함; 근거수준: 중등도(수정 후 2차 투표 동의율 73.9%). 국내 14일 3제 ITT 73.5%, 2020년 이후 66.9% — ''80% 이상의 기준에 미치지 못''함. 장애요인: ''국내 클래리스로마이신 내성률이 33%로 높아 대부분의 지역에서 15% 미만 조건을 충족하기 어렵다''.'
+  kmle_rule: KMLE 문항·정리본은 감수성 검사를 못 하고 지역 클래리스로마이신 내성이 15% 미만일 때만 경험적 3제요법을 제한적으로 쓴다 — 국내(내성 약 33%)에서는 경험적 1차로 고르지 않는다.
+  usmle_rule: USMLE 문항은 clarithromycin 내성 <20% 지역에서만 OCA·OCM 3제요법(14일)을 쓰는 해리슨 기준을 따른다.
+  verified: text
+- id: diff.gi.hpylori.empirical-concomitant
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1302]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.170
+  diff_type: first_line
+  topic: 경험적 1차 — 10일 동시치료(국내 강한 권고) vs 14일 concomitant(대안)
+  harrison_says: 'Table 168-2 Regimen 4: concomitant (14 days) — omeprazole 20 mg bid, amoxicillin 1 g bid, clarithromycin 500 mg bid, tinidazole 500 mg bid(각주 f: metronidazole 500 mg bid 대체 가능). 각주 e: ''This regimen may be used as an alternative to regimen 3.'''
+  kr_says: '지침 5. ''10일 동시치료(양성자펌프억제제 표준 용량, 클래리스로마이신 500 mg, 아목시실린 1 g, 메트로니다졸 500 mg, 하루 2회)를 헬리코박터 파일로리 감염의 1차 경험적 제균 치료로 권고한다.'' 권고강도: 강함; 근거수준: 높음(동의율 68.8%). 10일 동시치료 종합 제균율 ITT 85.1%·PP 90.6%, 14일 ITT 85.5%·PP 93.8% — 국내 연구에서 10일과 14일 차이 없음.'
+  kmle_rule: KMLE 문항·정리본은 감수성 검사가 없을 때 경험적 1차 제균으로 10일 동시치료(PPI+클래리스로마이신+아목시실린+메트로니다졸, 하루 2회)를 고른다.
+  usmle_rule: USMLE 문항은 concomitant 요법을 14일, 비스무트 4제(regimen 3)의 대안으로 다룬다.
+  verified: text
+- id: diff.gi.hpylori.bismuth-quadruple-position
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1302]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.172
+  diff_type: first_line
+  topic: 비스무트 4제요법 — 1차 표준 vs 구제요법으로 아껴 두기
+  harrison_says: 'Table 168-2 Regimen 3: OBTM (14 days) — omeprazole 20 mg bid, bismuth subsalicylate 2 tabs qid, tetracycline 500 mg qid, metronidazole 500 mg tid. 각주 d: ''This is a recommended first-line regimen in most countries and is the recommended second-line regimen in northern Europe.'''
+  kr_says: '지침 6-1. ''10–14일간의 비스무트 4제요법을 헬리코박터 파일로리 감염의 1차 경험적 제균 치료로 사용할 수 있다.'' 권고강도: 약함; 근거수준: 중등도. 지침 6-2. ''비스무트 4제요법은 약물 부작용이 높고 구제요법으로 사용할 가능성이 있어 다른 제균 치료를 사용할 수 없는 경우에 1차 치료로 사용할 것을 제안한다.'' 권고강도: 약함; 근거수준: 전문가 합의.'
+  kmle_rule: KMLE 문항·정리본은 비스무트 4제를 경험적 1차의 조건부 선택지로만 두고(다른 요법을 쓸 수 없을 때), 기본은 2차 구제요법으로 쓴다.
+  usmle_rule: USMLE 문항은 bismuth quadruple(OBTM 14일)을 대부분 지역의 권장 1차 요법으로 본다.
+  verified: text
+- id: diff.gi.hpylori.second-line-and-referral
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1302]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.178, p.180
+  diff_type: algorithm
+  topic: 1차 실패 후 — 2차 비스무트 4제, 2회 실패 시 전문기관 의뢰
+  harrison_says: 'Fig. 168-2: 1차 후 양성 → ''Second-line treatment (Table 168-2)'' → 2차 후 양성 → ''Third-line treatment; endoscopy with H. pylori culture and sensitivity testing; treat according to known antibiotic sensitivities'' → 3차 후 양성 → ''Refer to specialist''. Table 168-2 각주 g: OAL(levofloxacin) ''used as second-line treatment in many countries (particularly where quadruple or concomitant therapy is used as the first-line regimen)''. p.1303: ''When a patient is known to have been exposed—even remotely in time—to clarithromycin or a fluoroquinolone, these antibiotics usually should be avoided.'''
+  kr_says: '지침 9-1(p.178). ''클래리스로마이신 포함 3제요법 또는 동시치료에 실패한 경우, 헬리코박터 파일로리 감염의 2차 제균 치료로 비스무트 4제요법 10–14일 치료를 권고한다.'' 권고강도: 강함; 근거수준: 중등도. 지침 9-3(p.180). ''두 번 이상의 제균 치료에 실패한 경우, 항생제 감수성 검사에 기반한 맞춤 치료가 가능한 헬리코박터 파일로리 전문기관에 의뢰하는 것을 제안한다.'' 권고강도: 약함; 근거수준: 전문가 합의.'
+  kmle_rule: KMLE 문항·정리본은 3제·동시치료 실패 후 2차로 비스무트 4제 10–14일을 쓰고, 2회 이상 실패하면 감수성 검사 맞춤 치료가 가능한 전문기관에 의뢰한다.
+  usmle_rule: 'USMLE 문항은 2차를 1차와 다른 경험적 요법(예: levofloxacin 요법)으로, 3차에서 배양·감수성 검사, 그 뒤 전문의 의뢰로 하는 해리슨 알고리즘을 따른다.'
+  verified: text
+- id: diff.gi.hpylori.pcab-substitution
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1303]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.175
+  diff_type: same
+  topic: 제균 요법의 위산억제 — P-CAB 이 PPI 를 대체
+  harrison_says: '''use of vonoprazan, a highly effective potassium-competitive acid blocker, originally licensed in Japan and now in several countries, including the United States, was associated with higher eradication rates in conjunction with amoxicillin and clarithromycin, than when a PPI was used for acid suppression.'' 또한 ''using high rather than moderate doses of acid-suppressive PPIs with the antibiotics increases the effectiveness of the regimen.'''
+  kr_says: '지침 8. ''칼륨경쟁적위산분비억제제 기반의 항생제 병합 치료는 헬리코박터 파일로리 제균을 위한 1차 치료로 양성자펌프억제제 기반의 항생제 병합치료를 대체할 수 있다.'' 권고강도: 강함; 근거수준: 중등도(동의율 98.4%). 19개 RCT: P-CAB 86.3% vs PPI 78.8%(RR 1.08, 95% CI 1.04–1.12); 보노프라잔 88.4% vs 79.0%.'
+  kmle_rule: KMLE 문항·정리본은 1차 제균 요법에서 PPI 대신 P-CAB(보노프라잔·테고프라잔 등)을 쓸 수 있다고 적용한다.
+  usmle_rule: USMLE 문항은 vonoprazan(P-CAB)+amoxicillin+clarithromycin 이 PPI 기반보다 제균율이 높다는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.gi.hpylori.test-of-cure-timing
+  slot: h163
+  h22_chapter: 168
+  h22_cite: '[[harrison-22: 168장 p.1301]]'
+  kr_guideline_id: kr-kchug-hpylori-2025
+  kr_cite: 한국인에서 근거 기반의 헬리코박터 파일로리 진단 및 치료 임상진료지침 개정안 2025(대한상부위장관·헬리코박터학회) p.159
+  diff_type: same
+  topic: 제균 확인 — 치료 종료 ≥4주 뒤 요소호기검사·대변항원검사
+  harrison_says: '''because these tests are dependent on H. pylori load, their use <4 weeks after treatment may yield false-negative results ... these tests are unreliable if performed within 4 weeks of intercurrent treatment with antibiotics or bismuth compounds or within 2 weeks of the discontinuation of proton pump inhibitor (PPI) treatment. In the assessment of treatment success, noninvasive tests are normally preferred.'' ''Serologic tests are not used to monitor treatment success.'''
+  kr_says: '별도 핵심질문 아님(이전 지침 원칙 유지): ''제균 치료 완료 후 최소 4주 이상 경과 후 요소호기검사 또는 대변항원검사를 통한 제균 확인의 필수성 ... 이전 진료지침의 권고에서 변경된 바 없이 임상 진료에서 그대로 준수되어야 하는 원칙'' — 권고 등급 표기 없음.'
+  kmle_rule: KMLE 문항·정리본은 제균 치료 종료 후 최소 4주 뒤 요소호기검사 또는 대변항원검사로 제균을 반드시 확인한다(혈청항체검사는 쓰지 않는다).
+  usmle_rule: USMLE 문항은 치료 종료 ≥4주, PPI 중단 ≥2주 뒤 urea breath test 또는 stool antigen 으로 test of cure 하고 serology 는 쓰지 않는다.
+  verified: text
+- id: diff.gi.gerd.ppi-test-duration
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2510]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2020 Seoul Consensus on the Diagnosis and Management of GERD(대한소화기기능성질환·운동학회) p.461
+  diff_type: algorithm
+  topic: 전형적 GERD 증상의 경험적 PPI 시험 — 2주 표준용량
+  harrison_says: '''Nonetheless, the dominant clinical strategy is empirical treatment with acid inhibitors, reserving further evaluation for those who fail to respond. Important exceptions to this are patients with chest pain or persistent dysphagia'' — PPI 시험 기간·용량은 명시하지 않음.'
+  kr_says: 'Statement 9: ''A 2-week trial of a standard dose of proton pump inhibitor should be recommended as a sensitive and practical test for gastroesophageal reflux disease diagnosis in patients with typical gastroesophageal reflux disease symptoms.'' Level of evidence: moderate; Strength of recommendation: strong. 메타분석 PPI test 민감도 0.78, 특이도 0.40.'
+  kmle_rule: KMLE 문항·정리본은 전형적 GERD 증상(경고 증상 없음)에서 표준용량 PPI 2주 시험을 진단적 검사로 적용한다.
+  usmle_rule: USMLE 문항은 경고 증상이 없으면 경험적 acid suppression 으로 시작하고 반응이 없을 때 추가 검사를 하는 해리슨 전략을 따른다.
+  verified: text
+- id: diff.gi.gerd.endoscopy-alarm-features
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2510]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2020 Seoul Consensus on the Diagnosis and Management of GERD(대한소화기기능성질환·운동학회) p.462
+  diff_type: same
+  topic: 내시경 적응 — 경고 증상(삼킴곤란 등)·PPI 무반응
+  harrison_says: '경험적 치료의 예외: ''patients with chest pain or persistent dysphagia, each of which may be indicative of GERD or alternative diagnoses. With chest pain, cardiac disease must be considered. With dysphagia, eosinophilic esophagitis (EoE) should be considered as an alternative diagnosis along with peptic stricture, motility disorders, or esophageal cancer.'' ''mucosal biopsies are necessary to evaluate for infectious or eosinophilic inflammation.'''
+  kr_says: 'Statement 10: ''Endoscopy with or without biopsy can be recommended to diagnose gastroesophageal reflux disease and exclude other organic diseases.'' Level of evidence: very low; Strength: strong. 본문: ''endoscopy is not required in the presence of typical GERD symptoms ... In patients with GERD symptoms who do not respond to a PPIs trial, the upper endoscopy is recommended'' · ''endoscopy is recommended in the presence of alarm symptoms such as dysphagia, unintentional weight loss, and hematemesis and patients at high risk for esophageal malignancy.'''
+  kmle_rule: KMLE 문항·정리본은 삼킴곤란·의도치 않은 체중감소·토혈 등 경고 증상, 식도암 고위험, PPI 시험 무반응이면 내시경(필요 시 생검)을 먼저 한다.
+  usmle_rule: USMLE 문항은 흉통(심장 질환 먼저 배제)·지속 삼킴곤란이 있으면 경험적 치료 대신 평가(내시경·생검)를 하는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.gi.gerd.pcab-initial-treatment
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2511]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2025 Focused Update of the Seoul Consensus on GERD(대한소화기기능성질환·운동학회) p.10-12
+  diff_type: same
+  topic: 초기 치료 — PPI 또는 P-CAB 표준용량 4–8주, 중증 미란성 식도염은 P-CAB 우위
+  harrison_says: '''The hierarchy of effectiveness among pharmaceuticals for healing esophagitis parallels their antisecretory potency. Potassium competitive acid blockers (PCABs) are more efficacious than proton pump inhibitors (PPIs), which are more efficacious than histamine-2 receptor antagonists (H2RAs). The differences are most evident with severe esophagitis, much less so with mild disease.'' 증상 소실에 대해서는 ''minimal data are available for PCABs''. 치료 기간은 명시하지 않음.'
+  kr_says: 'Statement 2(p.10): ''The administration of a standard dose of PPIs or P-CABs once daily for 4 to 8 weeks is recommended as the initial treatment for NERD or mild EE'' — Level of evidence: high; Strength: strong. Statement 3(p.11): ''standard dose of P-CABs or PPIs once daily for 8 weeks is recommended as the initial treatment for severe EE'' — high; weak. Consideration(p.12): ''P-CABs may offer superior mucosal healing efficacy compared to PPIs in patients with severe EE.'' 경증 EE 8주 치유 RR 1.00, 중증 EE 8주 RR 1.10(1.00–1.20). (LA A·B = mild, C·D = severe)'
+  kmle_rule: KMLE 문항·정리본은 NERD·경증 EE(LA A·B)는 표준용량 PPI 또는 P-CAB 하루 1회 4–8주, 중증 EE(LA C·D)는 8주로 치료하고 중증에서 P-CAB 의 치유 우위를 적는다.
+  usmle_rule: USMLE 문항은 P-CAB > PPI > H2RA 의 식도염 치유 효능 위계(중증 식도염에서 차이가 가장 큼)를 따른다.
+  verified: text
+- id: diff.gi.gerd.ph-acid-exposure-threshold
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2505]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2020 Seoul Consensus on the Diagnosis and Management of GERD(대한소화기기능성질환·운동학회) p.464
+  diff_type: threshold
+  topic: 보행성 pH 검사 — 산 노출 시간 비정상 기준 ≥4%(아시아) vs >6%
+  harrison_says: '''the outcome is expressed as the percentage of the day that the pH was <4 (indicative of recent acid reflux), with values exceeding 6% indicative of GERD. Reflux testing is useful in the evaluation of patients presenting with atypical symptoms or an inexplicably poor response to therapy.'''
+  kr_says: 'Statement 13: ''A value of total esophageal acid exposure time of ≥ 4% is defined as an abnormal finding in Asian adults.'' Level of evidence: moderate; Strength of recommendation: weak. (요약 p.453 초록: Lyon 합의의 ''proven GERD'' 는 AET > 6% 이나 ''some Asian researchers have different opinions on whether the same standards should be applied to the Asian population.'')'
+  kmle_rule: KMLE 문항·정리본은 아시아(한국) 성인에서 식도 산 노출 시간 ≥4% 를 비정상으로 판정한다.
+  usmle_rule: USMLE 문항은 pH <4 시간 비율 >6% 를 GERD 로 판정한다.
+  verified: text
+- id: diff.gi.gerd.long-term-maintenance
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2511]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2025 Focused Update of the Seoul Consensus on GERD(대한소화기기능성질환·운동학회) p.12-15
+  diff_type: algorithm
+  topic: 장기 유지 — 표현형별 on-demand/지속 요법과 최저 유효 용량
+  harrison_says: '''Reflux symptoms tend to be chronic, irrespective of esophagitis. Thus, a common management strategy is indefinite treatment with PPIs or H2RAs as necessary for symptom control.'' ''... as with any medication, PPI dosage should be minimized to that necessary for the clinical indication.'' 표현형별 on-demand/지속 구분 없음.'
+  kr_says: 'Statement 4(p.12): ''On-demand therapy with proton pump inhibitor or potassium-competitive acid blocker is recommended for the long-term management of patients with non-erosive reflux disease or mild erosive esophagitis.'' moderate; weak. Statement 5(p.13): ''Continuous daily therapy with potassium-competitive acid blocker or proton pump inhibitor is proposed for the long-term management of patients with severe erosive esophagitis.'' low; weak. Statement 6(p.15): ''The lowest effective dose that controls symptoms and maintains mucosal healing is recommended ...'' low; weak.'
+  kmle_rule: KMLE 문항·정리본은 NERD·경증 EE 는 필요시(on-demand) 요법, 중증 EE 는 매일 지속 요법으로 유지하고, 모두 최저 유효 용량을 쓴다.
+  usmle_rule: USMLE 문항은 증상 조절에 필요한 만큼 PPI/H2RA 를 장기 사용하되 용량을 최소화한다는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.gi.gerd.barrett-surveillance
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2510]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2020 Seoul Consensus on the Diagnosis and Management of GERD(대한소화기기능성질환·운동학회) p.462
+  diff_type: screening
+  topic: 바렛식도 내시경 감시 — 장분절 바렛 권고 vs 효용 미정
+  harrison_says: '''The rate of cancer development is estimated at 0.1–0.3% per year ... However, despite common practice, the utility of endoscopic screening and surveillance programs intended to control the adenocarcinoma risk remains an open question.'' 고도 이형성은 ''mandates further intervention'' — 내시경 점막 절제·소작 권장(p.2511).'
+  kr_says: 'Statement 11: ''Endoscopic surveillance is recommended in patients with long-segment Barrett''s esophagus.'' Level of evidence: very low; Strength of recommendation: strong. 근거: 메타분석에서 감시 내시경이 식도선암 관련 사망 RR 0.60(0.50–0.71), 전체 사망 HR 0.75(0.59–0.94).'
+  kmle_rule: KMLE 문항·정리본은 장분절 바렛식도 환자에게 정기 내시경 감시를 권고한다고 적용한다.
+  usmle_rule: USMLE 문항은 바렛식도 감시의 효용이 미정이라는 해리슨 서술을 따르되, 이형성(특히 고도)이 있으면 내시경 소작·절제 등 추가 치료를 한다.
+  verified: text
+- id: diff.gi.gerd.weight-reduction
+  slot: h323
+  h22_chapter: 334
+  h22_cite: '[[harrison-22: 334장 p.2511]]'
+  kr_guideline_id: kr-ksnm-gerd-seoul
+  kr_cite: 2020 Seoul Consensus on the Diagnosis and Management of GERD(대한소화기기능성질환·운동학회) p.465
+  diff_type: same
+  topic: 생활습관 — 과체중·비만 GERD 의 체중 감량
+  harrison_says: '''In general, minimal evidence supports the efficacy of these measures ... The most broadly applicable recommendation is for weight reduction. Even though the benefit with respect to reflux cannot be assured, the strong epidemiologic relationship between body mass index and GERD and the secondary health gains of weight reduction is beyond dispute.'' 야간 증상은 침대 머리 올리기·취침 전 식사 피하기.'
+  kr_says: 'Statement 16: ''Weight reduction is recommended to improve gastroesophageal reflux disease symptoms in overweight patients or those diagnosed with obesity.'' Level of evidence: moderate; Strength of recommendation: strong.'
+  kmle_rule: KMLE 문항·정리본은 과체중·비만 GERD 환자에게 증상 개선을 위한 체중 감량을 권고한다.
+  usmle_rule: USMLE 문항은 생활습관 중 체중 감량을 가장 널리 적용할 권고로, 야간 증상에는 침대 머리 올리기·취침 전 식사 회피를 쓴다.
+  verified: text
+- id: diff.gi.hbv.moderate-viremia-indication
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2681]]'
+  kr_guideline_id: kr-kasl-hbv-2026
+  kr_cite: 만성 B형간염 진료가이드라인 2026(대한간학회) p.1052
+  diff_type: threshold
+  topic: 비간경변 만성 B형간염 치료 시작 — HBV DNA 단독(≥2,000 IU/mL) vs HBeAg·DNA·ALT 조합
+  harrison_says: 'p.2681 ''In patients with detectable HBeAg and HBV DNA levels >2 × 10^4 IU/mL, treatment is recommended by the AASLD for those with ALT levels >2× the upper limit of normal. (The EASL recommends treatment in HBeAg-positive patients for HBV DNA levels >2 × 10^3 IU/mL and ALT above the upper limit of normal.)'' p.2682 HBeAg 음성: ''antiviral therapy is recommended if ALT is >2× the upper limit of normal (above the upper limit of normal according to EASL) and HBV DNA is >2 × 10^3 IU/mL.'' ALT ≤2× ULN 의 ''gray zone'' 은 HBV DNA·ALT 를 3~6개월마다 감시.'
+  kr_says: 'p.1051 종래 기준(HBeAg 양성 ≥20,000, 음성 ≥2,000 IU/mL + ALT >2× ULN)을 ''an ALT-centered framework for disease classification and treatment strategy may be insufficient for effective HCC prevention'' 으로 보고 HBV DNA 로 단계를 새로 나눔. p.1052 [Recommendation] ''In patients with moderate viremia (serum HBV DNA ≥2,000 IU/mL and ≤8 log10 IU/mL), antiviral therapy is recommended, as they are at high risk for liver disease progression and HCC. (B1)'' 본문: ''regardless of ALT levels or other risk factors''. p.1053 저바이러스혈증(<2,000 IU/mL)은 간경변이 없으면 치료 없이 감시 (B1).'
+  kmle_rule: KMLE 문항·정리본은 간경변 없는 만성 B형간염에서 HBV DNA 2,000 IU/mL 이상~8 log10 IU/mL 이하(중등도 바이러스혈증)이면 ALT·HBeAg 와 무관하게 항바이러스 치료를 권고한다(대한간학회 2026, B1).
+  usmle_rule: USMLE 문항은 AASLD 기준 — HBeAg 양성 HBV DNA >20,000 IU/mL, 음성 >2,000 IU/mL 이면서 ALT >2× ULN 일 때 치료, 그 사이(gray zone)는 나이 >40·가족력·섬유화로 결정 — 을 적용한다.
+  verified: text
+- id: diff.gi.hbv.high-viremia-age
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2682]]'
+  kr_guideline_id: kr-kasl-hbv-2026
+  kr_cite: 만성 B형간염 진료가이드라인 2026(대한간학회) p.1050
+  diff_type: threshold
+  topic: 면역관용기(고바이러스혈증·정상 ALT) 치료 고려 나이 — 30세 vs 40세
+  harrison_says: p.2681 'Nor is treatment recommended currently for HBeAg-positive chronic hepatitis B with normal ALT (labeled by some as reflecting a relatively "immune-tolerant" phase ...)'. p.2682 gray zone 에서도 'therapy would be considered for patients >40 years of age, with extrahepatic manifestations of HBV infection, or with a family history of cirrhosis or HCC; patients whose liver biopsy or noninvasive testing shows moderate to severe necroinflammatory activity or fibrosis'.
+  kr_says: '[Recommendation] ''In patients with high viremia (serum HBV DNA >8 log10 IU/mL), antiviral therapy should be considered in those older than 30 years, those with elevated liver enzymes, or those with significant liver fibrosis. In the absence of these risk factors for disease progression or HCC, close monitoring is recommended. (B1)'' (p.1048 그림 2 각주: ''ALT >ULN, age >30 years, or significant fibrosis (≥F2)'').'
+  kmle_rule: KMLE 문항·정리본은 HBV DNA >8 log10 IU/mL(고바이러스혈증)에서 나이 30세 초과·ALT 상승·유의한 섬유화(≥F2) 중 하나가 있으면 치료를 고려하고, 없으면 면밀히 감시한다(대한간학회 2026, B1).
+  usmle_rule: USMLE 문항은 HBeAg 양성·정상 ALT(immune-tolerant)는 치료하지 않고 감시하며, 나이 >40·가족력·섬유화가 있을 때 치료를 고려한다(AASLD).
+  verified: text
+- id: diff.gi.hbv.compensated-cirrhosis
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2682]]'
+  kr_guideline_id: kr-kasl-hbv-2026
+  kr_cite: 만성 B형간염 진료가이드라인 2026(대한간학회) p.1054
+  diff_type: same
+  topic: 간경변 B형간염 — HBV DNA 검출되면 ALT 와 무관하게 치료
+  harrison_says: p.2682 'For patients with compensated cirrhosis ... treatment is recommended regardless of HBeAg status and ALT as long as HBV DNA is detectable. ... For patients with decompensated cirrhosis, treatment is recommended regardless of serologic and biochemical status, as long as HBV DNA is detectable. In addition, patients with decompensated cirrhosis should be evaluated as candidates for liver transplantation.' p.2683 간경변에는 'PEG IFN should not be used'.
+  kr_says: '[Recommendation] ''In patients with compensated cirrhosis, antiviral therapy is recommended if serum HBV DNA is detectable, regardless of the level of viremia (HBV DNA ≥2,000 IU/mL [A1]; <2,000 IU/mL [B1]).'' / ''In patients with decompensated cirrhosis, antiviral therapy should be initiated when serum HBV DNA is detectable, and liver transplantation should be considered in the event of progression to liver failure. (A1)'''
+  kmle_rule: KMLE 문항·정리본은 대상성·비대상성 간경변에서 HBV DNA 가 검출되면 수치·ALT 와 무관하게 경구 항바이러스제를 시작한다(대상성 ≥2,000 A1·<2,000 B1, 비대상성 A1 + 간이식 고려).
+  usmle_rule: USMLE 문항은 간경변 환자에서 HBV DNA 가 검출되면 HBeAg·ALT 와 무관하게 경구제(entecavir·tenofovir)로 치료하고, 비대상성이면 간이식을 의뢰하며 PEG IFN 은 쓰지 않는다.
+  verified: text
+- id: diff.gi.hbv.first-line-agents
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2682]]'
+  kr_guideline_id: kr-kasl-hbv-2026
+  kr_cite: 만성 B형간염 진료가이드라인 2026(대한간학회) p.1054, p.1057
+  diff_type: first_line
+  topic: 초치료 1차 약 — PEG IFN 포함 여부 · besifovir
+  harrison_says: p.2682 'PEG IFN, entecavir, or tenofovir (TDF or TAF) is recommended as first-line therapy (Table 352-3).' p.2683 'some physicians prefer to begin with PEG IFN, while most physicians and patients prefer oral agents as first-line therapy.'
+  kr_says: p.1054 Peg-IFNα 는 유전자형 C(국내 대다수)에서 효과가 낮고 국내 공급이 없어 'Peg-IFNα is difficult to recommend as a first-line treatment for hepatitis B in South Korea'; lamivudine·telbivudine·clevudine·adefovir 는 'no longer recommended as first-line therapies'. p.1057 [Recommendation] 'For treatment-naive patients with CHB, oral antiviral agents with a high genetic barrier—specifically TAF, TDF, ETV, and BSV—are recommended as first-line therapy (A1).' (Table 5 BSV 용량은 정오표대로 '150 mg with L-carnitine 660 mg once daily').
+  kmle_rule: KMLE 문항·정리본은 초치료 1차 약을 고유전장벽 경구제 TAF·TDF·ETV·besifovir 로 적고(A1), PEG IFN 은 국내 1차 약으로 쓰지 않는다.
+  usmle_rule: USMLE 문항은 1차 약을 entecavir·tenofovir(TDF/TAF) 또는 PEG IFN 으로 적용한다(besifovir 는 다루지 않는다).
+  verified: text
+- id: diff.gi.hbv.renal-bone-agent
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2683]]'
+  kr_guideline_id: kr-kasl-hbv-2026
+  kr_cite: 만성 B형간염 진료가이드라인 2026(대한간학회) p.1055, p.1057
+  diff_type: first_line
+  topic: 신기능 저하·골대사 질환 — TDF 회피, 대체 약 범위
+  harrison_says: '''Between TDF and TAF, TAF is preferred in patients with creatinine clearance <50 mL/min, reduced bone density, and risk factors for renal injury (e.g., decompensated cirrhosis, creatinine clearance <60 mL/min, poorly controlled hypertension or diabetes, proteinuria, active glomerulonephritis, concomitant nephrotoxic medications, or solid-organ transplantation). ... the EASL recommendation for TAF extends to persons >60 years''.'
+  kr_says: 'p.1055 ''TDF is not recommended for patients with underlying renal dysfunction or risk factors for bone metabolism diseases; instead, TAF, ETV, or BSV are recommended.'' 신기능 위험: ''glomerular filtration rate (GFR) <60 mL/min/1.73m², proteinuria or albuminuria (urine albumin-to-creatinine ratio >30 mg/g), hypophosphatemia (<2.5 mg/dL), uncontrolled diabetes or hypertension''. p.1057 [Recommendation] ''TAF, ETV, or BSV are preferentially recommended for patients who have pre-existing renal impairment or bone metabolic disease (A1), as well as for those at an increased risk of developing such conditions (B1).'''
+  kmle_rule: KMLE 문항·정리본은 신기능 저하(GFR <60)·골대사 질환 또는 그 위험이 있으면 TDF 대신 TAF·ETV·besifovir 를 우선 쓴다(A1/B1).
+  usmle_rule: USMLE 문항은 신손상 위험·골밀도 저하 환자에서 TDF 보다 TAF 를 고른다(CrCl <50 등).
+  verified: text
+- id: diff.gi.hbv.pregnancy-mtct
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2683]]'
+  kr_guideline_id: kr-kasl-hbv-2026
+  kr_cite: 만성 B형간염 진료가이드라인 2026(대한간학회) p.1085
+  diff_type: threshold
+  topic: 임신부 수직감염 예방 — HBV DNA ≥200,000 IU/mL · 24~32주 tenofovir
+  harrison_says: 'p.2683 ''Tenofovir is the current drug of choice in pregnancy.'' (entecavir 는 ''Data on the safety of entecavir during pregnancy have not been published''). 수직감염 예방 기준치는 제시하지 않음 — p.2677 lamivudine 단락: ''administration of lamivudine during the last months of pregnancy to mothers with high-level hepatitis B viremia reduced the likelihood of perinatal transmission of hepatitis B.'''
+  kr_says: '[Recommendation] ''1. ... TDF or TAF is recommended as the first-line agent. (A1)'' ''3. In pregnant women with CHB who are not receiving antiviral therapy, breastfeeding should not be restricted after delivery. (B1)'' ''4. In pregnant women with serum HBV DNA levels ≥200,000 IU/mL, antiviral therapy during pregnancy should be initiated to prevent vertical transmission. (A1) For the purpose of preventing vertical transmission, antiviral therapy is ideally started before 28 weeks of gestation and is recommended to begin between 24 and 32 weeks, with continuation until 2–12 weeks postpartum. (B1)'''
+  kmle_rule: KMLE 문항·정리본은 임신부 HBV DNA ≥200,000 IU/mL 이면 수직감염 예방을 위해 TDF 또는 TAF 를 임신 24~32주(이상적으로 28주 전)에 시작해 분만 후 2~12주까지 유지한다(A1/B1).
+  usmle_rule: USMLE 문항은 임신 중 B형간염 항바이러스제로 tenofovir 를 고르고, 고바이러스혈증 산모에서 임신 후기 투여가 수직감염을 줄인다는 해리슨 서술을 따른다(수치 기준은 해리슨 352장에 없음).
+  verified: text
+- id: diff.gi.hcv.svr12-definition
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2692]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.12
+  diff_type: same
+  topic: 치료 목표 — SVR12(치료 종료 12주 뒤 HCV RNA 미검출)
+  harrison_says: '''The goal of treatment is to eradicate HCV RNA during therapy and to document that the virus remains undetectable for at least 12 weeks after completion of therapy (SVR12).'''
+  kr_says: '[Recommendation] ''2. The short-term therapeutic goal is to achieve SVR, defined as undetectable serum HCV RNA for at least 12 weeks post-treatment. (A1)'''
+  kmle_rule: KMLE 문항·정리본은 SVR 을 치료 종료 후 최소 12주에 혈청 HCV RNA 미검출로 정의한다(A1).
+  usmle_rule: USMLE 문항은 SVR12(치료 종료 12주 뒤 HCV RNA 미검출)를 완치 지표로 적용한다.
+  verified: text
+- id: diff.gi.hcv.treatment-indication
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2692]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.12
+  diff_type: same
+  topic: 치료 대상 — HCV RNA 양성이면 ALT·섬유화와 무관하게 모두
+  harrison_says: '''Patients with chronic hepatitis C who have detectable HCV RNA in serum, whether or not aminotransferase levels are increased, and chronic hepatitis of any grade and stage are candidates for antiviral therapy with DAA agents. The only exception would be patients with short life expectancies''. 급성: ''Delaying the initiation of therapy in acute hepatitis C to allow for spontaneous recovery is no longer recommended.'''
+  kr_says: 본문 'antiviral therapy is recommended for all individuals with detectable serum HCV RNA, regardless of ALT level.' [Recommendation] '1. Antiviral therapy should be offered to all patients with acute or chronic hepatitis C who do not have contraindications to treatment. (A1)' '3. Antiviral therapy is not recommended for patients with limited life expectancy due to non–liver-related comorbidities or those who are not candidates for liver transplantation and are unlikely to benefit from viral eradication. (B1)'
+  kmle_rule: KMLE 문항·정리본은 HCV RNA 양성인 급성·만성 C형간염 모두를 ALT 와 무관하게 치료 대상으로 하고(A1), 간 외 질환으로 기대여명이 짧은 경우만 제외한다(B1).
+  usmle_rule: USMLE 문항은 HCV RNA 양성이면 ALT·섬유화 정도와 무관하게 DAA 로 치료하고, 급성 C형간염도 자연 회복을 기다리지 않는다.
+  verified: text
+- id: diff.gi.hcv.simplified-regimen-cirrhosis
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2692]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.13, p.19
+  diff_type: algorithm
+  topic: 단순화 치료(SOF/VEL 12주 · G/P 8주) 대상 — 대상성 간경변 포함 여부
+  harrison_says: '''Patients who are eligible for this simplified algorithm must not have any of the following clinical characteristics: prior treatment failure, cirrhosis, presence of HBsAg, pregnancy, HCC, or history of liver transplantation. In the absence of any of these features, the patient may be treated with either sofosbuvir/velpatasvir for 12 weeks or glecaprevir/pibrentasvir for 8 weeks.'''
+  kr_says: p.13 [Recommendation] '1. A simplified treatment strategy using pan-genotypic oral antiviral agents with SVR assessment only after treatment completion is recommended for treatment-naïve patients without cirrhosis or with compensated cirrhosis. (A1)' '2. The simplified treatment strategy is not recommended for patients with prior HCV treatment experience, HBV co-infection, compensated cirrhosis with ESRD (eGFR <30 mL/min/1.73 m²), decompensated cirrhosis (Child–Pugh score ≥7), pregnancy, suspected or confirmed hepatocellular carcinoma, or a history of liver transplantation. (A1)' p.19 [Recommendation] '... a simplified treatment strategy using either sofosbuvir/velpatasvir for 12 weeks or glecaprevir/pibrentasvir for 8 weeks is recommended, regardless of genotype. (A1)'
+  kmle_rule: KMLE 문항·정리본은 치료 경험 없는 비간경변 또는 대상성 간경변(Child–Pugh A) 환자에게 유전자형 검사 없이 sofosbuvir/velpatasvir 12주 또는 glecaprevir/pibrentasvir 8주를 쓰는 단순화 치료를 적용한다(A1).
+  usmle_rule: USMLE 문항은 단순화 알고리즘에서 간경변을 제외 대상으로 보고, 해당 없으면 sofosbuvir/velpatasvir 12주 또는 glecaprevir/pibrentasvir 8주를 고른다.
+  verified: text
+- id: diff.gi.hcv.national-screening
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2693]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.8
+  diff_type: screening
+  topic: 일반인 HCV 선별 — 국가건강검진 56세 anti-HCV
+  harrison_says: 352장은 일반 성인 선별의 나이·대상을 제시하지 않음. p.2693 'The World Health Organization has set an elimination goal of a 90% reduction in the global prevalence of HCV infection by 2030 ... efforts have been devoted to improving the frequency of screening and diagnosis' 및 'one-stop screening and treatment initiation' 프로그램 언급뿐.
+  kr_says: '''As a result, beginning in 2025, anti-HCV testing has been incorporated into the national health checkup for all citizens at the age of 56.'' [Recommendation] ''1. Nationwide large-scale screening is recommended for elimination of hepatitis C. (A1)'' (같은 쪽이 인용한 미국 기준: USPSTF 2020 ''one-time screening for all adults aged 18 to 79 years'').'
+  kmle_rule: KMLE 문항·정리본은 국가건강검진에서 만 56세에 anti-HCV 검사를 하고(2025~), 국가 단위 대규모 선별을 권고(A1)한다고 적는다.
+  usmle_rule: 'USMLE 문항은 미국 기준(USPSTF 2020: 18~79세 성인 1회 선별 — 해리슨 352장이 아니라 대한간학회 p.8 인용으로 확인)을 따른다.'
+  verified: text
+- id: diff.gi.hcv.prenatal-screening
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2693]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.7, p.35
+  diff_type: screening
+  topic: 임신부 HCV 선별 — 모든 임신부 vs 위험인자 있는 임신부
+  harrison_says: '''Currently, screening all pregnant women for HCV infection is recommended. Breast feeding is not contraindicated in women with HCV infection (unless the mother has a break in the integrity of the nipples or is co-infected with HIV).'' DAA 는 ''not indicated routinely in pregnancy''.'
+  kr_says: p.7 'Routine prenatal HCV screening is not universally recommended unless the pregnant woman has identifiable risk factors.' p.35 'In Korea, given the increasing adoption of universal HCV screening, screening may be considered during prenatal care for pregnant women with identifiable risk factors.' — 선별 문장엔 권고 등급 표기 없음. 임신 중 치료는 p.36 [Recommendation] 'may be considered on an individual basis ... (B2)'.
+  kmle_rule: KMLE 문항·정리본은 임신부 HCV 선별을 위험인자가 있는 임신부에 한해 고려한다고 적는다(모든 임신부 일상 선별 아님).
+  usmle_rule: USMLE 문항은 모든 임신부에게 HCV 선별검사를 한다.
+  verified: text
+- id: diff.gi.hcv.ckd-regimen
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2693]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.29
+  diff_type: first_line
+  topic: 중증 신기능 저하·투석 — 권고 DAA 와 G/P 기간
+  harrison_says: '''For patients with severe renal impairment (creatinine clearances <30 mL/min), including those undergoing hemodialysis, recommended combinations are 12 weeks of elbasvir-grazoprevir for genotypes 1 and 4 or 12 weeks of glecaprevir-pibrentasvir for all genotypes. ... sofosbuvir-containing regimens were approved by the FDA in November 2019 for patients with severe renal impairment.'''
+  kr_says: '[Recommendation] ''1. In patients with CKD and concurrent HCV infection, treatment with sofosbuvir/velpatasvir or glecaprevir/pibrentasvir is recommended. The treatment duration should follow that used for patients with normal renal function. (A1)'' ''2. In patients with a history of decompensated complications or decompensated cirrhosis (Child–Pugh class B or C) and severe renal impairment (eGFR <30 mL/min/1.73 m²), a 12-week course of sofosbuvir/velpatasvir with low-dose ribavirin (200 mg/day) is recommended. ... (B1)'' (p.16: ''no dose adjustment is currently needed in patients with CKD, regardless of severity'').'
+  kmle_rule: KMLE 문항·정리본은 투석을 포함한 CKD 동반 C형간염에 sofosbuvir/velpatasvir 또는 glecaprevir/pibrentasvir 를 정상 신기능과 같은 기간(SOF/VEL 12주 · G/P 8주)으로 쓴다(A1).
+  usmle_rule: USMLE 문항은 CrCl <30·투석 환자에 glecaprevir-pibrentasvir(전 유전자형) 또는 elbasvir-grazoprevir(1·4형) 12주를 고르되, sofosbuvir 포함 요법도 2019년 승인되었음을 안다.
+  verified: text
+- id: diff.gi.hcv.decompensated-cirrhosis
+  slot: h341
+  h22_chapter: 352
+  h22_cite: '[[harrison-22: 352장 p.2692]]'
+  kr_guideline_id: kr-kasl-hcv-2025
+  kr_cite: C형간염 진료가이드라인 2025(대한간학회) p.28
+  diff_type: same
+  topic: 비대상성 간경변 C형간염 — SOF/VEL + ribavirin 12주, PI 금기
+  harrison_says: '''protease-inhibitor-containing combinations have been associated with potential hepatotoxicity and hepatic decompensation and are contraindicated in this patient subset. ... in ribavirin-eligible patients, ribavirin is added to a 12-week course of sofosbuvir-NS5A therapy; however, in cases of ribavirin ineligibility, the duration of therapy should be extended to 24 weeks. ... patients with decompensated cirrhosis should be referred to a liver transplantation center.'''
+  kr_says: '[Recommendation] ''1. All patients with decompensated cirrhosis (Child–Pugh class B or C) who are HCV RNA positive should be referred to a hepatology specialist or a liver transplantation center. (C1)'' ''4. Protease inhibitors should be avoided in patients with decompensated cirrhosis due to the increased risk of adverse events. (A1)'' ''5. Patients with decompensated cirrhosis should be treated with a combination regimen of sofosbuvir/velpatasvir and ribavirin. Ribavirin should be initiated at 600 mg and titrated up to 1,200 mg in patients weighing ≥75 kg or to 1,000 mg in those weighing <75 kg. The total treatment duration should be 12 weeks. (A1) If ribavirin is contraindicated or not tolerated, a 24-week course of sofosbuvir/velpatasvir monotherapy is recommended. (A1)'' (6번: 유전자형 1·2형은 SOF/VEL 단독 12주도 대안, B2).'
+  kmle_rule: KMLE 문항·정리본은 비대상성 간경변(Child–Pugh B·C)에서 단백분해효소 억제제를 피하고 sofosbuvir/velpatasvir + ribavirin 12주(ribavirin 불가 시 SOF/VEL 24주)를 쓰며 간이식 센터로 의뢰한다.
+  usmle_rule: USMLE 문항은 비대상성 간경변에 protease inhibitor(glecaprevir 등) 금기, sofosbuvir-NS5A + ribavirin 12주(불가 시 24주)를 적용한다.
+  verified: text
+- id: diff.gi.hcc.surveillance-target
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.661]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.599
+  diff_type: screening
+  topic: 간세포암 감시 대상 — 만성 B형간염 전체 vs 나이·인종·위험점수로 고른 B형간염
+  harrison_says: '''Surveillance is recommended for cirrhotic patients owing to any cause, those with HCV-related advanced fibrosis, and patients with chronic HBV infection if Asian aged >40 years, African aged >20 years, family history of HCC, or patients with sufficient risk by risk scores such as PAGE-B.'' 또 ''the presence of advanced cirrhosis (Child-Pugh class C) prevents potentially curative therapies from being employed, and thus surveillance is not recommended'' (이식 대기자는 예외).'
+  kr_says: '[Recommendations] 1. ''Surveillance for HCC should be performed in high-risk groups; patients with chronic hepatitis B (A1), chronic hepatitis C (B1), and liver cirrhosis (A1).'' — 만성 B형간염에 나이·인종·위험점수 조건을 두지 않음.'
+  kmle_rule: KMLE 문항·정리본은 만성 B형간염(나이 조건 없음)·만성 C형간염·간경변증을 간세포암 감시 대상(고위험군)으로 적용한다.
+  usmle_rule: USMLE 문항은 간경변(원인 무관)·HCV 진행 섬유화·조건을 갖춘 만성 HBV(아시아인 >40세, 아프리카인 >20세, HCC 가족력, PAGE-B 등)를 감시 대상으로 하고, Child-Pugh C 는 (이식 대기 제외) 감시하지 않는다.
+  verified: text
+- id: diff.gi.hcc.surveillance-us-afp-6mo
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.661]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.599
+  diff_type: same
+  topic: 감시 검사 — 6개월마다 간초음파 + 혈청 AFP
+  harrison_says: '''Ultrasonography every 6 months with serum α-fetoprotein (AFP) levels is the recommended method of surveillance. It has a sensitivity of ~65% and a specificity of >90% for early detection.'' CT·MRI 는 ''not recommended as screening tools''; ''Contrast-enhanced MRI can be considered in patients with obesity and fatty liver, where visualization with ultrasound is suboptimal.'''
+  kr_says: '[Recommendations] 2. ''Surveillance test for HCC should be performed with liver US plus serum AFP measurement every 6 months (A1).'' 3. ''When liver US cannot be performed adequately, dynamic contrast-enhanced CT or dynamic contrast-enhanced MRI can be performed as an alternative (C1)''. 본문(p.597): 미국·유럽은 ''only the US examination is often recommended'', 한국·일본은 US+AFP.'
+  kmle_rule: KMLE 문항·정리본은 고위험군 감시를 6개월마다 간초음파 + 혈청 AFP 로 적용한다(초음파가 부적절하면 역동적 조영 CT·MRI 로 대체).
+  usmle_rule: USMLE 문항은 ultrasound every 6 months ± AFP 를 HCC surveillance 로 적용하고, CT·MRI 는 일상 선별에 쓰지 않는다.
+  verified: text
+- id: diff.gi.hcc.noninvasive-dx-population
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.661]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.607
+  diff_type: algorithm
+  topic: 영상 비침습 진단을 쓸 수 있는 환자 — 간경변만 vs 만성 B·C형간염 포함 고위험군
+  harrison_says: 'p.661: ''Noninvasive criteria can only be applied to cirrhotic patients and are based on imaging techniques obtained by four-phase multidetector CT scan ... or dynamic contrast-enhanced MRI.'' p.662: ''Pathological diagnosis is required: (1) in patients without cirrhosis, (2) if radiology is not typical in at least one of two imaging techniques (CT and MRI), and (3) for a LI-RADS-4 lesion.'''
+  kr_says: '[Recommendations] 1. ''The diagnosis of HCC can be made pathologically or using the typical hallmarks of HCC obtained by non-invasive imaging in high-risk groups (chronic hepatitis B [A1], chronic hepatitis C [B1], or cirrhosis [A1]).'' — 간경변이 없는 만성 B형간염 환자도 영상만으로 진단 가능.'
+  kmle_rule: KMLE 문항·정리본은 간경변이 없더라도 만성 B형·C형간염 환자의 결절에 영상 진단 기준(동맥기 조영증강 + 씻김)을 적용해 생검 없이 간세포암으로 진단한다.
+  usmle_rule: USMLE 문항은 비침습 영상 진단을 간경변 환자에게만 적용하고, 간경변이 없는 환자의 결절은 조직검사로 진단한다.
+  verified: text
+- id: diff.gi.hcc.imaging-hallmark
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.661]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.607
+  diff_type: same
+  topic: ≥1 cm 결절의 영상 진단 — 다중시기 CT·MRI 의 동맥기 조영증강 + 문맥기·지연기 씻김
+  harrison_says: '''In nodules >1 cm or with AFP ≥20 ng/mL or rising AFP, multiphasic contrast-enhanced CT or MRI is recommended. Using these techniques, the typical hallmark of HCC consists of vascular uptake of the nodule in the arterial phase with washout in the portal venous or delayed phases. ... diagnostic specificity of ~95–100%, making a biopsy unnecessary.'''
+  kr_says: '[Recommendations] 2. ''For a new liver nodule ≥1 cm detected by surveillance tests in high-risk patients, multiphasic CT, or multiphasic MRI ... should be performed as a first-line imaging study for the diagnosis of HCC (A1).'' 3. ''(1) the radiological hallmarks in multiphasic CT or MRI with extracellular contrast agents are APHE with washout appearance in the portal venous or delayed phases (A1). (2) ... MRI with hepatocyte-specific contrast agents are APHE with washout appearance in the portal venous, delayed, or hepatobiliary phases'' (B1, 뚜렷한 T2 고신호·표적 모양이 없는 병변에 한해).'
+  kmle_rule: KMLE 문항·정리본은 고위험군의 1 cm 이상 새 결절에 다중시기 CT·MRI 를 시행하고, 동맥기 조영증강 + 문맥기·지연기 씻김(간세포특이 조영제 MRI 는 간담도기 포함)이면 생검 없이 '확정' 간세포암으로 진단한다.
+  usmle_rule: USMLE 문항은 >1 cm 결절의 multiphasic CT/MRI 에서 arterial enhancement + portal venous/delayed washout 을 HCC 의 진단적 소견(생검 불필요)으로 적용한다.
+  verified: text
+- id: diff.gi.hcc.indeterminate-nodule-followup
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.661]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.608
+  diff_type: terminology
+  topic: 비전형 결절·1 cm 미만 결절 — '확정/가능(probable)/불확정' vs LI-RADS, 추적 간격
+  harrison_says: 'LI-RADS 로 분류: ''LI-RADS-4 category are likely to be an HCC in 60–70% of cases and repeated imaging within 3–6 months or biopsy is recommended. Finally, LI-RADS-5 lesions have a ~95% probability of being HCCs.'' ''Nodules <1 cm in size are unlikely to be HCC ... and thus ultrasound follow-up at 3–4 months is recommended.'' (p.662: LI-RADS-4 는 ''Pathological diagnosis is required'').'
+  kr_says: '[Recommendations] 5. ''For "probable" HCC, follow-up imaging study within 3 months or biopsy should be considered (C1). For "indeterminate" nodules that cannot be diagnosed as "definite" or "probable" HCC by imaging, follow-up imaging study within 6 months or biopsy should be considered (B1).'' 6. ''For subcentimeter nodules newly detected on HCC surveillance in high-risk patients, follow-up surveillance test within 6 months is recommended (C1).'' (4번: 보조 영상 소견으로 ''probable'' HCC 를 정한다 — LI-RADS 범주는 쓰지 않음).'
+  kmle_rule: KMLE 문항·정리본은 '확정·가능(probable)·불확정' 간세포암 용어를 쓰고, 가능 HCC 는 3개월 내 추적 영상 또는 생검, 불확정 결절은 6개월 내 추적 영상 또는 생검, 1 cm 미만 새 결절은 6개월 내 감시 검사를 적용한다.
+  usmle_rule: 'USMLE 문항은 LI-RADS 범주(LR-4: 3–6개월 내 재영상 또는 생검, LR-5: HCC)를 쓰고, 1 cm 미만 결절은 3–4개월 뒤 초음파 추적을 적용한다.'
+  verified: text
+- id: diff.gi.hcc.staging-system
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.662]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.609-610
+  diff_type: algorithm
+  topic: 병기 체계 — mUICC 1차(BCLC·AJCC 보완) vs BCLC
+  harrison_says: 'p.662: ''The most accepted staging system is the Barcelona Clinic Liver Cancer (BCLC) Classification, which is endorsed by U.S. and European clinical practice guidelines (Fig. 87-3).'' p.663: ''Very early HCC (BCLC 0) is defined by single tumors ≤2 cm ... Early HCC (BCLC A) includes either single tumors or a maximum of three nodules of ≤3 cm ... Intermediate stage (BCLC B) is defined by all other liver-only tumors'' — 혈관 침범·림프절·간외 전이·ECOG 1–2 는 BCLC C.'
+  kr_says: 'p.610 [Recommendations] 1. ''This guideline adopts the mUICC stages as the primary staging system, with the BCLC staging system and the AJCC/UICC TNM staging system serving as complementary systems (B1).'' p.609 Table 5(Modified UICC stage): T 기준 세 가지 ''(1) Number of tumors: solitary (2) Diameter of the largest tumor ≤2 cm (3) No vascular or bile duct invasion'' — 셋 다 = T1, 둘 = T2, 하나 = T3, 없음 = T4; I=T1N0M0, II=T2N0M0, III=T3N0M0, IVA=T4N0M0 또는 N1M0, IVB=M1.'
+  kmle_rule: KMLE 문항·정리본은 간세포암 병기를 mUICC(단발·≤2 cm·혈관/담관 침범 없음 세 기준 충족 수로 T1~T4)로 매기고, BCLC 는 치료 선택을 돕는 보완 체계로 적는다.
+  usmle_rule: USMLE 문항은 BCLC(0/A/B/C/D — 종양 크기·수, 혈관 침범·간외 전이, ECOG, 간기능)로 병기와 치료를 배정한다.
+  verified: text
+- id: diff.gi.hcc.first-line-systemic
+  slot: h82
+  h22_chapter: 87
+  h22_cite: '[[harrison-22: 87장 p.664]]'
+  kr_guideline_id: kr-klca-hcc-2022
+  kr_cite: 2022 간세포암종 진료 가이드라인(대한간암학회·국립암센터) p.637
+  diff_type: same
+  topic: 진행성 간세포암 1차 전신치료 — 아테졸리주맙+베바시주맙 또는 더발루맙+트레멜리무맙
+  harrison_says: 'p.664: ''First-line therapy for advanced HCC includes atezolizumab plus bevacizumab or durvalumab plus tremelimumab. Both combinations were superior to sorafenib in phase 3 trials. In patients with contraindications for immunotherapies, both sorafenib or lenvatinib are recommended''. p.666: 상부위장관 내시경 정맥류 선별이 ''has become standard before first-line therapy in advanced HCC to mitigate the risk of bleeding associated with bevacizumab''.'
+  kr_says: '[Recommendations] 1. ''Atezolizumab plus bevacizumab or durvalumab plus tremelimumab is recommended for systemic treatment-naïve patients with locally advanced unresectable or metastatic HCC not amenable to curative or loco-regional therapy who have Child-Pugh class A and ECOG performance status 0–1 (A1). If these two combination therapies cannot be applied, sorafenib or lenvatinib is recommended (A1).'' 2. ''Sorafenib is considered for patients with HCC who have Child-Pugh class B7 (B1) or B8–9 (B2)''.'
+  kmle_rule: KMLE 문항·정리본은 Child-Pugh A·ECOG 0–1 진행성 간세포암의 1차 전신치료를 아테졸리주맙+베바시주맙 또는 더발루맙+트레멜리무맙으로, 쓸 수 없으면 소라페닙·렌바티닙으로 적용한다.
+  usmle_rule: USMLE 문항은 advanced HCC 1차를 atezolizumab + bevacizumab 또는 durvalumab + tremelimumab, 면역치료 금기 시 sorafenib·lenvatinib 로 적용한다.
+  verified: text
+- id: diff.gi.cirrhosis.sbp-diagnosis-treatment
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2716]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 복수 및 관련 합병증 2026(대한간학회) p.981, 983, 986'
+  diff_type: same
+  topic: SBP — 복수 호중구 ≥250, 3세대 세팔로스포린 + 알부민
+  harrison_says: '''The diagnosis of SBP is made when the fluid sample has an absolute neutrophil count >250/μL. Bedside cultures should be obtained by direct injection of ascitic fluid into blood culture bottles.'' ''Treatment is commonly with intravenous third-generation cephalosporin for 5 days. In addition, intravenous albumin (1.5 g/kg body weight on day 1 and 1.0 g/kg on day 3) has been shown to reduce the risk of renal failure and to improve survival.'''
+  kr_says: 'p.981 [Recommendations] 1. ''When SBP is suspected, diagnostic paracentesis should be performed, and SBP is diagnosed when the ascitic PMN count is ≥250/mm³. (A1)'' p.983: ''Community-acquired spontaneous bacterial peritonitis should be treated empirically with intravenous third-generation cephalosporins (ceftriaxone or cefotaxime) for 5–7 days. (A1)'' p.986: ''intravenous albumin should be administered in combination with antibiotics to reduce the risk of acute kidney injury and mortality. (A1)'' (근거 RCT 용량 p.985: ''1.5 g/kg at diagnosis and 1.0 g/kg on day 3'').'
+  kmle_rule: KMLE 문항·정리본은 복수 다형핵백혈구 ≥250/mm³ 를 SBP 로 진단하고, 지역사회 획득 SBP 는 정맥 3세대 세팔로스포린 5–7일 + 정맥 알부민(진단일 1.5 g/kg, 3일째 1.0 g/kg)으로 치료한다.
+  usmle_rule: USMLE 문항은 ascitic PMN >250/μL 를 SBP 로 진단하고 IV third-generation cephalosporin + IV albumin(1.5 g/kg day 1, 1.0 g/kg day 3)을 적용한다.
+  verified: text
+- id: diff.gi.cirrhosis.sbp-prophylaxis
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2716]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 복수 및 관련 합병증 2026(대한간학회) p.987'
+  diff_type: first_line
+  topic: SBP 예방 — 위장관 출혈 시 세프트리악손 · 2차/고위험 1차 예방에 리팍시민 또는 노르플록사신
+  harrison_says: '''In patients with variceal hemorrhage, the frequency of SBP is significantly increased, and prophylaxis against SBP is recommended at presentation with upper GI bleeding. Furthermore, in patients who have had an episode of SBP and recovered, quinolone antibiotic prophylaxis should be given to prevent recurrent SBP.'' (출혈 시 항생제는 p.2714 ''Prophylactic antibiotics, usually with ceftriaxone''). 복수 단백 <1.5 g/dL 은 p.2715 에서 SBP 위험 증가로만 서술 — 1차 예방 권고 문장은 없음.'
+  kr_says: '[Recommendations] 1. ''In cirrhotic patients with gastrointestinal bleeding, intravenous ceftriaxone 1 g/day is recommended to prevent infections, including spontaneous bacterial peritonitis. (A1)'' 2. ''In patients with ascitic protein concentration ≤1.5 g/dL accompanied by severe liver failure, renal dysfunction, or hyponatremia, or in patients who have recovered from spontaneous bacterial peritonitis, prophylactic administration of rifaximin or norfloxacin should be considered to prevent spontaneous bacterial peritonitis. (A2)'''
+  kmle_rule: KMLE 문항·정리본은 위장관 출혈 간경변 환자에 정맥 세프트리악손 1 g/일을, SBP 회복 후 또는 복수 단백 ≤1.5 g/dL + 중증 간부전·신기능장애·저나트륨혈증 환자에 리팍시민 또는 노르플록사신 예방을 적용한다.
+  usmle_rule: USMLE 문항은 상부위장관(정맥류) 출혈 시 ceftriaxone 예방, SBP 회복 후 quinolone 2차 예방을 적용한다.
+  verified: text
+- id: diff.gi.cirrhosis.sodium-restriction
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2715]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 복수 및 관련 합병증 2026(대한간학회) p.974'
+  diff_type: terminology
+  topic: 복수 식이 나트륨 제한 — 소금 <5 g/일(나트륨 <2,000 mg) vs 나트륨 2 g/일
+  harrison_says: '''it is often extremely difficult to get patients to change their dietary habits to ingest 2 g of sodium per day, equivalent to slightly more than three-quarters of a teaspoon of salt, which is the recommended amount.'' 이뇨제: ''spironolactone at 100 mg/d ... furosemide may be added at 40 mg/d'', 최대 400 mg/d·160 mg/d. 수분 제한 언급 없음.'
+  kr_says: '[Recommendations] 3. ''A sodium-restricted diet (salt <5 g/day, equivalent to sodium <2,000 mg or 88 mmol/day) is recommended for patients with cirrhotic ascites. (B1) Fluid restriction is not required unless the patient presents with severe hyponatremia (serum sodium <125 mmol/L). (B1)'' 4. ''Spironolactone ... is recommended as the first-line diuretic ... with furosemide added as needed (A1)''.'
+  kmle_rule: KMLE 문항·정리본은 간경변 복수의 식이를 소금 5 g/일 미만(나트륨 2,000 mg·88 mmol 미만)으로 적고, 혈청 나트륨 <125 mmol/L 가 아니면 수분 제한을 하지 않는다.
+  usmle_rule: USMLE 문항은 cirrhotic ascites 식이를 sodium 2 g/day 로 적용한다(같은 양 — 단위가 소금이 아니라 나트륨).
+  verified: text
+- id: diff.gi.cirrhosis.lvp-albumin
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2715]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 복수 및 관련 합병증 2026(대한간학회) p.973-974'
+  diff_type: same
+  topic: 대량 복수천자(>5 L) 때 알부민 6–8 g/L
+  harrison_says: '''After LVP of ≥5 L, IV 25% albumin at a dose of 6–8 g/L of removed ascites should be given to prevent circulatory dysfunction.'' 불응성 복수에는 ''repeated large-volume paracentesis (LVP) or a TIPS procedure should be considered''.'
+  kr_says: 'p.974 [Recommendations] 5. ''For patients with tense ascites, large-volume paracentesis (LVP) is the first-line treatment. (A1) During LVP, intravenous albumin infusion at a dose of 6–8 g per liter of ascitic fluid removed is recommended. (A1)'' p.973: ''LVP is defined as the removal of more than 5 L of ascitic fluid in a single procedure''.'
+  kmle_rule: KMLE 문항·정리본은 긴장성 복수의 1차 치료를 대량 복수천자(1회 5 L 초과)로 하고, 제거한 복수 1 L 당 알부민 6–8 g 을 정맥 투여한다.
+  usmle_rule: USMLE 문항은 ≥5 L LVP 뒤 albumin 6–8 g/L 투여를 적용한다.
+  verified: text
+- id: diff.gi.cirrhosis.varices-primary-prophylaxis
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2714]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 정맥류·간성뇌증 2019(대한간학회) p.88, 90'
+  diff_type: first_line
+  topic: 식도정맥류 1차 예방 — 큰 정맥류는 NSBB·카르베딜롤·EVL 동등 vs 카르베딜롤 우선
+  harrison_says: '''primary prophylaxis can be achieved either through traditional nonselective beta blockade (NSBB) (propranolol or nadolol) titrated with a goal heart rate of 55–60 beats/min with systolic blood pressure >90 mmHg or by variceal band ligation. Carvedilol is becoming the NSBB of choice.'' ''EVL appears to have equivalent efficacy at preventing bleeding. NSBBs, especially carvedilol, are generally recommended as first-line treatment for primary prophylaxis of bleeding if tolerated, given their additional benefits.'''
+  kr_says: 'p.90 [Recommendations] 1. ''In cirrhotic patients with small EVs that have a high risk of bleeding (decompensated cirrhosis or red color signs on endoscopy), the use of a NSBBs (propranolol or nadolol) should be considered to prevent first variceal bleeding. (B1) NSBBs are adjusted every 2–3 days until the resting heart rate reaches 55–60 beats per minute.'' 2. ''In cirrhotic patients with large EVs, the use of a NSBBs (propranolol or nadolol), carvedilol, or EVL is recommended to prevent first variceal bleeding. (A1) A combination of NSBBs and EVL can also be considered. (B2)'' p.88: ''NSBBs (propranolol and nadolol) are not recommended to prevent the formation of EVs in cirrhotic patients without EVs. (A1)''.'
+  kmle_rule: KMLE 문항·정리본은 큰 식도정맥류의 1차 예방에 NSBB(프로프라놀롤·나돌롤)·카르베딜롤·EVL 중 하나를 동등하게 적용하고(출혈 고위험 작은 정맥류는 NSBB), 정맥류가 없으면 NSBB 를 쓰지 않는다(2019 정맥류·간성뇌증 지침).
+  usmle_rule: USMLE 문항은 고위험 정맥류 1차 예방에 NSBB(특히 carvedilol)를 내약 시 1차로, EVL 을 대안으로 적용한다.
+  verified: text
+- id: diff.gi.cirrhosis.varices-secondary-prophylaxis
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2714]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 정맥류·간성뇌증 2019(대한간학회) p.94'
+  diff_type: same
+  topic: 정맥류 재출혈 예방 — EVL + NSBB 병합, 실패 시 TIPS
+  harrison_says: '''Prevention of further bleeding is usually accomplished with repeated variceal band ligation until varices are obliterated in combination with NSBB. If recurrent variceal bleeding occurs, then TIPS should be performed for long-term prevention of bleeding.'''
+  kr_says: '[Recommendations] 2. ''The combination of endoscopic variceal ligation (EVL) plus NSBBs is recommended as the primary treatment for esophageal variceal bleeding. (A1) If the combination treatment is difficult to perform, use of a NSBBs or EVL alone is recommended. (A1)'' 3. ''If primary treatment for esophageal variceal rebleeding fails, TIPS placement should be considered as a rescue therapy. (B1)'''
+  kmle_rule: KMLE 문항·정리본은 식도정맥류 출혈 후 재출혈 예방을 EVL + NSBB 병합으로, 실패하면 TIPS 로 적용한다(2019 정맥류·간성뇌증 지침).
+  usmle_rule: USMLE 문항은 secondary prophylaxis 를 repeated band ligation + NSBB, 재출혈 시 TIPS 로 적용한다.
+  verified: text
+- id: diff.gi.cirrhosis.hepatic-encephalopathy
+  slot: h344
+  h22_chapter: 355
+  h22_cite: '[[harrison-22: 355장 p.2717]]'
+  kr_guideline_id: kr-kasl-cirrhosis
+  kr_cite: '간경변증 진료 가이드라인: 정맥류·간성뇌증 2019(대한간학회) p.106-107'
+  diff_type: algorithm
+  topic: 간성뇌증 — 락툴로오스 1차, 재발 예방에 리팍시민 단독도 허용 vs 리팍시민은 보조
+  harrison_says: '''The mainstay of treatment for encephalopathy is to use lactulose ... The goal of lactulose therapy is to promote two to three soft stools per day.'' ''Poorly absorbed antibiotics are often used as adjunctive therapies for patients who have a difficult time with lactulose or in those with recurrent episodes. Rifaximin ... The dose is 550 mg twice daily and is very effective in preventing recurrent encephalopathy.'' 단백 제한은 ''the negative impact of that maneuver on overall nutrition is thought to outweigh the benefit, and it is thus strongly discouraged'' (p.2716–2717).'
+  kr_says: 'p.106 [Recommendations] 1. 유발 인자 교정(A1). 2. ''To manage acute episodic overt HE, non-absorbable disaccharides (e.g., lactulose, lactitol) are recommended. Enema is recommended in severe HE (West Haven criteria grade ≥3) or a clinical situation in which oral intake is inappropriate. (A1)'' 3. ''Rifaximin might be combined with non-absorbable disaccharides to treat patients with HE. (B1)'' p.107: ''A nonabsorbable disaccharide (lactulose, lactitol) or rifaximin, as single or combined therapy, is recommended for the prevention of overt HE recurrence. (A1)'' ''Long-term protein restriction should be avoided (B1)''.'
+  kmle_rule: KMLE 문항·정리본은 현성 간성뇌증을 유발 인자 교정 + 락툴로오스(락티톨)로 치료하고(West Haven ≥3 이면 관장), 재발 예방은 락툴로오스·리팍시민 단독 또는 병합으로 적용하며 장기 단백 제한은 하지 않는다(2019 정맥류·간성뇌증 지침).
+  usmle_rule: USMLE 문항은 lactulose(하루 2–3회 무른 변)를 1차로, rifaximin 550 mg bid 를 반복·락툴로오스 불내 시 추가 약으로 적용한다.
+  verified: text
+- id: diff.gi.masld.cardiometabolic-criteria
+  slot: h343
+  h22_chapter: 354
+  h22_cite: '[[harrison-22: 354장 p.2702]]'
+  kr_guideline_id: kr-kasl-masld-2025
+  kr_cite: MASLD 진료지침 2025(대한간학회) p.S7
+  diff_type: threshold
+  topic: MASLD 심장대사 위험인자 — 한국인 BMI·허리둘레 기준
+  harrison_says: 'p.2700: MASLD 는 ''hepatic steatosis, drink little alcohol ... and have one or more cardiometabolic risk factors (e.g., overweight/obesity, hypertension, dyslipidemia, insulin resistance/type 2 diabetes)'' — 위험인자별 수치(BMI·허리둘레 절단값)는 본문에 제시하지 않음. p.2702: 마른 MASLD 를 ''lean (body mass index [BMI] <25 kg/m2 or <23 kg/m2)'' 로 적고 ''particularly common in individuals of Asian ethnicity''.'
+  kr_says: '본문: 심장대사 위험인자 5개 중 1개 이상 — ''(1) BMI ≥23 kg/m² in Koreans and Asians or ≥25 kg/m² in Western populations; or a waist circumference ≥90 cm for men and ≥85 cm for women in Korea, or ≥94 cm for men and ≥80 cm for women according to the World Health Organization (WHO), (2) fasting blood glucose ≥100 mg/dL, postprandial 2-h blood glucose ≥140 mg/dL, HbA1c ≥5.7% ... (3) blood pressure ≥130/85 mmHg ... (4) triglycerides ≥150 mg/dL ... or HDL-C <40 mg/dL for men and <50 mg/dL for women''. ''considering the average waist circumference of Korean adults, the criteria in Korea are set at ≥90 cm for men and ≥85 cm for women.'' 진단 요약(p.S9): 영상 또는 생검으로 지방증 + 심장대사 위험인자 1개 이상 + 유의한 음주 없음 — 권고 등급 없는 Summary.'
+  kmle_rule: KMLE 문항·정리본은 MASLD 심장대사 위험인자의 비만 기준을 BMI ≥23 kg/m² 또는 허리둘레 남 ≥90 cm·여 ≥85 cm(한국 기준)로 적용한다.
+  usmle_rule: USMLE 문항은 지방간 + 심장대사 위험인자 1개 이상(비만·고혈압·이상지질혈증·인슐린저항성/T2DM) + 적은 음주를 MASLD 로 보고, 서양 BMI 기준(≥25)을 기본으로 한다.
+  verified: text
+- id: diff.gi.masld.alcohol-thresholds-metald
+  slot: h343
+  h22_chapter: 354
+  h22_cite: '[[harrison-22: 354장 p.2702]]'
+  kr_guideline_id: kr-kasl-masld-2025
+  kr_cite: MASLD 진료지침 2025(대한간학회) p.S8
+  diff_type: same
+  topic: MASLD·MetALD·ALD 음주량 경계
+  harrison_says: 'p.2702: ''A diagnosis of MASLD requires ... an individual who drinks little to no alcohol (i.e., ≤20 g/d for women; ≤30 g/d for men).'' ''a new diagnostic category, MetALD, was recently created ...'' ''Hazardous alcohol consumption (≥50 g/d for women; ≥60 g/d for men) is defined as ALD irrespective of the presence of hepatic steatosis and/or metabolic syndrome.'' p.2700: MetALD = ''consume social amounts of alcohol (20–50 g/d for woman; 30–60 g/d for men)''.'
+  kr_says: 'p.S8: ''MASLD with increased alcohol consumption (MetALD), which refers to moderate alcohol intake, defined as 30–60 g/day for men and 20–50 g/day for women; alcohol-related liver disease (ALD), associated with either significant alcohol consumption in the absence of cardiometabolic risk factors or excessive alcohol consumption in the presence of cardiometabolic risk factor(s)''. 그림 2(p.S7) 알고리즘: ''Alcohol consumption >30 g/day (M), >20 g/day (F)'' → MetALD, ''>60 g/day (M), >50 g/day (F)'' → ALD. 표 2(p.S8): MASLD 음주량 ''<30 g/day (M), 20 g/day (F)'' — 권고 등급 없음.'
+  kmle_rule: KMLE 문항·정리본은 MASLD 음주 상한을 남 30 g/일·여 20 g/일 미만으로, MetALD 를 남 30–60 g/일·여 20–50 g/일로, 그 이상을 ALD 로 적용한다.
+  usmle_rule: USMLE 문항은 같은 경계(MASLD <30/20 g/d, MetALD 30–60/20–50 g/d, ALD ≥60/50 g/d)를 적용한다.
+  verified: text
+- id: diff.gi.masld.resmetirom-f2-f3
+  slot: h343
+  h22_chapter: 354
+  h22_cite: '[[harrison-22: 354장 p.2706]]'
+  kr_guideline_id: kr-kasl-masld-2025
+  kr_cite: MASLD 진료지침 2025(대한간학회) p.S19
+  diff_type: same
+  topic: MASH 약물 — resmetirom 은 F2–F3(간경변 없음)
+  harrison_says: '''Resmetirom, a selective thyroid hormone receptor beta (THR-B) agonist, was recently granted accelerated approval by the FDA to treat patients with ‘at-risk’ MASH (i.e. F2-F3 fibrosis) without cirrhosis.'' ''Pharmacotherapy for liver disease per se is not recommended for patients with hepatic steatosis without steatohepatitis or fibrosis''.'
+  kr_says: '[Recommendation] ''Resmetirom can be used as a therapeutic agent in patients with MASH with F2/F3 liver fibrosis as histological improvement of steatohepatitis and liver fibrosis has been proven. (A1)'' 본문: 장기 자료 부족·고비용·아시아인 자료 부족을 들어 ''attention should be paid to the long-term follow-up results''.'
+  kmle_rule: KMLE 문항·정리본은 resmetirom 을 F2–F3 섬유화가 있는 MASH(간경변 없음)의 약물로 적용한다(A1). 단순 지방증에는 간 표적 약물을 쓰지 않는다.
+  usmle_rule: USMLE 문항은 resmetirom(THR-β 작용제)을 F2–F3, 비간경변 'at-risk' MASH 에 적용한다.
+  verified: text
+- id: diff.gi.masld.vitamin-e
+  slot: h343
+  h22_chapter: 354
+  h22_cite: '[[harrison-22: 354장 p.2706]]'
+  kr_guideline_id: kr-kasl-masld-2025
+  kr_cite: MASLD 진료지침 2025(대한간학회) p.S19
+  diff_type: first_line
+  topic: MASH 의 vitamin E — 비당뇨 한정 권고 vs 안전성 우려
+  harrison_says: 'p.2706: PIVENS 에서 ''RRR-α-tocopherol ... 800 IU daily for 96 weeks improved histologic features of steatohepatitis without worsening of fibrosis (43% ... vs 19%)''; ''no study has demonstrated an antifibrotic effect with vitamin E''; ''Enthusiasm for use of vitamin E for treatment of NASH has been dampened by concerns of the risk-to-benefit ratio for safety (i.e., risk of perioperative bleeding, hemorrhagic stroke, increased cardiac mortality, and prostate cancer)'' (p.2707 이어짐). 당뇨 유무로 대상을 나누는 권고 문장은 없음.'
+  kr_says: '[Recommendation] ''Vitamin E can be expected to improve steatohepatitis in patients with MASH without T2DM, and pioglitazone can be expected to improve steatohepatitis in patients with MASH regardless of T2DM. However, their effects on improving liver fibrosis are not clear. (B2)'' 본문(p.S16): 장기 투여 시 전립선암·출혈성 뇌졸중, 고용량(>400 IU/day) 사망률 증가 가능성에 주의.'
+  kmle_rule: KMLE 문항·정리본은 vitamin E(800 IU/일)를 당뇨가 없는 MASH 의 지방간염 개선 약으로 적용한다(B2) — 섬유화 개선은 불분명하다고 적는다.
+  usmle_rule: USMLE 문항은 vitamin E 가 조직학적 지방간염을 개선하나 섬유화 효과가 없고 장기 안전성 우려(출혈성 뇌졸중·전립선암)가 있다는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.gi.masld.pioglitazone-vs-incretin
+  slot: h343
+  h22_chapter: 354
+  h22_cite: '[[harrison-22: 354장 p.2706]]'
+  kr_guideline_id: kr-kasl-masld-2025
+  kr_cite: MASLD 진료지침 2025(대한간학회) p.S19
+  diff_type: first_line
+  topic: 인슐린 감수성 개선제·GLP-1 RA — MASH 자체 치료인가 동반질환 치료인가
+  harrison_says: '''The use of pioglitazone has been largely usurped in clinical practice by the increasing use of incretin mimetics (e.g., glucagon-like peptide 1 receptor agonists [GLP-1RAs]) and sodium-glucose cotransporter 2 inhibitors (SGLT-2i)''. GLP-1RA 는 ''attractive agents for treatment of MASH''; semaglutide 0.4 mg 72주 ''NASH resolution ... 59% ... vs 17%'', ''no statistically significant improvement in fibrosis'', ''A global phase 3 study ... is currently underway.'' Metformin 은 ''not currently recommended as a treatment for NASH''.'
+  kr_says: '[Recommendation] pioglitazone 은 ''can be expected to improve steatohepatitis in patients with MASH regardless of T2DM'' (B2). ''GLP-1 receptor agonists can be used to treat obesity and T2DM in patients with MASH. SGLT2 inhibitors can be used to improve concomitant diseases in patients with MASH accompanied by T2DM, heart failure, and chronic renal failure. (B1)'' 본문: semaglutide 3상 결과 미발표로 ''it is difficult to use it currently to improve steatohepatitis and liver fibrosis''.'
+  kmle_rule: KMLE 문항·정리본은 pioglitazone 을 당뇨 유무와 무관하게 MASH 지방간염 개선 약으로(B2), GLP-1 RA·SGLT2 억제제는 MASH 동반 비만·T2DM·심부전·만성콩팥병 치료 약으로(B1) 적용한다.
+  usmle_rule: USMLE 문항은 GLP-1RA(semaglutide)를 MASH 에 유망한 약으로, pioglitazone 은 효과는 있으나 실제로는 GLP-1RA·SGLT2i 에 밀린 약으로, metformin 은 NASH 치료로 권하지 않는 약으로 적용한다.
+  verified: text
+- id: diff.gi.masld.statin
+  slot: h343
+  h22_chapter: 354
+  h22_cite: '[[harrison-22: 354장 p.2707]]'
+  kr_guideline_id: kr-kasl-masld-2025
+  kr_cite: MASLD 진료지침 2025(대한간학회) p.S19
+  diff_type: same
+  topic: MASLD/MASH 의 statin — 이상지질혈증이면 사용
+  harrison_says: '''Statins are safe across the spectrum of MASLD, including in patients with well-compensated cirrhosis.'' ''The lack of evidence that statins harm the liver in MASLD patients, combined with the increase risk for cardiovascular morbidity and mortality in MASLD patients, justifies the use of statins to treat dyslipidemia in patients with MASLD''. ''Limited data exist on ... decompensated MASLD-related cirrhosis.'''
+  kr_says: '[Recommendation] ''Statins can be used to prevent CVD in patients with MASH accompanied by dyslipidemia. ... (B1)'''
+  kmle_rule: KMLE 문항·정리본은 이상지질혈증을 동반한 MASLD/MASH 에서 심혈관질환 예방을 위해 statin 을 쓴다(B1) — 간 수치 때문에 피하지 않는다.
+  usmle_rule: USMLE 문항은 MASLD(보상성 간경변 포함)에서 statin 이 안전하며 이상지질혈증 치료에 써야 한다고 적용한다.
+  verified: text
+- id: diff.gi.panc.acute.diagnosis-2-of-3
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2745]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.36
+  diff_type: same
+  topic: 급성췌장염 진단 — 3개 중 2개
+  harrison_says: '''The diagnosis is established by two of the following three criteria: (1) typical abdominal pain in the epigastrium that may radiate to the back, (2) threefold or greater elevation in serum lipase and/or amylase, and (3) confirmatory findings of acute pancreatitis on cross-sectional abdominal imaging.'''
+  kr_says: 'Recommendation 1: ''(1) Acute abdominal pain in the upper abdomen or the epigastrium. (2) Elevated levels of pancreatic enzymes (serum amylase and/or lipase) ≥3 times the upper limit of normal. (3) Abnormal findings of acute pancreatitis detected by abdominal images such as ultrasonography (USG), computed tomography (CT) or magnetic resonance imaging (MRI). Patients who present with at least two of the above three manifestations, and with other pancreatic diseases and acute abdomen ruled out are diagnosed with acute pancreatitis.'' — Recommendation grade: strong, Evidence level: B.'
+  kmle_rule: KMLE 문항·정리본은 상복부 통증·아밀라아제/리파아제 정상 상한 3배 이상·영상 소견 중 2개 이상으로 급성췌장염을 진단한다(강한 권고, B).
+  usmle_rule: USMLE 문항은 2-of-3 기준(통증·lipase/amylase ≥3×ULN·영상)을 적용한다.
+  verified: text
+- id: diff.gi.panc.acute.severity-persistent-organ-failure
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2746]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.37
+  diff_type: same
+  topic: 중증도 3단계 — 지속 장기부전 >48시간이면 중증
+  harrison_says: 개정 Atlanta 분류 'mild, moderately severe, and severe'. 'Moderately severe acute pancreatitis is characterized by transient organ failure ... in the absence of persistent organ failure.' 'Severe acute pancreatitis is characterized by persistent organ failure (>48 h), involving one or more organs.'
+  kr_says: 'Recommendation 5: ''The severity of acute pancreatitis is classified into mild, moderately severe, and severe. If a patient develops persistent organ failure (>48 hours), he or she should be classified as a patient with severe acute pancreatitis.'' — Recommendation grade: strong, Evidence level: A.'
+  kmle_rule: KMLE 문항·정리본은 급성췌장염을 경증·중등도 중증·중증으로 나누고, 48시간 넘는 지속 장기부전이면 중증으로 적용한다(강한 권고, A).
+  usmle_rule: USMLE 문항은 revised Atlanta 분류(지속 장기부전 >48 h = severe, 일시적 장기부전 = moderately severe)를 적용한다.
+  verified: text
+- id: diff.gi.panc.acute.fluid-resuscitation
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2747]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.39
+  diff_type: algorithm
+  topic: 초기 수액 — 목표지향 수액(종류·속도 수치는 해리슨만)
+  harrison_says: '''Lactated Ringer’s solution ... may be a better crystalloid than normal saline.'' 예전 적극 수액 ''15–20 mL/kg (1050–1400 mL), followed by 2–3 mL/kg per h (200–250 mL/h), to maintain urine output >0.5 mL/kg per hour'' 은 RCT 에서 덜 적극적 전략 ''(10 mL/kg bolus, followed by 1.5 mL/kg per h)'' 대비 ''increased risk of fluid overload ... without an improvement in clinical outcomes''. ''serial bedside evaluations are required every 6–8 h''; ''A targeted resuscitation strategy with measurement of hematocrit and BUN every 8–12 h is recommended''.'
+  kr_says: 'Recommendation 10: ''Goal-directed therapy is recommended for initial fluid resuscitation in acute pancreatitis.'' — Recommendation grade: weak, Evidence level: C. 본문: 24시간 ''4.1 L'' 초과 수액이 지속 장기부전을 늘렸고, 48시간 안에 Hct 35% 미만으로 떨어뜨리는 빠른 과다 수액이 패혈증·사망을 늘렸다. 목표 = ''mean arterial pressure, central venous pressure, heart rate, urine output, blood urea nitrogen concentration, and hematocrit''. 수액 종류(링거 젖산액 vs 생리식염수)·mL/kg 속도는 제시하지 않음.'
+  kmle_rule: KMLE 문항·정리본은 초기 수액을 목표지향 수액(평균동맥압·맥박·소변량·BUN·Hct 를 보며 조절, 약한 권고·C)으로 적용하고 과다 수액(24시간 >4 L)의 위험을 적는다. 수액 종류·속도 수치는 국내 지침 근거로 묻지 않는다.
+  usmle_rule: USMLE 문항은 lactated Ringer 를 선호 수액으로, 예전 적극 수액보다 중등도 수액(10 mL/kg 볼루스 후 1.5 mL/kg/h)과 Hct·BUN 추적에 따른 목표 수액을 적용한다.
+  verified: text
+- id: diff.gi.panc.acute.no-prophylactic-antibiotics
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2749]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.40
+  diff_type: same
+  topic: 예방적 항생제 — 중증·괴사성에서도 일상 사용 안 함
+  harrison_says: 'p.2746: ''Prophylactic antibiotics are no longer recommended for severe acute pancreatitis.'' p.2749: ''there is currently no role for prophylactic antibiotics in necrotizing pancreatitis, empiric antibiotics should be considered in those with clinical decompensation. Prophylactic antibiotics do not lead to improved survival and may promote the development of opportunistic fungal infections.'''
+  kr_says: 'Recommendation 12: ''The routine use of prophylactic antibiotics is not recommended in acute pancreatitis.'' — Recommendation grade: strong, Evidence level: A. 본문: 일본 지침은 중증·괴사성에서 발병 72시간 안 예방적 항생제를 권하나, RCT 들에서 사망·합병증을 줄이지 못했고 광범위 항생제가 다제내성·진균 감염 위험을 늘릴 수 있다.'
+  kmle_rule: KMLE 문항·정리본은 중증·괴사성 급성췌장염에서도 예방적 항생제를 일상적으로 쓰지 않는다(강한 권고, A).
+  usmle_rule: USMLE 문항은 중증·괴사성 췌장염에서 예방적 항생제를 쓰지 않고, 감염 의심·임상 악화 시에만 항생제를 쓴다.
+  verified: text
+- id: diff.gi.panc.acute.ercp-timing
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2748]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.40
+  diff_type: threshold
+  topic: 담석 췌장염의 조기 ERCP — 적응증 같고 시각 수치는 해리슨만
+  harrison_says: '''Patients with evidence of ascending cholangitis (including sepsis with evidence of biliary obstruction on laboratory or imaging studies) should undergo ERCP within 24–48 h of admission.'''
+  kr_says: 'Recommendation 13: ''Early ERCP should be performed in acute gallstone pancreatitis with cholangitis or persistent biliary obstruction.'' — Recommendation grade: strong, Evidence level: A. 본문: ''48시간'' 넘는 담도 폐쇄가 합병증을 늘렸고, 담관염 없는 중증 담석 췌장염에서는 조기 ERCP+괄약근절개가 보존 치료와 주요 합병증·사망에 차이가 없었다. 권고 문장에 시각(시간) 수치는 없음.'
+  kmle_rule: KMLE 문항·정리본은 담관염 또는 지속 담도 폐쇄가 있는 담석 췌장염에만 조기 ERCP 를 적용한다(강한 권고, A) — 담관염·폐쇄 없는 담석 췌장염에 일상 ERCP 를 하지 않는다.
+  usmle_rule: USMLE 문항은 상행 담관염 동반 담석 췌장염에서 입원 24–48시간 안 ERCP 를 적용한다.
+  verified: text
+- id: diff.gi.panc.acute.early-feeding
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2749]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.40
+  diff_type: algorithm
+  topic: 영양 — 국내는 조기 경구 식이, 해리슨은 초기 금식 후 식이·중증 2–3일 경장
+  harrison_says: 'p.2747: ''The patient is initially made NPO to minimize nutrient-induced stimulation of the pancreas''. p.2749: ''A low-fat solid diet can be administered to subjects with mild acute pancreatitis once they are able to eat. Enteral nutrition should be considered 2–3 days after admission in subjects with more severe pancreatitis instead of total parenteral nutrition (TPN).'' ''gastric feeding is safe''.'
+  kr_says: 'Recommendation 14(p.40): ''In patients with acute pancreatitis, early oral feeding should be considered, if possible.'' — strong, A. 본문(p.41): ''NPO and bowel rest'' 전통과 반대로 조기 식이가 감염·사망을 줄였고, 24·48시간 같은 ''specific time of refeeding ... were discouraged in this guideline''. Recommendation 15(p.41): ''Enteral tube feeding should be considered in patients with acute pancreatitis who cannot tolerate oral feeding.'' — strong, A; NG·NJ 모두 가능. Recommendation 16(p.41): ''Any form of low-fat diet is recommended as long as it is tolerated by the patient.'' — strong, B.'
+  kmle_rule: KMLE 문항·정리본은 가능하면 조기 경구 식이(저지방, 형태 무관)를 시작하고, 경구 불내성이면 비위관 또는 비공장관 경장영양을 TPN 보다 먼저 쓴다(강한 권고, A) — 금식 유지를 정답으로 두지 않는다.
+  usmle_rule: USMLE 문항은 경증은 먹을 수 있으면 저지방 고형식, 중증은 입원 2–3일에 TPN 대신 경장영양(위관 가능)을 적용한다.
+  verified: text
+- id: diff.gi.panc.acute.cholecystectomy-timing
+  slot: h348
+  h22_chapter: 359
+  h22_cite: '[[harrison-22: 359장 p.2750]]'
+  kr_guideline_id: kr-kpba-pancreatitis
+  kr_cite: 급성췌장염 진료지침 개정판(대한췌담도학회) p.41
+  diff_type: same
+  topic: 담석 췌장염 담낭절제 시기 — 경증은 같은 입원 중
+  harrison_says: 'p.2750: ''cholecystectomy should be performed during the initial hospitalization for acute gallstone pancreatitis with mild clinical severity. For patients with necrotizing gallstone pancreatitis, the timing of cholecystectomy needs to be individualized.'' p.2748: ''consideration should be given to performing a cholecystectomy during the same admission in mild acute pancreatitis.'''
+  kr_says: 'Recommendation 17: ''It is recommended to perform cholecystectomy within the same hospitalization period for mild acute biliary pancreatitis, and delayed cholecystectomy for severe acute pancreatitis after the inflammatory reaction has been sufficiently resolved.'' — Recommendation grade: strong, Evidence level: B.'
+  kmle_rule: KMLE 문항·정리본은 경증 담석 췌장염은 같은 입원 중 담낭절제, 중증은 염증이 충분히 가라앉은 뒤 지연 담낭절제로 적용한다(강한 권고, B).
+  usmle_rule: USMLE 문항은 경증 담석 췌장염에서 같은 입원 중 담낭절제를, 괴사성은 개별화(지연)를 적용한다.
+  verified: text
+- id: diff.gi.ibd.itb-vs-cd-empiric-antitb
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2560]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.275
+  diff_type: algorithm
+  topic: 장결핵 vs 크론병 감별 — 감별 안 되면 시험적 항결핵 치료
+  harrison_says: '표 337-6 ''Diseases That Mimic IBD'' 의 Infectious Etiologies — Mycobacterial: ''Tuberculosis'', ''Mycobacterium avium'' 을 나열할 뿐, 장결핵과 크론병을 가르는 내시경 소견이나 시험적 항결핵 치료 절차는 서술하지 않음.'
+  kr_says: '권고문 1.2: ''특히 크론병의 감별 진단 시 장결핵을 고려해야 하며'' (동의율 100% — 이 지침은 권고 강도·근거 수준 없이 델파이 동의율만 표기). 본문: ''4개 미만의 대장 분절 침범, 개방된 회맹판, 횡행 궤양, 그리고 가성 용종은 CD보다 ITB를 시사하는 내시경 소견''; 확진은 ''항산균 도말 검사, M. tuberculosis 배양 검사 또는 건락성 육아종'', ''M. tuberculosis PCR 검사와 ... IGRA는 유용한 보조 진단 검사'' 이나 단독으로 배제·확진에 한계; ''ITB와 CD의 감별이 어려운 경우에는 시험적 항결핵 치료 2–3개월 후 임상 증상과 함께 추적 대장내시경검사를 시행하여 치료 반응을 재평가하는 방법을 고려할 수 있다.'''
+  kmle_rule: KMLE 문항·정리본은 회맹부 궤양에서 장결핵을 먼저 감별하고(횡행 궤양·개방된 회맹판·4개 미만 분절·건락성 육아종 → 장결핵), 감별이 안 되면 시험적 항결핵 치료 2–3개월 후 추적 대장내시경으로 반응을 본다고 적용한다.
+  usmle_rule: USMLE 문항은 결핵을 IBD 모방 감염 질환의 하나로만 다루고, 시험적 항결핵 치료 알고리즘은 출제 근거로 삼지 않는다.
+  verified: text
+- id: diff.gi.ibd.tb-screening-before-advanced-therapy
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2566]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.282-283
+  diff_type: screening
+  topic: 잠복결핵 선별 — 대상 약제와 검사 항목
+  harrison_says: 'p.2566: ''All of the anti-TNF drugs are associated with an increased risk of infections, particularly reactivation of latent tuberculosis ... Patients should have a purified protein derivative (PPD) or a QuantiFERON-TB Gold test before initiation of anti-TNF therapy.'' 표 337-9(p.2568) infliximab 등: ''Prior to infusion: TB testing''.'
+  kr_says: '권고문 1.10.2(p.282): immunomodulators 또는 advanced therapies 를 고려하는 환자에서 ''결핵, B형 간염바이러스, C형 간염바이러스 및 사람면역결핍바이러스(HIV)에 대한 선별 검사와 함께 적절한 예방 조치를 시행하는 것이 권고된다.'' (동의율 100%). 본문·표 6(p.283): ''결핵 선별 검사에는 결핵의 과거력 또는 노출력 확인과 함께 투베르쿨린 피부반응검사 및/또는 IGRA와 흉부 방사선 검사가 포함되며, 활동성 결핵 또는 잠복 결핵 감염으로 진단된 환자는 biologic agents 또는 small molecules를 시작하기 전에 적절한 치료를 받아야 한다.'''
+  kmle_rule: KMLE 문항·정리본은 면역조절제·생물학제제·소분자 약제 시작 전에 결핵 병력·노출력 + TST 및/또는 IGRA + 흉부 X선으로 선별하고, 활동성·잠복 결핵은 치료한 뒤 시작한다고 적용한다.
+  usmle_rule: USMLE 문항은 anti-TNF 시작 전 PPD 또는 IGRA(QuantiFERON) 검사를 기본으로 적용한다.
+  verified: text
+- id: diff.gi.ibd.hbv-hcv-hiv-screening
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2568]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.283
+  diff_type: screening
+  topic: 면역억제 전 바이러스 선별 — HBV 3종 + HBV DNA, HCV·HIV
+  harrison_says: '표 337-9(p.2568) 생물학제제마다 ''Hepatitis B testing (HBsAb, HBsAg, HBcAb)'', 유지기 ''Hepatitis B vaccine if not immune''. p.2566 본문: ''Acute liver injury due to reactivation of hepatitis B virus ... has been reported.'' HCV·HIV 선별이나 HBsAg 양성 시 예방 항바이러스제는 이 장에 서술 없음.'
+  kr_says: '표 6·본문: ''B형 간염 선별 검사에는 HBsAg, anti-HBs 및 anti-HBc 검사가 포함되며, HBsAg 양성 또는 anti-HBc 양성 환자에서는 HBV DNA 검사를 포함한 추가 평가가 필요하다. HBsAg 양성 환자는 일반적으로 면역억제 치료 전에 항바이러스 예방 요법이 필요하며, anti-HBc 양성 환자의 경우에는 HBV 재활성화 위험을 고려하여 개별적으로 관리'' ; ''HCV 및 HIV에 대한 선별 검사도 advanced therapies 시작 전에 시행하는 것이 권고'' (권고문 1.10.2 동의율 100%).'
+  kmle_rule: KMLE 문항·정리본은 면역억제 전 HBsAg·anti-HBs·anti-HBc(양성이면 HBV DNA)와 HCV·HIV 를 선별하고, HBsAg 양성이면 항바이러스 예방을 시작한다고 적용한다.
+  usmle_rule: USMLE 문항은 생물학제제 전 HBsAg·anti-HBs·anti-HBc 검사와 면역 없으면 B형 간염 백신을 적용한다.
+  verified: text
+- id: diff.gi.ibd.uc-5asa-induction-dose
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2564]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 궤양성 대장염 치료 가이드라인(대한장연구학회) p.357
+  diff_type: same
+  topic: 경도~중등도 UC 관해 유도 — 경구 5-ASA 2 g/일 이상
+  harrison_says: '''Some 50–75% of patients with mild to moderate UC improve when treated with 5-ASA doses equivalent to 2 g/d of mesalamine; the dose response continues up to at least 4.8 g/d.'' 표 337-8: mesalamine ''2.4–4.8 g (acute)''. ''Combination therapy with mesalamine in both oral and enema form is more effective than either treatment alone for both distal and extensive UC.'''
+  kr_says: '권고문 1.1: ''경도에서 중등도 활동성 궤양성 대장염 환자에서 관해 유도를 위해 경구 5-aminosalicylate를 2 g/day 이상 사용할 것을 권고한다.'' (근거 확실성 중등도, 권고 강도 강함). 본문: 중등도 UC 에서 ''하루 3.6 g과 4.8 g 모두 효과적'', 반응 부족 시 ''4.8 g 투여가 추가적인 이점''. (권고문 1.5, p.359: 직장구불결장 이상 범위는 경구 ≥2 g + 국소 ≥1 g 병합 제안 — 매우 낮음, 조건부)'
+  kmle_rule: KMLE 문항·정리본은 경도~중등도 UC 관해 유도에 경구 5-ASA 2 g/일 이상(반응 부족 시 4.8 g까지 증량, 경구+국소 병합)을 1차로 적용한다.
+  usmle_rule: USMLE 문항은 mild–moderate UC 1차로 oral mesalamine(≈2–4.8 g/d) ± rectal mesalamine 을 적용한다.
+  verified: text
+- id: diff.gi.ibd.asuc-definition
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2557]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 궤양성 대장염 치료 가이드라인(대한장연구학회) p.383
+  diff_type: threshold
+  topic: 급성 중증 UC 정의 — Montreal S3 vs 수정 Truelove-Witts
+  harrison_says: '표 337-4 Montreal classification: ''S3: Severe disease activity — ≥6 bloody stools/d, pulse ≥90 beats/min, temperature ≥37.5°C, hemoglobin <10.5 g/100 mL, and ESR ≥30 mm/h''.'
+  kr_says: '권고문 5.1 본문: ''ASUC는 수정 Truelove and Witts 기준에 따라 하루 6회 이상의 혈변과 함께 맥박 >90회/분, 체온 >37.8°C, 혈색소 <10.5 g/dL, 적혈구침강속도 >30 mm/h 또는 C-반응단백 >3 mg/dL (>30 mg/L) 중 하나 이상을 동반하는 경우로 정의한다.'' — 정의문이라 권고 등급 없음.'
+  kmle_rule: KMLE 문항·정리본은 하루 6회 이상 혈변 + (맥박 >90, 체온 >37.8°C, Hb <10.5, ESR >30 또는 CRP >3 mg/dL) 중 하나 이상을 급성 중증 UC 로 적용한다.
+  usmle_rule: USMLE 문항은 ≥6 bloody stools/d 와 전신 독성 소견(pulse ≥90, 체온 ≥37.5°C, Hb <10.5, ESR ≥30)을 severe UC 로 적용한다.
+  verified: text
+- id: diff.gi.ibd.asuc-iv-steroid-dose
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2564]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 궤양성 대장염 치료 가이드라인(대한장연구학회) p.383-384
+  diff_type: threshold
+  topic: 급성 중증 UC 1차 — 정맥 스테로이드 용량
+  harrison_says: '''Prednisone is usually started at doses of 40–60 mg/d for active UC that is unresponsive to 5-ASA therapy. Parenteral glucocorticoids may be administered as hydrocortisone, 300 mg/d, or methylprednisolone, 40–60 mg/d.'''
+  kr_says: '권고문 5.1(p.383): ''급성 중증 궤양성 대장염 환자의 초기 표준 치료로 정맥 corticosteroid 사용을 권고한다.'' (중등도, 강함). 권고문 5.2(p.384): ''methylprednisolone 40–60 mg 1일 1회 또는 hydrocortisone 300–400 mg/day와 같은 고용량 정맥 corticosteroid 치료'' (낮음, 강함); 본문 ''hydrocortisone 100 mg을 6–8시간마다'', ''methylprednisolone 하루 60 mg을 초과하는 용량을 권고하지 않는 이유는 ... 추가적인 치료 효과가 확인되지 않았기 때문''.'
+  kmle_rule: KMLE 문항·정리본은 급성 중증 UC 에 입원 후 정맥 methylprednisolone 40–60 mg/일(또는 hydrocortisone 100 mg 6–8시간마다, 300–400 mg/일)을 적용하고 60 mg 초과 증량은 하지 않는다.
+  usmle_rule: USMLE 문항은 severe UC 에 IV methylprednisolone 40–60 mg/d 또는 hydrocortisone 300 mg/d 를 적용한다.
+  verified: text
+- id: diff.gi.ibd.asuc-rescue
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2565]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 궤양성 대장염 치료 가이드라인(대한장연구학회) p.384-385
+  diff_type: algorithm
+  topic: 스테로이드 불응 급성 중증 UC — 반응 평가 시점과 구제 치료
+  harrison_says: '''CSA is most effective when given at 2–4 mg/kg per day IV in severe UC that is refractory to IV glucocorticoids, with 82% of patients responding. CSA can be an alternative to infliximab for steroid-refractory UC before colectomy.'' 혈중농도 ''150 and 350 ng/mL''. 정맥 스테로이드 반응을 며칠째 판정하는지는 이 장에 서술 없음.'
+  kr_says: '권고문 5.3(p.384): ''정맥 corticosteroid 치료 반응은 3–5일 이내에, 늦어도 7일 이내에 객관적으로 평가해야 하며, 반응이 불충분한 경우 구제 치료를 고려할 것을 권고한다.'' (낮음, 강함). 권고문 5.4.1(p.385): ''infliximab 또는 정맥 cyclosporine을 이용한 신속한 구제 치료를 권고한다.'' (중등도, 강함). 5.4.2: ''tofacitinib 또는 upadacitinib을 구제 치료 선택지로 고려할 것을 제안한다.'' (낮음, 조건부).'
+  kmle_rule: KMLE 문항·정리본은 정맥 스테로이드 3–5일(늦어도 7일)에 반응을 판정하고, 불충분하면 infliximab 또는 정맥 cyclosporine 구제 치료(안 되면 수술)로 넘어간다고 적용한다.
+  usmle_rule: USMLE 문항은 IV steroid 불응 severe UC 에 infliximab 또는 IV cyclosporine 을, 실패 시 colectomy 를 적용한다.
+  verified: text
+- id: diff.gi.ibd.asuc-intensified-infliximab
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2566]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 궤양성 대장염 치료 가이드라인(대한장연구학회) p.386
+  diff_type: first_line
+  topic: 급성 중증 UC infliximab 구제 — 강화 용량을 일상적으로 쓰는가
+  harrison_says: 'p.2566: 스테로이드 불응 입원 UC 는 단백 소실로 infliximab 농도가 낮아 ''Given a clear exposure–response relationship ... intensive infliximab dosing regimens have been used in these patients.'' 표 337-9(p.2568): infliximab ''5 mg/kg at 0, 2, and 6 weeks ... Intensive dosing for hospitalized corticosteroid-refractory patients''.'
+  kr_says: '권고문 5.5: ''Infliximab 구제 치료를 받는 모든 급성 중증 궤양성 대장염 환자에서 표준 관해 유도 요법보다 강화된 infliximab 관해 유도 요법을 일상적으로 사용하는 것은 권장하지 않는다.'' (근거 확실성 중등도, 권고 강도 조건부). 본문: ''표준 infliximab 관해 유도 요법은 일반적으로 5 mg/kg으로 시작한다.'''
+  kmle_rule: KMLE 문항·정리본은 급성 중증 UC infliximab 구제 치료를 표준 5 mg/kg 유도 요법으로 적용하고, 강화 용량을 일상적으로 쓰지 않는다.
+  usmle_rule: USMLE 문항은 infliximab 5 mg/kg 0·2·6주 유도를 기본으로 하되, 입원 스테로이드 불응 환자에서 intensive dosing 이 쓰인다는 서술을 따른다.
+  verified: text
+- id: diff.gi.ibd.cd-early-advanced-therapy
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2565]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 크론병 내과적 치료 가이드라인(대한장연구학회) p.343
+  diff_type: algorithm
+  topic: 중등도~중증 크론병 — 처음부터 advanced therapy(top-down) vs step-up
+  harrison_says: '''Biologic therapy is now commonly given as an initial therapy for patients with moderate to severe CD and UC to prevent future complications of IBD.'' 고위험 CD: ''<30 years old, with extensive disease, perianal or severe rectal disease and/or deep ulcerations in the colon, and stricturing or penetrating disease behavior.'' ''The current goal ... is to treat early in the disease course, treat aggressively''.'
+  kr_says: '임상적 고려사항 2: ''중등도에서 중증 활동성 크론병 환자, 특히 질병 진행 위험이 높은 환자에서는 step-up 접근법의 대안으로 advanced therapy의 조기 시작을 고려할 수 있다. 다만 근거는 아직 제한적이므로 치료 결정은 개별화해야 한다. [동의율: 100%]'' — 권고문이 아니라 임상적 고려사항(GRADE 등급 없음). 본문: ''조기 사용을 뒷받침하는 전체 근거 확실성은 낮다.'''
+  kmle_rule: KMLE 문항·정리본은 진행 위험이 높은 중등도~중증 크론병에서 조기 advanced therapy 를 step-up 의 '대안으로 고려'하는 선택지로 적용한다(모든 환자의 기본 1차로 단정하지 않는다).
+  usmle_rule: USMLE 문항은 고위험 moderate–severe CD(<30세·광범위·항문주위·협착/관통형)에 생물학제제를 initial therapy 로 조기 투여하는 것을 적용한다.
+  verified: text
+- id: diff.gi.ibd.cd-biologic-immunomodulator-combination
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2566]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 크론병 내과적 치료 가이드라인(대한장연구학회) p.325, p.328
+  diff_type: first_line
+  topic: 크론병 생물학제제 + 면역조절제 병합 — infliximab 은 병합, 그 밖은 단독
+  harrison_says: 'p.2566: ''Randomized trials support combination therapy with infliximab and azathioprine for moderate to severe CD and UC. For moderate to severe CD, combination therapy has been shown to be more effective than either infliximab or azathioprine alone.'' p.2565: ''administer dual therapy with immunomodulators and biologics in appropriate patients''. 그림 337-12(p.2569): ''Biologic +/– MP/AZA/MTX''.'
+  kr_says: '권고문 5.3(p.325): ''infliximab 단독치료보다 infliximab과 immunomodulator의 병합치료를 권고한다.'' (중등도, 강함); 5.4: 유지에도 ''최소 6개월간'' 병합 권고(중등도, 강함). 권고문 6.3(p.328): ''Biologic 미사용 ... 통상적인 immunomodulator 병합치료보다 adalimumab 단독치료를 제안한다.'' (중등도, 조건부). ustekinumab(8.3)·vedolizumab(9.3)도 단독 제안(매우 낮음, 조건부).'
+  kmle_rule: KMLE 문항·정리본은 크론병 infliximab 은 면역조절제(thiopurine) 병합을 권고하고, adalimumab·ustekinumab·vedolizumab 은 단독 사용을 기본으로 적용한다.
+  usmle_rule: USMLE 문항은 infliximab + azathioprine 병합이 각각 단독보다 우월하다는 근거(SONIC 계열)를 적용한다.
+  verified: text
+- id: diff.gi.ibd.crc-surveillance-start
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2570]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.298
+  diff_type: threshold
+  topic: IBD 대장암 감시 대장내시경 시작 시점
+  harrison_says: '''Annual or biennial colonoscopy with multiple biopsies is recommended for patients with >8–10 years of extensive colitis (greater than one-third of the colon involved) or 12–15 years of proctosigmoiditis (less than one-third but more than just the rectum)''. 크론 대장염도 ''the same endoscopic surveillance strategy used for UC is recommended''.'
+  kr_says: '권고문 5.1: ''염증성 장질환 환자에서는 증상 발생 후 8년째부터 이형성 감시를 위한 대장내시경을 시행하는 것을 권고한다. 다만, 염증이 직장에 국한되어 있으면서 과거 및 현재 근위부 대장에 내시경적 또는 조직학적 염증의 근거가 없는 궤양성 대장염 환자 또는 염증이 소장에만 국한된 크론병 환자는 일반 인구를 대상으로 한 대장암 검진 권고를 따른다.'' (동의율 100%, 권고 강도 표기 없음)'
+  kmle_rule: KMLE 문항·정리본은 대장을 침범한 IBD(범위 무관)에서 증상 발생 8년째부터 감시 대장내시경을 시작하고, 직장염 국한 UC·소장 국한 CD 는 일반 인구 검진을 따른다고 적용한다.
+  usmle_rule: USMLE 문항은 광범위 대장염 8–10년 후, 직장구불결장염은 12–15년 후 감시 대장내시경 시작을 적용한다.
+  verified: text
+- id: diff.gi.ibd.crc-surveillance-interval
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2570]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.299
+  diff_type: algorithm
+  topic: IBD 감시 대장내시경 간격 — 위험도별 1·2–3·5년 vs 일괄 1–2년
+  harrison_says: '''Annual or biennial colonoscopy with multiple biopsies is recommended'' (위험도별 간격 차등 없음). 위험인자: ''long-duration disease, extensive disease, family history of colon cancer, PSC, a colon stricture, and the presence of postinflammatory pseudopolyps''.'
+  kr_says: '권고문 5.3: ''50세 이하에 대장암을 진단받은 직계 가족, 최근 5년 이내의 대장 협착 또는 이형성, PSC, 또는 중증의 활동성 염증을 동반한 광범위 대장염 등의 고위험 요인이 있는 환자에서는 매년, 50세를 초과하여 대장암을 진단받은 직계 가족 또는 경도에서 중등도의 활동성 염증을 동반한 광범위 대장염 등의 중등도 위험 요인이 있는 환자에서는 2–3년마다, 고위험 또는 중등도 위험 요인이 없는 환자에서는 5년마다 감시 대장내시경을 시행할 것을 권고한다.'' (동의율 94%)'
+  kmle_rule: KMLE 문항·정리본은 IBD 감시 간격을 고위험 매년·중등도 위험 2–3년·그 외 5년으로 적용한다.
+  usmle_rule: USMLE 문항은 감시 대장내시경을 1–2년마다(annual or biennial)로 적용한다.
+  verified: text
+- id: diff.gi.ibd.psc-annual-surveillance
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2563]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.299
+  diff_type: same
+  topic: PSC 동반 IBD — 매년 감시 대장내시경
+  harrison_says: '''Patients with IBD and PSC are at increased risk of colon cancer and should be surveyed yearly by colonoscopy and biopsy.'''
+  kr_says: '권고문 5.2: ''PSC를 동반한 염증성 장질환 환자에서는 질병 범위나 유병 기간과 관계없이 PSC 진단 시점부터 매년 감시 대장내시경검사를 시행할 것을 권고한다.'' (동의율 100%)'
+  kmle_rule: KMLE 문항·정리본은 PSC 동반 IBD 에서 PSC 진단 시점부터(범위·유병 기간 무관) 매년 감시 대장내시경을 적용한다.
+  usmle_rule: USMLE 문항은 IBD + PSC 환자에서 매년 대장내시경·생검 감시를 적용한다.
+  verified: text
+- id: diff.gi.ibd.dysplasia-detection-technique
+  slot: h326
+  h22_chapter: 337
+  h22_cite: '[[harrison-22: 337장 p.2570]]'
+  kr_guideline_id: kr-kasid-ibd-2026
+  kr_cite: 2026 대한장연구학회 염증성 장질환 진단 및 모니터링 가이드라인(대한장연구학회) p.300
+  diff_type: algorithm
+  topic: 감시 내시경 방법 — 표적 생검 vs 다발 무작위 생검
+  harrison_says: '''Annual or biennial colonoscopy with multiple biopsies''; ''International guideline societies have recommended chromoendoscopy for dysplasia surveillance in IBD.'' 실제로는 ''standard-definition white light endoscopy with surveillance biopsies in patients with chronic colitis at average risk and chromoendoscopy in higher-risk patients including those with a history of dysplasia, PSC, or family history of colorectal cancer.'''
+  kr_says: '권고문 5.4.1: ''감시 대장내시경검사는 대장의 염증이 충분히 조절된 상태에서 시행하는 것이 바람직하다.'' (94%). 5.4.2: ''고해상도 염색 색소내시경, 고해상도 가상 색소내시경 또는 점막을 주의 깊게 관찰하는 고해상도 백색광 내시경을 시행하는 것을 권장한다.'' (100%). 5.4.3: ''육안적으로 확인되는 모든 병변에 대해서는 표적 생검을 시행하는 것이 권장되며, 무작위 생검은 PSC를 동반하거나, 이형성 병력이 있는 일부 고위험 환자에서 선택적으로 고려될 수 있다.'' (100%)'
+  kmle_rule: KMLE 문항·정리본은 염증이 조절된 상태에서 고해상도 색소내시경 또는 고해상도 백색광 내시경으로 보이는 병변을 표적 생검하고, 무작위 생검은 PSC·이형성 병력 고위험군에만 적용한다.
+  usmle_rule: USMLE 문항은 감시 대장내시경에서 다발 생검과 chromoendoscopy(특히 고위험군)를 적용한다.
+  verified: text
+- id: diff.gi.gastric-cancer.esd-absolute-indication
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.647]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.25
+  diff_type: threshold
+  topic: 조기위암 내시경 절제 절대 적응증 — 점막암·궤양 없음 vs 깊은 점막하층 침범 없음
+  harrison_says: '''For selected very-early-stage gastric cancers (primary tumors that are ≤2 cm in diameter, are well to moderately differentiated, do not invade the deep submucosa [T1], and do not show lymphovascular invasion or lymph node metastasis), which are not commonly found in the United States, EMR or ESD may be performed by experienced gastroenterologists in place of surgical resection''. 궤양 유무는 기준에 넣지 않았다.'
+  kr_says: 'Statement 4: ''Endoscopic resection is recommended for well or moderately differentiated tubular or papillary EGCs meeting the following endoscopic findings: endoscopically estimated tumor size ≤2 cm, endoscopically mucosal cancer, and no ulcer in the tumor (evidence: moderate, recommendation: strong for).'' 본문은 이를 ''classical absolute indication'' 이라 부른다.'
+  kmle_rule: KMLE 문항·정리본은 분화형(고·중분화 관상/유두상)·내시경상 점막암·2 cm 이하·궤양 없음을 내시경 절제 절대 적응증으로 적용한다(근거 보통·강한 권고).
+  usmle_rule: USMLE 문항은 ≤2 cm·well/moderately differentiated·깊은 점막하층 침범 없음·림프혈관 침범/림프절 전이 없음인 매우 이른 위암에서 EMR/ESD 를 수술 대신 쓸 수 있다는 해리슨 서술을 따른다.
+  verified: text
+- id: diff.gi.gastric-cancer.esd-expanded-indication
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.647]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.26
+  diff_type: algorithm
+  topic: 조기위암 ESD 확대 적응증 — 국내 지침만 제시
+  harrison_says: ESD/EMR 적응은 '≤2 cm ... well to moderately differentiated' 한 가지 묶음만 제시하고, 그런 병변은 'not commonly found in the United States' 이며 'favorable results in studies in high-incidence areas such as Japan' 이라고만 적는다. 2 cm 초과·궤양 동반·미분화형에 대한 확대 적응증은 서술하지 않는다.
+  kr_says: 'Statement 5: ''ESD as well as gastrectomy with LN dissection can be indicated for well or moderately differentiated tubular or papillary EGCs meeting the following endoscopic findings: endoscopically estimated tumor size >2 cm, endoscopically mucosal cancer, and no ulcer in the tumor, or endoscopically estimated tumor size ≤3 cm, endoscopically mucosal cancer, and ulcer in the tumor (evidence: moderate, recommendation: strong for).'' Statement 6(p.27): 미분화형(poorly differentiated tubular·poorly cohesive 포함 signet-ring) ''≤2 cm, endoscopically mucosal cancer, and no ulcer'' 은 ''could be cautiously considered ... after sufficient discussion'' (근거 낮음·조건부 권고).'
+  kmle_rule: KMLE 문항·정리본은 분화형 점막암으로 궤양 없으면 크기 무관(>2 cm), 궤양 있으면 3 cm 이하를 ESD 확대 적응증으로 적용하고, 미분화형은 2 cm 이하·점막암·궤양 없음일 때만 신중히 고려한다고 적는다.
+  usmle_rule: USMLE 문항은 해리슨의 단일 기준(≤2 cm·분화형·깊은 점막하층 침범 없음)을 넘는 병변은 수술적 절제를 기본으로 본다.
+  verified: text
+- id: diff.gi.gastric-cancer.lymphadenectomy-extent
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.648]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.48
+  diff_type: algorithm
+  topic: 위암 림프절 절제 범위 — D2 표준(조기위암 D1+) vs 미국 modified D2(D1+)
+  harrison_says: '''The goal is to examine at least 15 lymph nodes from the resected specimen ... In the United States, a modified D2 (D1+) resection preserving the spleen and avoiding pancreatectomy is recommended but should be performed by experienced surgeons at high-volume centers. Japanese investigators and others have used very extensive lymph node dissections, but studies have not demonstrated an advantage for a D3 resection.'' ''Sentinel lymph node biopsy is not performed in gastric cancer outside of a research study setting.'''
+  kr_says: 'Statement 17: ''D1+ dissection can be performed during surgery for EGC (cT1N0) patients in terms of survival outcomes (evidence: low, recommendation: strong for).'' 본문: ''D2 dissection has been considered the standard LN dissection based on long-term survival data of the Dutch trial.'' p.57: ''Surgical resection with D2 LN dissection is the standard treatment for gastric cancer.'' (참고: Statement 18 은 cT1N0·≤3 cm 에서 감시림프절 항법수술을 조건부로 고려 가능하다고 한다.)'
+  kmle_rule: KMLE 문항·정리본은 진행위암의 표준 림프절 절제를 D2 로, 조기위암(cT1N0)은 D1+ 절제도 가능(근거 낮음·강한 권고)으로 적용한다.
+  usmle_rule: USMLE 문항은 미국 기준인 비장 보존·췌장 절제 없는 modified D2(D1+)와 림프절 15개 이상 검사를 적용한다.
+  verified: text
+- id: diff.gi.gastric-cancer.resectable-perioperative-vs-adjuvant
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.649]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.57
+  diff_type: first_line
+  topic: 절제 가능 국소진행 위암 — 국내 D2 후 보조항암(S-1·CAPOX) 기본 vs 해리슨 수술 전 항암 표준
+  harrison_says: 'p.648~649: ''for most medically fit patients with stage cTNM II and III resectable gastric cancers, preoperative systemic chemotherapy followed by resection and, if tolerable, postoperative chemotherapy is a standard approach.'' ''... a platinum compound plus a fluorinated pyrimidine, such as fluorouracil or capecitabine, given for three to four cycles before surgery is a standard-of-care option. Drug combinations are favored; for very fit patients, a combination of FLOT may be chosen.'' 수술을 먼저 한 경우: ''who are found to have stage II or III cancers, or who have <15 lymph nodes ... postoperative chemotherapy or chemoradiation is a treatment option.'''
+  kr_says: 'Statement 23(p.57): ''Adjuvant chemotherapy (S-1 or capecitabine and oxaliplatin [CAPOX]) is recommended in patients with pathological stage II or III gastric cancer (evidence: high, recommendation: strong for).'' Statement 24(p.59): ''NCT as part of perioperative chemotherapy can be considered for patients with resectable locally AGC (evidence: high, recommendation: conditional for).'' 근거 임상시험은 PRODIGY(DOS)·RESOLVE(SOX). p.60: ''FLOT ... have not been investigated in Asian populations. Therefore, FLOT should not be adopted in Asia without further evidence.'''
+  kmle_rule: KMLE 문항·정리본은 근치적 D2 위절제 후 병리 2·3기에 보조항암 S-1(1년) 또는 CAPOX 를 표준(강한 권고)으로 적용하고, 수술 전 항암(DOS·SOX)은 조건부 선택지로, FLOT 는 국내 근거 없음으로 적는다.
+  usmle_rule: USMLE 문항은 cTNM II·III 절제 가능 위암에서 수술 전 백금+플루오로피리미딘(건강하면 FLOT) 항암 → 절제 → 가능하면 수술 후 항암을 표준으로 본다.
+  verified: text
+- id: diff.gi.gastric-cancer.adjuvant-chemoradiation
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.649]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.73
+  diff_type: same
+  topic: 근치 절제 후 보조 화학방사선 — 항암 단독보다 이득 없음
+  harrison_says: '''Use of postoperative chemoradiation therapy, with exceptions outlined above, did not improve outcome when compared to systemic chemotherapy alone.'' ''For patients receiving preoperative systemic chemotherapy and undergoing an R0 D2/D1+ dissection, postoperative chemoradiation therapy has not improved outcome.'' 예외: ''If an R1 or R2 resection is performed, postoperative chemoradiation can be considered.'''
+  kr_says: 'Statement 29: ''Adjuvant chemoradiation is not recommended in patients with pathological stage II or III gastric cancer who have undergone curative gastrectomy (evidence: high, recommendation: conditional against).'' p.74: ''the addition of adjuvant CRT is not recommended in gastric cancer patients after complete resection with D2 lymphadenectomy.'''
+  kmle_rule: KMLE 문항·정리본은 D2 근치 절제 후 병리 2·3기 위암에 보조 화학방사선을 권하지 않는다(근거 높음·조건부 반대)고 적용한다.
+  usmle_rule: USMLE 문항은 R0 절제 후 보조 화학방사선은 항암 단독보다 이득이 없고, R1·R2 절제나 림프절 15개 미만일 때만 선택지로 본다.
+  verified: text
+- id: diff.gi.gastric-cancer.first-line-her2neg-pdl1
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.649]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.62
+  diff_type: threshold
+  topic: HER2 음성 진행위암 1차 — PD-L1 CPS 문턱(니볼루맙 ≥5·펨브롤리주맙 ≥1 vs CPS >5)
+  harrison_says: 'CheckMate 649: ''this effect was most marked for patients with PD-L1 CPS of >5. CheckMate 649 and other data have led to guidelines recommending use of immune modulation therapy plus chemotherapy as an option for first-line treatment for patients with HER2/EBB2-nonexpressing, PD-L1 CPS >5 metastatic gastric and gastroesophageal cancers; chemotherapy plus immune modulation therapy may also have benefit for patients with lower PD-L1 CPS scores.'' 펨브롤리주맙의 CPS 문턱은 따로 적지 않는다.'
+  kr_says: 'Statement 25-1: ''Palliative first-line systemic therapy with anti-PD-1 antibody combined with fluoropyrimidine/platinum-based chemotherapy is recommended in patients with HER2-negative and PD-L1-positive locally advanced unresectable or metastatic gastric cancer. Nivolumab combined with chemotherapy is recommended for tumors with PD-L1 CPS ≥5, and pembrolizumab combined with chemotherapy is recommended for tumors with PD-L1 CPS ≥1 (evidence: high, recommendation: strong for).'''
+  kmle_rule: KMLE 문항·정리본은 HER2 음성 진행위암 1차에서 니볼루맙+항암은 CPS ≥5, 펨브롤리주맙+항암은 CPS ≥1 을 기준(근거 높음·강한 권고)으로 적용한다.
+  usmle_rule: USMLE 문항은 HER2 음성·PD-L1 CPS 가 높은(해리슨 표기 >5) 전이 위암에서 1차로 면역관문억제제+백금·플루오로피리미딘 항암을 고른다.
+  verified: text
+- id: diff.gi.gastric-cancer.first-line-her2pos
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.649]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.66
+  diff_type: same
+  topic: HER2 양성 진행위암 1차 — 트라스투주맙+항암(±펨브롤리주맙)
+  harrison_says: '''Those whose tumors have overexpressed or amplified HER2 should receive HER2-targeted agents such as trastuzumab or trastuzumab, pembrolizumab, plus cytotoxic chemotherapy.'' 이후 치료: ''trastuzumab-deruxtecan ... is recommended for patients whose tumors have amplification of HER2/ERBB2.'''
+  kr_says: 'Statement 26: ''Palliative first-line systemic therapy with trastuzumab combined with fluoropyrimidine/platinum-based chemotherapy is recommended in patients with HER2-positive locally advanced unresectable or metastatic gastric cancer. Pembrolizumab and trastuzumab combined with chemotherapy is recommended for patients with HER2-positive and PD-L1 CPS ≥1 (evidence: high, recommendation: strong for).'' (3차는 Statement 28: HER2 양성에 trastuzumab-deruxtecan 우선 권고)'
+  kmle_rule: KMLE 문항·정리본은 HER2 양성 진행위암 1차에 트라스투주맙+플루오로피리미딘/백금 항암을, PD-L1 CPS ≥1 이면 펨브롤리주맙을 더한다고 적용한다(근거 높음·강한 권고).
+  usmle_rule: USMLE 문항은 HER2 과발현/증폭 진행위암 1차에 trastuzumab(±pembrolizumab)+항암을, 이후 trastuzumab-deruxtecan 을 고른다.
+  verified: text
+- id: diff.gi.gastric-cancer.claudin182-zolbetuximab
+  slot: h80
+  h22_chapter: 85
+  h22_cite: '[[harrison-22: 85장 p.649]]'
+  kr_guideline_id: kr-kgca-gastric-cancer
+  kr_cite: Korean Practice Guideline for Gastric Cancer 2024(대한위암학회) p.65
+  diff_type: first_line
+  topic: CLDN18.2 양성 진행위암 1차 — 졸베툭시맙 강한 권고 vs 연구 단계
+  harrison_says: 'p.649: ''Investigational studies include targeting Claudin 18.2 ... In the SPOTLIGHT trial, previously untreated, HER2/ERBB2-negative patients assigned to zolbetuximab (targeting Claudin 18.2) plus FOLFOX chemotherapy had an improvement in survival ... Zolbetuximab plus chemotherapy may become another first-line option for advanced gastric cancer.'' p.645 표 각주: ''Zolbetuximab is currently investigational.'''
+  kr_says: 'Statement 25-2: ''Palliative first-line systemic therapy with zolbetuximab combined with capecitabine or fluorouracil plus oxaliplatin (CAPOX or FOLFOX) is recommended in patients with HER2-negative and CLDN18.2-positive locally advanced unresectable or metastatic gastric cancer (evidence: high, recommendation: strong for).'' 양성 정의: ''≥75% of tumor cells showing moderate-to-strong membranous CLDN18 staining''.'
+  kmle_rule: KMLE 문항·정리본은 HER2 음성·CLDN18.2 양성(종양세포 ≥75% 중등도 이상 막 염색) 진행위암 1차에 졸베툭시맙+CAPOX/FOLFOX 를 권고 치료(근거 높음·강한 권고)로 적용한다.
+  usmle_rule: USMLE 문항은 해리슨 22판 기준으로 졸베툭시맙을 연구 단계(가능한 미래 1차 선택지)로 보고 정답 표준 치료로 내지 않는다.
+  verified: text
+- id: diff.gi.colon-polyp.villous-histology
+  slot: h81
+  h22_chapter: 86
+  h22_cite: '[[harrison-22: 86장 p.653]]'
+  kr_guideline_id: kr-ksge-colon-polyp
+  kr_cite: 폴립 절제 후 추적대장내시경검사 진료지침 2022(대한소화기학회·대한소화기내시경학회·대한장연구학회) p.122
+  diff_type: same
+  topic: 융모샘종 — 암 진행·추적 단축의 위험인자
+  harrison_says: '''The risk of progression to cancer is associated with size of the polyp and the histology. Villous adenomas develop into cancer three-fold more often than tubular adenomas.'' 추적 간격은 제시하지 않는다.'
+  kr_says: '권고문 3: ''기준대장내시경검사에서 대롱융모 또는 융모샘종을 제거한 환자는 추적대장내시경검사에서 검사 간격의 단축을 고려해야 한다. (권고등급: 강한 권고, 근거수준: 낮음)'' 정의: ''융모 성분이 25% 미만인 경우를 대롱샘종, 75% 이상인 경우를 융모샘종, 그 사이인 경우를 대롱융모샘종''. 표 4(p.120): 대롱융모·융모샘종 → 3년.'
+  kmle_rule: KMLE 문항·정리본은 대롱융모·융모샘종 절제 후 추적대장내시경을 3년 뒤로 적용한다(강한 권고·근거 낮음).
+  usmle_rule: USMLE 문항은 융모 조직이 관상샘종보다 암 진행 위험이 높다(약 3배)는 해리슨 서술을 적용한다.
+  verified: text
+- id: diff.gi.colon-polyp.adenoma-size-10mm
+  slot: h81
+  h22_chapter: 86
+  h22_cite: '[[harrison-22: 86장 p.653]]'
+  kr_guideline_id: kr-ksge-colon-polyp
+  kr_cite: 폴립 절제 후 추적대장내시경검사 진료지침 2022(대한소화기학회·대한소화기내시경학회·대한장연구학회) p.120
+  diff_type: threshold
+  topic: 샘종 크기 — 10 mm 이상이면 3년 추적(해리슨은 문턱 없음)
+  harrison_says: '''The risk of progression to cancer is associated with size of the polyp and the histology.'' 크기 문턱(mm)이나 추적 간격은 86장에 없다.'
+  kr_says: '권고문 1: ''기준대장내시경검사에서 크기가 10 mm 이상의 샘종이 있었던 환자는 추적대장내시경검사에서 검사 간격의 단축을 고려해야 한다. (권고등급: 조건부 권고, 근거수준: 낮음)'' 본문: ''본 진료지침에서는 20 mm가 아닌 10 mm를 그 기준점으로 하였다.'' 표 4: ''Adenoma ≥10 mm in size — 3 years''.'
+  kmle_rule: KMLE 문항·정리본은 10 mm 이상 샘종 절제 후 추적대장내시경을 3년 뒤로 적용한다(조건부 권고·근거 낮음).
+  usmle_rule: USMLE 문항은 크기가 클수록 암 진행 위험이 높다는 원칙만 해리슨에서 가져오고, 추적 간격 수치는 해리슨 86장 근거로 내지 않는다.
+  verified: text
+- id: diff.gi.colon-polyp.adenoma-number
+  slot: h81
+  h22_chapter: 86
+  h22_cite: '[[harrison-22: 86장 p.653]]'
+  kr_guideline_id: kr-ksge-colon-polyp
+  kr_cite: 폴립 절제 후 추적대장내시경검사 진료지침 2022(대한소화기학회·대한소화기내시경학회·대한장연구학회) p.120
+  diff_type: algorithm
+  topic: 샘종 개수별 추적 간격 — 3~4개 3~5년·5~10개 3년·10개 초과 1년
+  harrison_says: '86장은 샘종 개수에 따른 폴립 절제 후 추적 간격을 제시하지 않는다(p.653 은 크기·조직형만 위험 요인으로 든다). 다발 폴립은 유전 증후군 맥락에서만: MAP ''annual to biennial colonoscopic surveillance is generally recommended starting at age 25–30 years''(p.654).'
+  kr_says: '표 4: ''3-4 adenomas — 3-5 years (Conditional, Moderate)'', ''5-10 adenomas — 3 years (Conditional, Moderate)'', ''Number of adenomas >10 — 1 year (Conditional, Moderate)'' — 각주 ''Only applicable when there are no other high-risk findings''. 권고문 2(p.121): ''3-5개 이상의 샘종을 제거한 환자는 ... 검사 간격의 단축을 고려해야 한다. (권고등급: 조건부 권고, 근거수준: 보통)''. p.121 은 USMSTF 가 ''여전히 3개 이상의 샘종을 고위험샘종(high-risk adenoma)으로 간주'' 하고 BSG 는 5개 이상을 고위험으로 본다고 대비하며, 10개 이상이면 유전자 검사 고려를 권장한다.'
+  kmle_rule: KMLE 문항·정리본은 다른 고위험 소견이 없을 때 샘종 3~4개는 3~5년, 5~10개는 3년, 10개 초과는 1년 뒤 추적대장내시경으로 적용하고, 10개 이상이면 유전성 용종증 검사를 고려한다고 적는다.
+  usmle_rule: USMLE 문항의 개수별 간격은 해리슨 86장에 근거가 없다 — 국내 지침이 인용한 USMSTF 2020(3개 이상 = 고위험샘종, 10개 초과 = 1년)과 같은 흐름이나, 해리슨 인용으로 쓰지 않는다.
+  verified: text
+- id: diff.gi.colon-polyp.low-risk-interval
+  slot: h81
+  h22_chapter: 86
+  h22_cite: '[[harrison-22: 86장 p.655]]'
+  kr_guideline_id: kr-ksge-colon-polyp
+  kr_cite: 폴립 절제 후 추적대장내시경검사 진료지침 2022(대한소화기학회·대한소화기내시경학회·대한장연구학회) p.126
+  diff_type: threshold
+  topic: 고위험 소견 없는 폴립 절제 후 — 5~10년(국내) vs 정상 대장내시경 10년 간격
+  harrison_says: 선별 대장내시경 간격으로 'every 5 years instead of every 10 years for colonoscopy'(구불결장내시경 5년 대 대장내시경 10년)만 적고, 저위험 샘종 절제 후 간격은 따로 제시하지 않는다.
+  kr_says: '권고문 11: ''양호한 대장정결 상태에서 시행한 양질의 기준대장내시경검사에서 완전한 폴립 절제 후 대장암 관련 고위험 소견이 없는 경우, 추적대장내시경검사를 폴립 절제 후 5-10년 뒤에 시행할 것을 권고한다. ... (권고등급: 강한 권고, 근거수준: 중등도)'' p.127 본문: ''우리나라의 경우 낮은 의료비용 및 높은 의료접근성 등을 고려할 때 기존의 5년 간격도 일정 부분 과도기적인 대안이 될 수 있을 것이다.'''
+  kmle_rule: KMLE 문항·정리본은 고위험 소견 없는 폴립 완전 절제(양질·장정결 양호) 후 추적대장내시경을 5~10년 뒤로 적용한다(강한 권고·근거 중등도).
+  usmle_rule: USMLE 문항은 평균 위험 선별 대장내시경 정상이면 10년 간격을 적용하고, 저위험 샘종 후 간격 수치는 해리슨 86장 인용으로 내지 않는다.
+  verified: text
+- id: diff.gi.colon-polyp.piecemeal-20mm
+  slot: h81
+  h22_chapter: 86
+  h22_cite: '[[harrison-22: 86장 p.653]]'
+  kr_guideline_id: kr-ksge-colon-polyp
+  kr_cite: 폴립 절제 후 추적대장내시경검사 진료지침 2022(대한소화기학회·대한소화기내시경학회·대한장연구학회) p.125
+  diff_type: algorithm
+  topic: 20 mm 이상 폴립 분할절제 후 — 6개월 추적(해리슨은 언급 없음)
+  harrison_says: 86장은 분할절제(piecemeal) 후 추적을 다루지 않는다 — 폴립 단락(p.653)은 크기·조직형과 암 진행 위험만 서술한다.
+  kr_says: '권고문 9: ''20 mm 이상 크기의 대장 폴립이 분할절제된 경우에는 단축된 추적대장내시경검사 간격을 고려해야 한다. (권고등급: 강한 권고, 근거수준: 낮음)'' 표 4(p.120): ''Piecemeal resection of colorectal polyps ≥20 mm in size — 6 months''. 본문은 2020 USMSTF·ESGE 도 비슷하게 권고한다고 적는다.'
+  kmle_rule: KMLE 문항·정리본은 20 mm 이상 폴립을 분할절제했으면 6개월 뒤 추적대장내시경으로 적용한다(강한 권고·근거 낮음).
+  usmle_rule: USMLE 문항에서 분할절제 후 간격은 해리슨 86장 근거로 내지 않는다(필요하면 USMSTF 원문으로 따로 확인).
+  verified: text
+- id: diff.gi.colon-polyp.screening-age-fit
+  slot: h81
+  h22_chapter: 86
+  h22_cite: '[[harrison-22: 86장 p.655]]'
+  kr_guideline_id: kr-ksge-colon-polyp
+  kr_cite: 폴립 절제 후 추적대장내시경검사 진료지침 2022(대한소화기학회·대한소화기내시경학회·대한장연구학회) p.116
+  diff_type: screening
+  topic: 대장암 선별 — 미국 45세 시작 vs 국내 국가검진 분변잠혈검사(시작 나이는 이 지침에 없음)
+  harrison_says: 'p.655: ''the U.S. Preventative Services Task Force updated their screening recommendations in 2021 and lowered the age for recommended screening to 45.'' ''every 5 years instead of every 10 years for colonoscopy) and the use of annual fecal immunohistochemical test (FIT)''. p.656: ''Most professional societies agree that screening for colon cancer should begin at age 45 for patients at average risk.'''
+  kr_says: '서론: ''국내의 경우 국가 대장암 선별 검사로서 분변잠혈검사가 시행되고 있으나, 의료 접근성 및 효용성이 높은 국내 의료 환경의 특성상 대장암 선별 검사로 대장내시경검사가 이미 보편화되었으며''. 선별 시작 나이·간격은 이 지침의 범위 밖이라 제시하지 않는다.'
+  kmle_rule: KMLE 문항·정리본은 국내 국가 대장암 선별 검사가 분변잠혈검사라고만 이 지침으로 적고, 시작 나이·간격은 국가암검진 기준을 따로 확인해 인용한다(이 지침으로 쓰지 않는다).
+  usmle_rule: USMLE 문항은 평균 위험 45세 시작, 대장내시경 10년·FIT 매년·구불결장내시경 5년을 적용한다.
+  verified: text

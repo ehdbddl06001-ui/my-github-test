@@ -383,7 +383,7 @@
       "pmid": "42494145",
       "drive_path": "KSHGR_Hpylori_2025_ko.pdf",
       "drive_doc_id": "17XiOsZjo9kmFki9JCbHFvBxtpQbkbp6E",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["헬리코박터", "H. pylori", "helicobacter", "제균", "소화성궤양"],
       "check_points": [
         "클라리스로마이신 내성(>15%) 반영 — 내성검사(PCR) 기반 맞춤치료 우선",
@@ -412,7 +412,7 @@
       "pmid": "42281419",
       "drive_path": "KASL_hepatitisB_2026.pdf",
       "drive_doc_id": "1oQXAU5eS9lCEabnC4vipyPS3GXmAiaj-",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["B형간염", "HBV", "hepatitis-b", "항바이러스제", "엔테카비르", "테노포비르"],
       "check_points": [
         "HBV DNA 중심 치료 전환(회색지대 ≥2,000 IU/mL ALT 무관 조기치료) vs 해리슨/AASLD ALT 기준",
@@ -440,7 +440,7 @@
       "pmid": "36263666",
       "drive_path": "KLCA-NCC_HCC_2022.pdf",
       "drive_doc_id": "15jbkmkq4Z5uJhDTh684oFKyMRedwNl8e",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["간세포암", "간암", "HCC", "AFP", "간경변"],
       "check_points": [
         "고위험군 6개월 간초음파+AFP 감시",
@@ -465,7 +465,7 @@
       "pmid": "",
       "drive_path": "NCC_screening_gastric_2026.pdf",
       "drive_doc_id": "10cryQvTBSLAgBtoJ6DbAc6BtKRzd0JDn",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["국가암검진", "선별검사", "screening", "위암검진", "대장암검진", "자궁경부암검진"],
       "check_points": [
         "USPSTF(해리슨) 대비 6대암 전면 비교: 위(40세 2년), 대장(50세 1년 FIT), 간(40세 고위험 6개월), 유방(40세 2년), 자궁경부(20세 2년), 폐(54-74세 30갑년 2년)"
@@ -497,7 +497,7 @@
       "pmid": "",
       "drive_path": "KDCA_national-immunization-guideline_2026_clinics.pdf",
       "drive_doc_id": "1gHU4a3mZ2MdSQfiQx4e4y77U6GDox6GE",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["예방접종", "백신", "vaccine", "법정감염병", "신고", "격리"],
       "check_points": [
         "소아 NIP(BCG·일본뇌염·A형간염) vs CDC ACIP",
@@ -526,7 +526,7 @@
       "pmid": "41126716",
       "drive_path": "KASL_hepatitisC_2025.pdf",
       "drive_doc_id": "1V_XvMzRDdHzeWkdUIW3x7xRfjqt8hsp5",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["C형간염", "HCV", "hepatitis-c", "DAA"],
       "check_points": [
         "국내 DAA 1차 약제·간경변증/CKD 특수군 치료 및 국가건강검진 C형간염 선별"
@@ -550,7 +550,7 @@
       "pmid": "39967303",
       "drive_path": "KASL_MASLD_2025.pdf",
       "drive_doc_id": "12rJeGe6QHmQ1-ktq9T5ihp_JdxtXRnIW",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["지방간", "MASLD", "NAFLD", "FIB-4", "MetALD"],
       "check_points": [
         "NAFLD→MASLD/MetALD 진단 기준(한국인 BMI/허리둘레 반영)",
@@ -575,7 +575,7 @@
       "pmid": "42928004",
       "drive_path": "KASID_IBD_diagnosis-monitoring_2026.pdf",
       "drive_doc_id": "1MbtvHX9uiHw79Y0vCIvK54XIt9i2GO7v",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["크론병", "궤양성대장염", "염증성장질환", "IBD", "장결핵"],
       "check_points": [
         "장결핵 감별 알고리즘(한국 최빈출) 및 항결핵제 시험치료",
@@ -605,7 +605,7 @@
       "pmid": "34642267",
       "drive_path": "KSNM_GERD_2020.pdf",
       "drive_doc_id": "1tCarOEdlIrGkwsmevJU-2sDhx0yjZmOG",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["위식도역류", "GERD", "PPI", "P-CAB"],
       "check_points": [
         "P-CAB 1차·대체 치료 위치 및 국내 위내시경 초기 시행 문턱"
@@ -632,7 +632,7 @@
       "pmid": "35975642",
       "drive_path": "KPBA_acute-pancreatitis_2022.pdf",
       "drive_doc_id": "1pNAuK102KU8TQtslxx8nRCbuQdNsVQDx",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["췌장염", "pancreatitis", "ERCP"],
       "check_points": [
         "목표지향 수액요법, 예방적 항생제 비권고, 담석성 췌장염 ERCP 시점"
@@ -656,7 +656,7 @@
       "pmid": "39822170",
       "drive_path": "KGCA_gastric-cancer_2024.pdf",
       "drive_doc_id": "1V1Xbo2aOOg8-38CH1iqhc8l7jaiNWPO9",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["위암", "gastric-cancer", "ESD", "조기위암"],
       "check_points": [
         "조기위암 ESD 절대/확대 적응증 및 D2 림프절 절제(서구 D1 대비)"
@@ -680,7 +680,7 @@
       "pmid": "36156035",
       "drive_path": "KSGE_colon-polyp-surveillance_2022_ko.pdf",
       "drive_doc_id": "1nbDVPvOrBjcPkfP1c7dDSL8aojMuSb0Q",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["대장암", "대장폴립", "선종", "colorectal"],
       "check_points": [
         "선종 개수·크기·융모성/고등급이형성별 대장내시경 추적 간격 vs USMSTF"
@@ -1061,7 +1061,7 @@
       "pmid": "42050795",
       "drive_path": "KASL_cirrhosis_2026_ascites.pdf",
       "drive_doc_id": "1ypCZLgVNzp2n1N17hQtiRSOwddyprhbI",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["간경변", "복수", "정맥류", "간성뇌증", "SBP", "cirrhosis"],
       "check_points": [
         "SBP 진단·예방 항생제, 식도정맥류 1차/2차 예방(NSBB·EVL)"
