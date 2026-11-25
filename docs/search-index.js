@@ -1,32 +1,32 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-24",
+ "generated": "2026-11-25",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4276,
+  "total": 4284,
   "byType": {
+   "paper": 987,
    "kmle": 1984,
    "concept": 231,
    "usmle": 282,
    "imaging": 783,
-   "paper": 979,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 363,
-   "Nephrology": 275,
-   "Infectious Disease": 248,
-   "Pediatrics": 236,
+   "Cardiology": 364,
+   "Nephrology": 276,
+   "Infectious Disease": 249,
+   "Pediatrics": 237,
    "Obstetrics & Gynecology": 179,
    "Rheumatology": 153,
    "Neurology": 150,
    "Psychiatry": 150,
-   "Pathology": 146,
+   "Pathology": 147,
    "Orthopedics": 137,
-   "Hematology-Oncology": 135,
+   "Hematology-Oncology": 136,
    "Endocrinology": 132,
    "General Surgery": 132,
    "Gastroenterology": 130,
@@ -34,9 +34,9 @@ window.MEDKOS_INDEX = {
    "Dermatology": 129,
    "Ophthalmology": 129,
    "Pulmonology": 128,
-   "Surgery": 126,
+   "Surgery": 127,
    "Hematology": 123,
-   "Laboratory Medicine": 101,
+   "Laboratory Medicine": 102,
    "산부인과": 95,
    "호흡기": 50,
    "소화기": 46,
@@ -80,13 +80,149 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1244,
    "high": 3036,
-   "medium": 1236,
    "low": 4
   },
   "tagCount": 5026
  },
  "docs": [
+  {
+   "id": "paper-2026-0987",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diagnosis (Berlin, Germany)",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0987_conservative_management_diagnostic_error_after_suspected_csf.md",
+   "snippet": "Title Conservative management: diagnostic error after suspected CSF leak Authors Gross Sarah A Journal / DOI Diagnosis (Berlin, Germany) · DOI: 10.1515/dx 2026 0166 · PMID: 43077598 https://pubmed.ncbi.nlm.nih.gov/43077598/ Abstract OBJECTI",
+   "text": "Surgery scraped pubmed PubMed / Diagnosis (Berlin, Germany) Title Conservative management: diagnostic error after suspected CSF leak Authors Gross Sarah A Journal / DOI Diagnosis (Berlin, Germany) · DOI: 10.1515/dx 2026 0166 · PMID: 43077598 https://pubmed.ncbi.nlm.nih.gov/43077598/ Abstract OBJECTIVES: To trace how a suspected but unexamined surgical complication propagated through non disclosure, anchoring, and fragmented care into months of diagnostic delay, unresolved illness, and lasting harm. CASE PRESENTATION: A 23 year old woman developed persistent clear nasal drainage after elective functional endoscopic sinus surgery and asked her surgeon whether it was a cerebrospinal fluid (CSF) leak. Beta 2 transferrin was never ordered. The complication was never confirmed or excluded. In March of her first year of medical school, at 24, she became acutely ill. An early lumbar puncture was reported to her as viral meningitis and not investigated further. That record is lost, and the only surviving lumbar puncture was essentially normal. Over many months she cycled through various emergency departments, dismissed as drug seeking and a frequent flier, then was committed to a psychiatric unit. She had seizures before receiving intravenous treatment for presumed Lyme meningitis and for toxoplasmosis supported by elevated Toxoplasma IgM and IgG. Medical school ended. Cognitive impairment and fatigue persist 20 years later. CONCLUSIONS: The failure was not one missed clue but a cascade in which each error made the next more likely: a suspected leak became an incomplete history, then a confident but incorrect psychiatric closure. Two mechanisms stand out: a private workup withheld from the treating team, and an illness that corrupted the patient's symptom reporting and generated false histories clinicians anchored upon, even as her core account, that her illness was organic, stayed correct. Disclosure, ownership of the whole picture, and repeated reassessment can interrupt such a cascade. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0986",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric allergy and immunology : official publication of the European Society of Pediatric Allergy and Immunology",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0986_interaction_between_sex_filaggrin_and_early_food_and_skin_in.md",
+   "snippet": "Title Interaction between sex, filaggrin, and early food and skin interventions in atopic dermatitis and allergic sensitization development; a PreventADALL study in children up to 3 years Authors Tan Bowen, Rehbinder Eva Maria, Hoyer Angela",
+   "text": "Pediatrics scraped pubmed PubMed / Pediatric allergy and immunology : official publication of the European Society of Pediatric Allergy and Immunology Title Interaction between sex, filaggrin, and early food and skin interventions in atopic dermatitis and allergic sensitization development; a PreventADALL study in children up to 3 years Authors Tan Bowen, Rehbinder Eva Maria, Hoyer Angela, Lødrup Carlsen Karin C, Granum Berit, Haugen Guttorm, Hedlin Gunilla, Jonassen Christine Monceyron, et al. Journal / DOI Pediatric allergy and immunology : official publication of the European Society of Pediatric Allergy and Immunology · DOI: 10.1111/pai.70549 · PMID: 43077225 https://pubmed.ncbi.nlm.nih.gov/43077225/ Abstract BACKGROUND: Early food introduction reduced food allergy at 3 years, whereas early use of skin emollients did not affect atopic dermatitis (AD) in the PreventADALL study. OBJECTIVE: To determine if sex or Filaggrin (FLG) mutation modifies the effect of early skin or food intervention on AD or allergic sensitization by 3 years of age. METHODS: From the PreventADALL trial we included 2394 mother child pairs. Infants were randomized to one of four intervention groups (no intervention, food intervention by introducing peanut, milk, wheat and egg from 3 to 4 months, skin intervention with regular skin emollients from 0.5 to 9 months, or both). Clinical presence of AD, AD severity and allergic sensitization were assessed at 1 year and 3 years. Interaction terms and stratified estimates were analyzed. RESULTS: At 1 year, sex specific interaction effects were found for the presence of AD with combined intervention (Adjusted pint = 0.004); the stratified analysis showed that the combined intervention was protective in boys (OR 0.16; 95% CI 0.05 0.41) but not in girls. Sex intervention interactions were also observed for AD severity at 1 year (Adjusted pint = 0.003 for combined intervention) and 3 years (Adjusted pint = 0.01 for the skin, food intervention; and adjusted pint = 0.03 for the combined intervention). No interaction between FLG mutation and interventions was observed. No sex or FLG related interaction was found for allergic sensitization. CONCLUSION: Sex may be a modifier in the effect of early interventions on AD, while FLG mutation status seems not. These findings suggest that sex specific biological differences may modulate the response to early life AD prevention. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0985",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLOS digital health",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0985_artificial_intelligence_for_breast_arterial_calcification_de.md",
+   "snippet": "Title Artificial intelligence for breast arterial calcification detection on mammography: A systematic review of diagnostic accuracy Authors Campbell A Price, Petfield Leticia, Nemec Ii Eric C, Rose Suzanne J Journal / DOI PLOS digital heal",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PLOS digital health Title Artificial intelligence for breast arterial calcification detection on mammography: A systematic review of diagnostic accuracy Authors Campbell A Price, Petfield Leticia, Nemec Ii Eric C, Rose Suzanne J Journal / DOI PLOS digital health · DOI: 10.1371/journal.pdig.0001829 · PMID: 43077485 https://pubmed.ncbi.nlm.nih.gov/43077485/ Abstract Cardiovascular disease is the leading cause of death globally and disproportionately affects women. Breast arterial calcifications (BAC) have emerged as a sex specific predictor of cardiovascular disease. However, reporting is inconsistent due to the lack of standardized guidelines. Artificial intelligence (AI) has therefore gained attention as a tool to automate BAC detection. This systematic review examines the diagnostic performance of AI based BAC detection compared with manual radiologist assessment in women undergoing mammography. A systematic review was conducted using MEDLINE, PubMed Central, ScienceDirect, Scopus, Academic Search Premier, IEEE Xplore, DOAJ, NCBI Bookshelf, MedRxiv, BioRxiv, and ClinicalTrials.gov (2015 2025), following PRISMA (Preferred Reporting Items for Systematic Reviews and Meta Analyses) 2020 guidelines. Screening and data extraction were performed in Covidence by two independent reviewers. Risk of bias was assessed using the QUADAS 2 tool. The search yielded 84 articles, of which five met the inclusion criteria, representing 12,924 mammography cases. All studies compared AI based BAC detection with radiologist generated ground truth. AI systems demonstrated strong performance, with Area Under the Curve (AUC) values of 0.84 0.96, sensitivities of 0.696 0.87, specificities of 0.92 0.98, accuracies of 0.81 0.998, precisions of 0.683 0.89, and F1 scores of 0.665 0.87. Despite minor variability, outcomes were consistently high, showing that AI can augment the workflow of BAC detection during manual radiologist interpretation. Although larger, more diverse studies are needed, current evidence indicates that AI can accurately detect BAC on routine mammography and has the potential to enhance cardiovascular risk identification in women, thereby addressing a critical unmet need in preventive care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0984",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European thyroid journal",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0984_pathologic_response_after_molecularly_targeted_therapy_in_th.md",
+   "snippet": "Title Pathologic response after molecularly targeted therapy in thyroid carcinoma: a scoping review and reporting framework Authors Okubo Yoichiro, Yuguchi Shu, Kanno Chiaki, Kobayashi Yuki, Wada Shuka, Kadoya Mei, Toda Soji, Ichikawa Yuich",
+   "text": "Pathology scraped pubmed PubMed / European thyroid journal Title Pathologic response after molecularly targeted therapy in thyroid carcinoma: a scoping review and reporting framework Authors Okubo Yoichiro, Yuguchi Shu, Kanno Chiaki, Kobayashi Yuki, Wada Shuka, Kadoya Mei, Toda Soji, Ichikawa Yuichi, et al. Journal / DOI European thyroid journal · DOI: 10.1530/ETJ 26 0329 · PMID: 43077489 https://pubmed.ncbi.nlm.nih.gov/43077489/ Abstract OBJECTIVE: Molecularly targeted therapy is increasingly used to facilitate resection in advanced thyroid carcinoma, and post treatment tissue is obtained in several clinical contexts, but pathologic response is described inconsistently and no thyroid specific regression system is validated. We mapped reported tissue findings and proposed a reporting framework. METHODS: Two executed PubMed searches and a candidate report registry identified peer reviewed English full text reports of primary thyroid carcinoma with histologic sampling of a known carcinoma site or treated tumor bed after targeted therapy, with or without residual carcinoma, bounded at 3 July 2026. Eligibility, report role, source coverage, and qualifying post treatment histopathologic or ancillary information were assessed separately. A paired comparator or demonstrated treatment induced change was not required. RESULTS: Of 9,887 unique PubMed records and 11 additional registry candidates, 150 reports were assessed and 124 were eligible: 107 principal and 17 linked reports. Qualifying pathology information was identified in 76 reports (61.3%); 38 (30.6%) had no qualifying information in the reviewed main article and 10 (8.1%) remained unresolved. Among the 76 reports, 19 demonstrated paired change, four reported unchanged comparisons only, and 53 provided post treatment observations only. Findings were heterogeneous and site specific. CONCLUSIONS: A literature informed, non validated minimum dataset may help site specific reporting. It should map sampled sites, separate residual tumor from necrosis and stromal remodeling, identify the comparator, state attribution limits, and explain when viability cannot be estimated. Prospective validation is required before use as a response category or surrogate endpoint. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0983",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JCO oncology practice",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0983_management_of_diffuse_large_b_cell_lymphoma.md",
+   "snippet": "Title Management of Diffuse Large B Cell Lymphoma Authors Chauhan Ayushi, Chihara Dai, Westin Jason Journal / DOI JCO oncology practice · DOI: 10.1200/OP 26 00830 · PMID: 43077648 https://pubmed.ncbi.nlm.nih.gov/43077648/ Abstract Diffuse l",
+   "text": "Hematology-Oncology scraped pubmed PubMed / JCO oncology practice Title Management of Diffuse Large B Cell Lymphoma Authors Chauhan Ayushi, Chihara Dai, Westin Jason Journal / DOI JCO oncology practice · DOI: 10.1200/OP 26 00830 · PMID: 43077648 https://pubmed.ncbi.nlm.nih.gov/43077648/ Abstract Diffuse large B cell lymphoma (DLBCL) is the most common subtype of non Hodgkin lymphoma, accounting for approximately 30% 40% of cases worldwide. It is an aggressive, clinically heterogeneous disease, typically presenting with rapidly enlarging lymphadenopathy that may be accompanied by systemic B symptoms. Although many patients achieve durable remissions with frontline chemoimmunotherapy, a significant subset will experience relapse. Rather than a single disease, DLBCL comprises a spectrum of biologically distinct entities, characterized by differences in cell of origin, genomic alterations, and tumor microenvironment. Advances in molecular profiling have refined our understanding of DLBCL biology, identifying subgroups with distinct prognostic and therapeutic implications. However, these biological insights have not yet been translated into meaningful improvements in frontline treatment outcomes. Over the past decade, the treatment landscape of DLBCL has undergone significant evolution, particularly in the relapsed/refractory setting with the emergence of T cell directed therapies, including chimeric antigen receptor T cell therapy and bispecific antibodies. These advances have reshaped treatment paradigms and offer new opportunities to improve outcomes. In this review, we provide a comprehensive overview of the current management of DLBCL, with a focus on frontline therapy, evolving strategies in relapsed or refractory disease, and emerging approaches aimed at personalized treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0982",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Experimental physiology",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0982_combined_resistance_and_aerobic_exercise_in_chronic_kidney_d.md",
+   "snippet": "Title Combined resistance and aerobic exercise in chronic kidney disease: An exploratory study of physical activity as a moderator of adaptations Authors Gollie Jared M, Ryan Alice S, Harris Love Michael O, Kokkinos Peter, Scholten Joel D, ",
+   "text": "Nephrology scraped pubmed PubMed / Experimental physiology Title Combined resistance and aerobic exercise in chronic kidney disease: An exploratory study of physical activity as a moderator of adaptations Authors Gollie Jared M, Ryan Alice S, Harris Love Michael O, Kokkinos Peter, Scholten Joel D, Pugh R Jamil, Hazel Cooper G, Blackman Marc R Journal / DOI Experimental physiology · DOI: 10.1113/EP093682 · PMID: 43077359 https://pubmed.ncbi.nlm.nih.gov/43077359/ Abstract Physical inactivity is common in chronic kidney disease (CKD) and might contribute to impaired skeletal muscle and physical function. Whether habitual physical activity (PA) influences adaptation to structured exercise in CKD remains unclear. We examined the effects of 6 weeks of combined flywheel resistance and aerobic exercise (FRE+AE) on neuromuscular and physical function and explored whether baseline self reported PA moderated treatment response in older male Veterans with stages 3 4 CKD. Twenty four participants were randomized to FRE+AE (n = 12) or health education (EDU; n = 12). Outcomes included vastus lateralis (VL MT) and rectus femoris (RF MT) muscle thickness, maximal voluntary isometric torque (MVIT), isokinetic knee extensor power at 60° s 1 and 180° s 1, gait speed (GS), five repetition sit to stand (STS) and timed up and go (TUG). Intervention effects were evaluated using baseline adjusted linear regression, and baseline PA was examined as a continuous moderator. At 6 weeks, FRE+AE resulted in greater VL MT than EDU (adjusted difference, 3.31 mm; 95% confidence interval, 0.91 5.71; P = 0.010) and greater GS (0.17 m s 1; 95% confidence interval, 0.07 0.26; P = 0.002). Treatment effects for RF MT (2.09 mm; P = 0.051) and isokinetic power at 180° s 1 (28 W; P = 0.060) favoured FRE+AE but were not statistically significant after controlling for multiple comparisons. No clear treatment effects were observed for MVIT, power at 60° s 1, STS or TUG. Baseline PA did not moderate treatment effects across outcomes. These findings demonstrate that short term FRE+AE can improve VL MT and GS in older male Veterans with moderate to advanced CKD, whereas baseline habitual self reported PA did not explain variation in treatment responsiveness. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0981",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical chemistry and laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0981_serum_procalcitonin_in_the_assessment_of_febrile_neutropenia.md",
+   "snippet": "Title Serum procalcitonin in the assessment of febrile neutropenia in hematological patients Authors Juutilainen Auni, Jantunen Esa, Pulkki Kari, Hämäläinen Sari Journal / DOI Clinical chemistry and laboratory medicine · DOI: 10.1515/cclm 2",
+   "text": "Infectious Disease scraped pubmed PubMed / Clinical chemistry and laboratory medicine Title Serum procalcitonin in the assessment of febrile neutropenia in hematological patients Authors Juutilainen Auni, Jantunen Esa, Pulkki Kari, Hämäläinen Sari Journal / DOI Clinical chemistry and laboratory medicine · DOI: 10.1515/cclm 2026 1502 · PMID: 43077626 https://pubmed.ncbi.nlm.nih.gov/43077626/ Abstract This review focuses on recent literature of the use of procalcitonin (PCT) to assess infection severity and prognosis in hematological patients with chemotherapy induced febrile neutropenia (FN). A substantial proportion of patients with hematological malignancies receive intensive chemotherapy, which often leads to neutropenia, associated with infectious complications, and prolonged use of antibiotics. Antimicrobial resistance is a growing problem with far reaching consequences, and hematological patients undergoing chemotherapy are at a particularly high risk. Observational studies indicate that PCT concentration 0.1 0.5 μg/L suggests localized infection; systemic infection is unlikely when PCT <0.1 μg/L, and likely when PCT ≥2 μg/L. In sepsis studies utilizing PCT guided therapy, the threshold values used at the initiation of treatment range from 0.10 to 0.5 μg/L. The commonly used criteria for discontinuation include 50 % reduction from the previous value, 65 % decrease within three days, or ≥80 90 % decrease from the peak value. Of note, these cut offs are based on early clinical studies and do not consider variable analysis methods available. When these thresholds are applied to sepsis patients, the duration of treatment is typically reduced by approximately two days. Some studies have reported reduction in antibiotic related adverse effects and antimicrobial resistance, and even a decrease in mortality. Further experience and data are needed regarding PCT guided management in hematological patients with chemotherapy induced FN. Findings of observational studies largely support the utility of PCT measurements in chemotherapy induced FN, but there is a paucity of interventional studies evaluating the use of PCT algorithms in FN patients and the results are inconsistent. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0980",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-11-25",
+   "path": "content/papers/2026/2026-11-25_paper-2026-0980_genetic_and_clinical_spectrum_of_infantile_onset_pompe_disea.md",
+   "snippet": "Title Genetic and clinical spectrum of infantile onset Pompe disease: A Vietnamese cohort study Authors Dang Giang Thi Kim, Nguyen Khanh Ngoc, Do Mai Thi Thanh, Pham Duy Quang, Can Ngoc Thi Bich, Bui Thao Phuong, Bui Xuan Thi, Nguyen Huong ",
+   "text": "Cardiology scraped pubmed PubMed / PloS one Title Genetic and clinical spectrum of infantile onset Pompe disease: A Vietnamese cohort study Authors Dang Giang Thi Kim, Nguyen Khanh Ngoc, Do Mai Thi Thanh, Pham Duy Quang, Can Ngoc Thi Bich, Bui Thao Phuong, Bui Xuan Thi, Nguyen Huong Thi Mai, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0363248 · PMID: 43077436 https://pubmed.ncbi.nlm.nih.gov/43077436/ Abstract BACKGROUND: Infantile onset Pompe disease (IOPD) is the most severe form of Pompe disease, resulting from pathogenic GAA variants that cause lysosomal acid α glucosidase deficiency. Although molecular diagnosis has improved substantially, comprehensive genotype phenotype data from genetically confirmed IOPD cohorts in Southeast Asia remain limited. We aimed to characterize the clinical, biochemical, cardiac, and molecular spectrum of Vietnamese patients with genetically characterized IOPD and to explore genotype phenotype associations according to predicted cross reactive immunologic material (CRIM) status. METHODS: This retrospective study included 81 Vietnamese patients with genetically characterized IOPD diagnosed between 2015 and 2025. We analyzed clinical, biochemical, cardiac, enzymatic, and molecular data at diagnosis. Genotype phenotype associations were explored according to predicted CRIM status. RESULTS: The median age at diagnosis was 4.53 months (range, 0.03 71.67 months). The most common clinical manifestations were muscle weakness or hypotonia (71.6%), pneumonia (59.3%), macroglossia (49.4%), and heart failure (38.3%). Genetic analysis identified 28 distinct GAA variants comprising 160 disease associated alleles, including five previously unreported variants. The predominant variant was c.1933G C (p.Asp645His), accounting for 46.3% of disease associated alleles, followed by c.2040 + 1G T (11.9%). Seven patients (8.6%) were predicted to be CRIM negative. Among patients with available echocardiographic measurements, predicted CRIM negative patients had a higher left ventricular mass index (LVMI) z score than predicted CRIM positive patients (median SDS, 9.90 vs. 6.05; p = 0.031). CONCLUSIONS: This study reports the largest genetically characterized IOPD cohort from Vietnam to date and expands the clinical and molecular spectrum of IOPD by identifying five previously unreported variants in the GAA gene. The predominant variants were c.1933G C and c.2040 + 1G T. Predicted CRIM negative status may be associated with more severe cardiac hypertrophy, as reflected by a higher LVMI z score. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-2020",
    "type": "kmle",
