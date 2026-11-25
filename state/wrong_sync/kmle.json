@@ -1805,8 +1805,29 @@
    "date": "2026-11-26",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1969": {
+   "id": "kmle-2026-1969",
+   "exam": "kmle",
+   "subject": "Infectious Disease",
+   "step": "",
+   "type": "Three Weeks of Worsening Headache and Low Fever in an Untreated Man with a Low CD4 Count",
+   "style": "",
+   "modality": "",
+   "question": "진단을 위해 가장 적절한 뇌척수액 검사는?",
+   "chosen": 4,
+   "chosenText": "단순포진 바이러스 PCR",
+   "answer": 3,
+   "answerText": "크립토코쿠스 항원 검사",
+   "coreNote": "",
+   "differ": "",
+   "decision": "CD4 42/μL의 HIV 감염인에게 3주의 아급성 두통·미열이 있고 개방압이 34 cmH2O로 높은데 세포·단백 변화는 약해 크립토코쿠스 수막염을 먼저 의심한다. 뇌척수액 크립토코쿠스 항원이 가장 정확한 진단 검사다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T23:05:41.594Z"
+ "updated": "2026-11-25T23:14:04.918Z"
 }
