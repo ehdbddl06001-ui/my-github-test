@@ -38,6 +38,35 @@ def load_registry() -> dict:
     return json.loads(REGISTRY.read_text(encoding="utf-8"))
 
 
+def diff_items() -> list[dict]:
+    """국내 vs 해리슨 대조 항목 전부(content/outline/kr_vs_harrison/*.yaml — `_` 로 시작하는 틀 제외)."""
+    out: list[dict] = []
+    for f in sorted(DIFF_DIR.glob("*.yaml")):
+        if f.name.startswith("_"):
+            continue
+        doc = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+        for it in doc.get("items") or []:
+            out.append(dict(it, subject_slug=doc.get("subject_slug", f.stem)))
+    return out
+
+
+def track_slots(reg: dict) -> dict[str, set[str]]:
+    """트랙 id → 그 지침이 닿는 기본틀 슬롯(레지스트리 slots)."""
+    return {g["id"]: set(g.get("slots") or []) for g in reg.get("guidelines", [])}
+
+
+def items_for_slot(slot: str, items: list[dict], tslots: dict[str, set[str]], include_same: bool = False) -> list[dict]:
+    """정리본 기본틀 슬롯에 닿는 대조 항목 — 항목 slot 이 같거나, 항목 지침 트랙의 slots 에 그 슬롯이 있다.
+
+    `same`(국내 = 해리슨)은 정리본에 차이로 넣을 것이 없어 기본으로 뺀다.
+    """
+    if not slot:
+        return []
+    return [it for it in items
+            if (include_same or it.get("diff_type") != "same")
+            and (it.get("slot") == slot or slot in tslots.get(str(it.get("kr_guideline_id", "")), set()))]
+
+
 def load_h22() -> dict:
     return json.loads(H22_PATH.read_text(encoding="utf-8"))
 
@@ -122,6 +151,14 @@ def check_all() -> list[str]:
                         h22_cite = str(item.get("h22_cite", "")).strip()
                         if not h22_cite or not PAGE_RE.search(h22_cite):
                             errs.append(f"{loc}: verified=text 인데 h22_cite 에 쪽 번호가 없다")
+    # 정리본이 반영했다고 적은 대조 항목(kr_diffs · kr_diffs_skip)은 실제로 있어야 한다 — 큐 [krdiff] 가 이 표시로 끝난 것을 가린다
+    if CONCEPT_DIR.is_dir():
+        for cf in sorted(CONCEPT_DIR.rglob("*.md")):
+            fm, _ = _read_fm(cf)
+            for key in ("kr_diffs", "kr_diffs_skip"):
+                for did in fm.get(key) or []:
+                    if str(did) not in seen_diff_ids:
+                        errs.append(f"{cf.relative_to(ROOT).as_posix()}: {key} 의 '{did}' 가 kr_vs_harrison 에 없다")
     return errs
 
 

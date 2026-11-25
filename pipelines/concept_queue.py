@@ -73,6 +73,7 @@ import learning_log as ll
 import outline as ol
 from concepts import is_basic, load_concepts, load_questions, unverified_marks
 from traps import trap_tag
+import kr_guidelines as krg
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "state" / "concept_queue.json"
@@ -154,6 +155,7 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     gaps = _gaps(concepts, questions, S)
     figures = _figures(concepts, questions, S)
     restyles = _restyles(concepts, S)
+    krdiffs = _krdiffs(concepts, S)
     verifies = _verifies(concepts, S)
     notes.sort(key=lambda x: (-x["priority"], -x["wrongs"], x["objective"]))
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
@@ -163,9 +165,9 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     seen_d: set[str] = set()
     dists = [d for d in dists if not (d["key"] in seen_d or seen_d.add(d["key"]))]
     return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches, "root": roots,
-            "variant": variants, "dist": dists, "restyle": restyles, "figure": figures, "gap": gaps, "verify": verifies,
+            "variant": variants, "dist": dists, "restyle": restyles, "krdiff": krdiffs, "figure": figures, "gap": gaps, "verify": verifies,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
-                       "restyle": len(restyles), "root": len(roots),
+                       "restyle": len(restyles), "root": len(roots), "krdiff": len(krdiffs),
                        "root_backfill": sum(1 for r in roots if r["backfill"]),
                        "verify": len(verifies), "verify_marks": sum(v["marks"] for v in verifies),
                        "variant": len(variants), "dist": len(dists), "figure": len(figures),
@@ -261,6 +263,41 @@ def _dists(s, questions: dict) -> list[dict]:
         out.append({"key": f"{qid}:{L}", "qid": qid, "letter": L, "path": q.get("path", ""),
                     "chosen": ch.get("text", ""), "answer": ch.get("answer", ""), "day": ch.get("day", "")})
     return out
+
+
+def load_kr() -> tuple[list[dict], dict]:
+    """국내 vs 해리슨 대조 항목과 레지스트리 — 시험은 이 함수를 바꿔 끼운다(코드 시험이 실제 콘텐츠를 읽지 않게)."""
+    return krg.diff_items(), krg.load_registry()
+
+
+def _krdiffs(concepts: dict, S: dict, kr: tuple[list[dict], dict] | None = None) -> list[dict]:
+    """국내 지침 ↔ 해리슨 차이를 아직 반영하지 않은 정리본 — 오답이 걸린 목표 먼저 → 남은 항목 많은 것 → id.
+
+    짝 = 정리본 `outline` 슬롯이 대조 항목의 slot 이거나 그 지침 트랙의 slots 에 있다(`same` 항목은 뺀다).
+    끝난 표시 = 정리본 frontmatter `kr_diffs`(반영함) · `kr_diffs_skip`(이 정리본 목표와 무관). 새 대조 항목이
+    생기면 그 항목만 다시 뜬다. 규칙 /gen-concept 「국내 vs 해리슨([krdiff])」.
+    """
+    items, reg = kr if kr is not None else load_kr()
+    if not items:
+        return []
+    tslots = krg.track_slots(reg)
+    pri: dict[str, int] = {}
+    for s in S.values():
+        if s.objective and s.wrongs:
+            pri[s.objective] = max(pri.get(s.objective, 0), s.priority or 1)
+    out = []
+    for cid, c in concepts.items():
+        if is_basic(c):
+            continue
+        done = {str(x) for x in (c.get("kr_diffs") or [])} | {str(x) for x in (c.get("kr_diffs_skip") or [])}
+        todo = [it for it in krg.items_for_slot(str(c.get("outline") or ""), items, tslots) if str(it.get("id")) not in done]
+        if not todo:
+            continue
+        out.append({"objective": cid, "title": str(c.get("title", "")), "path": str(c.get("path", "")),
+                    "slot": str(c.get("outline")), "items": [str(it["id"]) for it in todo],
+                    "files": sorted({f"content/outline/kr_vs_harrison/{it['subject_slug']}.yaml" for it in todo}),
+                    "wrong": cid in pri, "priority": pri.get(cid, 0)})
+    return sorted(out, key=lambda x: (not x["wrong"], -x["priority"], -len(x["items"]), x["objective"]))
 
 
 def _restyles(concepts: dict, S: dict) -> list[dict]:
@@ -406,12 +443,12 @@ def main(argv: list[str]) -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     note, link, touch, var, dist, gap = q["note"], q["link"], q["touch"], q["variant"], q["dist"], q["gap"]
-    rs, fig, root, ver = q["restyle"], q["figure"], q["root"], q["verify"]
+    rs, fig, root, ver, krd = q["restyle"], q["figure"], q["root"], q["verify"], q["krdiff"]
     if a.limit:
-        note, link, touch, var, dist, gap, rs, fig, root, ver = (
-            x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig, root, ver))
+        note, link, touch, var, dist, gap, rs, fig, root, ver, krd = (
+            x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig, root, ver, krd))
     if a.json:
-        shown = {"note": note, "link": link, "touch": touch, "root": root, "variant": var, "dist": dist, "restyle": rs, "figure": fig,
+        shown = {"note": note, "link": link, "touch": touch, "root": root, "variant": var, "dist": dist, "restyle": rs, "krdiff": krd, "figure": fig,
                  "gap": gap, "counts": q["counts"]}
         if a.verify:                                    # 목록은 청했을 때만 — 건수는 counts 에 늘 있다
             shown["verify"] = ver
@@ -450,6 +487,12 @@ def main(argv: list[str]) -> int:
         else:
             print(f"  [figure] {f['concept']}  그림 판단 필요(붙임·요청·불필요) — {f['title'][:40]}")
     if not note and not link and not touch:
+        for k in krd:
+            print(f"  [krdiff] {k['objective']}  국내 vs 해리슨 항목 {len(k['items'])}개 미반영({', '.join(k['items'][:3])}"
+                  + ("…" if len(k["items"]) > 3 else "") + f") · {', '.join(k['files'])}"
+                  + (f" · 오답 우선순위 {k['priority']}" if k["wrong"] else ""))
+        if krd:
+            print(f"  (국내 지침 ↔ 해리슨 차이를 넣을 정리본 {q['counts']['krdiff']}개 — /gen-concept 「국내 vs 해리슨([krdiff])」)")
         for r in rs:
             print(f"  [restyle] {r['objective']}  {r['title'][:40]}" + (f" · 오답 우선순위 {r['priority']}" if r["priority"] else "")
                   + f" · {r['path']}")

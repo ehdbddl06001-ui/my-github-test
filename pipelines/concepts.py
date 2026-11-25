@@ -186,6 +186,30 @@ def is_basic(meta: dict[str, Any]) -> bool:
     return meta.get("layer") == "basic"
 
 
+KR_DIFF_ID = re.compile(r"diff\.[a-z0-9-]+(?:\.[a-z0-9-]+)+")
+
+
+def kr_diff_errors(meta: dict[str, Any]) -> list[str]:
+    """국내 vs 해리슨 반영 표시 — kr_diffs(이 정리본에 넣은 대조 항목) · kr_diffs_skip(이 목표와 무관해 넣지 않은 항목).
+
+    모양만 본다. 항목이 실제로 있는지는 `kr_guidelines.py --check` 가 본다(코드 시험이 실제 콘텐츠를 읽지 않게).
+    """
+    errs: list[str] = []
+    seen: dict[str, str] = {}
+    for key in ("kr_diffs", "kr_diffs_skip"):
+        v = meta.get(key)
+        if v is None:
+            continue
+        if not isinstance(v, list) or not all(isinstance(x, str) and KR_DIFF_ID.fullmatch(x) for x in v):
+            errs.append(f"{key} 는 대조 항목 id 목록(diff.<과>.<주제>.<요점> — content/outline/kr_vs_harrison)")
+            continue
+        for x in v:
+            if x in seen:
+                errs.append(f"'{x}' 가 {seen[x]} 와 {key} 에 함께 있다 — 반영했으면 kr_diffs, 무관하면 kr_diffs_skip 하나만")
+            seen[x] = key
+    return errs
+
+
 def root_errors(meta: dict[str, Any]) -> list[str]:
     """기초 뿌리 필드 — layer · discipline · system · textbook_check(기초 정리본) / roots · roots_none(임상 정리본)."""
     errs: list[str] = []
@@ -410,6 +434,7 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
             if not isinstance(v.get("flip"), bool):
                 errs.append(f"variants[{i}].flip 은 true(단서를 바꿔 답이 바뀜)·false(겉모습만 바뀌고 답은 그대로)")
     errs += root_errors(meta)
+    errs += kr_diff_errors(meta)
     errs += style_warnings(meta)
     errs += polish_warnings(meta)
     return errs
