@@ -854,7 +854,8 @@ class ConceptQueueTest(unittest.TestCase):
     def setUp(self):
         import concept_queue as cq
         self.cq = cq
-        self._orig = (cq.load_concepts, cq.load_questions)
+        self._orig = (cq.load_concepts, cq.load_questions, cq.load_kr)
+        cq.load_kr = lambda: ([], {})                       # 코드 시험은 실제 대조 파일을 읽지 않는다
         self.concepts = {"cn.derm.a.b": {"id": "cn.derm.a.b"}}
         self.qs = {"q1": {"topic": "Dermatology", "subtopic": "어루러기", "objective": "cn.derm.a.b"},
                    "q2": {"topic": "Dermatology", "subtopic": "백선", "objective": "cn.derm.c.d"},
@@ -864,7 +865,37 @@ class ConceptQueueTest(unittest.TestCase):
         cq.load_questions = lambda: self.qs
 
     def tearDown(self):
-        self.cq.load_concepts, self.cq.load_questions = self._orig
+        self.cq.load_concepts, self.cq.load_questions, self.cq.load_kr = self._orig
+
+    def test_krdiff_pairs_by_slot_and_skips_done_items(self):
+        """국내 vs 해리슨(2026-11-25 사용자 결정) — 정리본 슬롯에 닿는 차이 항목 중 아직 반영 · 제외 표시가 없는 것만 낸다."""
+        items = [
+            {"id": "diff.c.af.a", "slot": "h251", "kr_guideline_id": "kr-af", "diff_type": "threshold", "subject_slug": "cardiology"},
+            {"id": "diff.c.af.b", "slot": "h251", "kr_guideline_id": "kr-af", "diff_type": "same", "subject_slug": "cardiology"},
+            {"id": "diff.c.af.c", "slot": "h251", "kr_guideline_id": "kr-af", "diff_type": "algorithm", "subject_slug": "cardiology"},
+            {"id": "diff.s.t.a", "slot": "h385", "kr_guideline_id": "kr-thy", "diff_type": "threshold", "subject_slug": "endocrinology"},
+        ]
+        reg = {"guidelines": [{"id": "kr-af", "slots": ["h251"]}, {"id": "kr-thy", "slots": ["h385", "surg.x"]}]}
+        concepts = {
+            "cn.c.af.x": {"id": "cn.c.af.x", "outline": "h251", "kr_diffs": ["diff.c.af.a"]},
+            "cn.s.t.y": {"id": "cn.s.t.y", "outline": "surg.x"},                      # 트랙 slots 로 닿는다
+            "cn.c.af.z": {"id": "cn.c.af.z", "outline": "h251", "kr_diffs": ["diff.c.af.a"], "kr_diffs_skip": ["diff.c.af.c"]},
+            "cn.b.p.q": {"id": "cn.b.p.q", "outline": "h251", "layer": "basic"},      # 기초 정리본은 대상이 아니다
+            "cn.o.n.e": {"id": "cn.o.n.e"},                                           # 슬롯 없음
+        }
+        out = self.cq._krdiffs(concepts, {}, (items, reg))
+        self.assertEqual({k["objective"]: k["items"] for k in out},
+                         {"cn.c.af.x": ["diff.c.af.c"], "cn.s.t.y": ["diff.s.t.a"]})  # same · 반영 · 제외는 빠진다
+        self.assertEqual(out[0]["files"] if out[0]["objective"] == "cn.c.af.x" else out[1]["files"],
+                         ["content/outline/kr_vs_harrison/cardiology.yaml"])
+        self.assertEqual(self.cq._krdiffs(concepts, {}, ([], reg)), [])
+
+    def test_kr_diff_fields_shape(self):
+        import concepts as cs
+        self.assertEqual(cs.kr_diff_errors({"kr_diffs": ["diff.c.af.a"], "kr_diffs_skip": ["diff.c.af.c"]}), [])
+        self.assertTrue(cs.kr_diff_errors({"kr_diffs": "diff.c.af.a"}))             # 목록이어야 한다
+        self.assertTrue(cs.kr_diff_errors({"kr_diffs": ["af-a"]}))                  # diff.<과>.<주제>.<요점>
+        self.assertTrue(cs.kr_diff_errors({"kr_diffs": ["diff.c.af.a"], "kr_diffs_skip": ["diff.c.af.a"]}))
 
     def test_wrong_note_fills_answers_missing_from_learning_log(self):
         """학습 흐름(2026-09-18) 전의 오답은 오답 목록에만 있다 — 큐가 그것도 집어야 한다(2026-09-23)."""

@@ -353,6 +353,10 @@ label_basis(dataset_expert|published_figure)·reference·paper·doi·paper_cited
 (같으면 쓰지 않는다 — 「시험 쟁점」의 「시험에서는」과 겹치지 않게, 쟁점이 아닌 출제 맥락만). `checklists: [{name, items: [{label, points}] 또는 [글], cutoffs}]`:
 항목을 세어 판정하는 점수 · 진단 기준(CURB-65 · CHA2DS2-VASc · Wells · Jones). 수치와 항목은 대조한 출처의 것만 적고 `[[출처: 위치]]` 를 단다.
 둘 다 학습서 · 앱이 상자로 그린다(`note_parts.py` · 판형 12).
+**국내 vs 해리슨(2026-11-25, 선택)** — `kr_diffs`: 이 정리본에 넣은 국내 지침 ↔ 해리슨 22판 대조 항목 id 목록(`content/outline/kr_vs_harrison/*.yaml`
+의 `diff.<과>.<주제>.<요점>`) · `kr_diffs_skip`: 같은 슬롯이지만 이 목표와 무관해 넣지 않은 항목 id. 한 id 는 둘 중 하나에만. 큐 `[krdiff]` 가
+정리본 `outline` 슬롯에 닿는 차이 항목(`same` 제외) 가운데 둘 다에 없는 것을 낸다. id 가 대조 파일에 있는지는 `kr_guidelines.py --check` 가 본다.
+넣는 자리는 「시험 쟁점」 맥락 카드(시험 기준 = 국내 · 다른 기준 = 해리슨)와 `exam_points` — 규칙 `/gen-concept` 「국내 vs 해리슨」.
 **기초 뿌리(2026-11-21)** — 임상 정리본: `roots`(그 판단 밑의 기초 정리본 id 목록 — 있어야 하고 `layer: basic` 이어야 한다) 또는
 `roots_none`(기초 기전이 없는 이유 한 줄). 둘을 함께 쓰지 않는다. 기초 정리본: `layer: basic`(없으면 clinical) ·
 `discipline`(physiology/pathology/pharmacology/biochemistry/genetics/microbiology/immunology/anatomy/histology/embryology —

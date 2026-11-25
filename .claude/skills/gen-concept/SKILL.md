@@ -23,6 +23,8 @@ python pipelines/concept_queue.py --limit <오늘 상한>
   줄 끝에 「상위 20 소급」이 붙은 것은 옛 오답이지만 반복 오답 상위 20개라 예외로 올라온 것이다(2026-11-23) — 처리는 같다.
 - 오답은 학습 기록(`state/learning_sync/events.json`)과 **오답 목록(`state/wrong_sync/*.json`)** 두 곳에서 온다(2026-09-23).
   학습 흐름(2026-09-18) 전의 오답은 오답 목록에만 있고, 대개 학습 목표가 없어 `[link]` 로 나온다 — 목표부터 붙인다.
+- `[krdiff]` — 정리본 슬롯에 국내 지침 ↔ 해리슨 22판 차이 항목(`content/outline/kr_vs_harrison/`)이 있는데 아직 반영(`kr_diffs`)도
+  제외(`kr_diffs_skip`) 표시도 없다(note·link·touch 가 비었을 때만 나온다 · 오답이 걸린 정리본 먼저) → 아래 「국내 vs 해리슨(`[krdiff]`)」.
 - `[restyle]` — 판형 2(`note_form: 2`)로 아직 옮기지 않은 옛 정리본(note·link·touch 가 비었을 때만 나온다).
   **새로 쓰지 않고 있는 내용을 판형 2 로 다시 배치**한다 — 아래 「판형 2」 절 · 「판형 2로 옮기기」.
 - `[gap]` — 오답과 무관한 기본틀 빈 자리(오답 큐·`[restyle]` 이 비었을 때만 나온다). 이미 단원이 있는 책마다
@@ -151,6 +153,34 @@ python pipelines/outline.py --harrison <슬롯>     # 대조할 22판 장 · 인
 
 임상 책에 실린 정리본이 기초 학문 성격이면(조직 소견 · 약물 상호작용 기전처럼) `discipline: <학문>` 꼬리표만 단다 — 본문은 그 임상 책에
 그대로 있고, 학문별 책의 목차 쪽 「다른 책에 실린 단원」에 제목이 적힌다.
+
+## 국내 vs 해리슨(`[krdiff]`) — 국시 기준과 USMLE 기준을 갈라 적는다(2026-11-25 사용자 결정)
+
+사용자 지시: 「옛 정리본 · 복습용 학습서에도 국내 · 미국 기준을 구분해서 넣고, 아직 정리되지 않은 정리본은 이걸 확인해서 만든다」.
+원본은 과별 대조 파일 `content/outline/kr_vs_harrison/<과>.yaml` — 항목마다 국내 지침 원문 쪽(`kr_cite`) · 해리슨 22판 쪽(`h22_cite`) ·
+`kr_says` · `harrison_says` · `kmle_rule` · `usmle_rule` 이 있다. 지침 서지(doi · pmid · 누리집)는 `content/outline/kr_guidelines.json`.
+**새로 대조하지 않는다** — 이 파일에 없는 차이를 기억으로 만들지 않는다(대조 파일을 늘리는 일은 PC 세션 `kr_guidelines.py --batch <과>`).
+
+- **언제** — 큐 `[krdiff]` 한 줄 = 정리본 하나. 그리고 `[note]` · `[gap]` 으로 **새로** 쓰거나 `[restyle]` · `[touch]` 로 손보는 정리본도
+  `python pipelines/concept_queue.py --json` 의 `krdiff` 에 그 id 가 있으면 같은 처리를 함께 한다(다음 실행에 다시 안 나오게).
+- **항목마다 하나로 끝낸다** — 줄에 적힌 항목(`items`)을 대조 파일에서 읽고
+  - 이 정리본의 학습 목표 · 본문이 닿는 차이 → **넣고** frontmatter `kr_diffs` 에 id 를 더한다.
+  - 같은 슬롯이지만 이 목표와 무관(예: 항응고 정리본에 율동전환 시간 항목) → `kr_diffs_skip` 에 id 를 더한다. 둘에 함께 두지 않는다.
+- **넣는 자리**
+  - `## 시험 쟁점 — 충돌·맥락·새 근거` 에 **맥락** 항목 하나(네 칸 그대로): `시험 기준:` = `kmle_rule` 의 국내 기준 + `[[<국내 출처 id>: p.N]]` /
+    `다른 기준:` = `harrison_says` 의 해리슨 22판 기준 + `[[harrison-22: N장 p.N]]` / `왜 다른가:` = `kr_says` · `harrison_says` 에 적힌 까닭(국내 내성률 ·
+    발생률 · 급여 기준 · 근거 시험 — 대조 파일에 없으면 「대조 파일에 적힌 까닭 없음」) / `시험에서는: KMLE … · USMLE …`(`kmle_rule` · `usmle_rule`).
+  - 본문 · `criteria` · 표가 그 기준을 **수치로** 말하고 있으면 그 줄을 국내 기준으로 고치고 해리슨 값은 쟁점 카드로 옮긴다. 해리슨만 인용해 쓴
+    문장을 지우지 말고 「해리슨은 …」으로 남긴다(앞 판의 대조 기록이다).
+  - 쟁점이 아닌 출제 맥락(국내만 있는 제도 · 급여 · 국내 미도입 약)은 `exam_points: {kmle: "…", usmle: "…"}` 한 줄씩.
+  - 학습서(PDF)와 앱은 이 칸들을 그대로 그린다(판형 12 — 쟁점 카드 · 「KMLE / USMLE 포인트」). 따로 상자를 만들지 않는다.
+- **출처** — 국내 지침을 `sources` 에 하나 더한다: `kind: guideline` · `citation`(레지스트리 `title` · `journal`) · `doi` · `pmid`(있으면) 또는 `url`
+  (doi 가 없으면 `https://` + `source_portal`). `checked` 에 「kr_vs_harrison <항목 id> 의 원문 대조(쪽)에서 옮김」, `verified: citation`
+  (이 정리본을 쓰면서 드라이브 `_가이드라인` PDF 그 쪽을 직접 읽었으면 `text`). 항목이 `verified: pending` 이면 시험 기준으로 쓰지 않는다 —
+  쟁점 카드의 「다른 기준」에 `[[?<출처 id>]]` 로만, 또는 `kr_diffs_skip`.
+- **문항은 고치지 않는다** — 정리본을 국내 기준으로 바꿔 기존 문항의 해설 · 정답과 어긋나면 보고에 「문항 수정 후보(문항 id · 줄 · 국내 기준 · 쪽)」로만
+  남긴다(문항 본문 수정은 사용자 승인 뒤).
+- 검증: `python pipelines/kr_guidelines.py --check`(적은 id 가 대조 파일에 있는가) + 평소의 `concepts.py`.
 
 ## `[figure]` — 정리본 그림(심전도·조직·영상 사진, 2026-09-27 사용자 요청)
 
