@@ -1742,8 +1742,29 @@
    "date": "2026-11-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1986": {
+   "id": "kmle-2026-1986",
+   "exam": "kmle",
+   "subject": "Pulmonology",
+   "step": "",
+   "type": "A Year of Worsening Breathlessness and Dry Cough in a Nonsmoking Man Who Keeps Many Birds on His Balcony",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 진단은?",
+   "chosen": 3,
+   "chosenText": "앵무병 폐렴",
+   "answer": 0,
+   "answerText": "과민성 폐렴",
+   "coreNote": "",
+   "differ": "",
+   "decision": "비둘기를 5년간 기르며 노출된 뒤 1년간 진행한 호흡곤란, 새를 돌본 날의 열감이 있다. 상·중엽 위주의 간유리 음영·소엽 중심 결절·공기 걸림과 기관지 폐포 세척액 림프구 48 %가 함께 있어 과민성 폐렴이며, 항원 회피가 치료의 핵심이다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-25",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T07:26:13.059Z"
+ "updated": "2026-11-25T12:17:39.068Z"
 }
