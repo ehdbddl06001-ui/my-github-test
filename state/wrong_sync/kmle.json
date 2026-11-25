@@ -1784,8 +1784,29 @@
    "date": "2026-11-25",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1980": {
+   "id": "kmle-2026-1980",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Three Months of Night-time Pain and Swelling above the Knee in a Fifteen-year-old Boy",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 진단은?",
+   "chosen": 4,
+   "chosenText": "골거대세포종",
+   "answer": 1,
+   "answerText": "골육종",
+   "coreNote": "",
+   "differ": "",
+   "decision": "15세 청소년의 대퇴골 원위 골간단에 골 파괴와 골 형성이 섞이고, 햇살 모양 골막 반응과 골막 들림 삼각형, 연부조직 종괴가 있어 골육종이다. 열·염증 수치 상승이 없어 골수염 가능성이 낮고, 골간이 아니라 골간단 골 형성 병변이라 유잉 육종보다 골육종을 가리킨다 — 조직검사로 확진한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T12:24:18.519Z"
+ "updated": "2026-11-25T23:05:41.594Z"
 }
