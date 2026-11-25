@@ -1,0 +1,28 @@
+# 국내 가이드라인 vs 해리슨 22판 원문 대조 파일 템플릿
+# 저장 위치: content/outline/kr_vs_harrison/<subject_slug>.yaml (예: endocrinology.yaml)
+# 검증 명령: python pipelines/kr_guidelines.py --check
+#
+# 규칙(CLAUDE.md 원문 대조 원칙):
+# - verified: text 는 반드시 두 원문(Harrison 22e H22_<장> + 국내 지침 PDF)을
+#   실제로 읽고 쪽 번호(p.N)를 적은 경우에만 사용한다.
+# - 확인 전 초안은 verified: pending 으로 둔다.
+# - diff_type 허용값: threshold | algorithm | first_line | screening | terminology | legal | same
+
+subject: 내분비내과
+subject_slug: endocrinology
+updated: 2026-11-25
+items: []
+# 작성 예시:
+#   - id: diff.endo.thyroid-nodule.fna-cutoff
+#     slot: h385
+#     h22_chapter: 397
+#     h22_cite: "[[harrison-22: 397장 p.3042]]"
+#     kr_guideline_id: kr-kta-nodule-2024
+#     kr_cite: "2024 대한갑상선학회 갑상선결절 진료권고안 p.12"
+#     diff_type: threshold
+#     topic: "낮은 의심(K-TIRADS 3) 갑상선 결절의 FNA 크기 기준"
+#     harrison_says: "해리슨 22판 원문 확인 내용"
+#     kr_says: "국내 지침 원문 확인 내용"
+#     kmle_rule: "KMLE 문항·정리본은 2024 KTA(K-TIRADS 3: >2.0 cm) 기준을 적용한다."
+#     usmle_rule: "USMLE 문항은 해리슨 22판/ATA 기준을 적용한다."
+#     verified: text

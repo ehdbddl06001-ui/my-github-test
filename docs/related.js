@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-24",
+ "generated": "2026-11-25",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -115,12 +115,12 @@ window.MEDKOS_RELATED = {
     "term": "cardiovascular disease"
    },
    {
-    "id": "paper-2026-0093",
+    "id": "paper-2026-0985",
     "how": "a",
     "term": "cardiovascular disease"
    },
    {
-    "id": "paper-2026-0493",
+    "id": "paper-2026-0093",
     "how": "a",
     "term": "cardiovascular disease"
    }
@@ -1378,14 +1378,6 @@ window.MEDKOS_RELATED = {
     "cn.cardio.nyha-class.functional-assessment"
    ]
   },
-  "paper-2026-0493": {
-   "t": "Referral patterns in the CKD.QLD Registry: A call for revisiting the definition of late referral",
-   "j": "PloS one",
-   "d": "2026",
-   "c": [
-    "cn.cardio.cvd-epidemiology.transition-risk-burden"
-   ]
-  },
   "paper-2026-0504": {
    "t": "Burden and Impact of Infections in Acute Pancreatitis: Insights from the National Inpatient Sample",
    "j": "Journal of gastrointestinal and liver diseases : JGLD",
@@ -1916,6 +1908,14 @@ window.MEDKOS_RELATED = {
    "c": [
     "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
+   ]
+  },
+  "paper-2026-0985": {
+   "t": "Artificial intelligence for breast arterial calcification detection on mammography: A systematic review of diagnostic accuracy",
+   "j": "PLOS digital health",
+   "d": "2026-11",
+   "c": [
+    "cn.cardio.cvd-epidemiology.transition-risk-burden"
    ]
   }
  },
