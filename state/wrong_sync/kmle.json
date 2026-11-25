@@ -1721,8 +1721,29 @@
    "date": "2026-11-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1990": {
+   "id": "kmle-2026-1990",
+   "exam": "kmle",
+   "subject": "Cardiology",
+   "step": "",
+   "type": "Three Days of Fast Irregular Palpitations in a Man Who Had a Large Heart Attack Two Years Ago",
+   "style": "",
+   "modality": "",
+   "question": "심박수 조절을 위해 이 환자에게 투여하면 안 되는 약물은?",
+   "chosen": 3,
+   "chosenText": "아미오다론",
+   "answer": 2,
+   "answerText": "딜티아젬",
+   "coreNote": "",
+   "differ": "",
+   "decision": "혈역학적으로 안정한 빠른 심방세동이고, 2년 전 전벽 경색 뒤 박출률이 30 %인 박출률 감소 심부전 환자다. 비디하이드로피리딘 칼슘통로차단제는 음성 변력 작용으로 심부전을 악화시켜 금기이고, 칼륨·신기능이 정상이라 디곡신, 울혈이 없어 베타차단제, 그리고 아미오다론은 쓸 수 있다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T06:16:34.519Z"
+ "updated": "2026-11-25T07:26:13.059Z"
 }
