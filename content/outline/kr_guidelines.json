@@ -192,7 +192,7 @@
       "pmid": "",
       "drive_path": "KSH_hypertension_2026.pdf",
       "drive_doc_id": "1gw91RFfI-wCT5S4KPWPw7ucDSuH95kv1",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["고혈압", "hypertension", "목표혈압", "강압제"],
       "check_points": [
         "진단 기준(140/90 vs ACC/AHA 130/80)",
@@ -222,7 +222,7 @@
       "pmid": "",
       "drive_path": "KHRS_AF_2024_part1_general.pdf",
       "drive_doc_id": "1VZCfsnZWmoM1Ib9R5X1zIX4h5GmMrp8x",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["심방세동", "atrial-fibrillation", "NOAC", "CHA2DS2", "항응고"],
       "check_points": [
         "CHA2DS2-VASc 항응고 시작 점수 및 성별·연령 쟁점",
@@ -252,7 +252,7 @@
       "pmid": "37161680",
       "drive_path": "KSHF_heartfailure_2022_part1_definition-diagnosis.pdf",
       "drive_doc_id": "1PlOaAjUnXIUXyRPGyFouSMKanr8PXIcB",
-      "status": "ready",
+      "status": "compared",
       "keywords": ["심부전", "heart-failure", "HFrEF", "HFpEF", "ARNI"],
       "check_points": [
         "HFrEF 4대 핵심약물(ARNI/ACEi·BB·MRA·SGLT2i) 적용",

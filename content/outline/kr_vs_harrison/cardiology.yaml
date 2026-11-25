@@ -1,0 +1,465 @@
+# 국내 가이드라인 vs 해리슨 22판 원문 대조 — 순환기내과
+# 형식: content/outline/kr_vs_harrison/_template.yaml · 검증: python pipelines/kr_guidelines.py --check
+# verified: text = 두 원문(해리슨 22판 H22_<장> 문서의 인쇄쪽 표지 + 국내 지침 PDF 인쇄쪽)을 이번 대조에서 직접 읽은 항목만.
+# 국내 지침 원문: 드라이브 `_가이드라인` 폴더(파일 ID 는 content/outline/kr_guidelines.json).
+# 급성관상동맥증후군(kr-ksc-acs)·정맥혈전색전증(kr-ksth-vte)은 원문 확보 뒤 이 파일에 덧붙인다.
+# 해리슨 288장 p.2147 당뇨병 목표 「<130/90」은 Doc 표기 그대로이며 인쇄본 오탈자 가능성이 있다(항목 usmle_rule 참고).
+subject: 순환기내과
+subject_slug: cardiology
+updated: '2026-11-25'
+items:
+- id: diff.cardio.hypertension.diagnostic-threshold
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2134]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.21–22
+  diff_type: threshold
+  topic: 고혈압 진단 역치(진료실 혈압)
+  harrison_says: ACC/AHA 분류(Table 288-1)를 따른다 — Stage 1 hypertension 130–139 or 80–89 mmHg, Stage 2 hypertension ≥140 or ≥90 mmHg. 즉 진료실 혈압 130/80 mmHg 이상부터 고혈압이다. 두 번 이상 방문에서 두 번 이상 잰 평균으로 분류한다("average of two or more readings at two or more visits").
+  kr_says: 수축기혈압 140 mmHg 이상 또는 이완기혈압 90 mmHg 이상을 '고혈압'으로 분류한다(표1). ACC/AHA 2017·2025 는 130/80 이상을 고혈압으로 정의하지만 ESH 2023·ESC 2024·JSH 2025 와 마찬가지로 2026 개정판도 140/90 기준을 그대로 유지하였다.
+  kmle_rule: KMLE 문항·정리본은 진료실 혈압 140/90 mmHg 이상을 고혈압으로 진단한다(130–139/80–89 는 고혈압이 아니라 고혈압전단계).
+  usmle_rule: USMLE 문항은 ACC/AHA 기준으로 130/80 mmHg 이상(Stage 1)부터 고혈압으로 본다.
+  verified: text
+- id: diff.cardio.hypertension.bp-categories
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2134]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.21
+  diff_type: terminology
+  topic: 혈압 범주 이름과 경계(정상 위 구간 · 1·2기)
+  harrison_says: Normal BP <120 and <80; Elevated BP 120–129 and <80; Stage 1 hypertension 130–139 or 80–89; Stage 2 hypertension ≥140 or ≥90 (Table 288-1). SBP·DBP 범주가 다르면 높은 쪽을 택한다.
+  kr_says: 정상혈압 <120 그리고 <80; 주의혈압 120~129 그리고 <80; 고혈압전단계 130~139 또는 80~89; 1기 고혈압 140~159 또는 90~99; 2기 고혈압 ≥160 또는 ≥100; 수축기단독고혈압 ≥140 그리고 <90; 이완기단독고혈압 <140 그리고 ≥90 (표1). 두 기준이 상이하면 더 높은 범주를 적용한다(p.22).
+  kmle_rule: KMLE 문항·정리본은 정상혈압/주의혈압/고혈압전단계/1기(140–159/90–99)/2기(≥160/≥100) 다섯 범주를 쓴다 — 'Elevated BP'=주의혈압, ACC/AHA 'Stage 1'(130–139/80–89)=고혈압전단계, 2기는 160/100 부터.
+  usmle_rule: USMLE 문항은 Normal/Elevated/Stage 1(130–139 or 80–89)/Stage 2(≥140 or ≥90) 네 범주를 쓴다.
+  verified: text
+- id: diff.cardio.hypertension.isolated-diastolic
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2134]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.21
+  diff_type: terminology
+  topic: 이완기단독고혈압(IDH) 분류
+  harrison_says: 따로 범주를 두지 않는다. Table 288-1 의 Stage 1·2 가 'or' 기준이고 "When the SBP and DBP readings are in different categories of BP, the higher classification should be chosen" — 수축기 <130 이어도 이완기 80–89 면 Stage 1, ≥90 이면 Stage 2 고혈압이다. 단독 수축기 고혈압(isolated systolic hypertension)은 노년의 맥압 증가로 흔하다고만 기술한다(p.2135).
+  kr_says: '2026 개정에서 혈압 분류에 이완기단독고혈압을 새로 추가함(p.10 신규추가항목). 수축기혈압 140 mmHg 미만이면서 이완기혈압만 90 mmHg 이상으로 상승한 경우를 ''이완기단독고혈압(isolated diastolic hypertension)''으로 한다(표1: <140 그리고 ≥90).'
+  kmle_rule: KMLE 문항·정리본은 수축기 <140 이면서 이완기 ≥90 mmHg 를 '이완기단독고혈압'으로 부른다(이완기 80–89 는 고혈압전단계).
+  usmle_rule: USMLE 문항은 IDH 를 별도 범주로 묻지 않고, 높은 쪽 범주 원칙에 따라 이완기 80–89 는 Stage 1, ≥90 은 Stage 2 로 분류한다.
+  verified: text
+- id: diff.cardio.hypertension.drug-initiation
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2140–2141]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.62–65
+  diff_type: algorithm
+  topic: 약물치료 시작 기준(위험도별)
+  harrison_says: 'Stage 2(≥140 or ≥90)는 비약물+약물 병행. Stage 1(130–139 or 80–89)은 대부분 비약물치료지만 CVD 병력 또는 ASCVD 고위험(10년 위험 ≥10%, 또는 표현형: stage 1 HTN and age ≥65, or DM, or CKD)이면 약물을 더한다(Fig. 288-3, p.2141). 저위험 stage 1 은 6개월 비약물치료 후 <130/80 미달이면 약 추가가 reasonable(p.2143).'
+  kr_says: 2기 고혈압은 생활요법과 동시에 약물치료(I, A, p.65). 중위험군 또는 고위험군 1기 고혈압은 생활요법과 약물치료 병행(I, A, p.64). 심혈관질환(관상동맥질환·말초혈관질환·복부대동맥류·심부전)이 동반된 고혈압전단계는 약물치료 고려(IIa, B); 당뇨병·만성콩팥병·고혈압성 장기손상이 있는 고위험 고혈압전단계는 3개월 생활요법 후에도 130/80 mmHg 이상이면 약물치료 고려(IIb, B)(권고8, p.62). 저위험군은 3개월 비약물치료 후 미조절 시 약물 고려(IIa, B, p.80).
+  kmle_rule: KMLE 문항·정리본은 140/90 이상에서 위험도에 따라 약을 시작하고(중·고위험 1기·2기 즉시), 130–139/80–89(고혈압전단계)는 심혈관질환 동반 시만 약물 고려, 당뇨·CKD·장기손상 고위험은 3개월 생활요법 뒤 130/80 이상이면 약물 고려로 쓴다.
+  usmle_rule: USMLE 문항은 Stage 1(130–139/80–89)이라도 임상 CVD·10년 ASCVD ≥10%·DM·CKD·65세 이상이면 약을 시작하고, 저위험 Stage 1 은 생활요법 후 재평가한다.
+  verified: text
+- id: diff.cardio.hypertension.general-target
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2146]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.65–66
+  diff_type: threshold
+  topic: 일반 고혈압 환자의 목표혈압
+  harrison_says: '"an SBP/DBP treatment goal of 130/80 mmHg in adults with hypertension, as recommended in the ACC/AHA BP guideline, seems reasonable." 임상 진료에서 만나는 고혈압 환자는 거의 모두 ASCVD 고위험이라 위험도로 목표를 나누지 않는다.'
+  kr_says: 저위험군 및 중위험군 고혈압 환자는 140/90 mmHg 미만으로 조절(권고12, I, A, p.65). 고위험군(무증상 장기손상 또는 위험인자 3개 이상)과 심혈관질환 동반 환자는 130/80 mmHg 미만(권고13, I, A, p.66). 특별한 경우가 아니면 일반적인 목표혈압은 140/90 미만(표13).
+  kmle_rule: KMLE 문항·정리본은 합병증 없는 저·중위험 고혈압의 목표를 <140/90 mmHg, 고위험·심혈관질환·당뇨·CKD·뇌졸중 동반 시 <130/80 mmHg 로 쓴다.
+  usmle_rule: USMLE 문항은 위험도와 무관하게 대부분의 성인 고혈압 목표를 <130/80 mmHg 로 쓴다.
+  verified: text
+- id: diff.cardio.hypertension.elderly-target
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2146–2148]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.67, p.109
+  diff_type: threshold
+  topic: 노인(≥65세) 고혈압 목표혈압
+  harrison_says: '"noninstitutionalized community-dwelling older adults, arbitrarily defined as ≥65 years, where the goal should be to achieve an SBP <130 mmHg." 동반질환이 많고 기대여명이 짧으면 임상 판단·환자 선호로 정한다. p.2148 에도 "desired SBP goal of <130 mmHg".'
+  kr_says: 노인고혈압 환자는 수축기혈압 140 mmHg 미만(권고14, I, A, p.67; 이완기 60 mmHg 이상 유지). 지역사회 65세 이상 노인 SBP <140(I, A); 심혈관질환·만성콩팥병 동반 고위험 노인은 SBP <130 고려 가능(IIb, B); 노쇠·85세 이상·기대여명 3년 이내·증상성 기립성저혈압은 개별화(IIb, C)(권고43, p.109).
+  kmle_rule: KMLE 문항·정리본은 65세 이상 노인의 목표를 수축기 <140 mmHg 로 쓰고, CVD·CKD 동반 고위험 노인만 <130 을 '고려할 수 있다'(IIb)로 쓴다.
+  usmle_rule: USMLE 문항은 지역사회 거주 65세 이상 노인의 목표를 SBP <130 mmHg 로 쓴다.
+  verified: text
+- id: diff.cardio.hypertension.diabetes-ckd-target
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2147]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.67–69
+  diff_type: threshold
+  topic: 당뇨병·만성콩팥병 동반 고혈압 목표
+  harrison_says: '당뇨병: "The recommended antihypertensive treatment target is an SBP/DBP <130/90 mmHg"(원문 그대로 — 이 장의 다른 곳과 ACC/AHA 는 130/80). ACEI 또는 ARB 포함 권고, 대부분 이뇨제 필요. 콩팥병 절은 따로 목표 수치를 주지 않고 ACEI/ARB 중심, eGFR <30 에서도 chlorthalidone 효과(CLICK)를 기술한다.'
+  kr_says: 당뇨병 동반 고혈압은 130/80 mmHg 미만(권고15, I, A, p.67 — 2022년의 저위험 당뇨 140/90 구분을 없앰). 만성콩팥병은 견딜 수 있다면 130/80 mmHg 미만(I, A); 표준화된 혈압측정법으로 측정한 경우 수축기 120 mmHg 미만 고려(IIa, B)(권고17, p.69).
+  kmle_rule: KMLE 문항·정리본은 당뇨병 동반 고혈압 목표를 <130/80 mmHg, CKD 는 <130/80 mmHg(표준화 측정 시 SBP <120 고려)로 쓴다.
+  usmle_rule: USMLE 문항은 당뇨·CKD 동반 고혈압 목표를 <130/80 mmHg 로 쓴다(해리슨 당뇨 절의 '<130/90' 은 인용하지 않는다).
+  verified: text
+- id: diff.cardio.hypertension.cvd-target-same
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2146–2147]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.66
+  diff_type: same
+  topic: 심혈관질환 동반 고혈압 목표 <130/80
+  harrison_says: 'PATIENTS WITH CVD: ACEI·ARB·베타차단제를 흔히 쓰고 "In general, the standard treatment goal of SBP/DBP <130/80 mmHg is indicated if well tolerated."'
+  kr_says: 심혈관질환, 즉 관상동맥질환·말초혈관질환·복부대동맥류·심부전이 동반된 환자에서는 혈압을 130/80 mmHg 미만으로 조절할 것을 권고한다(권고13, I, A).
+  kmle_rule: KMLE 문항·정리본은 관상동맥질환 등 심혈관질환 동반 고혈압의 목표를 <130/80 mmHg 로 쓴다.
+  usmle_rule: USMLE 문항도 CVD 동반 고혈압의 목표를 <130/80 mmHg 로 쓴다.
+  verified: text
+- id: diff.cardio.hypertension.first-line-drugs
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2143–2144]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.81–84
+  diff_type: first_line
+  topic: 1차 항고혈압제 계열 · 이뇨제 선택
+  harrison_says: '"diuretics, CCBs, and ACEIs or ARBs, alone or in combination, are used for initial drug therapy in patients without a compelling indication for use of a beta blocker." 베타차단제는 head-to-head 에서 열등(특히 뇌졸중) — Table 288-4 에서 ''Other Drugs''로 적응증(IHD·HF) 있을 때만. 이뇨제는 "chlorthalidone or indapamide are preferred over shorter acting agents such as hydrochlorothiazide".'
+  kr_says: RAS 억제제, 베타차단제, 칼슘통로차단제, 이뇨제를 고혈압 치료의 1차 약제로 권고(권고28, I, A, p.81). 베타차단제는 적응증(협심증·심근경색 후·HFrEF·심방세동·심박수 조절)이 있으면 초기·병용 사용 권고(I, A); 노인에서는 특별한 적응증이 있을 때만(p.82). 티아지드계 이뇨제는 하이드로클로로티아지드·클로르탈리돈·인다파미드 중 선택 고려(권고29, IIa, B, p.84 — DCP 결과로 2022년의 thiazide-like 선호를 폐지). ARNI 를 고혈압 치료약제로 새로 포함(p.82).
+  kmle_rule: KMLE 문항·정리본은 1차 약제를 RAS 억제제(ACEI/ARB)·베타차단제·CCB·이뇨제 네 계열로 쓰고, 티아지드는 HCTZ·클로르탈리돈·인다파미드 어느 것이나 1차로 인정한다.
+  usmle_rule: USMLE 문항은 1차 약제를 thiazide(-like) 이뇨제·CCB·ACEI/ARB 세 계열로 쓰고, 베타차단제는 강제 적응증이 있을 때만, 이뇨제는 chlorthalidone 을 선호한다.
+  verified: text
+- id: diff.cardio.hypertension.initial-combination
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2145–2146]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.81–82
+  diff_type: algorithm
+  topic: 초기 병용요법 · 단일제형복합제
+  harrison_says: 'Fig. 288-4: "Initial combination drug therapy in most patients, especially in black adults and those with an average SBP >20 mmHg above treatment goal — diuretic or CCB combined with ACEI or ARB — single-pill combinations preferred, if feasible"; 단독요법은 평균 혈압이 130/80 에 가까운 일부 stage 1 에만. 미조절 시 이뇨제+CCB+ACEI/ARB 3제, 이어 MRA.'
+  kr_says: 80세 이하의 2기 고혈압이거나 고위험 1기 고혈압 환자에서는 초치료로 2제 병용요법(RAS 억제제·CCB·이뇨제 중 2가지)을 고려(IIa, B); 2제 병용 시 단일제형복합제 우선 고려(IIa, B); 미조절 시 RAS 억제제+CCB+이뇨제 3제(IIa, B); 80세 이상·노쇠 환자는 단일약제로 시작 고려(IIa, B)(권고28, p.81). 160/100 이상이거나 목표보다 20/10 mmHg 이상 높으면 초기 병용 고려(p.82).
+  kmle_rule: KMLE 문항·정리본은 초기 2제 병용을 '80세 이하 2기 또는 고위험 1기'에서 고려(IIa)하고, 80세 이상·노쇠는 단일제로 시작한다고 쓴다.
+  usmle_rule: USMLE 문항은 대부분의 환자(특히 SBP 가 목표보다 20 mmHg 이상 높을 때)에서 초기 2제 병용(이뇨제 또는 CCB + ACEI/ARB, 가능하면 단일정)을 쓴다.
+  verified: text
+- id: diff.cardio.hypertension.out-of-office-thresholds
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2135]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.42, p.44
+  diff_type: threshold
+  topic: 가정혈압·활동혈압 고혈압 기준
+  harrison_says: '"The BP for recognition of hypertension is the same for office and home BP measurements (SBP ≥130 and DBP ≥80 mmHg)." 진료실 130/80 에 해당하는 활동혈압은 "130/80, 110/65, and 125/75 mmHg for daytime, nighttime, and 24-h". 가정혈압은 아침(복약 전)·저녁 2~3회 평균, 진료 전 약 3일.'
+  kr_says: '가정혈압은 진료실혈압보다 낮게 나타나므로 수축기 135 mmHg 이상 또는 이완기 85 mmHg 이상을 고혈압으로 정의(p.44). 활동혈압 고혈압 기준(그림10, p.42): 일일평균 ≥130/80, 주간평균 ≥135/85, 야간평균 ≥120/70, 아침평균 ≥135/85 mmHg. 진단·백의·가면고혈압 평가에 활동혈압(권고3, I, B)·가정혈압(권고4, I, B) 측정 권고.'
+  kmle_rule: KMLE 문항·정리본은 가정혈압 ≥135/85, 주간 활동혈압 ≥135/85, 24시간 ≥130/80, 야간 ≥120/70 mmHg 를 고혈압 기준으로 쓴다.
+  usmle_rule: USMLE 문항은 가정혈압 ≥130/80, 활동혈압 주간 ≥130/80·야간 ≥110/65·24시간 ≥125/75 mmHg 를 쓴다.
+  verified: text
+- id: diff.cardio.hypertension.pregnancy-target-same
+  slot: h277
+  h22_chapter: 288
+  h22_cite: '[[harrison-22: 288장 p.2140]]'
+  kr_guideline_id: kr-ksh-hypertension-2026
+  kr_cite: 2026 고혈압 진료지침(대한고혈압학회 제6판) p.125, p.12
+  diff_type: same
+  topic: 임신 중 고혈압 목표 <140/90 · ACEI/ARB 금기
+  harrison_says: '"Clinical trials have failed to demonstrate a benefit for more intensive therapy to a SBP/DBP <130/80 mmHg compared to <140/90 mmHg." ACEI·ARB 는 기형 유발로 피하고, labetalol·nifedipine·methyldopa 를 안전한 1차 약으로.'
+  kr_says: 만성고혈압 또는 임신고혈압이 있는 임신부는 ≥140/90 mmHg 에서 약물치료 시작(I, B), 혈압 목표 140/90 mmHg 미만 유지(I, B), 과도한 강하(이완기 <80) 비권고(III, C), 중증(≥160/110) 즉각 입원(I, C)(권고52). 임신을 계획하는 여성은 아테놀롤·ACE 억제제·ARB·니트로프루시드·MRA 를 피한다(p.12).
+  kmle_rule: KMLE 문항·정리본은 임신 중 고혈압의 약물 시작 ≥140/90, 목표 <140/90 mmHg 로 쓰고 ACEI/ARB 는 금기로 쓴다.
+  usmle_rule: USMLE 문항도 임신 고혈압 목표를 <140/90 mmHg(더 낮춰도 이득 없음)로, ACEI/ARB 금기 · labetalol/nifedipine/methyldopa 사용으로 쓴다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.anticoag-start-threshold
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1950]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.40
+  diff_type: threshold
+  topic: CHA2DS2-VASc 항응고 시작 점수와 권고 강도
+  harrison_says: CHA2DS2-VASc 로 뇌졸중 위험을 추정하고, 미국·유럽에서는 점수 ≥1 이면 항응고를 권고한다 — 단 유일한 위험인자가 여성일 때는 제외("Anticoagulation is currently recommended in the United States and Europe for patients with a score of ≥1 unless the lone risk factor is female gender"). 1점과 2점 이상의 권고 강도를 나누지 않는다.
+  kr_says: 저위험군(남 0점·여 1점)은 항혈전제를 투여하지 않는다(I, A). 남 ≥2점·여 ≥3점은 항응고제 투여가 추천된다(I, A). 남 1점·여 2점은 항응고제 투여를 고려해야 하며 임상적 득실과 환자 선호도에 따라 개별화한다(IIa, B).
+  kmle_rule: KMLE 문항·정리본은 남 ≥2점·여 ≥3점 = 항응고 추천(I), 남 1점·여 2점 = 고려(IIa, 개별화), 남 0점·여 1점 = 항혈전제 투여하지 않음 의 세 단계를 적용한다.
+  usmle_rule: USMLE 문항은 CHA2DS2-VASc ≥1(여성 단독 제외)이면 항응고 권고라는 해리슨(미국·유럽) 기준을 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.asian-age-cutoff
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1950]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.29 (표 8); PART 3 p.379
+  diff_type: threshold
+  topic: CHA2DS2-VASc 연령 점수 — 아시아인 연령 기준
+  harrison_says: '그림 258-3 의 CHA2DS2-VASc 표: Age >75 = 2점, Age >65 = 1점, Sex category (F) = 1점. 인종별 연령 보정 언급 없음.'
+  kr_says: '표 8: 나이 75세 이상 2점, 65-74세 1점. 65-74세 항목 설명에 「최근 아시아에서의 연구에서 50-55세 이상에서 뇌졸중 위험도가 증가하므로 아시안 환자에는 조정된 CHA2DS2-VASc score가 사용 가능함」. PART 3 p.379 도 아시아인은 50~55세를 넘을 때부터 뇌경색 발생률이 증가해 점수 수정 필요성이 제기되었다고 적는다(권고 등급 없는 서술).'
+  kmle_rule: KMLE 문항·정리본은 표준 점수(75세 이상 2점, 65-74세 1점)로 계산하고, 아시아인 연령 조정 점수는 「사용 가능」한 보조 정보로만 다룬다(정답 근거로 쓰지 않는다).
+  usmle_rule: USMLE 문항은 65세 1점·75세 2점의 표준 CHA2DS2-VASc 연령 기준을 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.noac-over-warfarin
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1950]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.39-40; PART 3 p.379
+  diff_type: same
+  topic: 항응고제 선택 — NOAC 우선
+  harrison_says: dabigatran·rivaroxaban·apixaban·edoxaban 은 각 시험에서 와파린에 비열등했고, 통합 분석에서 사망·뇌졸중·주요 출혈·두개내출혈을 0.4–0.7 % 의 작은 절대 차로 줄여 와파린보다 우월했다. 직접 작용 항응고제는 쓰기 쉽고(p.1951) 두개내출혈 위험이 더 낮다(p.1951).
+  kr_says: '항응고제 사용 적응증이 되는 심방세동 환자에서 뇌졸중 예방을 위해 VKA보다 NOAC이 추천된다(I, A). 본문: 「일반적으로 NOAC이 1 차 선택 약제로 추천된다」(p.39). PART 3 p.379: 아시아인에서 와파린 대비 NOAC 의 출혈 감소 효과가 더 두드러졌다.'
+  kmle_rule: KMLE 문항·정리본은 판막(기계판막·중등도 이상 승모판 협착) 환자가 아니면 NOAC 을 1차 선택(I, A)으로 둔다.
+  usmle_rule: USMLE 문항도 비판막성 AF 의 항응고 1차 선택을 DOAC 으로 둔다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.valvular-warfarin
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1950]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.90
+  diff_type: same
+  topic: 기계판막·승모판 협착 동반 AF 는 와파린
+  harrison_says: '"Warfarin is required for patients with rheumatic mitral stenosis or mechanical heart valves." 류마티스 심질환 AF 에서 와파린이 rivaroxaban 보다 사건이 적었고, 기계판막에서 apixaban·dabigatran 은 와파린에 비열등을 입증하지 못했다(p.1950-1951).'
+  kr_says: NOAC는 기계판막을 이식 받은 환자에서는 금기이다(III, B). 중등도 이상의 승모판막 협착증이 동반된 심방세동 환자에서 NOAC의 사용은 권고되지 않는다(III, C).
+  kmle_rule: KMLE 문항·정리본은 기계판막·중등도 이상 승모판 협착 동반 AF 에서 NOAC 을 오답(III)으로, VKA 를 정답으로 둔다.
+  usmle_rule: USMLE 문항은 기계판막·류마티스 승모판 협착 동반 AF 에 warfarin 을 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.noac-dose-reduction-dabigatran-edoxaban
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1951]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 3 p.319 (표 4)
+  diff_type: threshold
+  topic: NOAC 감량 기준 — 다비가트란 연령·신기능, 에독사반 CrCl 하한
+  harrison_says: '표 258-2: dabigatran 110 mg bid 는 age ≥80 years, concomitant verapamil, or increased bleeding risk. rivaroxaban 15 mg qd 는 CrCl 15–49 mL/min. apixaban 2.5 mg bid 는 age ≥80, body weight ≤60 kg, serum creatinine ≥1.5 mg/dL 중 2개 이상. edoxaban 30 mg qd 는 CrCl 30–50 mL/min, body weight ≤60 kg, 또는 dronedarone·cyclosporine·erythromycin·ketoconazole 병용 중 하나.'
+  kr_says: '표 4: 다비가트란 110 mg 하루 2회 사용 — CrCl 30-50 mL/min 나이 ≥ 75세(원문 표에서 두 조건 사이에 글머리표가 없어 「그리고/또는」이 분명치 않다), 베라파밀 사용, 출혈 위험도 증가. 리바록사반 15 mg — CrCl 15-49 mL/min, 출혈 위험도 증가(항혈소판제 사용). 아픽사반 2.5 mg — 나이 ≥80세·몸무게 ≤60 Kg·혈청 크레아티닌 ≥1.5 mg/dL 중 2가지 이상. 에독사반 30 mg — CrCl 15-50 mL/min, 몸무게 ≤60 Kg, 드로네다론·사이클로스포린·에리스로마이신·케토코나졸 동시 사용 중 하나 이상. 에독사반 최소용량 15 mg — 출혈 위험성이 높은 고령자의 경우.'
+  kmle_rule: KMLE 문항·정리본은 국내 표 4 를 적용한다 — 다비가트란 저용량 기준에 나이 ≥75세·CrCl 30-50 이 들어간다(표의 글머리 배치상 두 조건의 결합 방식은 원문 확인 필요), 에독사반 감량 CrCl 하한은 15 mL/min. 아픽사반 3기준 중 2개는 공통이다.
+  usmle_rule: USMLE 문항은 해리슨 표 258-2(다비가트란 age ≥80, 에독사반 CrCl 30–50)를 적용하고, 아픽사반 2-of-3 규칙을 핵심으로 둔다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.low-body-weight-noac
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1951]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 3 p.319, p.377
+  diff_type: first_line
+  topic: 저체중(≤60 kg)·고령 환자의 NOAC 선택
+  harrison_says: '체중은 표 258-2 의 감량 기준으로만 나온다(apixaban: ≤60 kg 가 2-of-3 기준 중 하나, edoxaban: ≤60 kg 단독으로 감량). 저체중에서 특정 약을 선호하라는 서술은 없다.'
+  kr_says: '표 4 주: 「아픽사반과 에독사반이 60 kg 이하 저체중 환자와 고령 환자에서 선호되는 약제임」(p.319). 12.6: 60 kg 이하는 에독사반·아픽사반의 감량 기준이고 리바록사반·다비가트란은 체중과 큰 관련성이 없으며, 아픽사반·에독사반은 저체중에서 와파린 대비 일관된 효능·안전성을 보여 선호될 수 있다. 대규모 시험에 아시아인이 적게 포함되어 저체중 데이터는 부족하다(p.377, 권고 등급 없음).'
+  kmle_rule: KMLE 문항·정리본은 60 kg 이하 저체중·고령 AF 의 NOAC 으로 아픽사반·에독사반을 선호 약제로 둔다(국내 표 4 주석 — 권고 등급 없음).
+  usmle_rule: USMLE 문항은 체중을 약제 선택이 아니라 apixaban·edoxaban 감량 기준(≤60 kg)으로만 묻는다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.esrd-dialysis-anticoag
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1951]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 3 p.373-374
+  diff_type: algorithm
+  topic: 말기 신질환·투석 환자의 항응고
+  harrison_says: '"Limited experience with apixaban and rivaroxaban demonstrates safety and efficacy in patients undergoing chronic hemodialysis for end-stage kidney disease." dabigatran·rivaroxaban·apixaban 은 신배설이라 중등도 신기능 저하에서 용량 조절이 필요하다.'
+  kr_says: 말기 신질환(CrCl <15 mL/min 또는 투석)에서는 와파린과 NOAC 모두 임상적 이득의 근거가 부족하고 출혈만 늘린다는 연구도 있다. 「결론적으로 현재 말기 신질환 또는 투석을 하는 환자에게 경구용 항응고제를 권고할 근거는 없으며, 환자 개개인의 상황에 맞추어 충분한 상의 후 약제 사용을 결정해야 한다」(p.374). 중증 신질환(CrCl 15-29)에는 응고인자 Xa 억제제를 조심스럽게 사용할 수 있다(p.373).
+  kmle_rule: KMLE 문항·정리본은 투석 AF 에서 항응고를 일률적으로 권고하지 않고 「근거 부족·개별 결정」을 정답 방향으로 둔다(국내 PART 3).
+  usmle_rule: USMLE 문항은 투석 환자에서 apixaban(또는 warfarin) 사용이 가능하다는 해리슨 서술을 적용하되, 신배설률이 높은 dabigatran 은 피한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.rate-control-target-drugs
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1949]] · [[harrison-22: 258장 p.1950]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.42, p.45, p.47
+  diff_type: threshold
+  topic: 심박수 조절 목표와 약제(디곡신의 자리)
+  harrison_says: 적절한 심박수 조절 = 안정 시 <80 beats/min, 가벼운 운동 시 <100 beats/min. 어렵다면 증상이 없고 심실 기능이 정상일 때 안정 시 110 까지 허용; 영구 AF 에서 관대한 조절(<110)은 엄격한 조절과 효과가 같고 달성이 쉽다(p.1950). 급성 조절은 β차단제·verapamil·diltiazem; digoxin 은 추가 약으로 쓸 수 있으나 만성 사용에서 사망 증가 근거가 있어 사용이 줄었다(p.1949).
+  kr_says: 「초기 안정시 심박동수를 110 회/분 이하로 관대하게 심박수를 유지할 것을 추천한다」(IIa, B, p.47). 좌심실 박출률 40 % 이상은 베타차단제·디곡신·베라파밀·딜티아젬이 1차 선택(I, B), 40 % 미만은 베타차단제 그리고/또는 디곡신(I, B). 급성기에는 베타차단제와 딜티아젬/베라파밀을 디곡신보다 우선 선택한다(p.45).
+  kmle_rule: KMLE 문항·정리본은 초기 목표를 안정 시 110회/분 이하(관대한 조절, IIa)로 두고, LVEF ≥40 % 는 β차단제·디곡신·베라파밀·딜티아젬, LVEF <40 % 는 β차단제 ± 디곡신(비DHP CCB 제외)을 적용한다.
+  usmle_rule: USMLE 문항은 해리슨의 「안정 시 <80, 가벼운 운동 시 <100, 무증상·정상 LV 면 <110 허용」 목표와 β차단제·비DHP CCB 우선(digoxin 은 저혈압·HF 의 보조) 기준을 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.ablation-first-line
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1954]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.55, p.59
+  diff_type: algorithm
+  topic: 카테터 절제술 1차 치료 대상 — 고르는 기준
+  harrison_says: '표 258-3(2023 ACC/AHA 인용): 젊고 동반질환이 적은 선택된 유증상 발작성 AF 에서 rhythm control 을 원하면 1차 치료로 절제술이 유용하다(1, A). 그 외 유증상 발작성·지속성 AF 는 1차 절제술이 유용할 수 있다(2a, B). 항부정맥제가 무효·금기·불내·비선호이면 절제술(1, A). 본문: 절제술은 특히 발작성 AF 에서 1차 치료로 여겨진다(p.1952).'
+  kr_says: '주요 재발 위험 요인(유의하게 확장된 좌심방, 고령, 긴 유병기간, 신기능 저하, 기타 심혈관 위험인자)이 없는 발작성 AF 는 증상 개선·지속성 진행 지연을 위해 1차 치료로 절제술 권고(I, A); 이외의 발작성·지속성 AF 는 고려(IIa, B). 약물 실패 후: 발작성 I A, 재발 위험요인 없는 지속성 I A, 있는 지속성 I B (p.59). 본문: 「국내 보험기준과 상충하는 되는 부분이 있어 주의가 필요하다」(p.55).'
+  kmle_rule: KMLE 문항·정리본은 1차 절제술(I)의 대상을 「재발 위험 요인 없는 유증상 발작성 AF」로 두고, 국내 보험 기준과 상충할 수 있음을 함께 적는다.
+  usmle_rule: USMLE 문항은 「젊고 동반질환이 적은 유증상 발작성 AF 는 1차 절제술(Class 1)」 기준을 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.early-rhythm-control
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1951]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.48, p.52
+  diff_type: algorithm
+  topic: 조기 율동 조절(진단 1년 이내)과 무증상 환자
+  harrison_says: 율동 조절 결정은 주로 환자 증상과 선호에 따른다. 첫 진단 1년 이내 조기 율동 조절이 표준 심박수 조절보다 심혈관 사망·뇌졸중 등 심혈관 사건을 줄였다("early rhythm control strategy (within 1 year of initial presentation)"). 율동 조절은 보통 유증상 발작성 AF, 반복 유증상 지속성 AF, 조절 어려운 심박수, 심실 기능 저하·심부전 악화 AF 에서 선택한다.
+  kr_says: 'EAST-AFNET 4: 조기 율동 조절이 심혈관 결과를 21 % 감소(p.48). 절제술은 사망·뇌졸중·주요 출혈을 줄인다는 RCT 가 없어 적응증이 증상 조절 이상으로 확대되기 어렵고 무증상 환자에서는 일반적으로 추천되지 않지만, 「진단 받은 지 1 년 이내의 조기 심방세동의 경우 무증상이더라도 좀 더 적극적으로 카테터 절제술을 포함하여 율동 조절을 고려해 볼 수 있겠다」(p.52, 권고표 등급 없음).'
+  kmle_rule: KMLE 문항·정리본은 율동 조절의 1차 목적을 증상 개선으로 두고, 진단 1년 이내 조기 AF 는 무증상이어도 율동 조절을 고려할 수 있다(본문 서술, 등급 없음)로 적는다.
+  usmle_rule: USMLE 문항은 증상·선호 중심의 rhythm control 선택과 진단 1년 이내 early rhythm control 의 심혈관 사건 감소(EAST-AFNET 4)를 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.cardioversion-time-window
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1949]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.49 (그림 10), p.62
+  diff_type: threshold
+  topic: 항응고 없이 심율동 전환해도 되는 시간 창(48시간 vs 12·24시간)
+  harrison_says: 항응고하지 않은 환자에서 발병 48 h 이내 TEE·심장 CT 없이 전환하는 것은 흔한 관행이다(색전 병력·류마티스 승모판 협착·좌심방 확대 HCM 같은 고위험 제외). 48 h 초과·모름이면 전환 전 3주 이상 항응고 후 전환하고 이후 최소 4주 유지, 또는 TEE/CT 로 혈전을 배제한 뒤 전환하고 최소 4주 항응고. 장기 항응고는 CHA2DS2-VASc 로 정한다.
+  kr_says: '그림 10: 조기 율동 전환 최적 후보군 = 「혈전 색전증 과거력이 없고 AF 발생 12 시간 이내」 또는 「AF발생 24 시간내 CHA2DS2-VASc ≤1 (남) 또는 ≤2 (여)」. 48 시간 이후 전환은 치료적 경구 항응고제 3 주 이상(TEE 로 혈전 없으면 3주 이내 가능). 전환 후 CHA2DS2-VASc 0(남)/1(여)는 단기간(4 주), ≥1(남)/≥2(여)는 장기간 경구 항응고. 본문 p.62: 지속 12 시간 이내이고 뇌졸중 위험이 매우 낮을 때(남 0, 여 1)는 4 주 항응고의 이점이 확인되지 않아 개인 특성에 따라 선택적.'
+  kmle_rule: KMLE 문항·정리본은 항응고 없이 바로 전환하는 조건을 「색전 병력 없고 12시간 이내」 또는 「24시간 이내 + 남 ≤1·여 ≤2점」으로 두고, 48시간 이후는 3주 항응고 또는 TEE 를 적용한다.
+  usmle_rule: USMLE 문항은 48시간 기준(48시간 미만 저위험 = 바로 전환, 48시간 이상·모름 = 3주 항응고 또는 TEE, 전환 후 4주 항응고)을 적용한다.
+  verified: text
+- id: diff.cardio.atrial-fibrillation.laa-occlusion
+  slot: h251
+  h22_chapter: 258
+  h22_cite: '[[harrison-22: 258장 p.1951]]'
+  kr_guideline_id: kr-khrs-afib-2024
+  kr_cite: 2024 대한부정맥학회 심방세동 진료지침 PART 1 p.39-40
+  diff_type: algorithm
+  topic: 좌심방이 폐색술의 대상과 권고 강도
+  harrison_says: 경피적 좌심방이 폐색·결찰 기구는 와파린에 비열등해 보이며, 혈전색전 위험은 높지만 장기 경구 항응고의 심각한 출혈 위험이 있는 환자에게 고려한다. Watchman 은 와파린과 비슷한 뇌졸중 예방에 주요 출혈(특히 출혈성 뇌졸중)·전체 사망 감소가 더해지고, 직접 작용 항응고제에도 비열등해 보인다.
+  kr_says: '좌심방이 폐색술은 장기간 항응고제 사용의 금기증(예, 교정가능한 원인이 없는 뇌출혈)이 있는 심방세동 환자에서 뇌졸중 예방을 위해 고려할 수 있다(IIb, B). 수술적 좌심방이 폐색/배제술은 심장수술을 시행하는 뇌졸중 고위험군에서 고려할 수 있다(IIb, C). 5단계 도식: 경구 항응고제 사용이 불가능한 환자의 경우 좌심방이 폐색술을 고려(p.39).'
+  kmle_rule: 'KMLE 문항·정리본은 좌심방이 폐색술을 「장기 항응고 금기(예: 원인 교정 불가 뇌출혈)」 환자의 대안(IIb)으로만 두고, 항응고 가능한 환자의 1차 선택으로 두지 않는다.'
+  usmle_rule: USMLE 문항은 고위험 혈전색전 + 장기 항응고의 심각한 출혈 위험(항응고 부적합) 환자에서 LAA occlusion(Watchman)을 고려하는 기준을 적용한다.
+  verified: text
+- id: diff.cardio.heart-failure.ef-classification
+  slot: h257
+  h22_chapter: 264
+  h22_cite: '[[harrison-22: 264장 p.1977]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 1 Korean Circ J 2023;53:197
+  diff_type: same
+  topic: 박출률에 따른 심부전 분류 기준
+  harrison_says: HFrEF 는 EF ≤40%, HFpEF 는 EF ≥50%, HFmrEF 는 EF 41–49%로 나눈다(p.1977). 같은 장 p.1978 은 HFmrEF 를 'EF between 40 and 50%' 로 적고, AHA/ACC/HFSA 지침은 HFmrEF 분류에 자발적 또는 유발된 좌심실 충만압 상승의 증거를 요구한다고 덧붙인다.
+  kr_says: LVEF ≤40% 는 HFrEF, 41–49% 는 HFmrEF, ≥50% 는 HFpEF 로 정의한다(Table 1). HFrEF·HFmrEF 는 추가 증거가 필요 없고, HFpEF 만 나트륨이뇨펩타이드 상승 또는 이완기능장애·충만압 상승을 시사하는 좌심실 구조·기능 이상을 추가로 요구한다.
+  kmle_rule: KMLE 문항·정리본은 EF ≤40% HFrEF · 41–49% HFmrEF · ≥50% HFpEF 의 세 구간을 적용한다(두 출처 같음).
+  usmle_rule: USMLE 문항은 같은 세 구간(≤40% · 41–49% · ≥50%)을 적용한다.
+  verified: text
+- id: diff.cardio.heart-failure.improved-ef-terminology
+  slot: h257
+  h22_chapter: 264
+  h22_cite: '[[harrison-22: 264장 p.1977]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 2 Korean Circ J 2023;53:218
+  diff_type: terminology
+  topic: 치료 뒤 EF 가 좋아진 HFrEF 의 이름과 정의
+  harrison_says: GDMT 후 EF 가 정상 범위로 좋아진 HFrEF 를 'HF with recovered EF (HFrecEF)' 라 부른다. 증상이 없어진 환자에서 질병 조절 치료를 끊으면 최대 절반이 6개월 안에 증상·EF 저하가 재발한다(p.1977). 숫자 기준(>40%, 10%p 상승 등)은 제시하지 않는다.
+  kr_says: 추적 EF >40%, 이전보다 10% 넘게 개선, 또는 ≥50% 로 개선된 경우 'HF with recovered EF' 로 분류할 수 있으나 '회복' 이라는 말은 부적절할 수 있어 독립 질환군이 아니라 '개선된(improved)' 상태로 보고 표준 치료를 계속한다. GDMT 후 LVEF 가 >40% 로 좋아져도 GDMT 유지 권고(Class I, LOE B). 분류표(Part 1 Table 1)에는 HFimpEF 칸이 따로 없다.
+  kmle_rule: KMLE 문항·정리본은 EF 가 >40% 로 좋아진 HFrEF 를 '개선된 HFrEF' 로 보고 GDMT 를 계속한다(중단 보기는 오답).
+  usmle_rule: USMLE 문항은 'HF with recovered/improved EF' 용어를 쓰되 판단은 같다 — GDMT 를 끊지 않는다.
+  verified: text
+- id: diff.cardio.heart-failure.natriuretic-peptide-cutoffs
+  slot: h257
+  h22_chapter: 264
+  h22_cite: '[[harrison-22: 264장 p.1985]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 1 Korean Circ J 2023;53:202-203
+  diff_type: threshold
+  topic: 나트륨이뇨펩타이드로 심부전 배제하는 기준값
+  harrison_says: BNP·NT-proBNP 는 진단의 '보조 도구' 로, 외래 호흡곤란 환자에서 특히 임상적 불확실성이나 폐질환 동반 시 결정에 도움이 된다(p.1985). 매우 낮은 BNP·NT-proBNP 는 비만이 아닌 환자에서 심부전 배제에 도움이 된다(p.1986). 구체적 배제 기준값은 제시하지 않으며, 비만에서 위음성, 나이·여성·CKD·AF·PE·PAH 에서 상승을 경고한다.
+  kr_says: '의심 심부전에서 BNP·NT-proBNP 를 진단·배제의 첫 검사로 측정(Class I, LOE A, p.202). 비급성: BNP <35 pg/mL 또는 NT-proBNP <125 pg/mL 이면 음성예측도 0.94–0.98 로 배제 가능, 응급실 급성 심부전: BNP <100 pg/mL 또는 NT-proBNP <300 pg/mL 로 배제(p.203, 급성 진단 도표 Figure 3 p.201).'
+  kmle_rule: KMLE 문항·정리본은 비급성 BNP <35 · NT-proBNP <125 pg/mL, 급성 BNP <100 · NT-proBNP <300 pg/mL 를 배제 기준으로 적용한다.
+  usmle_rule: USMLE 문항은 정상(매우 낮은) BNP 가 심부전을 배제한다는 원리만 쓰고, 비만에서의 위음성을 함정으로 본다(해리슨은 수치를 주지 않는다).
+  verified: text
+- id: diff.cardio.heart-failure.np-guided-titration
+  slot: h257
+  h22_chapter: 264
+  h22_cite: '[[harrison-22: 264장 p.1985]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 1 Korean Circ J 2023;53:202
+  diff_type: algorithm
+  topic: BNP 수치로 약 용량 조절하기
+  harrison_says: 나트륨이뇨펩타이드는 만성 심부전의 중증도·예후 판단에 쓰고 '안정된 외래 환자에서 약물 치료의 최적 용량을 정하는 데 도움이 될 수 있다(may help to guide optimal dosing)' (p.1985).
+  kr_says: BNP·NT-proBNP 는 중증도·예후 평가에 유용(Class I, LOE A)하지만, 치료 약물 용량 변경을 위한 BNP·NT-proBNP 측정은 도움이 되지 않을 수 있다(Class III, LOE B).
+  kmle_rule: KMLE 문항·정리본은 BNP 를 예후·중증도 지표로만 쓰고 BNP 수치에 맞춘 용량 조절은 권고하지 않는다(Class III).
+  usmle_rule: USMLE 문항은 BNP 를 진단·예후 지표로 출제하고, BNP 유도 용량 조절을 정답 근거로 쓰지 않는다(해리슨은 '도움이 될 수 있다' 수준).
+  verified: text
+- id: diff.cardio.heart-failure.hfpef-diagnostic-score
+  slot: h257
+  h22_chapter: 264
+  h22_cite: '[[harrison-22: 264장 p.1977]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 1 Korean Circ J 2023;53:209
+  diff_type: algorithm
+  topic: HFpEF 진단 기준과 점수 알고리듬
+  harrison_says: HFpEF 진단은 호흡곤란·체액 저류의 비심장 원인을 배제해야 해서 더 어렵다고만 적고(p.1977), H2FPEF·HFA-PEFF 같은 점수 알고리듬이나 이완기 부하검사는 제시하지 않는다.
+  kr_says: HFpEF 는 ①심부전 증상·징후 ②LVEF ≥50% ③좌심실 이완기능장애·충만압 상승에 맞는 구조·기능 이상의 객관적 증거(NT-proBNP·BNP 상승 포함) 셋을 모두 충족해야 한다. H2FPEF·HFA-PEFF 점수가 도움이 되며, HFA-PEFF 는 ≥5점이면 HFpEF, 2–4점이면 이완기 부하검사 또는 침습적 혈역학 평가(동율동 주요 기준 NT-proBNP >220 또는 BNP >80 pg/mL).
+  kmle_rule: KMLE 문항·정리본은 HFpEF 진단에 세 기준(증상·징후 + LVEF ≥50% + 구조·기능 이상/NP 상승)과 H2FPEF·HFA-PEFF 점수를 적용한다.
+  usmle_rule: USMLE 문항은 EF 보존 + 이완기능장애·충만압 상승 증거 + 비심장 원인 배제로 판단한다(점수 계산은 해리슨 범위 밖).
+  verified: text
+- id: diff.cardio.heart-failure.arni-first-line
+  slot: h258
+  h22_chapter: 265
+  h22_cite: '[[harrison-22: 265장 p.1995]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 2 Korean Circ J 2023;53:219-220
+  diff_type: first_line
+  topic: HFrEF 의 첫 RAS 억제제 — ARNI 대 ACEI
+  harrison_says: 지침은 ACEI·ARB 에 견디는 증상성 HFrEF 환자를 ARNI 로 바꾸도록 권하고, ACEI/ARB 를 써 본 적 없는 de novo 심부전에서 처음부터 ARNI 를 쓰는 것도 혈압이 충분하면 '적절할 수 있다(may also be appropriate)' 는 자료가 나오고 있다. 혈관부종 병력은 금기, ACEI 에서 바꿀 때 36시간 간격(p.1995).
+  kr_says: HFrEF 에서 ARNI 를 표준 치료로 권고하고, 견디지 못하거나 쓸 수 없을 때 ACEI(Class I, LOE A), 둘 다 안 되면 ARB(Class I, LOE A). ACEI·ARB 로 안정적이어도 ARNI 로 교체(Class I, LOE B). 'ARNI 는 현재 ACEI 보다 우선하는 1차 치료로 권고된다(Class I)', 급성 악화로 입원한 신규 진단·ACEI/ARB 미사용 환자에도 1차로 쓸 수 있다. ACEI 에서 바꿀 때 36시간 휴약(p.220).
+  kmle_rule: KMLE 문항·정리본은 HFrEF 의 RAS 억제제 1차를 ARNI 로 하고, ACEI 는 ARNI 를 못 쓸 때, ARB 는 둘 다 못 쓸 때로 적용한다.
+  usmle_rule: USMLE 문항은 ACEI/ARB 를 견디는 증상성 HFrEF 에서 ARNI 로의 교체를 정답으로 하고, ACEI 에서 바꿀 때 36시간 휴약을 적용한다.
+  verified: text
+- id: diff.cardio.heart-failure.gdmt-pillars-sequence
+  slot: h258
+  h22_chapter: 265
+  h22_cite: '[[harrison-22: 265장 p.1994]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 2 Korean Circ J 2023;53:218-220
+  diff_type: same
+  topic: HFrEF 네 기둥 약제와 시작 순서
+  harrison_says: RAAS 차단제(ARNI 포함)·베타차단제·SGLT2 억제제가 약물치료의 기둥이고(p.1992), 지침은 SGLT2 억제제를 ARNI·베타차단제·MRA 와 함께 기초 치료로 본다(p.1996). 베타차단제와 ACEI 중 무엇을 먼저 시작할지는 CIBIS III 에서 결과 차이가 없어 '어느 것을 먼저 시작하는지는 별로 중요하지 않고' 둘 다 제때 목표 용량까지 올리는 것이 중요하다(p.1994). 베타차단제는 carvedilol·bisoprolol·metoprolol succinate 로 한정.
+  kr_says: ARNI 또는 ACEI(불내성 시 ARB)·베타차단제·MRA·SGLT2 억제제가 HFrEF 의 표준 치료(Class I, LOE A, p.218). Figure 1 은 네 약을 나란히 두고 목표·최대 내약 용량까지 점차 증량한다. 고용량 ACEI·ARB 가 꼭 필요하지 않으며 저용량 ACEI 중이라도 베타차단제를 빨리 더하라고 권한다(p.220). 사망률 감소가 입증된 베타차단제는 bisoprolol·carvedilol·metoprolol 서방정(Class I, LOE A), 70세 이상 nebivolol(Class IIa).
+  kmle_rule: KMLE 문항·정리본은 네 약제를 모두 쓰는 것을 표준으로 하고, 고정된 시작 순서를 정답 근거로 삼지 않는다(두 출처 같음).
+  usmle_rule: USMLE 문항도 네 기둥 병용과 생존 이득이 입증된 세 베타차단제만 쓰는 것을 적용하며, 시작 순서는 묻지 않는다.
+  verified: text
+- id: diff.cardio.heart-failure.hfmref-hfpef-treatment
+  slot: h258
+  h22_chapter: 265
+  h22_cite: '[[harrison-22: 265장 p.1987]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 2 Korean Circ J 2023;53:223-224
+  diff_type: algorithm
+  topic: HFmrEF·HFpEF 의 약물 치료와 권고 등급
+  harrison_says: HFpEF 에서 사망률을 확실히 낮춘 약은 없고, MRA·ARB·ARNI 의 입원 감소 효과는 주로 LVEF <0.60 에 국한돼 많은 이가 HFmrEF 를 HFrEF 와 같은 약으로 치료하자고 권한다. SGLT2 억제제 시험이 HFmrEF·HFpEF 에서 심혈관 사망·입원 감소를 뒷받침하고, ARNI·GLP-1 작용제(비만)는 일부 HFpEF 에서 이득 가능(p.1987). 미국·유럽 지침은 SGLT2 억제제를 EF 와 무관한 기초 치료로 받아들였다(p.1988). spironolactone 은 TOPCAT 기준 HFpEF 에 약한 권고(p.1988).
+  kr_says: 'HFmrEF·HFpEF 를 한 묶음으로: 동반질환 선별·치료(Class I, LOE C), 울혈 시 이뇨제(Class I, LOE C), SGLT2 억제제(empagliflozin·dapagliflozin) 당뇨 유무와 무관하게(Class I, LOE B), ARNI(Class IIa, LOE B), MRA(Class IIa, LOE C), ARB·ACEI(Class IIb, LOE C), 베타차단제(Class IIb, LOE C).'
+  kmle_rule: KMLE 문항·정리본은 HFmrEF·HFpEF 의 예후 개선 약 1차를 SGLT2 억제제(Class I)로 하고, ARNI·MRA 는 IIa, ACEI/ARB·베타차단제는 IIb 로 적용한다.
+  usmle_rule: USMLE 문항은 HFpEF 에서 SGLT2 억제제 + 울혈 시 이뇨제 + 동반질환(고혈압·AF·비만) 조절을 정답으로 하고, 사망률을 낮춘다고 입증된 약이 없음을 적용한다.
+  verified: text
+- id: diff.cardio.heart-failure.icd-primary-prevention
+  slot: h258
+  h22_chapter: 265
+  h22_cite: '[[harrison-22: 265장 p.1999]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 2 Korean Circ J 2023;53:225
+  diff_type: threshold
+  topic: 1차 예방 ICD 의 EF 기준과 원인별 등급
+  harrison_says: NYHA II–III 이고 LVEF <35% 이면 원인과 무관하게 예방적 ICD 대상이고, 심근경색 후 최적 치료에도 LVEF ≤30% 이면 증상이 없어도 ICD 가 적절하다. 비허혈성(DANISH)에서는 장기 사망 감소가 유의하지 않았고 60세 미만에서 이득. 심근경색 40일 이내 이식은 이득 없음(2차 예방 제외). 기대여명 <6개월·이식 비대상 NYHA IV 는 신중히(p.1999).
+  kr_says: 허혈성 NYHA II–III, ≥3개월 GDMT 후 LVEF ≤35%, 1년 넘는 생존 기대 시 ICD 권고(Class I, LOE A). 비허혈성은 같은 조건에서 '합리적'(Class IIa, LOE A). 심근경색 40일 이내 ICD 는 권고하지 않음(Class III, LOE A). 약물에 반응 없는 NYHA IV 는 CRT·VAD·이식 후보가 아니면 권고하지 않음(Class III, LOE C).
+  kmle_rule: KMLE 문항·정리본은 ≥3개월 GDMT 후 LVEF ≤35% · NYHA II–III · 1년 넘는 생존 기대를 ICD 기준으로 하고, 허혈성 Class I · 비허혈성 Class IIa 로 구분한다.
+  usmle_rule: USMLE 문항은 최적 약물치료 후 LVEF ≤35% · NYHA II–III 을 원인과 무관하게 ICD 대상으로 하고, 심근경색 후 LVEF ≤30% 는 무증상이어도 ICD, 심근경색 40일 이내는 제외를 적용한다.
+  verified: text
+- id: diff.cardio.heart-failure.crt-qrs-criteria
+  slot: h258
+  h22_chapter: 265
+  h22_cite: '[[harrison-22: 265장 p.1999]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 2 Korean Circ J 2023;53:226
+  diff_type: threshold
+  topic: CRT 의 QRS 폭·LBBB 기준
+  harrison_says: 경증 증상 HFrEF 에서 CRT 이득은 대부분 QRS >149 ms 이고 LBBB 모양인 환자에서 나온다. RBBB 우세·AF·측벽 흉터·ADHF 에서는 이득이 불확실하고, 좁은 QRS 의 비동기는 좋은 표적이 아니다(p.1999). 130–149 ms 구간별 등급은 제시하지 않는다.
+  kr_says: 'Figure 2(동율동, GDMT 에도 증상 지속): LBBB & LVEF ≤35% 에서 QRS ≥150 ms Class I (LOE A), 130–149 ms ''Class II'' (LOE B); non-LBBB & LVEF ≤35% 에서 QRS ≥150 ms Class IIa (LOE B), 130–149 ms Class IIb (LOE B). AF 에서 LVEF ≤35% · QRS ≥130 ms Class IIb. 방실차단으로 심실조율 ≥20% 예상되는 LVEF <40% 는 Class I (LOE A).'
+  kmle_rule: KMLE 문항·정리본은 동율동 · LBBB · QRS ≥150 ms · LVEF ≤35% · GDMT 에도 증상 지속을 CRT Class I 로 적용하고, 130–149 ms 와 non-LBBB 는 낮은 등급으로 본다.
+  usmle_rule: USMLE 문항은 LVEF ≤35% 에 QRS ≥150 ms LBBB 를 CRT 의 가장 확실한 대상으로 적용한다.
+  verified: text
+- id: diff.cardio.heart-failure.iron-deficiency
+  slot: h258
+  h22_chapter: 265
+  h22_cite: '[[harrison-22: 265장 p.1998]]'
+  kr_guideline_id: kr-kshf-hf-2022
+  kr_cite: 대한심부전학회 2022 심부전 진료지침 Part 3 Korean Circ J 2023;53:437
+  diff_type: algorithm
+  topic: 심부전 철 결핍의 정의와 정맥 철분 치료 근거
+  harrison_says: CONFIRM-HF 의 철 결핍 정의는 ferritin <100 ng/mL, 또는 100–300 ng/mL 이면서 transferrin saturation <20%. ferric carboxymaltose 는 기능·증상·QOL 을 개선하나 장기 임상 결과 이득은 분명하지 않다 — AFFIRM-AHF(LVEF <50%)·IRONMAN 은 경계선, HEART-FID(LVEF ≤40%)는 1차 복합 결과 이득 없음. 이득은 증상, 아마도 입원 감소에 한정. 경구 철분은 효과 없고, 조혈 자극제(darbepoetin, RED-HF)는 실망스러운 결과(p.1998).
+  kr_says: 절대 철 결핍 ferritin <100 ng/mL, 기능적 철 결핍 ferritin 100–299 ng/mL 이면서 TSAT <20%. 철 결핍성 빈혈 심부전에 정맥 철분(ferric carboxymaltose) 합리적(Class IIa, LOE A). LVEF <50% 이고 최근 급성 심부전으로 입원한 철 결핍 환자에 정맥 철분이 심부전 입원 감소에 도움(Class IIa, LOE B). 원인 미상 빈혈에 조혈 자극제 권고 안 함(Class III, LOE B).
+  kmle_rule: KMLE 문항·정리본은 ferritin <100 또는 100–299 ng/mL + TSAT <20% 를 철 결핍으로 정의하고, 정맥 ferric carboxymaltose(Class IIa)를 적용하며 조혈 자극제는 쓰지 않는다.
+  usmle_rule: USMLE 문항은 같은 정의로 철 결핍을 찾아 경구가 아닌 정맥 철분으로 증상·기능 개선을 노리고, 사망률 감소를 근거로 들지 않는다.
+  verified: text
