@@ -66,6 +66,48 @@ window.MEDKOS_RELATED = {
     "term": "atrial fibrillation"
    }
   ],
+  "cn.cardio.atrial-fibrillation.hfref-rate-control-drug": [
+   {
+    "id": "paper-2026-0903",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0897",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0868",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0876",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0781",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0670",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0633",
+    "how": "t",
+    "term": "atrial fibrillation"
+   },
+   {
+    "id": "paper-2026-0608",
+    "how": "t",
+    "term": "atrial fibrillation"
+   }
+  ],
   "cn.cardio.cardiac-mri-lge.pattern-etiology": [
    {
     "id": "paper-2026-0860",
@@ -352,6 +394,13 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0400",
     "how": "t",
     "term": "pheochromocytoma"
+   }
+  ],
+  "cn.endo.thyroid-nodule.low-tsh-scan-first": [
+   {
+    "id": "paper-2026-0521",
+    "how": "t",
+    "term": "thyroid nodule"
    }
   ],
   "cn.ent.adult-neck-mass.malignancy-workup": [
@@ -1394,6 +1443,14 @@ window.MEDKOS_RELATED = {
     "cn.ent.hearing-loss.conductive-vs-sensorineural"
    ]
   },
+  "paper-2026-0521": {
+   "t": "AI-Assisted Sonography for the Diagnosis of Thyroid Nodules",
+   "j": "Radiologic technology",
+   "d": "2026",
+   "c": [
+    "cn.endo.thyroid-nodule.low-tsh-scan-first"
+   ]
+  },
   "paper-2026-0534": {
    "t": "Patient-Centered Summarization Framework for AI Clinical Summarization: Mixed Methods Study",
    "j": "Journal of medical Internet research",
@@ -1455,7 +1512,8 @@ window.MEDKOS_RELATED = {
    "j": "The New England journal of medicine",
    "d": "2026-09-17",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0612": {
@@ -1479,7 +1537,8 @@ window.MEDKOS_RELATED = {
    "j": "Circulation",
    "d": "2026-09-22",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0635": {
@@ -1503,7 +1562,8 @@ window.MEDKOS_RELATED = {
    "j": "Journal of cardiovascular electrophysiology",
    "d": "2026-09-27",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0678": {
@@ -1616,7 +1676,8 @@ window.MEDKOS_RELATED = {
    "j": "American family physician",
    "d": "2026-10",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0814": {
@@ -1705,7 +1766,8 @@ window.MEDKOS_RELATED = {
    "j": "Journal of cardiovascular electrophysiology",
    "d": "2026-10-29",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0870": {
@@ -1721,7 +1783,8 @@ window.MEDKOS_RELATED = {
    "j": "Critical pathways in cardiology",
    "d": "2026-10-23",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0885": {
@@ -1747,7 +1810,8 @@ window.MEDKOS_RELATED = {
    "j": "JMIR formative research",
    "d": "2026-11-05",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0901": {
@@ -1763,7 +1827,8 @@ window.MEDKOS_RELATED = {
    "j": "Biomolecules & biomedicine",
    "d": "2026-11-06",
    "c": [
-    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation"
+    "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation",
+    "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
   "paper-2026-0910": {
@@ -1924,6 +1989,7 @@ window.MEDKOS_RELATED = {
   "cn.cardio.aortic-dissection.impulse-control-first": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
   "cn.cardio.aortic-stenosis.valve-replacement-timing": "대동맥판 협착 — 증상과 박출률이 교체 시점을 정한다",
   "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": "심방세동 — 뇌졸중 예방은 점수로 항응고제",
+  "cn.cardio.atrial-fibrillation.hfref-rate-control-drug": "심방세동 + 박출률 감소 — 딜티아젬·베라파밀은 금기",
   "cn.cardio.cardiac-mri-lge.pattern-etiology": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
   "cn.cardio.cvd-epidemiology.transition-risk-burden": "심혈관질환 역학 — 역학적 이행이 질환 구성을 바꾼다",
   "cn.cardio.heart-failure.hfref-gdmt-selection": "HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약",
@@ -1938,6 +2004,7 @@ window.MEDKOS_RELATED = {
   "cn.em.shock.type-differentiation-first-step": "쇼크 — 사지 온도·목정맥·폐음으로 유형 가르기",
   "cn.endo.hypoglycemia.c-peptide-differential": "고인슐린 저혈당 — C 펩티드가 내인성과 외인성을 가른다",
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
+  "cn.endo.thyroid-nodule.low-tsh-scan-first": "갑상선 결절 — TSH 가 낮으면 스캔이 먼저",
   "cn.ent.adult-neck-mass.malignancy-workup": "성인 목덩이 — 악성 위험이면 영상·세침흡인 먼저",
   "cn.ent.hearing-loss.conductive-vs-sensorineural": "난청 — 음차·청력검사로 전음성과 감각신경성 가르기",
   "cn.gi.crohn-disease.distribution-histology-diagnosis": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",

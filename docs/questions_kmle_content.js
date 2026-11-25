@@ -3469,6 +3469,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.heme.iron-deficiency-anemia.iv-iron-indication",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "혈색소가 8 g/dL 아래이고 숨이 차서 수혈을 떠올린다.",
@@ -3482,6 +3483,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "이 환자는 두 제제 모두 위장관 부작용으로 먹지 못했고, 용량을 올리면 부작용이 더 심해지며 흡수율도 비례해 늘지 않는다. 출혈이 계속되고 수술까지 6주뿐이라 정맥 철분이 낫다.",
     "discriminator": "경구 불내성, 수술까지 남은 시간.",
     "when_right": "경구 철분제를 견디고 출혈이 멈췄으며 서둘러 교정할 이유가 없을 때(이때도 용량을 늘리기보다 하루 한 번 또는 격일로 먹는다).",
+    "split": ""
+   },
+   "D": {
+    "tempting": "혈색소가 낮은 빈혈에 적혈구 생성을 직접 자극하는 약이라 빨리 올릴 것처럼 보인다.",
+    "answer_first": "적혈구생성인자는 조혈을 재촉할 뿐 헤모글로빈 재료인 철을 주지 않는다. 페리틴 4 ng/mL 로 철이 고갈된 상태에서는 반응하지 않고, 원인인 철결핍을 채우는 정맥 철분이 먼저다.",
+    "discriminator": "페리틴 4 ng/mL·트랜스페린 포화도 4 %(철 고갈) · 크레아티닌 0.7 mg/dL(만성 신장병이 아님).",
+    "when_right": "만성 신장병으로 적혈구생성인자 생성이 줄어든 빈혈에서 철을 함께 채운 뒤.",
     "split": ""
    }
   },
@@ -101411,7 +101419,8 @@ window.KMLE_CONTENT_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
-  "objective": "cn.endo.thyroid-nodule.low-tsh-scintigraphy-first",
+  "objective": "cn.endo.thyroid-nodule.low-tsh-scan-first",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "2.8 cm 충실성 결절은 크기 기준으로 미세침흡인 대상이다.",

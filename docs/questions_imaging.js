@@ -3080,6 +3080,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.preeclampsia-severe.late-preterm-delivery",
   "figureImg": null,
   "attribution": {
    "dataset": "",

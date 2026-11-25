@@ -5,9 +5,10 @@ topic: Infectious Disease
 see_also: [Microbiology, Nephrology]
 discipline: microbiology
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-25
 version: 1
 outline: h174            # 해리슨 21판 174장 Nocardiosis → 22판 179장
+roots: [cn.micro.mycolic-acid-cell-wall.acid-fastness]
 confidence: medium
 review_status: unreviewed
 note_form: 2
@@ -118,6 +119,9 @@ figures_wanted:
   - Nocardia
   - acid-fast
   modality: HISTOLOGY_HE
+figures_rejected:
+- asset: PMC-PMC13437361_Figure2
+  reason: 네 패널 합본(759×472)이라 그람 염색 한 패널이 340×220 픽셀로 인쇄 기준 미달 · 약산 항산 염색 패널(B)은 붉은 실이 이 해상도에서 뚜렷하지 않다
 ---
 
 ## 판단 — 왜 부분 항산성인가

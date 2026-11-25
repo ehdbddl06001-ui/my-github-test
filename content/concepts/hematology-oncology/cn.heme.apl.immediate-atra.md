@@ -4,8 +4,8 @@ type: concept
 topic: Hematology
 see_also: [Oncology]
 date: 2026-11-24
-updated: 2026-11-24
-version: 1
+updated: 2026-11-25
+version: 2
 outline: h104            # 해리슨 21판 104장 Acute Myeloid Leukemia → 22판 109장
 confidence: medium
 review_status: unreviewed
@@ -117,14 +117,25 @@ sources:
     checked_at: 2026-11-24
     checked: "서지만 — 루틴 컨테이너가 PubMed·저널 사이트를 막아 원문 미대조. 의심 즉시 ATRA 시작, 혈소판·섬유소원 보충 목표, 항섬유소용해제·헤파린 비권고, 첫 관해 이식 비적응은 기억에 근거하며 사람 대조가 필요하다. 서지·권호·DOI 도 기억이다(학습서 워크플로가 DOI 로 PMID 를 찾는다)"
     verified: citation
-figures_wanted:
-- source: PMC_OA
-  shows: 급성 전골수구 백혈병의 말초혈액 도말 — 아우어 소체 다발(faggot cell)과 거친 과립의 비정상 전골수구
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13722898_figure1.jpg
+  kind: histology
   at: 가르는 소견 — 급성 전골수구 백혈병인가
-  query: '"acute promyelocytic leukemia" AND ("Auer rods" OR "faggot cell") AND "peripheral blood smear"'
-  caption_terms:
-  - Auer
-  modality: HISTOLOGY_HE
+  shows: 급성 전골수구 백혈병의 말초혈액 도말 — 거친 과립의 전골수구와 아우어 소체 다발(faggot cell)
+  look_for:
+  - 세포질에 바늘 모양 아우어 소체가 여러 개 모인 세포
+  - 세포질을 가득 채운 거친 보라색 과립
+  label: '「Peripheral blood smear (Wright–Giemsa stain, ×1000 magnification) demonstrating hypergranular promyelocytes. Arrows labeled “Auer rods” indicate characteristic needle‐shaped azurophilic cytoplasmic inclusions. The arrow labeled “Faggot cell” identifies a hypergranular promyelocyte containing numerous bundled Auer rods, a classic morphologic feature of acute promyelocytic leukemia.」 — Acute Promyelocytic Leukemia With PML‐RARA Rearrangement: Clinical and Morphologic Features'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Acute Promyelocytic Leukemia With PML‐RARA Rearrangement: Clinical and Morphologic Features. Clinical Case Reports'
+  doi: 10.1002/ccr3.73830
+  credit: 'Acute Promyelocytic Leukemia With PML‐RARA Rearrangement: Clinical and Morphologic Features. Clin Case Rep. 2026 Oct 30;14(11):e73830. doi: 10.1002/ccr3.73830 (CC BY) — FIGURE 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13722898/
+  asset: PMC-PMC13722898_FIGURE1
+  privacy_check: 그림 전체를 보았다 — 혈액 도말 현미경 사진뿐이고 얼굴·문신·이름·병원 표지 없음
 ---
 
 ## 판단 — 왜 확진 전에 ATRA 인가

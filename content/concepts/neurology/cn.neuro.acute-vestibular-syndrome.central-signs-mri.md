@@ -4,9 +4,10 @@ type: concept
 topic: Neurology
 see_also: [Otorhinolaryngology, Emergency Medicine]
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-25
 version: 1
 outline: h22             # 기본틀 슬롯 — 해리슨 21판 22장 Dizziness and Vertigo(22판 24장)
+roots: [cn.physio.vestibulo-ocular-reflex.head-impulse]
 confidence: medium
 review_status: unreviewed
 note_form: 2
