@@ -853,8 +853,29 @@
    "date": "2026-11-25",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "imaging-2026-0770": {
+   "id": "imaging-2026-0770",
+   "exam": "imaging",
+   "subject": "순환기",
+   "step": "",
+   "type": "심전도 판독 — 검진 심전도 이상을 들은 여고생",
+   "style": "kmle_style",
+   "modality": "ECG",
+   "question": "심전도 판독으로 가장 적절한 것은?",
+   "chosen": 3,
+   "chosenText": "우각차단",
+   "answer": 1,
+   "answerText": "좌후속지차단",
+   "coreNote": "",
+   "differ": "",
+   "decision": "QRS 는 좁고 I·aVL rS, II·III·aVF 큰 R 의 우축 편위가 있다. 우심실 비대·폐질환 근거가 없으므로 좌후속지차단이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261123T202500Z_일일심전도_2026-11-24_3units_3q_b8d02e08",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T12:17:06.348Z"
+ "updated": "2026-11-25T23:49:17.565Z"
 }
