@@ -5992,6 +5992,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "50대 남자의 진행하는 호흡곤란·제한성 폐기능·DLCO 저하는 특발성 폐섬유증의 전형 같다.",
@@ -6005,6 +6006,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "사르코이드증은 양쪽 폐문 림프절 비대와 림프관 주위 결절이 특징이고 CD4/CD8 비가 높다. 이 환자는 림프절 비대가 없고 공기 걸림·소엽 중심 결절이 있다.",
     "discriminator": "폐문 림프절 비대와 결절 분포.",
     "when_right": "",
+    "split": ""
+   },
+   "D": {
+    "tempting": "비둘기 같은 새를 기르는 사람의 폐렴이라 새가 옮기는 감염(Chlamydia psittaci)이 떠오른다.",
+    "answer_first": "앵무병은 새 노출 뒤 한 번 오는 급성 열성 폐렴이다. 이 환자는 1년에 걸쳐 숨참·체중 감소가 진행하고 새를 돌본 날마다 증상이 되풀이되며, 양측 상·중엽 간유리·소엽 중심 결절·공기 걸림과 세척액 림프구 증가가 있어 면역 반응인 과민성 폐렴이다.",
+    "discriminator": "경과(1년 진행·노출 때마다 반복)와 영상 분포·공기 걸림·세척액 림프구.",
+    "when_right": "병든 새에 노출된 뒤 급성 고열·두통·비장 비대와 엽성 경화가 생기고 C. psittaci 항체가가 상승할 때.",
     "split": ""
    }
   },

@@ -3,9 +3,10 @@ id: cn.cardio.atrial-fibrillation.hfref-rate-control-drug
 type: concept
 topic: Cardiology
 date: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-26
 version: 1
 outline: h251            # 해리슨 21판 251장 Atrial Fibrillation → 22판 258장
+roots: [cn.pharm.nondihydropyridine-ccb.av-node-negative-inotropy]
 confidence: medium
 review_status: unreviewed
 note_form: 2

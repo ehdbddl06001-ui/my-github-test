@@ -4,9 +4,10 @@ type: concept
 topic: Hematology
 see_also: [Oncology]
 date: 2026-11-24
-updated: 2026-11-25
+updated: 2026-11-26
 version: 2
 outline: h104            # 해리슨 21판 104장 Acute Myeloid Leukemia → 22판 109장
+roots: [cn.path.apl-pml-rara.differentiation-block-dic]
 confidence: medium
 review_status: unreviewed
 note_form: 2

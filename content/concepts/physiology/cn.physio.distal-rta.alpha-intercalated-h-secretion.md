@@ -4,8 +4,8 @@ type: concept
 topic: Nephrology
 see_also: [Physiology, Rheumatology]
 date: 2026-11-03
-updated: 2026-11-24
-version: 2
+updated: 2026-11-26
+version: 3
 outline: h55
 discipline: physiology      # 학문 꼬리표 — 학문별 책 목차의 「다른 책에 실린 단원」에 적힌다(2026-11-21)
 confidence: medium
@@ -138,6 +138,26 @@ variants:
     choices: ["A. Loss of bicarbonate from the gastrointestinal tract", "B. Reduced aldosterone effect on the cortical collecting duct", "C. Decreased bicarbonate reabsorption in the proximal tubule", "D. Impaired hydrogen ion secretion by α-intercalated cells of the collecting duct", "E. Accumulation of unmeasured organic acids in the plasma"]
     answer: "D"
     explanation: "The cause and patient differ, but the deciding clues are the same: normal anion gap (140 − 116 − 16 = 8), positive urine anion gap (50 + 35 − 55 = +30, low ammonium), urine pH above 5.5 despite acidemia, and hypokalemia. This is distal (type 1) RTA; amphotericin B is a recognized drug cause. No glucosuria and a normal phosphorus argue against proximal RTA, and the low potassium argues against type 4."
+    kind: application
+  - id: v3
+    of: kmle-2026-1972
+    flip: true
+    changed: "소변 음이온 차 +20·설사 없음 → 3주째 하루 6~8번 묽은 설사, 소변 음이온 차 −22 — 암모늄 배설이 늘어난 장관 중탄산 소실이 되어 정답이 설사에 의한 산증으로 바뀐다(소변 pH 6.2 는 그대로 높다)"
+    context: "같은 저칼륨 정상 음이온 차 산증, 원인이 설사인 경우"
+    stem: "38세 여자가 3주 전부터 하루 6~8번 묽은 설사를 하고 2주 전부터 팔다리에 힘이 없어서 왔다. 열은 없고 이뇨제나 완하제는 먹지 않는다. 혈압 104/66 mmHg, 맥박 96회/분, 호흡 20회/분, 체온 36.8 ℃. 혈청 나트륨 137 mmol/L, 칼륨 2.8 mmol/L, 염소 113 mmol/L, 중탄산염 14 mmol/L, 동맥혈 pH 7.28, 혈당 90 mg/dL, 인 3.2 mg/dL. 소변 pH 6.2, 소변 나트륨 · 칼륨 · 염소는 각각 28 · 20 · 70 mmol/L 이고 소변 포도당은 음성이다. 신장 초음파는 정상이다. 산-염기 장애의 원인으로 가장 가능성 높은 것은?"
+    choices: ["A. 2형(근위) 신세뇨관 산증", "B. 1형(원위) 신세뇨관 산증", "C. 4형 신세뇨관 산증", "D. 설사에 의한 산증", "E. 탄산탈수효소 억제제에 의한 산증"]
+    answer: "D"
+    explanation: "음이온 차는 137 − 113 − 14 = 10 으로 정상이다. 원 문항은 소변 음이온 차가 양수(+20)라 콩팥의 암모늄 배설 장애(원위형)였지만, 여기서는 28 + 20 − 70 = −22 로 음수다 — 콩팥이 암모늄을 많이 내보내고 있으니 산 배설은 정상이고 중탄산이 장으로 빠진 것이다. 설사에서도 산혈증 · 저칼륨이 암모니아 생성을 늘려 소변 pH 가 6 을 넘을 수 있으므로 소변 pH 만으로 원위형이라 하지 않는다. 신석회화도 없다."
+    kind: application
+  - id: v4
+    of: kmle-2026-1972
+    flip: false
+    changed: "44세 여자·쇼그렌·근위부 근력 저하 → 35세 여자·반복 신결석·리튬 등 약물 없음·수치 바꿈 — 정상 음이온 차, 소변 음이온 차 양수, 산혈증에도 소변 pH > 5.5, 저칼륨, 신석회화라는 결정 단서가 그대로라 답은 1형(원위)"
+    context: "반복 신결석으로 온 여자"
+    stem: "35세 여자가 2년 동안 세 번째 요로결석으로 왼쪽 옆구리가 아파서 왔다. 설사 · 구토는 없고 복용하는 약은 없다. 혈압 116/74 mmHg, 맥박 80회/분, 호흡 18회/분, 체온 36.7 ℃. 혈청 나트륨 140 mmol/L, 칼륨 3.0 mmol/L, 염소 115 mmol/L, 중탄산염 16 mmol/L, 동맥혈 pH 7.31, 혈당 88 mg/dL, 인 3.6 mg/dL. 소변 pH 6.6, 소변 나트륨 · 칼륨 · 염소는 각각 45 · 32 · 52 mmol/L, 소변 포도당 음성. 복부 CT 에서 양쪽 신장 수질에 석회화와 왼쪽 요관 결석이 보인다. 가장 가능성 높은 진단은?"
+    choices: ["A. 설사에 의한 산증", "B. 4형 신세뇨관 산증", "C. 1형(원위) 신세뇨관 산증", "D. 2형(근위) 신세뇨관 산증", "E. 탄산탈수효소 억제제에 의한 산증"]
+    answer: "C"
+    explanation: "환자와 내원 이유가 달라도 단서는 같다 — 음이온 차 140 − 115 − 16 = 9(정상), 소변 음이온 차 45 + 32 − 52 = +25(암모늄 배설 낮음), 산혈증에도 소변 pH 6.6, 저칼륨, 신수질 석회화 · 반복 결석(저구연산뇨 · 고칼슘뇨, 알칼리 소변에서 인산칼슘 침착). 1형(원위) 신세뇨관 산증이다. 포도당뇨 · 저인산이 없어 근위형이 아니고 칼륨이 낮아 4형이 아니며 설사 · 약물이 없다."
     kind: application
 figures_none: "수치(음이온 차·소변 pH·칼륨)로 판단하는 기전 목표 — 신석회화 영상은 정답을 가르는 단서가 아니다"
 ---

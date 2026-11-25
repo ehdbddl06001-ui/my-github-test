@@ -3,9 +3,10 @@ id: cn.heme.iron-deficiency-anemia.iv-iron-indication
 type: concept
 topic: Hematology
 date: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-26
 version: 1
 outline: h97            # 해리슨 21판 97장 Iron Deficiency and Other Hypoproliferative Anemias → 22판 102장
+roots_none: "투여 경로 선택(경구 불내성 · 수술까지 남은 시간)이 목표다 — 철 흡수 생리로 내려가도 이 판단을 바꾸지 않는다"
 confidence: medium
 review_status: unreviewed
 note_form: 2

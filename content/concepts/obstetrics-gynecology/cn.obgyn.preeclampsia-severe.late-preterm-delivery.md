@@ -4,9 +4,10 @@ type: concept
 topic: Obstetrics and Gynecology
 see_also: [Neurology, Cardiology]
 date: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-26
 version: 1
 outline: ob.medical-complications   # 임신 중 내과 질환(임신성 고혈압) — 대조는 해리슨 22판 491장
+roots_none: "분만 시기를 임신 주수 기준(34주)으로 고르는 지침 판단이다 — 기초 기전이 이 문턱을 정하지 않는다"
 confidence: medium
 review_status: unreviewed
 note_form: 2

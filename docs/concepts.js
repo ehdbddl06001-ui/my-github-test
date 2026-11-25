@@ -7887,9 +7887,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Cardiology",
   "seeAlso": [],
   "version": 1,
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "reviewStatus": "unreviewed",
-  "hash": "85f28c7e60e5f640",
+  "hash": "c0f3991ed9068815",
   "summary": [
    "결론: 박출률 감소 심부전의 빠른 심방세동에서 딜티아젬·베라파밀은 심박수 조절에 쓰지 않는다.",
    "시험 단서: P파 없는 불규칙한 좁은 QRS 빈맥 + 혈압 유지, 박출률 ≤ 40 %(HFrEF), 옛 심근경색·심근병증.",
@@ -7983,7 +7983,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.pharm.nondihydropyridine-ccb.av-node-negative-inotropy"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h251",
@@ -69744,9 +69746,9 @@ window.MEDKOS_CONCEPTS = {
    "Oncology"
   ],
   "version": 2,
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "reviewStatus": "unreviewed",
-  "hash": "24d2cfe98d2d3905",
+  "hash": "d7fea5d683791f1f",
   "summary": [
    "결론: 급성 전골수구 백혈병이 의심되면 PML-RARA 확진 전에 올-트랜스 레티노산(ATRA)을 바로 시작한다.",
    "시험 단서: 잇몸 출혈·멍 + 범혈구감소, 아우어 소체 다발(faggot cell)의 전골수구, 섬유소원 저하·D-이합체 상승.",
@@ -69842,7 +69844,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.path.apl-pml-rara.differentiation-block-dic"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h104",
@@ -71251,9 +71255,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Hematology",
   "seeAlso": [],
   "version": 1,
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "reviewStatus": "unreviewed",
-  "hash": "cdb240f3a9de60e3",
+  "hash": "94820a1299db7d26",
   "summary": [
    "결론: 경구 철분제를 견디지 못하거나 수술이 6주 안이면 정맥 철분(intravenous iron)으로 저장철을 채운다.",
    "시험 단서: 페리틴·트랜스페린 포화도 저하 소구성 빈혈 + 경구제 위장관 부작용으로 중단 + 출혈 지속·예정 수술.",
@@ -71348,7 +71352,7 @@ window.MEDKOS_CONCEPTS = {
   "layer": "clinical",
   "discipline": "",
   "roots": [],
-  "rootsNone": "",
+  "rootsNone": "투여 경로 선택(경구 불내성 · 수술까지 남은 시간)이 목표다 — 철 흡수 생리로 내려가도 이 판단을 바꾸지 않는다",
   "rootSupports": [],
   "outline": "h97",
   "order": 33,
@@ -117445,9 +117449,9 @@ window.MEDKOS_CONCEPTS = {
    "Cardiology"
   ],
   "version": 1,
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "reviewStatus": "unreviewed",
-  "hash": "330358d11ee33c82",
+  "hash": "87bd951a6365351a",
   "summary": [
    "결론: 34주 이후 중증 양상 전자간증은 황산마그네슘으로 경련을 막고 안정화한 뒤 바로 분만한다.",
    "시험 단서: 20주 뒤 새 고혈압 + 단백뇨, 15분 간격 두 번 ≥160/110 이나 두통·시야 증상(severe features).",
@@ -117554,7 +117558,7 @@ window.MEDKOS_CONCEPTS = {
   "layer": "clinical",
   "discipline": "",
   "roots": [],
-  "rootsNone": "",
+  "rootsNone": "분만 시기를 임신 주수 기준(34주)으로 고르는 지침 판단이다 — 기초 기전이 이 문턱을 정하지 않는다",
   "rootSupports": [],
   "outline": "ob.medical-complications",
   "order": 9,
@@ -146477,6 +146481,235 @@ window.MEDKOS_CONCEPTS = {
   "questions": [],
   "hasErrors": false
  },
+ "cn.path.apl-pml-rara.differentiation-block-dic": {
+  "id": "cn.path.apl-pml-rara.differentiation-block-dic",
+  "title": "PML-RARA — 분화가 멈춘 과립 세포가 DIC 를 만든다",
+  "objective": "t(15;17) 이 만든 PML-RARA 융합 단백이 레티노산 수용체를 망가뜨려 백혈병 세포의 분화를 멈추게 하고, 그 과립 세포가 DIC 를 일으키며, 약리 용량 레티노산(ATRA)이 분화를 다시 진행시켜 DIC 를 줄이는 이유를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "급성 전골수구 백혈병의 분자 기전 — PML-RARA 융합(t(15;17)(q22;q12))",
+  "topic": "Pathology",
+  "seeAlso": [
+   "Hematology",
+   "Genetics",
+   "Pharmacology"
+  ],
+  "version": 1,
+  "updated": "2026-11-26",
+  "reviewStatus": "unreviewed",
+  "hash": "13f1c0d905f15805",
+  "summary": [
+   "결론: 급성 전골수구 백혈병은 PML-RARA 융합이 레티노산 수용체를 망가뜨려 분화가 멈춘 병이고, ATRA 가 그 정지를 푼다.",
+   "시험 단서: t(15;17), 거친 일차 과립 · 아우어 소체의 전골수구, 섬유소원 저하 DIC — promyelocytic leukemia, retinoic acid receptor α.",
+   "왜: 15번 PML 과 17번 RARA 가 붙어 생긴 키메라 단백이 정상 레티노산 신호를 막고, 약리 용량 레티노산이 이를 넘어 분화를 유도한다.",
+   "세포독성 항암제만 쓰면 죽는 세포가 과립 성분을 쏟아 DIC 가 악화한다 — 분화 유도가 세포 파괴보다 먼저인 까닭."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "급성 전골수구 백혈병은 PML-RARA 융합이 레티노산 수용체를 망가뜨려 분화가 멈춘 병이고, ATRA 가 그 정지를 푼다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "급성 전골수구 백혈병은 PML-RARA 융합이 레티노산 수용체를 망가뜨려 분화가 멈춘 병이고, ATRA 가 그 정지를 푼다."
+      ]
+     }
+    ],
+    "html": "급성 전골수구 백혈병은 PML-RARA 융합이 레티노산 수용체를 망가뜨려 분화가 멈춘 병이고, ATRA 가 그 정지를 푼다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "t(15;17), 거친 일차 과립 · 아우어 소체의 전골수구, 섬유소원 저하 DIC — promyelocytic leukemia, retinoic acid receptor α.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "t(15;17)",
+       "거친 일차 과립 · 아우어 소체의 전골수구",
+       "섬유소원 저하 DIC — promyelocytic leukemia",
+       "retinoic acid receptor α."
+      ]
+     }
+    ],
+    "html": "t(15;17), 거친 일차 과립 · 아우어 소체의 전골수구, 섬유소원 저하 DIC — promyelocytic leukemia, retinoic acid receptor α."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "15번 PML 과 17번 RARA 가 붙어 생긴 키메라 단백이 정상 레티노산 신호를 막고, 약리 용량 레티노산이 이를 넘어 분화를 유도한다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "15번 PML 과 17번 RARA 가 붙어 생긴 키메라 단백이 정상 레티노산 신호를 막고, 약리 용량 레티노산이 이를 넘어 분화를 유도한다."
+      ]
+     }
+    ],
+    "html": "15번 PML 과 17번 RARA 가 붙어 생긴 키메라 단백이 정상 레티노산 신호를 막고, 약리 용량 레티노산이 이를 넘어 분화를 유도한다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "세포독성 항암제만 쓰면 죽는 세포가 과립 성분을 쏟아 DIC 가 악화한다 — 분화 유도가 세포 파괴보다 먼저인 까닭.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "세포독성 항암제만 쓰면 죽는 세포가 과립 성분을 쏟아 DIC 가 악화한다 — 분화 유도가 세포 파괴보다 먼저인 까닭."
+      ]
+     }
+    ],
+    "html": "세포독성 항암제만 쓰면 죽는 세포가 과립 성분을 쏟아 DIC 가 악화한다 — 분화 유도가 세포 파괴보다 먼저인 까닭."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 109장 p.826~829 · 834",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "pathology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.heme.apl.immediate-atra"
+  ],
+  "outline": "path.neoplasia",
+  "order": 3,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 레티노산 수용체가 골수 세포의 분화를 이끈다",
+    "deep": false,
+    "html": "<p>골수 전구세포는 골수모세포 → 전골수구 → 골수구 → 호중구로 성숙한다. 레티노산 수용체 α(RARA)는 레티노산과 결합해 이 성숙에 필요한 유전자 발현을 켜는 전사 인자다(전공 교과서 미대조).</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 융합 단백에서 응고병증까지",
+    "deep": false,
+    "html": "<p>15번 염색체의 PML 과 17번 염색체의 RARA 가 맞바뀌는 t(15;17)(q22;q12) 은 키메라 단백 Pml–Rarα 를 만든다 <sup>[1 109장 p.827]</sup>. 망가진 수용체는 정상 레티노산 신호로는 분화를 진행시키지 못해, 거친 일차 과립이 가득한 전골수구 단계의 세포가 쌓인다 <sup>[1 109장 p.829]</sup> <sup>[1 109장 p.834]</sup>. 이 과립 세포가 응고계를 켜 DIC 를 만든다 — 출혈이 앞서지만 드물게 혈전도 생긴다 <sup>[1 109장 p.828]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 출혈 · 낮은 섬유소원 · 아우어 소체",
+    "deep": false,
+    "html": "<ul>\n<li>섬유소원이 소모되고 혈소판이 낮아 잇몸 출혈 · 멍부터 위장관 · 폐 · 두개내 출혈까지 생긴다 <sup>[1 109장 p.828]</sup>.</li>\n<li>아우어 소체는 골수성의 표지이고, 이 아형에서는 과립이 두드러진다 <sup>[1 109장 p.828]</sup> <sup>[1 109장 p.829]</sup>. 확진은 t(15;17) · PML-RARA 다 <sup>[1 109장 p.826]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 이 기전이 가르는 선택",
+    "deep": false,
+    "html": "<ul>\n<li>세포를 죽이는 항암제만 쓰면 과립 성분이 쏟아져 DIC 로 죽는 일이 잦았다 <sup>[1 109장 p.834]</sup> — 그래서 의심되면 확진 전이라도 분화를 유도하는 ATRA 를 먼저 쓴다(임상 정리본 「급성 전골수구 백혈병 — 의심되면 확진 전 ATRA」).</li>\n<li>분화가 다시 진행하면 분화 증후군이 생길 수 있다 — 고위험(백혈구 &gt; 10,000/μL)에서는 항암제로 세포를 함께 줄인다 <sup>[1 109장 p.834]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 109장 p.826~829 · 834)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "t(15;17) 에서 소견까지",
+    "columns": [
+     "단계",
+     "결과"
+    ],
+    "rows": [
+     [
+      "t(15;17)(q22;q12)",
+      "PML(15번)과 RARA(17번)가 붙은 키메라 단백 <sup>[1 109장 p.827]</sup>"
+     ],
+     [
+      "레티노산 수용체 α 망가짐",
+      "백혈병 세포의 분화 정지 — 약리 용량 ATRA 가 분화를 유도 <sup>[1 109장 p.834]</sup>"
+     ],
+     [
+      "거친 일차 과립이 가득한 세포",
+      "DIC — 경미한 출혈부터 위장관 · 폐 · 두개내 출혈, 드물게 혈전 <sup>[1 109장 p.828]</sup>"
+     ],
+     [
+      "세포독성 치료로 세포가 죽음",
+      "과립 성분 방출 → DIC 악화 <sup>[1 109장 p.834]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "ATRA = 세포를 죽이는 항암제?",
+    "point": "ATRA 는 t(15;17) 을 가진 백혈병 세포를 죽이는 것이 아니라 분화시킨다 — 그래서 과립이 한꺼번에 쏟아지지 않아 DIC 가 줄고, 대신 분화한 세포가 늘며 분화 증후군이 생길 수 있다 <sup>[1 109장 p.834]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "아우어 소체 = 급성 전골수구 백혈병?",
+    "point": "아우어 소체는 급성 골수성 백혈병 전반의 표지다(있으면 림프구성이 아니다) <sup>[1 109장 p.828]</sup>. 급성 전골수구 백혈병의 확진은 형태가 아니라 t(15;17) 또는 PML-RARA 다 <sup>[1 109장 p.826]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "DIC = 출혈만?",
+    "point": "급성 전골수구 백혈병의 DIC 는 출혈이 앞서지만, 드물게 혈전도 생긴다 <sup>[1 109장 p.828]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 109장 Acute Myeloid Leukemia p.825–834",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_109) — p.826 APL 진단은 t(15;17)(q22;q12) 또는 PML-RARA, 이 이상은 특정 형태와 늘 연관; p.827 t(15;17) 은 17번 RARA 와 15번 PML 이 붙은 키메라 단백(Pml–Rarα)을 만든다; p.828 APL 은 DIC 연관 출혈(경미 ~ 위장관 · 폐 · 두개내), 드물게 혈전, 아우어 소체가 있으면 AML 확실; p.829 APL 세포의 두드러진 일차 과립; p.834 항암제만 쓰던 시절 치료받은 백혈병 세포의 과립 성분 방출로 DIC 사망이 잦았다, ATRA 는 RARA 가 망가진 t(15;17) 세포의 분화를 유도, DIC 를 줄이지만 APL(분화) 증후군을 만든다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-26",
+    "url": ""
+   }
+  ],
+  "checks": [],
+  "variants": [
+   {
+    "id": "cn.path.apl-pml-rara.differentiation-block-dic#v1",
+    "context": "같은 기전 — 약물이 DIC 를 줄이는 이유",
+    "stem": "34세 남자가 1주 전부터 잇몸에서 피가 나고 멍이 잘 들어서 왔다. 혈색소 8.1 g/dL, 백혈구 2,400/μL, 혈소판 22,000/μL, 섬유소원 92 mg/dL, D-이합체 크게 상승. 말초혈액에 거친 과립과 여러 개의 아우어 소체를 가진 비정상 세포가 보이고, 염색체 검사에서 t(15;17)(q22;q12) 이 확인되었다. 올-트랜스 레티노산을 시작한 뒤 며칠 사이 섬유소원이 오르고 출혈이 줄었다. 이 약이 응고병증을 줄인 기전은?",
+    "options": [
+     "백혈병 세포의 분화를 유도해 과립 세포를 성숙시킨다",
+     "백혈병 세포의 DNA 합성을 막아 빠르게 죽인다",
+     "트롬빈을 직접 억제한다",
+     "플라스민원 활성화를 경쟁적으로 막는다",
+     "간의 응고인자 합성을 늘린다"
+    ],
+    "answer": 1,
+    "explanation": "t(15;17) 이 만든 PML-RARA 는 레티노산 수용체 α 를 망가뜨려 분화를 멈추게 한다. 약리 용량의 올-트랜스 레티노산은 이 세포의 분화를 다시 진행시켜, 응고를 켜는 과립 세포가 줄면서 DIC 가 줄어든다. 세포를 빨리 죽이는 항암제는 과립 성분을 한꺼번에 쏟게 해 DIC 를 악화시킬 수 있다(B). 레티노산은 항응고제 · 항섬유소용해제가 아니다.",
+    "of": "",
+    "changed": "",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.path.hepatic-congestion.zone3-mechanism": {
   "id": "cn.path.hepatic-congestion.zone3-mechanism",
   "title": "육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유",
@@ -155538,6 +155771,786 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.peds.meckel-diverticulum.pertechnetate-scan": {
+  "id": "cn.peds.meckel-diverticulum.pertechnetate-scan",
+  "title": "메켈 게실 — 통증 없는 다량 혈변이면 과테크네튬산염 스캔",
+  "objective": "어린아이의 통증 없는 다량 혈변에서 메켈 게실을 떠올리고, 이소성 위점막을 찾는 99mTc-과테크네튬산염 스캔을 진단 검사로 골라 장겹침증 관장·대장내시경·상부 내시경과 가른다",
+  "objectiveKind": "검사 선택",
+  "condition": "메켈 게실 출혈(bleeding Meckel diverticulum)",
+  "topic": "Pediatrics",
+  "seeAlso": [
+   "General Surgery",
+   "Gastroenterology"
+  ],
+  "version": 1,
+  "updated": "2026-11-26",
+  "reviewStatus": "unreviewed",
+  "hash": "ea4fa481e9e7b242",
+  "summary": [
+   "결론: 2세 안팎 아이의 통증 없는 다량 검붉은 혈변 + 빈혈이면 메켈 게실 — 99mTc-과테크네튬산염 스캔(Meckel scan)으로 찾는다.",
+   "시험 단서: 배가 부드럽고 덩이·구토·발작적 울음이 없음, 토혈 없음·BUN 정상, 초음파에 장겹침 없음 — painless hematochezia in a toddler.",
+   "왜: 출혈은 게실 안 이소성 위점막이 낸 산이 옆 회장 점막을 헐게 해 생기고, 과테크네튬산염은 위점막에 모인다.",
+   "대장내시경·상부 내시경은 회장 끝 위쪽의 게실에 닿지 못한다 — 출혈원이 소장이다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "2세 안팎 아이의 통증 없는 다량 검붉은 혈변 + 빈혈이면 메켈 게실 — 99mTc-과테크네튬산염 스캔(Meckel scan)으로 찾는다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "2세 안팎 아이의 통증 없는 다량 검붉은 혈변 + 빈혈이면 메켈 게실 — 99mTc-과테크네튬산염 스캔(Meckel scan)으로 찾는다."
+      ]
+     }
+    ],
+    "html": "2세 안팎 아이의 통증 없는 다량 검붉은 혈변 + 빈혈이면 메켈 게실 — 99mTc-과테크네튬산염 스캔(Meckel scan)으로 찾는다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "배가 부드럽고 덩이·구토·발작적 울음이 없음, 토혈 없음·BUN 정상, 초음파에 장겹침 없음 — painless hematochezia in a toddler.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "배가 부드럽고 덩이·구토·발작적 울음이 없음",
+       "토혈 없음·BUN 정상",
+       "초음파에 장겹침 없음 — painless hematochezia in a toddler."
+      ]
+     }
+    ],
+    "html": "배가 부드럽고 덩이·구토·발작적 울음이 없음, 토혈 없음·BUN 정상, 초음파에 장겹침 없음 — painless hematochezia in a toddler."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "출혈은 게실 안 이소성 위점막이 낸 산이 옆 회장 점막을 헐게 해 생기고, 과테크네튬산염은 위점막에 모인다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "출혈은 게실 안 이소성 위점막이 낸 산이 옆 회장 점막을 헐게 해 생기고, 과테크네튬산염은 위점막에 모인다."
+      ]
+     }
+    ],
+    "html": "출혈은 게실 안 이소성 위점막이 낸 산이 옆 회장 점막을 헐게 해 생기고, 과테크네튬산염은 위점막에 모인다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "대장내시경·상부 내시경은 회장 끝 위쪽의 게실에 닿지 못한다 — 출혈원이 소장이다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "대장내시경·상부 내시경은 회장 끝 위쪽의 게실에 닿지 못한다 — 출혈원이 소장이다."
+      ]
+     }
+    ],
+    "html": "대장내시경·상부 내시경은 회장 끝 위쪽의 게실에 닿지 못한다 — 출혈원이 소장이다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 51장 p.318~320 — 소아 슬롯이라 해리슨은 성인 위장관 출혈 장으로만 대조했다",
+   "items": []
+  },
+  "layer": "clinical",
+  "discipline": "",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [],
+  "outline": "peds.gi",
+  "order": 8,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "판단 — 왜 과테크네튬산염 스캔이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>어린아이에서 의미 있는 소장 출혈의 가장 흔한 원인은 메켈 게실이고, 나이가 들수록 드물어진다 <sup>[1 51장 p.318]</sup>.</li>\n<li>출혈원은 대장이 아니라 회장 끝 위쪽이라 대장내시경 · 상부 내시경으로 보이지 않는다. 메켈 게실은 99mTc-과테크네튬산염 스캔으로 찾는다(특히 젊은 환자) <sup>[1 51장 p.320]</sup>.</li>\n<li>통증 · 구토 · 덩이가 없고 초음파에 장겹침이 없으면 관장 정복은 할 이유가 없다. 토혈이 없고 BUN 이 정상이면 상부 출혈 가능성도 낮다 <sup>[1 51장 p.319]</sup>.</li>\n<li>스캔이 양성이면 수술로 절제한다. 음성인데 의심이 남으면 복강경으로 직접 본다.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "기전 — 남은 배꼽창자관에서 궤양 출혈로",
+    "deep": false,
+    "html": "<p>메켈 게실은 태아의 배꼽창자관(난황관, omphalomesenteric duct)이 닫히지 않고 회장 쪽에 남은 참게실이다. 게실 벽에 위점막(때로 췌장 조직)이 이소성으로 자리 잡으면 그 점막이 낸 산이 바로 옆의 회장 점막을 헐게 해 궤양이 생기고, 그 궤양에서 통증 없이 많은 피가 난다. 위산이 회장 점막에 닿는 자리라 출혈 부위는 게실 자체보다 그 경계의 회장이다. 과테크네튬산염은 위점막의 점액 분비 세포가 받아들이므로, 위 바깥(대개 오른쪽 아랫배)에 생긴 섭취가 이소성 위점막을 드러낸다 — 위점막이 없는 게실은 스캔에 보이지 않는다.</p>",
+    "issue": false
+   },
+   {
+    "title": "가르는 소견 — 어린아이 혈변의 출혈원과 첫 검사",
+    "deep": false,
+    "html": "<ul>\n<li>통증의 유무가 첫 갈림길이다. 장겹침증은 발작적 통증이 먼저고 출혈은 늦게 · 적게 나온다. 메켈 게실 출혈은 통증 없이 갑자기 많다.</li>\n<li>혈색소는 급성 출혈 직후 바로 떨어지지 않는다(전혈을 잃는다) — 빈맥과 이전 값에 견준 하락이 출혈량을 더 잘 말한다 <sup>[1 51장 p.318]</sup>.</li>\n<li>소아 · 청소년의 대장 출혈은 염증성 장질환 · 연소성 용종이 흔하다 — 만성 · 소량이면 대장내시경 쪽이다 <sup>[1 51장 p.318]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>출혈이 많아 활력징후가 흔들리면 먼저 수액 · 수혈로 안정시킨다. 계속 출혈해 불안정하면 CT 혈관조영 · 혈관조영이 소장 출혈 부위를 찾는 첫 검사가 된다 <sup>[1 51장 p.320]</sup>.</li>\n<li>메켈 게실이 선두점이 되어 장겹침증 · 장폐색을 일으키기도 한다 — 이때는 통증 · 구토가 앞선다.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 51장 p.318~320 — 소아 슬롯이라 해리슨은 성인 위장관 출혈 장으로만 대조했다)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "통증 · 양 · 동반 소견으로 출혈원을 가른다",
+    "columns": [
+     "원인",
+     "가르는 소견",
+     "첫 검사"
+    ],
+    "rows": [
+     [
+      "메켈 게실",
+      "통증 없음 · 많은 양의 검붉은 피 · 빈혈",
+      "99mTc-과테크네튬산염 스캔"
+     ],
+     [
+      "장겹침증",
+      "발작적 복통 · 구토 · 덩이 · 건포도 젤리 변",
+      "초음파 → 공기·조영 관장(진단 겸 치료)"
+     ],
+     [
+      "상부 위장관 출혈",
+      "토혈 · 흑색변 · BUN 상승",
+      "상부 내시경"
+     ],
+     [
+      "청소년 염증성 장질환 · 연소성 용종",
+      "만성 혈변 · 설사 · 체중 감소 / 소량 반복 출혈",
+      "대장내시경"
+     ],
+     [
+      "항문 열창",
+      "배변 통증 · 휴지에 묻는 선홍색 피",
+      "항문 관찰"
+     ]
+    ],
+    "note": "소아 대장 출혈원은 염증성 장질환과 연소성 용종이 가장 흔하다 <sup>[1 51장 p.318]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "장겹침증(공기 정복 관장) vs 메켈 게실 — 「2세 혈변 = 장겹침증」?",
+    "point": "장겹침증은 발작적 복통·구토·만져지는 덩이와 초음파의 과녁 모양이 앞서고 출혈은 점액이 섞인 소량이다. 통증 없이 많은 피가 나오고 초음파가 정상이면 소장 출혈원인 메켈 게실 쪽이다 — 어린아이에서 의미 있는 소장 출혈의 가장 흔한 원인이 메켈 게실이다 <sup>[1 51장 p.318]</sup>.",
+    "exception": "메켈 게실 자체가 선두점이 되어 장겹침증을 일으킬 수 있다 — 통증·덩이가 있으면 먼저 초음파·관장.",
+    "cites": "<sup>[1 51장 p.318]</sup>"
+   },
+   {
+    "contrast": "대장내시경 — 하부 출혈이면 늘 대장내시경?",
+    "point": "성인의 하부 위장관 출혈은 대장내시경이 기본이지만, 메켈 게실은 회장에 있어 대장내시경에 보이지 않는다. 소장 출혈이 의심되는 아이에서는 위점막을 찾는 과테크네튬산염 스캔이 먼저다 <sup>[1 51장 p.320]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 51장 p.320]</sup>"
+   },
+   {
+    "contrast": "상부 위장관 출혈 — 검붉은 피면 위에서?",
+    "point": "빠른 상부 출혈도 혈변으로 나올 수 있지만 그때는 혈역학 불안정·혈색소 급감과 함께 토혈·장음 항진·BUN 상승(흡수된 혈액 단백)이 단서다. 토혈이 없고 BUN 이 정상이면 상부 출혈 가능성이 낮다 <sup>[1 51장 p.319]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 51장 p.319]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "스캔이 음성인데 의심이 남으면 복강경으로 직접 본다 — 이소성 위점막이 없는 게실은 스캔에 안 보인다.",
+   "출혈이 아주 많아 불안정하면 혈관조영 · CT 혈관조영으로 출혈 부위를 찾는다(소장 출혈의 일반 원칙)."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 51장 Gastrointestinal Bleeding(Laine L) p.316–320",
+    "checked": "본문 대조(드라이브 문서 H22_051) — p.318 메켈 게실은 소아에서 의미 있는 소장 출혈의 가장 흔한 원인·나이가 들수록 줄어듦, 소아·청소년 대장 출혈은 염증성 장질환·연소성 용종이 가장 흔함, 소장 출혈 원인에 장겹침증 포함; p.319 상부 출혈 단서 — 장음 항진·BUN 상승, 혈변으로 나오는 상부 출혈은 혈역학 불안정·혈색소 하락 동반; p.320 소장 출혈 평가 — 심한 출혈은 CT 혈관조영·혈관조영, 99mTc-과테크네튬산염 스캔은 메켈 게실(특히 젊은 환자)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-26",
+    "url": ""
+   },
+   {
+    "id": "nelson-22",
+    "org": "Elsevier",
+    "title": "Nelson Textbook of Pediatrics, 22nd ed. — Meckel Diverticulum and Other Remnants of the Omphalomesenteric Duct",
+    "kind": "textbook",
+    "citation": "Kliegman RM, St Geme JW, et al (eds). Nelson Textbook of Pediatrics 22e — 메켈 게실 장(장·쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 원 문항이 출처로 적은 교과서). 이 정리본의 근거 표시는 해리슨 22판에서 확인한 서술에만 달았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-11-26",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "메켈 게실에서 출혈이 생기는 기전과, 과테크네튬산염 스캔이 그것을 찾는 이유는?",
+    "a": "게실 안 이소성 위점막이 산을 내 옆 회장 점막에 궤양을 만들어 출혈한다. 과테크네튬산염은 위점막의 점액 세포에 모이므로 위가 아닌 자리(오른쪽 아랫배)에 생긴 섭취를 보여 준다."
+   },
+   {
+    "q": "2세 아이가 혈변을 보았다. 장겹침증이 먼저인 단서 셋은?",
+    "a": "발작적 복통(다리를 끌어당기며 우는 것) · 구토 · 만져지는 덩이(초음파 과녁 모양) — 출혈은 소량의 건포도 젤리 변이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.peds.meckel-diverticulum.pertechnetate-scan#v1",
+    "context": "같은 나이의 혈변, 발작적 복통과 덩이가 있는 경우",
+    "stem": "18개월 남자아이가 6시간 전부터 10~15분 간격으로 갑자기 다리를 배 쪽으로 끌어당기며 자지러지게 울다가 그치기를 되풀이하고 두 번 토해서 왔다. 방금 점액이 섞인 검붉은 젤리 같은 변을 조금 보았다. 혈압 92/58 mmHg, 맥박 128회/분, 호흡 28회/분, 체온 37.2 ℃. 오른쪽 윗배에 소시지 모양의 덩이가 만져지고 복막 자극 징후는 없다. 복부 초음파에서 과녁 모양의 덩이가 보이고 복강 내 유리 공기는 없다. 다음 처치로 가장 적절한 것은?",
+    "options": [
+     "99mTc-과테크네튬산염 스캔",
+     "공기 정복 관장",
+     "대장내시경 검사",
+     "상부 위장관 내시경",
+     "응급 개복술"
+    ],
+    "answer": 2,
+    "explanation": "원 문항은 통증 · 덩이 없이 많은 피가 나와 소장의 이소성 위점막(메켈 게실)을 찾는 스캔이 답이었다. 여기서는 발작적 복통 · 구토 · 덩이 · 소량의 젤리 같은 변과 초음파 과녁 모양이 장겹침증을 말하고, 천공 · 복막염이 없으므로 공기(또는 조영) 정복 관장이 진단 겸 치료다. 수술은 정복이 실패하거나 천공 · 복막염이 있을 때다.",
+    "of": "kmle-2026-1982",
+    "changed": "통증 없음·초음파 정상 → 몇 분 간격의 발작적 울음·구토·오른쪽 윗배 소시지 모양 덩이, 초음파 과녁 모양 — 장겹침증이 되어 공기 정복 관장이 답이 된다",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.meckel-diverticulum.pertechnetate-scan#v2",
+    "context": "통증 없는 다량 혈변의 3세 여아",
+    "stem": "3세 여자아이가 어제부터 통증 없이 벽돌색 피가 섞인 많은 양의 대변을 세 번 봐서 왔다. 구토와 토혈은 없고 평소처럼 잘 논다. 혈압 94/60 mmHg, 맥박 124회/분, 호흡 24회/분, 체온 36.7 ℃. 결막이 창백하다. 배는 부드럽고 압통과 덩이가 없으며 항문 주위는 정상이다. 혈색소 7.9 g/dL, 혈소판 280,000/μL, INR 1.1, BUN 10 mg/dL. 복부 초음파는 정상이다. 정맥 수액을 맞으며 활력징후가 안정되었다. 진단을 위해 가장 적절한 검사는?",
+    "options": [
+     "상부 위장관 내시경",
+     "바륨 관장",
+     "99mTc-과테크네튬산염 스캔",
+     "대장내시경 검사",
+     "복부 단순 촬영"
+    ],
+    "answer": 3,
+    "explanation": "나이 · 성별 · 표현이 달라도 통증 · 구토 · 덩이 없는 다량 혈변과 빈혈, 토혈 없음 · BUN 정상 · 초음파 정상이라는 단서는 같다 — 소장의 메켈 게실 출혈을 먼저 생각하고, 게실 안 이소성 위점막에 모이는 과테크네튬산염 스캔으로 찾는다. 대장내시경 · 상부 내시경은 회장 게실에 닿지 못하고, 바륨 관장 · 단순 촬영은 위점막을 보지 못한다.",
+    "of": "kmle-2026-1982",
+    "changed": "2세 남아 → 3세 여아, 하루 전 세 번, 검사 순서·소견 표현을 바꿈 — 통증·구토·덩이 없는 다량 혈변, 토혈 없음·BUN 정상이라는 결정적 단서는 그대로라 답은 과테크네튬산염 스캔",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "어린아이 혈변 — 첫 검사 고르기",
+  "geo": {
+   "title": "어린아이 혈변 — 첫 검사 고르기",
+   "w": 567.0,
+   "h": 590.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "어린아이의 검붉은 혈변"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "통증 · 구토 · 덩이 · 토혈 ·",
+      "활력징후 · 혈색소"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 85.0
+    },
+    {
+     "id": "stab",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "쇼크 징후가 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 171.0
+    },
+    {
+     "id": "resus",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "수액 · 수혈로 안정화"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 57.4,
+     "y": 261.0
+    },
+    {
+     "id": "pain",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "발작적 복통 · 구토 · 덩이?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 330.0
+    },
+    {
+     "id": "us",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "초음파 → 관장",
+      "정복(장겹침증)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 420.0
+    },
+    {
+     "id": "upper",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "토혈 또는 BUN 상승?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 420.0
+    },
+    {
+     "id": "egd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "상부 내시경"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 510.0
+    },
+    {
+     "id": "scan",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "과테크네튬산염 스캔 →",
+      "양성이면 절제"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 510.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       63.0
+      ],
+      [
+       227.0,
+       85.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "stab",
+     "points": [
+      [
+       227.0,
+       149.0
+      ],
+      [
+       227.0,
+       171.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "stab",
+     "to": "resus",
+     "points": [
+      [
+       194.3,
+       218.0
+      ],
+      [
+       194.3,
+       247.0
+      ],
+      [
+       155.4,
+       247.0
+      ],
+      [
+       155.4,
+       261.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "stab",
+     "to": "pain",
+     "points": [
+      [
+       259.7,
+       218.0
+      ],
+      [
+       259.7,
+       247.0
+      ],
+      [
+       269.4,
+       247.0
+      ],
+      [
+       269.4,
+       316.0
+      ],
+      [
+       259.7,
+       316.0
+      ],
+      [
+       259.7,
+       330.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 222.0
+     }
+    },
+    {
+     "from": "resus",
+     "to": "pain",
+     "points": [
+      [
+       155.4,
+       308.0
+      ],
+      [
+       155.4,
+       316.0
+      ],
+      [
+       194.3,
+       316.0
+      ],
+      [
+       194.3,
+       330.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "pain",
+     "to": "us",
+     "points": [
+      [
+       194.3,
+       377.0
+      ],
+      [
+       194.3,
+       406.0
+      ],
+      [
+       114.0,
+       406.0
+      ],
+      [
+       114.0,
+       420.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 381.0
+     }
+    },
+    {
+     "from": "pain",
+     "to": "upper",
+     "points": [
+      [
+       259.7,
+       377.0
+      ],
+      [
+       259.7,
+       406.0
+      ],
+      [
+       340.0,
+       406.0
+      ],
+      [
+       340.0,
+       420.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 381.0
+     }
+    },
+    {
+     "from": "upper",
+     "to": "egd",
+     "points": [
+      [
+       307.3,
+       467.0
+      ],
+      [
+       307.3,
+       496.0
+      ],
+      [
+       227.0,
+       496.0
+      ],
+      [
+       227.0,
+       510.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "upper",
+     "to": "scan",
+     "points": [
+      [
+       372.7,
+       467.0
+      ],
+      [
+       372.7,
+       496.0
+      ],
+      [
+       453.0,
+       496.0
+      ],
+      [
+       453.0,
+       510.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 471.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "어린아이의 검붉은 혈변",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "통증 · 구토 · 덩이 · 토혈 · 활력징후 · 혈색소"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "통증 · 구토 · 덩이 · 토혈 · 활력징후 · 혈색소",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "쇼크 징후가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "stab",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "쇼크 징후가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "수액 · 수혈로 안정화"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "발작적 복통 · 구토 · 덩이?"
+     }
+    ]
+   },
+   {
+    "id": "resus",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "수액 · 수혈로 안정화",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "발작적 복통 · 구토 · 덩이?"
+     }
+    ]
+   },
+   {
+    "id": "pain",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "발작적 복통 · 구토 · 덩이?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "초음파 → 관장 정복(장겹침증)"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "토혈 또는 BUN 상승?"
+     }
+    ]
+   },
+   {
+    "id": "us",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "초음파 → 관장 정복(장겹침증)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "upper",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "토혈 또는 BUN 상승?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 8,
+      "toText": "상부 내시경"
+     },
+     {
+      "label": "없음",
+      "to": 9,
+      "toText": "과테크네튬산염 스캔 → 양성이면 절제"
+     }
+    ]
+   },
+   {
+    "id": "egd",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "상부 내시경",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "scan",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "과테크네튬산염 스캔 → 양성이면 절제",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1982",
+   "usmle-2026-0235"
+  ],
+  "hasErrors": false
+ },
  "cn.peds.pertussis.infant-macrolide-choice": {
   "id": "cn.peds.pertussis.infant-macrolide-choice",
   "title": "영아 백일해 — 약은 마크롤라이드, 어린 영아는 아지스로마이신",
@@ -161771,6 +162784,221 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.pharm.nondihydropyridine-ccb.av-node-negative-inotropy": {
+  "id": "cn.pharm.nondihydropyridine-ccb.av-node-negative-inotropy",
+  "title": "베라파밀 · 딜티아젬 — 방실결절과 수축을 함께 늦춘다",
+  "objective": "방실결절의 활동전위가 칼슘 전류로 오르고 심실 근육의 고원기도 칼슘 전류가 받친다는 데서, 비디하이드로피리딘 칼슘통로차단제가 방실 전도를 늦추면서 수축력도 떨어뜨리는 이유와 디곡신 · 베타차단제와의 차이를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "비디하이드로피리딘 칼슘통로차단제(non-dihydropyridine calcium channel blocker) — 베라파밀(verapamil) · 딜티아젬(diltiazem)",
+  "topic": "Pharmacology",
+  "seeAlso": [
+   "Cardiology",
+   "Physiology"
+  ],
+  "version": 1,
+  "updated": "2026-11-26",
+  "reviewStatus": "unreviewed",
+  "hash": "d3a12dcaa26a7e43",
+  "summary": [
+   "결론: 베라파밀 · 딜티아젬은 L형 칼슘통로를 막아 방실결절 전도를 늦추고, 같은 통로를 쓰는 심실 근육의 수축력도 떨어뜨린다.",
+   "시험 단서: 심방세동 심박수 조절 · 4군 항부정맥제(class IV), 박출률 감소 · 저혈압에서 악화 — negative inotropy.",
+   "왜: 결절 세포의 상승기(0기)는 나트륨이 아니라 칼슘 전류가 만들고, 심실 근육의 고원기(2기)도 칼슘 전류가 받친다.",
+   "디곡신은 음성 변력 작용이 없어 수축이 약한 심장에서 심박수 조절에 써 왔다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "베라파밀 · 딜티아젬은 L형 칼슘통로를 막아 방실결절 전도를 늦추고, 같은 통로를 쓰는 심실 근육의 수축력도 떨어뜨린다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "베라파밀 · 딜티아젬은 L형 칼슘통로를 막아 방실결절 전도를 늦추고, 같은 통로를 쓰는 심실 근육의 수축력도 떨어뜨린다."
+      ]
+     }
+    ],
+    "html": "베라파밀 · 딜티아젬은 L형 칼슘통로를 막아 방실결절 전도를 늦추고, 같은 통로를 쓰는 심실 근육의 수축력도 떨어뜨린다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "심방세동 심박수 조절 · 4군 항부정맥제(class IV), 박출률 감소 · 저혈압에서 악화 — negative inotropy.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "심방세동 심박수 조절 · 4군 항부정맥제(class IV)",
+       "박출률 감소 · 저혈압에서 악화 — negative inotropy."
+      ]
+     }
+    ],
+    "html": "심방세동 심박수 조절 · 4군 항부정맥제(class IV), 박출률 감소 · 저혈압에서 악화 — negative inotropy."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "결절 세포의 상승기(0기)는 나트륨이 아니라 칼슘 전류가 만들고, 심실 근육의 고원기(2기)도 칼슘 전류가 받친다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "결절 세포의 상승기(0기)는 나트륨이 아니라 칼슘 전류가 만들고, 심실 근육의 고원기(2기)도 칼슘 전류가 받친다."
+      ]
+     }
+    ],
+    "html": "결절 세포의 상승기(0기)는 나트륨이 아니라 칼슘 전류가 만들고, 심실 근육의 고원기(2기)도 칼슘 전류가 받친다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "디곡신은 음성 변력 작용이 없어 수축이 약한 심장에서 심박수 조절에 써 왔다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "디곡신은 음성 변력 작용이 없어 수축이 약한 심장에서 심박수 조절에 써 왔다."
+      ]
+     }
+    ],
+    "html": "디곡신은 음성 변력 작용이 없어 수축이 약한 심장에서 심박수 조절에 써 왔다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 250장 p.1911~1917, 258장 p.1949",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "pharmacology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
+  ],
+  "outline": "pharm.cardiovascular-renal",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 결절은 칼슘으로, 근육은 나트륨으로 오른다",
+    "deep": false,
+    "html": "<p>동결절 · 방실결절 세포의 활동전위 상승기(0기)는 심방 · 심실 근육보다 느리고, 나트륨이 아니라 칼슘 전류가 만든다 <sup>[1 250장 p.1917]</sup>. 그래서 방실결절은 자극을 천천히 전하며, 정상 심장에서 심방과 심실을 잇는 유일한 전기 통로다 <sup>[1 250장 p.1912]</sup>. 심실 근육은 빠른 나트륨 전류로 오른 뒤, 탈분극 칼슘 전류와 재분극 칼륨 전류가 맞서는 고원기(2기)를 지난다 <sup>[1 250장 p.1911]</sup>. 고원기에 들어온 칼슘이 수축을 일으키는 방아쇠다(전공 교과서 미대조).</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 같은 통로가 전도와 수축을 함께 맡는다",
+    "deep": false,
+    "html": "<p>베라파밀 · 딜티아젬은 심장에 선택적인 칼슘통로차단제로 4군 항부정맥제다 <sup>[1 250장 p.1916]</sup>. 결절에서 칼슘 전류가 줄면 상승기가 더 느려져 방실 전도가 늦어지고, 심방세동에서 심실로 넘어가는 자극 수가 준다. 같은 L형 칼슘 전류가 심실 근육의 고원기를 받치므로 수축력도 함께 떨어진다 — 칼슘통로차단제와 베타차단제의 음성 변력 작용이다 <sup>[1 258장 p.1949]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 심박수는 내려가지만 약한 심장은 더 약해진다",
+    "deep": false,
+    "html": "<ul>\n<li>심박수가 내려가면 이완기 충만 시간이 늘어 심박출량과 증상이 좋아진다 <sup>[1 258장 p.1949]</sup>.</li>\n<li>좌심실이 이미 약하면 수축력 감소가 이 이득을 넘어서 심박출량이 떨어지고 심부전이 악화한다.</li>\n<li>디곡신은 이 음성 변력 작용이 없어 혈압이 불안정하거나 심부전에 취약한 심근병증 환자에서 심박수 조절에 써 왔다 <sup>[1 258장 p.1949]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 이 기전이 가르는 선택",
+    "deep": false,
+    "html": "<ul>\n<li>박출률이 보존된 심방세동은 베타차단제와 베라파밀 · 딜티아젬이 모두 급성 심박수 조절 약이다 <sup>[1 258장 p.1949]</sup>.</li>\n<li>박출률이 줄었으면 음성 변력이 큰 베라파밀 · 딜티아젬을 피하고 베타차단제 · 디곡신으로 조절한다(임상 정리본 「심방세동 + 박출률 감소 — 딜티아젬·베라파밀은 금기」).</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 250장 p.1911~1917, 258장 p.1949)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "L형 칼슘 전류가 하는 일과 막았을 때",
+    "columns": [
+     "자리",
+     "칼슘 전류의 역할",
+     "막으면"
+    ],
+    "rows": [
+     [
+      "동결절 · 방실결절",
+      "상승기(0기)를 만든다 <sup>[1 250장 p.1917]</sup>, 4기 자동능을 돕는다 <sup>[1 250장 p.1913]</sup>",
+      "방실 전도 지연 → 심실 박동수 감소"
+     ],
+     [
+      "심실 근육",
+      "고원기(2기)를 칼륨 전류와 맞서 받친다 <sup>[1 250장 p.1911]</sup>",
+      "수축력 감소(음성 변력) — 약한 좌심실에서 심부전 악화"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "칼슘통로차단제 = 다 같은 약?",
+    "point": "4군 항부정맥제로 분류되는 것은 심장에 선택적인 베라파밀 · 딜티아젬이다 <sup>[1 250장 p.1916]</sup>. 혈관을 주로 넓히는 디하이드로피리딘(암로디핀 등)은 방실결절을 늦추는 심박수 조절 약으로 쓰지 않는다(전공 교과서 미대조).",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "음성 변력 = 칼슘통로차단제만?",
+    "point": "베타차단제도 음성 변력 작용이 있고 디곡신만 없다 <sup>[1 258장 p.1949]</sup>. 박출률 감소 심부전에서 베타차단제를 쓰는 것은 그 약이 장기 예후를 바꾸기 때문이지 음성 변력이 없어서가 아니다(임상 정리본 몫).",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 250장 Principles of Clinical Cardiac Electrophysiology p.1910–1917 · 258장 Atrial Fibrillation p.1947–1954",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_250 · H22_258) — 250장 p.1911 고원기(2기)는 재분극 칼륨 전류와 탈분극 칼슘 전류의 균형, 칼슘 전류 불활성화로 3기; p.1912 방실결절은 느리게 전도, 심방-심실의 유일한 전기 연결, 자율신경에 민감; p.1913 β1 자극이 L형 칼슘통로를 활성화해 4기 탈분극 · 자동능 증가; p.1916 4군 = 심장 선택적 칼슘통로차단제 베라파밀 · 딜티아젬, 디곡신은 Na⁺/K⁺ 펌프 차단; p.1917 결절 세포의 상승기(0기)는 나트륨이 아니라 칼슘 전류로 느리다. 258장 p.1949 심박수 조절의 목표는 이완기 충만 시간 연장, 급성 조절에 베타차단제 · 베라파밀 · 딜티아젬, 디곡신은 칼슘통로차단제 · 베타차단제의 음성 변력 작용이 없어 심부전에 취약한 심근병증에 써 왔다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-26",
+    "url": ""
+   }
+  ],
+  "checks": [],
+  "variants": [
+   {
+    "id": "cn.pharm.nondihydropyridine-ccb.av-node-negative-inotropy#v1",
+    "context": "같은 기전 — 결절 전도를 늦추는 이온",
+    "stem": "A 68-year-old woman with atrial fibrillation and a ventricular rate of 132/min is given intravenous diltiazem, and her ventricular rate falls to 96/min. Her blood pressure is 124/76 mm Hg. Echocardiography shows a left ventricular ejection fraction of 60%. The drug most likely slowed her ventricular rate by reducing which of the following in atrioventricular nodal cells?",
+    "options": [
+     "Calcium-mediated phase 0 depolarization",
+     "Fast sodium-mediated phase 0 depolarization",
+     "Delayed rectifier potassium current during phase 3",
+     "Activity of the Na+/K+-ATPase",
+     "Funny (If) current through HCN channels"
+    ],
+    "answer": 1,
+    "explanation": "In sinoatrial and atrioventricular nodal cells the action potential upstroke is carried by calcium rather than sodium current. Diltiazem, a cardioselective (class IV) calcium channel blocker, slows this upstroke and therefore atrioventricular conduction, lowering the ventricular rate in atrial fibrillation. The same L-type calcium current supports the ventricular plateau, so the drug also lowers contractility — tolerated here because the ejection fraction is preserved. Fast sodium current drives the upstroke of atrial and ventricular myocytes, not nodal cells; Na+/K+-ATPase is the target of digoxin.",
+    "of": "",
+    "changed": "",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
   "id": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition",
   "title": "티오퓨린 + 알로푸리놀 — 막힌 불활성 출구",
@@ -162745,10 +163973,10 @@ window.MEDKOS_CONCEPTS = {
    "Physiology",
    "Rheumatology"
   ],
-  "version": 2,
-  "updated": "2026-11-24",
+  "version": 3,
+  "updated": "2026-11-26",
   "reviewStatus": "unreviewed",
-  "hash": "5a3ab7392f5bc470",
+  "hash": "e311dc4005b78a73",
   "summary": [
    "결론: 정상 음이온 차 산증 + 소변 음이온 차 양수 + 소변 pH > 5.5 + 저칼륨 = 원위(1형) 신세관산증.",
    "시험 단서: 신석회화·결석, 근력 저하(저칼륨), 쇼그렌병·암포테리신 B — distal (type 1) RTA.",
@@ -163049,6 +164277,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "The cause and patient differ, but the deciding clues are the same: normal anion gap (140 − 116 − 16 = 8), positive urine anion gap (50 + 35 − 55 = +30, low ammonium), urine pH above 5.5 despite acidemia, and hypokalemia. This is distal (type 1) RTA; amphotericin B is a recognized drug cause. No glucosuria and a normal phosphorus argue against proximal RTA, and the low potassium argues against type 4.",
     "of": "usmle-2026-0236",
     "changed": "41세 여자·쇼그렌병·결석 → 29세 여자·암포테리신 B 치료 중, 결석 대신 신석회화만, 수치를 바꿈 ⇒ 정상 음이온 차·소변 음이온 차 양수·산혈증에도 소변 pH > 5.5·저칼륨이라는 결정 단서는 같아 답은 그대로 원위 H+ 분비 장애",
+    "flip": false
+   },
+   {
+    "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion#v3",
+    "context": "같은 저칼륨 정상 음이온 차 산증, 원인이 설사인 경우",
+    "stem": "38세 여자가 3주 전부터 하루 6~8번 묽은 설사를 하고 2주 전부터 팔다리에 힘이 없어서 왔다. 열은 없고 이뇨제나 완하제는 먹지 않는다. 혈압 104/66 mmHg, 맥박 96회/분, 호흡 20회/분, 체온 36.8 ℃. 혈청 나트륨 137 mmol/L, 칼륨 2.8 mmol/L, 염소 113 mmol/L, 중탄산염 14 mmol/L, 동맥혈 pH 7.28, 혈당 90 mg/dL, 인 3.2 mg/dL. 소변 pH 6.2, 소변 나트륨 · 칼륨 · 염소는 각각 28 · 20 · 70 mmol/L 이고 소변 포도당은 음성이다. 신장 초음파는 정상이다. 산-염기 장애의 원인으로 가장 가능성 높은 것은?",
+    "options": [
+     "2형(근위) 신세뇨관 산증",
+     "1형(원위) 신세뇨관 산증",
+     "4형 신세뇨관 산증",
+     "설사에 의한 산증",
+     "탄산탈수효소 억제제에 의한 산증"
+    ],
+    "answer": 4,
+    "explanation": "음이온 차는 137 − 113 − 14 = 10 으로 정상이다. 원 문항은 소변 음이온 차가 양수(+20)라 콩팥의 암모늄 배설 장애(원위형)였지만, 여기서는 28 + 20 − 70 = −22 로 음수다 — 콩팥이 암모늄을 많이 내보내고 있으니 산 배설은 정상이고 중탄산이 장으로 빠진 것이다. 설사에서도 산혈증 · 저칼륨이 암모니아 생성을 늘려 소변 pH 가 6 을 넘을 수 있으므로 소변 pH 만으로 원위형이라 하지 않는다. 신석회화도 없다.",
+    "of": "kmle-2026-1972",
+    "changed": "소변 음이온 차 +20·설사 없음 → 3주째 하루 6~8번 묽은 설사, 소변 음이온 차 −22 — 암모늄 배설이 늘어난 장관 중탄산 소실이 되어 정답이 설사에 의한 산증으로 바뀐다(소변 pH 6.2 는 그대로 높다)",
+    "flip": true
+   },
+   {
+    "id": "cn.physio.distal-rta.alpha-intercalated-h-secretion#v4",
+    "context": "반복 신결석으로 온 여자",
+    "stem": "35세 여자가 2년 동안 세 번째 요로결석으로 왼쪽 옆구리가 아파서 왔다. 설사 · 구토는 없고 복용하는 약은 없다. 혈압 116/74 mmHg, 맥박 80회/분, 호흡 18회/분, 체온 36.7 ℃. 혈청 나트륨 140 mmol/L, 칼륨 3.0 mmol/L, 염소 115 mmol/L, 중탄산염 16 mmol/L, 동맥혈 pH 7.31, 혈당 88 mg/dL, 인 3.6 mg/dL. 소변 pH 6.6, 소변 나트륨 · 칼륨 · 염소는 각각 45 · 32 · 52 mmol/L, 소변 포도당 음성. 복부 CT 에서 양쪽 신장 수질에 석회화와 왼쪽 요관 결석이 보인다. 가장 가능성 높은 진단은?",
+    "options": [
+     "설사에 의한 산증",
+     "4형 신세뇨관 산증",
+     "1형(원위) 신세뇨관 산증",
+     "2형(근위) 신세뇨관 산증",
+     "탄산탈수효소 억제제에 의한 산증"
+    ],
+    "answer": 3,
+    "explanation": "환자와 내원 이유가 달라도 단서는 같다 — 음이온 차 140 − 115 − 16 = 9(정상), 소변 음이온 차 45 + 32 − 52 = +25(암모늄 배설 낮음), 산혈증에도 소변 pH 6.6, 저칼륨, 신수질 석회화 · 반복 결석(저구연산뇨 · 고칼슘뇨, 알칼리 소변에서 인산칼슘 침착). 1형(원위) 신세뇨관 산증이다. 포도당뇨 · 저인산이 없어 근위형이 아니고 칼륨이 낮아 4형이 아니며 설사 · 약물이 없다.",
+    "of": "kmle-2026-1972",
+    "changed": "44세 여자·쇼그렌·근위부 근력 저하 → 35세 여자·반복 신결석·리튬 등 약물 없음·수치 바꿈 — 정상 음이온 차, 소변 음이온 차 양수, 산혈증에도 소변 pH > 5.5, 저칼륨, 신석회화라는 결정 단서가 그대로라 답은 1형(원위)",
     "flip": false
    }
   ],
@@ -179646,6 +180908,774 @@ window.MEDKOS_CONCEPTS = {
    "kmle-2026-0966",
    "kmle-2026-1309",
    "kmle-2026-1920"
+  ],
+  "hasErrors": false
+ },
+ "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis": {
+  "id": "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis",
+  "title": "과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다",
+  "objective": "새 · 곰팡이 같은 흡입 항원 노출과 노출 뒤 증상, 상 · 중엽 간유리 · 소엽 중심 결절 · 공기 걸림, 기관지 폐포 세척액 림프구 증가로 과민성 폐렴을 진단하고 특발성 폐섬유증 · 사르코이드증 · 감염(앵무병) · 호산구성 폐렴과 가른다",
+  "objectiveKind": "진단",
+  "condition": "과민성 폐렴(hypersensitivity pneumonitis) — 조류 사육자 폐(bird fancier's lung)",
+  "topic": "Pulmonology",
+  "seeAlso": [
+   "Immunology",
+   "Occupational Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-26",
+  "reviewStatus": "unreviewed",
+  "hash": "201727029c2ed291",
+  "summary": [
+   "결론: 흡입 항원 노출 + 노출 4~8시간 뒤 열 · 기침 + 간유리 · 소엽 중심 결절 · 공기 걸림 + 세척액 림프구 증가 = 과민성 폐렴.",
+   "시험 단서: 새 사육 · 곰팡이 건초 · 온수 욕조, 들숨 끝 수포음, 체중 감소, 비흡연자 — bird fancier's lung, BAL lymphocytosis.",
+   "왜: 작은 항원 입자가 말단 기도 · 폐포에 내려앉아 면역 반응(Th1 · Th17, 특이 IgG)으로 세기관지 중심 염증을 만든다.",
+   "치료의 핵심은 항원 회피 — 새를 치우고 환기, 심하면 스테로이드, 섬유화가 진행하면 항섬유화제."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "흡입 항원 노출 + 노출 4~8시간 뒤 열 · 기침 + 간유리 · 소엽 중심 결절 · 공기 걸림 + 세척액 림프구 증가 = 과민성 폐렴.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "흡입 항원 노출 + 노출 4~8시간 뒤 열 · 기침 + 간유리 · 소엽 중심 결절 · 공기 걸림 + 세척액 림프구 증가 = 과민성 폐렴."
+      ]
+     }
+    ],
+    "html": "흡입 항원 노출 + 노출 4~8시간 뒤 열 · 기침 + 간유리 · 소엽 중심 결절 · 공기 걸림 + 세척액 림프구 증가 = 과민성 폐렴."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "새 사육 · 곰팡이 건초 · 온수 욕조, 들숨 끝 수포음, 체중 감소, 비흡연자 — bird fancier's lung, BAL lymphocytosis.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "새 사육 · 곰팡이 건초 · 온수 욕조",
+       "들숨 끝 수포음",
+       "체중 감소",
+       "비흡연자 — bird fancier's lung",
+       "BAL lymphocytosis."
+      ]
+     }
+    ],
+    "html": "새 사육 · 곰팡이 건초 · 온수 욕조, 들숨 끝 수포음, 체중 감소, 비흡연자 — bird fancier's lung, BAL lymphocytosis."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "작은 항원 입자가 말단 기도 · 폐포에 내려앉아 면역 반응(Th1 · Th17, 특이 IgG)으로 세기관지 중심 염증을 만든다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "작은 항원 입자가 말단 기도 · 폐포에 내려앉아 면역 반응(Th1 · Th17, 특이 IgG)으로 세기관지 중심 염증을 만든다."
+      ]
+     }
+    ],
+    "html": "작은 항원 입자가 말단 기도 · 폐포에 내려앉아 면역 반응(Th1 · Th17, 특이 IgG)으로 세기관지 중심 염증을 만든다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "치료의 핵심은 항원 회피 — 새를 치우고 환기, 심하면 스테로이드, 섬유화가 진행하면 항섬유화제.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "치료의 핵심은 항원 회피 — 새를 치우고 환기, 심하면 스테로이드, 섬유화가 진행하면 항섬유화제."
+      ]
+     }
+    ],
+    "html": "치료의 핵심은 항원 회피 — 새를 치우고 환기, 심하면 스테로이드, 섬유화가 진행하면 항섬유화제."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 299장 p.2229~2232",
+   "items": []
+  },
+  "layer": "clinical",
+  "discipline": "",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [],
+  "outline": "h288",
+  "order": 8,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "판단 — 왜 과민성 폐렴인가",
+    "deep": false,
+    "html": "<ul>\n<li>진단은 무엇보다 <strong>증상과 맞물린 항원 노출력</strong>에서 출발한다 — 집 · 직업 노출을 자세히 묻는다 <sup>[1 299장 p.2229]</sup>.</li>\n<li>예측 인자는 알려진 항원 노출(가장 강함) · 침강 항체 · 반복 증상 · 노출 4~8시간 뒤 증상 · 들숨 수포음 · 체중 감소다 <sup>[1 299장 p.2230]</sup>.</li>\n<li>영상의 간유리 · 소엽 중심 결절 · 호기 공기 걸림과 세척액 림프구 증가가 노출력을 받친다 <sup>[1 299장 p.2229]</sup> <sup>[1 299장 p.2230]</sup>.</li>\n<li>새가 나왔다고 감염(앵무병)으로 가지 않는다 — 비섬유성 과민성 폐렴은 호흡기 감염으로 오인되기 쉽다 <sup>[1 299장 p.2230]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "기전 — 흡입 항원에서 세기관지 중심 염증으로",
+    "deep": false,
+    "html": "<p>깃털 · 배설물 · 혈청 단백 같은 새 항원, 곰팡이 건초의 호열성 방선균 등 작은 입자가 말단 기도와 폐포까지 내려앉는다. 감작된 사람에서 Th1 · Th17 반응과 특이 IgG, 선천 면역이 함께 작동해 세기관지 둘레에 림프구 위주의 침윤과 느슨한 비건락 육아종을 만든다 <sup>[1 299장 p.2229]</sup> <sup>[1 299장 p.2230]</sup>. 작은 기도가 염증으로 좁아져 호기에 공기가 갇히고, 폐포 침윤은 간유리 음영과 확산능 저하로 나타난다. 노출이 오래 이어지면 섬유화 · 벌집으로 진행하고, 이 단계는 항원을 피해도 일부 되돌아가지 않는다 <sup>[1 299장 p.2229]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "가르는 소견 — 노출 · 분포 · 세척액",
+    "deep": false,
+    "html": "<ul>\n<li>특이 IgG(침강 항체)는 노출된 무증상자에게도 있고 항원 패널은 위음성이 많다 — 보조 근거일 뿐이다 <sup>[1 299장 p.2229]</sup>.</li>\n<li>세척액 림프구 증가는 특징적이지만 특이하지 않고, CD4/CD8 비는 흔히 1 미만이나 진단 가치가 낮다 <sup>[1 299장 p.2230]</sup>.</li>\n<li>폐기능은 제한성 · 폐쇄성 모두 가능하다 — 양상으로 진단하지 않는다 <sup>[1 299장 p.2229]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>치료의 핵심은 항원 회피다 — 새를 치우고 곰팡이를 없애고 환기를 좋게 한다. 보호구는 감작된 사람을 충분히 막지 못할 수 있다 <sup>[1 299장 p.2230]</sup>.</li>\n<li>심한 비섬유성 · 섬유성 과민성 폐렴에는 프레드니손 0.5~1 mg/kg/일(최대 60 mg) 1~2주 뒤 2~6주 감량을 쓰지만, 증상 회복을 앞당길 뿐 장기 예후를 바꾸지 않는다 <sup>[1 299장 p.2230]</sup>.</li>\n<li>진행하는 섬유화에는 닌테다닙 · 피르페니돈을, 말기에는 폐 이식을 고려한다 <sup>[1 299장 p.2230]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 299장 p.2229~2232)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "간질성 침윤 + 아급성 숨참 — 무엇으로 가르나",
+    "columns": [
+     "질환",
+     "영상",
+     "세척액 · 혈액",
+     "근거"
+    ],
+    "rows": [
+     [
+      "과민성 폐렴",
+      "간유리 · 소엽 중심 결절 · 호기 공기 걸림, 기저부 흔히 보존",
+      "림프구 증가(CD4/CD8 흔히 &lt; 1), 특이 IgG",
+      "<sup>[1 299장 p.2229]</sup> <sup>[1 299장 p.2230]</sup>"
+     ],
+     [
+      "특발성 폐섬유증",
+      "하엽 · 흉막 아래 그물 · 벌집",
+      "림프구 증가 없음",
+      "<sup>[1 299장 p.2229]</sup>"
+     ],
+     [
+      "사르코이드증",
+      "양측 폐문 림프절 비대",
+      "폐 밖 침범 · 잘 짜인 육아종",
+      "<sup>[1 299장 p.2230]</sup>"
+     ],
+     [
+      "만성 호산구성 폐렴",
+      "말초 · 흉막 쪽 이동성 음영",
+      "말초 호산구 약 90 % · 세척액 호산구 약 60 %",
+      "<sup>[1 299장 p.2232]</sup>"
+     ]
+    ],
+    "note": "폐기능은 제한성 · 폐쇄성 모두 나올 수 있어 진단에 쓰지 않는다 — 중증도와 치료 반응을 볼 때 쓴다 <sup>[1 299장 p.2229]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "앵무병(감염) vs 과민성 폐렴 — 「새 + 폐렴 = 앵무병」?",
+    "point": "새 노출은 두 질환의 공통 단서다. 과민성 폐렴은 노출을 되풀이할 때마다 몇 시간 뒤 증상이 오고, 수개월에 걸쳐 숨참 · 체중 감소가 진행하며, 영상은 양측 간유리 · 소엽 중심 결절 · 공기 걸림, 세척액은 림프구가 많다. 비섬유성 과민성 폐렴은 호흡기 감염으로 오인되기 쉽다 <sup>[1 299장 p.2230]</sup>.",
+    "exception": "감염(앵무병)은 대개 급성 열성 폐렴 한 번으로 오고 항생제(테트라사이클린 계열)에 반응한다 — 1년에 걸친 진행 · 노출과 맞물린 반복은 감염의 모습이 아니다.",
+    "cites": "<sup>[1 299장 p.2230]</sup>"
+   },
+   {
+    "contrast": "특발성 폐섬유증 vs 섬유성 과민성 폐렴",
+    "point": "특발성 폐섬유증은 하엽 · 흉막 아래 그물 음영과 벌집이 특징이다. 과민성 폐렴의 벌집은 진행한 경우에만 있고 폐 기저부가 흔히 보존되며, 호기 영상의 공기 걸림과 노출력이 가른다 <sup>[1 299장 p.2229]</sup>.",
+    "exception": "만성(섬유성) 과민성 폐렴은 특발성 폐섬유증과 구분이 어렵고 예후도 비슷하다 — 노출력을 끝까지 묻는다.",
+    "cites": "<sup>[1 299장 p.2229]</sup>"
+   },
+   {
+    "contrast": "사르코이드증 vs 과민성 폐렴 — 둘 다 비건락 육아종 · 세척액 림프구 증가",
+    "point": "사르코이드증은 폐문 림프절 비대가 두드러지고 폐 밖 장기를 침범하며 육아종이 잘 짜여 있다. 과민성 폐렴의 육아종은 작은 기도 둘레에 느슨하고 경계가 흐리다 <sup>[1 299장 p.2230]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 299장 p.2230]</sup>"
+   },
+   {
+    "contrast": "만성 호산구성 폐렴 — 「세척액 세포가 늘었다」?",
+    "point": "만성 호산구성 폐렴은 말초혈액 호산구 증가가 약 90 % 에 있고 세척액 호산구가 평균 약 60 % 다. 세척액이 림프구 위주이고 말초 호산구가 정상이면 아니다 <sup>[1 299장 p.2232]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 299장 p.2232]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "특이 IgG(침강 항체)는 보조 근거일 뿐 — 노출된 무증상자도 양성이고, 항원 패널은 위음성이 많다.",
+   "세척액 림프구 증가는 특이하지 않고, 흡연자는 기준을 낮춰 본다.",
+   "노출 뒤 4~8시간 증상 · 들숨 수포음 · 체중 감소 · 반복 증상은 예측 인자다."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 299장 Hypersensitivity Pneumonitis and Pulmonary Infiltrates with Eosinophilia p.2228–2234",
+    "checked": "본문 대조(드라이브 문서 H22_299) — p.2229 조류 사육자 폐(깃털·배설물·혈청 단백), 작은 항원이 말단 기도·폐포에 내려앉는 면역 매개 질환(Th1·Th17, 침강 IgG), 비섬유성/섬유성 분류, 만성형 체중 감소·곤봉지·벌집·IPF 와 비슷한 예후, 진단은 노출력과 증상의 연관이 먼저, HRCT 간유리·소엽 중심 결절·호기 공기 걸림, 진행 시 벌집이나 기저부 흔히 보존, 폐기능은 제한/폐쇄 모두 가능해 진단에 쓰지 않음, 특이 IgG 는 보조·위음성; p.2230 BAL 림프구 증가 특징적·CD4/CD8 흔히 < 1, 느슨한 비건락 육아종 vs 사르코이드증의 잘 짜인 육아종·폐문 림프절 비대·폐 밖 침범, 예측 인자(노출·침강 항체·반복 증상·노출 4~8시간 뒤 증상·들숨 수포음·체중 감소), 비섬유성은 호흡기 감염으로 오인, 치료 = 항원 회피·새 제거·환기, 심하면 프레드니손 0.5~1 mg/kg(≤ 60 mg) 1~2주 후 2~6주 감량, 장기 예후는 바꾸지 않음, 진행 섬유화에 닌테다닙·피르페니돈; p.2232 만성 호산구성 폐렴 말초 호산구 약 90 %·BAL 호산구 평균 약 60 %",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-26",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "과민성 폐렴에서 호기 CT 에 공기 걸림이 보이는 이유는?",
+    "a": "흡입 항원이 말단 세기관지 · 폐포에 내려앉아 작은 기도에 염증(세기관지염)이 생기므로, 숨을 내쉴 때 그 소엽의 공기가 빠지지 못한다."
+   },
+   {
+    "q": "과민성 폐렴 치료의 첫 단계와 스테로이드의 역할은?",
+    "a": "원인 항원 회피(새 치우기 · 곰팡이 제거 · 환기)가 핵심이다. 스테로이드는 심한 경우 증상 회복을 앞당기지만 장기 예후를 바꾸지 않는다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis#v1",
+    "context": "같은 새 노출, 급성 열성 폐렴으로 온 경우",
+    "stem": "48세 남자가 5일 전부터 39 ℃ 의 열, 심한 두통, 근육통, 마른기침이 나서 왔다. 2주 전 병든 앵무새를 새로 들여 그 새장을 직접 청소했고, 그 새는 지난주에 죽었다. 이전에 호흡기 증상은 없었다. 혈압 118/72 mmHg, 맥박 92회/분, 호흡 24회/분, 체온 39.2 ℃. 오른쪽 아래 폐에서 수포음이 들리고 비장 끝이 만져진다. 흉부 X선에서 오른쪽 하엽에 경화가 있다. 객담 그람 염색에서 균이 거의 보이지 않는다. Chlamydia psittaci 미세면역형광 항체가가 2주 간격으로 4배 상승했다. 가장 적절한 치료는?",
+    "options": [
+     "새를 치우고 경과 관찰",
+     "독시사이클린",
+     "프레드니솔론",
+     "아목시실린",
+     "닌테다닙"
+    ],
+    "answer": 2,
+    "explanation": "원 문항은 노출을 되풀이할 때마다 생기는 증상과 1년에 걸친 진행, 간유리 · 소엽 중심 결절 · 공기 걸림 · 세척액 림프구로 면역 반응인 과민성 폐렴이었다. 여기서는 병든 새에 한 번 노출된 뒤 급성 고열 · 두통 · 비장 비대 · 엽성 경화와 항체가 4배 상승이 감염(앵무병)을 말하고, 세포 안 세균이라 테트라사이클린 계열(독시사이클린)로 치료한다. 베타락탐은 듣지 않고, 스테로이드 · 항섬유화제는 과민성 폐렴의 치료다.",
+    "of": "kmle-2026-1986",
+    "changed": "1년 진행·노출과 맞물린 반복 증상·간유리/공기 걸림/림프구 → 새장 청소 1주 뒤 시작된 고열·심한 두통·마른기침, 비장 비대, 한쪽 폐 하엽 경화, 항체가 상승 — 감염인 앵무병이 되어 독시사이클린이 답이 된다",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis#v2",
+    "context": "집 안에서 잉꼬를 기르는 비흡연 여자",
+    "stem": "49세 여자가 8개월 전부터 숨이 차고 마른기침이 나며 체중이 3 kg 줄어서 왔다. 담배는 피우지 않는다. 3년 전부터 거실에서 잉꼬 20여 마리를 기르고 깃털 이불을 쓴다. 휴가로 집을 비운 2주 동안은 숨이 덜 찼다. 양쪽 폐에서 들숨 끝 수포음이 들리고 곤봉지는 없다. 기관지 폐포 세척액은 림프구 52 %, 호산구 1 % 이다. 말초혈액 호산구는 180/μL 다. 고해상도 흉부 CT 에서 양쪽 상 · 중엽 위주의 간유리 음영과 소엽 중심 결절, 호기 영상의 모자이크 공기 걸림이 보이고 벌집 모양과 폐문 림프절 비대는 없다. 폐기능 검사에서 FVC 예측치 72 %, DLCO 예측치 58 % 이다. 가장 가능성 높은 진단은?",
+    "options": [
+     "사르코이드증",
+     "앵무병 폐렴",
+     "과민성 폐렴",
+     "특발성 폐섬유증",
+     "만성 호산구성 폐렴"
+    ],
+    "answer": 3,
+    "explanation": "환자 · 새 · 제시 순서가 달라도 새 항원의 지속 노출과 노출을 벗어나면 좋아지는 증상, 상 · 중엽 간유리 · 소엽 중심 결절 · 공기 걸림, 세척액 림프구 증가라는 단서는 같다 — 과민성 폐렴이다. 벌집 · 하엽 우세가 없어 특발성 폐섬유증이 아니고, 폐문 림프절 비대가 없어 사르코이드증, 말초 · 세척액 호산구가 정상이라 호산구성 폐렴이 아니다. 수개월 진행과 노출에 따른 변화는 급성 감염(앵무병)의 모습이 아니다.",
+    "of": "kmle-2026-1986",
+    "changed": "56세 남자·비둘기 → 49세 여자·집 안 잉꼬 20마리와 깃털 이불, 검사 제시 순서를 바꿈 — 새 항원의 지속 노출·노출과 맞물린 증상·간유리/소엽 중심 결절/공기 걸림·세척액 림프구라는 결정적 단서는 그대로라 답은 과민성 폐렴",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "아급성 숨참 + 간질 음영 — 과민성 폐렴 가르기",
+  "geo": {
+   "title": "아급성 숨참 + 간질 음영 — 과민성 폐렴 가르기",
+   "w": 567.1,
+   "h": 641.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "수개월 진행하는 숨참 ·",
+      "마른기침"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 331.2,
+     "y": 16.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "집 · 직업 노출력 · 노출 뒤",
+      "증상 시각"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 331.1,
+     "y": 102.0
+    },
+    {
+     "id": "exp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "알려진 흡입 항원 노출이",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 331.0,
+     "y": 188.0
+    },
+    {
+     "id": "ild",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 간질성 폐질환 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.1,
+     "y": 402.0
+    },
+    {
+     "id": "ct",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "간유리 · 소엽 중심 결절 ·",
+      "공기 걸림?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 250.0,
+     "y": 295.0
+    },
+    {
+     "id": "bal",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "기관지 폐포 세척액 세포 분획"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.1,
+     "y": 402.0
+    },
+    {
+     "id": "lym",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "림프구 증가 · 호산구 정상?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 471.0
+    },
+    {
+     "id": "hp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "과민성 폐렴 → 항원 회피"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 561.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "호산구성 폐렴 · 감염 등",
+      "재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 561.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       429.2,
+       80.0
+      ],
+      [
+       429.1,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "exp",
+     "points": [
+      [
+       429.1,
+       166.0
+      ],
+      [
+       429.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "exp",
+     "to": "ct",
+     "points": [
+      [
+       396.3,
+       252.0
+      ],
+      [
+       396.3,
+       281.0
+      ],
+      [
+       348.0,
+       281.0
+      ],
+      [
+       348.0,
+       295.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 381.3,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "exp",
+     "to": "ild",
+     "points": [
+      [
+       461.7,
+       252.0
+      ],
+      [
+       461.7,
+       281.0
+      ],
+      [
+       473.7,
+       281.0
+      ],
+      [
+       473.7,
+       388.0
+      ],
+      [
+       485.8,
+       388.0
+      ],
+      [
+       485.8,
+       402.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 446.7,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "bal",
+     "points": [
+      [
+       315.3,
+       359.0
+      ],
+      [
+       315.3,
+       388.0
+      ],
+      [
+       227.1,
+       388.0
+      ],
+      [
+       227.1,
+       402.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 300.3,
+      "y": 363.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "ild",
+     "points": [
+      [
+       380.6,
+       359.0
+      ],
+      [
+       380.6,
+       388.0
+      ],
+      [
+       420.4,
+       388.0
+      ],
+      [
+       420.4,
+       402.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하엽 벌집만"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 347.2,
+      "y": 363.0
+     }
+    },
+    {
+     "from": "bal",
+     "to": "lym",
+     "points": [
+      [
+       227.1,
+       449.0
+      ],
+      [
+       227.0,
+       471.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "lym",
+     "to": "hp",
+     "points": [
+      [
+       194.3,
+       518.0
+      ],
+      [
+       194.3,
+       547.0
+      ],
+      [
+       114.0,
+       547.0
+      ],
+      [
+       114.0,
+       561.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 522.0
+     }
+    },
+    {
+     "from": "lym",
+     "to": "other",
+     "points": [
+      [
+       259.7,
+       518.0
+      ],
+      [
+       259.7,
+       547.0
+      ],
+      [
+       340.0,
+       547.0
+      ],
+      [
+       340.0,
+       561.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 522.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "수개월 진행하는 숨참 · 마른기침",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "집 · 직업 노출력 · 노출 뒤 증상 시각"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "집 · 직업 노출력 · 노출 뒤 증상 시각",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "알려진 흡입 항원 노출이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "exp",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "알려진 흡입 항원 노출이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "간유리 · 소엽 중심 결절 · 공기 걸림?"
+     },
+     {
+      "label": "없음",
+      "to": 6,
+      "toText": "다른 간질성 폐질환 평가"
+     }
+    ]
+   },
+   {
+    "id": "ct",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "간유리 · 소엽 중심 결절 · 공기 걸림?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 5,
+      "toText": "기관지 폐포 세척액 세포 분획"
+     },
+     {
+      "label": "하엽 벌집만",
+      "to": 6,
+      "toText": "다른 간질성 폐질환 평가"
+     }
+    ]
+   },
+   {
+    "id": "bal",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "기관지 폐포 세척액 세포 분획",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "림프구 증가 · 호산구 정상?"
+     }
+    ]
+   },
+   {
+    "id": "ild",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 간질성 폐질환 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lym",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "림프구 증가 · 호산구 정상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "과민성 폐렴 → 항원 회피"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "호산구성 폐렴 · 감염 등 재평가"
+     }
+    ]
+   },
+   {
+    "id": "hp",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "과민성 폐렴 → 항원 회피",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "호산구성 폐렴 · 감염 등 재평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1986"
   ],
   "hasErrors": false
  },
