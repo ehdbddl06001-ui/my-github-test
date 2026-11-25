@@ -1910,8 +1910,29 @@
    "date": "2026-11-26",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1957": {
+   "id": "kmle-2026-1957",
+   "exam": "kmle",
+   "subject": "Cardiology",
+   "step": "",
+   "type": "Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties",
+   "style": "",
+   "modality": "",
+   "question": "이 환자에게 투여를 피해야 하는 것은?",
+   "chosen": 2,
+   "chosenText": "클로피도그렐 부하 용량",
+   "answer": 1,
+   "answerText": "니트로글리세린 설하 투여",
+   "coreNote": "",
+   "differ": "",
+   "decision": "하벽 ST 분절 상승 심근경색에 V4R ST 상승, 목정맥 확장, 맑은 폐, 저혈압이 함께 있어 우심실 경색이다. 우심실 경색은 전부하에 의존하므로 니트로글리세린을 피하고 수액으로 전부하를 유지하면서 재관류한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T23:29:34.063Z"
+ "updated": "2026-11-25T23:32:42.252Z"
 }
