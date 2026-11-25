@@ -1847,8 +1847,29 @@
    "date": "2026-11-26",
    "device": "pc-6cgqx4",
    "note": ""
+  },
+  "kmle-2026-1971": {
+   "id": "kmle-2026-1971",
+   "exam": "kmle",
+   "subject": "Nephrology",
+   "step": "",
+   "type": "Sudden Left Flank Pain and Blood in the Urine Two Months after a Diagnosis of Heavy Protein Leak in a Man in His Fifties",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성 높은 진단은?",
+   "chosen": 2,
+   "chosenText": "급성 신우신염",
+   "answer": 0,
+   "answerText": "신정맥 혈전증",
+   "coreNote": "",
+   "differ": "",
+   "decision": "알부민 1.9 g/dL의 막성 신병증은 신증후군 중 혈전 위험이 가장 높다. 갑작스러운 옆구리 통증, 육안 혈뇨, 크레아티닌·젖산탈수소효소 상승이 있고 감염·결석·색전 단서가 없어 신정맥 혈전증이다 — 조영증강 CT(또는 MR) 정맥상으로 확인하고 항응고한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-26",
+   "device": "pc-6cgqx4",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T23:16:23.702Z"
+ "updated": "2026-11-25T23:27:09.049Z"
 }
