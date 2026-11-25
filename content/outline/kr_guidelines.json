@@ -1,9 +1,9 @@
 {
   "version": 1,
   "updated": "2026-11-25",
-  "folder": "내 드라이브/교과서/국내_가이드라인",
-  "folder_id": "",
-  "note": "국내 학회 최신 임상진료지침 레지스트리(원문 PDF는 Google Drive 비공개 보관, 저장소에 커밋하지 않는다). 해리슨 22판(content/outline/harrison22.json)과의 원문 대조 결과는 content/outline/kr_vs_harrison/<과>.yaml에 저장한다. status: pending_pdf(원문 미확보) | ready(Drive 등록 완료) | compared(Opus 원문 대조 완료).",
+  "folder": "_가이드라인",
+  "folder_id": "1Lsz3gYxar0W0txACCPGPPD19T4s-VnFX",
+  "note": "국내 학회 최신 임상진료지침 레지스트리(원문은 Google Drive `_가이드라인` 폴더 — 하위 폴더 없이 한 폴더에 둔다 · 저장소에 커밋하지 않는다). drive_path = 그 폴더 안의 실제 파일명(아직 없으면 올릴 때 쓸 이름), drive_doc_id = 대표 파일 ID, drive_files = 트랙에 딸린 다른 파일(부분 원문 포함). 해리슨 22판(content/outline/harrison22.json)과의 원문 대조 결과는 content/outline/kr_vs_harrison/<과>.yaml에 저장한다. status: pending_pdf(원문 미확보 또는 일부만 확보) | ready(대표 원문 Drive 등록 완료) | compared(원문 대조 완료).",
   "guidelines": [
     {
       "id": "kr-kta-nodule-2024",
@@ -18,12 +18,12 @@
       "h22_chapters": [397],
       "access": "public_pdf",
       "source_portal": "ijthyroid.org / thyroid.kr",
-      "journal": "Int J Thyroidol",
-      "doi": "",
+      "journal": "Int J Thyroidol 2024;17(1):208-244",
+      "doi": "10.11106/ijt.2024.17.1.208",
       "pmid": "",
-      "drive_path": "01_내분비/KR_endo_thyroid-nodule_2024.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KTA_thyroid_nodule_2024.pdf",
+      "drive_doc_id": "1T1Ed0toIryO9e3tVKqWP2IItFb-8tBoJ",
+      "status": "compared",
       "keywords": ["갑상선 결절", "갑상선결절", "갑상샘 결절", "갑상샘결절", "thyroid-nodule", "K-TIRADS", "미세침흡인"],
       "check_points": [
         "K-TIRADS 3·4·5 FNA 크기 역치 vs ATA/해리슨",
@@ -44,12 +44,12 @@
       "h22_chapters": [397],
       "access": "public_pdf",
       "source_portal": "ijthyroid.org / thyroid.kr",
-      "journal": "Int J Thyroidol",
-      "doi": "",
+      "journal": "Int J Thyroidol 2024;17(1):1-207 (개요 DOI · 장마다 별도 DOI)",
+      "doi": "10.11106/ijt.2024.17.1.1",
       "pmid": "",
-      "drive_path": "01_내분비/KR_endo_dtc_2024.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KTA_DTC_2024_full_pp1-207.pdf",
+      "drive_doc_id": "1Oar2EtgFwF5I0TFrf7jUSCWaEYzEIsMJ",
+      "status": "compared",
       "keywords": ["갑상선암", "유두암", "thyroid-cancer", "papillary-thyroid"],
       "check_points": [
         "저위험 유두갑상선미세암 적극적 관찰 기준",
@@ -73,14 +73,17 @@
       "journal": "Diabetes Metab J 2025;49(4):582-783",
       "doi": "10.4093/dmj.2025.0469",
       "pmid": "",
-      "drive_path": "01_내분비/KR_endo_diabetes_2025.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KDA_diabetes_2025.pdf",
+      "drive_doc_id": "1ykPfap0BvsWB2E8SI1qJeGLnU2vNH8wD",
+      "status": "compared",
       "keywords": ["당뇨병", "당뇨", "HbA1c", "diabetes", "SGLT2", "GLP-1", "당뇨병성 케톤산증", "고삼투압"],
       "check_points": [
         "선별검사 연령(35세 이상·위험인자 19세 이상)",
         "목표 HbA1c(6.5% vs ADA 7.0%)",
         "초기 병용요법 기준 및 동반질환(심부전·CKD·ASCVD)별 1차 약제"
+      ],
+      "drive_files": [
+        {"file": "KDA_consensus_screening_pharm_severe_2025.pdf", "id": "1aCt8nQXGy2YD_5U5WIOKsTWQnmy6aHbO", "role": "2025 합의안(선별·약물·중증) 보조"}
       ]
     },
     {
@@ -96,16 +99,21 @@
       "h22_chapters": [419],
       "access": "public_pdf",
       "source_portal": "lipid.or.kr / e-jla.org",
-      "journal": "J Lipid Atheroscler",
+      "journal": "단행본(2022-11-30 발행) · 인쇄쪽 = PDF 쪽 − 2",
       "doi": "",
       "pmid": "",
-      "drive_path": "01_내분비/KR_endo_dyslipidemia_2022.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KSoLA_dyslipidemia_5th_2022.pdf",
+      "drive_doc_id": "1IHJLUOdzwvoJ2AOeZdXEvf-Cnl-3HMyE",
+      "status": "compared",
       "keywords": ["이상지질혈증", "고지혈증", "LDL", "스타틴", "dyslipidemia", "statin"],
       "check_points": [
         "위험도 분류(초고위험 <55 & 50%↓, 고위험 <70 등) vs ACC/AHA 10년 ASCVD 계산기",
         "에제티미브·PCSK9 억제제 병용 기준"
+      ],
+      "drive_files": [
+        {"file": "KSoLA_dyslipidemia_5th_2022_pocket.pdf", "id": "1IjHKzcNE76JnCBfYM01U5Bs92yL-9FV5", "role": "포켓판"},
+        {"file": "KSoLA_dyslipidemia_fact_sheet_2024.pdf", "id": "1W7Js6VPXAYOVcYyDKQRXesePPVIAhjr3", "role": "2024 팩트시트"},
+        {"file": "KSoLA_secondary_dyslipidemia_2024_KJM2025.html", "id": "1eKYMVncKe49icNyWGUmznr4sRhqTx_TZ", "role": "2024 이차성 이상지질혈증 합의안"}
       ]
     },
     {
@@ -121,17 +129,20 @@
       "h22_chapters": [413, 414],
       "access": "public_pdf",
       "source_portal": "kosso.or.kr",
-      "journal": "J Obes Metab Syndr",
-      "doi": "",
+      "journal": "J Obes Metab Syndr 2025;34:322-343 (진단·약물치료 개정 — 비만 정의·수술 수치는 제8판 유지)",
+      "doi": "10.7570/jomes25042",
       "pmid": "",
-      "drive_path": "01_내분비/KR_endo_obesity_2024.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KSSO_obesity_guideline_9th_2024.pdf",
+      "drive_doc_id": "1po93wrqJRx9a0bqDevDmEv1uTfP0Yybd",
+      "status": "compared",
       "keywords": ["비만", "obesity", "비만대사수술", "체질량지수 30", "체질량지수 25"],
       "check_points": [
         "한국인 BMI 기준(비만 ≥25, 2단계 ≥30, 3단계 ≥35) vs 서구(≥30)",
         "복부비만 허리둘레(남 90/여 85 cm)",
         "약물치료 및 비만대사수술 BMI 적응증"
+      ],
+      "drive_files": [
+        {"file": "KSSO_obesity_guideline_8th_2022.pdf", "id": "1rB9SYQ8Jj-_pEkkwZyn8p2Kg84nu8YLZ", "role": "제8판 J Obes Metab Syndr 2023;32:1-24 (doi 10.7570/jomes23016) — BMI·허리둘레·수술 기준 원문"}
       ]
     },
     {
@@ -150,14 +161,18 @@
       "journal": "J Bone Metab",
       "doi": "",
       "pmid": "",
-      "drive_path": "01_내분비/KR_endo_osteoporosis_2026.pdf",
+      "drive_path": "KSBMR_osteoporosis_2026.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["골다공증", "골밀도", "T-score", "osteoporosis", "비스포스포네이트", "데노수맙"],
       "check_points": [
         "치료 시작 기준(T-score·골절·FRAX) 및 목표지향 치료",
         "초고위험군 골형성제 우선 전략 및 MRONJ 예방"
-      ]
+      ],
+      "drive_files": [
+        {"file": "KSBMR_PMO_position_2023_PMC10721382.xml", "id": "1HJebY_GLV4l_Bh1NiY3VfxJGapEt92EH", "role": "2023 폐경후 골다공증 입장문(진료지침 아님)"}
+      ],
+      "access_note": "2026 개정판은 ksbmr.org 구입신청(책자)만 · 2024판 전문은 회원 전용 — 사용자가 직접 확보"
     },
     {
       "id": "kr-ksh-hypertension-2026",
@@ -172,17 +187,21 @@
       "h22_chapters": [288],
       "access": "public_pdf",
       "source_portal": "koreanhypertension.org / clinicalhypertension.org",
-      "journal": "Clin Hypertens 2026;32(1):e31",
+      "journal": "학회 단행본(수정본) · 요약 논문 Clin Hypertens 2026;32:e31",
       "doi": "10.5646/ch.2026.32.e31",
       "pmid": "",
-      "drive_path": "02_순환기/KR_cardio_hypertension_2026.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KSH_hypertension_2026.pdf",
+      "drive_doc_id": "1gw91RFfI-wCT5S4KPWPw7ucDSuH95kv1",
+      "status": "ready",
       "keywords": ["고혈압", "hypertension", "목표혈압", "강압제"],
       "check_points": [
         "진단 기준(140/90 vs ACC/AHA 130/80)",
         "이완기단독고혈압(IDH) 신규 분류",
         "고위험군(당뇨·CKD 등) 목표혈압 <130/80 및 1차 약제"
+      ],
+      "drive_files": [
+        {"file": "KSH_hypertension_2026_highlights_en.pdf", "id": "1WTsGXM-lLI0sHxxXSo7jkZj8MClfZVyJ", "role": "영문 요약(Highlights) — doi 10.5646/ch.2026.32.e31 · PMID 42183028"},
+        {"file": "KSH_hypertension_2026_tables-figures.pdf", "id": "1WpI2Hz2f6ANROgWKNNOU2DXSqOtHG2ZO", "role": "표·그림·권고안 모음"}
       ]
     },
     {
@@ -198,17 +217,21 @@
       "h22_chapters": [258],
       "access": "public_pdf",
       "source_portal": "k-hrs.org",
-      "journal": "Int J Arrhythm",
+      "journal": "학회 단행본 3권(PART 1 일반 · 2 시술 · 3 NOAC) · 학술지 게재본 없음",
       "doi": "",
       "pmid": "",
-      "drive_path": "02_순환기/KR_cardio_afib_2024.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KHRS_AF_2024_part1_general.pdf",
+      "drive_doc_id": "1VZCfsnZWmoM1Ib9R5X1zIX4h5GmMrp8x",
+      "status": "ready",
       "keywords": ["심방세동", "atrial-fibrillation", "NOAC", "CHA2DS2", "항응고"],
       "check_points": [
         "CHA2DS2-VASc 항응고 시작 점수 및 성별·연령 쟁점",
         "동아시아 저체중·신기능 저하 NOAC 감량 기준",
         "조기 리듬조절 및 전극도자절제술 적응증"
+      ],
+      "drive_files": [
+        {"file": "KHRS_AF_2024_part2_procedural.pdf", "id": "1VxlHK4xhWgyPmDdFN0pw-Il5CXl6psiP", "role": "PART 2 시술적 치료"},
+        {"file": "KHRS_AF_2024_part3_NOAC.pdf", "id": "1aVSQ3xjcH2bZThE1Mrm3464U4kvlIfoc", "role": "PART 3 NOAC"}
       ]
     },
     {
@@ -224,16 +247,21 @@
       "h22_chapters": [264, 265],
       "access": "public_pdf",
       "source_portal": "kshf.or.kr",
-      "journal": "Int J Heart Fail",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "02_순환기/KR_cardio_heart-failure_2022.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Korean Circ J 2023;53(4):195-216 (Part 1) · 4부작 동시 게재(Int J Heart Fail 판은 봇 차단으로 KCJ 판 확보)",
+      "doi": "10.4070/kcj.2023.0046",
+      "pmid": "37161680",
+      "drive_path": "KSHF_heartfailure_2022_part1_definition-diagnosis.pdf",
+      "drive_doc_id": "1PlOaAjUnXIUXyRPGyFouSMKanr8PXIcB",
+      "status": "ready",
       "keywords": ["심부전", "heart-failure", "HFrEF", "HFpEF", "ARNI"],
       "check_points": [
         "HFrEF 4대 핵심약물(ARNI/ACEi·BB·MRA·SGLT2i) 적용",
         "HFmrEF·HFpEF 진단 알고리즘 및 치료 차이"
+      ],
+      "drive_files": [
+        {"file": "KSHF_heartfailure_2022_part2_treatment.pdf", "id": "1KWAMrCYbXI9IQcB14k0Gd1ncluXq8v2X", "role": "Part 2 치료 — KCJ 2023;53:217-238 · doi 10.4070/kcj.2023.0047 · PMID 37161681"},
+        {"file": "KSHF_heartfailure_2022_part3_comorbidities.pdf", "id": "14bEiBt7y41R-THo8vFrBCweQCpc_SnPN", "role": "Part 3 원인·동반질환 — KCJ 2023;53:425-451 · doi 10.4070/kcj.2023.0114 · PMID 37525389"},
+        {"file": "KSHF_heartfailure_2022_part4_advanced-acute.pdf", "id": "1ArcpbfKLGzkcrmBheJVRgkMD-pFvJTRR", "role": "Part 4 진행성·급성 — KCJ 2023;53:452-471 · doi 10.4070/kcj.2023.0115 · PMID 37525390"}
       ]
     },
     {
@@ -249,12 +277,12 @@
       "h22_chapters": [183],
       "access": "public_pdf",
       "source_portal": "kdca.go.kr / lungkorea.org",
-      "journal": "Tuberc Respir Dis",
+      "journal": "결핵진료지침 제5판 단행본(공동위원회·질병관리청, ISBN 979-11-6860-335-6) — 대한결핵및호흡기학회 게시본",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_pulm_tuberculosis_2024.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KATRD-KDCA_tuberculosis_2024_5th.pdf",
+      "drive_doc_id": "1y2-Rn6vJxPdIsUNtgXwEiVC4lUoBBa9D",
+      "status": "ready",
       "keywords": ["결핵", "tuberculosis", "잠복결핵", "MDR-TB", "BPaLM"],
       "check_points": [
         "잠복결핵 선별 대상 및 치료요법(3HP·4R·9H)",
@@ -275,12 +303,12 @@
       "h22_chapters": [131],
       "access": "public_pdf",
       "source_portal": "ksid.or.kr / kdca.go.kr",
-      "journal": "Infect Chemother",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_id_cap_latest.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "한글판(대한감염학회 게시) · 영문 게재본 Infect Chemother 2018;50(2):160-198 (영문 PDF 는 봇 차단) · 더 새로운 성인 CAP 지침 없음",
+      "doi": "10.3947/ic.2018.50.2.160",
+      "pmid": "29968985",
+      "drive_path": "KSID_CAP_antibiotics_2018_ko.pdf",
+      "drive_doc_id": "1bUYfA_sxx6b8-xRQBk-Yu7x4oG9VXoZ0",
+      "status": "ready",
       "keywords": ["폐렴", "pneumonia", "CAP", "마크로라이드"],
       "check_points": [
         "국내 폐렴구균 마크로라이드 고내성률 반영 — 외래 1차 항생제(마크로라이드 단독 제한 vs 미국)",
@@ -300,12 +328,12 @@
       "h22_chapters": [298],
       "access": "public_pdf",
       "source_portal": "lungkorea.org",
-      "journal": "Tuberc Respir Dis",
+      "journal": "학회 단행본(2026-09-30 게시 · 요약본 포함)",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_pulm_asthma_2026.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KATRD_asthma_2026_6th.pdf",
+      "drive_doc_id": "1NjgF6fOVaft2omgmGYPgyfRRKRHfNBHA",
+      "status": "ready",
       "keywords": ["천식", "asthma", "ICS", "MART"],
       "check_points": [
         "1단계 ICS-formoterol(MART) 트랙 vs SABA 단독 금지",
@@ -325,12 +353,12 @@
       "h22_chapters": [303],
       "access": "public_pdf",
       "source_portal": "lungkorea.org",
-      "journal": "Tuberc Respir Dis",
+      "journal": "학회 단행본(2024-12-27 게시)",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_pulm_copd_2024.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KATRD_COPD_2024.pdf",
+      "drive_doc_id": "1KOsbaOSdGQPkICoNFiQL8qi2wqGxBDgk",
+      "status": "ready",
       "keywords": ["COPD", "만성폐쇄성폐질환", "기관지확장제", "LABA", "LAMA"],
       "check_points": [
         "GOLD ABE 분류 대비 국내 군 분류(가/나/다 vs ABE)",
@@ -350,17 +378,20 @@
       "h22_chapters": [168, 335],
       "access": "public_pdf",
       "source_portal": "kjg.or.kr / gastrokorea.org",
-      "journal": "Korean J Gastroenterol / Gut Liver",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_hpylori_2025.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Korean J Gastroenterol 2026;86(3):156-192 (한글판)",
+      "doi": "10.4166/kjg.2026.040",
+      "pmid": "42494145",
+      "drive_path": "KSHGR_Hpylori_2025_ko.pdf",
+      "drive_doc_id": "17XiOsZjo9kmFki9JCbHFvBxtpQbkbp6E",
+      "status": "ready",
       "keywords": ["헬리코박터", "H. pylori", "helicobacter", "제균", "소화성궤양"],
       "check_points": [
         "클라리스로마이신 내성(>15%) 반영 — 내성검사(PCR) 기반 맞춤치료 우선",
         "경험적 1차 요법(10일 동시치료·10-14일 비스무트 4제) vs 표준3제 축소",
         "한국 위암 고발생 반영한 제균 적응증 확대"
+      ],
+      "drive_files": [
+        {"file": "KSHGR_Hpylori_2025_en.pdf", "id": "1-T7FqgVdf6Uv6fkHyMMPJntb23WFEPm4", "role": "영문판 — Korean J Helicobacter Up Gastrointest Res 2026;26(2):164-188 · doi 10.7704/kjhugr.2026.0029 · PMID 42316523"}
       ]
     },
     {
@@ -376,16 +407,19 @@
       "h22_chapters": [352],
       "access": "public_pdf",
       "source_portal": "kasl.org / e-cmh.org",
-      "journal": "Clin Mol Hepatol",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_hbv_2026.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Clin Mol Hepatol 2026;32:1029-1116",
+      "doi": "10.3350/cmh.2026.0579",
+      "pmid": "42281419",
+      "drive_path": "KASL_hepatitisB_2026.pdf",
+      "drive_doc_id": "1oQXAU5eS9lCEabnC4vipyPS3GXmAiaj-",
+      "status": "ready",
       "keywords": ["B형간염", "HBV", "hepatitis-b", "항바이러스제", "엔테카비르", "테노포비르"],
       "check_points": [
         "HBV DNA 중심 치료 전환(회색지대 ≥2,000 IU/mL ALT 무관 조기치료) vs 해리슨/AASLD ALT 기준",
         "간경변증·임신 중 수직감염 예방 항바이러스제 기준"
+      ],
+      "drive_files": [
+        {"file": "KASL_hepatitisB_2026_erratum.pdf", "id": "1HTxP0Oj1_AOUK4pmYv349l1uozcLdZdq", "role": "정오표 — doi 10.3350/cmh.2026.0579e · PMID 43004594"}
       ]
     },
     {
@@ -401,12 +435,12 @@
       "h22_chapters": [87, 355],
       "access": "public_pdf",
       "source_portal": "kasl.org / livercancer.or.kr",
-      "journal": "Clin Mol Hepatol",
-      "doi": "",
-      "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_hcc_2022.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "journal": "Clin Mol Hepatol 2022;28(4):583-705",
+      "doi": "10.3350/cmh.2022.0294",
+      "pmid": "36263666",
+      "drive_path": "KLCA-NCC_HCC_2022.pdf",
+      "drive_doc_id": "15jbkmkq4Z5uJhDTh684oFKyMRedwNl8e",
+      "status": "ready",
       "keywords": ["간세포암", "간암", "HCC", "AFP", "간경변"],
       "check_points": [
         "고위험군 6개월 간초음파+AFP 감시",
@@ -426,15 +460,23 @@
       "h22_chapters": [6],
       "access": "public_pdf",
       "source_portal": "nhis.or.kr / ncc.re.kr",
-      "journal": "",
+      "journal": "국립암센터 암종별 검진 권고안 — 위·대장·간은 2025~2026 개정, 유방·자궁경부·폐는 2015판이 현행(한 권짜리 6대암 문서는 없다)",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_prev_cancer-screening_2025.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "NCC_screening_gastric_2026.pdf",
+      "drive_doc_id": "10cryQvTBSLAgBtoJ6DbAc6BtKRzd0JDn",
+      "status": "ready",
       "keywords": ["국가암검진", "선별검사", "screening", "위암검진", "대장암검진", "자궁경부암검진"],
       "check_points": [
         "USPSTF(해리슨) 대비 6대암 전면 비교: 위(40세 2년), 대장(50세 1년 FIT), 간(40세 고위험 6개월), 유방(40세 2년), 자궁경부(20세 2년), 폐(54-74세 30갑년 2년)"
+      ],
+      "drive_files": [
+        {"file": "NCC_screening_colorectal_2025.pdf", "id": "1ipIJ-yhuUQCNy4BLuxsUwh2HDwvRgFnG", "role": "대장암 2025"},
+        {"file": "NCC_screening_liver_2026.pdf", "id": "1gTFrMDCG_U_zTLwGCQVzF_ndhzsVKBcr", "role": "간암 2026"},
+        {"file": "NCC_screening_breast_2015.pdf", "id": "16cQUvNUe6ZnI-JU10uXFxvIGFlqO_oAx", "role": "유방암 2015"},
+        {"file": "NCC_screening_cervical_2015.pdf", "id": "1yudokejgAJxTPBSRJ6srbma0W9S9KGF2", "role": "자궁경부암 2015"},
+        {"file": "NCC_screening_lung_2015.pdf", "id": "1qPkibe98v19IClZ-deMvlbb9Pe7dH8VJ", "role": "폐암 2015"},
+        {"file": "NCC_screening_thyroid_2015.pdf", "id": "1LxR3fdJGrgx99QoMWbpgTaHaYc5VV-1s", "role": "갑상선암 2015(6대암 밖 · 참고)"}
       ]
     },
     {
@@ -450,17 +492,20 @@
       "h22_chapters": [129],
       "access": "public_pdf",
       "source_portal": "kdca.go.kr / ksid.or.kr",
-      "journal": "Infect Chemother",
+      "journal": "2026 국가예방접종 지침(의료기관용, 10.2 수정본) — 표준예방접종일정·성인 예방접종 장 포함",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_prev_nip-notifiable_2026.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KDCA_national-immunization-guideline_2026_clinics.pdf",
+      "drive_doc_id": "1gHU4a3mZ2MdSQfiQx4e4y77U6GDox6GE",
+      "status": "ready",
       "keywords": ["예방접종", "백신", "vaccine", "법정감염병", "신고", "격리"],
       "check_points": [
         "소아 NIP(BCG·일본뇌염·A형간염) vs CDC ACIP",
         "독감 3가 전환, 코로나19 필수예방접종, 성인 폐렴구균(PCV15/20·PPSV23)",
         "법정감염병 1~4급(니파 1급, 매독·엠폭스 3급 등) 및 신고 기한"
+      ],
+      "drive_files": [
+        {"file": "KDCA_notifiable-diseases-criteria_2026.pdf", "id": "1BOz4OUzdVeUgEVMEkpTTbkc4Hi5oUkd6", "role": "2026 법정감염병 진단·신고 기준(구청 재게시본)"}
       ]
     },
     {
@@ -479,7 +524,7 @@
       "journal": "Clin Mol Hepatol",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_hcv_2025.pdf",
+      "drive_path": "KR_gi_hcv_2025.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["C형간염", "HCV", "hepatitis-c", "DAA"],
@@ -503,7 +548,7 @@
       "journal": "Clin Mol Hepatol",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_masld_2025.pdf",
+      "drive_path": "KR_gi_masld_2025.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["지방간", "MASLD", "NAFLD", "FIB-4", "MetALD"],
@@ -528,13 +573,16 @@
       "journal": "Korean J Gastroenterol / Intest Res",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_ibd_2026.pdf",
+      "drive_path": "KR_gi_ibd_2026.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["크론병", "궤양성대장염", "염증성장질환", "IBD", "장결핵"],
       "check_points": [
         "장결핵 감별 알고리즘(한국 최빈출) 및 항결핵제 시험치료",
         "생물학적 제제 시작 전 잠복결핵·HBV 선별"
+      ],
+      "drive_files": [
+        {"file": "KASID_Crohn_medical_2026_PMC13714430.xml", "id": "1i7bRTzeT6Q0vuyF4FZ_3n1GEcEaf7Y0w", "role": "크론병 내과치료 부분만(진단·궤양성대장염 없음)"}
       ]
     },
     {
@@ -553,7 +601,7 @@
       "journal": "J Neurogastroenterol Motil",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_gerd_seoul.pdf",
+      "drive_path": "KR_gi_gerd_seoul.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["위식도역류", "GERD", "PPI", "P-CAB"],
@@ -577,7 +625,7 @@
       "journal": "Korean J Pancreas Biliary Tract",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_acute-pancreatitis.pdf",
+      "drive_path": "KR_gi_acute-pancreatitis.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["췌장염", "pancreatitis", "ERCP"],
@@ -601,7 +649,7 @@
       "journal": "J Gastric Cancer",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_gastric-cancer.pdf",
+      "drive_path": "KR_gi_gastric-cancer.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["위암", "gastric-cancer", "ESD", "조기위암"],
@@ -625,7 +673,7 @@
       "journal": "Korean J Gastroenterol",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_colon-polyp.pdf",
+      "drive_path": "KR_gi_colon-polyp.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["대장암", "대장폴립", "선종", "colorectal"],
@@ -649,7 +697,7 @@
       "journal": "Korean Circ J",
       "doi": "",
       "pmid": "",
-      "drive_path": "02_순환기/KR_cardio_acs.pdf",
+      "drive_path": "KR_cardio_acs.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["심근경색", "STEMI", "NSTEMI", "ACS", "DAPT"],
@@ -673,7 +721,7 @@
       "journal": "",
       "doi": "",
       "pmid": "",
-      "drive_path": "02_순환기/KR_cardio_vte.pdf",
+      "drive_path": "KR_cardio_vte.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["심부정맥혈전증", "폐색전증", "DVT", "PE", "VTE"],
@@ -697,7 +745,7 @@
       "journal": "Infect Chemother",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_id_uti.pdf",
+      "drive_path": "KR_id_uti.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["요로감염", "방광염", "신우신염", "UTI", "pyelonephritis"],
@@ -722,7 +770,7 @@
       "journal": "",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_id_sti.pdf",
+      "drive_path": "KR_id_sti.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["성매개감염", "매독", "임질", "클라미디아", "STI", "syphilis"],
@@ -747,13 +795,16 @@
       "journal": "",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_id_endemic_2025.pdf",
+      "drive_path": "KR_id_endemic_2025.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["말라리아", "쯔쯔가무시", "SFTS", "scrub-typhus", "malaria"],
       "check_points": [
         "국내 토착 삼일열말라리아(클로로퀸+프리마퀸) vs 해외 열대열말라리아",
         "쯔쯔가무시 독시사이클린(임산부 아지스로마이신), SFTS 지지치료"
+      ],
+      "drive_files": [
+        {"file": "KDCA_malaria_management_2026.pdf", "id": "1nvElHY9Imd6lAnjEVuhJhrYLK-iRVodA", "role": "말라리아 관리지침 2026(진드기 매개 없음)"}
       ]
     },
     {
@@ -772,7 +823,7 @@
       "journal": "Kidney Res Clin Pract",
       "doi": "",
       "pmid": "",
-      "drive_path": "05_신장_류마티스_신경/KR_neph_ckd_2025.pdf",
+      "drive_path": "KR_neph_ckd_2025.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["만성콩팥병", "CKD", "당뇨병신병증", "단백뇨"],
@@ -797,12 +848,16 @@
       "journal": "J Stroke",
       "doi": "",
       "pmid": "",
-      "drive_path": "05_신장_류마티스_신경/KR_neuro_stroke.pdf",
+      "drive_path": "KR_neuro_stroke.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["뇌졸중", "뇌경색", "뇌출혈", "stroke", "tPA", "혈전제거술"],
       "check_points": [
         "IV 혈전용해제 시간창·EVT 적응증 및 급성기 혈압·이차예방 지질/항혈소판"
+      ],
+      "drive_files": [
+        {"file": "KSS_BP_management_2025_PMC12411293.xml", "id": "1R8PzmLIKJbrf4IRArDFc-H13LQ8RqTl7", "role": "2025 혈압 관리 부분"},
+        {"file": "KSS_tenecteplase_statement_2025_PMC12411285.xml", "id": "1l4SOI4hHo1jt21ib0seky64MVVlvYDUV", "role": "2025 tenecteplase 입장문"}
       ]
     },
     {
@@ -821,9 +876,9 @@
       "journal": "J Rheum Dis",
       "doi": "",
       "pmid": "",
-      "drive_path": "05_신장_류마티스_신경/KR_rheum_gout.pdf",
-      "drive_doc_id": "",
-      "status": "pending_pdf",
+      "drive_path": "KCR_gout_2023_kjim.pdf",
+      "drive_doc_id": "1NccUqsSnagwabSfH-EFMnVoCai207UD-",
+      "status": "ready",
       "keywords": ["통풍", "gout", "요산", "알로푸리놀", "HLA-B*5801"],
       "check_points": [
         "한국인 HLA-B*5801 고빈도 → 알로푸리놀 전 유전자 검사·페북소스타트 선택"
@@ -845,7 +900,7 @@
       "journal": "J Rheum Dis",
       "doi": "",
       "pmid": "",
-      "drive_path": "05_신장_류마티스_신경/KR_rheum_ra.pdf",
+      "drive_path": "KR_rheum_ra.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["류마티스관절염", "rheumatoid", "MTX", "DMARD"],
@@ -869,7 +924,7 @@
       "journal": "J Breast Cancer",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_surg_breast-cancer_2025.pdf",
+      "drive_path": "KR_surg_breast-cancer_2025.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["유방암", "breast-cancer", "HER2", "유방촬영"],
@@ -893,7 +948,7 @@
       "journal": "J Gynecol Oncol",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_obgyn_cervical-cancer_2024.pdf",
+      "drive_path": "KR_obgyn_cervical-cancer_2024.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["자궁경부암", "cervical-cancer", "HPV", "Pap"],
@@ -918,12 +973,15 @@
       "journal": "",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_obgyn_gdm-htn_2025.pdf",
+      "drive_path": "KR_obgyn_gdm-htn_2025.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["임신성당뇨", "전자간증", "임신성고혈압", "preeclampsia", "GDM"],
       "check_points": [
         "1단계(75g OGTT) vs 2단계(50g→100g) 선별 기준, 임신 중 고혈압 약제·목표혈압"
+      ],
+      "drive_files": [
+        {"file": "KDA_diabetes_2025.pdf", "id": "1ykPfap0BvsWB2E8SI1qJeGLnU2vNH8wD", "role": "임신 당뇨병 장만(임신성 고혈압 없음)"}
       ]
     },
     {
@@ -942,7 +1000,7 @@
       "journal": "Clin Exp Pediatr",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_peds_core.pdf",
+      "drive_path": "KR_peds_core.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["신생아황달", "열성경련", "소아", "요로감염", "jaundice", "febrile-seizure"],
@@ -966,7 +1024,7 @@
       "journal": "Investig Clin Urol",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_uro_prostate.pdf",
+      "drive_path": "KR_uro_prostate.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["전립선", "BPH", "PSA", "prostate"],
@@ -990,7 +1048,7 @@
       "journal": "Clin Mol Hepatol",
       "doi": "",
       "pmid": "",
-      "drive_path": "04_소화기_간담도/KR_gi_cirrhosis.pdf",
+      "drive_path": "KR_gi_cirrhosis.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["간경변", "복수", "정맥류", "간성뇌증", "SBP", "cirrhosis"],
@@ -1014,7 +1072,7 @@
       "journal": "",
       "doi": "",
       "pmid": "",
-      "drive_path": "03_호흡기_감염/KR_pulm_lung-cancer.pdf",
+      "drive_path": "KR_pulm_lung-cancer.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["폐암", "lung-cancer", "저선량", "EGFR"],
@@ -1038,7 +1096,7 @@
       "journal": "",
       "doi": "",
       "pmid": "",
-      "drive_path": "06_예방_산부인과_외과_소아/KR_law_medical-mental_2026.pdf",
+      "drive_path": "KR_law_medical-mental_2026.pdf",
       "drive_doc_id": "",
       "status": "pending_pdf",
       "keywords": ["의료법", "정신건강복지법", "보호입원", "응급입원", "사망진단서"],
