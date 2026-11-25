@@ -2,6 +2,1193 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0789",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "신장·비뇨 — 옆구리 통증과 높은 혈색소의 기전",
+  "type": "신장·비뇨 — 옆구리 통증과 높은 혈색소의 기전",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-25",
+  "vignette": "53세 여자가 2개월 전부터 생긴 오른쪽 옆구리의 둔한 통증으로 왔다. 2주 전 한 차례 소변이 붉었다. 흡연력은 없고 코골이나 낮 졸림은 없으며 수면다원검사에서 무호흡이 없었다. 혈압 134/84 mmHg, 맥박 78회/분 이고 얼굴이 붉다. 비장은 만져지지 않는다. 혈액검사 결과는 다음과 같다. 혈색소 18.1 g/dL, 적혈구용적률 54 %, 백혈구 7,400/mm³, 혈소판 248,000/mm³, 혈청 크레아티닌 0.9 mg/dL, 혈청 에리스로포이에틴 상승. 실내 공기에서 동맥혈 산소포화도는 97 % 이다. 복부 조영증강 CT 는 그림과 같다.",
+  "question": "혈색소 상승의 기전으로 가장 적절한 것은?",
+  "options": [
+   "만성 저산소증에 대한 콩팥의 에리스로포이에틴 증가",
+   "탈수로 인한 혈장량 감소",
+   "종양의 부갑상샘호르몬 관련 단백 분비",
+   "종양의 에리스로포이에틴 분비",
+   "JAK2 변이에 의한 조혈모세포의 자율 증식"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: CT 에서 <b>오른쪽 콩팥에서 생겨 신실질을 밀어내는 약 13 cm 의 큰 종괴</b>가 있다 — 옆구리 통증·혈뇨와 함께 신세포암으로 보아야 한다. 여자에서 혈색소 18.1 g/dL 인데 <b>에리스로포이에틴이 높고 산소포화도는 정상</b>이며 백혈구·혈소판과 비장이 정상이다. 저산소 자극 없이 에리스로포이에틴이 높으므로 <b>종양이 에리스로포이에틴을 만드는 부종양 적혈구증가증</b>이다.\n- 원리: <b>에리스로포이에틴은 어디서 왜 나오는가</b>: 정상에서는 콩팥 피질의 세관 주위 간질세포가 산소 분압을 감지해 에리스로포이에틴을 만든다. 산소가 부족하면 HIF(저산소유도인자)가 분해되지 않고 쌓여 에리스로포이에틴 유전자를 켠다.<br> <b>왜 신세포암이 만드는가</b>: 투명세포 신세포암의 대부분은 VHL 유전자 기능을 잃어, 산소가 충분해도 HIF 가 분해되지 않는다. 그래서 산소와 무관하게 에리스로포이에틴과 VEGF 가 계속 만들어진다(다른 조직형도 종양 자체·주변 허혈로 만들 수 있다). 종양을 떼면 혈색소가 정상으로 돌아오는 것이 진단을 뒷받침한다.<br> <b>감별의 축</b>: 에리스로포이에틴이 낮으면 골수의 자율 증식(진성 적혈구증가증), 높으면 이차성이다. 이차성 가운데 산소포화도가 낮으면 저산소성(만성폐쇄폐질환·고지대·수면무호흡), 정상이면 종양(신세포암·간세포암·혈관모세포종·자궁근종)이나 콩팥 허혈을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">종양의 에리스로포이에틴 분비 — 정답</th><th>JAK2 변이(진성 적혈구증가증) — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈청 에리스로포이에틴</td><td><b>높음</b></td><td>낮음(음성 되먹임)</td></tr> <tr><td>백혈구·혈소판</td><td>정상</td><td>자주 함께 증가</td></tr> <tr><td>비장</td><td>정상</td><td>비장 비대 흔함</td></tr> <tr><td>영상</td><td>콩팥(간) 종괴</td><td>종괴 없음</td></tr> </tbody></table> 에리스로포이에틴이 낮으면 골수, 높으면 「산소포화도」를 보고 저산소인지 종양인지 가른다 — 이 순서면 어느 방향으로 물어도 답을 찾는다.\n- 오답 이유:\n  - ① 저산소성 증가는 만성폐쇄폐질환이나 수면무호흡으로 산소포화도가 92 % 미만으로 낮았다면 정답이 된다.\n  - ② 혈장량 감소는 이뇨제·설사로 혈색소가 올랐으나 수액 뒤 정상으로 돌아오고 에리스로포이에틴이 정상이었다면 정답이 된다.\n  - ③ 부갑상샘호르몬 관련 단백은 신세포암의 다른 부종양 증후군으로, 혈청 칼슘이 높고 인이 낮았다면 그 기전이 정답이 된다.\n  - ⑤ JAK2 변이는 에리스로포이에틴이 낮고 백혈구·혈소판 증가와 비장 비대, 수인성 가려움이 있었다면 정답이 된다.\n- 함정: 적혈구증가증을 보면 진성 적혈구증가증부터 떠올리는 것 — 에리스로포이에틴이 높으면 골수의 자율 증식이 아니다.\n- 학습목표: 콩팥 고형 종괴와 함께 생긴 이차성 적혈구증가증을 종양의 에리스로포이에틴 분비로 설명하고 진성 적혈구증가증·저산소성 적혈구증가증과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 98: Paraneoplastic Syndromes: Endocrinologic/Hematologic · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 66: Anemia and Polycythemia\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00056 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 <b>오른쪽 콩팥에서 생겨 신실질을 밀어내는 약 13 cm 의 큰 종괴</b>가 있다 — 옆구리 통증·혈뇨와 함께 신세포암으로 보아야 한다. 여자에서 혈색소 18.1 g/dL 인데 <b>에리스로포이에틴이 높고 산소포화도는 정상</b>이며 백혈구·혈소판과 비장이 정상이다. 저산소 자극 없이 에리스로포이에틴이 높으므로 <b>종양이 에리스로포이에틴을 만드는 부종양 적혈구증가증</b>이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>에리스로포이에틴은 어디서 왜 나오는가</b>: 정상에서는 콩팥 피질의 세관 주위 간질세포가 산소 분압을 감지해 에리스로포이에틴을 만든다. 산소가 부족하면 HIF(저산소유도인자)가 분해되지 않고 쌓여 에리스로포이에틴 유전자를 켠다.<br> <b>왜 신세포암이 만드는가</b>: 투명세포 신세포암의 대부분은 VHL 유전자 기능을 잃어, 산소가 충분해도 HIF 가 분해되지 않는다. 그래서 산소와 무관하게 에리스로포이에틴과 VEGF 가 계속 만들어진다(다른 조직형도 종양 자체·주변 허혈로 만들 수 있다). 종양을 떼면 혈색소가 정상으로 돌아오는 것이 진단을 뒷받침한다.<br> <b>감별의 축</b>: 에리스로포이에틴이 낮으면 골수의 자율 증식(진성 적혈구증가증), 높으면 이차성이다. 이차성 가운데 산소포화도가 낮으면 저산소성(만성폐쇄폐질환·고지대·수면무호흡), 정상이면 종양(신세포암·간세포암·혈관모세포종·자궁근종)이나 콩팥 허혈을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">종양의 에리스로포이에틴 분비 — 정답</th><th>JAK2 변이(진성 적혈구증가증) — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈청 에리스로포이에틴</td><td><b>높음</b></td><td>낮음(음성 되먹임)</td></tr> <tr><td>백혈구·혈소판</td><td>정상</td><td>자주 함께 증가</td></tr> <tr><td>비장</td><td>정상</td><td>비장 비대 흔함</td></tr> <tr><td>영상</td><td>콩팥(간) 종괴</td><td>종괴 없음</td></tr> </tbody></table> 에리스로포이에틴이 낮으면 골수, 높으면 「산소포화도」를 보고 저산소인지 종양인지 가른다 — 이 순서면 어느 방향으로 물어도 답을 찾는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 저산소성 증가는 만성폐쇄폐질환이나 수면무호흡으로 산소포화도가 92 % 미만으로 낮았다면 정답이 된다.\n② 혈장량 감소는 이뇨제·설사로 혈색소가 올랐으나 수액 뒤 정상으로 돌아오고 에리스로포이에틴이 정상이었다면 정답이 된다.\n③ 부갑상샘호르몬 관련 단백은 신세포암의 다른 부종양 증후군으로, 혈청 칼슘이 높고 인이 낮았다면 그 기전이 정답이 된다.\n⑤ JAK2 변이는 에리스로포이에틴이 낮고 백혈구·혈소판 증가와 비장 비대, 수인성 가려움이 있었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "적혈구증가증을 보면 진성 적혈구증가증부터 떠올리는 것 — 에리스로포이에틴이 높으면 골수의 자율 증식이 아니다."
+   },
+   {
+    "k": "학습목표",
+    "v": "콩팥 고형 종괴와 함께 생긴 이차성 적혈구증가증을 종양의 에리스로포이에틴 분비로 설명하고 진성 적혈구증가증·저산소성 적혈구증가증과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 98: Paraneoplastic Syndromes: Endocrinologic/Hematologic · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 66: Anemia and Polycythemia ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00056 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "콩팥 고형 종괴와 정상 산소포화도에서 에리스로포이에틴이 높은 적혈구증가증은 종양의 에리스로포이에틴 분비다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "에리스로포이에틴 상승 + 백혈구·혈소판·비장 정상 — 진성 적혈구증가증은 에리스로포이에틴이 낮다",
+   "steps": 3,
+   "chain": [
+    "영상: 우신에서 기원한 큰 종괴 → 콩팥 종양(신세포암)",
+    "혈색소 18.1 + 에리스로포이에틴 상승 → 이차성 적혈구증가증",
+    "산소포화도 97 % 로 저산소 자극 없음 → 종양의 에리스로포이에틴 분비"
+   ],
+   "key": [
+    {
+     "item": "영상: 우신에서 기원해 신실질을 밀어내는 약 13 cm 의 큰 종괴",
+     "why": "에리스로포이에틴을 만드는 종양의 근거",
+     "also": []
+    },
+    {
+     "item": "혈청 에리스로포이에틴 상승",
+     "why": "이차성 적혈구증가증",
+     "also": []
+    },
+    {
+     "item": "동맥혈 산소포화도는 97 %",
+     "why": "저산소 자극이 아님",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "백혈구 7,400/mm³, 혈소판 248,000/mm³",
+     "why": "골수증식종양 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "비장은 만져지지 않는다",
+     "why": "진성 적혈구증가증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "수면다원검사에서 무호흡이 없었다",
+     "why": "수면무호흡에 의한 저산소성 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "소변이 붉었다",
+     "why": "콩팥 종양을 시사하지만 혈색소 기전 판단은 에리스로포이에틴·산소포화도가 정한다",
+     "also": []
+    }
+   ],
+   "summary": "콩팥에 큰 고형 종괴가 있고 에리스로포이에틴이 높은데 산소포화도는 정상이다. 종양이 에리스로포이에틴을 만드는 부종양 적혈구증가증이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "혈색소가 아니라 혈청 칼슘이 높고 인이 낮은 것을 물었다면 부갑상샘호르몬 관련 단백"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0789.png",
+   "caption": "조영증강 복부 CT, 동맥기 축상 단면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 크롭·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.492444591845205280171152909620",
+   "asset_id": "TCIA-KITS-00056_88574964",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00056"
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0788",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "근골격 — 농구하다 손 짚고 넘어진 고등학생의 손목 통증",
+  "type": "근골격 — 농구하다 손 짚고 넘어진 고등학생의 손목 통증",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-25",
+  "vignette": "A 16-year-old girl is brought to the emergency department 3 hours after falling onto her outstretched right hand while playing basketball. She has pain at the radial side of the right wrist. She has no other injuries and is otherwise healthy. Vital signs are within normal limits. Examination shows mild swelling on the radial side of the wrist without deformity. There is tenderness in the anatomic snuffbox and pain with axial loading of the thumb. There is no tenderness over the distal ulna. Capillary refill, sensation, and finger movement are normal. A posteroanterior x-ray of the right wrist is shown; lateral and dedicated scaphoid views are read as showing no fracture.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Corticosteroid injection into the first dorsal compartment",
+   "Thumb spica immobilization and repeat imaging in 10 to 14 days",
+   "Elastic bandage and return only if pain persists beyond 6 weeks",
+   "Closed reduction under sedation and long-arm cast",
+   "Open reduction and internal fixation"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The radiograph shows <b>no fracture line, cortical break, or displacement in the scaphoid or distal radius</b>. However, after a fall on an outstretched hand, <b>anatomic snuffbox tenderness and pain with axial loading of the thumb</b> suggest a scaphoid fracture, and up to a fifth of scaphoid fractures are invisible on initial films. Because a missed fracture can progress to nonunion or avascular necrosis, she should be <b>immobilized in a thumb spica</b> and re-imaged in 10–14 days (or have MRI if available).\n- 원리: <b>Why initial films miss it</b>: A nondisplaced scaphoid waist fracture is a hairline crack in a curved bone that sits obliquely to the x-ray beam. After 1–2 weeks, bone resorption along the fracture line widens it enough to see. MRI shows marrow edema immediately and is the most sensitive early test.<br> <b>Why it matters</b>: Most of the scaphoid's blood supply enters distally (dorsal carpal branch of the radial artery) and flows backward to the proximal pole. A waist or proximal fracture can cut off the proximal fragment, leading to nonunion and avascular necrosis, and later to wrist arthritis. Immobilization until the diagnosis is excluded prevents displacement of an occult crack.<br> <b>Why the skeletally mature patient</b>: In younger children, the same fall usually fractures the distal radial metaphysis (buckle fracture). Near skeletal maturity the scaphoid becomes the weak link, as in adults.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Thumb spica + repeat imaging (answer)</th><th>Elastic bandage only (closest distractor)</th></tr></thead><tbody> <tr><td>Clinical signs</td><td><b>Snuffbox tenderness, painful thumb axial loading</b></td><td>Diffuse mild tenderness, no scaphoid signs</td></tr> <tr><td>Radiograph</td><td>Normal (fracture not excluded)</td><td>Normal</td></tr> <tr><td>Risk if wrong</td><td>Brief unnecessary splinting</td><td><b>Nonunion, avascular necrosis</b></td></tr> </tbody></table> A normal radiograph does not exclude a scaphoid fracture: let the clinical signs decide whether to immobilize, and let repeat imaging or MRI decide whether to continue.\n- 오답 이유:\n  - (A) A corticosteroid injection would be appropriate for de Quervain tenosynovitis with a positive Finkelstein test and no trauma history.\n  - (C) An elastic bandage alone would be acceptable for a wrist sprain without snuffbox tenderness or pain on thumb axial loading.\n  - (D) Closed reduction and a long-arm cast would be correct for a displaced or angulated distal radius fracture visible on the radiograph.\n  - (E) Open reduction and internal fixation would be correct for a scaphoid fracture displaced by more than 1 mm or involving the proximal pole on imaging.\n- 함정: Discharging the patient because the radiograph is normal — snuffbox tenderness after a fall means the scaphoid is fractured until proven otherwise.\n- 학습목표: Suspect an occult scaphoid fracture when anatomic snuffbox tenderness follows a fall on an outstretched hand despite a normal initial radiograph, and immobilize in a thumb spica with repeat imaging\n- 근거·출처: Nagy E, Janisch M, Hržić F, Sorantin E, Tschauner S. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data. 2022;9:222 · Tornetta P III, Ricci WM, Ostrum RF, et al., eds. Rockwood and Green's Fractures in Adults, 9th ed. Wolters Kluwer; 2020 — carpus fractures and dislocations\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows <b>no fracture line, cortical break, or displacement in the scaphoid or distal radius</b>. However, after a fall on an outstretched hand, <b>anatomic snuffbox tenderness and pain with axial loading of the thumb</b> suggest a scaphoid fracture, and up to a fifth of scaphoid fractures are invisible on initial films. Because a missed fracture can progress to nonunion or avascular necrosis, she should be <b>immobilized in a thumb spica</b> and re-imaged in 10–14 days (or have MRI if available)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why initial films miss it</b>: A nondisplaced scaphoid waist fracture is a hairline crack in a curved bone that sits obliquely to the x-ray beam. After 1–2 weeks, bone resorption along the fracture line widens it enough to see. MRI shows marrow edema immediately and is the most sensitive early test.<br> <b>Why it matters</b>: Most of the scaphoid's blood supply enters distally (dorsal carpal branch of the radial artery) and flows backward to the proximal pole. A waist or proximal fracture can cut off the proximal fragment, leading to nonunion and avascular necrosis, and later to wrist arthritis. Immobilization until the diagnosis is excluded prevents displacement of an occult crack.<br> <b>Why the skeletally mature patient</b>: In younger children, the same fall usually fractures the distal radial metaphysis (buckle fracture). Near skeletal maturity the scaphoid becomes the weak link, as in adults."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Thumb spica + repeat imaging (answer)</th><th>Elastic bandage only (closest distractor)</th></tr></thead><tbody> <tr><td>Clinical signs</td><td><b>Snuffbox tenderness, painful thumb axial loading</b></td><td>Diffuse mild tenderness, no scaphoid signs</td></tr> <tr><td>Radiograph</td><td>Normal (fracture not excluded)</td><td>Normal</td></tr> <tr><td>Risk if wrong</td><td>Brief unnecessary splinting</td><td><b>Nonunion, avascular necrosis</b></td></tr> </tbody></table> A normal radiograph does not exclude a scaphoid fracture: let the clinical signs decide whether to immobilize, and let repeat imaging or MRI decide whether to continue."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A corticosteroid injection would be appropriate for de Quervain tenosynovitis with a positive Finkelstein test and no trauma history.\n(C) An elastic bandage alone would be acceptable for a wrist sprain without snuffbox tenderness or pain on thumb axial loading.\n(D) Closed reduction and a long-arm cast would be correct for a displaced or angulated distal radius fracture visible on the radiograph.\n(E) Open reduction and internal fixation would be correct for a scaphoid fracture displaced by more than 1 mm or involving the proximal pole on imaging."
+   },
+   {
+    "k": "함정",
+    "v": "Discharging the patient because the radiograph is normal — snuffbox tenderness after a fall means the scaphoid is fractured until proven otherwise."
+   },
+   {
+    "k": "학습목표",
+    "v": "Suspect an occult scaphoid fracture when anatomic snuffbox tenderness follows a fall on an outstretched hand despite a normal initial radiograph, and immobilize in a thumb spica with repeat imaging"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Nagy E, Janisch M, Hržić F, Sorantin E, Tschauner S. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data. 2022;9:222 · Tornetta P III, Ricci WM, Ostrum RF, et al., eds. Rockwood and Green's Fractures in Adults, 9th ed. Wolters Kluwer; 2020 — carpus fractures and dislocations ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "넘어진 뒤 해부학적 코담배갑 압통이 있으면 X선이 정상이어도 잠복 주상골 골절로 보고 엄지 부목 고정 뒤 다시 영상을 찍는다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "코담배갑 압통과 엄지 축 부하 통증 — 염좌로 넘기면 불유합·무혈성 괴사 위험",
+   "steps": 2,
+   "chain": [
+    "영상: 주상골·원위 요골에 골절선 없음 → X선으로 골절이 보이지 않음",
+    "손 짚고 넘어짐 + 코담배갑 압통 + 엄지 축 부하 통증 → 잠복 주상골 골절 의심, 엄지 부목과 재촬영"
+   ],
+   "key": [
+    {
+     "item": "영상: 주상골과 원위 요골에 골절선·피질 단절 없음",
+     "why": "X선 음성 — 그래도 골절을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "There is tenderness in the anatomic snuffbox",
+     "why": "주상골 골절의 핵심 진찰 소견",
+     "also": []
+    },
+    {
+     "item": "pain with axial loading of the thumb",
+     "why": "주상골 골절을 지지",
+     "also": []
+    },
+    {
+     "item": "falling onto her outstretched right hand",
+     "why": "주상골 골절의 전형적 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no tenderness over the distal ulna",
+     "why": "척골 원위부 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "without deformity",
+     "why": "전위 골절이 아니므로 정복 대상이 아님",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "손 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 부하 통증이 있으나 X선은 정상이다. 잠복 주상골 골절로 보고 엄지 부목으로 고정한 뒤 10~14일에 다시 찍는다.",
+   "switch": {
+    "choice": "E",
+    "condition": "영상에서 주상골 골절이 1 mm 넘게 전위되어 있었다면 수술적 고정"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0788.png",
+   "caption": "Posteroanterior radiograph of the right wrist and distal forearm; the R marker is from the original, unaltered apart from scaling (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-1224_1121568317_01_WRI-R1_F016",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0786",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "호흡기 — 덱사메타손에도 산소 요구량이 느는 바이러스 폐렴",
+  "type": "호흡기 — 덱사메타손에도 산소 요구량이 느는 바이러스 폐렴",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-25",
+  "vignette": "A 73-year-old woman is admitted to the hospital because of fever, cough, and progressive shortness of breath for 6 days. A nasopharyngeal swab is positive for SARS-CoV-2 by RT-PCR. On admission, she required 3 L/min of oxygen by nasal cannula and was started on intravenous dexamethasone. Over the next 24 hours, her oxygen requirement increased, and she now requires high-flow nasal oxygen at 40 L/min with an FiO2 of 0.6 to maintain an oxygen saturation of 92%. Temperature is 38.3°C (100.9°F), pulse is 104/min, respirations are 28/min, and blood pressure is 126/72 mm Hg. She is alert. Serum C-reactive protein concentration is 160 mg/L (N<8), and serum procalcitonin concentration is within the reference range. Blood cultures show no growth. A chest x-ray is shown.",
+  "question": "In addition to continuing dexamethasone, which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Ivermectin",
+   "Piperacillin-tazobactam",
+   "Tocilizumab",
+   "Nirmatrelvir-ritonavir",
+   "Hydroxychloroquine"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The radiograph shows <b>bilateral patchy ground-glass and consolidative opacities, predominantly in the lower and peripheral zones</b>, consistent with COVID-19 pneumonia. She is <b>rapidly escalating to high-flow oxygen within 24 hours despite dexamethasone</b> and has a high CRP — the inflammatory phase of the illness. For this group, adding an immunomodulator, <b>tocilizumab</b> (or baricitinib), to dexamethasone reduces mortality. Normal procalcitonin and sterile cultures make bacterial superinfection less likely.\n- 원리: <b>Why immunomodulation, not antivirals, at this stage</b>: In the first days of COVID-19, viral replication drives disease, so antivirals help. After about a week, viral load is falling and lung injury is driven by the host's inflammatory response — interleukin-6 and other cytokines cause capillary leak and alveolar flooding. A patient whose oxygen needs climb rapidly at this stage has a hyperinflammatory picture, reflected in a high CRP (an IL-6–driven acute-phase protein).<br> <b>Why tocilizumab</b>: Tocilizumab blocks the IL-6 receptor. In large randomized trials, adding it to dexamethasone in hypoxemic patients with high CRP or rapidly increasing oxygen needs reduced mortality and progression to mechanical ventilation. Baricitinib (a JAK inhibitor) is an alternative; the two are not combined.<br> <b>Cautions</b>: It suppresses the CRP response and raises infection risk, so active bacterial or fungal infection should be considered first — here procalcitonin and cultures are reassuring.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Tocilizumab (answer)</th><th>Nirmatrelvir-ritonavir (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>IL-6 receptor — host inflammation</td><td>Viral 3CL protease — replication</td></tr> <tr><td>Best phase</td><td><b>Hospitalized, rising O2 need despite steroids</b></td><td>Early, within 5 days of symptoms</td></tr> <tr><td>Oxygen status</td><td>High-flow or rapidly increasing O2</td><td>Outpatient, no new O2 requirement</td></tr> <tr><td>Marker</td><td>CRP ≥ 75 mg/L supports use</td><td>Risk factors for progression</td></tr> </tbody></table> Antivirals early, outside the hospital; steroids for anyone needing oxygen; add tocilizumab or baricitinib when oxygen needs keep climbing.\n- 오답 이유:\n  - (A) Ivermectin would be appropriate for strongyloidiasis — for example, before steroids in a patient from an endemic area with eosinophilia — not for COVID-19.\n  - (B) Piperacillin-tazobactam would be correct if procalcitonin were high, cultures grew a gram-negative organism, or hospital-acquired bacterial pneumonia were suspected.\n  - (D) Nirmatrelvir-ritonavir would be correct for a high-risk outpatient within 5 days of symptom onset who does not need supplemental oxygen.\n  - (E) Hydroxychloroquine showed no benefit in randomized trials; it would be appropriate only for an unrelated indication such as lupus or malaria prophylaxis.\n- 함정: Choosing an antiviral because the infection is viral — by day 6 with rising oxygen needs, inflammation, not replication, drives the lung injury.\n- 학습목표: Add an IL-6 receptor antagonist (tocilizumab) to dexamethasone for a hospitalized patient with COVID-19 pneumonia whose oxygen requirement is rapidly increasing despite corticosteroids and whose inflammatory markers are high\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · RECOVERY Collaborative Group. Tocilizumab in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial. Lancet. 2021;397(10285):1637-1645\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …08510874 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows <b>bilateral patchy ground-glass and consolidative opacities, predominantly in the lower and peripheral zones</b>, consistent with COVID-19 pneumonia. She is <b>rapidly escalating to high-flow oxygen within 24 hours despite dexamethasone</b> and has a high CRP — the inflammatory phase of the illness. For this group, adding an immunomodulator, <b>tocilizumab</b> (or baricitinib), to dexamethasone reduces mortality. Normal procalcitonin and sterile cultures make bacterial superinfection less likely."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why immunomodulation, not antivirals, at this stage</b>: In the first days of COVID-19, viral replication drives disease, so antivirals help. After about a week, viral load is falling and lung injury is driven by the host's inflammatory response — interleukin-6 and other cytokines cause capillary leak and alveolar flooding. A patient whose oxygen needs climb rapidly at this stage has a hyperinflammatory picture, reflected in a high CRP (an IL-6–driven acute-phase protein).<br> <b>Why tocilizumab</b>: Tocilizumab blocks the IL-6 receptor. In large randomized trials, adding it to dexamethasone in hypoxemic patients with high CRP or rapidly increasing oxygen needs reduced mortality and progression to mechanical ventilation. Baricitinib (a JAK inhibitor) is an alternative; the two are not combined.<br> <b>Cautions</b>: It suppresses the CRP response and raises infection risk, so active bacterial or fungal infection should be considered first — here procalcitonin and cultures are reassuring."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Tocilizumab (answer)</th><th>Nirmatrelvir-ritonavir (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>IL-6 receptor — host inflammation</td><td>Viral 3CL protease — replication</td></tr> <tr><td>Best phase</td><td><b>Hospitalized, rising O2 need despite steroids</b></td><td>Early, within 5 days of symptoms</td></tr> <tr><td>Oxygen status</td><td>High-flow or rapidly increasing O2</td><td>Outpatient, no new O2 requirement</td></tr> <tr><td>Marker</td><td>CRP ≥ 75 mg/L supports use</td><td>Risk factors for progression</td></tr> </tbody></table> Antivirals early, outside the hospital; steroids for anyone needing oxygen; add tocilizumab or baricitinib when oxygen needs keep climbing."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ivermectin would be appropriate for strongyloidiasis — for example, before steroids in a patient from an endemic area with eosinophilia — not for COVID-19.\n(B) Piperacillin-tazobactam would be correct if procalcitonin were high, cultures grew a gram-negative organism, or hospital-acquired bacterial pneumonia were suspected.\n(D) Nirmatrelvir-ritonavir would be correct for a high-risk outpatient within 5 days of symptom onset who does not need supplemental oxygen.\n(E) Hydroxychloroquine showed no benefit in randomized trials; it would be appropriate only for an unrelated indication such as lupus or malaria prophylaxis."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing an antiviral because the infection is viral — by day 6 with rising oxygen needs, inflammation, not replication, drives the lung injury."
+   },
+   {
+    "k": "학습목표",
+    "v": "Add an IL-6 receptor antagonist (tocilizumab) to dexamethasone for a hospitalized patient with COVID-19 pneumonia whose oxygen requirement is rapidly increasing despite corticosteroids and whose inflammatory markers are high"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · RECOVERY Collaborative Group. Tocilizumab in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial. Lancet. 2021;397(10285):1637-1645 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …08510874 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "덱사메타손에도 24시간 안에 고유량 산소로 악화하고 CRP 가 높은 입원 COVID-19 폐렴에는 토실리주맙을 더한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "입원 6일째, 산소 요구량이 늘어나는 염증기 — 경구 항바이러스제는 산소가 필요 없는 초기 외래 환자용",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 하폐야·말초 우세 반점성 음영 + SARS-CoV-2 양성 → COVID-19 폐렴",
+    "덱사메타손에도 고유량 산소로 악화 + CRP 160 + 세균 감염 근거 없음 → 토실리주맙 추가"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 하폐야·말초 우세의 반점성 간유리·경화 음영",
+     "why": "COVID-19 폐렴",
+     "also": []
+    },
+    {
+     "item": "she now requires high-flow nasal oxygen at 40 L/min",
+     "why": "스테로이드에도 빠르게 악화 — 면역조절제 적응",
+     "also": []
+    },
+    {
+     "item": "Serum C-reactive protein concentration is 160 mg/L",
+     "why": "고염증 상태",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum procalcitonin concentration is within the reference range",
+     "why": "세균 중복감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Blood cultures show no growth",
+     "why": "균혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "fever, cough, and progressive shortness of breath for 6 days",
+     "why": "증상 6일 — 항바이러스제의 이득 시기가 지남",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "양쪽 말초 우세 음영의 COVID-19 폐렴이 덱사메타손에도 고유량 산소로 악화했고 CRP 가 높다. 토실리주맙을 더한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "증상 3일째 산소가 필요 없는 고위험 외래 환자였다면 니르마트렐비르-리토나비르"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0786.png",
+   "caption": "Supine anteroposterior chest radiograph, resized only (The Cancer Imaging Archive, CC BY 4.0)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1426416018755148727151308510874",
+   "asset_id": "TCIA-COVID19_AR-74762323436418",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …08510874"
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0785",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "순환기 — 몇 달 전 가슴 통증을 참고 넘긴 남성의 심전도와 막힌 동맥",
+  "type": "순환기 — 몇 달 전 가슴 통증을 참고 넘긴 남성의 심전도와 막힌 동맥",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-25",
+  "vignette": "63세 남자가 3개월 전부터 계단을 오를 때 숨이 차서 왔다. 4개월 전 저녁에 가슴을 짓누르는 통증이 3시간 넘게 지속되었으나 병원에 가지 않았고 이후 통증은 없었다. 고혈압과 당뇨병이 있고 30갑년의 흡연력이 있다. 혈압 132/80 mmHg, 맥박 70회/분 이다. 고감도 트로포닌 I 는 참고치 이내이다. 심초음파에서 좌심실 앞벽과 심실중격 앞쪽의 운동이 없고 좌심실 박출률은 40 % 이다. 12유도 심전도는 그림과 같다.",
+  "question": "막혔던 관상동맥으로 가장 가능성이 높은 것은?",
+  "options": [
+   "우관상동맥의 후하행지",
+   "좌전하행지",
+   "좌회선지",
+   "우관상동맥",
+   "좌주간지"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 심전도에서 <b>V1~V3 에 R파 없이 QS형 병적 Q파</b>가 있고 V2~V4 의 T파가 얕게 뒤집혀 있으며 ST 상승은 없다 — 오래된 <b>전중격 경색</b>이다. 또 II·III·aVF 의 깊은 S파로 <b>좌축편위(좌전속지차단)</b>가 있는데, 좌전속지는 좌전하행지의 중격지에서 혈액을 받는다. 심초음파의 앞벽·앞쪽 중격 무운동까지 모두 <b>좌전하행지</b> 영역이다. 트로포닌이 정상이라 지금은 급성 경색이 아니다.\n- 원리: <b>왜 Q파가 남는가</b>: 경색으로 괴사한 심근은 섬유화되어 전기적으로 죽은 「창」이 된다. 그 위에 놓인 전극은 반대쪽 벽의 탈분극이 멀어지는 것만 보게 되어 첫 굴절이 아래로 향한다 — 병적 Q파(또는 R파가 전혀 없는 QS)다. 그래서 Q파는 경색 뒤 수개월~수년 남아 「오래된 경색」의 표지가 된다.<br> <b>왜 V1~V3 이 중격·앞벽인가</b>: V1·V2 는 심실중격을, V3·V4 는 앞벽을 마주 본다. 이 영역과 심첨부는 좌전하행지와 그 대각지·중격지가 공급한다.<br> <b>좌축편위가 더해 주는 정보</b>: 좌각의 앞쪽 가지(좌전속지)는 가늘고 대부분 좌전하행지의 중격지에서 혈액을 받는다. 앞쪽 중격 경색에 좌전속지차단(좌축편위, II·III·aVF 의 rS)이 함께 있으면 막힌 곳이 좌전하행지의 근위부, 중격지 이전일 가능성이 높아진다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">좌전하행지 — 정답</th><th>좌회선지 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>Q파가 생기는 유도</td><td><b>V1~V4</b>(중격·앞벽)</td><td>I·aVL·V5·V6(옆벽), 뒤벽이면 V1·V2 의 큰 R</td></tr> <tr><td>심초음파 무운동</td><td>앞벽·앞쪽 중격·심첨부</td><td>옆벽·뒤옆벽</td></tr> <tr><td>전도 장애</td><td>좌전속지차단·우각차단(중격지)</td><td>드묾</td></tr> </tbody></table> V1~V3 은 「좌전하행지」, II·III·aVF 는 「우관상동맥(대개)」, I·aVL·V5·V6 는 「좌회선지」로 짝지어 두면 경색 부위를 어느 방향으로 물어도 동맥으로 옮길 수 있다.\n- 오답 이유:\n  - ① 후하행지는 하벽과 심실중격 아래쪽이 손상된 하벽 경색이라면 답이 되며, 앞쪽 중격과 앞벽은 공급하지 않는다.\n  - ③ 좌회선지는 Q파와 벽운동 이상이 I·aVL·V5·V6 의 옆벽에 있거나 V1·V2 의 큰 R파로 뒤벽 경색이 보였다면 정답이 된다.\n  - ④ 우관상동맥은 II·III·aVF 에 병적 Q파가 있고 하벽 무운동이 있었다면 가장 가능성이 높은 동맥이 된다.\n  - ⑤ 좌주간지는 앞벽과 옆벽이 함께 넓게 손상되었거나 aVR ST 상승과 광범위 ST 하강이 급성기에 있었다면 떠올린다 — 이 범위로 살아남은 경우는 드물다.\n- 함정: 좌축편위를 하벽 경색(II·III·aVF 의 Q)으로 오인해 우관상동맥을 고르는 것 — II·III·aVF 는 Q가 아니라 r 뒤의 깊은 S(rS)다.\n- 학습목표: V1~V3 의 QS형 병적 Q파와 좌축편위(좌전속지차단)를 함께 보이는 오래된 전중격 경색에서 막힌 관상동맥을 좌전하행지로 찾는다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7790 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도에서 <b>V1~V3 에 R파 없이 QS형 병적 Q파</b>가 있고 V2~V4 의 T파가 얕게 뒤집혀 있으며 ST 상승은 없다 — 오래된 <b>전중격 경색</b>이다. 또 II·III·aVF 의 깊은 S파로 <b>좌축편위(좌전속지차단)</b>가 있는데, 좌전속지는 좌전하행지의 중격지에서 혈액을 받는다. 심초음파의 앞벽·앞쪽 중격 무운동까지 모두 <b>좌전하행지</b> 영역이다. 트로포닌이 정상이라 지금은 급성 경색이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 Q파가 남는가</b>: 경색으로 괴사한 심근은 섬유화되어 전기적으로 죽은 「창」이 된다. 그 위에 놓인 전극은 반대쪽 벽의 탈분극이 멀어지는 것만 보게 되어 첫 굴절이 아래로 향한다 — 병적 Q파(또는 R파가 전혀 없는 QS)다. 그래서 Q파는 경색 뒤 수개월~수년 남아 「오래된 경색」의 표지가 된다.<br> <b>왜 V1~V3 이 중격·앞벽인가</b>: V1·V2 는 심실중격을, V3·V4 는 앞벽을 마주 본다. 이 영역과 심첨부는 좌전하행지와 그 대각지·중격지가 공급한다.<br> <b>좌축편위가 더해 주는 정보</b>: 좌각의 앞쪽 가지(좌전속지)는 가늘고 대부분 좌전하행지의 중격지에서 혈액을 받는다. 앞쪽 중격 경색에 좌전속지차단(좌축편위, II·III·aVF 의 rS)이 함께 있으면 막힌 곳이 좌전하행지의 근위부, 중격지 이전일 가능성이 높아진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">좌전하행지 — 정답</th><th>좌회선지 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>Q파가 생기는 유도</td><td><b>V1~V4</b>(중격·앞벽)</td><td>I·aVL·V5·V6(옆벽), 뒤벽이면 V1·V2 의 큰 R</td></tr> <tr><td>심초음파 무운동</td><td>앞벽·앞쪽 중격·심첨부</td><td>옆벽·뒤옆벽</td></tr> <tr><td>전도 장애</td><td>좌전속지차단·우각차단(중격지)</td><td>드묾</td></tr> </tbody></table> V1~V3 은 「좌전하행지」, II·III·aVF 는 「우관상동맥(대개)」, I·aVL·V5·V6 는 「좌회선지」로 짝지어 두면 경색 부위를 어느 방향으로 물어도 동맥으로 옮길 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 후하행지는 하벽과 심실중격 아래쪽이 손상된 하벽 경색이라면 답이 되며, 앞쪽 중격과 앞벽은 공급하지 않는다.\n③ 좌회선지는 Q파와 벽운동 이상이 I·aVL·V5·V6 의 옆벽에 있거나 V1·V2 의 큰 R파로 뒤벽 경색이 보였다면 정답이 된다.\n④ 우관상동맥은 II·III·aVF 에 병적 Q파가 있고 하벽 무운동이 있었다면 가장 가능성이 높은 동맥이 된다.\n⑤ 좌주간지는 앞벽과 옆벽이 함께 넓게 손상되었거나 aVR ST 상승과 광범위 ST 하강이 급성기에 있었다면 떠올린다 — 이 범위로 살아남은 경우는 드물다."
+   },
+   {
+    "k": "함정",
+    "v": "좌축편위를 하벽 경색(II·III·aVF 의 Q)으로 오인해 우관상동맥을 고르는 것 — II·III·aVF 는 Q가 아니라 r 뒤의 깊은 S(rS)다."
+   },
+   {
+    "k": "학습목표",
+    "v": "V1~V3 의 QS형 병적 Q파와 좌축편위(좌전속지차단)를 함께 보이는 오래된 전중격 경색에서 막힌 관상동맥을 좌전하행지로 찾는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7790 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "V1~V3 의 QS형 Q파와 앞벽·중격 무운동, 좌전속지차단은 모두 좌전하행지 영역의 오래된 경색을 가리킨다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "II·III·aVF 는 Q파가 아니라 작은 r 뒤의 깊은 S파(좌축편위) — 하벽 경색 소견이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: V1~V3 QS형 Q파 + ST 상승 없음 + 좌축편위 → 오래된 전중격 경색과 좌전속지차단",
+    "중격·앞벽과 좌전속지의 공급 동맥 → 좌전하행지"
+   ],
+   "key": [
+    {
+     "item": "영상: V1~V3 의 QS형 병적 Q파, ST 상승 없음",
+     "why": "오래된 전중격 경색",
+     "also": []
+    },
+    {
+     "item": "영상: II·III·aVF 의 깊은 S파(좌축편위)",
+     "why": "좌전속지차단 — 중격지 공급",
+     "also": []
+    },
+    {
+     "item": "좌심실 앞벽과 심실중격 앞쪽의 운동이 없고",
+     "why": "좌전하행지 영역의 벽운동 이상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "고감도 트로포닌 I 는 참고치 이내",
+     "why": "지금 진행 중인 급성 경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "4개월 전 저녁에 가슴을 짓누르는 통증이 3시간 넘게 지속",
+     "why": "경색 시기를 짐작하게 하지만 동맥 판단은 심전도·벽운동이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "V1~V3 의 QS형 Q파와 좌축편위, 앞벽·앞쪽 중격 무운동은 오래된 전중격 경색이다. 이 영역과 좌전속지를 공급하는 좌전하행지가 막혔던 동맥이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "II·III·aVF 에 병적 Q파가 있고 하벽 무운동이었다면 우관상동맥"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0785.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/07000/#files-panel",
+   "asset_id": "PTBXL-07790",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7790"
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0793",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "약리 — 메토트렉세이트와 트리메토프림-설파메톡사졸",
+  "type": "약리 — 메토트렉세이트와 트리메토프림-설파메톡사졸",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-25",
+  "vignette": "68세 여자가 5일 전부터 생긴 입안 헐음과 열로 왔다. 류마티스관절염으로 3년째 메토트렉세이트 15 mg 을 주 1회 먹고 있고 엽산도 먹는다. 10일 전 방광염으로 트리메토프림-설파메톡사졸을 처방받아 먹고 있다. 체온 38.4℃, 혈압 118/70 mmHg, 맥박 102회/분 이다. 입안과 혀에 여러 개의 궤양이 있다. 혈액검사 결과는 다음과 같다. 혈색소 8.6 g/dL, 평균적혈구용적 104 fL, 백혈구 1,300/mm³(호중구 400/mm³), 혈소판 38,000/mm³, 혈청 크레아티닌 1.4 mg/dL(3개월 전 1.0 mg/dL), AST 42 U/L, ALT 38 U/L. 두 약을 끊고 광범위 항생제를 시작하였다.",
+  "question": "추가로 투여해야 할 약으로 가장 적절한 것은?",
+  "options": [
+   "시아노코발라민",
+   "필그라스팀 단독",
+   "글루카르피다제",
+   "류코보린(폴린산)",
+   "엽산 증량"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 메토트렉세이트를 먹던 환자가 <b>트리메토프림-설파메톡사졸을 더한 뒤</b> 점막염과 <b>범혈구감소</b>가 생겼다 — 메토트렉세이트 독성이다. 두 약 모두 디하이드로엽산 환원효소를 막고, 트리메토프림·설폰아미드는 메토트렉세이트의 <b>신세관 분비와 단백 결합을 방해</b>해 혈중 농도를 올린다. 막힌 효소를 우회해 바로 쓸 수 있는 환원형 엽산, <b>류코보린</b>을 준다.\n- 원리: <b>왜 엽산으로는 안 되는가</b>: 엽산(산화형)은 디하이드로엽산 환원효소(DHFR)를 거쳐야 테트라하이드로엽산이 되어 퓨린·티미딜산 합성에 쓰인다. 메토트렉세이트가 이 효소를 막고 있으면 엽산을 더 줘도 활성형이 되지 않는다. 류코보린(5-포르밀테트라하이드로엽산)은 이미 환원된 형태라 DHFR 를 건너뛰어 세포에 바로 쓰인다 — 이것이 「구제」다.<br> <b>왜 이 조합이 위험한가</b>: ① 트리메토프림도 사람 DHFR 를 약하게 막아 엽산 고갈이 더해진다(약력학). ② 메토트렉세이트는 주로 신세관 분비로 나가는데 트리메토프림·설폰아미드가 같은 유기음이온 수송을 경쟁하고, 설폰아미드는 알부민 결합에서 메토트렉세이트를 떼어 유리형을 늘린다(약동학). ③ 고령·신기능 저하가 겹치면 농도가 더 오른다.<br> <b>빨리 나누는 세포가 먼저</b>: 골수와 점막 상피가 DNA 합성을 가장 많이 하므로 범혈구감소와 구내염이 먼저 나타난다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">류코보린 — 정답</th><th>글루카르피다제 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>작용</td><td>환원형 엽산 공급 — DHFR 우회</td><td>혈중 메토트렉세이트를 효소로 분해</td></tr> <tr><td>적응</td><td><b>저용량 독성 포함 모든 메토트렉세이트 독성의 기본</b></td><td>고용량 정맥 메토트렉세이트 뒤 급성 신손상으로 농도가 매우 높을 때</td></tr> <tr><td>세포 안 약물</td><td>세포 안에서 작용</td><td>세포 안 약물에는 듣지 않음</td></tr> </tbody></table> 저용량 경구 독성은 류코보린, 고용량 정맥 투여 뒤 신부전으로 농도가 치솟으면 글루카르피다제를 더한다고 정리하면 된다.\n- 오답 이유:\n  - ① 시아노코발라민은 대적혈구가 있어도 신경 증상과 낮은 비타민 B12, 높은 메틸말론산이 있는 결핍성 빈혈이라면 정답이 된다.\n  - ② 필그라스팀은 호중구감소가 길어질 때 류코보린에 더하는 보조 치료가 될 수 있으나 원인인 엽산 차단을 풀지 못한다.\n  - ③ 글루카르피다제는 고용량 정맥 메토트렉세이트 뒤 급성 신손상으로 혈중 농도가 매우 높게 지속된다면 정답이 된다.\n  - ⑤ 엽산 증량은 독성이 생기기 전 예방(구내염·간수치 상승 감소)에는 맞지만, DHFR 가 막힌 지금은 활성형으로 바뀌지 못한다.\n- 함정: 대적혈구성 빈혈을 보고 엽산을 더 주는 것 — DHFR 가 막혀 있으면 산화형 엽산은 쓰이지 못한다.\n- 학습목표: 저용량 메토트렉세이트 복용 중 트리메토프림-설파메톡사졸을 더한 뒤 생긴 범혈구감소·점막염을 엽산 경로의 이중 억제와 신배설 감소로 설명하고 류코보린으로 치료한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 71: Principles of Clinical Pharmacology · Al-Quteimat OM, Al-Badaineh MA. Methotrexate and trimethoprim-sulphamethoxazole: extremely serious and life-threatening combination. J Clin Pharm Ther. 2013;38(3):203-205",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "메토트렉세이트를 먹던 환자가 <b>트리메토프림-설파메톡사졸을 더한 뒤</b> 점막염과 <b>범혈구감소</b>가 생겼다 — 메토트렉세이트 독성이다. 두 약 모두 디하이드로엽산 환원효소를 막고, 트리메토프림·설폰아미드는 메토트렉세이트의 <b>신세관 분비와 단백 결합을 방해</b>해 혈중 농도를 올린다. 막힌 효소를 우회해 바로 쓸 수 있는 환원형 엽산, <b>류코보린</b>을 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 엽산으로는 안 되는가</b>: 엽산(산화형)은 디하이드로엽산 환원효소(DHFR)를 거쳐야 테트라하이드로엽산이 되어 퓨린·티미딜산 합성에 쓰인다. 메토트렉세이트가 이 효소를 막고 있으면 엽산을 더 줘도 활성형이 되지 않는다. 류코보린(5-포르밀테트라하이드로엽산)은 이미 환원된 형태라 DHFR 를 건너뛰어 세포에 바로 쓰인다 — 이것이 「구제」다.<br> <b>왜 이 조합이 위험한가</b>: ① 트리메토프림도 사람 DHFR 를 약하게 막아 엽산 고갈이 더해진다(약력학). ② 메토트렉세이트는 주로 신세관 분비로 나가는데 트리메토프림·설폰아미드가 같은 유기음이온 수송을 경쟁하고, 설폰아미드는 알부민 결합에서 메토트렉세이트를 떼어 유리형을 늘린다(약동학). ③ 고령·신기능 저하가 겹치면 농도가 더 오른다.<br> <b>빨리 나누는 세포가 먼저</b>: 골수와 점막 상피가 DNA 합성을 가장 많이 하므로 범혈구감소와 구내염이 먼저 나타난다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">류코보린 — 정답</th><th>글루카르피다제 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>작용</td><td>환원형 엽산 공급 — DHFR 우회</td><td>혈중 메토트렉세이트를 효소로 분해</td></tr> <tr><td>적응</td><td><b>저용량 독성 포함 모든 메토트렉세이트 독성의 기본</b></td><td>고용량 정맥 메토트렉세이트 뒤 급성 신손상으로 농도가 매우 높을 때</td></tr> <tr><td>세포 안 약물</td><td>세포 안에서 작용</td><td>세포 안 약물에는 듣지 않음</td></tr> </tbody></table> 저용량 경구 독성은 류코보린, 고용량 정맥 투여 뒤 신부전으로 농도가 치솟으면 글루카르피다제를 더한다고 정리하면 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 시아노코발라민은 대적혈구가 있어도 신경 증상과 낮은 비타민 B12, 높은 메틸말론산이 있는 결핍성 빈혈이라면 정답이 된다.\n② 필그라스팀은 호중구감소가 길어질 때 류코보린에 더하는 보조 치료가 될 수 있으나 원인인 엽산 차단을 풀지 못한다.\n③ 글루카르피다제는 고용량 정맥 메토트렉세이트 뒤 급성 신손상으로 혈중 농도가 매우 높게 지속된다면 정답이 된다.\n⑤ 엽산 증량은 독성이 생기기 전 예방(구내염·간수치 상승 감소)에는 맞지만, DHFR 가 막힌 지금은 활성형으로 바뀌지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "대적혈구성 빈혈을 보고 엽산을 더 주는 것 — DHFR 가 막혀 있으면 산화형 엽산은 쓰이지 못한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "저용량 메토트렉세이트 복용 중 트리메토프림-설파메톡사졸을 더한 뒤 생긴 범혈구감소·점막염을 엽산 경로의 이중 억제와 신배설 감소로 설명하고 류코보린으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 71: Principles of Clinical Pharmacology · Al-Quteimat OM, Al-Badaineh MA. Methotrexate and trimethoprim-sulphamethoxazole: extremely serious and life-threatening combination. J Clin Pharm Ther. 2013;38(3):203-205"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "트리메토프림-설파메톡사졸로 유발된 저용량 메토트렉세이트 독성에는 DHFR 를 우회하는 류코보린을 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "저용량 경구 메토트렉세이트 독성 — 글루카르피다제는 고용량 정맥 투여 뒤 혈중 농도가 매우 높을 때",
+   "steps": 3,
+   "chain": [
+    "메토트렉세이트 + 새로 시작한 트리메토프림-설파메톡사졸 → 상호작용(DHFR 이중 억제·신배설 감소)",
+    "점막염 + 범혈구감소 + 크레아티닌 상승 → 메토트렉세이트 독성",
+    "DHFR 가 막혀 산화형 엽산은 무효 → 류코보린"
+   ],
+   "key": [
+    {
+     "item": "메토트렉세이트 15 mg 을 주 1회",
+     "why": "저용량 경구 — 독성의 원인 약",
+     "also": []
+    },
+    {
+     "item": "트리메토프림-설파메톡사졸을 처방받아",
+     "why": "상호작용 약",
+     "also": []
+    },
+    {
+     "item": "백혈구 1,300/mm³(호중구 400/mm³), 혈소판 38,000/mm³",
+     "why": "골수 억제",
+     "also": []
+    },
+    {
+     "item": "입안과 혀에 여러 개의 궤양",
+     "why": "점막염 — 빨리 나누는 세포",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "혈청 크레아티닌 1.4 mg/dL(3개월 전 1.0 mg/dL)",
+     "why": "배설 감소 — 독성을 키운 요인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "평균적혈구용적 104 fL",
+     "why": "엽산 대사 차단을 반영하지만 비타민 B12 결핍으로 끌려가기 쉽다",
+     "also": []
+    },
+    {
+     "item": "엽산도 먹는다",
+     "why": "예방 용량 엽산은 이미 막힌 효소를 우회하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "메토트렉세이트에 트리메토프림-설파메톡사졸을 더한 뒤 점막염과 범혈구감소가 생겼다. 막힌 DHFR 를 우회하는 류코보린을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "고용량 정맥 메토트렉세이트 뒤 급성 신손상으로 혈중 농도가 매우 높았다면 글루카르피다제를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0792",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "내분비 — 폐렴 뒤 고열·섬망·빈맥의 다음 약물",
+  "type": "내분비 — 폐렴 뒤 고열·섬망·빈맥의 다음 약물",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-25",
+  "vignette": "A 34-year-old woman is brought to the emergency department because of agitation and confusion for 12 hours. Three days ago, she developed fever and a productive cough. Her husband says she has lost 6 kg over the past 3 months and has had palpitations and heat intolerance, but she has not seen a physician. Temperature is 40.1°C (104.2°F), pulse is 148/min and irregularly irregular, respirations are 26/min, and blood pressure is 152/58 mm Hg. She is diaphoretic and disoriented. There is a diffuse, nontender goiter with a bruit and bilateral proptosis. Crackles are heard over the right lower lung field. Serum TSH concentration is undetectable, and free T4 concentration is markedly elevated. She is given intravenous fluids, acetaminophen, antibiotics for pneumonia, and propranolol.",
+  "question": "Which of the following is the most appropriate next step in pharmacotherapy?",
+  "options": [
+   "Potassium iodide",
+   "Radioactive iodine",
+   "Levothyroxine",
+   "Aspirin",
+   "Propylthiouracil"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Fever over 40°C, <b>delirium</b>, tachycardia with atrial fibrillation, and a precipitating infection in a patient with untreated Graves disease (goiter with bruit, proptosis) is <b>thyroid storm</b>. After beta-blockade, the next step is a <b>thionamide to block new hormone synthesis</b>; propylthiouracil is preferred in storm because it also inhibits peripheral T4-to-T3 conversion. Iodine is given only <b>at least 1 hour after</b> the thionamide.\n- 원리: <b>Four targets, in order</b>: (1) block β-adrenergic effects (propranolol), (2) block synthesis of new hormone (thionamide), (3) block release of stored hormone (iodine), (4) block peripheral T4→T3 conversion (propylthiouracil, glucocorticoids, propranolol). Treat the precipitant and support temperature and volume.<br> <b>Why the thionamide comes before iodine</b>: Iodine acutely inhibits release of preformed hormone (Wolff-Chaikoff effect). But if the gland's organification enzyme, thyroid peroxidase, is not yet blocked, the large iodine load becomes substrate for even more hormone synthesis and can worsen thyrotoxicosis (Jod-Basedow effect). Giving the thionamide first closes the synthesis pathway so iodine only blocks release.<br> <b>Why propylthiouracil here</b>: Both propylthiouracil and methimazole block thyroid peroxidase; only propylthiouracil also inhibits type 1 deiodinase, lowering T3 faster. Outside storm and the first trimester, methimazole is preferred because propylthiouracil can cause fulminant hepatotoxicity.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Propylthiouracil (answer)</th><th>Potassium iodide (closest distractor)</th></tr></thead><tbody> <tr><td>Action</td><td>Blocks thyroid peroxidase (synthesis) and peripheral T4→T3</td><td>Blocks release of stored hormone</td></tr> <tr><td>Timing in storm</td><td><b>First, after beta-blocker</b></td><td><b>At least 1 hour after thionamide</b></td></tr> <tr><td>If given alone first</td><td>Safe</td><td>Iodine fuels new hormone synthesis</td></tr> </tbody></table> \"Synthesis before release\": block the factory before you shut the warehouse door, otherwise the iodine becomes raw material.\n- 오답 이유:\n  - (A) Potassium iodide would be the correct next drug at least 1 hour after a thionamide has already been given.\n  - (B) Radioactive iodine would be appropriate for definitive treatment of Graves disease once she is euthyroid and stable, not during storm.\n  - (C) Levothyroxine would be correct if TSH were elevated and free T4 low, as in myxedema coma, the opposite emergency.\n  - (D) Aspirin should be avoided because it displaces T4 from binding proteins and raises free hormone; it would suit fever in a patient without thyrotoxicosis.\n- 함정: Giving iodine first because it acts fastest — without prior thionamide blockade, the iodine load becomes substrate for more hormone.\n- 학습목표: Treat thyroid storm by giving a thionamide (propylthiouracil) before iodine, together with a beta-blocker and glucocorticoid, and explain why iodine must follow thionamide blockade\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 396: Hyperthyroidism and Other Causes of Thyrotoxicosis · Ross DS, Burch HB, Cooper DS, et al. 2016 American Thyroid Association guidelines for diagnosis and management of hyperthyroidism and other causes of thyrotoxicosis. Thyroid. 2016;26(10):1343-1421",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever over 40°C, <b>delirium</b>, tachycardia with atrial fibrillation, and a precipitating infection in a patient with untreated Graves disease (goiter with bruit, proptosis) is <b>thyroid storm</b>. After beta-blockade, the next step is a <b>thionamide to block new hormone synthesis</b>; propylthiouracil is preferred in storm because it also inhibits peripheral T4-to-T3 conversion. Iodine is given only <b>at least 1 hour after</b> the thionamide."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Four targets, in order</b>: (1) block β-adrenergic effects (propranolol), (2) block synthesis of new hormone (thionamide), (3) block release of stored hormone (iodine), (4) block peripheral T4→T3 conversion (propylthiouracil, glucocorticoids, propranolol). Treat the precipitant and support temperature and volume.<br> <b>Why the thionamide comes before iodine</b>: Iodine acutely inhibits release of preformed hormone (Wolff-Chaikoff effect). But if the gland's organification enzyme, thyroid peroxidase, is not yet blocked, the large iodine load becomes substrate for even more hormone synthesis and can worsen thyrotoxicosis (Jod-Basedow effect). Giving the thionamide first closes the synthesis pathway so iodine only blocks release.<br> <b>Why propylthiouracil here</b>: Both propylthiouracil and methimazole block thyroid peroxidase; only propylthiouracil also inhibits type 1 deiodinase, lowering T3 faster. Outside storm and the first trimester, methimazole is preferred because propylthiouracil can cause fulminant hepatotoxicity."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Propylthiouracil (answer)</th><th>Potassium iodide (closest distractor)</th></tr></thead><tbody> <tr><td>Action</td><td>Blocks thyroid peroxidase (synthesis) and peripheral T4→T3</td><td>Blocks release of stored hormone</td></tr> <tr><td>Timing in storm</td><td><b>First, after beta-blocker</b></td><td><b>At least 1 hour after thionamide</b></td></tr> <tr><td>If given alone first</td><td>Safe</td><td>Iodine fuels new hormone synthesis</td></tr> </tbody></table> \"Synthesis before release\": block the factory before you shut the warehouse door, otherwise the iodine becomes raw material."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Potassium iodide would be the correct next drug at least 1 hour after a thionamide has already been given.\n(B) Radioactive iodine would be appropriate for definitive treatment of Graves disease once she is euthyroid and stable, not during storm.\n(C) Levothyroxine would be correct if TSH were elevated and free T4 low, as in myxedema coma, the opposite emergency.\n(D) Aspirin should be avoided because it displaces T4 from binding proteins and raises free hormone; it would suit fever in a patient without thyrotoxicosis."
+   },
+   {
+    "k": "함정",
+    "v": "Giving iodine first because it acts fastest — without prior thionamide blockade, the iodine load becomes substrate for more hormone."
+   },
+   {
+    "k": "학습목표",
+    "v": "Treat thyroid storm by giving a thionamide (propylthiouracil) before iodine, together with a beta-blocker and glucocorticoid, and explain why iodine must follow thionamide blockade"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 396: Hyperthyroidism and Other Causes of Thyrotoxicosis · Ross DS, Burch HB, Cooper DS, et al. 2016 American Thyroid Association guidelines for diagnosis and management of hyperthyroidism and other causes of thyrotoxicosis. Thyroid. 2016;26(10):1343-1421"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "갑상샘중독 위기에서 베타차단제 다음에는 요오드보다 먼저 티온아마이드(프로필티오우라실)를 준다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "아직 티온아마이드를 주지 않았다 — 요오드는 합성을 먼저 막은 뒤 최소 1시간 후",
+   "steps": 3,
+   "chain": [
+    "치료 안 된 그레이브스병 + 폐렴 + 40℃ 발열·섬망·심방세동 → 갑상샘중독 위기",
+    "베타차단제는 이미 투여 → 다음 표적은 새 호르몬 합성",
+    "요오드는 합성 차단 뒤에만 → 프로필티오우라실 먼저"
+   ],
+   "key": [
+    {
+     "item": "Temperature is 40.1°C",
+     "why": "위기의 중증 발열",
+     "also": []
+    },
+    {
+     "item": "She is diaphoretic and disoriented",
+     "why": "중추신경 침범 — 위기의 핵심",
+     "also": []
+    },
+    {
+     "item": "diffuse, nontender goiter with a bruit and bilateral proptosis",
+     "why": "그레이브스병",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "She is given intravenous fluids, acetaminophen, antibiotics for pneumonia, and propranolol",
+     "why": "이미 한 처치 — 다음 단계는 합성 차단",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Crackles are heard over the right lower lung field",
+     "why": "유발 요인(폐렴) — 약 선택을 바꾸지는 않는다",
+     "also": []
+    },
+    {
+     "item": "irregularly irregular",
+     "why": "갑상샘중독에 동반한 심방세동 — 베타차단제로 이미 대응",
+     "also": []
+    }
+   ],
+   "summary": "치료 안 된 그레이브스병이 폐렴으로 갑상샘중독 위기가 되었다. 베타차단제 다음에는 요오드보다 먼저 프로필티오우라실로 합성을 막는다.",
+   "switch": {
+    "choice": "A",
+    "condition": "프로필티오우라실을 1시간 전에 이미 주었다면 다음은 요오드화칼륨"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0791",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "소아 — 생후 2주 남아의 구토와 저나트륨·고칼륨",
+  "type": "소아 — 생후 2주 남아의 구토와 저나트륨·고칼륨",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-25",
+  "vignette": "생후 14일 남아가 3일 전부터 수유 때마다 토하고 잘 먹지 않아 왔다. 만삭 질식분만으로 태어났고 출생체중은 3.3 kg 이었는데 지금은 3.0 kg 이다. 축 늘어져 있고 대천문이 함몰되어 있다. 혈압 62/34 mmHg, 맥박 176회/분 이다. 음경과 음낭은 정상 남아의 모양이며 음낭이 약간 검다. 복부는 부드럽고 만져지는 덩이는 없다. 혈액검사 결과는 다음과 같다. 나트륨 124 mEq/L, 칼륨 7.1 mEq/L, 염소 92 mEq/L, 중탄산 15 mEq/L, 포도당 52 mg/dL, 혈장 레닌 활성 상승, 혈청 17-수산화프로게스테론 크게 상승.",
+  "question": "결핍된 효소로 가장 적절한 것은?",
+  "options": [
+   "21-수산화효소",
+   "11β-수산화효소",
+   "17α-수산화효소",
+   "3β-수산화스테로이드 탈수소효소",
+   "알도스테론 합성효소"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 생후 2주에 <b>구토·체중 감소·저혈압과 저나트륨·고칼륨·대사성 산증·저혈당</b>이 있어 염분소실 위기다. <b>17-수산화프로게스테론이 크게 올랐으므로</b> 그 바로 아래 단계, 즉 <b>21-수산화효소</b>가 막혔다. 남아는 외부 생식기가 정상이라 신생아 때 눈에 띄지 않다가 생후 1~3주에 염분소실로 처음 나타난다. 음낭 색소는 ACTH 증가를 반영한다.\n- 원리: <b>왜 17-수산화프로게스테론인가</b>: 부신피질에서 프로게스테론과 17-수산화프로게스테론은 21-수산화효소를 거쳐 각각 알도스테론 경로(11-데옥시코르티코스테론)와 코르티솔 경로(11-데옥시코르티솔)로 간다. 이 효소가 막히면 바로 앞의 17-수산화프로게스테론이 쌓인다.<br> <b>왜 염분이 빠지는가</b>: 코르티솔이 부족해 ACTH 가 오르고 부신이 커지지만, 막힌 단계 아래의 코르티솔과 알도스테론은 모두 만들어지지 않는다. 알도스테론이 없으면 집합관에서 나트륨을 잡지 못하고 칼륨·수소이온을 내보내지 못해 저나트륨·고칼륨·산증이 생긴다. 쌓인 전구물질은 안드로겐 경로로 흘러가 여아는 출생 때 외부 생식기 남성화로 발견되고, 남아는 이 위기 때 처음 진단된다.<br> <b>치료</b>: 생리식염수로 수액을 채우고 하이드로코티손을 주며, 유지기에는 하이드로코티손과 플루드로코티손, 영아기에는 소금을 보충한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">21-수산화효소 결핍 — 정답</th><th>11β-수산화효소 결핍 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>쌓이는 물질</td><td><b>17-수산화프로게스테론</b></td><td>11-데옥시코르티솔, 11-데옥시코르티코스테론</td></tr> <tr><td>혈압</td><td><b>저혈압·염분소실</b></td><td>고혈압(11-데옥시코르티코스테론의 광물코르티코이드 작용)</td></tr> <tr><td>칼륨·레닌</td><td>고칼륨·레닌 상승</td><td>저칼륨·레닌 억제</td></tr> <tr><td>안드로겐</td><td colspan=\"2\">둘 다 증가 — 여아 남성화</td></tr> </tbody></table> 두 결핍 모두 남성화를 일으키므로 「혈압과 칼륨」으로 가른다: 낮은 혈압·높은 칼륨은 21, 높은 혈압·낮은 칼륨은 11β.\n- 오답 이유:\n  - ② 11β-수산화효소 결핍은 같은 남성화에 고혈압·저칼륨·레닌 억제와 11-데옥시코르티솔 상승이 있었다면 정답이 된다.\n  - ③ 17α-수산화효소 결핍은 고혈압·저칼륨에 성호르몬이 만들어지지 않아 사춘기가 오지 않는 표현형 여성이었다면 정답이 된다.\n  - ④ 3β-수산화스테로이드 탈수소효소 결핍은 염분소실과 함께 남아의 외부 생식기 남성화가 불완전하고 DHEA 가 높았다면 정답이 된다.\n  - ⑤ 알도스테론 합성효소 결핍은 염분소실이 있으나 코르티솔·17-수산화프로게스테론·혈당이 정상이었다면 정답이 된다.\n- 함정: 생후 2주 남아의 구토를 비후성 유문협착으로 보는 것 — 유문협착은 저염소성 대사성 알칼리증과 저칼륨이고, 여기는 고칼륨·산증이다.\n- 학습목표: 생후 1~3주 남아의 구토·탈수와 저나트륨·고칼륨, 17-수산화프로게스테론 상승을 염분소실형 21-수산화효소 결핍으로 진단하고 11β-수산화효소 결핍과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Speiser PW, Arlt W, Auchus RJ, et al. Congenital adrenal hyperplasia due to steroid 21-hydroxylase deficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2018;103(11):4043-4088",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "생후 2주에 <b>구토·체중 감소·저혈압과 저나트륨·고칼륨·대사성 산증·저혈당</b>이 있어 염분소실 위기다. <b>17-수산화프로게스테론이 크게 올랐으므로</b> 그 바로 아래 단계, 즉 <b>21-수산화효소</b>가 막혔다. 남아는 외부 생식기가 정상이라 신생아 때 눈에 띄지 않다가 생후 1~3주에 염분소실로 처음 나타난다. 음낭 색소는 ACTH 증가를 반영한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 17-수산화프로게스테론인가</b>: 부신피질에서 프로게스테론과 17-수산화프로게스테론은 21-수산화효소를 거쳐 각각 알도스테론 경로(11-데옥시코르티코스테론)와 코르티솔 경로(11-데옥시코르티솔)로 간다. 이 효소가 막히면 바로 앞의 17-수산화프로게스테론이 쌓인다.<br> <b>왜 염분이 빠지는가</b>: 코르티솔이 부족해 ACTH 가 오르고 부신이 커지지만, 막힌 단계 아래의 코르티솔과 알도스테론은 모두 만들어지지 않는다. 알도스테론이 없으면 집합관에서 나트륨을 잡지 못하고 칼륨·수소이온을 내보내지 못해 저나트륨·고칼륨·산증이 생긴다. 쌓인 전구물질은 안드로겐 경로로 흘러가 여아는 출생 때 외부 생식기 남성화로 발견되고, 남아는 이 위기 때 처음 진단된다.<br> <b>치료</b>: 생리식염수로 수액을 채우고 하이드로코티손을 주며, 유지기에는 하이드로코티손과 플루드로코티손, 영아기에는 소금을 보충한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">21-수산화효소 결핍 — 정답</th><th>11β-수산화효소 결핍 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>쌓이는 물질</td><td><b>17-수산화프로게스테론</b></td><td>11-데옥시코르티솔, 11-데옥시코르티코스테론</td></tr> <tr><td>혈압</td><td><b>저혈압·염분소실</b></td><td>고혈압(11-데옥시코르티코스테론의 광물코르티코이드 작용)</td></tr> <tr><td>칼륨·레닌</td><td>고칼륨·레닌 상승</td><td>저칼륨·레닌 억제</td></tr> <tr><td>안드로겐</td><td colspan=\"2\">둘 다 증가 — 여아 남성화</td></tr> </tbody></table> 두 결핍 모두 남성화를 일으키므로 「혈압과 칼륨」으로 가른다: 낮은 혈압·높은 칼륨은 21, 높은 혈압·낮은 칼륨은 11β."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 11β-수산화효소 결핍은 같은 남성화에 고혈압·저칼륨·레닌 억제와 11-데옥시코르티솔 상승이 있었다면 정답이 된다.\n③ 17α-수산화효소 결핍은 고혈압·저칼륨에 성호르몬이 만들어지지 않아 사춘기가 오지 않는 표현형 여성이었다면 정답이 된다.\n④ 3β-수산화스테로이드 탈수소효소 결핍은 염분소실과 함께 남아의 외부 생식기 남성화가 불완전하고 DHEA 가 높았다면 정답이 된다.\n⑤ 알도스테론 합성효소 결핍은 염분소실이 있으나 코르티솔·17-수산화프로게스테론·혈당이 정상이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "생후 2주 남아의 구토를 비후성 유문협착으로 보는 것 — 유문협착은 저염소성 대사성 알칼리증과 저칼륨이고, 여기는 고칼륨·산증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "생후 1~3주 남아의 구토·탈수와 저나트륨·고칼륨, 17-수산화프로게스테론 상승을 염분소실형 21-수산화효소 결핍으로 진단하고 11β-수산화효소 결핍과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 398: Disorders of the Adrenal Cortex · Speiser PW, Arlt W, Auchus RJ, et al. Congenital adrenal hyperplasia due to steroid 21-hydroxylase deficiency: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2018;103(11):4043-4088"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "생후 2주 남아의 염분소실 위기와 17-수산화프로게스테론 상승은 21-수산화효소 결핍이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "저혈압·고칼륨·레닌 상승 — 11β-수산화효소 결핍은 고혈압·저칼륨이다",
+   "steps": 3,
+   "chain": [
+    "구토·체중 감소·저혈압 + 저나트륨·고칼륨·산증·저혈당 → 부신 기능부전(염분소실 위기)",
+    "17-수산화프로게스테론 크게 상승 → 그 아래 단계 차단",
+    "고칼륨·저혈압으로 광물코르티코이드 결핍 → 21-수산화효소"
+   ],
+   "key": [
+    {
+     "item": "나트륨 124 mEq/L, 칼륨 7.1 mEq/L",
+     "why": "광물코르티코이드 결핍",
+     "also": []
+    },
+    {
+     "item": "혈청 17-수산화프로게스테론 크게 상승",
+     "why": "21-수산화효소 바로 앞 전구물질",
+     "also": []
+    },
+    {
+     "item": "혈압 62/34 mmHg",
+     "why": "염분소실 — 11β 결핍의 고혈압과 반대",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈장 레닌 활성 상승",
+     "why": "11-데옥시코르티코스테론 과다(11β·17α 결핍) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "음경과 음낭은 정상 남아의 모양",
+     "why": "3β-수산화스테로이드 탈수소효소 결핍의 불완전 남성화 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "복부는 부드럽고 만져지는 덩이는 없다",
+     "why": "비후성 유문협착(올리브 덩이) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "음낭이 약간 검다",
+     "why": "ACTH 상승을 반영하지만 효소 판단에는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "생후 2주 남아의 염분소실 위기(저혈압·저나트륨·고칼륨)와 17-수산화프로게스테론 상승은 21-수산화효소 결핍 선천부신과형성이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "혈압이 높고 칼륨이 낮으며 11-데옥시코르티솔이 올랐다면 11β-수산화효소 결핍"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0790",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "부인과 — 소파술 뒤 생긴 이차 무월경",
+  "type": "부인과 — 소파술 뒤 생긴 이차 무월경",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-25",
+  "vignette": "A 31-year-old woman comes to the physician because she has not had a menstrual period for 7 months. Eight months ago, she underwent dilation and curettage for retained products of conception after a miscarriage at 10 weeks' gestation; the procedure was complicated by endometritis treated with antibiotics. Before that, her menses had occurred regularly every 28 days. She has no hot flashes, galactorrhea, headaches, or weight change, and she exercises moderately. Her BMI is 23 kg/m2. Pelvic examination shows no abnormalities. Urine pregnancy test is negative. Serum prolactin, TSH, and FSH concentrations are within the reference ranges. She has no withdrawal bleeding after a 10-day course of medroxyprogesterone or after a subsequent 21-day course of estrogen followed by progestin.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Polycystic ovary syndrome",
+   "Sheehan syndrome",
+   "Intrauterine adhesions",
+   "Functional hypothalamic amenorrhea",
+   "Primary ovarian insufficiency"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Curettage of a recently pregnant uterus, especially with <b>endometritis</b>, can strip the basal layer of the endometrium and produce <b>intrauterine adhesions</b>. Her hormonal axis is intact (normal FSH, prolactin, TSH), yet <b>even estrogen followed by progestin produces no bleeding</b> — the defect is in the end organ, the endometrium, not the hormones. Hysteroscopy confirms and treats the adhesions.\n- 원리: <b>The logic of withdrawal tests</b>: Bleeding after a progestin course means the endometrium has been primed by enough estrogen and the outflow tract is open — the problem is anovulation (as in PCOS). No bleeding means either too little estrogen or a defective endometrium/outflow tract. Giving estrogen followed by progestin separates these: if bleeding then occurs, the problem was estrogen deficiency (hypothalamic, pituitary, or ovarian); if bleeding still does not occur, the endometrium itself cannot respond.<br> <b>Why curettage causes it</b>: The endometrium regenerates each month from the basal layer. Aggressive curettage of the soft, postpartum or postabortal uterus, particularly with infection, destroys the basal layer so that opposing raw surfaces fuse with fibrous bands. The cavity may be partly or wholly obliterated.<br> <b>Management</b>: Hysteroscopic adhesiolysis, often followed by estrogen to promote regrowth; fertility and recurrent miscarriage risk depend on the extent of scarring.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intrauterine adhesions (answer)</th><th>Functional hypothalamic amenorrhea (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td>Curettage, postpartum or postabortal infection</td><td>Low weight, intense exercise, stress</td></tr> <tr><td>FSH / estrogen</td><td>Normal</td><td><b>Low-normal FSH, low estrogen</b></td></tr> <tr><td>Progestin challenge</td><td>No bleeding</td><td>No bleeding</td></tr> <tr><td>Estrogen-progestin challenge</td><td><b>No bleeding</b></td><td>Bleeding occurs</td></tr> </tbody></table> When the progestin challenge is negative, the estrogen-progestin challenge decides: bleeding means the hormones were missing; no bleeding means the uterus is the problem.\n- 오답 이유:\n  - (A) Polycystic ovary syndrome would be correct if she had hyperandrogenism, irregular cycles since menarche, and bleeding after the progestin challenge.\n  - (B) Sheehan syndrome would be correct after massive postpartum hemorrhage with failure of lactation and low gonadotropins, TSH, and cortisol.\n  - (D) Functional hypothalamic amenorrhea would be correct in a woman with low BMI or intense exercise who bleeds after the estrogen-progestin course.\n  - (E) Primary ovarian insufficiency would be correct if FSH were repeatedly elevated above the menopausal range with hot flashes before age 40.\n- 함정: Assuming every negative progestin challenge means low estrogen — the estrogen-progestin challenge must be done before blaming the hormones.\n- 학습목표: Diagnose intrauterine adhesions (Asherman syndrome) when secondary amenorrhea follows uterine curettage and neither progestin nor estrogen-progestin withdrawal produces bleeding, and confirm with hysteroscopy\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 405: Menstrual Disorders and Pelvic Pain · Practice Committee of the American Society for Reproductive Medicine. Current evaluation of amenorrhea. Fertil Steril. 2008;90(5 Suppl):S219-S225",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Curettage of a recently pregnant uterus, especially with <b>endometritis</b>, can strip the basal layer of the endometrium and produce <b>intrauterine adhesions</b>. Her hormonal axis is intact (normal FSH, prolactin, TSH), yet <b>even estrogen followed by progestin produces no bleeding</b> — the defect is in the end organ, the endometrium, not the hormones. Hysteroscopy confirms and treats the adhesions."
+   },
+   {
+    "k": "원리",
+    "v": "<b>The logic of withdrawal tests</b>: Bleeding after a progestin course means the endometrium has been primed by enough estrogen and the outflow tract is open — the problem is anovulation (as in PCOS). No bleeding means either too little estrogen or a defective endometrium/outflow tract. Giving estrogen followed by progestin separates these: if bleeding then occurs, the problem was estrogen deficiency (hypothalamic, pituitary, or ovarian); if bleeding still does not occur, the endometrium itself cannot respond.<br> <b>Why curettage causes it</b>: The endometrium regenerates each month from the basal layer. Aggressive curettage of the soft, postpartum or postabortal uterus, particularly with infection, destroys the basal layer so that opposing raw surfaces fuse with fibrous bands. The cavity may be partly or wholly obliterated.<br> <b>Management</b>: Hysteroscopic adhesiolysis, often followed by estrogen to promote regrowth; fertility and recurrent miscarriage risk depend on the extent of scarring."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intrauterine adhesions (answer)</th><th>Functional hypothalamic amenorrhea (closest distractor)</th></tr></thead><tbody> <tr><td>History</td><td>Curettage, postpartum or postabortal infection</td><td>Low weight, intense exercise, stress</td></tr> <tr><td>FSH / estrogen</td><td>Normal</td><td><b>Low-normal FSH, low estrogen</b></td></tr> <tr><td>Progestin challenge</td><td>No bleeding</td><td>No bleeding</td></tr> <tr><td>Estrogen-progestin challenge</td><td><b>No bleeding</b></td><td>Bleeding occurs</td></tr> </tbody></table> When the progestin challenge is negative, the estrogen-progestin challenge decides: bleeding means the hormones were missing; no bleeding means the uterus is the problem."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Polycystic ovary syndrome would be correct if she had hyperandrogenism, irregular cycles since menarche, and bleeding after the progestin challenge.\n(B) Sheehan syndrome would be correct after massive postpartum hemorrhage with failure of lactation and low gonadotropins, TSH, and cortisol.\n(D) Functional hypothalamic amenorrhea would be correct in a woman with low BMI or intense exercise who bleeds after the estrogen-progestin course.\n(E) Primary ovarian insufficiency would be correct if FSH were repeatedly elevated above the menopausal range with hot flashes before age 40."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming every negative progestin challenge means low estrogen — the estrogen-progestin challenge must be done before blaming the hormones."
+   },
+   {
+    "k": "학습목표",
+    "v": "Diagnose intrauterine adhesions (Asherman syndrome) when secondary amenorrhea follows uterine curettage and neither progestin nor estrogen-progestin withdrawal produces bleeding, and confirm with hysteroscopy"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 405: Menstrual Disorders and Pelvic Pain · Practice Committee of the American Society for Reproductive Medicine. Current evaluation of amenorrhea. Fertil Steril. 2008;90(5 Suppl):S219-S225"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "소파술·자궁내막염 뒤 무월경에서 호르몬 축이 정상이고 에스트로겐-프로게스틴 투여 뒤에도 출혈이 없으면 자궁강 유착이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "FSH 정상과 에스트로겐-프로게스틴 투여 뒤 무출혈 — 시상하부성은 에스트로겐을 주면 출혈한다",
+   "steps": 3,
+   "chain": [
+    "임신 음성 + 프로락틴·TSH·FSH 정상 → 호르몬 축 이상 가능성 낮음",
+    "프로게스틴·에스트로겐-프로게스틴 모두 무출혈 → 자궁내막(표적 장기) 이상",
+    "유산 뒤 소파술 + 자궁내막염 → 자궁강 유착"
+   ],
+   "key": [
+    {
+     "item": "dilation and curettage for retained products of conception",
+     "why": "기저층 손상의 원인",
+     "also": []
+    },
+    {
+     "item": "complicated by endometritis",
+     "why": "유착 위험을 크게 높인다",
+     "also": []
+    },
+    {
+     "item": "after a subsequent 21-day course of estrogen followed by progestin",
+     "why": "에스트로겐을 주어도 무출혈 — 표적 장기 결함",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum prolactin, TSH, and FSH concentrations are within the reference ranges",
+     "why": "고프로락틴혈증·갑상샘·난소부전 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Her BMI is 23 kg/m2",
+     "why": "체중 저하에 의한 시상하부성 무월경 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no hot flashes, galactorrhea, headaches",
+     "why": "난소부전·뇌하수체 종양 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "소파술과 자궁내막염 뒤 무월경이고, 호르몬은 정상인데 에스트로겐-프로게스틴을 주어도 출혈이 없다. 자궁강 유착(Asherman 증후군)이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "에스트로겐-프로게스틴 투여 뒤 출혈이 있고 BMI 가 낮고 운동량이 많았다면 기능성 시상하부 무월경"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0787",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·근골격·신장비뇨·부인과·소아·내분비·약리)",
+  "subtopic": "응급 — 겨울철 실내에서 두통으로 온 가족",
+  "type": "응급 — 겨울철 실내에서 두통으로 온 가족",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-25",
+  "vignette": "35세 여자가 아침에 일어난 뒤 시작된 두통과 어지럼, 구역으로 남편과 함께 응급실에 왔다. 남편도 두통이 있다. 지난밤 환기가 잘 안 되는 방에서 갈탄 난로를 피우고 잤다. 의식은 명료하고 신경학적 진찰에서 이상이 없다. 혈압 122/78 mmHg, 맥박 96회/분, 호흡 18회/분, 체온 36.7℃ 이고, 맥박산소측정기의 산소포화도는 99 % 이다. 임신 반응검사는 음성이다. 동맥혈가스검사(실내 공기)는 pH 7.38, PaCO2 38 mmHg, PaO2 96 mmHg 이고 카르복시헤모글로빈은 18 % 이다. 심전도는 동빈맥 외에 이상이 없고 트로포닌 I 는 참고치 이내이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "비재호흡 마스크로 100 % 산소 투여",
+   "고압산소치료",
+   "비강 캐뉼라로 2 L/분 산소 투여",
+   "메틸렌블루 정맥 주사",
+   "하이드록소코발라민 정맥 주사"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 밀폐된 방의 갈탄 난로, 함께 있던 가족의 두통, <b>카르복시헤모글로빈 18 %</b> 로 일산화탄소 중독이다. 맥박산소측정기는 카르복시헤모글로빈을 산소헤모글로빈으로 읽어 99 % 로 정상처럼 보인다. 의식 소실·신경학적 이상·심근 손상·임신이 없고 수치가 25 % 미만이라 고압산소의 적응이 아니며, <b>비재호흡 마스크로 100 % 산소</b>를 주어 일산화탄소를 빨리 내보낸다.\n- 원리: <b>왜 위험한가</b>: 일산화탄소는 헤모글로빈에 산소보다 약 200~250배 강하게 붙어 산소 운반량을 줄이고, 남은 헤모글로빈의 산소 해리곡선을 왼쪽으로 옮겨 조직에 산소를 잘 내주지 못하게 한다. 미토콘드리아 시토크롬 산화효소도 억제해 뇌·심장 같은 산소 요구가 큰 장기가 먼저 손상된다.<br> <b>왜 산소포화도가 정상인가</b>: 일반 맥박산소측정기는 두 파장만 써서 카르복시헤모글로빈과 산소헤모글로빈을 구분하지 못한다. PaO2 도 녹아 있는 산소를 재므로 정상이다. 그래서 동맥혈(또는 정맥혈) 공동산소측정으로 카르복시헤모글로빈을 직접 재야 한다.<br> <b>왜 100 % 산소인가</b>: 일산화탄소 반감기는 실내 공기에서 약 4~5시간, 100 % 산소에서 약 1시간, 고압산소에서 약 20~30분이다. 고압산소는 의식 소실, 신경학적 이상, 심근 허혈, 임신, 매우 높은 카르복시헤모글로빈(대개 25 % 이상)처럼 지연 신경후유증 위험이 큰 환자에 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">100 % 산소(비재호흡 마스크) — 정답</th><th>고압산소치료 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td>의식 명료, 신경학적 이상·심근 손상 없음</td><td>의식 소실, 신경학적 결손, 심근 허혈, 임신</td></tr> <tr><td>카르복시헤모글로빈</td><td>대개 25 % 미만</td><td>대개 25 % 이상(임신은 15 % 이상)</td></tr> <tr><td>일산화탄소 반감기</td><td>약 60~90분</td><td>약 20~30분</td></tr> <tr><td>목표</td><td>증상 소실·수치 정상화</td><td>지연 신경후유증 감소</td></tr> </tbody></table> 수치만이 아니라 「의식·신경·심장·임신」 네 가지를 먼저 확인하면 두 치료를 어느 방향으로 물어도 가를 수 있다.\n- 오답 이유:\n  - ② 고압산소치료는 의식을 잃었거나 신경학적 결손·심근 허혈이 있거나 임신 중이거나 카르복시헤모글로빈이 25 % 이상이라면 정답이 된다.\n  - ③ 저유량 비강 캐뉼라 산소는 흡입 산소 농도가 낮아 반감기를 줄이지 못하며, 만성폐쇄폐질환의 경증 저산소증이라면 맞는 처치다.\n  - ④ 메틸렌블루는 다프손·국소마취제 뒤 메트헤모글로빈이 30 % 넘게 오르고 산소포화도가 약 85 % 에 고정되었다면 정답이 된다.\n  - ⑤ 하이드록소코발라민은 밀폐 공간 화재 연기를 마시고 젖산이 크게 오르며 쇼크가 있어 시안화물 중독이 의심된다면 정답이 된다.\n- 함정: 맥박산소측정 99 % 를 보고 저산소가 없다고 판단하는 것 — 카르복시헤모글로빈은 일반 산소측정기에서 산소헤모글로빈처럼 읽힌다.\n- 학습목표: 일산화탄소 중독을 맥박산소측정이 아니라 동맥혈 카르복시헤모글로빈으로 확인하고, 고압산소 적응증이 없으면 비재호흡 마스크로 100 % 산소를 준다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 476: Hyperbaric and Diving Medicine · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 470: Poisoning and Drug Overdose",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "밀폐된 방의 갈탄 난로, 함께 있던 가족의 두통, <b>카르복시헤모글로빈 18 %</b> 로 일산화탄소 중독이다. 맥박산소측정기는 카르복시헤모글로빈을 산소헤모글로빈으로 읽어 99 % 로 정상처럼 보인다. 의식 소실·신경학적 이상·심근 손상·임신이 없고 수치가 25 % 미만이라 고압산소의 적응이 아니며, <b>비재호흡 마스크로 100 % 산소</b>를 주어 일산화탄소를 빨리 내보낸다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 위험한가</b>: 일산화탄소는 헤모글로빈에 산소보다 약 200~250배 강하게 붙어 산소 운반량을 줄이고, 남은 헤모글로빈의 산소 해리곡선을 왼쪽으로 옮겨 조직에 산소를 잘 내주지 못하게 한다. 미토콘드리아 시토크롬 산화효소도 억제해 뇌·심장 같은 산소 요구가 큰 장기가 먼저 손상된다.<br> <b>왜 산소포화도가 정상인가</b>: 일반 맥박산소측정기는 두 파장만 써서 카르복시헤모글로빈과 산소헤모글로빈을 구분하지 못한다. PaO2 도 녹아 있는 산소를 재므로 정상이다. 그래서 동맥혈(또는 정맥혈) 공동산소측정으로 카르복시헤모글로빈을 직접 재야 한다.<br> <b>왜 100 % 산소인가</b>: 일산화탄소 반감기는 실내 공기에서 약 4~5시간, 100 % 산소에서 약 1시간, 고압산소에서 약 20~30분이다. 고압산소는 의식 소실, 신경학적 이상, 심근 허혈, 임신, 매우 높은 카르복시헤모글로빈(대개 25 % 이상)처럼 지연 신경후유증 위험이 큰 환자에 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">100 % 산소(비재호흡 마스크) — 정답</th><th>고압산소치료 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td>의식 명료, 신경학적 이상·심근 손상 없음</td><td>의식 소실, 신경학적 결손, 심근 허혈, 임신</td></tr> <tr><td>카르복시헤모글로빈</td><td>대개 25 % 미만</td><td>대개 25 % 이상(임신은 15 % 이상)</td></tr> <tr><td>일산화탄소 반감기</td><td>약 60~90분</td><td>약 20~30분</td></tr> <tr><td>목표</td><td>증상 소실·수치 정상화</td><td>지연 신경후유증 감소</td></tr> </tbody></table> 수치만이 아니라 「의식·신경·심장·임신」 네 가지를 먼저 확인하면 두 치료를 어느 방향으로 물어도 가를 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 고압산소치료는 의식을 잃었거나 신경학적 결손·심근 허혈이 있거나 임신 중이거나 카르복시헤모글로빈이 25 % 이상이라면 정답이 된다.\n③ 저유량 비강 캐뉼라 산소는 흡입 산소 농도가 낮아 반감기를 줄이지 못하며, 만성폐쇄폐질환의 경증 저산소증이라면 맞는 처치다.\n④ 메틸렌블루는 다프손·국소마취제 뒤 메트헤모글로빈이 30 % 넘게 오르고 산소포화도가 약 85 % 에 고정되었다면 정답이 된다.\n⑤ 하이드록소코발라민은 밀폐 공간 화재 연기를 마시고 젖산이 크게 오르며 쇼크가 있어 시안화물 중독이 의심된다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "맥박산소측정 99 % 를 보고 저산소가 없다고 판단하는 것 — 카르복시헤모글로빈은 일반 산소측정기에서 산소헤모글로빈처럼 읽힌다."
+   },
+   {
+    "k": "학습목표",
+    "v": "일산화탄소 중독을 맥박산소측정이 아니라 동맥혈 카르복시헤모글로빈으로 확인하고, 고압산소 적응증이 없으면 비재호흡 마스크로 100 % 산소를 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 476: Hyperbaric and Diving Medicine · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 470: Poisoning and Drug Overdose"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "고압산소 적응증이 없는 일산화탄소 중독은 비재호흡 마스크로 100 % 산소를 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "의식 명료·신경학적 이상 없음·트로포닌 정상·임신 음성·카르복시헤모글로빈 18 %",
+   "steps": 2,
+   "chain": [
+    "밀폐 공간 난로 + 가족 동반 두통 + 카르복시헤모글로빈 18 % → 일산화탄소 중독",
+    "의식·신경·심장·임신 위험 요인 없음, 25 % 미만 → 비재호흡 마스크 100 % 산소"
+   ],
+   "key": [
+    {
+     "item": "환기가 잘 안 되는 방에서 갈탄 난로를 피우고 잤다",
+     "why": "일산화탄소 노출원",
+     "also": []
+    },
+    {
+     "item": "남편도 두통이 있다",
+     "why": "같은 공간의 여러 사람 — 환경 중독",
+     "also": []
+    },
+    {
+     "item": "카르복시헤모글로빈은 18 %",
+     "why": "진단과 중증도",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "의식은 명료하고 신경학적 진찰에서 이상이 없다",
+     "why": "고압산소 적응이 아님",
+     "also": []
+    },
+    {
+     "item": "트로포닌 I 는 참고치 이내",
+     "why": "심근 손상이 없어 고압산소 적응이 아님",
+     "also": []
+    },
+    {
+     "item": "임신 반응검사는 음성",
+     "why": "임신이면 기준이 낮아진다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "맥박산소측정기의 산소포화도는 99 %",
+     "why": "일산화탄소 중독을 배제하지 못한다 — 끌려가기 쉬운 정보",
+     "also": []
+    }
+   ],
+   "summary": "밀폐 공간의 난로와 가족 동반 두통, 카르복시헤모글로빈 18 % 로 일산화탄소 중독이다. 고압산소 적응증이 없으므로 100 % 산소를 준다.",
+   "switch": {
+    "choice": "B",
+    "condition": "의식을 잃었다가 깨어났거나 임신 중이었다면 고압산소치료"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0784",
   "exam": "imaging",
   "style": "usmle_style",

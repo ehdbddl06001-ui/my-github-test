@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4296,
+  "total": 4305,
   "byType": {
    "usmle": 288,
    "paper": 987,
    "kmle": 1984,
+   "imaging": 792,
    "concept": 237,
-   "imaging": 783,
    "ailab": 14,
    "basic": 3
   },
@@ -29,25 +29,25 @@ window.MEDKOS_INDEX = {
    "Hematology-Oncology": 136,
    "Endocrinology": 133,
    "General Surgery": 132,
+   "순환기": 131,
    "Gastroenterology": 130,
-   "순환기": 130,
    "Dermatology": 129,
    "Ophthalmology": 129,
    "Pulmonology": 128,
    "Surgery": 128,
    "Hematology": 124,
    "Laboratory Medicine": 102,
-   "산부인과": 95,
-   "호흡기": 50,
+   "산부인과": 96,
+   "호흡기": 51,
    "소화기": 46,
-   "소아과": 41,
+   "소아과": 42,
+   "응급·중환자": 36,
    "Physiology": 35,
-   "응급·중환자": 35,
+   "내분비": 35,
    "혈액·종양": 35,
    "감염": 34,
-   "내분비": 34,
    "신경": 34,
-   "신장·비뇨기": 33,
+   "신장·비뇨기": 34,
    "병리·조직학": 31,
    "외과": 30,
    "피부과": 29,
@@ -55,11 +55,11 @@ window.MEDKOS_INDEX = {
    "Pharmacology": 26,
    "Biochemistry": 23,
    "Microbiology": 23,
+   "약리": 21,
    "Immunology": 20,
-   "약리": 20,
+   "근골격·류마티스": 20,
    "정신과": 20,
    "Internal Medicine": 19,
-   "근골격·류마티스": 19,
    "안과": 14,
    "영상의학": 13,
    "이비인후과": 13,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3041,
+   "high": 3050,
    "medium": 1251,
    "low": 4
   },
@@ -971,6 +971,163 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1989.md",
    "snippet": "71세 여자가 두 달 전부터 계단을 한 층만 올라도 숨이 차고 저녁이면 발목이 부어서 왔다. 가슴 통증이나 조이는 느낌은 한 번도 없었고, 실신이나 두근거림도 없었다. 15년 전부터 고혈압으로 약을 먹고 있으나 혈압 조절이 고르지 않았다. 담배는 피우지 않는다. 경정맥이 약간 팽창되어 있고 양쪽 폐 아래쪽에서 수포음이 들리며 양쪽 발목에 오목부종이 있다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 1년 전 건강검진 심전도",
    "text": "Cardiology Two Months of Breathlessness on Stairs and Ankle Swelling without Chest Pain in a Woman with Long-standing High Blood Pressure ecg wide-qrs conduction-disease heart-failure diagnosis KMLE 2026 / Claude 71세 여자가 두 달 전부터 계단을 한 층만 올라도 숨이 차고 저녁이면 발목이 부어서 왔다. 가슴 통증이나 조이는 느낌은 한 번도 없었고, 실신이나 두근거림도 없었다. 15년 전부터 고혈압으로 약을 먹고 있으나 혈압 조절이 고르지 않았다. 담배는 피우지 않는다. 경정맥이 약간 팽창되어 있고 양쪽 폐 아래쪽에서 수포음이 들리며 양쪽 발목에 오목부종이 있다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 1년 전 건강검진 심전도는 정상이었다고 한다. 활력징후와 검사 결과는 자료와 같다. 심전도 소견으로 가장 적절한 것은? A. 완전 좌각차단 B. 급성 전벽 ST분절 상승 심근경색 C. 좌심실 비대와 재분극 이상 D. 완전 우각차단 E. 조기흥분 증후군 QRS가 넓고(0.12초 이상) V1은 깊고 넓은 S파, I·aVL·V6는 중격 q파 없이 넓고 뭉툭한 R파이며 ST T가 QRS 주된 방향과 반대다. 이는 완전 좌각차단이다. V1–V3의 ST 상승은 QRS와 반대 방향인 이차 변화이고 가슴 통증이 없고 트로포닌이 오르지 않아 급성 경색으로 보기 어렵다."
+  },
+  {
+   "id": "imaging-2026-0793",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 메토트렉세이트와 트리메토프림-설파메톡사졸",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0793.md",
+   "snippet": "68세 여자가 5일 전부터 생긴 입안 헐음과 열로 왔다. 류마티스관절염으로 3년째 메토트렉세이트 15 mg 을 주 1회 먹고 있고 엽산도 먹는다. 10일 전 방광염으로 트리메토프림 설파메톡사졸을 처방받아 먹고 있다. 체온 38.4℃, 혈압 118/70 mmHg, 맥박 102회/분 이다. 입안과 혀에 여러 개의 궤양이 있다. 혈액검사 결과는 다음과 같다. 혈색소 8.6 g/dL, 평균적혈구용적 104 fL, 백혈구 1,300/m",
+   "text": "약리 약리 — 메토트렉세이트와 트리메토프림-설파메톡사졸 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 68세 여자가 5일 전부터 생긴 입안 헐음과 열로 왔다. 류마티스관절염으로 3년째 메토트렉세이트 15 mg 을 주 1회 먹고 있고 엽산도 먹는다. 10일 전 방광염으로 트리메토프림 설파메톡사졸을 처방받아 먹고 있다. 체온 38.4℃, 혈압 118/70 mmHg, 맥박 102회/분 이다. 입안과 혀에 여러 개의 궤양이 있다. 혈액검사 결과는 다음과 같다. 혈색소 8.6 g/dL, 평균적혈구용적 104 fL, 백혈구 1,300/mm³(호중구 400/mm³), 혈소판 38,000/mm³, 혈청 크레아티닌 1.4 mg/dL(3개월 전 1.0 mg/dL), AST 42 U/L, ALT 38 U/L. 두 약을 끊고 광범위 항생제를 시작하였다. 추가로 투여해야 할 약으로 가장 적절한 것은? A. 시아노코발라민 B. 필그라스팀 단독 C. 글루카르피다제 D. 류코보린(폴린산) E. 엽산 증량"
+  },
+  {
+   "id": "imaging-2026-0792",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 폐렴 뒤 고열·섬망·빈맥의 다음 약물",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0792.md",
+   "snippet": "A 34 year old woman is brought to the emergency department because of agitation and confusion for 12 hours. Three days ago, she developed fever and a productive cough. Her husband says she has lost 6 kg over the past 3 months and has had pa",
+   "text": "내분비 내분비 — 폐렴 뒤 고열·섬망·빈맥의 다음 약물 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 A 34 year old woman is brought to the emergency department because of agitation and confusion for 12 hours. Three days ago, she developed fever and a productive cough. Her husband says she has lost 6 kg over the past 3 months and has had palpitations and heat intolerance, but she has not seen a physician. Temperature is 40.1°C (104.2°F), pulse is 148/min and irregularly irregular, respirations are 26/min, and blood pressure is 152/58 mm Hg. She is diaphoretic and disoriented. There is a diffuse, nontender goiter with a bruit and bilateral proptosis. Crackles are heard over the right lower lung field. Serum TSH concentration is undetectable, and free T4 concentration is markedly elevated. She is given intravenous fluids, acetaminophen, antibiotics for pneumonia, and propranolol. Which of the following is the most appropriate next step in pharmacotherapy? A. Potassium iodide B. Radioactive iodine C. Levothyroxine D. Aspirin E. Propylthiouracil"
+  },
+  {
+   "id": "imaging-2026-0791",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아 — 생후 2주 남아의 구토와 저나트륨·고칼륨",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0791.md",
+   "snippet": "생후 14일 남아가 3일 전부터 수유 때마다 토하고 잘 먹지 않아 왔다. 만삭 질식분만으로 태어났고 출생체중은 3.3 kg 이었는데 지금은 3.0 kg 이다. 축 늘어져 있고 대천문이 함몰되어 있다. 혈압 62/34 mmHg, 맥박 176회/분 이다. 음경과 음낭은 정상 남아의 모양이며 음낭이 약간 검다. 복부는 부드럽고 만져지는 덩이는 없다. 혈액검사 결과는 다음과 같다. 나트륨 124 mEq/L, 칼륨 7.1 mEq/L, ",
+   "text": "소아과 소아 — 생후 2주 남아의 구토와 저나트륨·고칼륨 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 생후 14일 남아가 3일 전부터 수유 때마다 토하고 잘 먹지 않아 왔다. 만삭 질식분만으로 태어났고 출생체중은 3.3 kg 이었는데 지금은 3.0 kg 이다. 축 늘어져 있고 대천문이 함몰되어 있다. 혈압 62/34 mmHg, 맥박 176회/분 이다. 음경과 음낭은 정상 남아의 모양이며 음낭이 약간 검다. 복부는 부드럽고 만져지는 덩이는 없다. 혈액검사 결과는 다음과 같다. 나트륨 124 mEq/L, 칼륨 7.1 mEq/L, 염소 92 mEq/L, 중탄산 15 mEq/L, 포도당 52 mg/dL, 혈장 레닌 활성 상승, 혈청 17 수산화프로게스테론 크게 상승. 결핍된 효소로 가장 적절한 것은? A. 21 수산화효소 B. 11β 수산화효소 C. 17α 수산화효소 D. 3β 수산화스테로이드 탈수소효소 E. 알도스테론 합성효소"
+  },
+  {
+   "id": "imaging-2026-0790",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 소파술 뒤 생긴 이차 무월경",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0790.md",
+   "snippet": "A 31 year old woman comes to the physician because she has not had a menstrual period for 7 months. Eight months ago, she underwent dilation and curettage for retained products of conception after a miscarriage at 10 weeks' gestation; the p",
+   "text": "산부인과 부인과 — 소파술 뒤 생긴 이차 무월경 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 A 31 year old woman comes to the physician because she has not had a menstrual period for 7 months. Eight months ago, she underwent dilation and curettage for retained products of conception after a miscarriage at 10 weeks' gestation; the procedure was complicated by endometritis treated with antibiotics. Before that, her menses had occurred regularly every 28 days. She has no hot flashes, galactorrhea, headaches, or weight change, and she exercises moderately. Her BMI is 23 kg/m2. Pelvic examination shows no abnormalities. Urine pregnancy test is negative. Serum prolactin, TSH, and FSH concentrations are within the reference ranges. She has no withdrawal bleeding after a 10 day course of medroxyprogesterone or after a subsequent 21 day course of estrogen followed by progestin. Which of the following is the most likely diagnosis? A. Polycystic ovary syndrome B. Sheehan syndrome C. Intrauterine adhesions D. Functional hypothalamic amenorrhea E. Primary ovarian insufficiency"
+  },
+  {
+   "id": "imaging-2026-0789",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 옆구리 통증과 높은 혈색소의 기전",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0789.md",
+   "snippet": "53세 여자가 2개월 전부터 생긴 오른쪽 옆구리의 둔한 통증으로 왔다. 2주 전 한 차례 소변이 붉었다. 흡연력은 없고 코골이나 낮 졸림은 없으며 수면다원검사에서 무호흡이 없었다. 혈압 134/84 mmHg, 맥박 78회/분 이고 얼굴이 붉다. 비장은 만져지지 않는다. 혈액검사 결과는 다음과 같다. 혈색소 18.1 g/dL, 적혈구용적률 54 %, 백혈구 7,400/mm³, 혈소판 248,000/mm³, 혈청 크레아티닌 0.9",
+   "text": "신장·비뇨기 신장·비뇨 — 옆구리 통증과 높은 혈색소의 기전 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 53세 여자가 2개월 전부터 생긴 오른쪽 옆구리의 둔한 통증으로 왔다. 2주 전 한 차례 소변이 붉었다. 흡연력은 없고 코골이나 낮 졸림은 없으며 수면다원검사에서 무호흡이 없었다. 혈압 134/84 mmHg, 맥박 78회/분 이고 얼굴이 붉다. 비장은 만져지지 않는다. 혈액검사 결과는 다음과 같다. 혈색소 18.1 g/dL, 적혈구용적률 54 %, 백혈구 7,400/mm³, 혈소판 248,000/mm³, 혈청 크레아티닌 0.9 mg/dL, 혈청 에리스로포이에틴 상승. 실내 공기에서 동맥혈 산소포화도는 97 % 이다. 복부 조영증강 CT 는 그림과 같다. 혈색소 상승의 기전으로 가장 적절한 것은? A. 만성 저산소증에 대한 콩팥의 에리스로포이에틴 증가 B. 탈수로 인한 혈장량 감소 C. 종양의 부갑상샘호르몬 관련 단백 분비 D. 종양의 에리스로포이에틴 분비 E. JAK2 변이에 의한 조혈모세포의 자율 증식"
+  },
+  {
+   "id": "imaging-2026-0788",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "근골격 — 농구하다 손 짚고 넘어진 고등학생의 손목 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0788.md",
+   "snippet": "A 16 year old girl is brought to the emergency department 3 hours after falling onto her outstretched right hand while playing basketball. She has pain at the radial side of the right wrist. She has no other injuries and is otherwise health",
+   "text": "근골격·류마티스 근골격 — 농구하다 손 짚고 넘어진 고등학생의 손목 통증 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 A 16 year old girl is brought to the emergency department 3 hours after falling onto her outstretched right hand while playing basketball. She has pain at the radial side of the right wrist. She has no other injuries and is otherwise healthy. Vital signs are within normal limits. Examination shows mild swelling on the radial side of the wrist without deformity. There is tenderness in the anatomic snuffbox and pain with axial loading of the thumb. There is no tenderness over the distal ulna. Capillary refill, sensation, and finger movement are normal. A posteroanterior x ray of the right wrist is shown; lateral and dedicated scaphoid views are read as showing no fracture. Which of the following is the most appropriate next step in management? A. Corticosteroid injection into the first dorsal compartment B. Thumb spica immobilization and repeat imaging in 10 to 14 days C. Elastic bandage and return only if pain persists beyond 6 weeks D. Closed reduction under sedation and long arm cast E. Open reduction and internal fixation"
+  },
+  {
+   "id": "imaging-2026-0787",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 겨울철 실내에서 두통으로 온 가족",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0787.md",
+   "snippet": "35세 여자가 아침에 일어난 뒤 시작된 두통과 어지럼, 구역으로 남편과 함께 응급실에 왔다. 남편도 두통이 있다. 지난밤 환기가 잘 안 되는 방에서 갈탄 난로를 피우고 잤다. 의식은 명료하고 신경학적 진찰에서 이상이 없다. 혈압 122/78 mmHg, 맥박 96회/분, 호흡 18회/분, 체온 36.7℃ 이고, 맥박산소측정기의 산소포화도는 99 % 이다. 임신 반응검사는 음성이다. 동맥혈가스검사(실내 공기)는 pH 7.38, P",
+   "text": "응급·중환자 응급 — 겨울철 실내에서 두통으로 온 가족 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 35세 여자가 아침에 일어난 뒤 시작된 두통과 어지럼, 구역으로 남편과 함께 응급실에 왔다. 남편도 두통이 있다. 지난밤 환기가 잘 안 되는 방에서 갈탄 난로를 피우고 잤다. 의식은 명료하고 신경학적 진찰에서 이상이 없다. 혈압 122/78 mmHg, 맥박 96회/분, 호흡 18회/분, 체온 36.7℃ 이고, 맥박산소측정기의 산소포화도는 99 % 이다. 임신 반응검사는 음성이다. 동맥혈가스검사(실내 공기)는 pH 7.38, PaCO2 38 mmHg, PaO2 96 mmHg 이고 카르복시헤모글로빈은 18 % 이다. 심전도는 동빈맥 외에 이상이 없고 트로포닌 I 는 참고치 이내이다. 치료로 가장 적절한 것은? A. 비재호흡 마스크로 100 % 산소 투여 B. 고압산소치료 C. 비강 캐뉼라로 2 L/분 산소 투여 D. 메틸렌블루 정맥 주사 E. 하이드록소코발라민 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0786",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 덱사메타손에도 산소 요구량이 느는 바이러스 폐렴",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0786.md",
+   "snippet": "A 73 year old woman is admitted to the hospital because of fever, cough, and progressive shortness of breath for 6 days. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. On admission, she required 3 L/min of oxygen by nasal cannu",
+   "text": "호흡기 호흡기 — 덱사메타손에도 산소 요구량이 느는 바이러스 폐렴 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 A 73 year old woman is admitted to the hospital because of fever, cough, and progressive shortness of breath for 6 days. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. On admission, she required 3 L/min of oxygen by nasal cannula and was started on intravenous dexamethasone. Over the next 24 hours, her oxygen requirement increased, and she now requires high flow nasal oxygen at 40 L/min with an FiO2 of 0.6 to maintain an oxygen saturation of 92%. Temperature is 38.3°C (100.9°F), pulse is 104/min, respirations are 28/min, and blood pressure is 126/72 mm Hg. She is alert. Serum C reactive protein concentration is 160 mg/L (N<8), and serum procalcitonin concentration is within the reference range. Blood cultures show no growth. A chest x ray is shown. In addition to continuing dexamethasone, which of the following is the most appropriate pharmacotherapy? A. Ivermectin B. Piperacillin tazobactam C. Tocilizumab D. Nirmatrelvir ritonavir E. Hydroxychloroquine"
+  },
+  {
+   "id": "imaging-2026-0785",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 몇 달 전 가슴 통증을 참고 넘긴 남성의 심전도와 막힌 동맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467",
+   "confidence": "high",
+   "date": "2026-11-25",
+   "path": "content/imaging/2026/imaging-2026-0785.md",
+   "snippet": "63세 남자가 3개월 전부터 계단을 오를 때 숨이 차서 왔다. 4개월 전 저녁에 가슴을 짓누르는 통증이 3시간 넘게 지속되었으나 병원에 가지 않았고 이후 통증은 없었다. 고혈압과 당뇨병이 있고 30갑년의 흡연력이 있다. 혈압 132/80 mmHg, 맥박 70회/분 이다. 고감도 트로포닌 I 는 참고치 이내이다. 심초음파에서 좌심실 앞벽과 심실중격 앞쪽의 운동이 없고 좌심실 박출률은 40 % 이다. 12유도 심전도는 그림과 같다",
+   "text": "순환기 순환기 — 몇 달 전 가슴 통증을 참고 넘긴 남성의 심전도와 막힌 동맥 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261125T202320Z_일일영상_2026-11-26_9units_9q_f6129467 63세 남자가 3개월 전부터 계단을 오를 때 숨이 차서 왔다. 4개월 전 저녁에 가슴을 짓누르는 통증이 3시간 넘게 지속되었으나 병원에 가지 않았고 이후 통증은 없었다. 고혈압과 당뇨병이 있고 30갑년의 흡연력이 있다. 혈압 132/80 mmHg, 맥박 70회/분 이다. 고감도 트로포닌 I 는 참고치 이내이다. 심초음파에서 좌심실 앞벽과 심실중격 앞쪽의 운동이 없고 좌심실 박출률은 40 % 이다. 12유도 심전도는 그림과 같다. 막혔던 관상동맥으로 가장 가능성이 높은 것은? A. 우관상동맥의 후하행지 B. 좌전하행지 C. 좌회선지 D. 우관상동맥 E. 좌주간지"
   },
   {
    "id": "cn.physio.vestibulo-ocular-reflex.head-impulse",
