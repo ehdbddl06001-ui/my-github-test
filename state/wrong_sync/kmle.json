@@ -1700,8 +1700,29 @@
    "date": "2026-11-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1996": {
+   "id": "kmle-2026-1996",
+   "exam": "kmle",
+   "subject": "Endocrinology",
+   "step": "",
+   "type": "A Painless Neck Lump Found on a Health Checkup with a Suppressed Pituitary Thyroid Signal in a Woman in Her Fifties",
+   "style": "",
+   "modality": "",
+   "question": "다음 단계로 가장 적절한 것은?",
+   "chosen": 4,
+   "chosenText": "6개월 뒤 초음파 추적 검사",
+   "answer": 3,
+   "answerText": "갑상선 핵의학 스캔",
+   "coreNote": "",
+   "differ": "",
+   "decision": "2.8 cm 고형 결절은 크기로는 평가가 필요하지만, 갑상선 자극 호르몬이 억제되어 있어 자율 기능 결절일 수 있다. 미세침흡인검사보다 핵의학 스캔을 먼저 해 열결절이면 세포검사 없이 방사성 요오드·수술 등 기능 항진 치료를 고려하고, 냉결절이면 미세침흡인검사를 한다.",
+   "source": "KMLE 2026 / Claude",
+   "date": "2026-11-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-11-25T06:10:11.444Z"
+ "updated": "2026-11-25T06:16:34.519Z"
 }
