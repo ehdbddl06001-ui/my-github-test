@@ -2,6 +2,1153 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0802",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "근골격 — 넘어진 뒤 손목이 부러진 젊은 여성의 CT",
+  "type": "근골격 — 넘어진 뒤 손목이 부러진 젊은 여성의 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-26",
+  "vignette": "A 32-year-old woman comes to the emergency department because of right wrist pain and swelling after falling onto her outstretched hand. She reports a dull ache in the same wrist for the past 3 months that was worse at night. She has no fever or weight loss. Examination shows swelling and tenderness over the distal radius. Serum calcium and alkaline phosphatase concentrations are within the reference ranges. A coronal CT scan of the right wrist is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Chondroblastoma",
+   "Giant cell tumor of bone",
+   "Aneurysmal bone cyst",
+   "Unicameral bone cyst",
+   "Osteosarcoma"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The CT shows an <b>expansile, purely lytic lesion of the distal radius</b> with a thinned, eggshell-like cortex that is broken (pathologic fracture). It occupies the metaphysis and <b>extends to the subchondral bone beneath the articular surface</b>, without matrix mineralization. In a <b>skeletally mature 32-year-old</b> with months of pain, an epiphyseal-metaphyseal lytic lesion reaching the joint surface at the distal radius — a classic site — is <b>giant cell tumor of bone</b>.\n- 원리: <b>Why location and age decide</b>: Bone tumors sort by where they start. Giant cell tumor arises in the metaphysis after the growth plate closes and spreads into the epiphysis up to the subchondral bone — so it occurs at 20–40 years and abuts the joint. Its favorite sites are the distal femur, proximal tibia, and distal radius.<br> <b>Why it is lytic and expansile</b>: Neoplastic mononuclear stromal cells (driven by an H3F3A mutation) overexpress RANKL, which recruits osteoclast-like giant cells that resorb bone. The lesion therefore has no matrix, destroys trabeculae, and thins the cortex until it breaks — pathologic fracture is a common presentation.<br> <b>Why it matters</b>: It is locally aggressive and can recur or rarely metastasize to the lung; treatment is curettage with adjuvants, and denosumab (a RANKL antibody) is used for unresectable or difficult lesions — a direct application of its mechanism.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Giant cell tumor (answer)</th><th>Aneurysmal bone cyst (closest distractor)</th></tr></thead><tbody> <tr><td>Age / physis</td><td><b>20–40 y, physis closed</b></td><td>Usually < 20 y, physis open</td></tr> <tr><td>Location</td><td><b>Epiphysis-metaphysis, to subchondral bone</b></td><td>Metaphysis, usually spares the epiphysis</td></tr> <tr><td>Imaging</td><td>Lytic, no sclerotic rim, no fluid levels</td><td>Blown-out cyst with fluid-fluid levels</td></tr> </tbody></table> A lytic lesion that touches the joint in an adult points to giant cell tumor; a blown-out metaphyseal cyst with fluid levels in a teenager points to aneurysmal bone cyst.\n- 오답 이유:\n  - (A) Chondroblastoma would fit a lesion confined to the epiphysis in a patient with open physes, often with chondroid calcification and a sclerotic rim.\n  - (C) Aneurysmal bone cyst would fit an adolescent with open physes and a metaphyseal, blown-out lesion with fluid-fluid levels sparing the epiphysis.\n  - (D) Unicameral bone cyst would fit a child with a central metaphyseal cyst of the proximal humerus or femur and a fallen fragment sign.\n  - (E) Osteosarcoma would fit an adolescent with a metaphyseal lesion producing cloud-like osteoid matrix, a Codman triangle, and a soft-tissue mass.\n- 함정: Choosing aneurysmal bone cyst because the lesion is expansile — age, closed physis, and extension to the subchondral bone favor giant cell tumor.\n- 학습목표: Recognize an expansile lytic lesion of the distal radius that extends from the metaphysis to the subchondral bone in a skeletally mature adult, with a pathologic fracture, as giant cell tumor of bone\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 96: Soft Tissue and Bone Sarcomas and Bone Metastases · WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020\n\n## 출처\n- The use of denosumab in the setting of acute pathological fracture through giant cell tumour of bone. World J Surg Oncol. 2021 Feb 2;19:37. doi: 10.1186/s12957-021-02143-3 (CC BY) — Fig. 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows an <b>expansile, purely lytic lesion of the distal radius</b> with a thinned, eggshell-like cortex that is broken (pathologic fracture). It occupies the metaphysis and <b>extends to the subchondral bone beneath the articular surface</b>, without matrix mineralization. In a <b>skeletally mature 32-year-old</b> with months of pain, an epiphyseal-metaphyseal lytic lesion reaching the joint surface at the distal radius — a classic site — is <b>giant cell tumor of bone</b>."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why location and age decide</b>: Bone tumors sort by where they start. Giant cell tumor arises in the metaphysis after the growth plate closes and spreads into the epiphysis up to the subchondral bone — so it occurs at 20–40 years and abuts the joint. Its favorite sites are the distal femur, proximal tibia, and distal radius.<br> <b>Why it is lytic and expansile</b>: Neoplastic mononuclear stromal cells (driven by an H3F3A mutation) overexpress RANKL, which recruits osteoclast-like giant cells that resorb bone. The lesion therefore has no matrix, destroys trabeculae, and thins the cortex until it breaks — pathologic fracture is a common presentation.<br> <b>Why it matters</b>: It is locally aggressive and can recur or rarely metastasize to the lung; treatment is curettage with adjuvants, and denosumab (a RANKL antibody) is used for unresectable or difficult lesions — a direct application of its mechanism."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Giant cell tumor (answer)</th><th>Aneurysmal bone cyst (closest distractor)</th></tr></thead><tbody> <tr><td>Age / physis</td><td><b>20–40 y, physis closed</b></td><td>Usually < 20 y, physis open</td></tr> <tr><td>Location</td><td><b>Epiphysis-metaphysis, to subchondral bone</b></td><td>Metaphysis, usually spares the epiphysis</td></tr> <tr><td>Imaging</td><td>Lytic, no sclerotic rim, no fluid levels</td><td>Blown-out cyst with fluid-fluid levels</td></tr> </tbody></table> A lytic lesion that touches the joint in an adult points to giant cell tumor; a blown-out metaphyseal cyst with fluid levels in a teenager points to aneurysmal bone cyst."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Chondroblastoma would fit a lesion confined to the epiphysis in a patient with open physes, often with chondroid calcification and a sclerotic rim.\n(C) Aneurysmal bone cyst would fit an adolescent with open physes and a metaphyseal, blown-out lesion with fluid-fluid levels sparing the epiphysis.\n(D) Unicameral bone cyst would fit a child with a central metaphyseal cyst of the proximal humerus or femur and a fallen fragment sign.\n(E) Osteosarcoma would fit an adolescent with a metaphyseal lesion producing cloud-like osteoid matrix, a Codman triangle, and a soft-tissue mass."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing aneurysmal bone cyst because the lesion is expansile — age, closed physis, and extension to the subchondral bone favor giant cell tumor."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize an expansile lytic lesion of the distal radius that extends from the metaphysis to the subchondral bone in a skeletally mature adult, with a pathologic fracture, as giant cell tumor of bone"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 96: Soft Tissue and Bone Sarcomas and Bone Metastases · WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020 ## 출처 The use of denosumab in the setting of acute pathological fracture through giant cell tumour of bone. World J Surg Oncol. 2021 Feb 2;19:37. doi: 10.1186/s12957-021-02143-3 (CC BY) — Fig. 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "골격이 성숙한 성인의 원위 요골에서 골간단부터 연골하골까지 이른 팽창성 골용해 병변은 골거대세포종이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "성장판이 닫힌 32세, 관절면 바로 아래 연골하골까지 침범",
+   "steps": 2,
+   "chain": [
+    "영상: 원위 요골의 기질 없는 팽창성 골용해 + 얇아져 끊긴 피질 → 골용해 종양의 병적 골절",
+    "32세·성장판 닫힘·연골하골까지 침범·원위 요골 → 골거대세포종"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골의 기질 없는 팽창성 골용해와 얇아져 끊긴 피질",
+     "why": "골용해 종양의 병적 골절",
+     "also": []
+    },
+    {
+     "item": "영상: 병변이 관절면 바로 아래 연골하골까지 이름",
+     "why": "골단 침범 — 거대세포종",
+     "also": []
+    },
+    {
+     "item": "A 32-year-old woman",
+     "why": "성장판이 닫힌 나이",
+     "also": []
+    },
+    {
+     "item": "a dull ache in the same wrist for the past 3 months",
+     "why": "골절 전부터 있던 병변",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no fever or weight loss",
+     "why": "골수염·전이 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum calcium and alkaline phosphatase concentrations are within the reference ranges",
+     "why": "부갑상선기능항진증의 갈색종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "원위 요골의 팽창성 골용해가 연골하골까지 이르고 병적 골절이 있다. 성장판이 닫힌 32세이므로 골거대세포종이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "성장판이 열린 십대에서 골단을 비키는 골간단 병변에 액체-액체 층이 있다면 동맥류성 골낭"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0802.png",
+   "caption": "Coronal CT of the right wrist, bone window — one panel cropped from a published figure, no other change (PMC Open Access, CC BY)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7856762/",
+   "asset_id": "PMC-PMC7856762_Fig1_ct",
+   "text": "The use of denosumab in the setting of acute pathological fracture through giant cell tumour of bone. World J Surg Oncol. 2021 Feb 2;19:37. doi: 10.1186/s12957-021-02143-3 (CC BY) — Fig. 1"
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0801",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "외과계 — 전신마취 수술 두 달 뒤의 쉰 목소리",
+  "type": "외과계 — 전신마취 수술 두 달 뒤의 쉰 목소리",
+  "modality": "ENDOSCOPY",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-26",
+  "vignette": "64세 여자가 2개월 전부터 목소리가 쉬어서 왔다. 2개월 전 전신마취로 수술을 받았고 기관삽관은 5시간 유지되었다. 숨이 차거나 음식을 삼키기 어렵지는 않다. 흡연하지 않으며 목에 만져지는 덩이는 없다. 가끔 가슴이 쓰리다고 한다. 굴곡형 후두내시경 사진은 그림과 같고 양쪽 성대는 정상적으로 움직인다.",
+  "question": "가장 적절한 초기 치료는?",
+  "options": [
+   "방사선치료",
+   "기관절개술",
+   "성대 주입술",
+   "양성자펌프억제제 투여와 음성 휴식",
+   "후두미세수술로 즉시 절제"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 후두내시경에서 <b>한쪽 성대 뒤쪽(성대돌기 부위)</b>에 표면이 매끈하고 둥근 붉은 종괴가 있고 성대 앞쪽 막성부는 매끈하다. <b>기관삽관 2개월 뒤</b> 생긴 쉰 목소리, 비흡연, 정상 성대 운동과 함께 보면 <b>삽관 후 육아종</b>이다. 기도 폐쇄가 없으므로 첫 치료는 <b>역류 치료(양성자펌프억제제)와 음성 휴식</b>이다 — 절제는 재발이 잦아 보존 치료에 반응하지 않거나 기도를 막을 때 한다.\n- 원리: <b>왜 성대 뒤쪽인가</b>: 성대의 뒤 1/3 은 피부처럼 얇은 점막 아래 바로 피열연골의 성대돌기가 있다. 기관 튜브는 성문의 가장 넓은 뒤쪽에 놓이므로 이 부위 점막이 연골에 눌려 궤양이 생기고, 궤양이 낫는 과정에서 육아조직이 과하게 자란다. 반대로 노래·고함으로 생기는 결절·폴립은 진동이 가장 큰 막성부 앞·중 1/3 경계에 생긴다.<br> <b>왜 역류 치료인가</b>: 위산 역류는 후두 뒤쪽(피열 부위)을 계속 자극해 궤양이 아물지 못하게 한다. 양성자펌프억제제로 산 노출을 줄이고, 헛기침·큰 목소리를 줄이면 상당수가 수개월에 걸쳐 작아진다.<br> <b>왜 바로 자르지 않는가</b>: 원인(접촉·역류)이 남은 채 절제하면 같은 자리에 다시 자란다. 기도를 막을 정도이거나 보존 치료에 실패하면 절제와 보툴리눔 독소 주입 등을 고려한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">삽관 후 육아종 — 정답</th><th>성대 폴립 — 가장 가까운 오답(즉시 절제를 떠올림)</th></tr></thead><tbody> <tr><td>위치</td><td><b>성대 뒤 1/3(성대돌기)</b></td><td>막성부 앞·중 1/3 경계 자유연</td></tr> <tr><td>원인</td><td>삽관 압박·위산 역류</td><td>목소리 남용·흡연</td></tr> <tr><td>첫 치료</td><td>양성자펌프억제제·음성 휴식</td><td>음성 치료 뒤 후두미세수술</td></tr> </tbody></table> 종괴의 「자리」가 원인을 말해 준다 — 연골 위(뒤쪽)면 접촉·역류, 진동하는 막성부(앞쪽)면 음성 남용이다.\n- 오답 이유:\n  - ① 방사선치료는 생검에서 성문암(편평세포암)이 확인된 조기 병변이라면 정답이 될 수 있다 — 매끈한 둥근 종괴는 암의 모습이 아니다.\n  - ② 기관절개술은 종괴가 성문을 막아 상기도 폐쇄로 호흡곤란이 진행할 때 응급으로 필요하다.\n  - ③ 성대 주입술은 한쪽 성대가 움직이지 않는 성대마비로 성문이 닫히지 않을 때 정답이 된다 — 여기서는 양쪽이 잘 움직인다.\n  - ⑤ 후두미세수술로 즉시 절제는 육아종이 성문을 거의 막아 숨이 차거나 수개월의 보존 치료에도 커질 때 고려한다.\n- 함정: 성대 종괴를 보면 바로 절제부터 떠올리는 것 — 삽관 후 육아종은 재발이 잦아 보존 치료가 먼저다.\n- 학습목표: 기관삽관 뒤 성대 뒤쪽(성대돌기)의 매끈한 둥근 종괴를 삽관 후 육아종으로 판단하고, 첫 치료로 즉시 절제가 아니라 역류 치료와 음성 휴식을 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 37: Upper Respiratory Symptoms, Including Earache, Sinus Symptoms, and Sore Throat · Karkos PD, George M, Van Der Veen J, et al. Vocal process granulomas: a systematic review of treatment. Ann Otol Rhinol Laryngol. 2014;123(5):314-320\n\n## 출처\n- Successful awake video-laryngoscopic intubation in a patient with a giant mobile vocal process granuloma causing dynamic glottic obstruction: A case report. Medicine (Baltimore). 2025 Dec 12;104(50):e46656. doi: 10.1097/MD.0000000000046656 (CC BY) — Figure 1. · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "후두내시경에서 <b>한쪽 성대 뒤쪽(성대돌기 부위)</b>에 표면이 매끈하고 둥근 붉은 종괴가 있고 성대 앞쪽 막성부는 매끈하다. <b>기관삽관 2개월 뒤</b> 생긴 쉰 목소리, 비흡연, 정상 성대 운동과 함께 보면 <b>삽관 후 육아종</b>이다. 기도 폐쇄가 없으므로 첫 치료는 <b>역류 치료(양성자펌프억제제)와 음성 휴식</b>이다 — 절제는 재발이 잦아 보존 치료에 반응하지 않거나 기도를 막을 때 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 성대 뒤쪽인가</b>: 성대의 뒤 1/3 은 피부처럼 얇은 점막 아래 바로 피열연골의 성대돌기가 있다. 기관 튜브는 성문의 가장 넓은 뒤쪽에 놓이므로 이 부위 점막이 연골에 눌려 궤양이 생기고, 궤양이 낫는 과정에서 육아조직이 과하게 자란다. 반대로 노래·고함으로 생기는 결절·폴립은 진동이 가장 큰 막성부 앞·중 1/3 경계에 생긴다.<br> <b>왜 역류 치료인가</b>: 위산 역류는 후두 뒤쪽(피열 부위)을 계속 자극해 궤양이 아물지 못하게 한다. 양성자펌프억제제로 산 노출을 줄이고, 헛기침·큰 목소리를 줄이면 상당수가 수개월에 걸쳐 작아진다.<br> <b>왜 바로 자르지 않는가</b>: 원인(접촉·역류)이 남은 채 절제하면 같은 자리에 다시 자란다. 기도를 막을 정도이거나 보존 치료에 실패하면 절제와 보툴리눔 독소 주입 등을 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">삽관 후 육아종 — 정답</th><th>성대 폴립 — 가장 가까운 오답(즉시 절제를 떠올림)</th></tr></thead><tbody> <tr><td>위치</td><td><b>성대 뒤 1/3(성대돌기)</b></td><td>막성부 앞·중 1/3 경계 자유연</td></tr> <tr><td>원인</td><td>삽관 압박·위산 역류</td><td>목소리 남용·흡연</td></tr> <tr><td>첫 치료</td><td>양성자펌프억제제·음성 휴식</td><td>음성 치료 뒤 후두미세수술</td></tr> </tbody></table> 종괴의 「자리」가 원인을 말해 준다 — 연골 위(뒤쪽)면 접촉·역류, 진동하는 막성부(앞쪽)면 음성 남용이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 방사선치료는 생검에서 성문암(편평세포암)이 확인된 조기 병변이라면 정답이 될 수 있다 — 매끈한 둥근 종괴는 암의 모습이 아니다.\n② 기관절개술은 종괴가 성문을 막아 상기도 폐쇄로 호흡곤란이 진행할 때 응급으로 필요하다.\n③ 성대 주입술은 한쪽 성대가 움직이지 않는 성대마비로 성문이 닫히지 않을 때 정답이 된다 — 여기서는 양쪽이 잘 움직인다.\n⑤ 후두미세수술로 즉시 절제는 육아종이 성문을 거의 막아 숨이 차거나 수개월의 보존 치료에도 커질 때 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "성대 종괴를 보면 바로 절제부터 떠올리는 것 — 삽관 후 육아종은 재발이 잦아 보존 치료가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "기관삽관 뒤 성대 뒤쪽(성대돌기)의 매끈한 둥근 종괴를 삽관 후 육아종으로 판단하고, 첫 치료로 즉시 절제가 아니라 역류 치료와 음성 휴식을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 37: Upper Respiratory Symptoms, Including Earache, Sinus Symptoms, and Sore Throat · Karkos PD, George M, Van Der Veen J, et al. Vocal process granulomas: a systematic review of treatment. Ann Otol Rhinol Laryngol. 2014;123(5):314-320 ## 출처 Successful awake video-laryngoscopic intubation in a patient with a giant mobile vocal process granuloma causing dynamic glottic obstruction: A case report. Medicine (Baltimore). 2025 Dec 12;104(50):e46656. doi: 10.1097/MD.0000000000046656 (CC BY) — Figure 1. · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "삽관 뒤 성대돌기 부위의 매끈한 종괴는 삽관 후 육아종이고, 기도 폐쇄가 없으면 역류 치료와 음성 휴식부터 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "기도 폐쇄가 없고 원인(접촉·역류)이 남아 있으면 절제 뒤 재발이 잦다",
+   "steps": 2,
+   "chain": [
+    "영상: 성대 뒤쪽(성대돌기)의 매끈하고 둥근 붉은 종괴 + 삽관 2개월 뒤 쉰 목소리 → 삽관 후 육아종",
+    "숨참 없음·정상 성대 운동 → 보존 치료(양성자펌프억제제·음성 휴식)"
+   ],
+   "key": [
+    {
+     "item": "영상: 한쪽 성대 뒤쪽의 매끈하고 둥근 붉은 종괴",
+     "why": "성대돌기 육아종의 모양과 자리",
+     "also": []
+    },
+    {
+     "item": "2개월 전 전신마취로 수술을 받았고 기관삽관은 5시간 유지되었다",
+     "why": "삽관 손상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 성대는 정상적으로 움직인다",
+     "why": "성대마비·침윤성 암 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "흡연하지 않으며",
+     "why": "후두암 위험을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "숨이 차거나 음식을 삼키기 어렵지는 않다",
+     "why": "기도 폐쇄 없음 — 보존 치료 가능",
+     "also": []
+    },
+    {
+     "item": "가끔 가슴이 쓰리다고 한다",
+     "why": "위산 역류 — 양성자펌프억제제 근거",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "삽관 뒤 성대 뒤쪽에 생긴 매끈한 종괴는 삽관 후 육아종이다. 기도가 막히지 않았으므로 양성자펌프억제제와 음성 휴식이 첫 치료다.",
+   "switch": {
+    "choice": "B",
+    "condition": "종괴가 성문을 거의 막아 호흡곤란이 진행한다면 기관절개술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0801.png",
+   "caption": "굴곡형 후두내시경 정지 영상 — 학술지 그림의 한 패널, 패널 문자만 잘라냄 (PMC Open Access, CC BY)",
+   "alt": "ENDOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12708179/",
+   "asset_id": "PMC-PMC12708179_Figure1_A",
+   "text": "Successful awake video-laryngoscopic intubation in a patient with a giant mobile vocal process granuloma causing dynamic glottic obstruction: A case report. Medicine (Baltimore). 2025 Dec 12;104(50):e46656. doi: 10.1097/MD.0000000000046656 (CC BY) — Figure 1."
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0799",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "응급 — 명치 불편감으로 온 고령 여성의 심전도",
+  "type": "응급 — 명치 불편감으로 온 고령 여성의 심전도",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-26",
+  "vignette": "68세 여자가 2시간 전부터 명치가 더부룩하고 불편해서 응급실에 왔다. 매운 음식을 먹은 뒤 시작되었고 지금은 많이 나아졌다. 고혈압과 이상지질혈증이 있다. 혈압 138/82 mmHg, 맥박 70회/분, 호흡 16회/분이다. 고감도 트로포닌 I 는 3시간 간격으로 2회 모두 참고치 이내이다. 흉부 X선은 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "오래된 하벽 심근경색",
+   "좌후속지차단",
+   "완전좌각차단",
+   "급성 하벽 ST분절상승 심근경색",
+   "좌전속지차단"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 리듬 스트립은 RR 이 일정한 <b>동리듬 약 70회/분</b>이고 QRS 는 좁다. <b>I·aVL 은 작은 q 뒤 큰 R(qR)</b>, <b>II·III·aVF 는 작은 r 뒤 깊은 S(rS)</b>라 QRS 축이 -45° 보다 왼쪽인 <b>좌축편위</b>다. 하벽 유도의 첫 굴절이 위로 향하는 r 이므로 병적 Q파가 아니고 ST 변화도 없다 — <b>좌전속지차단</b>이다. 트로포닌 2회 정상도 급성 경색 가능성을 낮춘다.\n- 원리: <b>좌각은 두 갈래다</b>: 좌각은 심실중격을 지나 앞위쪽으로 가는 가는 <b>좌전속지</b>와 뒤아래쪽으로 가는 굵은 좌후속지로 나뉜다. 좌전속지가 막히면 좌심실의 앞위쪽 벽이 늦게, 뒤아래쪽에서 시작한 흥분이 먼저 퍼진다.<br> <b>그래서 파형이 이렇게 된다</b>: 처음 흥분은 아래쪽(하벽 유도로 향함)이라 II·III·aVF 에 작은 r, I·aVL 에 작은 q 가 생긴다. 이어서 흥분이 위·왼쪽으로 크게 돌아가 하벽 유도에 깊은 S, I·aVL 에 큰 R 이 생긴다. 전체 축이 -45° 보다 왼쪽으로 기운다. 섬유 하나만 막혀 전도는 대부분 정상 경로로 가므로 QRS 는 0.12초 미만으로 좁다.<br> <b>임상 의미</b>: 단독 좌전속지차단은 대개 고혈압·노화에 따른 전도계 섬유화로 무증상이며 치료가 필요 없다. 우각차단과 함께 있으면(이섬유차단) 실신 여부를 묻고 추적한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">좌전속지차단 — 정답</th><th>오래된 하벽 경색 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>II·III·aVF 첫 굴절</td><td><b>위로 향하는 작은 r</b> 뒤 깊은 S(rS)</td><td>아래로 향하는 넓은 Q(≥ 0.04초)</td></tr> <tr><td>I·aVL</td><td>qR</td><td>대개 정상, 하벽 경색의 거울상 없음(오래된 경우)</td></tr> <tr><td>축</td><td>-45° 보다 왼쪽</td><td>좌축일 수 있으나 Q파가 원인</td></tr> </tbody></table> 하벽 유도에서 음성 굴절을 보면 「맨 처음이 r 인가 Q 인가」부터 확인한다 — r 이면 전속지차단, Q 면 경색이다.\n- 오답 이유:\n  - ① 오래된 하벽 심근경색은 II·III·aVF 의 첫 굴절이 0.04초 이상의 넓은 Q파였다면 정답이 된다 — 여기서는 작은 r 이 먼저 온다.\n  - ② 좌후속지차단은 반대로 I·aVL 이 rS, II·III·aVF 가 qR 인 우축편위이고 우심실비대가 없을 때 정답이 된다.\n  - ③ 완전좌각차단은 QRS 가 0.12초 이상으로 넓고 I·V6 에 넓게 갈라진 R, V1 에 깊은 QS 가 있다면 정답이 된다.\n  - ④ 급성 하벽 ST분절상승 심근경색은 II·III·aVF 에서 ST 가 올라가고 I·aVL 에 거울상 하강이 있었다면 정답이 된다.\n- 함정: 명치 통증이라는 증상과 하벽 유도의 큰 음성 파형만 보고 하벽 경색을 고르는 것 — 첫 굴절은 r 이다.\n- 학습목표: II·III·aVF 의 작은 r 뒤 깊은 S(rS)와 I·aVL 의 qR, 좁은 QRS 를 좌전속지차단으로 판독하고 병적 Q파의 하벽 경색과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7618 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립은 RR 이 일정한 <b>동리듬 약 70회/분</b>이고 QRS 는 좁다. <b>I·aVL 은 작은 q 뒤 큰 R(qR)</b>, <b>II·III·aVF 는 작은 r 뒤 깊은 S(rS)</b>라 QRS 축이 -45° 보다 왼쪽인 <b>좌축편위</b>다. 하벽 유도의 첫 굴절이 위로 향하는 r 이므로 병적 Q파가 아니고 ST 변화도 없다 — <b>좌전속지차단</b>이다. 트로포닌 2회 정상도 급성 경색 가능성을 낮춘다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>좌각은 두 갈래다</b>: 좌각은 심실중격을 지나 앞위쪽으로 가는 가는 <b>좌전속지</b>와 뒤아래쪽으로 가는 굵은 좌후속지로 나뉜다. 좌전속지가 막히면 좌심실의 앞위쪽 벽이 늦게, 뒤아래쪽에서 시작한 흥분이 먼저 퍼진다.<br> <b>그래서 파형이 이렇게 된다</b>: 처음 흥분은 아래쪽(하벽 유도로 향함)이라 II·III·aVF 에 작은 r, I·aVL 에 작은 q 가 생긴다. 이어서 흥분이 위·왼쪽으로 크게 돌아가 하벽 유도에 깊은 S, I·aVL 에 큰 R 이 생긴다. 전체 축이 -45° 보다 왼쪽으로 기운다. 섬유 하나만 막혀 전도는 대부분 정상 경로로 가므로 QRS 는 0.12초 미만으로 좁다.<br> <b>임상 의미</b>: 단독 좌전속지차단은 대개 고혈압·노화에 따른 전도계 섬유화로 무증상이며 치료가 필요 없다. 우각차단과 함께 있으면(이섬유차단) 실신 여부를 묻고 추적한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">좌전속지차단 — 정답</th><th>오래된 하벽 경색 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>II·III·aVF 첫 굴절</td><td><b>위로 향하는 작은 r</b> 뒤 깊은 S(rS)</td><td>아래로 향하는 넓은 Q(≥ 0.04초)</td></tr> <tr><td>I·aVL</td><td>qR</td><td>대개 정상, 하벽 경색의 거울상 없음(오래된 경우)</td></tr> <tr><td>축</td><td>-45° 보다 왼쪽</td><td>좌축일 수 있으나 Q파가 원인</td></tr> </tbody></table> 하벽 유도에서 음성 굴절을 보면 「맨 처음이 r 인가 Q 인가」부터 확인한다 — r 이면 전속지차단, Q 면 경색이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 오래된 하벽 심근경색은 II·III·aVF 의 첫 굴절이 0.04초 이상의 넓은 Q파였다면 정답이 된다 — 여기서는 작은 r 이 먼저 온다.\n② 좌후속지차단은 반대로 I·aVL 이 rS, II·III·aVF 가 qR 인 우축편위이고 우심실비대가 없을 때 정답이 된다.\n③ 완전좌각차단은 QRS 가 0.12초 이상으로 넓고 I·V6 에 넓게 갈라진 R, V1 에 깊은 QS 가 있다면 정답이 된다.\n④ 급성 하벽 ST분절상승 심근경색은 II·III·aVF 에서 ST 가 올라가고 I·aVL 에 거울상 하강이 있었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "명치 통증이라는 증상과 하벽 유도의 큰 음성 파형만 보고 하벽 경색을 고르는 것 — 첫 굴절은 r 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "II·III·aVF 의 작은 r 뒤 깊은 S(rS)와 I·aVL 의 qR, 좁은 QRS 를 좌전속지차단으로 판독하고 병적 Q파의 하벽 경색과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7618 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 의 좌축편위에서 하벽 유도가 rS, I·aVL 이 qR 이면 좌전속지차단이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "II·III·aVF 의 첫 굴절이 작은 r — 병적 Q파가 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬 약 70회/분, 좁은 QRS, ST 변화 없음 → 급성 허혈·각차단 소견 없음",
+    "영상: II·III·aVF rS + I·aVL qR + 좌축편위 → 좌전속지차단"
+   ],
+   "key": [
+    {
+     "item": "영상: II·III·aVF 의 작은 r 뒤 깊은 S",
+     "why": "병적 Q파가 아님 — 전속지차단",
+     "also": []
+    },
+    {
+     "item": "영상: I·aVL 의 qR, 좌축편위",
+     "why": "좌전속지차단의 짝",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: QRS 좁음, ST 변화 없음",
+     "why": "좌각차단·급성 경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "고감도 트로포닌 I 는 3시간 간격으로 2회 모두 참고치 이내",
+     "why": "급성 심근경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "2시간 전부터 명치가 더부룩하고 불편해서",
+     "why": "하벽 허혈을 떠올리게 하지만 판독은 파형이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "좁은 QRS, II·III·aVF 의 rS 와 I·aVL 의 qR 로 좌축편위가 있고 Q파·ST 변화가 없다. 좌전속지차단이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "II·III·aVF 의 첫 굴절이 넓은 Q파였다면 오래된 하벽 경색"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0799.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/07000/#files-panel",
+   "asset_id": "PTBXL-07618",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 7618"
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0798",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "산과 — 임신성 당뇨병 임신부의 성장 초음파",
+  "type": "산과 — 임신성 당뇨병 임신부의 성장 초음파",
+  "modality": "ULTRASOUND",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-26",
+  "vignette": "A pregnant woman with gestational diabetes mellitus comes for a fetal growth ultrasound. She reports that her glucose has been poorly controlled despite diet therapy. Her blood pressure is 118/74 mm Hg. The fetal head and femur measurements are at the 50th percentile for gestational age. The biometric measurement obtained in the ultrasound plane shown is above the 97th percentile.",
+  "question": "This disproportion places the fetus at greatest risk for which of the following complications during vaginal delivery?",
+  "options": [
+   "Vasa previa rupture",
+   "Shoulder dystocia",
+   "Umbilical cord prolapse",
+   "Placental abruption",
+   "Breech presentation"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The image is a <b>transverse section of the fetal abdomen</b>: a round trunk with an anechoic <b>stomach bubble</b>, homogeneous liver, and the echogenic spine — the plane used for <b>abdominal circumference (AC)</b>. An AC above the 97th percentile with a normal head and femur is the <b>asymmetric macrosomia</b> of maternal hyperglycemia: the trunk and shoulders are large relative to the head, so the head can deliver while the shoulders impact behind the pubic symphysis — <b>shoulder dystocia</b>.\n- 원리: <b>Why diabetes enlarges the trunk, not the head</b>: Maternal glucose crosses the placenta freely, but insulin does not. The fetal pancreas responds with hyperinsulinemia, and insulin is a growth hormone for insulin-sensitive tissues — fat, liver, and muscle. These are concentrated in the abdomen and shoulders, so the AC and shoulder width rise while head growth (driven mostly by genetics) stays near normal.<br> <b>Why that causes shoulder dystocia</b>: In a vaginal birth, the head is the largest part that must pass in a normally proportioned fetus. When the bisacromial diameter exceeds the head, the head delivers and then the anterior shoulder lodges behind the pubic symphysis — the risk of brachial plexus injury and hypoxia rises.<br> <b>Why AC is the plane that matters</b>: AC is the single measurement most sensitive to fetal nutrition, so it detects both growth restriction (small) and diabetic overgrowth (large) earliest.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Shoulder dystocia (answer)</th><th>Umbilical cord prolapse (closest distractor)</th></tr></thead><tbody> <tr><td>Main risk factor</td><td><b>Macrosomia, especially diabetic (large AC)</b></td><td>Malpresentation, unengaged head, polyhydramnios</td></tr> <tr><td>Timing</td><td>After delivery of the head</td><td>After membrane rupture</td></tr> <tr><td>Mechanism</td><td>Anterior shoulder impacted behind symphysis</td><td>Cord passes ahead of presenting part</td></tr> </tbody></table> A large trunk relative to the head points to shoulder dystocia; a presenting part that does not fill the pelvis points to cord prolapse.\n- 오답 이유:\n  - (A) Vasa previa rupture requires fetal vessels running across the internal os, seen on transvaginal color Doppler, independent of fetal size.\n  - (C) Cord prolapse would be the main risk if the fetus were in a transverse or footling breech lie or the head were unengaged at membrane rupture.\n  - (D) Placental abruption would be favored by hypertension, cocaine use, or abdominal trauma — not by a disproportionately large fetal abdomen.\n  - (E) Breech presentation relates to prematurity, uterine anomalies, or placenta previa; fetal overgrowth of the trunk does not cause it.\n- 함정: Answering with a general diabetic-pregnancy complication instead of linking the specific measurement (abdominal circumference) to trunk-head disproportion.\n- 제작 가정: FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신성 당뇨병 임신부의 성장 초음파 상황을 가정했다(화면의 1. Trim. 은 기기 프리셋 이름이라 주수는 쓰지 않았다) (가정한 정보: A pregnant woman with gestational diabetes mellitus · her glucose has been poorly controlled despite diet therapy)\n- 학습목표: Identify the fetal abdominal transverse plane (stomach bubble, liver, spine) as the abdominal circumference plane and link a disproportionately large abdominal circumference in diabetic pregnancy to shoulder dystocia\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 491: Medical Disorders During Pregnancy · American College of Obstetricians and Gynecologists. Practice Bulletin No. 178: Shoulder Dystocia. Obstet Gynecol. 2017;129(5):e123-e133\n\n## 출처\n- FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01733_Plane2_1_of_1 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The image is a <b>transverse section of the fetal abdomen</b>: a round trunk with an anechoic <b>stomach bubble</b>, homogeneous liver, and the echogenic spine — the plane used for <b>abdominal circumference (AC)</b>. An AC above the 97th percentile with a normal head and femur is the <b>asymmetric macrosomia</b> of maternal hyperglycemia: the trunk and shoulders are large relative to the head, so the head can deliver while the shoulders impact behind the pubic symphysis — <b>shoulder dystocia</b>."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why diabetes enlarges the trunk, not the head</b>: Maternal glucose crosses the placenta freely, but insulin does not. The fetal pancreas responds with hyperinsulinemia, and insulin is a growth hormone for insulin-sensitive tissues — fat, liver, and muscle. These are concentrated in the abdomen and shoulders, so the AC and shoulder width rise while head growth (driven mostly by genetics) stays near normal.<br> <b>Why that causes shoulder dystocia</b>: In a vaginal birth, the head is the largest part that must pass in a normally proportioned fetus. When the bisacromial diameter exceeds the head, the head delivers and then the anterior shoulder lodges behind the pubic symphysis — the risk of brachial plexus injury and hypoxia rises.<br> <b>Why AC is the plane that matters</b>: AC is the single measurement most sensitive to fetal nutrition, so it detects both growth restriction (small) and diabetic overgrowth (large) earliest."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Shoulder dystocia (answer)</th><th>Umbilical cord prolapse (closest distractor)</th></tr></thead><tbody> <tr><td>Main risk factor</td><td><b>Macrosomia, especially diabetic (large AC)</b></td><td>Malpresentation, unengaged head, polyhydramnios</td></tr> <tr><td>Timing</td><td>After delivery of the head</td><td>After membrane rupture</td></tr> <tr><td>Mechanism</td><td>Anterior shoulder impacted behind symphysis</td><td>Cord passes ahead of presenting part</td></tr> </tbody></table> A large trunk relative to the head points to shoulder dystocia; a presenting part that does not fill the pelvis points to cord prolapse."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Vasa previa rupture requires fetal vessels running across the internal os, seen on transvaginal color Doppler, independent of fetal size.\n(C) Cord prolapse would be the main risk if the fetus were in a transverse or footling breech lie or the head were unengaged at membrane rupture.\n(D) Placental abruption would be favored by hypertension, cocaine use, or abdominal trauma — not by a disproportionately large fetal abdomen.\n(E) Breech presentation relates to prematurity, uterine anomalies, or placenta previa; fetal overgrowth of the trunk does not cause it."
+   },
+   {
+    "k": "함정",
+    "v": "Answering with a general diabetic-pregnancy complication instead of linking the specific measurement (abdominal circumference) to trunk-head disproportion."
+   },
+   {
+    "k": "제작 가정",
+    "v": "FETAL_PLANES_DB 는 표준 단면 분류만 있고 산모 나이·임신 주수·병력이 없다 — 임신성 당뇨병 임신부의 성장 초음파 상황을 가정했다(화면의 1. Trim. 은 기기 프리셋 이름이라 주수는 쓰지 않았다) (가정한 정보: A pregnant woman with gestational diabetes mellitus · her glucose has been poorly controlled despite diet therapy)"
+   },
+   {
+    "k": "학습목표",
+    "v": "Identify the fetal abdominal transverse plane (stomach bubble, liver, spine) as the abdominal circumference plane and link a disproportionately large abdominal circumference in diabetic pregnancy to shoulder dystocia"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 491: Medical Disorders During Pregnancy · American College of Obstetricians and Gynecologists. Practice Bulletin No. 178: Shoulder Dystocia. Obstet Gynecol. 2017;129(5):e123-e133 ## 출처 FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01733_Plane2_1_of_1 · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "예후",
+   "decision": "복부 가로단면(복부둘레)만 97백분위를 넘고 머리·대퇴골은 정상인 당뇨병 태아는 몸통이 머리보다 커서 어깨난산 위험이 가장 크다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "문제는 몸통-머리 불균형이지 선진부가 골반을 채우지 못하는 상황이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 위포·간·척추가 보이는 태아 복부 가로단면 → 복부둘레 측정 단면",
+    "복부둘레만 97백분위 초과 + 머리·대퇴골 정상 → 비대칭 거대아 → 어깨난산"
+   ],
+   "key": [
+    {
+     "item": "영상: 위포·간·척추가 보이는 태아 복부 가로단면",
+     "why": "복부둘레 단면",
+     "also": []
+    },
+    {
+     "item": "The fetal head and femur measurements are at the 50th percentile",
+     "why": "머리는 정상 — 몸통만 큼",
+     "also": []
+    },
+    {
+     "item": "above the 97th percentile",
+     "why": "복부둘레 과다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Her blood pressure is 118/74 mm Hg",
+     "why": "태반조기박리 위험 인자(고혈압) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "poorly controlled despite diet therapy",
+     "why": "고혈당 원인 설명 — 정답은 측정값이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "복부 가로단면은 복부둘레 단면이다. 복부둘레만 크고 머리는 정상인 당뇨병 태아는 어깨난산 위험이 가장 크다.",
+   "switch": {
+    "choice": "C",
+    "condition": "태아가 가로누운자세이거나 머리가 진입하지 않은 채 양막이 터졌다면 제대탈출"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0798.png",
+   "caption": "Fetal ultrasound still image; text at the upper right is machine settings — resized only (FETAL_PLANES_DB, Zenodo, CC BY 4.0) ※ The clinical scenario in the stem is an authoring assumption — the source dataset has no age or clinical history",
+   "alt": "ULTRASOUND 영상"
+  },
+  "attribution": {
+   "dataset": "FETAL_PLANES_DB: Common maternal-fetal ultrasound images",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://zenodo.org/records/3904280",
+   "asset_id": "FETALPLANES-Patient01733_Plane2_1_of_1",
+   "text": "FETAL_PLANES_DB (Zenodo 3904280, CC BY 4.0) · Patient01733_Plane2_1_of_1"
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0805",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "예방의학 — 임상시험 결과에서 NNT 계산",
+  "type": "예방의학 — 임상시험 결과에서 NNT 계산",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-26",
+  "vignette": "52세 남자가 고혈압 진료 중 새로 나온 혈압약을 먹으면 뇌졸중을 얼마나 막을 수 있는지 물었다. 담당 의사가 근거로 삼은 임상시험은 고혈압 환자 4,000명을 무작위로 두 군에 나누어 새 약제 또는 위약을 5년 동안 투여하는 임상시험을 하였다. 두 군의 나이·성별·기저 혈압은 비슷하였고 추적 탈락은 각 군 2 % 미만이었다. 5년 동안 뇌졸중은 새 약제군 2,000명 중 80명, 위약군 2,000명 중 120명에서 생겼다. 연구 보고서는 새 약제가 뇌졸중을 33 % 줄였다고 요약하였다.",
+  "question": "이 결과에서 뇌졸중 1건을 예방하려면 새 약제로 5년 동안 치료해야 하는 환자 수는?",
+  "options": [
+   "50명",
+   "3명",
+   "25명",
+   "17명",
+   "33명"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 5년 사건 발생률은 위약군 120/2,000 = <b>6 %</b>, 새 약제군 80/2,000 = <b>4 %</b>다. <b>절대위험감소(ARR)</b> = 6 % − 4 % = <b>2 %p(0.02)</b>이고, <b>NNT = 1/ARR = 1/0.02 = 50명</b>이다. 보고서의 「33 % 감소」는 상대위험감소(2/6)이며, 그 역수(약 3명)는 NNT 가 아니다.\n- 원리: <b>NNT 가 절대위험감소의 역수인 이유</b>: 50명을 5년 치료하면 위약군 기준 3명(6 %)에게 생길 뇌졸중이 2명(4 %)으로 줄어 정확히 1건이 예방된다. 즉 「한 명을 치료할 때 예방되는 사건의 확률」이 ARR 이고, 1건을 예방하는 데 필요한 사람 수는 그 역수다.<br> <b>상대위험감소가 커 보이는 이유</b>: 상대위험감소(RRR)는 ARR 을 대조군 위험으로 나눈 비율(0.02/0.06 = 33 %)이다. 기저 위험이 작으면 RRR 이 같아도 ARR 은 작아지고 NNT 는 커진다 — 같은 약이 고위험군에서는 NNT 가 작고 저위험군에서는 크다. 그래서 RRR 만 보고하면 효과가 과장되어 보인다.<br> <b>NNT 에는 기간이 붙는다</b>: 「5년 동안 50명」처럼 추적 기간과 함께 말해야 한다. 무작위 배정·낮은 탈락률은 이 계산을 그대로 믿어도 되는 근거다.\n- 비교: <table><thead><tr><th style=\"width:24%\">지표</th><th style=\"width:38%\">절대위험감소 → NNT — 정답</th><th>상대위험감소 — 가장 가까운 오답(역수 약 3)</th></tr></thead><tbody> <tr><td>계산</td><td><b>6 % − 4 % = 2 %p</b></td><td>(6 % − 4 %) / 6 % = 33 %</td></tr> <tr><td>역수</td><td><b>1/0.02 = 50명</b></td><td>1/0.33 ≈ 3 — 의미 없는 수</td></tr> <tr><td>기저 위험의 영향</td><td>기저 위험이 낮으면 작아짐</td><td>기저 위험과 무관하게 비슷</td></tr> </tbody></table> NNT 는 언제나 「두 위험의 차」의 역수다. 비율(RRR)이나 한 군의 위험(4 %·6 %)의 역수가 아니다.\n- 오답 이유:\n  - ② 3명은 상대위험감소 33 % 의 역수로, 대조군 위험이 100 % 에 가까운 집단에서만 NNT 가 그 값에 가까워진다.\n  - ③ 25명은 새 약제군 위험 4 % 의 역수이며, 위약군 위험이 8 % 였다면(ARR 4 %p) NNT 가 25명이 된다.\n  - ④ 17명은 위약군 위험 6 % 의 역수로, 새 약제가 뇌졸중을 완전히 없앴다면(ARR 6 %p) NNT 가 약 17명이 된다.\n  - ⑤ 33명은 상대위험감소 수치를 사람 수로 옮긴 것이며, ARR 이 약 3 %p 였다면 NNT 가 33명이 된다.\n- 함정: 보고서의 「33 % 감소」를 그대로 써서 NNT 를 구하는 것 — NNT 는 절대위험감소에서만 구한다.\n- 학습목표: 두 군의 사건 발생률에서 절대위험감소와 상대위험감소를 구분해 계산하고 NNT 를 절대위험감소의 역수로 구한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 4: Decision-Making in Clinical Medicine · Laupacis A, Sackett DL, Roberts RS. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med. 1988;318(26):1728-1733",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "5년 사건 발생률은 위약군 120/2,000 = <b>6 %</b>, 새 약제군 80/2,000 = <b>4 %</b>다. <b>절대위험감소(ARR)</b> = 6 % − 4 % = <b>2 %p(0.02)</b>이고, <b>NNT = 1/ARR = 1/0.02 = 50명</b>이다. 보고서의 「33 % 감소」는 상대위험감소(2/6)이며, 그 역수(약 3명)는 NNT 가 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>NNT 가 절대위험감소의 역수인 이유</b>: 50명을 5년 치료하면 위약군 기준 3명(6 %)에게 생길 뇌졸중이 2명(4 %)으로 줄어 정확히 1건이 예방된다. 즉 「한 명을 치료할 때 예방되는 사건의 확률」이 ARR 이고, 1건을 예방하는 데 필요한 사람 수는 그 역수다.<br> <b>상대위험감소가 커 보이는 이유</b>: 상대위험감소(RRR)는 ARR 을 대조군 위험으로 나눈 비율(0.02/0.06 = 33 %)이다. 기저 위험이 작으면 RRR 이 같아도 ARR 은 작아지고 NNT 는 커진다 — 같은 약이 고위험군에서는 NNT 가 작고 저위험군에서는 크다. 그래서 RRR 만 보고하면 효과가 과장되어 보인다.<br> <b>NNT 에는 기간이 붙는다</b>: 「5년 동안 50명」처럼 추적 기간과 함께 말해야 한다. 무작위 배정·낮은 탈락률은 이 계산을 그대로 믿어도 되는 근거다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">지표</th><th style=\"width:38%\">절대위험감소 → NNT — 정답</th><th>상대위험감소 — 가장 가까운 오답(역수 약 3)</th></tr></thead><tbody> <tr><td>계산</td><td><b>6 % − 4 % = 2 %p</b></td><td>(6 % − 4 %) / 6 % = 33 %</td></tr> <tr><td>역수</td><td><b>1/0.02 = 50명</b></td><td>1/0.33 ≈ 3 — 의미 없는 수</td></tr> <tr><td>기저 위험의 영향</td><td>기저 위험이 낮으면 작아짐</td><td>기저 위험과 무관하게 비슷</td></tr> </tbody></table> NNT 는 언제나 「두 위험의 차」의 역수다. 비율(RRR)이나 한 군의 위험(4 %·6 %)의 역수가 아니다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 3명은 상대위험감소 33 % 의 역수로, 대조군 위험이 100 % 에 가까운 집단에서만 NNT 가 그 값에 가까워진다.\n③ 25명은 새 약제군 위험 4 % 의 역수이며, 위약군 위험이 8 % 였다면(ARR 4 %p) NNT 가 25명이 된다.\n④ 17명은 위약군 위험 6 % 의 역수로, 새 약제가 뇌졸중을 완전히 없앴다면(ARR 6 %p) NNT 가 약 17명이 된다.\n⑤ 33명은 상대위험감소 수치를 사람 수로 옮긴 것이며, ARR 이 약 3 %p 였다면 NNT 가 33명이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "보고서의 「33 % 감소」를 그대로 써서 NNT 를 구하는 것 — NNT 는 절대위험감소에서만 구한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "두 군의 사건 발생률에서 절대위험감소와 상대위험감소를 구분해 계산하고 NNT 를 절대위험감소의 역수로 구한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 4: Decision-Making in Clinical Medicine · Laupacis A, Sackett DL, Roberts RS. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med. 1988;318(26):1728-1733"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "NNT 는 두 군 사건 발생률 차(절대위험감소)의 역수다 — 6 % − 4 % = 2 %p, NNT 50",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "보고서의 33 % 는 상대위험감소 — 역수를 취해도 NNT 가 아니다",
+   "steps": 3,
+   "chain": [
+    "새 약제군 80/2,000 = 4 %, 위약군 120/2,000 = 6 %",
+    "절대위험감소 = 6 % − 4 % = 2 %p (33 % 는 상대위험감소)",
+    "NNT = 1/0.02 = 50명(5년)"
+   ],
+   "key": [
+    {
+     "item": "새 약제군 2,000명 중 80명, 위약군 2,000명 중 120명",
+     "why": "두 군 발생률 계산",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "추적 탈락은 각 군 2 % 미만",
+     "why": "탈락 비뚤림 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "5년 동안 투여하는",
+     "why": "NNT 의 기간",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "새 약제가 뇌졸중을 33 % 줄였다고 요약하였다",
+     "why": "상대위험감소 — NNT 계산에 쓰면 함정",
+     "also": []
+    }
+   ],
+   "summary": "발생률 6 % 와 4 % 의 차 2 %p 가 절대위험감소이고 NNT 는 그 역수 50명이다. 33 % 는 상대위험감소다.",
+   "switch": {
+    "choice": "C",
+    "condition": "위약군 위험이 8 % 였다면(절대위험감소 4 %p) NNT 25명"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0804",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "감염 — 항생제 뒤 설사와 쇼크",
+  "type": "감염 — 항생제 뒤 설사와 쇼크",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-26",
+  "vignette": "A 74-year-old woman is admitted to the intensive care unit because of abdominal distension, decreased stool output, and confusion for 1 day. Ten days ago, she completed a course of clindamycin for a dental infection, after which she had watery diarrhea. Temperature is 38.9°C (102°F), pulse is 122/min, and blood pressure is 82/50 mm Hg despite 3 L of intravenous crystalloid; norepinephrine is started. The abdomen is distended and tender with hypoactive bowel sounds and no peritoneal signs. The leukocyte count is 32,000/mm3, and serum creatinine is 2.3 mg/dL (baseline 0.8). Stool testing is positive for Clostridioides difficile toxin. An abdominal x-ray shows dilated colon without free air.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Oral fidaxomicin alone",
+   "Oral loperamide plus oral vancomycin",
+   "Oral vancomycin plus intravenous metronidazole",
+   "Oral metronidazole alone",
+   "Intravenous vancomycin alone"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: C. difficile toxin–positive colitis after clindamycin with <b>hypotension requiring vasopressors</b>, <b>ileus</b> (distension, decreased stool), leukocytosis above 15,000, and acute kidney injury is <b>fulminant</b> disease. Guidelines recommend <b>high-dose oral (or rectal, in ileus) vancomycin plus intravenous metronidazole</b>, with early surgical consultation.\n- 원리: <b>Why oral vancomycin</b>: C. difficile lives in the colon lumen. Oral vancomycin is not absorbed, so it reaches very high colonic concentrations; intravenous vancomycin is not excreted into the colon and does nothing for the infection.<br> <b>Why add intravenous metronidazole in fulminant disease</b>: With ileus, oral drug may not travel down to the colon. Intravenous metronidazole is excreted into bile and through the inflamed colon wall, so it reaches the lumen even when motility stops. Rectal vancomycin enemas are added for the same reason.<br> <b>Why fulminant is a different category</b>: Toxins A and B disrupt the colonic epithelium; severe inflammation can cause toxic megacolon and perforation. Shock, ileus, or megacolon mark fulminant disease, which carries high mortality — colectomy or diverting loop ileostomy is considered if the patient does not improve or lactate rises.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fulminant (answer)</th><th>Non-severe/severe — fidaxomicin (closest distractor)</th></tr></thead><tbody> <tr><td>Defining signs</td><td><b>Hypotension/shock, ileus, megacolon</b></td><td>WBC ≥ 15,000 or creatinine > 1.5 without shock</td></tr> <tr><td>Therapy</td><td>Oral/rectal vancomycin + IV metronidazole</td><td>Fidaxomicin (preferred) or oral vancomycin</td></tr> <tr><td>Surgery</td><td>Early consultation</td><td>Not needed</td></tr> </tbody></table> Classify the episode first: without shock or ileus, fidaxomicin; with shock or ileus, combine routes.\n- 오답 이유:\n  - (A) Oral fidaxomicin alone would be preferred for a first non-severe or severe episode without shock, ileus, or megacolon.\n  - (B) Loperamide would be avoided here because antimotility drugs can precipitate toxic megacolon in C. difficile colitis.\n  - (D) Oral metronidazole alone is an alternative only for a non-severe first episode when fidaxomicin and vancomycin are unavailable.\n  - (E) Intravenous vancomycin alone treats MRSA bacteremia but does not reach the colon lumen and has no role in C. difficile infection.\n- 함정: Choosing fidaxomicin because it is the current preferred drug — that applies to episodes without shock or ileus.\n- 학습목표: Treat fulminant Clostridioides difficile infection (hypotension, ileus) with high-dose oral vancomycin plus intravenous metronidazole and distinguish it from non-severe infection\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 139: Clostridioides difficile Infection, Including Pseudomembranous Colitis · Johnson S, Lavergne V, Skinner AM, et al. Clinical Practice Guideline by IDSA and SHEA: 2021 Focused Update Guidelines on Management of Clostridioides difficile Infection in Adults. Clin Infect Dis. 2021;73(5):e1029-e1044",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "C. difficile toxin–positive colitis after clindamycin with <b>hypotension requiring vasopressors</b>, <b>ileus</b> (distension, decreased stool), leukocytosis above 15,000, and acute kidney injury is <b>fulminant</b> disease. Guidelines recommend <b>high-dose oral (or rectal, in ileus) vancomycin plus intravenous metronidazole</b>, with early surgical consultation."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why oral vancomycin</b>: C. difficile lives in the colon lumen. Oral vancomycin is not absorbed, so it reaches very high colonic concentrations; intravenous vancomycin is not excreted into the colon and does nothing for the infection.<br> <b>Why add intravenous metronidazole in fulminant disease</b>: With ileus, oral drug may not travel down to the colon. Intravenous metronidazole is excreted into bile and through the inflamed colon wall, so it reaches the lumen even when motility stops. Rectal vancomycin enemas are added for the same reason.<br> <b>Why fulminant is a different category</b>: Toxins A and B disrupt the colonic epithelium; severe inflammation can cause toxic megacolon and perforation. Shock, ileus, or megacolon mark fulminant disease, which carries high mortality — colectomy or diverting loop ileostomy is considered if the patient does not improve or lactate rises."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Fulminant (answer)</th><th>Non-severe/severe — fidaxomicin (closest distractor)</th></tr></thead><tbody> <tr><td>Defining signs</td><td><b>Hypotension/shock, ileus, megacolon</b></td><td>WBC ≥ 15,000 or creatinine > 1.5 without shock</td></tr> <tr><td>Therapy</td><td>Oral/rectal vancomycin + IV metronidazole</td><td>Fidaxomicin (preferred) or oral vancomycin</td></tr> <tr><td>Surgery</td><td>Early consultation</td><td>Not needed</td></tr> </tbody></table> Classify the episode first: without shock or ileus, fidaxomicin; with shock or ileus, combine routes."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral fidaxomicin alone would be preferred for a first non-severe or severe episode without shock, ileus, or megacolon.\n(B) Loperamide would be avoided here because antimotility drugs can precipitate toxic megacolon in C. difficile colitis.\n(D) Oral metronidazole alone is an alternative only for a non-severe first episode when fidaxomicin and vancomycin are unavailable.\n(E) Intravenous vancomycin alone treats MRSA bacteremia but does not reach the colon lumen and has no role in C. difficile infection."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing fidaxomicin because it is the current preferred drug — that applies to episodes without shock or ileus."
+   },
+   {
+    "k": "학습목표",
+    "v": "Treat fulminant Clostridioides difficile infection (hypotension, ileus) with high-dose oral vancomycin plus intravenous metronidazole and distinguish it from non-severe infection"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 139: Clostridioides difficile Infection, Including Pseudomembranous Colitis · Johnson S, Lavergne V, Skinner AM, et al. Clinical Practice Guideline by IDSA and SHEA: 2021 Focused Update Guidelines on Management of Clostridioides difficile Infection in Adults. Clin Infect Dis. 2021;73(5):e1029-e1044"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "쇼크·장마비가 있는 전격성 C. difficile 감염에는 고용량 경구 반코마이신과 정맥 메트로니다졸을 함께 준다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "승압제가 필요한 저혈압과 장마비 — 전격성으로 분류된다",
+   "steps": 2,
+   "chain": [
+    "클린다마이신 뒤 설사 + 독소 양성 → C. difficile 감염",
+    "저혈압(승압제)·장마비·결장 확장 → 전격성 → 경구 반코마이신 + 정맥 메트로니다졸"
+   ],
+   "key": [
+    {
+     "item": "Stool testing is positive for Clostridioides difficile toxin",
+     "why": "진단",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 82/50 mm Hg despite 3 L of intravenous crystalloid",
+     "why": "쇼크 — 전격성",
+     "also": []
+    },
+    {
+     "item": "abdominal distension, decreased stool output",
+     "why": "장마비 — 경구약 도달 불확실",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "An abdominal x-ray shows dilated colon without free air",
+     "why": "천공 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "no peritoneal signs",
+     "why": "천공 가능성이 낮아 우선 약물 치료",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "completed a course of clindamycin for a dental infection",
+     "why": "위험 인자 — 치료 선택은 중증도가 정한다",
+     "also": []
+    }
+   ],
+   "summary": "클린다마이신 뒤 C. difficile 독소 양성 대장염에 쇼크와 장마비가 있어 전격성이다. 경구 반코마이신과 정맥 메트로니다졸을 함께 준다.",
+   "switch": {
+    "choice": "A",
+    "condition": "쇼크·장마비 없이 백혈구만 높은 첫 발병이었다면 피닥소마이신"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0803",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "신경 — 혈압이 높은 급성 허혈성 뇌졸중",
+  "type": "신경 — 혈압이 높은 급성 허혈성 뇌졸중",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-26",
+  "vignette": "72세 남자가 1시간 30분 전 갑자기 오른쪽 팔다리에 힘이 빠지고 말이 어눌해져 응급실에 왔다. 증상이 시작된 시각은 가족이 확인하였다. 심방세동이 있으나 항응고제는 먹지 않는다. 혈압 204/112 mmHg, 맥박 92회/분이고 불규칙하다. 혈당 132 mg/dL, 혈소판 21만/μL, 프로트롬빈시간 INR 1.0 이다. NIHSS 점수는 10점이다. 뇌 CT 에서 출혈과 뚜렷한 조기 허혈 변화는 없고, CT 혈관조영에서 큰 혈관 폐색은 없다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "아스피린 300 mg 경구 투여",
+   "정맥 헤파린 투여",
+   "혈압을 낮추지 않고 경과 관찰",
+   "정맥 라베탈롤 투여",
+   "바로 정맥 알테플라제 투여"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 발병 <b>4.5시간 이내</b>이고 CT 에서 출혈이 없으며 혈당·혈소판·INR 이 정상이라 <b>정맥 혈전용해 대상</b>이다. 그러나 혈압이 <b>204/112 mmHg 로 185/110 mmHg 를 넘으므로</b> 이대로 알테플라제를 주면 뇌출혈 위험이 커진다. 먼저 <b>정맥 라베탈롤</b>(또는 니카르디핀)로 185/110 미만으로 낮추고, 내려가면 곧바로 알테플라제를 준다.\n- 원리: <b>왜 평소엔 혈압을 그대로 두는가</b>: 경색 주변의 반음영(penumbra)은 자동조절능을 잃어 혈류가 혈압에 그대로 따라간다. 혈압을 낮추면 이 살릴 수 있는 조직이 더 죽으므로, 혈전용해를 하지 않는 환자는 220/120 mmHg 까지 두고 본다.<br> <b>왜 혈전용해 앞에서는 낮추는가</b>: 알테플라제는 혈전을 녹이면서 손상된 혈관벽에서 출혈을 일으킬 수 있고, 혈압이 높을수록 증상성 뇌출혈이 늘어난다. 그래서 투여 전 185/110 미만, 투여 뒤 24시간은 180/105 미만으로 유지한다.<br> <b>약 선택</b>: 정맥 라베탈롤·니카르디핀처럼 빠르고 조절 가능한 약을 쓴다. 혈압이 내려가지 않으면 혈전용해를 하지 않는다. 혈압을 낮추는 데 시간을 너무 쓰지 않는 것도 중요하다 — 「시간이 뇌」다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">라베탈롤 먼저 — 정답</th><th>바로 알테플라제 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈압</td><td><b>185/110 초과</b> → 먼저 낮춤</td><td>185/110 미만일 때만 바로 투여</td></tr> <tr><td>이유</td><td>고혈압에서 증상성 뇌출혈 증가</td><td>지연 없는 재관류</td></tr> <tr><td>목표</td><td>투여 전 185/110, 투여 뒤 24시간 180/105 미만</td><td>—</td></tr> </tbody></table> 혈전용해를 하면 185/110, 하지 않으면 220/120 — 두 기준을 짝지어 두면 어느 쪽을 물어도 답할 수 있다.\n- 오답 이유:\n  - ① 아스피린은 혈전용해를 하지 않는 환자에게 출혈을 배제한 뒤 주고, 알테플라제를 준 경우 24시간 뒤에 시작한다.\n  - ② 정맥 헤파린은 급성 뇌졸중에서 출혈 위험만 늘리고 이득이 없다 — 심방세동의 항응고는 경색 크기에 따라 며칠 뒤 시작한다.\n  - ③ 혈압을 낮추지 않고 경과 관찰은 혈전용해를 하지 않는 환자이고 혈압이 220/120 mmHg 이하라면 적절하다.\n  - ⑤ 바로 정맥 알테플라제 투여는 혈압이 185/110 mmHg 미만이었다면 정답이 된다 — 다른 조건은 모두 맞는다.\n- 함정: 뇌졸중에서는 혈압을 낮추지 않는다는 원칙만 기억해 경과 관찰을 고르는 것 — 혈전용해 예정이면 기준이 185/110 이다.\n- 학습목표: 정맥 혈전용해 대상인 급성 허혈성 뇌졸중에서 혈압이 185/110 mmHg 를 넘으면 먼저 정맥 라베탈롤 등으로 낮춘 뒤 알테플라제를 준다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 438: Ischemic Stroke · Powers WJ, Rabinstein AA, Ackerson T, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update. Stroke. 2019;50(12):e344-e418",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "발병 <b>4.5시간 이내</b>이고 CT 에서 출혈이 없으며 혈당·혈소판·INR 이 정상이라 <b>정맥 혈전용해 대상</b>이다. 그러나 혈압이 <b>204/112 mmHg 로 185/110 mmHg 를 넘으므로</b> 이대로 알테플라제를 주면 뇌출혈 위험이 커진다. 먼저 <b>정맥 라베탈롤</b>(또는 니카르디핀)로 185/110 미만으로 낮추고, 내려가면 곧바로 알테플라제를 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 평소엔 혈압을 그대로 두는가</b>: 경색 주변의 반음영(penumbra)은 자동조절능을 잃어 혈류가 혈압에 그대로 따라간다. 혈압을 낮추면 이 살릴 수 있는 조직이 더 죽으므로, 혈전용해를 하지 않는 환자는 220/120 mmHg 까지 두고 본다.<br> <b>왜 혈전용해 앞에서는 낮추는가</b>: 알테플라제는 혈전을 녹이면서 손상된 혈관벽에서 출혈을 일으킬 수 있고, 혈압이 높을수록 증상성 뇌출혈이 늘어난다. 그래서 투여 전 185/110 미만, 투여 뒤 24시간은 180/105 미만으로 유지한다.<br> <b>약 선택</b>: 정맥 라베탈롤·니카르디핀처럼 빠르고 조절 가능한 약을 쓴다. 혈압이 내려가지 않으면 혈전용해를 하지 않는다. 혈압을 낮추는 데 시간을 너무 쓰지 않는 것도 중요하다 — 「시간이 뇌」다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">라베탈롤 먼저 — 정답</th><th>바로 알테플라제 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>혈압</td><td><b>185/110 초과</b> → 먼저 낮춤</td><td>185/110 미만일 때만 바로 투여</td></tr> <tr><td>이유</td><td>고혈압에서 증상성 뇌출혈 증가</td><td>지연 없는 재관류</td></tr> <tr><td>목표</td><td>투여 전 185/110, 투여 뒤 24시간 180/105 미만</td><td>—</td></tr> </tbody></table> 혈전용해를 하면 185/110, 하지 않으면 220/120 — 두 기준을 짝지어 두면 어느 쪽을 물어도 답할 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아스피린은 혈전용해를 하지 않는 환자에게 출혈을 배제한 뒤 주고, 알테플라제를 준 경우 24시간 뒤에 시작한다.\n② 정맥 헤파린은 급성 뇌졸중에서 출혈 위험만 늘리고 이득이 없다 — 심방세동의 항응고는 경색 크기에 따라 며칠 뒤 시작한다.\n③ 혈압을 낮추지 않고 경과 관찰은 혈전용해를 하지 않는 환자이고 혈압이 220/120 mmHg 이하라면 적절하다.\n⑤ 바로 정맥 알테플라제 투여는 혈압이 185/110 mmHg 미만이었다면 정답이 된다 — 다른 조건은 모두 맞는다."
+   },
+   {
+    "k": "함정",
+    "v": "뇌졸중에서는 혈압을 낮추지 않는다는 원칙만 기억해 경과 관찰을 고르는 것 — 혈전용해 예정이면 기준이 185/110 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "정맥 혈전용해 대상인 급성 허혈성 뇌졸중에서 혈압이 185/110 mmHg 를 넘으면 먼저 정맥 라베탈롤 등으로 낮춘 뒤 알테플라제를 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 438: Ischemic Stroke · Powers WJ, Rabinstein AA, Ackerson T, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update. Stroke. 2019;50(12):e344-e418"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "혈전용해 대상인데 혈압이 185/110 을 넘으면 정맥 라베탈롤로 먼저 낮춘다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "혈압 204/112 mmHg — 혈전용해 전 기준 185/110 초과",
+   "steps": 3,
+   "chain": [
+    "갑작스러운 편측마비·구음장애 + CT 출혈 없음 → 급성 허혈성 뇌졸중",
+    "발병 1시간 30분·검사 정상·큰 혈관 폐색 없음 → 정맥 혈전용해 대상",
+    "혈압 204/112 mmHg > 185/110 → 먼저 라베탈롤"
+   ],
+   "key": [
+    {
+     "item": "혈압 204/112 mmHg",
+     "why": "혈전용해 전 낮춰야 하는 수준",
+     "also": []
+    },
+    {
+     "item": "1시간 30분 전 갑자기",
+     "why": "혈전용해 시간 창 안",
+     "also": []
+    },
+    {
+     "item": "뇌 CT 에서 출혈과 뚜렷한 조기 허혈 변화는 없고",
+     "why": "허혈성 — 혈전용해 금기 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈당 132 mg/dL, 혈소판 21만/μL, 프로트롬빈시간 INR 1.0",
+     "why": "저혈당·출혈 경향 금기 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "CT 혈관조영에서 큰 혈관 폐색은 없다",
+     "why": "혈관내 혈전제거술 대상 아님",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "심방세동이 있으나 항응고제는 먹지 않는다",
+     "why": "원인은 설명하지만 지금의 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "시간 창 안의 허혈성 뇌졸중으로 혈전용해 대상이지만 혈압이 185/110 을 넘는다. 먼저 정맥 라베탈롤로 낮춘다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈압이 185/110 mmHg 미만이었다면 바로 알테플라제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0800",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "소화기 — 과음 뒤 황달이 생긴 남성",
+  "type": "소화기 — 과음 뒤 황달이 생긴 남성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-26",
+  "vignette": "A 45-year-old man comes to the emergency department because of yellow eyes, fatigue, and abdominal swelling for 2 weeks. He has consumed about 10 cans of beer daily for 15 years, with his last drink 5 days ago. Temperature is 37.9°C (100.2°F), pulse is 102/min, and blood pressure is 118/70 mm Hg. He has jaundice, tender hepatomegaly, and mild ascites. Serum studies show total bilirubin 14.2 mg/dL, AST 210 U/L, ALT 82 U/L, and prothrombin time 9 seconds above control. The leukocyte count is 15,000/mm3. Diagnostic paracentesis shows 80 neutrophils/mm3, and blood and urine cultures are negative. There is no evidence of gastrointestinal bleeding. His Maddrey discriminant function is 58.",
+  "question": "In addition to abstinence and nutritional support, which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Prednisolone",
+   "Pentoxifylline",
+   "Ceftriaxone",
+   "Lactulose",
+   "Propranolol"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Recent heavy drinking, jaundice with <b>bilirubin above 3 mg/dL</b>, <b>AST about twice ALT and below 400 U/L</b>, tender hepatomegaly, low-grade fever, and leukocytosis indicate <b>alcohol-associated hepatitis</b>. A <b>Maddrey discriminant function ≥ 32</b> marks severe disease with high short-term mortality. With infection excluded (ascitic neutrophils < 250/mm3, negative cultures) and no bleeding, <b>prednisolone</b> is indicated.\n- 원리: <b>Why a steroid</b>: In alcohol-associated hepatitis, injured hepatocytes and gut-derived endotoxin activate Kupffer cells and neutrophils, which release cytokines (TNF-α, IL-8) that cause further hepatocyte death and liver failure. Corticosteroids suppress this inflammatory amplification. In the STOPAH trial and meta-analyses, prednisolone reduced 28-day mortality in severe disease, though the benefit fades by 90 days.<br> <b>Why severity scoring first</b>: Mild disease recovers with abstinence alone, so steroid risks (infection, bleeding) are not worth it. The discriminant function [4.6 × (PT − control) + bilirubin] ≥ 32 or MELD > 20 identifies patients who benefit.<br> <b>Why exclude infection first</b>: Steroids worsen infection; SBP, bacteremia, and active bleeding must be ruled out. A Lille score at day 7 identifies nonresponders, in whom steroids are stopped.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Prednisolone (answer)</th><th>Pentoxifylline (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Broad suppression of inflammation</td><td>Phosphodiesterase inhibitor, reduces TNF-α</td></tr> <tr><td>Evidence</td><td><b>Reduces 28-day mortality</b> (DF ≥ 32)</td><td>No mortality benefit in STOPAH</td></tr> <tr><td>Current role</td><td>First-line in severe disease</td><td>Not recommended</td></tr> </tbody></table> Score severity first; treat severe disease with prednisolone once infection and bleeding are excluded.\n- 오답 이유:\n  - (B) Pentoxifylline was used when steroids were contraindicated, but large trials showed no survival benefit, so it is no longer recommended.\n  - (C) Ceftriaxone would be correct if paracentesis showed ≥ 250 neutrophils/mm3 (spontaneous bacterial peritonitis) or cultures were positive.\n  - (D) Lactulose would be correct if he had hepatic encephalopathy with confusion or asterixis, which this patient does not have.\n  - (E) Propranolol would be used for primary prophylaxis of variceal bleeding in cirrhosis with large varices, not for acute hepatitis.\n- 함정: Choosing antibiotics because of fever and leukocytosis — both are common in alcohol-associated hepatitis itself, and the workup here excludes infection.\n- 학습목표: Treat severe alcohol-associated hepatitis (Maddrey discriminant function ≥ 32) with prednisolone after excluding infection and gastrointestinal bleeding\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 353: Alcohol-Associated Liver Disease · Thursz MR, Richardson P, Allison M, et al. Prednisolone or pentoxifylline for alcoholic hepatitis. N Engl J Med. 2015;372(17):1619-1628",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Recent heavy drinking, jaundice with <b>bilirubin above 3 mg/dL</b>, <b>AST about twice ALT and below 400 U/L</b>, tender hepatomegaly, low-grade fever, and leukocytosis indicate <b>alcohol-associated hepatitis</b>. A <b>Maddrey discriminant function ≥ 32</b> marks severe disease with high short-term mortality. With infection excluded (ascitic neutrophils < 250/mm3, negative cultures) and no bleeding, <b>prednisolone</b> is indicated."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a steroid</b>: In alcohol-associated hepatitis, injured hepatocytes and gut-derived endotoxin activate Kupffer cells and neutrophils, which release cytokines (TNF-α, IL-8) that cause further hepatocyte death and liver failure. Corticosteroids suppress this inflammatory amplification. In the STOPAH trial and meta-analyses, prednisolone reduced 28-day mortality in severe disease, though the benefit fades by 90 days.<br> <b>Why severity scoring first</b>: Mild disease recovers with abstinence alone, so steroid risks (infection, bleeding) are not worth it. The discriminant function [4.6 × (PT − control) + bilirubin] ≥ 32 or MELD > 20 identifies patients who benefit.<br> <b>Why exclude infection first</b>: Steroids worsen infection; SBP, bacteremia, and active bleeding must be ruled out. A Lille score at day 7 identifies nonresponders, in whom steroids are stopped."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Prednisolone (answer)</th><th>Pentoxifylline (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Broad suppression of inflammation</td><td>Phosphodiesterase inhibitor, reduces TNF-α</td></tr> <tr><td>Evidence</td><td><b>Reduces 28-day mortality</b> (DF ≥ 32)</td><td>No mortality benefit in STOPAH</td></tr> <tr><td>Current role</td><td>First-line in severe disease</td><td>Not recommended</td></tr> </tbody></table> Score severity first; treat severe disease with prednisolone once infection and bleeding are excluded."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Pentoxifylline was used when steroids were contraindicated, but large trials showed no survival benefit, so it is no longer recommended.\n(C) Ceftriaxone would be correct if paracentesis showed ≥ 250 neutrophils/mm3 (spontaneous bacterial peritonitis) or cultures were positive.\n(D) Lactulose would be correct if he had hepatic encephalopathy with confusion or asterixis, which this patient does not have.\n(E) Propranolol would be used for primary prophylaxis of variceal bleeding in cirrhosis with large varices, not for acute hepatitis."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing antibiotics because of fever and leukocytosis — both are common in alcohol-associated hepatitis itself, and the workup here excludes infection."
+   },
+   {
+    "k": "학습목표",
+    "v": "Treat severe alcohol-associated hepatitis (Maddrey discriminant function ≥ 32) with prednisolone after excluding infection and gastrointestinal bleeding"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 353: Alcohol-Associated Liver Disease · Thursz MR, Richardson P, Allison M, et al. Prednisolone or pentoxifylline for alcoholic hepatitis. N Engl J Med. 2015;372(17):1619-1628"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "감염·출혈을 배제한 중증 알코올 간염(판별함수 ≥ 32)에는 프레드니솔론을 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "펜톡시필린은 대규모 시험에서 생존 이득이 없었다",
+   "steps": 2,
+   "chain": [
+    "최근 폭음·빌리루빈 상승·AST/ALT 약 2배·압통 간비대 → 알코올 간염",
+    "판별함수 58(≥ 32) + 감염·출혈 배제 → 프레드니솔론"
+   ],
+   "key": [
+    {
+     "item": "total bilirubin 14.2 mg/dL, AST 210 U/L, ALT 82 U/L",
+     "why": "알코올 간염의 검사 양상",
+     "also": []
+    },
+    {
+     "item": "His Maddrey discriminant function is 58",
+     "why": "중증 — 스테로이드 적응",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Diagnostic paracentesis shows 80 neutrophils/mm3",
+     "why": "자발세균복막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "There is no evidence of gastrointestinal bleeding",
+     "why": "스테로이드 금기 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The leukocyte count is 15,000/mm3",
+     "why": "알코올 간염 자체로 흔하다 — 항생제 적응이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "알코올 간염에서 판별함수 58 은 중증이다. 감염과 출혈이 배제되었으므로 프레드니솔론을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "복수 호중구가 250/mm3 이상이었다면 먼저 세프트리악손"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0797",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·산과·응급·소화기·외과·근골격·신경·감염·예방의학)",
+  "subtopic": "병리 — 단백뇨와 대설증 노인의 콩고레드 염색",
+  "type": "병리 — 단백뇨와 대설증 노인의 콩고레드 염색",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-26",
+  "vignette": "68세 남자가 6개월 전부터 다리가 붓고 거품뇨가 있어 왔다. 혀가 커져 말하기 불편하고 눈 주위에 멍이 쉽게 든다고 한다. 혈압 102/64 mmHg 이다. 24시간 소변 단백은 6.2 g 이고 혈청 알부민은 2.4 g/dL 이다. 혈청 유리 경쇄 검사에서 람다 경쇄가 크게 증가해 있고 카파/람다 비가 낮다. 류마티스관절염이나 만성 감염의 병력은 없다. 신장 생검 조직은 콩고레드 염색에서 사구체에 무정형 물질이 침착되어 있고 편광현미경에서 사과녹색 복굴절을 보인다.",
+  "question": "침착된 물질의 전구 단백으로 가장 가능성이 높은 것은?",
+  "options": [
+   "베타2-마이크로글로불린",
+   "아밀로이드 베타",
+   "면역글로불린 경쇄",
+   "혈청 아밀로이드 A",
+   "트랜스티레틴"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 콩고레드 염색에서 <b>편광 사과녹색 복굴절</b>은 아밀로이드의 표지다. 여기에 <b>람다 유리 경쇄 증가·카파/람다 비 저하</b>(형질세포 클론)와 <b>대설증·눈 주위 자반</b>, 신증후군이 함께 있으므로 <b>AL 아밀로이드증</b>이고 전구 단백은 <b>면역글로불린 경쇄</b>다. 만성 염증 병력이 없어 AA 가능성은 낮다.\n- 원리: <b>아밀로이드는 「모양」의 이름이다</b>: 전구 단백은 서로 다르지만, 잘못 접힌 단백이 <b>베타 병풍 구조</b>의 섬유로 쌓이면 모두 같은 성질을 띤다. 콩고레드 색소가 이 규칙적인 섬유 사이에 나란히 끼어들어, 편광을 비추면 빛이 방향에 따라 다르게 굴절되어 사과녹색으로 보인다. 그래서 염색은 「아밀로이드인가」만 알려 주고, 「어떤 단백인가」는 임상·혈청 검사·질량분석으로 가린다.<br> <b>AL 의 근원</b>: 골수의 작은 형질세포 클론이 한 종류의 경쇄(흔히 람다)를 과다 생산한다. 경쇄 조각이 신장(신증후군)·심장(제한성 심근병증)·혀(대설증)·혈관벽(눈 주위 자반 — 혈관이 약해짐)에 쌓인다. 대설증과 눈 주위 자반은 AL 에 특징적이고 AA 에서는 드물다.<br> <b>치료가 달라진다</b>: AL 은 형질세포를 겨냥한 항암 치료(보르테조밉 기반 등)를, AA 는 원인 염증 조절을 한다 — 그래서 전구 단백을 정확히 가리는 것이 중요하다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">AL — 정답</th><th>AA — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>전구 단백</td><td><b>면역글로불린 경쇄</b></td><td>혈청 아밀로이드 A(급성기 단백)</td></tr> <tr><td>바탕 질환</td><td>형질세포 클론(유리 경쇄 비 이상)</td><td>류마티스관절염·만성 감염·가족성 지중해열</td></tr> <tr><td>특징 소견</td><td>대설증·눈 주위 자반·심근병증</td><td>신장 침범이 주, 대설증 드묾</td></tr> </tbody></table> 콩고레드 양성까지는 같다. 경쇄 비가 이상하면 AL, 오래된 염증이 있으면 AA 로 가른다.\n- 오답 이유:\n  - ① 베타2-마이크로글로불린은 수년간 혈액투석을 받은 환자의 관절·손목굴에 침착했다면 정답이 된다.\n  - ② 아밀로이드 베타는 알츠하이머병의 뇌 노인반·뇌 아밀로이드 혈관병증에서 침착 단백으로 정답이 된다.\n  - ④ 혈청 아밀로이드 A 는 류마티스관절염·만성 골수염 같은 오래된 염증이 있고 유리 경쇄 비가 정상이었다면 정답이 된다.\n  - ⑤ 트랜스티레틴은 노인 남성에서 심장 침범(제한성 심근병증)·손목굴증후군이 주이고 경쇄 비가 정상일 때 떠올린다.\n- 함정: 콩고레드 양성만 보고 가장 흔히 배운 AA 를 고르는 것 — 경쇄 비 이상과 대설증이 AL 을 가리킨다.\n- 학습목표: 콩고레드 염색의 편광 사과녹색 복굴절과 M 단백·경쇄 이상을 AL 아밀로이드증으로 묶고 침착 단백의 전구체를 면역글로불린 경쇄로 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 117: Amyloidosis · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 116: Plasma Cell Disorders",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "콩고레드 염색에서 <b>편광 사과녹색 복굴절</b>은 아밀로이드의 표지다. 여기에 <b>람다 유리 경쇄 증가·카파/람다 비 저하</b>(형질세포 클론)와 <b>대설증·눈 주위 자반</b>, 신증후군이 함께 있으므로 <b>AL 아밀로이드증</b>이고 전구 단백은 <b>면역글로불린 경쇄</b>다. 만성 염증 병력이 없어 AA 가능성은 낮다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>아밀로이드는 「모양」의 이름이다</b>: 전구 단백은 서로 다르지만, 잘못 접힌 단백이 <b>베타 병풍 구조</b>의 섬유로 쌓이면 모두 같은 성질을 띤다. 콩고레드 색소가 이 규칙적인 섬유 사이에 나란히 끼어들어, 편광을 비추면 빛이 방향에 따라 다르게 굴절되어 사과녹색으로 보인다. 그래서 염색은 「아밀로이드인가」만 알려 주고, 「어떤 단백인가」는 임상·혈청 검사·질량분석으로 가린다.<br> <b>AL 의 근원</b>: 골수의 작은 형질세포 클론이 한 종류의 경쇄(흔히 람다)를 과다 생산한다. 경쇄 조각이 신장(신증후군)·심장(제한성 심근병증)·혀(대설증)·혈관벽(눈 주위 자반 — 혈관이 약해짐)에 쌓인다. 대설증과 눈 주위 자반은 AL 에 특징적이고 AA 에서는 드물다.<br> <b>치료가 달라진다</b>: AL 은 형질세포를 겨냥한 항암 치료(보르테조밉 기반 등)를, AA 는 원인 염증 조절을 한다 — 그래서 전구 단백을 정확히 가리는 것이 중요하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">AL — 정답</th><th>AA — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>전구 단백</td><td><b>면역글로불린 경쇄</b></td><td>혈청 아밀로이드 A(급성기 단백)</td></tr> <tr><td>바탕 질환</td><td>형질세포 클론(유리 경쇄 비 이상)</td><td>류마티스관절염·만성 감염·가족성 지중해열</td></tr> <tr><td>특징 소견</td><td>대설증·눈 주위 자반·심근병증</td><td>신장 침범이 주, 대설증 드묾</td></tr> </tbody></table> 콩고레드 양성까지는 같다. 경쇄 비가 이상하면 AL, 오래된 염증이 있으면 AA 로 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 베타2-마이크로글로불린은 수년간 혈액투석을 받은 환자의 관절·손목굴에 침착했다면 정답이 된다.\n② 아밀로이드 베타는 알츠하이머병의 뇌 노인반·뇌 아밀로이드 혈관병증에서 침착 단백으로 정답이 된다.\n④ 혈청 아밀로이드 A 는 류마티스관절염·만성 골수염 같은 오래된 염증이 있고 유리 경쇄 비가 정상이었다면 정답이 된다.\n⑤ 트랜스티레틴은 노인 남성에서 심장 침범(제한성 심근병증)·손목굴증후군이 주이고 경쇄 비가 정상일 때 떠올린다."
+   },
+   {
+    "k": "함정",
+    "v": "콩고레드 양성만 보고 가장 흔히 배운 AA 를 고르는 것 — 경쇄 비 이상과 대설증이 AL 을 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "콩고레드 염색의 편광 사과녹색 복굴절과 M 단백·경쇄 이상을 AL 아밀로이드증으로 묶고 침착 단백의 전구체를 면역글로불린 경쇄로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 117: Amyloidosis · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 116: Plasma Cell Disorders"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "편광 사과녹색 복굴절의 아밀로이드에 람다 경쇄 증가와 대설증이 함께 있으면 AL — 전구 단백은 면역글로불린 경쇄다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "유리 경쇄 비 이상과 대설증·눈 주위 자반, 만성 염증 병력 없음",
+   "steps": 2,
+   "chain": [
+    "콩고레드 염색의 사과녹색 복굴절 → 아밀로이드 침착",
+    "람다 경쇄 증가·대설증·만성 염증 없음 → AL, 전구 단백은 경쇄"
+   ],
+   "key": [
+    {
+     "item": "편광현미경에서 사과녹색 복굴절",
+     "why": "아밀로이드 확인",
+     "also": []
+    },
+    {
+     "item": "람다 경쇄가 크게 증가해 있고 카파/람다 비가 낮다",
+     "why": "형질세포 클론 — AL",
+     "also": []
+    },
+    {
+     "item": "혀가 커져",
+     "why": "대설증 — AL 에 특징적",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "류마티스관절염이나 만성 감염의 병력은 없다",
+     "why": "AA 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "24시간 소변 단백은 6.2 g",
+     "why": "신증후군 — AL·AA 모두 가능해 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "콩고레드 사과녹색 복굴절은 아밀로이드다. 람다 경쇄 증가와 대설증·눈 주위 자반이 AL 을 가리키므로 전구 단백은 면역글로불린 경쇄다.",
+   "switch": {
+    "choice": "D",
+    "condition": "오래된 류마티스관절염이 있고 경쇄 비가 정상이었다면 혈청 아밀로이드 A"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0796",
   "exam": "imaging",
   "style": "usmle_style",

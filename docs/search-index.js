@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4353,
+  "total": 4362,
   "byType": {
    "kmle": 2016,
    "usmle": 288,
    "paper": 988,
+   "imaging": 804,
    "concept": 249,
-   "imaging": 795,
    "ailab": 14,
    "basic": 3
   },
@@ -37,27 +37,27 @@ window.MEDKOS_INDEX = {
    "Surgery": 128,
    "Hematology": 127,
    "Laboratory Medicine": 102,
-   "산부인과": 96,
+   "산부인과": 97,
    "호흡기": 51,
-   "소화기": 46,
+   "소화기": 47,
    "소아과": 42,
+   "응급·중환자": 37,
    "Physiology": 36,
-   "응급·중환자": 36,
+   "감염": 35,
    "내분비": 35,
+   "신경": 35,
    "혈액·종양": 35,
-   "감염": 34,
-   "신경": 34,
    "신장·비뇨기": 34,
-   "병리·조직학": 31,
-   "외과": 30,
+   "병리·조직학": 32,
+   "외과": 31,
    "피부과": 29,
+   "예방의학·역학": 28,
    "Pharmacology": 27,
-   "예방의학·역학": 27,
    "Biochemistry": 23,
    "Microbiology": 23,
+   "근골격·류마티스": 21,
    "약리": 21,
    "Immunology": 20,
-   "근골격·류마티스": 20,
    "정신과": 20,
    "Internal Medicine": 19,
    "안과": 14,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3084,
+   "high": 3093,
    "medium": 1265,
    "low": 4
   },
@@ -821,6 +821,163 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-26_paper-2026-0988_tsg_01_in_the_treatment_of_chronic_heart_failure_in_patients.md",
    "snippet": "Title TSG 01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial Authors Zhao Qifei, Wang Yongxia, Yu Shujun, Xiao Yue, He Jia, Xu Jinfang, Zhu Xiaodong, Wang Zhentao, e",
    "text": "Cardiology scraped pubmed PubMed / Canadian journal of physiology and pharmacology Title TSG 01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial Authors Zhao Qifei, Wang Yongxia, Yu Shujun, Xiao Yue, He Jia, Xu Jinfang, Zhu Xiaodong, Wang Zhentao, et al. Journal / DOI Canadian journal of physiology and pharmacology · DOI: 10.1139/cjpp 2025 0374 · PMID: 43084835 https://pubmed.ncbi.nlm.nih.gov/43084835/ Abstract TSG 01, a novel agent dominated by secondary ginsenosides, may benefit chronic heart failure (CHF), yet its efficacy and safety in CHF patients with coronary artery disease (CAD) remain unclear. This phase IIa trial enrolled 85 CAD patients with NYHA III CHF (40 75 years), randomized to high dose TSG 01 (n=29), low dose TSG 01 (n=28), or placebo (n=28) for 12 weeks. Outcomes were evaluated in the intention to treat cohort (ITT, n=85) and an exploratory digoxin free cohort (n=59). No significant between group difference was found for the NYHA based efficacy endpoint. In the ITT cohort, only low dose TSG 01 significantly improved left ventricular ejection fraction (LVEF) versus placebo; in the digoxin free cohort, both doses yielded significant LVEF improvement. Diseases occurring the infectious and infective system, gastrointestinal system and the blood and lymphatic system are the common adverse events, with no significant difference between the 3 groups. Together, this study demonstrates that TSG 01 is well tolerated with similar adverse event profiles across groups, and confers potential cardiac benefits in digoxin free patients, warranting further confirmatory studies. Registration: Clinicaltrials.gov, no. NCT04515290. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0805",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 임상시험 결과에서 NNT 계산",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0805.md",
+   "snippet": "52세 남자가 고혈압 진료 중 새로 나온 혈압약을 먹으면 뇌졸중을 얼마나 막을 수 있는지 물었다. 담당 의사가 근거로 삼은 임상시험은 고혈압 환자 4,000명을 무작위로 두 군에 나누어 새 약제 또는 위약을 5년 동안 투여하는 임상시험을 하였다. 두 군의 나이·성별·기저 혈압은 비슷하였고 추적 탈락은 각 군 2 % 미만이었다. 5년 동안 뇌졸중은 새 약제군 2,000명 중 80명, 위약군 2,000명 중 120명에서 생겼다. ",
+   "text": "예방의학·역학 예방의학 — 임상시험 결과에서 NNT 계산 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 52세 남자가 고혈압 진료 중 새로 나온 혈압약을 먹으면 뇌졸중을 얼마나 막을 수 있는지 물었다. 담당 의사가 근거로 삼은 임상시험은 고혈압 환자 4,000명을 무작위로 두 군에 나누어 새 약제 또는 위약을 5년 동안 투여하는 임상시험을 하였다. 두 군의 나이·성별·기저 혈압은 비슷하였고 추적 탈락은 각 군 2 % 미만이었다. 5년 동안 뇌졸중은 새 약제군 2,000명 중 80명, 위약군 2,000명 중 120명에서 생겼다. 연구 보고서는 새 약제가 뇌졸중을 33 % 줄였다고 요약하였다. 이 결과에서 뇌졸중 1건을 예방하려면 새 약제로 5년 동안 치료해야 하는 환자 수는? A. 50명 B. 3명 C. 25명 D. 17명 E. 33명"
+  },
+  {
+   "id": "imaging-2026-0804",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 항생제 뒤 설사와 쇼크",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0804.md",
+   "snippet": "A 74 year old woman is admitted to the intensive care unit because of abdominal distension, decreased stool output, and confusion for 1 day. Ten days ago, she completed a course of clindamycin for a dental infection, after which she had wat",
+   "text": "감염 감염 — 항생제 뒤 설사와 쇼크 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 A 74 year old woman is admitted to the intensive care unit because of abdominal distension, decreased stool output, and confusion for 1 day. Ten days ago, she completed a course of clindamycin for a dental infection, after which she had watery diarrhea. Temperature is 38.9°C (102°F), pulse is 122/min, and blood pressure is 82/50 mm Hg despite 3 L of intravenous crystalloid; norepinephrine is started. The abdomen is distended and tender with hypoactive bowel sounds and no peritoneal signs. The leukocyte count is 32,000/mm3, and serum creatinine is 2.3 mg/dL (baseline 0.8). Stool testing is positive for Clostridioides difficile toxin. An abdominal x ray shows dilated colon without free air. Which of the following is the most appropriate pharmacotherapy? A. Oral fidaxomicin alone B. Oral loperamide plus oral vancomycin C. Oral vancomycin plus intravenous metronidazole D. Oral metronidazole alone E. Intravenous vancomycin alone"
+  },
+  {
+   "id": "imaging-2026-0803",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 혈압이 높은 급성 허혈성 뇌졸중",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0803.md",
+   "snippet": "72세 남자가 1시간 30분 전 갑자기 오른쪽 팔다리에 힘이 빠지고 말이 어눌해져 응급실에 왔다. 증상이 시작된 시각은 가족이 확인하였다. 심방세동이 있으나 항응고제는 먹지 않는다. 혈압 204/112 mmHg, 맥박 92회/분이고 불규칙하다. 혈당 132 mg/dL, 혈소판 21만/μL, 프로트롬빈시간 INR 1.0 이다. NIHSS 점수는 10점이다. 뇌 CT 에서 출혈과 뚜렷한 조기 허혈 변화는 없고, CT 혈관조영에서 ",
+   "text": "신경 신경 — 혈압이 높은 급성 허혈성 뇌졸중 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 72세 남자가 1시간 30분 전 갑자기 오른쪽 팔다리에 힘이 빠지고 말이 어눌해져 응급실에 왔다. 증상이 시작된 시각은 가족이 확인하였다. 심방세동이 있으나 항응고제는 먹지 않는다. 혈압 204/112 mmHg, 맥박 92회/분이고 불규칙하다. 혈당 132 mg/dL, 혈소판 21만/μL, 프로트롬빈시간 INR 1.0 이다. NIHSS 점수는 10점이다. 뇌 CT 에서 출혈과 뚜렷한 조기 허혈 변화는 없고, CT 혈관조영에서 큰 혈관 폐색은 없다. 다음 처치로 가장 적절한 것은? A. 아스피린 300 mg 경구 투여 B. 정맥 헤파린 투여 C. 혈압을 낮추지 않고 경과 관찰 D. 정맥 라베탈롤 투여 E. 바로 정맥 알테플라제 투여"
+  },
+  {
+   "id": "imaging-2026-0802",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "근골격 — 넘어진 뒤 손목이 부러진 젊은 여성의 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0802.md",
+   "snippet": "A 32 year old woman comes to the emergency department because of right wrist pain and swelling after falling onto her outstretched hand. She reports a dull ache in the same wrist for the past 3 months that was worse at night. She has no fev",
+   "text": "근골격·류마티스 근골격 — 넘어진 뒤 손목이 부러진 젊은 여성의 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 A 32 year old woman comes to the emergency department because of right wrist pain and swelling after falling onto her outstretched hand. She reports a dull ache in the same wrist for the past 3 months that was worse at night. She has no fever or weight loss. Examination shows swelling and tenderness over the distal radius. Serum calcium and alkaline phosphatase concentrations are within the reference ranges. A coronal CT scan of the right wrist is shown. Which of the following is the most likely diagnosis? A. Chondroblastoma B. Giant cell tumor of bone C. Aneurysmal bone cyst D. Unicameral bone cyst E. Osteosarcoma"
+  },
+  {
+   "id": "imaging-2026-0801",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 전신마취 수술 두 달 뒤의 쉰 목소리",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "endoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0801.md",
+   "snippet": "64세 여자가 2개월 전부터 목소리가 쉬어서 왔다. 2개월 전 전신마취로 수술을 받았고 기관삽관은 5시간 유지되었다. 숨이 차거나 음식을 삼키기 어렵지는 않다. 흡연하지 않으며 목에 만져지는 덩이는 없다. 가끔 가슴이 쓰리다고 한다. 굴곡형 후두내시경 사진은 그림과 같고 양쪽 성대는 정상적으로 움직인다. 가장 적절한 초기 치료는? A. 방사선치료 B. 기관절개술 C. 성대 주입술 D. 양성자펌프억제제 투여와 음성 휴식 E. 후",
+   "text": "외과 외과계 — 전신마취 수술 두 달 뒤의 쉰 목소리 opendata kmle_style endoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 64세 여자가 2개월 전부터 목소리가 쉬어서 왔다. 2개월 전 전신마취로 수술을 받았고 기관삽관은 5시간 유지되었다. 숨이 차거나 음식을 삼키기 어렵지는 않다. 흡연하지 않으며 목에 만져지는 덩이는 없다. 가끔 가슴이 쓰리다고 한다. 굴곡형 후두내시경 사진은 그림과 같고 양쪽 성대는 정상적으로 움직인다. 가장 적절한 초기 치료는? A. 방사선치료 B. 기관절개술 C. 성대 주입술 D. 양성자펌프억제제 투여와 음성 휴식 E. 후두미세수술로 즉시 절제"
+  },
+  {
+   "id": "imaging-2026-0800",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 과음 뒤 황달이 생긴 남성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0800.md",
+   "snippet": "A 45 year old man comes to the emergency department because of yellow eyes, fatigue, and abdominal swelling for 2 weeks. He has consumed about 10 cans of beer daily for 15 years, with his last drink 5 days ago. Temperature is 37.9°C (100.2°",
+   "text": "소화기 소화기 — 과음 뒤 황달이 생긴 남성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 A 45 year old man comes to the emergency department because of yellow eyes, fatigue, and abdominal swelling for 2 weeks. He has consumed about 10 cans of beer daily for 15 years, with his last drink 5 days ago. Temperature is 37.9°C (100.2°F), pulse is 102/min, and blood pressure is 118/70 mm Hg. He has jaundice, tender hepatomegaly, and mild ascites. Serum studies show total bilirubin 14.2 mg/dL, AST 210 U/L, ALT 82 U/L, and prothrombin time 9 seconds above control. The leukocyte count is 15,000/mm3. Diagnostic paracentesis shows 80 neutrophils/mm3, and blood and urine cultures are negative. There is no evidence of gastrointestinal bleeding. His Maddrey discriminant function is 58. In addition to abstinence and nutritional support, which of the following is the most appropriate pharmacotherapy? A. Prednisolone B. Pentoxifylline C. Ceftriaxone D. Lactulose E. Propranolol"
+  },
+  {
+   "id": "imaging-2026-0799",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 명치 불편감으로 온 고령 여성의 심전도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0799.md",
+   "snippet": "68세 여자가 2시간 전부터 명치가 더부룩하고 불편해서 응급실에 왔다. 매운 음식을 먹은 뒤 시작되었고 지금은 많이 나아졌다. 고혈압과 이상지질혈증이 있다. 혈압 138/82 mmHg, 맥박 70회/분, 호흡 16회/분이다. 고감도 트로포닌 I 는 3시간 간격으로 2회 모두 참고치 이내이다. 흉부 X선은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 오래된 하벽 심근경색 B. 좌후속지차단 ",
+   "text": "응급·중환자 응급 — 명치 불편감으로 온 고령 여성의 심전도 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 68세 여자가 2시간 전부터 명치가 더부룩하고 불편해서 응급실에 왔다. 매운 음식을 먹은 뒤 시작되었고 지금은 많이 나아졌다. 고혈압과 이상지질혈증이 있다. 혈압 138/82 mmHg, 맥박 70회/분, 호흡 16회/분이다. 고감도 트로포닌 I 는 3시간 간격으로 2회 모두 참고치 이내이다. 흉부 X선은 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 오래된 하벽 심근경색 B. 좌후속지차단 C. 완전좌각차단 D. 급성 하벽 ST분절상승 심근경색 E. 좌전속지차단"
+  },
+  {
+   "id": "imaging-2026-0798",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신성 당뇨병 임신부의 성장 초음파",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0798.md",
+   "snippet": "A pregnant woman with gestational diabetes mellitus comes for a fetal growth ultrasound. She reports that her glucose has been poorly controlled despite diet therapy. Her blood pressure is 118/74 mm Hg. The fetal head and femur measurements",
+   "text": "산부인과 산과 — 임신성 당뇨병 임신부의 성장 초음파 opendata usmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 A pregnant woman with gestational diabetes mellitus comes for a fetal growth ultrasound. She reports that her glucose has been poorly controlled despite diet therapy. Her blood pressure is 118/74 mm Hg. The fetal head and femur measurements are at the 50th percentile for gestational age. The biometric measurement obtained in the ultrasound plane shown is above the 97th percentile. This disproportion places the fetus at greatest risk for which of the following complications during vaginal delivery? A. Vasa previa rupture B. Shoulder dystocia C. Umbilical cord prolapse D. Placental abruption E. Breech presentation"
+  },
+  {
+   "id": "imaging-2026-0797",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 단백뇨와 대설증 노인의 콩고레드 염색",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0797.md",
+   "snippet": "68세 남자가 6개월 전부터 다리가 붓고 거품뇨가 있어 왔다. 혀가 커져 말하기 불편하고 눈 주위에 멍이 쉽게 든다고 한다. 혈압 102/64 mmHg 이다. 24시간 소변 단백은 6.2 g 이고 혈청 알부민은 2.4 g/dL 이다. 혈청 유리 경쇄 검사에서 람다 경쇄가 크게 증가해 있고 카파/람다 비가 낮다. 류마티스관절염이나 만성 감염의 병력은 없다. 신장 생검 조직은 콩고레드 염색에서 사구체에 무정형 물질이 침착되어 있고",
+   "text": "병리·조직학 병리 — 단백뇨와 대설증 노인의 콩고레드 염색 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202207Z_일일영상_2026-11-27_9units_9q_411e5ad4 68세 남자가 6개월 전부터 다리가 붓고 거품뇨가 있어 왔다. 혀가 커져 말하기 불편하고 눈 주위에 멍이 쉽게 든다고 한다. 혈압 102/64 mmHg 이다. 24시간 소변 단백은 6.2 g 이고 혈청 알부민은 2.4 g/dL 이다. 혈청 유리 경쇄 검사에서 람다 경쇄가 크게 증가해 있고 카파/람다 비가 낮다. 류마티스관절염이나 만성 감염의 병력은 없다. 신장 생검 조직은 콩고레드 염색에서 사구체에 무정형 물질이 침착되어 있고 편광현미경에서 사과녹색 복굴절을 보인다. 침착된 물질의 전구 단백으로 가장 가능성이 높은 것은? A. 베타2 마이크로글로불린 B. 아밀로이드 베타 C. 면역글로불린 경쇄 D. 혈청 아밀로이드 A E. 트랜스티레틴"
   },
   {
    "id": "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis",
