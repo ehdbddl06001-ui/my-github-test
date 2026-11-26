@@ -1,24 +1,24 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-25",
+ "generated": "2026-11-26",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4312,
+  "total": 4318,
   "byType": {
    "usmle": 288,
-   "concept": 241,
-   "paper": 987,
+   "paper": 988,
+   "concept": 246,
    "kmle": 1984,
    "imaging": 795,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 365,
-   "Nephrology": 276,
-   "Infectious Disease": 249,
+   "Cardiology": 367,
+   "Nephrology": 277,
+   "Infectious Disease": 250,
    "Pediatrics": 238,
    "Obstetrics & Gynecology": 180,
    "Rheumatology": 153,
@@ -27,15 +27,15 @@ window.MEDKOS_INDEX = {
    "Pathology": 149,
    "Orthopedics": 137,
    "Hematology-Oncology": 136,
+   "Endocrinology": 134,
    "순환기": 134,
-   "Endocrinology": 133,
    "General Surgery": 132,
    "Gastroenterology": 130,
    "Dermatology": 129,
    "Ophthalmology": 129,
    "Pulmonology": 129,
    "Surgery": 128,
-   "Hematology": 124,
+   "Hematology": 125,
    "Laboratory Medicine": 102,
    "산부인과": 96,
    "호흡기": 51,
@@ -81,7 +81,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3053,
-   "medium": 1255,
+   "medium": 1261,
    "low": 4
   },
   "tagCount": 5034
@@ -204,6 +204,23 @@ window.MEDKOS_INDEX = {
    "text": "Immunology Fever, a Spreading Red Rash, Watery Diarrhea and Falling Blood Counts Eleven Days After Two Units of Red Cells From His Son in a 66-Year-Old on Fludarabine transfusion graft-versus-host-disease t-cell immunology USMLE-style / MedKOS (Harrison's Principles of Internal Medicine, 22e. 118장 Transfusion Therapy and Biology) A 66 year old man with chronic lymphocytic leukemia comes to the emergency department because of fever, a rash, and diarrhea for 3 days. He completed his third cycle of fludarabine based chemotherapy 5 weeks ago. Eleven days ago, he received 2 units of red blood cells for symptomatic anemia; both units were donated by his son through directed donation and were not irradiated. Before the transfusion, his leukocyte count was 3,800/μL and his platelet count was 96,000/μL. The rash began on his palms and face and has spread to his trunk. He has had 6 to 8 watery stools daily. His vital signs are shown. There is a confluent erythematous maculopapular rash over the face, palms, soles, and trunk. The sclerae are icteric. The abdomen is soft with mild diffuse tenderness. A blood culture and a stool test for Clostridioides difficile toxin are pending. Laboratory results are shown. Which of the following best explains this patient's condition? A. Recipient IgG antibodies against a minor antigen on donor red cells B. Donor antibodies against HLA antigens on recipient neutrophils C. Cytokines released into the stored product by donor leukocytes D. Donor T lymphocytes responding to recipient HLA antigens E. Cytomegalovirus transmitted within donor leukocytes and reactivated 세포면역을 크게 떨어뜨리는 fludarabine 치료 중인 환자가 아들(HLA 반쪽 일치 혈연)의 비조사 적혈구를 받았다. 혈연 공여자의 HLA 하플로타입이 동형이면 수혜자는 공여 T 세포를 「남」으로 인식하지 못해 제거하지 못하고, 공여 T 세포는 수혜자 HLA 를 남으로 보고 공격한다 — 수혈 연관 이식편대숙주병(TA GVHD). 수혈 1–2주 뒤 발열 · 손바닥에서 시작하는 홍반성 발진 · 수양성 설사 · 직접빌리루빈 위주의 간염이 나오고, 조혈모세포이식 뒤 GVHD 와 달리 수혜자 골수 도 표적이라 범혈구감소(망상적혈구 0.2 %)가 생긴다. DAT 음성·haptoglobin 정상·직접빌리루빈 우세는 지연 용혈 수혈반응(A)의 가능성을 낮춘다. 예방은 세포 성분의 감마선(또는 X선) 조사다."
   },
   {
+   "id": "paper-2026-0988",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Canadian journal of physiology and pharmacology",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/papers/2026/2026-11-26_paper-2026-0988_tsg_01_in_the_treatment_of_chronic_heart_failure_in_patients.md",
+   "snippet": "Title TSG 01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial Authors Zhao Qifei, Wang Yongxia, Yu Shujun, Xiao Yue, He Jia, Xu Jinfang, Zhu Xiaodong, Wang Zhentao, e",
+   "text": "Cardiology scraped pubmed PubMed / Canadian journal of physiology and pharmacology Title TSG 01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial Authors Zhao Qifei, Wang Yongxia, Yu Shujun, Xiao Yue, He Jia, Xu Jinfang, Zhu Xiaodong, Wang Zhentao, et al. Journal / DOI Canadian journal of physiology and pharmacology · DOI: 10.1139/cjpp 2025 0374 · PMID: 43084835 https://pubmed.ncbi.nlm.nih.gov/43084835/ Abstract TSG 01, a novel agent dominated by secondary ginsenosides, may benefit chronic heart failure (CHF), yet its efficacy and safety in CHF patients with coronary artery disease (CAD) remain unclear. This phase IIa trial enrolled 85 CAD patients with NYHA III CHF (40 75 years), randomized to high dose TSG 01 (n=29), low dose TSG 01 (n=28), or placebo (n=28) for 12 weeks. Outcomes were evaluated in the intention to treat cohort (ITT, n=85) and an exploratory digoxin free cohort (n=59). No significant between group difference was found for the NYHA based efficacy endpoint. In the ITT cohort, only low dose TSG 01 significantly improved left ventricular ejection fraction (LVEF) versus placebo; in the digoxin free cohort, both doses yielded significant LVEF improvement. Diseases occurring the infectious and infective system, gastrointestinal system and the blood and lymphatic system are the common adverse events, with no significant difference between the 3 groups. Together, this study demonstrates that TSG 01 is well tolerated with similar adverse event profiles across groups, and confers potential cardiac benefits in digoxin free patients, warranting further confirmatory studies. Registration: Clinicaltrials.gov, no. NCT04515290. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
    "id": "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis",
    "type": "concept",
    "unit": "",
@@ -258,6 +275,76 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/pathology/cn.path.apl-pml-rara.differentiation-block-dic.md",
    "snippet": "정상 — 레티노산 수용체가 골수 세포의 분화를 이끈다 골수 전구세포는 골수모세포 → 전골수구 → 골수구 → 호중구로 성숙한다. 레티노산 수용체 α(RARA)는 레티노산과 결합해 이 성숙에 필요한 유전자 발현을 켜는 전사 인자다(전공 교과서 미대조). 고장 — 융합 단백에서 응고병증까지 15번 염색체의 PML 과 17번 염색체의 RARA 가 맞바뀌는 t(15;17)(q22;q12) 은 키메라 단백 Pml–Rarα 를 만든다 [[",
    "text": "Pathology 정상 — 레티노산 수용체가 골수 세포의 분화를 이끈다 골수 전구세포는 골수모세포 → 전골수구 → 골수구 → 호중구로 성숙한다. 레티노산 수용체 α(RARA)는 레티노산과 결합해 이 성숙에 필요한 유전자 발현을 켜는 전사 인자다(전공 교과서 미대조). 고장 — 융합 단백에서 응고병증까지 15번 염색체의 PML 과 17번 염색체의 RARA 가 맞바뀌는 t(15;17)(q22;q12) 은 키메라 단백 Pml–Rarα 를 만든다 [[harrison 22: 109장 p.827]]. 망가진 수용체는 정상 레티노산 신호로는 분화를 진행시키지 못해, 거친 일차 과립이 가득한 전골수구 단계의 세포가 쌓인다 [[harrison 22: 109장 p.829]] [[harrison 22: 109장 p.834]]. 이 과립 세포가 응고계를 켜 DIC 를 만든다 — 출혈이 앞서지만 드물게 혈전도 생긴다 [[harrison 22: 109장 p.828]]. 소견으로 — 출혈 · 낮은 섬유소원 · 아우어 소체 섬유소원이 소모되고 혈소판이 낮아 잇몸 출혈 · 멍부터 위장관 · 폐 · 두개내 출혈까지 생긴다 [[harrison 22: 109장 p.828]]. 아우어 소체는 골수성의 표지이고, 이 아형에서는 과립이 두드러진다 [[harrison 22: 109장 p.828]] [[harrison 22: 109장 p.829]]. 확진은 t(15;17) · PML RARA 다 [[harrison 22: 109장 p.826]]. 임상 판단으로 — 이 기전이 가르는 선택 세포를 죽이는 항암제만 쓰면 과립 성분이 쏟아져 DIC 로 죽는 일이 잦았다 [[harrison 22: 109장 p.834]] — 그래서 의심되면 확진 전이라도 분화를 유도하는 ATRA 를 먼저 쓴다(임상 정리본 cn.heme.apl.immediate atra ). 분화가 다시 진행하면 분화 증후군이 생길 수 있다 — 고위험(백혈구 10,000/μL)에서는 항암제로 세포를 함께 줄인다 [[harrison 22: 109장 p.834]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 109장 p.826~829 · 834)"
+  },
+  {
+   "id": "cn.neph.membranous-nephropathy.renal-vein-thrombosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/concepts/nephrology/cn.neph.membranous-nephropathy.renal-vein-thrombosis.md",
+   "snippet": "판단 — 왜 신정맥 혈전증인가 혈전 합병증은 모든 신증후군에 있지만 막성 신병증에서 신정맥 혈전 · 폐색전 · 심부정맥 혈전이 가장 잦다 [[harrison 22: 326장 p.2423]]. 신정맥 혈전증은 옆구리 통증 · 압통 · 혈뇨 · 빠른 신기능 저하 · 단백뇨로 오거나 증상이 없다 [[harrison 22: 329장 p.2447]]. 열 · 농뇨 · 아질산염이 없으면 신우신염, 색전원이 없으면 신장 경색, 산통 양상 ",
+   "text": "Nephrology 판단 — 왜 신정맥 혈전증인가 혈전 합병증은 모든 신증후군에 있지만 막성 신병증에서 신정맥 혈전 · 폐색전 · 심부정맥 혈전이 가장 잦다 [[harrison 22: 326장 p.2423]]. 신정맥 혈전증은 옆구리 통증 · 압통 · 혈뇨 · 빠른 신기능 저하 · 단백뇨로 오거나 증상이 없다 [[harrison 22: 329장 p.2447]]. 열 · 농뇨 · 아질산염이 없으면 신우신염, 색전원이 없으면 신장 경색, 산통 양상 · 결석 병력이 없으면 결석의 근거가 약하다. 기전 — 신증후군은 혈전 쪽으로 기운다 신정맥 혈전의 원인은 내피 손상 · 정맥 정체 · 과응고 세 갈래이고, 신증후군 — 특히 막성 신병증 — 은 과응고 쪽 원인이다 [[harrison 22: 329장 p.2447]]. 사구체로 단백이 새면서 응고 억제 단백도 함께 빠지고 간은 응고 인자를 더 만들며, 부종 치료(이뇨제)로 혈액이 진해진다. 신정맥이 막히면 콩팥이 붓고 피막이 늘어 옆구리가 아프고, 울혈된 사구체 · 세뇨관에서 혈뇨가 나며 신기능이 갑자기 떨어진다. 혈전이 떨어지면 폐색전이 된다. 가르는 소견 — 신증후군 환자의 옆구리 통증 영상은 도플러 초음파(일반 초음파보다 민감)로 거르고 CT 혈관조영(민감도 거의 100 %)으로 확인한다 [[harrison 22: 329장 p.2447]]. 왼쪽 신정맥이 더 잦다. 권고와 예외 치료는 항응고와 원인(막성 신병증) 치료다. 중증이면 혈관 내 혈전용해를, 항응고를 못 하면 신장 위 하대정맥 필터를 고려한다 [[harrison 22: 329장 p.2447]]. 저알부민혈증이 심한 일부 막성 신병증 환자에게 예방적 항응고를 권하기도 하지만 논란이 있다 [[harrison 22: 326장 p.2423]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 326장 p.2421~2423 · 329장 p.2447)"
+  },
+  {
+   "id": "cn.id.cryptococcal-meningitis.csf-antigen",
+   "type": "concept",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/concepts/infectious-disease/cn.id.cryptococcal-meningitis.csf-antigen.md",
+   "snippet": "판단 — 왜 뇌척수액 크립토코쿠스 항원인가 면역저하자의 두통 · 신경 증상에서는 크립토코쿠스를 감별에 넣고, 뇌척수액에 압력 · 단백 · 포도당 · 세포 · 그람 · 배양과 함께 항원을 낸다 [[harrison 22: 221장 p.1704]]. 뇌척수액 · 혈액 크립토코쿠스 항원은 피막 다당류를 재는 혈청학 검사로 민감도 · 특이도가 높고, 현장 검사는 몇 분 안에 나온다 [[harrison 22: 221장 p.1705]]. ",
+   "text": "Infectious Disease 판단 — 왜 뇌척수액 크립토코쿠스 항원인가 면역저하자의 두통 · 신경 증상에서는 크립토코쿠스를 감별에 넣고, 뇌척수액에 압력 · 단백 · 포도당 · 세포 · 그람 · 배양과 함께 항원을 낸다 [[harrison 22: 221장 p.1704]]. 뇌척수액 · 혈액 크립토코쿠스 항원은 피막 다당류를 재는 혈청학 검사로 민감도 · 특이도가 높고, 현장 검사는 몇 분 안에 나온다 [[harrison 22: 221장 p.1705]]. 인도 잉크 · 그람 염색은 균이 적으면 음성일 수 있어 음성이 배제가 되지 못한다 [[harrison 22: 221장 p.1705]]. 기전 — 피막이 염증을 누르고 압력을 올린다 크립토코쿠스는 흡입으로 들어와 폐에서 잠복하다가 세포성 면역이 무너지면(HIV 진행기 등) 퍼져 뇌수막에 이른다. 다당류 피막은 포식을 막고, 다량으로 조직에 풀려 국소 면역 반응을 눌러 염증이 약하다 — 그래서 뇌척수액 세포가 적고 수막 자극 징후가 약하며 경과가 몇 주에 걸친다 [[harrison 22: 221장 p.1704]]. 넘치는 뇌척수액으로 두개내압이 올라 두통 · 시야 흐림 · 뇌신경 마비가 생긴다. 이 피막 다당류가 진단 항원이다. 가르는 소견 — 뇌척수액 검사마다 맡은 일 뇌척수액은 대개 단핵구 증가와 단백 상승의 만성 수막염 양상이다 [[harrison 22: 221장 p.1705]]. 첫 인도 잉크 양성(균이 많음) · 높은 압력 · 낮은 포도당 · 세포 < 2/μL · 항원 ≥ 1:32 는 나쁜 예후 표지다 [[harrison 22: 221장 p.1706]]. 권고와 예외 유도 치료는 정맥 암포테리신 B(가능하면 지질 제형) + 경구 플루시토신 최소 2주, 이어 플루코나졸 공고 · 유지 [[harrison 22: 221장 p.1705]]. 높은 두개내압은 반복 치료 요추천자 · 션트로 낮춘다. 만니톨 · 아세타졸아마이드는 효과가 없고, 예방적 덱사메타손은 권하지 않는다 [[harrison 22: 221장 p.1706]]. 항레트로바이러스 치료는 항진균 치료 4~6주 뒤 시작한다(면역 재구성 염증 증후군) [[harrison 22: 221장 p.1706]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 221장 p.1704~1706)"
+  },
+  {
+   "id": "cn.heme.pnh.flow-cytometry-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/concepts/hematology-oncology/cn.heme.pnh.flow-cytometry-diagnosis.md",
+   "snippet": "판단 — 왜 말초혈액 유세포분석인가 PNH 확진은 적혈구의 상당 부분이 보체 방어 단백(CD59 · CD55)을 잃었음을 보이는 것이고, 오늘의 표준은 적혈구 · 과립구 유세포분석이다 [[harrison 22: 105장 p.804]]. 결손 세포가 두 무리로 갈라져 보이며, 대략 적혈구 5 % · 과립구 20 % 이상이어야 PNH 로 진단한다 [[harrison 22: 105장 p.804]]. 간질환 없이 간정맥 혈전(버드 키",
+   "text": "Hematology 판단 — 왜 말초혈액 유세포분석인가 PNH 확진은 적혈구의 상당 부분이 보체 방어 단백(CD59 · CD55)을 잃었음을 보이는 것이고, 오늘의 표준은 적혈구 · 과립구 유세포분석이다 [[harrison 22: 105장 p.804]]. 결손 세포가 두 무리로 갈라져 보이며, 대략 적혈구 5 % · 과립구 20 % 이상이어야 PNH 로 진단한다 [[harrison 22: 105장 p.804]]. 간질환 없이 간정맥 혈전(버드 키아리)이 생기면 PNH 를 의심한다 [[harrison 22: 105장 p.804]]. 기전 — GPI 가 없으면 보체 방패가 없다 PNH 는 조혈모세포의 X 연관 PIGA 유전자에 생긴 체세포 돌연변이로 GPI(glycosylphosphatidylinositol)를 만들지 못하는 후천성 클론 질환이다. GPI 로 막에 붙는 CD55(C3 조각이 붙는 것을 막음) · CD59(막공격복합체가 막에 꽂히는 것을 막음)가 빠진 적혈구는 대체 경로로 늘 생기는 보체에 녹아 만성 혈관 내 용혈을 일으키고, 감염으로 고전 경로가 켜지면 용혈이 악화된다 [[harrison 22: 105장 p.804]]. 정상 조혈이 면역 공격으로 줄어든 자리를 PNH 클론이 채우므로 범혈구감소(재생불량빈혈과의 연관)가 함께 온다. 혈전은 가장 위험한 합병증이지만 기전은 다 밝혀지지 않았다. 가르는 소견 — 항글로불린 음성 용혈의 원인 혈관 내 용혈의 표지: LDH 크게 상승(수천) · 합토글로빈 소실 · 혈색소뇨(하루에도 들쭉날쭉) · 헤모시데린뇨 [[harrison 22: 105장 p.804]]. 오래 혈색소뇨로 철을 잃으면 빈혈이 소구성으로 바뀔 수 있다. PNH 골수는 적혈구계 증식이 심하거나 저세포라 진단을 가려 주지 못한다. 권고와 예외 정맥 혈전이 있었던 PNH 환자는 항응고 예방을 이어 간다. 항 C5 항체(에쿨리주맙)는 혈관 내 용혈과 혈전 위험을 줄인다 [[harrison 22: 105장 p.805]]. 항 C5 치료 중에는 C3 조각이 붙은 적혈구가 비장에서 깨져 항글로불린 검사가 양성으로 바뀔 수 있다 [[harrison 22: 105장 p.806]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 105장 p.793~806)"
+  },
+  {
+   "id": "cn.endo.pheochromocytoma.biochemical-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/concepts/endocrinology/cn.endo.pheochromocytoma.biochemical-diagnosis.md",
+   "snippet": "판단 — 왜 혈장 유리 메타네프린이 먼저인가 진단은 카테콜아민 과잉의 생화학 증명과 영상 위치 확인이고, 메타네프린 측정이 전통적으로 첫 단계다 [[harrison 22: 399장 p.3074]]. 혈장 메타네프린은 가장 민감하고 채혈 같은 스트레스에 의한 거짓 양성이 적다 [[harrison 22: 399장 p.3074]]. 영상을 먼저 하면 흔한 부신 우연종을 만나 판단이 거꾸로 간다 — 우연종의 약 5 %만 갈색세포종이다",
+   "text": "Endocrinology 판단 — 왜 혈장 유리 메타네프린이 먼저인가 진단은 카테콜아민 과잉의 생화학 증명과 영상 위치 확인이고, 메타네프린 측정이 전통적으로 첫 단계다 [[harrison 22: 399장 p.3074]]. 혈장 메타네프린은 가장 민감하고 채혈 같은 스트레스에 의한 거짓 양성이 적다 [[harrison 22: 399장 p.3074]]. 영상을 먼저 하면 흔한 부신 우연종을 만나 판단이 거꾸로 간다 — 우연종의 약 5 %만 갈색세포종이다 [[harrison 22: 399장 p.3074]]. 기전 — 들쭉날쭉한 분비, 꾸준한 대사물 갈색세포종은 교감신경계 크롬친화세포에서 생긴 종양으로 노르에피네프린 · 에피네프린 · 도파민을 만들어 저장한다. 분비가 발작마다 달라 카테콜아민 자체는 잴 때마다 크게 흔들리지만, 종양 세포 안에서 O 메틸화된 대사물인 메타네프린은 분비와 무관하게 꾸준히 새어 나온다 — 그래서 메타네프린이 선별 검사다 [[harrison 22: 399장 p.3074]]. 발작 때 카테콜아민이 몰려 두통 · 발한 · 두근거림 · 창백이 오고 1시간 안쪽으로 지나간다. 고전적 삼증후는 환자의 약 1/3 에서 보인다. 가르는 소견 — 검사마다 맡은 일 상한의 3배 이상이면 측정법과 무관하게 진단 가능성이 높다 [[harrison 22: 399장 p.3074]]. 경계 상승은 대개 거짓 양성이다 — 약 · 식이 원인을 빼고 다시 잰다. 생화학으로 확인한 뒤 조영증강 CT · MRI 로 위치를 찾고, 부신 밖 · 다발이면 기능 영상을 더한다. 권고와 예외 수술 전 혈압을 160/90 mmHg 미만으로 맞추고 알파 차단제와 넉넉한 염분 · 수분으로 기립 저혈압을 막는다. 베타 차단제를 첫 약으로 쓰지 않는다 [[harrison 22: 399장 p.3075]]. 환자의 25~33 %가 유전 증후군이라 생식세포 유전자 패널 검사를 권한다 [[harrison 22: 399장 p.3078]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 399장 p.3074~3078)"
+  },
+  {
+   "id": "cn.cardio.rv-infarction.avoid-preload-reduction",
+   "type": "concept",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-26",
+   "path": "content/concepts/cardiology/cn.cardio.rv-infarction.avoid-preload-reduction.md",
+   "snippet": "판단 — 왜 니트로글리세린을 피하는가 수축기 혈압 < 90 mmHg 이거나 우심실 경색이 의심되면(하벽 경색 · 목정맥 압력 상승 · 맑은 폐 · 저혈압) 질산염을 피한다 [[harrison 22: 286장 p.2118]]. 우심실 경색의 치료는 우심실 전부하를 지키는 수액이다 — 목정맥 확장은 수액을 막을 이유가 아니다 [[harrison 22: 286장 p.2123]]. 아스피린 · P2Y12 억제제 · 미분획 헤파린 · ",
+   "text": "Cardiology 판단 — 왜 니트로글리세린을 피하는가 수축기 혈압 < 90 mmHg 이거나 우심실 경색이 의심되면(하벽 경색 · 목정맥 압력 상승 · 맑은 폐 · 저혈압) 질산염을 피한다 [[harrison 22: 286장 p.2118]]. 우심실 경색의 치료는 우심실 전부하를 지키는 수액이다 — 목정맥 확장은 수액을 막을 이유가 아니다 [[harrison 22: 286장 p.2123]]. 아스피린 · P2Y12 억제제 · 미분획 헤파린 · 일차 중재술은 혈압과 무관하게 그대로 한다 [[harrison 22: 286장 p.2121]]. 기전 — 다친 우심실은 전부하에 기댄다 우관상동맥 근위부가 막히면 하벽과 함께 우심실이 다친다. 하벽 경색의 약 1/3 에 우심실 괴사가 있다 [[harrison 22: 286장 p.2123]]. 수축이 약해진 우심실은 정맥으로 돌아온 피만큼만 폐로 보낼 수 있어 오른쪽에는 피가 고이고(목정맥 확장 · 쿠스마울 징후 · 간 비대), 왼쪽은 덜 차서 심박출과 혈압이 떨어지며 폐는 맑다. 질산염 · 이뇨제 · 모르핀처럼 정맥을 넓히거나 혈액량을 줄이는 약은 이 전부하를 더 빼앗아 혈압을 무너뜨린다. 가르는 소견 — 하벽 경색 저혈압의 원인 오른쪽 가슴 유도, 특히 V4R 의 ST 상승은 첫 24시간에 흔하다 — 하벽 경색이면 V4R 을 찍는다 [[harrison 22: 286장 p.2123]]. 폐 수포음 · 흉부 X선 폐울혈이 있으면 좌심부전 쪽이고, 그때는 수액을 조심한다. 하벽 경색 초기의 서맥 · 저혈압은 부교감 항진일 수 있다 [[harrison 22: 286장 p.2115]]. 권고와 예외 24시간 안에 PDE 5 억제제를 먹은 환자에게는 질산염을 주지 않는다 [[harrison 22: 286장 p.2118]]. 우심실 경색에 완전 방실차단이 오면 심방 수축의 몫을 잃어 심실 조율에 잘 반응하지 않는다 [[harrison 22: 286장 p.2125]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 286장 p.2115~2125)"
   },
   {
    "id": "paper-2026-0987",

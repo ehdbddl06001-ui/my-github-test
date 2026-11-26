@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-25",
+ "generated": "2026-11-26",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -179,6 +179,11 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    },
    {
+    "id": "paper-2026-0988",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0955",
     "how": "t",
     "term": "heart failure"
@@ -200,11 +205,6 @@ window.MEDKOS_RELATED = {
    },
    {
     "id": "paper-2026-0910",
-    "how": "t",
-    "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0889",
     "how": "t",
     "term": "heart failure"
    }
@@ -221,6 +221,11 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    },
    {
+    "id": "paper-2026-0988",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0955",
     "how": "t",
     "term": "heart failure"
@@ -242,11 +247,6 @@ window.MEDKOS_RELATED = {
    },
    {
     "id": "paper-2026-0910",
-    "how": "t",
-    "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0889",
     "how": "t",
     "term": "heart failure"
    }
@@ -387,6 +387,13 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0942",
     "how": "t",
     "term": "hypoglycemia"
+   }
+  ],
+  "cn.endo.pheochromocytoma.biochemical-diagnosis": [
+   {
+    "id": "paper-2026-0400",
+    "how": "t",
+    "term": "pheochromocytoma"
    }
   ],
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": [
@@ -596,6 +603,13 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0738",
     "how": "t",
     "term": "femoral neck fracture"
+   }
+  ],
+  "cn.pharm.digoxin.na-k-atpase-inhibition": [
+   {
+    "id": "paper-2026-0988",
+    "how": "a",
+    "term": "digoxin"
    }
   ],
   "cn.physio.hypoxemia.shunt-oxygen-unresponsive": [
@@ -1320,6 +1334,7 @@ window.MEDKOS_RELATED = {
    "j": "The Journal of clinical endocrinology and metabolism",
    "d": "2014-06",
    "c": [
+    "cn.endo.pheochromocytoma.biochemical-diagnosis",
     "cn.endo.pheochromocytoma.preoperative-alpha-blockade"
    ]
   },
@@ -1800,8 +1815,6 @@ window.MEDKOS_RELATED = {
    "j": "The Analyst",
    "d": "2026-11-03",
    "c": [
-    "cn.cardio.heart-failure.hfref-gdmt-selection",
-    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
     "cn.cardio.cvd-epidemiology.transition-risk-burden"
    ]
   },
@@ -1982,6 +1995,16 @@ window.MEDKOS_RELATED = {
    "c": [
     "cn.cardio.cvd-epidemiology.transition-risk-burden"
    ]
+  },
+  "paper-2026-0988": {
+   "t": "TSG-01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial",
+   "j": "Canadian journal of physiology and pharmacology",
+   "d": "2026-11-25",
+   "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
+    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
+    "cn.pharm.digoxin.na-k-atpase-inhibition"
+   ]
   }
  },
  "titles": {
@@ -2003,6 +2026,7 @@ window.MEDKOS_RELATED = {
   "cn.em.sepsis.initial-resuscitation-bundle": "패혈 쇼크 — 첫 한 시간: 배양·항생제·수액·승압제",
   "cn.em.shock.type-differentiation-first-step": "쇼크 — 사지 온도·목정맥·폐음으로 유형 가르기",
   "cn.endo.hypoglycemia.c-peptide-differential": "고인슐린 저혈당 — C 펩티드가 내인성과 외인성을 가른다",
+  "cn.endo.pheochromocytoma.biochemical-diagnosis": "갈색세포종 — 영상보다 메타네프린이 먼저",
   "cn.endo.pheochromocytoma.preoperative-alpha-blockade": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
   "cn.endo.thyroid-nodule.low-tsh-scan-first": "갑상선 결절 — TSH 가 낮으면 스캔이 먼저",
   "cn.ent.adult-neck-mass.malignancy-workup": "성인 목덩이 — 악성 위험이면 영상·세침흡인 먼저",
@@ -2020,6 +2044,7 @@ window.MEDKOS_RELATED = {
   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
   "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+  "cn.pharm.digoxin.na-k-atpase-inhibition": "디곡신 — Na⁺/K⁺-ATPase 를 막아 수축·전도·칼륨이 바뀐다",
   "cn.physio.hypoxemia.shunt-oxygen-unresponsive": "저산소혈증 기전 — 산소에 안 오르면 션트",
   "cn.physio.insulin-secretion.c-peptide-cosecretion": "인슐린 분비 — 프로인슐린이 잘려 C 펩티드와 함께 나온다",
   "cn.physio.ventricular-activation.bundle-branch-block": "심실 탈분극 순서 — 늦게 깨는 쪽으로 QRS 끝이 향한다",

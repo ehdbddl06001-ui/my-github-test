@@ -8313,6 +8313,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.neph.membranous-nephropathy.renal-vein-thrombosis",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "갑작스러운 옆구리 통증과 혈뇨는 요로 결석의 전형이라 생각한다.",
@@ -8326,6 +8327,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "신장 경색은 대개 심방세동 등 색전원에서 동맥이 막혀 생긴다. 이 환자는 동리듬이고, 신증후군은 정맥 쪽 혈전을 만든다.",
     "discriminator": "색전원(심방세동)의 유무와 신증후군.",
     "when_right": "심방세동이 있는 환자에게 생겼을 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "한쪽 옆구리 통증과 늑골척추각 압통, 소변 이상은 콩팥 감염의 전형적 소견으로 보인다.",
+    "answer_first": "신우신염이면 열 · 오한과 농뇨 · 아질산염 양성이 있어야 하는데 이 환자는 열이 없고 소변 백혈구 2~4 · 아질산염 음성이다. 심한 저알부민혈증의 막성 신병증 환자에게 갑자기 생긴 육안 혈뇨 · 크레아티닌 상승은 신정맥 혈전증을 가리킨다.",
+    "discriminator": "열 · 농뇨 · 아질산염의 유무와 바탕의 신증후군(막성 · 알부민 < 2 g/dL).",
+    "when_right": "고열 · 오한에 농뇨 · 백혈구 원주 · 아질산염 양성이면 급성 신우신염이다.",
     "split": ""
    }
   },
@@ -8643,12 +8651,20 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.id.cryptococcal-meningitis.csf-antigen",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "림프구 우세·포도당 저하·아급성 경과는 결핵 수막염의 전형이라 생각한다.",
     "answer_first": "결핵 수막염도 감별해야 하지만, 개방압이 매우 높은데 세포·단백 변화가 약한 양상과 CD4 < 100은 크립토코쿠스를 먼저 가리킨다. 크립토코쿠스 항원은 빠르고 민감도가 95 % 이상이다.",
     "discriminator": "개방압 대비 염증 정도와 CD4 수치.",
     "when_right": "뇌척수액 단백이 크게 오르고 기저부 수막 조영증강·뇌신경 마비가 있으며 크립토코쿠스 항원이 음성일 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "열과 두통 · 목 뻣뻣함이 있는 면역저하자의 뇌척수액에서 림프구가 우세하면 바이러스성 원인, 특히 치료가 급한 단순포진을 먼저 떠올리게 된다.",
+    "answer_first": "단순포진 바이러스 뇌염은 급성 열과 의식 · 행동 변화 · 국소 징후가 앞선다. 이 환자는 3주의 아급성 경과에 의식이 명료하고 국소 징후가 없으며, CD4 42 와 매우 높은 개방압에 비해 적은 세포가 크립토코쿠스 수막염을 가리킨다 — 뇌척수액 크립토코쿠스 항원이 먼저다.",
+    "discriminator": "경과(며칠 vs 몇 주), 의식 · 국소 징후, CD4 수치와 개방압 대비 세포 수.",
+    "when_right": "며칠 사이의 급성 열 · 의식 변화 · 경련에 측두엽 영상 이상이 있으면 뇌척수액 HSV PCR 을 낸다.",
     "split": ""
    }
   },
@@ -9016,6 +9032,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.heme.pnh.flow-cytometry-diagnosis",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "백혈구·혈소판까지 줄어든 범혈구감소면 골수 검사부터 생각한다.",
@@ -9029,6 +9046,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "유전 구상적혈구증은 비장에서 일어나는 혈관 외 용혈이라 헤모시데린뇨·혈색소뇨가 드물고, 도말에 구상적혈구가 보이며 범혈구감소·혈전이 없다.",
     "discriminator": "혈관 내 용혈과 혈전, 도말의 구상적혈구.",
     "when_right": "",
+    "split": ""
+   },
+   "D": {
+    "tempting": "G6PD 결핍도 항글로불린 음성의 혈관 내 용혈(콜라색 소변 · 합토글로빈 소실)을 일으키는 흔한 효소 질환이다.",
+    "answer_first": "G6PD 결핍의 용혈은 잠두 · 감염 · 약 같은 산화 유발 요인 뒤의 급성 발작이고 백혈구 · 혈소판 감소나 간정맥 혈전을 만들지 않는다. 3개월 지속된 아침 혈색소뇨 · 범혈구감소 · 간정맥 혈전이 함께 있으면 GPI 고정 단백 결손(PNH)을 유세포분석으로 확인한다.",
+    "discriminator": "범혈구감소와 특이 부위 정맥 혈전의 유무, 산화 유발 요인의 유무.",
+    "when_right": "잠두 · 산화 약물 · 감염 뒤 갑자기 생긴 용혈에 도말의 물린 세포가 있고 다른 혈구 · 혈전 이상이 없으면 회복 뒤 G6PD 활성을 잰다.",
     "split": ""
    }
   },
@@ -10536,12 +10560,20 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.cardio.rv-infarction.avoid-preload-reduction",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "목정맥이 확장되어 있으니 수액이 넘친 상태로 보고 수액을 피하고 싶다.",
     "answer_first": "우심실 경색에서는 우심실이 좌심으로 혈액을 밀어 주지 못해 목정맥은 늘고 폐는 맑다. 좌심 충만을 유지하려면 수액이 필요하다 — 피할 것은 전부하를 떨어뜨리는 질산염이다.",
     "discriminator": "폐 수포음·흉부 X선 폐울혈의 유무.",
     "when_right": "폐울혈이 뚜렷한 좌심부전(심인성 쇼크 포함)일 때는 수액을 피한다.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "저혈압 · 서맥이 있는 환자라 혈압에 영향을 줄 약을 모두 피해야 할 것처럼 보이고, 심도자실 준비 중이라 약을 미루고 싶다.",
+    "answer_first": "클로피도그렐은 혈소판 P2Y12 수용체만 막아 혈압 · 전부하를 바꾸지 않고, 아스피린에 더하면 ST 분절 상승 심근경색의 사망 · 재경색을 줄인다. 전부하를 떨어뜨리는 니트로글리세린이 먼저 피할 약이다.",
+    "discriminator": "약이 정맥을 넓혀 전부하를 줄이는가(질산염) 아니면 혈소판에만 작용하는가(P2Y12 억제제).",
+    "when_right": "활동성 출혈이 있거나 응급 관상동맥 우회술이 곧 예정된 경우에는 P2Y12 억제제 부하를 미룬다.",
     "split": ""
    }
   },
