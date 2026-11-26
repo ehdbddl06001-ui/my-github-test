@@ -583,3 +583,22 @@
 - 신경과 판 9 (9쪽, 판형 13): 내용 갱신: 급성 전정 증후군 — 정상 머리 충동 검사는 중추다 (정리본 vNone → v1); 내용 갱신: 거미막밑 출혈 — CT 가 정상이면 요추 천자 (정리본 vNone → v1)
 - 해부·조직·발생 판 1 (2쪽, 판형 13): 내용 변경 없음
 - 약리학 판 1 (3쪽, 판형 13): 내용 변경 없음
+
+## 2026-11-26T12:47:29+09:00
+
+- 정형외과 판 24 (28쪽, 판형 13): 새 단원: Three Months of Night-time Pain and Swelling above the Knee in a Fifteen-year-old Boy
+- 순환기내과 1권 판 3 (76쪽, 판형 13): 내용 수정: 심방조동 — 안정하면 심박수 조절이 먼저다; 새 단원: 심방세동 + 박출률 감소 — diltiazem(딜티아젬)·verapamil(베라파밀)은 금기; 내용 수정: 심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제); 빠진 단원(다른 권으로 이동 등): 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때
+- 순환기내과 2권 판 3 (10쪽, 판형 13): 새 단원: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때; 새 단원: Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties
+- 내분비내과 판 14 (17쪽, 판형 13): 새 단원: 갑상선 결절 — TSH 가 낮으면 스캔이 먼저; 새 단원: Six Months of Pounding Headaches, Palpitations and Sweating Spells in a Woman in Her Late Thirties
+- 외과 판 13 (8쪽, 판형 13): 내용 수정: 유두갑상선암 — 림프절 전이 구역이 수술 범위를 정한다
+- 산부인과 판 23 (55쪽, 판형 13): 새 단원: 중증 전자간증 — 34주 이후면 마그네슘 주고 분만
+- 소아청소년과 판 19 (21쪽, 판형 13): 새 단원: 메켈 게실 — 통증 없는 다량 혈변이면 과테크네튬산염 스캔
+- 혈액종양내과 판 12 (14쪽, 판형 13): 새 단원: 철결핍빈혈 — 경구 불내성·수술 임박이면 정맥 철분; 내용 갱신: 급성 전골수구 백혈병 — 의심되면 확진 전 ATRA (정리본 v1 → v2); 새 단원: Dark Morning Urine, Low Blood Counts and a Newly Found Liver Vein Clot in a Man in His Early Thirties
+- 호흡기내과 판 18 (12쪽, 판형 13): 새 단원: 과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다
+- 감염내과 판 17 (14쪽, 판형 13): 내용 수정: 파종 노카르디아증 — 가지 친 그람 양성 균은 부분 항산성; 새 단원: Three Weeks of Worsening Headache and Low Fever in an Untreated Man with a Low CD4 Count
+- 신장내과 판 16 (38쪽, 판형 13): 내용 갱신: 원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다 (정리본 v2 → v3); 새 단원: Sudden Left Flank Pain and Blood in the Urine Two Months after a Diagnosis of Heavy Protein Leak in a Man in His Fifties
+- 생리학 판 3 (6쪽, 판형 13): 새 단원: 전정안반사 — 한쪽이 꺼지면 머리 충동에 눈이 따라간다
+- 신경과 판 10 (9쪽, 판형 13): 내용 수정: 급성 전정 증후군 — 정상 머리 충동 검사는 중추다; 새 단원: A Generalized Convulsion That Continues after Two Doses of an Intravenous Sedative in a Man with Epilepsy
+- 미생물학 판 2 (2쪽, 판형 13): 새 단원: 미콜산 세포벽 — 사슬 길이가 항산성의 세기를 정한다; 빠진 단원(다른 권으로 이동 등): Three Weeks of Fever and Cough, a Cavitating Lung Nodule and Two Ring-Enhancing Brain Lesions in a 54-Year-Old Woman Eight Months After a Kidney Transplant
+- 병리학 판 1 (2쪽, 판형 13): 내용 변경 없음
+- 약리학 판 2 (4쪽, 판형 13): 새 단원: verapamil(베라파밀) · diltiazem(딜티아젬) — 방실결절과 수축을 함께 늦춘다
