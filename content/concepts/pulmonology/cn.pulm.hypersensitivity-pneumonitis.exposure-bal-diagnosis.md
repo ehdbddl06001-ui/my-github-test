@@ -5,7 +5,7 @@ topic: Pulmonology
 see_also: [Immunology, Occupational Medicine]
 date: 2026-11-26
 updated: 2026-11-26
-version: 1
+version: 2
 outline: h288            # 기본틀 슬롯 — 해리슨 21판 288장(22판 299장) Hypersensitivity Pneumonitis and Pulmonary Infiltrates with Eosinophilia
 confidence: medium
 review_status: unreviewed
@@ -111,13 +111,27 @@ variants:
     answer: "C"
     explanation: "환자 · 새 · 제시 순서가 달라도 새 항원의 지속 노출과 노출을 벗어나면 좋아지는 증상, 상 · 중엽 간유리 · 소엽 중심 결절 · 공기 걸림, 세척액 림프구 증가라는 단서는 같다 — 과민성 폐렴이다. 벌집 · 하엽 우세가 없어 특발성 폐섬유증이 아니고, 폐문 림프절 비대가 없어 사르코이드증, 말초 · 세척액 호산구가 정상이라 호산구성 폐렴이 아니다. 수개월 진행과 노출에 따른 변화는 급성 감염(앵무병)의 모습이 아니다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 과민성 폐렴의 소엽 중심 결절 · 간유리 음영(CT)
-  query: '"hypersensitivity pneumonitis" AND "centrilobular" AND "air trapping" AND "case report"'
-  caption_terms:
-  - centrilobular
-  modality: CT
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13225593_figure1-400-0-777-322.jpg
+  kind: ct
+  at: 가르는 소견 — 노출 · 분포 · 세척액
+  shows: 비섬유성 과민성 폐렴의 고해상도 CT — 양쪽 폐에 흐린 소엽 중심 결절 · 간유리 음영 · 공기 걸림
+  look_for:
+  - '검은 화살표: 경계가 흐린 소엽 중심 결절'
+  - '흰 화살표: 혈관 · 기관지 벽이 비쳐 보이는 간유리 음영'
+  - '별표: 공기 걸림으로 어두운 소엽'
+  label: '「Patient 1 - High-resolution computed tomography (HRCT) scans, coronal and axial planes. (A, B) baseline scans, (C, D) follow-up scanes. (A, B) Bilateral diffuse ill-defined centrilobular nodules (black arrows), an increase in lung density with visibility of vessels and bronchial walls - ground glass opacities (white arrows) and air trapping indicating nonfibrous HP (asterisks); (C, D) nearly complete regression of ground glass opacities.」 — Acute respiratory failure as a rare presentation of non-fibrotic hypersensitivity pneumonitis: Case series'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Acute respiratory failure as a rare presentation of non-fibrotic hypersensitivity pneumonitis: Case series. Medicine'
+  doi: 10.1097/MD.0000000000049011
+  credit: 'Acute respiratory failure as a rare presentation of non-fibrotic hypersensitivity pneumonitis: Case series. Medicine (Baltimore). 2026 May 29;105(22):e49011. doi: 10.1097/MD.0000000000049011 (CC BY) — Figure 1.'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13225593/
+  asset: PMC-PMC13225593_Figure1
+  privacy_check: 패널 B(축면 CT)만 잘랐다 — 얼굴 · 문신 · 이름 · 병원 표지 · 날짜 글자 없음
+  crop: 400,0,777,322
 ---
 
 ## 판단 — 왜 과민성 폐렴인가

@@ -5,8 +5,8 @@ topic: Infectious Disease
 see_also: [Microbiology, Nephrology]
 discipline: microbiology
 date: 2026-11-24
-updated: 2026-11-25
-version: 1
+updated: 2026-11-26
+version: 2
 outline: h174            # 해리슨 21판 174장 Nocardiosis → 22판 179장
 roots: [cn.micro.mycolic-acid-cell-wall.acid-fastness]
 confidence: medium
@@ -110,18 +110,28 @@ sources:
     checked_at: 2026-11-24
     checked: "본문 대조(드라이브 장별 문서 H22_179) — p.1358 그람 양성·약한 항산성·카탈라아제 양성, 미콜산(탄소 45–65)·트레할로스, 호기성 토양 부생균, 위험인자(장기이식·스테로이드·면역억제제·HIV, 이식 환자의 거부반응 증강·칼시뉴린 억제제 농도), 흡입 뒤 발병 · p.1359 폐 노카르디아증은 아급성, 결절 공동화, 폐렴의 1/3 까지 파종, 중추신경이 파종의 2/3, 다엽 고리 조영 뇌농양 · p.1360 피하 농양, 방선균종의 흰 알갱이, 진단은 폭 1 μm·길이 50 μm 까지의 가지 친 염주 모양 그람 양성 실, 약산 탈색(modified Kinyoun 등)에서 항산성, 은 염색에 물듦, 배양 최대 2주·검사실에 알림, 결핵균 오염 제거 처리 금지 · p.1361 폐 외 노카르디아증은 증상과 무관하게 조영 뇌 MRI · p.1362 트리메토프림-설파메톡사졸이 1차, 중증 경험 치료 2–3제(뇌 침범이면 메로페넴), 면역억제·뇌 침범 12개월, 일차 예방은 권하지 않음을 확인했다. 방선균·아스페르길루스·크립토코쿠스 서술은 이 장에 없다(다른 장 미대조)"
     verified: text
-figures_wanted:
-- source: PMC_OA
-  shows: 노카르디아의 염색 — 가늘게 가지 치는 그람 양성 실과 약산 탈색 항산 염색
-  at: 기전 — 미콜산이 염색을 정한다
-  query: '"nocardia" AND ("modified acid-fast" OR "Kinyoun") AND "Gram stain"'
-  caption_terms:
-  - Nocardia
-  - acid-fast
-  modality: HISTOLOGY_HE
 figures_rejected:
 - asset: PMC-PMC13437361_Figure2
   reason: 네 패널 합본(759×472)이라 그람 염색 한 패널이 340×220 픽셀로 인쇄 기준 미달 · 약산 항산 염색 패널(B)은 붉은 실이 이 해상도에서 뚜렷하지 않다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12889198_figure2.jpg
+  kind: histology
+  at: 기전 — 미콜산이 염색을 정한다
+  shows: 노카르디아 — 변형 항산(킨연) 염색에서 가늘게 가지 치는 실 모양의 부분 항산성 균
+  look_for:
+  - '화살표: 가늘고 가지 치는 실 모양 균사체'
+  - 왼쪽의 진하게 물든 균 덩이에서 뻗어 나온 실
+  label: '「Modified Ziehl-Neelsen (Kinyoun) stain of the left-ear swabThin, branching, filamentous, partially acid-fast organisms (black arrows) consistent with Nocardia species, viewed under oil immersion at ×1000 magnification.」 — Nocardia Otomastoiditis in a Chemotherapy-Induced Neutropenic Patient With Diffuse Large B-cell Lymphoma: Successful Medical Management'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Nocardia Otomastoiditis in a Chemotherapy-Induced Neutropenic Patient With Diffuse Large B-cell Lymphoma: Successful Medical Management. Cureus'
+  doi: 10.7759/cureus.101265
+  credit: 'Nocardia Otomastoiditis in a Chemotherapy-Induced Neutropenic Patient With Diffuse Large B-cell Lymphoma: Successful Medical Management. Cureus. 2026 Jan 10;18(1):e101265. doi: 10.7759/cureus.101265 (CC BY) — Figure 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12889198/
+  asset: PMC-PMC12889198_Figure2
+  privacy_check: 귀 면봉 도말의 현미경 사진 — 얼굴 · 문신 · 이름 · 병원 표지 없음
 ---
 
 ## 판단 — 왜 부분 항산성인가

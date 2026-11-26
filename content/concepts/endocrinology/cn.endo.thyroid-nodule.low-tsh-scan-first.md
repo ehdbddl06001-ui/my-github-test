@@ -3,7 +3,8 @@ id: cn.endo.thyroid-nodule.low-tsh-scan-first
 type: concept
 topic: Endocrinology
 date: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-26
+roots: [cn.physio.thyroid-hormone-synthesis.tsh-follicle]
 version: 1
 outline: h385            # 해리슨 21판 385장 Thyroid Nodular Disease and Thyroid Cancer → 22판 397장
 confidence: medium

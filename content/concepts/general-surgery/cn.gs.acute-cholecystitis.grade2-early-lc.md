@@ -4,7 +4,8 @@ type: concept
 topic: General Surgery
 see_also: [Gastroenterology]
 date: 2026-09-23
-updated: 2026-10-04
+updated: 2026-11-26
+roots_none: "도쿄 가이드라인 등급과 수술 위험으로 처치 시점 · 방법을 고르는 판단이다 — 담낭관 폐쇄 · 염증의 기전으로 내려가도 등급 · 시간 창 기준을 바꾸지 않는다"
 version: 4
 outline: surg.hepatobiliary   # 기본틀 슬롯(content/outline/subjects.yaml) — 외과 책 「간·담도·췌장 외과」(손 슬롯, 해리슨 대조 대상 아님)
 confidence: medium

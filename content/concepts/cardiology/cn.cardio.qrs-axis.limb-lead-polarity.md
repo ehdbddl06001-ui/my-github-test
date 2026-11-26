@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [Pulmonology, Pediatrics]
 date: 2026-09-23
-updated: 2026-09-29
-version: 3
+updated: 2026-11-26
+version: 4
 outline: h240            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 240장 Electrocardiography
 confidence: medium
 review_status: unreviewed
@@ -41,6 +41,15 @@ criteria:
     basis: current
     exams: [usmle]
 sources:
+  - id: harrison-22
+    org: "McGraw Hill"
+    title: "Harrison's Principles of Internal Medicine, 22nd ed."
+    kind: textbook
+    year: 2025
+    citation: "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 247장 Electrocardiography(Goldberger AL) p.1868–1876"
+    checked_at: 2026-11-26
+    checked: "본문 대조(드라이브 문서 H22_247) — p.1870 우축편위 원인(정상 변이 · 전극 뒤바뀜 · 우심실 부하 · 측벽경색 · 우흉심 · 좌측 기흉 · 좌각후섬유속차단); p.1871 완전 각차단은 가장 넓은 QRS ≥ 120 ms · 불완전은 약 110~120 ms, 우각차단은 끝 벡터가 오른쪽 앞(V1 rSR′ · V6 qRS); p.1872 섬유속차단은 QRS 폭을 크게 늘리지 않고 축만 옮김, 좌각후섬유속차단(+110~120° 초과)은 단독으로 극히 드물어 다른 원인 배제 필요"
+    verified: text
   - id: harrison-21
     org: "McGraw Hill"
     title: "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 240: Electrocardiography"
@@ -93,6 +102,10 @@ pitfalls:
     point: "마른 젊은 성인은 축이 +90° 가까이 서는 일이 흔하지만, 축 판정은 체형이 아니라 유도 I 의 QRS 순면적이 정한다. 유도 I 이 rS(작은 r, 깊은 S)로 순면적이 음성이면 벡터가 +90° 를 넘어 오른쪽으로 간 것이다 — 그 뒤에 「이 우축편위가 정상 변이인가」를 따진다 [[harrison-21: 240장 p.1826]]. 순서가 거꾸로면(체형 → 정상) 우심실 부하·섬유속차단을 놓친다."
     exception: "유도 I 이 거의 등전위라면 축은 약 +90° 로 경계선이다 — 보기에 적힌 범위(+90° 또는 +100°)를 확인한다."
     covers: ["imaging-2026-0011:B"]
+  - contrast: "우각차단 vs 좌각후섬유속차단 — 우축편위면 우각차단?"
+    point: "각차단은 전도가 늦어져 QRS 를 넓힌다 — 완전 차단이면 가장 넓은 QRS 가 120 ms 이상이고, 우각차단은 끝 QRS 벡터가 오른쪽 앞으로 향해 V1 rSR′ · V6 qRS 를 만든다 [[harrison-22: 247장 p.1871]]. 섬유속차단은 QRS 폭을 크게 늘리지 않고 전두면 축만 옮긴다 [[harrison-22: 247장 p.1872]]. 좁은 QRS 에 V1 큰 R′ 이 없는 우축편위는 각차단이 아니다."
+    cites: ["harrison-22: 247장 p.1871", "harrison-22: 247장 p.1872"]
+    covers: ["imaging-2026-0770:D"]
   - contrast: "유도 II 만 보기 — 「II 가 양성이니 정상」"
     point: "유도 II(+60°)는 정상축과 우축편위(+90°~+150°) 모두에서 양성이다. II 는 좌축편위(−30° 넘음)를 가를 때 쓰는 유도이고, 오른쪽 경계는 유도 I 이 가른다 [[harrison-21: 240장 p.1825]]."
     exception: "I 양성·aVF 음성일 때는 II 가 정상(0°~−30°)과 좌축편위를 가르는 결정 유도가 된다."

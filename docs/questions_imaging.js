@@ -3523,6 +3523,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.qrs-axis.limb-lead-polarity",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0770.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",

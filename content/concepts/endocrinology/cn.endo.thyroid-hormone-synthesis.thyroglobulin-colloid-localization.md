@@ -4,7 +4,8 @@ type: concept
 topic: Endocrinology
 see_also: [Pathology, Physiology]
 date: 2026-09-23
-updated: 2026-10-03
+updated: 2026-11-26
+roots: [cn.physio.thyroid-hormone-synthesis.tsh-follicle]
 version: 3
 outline: h382            # 해리슨 21판 382장 Thyroid Gland Physiology and Testing(내분비내과 책)
 confidence: medium
