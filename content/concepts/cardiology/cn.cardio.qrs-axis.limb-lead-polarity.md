@@ -5,7 +5,7 @@ topic: Cardiology
 see_also: [Pulmonology, Pediatrics]
 date: 2026-09-23
 updated: 2026-11-26
-version: 4
+version: 5
 outline: h240            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 240장 Electrocardiography
 confidence: medium
 review_status: unreviewed
@@ -181,6 +181,26 @@ variants:
     answer: "C"
     explanation: "Lead I is net negative (r smaller than S) and aVF is net positive, so the mean QRS vector points downward and to the right: +90° to +180°, right axis deviation [[harrison-21: 240장 p.1825]]. The upright lead II does not help, because lead II is positive in both the normal range and right axis deviation. Age, sex, sport, and setting differ from the original item, but the deciding clue — the polarity of leads I and aVF — is the same. Right axis deviation can be a normal variant in young adults, but that is a statement about cause, not about the axis itself [[harrison-21: 240장 p.1826]]."
     kind: application
+  - id: v3
+    of: imaging-2026-0770
+    flip: true
+    changed: "심초음파 정상 · V1 큰 R 없음 · 심잡음 없음 → 폐동맥판 협착 잡음, V1 R/S > 1 · 우측 흉부 유도 ST-T 변화, 심초음파 우심실 벽 비후 · 우심실 압력 상승 — 같은 우축편위의 원인이 우심실 비대가 된다"
+    context: "우축편위 + 우심실 압력 부하"
+    stem: "17세 여자가 학교 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 계단을 오르면 숨이 조금 찬다. 먹는 약은 없다. 혈압 110/68 mmHg, 맥박 84회/분. 왼쪽 위 흉골연에서 수축기 박출성 잡음이 들린다. 12유도 심전도에서 QRS 폭은 90 ms 로 좁고, 유도 I 은 rS, II · III · aVF 는 큰 R 이며, V1 은 R 이 S 보다 크고 V1~V2 에 T파 역위가 있다. 심초음파에서 폐동맥판이 좁아져 있고 우심실 벽이 두껍다. 심전도 판독으로 가장 적절한 것은?"
+    choices: ["A. 좌심실 비대", "B. 좌후속지차단", "C. 좌전속지차단", "D. 우각차단", "E. 우심실 비대"]
+    answer: "E"
+    explanation: "원 문항은 좁은 QRS 의 우축편위인데 V1 큰 R 이 없고 심초음파에서 우심실이 정상이라, 흔한 원인을 다 배제한 뒤 좌후속지차단으로 읽었다. 여기서는 같은 우축편위에 V1 R/S > 1 · 우측 흉부 유도 T 역위가 있고 폐동맥판 협착으로 우심실 벽이 두꺼우므로 우심실 비대가 우축편위의 원인이다. QRS 가 좁아 우각차단이 아니다."
+    kind: application
+  - id: v4
+    of: imaging-2026-0770
+    flip: false
+    changed: "17세 여자 · 학교 검진 → 22세 남자 군 입대 신체검사, 키 · 체중 · 검사 제시 순서를 바꿈 — 좁은 QRS 우축편위 · V1 큰 R 없음 · 심초음파 정상 · 마른 체형 아님이라는 단서는 그대로라 답은 좌후속지차단"
+    context: "입대 신체검사 심전도의 22세 남자"
+    stem: "22세 남자가 입대 신체검사에서 심전도 이상을 듣고 왔다. 증상은 없고 축구를 즐긴다. 먹는 약은 없다. 키 176 cm, 몸무게 74 kg. 혈압 118/74 mmHg, 맥박 72회/분. 심잡음은 없고 폐 소리는 깨끗하다. 심초음파에서 우심실 크기 · 벽 두께와 폐동맥압은 정상이고 흉부 X선도 정상이다. 전극 위치를 다시 확인하고 찍은 12유도 심전도에서 QRS 폭은 92 ms 이고, 유도 I · aVL 은 rS, II · III · aVF 는 큰 R 이며 V1 은 rS 다. 심전도 판독으로 가장 적절한 것은?"
+    choices: ["A. 우각차단", "B. 우심실 비대", "C. 좌후속지차단", "D. 좌전속지차단", "E. 좌심실 비대"]
+    answer: "C"
+    explanation: "나이 · 성별 · 검사 계기가 달라도 좁은 QRS 의 우축편위(I rS · II · III · aVF 큰 R)이고, V1 큰 R 이 없으며 심초음파 · 흉부 X선이 정상이고 마른 체형이 아니며 전극 뒤바뀜도 배제했다 — 우축편위의 다른 원인이 없으므로 좌후속지차단이다. QRS 가 좁아 각차단이 아니다."
+    kind: application
 figures:
 - id: f1
   file: docs/assets/figures/ptbxl-16116.png
@@ -201,6 +221,26 @@ figures:
   asset: PTBXL-16116
   paper_cited_by: 1213
   from_question: imaging-2026-0011
+- id: f2
+  file: docs/assets/figures/ptbxl-00377.png
+  kind: ecg
+  at: 가르는 소견 — 사분면과 우축편위의 원인
+  shows: 좌후섬유속차단 — 좁은 QRS 의 우축편위(전문의 SCP 라벨 LPFB)
+  look_for:
+  - '유도 I: 작은 r 과 깊은 S(순면적 음성)'
+  - 'II · III · aVF: 큰 R(순면적 양성)'
+  - QRS 폭이 좁고 V1 에 큰 R 이 없음
+  label: left posterior fascicular block (SCP LPFB, 가능도 100)
+  label_basis: dataset_expert
+  reference: 심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만
+  paper: Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154
+  doi: 10.1038/s41597-020-0495-6
+  credit: PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 377
+  license: Creative Commons Attribution 4.0 International
+  url: https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel
+  asset: PTBXL-00377
+  paper_cited_by: 1213
+  from_question: imaging-2026-0770
 ---
 
 ## 판단 — 왜 유도 I 과 aVF 의 부호가 먼저인가
