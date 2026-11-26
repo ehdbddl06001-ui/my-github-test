@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4362,
+  "total": 4365,
   "byType": {
    "kmle": 2016,
    "usmle": 288,
    "paper": 988,
-   "imaging": 804,
+   "imaging": 807,
    "concept": 249,
    "ailab": 14,
    "basic": 3
@@ -26,10 +26,10 @@ window.MEDKOS_INDEX = {
    "Psychiatry": 153,
    "Pathology": 149,
    "Orthopedics": 140,
+   "순환기": 137,
    "Endocrinology": 136,
    "Hematology-Oncology": 136,
    "General Surgery": 134,
-   "순환기": 134,
    "Gastroenterology": 132,
    "Dermatology": 131,
    "Ophthalmology": 131,
@@ -80,7 +80,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 3093,
+   "high": 3096,
    "medium": 1265,
    "low": 4
   },
@@ -821,6 +821,63 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-11-26_paper-2026-0988_tsg_01_in_the_treatment_of_chronic_heart_failure_in_patients.md",
    "snippet": "Title TSG 01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial Authors Zhao Qifei, Wang Yongxia, Yu Shujun, Xiao Yue, He Jia, Xu Jinfang, Zhu Xiaodong, Wang Zhentao, e",
    "text": "Cardiology scraped pubmed PubMed / Canadian journal of physiology and pharmacology Title TSG 01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial Authors Zhao Qifei, Wang Yongxia, Yu Shujun, Xiao Yue, He Jia, Xu Jinfang, Zhu Xiaodong, Wang Zhentao, et al. Journal / DOI Canadian journal of physiology and pharmacology · DOI: 10.1139/cjpp 2025 0374 · PMID: 43084835 https://pubmed.ncbi.nlm.nih.gov/43084835/ Abstract TSG 01, a novel agent dominated by secondary ginsenosides, may benefit chronic heart failure (CHF), yet its efficacy and safety in CHF patients with coronary artery disease (CAD) remain unclear. This phase IIa trial enrolled 85 CAD patients with NYHA III CHF (40 75 years), randomized to high dose TSG 01 (n=29), low dose TSG 01 (n=28), or placebo (n=28) for 12 weeks. Outcomes were evaluated in the intention to treat cohort (ITT, n=85) and an exploratory digoxin free cohort (n=59). No significant between group difference was found for the NYHA based efficacy endpoint. In the ITT cohort, only low dose TSG 01 significantly improved left ventricular ejection fraction (LVEF) versus placebo; in the digoxin free cohort, both doses yielded significant LVEF improvement. Diseases occurring the infectious and infective system, gastrointestinal system and the blood and lymphatic system are the common adverse events, with no significant difference between the 3 groups. Together, this study demonstrates that TSG 01 is well tolerated with similar adverse event profiles across groups, and confers potential cardiac benefits in digoxin free patients, warranting further confirmatory studies. Registration: Clinicaltrials.gov, no. NCT04515290. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0808",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 숨이 차는 고령 여성의 심초음파 예측",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0808.md",
+   "snippet": "A 70 year old woman comes to the physician because of shortness of breath on exertion for 2 months. One year ago, she had severe chest pressure for several hours that she attributed to indigestion and did not seek care. She has hypertension",
+   "text": "순환기 심전도 판독 — 숨이 차는 고령 여성의 심초음파 예측 opendata usmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1 A 70 year old woman comes to the physician because of shortness of breath on exertion for 2 months. One year ago, she had severe chest pressure for several hours that she attributed to indigestion and did not seek care. She has hypertension and type 2 diabetes mellitus. Pulse is 84/min and regular, and blood pressure is 128/76 mm Hg. Lungs are clear. Serum troponin concentration is within the reference range. A 12 lead ECG is shown. Echocardiography is most likely to show hypokinesis of which of the following regions of the left ventricle? A. Anterior wall and interventricular septum B. Inferior wall C. Lateral wall D. Posterior wall E. Right ventricular free wall"
+  },
+  {
+   "id": "imaging-2026-0807",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 처치 — 설사 뒤 어지러운 남성의 빠른 맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0807.md",
+   "snippet": "40세 남자가 3일 전부터 하루 8~10번 물설사를 하고 일어설 때 어지러워 응급실에 왔다. 구토는 없고 열도 없다. 소변량이 줄었다. 누운 자세 혈압 108/68 mmHg, 맥박 112회/분이고, 일어서면 혈압 88/56 mmHg, 맥박 136회/분이다. 입안 점막이 말라 있다. 혈액요소질소 38 mg/dL, 크레아티닌 1.4 mg/dL, 칼륨 3.6 mEq/L, 혈청 나트륨 138 mEq/L 이다. 12유도 심전도는 그림과",
+   "text": "순환기 심전도 처치 — 설사 뒤 어지러운 남성의 빠른 맥 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1 40세 남자가 3일 전부터 하루 8~10번 물설사를 하고 일어설 때 어지러워 응급실에 왔다. 구토는 없고 열도 없다. 소변량이 줄었다. 누운 자세 혈압 108/68 mmHg, 맥박 112회/분이고, 일어서면 혈압 88/56 mmHg, 맥박 136회/분이다. 입안 점막이 말라 있다. 혈액요소질소 38 mg/dL, 크레아티닌 1.4 mg/dL, 칼륨 3.6 mEq/L, 혈청 나트륨 138 mEq/L 이다. 12유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 경구 메토프롤롤 투여 B. 생리식염수 급속 정맥 주입 C. 아데노신 급속 정맥 주사 D. 정맥 딜티아젬 투여 E. 동기화 심장율동전환"
+  },
+  {
+   "id": "imaging-2026-0806",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 검진에서 맥이 불규칙하다는 말을 들은 남성",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg",
+    "ecg_daily"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+   "confidence": "high",
+   "date": "2026-11-26",
+   "path": "content/imaging/2026/imaging-2026-0806.md",
+   "snippet": "66세 남자가 건강검진에서 맥박이 불규칙하다는 말을 듣고 왔다. 가끔 가슴이 한 번씩 덜컥 내려앉는 느낌이 있으나 어지럼이나 실신은 없다. 커피를 하루 4잔 마신다. 고혈압으로 약을 먹고 있으며 베타차단제나 디곡신은 먹지 않는다. 혈압 134/80 mmHg 이고 맥박은 둘씩 짝지어 뛴다. 혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 참고치 이내이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. ",
+   "text": "순환기 심전도 판독 — 검진에서 맥이 불규칙하다는 말을 들은 남성 opendata kmle_style ecg ecg_daily 의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1 66세 남자가 건강검진에서 맥박이 불규칙하다는 말을 듣고 왔다. 가끔 가슴이 한 번씩 덜컥 내려앉는 느낌이 있으나 어지럼이나 실신은 없다. 커피를 하루 4잔 마신다. 고혈압으로 약을 먹고 있으며 베타차단제나 디곡신은 먹지 않는다. 혈압 134/80 mmHg 이고 맥박은 둘씩 짝지어 뛴다. 혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 참고치 이내이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 모비츠 II형 방실차단 B. 심방세동 C. 심방조기수축 이단맥 D. 심실조기수축 이단맥 E. 모비츠 I형 방실차단"
   },
   {
    "id": "imaging-2026-0805",

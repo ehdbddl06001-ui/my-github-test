@@ -2,6 +2,399 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0808",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 숨이 차는 고령 여성의 심초음파 예측",
+  "type": "심전도 판독 — 숨이 차는 고령 여성의 심초음파 예측",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-26",
+  "vignette": "A 70-year-old woman comes to the physician because of shortness of breath on exertion for 2 months. One year ago, she had severe chest pressure for several hours that she attributed to indigestion and did not seek care. She has hypertension and type 2 diabetes mellitus. Pulse is 84/min and regular, and blood pressure is 128/76 mm Hg. Lungs are clear. Serum troponin concentration is within the reference range. A 12-lead ECG is shown.",
+  "question": "Echocardiography is most likely to show hypokinesis of which of the following regions of the left ventricle?",
+  "options": [
+   "Anterior wall and interventricular septum",
+   "Inferior wall",
+   "Lateral wall",
+   "Posterior wall",
+   "Right ventricular free wall"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The rhythm is <b>sinus at about 85/min</b> with narrow QRS complexes. <b>V1 is a QS complex and V2 has only a tiny r wave</b>, so the R wave fails to grow across the precordium (<b>poor R-wave progression</b>), and there is <b>no ST elevation</b>. With a history of a prolonged chest-pain episode a year ago, normal troponin, and new exertional dyspnea, this is an <b>old anteroseptal infarction</b>; V1–V2 face the septum and anterior wall, so echocardiography should show <b>anterior wall and septal hypokinesis</b>.\n- 원리: <b>Why the R wave disappears</b>: Normally the initial septal depolarization moves left to right and toward V1–V2, producing a small r wave that grows across V3–V4 as more left ventricular muscle lies under the electrodes. Infarcted, scarred myocardium generates no electrical force, so the electrode over it sees only depolarization moving away — a QS complex — and R-wave growth is lost.<br> <b>Why it maps to the anterior wall and septum</b>: V1–V2 overlie the interventricular septum and V3–V4 the anterior wall, both supplied by the left anterior descending artery and its septal and diagonal branches. Scar in that territory does not contract, so echocardiography shows hypokinesis or akinesis there.<br> <b>Why the ST segment matters</b>: Acute transmural injury lifts the ST segment; once the scar matures, ST returns to baseline while Q waves persist. Persistent ST elevation weeks later suggests a ventricular aneurysm.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Anterior wall and septum (answer)</th><th>Inferior wall (closest distractor)</th></tr></thead><tbody> <tr><td>Leads with Q/QS</td><td><b>V1–V3(V4)</b></td><td>II, III, aVF</td></tr> <tr><td>Usual artery</td><td>Left anterior descending</td><td>Right coronary (most)</td></tr> <tr><td>Here</td><td>V1 QS, tiny r in V2, poor R progression</td><td>II, III, aVF begin with an r wave</td></tr> </tbody></table> Translate leads to walls: V1–V4 anterior/septal, II/III/aVF inferior, I/aVL/V5–V6 lateral, tall R in V1–V2 posterior.\n- 오답 이유:\n  - (B) The inferior wall would be expected if pathologic Q waves appeared in II, III, and aVF rather than in the anterior precordial leads.\n  - (C) The lateral wall would be expected if Q waves or lost R waves appeared in I, aVL, V5, and V6 from circumflex disease.\n  - (D) The posterior wall would be expected with tall, broad R waves and ST depression in V1–V2, the mirror image of posterior Q waves.\n  - (E) The right ventricular free wall would be expected with an inferior infarction plus ST elevation in right-sided lead V4R.\n- 함정: Focusing on the risk factors and dyspnea rather than localizing the QS complexes — the lead groups, not the symptoms, define the wall.\n- 학습목표: Read QS complexes in V1-V2 with poor R-wave progression and no ST elevation as an old anteroseptal infarction and predict anterior-septal wall motion abnormality on echocardiography\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4946 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm is <b>sinus at about 85/min</b> with narrow QRS complexes. <b>V1 is a QS complex and V2 has only a tiny r wave</b>, so the R wave fails to grow across the precordium (<b>poor R-wave progression</b>), and there is <b>no ST elevation</b>. With a history of a prolonged chest-pain episode a year ago, normal troponin, and new exertional dyspnea, this is an <b>old anteroseptal infarction</b>; V1–V2 face the septum and anterior wall, so echocardiography should show <b>anterior wall and septal hypokinesis</b>."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the R wave disappears</b>: Normally the initial septal depolarization moves left to right and toward V1–V2, producing a small r wave that grows across V3–V4 as more left ventricular muscle lies under the electrodes. Infarcted, scarred myocardium generates no electrical force, so the electrode over it sees only depolarization moving away — a QS complex — and R-wave growth is lost.<br> <b>Why it maps to the anterior wall and septum</b>: V1–V2 overlie the interventricular septum and V3–V4 the anterior wall, both supplied by the left anterior descending artery and its septal and diagonal branches. Scar in that territory does not contract, so echocardiography shows hypokinesis or akinesis there.<br> <b>Why the ST segment matters</b>: Acute transmural injury lifts the ST segment; once the scar matures, ST returns to baseline while Q waves persist. Persistent ST elevation weeks later suggests a ventricular aneurysm."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Anterior wall and septum (answer)</th><th>Inferior wall (closest distractor)</th></tr></thead><tbody> <tr><td>Leads with Q/QS</td><td><b>V1–V3(V4)</b></td><td>II, III, aVF</td></tr> <tr><td>Usual artery</td><td>Left anterior descending</td><td>Right coronary (most)</td></tr> <tr><td>Here</td><td>V1 QS, tiny r in V2, poor R progression</td><td>II, III, aVF begin with an r wave</td></tr> </tbody></table> Translate leads to walls: V1–V4 anterior/septal, II/III/aVF inferior, I/aVL/V5–V6 lateral, tall R in V1–V2 posterior."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) The inferior wall would be expected if pathologic Q waves appeared in II, III, and aVF rather than in the anterior precordial leads.\n(C) The lateral wall would be expected if Q waves or lost R waves appeared in I, aVL, V5, and V6 from circumflex disease.\n(D) The posterior wall would be expected with tall, broad R waves and ST depression in V1–V2, the mirror image of posterior Q waves.\n(E) The right ventricular free wall would be expected with an inferior infarction plus ST elevation in right-sided lead V4R."
+   },
+   {
+    "k": "함정",
+    "v": "Focusing on the risk factors and dyspnea rather than localizing the QS complexes — the lead groups, not the symptoms, define the wall."
+   },
+   {
+    "k": "학습목표",
+    "v": "Read QS complexes in V1-V2 with poor R-wave progression and no ST elevation as an old anteroseptal infarction and predict anterior-septal wall motion abnormality on echocardiography"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 286: ST-Segment Elevation Myocardial Infarction · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4946 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "V1 QS·V2 아주 작은 r 의 R파 진행 불량에 ST 상승이 없으면 오래된 전중격 경색이고, 심초음파는 앞벽·중격 운동 저하를 보인다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Q/QS 가 하벽 유도가 아니라 V1~V2 에 있다",
+   "steps": 2,
+   "chain": [
+    "영상: V1 QS, V2 아주 작은 r, R파 진행 불량, ST 상승 없음 + 1년 전 긴 가슴 통증 → 오래된 전중격 경색",
+    "V1~V2 는 중격·앞벽을 마주 본다 → 앞벽·중격 운동 저하"
+   ],
+   "key": [
+    {
+     "item": "영상: V1 QS, V2 아주 작은 r, R파 진행 불량",
+     "why": "전중격 경색 흔적",
+     "also": []
+    },
+    {
+     "item": "severe chest pressure for several hours",
+     "why": "놓친 경색의 시기",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: ST 상승 없음",
+     "why": "급성 경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum troponin concentration is within the reference range",
+     "why": "현재 급성 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "type 2 diabetes mellitus",
+     "why": "무증상·비전형 경색 위험 — 부위 판단은 유도가 정한다",
+     "also": []
+    }
+   ],
+   "summary": "V1 QS 와 V2 의 아주 작은 r 로 R파 진행이 불량하고 ST 상승은 없다. 오래된 전중격 경색이므로 앞벽·중격 운동 저하가 예상된다.",
+   "switch": {
+    "choice": "B",
+    "condition": "II·III·aVF 에 병적 Q파가 있었다면 하벽 운동 저하"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0808.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/04000/#files-panel",
+   "asset_id": "PTBXL-04946",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4946"
+  },
+  "run_id": "20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0807",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 설사 뒤 어지러운 남성의 빠른 맥",
+  "type": "심전도 처치 — 설사 뒤 어지러운 남성의 빠른 맥",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-26",
+  "vignette": "40세 남자가 3일 전부터 하루 8~10번 물설사를 하고 일어설 때 어지러워 응급실에 왔다. 구토는 없고 열도 없다. 소변량이 줄었다. 누운 자세 혈압 108/68 mmHg, 맥박 112회/분이고, 일어서면 혈압 88/56 mmHg, 맥박 136회/분이다. 입안 점막이 말라 있다. 혈액요소질소 38 mg/dL, 크레아티닌 1.4 mg/dL, 칼륨 3.6 mEq/L, 혈청 나트륨 138 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "경구 메토프롤롤 투여",
+   "생리식염수 급속 정맥 주입",
+   "아데노신 급속 정맥 주사",
+   "정맥 딜티아젬 투여",
+   "동기화 심장율동전환"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 리듬 스트립에서 RR 이 약 0.53초로 일정한 <b>약 113회/분의 규칙적인 좁은 QRS 빈맥</b>이고, <b>모든 QRS 앞에 II 에서 양성인 P파가 일정한 PR</b> 로 온다 — <b>동빈맥</b>이다. 3일간의 물설사, 기립성 저혈압과 맥박 증가, 마른 점막, BUN/크레아티닌 비 상승은 <b>저혈량</b>이 원인임을 말한다. 동빈맥은 원인에 대한 보상 반응이므로 <b>수액으로 혈관 내 용적을 채우는 것</b>이 치료다.\n- 원리: <b>동빈맥은 「결과」다</b>: 순환 혈액량이 줄면 1회 박출량이 떨어지고, 압수용체가 이를 감지해 교감신경을 올려 동결절의 4기 탈분극을 빠르게 한다. 심박출량 = 1회 박출량 × 심박수이므로 빨라진 심박은 떨어진 박출량을 메우는 보상이다. 그래서 심박수를 약으로 억누르면 보상이 사라져 혈압이 더 떨어진다.<br> <b>심전도로 동빈맥을 확인하는 법</b>: P파가 II·III·aVF 에서 양성(동결절에서 아래로 내려가는 탈분극)이고 매 QRS 앞에 일정한 PR 로 오며, 박동수가 서서히 오르내린다. 갑자기 시작하고 끝나는 약 150회/분 이상의 규칙적 빈맥에서 P 가 안 보이면 상심실빈맥을 떠올린다.<br> <b>치료 원칙</b>: 원인(저혈량·발열·통증·빈혈·저산소증·갑상샘항진증·폐색전증)을 찾아 고친다. 여기서는 등장성 수액 급속 주입 뒤 기립성 활력징후·소변량·신기능을 다시 본다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">동빈맥 → 수액 — 정답</th><th>상심실빈맥 → 아데노신 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>P파</td><td><b>매 QRS 앞 II 양성 P</b>, PR 일정</td><td>보이지 않거나 QRS 바로 뒤 역행 P</td></tr> <tr><td>박동수</td><td>100~140회/분, 원인 따라 오르내림(기립 시 136)</td><td>대개 150~220회/분, 고정</td></tr> <tr><td>시작</td><td>서서히, 원인과 함께</td><td>갑자기 시작·끝</td></tr> </tbody></table> 누워서 112, 일어서서 136 처럼 상황에 따라 박동수가 변하면 동빈맥 — 원인을 고친다.\n- 오답 이유:\n  - ① 메토프롤롤은 갑상샘항진증의 증상 조절이나 부적절 동빈맥에서 고려하며, 보상성 동빈맥을 누르면 쇼크가 깊어진다.\n  - ③ 아데노신은 P파가 보이지 않는 갑자기 시작한 150회/분 이상의 고정된 좁은 QRS 빈맥(발작성 상심실빈맥)이었다면 정답이 된다.\n  - ④ 정맥 딜티아젬은 혈압이 유지되는 빠른 심실 반응의 심방세동·조동에서 심박수 조절에 쓴다 — 저혈량에서는 혈압을 더 떨어뜨린다.\n  - ⑤ 동기화 심장율동전환은 불안정한 상심실빈맥·심방조동처럼 재진입 빈맥일 때 쓴다 — 동빈맥에는 효과가 없다.\n- 함정: 빠른 맥을 보자마자 박동수를 낮추는 약을 고르는 것 — 동빈맥은 원인 교정이 치료다.\n- 학습목표: 매 QRS 앞에 II 양성 P 가 일정한 PR 로 오는 약 110회/분의 규칙적 빈맥을 동빈맥으로 판독하고, 설사로 인한 저혈량이 원인이면 수액으로 원인을 교정한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 254: Physiologic and Nonphysiologic Sinus Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17882 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립에서 RR 이 약 0.53초로 일정한 <b>약 113회/분의 규칙적인 좁은 QRS 빈맥</b>이고, <b>모든 QRS 앞에 II 에서 양성인 P파가 일정한 PR</b> 로 온다 — <b>동빈맥</b>이다. 3일간의 물설사, 기립성 저혈압과 맥박 증가, 마른 점막, BUN/크레아티닌 비 상승은 <b>저혈량</b>이 원인임을 말한다. 동빈맥은 원인에 대한 보상 반응이므로 <b>수액으로 혈관 내 용적을 채우는 것</b>이 치료다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>동빈맥은 「결과」다</b>: 순환 혈액량이 줄면 1회 박출량이 떨어지고, 압수용체가 이를 감지해 교감신경을 올려 동결절의 4기 탈분극을 빠르게 한다. 심박출량 = 1회 박출량 × 심박수이므로 빨라진 심박은 떨어진 박출량을 메우는 보상이다. 그래서 심박수를 약으로 억누르면 보상이 사라져 혈압이 더 떨어진다.<br> <b>심전도로 동빈맥을 확인하는 법</b>: P파가 II·III·aVF 에서 양성(동결절에서 아래로 내려가는 탈분극)이고 매 QRS 앞에 일정한 PR 로 오며, 박동수가 서서히 오르내린다. 갑자기 시작하고 끝나는 약 150회/분 이상의 규칙적 빈맥에서 P 가 안 보이면 상심실빈맥을 떠올린다.<br> <b>치료 원칙</b>: 원인(저혈량·발열·통증·빈혈·저산소증·갑상샘항진증·폐색전증)을 찾아 고친다. 여기서는 등장성 수액 급속 주입 뒤 기립성 활력징후·소변량·신기능을 다시 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">동빈맥 → 수액 — 정답</th><th>상심실빈맥 → 아데노신 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>P파</td><td><b>매 QRS 앞 II 양성 P</b>, PR 일정</td><td>보이지 않거나 QRS 바로 뒤 역행 P</td></tr> <tr><td>박동수</td><td>100~140회/분, 원인 따라 오르내림(기립 시 136)</td><td>대개 150~220회/분, 고정</td></tr> <tr><td>시작</td><td>서서히, 원인과 함께</td><td>갑자기 시작·끝</td></tr> </tbody></table> 누워서 112, 일어서서 136 처럼 상황에 따라 박동수가 변하면 동빈맥 — 원인을 고친다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 메토프롤롤은 갑상샘항진증의 증상 조절이나 부적절 동빈맥에서 고려하며, 보상성 동빈맥을 누르면 쇼크가 깊어진다.\n③ 아데노신은 P파가 보이지 않는 갑자기 시작한 150회/분 이상의 고정된 좁은 QRS 빈맥(발작성 상심실빈맥)이었다면 정답이 된다.\n④ 정맥 딜티아젬은 혈압이 유지되는 빠른 심실 반응의 심방세동·조동에서 심박수 조절에 쓴다 — 저혈량에서는 혈압을 더 떨어뜨린다.\n⑤ 동기화 심장율동전환은 불안정한 상심실빈맥·심방조동처럼 재진입 빈맥일 때 쓴다 — 동빈맥에는 효과가 없다."
+   },
+   {
+    "k": "함정",
+    "v": "빠른 맥을 보자마자 박동수를 낮추는 약을 고르는 것 — 동빈맥은 원인 교정이 치료다."
+   },
+   {
+    "k": "학습목표",
+    "v": "매 QRS 앞에 II 양성 P 가 일정한 PR 로 오는 약 110회/분의 규칙적 빈맥을 동빈맥으로 판독하고, 설사로 인한 저혈량이 원인이면 수액으로 원인을 교정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 254: Physiologic and Nonphysiologic Sinus Rhythm · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 56: Fluid and Electrolyte Disturbances · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17882 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "매 QRS 앞 양성 P 의 규칙적 약 113회/분 빈맥은 동빈맥이고, 설사로 인한 저혈량이 원인이므로 생리식염수를 급속 주입한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "모든 QRS 앞에 II 양성 P 가 일정한 PR 로 있고 기립 시 박동수가 변한다",
+   "steps": 3,
+   "chain": [
+    "영상: RR 약 0.53초 일정, 매 QRS 앞 II 양성 P·일정한 PR, 좁은 QRS → 동빈맥",
+    "3일 물설사·기립성 저혈압·마른 점막·BUN 상승 → 저혈량이 원인",
+    "보상성 동빈맥 → 박동수를 누르지 않고 수액으로 원인 교정"
+   ],
+   "key": [
+    {
+     "item": "영상: 매 QRS 앞 II 양성 P, 일정한 PR, 약 113회/분",
+     "why": "동빈맥",
+     "also": []
+    },
+    {
+     "item": "일어서면 혈압 88/56 mmHg, 맥박 136회/분",
+     "why": "기립성 변화 — 저혈량, 박동수가 상황 따라 변함",
+     "also": []
+    },
+    {
+     "item": "하루 8~10번 물설사",
+     "why": "체액 소실 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "열도 없다",
+     "why": "발열성 동빈맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈액요소질소 38 mg/dL, 크레아티닌 1.4 mg/dL",
+     "why": "신전성 신기능 저하 — 수액 필요",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "칼륨 3.6 mEq/L",
+     "why": "정상 하한 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "매 QRS 앞에 양성 P 가 있는 규칙적 약 113회/분 빈맥은 동빈맥이다. 설사로 인한 저혈량이 원인이므로 생리식염수를 급속 주입한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "P 가 보이지 않는 갑자기 시작한 약 180회/분의 고정된 좁은 QRS 빈맥이었다면 아데노신"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0807.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/17000/#files-panel",
+   "asset_id": "PTBXL-17882",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 17882"
+  },
+  "run_id": "20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0806",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 검진에서 맥이 불규칙하다는 말을 들은 남성",
+  "type": "심전도 판독 — 검진에서 맥이 불규칙하다는 말을 들은 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-26",
+  "vignette": "66세 남자가 건강검진에서 맥박이 불규칙하다는 말을 듣고 왔다. 가끔 가슴이 한 번씩 덜컥 내려앉는 느낌이 있으나 어지럼이나 실신은 없다. 커피를 하루 4잔 마신다. 고혈압으로 약을 먹고 있으며 베타차단제나 디곡신은 먹지 않는다. 혈압 134/80 mmHg 이고 맥박은 둘씩 짝지어 뛴다. 혈청 칼륨 4.1 mEq/L, 갑상샘자극호르몬은 참고치 이내이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "모비츠 II형 방실차단",
+   "심방세동",
+   "심방조기수축 이단맥",
+   "심실조기수축 이단맥",
+   "모비츠 I형 방실차단"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 리듬 스트립(II)에서 <b>좁은 QRS 가 둘씩 묶여</b> RR 이 약 1.0초(짧음)와 약 1.36초(긺)로 <b>번갈아</b> 반복된다. 짧은 간격 뒤의 박동도 <b>앞에 P파가 있고 QRS 모양이 같다</b> — 심방에서 일찍 생긴 박동이 정상 경로로 전도된 것이다. 긴 휴지 안에 <b>전도되지 않은 P파가 없어</b> 방실차단의 그룹 박동이 아니다. 정상 박동과 조기 박동이 1:1 로 번갈아 오므로 <b>심방조기수축 이단맥</b>이다.\n- 원리: <b>왜 둘씩 묶이는가</b>: 동결절 박동 하나마다 심방의 다른 곳(이소성 초점)에서 일찍 박동이 하나 생기면, 「정상 → 조기 → 휴지 → 정상 → 조기」가 반복되어 맥이 둘씩 짝지어 뛴다(이단맥). 조기 박동은 심방에서 생겼으므로 방실결절·히스-푸르키니에계를 정상으로 지나 QRS 가 좁고 정상 박동과 모양이 같다. 그 앞의 P파는 이소성 초점에서 생겨 정상 P 와 모양이 조금 다르다.<br> <b>왜 휴지가 따르는가</b>: 조기 심방 박동이 동결절로 거꾸로 들어가 동결절을 「재설정」하므로, 다음 동박동은 그 시점부터 한 주기 뒤에 온다. 그래서 대개 비보상 휴지가 생긴다.<br> <b>임상 의미</b>: 심방조기수축은 카페인·음주·스트레스·갑상샘항진증에서 흔하고 대개 양성이다. 원인을 줄이고, 증상이 심하면 베타차단제를 쓴다. 자주 나오면 나중에 심방세동이 생길 위험이 조금 높다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">심방조기수축 이단맥 — 정답</th><th>모비츠 I형 3:2 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>긴 휴지 안</td><td><b>P파 없음</b></td><td>전도되지 않은 P 가 하나 있다</td></tr> <tr><td>P-P 간격</td><td>조기 P 가 일찍 와서 불규칙</td><td>P-P 는 규칙적</td></tr> <tr><td>PR 간격</td><td>대체로 비슷</td><td>둘째 박동에서 길어진다</td></tr> </tbody></table> 그룹 박동을 보면 「긴 휴지 안에 숨은 P 가 있는가」부터 찾는다 — 있으면 방실차단, 없고 짧은 쪽 박동 앞 P 가 일찍 오면 조기수축이다.\n- 오답 이유:\n  - ① 모비츠 II형은 PR 이 일정하다가 예고 없이 P 뒤 QRS 가 빠지고 그 P 가 휴지 안에 보였다면 정답이 된다.\n  - ② 심방세동은 P파가 없고 RR 이 짝지은 규칙 없이 완전히 불규칙하게 변했다면 정답이 된다.\n  - ④ 심실조기수축 이단맥은 짧은 간격 뒤 박동이 앞선 P파 없이 넓고(≥ 0.12초) 이상한 모양의 QRS 였다면 정답이 된다.\n  - ⑤ 모비츠 I형은 P-P 가 규칙적이고 PR 이 점점 길어지다 긴 휴지 안에 전도되지 않은 P 가 하나 보였다면 정답이 된다.\n- 함정: 둘씩 묶인 박동을 보고 그룹 박동 = 웬케바흐로 판단하는 것 — 휴지 안에 숨은 P 가 없다.\n- 학습목표: 좁은 QRS 가 둘씩 묶여 짧은·긴 RR 이 번갈아 반복되고 모든 QRS 앞에 P 가 있으며 긴 휴지에 전도되지 않은 P 가 없으면 심방조기수축 이단맥으로 판독하고 모비츠 I형 3:2 전도와 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4262 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리듬 스트립(II)에서 <b>좁은 QRS 가 둘씩 묶여</b> RR 이 약 1.0초(짧음)와 약 1.36초(긺)로 <b>번갈아</b> 반복된다. 짧은 간격 뒤의 박동도 <b>앞에 P파가 있고 QRS 모양이 같다</b> — 심방에서 일찍 생긴 박동이 정상 경로로 전도된 것이다. 긴 휴지 안에 <b>전도되지 않은 P파가 없어</b> 방실차단의 그룹 박동이 아니다. 정상 박동과 조기 박동이 1:1 로 번갈아 오므로 <b>심방조기수축 이단맥</b>이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 둘씩 묶이는가</b>: 동결절 박동 하나마다 심방의 다른 곳(이소성 초점)에서 일찍 박동이 하나 생기면, 「정상 → 조기 → 휴지 → 정상 → 조기」가 반복되어 맥이 둘씩 짝지어 뛴다(이단맥). 조기 박동은 심방에서 생겼으므로 방실결절·히스-푸르키니에계를 정상으로 지나 QRS 가 좁고 정상 박동과 모양이 같다. 그 앞의 P파는 이소성 초점에서 생겨 정상 P 와 모양이 조금 다르다.<br> <b>왜 휴지가 따르는가</b>: 조기 심방 박동이 동결절로 거꾸로 들어가 동결절을 「재설정」하므로, 다음 동박동은 그 시점부터 한 주기 뒤에 온다. 그래서 대개 비보상 휴지가 생긴다.<br> <b>임상 의미</b>: 심방조기수축은 카페인·음주·스트레스·갑상샘항진증에서 흔하고 대개 양성이다. 원인을 줄이고, 증상이 심하면 베타차단제를 쓴다. 자주 나오면 나중에 심방세동이 생길 위험이 조금 높다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">심방조기수축 이단맥 — 정답</th><th>모비츠 I형 3:2 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>긴 휴지 안</td><td><b>P파 없음</b></td><td>전도되지 않은 P 가 하나 있다</td></tr> <tr><td>P-P 간격</td><td>조기 P 가 일찍 와서 불규칙</td><td>P-P 는 규칙적</td></tr> <tr><td>PR 간격</td><td>대체로 비슷</td><td>둘째 박동에서 길어진다</td></tr> </tbody></table> 그룹 박동을 보면 「긴 휴지 안에 숨은 P 가 있는가」부터 찾는다 — 있으면 방실차단, 없고 짧은 쪽 박동 앞 P 가 일찍 오면 조기수축이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 모비츠 II형은 PR 이 일정하다가 예고 없이 P 뒤 QRS 가 빠지고 그 P 가 휴지 안에 보였다면 정답이 된다.\n② 심방세동은 P파가 없고 RR 이 짝지은 규칙 없이 완전히 불규칙하게 변했다면 정답이 된다.\n④ 심실조기수축 이단맥은 짧은 간격 뒤 박동이 앞선 P파 없이 넓고(≥ 0.12초) 이상한 모양의 QRS 였다면 정답이 된다.\n⑤ 모비츠 I형은 P-P 가 규칙적이고 PR 이 점점 길어지다 긴 휴지 안에 전도되지 않은 P 가 하나 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "둘씩 묶인 박동을 보고 그룹 박동 = 웬케바흐로 판단하는 것 — 휴지 안에 숨은 P 가 없다."
+   },
+   {
+    "k": "학습목표",
+    "v": "좁은 QRS 가 둘씩 묶여 짧은·긴 RR 이 번갈아 반복되고 모든 QRS 앞에 P 가 있으며 긴 휴지에 전도되지 않은 P 가 없으면 심방조기수축 이단맥으로 판독하고 모비츠 I형 3:2 전도와 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 253: Approach to Supraventricular Arrhythmias · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4262 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 의 정상·조기 박동이 1:1 로 번갈아 오고 긴 휴지에 숨은 P 가 없으면 심방조기수축 이단맥이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "긴 휴지 안에 전도되지 않은 P파가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 짧은(약 1.0초)·긴(약 1.36초) RR 이 번갈아, 모든 QRS 좁고 같은 모양, 앞에 P → 심방 기원 조기 박동의 반복",
+    "영상: 긴 휴지에 숨은 P 없음 → 방실차단이 아닌 심방조기수축 이단맥"
+   ],
+   "key": [
+    {
+     "item": "영상: 짧은·긴 RR 이 번갈아 반복되는 둘씩 묶인 좁은 QRS",
+     "why": "이단맥 양상",
+     "also": []
+    },
+    {
+     "item": "영상: 긴 휴지 안에 전도되지 않은 P 없음",
+     "why": "방실차단 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "맥박은 둘씩 짝지어 뛴다",
+     "why": "이단맥의 진찰 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "베타차단제나 디곡신은 먹지 않는다",
+     "why": "약물성 방실차단 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "갑상샘자극호르몬은 참고치 이내",
+     "why": "갑상샘항진증 원인을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "커피를 하루 4잔 마신다",
+     "why": "조기수축 유발 요인 — 줄이도록 권한다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "좁은 QRS 의 정상·조기 박동이 번갈아 오고 모든 QRS 앞에 P 가 있으며 긴 휴지에 숨은 P 가 없다. 심방조기수축 이단맥이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "긴 휴지 안에 전도되지 않은 P 가 보이고 PR 이 둘째 박동에서 길어졌다면 모비츠 I형"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0806.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/04000/#files-panel",
+   "asset_id": "PTBXL-04262",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 4262"
+  },
+  "run_id": "20261126T202402Z_일일심전도_2026-11-27_3units_3q_1594fda1",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0802",
   "exam": "imaging",
   "style": "usmle_style",
