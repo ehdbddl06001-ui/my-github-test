@@ -2,6 +2,43 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0988",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "TSG-01 in the treatment of chronic heart failure in patients with coronary artery disease: A prospective clinical phase IIa trial",
+  "authors": [
+   "Zhao Qifei",
+   "Wang Yongxia",
+   "Yu Shujun",
+   "Xiao Yue",
+   "He Jia",
+   "Xu Jinfang",
+   "Zhu Xiaodong",
+   "Wang Zhentao",
+   "et al."
+  ],
+  "journal": "Canadian journal of physiology and pharmacology",
+  "doi": "10.1139/cjpp-2025-0374",
+  "pmid": "43084835",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43084835/",
+  "pubdate": "2026-11-25",
+  "date": "2026-11-26",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "TSG-01, a novel agent dominated by secondary ginsenosides, may benefit chronic heart failure (CHF), yet its efficacy and safety in CHF patients with coronary artery disease (CAD) remain unclear. This phase IIa trial enrolled 85 CAD patients with NYHA III CHF (40-75 years), randomized to high-dose TSG-01 (n=29), low-dose TSG-01 (n=28), or placebo (n=28) for 12 weeks. Outcomes were evaluated in the intention-to-treat cohort (ITT, n=85) and an exploratory digoxin-free cohort (n=59). No significant between-group difference was found for the NYHA-based efficacy endpoint. In the ITT cohort, only low-dose TSG-01 significantly improved left ventricular ejection fraction (LVEF) versus placebo; in the digoxin-free cohort, both doses yielded significant LVEF improvement. Diseases occurring the infectious and infective system, gastrointestinal system and the blood and lymphatic system are the common adverse events, with no significant difference between the 3 groups. Together, this study demonstrates that TSG-01 is well tolerated with similar adverse event profiles across groups, and confers potential cardiac benefits in digoxin-free patients, warranting further confirmatory studies. Registration: Clinicaltrials.gov, no. NCT04515290.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0987",
   "topic": "Surgery",
   "subtopic": "",
