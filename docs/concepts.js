@@ -31691,9 +31691,9 @@ window.MEDKOS_CONCEPTS = {
    "Pediatrics"
   ],
   "version": 5,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "reviewStatus": "unreviewed",
-  "hash": "ea898a83477123be",
+  "hash": "9c8e6a59404198bd",
   "summary": [
    "결론: 유도 I 음성 + aVF 양성이면 우축편위(+90°~+180°) — 체형이 아니라 두 유도의 QRS 순면적이 축을 정한다.",
    "시험 단서: 사지유도 모양만 주고 축을 묻는다 — I 이 rS(작은 r·깊은 S), III·aVF 가 qR = 우축편위(right axis deviation).",
@@ -31808,7 +31808,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.physio.ventricular-activation.bundle-branch-block"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h240",
@@ -33000,9 +33002,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Cardiology",
   "seeAlso": [],
   "version": 1,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "reviewStatus": "unreviewed",
-  "hash": "2587dc279ca6c6a6",
+  "hash": "45f2f9cf3377b944",
   "summary": [
    "결론: 하벽 경색 + 저혈압 + 목정맥 확장 + 맑은 폐면 우심실 경색 — 니트로글리세린을 피하고 수액으로 전부하를 지킨다.",
    "시험 단서: II · III · aVF ST 상승에 V4R ST 상승, 폐 수포음 · 폐울혈 없음 — RV infarction with inferior STEMI.",
@@ -33080,7 +33082,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.physio.ventricular-preload.frank-starling"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h275",
@@ -73521,9 +73525,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Hematology",
   "seeAlso": [],
   "version": 1,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "reviewStatus": "unreviewed",
-  "hash": "e9f90bcbe2f1f1a1",
+  "hash": "7dc3737c33d17086",
   "summary": [
    "결론: 혈관 내 용혈 + 범혈구감소 + 간정맥 같은 특이 부위 혈전이면 PNH — 말초혈액 유세포분석으로 CD55 · CD59 결손 세포를 찾는다.",
    "시험 단서: 아침 콜라색 소변, 헤모시데린뇨, 합토글로빈 소실, 직접 항글로불린 음성, 버드-키아리 — PNH with Budd-Chiari.",
@@ -73603,7 +73607,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h100",
@@ -75083,6 +75089,239 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "imaging-2026-0205"
   ],
+  "hasErrors": false
+ },
+ "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59": {
+  "id": "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59",
+  "title": "보체 방패 — GPI 가 없으면 CD55 · CD59 도 없다",
+  "objective": "적혈구가 GPI 로 막에 붙인 CD55(C3 조각 결합 억제) · CD59(막공격복합체 삽입 억제)로 보체에서 자신을 지키는 원리를 설명하고, PIGA 체세포 돌연변이로 GPI 가 빠진 클론이 혈관 내 용혈 · 항글로불린 음성 · 유세포분석의 두 무리를 만드는 이유와 C5 · C3 억제의 차이를 설명한다",
+  "objectiveKind": "기전",
+  "condition": "보체 조절 단백과 GPI 고정 — 발작성 야간 혈색소뇨증(PNH)의 기전",
+  "topic": "Immunology",
+  "seeAlso": [
+   "Hematology"
+  ],
+  "version": 1,
+  "updated": "2026-11-27",
+  "reviewStatus": "unreviewed",
+  "hash": "4abbf9cc720fc6e9",
+  "summary": [
+   "결론: 적혈구는 GPI 고정 단백 CD55 · CD59 로 보체를 막고, PIGA 돌연변이로 GPI 가 없으면 둘이 함께 빠져 막공격복합체에 녹는다.",
+   "시험 단서: 항글로불린 음성 혈관 내 용혈, 유세포분석 CD55 · CD59 음성 무리 — GPI anchor deficiency (PIGA).",
+   "왜: 결함은 각 단백의 유전자가 아니라 그들을 막에 묶는 당지질 하나라, 한 번의 돌연변이로 여러 방어 단백이 한꺼번에 사라진다.",
+   "대체 경로는 늘 조금씩 켜져 만성 용혈을 내고, 감염으로 고전 경로가 켜지면 용혈이 악화된다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "적혈구는 GPI 고정 단백 CD55 · CD59 로 보체를 막고, PIGA 돌연변이로 GPI 가 없으면 둘이 함께 빠져 막공격복합체에 녹는다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "적혈구는 GPI 고정 단백 CD55 · CD59 로 보체를 막고, PIGA 돌연변이로 GPI 가 없으면 둘이 함께 빠져 막공격복합체에 녹는다."
+      ]
+     }
+    ],
+    "html": "적혈구는 GPI 고정 단백 CD55 · CD59 로 보체를 막고, PIGA 돌연변이로 GPI 가 없으면 둘이 함께 빠져 막공격복합체에 녹는다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "항글로불린 음성 혈관 내 용혈, 유세포분석 CD55 · CD59 음성 무리 — GPI anchor deficiency (PIGA).",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "항글로불린 음성 혈관 내 용혈",
+       "유세포분석 CD55 · CD59 음성 무리 — GPI anchor deficiency (PIGA)."
+      ]
+     }
+    ],
+    "html": "항글로불린 음성 혈관 내 용혈, 유세포분석 CD55 · CD59 음성 무리 — GPI anchor deficiency (PIGA)."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "결함은 각 단백의 유전자가 아니라 그들을 막에 묶는 당지질 하나라, 한 번의 돌연변이로 여러 방어 단백이 한꺼번에 사라진다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "결함은 각 단백의 유전자가 아니라 그들을 막에 묶는 당지질 하나라, 한 번의 돌연변이로 여러 방어 단백이 한꺼번에 사라진다."
+      ]
+     }
+    ],
+    "html": "결함은 각 단백의 유전자가 아니라 그들을 막에 묶는 당지질 하나라, 한 번의 돌연변이로 여러 방어 단백이 한꺼번에 사라진다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "대체 경로는 늘 조금씩 켜져 만성 용혈을 내고, 감염으로 고전 경로가 켜지면 용혈이 악화된다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "대체 경로는 늘 조금씩 켜져 만성 용혈을 내고, 감염으로 고전 경로가 켜지면 용혈이 악화된다."
+      ]
+     }
+    ],
+    "html": "대체 경로는 늘 조금씩 켜져 만성 용혈을 내고, 감염으로 고전 경로가 켜지면 용혈이 악화된다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 105장 p.804~805",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "immunology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.heme.pnh.flow-cytometry-diagnosis"
+  ],
+  "outline": "immuno.innate",
+  "order": 0,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 두 GPI 단백이 보체를 막는다",
+    "deep": false,
+    "html": "<p>보체가 켜지면 적혈구는 막 표면 단백으로 자신을 지킨다. CD55 는 C3 조각이 막에 붙는 것을 막고, CD59 는 C9 중합체로 된 막공격복합체(membrane attack complex)가 막에 꽂히는 것을 막는다 — 이 가운데 CD59 가 가장 중요하다 <sup>[1 105장 p.804]</sup> <sup>[1 105장 p.805]</sup>. 두 단백은 모두 당지질 GPI(glycosylphosphatidylinositol)에 펩티드 결합으로 묶여 막에 붙는다 <sup>[1 105장 p.804]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — GPI 를 못 만들면 방패가 한꺼번에 빠진다",
+    "deep": false,
+    "html": "<ul>\n<li>결함은 CD55 · CD59 유전자가 아니라 GPI 하나의 부족이다. GPI 합성 초기 단계에 필요한 X 연관 유전자 PIGA 의 체세포 돌연변이가 원인이다 <sup>[1 105장 p.804]</sup>.</li>\n<li>체세포 돌연변이라 골수는 돌연변이 세포와 정상 세포의 모자이크이고, 말초혈액에는 늘 GPI 음성(PNH) 세포와 양성 세포가 함께 있다 <sup>[1 105장 p.804]</sup>.</li>\n<li>정상 조혈이 면역 공격으로 줄고 GPI 음성 줄기세포가 그 공격을 피해 자리를 채운다는 설명이 있다 — 재생불량빈혈과의 연관, 악성이 아닌 클론 질환이다 <sup>[1 105장 p.804]</sup>.</li>\n<li>드물게 상염색체 PIGT 의 양대립 돌연변이로 GPI 는 만들어지지만 단백에 붙지 못하는 형도 있다 <sup>[1 105장 p.804]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 혈관 내 용혈 · 항글로불린 음성 · 두 무리",
+    "deep": false,
+    "html": "<ul>\n<li>늘 조금씩 켜지는 대체 경로가 만성 혈관 내 용혈을 내고, 감염으로 고전 경로가 켜지면 용혈이 크게 악화된다 <sup>[1 105장 p.804]</sup>.</li>\n<li>항체가 아닌 적혈구 자체의 결함이라 항글로불린 검사가 특징적으로 음성이다 <sup>[1 105장 p.805]</sup>.</li>\n<li>유세포분석에서 CD59 · CD55 음성 무리가 따로 보이는 두 봉우리 분포가 나온다 <sup>[1 105장 p.804]</sup>.</li>\n<li>혈전은 가장 위험한 합병증이지만 기전은 덜 밝혀졌다 — 혈소판의 CD59 결손이 부적절한 활성화를 낼 가능성이 거론된다 <sup>[1 105장 p.804]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 빠진 단백을 세고, 보체를 끊는다",
+    "deep": false,
+    "html": "<ul>\n<li>진단은 빠진 방패를 직접 세는 것 — 적혈구 · 과립구 유세포분석에서 결손 세포가 대략 적혈구 5 % · 과립구 20 % 이상이어야 PNH 로 진단한다 <sup>[1 105장 p.804]</sup>. 검사 선택은 임상 정리본 「PNH — 용혈 · 혈구감소 · 혈전이면 유세포분석」.</li>\n<li>C5 를 막으면 혈관 내 용혈은 멈추지만 C3d 옵소닌화에 의한 혈관 외 용혈이 남고, C3 를 막으면 둘 다 줄어든다 <sup>[1 105장 p.805]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 105장 p.804~805)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "적혈구의 보체 방패와 PNH 에서 생기는 일",
+    "columns": [
+     "상태",
+     "CD55 · CD59",
+     "결과"
+    ],
+    "rows": [
+     [
+      "정상 적혈구",
+      "있음 — C3 조각 결합 억제 · 막공격복합체 삽입 억제",
+      "보체가 켜져도 녹지 않는다"
+     ],
+     [
+      "PNH 적혈구",
+      "없음(GPI 합성 차단)",
+      "C3 조각 결합 · 막공격복합체로 혈관 내 용혈"
+     ],
+     [
+      "PNH + C5 억제",
+      "없음",
+      "혈관 내 용혈 멈춤, C3d 옵소닌화로 혈관 외 용혈 · 항글로불린 양성"
+     ],
+     [
+      "PNH + C3 억제",
+      "없음",
+      "혈관 내 · 혈관 외 용혈 모두 줄어든다"
+     ]
+    ],
+    "note": "<sup>[1 105장 p.805]</sup>"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "PNH 용혈 = 항체 매개 용혈?",
+    "point": "PNH 는 항체가 아니라 적혈구 자체의 결함(보체 방어 단백 결손)이다 — 그래서 직접 항글로불린 검사가 특징적으로 음성이다. 대체 경로 활성이 만성 용혈을, 항원-항체 반응(고전 경로)이 감염 때의 악화를 맡는다 <sup>[1 105장 p.804]</sup> <sup>[1 105장 p.805]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "C5 억제 vs C3 억제 — 무엇이 남나",
+    "point": "C5 를 막으면 막공격복합체가 생기지 않아 혈관 내 용혈은 멈추지만, C3d 가 붙은 적혈구가 비장 등에서 깨지는 혈관 외 용혈이 남고 항글로불린 검사가 양성으로 바뀐다. C3 를 막으면 C3 조각 옵소닌화까지 막아 혈관 외 용혈도 줄어든다 <sup>[1 105장 p.805]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 105장 Hemolytic Anemias p.803–805",
+    "checked": "본문 대조(드라이브 문서 H22_105) — p.803 한랭응집소병: 적혈구에 붙은 IgM 이 고전 경로 보체를 켜 막공격복합체로 혈관 내 용혈, C3b 옵소닌화로 혈관 외 용혈; p.804 PNH: 후천성 만성 혈관 내 용혈 · 범혈구감소 · 정맥 혈전의 세 가지, 확진은 CD59 · CD55 결손 적혈구의 상당 비율을 보이는 것 · 표준은 유세포분석(두 무리, 적혈구 5 % · 과립구 20 % 이상), 병태생리: 적혈구 자체 결함으로 활성 보체에 예민 — 대체 경로가 만성 용혈, 고전 경로(항원-항체)가 감염 때 악화, CD59 가 C9 중합체(막공격복합체) 삽입을 막는 가장 중요한 단백, 결손은 각 유전자가 아니라 GPI 부족 — X 연관 PIGA 체세포 돌연변이, 골수 모자이크 · 말초혈액에 GPI 음성 · 양성 세포가 함께, 혈전 기전은 덜 밝혀짐, 드물게 PIGT 양대립 돌연변이, 재생불량빈혈과의 관계(GPI 특이 T 세포에 의한 음성 선택 · 비악성 클론 질환); p.805 그림 105-10: CD55 는 C3 조각 결합 억제, CD59 는 막공격복합체 삽입 억제, C5 차단 시 혈관 내 용혈 소실 · C3d 옵소닌화로 혈관 외 용혈 · 항글로불린 양성, C3 차단 시 혈관 외 용혈도 억제",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-27",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "PNH 적혈구에서 CD55 와 CD59 가 함께 빠지는 이유는?",
+    "a": "두 단백의 유전자가 아니라 그들을 막에 묶는 GPI 를 만드는 PIGA 에 돌연변이가 생겨 GPI 고정 단백이 모두 막에 붙지 못하기 때문이다."
+   },
+   {
+    "q": "PNH 환자의 유세포분석에서 세포가 두 무리로 갈라지는 이유는?",
+    "a": "체세포 돌연변이라 골수가 돌연변이 세포와 정상 세포의 모자이크이고, 말초혈액에도 GPI 음성 무리와 양성 무리가 함께 있기 때문이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 항체가 보체를 켜는 용혈",
+    "stem": "67세 여자가 3개월 전부터 피곤하고 추운 날 손끝이 파래진다고 해서 왔다. 혈색소 8.4 g/dL, 그물적혈구 9 %, LDH 상승, 합토글로빈 감소. 직접 항글로불린 검사는 C3d 에 양성이고 IgG 에는 음성이며, 한랭 응집소 역가가 높다. 말초혈액 유세포분석에서 적혈구 · 과립구의 CD55 · CD59 발현은 정상이다. 이 환자의 용혈 기전으로 가장 알맞은 것은?",
+    "options": [
+     "PIGA 돌연변이로 GPI 고정 보체 조절 단백이 빠진 적혈구가 대체 경로에 녹는다",
+     "차가운 곳에서 적혈구에 붙는 IgM 이 고전 경로 보체를 켠다",
+     "산화 스트레스로 헤모글로빈이 변성되어 하인츠 소체가 생긴다",
+     "스펙트린 결손으로 적혈구가 구형이 되어 비장에 걸린다",
+     "인공 판막에 부딪혀 적혈구가 기계적으로 조각난다"
+    ],
+    "answer": 2,
+    "explanation": "CD55 · CD59 가 정상이므로 적혈구의 보체 방패는 그대로다 — PNH(A)가 아니다. 대신 직접 항글로불린 검사가 C3d 에 양성이고 한랭 응집소가 높아 항체(IgM)가 고전 경로 보체를 켜는 한랭응집소병이다 [[harrison-22: 105장 p.803]]. PNH 는 적혈구 자체 결함이라 항글로불린 검사가 특징적으로 음성이고, 유세포분석에서 CD55 · CD59 음성 무리가 보인다 [[harrison-22: 105장 p.804]] [[harrison-22: 105장 p.805]].",
+    "of": "",
+    "changed": "항글로불린 음성 · CD55 · CD59 결손 대신 직접 항글로불린 C3d 양성 · 한랭에서 손끝 청색증 · IgM 한랭 응집소를 주었다 → 적혈구 자체 결함이 아니라 항체가 보체를 켜는 한랭응집소병이 답이 된다",
+    "flip": true
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
   "hasErrors": false
  },
  "cn.immuno.immune-complex.cryoglobulinemic-vasculitis": {
@@ -171300,7 +171539,8 @@ window.MEDKOS_CONCEPTS = {
   "roots": [],
   "rootsNone": "",
   "rootSupports": [
-   "cn.cardio.complete-rbbb.ecg-recognition"
+   "cn.cardio.complete-rbbb.ecg-recognition",
+   "cn.cardio.qrs-axis.limb-lead-polarity"
   ],
   "outline": "physio.cardiac",
   "order": 2,
@@ -171429,6 +171669,234 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "좌각차단은 중격 탈분극부터 오른→왼으로 거꾸로 일어나 V6 의 중격 q 파가 사라지고, 좌심실이 늦게 깨어 주 벡터가 왼쪽·뒤로 향한다 — V1 넓은 QS, V6 넓은 R [[harrison-22: 247장 p.1871]]. T 파가 QRS 와 반대인 것은 바뀐 탈분극 순서를 따르는 이차 변화다 [[harrison-22: 247장 p.1872]]. V1 rSR′ 이었다면 A(우각차단)가 답이었다. 방실결절 지연은 PR 을 늘리지 QRS 를 넓히지 않고, 좌전섬유속 차단은 QRS 가 넓지 않다.",
     "of": "",
     "changed": "V1 rSR′·V6 넓은 S 대신 V1 넓은 QS·V6 넓은 R(중격 q 없음)을 주었다 → 늦게 깨는 심실이 우심실에서 좌심실로 바뀌어 답이 좌각차단의 기전이 된다",
+    "flip": true
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
+ "cn.physio.ventricular-preload.frank-starling": {
+  "id": "cn.physio.ventricular-preload.frank-starling",
+  "title": "심실 전부하 — 이완기말 길이가 박출량을 정한다",
+  "objective": "전부하 · 후부하 · 수축력이 1회 박출량을 정하는 원리(스탈링 법칙)를 설명하고, 수축력이 떨어진 심실일수록 박출량이 전부하에 기대는 이유로 정맥 확장제 · 혈액량 감소가 우심실 경색에서 혈압을 무너뜨리는 과정을 설명한다",
+  "objectiveKind": "기전",
+  "condition": "스탈링 법칙(Frank-Starling law)과 심실 전부하(preload)",
+  "topic": "Physiology",
+  "seeAlso": [
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-11-27",
+  "reviewStatus": "unreviewed",
+  "hash": "3bf0f2db03284f5f",
+  "summary": [
+   "결론: 1회 박출량은 전부하(이완기말 길이)에 비례하고 후부하에 반비례하며, 수축력이 그 곡선의 높이를 정한다.",
+   "시험 단서: 하벽 경색 + 저혈압 + 목정맥 확장 + 맑은 폐, 질산염 · 모르핀 뒤 혈압 하강 — preload-dependent ventricle.",
+   "왜: 수축력이 떨어진 심실은 아래로 처진 기능 곡선 위에 있어 같은 박출량을 내려면 더 많은 충만이 필요하다.",
+   "전부하를 정하는 것: 혈액량 · 체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프 · 심방 수축."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "1회 박출량은 전부하(이완기말 길이)에 비례하고 후부하에 반비례하며, 수축력이 그 곡선의 높이를 정한다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "1회 박출량은 전부하(이완기말 길이)에 비례하고 후부하에 반비례하며, 수축력이 그 곡선의 높이를 정한다."
+      ]
+     }
+    ],
+    "html": "1회 박출량은 전부하(이완기말 길이)에 비례하고 후부하에 반비례하며, 수축력이 그 곡선의 높이를 정한다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "하벽 경색 + 저혈압 + 목정맥 확장 + 맑은 폐, 질산염 · 모르핀 뒤 혈압 하강 — preload-dependent ventricle.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "하벽 경색 + 저혈압 + 목정맥 확장 + 맑은 폐",
+       "질산염 · 모르핀 뒤 혈압 하강 — preload-dependent ventricle."
+      ]
+     }
+    ],
+    "html": "하벽 경색 + 저혈압 + 목정맥 확장 + 맑은 폐, 질산염 · 모르핀 뒤 혈압 하강 — preload-dependent ventricle."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "수축력이 떨어진 심실은 아래로 처진 기능 곡선 위에 있어 같은 박출량을 내려면 더 많은 충만이 필요하다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "수축력이 떨어진 심실은 아래로 처진 기능 곡선 위에 있어 같은 박출량을 내려면 더 많은 충만이 필요하다."
+      ]
+     }
+    ],
+    "html": "수축력이 떨어진 심실은 아래로 처진 기능 곡선 위에 있어 같은 박출량을 내려면 더 많은 충만이 필요하다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "전부하를 정하는 것: 혈액량 · 체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프 · 심방 수축.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "전부하를 정하는 것: 혈액량 · 체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프 · 심방 수축."
+      ]
+     }
+    ],
+    "html": "전부하를 정하는 것: 혈액량 · 체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프 · 심방 수축."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 244장 p.1846~1852, 286장 p.2118 · 2123",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "physiology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.cardio.rv-infarction.avoid-preload-reduction"
+  ],
+  "outline": "physio.cardiac",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 늘어난 근육이 더 세게 수축한다",
+    "deep": false,
+    "html": "<p>심근이 줄어드는 정도, 곧 1회 박출량은 세 가지가 정한다 — 수축 시작 때의 근육 길이(전부하 · preload), 수축하며 이겨야 할 장력(후부하 · afterload), 수축력(contractility) <sup>[1 244장 p.1850]</sup>. 전부하는 수축 시작 때의 근절 길이를 정하고, 수축력은 근절이 약 2.2 μm 일 때 가장 크다. 일정 범위 안에서 심실 수축력이 이완기말 길이에 따르는 것이 스탈링 법칙(Frank-Starling law)이며, 생체에서 이완기말 길이는 이완기말 용적과 거의 같이 움직인다 <sup>[1 244장 p.1850]</sup>. 전부하는 혈액량과 그 분포(체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프), 심방 수축이 정한다 — 정맥 긴장도가 정맥 용량을 바꿔 전부하를 움직인다 <sup>[1 244장 p.1846]</sup> <sup>[1 244장 p.1852]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 수축력이 떨어지면 전부하에 기댄다",
+    "deep": false,
+    "html": "<ul>\n<li>박출량은 전부하에 비례하고 후부하에 반비례한다. 수축력이 떨어진 심장은 정상이거나 높은 이완기말 용적에서도 박출량이 작다 — 기능 곡선이 아래 · 오른쪽으로 처진다 <sup>[1 244장 p.1850]</sup>.</li>\n<li>처진 곡선 위에서는 같은 박출량을 내려고 더 큰 충만이 필요하므로, 전부하가 줄면 박출량이 크게 떨어진다.</li>\n<li>정상 심장은 혈액량이 조금 줄거나 심방 수축을 잃어도 교감신경이 수축력 · 심박수 · 정맥 긴장도를 올려 안정 시 심박출을 지킨다 <sup>[1 244장 p.1851]</sup>. 다친 심실에는 이 여유가 없다.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 우심실이 다치면 오른쪽에 고이고 왼쪽이 빈다",
+    "deep": false,
+    "html": "<ul>\n<li>하벽 경색의 약 1/3 에 우심실 괴사가 있다. 우심실이 피를 앞으로 보내지 못하면 오른쪽에 피가 고여 목정맥 확장 · 쿠스마울 징후 · 간 비대가 생기고, 폐로 가는 피가 줄어 좌심이 덜 차 저혈압이 온다 — 폐는 맑다 <sup>[1 286장 p.2123]</sup>.</li>\n<li>니트로글리세린은 전부하를 낮춰 산소 요구를 줄이고, 모르핀은 교감신경에 의한 정맥 수축을 풀어 정맥 고임으로 심박출 · 혈압을 떨어뜨릴 수 있다 <sup>[1 286장 p.2118]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 전부하를 지킬 때와 줄일 때",
+    "deep": false,
+    "html": "<ul>\n<li>우심실 경색: 수액으로 우심실 전부하를 지키고, 질산염처럼 전부하를 빼앗는 약을 피한다 <sup>[1 286장 p.2118]</sup> <sup>[1 286장 p.2123]</sup>. 처치 순서는 임상 정리본 「우심실 경색 — 전부하에 기대니 질산염을 피한다」.</li>\n<li>폐울혈이 있는 좌심부전은 반대로 충만 압력이 이미 높아 전부하를 낮추는 니트로글리세린이 증상을 덜고 <sup>[1 286장 p.2118]</sup>, 혈관 확장제로 후부하를 낮추면 심박출이 는다 <sup>[1 244장 p.1851]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 244장 p.1846~1852, 286장 p.2118 · 2123)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "1회 박출량을 정하는 세 가지",
+    "columns": [
+     "결정 요인",
+     "무엇으로 정해지나",
+     "박출량"
+    ],
+    "rows": [
+     [
+      "전부하",
+      "혈액량 · 체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프 · 심방 수축",
+      "늘면 증가"
+     ],
+     [
+      "후부하",
+      "전신 혈관 저항 · 동맥 탄성 · 동맥 혈액량 · 심실벽 장력(반지름 · 두께)",
+      "늘면 감소"
+     ],
+     [
+      "수축력",
+      "세포 안 칼슘 · 교감신경 · 카테콜아민 · 허혈 · 심근 괴사",
+      "곡선의 높이"
+     ]
+    ],
+    "note": "<sup>[1 244장 p.1850]</sup> <sup>[1 244장 p.1852]</sup>"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "전부하 vs 후부하 — 혈관 확장제는 늘 박출량을 늘린다?",
+    "point": "동맥을 넓혀 후부하를 줄이면 박출량이 늘지만, 정맥을 넓혀 정맥 용량이 커지면 전부하가 줄어 박출량이 준다. 수축력이 떨어진 심실이 전부하에 기대고 있을 때는 정맥 확장이 박출량과 혈압을 함께 떨어뜨린다 <sup>[1 244장 p.1850]</sup> <sup>[1 244장 p.1851]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "목정맥 확장 = 순환 혈액량 과다?",
+    "point": "목정맥압은 우심 충만 압력을 비춘다. 우심실이 다쳐 피를 앞으로 보내지 못하면 혈액량이 늘지 않아도 우심 쪽 압력이 오르고, 좌심은 덜 차서 박출이 준다 — 이때 목정맥 확장은 수액을 막을 이유가 아니다 <sup>[1 286장 p.2123]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 22e. 244장 Basic Biology of the Cardiovascular System p.1846, 1850–1852; 286장 ST-Segment Elevation Myocardial Infarction p.2118, 2123",
+    "checked": "본문 대조(드라이브 문서 H22_244 · H22_286) — 244장 p.1846 정맥 긴장도가 정맥 용량과 전부하를 정한다; p.1850 박출량의 세 결정 요인(전부하 · 후부하 · 수축력), 최적 근절 길이 약 2.2 μm, 스탈링 법칙(수축력은 이완기말 길이 — 생체에서는 이완기말 용적 — 에 따른다), 박출량은 전부하에 비례 · 후부하에 반비례, 수축력이 떨어지면 정상 또는 높은 이완기말 용적에서도 박출량이 준다, 기능 곡선의 이동; p.1851 후부하(라플라스 법칙), 혈관 확장제로 후부하가 줄면 심박출량이 는다, 혈액량 감소 · 심방 수축 상실은 보상 기전으로 견딘다; p.1852 표 244-2 박출량 결정 요인 · 286장 p.2118 니트로글리세린은 전부하를 낮춰 산소 요구를 줄인다, 수축기 < 90 mmHg · 우심실 경색 의심이면 질산염을 피한다, 모르핀의 정맥 고임이 심박출 · 혈압을 떨어뜨린다; p.2123 하벽 경색의 약 1/3 에 우심실 괴사, 목정맥 확장 · 쿠스마울 징후, 치료는 우심실 전부하를 지키는 수액",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-27",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "수축력이 떨어진 심실의 박출량이 정맥 확장제에 더 민감한 이유는?",
+    "a": "기능 곡선이 아래로 처져 같은 박출량에 더 큰 이완기말 용적이 필요하므로, 전부하가 조금만 줄어도 박출량이 크게 떨어진다."
+   },
+   {
+    "q": "우심실 경색에서 수액이 치료인 이유는?",
+    "a": "다친 우심실은 들어온 피만큼만 내보내므로 전부하를 늘려야 폐 순환과 좌심 충만이 유지된다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.physio.ventricular-preload.frank-starling#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 폐울혈이 있는 좌심부전",
+    "stem": "64세 남자가 2시간 전부터 가슴이 조이고 숨이 차서 왔다. 혈압 148/92 mmHg, 맥박 104회/분, 산소포화도 89 % 이다. 양쪽 폐 아래쪽에 수포음이 들리고 목정맥은 약간 확장되어 있다. 심전도에서 V1~V4 의 ST 분절이 올라가 있고 흉부 X선에서 폐울혈이 보인다. 이 환자에게 정맥 내 니트로글리세린이 증상을 덜어 주는 주된 혈역학 기전은?",
+    "options": [
+     "정맥 용량을 늘려 좌심실 전부하와 폐모세혈관 압력을 낮춘다",
+     "심근 칼슘 유입을 늘려 수축력을 높인다",
+     "동방결절을 억제해 심박수를 늦춘다",
+     "순환 혈액량을 늘려 박출량을 높인다",
+     "방실결절 전도를 늦춰 이완기 충만 시간을 늘린다"
+    ],
+    "answer": 1,
+    "explanation": "이 환자는 폐 수포음 · 폐울혈로 좌심 충만 압력이 이미 높다. 니트로글리세린은 정맥을 넓혀 전부하를 낮추고 산소 요구를 줄인다 [[harrison-22: 286장 p.2118]]. 원래 상황처럼 하벽 경색 · 저혈압 · 맑은 폐의 우심실 경색이었다면 다친 우심실이 전부하에 기대므로 같은 작용이 혈압을 무너뜨려 질산염을 피한다 [[harrison-22: 286장 p.2118]] — 같은 약이 전부하의 위치에 따라 이득도 해도 된다.",
+    "of": "",
+    "changed": "하벽 경색 · 목정맥 확장 · 맑은 폐 대신 전벽 경색 · 폐 수포음 · 산소포화도 저하 · 혈압 정상을 주었다 → 좌심 충만 압력이 이미 높아 전부하를 줄이는 것이 이득이 되고, 정답이 「정맥을 넓혀 전부하를 줄인다」로 바뀐다",
     "flip": true
    }
   ],

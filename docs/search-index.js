@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4365,
+  "total": 4367,
   "byType": {
    "kmle": 2016,
+   "concept": 251,
    "usmle": 288,
    "paper": 988,
    "imaging": 807,
-   "concept": 249,
    "ailab": 14,
    "basic": 3
   },
@@ -41,8 +41,8 @@ window.MEDKOS_INDEX = {
    "호흡기": 51,
    "소화기": 47,
    "소아과": 42,
+   "Physiology": 37,
    "응급·중환자": 37,
-   "Physiology": 36,
    "감염": 35,
    "내분비": 35,
    "신경": 35,
@@ -55,9 +55,9 @@ window.MEDKOS_INDEX = {
    "Pharmacology": 27,
    "Biochemistry": 23,
    "Microbiology": 23,
+   "Immunology": 21,
    "근골격·류마티스": 21,
    "약리": 21,
-   "Immunology": 20,
    "정신과": 20,
    "Internal Medicine": 19,
    "안과": 14,
@@ -81,7 +81,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 3096,
-   "medium": 1265,
+   "medium": 1267,
    "low": 4
   },
   "tagCount": 5091
@@ -688,6 +688,34 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-2021.md",
    "snippet": "58세 여자가 3개월 전부터 언덕길을 5분쯤 걸으면 가슴 한가운데가 조이고, 멈춰 서서 3~4분 쉬면 가라앉아 왔다. 쉬고 있을 때나 밤에는 아프지 않았고, 증상이 잦아지거나 길어지지는 않았다. 당뇨병으로 메트포르민을 먹고 있고 담배는 피우지 않는다. 오늘 진료실에서는 가슴 통증이 없다. 심음과 폐음은 정상이고 다리 부기는 없다. 안정 시 12유도 심전도에서 QRS 폭 0.14초의 완전 좌각차단이 있고, 2년 전 건강검진 심전",
    "text": "Cardiology Three Months of Chest Tightness on Uphill Walking That Settles with Rest in a Woman in Her Late Fifties with an Abnormal Baseline ECG chronic-coronary-syndrome left-bundle-branch-block noninvasive-testing coronary-ct-angiography KMLE 2026 / Claude 58세 여자가 3개월 전부터 언덕길을 5분쯤 걸으면 가슴 한가운데가 조이고, 멈춰 서서 3~4분 쉬면 가라앉아 왔다. 쉬고 있을 때나 밤에는 아프지 않았고, 증상이 잦아지거나 길어지지는 않았다. 당뇨병으로 메트포르민을 먹고 있고 담배는 피우지 않는다. 오늘 진료실에서는 가슴 통증이 없다. 심음과 폐음은 정상이고 다리 부기는 없다. 안정 시 12유도 심전도에서 QRS 폭 0.14초의 완전 좌각차단이 있고, 2년 전 건강검진 심전도에도 같은 모양이 있었다. 경흉부 심초음파에서 좌심실 구혈률은 60 %이고 국소 벽운동 이상과 판막 이상은 없다. 활력징후와 검사 결과는 자료와 같다. 관상동맥질환을 확인하기 위한 다음 검사로 가장 적절한 것은? A. 트레드밀 운동부하 심전도검사 B. 침습적 관상동맥조영술 C. 24시간 활동 심전도 감시 D. 관상동맥 CT 혈관조영술 E. 2주 뒤 고감도 트로포닌 재측정 전형적 노작성 협심증이 3개월째 안정적이라 만성 관상동맥증후군의 비침습 검사가 다음 단계다. 안정 시 완전 좌각차단이 있으면 운동 중 ST 변화를 판독할 수 없어 운동부하 심전도는 진단 가치가 없고, 영상 검사(관상동맥 CT 혈관조영술 또는 약물 부하 영상)를 고른다."
+  },
+  {
+   "id": "cn.physio.ventricular-preload.frank-starling",
+   "type": "concept",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/concepts/physiology/cn.physio.ventricular-preload.frank-starling.md",
+   "snippet": "정상 — 늘어난 근육이 더 세게 수축한다 심근이 줄어드는 정도, 곧 1회 박출량은 세 가지가 정한다 — 수축 시작 때의 근육 길이(전부하 · preload), 수축하며 이겨야 할 장력(후부하 · afterload), 수축력(contractility) [[harrison 22: 244장 p.1850]]. 전부하는 수축 시작 때의 근절 길이를 정하고, 수축력은 근절이 약 2.2 μm 일 때 가장 크다. 일정 범위 안에서 심실 수축",
+   "text": "Physiology 정상 — 늘어난 근육이 더 세게 수축한다 심근이 줄어드는 정도, 곧 1회 박출량은 세 가지가 정한다 — 수축 시작 때의 근육 길이(전부하 · preload), 수축하며 이겨야 할 장력(후부하 · afterload), 수축력(contractility) [[harrison 22: 244장 p.1850]]. 전부하는 수축 시작 때의 근절 길이를 정하고, 수축력은 근절이 약 2.2 μm 일 때 가장 크다. 일정 범위 안에서 심실 수축력이 이완기말 길이에 따르는 것이 스탈링 법칙(Frank Starling law)이며, 생체에서 이완기말 길이는 이완기말 용적과 거의 같이 움직인다 [[harrison 22: 244장 p.1850]]. 전부하는 혈액량과 그 분포(체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프), 심방 수축이 정한다 — 정맥 긴장도가 정맥 용량을 바꿔 전부하를 움직인다 [[harrison 22: 244장 p.1846]] [[harrison 22: 244장 p.1852]]. 고장 — 수축력이 떨어지면 전부하에 기댄다 박출량은 전부하에 비례하고 후부하에 반비례한다. 수축력이 떨어진 심장은 정상이거나 높은 이완기말 용적에서도 박출량이 작다 — 기능 곡선이 아래 · 오른쪽으로 처진다 [[harrison 22: 244장 p.1850]]. 처진 곡선 위에서는 같은 박출량을 내려고 더 큰 충만이 필요하므로, 전부하가 줄면 박출량이 크게 떨어진다. 정상 심장은 혈액량이 조금 줄거나 심방 수축을 잃어도 교감신경이 수축력 · 심박수 · 정맥 긴장도를 올려 안정 시 심박출을 지킨다 [[harrison 22: 244장 p.1851]]. 다친 심실에는 이 여유가 없다. 소견으로 — 우심실이 다치면 오른쪽에 고이고 왼쪽이 빈다 하벽 경색의 약 1/3 에 우심실 괴사가 있다. 우심실이 피를 앞으로 보내지 못하면 오른쪽에 피가 고여 목정맥 확장 · 쿠스마울 징후 · 간 비대가 생기고, 폐로 가는 피가 줄어 좌심이 덜 차 저혈압이 온다 — 폐는 맑다 [[harrison 22: 286장 p.2123]]. 니트로글리세린은 전부하를 낮춰 산소 요구를 줄이고, 모르핀은 교감신경에 의한 정맥 수축을 풀어 정맥 고임으로 심박출 · 혈압을 떨어뜨릴 수 있다 [[harrison 22: 286장 p.2118]]. 임상 판단으로 — 전부하를 지킬 때와 줄일 때 우심실 경색: 수액으로 우심실 전부하를 지키고, 질산염처럼 전부하를 빼앗는 약을 피한다 [[harrison 22: 286장 p.2118]] [[harrison 22: 286장 p.2123]]. 처치 순서는 임상 정리본 cn.cardio.rv infarction.avoid preload reduction . 폐울혈이 있는 좌심부전은 반대로 충만 압력이 이미 높아 전부하를 낮추는 니트로글리세린이 증상을 덜고 [[harrison 22: 286장 p.2118]], 혈관 확장제로 후부하를 낮추면 심박출이 는다 [[harrison 22: 244장 p.1851]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 244장 p.1846~1852, 286장 p.2118 · 2123)"
+  },
+  {
+   "id": "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59",
+   "type": "concept",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/concepts/immunology/cn.immuno.complement-regulation.gpi-anchored-cd55-cd59.md",
+   "snippet": "정상 — 두 GPI 단백이 보체를 막는다 보체가 켜지면 적혈구는 막 표면 단백으로 자신을 지킨다. CD55 는 C3 조각이 막에 붙는 것을 막고, CD59 는 C9 중합체로 된 막공격복합체(membrane attack complex)가 막에 꽂히는 것을 막는다 — 이 가운데 CD59 가 가장 중요하다 [[harrison 22: 105장 p.804]] [[harrison 22: 105장 p.805]]. 두 단백은 모두 당지질 G",
+   "text": "Immunology 정상 — 두 GPI 단백이 보체를 막는다 보체가 켜지면 적혈구는 막 표면 단백으로 자신을 지킨다. CD55 는 C3 조각이 막에 붙는 것을 막고, CD59 는 C9 중합체로 된 막공격복합체(membrane attack complex)가 막에 꽂히는 것을 막는다 — 이 가운데 CD59 가 가장 중요하다 [[harrison 22: 105장 p.804]] [[harrison 22: 105장 p.805]]. 두 단백은 모두 당지질 GPI(glycosylphosphatidylinositol)에 펩티드 결합으로 묶여 막에 붙는다 [[harrison 22: 105장 p.804]]. 고장 — GPI 를 못 만들면 방패가 한꺼번에 빠진다 결함은 CD55 · CD59 유전자가 아니라 GPI 하나의 부족이다. GPI 합성 초기 단계에 필요한 X 연관 유전자 PIGA 의 체세포 돌연변이가 원인이다 [[harrison 22: 105장 p.804]]. 체세포 돌연변이라 골수는 돌연변이 세포와 정상 세포의 모자이크이고, 말초혈액에는 늘 GPI 음성(PNH) 세포와 양성 세포가 함께 있다 [[harrison 22: 105장 p.804]]. 정상 조혈이 면역 공격으로 줄고 GPI 음성 줄기세포가 그 공격을 피해 자리를 채운다는 설명이 있다 — 재생불량빈혈과의 연관, 악성이 아닌 클론 질환이다 [[harrison 22: 105장 p.804]]. 드물게 상염색체 PIGT 의 양대립 돌연변이로 GPI 는 만들어지지만 단백에 붙지 못하는 형도 있다 [[harrison 22: 105장 p.804]]. 소견으로 — 혈관 내 용혈 · 항글로불린 음성 · 두 무리 늘 조금씩 켜지는 대체 경로가 만성 혈관 내 용혈을 내고, 감염으로 고전 경로가 켜지면 용혈이 크게 악화된다 [[harrison 22: 105장 p.804]]. 항체가 아닌 적혈구 자체의 결함이라 항글로불린 검사가 특징적으로 음성이다 [[harrison 22: 105장 p.805]]. 유세포분석에서 CD59 · CD55 음성 무리가 따로 보이는 두 봉우리 분포가 나온다 [[harrison 22: 105장 p.804]]. 혈전은 가장 위험한 합병증이지만 기전은 덜 밝혀졌다 — 혈소판의 CD59 결손이 부적절한 활성화를 낼 가능성이 거론된다 [[harrison 22: 105장 p.804]]. 임상 판단으로 — 빠진 단백을 세고, 보체를 끊는다 진단은 빠진 방패를 직접 세는 것 — 적혈구 · 과립구 유세포분석에서 결손 세포가 대략 적혈구 5 % · 과립구 20 % 이상이어야 PNH 로 진단한다 [[harrison 22: 105장 p.804]]. 검사 선택은 임상 정리본 cn.heme.pnh.flow cytometry diagnosis . C5 를 막으면 혈관 내 용혈은 멈추지만 C3d 옵소닌화에 의한 혈관 외 용혈이 남고, C3 를 막으면 둘 다 줄어든다 [[harrison 22: 105장 p.805]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 105장 p.804~805)"
   },
   {
    "id": "usmle-2026-0301",

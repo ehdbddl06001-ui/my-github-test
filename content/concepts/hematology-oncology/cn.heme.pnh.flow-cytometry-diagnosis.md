@@ -3,9 +3,10 @@ id: cn.heme.pnh.flow-cytometry-diagnosis
 type: concept
 topic: Hematology
 date: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-27
 version: 1
 outline: h100
+roots: [cn.immuno.complement-regulation.gpi-anchored-cd55-cd59]
 confidence: medium
 review_status: unreviewed
 note_form: 2

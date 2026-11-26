@@ -3,9 +3,10 @@ id: cn.cardio.rv-infarction.avoid-preload-reduction
 type: concept
 topic: Cardiology
 date: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-27
 version: 1
 outline: h275
+roots: [cn.physio.ventricular-preload.frank-starling]
 confidence: medium
 review_status: unreviewed
 note_form: 2

@@ -4,9 +4,10 @@ type: concept
 topic: Cardiology
 see_also: [Pulmonology, Pediatrics]
 date: 2026-09-23
-updated: 2026-11-26
+updated: 2026-11-27
 version: 5
 outline: h240            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 240장 Electrocardiography
+roots: [cn.physio.ventricular-activation.bundle-branch-block]
 confidence: medium
 review_status: unreviewed
 note_form: 2            # 판형 2(2026-09-25) — 결론·시험 단서·왜 → 혼동 → 표·도식 → 목표에 맞춘 본문
