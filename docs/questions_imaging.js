@@ -2,6 +2,268 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0819",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 처치 — 검진 심전도 이상을 들은 당뇨병 남성",
+  "type": "심전도 처치 — 검진 심전도 이상을 들은 당뇨병 남성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-27",
+  "vignette": "61세 남자가 건강검진 심전도에서 이상이 있다는 말을 듣고 왔다. 1년 전 명치가 답답하고 식은땀이 나서 하루 동안 참은 적이 있으나 지금은 가슴 통증이나 숨참이 없다. 당뇨병으로 메트포르민을 먹고 있고 다른 약은 먹지 않는다. 혈압 132/80 mmHg, 맥박 100회/분이다. 고감도 트로포닌 I 는 3시간 간격으로 2회 모두 참고치 이내이다. LDL 콜레스테롤은 142 mg/dL 이다. 심초음파에서 하벽과 후벽의 운동이 감소되어 있고 좌심실 박출률은 50 % 이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "와파린 투여",
+   "아스피린과 고강도 스타틴 투여",
+   "응급 관상동맥중재술",
+   "혈전용해제 투여",
+   "영구 심박동기 삽입"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: V1·V2 에 <b>R 이 S 보다 큰 키 큰 R파와 양성 T파</b>가 있고 <b>V1~V3 에 ST 하강이 없으며</b>, III 에 <b>깊은 Q파</b>가 있다 — 후벽 경색의 거울상(후벽의 Q파가 앞쪽 유도에서 큰 R 로 보임)과 하벽 경색이 <b>오래된 것</b>이다. 증상이 없고 <b>트로포닌 2회 정상</b>, 심초음파의 하벽·후벽 운동 감소가 1년 전 「참고 넘긴」 경색과 맞는다. 급성이 아니므로 재관류가 아니라 <b>이차 예방 — 아스피린과 고강도 스타틴</b>을 시작한다.\n- 원리: <b>후벽 경색은 거울로 본다</b>: 표준 12유도에는 좌심실 뒤쪽 벽을 직접 보는 유도가 없다. V1·V2 는 후벽을 정반대 방향에서 보므로, 후벽의 Q파는 V1·V2 에서 큰 R 로, 급성기의 ST 상승은 ST 하강으로, 오래된 뒤의 T 역위는 양성 T 로 뒤집혀 보인다. 오른쪽 관상동맥이나 좌회선지가 막히면 하벽과 후벽이 함께 경색된다.<br> <b>급성과 오래된 것을 가르는 것</b>: 급성 후벽 경색이면 V1~V3 에 수평 ST 하강이 있고 트로포닌이 오른다 — 이때는 ST 상승 경색과 같이 응급 재관류 대상이다. ST 하강 없이 R 파만 남고 트로포닌이 정상이면 이미 흉터가 된 경색이다.<br> <b>이차 예방이 첫 처치인 이유</b>: 경색을 겪은 환자는 재경색·사망 위험이 높고, 아스피린(혈소판 억제)과 고강도 스타틴(LDL 낮춤·죽상판 안정)이 이 위험을 줄인다. 그 뒤 베타차단제·ACE 억제제, 허혈 평가, 당뇨병 조절을 더한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">오래된 하벽·후벽 경색 — 정답(이차 예방)</th><th>급성 후벽 경색 — 가장 가까운 오답(응급 중재술)</th></tr></thead><tbody> <tr><td>V1~V3 ST</td><td><b>하강 없음</b>, 큰 R 과 양성 T</td><td>수평 ST 하강(후벽 ST 상승의 거울상)</td></tr> <tr><td>증상</td><td><b>없음</b>(1년 전 사건)</td><td>지금 진행 중인 흉통</td></tr> <tr><td>트로포닌</td><td><b>2회 정상</b></td><td>상승</td></tr> </tbody></table> V1·V2 의 큰 R 을 보면 ST 를 본다. ST 하강과 흉통·트로포닌 상승이 있으면 급성(재관류), 없으면 오래된 경색(이차 예방)이다.\n- 오답 이유:\n  - ① 와파린은 심방세동이나 좌심실 혈전이 함께 있을 때 정답이 된다 — 리듬은 규칙적이고 혈전 소견이 없다.\n  - ③ 응급 관상동맥중재술은 지금 흉통이 있고 V1~V3 에 수평 ST 하강과 트로포닌 상승이 있는 급성 후벽 경색이라면 정답이 된다.\n  - ④ 혈전용해제는 증상 시작 12시간 이내의 ST 상승 경색에서 120분 안에 중재술을 할 수 없을 때 정답이 된다.\n  - ⑤ 영구 심박동기는 하벽 경색 뒤 증상이 있는 고도 방실차단이 지속된다면 정답이 된다 — 여기서는 PR·전도가 정상이다.\n- 함정: V1·V2 의 큰 R 을 급성 후벽 경색으로 읽어 응급 중재술을 고르는 것 — ST 하강도 증상도 트로포닌 상승도 없다.\n- 학습목표: V1·V2 의 큰 R 과 양성 T, ST 하강 없음, 하벽 Q파를 오래된 하벽·후벽 경색으로 판독하고, 증상과 트로포닌이 없으면 응급 재관류가 아니라 이차 예방(아스피린·고강도 스타틴)을 시작한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 284: Ischemic Heart Disease · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12173 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "V1·V2 에 <b>R 이 S 보다 큰 키 큰 R파와 양성 T파</b>가 있고 <b>V1~V3 에 ST 하강이 없으며</b>, III 에 <b>깊은 Q파</b>가 있다 — 후벽 경색의 거울상(후벽의 Q파가 앞쪽 유도에서 큰 R 로 보임)과 하벽 경색이 <b>오래된 것</b>이다. 증상이 없고 <b>트로포닌 2회 정상</b>, 심초음파의 하벽·후벽 운동 감소가 1년 전 「참고 넘긴」 경색과 맞는다. 급성이 아니므로 재관류가 아니라 <b>이차 예방 — 아스피린과 고강도 스타틴</b>을 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>후벽 경색은 거울로 본다</b>: 표준 12유도에는 좌심실 뒤쪽 벽을 직접 보는 유도가 없다. V1·V2 는 후벽을 정반대 방향에서 보므로, 후벽의 Q파는 V1·V2 에서 큰 R 로, 급성기의 ST 상승은 ST 하강으로, 오래된 뒤의 T 역위는 양성 T 로 뒤집혀 보인다. 오른쪽 관상동맥이나 좌회선지가 막히면 하벽과 후벽이 함께 경색된다.<br> <b>급성과 오래된 것을 가르는 것</b>: 급성 후벽 경색이면 V1~V3 에 수평 ST 하강이 있고 트로포닌이 오른다 — 이때는 ST 상승 경색과 같이 응급 재관류 대상이다. ST 하강 없이 R 파만 남고 트로포닌이 정상이면 이미 흉터가 된 경색이다.<br> <b>이차 예방이 첫 처치인 이유</b>: 경색을 겪은 환자는 재경색·사망 위험이 높고, 아스피린(혈소판 억제)과 고강도 스타틴(LDL 낮춤·죽상판 안정)이 이 위험을 줄인다. 그 뒤 베타차단제·ACE 억제제, 허혈 평가, 당뇨병 조절을 더한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">오래된 하벽·후벽 경색 — 정답(이차 예방)</th><th>급성 후벽 경색 — 가장 가까운 오답(응급 중재술)</th></tr></thead><tbody> <tr><td>V1~V3 ST</td><td><b>하강 없음</b>, 큰 R 과 양성 T</td><td>수평 ST 하강(후벽 ST 상승의 거울상)</td></tr> <tr><td>증상</td><td><b>없음</b>(1년 전 사건)</td><td>지금 진행 중인 흉통</td></tr> <tr><td>트로포닌</td><td><b>2회 정상</b></td><td>상승</td></tr> </tbody></table> V1·V2 의 큰 R 을 보면 ST 를 본다. ST 하강과 흉통·트로포닌 상승이 있으면 급성(재관류), 없으면 오래된 경색(이차 예방)이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 와파린은 심방세동이나 좌심실 혈전이 함께 있을 때 정답이 된다 — 리듬은 규칙적이고 혈전 소견이 없다.\n③ 응급 관상동맥중재술은 지금 흉통이 있고 V1~V3 에 수평 ST 하강과 트로포닌 상승이 있는 급성 후벽 경색이라면 정답이 된다.\n④ 혈전용해제는 증상 시작 12시간 이내의 ST 상승 경색에서 120분 안에 중재술을 할 수 없을 때 정답이 된다.\n⑤ 영구 심박동기는 하벽 경색 뒤 증상이 있는 고도 방실차단이 지속된다면 정답이 된다 — 여기서는 PR·전도가 정상이다."
+   },
+   {
+    "k": "함정",
+    "v": "V1·V2 의 큰 R 을 급성 후벽 경색으로 읽어 응급 중재술을 고르는 것 — ST 하강도 증상도 트로포닌 상승도 없다."
+   },
+   {
+    "k": "학습목표",
+    "v": "V1·V2 의 큰 R 과 양성 T, ST 하강 없음, 하벽 Q파를 오래된 하벽·후벽 경색으로 판독하고, 증상과 트로포닌이 없으면 응급 재관류가 아니라 이차 예방(아스피린·고강도 스타틴)을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 284: Ischemic Heart Disease · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12173 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202327Z_일일심전도_2026-11-28_2units_2q_9f267eae",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "V1·V2 의 큰 R·양성 T 와 하벽 Q파에 ST 하강·증상·트로포닌 상승이 없으면 오래된 하벽·후벽 경색 — 이차 예방(아스피린·고강도 스타틴)을 시작한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "V1~V3 에 ST 하강이 없고 증상이 없으며 트로포닌이 2회 정상이다",
+   "steps": 3,
+   "chain": [
+    "영상: V1·V2 의 큰 R(R > S)과 양성 T + III 의 깊은 Q → 하벽·후벽 경색",
+    "영상: V1~V3 ST 하강 없음 + 트로포닌 2회 정상 + 무증상 → 오래된 경색",
+    "급성이 아님 → 재관류가 아닌 이차 예방(아스피린·고강도 스타틴)"
+   ],
+   "key": [
+    {
+     "item": "영상: V1·V2 의 큰 R 과 양성 T, V1~V3 ST 하강 없음",
+     "why": "후벽 경색의 거울상 — 급성 소견 없음",
+     "also": []
+    },
+    {
+     "item": "영상: III 의 깊은 Q파",
+     "why": "하벽 경색",
+     "also": []
+    },
+    {
+     "item": "심초음파에서 하벽과 후벽의 운동이 감소",
+     "why": "경색 부위 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "고감도 트로포닌 I 는 3시간 간격으로 2회 모두 참고치 이내",
+     "why": "급성 심근경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "지금은 가슴 통증이나 숨참이 없다",
+     "why": "진행 중인 허혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "LDL 콜레스테롤은 142 mg/dL",
+     "why": "고강도 스타틴 대상",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "1년 전 명치가 답답하고 식은땀이 나서 하루 동안 참은 적",
+     "why": "참고 넘긴 경색의 시점",
+     "also": []
+    }
+   ],
+   "summary": "V1·V2 의 큰 R·양성 T 와 III 의 Q파는 하벽·후벽 경색이고, ST 하강·증상·트로포닌 상승이 없어 오래된 것이다. 아스피린과 고강도 스타틴으로 이차 예방을 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "지금 흉통이 있고 V1~V3 에 수평 ST 하강과 트로포닌 상승이 있었다면 응급 관상동맥중재술"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0819.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/12000/#files-panel",
+   "asset_id": "PTBXL-12173",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 12173"
+  },
+  "run_id": "20261127T202327Z_일일심전도_2026-11-28_2units_2q_9f267eae",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0818",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "순환기 — 12유도 심전도 판독",
+  "subtopic": "심전도 판독 — 백내장 수술 전 검사를 받는 고령 여성",
+  "type": "심전도 판독 — 백내장 수술 전 검사를 받는 고령 여성",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-27",
+  "vignette": "85세 여자가 백내장 수술 전 검사를 위해 왔다. 고혈압으로 20년째 약을 먹고 있다. 가슴 통증, 숨참, 어지럼, 실신은 없고 계단 두 층을 쉬지 않고 오른다. 혈압 142/78 mmHg, 맥박 70회/분이다. 심잡음은 없고 다리 부종도 없다. 혈청 칼륨 4.3 mEq/L 이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "좌전속지차단",
+   "좌후속지차단",
+   "완전좌각차단",
+   "완전우각차단",
+   "오래된 하벽 심근경색"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: RR 이 일정한 <b>동리듬 약 70회/분</b>이고 <b>QRS 는 좁다</b>(0.12초 미만). <b>I·aVL 은 작은 q 뒤 큰 R(qR)</b>, <b>II·III·aVF 는 작은 r 뒤 깊은 S(rS)</b>로 축이 −45° 보다 왼쪽인 <b>좌축편위</b>다. 하벽 유도의 첫 굴절이 위로 향하는 r 이라 병적 Q파가 아니다 — <b>좌전속지차단</b>이다.\n- 원리: <b>좌각의 앞가지가 막히면</b>: 좌각은 앞위쪽으로 가는 가는 좌전속지와 뒤아래쪽으로 가는 굵은 좌후속지로 나뉜다. 좌전속지가 막히면 흥분이 먼저 뒤아래쪽 벽에서 시작해(하벽 유도에 작은 r, I·aVL 에 작은 q), 그다음 늦게 앞위·왼쪽 벽으로 크게 돌아간다(I·aVL 에 큰 R, 하벽 유도에 깊은 S). 그래서 전체 축이 왼쪽 위로 기운다.<br> <b>왜 QRS 가 좁은가</b>: 섬유 하나만 막혔고 나머지 전도계는 빠르게 전도하므로 지연이 짧다 — 각 전체가 막혀 심근을 통해 천천히 퍼지는 각차단과 다르다.<br> <b>고령자에서의 의미</b>: 고혈압·노화에 따른 전도계 섬유화가 흔한 원인이고, 단독이면 증상이 없고 치료가 필요 없다. 우각차단과 함께(이섬유차단) 실신이 있으면 고도 방실차단을 의심한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">좌전속지차단 — 정답</th><th>좌후속지차단 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>축</td><td><b>좌축편위(−45° 보다 왼쪽)</b></td><td>우축편위(+90° 보다 오른쪽)</td></tr> <tr><td>I·aVL</td><td><b>qR</b></td><td>rS</td></tr> <tr><td>II·III·aVF</td><td><b>rS</b></td><td>qR</td></tr> <tr><td>진단 조건</td><td>다른 좌축 원인 없음</td><td>우심실비대·폐질환을 먼저 배제</td></tr> </tbody></table> 두 속지차단은 거울상이다. I 이 크게 양성이고 하벽 유도가 음성이면 앞가지, I 이 음성이고 하벽 유도가 양성이면 뒷가지다.\n- 오답 이유:\n  - ② 좌후속지차단은 I·aVL 이 rS, II·III·aVF 가 qR 인 우축편위이고 우심실비대가 없을 때 정답이 된다.\n  - ③ 완전좌각차단은 QRS 가 0.12초 이상으로 넓고 I·V6 에 넓게 갈라진 R, V1 에 깊은 QS 가 있다면 정답이 된다.\n  - ④ 완전우각차단은 QRS 가 0.12초 이상이고 V1 에 rsR′, I·V6 에 넓고 둔한 S파가 있다면 정답이 된다.\n  - ⑤ 오래된 하벽 경색은 II·III·aVF 의 첫 굴절이 0.04초 이상의 넓은 Q파였다면 정답이 된다.\n- 함정: 하벽 유도의 큰 음성 파형을 보고 하벽 경색의 Q파로 읽는 것 — 첫 굴절은 위로 향하는 작은 r 이다.\n- 학습목표: 좁은 QRS 의 좌축편위에서 I·aVL 의 qR 과 II·III·aVF 의 rS 를 좌전속지차단으로 판독하고 좌후속지차단·완전좌각차단과 가른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 15903 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "RR 이 일정한 <b>동리듬 약 70회/분</b>이고 <b>QRS 는 좁다</b>(0.12초 미만). <b>I·aVL 은 작은 q 뒤 큰 R(qR)</b>, <b>II·III·aVF 는 작은 r 뒤 깊은 S(rS)</b>로 축이 −45° 보다 왼쪽인 <b>좌축편위</b>다. 하벽 유도의 첫 굴절이 위로 향하는 r 이라 병적 Q파가 아니다 — <b>좌전속지차단</b>이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>좌각의 앞가지가 막히면</b>: 좌각은 앞위쪽으로 가는 가는 좌전속지와 뒤아래쪽으로 가는 굵은 좌후속지로 나뉜다. 좌전속지가 막히면 흥분이 먼저 뒤아래쪽 벽에서 시작해(하벽 유도에 작은 r, I·aVL 에 작은 q), 그다음 늦게 앞위·왼쪽 벽으로 크게 돌아간다(I·aVL 에 큰 R, 하벽 유도에 깊은 S). 그래서 전체 축이 왼쪽 위로 기운다.<br> <b>왜 QRS 가 좁은가</b>: 섬유 하나만 막혔고 나머지 전도계는 빠르게 전도하므로 지연이 짧다 — 각 전체가 막혀 심근을 통해 천천히 퍼지는 각차단과 다르다.<br> <b>고령자에서의 의미</b>: 고혈압·노화에 따른 전도계 섬유화가 흔한 원인이고, 단독이면 증상이 없고 치료가 필요 없다. 우각차단과 함께(이섬유차단) 실신이 있으면 고도 방실차단을 의심한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">좌전속지차단 — 정답</th><th>좌후속지차단 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>축</td><td><b>좌축편위(−45° 보다 왼쪽)</b></td><td>우축편위(+90° 보다 오른쪽)</td></tr> <tr><td>I·aVL</td><td><b>qR</b></td><td>rS</td></tr> <tr><td>II·III·aVF</td><td><b>rS</b></td><td>qR</td></tr> <tr><td>진단 조건</td><td>다른 좌축 원인 없음</td><td>우심실비대·폐질환을 먼저 배제</td></tr> </tbody></table> 두 속지차단은 거울상이다. I 이 크게 양성이고 하벽 유도가 음성이면 앞가지, I 이 음성이고 하벽 유도가 양성이면 뒷가지다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 좌후속지차단은 I·aVL 이 rS, II·III·aVF 가 qR 인 우축편위이고 우심실비대가 없을 때 정답이 된다.\n③ 완전좌각차단은 QRS 가 0.12초 이상으로 넓고 I·V6 에 넓게 갈라진 R, V1 에 깊은 QS 가 있다면 정답이 된다.\n④ 완전우각차단은 QRS 가 0.12초 이상이고 V1 에 rsR′, I·V6 에 넓고 둔한 S파가 있다면 정답이 된다.\n⑤ 오래된 하벽 경색은 II·III·aVF 의 첫 굴절이 0.04초 이상의 넓은 Q파였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "하벽 유도의 큰 음성 파형을 보고 하벽 경색의 Q파로 읽는 것 — 첫 굴절은 위로 향하는 작은 r 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "좁은 QRS 의 좌축편위에서 I·aVL 의 qR 과 II·III·aVF 의 rS 를 좌전속지차단으로 판독하고 좌후속지차단·완전좌각차단과 가른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Wagner P, Strodthoff N, Bousseljot RD, et al. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020;7:154 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 15903 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202327Z_일일심전도_2026-11-28_2units_2q_9f267eae",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "좁은 QRS 의 좌축편위에서 I·aVL 이 qR, II·III·aVF 가 rS 이면 좌전속지차단이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "I 이 크게 양성이고 하벽 유도가 rS — 좌후속지차단은 그 반대다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬 약 70회/분, QRS 좁음 → 각 전체의 차단은 아님",
+    "영상: I·aVL qR + II·III·aVF rS + 좌축편위 → 좌전속지차단"
+   ],
+   "key": [
+    {
+     "item": "영상: I·aVL 의 qR, II·III·aVF 의 rS",
+     "why": "좌전속지차단의 짝",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: QRS 좁음",
+     "why": "완전좌각·우각차단 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "가슴 통증, 숨참, 어지럼, 실신은 없고",
+     "why": "단독 속지차단 — 추가 처치 불필요",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압으로 20년째 약을 먹고 있다",
+     "why": "전도계 섬유화의 흔한 배경 — 판독을 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "좁은 QRS 에 I·aVL qR, 하벽 유도 rS 의 좌축편위다. 좌전속지차단이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "I·aVL 이 rS, 하벽 유도가 qR 인 우축편위였다면 좌후속지차단"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0818.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/15000/#files-panel",
+   "asset_id": "PTBXL-15903",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 15903"
+  },
+  "run_id": "20261127T202327Z_일일심전도_2026-11-28_2units_2q_9f267eae",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0817",
   "exam": "imaging",
   "style": "kmle_style",
