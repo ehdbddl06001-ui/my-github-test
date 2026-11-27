@@ -374,11 +374,11 @@
    "changes": []
   },
   "신장내과": {
-   "hash": "8a1e695962494cf64bb1",
-   "version": 16,
-   "date": "2026-11-26",
+   "hash": "37c5156ba9fc8ec2493f",
+   "version": 17,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_신장내과.pdf",
-   "pages": 38,
+   "pages": 39,
    "template_version": 13,
    "units": {
     "cn.neph.siadh.chronic-mild-fluid-restriction": {
@@ -437,70 +437,70 @@
     },
     "cn.neph.iga-nephropathy.synpharyngitic-hematuria": {
      "title": "IgA 신병증 — 감염과 동시 혈뇨 · 보체 정상",
-     "page": 22,
+     "page": 21,
      "concept_hash": "d9eaa15ca335f314",
+     "concept_version": 1
+    },
+    "cn.neph.membranous-nephropathy.renal-vein-thrombosis": {
+     "title": "막성 신병증 — 갑작스러운 옆구리 통증 · 혈뇨면 신정맥 혈전",
+     "page": 24,
+     "concept_hash": "4bccc5d07c56ae1c",
      "concept_version": 1
     },
     "cn.neph.membranous-nephropathy.anti-pla2r-diagnosis": {
      "title": "막성 신병증 — 항 PLA2R 양성이 진단을 정한다",
-     "page": 24,
+     "page": 25,
      "concept_hash": "945a5a3b6f9534e1",
      "concept_version": 1
     },
     "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
      "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 가른다",
-     "page": 26,
+     "page": 27,
      "concept_hash": "b659324742ec563f",
      "concept_version": 3
     },
     "cn.neph.adpkd.aneurysm-screening-mra": {
      "title": "다낭신 — 동맥류 가족력이면 증상 없어도 뇌 MRA",
-     "page": 27,
+     "page": 29,
      "concept_hash": "9f246ed212df17ae",
      "concept_version": 1
     },
     "cn.neph.acute-interstitial-nephritis.drug-induced-diagnosis": {
      "title": "급성 간질신염 — 새 약 뒤 무균 농뇨·백혈구 원주",
-     "page": 29,
+     "page": 31,
      "concept_hash": "e8ae181e803f8778",
      "concept_version": 1
     },
     "cn.neph.renal-artery-stenosis.diagnosis-clues": {
      "title": "신동맥 협착 — ACE 억제제 뒤 크레아티닌 상승이 단서",
-     "page": 31,
+     "page": 33,
      "concept_hash": "783eb1ea2d4b4a08",
      "concept_version": 1
     },
     "cn.neph.uric-acid-stone.urinary-alkalinization": {
      "title": "요산결석 — 녹이는 치료는 소변 알칼리화",
-     "page": 34,
+     "page": 35,
      "concept_hash": "9e1fd492a023979c",
      "concept_version": 1
     },
     "cn.neph.postrenal-aki.bladder-outlet-catheter": {
      "title": "방광 출구 폐쇄 AKI — 차 있는 방광엔 요도 도뇨관 먼저",
-     "page": 36,
+     "page": 37,
      "concept_hash": "e53e301cb61ba131",
      "concept_version": 1
     },
-    "cn.neph.membranous-nephropathy.renal-vein-thrombosis": {
-     "title": "Sudden Left Flank Pain and Blood in the Urine Two Months after a Diagnosis of Heavy Protein Leak in a Man in His Fifties",
-     "page": 38,
-     "concept_hash": null,
-     "concept_version": null
-    },
     "cn.neph.distal-rta.urine-anion-gap-differential": {
      "title": "Two Weeks of Muscle Weakness with a Low Potassium and Calcified Kidneys in a Woman with Dry Eyes and Mouth",
-     "page": 38,
+     "page": 39,
      "concept_hash": null,
      "concept_version": null
     }
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "272912416d7e136ec50d091526ca4aa2",
-    "version": 16,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "b7945fa679b7807889a2f4126342b6ca",
+    "version": 17,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -518,11 +518,11 @@
     "MedKOS_학습서_신장내과_v13_2026-11-20.pdf",
     "MedKOS_학습서_신장내과_v14_2026-11-24.pdf",
     "MedKOS_학습서_신장내과_v15_2026-11-25.pdf",
-    "MedKOS_학습서_신장내과_v16_2026-11-26.pdf"
+    "MedKOS_학습서_신장내과_v16_2026-11-26.pdf",
+    "MedKOS_학습서_신장내과_v17_2026-11-27.pdf"
    ],
    "changes": [
-    "내용 갱신: 원위 신세관산증 — 산혈증에도 소변 pH 가 5.5 를 넘는다 (정리본 v2 → v3)",
-    "새 단원: Sudden Left Flank Pain and Blood in the Urine Two Months after a Diagnosis of Heavy Protein Leak in a Man in His Fifties"
+    "내용 갱신: 막성 신병증 — 갑작스러운 옆구리 통증 · 혈뇨면 신정맥 혈전 (정리본 vNone → v1)"
    ]
   },
   "소아청소년과": {
@@ -708,11 +708,11 @@
    "changes": []
   },
   "정형외과": {
-   "hash": "bf365dcbc10d3c3ffbc5",
-   "version": 24,
-   "date": "2026-11-26",
+   "hash": "56fa301c8c6e3e0cb149",
+   "version": 25,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 28,
+   "pages": 29,
    "template_version": 13,
    "units": {
     "cn.ortho.shoulder-dislocation-older.rotator-cuff-tear": {
@@ -800,17 +800,17 @@
      "concept_version": 3
     },
     "cn.ortho.osteosarcoma.radiographic-diagnosis": {
-     "title": "Three Months of Night-time Pain and Swelling above the Knee in a Fifteen-year-old Boy",
+     "title": "골육종 — 청소년 골간단의 햇살 모양 골막 반응",
      "page": 28,
-     "concept_hash": null,
-     "concept_version": null
+     "concept_hash": "66aa7c1e61a7b443",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "b02aa016de3a859a7fe5f2e630c65d42",
-    "version": 24,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "6bf8fbf0ac2ca8387588c575da27627f",
+    "version": 25,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -836,16 +836,17 @@
     "MedKOS_학습서_정형외과_v21_2026-11-20.pdf",
     "MedKOS_학습서_정형외과_v22_2026-11-24.pdf",
     "MedKOS_학습서_정형외과_v23_2026-11-25.pdf",
-    "MedKOS_학습서_정형외과_v24_2026-11-26.pdf"
+    "MedKOS_학습서_정형외과_v24_2026-11-26.pdf",
+    "MedKOS_학습서_정형외과_v25_2026-11-27.pdf"
    ],
    "changes": [
-    "새 단원: Three Months of Night-time Pain and Swelling above the Knee in a Fifteen-year-old Boy"
+    "내용 갱신: 골육종 — 청소년 골간단의 햇살 모양 골막 반응 (정리본 vNone → v1)"
    ]
   },
   "외과": {
-   "hash": "039e50c8a71c3e5c3a77",
-   "version": 13,
-   "date": "2026-11-26",
+   "hash": "39c979f23a9d40d6f5dc",
+   "version": 14,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_외과.pdf",
    "pages": 8,
    "template_version": 13,
@@ -853,7 +854,7 @@
     "cn.gs.acute-cholecystitis.grade2-early-lc": {
      "title": "급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다",
      "page": 2,
-     "concept_hash": "567fb30e920e7d73",
+     "concept_hash": "b48bee08375f83f7",
      "concept_version": 4
     },
     "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a": {
@@ -865,9 +866,9 @@
    },
    "drive": {
     "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
-    "md5": "0ddfe33dbff1e8fa6b1eb135f22de683",
-    "version": 13,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "8323aff01864acfb9ad99ea108e45ed0",
+    "version": 14,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_외과_v1_2026-09-23.pdf",
@@ -882,10 +883,11 @@
     "MedKOS_학습서_외과_v10_2026-11-20.pdf",
     "MedKOS_학습서_외과_v11_2026-11-24.pdf",
     "MedKOS_학습서_외과_v12_2026-11-25.pdf",
-    "MedKOS_학습서_외과_v13_2026-11-26.pdf"
+    "MedKOS_학습서_외과_v13_2026-11-26.pdf",
+    "MedKOS_학습서_외과_v14_2026-11-27.pdf"
    ],
    "changes": [
-    "내용 수정: 유두갑상선암 — 림프절 전이 구역이 수술 범위를 정한다"
+    "내용 수정: 급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다"
    ]
   },
   "산부인과": {
@@ -1406,9 +1408,9 @@
    ]
   },
   "호흡기내과": {
-   "hash": "c68e0b0d37a2a2719b81",
-   "version": 18,
-   "date": "2026-11-26",
+   "hash": "ec541c005c24e90ae764",
+   "version": 19,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 12,
    "template_version": 13,
@@ -1434,8 +1436,8 @@
     "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis": {
      "title": "과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다",
      "page": 6,
-     "concept_hash": "201727029c2ed291",
-     "concept_version": 1
+     "concept_hash": "cf5753926c7b6b5e",
+     "concept_version": 2
     },
     "cn.pulm.copd-exacerbation.hypercapnic-failure-niv": {
      "title": "COPD 악화 고탄산 호흡부전 — 금기 없으면 NIPPV 먼저",
@@ -1458,9 +1460,9 @@
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "fb3a3b3a7c56b2c7b2d111e5dbb19ea4",
-    "version": 18,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "1f807d4a46907cbd5c6639d8d838d815",
+    "version": 19,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -1480,10 +1482,11 @@
     "MedKOS_학습서_호흡기내과_v15_2026-11-20.pdf",
     "MedKOS_학습서_호흡기내과_v16_2026-11-24.pdf",
     "MedKOS_학습서_호흡기내과_v17_2026-11-25.pdf",
-    "MedKOS_학습서_호흡기내과_v18_2026-11-26.pdf"
+    "MedKOS_학습서_호흡기내과_v18_2026-11-26.pdf",
+    "MedKOS_학습서_호흡기내과_v19_2026-11-27.pdf"
    ],
    "changes": [
-    "새 단원: 과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다"
+    "내용 갱신: 과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다 (정리본 v1 → v2)"
    ]
   },
   "응급의학과": {
@@ -1575,29 +1578,29 @@
    ]
   },
   "내분비내과": {
-   "hash": "d774604e309de3fb8e33",
-   "version": 14,
-   "date": "2026-11-26",
+   "hash": "6ff9aba15da868353108",
+   "version": 15,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_내분비내과.pdf",
-   "pages": 17,
+   "pages": 18,
    "template_version": 13,
    "units": {
     "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization": {
      "title": "갑상샘 IHC — 콜로이드를 채우면 타이로글로불린",
      "page": 2,
-     "concept_hash": "5c10eeb4d04cd66e",
+     "concept_hash": "72272d9a7ed3ef36",
      "concept_version": 3
     },
     "cn.endo.thyroid-follicular-cell.tsh-target": {
      "title": "갑상샘 여포세포 — 염색 세포를 직접 움직이는 것은 TSH",
-     "page": 4,
+     "page": 5,
      "concept_hash": "d9d6822ad4ca4af9",
      "concept_version": 2
     },
     "cn.endo.thyroid-nodule.low-tsh-scan-first": {
      "title": "갑상선 결절 — TSH 가 낮으면 스캔이 먼저",
-     "page": 7,
-     "concept_hash": "f08433113a686e8c",
+     "page": 6,
+     "concept_hash": "ee221540f9211a59",
      "concept_version": 1
     },
     "cn.endo.cushing-syndrome.screening-test": {
@@ -1606,42 +1609,42 @@
      "concept_hash": "2c49ae16a91ce864",
      "concept_version": 3
     },
+    "cn.endo.pheochromocytoma.biochemical-diagnosis": {
+     "title": "갈색세포종 — 영상보다 메타네프린이 먼저",
+     "page": 9,
+     "concept_hash": "02e63e37ff27f470",
+     "concept_version": 1
+    },
     "cn.endo.pheochromocytoma.preoperative-alpha-blockade": {
      "title": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
-     "page": 10,
+     "page": 11,
      "concept_hash": "99dfbf2fa4afa2fa",
      "concept_version": 2
     },
     "cn.endo.hhs.initial-fluid-resuscitation": {
      "title": "HHS — 첫 치료는 인슐린이 아니라 등장식염수",
-     "page": 12,
+     "page": 13,
      "concept_hash": "d67c6e924d21865e",
      "concept_version": 2
     },
     "cn.endo.hypoglycemia.c-peptide-differential": {
      "title": "고인슐린 저혈당 — C 펩티드가 내인성과 외인성을 가른다",
-     "page": 14,
+     "page": 15,
      "concept_hash": "54ad079bb8551aac",
      "concept_version": 1
     },
     "cn.endo.primary-hyperparathyroidism.surgery-indication": {
      "title": "무증상 원발성 부갑상샘기능항진증 — 기준 하나면 수술",
-     "page": 15,
+     "page": 16,
      "concept_hash": "85b4d5ceb16f1190",
      "concept_version": 1
-    },
-    "cn.endo.pheochromocytoma.biochemical-diagnosis": {
-     "title": "Six Months of Pounding Headaches, Palpitations and Sweating Spells in a Woman in Her Late Thirties",
-     "page": 17,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
-    "md5": "fa6d1adf2017c0d7d04a1f692d84483d",
-    "version": 14,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "6593bc810bf071e5803b30b04b51e3a0",
+    "version": 15,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_내분비내과_v1_2026-09-25.pdf",
@@ -1657,19 +1660,21 @@
     "MedKOS_학습서_내분비내과_v11_2026-11-20.pdf",
     "MedKOS_학습서_내분비내과_v12_2026-11-24.pdf",
     "MedKOS_학습서_내분비내과_v13_2026-11-25.pdf",
-    "MedKOS_학습서_내분비내과_v14_2026-11-26.pdf"
+    "MedKOS_학습서_내분비내과_v14_2026-11-26.pdf",
+    "MedKOS_학습서_내분비내과_v15_2026-11-27.pdf"
    ],
    "changes": [
-    "새 단원: 갑상선 결절 — TSH 가 낮으면 스캔이 먼저",
-    "새 단원: Six Months of Pounding Headaches, Palpitations and Sweating Spells in a Woman in Her Late Thirties"
+    "내용 수정: 갑상샘 IHC — 콜로이드를 채우면 타이로글로불린",
+    "내용 수정: 갑상선 결절 — TSH 가 낮으면 스캔이 먼저",
+    "내용 갱신: 갈색세포종 — 영상보다 메타네프린이 먼저 (정리본 vNone → v1)"
    ]
   },
   "혈액종양내과": {
-   "hash": "14819b738a16255736eb",
-   "version": 12,
-   "date": "2026-11-26",
+   "hash": "d7f849e00e9d44673047",
+   "version": 13,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_혈액종양내과.pdf",
-   "pages": 14,
+   "pages": 15,
    "template_version": 13,
    "units": {
     "cn.onc.her2-breast-cancer.trastuzumab-baseline-echo": {
@@ -1708,24 +1713,24 @@
      "concept_hash": "94820a1299db7d26",
      "concept_version": 1
     },
+    "cn.heme.pnh.flow-cytometry-diagnosis": {
+     "title": "PNH — 용혈 · 혈구감소 · 혈전이면 유세포분석",
+     "page": 13,
+     "concept_hash": "7dc3737c33d17086",
+     "concept_version": 1
+    },
     "cn.heme.apl.immediate-atra": {
      "title": "급성 전골수구 백혈병 — 의심되면 확진 전 ATRA",
-     "page": 13,
+     "page": 14,
      "concept_hash": "d7fea5d683791f1f",
      "concept_version": 2
-    },
-    "cn.heme.pnh.flow-cytometry-diagnosis": {
-     "title": "Dark Morning Urine, Low Blood Counts and a Newly Found Liver Vein Clot in a Man in His Early Thirties",
-     "page": 14,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
-    "md5": "2012be99f93014544d33434c45451950",
-    "version": 12,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "b7eb82d60fd486fe656e0463251a5b04",
+    "version": 13,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf",
@@ -1739,12 +1744,11 @@
     "MedKOS_학습서_혈액종양내과_v9_2026-11-20.pdf",
     "MedKOS_학습서_혈액종양내과_v10_2026-11-24.pdf",
     "MedKOS_학습서_혈액종양내과_v11_2026-11-25.pdf",
-    "MedKOS_학습서_혈액종양내과_v12_2026-11-26.pdf"
+    "MedKOS_학습서_혈액종양내과_v12_2026-11-26.pdf",
+    "MedKOS_학습서_혈액종양내과_v13_2026-11-27.pdf"
    ],
    "changes": [
-    "새 단원: 철결핍빈혈 — 경구 불내성·수술 임박이면 정맥 철분",
-    "내용 갱신: 급성 전골수구 백혈병 — 의심되면 확진 전 ATRA (정리본 v1 → v2)",
-    "새 단원: Dark Morning Urine, Low Blood Counts and a Newly Found Liver Vein Clot in a Man in His Early Thirties"
+    "내용 갱신: PNH — 용혈 · 혈구감소 · 혈전이면 유세포분석 (정리본 vNone → v1)"
    ]
   },
   "알레르기내과": {
@@ -1827,11 +1831,11 @@
    "retired": "2026-11-24"
   },
   "감염내과": {
-   "hash": "727d034393219f1dd95e",
-   "version": 17,
-   "date": "2026-11-26",
+   "hash": "24decf9383d52c54288d",
+   "version": 18,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_감염내과.pdf",
-   "pages": 14,
+   "pages": 16,
    "template_version": 13,
    "units": {
     "cn.pulm.community-acquired-pneumonia.curb65-site-of-care": {
@@ -1861,8 +1865,8 @@
     "cn.id.disseminated-nocardiosis.partial-acid-fast-identification": {
      "title": "파종 노카르디아증 — 가지 친 그람 양성 균은 부분 항산성",
      "page": 9,
-     "concept_hash": "917f964539d7ee41",
-     "concept_version": 1
+     "concept_hash": "4ef28b787f2b626e",
+     "concept_version": 2
     },
     "cn.id.syphilis-pregnancy.penicillin-desensitization": {
      "title": "임신 중 매독 — 페니실린 알레르기면 탈감작",
@@ -1872,28 +1876,28 @@
     },
     "cn.id.covid19-pneumonia.tocilizumab-add-on": {
      "title": "COVID-19 폐렴 악화 — 스테로이드 증량 아닌 IL-6 차단",
-     "page": 11,
+     "page": 12,
      "concept_hash": "9731fa4463b5dd0a",
+     "concept_version": 1
+    },
+    "cn.id.cryptococcal-meningitis.csf-antigen": {
+     "title": "크립토코쿠스 수막염 — 뇌척수액 항원으로 잡는다",
+     "page": 13,
+     "concept_hash": "7dd11233cd86af5d",
      "concept_version": 1
     },
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
      "title": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
-     "page": 13,
+     "page": 14,
      "concept_hash": "8d2774be6329d172",
      "concept_version": 2
-    },
-    "cn.id.cryptococcal-meningitis.csf-antigen": {
-     "title": "Three Weeks of Worsening Headache and Low Fever in an Untreated Man with a Low CD4 Count",
-     "page": 14,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "251cecc99ad60fd739d1a64bc528c00d",
-    "version": 17,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "327ce6ed1a70853643f411fdcf78fd80",
+    "version": 18,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -1912,11 +1916,12 @@
     "MedKOS_학습서_감염내과_v14_2026-11-20.pdf",
     "MedKOS_학습서_감염내과_v15_2026-11-24.pdf",
     "MedKOS_학습서_감염내과_v16_2026-11-25.pdf",
-    "MedKOS_학습서_감염내과_v17_2026-11-26.pdf"
+    "MedKOS_학습서_감염내과_v17_2026-11-26.pdf",
+    "MedKOS_학습서_감염내과_v18_2026-11-27.pdf"
    ],
    "changes": [
-    "내용 수정: 파종 노카르디아증 — 가지 친 그람 양성 균은 부분 항산성",
-    "새 단원: Three Weeks of Worsening Headache and Low Fever in an Untreated Man with a Low CD4 Count"
+    "내용 갱신: 파종 노카르디아증 — 가지 친 그람 양성 균은 부분 항산성 (정리본 v1 → v2)",
+    "내용 갱신: 크립토코쿠스 수막염 — 뇌척수액 항원으로 잡는다 (정리본 vNone → v1)"
    ]
   },
   "소화기내과": {
@@ -2001,11 +2006,11 @@
    ]
   },
   "신경과": {
-   "hash": "49ca87d10cbc00690e42",
-   "version": 10,
-   "date": "2026-11-26",
+   "hash": "e5c08f9ffd3b8675a78a",
+   "version": 11,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_신경과.pdf",
-   "pages": 9,
+   "pages": 11,
    "template_version": 13,
    "units": {
     "cn.neuro.acute-vestibular-syndrome.central-signs-mri": {
@@ -2014,36 +2019,36 @@
      "concept_hash": "dc8542bc5004b911",
      "concept_version": 1
     },
+    "cn.neuro.status-epilepticus.second-line-asm": {
+     "title": "뇌전증 지속상태 — 벤조디아제핀 두 번 뒤엔 2차 항경련제",
+     "page": 3,
+     "concept_hash": "2a3e0602366b57d1",
+     "concept_version": 1
+    },
     "cn.neuro.sah.ct-negative-lumbar-puncture": {
      "title": "거미막밑 출혈 — CT 가 정상이면 요추 천자",
-     "page": 3,
+     "page": 5,
      "concept_hash": "6c06136ba666a32e",
      "concept_version": 1
     },
     "cn.neuro.multiple-sclerosis.dissemination-diagnosis": {
      "title": "다발경화증 — 공간·시간 파종을 모두 보여야 진단",
-     "page": 4,
+     "page": 6,
      "concept_hash": "e3862a69a9cbef20",
      "concept_version": 3
     },
     "cn.neuro.guillain-barre.respiratory-monitoring-first": {
      "title": "길랑-바레 — 활력이 안정해도 입원·폐활량 감시가 먼저",
-     "page": 7,
+     "page": 9,
      "concept_hash": "f9d7da4d85c132ba",
      "concept_version": 2
-    },
-    "cn.neuro.status-epilepticus.second-line-asm": {
-     "title": "A Generalized Convulsion That Continues after Two Doses of an Intravenous Sedative in a Man with Epilepsy",
-     "page": 9,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "13qO71iHo3gubZIEyycClaE5S3p_P4IKM",
-    "md5": "f70846d04d1a7d31741db81fd25dae36",
-    "version": 10,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "6d64aef1e432583880c510f312b14725",
+    "version": 11,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_신경과_v1_2026-09-25.pdf",
@@ -2055,11 +2060,11 @@
     "MedKOS_학습서_신경과_v7_2026-11-20.pdf",
     "MedKOS_학습서_신경과_v8_2026-11-24.pdf",
     "MedKOS_학습서_신경과_v9_2026-11-25.pdf",
-    "MedKOS_학습서_신경과_v10_2026-11-26.pdf"
+    "MedKOS_학습서_신경과_v10_2026-11-26.pdf",
+    "MedKOS_학습서_신경과_v11_2026-11-27.pdf"
    ],
    "changes": [
-    "내용 수정: 급성 전정 증후군 — 정상 머리 충동 검사는 중추다",
-    "새 단원: A Generalized Convulsion That Continues after Two Doses of an Intravenous Sedative in a Man with Epilepsy"
+    "내용 갱신: 뇌전증 지속상태 — 벤조디아제핀 두 번 뒤엔 2차 항경련제 (정리본 vNone → v1)"
    ]
   },
   "비뇨의학과": {
@@ -2266,11 +2271,11 @@
    "changes": []
   },
   "순환기내과 1권": {
-   "hash": "17500aa6925ba2e510c6",
-   "version": 3,
-   "date": "2026-11-26",
+   "hash": "f85ad718e268ad09a4a0",
+   "version": 4,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_순환기내과_1권.pdf",
-   "pages": 76,
+   "pages": 75,
    "template_version": 13,
    "units": {
     "cn.cardio.syncope.high-risk-admit": {
@@ -2348,8 +2353,8 @@
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
      "page": 21,
-     "concept_hash": "f0f460ed09a8324f",
-     "concept_version": 3
+     "concept_hash": "9c8e6a59404198bd",
+     "concept_version": 5
     },
     "cn.cardio.ischemic-ecg-localization.culprit-artery": {
      "title": "허혈 심전도 위치 — 유도로 책임 혈관을 고른다",
@@ -2359,226 +2364,227 @@
     },
     "cn.cardio.cardiac-mri-lge.pattern-etiology": {
      "title": "심장 MRI 지연조영 — 층과 분포가 원인을 가른다",
-     "page": 25,
+     "page": 26,
      "concept_hash": "becb45d171549d0a",
      "concept_version": 2
     },
     "cn.cardio.pericardial-restrictive-hemodynamics.catheter-differential": {
      "title": "심도자 압력 — 흡기 때 두 심실이 엇갈리면 수축성 심낭염",
-     "page": 27,
+     "page": 28,
      "concept_hash": "77a81492665ebd5a",
      "concept_version": 1
     },
     "cn.cardio.arrhythmia-mechanism.automaticity-triggered-reentry": {
      "title": "빈맥의 세 기전 — 자동능·촉발·회귀가 치료를 정한다",
-     "page": 29,
+     "page": 30,
      "concept_hash": "2ac159dfa791c257",
      "concept_version": 1
     },
     "cn.cardio.sinus-node-dysfunction.symptom-correlated-pacing": {
      "title": "동결절 기능 장애 — 증상과 서맥이 맞아야 심박조율기",
-     "page": 30,
+     "page": 31,
      "concept_hash": "e93c059b1e63e90c",
      "concept_version": 1
     },
     "cn.cardio.digoxin-toxicity.digoxin-fab": {
      "title": "digoxin(디곡신) 중독 — 방실차단·저혈압이면 항체 절편",
-     "page": 32,
+     "page": 33,
      "concept_hash": "f36c9e804d3cba3c",
      "concept_version": 1
     },
     "cn.cardio.complete-av-block.permanent-pacemaker": {
      "title": "완전 방실차단 — 되돌릴 원인 없으면 영구 조율",
-     "page": 33,
+     "page": 34,
      "concept_hash": "b675c7e79f0a68e2",
      "concept_version": 1
     },
     "cn.cardio.svt.av-nodal-blockade-response": {
      "title": "좁은 QRS 빈맥 — 방실결절을 막아 기전을 가른다",
-     "page": 35,
+     "page": 36,
      "concept_hash": "2f7d8dc3de4fc8c3",
      "concept_version": 1
     },
     "cn.cardio.sinus-arrhythmia.ecg-recognition": {
      "title": "동부정맥 — 같은 P파, 서서히 변하는 PP",
-     "page": 37,
+     "page": 38,
      "concept_hash": "d6d994fab486620a",
      "concept_version": 2
     },
     "cn.cardio.focal-atrial-tachycardia.ecg-differential": {
      "title": "국소 심방빈맥 — P파 모양과 방실 차단 반응으로 가른다",
-     "page": 38,
+     "page": 39,
      "concept_hash": "5f65d457d06085e6",
      "concept_version": 2
     },
     "cn.cardio.psvt.narrow-regular-tachycardia-ecg": {
      "title": "발작성 상심실빈맥 — P파 없는 규칙적 좁은 QRS 빈맥",
-     "page": 41,
+     "page": 42,
      "concept_hash": "d685cd64da546109",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 42,
+     "page": 43,
      "concept_hash": "aa9008e1707014be",
      "concept_version": 3
     },
     "cn.cardio.atrial-fibrillation.hfref-rate-control-drug": {
      "title": "심방세동 + 박출률 감소 — diltiazem(딜티아젬)·verapamil(베라파밀)은 금기",
-     "page": 45,
+     "page": 46,
      "concept_hash": "c0f3991ed9068815",
      "concept_version": 1
     },
     "cn.cardio.atrial-fibrillation.doac-nonvalvular-anticoagulation": {
      "title": "심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)",
-     "page": 47,
+     "page": 48,
      "concept_hash": "6ac9c2b2c9630884",
      "concept_version": 2
     },
     "cn.cardio.premature-ventricular-complex.ecg-recognition": {
      "title": "심실 기외수축 — 조기·P파 없음·넓은 QRS",
-     "page": 48,
+     "page": 49,
      "concept_hash": "9438a56ea8ac6481",
      "concept_version": 2
     },
     "cn.cardio.pvc-nsvt.structural-heart-risk-first": {
      "title": "심실 기외수축·NSVT — 치료는 심장 구조가 정한다",
-     "page": 49,
+     "page": 50,
      "concept_hash": "81a38caebb849c22",
      "concept_version": 1
     },
     "cn.cardio.sustained-vt.wide-complex-tachycardia-management": {
      "title": "지속성 심실빈맥 — 넓은 QRS 빈맥은 VT 로 보고 처치",
-     "page": 52,
+     "page": 53,
      "concept_hash": "9db1147683fc8b24",
      "concept_version": 2
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 54,
+     "page": 55,
      "concept_hash": "b38563e37108094b",
      "concept_version": 4
     },
     "cn.cardio.electrical-storm.substrate-directed-stabilization": {
      "title": "전기 폭풍 — 리듬과 바탕이 처치를 정한다",
-     "page": 57,
+     "page": 58,
      "concept_hash": "e7ff6075e5bc1709",
      "concept_version": 1
     },
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis": {
      "title": "심부전 진단 — 펩타이드로 거르고 심초음파로 나눈다",
-     "page": 59,
+     "page": 60,
      "concept_hash": "03b15a767a67f28e",
      "concept_version": 1
     },
     "cn.cardio.heart-failure.hfref-gdmt-selection": {
      "title": "HFrEF 약물 — 사망을 줄이는 약과 증상만 푸는 약",
-     "page": 61,
+     "page": 62,
      "concept_hash": "3f922b0d588a846f",
      "concept_version": 1
     },
     "cn.cardio.hypertrophic-cardiomyopathy.obstruction-management": {
      "title": "비대심근병증 — 폐쇄는 음성 변력으로 푼다",
-     "page": 63,
+     "page": 64,
      "concept_hash": "23e2ccff94234198",
      "concept_version": 1
     },
     "cn.cardio.heart-transplant.post-transplant-complication": {
      "title": "심장이식 후 — 시기와 기전이 합병증을 가른다",
-     "page": 65,
+     "page": 66,
      "concept_hash": "d93ee328fb1b1875",
      "concept_version": 1
     },
     "cn.cardio.aortic-stenosis.valve-replacement-timing": {
      "title": "대동맥판 협착 — 증상과 박출률이 교체 시점을 정한다",
-     "page": 67,
+     "page": 68,
      "concept_hash": "08e863ce14c7aa2a",
      "concept_version": 1
     },
     "cn.cardio.aortic-regurgitation.surgery-timing": {
      "title": "대동맥판 역류 — 증상·좌심실 기능 저하가 수술 시점",
-     "page": 69,
+     "page": 70,
      "concept_hash": "c9c253448257c808",
      "concept_version": 1
     },
     "cn.cardio.mitral-stenosis.commissurotomy-selection": {
      "title": "승모판 협착 — 증상·판막 모양이 교련절개를 정한다",
-     "page": 71,
+     "page": 72,
      "concept_hash": "e28fb0ec5bb74b38",
      "concept_version": 1
     },
-    "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
-     "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
-     "page": 73,
-     "concept_hash": "86dbd2fd99302a03",
-     "concept_version": 3
+    "cn.cardio.rv-infarction.avoid-preload-reduction": {
+     "title": "우심실 경색 — 전부하에 기대니 질산염을 피한다",
+     "page": 74,
+     "concept_hash": "45f2f9cf3377b944",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "1-IBpnsVO5zKQ0mRKWPlbVZE2u2aK_BVT",
-    "md5": "bc7783d4279f2d021622a9644569a384",
-    "version": 3,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "d1b9e916c887f2149225b29bf22dbb9b",
+    "version": 4,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_1권_v1_2026-11-24.pdf",
     "MedKOS_학습서_순환기내과_1권_v2_2026-11-25.pdf",
-    "MedKOS_학습서_순환기내과_1권_v3_2026-11-26.pdf"
+    "MedKOS_학습서_순환기내과_1권_v3_2026-11-26.pdf",
+    "MedKOS_학습서_순환기내과_1권_v4_2026-11-27.pdf"
    ],
    "changes": [
-    "내용 수정: 심방조동 — 안정하면 심박수 조절이 먼저다",
-    "새 단원: 심방세동 + 박출률 감소 — diltiazem(딜티아젬)·verapamil(베라파밀)은 금기",
-    "내용 수정: 심방세동 — 뇌졸중 예방은 점수로 anticoagulant(항응고제)",
-    "빠진 단원(다른 권으로 이동 등): 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때"
+    "내용 갱신: 평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다 (정리본 v3 → v5)",
+    "새 단원: 우심실 경색 — 전부하에 기대니 질산염을 피한다",
+    "빠진 단원(다른 권으로 이동 등): 고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해"
    ]
   },
   "순환기내과 2권": {
-   "hash": "6cfa6a2c001674156671",
-   "version": 3,
-   "date": "2026-11-26",
+   "hash": "6fe958fab464fe478328",
+   "version": 4,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_순환기내과_2권.pdf",
-   "pages": 10,
+   "pages": 12,
    "template_version": 13,
    "units": {
+    "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
+     "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
+     "page": 2,
+     "concept_hash": "86dbd2fd99302a03",
+     "concept_version": 3
+    },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 2,
+     "page": 4,
      "concept_hash": "e6056866b78ca1b9",
      "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 5,
+     "page": 7,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
-     "page": 8,
+     "page": 10,
      "concept_hash": "9b72a39bd6fda6ef",
      "concept_version": 2
-    },
-    "cn.cardio.rv-infarction.avoid-preload-reduction": {
-     "title": "Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties",
-     "page": 10,
-     "concept_hash": null,
-     "concept_version": null
     }
    },
    "drive": {
     "id": "1aDYsZNEVp6f-PXTJzQK4tjPPpgeHk2zJ",
-    "md5": "df9e596664e180a161e3cc32ea8be9d6",
-    "version": 3,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "8db35d49ca242fada250ff0e2bf2597e",
+    "version": 4,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_2권_v1_2026-11-24.pdf",
     "MedKOS_학습서_순환기내과_2권_v2_2026-11-25.pdf",
-    "MedKOS_학습서_순환기내과_2권_v3_2026-11-26.pdf"
+    "MedKOS_학습서_순환기내과_2권_v3_2026-11-26.pdf",
+    "MedKOS_학습서_순환기내과_2권_v4_2026-11-27.pdf"
    ],
    "changes": [
-    "새 단원: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
-    "새 단원: Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties"
+    "새 단원: 고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
+    "빠진 단원(다른 권으로 이동 등): Chest Pressure, Low Blood Pressure and Distended Neck Veins with Clear Lungs in a Man in His Late Sixties"
    ]
   },
   "내과 총론": {
@@ -2609,11 +2615,11 @@
    "retired": "2026-11-25"
   },
   "생리학": {
-   "hash": "55764f650fa21abe33a7",
-   "version": 3,
-   "date": "2026-11-26",
+   "hash": "5748cb18fc4d7db21322",
+   "version": 4,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_생리학.pdf",
-   "pages": 6,
+   "pages": 8,
    "template_version": 13,
    "units": {
     "cn.physio.ventricular-repolarization.long-qt": {
@@ -2622,50 +2628,64 @@
      "concept_hash": "62b152b80bed53eb",
      "concept_version": 1
     },
+    "cn.physio.ventricular-preload.frank-starling": {
+     "title": "심실 전부하 — 이완기말 길이가 박출량을 정한다",
+     "page": 2,
+     "concept_hash": "3bf0f2db03284f5f",
+     "concept_version": 1
+    },
     "cn.physio.ventricular-activation.bundle-branch-block": {
      "title": "심실 탈분극 순서 — 늦게 깨는 쪽으로 QRS 끝이 향한다",
-     "page": 2,
+     "page": 3,
      "concept_hash": "403ca0afa8d35e81",
      "concept_version": 1
     },
     "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras": {
      "title": "사구체 혈역학 — 신동맥협착에서 ACE억제제가 GFR 을 떨어뜨린다",
-     "page": 3,
+     "page": 4,
      "concept_hash": "83d8364dd76e10e4",
      "concept_version": 2
     },
     "cn.physio.hypoxemia.shunt-oxygen-unresponsive": {
      "title": "저산소혈증 기전 — 산소에 안 오르면 션트",
-     "page": 4,
+     "page": 5,
      "concept_hash": "5b671511683ce01d",
+     "concept_version": 1
+    },
+    "cn.physio.thyroid-hormone-synthesis.tsh-follicle": {
+     "title": "갑상샘 호르몬 합성 — TSH 가 여포의 요오드 공정을 돌린다",
+     "page": 6,
+     "concept_hash": "8b8b6a46a6b24d86",
      "concept_version": 1
     },
     "cn.physio.insulin-secretion.c-peptide-cosecretion": {
      "title": "인슐린 분비 — 프로인슐린이 잘려 C 펩티드와 함께 나온다",
-     "page": 5,
+     "page": 6,
      "concept_hash": "8fd45f60f4bde08a",
      "concept_version": 1
     },
     "cn.physio.vestibulo-ocular-reflex.head-impulse": {
      "title": "전정안반사 — 한쪽이 꺼지면 머리 충동에 눈이 따라간다",
-     "page": 6,
+     "page": 7,
      "concept_hash": "577623f93c574d37",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1Wcq74rVUr__S67NRSD1KABELuwUPWJ_S",
-    "md5": "eb4855a751acb46beaf5fb9cd5879113",
-    "version": 3,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "e32a0c119cdeea76bb1137ddedea7b8f",
+    "version": 4,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_생리학_v1_2026-11-24.pdf",
     "MedKOS_학습서_생리학_v2_2026-11-25.pdf",
-    "MedKOS_학습서_생리학_v3_2026-11-26.pdf"
+    "MedKOS_학습서_생리학_v3_2026-11-26.pdf",
+    "MedKOS_학습서_생리학_v4_2026-11-27.pdf"
    ],
    "changes": [
-    "새 단원: 전정안반사 — 한쪽이 꺼지면 머리 충동에 눈이 따라간다"
+    "새 단원: 심실 전부하 — 이완기말 길이가 박출량을 정한다",
+    "새 단원: 갑상샘 호르몬 합성 — TSH 가 여포의 요오드 공정을 돌린다"
    ]
   },
   "미생물학": {
@@ -2725,13 +2745,19 @@
    "changes": []
   },
   "면역학": {
-   "hash": "92a215ccc6e9d936d74d",
-   "version": 1,
-   "date": "2026-11-24",
+   "hash": "3c3a3a84e8b8111411dd",
+   "version": 2,
+   "date": "2026-11-27",
    "file": "MedKOS_학습서_면역학.pdf",
-   "pages": 2,
+   "pages": 3,
    "template_version": 13,
    "units": {
+    "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59": {
+     "title": "보체 방패 — GPI 가 없으면 CD55 · CD59 도 없다",
+     "page": 2,
+     "concept_hash": "4abbf9cc720fc6e9",
+     "concept_version": 1
+    },
     "cn.immuno.immune-complex.cryoglobulinemic-vasculitis": {
      "title": "면역복합체 혈관염 — 항원이 남는 한 복합체도 생긴다",
      "page": 2,
@@ -2741,14 +2767,17 @@
    },
    "drive": {
     "id": "1fFsJayj3QxSPssQrhkiypsxhhkaaDLua",
-    "md5": "27fc4d88411c4eb597803af864c38928",
-    "version": 1,
-    "uploaded": "2026-11-24T14:41:22+09:00"
+    "md5": "10a7b1843397c86e2b2deac472f889c0",
+    "version": 2,
+    "uploaded": "2026-11-27T12:57:29+09:00"
    },
    "archive": [
-    "MedKOS_학습서_면역학_v1_2026-11-24.pdf"
+    "MedKOS_학습서_면역학_v1_2026-11-24.pdf",
+    "MedKOS_학습서_면역학_v2_2026-11-27.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 보체 방패 — GPI 가 없으면 CD55 · CD59 도 없다"
+   ]
   },
   "해부·조직·발생": {
    "hash": "f7b96ec2d925597309f1",
@@ -2846,13 +2875,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "4d8fa91f2a8192d526007f5b715f8907",
+   "md5": "2bfb0cc64f66d2470ee9854cb9235f01",
    "version": null,
-   "uploaded": "2026-11-26T12:52:25+09:00"
+   "uploaded": "2026-11-27T12:57:29+09:00"
   }
  },
- "updated": "2026-11-26"
+ "updated": "2026-11-27"
 }
