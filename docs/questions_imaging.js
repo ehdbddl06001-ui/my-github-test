@@ -2,6 +2,1149 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0817",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "신장·비뇨 — 검진에서 발견된 큰 콩팥 종괴의 병기 검사",
+  "type": "신장·비뇨 — 검진에서 발견된 큰 콩팥 종괴의 병기 검사",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-11-27",
+  "vignette": "51세 여자가 건강검진 복부 초음파에서 왼쪽 콩팥 종괴가 발견되어 왔다. 옆구리 통증, 육안적 혈뇨, 체중 감소는 없다. 기침이나 뼈 통증, 두통, 신경학적 이상은 없다. 혈압 128/78 mmHg 이고 복부 진찰에서 만져지는 종괴는 없다. 혈색소 13.1 g/dL, 혈청 크레아티닌 0.8 mg/dL, 칼슘 9.4 mg/dL, ALP 72 U/L 이다. 소변검사는 정상이다. 조영증강 복부 CT 사진은 그림과 같고, 콩팥정맥과 하대정맥 안에 혈전은 없으며 커진 림프절도 없다.",
+  "question": "근치적 신장절제술 전에 시행할 검사로 가장 적절한 것은?",
+  "options": [
+   "전신 뼈스캔",
+   "뇌 자기공명영상",
+   "FDG 양전자방출단층촬영",
+   "흉부 CT",
+   "경피적 콩팥 종괴 생검"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: CT 에서 <b>왼쪽 콩팥에서 바깥으로 자란 약 10 cm 의 불균질하게 조영 증강되는 고형 종괴</b>가 있고 <b>육안적 지방이 없다</b> — 혈관근지방종이 아닌 <b>신세포암</b>을 먼저 생각하며, 수술할 환자에게 생검은 필요 없다. 신세포암이 가장 흔히 전이하는 곳은 <b>폐</b>이므로 수술 전 병기 결정에 <b>흉부 CT</b>를 한다. 뼈 통증·ALP·칼슘이 정상이고 신경 증상이 없어 뼈스캔·뇌 MRI 는 필요 없다.\n- 원리: <b>조영 증강이 가르는 것</b>: 콩팥 종괴에서 조영 전후 CT 값이 20 HU 이상 오르면 혈관이 있는 고형 종괴이고, 육안적 지방(−10 HU 이하)이 없으면 혈관근지방종이 아니어서 대부분 신세포암이다. 영상만으로 진단의 정확도가 높고 생검은 위음성이 있으며, 결과가 어떻든 큰 종괴는 수술하므로 생검이 치료를 바꾸지 않는다.<br> <b>왜 흉부 CT 인가</b>: 신세포암은 혈관을 따라 퍼지는 종양이라 폐 전이가 가장 흔하고(전이의 약 절반 이상), 그 다음이 뼈·림프절·간·뇌다. 폐 결절이 있으면 수술 범위와 전신 치료 여부가 달라지므로 모든 환자에서 흉부 영상을 찍는다.<br> <b>왜 뼈·뇌는 선택적인가</b>: 증상과 혈액검사(뼈 통증·ALP·칼슘 상승, 두통·신경 결손)가 없으면 뼈스캔·뇌 MRI 의 양성률이 매우 낮다. FDG PET 은 투명세포 신세포암의 포도당 섭취가 낮고 콩팥으로 배설되는 추적자가 원발 병소를 가려 표준 병기 검사가 아니다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">흉부 CT — 정답</th><th>경피적 생검 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>답하는 질문</td><td><b>전이가 있는가</b>(폐 — 가장 흔함)</td><td>무슨 조직인가</td></tr> <tr><td>치료를 바꾸는가</td><td>폐 전이가 있으면 계획이 달라진다</td><td>조영 증강 고형 종괴는 어차피 수술</td></tr> <tr><td>필요한 경우</td><td><b>모든 신세포암 의심 환자</b></td><td>림프종·전이암 의심, 수술하지 않을 환자, 능동 감시 전</td></tr> </tbody></table> 지방 없는 조영 증강 고형 종괴는 영상으로 신세포암이라 판단하고 수술하며, 병기는 흉부 CT 로 정한다. 생검은 결과가 치료를 바꿀 때만 한다.\n- 오답 이유:\n  - ① 전신 뼈스캔은 뼈 통증이 있거나 ALP·칼슘이 올라 있는 신세포암 환자라면 병기 검사로 정답이 된다.\n  - ② 뇌 자기공명영상은 두통·경련·신경 결손처럼 뇌 전이를 시사하는 증상이 있을 때 병기 검사로 정답이 된다.\n  - ③ FDG 양전자방출단층촬영은 신세포암 표준 병기 검사가 아니며, 다른 영상으로 판단이 어려운 재발 평가 등에서 보조로 쓴다.\n  - ⑤ 경피적 생검은 림프종·다른 암의 전이가 의심되거나 수술 대신 감시·국소 소작을 고려하는 작은 종괴라면 정답이 된다.\n- 함정: 종괴의 조직 진단이 먼저라고 생각해 생검을 고르는 것 — 조영 증강 고형 종괴는 수술하며, 남은 질문은 전이 여부다.\n- 학습목표: 조영 증강되는 지방 없는 큰 콩팥 고형 종괴를 신세포암으로 판단해 생검 없이 수술 계획을 세우고, 가장 흔한 전이 부위인 폐를 흉부 CT 로 병기 결정하며 뼈·뇌 검사는 증상·검사 이상이 있을 때만 한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · KiTS-00025 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 <b>왼쪽 콩팥에서 바깥으로 자란 약 10 cm 의 불균질하게 조영 증강되는 고형 종괴</b>가 있고 <b>육안적 지방이 없다</b> — 혈관근지방종이 아닌 <b>신세포암</b>을 먼저 생각하며, 수술할 환자에게 생검은 필요 없다. 신세포암이 가장 흔히 전이하는 곳은 <b>폐</b>이므로 수술 전 병기 결정에 <b>흉부 CT</b>를 한다. 뼈 통증·ALP·칼슘이 정상이고 신경 증상이 없어 뼈스캔·뇌 MRI 는 필요 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>조영 증강이 가르는 것</b>: 콩팥 종괴에서 조영 전후 CT 값이 20 HU 이상 오르면 혈관이 있는 고형 종괴이고, 육안적 지방(−10 HU 이하)이 없으면 혈관근지방종이 아니어서 대부분 신세포암이다. 영상만으로 진단의 정확도가 높고 생검은 위음성이 있으며, 결과가 어떻든 큰 종괴는 수술하므로 생검이 치료를 바꾸지 않는다.<br> <b>왜 흉부 CT 인가</b>: 신세포암은 혈관을 따라 퍼지는 종양이라 폐 전이가 가장 흔하고(전이의 약 절반 이상), 그 다음이 뼈·림프절·간·뇌다. 폐 결절이 있으면 수술 범위와 전신 치료 여부가 달라지므로 모든 환자에서 흉부 영상을 찍는다.<br> <b>왜 뼈·뇌는 선택적인가</b>: 증상과 혈액검사(뼈 통증·ALP·칼슘 상승, 두통·신경 결손)가 없으면 뼈스캔·뇌 MRI 의 양성률이 매우 낮다. FDG PET 은 투명세포 신세포암의 포도당 섭취가 낮고 콩팥으로 배설되는 추적자가 원발 병소를 가려 표준 병기 검사가 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">흉부 CT — 정답</th><th>경피적 생검 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>답하는 질문</td><td><b>전이가 있는가</b>(폐 — 가장 흔함)</td><td>무슨 조직인가</td></tr> <tr><td>치료를 바꾸는가</td><td>폐 전이가 있으면 계획이 달라진다</td><td>조영 증강 고형 종괴는 어차피 수술</td></tr> <tr><td>필요한 경우</td><td><b>모든 신세포암 의심 환자</b></td><td>림프종·전이암 의심, 수술하지 않을 환자, 능동 감시 전</td></tr> </tbody></table> 지방 없는 조영 증강 고형 종괴는 영상으로 신세포암이라 판단하고 수술하며, 병기는 흉부 CT 로 정한다. 생검은 결과가 치료를 바꿀 때만 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 전신 뼈스캔은 뼈 통증이 있거나 ALP·칼슘이 올라 있는 신세포암 환자라면 병기 검사로 정답이 된다.\n② 뇌 자기공명영상은 두통·경련·신경 결손처럼 뇌 전이를 시사하는 증상이 있을 때 병기 검사로 정답이 된다.\n③ FDG 양전자방출단층촬영은 신세포암 표준 병기 검사가 아니며, 다른 영상으로 판단이 어려운 재발 평가 등에서 보조로 쓴다.\n⑤ 경피적 생검은 림프종·다른 암의 전이가 의심되거나 수술 대신 감시·국소 소작을 고려하는 작은 종괴라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "종괴의 조직 진단이 먼저라고 생각해 생검을 고르는 것 — 조영 증강 고형 종괴는 수술하며, 남은 질문은 전이 여부다."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영 증강되는 지방 없는 큰 콩팥 고형 종괴를 신세포암으로 판단해 생검 없이 수술 계획을 세우고, 가장 흔한 전이 부위인 폐를 흉부 CT 로 병기 결정하며 뼈·뇌 검사는 증상·검사 이상이 있을 때만 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 90: Renal Cell Carcinoma · Campbell SC, Clark PE, Chang SS, et al. Renal mass and localized renal cancer: evaluation, management, and follow-up: AUA guideline: part I. J Urol. 2021;206(2):199-208 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · KiTS-00025 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "조영 증강되는 지방 없는 큰 콩팥 고형 종괴는 신세포암으로 보고 생검 없이 수술하며, 수술 전 병기 검사는 흉부 CT 다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "조영 증강 고형 종괴는 생검 결과와 관계없이 수술한다 — 남은 질문은 폐 전이",
+   "steps": 3,
+   "chain": [
+    "영상: 왼쪽 콩팥의 약 10 cm 불균질 조영 증강 고형 종괴, 지방 없음 → 신세포암 추정",
+    "수술할 환자의 전형적 고형 종괴 → 생검 불필요",
+    "가장 흔한 전이 부위는 폐 + 뼈·뇌 증상과 칼슘·ALP 정상 → 흉부 CT 만"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 콩팥의 큰 불균질 조영 증강 고형 종괴, 육안적 지방 없음",
+     "why": "신세포암 — 혈관근지방종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "기침이나 뼈 통증, 두통, 신경학적 이상은 없다",
+     "why": "뼈스캔·뇌 MRI 의 필요성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "칼슘 9.4 mg/dL, ALP 72 U/L",
+     "why": "뼈 전이 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "근치적 신장절제술 전",
+     "why": "수술이 정해져 생검이 치료를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "콩팥정맥과 하대정맥 안에 혈전은 없으며 커진 림프절도 없다",
+     "why": "국소 병기 — 남은 것은 원격 전이 평가",
+     "also": []
+    }
+   ],
+   "summary": "지방 없는 큰 조영 증강 콩팥 고형 종괴는 신세포암으로 보고 수술한다. 뼈·뇌 증상과 칼슘·ALP 가 정상이라 수술 전 병기 검사는 흉부 CT 다.",
+   "switch": {
+    "choice": "A",
+    "condition": "뼈 통증이 있고 ALP 가 올라 있었다면 전신 뼈스캔도 필요"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0817.png",
+   "caption": "조영증강 복부 CT, 동맥기 축상 단면 1장, 연부조직 창, 표준 표시 방향 (TCIA, CC BY 3.0 — 크롭·보정·분할 표시 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA C4KC-KiTS (KiTS19 신장 종양 — 수술 전 조영 CT + 신장·종양 분할 + 수술 병리)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6919.4624.861198396301824930873153074749",
+   "asset_id": "TCIA-KITS-00025_36263406",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · KiTS-00025"
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0812",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "이비인후과 — 어릴 때부터 쉰 목소리가 반복된 남성의 기관지경",
+  "type": "이비인후과 — 어릴 때부터 쉰 목소리가 반복된 남성의 기관지경",
+  "modality": "ENDOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-27",
+  "vignette": "A 42-year-old man comes to the clinic because of progressive shortness of breath on exertion and noisy breathing over the past 2 months. He has had a hoarse voice since he was a toddler and has undergone repeated surgical removal of laryngeal growths since the age of 20 months. He has never smoked and does not drink alcohol. Inspiratory stridor is heard over the neck. Flexible bronchoscopy is performed; the image shown is from the airway immediately below the vocal cords. Biopsy shows fronds of squamous epithelium around fibrovascular cores without invasion.",
+  "question": "Which of the following is the most likely cause of this condition?",
+  "options": [
+   "Mycobacterium tuberculosis",
+   "Human papillomavirus types 6 and 11",
+   "Human papillomavirus types 16 and 18",
+   "Epstein-Barr virus",
+   "Herpes simplex virus type 1"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The bronchoscopic image shows <b>multiple exophytic, grape-like (cauliflower) papillary masses</b> around the lumen just below the vocal cords, narrowing the airway by more than half. With <b>hoarseness since early childhood</b>, <b>repeated excisions since 20 months of age</b>, and biopsy showing <b>squamous fronds around fibrovascular cores without invasion</b>, this is <b>recurrent respiratory papillomatosis</b>, caused by low-risk <b>HPV types 6 and 11</b>, usually acquired at birth from the mother's genital tract.\n- 원리: <b>Why papillomas recur</b>: HPV 6 and 11 infect basal cells of the airway epithelium, especially at squamociliary junctions such as the vocal cords and the subglottis. Excision removes the visible papilloma, but latent viral DNA remains in the surrounding normal-appearing mucosa, so new lesions regrow — hence the dozens of operations over decades.<br> <b>Why low-risk types cause growth but rarely cancer</b>: The E6 and E7 proteins of HPV 6/11 bind p53 and Rb weakly, so they drive benign epithelial proliferation (warts, papillomas) without the strong inactivation of tumor suppressors that HPV 16/18 achieve. Malignant transformation is uncommon.<br> <b>How the disease spreads</b>: Juvenile-onset disease is acquired perinatally; extension into the trachea and lungs occurs in a minority and worsens prognosis. Quadrivalent/9-valent HPV vaccination of mothers' generation lowers incidence; adjuvant therapies (bevacizumab, cidofovir) are used for frequent recurrences.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">HPV 6/11 — papillomatosis (answer)</th><th>HPV 16/18 — squamous carcinoma (closest distractor)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Childhood (perinatal)</b> or young adult</td><td>Middle age, oropharynx more than larynx</td></tr> <tr><td>Course</td><td>Multiple recurrences over years</td><td>Progressive single invasive mass</td></tr> <tr><td>Biopsy</td><td><b>Benign fronds, no invasion</b></td><td>Invasive keratinizing or basaloid carcinoma</td></tr> </tbody></table> Both are HPV-related. Childhood onset with many benign recurrences points to the low-risk types; an invasive tumor in an adult points to the high-risk types.\n- 오답 이유:\n  - (A) Tuberculosis of the larynx would cause ulcerated or granular lesions with caseating granulomas on biopsy, usually with lung disease.\n  - (C) HPV 16 and 18 would be the answer if the biopsy showed invasive squamous cell carcinoma, typically of the oropharynx in an adult.\n  - (D) Epstein-Barr virus would be favored by a nasopharyngeal mass with undifferentiated carcinoma or by infectious mononucleosis.\n  - (E) Herpes simplex virus type 1 causes painful vesicles and shallow ulcers of the lips and mouth, not exophytic papillary masses.\n- 함정: Choosing the high-risk HPV types because HPV is linked to head and neck cancer — the benign biopsy and lifelong recurrences point to types 6 and 11.\n- 학습목표: Recognize recurrent respiratory papillomatosis from childhood-onset recurrent hoarseness and exophytic papillary airway lesions and identify low-risk human papillomavirus types 6 and 11 as the cause\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 203: Human Papillomavirus Infections · Derkay CS, Wiatrak B. Recurrent respiratory papillomatosis: a review. Laryngoscope. 2008;118(7):1236-1247 · Recurrent respiratory papillomatosis: the role of cidofovir. Respirol Case Rep. 2018;6(8):e00371. doi:10.1002/rcr2.371\n\n## 출처\n- Recurrent respiratory papillomatosis: the role of cidofovir. Respirol Case Rep. 2018 Oct 2;6(8):e00371. doi: 10.1002/rcr2.371 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The bronchoscopic image shows <b>multiple exophytic, grape-like (cauliflower) papillary masses</b> around the lumen just below the vocal cords, narrowing the airway by more than half. With <b>hoarseness since early childhood</b>, <b>repeated excisions since 20 months of age</b>, and biopsy showing <b>squamous fronds around fibrovascular cores without invasion</b>, this is <b>recurrent respiratory papillomatosis</b>, caused by low-risk <b>HPV types 6 and 11</b>, usually acquired at birth from the mother's genital tract."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why papillomas recur</b>: HPV 6 and 11 infect basal cells of the airway epithelium, especially at squamociliary junctions such as the vocal cords and the subglottis. Excision removes the visible papilloma, but latent viral DNA remains in the surrounding normal-appearing mucosa, so new lesions regrow — hence the dozens of operations over decades.<br> <b>Why low-risk types cause growth but rarely cancer</b>: The E6 and E7 proteins of HPV 6/11 bind p53 and Rb weakly, so they drive benign epithelial proliferation (warts, papillomas) without the strong inactivation of tumor suppressors that HPV 16/18 achieve. Malignant transformation is uncommon.<br> <b>How the disease spreads</b>: Juvenile-onset disease is acquired perinatally; extension into the trachea and lungs occurs in a minority and worsens prognosis. Quadrivalent/9-valent HPV vaccination of mothers' generation lowers incidence; adjuvant therapies (bevacizumab, cidofovir) are used for frequent recurrences."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">HPV 6/11 — papillomatosis (answer)</th><th>HPV 16/18 — squamous carcinoma (closest distractor)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Childhood (perinatal)</b> or young adult</td><td>Middle age, oropharynx more than larynx</td></tr> <tr><td>Course</td><td>Multiple recurrences over years</td><td>Progressive single invasive mass</td></tr> <tr><td>Biopsy</td><td><b>Benign fronds, no invasion</b></td><td>Invasive keratinizing or basaloid carcinoma</td></tr> </tbody></table> Both are HPV-related. Childhood onset with many benign recurrences points to the low-risk types; an invasive tumor in an adult points to the high-risk types."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Tuberculosis of the larynx would cause ulcerated or granular lesions with caseating granulomas on biopsy, usually with lung disease.\n(C) HPV 16 and 18 would be the answer if the biopsy showed invasive squamous cell carcinoma, typically of the oropharynx in an adult.\n(D) Epstein-Barr virus would be favored by a nasopharyngeal mass with undifferentiated carcinoma or by infectious mononucleosis.\n(E) Herpes simplex virus type 1 causes painful vesicles and shallow ulcers of the lips and mouth, not exophytic papillary masses."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the high-risk HPV types because HPV is linked to head and neck cancer — the benign biopsy and lifelong recurrences point to types 6 and 11."
+   },
+   {
+    "k": "학습목표",
+    "v": "Recognize recurrent respiratory papillomatosis from childhood-onset recurrent hoarseness and exophytic papillary airway lesions and identify low-risk human papillomavirus types 6 and 11 as the cause"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 203: Human Papillomavirus Infections · Derkay CS, Wiatrak B. Recurrent respiratory papillomatosis: a review. Laryngoscope. 2008;118(7):1236-1247 · Recurrent respiratory papillomatosis: the role of cidofovir. Respirol Case Rep. 2018;6(8):e00371. doi:10.1002/rcr2.371 ## 출처 Recurrent respiratory papillomatosis: the role of cidofovir. Respirol Case Rep. 2018 Oct 2;6(8):e00371. doi: 10.1002/rcr2.371 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "유아기부터 반복된 후두 유두종 절제와 성문하의 다발성 외장성 유두상 종괴, 침윤 없는 조직 — 재발성 호흡기 유두종증, 원인은 HPV 6·11 형이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "유아기 발병·수십 년 반복 재발·침윤 없는 양성 조직",
+   "steps": 2,
+   "chain": [
+    "영상: 성문하 내강 둘레의 포도송이 모양 외장성 유두상 종괴 여럿 + 유아기부터 반복 절제 → 재발성 호흡기 유두종증",
+    "양성 유두종의 원인 → 저위험 HPV 6·11 형"
+   ],
+   "key": [
+    {
+     "item": "영상: 성문하 내강 둘레의 다발성 외장성 유두상 종괴, 내강 협착",
+     "why": "유두종증의 육안 소견",
+     "also": []
+    },
+    {
+     "item": "repeated surgical removal of laryngeal growths since the age of 20 months",
+     "why": "유아기 발병·반복 재발",
+     "also": []
+    },
+    {
+     "item": "fronds of squamous epithelium around fibrovascular cores without invasion",
+     "why": "양성 유두종 — 고위험형 암과 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has never smoked",
+     "why": "흡연 관련 후두암 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Inspiratory stridor is heard over the neck",
+     "why": "기도 협착의 결과 — 원인을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "유아기부터 반복 절제한 후두 병변과 성문하의 다발성 유두상 종괴, 침윤 없는 조직은 재발성 호흡기 유두종증이다. 원인은 HPV 6·11 형이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "성인의 구인두 종괴에서 침윤성 편평세포암이 나왔다면 HPV 16·18 형"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0812.png",
+   "caption": "Flexible bronchoscopic still image — one panel of a published figure, panel letter cropped, no other change (PMC Open Access, CC BY)",
+   "alt": "ENDOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6167758/",
+   "asset_id": "PMC-PMC6167758_Figure1_A",
+   "text": "Recurrent respiratory papillomatosis: the role of cidofovir. Respirol Case Rep. 2018 Oct 2;6(8):e00371. doi: 10.1002/rcr2.371 (CC BY) — Figure 1"
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0811",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "응급 — 기관 삽관한 코로나19 폐렴 환자의 흉부 X선과 산소화",
+  "type": "응급 — 기관 삽관한 코로나19 폐렴 환자의 흉부 X선과 산소화",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-27",
+  "vignette": "55세 남자가 코로나바이러스감염증-19 확진 6일째에 숨찬 것이 급격히 심해져 응급실에 왔다. 고유량 산소에도 산소포화도가 85 % 로 떨어져 기관 삽관 후 기계환기를 시작하였다. 심부전이나 판막질환의 병력은 없다. 환기 설정은 PEEP 10 cmH2O, 흡입산소분율 0.6 이고, 이때 동맥혈 산소분압은 90 mmHg 이다. 심초음파에서 좌심실 박출률은 60 % 이고 좌심방 확장은 없다. 삽관 후 촬영한 흉부 X선 사진은 그림과 같다.",
+  "question": "이 환자의 상태로 가장 적절한 것은?",
+  "options": [
+   "경도 급성호흡곤란증후군",
+   "중증 급성호흡곤란증후군",
+   "심인성 폐부종",
+   "양쪽 대량 흉막삼출",
+   "중등도 급성호흡곤란증후군"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 흉부 X선은 기관내관·비위관·중심정맥관과 함께 <b>양쪽 폐문 주위·하폐야 우세의 미만성 간유리·경화 음영</b>을 보이고 큰 흉수는 없다. 발병 1주 이내, 양쪽 음영, <b>좌심실 기능 정상</b>(심인성으로 설명되지 않음)이므로 급성호흡곤란증후군이다. PEEP 10 cmH2O 에서 <b>PaO2/FiO2 = 90/0.6 = 150</b> 으로 100 초과 200 이하라 <b>중등도</b>다.\n- 원리: <b>베를린 정의의 네 조건</b>: ① 원인 손상이나 새 호흡기 증상 뒤 1주 이내 ② 흉부 영상에서 흉수·무기폐·결절로 다 설명되지 않는 양쪽 음영 ③ 심부전·수액 과다로 다 설명되지 않는 호흡부전(위험 인자가 없으면 심초음파로 확인) ④ PEEP(또는 CPAP) 5 cmH2O 이상에서 측정한 산소화 장애.<br> <b>왜 PEEP 조건이 붙는가</b>: 같은 폐라도 PEEP 를 높이면 닫힌 폐포가 열려 PaO2 가 오른다. 조건 없이 비를 재면 환기 설정에 따라 중증도가 들쭉날쭉해진다 — 그래서 최소 PEEP 를 정해 두고 비를 잰다.<br> <b>중증도의 의미</b>: 경도 200~300, 중등도 100~200, 중증 100 이하. 중증도가 높을수록 사망률이 높고, 중증에서는 복와위 환기·근이완제 같은 추가 치료를 고려한다. 기본 치료(예측 체중 6 mL/kg 의 저일회호흡량, 고원압 30 cmH2O 이하)는 중증도와 관계없이 같다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">중등도 ARDS — 정답</th><th>심인성 폐부종 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>좌심실 기능</td><td><b>박출률 정상, 좌심방 확장 없음</b></td><td>박출률 저하 또는 판막질환, 좌심방 확장</td></tr> <tr><td>음영 분포</td><td>양쪽 반점상·말초도 침범</td><td>폐문 중심 박쥐날개, 커리 B선, 흉수</td></tr> <tr><td>산소화</td><td>PEEP 10 에서 P/F 150</td><td>이뇨제·혈관확장제로 빠르게 호전</td></tr> </tbody></table> 양쪽 음영만으로는 둘을 가를 수 없다. 심장 기능이 정상이고 폐 손상 원인(폐렴)이 있으면 ARDS 로 보고, P/F 비로 중증도를 붙인다.\n- 오답 이유:\n  - ① 경도 급성호흡곤란증후군은 같은 PEEP 에서 PaO2/FiO2 가 200 초과 300 이하였다면(예: PaO2 150 mmHg) 정답이 된다.\n  - ② 중증 급성호흡곤란증후군은 PaO2/FiO2 가 100 이하였다면(예: 흡입산소분율 0.6 에서 PaO2 55 mmHg) 정답이 된다.\n  - ③ 심인성 폐부종은 좌심실 박출률이 낮거나 좌심방이 커져 있고 이뇨제로 음영이 빠르게 줄었다면 정답이 된다.\n  - ④ 양쪽 대량 흉막삼출은 늑골횡격막각이 둔해지고 아래 폐야가 위로 오목한 균일한 음영으로 덮였다면 정답이 된다.\n- 함정: 산소포화도 85 % 나 높은 흡입산소분율만 보고 중증으로 짐작하는 것 — 중증도는 PEEP 조건에서의 PaO2/FiO2 비로 정한다.\n- 학습목표: 양쪽 폐 음영과 PEEP 5 이상에서의 PaO2/FiO2 비로 급성호흡곤란증후군을 진단하고 중증도(경도·중등도·중증)를 가르며 심인성 폐부종과 감별한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · ARDS Definition Task Force; Ranieri VM, Rubenfeld GD, Thompson BT, et al. Acute respiratory distress syndrome: the Berlin Definition. JAMA. 2012;307(23):2526-2533\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …29506461 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선은 기관내관·비위관·중심정맥관과 함께 <b>양쪽 폐문 주위·하폐야 우세의 미만성 간유리·경화 음영</b>을 보이고 큰 흉수는 없다. 발병 1주 이내, 양쪽 음영, <b>좌심실 기능 정상</b>(심인성으로 설명되지 않음)이므로 급성호흡곤란증후군이다. PEEP 10 cmH2O 에서 <b>PaO2/FiO2 = 90/0.6 = 150</b> 으로 100 초과 200 이하라 <b>중등도</b>다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>베를린 정의의 네 조건</b>: ① 원인 손상이나 새 호흡기 증상 뒤 1주 이내 ② 흉부 영상에서 흉수·무기폐·결절로 다 설명되지 않는 양쪽 음영 ③ 심부전·수액 과다로 다 설명되지 않는 호흡부전(위험 인자가 없으면 심초음파로 확인) ④ PEEP(또는 CPAP) 5 cmH2O 이상에서 측정한 산소화 장애.<br> <b>왜 PEEP 조건이 붙는가</b>: 같은 폐라도 PEEP 를 높이면 닫힌 폐포가 열려 PaO2 가 오른다. 조건 없이 비를 재면 환기 설정에 따라 중증도가 들쭉날쭉해진다 — 그래서 최소 PEEP 를 정해 두고 비를 잰다.<br> <b>중증도의 의미</b>: 경도 200~300, 중등도 100~200, 중증 100 이하. 중증도가 높을수록 사망률이 높고, 중증에서는 복와위 환기·근이완제 같은 추가 치료를 고려한다. 기본 치료(예측 체중 6 mL/kg 의 저일회호흡량, 고원압 30 cmH2O 이하)는 중증도와 관계없이 같다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">중등도 ARDS — 정답</th><th>심인성 폐부종 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>좌심실 기능</td><td><b>박출률 정상, 좌심방 확장 없음</b></td><td>박출률 저하 또는 판막질환, 좌심방 확장</td></tr> <tr><td>음영 분포</td><td>양쪽 반점상·말초도 침범</td><td>폐문 중심 박쥐날개, 커리 B선, 흉수</td></tr> <tr><td>산소화</td><td>PEEP 10 에서 P/F 150</td><td>이뇨제·혈관확장제로 빠르게 호전</td></tr> </tbody></table> 양쪽 음영만으로는 둘을 가를 수 없다. 심장 기능이 정상이고 폐 손상 원인(폐렴)이 있으면 ARDS 로 보고, P/F 비로 중증도를 붙인다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경도 급성호흡곤란증후군은 같은 PEEP 에서 PaO2/FiO2 가 200 초과 300 이하였다면(예: PaO2 150 mmHg) 정답이 된다.\n② 중증 급성호흡곤란증후군은 PaO2/FiO2 가 100 이하였다면(예: 흡입산소분율 0.6 에서 PaO2 55 mmHg) 정답이 된다.\n③ 심인성 폐부종은 좌심실 박출률이 낮거나 좌심방이 커져 있고 이뇨제로 음영이 빠르게 줄었다면 정답이 된다.\n④ 양쪽 대량 흉막삼출은 늑골횡격막각이 둔해지고 아래 폐야가 위로 오목한 균일한 음영으로 덮였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "산소포화도 85 % 나 높은 흡입산소분율만 보고 중증으로 짐작하는 것 — 중증도는 PEEP 조건에서의 PaO2/FiO2 비로 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "양쪽 폐 음영과 PEEP 5 이상에서의 PaO2/FiO2 비로 급성호흡곤란증후군을 진단하고 중증도(경도·중등도·중증)를 가르며 심인성 폐부종과 감별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 312: Acute Respiratory Distress Syndrome · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 205: SARS-CoV-2 and COVID-19 · ARDS Definition Task Force; Ranieri VM, Rubenfeld GD, Thompson BT, et al. Acute respiratory distress syndrome: the Berlin Definition. JAMA. 2012;307(23):2526-2533 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …29506461 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "1주 이내 발병, 심장으로 설명되지 않는 양쪽 음영, PEEP 10 에서 P/F 150 — 중등도 급성호흡곤란증후군이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "좌심실 박출률 60 %·좌심방 확장 없음 — 심인성으로 설명되지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 폐문 주위·하폐야 우세의 미만성 간유리·경화 음영, 큰 흉수 없음 → 양쪽 음영",
+    "확진 6일째 + 심장 기능 정상 → 심인성이 아닌 급성호흡곤란증후군",
+    "PEEP 10 cmH2O 에서 90/0.6 = 150 → 중등도"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐의 미만성 간유리·경화 음영, 큰 흉수 없음",
+     "why": "베를린 정의의 영상 조건",
+     "also": []
+    },
+    {
+     "item": "PEEP 10 cmH2O, 흡입산소분율 0.6 이고, 이때 동맥혈 산소분압은 90 mmHg",
+     "why": "P/F 150 — 중등도",
+     "also": []
+    },
+    {
+     "item": "확진 6일째",
+     "why": "1주 이내 발병 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 박출률은 60 % 이고 좌심방 확장은 없다",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "산소포화도가 85 % 로 떨어져",
+     "why": "삽관 전 상태 — 중증도는 PEEP 조건의 P/F 로 정한다",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 음영과 정상 심장 기능으로 급성호흡곤란증후군이고, PEEP 10 에서 PaO2/FiO2 150 이라 중등도다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 설정에서 PaO2 가 55 mmHg 였다면(P/F 약 92) 중증"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0811.png",
+   "caption": "이동식 반좌위 흉부 전후면 X선, L·SEMI-UPRIGHT·PORTABLE 표지는 원본의 것, 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조절 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1274627081002639318824629506461",
+   "asset_id": "TCIA-COVID19_AR-87606234351080",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …29506461"
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0810",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "순환기 — 오르막에서 가슴이 조이는 중년 남성의 첫 검사",
+  "type": "순환기 — 오르막에서 가슴이 조이는 중년 남성의 첫 검사",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-27",
+  "vignette": "A 47-year-old man comes to the office because of 3 months of substernal chest pressure that occurs when he walks uphill and resolves within 5 minutes of rest. He has never had pain at rest. He smokes one pack of cigarettes daily and has hyperlipidemia. He walks 5 km several times a week without limitation in his legs. His blood pressure is 128/80 mm Hg and pulse is 60/min. Heart and lung examinations show no abnormalities. Serum troponin is within the reference range. A 12-lead ECG obtained at rest is shown.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Upper gastrointestinal endoscopy",
+   "Exercise treadmill ECG testing",
+   "Adenosine myocardial perfusion imaging",
+   "Invasive coronary angiography",
+   "24-hour ambulatory ECG monitoring"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The resting ECG shows <b>sinus rhythm at about 60/min with normal PR, QRS, and QT intervals, a normal axis, and no ST-segment or T-wave abnormality</b> — a normal, <b>interpretable baseline</b>. His exertional pressure relieved by rest is typical angina with an intermediate pretest probability. Because he <b>can exercise</b> and the baseline ST segments can be read during stress, an <b>exercise ECG test</b> is the appropriate first functional test.\n- 원리: <b>Why the resting ECG decides the type of stress test</b>: Exercise testing detects ischemia as new horizontal or downsloping ST depression during exertion. That signal can only be read if the ST segment is normal at rest. Left bundle branch block, ventricular pacing, pre-excitation, digoxin effect, or ≥ 1 mm baseline ST depression already distort the ST segment, so an imaging test must be added (perfusion imaging or echocardiography).<br> <b>Why the ability to exercise matters</b>: Exercise reproduces the patient's own symptoms and gives prognostic data (exercise capacity, blood pressure and heart rate response). Pharmacologic stress with adenosine or dobutamine is reserved for patients who cannot reach an adequate workload.<br> <b>Why not go straight to angiography</b>: Invasive angiography is for high-risk features — rest pain, heart failure, or high-risk stress results. A stable patient with normal troponin is first stratified noninvasively.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Exercise ECG (answer)</th><th>Adenosine perfusion imaging (closest distractor)</th></tr></thead><tbody> <tr><td>Resting ECG</td><td><b>Normal, interpretable ST segment</b></td><td>LBBB, paced rhythm, baseline ST changes</td></tr> <tr><td>Exercise capacity</td><td><b>Can exercise adequately</b></td><td>Cannot exercise (arthritis, deconditioning)</td></tr> <tr><td>Ischemia signal</td><td>ST depression with exertion</td><td>Perfusion defect on imaging</td></tr> </tbody></table> Two questions pick the test: can the patient exercise, and can the resting ST segment be read? Yes to both means exercise ECG; no to either means add imaging or use pharmacologic stress.\n- 오답 이유:\n  - (A) Upper endoscopy would be considered for burning pain related to meals or recumbency rather than pain triggered by walking uphill.\n  - (C) Adenosine perfusion imaging would be chosen if he could not exercise or if his resting ECG showed LBBB or a paced rhythm.\n  - (D) Invasive coronary angiography would be next if he had rest angina, heart failure, or a high-risk result on noninvasive testing.\n  - (E) Ambulatory ECG monitoring suits intermittent palpitations or syncope, not exertional chest pressure that is reproducible with effort.\n- 함정: Assuming a normal resting ECG rules out coronary disease — most patients with stable angina have a normal ECG at rest.\n- 학습목표: Choose exercise ECG testing for suspected stable angina when the resting ECG is interpretable and the patient can exercise, and distinguish it from pharmacologic stress imaging\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 284: Ischemic Heart Disease · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Gulati M, Levy PD, Mukherjee D, et al. 2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain. Circulation. 2021;144(22):e368-e454\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2975 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The resting ECG shows <b>sinus rhythm at about 60/min with normal PR, QRS, and QT intervals, a normal axis, and no ST-segment or T-wave abnormality</b> — a normal, <b>interpretable baseline</b>. His exertional pressure relieved by rest is typical angina with an intermediate pretest probability. Because he <b>can exercise</b> and the baseline ST segments can be read during stress, an <b>exercise ECG test</b> is the appropriate first functional test."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the resting ECG decides the type of stress test</b>: Exercise testing detects ischemia as new horizontal or downsloping ST depression during exertion. That signal can only be read if the ST segment is normal at rest. Left bundle branch block, ventricular pacing, pre-excitation, digoxin effect, or ≥ 1 mm baseline ST depression already distort the ST segment, so an imaging test must be added (perfusion imaging or echocardiography).<br> <b>Why the ability to exercise matters</b>: Exercise reproduces the patient's own symptoms and gives prognostic data (exercise capacity, blood pressure and heart rate response). Pharmacologic stress with adenosine or dobutamine is reserved for patients who cannot reach an adequate workload.<br> <b>Why not go straight to angiography</b>: Invasive angiography is for high-risk features — rest pain, heart failure, or high-risk stress results. A stable patient with normal troponin is first stratified noninvasively."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Exercise ECG (answer)</th><th>Adenosine perfusion imaging (closest distractor)</th></tr></thead><tbody> <tr><td>Resting ECG</td><td><b>Normal, interpretable ST segment</b></td><td>LBBB, paced rhythm, baseline ST changes</td></tr> <tr><td>Exercise capacity</td><td><b>Can exercise adequately</b></td><td>Cannot exercise (arthritis, deconditioning)</td></tr> <tr><td>Ischemia signal</td><td>ST depression with exertion</td><td>Perfusion defect on imaging</td></tr> </tbody></table> Two questions pick the test: can the patient exercise, and can the resting ST segment be read? Yes to both means exercise ECG; no to either means add imaging or use pharmacologic stress."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Upper endoscopy would be considered for burning pain related to meals or recumbency rather than pain triggered by walking uphill.\n(C) Adenosine perfusion imaging would be chosen if he could not exercise or if his resting ECG showed LBBB or a paced rhythm.\n(D) Invasive coronary angiography would be next if he had rest angina, heart failure, or a high-risk result on noninvasive testing.\n(E) Ambulatory ECG monitoring suits intermittent palpitations or syncope, not exertional chest pressure that is reproducible with effort."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming a normal resting ECG rules out coronary disease — most patients with stable angina have a normal ECG at rest."
+   },
+   {
+    "k": "학습목표",
+    "v": "Choose exercise ECG testing for suspected stable angina when the resting ECG is interpretable and the patient can exercise, and distinguish it from pharmacologic stress imaging"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 284: Ischemic Heart Disease · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 247: Electrocardiography · Gulati M, Levy PD, Mukherjee D, et al. 2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain. Circulation. 2021;144(22):e368-e454 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2975 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "전형적 협심증이 의심되고 안정 시 심전도가 정상(판독 가능)이며 운동할 수 있으면 첫 검사는 운동부하 심전도다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "운동 능력이 있고 안정 시 ST 분절이 정상이다 — 약물부하 영상이 필요한 조건이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 동리듬 약 60회/분, 간격·축 정상, ST-T 변화 없음 → 판독 가능한 정상 기저 심전도",
+    "운동 가능 + 정상 기저 심전도 + 안정형 증상 → 운동부하 심전도"
+   ],
+   "key": [
+    {
+     "item": "영상: 동리듬, PR·QRS·QT 정상, ST-T 변화 없음",
+     "why": "운동 중 ST 변화를 읽을 수 있다",
+     "also": []
+    },
+    {
+     "item": "walks 5 km several times a week without limitation",
+     "why": "운동부하가 가능 — 약물부하 불필요",
+     "also": []
+    },
+    {
+     "item": "resolves within 5 minutes of rest",
+     "why": "안정형 협심증 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum troponin is within the reference range",
+     "why": "급성 관상동맥증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has never had pain at rest",
+     "why": "고위험 양상이 없어 침습 검사가 먼저가 아니다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "안정 시 심전도는 정상이라 운동 중 ST 변화를 읽을 수 있고 환자는 운동할 수 있다. 안정형 협심증 의심의 첫 검사는 운동부하 심전도다.",
+   "switch": {
+    "choice": "C",
+    "condition": "무릎 관절염으로 걷지 못하거나 안정 시 좌각차단이 있었다면 약물부하 관류영상"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0810.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02975",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2975"
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0816",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "부인과 — 난임과 월경통·성교통이 있는 여성",
+  "type": "부인과 — 난임과 월경통·성교통이 있는 여성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-27",
+  "vignette": "A 29-year-old woman, gravida 0, comes to the office because she has been unable to conceive despite 2 years of regular unprotected intercourse. She has had progressively severe menstrual pain that begins 2 days before menses, deep pain during intercourse, and painful defecation during menses. Her menstrual cycles are regular every 28 days with normal flow. Her partner's semen analysis is normal. Pelvic examination shows a normal-sized, fixed, retroverted uterus and tender nodularity along the uterosacral ligaments. Transvaginal ultrasonography shows a 4-cm left ovarian cyst with diffuse homogeneous low-level internal echoes and no solid component.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Endometriosis",
+   "Adenomyosis",
+   "Chronic pelvic inflammatory disease",
+   "Uterine leiomyoma",
+   "Mature cystic teratoma"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Cyclic pain that starts <b>before menses</b>, <b>deep dyspareunia</b>, and <b>dyschezia during menses</b> point to implants in the posterior cul-de-sac and uterosacral ligaments. The exam shows <b>tender uterosacral nodularity</b> and a <b>fixed retroverted uterus</b> (adhesions) of <b>normal size</b>, and the ultrasound shows an ovarian cyst with <b>homogeneous ground-glass echoes</b> — an endometrioma. With infertility in a nulligravid 29-year-old, this is <b>endometriosis</b>.\n- 원리: <b>Ectopic endometrium behaves like endometrium</b>: Implants outside the uterus (most often on the ovaries, cul-de-sac, and uterosacral ligaments) proliferate and bleed with each cycle. The bleeding triggers inflammation, fibrosis, and adhesions — hence pain that starts before menses and deep pain when the posterior cul-de-sac is stretched (intercourse, defecation).<br> <b>Why the ovarian cyst looks like ground glass</b>: Repeated bleeding into an ovarian implant forms a cyst filled with old, thick blood (\"chocolate cyst\"). The uniform hemosiderin-rich fluid produces diffuse low-level echoes on ultrasound.<br> <b>Why infertility occurs</b>: Adhesions distort tubo-ovarian anatomy and impair oocyte pickup, and the inflammatory peritoneal fluid is toxic to gametes and embryos. Definitive diagnosis is by laparoscopy, which also allows excision; first-line pain treatment is NSAIDs plus hormonal suppression, but suppression does not help conception.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endometriosis (answer)</th><th>Adenomyosis (closest distractor)</th></tr></thead><tbody> <tr><td>Typical patient</td><td><b>Young, nulligravid, infertile</b></td><td>Multiparous, 40s</td></tr> <tr><td>Uterus</td><td><b>Normal size</b>, often fixed retroverted</td><td>Diffusely enlarged, boggy, tender</td></tr> <tr><td>Other findings</td><td>Uterosacral nodules, endometrioma</td><td>Heavy menstrual bleeding</td></tr> </tbody></table> Both cause dysmenorrhea. A normal-sized uterus with cul-de-sac nodularity and an ovarian chocolate cyst points to endometriosis; a globally enlarged uterus with heavy bleeding in an older multiparous woman points to adenomyosis.\n- 오답 이유:\n  - (B) Adenomyosis would be the answer if a multiparous woman in her 40s had heavy menses and a diffusely enlarged, boggy, tender uterus.\n  - (C) Chronic pelvic inflammatory disease would be favored by prior sexually transmitted infection, noncyclic pain, and a tubo-ovarian complex mass.\n  - (D) A uterine leiomyoma would present with an enlarged, irregular, firm uterus and heavy menstrual bleeding, not uterosacral nodules.\n  - (E) A mature cystic teratoma would show an echogenic fat nodule, hair lines, or calcification on ultrasound and is usually painless.\n- 함정: Choosing adenomyosis because both cause worsening dysmenorrhea — the normal-sized uterus, uterosacral nodules, and ovarian cyst point outside the uterus.\n- 학습목표: Diagnose endometriosis from cyclic dysmenorrhea, deep dyspareunia, dyschezia, uterosacral nodularity, and an ovarian cyst with homogeneous low-level echoes in a nulligravid woman with infertility, and distinguish it from adenomyosis\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 114: Management of endometriosis. Obstet Gynecol. 2010;116(1):223-236 · Zondervan KT, Becker CM, Missmer SA. Endometriosis. N Engl J Med. 2020;382(13):1244-1256",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Cyclic pain that starts <b>before menses</b>, <b>deep dyspareunia</b>, and <b>dyschezia during menses</b> point to implants in the posterior cul-de-sac and uterosacral ligaments. The exam shows <b>tender uterosacral nodularity</b> and a <b>fixed retroverted uterus</b> (adhesions) of <b>normal size</b>, and the ultrasound shows an ovarian cyst with <b>homogeneous ground-glass echoes</b> — an endometrioma. With infertility in a nulligravid 29-year-old, this is <b>endometriosis</b>."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Ectopic endometrium behaves like endometrium</b>: Implants outside the uterus (most often on the ovaries, cul-de-sac, and uterosacral ligaments) proliferate and bleed with each cycle. The bleeding triggers inflammation, fibrosis, and adhesions — hence pain that starts before menses and deep pain when the posterior cul-de-sac is stretched (intercourse, defecation).<br> <b>Why the ovarian cyst looks like ground glass</b>: Repeated bleeding into an ovarian implant forms a cyst filled with old, thick blood (\"chocolate cyst\"). The uniform hemosiderin-rich fluid produces diffuse low-level echoes on ultrasound.<br> <b>Why infertility occurs</b>: Adhesions distort tubo-ovarian anatomy and impair oocyte pickup, and the inflammatory peritoneal fluid is toxic to gametes and embryos. Definitive diagnosis is by laparoscopy, which also allows excision; first-line pain treatment is NSAIDs plus hormonal suppression, but suppression does not help conception."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Endometriosis (answer)</th><th>Adenomyosis (closest distractor)</th></tr></thead><tbody> <tr><td>Typical patient</td><td><b>Young, nulligravid, infertile</b></td><td>Multiparous, 40s</td></tr> <tr><td>Uterus</td><td><b>Normal size</b>, often fixed retroverted</td><td>Diffusely enlarged, boggy, tender</td></tr> <tr><td>Other findings</td><td>Uterosacral nodules, endometrioma</td><td>Heavy menstrual bleeding</td></tr> </tbody></table> Both cause dysmenorrhea. A normal-sized uterus with cul-de-sac nodularity and an ovarian chocolate cyst points to endometriosis; a globally enlarged uterus with heavy bleeding in an older multiparous woman points to adenomyosis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Adenomyosis would be the answer if a multiparous woman in her 40s had heavy menses and a diffusely enlarged, boggy, tender uterus.\n(C) Chronic pelvic inflammatory disease would be favored by prior sexually transmitted infection, noncyclic pain, and a tubo-ovarian complex mass.\n(D) A uterine leiomyoma would present with an enlarged, irregular, firm uterus and heavy menstrual bleeding, not uterosacral nodules.\n(E) A mature cystic teratoma would show an echogenic fat nodule, hair lines, or calcification on ultrasound and is usually painless."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing adenomyosis because both cause worsening dysmenorrhea — the normal-sized uterus, uterosacral nodules, and ovarian cyst point outside the uterus."
+   },
+   {
+    "k": "학습목표",
+    "v": "Diagnose endometriosis from cyclic dysmenorrhea, deep dyspareunia, dyschezia, uterosacral nodularity, and an ovarian cyst with homogeneous low-level echoes in a nulligravid woman with infertility, and distinguish it from adenomyosis"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 114: Management of endometriosis. Obstet Gynecol. 2010;116(1):223-236 · Zondervan KT, Becker CM, Missmer SA. Endometriosis. N Engl J Med. 2020;382(13):1244-1256"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "젊은 미산부의 난임에 월경 전 시작하는 통증·심부 성교통·배변통, 자궁천골인대 결절, 균일한 저에코 난소낭종이 있으면 자궁내막증이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "자궁 크기가 정상이고 자궁천골인대 결절과 자궁내막종이 있다 — 자궁선근증은 자궁이 커진다",
+   "steps": 2,
+   "chain": [
+    "주기적 월경통 + 심부 성교통 + 배변통 + 자궁천골인대 결절 → 뒤쪽 골반의 자궁 밖 병변",
+    "정상 크기의 고정된 후굴 자궁 + 균일한 저에코 난소낭종 → 자궁내막증(자궁내막종)"
+   ],
+   "key": [
+    {
+     "item": "tender nodularity along the uterosacral ligaments",
+     "why": "자궁천골인대의 이소성 내막",
+     "also": []
+    },
+    {
+     "item": "4-cm left ovarian cyst with diffuse homogeneous low-level internal echoes",
+     "why": "자궁내막종",
+     "also": []
+    },
+    {
+     "item": "normal-sized, fixed, retroverted uterus",
+     "why": "유착 — 자궁 크기 정상이라 선근증·근종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "painful defecation during menses",
+     "why": "더글라스와 침범",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Her partner's semen analysis is normal",
+     "why": "남성 요인 난임 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "regular every 28 days with normal flow",
+     "why": "배란 장애·월경과다 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "정상 크기의 고정된 자궁, 자궁천골인대 결절, 균일한 저에코 난소낭종과 주기적 통증·난임은 자궁내막증이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "40대 다산부의 월경과다와 전체적으로 커진 물렁한 자궁이었다면 자궁선근증"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0815",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "감염 — TNF 억제제를 앞둔 류마티스관절염 환자의 IGRA 양성",
+  "type": "감염 — TNF 억제제를 앞둔 류마티스관절염 환자의 IGRA 양성",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-27",
+  "vignette": "45세 여자가 류마티스관절염으로 메토트렉세이트를 6개월 복용했으나 관절염이 조절되지 않아 TNF 억제제 투여를 계획하고 있다. 기침, 발열, 체중 감소, 야간 발한은 없다. 결핵을 앓거나 치료받은 적은 없고, 20년 전 시아버지가 폐결핵으로 치료받았다. 활력징후는 정상이고 양쪽 손목과 손가락 관절이 부어 있다. 인터페론감마 분비검사(IGRA)는 양성이다. 흉부 X선은 정상이다. HIV 항체 음성, AST 28 U/L, ALT 25 U/L 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "객담 항산균 검사 3회 후 TNF 억제제 투여",
+   "6개월 뒤 IGRA 재검 후 TNF 억제제 결정",
+   "잠복결핵 치료를 시작한 뒤 TNF 억제제 투여",
+   "잠복결핵 치료 없이 바로 TNF 억제제 투여",
+   "4제 항결핵제 치료 후 TNF 억제제 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: IGRA 양성은 결핵균 감염을 뜻하고, <b>증상이 없고 흉부 X선이 정상</b>이므로 활동성 결핵이 아닌 <b>잠복결핵 감염</b>이다. TNF 억제제는 육아종을 유지하는 TNF 를 막아 <b>잠복결핵의 재활성화 위험을 크게 높이므로</b>, <b>잠복결핵 치료를 먼저 시작</b>하고(예: 이소니아지드·리팜핀 3개월, 리팜핀 4개월) 일정 기간(국내 지침은 대개 3주 이상) 뒤 TNF 억제제를 투여한다.\n- 원리: <b>TNF 가 결핵을 가두는 방식</b>: 결핵균을 삼킨 대식세포는 TNF 를 내어 다른 대식세포와 T 세포를 불러 모으고, 상피양 세포와 거대세포가 균을 둘러싼 육아종을 만든다. 이 벽 안에서 균은 죽지 않고 휴면한다 — 잠복결핵이다.<br> <b>TNF 를 막으면</b>: 육아종의 구조가 풀리고 대식세포의 살균력이 떨어져 휴면하던 균이 다시 증식한다. 그래서 TNF 억제제 투여 뒤 결핵은 흔히 수개월 안에, 폐외·파종성으로 나타난다.<br> <b>그래서 순서가 정해진다</b>: ① 증상·흉부 X선으로 활동성 결핵을 먼저 배제(있으면 객담 검사와 4제 치료) ② 활동성이 아니면 잠복결핵 치료 시작 ③ 그 뒤 생물학제제. 잠복결핵 치료는 균 수가 적어 1~2제로 충분하고, 4제는 내성 유발과 독성만 늘린다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">잠복결핵 치료 — 정답</th><th>4제 항결핵제 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td><b>IGRA 양성 + 증상 없음 + 흉부 X선 정상</b></td><td>증상·영상 이상·객담 양성(활동성 결핵)</td></tr> <tr><td>균의 양</td><td>적음 — 1~2제로 충분</td><td>많음 — 내성 방지를 위해 다제</td></tr> <tr><td>약제·기간</td><td>이소니아지드·리팜핀 3개월, 리팜핀 4개월 등</td><td>이소니아지드·리팜핀·에탐부톨·피라진아미드 2개월 → 4개월</td></tr> </tbody></table> IGRA 는 감염 여부만 알려 주고 활동성 여부는 증상과 영상이 정한다. 둘 다 정상이면 잠복결핵 치료다.\n- 오답 이유:\n  - ① 객담 항산균 검사는 흉부 X선 이상이나 호흡기 증상이 있어 활동성 결핵을 확인해야 할 때 먼저 하는 검사가 된다.\n  - ② IGRA 재검은 결과가 불확정(indeterminate)이었다면 고려하지만, 양성 결과를 미루는 이유가 되지 않는다.\n  - ④ 잠복결핵 치료 없이 바로 TNF 억제제 투여는 IGRA 음성이고 결핵 노출 위험이 낮은 환자라면 정답이 된다.\n  - ⑤ 4제 항결핵제 치료는 기침·발열·체중 감소가 있거나 흉부 X선에 공동·침윤이 있는 활동성 결핵이라면 정답이 된다.\n- 함정: 증상이 없으니 결핵은 문제가 없다고 보고 바로 생물학제제를 시작하는 것 — TNF 억제제는 잠복결핵을 깨운다.\n- 학습목표: TNF 억제제 투여 전 IGRA 양성이고 활동성 결핵의 증상·흉부 X선 소견이 없으면 잠복결핵 치료를 먼저 시작한 뒤 생물학제제를 투여한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 183: Tuberculosis · Sterling TR, Njie G, Zenner D, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from the National Tuberculosis Controllers Association and CDC, 2020. MMWR Recomm Rep. 2020;69(1):1-11",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "IGRA 양성은 결핵균 감염을 뜻하고, <b>증상이 없고 흉부 X선이 정상</b>이므로 활동성 결핵이 아닌 <b>잠복결핵 감염</b>이다. TNF 억제제는 육아종을 유지하는 TNF 를 막아 <b>잠복결핵의 재활성화 위험을 크게 높이므로</b>, <b>잠복결핵 치료를 먼저 시작</b>하고(예: 이소니아지드·리팜핀 3개월, 리팜핀 4개월) 일정 기간(국내 지침은 대개 3주 이상) 뒤 TNF 억제제를 투여한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>TNF 가 결핵을 가두는 방식</b>: 결핵균을 삼킨 대식세포는 TNF 를 내어 다른 대식세포와 T 세포를 불러 모으고, 상피양 세포와 거대세포가 균을 둘러싼 육아종을 만든다. 이 벽 안에서 균은 죽지 않고 휴면한다 — 잠복결핵이다.<br> <b>TNF 를 막으면</b>: 육아종의 구조가 풀리고 대식세포의 살균력이 떨어져 휴면하던 균이 다시 증식한다. 그래서 TNF 억제제 투여 뒤 결핵은 흔히 수개월 안에, 폐외·파종성으로 나타난다.<br> <b>그래서 순서가 정해진다</b>: ① 증상·흉부 X선으로 활동성 결핵을 먼저 배제(있으면 객담 검사와 4제 치료) ② 활동성이 아니면 잠복결핵 치료 시작 ③ 그 뒤 생물학제제. 잠복결핵 치료는 균 수가 적어 1~2제로 충분하고, 4제는 내성 유발과 독성만 늘린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">잠복결핵 치료 — 정답</th><th>4제 항결핵제 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>대상</td><td><b>IGRA 양성 + 증상 없음 + 흉부 X선 정상</b></td><td>증상·영상 이상·객담 양성(활동성 결핵)</td></tr> <tr><td>균의 양</td><td>적음 — 1~2제로 충분</td><td>많음 — 내성 방지를 위해 다제</td></tr> <tr><td>약제·기간</td><td>이소니아지드·리팜핀 3개월, 리팜핀 4개월 등</td><td>이소니아지드·리팜핀·에탐부톨·피라진아미드 2개월 → 4개월</td></tr> </tbody></table> IGRA 는 감염 여부만 알려 주고 활동성 여부는 증상과 영상이 정한다. 둘 다 정상이면 잠복결핵 치료다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 객담 항산균 검사는 흉부 X선 이상이나 호흡기 증상이 있어 활동성 결핵을 확인해야 할 때 먼저 하는 검사가 된다.\n② IGRA 재검은 결과가 불확정(indeterminate)이었다면 고려하지만, 양성 결과를 미루는 이유가 되지 않는다.\n④ 잠복결핵 치료 없이 바로 TNF 억제제 투여는 IGRA 음성이고 결핵 노출 위험이 낮은 환자라면 정답이 된다.\n⑤ 4제 항결핵제 치료는 기침·발열·체중 감소가 있거나 흉부 X선에 공동·침윤이 있는 활동성 결핵이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "증상이 없으니 결핵은 문제가 없다고 보고 바로 생물학제제를 시작하는 것 — TNF 억제제는 잠복결핵을 깨운다."
+   },
+   {
+    "k": "학습목표",
+    "v": "TNF 억제제 투여 전 IGRA 양성이고 활동성 결핵의 증상·흉부 X선 소견이 없으면 잠복결핵 치료를 먼저 시작한 뒤 생물학제제를 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 183: Tuberculosis · Sterling TR, Njie G, Zenner D, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from the National Tuberculosis Controllers Association and CDC, 2020. MMWR Recomm Rep. 2020;69(1):1-11"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "TNF 억제제 투여 전 IGRA 양성이고 증상·흉부 X선이 정상이면 잠복결핵 — 잠복결핵 치료를 먼저 시작하고 생물학제제를 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "증상이 없고 흉부 X선이 정상 — 활동성 결핵이 아니다",
+   "steps": 3,
+   "chain": [
+    "IGRA 양성 → 결핵균 감염",
+    "증상 없음 + 흉부 X선 정상 → 활동성 결핵이 아닌 잠복결핵",
+    "TNF 억제제는 재활성화 위험 → 잠복결핵 치료 먼저, 그 뒤 투여"
+   ],
+   "key": [
+    {
+     "item": "인터페론감마 분비검사(IGRA)는 양성",
+     "why": "결핵균 감염",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "기침, 발열, 체중 감소, 야간 발한은 없다",
+     "why": "활동성 결핵 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "흉부 X선은 정상",
+     "why": "활동성 폐결핵 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "TNF 억제제 투여를 계획",
+     "why": "재활성화 위험이 커 치료 순서를 정한다",
+     "also": []
+    },
+    {
+     "item": "AST 28 U/L, ALT 25 U/L",
+     "why": "잠복결핵 치료 전 간기능 기저값 — 투여 가능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "20년 전 시아버지가 폐결핵으로 치료받았다",
+     "why": "노출력 — 결과 해석을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "IGRA 양성이지만 증상·흉부 X선이 정상이라 잠복결핵이다. TNF 억제제가 재활성화를 부르므로 잠복결핵 치료를 먼저 시작한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "기침·체중 감소가 있고 흉부 X선에 상엽 공동이 있었다면 4제 항결핵제 치료"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0814",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "혈액·종양 — 월경과다와 발치 출혈이 있는 젊은 여성의 시술 전 처치",
+  "type": "혈액·종양 — 월경과다와 발치 출혈이 있는 젊은 여성의 시술 전 처치",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-27",
+  "vignette": "A 19-year-old woman is referred before extraction of an impacted wisdom tooth. She has had heavy menstrual periods since menarche, frequent nosebleeds, and prolonged bleeding after a previous tooth extraction. Her mother has similar symptoms. She takes no medications. Physical examination shows no petechiae or joint deformity. Laboratory studies show a platelet count of 250,000/mm3, normal prothrombin time, and activated partial thromboplastin time of 38 seconds (reference 25–35). Von Willebrand factor antigen is 28%, von Willebrand factor activity is 26%, and factor VIII activity is 40%. Multimer analysis shows all multimer sizes present in normal proportions. A trial infusion 2 months ago raised her von Willebrand factor activity to 85%.",
+  "question": "Which of the following is the most appropriate prophylaxis before the procedure?",
+  "options": [
+   "Desmopressin",
+   "Recombinant factor VIII concentrate",
+   "Platelet transfusion",
+   "Fresh frozen plasma",
+   "Vitamin K"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Mucocutaneous bleeding (menorrhagia, epistaxis, dental bleeding) with <b>autosomal dominant inheritance</b>, a normal platelet count, and a <b>proportionate reduction of VWF antigen and activity (ratio ≈ 0.9)</b> with <b>normal multimers</b> is <b>type 1 von Willebrand disease</b>. The mildly prolonged aPTT reflects low factor VIII, which VWF normally carries. Her documented response to a trial dose shows that her endothelial stores can be released, so <b>desmopressin</b> is the prophylaxis of choice, often with tranexamic acid for dental work.\n- 원리: <b>What desmopressin does</b>: Desmopressin (DDAVP) is a vasopressin analogue that acts on V2 receptors of endothelial cells and releases preformed VWF from Weibel-Palade bodies. In type 1 disease, the VWF that patients make is normal in structure but reduced in amount, so releasing stores raises VWF and factor VIII 2- to 5-fold within an hour.<br> <b>Why a trial infusion is done first</b>: Response varies between patients, so guidelines recommend a test dose with measurement of VWF activity before relying on it for surgery.<br> <b>Why factor VIII concentrate alone is wrong</b>: The primary defect is platelet adhesion to collagen via VWF. Factor VIII without VWF is cleared quickly and does not correct platelet adhesion. When desmopressin fails or is contraindicated (type 3, some type 2), a plasma-derived VWF/factor VIII concentrate or recombinant VWF is used. Repeated doses of desmopressin cause tachyphylaxis and hyponatremia, so fluid intake is limited.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Type 1 VWD → desmopressin (answer)</th><th>Hemophilia A → factor VIII concentrate (closest distractor)</th></tr></thead><tbody> <tr><td>Bleeding pattern</td><td><b>Mucocutaneous</b> (menorrhagia, epistaxis)</td><td>Deep tissue: hemarthrosis, muscle hematoma</td></tr> <tr><td>Inheritance</td><td>Autosomal dominant (mother affected)</td><td>X-linked (affected males)</td></tr> <tr><td>VWF antigen/activity</td><td><b>Both low, ratio ≈ 1</b></td><td>Normal</td></tr> <tr><td>Factor VIII</td><td>Mildly low (secondary)</td><td>Primarily low</td></tr> </tbody></table> Both prolong the aPTT. Low VWF with mucosal bleeding in a woman points to VWD; isolated factor VIII deficiency with joint bleeding in a man points to hemophilia A.\n- 오답 이유:\n  - (B) Recombinant factor VIII concentrate would be the answer for a man with hemophilia A and normal VWF levels before surgery.\n  - (C) Platelet transfusion would be chosen for severe thrombocytopenia or a platelet function defect such as Glanzmann thrombasthenia.\n  - (D) Fresh frozen plasma would be used for multiple factor deficiencies, such as massive transfusion or liver failure, not for targeted VWD prophylaxis.\n  - (E) Vitamin K would correct a prolonged PT from warfarin, malabsorption, or deficiency of factors II, VII, IX, and X.\n- 함정: Seeing a prolonged aPTT with low factor VIII and choosing factor VIII replacement — the primary defect is VWF, and her stores respond to desmopressin.\n- 학습목표: Diagnose type 1 von Willebrand disease from mucocutaneous bleeding with proportionally low VWF antigen and activity, and choose desmopressin for procedural prophylaxis after a documented response\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 69: Bleeding and Thrombosis · Connell NT, Flood VH, Brignardello-Petersen R, et al. ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease. Blood Adv. 2021;5(1):301-325",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Mucocutaneous bleeding (menorrhagia, epistaxis, dental bleeding) with <b>autosomal dominant inheritance</b>, a normal platelet count, and a <b>proportionate reduction of VWF antigen and activity (ratio ≈ 0.9)</b> with <b>normal multimers</b> is <b>type 1 von Willebrand disease</b>. The mildly prolonged aPTT reflects low factor VIII, which VWF normally carries. Her documented response to a trial dose shows that her endothelial stores can be released, so <b>desmopressin</b> is the prophylaxis of choice, often with tranexamic acid for dental work."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What desmopressin does</b>: Desmopressin (DDAVP) is a vasopressin analogue that acts on V2 receptors of endothelial cells and releases preformed VWF from Weibel-Palade bodies. In type 1 disease, the VWF that patients make is normal in structure but reduced in amount, so releasing stores raises VWF and factor VIII 2- to 5-fold within an hour.<br> <b>Why a trial infusion is done first</b>: Response varies between patients, so guidelines recommend a test dose with measurement of VWF activity before relying on it for surgery.<br> <b>Why factor VIII concentrate alone is wrong</b>: The primary defect is platelet adhesion to collagen via VWF. Factor VIII without VWF is cleared quickly and does not correct platelet adhesion. When desmopressin fails or is contraindicated (type 3, some type 2), a plasma-derived VWF/factor VIII concentrate or recombinant VWF is used. Repeated doses of desmopressin cause tachyphylaxis and hyponatremia, so fluid intake is limited."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Type 1 VWD → desmopressin (answer)</th><th>Hemophilia A → factor VIII concentrate (closest distractor)</th></tr></thead><tbody> <tr><td>Bleeding pattern</td><td><b>Mucocutaneous</b> (menorrhagia, epistaxis)</td><td>Deep tissue: hemarthrosis, muscle hematoma</td></tr> <tr><td>Inheritance</td><td>Autosomal dominant (mother affected)</td><td>X-linked (affected males)</td></tr> <tr><td>VWF antigen/activity</td><td><b>Both low, ratio ≈ 1</b></td><td>Normal</td></tr> <tr><td>Factor VIII</td><td>Mildly low (secondary)</td><td>Primarily low</td></tr> </tbody></table> Both prolong the aPTT. Low VWF with mucosal bleeding in a woman points to VWD; isolated factor VIII deficiency with joint bleeding in a man points to hemophilia A."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Recombinant factor VIII concentrate would be the answer for a man with hemophilia A and normal VWF levels before surgery.\n(C) Platelet transfusion would be chosen for severe thrombocytopenia or a platelet function defect such as Glanzmann thrombasthenia.\n(D) Fresh frozen plasma would be used for multiple factor deficiencies, such as massive transfusion or liver failure, not for targeted VWD prophylaxis.\n(E) Vitamin K would correct a prolonged PT from warfarin, malabsorption, or deficiency of factors II, VII, IX, and X."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing a prolonged aPTT with low factor VIII and choosing factor VIII replacement — the primary defect is VWF, and her stores respond to desmopressin."
+   },
+   {
+    "k": "학습목표",
+    "v": "Diagnose type 1 von Willebrand disease from mucocutaneous bleeding with proportionally low VWF antigen and activity, and choose desmopressin for procedural prophylaxis after a documented response"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 120: Disorders of Platelets and Vessel Wall · Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 69: Bleeding and Thrombosis · Connell NT, Flood VH, Brignardello-Petersen R, et al. ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease. Blood Adv. 2021;5(1):301-325"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "VWF 항원·활성이 비례해 낮고 다량체가 정상인 1형 폰빌레브란트병에서 시험 투여 반응이 확인되었으면 시술 전 예방은 데스모프레신이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "결함은 VWF 이고(인자 VIII 저하는 이차적) 시험 투여에서 VWF 활성이 85 % 로 올랐다",
+   "steps": 3,
+   "chain": [
+    "점막 출혈 + 어머니도 같은 증상 + 혈소판 정상 → 폰빌레브란트병 의심",
+    "VWF 항원 28 %·활성 26 %(비율 약 1) + 다량체 정상 → 1형",
+    "시험 투여 반응 확인 → 데스모프레신으로 예방"
+   ],
+   "key": [
+    {
+     "item": "heavy menstrual periods since menarche, frequent nosebleeds",
+     "why": "점막 출혈 — 일차 지혈 이상",
+     "also": []
+    },
+    {
+     "item": "Von Willebrand factor antigen is 28%, von Willebrand factor activity is 26%",
+     "why": "비례 감소 — 1형",
+     "also": []
+    },
+    {
+     "item": "all multimer sizes present in normal proportions",
+     "why": "2형 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "platelet count of 250,000/mm3",
+     "why": "혈소판 감소에 의한 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "A trial infusion 2 months ago raised her von Willebrand factor activity to 85%",
+     "why": "데스모프레신 반응 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "factor VIII activity is 40%",
+     "why": "VWF 결핍의 이차 결과 — 혈우병 A 로 끌려가기 쉽다",
+     "also": []
+    }
+   ],
+   "summary": "점막 출혈과 비례해 낮은 VWF 항원·활성, 정상 다량체로 1형 폰빌레브란트병이다. 시험 투여 반응이 확인되어 시술 전 데스모프레신을 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "VWF 가 정상이고 관절 출혈이 있는 남성(혈우병 A)이었다면 인자 VIII 농축제"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0813",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "소화기 — 용혈과 간염이 함께 온 젊은 남성",
+  "type": "소화기 — 용혈과 간염이 함께 온 젊은 남성",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-11-27",
+  "vignette": "19세 남자가 1주 전부터 피로하고 눈이 노래져서 왔다. 6개월 전부터 글씨를 쓸 때 손이 떨리고 학교 성적이 떨어졌다. 술은 마시지 않고 복용 중인 약은 없다. 공막 황달이 있고 손을 앞으로 뻗으면 떨림이 있다. 혈색소 9.2 g/dL, 망상적혈구 6 %, 직접 쿰스 검사 음성, AST 180 U/L, ALT 95 U/L, ALP 30 U/L, 총빌리루빈 5.8 mg/dL(간접 우세)이다. HBsAg, anti-HCV, IgM anti-HAV 는 모두 음성이다. 복부 초음파에서 간 실질이 거칠고 담관 확장은 없다.",
+  "question": "진단을 위해 먼저 시행할 검사로 가장 적절한 것은?",
+  "options": [
+   "항미토콘드리아 항체",
+   "혈청 알파1-항트립신 농도",
+   "항평활근 항체",
+   "혈청 세룰로플라스민",
+   "트랜스페린 포화도와 페리틴"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 젊은 환자에게 <b>간염 + 쿰스 음성 용혈(망상적혈구 증가·간접 빌리루빈 우세)</b>이 함께 오고 <b>ALP 가 낮으며</b>(ALP/총빌리루빈 비 < 4), <b>떨림·학업 저하 같은 신경정신 증상</b>이 있다 — <b>윌슨병</b>이다. 첫 선별 검사는 <b>혈청 세룰로플라스민</b>(낮음)이고, 24시간 소변 구리와 세극등 검사(카이저-플라이셔 고리)로 뒷받침한다.\n- 원리: <b>구리가 빠져나가지 못하는 병</b>: ATP7B 유전자 변이로 간세포가 구리를 세룰로플라스민에 싣지도, 담즙으로 내보내지도 못한다. 구리를 싣지 못한 세룰로플라스민은 빨리 분해되어 혈청 농도가 낮아진다 — 그래서 첫 선별 검사가 된다.<br> <b>왜 용혈이 오는가</b>: 손상된 간세포에서 유리 구리가 한꺼번에 혈중으로 쏟아지면 적혈구 막을 산화시켜 쿰스 음성 용혈이 생긴다. 용혈이 빌리루빈을 크게 올리는 반면 구리가 ALP 생성을 억제해 ALP 는 낮다 — 젊은 급성 간부전에서 「ALP 낮고 빌리루빈 높음」은 윌슨병의 단서다.<br> <b>왜 신경 증상이 오는가</b>: 간이 감당하지 못한 구리가 기저핵(렌즈핵)과 각막 데스메막에 쌓인다. 떨림·구음장애·성격 변화와 카이저-플라이셔 고리가 생긴다. 치료(페니실라민·트리엔틴·아연)로 되돌릴 수 있으므로 젊은 간질환에서는 반드시 찾는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">윌슨병 — 정답(세룰로플라스민)</th><th>자가면역간염 — 가장 가까운 오답(항평활근 항체)</th></tr></thead><tbody> <tr><td>동반 증상</td><td><b>쿰스 음성 용혈·떨림·정신 증상</b></td><td>관절통, 다른 자가면역질환</td></tr> <tr><td>검사</td><td><b>ALP 낮음</b>, 세룰로플라스민 저하, 소변 구리 증가</td><td>IgG 상승, 항평활근·항핵 항체</td></tr> <tr><td>호발</td><td>5~35세</td><td>젊은~중년 여성</td></tr> </tbody></table> 둘 다 젊은 환자의 원인 미상 간염이다. 용혈과 신경 증상, 낮은 ALP 가 있으면 구리부터 확인한다.\n- 오답 이유:\n  - ① 항미토콘드리아 항체는 중년 여성의 가려움·ALP 가 두드러지게 높은 담즙정체형 간질환(원발 담즙성 담관염)에서 정답이 된다.\n  - ② 알파1-항트립신 농도는 젊은 나이의 폐기종(하폐야 우세)이 간질환과 함께 있을 때 먼저 확인하는 검사가 된다.\n  - ③ 항평활근 항체는 용혈·신경 증상 없이 IgG 가 높은 젊은 여성의 간염(자가면역간염)이라면 정답이 된다.\n  - ⑤ 트랜스페린 포화도·페리틴은 중년 남성의 간비대·당뇨병·피부 착색처럼 혈색소증을 의심할 때 먼저 하는 검사가 된다.\n- 함정: 젊은 환자의 원인 미상 간염이라 자가면역간염 항체부터 고르는 것 — 쿰스 음성 용혈과 낮은 ALP, 떨림이 구리를 가리킨다.\n- 학습목표: 젊은 환자의 간염에 쿰스 음성 용혈과 낮은 ALP·떨림이 함께 있으면 윌슨병을 의심하고 첫 검사로 혈청 세룰로플라스민을 고른다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 427: Wilson’s Disease · Schilsky ML, Roberts EA, Bronstein JM, et al. A multidisciplinary approach to the diagnosis and management of Wilson disease: executive summary of the 2022 practice guidance on Wilson disease from the AASLD. Hepatology. 2023;77(4):1428-1455",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "젊은 환자에게 <b>간염 + 쿰스 음성 용혈(망상적혈구 증가·간접 빌리루빈 우세)</b>이 함께 오고 <b>ALP 가 낮으며</b>(ALP/총빌리루빈 비 < 4), <b>떨림·학업 저하 같은 신경정신 증상</b>이 있다 — <b>윌슨병</b>이다. 첫 선별 검사는 <b>혈청 세룰로플라스민</b>(낮음)이고, 24시간 소변 구리와 세극등 검사(카이저-플라이셔 고리)로 뒷받침한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>구리가 빠져나가지 못하는 병</b>: ATP7B 유전자 변이로 간세포가 구리를 세룰로플라스민에 싣지도, 담즙으로 내보내지도 못한다. 구리를 싣지 못한 세룰로플라스민은 빨리 분해되어 혈청 농도가 낮아진다 — 그래서 첫 선별 검사가 된다.<br> <b>왜 용혈이 오는가</b>: 손상된 간세포에서 유리 구리가 한꺼번에 혈중으로 쏟아지면 적혈구 막을 산화시켜 쿰스 음성 용혈이 생긴다. 용혈이 빌리루빈을 크게 올리는 반면 구리가 ALP 생성을 억제해 ALP 는 낮다 — 젊은 급성 간부전에서 「ALP 낮고 빌리루빈 높음」은 윌슨병의 단서다.<br> <b>왜 신경 증상이 오는가</b>: 간이 감당하지 못한 구리가 기저핵(렌즈핵)과 각막 데스메막에 쌓인다. 떨림·구음장애·성격 변화와 카이저-플라이셔 고리가 생긴다. 치료(페니실라민·트리엔틴·아연)로 되돌릴 수 있으므로 젊은 간질환에서는 반드시 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">윌슨병 — 정답(세룰로플라스민)</th><th>자가면역간염 — 가장 가까운 오답(항평활근 항체)</th></tr></thead><tbody> <tr><td>동반 증상</td><td><b>쿰스 음성 용혈·떨림·정신 증상</b></td><td>관절통, 다른 자가면역질환</td></tr> <tr><td>검사</td><td><b>ALP 낮음</b>, 세룰로플라스민 저하, 소변 구리 증가</td><td>IgG 상승, 항평활근·항핵 항체</td></tr> <tr><td>호발</td><td>5~35세</td><td>젊은~중년 여성</td></tr> </tbody></table> 둘 다 젊은 환자의 원인 미상 간염이다. 용혈과 신경 증상, 낮은 ALP 가 있으면 구리부터 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 항미토콘드리아 항체는 중년 여성의 가려움·ALP 가 두드러지게 높은 담즙정체형 간질환(원발 담즙성 담관염)에서 정답이 된다.\n② 알파1-항트립신 농도는 젊은 나이의 폐기종(하폐야 우세)이 간질환과 함께 있을 때 먼저 확인하는 검사가 된다.\n③ 항평활근 항체는 용혈·신경 증상 없이 IgG 가 높은 젊은 여성의 간염(자가면역간염)이라면 정답이 된다.\n⑤ 트랜스페린 포화도·페리틴은 중년 남성의 간비대·당뇨병·피부 착색처럼 혈색소증을 의심할 때 먼저 하는 검사가 된다."
+   },
+   {
+    "k": "함정",
+    "v": "젊은 환자의 원인 미상 간염이라 자가면역간염 항체부터 고르는 것 — 쿰스 음성 용혈과 낮은 ALP, 떨림이 구리를 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 환자의 간염에 쿰스 음성 용혈과 낮은 ALP·떨림이 함께 있으면 윌슨병을 의심하고 첫 검사로 혈청 세룰로플라스민을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 427: Wilson’s Disease · Schilsky ML, Roberts EA, Bronstein JM, et al. A multidisciplinary approach to the diagnosis and management of Wilson disease: executive summary of the 2022 practice guidance on Wilson disease from the AASLD. Hepatology. 2023;77(4):1428-1455"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "젊은 환자의 간염에 쿰스 음성 용혈·낮은 ALP·떨림이 있으면 윌슨병 — 첫 검사는 혈청 세룰로플라스민이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "쿰스 음성 용혈과 낮은 ALP, 신경 증상 — 자가면역간염에서는 보이지 않는다",
+   "steps": 3,
+   "chain": [
+    "바이러스 표지자 음성 + 음주·약물 없음 → 원인 미상의 젊은 간염",
+    "직접 쿰스 음성 용혈 + ALP 30 U/L + 손 떨림 → 구리 대사 이상(윌슨병) 의심",
+    "선별 검사 → 혈청 세룰로플라스민"
+   ],
+   "key": [
+    {
+     "item": "직접 쿰스 검사 음성",
+     "why": "면역 용혈이 아님 — 구리에 의한 용혈",
+     "also": []
+    },
+    {
+     "item": "망상적혈구 6 %",
+     "why": "용혈",
+     "also": []
+    },
+    {
+     "item": "ALP 30 U/L",
+     "why": "빌리루빈에 비해 낮은 ALP — 윌슨병의 단서",
+     "also": []
+    },
+    {
+     "item": "글씨를 쓸 때 손이 떨리고 학교 성적이 떨어졌다",
+     "why": "기저핵 구리 침착",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "HBsAg, anti-HCV, IgM anti-HAV 는 모두 음성",
+     "why": "바이러스간염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "담관 확장은 없다",
+     "why": "폐쇄성 황달 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "젊은 남성의 간염에 쿰스 음성 용혈·낮은 ALP·손 떨림이 함께 있다. 윌슨병을 의심하고 혈청 세룰로플라스민부터 잰다.",
+   "switch": {
+    "choice": "C",
+    "condition": "용혈·떨림 없이 IgG 가 높은 젊은 여성의 간염이었다면 항평활근 항체"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0809",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·순환기·응급·이비인후과·소화기·혈액·감염·부인과·신장비뇨)",
+  "subtopic": "병리 — 급성 B형간염 간생검의 호산성 소체",
+  "type": "병리 — 급성 B형간염 간생검의 호산성 소체",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-11-27",
+  "vignette": "32세 남자가 2주 전부터 피로하고 눈이 노래져서 왔다. 한 달 전 동남아 여행 중 새로운 성 상대가 있었다. 체온 37.4 ℃ 이고 우상복부에 가벼운 압통이 있다. AST 1,250 U/L, ALT 1,480 U/L, 총빌리루빈 6.2 mg/dL, 프로트롬빈 시간 INR 1.2 이다. HBsAg 양성, IgM anti-HBc 양성이다. 간생검에서 일부 간세포가 작게 쪼그라들어 진한 호산성 세포질과 응축되고 조각난 핵을 가진 둥근 소체로 떨어져 나와 있고, 그 주위에는 염증세포가 거의 없다.",
+  "question": "이 간세포 변화의 기전으로 가장 적절한 것은?",
+  "options": [
+   "지방분해효소에 의한 지방괴사",
+   "육아종 안의 건락괴사",
+   "카스파제 활성화에 의한 아포토시스",
+   "단백 변성에 의한 응고괴사",
+   "가수분해효소에 의한 액화괴사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 세포가 <b>쪼그라들고(세포 위축) 세포질이 진한 호산성</b>이며 <b>핵이 응축·조각나고(핵농축·핵붕괴)</b> 둥근 소체로 떨어져 나왔는데 <b>주위 염증이 거의 없다</b> — 급성 바이러스간염의 <b>호산성 소체(Councilman body)</b>이고, 이것은 <b>아포토시스</b>다. 바이러스 항원을 보이는 간세포를 세포독성 T 세포가 퍼포린·그랜자임과 Fas-FasL 로 공격하면 <b>카스파제</b>가 활성화되어 세포가 스스로 분해된다.\n- 원리: <b>아포토시스는 「조용한」 죽음이다</b>: 카스파제가 차례로 활성화되면 DNA 가 일정한 길이로 잘리고(핵응축·핵붕괴), 세포골격이 분해되어 세포가 작아지며, 막은 터지지 않은 채 조각(아포토시스 소체)으로 떨어진다. 막 바깥에 포스파티딜세린이 드러나 대식세포가 재빨리 먹어 치우므로 세포 내용물이 새지 않고 염증이 거의 생기지 않는다.<br> <b>바이러스간염에서 일어나는 경로</b>: HBV 자체는 간세포를 직접 거의 죽이지 않는다. 감염 간세포가 MHC I 에 바이러스 펩티드를 올리면 CD8 세포독성 T 세포가 그랜자임(카스파제 직접 활성화)과 FasL(사멸 수용체 경로)로 아포토시스를 일으킨다 — 그래서 간 손상의 정도는 면역 반응의 세기를 따른다.<br> <b>괴사와 다른 점</b>: 괴사는 ATP 고갈·막 손상으로 세포가 부풀어 터지고 내용물이 새어 나와 염증이 따른다. 크기(위축 vs 팽창)와 주위 염증 유무가 둘을 가른다.\n- 비교: <table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">아포토시스 — 정답</th><th>응고괴사 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>세포 크기</td><td><b>작아짐(위축)</b></td><td>부풀어 오름</td></tr> <tr><td>막</td><td>보존 — 소체로 떨어져 나감</td><td>파열 — 내용물 유출</td></tr> <tr><td>주위 염증</td><td><b>거의 없음</b></td><td>뚜렷함</td></tr> <tr><td>대표 예</td><td>바이러스간염의 호산성 소체</td><td>허혈 경색(심근·콩팥)</td></tr> </tbody></table> 둘 다 호산성으로 진해 보인다. 낱개 세포가 쪼그라들고 염증이 없으면 아포토시스, 조직 한 구역이 윤곽만 남고 염증이 몰리면 응고괴사다.\n- 오답 이유:\n  - ① 지방괴사는 급성 췌장염에서 새어 나온 리파아제가 지방을 분해해 칼슘 비누화가 생긴 경우에 정답이 된다.\n  - ② 건락괴사는 결핵처럼 상피양 세포 육아종 중심부가 치즈 모양 무구조 물질로 변한 경우에 정답이 된다.\n  - ④ 응고괴사는 허혈로 조직 한 구역의 세포가 윤곽만 남은 채 죽고 호중구가 몰려든 소견이었다면 정답이 된다.\n  - ⑤ 액화괴사는 세균 감염(농양)이나 뇌경색처럼 조직이 효소로 녹아 액체가 된 경우에 정답이 된다.\n- 함정: AST·ALT 가 1,000 을 넘는 심한 간 손상이니 괴사일 것이라고 짐작하는 것 — 조직은 염증 없는 낱개 세포 위축을 보여 준다.\n- 학습목표: 급성 바이러스간염 간생검의 호산성 소체(Councilman body)를 염증 반응이 적은 단일 세포 사멸로 읽고, 세포독성 T 세포가 카스파제를 활성화하는 아포토시스로 설명한다\n- 근거·출처: Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 350: Acute Viral Hepatitis · Kumar V, Abbas AK, Aster JC. Robbins Basic Pathology, 10th ed. Elsevier; 2018. Chapter 2: Cell Injury, Cell Death, and Adaptations",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "세포가 <b>쪼그라들고(세포 위축) 세포질이 진한 호산성</b>이며 <b>핵이 응축·조각나고(핵농축·핵붕괴)</b> 둥근 소체로 떨어져 나왔는데 <b>주위 염증이 거의 없다</b> — 급성 바이러스간염의 <b>호산성 소체(Councilman body)</b>이고, 이것은 <b>아포토시스</b>다. 바이러스 항원을 보이는 간세포를 세포독성 T 세포가 퍼포린·그랜자임과 Fas-FasL 로 공격하면 <b>카스파제</b>가 활성화되어 세포가 스스로 분해된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>아포토시스는 「조용한」 죽음이다</b>: 카스파제가 차례로 활성화되면 DNA 가 일정한 길이로 잘리고(핵응축·핵붕괴), 세포골격이 분해되어 세포가 작아지며, 막은 터지지 않은 채 조각(아포토시스 소체)으로 떨어진다. 막 바깥에 포스파티딜세린이 드러나 대식세포가 재빨리 먹어 치우므로 세포 내용물이 새지 않고 염증이 거의 생기지 않는다.<br> <b>바이러스간염에서 일어나는 경로</b>: HBV 자체는 간세포를 직접 거의 죽이지 않는다. 감염 간세포가 MHC I 에 바이러스 펩티드를 올리면 CD8 세포독성 T 세포가 그랜자임(카스파제 직접 활성화)과 FasL(사멸 수용체 경로)로 아포토시스를 일으킨다 — 그래서 간 손상의 정도는 면역 반응의 세기를 따른다.<br> <b>괴사와 다른 점</b>: 괴사는 ATP 고갈·막 손상으로 세포가 부풀어 터지고 내용물이 새어 나와 염증이 따른다. 크기(위축 vs 팽창)와 주위 염증 유무가 둘을 가른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">구분</th><th style=\"width:38%\">아포토시스 — 정답</th><th>응고괴사 — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>세포 크기</td><td><b>작아짐(위축)</b></td><td>부풀어 오름</td></tr> <tr><td>막</td><td>보존 — 소체로 떨어져 나감</td><td>파열 — 내용물 유출</td></tr> <tr><td>주위 염증</td><td><b>거의 없음</b></td><td>뚜렷함</td></tr> <tr><td>대표 예</td><td>바이러스간염의 호산성 소체</td><td>허혈 경색(심근·콩팥)</td></tr> </tbody></table> 둘 다 호산성으로 진해 보인다. 낱개 세포가 쪼그라들고 염증이 없으면 아포토시스, 조직 한 구역이 윤곽만 남고 염증이 몰리면 응고괴사다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 지방괴사는 급성 췌장염에서 새어 나온 리파아제가 지방을 분해해 칼슘 비누화가 생긴 경우에 정답이 된다.\n② 건락괴사는 결핵처럼 상피양 세포 육아종 중심부가 치즈 모양 무구조 물질로 변한 경우에 정답이 된다.\n④ 응고괴사는 허혈로 조직 한 구역의 세포가 윤곽만 남은 채 죽고 호중구가 몰려든 소견이었다면 정답이 된다.\n⑤ 액화괴사는 세균 감염(농양)이나 뇌경색처럼 조직이 효소로 녹아 액체가 된 경우에 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "AST·ALT 가 1,000 을 넘는 심한 간 손상이니 괴사일 것이라고 짐작하는 것 — 조직은 염증 없는 낱개 세포 위축을 보여 준다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 바이러스간염 간생검의 호산성 소체(Councilman body)를 염증 반응이 적은 단일 세포 사멸로 읽고, 세포독성 T 세포가 카스파제를 활성화하는 아포토시스로 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, Fauci AS, Kasper DL, et al., eds. Harrison's Principles of Internal Medicine, 22nd ed. McGraw Hill; 2025. Chapter 350: Acute Viral Hepatitis · Kumar V, Abbas AK, Aster JC. Robbins Basic Pathology, 10th ed. Elsevier; 2018. Chapter 2: Cell Injury, Cell Death, and Adaptations"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "염증 없이 낱개로 쪼그라든 호산성 소체는 아포토시스 — 바이러스간염에서는 세포독성 T 세포가 카스파제를 활성화한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "세포가 작아지고 주위 염증이 거의 없다 — 괴사는 부풀고 염증을 부른다",
+   "steps": 2,
+   "chain": [
+    "HBsAg·IgM anti-HBc 양성 → 급성 B형간염",
+    "쪼그라든 호산성 소체 + 핵 응축·조각 + 염증 없음 → 아포토시스(카스파제)"
+   ],
+   "key": [
+    {
+     "item": "일부 간세포가 작게 쪼그라들어 진한 호산성 세포질과 응축되고 조각난 핵을 가진 둥근 소체",
+     "why": "아포토시스의 형태",
+     "also": []
+    },
+    {
+     "item": "그 주위에는 염증세포가 거의 없다",
+     "why": "막이 보존되어 염증이 없음 — 괴사와 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "IgM anti-HBc 양성",
+     "why": "급성 B형간염 — 바이러스간염 맥락",
+     "also": []
+    },
+    {
+     "item": "AST 1,250 U/L, ALT 1,480 U/L",
+     "why": "손상의 정도일 뿐 사멸 방식을 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "급성 B형간염 간생검의 염증 없는 낱개 호산성 소체는 아포토시스다. 세포독성 T 세포가 카스파제를 활성화한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "허혈로 조직 한 구역의 세포가 윤곽만 남고 호중구가 몰렸다면 응고괴사"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0808",
   "exam": "imaging",
   "style": "usmle_style",

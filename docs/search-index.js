@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4375,
+  "total": 4384,
   "byType": {
    "paper": 994,
    "kmle": 2016,
+   "imaging": 816,
    "concept": 253,
    "usmle": 288,
-   "imaging": 807,
    "ailab": 14,
    "basic": 3
   },
@@ -26,8 +26,8 @@ window.MEDKOS_INDEX = {
    "Psychiatry": 153,
    "Pathology": 149,
    "Orthopedics": 140,
+   "순환기": 138,
    "Hematology-Oncology": 137,
-   "순환기": 137,
    "Endocrinology": 136,
    "General Surgery": 134,
    "Gastroenterology": 132,
@@ -37,18 +37,18 @@ window.MEDKOS_INDEX = {
    "Surgery": 129,
    "Hematology": 127,
    "Laboratory Medicine": 103,
-   "산부인과": 97,
+   "산부인과": 98,
    "호흡기": 51,
-   "소화기": 47,
+   "소화기": 48,
    "소아과": 42,
+   "응급·중환자": 38,
    "Physiology": 37,
-   "응급·중환자": 37,
-   "감염": 35,
+   "감염": 36,
+   "혈액·종양": 36,
    "내분비": 35,
    "신경": 35,
-   "혈액·종양": 35,
-   "신장·비뇨기": 34,
-   "병리·조직학": 32,
+   "신장·비뇨기": 35,
+   "병리·조직학": 33,
    "외과": 31,
    "피부과": 29,
    "예방의학·역학": 28,
@@ -61,8 +61,8 @@ window.MEDKOS_INDEX = {
    "정신과": 20,
    "Internal Medicine": 19,
    "안과": 14,
+   "이비인후과": 14,
    "영상의학": 13,
-   "이비인후과": 13,
    "Emergency Medicine": 9,
    "Preventive Medicine": 8,
    "Obstetrics and Gynecology": 6,
@@ -81,7 +81,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1275,
-   "high": 3096,
+   "high": 3105,
    "low": 4
   },
   "tagCount": 5091
@@ -790,6 +790,163 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-2021.md",
    "snippet": "58세 여자가 3개월 전부터 언덕길을 5분쯤 걸으면 가슴 한가운데가 조이고, 멈춰 서서 3~4분 쉬면 가라앉아 왔다. 쉬고 있을 때나 밤에는 아프지 않았고, 증상이 잦아지거나 길어지지는 않았다. 당뇨병으로 메트포르민을 먹고 있고 담배는 피우지 않는다. 오늘 진료실에서는 가슴 통증이 없다. 심음과 폐음은 정상이고 다리 부기는 없다. 안정 시 12유도 심전도에서 QRS 폭 0.14초의 완전 좌각차단이 있고, 2년 전 건강검진 심전",
    "text": "Cardiology Three Months of Chest Tightness on Uphill Walking That Settles with Rest in a Woman in Her Late Fifties with an Abnormal Baseline ECG chronic-coronary-syndrome left-bundle-branch-block noninvasive-testing coronary-ct-angiography KMLE 2026 / Claude 58세 여자가 3개월 전부터 언덕길을 5분쯤 걸으면 가슴 한가운데가 조이고, 멈춰 서서 3~4분 쉬면 가라앉아 왔다. 쉬고 있을 때나 밤에는 아프지 않았고, 증상이 잦아지거나 길어지지는 않았다. 당뇨병으로 메트포르민을 먹고 있고 담배는 피우지 않는다. 오늘 진료실에서는 가슴 통증이 없다. 심음과 폐음은 정상이고 다리 부기는 없다. 안정 시 12유도 심전도에서 QRS 폭 0.14초의 완전 좌각차단이 있고, 2년 전 건강검진 심전도에도 같은 모양이 있었다. 경흉부 심초음파에서 좌심실 구혈률은 60 %이고 국소 벽운동 이상과 판막 이상은 없다. 활력징후와 검사 결과는 자료와 같다. 관상동맥질환을 확인하기 위한 다음 검사로 가장 적절한 것은? A. 트레드밀 운동부하 심전도검사 B. 침습적 관상동맥조영술 C. 24시간 활동 심전도 감시 D. 관상동맥 CT 혈관조영술 E. 2주 뒤 고감도 트로포닌 재측정 전형적 노작성 협심증이 3개월째 안정적이라 만성 관상동맥증후군의 비침습 검사가 다음 단계다. 안정 시 완전 좌각차단이 있으면 운동 중 ST 변화를 판독할 수 없어 운동부하 심전도는 진단 가치가 없고, 영상 검사(관상동맥 CT 혈관조영술 또는 약물 부하 영상)를 고른다."
+  },
+  {
+   "id": "imaging-2026-0817",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 검진에서 발견된 큰 콩팥 종괴의 병기 검사",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0817.md",
+   "snippet": "51세 여자가 건강검진 복부 초음파에서 왼쪽 콩팥 종괴가 발견되어 왔다. 옆구리 통증, 육안적 혈뇨, 체중 감소는 없다. 기침이나 뼈 통증, 두통, 신경학적 이상은 없다. 혈압 128/78 mmHg 이고 복부 진찰에서 만져지는 종괴는 없다. 혈색소 13.1 g/dL, 혈청 크레아티닌 0.8 mg/dL, 칼슘 9.4 mg/dL, ALP 72 U/L 이다. 소변검사는 정상이다. 조영증강 복부 CT 사진은 그림과 같고, 콩팥정맥과 ",
+   "text": "신장·비뇨기 신장·비뇨 — 검진에서 발견된 큰 콩팥 종괴의 병기 검사 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 51세 여자가 건강검진 복부 초음파에서 왼쪽 콩팥 종괴가 발견되어 왔다. 옆구리 통증, 육안적 혈뇨, 체중 감소는 없다. 기침이나 뼈 통증, 두통, 신경학적 이상은 없다. 혈압 128/78 mmHg 이고 복부 진찰에서 만져지는 종괴는 없다. 혈색소 13.1 g/dL, 혈청 크레아티닌 0.8 mg/dL, 칼슘 9.4 mg/dL, ALP 72 U/L 이다. 소변검사는 정상이다. 조영증강 복부 CT 사진은 그림과 같고, 콩팥정맥과 하대정맥 안에 혈전은 없으며 커진 림프절도 없다. 근치적 신장절제술 전에 시행할 검사로 가장 적절한 것은? A. 전신 뼈스캔 B. 뇌 자기공명영상 C. FDG 양전자방출단층촬영 D. 흉부 CT E. 경피적 콩팥 종괴 생검"
+  },
+  {
+   "id": "imaging-2026-0816",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 난임과 월경통·성교통이 있는 여성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0816.md",
+   "snippet": "A 29 year old woman, gravida 0, comes to the office because she has been unable to conceive despite 2 years of regular unprotected intercourse. She has had progressively severe menstrual pain that begins 2 days before menses, deep pain duri",
+   "text": "산부인과 부인과 — 난임과 월경통·성교통이 있는 여성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 A 29 year old woman, gravida 0, comes to the office because she has been unable to conceive despite 2 years of regular unprotected intercourse. She has had progressively severe menstrual pain that begins 2 days before menses, deep pain during intercourse, and painful defecation during menses. Her menstrual cycles are regular every 28 days with normal flow. Her partner's semen analysis is normal. Pelvic examination shows a normal sized, fixed, retroverted uterus and tender nodularity along the uterosacral ligaments. Transvaginal ultrasonography shows a 4 cm left ovarian cyst with diffuse homogeneous low level internal echoes and no solid component. Which of the following is the most likely diagnosis? A. Endometriosis B. Adenomyosis C. Chronic pelvic inflammatory disease D. Uterine leiomyoma E. Mature cystic teratoma"
+  },
+  {
+   "id": "imaging-2026-0815",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — TNF 억제제를 앞둔 류마티스관절염 환자의 IGRA 양성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0815.md",
+   "snippet": "45세 여자가 류마티스관절염으로 메토트렉세이트를 6개월 복용했으나 관절염이 조절되지 않아 TNF 억제제 투여를 계획하고 있다. 기침, 발열, 체중 감소, 야간 발한은 없다. 결핵을 앓거나 치료받은 적은 없고, 20년 전 시아버지가 폐결핵으로 치료받았다. 활력징후는 정상이고 양쪽 손목과 손가락 관절이 부어 있다. 인터페론감마 분비검사(IGRA)는 양성이다. 흉부 X선은 정상이다. HIV 항체 음성, AST 28 U/L, ALT ",
+   "text": "감염 감염 — TNF 억제제를 앞둔 류마티스관절염 환자의 IGRA 양성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 45세 여자가 류마티스관절염으로 메토트렉세이트를 6개월 복용했으나 관절염이 조절되지 않아 TNF 억제제 투여를 계획하고 있다. 기침, 발열, 체중 감소, 야간 발한은 없다. 결핵을 앓거나 치료받은 적은 없고, 20년 전 시아버지가 폐결핵으로 치료받았다. 활력징후는 정상이고 양쪽 손목과 손가락 관절이 부어 있다. 인터페론감마 분비검사(IGRA)는 양성이다. 흉부 X선은 정상이다. HIV 항체 음성, AST 28 U/L, ALT 25 U/L 이다. 가장 적절한 처치는? A. 객담 항산균 검사 3회 후 TNF 억제제 투여 B. 6개월 뒤 IGRA 재검 후 TNF 억제제 결정 C. 잠복결핵 치료를 시작한 뒤 TNF 억제제 투여 D. 잠복결핵 치료 없이 바로 TNF 억제제 투여 E. 4제 항결핵제 치료 후 TNF 억제제 투여"
+  },
+  {
+   "id": "imaging-2026-0814",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 월경과다와 발치 출혈이 있는 젊은 여성의 시술 전 처치",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0814.md",
+   "snippet": "A 19 year old woman is referred before extraction of an impacted wisdom tooth. She has had heavy menstrual periods since menarche, frequent nosebleeds, and prolonged bleeding after a previous tooth extraction. Her mother has similar symptom",
+   "text": "혈액·종양 혈액·종양 — 월경과다와 발치 출혈이 있는 젊은 여성의 시술 전 처치 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 A 19 year old woman is referred before extraction of an impacted wisdom tooth. She has had heavy menstrual periods since menarche, frequent nosebleeds, and prolonged bleeding after a previous tooth extraction. Her mother has similar symptoms. She takes no medications. Physical examination shows no petechiae or joint deformity. Laboratory studies show a platelet count of 250,000/mm3, normal prothrombin time, and activated partial thromboplastin time of 38 seconds (reference 25–35). Von Willebrand factor antigen is 28%, von Willebrand factor activity is 26%, and factor VIII activity is 40%. Multimer analysis shows all multimer sizes present in normal proportions. A trial infusion 2 months ago raised her von Willebrand factor activity to 85%. Which of the following is the most appropriate prophylaxis before the procedure? A. Desmopressin B. Recombinant factor VIII concentrate C. Platelet transfusion D. Fresh frozen plasma E. Vitamin K"
+  },
+  {
+   "id": "imaging-2026-0813",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기 — 용혈과 간염이 함께 온 젊은 남성",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0813.md",
+   "snippet": "19세 남자가 1주 전부터 피로하고 눈이 노래져서 왔다. 6개월 전부터 글씨를 쓸 때 손이 떨리고 학교 성적이 떨어졌다. 술은 마시지 않고 복용 중인 약은 없다. 공막 황달이 있고 손을 앞으로 뻗으면 떨림이 있다. 혈색소 9.2 g/dL, 망상적혈구 6 %, 직접 쿰스 검사 음성, AST 180 U/L, ALT 95 U/L, ALP 30 U/L, 총빌리루빈 5.8 mg/dL(간접 우세)이다. HBsAg, anti HCV, Ig",
+   "text": "소화기 소화기 — 용혈과 간염이 함께 온 젊은 남성 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 19세 남자가 1주 전부터 피로하고 눈이 노래져서 왔다. 6개월 전부터 글씨를 쓸 때 손이 떨리고 학교 성적이 떨어졌다. 술은 마시지 않고 복용 중인 약은 없다. 공막 황달이 있고 손을 앞으로 뻗으면 떨림이 있다. 혈색소 9.2 g/dL, 망상적혈구 6 %, 직접 쿰스 검사 음성, AST 180 U/L, ALT 95 U/L, ALP 30 U/L, 총빌리루빈 5.8 mg/dL(간접 우세)이다. HBsAg, anti HCV, IgM anti HAV 는 모두 음성이다. 복부 초음파에서 간 실질이 거칠고 담관 확장은 없다. 진단을 위해 먼저 시행할 검사로 가장 적절한 것은? A. 항미토콘드리아 항체 B. 혈청 알파1 항트립신 농도 C. 항평활근 항체 D. 혈청 세룰로플라스민 E. 트랜스페린 포화도와 페리틴"
+  },
+  {
+   "id": "imaging-2026-0812",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 어릴 때부터 쉰 목소리가 반복된 남성의 기관지경",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "endoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0812.md",
+   "snippet": "A 42 year old man comes to the clinic because of progressive shortness of breath on exertion and noisy breathing over the past 2 months. He has had a hoarse voice since he was a toddler and has undergone repeated surgical removal of larynge",
+   "text": "이비인후과 이비인후과 — 어릴 때부터 쉰 목소리가 반복된 남성의 기관지경 opendata usmle_style endoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 A 42 year old man comes to the clinic because of progressive shortness of breath on exertion and noisy breathing over the past 2 months. He has had a hoarse voice since he was a toddler and has undergone repeated surgical removal of laryngeal growths since the age of 20 months. He has never smoked and does not drink alcohol. Inspiratory stridor is heard over the neck. Flexible bronchoscopy is performed; the image shown is from the airway immediately below the vocal cords. Biopsy shows fronds of squamous epithelium around fibrovascular cores without invasion. Which of the following is the most likely cause of this condition? A. Mycobacterium tuberculosis B. Human papillomavirus types 6 and 11 C. Human papillomavirus types 16 and 18 D. Epstein Barr virus E. Herpes simplex virus type 1"
+  },
+  {
+   "id": "imaging-2026-0811",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급 — 기관 삽관한 코로나19 폐렴 환자의 흉부 X선과 산소화",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0811.md",
+   "snippet": "55세 남자가 코로나바이러스감염증 19 확진 6일째에 숨찬 것이 급격히 심해져 응급실에 왔다. 고유량 산소에도 산소포화도가 85 % 로 떨어져 기관 삽관 후 기계환기를 시작하였다. 심부전이나 판막질환의 병력은 없다. 환기 설정은 PEEP 10 cmH2O, 흡입산소분율 0.6 이고, 이때 동맥혈 산소분압은 90 mmHg 이다. 심초음파에서 좌심실 박출률은 60 % 이고 좌심방 확장은 없다. 삽관 후 촬영한 흉부 X선 사진은 그림",
+   "text": "응급·중환자 응급 — 기관 삽관한 코로나19 폐렴 환자의 흉부 X선과 산소화 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 55세 남자가 코로나바이러스감염증 19 확진 6일째에 숨찬 것이 급격히 심해져 응급실에 왔다. 고유량 산소에도 산소포화도가 85 % 로 떨어져 기관 삽관 후 기계환기를 시작하였다. 심부전이나 판막질환의 병력은 없다. 환기 설정은 PEEP 10 cmH2O, 흡입산소분율 0.6 이고, 이때 동맥혈 산소분압은 90 mmHg 이다. 심초음파에서 좌심실 박출률은 60 % 이고 좌심방 확장은 없다. 삽관 후 촬영한 흉부 X선 사진은 그림과 같다. 이 환자의 상태로 가장 적절한 것은? A. 경도 급성호흡곤란증후군 B. 중증 급성호흡곤란증후군 C. 심인성 폐부종 D. 양쪽 대량 흉막삼출 E. 중등도 급성호흡곤란증후군"
+  },
+  {
+   "id": "imaging-2026-0810",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 오르막에서 가슴이 조이는 중년 남성의 첫 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0810.md",
+   "snippet": "A 47 year old man comes to the office because of 3 months of substernal chest pressure that occurs when he walks uphill and resolves within 5 minutes of rest. He has never had pain at rest. He smokes one pack of cigarettes daily and has hyp",
+   "text": "순환기 순환기 — 오르막에서 가슴이 조이는 중년 남성의 첫 검사 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 A 47 year old man comes to the office because of 3 months of substernal chest pressure that occurs when he walks uphill and resolves within 5 minutes of rest. He has never had pain at rest. He smokes one pack of cigarettes daily and has hyperlipidemia. He walks 5 km several times a week without limitation in his legs. His blood pressure is 128/80 mm Hg and pulse is 60/min. Heart and lung examinations show no abnormalities. Serum troponin is within the reference range. A 12 lead ECG obtained at rest is shown. Which of the following is the most appropriate next step in diagnosis? A. Upper gastrointestinal endoscopy B. Exercise treadmill ECG testing C. Adenosine myocardial perfusion imaging D. Invasive coronary angiography E. 24 hour ambulatory ECG monitoring"
+  },
+  {
+   "id": "imaging-2026-0809",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리 — 급성 B형간염 간생검의 호산성 소체",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822",
+   "confidence": "high",
+   "date": "2026-11-27",
+   "path": "content/imaging/2026/imaging-2026-0809.md",
+   "snippet": "32세 남자가 2주 전부터 피로하고 눈이 노래져서 왔다. 한 달 전 동남아 여행 중 새로운 성 상대가 있었다. 체온 37.4 ℃ 이고 우상복부에 가벼운 압통이 있다. AST 1,250 U/L, ALT 1,480 U/L, 총빌리루빈 6.2 mg/dL, 프로트롬빈 시간 INR 1.2 이다. HBsAg 양성, IgM anti HBc 양성이다. 간생검에서 일부 간세포가 작게 쪼그라들어 진한 호산성 세포질과 응축되고 조각난 핵을 가진 ",
+   "text": "병리·조직학 병리 — 급성 B형간염 간생검의 호산성 소체 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261127T202145Z_일일영상_2026-11-28_9units_9q_c4cf0822 32세 남자가 2주 전부터 피로하고 눈이 노래져서 왔다. 한 달 전 동남아 여행 중 새로운 성 상대가 있었다. 체온 37.4 ℃ 이고 우상복부에 가벼운 압통이 있다. AST 1,250 U/L, ALT 1,480 U/L, 총빌리루빈 6.2 mg/dL, 프로트롬빈 시간 INR 1.2 이다. HBsAg 양성, IgM anti HBc 양성이다. 간생검에서 일부 간세포가 작게 쪼그라들어 진한 호산성 세포질과 응축되고 조각난 핵을 가진 둥근 소체로 떨어져 나와 있고, 그 주위에는 염증세포가 거의 없다. 이 간세포 변화의 기전으로 가장 적절한 것은? A. 지방분해효소에 의한 지방괴사 B. 육아종 안의 건락괴사 C. 카스파제 활성화에 의한 아포토시스 D. 단백 변성에 의한 응고괴사 E. 가수분해효소에 의한 액화괴사"
   },
   {
    "id": "cn.physio.ventricular-preload.frank-starling",
