@@ -75324,6 +75324,237 @@ window.MEDKOS_CONCEPTS = {
   "questions": [],
   "hasErrors": false
  },
+ "cn.immuno.ige-mast-cell.drug-desensitization": {
+  "id": "cn.immuno.ige-mast-cell.drug-desensitization",
+  "title": "IgE 비만세포 반응 — 탈감작은 잠시 신호를 끈다",
+  "objective": "IgE 매개 약물 알레르기에서 항원이 비만세포 · 호염기구의 IgE 수용체를 교차결합해 매개물을 쏟는 과정을 설명하고, 작은 용량을 차례로 올리는 탈감작이 그 신호를 일시적으로 막는 이유와 그 상태가 투약을 멈추면 사라지는 이유를 가른다",
+  "objectiveKind": "기전",
+  "condition": "IgE 매개 약물 과민반응과 약물 탈감작(IgE-mediated drug allergy, drug desensitization)",
+  "topic": "Immunology",
+  "seeAlso": [
+   "Infectious Disease",
+   "Obstetrics & Gynecology"
+  ],
+  "version": 1,
+  "updated": "2026-11-28",
+  "reviewStatus": "unreviewed",
+  "hash": "0f335a028163ea74",
+  "summary": [
+   "결론: 탈감작은 약을 아주 적은 용량부터 몇 시간에 걸쳐 올려 비만세포의 IgE 신호를 잠시 끄는 일이다 — 투약이 끊기면 다시 반응한다.",
+   "시험 단서: 페니실린 아나필락시스 병력인데 그 약이 유일한 1차 치료(임신 중 매독 등) — IgE-mediated (type I) hypersensitivity, desensitization.",
+   "왜: 낮은 용량의 항원이 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 매개물 방출을 막고, 목표 용량에 이르러도 아나필락시스가 오지 않는다.",
+   "중증 피부 이상반응(SJS · TEN · DRESS) · 혈구감소 · 혈청병 · 혈관염은 탈감작 금기 — 미량으로도 심한 반응이 온다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "탈감작은 약을 아주 적은 용량부터 몇 시간에 걸쳐 올려 비만세포의 IgE 신호를 잠시 끄는 일이다 — 투약이 끊기면 다시 반응한다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "탈감작은 약을 아주 적은 용량부터 몇 시간에 걸쳐 올려 비만세포의 IgE 신호를 잠시 끄는 일이다 — 투약이 끊기면 다시 반응한다."
+      ]
+     }
+    ],
+    "html": "탈감작은 약을 아주 적은 용량부터 몇 시간에 걸쳐 올려 비만세포의 IgE 신호를 잠시 끄는 일이다 — 투약이 끊기면 다시 반응한다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "페니실린 아나필락시스 병력인데 그 약이 유일한 1차 치료(임신 중 매독 등) — IgE-mediated (type I) hypersensitivity, desensitization.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "페니실린 아나필락시스 병력인데 그 약이 유일한 1차 치료(임신 중 매독 등) — IgE-mediated (type I) hypersensitivity",
+       "desensitization."
+      ]
+     }
+    ],
+    "html": "페니실린 아나필락시스 병력인데 그 약이 유일한 1차 치료(임신 중 매독 등) — IgE-mediated (type I) hypersensitivity, desensitization."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "낮은 용량의 항원이 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 매개물 방출을 막고, 목표 용량에 이르러도 아나필락시스가 오지 않는다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "낮은 용량의 항원이 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 매개물 방출을 막고, 목표 용량에 이르러도 아나필락시스가 오지 않는다."
+      ]
+     }
+    ],
+    "html": "낮은 용량의 항원이 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 매개물 방출을 막고, 목표 용량에 이르러도 아나필락시스가 오지 않는다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "중증 피부 이상반응(SJS · TEN · DRESS) · 혈구감소 · 혈청병 · 혈관염은 탈감작 금기 — 미량으로도 심한 반응이 온다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "중증 피부 이상반응(SJS · TEN · DRESS) · 혈구감소 · 혈청병 · 혈관염은 탈감작 금기 — 미량으로도 심한 반응이 온다."
+      ]
+     }
+    ],
+    "html": "중증 피부 이상반응(SJS · TEN · DRESS) · 혈구감소 · 혈청병 · 혈관염은 탈감작 금기 — 미량으로도 심한 반응이 온다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 364장 p.2812~2814 · 365장 p.2815~2818",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "immunology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.id.syphilis-pregnancy.penicillin-desensitization"
+  ],
+  "outline": "immuno.hypersensitivity",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 감작이 IgE 를 비만세포에 입힌다",
+    "deep": false,
+    "html": "<ul>\n<li>약을 반복해 만나면 적응 면역이 그 약에 대한 IgE 를 만든다 — 약은 흔히 합텐으로 몸의 단백과 붙어 면역원이 된다 <sup>[1 364장 p.2812]</sup>.</li>\n<li>만들어진 IgE 는 비만세포 · 호염기구의 고친화 수용체(FcεRI)에 붙어 있다. 그래서 IgE 감작은 반복 노출이 필요하고, 항생제 · 항암제에서 전형적이다 <sup>[1 365장 p.2815]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "고장 — IgE 가 비만세포를 깨운다",
+    "deep": false,
+    "html": "<ul>\n<li>다시 들어온 항원이 IgE 가 붙은 FcεRI 를 교차결합하면 신호가 켜져 과립이 쏟아진다(탈과립) <sup>[1 364장 p.2812]</sup>.</li>\n<li>미리 든 히스타민 · 트립타제가 곧바로 나오고, 류코트리엔 · 프로스타글란딘 D2 · 혈소판 활성화 인자가 새로 만들어진다. 히스타민은 홍조 · 두드러기 · 가려움, 고농도에서 저혈압 · 빈맥을, 류코트리엔과 PGD2 는 기관지 수축과 혈관 투과성 증가를 일으킨다 <sup>[1 364장 p.2812]</sup>.</li>\n<li>IgE 없이 비만세포가 직접 깨는 반응(MRGPRX2 — 퀴놀론 · 반코마이신 · 근이완제)은 첫 노출에도 생긴다 <sup>[1 364장 p.2813]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 몇 분 안의 전신 반응",
+    "deep": false,
+    "html": "<ul>\n<li>1형 반응은 가려움 · 홍조 · 두드러기 · 혈관부종 · 쌕쌕거림 · 목 조임 · 저혈압으로 오고, 비만세포 과립에서 나온 혈청 트립타제가 오른다 <sup>[1 365장 p.2815]</sup>.</li>\n<li>피부시험은 IgE 반응을 국소 팽진 · 발적으로 보여 준다. 반응 직후에는 매개물이 고갈돼 거짓 음성이 날 수 있다 <sup>[1 365장 p.2815]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 꼭 필요한 약이면 탈감작",
+    "deep": false,
+    "html": "<ul>\n<li>원인 약이 유일하거나 가장 좋은 치료일 때, 아주 낮은 용량부터 일정 간격으로 두 배씩 올려 몇 시간 안에 목표 용량에 이른다. 낮은 용량의 항원이 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 신호를 막는다 — 탈감작 중에는 피부시험도 잠시 음성이 된다 <sup>[1 365장 p.2815]</sup>.</li>\n<li>이 관용은 일시적이다 — 투약을 이어 가는 동안만 유지되고, 반감기 두 배 이상 쉬면 다시 한다 <sup>[1 365장 p.2816]</sup>.</li>\n<li>페니실린 아나필락시스 병력 · 피부시험 양성인 임신 중 매독이 대표적 적응이다 — 임상 판단은 「임신 중 매독 — 페니실린 알레르기면 탈감작」 <sup>[1 365장 p.2818]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 364장 p.2812~2814 · 365장 p.2815~2818)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "약물 과민반응 — 탈감작을 하나",
+    "columns": [
+     "반응",
+     "탈감작"
+    ],
+    "rows": [
+     [
+      "1형(IgE 의존 · 비의존) · 사이토카인 방출 · 혼합",
+      "적응 <sup>[1 365장 p.2816]</sup>"
+     ],
+     [
+      "가벼운 지연형 4형(전신 증상 없는 반점구진 발진)",
+      "적응 <sup>[1 365장 p.2815]</sup>"
+     ],
+     [
+      "중증 피부 이상반응 · 2형 · 3형 · 혈관염 · 단일 장기 독성",
+      "금기 — 약을 피한다 <sup>[1 365장 p.2815]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "탈감작 = 알레르기가 낫는다?",
+    "point": "탈감작은 일시적인 관용이라 지속되는 관용을 만들지 않는다. 투약마다 다시 하거나, 약의 반감기 두 배 이상 쉬면 다시 해야 한다 — 계속 투여하는 동안만 유지된다 <sup>[1 365장 p.2816]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "스테로이드 · 항히스타민 전처치로 대신?",
+    "point": "전처치는 처음 증상에 맞춰 고르는 보조일 뿐이고, 스테로이드는 아나필락시스를 막지 못한다 <sup>[1 365장 p.2816]</sup>. 피부시험 양성인 IgE 감작 환자는 재노출 때 아나필락시스 위험이 높아 탈감작이 필요하다 <sup>[1 365장 p.2818]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "모든 약물 반응에 탈감작?",
+    "point": "탈감작 적응은 1형(IgE 의존 · 비의존) · 사이토카인 방출 · 혼합 · 가벼운 지연형 4형 반응이다. 중증 피부 이상반응 · 2형 · 3형 · 혈관염 · 단일 장기 독성은 금기다 <sup>[1 365장 p.2815]</sup> <sup>[1 365장 p.2818]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 364장 Anaphylaxis p.2812–2814 · 365장 Desensitization p.2814–2818",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_364 · H22_365) — 364장 p.2812 비만세포 과립(히스타민 · 트립타제 · 키마제 · 헤파린 · TNF-α) 탈과립, 류코트리엔 · 프로스타글란딘 D2 · PAF, 히스타민 → 홍조 · 두드러기 · 고용량에서 저혈압, 류코트리엔 · PGD2 → 기관지 수축 · 혈관 투과성, 항원이 IgE 결합 FcεRI 를 교차결합, IgE 는 적응 면역 감작의 결과, 반복 노출이 위험 인자, 약물이 합텐으로 단백과 결합 · p.2813 비-IgE 비만세포 활성(MRGPRX2)은 첫 노출에도 가능, 트립타제 60~90분 정점 · p.2814 탈감작은 일시적 관용, 페니실린에서 수십 년 입증, 아주 낮은 용량부터 몇 시간에 걸쳐 올림, 반감기에 맞춰 계속 투여하면 유지 / 365장 p.2815 1형 = 비만세포 · 호염기구 활성, IgE 감작은 반복 노출 필요, 지연형 중 탈감작 가능은 전신 증상 없는 반점구진 발진, 중증 피부 이상반응 · 2형 · 3형 · 혈관염 · 단일 장기 독성은 금기, 피부시험 — 아나필락시스는 매개물 고갈로 거짓 음성, 페니실린 · 카보플라틴은 피부시험 음성에서 아나필락시스 보고 없음, IgE 탈감작은 저용량 항원이 켜는 억제 경로 — 탈인산화효소가 IgE 수용체로 와 신호 전달 · 매개물 방출 차단, 탈감작 중 피부시험 일시 음전, 12단계 3백 프로토콜 5.7시간 · p.2816 스테로이드는 아나필락시스를 막지 못함, 오말리주맙 보조, 지속 관용 아님 · 매 노출마다 또는 반감기 2배 이상 쉬면 반복 · p.2818 피부시험 양성은 재노출 시 탈감작 필요, 돌파 반응 10~30 %, 페니실린 탈감작이 아나필락시스 병력 · 피부시험 양성 매독 임신부에 쓰임, 임신은 돌파 반응 위험 인자",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-28",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "탈감작한 환자가 약을 며칠 쉬었다가 다시 맞을 때는?",
+    "a": "탈감작은 일시적이라 반감기 두 배 이상 쉬었으면 다시 탈감작해야 한다."
+   },
+   {
+    "q": "탈감작이 아나필락시스를 막는 기전은?",
+    "a": "낮은 용량의 항원이 비만세포 · 호염기구의 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 신호 전달과 매개물 방출을 막는다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.immuno.ige-mast-cell.drug-desensitization#v1",
+    "context": "페니실린 아나필락시스 병력 환자의 탈감작 뒤 치료 중단",
+    "stem": "A 34-year-old woman with a history of penicillin-induced anaphylaxis and a positive penicillin skin test has enterococcal endocarditis. She undergoes a multistep intravenous penicillin desensitization and tolerates full-dose therapy without reaction. One week later, therapy is interrupted for 3 days because of a lost intravenous line. Before penicillin is restarted, which of the following is the most appropriate next step?",
+    "options": [
+     "Repeat the desensitization protocol",
+     "Restart the full dose with diphenhydramine premedication",
+     "Restart the full dose with methylprednisolone premedication",
+     "Restart the full dose because tolerance is now permanent",
+     "Switch permanently to a cephalosporin"
+    ],
+    "answer": 1,
+    "explanation": "Desensitization produces only a temporary state of tolerance: escalating low doses engage inhibitory mast cell and basophil pathways that block IgE receptor signaling, and the state lasts only while the drug keeps being given. After a pause of two or more half-lives the patient is again at risk of anaphylaxis, so the protocol must be repeated. Antihistamine or corticosteroid premedication does not protect against anaphylaxis.",
+    "of": "",
+    "changed": "핵심 변형 — 탈감작 상태가 투약을 멈추면 사라진다는 것을 묻는다",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.immuno.immune-complex.cryoglobulinemic-vasculitis": {
   "id": "cn.immuno.immune-complex.cryoglobulinemic-vasculitis",
   "title": "면역복합체 혈관염 — 항원이 남는 한 복합체도 생긴다",
@@ -80738,9 +80969,9 @@ window.MEDKOS_CONCEPTS = {
    "Obstetrics & Gynecology"
   ],
   "version": 1,
-  "updated": "2026-11-24",
+  "updated": "2026-11-28",
   "reviewStatus": "unreviewed",
-  "hash": "443ec7d06b82a4a4",
+  "hash": "d26fdc25b027b4c5",
   "summary": [
    "결론: 임신 중 매독은 페니실린 알레르기가 있어도 탈감작한 뒤 벤자틴 페니실린 G 로 치료한다.",
    "시험 단서: 산전 선별 RPR 반응성 + 트레포네마 검사 양성, 페니실린 뒤 두드러기·후두부종(아나필락시스) 병력.",
@@ -80835,7 +81066,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.immuno.ige-mast-cell.drug-desensitization"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h182",
@@ -91356,9 +91589,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Nephrology",
   "seeAlso": [],
   "version": 1,
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "reviewStatus": "unreviewed",
-  "hash": "4bccc5d07c56ae1c",
+  "hash": "653bf173ada1a9ed",
   "summary": [
    "결론: 막성 신병증 + 알부민 < 2 g/dL 환자에게 갑자기 옆구리 통증 · 혈뇨 · 크레아티닌 상승이 오면 신정맥 혈전증이다.",
    "시험 단서: 신증후군 수개월, 열 · 농뇨 없음, 산통이 아닌 지속 통증, 동리듬 — renal vein thrombosis in membranous nephropathy.",
@@ -91437,7 +91670,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.path.virchow-triad.renal-vein-thrombosis"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h314",
@@ -157949,6 +158184,238 @@ window.MEDKOS_CONCEPTS = {
   "questions": [
    "imaging-2026-0342"
   ],
+  "hasErrors": false
+ },
+ "cn.path.virchow-triad.renal-vein-thrombosis": {
+  "id": "cn.path.virchow-triad.renal-vein-thrombosis",
+  "title": "정맥 혈전의 세 갈래 — 신증후군은 과응고 쪽이다",
+  "objective": "정맥 혈전을 내피 손상 · 정맥 정체 · 과응고 세 갈래로 나눠 신정맥 혈전의 원인을 분류하고, 신증후군 — 특히 막성 신병증 — 이 과응고 쪽 원인이라 신정맥 혈전 · 폐색전 · 심부정맥 혈전을 함께 일으키는 이유를 가른다",
+  "objectiveKind": "기전",
+  "condition": "정맥 혈전의 기전과 신정맥 혈전증(venous thrombosis, renal vein thrombosis)",
+  "topic": "Pathology",
+  "seeAlso": [
+   "Nephrology",
+   "Hematology & Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-11-28",
+  "reviewStatus": "unreviewed",
+  "hash": "6946344dc0314b14",
+  "summary": [
+   "결론: 정맥 혈전은 내피 손상 · 정맥 정체 · 과응고 세 갈래로 생기고, 신증후군(특히 막성 신병증)의 신정맥 혈전은 과응고 쪽이다.",
+   "시험 단서: 신증후군 환자의 옆구리 통증 · 혈뇨 · 신기능 급락, 또는 폐색전 검사 중 발견 — renal vein thrombosis, hypercoagulability.",
+   "왜: 과응고는 온몸의 정맥에 작용하므로 신정맥 혈전과 폐색전 · 심부정맥 혈전이 함께 온다 — 막성 신병증에서 셋 모두 가장 잦다.",
+   "소아의 탈수는 정체 쪽, 혈관 시술 · 수술 · 호모시스틴뇨증은 내피 손상 쪽 원인이다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "정맥 혈전은 내피 손상 · 정맥 정체 · 과응고 세 갈래로 생기고, 신증후군(특히 막성 신병증)의 신정맥 혈전은 과응고 쪽이다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "정맥 혈전은 내피 손상 · 정맥 정체 · 과응고 세 갈래로 생기고, 신증후군(특히 막성 신병증)의 신정맥 혈전은 과응고 쪽이다."
+      ]
+     }
+    ],
+    "html": "정맥 혈전은 내피 손상 · 정맥 정체 · 과응고 세 갈래로 생기고, 신증후군(특히 막성 신병증)의 신정맥 혈전은 과응고 쪽이다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "신증후군 환자의 옆구리 통증 · 혈뇨 · 신기능 급락, 또는 폐색전 검사 중 발견 — renal vein thrombosis, hypercoagulability.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "신증후군 환자의 옆구리 통증 · 혈뇨 · 신기능 급락",
+       "또는 폐색전 검사 중 발견 — renal vein thrombosis",
+       "hypercoagulability."
+      ]
+     }
+    ],
+    "html": "신증후군 환자의 옆구리 통증 · 혈뇨 · 신기능 급락, 또는 폐색전 검사 중 발견 — renal vein thrombosis, hypercoagulability."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "과응고는 온몸의 정맥에 작용하므로 신정맥 혈전과 폐색전 · 심부정맥 혈전이 함께 온다 — 막성 신병증에서 셋 모두 가장 잦다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "과응고는 온몸의 정맥에 작용하므로 신정맥 혈전과 폐색전 · 심부정맥 혈전이 함께 온다 — 막성 신병증에서 셋 모두 가장 잦다."
+      ]
+     }
+    ],
+    "html": "과응고는 온몸의 정맥에 작용하므로 신정맥 혈전과 폐색전 · 심부정맥 혈전이 함께 온다 — 막성 신병증에서 셋 모두 가장 잦다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "소아의 탈수는 정체 쪽, 혈관 시술 · 수술 · 호모시스틴뇨증은 내피 손상 쪽 원인이다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "소아의 탈수는 정체 쪽, 혈관 시술 · 수술 · 호모시스틴뇨증은 내피 손상 쪽 원인이다."
+      ]
+     }
+    ],
+    "html": "소아의 탈수는 정체 쪽, 혈관 시술 · 수술 · 호모시스틴뇨증은 내피 손상 쪽 원인이다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 329장 p.2447 · 326장 p.2418 · 2421 · 2423",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "pathology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.neph.membranous-nephropathy.renal-vein-thrombosis"
+  ],
+  "outline": "path.hemodynamics",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 정맥 피가 굳지 않는 세 조건",
+    "deep": false,
+    "html": "<p>정맥 안의 피는 온전한 내피, 멈추지 않는 흐름, 응고와 그 억제의 균형이 함께 지켜질 때 굳지 않는다. 해리슨은 신정맥 혈전의 원인을 이 세 조건이 깨지는 방식 — 내피 손상 · 정맥 정체 · 과응고 — 으로 나눈다 <sup>[1 329장 p.2447]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 세 갈래 중 하나가 무너진다",
+    "deep": false,
+    "html": "<ul>\n<li>내피 손상: 호모시스틴뇨증 · 혈관 내 시술 · 수술 <sup>[1 329장 p.2447]</sup>.</li>\n<li>정맥 정체: 탈수(소아에서 흔한 원인) · 후복막 섬유증이나 복부 종양이 신정맥을 누르거나 꺾는 경우 <sup>[1 329장 p.2447]</sup>.</li>\n<li>과응고: 신증후군 — 특히 막성 신병증 — 이 대표이고, 항인지질항체 증후군 · 유전 혈전성향 · 전이암 · 경구 피임약이 덜 흔하다 <sup>[1 329장 p.2447]</sup>. 신증후군의 정맥 합병증은 이 과응고 상태에서 온다 <sup>[1 326장 p.2421]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 콩팥이 붓고 피가 섞인다",
+    "deep": false,
+    "html": "<ul>\n<li>신정맥 혈전은 옆구리 통증 · 압통 · 혈뇨 · 빠른 신기능 저하 · 단백뇨로 오거나 증상이 없다. 왼쪽이 더 흔하고 2/3 는 양쪽이다 <sup>[1 329장 p.2447]</sup>.</li>\n<li>과응고는 온몸의 정맥에 작용하므로 신정맥 혈전이 폐색전 검사 중 발견되기도 한다 <sup>[1 329장 p.2447]</sup>. 막성 신병증은 신정맥 혈전 · 폐색전 · 심부정맥 혈전이 모두 가장 잦다 <sup>[1 326장 p.2423]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 갈래가 원인 치료를 정한다",
+    "deep": false,
+    "html": "<ul>\n<li>신증후군 환자의 갑작스러운 옆구리 통증 · 혈뇨 · 신기능 저하는 과응고 쪽 신정맥 혈전을 먼저 떠올린다 — 임상 판단은 「막성 신병증 — 갑작스러운 옆구리 통증 · 혈뇨면 신정맥 혈전」.</li>\n<li>도플러 초음파로 거르고 CT 혈관조영(민감도 거의 100 %)으로 확인하며, 항응고와 원인 치료를 한다 <sup>[1 329장 p.2447]</sup>. 저알부민혈증이 심한 막성 신병증의 예방적 항응고는 논란이다 <sup>[1 326장 p.2423]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 329장 p.2447 · 326장 p.2418 · 2421 · 2423)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "신정맥 혈전 — 세 갈래와 예",
+    "columns": [
+     "갈래",
+     "신정맥 혈전의 예"
+    ],
+    "rows": [
+     [
+      "내피 손상",
+      "호모시스틴뇨증 · 혈관 내 시술 · 수술 <sup>[1 329장 p.2447]</sup>"
+     ],
+     [
+      "정맥 정체",
+      "탈수(소아에서 흔함) · 후복막 섬유증 · 복부 종양의 압박 · 꺾임 <sup>[1 329장 p.2447]</sup>"
+     ],
+     [
+      "과응고",
+      "신증후군(특히 막성 신병증) · 항인지질항체 증후군 · 단백 C · S · 안티트롬빈 결핍 · 제5인자 라이덴 · 전이암 · 경구 피임약 <sup>[1 329장 p.2447]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "신장 혈전 = 동맥 색전?",
+    "point": "신정맥 혈전은 정맥 쪽 세 갈래(내피 손상 · 정체 · 과응고)로 생긴다. 신증후군 · 탈수 · 후복막 압박 같은 정맥 쪽 원인이 단서다 <sup>[1 329장 p.2447]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "신정맥 혈전 = 늘 증상이 있다?",
+    "point": "옆구리 통증 · 압통 · 혈뇨 · 빠른 신기능 저하 · 단백뇨로 오기도 하지만 증상이 없을 수 있고, 폐색전 검사 중 발견되기도 한다 <sup>[1 329장 p.2447]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "과응고는 막성 신병증에만?",
+    "point": "혈전 합병증은 모든 신증후군의 특징이고, 막성 신병증이 신정맥 혈전 · 폐색전 · 심부정맥 혈전의 보고 빈도가 가장 높을 뿐이다 <sup>[1 326장 p.2423]</sup>. 루푸스 신염 5형(막성)도 같은 경향이 있다 <sup>[1 326장 p.2418]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 326장 Glomerular Diseases p.2418 · 2421 · 2423 · 329장 Thrombotic Renovascular Disorders p.2447",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_326 · H22_329) — 329장 p.2447 신정맥 혈전은 옆구리 통증 · 압통 · 혈뇨 · 빠른 신기능 저하 · 단백뇨 또는 무증상, 폐색전 검사 중 발견, 왼쪽이 흔하고 2/3 양쪽, 원인은 내피 손상(호모시스틴뇨증 · 혈관 내 시술 · 수술) · 정체(탈수 — 소아 · 후복막 섬유증 · 복부 종양 압박 · 꺾임) · 과응고(항인지질항체 증후군 · 신증후군 특히 막성 신병증 · 단백 C · S · 안티트롬빈 결핍 · 제5인자 라이덴 · 전이암 · 경구 피임약), 도플러 초음파 선별 · CT 혈관조영 거의 100 % 민감, 치료는 항응고와 원인 치료 / 326장 p.2418 루푸스 신염 5형도 막성 신병증처럼 신정맥 혈전 · 혈전 합병증 경향 · p.2421 신증후군의 과응고 상태로 인한 정맥 합병증은 항응고로 치료 · p.2423 혈전 합병증은 모든 신증후군의 특징이나 막성 신병증에서 신정맥 혈전 · 폐색전 · 심부정맥 혈전의 보고 빈도가 가장 높음, 예방적 항응고는 논란 — 저알부민혈증 일부 환자에 권고",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-28",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "신증후군의 신정맥 혈전은 세 갈래 중 어느 쪽인가?",
+    "a": "과응고 — 그래서 폐색전 · 심부정맥 혈전도 함께 늘고, 막성 신병증에서 가장 잦다."
+   },
+   {
+    "q": "소아 신정맥 혈전의 흔한 원인과 그 갈래는?",
+    "a": "탈수 — 정맥 정체 쪽이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.path.virchow-triad.renal-vein-thrombosis#v1",
+    "context": "막성 신병증 환자의 갑작스러운 호흡곤란과 신정맥 혈전",
+    "stem": "A 52-year-old man with biopsy-proven membranous nephropathy has had nephrotic-range proteinuria and a serum albumin of 1.9 g/dL for 4 months. He presents with sudden pleuritic chest pain and dyspnea. CT pulmonary angiography shows a segmental pulmonary embolus, and the same study shows a filling defect in the left renal vein. He has had no surgery, trauma, or immobilization. Which of the following best explains the venous thromboses in this patient?",
+    "options": [
+     "Endothelial injury from an endovascular procedure",
+     "Venous stasis from retroperitoneal compression",
+     "A hypercoagulable state from the nephrotic syndrome",
+     "Arterial embolism from a cardiac source",
+     "Hyperviscosity from a monoclonal paraprotein"
+    ],
+    "answer": 3,
+    "explanation": "Venous thrombosis arises from endothelial damage, venous stasis, or hypercoagulability. Nephrotic syndrome, particularly membranous nephropathy, is a hypercoagulable cause of renal vein thrombosis, and because hypercoagulability acts on the whole venous system, membranous nephropathy has the highest reported rates of renal vein thrombosis, pulmonary embolism, and deep-vein thrombosis together. He has no procedure or retroperitoneal process, and a renal vein filling defect is venous, not arterial.",
+    "of": "",
+    "changed": "핵심 변형 — 신증후군 신정맥 혈전이 과응고 기전임을 묻는다",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
   "hasErrors": false
  },
  "cn.peds.biliary-atresia.cholestasis-workup": {

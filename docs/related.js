@@ -605,6 +605,13 @@ window.MEDKOS_RELATED = {
     "term": "femoral neck fracture"
    }
   ],
+  "cn.path.virchow-triad.renal-vein-thrombosis": [
+   {
+    "id": "paper-2026-0616",
+    "how": "t",
+    "term": "venous thrombosis"
+   }
+  ],
   "cn.pharm.digoxin.na-k-atpase-inhibition": [
    {
     "id": "paper-2026-0988",
@@ -1531,6 +1538,14 @@ window.MEDKOS_RELATED = {
     "cn.id.legionella-pneumonia.urinary-antigen-diagnosis"
    ]
   },
+  "paper-2026-0616": {
+   "t": "Diagnosis, Treatment, and Prognosis of Cerebral Venous Thrombosis",
+   "j": "Neurology",
+   "d": "2026-10-13",
+   "c": [
+    "cn.path.virchow-triad.renal-vein-thrombosis"
+   ]
+  },
   "paper-2026-0629": {
    "t": "Comparative Incidence of Urinary Tract Infections in Diabetic Women Treated with Dapagliflozin Versus Empagliflozin: A Double-Blind Randomized Clinical Trial",
    "j": "International journal of endocrinology and metabolism",
@@ -2037,6 +2052,7 @@ window.MEDKOS_RELATED = {
   "cn.obgyn.postpartum-hemorrhage.cause-directed-first-step": "산후 출혈 — 자궁 촉진으로 원인을 가르고 단계를 올린다",
   "cn.obgyn.vaginitis.ph-microscopy-differentiation": "질염 — pH·도말로 가르고 파트너 치료는 원충만",
   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+  "cn.path.virchow-triad.renal-vein-thrombosis": "정맥 혈전의 세 갈래 — 신증후군은 과응고 쪽이다",
   "cn.pharm.digoxin.na-k-atpase-inhibition": "디곡신 — Na⁺/K⁺-ATPase 를 막아 수축·전도·칼륨이 바뀐다",
   "cn.physio.hypoxemia.shunt-oxygen-unresponsive": "저산소혈증 기전 — 산소에 안 오르면 션트",
   "cn.physio.insulin-secretion.c-peptide-cosecretion": "인슐린 분비 — 프로인슐린이 잘려 C 펩티드와 함께 나온다",

@@ -3,9 +3,10 @@ id: cn.neph.membranous-nephropathy.renal-vein-thrombosis
 type: concept
 topic: Nephrology
 date: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-28
 version: 1
 outline: h314
+roots: [cn.path.virchow-triad.renal-vein-thrombosis]
 confidence: medium
 review_status: unreviewed
 note_form: 2

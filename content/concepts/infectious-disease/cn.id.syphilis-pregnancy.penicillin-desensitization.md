@@ -4,9 +4,10 @@ type: concept
 topic: Infectious Disease
 see_also: [Obstetrics & Gynecology]
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-28
 version: 1
 outline: h182            # 기본틀 슬롯 — 해리슨 21판 182장 Syphilis(22판 187장)
+roots: [cn.immuno.ige-mast-cell.drug-desensitization]
 confidence: medium
 review_status: unreviewed
 note_form: 2

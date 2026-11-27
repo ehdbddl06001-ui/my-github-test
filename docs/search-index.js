@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4386,
+  "total": 4388,
   "byType": {
+   "concept": 255,
    "paper": 994,
    "kmle": 2016,
    "imaging": 818,
-   "concept": 253,
    "usmle": 288,
    "ailab": 14,
    "basic": 3
@@ -24,7 +24,7 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 155,
    "Neurology": 153,
    "Psychiatry": 153,
-   "Pathology": 149,
+   "Pathology": 150,
    "Orthopedics": 140,
    "순환기": 140,
    "Hematology-Oncology": 137,
@@ -55,7 +55,7 @@ window.MEDKOS_INDEX = {
    "Pharmacology": 27,
    "Microbiology": 24,
    "Biochemistry": 23,
-   "Immunology": 22,
+   "Immunology": 23,
    "근골격·류마티스": 21,
    "약리": 21,
    "정신과": 20,
@@ -80,13 +80,41 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1275,
+   "medium": 1277,
    "high": 3107,
    "low": 4
   },
   "tagCount": 5091
  },
  "docs": [
+  {
+   "id": "cn.path.virchow-triad.renal-vein-thrombosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/concepts/pathology/cn.path.virchow-triad.renal-vein-thrombosis.md",
+   "snippet": "정상 — 정맥 피가 굳지 않는 세 조건 정맥 안의 피는 온전한 내피, 멈추지 않는 흐름, 응고와 그 억제의 균형이 함께 지켜질 때 굳지 않는다. 해리슨은 신정맥 혈전의 원인을 이 세 조건이 깨지는 방식 — 내피 손상 · 정맥 정체 · 과응고 — 으로 나눈다 [[harrison 22: 329장 p.2447]]. 고장 — 세 갈래 중 하나가 무너진다 내피 손상: 호모시스틴뇨증 · 혈관 내 시술 · 수술 [[harrison 22: ",
+   "text": "Pathology 정상 — 정맥 피가 굳지 않는 세 조건 정맥 안의 피는 온전한 내피, 멈추지 않는 흐름, 응고와 그 억제의 균형이 함께 지켜질 때 굳지 않는다. 해리슨은 신정맥 혈전의 원인을 이 세 조건이 깨지는 방식 — 내피 손상 · 정맥 정체 · 과응고 — 으로 나눈다 [[harrison 22: 329장 p.2447]]. 고장 — 세 갈래 중 하나가 무너진다 내피 손상: 호모시스틴뇨증 · 혈관 내 시술 · 수술 [[harrison 22: 329장 p.2447]]. 정맥 정체: 탈수(소아에서 흔한 원인) · 후복막 섬유증이나 복부 종양이 신정맥을 누르거나 꺾는 경우 [[harrison 22: 329장 p.2447]]. 과응고: 신증후군 — 특히 막성 신병증 — 이 대표이고, 항인지질항체 증후군 · 유전 혈전성향 · 전이암 · 경구 피임약이 덜 흔하다 [[harrison 22: 329장 p.2447]]. 신증후군의 정맥 합병증은 이 과응고 상태에서 온다 [[harrison 22: 326장 p.2421]]. 소견으로 — 콩팥이 붓고 피가 섞인다 신정맥 혈전은 옆구리 통증 · 압통 · 혈뇨 · 빠른 신기능 저하 · 단백뇨로 오거나 증상이 없다. 왼쪽이 더 흔하고 2/3 는 양쪽이다 [[harrison 22: 329장 p.2447]]. 과응고는 온몸의 정맥에 작용하므로 신정맥 혈전이 폐색전 검사 중 발견되기도 한다 [[harrison 22: 329장 p.2447]]. 막성 신병증은 신정맥 혈전 · 폐색전 · 심부정맥 혈전이 모두 가장 잦다 [[harrison 22: 326장 p.2423]]. 임상 판단으로 — 갈래가 원인 치료를 정한다 신증후군 환자의 갑작스러운 옆구리 통증 · 혈뇨 · 신기능 저하는 과응고 쪽 신정맥 혈전을 먼저 떠올린다 — 임상 판단은 cn.neph.membranous nephropathy.renal vein thrombosis . 도플러 초음파로 거르고 CT 혈관조영(민감도 거의 100 %)으로 확인하며, 항응고와 원인 치료를 한다 [[harrison 22: 329장 p.2447]]. 저알부민혈증이 심한 막성 신병증의 예방적 항응고는 논란이다 [[harrison 22: 326장 p.2423]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 329장 p.2447 · 326장 p.2418 · 2421 · 2423)"
+  },
+  {
+   "id": "cn.immuno.ige-mast-cell.drug-desensitization",
+   "type": "concept",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/concepts/immunology/cn.immuno.ige-mast-cell.drug-desensitization.md",
+   "snippet": "정상 — 감작이 IgE 를 비만세포에 입힌다 약을 반복해 만나면 적응 면역이 그 약에 대한 IgE 를 만든다 — 약은 흔히 합텐으로 몸의 단백과 붙어 면역원이 된다 [[harrison 22: 364장 p.2812]]. 만들어진 IgE 는 비만세포 · 호염기구의 고친화 수용체(FcεRI)에 붙어 있다. 그래서 IgE 감작은 반복 노출이 필요하고, 항생제 · 항암제에서 전형적이다 [[harrison 22: 365장 p.2815]]",
+   "text": "Immunology 정상 — 감작이 IgE 를 비만세포에 입힌다 약을 반복해 만나면 적응 면역이 그 약에 대한 IgE 를 만든다 — 약은 흔히 합텐으로 몸의 단백과 붙어 면역원이 된다 [[harrison 22: 364장 p.2812]]. 만들어진 IgE 는 비만세포 · 호염기구의 고친화 수용체(FcεRI)에 붙어 있다. 그래서 IgE 감작은 반복 노출이 필요하고, 항생제 · 항암제에서 전형적이다 [[harrison 22: 365장 p.2815]]. 고장 — IgE 가 비만세포를 깨운다 다시 들어온 항원이 IgE 가 붙은 FcεRI 를 교차결합하면 신호가 켜져 과립이 쏟아진다(탈과립) [[harrison 22: 364장 p.2812]]. 미리 든 히스타민 · 트립타제가 곧바로 나오고, 류코트리엔 · 프로스타글란딘 D2 · 혈소판 활성화 인자가 새로 만들어진다. 히스타민은 홍조 · 두드러기 · 가려움, 고농도에서 저혈압 · 빈맥을, 류코트리엔과 PGD2 는 기관지 수축과 혈관 투과성 증가를 일으킨다 [[harrison 22: 364장 p.2812]]. IgE 없이 비만세포가 직접 깨는 반응(MRGPRX2 — 퀴놀론 · 반코마이신 · 근이완제)은 첫 노출에도 생긴다 [[harrison 22: 364장 p.2813]]. 소견으로 — 몇 분 안의 전신 반응 1형 반응은 가려움 · 홍조 · 두드러기 · 혈관부종 · 쌕쌕거림 · 목 조임 · 저혈압으로 오고, 비만세포 과립에서 나온 혈청 트립타제가 오른다 [[harrison 22: 365장 p.2815]]. 피부시험은 IgE 반응을 국소 팽진 · 발적으로 보여 준다. 반응 직후에는 매개물이 고갈돼 거짓 음성이 날 수 있다 [[harrison 22: 365장 p.2815]]. 임상 판단으로 — 꼭 필요한 약이면 탈감작 원인 약이 유일하거나 가장 좋은 치료일 때, 아주 낮은 용량부터 일정 간격으로 두 배씩 올려 몇 시간 안에 목표 용량에 이른다. 낮은 용량의 항원이 억제 경로를 켜 IgE 수용체에 탈인산화효소를 불러 신호를 막는다 — 탈감작 중에는 피부시험도 잠시 음성이 된다 [[harrison 22: 365장 p.2815]]. 이 관용은 일시적이다 — 투약을 이어 가는 동안만 유지되고, 반감기 두 배 이상 쉬면 다시 한다 [[harrison 22: 365장 p.2816]]. 페니실린 아나필락시스 병력 · 피부시험 양성인 임신 중 매독이 대표적 적응이다 — 임상 판단은 cn.id.syphilis pregnancy.penicillin desensitization [[harrison 22: 365장 p.2818]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 364장 p.2812~2814 · 365장 p.2815~2818)"
+  },
   {
    "id": "paper-2026-0994",
    "type": "paper",
