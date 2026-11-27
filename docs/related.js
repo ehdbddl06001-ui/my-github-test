@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -520,6 +520,11 @@ window.MEDKOS_RELATED = {
   ],
   "cn.neph.aki.atn-vs-prerenal": [
    {
+    "id": "paper-2026-0993",
+    "how": "t",
+    "term": "acute kidney injury"
+   },
+   {
     "id": "paper-2026-0824",
     "how": "t",
     "term": "acute kidney injury"
@@ -552,11 +557,6 @@ window.MEDKOS_RELATED = {
    {
     "id": "paper-2026-0391",
     "how": "t",
-    "term": "acute kidney injury"
-   },
-   {
-    "id": "paper-2026-0340",
-    "how": "a",
     "term": "acute kidney injury"
    }
   ],
@@ -765,6 +765,11 @@ window.MEDKOS_RELATED = {
     "term": "randomized controlled trial"
    },
    {
+    "id": "paper-2026-0993",
+    "how": "t",
+    "term": "randomized controlled trial"
+   },
+   {
     "id": "paper-2026-0961",
     "how": "t",
     "term": "randomized controlled trial"
@@ -788,11 +793,6 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0923",
     "how": "t",
     "term": "randomized controlled trial"
-   },
-   {
-    "id": "paper-2026-0924",
-    "how": "t",
-    "term": "cohort"
    }
   ],
   "cn.psy.ptsd.duration-vs-acute-stress": [
@@ -1247,14 +1247,6 @@ window.MEDKOS_RELATED = {
    "d": "2006-07",
    "c": [
     "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
-   ]
-  },
-  "paper-2026-0340": {
-   "t": "Impact of diabetes on the effects of sodium glucose co-transporter-2 inhibitors on kidney outcomes: collaborative meta-analysis of large placebo-controlled trials",
-   "j": "Lancet (London, England)",
-   "d": "2022-11-19",
-   "c": [
-    "cn.neph.aki.atn-vs-prerenal"
    ]
   },
   "paper-2026-0347": {
@@ -1879,14 +1871,6 @@ window.MEDKOS_RELATED = {
     "cn.prev.study-design.design-and-bias-identification"
    ]
   },
-  "paper-2026-0924": {
-   "t": "Predictors of Discordance Between Neurological and Quality-of-Life Recovery After Surgery for Degenerative Cervical Myelopathy: A Retrospective Cohort Study",
-   "j": "Spine",
-   "d": "2026-11-06",
-   "c": [
-    "cn.prev.study-design.design-and-bias-identification"
-   ]
-  },
   "paper-2026-0928": {
    "t": "Paired neutrophil association and ex vivo perturbation sensitivity define a bounded myeloid activation model in ARDS",
    "j": "PloS one",
@@ -2004,6 +1988,15 @@ window.MEDKOS_RELATED = {
     "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
     "cn.pharm.digoxin.na-k-atpase-inhibition"
+   ]
+  },
+  "paper-2026-0993": {
+   "t": "Effect of Perioperative Glutamine Supplementation on Acute Kidney Injury in Infants Undergoing Elective Cardiac Surgery: A Randomized Controlled Trial",
+   "j": "Nutrients",
+   "d": "2026-11-19",
+   "c": [
+    "cn.neph.aki.atn-vs-prerenal",
+    "cn.prev.study-design.design-and-bias-identification"
    ]
   }
  },

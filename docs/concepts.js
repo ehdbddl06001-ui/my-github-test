@@ -75563,6 +75563,241 @@ window.MEDKOS_CONCEPTS = {
   "questions": [],
   "hasErrors": false
  },
+ "cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma": {
+  "id": "cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma",
+  "title": "흡입 항원 과민반응 — 작은 기도에 림프구 · 느슨한 육아종",
+  "objective": "말단 기도까지 내려앉는 작은 항원 입자가 감작된 사람에서 Th1 · Th17 반응과 특이 IgG · 선천 면역을 일으켜 세기관지 중심의 림프구 침윤과 느슨한 비건락 육아종을 만드는 과정을 설명하고, 이것이 세척액 림프구 증가 · 공기 걸림 · 노출 4~8시간 뒤 증상으로 나타나는 이유와 사르코이드증 · 유기 분진 독성 증후군과의 차이를 가른다",
+  "objectiveKind": "기전",
+  "condition": "흡입 항원 과민반응 — 과민성 폐렴(hypersensitivity pneumonitis, extrinsic allergic alveolitis)",
+  "topic": "Immunology",
+  "seeAlso": [
+   "Pulmonology",
+   "Occupational Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-11-27",
+  "reviewStatus": "unreviewed",
+  "hash": "5ad8c233484697a7",
+  "summary": [
+   "결론: 과민성 폐렴은 말단 기도에 내려앉은 흡입 항원에 대한 Th1 · Th17 면역 반응 — 세기관지 둘레의 림프구와 느슨한 육아종이 병변이다.",
+   "시험 단서: 새 · 곰팡이 건초 노출 + 노출 4~8시간 뒤 열 · 기침 + 세척액 림프구 증가 — BAL lymphocytosis, loose granulomas.",
+   "왜: 항원이 작은 기도 · 폐포에 닿아 감작된 림프구가 모이므로, 작은 기도가 좁아져 공기가 갇히고 세척액에 림프구가 늘어난다.",
+   "특이 IgG 는 노출만으로도 생긴다 — 무증상 농부 · 비둘기 사육자에게도 있어 그것만으로 진단하지 않는다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "과민성 폐렴은 말단 기도에 내려앉은 흡입 항원에 대한 Th1 · Th17 면역 반응 — 세기관지 둘레의 림프구와 느슨한 육아종이 병변이다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "과민성 폐렴은 말단 기도에 내려앉은 흡입 항원에 대한 Th1 · Th17 면역 반응 — 세기관지 둘레의 림프구와 느슨한 육아종이 병변이다."
+      ]
+     }
+    ],
+    "html": "과민성 폐렴은 말단 기도에 내려앉은 흡입 항원에 대한 Th1 · Th17 면역 반응 — 세기관지 둘레의 림프구와 느슨한 육아종이 병변이다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "새 · 곰팡이 건초 노출 + 노출 4~8시간 뒤 열 · 기침 + 세척액 림프구 증가 — BAL lymphocytosis, loose granulomas.",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "새 · 곰팡이 건초 노출 + 노출 4~8시간 뒤 열 · 기침 + 세척액 림프구 증가 — BAL lymphocytosis",
+       "loose granulomas."
+      ]
+     }
+    ],
+    "html": "새 · 곰팡이 건초 노출 + 노출 4~8시간 뒤 열 · 기침 + 세척액 림프구 증가 — BAL lymphocytosis, loose granulomas."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "항원이 작은 기도 · 폐포에 닿아 감작된 림프구가 모이므로, 작은 기도가 좁아져 공기가 갇히고 세척액에 림프구가 늘어난다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "항원이 작은 기도 · 폐포에 닿아 감작된 림프구가 모이므로, 작은 기도가 좁아져 공기가 갇히고 세척액에 림프구가 늘어난다."
+      ]
+     }
+    ],
+    "html": "항원이 작은 기도 · 폐포에 닿아 감작된 림프구가 모이므로, 작은 기도가 좁아져 공기가 갇히고 세척액에 림프구가 늘어난다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "특이 IgG 는 노출만으로도 생긴다 — 무증상 농부 · 비둘기 사육자에게도 있어 그것만으로 진단하지 않는다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "특이 IgG 는 노출만으로도 생긴다 — 무증상 농부 · 비둘기 사육자에게도 있어 그것만으로 진단하지 않는다."
+      ]
+     }
+    ],
+    "html": "특이 IgG 는 노출만으로도 생긴다 — 무증상 농부 · 비둘기 사육자에게도 있어 그것만으로 진단하지 않는다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 299장 p.2229~2230",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "immunology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis"
+  ],
+  "outline": "immuno.hypersensitivity",
+  "order": 2,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 작은 입자는 말단 기도까지 내려간다",
+    "deep": false,
+    "html": "<p>흡입한 입자 가운데 충분히 작은 것은 큰 기도에서 걸러지지 않고 말단 기도와 폐포에 내려앉는다. 과민성 폐렴의 원인 항원 — 곰팡이 건초의 호열성 방선균 · 아스페르길루스, 새의 깃털 · 배설물 · 혈청 단백, 이소시안산 같은 화학물질, 온수 욕조의 마이코박테리아 — 이 바로 이런 입자다 <sup>[1 299장 p.2229]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 감작된 사람의 Th1 · Th17 반응",
+    "deep": false,
+    "html": "<ul>\n<li>과민성 폐렴은 흡입 항원에 대한 면역 매개 질환이고, 조절되지 않은 Th1 · Th17 반응이 중심이다 <sup>[1 299장 p.2229]</sup>.</li>\n<li>특이 IgG(침강소)는 적응 면역이 관여함을 보여 주고, 톨유사수용체 · MyD88 신호가 호중구를 부르는 선천 면역도 함께 작동한다 <sup>[1 299장 p.2229]</sup>.</li>\n<li>노출이 오래 이어지면 섬유세포가 염증 · 섬유화에 더해지고, 만성형은 특발성 폐섬유증과 유전적 바탕(MUC5B)을 일부 나눈다 <sup>[1 299장 p.2229]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 림프구 · 공기 걸림 · 육아종",
+    "deep": false,
+    "html": "<ul>\n<li>세기관지 중심 염증이 작은 기도를 좁혀 날숨 CT 에 공기 걸림이, 폐포 침윤이 간유리 음영 · 소엽 중심 결절로 보인다 <sup>[1 299장 p.2229]</sup>.</li>\n<li>모인 림프구는 세척액 림프구 증가로 나타나고, 대개 CD4/CD8 비가 1 보다 낮다 — 둘 다 특이하지는 않다 <sup>[1 299장 p.2230]</sup>.</li>\n<li>조직은 작은 기도 근처의 느슨하고 경계가 흐린 비건락 육아종과 림프구 위주의 침윤, 세기관지염이다 <sup>[1 299장 p.2230]</sup>.</li>\n<li>감작된 면역 반응이라 증상은 노출 4~8시간 뒤에 오고, 노출을 끊으면 비섬유형은 대개 가라앉는다 <sup>[1 299장 p.2229]</sup> <sup>[1 299장 p.2230]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 노출이 먼저, 면역 검사는 보조",
+    "deep": false,
+    "html": "<ul>\n<li>진단의 첫 축은 증상과 맞물린 노출력이고, 특이 IgG · 세척액 · 조직은 면역 반응을 보여 주는 보조 근거다 — 임상 판단은 「과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다」.</li>\n<li>치료의 축이 항원 회피인 것도 같은 이유다 — 반응을 이끄는 항원을 없앤다 <sup>[1 299장 p.2230]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 299장 p.2229~2230)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "비건락 육아종 — 과민성 폐렴과 사르코이드증",
+    "columns": [
+     "",
+     "과민성 폐렴",
+     "사르코이드증"
+    ],
+    "rows": [
+     [
+      "원인",
+      "흡입 항원에 대한 감작 <sup>[1 299장 p.2229]</sup>",
+      "원인 항원 불명"
+     ],
+     [
+      "육아종",
+      "느슨 · 경계 흐림, 작은 기도 근처 <sup>[1 299장 p.2230]</sup>",
+      "잘 짜임 <sup>[1 299장 p.2230]</sup>"
+     ],
+     [
+      "폐문 림프절 · 폐 밖",
+      "드묾",
+      "폐문 림프절 비대 · 다른 장기 침범 <sup>[1 299장 p.2230]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "비건락 육아종이면 사르코이드증?",
+    "point": "과민성 폐렴의 육아종은 작은 기도 근처에 느슨하고 경계가 흐리다. 사르코이드증의 비건락 육아종은 잘 짜여 있고, 폐문 림프절 비대와 폐 밖 장기 침범이 흔하다 <sup>[1 299장 p.2230]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "특이 IgG(침강소) 양성 = 과민성 폐렴?",
+    "point": "고노출 무증상자도 특이 IgG 를 가져 면역 반응만으로는 진단이 아니다. 여러 항원 패널은 실제 원인 항원의 일부만 담아 거짓 음성도 흔하다 <sup>[1 299장 p.2229]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "곡물 · 곰팡이 분진 뒤 열이면 모두 과민성 폐렴?",
+    "point": "유기 분진 독성 증후군도 같은 분진으로 생기지만 미리 감작될 필요가 없고 특이 IgG 도 없다 — 면역 감작이 없는 독성 반응이다 <sup>[1 299장 p.2230]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 299장 Hypersensitivity Pneumonitis and Pulmonary Infiltrates with Eosinophilia p.2228–2230",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_299) — p.2229 원인 항원(진균 · 세균 · 마이코박테리아 · 새 · 화학물질), 농부 폐(곰팡이 건초의 호열성 방선균 · 아스페르길루스) · 조류 사육자 폐(깃털 · 배설물 · 혈청 단백), 병태생리: 말단 기도 · 폐포에 내려앉는 작은 흡입 항원에 대한 면역 매개 질환, 조절 안 된 TH1 · TH17, 특이 IgG(적응 면역)와 TLR · MyD88 → 호중구(선천 면역), 만성형은 섬유세포 · MUC5B 다형성이 IPF 와 겹침, HRCT 간유리 · 소엽 중심 결절 · 날숨 공기 걸림(작은 기도 침범), 특이 IgG 는 무증상 고노출자에게도 · 패널 거짓 음성 · p.2230 세척액 림프구 증가(비특이) · CD4/CD8 < 1 흔함, 작은 기도 근처의 느슨하고 경계 흐린 비건락 육아종과 림프구 위주 침윤 · 세기관지염(사르코이드증은 잘 짜인 육아종 · 폐문 림프절 · 폐 밖 침범), 예측 인자에 노출 4~8시간 뒤 증상, 유기 분진 독성 증후군은 감작 불필요 · 특이 IgG 없음. 과민반응 형(Ⅲ · Ⅳ형) 분류 용어는 이 장에 없어 쓰지 않았다(전공 교과서 미대조)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-27",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "과민성 폐렴에서 날숨 CT 에 공기 걸림이 보이는 이유는?",
+    "a": "항원이 말단 기도에 내려앉아 세기관지 중심 염증이 작은 기도를 좁히기 때문이다."
+   },
+   {
+    "q": "특이 IgG 양성만으로 과민성 폐렴을 진단하지 않는 이유는?",
+    "a": "고노출 무증상자(농부 · 비둘기 사육자)도 특이 IgG 를 가지며, 노출의 증거일 뿐 병의 증거가 아니기 때문이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma#v1",
+    "context": "곰팡이 건초를 다루는 농부의 반복 발열 · 기침",
+    "stem": "A 49-year-old dairy farmer has had recurrent episodes of fever, chills, cough, and dyspnea that begin several hours after he forks moldy hay and subside over 1–2 days. He has never smoked. Expiratory high-resolution CT shows centrilobular nodules, ground-glass opacities, and patchy air trapping. Bronchoalveolar lavage shows 55% lymphocytes. A transbronchial cryobiopsy is performed. Which of the following findings is most likely?",
+    "options": [
+     "Well-formed noncaseating granulomas along lymphatics with hilar node involvement",
+     "Loose, poorly formed noncaseating granulomas near small airways with lymphocytic infiltrates",
+     "Caseating granulomas containing acid-fast bacilli",
+     "Eosinophil-filled alveoli with Charcot-Leyden crystals",
+     "Temporally heterogeneous fibroblastic foci with basal honeycombing"
+    ],
+    "answer": 2,
+    "explanation": "Repeated inhalation of small antigen particles (thermophilic actinomycetes in moldy hay) drives a TH1/TH17 response in sensitized individuals, producing bronchiolocentric lymphocytic inflammation with loose, poorly defined noncaseating granulomas; small-airway inflammation explains the air trapping and BAL lymphocytosis. Well-formed granulomas with hilar adenopathy suggest sarcoidosis; fibroblastic foci with basal honeycombing suggest idiopathic pulmonary fibrosis.",
+    "of": "",
+    "changed": "핵심 변형 — 조직 소견에서 면역 기전(세기관지 중심 림프구 · 느슨한 육아종)을 묻는다",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
+  "hasErrors": false
+ },
  "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
   "id": "cn.id.bacillary-angiomatosis.kaposi-differentiation",
   "title": "세균성 혈관종증 — 카포시육종과 조직으로 가른다",
@@ -77276,9 +77511,9 @@ window.MEDKOS_CONCEPTS = {
   "topic": "Infectious Disease",
   "seeAlso": [],
   "version": 1,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "reviewStatus": "unreviewed",
-  "hash": "7dd11233cd86af5d",
+  "hash": "6e8a2d34713f2d5c",
   "summary": [
    "결론: CD4 < 100/μL HIV 감염인의 몇 주 된 두통 · 미열에 뇌척수액 압력이 높고 세포가 적으면 크립토코쿠스 — 뇌척수액 항원(CrAg)으로 진단한다.",
    "시험 단서: 몇 주의 두통, 수막 자극 징후가 약함, 개방압 > 25 cmH2O, 백혈구 수십 이하의 단핵구 — cryptococcal meningitis in AIDS.",
@@ -77357,7 +77592,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.micro.cryptococcus-capsule.polysaccharide-antigen"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h215",
@@ -81247,6 +81484,236 @@ window.MEDKOS_CONCEPTS = {
    "kmle-2026-1260",
    "kmle-2026-1970"
   ],
+  "hasErrors": false
+ },
+ "cn.micro.cryptococcus-capsule.polysaccharide-antigen": {
+  "id": "cn.micro.cryptococcus-capsule.polysaccharide-antigen",
+  "title": "크립토코쿠스 피막 — 숨기는 다당류가 진단 항원이 된다",
+  "objective": "크립토코쿠스의 다당류 피막이 포식을 막고 조직에 풀려 염증을 누르는 과정을 설명하고, 그 때문에 뇌척수액 세포가 적고 경과가 느리며, 풀린 피막 다당류가 항원 검사(CrAg)의 표적이 되는 이유를 가른다",
+  "objectiveKind": "기전",
+  "condition": "크립토코쿠스 다당류 피막(Cryptococcus polysaccharide capsule)",
+  "topic": "Microbiology",
+  "seeAlso": [
+   "Infectious Disease",
+   "Neurology"
+  ],
+  "version": 1,
+  "updated": "2026-11-27",
+  "reviewStatus": "unreviewed",
+  "hash": "d4b3e01805327130",
+  "summary": [
+   "결론: 크립토코쿠스의 핵심 독성 인자는 다당류 피막이다 — 포식을 막고 조직에 풀려 면역을 누르며, 그 풀린 다당류를 항원 검사가 잰다.",
+   "시험 단서: 세포성 면역 저하(CD4 < 200/μL) + 몇 주 된 두통 + 세포가 적은 뇌척수액 — cryptococcal capsular polysaccharide antigen (CrAg).",
+   "왜: 피막 다당류가 대량으로 조직에 퍼져 국소 면역 반응을 방해하므로 염증이 약하고, 같은 다당류가 혈액 · 뇌척수액에 남아 검출된다.",
+   "인도 잉크는 피막을 보는 염색이라 균이 적으면 음성이고, 항원 검사는 균 수가 적어도 풀린 다당류를 잡는다."
+  ],
+  "slots": [
+   {
+    "kind": "conclusion",
+    "label": "핵심 결론",
+    "text": "크립토코쿠스의 핵심 독성 인자는 다당류 피막이다 — 포식을 막고 조직에 풀려 면역을 누르며, 그 풀린 다당류를 항원 검사가 잰다.",
+    "raw": "결론:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "크립토코쿠스의 핵심 독성 인자는 다당류 피막이다 — 포식을 막고 조직에 풀려 면역을 누르며, 그 풀린 다당류를 항원 검사가 잰다."
+      ]
+     }
+    ],
+    "html": "크립토코쿠스의 핵심 독성 인자는 다당류 피막이다 — 포식을 막고 조직에 풀려 면역을 누르며, 그 풀린 다당류를 항원 검사가 잰다."
+   },
+   {
+    "kind": "cue",
+    "label": "발문 단서",
+    "text": "세포성 면역 저하(CD4 < 200/μL) + 몇 주 된 두통 + 세포가 적은 뇌척수액 — cryptococcal capsular polysaccharide antigen (CrAg).",
+    "raw": "시험 단서:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "세포성 면역 저하(CD4 &lt; 200/μL) + 몇 주 된 두통 + 세포가 적은 뇌척수액 — cryptococcal capsular polysaccharide antigen (CrAg)."
+      ]
+     }
+    ],
+    "html": "세포성 면역 저하(CD4 &lt; 200/μL) + 몇 주 된 두통 + 세포가 적은 뇌척수액 — cryptococcal capsular polysaccharide antigen (CrAg)."
+   },
+   {
+    "kind": "why",
+    "label": "왜 이 판단인가",
+    "text": "피막 다당류가 대량으로 조직에 퍼져 국소 면역 반응을 방해하므로 염증이 약하고, 같은 다당류가 혈액 · 뇌척수액에 남아 검출된다.",
+    "raw": "왜:",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "피막 다당류가 대량으로 조직에 퍼져 국소 면역 반응을 방해하므로 염증이 약하고, 같은 다당류가 혈액 · 뇌척수액에 남아 검출된다."
+      ]
+     }
+    ],
+    "html": "피막 다당류가 대량으로 조직에 퍼져 국소 면역 반응을 방해하므로 염증이 약하고, 같은 다당류가 혈액 · 뇌척수액에 남아 검출된다."
+   },
+   {
+    "kind": "more",
+    "label": "",
+    "text": "인도 잉크는 피막을 보는 염색이라 균이 적으면 음성이고, 항원 검사는 균 수가 적어도 풀린 다당류를 잡는다.",
+    "raw": "",
+    "groups": [
+     {
+      "lead": "",
+      "items": [
+       "인도 잉크는 피막을 보는 염색이라 균이 적으면 음성이고, 항원 검사는 균 수가 적어도 풀린 다당류를 잡는다."
+      ]
+     }
+    ],
+    "html": "인도 잉크는 피막을 보는 염색이라 균이 적으면 음성이고, 항원 검사는 균 수가 적어도 풀린 다당류를 잡는다."
+   }
+  ],
+  "issues": {
+   "none": true,
+   "ref": "대조: 해리슨 22판 221장 p.1704~1706",
+   "items": []
+  },
+  "layer": "basic",
+  "discipline": "microbiology",
+  "roots": [],
+  "rootsNone": "",
+  "rootSupports": [
+   "cn.id.cryptococcal-meningitis.csf-antigen"
+  ],
+  "outline": "micro.fungi",
+  "order": 3,
+  "series": [],
+  "examPoints": {},
+  "checklists": [],
+  "sections": [
+   {
+    "title": "정상 — 폐가 흡입한 효모를 가둔다",
+    "deep": false,
+    "html": "<p>크립토코쿠스는 거의 늘 흡입으로 들어온다. 면역이 온전한 사람에서는 폐 방어가 균을 잘 가두어, 감염은 흔하지만 병은 드물고 일부는 육아종 안에 잠복한다 <sup>[1 221장 p.1704]</sup>. 세포성 면역이 무너지면(진행된 HIV 감염의 CD4 &lt; 200/μL · 장기이식 · 스테로이드 · 혈액암) 균이 퍼져 뇌수막에 이른다 — 혈관 내피를 직접 건너거나 대식세포 안에 숨어 들어간다 <sup>[1 221장 p.1704]</sup>.</p>",
+    "issue": false
+   },
+   {
+    "title": "고장 — 피막이 면역을 피하고 누른다",
+    "deep": false,
+    "html": "<ul>\n<li>독성 인자는 다당류 피막 · 멜라닌 · 효소이고, 그중 피막이 가장 많이 연구되었다 <sup>[1 221장 p.1704]</sup>.</li>\n<li>피막은 포식을 막고, 다량으로 풀린 피막 다당류가 조직의 국소 면역 반응을 방해한다 — 그래서 조직 염증이 거의 없을 수 있다 <sup>[1 221장 p.1704]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "소견으로 — 염증은 약하고 항원은 많다",
+    "deep": false,
+    "html": "<ul>\n<li>뇌척수액은 단핵구가 조금 늘고 단백이 오른 만성 수막염 모양이고, 증상은 몇 주에 걸치며 수막 자극 징후가 없을 수 있다 <sup>[1 221장 p.1705]</sup>.</li>\n<li>두개내압 상승은 흔히 넘치는 뇌척수액 때문이며 두통 · 시야 흐림 · 뇌신경 이상으로 나타난다 <sup>[1 221장 p.1706]</sup>.</li>\n<li>인도 잉크는 피막을 가진 효모를 보는 염색이라 균이 적으면 음성일 수 있다. 항원 검사는 풀린 피막 다당류를 재므로 민감 · 특이하다 <sup>[1 221장 p.1705]</sup>.</li>\n<li>균이 많을수록(첫 인도 잉크 양성 · 항원 ≥ 1:32), 염증이 약할수록(세포 &lt; 2/μL), 피막 다당류에 대한 항체가 없을수록 예후가 나쁘다 <sup>[1 221장 p.1706]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "임상 판단으로 — 피막이 검사를 정한다",
+    "deep": false,
+    "html": "<ul>\n<li>면역저하자의 아급성 두통에서 뇌척수액에 압력 · 세포 · 배양과 함께 크립토코쿠스 항원을 낸다 — 임상 판단은 「크립토코쿠스 수막염 — 뇌척수액 항원으로 잡는다」.</li>\n<li>항원은 배양이 음전된 뒤에도 남을 수 있어 치료 반응의 지표로는 약하다 <sup>[1 221장 p.1705]</sup>.</li>\n</ul>",
+    "issue": false
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 22판 221장 p.1704~1706)</li>\n</ul>",
+    "issue": true
+   }
+  ],
+  "tables": [
+   {
+    "title": "크립토코쿠스 독성 인자 — 무엇을 하나",
+    "columns": [
+     "독성 인자",
+     "하는 일"
+    ],
+    "rows": [
+     [
+      "다당류 피막",
+      "포식을 막는다 · 조직에 풀려 면역 기능을 방해한다 <sup>[1 221장 p.1704]</sup>"
+     ],
+     [
+      "멜라닌 생성",
+      "조직 안에서 균의 생존을 돕는 주요 인자 <sup>[1 221장 p.1704]</sup>"
+     ],
+     [
+      "효소(인지질분해효소 · 요소분해효소)",
+      "조직 안에서 균의 생존을 높인다 <sup>[1 221장 p.1704]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "염증이 약하다 = 감염이 가볍다?",
+    "point": "크립토코쿠스 감염은 조직 염증이 거의 없을 수 있다 — 피막 다당류가 국소 면역 반응을 누르기 때문이다 <sup>[1 221장 p.1704]</sup>. 세포가 적은 뇌척수액은 오히려 나쁜 예후 표지다(세포 &lt; 2/μL) <sup>[1 221장 p.1706]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "인도 잉크 음성 = 크립토코쿠스 아님?",
+    "point": "인도 잉크 · 그람 염색은 균이 적으면 음성일 수 있다 <sup>[1 221장 p.1705]</sup>. 항원 검사는 풀린 피막 다당류를 재므로 민감도 · 특이도가 모두 높다 <sup>[1 221장 p.1705]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "항원이 계속 양성 = 치료 실패?",
+    "point": "배양이 음전된 뒤에도 뇌척수액 · 혈액 항원이 오래 남을 수 있어 치료 실패를 뜻하지 않는다 — 항원 검사는 치료 반응 추적에는 덜 쓸모 있다 <sup>[1 221장 p.1705]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-22",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 22nd ed.",
+    "kind": "textbook",
+    "citation": "Harrison's Principles of Internal Medicine, 22e. 221장 Cryptococcosis p.1703–1706",
+    "checked": "본문 대조(드라이브 22판 장별 문서 H22_221) — p.1704 흡입으로 감염 · 폐 방어가 대개 가둠 · 잠복 가능, 세포 이동과 대식세포 「트로이 목마」로 중추신경 침입, 독성 인자는 다당류 피막 · 멜라닌 · 효소(인지질분해효소 · 요소분해효소), 피막은 항포식 · 다량 풀린 다당류가 국소 면역 방해로 염증이 거의 없을 수 있음, 피막 다당류가 진단 항원, 고위험은 CD4 < 200/μL 등 · p.1705 몇 주의 증상 · 수막 자극 징후 없을 수 있음, 인도 잉크 · 그람은 균이 적으면 음성, CrAg 는 피막 다당류의 혈청학 검출로 민감 · 특이, 폐 크립토코쿠스증에선 자주 음성 · 치료 반응 추적에 제한, 배양 음전 뒤에도 항원 오래 남음(실패 아님) · p.1706 나쁜 예후 표지(인도 잉크 양성 · 높은 압력 · 낮은 포도당 · 세포 < 2/μL · 피막 다당류 항체 없음 · 항원 ≥ 1:32), 높은 두개내압의 원인은 흔히 과잉 뇌척수액",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2025",
+    "checkedAt": "2026-11-27",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "크립토코쿠스 수막염의 뇌척수액 세포가 적은 이유는?",
+    "a": "피막 다당류가 대량으로 조직에 풀려 국소 면역 반응을 눌러 염증이 약하기 때문이다."
+   },
+   {
+    "q": "크립토코쿠스 항원 검사가 재는 물질은?",
+    "a": "혈액 · 뇌척수액으로 풀려 나온 피막 다당류 — 균이 적어도 검출되므로 민감도가 높다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.micro.cryptococcus-capsule.polysaccharide-antigen#v1",
+    "context": "신장이식 뒤 몇 주의 두통과 세포가 적은 뇌척수액",
+    "stem": "A 58-year-old man who received a kidney transplant 2 years ago and takes tacrolimus and prednisone has had headache and low-grade fever for 3 weeks. He is alert and has no focal deficits. Lumbar puncture shows an opening pressure of 32 cm H2O, 18 white cells/μL (mostly mononuclear), elevated protein, and low glucose. India ink preparation is negative. A latex agglutination test on the cerebrospinal fluid is strongly positive. Which of the following is detected by this test?",
+    "options": [
+     "Antibody against fungal heat shock protein",
+     "Capsular polysaccharide shed by the organism",
+     "Galactomannan from the fungal cell wall",
+     "Fungal DNA amplified by polymerase reaction",
+     "Melanin pigment produced by the organism"
+    ],
+    "answer": 2,
+    "explanation": "Cryptococcal antigen assays detect capsular polysaccharide that the yeast sheds in large amounts into tissue and body fluids; because the shed antigen is abundant, the test is sensitive even when India ink is negative from a low fungal burden. The same polysaccharide suppresses local immune responses, which is why the CSF cell count is low. Galactomannan is an Aspergillus antigen; melanin is a virulence factor but not the measured antigen.",
+    "of": "",
+    "changed": "핵심 변형 — 항원 검사의 표적이 피막 다당류임을 묻는다",
+    "flip": false
+   }
+  ],
+  "figures": [],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [],
   "hasErrors": false
  },
  "cn.micro.mycolic-acid-cell-wall.acid-fastness": {
@@ -140473,7 +140940,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-11-26",
   "reviewStatus": "unreviewed",
-  "hash": "66aa7c1e61a7b443",
+  "hash": "389e0f9a9d95a82c",
   "summary": [
    "결론: 10대의 대퇴골 원위 · 경골 근위 골간단에 골 파괴와 골 형성이 섞이고 햇살 모양 골막 반응 · 코드만 삼각이 보이면 골육종이다.",
    "시험 단서: 밤에도 깨는 통증 · 부기, 단단한 종괴, 알칼리인산분해효소 상승, 열 · 염증 수치 정상 — sunburst, Codman triangle.",
@@ -186906,9 +187373,9 @@ window.MEDKOS_CONCEPTS = {
    "Occupational Medicine"
   ],
   "version": 2,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "reviewStatus": "unreviewed",
-  "hash": "cf5753926c7b6b5e",
+  "hash": "866263b712b1754a",
   "summary": [
    "결론: 흡입 항원 노출 + 노출 4~8시간 뒤 열 · 기침 + 간유리 · 소엽 중심 결절 · 공기 걸림 + 세척액 림프구 증가 = 과민성 폐렴.",
    "시험 단서: 새 사육 · 곰팡이 건초 · 온수 욕조, 들숨 끝 수포음, 체중 감소, 비흡연자 — bird fancier's lung, BAL lymphocytosis.",
@@ -186988,7 +187455,9 @@ window.MEDKOS_CONCEPTS = {
   },
   "layer": "clinical",
   "discipline": "",
-  "roots": [],
+  "roots": [
+   "cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma"
+  ],
   "rootsNone": "",
   "rootSupports": [],
   "outline": "h288",

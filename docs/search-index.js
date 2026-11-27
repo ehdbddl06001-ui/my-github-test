@@ -1,42 +1,42 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4367,
+  "total": 4375,
   "byType": {
+   "paper": 994,
    "kmle": 2016,
-   "concept": 251,
+   "concept": 253,
    "usmle": 288,
-   "paper": 988,
    "imaging": 807,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 369,
-   "Nephrology": 279,
+   "Cardiology": 370,
+   "Nephrology": 280,
    "Infectious Disease": 252,
-   "Pediatrics": 240,
+   "Pediatrics": 241,
    "Obstetrics & Gynecology": 182,
    "Rheumatology": 155,
    "Neurology": 153,
    "Psychiatry": 153,
    "Pathology": 149,
    "Orthopedics": 140,
+   "Hematology-Oncology": 137,
    "순환기": 137,
    "Endocrinology": 136,
-   "Hematology-Oncology": 136,
    "General Surgery": 134,
    "Gastroenterology": 132,
    "Dermatology": 131,
    "Ophthalmology": 131,
    "Pulmonology": 131,
-   "Surgery": 128,
+   "Surgery": 129,
    "Hematology": 127,
-   "Laboratory Medicine": 102,
+   "Laboratory Medicine": 103,
    "산부인과": 97,
    "호흡기": 51,
    "소화기": 47,
@@ -53,9 +53,9 @@ window.MEDKOS_INDEX = {
    "피부과": 29,
    "예방의학·역학": 28,
    "Pharmacology": 27,
+   "Microbiology": 24,
    "Biochemistry": 23,
-   "Microbiology": 23,
-   "Immunology": 21,
+   "Immunology": 22,
    "근골격·류마티스": 21,
    "약리": 21,
    "정신과": 20,
@@ -80,13 +80,115 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1275,
    "high": 3096,
-   "medium": 1267,
    "low": 4
   },
   "tagCount": 5091
  },
  "docs": [
+  {
+   "id": "paper-2026-0994",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Interactive journal of medical research",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/papers/2026/2026-11-27_paper-2026-0994_orthodontic_management_of_vertically_impacted_mandibular_per.md",
+   "snippet": "Title Orthodontic Management of Vertically Impacted Mandibular Permanent Second Molar in Adults: Case Report Authors Mrisho Mashaka Hassan, Lingling Cui, Pallangyo Mary Paul, Li Jiaao, Galikano Deogratius David, Guo Xinwei, Zhang Yue, Xiao ",
+   "text": "Surgery scraped pubmed PubMed / Interactive journal of medical research Title Orthodontic Management of Vertically Impacted Mandibular Permanent Second Molar in Adults: Case Report Authors Mrisho Mashaka Hassan, Lingling Cui, Pallangyo Mary Paul, Li Jiaao, Galikano Deogratius David, Guo Xinwei, Zhang Yue, Xiao Si Long, et al. Journal / DOI Interactive journal of medical research · DOI: 10.2196/101851 · PMID: 43097717 https://pubmed.ncbi.nlm.nih.gov/43097717/ Abstract Impacted mandibular permanent second molars (MM2) are uncommon, with a reported prevalence of 1.8% to 3% among orthodontic populations, and vertically impacted MM2 are particularly infrequently reported. This case describes the orthodontic preservation of a vertically impacted tooth 47 in a 20 year old Chinese male who presented with recurrent right sided mandibular pain, gingival swelling, and bleeding associated with pericoronitis around tooth 48. Clinical examination revealed an Angle Class I molar relationship on the left and a Class II relationship on the right, a rightward mandibular midline deviation, 3 mm of anterior mandibular crowding, overeruption of teeth 17 and 27, and an unerupted tooth 47. Panoramic imaging showed vertically impacted teeth 18, 28, and 47, a horizontally impacted tooth 48, and mesioangular impaction of tooth 38. Cone beam computed tomography demonstrated the relationship between tooth 47 and adjacent structures and minimal resorption of the distal root of tooth 46, without obvious root dilaceration or clear ankylosis related changes. Cephalometric findings included a skeletal Class I relationship, bimaxillary protrusion, proclined incisors, and a hypodivergent facial pattern. Following a discussion of extraction and implant replacement versus orthodontic retrieval, the patient selected preservation for psychosocial and economic reasons, with extraction planned if no movement occurred within 2 to 3 months. Treatment included fixed appliances, extraction of tooth 48, and surgical exposure of tooth 47. At month 6, with 0.017×0.025 inch stainless steel archwires in place, a customized 0.7 mm stainless steel loop with an approximately 10 mm distal extension was bonded to tooth 46. Elastic traction between this loop and the attachment on tooth 47 applied approximately 50 to 60 gf of extrusive force. Tooth 47 became visible at month 8, approximately half its crown was visible at month 11, and a buccal tube was then bonded for continued alignment. The tooth reached the occlusal level at month 13, and treatment was completed at month 14. Teeth 46 and 47 retained vital pulp responses, and no symptoms or apical pathologies were reported. Immediately after treatment, external root resorption of approximately 1 mm was observed on tooth 46; at 10 months, the corresponding radiolucent area was approximately 0.5 mm, with stable clinical findings and good oral hygiene. The outcome suggests that surgical exposure combined with tooth borne orthodontic extrusion may be a feasible tooth preserving option for carefully selected adults with vertically impacted mandibular second molars. Longer term reports with standardized clinical and radiographic assessments are needed to define prognosis and broader applicability. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0993",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Nutrients",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/papers/2026/2026-11-27_paper-2026-0993_effect_of_perioperative_glutamine_supplementation_on_acute_k.md",
+   "snippet": "Title Effect of Perioperative Glutamine Supplementation on Acute Kidney Injury in Infants Undergoing Elective Cardiac Surgery: A Randomized Controlled Trial Authors Wang Li, Qin Wenjun, Li Jia, Hong Haifa, Li Xiaobing Journal / DOI Nutrient",
+   "text": "Pediatrics scraped pubmed PubMed / Nutrients Title Effect of Perioperative Glutamine Supplementation on Acute Kidney Injury in Infants Undergoing Elective Cardiac Surgery: A Randomized Controlled Trial Authors Wang Li, Qin Wenjun, Li Jia, Hong Haifa, Li Xiaobing Journal / DOI Nutrients · DOI: 10.3390/nu18223859 · PMID: 43092976 https://pubmed.ncbi.nlm.nih.gov/43092976/ Abstract Objective: Acute kidney injury (AKI) is a frequent and serious complication in infants after cardiac surgery. Glutamine (GLN), a conditionally essential amino acid, has demonstrated renoprotective potential in animal models and has been shown to attenuate biomarkers of kidney damage in high risk patients undergoing cardiac surgery. However, whether these renoprotective benefits extend to pediatric patients remains unknown. Methods: We conducted a single center, randomized, double blind, placebo controlled trial in infants and young children younger than 3 years undergoing cardiac surgery with cardiopulmonary bypass. Ninety four patients were randomly assigned to receive intravenous alanyl glutamine (0.4 g/kg/day, n = 47) or 0.9% saline placebo (n = 47), administered from anesthesia induction and continued for 4 consecutive days (the day of surgery and the first 3 postoperative days). The primary outcome was the incidence of AKI within 72 h postoperatively, defined according to the KDIGO criteria. Secondary outcomes included the requirement for peritoneal dialysis (PD), diuretic use, serum creatinine (Scr), neutrophil gelatinase associated lipocalin (NGAL), cystatin C, procalcitonin, and the lengths of ICU and hospital stay. Results: The incidence of KDIGO defined AKI was lower in the GLN group than in the control group (14.9% vs. 40.4%; p = 0.010). Among the prespecified secondary outcomes, the requirement for PD (0% vs. 12.8%; p = 0.026) and diuretic use (6.4% vs. 23.4%; p = 0.040) were also lower in the GLN group. Postoperative NGAL concentrations were lower in the GLN group at 24, 48, and 72 h (p < 0.050 for each time point). No significant differences were observed in the lengths of ICU or hospital stay. Conclusions: In this single center trial, perioperative GLN supplementation was associated with a lower incidence of postoperative AKI, a lower requirement for PD, and less diuretic use in infants undergoing elective cardiac surgery. These exploratory findings support a possible renoprotective role for GLN in this high risk population but require confirmation in larger multicenter trials before adoption into clinical practice. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0992",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Revista do Colegio Brasileiro de Cirurgioes",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/papers/2026/2026-11-27_paper-2026-0992_association_between_clinical_examination_and_ct_angiography_.md",
+   "snippet": "Title Association between clinical examination and CT angiography findings in patients with vascular injury following extremity trauma: a cross sectional study Authors Adrogue Santiago Rafael Olivera, Gama Lucas Gonçalves da, Reichardt Gabr",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Revista do Colegio Brasileiro de Cirurgioes Title Association between clinical examination and CT angiography findings in patients with vascular injury following extremity trauma: a cross sectional study Authors Adrogue Santiago Rafael Olivera, Gama Lucas Gonçalves da, Reichardt Gabriel Sebben, Sarquis Lucas Mansano, Pimentel Silvania Klug Journal / DOI Revista do Colegio Brasileiro de Cirurgioes · DOI: 10.1590/0100 6991e 2026006726 en · PMID: 43097561 https://pubmed.ncbi.nlm.nih.gov/43097561/ Abstract BACKGROUND: Computed tomography angiography (CTA) is the imaging modality of choice for diagnosing traumatic vascular injuries in hemodynamically stable patients. However, clinical examination may allow early detection of vascular injury based on clinical predictors, without the need for CTA. Studies in the literature remain inconsistent regarding the diagnostic accuracy of clinical examination. This study aimed to assess the diagnostic accuracy of clinical examination in trauma patients with suspected vascular injury to the extremities. METHODS: Retrospective cross sectional study of patients who underwent CT angiography of the extremities. The epidemiological characteristics of the study population, including mechanisms of injury, were described, and predictors of vascular injury were evaluated. RESULTS: The study included 447 patients with suspected vascular injury to the extremities, of whom 17.2% had vascular injury detected on CTA. The hard signs of vascular injury evaluated were highly statistically significant, with pulsatile bleeding occurring in 29.8% of patients with vascular injury and absent distal pulses in 63.3%, consistent with findings from previous studies. The strongest predictors of vascular injury were capillary refill time 3 s (OR = 9.03), active bleeding (OR = 2.52), pulsatile hematoma (OR = 8.6), and absent pulse (OR = 27.9). CONCLUSION: Major and minor predictors of vascular injury showed agreement with physical examination findings and can be safely used to identify vascular injury. Capillary refill time (CRT) 3 s showed statistical relevance comparable to that of the major signs of vascular injury and may represent a new parameter for identifying vascular injury. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0991",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Science (New York, N.Y.)",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/papers/2026/2026-11-27_paper-2026-0991_ai_based_digital_pathology_defines_spatial_border_ecosystems.md",
+   "snippet": "Title AI based digital pathology defines spatial border ecosystems in triple negative breast cancer Authors Zhang Hang, Yang Fan, Tian Pu, Wang Han, Xu Ying, Zhu Xiao Hui, Li Xue Pei, Zhao Shen, et al. Journal / DOI Science (New York, N.Y.)",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Science (New York, N.Y.) Title AI based digital pathology defines spatial border ecosystems in triple negative breast cancer Authors Zhang Hang, Yang Fan, Tian Pu, Wang Han, Xu Ying, Zhu Xiao Hui, Li Xue Pei, Zhao Shen, et al. Journal / DOI Science (New York, N.Y.) · DOI: 10.1126/science.aei6252 · PMID: 43097611 https://pubmed.ncbi.nlm.nih.gov/43097611/ Abstract The invasive tumor border in triple negative breast cancer (TNBC) is currently poorly understood. We integrated digital pathology and spatial multi omics to define border ecosystems in TNBC. AI based digital pathology identified five border ecosystems, three associated with prognosis. Spatial multi omics analyses further resolved the spatial niche, molecular mechanisms and clinical relevance of these ecosystems. Immune infiltrated borders contain a triadic immune niche associated with favorable prognosis and immunotherapy sensitivity. Tumor stroma borders harbor a MIF+ fibroblast exclusion niche that blocks immune infiltration and suppresses T cells function, predicting poor prognosis. Tumor adipose borders, featured an FLT1+ endothelial niche, promote hypoxia, vascular leakage, and tumor dissemination. Targeting this niche inhibits tumor progression. Collectively, these findings establish a spatial resource that might enable border directed therapeutic strategies in TNBC. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0990",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical investigation",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/papers/2026/2026-11-27_paper-2026-0990_genome_wide_mapping_shows_coding_itgam_variants_drive_a_reve.md",
+   "snippet": "Title Genome wide mapping shows coding ITGAM variants drive a reversible interferon suPAR axis in lupus nephritis Authors Li Xiaobo, Villanueva Veronica, Balza Pineda Santiago, Jimenez Viviana, Nguyen Billy, Khan Samia Q, Chauhan Nishant Ra",
+   "text": "Nephrology scraped pubmed PubMed / The Journal of clinical investigation Title Genome wide mapping shows coding ITGAM variants drive a reversible interferon suPAR axis in lupus nephritis Authors Li Xiaobo, Villanueva Veronica, Balza Pineda Santiago, Jimenez Viviana, Nguyen Billy, Khan Samia Q, Chauhan Nishant Ranjan, Gurusamy Kamraj Sowmya, et al. Journal / DOI The Journal of clinical investigation · DOI: 10.1172/JCI211731 · PMID: 43097437 https://pubmed.ncbi.nlm.nih.gov/43097437/ Abstract Lupus nephritis (LN) is a leading cause of kidney failure in systemic lupus erythematosus. Coding variants in ITGAM, encoding the myeloid integrin CD11b, are among the strongest genetic risk factors for LN, yet leave its abundance unchanged. Mapping the locus's trans regulatory effects in blood from 31,684 individuals, the risk haplotype drove a type I interferon (IFN I) program in myeloid cells. The locus resolved into two haplotypes, with an R77H linked coding haplotype driving the trans program without affecting cis abundance and a regulatory haplotype modulating abundance without any trans regulation. In paired blood and kidney from LN patients, the IFN I and NF κB arms were engaged and amplified in R77H carriers, and CD11b+ myeloid cells accumulated at the glomerulus and upregulated PLAUR, coupling the program to suPAR, an effector of podocyte injury. Re engaging CD11b pharmacologically or genetically suppressed both arms and reversed established disease in LN models, and protected mice engrafted with cells from R77H carrier patients. A Phase Ib trial is evaluating this mechanism in LN. A genome wide scan found that this architecture, trans regulation without cis effect on variant's own gene, recurs at 80 disease associated loci, defining a class of checkpoint variants. Together, these findings suggest that a common coding variant can drive kidney disease without changing expression and is therapeutically targetable. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0989",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Expert review of cardiovascular therapy",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/papers/2026/2026-11-27_paper-2026-0989_cardiac_amyloidosis_contemporary_diagnosis_and_management_wi.md",
+   "snippet": "Title Cardiac amyloidosis: contemporary diagnosis and management with illustrative cases of ATTR and AL subtypes Authors Das Bibhuti B, Ashwath Ravi, Ashwath Mahi L Journal / DOI Expert review of cardiovascular therapy · DOI: 10.1080/147790",
+   "text": "Cardiology scraped pubmed PubMed / Expert review of cardiovascular therapy Title Cardiac amyloidosis: contemporary diagnosis and management with illustrative cases of ATTR and AL subtypes Authors Das Bibhuti B, Ashwath Ravi, Ashwath Mahi L Journal / DOI Expert review of cardiovascular therapy · DOI: 10.1080/14779072.2026.2771661 · PMID: 43097435 https://pubmed.ncbi.nlm.nih.gov/43097435/ Abstract INTRODUCTION: Cardiac amyloidosis (CA) is an increasingly recognized, treatable cause of heart failure. Prompt distinction between transthyretin amyloid cardiomyopathy (ATTR CM) and light chain cardiac amyloidosis (AL CA) is critical because delayed AL diagnosis can be fatal. AREAS COVERED: This narrative review examines epidemiology, mechanisms, multimodality imaging, diagnostic algorithms, and established and emerging therapies. Literature was identified through PubMed/MEDLINE, Embase, and Cochrane Library searches and reference screening; the original search dates require author confirmation. Emphasis is placed on immediate serum free light chain and serum/urine immunofixation testing, nonbiopsy ATTR diagnosis in eligible patients, and TTR sequencing after ATTR confirmation. Three clinical cases illustrate diagnostic and therapeutic challenges. EXPERT OPINION: Earlier diagnosis, urgent exclusion of AL CA, universal TTR genetic testing, and multisystem evaluation of hereditary ATTR are essential. Multidisciplinary, phenotype guided care and validated treatment response measures will be increasingly important as therapies expand. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-2052",
    "type": "kmle",
@@ -702,6 +804,34 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/physiology/cn.physio.ventricular-preload.frank-starling.md",
    "snippet": "정상 — 늘어난 근육이 더 세게 수축한다 심근이 줄어드는 정도, 곧 1회 박출량은 세 가지가 정한다 — 수축 시작 때의 근육 길이(전부하 · preload), 수축하며 이겨야 할 장력(후부하 · afterload), 수축력(contractility) [[harrison 22: 244장 p.1850]]. 전부하는 수축 시작 때의 근절 길이를 정하고, 수축력은 근절이 약 2.2 μm 일 때 가장 크다. 일정 범위 안에서 심실 수축",
    "text": "Physiology 정상 — 늘어난 근육이 더 세게 수축한다 심근이 줄어드는 정도, 곧 1회 박출량은 세 가지가 정한다 — 수축 시작 때의 근육 길이(전부하 · preload), 수축하며 이겨야 할 장력(후부하 · afterload), 수축력(contractility) [[harrison 22: 244장 p.1850]]. 전부하는 수축 시작 때의 근절 길이를 정하고, 수축력은 근절이 약 2.2 μm 일 때 가장 크다. 일정 범위 안에서 심실 수축력이 이완기말 길이에 따르는 것이 스탈링 법칙(Frank Starling law)이며, 생체에서 이완기말 길이는 이완기말 용적과 거의 같이 움직인다 [[harrison 22: 244장 p.1850]]. 전부하는 혈액량과 그 분포(체위 · 흉강 · 심낭 압력 · 정맥 긴장도 · 골격근 펌프), 심방 수축이 정한다 — 정맥 긴장도가 정맥 용량을 바꿔 전부하를 움직인다 [[harrison 22: 244장 p.1846]] [[harrison 22: 244장 p.1852]]. 고장 — 수축력이 떨어지면 전부하에 기댄다 박출량은 전부하에 비례하고 후부하에 반비례한다. 수축력이 떨어진 심장은 정상이거나 높은 이완기말 용적에서도 박출량이 작다 — 기능 곡선이 아래 · 오른쪽으로 처진다 [[harrison 22: 244장 p.1850]]. 처진 곡선 위에서는 같은 박출량을 내려고 더 큰 충만이 필요하므로, 전부하가 줄면 박출량이 크게 떨어진다. 정상 심장은 혈액량이 조금 줄거나 심방 수축을 잃어도 교감신경이 수축력 · 심박수 · 정맥 긴장도를 올려 안정 시 심박출을 지킨다 [[harrison 22: 244장 p.1851]]. 다친 심실에는 이 여유가 없다. 소견으로 — 우심실이 다치면 오른쪽에 고이고 왼쪽이 빈다 하벽 경색의 약 1/3 에 우심실 괴사가 있다. 우심실이 피를 앞으로 보내지 못하면 오른쪽에 피가 고여 목정맥 확장 · 쿠스마울 징후 · 간 비대가 생기고, 폐로 가는 피가 줄어 좌심이 덜 차 저혈압이 온다 — 폐는 맑다 [[harrison 22: 286장 p.2123]]. 니트로글리세린은 전부하를 낮춰 산소 요구를 줄이고, 모르핀은 교감신경에 의한 정맥 수축을 풀어 정맥 고임으로 심박출 · 혈압을 떨어뜨릴 수 있다 [[harrison 22: 286장 p.2118]]. 임상 판단으로 — 전부하를 지킬 때와 줄일 때 우심실 경색: 수액으로 우심실 전부하를 지키고, 질산염처럼 전부하를 빼앗는 약을 피한다 [[harrison 22: 286장 p.2118]] [[harrison 22: 286장 p.2123]]. 처치 순서는 임상 정리본 cn.cardio.rv infarction.avoid preload reduction . 폐울혈이 있는 좌심부전은 반대로 충만 압력이 이미 높아 전부하를 낮추는 니트로글리세린이 증상을 덜고 [[harrison 22: 286장 p.2118]], 혈관 확장제로 후부하를 낮추면 심박출이 는다 [[harrison 22: 244장 p.1851]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 244장 p.1846~1852, 286장 p.2118 · 2123)"
+  },
+  {
+   "id": "cn.micro.cryptococcus-capsule.polysaccharide-antigen",
+   "type": "concept",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/concepts/microbiology/cn.micro.cryptococcus-capsule.polysaccharide-antigen.md",
+   "snippet": "정상 — 폐가 흡입한 효모를 가둔다 크립토코쿠스는 거의 늘 흡입으로 들어온다. 면역이 온전한 사람에서는 폐 방어가 균을 잘 가두어, 감염은 흔하지만 병은 드물고 일부는 육아종 안에 잠복한다 [[harrison 22: 221장 p.1704]]. 세포성 면역이 무너지면(진행된 HIV 감염의 CD4 < 200/μL · 장기이식 · 스테로이드 · 혈액암) 균이 퍼져 뇌수막에 이른다 — 혈관 내피를 직접 건너거나 대식세포 안에 숨어 들",
+   "text": "Microbiology 정상 — 폐가 흡입한 효모를 가둔다 크립토코쿠스는 거의 늘 흡입으로 들어온다. 면역이 온전한 사람에서는 폐 방어가 균을 잘 가두어, 감염은 흔하지만 병은 드물고 일부는 육아종 안에 잠복한다 [[harrison 22: 221장 p.1704]]. 세포성 면역이 무너지면(진행된 HIV 감염의 CD4 < 200/μL · 장기이식 · 스테로이드 · 혈액암) 균이 퍼져 뇌수막에 이른다 — 혈관 내피를 직접 건너거나 대식세포 안에 숨어 들어간다 [[harrison 22: 221장 p.1704]]. 고장 — 피막이 면역을 피하고 누른다 독성 인자는 다당류 피막 · 멜라닌 · 효소이고, 그중 피막이 가장 많이 연구되었다 [[harrison 22: 221장 p.1704]]. 피막은 포식을 막고, 다량으로 풀린 피막 다당류가 조직의 국소 면역 반응을 방해한다 — 그래서 조직 염증이 거의 없을 수 있다 [[harrison 22: 221장 p.1704]]. 소견으로 — 염증은 약하고 항원은 많다 뇌척수액은 단핵구가 조금 늘고 단백이 오른 만성 수막염 모양이고, 증상은 몇 주에 걸치며 수막 자극 징후가 없을 수 있다 [[harrison 22: 221장 p.1705]]. 두개내압 상승은 흔히 넘치는 뇌척수액 때문이며 두통 · 시야 흐림 · 뇌신경 이상으로 나타난다 [[harrison 22: 221장 p.1706]]. 인도 잉크는 피막을 가진 효모를 보는 염색이라 균이 적으면 음성일 수 있다. 항원 검사는 풀린 피막 다당류를 재므로 민감 · 특이하다 [[harrison 22: 221장 p.1705]]. 균이 많을수록(첫 인도 잉크 양성 · 항원 ≥ 1:32), 염증이 약할수록(세포 < 2/μL), 피막 다당류에 대한 항체가 없을수록 예후가 나쁘다 [[harrison 22: 221장 p.1706]]. 임상 판단으로 — 피막이 검사를 정한다 면역저하자의 아급성 두통에서 뇌척수액에 압력 · 세포 · 배양과 함께 크립토코쿠스 항원을 낸다 — 임상 판단은 cn.id.cryptococcal meningitis.csf antigen . 항원은 배양이 음전된 뒤에도 남을 수 있어 치료 반응의 지표로는 약하다 [[harrison 22: 221장 p.1705]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 221장 p.1704~1706)"
+  },
+  {
+   "id": "cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma",
+   "type": "concept",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-27",
+   "path": "content/concepts/immunology/cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma.md",
+   "snippet": "정상 — 작은 입자는 말단 기도까지 내려간다 흡입한 입자 가운데 충분히 작은 것은 큰 기도에서 걸러지지 않고 말단 기도와 폐포에 내려앉는다. 과민성 폐렴의 원인 항원 — 곰팡이 건초의 호열성 방선균 · 아스페르길루스, 새의 깃털 · 배설물 · 혈청 단백, 이소시안산 같은 화학물질, 온수 욕조의 마이코박테리아 — 이 바로 이런 입자다 [[harrison 22: 299장 p.2229]]. 고장 — 감작된 사람의 Th1 · Th17",
+   "text": "Immunology 정상 — 작은 입자는 말단 기도까지 내려간다 흡입한 입자 가운데 충분히 작은 것은 큰 기도에서 걸러지지 않고 말단 기도와 폐포에 내려앉는다. 과민성 폐렴의 원인 항원 — 곰팡이 건초의 호열성 방선균 · 아스페르길루스, 새의 깃털 · 배설물 · 혈청 단백, 이소시안산 같은 화학물질, 온수 욕조의 마이코박테리아 — 이 바로 이런 입자다 [[harrison 22: 299장 p.2229]]. 고장 — 감작된 사람의 Th1 · Th17 반응 과민성 폐렴은 흡입 항원에 대한 면역 매개 질환이고, 조절되지 않은 Th1 · Th17 반응이 중심이다 [[harrison 22: 299장 p.2229]]. 특이 IgG(침강소)는 적응 면역이 관여함을 보여 주고, 톨유사수용체 · MyD88 신호가 호중구를 부르는 선천 면역도 함께 작동한다 [[harrison 22: 299장 p.2229]]. 노출이 오래 이어지면 섬유세포가 염증 · 섬유화에 더해지고, 만성형은 특발성 폐섬유증과 유전적 바탕(MUC5B)을 일부 나눈다 [[harrison 22: 299장 p.2229]]. 소견으로 — 림프구 · 공기 걸림 · 육아종 세기관지 중심 염증이 작은 기도를 좁혀 날숨 CT 에 공기 걸림이, 폐포 침윤이 간유리 음영 · 소엽 중심 결절로 보인다 [[harrison 22: 299장 p.2229]]. 모인 림프구는 세척액 림프구 증가로 나타나고, 대개 CD4/CD8 비가 1 보다 낮다 — 둘 다 특이하지는 않다 [[harrison 22: 299장 p.2230]]. 조직은 작은 기도 근처의 느슨하고 경계가 흐린 비건락 육아종과 림프구 위주의 침윤, 세기관지염이다 [[harrison 22: 299장 p.2230]]. 감작된 면역 반응이라 증상은 노출 4~8시간 뒤에 오고, 노출을 끊으면 비섬유형은 대개 가라앉는다 [[harrison 22: 299장 p.2229]] [[harrison 22: 299장 p.2230]]. 임상 판단으로 — 노출이 먼저, 면역 검사는 보조 진단의 첫 축은 증상과 맞물린 노출력이고, 특이 IgG · 세척액 · 조직은 면역 반응을 보여 주는 보조 근거다 — 임상 판단은 cn.pulm.hypersensitivity pneumonitis.exposure bal diagnosis . 치료의 축이 항원 회피인 것도 같은 이유다 — 반응을 이끄는 항원을 없앤다 [[harrison 22: 299장 p.2230]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 299장 p.2229~2230)"
   },
   {
    "id": "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59",

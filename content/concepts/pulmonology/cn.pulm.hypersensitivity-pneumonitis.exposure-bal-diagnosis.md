@@ -4,9 +4,10 @@ type: concept
 topic: Pulmonology
 see_also: [Immunology, Occupational Medicine]
 date: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-27
 version: 2
 outline: h288            # 기본틀 슬롯 — 해리슨 21판 288장(22판 299장) Hypersensitivity Pneumonitis and Pulmonary Infiltrates with Eosinophilia
+roots: [cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma]
 confidence: medium
 review_status: unreviewed
 note_form: 2

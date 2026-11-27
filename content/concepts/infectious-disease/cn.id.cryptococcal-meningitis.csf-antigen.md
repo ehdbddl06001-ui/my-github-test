@@ -3,9 +3,10 @@ id: cn.id.cryptococcal-meningitis.csf-antigen
 type: concept
 topic: Infectious Disease
 date: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-27
 version: 1
 outline: h215
+roots: [cn.micro.cryptococcus-capsule.polysaccharide-antigen]
 confidence: medium
 review_status: unreviewed
 note_form: 2
