@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-11-27",
+ "generated": "2026-11-28",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 4388,
+  "total": 4393,
   "byType": {
-   "concept": 255,
-   "paper": 994,
+   "paper": 997,
+   "concept": 257,
    "kmle": 2016,
    "imaging": 818,
    "usmle": 288,
@@ -16,7 +16,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 370,
+   "Cardiology": 371,
    "Nephrology": 280,
    "Infectious Disease": 252,
    "Pediatrics": 241,
@@ -24,7 +24,7 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 155,
    "Neurology": 153,
    "Psychiatry": 153,
-   "Pathology": 150,
+   "Pathology": 151,
    "Orthopedics": 140,
    "순환기": 140,
    "Hematology-Oncology": 137,
@@ -36,13 +36,13 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 131,
    "Surgery": 129,
    "Hematology": 127,
-   "Laboratory Medicine": 103,
+   "Laboratory Medicine": 104,
    "산부인과": 98,
    "호흡기": 51,
    "소화기": 48,
    "소아과": 42,
+   "Physiology": 38,
    "응급·중환자": 38,
-   "Physiology": 37,
    "감염": 36,
    "혈액·종양": 36,
    "내분비": 35,
@@ -51,8 +51,8 @@ window.MEDKOS_INDEX = {
    "병리·조직학": 33,
    "외과": 31,
    "피부과": 29,
+   "Pharmacology": 28,
    "예방의학·역학": 28,
-   "Pharmacology": 27,
    "Microbiology": 24,
    "Biochemistry": 23,
    "Immunology": 23,
@@ -80,13 +80,92 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1277,
+   "medium": 1282,
    "high": 3107,
    "low": 4
   },
   "tagCount": 5091
  },
  "docs": [
+  {
+   "id": "paper-2026-0997",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International urology and nephrology",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/papers/2026/2026-11-28_paper-2026-0997_diagnostic_accuracy_of_cxbladder_monitor_compared_with_surve.md",
+   "snippet": "Title Diagnostic accuracy of Cxbladder Monitor compared with surveillance cystoscopy in low and intermediate risk non muscle invasive bladder cancer: an exploratory prospective pilot study at two hospitals Authors Yang Jeffery, Bushati Ymer",
+   "text": "Laboratory Medicine scraped pubmed PubMed / International urology and nephrology Title Diagnostic accuracy of Cxbladder Monitor compared with surveillance cystoscopy in low and intermediate risk non muscle invasive bladder cancer: an exploratory prospective pilot study at two hospitals Authors Yang Jeffery, Bushati Ymer, Stanowski Matthew Journal / DOI International urology and nephrology · DOI: 10.1007/s11255 026 05503 8 · PMID: 43102739 https://pubmed.ncbi.nlm.nih.gov/43102739/ Abstract PURPOSE: Cxbladder Monitor (CxM) is a urinary biomarker with a high negative predictive value (NPV) for detecting bladder cancer recurrence. In this exploratory pilot, we evaluated the diagnostic performance of CxM against flexible cystoscopy in surveillance of low risk and intermediate risk non muscle invasive bladder cancer (NMIBC) and assessed patient reported outcomes and procedure level cost. METHODS: In this prospective study at two hospitals, 50 patients on annual surveillance for previously low grade Ta NMIBC provided CxM urine tests immediately before flexible cystoscopy; the sample size was set by kit availability. Cystoscopy with histopathological confirmation was the reference standard. Patient experience was assessed with a self completed, non validated Likert questionnaire, and procedure level costs were compared. RESULTS: Forty six patients had valid paired CxM and cystoscopy results. Five recurrences were identified, all low grade Ta, with no high grade or muscle invasive recurrences. CxM detected three recurrences, giving a sensitivity of 60% (95% CI 23 88) and specificity of 97.6% (95% CI 87 99.6). The positive predictive value was 75% (95% CI 30 95) and NPV 95.2% (95% CI 84 99). Accuracy for clinically significant disease could not be assessed. Patient reported outcomes strongly favoured urine testing. The procedure level saving of approximately AUD 610 per patient fell to AUD 253 when a results consultation was costed. CONCLUSION: In a low risk and intermediate risk cohort, CxM showed high specificity and NPV alongside cystoscopy, but the small number of recurrences precludes conclusions about its clinical use. These data can inform an adequately powered confirmatory study enriched for high grade events. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0996",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/papers/2026/2026-11-28_paper-2026-0996_t2_and_susceptibility_mapping_as_indicators_of_placental_hea.md",
+   "snippet": "Title T2 and susceptibility mapping as indicators of placental health Authors Turnbull A, Hutchinson G, Dewick L, Li R, Bradley C, Leach L, Amantis D, Chen X, et al. Journal / DOI Ultrasound in obstetrics & gynecology : the official journal",
+   "text": "Pathology scraped pubmed PubMed / Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology Title T2 and susceptibility mapping as indicators of placental health Authors Turnbull A, Hutchinson G, Dewick L, Li R, Bradley C, Leach L, Amantis D, Chen X, et al. Journal / DOI Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology · DOI: 10.1002/uog.70381 · PMID: 43102962 https://pubmed.ncbi.nlm.nih.gov/43102962/ Abstract OBJECTIVES: Transverse relaxation time (T2 ) and magnetic susceptibility (χ) mapping from magnetic resonance imaging (MRI) provide complementary measures of the hemodynamic environment in the placenta. We aimed to use these simultaneously obtained measurements to investigate the role of oxygen distribution on the well established reduction of T2 with gestational age (GA) observed in healthy pregnancies and how oxygenation varies in different regions of the placenta. We also aimed to explore differences in these measurements in placentae of pregnancies with a range of complications, including pre eclampsia, fetal growth restriction and abnormal placental histopathology. METHODS: Participants with a singleton pregnancy were recruited from Nottingham University Hospitals National Health Service Trust (Nottingham, UK) antenatal care between July 2023 and April 2025. Participants attended 1 5 visits at the Sir Peter Mansfield Imaging Centre for research MRI scans between 29 and 41 weeks' gestation. Clinical measures of placental health were assessed, including pregnancy outcomes, and were used to categorize the participants by degree of placental compromise (healthy/no compromise, mild compromise or severe compromise). T2 and χ were measured simultaneously via a double echo, echo planar scan of the whole placenta, across a range of GAs and pregnancy complications. Regional variations were investigated by dividing the placental mask into maternal, fetal and central regions. Measurements were compared between outcome groups using linear mixed effects models to account for GA trends, with comparisons performed separately for visits < 34 and ≥ 34 weeks' gestation. RESULTS: Overall, 78 participants completed the study, with 77 included in the analyses (51 healthy controls, 13 participants with mild placental compromise and 13 with severe placental compromise). Whole placental mean T2 was more strongly associated with the SD of χ than with mean χ, indicating that it may be driven more by increasing local inhomogeneities than bulk deoxygenation with healthy gestation. Compared with healthy controls, compromised placentae showed increased SD of χ (P < 0.001 and P = 0.011 at < 34 weeks and ≥ 34 weeks, respectively) as well as lower mean T2 (P < 0.001 in both GA ranges), suggesting flow/uptake mismatch and reduced oxygenation. Considering cross sectional variation from the maternal to the fetal side, in healthy controls, χ was lowest (indicating most oxygenation) and least variable in the central region of the placenta (P = 0.009 and P < 0.001 for mean χ compared with the maternal and fetal regions, respectively, and P < 0.001 for SD of χ for both comparisons), indicating good mixing and refreshment of blood in this area. χ was highest (indicating most deoxygenation) and most variable in the fetal region (P < 0.001 for mean χ compared with both maternal and central regions, and P = 0.003 and P < 0.001 for SD of χ compared with the maternal and central regions, respectively) in healthy controls, suggesting less effective perfusion in this region. Compromised cases showed the greatest difference compared with healthy controls in the fetal region for both the mean and the SD of χ. Mean T2 was lowest in the fetal region for healthy controls (P < 0.001 compared with both maternal and central regions) and a similar but non significant trend was seen in compromised cases (P = 0.090 and P = 0.059 for the fetal region compared with maternal and central regions, respectively), but there was a greater difference in mean T2 between healthy and compromised cases in the maternal and central regions. CONCLUSIONS: T2 and χ can be mapped simultaneously from a single MRI scan, and provide complementary information about the function of the placenta across healthy gestational development, and they could potentially act as indicators of placental compromise. © 2026 International Society of Ultrasound in Obstetrics and Gynecology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0995",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of advanced nursing",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/papers/2026/2026-11-28_paper-2026-0995_externally_validated_explainable_machine_learning_for_identi.md",
+   "snippet": "Title Externally Validated Explainable Machine Learning for Identifying High Death Anxiety in Chronic Heart Failure: Multicentre Cross Sectional Study Authors Ma Yifan, Zhang Xuanbo, Shi Jing, Wan ZhiTong, Li Xinxin, Guo Chao, Zhang Longge,",
+   "text": "Cardiology scraped pubmed PubMed / Journal of advanced nursing Title Externally Validated Explainable Machine Learning for Identifying High Death Anxiety in Chronic Heart Failure: Multicentre Cross Sectional Study Authors Ma Yifan, Zhang Xuanbo, Shi Jing, Wan ZhiTong, Li Xinxin, Guo Chao, Zhang Longge, Tian Chengguang, et al. Journal / DOI Journal of advanced nursing · DOI: 10.1111/jan.70843 · PMID: 43102904 https://pubmed.ncbi.nlm.nih.gov/43102904/ Abstract AIM: To develop and externally validate explainable machine learning models for identifying high death anxiety among patients with chronic heart failure. DESIGN: A multicentre cross sectional study with external validation. METHODS: Hospitalised patients with chronic heart failure were recruited from four hospitals in China. The development cohort included 450 inpatients from three hospitals in Henan, Jilin, and Beijing, and the independent external validation cohort included 200 inpatients from a different tertiary hospital in Henan. Twenty seven predictors were used to develop three machine learning models. Discrimination, calibration, exploratory net benefit, and model explanations were assessed. RESULTS: The primary extreme gradient boosting model showed strong external discrimination but imperfect calibration. Random forest had higher discrimination, and machine learning showed no clear discrimination advantage over logistic regression. Model explanations identified fear of disease progression, activities of daily living, hope, sleep duration, and self esteem as the most influential predictors. CONCLUSION: Explainable machine learning models may support the identification of patients with chronic heart failure who have high death anxiety and may assist targeted psychological assessment. IMPLICATIONS FOR THE PROFESSION AND/OR PATIENT CARE: Prospective evaluation should compare model assisted assessment with direct measurement of death anxiety. IMPACT: This study shows that multidomain information collected during patient assessment can be integrated using explainable machine learning to identify concurrent high Death Anxiety Scale scores. Such an approach may have clinical value when relevant information is already available, but it requires prospective comparison with direct Death Anxiety Scale assessment. REPORTING METHOD: Reporting followed the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis plus Artificial Intelligence guideline. PATIENT OR PUBLIC CONTRIBUTION: This study did not include patient or public involvement in its design, conduct, analysis, interpretation, or reporting. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "cn.physio.thermoregulation.fever-vs-hyperthermia",
+   "type": "concept",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/concepts/physiology/cn.physio.thermoregulation.fever-vs-hyperthermia.md",
+   "snippet": "정상 — 시상하부가 열 생산과 손실을 맞춘다 체온은 시상하부(전시각 앞 · 뒤)가 피부의 온 · 냉 수용체 신호와 그곳을 적시는 혈액 온도를 함께 받아 조절한다 [[harrison 22: 20장 p.133]]. 중추 온도 조절기는 앞시상하부 시각전핵이고, 자율신경으로 피부 혈관을 넓히고 땀을 내 열을 버린다 [[harrison 22: 478장 p.3772]]. 열은 증발 · 복사 · 전도 · 대류로 빠지며 증발이 가장 효율적이",
+   "text": "Physiology 정상 — 시상하부가 열 생산과 손실을 맞춘다 체온은 시상하부(전시각 앞 · 뒤)가 피부의 온 · 냉 수용체 신호와 그곳을 적시는 혈액 온도를 함께 받아 조절한다 [[harrison 22: 20장 p.133]]. 중추 온도 조절기는 앞시상하부 시각전핵이고, 자율신경으로 피부 혈관을 넓히고 땀을 내 열을 버린다 [[harrison 22: 478장 p.3772]]. 열은 증발 · 복사 · 전도 · 대류로 빠지며 증발이 가장 효율적이지만 상대 습도가 70 % 를 넘으면 점점 효과가 떨어진다 [[harrison 22: 478장 p.3772]]. 고장 — 설정점이 오르거나, 열 균형이 무너진다 발열 — 감염 · 염증이 만든 IL 1 · IL 6 · TNF 가 시상하부 혈관 내피(종말판 혈관기관)에서 PGE2 를 늘리고, PGE2 가 EP3 수용체 → 아교세포 cAMP 로 설정점을 올린다 [[harrison 22: 20장 p.135]]. 그러면 혈관 수축 · 떨림 · 비떨림 열 생산이 새 설정점에 닿을 때까지 이어진다 [[harrison 22: 20장 p.134]]. 고체온 — 설정점은 그대로이고 발열 물질도 없다. 외부 열 노출이나 내부 열 생산이 몸이 열을 버리는 능력을 넘는다 [[harrison 22: 20장 p.134]]. 약은 열을 버리는 쪽을 막는다 — 항콜린제는 땀을 막고, 페노티아진 · 헤테로고리 항우울제는 시각전핵 기능을 방해하며, 칼슘 통로 차단제 · 베타 차단제는 말초 혈류를 줄인다 [[harrison 22: 478장 p.3773]]. 각성제 등은 근육 활동과 열 생산을 늘린다 [[harrison 22: 478장 p.3773]]. 42 °C 를 넘으면 열에 약한 효소가 멈추고 산화적 인산화가 되돌릴 수 없이 탈짝지어진다 [[harrison 22: 478장 p.3775]]. 소견으로 — 피부 · 해열제 반응이 가른다 발열이 오르는 동안은 손발부터 혈관이 수축해 피부가 차고 춥게 느낀다. 열사병 · 땀을 막는 약의 고체온은 피부가 덥고 건조하다 [[harrison 22: 20장 p.134]]. 해열제는 뇌 사이클로옥시게나제를 막아 PGE2 를 줄여 설정점을 내린다 [[harrison 22: 20장 p.136]]. 그래서 발열(41.5 °C 넘는 과고열도)은 조금이라도 떨어지지만 고체온은 떨어지지 않는다 [[harrison 22: 20장 p.134]]. 고용량 해열제도 정상 체온은 낮추지 않는다 — 정상 체온 조절에는 PGE2 가 관여하지 않는다 [[harrison 22: 20장 p.136]]. 임상 판단으로 — 이 기전이 가르는 선택 체온 상승 직전의 일(더위 노출 · 체온 조절을 방해하는 약)이 고체온을 가리킨다 [[harrison 22: 20장 p.134]]. 감별에는 악성 고열증 · 신경이완제 악성 증후군 · 세로토닌 증후군 · 항콜린 중독이 들어간다 [[harrison 22: 478장 p.3773]] — 어느 쪽인지는 노출 약 · 근육 · 자율신경 소견으로 가른다(임상 정리본). 고체온의 치료는 해열제가 아니라 빠른 냉각이다. 살리실산은 탈짝지음을 악화시키고, 단트롤렌은 악성 고열증이 원인이 아니면 효과가 없다 [[harrison 22: 478장 p.3776]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 20장 p.133~136 · 478장 p.3772~3776)"
+  },
+  {
+   "id": "cn.pharm.antiseizure-drugs.excitation-inhibition-targets",
+   "type": "concept",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-11-28",
+   "path": "content/concepts/pharmacology/cn.pharm.antiseizure-drugs.excitation-inhibition-targets.md",
+   "snippet": "정상 — 흥분과 억제의 균형 신경세포의 흥분성은 이온 통로의 전도도, 수용체의 반응, 신경전달물질의 양과 종류가 정한다. 한 신경세포의 발화는 GABA 수용체나 칼륨 통로가 만드는 과분극으로 끝나고, 억제성 신경세포가 만드는 「주변 억제」가 흥분이 번지는 것을 막는다 [[harrison 22: 436장 p.3414]]. 고장 — 칼슘 · 나트륨이 반복 발화를 만든다 발작의 극파는 많은 흥분성 신경세포가 거의 동시에 터지는 것이",
+   "text": "Pharmacology 정상 — 흥분과 억제의 균형 신경세포의 흥분성은 이온 통로의 전도도, 수용체의 반응, 신경전달물질의 양과 종류가 정한다. 한 신경세포의 발화는 GABA 수용체나 칼륨 통로가 만드는 과분극으로 끝나고, 억제성 신경세포가 만드는 「주변 억제」가 흥분이 번지는 것을 막는다 [[harrison 22: 436장 p.3414]]. 고장 — 칼슘 · 나트륨이 반복 발화를 만든다 발작의 극파는 많은 흥분성 신경세포가 거의 동시에 터지는 것이다. 세포외 칼슘 유입이 긴 탈분극(발작성 탈분극 이동)을 만들고, 이것이 전압 의존 나트륨 통로를 열어 활동전위가 반복된다 [[harrison 22: 436장 p.3414]]. 흥분이 커지면 세포외 칼륨 증가 · 시냅스전 칼슘 축적(전달물질 방출 증가) · NMDA 수용체 활성화가 이웃 세포를 끌어들여 발작이 퍼진다 [[harrison 22: 436장 p.3414]]. 같은 고리를 밖에서 건드려도 경련이 온다 — 글루타메이트 유사체(도모산)는 흥분성 수용체를 직접 켜고, 페니실린은 GABA 작용을 막아 억제를 줄인다 [[harrison 22: 436장 p.3414]]. 소견으로 — 결신 발작은 다른 회로다 결신 발작의 3 Hz 극파 서파는 수면 때 시상 피질 회로가 만드는 진동과 관련되고, GABA B 수용체 · T형 칼슘 통로 · 칼륨 통로의 상호작용이 관여한다 [[harrison 22: 436장 p.3415]]. 그래서 나트륨 통로 차단제가 아니라 T형 칼슘을 막는 에토숙시미드 · 발프로산이 듣는다 [[harrison 22: 436장 p.3415]]. 임상 판단으로 — 표적이 다른 약을 더한다 항경련제는 발작의 개시나 전파를 막고, 대부분 여러 기전을 함께 갖는다 [[harrison 22: 436장 p.3415]]. 뇌전증 지속상태에서 GABA 수용체를 키우는 벤조디아제핀이 실패하면 표적이 다른 정맥 항경련제(레비티라세탐 · 페니토인 · 발프로산)를 더한다 — 단계와 용량은 임상 정리본에 둔다. 항경련제는 발작을 누를 뿐 손상 뒤 뇌전증이 생기는 것(뇌전증 생성)을 막는 약은 아직 없다 [[harrison 22: 436장 p.3415]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 22판 436장 p.3414~3415)"
+  },
   {
    "id": "cn.path.virchow-triad.renal-vein-thrombosis",
    "type": "concept",

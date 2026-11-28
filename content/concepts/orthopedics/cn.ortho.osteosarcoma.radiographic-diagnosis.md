@@ -115,6 +115,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13619749_Fig1
   reason: 그림은 하악 치성 점액종(odontogenic myxoma)의 햇살 모양 골막 반응 — 골육종이 아니고 장관골 골간단도 아니다. 골육종 라벨이 있는 장관골 방사선 사진이 필요하다
+- asset: PMC-PMC12554943_FIGURE2
+  reason: 그림 설명이 성인 하악 유잉 육종의 CBCT — 골육종도 아니고 청소년 장골 골간단도 아니다(햇살 골막 반응만 같다)
 ---
 
 ## 판단 — 왜 골육종인가

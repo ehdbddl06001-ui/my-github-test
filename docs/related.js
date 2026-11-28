@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts · content/papers  →  `python pipelines/export_related_web.py`로 재생성
 window.MEDKOS_RELATED = {
- "generated": "2026-11-27",
+ "generated": "2026-11-28",
  "concepts": {
   "cn.allergy.anaphylaxis.im-epinephrine-first": [
    {
@@ -179,6 +179,11 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    },
    {
+    "id": "paper-2026-0995",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0988",
     "how": "t",
     "term": "heart failure"
@@ -200,11 +205,6 @@ window.MEDKOS_RELATED = {
    },
    {
     "id": "paper-2026-0915",
-    "how": "t",
-    "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0910",
     "how": "t",
     "term": "heart failure"
    }
@@ -221,6 +221,11 @@ window.MEDKOS_RELATED = {
     "term": "heart failure"
    },
    {
+    "id": "paper-2026-0995",
+    "how": "t",
+    "term": "heart failure"
+   },
+   {
     "id": "paper-2026-0988",
     "how": "t",
     "term": "heart failure"
@@ -242,11 +247,6 @@ window.MEDKOS_RELATED = {
    },
    {
     "id": "paper-2026-0915",
-    "how": "t",
-    "term": "heart failure"
-   },
-   {
-    "id": "paper-2026-0910",
     "how": "t",
     "term": "heart failure"
    }
@@ -719,9 +719,9 @@ window.MEDKOS_RELATED = {
     "term": "diagnostic test"
    },
    {
-    "id": "paper-2026-0959",
+    "id": "paper-2026-0997",
     "how": "a",
-    "term": "sensitivity"
+    "term": "predictive value"
    }
   ],
   "cn.prev.occupational-disease.exposure-to-disease-matching": [
@@ -772,6 +772,11 @@ window.MEDKOS_RELATED = {
     "term": "randomized controlled trial"
    },
    {
+    "id": "paper-2026-0995",
+    "how": "t",
+    "term": "cross sectional"
+   },
+   {
     "id": "paper-2026-0993",
     "how": "t",
     "term": "randomized controlled trial"
@@ -795,11 +800,6 @@ window.MEDKOS_RELATED = {
     "id": "paper-2026-0929",
     "how": "t",
     "term": "cohort"
-   },
-   {
-    "id": "paper-2026-0923",
-    "how": "t",
-    "term": "randomized controlled trial"
    }
   ],
   "cn.psy.ptsd.duration-vs-acute-stress": [
@@ -1851,15 +1851,6 @@ window.MEDKOS_RELATED = {
     "cn.cardio.atrial-fibrillation.hfref-rate-control-drug"
    ]
   },
-  "paper-2026-0910": {
-   "t": "Reply to: \"Lung Hyperinflation Beyond COPD is Associated with Proxies of Systemic Fluid Overload and Functional Impairment in Patients with Chronic Heart Failure\"",
-   "j": "Archivos de bronconeumologia",
-   "d": "2026-11-06",
-   "c": [
-    "cn.cardio.heart-failure.hfref-gdmt-selection",
-    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
-   ]
-  },
   "paper-2026-0915": {
    "t": "Effects of Sotatercept on Cardiac Structure and Function in Combined Post- and Precapillary Pulmonary Hypertension in Heart Failure With Preserved Ejection Fraction: Analysis of the CADENCE Study",
    "j": "Circulation",
@@ -1876,14 +1867,6 @@ window.MEDKOS_RELATED = {
    "c": [
     "cn.cardio.heart-failure.hfref-gdmt-selection",
     "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis"
-   ]
-  },
-  "paper-2026-0923": {
-   "t": "Effect of oral vitamin D₃₃ supplementation on salivary vitamin D levels and orthodontic treatment duration: a randomized controlled trial",
-   "j": "Clinical oral investigations",
-   "d": "2026-11-10",
-   "c": [
-    "cn.prev.study-design.design-and-bias-identification"
    ]
   },
   "paper-2026-0928": {
@@ -1945,14 +1928,6 @@ window.MEDKOS_RELATED = {
     "cn.prev.study-design.design-and-bias-identification"
    ]
   },
-  "paper-2026-0959": {
-   "t": "Image-Based AI for the Diagnosis of Retinopathy of Prematurity: Systematic Review and Meta-Analysis",
-   "j": "JMIR medical informatics",
-   "d": "2026-11-19",
-   "c": [
-    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
-   ]
-  },
   "paper-2026-0960": {
    "t": "Examining the Effectiveness of a Dual Executive Function Training Package: Protocol for a Randomized Controlled Trial",
    "j": "JMIR research protocols",
@@ -2012,6 +1987,24 @@ window.MEDKOS_RELATED = {
    "c": [
     "cn.neph.aki.atn-vs-prerenal",
     "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0995": {
+   "t": "Externally Validated Explainable Machine Learning for Identifying High Death Anxiety in Chronic Heart Failure: Multicentre Cross-Sectional Study",
+   "j": "Journal of advanced nursing",
+   "d": "2026-11-27",
+   "c": [
+    "cn.cardio.heart-failure.hfref-gdmt-selection",
+    "cn.cardio.heart-failure.natriuretic-peptide-echo-diagnosis",
+    "cn.prev.study-design.design-and-bias-identification"
+   ]
+  },
+  "paper-2026-0997": {
+   "t": "Diagnostic accuracy of Cxbladder Monitor compared with surveillance cystoscopy in low- and intermediate-risk non-muscle-invasive bladder cancer: an exploratory prospective pilot study at two hospitals",
+   "j": "International urology and nephrology",
+   "d": "2026-11-27",
+   "c": [
+    "cn.prev.diagnostic-test.predictive-value-prevalence-cutoff"
    ]
   }
  },

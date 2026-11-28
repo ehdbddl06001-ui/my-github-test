@@ -3,7 +3,7 @@ id: cn.neuro.status-epilepticus.second-line-asm
 type: concept
 topic: Neurology
 date: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-28
 version: 1
 outline: h425
 confidence: medium
@@ -12,6 +12,7 @@ note_form: 2
 title: "뇌전증 지속상태 — 벤조디아제핀 두 번 뒤엔 2차 항경련제"
 objective: "벤조디아제핀을 충분히 주고도 계속되는 전신 경련(확립된 뇌전증 지속상태)에서 2차 정맥 항경련제(레비티라세탐 · 포스페니토인 · 발프로산)를 다음 처치로 골라 마취제 지속 주입 · 벤조디아제핀 반복과 가른다"
 objective_kind: 다음 처치
+roots: [cn.pharm.antiseizure-drugs.excitation-inhibition-targets]
 condition: 전신 경련성 뇌전증 지속상태(generalized convulsive status epilepticus)
 exams: [kmle, usmle]
 summary:

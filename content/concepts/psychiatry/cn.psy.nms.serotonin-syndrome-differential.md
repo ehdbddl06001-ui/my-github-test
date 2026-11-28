@@ -4,7 +4,7 @@ type: concept
 topic: Psychiatry
 see_also: [Neurology, Emergency Medicine, Anesthesiology]
 date: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-28
 version: 1
 outline: h452            # 기본틀 슬롯 — 해리슨 21판 452장(22판 463장) Psychiatric Disorders · 중독 표는 22판 470장, 고체온 감별은 478장
 confidence: medium
@@ -13,6 +13,7 @@ note_form: 2
 title: "신경이완제 악성 증후군 — 강직과 노출 약으로 가른다"
 objective: "항정신병약 투여 뒤 고열 · 의식 변화 · 자율신경 불안정 · 근강직 · 크레아틴 키나아제 상승을 신경이완제 악성 증후군으로 진단하고, 세로토닌 증후군 · 악성 고열증 · 항콜린 중독 · 수막뇌염과 노출 약 · 신경근 소견 · 자율신경 소견으로 가른다"
 objective_kind: 감별
+roots: [cn.physio.thermoregulation.fever-vs-hyperthermia]
 condition: 신경이완제 악성 증후군(neuroleptic malignant syndrome)과 약물 유발 고체온 감별
 exams: [kmle, usmle]
 summary:
