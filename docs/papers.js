@@ -2,6 +2,111 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0997",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Diagnostic accuracy of Cxbladder Monitor compared with surveillance cystoscopy in low- and intermediate-risk non-muscle-invasive bladder cancer: an exploratory prospective pilot study at two hospitals",
+  "authors": [
+   "Yang Jeffery",
+   "Bushati Ymer",
+   "Stanowski Matthew"
+  ],
+  "journal": "International urology and nephrology",
+  "doi": "10.1007/s11255-026-05503-8",
+  "pmid": "43102739",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43102739/",
+  "pubdate": "2026-11-27",
+  "date": "2026-11-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**PURPOSE:** Cxbladder Monitor (CxM) is a urinary biomarker with a high negative predictive value (NPV) for detecting bladder cancer recurrence. In this exploratory pilot, we evaluated the diagnostic performance of CxM against flexible cystoscopy in surveillance of low-risk and intermediate-risk non-muscle-invasive bladder cancer (NMIBC) and assessed patient-reported outcomes and procedure-level cost.\n\n**METHODS:** In this prospective study at two hospitals, 50 patients on annual surveillance for previously low-grade Ta NMIBC provided CxM urine tests immediately before flexible cystoscopy; the sample size was set by kit availability. Cystoscopy with histopathological confirmation was the reference standard. Patient experience was assessed with a self-completed, non-validated Likert questionnaire, and procedure-level costs were compared.\n\n**RESULTS:** Forty-six patients had valid paired CxM and cystoscopy results. Five recurrences were identified, all low-grade Ta, with no high-grade or muscle-invasive recurrences. CxM detected three recurrences, giving a sensitivity of 60% (95% CI 23-88) and specificity of 97.6% (95% CI 87-99.6). The positive predictive value was 75% (95% CI 30-95) and NPV 95.2% (95% CI 84-99). Accuracy for clinically significant disease could not be assessed. Patient-reported outcomes strongly favoured urine testing. The procedure-level saving of approximately AUD 610 per patient fell to AUD 253 when a results consultation was costed.\n\n**CONCLUSION:** In a low-risk and intermediate-risk cohort, CxM showed high specificity and NPV alongside cystoscopy, but the small number of recurrences precludes conclusions about its clinical use. These data can inform an adequately powered confirmatory study enriched for high-grade events.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0996",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "T2* and susceptibility mapping as indicators of placental health",
+  "authors": [
+   "Turnbull A",
+   "Hutchinson G",
+   "Dewick L",
+   "Li R",
+   "Bradley C",
+   "Leach L",
+   "Amantis D",
+   "Chen X",
+   "et al."
+  ],
+  "journal": "Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology",
+  "doi": "10.1002/uog.70381",
+  "pmid": "43102962",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43102962/",
+  "pubdate": "2026-11-27",
+  "date": "2026-11-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVES:** Transverse relaxation time (T2*) and magnetic susceptibility (χ) mapping from magnetic resonance imaging (MRI) provide complementary measures of the hemodynamic environment in the placenta. We aimed to use these simultaneously obtained measurements to investigate the role of oxygen distribution on the well-established reduction of T2* with gestational age (GA) observed in healthy pregnancies and how oxygenation varies in different regions of the placenta. We also aimed to explore differences in these measurements in placentae of pregnancies with a range of complications, including pre-eclampsia, fetal growth restriction and abnormal placental histopathology.\n\n**METHODS:** Participants with a singleton pregnancy were recruited from Nottingham University Hospitals National Health Service Trust (Nottingham, UK) antenatal care between July 2023 and April 2025. Participants attended 1-5 visits at the Sir Peter Mansfield Imaging Centre for research MRI scans between 29 and 41 weeks' gestation. Clinical measures of placental health were assessed, including pregnancy outcomes, and were used to categorize the participants by degree of placental compromise (healthy/no compromise, mild compromise or severe compromise). T2* and χ were measured simultaneously via a double-echo, echo-planar scan of the whole placenta, across a range of GAs and pregnancy complications. Regional variations were investigated by dividing the placental mask into maternal, fetal and central regions. Measurements were compared between outcome groups using linear mixed-effects models to account for GA trends, with comparisons performed separately for visits < 34 and ≥ 34 weeks' gestation.\n\n**RESULTS:** Overall, 78 participants completed the study, with 77 included in the analyses (51 healthy controls, 13 participants with mild placental compromise and 13 with severe placental compromise). Whole placental mean T2* was more strongly associated with the SD of χ than with mean χ, indicating that it may be driven more by increasing local inhomogeneities than bulk deoxygenation with healthy gestation. Compared with healthy controls, compromised placentae showed increased SD of χ (P < 0.001 and P = 0.011 at < 34 weeks and ≥ 34 weeks, respectively) as well as lower mean T2* (P < 0.001 in both GA ranges), suggesting flow/uptake mismatch and reduced oxygenation. Considering cross-sectional variation from the maternal to the fetal side, in healthy controls, χ was lowest (indicating most oxygenation) and least variable in the central region of the placenta (P = 0.009 and P < 0.001 for mean χ compared with the maternal and fetal regions, respectively, and P < 0.001 for SD of χ for both comparisons), indicating good mixing and refreshment of blood in this area. χ was highest (indicating most deoxygenation) and most variable in the fetal region (P < 0.001 for mean χ compared with both maternal and central regions, and P = 0.003 and P < 0.001 for SD of χ compared with the maternal and central regions, respectively) in healthy controls, suggesting less effective perfusion in this region. Compromised cases showed the greatest difference compared with healthy controls in the fetal region for both the mean and the SD of χ. Mean T2* was lowest in the fetal region for healthy controls (P < 0.001 compared with both maternal and central regions) and a similar but non-significant trend was seen in compromised cases (P = 0.090 and P = 0.059 for the fetal region compared with maternal and central regions, respectively), but there was a greater difference in mean T2* between healthy and compromised cases in the maternal and central regions.\n\n**CONCLUSIONS:** T2* and χ can be mapped simultaneously from a single MRI scan, and provide complementary information about the function of the placenta across healthy gestational development, and they could potentially act as indicators of placental compromise. © 2026 International Society of Ultrasound in Obstetrics and Gynecology.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0995",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Externally Validated Explainable Machine Learning for Identifying High Death Anxiety in Chronic Heart Failure: Multicentre Cross-Sectional Study",
+  "authors": [
+   "Ma Yifan",
+   "Zhang Xuanbo",
+   "Shi Jing",
+   "Wan ZhiTong",
+   "Li Xinxin",
+   "Guo Chao",
+   "Zhang Longge",
+   "Tian Chengguang",
+   "et al."
+  ],
+  "journal": "Journal of advanced nursing",
+  "doi": "10.1111/jan.70843",
+  "pmid": "43102904",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/43102904/",
+  "pubdate": "2026-11-27",
+  "date": "2026-11-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**AIM:** To develop and externally validate explainable machine-learning models for identifying high death anxiety among patients with chronic heart failure.\n\n**DESIGN:** A multicentre cross-sectional study with external validation.\n\n**METHODS:** Hospitalised patients with chronic heart failure were recruited from four hospitals in China. The development cohort included 450 inpatients from three hospitals in Henan, Jilin, and Beijing, and the independent external validation cohort included 200 inpatients from a different tertiary hospital in Henan. Twenty-seven predictors were used to develop three machine-learning models. Discrimination, calibration, exploratory net benefit, and model explanations were assessed.\n\n**RESULTS:** The primary extreme gradient boosting model showed strong external discrimination but imperfect calibration. Random forest had higher discrimination, and machine learning showed no clear discrimination advantage over logistic regression. Model explanations identified fear of disease progression, activities of daily living, hope, sleep duration, and self-esteem as the most influential predictors.\n\n**CONCLUSION:** Explainable machine-learning models may support the identification of patients with chronic heart failure who have high death anxiety and may assist targeted psychological assessment.\n\n**IMPLICATIONS FOR THE PROFESSION AND/OR PATIENT CARE:** Prospective evaluation should compare model-assisted assessment with direct measurement of death anxiety.\n\n**IMPACT:** This study shows that multidomain information collected during patient assessment can be integrated using explainable machine learning to identify concurrent high Death Anxiety Scale scores. Such an approach may have clinical value when relevant information is already available, but it requires prospective comparison with direct Death Anxiety Scale assessment.\n\n**REPORTING METHOD:** Reporting followed the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis plus Artificial Intelligence guideline.\n\n**PATIENT OR PUBLIC CONTRIBUTION:** This study did not include patient or public involvement in its design, conduct, analysis, interpretation, or reporting.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0994",
   "topic": "Surgery",
   "subtopic": "",
