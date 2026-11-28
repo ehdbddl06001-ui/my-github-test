@@ -374,9 +374,9 @@
    "changes": []
   },
   "신장내과": {
-   "hash": "37c5156ba9fc8ec2493f",
-   "version": 17,
-   "date": "2026-11-27",
+   "hash": "27f48d1c403fab29fb68",
+   "version": 18,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_신장내과.pdf",
    "pages": 39,
    "template_version": 13,
@@ -444,7 +444,7 @@
     "cn.neph.membranous-nephropathy.renal-vein-thrombosis": {
      "title": "막성 신병증 — 갑작스러운 옆구리 통증 · 혈뇨면 신정맥 혈전",
      "page": 24,
-     "concept_hash": "4bccc5d07c56ae1c",
+     "concept_hash": "653bf173ada1a9ed",
      "concept_version": 1
     },
     "cn.neph.membranous-nephropathy.anti-pla2r-diagnosis": {
@@ -498,9 +498,9 @@
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "b7945fa679b7807889a2f4126342b6ca",
-    "version": 17,
-    "uploaded": "2026-11-27T12:57:29+09:00"
+    "md5": "77c54448fed0dbf3c2ddbfab8e56fb77",
+    "version": 18,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -519,10 +519,11 @@
     "MedKOS_학습서_신장내과_v14_2026-11-24.pdf",
     "MedKOS_학습서_신장내과_v15_2026-11-25.pdf",
     "MedKOS_학습서_신장내과_v16_2026-11-26.pdf",
-    "MedKOS_학습서_신장내과_v17_2026-11-27.pdf"
+    "MedKOS_학습서_신장내과_v17_2026-11-27.pdf",
+    "MedKOS_학습서_신장내과_v18_2026-11-28.pdf"
    ],
    "changes": [
-    "내용 갱신: 막성 신병증 — 갑작스러운 옆구리 통증 · 혈뇨면 신정맥 혈전 (정리본 vNone → v1)"
+    "내용 수정: 막성 신병증 — 갑작스러운 옆구리 통증 · 혈뇨면 신정맥 혈전"
    ]
   },
   "소아청소년과": {
@@ -708,9 +709,9 @@
    "changes": []
   },
   "정형외과": {
-   "hash": "56fa301c8c6e3e0cb149",
-   "version": 25,
-   "date": "2026-11-27",
+   "hash": "5fa23751f8ec7f0d908e",
+   "version": 26,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_정형외과.pdf",
    "pages": 29,
    "template_version": 13,
@@ -802,15 +803,15 @@
     "cn.ortho.osteosarcoma.radiographic-diagnosis": {
      "title": "골육종 — 청소년 골간단의 햇살 모양 골막 반응",
      "page": 28,
-     "concept_hash": "66aa7c1e61a7b443",
+     "concept_hash": "389e0f9a9d95a82c",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "6bf8fbf0ac2ca8387588c575da27627f",
-    "version": 25,
-    "uploaded": "2026-11-27T12:57:29+09:00"
+    "md5": "74130e8e2df0fb0b40b307e264e9c1d5",
+    "version": 26,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -837,10 +838,11 @@
     "MedKOS_학습서_정형외과_v22_2026-11-24.pdf",
     "MedKOS_학습서_정형외과_v23_2026-11-25.pdf",
     "MedKOS_학습서_정형외과_v24_2026-11-26.pdf",
-    "MedKOS_학습서_정형외과_v25_2026-11-27.pdf"
+    "MedKOS_학습서_정형외과_v25_2026-11-27.pdf",
+    "MedKOS_학습서_정형외과_v26_2026-11-28.pdf"
    ],
    "changes": [
-    "내용 갱신: 골육종 — 청소년 골간단의 햇살 모양 골막 반응 (정리본 vNone → v1)"
+    "내용 수정: 골육종 — 청소년 골간단의 햇살 모양 골막 반응"
    ]
   },
   "외과": {
@@ -891,9 +893,9 @@
    ]
   },
   "산부인과": {
-   "hash": "4ec4576cc4ac8a7670a3",
-   "version": 23,
-   "date": "2026-11-26",
+   "hash": "b549e08031609674c37c",
+   "version": 24,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_산부인과.pdf",
    "pages": 55,
    "template_version": 13,
@@ -1063,9 +1065,9 @@
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "546fbd09bedf0c605bf41ebb28d06704",
-    "version": 23,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "a047b9d72a066a8754f63a52b47a270d",
+    "version": 24,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -1090,11 +1092,10 @@
     "MedKOS_학습서_산부인과_v20_2026-11-20.pdf",
     "MedKOS_학습서_산부인과_v21_2026-11-21.pdf",
     "MedKOS_학습서_산부인과_v22_2026-11-24.pdf",
-    "MedKOS_학습서_산부인과_v23_2026-11-26.pdf"
+    "MedKOS_학습서_산부인과_v23_2026-11-26.pdf",
+    "MedKOS_학습서_산부인과_v24_2026-11-28.pdf"
    ],
-   "changes": [
-    "새 단원: 중증 전자간증 — 34주 이후면 마그네슘 주고 분만"
-   ]
+   "changes": []
   },
   "정신건강의학과": {
    "hash": "61119843a7605179a8ba",
@@ -1408,9 +1409,9 @@
    ]
   },
   "호흡기내과": {
-   "hash": "ec541c005c24e90ae764",
-   "version": 19,
-   "date": "2026-11-27",
+   "hash": "246616fd23f10e280c65",
+   "version": 20,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 12,
    "template_version": 13,
@@ -1436,7 +1437,7 @@
     "cn.pulm.hypersensitivity-pneumonitis.exposure-bal-diagnosis": {
      "title": "과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다",
      "page": 6,
-     "concept_hash": "cf5753926c7b6b5e",
+     "concept_hash": "866263b712b1754a",
      "concept_version": 2
     },
     "cn.pulm.copd-exacerbation.hypercapnic-failure-niv": {
@@ -1460,9 +1461,9 @@
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "1f807d4a46907cbd5c6639d8d838d815",
-    "version": 19,
-    "uploaded": "2026-11-27T12:57:29+09:00"
+    "md5": "199fad6cb8cdaab82853954918804669",
+    "version": 20,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -1483,10 +1484,11 @@
     "MedKOS_학습서_호흡기내과_v16_2026-11-24.pdf",
     "MedKOS_학습서_호흡기내과_v17_2026-11-25.pdf",
     "MedKOS_학습서_호흡기내과_v18_2026-11-26.pdf",
-    "MedKOS_학습서_호흡기내과_v19_2026-11-27.pdf"
+    "MedKOS_학습서_호흡기내과_v19_2026-11-27.pdf",
+    "MedKOS_학습서_호흡기내과_v20_2026-11-28.pdf"
    ],
    "changes": [
-    "내용 갱신: 과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다 (정리본 v1 → v2)"
+    "내용 수정: 과민성 폐렴 — 노출력 · 공기 걸림 · 세척액 림프구로 가른다"
    ]
   },
   "응급의학과": {
@@ -1831,9 +1833,9 @@
    "retired": "2026-11-24"
   },
   "감염내과": {
-   "hash": "24decf9383d52c54288d",
-   "version": 18,
-   "date": "2026-11-27",
+   "hash": "77f1824dd38853d89da6",
+   "version": 19,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_감염내과.pdf",
    "pages": 16,
    "template_version": 13,
@@ -1871,7 +1873,7 @@
     "cn.id.syphilis-pregnancy.penicillin-desensitization": {
      "title": "임신 중 매독 — 페니실린 알레르기면 탈감작",
      "page": 10,
-     "concept_hash": "443ec7d06b82a4a4",
+     "concept_hash": "d26fdc25b027b4c5",
      "concept_version": 1
     },
     "cn.id.covid19-pneumonia.tocilizumab-add-on": {
@@ -1883,7 +1885,7 @@
     "cn.id.cryptococcal-meningitis.csf-antigen": {
      "title": "크립토코쿠스 수막염 — 뇌척수액 항원으로 잡는다",
      "page": 13,
-     "concept_hash": "7dd11233cd86af5d",
+     "concept_hash": "6e8a2d34713f2d5c",
      "concept_version": 1
     },
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
@@ -1895,9 +1897,9 @@
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "327ce6ed1a70853643f411fdcf78fd80",
-    "version": 18,
-    "uploaded": "2026-11-27T12:57:29+09:00"
+    "md5": "d3fab29892860952d108bb72633b7c54",
+    "version": 19,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -1917,11 +1919,12 @@
     "MedKOS_학습서_감염내과_v15_2026-11-24.pdf",
     "MedKOS_학습서_감염내과_v16_2026-11-25.pdf",
     "MedKOS_학습서_감염내과_v17_2026-11-26.pdf",
-    "MedKOS_학습서_감염내과_v18_2026-11-27.pdf"
+    "MedKOS_학습서_감염내과_v18_2026-11-27.pdf",
+    "MedKOS_학습서_감염내과_v19_2026-11-28.pdf"
    ],
    "changes": [
-    "내용 갱신: 파종 노카르디아증 — 가지 친 그람 양성 균은 부분 항산성 (정리본 v1 → v2)",
-    "내용 갱신: 크립토코쿠스 수막염 — 뇌척수액 항원으로 잡는다 (정리본 vNone → v1)"
+    "내용 수정: 임신 중 매독 — 페니실린 알레르기면 탈감작",
+    "내용 수정: 크립토코쿠스 수막염 — 뇌척수액 항원으로 잡는다"
    ]
   },
   "소화기내과": {
@@ -2689,11 +2692,11 @@
    ]
   },
   "미생물학": {
-   "hash": "695657fd480fa8f6e075",
-   "version": 2,
-   "date": "2026-11-26",
+   "hash": "d6cd34f4b076949272b5",
+   "version": 3,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_미생물학.pdf",
-   "pages": 2,
+   "pages": 3,
    "template_version": 13,
    "units": {
     "cn.micro.mycolic-acid-cell-wall.acid-fastness": {
@@ -2701,21 +2704,27 @@
      "page": 2,
      "concept_hash": "13f6c658739e04e4",
      "concept_version": 1
+    },
+    "cn.micro.cryptococcus-capsule.polysaccharide-antigen": {
+     "title": "크립토코쿠스 피막 — 숨기는 다당류가 진단 항원이 된다",
+     "page": 2,
+     "concept_hash": "d4b3e01805327130",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "1KZwlEMxMYSmSpRjwO_1xLDvOTqXMB-5o",
-    "md5": "532ec365046335792193791f7349c709",
-    "version": 2,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "9728628b42a5f2eb55dbb763a30a837d",
+    "version": 3,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_미생물학_v1_2026-11-24.pdf",
-    "MedKOS_학습서_미생물학_v2_2026-11-26.pdf"
+    "MedKOS_학습서_미생물학_v2_2026-11-26.pdf",
+    "MedKOS_학습서_미생물학_v3_2026-11-28.pdf"
    ],
    "changes": [
-    "새 단원: 미콜산 세포벽 — 사슬 길이가 항산성의 세기를 정한다",
-    "빠진 단원(다른 권으로 이동 등): Three Weeks of Fever and Cough, a Cavitating Lung Nodule and Two Ring-Enhancing Brain Lesions in a 54-Year-Old Woman Eight Months After a Kidney Transplant"
+    "새 단원: 크립토코쿠스 피막 — 숨기는 다당류가 진단 항원이 된다"
    ]
   },
   "생화학·유전": {
@@ -2745,11 +2754,11 @@
    "changes": []
   },
   "면역학": {
-   "hash": "3c3a3a84e8b8111411dd",
-   "version": 2,
-   "date": "2026-11-27",
+   "hash": "602d3a13476cc0666d6d",
+   "version": 3,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_면역학.pdf",
-   "pages": 3,
+   "pages": 4,
    "template_version": 13,
    "units": {
     "cn.immuno.complement-regulation.gpi-anchored-cd55-cd59": {
@@ -2758,25 +2767,39 @@
      "concept_hash": "4abbf9cc720fc6e9",
      "concept_version": 1
     },
+    "cn.immuno.ige-mast-cell.drug-desensitization": {
+     "title": "IgE 비만세포 반응 — 탈감작은 잠시 신호를 끈다",
+     "page": 2,
+     "concept_hash": "0f335a028163ea74",
+     "concept_version": 1
+    },
     "cn.immuno.immune-complex.cryoglobulinemic-vasculitis": {
      "title": "면역복합체 혈관염 — 항원이 남는 한 복합체도 생긴다",
-     "page": 2,
+     "page": 3,
      "concept_hash": "a5144f208a6e13cf",
+     "concept_version": 1
+    },
+    "cn.immuno.inhaled-antigen-hypersensitivity.bronchiolocentric-granuloma": {
+     "title": "흡입 항원 과민반응 — 작은 기도에 림프구 · 느슨한 육아종",
+     "page": 4,
+     "concept_hash": "5ad8c233484697a7",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1fFsJayj3QxSPssQrhkiypsxhhkaaDLua",
-    "md5": "10a7b1843397c86e2b2deac472f889c0",
-    "version": 2,
-    "uploaded": "2026-11-27T12:57:29+09:00"
+    "md5": "61ed3a11b92523a83265937bbaf2fb76",
+    "version": 3,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
     "MedKOS_학습서_면역학_v1_2026-11-24.pdf",
-    "MedKOS_학습서_면역학_v2_2026-11-27.pdf"
+    "MedKOS_학습서_면역학_v2_2026-11-27.pdf",
+    "MedKOS_학습서_면역학_v3_2026-11-28.pdf"
    ],
    "changes": [
-    "새 단원: 보체 방패 — GPI 가 없으면 CD55 · CD59 도 없다"
+    "새 단원: IgE 비만세포 반응 — 탈감작은 잠시 신호를 끈다",
+    "새 단원: 흡입 항원 과민반응 — 작은 기도에 림프구 · 느슨한 육아종"
    ]
   },
   "해부·조직·발생": {
@@ -2847,13 +2870,19 @@
    ]
   },
   "병리학": {
-   "hash": "99eee7375de261494c79",
-   "version": 1,
-   "date": "2026-11-26",
+   "hash": "95733e3fe71fa6ceb061",
+   "version": 2,
+   "date": "2026-11-28",
    "file": "MedKOS_학습서_병리학.pdf",
-   "pages": 2,
+   "pages": 3,
    "template_version": 13,
    "units": {
+    "cn.path.virchow-triad.renal-vein-thrombosis": {
+     "title": "정맥 혈전의 세 갈래 — 신증후군은 과응고 쪽이다",
+     "page": 2,
+     "concept_hash": "6946344dc0314b14",
+     "concept_version": 1
+    },
     "cn.path.apl-pml-rara.differentiation-block-dic": {
      "title": "PML-RARA — 분화가 멈춘 과립 세포가 DIC 를 만든다",
      "page": 2,
@@ -2863,25 +2892,28 @@
    },
    "drive": {
     "id": "1Nl1prhVBdjs4_Ndo5M-3yj2b8nUUCjts",
-    "md5": "bb7e3a2abe04fa8a0b43d17574ac3e75",
-    "version": 1,
-    "uploaded": "2026-11-26T12:52:25+09:00"
+    "md5": "3a3a282e32829c496c278278bf006108",
+    "version": 2,
+    "uploaded": "2026-11-28T12:33:30+09:00"
    },
    "archive": [
-    "MedKOS_학습서_병리학_v1_2026-11-26.pdf"
+    "MedKOS_학습서_병리학_v1_2026-11-26.pdf",
+    "MedKOS_학습서_병리학_v2_2026-11-28.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 정맥 혈전의 세 갈래 — 신증후군은 과응고 쪽이다"
+   ]
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "2bfb0cc64f66d2470ee9854cb9235f01",
+   "md5": "89a4b98bdebea72c718e754930c3deab",
    "version": null,
-   "uploaded": "2026-11-27T12:57:29+09:00"
+   "uploaded": "2026-11-28T12:33:30+09:00"
   }
  },
- "updated": "2026-11-27"
+ "updated": "2026-11-28"
 }
